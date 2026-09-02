@@ -1,0 +1,88 @@
+\subsection{Run 82, continued: the family in closed form, and BGS at large
+\texorpdfstring{$m$}{m}}\label{sub:r82b}
+
+Theorem \ref{thm:torus} says the family is a curve; the following says what the
+curve is.
+
+\begin{theorem}[twisted Jacobi sums]\label{thm:jacobi}
+Let $N$ be an odd prime, split for $A$ (so $t^2-4$ is a square mod $N$).
+Conjugating inside $SL_2(\ZZ/N)$, take $A'=\operatorname{diag}(a,a^{-1})$ with
+$a^2-ta+1=0$ and $\operatorname{ord}(a)=K$.  Then the Hecke basis is the set of
+multiplicative characters, $f_\chi(x)=\chi(x)/\sqrt{N-1}$ for $x\neq0$ and
+$f_\chi(0)=0$, with $U_uf_\chi=\left(\tfrac uN\right)\chi(u)^{-1}f_\chi$; a
+$U_{A'}$-eigenspace is $\{\chi:\chi(a)=\text{const}\}$ of dimension $(N-1)/K$;
+parity splits it into even and odd characters, $m_\pm=(N-1)/(2K)$; and, with
+$q=n_1n_2$,
+\[
+  \langle f_\chi|T(n)|f_\psi\rangle
+  =\ep(-q/2)\,\overline{\chi}(n_1)\psi(n_1)\,
+   \frac{J(\chi,\psi;q)}{N-1},
+  \qquad
+  J(\chi,\psi;q)=\sum_{x\neq0,1}\overline{\chi}(x)\,\psi(x-1)\,\ep(qx).
+\]
+\end{theorem}
+
+$J$ is a Jacobi sum with an additive twist, so $|J|\le2\sqrt N$ by
+Weil--Deligne.  Theorem \ref{thm:torus} and the diagonal-conjugation normal form
+are immediate corollaries: the modulus depends on $n$ only through $q$, and the
+$n$-dependence inside a level set is the coboundary
+$\overline{\chi}(n_1)\psi(n_1)$.  Building $M_q=C_q+C_q^{*}$ from the sums is one
+$(m\times N)(N\times m)$ product --- no $N\times N$ operator, no randomised
+eigenbasis.  Certification: $M_q$ so built reproduces the pipeline's $\mu_4$ over
+\emph{every} level set, $198$ sets at $N=199$ to $6.1\cdot10^{-14}$ and $3570$
+sets at $N=3571$ to $2.4\cdot10^{-13}$, after the single rescaling
+$q_{\mathrm{pipeline}}=cq'$ with $c=L_{K-1}$ (and $N=L_K$).
+
+\emph{The second moment, exactly.}  Collapsing the double character sum in
+$\sum_{\chi,\psi}|J|^2$ over the index coset --- whose annihilator in $\FF_N^*$
+is $\langle a,-1\rangle$ of order $2K$ for odd $K$ --- leaves a finite tuple sum
+\[
+  \operatorname{Tr}(C_qC_q^{*})
+  =\frac{m^2}{(N-1)^2}\Bigl[(N-2)
+    +\sum\nolimits'\chi_1(\sigma a^j)\chi_1(\tau a^{j'})\,\ep(qf)\Bigr],
+  \quad f=x(1-\sigma a^j),
+\]
+$x=(1-\tau a^{j'})/(1-\sigma\tau a^{j+j'})$, over the $(2K)^2$ tuples with
+$\sigma\tau a^{j+j'}\neq1$ and $x,\sigma a^jx\notin\{0,1\}$.  Verified against
+the numerical trace $24/24$ at two designs to $5.2\cdot10^{-14}$.  Two
+consequences: the residual of $\operatorname{Tr}(V_q^2)=N/K^2+E(q)$ is an exact
+exponential sum with at most $(2K)^2$ frequencies, and the frequency comb
+measured in Run 82 is \emph{contained} in the derived set ($460$ values at
+$K=17$; all $16$ dominant frequencies are the images of the tuples
+$(\sigma,\tau,j,j')=(1,1,2j,K-j)$, $j\le8$).
+
+\emph{BGS at large $m$.}  With the $N\times N$ wall gone, the per-system
+statement of Corollary \ref{cor:curve} becomes testable far beyond the previous
+ceiling $m_+=246$.  Against a matched GOE Monte Carlo at eight times the sample
+count, using the unfolding-free ratio statistic $\langle\tilde r\rangle$
+(GOE $0.5307$, Poisson $0.3863$):
+
+\begin{center}\small
+\begin{tabular}{rrllrr}
+\toprule
+$m_+$ & systems & $\langle\tilde r\rangle$ arithmetic & GOE MC & $z$ vs MC & $z$ vs Poisson\\
+\midrule
+$336$ & $48$ & $0.53135\pm0.00337$ & $0.53073\pm0.00099$ & $+0.18$ & $+43.1$\\
+$837$ & $24$ & $0.53072\pm0.00216$ & $0.53104\pm0.00083$ & $-0.14$ & $+66.9$\\
+$1680$ & $8$ & $0.53153\pm0.00153$ & $0.52963\pm0.00100$ & $+1.04$ & $+94.9$\\
+$2851$ & $3$ & $0.53782\pm0.00337$ & $0.53334\pm0.00104$ & $+1.27$ & $+44.9$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The KS distance of the unfolded spacings to the $\beta=1$ Wigner surmise lies
+inside the $95\%$ noise floor at every design (and at $m_+=2851$ is smaller than
+the GOE reference's own), and the number variance $\Sigma^2(L)$, $L=2,\dots,20$,
+agrees with GOE within one to two standard errors at $m_+=837,1680,2851$.
+
+\emph{What remains.}  The reduction makes the target sharp: does the $m\times m$
+matrix of twisted Jacobi sums have GOE local statistics?  This is not blocked by
+a missing step in the chain above --- symmetry class, exact reduction, second
+moment and shape modulation are all proven or exactly computable --- but by the
+absence of any technology for spacing universality of a \emph{deterministic}
+family.  Theorem \ref{thm:torus} shows there is no independence to exploit (the
+family has $N-1$ members and its ensemble average is one-dimensional), and the
+moment route reaches only the scale $1/\log m$.  A resolvent argument requires
+quantitative entrywise decorrelation of $J(\chi,\psi;q)$ over character pairs, a
+Katz-type equidistribution statement for the associated sheaf; that single input
+is the whole remaining distance.

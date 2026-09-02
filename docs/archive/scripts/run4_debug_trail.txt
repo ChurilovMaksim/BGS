@@ -1,0 +1,65 @@
+"""Debug: per-triple verification of the r=3 assembly."""
+import numpy as np, math
+import master_formula as MF
+from catmap_core import ord_pm
+
+A = [2, 1, 1, 1]; N = 101; F = [(1, 0), (0, 1)]
+k, sg = ord_pm(A, N); K = k if sg > 0 else 2 * k
+info, Bm, SIG, U = MF.cocycle(A, N, K)
+RH, _ = MF.rho_tables(N, K, U)
+rng = np.random.default_rng(1)
+cs = {n: (rng.normal() + 1j * rng.normal()) / math.sqrt(2) for n in F}
+terms = []
+for nn, cc in cs.items():
+    terms.append((cc, +1, np.array(nn, dtype=np.int64) % N))
+    terms.append((np.conj(cc), -1, np.array(nn, dtype=np.int64) % N))
+L = len(terms)
+G = np.empty((L, K, 2), dtype=np.int64)
+CO = np.empty(L * K, dtype=complex)
+SPH = np.empty(L * K)
+for si, (cf, ep, nv) in enumerate(terms):
+    cur = nv.copy()
+    for j in range(K):
+        G[si, j] = (ep * cur) % N
+        CO[si * K + j] = cf
+        SPH[si * K + j] = ep * SIG[j][nv[0], nv[1]]
+        cur = Bm @ cur % N
+n = L * K
+
+
+def Psid(g, h):
+    return (N + 1) * (int(g[1]) * int(h[0]) - int(g[0]) * int(h[1])) % (2 * N)
+
+
+J = 1
+UJ = np.linalg.matrix_power(U, J)
+t0 = np.trace(UJ) / abs(np.trace(UJ))
+M = []
+gg = G.reshape(n, 2)
+for x in range(n):
+    ph = complex(np.exp(1j * np.pi * float(SPH[x]) / N))
+    M.append(complex(CO[x]) * ph
+             * MF.weyl_matrix(int(gg[x, 0]), int(gg[x, 1]), N))
+
+bad = 0
+for x in range(4):
+    for y in range(4):
+        for z in range(0, n, 7):
+            lhs = np.trace(M[x] @ M[y] @ M[z] @ UJ)
+            gx, gy, gz = gg[x], gg[y], gg[z]
+            u = (gx + gy + gz) % N
+            psi = (Psid(gx, gy) + Psid(gx, gz) + Psid(gy, gz)) % (2 * N)
+            sph = float(SPH[x]) + float(SPH[y]) + float(SPH[z])
+            rhs = (complex(CO[x]) * complex(CO[y]) * complex(CO[z])
+                   * np.exp(1j * np.pi * (sph + psi) / N)
+                   * np.exp(1j * np.pi * float(RH[J][int(u[0]), int(u[1])]) / N)
+                   * t0)
+            if abs(lhs - rhs) > 1e-9:
+                bad += 1
+                if bad <= 5:
+                    print("BAD x,y,z=", x, y, z)
+                    print("  lhs=", lhs)
+                    print("  rhs=", rhs)
+                    print("  G:", gx, gy, gz, " u=", u, " psi=", psi,
+                          " sph=", sph)
+print("bad count:", bad)

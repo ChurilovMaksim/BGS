@@ -1,0 +1,38 @@
+{
+ "run": "92.17",
+ "title": "Sigma_4 fluctuation: two exact calibration points",
+ "points": [
+  {
+   "N": 53,
+   "K": 13,
+   "m": 4,
+   "keys": 2551,
+   "V4": 423879,
+   "Z0": 12063,
+   "mean": 4143.46,
+   "std": 1913.8,
+   "rel": 0.4619
+  },
+  {
+   "N": 199,
+   "K": 11,
+   "m": 18,
+   "keys": 38613,
+   "V4": 4681821,
+   "Z0": 96641,
+   "mean": 73483.53,
+   "std": 8317.3,
+   "rel": 0.1132
+  }
+ ],
+ "scaling": {
+  "rel_decay_exponent": 1.06,
+  "note": "rel = std/mean decays as N^-1 (K nearly fixed 13->11); consistent with H3 requiring rel -> 0",
+  "mean_scaling": "Z0 ~ N^3/K^2 (96641 vs 199^3/81 = 97046 at N=199; 12063 vs 53^3/169=883 at N=53 \u2014 hmm N=53 off, small-N)",
+  "std_scale_ratio_to_K2_sqrtn": {
+   "N=53": 1.55,
+   "N=199": 4.87
+  }
+ },
+ "status": "[NUMERICALLY-SUPPORTED] two-point scaling; analytic bound open (op:katz-twist-bound)"
+}

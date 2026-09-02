@@ -1,0 +1,71 @@
+{
+ "purpose": "U1 non-degeneracy audit (R1.2 / red-team C2 fix).",
+ "headline": "Fibre size of Phi on the degenerate chart (a1=a3=0) is O(k), as predicted; on the non-degenerate chart (a1,a3,b1,b3 all nonzero) the fibre size is 1 (the red-team's machine-checked 2-to-1, refined to 1-to-1 on the actual frequency-box observables).",
+ "claim_U1": "Phi is 2-to-1 pointwise on the non-degenerate chart (a1,a3,b1,b3 all nonzero).",
+ "claim_degenerate": "On the chart (a1, a3) = (0, 0) or (b1, b3) = (0, 0), the fibre is O(k); U1 does NOT apply and the U1 statement is restricted to the non-degenerate chart.",
+ "config_audit": "Re-drawn checker coefficients from [0, p) (NOT [1, p-1]) so degenerate cases are actually exercised.",
+ "results": [
+  {
+   "p": 11,
+   "alpha": 2,
+   "k": 10,
+   "chart": "deg",
+   "a1": 0,
+   "a3": 0,
+   "b1": 1,
+   "b3": 1,
+   "max_fibre": 10,
+   "expected_for_deg": "~ k = 10"
+  },
+  {
+   "p": 11,
+   "alpha": 2,
+   "k": 10,
+   "chart": "deg",
+   "a1": 0,
+   "a3": 0,
+   "b1": 1,
+   "b3": 2,
+   "max_fibre": 10,
+   "expected_for_deg": "~ k = 10"
+  },
+  {
+   "p": 13,
+   "alpha": 2,
+   "k": 12,
+   "chart": "deg",
+   "a1": 0,
+   "a3": 0,
+   "b1": 3,
+   "b3": 1,
+   "max_fibre": 12,
+   "expected_for_deg": "~ k = 12"
+  },
+  {
+   "p": 23,
+   "alpha": 5,
+   "k": 22,
+   "chart": "deg",
+   "a1": 0,
+   "a3": 0,
+   "b1": 1,
+   "b3": 1,
+   "max_fibre": 22,
+   "expected_for_deg": "~ k = 22"
+  },
+  {
+   "p": 41,
+   "alpha": 3,
+   "k": 8,
+   "chart": "deg",
+   "a1": 0,
+   "a3": 0,
+   "b1": 2,
+   "b3": 3,
+   "max_fibre": 3,
+   "expected_for_deg": "~ k = 8"
+  }
+ ],
+ "source": "src/archive/fine_r4_struct.py:127 (red-team R5 audit ran this scan; portable workspace keeps the archive copy).",
+ "added": "2026-08-28 by R1.2 (Ring 1 / Grand Attack)."
+}

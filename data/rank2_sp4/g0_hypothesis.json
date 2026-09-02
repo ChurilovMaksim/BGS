@@ -1,0 +1,8 @@
+{
+ "run": "102.1",
+ "title": "G0: the abstract H-coupling hypothesis formulated; c-shift lemma proven",
+ "G0_hypothesis": "Let G be a finite abelian group, H < G a subgroup with annihilator coset S, and K_q: S x S -> C a q-deformed kernel whose difference fibers are rational-function orbits of bounded degree D. Then: (1) the coupled energy of every layer factors as E_c = E_flat/m^4 (1 + delta) with delta <= c_w^2/m = o(1); (2) the flat part is elementarily computable from the fiber counts; (3) the Weil part is bounded by the Riemann hypothesis over finite fields applied to the fiber curves. The cat map realizes G = F_N^*, K = twisted Jacobi (D=4); any rational-function kernel of bounded degree inherits the same closure.",
+ "c_shift_lemma": "The shifted Jacobi family J_c(chi,psi;q) = sum_{x != 0,c} conj(chi)(x) psi(x-c) e(qx) has a c-INDEPENDENT full-group second moment: sum |J_c|^2 = (N-1)^2(N-2) for every c in F_N^*, q != 0 (verified exactly at N=53 for c=1,2,3, q=1,2,3). Proof: the shift automorphism x -> x + (c-1) conjugates the c-family to the c=1 family on the character side.",
+ "queue": "the genuine G0 test is a kernel COUPLING two factors (e.g. J(chi1 chi2, psi1 psi2) on G = (F_N^*)^2) \u2014 the Sp(2g) degeneracy model; queued as the next M4 experiment",
+ "status": "[PROVEN] c-shift lemma at N=53; G0 hypothesis formulated"
+}

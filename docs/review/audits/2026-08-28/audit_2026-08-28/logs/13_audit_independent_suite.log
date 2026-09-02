@@ -1,0 +1,9 @@
+V7 anchor p=5,k=2: total=6 types={'pairing': 6} PASS
+Traceback (most recent call last):
+  File "C:\Users\churi\Desktop\BGS\BGS_portable_20260827\BGS\review\scripts\audit_independent_suite.py", line 381, in <module>
+    v7(); dump()
+          ~~~~^^
+  File "C:\Users\churi\Desktop\BGS\BGS_portable_20260827\BGS\review\scripts\audit_independent_suite.py", line 379, in dump
+    with open(r"C:\Users\churi\OneDrive\Desktop\project_1\BGS\artifacts\audit_independent_suite.json", "w") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\churi\\OneDrive\\Desktop\\project_1\\BGS\\artifacts\\audit_independent_suite.json'

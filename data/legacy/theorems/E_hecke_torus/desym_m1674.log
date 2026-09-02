@@ -1,0 +1,43 @@
+p=95419 K=57  target m=1674  basis 2.38 GB
+      round 1: +64, total 64/1674
+      round 2: +64, total 128/1674
+      round 3: +64, total 192/1674
+      round 4: +64, total 256/1674
+      round 5: +64, total 320/1674
+      round 6: +64, total 384/1674
+      round 7: +64, total 448/1674
+      round 8: +64, total 512/1674
+      round 9: +64, total 576/1674
+      round 10: +64, total 640/1674
+      round 11: +64, total 704/1674
+      round 12: +64, total 768/1674
+      round 13: +64, total 832/1674
+      round 14: +64, total 896/1674
+      round 15: +64, total 960/1674
+      round 16: +64, total 1024/1674
+      round 17: +64, total 1088/1674
+      round 18: +64, total 1152/1674
+      round 19: +64, total 1216/1674
+      round 20: +64, total 1280/1674
+      round 21: +64, total 1344/1674
+      round 22: +64, total 1408/1674
+      round 23: +64, total 1472/1674
+      round 24: +64, total 1536/1674
+      round 25: +64, total 1600/1674
+      round 26: +64, total 1664/1674
+      round 27: +10, total 1674/1674
+   TARGET CHECK: m=1674, dim H_lam = p//K = 1674 -> FULL eigenspace
+   parity eigenvalues within 6.44e-15 of +-1 (involution, subspace is parity invariant)
+   m=1674  |U B - lam B|=1.99e-13   parity split m+=837 m-=837
+   refs full : GOE=0.5331+-0.0069  GUE=0.6019+-0.0038  Poisson=0.3858+-0.0054  SUP_GUE=0.4185+-0.0063
+   refs block: GOE=0.5314+-0.0125  GUE=0.6026+-0.0075  Poisson=0.3906+-0.0150
+      u#1: full=0.4251 plus=0.5292 minus=0.5332   max |off-parity block| = 1.30e-11
+      u#2: full=0.4361 plus=0.5300 minus=0.5443   max |off-parity block| = 1.34e-11
+      u#3: full=0.4176 plus=0.5328 minus=0.5305   max |off-parity block| = 1.31e-11
+      u#4: full=0.4200 plus=0.5321 minus=0.5266   max |off-parity block| = 1.23e-11
+      u#5: full=0.4266 plus=0.5315 minus=0.5492   max |off-parity block| = 1.32e-11
+      u#6: full=0.4103 plus=0.5185 minus=0.5226   max |off-parity block| = 1.27e-11
+   full   <r~>=0.4226+-0.0036   z: GOE=-15.93  GUE=-47.02  Poisson=+6.75  SUP_GUE=+0.65
+   plus   <r~>=0.5290+-0.0022   z: GOE=-0.19  GUE=-9.80  Poisson=+9.23
+   minus  <r~>=0.5344+-0.0042   z: GOE=+0.24  GUE=-9.08  Poisson=+9.58
+artifact -> C:\Users\churi\OneDrive\Desktop\BGS\BGS\artifacts\r73\desym_large_m.json

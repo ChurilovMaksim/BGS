@@ -1,0 +1,65 @@
+hecke_real_centraliser_v7.jl (RING 1.2 v7 SMALL-k SWEEP, 2026-08-28)
+julia 1.11.9  timestamp=2026-08-28T13:55:13.737
+
+=== A=(2, 1, 1, 1) @ p=4481 (v6 reference: k=64 (the breakthrough)) ===
+  ord_p(A) (BSGS) ... 64  (0.20s)
+  k = ord_p(α) = 64
+  Building U_A ... 7.12s
+  Eigendecomp ... 54.95s
+  Multiplet size = 85 (target k=64, expect ~70)
+  RAW kurt = 25.8776
+  R_n (Haar-Hecke) kurt = 0.0876
+  Reduction factor = 295.3x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.00036168926352176176, "sigma_median" => 0.06753852367769131, "sigma_max" => 0.16180534708966007, "ratio_max_over_median" => 2.3957489485827494)
+
+=== A=(2, 1, 1, 1) @ p=31 (small: A=(2,1,1,1) @ p=31, expect k=5) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 15
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=41 (small: A=(2,1,1,1) @ p=41, expect k=8) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 20
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=61 (small: A=(2,1,1,1) @ p=61, expect k=12) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 30
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=89 (small: A=(2,1,1,1) @ p=89, expect k=11 (or 44)) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 22
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=151 (small: A=(2,1,1,1) @ p=151, expect k=15) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 25
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=211 (small: A=(2,1,1,1) @ p=211, expect k=21) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 21
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=241 (small: A=(2,1,1,1) @ p=241, expect k=24) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 120
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=281 (small: A=(2,1,1,1) @ p=281, expect k=28) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 28
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=421 (small: A=(2,1,1,1) @ p=421, expect k=35) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 42
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=631 (small: A=(2,1,1,1) @ p=631, expect k=45) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = 315
+  SKIP: ord_p(A) not found
+=== A=(2, 1, 1, 1) @ p=841 (small: A=(2,1,1,1) @ p=841, expect k=40) ===
+  ord_p(A) (BSGS) ... 0  (0.00s)
+  k = ord_p(α) = -1
+  SKIP: p is inert for A=(2, 1, 1, 1)
+=== v7 SUMMARY ===
+p, m, kurt_raw, kurt_R, reduction
+4481  81   25.8776    0.0876     295.3x  (k=64, v6 reference: k=64 (the breakthrough))
+
+Max reduction factor: k>=60: 295.30226553109566x; 30<=k<60: 0x; k<30: 0x
+
+VERDICT: Hecke-collapse FAILS at k < 30. R54 threshold k>=50 confirmed.

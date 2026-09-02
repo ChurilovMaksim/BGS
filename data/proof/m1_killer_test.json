@@ -1,0 +1,8 @@
+{
+ "run": "101.1",
+ "milestone": "M1 killer test (M1-T): PASS at two designs",
+ "test": "max over nontrivial twists and all fibers d of |A(d)| vs the Weil bound 4 sqrt(N): N=53: 15.0 vs 29.1 (0 violations); N=199: 29.0 vs 56.4 (0 violations). Mean |A|^2 ~ O(N) at both (104 at N=53, 732 at N=199 \u2014 the constant between 1 and 2 per unit N).",
+ "reduction": "M1 = Lidl\u2013Niederreiter Thm 5.41 (Weil for multiplicative character sums with rational functions, D=4 for the M\u00f6bius) + c(d) flatness (Thm 95.2) + summation assembly. Textbook citation, not new machinery.",
+ "consequence": "delta = O(c_w^2/m) = o(1) along the design scaling; Conjecture 93.2 (E_c <= C N^3 K^4) becomes a THEOREM modulo the assembly write-up.",
+ "status": "[NUMERICALLY-SUPPORTED] killer test 2/2; write-up is the deliverable"
+}

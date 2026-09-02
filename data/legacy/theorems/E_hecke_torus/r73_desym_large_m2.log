@@ -1,0 +1,34 @@
+p=95419 K=57  target m=1280  basis 1.82 GB
+      round 1: +64, total 64/1280
+      round 2: +64, total 128/1280
+      round 3: +64, total 192/1280
+      round 4: +64, total 256/1280
+      round 5: +64, total 320/1280
+      round 6: +64, total 384/1280
+      round 7: +64, total 448/1280
+      round 8: +64, total 512/1280
+      round 9: +64, total 576/1280
+      round 10: +64, total 640/1280
+      round 11: +64, total 704/1280
+      round 12: +64, total 768/1280
+      round 13: +64, total 832/1280
+      round 14: +64, total 896/1280
+      round 15: +64, total 960/1280
+      round 16: +64, total 1024/1280
+      round 17: +64, total 1088/1280
+      round 18: +64, total 1152/1280
+      round 19: +64, total 1216/1280
+      round 20: +64, total 1280/1280
+   m=1280  |U B - lam B|=1.99e-13   parity split m+=640 m-=640
+   refs full : GOE=0.5325+-0.0070  GUE=0.6008+-0.0100  Poisson=0.3845+-0.0055  SUP_GUE=0.4191+-0.0095
+   refs block: GOE=0.5240+-0.0126  GUE=0.5956+-0.0083  Poisson=0.3971+-0.0134
+      u#1: full=0.5813 plus=0.5951 minus=0.5930   max |off-parity block| = 1.52e-02
+      u#2: full=0.6024 plus=0.5924 minus=0.6061   max |off-parity block| = 1.54e-02
+      u#3: full=0.5982 plus=0.5925 minus=0.5772   max |off-parity block| = 1.56e-02
+      u#4: full=0.6016 plus=0.6055 minus=0.5833   max |off-parity block| = 1.41e-02
+      u#5: full=0.6025 plus=0.6010 minus=0.5874   max |off-parity block| = 1.60e-02
+      u#6: full=0.5915 plus=0.5916 minus=0.5705   max |off-parity block| = 1.62e-02
+   full   <r~>=0.5963+-0.0034   z: GOE=+9.09  GUE=-0.45  Poisson=+38.39  SUP_GUE=+18.61
+   plus   <r~>=0.5964+-0.0023   z: GOE=+5.76  GUE=+0.09  Poisson=+14.85
+   minus  <r~>=0.5862+-0.0051   z: GOE=+4.96  GUE=-1.13  Poisson=+14.10
+artifact -> C:\Users\churi\Desktop\BGS\artifacts\r73\desym_large_m.json

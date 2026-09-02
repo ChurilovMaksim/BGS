@@ -1,0 +1,24 @@
+N=9349 K=19: scanning k0 = 0..18 with c in {5778,3571}
+  k0= 0: dev(c1)=2.93e-02  dev(c2)=2.93e-02  (5 s)
+  k0= 1: dev(c1)=2.80e-02  dev(c2)=4.42e-02  (10 s)
+  k0= 2: dev(c1)=1.92e-02  dev(c2)=1.94e-02  (14 s)
+  k0= 3: dev(c1)=6.05e-02  dev(c2)=4.77e-02  (19 s)
+  k0= 4: dev(c1)=3.52e-02  dev(c2)=4.64e-02  (24 s)
+  k0= 5: dev(c1)=2.32e-02  dev(c2)=2.79e-02  (29 s)
+  k0= 6: dev(c1)=2.91e-02  dev(c2)=2.73e-02  (33 s)
+  k0= 7: dev(c1)=2.24e-02  dev(c2)=2.47e-02  (38 s)
+  k0= 8: dev(c1)=2.60e-02  dev(c2)=2.35e-02  (43 s)
+  k0= 9: dev(c1)=2.48e-02  dev(c2)=2.30e-02  (48 s)
+  k0=10: dev(c1)=4.15e-02  dev(c2)=5.05e-02  (53 s)
+  k0=11: dev(c1)=1.54e-02  dev(c2)=1.07e-13  (57 s)
+  k0=12: dev(c1)=3.75e-02  dev(c2)=2.44e-02  (62 s)
+  k0=13: dev(c1)=3.71e-02  dev(c2)=1.80e-02  (67 s)
+  k0=14: dev(c1)=3.36e-02  dev(c2)=3.65e-02  (71 s)
+  k0=15: dev(c1)=1.89e-02  dev(c2)=2.64e-02  (76 s)
+  k0=16: dev(c1)=1.86e-02  dev(c2)=2.03e-02  (81 s)
+  k0=17: dev(c1)=1.66e-02  dev(c2)=3.36e-02  (86 s)
+  k0=18: dev(c1)=3.15e-02  dev(c2)=1.42e-02  (91 s)
+BEST: c1=5778 at k0=11 dev 1.54e-02;  c2=3571 at k0=11 dev 1.07e-13
+  C2 (c1 = L_9) confirmed somewhere in the scan: False
+  C1 (partner c2 = -5/c1) confirmed: True
+artifact -> artifacts/r82/branch_scan9349.json
