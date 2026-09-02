@@ -1,4 +1,4 @@
-"""RUN 94 paper patch: insert the R92-R93 section (exact fluctuation
+r"""RUN 94 paper patch: insert the R92-R93 section (exact fluctuation
 reduction, uniform even-k factorization, coupled energy, Katz
 cancellation) AFTER the R91 section (which now sits before
 \section{Numerical certification}).  Idempotent.

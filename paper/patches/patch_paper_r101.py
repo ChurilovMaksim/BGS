@@ -1,4 +1,4 @@
-"""RUN 101 paper patch: insert the R101 section (the Mobius-fiber theorem:
+r"""RUN 101 paper patch: insert the R101 section (the Mobius-fiber theorem:
 delta = o(1), the k=4 layer of the fluctuation hypothesis as a THEOREM).
 Idempotent.  Inserted before \section{Numerical certification}.
 """

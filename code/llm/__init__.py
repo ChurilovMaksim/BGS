@@ -1,4 +1,4 @@
-"""
+r"""
 BGS local-LLM integration (RING 1.2 Hecke evolve loop only).
 
 Thin adapter over the universal `C:\Users\churi\llm-pool\clients\local_client.py`.
