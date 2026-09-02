@@ -12,7 +12,7 @@
 
 ## Active rank-1 chain
 
-The current chain is `twisted-Jacobi kernel -> R82 reproduction -> exact k=2 reduction -> M1 open problem`.
+The current chain is `twisted-Jacobi kernel -> R82 reproduction -> exact k=2 reduction -> new-prime scalar regression -> M1 open problem`.
 
 The corresponding files are `code/math/twisted_jacobi.py`, `code/math/jacobi.py`, the three scripts under `code/verification/`, and `research/M1.md`.
 
@@ -27,7 +27,7 @@ python code/verification/h3_k2_exact_reduction.py
 python code/verification/theorem_ii_new_primes.py
 ```
 
-The two very large Theorem-II designs are opt-in with `--all`.
+The new-prime regression gate is intentionally limited to the two designs rerun during the rebuild. Larger historical designs stay archived until they are reimplemented with explicit memory bounds and rerun.
 
 ## Experiments
 
