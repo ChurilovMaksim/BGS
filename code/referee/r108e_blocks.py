@@ -116,8 +116,9 @@ def run(N, a):
             f"E2diag={E2[b, b]:.4e}")
     diag_sum = float(np.trace(E2))
     off_sum = float(E2.sum() - np.trace(E2))
-    log(f"block-diag total {diag_sum:.6e} (=E_c), block-cross total "
-        f"{off_sum:.4e}, E_unc {E_unc:.4e}")
+    log(f"block-diag total {diag_sum:.6e}, block-cross total "
+        f"{off_sum:.4e} (E_c = diag + cross = {diag_sum + off_sum:.6e}), "
+        f"E_unc {E_unc:.4e}")
     log("cross-block matrix (sum_t B_b B_b', absolute):")
     for b in range(8):
         row = " ".join(f"{E2[b, bp]:12.4e}" for bp in range(8))
