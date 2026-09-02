@@ -4,13 +4,18 @@
 > linear automorphisms of the two-torus, with the rank-2 generalisation
 > to Sp(2g).
 >
-> **Main papers:** [`paper/final/cat_map_bgs_main.pdf`](paper/final/cat_map_bgs_main.pdf) (25 pp, compiled)
-> and [`paper/final/bgs_complete_paper.pdf`](paper/final/bgs_complete_paper.pdf) (the full chain).
-> **Corrected note:** [`paper/final/mobius_fiber_theorem.pdf`](paper/final/mobius_fiber_theorem.tex)
-> (what is proved for the k=4 layer, and the cross-term problem it
-> leaves open — R108 retraction of the earlier δ = o(1) claim).
-> **Compiled:** 2026-09-02. **Last verified:** all artifacts reproduce;
-> R108 independent referee audit completed (see `docs/REVIEW_R108.md`).
+> **Main papers (sources of record, corrected R108):**
+> [`paper/final/cat_map_bgs_main.tex`](paper/final/cat_map_bgs_main.tex),
+> [`paper/final/bgs_complete_paper.tex`](paper/final/bgs_complete_paper.tex),
+> [`paper/final/mobius_fiber_theorem.tex`](paper/final/mobius_fiber_theorem.tex)
+> (corrected k=4 status + cross-term problem),
+> [`paper/final/h_coupling_research_note.tex`](paper/final/h_coupling_research_note.tex).
+> Compiled PDFs (pre-R108) are archived at
+> `docs/archive/papers/stale_pdf_r108/` — recompile pending (no LaTeX
+> toolchain in the R108 sandbox).
+> **Last verified:** all artifacts reproduce; R108 independent referee
+> audit completed (see `docs/REVIEW_R108.md` and
+> `docs/CROSS_TERM_LAW_R108.md`).
 
 ## Quick orientation for a new AI agent
 
@@ -33,13 +38,14 @@ scoped in `docs/research_goals.md` and `docs/sp4_project_scope.md`.
 ## Folder structure
 
 ```
-paper/final/          — compiled PDFs (the main results)
-  cat_map_bgs_main.pdf          — the 25-page main paper
-  bgs_complete_paper.pdf        — the complete research paper
-  h_coupling_research_note.pdf  — the H-coupling research note
-  mobius_fiber_theorem.pdf      — the k=4 corrected status + cross-term problem
-paper/sections/       — LaTeX section files (new results)
+paper/final/          — corrected paper sources (R108; PDFs archived)
+  cat_map_bgs_main.tex          — the main paper (25 pp source)
+  bgs_complete_paper.tex        — the complete research paper source
+  h_coupling_research_note.tex  — the H-coupling research note
+  mobius_fiber_theorem.tex      — corrected k=4 status + cross terms
+paper/sections/       — LaTeX section files (synced to R108 corrections)
 paper/patches/        — paper patch scripts (idempotent)
+docs/archive/papers/ — superseded pre-R108 drafts + stale PDFs (do not cite)
 
 code/core/            — cat-map quantisation (certified ≤ 7e-14)
 code/theorems/        — theorem implementations (A–H, II)
@@ -65,7 +71,11 @@ formal/               — Lean 4 project (no Mathlib)
   Bgs/ScaleLaw.lean       — scale law c² = t²−4 certificate
   Bgs/TorusLevelSets.lean — level-set counting certificate
 
+code/referee/         — R108 independent referee suite (r108a-h)
+data/referee/         — R108 referee artifacts
 docs/                 — supporting documents
+  REVIEW_R108.md            — the R108 referee report (full audit)
+  CROSS_TERM_LAW_R108.md    — k=4 corrected laws + decomposition
   programme_status.md       — honest state of the programme
   research_goals.md         — the prize-track hierarchy
   sp4_project_scope.md      — the Sp(2g) project plan

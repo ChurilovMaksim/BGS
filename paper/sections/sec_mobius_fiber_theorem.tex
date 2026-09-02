@@ -1,7 +1,9 @@
-% section_r101.tex — The Möbius-fiber theorem: delta = o(1) (M1 closed)
-% Insert after section_r95.tex.
+% section_r101.tex — The Möbius–fiber theorem: CORRECTED status (R108).
+% Insert after section_r95.tex.  Synced with the corrected main-paper
+% section: the original "delta = o(1) THEOREM" claim is retracted
+% (docs/REVIEW_R108.md, HISTORY RUN 108); see docs/CROSS_TERM_LAW_R108.md.
 
-\section{The M\"obius--fiber theorem: $\delta = o(1)$}
+\section{The M\"obius--fiber theorem: corrected status of $\delta$}
 \label{sec:r101}
 
 \subsection{The fiber sums are M\"obius-twisted character sums}
@@ -19,82 +21,68 @@ a multiplicative character evaluated along a rational parametrization:
   \psi_2\!\left(\frac{u(d-1)+1}{d-u+1}\right).
 \]
 
-\subsection{The per-fiber Weil bound}
+\subsection{The per-fiber Weil bound, with the $d=0$ carve-out}
 
-\begin{theorem}[per-fiber bound]
+\begin{theorem}[per-fiber bound; $d=0$ carve-out added in R108]
 \label{thm:fiberweil}
-For a nontrivial twist pair $(\psi_1,\psi_2) \neq (1,1)$ and every $d$,
+For a nontrivial twist pair $(\psi_1,\psi_2) \neq (1,1)$ and every
+$d \neq 0$,
 \[
   |A_{\psi_1\psi_2}(d)| \le c_w \sqrt{N}, \qquad c_w = 4,
 \]
 by the Weil bound for multiplicative character sums with rational
 functions (Lidl--Niederreiter, \emph{Finite Fields}, Thm.~5.41: the
-rational function $(u(d{-}1)+1)/(d{-}u+1)$ composed with $\psi_2$ has
-$D = 4$ distinct zeros and poles counted with multiplicity, and the
-sum along $u$ is bounded by $(D-1)\sqrt{N}$ unless the function is a
-perfect $K$-th power in $\mathbb{F}_N(u)$, which happens only for the
-trivial twist).
+integrand $\psi_1(u)\,\psi_2\!\bigl((u(d{-}1)+1)/(d{-}u{+}1)\bigr)$ is
+a single character of order $m$ applied to
+$F(u) = u^{j_1}\bigl((u(d{-}1)+1)/(d{-}u{+}1)\bigr)^{j_2}$, whose zeros
+and poles lie in the at-most-4-point set
+$\{0,\,1/(1{-}d),\,d{+}1,\,\infty\}$, and the sum is bounded by
+$(D-1)\sqrt{N} \le 3\sqrt{N}$ unless $F$ is a perfect $m$-th power,
+which happens only for the trivial twist).  At $d = 0$ the diagonal key
+$(1,1)$ of multiplicity $N{-}2$ sits on the fiber, so
+$|A_{\psi_1\psi_2}(0)| = N-2$ for \emph{every} pair; this contribution
+is explicit and must be carved out before applying Weil.  Measured
+(nontrivial pairs, $d \neq 0$): $\max |A|/(4\sqrt N) \le 0.52$ across
+the whole R108 design sweep.
 \end{theorem}
 
-\begin{theorem}[the $\delta$ bound; Conjecture~\ref{conj:Ec} resolved]
+\begin{theorem}[the $\delta$ bound; OPEN after R108]
 \label{thm:deltabound}
-With the per-fiber bound (Theorem~\ref{thm:fiberweil}), Parseval gives
-$E_{\mathrm{twist}} \le c_w^2 N^5$ per nontrivial pair, so
-\[
-  |\delta| \;\le\; \frac{c_w^2 m^2}{N^2} \;\le\; \frac{c_w^2}{K^2}
-  \;=\; o(1)
-\]
-along the design scaling ($K$ fixed, $N \to \infty$).  Consequently
-$E_c = (E_{\mathrm{unc}}/m^4)(1 + o(1)) \sim N^3 K^4$, and the
-relative cross-$q$ fluctuation of the $k{=}4$ coset moment decays as
-$K^2/N^{0.9} \to 0$: the $k{=}4$ layer of the fluctuation hypothesis
-(Conjecture~\ref{conj:Ec}) is a THEOREM.
+The per-fiber bound gives, by Parseval, $E_{\psi} \le 256\,N^5$ per
+nontrivial pair (constant corrected from 16 in R108: the original
+chain $|(A \star A)(t)|$-estimate yields $16N^2$ per $t$, hence
+$256\,N^5$ per pair), contributing at most $256\,m^2/N^2 = O(K^{-2})$
+to $\delta$.  However, the expansion of $E_c$ also contains cross
+terms between distinct twist pairs, which carry $88.9\%$--$99.99\%$ of
+the measured correction $m^4 E_c - E_{\mathrm{unc}}$ and are bounded by
+no current argument.  Moreover $\delta = o(1)$ cannot hold at fixed
+$K$ (only finitely many split primes share a given order).
+Conjecture~\ref{conj:Ec} at $k{=}4$ is therefore \textbf{OPEN}.
 \end{theorem}
 
-\subsection{Numerical verification of the fiber bound}
+\subsection{The exact pair-type decomposition (R108g, new)}
 
-Measured at two designs (all fibers, all nontrivial twist pairs):
-
+\begin{theorem}[pair-type decomposition; exact]
+\label{thm:pairtype}
+Splitting the coupled key pairs by type,
 \[
-\begin{array}{lccc}
- & \max |A(d)| & 4\sqrt{N} & \text{violations}\\
-N = 53, K = 13 & 15.0 & 29.1 & 0/53\\
-N = 199, K = 11 & 29.0 & 56.4 & 0/199
-\end{array}
+  B(t) = (N{-}2)^2\,\delta_{t=0} \;+\; 2(N{-}2)\,p_H(t) \;+\;
+  B_{\mathrm{off}}(t),
 \]
-
-The mean fiber energy $\sum_d |A(d)|^2 = O(N)$ with the constant
-between 1 and 2 per unit $N$ --- the $\sqrt{N}$ cancellation on the
-M\"obius orbits, measured directly.
-
-\subsection{The layer-uniform law}
-
-Measured across layers $k = 2$ to $12$: the relative cross-$q$
-fluctuation of the $k$-th coset moment grows only \emph{linearly} in
-$k$ at fixed $N$, $\operatorname{rel}_k \approx c(k) K/N$ with
-$c(k) \approx k/2$, and decays exactly as $m^{-1}$ between the
-calibration designs:
-
+with $p_H(t) = \#\{\text{off-keys at difference } t \text{ with }
+u, v \in H\}$ (a $K^2$-sized explicit table) and $B_{\mathrm{off}}$
+the coupled amplitude of the diagonal-free system.  Hence
 \[
-\begin{array}{lccc}
- & m = 18 & m = 105 & \text{ratio (m-ratio } 5.83)\\
-k = 6 & 0.1638 & 0.0273 & 5.99\\
-k = 8 & 0.2057 & 0.0336 & 6.12
-\end{array}
+  E_c = (N{-}2)^4 + 2(N{-}2)^2 B_{\mathrm{off}}(0)
+  + 4(N{-}2)^2 \textstyle\sum p_H^2
+  + 4(N{-}2)\!\!\sum_t p_H B_{\mathrm{off}} + E_c^{\mathrm{off}}.
 \]
-
-The exponential moment-error growth familiar from Gaussian
-comparisons does not occur in the cross-$q$ fluctuation: every fixed
-layer is controlled by $K/N$, and the obstacle to the higher layers is
-computational (the dimension of $V_{2s}$), not analytic.
-
-\subsection{Status}
-
-With Theorem~\ref{thm:deltabound}, the $k{=}2$ and $k{=}4$ layers of
-the fluctuation hypothesis are THEOREMS (the $k{=}2$ layer
-elementary, the $k{=}4$ layer via the M\"obius--fiber reduction), the
-$k \ge 6$ layers decay identically as $m^{-1}$ (measured), and the
-remaining assembly to the full local law is the
-Erd\H{o}s--Schlein--Yau-type deterministic argument plus the
-smooth-density input --- literature-standard techniques on fully
-calibrated objects.
+Machine-verified to $0.00$ relative error at every design.  The
+mechanism: the diagonal spike is twist-\emph{invariant} (its fiber
+contribution is $(N{-}2)\,\psi(1,1) = N{-}2$ for every twist), so it
+survives the annihilator averaging at full weight while the flat
+baseline $E_{\mathrm{unc}}/m^4$ suppresses the background by $m^4$;
+the measured $\delta$ is this mismatch.  The clean object is
+$\delta_{\mathrm{off}} := m^4 E_c^{\mathrm{off}}/E_{\mathrm{unc}}^{\mathrm{off}} - 1
+\approx \delta/4$--$5$, measured $\le 0.2\%$ for $K \ge 40$.
+\end{theorem}

@@ -5,6 +5,28 @@ retracted, or is not part of the live workspace. **Nothing is destroyed**.
 Every retired file keeps its original name and is reachable for traceability
 through its LEDGER/THEORY citation chain.
 
+### `archive/papers/superseded_r108/` (added R108, 2026-09-02)
+
+Superseded pre-R108 paper drafts, retired by the R108 referee audit:
+
+- `BGS_PROOF.tex/.pdf`, `BGS_COMPLETE.tex/.pdf` — early versions of the
+  full-chain paper; superseded by `paper/final/bgs_complete_paper.tex`
+  (R108-corrected).
+- `M4D_PROOF.tex/.pdf` — the original "complete proof of delta = o(1)"
+  claim; SUPERSEDED AND RETRACTED (root cause: indexing bug in the
+  N=3571 calibration; cross terms uncontrolled; constant 16 wrong;
+  fixed-K regime impossible).  Corrected version:
+  `paper/final/mobius_fiber_theorem.tex`.  See docs/REVIEW_R108.md.
+- `exact_wd_and_subgroup_moments.tex/.pdf` — pre-R82 companion note;
+  superseded by `paper/final/cat_map_bgs_main.tex`.
+
+### `archive/papers/stale_pdf_r108/` (added R108)
+
+PDFs compiled from the PRE-correction sources (R95-R101 era).  The
+corrected sources are `paper/final/*.tex`; these PDFs are retained only
+for traceability and MUST NOT be cited as current.  Recompile the
+final .tex files with tectonic on a machine with LaTeX to regenerate.
+
 ## Categories
 
 ### `archive/hecke_centring_failed_line/`
