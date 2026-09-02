@@ -120,7 +120,7 @@ def main():
         M = Ud @ Tn
         # diagonal matrix elements in the character basis
         diag = np.einsum('ij,ji->i', C.conj().T @ M, C)
-        A[str(n)] = float(np.abs(diag) ** 2).sum()
+        A[str(n)] = float((np.abs(diag) ** 2).sum())  # R108 bracket fix
     print("A_S(n) = sum_chi |<chi|U_D T(n)|chi>|^2:")
     for k, v in A.items():
         print(f"  n={k}: {v:.2f}")

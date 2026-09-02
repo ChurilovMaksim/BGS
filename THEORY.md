@@ -3031,7 +3031,19 @@ O(K/m)-small by Weil on the twisted conic fibers.  Everything else —
 the identity, the flatness, the energy scale — is elementary and
 machine-checked.
 
-### 19.32 THEOREM 96.2: the Weil term isolated [PROVEN identity + NUM-SUPPORTED smallness]
+### 19.32 THEOREM 96.2: the Weil term isolated [RETRACTED in R108 — see 19.37]
+
+> **R108 RETRACTION NOTE.** The "CLOSED" verdict below and the
+> K²/N^0.9 rate are retracted: (i) the N=3571 E_c value underlying the
+> "diagonal pollution" explanation was itself computed by the buggy
+> R93.2 script — the true values are E_c = 4.459482e15, δ = +17.65%
+> (confirmed by two independent methods to 4.3e−12); (ii) the
+> decomposition claimed here still leaves the twist-pair CROSS terms
+> uncontrolled — they carry 88.9–99.99% of the full correction
+> m⁴E_c − E_unc; (iii) the Parseval constant is 256, not 16; (iv)
+> δ = o(1) cannot hold at fixed K. See §19.37 and docs/REVIEW_R108.md.
+> The diag/off key split and the per-fiber Weil measurements
+> (|A| ~ √N on conic fibers) remain valid.
 
 The key table splits into the diagonal key (1,1) (n = N−2, d = 0, twist-
 independent) and the off-diagonal keys (n = 1, injectively keyed).  The
@@ -3122,3 +3134,55 @@ The G0 mechanism (the H-coupling closure for bounded-degree rational
 kernel fibers over abelian groups) is now documented with exact
 identities, numerical flatness, and a calibrated Weil constant — the
 full analytic chain from the cat map to Sp(2g).
+
+### 19.37 RUN 108 — THE REFEREE AUDIT: k=4 δ-control re-opened; the cross-term law [AUDIT + MEASUREMENT]
+
+**Method.** Independent re-implementation of the k=4 chain from the paper
+definitions only (code/referee/): brute-force ground truth at N=53; twist
+pipeline (validated to 1.4e-16 against ground truth); direct enumeration
+arbitration at N=3571 (agreement 4.3e-12); exact-layer checks (arcsine Thm
+91.5 EXACT for s ≤ 6 at N=53,199; Thm B s=2 EXACT); design sweep across
+K ∈ [11, 307].
+
+**Findings (full report: docs/REVIEW_R108.md).**
+1. E_c(N=3571) = 4.459482e15 (NOT 3.545e15; R93.2 script had inner-vs-outer
+   fancy-indexing bug in its class-1 partner gather). δ = +17.65%, not −6.9%.
+2. The "exact twist decomposition without cross terms" is FALSE: cross terms
+   carry 88.9% / 99.2% / 99.99% of m⁴E_c − E_unc at the three designs; the
+   nontriv pair energies are 0.05% → 1e-6 of it. The whole k=4 estimate
+   lives in the cross terms.
+3. Parseval constant: provable 256N⁵ per pair (not 16N⁵); measured per-pair
+   ≤ 0.3N⁵ — never the obstacle.
+4. Per-fiber Weil: needs the d=0 carve-out (diagonal key mass N−2); with it,
+   max |A_ψ(d)| ≤ 0.52·4√N across the whole sweep.
+5. "δ = o(1) at fixed K" is a logical error; fixed-K scaling is impossible
+   (N | Norm(a^K − 1), finitely many split primes per K). Honest regime:
+   K → ∞, K = o(N).
+6. Design bookkeeping: 5 is a NON-RESIDUE mod 53 — the N=53 design (a=10,
+   ord 13) is not a cat-map eigenvalue design for t=3.
+7. Resolvent rate m^-1.2 contradicted by stored data (~m^-0.6); third GOE
+   spacing design (N=95419) unsupported — honest count: two designs.
+
+**New measured law (design sweep, r108d).** The directly BGS-relevant
+quantity — the relative cross-q fluctuation of the coset fourth moment —
+satisfies
+
+    rel₄ = std_q(Σ₄)/mean_q(Σ₄) ≈ 2.1 / m   (rel₄·m ≈ 2.0–2.3 across designs)
+
+i.e. the 1/m decay the local-law input needs, measured exactly. The
+H₊ = H·⟨−1⟩-coupled (half-coset) δ is +0.58% (N=199) and +1.22% (N=3571)
+vs full-coset +6.45% / +17.65% — the parity-restricted coupling is far
+better behaved.
+
+**The corrected open problem.** Bound Cross = m⁴E_c − E_unc − Σ_nontriv.
+Frame: B = Σ_{e∈(G/H)²}(P_e ⋆ P_{ē}), P_e = coset-stratum difference
+profiles; Cross = their interaction energy; the stratum (H,H) carries the
+diagonal key (mass N−2) and is structurally special. First move: explicit
+extraction of the (H,H) stratum. Measured Cross/E_unc: 0.0098 (53,13),
+0.064 (199,11), 0.176 (3571,17), and the (N,K)-law across 18 designs in
+data/referee/r108d_ksweep.json.
+
+**Status of the chain after R108:** symmetry β=1 PROVEN; Catalan moments
+PROVEN; arcsine PROVEN (independently re-verified); k=2 PROVEN; k=4
+identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (cross terms);
+resolvent rate unstable; GOE spacing/rigidity: two supported designs.

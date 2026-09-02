@@ -2,3 +2,16 @@ R108b: N=3571, a=2469
 keys: 12734193 rows, built at 0.4s
 R108b: N=3571, a=2469
 keys: 12734193 rows, built at 2.2s
+DIRECT: K=17, E_c=4.459482e+15, Z_0=26385585, B nonneg: True, max|B|=26385585 at t=0
+  (r108 twist pipeline gave 4.459482e15; paper claims 3.545e15)
+TWIST full coset:  E_c=4.459482e+15 (vs direct rel 4.28e-12)
+TWIST half coset (m_+=11025): E_c=6.138863e+16
+  baseline full  E_unc/m^4   = 3.790577e+15
+  baseline half  E_unc/m_+^4 = 6.064924e+16
+  delta(full/full)   = +17.65%
+  delta(half/half)   = +1.22%
+  delta(half/full) MIXED = +1519.51%   <-- paper's -6.9%?
+  E_triv=7.371953e+24  sum_nontriv=9.9341e+19  cross=1.3008e+24
+  max E_psi (nontriv)/N^5 = 0.0042
+  max |A_psi(d)|, nontriv, d!=0: 120.51 vs 4sqrt(N)=239.03 (OK)
+WROTE /tmp/hoplite/workspace/data/referee/r108b_direct3571.json  (329.7s)

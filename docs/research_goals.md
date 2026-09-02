@@ -20,18 +20,23 @@ this is the layer where the result stops being "a family" and becomes
 
 ## The four milestones (in dependency order, each has a killer test)
 
-### M1 — δ_off = o(1): the Möbius-fiber theorem   [IN ATTACK]
+### M1 — δ_off = o(1): the Möbius-fiber theorem   [RETRACTED as a proof; re-posed by R108]
 
 The conic fiber of the difference map, written as a Möbius graph
 v = (u(d−1)+1)/(d−u+1), turns the fiber twist sum into a sum of a
 smooth (arithmetic progression) times a multiplicative twist along a
 Möbius orbit — cancellable by Weil + summation by parts.
 
-- Status: mechanism identified (RUN 96); **the killer test is M1-T**
-  (RUN 101, this session).
-- Numerical state: δ_off = +0.8% (N=53), +1.4% (N=199), < 1.5% total
-  across the off-diagonal part.
-- Deliverable: 10–20 pp note; closes Conjecture 93.2 (E_c ≤ C N³ K⁴).
+- Status: **RETRACTED (R108)**. The per-fiber Weil step is correct
+  (with the d=0 diagonal carve-out), but (i) the N=3571 calibration
+  was computed by a buggy script (true E_c = 4.459e15, δ = +17.6%, not
+  3.545e15 / −6.9%); (ii) the energy decomposition ignores the cross
+  terms between twist pairs, which carry 89–99.99% of the correction;
+  (iii) the Parseval constant is 256, not 16; (iv) "δ = o(1) at fixed
+  K" is a logical error (and fixed-K scaling is impossible for cat
+  maps). The corrected open problem: the cross-term estimate in the
+  coset-stratum frame. The design sweep (R108) measures the law.
+- Deliverable: the cross-term bound; closes Conjecture 93.2 (E_c ≤ C N³ K⁴ polylog) in the honest regime K → ∞.
 
 ### M2 — k ≥ 6 layers: the symmetric-power repetition
 

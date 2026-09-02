@@ -1,4 +1,13 @@
-"""RUN 91.17 -- Exact word-trace proof engine for Theorem 91.5.
+"""Word-trace algebra rewriter (verification-suite copy).  QUARANTINED IN R108.
+
+This copy crashes on re-execution ('word ('V','V') unresolved', line 244)
+and several of its reduction rules (R*W = R, E*R = R, R*E = R) are
+numerically FALSE (errors sqrt(2), 1, 1 -- found by R108 re-execution).
+It is superseded by code/large_m/word_trace_proof.py (the load-bearing
+RUN 91.17 engine) and by the independent exact check
+code/referee/r108c_arcsine_thmB.py, which verifies Theorem 91.5
+(Tr(M^{2s}) = binom(2s,s) m - beta_s) to machine precision at N = 53,
+199 for s <= 6.  Do not use or cite this file; retained as history.
 
 The algebra of the full-group matrix: M = V + V* with
 

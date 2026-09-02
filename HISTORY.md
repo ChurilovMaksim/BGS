@@ -10653,3 +10653,119 @@ Three-design comparison: rel_k ~ c(k)·K/N with c(k) ~ k/2 — confirmed
 across m = 18 to 837 and K = 11 to 57.  M2 CONFIRMED: the
 exponential-growth fear is definitively refuted.  Artifact:
 artifacts/r110/m2_third_design.json.
+
+---
+
+## RUN 108 (2026-09-02) — THE FULL REFEREE AUDIT: M1 RETRACTED, THE CROSS-TERM LAW MEASURED
+
+### R108.0 — Mandate and method
+
+Professional-referee pass over the entire programme (every paper, THEORY
+§0–19.36, the HISTORY ledger, the load-bearing code), followed by repair
+and new measurement.  Independent re-implementation of the k=4 chain from
+the paper definitions only — no workspace module imported — with
+brute-force ground truth at N=53 and a two-method arbitration at N=3571.
+Three audit subagents covered (a) HISTORY/artifact provenance, (b) the
+verification suite by re-execution, (c) code-vs-paper fidelity.
+Full report: docs/REVIEW_R108.md.  Scripts: code/referee/.  Artifacts:
+data/referee/.
+
+### R108.1 — What was independently CONFIRMED (solid)
+
+Thm 91.5 arcsine law: EXACT integers for s ≤ 6 at N=53,199, all q
+(own construction of V = J/(N−1); partial-isometry algebra to 2e−14).
+Thm B s=2: Σ|S_H|⁴ = 9,147,831 = p²(2k²−k) EXACTLY.  k=2 layer /
+key-table model: ground truth at N=53 matches to all digits (E_c =
+3.410502e9, Z₀ = 12063, mean Σ₄ = 4143.4615, std = 1913.79).  Twist
+identity for B: 1.4e−16 vs ground truth.  Flatness: c(d) ∈ {N−4, N−3,
+N−2} exactly.  Thm C (Θ² = 1, 504 configs, 1.56e−15), Thm H, Thm II
+certificates (5.95e−14 / 2.38e−13), GOE spacing KS at TWO designs
+(0.0140 < 0.0211; 0.0089 < 0.0113) — all reproduce.
+
+### R108.2 — RETRACTION: M1 (δ = o(1)) is not proven; parts are false
+
+1. **E_c(N=3571) = 4.459482e15, δ = +17.65%** — not 3.545e15 / −6.9%.
+   Two independent methods agree to 4.3e−12 (twist pipeline validated
+   at N=53; direct enumeration via difference table with correct
+   diagonal-key handling).  ROOT CAUSE: third_calibration.py (R93.2)
+   class-1 loop uses INNER fancy-indexing (Dp = dg_flat[U2−1, V2−1]) —
+   the partner's u-coordinate is taken from the column index v₁; the
+   docstring's stated rule (t₁/u₁, t₂/v₁) needs OUTER indexing
+   (np.ix_).  The N=53/199 values were later re-verified by the correct
+   twist pipeline; the N=3571 value was carried over unverified.
+2. **The energy decomposition has non-vanishing cross terms.**  E_c =
+   (1/m⁴)(E_triv + ΣE_ψ) is FALSE: cross terms carry 88.9% / 99.2% /
+   99.99% of m⁴E_c − E_unc at the three designs.  What R95 verified "to
+   all digits" was the identity for B (true), not the energy
+   decomposition (false).  No argument in the programme bounds Cross.
+3. **Parseval constant 16 → 256.**  |A⋆A(t)| ≤ Σ_d|A(d)|² ≤ 16N² ⟹
+   E_ψ ≤ 256N⁵.  (The note's Σ_ω|Â|² ≤ 4N⁴ is also wrong: 16N³.)
+   Empirical per-pair max E_ψ/N⁵ ≤ 0.29 — the pair energies were never
+   the obstacle.
+4. **Per-fiber Weil needs the d = 0 carve-out.**  |A_ψ(0)| = N−2 for
+   every pair (diagonal key).  With d ≠ 0: max ≤ 0.52·4√N across the
+   whole sweep.  Degree count corrected: integrand is the order-m
+   character of F(u) = u^{j₁}((u(d−1)+1)/(d−u+1))^{j₂}, zeros/poles ⊆
+   {0, 1/(1−d), d+1, ∞}, D ≤ 4, bound 3√N.
+5. **"δ = o(1) at fixed K" is a logical error** (the bound is
+   K-constant), and fixed-K scaling is impossible anyway: ord_N(a) = K
+   ⟹ N | Norm(a^K − 1) — finitely many split primes per K.  Honest
+   regime: K → ∞, K = o(N).
+6. **Design bookkeeping:** 5 is a non-residue mod 53 (5²⁶ ≡ −1), so
+   x²−3x+1 has no root in F₅₃; the N=53 design (a = 10, ord 13) is not
+   a cat-map eigenvalue design.  a = 139 (N=199) and a = 2469 (N=3571)
+   ARE roots; a = 47 has order 17 and generates the same H as 2469.
+7. **Subagent findings:** resolvent m^{−1.2} contradicted by stored
+   data (fit ≈ m^{−0.6}; last two points flat); third GOE spacing
+   design (N=95419) unsupported — honest count two; M1/r93/r95
+   artifacts missing; word_trace_algebra.py crashes with numerically
+   false rules; sp4_g0_probe.py bracket bug; path fragility (src/,
+   artifacts/).
+
+### R108.3 — NEW MEASUREMENT: the cross-term law (the corrected k=4 target)
+
+Design sweep (r108d_ksweep.py) across K ∈ [11, 307], m ∈ [4, 210]:
+  - **rel₄ · m ≈ 2.0–2.3** across all designs — the relative cross-q
+    fluctuation of the coset fourth moment decays like 2.1/m.  This is
+    the exact quantity the local-law input needs, now measured exactly
+    (replaces the corrupted rel₄ = 0.006 chain).
+  - **Half-coset (H₊ = H·⟨−1⟩) δ: +0.58% (N=199), +1.22% (N=3571)**
+    vs full-coset +6.45% / +17.65% — the parity-restricted coupling is
+    far better behaved; which coupling models the parity-odd sector is
+    sweep-measured (delta_odd ≈ −99%: the twisted odd-coset energy is
+    ~1% of the flat baseline — needs the right baseline interpretation).
+  - Cross/E_unc and the per-fiber Weil margin (max|A|/√N ≈ 2.0)
+    tabulated per design (data/referee/r108d_ksweep.json).
+
+**Corrected open problem (replaces M1):** bound Cross = m⁴E_c − E_unc −
+Σ_nontriv, equivalently the interaction energy of coset-stratum
+difference profiles B = Σ_e (P_e ⋆ P_{ē}); the stratum (H,H) carries the
+diagonal key and is the natural extraction target.
+
+### R108.4 — Repairs executed
+
+papers: cat_map_bgs_main.tex (δ table + thm:delta + thm:fiberweil +
+closure downgraded), mobius_fiber_theorem.tex (rewritten as corrected
+statement), bgs_complete_paper.tex (abstract, k=4 section, status table,
+remaining work).  docs: REVIEW_R108.md (new), programme_status.md,
+research_goals.md, README.md, THEORY.md (19.32 retraction note + 19.37).
+code: third_calibration.py RETRACTED header + np.ix_ fix,
+sp4_g0_probe.py bracket fix, word_trace_algebra.py quarantine header.
+hygiene: durable artifacts/ mapping (legacy_runs → data/legacy,
+diagnostics → data/diagnostics, run outputs r72–r92), referee scripts
+under code/referee/ with artifacts in data/referee/.
+
+### R108.5 — Status after the audit
+
+k=4 layer: identity + flatness + per-fiber Weil PROVEN; δ-control OPEN
+(cross terms).  All exact layers stand (most re-verified independently).
+The BGS path for this family now runs: measured rel₄ ≈ 2.1/m (exact,
+all designs) + cross-term bound (open) → trace-fluctuation lemma → ESY
+assembly → local law.  No general-BGS claim.
+
+### RUN 108 HANDOFF
+
+Next: (a) attack the cross-term estimate in the coset-stratum frame —
+explicit (H,H)-stratum extraction first; (b) use the sweep law
+(rel₄ ≈ 2.1/m) as the calibration target; (c) M3 write-up can proceed
+on the measured input while (a) is open, clearly flagged as conditional.

@@ -1,4 +1,12 @@
-"""Word-trace computation in the partial-isometry algebra (Theorem 91.5 proof)."""
+"""Word-trace computation in the partial-isometry algebra (Theorem 91.5 proof).
+
+QUARANTINED IN R108: this symbolic checker is structurally wrong -- its
+reduce maps V V* -> ['I','E'] and then traces the PRODUCT I*E (= 1),
+losing the sum decomposition V V* = I - E (so Tr should be m - 1); it
+silently returns Tr(M^2) = 2 instead of 2m - 2, and crashes at s = 3
+('unbalanced leftover').  Superseded by word_trace_proof.py and by the
+independent exact check code/referee/r108c_arcsine_thmB.py.  Do not use.
+"""
 import itertools
 
 

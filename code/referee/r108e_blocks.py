@@ -1,0 +1,159 @@
+r"""R108e -- WHERE DOES THE CROSS TERM LIVE?  Block decomposition of the
+coupled energy by coset-stratum type.
+
+B(t) = sum_{e in (G/H)^2} (P_e * P_{e-bar})(t),  e-bar = (-c1, -c2),
+where P_e(dbar) = weighted key mass in stratum e at difference dbar
+(H3[c1, c2, dbar]).
+
+Blocks: strata are grouped by the inversion-stable flags
+  f1: c1 == 0   (u in H)
+  f2: c2 == 0   (v in H)
+  f3: c1 == c2  (u and v in the same H-coset)
+giving 8 blocks beta, each closed under inversion, so
+  B = sum_beta (Pb_beta * Pb_beta),  Pb_beta = sum_{e in beta} P_e,
+and
+  E_c = sum_beta E_beta + sum_{beta != beta'} Cross_beta beta',
+  E_beta = sum_t (Pb_b * Pb_b)^2,  Cross_bb' = sum_t C_b C_b'.
+
+Output: the 8x8 block matrix, each block's share of
+(m^4 E_c - E_unc), per-stratum flat-deviation top list, and the
+sweep-context numbers.  Designs: N=3571 (the delta=+17.65% outlier)
+and N=199 (delta=+6.45%) for contrast.
+"""
+import json
+import math
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(HERE)))
+OUT_DIR = os.path.join(ROOT, "data", "referee")
+LOG_PATH = os.path.join(OUT_DIR, "r108e_blocks.log")
+JSON_PATH = os.path.join(OUT_DIR, "r108e_blocks.json")
+
+sys.path.insert(0, HERE)
+from r108_k4_independent import (  # noqa: E402
+    build_keys, discrete_log_table as dlog_table,
+    multiplicative_order, primitive_root,
+)
+
+
+def log(msg):
+    print(str(msg), flush=True)
+    with open(LOG_PATH, "a", encoding="utf-8") as fh:
+        fh.write(str(msg) + "\n")
+
+
+def block_index(c1, c2, m):
+    f1 = (c1 == 0).astype(np.int64)
+    f2 = (c2 == 0).astype(np.int64)
+    f3 = (c1 == c2).astype(np.int64)
+    return f1 * 4 + f2 * 2 + f3  # 0..7
+
+
+def run(N, a):
+    K = multiplicative_order(a, N)
+    m = (N - 1) // K
+    g = primitive_root(N)
+    dlog = dlog_table(N, g)
+    u, v, d, mult = build_keys(N)
+    c1 = (dlog[u] % m).astype(np.int32)
+    c2 = (dlog[v] % m).astype(np.int32)
+    blk = block_index(c1, c2, m)
+
+    # per-block profiles over dbar (weighted)
+    Pb = np.zeros((8, N), dtype=np.float64)
+    for b in range(8):
+        sel = blk == b
+        if not sel.any():
+            continue
+        Pb[b] = np.bincount(
+            d[sel], weights=mult[sel].astype(np.float64), minlength=N
+        )
+    # pooled counts and E_unc
+    c_counts = Pb.sum(axis=0)
+    chat = np.fft.fft(c_counts)
+    E_unc = float(np.sum(np.abs(chat) ** 4) / N)
+
+    # block convolutions C_b = Pb_b * Pb_b (cyclic, length N)
+    C = np.empty((8, N), dtype=np.float64)
+    for b in range(8):
+        Fh = np.fft.fft(Pb[b])
+        C[b] = np.fft.ifft(Fh * Fh).real
+    B = C.sum(axis=0)
+    E_c = float(np.sum(B**2))
+    delta = E_c / (E_unc / (m**4)) - 1
+
+    # block energy matrix: E2[b,b'] = sum_t C_b C_b'
+    E2 = C @ C.T  # 8x8, since sum_t C_b(t) C_b'(t) is a dot product
+    total_corr = m**4 * E_c - E_unc
+    log(f"=== N={N} K={K} m={m}: E_c={E_c:.6e}, delta={delta*100:+.2f}% "
+        f"(m^4 E_c - E_unc = {total_corr:.4e})")
+    names = []
+    for b in range(8):
+        f1, r = divmod(b, 4)
+        f2, f3 = divmod(r, 2)
+        names.append(f"uH={f1}vH={f2}same={f3}")
+    log("block masses (key mass per block) vs flat share:")
+    mass = Pb.sum(axis=1)
+    for b in range(8):
+        log(f"  {names[b]:20s} mass={mass[b]:12.0f} "
+            f"E2diag={E2[b, b]:.4e}")
+    # decomposition of the correction
+    diag_sum = float(np.trace(E2))
+    off_sum = float(E2.sum() - np.trace(E2))
+    # note: m^4 E_c = sum_b E2[b,b] + sum_{b!=b'} E2[b,b']; compare to E_unc
+    log(f"block-diag total {diag_sum:.4e}, block-cross total {off_sum:.4e}, "
+        f"E_unc {E_unc:.4e}")
+    log("cross-block matrix (shares of block-cross total, %):")
+    tot = off_sum if off_sum != 0 else 1.0
+    for b in range(8):
+        row = " ".join(
+            f"{100*E2[b, bp]/tot:6.2f}" if b != bp else "   ---"
+            for bp in range(8)
+        )
+        log(f"  {names[b]:20s} {row}")
+    # top non-flat strata by L2 deviation from the flat per-cell mass
+    flat_cell = ((N - 2) ** 2) / (m * m * N)
+    flat_prof = np.full(N, flat_cell)
+    per_stratum = None
+    if m * m * N <= 5e7:
+        H3 = np.bincount(
+            flat_idx, weights=mult.astype(np.float64), minlength=m * m * N
+        ).reshape(m, m, N)
+        stratum_l2 = np.sqrt(((H3 - flat_prof) ** 2).sum(axis=2))
+        top = np.dstack(np.unravel_index(np.argsort(stratum_l2.ravel())[::-1][:6],
+                                         stratum_l2.shape))[0]
+        per_stratum = [
+            (int(c1i), int(c2i), float(stratum_l2[c1i, c2i]))
+            for c1i, c2i in top
+        ]
+        log("top non-flat strata (c1, c2, L2 dev from flat):")
+        for c1i, c2i, dev in per_stratum:
+            log(f"  ({c1i:4d},{c2i:4d})  {dev:.3e}")
+    out = dict(
+        N=N, K=K, m=m, E_c=E_c, E_unc=E_unc, delta_pct=delta * 100,
+        block_names=names, block_mass=mass.tolist(),
+        E2=E2.tolist(), diag_sum=diag_sum, off_sum=off_sum,
+        per_stratum=per_stratum,
+    )
+    return out
+
+
+def main():
+    log("R108e: block decomposition of the coupled-energy correction")
+    res = {}
+    for N, a in ((199, 139), (3571, 2469)):
+        try:
+            res[f"N{N}"] = run(N, a)
+        except Exception as exc:
+            log(f"N={N} FAILED: {exc}")
+    with open(JSON_PATH, "w", encoding="utf-8") as fh:
+        json.dump(res, fh, indent=1, default=float)
+    log(f"WROTE {JSON_PATH}")
+
+
+if __name__ == "__main__":
+    main()

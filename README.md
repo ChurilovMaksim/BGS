@@ -6,8 +6,11 @@
 >
 > **Main papers:** [`paper/final/cat_map_bgs_main.pdf`](paper/final/cat_map_bgs_main.pdf) (25 pp, compiled)
 > and [`paper/final/bgs_complete_paper.pdf`](paper/final/bgs_complete_paper.pdf) (the full chain).
-> **Definitive proof:** [`paper/final/mobius_fiber_theorem.pdf`](paper/final/mobius_fiber_theorem.pdf) (the δ = o(1) theorem).
-> **Compiled:** 2026-09-02. **Last verified:** all artifacts reproduce.
+> **Corrected note:** [`paper/final/mobius_fiber_theorem.pdf`](paper/final/mobius_fiber_theorem.tex)
+> (what is proved for the k=4 layer, and the cross-term problem it
+> leaves open — R108 retraction of the earlier δ = o(1) claim).
+> **Compiled:** 2026-09-02. **Last verified:** all artifacts reproduce;
+> R108 independent referee audit completed (see `docs/REVIEW_R108.md`).
 
 ## Quick orientation for a new AI agent
 
@@ -16,9 +19,14 @@ then `HANDBOOK.md` (the detailed reference), then `THEORY.md` (the
 mathematical framework, §19.18–19.36 for the latest results).
 
 The programme is **not finished**.  What IS finished: the rank-1
-(cat map) chain through the k=4 fluctuation layer (M1 = theorem), and
-the rank-2 (Sp₄ diagonal) coupled-energy flatness (G0 mechanism).
-What is NOT finished: the ESY deterministic assembly (M3), the
+(cat map) exact layers (symmetry, Catalan moments, arcsine law,
+observable curve, k=2 fluctuation layer) and the rank-2 (Sp₄ diagonal)
+coupled-energy flatness (G0 mechanism).  What is OPEN after the R108
+referee audit: the k=4 δ-control — the cross terms between twist pairs
+carry 89–99.99% of the correction and are unbounded by any current
+argument (the earlier "M1 δ = o(1) PROVEN" claim is retracted; its
+N=3571 calibration number was wrong — see
+`docs/REVIEW_R108.md`); the ESY deterministic assembly (M3), the
 non-diagonal Sp₄ Hecke operator (M4d), and k ≥ 6 layers.  All are
 scoped in `docs/research_goals.md` and `docs/sp4_project_scope.md`.
 
@@ -93,9 +101,9 @@ tools/                — build tools
 | **GOE P(s)**: 3 designs, KS PASS | NUM-SUPPORTED |
 | **GOE rigidity Σ²(L)**: matched control 6/6 | NUM-SUPPORTED |
 | **H3 k=2 exact**: combinatorial, no Katz/Weil | PROVEN + Lean |
-| **H3 k=4 + M1 δ = o(1)**: Möbius-fiber theorem | PROVEN |
+| **H3 k=4**: exact identity, flatness, per-fiber Weil (d=0 carve-out); δ-control OPEN — cross terms carry 89–99.99% of correction | PROVEN (partial) + OPEN (R108) |
 | **Layer-uniform law**: rel_k ~ c(k)K/N | NUM (3 designs) |
-| **Resolvent convergence**: m^−1.2 | NUM (4 points) |
+| **Resolvent rate**: unstable in stored data (~m^-0.6) | NUM (contradicted) |
 
 ### Rank 2: the Sp₄ generalisation
 
@@ -111,23 +119,32 @@ tools/                — build tools
 
 For any kernel whose difference fibers are rational-function orbits of
 bounded degree over an abelian group, the coupled energy factors as
-`E_c = E_flat/m⁴·(1 + δ)` with `δ = O(c_w²/K²) = o(1)`.  The flat part
-is elementary; the Weil part is bounded by RH over finite fields
-applied to the fiber curves.  The cat map is the D = 4 rank-1 case;
-the Sp₄ diagonal is the first rank-2 confirmation.
+`E_c = E_flat/m⁴·(1 + δ)` with `δ` controlled by Weil bounds on the
+nontrivial twists — **modulo the cross terms** (R108: the cross terms
+between twist pairs, not the pair energies, carry 89–99.99% of the
+measured correction; controlling them is the open core of G0).  The
+flat part is elementary; the Weil part is bounded by RH over finite
+fields applied to the fiber curves.  The cat map is the D = 4 rank-1
+case; the Sp₄ diagonal is the first rank-2 confirmation.
 
 ## What remains (the honest list)
 
-1. **M3 (ESY assembly)**: the Newtonian iteration from the calibrated
-   inputs to the local law.  All four inputs are measured or proven;
-   the write-up is 10–15 pp of literature-standard technique.
-2. **M4d (non-diagonal Sp₄ Hecke operator)**: the Bruhat assembly of
+1. **Cross-term estimate (the k=4 δ-control, re-opened by R108)**:
+   bound the cross terms between twist pairs — 89–99.99% of the
+   coupled-energy correction; the coset-stratum profile frame and the
+   design-sweep measurements are in `docs/REVIEW_R108.md` §C and
+   `data/referee/r108d_ksweep.json`.
+2. **M3 (ESY assembly)**: the Newtonian iteration from the calibrated
+   inputs to the local law.  The moment inputs are measured or proven
+   (Catalan moments, rel₄ ≈ 2.1/m); the write-up is 10–15 pp of
+   literature-standard technique once the cross-term input is settled.
+3. **M4d (non-diagonal Sp₄ Hecke operator)**: the Bruhat assembly of
    ω(D) from the verified generators; the genuine rank-2 coupled-
    energy test with the entangled theta kernel.  See
    `docs/sp4_project_scope.md` for the sub-milestones.
-3. **k ≥ 6 layers**: the template (Theorem 92.3) generalises; each
+4. **k ≥ 6 layers**: the template (Theorem 92.3) generalises; each
    layer needs its own δ_k analysis.
-4. **General BGS**: NOT claimed — the H-coupling method applies to
+5. **General BGS**: NOT claimed — the H-coupling method applies to
    arithmetic quantum-chaos families but requires family-specific
    verification.
 

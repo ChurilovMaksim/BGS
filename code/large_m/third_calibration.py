@@ -1,9 +1,20 @@
-"""RUN 93.2 -- Third calibration of the coupled energy at N=3571 via the
+r"""RUN 93.2 -- Third calibration of the coupled energy at N=3571 via the
 permutation-gather trick.
+
+**RETRACTED IN R108 (2026-09-02).**  The class-1 loop below originally
+used INNER fancy-indexing (Dp = dg_flat[U2-1, V2-1]), which pairs the
+partner's u-coordinate with the COLUMN index (v1) instead of the row
+index (u1) -- producing a wrong coupled energy (3.545e15 instead of the
+true 4.459482e15; delta = -6.9% instead of +17.65%).  The bug is fixed
+below (outer indexing via np.ix_, as the docstring always intended),
+but the R93/R95 papers and tables citing the old number are corrected
+separately (see docs/REVIEW_R108.md and HISTORY RUN 108).  This script
+is kept for provenance; the certified values come from
+code/referee/r108_k4_independent.py and r108b_direct3571.py.
 
 B(t) = sum over coupled key pairs (p1,p2): u1*u2 in H, v1*v2 in H,
 d(p1)+d(p2) = t of n1*n2.  For each (t1,t2) in H^2, the partner of the
-grid point (u1,v1) is (t1/u1, t2/v1) — a PERMUTATION of the grid.  So the
+grid point (u1,v1) is (t1/u1, t2/v1) -- a PERMUTATION of the grid.  So the
 contribution of the (t1,t2) class to B is the histogram of
 (d(p1) + d(perm(p1))) over valid grid points, computed by fancy-indexing
 the 2D difference grid.  H^2 = 289 classes, each O(N^2) numpy work.
@@ -11,10 +22,8 @@ the 2D difference grid.  H^2 = 289 classes, each O(N^2) numpy work.
 Weights: all grid points have n=1 EXCEPT the diagonal key (1,1) which
 carries n = N-2 (pairs x=y).  The diagonal point (u=v=1) is excluded from
 the grid (u=v masked); handle its couplings separately: coupling of (1,1)
-with (u2,v2) requires 1*u2 in H (always true) and 1*v2 in H (always) —
-so the diagonal couples with EVERYTHING: contribution to B(t) = (N-2)*
-[c(t) + c(-t)] - (N-2)^2 * 1[t=0] correction... plus its own pair (1,1)-(1,1)
-contribution (N-2)^2 at t=0.  Careful accounting implemented below.
+with (u2,v2) requires u2 in H AND v2 in H (since 1*u2 = u2 must lie in
+H, and likewise v2).  Class-2/3 below implement this correctly.
 
 Output: artifacts/r93/sigma4_third_calibration.json
 """
@@ -90,11 +99,17 @@ def main():
     for t1 in H:
         for t2 in H:
             # partner u2 = t1 * inv(u1), v2 = t2 * inv(v1); grid is indexed
-            # by 1..N-1 -> shift by -1
+            # by 1..N-1 -> shift by -1.  OUTER indexing (np.ix_) so that
+            # Dp[i, j] = d(t1/uu[i], t2/uu[j]) -- the partner of the grid
+            # point (u1,v1) = (uu[i], uu[j]) takes u2 from the ROW index
+            # and v2 from the COLUMN index.  (R108 fix: the original
+            # inner indexing Dp = dg_flat[U2-1, V2-1] wrongly used the
+            # column index for both coordinates.)
             U2 = (t1 * inv_arr[uu]) % N   # values in 1..N-1
             V2 = (t2 * inv_arr[uu]) % N
-            Dp = dg_flat[U2 - 1, V2 - 1]
-            Vp = val_flat[U2 - 1, V2 - 1]
+            ix = np.ix_(U2 - 1, V2 - 1)
+            Dp = dg_flat[ix]
+            Vp = val_flat[ix]
             both = valid & Vp
             if not both.any():
                 continue
