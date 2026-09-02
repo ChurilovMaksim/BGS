@@ -7,7 +7,7 @@ main(), which points at the wrong path on this disk). This validates:
 
   (a) the load-bearing theorem_ii_twisted_jacobi.py module still imports
       and exposes build_closed_form;
-  (b) the q-curve .npz files in artifacts/legacy_runs/theorems/I_torus_rigidity/
+  (b) the q-curve .npz files in data/legacy/theorems/I_torus_rigidity/
       are still on disk and contain the expected (q, mu4) arrays;
   (c) the closed-form twisted-Jacobi-sum pipeline still reproduces the R82.12
       certificates (max |mu4_closed - mu4_measured| ≤ 2.4e-13 at N=3571).
@@ -24,8 +24,8 @@ import time
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))  # BGS/ (src/large_m -> src -> BGS)
-sys.path.insert(0, os.path.join(ROOT, "src", "theorems"))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+sys.path.insert(0, os.path.join(ROOT, "code", "theorems"))
 
 from theorem_ii_twisted_jacobi import (  # noqa: E402
     build_closed_form,
@@ -33,13 +33,13 @@ from theorem_ii_twisted_jacobi import (  # noqa: E402
     sqrt_mod,
 )
 
-T_TRACE = 3  # cat-map trace, fixed for the family
+T_TRACE = 3
 
 LEGACY_DIR = os.path.join(
-    ROOT, "artifacts", "legacy_runs", "theorems", "I_torus_rigidity"
+    ROOT, "data", "legacy", "theorems", "I_torus_rigidity"
 )
 LEGACY_CF = os.path.join(
-    ROOT, "artifacts", "legacy_runs", "theorems", "II_twisted_jacobi",
+    ROOT, "data", "legacy", "theorems", "II_twisted_jacobi",
     "closed_form.json"
 )
 
@@ -111,7 +111,7 @@ def reproduce_one(N, K):
 
 def main():
     out = {
-        "script": "src/large_m/baseline_repro_r82.py",
+        "script": "code/verification/baseline_r82.py",
         "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "phase": "R87.0",
         "designs": [],
@@ -124,7 +124,6 @@ def main():
         out["designs"].append(row)
         print(f"N={N} K={K} -> {row}", flush=True)
 
-    # Reference (R82.12 legacy certified numbers, 2026-08-30)
     if os.path.exists(LEGACY_CF):
         with open(LEGACY_CF) as fh:
             legacy = json.load(fh)
@@ -141,13 +140,12 @@ def main():
             out["verdict"][f"N={d['N']}"] = "NO_REFERENCE"
             continue
         legacy_max = ref.get("max_abs_dev_mu4", 1.0)
-        # Allow 10x slack — we re-derived, not re-blessed.
         if d["max_abs_dev_mu4"] <= 10.0 * legacy_max:
             out["verdict"][f"N={d['N']}"] = "PASS"
         else:
             out["verdict"][f"N={d['N']}"] = "REGRESSION"
 
-    dest = os.path.join(ROOT, "artifacts", "r87", "baseline_check.json")
+    dest = os.path.join(ROOT, "data", "proof", "baseline_check.json")
     with open(dest, "w") as fh:
         json.dump(out, fh, indent=1, default=str)
     print("artifact ->", dest, flush=True)
