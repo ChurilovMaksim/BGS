@@ -37,7 +37,7 @@ paper/final/          — compiled PDFs (the main results)
   cat_map_bgs_main.pdf          — the 25-page main paper
   bgs_complete_paper.pdf        — the complete research paper
   h_coupling_research_note.pdf  — the H-coupling research note
-  mobius_fiber_theorem.pdf      — the δ = o(1) standalone proof
+  mobius_fiber_theorem.pdf      — the k=4 corrected status + cross-term problem
 paper/sections/       — LaTeX section files (new results)
 paper/patches/        — paper patch scripts (idempotent)
 

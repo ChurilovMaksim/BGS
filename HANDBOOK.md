@@ -56,11 +56,15 @@ projection isolates the quantum-chaotic sector.
 For any kernel whose difference fibers are rational-function orbits
 of bounded degree D over an abelian group:
 
-    E_c = E_flat/m⁴ · (1 + δ),  |δ| ≤ c_w²/K² = o(1)
+    E_c = E_flat/m⁴ · (1 + δ),  δ = δ_explicit + δ_remainder
 
 The cat map is the D = 4 rank-1 case.  The Sp₄ diagonal is the first
 rank-2 confirmation (flatness exact, no Weil correction needed for
 the diagonal case; the genuine mixed-sector test is the next step).
+R108 correction: the earlier o(1) bound is retracted (see
+docs/REVIEW_R108.md, docs/CROSS_TERM_LAW_R108.md) — δ_explicit is the
+closed-form diagonal-key artifact, δ_remainder is measured ≤ 0.3% for
+K ≥ 40 and is the open analytic estimate.
 
 ## §5 How to verify
 
@@ -74,7 +78,11 @@ the diagonal case; the genuine mixed-sector test is the next step).
 
 ## §6 The remaining open steps
 
-1. M3: ESY deterministic assembly (literature-standard, 10–15 pp)
-2. M4d: non-diagonal Sp₄ Hecke operator (Bruhat assembly)
-3. k ≥ 6 layers: template generalises, computational work
-4. General BGS: NOT claimed — family-specific verification required
+1. Cross-term remainder estimate: |Rem| ≤ E_unc/m⁴ · O(K^{−3/2})
+   (measured from K ≈ 40 upward; the explicit diagonal term has closed
+   form — derive and verify at all 16 sweep designs)
+2. M3: ESY deterministic assembly (conditional on 1; the rel₄ ≈ 2.2/m
+   calibration is measured exactly)
+3. M4d: non-diagonal Sp₄ Hecke operator (Bruhat assembly)
+4. k ≥ 6 layers: template generalises, computational work
+5. General BGS: NOT claimed — family-specific verification required

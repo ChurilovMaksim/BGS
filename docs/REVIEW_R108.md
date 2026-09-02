@@ -183,17 +183,14 @@ A_{ψ₁ψ₂}(d) the twisted fiber sums (diagonal key included at d = 0).
    ratio ≤ 0.52 across the sweep).
 4. **Per-pair energies (true, vacuous):** E_ψ ≤ 256N⁵ provable;
    measured ≤ 0.3N⁵ — never the obstacle.
-5. **The open problem (new, sharp):** bound
-   Cross := m⁴E_c − E_unc − Σ_{ψ≠11} E_ψ.
-   Mechanistic frame (new): write B as the sum over coset strata,
-   B = Σ_{e∈(G/H)²} (P_e ⋆ P_{ē}) with P_e(s) = #{keys in stratum e at
-   difference s} (weighted); the cross terms measure the **correlation
-   of coset-stratum difference profiles**.  The stratum (H,H) is special
-   (it contains the diagonal key of mass N−2), so an explicit
-   "diagonal/stratum extraction" is the natural first move.
-   Measured Cross/E_unc = 0.0098, 0.064, 0.176 at (N,K) =
-   (53,13), (199,11), (3571,17); the K-sweep (`r108d_ksweep.py`)
-   measures the true (N,K)-law of all coupling variants.
+5. **The open problem (new, sharp; decomposed in R108f):** bound
+   Cross := m⁴E_c − E_unc − Σ_{ψ≠11} E_ψ.  The block decomposition
+   (r108e) localises it: the (H,H)-stratum (0.03% of key mass) carries
+   ~76–100% of the deviation; flattening the diagonal-key spike removes
+   60–72% of δ.  Hence δ = δ_explicit (closed form) + δ_remainder, with
+   δ_remainder ≤ 0.3% for K ≥ 40 (measured across 16 designs; see
+   docs/CROSS_TERM_LAW_R108.md).  The remaining analytic estimate is the
+   distributed remainder in the coset-stratum frame.
 6. **Desymmetrisation observation (new, BGS-relevant):** at N=3571 the
    H₊ = H·⟨−1⟩-coupled half-coset energy has δ(half) = +1.22% vs
    δ(full) = +17.65%; at N=199, +0.58% vs +6.45%.  The parity-restricted
@@ -202,8 +199,9 @@ A_{ψ₁ψ₂}(d) the twisted fiber sums (diagonal key included at d = 0).
    measured in the sweep.
 7. **Directly BGS-relevant measured law:** the relative cross-q
    fluctuation of the coset fourth moment satisfies
-   rel₄ · m ≈ 2.0–2.3 across all measured designs (m ∈ [4, 210]) —
-   the 1/m decay the local-law input needs, now measured exactly.
+   rel₄ · m ∈ [2.0, 2.4] across all 16 sweep designs
+   (m ∈ [4, 210], K ∈ [11, 307]) — the 1/m decay the local-law input
+   needs, measured exactly.
 
 ## D. Status changes required (retraction cascade)
 

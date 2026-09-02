@@ -233,8 +233,12 @@ def main():
         (3571, 2469),  # paper design K=17 (m=210)
         (2161, None), (6709, None), (3001, None), (2521, None),
         (4481, None), (4021, None), (4969, None), (7879, None),
-        (10711, None), (5081, None), (1511, None), (9521, None),
-        (5881, None), (6871, None), (5281, None), (12391, None),
+        # (10711, None) dropped in R108: build_keys meshgrid needs ~7.3GB
+        # at N~10711 (memory-guard kill); chunked construction is future
+        # work if the N>1e4 regime is needed.
+        (5081, None), (1511, None), (9521, None),
+        (5881, None), (6871, None), (5281, None),
+        # (12391, None) dropped: same memory reason (~9.8GB).
         (1229, None),
     ]
     all_des = {t[0]: t for t in find_designs()}

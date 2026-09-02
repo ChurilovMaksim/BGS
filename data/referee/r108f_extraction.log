@@ -1,0 +1,26 @@
+R108f: (H,H)-stratum extraction test
+=== N=199 K=11 m=18: delta(V0 true) = +6.45%
+  V1 flatten (0,0) stratum:      delta = +2.56%
+  V2 flatten diagonal spike only: delta = +2.57%
+  V3 V1 + flatten (c,-c) family:  delta = +2.35%
+=== N=3571 K=17 m=210: delta(V0 true) = +17.65%
+  V1 flatten (0,0) stratum:      delta = +4.89%
+  V2 flatten diagonal spike only: delta = +4.89%
+  V3 V1 + flatten (c,-c) family:  delta = +4.81%
+=== N=2161 K=40 m=54: delta(V0 true) = +0.45%
+  V1 flatten (0,0) stratum:      delta = +0.20%
+  V2 flatten diagonal spike only: delta = +0.20%
+  V3 V1 + flatten (c,-c) family:  delta = +0.19%
+=== N=6709 K=43 m=156: delta(V0 true) = +0.88%
+  V1 flatten (0,0) stratum:      delta = +0.30%
+  V2 flatten diagonal spike only: delta = +0.30%
+  V3 V1 + flatten (c,-c) family:  delta = +0.29%
+=== N=5081 K=127 m=40: delta(V0 true) = +0.02%
+  V1 flatten (0,0) stratum:      delta = +0.01%
+  V2 flatten diagonal spike only: delta = +0.01%
+  V3 V1 + flatten (c,-c) family:  delta = +0.01%
+=== N=1229 K=307 m=4: delta(V0 true) = +0.00%
+  V1 flatten (0,0) stratum:      delta = +0.00%
+  V2 flatten diagonal spike only: delta = +0.00%
+  V3 V1 + flatten (c,-c) family:  delta = +0.00%
+WROTE /tmp/hoplite/workspace/data/referee/r108f_extraction.json

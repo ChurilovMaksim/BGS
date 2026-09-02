@@ -187,7 +187,10 @@ number variance $\Sigma^2(L)$ matches a matched GOE control within
 $2\sigma$ for all $L \in \{1,2,3,5,8,12\}$.
 \end{theorem}
 
-The bulk resolvent converges at rate $m^{-1.2}$: the Stieltjes
+The bulk resolvent converges; the stored R99 data fit an unstable rate
+(≈ $m^{-0.6}$ over the four calibration points, with the last two
+flat), so the earlier $m^{-1.2}$ claim is not established: the
+Stieltjes
 transform deviation over the bulk grid decreases from $0.359$ ($m_+ =
 9$) through $0.087$ ($m_+ = 105$) to $0.037$ ($m_+ = 336$) and
 $0.038$ ($m_+ = 837$).
@@ -381,13 +384,16 @@ replacing the retracted $\delta = o(1)$ write-up): bound
 $\mathrm{Cross} = m^4 E_c - E_{\mathrm{unc}} - \sum_{\psi \ne 11}
 E_\psi$, equivalently the correlations of coset-stratum
 difference-profiles $P_e$ in $B = \sum_e (P_e \star P_{\bar e})$.
-Measured $\mathrm{Cross}/E_{\mathrm{unc}} = 0.0098, 0.064, 0.176$ at
-$(N,K) = (53,13), (199,11), (3571,17)$; the R108 design sweep maps
-the $(N,K)$-law.  A natural first move: explicit extraction of the
-diagonal-heavy $(H,H)$ stratum.
+R108 decomposition: the cross terms are $60$--$72\%$ an explicit
+diagonal-key artifact with closed form (derivable exactly), and the
+distributed remainder is measured $\le 0.3\%$ for $K \ge 40$
+(docs/CROSS\_TERM\_LAW\_R108.md).  First moves: derive the explicit
+term and verify it at all 16 sweep designs; then bound the remainder
+in the stratum frame.
 \item \textbf{The ESY deterministic assembly}: the Newtonian
-iteration route from the calibrated inputs (bulk resolvent
-$m^{-1.2}$, bounded edge mass, Weil entry bound, flatness lemma) to
+iteration route from the calibrated inputs (measured rel$_4 \approx
+2.2/m$ across the design sweep, bounded edge mass, Weil entry bound,
+flatness lemma) to
 the local law at $\operatorname{Im} z \gg m_+^{-1+\delta}$
 (literature-standard; 10--15 pp).
 \item \textbf{The $k \ge 6$ layers}: the template of

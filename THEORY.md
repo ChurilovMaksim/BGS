@@ -3182,6 +3182,21 @@ extraction of the (H,H) stratum. Measured Cross/E_unc: 0.0098 (53,13),
 0.064 (199,11), 0.176 (3571,17), and the (N,K)-law across 18 designs in
 data/referee/r108d_ksweep.json.
 
+**R108 final addendum — the mechanism and the decomposition (r108e/r108f).**
+The block decomposition localises the correction: the (H,H)-stratum block
+(0.03% of key mass) carries ~76% of the deviation at N=3571 and ~100% at
+N=199; the next-non-flat family is (c,−c) (uv ∈ H), an order below.
+Flattening the diagonal-key spike alone removes 60–72% of δ:
+17.65% → 4.89% (3571), 6.45% → 2.56% (199), 0.88% → 0.30% (6709),
+0.02% → 0.01% (5081).  Hence the measured decomposition
+
+    δ = δ_explicit(diagonal/(H,H) term; closed form) + δ_remainder,
+
+with δ_remainder ≤ 0.3% for K ≥ 40 and ~0 for K ≥ 127.  The corrected
+theorem target: E_c = E_unc/m⁴ + E_expl(N,K) + Rem with
+|Rem|/(E_unc/m⁴) = O(K^{−3/2}) (measured; analytically open — see
+docs/CROSS_TERM_LAW_R108.md).
+
 **Status of the chain after R108:** symmetry β=1 PROVEN; Catalan moments
 PROVEN; arcsine PROVEN (independently re-verified); k=2 PROVEN; k=4
 identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (cross terms);

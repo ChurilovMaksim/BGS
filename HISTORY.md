@@ -10765,7 +10765,23 @@ assembly → local law.  No general-BGS claim.
 
 ### RUN 108 HANDOFF
 
-Next: (a) attack the cross-term estimate in the coset-stratum frame —
-explicit (H,H)-stratum extraction first; (b) use the sweep law
-(rel₄ ≈ 2.1/m) as the calibration target; (c) M3 write-up can proceed
-on the measured input while (a) is open, clearly flagged as conditional.
+Next: (a) derive E_expl in closed form (exact algebra — the diagonal-key
+spike interacting with the flat background; check against δ − δ_remainder
+at all 16 designs); (b) multi-design-per-K sampling at K ∈ {11,17,40} to
+separate K-law from design scatter; (c) attack the Remainder in the
+stratum frame (per-stratum-pair interaction bounds); (d) M3 write-up
+conditionally on |Rem| = O(E_unc/m⁴ · K^{−3/2}) — measured to hold from
+K ≈ 40 upward, with rel₄ ≈ 2.2/m as the exact calibration.
+
+### R108.6 — FINAL: mechanism localised, decomposition measured
+
+r108e (block decomposition): the (H,H)-stratum block — 0.03% of key mass —
+carries ~76% (N=3571) / ~100% (N=199) of the deviation from flat; next
+family (c,−c) an order below.  r108f (extraction test): flattening the
+diagonal-key spike alone removes 60–72% of δ (17.65%→4.89% at 3571;
+6.45%→2.56% at 199; ≤0.3% remainder for K ≥ 40).  The corrected object is
+
+    δ = δ_explicit (closed form) + δ_remainder (distributed, ~K^{−3} decay),
+
+not an opaque cross-term sum.  Full tables and the theorem candidate:
+docs/CROSS_TERM_LAW_R108.md.

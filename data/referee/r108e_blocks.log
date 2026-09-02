@@ -1,0 +1,49 @@
+R108e: block decomposition of the coupled-energy correction
+=== N=199 K=11 m=18: E_c=1.155895e+11, delta=+6.45% (m^4 E_c - E_unc = 7.3486e+14)
+block masses (key mass per block):
+  uH=0vH=0same=0       mass=       32912 E2diag=8.0586e+10
+  uH=0vH=0same=1       mass=        1870 E2diag=2.1627e+08
+  uH=0vH=1same=0       mass=        1870 E2diag=2.1594e+08
+  uH=0vH=1same=1       mass=           0 E2diag=0.0000e+00
+  uH=1vH=0same=0       mass=        1870 E2diag=2.1594e+08
+  uH=1vH=0same=1       mass=           0 E2diag=0.0000e+00
+  uH=1vH=1same=0       mass=           0 E2diag=0.0000e+00
+  uH=1vH=1same=1       mass=         287 E2diag=1.5488e+09
+block-diag total 8.278315e+10 (=E_c), block-cross total 3.2806e+10, E_unc 1.1399e+16
+cross-block matrix (sum_t B_b B_b', absolute):
+  uH=0vH=0same=0         8.0586e+10   4.1668e+09   4.1657e+09   0.0000e+00   4.1657e+09   0.0000e+00   0.0000e+00   2.8051e+09
+  uH=0vH=0same=1         4.1668e+09   2.1627e+08   2.1550e+08   0.0000e+00   2.1550e+08   0.0000e+00   0.0000e+00   1.5145e+08
+  uH=0vH=1same=0         4.1657e+09   2.1550e+08   2.1594e+08   0.0000e+00   2.1594e+08   0.0000e+00   0.0000e+00   1.5072e+08
+  uH=0vH=1same=1         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=0same=0         4.1657e+09   2.1550e+08   2.1594e+08   0.0000e+00   2.1594e+08   0.0000e+00   0.0000e+00   1.5072e+08
+  uH=1vH=0same=1         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=1same=0         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=1same=1         2.8051e+09   1.5145e+08   1.5072e+08   0.0000e+00   1.5072e+08   0.0000e+00   0.0000e+00   1.5488e+09
+top non-flat strata (c1, c2, L2 dev from flat):
+  (   0,   0)  1.967e+02
+  (   1,  17)  1.501e+01
+  (  17,   1)  1.501e+01
+  (   4,  14)  1.461e+01
+  (  10,   8)  1.461e+01
+  (   8,  10)  1.461e+01
+=== N=3571 K=17 m=210: E_c=4.459482e+15, delta=+17.65% (m^4 E_c - E_unc = 1.3009e+24)
+block masses (key mass per block):
+  uH=0vH=0same=0       mass=    12563408 E2diag=3.8467e+15
+  uH=0vH=0same=1       mass=       56848 E2diag=7.0182e+10
+  uH=0vH=1same=0       mass=       56848 E2diag=7.0319e+10
+  uH=0vH=1same=1       mass=           0 E2diag=0.0000e+00
+  uH=1vH=0same=0       mass=       56848 E2diag=7.0319e+10
+  uH=1vH=0same=1       mass=           0 E2diag=0.0000e+00
+  uH=1vH=1same=0       mass=           0 E2diag=0.0000e+00
+  uH=1vH=1same=1       mass=        3809 E2diag=1.6229e+14
+block-diag total 4.009189e+15 (=E_c), block-cross total 4.5029e+14, E_unc 7.3720e+24
+cross-block matrix (sum_t B_b B_b', absolute):
+  uH=0vH=0same=0         3.8467e+15   1.6423e+13   1.6420e+13   0.0000e+00   1.6420e+13   0.0000e+00   0.0000e+00   1.7334e+14
+  uH=0vH=0same=1         1.6423e+13   7.0182e+10   7.0109e+10   0.0000e+00   7.0109e+10   0.0000e+00   0.0000e+00   7.7979e+11
+  uH=0vH=1same=0         1.6420e+13   7.0109e+10   7.0319e+10   0.0000e+00   7.0319e+10   0.0000e+00   0.0000e+00   7.7749e+11
+  uH=0vH=1same=1         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=0same=0         1.6420e+13   7.0109e+10   7.0319e+10   0.0000e+00   7.0319e+10   0.0000e+00   0.0000e+00   7.7749e+11
+  uH=1vH=0same=1         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=1same=0         0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00   0.0000e+00
+  uH=1vH=1same=1         1.7334e+14   7.7979e+11   7.7749e+11   0.0000e+00   7.7749e+11   0.0000e+00   0.0000e+00   1.6229e+14
+WROTE /tmp/hoplite/workspace/data/referee/r108e_blocks.json

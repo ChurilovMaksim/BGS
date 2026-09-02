@@ -3,6 +3,9 @@
 Index of machine-readable outputs in `artifacts/`. Each row maps an output
 file to the script/command that produced it. Recreated on 2026-09-01 (RUN 91)
 after the R85-R87 hostile audit confirmed all listed artifacts reproduce.
+R108 (2026-09-02): independent referee suite added — `code/referee/` scripts
+with outputs in `data/referee/` (k=4 verification, N=3571 arbitration,
+exact-layer checks, 16-design K-sweep, block decomposition, extraction test).
 
 ## Top-level run directories
 

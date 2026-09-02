@@ -63,31 +63,44 @@ def run(N, a):
     c2 = (dlog[v] % m).astype(np.int32)
     blk = block_index(c1, c2, m)
 
-    # per-block profiles over dbar (weighted)
-    Pb = np.zeros((8, N), dtype=np.float64)
-    for b in range(8):
-        sel = blk == b
-        if not sel.any():
-            continue
-        Pb[b] = np.bincount(
-            d[sel], weights=mult[sel].astype(np.float64), minlength=N
-        )
-    # pooled counts and E_unc
-    c_counts = Pb.sum(axis=0)
+    # stratum histogram H3[c1, c2, dbar] (weighted), int64->float path
+    flat_idx = (c1.astype(np.int64) * m + c2) * N + d
+    H3 = np.bincount(
+        flat_idx, weights=mult.astype(np.float64), minlength=m * m * N
+    ).reshape(m, m, N)
+    del flat_idx
+    c_counts = H3.sum(axis=(0, 1))
     chat = np.fft.fft(c_counts)
     E_unc = float(np.sum(np.abs(chat) ** 4) / N)
 
-    # block convolutions C_b = Pb_b * Pb_b (cyclic, length N)
-    C = np.empty((8, N), dtype=np.float64)
-    for b in range(8):
-        Fh = np.fft.fft(Pb[b])
-        C[b] = np.fft.ifft(Fh * Fh).real
-    B = C.sum(axis=0)
+    # B = sum_e (P_e * P_ebar), ebar = (-c1, -c2) mod m.  Aggregate by
+    # block: B_b(t) = sum_{e in block b} (P_e * P_ebar)(t).  (Direct
+    # block-profile convolutions would spuriously pair e with the
+    # inverse of a different stratum in the same block -- R108e bug fix.)
+    Bblk = np.zeros((8, N), dtype=np.float64)
+    inv_c2 = (-np.arange(m)) % m
+    c1g = np.arange(m)[:, None] * np.ones((1, m), dtype=np.int64)
+    c2g = np.arange(m)[None, :] * np.ones((m, 1), dtype=np.int64)
+    bb_all = block_index(c1g, c2g, m)
+    CH = 8  # c1-chunk
+    for a0 in range(0, m, CH):
+        a1 = min(a0 + CH, m)
+        inv_c1 = (-np.arange(a0, a1)) % m
+        P = H3[a0:a1, :, :]                        # (ch, m, N)
+        Q = H3[inv_c1[:, None], inv_c2[None, :], :]  # P_ebar, aligned
+        D = np.fft.ifft(np.fft.fft(P, axis=2)
+                        * np.fft.fft(Q, axis=2), axis=2).real
+        Db = D.reshape((a1 - a0) * m, N)
+        bmask = bb_all[a0:a1, :].reshape(-1)
+        for b in range(8):
+            sel = bmask == b
+            if sel.any():
+                Bblk[b] += Db[sel].sum(axis=0)
+    B = Bblk.sum(axis=0)
     E_c = float(np.sum(B**2))
     delta = E_c / (E_unc / (m**4)) - 1
 
-    # block energy matrix: E2[b,b'] = sum_t C_b C_b'
-    E2 = C @ C.T  # 8x8, since sum_t C_b(t) C_b'(t) is a dot product
+    E2 = Bblk @ Bblk.T  # E2[b,b'] = sum_t B_b(t) B_b'(t)
     total_corr = m**4 * E_c - E_unc
     log(f"=== N={N} K={K} m={m}: E_c={E_c:.6e}, delta={delta*100:+.2f}% "
         f"(m^4 E_c - E_unc = {total_corr:.4e})")
@@ -96,43 +109,34 @@ def run(N, a):
         f1, r = divmod(b, 4)
         f2, f3 = divmod(r, 2)
         names.append(f"uH={f1}vH={f2}same={f3}")
-    log("block masses (key mass per block) vs flat share:")
-    mass = Pb.sum(axis=1)
+    mass = np.array([H3[bb_all == b].sum() for b in range(8)])
+    log("block masses (key mass per block):")
     for b in range(8):
         log(f"  {names[b]:20s} mass={mass[b]:12.0f} "
             f"E2diag={E2[b, b]:.4e}")
-    # decomposition of the correction
     diag_sum = float(np.trace(E2))
     off_sum = float(E2.sum() - np.trace(E2))
-    # note: m^4 E_c = sum_b E2[b,b] + sum_{b!=b'} E2[b,b']; compare to E_unc
-    log(f"block-diag total {diag_sum:.4e}, block-cross total {off_sum:.4e}, "
-        f"E_unc {E_unc:.4e}")
-    log("cross-block matrix (shares of block-cross total, %):")
-    tot = off_sum if off_sum != 0 else 1.0
+    log(f"block-diag total {diag_sum:.6e} (=E_c), block-cross total "
+        f"{off_sum:.4e}, E_unc {E_unc:.4e}")
+    log("cross-block matrix (sum_t B_b B_b', absolute):")
     for b in range(8):
-        row = " ".join(
-            f"{100*E2[b, bp]/tot:6.2f}" if b != bp else "   ---"
-            for bp in range(8)
-        )
+        row = " ".join(f"{E2[b, bp]:12.4e}" for bp in range(8))
         log(f"  {names[b]:20s} {row}")
     # top non-flat strata by L2 deviation from the flat per-cell mass
     flat_cell = ((N - 2) ** 2) / (m * m * N)
     flat_prof = np.full(N, flat_cell)
     per_stratum = None
-    if m * m * N <= 5e7:
-        H3 = np.bincount(
-            flat_idx, weights=mult.astype(np.float64), minlength=m * m * N
-        ).reshape(m, m, N)
+    if m * m <= 40000:
         stratum_l2 = np.sqrt(((H3 - flat_prof) ** 2).sum(axis=2))
-        top = np.dstack(np.unravel_index(np.argsort(stratum_l2.ravel())[::-1][:6],
-                                         stratum_l2.shape))[0]
+        top = np.dstack(np.unravel_index(
+            np.argsort(stratum_l2.ravel())[::-1][:6], stratum_l2.shape))[0]
         per_stratum = [
-            (int(c1i), int(c2i), float(stratum_l2[c1i, c2i]))
-            for c1i, c2i in top
+            (int(x), int(y), float(stratum_l2[x, y])) for x, y in top
         ]
         log("top non-flat strata (c1, c2, L2 dev from flat):")
-        for c1i, c2i, dev in per_stratum:
-            log(f"  ({c1i:4d},{c2i:4d})  {dev:.3e}")
+        for x, y, dev in per_stratum:
+            log(f"  ({x:4d},{y:4d})  {dev:.3e}")
+    del H3
     out = dict(
         N=N, K=K, m=m, E_c=E_c, E_unc=E_unc, delta_pct=delta * 100,
         block_names=names, block_mass=mass.tolist(),

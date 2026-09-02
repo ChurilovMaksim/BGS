@@ -54,3 +54,58 @@ R108d K-sweep (curated): true law of the k=4 coupled energy
   delta_half=+0.01%  delta_odd=-100.00%
   maxA/sqrtN=2.01  rel4=0.0286  Z0=202824293  meanS4=122519777.4
 === N10711_K119 a=105 ===
+R108d K-sweep (curated): true law of the k=4 coupled energy
+  N=199 K=11 m=18
+  N=3571 K=17 m=210
+  N=2161 K=40 m=54
+  N=6709 K=43 m=156
+  N=3001 K=50 m=60
+  N=2521 K=60 m=42
+  N=4481 K=64 m=70
+  N=4021 K=67 m=60
+  N=4969 K=92 m=54
+  N=7879 K=101 m=78
+  N=5081 K=127 m=40
+  N=1511 K=151 m=10
+  N=9521 K=170 m=56
+  N=5881 K=196 m=30
+  N=6871 K=229 m=30
+  N=5281 K=264 m=20
+  N=1229 K=307 m=4
+resuming with 10 completed designs
+=== N199_K11 already done, skip
+=== N3571_K17 already done, skip
+=== N2161_K40 already done, skip
+=== N6709_K43 already done, skip
+=== N3001_K50 already done, skip
+=== N2521_K60 already done, skip
+=== N4481_K64 already done, skip
+=== N4021_K67 already done, skip
+=== N4969_K92 already done, skip
+=== N7879_K101 already done, skip
+=== N5081_K127 a=1032 ===
+  delta_full=+0.02%  cross/E_unc=0.0002  nontriv/E_unc=1.63e-07
+  delta_half=+0.00%  delta_odd=-100.00%
+  maxA/sqrtN=2.01  rel4=0.0565  Z0=132169907  meanS4=50320394.4
+=== N1511_K151 a=347 ===
+  delta_full=+0.01%  cross/E_unc=0.0001  nontriv/E_unc=3.34e-07
+  delta_half=+0.00%  delta_odd=-100.00%
+  maxA/sqrtN=2.02  rel4=0.2103  Z0=38405897  meanS4=4091846.2
+=== N9521_K170 a=6099 ===
+  delta_full=+0.01%  cross/E_unc=0.0001  nontriv/E_unc=4.92e-08
+  maxA/sqrtN=2.01  rel4=0.0388  Z0=452977039  meanS4=178003184.4
+=== N5881_K196 a=4309 ===
+  delta_full=+0.01%  cross/E_unc=0.0001  nontriv/E_unc=5.82e-08
+  maxA/sqrtN=2.01  rel4=0.0766  Z0=292474823  meanS4=66786801.5
+=== N6871_K229 a=3828 ===
+  delta_full=+0.00%  cross/E_unc=0.0000  nontriv/E_unc=3.65e-08
+  delta_half=+0.00%  delta_odd=-100.00%
+  maxA/sqrtN=2.01  rel4=0.0738  Z0=451265621  meanS4=91265155.5
+=== N5281_K264 a=164 ===
+  delta_full=+0.00%  cross/E_unc=0.0000  nontriv/E_unc=3.46e-08
+  maxA/sqrtN=2.01  rel4=0.1080  Z0=420586599  meanS4=52945564.2
+=== N1229_K307 a=746 ===
+  delta_full=+0.00%  cross/E_unc=0.0000  nontriv/E_unc=7.12e-08
+  delta_half=+0.00%  delta_odd=-100.00%
+  maxA/sqrtN=2.03  rel4=0.4987  Z0=117524807  meanS4=2258813.7
+WROTE /tmp/hoplite/workspace/data/referee/r108d_ksweep.json (95.3s)
