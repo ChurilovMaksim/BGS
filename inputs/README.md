@@ -1,5 +1,7 @@
 # Inputs
 
-`r82-legacy/` is a read-only snapshot of the preserved R82-era inputs required by `code/verification/baseline_r82.py`. New work should not write into it.
+This directory contains only immutable reference inputs required by current verification scripts.
 
-The complete former workspace is separately preserved under `archive/legacy-workspace/`.
+`r82-legacy/` holds the two preserved R82 q-curves plus the small R82 closed-form reference used by `code/verification/baseline_r82.py`. New work must not write into this directory.
+
+All other historical data remain available in `archive/legacy-workspace/data/`.
