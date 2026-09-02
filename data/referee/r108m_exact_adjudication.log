@@ -1,0 +1,20 @@
+R108m: exact adjudication of the dichotomy theorem + DC formula
+=== N=199 K=11 m=18: one-stage 2D DFT, 324 pairs, worst rel err 5.17e-13  ALL PASS
+  Y_sum(0): formula 1.492847e+09 vs direct 1.492847e+09 (rel 0.00e+00) PASS
+  FFT-pipeline Y_sum(0) = 1.492847e+09 vs formula 1.492847e+09 (rel 3.19e-16)
+=== N=1229 K=307 m=4: one-stage 2D DFT, 16 pairs, worst rel err 2.61e-13  ALL PASS
+  Y_sum(0): formula 2.262938e+12 vs direct 2.262938e+12 (rel 0.00e+00) PASS
+=== N=1511 K=151 m=10: one-stage 2D DFT, 100 pairs, worst rel err 1.33e-11  ALL PASS
+  Y_sum(0): formula 5.178289e+12 vs direct 5.178289e+12 (rel 0.00e+00) PASS
+=== N=2161 K=40 m=54: one-stage 2D DFT, 2916 pairs, worst rel err 1.18e-11  ALL PASS
+  Y_sum(0): formula 2.170816e+13 vs direct 2.170816e+13 (rel 0.00e+00) PASS
+  FFT-pipeline Y_sum(0) = 2.170816e+13 vs formula 2.170816e+13 (rel 0.00e+00)
+=== N=2521 K=60 m=42: one-stage 2D DFT, 1764 pairs, worst rel err 3.01e-11  ALL PASS
+  Y_sum(0): formula 4.023242e+13 vs direct 4.023242e+13 (rel 0.00e+00) PASS
+=== N=3001 K=50 m=60: one-stage 2D DFT, 3600 pairs, worst rel err 6.47e-11  ALL PASS
+  Y_sum(0): formula 8.083971e+13 vs direct 8.083971e+13 (rel 0.00e+00) PASS
+=== N=4969 K=92 m=54: one-stage 2D DFT, 2916 pairs, worst rel err 1.13e-10  ALL PASS
+  Y_sum(0): formula 6.084215e+14 vs direct 6.084215e+14 (rel 0.00e+00) PASS
+=== N=5081 K=127 m=40: one-stage 2D DFT, 1600 pairs, worst rel err 9.27e-11  ALL PASS
+  Y_sum(0): formula 6.651871e+14 vs direct 6.651871e+14 (rel 0.00e+00) PASS
+done

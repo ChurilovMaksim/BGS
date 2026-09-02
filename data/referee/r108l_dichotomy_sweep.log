@@ -1,0 +1,41 @@
+R108l: exact dichotomy law across the full design sweep
+=== N=199 K=11 m=18
+  criterion count 52 == expected 3m-2 = 52: PASS
+  giant values all == N-3 = 196: PASS (min 196 max 196, n=51)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 38612
+=== N=1229 K=307 m=4
+  criterion count 10 == expected 3m-2 = 10: PASS
+  giant values all == N-3 = 1226: PASS (min 1226 max 1226, n=9)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 1504302
+=== N=1511 K=151 m=10
+  criterion count 28 == expected 3m-2 = 28: PASS
+  giant values all == N-3 = 1508: PASS (min 1508 max 1508, n=27)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 2275572
+=== N=2161 K=40 m=54
+  criterion count 160 == expected 3m-2 = 160: PASS
+  giant values all == N-3 = 2158: PASS (min 2158 max 2158, n=159)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 4659122
+=== N=2521 K=60 m=42
+  criterion count 124 == expected 3m-2 = 124: PASS
+  giant values all == N-3 = 2518: PASS (min 2518 max 2518, n=123)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 6342842
+=== N=3001 K=50 m=60
+  criterion count 178 == expected 3m-2 = 178: PASS
+  giant values all == N-3 = 2998: PASS (min 2998 max 2998, n=177)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 8991002
+=== N=4969 K=92 m=54
+  criterion count 160 == expected 3m-2 = 160: PASS
+  giant values all == N-3 = 4966: PASS (min 4966 max 4966, n=159)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 24666122
+=== N=5081 K=127 m=40
+  criterion count 118 == expected 3m-2 = 118: PASS
+  giant values all == N-3 = 5078: PASS (min 5078 max 5078, n=117)
+  non-criterion max |A0| = 2.0 (O(1) PASS)
+  trivial pair |A0| = 25791162

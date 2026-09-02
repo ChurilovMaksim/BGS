@@ -3214,7 +3214,34 @@ assertion-only (no data).  Nine cited artifacts were missing; the
 artifacts/ tree is rebuilt durably and the catmap imports are
 symlinked so the theorem scripts run standalone.
 
+**R108g–m addendum — three new theorem-level results.**
+(1) EXACT PAIR-TYPE DECOMPOSITION: B(t) = (N−2)²δ_{t0} + 2(N−2)p_H(t) +
+B_off(t); E_c = (N−2)⁴ + 2(N−2)²B_off(0) + 4(N−2)²Σp_H² +
+4(N−2)Σp_HB_off + E_c^off — machine-verified 0.00e+00 at every design.
+Mechanism: the diagonal spike is twist-INVARIANT (survives annihilator
+averaging at full weight; the flat baseline suppresses by m⁴).  Clean
+object: δ_off = m⁴E_c^off/E_unc^off − 1 ≈ δ_full/4–5 (6.45→1.42,
+17.65→4.22, ≤0.19 for K ≥ 40), ~K^{−3} decay.
+(2) COLLECTIVE-FIELD COLLAPSE (exact, verified 5e−14/3e−12): Cmat is
+the Gram matrix of Y_p = Â_p(·)²; Σ_{p≠p'}Cmat = ‖Y_sum‖²/N − Σ_pE_p
+with Y_sum = m²·DFT[B_off] — the m⁴ cross terms collapse to ONE field.
+(3) DICHOTOMY OF COMPLETE TWISTED SUMS (PROVED): the off-key surface is
+S = (G∖{1})²∖{u=v} (bijection (x,y)↦(x/y,(x−1)/(y−1))); box-minus-
+diagonal orthogonality gives Â_{(0,0)}(0) = (N−2)(N−3), Â_p(0) =
+−(N−3) on the 3m−2 pairs with j1≡0 ∨ j2≡0 ∨ j1+j2≡0, and Â_p(0) = +2
+exactly otherwise — no fluctuation at all, far beyond Weil.  Corollary:
+Y_sum(0) = (N−2)²(N−3)² + (3m−3)(N−3)² + 4(m²−3m+2) (closed polynomial,
+verified 0.00e+00) — the DC sector of the k=4 correction is CLOSED;
+the whole remaining unknown is the ω≠0 sector of one field, measured
+quasi-rank-1 (share 0.956→0.995) and constructive (pos-frac 1.000,
+refuting random-phase heuristics).  Lucas fact: V₁₁−2 = 199²,
+V₁₇−2 = 3571² — K=11/K=17 designs are unique split primes.
+Artifacts: data/referee/r108g..r108m.{json,log}; scripts
+code/referee/r108g_offdiag.py .. r108m_exact_adjudication.py.
+
 **Status of the chain after R108:** symmetry β=1 PROVEN; Catalan moments
 PROVEN; arcsine PROVEN (independently re-verified); k=2 PROVEN; k=4
-identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (cross terms);
-resolvent rate unstable; GOE spacing/rigidity: two supported designs.
+identity/flatness/per-fiber-Weil PROVEN; k=4 complete-sum dichotomy
+PROVED (R108m); k=4 collective collapse EXACT (R108k); k=4 δ-control
+reduced to the ω≠0 sector of ONE explicit field — OPEN; resolvent rate
+unstable; GOE spacing/rigidity: two supported designs.

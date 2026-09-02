@@ -10808,3 +10808,58 @@ Durable fixes: catmap import symlinks (theorem scripts now run
 standalone — theorem_c re-executed PASS), code/artifacts → ../artifacts
 redirect.  Third subagent (code-vs-paper) produced no usable report;
 scope covered by the principal's independent checks + the suite run.
+
+### R108.8 — THE EXACT PAIR-TYPE DECOMPOSITION (r108g/r108h)
+
+New exact identity (no estimates, machine-verified to 0.00e+00 at all
+designs): B = (N−2)²δ_{t0} + 2(N−2)p_H + B_off, hence E_c = (N−2)⁴ +
+2(N−2)²B_off(0) + 4(N−2)²Σp_H² + 4(N−2)Σp_HB_off + E_c^off.
+MECHANISM: the diagonal key's fiber contribution is twist-INVARIANT —
+it survives annihilator averaging at full weight while the flat
+baseline is suppressed by m⁴: the measured δ is this mismatch, not an
+opaque cross-term mystery.  Clean object: δ_off = m⁴E_c^off/E_unc^off
+− 1 ≈ δ_full/4–5 (6.45→1.42 at K=11; 17.65→4.22 at K=17; ≤0.19 for
+K ≥ 40), ~K^{−3} decay.  r108h (direct, cross-validated vs r108g):
+the off-system correction is cross-dominated (~92–100%), distributed
+over mid/high-order buckets with near-total low-order internal
+cancellation — killing the "m=210 low-order resonance" explanation of
+the K=17 anomaly.  STRUCTURAL FACT: V₁₁ − 2 = 199², V₁₇ − 2 = 3571²
+(Lucas norms) — the K=11/K=17 designs are the UNIQUE split primes for
+those orders; no fixed-K scatter test exists.
+
+### R108.9 — COLLECTIVE COLLAPSE + THE DICHOTOMY THEOREM (r108i–m)
+
+Three results, all machine-verified (several by two independent code
+paths):
+(1) GRAM/COLLECTIVE IDENTITY (exact): Cmat[p,p'] = (1/N)Σ_ω
+Y_p conj(Y_p'), Y_p = Â_p(·)² — Cmat is the Gram matrix of the pair
+fields (PSD; measured antisym = 0.000); hence Σ_{p≠p'}Cmat =
+‖Y_sum‖²/N − ΣE_p with Y_sum = m²·DFT[B_off]: the m⁴ cross terms
+collapse to the energy of ONE collective field.  Verified 5e−14
+(N=199), 3e−12 (N=2161).
+(2) DICHOTOMY OF COMPLETE TWISTED SUMS (PROVED on paper): off-key
+surface S = (G∖{1})²∖{u=v} (explicit bijection); box-minus-diagonal
+orthogonality ⇒ Â_{(0,0)}(0) = (N−2)(N−3); Â_p(0) = −(N−3) on the
+3m−2 "trivial-on-stratum" pairs (j1≡0 ∨ j2≡0 ∨ j1+j2≡0); Â_p(0) = +2
+EXACTLY otherwise.  Verified: FFT sweep 8/8 designs PASS (count =
+3m−2, giants = N−3, others ≤ 2); independent one-stage 2D-DFT path,
+worst 1.1e−10.  The 124/148 histogram split at N=199 is fp noise
+around exactly 2 (half-open bins).
+(3) DC SECTOR CLOSED: Y_sum(0) = (N−2)²(N−3)² + (3m−3)(N−3)² +
+4(m²−3m+2) — closed polynomial, verified rel 0.00e+00 at 8 designs.
+Structure law of the ω≠0 sector: Gram field quasi-rank-1 (energy
+share 0.956→0.995 with size), cone-tight (mean cosine 0.86→0.93),
+CONSTRUCTIVE (pos-frac 1.000, |ΣC|/ℓ₂ ~ 282/223 — random-phase
+heuristics refuted); Perron profile ≈ pair-energy profile (corr
+0.96→0.99), anti-correlated with DC (−0.79).
+NET: the k=4 open problem is now "bound Σ_{ω≠0}|Y_sum(ω)|²" — ONE
+explicit Diophantine field, not m⁴ terms.
+
+### RUN 108 HANDOFF (updated)
+
+Next: (a) bound the ω≠0 sector of Y_sum = m²·DFT[B_off] — the sole
+remaining unknown in the k=4 correction (DC closed by polynomial;
+pair-type split exact; Gram structure measured quasi-rank-1 and
+constructive); (b) ESY assembly conditional on
+|Rem_off| = O(E_unc^off·K^{−3/2}) with the measured rel₄ ≈ 2.2/m
+calibration; (c) M4d rank-2 non-diagonal Hecke operator unchanged.
