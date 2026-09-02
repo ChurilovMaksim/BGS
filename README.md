@@ -1,41 +1,52 @@
 # WoW — BGS research workspace
 
-This `main` is the canonical working state rebuilt on 2026-09-02. It is intentionally small at the active surface and complete at the provenance surface.
+This repository is the canonical working state for the BGS/cat-map research programme. It is intentionally **complete enough for continued research**, not a minimal release package.
 
-The shortest authoritative statement is [`STATUS.md`](STATUS.md). The current solution path is [`research/README.md`](research/README.md). Historical theorem labels, old PDFs and old run ledgers are evidence/provenance, not current status.
+The authoritative current-status file is [`STATUS.md`](STATUS.md). The current best non-error solution path is [`research/README.md`](research/README.md). Historical theorem labels, old PDFs, exploratory scripts and old run ledgers are retained because they contain useful mathematics and experiments, but they do not override `STATUS.md`.
 
 ## Current boundary of knowledge
 
-The best non-error rank-1 line currently consists of:
+The best audited rank-1 line currently consists of:
 
 1. the twisted-Jacobi representation and R82 baseline reproduction;
 2. the exact `k=2` fluctuation reduction, including `|P|=(K-1)(K-2)`;
 3. an independent scalar-sum regression check of twisted-Jacobi matrix elements at new split-prime designs;
-4. numerical GOE/rigidity evidence in the desymmetrised sector;
+4. substantial finite-N numerical evidence in the desymmetrised sector;
 5. an unresolved analytic M1 step controlling the full twist-summed energy.
 
 M1 is **OPEN**. General BGS is **not proved** by this repository.
 
+## Trust levels
+
+There are three deliberately different layers.
+
+**Canonical / audited.** `STATUS.md`, `research/`, `code/math/`, `code/verification/`, `code/maintenance/`, `results/verified/` and the immutable inputs in `inputs/`. These are the files to use first when continuing the proof programme.
+
+**Research corpus.** `code/core/`, `code/diagnostics/`, `code/kloosterman/`, `code/large_m/`, `code/shape_automaton/`, `code/sp4/`, `code/theorems/`, `code/utils/`, `data/`, `docs/literature/`, `docs/review/`, `paper/sections/` and related files. These contain useful derivations, experiments, diagnostics and intermediate results. They are retained for active research, but individual files may use older paths or assumptions and must be checked before being promoted to a certificate.
+
+**Historical / quarantined.** `archive/legacy-workspace/`, `code/legacy_verification/`, `code/legacy_maintenance/`, `paper/historical_snapshots/` and specifically identified superseded results. These are provenance and raw material, not current theorems.
+
 ## Repository map
 
-- `STATUS.md` — canonical claim status.
-- `THEORY.md` — current dependency graph only.
-- `research/` — active solution branch and the precise M1 target.
-- `code/math/` — small load-bearing mathematical kernels.
-- `code/verification/` — current finite-N regression/identity certificates.
-- `code/experiments/` — numerical experiments; results are evidence, not proofs.
-- `results/verified/` — outputs of the current verified checks.
-- `results/numerical/` — retained numerical spectral evidence.
-- `results/historical-numerical/` — useful old measurements whose interpretation was superseded or quarantined.
-- `inputs/r82-legacy/` — exactly three immutable R82 reference inputs required by the baseline check.
-- `formal/` — Lean source tree.
-- `docs/audit/` — review/audit records relevant to the current reset.
-- `archive/legacy-workspace/` — the entire pre-rebuild audited workspace by Git tree reference. Do not use it as the default source tree.
-- `paper/` — no active proof-complete paper at present.
+- `STATUS.md` — current claim status; overrides historical labels.
+- `THEORY.md` — current dependency graph and proof boundary.
+- `research/` — current solution branch, starting with the exact M1 gap.
+- `code/math/` — load-bearing mathematical kernels.
+- `code/verification/` — current finite-N regression and identity certificates.
+- `code/experiments/` — current numerical experiments.
+- `code/{core,diagnostics,kloosterman,large_m,shape_automaton,sp4,theorems,utils}/` — restored research code corpus.
+- `data/` — restored research outputs, diagnostics, moments, spectral data, rank-2/Sp4 results and legacy reference inputs. See `data/MANIFEST.md`.
+- `results/verified/` — audited outputs of the current checks.
+- `results/numerical/` — numerical evidence retained in the canonical layer.
+- `results/historical-numerical/` — explicitly superseded/quarantined numerical records.
+- `docs/` — current planning plus literature, reviews, audit material, detailed historical theory and run records.
+- `formal/` — Lean sources and project files; generated `.lake/build` and dependency caches are intentionally excluded.
+- `paper/` — manuscript source corpus. Historical proof-complete labels are not authoritative; see `paper/README.md`.
+- `archive/legacy-workspace/` — complete pre-rebuild audited workspace, kept as a last-resort provenance snapshot.
 
 ## Reproduce the audited core
 
-Tested rebuild runtime: Python 3.13.5, NumPy 2.3.5, SymPy 1.14.0.
+Tested rebuild runtime: Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0, SymPy 1.14.0.
 
 ```bash
 python -m pip install -r requirements.txt
@@ -45,8 +56,8 @@ python code/verification/h3_k2_exact_reduction.py
 python code/verification/theorem_ii_new_primes.py
 ```
 
-The new-prime verifier intentionally contains only the two practical designs rerun in this rebuild. Very large historical designs stay in the archive until they have a genuinely memory-aware implementation.
+The health gate validates the canonical layer strictly and compiles the restored research Python corpus. Older research scripts are not required to satisfy current path conventions until they are promoted back into the canonical layer.
 
 ## Rule for future work
 
-New research belongs in the active tree only when its assumptions and output semantics are clear. A failed proof attempt or superseded experiment is moved to `archive/` rather than left beside current certificates. Numerical evidence must remain labelled numerical until the analytic step it is meant to support is actually proved.
+Do not delete an experiment merely because its interpretation was superseded. Preserve it with an explicit status. Promote a result to `results/verified/` only when the producing code, assumptions, numerical object and comparison statistic are all clear. A failed proof remains useful provenance but must never be cited as an active theorem.
