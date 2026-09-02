@@ -1,0 +1,97 @@
+\subsection{Run 82, concluded: the moment programme and the closure of the
+scale identification}\label{sub:r82e}
+
+The closed form of Theorem \ref{thm:jacobi} turns every moment of the family
+into a combinatorial identity.  Write $e_k$ for the elementary symmetric
+functions and $X=\FF_N\setminus\{0,1\}$.
+
+\begin{theorem}[family second moments]\label{thm:momentpattern}
+For every $k\ge2$ and $q\neq0$,
+\[
+  M_{2k}(q):=\frac{1}{(N-1)^2}\sum_{\chi,\psi\in\widehat G}|J(\chi,\psi;q)|^{2k}
+  \;=\;\sum_{(P,Q)\in\FF_N^2}|W_k(P,Q)|^2,
+\]
+where
+\[
+  W_k(P,Q)=\sum_{\substack{y\in X^k\\ e_k(y)=P,\; e_k(y-1)=Q}}\ep\!\bigl(q\textstyle\sum_i y_i\bigr)
+\]
+is the trace of the linear phase $\ep(q\,e_1)$ over the variety
+$V_{P,Q}=\{y:e_k(y)=P,\ e_k(y-1)=Q\}$ of dimension $k-2$; hence
+$|W_k(P,Q)|=O(N^{(k-2)/2})$ by Deligne, over $\sim N^2$ fibres.  The
+normalised second moments converge to the Catalan numbers:
+\[
+  \frac{1}{N^k}\sum_{(P,Q)}|W_k(P,Q)|^2\;\longrightarrow\;C_k,
+  \qquad C_2=2,\; C_3=5,\; C_4=14.
+\]
+\end{theorem}
+
+The identity is verified exactly (to $\le1.1\cdot10^{-15}$) at $k=2,3,4$ and
+ten primes by two independent algorithms, and a third route (the
+$(P,Q,e_1)$-parametrisation) confirms $M_6$ to $2.7\cdot10^{-16}$.
+
+\emph{The constant at $k=3$ is elementary.}  Expanding the indicators of the
+two product constraints by additive characters reduces the family second
+moment to
+\[
+  \sum_{(P,Q)}|W_3(P,Q)|^2=\frac1{N^2}\sum_{\alpha,\beta}
+  |S(\alpha,\beta)|^2,\qquad
+  S(\alpha,\beta)=\sum_{u,v} \ep\bigl(q(u+v+2)-\beta uv\bigr)\,f(c),
+\]
+with $c=(\alpha+\beta)uv+\alpha(u+v)+\alpha+q$ and $f(c)=(N-2)$ on $c=0$,
+$-1-\ep(c)$ elsewhere.  The mass concentrates ($\sim99\%$) on
+$\alpha,\beta,\alpha+\beta\neq0$, where the $f=(N-2)$ part lives on the conic
+$c=0$ --- a hyperbola --- and its phase sum is a Kloosterman sum
+$\Kl(A,B)$: $|S|^2\sim(N-2)^2|\Kl|^2$.  Decomposing by the degeneracy
+condition $(\alpha+q)(\beta+q)=q^2$ (equivalently $A=0$ or $\kappa=0$):
+\begin{itemize}
+\item generic pairs: $\operatorname{avg}|\Kl|^2=N$ by the classical
+Kloosterman orthogonality (the two-to-one conic map cancelling the half of
+the square condition) --- contributes $1$ in units of $N^5$;
+\item the degenerate locus ($\approx N$ pairs): $A=\kappa=0$, the conic
+splits into two lines with $2N-1$ points, $|S|^2\sim(N-2)^2(2N-1)^2\sim4N^4$
+per point --- contributes $4$.
+\end{itemize}
+Hence $C_3=5=1+4$ by elementary means: exact identities, the classical
+Kloosterman bound and orthogonality, and the count of the degenerate locus.
+Measured: generic $1.00/0.98/1.01$, degenerate $3.10/3.36/3.53$, total
+$4.10/4.34/4.53\to5$ at $N=37/53/73$.
+
+\emph{The boundary of the elementary route.}  At $k=4$ the dominant part of
+$S_4$ is the trace over the cubic surface $c=0$, and its family second moment
+is $\operatorname{avg}|T|^2/N^2=12.40\to14$ over all $2652$ parameter pairs at
+$N=53$ --- with a \emph{smooth} distribution: $90.3\%$ of the mass in one
+bucket, zero points above $50$ per unit.  No degenerate locus analogous to
+the $k=3$ split conic exists: the constant $C_4=14$ is the bulk second moment
+of a family of cubic surfaces, a monodromy quantity in the sense of Katz.
+The hierarchy of mechanisms is thus:
+$k=2$ elementary (the two orderings); $k=3$ elementary ($1+4$); $k\ge4$ and
+the local law require the same single input --- quantitative equidistribution
+(Katz-type second moments) for the surface/entry families.
+
+\emph{The scale identification is parameter-free.}  Three pieces close the
+conjugation completely.  (i) The half-index trace
+$s=a^{(K-1)/2}+a^{-(K-1)/2}=L_{(K-1)/2}\bmod N$ satisfies
+$s^2=a^{K-1}+2+a^{1-K}=t+2=5=t^2-4$ --- one line --- so the branch scale is
+$c=\pm L_{(K-1)/2}$ with $c^2=t^2-4$ (verified at six branch values across
+three designs and end-to-end at five).  (ii) The metaplectic twist
+$\zeta$ of the kernel quantisation, defined by
+$\lambda_0=\zeta\,\chi_{k_0}(a)^{-1}$ with $\lambda_0$ the principal $K$-th
+root of the torsion scalar $\chi$, is the \emph{unique} fourth root of unity
+satisfying $\zeta^K=\chi$ (five designs: $\zeta=i,-i,-1,-1,-1$).  (iii) The
+block index $k_0$ is the unique class modulo $K$ solving
+$\chi_{k_0}(a)=\zeta/\lambda_0$ (five designs: $\{1\},\{1\},\{8\},\{9\},
+\{19\}$).  The two measured ``branches'' $(k_0,+c)$, $(-k_0,-c)$ are one
+branch related by the exact model symmetry
+$\operatorname{model}(k_0,q')=\operatorname{model}(-k_0,-q')$ (verified to
+$10^{-9}$ over all probes).  The counting half of Theorem \ref{thm:torus} is
+machine-checked in Lean ($\texttt{formal/Bgs/ScaleLaw.lean}$: the scale-law
+instantiation at $p=199$ closed by the kernel with no axioms).
+
+\emph{The inert branch.}  Theorem \ref{thm:torus} extends verbatim to
+inert $N$ (verified at $N=1103$, $K=48$): every nonzero level set of $Q$ has
+$N+1$ points, the cone is $\{0\}$ (anisotropic norm form), one level set
+carries $(N+1)/K=m$ orbits, full spectra agree across six distinct orbits in
+each of six level sets to $6.6\cdot10^{-14}$, and the explicit torus
+elements exist ($10/10$).  The inert analogue of Theorem
+\ref{thm:jacobi} --- the matrix elements over the non-split torus, whose
+Hecke basis comes from the deleted representation --- remains open.

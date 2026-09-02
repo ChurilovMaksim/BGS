@@ -1,0 +1,14 @@
+{
+ "script": "src/r82f_torus_rigidity.py",
+ "note": "INERT design generality test",
+ "designs": [
+  {
+   "N": 233,
+   "error": "AssertionError()"
+  },
+  {
+   "N": 107,
+   "error": "AssertionError()"
+  }
+ ]
+}
