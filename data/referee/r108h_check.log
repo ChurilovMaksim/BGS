@@ -1,0 +1,25 @@
+R108h: direct adjudication of off-system cross decomposition
+=== N=199 K=11 m=18 (OFF system, direct)
+  E_off=1.079084e+11  E_unc_off=1.116956e+16  corr_off=1.582267e+14
+  sum_psi E_psi = 1.117088e+16
+  sum_(psi != psi') Cross = 1.577486e+14
+  CHECK sumE + cross - E_unc_off = 1.590691e+14 vs corr_off 1.582267e+14 (rel 5.32e-03)
+  CHECK Cmat.sum = 1.132779e+16 vs m^4 E_off = 1.132779e+16 (rel 1.06e-15)
+  E_triv = 1.116956e+16 vs E_unc_off = 1.116956e+16 (rel 1.79e-16)
+  bucket 0 (ord <= 6): pairs=36  sumE_b=1.1170e+16  within-cross=9.6580e+12
+  bucket 1 (ord <= 42): pairs=288  sumE_b=1.2180e+12  within-cross=1.0712e+14
+  between 0-1: 4.0975e+13
+=== N=2161 K=40 m=54 (OFF system, direct)
+  E_off=2.566602e+16  E_unc_off=2.180527e+23  corr_off=1.868183e+20
+  sum_psi E_psi = 2.180529e+23
+  sum_(psi != psi') Cross = 1.867552e+20
+  CHECK sumE + cross - E_unc_off = 1.869388e+20 vs corr_off 1.868183e+20 (rel 6.45e-04)
+  CHECK Cmat.sum = 2.182396e+23 vs m^4 E_off = 2.182396e+23 (rel 2.15e-15)
+  E_triv = 2.180527e+23 vs E_unc_off = 2.180527e+23 (rel 4.62e-16)
+  bucket 0 (ord <= 6): pairs=36  sumE_b=2.1805e+23  within-cross=1.4191e+18
+  bucket 1 (ord <= 42): pairs=936  sumE_b=5.7066e+16  within-cross=1.6738e+19
+  bucket 2 (ord <= max): pairs=1944  sumE_b=1.2487e+17  within-cross=7.9291e+19
+  between 0-1: 9.4086e+18
+  between 0-2: 7.2040e+18
+  between 1-2: 7.2695e+19
+done
