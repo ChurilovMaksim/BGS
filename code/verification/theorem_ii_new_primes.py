@@ -9,29 +9,19 @@ baseline set (N in {199, 3571}).
           (144481, K=43, m+=1680).
 
 Verification protocol:
-  - For each (N, K), pick (a, k0, parity_odd) from the build_closed_form
-    dictionary (parity_odd=False, k0=1 — same as R82.12 certification).
-  - For each (i, j) in the eigenspace (i.e. each pair of characters with
-    k_i % K == k0, k_j % K == k0, and parity_odd filter), compute
-        J_closed[i, j] from build_closed_form logic (the (W * ph) @ Vv.T inner
-        product, with all characters).
-  - Independently compute
-        J_direct[i, j] = sum_{x in xs} conj(chi_{k_i})(x) chi_{k_j}(x-1) e_N(q x)
-    using a separate formula path (a direct double loop over the eigenspace
-    indices and the x range), as a second key.
-  - Compare max |J_closed - J_direct| over the full (i, j, q) tensor.
-  - Also build M_q = C + C^*, compute the trace, and check that
-    Tr(M_q) = 0 (symplectic) and Tr(M_q^2) = N-1 (known identity for the
-    compressed Hecke torus operator).
+  - For each (N, K), pick k0=1 and parity_odd=False, matching the R82.12
+    certification convention.
+  - Compute the closed-form twisted Jacobi matrix by vectorised character sums.
+  - Independently compute the same entries through a separately arranged direct
+    character-product path.
+  - Compare max absolute and relative deviations on five q values.
 
-This is the load-bearing R86.4 Cycle 1 falsifier: the rank-1 product
-structure of Step 2 in the trace-fluctuation lemma requires that the
-twisted Jacobi sum closed form holds at the level of individual matrix
-elements, not just spectrum-level mu4. A single (i, j, q) deviation
-larger than the Weil ceiling 2*sqrt(N)/(N-1) refutes the rank-1 product.
+The default run uses N=461 and N=19489. Pass --all to include the two very
+large historical designs.
 
-Output: artifacts/r87/cycle1_hecke_basis.json
+Output: results/verified/theorem_ii_new_primes.json
 """
+import argparse
 import json
 import os
 import sys
@@ -40,11 +30,10 @@ import time
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))  # BGS/
-sys.path.insert(0, os.path.join(ROOT, "src", "theorems"))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+sys.path.insert(0, ROOT)
 
-from theorem_ii_twisted_jacobi import (  # noqa: E402
-    build_closed_form,
+from code.math.twisted_jacobi import (  # noqa: E402
     multiplicative_order,
     primitive_root,
     sqrt_mod,
@@ -53,7 +42,6 @@ from theorem_ii_twisted_jacobi import (  # noqa: E402
 T_TRACE = 3
 
 
-# Brute-force Weil baseline: full 1e-3 slack on Weil ceiling.
 def weil_ceiling(N):
     return 2.0 * np.sqrt(N) / (N - 1)
 
@@ -69,20 +57,7 @@ def find_a(N, K):
     raise RuntimeError(f"no a of order K={K} at p={N}")
 
 
-def j_brute_force(N, K, k0, parity_odd, qs, sample_pairs=None, rng=None):
-    """Vectorized direct computation of J[chi, psi; q] for the eigenspace.
-
-    Independent code path from build_closed_form: it uses the same primitive-
-    root logarithm lookup, but computes the (i, j) outer product via
-    `(phase_c * ph) @ phase_r.T` rather than `(W * ph) @ Vv.T`. The two are
-    algebraically equivalent; the point is to have a separately derived
-    computation that catches any algebraic copy-paste error in the closed
-    form.
-
-    If `sample_pairs` is None, returns the full (m, m) matrix per q.
-    Otherwise, returns a dict {q: J_sample (n_samples,)} of the requested
-    (i, j) pairs only. Used to cap memory at large N.
-    """
+def j_brute_force(N, K, k0, parity_odd, qs, sample_pairs=None):
     g = primitive_root(N)
     dlog = np.zeros(N, dtype=np.int64)
     x = 1
@@ -101,29 +76,20 @@ def j_brute_force(N, K, k0, parity_odd, qs, sample_pairs=None, rng=None):
     if sample_pairs is not None:
         i_idx = np.array([p[0] for p in sample_pairs], dtype=np.int64)
         j_idx = np.array([p[1] for p in sample_pairs], dtype=np.int64)
-        # Pre-extract character phase rows we'll actually need.
-        # phase_c[i, x] depends only on ks[i] and dl_x[x]; for each i, we
-        # need its row. For each j, its row from phase_r.
         ph_c_rows = np.exp(2j * np.pi * np.outer(-ks[i_idx], dl_x) / (N - 1))
         ph_r_rows = np.exp(2j * np.pi * np.outer(ks[j_idx], dl_xm1) / (N - 1))
         out = {}
         for qp in qs:
             ph = np.exp(2j * np.pi * (qp * xs % N) / N)
-            # J_sample[k] = sum_x ph_c_rows[k, x] * ph_r_rows[k, x] * ph[x]
-            J_sample = (ph_c_rows * ph_r_rows * ph[None, :]).sum(axis=1)
-            out[int(qp)] = J_sample
+            out[int(qp)] = (ph_c_rows * ph_r_rows * ph[None, :]).sum(axis=1)
         return out, m
 
-    # Full (m, m) path: same algebra, but storing the full matrix.
-    # Used only when m * N * 16 bytes fits the 4 GB hard wall.
-    phase_c = np.exp(2j * np.pi * np.outer(-ks, dl_x) / (N - 1))    # (m, |xs|)
-    phase_r = np.exp(2j * np.pi * np.outer(ks, dl_xm1) / (N - 1))  # (m, |xs|)
-
+    phase_c = np.exp(2j * np.pi * np.outer(-ks, dl_x) / (N - 1))
+    phase_r = np.exp(2j * np.pi * np.outer(ks, dl_xm1) / (N - 1))
     out = {}
     for qp in qs:
-        ph = np.exp(2j * np.pi * (qp * xs % N) / N)  # (|xs|,)
-        Jm = (phase_c * ph[None, :]) @ phase_r.T     # (m, m)
-        out[int(qp)] = Jm
+        ph = np.exp(2j * np.pi * (qp * xs % N) / N)
+        out[int(qp)] = (phase_c * ph[None, :]) @ phase_r.T
     return out, m
 
 
@@ -135,7 +101,6 @@ def certify_one(N, K, qs):
     m_target = len([1 for k in range(N - 1)
                     if k % K == k0 % K and (k % 2 == 1) == parity_odd])
 
-    # Setup: eigenspace character indices, primitive-root log, x range.
     g = primitive_root(N)
     dlog = np.zeros(N, dtype=np.int64)
     x = 1
@@ -155,11 +120,6 @@ def certify_one(N, K, qs):
     W = np.exp(-2j * np.pi * np.outer(ks, dl_x) / (N - 1))
     Vv = np.exp(2j * np.pi * np.outer(ks, dl_xm1) / (N - 1))
 
-    # Decide full vs sampled pairwise J_brute_force to cap memory.
-    # Each (m, |xs|) complex128 array is 16 * m * |xs| bytes. At
-    # N=144481 (m=1680, |xs|=144479) one array is ~3.7 GB, exceeding the
-    # 4 GB hard wall once three arrays are live. We use sampled (i, j)
-    # pairs above 2 GB projected memory.
     full_memory_gb = (m_cf * (N - 2) * 16 * 3) / (1024 ** 3)
     if full_memory_gb > 2.0:
         rng = np.random.default_rng(seed=20260901)
@@ -170,7 +130,6 @@ def certify_one(N, K, qs):
         ]
         J_bf, m_bf = j_brute_force(N, K, k0, parity_odd, qs,
                                     sample_pairs=sample_pairs)
-        # Closed form sampled at the same (i, j) pairs.
         Jm_closed_full = {}
         for qp in qs:
             ph = np.exp(2j * np.pi * (qp * xs % N) / N)
@@ -185,7 +144,6 @@ def certify_one(N, K, qs):
         return {"N": N, "K": K, "match": False,
                 "error": f"m_bf={m_bf} vs m_cf={m_cf}"}
 
-    # Compare closed-form vs brute-force J across all probed q.
     max_dev_J = 0.0
     max_dev_J_rel = 0.0
     for qp in qs:
@@ -217,21 +175,24 @@ def certify_one(N, K, qs):
 
 
 def main():
-    designs = [
-        (461, 23),
-        (19489, 29),
-        (95419, 57),
-        (144481, 43),
-    ]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="also run the two very large historical designs (95419 and 144481)",
+    )
+    args = parser.parse_args()
+    designs = [(461, 23), (19489, 29)]
+    if args.all:
+        designs += [(95419, 57), (144481, 43)]
     out = {
-        "script": "src/large_m/theorem_ii_extended.py",
+        "script": "code/verification/theorem_ii_new_primes.py",
         "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
-        "phase": "R87.1",
+        "phase": "canonical-rebuild/R87.1",
+        "scope": "all" if args.all else "audited-fast",
         "designs": [],
     }
     for N, K in designs:
-        # small number of q's: we test the *formula* not statistics
-        # use 5 probe q's covering different phases
         qs = [1, 2, 3, 5, 7]
         try:
             row = certify_one(N, K, qs)
@@ -240,12 +201,6 @@ def main():
         out["designs"].append(row)
         print(f"N={N} K={K} -> {row}", flush=True)
 
-    # Verdict: machine-precision pass.
-    # Plan's hard threshold (weil_f <= 1e-10) is too tight for the larger
-    # eigenspaces where float64 noise in 1e6-elt products is ~1e-10.
-    # We accept up to weil_f <= 1e-9 (still 9 orders of magnitude below
-    # the Weil ceiling) and rel <= 1e-13 (i.e. the deviation is consistent
-    # with float64 round-off, not with an algebraic error in the closed form).
     out["verdict"] = {}
     for d in out["designs"]:
         if not d.get("match", True):
@@ -254,12 +209,15 @@ def main():
         if d["max_rel_dev_J"] <= 1e-13 and d["weil_ceiling_factor"] <= 1e-9:
             out["verdict"][f"N={d['N']}"] = "PASS"
         else:
-            out["verdict"][f"N={d['N']}"] = f"REGRESSION (rel={d['max_rel_dev_J']:.2e}, weil_f={d['weil_ceiling_factor']:.2e})"
+            out["verdict"][f"N={d['N']}"] = (
+                f"REGRESSION (rel={d['max_rel_dev_J']:.2e}, "
+                f"weil_f={d['weil_ceiling_factor']:.2e})"
+            )
     print("verdict ->", out["verdict"], flush=True)
 
-    dest = os.path.join(ROOT, "artifacts", "r87", "cycle1_hecke_basis.json")
-    with open(dest, "w") as fh:
-        json.dump(out, fh, indent=1, default=str)
+    dest = os.path.join(ROOT, "results", "verified", "theorem_ii_new_primes.json")
+    with open(dest, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=2, default=str)
     print("artifact ->", dest, flush=True)
 
 

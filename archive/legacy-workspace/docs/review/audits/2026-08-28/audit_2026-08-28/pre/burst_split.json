@@ -1,0 +1,104 @@
+{
+ "cases": [
+  {
+   "name": "box_structured",
+   "F": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "min_relation_l1": 3,
+   "n_wigner": 1700,
+   "n_burst": 224050,
+   "abs_phi_burst": 12667.126011829656,
+   "abs_phi_wigner": 143.6126541458084,
+   "phase_kill_pct": 83.48275604582903
+  },
+  {
+   "name": "box_larger",
+   "F": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "min_relation_l1": 3,
+   "n_wigner": 3200,
+   "n_burst": 625600,
+   "abs_phi_burst": 23197.526715895434,
+   "abs_phi_wigner": 228.2620708809508,
+   "phase_kill_pct": 85.69515609778745
+  },
+  {
+   "name": "sparse_random",
+   "F": [
+    [
+     41,
+     41
+    ],
+    [
+     49,
+     34
+    ],
+    [
+     38,
+     37
+    ]
+   ],
+   "min_relation_l1": null,
+   "n_wigner": 300,
+   "n_burst": 105750,
+   "abs_phi_burst": 16142.340918931446,
+   "abs_phi_wigner": 123.40311722971111,
+   "phase_kill_pct": 55.40454701590826
+  },
+  {
+   "name": "sparse_random2",
+   "F": [
+    [
+     44,
+     37
+    ],
+    [
+     34,
+     45
+    ],
+    [
+     33,
+     42
+    ],
+    [
+     34,
+     35
+    ]
+   ],
+   "min_relation_l1": null,
+   "n_wigner": 400,
+   "n_burst": 255200,
+   "abs_phi_burst": 20774.155571604497,
+   "abs_phi_wigner": 133.2005502130048,
+   "phase_kill_pct": 68.59629499585789
+  }
+ ]
+}
