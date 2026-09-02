@@ -233,7 +233,11 @@ unknown part of the k=4 off-system correction lives at **ω ≠ 0**:
 the diagonal-frequency sector of the collective field is exactly
 solved by §6.2.
 
-### 6.4 Measured structure law of the ω ≠ 0 sector (r108i/k)
+### 6.4 Measured structure law of the ω ≠ 0 sector (r108k)
+
+(The exploratory r108i/r108j runs that first measured these quantities
+were lost to sandbox restarts; r108k re-measures and certifies all of
+them — the numbers below are from the surviving r108k artifact.)
 
 At N=199 → N=2161 (m=18 → 54): the Gram field becomes MORE coherent
 with size — rank-1 energy share 0.956 → 0.995; mean pairwise cosine
