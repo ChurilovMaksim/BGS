@@ -10808,3 +10808,34 @@ Durable fixes: catmap import symlinks (theorem scripts now run
 standalone — theorem_c re-executed PASS), code/artifacts → ../artifacts
 redirect.  Third subagent (code-vs-paper) produced no usable report;
 scope covered by the principal's independent checks + the suite run.
+
+### R108.8 — THE EXACT PAIR-TYPE DECOMPOSITION (r108g/r108h)
+
+New exact identity (no estimates, machine-verified to 0.00e+00 at all
+designs): B = (N−2)²δ_{t0} + 2(N−2)p_H + B_off, hence E_c = (N−2)⁴ +
+2(N−2)²B_off(0) + 4(N−2)²Σp_H² + 4(N−2)Σp_HB_off + E_c^off.
+MECHANISM (new): the diagonal key's fiber contribution is
+twist-INVARIANT (N−2·ψ(1,1)) — it survives annihilator averaging at
+full weight while the flat baseline is suppressed by m⁴: the measured
+δ is this unsuppressed-vs-suppressed mismatch, not an opaque
+cross-term mystery.  Clean object: δ_off = m⁴E_c^off/E_unc^off − 1,
+measured ≈ δ_full/4–5 across the sweep (6.45→1.42 at K=11;
+17.65→4.22 at K=17; ≤0.19 for K ≥ 40), inheriting the ~K^{−3} decay.
+r108h (direct, cross-validated vs r108g to agreement): the off-system
+correction is also cross-dominated (~92–100%), distributed over
+mid/high-order character buckets with near-total low-order internal
+cancellation — killing the "m=210 low-order resonance" explanation of
+the K=17 anomaly.  STRUCTURAL FACT (new): V₁₁ − 2 = 199²,
+V₁₇ − 2 = 3571² (Lucas norms for t=3) — the K=11/K=17 designs are the
+UNIQUE split primes for those orders; no fixed-K scatter test exists.
+Artifacts: data/referee/r108g_offdiag.{json,log}, r108h_check.{json,log}
+(scripts: code/referee/r108g_offdiag.py, r108h_check.py).
+
+### RUN 108 HANDOFF (updated)
+
+Next: (a) bound the off-system cross terms analytically — the corrected
+and now sharply-posed problem (r108h's bucket data gives the target
+structure: distributed mid/high-order correlations after the exact
+diagonal extraction); (b) ESY assembly conditional on
+|Rem_off| = O(E_unc^off·K^{−3/2}) with the measured rel₄ ≈ 2.2/m
+calibration; (c) M4d rank-2 non-diagonal Hecke operator unchanged.

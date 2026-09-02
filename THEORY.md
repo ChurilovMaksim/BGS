@@ -3214,7 +3214,26 @@ assertion-only (no data).  Nine cited artifacts were missing; the
 artifacts/ tree is rebuilt durably and the catmap imports are
 symlinked so the theorem scripts run standalone.
 
+**R108g/R108h addendum — the exact pair-type decomposition (new).**
+B(t) = (N−2)²δ_{t0} + 2(N−2)p_H(t) + B_off(t) exactly (pair types
+diag×diag / diag×off / off×off); hence E_c = (N−2)⁴ +
+2(N−2)²B_off(0) + 4(N−2)²Σp_H² + 4(N−2)Σp_HB_off + E_c^off —
+machine-verified to 0.00e+00 at every design.  Mechanism: the diagonal
+spike is twist-INVARIANT (survives annihilator averaging at full
+weight; the flat baseline suppresses by m⁴) — this, not an opaque
+cross-term sum, is what the measured δ measures.  Clean object:
+δ_off = m⁴E_c^off/E_unc^off − 1 ≈ δ_full/4–5 (measured:
+6.45→1.42, 17.65→4.22, ≤0.19 for K ≥ 40), inheriting the K^{−3}
+decay.  r108h (direct, cross-validated against r108g): the off-system
+correction is also cross-dominated (~92–100%), distributed over
+mid/high-order buckets; the low-order bucket shows near-total internal
+cancellation — killing the "m=210 low-order resonance" explanation of
+the K=17 anomaly.  Structural fact: V₁₁−2 = 199², V₁₇−2 = 3571²
+(Lucas norms), so the K=11 and K=17 designs are the UNIQUE split
+primes for those orders — no fixed-K scatter test is possible.
+Artifacts: data/referee/r108g_offdiag.{json,log}, r108h_check.{json,log}.
+
 **Status of the chain after R108:** symmetry β=1 PROVEN; Catalan moments
 PROVEN; arcsine PROVEN (independently re-verified); k=2 PROVEN; k=4
-identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (cross terms);
-resolvent rate unstable; GOE spacing/rigidity: two supported designs.
+identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (off-system
+cross terms); resolvent rate unstable; GOE spacing/rigidity: two supported designs.

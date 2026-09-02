@@ -106,7 +106,73 @@ Further flattening the (c,−c) family (V3) changes nothing beyond
 - δ_remainder is the distributed stratum-correlation term: measured
   2.56% (K=11), 4.89% (K=17), ≤ 0.3% for K ≥ 40, ~0 for K ≥ 127.
 
-## 4. The corrected theorem target
+## 5. The exact pair-type decomposition (R108g/R108h — new theorem-level result)
+
+**Theorem (exact, machine-verified to 0.00e+00 at every design).**
+Splitting the H-coupled key pairs by type — (diagonal,diagonal),
+(diagonal,off)+(off,diag), (off,off) — gives the identity
+
+    B(t) = (N−2)² δ_{t=0} + 2(N−2)·p_H(t) + B_off(t),
+
+with p_H(t) = #{off-keys at difference t with u,v ∈ H} (a K²-sized
+explicit table) and B_off the coupled amplitude of the diagonal-free
+system.  Consequently
+
+    E_c = (N−2)⁴ + 2(N−2)²·B_off(0) + 4(N−2)²·Σp_H²
+          + 4(N−2)·Σ_t p_H·B_off + E_c^off.
+
+**Conceptual mechanism (new).**  The diagonal key's contribution to
+every twisted fiber sum is (N−2)·ψ(1,1) = N−2 — twist-INVARIANT.  It
+therefore survives the annihilator averaging at full weight in E_c,
+while the flat background is suppressed by m⁴ in the baseline
+E_unc/m⁴.  The measured δ is dominated by this
+unsuppressed-vs-suppressed mismatch (plus the spike×background
+coherence), not by a mysterious irreducible cross-term sum.  The clean
+object for the fluctuation problem is the diagonal-free system:
+
+    δ_off := m⁴·E_c^off / E_unc^off − 1.
+
+**Measured law (10-design sweep, exact computation):**
+
+| N | K | δ_full | δ_off | ratio |
+|---:|---:|---:|---:|---:|
+| 199 | 11 | +6.45% | +1.42% | 4.5 |
+| 3571 | 17 | +17.65% | +4.22% | 4.2 |
+| 2161 | 40 | +0.45% | +0.09% | 5.0 |
+| 6709 | 43 | +0.88% | +0.19% | 4.6 |
+| 3001 | 50 | +0.26% | +0.05% | 5.2 |
+| 2521 | 60 | +0.13% | +0.02% | 6.5 |
+| 4969 | 92 | +0.05% | +0.01% | 5.0 |
+| 5081 | 127 | +0.02% | +0.00% | — |
+| 1511 | 151 | +0.01% | +0.00% | — |
+| 1229 | 307 | +0.00% | +0.00% | — |
+
+δ_off ≈ δ_full/4–5 uniformly, and inherits the ~K^{−3} decay in K.
+Correction shares (m⁴E_c − E_unc): pure diagonal-spike term
+(m⁴−1)(N−2)⁴ ≈ 0.14–0.24; off-system part ≈ 0.14–0.35; the remainder
+is the spike×off interference structure.
+
+**Cross structure of the off system (r108h, direct, verified).**  The
+pairwise-Parseval bookkeeping passes its exact checks (E_triv =
+E_unc_off and Σ_{ψ,ψ'}Cmat = m⁴E_off to ~1e−15).  At N=2161 the
+within-bucket cross terms are 1.4e18 / 1.7e19 / 7.9e19
+(low/mid/high-order buckets) and between-bucket ≈ 0.9e19 / 0.7e19 /
+7.3e19 — the cross energy is distributed over the mid/high-order twist
+pairs, NOT concentrated on low-order characters; the low-order bucket
+(which contains the trivial pair) shows a near-total internal
+cancellation.  This kills the "m = 210 has many low-order characters"
+explanation of the K=17 anomaly: the anomaly is a distributed
+correlation effect, not a low-order resonance.
+
+**Structural fact (new observation).**  With a = (3+√5)/2 and
+V₀=2, V₁=3, V_n = 3V_{n−1} − V_{n−2}:  V₁₁ − 2 = 39601 = **199²** and
+V₁₇ − 2 = 12752041 = **3571²**.  Since a split prime p with ord_p(a) | q
+satisfies p² | Norm(a^q − 1) = 2 − V_q, the designs N = 199 (K=11) and
+N = 3571 (K=17) are the UNIQUE split primes for those orders —
+small-K statistics are inherently single-design, and no "design scatter
+at fixed K" test is possible for them.
+
+## 6. The corrected theorem target (updated)
 
 **Candidate decomposition theorem.** Along split primes with
 K = ord_N(a) → ∞:
