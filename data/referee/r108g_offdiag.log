@@ -1,0 +1,13 @@
+R108g: exact pair-type decomposition + off-diagonal law
+=== N=199 K=11 m=18
+  identity E_c vs decomposition: rel diff 0.00e+00
+  delta_full=+6.45%  delta_off=+1.42%
+  correction shares: spike_pure=0.215 off_part=0.215 structure_rest=0.570
+  order-bucket between-cross (raw): ['1.118e+16', '2.049e+13', '0.000e+00', '2.049e+13', '1.075e+14', '0.000e+00', '0.000e+00', '0.000e+00', '0.000e+00']
+  order-bucket within-cross (raw): ['9.656e+12', '1.071e+14', '0.000e+00']
+=== N=2161 K=40 m=54
+  identity E_c vs decomposition: rel diff 0.00e+00
+  delta_full=+0.45%  delta_off=+0.09%
+  correction shares: spike_pure=0.190 off_part=0.192 structure_rest=0.618
+  order-bucket between-cross (raw): ['2.181e+23', '4.704e+18', '3.602e+18', '4.704e+18', '1.676e+19', '3.635e+19', '3.602e+18', '3.635e+19', '7.933e+19']
+  order-bucket within-cross (raw): ['1.381e+18', '1.674e+19', '7.929e+19']
