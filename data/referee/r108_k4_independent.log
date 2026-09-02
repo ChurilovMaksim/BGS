@@ -1,0 +1,54 @@
+R108 independent k=4 referee verification
+start 0.0s
+=== design N=53, a=10 ===
+K=ord(a)=13, m=(N-1)/K=4
+a root of x^2-3x+1 mod N: False; 5 QR mod N: False
+keys: 2551 rows (expect (N-2)(N-3)+1 = 2551)
+GROUND TRUTH: E_c=3.410502e+09, Z_0=12063, mean(S4)=4143.4615, std(S4)=1913.7895
+R108 independent k=4 referee verification
+start 0.0s
+=== design N=53, a=10 ===
+K=ord(a)=13, m=(N-1)/K=4
+a root of x^2-3x+1 mod N: False; 5 QR mod N: False
+keys: 2551 rows (expect (N-2)(N-3)+1 = 2551)
+GROUND TRUTH: E_c=3.410502e+09, Z_0=12063, mean(S4)=4143.4615, std(S4)=1913.7895
+twist pipeline: E_c=3.410502e+09 (imag err 9.33e-14)
+  E_unc=8.635461e+11, E_triv=8.635461e+11
+  sum nontriv E_psi=1.056238e+09, max E_psi=1.231400e+08
+  vs ground truth E_c: rel diff 1.398e-16
+  delta = +1.11%   (paper table: see note)
+  envelope 16/K^2 = 9.47%, 256/K^2 = 151.48%
+  cross-term residual: 8.486177e+09 (rel +9.720e-03)
+  max |A_psi(d)| = 51.000 vs 4*sqrt(N)=29.120  -> VIOLATION
+  max E_psi/N^5 = 0.294 vs claimed 16  -> OK
+  flatness: c in [49,51], eps in [-2,0] (claim |eps|<=2)
+design done at 0.1s
+=== design N=199, a=139 ===
+K=ord(a)=11, m=(N-1)/K=18
+a root of x^2-3x+1 mod N: True; 5 QR mod N: True
+keys: 38613 rows (expect (N-2)(N-3)+1 = 38613)
+twist pipeline: E_c=1.155895e+11 (imag err 1.64e-11)
+  E_unc=1.139926e+16, E_triv=1.139926e+16
+  sum nontriv E_psi=6.170545e+12, max E_psi=2.529272e+10
+  delta = +6.45%   (paper table: see note)
+  envelope 16/K^2 = 13.22%, 256/K^2 = 211.57%
+  cross-term residual: 7.286912e+14 (rel +6.005e-02)
+  max |A_psi(d)| = 197.000 vs 4*sqrt(N)=56.427  -> VIOLATION
+  max E_psi/N^5 = 0.081 vs claimed 16  -> OK
+  flatness: c in [195,197], eps in [-2,0] (claim |eps|<=2)
+design done at 0.1s
+=== design N=3571, a=2469 ===
+K=ord(a)=17, m=(N-1)/K=210
+a root of x^2-3x+1 mod N: True; 5 QR mod N: True
+keys: 12734193 rows (expect (N-2)(N-3)+1 = 12734193)
+twist pipeline: E_c=4.459482e+15 (imag err 1.95e-09)
+  E_unc=7.371953e+24, E_triv=7.371953e+24
+  sum nontriv E_psi=9.934117e+19, max E_psi=2.429278e+15
+  delta = +17.65%   (paper table: see note)
+  envelope 16/K^2 = 5.54%, 256/K^2 = 88.58%
+  cross-term residual: 1.300793e+24 (rel +1.500e-01)
+  max |A_psi(d)| = 3569.000 vs 4*sqrt(N)=239.031  -> VIOLATION
+  max E_psi/N^5 = 0.004 vs claimed 16  -> OK
+  flatness: c in [3567,3569], eps in [-2,0] (claim |eps|<=2)
+design done at 25.2s
+WROTE /tmp/hoplite/workspace/data/referee/r108_k4_independent.json

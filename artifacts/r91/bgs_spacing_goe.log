@@ -1,0 +1,5 @@
+RUN 91.13 -- BGS (GOE) spacing test in the desymmetrised sector
+N=3571 K=17 m+=105: 4160 gaps, KS D=0.0140 (crit 0.0211) PASS, chi2/dof=1.30
+N=19489 K=29 m+=336: 14405 gaps, KS D=0.0089 (crit 0.0113) PASS, chi2/dof=1.37
+artifact written -> /tmp/hoplite/workspace/artifacts/r91/bgs_spacing_goe.json
+overall PASS = True

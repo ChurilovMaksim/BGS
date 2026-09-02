@@ -2226,49 +2226,67 @@ twists interfere with relative amplitude $\delta$:
  & E_c & E_{\mathrm{unc}}/m^4 & \delta\\
 N = 53, m = 4 & 3.411 \times 10^9 & 3.373 \times 10^9 & +1.1\%\\
 N = 199, m = 18 & 1.156 \times 10^{11} & 1.086 \times 10^{11} & +6.4\%\\
-N = 3571, m = 210 & 3.545 \times 10^{15} & 3.791 \times 10^{15} & -6.9\%
+N = 3571, m = 210 & 4.459 \times 10^{15} & 3.791 \times 10^{15} & +17.6\%
 \end{array}
 \]
+(The R95/R93 value $E_c = 3.545 \times 10^{15}$, $\delta = -6.9\%$ at
+$N = 3571$ was an artifact of an indexing bug in the R93.2 calibration
+script and is retracted in R108; the corrected value is confirmed by two
+independent computations agreeing to $4 \times 10^{-12}$.)
 
-\begin{theorem}[the $\delta$ envelope]
+\begin{theorem}[the $\delta$ envelope; corrected in R108]
 \label{thm:delta}
-$|\delta| \le 16/K^2$, constant in $N$.  Derivation: per nontrivial
-twist pair each fiber sum is a Weil sum on the conic (degree 2, genus
-$\le 1$), giving $|A(d)| \le 4\sqrt{N}$; Parseval with the twisted
-second moment $\sum_d |A(d)|^2 \sim N^2$ yields
-$E_{\mathrm{twist}} \le 16 N^5$ per pair, and normalizing by
-$E_{\mathrm{unc}}/m^4 \sim N^7/m^4$ leaves $|\delta| \le 16m^2/N^2 \le
-16/K^2$.
+The trivial twist pair contributes exactly $E_{\mathrm{unc}}$ (measured
+equal at all three designs), and every nontrivial pair satisfies
+$E_{\psi} \le 256\,N^5$ by Parseval from the per-fiber Weil bound
+($|(A \star A)(t)| \le \sum_d |A(d)|^2 \le 16 N^2$).
+This yields
+\[
+  |\delta| \;\le\; \frac{256\,m^2}{N^2} \;=\; O(1/K^2),
+\]
+\emph{provided} the cross terms
+$\sum_{\psi \ne \psi'} \sum_t (A_\psi \star A_\psi)(t)\,
+(A_{\psi'} \star A_{\psi'})(t)$
+vanish or are comparably bounded.  They do \textbf{not} vanish: measured
+cross-term shares of the total correction $m^4 E_c - E_{\mathrm{unc}}$
+are $88.9\%$ ($N{=}53$), $99.2\%$ ($N{=}199$), $99.99\%$ ($N{=}3571$),
+and no argument in this paper bounds them.  The estimate
+$\delta = o(1)$ therefore remains \textbf{OPEN}; it cannot hold at fixed
+$K$ (only finitely many split primes have $\operatorname{ord}_N(a) = K$),
+and in the honest regime $K \to \infty$ it is equivalent to a cross-term
+bound.  See R108 for the corrected problem statement.
 \end{theorem}
 
-\subsection{Closure}
+\subsection{Closure status after R108}
 
-\begin{corollary}[H3 at $k = 4$]
+\begin{corollary}[H3 at $k = 4$; DOWNGRADED to open in R108]
 \label{cor:h3closed}
-Combining Theorems~92.3 (factorization), \ref{thm:twist} (twist
-identity), \ref{thm:flatness} (flatness) and \ref{thm:delta}
-(envelope):
-\[
-  E_c \sim N^3 K^4, \quad
-  \operatorname{std}(\Sigma_4) \sim N K^2, \quad
-  \operatorname{mean}(\Sigma_4) \sim N^{1.9},
-\]
-so the relative cross-$q$ fluctuation of the $k{=}4$ coset moment
-decays as $N^{-1.03}$ (measured across the three calibration points:
-$0.46 \to 0.11 \to 0.006$).  Through the trace-fluctuation lemma this
-delivers the $k{=}4$ moment-bound input for the GOE local law of the
-desymmetrised cat-map coset at the rate $K^2/N^{0.9}$.
+Theorems~92.3 (factorization), \ref{thm:twist} (twist identity for
+$B$), \ref{thm:flatness} (flatness) and the per-fiber Weil bound of
+\S\ref{sec:r101} (with the $d = 0$ diagonal-key carve-out) all stand.
+What fails is the last step: the coupled-energy correction
+$m^4 E_c - E_{\mathrm{unc}}$ is dominated by cross terms between twist
+pairs ($88.9\%/99.2\%/99.99\%$ at the three designs), which no current
+argument bounds, and the measured $\delta$ grows along the legacy
+designs ($+1.1\% \to +6.4\% \to +17.6\%$).  The $k{=}4$ layer of the
+fluctuation hypothesis is therefore \textbf{OPEN}.  The directly
+measured BGS quantity --- the relative cross-$q$ fluctuation of the
+coset fourth moment, $\operatorname{rel}_4 = \operatorname{std}_q
+\Sigma_4 / \operatorname{mean}_q \Sigma_4$ --- is $0.46$ ($N{=}53$) and
+is tabulated exactly for the full design sweep in the R108 artifacts.
 \end{corollary}
 
 \subsection{Honest scope}
 
-Closed here: the $k{=}4$ layer of the fluctuation hypothesis for the
-desymmetrised level-set coset.  Not closed: the $k \ge 6$ layers (the
-template of Theorem~92.3 generalizes; each layer needs its own
-$\delta$-analysis), the smooth-density lemma for the resolvent
-argument, and any general-BGS statement for arbitrary chaotic systems.
-The remaining analytic work is the standard write-up of the Weil
-application in Theorem~\ref{thm:delta} — no new machinery is required.
+Closed here: the exact reduction chain (moment factorization, twist
+identity for $B$, flatness, per-fiber Weil with carve-out), and the
+exact computations of $E_c$ at all three designs (R108, two independent
+methods).  Not closed: the cross-term bound (the genuine $k{=}4$
+estimate), the $k \ge 6$ layers, the smooth-density lemma for the
+resolvent argument, and any general-BGS statement for arbitrary chaotic
+systems.  The remaining analytic work is \emph{not} a routine write-up:
+it is a new estimate for correlated coset-stratum character sums (see
+\texttt{docs/REVIEW\_R108.md} \S C).
 
 
 % section_r101.tex — The Möbius-fiber theorem: delta = o(1) (M1 closed)
@@ -2294,34 +2312,39 @@ a multiplicative character evaluated along a rational parametrization:
 
 \subsection{The per-fiber Weil bound}
 
-\begin{theorem}[per-fiber bound]
+\begin{theorem}[per-fiber bound; $d=0$ carve-out added in R108]
 \label{thm:fiberweil}
-For a nontrivial twist pair $(\psi_1,\psi_2) \neq (1,1)$ and every $d$,
+For a nontrivial twist pair $(\psi_1,\psi_2) \neq (1,1)$ and every
+$d \neq 0$,
 \[
   |A_{\psi_1\psi_2}(d)| \le c_w \sqrt{N}, \qquad c_w = 4,
 \]
 by the Weil bound for multiplicative character sums with rational
 functions (Lidl--Niederreiter, \emph{Finite Fields}, Thm.~5.41: the
-rational function $(u(d{-}1)+1)/(d{-}u+1)$ composed with $\psi_2$ has
-$D = 4$ distinct zeros and poles counted with multiplicity, and the
-sum along $u$ is bounded by $(D-1)\sqrt{N}$ unless the function is a
-perfect $K$-th power in $\mathbb{F}_N(u)$, which happens only for the
-trivial twist).
+integrand $\psi_1(u)\,\psi_2\!\bigl((u(d{-}1)+1)/(d{-}u{+}1)\bigr)$ is a
+single character of order $m$ applied to
+$F(u) = u^{j_1}\bigl((u(d{-}1)+1)/(d{-}u{+}1)\bigr)^{j_2}$, whose zeros
+and poles lie in the at-most-4-point set
+$\{0,\,1/(1{-}d),\,d{+}1,\,\infty\}$, and the sum is bounded by
+$(D-1)\sqrt{N} \le 3\sqrt{N}$ unless $F$ is a perfect $m$-th power,
+which happens only for the trivial twist).  At $d = 0$ the diagonal key
+$(1,1)$ of multiplicity $N-2$ sits on the fiber, so
+$|A_{\psi_1\psi_2}(0)| = N-2$ for \emph{every} pair; this contribution
+is explicit and must be carved out before applying Weil.
 \end{theorem}
 
-\begin{theorem}[the $\delta$ bound; Conjecture~\ref{conj:Ec} resolved]
+\begin{theorem}[the $\delta$ bound; OPEN after R108]
 \label{thm:deltabound}
-With the per-fiber bound (Theorem~\ref{thm:fiberweil}), Parseval gives
-$E_{\mathrm{twist}} \le c_w^2 N^5$ per nontrivial pair, so
-\[
-  |\delta| \;\le\; \frac{c_w^2 m^2}{N^2} \;\le\; \frac{c_w^2}{K^2}
-  \;=\; o(1)
-\]
-along the design scaling ($K$ fixed, $N \to \infty$).  Consequently
-$E_c = (E_{\mathrm{unc}}/m^4)(1 + o(1)) \sim N^3 K^4$, and the
-relative cross-$q$ fluctuation of the $k{=}4$ coset moment decays as
-$K^2/N^{0.9} \to 0$: the $k{=}4$ layer of the fluctuation hypothesis
-(Conjecture~\ref{conj:Ec}) is a THEOREM.
+The per-fiber bound gives, by Parseval, $E_{\psi} \le 256\,N^5$ per
+nontrivial pair (constant corrected from 16 in R108), contributing at
+most $256\,m^2/N^2$ to $\delta$.  However, the expansion of
+$E_c$ also contains cross terms between distinct twist pairs, which
+carry $88.9\%$--$99.99\%$ of the measured correction
+$m^4 E_c - E_{\mathrm{unc}}$ and are unbounded by any current argument.
+Moreover $\delta = o(1)$ cannot hold at fixed $K$ (only finitely many
+split primes share a given order $K$).  Conjecture~\ref{conj:Ec} at
+$k{=}4$ is therefore \textbf{OPEN}, equivalent to a cross-term estimate
+for correlated coset-stratum character sums.
 \end{theorem}
 
 \subsection{Numerical verification of the fiber bound}

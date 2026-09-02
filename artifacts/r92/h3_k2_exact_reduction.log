@@ -1,0 +1,6 @@
+RUN 92.1 -- H3(k=2) exact combinatorial reduction
+N=53 a=10 K=13: |P|=132 expected (K-1)(K-2)=132 OK
+  identity dev 1.25e-12; mean S -2.5385 (pred -2.5385); std S 11.28 (pred 11.49); std_A/(mN) = 0.8680
+N=199 a=139 K=11: |P|=90 expected (K-1)(K-2)=90 OK
+  identity dev 3.49e-10; mean S -0.4545 (pred -0.4545); std S 11.39 (pred 9.49); std_A/(mN) = 1.0355
+artifact written
