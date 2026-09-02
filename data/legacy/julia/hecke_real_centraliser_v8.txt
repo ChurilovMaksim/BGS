@@ -1,0 +1,87 @@
+hecke_real_centraliser_v8.jl (RING 1.2 v8, 2026-08-28)
+julia 1.11.9  timestamp=2026-08-28T14:15:14.293
+
+=== A=(2, 1, 1, 1) @ p=4481 (v6 ref: k=64, m=68 (R62 design)) ===
+  ord_p(A) ... 64  (0.05s)
+  k = ord_p(α) = 64
+  Building U_A ... 9.4s
+  Eigendecomp ... 61.1s
+  Multiplet size = 85
+  RAW kurt = 25.8776
+  R_n (Haar-Hecke) kurt = 0.0876
+  Reduction factor = 295.3x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.00036168926352176176, "sigma_median" => 0.06753852367769131, "sigma_max" => 0.16180534708966007, "ratio_max_over_median" => 2.3957489485827494)
+
+=== A=(2, 1, 1, 1) @ p=2161 (R54: k=40, pred_m=54) ===
+  ord_p(A) ... 40  (0.00s)
+  k = ord_p(α) = 40
+  Building U_A ... 0.9s
+  Eigendecomp ... 9.2s
+  Multiplet size = 77
+  RAW kurt = 11.6905
+  R_n (Haar-Hecke) kurt = -0.0508
+  Reduction factor = 230.1x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.0037332605459392686, "sigma_median" => 0.08249991759488576, "sigma_max" => 0.19356732042515862, "ratio_max_over_median" => 2.346272894182358)
+
+=== A=(2, 1, 1, 1) @ p=3001 (R54: k=50, pred_m=60) ===
+  ord_p(A) ... 50  (0.00s)
+  k = ord_p(α) = 50
+  Building U_A ... 2.3s
+  Eigendecomp ... 25.5s
+  Multiplet size = 79
+  RAW kurt = 16.1863
+  R_n (Haar-Hecke) kurt = 0.2322
+  Reduction factor = 69.7x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.0013480495247673034, "sigma_median" => 0.07868963270999685, "sigma_max" => 0.18458007995325026, "ratio_max_over_median" => 2.345672150148452)
+
+=== A=(2, 1, 1, 1) @ p=3469 (R54: k=51, pred_m=68 (best)) ===
+  ord_p(A) ... 51  (0.00s)
+  k = ord_p(α) = 51
+  Building U_A ... 3.3s
+  Eigendecomp ... 36.0s
+  Multiplet size = 79
+  RAW kurt = 37.3133
+  R_n (Haar-Hecke) kurt = 0.0288
+  Reduction factor = 1294.1x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.00044205745140133166, "sigma_median" => 0.05177000339316788, "sigma_max" => 0.12228733769051625, "ratio_max_over_median" => 2.362127287529878)
+
+=== A=(2, 1, 1, 1) @ p=2521 (R54: k=60, pred_m=42) ===
+  ord_p(A) ... 60  (0.00s)
+  k = ord_p(α) = 60
+  Building U_A ... 1.7s
+  Eigendecomp ... 13.8s
+  Multiplet size = 65
+  RAW kurt = 41.656
+  R_n (Haar-Hecke) kurt = 0.2228
+  Reduction factor = 187.0x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.0015912603876879195, "sigma_median" => 0.043729396811140527, "sigma_max" => 0.09916160665531197, "ratio_max_over_median" => 2.2676188991028914)
+
+=== A=(2, 1, 1, 1) @ p=211 (v7-FIXED: k=21, m=12 (5.3x)) ===
+  ord_p(A) ... 21  (0.00s)
+  k = ord_p(α) = 21
+  Building U_A ... 0.0s
+  Eigendecomp ... 0.1s
+  Multiplet size = 14
+  RAW kurt = 1.3183
+  R_n (Haar-Hecke) kurt = 0.2477
+  Reduction factor = 5.3x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.013515702145165372, "sigma_median" => 0.12881984152854595, "sigma_max" => 0.2409987901661322, "ratio_max_over_median" => 1.8708204210352788)
+
+=== v8 SUMMARY: kurtosis collapse as function of k ===
+p, ord, k, m, kurt_raw, kurt_R, reduction
+4481  64  64  81   25.8776    0.0876     295.3x  (v6 ref: k=64, m=68 (R62 design))
+2161  40  40  64   11.6905   -0.0508     230.1x  (R54: k=40, pred_m=54)
+3001  50  50  71   16.1863    0.2322      69.7x  (R54: k=50, pred_m=60)
+3469  51  51  75   37.3133    0.0288    1294.1x  (R54: k=51, pred_m=68 (best))
+2521  60  60  57   41.6560    0.2228     187.0x  (R54: k=60, pred_m=42)
+ 211  21  21  12    1.3183    0.2477       5.3x  (v7-FIXED: k=21, m=12 (5.3x))
+
+k-threshold mapping (sorted by k):
+  k=21: reduction=5.3x
+  k=40: reduction=230.1x
+  k=50: reduction=69.7x
+  k=51: reduction=1294.1x
+  k=60: reduction=187.0x
+  k=64: reduction=295.3x
+
+VERDICT: reduction factor is NOT monotone in k (counterexample to R54 LEDGER R54 'k >= 50 threshold').

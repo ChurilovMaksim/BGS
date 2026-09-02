@@ -1,0 +1,11 @@
+{
+  "ring": 3,
+  "step": "R3.5",
+  "purpose": "Final workspace hygiene pass: for every file under BGS/ (excluding archive/, artifacts/retracted/, artifacts/retracted_run1/, literature/pdf/, literature/txt/, user_drafts/), if referenced in the updated THEORY, ROADMAP, paper, or LEDGER R1–R66, keep; else move to BGS/archive/round3_unreferenced_2026-08-28/ with a one-line README. Do not delete.",
+  "verdict": "CLEAN",
+  "move_count": 0,
+  "reason": "The portable snapshot is already well-organised. Every top-level file (IDEAS.md, LEDGER.md, README.md, ROADMAP.md, THEORY.md) is referenced. Every script in src/archive/ (53 files) has a LEDGER R1–R53 reference. The src/__pycache__/ is already empty. No top-level BGS/archive/ exists. The artifacts/retracted/ and artifacts/retracted_run1/ directories are the audit trail and are explicitly preserved. The new artifacts added in this run (artifacts/ring1_rerun_summary.json, artifacts/ring1_rerun_verify_mean_law.json, artifacts/u1_degenerate_audit.json, artifacts/ring2/*.md, artifacts/ring2/*.json, artifacts/ring3_hygiene.json) are referenced by the LEDGER R64–R66 entries and the new THEORY.md §8.0.1–§8.0.3 sections.",
+  "size_cap_check": "BGS/ total file count (excluding archive/retracted/literature-pdf-literature-txt): 226. The 20% move cap is 45 files; we move 0. Comfortably under the cap.",
+  "added": "2026-08-28 (Ring 3 R3.5, Grand Attack).",
+  "next_step": "R3.6 MANIFEST re-validation + REPRO.md."
+}

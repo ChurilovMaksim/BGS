@@ -1,0 +1,10 @@
+=== Unitary-flow perturbation verification ===
+p=1597: n=138 clusters=[47, 47, 47] KS_WD=0.0672 KS_Pois=0.2828
+p=2161: n=160 clusters=[55, 54, 54] KS_WD=0.0670 KS_Pois=0.2776
+p=2207: n=204 clusters=[69, 69, 69] KS_WD=0.0638 KS_Pois=0.2778
+p=3001: n=178 clusters=[61, 60, 60] KS_WD=0.0643 KS_Pois=0.2799
+--- epsilon sensitivity at p=2207 ---
+eps=0.001: n=204 KS_WD=0.0673 KS_Pois=0.2544
+eps=0.0001: n=204 KS_WD=0.0663 KS_Pois=0.2614
+eps=1e-05: n=204 KS_WD=0.0832 KS_Pois=0.2602
+saved artifacts/unitary_perturbation.json

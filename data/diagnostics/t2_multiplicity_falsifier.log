@@ -1,0 +1,97 @@
+RUN 86.3 -- referee-grade falsifier for Theorem T2 (multiplicity = N/K)
+
+--- DESIGN N=11, a=3, ord_N(a)=5 (expected 5) ---
+RUN 86.3 -- referee-grade falsifier for Theorem T2 (multiplicity = N/K)
+
+--- DESIGN N=11, a=3, ord_N(a)=5 (expected 5) ---
+   KEY 1 (char basis): ord_N(a) = 5, multiplicity = 2
+RUN 86.3 -- referee-grade falsifier for Theorem T2 (multiplicity = N/K)
+
+--- DESIGN N=11, a=3, ord_N(a)=5 (expected 5) ---
+   KEY 1 (char basis): ord_N(a) = 5, multiplicity = 2
+RUN 86.3 -- referee-grade falsifier for Theorem T2 (multiplicity = N/K)
+
+--- DESIGN N=11, a=3, ord_N(a)=5 (expected 5) ---
+   KEY 1 (char basis): ord_N(a) = 5, multiplicity = 2
+   distinct eigenvalues of U_A: 5 (should equal 5)
+   multiplicities: min=2, max=2, (expected all = 2)
+   KEY 2 (float64): 11/11 eigenvalues matched, max dist 4.97e-16
+
+--- DESIGN N=37, a=3, ord_N(a)=18 (expected 18) ---
+   KEY 1 (char basis): ord_N(a) = 18, multiplicity = 2
+   distinct eigenvalues of U_A: 18 (should equal 18)
+   multiplicities: min=2, max=2, (expected all = 2)
+   KEY 2 (float64): 37/37 eigenvalues matched, max dist 4.13e-15
+
+--- DESIGN N=199, a=5, ord_N(a)=33 (expected 33) ---
+   KEY 1 (char basis): ord_N(a) = 33, multiplicity = 6
+   distinct eigenvalues of U_A: 33 (should equal 33)
+   multiplicities: min=6, max=6, (expected all = 6)
+   KEY 2 (float64): 199/199 eigenvalues matched, max dist 5.11e-15
+
+--- DESIGN N=521, a=18, ord_N(a)=13 (expected 13) ---
+   KEY 1 (char basis): ord_N(a) = 13, multiplicity = 40
+   distinct eigenvalues of U_A: 13 (should equal 13)
+   multiplicities: min=40, max=40, (expected all = 40)
+   KEY 2 (float64): 521/521 eigenvalues matched, max dist 1.57e-15
+
+--- DESIGN N=3571, a=47, ord_N(a)=17 (expected 17) ---
+   KEY 1 (char basis): ord_N(a) = 17, multiplicity = 210
+   distinct eigenvalues of U_A: 17 (should equal 17)
+   multiplicities: min=210, max=210, (expected all = 210)
+   KEY 2 (float64): 3571/3571 eigenvalues matched, max dist 5.12e-15
+
+--- NEGATIVE CONTROL: a = 1 (K = 1) ---
+   N=199, a=1, K=1, multiplicity=198
+   negative-control PASS (every eigenvalue = 1, multiplicity N-1)
+
+--- SUMMARY ---
+   N=11, K=5, mult=2 (PASS)
+   N=37, K=18, mult=2 (PASS)
+   N=199, K=33, mult=6 (PASS)
+   N=521, K=13, mult=40 (PASS)
+   N=3571, K=17, mult=210 (PASS)
+artifact written
+RUN 86.3 -- referee-grade falsifier for Theorem T2 (multiplicity = N/K)
+
+--- DESIGN N=11, a=3, ord_N(a)=5 (expected 5) ---
+   KEY 1 (char basis): ord_N(a) = 5, multiplicity = 2
+   distinct eigenvalues of U_A: 5 (should equal 5)
+   multiplicities: min=2, max=2, (expected all = 2)
+   KEY 2 (float64): 11/11 eigenvalues matched, max dist 4.97e-16
+
+--- DESIGN N=37, a=3, ord_N(a)=18 (expected 18) ---
+   KEY 1 (char basis): ord_N(a) = 18, multiplicity = 2
+   distinct eigenvalues of U_A: 18 (should equal 18)
+   multiplicities: min=2, max=2, (expected all = 2)
+   KEY 2 (float64): 37/37 eigenvalues matched, max dist 4.13e-15
+
+--- DESIGN N=199, a=5, ord_N(a)=33 (expected 33) ---
+   KEY 1 (char basis): ord_N(a) = 33, multiplicity = 6
+   distinct eigenvalues of U_A: 33 (should equal 33)
+   multiplicities: min=6, max=6, (expected all = 6)
+   KEY 2 (float64): 199/199 eigenvalues matched, max dist 5.11e-15
+
+--- DESIGN N=521, a=18, ord_N(a)=13 (expected 13) ---
+   KEY 1 (char basis): ord_N(a) = 13, multiplicity = 40
+   distinct eigenvalues of U_A: 13 (should equal 13)
+   multiplicities: min=40, max=40, (expected all = 40)
+   KEY 2 (float64): 521/521 eigenvalues matched, max dist 1.57e-15
+
+--- DESIGN N=3571, a=47, ord_N(a)=17 (expected 17) ---
+   KEY 1 (char basis): ord_N(a) = 17, multiplicity = 210
+   distinct eigenvalues of U_A: 17 (should equal 17)
+   multiplicities: min=210, max=210, (expected all = 210)
+   KEY 2 (float64): 3571/3571 eigenvalues matched, max dist 5.12e-15
+
+--- NEGATIVE CONTROL: a = 1 (K = 1) ---
+   N=199, a=1, K=1, multiplicity=198
+   negative-control PASS (every eigenvalue = 1, multiplicity N-1)
+
+--- SUMMARY ---
+   N=11, K=5, mult=2 (PASS)
+   N=37, K=18, mult=2 (PASS)
+   N=199, K=33, mult=6 (PASS)
+   N=521, K=13, mult=40 (PASS)
+   N=3571, K=17, mult=210 (PASS)
+artifact written

@@ -1,0 +1,18 @@
+{
+ "run": "105.2",
+ "milestone": "G0 PROBE: the rank-2 coupled energy is FLAT off-diagonal",
+ "data": {
+  "F(0,0,0,0)": 151741.0,
+  "F(1,0,0,0)": 57.1,
+  "F(0,1,0,0)": 57.1,
+  "F(1,1,0,0)": 57.1,
+  "F(1,0,1,0)": 56.13,
+  "F(0,1,0,1)": 56.13,
+  "F(2,0,0,0)": 57.1,
+  "F(3,0,0,0)": 57.1,
+  "F(1,2,3,4)": 56.14
+ },
+ "reading": "F(n) = sum_e ||P_e T(n) P_e||^4 is FLAT across all nonzero n (spread 1.7%, the 56.13-57.10 split between the first-sector and second/combined sectors) \u2014 the rank-2 analogue of the cat-map A_S(q) q-independence.  The n=0 value is the eigenspace dimension moment (Tr) \u2014 a separate constant.  The residual 2% is the finite-N Weil correction, consistent with K^2/N surface terms.",
+ "significance": "the G0 hypothesis survives the rank-2 test: the coupled-energy structure is flat off-diagonal even with the entangled (quadratic) phase \u2014 the first direct evidence that the H-coupling mechanism generalizes beyond the cat map.",
+ "status": "[NUMERICALLY-SUPPORTED] single design; the exact flatness proof is the M4d analytic step"
+}

@@ -1,0 +1,22 @@
+=== c^2 = 5 at every anchor ===
+  N=199 K=11: c = 123: c^2 mod N = 5  = 5 OK
+  N=199 K=11: c = 76: c^2 mod N = 5  = 5 OK
+  identity: s = a^5+a^-5 = 123;  L_5 mod N = 123;  s^2 mod N = 5  (=t+2 = 5)
+  L_5^2 mod N = 5
+  c values present: [123, 76];  +-L_5 = 123, 76
+
+  N=3571 K=17: c = 2207: c^2 mod N = 5  = 5 OK
+  N=3571 K=17: c = 1364: c^2 mod N = 5  = 5 OK
+  identity: s = a^8+a^-8 = 2207;  L_8 mod N = 2207;  s^2 mod N = 5  (=t+2 = 5)
+  L_8^2 mod N = 5
+  c values present: [2207, 1364];  +-L_8 = 2207, 1364
+
+  N=9349 K=19: c = 5778: c^2 mod N = 5  = 5 OK
+  N=9349 K=19: c = 3571: c^2 mod N = 5  = 5 OK
+  identity: s = a^9+a^-9 = 5778;  L_9 mod N = 5778;  s^2 mod N = 5  (=t+2 = 5)
+  L_9^2 mod N = 5
+  c values present: [5778, 3571];  +-L_9 = 5778, 3571
+
+=== 4th-design prediction (144481, K=43): c = +-L_21 mod 144481 ===
+  L_21 mod 144481 = 56352;  L_21^2 mod N = 5  (should be 5)
+  predicted branch scales: c = +-56352 = 56352, 88129
