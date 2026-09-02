@@ -160,13 +160,90 @@ with three different rates for the same relative fluctuation
   R·E = R are numerically false (errors √2, 1, 1).  Superseded by the
   correct `word_trace_proof.py` engine (R91.17) — and by the independent
   check in `r108c_arcsine_thmB.py`, which verifies Thm 91.5 exactly —
-  but the broken file should be quarantined.
+  but the broken file should be quarantined.  (The small copy in
+  `code/large_m/` is also broken: it traces the product I·E instead of
+  the sum I − E, silently returning Tr(M²) = 2 instead of 2m − 2.)
 - `code/theorems/sp4_g0_probe.py`: bracketing bug at line 123
   (`float(np.abs(diag) ** 2).sum()` — the `.sum()` is applied to a
-  float, not the array); crashes after the covariance check.
+  float, not the array); crashes after the covariance check (which
+  itself passes exactly: err 0.0).
 - Path fragility: scripts compute ROOT and expect `src/` + `artifacts/`
   (the pre-R82 layout); the tree now has `code/` + `data/`.  Requires
-  symlinks to run; several scripts write artifacts into `code/artifacts/`.
+  symlinks to run; several scripts write artifacts into
+  `code/artifacts/` (one `".."` short — outputs relocated to
+  `artifacts/` in R108 hygiene); `catmap_independent` imports break for
+  scripts outside `code/core/` (symlinked durably in R108).
+
+### F9–F15 — Findings from the completed subagent audit (incorporated)
+
+**F9 — Two mutually inconsistent δ-bounds; the corrected δ violates
+both.**  The papers state |δ| ≤ c_w²/K² = 16/K²; the artifacts
+(`data/proof/m1_killer_test.json`, `data/rank2_sp4/g0_hypothesis.json`)
+state δ = O(c_w²/m) = 16/m.  These are different laws (16/K² vs 16K/N).
+The corrected δ(N=3571) = +17.65% violates **both** (5.5% and 7.6%
+respectively, by 3.2× and 2.3×).  Neither bound was consistent with
+the other, and neither holds.
+
+**F10 — The retracted numbers were not even internally consistent.**
+R95.2's own tabulated energies (E_c = 3.545e15, E_unc/m⁴ = 3.791e15)
+give δ = −6.49%, not the −6.9% reported.
+
+**F11 — The per-fiber mean-|A|² margin is nearly exhausted.**
+`m1_killer_test.json` claims "mean |A|² between 1 and 2 per unit N"
+but stores 732/199 = 3.68 at N=199 (1.96 at N=53) — drifting to the
+value 4 that the (unprovable) 16N⁵ constant would need.  Consistent
+with the R108 sweep: max |A_ψ(d)|/√N ≈ 2.0 at every design — i.e. the
+max per-fiber value sits at 2√N, and the honest provable ceiling is
+3√N (degree count), not 2√N.
+
+**F12 — The M2 layer law c(k) ≈ k/2 is not design-independent.**
+Measured c(k): at N=199 ≈ k/2 ✓; at N=3571: 2.44–6.76 for k = 2..8
+(1.7–2.4× above k/2); at N=95419: c(2) = 2.85.  The m^{−1} decay is
+real; the k/2 constant holds only at the smallest design.  Additionally
+the two M2 artifacts disagree on rel₆ at the same design (0.0257 vs
+0.0273, 6% apart) without acknowledgment.
+
+**F13 — The third-calibration rel = 0.0059 is contradicted; the R108
+sweep adjudicates.**  The R93.4 value rel₄(N=3571) = 0.0059 (source of
+the "exponent −1.03" behind the retracted K²/N^{0.9} rate) has no
+artifact, conflicts with sister artifacts (conic_bound_test,
+h3_k4_factorization: rel ≈ 0.01), and coincides exactly with the k=2
+rel at the same design.  The R108 exact recomputation gives
+rel₄ = 0.0101 — confirming the sister artifacts and refuting 0.0059
+(k=2 contamination).
+
+**F14 — Rank-2 overclaims.**  (a) Contradictory genus estimates:
+R107.3 "genus ≤ 2, c ≤ 4" vs R103.3 "genus ~ 5, bound ~ 8√N".  (b)
+R107.1 claims the fluctuation is O(√G) = O(N), contradicting the
+measured 0.88√N scale.  (c) max |Tr| = 163.2 = 22.4√N — individual
+traces far exceed any per-sum c√N Weil bound; "the rank-2 Weil
+constant is confirmed" holds only at the std level, single design
+(N=53), and any std fits some c.  (d) Two rank-2 "[PROVEN]" artifacts
+(`rank2_coset_flatness.json`, `rank2_diagonal_identity.json`) contain
+statements only, no numerical data; `rank2_hyperbolic_period4.json`
+does store data (64/2809 ✓) but contradicts itself internally
+(dim-2 cyclic subspaces vs 1-dimensional invariant subspaces).  (e)
+`radius_model.json` N=3571 row: arithmetic slip (1.9514 stored vs
+2√(1−0.6·289/3571) = 1.9508) and "fit exact" overstates a fit whose
+coefficient was fitted to the same design; only N=19489 is
+independent (1σ off).
+
+**F15 — Evidence gap (full list).**  Nine cited artifacts missing
+entirely: r93/sigma4_third_calibration.json, r93/katz_cancellation_
+explicit.json, r95/twist_decomposition_exact.json, r95/ec_identity_
+theorem.json, r95/flatness_lemma.json, r96/offdiagonal_weil_isolation.
+json, r97/k6_single_point.json, r104/sp4_kernel_probe.json,
+r104/m4a_status.json.  The `artifacts/` tree the MANIFEST indexes held
+4 files at audit time (rebuilt durably in R108); the MANIFEST
+misdescribes the 2-design GOE file as covering 3 designs.  The
+third-design GOE claim (N=95419, m₊=837, D=0.0116 PASS) exists in no
+artifact; the only stored N=95419 spacing artifact is the rejected
+full-coset run (D=0.480).
+
+**Subagent coverage note.**  The third audit subagent (code-vs-paper
+fidelity) produced no usable report; its scope was covered by the
+principal's independent re-implementations (r108/r108c) and the
+verification-suite subagent (5 PASS / 1 OK / 2 genuine crashes).
 
 ## C. What the k=4 layer actually reduces to (the corrected statement)
 
@@ -207,22 +284,31 @@ A_{ψ₁ψ₂}(d) the twisted fiber sums (diagonal key included at d = 0).
 
 1. M1 / "H3 k=4 + M1 δ = o(1): PROVEN" → **RETRACTED as a proof**;
    replaced by: exact identity + flatness + per-fiber Weil (carve-out
-   version) PROVEN; δ-control OPEN (cross terms).
+   version) PROVEN; δ-control OPEN (cross terms).  Both stated δ-bounds
+   (16/K² and 16/m) are refuted by the corrected value.  [DONE in R108]
 2. Thm `thm:delta` (`cat_map_bgs_main.tex`), the abstract of
    `bgs_complete_paper.tex`, and `mobius_fiber_theorem.tex`: correct the
    N=3571 numbers, remove the 16-constant and the o(1)-at-fixed-K claim,
-   restate the open cross-term problem.  [DONE in R108 for main paper
-   and mobius note; bgs_complete pending.]
+   restate the open cross-term problem.  [DONE in R108]
 3. Thm 99.1 (resolvent m^{−1.2}) → downgrade to "rate unstable; stored
-   data fit ≈ m^{−0.6}; last two points flat".
+   data fit ≈ m^{−0.6}; last two points flat".  [DONE in R108]
 4. GOE spacing "three designs" → two designs (N=95419 unsupported).
+   [DONE in R108]
 5. `third_calibration.py` → mark RETRACTED (R93.2), fix the indexing
-   bug in place with a pointer to R108.
-6. `word_trace_algebra.py` → quarantine (superseded by
-   `word_trace_proof.py` + R108c independent check).
-7. `sp4_g0_probe.py` → fix the bracketing bug.
-8. Folder hygiene: durable `artifacts/` mapping; referee scripts and
-   outputs under `code/referee/`, `data/referee/`.
+   bug in place with a pointer to R108.  [DONE in R108]
+6. `word_trace_algebra.py` (both copies) → quarantine (superseded by
+   `word_trace_proof.py` + R108c independent check).  [DONE in R108]
+7. `sp4_g0_probe.py` → fix the bracketing bug.  [DONE in R108]
+8. Rank-2 status table: coset-flatness "[PROVEN]" → "[PROVEN-claim;
+   stored artifact is assertion-only — data-backed re-execution
+   pending]"; Weil constant → "single design, std-level only (per-sum
+   max = 22.4√N); genus estimate internally contradictory".  [DONE]
+9. M2 layer law: keep the m^{−1} decay; drop the design-independent
+   "c(k) ≈ k/2" (holds only at N=199); note the rel₆ artifact
+   discrepancy.  [DONE]
+10. Folder hygiene: durable `artifacts/` mapping; referee scripts and
+    outputs under `code/referee/`, `data/referee/`; `catmap_independent`
+    import symlinks.  [DONE in R108]
 
 ## E. What remains a genuine path to BGS in this family
 

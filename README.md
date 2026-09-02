@@ -102,7 +102,7 @@ tools/                — build tools
 | **GOE rigidity Σ²(L)**: matched control 6/6 | NUM-SUPPORTED |
 | **H3 k=2 exact**: combinatorial, no Katz/Weil | PROVEN + Lean |
 | **H3 k=4**: exact identity, flatness, per-fiber Weil (d=0 carve-out); δ-control OPEN — cross terms carry 89–99.99% of correction | PROVEN (partial) + OPEN (R108) |
-| **Layer-uniform law**: rel_k ~ c(k)K/N | NUM (3 designs) |
+| **Layer-uniform law**: rel_k ~ c(k)K/N (c(k) ≈ k/2 only at N=199; design-dependent — R108 F12) | NUM (3 designs) |
 | **Resolvent rate**: unstable in stored data (~m^-0.6) | NUM (contradicted) |
 
 ### Rank 2: the Sp₄ generalisation
@@ -111,9 +111,9 @@ tools/                — build tools
 |---|---|
 | **Sp₄ diagonal = phase-free dilation, exact covariance** | PROVEN |
 | **Rank-2 coupled energy flat off-diagonal (~1.7%)** | NUM-SUPPORTED |
-| **Rank-2 coset flatness = |coset|/G exact** | PROVEN |
-| **Rank-2 coset-sector theorem (position-only)** | PROVEN |
-| **Rank-2 Weil constant 0.88·√N** | NUM-SUPPORTED |
+| **Rank-2 coset flatness = |coset|/G exact** | PROVEN-claim (artifact assertion-only, no stored data — R108 F14) |
+| **Rank-2 coset-sector theorem (position-only)** | PROVEN-claim (same caveat) |
+| **Rank-2 Weil constant 0.88·√N** | NUM-SUPPORTED (single design, std-level only; per-sum max 22.4√N; genus estimates contradictory — R108 F14) |
 
 ### The G0 hypothesis
 

@@ -10785,3 +10785,26 @@ diagonal-key spike alone removes 60–72% of δ (17.65%→4.89% at 3571;
 
 not an opaque cross-term sum.  Full tables and the theorem candidate:
 docs/CROSS_TERM_LAW_R108.md.
+
+### R108.7 — Subagent full reports incorporated (findings F9–F15)
+
+The completed HISTORY/artifact audit added, and R108 verified/extended:
+(1) BOTH δ-bounds ever stated (16/K² papers; 16/m in
+m1_killer_test.json + g0_hypothesis.json) are refuted by the corrected
+δ(3571) = +17.65% (envelopes 5.5%/7.6%) — the two statements were also
+mutually inconsistent; (2) R95's own energies give −6.49%, not −6.9%;
+(3) m1_killer_test's mean-|A|² text ("1–2 per unit N") vs stored 3.68
+at N=199 — margin nearly exhausted; sweep: max|A|/√N ≈ 2.0 at all
+designs (provable ceiling 3√N); (4) M2's c(k) ≈ k/2 holds only at
+N=199 (2.44–6.76 at 3571; 2.85 at 95419); rel₆ artifact discrepancy
+0.0257 vs 0.0273 unacknowledged; (5) R93.4's rel₄ = 0.0059 refuted by
+exact recomputation rel₄ = 0.0101 (k=2 contamination; sister
+artifacts' 0.01 confirmed); (6) rank-2 overclaims: contradictory genus
+estimates, per-sum max 22.4√N ≫ c√N (0.88√N is std-level, one
+design), two assertion-only "[PROVEN]" artifacts; radius_model N=3571
+arithmetic slip (1.9514 vs 1.9508); (7) nine missing artifacts listed;
+MANIFEST misdescriptions.  Statuses updated in README/REVIEW_R108.
+Durable fixes: catmap import symlinks (theorem scripts now run
+standalone — theorem_c re-executed PASS), code/artifacts → ../artifacts
+redirect.  Third subagent (code-vs-paper) produced no usable report;
+scope covered by the principal's independent checks + the suite run.

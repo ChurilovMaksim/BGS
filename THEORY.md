@@ -3197,6 +3197,23 @@ theorem target: E_c = E_unc/m⁴ + E_expl(N,K) + Rem with
 |Rem|/(E_unc/m⁴) = O(K^{−3/2}) (measured; analytically open — see
 docs/CROSS_TERM_LAW_R108.md).
 
+**R108 subagent-audit addendum (findings F9–F15, docs/REVIEW_R108.md).**
+Both δ-bounds ever stated in the workspace (16/K² in the papers,
+16/m in m1_killer_test.json / g0_hypothesis.json) are refuted by the
+corrected δ(N=3571) = +17.65% (envelopes 5.5% / 7.6%).  The retracted
+R95 numbers were internally inconsistent (−6.49% vs −6.9%).  The
+per-fiber mean-|A|² margin is nearly exhausted (3.68 per unit N at
+N=199 vs the claimed "1–2"; sweep max |A|/√N ≈ 2.0 everywhere —
+honest provable ceiling 3√N).  The M2 constant c(k) ≈ k/2 holds only
+at N=199 (2.44–6.76 at N=3571); the two M2 artifacts disagree on rel₆
+by 6%.  The R93.4 rel₄ = 0.0059 is refuted by the exact recomputation
+rel₄ = 0.0101 (k=2 contamination; sister artifacts said 0.01 ✓).
+Rank-2: contradictory genus estimates (≤2 vs ~5), per-sum max
+22.4√N ≫ any c√N bound, and two "[PROVEN]" artifacts are
+assertion-only (no data).  Nine cited artifacts were missing; the
+artifacts/ tree is rebuilt durably and the catmap imports are
+symlinked so the theorem scripts run standalone.
+
 **Status of the chain after R108:** symmetry β=1 PROVEN; Catalan moments
 PROVEN; arcsine PROVEN (independently re-verified); k=2 PROVEN; k=4
 identity/flatness/per-fiber-Weil PROVEN; k=4 δ-control OPEN (cross terms);

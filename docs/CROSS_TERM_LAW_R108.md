@@ -47,7 +47,11 @@ K ≥ 40 (0.45% at K=40 → 0.00% at K ≥ 229), with small-K scatter
 (+6.45% at K=11, +17.65% at K=17).  In the honest BGS regime
 (K → ∞, K = o(N)) the measured correction vanishes rapidly.
 (The fixed-K scaling of the retracted claim is impossible anyway:
-finitely many split primes per order.)
+finitely many split primes per order.)  Note: the corrected
+δ(N=3571) = +17.65% refutes **both** envelopes ever stated in the
+workspace — the papers' 16/K² = 5.5% and the artifacts'
+16/m = 7.6% (m1_killer_test.json, g0_hypothesis.json) — which were
+also mutually inconsistent laws.
 
 **Law 3 (desymmetrisation).** The H₊ = H·⟨−1⟩-coupled half-coset δ is
 5–15× smaller than the full-coset δ at the same design.  The
