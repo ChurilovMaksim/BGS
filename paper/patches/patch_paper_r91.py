@@ -1,4 +1,4 @@
-"""RUN 92 paper patch: insert the R91-R92 section (arcsine/Wigner dichotomy,
+r"""RUN 92 paper patch: insert the R91-R92 section (arcsine/Wigner dichotomy,
 spectral package, k=2/k=4 fluctuation reduction) into the main paper.
 Written as a file (heredocs mangle backslashes on this box).  Idempotent.
 

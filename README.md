@@ -20,7 +20,7 @@ The programme is **not finished**.  What IS finished: the rank-1
 the rank-2 (Sp₄ diagonal) coupled-energy flatness (G0 mechanism).
 What is NOT finished: the ESY deterministic assembly (M3), the
 non-diagonal Sp₄ Hecke operator (M4d), and k ≥ 6 layers.  All are
-scoped in `GOALS.md` and `docs/sp4_project_scope.md`.
+scoped in `docs/research_goals.md` and `docs/sp4_project_scope.md`.
 
 ## Folder structure
 
@@ -65,15 +65,12 @@ docs/                 — supporting documents
   trace_fluctuation_lemma.md — the trace-fluctuation lemma statement
   REVIEW_ERRORS.md          — the referee-pass error list
   REVIEW_FINDINGS.md        — the referee-pass findings
+  literature/               — arXiv/OpenAlex/Crossref harvest scripts
+  archive/                  — retired/failed lines (do not cite)
 
 HISTORY.md            — the complete session log (R1–R107, chronological)
 HANDBOOK.md           — the detailed mathematical reference
 THEORY.md             — the full theoretical framework (§0–§19.36)
-GOALS.md              — the prize-track goal hierarchy
-M4_SCOPE.md           — the Sp(2g) project scope
-
-literature/           — arXiv/OpenAlex/Crossref harvest scripts
-archive/              — retired/failed lines (do not cite)
 tools/                — build tools
 ```
 
@@ -138,7 +135,7 @@ the Sp₄ diagonal is the first rank-2 confirmation.
 
 ```bash
 # LaTeX papers
-cd paper && ../tools/bin/tectonic.exe -X compile <file>.tex
+cd paper && ../data/tools/bin/tectonic.exe -X compile <file>.tex
 
 # Lean certificates
 cd formal && lake build

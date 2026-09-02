@@ -1,4 +1,4 @@
-"""
+r"""
 BGS adapter for the universal churi local-LLM pool.
 
 This module is a thin facade: it re-exports the universal `BgsLocalLLM`

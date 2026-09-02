@@ -1,4 +1,4 @@
-"""RUN 96 paper patch: insert the R95-R96 section (twist identity,
+r"""RUN 96 paper patch: insert the R95-R96 section (twist identity,
 flatness lemma, delta envelope, H3 closure at k=4).  Idempotent.
 Insertion: after the R92 section, i.e. immediately before
 \section{Numerical certification} (both R91 and R92 sections sit there).
