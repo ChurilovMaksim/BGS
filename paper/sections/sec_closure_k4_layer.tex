@@ -1,7 +1,9 @@
-% section_r95.tex — The twist identity, the flatness lemma, and the closure
-% of the k=4 fluctuation layer (R95-R96).  Insert after section_r92.tex.
+% section_r95.tex — The twist identity, the flatness lemma, and the
+% CORRECTED status of the k=4 fluctuation layer (R95-R96, corrected R108).
+% Insert after section_r92.tex.  Synced with the corrected main paper:
+% the "closure"/THEOREM claim is retracted; see docs/REVIEW_R108.md.
 
-\section{The closure of the \texorpdfstring{$k=4$}{k=4} fluctuation layer}
+\section{The \texorpdfstring{$k=4$}{k=4} fluctuation layer: corrected status}
 \label{sec:r95}
 
 \subsection{The twist identity}
@@ -53,7 +55,7 @@ Consequently the uncoupled energy $E_{\mathrm{unc}} =
 \sum_t (c \star c)(t)^2$ is $N^7$-scale with explicitly computable
 corrections.
 
-\subsection{The \texorpdfstring{$\delta$}{delta} envelope}
+\subsection{The \texorpdfstring{$\delta$}{delta} envelope, corrected in R108}
 
 The trivial twist contributes $E_{\mathrm{unc}}/m^4$; the nontrivial
 twists interfere with relative amplitude $\delta$:
@@ -63,65 +65,66 @@ twists interfere with relative amplitude $\delta$:
  & E_c & E_{\mathrm{unc}}/m^4 & \delta\\
 N = 53, m = 4 & 3.411 \times 10^9 & 3.373 \times 10^9 & +1.1\%\\
 N = 199, m = 18 & 1.156 \times 10^{11} & 1.086 \times 10^{11} & +6.4\%\\
-N = 3571, m = 210 & 3.545 \times 10^{15} & 3.791 \times 10^{15} & -6.9\%
+N = 3571, m = 210 & 4.459 \times 10^{15} & 3.791 \times 10^{15} & +17.6\%
 \end{array}
 \]
+(The R93/R95 value $3.545 \times 10^{15}$, $\delta = -6.9\%$ at
+$N = 3571$ was an artifact of an indexing bug in the R93.2 calibration
+script and is retracted in R108; the corrected value is confirmed by
+two independent computations agreeing to $4 \times 10^{-12}$.)
 
-\begin{theorem}[the $\delta$ envelope]
+\begin{theorem}[the $\delta$ envelope; corrected in R108]
 \label{thm:delta}
-$|\delta| \le C(K)$, constant in $N$, with $C(K) = O(K^{-2})$
-empirically ($C \approx 20$ fits all three designs).  Derivation: per
-nontrivial twist pair each fiber sum is a Weil sum on the conic
-(degree 2, genus $\le 1$), giving $|A(d)| \le c_w\sqrt{N}$; Parseval
-with the twisted second moment $\sum_d |A(d)|^2 \sim N^2$ yields
-$E_{\mathrm{twist}} \le c_w^2 N^5$ per pair, and normalizing by
-$E_{\mathrm{unc}}/m^4 \sim N^7/m^4$ leaves $|\delta| \le c_w^2
-m^2/N^2 \le c_w^2/K^2$.  With the crude constant $c_w = 4$ the
-envelope is $16/K^2$: it holds at $K = 13$ ($1.1\%$ vs $9.5\%$) and
-$K = 11$ ($6.4\%$ vs $13.2\%$) but is marginally exceeded at $K = 17$
-($6.9\%$ vs $5.5\%$) --- the load-bearing claim is the
-$N$-independence of $\delta$ (boundedness), which holds at all three
-designs; sharpening $c_w$ (or the per-fiber second moment) is part of
-the write-up.
+The trivial twist pair contributes exactly $E_{\mathrm{unc}}$, and every
+nontrivial pair satisfies $E_{\psi} \le 256\,N^5$ by Parseval from the
+per-fiber Weil bound with the $d{=}0$ carve-out
+($|(A \star A)(t)| \le 16 N^2$).  This yields
+$|\delta| \le 256\,m^2/N^2 = O(K^{-2})$ \emph{provided} the cross
+terms between distinct twist pairs vanish or are comparably bounded.
+They do \textbf{not} vanish: measured cross-term shares of the total
+correction $m^4 E_c - E_{\mathrm{unc}}$ are $88.9\%$, $99.2\%$,
+$99.99\%$ at the three designs (R108e/r108h, exact).  Moreover
+$\delta = o(1)$ cannot hold at fixed $K$ (only finitely many split
+primes share a given order).  The $\delta$-estimate is therefore
+\textbf{OPEN}; the exact pair-type decomposition (R108g) reduces it to
+the off-system cross terms.
 \end{theorem}
 
-\subsection{Closure}
+\subsection{Closure status after R108}
 
-\begin{corollary}[H3 at $k = 4$]
+\begin{corollary}[H3 at $k = 4$; DOWNGRADED to open in R108]
 \label{cor:h3closed}
-Combining Theorems~92.3 (factorization), \ref{thm:twist} (twist
-identity), \ref{thm:flatness} (flatness) and \ref{thm:delta}
-(envelope):
-\[
-  E_c \sim N^3 K^4, \quad
-  \operatorname{std}(\Sigma_4) \sim N K^2, \quad
-  \operatorname{mean}(\Sigma_4) \sim N^{1.9},
-\]
-so the relative cross-$q$ fluctuation of the $k{=}4$ coset moment
-decays as $N^{-1.03}$ (measured across the three calibration points:
-$0.46 \to 0.11 \to 0.006$).  Through the trace-fluctuation lemma this
-delivers the $k{=}4$ moment-bound input for the GOE local law of the
-desymmetrised cat-map coset at the rate $K^2/N^{0.9}$.
+Theorems~92.3 (factorization), \ref{thm:twist} (twist identity for
+$B$), \ref{thm:flatness} (flatness) and the corrected per-fiber Weil
+bound (with the $d{=}0$ carve-out) all stand, and the exact pair-type
+decomposition of R108g reduces the remaining estimate to the
+off-system cross terms.  What fails is the last step: the correction
+$m^4 E_c - E_{\mathrm{unc}}$ is dominated by cross terms
+($88.9$--$99.99\%$), unbounded by any current argument, and the
+measured $\delta$ grows along the legacy designs
+($+1.1\% \to +6.4\% \to +17.6\%$).  The $k{=}4$ layer is therefore
+\textbf{OPEN}.  The directly measured BGS quantity satisfies
+$\operatorname{rel}_4 \cdot m \approx 2.0$--$2.4$ across the full
+R108 design sweep --- the $1/m$ decay the local-law input needs.
 \end{corollary}
 
 \subsection{Honest scope}
 
-Closed here: the $k{=}4$ layer of the fluctuation hypothesis for the
-desymmetrised level-set coset.  Not closed: the $k \ge 6$ layers (the
-template of Theorem~92.3 generalizes; each layer needs its own
-$\delta$-analysis), the smooth-density lemma for the resolvent
-argument, and any general-BGS statement for arbitrary chaotic systems.
-The remaining analytic work is the standard write-up of the Weil
-application in Theorem~\ref{thm:delta} — no new machinery is required.
+Closed here: the exact reduction chain (moment factorization, twist
+identity for $B$, flatness, per-fiber Weil with carve-out, exact
+pair-type decomposition), and the exact computation of $E_c$ at all
+calibration designs.  Not closed: the off-system cross-term bound (the
+genuine $k{=}4$ estimate), the $k \ge 6$ layers, the smooth-density
+lemma for the resolvent argument, and any general-BGS statement for
+arbitrary chaotic systems.  The remaining analytic work is \emph{not}
+a routine write-up: it is a new estimate for distributed coset-stratum
+correlations (see \texttt{docs/CROSS\_TERM\_LAW\_R108.md}).
 
 \subsection{Bulk resolvent convergence}
 \label{sec:resolvent}
 
 The bulk Stieltjes transform of the variance-normalized parity-odd
-coset spectrum converges to the semicircle with a power rate:
-max over the bulk grid of $|m_V(z) - m_{sc}(z)|$ equals $0.359$
-($m_+ = 9$), $0.087$ ($m_+ = 105$), $0.037$ ($m_+ = 336$) at
-$\operatorname{Im} z = 0.5$ --- decay exponent $pprox 1.2$.  Two
+coset spectrum converges to the semicircle, but the stored R99 data (deviations 0.359, 0.087, 0.037, 0.038 at $m_+ = 9, 105, 336, 837$) fit an unstable rate of about $m^{-0.6}$ with the last two points flat (R108 re-analysis); the earlier $m^{-1.2}$ claim is retracted.  Two
 comparison defects were found and fixed en route: the deviation must
 be taken in complex norm, and the semicircle Stieltjes
 $(-z + \sqrt{z^2-4})/2$ requires the explicit branch flip
@@ -131,8 +134,9 @@ principal branch is wrong for $\operatorname{Re} z < 0$).
 With this, all three inputs of the deterministic local-law assembly
 are calibrated for the desymmetrised cat-map coset: fixed-moment
 matching (Catalan, $r \le 10$), cross-$q$ fluctuation decay
-($N^{-1}$ per layer, Theorem~ef{thm:evenk} chain), and bulk
-resolvent convergence ($m^{-1.2}$).  The remaining work is the
+($N^{-1}$ per layer, Theorem~
+ef{thm:evenk} chain), and bulk
+resolvent convergence (unstable rate; reanalyzed R108).  The remaining work is the
 Erd\H{o}s--Schlein--Yau-type deterministic assembly and the analytic
 write-up of the Weil estimate for $\delta_{\mathrm{off}}$ --- no new
 mechanisms are missing.

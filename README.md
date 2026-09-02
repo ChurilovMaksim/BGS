@@ -38,13 +38,14 @@ scoped in `docs/research_goals.md` and `docs/sp4_project_scope.md`.
 ## Folder structure
 
 ```
-paper/final/          — compiled PDFs (the main results)
-  cat_map_bgs_main.pdf          — the 25-page main paper
-  bgs_complete_paper.pdf        — the complete research paper
-  h_coupling_research_note.pdf  — the H-coupling research note
-  mobius_fiber_theorem.pdf      — the k=4 corrected status + cross-term problem
-paper/sections/       — LaTeX section files (new results)
+paper/final/          — corrected paper sources (R108; PDFs archived)
+  cat_map_bgs_main.tex          — the main paper (25 pp source)
+  bgs_complete_paper.tex        — the complete research paper source
+  h_coupling_research_note.tex  — the H-coupling research note
+  mobius_fiber_theorem.tex      — corrected k=4 status + cross terms
+paper/sections/       — LaTeX section files (synced to R108 corrections)
 paper/patches/        — paper patch scripts (idempotent)
+docs/archive/papers/ — superseded pre-R108 drafts + stale PDFs (do not cite)
 
 code/core/            — cat-map quantisation (certified ≤ 7e-14)
 code/theorems/        — theorem implementations (A–H, II)
