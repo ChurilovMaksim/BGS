@@ -1,51 +1,9 @@
-# BGS — состояние программы и путь к цели (2026-09-02)
+# Programme status — 2026-09-02
 
-## Что достигнуто (чёрный ящик закрытых шагов)
+The programme currently has a reproducible rank-1 computational reduction, an exact checked `k=2` fluctuation layer and substantial numerical GOE evidence. The analytic M1 assembly remains open.
 
-### Для cat map (rank 1) — полная цепочка
+No current file claims general BGS. Rank-2 material is retained as experimental provenance, not as a shortcut around M1.
 
-| Шаг | Статус | Артефакт |
-|---|---|---|
-| Симметрия β=1 | [PROVEN] Thm C/D/E | R72-R73 |
-| Моменты r≤10 = Catalan | [PROVEN] Thm H | R75-R76 |
-| Observable = 1-param кривая | [PROVEN] Thm I/II | R82 |
-| Полная группа = arcsine, замкнутые формулы | [PROVEN] Thm 91.5 | §19.24 |
-| GOE P(s) + Σ²(L) | [NUM] 3 дизайна | R91 |
-| H3 k=2 точная комбинаторика | [PROVEN + Lean] Thm 92.1 | §19.27 |
-| H3 k=4: твист-тождество + плоскость + Вейль-изоляция δ_off < 1.5% | [PROVEN + NUM] Thm 92.3/95.1/96.2 | §19.28-19.32 |
-| Слоино-равномерный закон (линейность по k) | [NUM] 2 дизайна | R98 |
-| Резольвента ~ m^-1.2 | [NUM] 4 точки | R99 |
-| M1: δ = o(1) (Möbius-fiber, LN 5.41) | [PROVEN] Thm 96.2 | §19.32 |
-| M2: k≥6 эмпирика m⁻¹ | [NUM] R98 | R101 |
+The historical N=95419 ratio/spacing test is quarantined and is not part of the active evidence set.
 
-### Для Sp₄ (rank 2) — G0 механизм
-
-| Шаг | Статус | Артефакт |
-|---|---|---|
-| Диагональ = безфазовая дилатация, ковариация точна | [PROVEN] Thm 105.1 | §19.34 |
-| Coupled energy F(n) плоска off-diagonal ~1.7% | [NUM] Thm 105.2 | §19.35 |
-| Rank-2 диагональное тождество sum=1 | [PROVEN] Thm 105.3 | R105.3 |
-| Косетная плоскость A_S(q)=|coset|/G | [PROVEN] Thm 105.6 | R105.6 |
-| Косетно-секторная теорема | [PROVEN] Thm 105.7 | R105.7 |
-
-## Что остаётся до полного BGS (в порядке)
-
-1. **M3: smooth-density + ESY-сборка** — литературный шаблон (Erdős–Schlein–Yau), адаптированный к детерминированным арифметическим матрицам. Все входные данные откалиброваны: моменты (Catalan), флуктуации (N⁻¹), резольвента (m^-1.2). Оценка: 1–2 недели записи, 0 новых механизмов.
-
-2. **M4d: rank-2 Вейль-поправка (Hecke-ядро с перекрёстным сдвигом)** — единственный шаг, где может появиться новая математика. The genuine rank-2 kernel has the shift s = (x2, x1) (the cross coupling) — the sums over x1,x2 then factor through a 2-dimensional character variety, genus ≥ 2, bound ~ 8√N. This step closes G0.
-
-3. **Ретракции и каскады**: R91-A (c_s формула) — закрыта, R96.6 (δ-огибающая) — ослаблена, артефакты обновлены.
-
-## Путь к премиальному уровню
-
-G0 механизм найден: **H-связка + разложение по твистам + плоскость + Вейль на фибрах** — это общий шаблон, переносимый между рангами. Доказано:
-- rank 1 (cat map): полная цепочка до H3 k=4
-- rank 2 (Sp₄ диагональ): точная плоскость, ковариация, секторная структура
-
-Остаётся доказать rank-2 Вейль-поправку — это стандартное применение RH над конечными полями к кривой рода 5 (8√N bound). После этого G0 становится **теоремой**: «Для любого расслоения на орбиты Мёбиуса/рациональные функции ограниченной степени над абелевой группой, coupled-energy факторизуется через плоскость + Вейль-поправку».
-
-**Честная оценка**: это не Fields-уровень (проблемы столетней давности не закрыты), но это **прочный, новый, проверяемый результат в арифметическом хаосе**, открывающий линию — от cat map до Sp(2g) и далее. Уровень: Annals of Math / CMP при завершении write-up, с цитированием как «the H-coupling method» в дальнейшем.
-
-## Немедленный следующий шаг
-
-Собрать **рукопись открытия**: «The H-coupling mechanism: from the cat map to Sp(2g)». Включить теоремы M1–M4, таблицы калибровок, и поставить G0-гипотезу как доказанную для диагонального случая. 20–30 страниц, 5–7 разделов. Это закрывает сессию на уровне, готовом к публикации.
+For exact status and numerical anchors, use `../STATUS.md`. For the research continuation, use `../research/M1.md`.

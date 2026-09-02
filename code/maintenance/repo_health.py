@@ -1,81 +1,108 @@
-"""Fast repository health check for the post-R82 BGS workspace.
-
-This checker validates repository structure rather than scientific claims. It is
-safe to run before and after edits and never mutates the workspace.
-"""
+"""Fast non-mutating health gate for the canonical WoW repository."""
 from __future__ import annotations
 
-import compileall
+import json
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 
 REQUIRED = [
     "README.md",
-    "HANDBOOK.md",
+    "STATUS.md",
     "THEORY.md",
     "HISTORY.md",
-    "data/MANIFEST.md",
-    "code/core/catmap_core.py",
-    "code/theorems/theorem_ii_twisted_jacobi.py",
-    "code/large_m/fourth_mixed_moment.py",
+    "HANDBOOK.md",
+    "requirements.txt",
+    "research/README.md",
+    "research/M1.md",
+    "code/math/twisted_jacobi.py",
+    "code/math/jacobi.py",
     "code/verification/baseline_r82.py",
+    "code/verification/h3_k2_exact_reduction.py",
+    "code/verification/theorem_ii_new_primes.py",
+    "results/verified/baseline_r82.json",
+    "results/verified/h3_k2_exact_reduction.json",
+    "results/verified/theorem_ii_new_primes.json",
+    "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N199.npz",
+    "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
+    "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
     "formal/Bgs/K2Reduction.lean",
-    "formal/Bgs/K4Variety.lean",
+    "paper/README.md",
+    "archive/README.md",
+    "archive/legacy-workspace/README.md",
 ]
 
-FORBIDDEN_GENERATED = [
+FORBIDDEN_ACTIVE = [
+    "code/verification/word_trace_algebra.py",
+    "results/verified/word_trace_proof.json",
     "formal/.lake/build",
     "formal/.lake/packages",
+    "tools/tectonic.exe",
+    "paper/M4D_PROOF.tex",
+    "paper/final/mobius_fiber_theorem.tex",
 ]
 
-
-def check_required() -> list[str]:
-    return [p for p in REQUIRED if not (ROOT / p).exists()]
-
-
-def check_generated() -> list[str]:
-    return [p for p in FORBIDDEN_GENERATED if (ROOT / p).exists()]
+STALE_TOKENS = ("src/", "artifacts/", '"src"', '"artifacts"')
+RESULT_JSON_DIRS = [ROOT / "results" / "verified", ROOT / "results" / "numerical"]
 
 
-def check_python_compile() -> bool:
-    ok_code = compileall.compile_dir(ROOT / "code", quiet=1, force=True)
-    ok_patches = compileall.compile_dir(ROOT / "paper" / "patches", quiet=1, force=True)
-    return bool(ok_code and ok_patches)
+def fail(message: str, errors: list[str]) -> None:
+    print(f"FAIL: {message}")
+    errors.append(message)
 
 
 def main() -> int:
-    problems: list[str] = []
+    errors: list[str] = []
 
-    missing = check_required()
-    if missing:
-        problems.extend(f"missing required path: {p}" for p in missing)
+    for rel in REQUIRED:
+        if not (ROOT / rel).exists():
+            fail(f"missing required path: {rel}", errors)
+    if not errors:
+        print("required paths: PASS")
 
-    generated = check_generated()
-    if generated:
-        problems.extend(
-            f"generated build tree should not be tracked/preserved: {p}"
-            for p in generated
-        )
+    hygiene_before = len(errors)
+    for rel in FORBIDDEN_ACTIVE:
+        if (ROOT / rel).exists():
+            fail(f"forbidden active path exists: {rel}", errors)
+    for cache in ROOT.joinpath("code").rglob("__pycache__"):
+        fail(f"generated Python cache exists: {cache.relative_to(ROOT)}", errors)
+    if len(errors) == hygiene_before:
+        print("active-tree hygiene: PASS")
 
-    python_ok = check_python_compile()
-    if not python_ok:
-        problems.append("Python compileall failed")
+    syntax_before = len(errors)
+    for path in sorted((ROOT / "code").rglob("*.py")):
+        text = path.read_text(encoding="utf-8-sig")
+        rel = path.relative_to(ROOT)
+        if not str(rel).startswith("code/maintenance/"):
+            for token in STALE_TOKENS:
+                if token in text:
+                    fail(f"stale path token {token!r} in {rel}", errors)
+        try:
+            compile(text, str(path), "exec")
+        except SyntaxError as exc:
+            fail(f"syntax error in {rel}: {exc}", errors)
+    if len(errors) == syntax_before:
+        print("active Python syntax/path conventions: PASS")
 
-    print(f"root: {ROOT}")
-    print(f"required paths: {'PASS' if not missing else 'FAIL'}")
-    print(f"generated-tree hygiene: {'PASS' if not generated else 'FAIL'}")
-    print(f"python compileall: {'PASS' if python_ok else 'FAIL'}")
+    json_before = len(errors)
+    for directory in RESULT_JSON_DIRS:
+        if not directory.exists():
+            continue
+        for path in sorted(directory.glob("*.json")):
+            try:
+                json.loads(path.read_text(encoding="utf-8"))
+            except Exception as exc:
+                fail(f"invalid result JSON {path.relative_to(ROOT)}: {exc}", errors)
+    if len(errors) == json_before:
+        print("current result JSON: PASS")
 
-    if problems:
-        print("\nPROBLEMS")
-        for problem in problems:
-            print(f"- {problem}")
+    if errors:
+        print(f"REPOSITORY HEALTH: FAIL ({len(errors)} issue(s))")
         return 1
-
-    print("\nREPOSITORY HEALTH: PASS")
+    print("REPOSITORY HEALTH: PASS")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
