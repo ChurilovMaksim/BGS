@@ -10,21 +10,21 @@ This file overrides historical theorem labels, old compiled papers and archived 
 |---|---|---|
 | Twisted-Jacobi computational representation / R82 baseline | **REPRODUCED** | `code/verification/baseline_r82.py`, `results/verified/baseline_r82.json` |
 | Exact H3 `k=2` reduction | **REPRODUCED / exact identity check** | `code/verification/h3_k2_exact_reduction.py`, `results/verified/h3_k2_exact_reduction.json`, Lean source `formal/Bgs/K2Reduction.lean` |
-| Independent Theorem-II matrix-element check | **REPRODUCED at N=461 and N=19489 in rebuild** | `code/verification/theorem_ii_new_primes.py`, `results/verified/theorem_ii_new_primes.json` |
+| Twisted-Jacobi matrix-element regression at new split primes | **REPRODUCED** | `code/verification/theorem_ii_new_primes.py`, `results/verified/theorem_ii_new_primes.json` |
 | GOE spacing / matched number variance | **NUMERICAL EVIDENCE** | `code/experiments/`, `results/numerical/` |
 | Historical M1 / Möbius-fiber asymptotic claim | **OPEN GAP** | `research/M1.md` |
 | Rank-2 / Sp4 continuation | **EXPERIMENTAL / archived working material** | `archive/legacy-workspace/` |
 | General BGS | **NOT PROVED** | downstream of unresolved analytic steps |
 
-## Audited numerical anchors
+## Audited computational anchors
 
 The R82 baseline reproduces the stored fourth-moment curve with maximum absolute deviation `6.039613253960852e-14` at `N=199,K=11` and `2.353672812205332e-13` at `N=3571,K=17`.
 
 The exact `k=2` check gives `|P|=132=12*11` at `N=53,K=13` with identity deviation about `1.25e-12`, and `|P|=90=10*9` at `N=199,K=11` with identity deviation about `3.64e-10`.
 
-The independent matrix-element check reproduced five q probes with zero measured float64 deviation at both `N=461,K=23` and `N=19489,K=29` in the rebuild run.
+The new-prime matrix-element regression compares the production matrix contraction with direct scalar character sums at five q values. At `N=461,K=23` it checks all 100 entries per q and has maximum relative deviation `1.4166352564530244e-11`. At `N=19489,K=29` it checks a deterministic 32-entry sample per q and has maximum relative deviation `1.2714969482034705e-10`. Both are below the explicit `5e-10` regression tolerance.
 
-These computations are independent of the failed M1 promotion.
+These checks are finite-N computational certificates. They do not prove the limiting spectral law and are independent of the failed M1 promotion.
 
 ## M1 is open
 
