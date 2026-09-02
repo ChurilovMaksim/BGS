@@ -1,6 +1,6 @@
 {
   "script":"code/experiments/number_variance_goe_control.py",
-  "generated":"2026-09-01T23:14:12",
+  "generated":"2026-09-02T19:39:09",
   "design":{"N":19489,"K":29,"a":4523,"m_plus":336,"n_q":25,"nsim":60},
   "L_values":[1,2,3,5,8,12],
   "rows":[
@@ -12,6 +12,6 @@
     {"L":12,"catmap_mean":2.450457057823129,"catmap_sem":0.022046972070705616,"goe_mean":2.4652826495181412,"goe_sem":0.015620733303219262,"z":0.5486910977805542,"pass":true}
   ],
   "overall_pass":true,
-  "walltime_s":17.940586805343628,
-  "rebuild_status":"retained numerical result from pre-rebuild workspace; script path migrated, not freshly rerun on 2026-09-02"
+  "walltime_s":21.18526601791382,
+  "audit_2026_09_03":"fresh rerun; all L in {1,2,3,5,8,12} remained within |z|<2 against matched GOE control"
 }

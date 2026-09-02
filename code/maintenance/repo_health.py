@@ -1,8 +1,8 @@
 """Fast non-mutating health gate for the canonical WoW research repository.
 
-The gate distinguishes two layers:
-  * canonical code/results: strict current-path and status requirements;
-  * restored research corpus: preservation + syntax/JSON integrity requirements.
+The repository deliberately contains three trust levels.  This gate is strict
+about the canonical layer, but preserves migration debt in research/historical
+files instead of pretending old paths or status labels never existed.
 """
 from __future__ import annotations
 
@@ -13,79 +13,56 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 
 CANONICAL_REQUIRED = [
-    "README.md",
-    "STATUS.md",
-    "THEORY.md",
-    "HISTORY.md",
-    "HANDBOOK.md",
-    "requirements.txt",
-    "research/README.md",
-    "research/M1.md",
-    "code/math/twisted_jacobi.py",
-    "code/math/jacobi.py",
+    "README.md", "STATUS.md", "THEORY.md", "HISTORY.md", "HANDBOOK.md",
+    "requirements.txt", "research/README.md", "research/M1.md",
+    "code/math/twisted_jacobi.py", "code/math/jacobi.py",
     "code/verification/baseline_r82.py",
     "code/verification/h3_k2_exact_reduction.py",
     "code/verification/theorem_ii_new_primes.py",
+    "code/experiments/goe_spacing.py",
+    "code/experiments/number_variance_goe_control.py",
+    "code/maintenance/audit_inventory.py",
     "results/verified/baseline_r82.json",
     "results/verified/h3_k2_exact_reduction.json",
     "results/verified/theorem_ii_new_primes.json",
+    "results/numerical/bgs_spacing_goe.json",
+    "results/numerical/number_variance_goe_control.json",
+    "results/historical-numerical/bgs_spacing_N95419.json",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N199.npz",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
     "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
-    "formal/Bgs/K2Reduction.lean",
+    "formal/Bgs/K2Reduction.lean", "formal/Bgs/OpLocal.lean",
+    "docs/audit/full_repository_sync_2026-09-03.md",
+    "docs/audit/FILE_INVENTORY_SUMMARY.json",
+    "docs/audit/PRODUCER_PATH_MAP.md", "docs/audit/CLAIM_STATUS_MAP.md",
+    "docs/audit/HISTORY_ENCODING_REPAIR.json",
 ]
 
 RESEARCH_CORPUS_REQUIRED = [
-    "code/core",
-    "code/diagnostics",
-    "code/kloosterman",
-    "code/large_m",
-    "code/shape_automaton",
-    "code/sp4",
-    "code/theorems",
-    "code/utils",
-    "code/legacy_verification",
-    "data/MANIFEST.md",
-    "data/diagnostics",
-    "data/legacy",
-    "data/moments",
-    "data/proof",
-    "data/rank2_sp4",
-    "data/spectral",
-    "docs/README.md",
-    "docs/literature",
-    "docs/review",
-    "docs/archive",
-    "docs/THEORY_FULL_PRE_REBUILD.md",
-    "docs/HISTORY_FULL_PRE_REBUILD.md",
-    "paper/README.md",
-    "paper/sections",
-    "paper/patches",
-    "paper/final",
+    "code/core", "code/diagnostics", "code/kloosterman", "code/large_m",
+    "code/shape_automaton", "code/sp4", "code/theorems", "code/utils",
+    "code/legacy_verification", "data/MANIFEST.md", "data/diagnostics",
+    "data/legacy", "data/moments", "data/proof", "data/rank2_sp4",
+    "data/spectral", "docs/README.md", "docs/literature", "docs/review",
+    "docs/archive", "docs/THEORY_FULL_PRE_REBUILD.md",
+    "docs/HISTORY_FULL_PRE_REBUILD.md", "paper/README.md", "paper/sections",
+    "paper/patches", "paper/final", "paper/final/mobius_fiber_theorem.tex",
     "archive/legacy-workspace/README.md",
 ]
 
-FORBIDDEN_GENERATED = [
-    "formal/.lake/build",
-    "formal/.lake/packages",
-    "tools/tectonic.exe",
-    "data/tools",
-]
-
-FORBIDDEN_CANONICAL = [
-    "code/verification/word_trace_algebra.py",
+FORBIDDEN_PATHS = [
+    "formal/.lake/build", "formal/.lake/packages", "tools/tectonic.exe",
+    "data/tools", "results/numerical/bgs_spacing_N95419.json",
     "results/verified/word_trace_proof.json",
-    "paper/M4D_PROOF.tex",
 ]
 
-STALE_TOKENS = ("src/", "artifacts/", '"src"', '"artifacts"')
-CANONICAL_CODE_DIRS = [
+CANONICAL_RUNTIME_DIRS = [
     ROOT / "code" / "math",
     ROOT / "code" / "verification",
     ROOT / "code" / "experiments",
-    ROOT / "code" / "maintenance",
 ]
-JSON_ROOTS = [ROOT / "results", ROOT / "data"]
+STALE_TOKENS = ("src/", "artifacts/", '"src"', '"artifacts"')
+JSON_ROOTS = [ROOT / "results", ROOT / "data", ROOT / "docs" / "audit"]
 
 
 def fail(message: str, errors: list[str]) -> None:
@@ -96,26 +73,28 @@ def fail(message: str, errors: list[str]) -> None:
 def main() -> int:
     errors: list[str] = []
 
-    required_before = len(errors)
+    before = len(errors)
     for rel in CANONICAL_REQUIRED:
         if not (ROOT / rel).exists():
             fail(f"missing canonical path: {rel}", errors)
     for rel in RESEARCH_CORPUS_REQUIRED:
         if not (ROOT / rel).exists():
             fail(f"missing research-corpus path: {rel}", errors)
-    if len(errors) == required_before:
+    if len(errors) == before:
         print("canonical + research corpus presence: PASS")
 
-    hygiene_before = len(errors)
-    for rel in FORBIDDEN_GENERATED + FORBIDDEN_CANONICAL:
+    before = len(errors)
+    for rel in FORBIDDEN_PATHS:
         if (ROOT / rel).exists():
-            fail(f"forbidden path exists: {rel}", errors)
-    for cache in ROOT.joinpath("code").rglob("__pycache__"):
+            fail(f"forbidden/quarantined path exists in wrong location: {rel}", errors)
+    for cache in ROOT.rglob("__pycache__"):
         fail(f"generated Python cache exists: {cache.relative_to(ROOT)}", errors)
-    if len(errors) == hygiene_before:
-        print("generated/quarantine hygiene: PASS")
+    for pyc in ROOT.rglob("*.pyc"):
+        fail(f"generated bytecode exists: {pyc.relative_to(ROOT)}", errors)
+    if len(errors) == before:
+        print("generated + quarantine placement hygiene: PASS")
 
-    syntax_before = len(errors)
+    before = len(errors)
     python_files = sorted((ROOT / "code").rglob("*.py"))
     for path in python_files:
         try:
@@ -123,11 +102,11 @@ def main() -> int:
             compile(text, str(path), "exec")
         except Exception as exc:
             fail(f"Python source failure in {path.relative_to(ROOT)}: {exc}", errors)
-    if len(errors) == syntax_before:
+    if len(errors) == before:
         print(f"Python syntax corpus: PASS ({len(python_files)} files)")
 
-    path_before = len(errors)
-    for directory in CANONICAL_CODE_DIRS:
+    before = len(errors)
+    for directory in CANONICAL_RUNTIME_DIRS:
         if not directory.exists():
             continue
         for path in sorted(directory.rglob("*.py")):
@@ -135,23 +114,47 @@ def main() -> int:
             rel = path.relative_to(ROOT)
             for token in STALE_TOKENS:
                 if token in text:
-                    fail(f"stale current-path token {token!r} in canonical {rel}", errors)
-    if len(errors) == path_before:
-        print("canonical path conventions: PASS")
+                    fail(f"stale path token {token!r} in canonical runtime code {rel}", errors)
+    if len(errors) == before:
+        print("canonical runtime path conventions: PASS")
 
-    json_before = len(errors)
+    before = len(errors)
     json_count = 0
+    seen: set[Path] = set()
     for directory in JSON_ROOTS:
         if not directory.exists():
             continue
         for path in sorted(directory.rglob("*.json")):
+            if path in seen:
+                continue
+            seen.add(path)
             json_count += 1
             try:
                 json.loads(path.read_text(encoding="utf-8-sig"))
             except Exception as exc:
                 fail(f"invalid JSON {path.relative_to(ROOT)}: {exc}", errors)
-    if len(errors) == json_before:
+    if len(errors) == before:
         print(f"JSON corpus: PASS ({json_count} files)")
+
+    before = len(errors)
+    trace = ROOT / "docs" / "trace_fluctuation_lemma.md"
+    if trace.exists():
+        text = trace.read_text(encoding="utf-8-sig")
+        if "Binomial expansion of `Tr(M_q^k)`" not in text:
+            fail("trace-fluctuation draft is missing the audited Step-1 target", errors)
+    q = ROOT / "results" / "historical-numerical" / "bgs_spacing_N95419.json"
+    if q.exists():
+        try:
+            payload = json.loads(q.read_text(encoding="utf-8"))
+        except Exception:
+            payload = {}
+        if not str(payload.get("audit_status", "")).startswith("QUARANTINED"):
+            fail("N=95419 historical result lacks an explicit QUARANTINED audit status", errors)
+    status = (ROOT / "STATUS.md").read_text(encoding="utf-8-sig")
+    if "INVALID AS STATED / SUPERSEDED" not in status:
+        fail("STATUS.md lacks the superseded R86/R87 trace-fluctuation status", errors)
+    if len(errors) == before:
+        print("semantic audit sentinels: PASS")
 
     if errors:
         print(f"REPOSITORY HEALTH: FAIL ({len(errors)} issue(s))")

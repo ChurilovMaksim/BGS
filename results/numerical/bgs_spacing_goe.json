@@ -8,5 +8,9 @@
   "goe_reference":"Wigner surmise P(s) = (pi s/2) exp(-pi s^2/4)",
   "overall_pass":true,
   "walltime_s":47.14804220199585,
-  "rebuild_status":"retained numerical result from pre-rebuild workspace; script path migrated, not freshly rerun on 2026-09-02"
+  "audit_2026_09_03":{
+    "N=3571":"fresh bounded rerun reproduced KS D=0.01399592460024468 < 0.02105489619651814; chi2/dof=1.2969681033278546",
+    "N=19489":"retained prior result; a full fresh rerun was not completed within the bounded audit execution window",
+    "interpretation":"numerical evidence only; not a proof of a limiting law"
+  }
 }

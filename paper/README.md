@@ -1,16 +1,12 @@
 # Paper / manuscript corpus
 
-The manuscript sources are retained because they contain useful exposition, theorem statements, computations and patch history. **There is currently no proof-complete BGS manuscript.** Root `STATUS.md` controls mathematical status.
+The manuscript sources are retained because they contain useful exposition, theorem statements, computations, and patch history. **There is currently no proof-complete BGS manuscript.** Root `STATUS.md` controls mathematical status.
 
-## Contents
+- `sections/` contains modular manuscript source material for future rewriting.
+- `patches/` contains historical patch scripts; they are provenance and may use old paths.
+- `final/` contains historical source/PDF snapshots once labelled final; the label is not a current correctness claim.
+- `historical_snapshots/` collects additional duplicate/root paper snapshots.
 
-- `sections/` — manuscript sections and modular source material retained for future rewriting.
-- `patches/` — historical patch scripts used to modify manuscript sources. They are provenance and may contain old paths.
-- `final/` — historical compiled/source snapshots that were once labelled final. The label is historical, not a current claim of correctness.
-- `historical_snapshots/` — duplicate/root paper snapshots moved into one clearly historical location.
+`final/mobius_fiber_theorem.*` and the historical `M4D_PROOF.*` snapshot do not establish M1. The full audit also superseded the R86/R87 trace-fluctuation shortcut; manuscript text that depends on either route must be rewritten against current `THEORY.md` before promotion. See `research/M1.md`, `STATUS.md`, and `docs/audit/CLAIM_STATUS_MAP.md`.
 
-## Critical M1 warning
-
-`final/mobius_fiber_theorem.*` and the corresponding historical `M4D_PROOF.*` snapshot do **not** establish M1. The audit found a load-bearing gap in the twist-summed energy argument, an invalid `O(1/K^2)=o(1)` promotion for fixed `K`, and an advertised envelope contradicted by the paper's own `K=17` numerical row. See `research/M1.md` and `STATUS.md`.
-
-These sources remain in the repository because their exact identities, parametrisations and failed proof route are useful starting material. They must be edited against the current dependency graph before any new manuscript is promoted as current.
+The source/PDF corpus is intentionally preserved because exact identities, parametrisations, exposition, and failed routes are useful research material. A future current manuscript should be built from the audited dependency graph rather than by relabelling an old `final` file.
