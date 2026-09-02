@@ -36,9 +36,9 @@ VERIFICATION (this script):
      (machine precision).
   2. |P| = (K-1)(K-2) by direct enumeration.
   3. std and mean of S_off over the full q-curve vs the formulas,
-     at N=53 (K=13, m=4) and N=199 (K=33, m=6).
+     at N=53 and N=199.
 
-Output: artifacts/r92/h3_k2_exact_reduction.json + .log
+Output: data/proof/h3_k2_exact_reduction.json + .log
 """
 import json
 import math
@@ -50,16 +50,14 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-OUT_DIR = os.path.join(ROOT, "artifacts", "r92")
+OUT_DIR = os.path.join(ROOT, "data", "proof")
 os.makedirs(OUT_DIR, exist_ok=True)
 LOG = os.path.join(OUT_DIR, "h3_k2_exact_reduction.log")
 
-sys.path.insert(0, os.path.join(ROOT, "src", "large_m"))
-sys.path.insert(0, os.path.join(ROOT, "src", "theorems"))
+sys.path.insert(0, os.path.join(ROOT, "code", "large_m"))
+sys.path.insert(0, os.path.join(ROOT, "code", "theorems"))
 
-from fourth_mixed_moment import (  # noqa: E402
-    dlog_table, index_coset, jacobi_matrix,
-)
+from fourth_mixed_moment import dlog_table  # noqa: E402
 from theorem_ii_twisted_jacobi import primitive_root  # noqa: E402
 
 
@@ -82,7 +80,6 @@ def subgroup(N, K, g):
 def constraint_pairs(N, H):
     """P = {(x,y): x != y, x/y in H, (x-1)/(y-1) in H}, x,y not in {0,1}."""
     Hset = set(H)
-    inv = pow(2, N - 2, N)
     pairs = []
     for x in range(2, N):
         for y in range(2, N):
@@ -107,7 +104,6 @@ def run_design(N, a, K):
     xs_arr = np.array([p[0] for p in P], dtype=np.int64)
     ys_arr = np.array([p[1] for p in P], dtype=np.int64)
 
-    # matrix pipeline
     ell = int(dlog[a])
     d = math.gcd(ell, N - 1)
     mod = (N - 1) // d
@@ -119,7 +115,6 @@ def run_design(N, a, K):
     W = np.exp(-2j * np.pi * np.outer(ks, dl_x) / (N - 1))
     V = np.exp(2j * np.pi * np.outer(ks, dl_xm1) / (N - 1))
 
-    # S_off over full q-curve via the pair formula
     dxy = (xs_arr - ys_arr) % N
     S_off = np.array([
         np.exp(2j * np.pi * (q * dxy % N) / N).sum() for q in range(1, N)
@@ -129,7 +124,6 @@ def run_design(N, a, K):
     pred_mean = -np_pairs / (N - 1)
     pred_std = math.sqrt(np_pairs)
 
-    # identity check at a few q
     max_dev = 0.0
     for q in [1, 2, 3]:
         ph = np.exp(2j * np.pi * (q * xs_full % N) / N)
@@ -138,7 +132,6 @@ def run_design(N, a, K):
         dev = abs(A - m * m * ((N - 2) + S_off[q - 1].real))
         max_dev = max(max_dev, dev)
 
-    # std of A over the q-curve
     A_vals = m * m * ((N - 2) + S_off.real)
     std_A = float(A_vals.std())
     pred_stdA = m * m * pred_std
@@ -160,18 +153,17 @@ def run_design(N, a, K):
 def main():
     t0 = time.time()
     log("RUN 92.1 -- H3(k=2) exact combinatorial reduction")
-    out = {"script": "src/large_m/h3_k2_exact_reduction.py",
-           "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
-           "designs": []}
-    # N=53: a=10, K=13
-    g = primitive_root(53)
+    out = {
+        "script": "code/verification/h3_k2_exact_reduction.py",
+        "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "designs": [],
+    }
     a = 10
     x, kk = a % 53, 1
     while x != 1:
         x = x * a % 53
         kk += 1
     out["designs"].append(run_design(53, a, kk))
-    # N=199: a=139, K=11
     out["designs"].append(run_design(199, 139, 11))
     out["walltime_s"] = time.time() - t0
     with open(os.path.join(OUT_DIR, "h3_k2_exact_reduction.json"), "w",
