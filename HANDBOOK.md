@@ -1,80 +1,92 @@
-# HANDBOOK — The BGS Programme Mathematical Reference
+# HANDBOOK — BGS Programme Mathematical Reference
 
-This is the guide to what is proven, where each result lives, and how
-to verify it.  For the full derivations see THEORY.md (§0–§19.36).
+This handbook is the compact claim index for the workspace. It is subordinate to the current audit record `docs/review/repository_surgery_2026-09-02.md`: historical theorem labels are not automatically current proof statuses.
 
-## §1 The three spectral regimes
+## 1. Audit-status convention
 
-| System | Characters | Spectrum | Status |
-|---|---|---|---|
-| Full character group | m = N−1 | arcsine | PROVEN (Thm 91.5) |
-| Parity-odd coset | m₊ = (N−1)/(2K) | GOE (Wigner-Dyson) | NUM (3 designs) |
-| Single orbit | m = 1 | point mass | trivial |
+Use the following meanings in current work:
 
-The transition from arcsine to Wigner is the desymmetrisation
-mechanism: the full group contains both parity sectors whose
-superposition gives classical (arcsine) statistics; the parity-odd
-projection isolates the quantum-chaotic sector.
+- `[PROVEN]`: gap-free derivation with the load-bearing assumptions explicit; where code is part of the proof support, the relevant check must rerun.
+- `[NUMERICALLY-SUPPORTED]`: reproducible computation, not a proof.
+- `[OPEN GAP]`: a precise missing step prevents the advertised theorem.
+- `[HISTORICAL]`: a result or label recorded by earlier runs but not yet re-audited in the present repository state.
 
-## §2 The theorems of rank 1 (cat map)
+## 2. Rank-1 cat-map chain
 
-### Theorems A–E: the symmetry foundation
-- Thm A: Gaussian observable ⇒ exact √N·GUE_m; time-reversal ⇒ √(N/2)·GOE_m
-- Thm B: subgroup Kloosterman moments exactly p²P(s,k) balanced
-- Thm C: Θ² = +1 unconditional (no GSE)
-- Thm D: parity dichotomy (block-diagonal off the degenerate locus)
-- Thm E: Hecke torus antiunitary ⇒ β = 1 off the degenerate locus
+### Re-audited in the 2026-09-02 surgery pass
 
-### Theorems F–H: the moment route
-- Lemma F: Tr(T(v)U^J) = Tr(U^J)·w^{Q_J(v)} (quadratic phase)
-- Thm G: moment route closed — l1/l2 ≍ √K
-- Thm H: cyclic shape decomposition D_r(N) = pairings + shapes + M_r
+- R82 twisted-Jacobi baseline: `[NUMERICALLY-SUPPORTED]`, rerun PASS at N=199 and N=3571; maximum reproduced fourth-moment deviation `2.353672812205332e-13`.
+- H3 k=2 exact reduction: exact identity rerun PASS, including `|P|=(K-1)(K-2)` at the audited designs. The corresponding Lean source is present under `formal/Bgs/K2Reduction.lean`; a fresh Lean build is still pending because Lean is unavailable in the current audit runtime.
+- Python source syntax: 164/164 audited Python files compile after the current Git docstring fixes.
 
-### Theorems I–II: the one-parameter curve
-- Thm I: observable V_n depends on n only through Q(n) = n₁²−n₁n₂−n₂²
-- Thm II: matrix elements = twisted Jacobi sums J(χ,ψ;q)
+### Historical claims retained, full current re-audit pending
 
-### Theorems 91–96: the fluctuation chain
-- Thm 91.2: full-group moments = binom(2s,s)(N−2) + c_s (arcsine)
-- Thm 92.1: k=2 layer = exact combinatorics (|P| = (K−1)(K−2))
-- Thm 92.3: uniform even-k factorization A_{2s} = m²·Σ_{2s}
-- Thm 95.1: twist identity B(t) = (1/m²)Σ(A⋆A)(t)
-- Thm 95.2: flatness c(d) = N−2 + O(1)
-- Thm 96.2 / M1: Möbius-fiber bound |δ| ≤ 16/K² = o(1)  ← THEOREM
+The workspace contains derivations/artifacts for the symmetry foundation (Theorems A–E), the moment/shape line (F–H), the one-parameter curve (I–II), full-group arcsine formulas, GOE spacing/rigidity experiments, and later fluctuation layers. These remain important evidence, but their old `[PROVEN]` labels are not being mechanically recopied here until the corresponding dependencies and rerunnable checks have passed the post-migration audit.
 
-## §3 The theorems of rank 2 (Sp₄)
+## 3. M1 / Möbius-fiber claim
 
-- Thm 105.1: Sp₄ diagonal = phase-free dilation, exact covariance
-- Thm 105.2: coupled energy F(n) flat off-diagonal (~1.7%)
-- Thm 105.3: rank-2 diagonal identity sum_χ |⟨χ|U_D T(n)|χ⟩|² = 1
-- Thm 105.6: rank-2 coset flatness A_S = |coset|/G exact
-- Thm 105.7: coset-sector theorem (position-only, exact)
-- Thm 107.1: rank-2 Weil constant std ~ 0.88√N
+Historical label: `Thm 96.2 / M1: |δ| ≤ 16/K² = o(1)`.
 
-## §4 The G0 hypothesis (the general mechanism)
+**Current status: `[OPEN GAP]`.**
 
-For any kernel whose difference fibers are rational-function orbits
-of bounded degree D over an abelian group:
+The standalone proof `paper/final/mobius_fiber_theorem.tex` does not establish the advertised asymptotic as written:
 
-    E_c = E_flat/m⁴ · (1 + δ),  |δ| ≤ c_w²/K² = o(1)
+1. It calls `O(1/K²)` an `o(1)` term while simultaneously specifying the design scaling `K` fixed and `N→∞`.
+2. Its own K=17 table reports `|δ|=6.9%`, exceeding the displayed `16/K²=5.5%` envelope.
+3. The energy decomposition drops cross terms between distinct twist pairs without a proved orthogonality statement.
+4. Fourier/Parseval normalizations are inconsistent inside the displayed bound.
+5. The perfect-power exclusion for nontrivial character products requires a separate divisor/character argument.
 
-The cat map is the D = 4 rank-1 case.  The Sp₄ diagonal is the first
-rank-2 confirmation (flatness exact, no Weil correction needed for
-the diagonal case; the genuine mixed-sector test is the next step).
+The exact twist/key reductions and the independently rerun k=2 identity are separate statements and are not invalidated by this downgrade.
 
-## §5 How to verify
+## 4. Verification layer
 
-1. Lean certificates: `cd formal && lake build`
-   - K2Reduction.lean: |P| = (K−1)(K−2), parametrisation bijection
-   - K4Variety.lean: |V₄| = 423879, pair-key injectivity
-   - ScaleLaw.lean: c² = t²−4
-2. Python verification: `python code/verification/baseline_r82.py`
-3. GOE spacing: `python code/verification/goe_spacing_test.py`
-4. Number variance: `python code/verification/number_variance_goe_control.py`
+Fast structural gate:
 
-## §6 The remaining open steps
+```bash
+python code/maintenance/repo_health.py
+```
 
-1. M3: ESY deterministic assembly (literature-standard, 10–15 pp)
-2. M4d: non-diagonal Sp₄ Hecke operator (Bruhat assembly)
-3. k ≥ 6 layers: template generalises, computational work
-4. General BGS: NOT claimed — family-specific verification required
+Audited reruns currently passing:
+
+```bash
+python code/verification/baseline_r82.py
+python code/verification/h3_k2_exact_reduction.py
+```
+
+Known failed verification candidate:
+
+- `code/verification/word_trace_algebra.py`: reaches the rewrite engine but raises `RuntimeError` because `('V','V')` remains unresolved. Treat as an unfinished proof engine, not a certificate.
+
+Longer GOE/rank-2 reruns are pending after their path migrations are repaired.
+
+## 5. Formal layer
+
+Lean sources present:
+
+- `formal/Bgs/K2Reduction.lean`
+- `formal/Bgs/K4Variety.lean`
+- `formal/Bgs/OpLocal.lean`
+- `formal/Bgs/ScaleLaw.lean`
+- `formal/Bgs/TorusLevelSets.lean`
+
+The pre-Git ZIP also contained generated `formal/.lake/build/` products. They are intentionally excluded from Git and must not be restored as source. Presence of an old `.olean` in the ZIP is not a fresh proof check.
+
+## 6. Rank-2 / Sp(4)
+
+The repository retains exact-identity code, numerical coupled-energy measurements, and historical claims around the diagonal Sp(4) model. Their current status is `[HISTORICAL]` / re-audit pending except where a new audit explicitly promotes them. In particular, a calibrated `√N` numerical scale is not by itself an analytic Weil theorem.
+
+## 7. General BGS
+
+General BGS is **not proved** by this workspace. The current research programme is to isolate and prove family-specific arithmetic mechanisms, starting by repairing the rank-1 M1 gap, before promoting any general G0 mechanism.
+
+## 8. Canonical next step
+
+Re-derive M1 from the exact character/twist expansion with:
+
+- a single explicit Fourier convention;
+- all twist-pair cross terms retained;
+- a proved orthogonality or covariance statement if one exists;
+- the correct asymptotic regime stated before estimating;
+- numerical falsifiers at N=53, 199, 3571 and additional designs;
+- no promotion above `[NUMERICALLY-SUPPORTED]` until the analytic remainder actually tends to zero in the stated limit.
