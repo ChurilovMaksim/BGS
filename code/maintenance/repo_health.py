@@ -23,11 +23,14 @@ REQUIRED = [
     "code/verification/theorem_ii_new_primes.py",
     "results/verified/baseline_r82.json",
     "results/verified/h3_k2_exact_reduction.json",
+    "results/verified/theorem_ii_new_primes.json",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N199.npz",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
+    "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
     "formal/Bgs/K2Reduction.lean",
     "paper/README.md",
     "archive/README.md",
+    "archive/legacy-workspace/README.md",
 ]
 
 FORBIDDEN_ACTIVE = [
