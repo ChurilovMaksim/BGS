@@ -1,4 +1,9 @@
-"""Fast non-mutating health gate for the canonical WoW repository."""
+"""Fast non-mutating health gate for the canonical WoW research repository.
+
+The gate distinguishes two layers:
+  * canonical code/results: strict current-path and status requirements;
+  * restored research corpus: preservation + syntax/JSON integrity requirements.
+"""
 from __future__ import annotations
 
 import json
@@ -7,7 +12,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 
-REQUIRED = [
+CANONICAL_REQUIRED = [
     "README.md",
     "STATUS.md",
     "THEORY.md",
@@ -28,23 +33,59 @@ REQUIRED = [
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
     "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
     "formal/Bgs/K2Reduction.lean",
+]
+
+RESEARCH_CORPUS_REQUIRED = [
+    "code/core",
+    "code/diagnostics",
+    "code/kloosterman",
+    "code/large_m",
+    "code/shape_automaton",
+    "code/sp4",
+    "code/theorems",
+    "code/utils",
+    "code/legacy_verification",
+    "data/MANIFEST.md",
+    "data/diagnostics",
+    "data/legacy",
+    "data/moments",
+    "data/proof",
+    "data/rank2_sp4",
+    "data/spectral",
+    "docs/README.md",
+    "docs/literature",
+    "docs/review",
+    "docs/archive",
+    "docs/THEORY_FULL_PRE_REBUILD.md",
+    "docs/HISTORY_FULL_PRE_REBUILD.md",
     "paper/README.md",
-    "archive/README.md",
+    "paper/sections",
+    "paper/patches",
+    "paper/final",
     "archive/legacy-workspace/README.md",
 ]
 
-FORBIDDEN_ACTIVE = [
-    "code/verification/word_trace_algebra.py",
-    "results/verified/word_trace_proof.json",
+FORBIDDEN_GENERATED = [
     "formal/.lake/build",
     "formal/.lake/packages",
     "tools/tectonic.exe",
+    "data/tools",
+]
+
+FORBIDDEN_CANONICAL = [
+    "code/verification/word_trace_algebra.py",
+    "results/verified/word_trace_proof.json",
     "paper/M4D_PROOF.tex",
-    "paper/final/mobius_fiber_theorem.tex",
 ]
 
 STALE_TOKENS = ("src/", "artifacts/", '"src"', '"artifacts"')
-RESULT_JSON_DIRS = [ROOT / "results" / "verified", ROOT / "results" / "numerical"]
+CANONICAL_CODE_DIRS = [
+    ROOT / "code" / "math",
+    ROOT / "code" / "verification",
+    ROOT / "code" / "experiments",
+    ROOT / "code" / "maintenance",
+]
+JSON_ROOTS = [ROOT / "results", ROOT / "data"]
 
 
 def fail(message: str, errors: list[str]) -> None:
@@ -55,47 +96,62 @@ def fail(message: str, errors: list[str]) -> None:
 def main() -> int:
     errors: list[str] = []
 
-    for rel in REQUIRED:
+    required_before = len(errors)
+    for rel in CANONICAL_REQUIRED:
         if not (ROOT / rel).exists():
-            fail(f"missing required path: {rel}", errors)
-    if not errors:
-        print("required paths: PASS")
+            fail(f"missing canonical path: {rel}", errors)
+    for rel in RESEARCH_CORPUS_REQUIRED:
+        if not (ROOT / rel).exists():
+            fail(f"missing research-corpus path: {rel}", errors)
+    if len(errors) == required_before:
+        print("canonical + research corpus presence: PASS")
 
     hygiene_before = len(errors)
-    for rel in FORBIDDEN_ACTIVE:
+    for rel in FORBIDDEN_GENERATED + FORBIDDEN_CANONICAL:
         if (ROOT / rel).exists():
-            fail(f"forbidden active path exists: {rel}", errors)
+            fail(f"forbidden path exists: {rel}", errors)
     for cache in ROOT.joinpath("code").rglob("__pycache__"):
         fail(f"generated Python cache exists: {cache.relative_to(ROOT)}", errors)
     if len(errors) == hygiene_before:
-        print("active-tree hygiene: PASS")
+        print("generated/quarantine hygiene: PASS")
 
     syntax_before = len(errors)
-    for path in sorted((ROOT / "code").rglob("*.py")):
-        text = path.read_text(encoding="utf-8-sig")
-        rel = path.relative_to(ROOT)
-        if not str(rel).startswith("code/maintenance/"):
-            for token in STALE_TOKENS:
-                if token in text:
-                    fail(f"stale path token {token!r} in {rel}", errors)
+    python_files = sorted((ROOT / "code").rglob("*.py"))
+    for path in python_files:
         try:
+            text = path.read_text(encoding="utf-8-sig")
             compile(text, str(path), "exec")
-        except SyntaxError as exc:
-            fail(f"syntax error in {rel}: {exc}", errors)
+        except Exception as exc:
+            fail(f"Python source failure in {path.relative_to(ROOT)}: {exc}", errors)
     if len(errors) == syntax_before:
-        print("active Python syntax/path conventions: PASS")
+        print(f"Python syntax corpus: PASS ({len(python_files)} files)")
 
-    json_before = len(errors)
-    for directory in RESULT_JSON_DIRS:
+    path_before = len(errors)
+    for directory in CANONICAL_CODE_DIRS:
         if not directory.exists():
             continue
-        for path in sorted(directory.glob("*.json")):
+        for path in sorted(directory.rglob("*.py")):
+            text = path.read_text(encoding="utf-8-sig")
+            rel = path.relative_to(ROOT)
+            for token in STALE_TOKENS:
+                if token in text:
+                    fail(f"stale current-path token {token!r} in canonical {rel}", errors)
+    if len(errors) == path_before:
+        print("canonical path conventions: PASS")
+
+    json_before = len(errors)
+    json_count = 0
+    for directory in JSON_ROOTS:
+        if not directory.exists():
+            continue
+        for path in sorted(directory.rglob("*.json")):
+            json_count += 1
             try:
-                json.loads(path.read_text(encoding="utf-8"))
+                json.loads(path.read_text(encoding="utf-8-sig"))
             except Exception as exc:
-                fail(f"invalid result JSON {path.relative_to(ROOT)}: {exc}", errors)
+                fail(f"invalid JSON {path.relative_to(ROOT)}: {exc}", errors)
     if len(errors) == json_before:
-        print("current result JSON: PASS")
+        print(f"JSON corpus: PASS ({json_count} files)")
 
     if errors:
         print(f"REPOSITORY HEALTH: FAIL ({len(errors)} issue(s))")
