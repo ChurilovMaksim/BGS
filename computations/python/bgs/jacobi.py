@@ -1,9 +1,9 @@
 """Core character-coset and twisted-Jacobi matrix primitives.
 
-These routines are implementation primitives, not theorem statements. They
+These routines are implementation primitives, not theorem statements.  They
 validate the finite-field design metadata aggressively so that a wrong
-eigenvalue order or non-primitive logarithm generator cannot silently produce
-a plausible-looking matrix.
+eigenvalue order, non-primitive logarithm generator, or character outside the
+annihilator cannot silently produce a plausible-looking matrix.
 """
 from __future__ import annotations
 
@@ -81,12 +81,30 @@ def jacobi_matrix(
     character_indices: np.ndarray,
     q: int,
 ) -> np.ndarray:
-    """Return the twisted-Jacobi matrix in the active character convention."""
+    """Return a twisted-Jacobi matrix on a checked annihilator sub-sector.
+
+    ``character_indices`` may be the complete annihilator or a genuine
+    sub-sector such as the parity sector used by the spectral diagnostics.
+    Every supplied character is nevertheless required to belong to the exact
+    annihilator of ``eigenvalue``; duplicates and empty sectors are rejected.
+
+    The previous active contract required equality with the *entire*
+    annihilator.  That incorrectly rejected the legitimate odd/even sector
+    matrices used by the finite spectral diagnostics.
+    """
     expected = annihilator_indices(prime, subgroup_order, eigenvalue, dlog)
     supplied = np.asarray(character_indices, dtype=np.int64)
-    if not np.array_equal(supplied, expected):
+    if supplied.ndim != 1 or len(supplied) == 0:
+        raise ValueError("character_indices must be a nonempty one-dimensional array")
+    if len(np.unique(supplied)) != len(supplied):
+        raise ValueError("character_indices contain duplicates")
+
+    allowed = set(int(value) for value in expected.tolist())
+    outside = [int(value) for value in supplied.tolist() if int(value) not in allowed]
+    if outside:
         raise ValueError(
-            "character_indices do not equal the annihilator of the supplied eigenvalue"
+            "character_indices must be a subset of the annihilator; "
+            f"outside entries: {outside[:8]}"
         )
 
     x_values = np.arange(2, prime, dtype=np.int64)

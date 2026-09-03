@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "computations" / "python"))
 
 from bgs.finite_field import multiplicative_order, primitive_root  # noqa: E402
-from bgs.jacobi import annihilator_indices, dlog_table  # noqa: E402
+from bgs.jacobi import annihilator_indices, dlog_table, jacobi_matrix  # noqa: E402
 from bgs.key_geometry import (  # noqa: E402
     explicit_key_table,
     fast_difference_distribution,
@@ -61,6 +61,18 @@ def check_finite_field_contracts() -> None:
     a = element_of_order(p, 11)
     indices = annihilator_indices(p, 11, a, log)
     assert len(indices) == (p - 1) // 11
+
+    # A parity sector is a legitimate sub-sector of the annihilator.
+    odd_sector = indices[indices % 2 == 1]
+    sector_matrix = jacobi_matrix(p, 11, a, log, odd_sector, 1)
+    assert sector_matrix.shape == (len(odd_sector), len(odd_sector))
+
+    try:
+        jacobi_matrix(p, 11, a, log, np.array([1], dtype=np.int64), 1)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("character outside the annihilator was silently accepted")
 
     try:
         annihilator_indices(p, 9, a, log)

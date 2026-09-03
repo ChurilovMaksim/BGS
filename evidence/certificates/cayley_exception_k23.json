@@ -1,6 +1,10 @@
 {
-  "producer": "experiments/verification/verify_cayley_anchor_k23.py",
-  "scope": "Exact finite negative control; establishes only that (N,K)=(461,23) is exceptional.",
+  "producer": "computations/cpp/cayley_energy_verifier.cpp",
+  "validators": [
+    "computations/verification/current_regression.py",
+    "formalization/Bgs/CayleyEnergy.lean"
+  ],
+  "scope": "Exact finite negative control; establishes only that (p,K)=(461,23) has non-forced mixed Cayley collisions.",
   "N": 461,
   "K": 23,
   "subgroup_generator": 23,

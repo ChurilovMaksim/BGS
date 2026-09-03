@@ -3,4 +3,4 @@ import Bgs.TorusScaleLaw
 import Bgs.PairKeySecondMoment
 import Bgs.PairKeyFourthMoment
 import Bgs.HistoricalMobiusDegenerateFiber
-import Bgs.CayleyExceptionalK23
+import Bgs.CayleyEnergy

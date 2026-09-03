@@ -1,27 +1,43 @@
-# Lean formalization
+# Lean 4 formalization
 
-This directory is the active Lean 4 **finite-certificate** layer. It contains no speculative `sorry`-based theorem module.
+`formalization/` is the active **finite-certificate and falsifier layer** of the
+project. It is intentionally smaller than the informal mathematics: Lean code
+is added only when a precise finite statement or regression guard is worth
+kernel checking. The repository does **not** pad the language statistics with
+speculative `sorry` files.
 
-Build from the repository root:
+Build every active module:
 
 ```bash
 cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file under `formalization/Bgs/`; CI checks exact coverage before Lake runs. A green build therefore cannot hide an active module outside the import graph.
+`Bgs.lean` imports every `.lean` file under `formalization/Bgs/`. The repository
+audit and CI both check that the import graph and the directory agree exactly.
 
 ## Active modules
 
-- `PairKeySecondMoment.lean` — finite `p=53, K=13` constraint-count and pair-key parameterization certificate.
-- `PairKeyFourthMoment.lean` — finite diagonal multiplicity, off-diagonal key injectivity and `V4` count at `p=53, K=13`.
-- `TorusLevelSets.lean` — finite level-set cardinalities, orbit counts and freeness at `p=199, K=11`.
-- `TorusScaleLaw.lean` — finite branch-scale identities at the same `p=199` design.
-- `CayleyExceptionalK23.lean` — exact finite negative control at `(p,K)=(461,23)`.
-- `HistoricalMobiusDegenerateFiber.lean` — finite falsifier for the degenerate `d=0` fiber in the retracted historical Möbius route.
+| Module | What it certifies | Scope |
+|---|---|---|
+| `PairKeySecondMoment.lean` | constraint count and pair-key parametrization | finite `p=53, K=13` |
+| `PairKeyFourthMoment.lean` | diagonal multiplicity, off-diagonal injectivity, coupled count | finite `p=53, K=13` |
+| `CayleyEnergy.lean` | generic/exceptional mixed Cayley energies for `K=11,13` and the `K=23` non-uniformity witness | explicit finite designs |
+| `TorusLevelSets.lean` | level-set cardinalities, orbit counts, freeness | finite `p=199, K=11` |
+| `TorusScaleLaw.lean` | branch-scale identities | finite `p=199` |
+| `HistoricalMobiusDegenerateFiber.lean` | concrete `d=0` degeneracy in the retracted Möbius route | finite falsifier at `p=53,199` |
 
-The old R86 `OpLocal.lean` is not active. Its exact historical source is under `record/formal_drafts/OpLocal.lean` because it records an obsolete formulation of an open programme rather than a current theorem.
+The former `CayleyExceptionalK23.lean` was folded into the reusable
+`CayleyEnergy.lean` module so the same formal implementation now includes
+generic and exceptional controls rather than a single isolated anchor.
 
-## Evidence boundary
+## Trust boundary
 
-Most nontrivial finite searches use `native_decide`; the source prints axiom information where useful. Such a theorem certifies only its explicit finite parameters unless accompanied by a separate symbolic proof. In particular, the finite torus and scale modules do not establish their motivating analytic statements uniformly in `p`.
+Most large finite searches use `native_decide`. A theorem here certifies its
+stated finite proposition; it does not silently become a symbolic theorem for
+all primes. Open analytic obligations—especially the elliptic/sheaf estimate
+and the microscopic BGS bridge—remain in `mathematics/`, not as `sorry`-based
+pseudo-progress in the active Lean library.
+
+Historical formal drafts are recoverable from Git history before the
+2026-09-03 archive cleanup; they are not duplicated in the current tree.

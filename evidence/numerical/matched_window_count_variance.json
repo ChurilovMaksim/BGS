@@ -1,15 +1,23 @@
 {
-  "producer": "experiments/spectral/number_variance.py",
-  "interpretation": "Descriptive matched-GOE forward-window count variance; not the standard stationary number variance Sigma^2(L) and not a hypothesis test.",
-  "methodology_warning": "Historical windows start at eigenvalues and are edge-truncated. Cat-map and GOE samples use the same algorithm, so the comparison is still a useful matched diagnostic, but the old z/two-sigma pass labels are not inferentially justified.",
-  "design": {"N":19489,"K":29,"a":4523,"m_plus":336,"n_q":25,"nsim":60},
+  "producer": "computations/analysis/spectral_diagnostics.py",
+  "producer_command": "python computations/analysis/spectral_diagnostics.py window",
+  "interpretation": "Descriptive matched-GOE forward-window count variance; not stationary number variance Sigma^2(L) and not a hypothesis test.",
+  "methodology_warning": "Windows start at eigenvalues and are edge-truncated. Cat-map and GOE samples use the same algorithm, so the comparison is a matched diagnostic only.",
+  "design": {
+    "N": 19489,
+    "K": 29,
+    "a": 4523,
+    "m_plus": 336,
+    "n_q": 25,
+    "nsim": 60,
+    "seed": 20260901
+  },
   "rows": [
-    {"L":1,"catmap_mean":0.3384963151927438,"goe_mean":0.34086799650415717,"historical_standardized_difference":0.4564004271649427},
-    {"L":2,"catmap_mean":0.49673398526077095,"goe_mean":0.5084766806027967,"historical_standardized_difference":1.1960878022400563},
-    {"L":3,"catmap_mean":0.5848483560090703,"goe_mean":0.6098549402399851,"historical_standardized_difference":1.9362689129148456},
-    {"L":5,"catmap_mean":0.770359268707483,"goe_mean":0.7913604851662887,"historical_standardized_difference":1.248006557558903},
-    {"L":8,"catmap_mean":1.2257745181405897,"goe_mean":1.2435505539021166,"historical_standardized_difference":0.8720825240024637},
-    {"L":12,"catmap_mean":2.450457057823129,"goe_mean":2.4652826495181412,"historical_standardized_difference":0.5486910977805542}
-  ],
-  "last_fresh_rerun": "2026-09-03"
+    {"L": 1, "catmap_mean": 0.3384963151927438, "goe_mean": 0.34086799650415717, "historical_standardized_difference": 0.4564004271649427},
+    {"L": 2, "catmap_mean": 0.49673398526077095, "goe_mean": 0.5084766806027967, "historical_standardized_difference": 1.1960878022400563},
+    {"L": 3, "catmap_mean": 0.5848483560090703, "goe_mean": 0.6098549402399851, "historical_standardized_difference": 1.9362689129148456},
+    {"L": 5, "catmap_mean": 0.770359268707483, "goe_mean": 0.7913604851662887, "historical_standardized_difference": 1.248006557558903},
+    {"L": 8, "catmap_mean": 1.2257745181405897, "goe_mean": 1.2435505539021166, "historical_standardized_difference": 0.8720825240024637},
+    {"L": 12, "catmap_mean": 2.450457057823129, "goe_mean": 2.4652826495181412, "historical_standardized_difference": 0.5486910977805542}
+  ]
 }

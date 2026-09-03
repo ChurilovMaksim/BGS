@@ -1,25 +1,58 @@
 # Computations
 
-The active computational surface is intentionally small and has an explicit scientific contract.
+The maintained computational surface is deliberately compact and independently
+cross-checked. Historical language ports and exploratory work are not kept as
+parallel source trees.
 
-## Python library
+## C++20 — exact/exhaustive kernels
 
-`computations/python/bgs/` contains reusable finite-field, pair-key and twisted-Jacobi primitives. Inputs that encode mathematical assumptions (primality, primitive logarithm generators, subgroup/eigenvalue order) are validated rather than silently trusted.
+- `cpp/fourth_moment_pair_key_verifier.cpp` — independent implementation of
+  the corrected pair-key geometry, coupling totals and finite fourth-moment
+  factorization anchors.
+- `cpp/cayley_energy_verifier.cpp` — exact mixed Cayley-energy verifier with
+  generic and exceptional controls for `K=11,13` plus the explicit
+  `(p,K)=(461,23)` non-uniformity witness.
+- `cpp/cat_map_order.cpp` — exact order/split-prime utility and regression for
+  the old Julia order/comment mismatch.
 
-## Exact verification
+All `.cpp` files in this directory must appear in `CMakeLists.txt`;
+`repository_audit.py` enforces that rule.
 
-- `verification/current_regression.py` — fast exact anchors, API fail-fast checks, pair-key bijection and finite fourth-moment anchors.
-- `verification/mixed_cayley_energy.py` — exhaustive 720-matching rank audit, exact cyclotomic resultants for `K=11,13`, finite exceptional/non-exceptional design checks and the `(461,23)` non-uniformity witness.
+## Python — reference arithmetic, symbolic work and orchestration
 
-The latter is regenerated in CI and compared with `evidence/certificates/second_moment_reduction.json`.
+`python/bgs/` contains checked finite-field, discrete-log, pair-key and
+twisted-Jacobi primitives. Mathematical design metadata is validated rather
+than treated as an annotation. In particular, `jacobi_matrix` accepts a
+validated sub-sector of the annihilator (such as a parity sector) and rejects
+characters outside it.
 
-## C++20
+`verification/` contains the maintained gates:
 
-- `cpp/fourth_moment_pair_key_verifier.cpp` — independent finite implementation of the corrected pair-key/fourth-moment geometry.
-- `cpp/cat_map_order.cpp` — exact order/split-prime design utility; its regression records that the historical Julia comment claiming order 5 at `p=31` was false (the matrix order is 15).
+- `current_regression.py` — fast exact anchors and fail-fast API contracts;
+- `mixed_cayley_energy.py` — 720 matching systems, exact cyclotomic resultants
+  for `K=11,13`, finite reduction checks and the `K=23` witness;
+- `twisted_jacobi_regression.py` — current producer for preserved
+  twisted-Jacobi finite regressions;
+- `repository_audit.py` — whole-tree structure, language, duplicate, provenance,
+  Lean-import and CMake-coverage checks.
 
-Historical C++ falsifiers and shape-language experiments are kept under `record/engineering/historical_cpp/`, not built as part of the active mathematical surface.
+`analysis/spectral_diagnostics.py` keeps the useful finite spectral experiments
+with corrected semantics. It reports descriptive distances/statistics only; it
+does not expose the old IID-KS or stationary-number-variance overclaims.
 
-## Language boundary
+## Language policy
 
-No Julia source is allowed under the active `computations/`, `mathematics/`, `formalization/`, `manuscript/` or `evidence/` trees. The 31 historical Julia paths remain inventoried and browsable under `record/`; migration is performed only for useful, independently testable kernels.
+- **C++20:** expensive exact enumeration and independent finite verifiers.
+- **Python:** symbolic/exact orchestration, transparent reference
+  implementations and finite numerical analysis.
+- **Lean 4:** formal finite certificates and falsifiers.
+- **TeX:** the manuscript.
+- **Fortran:** not currently justified by profiling; introduce it only for a
+  genuine dense numerical hot path.
+- **Julia:** **zero tracked `.jl` sources in the current branch.** Every useful
+  historical Julia path is dispositioned in `../record/julia_migration.md`;
+  original bytes remain available in Git history and the supplied snapshot.
+
+The goal is not to maximize a language percentage. The goal is one maintained
+implementation per scientific role, with independent checks where they buy
+confidence.

@@ -1,24 +1,26 @@
 # Research record
 
-`record/` preserves information needed to audit how the current mathematics was obtained. It is not a second active source tree.
+`record/` is now a **compact provenance and status layer**, not an archive
+source tree.
 
-## Living record files
+Authoritative living files:
 
-- `claim_ledger.md` — authoritative status of current and historically important claims.
-- `retractions.md` — false/superseded statements, methodological corrections and failure mechanisms.
-- `reconstruction.md` — preservation policy and completeness boundary.
-- `julia_migration.md` — path-complete disposition of all 31 historical Julia files.
-- `inventory_snapshot.py` — deterministic inventory/hash tool for the supplied ZIP.
-- `engineering/historical_cpp/` — useful C++ ports/falsifiers that are intentionally outside the active build.
-- `formal_drafts/` — useful formal drafts that are intentionally outside the active Lean library.
+- `claim_ledger.md` — repository-wide status of current and historically
+  important claims;
+- `retractions.md` — false/superseded statements and their failure mechanisms;
+- `reconstruction.md` — source-snapshot inventory and Git preservation
+  boundary;
+- `julia_migration.md` — path-complete disposition of all 31 historical Julia
+  files;
+- `inventory_snapshot.py` — deterministic inventory/hash tool for the supplied
+  ZIP when that ZIP is available locally.
 
-## Non-living provenance
+The old `corpus/`, `checkpoints/`, `engineering/` and `formal_drafts/` trees
+were removed from the current branch on 2026-09-03. They duplicated material
+already preserved by Git and made obsolete Julia/Python/TeX/Lean code look
+current to both humans and GitHub Linguist.
 
-- `checkpoints/` — exact pre-consolidation ledgers/status/theory/editorial snapshots. They may contain obsolete paths and overclaims by design; do not edit them into apparent currency.
-- `corpus/` — broad historical source/data/manuscript/review material needed for archaeology, producer recovery, negative controls and future migration.
-
-## Trust boundary
-
-Only the living record files above describe the current project. Old labels such as `[PROVEN]`, `PASS`, `final`, theorem numbers, and obsolete directory names inside `checkpoints/` or `corpus/` are historical data, not current status.
-
-Files unrelated to the arithmetic cat-map programme are not retained in the current branch merely because they were bundled into an old workspace. Scientifically useful false files are retained only when their failure mechanism matters for regression or provenance.
+The last `main` commit before that cleanup is
+`d0e414ec26ff7e43ad59e80f77c9d8c679e87c4b`. Historical bytes remain
+recoverable from Git history; they carry no authority over the current claim
+ledger.

@@ -15,10 +15,23 @@ add_executable(
   computations/cpp/cat_map_order.cpp
 )
 
+add_executable(
+  cayley_energy_verifier
+  computations/cpp/cayley_energy_verifier.cpp
+)
+
 if (MSVC)
-  target_compile_options(fourth_moment_pair_key_verifier PRIVATE /W4)
-  target_compile_options(cat_map_order PRIVATE /W4)
+  foreach(target
+      fourth_moment_pair_key_verifier
+      cat_map_order
+      cayley_energy_verifier)
+    target_compile_options(${target} PRIVATE /W4)
+  endforeach()
 else()
-  target_compile_options(fourth_moment_pair_key_verifier PRIVATE -Wall -Wextra -Wpedantic)
-  target_compile_options(cat_map_order PRIVATE -Wall -Wextra -Wpedantic)
+  foreach(target
+      fourth_moment_pair_key_verifier
+      cat_map_order
+      cayley_energy_verifier)
+    target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
+  endforeach()
 endif()
