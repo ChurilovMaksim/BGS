@@ -52,6 +52,9 @@ jobs:
       - name: Prepare C++ build directory
         run: mkdir -p build/ci
 
+      - name: Compile C++ M1 cross-term diagnostic
+        run: g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror src/cpp/m1/cross_term_energy.cpp -o build/ci/cross_term_energy
+
       - name: Compile C++ cat-map order scanner
         run: g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror src/cpp/number_theory/catmap_order.cpp -o build/ci/catmap_order
 
@@ -65,6 +68,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          build/ci/cross_term_energy verify
           build/ci/catmap_order verify
           build/ci/relation_automaton verify
           build/ci/fourth_moment_factorization
