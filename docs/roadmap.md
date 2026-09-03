@@ -47,32 +47,29 @@ Already surviving:
 
 Still required:
 
-- general written proof of the weighted key parametrisation;
+- paper-quality general proof of the weighted key parametrisation and singular split;
 - exact Fourier/projector normalization in theorem form;
 - formalisation of those algebraic identities.
 
-### G2 — M1 regular analytic estimate
+### G2 — M1 regular single-twist analytic estimate
 
-Status: **ACTIVE BOTTLENECK**.
+Status: **CLOSED AS A LEMMA / NOT THE FULL M1 THEOREM**.
 
-Current object for `d!=0`:
+Cycle 002 converts the regular `d!=0` fiber sum to a complete polynomial character sum by the exact domain mask
 
-`A_{r,s}(d)=sum_y chi_r((y+d)/y) chi_s((y+d-1)/(y-1))`.
+`Q_d(Y)^m`, `Q_d(Y)=Y(Y-1)(Y+d)(Y+d-1)`.
 
-Required sequence:
+The root-multiplicity residues modulo the quotient-character order `m` are classified for generic `d` and the `d=±1` collisions. Every nontrivial twist is non-`m`-th-power. Applying the standard multiplicative-character Weil theorem gives
 
-1. classify the divisor of `(y+d)^r y^{-r}(y+d-1)^s(y-1)^{-s}`;
-2. treat `d=±1`, one-trivial-coordinate twists, and character orders dividing `m`;
-3. prove the correct non-power hypothesis;
-4. apply a finite-field character-sum theorem with all hypotheses visible;
-5. estimate the **assembled** regular energy including cross twists rather than summing isolated per-twist energies;
-6. prove a normalized remainder that vanishes in the actual arithmetic regime.
+`|A_{r,s}(d)| <= 3 sqrt(N)` for every nontrivial twist and `d!=0`,
 
-Finite-N `3 sqrt(N)` behavior is a falsifier/calibration only.
+with `<=2 sqrt(N)` at `d=±1`.
+
+The proof is `research/M1_WEIL_002.md`; Python/C++ classifiers are regression checks only. Improving this individual constant is no longer the primary task.
 
 ### G3 — centering / singular-term decision
 
-Status: **OPEN AND LOAD-BEARING**.
+Status: **ACTIVE AND LOAD-BEARING**.
 
 Cycle 001 gives the exact raw lower bound
 
@@ -85,7 +82,25 @@ Therefore the programme must settle one of two routes:
 
 This gate must be resolved before any raw `O(N^3 K^4)` theorem is promoted.
 
-### G4 — arithmetic scaling regime
+### G4 — assembled regular cross-twist covariance
+
+Status: **PRIMARY ANALYTIC BOTTLENECK**.
+
+The exact energy is
+
+`E=m^{-4} ||sum_tau F_tau||_2^2`, `F_tau=A_tau*A_tau`.
+
+Cycle 001 directly shows that the off-diagonal twist Gram terms are nonzero and can be material. Cycle 002 bounds each `A_tau(d)` separately, but that alone does not control the sum of cross covariances.
+
+Required outputs:
+
+1. derive a fixed-normalization Fourier formula for `<F_tau,F_sigma>`;
+2. identify exact selection rules, if any, before taking absolute values;
+3. otherwise reduce a two-twist covariance to a finite-field character sum whose conductor/degree stays controlled;
+4. sum over the true twist geometry without an `m^4` worst-case loss;
+5. obtain a normalized assembled remainder that tends to zero.
+
+### G5 — arithmetic scaling regime
 
 Status: **STRUCTURE IDENTIFIED / theorem integration open**.
 
@@ -93,11 +108,11 @@ For the fixed trace-3 cat map, if a split eigenvalue has order `K`, then `N | (L
 
 Every asymptotic theorem must state the actual `(N,K(N),m(N))` regime and show that every error term vanishes in that regime.
 
-### G5 — spectral consequence
+### G6 — spectral consequence
 
 Status: **OPEN**.
 
-After G2–G4, rebuild the trace/moment/local-statistics implication from a valid noncommutative starting point. The superseded R86/R87 scalar-binomial step cannot be reused.
+After G3–G5, rebuild the trace/moment/local-statistics implication from a valid noncommutative starting point. The superseded R86/R87 scalar-binomial step cannot be reused.
 
 Required outputs:
 
@@ -108,7 +123,7 @@ Required outputs:
 
 Existing spacing and number-variance results are calibration/falsifiers, not this gate.
 
-### G6 — robustness and universality stress tests
+### G7 — robustness and universality stress tests
 
 Status: **ONGOING NUMERICAL / NOT THEOREM**.
 
@@ -116,7 +131,7 @@ Use independent split-prime designs and large-N streaming implementations to try
 
 After a rank-1 theorem exists, test variation in arithmetic regime, sector dimension, observable choice, and prime families before making a broader universality statement.
 
-### G7 — higher rank / Sp4 programme
+### G8 — higher rank / Sp4 programme
 
 Status: **FINITE-N EXACT + EXPERIMENTAL**.
 
@@ -124,7 +139,7 @@ Keep the existing exact rank-2 identities as calibration. A higher-rank promotio
 
 This workstream is parallel and must not distract from the active rank-1 bottleneck unless it produces a demonstrably cleaner replacement route.
 
-### G8 — formalisation, manuscript, and adversarial review
+### G9 — formalisation, manuscript, and adversarial review
 
 Status: **CONTINUOUS, proof-complete promotion pending**.
 
@@ -141,11 +156,11 @@ A proof-complete paper is the final output of the programme, not an input assump
 
 ## Immediate execution queue
 
-1. **M1-002: divisor classification.** Prove the regular rational-function non-power classification by character order, including `d=±1` and partially trivial twists. Add Python exhaustive finite-field falsifiers and a Lean statement skeleton.
-2. **M1-003: centering audit.** Trace the exact singular term back through the spectral moment reduction and determine whether it cancels under the correct centered observable. This is currently as important as the Weil estimate.
-3. **M1-004: assembled covariance.** Derive the Fourier-side formula for cross-twist Gram terms and search for exact selection rules or a two-twist character-sum bound.
-4. **M1-005: large stress implementation.** Build sparse/streaming C++ plus Python orchestration for `N=3571,K=17,m=210`; reproduce the historical correction with every cross term retained.
-5. **Formal track.** Extend `formal/Bgs/M1CrossEnergy.lean` with the general finite identities when a Lean toolchain is available; until then keep formal obligations explicit and unverified.
+1. **M1-003: centering audit — ACTIVE.** Trace the exact singular term back through the spectral moment reduction and determine whether it cancels under the correct centered observable. If it does, write the centering identity before any asymptotic estimate; if it does not, retain the raw lower-bound obstruction explicitly.
+2. **M1-004: assembled covariance — ACTIVE NEXT.** Derive the Fourier-side formula for cross-twist Gram terms and search for exact selection rules or a two-twist character-sum bound.
+3. **M1-005: large stress implementation.** Build sparse/streaming C++ plus Python orchestration for `N=3571,K=17,m=210`; reproduce the historical correction with every cross term retained.
+4. **Formal track.** Extend `formal/Bgs/M1CrossEnergy.lean` with the general key/projector and cycle-002 statements when a Lean toolchain is available; until then keep formal obligations explicit and unverified.
+5. **Manuscript discipline.** Do not resurrect a proof-complete M1 paper until G3–G5 are actually closed.
 
 ## Promotion discipline
 
