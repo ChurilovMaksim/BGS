@@ -1,106 +1,72 @@
 # Arithmetic quantum cat maps and the BGS frontier
 
-This repository is a research archive and working laboratory for exact
-finite-field reductions, matrix-element moments and local spectral statistics
-of quantized hyperbolic toral automorphisms.
+This repository is a curated research project for exact finite-field reductions, matrix-element moments and the unresolved local spectral-statistics problem for arithmetic quantum cat maps.
 
-The repository is intentionally organized like a mathematical research project,
-not a software product. The trust boundary is explicit: **preserve broadly,
-trust narrowly**.
+The governing rule is **preserve useful evidence, trust only what is re-verified**. Historical files are not allowed to masquerade as current theorems, and the active tree is kept deliberately small.
 
 ## Current mathematical position
 
-The exact load-bearing object is the weighted pair-key fourth-moment
-distribution `B(t)`. The pair parametrization, `k=2` count, `k=4` total,
-character-orthogonality collapse and finite Fourier mean/variance duality are
-exact. The mixed term is reduced by a Cayley transform to an additive-energy
-problem. For fixed odd prime subgroup order `K`, non-forced finite-field
-collisions occur only at explicit cyclotomic reduction primes; the audited
-sets currently include
+The load-bearing exact object is the weighted pair-key fourth-moment distribution `B(t)`. The pair parametrization, diagonal multiplicity, `k=2` and `k=4` finite counts, character-orthogonality collapse and finite Fourier mean/variance identities are exact.
 
-`E_11={23,67,89}` and `E_13={53,79,131,157,313}`.
+The mixed term is transformed to the additive energy of `c(H\{1})`, `c(h)=(h+1)/(h-1)`. For fixed odd prime subgroup order `K`, non-forced collisions can occur only at finitely many cyclotomic reduction primes. The active exact producer recomputes all 720 matching systems and the resultants for
 
-The exact negative control `(N,K)=(461,23)` has Cayley energy `1190`, whereas
-the forced central-symmetry baseline is `902`.
+`E_11={23,67,89}` and `E_13={53,79,131,157,313}`
 
-The remaining off/off term has a non-isotrivial elliptic-family organization.
-A restricted `K=o(N^(1/4))` M1 estimate is still a **theorem draft**, not a
-finished theorem: the actual algebraic family and the exact sheaf-correlation
-hypotheses must be certified at publication standard. Even that would not
-prove microscopic BGS/GOE local eigenphase statistics; the local-law bridge is
-separate and open.
+on every CI run. The exact negative control `(p,K)=(461,23)` has collision energy `1190`, versus forced baseline `902`; this forbids a naive uniform-in-`K` extrapolation.
 
-## Scientific layout
+The remaining off/off fluctuation has a promising non-isotrivial elliptic organization, but the sheaf/isogeny/correlation step is still a **theorem draft**. Even a completed moment estimate would not prove microscopic BGS/GOE eigenphase statistics: the local-law bridge remains separate and open.
 
-- `manuscript/` — the single active article source and its committed PDF.
-- `mathematics/` — current derivations, proof notes and open questions.
-- `computations/` — supported Python/C++ implementations and current regression
-  checks.
-- `evidence/` — promoted finite certificates, numerical evidence and minimal
-  reference inputs.
-- `formalization/` — Lean 4 finite certificates and explicit open proof
-  obligations.
-- `literature/` — current bibliography and literature-boundary notes.
-- `record/` — reconstruction ledger, retractions, Julia migration map, ZIP
-  inventory tooling and the broader historical research corpus.
+See `mathematics/results.md` for the authoritative claim list.
 
-`record/corpus/` is deliberately non-authoritative. It contains useful
-experiments, negative results, review material, historical manuscripts and
-historical code/data restored for scientific provenance. A file being present
-there does not promote its claim.
+## Layout
+
+- `manuscript/` — one active article, both TeX source and committed PDF.
+- `mathematics/` — authoritative current derivations and open obligations.
+- `computations/` — supported Python/C++ code and exact regression gates.
+- `evidence/` — promoted finite certificates, descriptive numerical records and minimal reference inputs.
+- `formalization/` — active Lean 4 finite certificates only.
+- `literature/` — bibliography and literature-boundary notes.
+- `record/` — retractions, reconstruction/provenance, migration records and historical material that remains scientifically useful.
+
+`record/corpus/` is non-authoritative provenance. Presence there does not promote a claim.
 
 ## Reproducibility
 
 ```bash
 python -m pip install -r requirements.txt
 python computations/verification/current_regression.py
+python computations/verification/mixed_cayley_energy.py
 
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ./build/fourth_moment_pair_key_verifier
-./build/mobius_pair_key_diagnostic verify
 ./build/cat_map_order verify
-./build/relation_shape_automaton verify
 
 cd formalization
 lake build
 ```
 
-CI additionally checks that every active Lean module is imported by the default
-library target, so a green Lake build cannot be obtained merely by leaving an
-unfinished file outside the import graph.
+CI additionally checks that every active Lean module is in the root import graph, that promoted JSON provenance resolves, and that the fixed-`K` Cayley certificate is synchronized with a fresh exact recomputation.
 
-The manuscript is built by
+The manuscript is built with
 
 ```bash
 cd manuscript
 latexmk -pdf -interaction=nonstopmode -halt-on-error arithmetic_cat_map_moments.tex
 ```
 
-Both `arithmetic_cat_map_moments.tex` and `arithmetic_cat_map_moments.pdf` are
-versioned. A dedicated workflow rebuilds the PDF from the TeX source and
-synchronizes it into `main`.
+Both `arithmetic_cat_map_moments.tex` and `arithmetic_cat_map_moments.pdf` are versioned; a dedicated workflow rebuilds and synchronizes the PDF.
 
-## Evidence labels and historical paths
+## Evidence discipline
 
-Use `record/claim_ledger.md` before citing a result. In particular, finite Lean
-certificates are not automatically uniform theorems, numerical GOE fits are not
-a limiting law, and the historical Möbius-fiber/M4D proof is retracted from the
-active argument.
+Use `record/claim_ledger.md` before citing a result. In particular:
 
-Retained JSON evidence keeps generation-time `producer` strings. Their present
-locations and current independent checks are resolved in
-`evidence/provenance.md`; CI verifies these mappings.
+- finite Lean evaluation at one prime is not a uniform theorem;
+- finite numerical GOE resemblance is not a hypothesis test or limiting law;
+- the historical Möbius/M4D proof route is retracted;
+- historical full-group arcsine/Catalan all-orders claims are not promoted where they depend on unresolved word-trace reduction;
+- theorem drafts remain drafts until every external theorem hypothesis is checked for the actual family.
 
-## Language policy
+## Julia migration
 
-Python is used for symbolic/exact orchestration and readable analysis. C++20 is
-used for exhaustive finite-field and combinatorial kernels and independent
-verification. Fortran will be introduced only when profiling identifies a
-dense numerical kernel for which it materially improves the implementation.
-
-The supplied snapshot contains 31 Julia paths (23 byte-distinct sources).
-Every one is accounted for in `record/julia_migration.md`; the original Julia
-sources remain directly browsable in `record/corpus/`. Falsified Julia
-algorithms are not mechanically translated and useful ones are migrated only
-against preserved exact anchors.
+The supplied snapshot contains 31 Julia paths (23 byte-distinct sources). Every path is accounted for in `record/julia_migration.md`. Useful kernels are migrated only against preserved anchors; falsified Julia algorithms are kept as negative historical evidence rather than translated mechanically.

@@ -1,49 +1,29 @@
-# Open problems
+# Open mathematical obligations
 
-## Primary target: microscopic BGS statistics
+Only unresolved obligations belong here. Superseded proof attempts and historical false statements belong in `record/retractions.md`.
 
-Prove a GOE/GUE-type local eigenphase law for an explicit asymptotic family of quantized hyperbolic cat maps after all relevant exact arithmetic symmetries are removed.
+## A. Complete the off/off elliptic correlation theorem
 
-No current result in this repository proves this target.
+Close every obligation listed in `elliptic_pencil.md` for the actual family: projective model, discriminant, bad fibers, twists/isogenies, sheaf irreducibility and conductor, affine boundary, and the exact hypotheses of the chosen correlation theorem.
 
-## A. Close the restricted M1 theorem
+**Closure condition:** a theorem with explicit `(p,K)` hypotheses and a uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
 
-Discharge the two obligations in `elliptic_family.md`:
+## B. Determine the useful growth regime in K
 
-1. algebraic/projective/no-isogeny certificate for the elliptic family;
-2. exact uniform trace-sheaf correlation theorem with every hypothesis checked.
+The current fixed-`K` mixed-term result does not control the number or size of cyclotomic bad primes uniformly in `K`, and `(461,23)` is an explicit warning against naive extrapolation.
 
-This is the highest-value next proof task: it either converts the strongest current route into a theorem or identifies a precise obstruction.
+**Closure condition:** either a rigorous growing-`K` exceptional-prime bound/average theorem or a proof that the intended moment regime can avoid such a uniform statement.
 
-## B. Formalize the exact finite layer
+## C. Re-audit earlier global symmetry statements if needed
 
-Extend Lean from finite design certificates to generic statements where practical:
+The finite/operator identities in `earlier_foundations.md` are useful, but the full blockwise symmetry-class statement should be re-derived with all kernel charts and block conventions if it becomes load-bearing.
 
-- pair-key bijection off the diagonal;
-- diagonal multiplicity `N-2`;
-- exact `k=2` count `(K-1)(K-2)`;
-- exact `V4` inclusion-exclusion formula;
-- character-orthogonality collapse to `B(t)`;
-- finite Fourier mean/variance identity;
-- Cayley transform `d=2/(c(u)-c(v))`.
+## D. BGS local-law bridge
 
-Lean is a verification track, not a substitute for the l-adic analytic step.
+Even a completed moment estimate does not imply microscopic GOE spacing.
 
-## C. Find the actual bridge from M1 to local statistics
+**Closure condition:** identify and verify a theorem or new argument that transfers the available arithmetic information to a local eigenphase correlation law for this structured family, with the required scale and uniformity.
 
-Do not assume a generic Wigner-matrix theorem applies. The arithmetic matrix entries are strongly structured.
+## E. Julia migration
 
-A viable local-law program must first specify:
-
-- the correct matrix/resolvent object;
-- exact dependence and symmetry structure of entries;
-- a comparison, cumulant, Dyson-flow or trace-function mechanism that survives those dependencies;
-- the scale at which arithmetic correlations fall below the microscopic spectral error budget.
-
-Only then is it meaningful to import random-matrix local-law technology.
-
-## D. Higher rank
-
-Rank-2/Sp(4) computations are not part of the active theorem chain. Re-enter higher rank only after the rank-1 mechanism is rigorous enough to separate representation-theoretic structure from one-dimensional accidents.
-
-This prevents the historical mistake of promoting low-rank numerical flatness to a general `Sp(2g)` theorem.
+This is an implementation obligation, not a mathematical theorem. Migrate only useful surviving kernels according to `record/julia_migration.md`; keep falsified Julia algorithms as historical negative controls rather than translating them mechanically.

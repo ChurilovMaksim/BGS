@@ -1,89 +1,51 @@
-# Exact fourth-moment reduction
+# Exact fourth-moment pair-key reduction
 
-This note records only algebraic identities that are exact over the finite field.
+**Status: EXACT**, with independent finite Python/C++ regression checks.
 
-## Pair coordinates
+## Pair keys
 
-For \(x,y\in\mathbf F_N\setminus\{0,1\}\),
-\[
-u=x/y,\qquad v=(x-1)/(y-1),\qquad d=x-y.
-\]
-If \(x\ne y\), then \(u,v\ne1\), \(u\ne v\), and
-\[
-y=\frac{1-v}{u-v},\qquad
-x=\frac{u(1-v)}{u-v},\qquad
-d=\frac{(u-1)(v-1)}{v-u}.
-\]
-If \(x=y\), every one of the \(N-2\) admissible pairs has key \((1,1)\) and \(d=0\).
+For `x,y in F_p \ {0,1}`, define
 
-## Coupled key distribution
+`u=x/y`, `v=(x-1)/(y-1)`, `d=x-y`.
 
-A key record has multiplicity \(n_r\). Define
-\[
-B(t)=\sum_{r,s}n_rn_s
-1_H(u_ru_s)1_H(v_rv_s)1_{d_r+d_s=t}.
-\]
+If `x != y`, then `u,v notin {0,1}`, `u != v`, and inversion gives
 
-The ordered coupling classes are diagonal/diagonal, diagonal/off, off/diagonal, and off/off. Inclusion--exclusion on the off/off partner conditions yields
-\[
-V_{\rm off}
-=K^2(N-2)(N-3)-3K(K-1)(N-3)+2(K-1)(K-2),
-\]
-hence
-\[
-\sum_tB(t)
-=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K.
-\]
+`y=(1-v)/(v-u)`, `x=u(1-v)/(v-u)`, and `d=(u-1)(v-1)/(v-u)`.
 
-## Character orthogonality
+Hence the off-diagonal map is bijective. If `x=y`, every one of the `p-2` allowed diagonal pairs maps to `(u,v,d)=(1,1,0)`; the collapsed diagonal key therefore has multiplicity `p-2`.
 
-Let \(S=H^\perp\). For
-\[
-A_{\chi,\psi}(d)
-=\sum_{r:d_r=d}n_r\chi(u_r)\psi(v_r),
-\]
-orthogonality over \(S\) gives
-\[
-\sum_{\chi,\psi\in S}(A_{\chi,\psi}*A_{\chi,\psi})(t)=m^2B(t),
-\quad m=(N-1)/K.
-\]
+This weighted diagonal is essential. Treating it as multiplicity one changes every later moment count.
 
-Equivalently, after the unnormalized additive Fourier transform,
-\[
-\sum_{\chi,\psi\in S}\widehat A_{\chi,\psi}(\xi)^2
-=m^2\widehat B(\xi).
-\]
+## Coupling two keys
 
-For the twisted Jacobi sums used in the matrix-element model this becomes
-\[
-\sum_{\chi,\psi\in S}|J(\chi,\psi;q)|^4=m^2\Sigma_4(q),
-\quad
-\Sigma_4(q)=\widehat B(-q).
-\]
+Let `H <= F_p^*` have order `K`. Two collapsed keys couple when `u1*u2 in H` and `v1*v2 in H`. Let `B(t)` be the weighted number of ordered coupled pairs with `d1+d2=t`.
 
-## Fourier duality
+Splitting by whether each key is diagonal gives
 
-For \(V=\sum_tB(t)\) and \(Z=B(0)\),
-\[
-\mathbf E_{q\ne0}\Sigma_4(q)=\frac{NZ-V}{N-1}.
-\]
-Subtracting the nonzero-\(t\) mean and using finite Fourier orthogonality gives
-\[
-\operatorname{Var}_{q\ne0}\Sigma_4(q)
-=N\operatorname{Var}_{t\ne0}B(t).
-\]
+`B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}`.
 
-No asymptotic estimate enters this identity. The entire M1 fluctuation problem is therefore reduced to an \(L^2\) estimate for one finite-field difference distribution.
+The coefficient 2 is not optional: diagonal/off and off/diagonal are distinct ordered classes.
 
-## Finite regression anchors
+The exact class total is
 
-The exact values currently retained in `results/verified/fourth_moment_factorization.json` agree with an independent reconstruction performed during the repository rebuild:
+`|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K`.
 
-| \(N\) | \(K\) | \(V_4\) | \(B(0)\) | \(\|B\|_2^2\) |
-|---:|---:|---:|---:|---:|
-| 23 | 11 | 48621 | 2609 | 103156981 |
-| 53 | 13 | 423879 | 12063 | 3410502105 |
-| 199 | 11 | 4681821 | 96641 | 115589503389 |
-| 461 | 23 | 111147915 | 641799 | 26960554630421 |
+## Fourier identity
 
-The finite anchors support the implementation; they are not a proof of an asymptotic theorem.
+Character orthogonality gives, in the active normalization,
+
+`sum_{chi,psi} |J(chi,psi;q)|^4 = m^2 sum_t B(t)e_p(qt)`,
+
+with `m=(p-1)/K` for the audited annihilator designs. Finite Fourier orthogonality therefore determines the nonzero-frequency mean and centered second moment exactly from `B(0)`, the total mass and the `L^2` energy of `B`. No random-matrix hypothesis enters here.
+
+## Verification
+
+- current finite regression: `computations/verification/current_regression.py`;
+- independent C++ implementation: `computations/cpp/fourth_moment_pair_key_verifier.cpp`;
+- promoted finite record: `evidence/certificates/fourth_moment_factorization.json`.
+
+Larger-prime anchors use the validated fast pair-key geometry; direct original-pair and explicit-key loops are intentionally restricted to smaller `p`, where they provide an independent implementation check at reasonable cost.
+
+## What this does not prove
+
+The reduction identifies the fluctuation problem but does not bound the off/off energy `O(t)` uniformly. That remaining step is the elliptic-pencil draft in `elliptic_pencil.md`.

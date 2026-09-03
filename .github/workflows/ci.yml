@@ -34,22 +34,17 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-
           for path in Path('evidence').rglob('*.json'):
-              data = json.loads(path.read_text(encoding='utf-8'))
-              producer = data.get('producer')
+              data=json.loads(path.read_text(encoding='utf-8'))
+              producer=data.get('producer')
               if producer:
-                  direct = Path(producer)
-                  historical = Path('record/corpus') / producer
+                  direct=Path(producer); historical=Path('record/corpus')/producer
                   if not direct.exists() and not historical.exists():
                       raise SystemExit(f'{path}: unresolved producer {producer}')
-              refs = data.get('reference_inputs', {})
-              for old_path in refs:
-                  p = Path(old_path)
-                  candidates = [p, Path('record/corpus') / p]
-                  if p.parts and p.parts[0] == 'results':
-                      candidates.append(Path('evidence').joinpath(*p.parts[1:]))
-                  if not any(candidate.exists() for candidate in candidates):
+              for old_path in data.get('reference_inputs', {}):
+                  p=Path(old_path); candidates=[p,Path('record/corpus')/p]
+                  if p.parts and p.parts[0]=='results': candidates.append(Path('evidence').joinpath(*p.parts[1:]))
+                  if not any(x.exists() for x in candidates):
                       raise SystemExit(f'{path}: unresolved reference input {old_path}')
           print('evidence provenance: OK')
           PY
@@ -61,26 +56,19 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          fresh = json.loads(Path('/tmp/mixed_cayley_energy.json').read_text())
-          committed = json.loads(Path('evidence/certificates/second_moment_reduction.json').read_text())
-          if fresh != committed:
-              raise SystemExit('second_moment_reduction.json is not synchronized with its exact producer')
+          fresh=json.loads(Path('/tmp/mixed_cayley_energy.json').read_text())
+          committed=json.loads(Path('evidence/certificates/second_moment_reduction.json').read_text())
+          if fresh != committed: raise SystemExit('second_moment_reduction.json is not synchronized with its exact producer')
           print('fixed-K Cayley certificate: synchronized')
           PY
-      - name: Install C++ dependency
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libboost-dev
-      - name: Build supported C++ kernels
+      - name: Build active C++ verifiers
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
           cmake --build build -j2
       - name: Run C++ regression gates
         run: |
-          ./build/mobius_pair_key_diagnostic verify
           ./build/fourth_moment_pair_key_verifier
           ./build/cat_map_order verify
-          ./build/relation_shape_automaton verify
 
   formalization:
     runs-on: ubuntu-latest
@@ -93,18 +81,14 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          modules = {f'Bgs.{p.stem}' for p in Path('formalization/Bgs').glob('*.lean')}
-          imported = set()
+          modules={f'Bgs.{p.stem}' for p in Path('formalization/Bgs').glob('*.lean')}
+          imported=set()
           for line in Path('formalization/Bgs.lean').read_text(encoding='utf-8').splitlines():
-              line = line.strip()
-              if line.startswith('import '):
-                  imported.add(line.removeprefix('import ').strip())
-          missing = sorted(modules - imported)
-          if missing:
-              raise SystemExit('unimported active Lean modules: ' + ', '.join(missing))
-          extra = sorted(imported - modules)
-          if extra:
-              raise SystemExit('imports without active module files: ' + ', '.join(extra))
+              line=line.strip()
+              if line.startswith('import '): imported.add(line.removeprefix('import ').strip())
+          missing=sorted(modules-imported); extra=sorted(imported-modules)
+          if missing: raise SystemExit('unimported active Lean modules: '+', '.join(missing))
+          if extra: raise SystemExit('imports without active module files: '+', '.join(extra))
           print(f'Lean module coverage: {len(modules)}/{len(modules)}')
           PY
       - name: Install elan
@@ -129,7 +113,5 @@ jobs:
       - name: Compile manuscript independently
         run: |
           mkdir -p build/manuscript
-          latexmk -pdf -interaction=nonstopmode -halt-on-error \
-            -outdir=build/manuscript \
-            manuscript/arithmetic_cat_map_moments.tex
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build/manuscript manuscript/arithmetic_cat_map_moments.tex
           test -s build/manuscript/arithmetic_cat_map_moments.pdf

@@ -1,52 +1,61 @@
-# Off/off elliptic family: exact structure and proof obligations
+# Off/off elliptic pencil: current theorem draft
 
-The pure off/off contribution `O(t)` can be organized, after Cayley coordinates, by a bounded-degree family of plane cubics. On the generic smooth locus the fibers are elliptic curves.
+**Status: DRAFT.** This file records the strongest route that survived the pair-key repair. It deliberately separates algebra already checked from steps that still require publication-grade proof.
 
-Current symbolic work supports a nonconstant generic `j`-invariant, a degree-12 generic `j`-map, a bounded discriminant/boundary divisor, an involutive same-`j` symmetry, and reducible fibers at Cayley-difference parameters already visible in the mixed term.
+## 1. Where the pencil enters
 
-These computations are structural evidence, not yet an unconditional variance theorem.
+The corrected fourth-moment distribution is
 
-## Obligation A: algebraic certificate
+`B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}`.
 
-Before promotion, the project needs a publication-grade derivation or machine-readable certificate for:
+The mixed term is controlled for fixed `K` by `cayley_additive_energy.md`. The unresolved contribution is the centered energy of the off/off term `O(t)`.
 
-1. projective/Weierstrass models on every chart;
-2. discriminant and `j` map, including cancellations and characteristic exclusions;
-3. the complete bad-parameter set;
-4. the exact same-`j` correspondence;
-5. no-isogeny/non-isomorphism for distinct generic parameters, including quadratic twists and inseparable exceptional cases after reduction;
-6. reduction of every exceptional fiber to the already-controlled mixed term or to an explicitly bounded finite remainder.
+After the pair-key and subgroup substitutions, the relevant fibers can be organized as a one-parameter family of genus-one curves. Historical symbolic work produced an explicit quartic/Weierstrass model, a rational `j`-map, reducible exceptional fibers and same-`j` parameter symmetries. Those calculations are useful structure, but they are not by themselves a correlation theorem.
 
-A characteristic-zero modular-curve argument is only part of this obligation; it must be connected carefully to reduction modulo `N`.
+## 2. Structural information that survived audit
 
-## Obligation B: uniform trace-sheaf correlation
+The surviving calculations support the following scoped facts:
 
-For the rank-2 lisse sheaves attached to the family, the chosen quasi-orthogonality theorem must be applied with its actual hypotheses checked:
+1. the generic fiber has genus one after the recorded birational reduction;
+2. the computed `j`-invariant is nonconstant, so the candidate family is non-isotrivial on the generic locus;
+3. finitely many explicitly visible parameter values produce degenerate or reducible fibers;
+4. the computed `j`-map has nontrivial same-`j` symmetries that must be quotiented or treated as exceptional correlation strata;
+5. the affine model deletes boundary points, so projective trace estimates require an explicit boundary correction rather than a silent application of a projective theorem.
 
-1. purity and normalization;
-2. geometric irreducibility and monodromy;
-3. uniform conductor/complexity;
-4. geometric non-isomorphism for every off-diagonal parameter pair being summed;
-5. treatment of duals, constant twists and relevant rank-one twists;
-6. deleted/bad points and boundary contribution;
-7. a constant uniform in `N` and in the allowed parameter range.
+The detailed pre-consolidation calculation remains recoverable from Git history. No claim here treats a historical CAS transcript as a proof.
 
-Modern joint-family work on elliptic curves supports this architecture but also shows why these hypotheses cannot be replaced by the phrase “standard sheaf theory.”
+## 3. Intended correlation step
 
-## Conditional consequence
+The target is a square-root correlation estimate for trace functions of the family, schematically
 
-If A and B hold with uniform constants, the centered generic fiber traces have diagonal contribution `O(N)` and off-diagonal correlation `O(sqrt(N))`. Summing over `O(K^2)` parameters gives schematically
+`sum_t a_lambda(t) conjugate(a_mu(t)) = O(sqrt(p))`
 
-`Var_{t!=0} O(t) << K^2 N + K^4 sqrt(N) + K^4`.
+outside a controlled exceptional relation between `lambda` and `mu`.
 
-Together with the mixed Cayley bound, this yields
+A legitimate proof needs more than non-isotriviality. At minimum it must establish, for the actual sheaves used in the finite-field family:
 
-`Var_{t!=0} B(t)=O(K^2 N)`
+- a smooth projective model on an explicitly stated open base;
+- the complete discriminant/bad-fiber locus, including characteristic exceptions;
+- purity and lissity on that base;
+- geometric irreducibility of the relevant `R^1` sheaf;
+- a uniform conductor/ramification bound;
+- classification of geometric isomorphisms up to the twists actually present;
+- exclusion or explicit accounting of separable and inseparable isogenies;
+- treatment of the deleted affine boundary;
+- the exact hypotheses of the chosen correlation theorem.
 
-in the preliminary regime `K=o(N^(1/4))`, outside the relevant fixed-`K` exceptional reductions, and therefore
+Function-field Tate/isogeny results of Zarhin and quantitative sheaf technology of Sawin/Forey/Fresán/Kowalski are relevant tools, not automatic black boxes. The repository does not currently claim their hypotheses have all been verified for this pencil.
 
-`std_{q!=0} Sigma4(q)=O(NK)`.
+## 4. Target estimate, not yet theorem
 
-This is a **conditional restricted M1 statement**, not a theorem in the current repository.
+If the correlation step above is established with the required uniformity, the existing combinatorics lead to the restricted target
 
-Even after it is closed, a separate argument is required to pass from fourth-moment concentration to microscopic GOE/GUE eigenphase statistics.
+`O(K^2 p + K^4 sqrt(p) + K^4)`.
+
+The error is then lower order relative to the natural main scale in the regime `K=o(p^(1/4))`.
+
+Until the geometric/sheaf obligations are closed, both this estimate and the `p^(1/4)` regime remain conditional theorem-draft conclusions.
+
+## 5. What would still remain
+
+Even a completed off/off estimate would be a moment/fluctuation theorem. A microscopic BGS/GOE local eigenphase law requires a separate local-law or comparison mechanism for the structured arithmetic matrix family. The repository treats that bridge as a different open problem rather than smuggling it into the elliptic argument.

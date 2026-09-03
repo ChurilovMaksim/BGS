@@ -1,147 +1,96 @@
-# Current results and research boundary
+# Current results and exact scope
 
-This is the concise active mathematical summary. `record/claim_ledger.md`
-contains the broader disposition of older results.
+This file is the short authoritative index of mathematical claims. It is not a progress diary. A result appears here only if its status and hypotheses can be stated without relying on an obsolete proof route.
 
-## 1. Finite-field pair geometry
+## 1. Pair-key geometry — EXACT
 
-Let `N` be an odd prime, `H <= F_N^*` a subgroup of order `K`,
-`m=(N-1)/K`, and `S=H^perp`. For admissible ordered pairs
-`x,y notin {0,1}` put
+Let `p` be an odd prime. For `x,y` in `F_p \ {0,1}`, set
 
 `u=x/y`, `v=(x-1)/(y-1)`, `d=x-y`.
 
-Off the diagonal this is a bijection onto
-`u,v in F_N^*\{1}`, `u!=v`, with inverse
-
-`y=(1-v)/(u-v)`, `x=u(1-v)/(u-v)`
-
-and
+Off the diagonal `x != y`, the map `(x,y) -> (u,v)` is a bijection onto `u,v in F_p^* \ {1}` with `u != v`, and
 
 `d(u,v)=(u-1)(v-1)/(v-u)`.
 
-The diagonal collapses to `(u,v,d)=(1,1,0)` with multiplicity `N-2`.
+The diagonal `x=y` collapses to the single key `(1,1)`, difference zero, with multiplicity `p-2`. This is the load-bearing replacement for the retracted historical Möbius-fiber parametrization.
 
-## 2. Exact second and fourth moment reductions
+## 2. Fourth-moment pair-key distribution — EXACT + FINITE-CERTIFICATE
 
-The constrained `k=2` off-diagonal count is `(K-1)(K-2)`.
+For a subgroup `H <= F_p^*` of order `K`, the corrected fourth-moment distribution `B(t)` has the exact decomposition
 
-For a collapsed key record `r=(u_r,v_r,d_r,n_r)`, define
+`B(t)=O(t)+2(p-2) C_H(t)+(p-2)^2 1_{t=0}`.
 
-`B(t)=sum_{r,s} n_r n_s 1_H(u_r u_s)1_H(v_r v_s)1_{d_r+d_s=t}`.
+The two ordered mixed classes are separate; omitting either is the historical Run-93.2 factor-of-two error. The total size is
 
-Then exactly
+`|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K`.
 
-`sum_t B(t)=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`.
+Independent Python/C++ finite checks cover representative designs and direct small-`p` reconstruction from the original `(x,y)` pairs.
 
-For `chi,psi in S` define
+## 3. Fourier mean/variance identity — EXACT
 
-`A_{chi,psi}(d)=sum_{r:d_r=d} n_r chi(u_r)psi(v_r)`.
+Character orthogonality converts the fourth-moment character sum to the finite Fourier transform of `B`. Consequently the mean and variance over nonzero additive frequencies are determined exactly by `B(0)`, the total mass `sum_t B(t)`, and the centered `L^2` energy of `B(t)` on `t != 0`. No probabilistic independence assumption is used.
 
-Character orthogonality gives
+See `fourth_moment_reduction.md`.
 
-`sum_{chi,psi}(A_{chi,psi}*A_{chi,psi})(t)=m^2 B(t)`,
+## 4. Mixed term via Cayley transform — EXACT
 
-and for the twisted Jacobi sums used in the matrix-element model,
-
-`sum_{chi,psi in S}|J(chi,psi;q)|^4=m^2 Sigma4(q)`,
-
-`Sigma4(q)=sum_t B(t)e_N(qt)`.
-
-Writing `V=sum_t B(t)` and `Z=B(0)`,
-
-`E_{q!=0} Sigma4(q)=(NZ-V)/(N-1)`,
-
-`Var_{q!=0} Sigma4(q)=N Var_{t!=0}B(t)`.
-
-These are exact finite identities.
-
-## 3. Mixed Cayley layer
-
-Exactly,
-
-`B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_{t=0}`.
-
-For `c(h)=(h+1)/(h-1)`,
+For `c(h)=(h+1)/(h-1)` on `H \ {1}`,
 
 `d(u,v)=2/(c(u)-c(v))`.
 
-Thus `C_H` is a relabelled nonzero difference-representation function of
-`A=c(H\{1})`. Since `c(h^-1)=-c(h)`, the forced energy for odd `K` is
-`(K-1)(2K-5)`.
+Thus
 
-For odd prime `K`, a computer-assisted exact classification of all `6!`
-matching systems leaves only identity and inversion-swap collisions in
-characteristic zero. Reduction modulo `N` can create extra collisions. For
-fixed `K` they are detected by explicit cyclotomic resultants.
+`sum_t C_H(t)^2 = E_+(c(H\{1}))-(K-1)^2`,
 
-Audited exact sets:
+with the zero-difference diagonal removed. Since `c(h^-1)=-c(h)`, a central-symmetry collision baseline is forced.
 
-`E_11={23,67,89}`,
+## 5. Fixed-K collision classification — EXACT FINITE ALGEBRA
 
-`E_13={53,79,131,157,313}`.
+For **odd prime `K`**, the 720 multiset matchings arising from a Cayley difference collision have characteristic-zero ranks
 
-For `N notin E_K`,
+- 30 of rank 2;
+- 240 of rank 3;
+- 450 of rank 4.
 
-`sum_t C_H(t)^2=(K-1)(2K-5)`.
+The only prime at which these integer matrices can suffer an additional rank drop is 2. The rank-2/3 kernels are exhausted by invalid zero/diagonal configurations together with the identity and inversion-swap symmetries.
 
-The fresh negative control
+For fixed `K`, every non-forced collision therefore comes from reduction of a nonzero cyclotomic algebraic integer. The active exact producer recomputes the corresponding resultants in CI. In particular,
 
-`N=461, K=23: sum_t C_H(t)^2=1190`
+`E_11={23,67,89}` and `E_13={53,79,131,157,313}`.
 
-shows why the fixed-`K` exceptional qualification is load-bearing: the forced
-baseline there is only `902`.
+These are **fixed-`K`** exceptional-prime sets. They are not evidence for a uniform-in-`K` theorem.
 
-## 4. Off/off elliptic family
+Producer: `computations/verification/mixed_cayley_energy.py`.
 
-In Cayley coordinates the pure off/off term is organized by a bounded-degree
-family of plane cubics. Current algebra identifies a nonconstant generic
-`j`-map, special parameter strata, an exact same-`j` involution and reducible
-fibers at the Cayley-difference parameters already seen by `C_H`.
+## 6. Explicit non-uniformity witness — FINITE-CERTIFICATE
 
-The earlier broad reconstruction also contains a degree-12 `j`-map/cusp-width
-no-isogeny route and affine-boundary bookkeeping. These are retained in the
-research notes and record, but they are **not promoted here beyond theorem
-draft** until the projective model, exceptional parameters, twists,
-inseparable cases and the exact trace-sheaf theorem hypotheses have been
-audited line by line.
+At `(p,K)=(461,23)` the exact mixed Cayley collision energy is `1190`, whereas the forced central-symmetry baseline is `902`. The excess `288` is an explicit warning that the fixed-`K` statement cannot be silently upgraded to a uniform theorem.
 
-Conditionally on those obligations the intended bound is
+## 7. Off/off elliptic organization — DRAFT
 
-`Var O(t) << K^2 N + K^4 sqrt(N) + K^4`,
+After the exact pair-key repair, the remaining off/off fluctuation can be organized by a non-isotrivial genus-one/elliptic pencil. Historical calculations identify a rational `j`-map, bad fibers, same-`j` symmetries and a prospective sheaf-correlation route.
 
-leading in the first regime `K=o(N^(1/4))` to
+The restricted estimate `O(K^2 p + K^4 sqrt(p) + K^4)` and regime `K=o(p^(1/4))` remain **theorem-draft targets**, not promoted theorems. Missing work includes a publication-grade projective model, complete exceptional-parameter analysis, twist/isogeny classification, and verification of the exact sheaf-theorem hypotheses.
 
-`Var_{t!=0}B(t)=O(K^2 N)` and `std Sigma4=O(NK)`.
+See `elliptic_pencil.md`.
 
-## 5. Earlier foundations that remain scientifically relevant
+## 8. Earlier finite foundations — FINITE-CERTIFICATE / SCOPED HISTORICAL
 
-The historical workspace contains a substantial rank-1 foundation preceding
-the present M1 repair: symmetry-class arguments, quadratic trace identities,
-shape/moment decompositions, torus level sets and twisted-Jacobi formulas.
-They were incorrectly almost erased from the visible tree during the compact
-rebuild.
+The reconstruction retained useful earlier results rather than deleting them:
 
-The present repository preserves them but does not silently reuse every old
-`PROVEN` label. The pieces currently re-certified most directly are:
+- at `p=199`, Lean verifies finite level-set counts for `Q(a,b)=a^2-ab-b^2`, order `K=11`, orbit counts and freeness of the cyclic action;
+- at the same design, Lean verifies the recorded branch-scale identities `c^2=5 mod 199`;
+- finite twisted-Jacobi implementation identities and moment curves are preserved with explicit parameter ranges;
+- the antiunitary calculation explains why an eigenvalue sector is preserved under the relevant anti-linear symmetry, but the old global GOE-class conclusion is not promoted beyond the audited chart without a fresh proof.
 
-- finite torus level-set/orbit statements at `N=199` (Lean);
-- finite scale-law statement at `N=199` (Lean);
-- finite `k=2` and `k=4` counting certificates (Lean);
-- selected twisted-Jacobi scalar and moment regressions;
-- the current pair-key/Cayley exact layer.
+See `earlier_foundations.md`.
 
-The remaining symmetry/Catalan/arcsine statements are retained as
-historical-unreviewed until a dedicated fresh proof audit is completed.
+## 9. Numerical GOE comparison — NUMERICAL ONLY
 
-## 6. Numerical spectral evidence
+The repository retains finite spacing and matched-GOE window-count diagnostics. Their descriptive distances are useful, but the old `KS pass` and `two-sigma pass` language has been removed: the unfolded gaps/window counts do not satisfy the IID assumptions of those textbook tests.
 
-Parity-reduced spacing and number-variance data at the retained designs are
-GOE-like. They are finite numerical evidence only. A historical `N=95419`
-test using a mismatched statistic is quarantined.
+No numerical file is evidence for a limiting local law.
 
-## 7. Open endpoint
+## 10. BGS local statistics — OPEN
 
-General microscopic BGS/local eigenphase statistics are unproved. A completed
-restricted M1 theorem would still require a separate mechanism controlling the
-structured arithmetic dependence at the local resolvent/eigenvalue scale.
+Nothing above proves microscopic BGS/GOE eigenphase statistics for the arithmetic cat-map family. A local-law/comparison mechanism for the structured arithmetic matrix family remains a separate open bridge.

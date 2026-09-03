@@ -1,81 +1,50 @@
 # Claim ledger
 
-Status vocabulary:
+This is the repository-wide status authority. Historical files can contain stronger language; this file wins.
 
-- **EXACT** — exact statement with a current derivation and/or independent current regression.
-- **FINITE-CERTIFICATE** — finite design statement checked by Lean or an exact program; not a uniform theorem.
-- **NUMERICAL** — finite numerical evidence only.
-- **DRAFT** — mathematically assembled route with load-bearing obligations still open.
-- **HISTORICAL-UNREVIEWED** — scientifically relevant old claim retained, but not re-certified in the present rebuild.
-- **RETRACTED** — not available for use as a theorem input.
+## Status vocabulary
 
-## Current load-bearing results
+- **EXACT** — current algebraic identity/derivation.
+- **FINITE-CERTIFICATE** — exact machine/exhaustive statement at explicit finite parameters.
+- **NUMERICAL** — descriptive floating-point evidence only.
+- **DRAFT** — promising proof route with named unresolved obligations.
+- **SCOPED-HISTORICAL** — useful earlier result whose current safe scope is narrower than its old label.
+- **RETRACTED** — false or superseded; retained only to prevent regression.
 
-| Claim | Status | Current evidence |
+## Active exact chain
+
+| Claim | Status | Current support |
 |---|---|---|
-| Off-diagonal pair-key map is bijective with `d(u,v)=(u-1)(v-1)/(v-u)`; diagonal has weight `N-2` | **EXACT** | `mathematics/fourth_moment_reduction.md`, Python/C++ regressions |
-| `k=2` constrained off-diagonal mass is `(K-1)(K-2)` | **EXACT** | derivation + finite Lean `PairKeySecondMoment.lean` |
-| Exact `k=4` total `sum_t B(t)=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K` | **EXACT** | derivation + Python/C++ finite anchors |
-| Character collapse `sum |J|^4=m^2 Sigma4` | **EXACT finite-field identity** | current derivation; finite scalar/twist regressions |
-| Fourier duality `Var_{q!=0} Sigma4 = N Var_{t!=0} B(t)` | **EXACT** | finite Fourier orthogonality |
-| Decomposition `B=O+2(N-2)C_H+(N-2)^2 1_0` | **EXACT** | current pair-key derivation |
-| Cayley identity and additive-energy interpretation of `C_H` | **EXACT** | current derivation/regression |
-| Odd-prime-`K` characteristic-zero Cayley collision classification | **COMPUTER-ASSISTED EXACT** | 720 matching systems; exact verifier |
-| `E_11={23,67,89}`, `E_13={53,79,131,157,313}` | **FINITE-CERTIFICATE** | exact resultant audit |
-| `(N,K)=(461,23)` has Cayley energy `1190`, not forced baseline `902` | **FINITE-CERTIFICATE** | Python regression + Lean |
-| Pair-key anchors `(23,11),(53,13),(199,11),(461,23)` | **FINITE-CERTIFICATE** | independent Python/C++ implementations |
-| Twisted-Jacobi scalar implementation checks at selected designs | **FINITE-CERTIFICATE** | promoted certificate |
-| Twisted-Jacobi moment reproduction against preserved R82 q-curves | **FINITE-CERTIFICATE** | promoted certificate + hashed inputs |
-| Generic off/off organization by an elliptic pencil | **DRAFT / structural** | symbolic algebra and current notes |
-| Restricted M1 `K=o(N^(1/4))` variance estimate | **DRAFT** | publication-grade algebraic-family certificate and source-exact sheaf-correlation hypotheses still required |
-| Microscopic BGS/GOE local eigenphase law | **OPEN** | no valid bridge from current moment concentration to a local law |
+| pair-key bijection off diagonal and diagonal multiplicity `p-2` | EXACT | `mathematics/fourth_moment_reduction.md`; Python/C++ cross-checks |
+| exact `k=2` constraint count / parametrization at audited design | FINITE-CERTIFICATE | `formalization/Bgs/PairKeySecondMoment.lean` |
+| exact `k=4` pair-key multiplicities and `V4` count at audited design | FINITE-CERTIFICATE | `formalization/Bgs/PairKeyFourthMoment.lean` |
+| closed formula `|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | EXACT + FINITE REGRESSION | current Python/C++ verifier |
+| character collapse / Fourier mean-variance reduction | EXACT | `mathematics/fourth_moment_reduction.md` plus finite checks |
+| Cayley identity `d(u,v)=2/(c(u)-c(v))` and additive-energy reduction | EXACT | `mathematics/cayley_additive_energy.md`; current exact producer |
+| 720 matching rank classification; only characteristic-2 rank drop | FINITE-CERTIFICATE over integer systems | `computations/verification/mixed_cayley_energy.py` |
+| `E_11={23,67,89}` | FINITE-CERTIFICATE | exact resultants recomputed in CI |
+| `E_13={53,79,131,157,313}` | FINITE-CERTIFICATE | exact resultants recomputed in CI |
+| `(p,K)=(461,23)` mixed energy `1190` vs baseline `902` | FINITE-CERTIFICATE / negative control | current Python gate + Lean finite record |
+| off/off elliptic/sheaf estimate `O(K^2 p+K^4 sqrt(p)+K^4)` | DRAFT | `mathematics/elliptic_pencil.md`; hypotheses not fully closed |
+| microscopic BGS/GOE local eigenphase law | OPEN | no current proof |
 
-## Active Lean finite certificates
+## Earlier useful foundations
 
-| Lean source | Exact scope |
-|---|---|
-| `TorusLevelSets.lean` | finite level-set/orbit facts at `N=199`; not the general analytic theorem |
-| `TorusScaleLaw.lean` | finite scale-law certificate at the audited `N=199` design |
-| `PairKeySecondMoment.lean` | finite `k=2` counting/bijection certificate at its design |
-| `PairKeyFourthMoment.lean` | finite `k=4` variety/key multiplicity certificate at its design |
-| `CayleyExceptionalK23.lean` | finite exceptional Cayley energy at `(461,23)` |
-| `HistoricalMobiusDegenerateFiber.lean` | finite diagnostic certificate for the historical degenerate Möbius fiber; not a proof of current M1 |
+| Claim | Status | Scope |
+|---|---|---|
+| torus level-set cardinalities/orbit counts/freeness | FINITE-CERTIFICATE | `p=199`, Lean `native_decide` |
+| recorded branch scale `c^2=5 mod 199` | FINITE-CERTIFICATE | `p=199`, kernel `decide` |
+| twisted-Jacobi scalar formula / q-curve moments | FINITE REGRESSION | explicit recorded designs only |
+| antiunitary eigenspace preservation logic | SCOPED-HISTORICAL | audited kernel chart; no blanket global GOE-class promotion |
+| relation/shape counts | SCOPED-HISTORICAL finite evidence | useful regression/discovery only |
+| all-orders Catalan / full-group arcsine package | NOT PROMOTED | historical word-trace reduction has unresolved rewrite case |
 
-The old `OpLocal.lean` specification is preserved only at
-`record/formal_drafts/OpLocal.lean`. It is a historical open-problem draft with
-`sorry` obligations and outdated R76/R86 framing; it is not an active theorem
-module.
+## Numerical records
 
-## Earlier rank-1 foundations recovered from the research record
+`evidence/numerical/goe_spacing.json` is a descriptive empirical CDF-distance record. Its historical IID-KS pass/fail interpretation is withdrawn.
 
-The old workspace contains theorem labels A--II (symmetry class, trace
-identities, moment/shape decompositions, torus level sets and twisted Jacobi
-formulas). They must not be silently erased, but the present rebuild does not
-re-certify every old analytic proof. Current disposition:
+`evidence/numerical/matched_window_count_variance.json` is a descriptive matched-GOE forward-window statistic. It is not standard stationary number variance and carries no inferential pass/fail label.
 
-- finite torus-level-set and scale-law parts: **FINITE-CERTIFICATE** via Lean;
-- twisted-Jacobi formula at selected designs: **FINITE-CERTIFICATE** via current
-  independent implementation checks;
-- historical symmetry claims (`Theta^2=+1`, parity/Hecke antiunitary structure):
-  **HISTORICAL-UNREVIEWED** in this pass, retained in the broad corpus;
-- historical Catalan/shape-moment statements through finite orders:
-  **HISTORICAL-UNREVIEWED / NUMERICAL** unless a specific current certificate is cited;
-- old full-group arcsine formulas: **HISTORICAL-UNREVIEWED** pending a fresh
-  line-by-line audit of the exact statement and hypotheses.
+## Retractions
 
-Preservation is not promotion.
-
-## Rank-2 / Sp4 line
-
-The broad corpus contains exact-looking diagonal/coset identities and numerical
-flatness experiments. They are retained because they may be useful, but they
-are **HISTORICAL-UNREVIEWED** in the present M1-focused re-audit. In particular,
-old extrapolation from diagonal/coset calculations to a general `Sp(2g)` theorem
-is not active.
-
-## Spectral evidence
-
-Parity-reduced spacing and number-variance computations at stored designs are
-**NUMERICAL** evidence. A historical `N=95419` test that compared a gap-ratio
-statistic to the ordinary spacing CDF is quarantined and must not be cited as a
-valid KS spacing test.
+The complete list and mechanisms are in `retractions.md`. In particular: historical Möbius/M4D, Run-93.2 one-sided mixed counting, ESY-to-BGS shortcut, noncommutative trace shortcut, wrong N=95419 comparison, unresolved word-trace certificate, Hecke-centering Julia, `cdense_transfer`, `sol6`, and unsupported Sp(2g) extrapolation are not active results.
