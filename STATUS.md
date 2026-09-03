@@ -7,14 +7,14 @@ Updated: 2026-09-03.
 - Twisted-Jacobi fourth-moment baseline reproduces the preserved R82 data at `N=199` and `N=3571` to approximately `6.0e-14` and `2.4e-13` maximum absolute deviation.
 - The exact `k=2` character-orthogonality reduction is reproduced at `N=53` and `N=199`; the off-diagonal constraint counts are `132=(13-1)(13-2)` and `90=(11-1)(11-2)`.
 - The vectorized twisted-Jacobi matrix formula agrees with independent direct scalar character sums at `N=461` and `N=19489` within the recorded numerical tolerance.
-- The `k=4` factorization has now been independently rechecked by clean Python and C++ implementations at `N=23` and `N=53` (two q values at `N=53`); the finite constraint-variety counts are `48621` and `423879`.
+- The `k=4` factorization has now been independently rechecked by clean Python and C++ implementations at `N=23` and `N=53` (two q values at `N=53`).  The same verifiers now reconstruct the complete difference distribution `B(t)` in two independent ways.  At `N=53`, `|V4|=423879`, `B(0)=12063`, and `sum_t B(t)^2=3410502105`; at `N=23`, the corresponding values are `48621`, `2609`, and `103156981`.
 - More generally, the even-moment factorization follows algebraically from expanding `J^s conjugate(J)^s` and applying character orthogonality twice.  This reduction is exact; it does **not** supply the asymptotic estimate on the resulting high-dimensional variety.
 
 ## Numerical evidence only
 
 - GOE nearest-neighbour spacing tests pass the stored finite-sample criteria at the audited designs.  This is evidence, not a limiting theorem.
 - Matched-GOE number variance agrees within the stored two-standard-error criterion for the tested windows.
-- The old archive contains a potentially important three-design pattern `rel_k ~ c(k) K/N` for `k=2,4,6,8` and a resolvent/Stieltjes convergence experiment.  These are now in the archaeology queue for clean reruns; they are not promoted as theorems.
+- The old archive contains a potentially important three-design pattern `rel_k ~ c(k) K/N` for `k=2,4,6,8` and a resolvent/Stieltjes convergence experiment.  These are in the archaeology queue only: one archived large-design key-table producer has now been found to miss the reverse ordered diagonal/off-diagonal contribution, so provenance-specific recomputation is required before any promotion.
 
 ## Main open problem: M1 fluctuation energy
 
