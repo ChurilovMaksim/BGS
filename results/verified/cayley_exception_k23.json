@@ -1,0 +1,15 @@
+{
+  "producer": "experiments/verification/verify_cayley_anchor_k23.py",
+  "scope": "Exact finite negative control; establishes only that (N,K)=(461,23) is exceptional.",
+  "N": 461,
+  "K": 23,
+  "subgroup_generator": 23,
+  "pair_count": 462,
+  "expected_pair_count": 462,
+  "collision_energy": 1190,
+  "forced_baseline": 902,
+  "excess_collision_energy": 288,
+  "max_nonzero_difference_multiplicity": 6,
+  "is_exceptional": true,
+  "verdict": "PASS"
+}

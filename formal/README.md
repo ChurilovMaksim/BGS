@@ -1,12 +1,9 @@
-# Lean certificates
+# Lean formalization
 
-The active Lean layer contains finite/combinatorial certificates that are useful to the current argument.  Open/specification-only files from the historical workspace are not imported here; they remain in the archive.
+The Lean tree is part of the scientific verification layer, not a decorative appendix.
 
-Current source set:
-- `TorusLevelSets.lean` — finite level-set/orbit counts at `N=199`;
-- `ScaleLaw.lean` — finite scale-law arithmetic at `N=199`;
-- `K2Reduction.lean` — finite `k=2` constraint/bijection certificate at `N=53`;
-- `K4Variety.lean` — finite `k=4` variety/key-count certificate at `N=53`;
-- `M1DegenerateFiber.lean` — finite certificates for the `d=0` exceptional fiber.
+Current executable certificates cover selected finite designs for the `k=2` reduction, the `k=4` constraint variety, the historical degenerate Möbius fiber, and the exact exceptional Cayley-energy negative control `(N,K)=(461,23)`.
 
-Lean/lake are not installed in the current execution environment, so the reorganized import set is **UNVERIFIED BUILD in this session**.  Historical build claims remain provenance only until a fresh `lake build` is recorded.  Python/C++ checks do not substitute for Lean kernel verification.
+Most existing files are finite `native_decide` certificates. They do **not** constitute general finite-field proofs. The next formalization priorities are the generic pair-key bijection, diagonal multiplicity, exact `V4` inclusion-exclusion formula, finite Fourier variance identity, and Cayley transform.
+
+Toolchain: see `lean-toolchain`. Build with `lake build`.
