@@ -1,34 +1,27 @@
 # Lean formalization
 
-This is the active Lean 4 finite-certificate layer.
+This directory is the active Lean 4 **finite-certificate** layer. It contains no speculative `sorry`-based theorem module.
 
-Build from the repository root with
+Build from the repository root:
 
 ```bash
 cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` module in `formalization/Bgs/`; CI checks this
-coverage before running Lake. A green build therefore cannot be obtained by
-leaving an active formal source outside the import graph.
+`Bgs.lean` imports every `.lean` file under `formalization/Bgs/`; CI checks exact coverage before Lake runs. A green build therefore cannot hide an active module outside the import graph.
 
-Current active modules:
+## Active modules
 
-- `PairKeySecondMoment.lean` — finite `k=2` counting/bijection certificate at
-  the audited design;
-- `PairKeyFourthMoment.lean` — finite `k=4` variety/key-multiplicity certificate;
-- `TorusLevelSets.lean` — finite torus level-set/orbit facts at `N=199`;
-- `TorusScaleLaw.lean` — finite scale-law certificate at the audited `N=199`
-  design;
-- `CayleyExceptionalK23.lean` — finite exceptional Cayley energy at `(461,23)`;
-- `HistoricalMobiusDegenerateFiber.lean` — finite diagnostic certificate for
-  the degenerate fiber that invalidated the historical Möbius proof route.
+- `PairKeySecondMoment.lean` — finite `p=53, K=13` constraint-count and pair-key parameterization certificate.
+- `PairKeyFourthMoment.lean` — finite diagonal multiplicity, off-diagonal key injectivity and `V4` count at `p=53, K=13`.
+- `TorusLevelSets.lean` — finite level-set cardinalities, orbit counts and freeness at `p=199, K=11`.
+- `TorusScaleLaw.lean` — finite branch-scale identities at the same `p=199` design.
+- `CayleyExceptionalK23.lean` — exact finite negative control at `(p,K)=(461,23)`.
+- `HistoricalMobiusDegenerateFiber.lean` — finite falsifier for the degenerate `d=0` fiber in the retracted historical Möbius route.
 
-The old speculative R86 `OpLocal.lean` file is **not** an active theorem module.
-Its exact bytes are preserved under `record/formal_drafts/OpLocal.lean` because
-it records a historically useful formulation of an open problem, but its
-comments and reduction target predate the present pair-key/elliptic repair.
+The old R86 `OpLocal.lean` is not active. Its exact historical source is under `record/formal_drafts/OpLocal.lean` because it records an obsolete formulation of an open programme rather than a current theorem.
 
-A finite `native_decide` certificate is evidence only for its stated finite
-parameters unless a symbolic general proof is present.
+## Evidence boundary
+
+Most nontrivial finite searches use `native_decide`; the source prints axiom information where useful. Such a theorem certifies only its explicit finite parameters unless accompanied by a separate symbolic proof. In particular, the finite torus and scale modules do not establish their motivating analytic statements uniformly in `p`.
