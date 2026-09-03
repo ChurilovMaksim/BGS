@@ -1,0 +1,49 @@
+name: Repository health
+
+on:
+  push:
+    branches:
+      - main
+      - 'refactor/**'
+      - 'repair/**'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check full workspace structure, Python, JSON, Julia boundary, and paper uniqueness
+        run: python tools/check_repository.py
+
+      - name: Compile supported C++20 programs strictly
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/ci
+          while IFS= read -r source; do
+            name="$(basename "${source}" .cpp)"
+            g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror "${source}" -o "build/ci/${name}"
+          done < <(find src/cpp -type f -name '*.cpp' | sort)
+
+      - name: Run migrated exact regression gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          build/ci/catmap_order verify
+          build/ci/relation_automaton verify
+          build/ci/fourth_moment_factorization
+          python experiments/verification/sol6_relation_count.py --verify
