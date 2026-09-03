@@ -1,85 +1,64 @@
-# M1 note — Möbius fibers, character orders and exceptional divisors
+# M1 note — why the historical Möbius fiber is not the exact pair-key image
 
-The historical fiber map is
+This note is now an audit note, not the definition of the active M1 object.
+
+## 1. Exact elimination
+
+From the off-diagonal pair-key map
+
+`u=x/y`, `v=(x-1)/(y-1)`, `d=x-y`,
+
+one obtains
+
+`y=(1-v)/(u-v)`,
+`x=u(1-v)/(u-v)`,
+`d=(u-1)(v-1)/(v-u)`.
+
+Solving for `v` gives the historical rational graph
 
 `v_d(u)=((d-1)u+1)/(d+1-u)`.
 
-Its projective matrix is `[[d-1,1],[-1,d+1]]`.  Both its determinant and the resultant of numerator and denominator equal `d^2`.  Thus the Möbius transformation itself degenerates exactly at `d=0`.  Wolfram symbolic evaluation independently confirms the zero `u=1/(1-d)`, the pole `u=d+1`, and the special forms listed below.  The old proof text gave the pole as `d-1`; that was incorrect.
+Wolfram symbolic algebra independently reproduces these identities.
 
-## The character group that actually appears
+## 2. Saturation artifact at (1,1)
 
-Put `L=N-1=K m` and choose a primitive root `g`.  Write `a=g^ell` with `ord(a)=K`.  Then
+The eliminated polynomial relation is satisfied by `(u,v)=(1,1)` for **every** `d`. But at that point the inverse formula is `0/0`; no off-diagonal pair `(x,y)` is represented.
 
-`gcd(ell,L)=m`.
+For `d!=0`, the historical graph nevertheless contains `u=1,v=1`. Thus it adds one phantom point of character weight `1` for every twist pair.
 
-For the standard character `chi_k(g)=exp(2 pi i k/L)`, the condition `chi_k(a)=1` is equivalent to `K | k`.  Hence
+At `d=0`, the elimination degenerates in the opposite direction. The exact pair-key table contains the true diagonal record `(1,1)` with multiplicity `N-2`, while the historical graph becomes the line-like sum `v=1` over `u!=1`.
 
-`S=H^perp={chi_(K j): j mod m}`.
+## 3. Exact correction formula
 
-If `rho=chi_K`, then `rho` has exact order `m`.  This is the character order relevant to a Weil-type perfect-power exclusion.  The historical phrase “perfect K-th power” confuses the torus order `K` with the annihilator-character order `m`.
+Let `A_hist` be the historical graph amplitude and `A_key` the exact pair-key amplitude. Independent finite computations at `N=53` and `N=199` verify, to floating-point roundoff,
 
-## Generic divisor
+- for every `d!=0` and every twist pair:
+  `A_hist(d)=A_key(d)+1`;
+- at `d=0`, if the first twist is trivial:
+  `A_hist(0)=A_key(0)=N-2`;
+- at `d=0`, if the first twist is nontrivial:
+  `A_hist(0)=-1` while `A_key(0)=N-2`.
 
-Write a twist pair as `(rho^r,rho^s)`, with `r,s` modulo `m`, and combine the characters into
+The Fourier-space difference is therefore explicit as well:
 
-`R_(r,s,d)(u)=u^r v_d(u)^s`.
+- first twist trivial: `(N-1,-1,-1,...,-1)`;
+- first twist nontrivial: `(0,-N,-N,...,-N)`.
 
-For `d` outside `{0,1,-1}`, the four support points are distinct:
+The updated `experiments/m1/cross_term_energy.py` checks this formula directly.
 
-- `0`,
-- infinity,
-- `alpha_d=1/(1-d)` (zero of `v_d`),
-- `beta_d=d+1` (pole of `v_d`).
+## 4. Numerical consequence
 
-The divisor is
+The normalized historical and correct energies are not the same object:
 
-`div R = r[0] - r[infinity] + s[alpha_d] - s[beta_d]`.
+- `N=53,K=13`: historical `3,682,650,293`; correct `3,410,502,105`;
+- `N=199,K=11`: historical `113,859,701,371`; correct `115,589,503,389`.
 
-If this rational function were an `m`-th power, every valuation would be divisible by `m`.  Since `0<=r,s<m`, this forces `r=s=0`.  Therefore **there is no nontrivial perfect-power exception on a generic fiber**.
+The correct values equal the independently computed `sum_t B(t)^2`.
 
-This argument is only the divisor obstruction needed before invoking a character-sum bound; the exact theorem and its constant still have to be cited and checked against our omitted points/conventions.
+Therefore the historical Möbius route cannot be repaired merely by improving its Weil bound or restoring cross terms. Its finite assembly is wrong before the asymptotic estimate begins.
 
-## Special fibers
+## 5. What remains useful from the old divisor analysis
 
-### `d=1`
+For the historical graph itself, the projective matrix of `v_d` has determinant/resultant `d^2`, the pole is `u=d+1`, and its character divisor analysis correctly identifies `d=0` as degenerate once the annihilator character order is taken to be `m=(N-1)/K` rather than `K`.
 
-`v_1(u)=1/(2-u)` and
-
-`div R = r[0] + (s-r)[infinity] - s[2]`.
-
-Divisibility by `m` again forces `r=s=0`.  No new nontrivial twist family appears.
-
-### `d=-1`
-
-`v_{-1}(u)=2-1/u=(2u-1)/u` and
-
-`div R = (r-s)[0] - r[infinity] + s[1/2]`.
-
-Again `r=s=0` is forced.
-
-### `d=0`
-
-After cancellation, `v_0(u)=1` in the function field, so
-
-`R_(r,s,0)(u)=u^r`.
-
-This is an `m`-th power exactly when `r=0 mod m`; `s` is unrestricted.  Thus the exceptional family is precisely
-
-`psi_1 = 1`, `psi_2 arbitrary`.
-
-For nontrivial `psi_2`, the implemented fiber sum has
-
-`A_(1,psi_2)(0)=N-2`,
-
-matching the complete Python/C++ scan at `N=53` and `N=199`.
-
-## Consequence for M1
-
-The perfect-power/fiber problem is now reduced to one explicit exceptional fiber rather than an unspecified genericity claim:
-
-1. extract `d=0` exactly;
-2. keep `d=±1` as low-support but nondegenerate special cases;
-3. apply a verified rational-function character-sum theorem only to the remaining generic fibers;
-4. then address the genuinely harder problem: cancellation of the full cross-Gram sum.
-
-This classification does **not** prove M1.  It removes one previously hidden failure mode and gives a precise hypothesis boundary for the next analytic estimate.
+That analysis explains additional failure modes of the old proof, but it is now historical diagnostics only. The active M1 proof works with the exact pair-key distribution `B(t)` in `research/theory.md`.
