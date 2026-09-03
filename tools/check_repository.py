@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import ast
 import json
 from pathlib import Path
 
@@ -22,10 +21,10 @@ REQUIRED_PATHS = [
     "docs/literature", "docs/review", "inputs/r82-legacy",
     "src/python/bgs/finite_field.py", "src/python/bgs/jacobi.py",
     "src/python/bgs/key_geometry.py", "src/python/bgs/twisted_jacobi.py",
+    "src/cpp/m1/cross_term_energy.cpp",
     "src/cpp/number_theory/catmap_order.cpp",
     "src/cpp/shape/relation_automaton.cpp",
     "src/cpp/verification/fourth_moment_factorization.cpp",
-    "experiments/m1/cross_term_energy.py",
     "experiments/verification/sol6_relation_count.py",
     "experiments/verification/verify_fourth_moment_factorization.py",
     "experiments/verification/verify_second_moment_reduction.py",
@@ -41,6 +40,7 @@ REQUIRED_PATHS = [
 FORBIDDEN_PATHS = [
     "formal/.lake/build", "formal/.lake/packages", "data/tools", "tools/tectonic.exe",
     "paper/M4D_PROOF.tex", "paper/BGS_COMPLETE.tex", "paper/BGS_PROOF.tex",
+    "experiments/m1/cross_term_energy.py",
 ]
 
 PYTHON_ROOTS = ("code", "src", "experiments", "tools")
