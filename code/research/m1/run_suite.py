@@ -187,6 +187,28 @@ def main() -> None:
             )
 
     sweep = [slim_case(*case) for case in SWEEP]
+    sweep_columns = [
+        "N", "a", "K", "m",
+        "delta_vs_trivial", "K2_delta", "cross_fraction_of_full",
+        "regular_delta_vs_trivial", "K2_regular_delta",
+        "regular_cross_fraction_of_full", "max_regular_A_over_sqrtN",
+        "regular_3sqrtN_falsifier_pass", "HH_mass_identity_error",
+        "singular_regular_B_identity_error", "trace3_applicable",
+        "trace3_order_certificate_pass",
+    ]
+    sweep_rows = []
+    for row in sweep:
+        cert = row["trace3_order_certificate"]
+        sweep_rows.append([
+            row["N"], row["a"], row["K"], row["m"],
+            row["delta_vs_trivial"], row["K2_delta"],
+            row["cross_fraction_of_full"], row["regular_delta_vs_trivial"],
+            row["K2_regular_delta"], row["regular_cross_fraction_of_full"],
+            row["max_regular_A_over_sqrtN"], row["regular_3sqrtN_falsifier_pass"],
+            row["HH_mass_identity_error"], row["singular_regular_B_identity_error"],
+            cert["applicable"],
+            (not cert["applicable"]) or cert["N_divides_LK_minus_2"],
+        ])
     result = {
         "status": "ACTIVE_RESEARCH_DIAGNOSTIC_NOT_A_PROOF",
         "purpose": "exact M1 projector/cross-twist assembly and falsifier suite",
@@ -196,7 +218,8 @@ def main() -> None:
             "orchestrator": "code/research/m1/run_suite.py",
         },
         "anchor_cases": anchors,
-        "sweep": sweep,
+        "sweep_schema": sweep_columns,
+        "sweep_rows": sweep_rows,
         "suite_checks": {
             "all_dual_impl_anchors_pass": all(x["dual_implementation_comparison"]["passed"] for x in anchors),
             "all_coset_mass_identities_pass": all(x["HH_mass_identity_error"] == 0 for x in sweep),
