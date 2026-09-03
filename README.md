@@ -5,16 +5,16 @@ finite-field reductions, matrix-element moments and local spectral statistics
 of quantized hyperbolic toral automorphisms.
 
 The repository is intentionally organized like a mathematical research project,
-not a software product.  The trust boundary is explicit: **preserve broadly,
+not a software product. The trust boundary is explicit: **preserve broadly,
 trust narrowly**.
 
 ## Current mathematical position
 
 The exact load-bearing object is the weighted pair-key fourth-moment
-distribution `B(t)`.  The pair parametrization, `k=2` count, `k=4` total,
+distribution `B(t)`. The pair parametrization, `k=2` count, `k=4` total,
 character-orthogonality collapse and finite Fourier mean/variance duality are
-exact.  The mixed term is reduced by a Cayley transform to an additive-energy
-problem.  For fixed odd prime subgroup order `K`, non-forced finite-field
+exact. The mixed term is reduced by a Cayley transform to an additive-energy
+problem. For fixed odd prime subgroup order `K`, non-forced finite-field
 collisions occur only at explicit cyclotomic reduction primes; the audited
 sets currently include
 
@@ -26,7 +26,7 @@ the forced central-symmetry baseline is `902`.
 The remaining off/off term has a non-isotrivial elliptic-family organization.
 A restricted `K=o(N^(1/4))` M1 estimate is still a **theorem draft**, not a
 finished theorem: the actual algebraic family and the exact sheaf-correlation
-hypotheses must be certified at publication standard.  Even that would not
+hypotheses must be certified at publication standard. Even that would not
 prove microscopic BGS/GOE local eigenphase statistics; the local-law bridge is
 separate and open.
 
@@ -38,15 +38,16 @@ separate and open.
   checks.
 - `evidence/` — promoted finite certificates, numerical evidence and minimal
   reference inputs.
-- `formalization/` — Lean 4 finite certificates and open formalization work.
+- `formalization/` — Lean 4 finite certificates and explicit open proof
+  obligations.
 - `literature/` — current bibliography and literature-boundary notes.
-- `record/` — reconstruction ledger, retractions, Julia migration map, exact ZIP
-  manifest and the broader historical research corpus.
+- `record/` — reconstruction ledger, retractions, Julia migration map, ZIP
+  inventory tooling and the broader historical research corpus.
 
-`record/corpus/` is deliberately non-authoritative.  It contains useful
-experiments, negative results, review material and historical code/data restored
-for scientific provenance.  A file being present there does not promote its
-claim.
+`record/corpus/` is deliberately non-authoritative. It contains useful
+experiments, negative results, review material, historical manuscripts and
+historical code/data restored for scientific provenance. A file being present
+there does not promote its claim.
 
 ## Reproducibility
 
@@ -56,14 +57,18 @@ python computations/verification/current_regression.py
 
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
-./build/cross_term_energy verify
-./build/fourth_moment_factorization
-./build/catmap_order verify
-./build/relation_automaton verify
+./build/fourth_moment_pair_key_verifier
+./build/mobius_pair_key_diagnostic verify
+./build/cat_map_order verify
+./build/relation_shape_automaton verify
 
 cd formalization
 lake build
 ```
+
+CI additionally checks that every active Lean module is imported by the default
+library target, so a green Lake build cannot be obtained merely by leaving an
+unfinished file outside the import graph.
 
 The manuscript is built by
 
@@ -73,23 +78,29 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error arithmetic_cat_map_moments.
 ```
 
 Both `arithmetic_cat_map_moments.tex` and `arithmetic_cat_map_moments.pdf` are
-versioned.  CI independently recompiles the TeX source.
+versioned. A dedicated workflow rebuilds the PDF from the TeX source and
+synchronizes it into `main`.
 
-## Evidence labels
+## Evidence labels and historical paths
 
-Use `record/claim_ledger.md` before citing a result.  In particular, finite Lean
+Use `record/claim_ledger.md` before citing a result. In particular, finite Lean
 certificates are not automatically uniform theorems, numerical GOE fits are not
 a limiting law, and the historical Möbius-fiber/M4D proof is retracted from the
 active argument.
 
+Retained JSON evidence keeps generation-time `producer` strings. Their present
+locations and current independent checks are resolved in
+`evidence/provenance.md`; CI verifies these mappings.
+
 ## Language policy
 
-Python is used for symbolic/exact orchestration and readable analysis.  C++20 is
-used for exhaustive finite-field and combinatorial kernels and for independent
-verification.  Fortran will be introduced only when profiling identifies a
+Python is used for symbolic/exact orchestration and readable analysis. C++20 is
+used for exhaustive finite-field and combinatorial kernels and independent
+verification. Fortran will be introduced only when profiling identifies a
 dense numerical kernel for which it materially improves the implementation.
 
 The supplied snapshot contains 31 Julia paths (23 byte-distinct sources).
-Every one is accounted for in `record/julia_migration.md`; falsified Julia
+Every one is accounted for in `record/julia_migration.md`; the original Julia
+sources remain directly browsable in `record/corpus/`. Falsified Julia
 algorithms are not mechanically translated and useful ones are migrated only
 against preserved exact anchors.

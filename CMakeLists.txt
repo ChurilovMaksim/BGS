@@ -5,15 +5,19 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(cross_term_energy
-  computations/cpp/m1/cross_term_energy.cpp)
-add_executable(fourth_moment_factorization
-  computations/cpp/verification/fourth_moment_factorization.cpp)
-add_executable(catmap_order
-  computations/cpp/number_theory/catmap_order.cpp)
-add_executable(relation_automaton
-  computations/cpp/shape/relation_automaton.cpp)
+add_executable(mobius_pair_key_diagnostic
+  computations/cpp/mobius_pair_key_diagnostic.cpp)
+add_executable(fourth_moment_pair_key_verifier
+  computations/cpp/fourth_moment_pair_key_verifier.cpp)
+add_executable(cat_map_order
+  computations/cpp/cat_map_order.cpp)
+add_executable(relation_shape_automaton
+  computations/cpp/relation_shape_automaton.cpp)
 
-foreach(target cross_term_energy fourth_moment_factorization catmap_order relation_automaton)
+foreach(target
+    mobius_pair_key_diagnostic
+    fourth_moment_pair_key_verifier
+    cat_map_order
+    relation_shape_automaton)
   target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
 endforeach()

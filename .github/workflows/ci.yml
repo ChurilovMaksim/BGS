@@ -22,14 +22,36 @@ jobs:
         run: |
           python -m compileall -q computations/python
           python -m compileall -q computations/verification
-      - name: Parse promoted JSON evidence
+      - name: Check active implementation language boundary
+        shell: bash
+        run: |
+          if find computations mathematics formalization manuscript evidence -name '*.jl' -print -quit | grep -q .; then
+            echo 'Julia source leaked into the active research surface'
+            exit 1
+          fi
+      - name: Parse promoted JSON evidence and resolve historical producers
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          for path in Path("evidence").rglob("*.json"):
-              json.loads(path.read_text(encoding="utf-8"))
-          print("evidence JSON: OK")
+
+          for path in Path('evidence').rglob('*.json'):
+              data = json.loads(path.read_text(encoding='utf-8'))
+              producer = data.get('producer')
+              if producer:
+                  direct = Path(producer)
+                  historical = Path('record/corpus') / producer
+                  if not direct.exists() and not historical.exists():
+                      raise SystemExit(f'{path}: unresolved producer {producer}')
+              refs = data.get('reference_inputs', {})
+              for old_path in refs:
+                  p = Path(old_path)
+                  candidates = [p, Path('record/corpus') / p]
+                  if p.parts and p.parts[0] == 'results':
+                      candidates.append(Path('evidence').joinpath(*p.parts[1:]))
+                  if not any(candidate.exists() for candidate in candidates):
+                      raise SystemExit(f'{path}: unresolved reference input {old_path}')
+          print('evidence provenance: OK')
           PY
       - name: Run current exact finite regression
         run: python computations/verification/current_regression.py
@@ -43,20 +65,38 @@ jobs:
           cmake --build build -j2
       - name: Run C++ regression gates
         run: |
-          ./build/cross_term_energy verify
-          ./build/fourth_moment_factorization
-          ./build/catmap_order verify
-          ./build/relation_automaton verify
+          ./build/mobius_pair_key_diagnostic verify
+          ./build/fourth_moment_pair_key_verifier
+          ./build/cat_map_order verify
+          ./build/relation_shape_automaton verify
 
   formalization:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Check Lean module coverage
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          modules = {f'Bgs.{p.stem}' for p in Path('formalization/Bgs').glob('*.lean')}
+          imported = set()
+          for line in Path('formalization/Bgs.lean').read_text(encoding='utf-8').splitlines():
+              line = line.strip()
+              if line.startswith('import '):
+                  imported.add(line.removeprefix('import ').strip())
+          missing = sorted(modules - imported)
+          if missing:
+              raise SystemExit('unimported active Lean modules: ' + ', '.join(missing))
+          print(f'Lean module coverage: {len(modules)}/{len(modules)}')
+          PY
       - name: Install elan
         run: |
           curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Build Lean sources
+      - name: Build every active Lean module
         run: |
           cd formalization
           lake build
