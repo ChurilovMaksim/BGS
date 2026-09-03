@@ -1,5 +1,17 @@
-# Current paper
+# Canonical manuscript
 
-There is no proof-complete BGS manuscript at present.
+The current article has exactly one TeX source and one built PDF:
 
-This directory is intentionally empty apart from this note.  A new manuscript should be started only from the current `STATUS.md`, `research/theory.md` and verified results.  Historical files named `BGS_PROOF`, `BGS_COMPLETE`, `M4D_PROOF`, and related drafts are preserved under `archive/legacy-workspace/paper/` for provenance and must not be cited as current proofs.
+- `main.tex` - the only editable manuscript source;
+- `main.pdf` - the corresponding rendered manuscript.
+
+No section-level `.tex` files or competing `proof/final/complete` manuscripts belong in the active `paper/` tree. Historical manuscripts remain only in `archive/legacy-workspace/paper/` and Git history.
+
+Build locally with:
+
+```bash
+cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+```
+
+The manuscript is intentionally explicit about status: exact finite identities are separated from theorem drafts, numerical evidence, and the still-open general BGS/local-spacing problem.
