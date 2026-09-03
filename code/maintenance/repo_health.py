@@ -1,8 +1,9 @@
 """Fast non-mutating health gate for the canonical WoW research repository.
 
-The repository deliberately contains three trust levels.  This gate is strict
-about the canonical layer, but preserves migration debt in research/historical
-files instead of pretending old paths or status labels never existed.
+The repository deliberately contains three trust levels. This gate is strict
+about the canonical layer and active research checkpoints, but preserves
+migration debt in historical files instead of pretending old paths or status
+labels never existed.
 """
 from __future__ import annotations
 
@@ -15,23 +16,30 @@ ROOT = Path(__file__).resolve().parents[2]
 CANONICAL_REQUIRED = [
     "README.md", "STATUS.md", "THEORY.md", "HISTORY.md", "HANDBOOK.md",
     "requirements.txt", "research/README.md", "research/M1.md",
+    "research/M1_CROSS_TWIST_001.md",
     "code/math/twisted_jacobi.py", "code/math/jacobi.py",
     "code/verification/baseline_r82.py",
     "code/verification/h3_k2_exact_reduction.py",
     "code/verification/theorem_ii_new_primes.py",
     "code/experiments/goe_spacing.py",
     "code/experiments/number_variance_goe_control.py",
+    "code/research/m1/README.md",
+    "code/research/m1/cross_twist_energy.py",
+    "code/research/m1/cross_twist_energy.cpp",
+    "code/research/m1/run_suite.py",
     "code/maintenance/audit_inventory.py",
     "results/verified/baseline_r82.json",
     "results/verified/h3_k2_exact_reduction.json",
     "results/verified/theorem_ii_new_primes.json",
     "results/numerical/bgs_spacing_goe.json",
     "results/numerical/number_variance_goe_control.json",
+    "results/research/m1/cross_twist_suite.json",
     "results/historical-numerical/bgs_spacing_N95419.json",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N199.npz",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
     "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
-    "formal/Bgs/K2Reduction.lean", "formal/Bgs/OpLocal.lean",
+    "formal/Bgs/K2Reduction.lean", "formal/Bgs/M1CrossEnergy.lean",
+    "formal/Bgs/OpLocal.lean",
     "docs/audit/full_repository_sync_2026-09-03.md",
     "docs/audit/FILE_INVENTORY_SUMMARY.json",
     "docs/audit/PRODUCER_PATH_MAP.md", "docs/audit/CLAIM_STATUS_MAP.md",
@@ -54,12 +62,15 @@ FORBIDDEN_PATHS = [
     "formal/.lake/build", "formal/.lake/packages", "tools/tectonic.exe",
     "data/tools", "results/numerical/bgs_spacing_N95419.json",
     "results/verified/word_trace_proof.json",
+    "code/research/m1/m1_cross_twist_energy",
+    "code/research/m1/cross_twist_energy.exe",
 ]
 
-CANONICAL_RUNTIME_DIRS = [
+ACTIVE_RUNTIME_DIRS = [
     ROOT / "code" / "math",
     ROOT / "code" / "verification",
     ROOT / "code" / "experiments",
+    ROOT / "code" / "research" / "m1",
 ]
 STALE_TOKENS = ("src/", "artifacts/", '"src"', '"artifacts"')
 JSON_ROOTS = [ROOT / "results", ROOT / "data", ROOT / "docs" / "audit"]
@@ -86,7 +97,7 @@ def main() -> int:
     before = len(errors)
     for rel in FORBIDDEN_PATHS:
         if (ROOT / rel).exists():
-            fail(f"forbidden/quarantined path exists in wrong location: {rel}", errors)
+            fail(f"forbidden/quarantined/generated path exists: {rel}", errors)
     for cache in ROOT.rglob("__pycache__"):
         fail(f"generated Python cache exists: {cache.relative_to(ROOT)}", errors)
     for pyc in ROOT.rglob("*.pyc"):
@@ -106,7 +117,7 @@ def main() -> int:
         print(f"Python syntax corpus: PASS ({len(python_files)} files)")
 
     before = len(errors)
-    for directory in CANONICAL_RUNTIME_DIRS:
+    for directory in ACTIVE_RUNTIME_DIRS:
         if not directory.exists():
             continue
         for path in sorted(directory.rglob("*.py")):
@@ -114,9 +125,9 @@ def main() -> int:
             rel = path.relative_to(ROOT)
             for token in STALE_TOKENS:
                 if token in text:
-                    fail(f"stale path token {token!r} in canonical runtime code {rel}", errors)
+                    fail(f"stale path token {token!r} in active runtime code {rel}", errors)
     if len(errors) == before:
-        print("canonical runtime path conventions: PASS")
+        print("active runtime path conventions: PASS")
 
     before = len(errors)
     json_count = 0
@@ -142,6 +153,7 @@ def main() -> int:
         text = trace.read_text(encoding="utf-8-sig")
         if "Binomial expansion of `Tr(M_q^k)`" not in text:
             fail("trace-fluctuation draft is missing the audited Step-1 target", errors)
+
     q = ROOT / "results" / "historical-numerical" / "bgs_spacing_N95419.json"
     if q.exists():
         try:
@@ -150,11 +162,37 @@ def main() -> int:
             payload = {}
         if not str(payload.get("audit_status", "")).startswith("QUARANTINED"):
             fail("N=95419 historical result lacks an explicit QUARANTINED audit status", errors)
+
     status = (ROOT / "STATUS.md").read_text(encoding="utf-8-sig")
     if "INVALID AS STATED / SUPERSEDED" not in status:
         fail("STATUS.md lacks the superseded R86/R87 trace-fluctuation status", errors)
+    if "M1 assembled asymptotic energy bound | **OPEN GAP**" not in status:
+        fail("STATUS.md must keep the assembled M1 asymptotic bound OPEN", errors)
+
+    m1_text = (ROOT / "research" / "M1.md").read_text(encoding="utf-8-sig")
+    if "Status: **OPEN GAP**" not in m1_text:
+        fail("research/M1.md must keep M1 at OPEN GAP", errors)
+
+    m1_result_path = ROOT / "results" / "research" / "m1" / "cross_twist_suite.json"
+    if m1_result_path.exists():
+        try:
+            m1_result = json.loads(m1_result_path.read_text(encoding="utf-8"))
+        except Exception:
+            m1_result = {}
+        if m1_result.get("status") != "ACTIVE_RESEARCH_DIAGNOSTIC_NOT_A_PROOF":
+            fail("M1 research result has an unsafe theorem-like status", errors)
+        checks = m1_result.get("suite_checks")
+        if not isinstance(checks, dict) or not checks or not all(checks.values()):
+            fail("M1 cross-twist suite checks are not all passing", errors)
+
+    m1_lean = ROOT / "formal" / "Bgs" / "M1CrossEnergy.lean"
+    if m1_lean.exists():
+        lean_text = m1_lean.read_text(encoding="utf-8-sig")
+        if "STATUS: UNVERIFIED" not in lean_text:
+            fail("M1 Lean track must remain explicitly UNVERIFIED until built", errors)
+
     if len(errors) == before:
-        print("semantic audit sentinels: PASS")
+        print("semantic audit + active M1 sentinels: PASS")
 
     if errors:
         print(f"REPOSITORY HEALTH: FAIL ({len(errors)} issue(s))")
