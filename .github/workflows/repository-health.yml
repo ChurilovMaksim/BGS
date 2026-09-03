@@ -29,8 +29,17 @@ jobs:
       - name: Check repository structure and provenance boundary
         run: python tools/check_repository.py --check structure
 
-      - name: Parse active and research Python corpus
-        run: python tools/check_repository.py --check python
+      - name: Compile broad research code Python
+        run: python tools/check_repository.py --check python --python-root code
+
+      - name: Compile supported src Python
+        run: python tools/check_repository.py --check python --python-root src
+
+      - name: Compile experiment Python
+        run: python tools/check_repository.py --check python --python-root experiments
+
+      - name: Compile repository tool Python
+        run: python tools/check_repository.py --check python --python-root tools
 
       - name: Parse research and current JSON corpus
         run: python tools/check_repository.py --check json
