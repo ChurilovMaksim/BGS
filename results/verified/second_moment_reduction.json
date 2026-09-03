@@ -1,6 +1,6 @@
 {
   "producer": "experiments/verification/verify_second_moment_reduction.py",
-  "scope": "Finite exact k=2 reduction plus Cayley/additive-energy and small-prime-order cyclotomic collision audit; not an asymptotic theorem.",
+  "scope": "Finite exact k=2 reduction plus Cayley/additive-energy and cyclotomic reduction-prime audit; not an asymptotic theorem.",
   "exact_identities": [
     "d(u,v)=2/(c(u)-c(v)), c(h)=(h+1)/(h-1)",
     "sum_t C_H(t)^2 = E_plus(c(H\\{1})) - (K-1)^2",
@@ -11,12 +11,16 @@
     "matching_count": 720,
     "rank_counts_over_Q": {"2": 30, "3": 240, "4": 450},
     "bad_rank_drop_primes": [2],
-    "rank_two_matching_types": {
+    "rank_two_kernel_types": {
       "identity_r_i_s_j": 2,
-      "inversion_swap_r_minus_j_s_minus_i": 2,
-      "invalid_zero_or_diagonal": 26
+      "invalid_zero_or_diagonal": 26,
+      "inversion_swap_r_minus_j_s_minus_i": 2
     },
-    "conclusion": "For odd prime K, the characteristic-zero Cayley difference set has only identity and inversion-swap collisions.",
+    "rank_three_kernel_types": {
+      "identity_r_i_s_j": 4,
+      "invalid_zero_or_diagonal": 236
+    },
+    "conclusion": "For odd prime K, every characteristic-zero Cayley difference collision is forced by identity or inversion-swap symmetry.",
     "pass": true
   },
   "cyclotomic_exception_audits": [
@@ -24,25 +28,21 @@
       "K": 11,
       "normalized_nonforced_quadruples_checked": 793,
       "distinct_nonzero_norms": 8,
-      "possible_reduction_primes_N_congruent_1_mod_K": [23, 67, 89],
+      "exact_exception_primes_N_congruent_1_mod_K": [23, 67, 89],
       "pass": true
     },
     {
       "K": 13,
       "normalized_nonforced_quadruples_checked": 1431,
       "distinct_nonzero_norms": 14,
-      "possible_reduction_primes_N_congruent_1_mod_K": [53, 79, 131, 157, 313],
+      "exact_exception_primes_N_congruent_1_mod_K": [53, 79, 131, 157, 313],
       "pass": true
     }
   ],
   "results": [
     {
-      "N": 53,
-      "a": 10,
-      "K": 13,
-      "m": 4,
-      "constraint_pair_count": 132,
-      "expected_pair_count": 132,
+      "N": 53, "a": 10, "K": 13, "m": 4,
+      "constraint_pair_count": 132, "expected_pair_count": 132,
       "identity_max_abs_deviation": 1.2505552149377763e-12,
       "cayley_energy": {
         "cayley_set_size": 12,
@@ -58,19 +58,15 @@
         "pass": true
       },
       "cyclotomic_exception_status": {
-        "N_in_possible_exception_set": true,
-        "prediction": "excess collisions allowed",
+        "N_in_exact_exception_set": true,
+        "prediction": "non-forced collisions occur",
         "prediction_matches_finite_energy": true
       },
       "pass": true
     },
     {
-      "N": 67,
-      "a": 64,
-      "K": 11,
-      "m": 6,
-      "constraint_pair_count": 90,
-      "expected_pair_count": 90,
+      "N": 67, "a": 64, "K": 11, "m": 6,
+      "constraint_pair_count": 90, "expected_pair_count": 90,
       "identity_max_abs_deviation": 8.640199666842818e-12,
       "cayley_energy": {
         "cayley_set_size": 10,
@@ -86,19 +82,15 @@
         "pass": true
       },
       "cyclotomic_exception_status": {
-        "N_in_possible_exception_set": true,
-        "prediction": "excess collisions allowed",
+        "N_in_exact_exception_set": true,
+        "prediction": "non-forced collisions occur",
         "prediction_matches_finite_energy": true
       },
       "pass": true
     },
     {
-      "N": 199,
-      "a": 139,
-      "K": 11,
-      "m": 18,
-      "constraint_pair_count": 90,
-      "expected_pair_count": 90,
+      "N": 199, "a": 139, "K": 11, "m": 18,
+      "constraint_pair_count": 90, "expected_pair_count": 90,
       "identity_max_abs_deviation": 3.637978807091713e-10,
       "cayley_energy": {
         "cayley_set_size": 10,
@@ -114,19 +106,15 @@
         "pass": true
       },
       "cyclotomic_exception_status": {
-        "N_in_possible_exception_set": false,
-        "prediction": "only forced central-symmetry collisions possible",
+        "N_in_exact_exception_set": false,
+        "prediction": "only forced central-symmetry collisions occur",
         "prediction_matches_finite_energy": true
       },
       "pass": true
     },
     {
-      "N": 521,
-      "a": 101,
-      "K": 13,
-      "m": 40,
-      "constraint_pair_count": 132,
-      "expected_pair_count": 132,
+      "N": 521, "a": 101, "K": 13, "m": 40,
+      "constraint_pair_count": 132, "expected_pair_count": 132,
       "identity_max_abs_deviation": 3.259629011154175e-09,
       "cayley_energy": {
         "cayley_set_size": 12,
@@ -142,8 +130,8 @@
         "pass": true
       },
       "cyclotomic_exception_status": {
-        "N_in_possible_exception_set": false,
-        "prediction": "only forced central-symmetry collisions possible",
+        "N_in_exact_exception_set": false,
+        "prediction": "only forced central-symmetry collisions occur",
         "prediction_matches_finite_energy": true
       },
       "pass": true
