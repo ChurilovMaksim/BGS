@@ -1,13 +1,77 @@
 {
+  "claim": "Compares the historical Mobius graph with the exact pair-key assembly and checks their closed-form difference.",
+  "conclusion": "The historical Mobius object is not the current M1 object.  Current work must use the pair-key assembly and its exact B(t) collapse.",
   "producer": "experiments/m1/cross_term_energy.py",
-  "status": "DIAGNOSTIC; EXACT FOR THE IMPLEMENTED HISTORICAL ASSEMBLY",
-  "claim": "The historical Möbius-fiber twist assembly has nonzero cross terms and a semi-trivial exceptional family at d=0. This does not prove the desired M1 asymptotic estimate or yet identify the historical assembly with the entire current fourth-moment object.",
-  "fresh_rerun": "2026-09-03",
-  "independent_cpp": "src/cpp/m1/cross_term_energy.cpp compiled with C++20 -O2 -Wall -Wextra -pedantic and independently agreed with Python to floating-point precision at N=53 and N=199.",
-  "fourier_identity": "With Ahat(xi)=sum_d A(d)e_N(-xi d), E=(1/N) sum_xi |sum_tau Ahat_tau(xi)^2|^2. The time- and frequency-domain implementations agree to relative floating-point error about 1e-16.",
-  "exact_exception": "At d=0, v_0(u)=1 after cancellation. For psi_1=1 and every nontrivial psi_2 in the annihilator group, A_(1,psi_2)(0)=N-2.",
   "results": [
-    {"N":53,"K":13,"m":4,"twist_pair_count":16,"diagonal_raw":934952569968.0,"cross_raw":7805905040.0,"cross_over_diagonal":0.00834898506163491,"trivial_nontrivial_cross_raw":6716417273.99993,"nontrivial_nontrivial_cross_raw":1089487765.9999993,"historical_4sqrtN_bound":29.120439557122072,"max_abs_nontrivial_fiber_sum":51.0,"bound_violation_count":3,"exceptional_twists":"psi_1=1; all 3 nontrivial psi_2","fourier_total_parseval_abs_error":0.0001220703125,"fourier_total_parseval_relative_error":1.2948206326011985e-16,"fourier_diagonal_parseval_abs_error":0.0,"reconstruction_abs_error":0.0},
-    {"N":199,"K":11,"m":18,"twist_pair_count":324,"diagonal_raw":1.1635012134951662e16,"cross_raw":317523876170438.0,"cross_over_diagonal":0.027290377739838702,"trivial_nontrivial_cross_raw":175011861227666.22,"nontrivial_nontrivial_cross_raw":142512014942771.2,"historical_4sqrtN_bound":56.42694391866354,"max_abs_nontrivial_fiber_sum":197.0,"bound_violation_count":17,"exceptional_twists":"psi_1=1; all 17 nontrivial psi_2","fourier_total_parseval_abs_error":2.0,"fourier_total_parseval_relative_error":1.6732850653107893e-16,"fourier_diagonal_parseval_abs_error":4.0,"reconstruction_abs_error":0.0}
-  ]
+    {
+      "K": 13,
+      "N": 53,
+      "correct_energy_integer_residual": 0.0,
+      "correct_energy_integer_sum_B_squared": 3410502105,
+      "correct_key_table_energy": {
+        "cross_over_diagonal": 0.009815120681505932,
+        "cross_raw": 8486176528.0,
+        "diagonal_raw": 864602362352.0,
+        "normalized_energy": 3410502105.0,
+        "total_raw": 873088538880.0
+      },
+      "correction_identity": {
+        "formula": {
+          "d_nonzero": "A_hist(tau,d)=A_key(tau,d)+1 for every twist pair",
+          "d_zero_first_twist_nontrivial": "A_hist=-1, A_key=N-2",
+          "d_zero_first_twist_trivial": "A_hist=A_key=N-2"
+        },
+        "fourier_domain_max_abs_residual": 1.5592040352320703e-13,
+        "pass": true,
+        "time_domain_max_abs_residual": 8.578984880110011e-14
+      },
+      "historical_mobius_energy": {
+        "cross_over_diagonal": 0.00834898506163491,
+        "cross_raw": 7805905040.0,
+        "diagonal_raw": 934952569968.0,
+        "normalized_energy": 3682650293.0,
+        "total_raw": 942758475008.0
+      },
+      "historical_over_correct_energy": 1.0797971030720124,
+      "m": 4,
+      "pass": true,
+      "primitive_root": 2
+    },
+    {
+      "K": 11,
+      "N": 199,
+      "correct_energy_integer_residual": 7.62939453125e-05,
+      "correct_energy_integer_sum_B_squared": 115589503389,
+      "correct_key_table_energy": {
+        "cross_over_diagonal": 0.06388983805047846,
+        "cross_raw": 728691233665782.0,
+        "diagonal_raw": 1.140543247409789e+16,
+        "normalized_energy": 115589503389.00008,
+        "total_raw": 1.2134123707763672e+16
+      },
+      "correction_identity": {
+        "formula": {
+          "d_nonzero": "A_hist(tau,d)=A_key(tau,d)+1 for every twist pair",
+          "d_zero_first_twist_nontrivial": "A_hist=-1, A_key=N-2",
+          "d_zero_first_twist_trivial": "A_hist=A_key=N-2"
+        },
+        "fourier_domain_max_abs_residual": 7.316313328015526e-12,
+        "pass": true,
+        "time_domain_max_abs_residual": 9.011365628733902e-13
+      },
+      "historical_mobius_energy": {
+        "cross_over_diagonal": 0.027290377739838702,
+        "cross_raw": 317523876170438.0,
+        "diagonal_raw": 1.1635012134951662e+16,
+        "normalized_energy": 113859701371.00003,
+        "total_raw": 1.19525360111221e+16
+      },
+      "historical_over_correct_energy": 0.9850349558802183,
+      "m": 18,
+      "pass": true,
+      "primitive_root": 3
+    }
+  ],
+  "status": "EXACT FINITE DIAGNOSTIC; HISTORICAL ASSEMBLY RETRACTED",
+  "verdict": "PASS"
 }
