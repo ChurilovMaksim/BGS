@@ -11,6 +11,10 @@ on:
       - .github/workflows/build-paper.yml
   workflow_dispatch:
 
+concurrency:
+  group: build-canonical-paper-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
