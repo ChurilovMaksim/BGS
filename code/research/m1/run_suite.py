@@ -62,7 +62,7 @@ def trace3_order_certificate(N: int, a: int, K: int) -> dict:
     return {
         "applicable": True,
         "N_divides_LK_minus_2": (L - 2) % N == 0,
-        "LK_minus_2": L - 2,
+        "LK_minus_2_mod_N": (L - 2) % N,
         "logarithmic_lower_bound_logN_over_loglambda": math.log(N) / math.log(lam),
         "K": K,
     }
@@ -164,8 +164,23 @@ def main() -> None:
             anchors.append(
                 {
                     "label": label,
-                    "python": py,
-                    "cpp": cpp,
+                    "N": N,
+                    "a": a,
+                    "K": K,
+                    "m": meta["m"],
+                    "V4_count": py["counts"]["V4_count"],
+                    "B_l2_energy_exact_integer": py["counts"]["B_l2_energy_exact_integer"],
+                    "delta_vs_trivial": py["full_twist_energy"]["delta_vs_trivial"],
+                    "cross_fraction_of_full": py["full_twist_energy"]["cross_fraction_of_full"],
+                    "python_projector_max_abs_error": py["projector_identity"]["max_abs_B_reconstruction_error"],
+                    "cpp_projector_max_abs_error": cpp["projector_max_abs_error"],
+                    "cross_gram": py["full_twist_energy"]["cross_gram"],
+                    "A_tau_d0": py["singular_fiber"]["A_tau_d0_expected"],
+                    "max_nontrivial_abs_A_regular_d_nonzero": py["singular_fiber"]["max_nontrivial_abs_A_regular_d_nonzero"],
+                    "HH_regular_mass": py["singular_fiber"]["HH_regular_mass"],
+                    "HH_regular_mass_expected": py["singular_fiber"]["HH_regular_mass_expected"],
+                    "regular_delta_vs_trivial": py["singular_fiber"]["regular_only_delta_vs_trivial"],
+                    "regular_cross_fraction_of_full": py["singular_fiber"]["regular_only_cross_fraction_of_full"],
                     "dual_implementation_comparison": compare_anchor(py, cpp),
                     "trace3_order_certificate": trace3_order_certificate(N, a, K),
                 }
