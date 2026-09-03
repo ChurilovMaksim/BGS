@@ -23,3 +23,12 @@ A historical result moves into the active theory/results only after its statemen
 - Derived `S=H^perp={chi_(Kj)}` and identified its generator as a character of order `m=(N-1)/K`; the old “perfect K-th power” wording used the wrong group order.
 - Classified divisor collisions of `u^r v_d(u)^s`: generic fibers admit no nontrivial m-th-power case; `d=±1` add no nontrivial exception; `d=0` yields exactly the semi-trivial family `psi_1=1`, `psi_2` arbitrary.
 - This matches the independent Python/C++ observation `A_(1,psi_2)(0)=N-2` and localizes the remaining analytic difficulty to exceptional-fiber extraction plus the full cross-Gram cancellation problem.
+
+## 2026-09-03 — exact k=4 difference distribution and archive bug
+
+- Strengthened the clean k=4 verifier: it now accumulates the full difference distribution `B(t)` directly from `(x,y,z,w)`, not only `Sigma_4(q)`.
+- The same `B(t)` is independently rebuilt from the collapsed pair-key table, where `(1,1)` has multiplicity `N-2` and every off-diagonal key has multiplicity one.  The two distributions agree entry-by-entry.
+- Independent Python/C++ runs give, at `N=53`, `|V4|=423879`, `B(0)=12063`, and `sum_t B(t)^2=3410502105`; at `N=23` they give `48621`, `2609`, and `103156981`.
+- The ordered diagonal/off-diagonal coupling classes are exactly `6732` in each direction for `N=53` and `1890` in each direction for `N=23`.
+- Found a factor-of-two bookkeeping error in archived `code/large_m/third_calibration.py`: the code inserts the diagonal-to-off-diagonal contribution only once although the ordered count contains both diagonal→off and off→diagonal.  The `N=53` analogue would give `417147` instead of `423879` if that bug were used.
+- Large-design outputs depending on that producer are archaeology-only until recomputed from a corrected implementation.
