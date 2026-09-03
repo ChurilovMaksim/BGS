@@ -26,8 +26,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check full workspace structure, Python, JSON, Julia boundary, and paper uniqueness
-        run: python tools/check_repository.py
+      - name: Check repository structure and provenance boundary
+        run: python tools/check_repository.py --check structure
+
+      - name: Parse active and research Python corpus
+        run: python tools/check_repository.py --check python
+
+      - name: Parse research and current JSON corpus
+        run: python tools/check_repository.py --check json
 
       - name: Compile supported C++20 programs strictly
         shell: bash
