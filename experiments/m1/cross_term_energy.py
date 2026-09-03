@@ -140,6 +140,18 @@ def analyse_design(prime: int, subgroup_order: int) -> dict[str, object]:
                     }
                 )
 
+    # Fixed Fourier convention: NumPy FFT is unnormalized and IFFT carries 1/N.
+    # Therefore Parseval gives
+    #   ||sum_tau F_tau||_2^2
+    #     = (1/N) sum_xi |sum_tau Ahat_tau(xi)^2|^2.
+    fourier = np.fft.fft(fiber, axis=1)
+    frequency_total_raw = float(
+        np.sum(np.abs(np.sum(fourier**2, axis=0)) ** 2).real / prime
+    )
+    frequency_diagonal_raw = float(
+        np.sum(np.abs(fourier**2) ** 2).real / prime
+    )
+
     normalized_energy = total_raw / dimension**4
     reconstructed_energy = (diagonal_raw + cross_raw) / dimension**4
     return {
@@ -156,6 +168,12 @@ def analyse_design(prime: int, subgroup_order: int) -> dict[str, object]:
         "normalized_energy": normalized_energy,
         "reconstructed_energy": reconstructed_energy,
         "reconstruction_abs_error": abs(normalized_energy - reconstructed_energy),
+        "fourier_total_raw": frequency_total_raw,
+        "fourier_diagonal_raw": frequency_diagonal_raw,
+        "fourier_total_parseval_abs_error": abs(frequency_total_raw - total_raw),
+        "fourier_diagonal_parseval_abs_error": abs(
+            frequency_diagonal_raw - diagonal_raw
+        ),
         "diagonal_raw": diagonal_raw,
         "cross_raw": cross_raw,
         "cross_over_total": cross_raw / total_raw,

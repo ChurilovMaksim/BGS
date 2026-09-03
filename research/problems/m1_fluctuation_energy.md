@@ -28,7 +28,15 @@ It must be expanded as diagonal plus cross terms.  No cross term may be dropped 
 Classify every collision among zero, pole, `0` and infinity for `u^r v_d(u)^s`, including `d=0,±1`, and formulate the correct character-order congruences.
 
 ### B. Exact cross-Gram formula
-Fix one Fourier normalization and express `<F_tau,F_sigma>` as a character sum suitable for cancellation, not as a product of independent upper bounds.
+With `f_hat(xi)=sum_d f(d)e_N(-xi d)`, Parseval and convolution give the exact identity
+
+`<F_tau,F_sigma>=(1/N) sum_xi A_hat_tau(xi)^2 conjugate(A_hat_sigma(xi)^2)`,
+
+so
+
+`E=(1/N) sum_xi |sum_tau A_hat_tau(xi)^2|^2`.
+
+This harmonic identity is now fixed.  The open task is to rewrite the summed Fourier amplitude as a finite-field character sum suitable for genuine cancellation, rather than bounding individual twists independently.
 
 ### C. Exceptional-fiber extraction
 Evaluate exceptional fibers exactly and remove them before any Weil/Deligne estimate.
