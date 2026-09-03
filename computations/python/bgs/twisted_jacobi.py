@@ -1,15 +1,17 @@
-"""Reusable arithmetic for the active twisted-Jacobi verification line."""
+"""Reusable arithmetic for the active twisted-Jacobi finite regressions."""
 from __future__ import annotations
 
 import numpy as np
 
-from .finite_field import multiplicative_order, primitive_root
+from .finite_field import multiplicative_order, primitive_root, require_odd_prime
+from .jacobi import dlog_table
 
 TRACE = 3
 
 
 def square_roots_mod_prime(value: int, prime: int) -> list[int]:
     """Return all square roots of ``value`` modulo an odd prime."""
+    require_odd_prime(prime)
     value %= prime
     if value == 0:
         return [0]
@@ -40,6 +42,8 @@ def square_roots_mod_prime(value: int, prime: int) -> list[int]:
         while t_power != 1:
             t_power = t_power * t_power % prime
             i += 1
+            if i >= m:
+                raise RuntimeError("Tonelli-Shanks iteration failed")
         b = pow(c, 1 << (m - i - 1), prime)
         m = i
         c = b * b % prime
@@ -54,7 +58,11 @@ def find_design_eigenvalue(
     subgroup_order: int,
     trace: int = TRACE,
 ) -> int:
-    """Find a root of ``x^2-trace*x+1`` of the requested order."""
+    """Find a root of ``x^2-trace*x+1`` of exactly the requested order."""
+    require_odd_prime(prime)
+    if subgroup_order <= 0 or (prime - 1) % subgroup_order:
+        raise ValueError("subgroup_order must divide prime-1")
+
     roots = square_roots_mod_prime(trace * trace - 4, prime)
     if not roots:
         raise ValueError(f"N={prime} is not split for trace={trace}")
@@ -77,15 +85,23 @@ def build_closed_form(
     odd_parity: bool,
     q_values,
 ):
-    """Compute standardized moments of the active twisted-Jacobi matrix."""
-    del eigenvalue
+    """Compute finite standardized moments in the recorded character sector.
+
+    ``eigenvalue`` is a checked design parameter: it must have exact order
+    ``subgroup_order``.  This routine is a numerical/finite-regression helper,
+    not a theorem about an asymptotic ensemble.
+    """
+    require_odd_prime(prime)
+    if subgroup_order <= 0 or (prime - 1) % subgroup_order:
+        raise ValueError("subgroup_order must divide prime-1")
+    actual_order = multiplicative_order(eigenvalue, prime)
+    if actual_order != subgroup_order:
+        raise ValueError(
+            f"eigenvalue has order {actual_order}, expected {subgroup_order}"
+        )
 
     generator = primitive_root(prime)
-    dlog = np.zeros(prime, dtype=np.int64)
-    value = 1
-    for exponent in range(prime - 1):
-        dlog[value] = exponent
-        value = value * generator % prime
+    dlog = dlog_table(prime, generator)
 
     character_indices = np.array(
         [
@@ -97,30 +113,24 @@ def build_closed_form(
         dtype=np.int64,
     )
     dimension = len(character_indices)
+    if dimension == 0:
+        raise ValueError("requested character/parity sector is empty")
 
     x_values = np.arange(2, prime, dtype=np.int64)
     log_x = dlog[x_values]
     log_x_minus_one = dlog[(x_values - 1) % prime]
     left = np.exp(
-        -2j
-        * np.pi
-        * np.outer(character_indices, log_x)
-        / (prime - 1)
+        -2j * np.pi * np.outer(character_indices, log_x) / (prime - 1)
     )
     right = np.exp(
-        2j
-        * np.pi
-        * np.outer(character_indices, log_x_minus_one)
-        / (prime - 1)
+        2j * np.pi * np.outer(character_indices, log_x_minus_one) / (prime - 1)
     )
 
     inverse_two = pow(2, prime - 2, prime)
     output: dict[int, dict[str, float | int]] = {}
     for q_value in q_values:
-        q = int(q_value)
-        additive_phase = np.exp(
-            2j * np.pi * (q * x_values % prime) / prime
-        )
+        q = int(q_value) % prime
+        additive_phase = np.exp(2j * np.pi * (q * x_values % prime) / prime)
         jacobi = (left * additive_phase) @ right.T
         normalized = (
             np.exp(-2j * np.pi * (inverse_two * q % prime) / prime)
@@ -131,6 +141,8 @@ def build_closed_form(
         eigenvalues = np.linalg.eigvalsh(hermitian)
         centered = eigenvalues - eigenvalues.mean()
         variance = float((centered**2).mean())
+        if not variance > 0.0:
+            raise ValueError(f"zero spectral variance at q={q}")
         standardized = centered / np.sqrt(variance)
         output[q] = {
             "m": int(dimension),
