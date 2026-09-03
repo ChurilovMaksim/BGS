@@ -2,38 +2,29 @@
 
 Updated: 2026-09-03.
 
-## Established finite statements and reproducibility anchors
+## Bottom line
 
-- Twisted-Jacobi fourth-moment baseline reproduces the preserved R82 data at `N=199` and `N=3571` to the previously audited floating-point tolerance.
-- The exact `k=2` character-orthogonality reduction is reproduced at multiple designs; the active verifier now also checks its Cayley/additive-energy form and exact cyclotomic exceptional primes for `K=11,13`.
-- The vectorized twisted-Jacobi matrix formula agrees with independent direct scalar character sums at `N=461` and `N=19489` within the stored tolerance.
-- The exact `k=4` pair-key distribution `B(t)` is independently reconstructed in Python and C++. Current exact anchors are:
-  - `N=23,K=11`: `|V4|=48,621`, `B(0)=2,609`, `sum B(t)^2=103,156,981`;
-  - `N=53,K=13`: `423,879`, `12,063`, `3,410,502,105`;
-  - `N=199,K=11`: `4,681,821`, `96,641`, `115,589,503,389`;
-  - `N=461,K=23`: `111,147,915`, `641,799`, `26,960,554,630,421`.
-- For `N<=53`, original-pair collapse, explicit keys and the corrected `H^2` algorithm agree on the exact geometry. The twist-sum identity is independently checked through `N=199` in Python and direct-DFT C++.
-- The total k=4 variety count has the exact closed form
-  `V4=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`.
-- More generally, the even-moment factorization follows by character orthogonality. This is an exact reduction, not an asymptotic estimate.
+General BGS/local eigenphase statistics for this project are **not proved**. The historical `M4D_PROOF` / Mobius-fiber argument is not an active theorem input.
 
-## Exact reformulation of M1
+The current proof program has, however, become much sharper. The exact fourth-moment object is the pair-key distribution `B(t)`. Its finite combinatorics, Fourier reduction, mean/variance duality, the mixed `k=2` energy, and most of the generic off/off elliptic-family geometry are now explicit. A restricted M1 proof chain for odd prime `K` outside an explicit cyclotomic exception set and in the first regime `K=o(N^(1/4))` has been assembled. It remains a **theorem draft pending line-by-line proof audit/formalization**, especially for computer-assisted algebraic factorizations and the precise sheaf-theoretic citations/hypotheses.
 
-The active fourth-moment object is the pair-key distribution `B(t)`, not the historical Möbius graph.
+## Exact finite statements
 
-For the correct key amplitudes `A_(chi,psi)`, double character orthogonality gives exactly
+Let `N` be an odd split prime, `H <= F_N^*` have order `K`, and `m=(N-1)/K`. For the weighted pair-key table, the exact coupled distribution `B(t)` satisfies
 
-`sum_(chi,psi) (A_(chi,psi)*A_(chi,psi))(t)=m^2 B(t)`
+`V4=sum_t B(t)=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`.
+
+For the correct key amplitudes,
+
+`sum_(chi,psi in H^perp) (A_(chi,psi)*A_(chi,psi))(t)=m^2 B(t)`
 
 and
 
-`sum_(chi,psi) A_hat_(chi,psi)(xi)^2=m^2 B_hat(xi)`.
+`sum_(chi,psi in H^perp)|J(chi,psi;q)|^4=m^2 Sigma4(q)`,
 
-The fourth-moment fluctuation is
+where `Sigma4(q)=sum_t B(t)e_N(qt)`.
 
-`Sigma4(q)=sum_t B(t)e_N(qt)`
-
-with exact identities
+The exact Fourier identities are
 
 `mean_(q!=0) Sigma4=(N B(0)-V4)/(N-1)`
 
@@ -41,29 +32,28 @@ and
 
 `Var_(q!=0) Sigma4=N Var_(t!=0)B(t)`.
 
-Thus the load-bearing variance target is
+Independent Python/C++ exact anchors are:
 
-`Var_(t!=0)B(t)=O(K^2 N)`.
+| N | K | V4 | B(0) | sum B(t)^2 |
+|---:|---:|---:|---:|---:|
+| 23 | 11 | 48,621 | 2,609 | 103,156,981 |
+| 53 | 13 | 423,879 | 12,063 | 3,410,502,105 |
+| 199 | 11 | 4,681,821 | 96,641 | 115,589,503,389 |
+| 461 | 23 | 111,147,915 | 641,799 | 26,960,554,630,421 |
 
-## Mixed k=2 component: now controlled outside explicit exceptions
+## Mixed k=2 component: exact control outside explicit exceptions
 
-Write
+The structural decomposition is
 
-`B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_{t=0}`.
+`B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_(t=0)`.
 
-With the Cayley transform
-
-`c(h)=(h+1)/(h-1)`,
-
-one has exactly
+With `c(h)=(h+1)/(h-1)`,
 
 `d(u,v)=2/(c(u)-c(v))`.
 
-Therefore `C_H` is the nonzero additive-difference representation function of `A=c(H\{1})`, up to a bijective relabelling of the difference variable.
+Thus `C_H` is the nonzero additive-difference representation function of the Cayley image `A=c(H\{1})`, after a bijective relabeling of the difference.
 
-For odd prime `K`, an exact `6!` cyclotomic matching audit now includes both rank-two and rank-three kernels and shows that over characteristic zero the only collisions are identity and the forced central-symmetry partner. Non-forced finite-field collisions occur exactly at a finite set of rational primes dividing explicit cyclotomic resultants.
-
-The default exact exception sets are
+For odd prime `K`, an exact 720-system cyclotomic audit leaves only identity and inversion-swap collisions in characteristic zero. Non-forced finite-field collisions occur exactly at rational primes dividing explicit cyclotomic resultants. The default verified sets are
 
 `E_11={23,67,89}`,
 
@@ -73,85 +63,81 @@ For prime `N == 1 (mod K)` with `N notin E_K`,
 
 `sum_t C_H(t)^2=(K-1)(2K-5)`
 
-and hence
-
-`std_(t!=0)[2(N-2)C_H(t)]=O(K sqrt(N))`.
-
-So the mixed `k=2` component has the required M1 scale in this explicit nonexceptional odd-prime-`K` regime. The remaining dominant obstruction is the pure off/off term `O(t)`.
+and therefore the mixed layer has standard deviation `O(K sqrt(N))`, exactly the global M1 scale.
 
 ## Mean of Sigma4
 
-The mean has two deterministic `N^2`-scale spikes: the diagonal key self-coupling and the `(h1,h2)=(1,1)` inversion class in `O(0)`.
+Two deterministic `N^2`-scale spikes occur at `t=0`: the weighted diagonal key and the off/off inversion class `(h1,h2)=(1,1)`. Generic zero-difference classes complete to smooth genus-one curves. The current Hasse-Weil calculation gives
 
-For generic `h1,h2!=1`, `h1!=h2`, the zero-difference off/off equation completes to a smooth plane cubic. Independent SymPy and Wolfram resultants give no extra generic `t=0` singular stratum. Hasse-Weil therefore yields
+`mean Sigma4 = 2N^2 + O(KN + N + K^2 sqrt(N))`.
 
-`mean Sigma4 = 2N^2 + O(KN + N + K^2 sqrt(N))`,
+Hence the mean asymptotic is available in the provisional range `K=o(N^(3/4))`, subject to publication-quality certification of the displayed resultant/boundary calculation.
 
-once the resultant factorization is converted into a publication-quality algebraic lemma. In particular the mean asymptotic holds in the provisional range `K=o(N^(3/4))`.
+## Generic off/off elliptic family
 
-## Main analytic frontier: generic off/off elliptic correlations
-
-In Cayley coordinates `a=c(u)`, `b=c(v)`, `alpha=c(h1)`, `beta=c(h2)`, the generic off/off fiber is
-
-`2/(a-b)+2/(T_alpha(a)-T_beta(b))=t`,
-
-where
+In Cayley coordinates `a=c(u)`, `b=c(v)`, `alpha=c(h1)`, `beta=c(h2)`, put
 
 `T_alpha(a)=(alpha*a-1)/(a-alpha)`.
 
-The branch-quartic discriminant has an explicit factorization. Setting
+The generic fiber is the plane cubic
 
-`p=alpha+beta`, `d=alpha-beta`,
+`2/(a-b)+2/(T_alpha(a)-T_beta(b))=t`.
 
-the residual quartic is squarefree except on the two `O(K)` parameter strata
+For `p=alpha+beta`, `d=alpha-beta`, its binary-quartic model has a squarefree residual discriminant outside the two `O(K)` parameter strata `d=0` (`h1=h2`) and `p=0` (`h1h2=1`). The generic `j`-map has degree 12 and pole type `(4,4,1,1,1,1)`, so the family is non-isotrivial.
 
-`d=0 <=> h1=h2`,
+The exact same-base symmetry is only
 
-and
+`(h1,h2) -> (h2^-1,h1^-1)`.
 
-`p=0 <=> h1 h2=1`.
+The degree-12/cusp-width argument on `X_0(n)` rules out nontrivial generic cyclic isogenies; the inseparable case is excluded by the degree of `j`. Zarhin's geometric Tate theorem then converts local-system isomorphism into isogeny, so generic rank-two local systems are non-isomorphic outside the exact involution orbit.
 
-On the generic locus the elliptic `j`-function has a genuine order-four pole at `t=2/d`, so the family is non-isotrivial. The pole location recovers `d`; the ratio of the first two Laurent coefficients at infinity recovers `p^2`. Consequently generic same-base equality of `j`-functions occurs only for
+At the order-four bad fiber
 
-`(h1,h2)`
+`t=d(h1,h2)`
 
-and the exact key involution partner
+the cubic factors into two lines. Its `N`-scale spike is therefore counted by the already controlled `C_H(t)` energy. The other four generic bad fibers are nodal/rational.
 
-`(h2^-1,h1^-1)`.
+For the exact affine key count one has the bookkeeping form
 
-This reduces the remaining geometric-isomorphism problem to the natural symmetry already seen in the exact finite arrays.
+`O_lambda(t)=N-a_lambda(t)+N 1_(t=d(h1,h2))+e_lambda(t)`,
 
-Modern quantitative sheaf theory gives the right abstract next step: once the rank-two elliptic trace sheaves are constructed and shown pure/geometrically irreducible, uniformly bounded complexity follows from fixed-degree geometry, and non-isomorphic sheaves admit square-root quasi-orthogonality. The repository has **not yet** promoted those sheaf hypotheses as proved.
+where the open-domain boundary has total degree 10, hence at most 30 geometric intersections with an irreducible cubic. Consequently `e_lambda=O(1)` on good fibers and only sparse `O(sqrt(N))` corrections remain at the non-reducible bad fibers.
 
-If that final sheaf-correlation proposition is established, the generic off/off variance satisfies
+## Restricted M1 theorem draft
 
-`Var O(t)=O(K^2 N + K^4 sqrt(N))`,
+Combining Deligne purity, Igusa monodromy for non-isotrivial elliptic curves, fixed-degree complexity bounds, the no-isogeny classification above, and quantitative sheaf quasi-orthogonality gives the draft generic estimate
 
-which gives the full M1 target in the first honest regime
+`Var O(t) << K^2 N + K^4 sqrt(N) + K^4`.
 
-`K=o(N^(1/4))`.
+The reducible bad-fiber spikes contribute `O(K^2N)` by the Cayley energy; the special `O(K)` parameter strata are no larger than target scale. Cauchy-Schwarz controls covariance with the mixed layer.
 
-This is a conditional theorem target, not a completed result.
+Therefore the assembled proof chain gives, in the first restricted regime,
 
-## Fresh corrected numerical evidence
+`K=o(N^(1/4))  =>  Var_(t!=0) B(t)=O(K^2N)`,
 
-Using the corrected key-table producer, not archived Run-93 outputs, larger-`m` designs remain consistent with
+and hence
 
-`mean Sigma4 ~ 2N^2`,
-`std Sigma4 ~ 4NK`,
-`relative std ~ 2K/N`.
+`std Sigma4=O(NK)`, `std(Sigma4)/mean(Sigma4)=O(K/N)`.
 
-Examples include `N=199,K=11,m=18`, `N=461,K=23,m=20`, and the independent trace-3 design `N=521,K=13,m=40`. These are falsifiers/evidence, not a proof of the asymptotic law.
+**Status:** proof chain assembled; not yet promoted to a final published theorem. Remaining work is proof audit/formalization, not discovery of a missing cancellation mechanism.
 
-## Explicitly retracted / not active
+## Reproducibility and language migration
 
-- “General BGS proved.” — false.
-- Historical `M4D_PROOF` / Möbius-fiber theorem — retracted as a theorem input.
-- The historical Möbius assembly is the wrong finite object: it contains a phantom `(1,1)` point for every `d!=0` and mishandles the multiplicity-`N-2` diagonal at `d=0`.
-- R86/R87 trace-fluctuation shortcut — invalid as stated because it uses a commutative binomial expansion for noncommuting matrices and an unproved factorization.
-- Historical `N=95419` ratio-vs-spacing KS result — invalid comparison of different statistics.
-- Old word-trace “certificate” — unresolved word case, not a proof.
-- Archived Run 93.2 third-calibration outputs — producer omits the reverse ordered off→diagonal coupling and must be recomputed before use.
-- Old Sp4/rank-2 theorem labels — archaeology until representation/projector conventions are rebuilt independently.
+The active codebase is consolidated around Python for symbolic/exact orchestration and data analysis, and C++20 for heavy finite-field/exhaustive kernels. Fortran is deliberately not added without a measured numerical need. Every historical Julia path is accounted for in `research/engineering/language_migration.md`; the original Julia sources remain only in the immutable archive/Git history rather than being copied into another legacy tree.
 
-No file under `archive/` changes the status above.
+The canonical manuscript is `paper/main.tex` with built `paper/main.pdf`. There are no competing active section-level TeX manuscripts.
+
+## Explicitly retracted / quarantined
+
+- "General BGS proved." - false.
+- Historical `M4D_PROOF` / Mobius-fiber theorem - retracted as theorem input.
+- Historical Mobius assembly - wrong finite object (phantom `(1,1)` and wrong diagonal multiplicity).
+- Run 93.2 third-calibration output - old producer omitted one ordered diagonal/off coupling class.
+- R86/R87 noncommutative trace shortcut - invalid as stated.
+- Historical `N=95419` ratio-vs-spacing KS test - compared different statistics.
+- Old word-trace "certificate" - unresolved word case.
+- Hecke-centering Julia series - failed line; later red-team shows basis-selection and centering/noise defects.
+- Historical `cdense_transfer.jl` Perron bracket - falsified by the zero-cost self-loop.
+- Historical `sol6_closed_form.jl` title/closed form - falsified by its own preserved finite rows and the new exact enumerator.
+
+Nothing under `archive/` overrides this status.
