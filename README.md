@@ -1,71 +1,95 @@
-# Quantized hyperbolic cat maps: exact moment reductions and the BGS frontier
+# Arithmetic quantum cat maps and the BGS frontier
 
-This repository is a research workspace for spectral statistics of quantized hyperbolic toral automorphisms. Its present load-bearing line is an exact finite-field reduction of a character-averaged fourth moment to a weighted pair-key distribution, followed by a still-incomplete geometric analysis of its fluctuations.
+This repository is a research archive and working laboratory for exact
+finite-field reductions, matrix-element moments and local spectral statistics
+of quantized hyperbolic toral automorphisms.
 
-## Scientific status (3 September 2026)
+The repository is intentionally organized like a mathematical research project,
+not a software product.  The trust boundary is explicit: **preserve broadly,
+trust narrowly**.
 
-**Established exactly.** For an odd prime level `N`, a multiplicative subgroup `H <= F_N^*` of order `K`, and `m=(N-1)/K`:
+## Current mathematical position
 
-- the off-diagonal pair map `(x,y) -> (u,v,d)` is bijective on its stated domain and the diagonal collapses to one weighted key;
-- the `k=2` constrained off-diagonal count is `(K-1)(K-2)`;
-- the coupled `k=4` distribution `B(t)` has
-  `sum_t B(t)=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`;
-- character orthogonality gives the exact fourth-moment collapse
-  `sum_{chi,psi in H^perp}|J(chi,psi;q)|^4=m^2 Sigma4(q)` with `Sigma4` the Fourier transform of `B`;
-- `Var_{q!=0} Sigma4 = N Var_{t!=0} B(t)` exactly;
-- `B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_{t=0}` exactly;
-- the Cayley identity `d(u,v)=2/(c(u)-c(v))` turns the mixed term into an additive-energy problem.
+The exact load-bearing object is the weighted pair-key fourth-moment
+distribution `B(t)`.  The pair parametrization, `k=2` count, `k=4` total,
+character-orthogonality collapse and finite Fourier mean/variance duality are
+exact.  The mixed term is reduced by a Cayley transform to an additive-energy
+problem.  For fixed odd prime subgroup order `K`, non-forced finite-field
+collisions occur only at explicit cyclotomic reduction primes; the audited
+sets currently include
 
-For odd prime `K`, the characteristic-zero Cayley collision classification is finite and exact. For fixed `K`, finite-field exceptions are controlled by cyclotomic resultants. The fully audited exception sets currently stored here are
-`E_11={23,67,89}` and `E_13={53,79,131,157,313}`. A fresh independent reconstruction also shows that `(N,K)=(461,23)` is exceptional for the forced-energy formula: `sum_t C_H(t)^2=1190`, not `902`.
+`E_11={23,67,89}` and `E_13={53,79,131,157,313}`.
 
-**Not established.** General BGS/local eigenphase statistics are not proved. The proposed off/off elliptic-family estimate, and therefore the restricted `K=o(N^(1/4))` M1 concentration statement, remains conditional on a publication-grade verification of the algebraic family model and the exact geometric/sheaf hypotheses needed for square-root cross-correlation. Even a completed M1 theorem would still require a separate argument connecting moment concentration to a local spectral law.
+The exact negative control `(N,K)=(461,23)` has Cayley energy `1190`, whereas
+the forced central-symmetry baseline is `902`.
 
-## Repository structure
+The remaining off/off term has a non-isotrivial elliptic-family organization.
+A restricted `K=o(N^(1/4))` M1 estimate is still a **theorem draft**, not a
+finished theorem: the actual algebraic family and the exact sheaf-correlation
+hypotheses must be certified at publication standard.  Even that would not
+prove microscopic BGS/GOE local eigenphase statistics; the local-law bridge is
+separate and open.
 
-- `theory/` — current mathematical statements, derivations, proof obligations and open problems.
-- `src/python/` — readable exact/symbolic and moderate numerical kernels.
-- `src/cpp/` — expensive exhaustive finite-field kernels and independent exact verifiers.
-- `experiments/verification/` — reproducible finite checks of load-bearing identities.
-- `experiments/spectral/` — finite spectral-statistics experiments; never theorem evidence by themselves.
-- `results/verified/` — small machine-readable exact/finite certificates.
-- `results/numerical/` — explicitly numerical evidence.
-- `results/reference/` — minimal retained reference inputs needed by active regression checks.
-- `formal/` — Lean 4 finite certificates and formalization work.
-- `literature/` — bibliography and current literature boundary.
-- `paper/main.tex` — canonical manuscript source.
+## Scientific layout
 
-Historical failed routes, old Julia programs, duplicated data trees and superseded manuscripts are intentionally absent from the active tree. They remain recoverable from Git history; they do not define current mathematical truth.
+- `manuscript/` — the single active article source and its committed PDF.
+- `mathematics/` — current derivations, proof notes and open questions.
+- `computations/` — supported Python/C++ implementations and current regression
+  checks.
+- `evidence/` — promoted finite certificates, numerical evidence and minimal
+  reference inputs.
+- `formalization/` — Lean 4 finite certificates and open formalization work.
+- `literature/` — current bibliography and literature-boundary notes.
+- `record/` — reconstruction ledger, retractions, Julia migration map, exact ZIP
+  manifest and the broader historical research corpus.
+
+`record/corpus/` is deliberately non-authoritative.  It contains useful
+experiments, negative results, review material and historical code/data restored
+for scientific provenance.  A file being present there does not promote its
+claim.
 
 ## Reproducibility
 
-Python dependencies are pinned in `requirements.txt`.
-
 ```bash
-python -m compileall -q src/python experiments
-python experiments/verification/verify_cayley_anchor_k23.py
-python experiments/verification/verify_fourth_moment_factorization.py
-python experiments/verification/verify_second_moment_reduction.py
-```
+python -m pip install -r requirements.txt
+python computations/verification/current_regression.py
 
-C++20 components can be built with CMake:
-
-```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
-./build/fourth_moment_factorization
 ./build/cross_term_energy verify
-```
+./build/fourth_moment_factorization
+./build/catmap_order verify
+./build/relation_automaton verify
 
-Lean sources use the pinned toolchain in `formal/lean-toolchain`:
-
-```bash
-cd formal
+cd formalization
 lake build
 ```
 
-The manuscript builds with `latexmk -pdf paper/main.tex` (or from inside `paper/`).
+The manuscript is built by
+
+```bash
+cd manuscript
+latexmk -pdf -interaction=nonstopmode -halt-on-error arithmetic_cat_map_moments.tex
+```
+
+Both `arithmetic_cat_map_moments.tex` and `arithmetic_cat_map_moments.pdf` are
+versioned.  CI independently recompiles the TeX source.
+
+## Evidence labels
+
+Use `record/claim_ledger.md` before citing a result.  In particular, finite Lean
+certificates are not automatically uniform theorems, numerical GOE fits are not
+a limiting law, and the historical Möbius-fiber/M4D proof is retracted from the
+active argument.
 
 ## Language policy
 
-Python is used for transparent symbolic/exact orchestration and analysis; C++20 for hot exhaustive kernels and independent finite verification. Fortran will be introduced only when profiling identifies a dense numerical kernel where it is materially better. Julia is no longer part of the active implementation layer. Lean remains part of the project independently of whether a given runtime exposes a Lean executable.
+Python is used for symbolic/exact orchestration and readable analysis.  C++20 is
+used for exhaustive finite-field and combinatorial kernels and for independent
+verification.  Fortran will be introduced only when profiling identifies a
+dense numerical kernel for which it materially improves the implementation.
+
+The supplied snapshot contains 31 Julia paths (23 byte-distinct sources).
+Every one is accounted for in `record/julia_migration.md`; falsified Julia
+algorithms are not mechanically translated and useful ones are migrated only
+against preserved exact anchors.

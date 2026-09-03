@@ -1,0 +1,8 @@
+table: 23426 keys (0 s)
+kl-case surface-family: avg |T|^2/N^2 = 12.4008  (target 14);  2652 pairs (2 s)
+   |T|^2/N^2 buckets: [0,1):526  [1,5):800  [5,14):118  [14,50):1208  [50,200):0  [200,1000000000):0
+   mass%:             0.8  5.8  3.1  90.3  0.0  0.0
+   heavy points (|T|^2/N^2 > 50): 0
+Traceback (most recent call last):
+  File "<stdin>", line 51, in <module>
+NameError: name 'json' is not defined. Did you forget to import 'json'?

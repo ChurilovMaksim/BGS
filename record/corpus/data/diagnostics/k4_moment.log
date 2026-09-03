@@ -1,0 +1,5 @@
+N=37 q=3: M8 = 2.1246e+07;  sum|W4|^2 = 2.1246e+07;  rel err 3.5e-16
+   constant (1/N^4)sum|W4|^2 = 11.3362  (Catalan C4 = 14);  #nonempty 1296/1369;  max|W4|/N = 10.345  (J 0s, W 0s)
+N=41 q=7: M8 = 3.2420e+07;  sum|W4|^2 = 3.2420e+07;  rel err 1.1e-15
+   constant (1/N^4)sum|W4|^2 = 11.4729  (Catalan C4 = 14);  #nonempty 1600/1681;  max|W4|/N = 9.262  (J 0s, W 0s)
+artifact -> artifacts/r82/k4_moment.json

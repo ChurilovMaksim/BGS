@@ -18,29 +18,26 @@ jobs:
           python-version: '3.13'
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
-      - name: Compile Python sources
+      - name: Compile active Python
         run: |
-          python -m compileall -q src/python
-          python -m compileall -q experiments/verification
-          python -m compileall -q experiments/spectral
-      - name: Parse retained JSON results
+          python -m compileall -q computations/python
+          python -m compileall -q computations/verification
+      - name: Parse promoted JSON evidence
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          for path in Path("results").rglob("*.json"):
+          for path in Path("evidence").rglob("*.json"):
               json.loads(path.read_text(encoding="utf-8"))
-          print("JSON corpus: OK")
+          print("evidence JSON: OK")
           PY
-      - name: Run exact Python gates
-        run: |
-          python experiments/verification/verify_cayley_anchor_k23.py
-          python experiments/verification/verify_second_moment_reduction.py
+      - name: Run current exact finite regression
+        run: python computations/verification/current_regression.py
       - name: Install C++ dependency
         run: |
           sudo apt-get update
           sudo apt-get install -y libboost-dev
-      - name: Build C++ exact verifiers
+      - name: Build supported C++ kernels
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
           cmake --build build -j2
@@ -48,8 +45,10 @@ jobs:
         run: |
           ./build/cross_term_energy verify
           ./build/fourth_moment_factorization
+          ./build/catmap_order verify
+          ./build/relation_automaton verify
 
-  lean:
+  formalization:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -57,20 +56,25 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Build Lean certificates
+      - name: Build Lean sources
         run: |
-          cd formal
+          cd formalization
           lake build
 
   manuscript:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check committed PDF
+        run: test -s manuscript/arithmetic_cat_map_moments.pdf
       - name: Install TeX
         run: |
           sudo apt-get update
           sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
-      - name: Compile manuscript
+      - name: Compile manuscript independently
         run: |
-          cd paper
-          latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+          mkdir -p build/manuscript
+          latexmk -pdf -interaction=nonstopmode -halt-on-error \
+            -outdir=build/manuscript \
+            manuscript/arithmetic_cat_map_moments.tex
+          test -s build/manuscript/arithmetic_cat_map_moments.pdf

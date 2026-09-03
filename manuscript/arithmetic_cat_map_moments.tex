@@ -1,0 +1,552 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!55!black
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{problem}[theorem]{Problem}
+\newcommand{\F}{\mathbf F}
+\newcommand{\E}{\mathbf E}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\eN}[1]{e_N\!\left(#1\right)}
+\newcommand{\Oh}{O}
+
+\title{Exact Finite-Field Moment Reductions for Arithmetic Quantum Cat Maps\\
+and the Remaining BGS Frontier}
+\author{Maksim Churilov}
+\date{Research draft --- 3 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We isolate an exact finite-field object controlling a character-averaged fourth
+moment in an arithmetic quantum cat-map model.  The correct object is a
+weighted pair-key distribution $B(t)$; an earlier M\"obius-fiber assembly is
+shown to be a different finite object and is not used.  We prove exact
+pair-key, counting, character-orthogonality and Fourier-variance identities.
+The mixed part of $B$ is transformed by a Cayley map into an additive-energy
+problem.  For each fixed odd prime subgroup order $K$, characteristic-zero
+collisions are classified by a finite cyclotomic matching problem and
+finite-field exceptions are detected by explicit resultants.  The audited
+sets for $K=11,13$ are stated, together with the exact exceptional control
+$(N,K)=(461,23)$.  The remaining off/off term is organized by a
+non-isotrivial elliptic pencil.  We state the precise algebraic and
+sheaf-theoretic obligations that still prevent promotion of the resulting
+$K=o(N^{1/4})$ fourth-moment estimate to an unconditional theorem.  Finite
+GOE-like spacing and rigidity data are recorded only as numerical evidence.
+No microscopic BGS eigenphase law is claimed.
+\end{abstract}
+
+\section{Scope and evidence boundary}
+
+The Bohigas--Giannoni--Schmit principle predicts random-matrix local spectral
+statistics for suitable quantizations of classically chaotic systems after
+exact symmetries are removed.  Arithmetic cat maps are delicate because their
+finite-field and Hecke structures can produce exact degeneracies and
+long-range arithmetic dependence.  A matrix-element moment identity, a
+quantum-ergodicity theorem, or a finite Wigner--Dyson fit does not by itself
+imply a microscopic GOE/GUE eigenphase law.
+
+The purpose of this note is therefore narrower and testable:
+\begin{enumerate}
+\item identify the exact finite-field fourth-moment object;
+\item separate its deterministic, mixed and genuinely two-parameter pieces;
+\item prove the exact finite reductions;
+\item isolate the remaining geometric correlation problem without importing
+      a local-law theorem before its hypotheses are available.
+\end{enumerate}
+
+We use the following evidence labels throughout.
+An \emph{exact identity} is a finite algebraic/combinatorial statement.
+A \emph{finite certificate} is a statement at explicitly listed finite
+designs, including machine-checked Lean calculations.
+A \emph{conditional proposition} records a precise implication whose
+load-bearing hypotheses remain to be certified.
+Numerical spectral calculations are never used as proofs.
+
+\section{Finite-field setup and pair keys}
+
+Let $N$ be an odd prime and
+\[
+  H\leq \F_N^\times,\qquad |H|=K,\qquad
+  m=\frac{N-1}{K}.
+\]
+Let $S=H^\perp$ denote the annihilator subgroup of multiplicative characters.
+For $x,y\in\F_N\setminus\{0,1\}$ define
+\[
+  u=\frac{x}{y},\qquad
+  v=\frac{x-1}{y-1},\qquad
+  d=x-y.
+\]
+
+\begin{proposition}[Pair-key parametrization]
+If $x\neq y$, then $(x,y)\mapsto(u,v)$ is a bijection onto
+\[
+ D_{\rm off}=
+ \{(u,v)\in(\F_N^\times\setminus\{1\})^2:u\neq v\},
+\]
+with inverse
+\[
+  y=\frac{1-v}{u-v},\qquad
+  x=\frac{u(1-v)}{u-v},
+\]
+and
+\[
+  d(u,v)=\frac{(u-1)(v-1)}{v-u}.
+\]
+On the diagonal $x=y$, all $N-2$ admissible pairs have key $(1,1)$ and
+difference $0$.
+\end{proposition}
+
+\begin{proof}
+From $u=x/y$ and $v=(x-1)/(y-1)$ one has
+$x=uy$ and $uy-1=v(y-1)$.  Hence $(u-v)y=1-v$, which gives the inverse
+when $u\neq v$.  Substitution gives the displayed $d(u,v)$.  Conversely,
+for $u,v\in\F_N^\times\setminus\{1\}$ with $u\neq v$, the formulas give
+$x,y\notin\{0,1\}$ and recover the prescribed key.  If $x=y$, both ratios
+are $1$ and $d=0$; the admissible diagonal has $N-2$ points.
+\end{proof}
+
+The diagonal multiplicity is load-bearing.  Treating $(1,1)$ as an ordinary
+unit-weight point changes the fourth-moment object.
+
+\section{Exact second- and fourth-moment reductions}
+
+A collapsed key record is
+\[
+  r=(u_r,v_r,d_r,n_r),
+\]
+where $n_r$ is the multiplicity.  Define
+\[
+ B(t)=\sum_{r,s}
+ n_rn_s\,
+ \one_H(u_ru_s)\,
+ \one_H(v_rv_s)\,
+ \one_{d_r+d_s=t}.
+\]
+
+\begin{lemma}[$k=2$ constrained count]
+The number of off-diagonal keys in $(H\setminus\{1\})^2$ is
+\[
+  (K-1)(K-2).
+\]
+\end{lemma}
+
+\begin{proof}
+There are $(K-1)^2$ ordered pairs with both entries nontrivial and $K-1$
+diagonal pairs $u=v$ to remove.
+\end{proof}
+
+\begin{theorem}[Exact $k=4$ total]
+For every odd prime $N$ and every multiplicative subgroup $H$ of order $K$,
+\[
+ \sum_t B(t)
+ =
+ (K^2+1)N^2-(6K^2+3K)N+13K^2-3K.
+\]
+\end{theorem}
+
+\begin{proof}
+Split the ordered coupling into diagonal/diagonal, diagonal/off,
+off/diagonal and off/off classes.  The first contributes $(N-2)^2$.
+Each mixed class contributes
+\[
+ (N-2)(K-1)(K-2).
+\]
+For an off-diagonal key $(u,v)$ a partner has the form
+$(h_1/u,h_2/v)$, $(h_1,h_2)\in H^2$.  Failure to remain in
+$D_{\rm off}$ occurs through $h_1=u$, $h_2=v$, or
+$h_1v=h_2u$.  Inclusion--exclusion gives
+\[
+ V_{\rm off}
+ =
+ K^2(N-2)(N-3)
+ -3K(K-1)(N-3)
+ +2(K-1)(K-2).
+\]
+Adding the four ordered classes and simplifying yields the formula.
+\end{proof}
+
+For $\chi,\psi\in S$ put
+\[
+ A_{\chi,\psi}(d)
+ =
+ \sum_{r:d_r=d}n_r\chi(u_r)\psi(v_r).
+\]
+
+\begin{theorem}[Character collapse]
+For every $t\in\F_N$,
+\[
+ \sum_{\chi,\psi\in S}
+ (A_{\chi,\psi}*A_{\chi,\psi})(t)
+ =
+ m^2 B(t).
+\]
+\end{theorem}
+
+\begin{proof}
+Expand the convolution over ordered key records.  The sum over $\chi\in S$
+is $m$ precisely when $u_ru_s\in H$ and is zero otherwise; the same holds
+independently for $\psi$ and the $v$-constraint.
+\end{proof}
+
+For the twisted Jacobi sums
+\[
+ J(\chi,\psi;q)
+ =
+ \sum_{x\in\F_N\setminus\{0,1\}}
+ \overline{\chi(x)}\,\psi(x-1)\eN{qx},
+\]
+the same expansion gives
+\[
+ \sum_{\chi,\psi\in S}|J(\chi,\psi;q)|^4
+ =
+ m^2\Sigma_4(q),
+ \qquad
+ \Sigma_4(q)=\sum_t B(t)\eN{qt}.
+\]
+
+\section{Exact Fourier mean and variance}
+
+Let
+\[
+  V=\sum_tB(t),\qquad Z=B(0).
+\]
+
+\begin{theorem}[Finite Fourier duality]
+Averaging over nonzero additive frequencies,
+\[
+ \E_{q\neq0}\Sigma_4(q)=\frac{NZ-V}{N-1},
+\]
+and
+\[
+ \Var_{q\neq0}\Sigma_4(q)
+ =
+ N\,\Var_{t\neq0}B(t).
+\]
+\end{theorem}
+
+\begin{proof}
+Use
+\[
+ \sum_{q\neq0}e_N(qt)=
+ \begin{cases}
+ N-1,&t=0,\\
+ -1,&t\neq0,
+ \end{cases}
+\]
+for the mean.  For the second centered moment, expand the Fourier transform,
+apply the same complete orthogonality relation to $t-s$, and simplify the
+nonzero-frequency mean term.  No asymptotic input is used.
+\end{proof}
+
+Consequently,
+\[
+ \operatorname{std}_{q\neq0}\Sigma_4(q)=O(NK)
+\]
+is exactly equivalent to
+\[
+ \operatorname{std}_{t\neq0}B(t)=O(K\sqrt N).
+\]
+
+\section{Deterministic, mixed and off/off decomposition}
+
+Let
+\[
+ C_H(t)=
+ \#\{(u,v)\in(H\setminus\{1\})^2:
+       u\neq v,\ d(u,v)=t\}.
+\]
+Writing $O(t)$ for the pure off/off contribution gives the exact decomposition
+\[
+ B(t)
+ =
+ O(t)+2(N-2)C_H(t)+(N-2)^2\one_{t=0}.
+\]
+Thus the variance problem separates into a deterministic spike, a mixed
+one-dimensional energy and a genuinely two-parameter off/off family.
+
+\section{Cayley transform and exact mixed energy}
+
+For $h\neq1$ define
+\[
+  c(h)=\frac{h+1}{h-1}.
+\]
+
+\begin{lemma}[Cayley difference identity]
+For $u,v\neq1$, $u\neq v$,
+\[
+ d(u,v)=\frac{2}{c(u)-c(v)}.
+\]
+Moreover,
+\[
+ c(h^{-1})=-c(h).
+\]
+\end{lemma}
+
+Hence, up to the bijection $\Delta\mapsto2/\Delta$ on $\F_N^\times$,
+$C_H$ is the nonzero additive-difference representation function of
+\[
+ A=c(H\setminus\{1\}).
+\]
+For odd $K$, $0\notin A$ and $A=-A$.  The central symmetry forces the
+baseline collision energy
+\[
+  E_{\rm forced}=(K-1)(2K-5).
+\]
+
+For odd prime $K$, clearing denominators in
+\[
+ c(\zeta^i)-c(\zeta^j)
+ =
+ c(\zeta^r)-c(\zeta^s)
+\]
+gives a sparse cyclotomic relation.  The current exact computer-assisted
+classification checks all $6!=720$ matchings.  Over characteristic zero the
+admissible kernels reduce to the identity and inversion-swap families.
+Finite-field reduction can create additional collisions.
+
+For a fixed odd prime $K$, let $E_K$ be the finite set of rational primes
+$N\equiv1\pmod K$ dividing the relevant nonzero cyclotomic resultants.
+
+\begin{proposition}[Fixed-$K$ mixed energy]
+If $N\equiv1\pmod K$ is prime and $N\notin E_K$, then
+\[
+ \sum_t C_H(t)^2=(K-1)(2K-5).
+\]
+\end{proposition}
+
+The exact resultant gate currently fully enumerates
+\[
+ E_{11}=\{23,67,89\},
+ \qquad
+ E_{13}=\{53,79,131,157,313\}.
+\]
+The qualification ``outside $E_K$'' is essential.  A fresh independent exact
+calculation at
+\[
+ (N,K)=(461,23)
+\]
+gives
+\[
+ \sum_t C_H(t)^2=1190,
+ \qquad
+ (K-1)(2K-5)=902.
+\]
+Thus this design is exceptional for the forced-energy formula.
+
+Outside the exceptional reductions the mixed term
+$2(N-2)C_H(t)$ has standard deviation $O(K\sqrt N)$, which is precisely the
+global target scale.
+
+\section{The off/off elliptic pencil}
+
+Use Cayley coordinates
+\[
+ a=c(u),\qquad b=c(v),\qquad
+ \alpha=c(h_1),\qquad \beta=c(h_2),
+\]
+and
+\[
+ T_\alpha(a)=\frac{\alpha a-1}{a-\alpha}.
+\]
+A fixed parameter pair is governed by
+\[
+ \frac{2}{a-b}
+ +
+ \frac{2}{T_\alpha(a)-T_\beta(b)}
+ =
+ t.
+\]
+After clearing denominators the generic fiber is a plane cubic.  Solving
+quadratically in one variable gives a binary-quartic double-cover model.
+
+Current symbolic work supports the following structural picture:
+\begin{itemize}
+\item the generic $j$-map is nonconstant, so the family is non-isotrivial;
+\item there are two special $O(K)$ parameter strata corresponding to
+      $\alpha=\beta$ and $\alpha+\beta=0$;
+\item an involution
+      $(h_1,h_2)\mapsto(h_2^{-1},h_1^{-1})$
+      preserves the generic same-base $j$-data;
+\item the order-four bad fiber occurs at the same Cayley-difference parameter
+      measured by $C_H$ and factors into two lines.
+\end{itemize}
+
+A broader algebraic draft in the research record derives a degree-$12$
+$j$-map, cusp-width restrictions on possible cyclic isogenies, and affine
+boundary bookkeeping.  These calculations are valuable, but the present note
+does not promote them to a theorem until the following obligations are closed.
+
+\begin{problem}[Algebraic family certificate]
+Produce a publication-grade projective/Weierstrass model with:
+\begin{enumerate}
+\item exact discriminant and $j$-map;
+\item complete exceptional-parameter list;
+\item twist and same-$j$ classification;
+\item separable and inseparable isogeny exclusions after reduction;
+\item explicit treatment of all deleted affine boundary components.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}[Trace-sheaf correlation input]
+Identify one precise source theorem and check, for the actual family:
+purity, geometric irreducibility/monodromy, conductor and ramification bounds,
+duals/twists, deleted points and geometric non-isomorphism of every
+off-diagonal parameter pair to which square-root correlation is applied.
+\end{problem}
+
+\begin{proposition}[Conditional restricted M1 estimate]
+Assume the two preceding obligations with constants uniform in the allowed
+parameters.  Then
+\[
+ \Var_{t\neq0}O(t)
+ \ll
+ K^2N+K^4N^{1/2}+K^4.
+\]
+Consequently, outside the relevant fixed-$K$ cyclotomic exceptions and in the
+first regime
+\[
+ K=o(N^{1/4}),
+\]
+one obtains
+\[
+ \Var_{t\neq0}B(t)=O(K^2N),
+ \qquad
+ \operatorname{std}_{q\neq0}\Sigma_4(q)=O(NK).
+\]
+\end{proposition}
+
+\begin{remark}
+This proposition is conditional.  It is intentionally not labelled as an
+unconditional theorem in the repository.
+\end{remark}
+
+\section{Finite certificates and reproducibility anchors}
+
+Independent finite constructions currently agree on
+\[
+\begin{array}{c|c|r|r|r}
+N&K&\sum_tB(t)&B(0)&\sum_tB(t)^2\\\hline
+23&11&48\,621&2\,609&103\,156\,981\\
+53&13&423\,879&12\,063&3\,410\,502\,105\\
+199&11&4\,681\,821&96\,641&115\,589\,503\,389\\
+461&23&111\,147\,915&641\,799&26\,960\,554\,630\,421
+\end{array}
+\]
+with Python and an independent C++ implementation used where independence is
+scientifically useful.
+
+The Lean project contains finite certificates for:
+\begin{itemize}
+\item the $k=2$ counting/bijection layer at an audited design;
+\item the $k=4$ variety/key multiplicities at an audited design;
+\item torus level-set/orbit facts at $N=199$;
+\item the scale-law identity at the audited $N=199$ design;
+\item the exceptional Cayley energy at $(461,23)$.
+\end{itemize}
+The file \texttt{OpLocal.lean} is a specification with admitted obligations,
+not a completed theorem.
+
+\section{Recovered earlier foundations}
+
+The broader research record predates the pair-key repair.  It contains
+substantial work on the symmetry class, quadratic trace identities,
+Kloosterman/character expansions, finite moments and shape decompositions,
+torus level sets and twisted Jacobi formulas.  Those results must not be lost
+when the current M1 route is rewritten.
+
+At the same time, an old label ``PROVEN'' is not by itself sufficient evidence.
+The present reconstruction therefore separates:
+\begin{enumerate}
+\item pieces re-certified by current finite Lean/Python/C++ gates;
+\item analytically plausible historical theorem statements awaiting a fresh
+      line-by-line audit;
+\item numerical evidence;
+\item permanently retracted routes.
+\end{enumerate}
+This is a preservation rule, not a weakening of the scientific objective.
+
+\section{Spectral evidence and the open BGS bridge}
+
+At retained parity-reduced designs, nearest-neighbor spacings are compatible
+with the GOE Wigner surmise and number-variance calculations display comparable
+finite-sample rigidity.  These are motivation and falsification tools only.
+
+A historical $N=95419$ script compared a gap-ratio statistic with the ordinary
+spacing CDF; its named KS verdict is therefore quarantined.  This does not
+invalidate the separately retained spacing calculations at other designs.
+
+Even an unconditional restricted M1 theorem would not finish BGS.  The next
+load-bearing question is to identify a comparison mechanism for the structured
+arithmetic matrix family at microscopic scale.  A valid route must specify the
+symmetry-reduced ensemble, dependence structure, resolvent or correlation
+observable, limiting regime and quantitative error.  Importing a Wigner local
+law without those checks would silently change the problem.
+
+\section{Permanent retractions}
+
+The active argument does not use:
+\begin{itemize}
+\item the historical M\"obius-fiber/M4D proof of M1;
+\item the claim that finite Catalan moments plus an Erd\H{o}s--Schlein--Yau
+      citation automatically imply BGS;
+\item the unresolved higher-word ``certificate'';
+\item the failed Hecke-centering Julia series;
+\item the historical \texttt{cdense\_transfer.jl} Perron bracket;
+\item the historical \texttt{sol6\_closed\_form.jl} closed-form claim;
+\item extrapolation from rank-$2$ diagonal/coset calculations to a general
+      $\mathrm{Sp}(2g)$ theorem.
+\end{itemize}
+
+\section*{Selected references}
+
+\begin{enumerate}
+\item P. Kurlberg and Z. Rudnick,
+  \emph{On the distribution of matrix elements for the quantum cat map},
+  Ann. of Math. 161 (2005), 489--507,
+  DOI 10.4007/annals.2005.161.489.
+\item A. Gamburd, J. Lafferty and D. Rockmore,
+  \emph{Eigenvalue spacings for quantized cat maps},
+  J. Phys. A 36 (2003),
+  DOI 10.1088/0305-4470/36/12/336.
+\item E. Fouvry, E. Kowalski and P. Michel,
+  \emph{A study in sums of products},
+  Phil. Trans. R. Soc. A 373 (2015),
+  DOI 10.1098/rsta.2014.0309.
+\item E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and
+  K. Soundararajan,
+  \emph{On short sums of trace functions},
+  Ann. Inst. Fourier 67 (2017),
+  DOI 10.5802/aif.3087.
+\item W. Sawin, A. Forey, J. Fresan and E. Kowalski,
+  \emph{Quantitative sheaf theory},
+  J. Amer. Math. Soc. 36 (2023), 653--726,
+  DOI 10.1090/jams/1008.
+\item P. Michel,
+  \emph{Rang moyen de familles de courbes elliptiques et lois de Sato--Tate},
+  Monatsh. Math. 120 (1995), 127--136.
+\item Y. G. Zarhin,
+  \emph{Homomorphisms of abelian varieties over geometric fields of finite
+  characteristic}, arXiv:1012.5083.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,8 @@
+{
+ "run": "102.2",
+ "finding": "NEGATIVE: the product-character kernel J(chi1*chi2, psi1*psi2) is TRIVIALLY reducible",
+ "reason": "S is a GROUP (annihilator coset), so every product character zeta = chi1*chi2 has exactly |S| preimages in S^2: the 'coupled' energy = |S|^2 x (single-family energy). No new structure.",
+ "implication": "the genuine coupling of two torus factors must come from the QUANTIZATION (the shared q-deformation / theta structure of Sp(2g)), not from the character arithmetic. This is the known difficulty of the higher-rank case: the theta kernel entangles the factors and the fiber curves become higher-genus.",
+ "M4_next": "to test G0 on a genuinely coupled kernel, one needs the Sp(2g) theta kernel at small g=2, N \u2014 a separate implementation project (the existing workspace has no Sp_4 quantization code)",
+ "status": "[PROVEN] negative result on the naive coupling"
+}

@@ -1,0 +1,36 @@
+{
+ "run": "102.4",
+ "milestone": "M3 input: edge mass bounded \u2014 smooth-density qualitatively supported",
+ "data": [
+  {
+   "N": 3571,
+   "m": 105,
+   "edge_1.7": {
+    "emp": 0.09524,
+    "sc": 0.06815,
+    "ratio": 1.4
+   },
+   "edge_1.85": {
+    "emp": 0.05714,
+    "sc": 0.02438,
+    "ratio": 2.34
+   }
+  },
+  {
+   "N": 19489,
+   "m": 336,
+   "edge_1.7": {
+    "emp": 0.08929,
+    "sc": 0.06815,
+    "ratio": 1.31
+   },
+   "edge_1.85": {
+    "emp": 0.04464,
+    "sc": 0.02438,
+    "ratio": 1.83
+   }
+  }
+ ],
+ "reading": "the coset edge mass exceeds the semicircle by a factor 1.3-2.3 (decaying with m) \u2014 the edge is SOFTER, consistent with the K^2/N surface terms. For ESY what matters: the edge mass is BOUNDED (O(1) density near the edge, no explosive concentration) \u2014 the smooth-density input holds qualitatively.",
+ "status": "[NUMERICALLY-SUPPORTED] bounded edge mass; quantitative excess = finite-m surface terms"
+}

@@ -1,0 +1,9 @@
+RUN 85a -- fourth mixed moment of J(chi,psi;q), principal coset
+-- design N=37, a=3, K=18, |S|=2 (chi(a)=1 coset)
+   {"N": 37, "a": 3, "K": 18, "m": 2, "mean|J|^2/N^1": 0.7417417417417417, "mean|J|^4/N^2": 0.9997159321483645, "mean|J|^6/N^3": 1.8023962603948, "mean|J|^8/N^4": 4.174752180961096, "catalan_2_5_14": [2.0, 5.0, 14.0], "gaussian_alt_6_24": [6.0, 24.0]}
+   second-key direct-vs-matrix: max|dJ|=2.22e-15, e8 1041165.528598 vs 1041165.528598
+-- design N=53, a=16, K=13, |S|=4 (chi(a)=1 coset)
+   {"N": 53, "a": 16, "K": 13, "m": 4, "mean|J|^2/N^1": 0.9143686502177067, "mean|J|^4/N^2": 1.4750664074266775, "mean|J|^6/N^3": 3.210396708485734, "mean|J|^8/N^4": 8.520078009673437, "catalan_2_5_14": [2.0, 5.0, 14.0], "gaussian_alt_6_24": [6.0, 24.0]}
+   second-key direct-vs-matrix: max|dJ|=1.87e-13, e8 242377634.185378 vs 242377634.185366
+ANCHORS: <|J|^2>/N ~ 1 (Prop A); <|J|^8>/N^4 -> 14 (Catalan), 24 = Gaussian is dead (R82.21)
+artifact: artifacts/diagnostics/fourth_mixed_moment.json

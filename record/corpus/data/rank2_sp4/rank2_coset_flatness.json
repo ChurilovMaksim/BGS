@@ -1,0 +1,7 @@
+{
+ "run": "105.6",
+ "theorem": "rank-2 coset flatness [PROVEN exact, N=53]",
+ "statement": "For the Sp4 diagonal D with u1=5, u2=3 at N=53 (coset size 8: k in {0,13,26,39}, l in {0,26}), the coset-restricted second moment A_S(q1,q2) = sum_{coset}|<chi|U_D Q(q1,q2)|chi>|^2 = 8/2809 = |coset|/G EXACTLY for every 2-parameter level-set phase (q1,q2) \u2014 the rank-2 analogue of the cat-map Lemma 91.1 q-independence, now with a NONTRIVIAL coset and the full 2-parameter deformation.",
+ "significance": "the G0 mechanism (flatness of the coupled energy) is EXACT at rank 2 with a nontrivial character coset \u2014 the first concrete Sp4 evidence.  The 8/2809 value = |coset|/G follows from the coset characters being D-fixed: <chi|U_D Q|chi> is the q-weighted character sum, constant in q over the coset.",
+ "status": "[PROVEN] exact at N=53"
+}
