@@ -9,14 +9,11 @@ This repository is a curated research programme on arithmetic quantum cat maps,
 exact finite-field moment reductions and the still-open microscopic
 Bohigas–Giannoni–Schmit (BGS) / GOE local-statistics problem.
 
-The central editorial rule is:
-
 > **Preserve scientific provenance, but trust only what the current tree can
 > derive, recompute, formalize or explicitly label as open.**
 
-The historical workspace was much larger than the maintained project. The
-current branch intentionally contains no duplicate archive source tree and no
-Julia source files; old bytes remain recoverable from Git history and the
+The current branch intentionally contains no duplicate archive source tree and
+no Julia source files; old bytes remain recoverable from Git history and the
 original research snapshot.
 
 ![Research pipeline](assets/research_pipeline.svg)
@@ -26,12 +23,12 @@ original research snapshot.
 | Layer | Status | What is currently justified |
 |---|---|---|
 | Pair-key parametrization | **EXACT** | off-diagonal bijection, inverse formulas, diagonal multiplicity `p-2` |
-| `k=2` and finite `k=4` counts | **EXACT / FINITE-CERTIFICATE** | symbolic count plus independent finite Python/C++/Lean checks |
+| constrained `k=2` count / finite `k=4` checks | **EXACT / FINITE-CERTIFICATE** | general `(K-1)(K-2)` count plus independent finite Python/C++/Lean checks |
 | Fourth-moment distribution `B(t)` | **EXACT** | corrected coupling decomposition and Fourier identities |
 | Cayley mixed term | **EXACT / FINITE-CERTIFICATE** | additive-energy reduction, complete audited `E_11`, `E_13`, generic/exceptional controls |
 | `(p,K)=(461,23)` | **FINITE-CERTIFICATE** | energy `1190`, forced baseline `902`, excess `288` |
-| Off/off elliptic organization | **DRAFT** | promising non-isotrivial elliptic pencil; sheaf/isogeny obligations remain |
-| Finite GOE comparisons | **NUMERICAL** | descriptive spacing/window diagnostics only |
+| Off/off elliptic organization | **DRAFT** | historical structural evidence; projective/sheaf/isogeny obligations remain |
+| Finite GOE comparisons | **NUMERICAL** | regenerated full-Hermitian spacing/window diagnostics only |
 | Microscopic BGS/GOE local law | **OPEN** | no proved comparison/local-law bridge for the structured arithmetic family |
 
 The repository-wide status authority is
@@ -58,9 +55,13 @@ x = u(1-v)/(u-v),
 d = (u-1)(v-1)/(v-u).
 ```
 
-The entire diagonal collapses to the key `(1,1)` with multiplicity `p-2`.
-That multiplicity is load-bearing: an older proof route effectively treated
-the diagonal as if it were generic and produced a false M1 claim.
+The entire diagonal collapses to `(1,1)` with multiplicity `p-2`. That
+multiplicity is load-bearing: an older proof route effectively treated the
+diagonal as generic and produced a false M1 claim.
+
+With subgroup constraints `u,v in H`, the same bijection immediately gives the
+exact general off-diagonal count `(K-1)(K-2)`: choose an ordered pair of
+distinct elements of `H \ {1}`.
 
 For the corrected fourth-moment difference distribution,
 
@@ -74,6 +75,7 @@ and the total coupled count is
 |V4| = (K^2+1)p^2 - (6K^2+3K)p + 13K^2 - 3K.
 ```
 
+Let `S=H^perp` be the character annihilator and `m=|S|=(p-1)/K`.
 Character orthogonality turns the fourth-moment character sum into the finite
 Fourier transform of `B`. If `V = sum_t B(t)` and `Z=B(0)`, then
 
@@ -106,8 +108,7 @@ rank 4: 450
 
 and finds no extra rank-drop characteristic except `2`.
 
-For the two subgroup orders whose resultant enumeration is fully audited in
-the maintained project,
+For the two subgroup orders whose resultant enumeration is fully audited,
 
 ```text
 E_11 = {23, 67, 89}
@@ -126,8 +127,8 @@ forced central-symmetry baseline = 902
 excess = 288.
 ```
 
-That one finite example prevents a false “the generic formula is uniform in
-K” narrative.
+That finite example blocks a false “generic formula is uniform in K”
+narrative.
 
 For the full derivation, read
 [`mathematics/fourth_moment_reduction.md`](mathematics/fourth_moment_reduction.md)
@@ -136,7 +137,8 @@ then
 
 ## What is not proved
 
-The off/off remainder has a strong elliptic-family organization, but the target
+The off/off remainder has a strong historical elliptic-family organization,
+but the target
 
 ```text
 O(K^2 p + K^4 sqrt(p) + K^4)
@@ -150,10 +152,8 @@ trace-sheaf correlation theorem actually used.
 
 Even completing that estimate would **not** prove microscopic BGS statistics.
 The next bridge must identify and control the relevant local spectral object
-(resolvent/comparison/cumulant/Dyson-flow or an arithmetic replacement) for
-the deterministic structured family. Quantum ergodicity results in the
-literature are important context but are not interchangeable with a local
-eigenphase-spacing theorem.
+for the deterministic structured family. Quantum ergodicity results are
+important context but are not interchangeable with a local eigenphase law.
 
 See [`mathematics/elliptic_pencil.md`](mathematics/elliptic_pencil.md),
 [`mathematics/open_questions.md`](mathematics/open_questions.md), and
@@ -163,11 +163,9 @@ See [`mathematics/elliptic_pencil.md`](mathematics/elliptic_pencil.md),
 
 ![Verification stack](assets/verification_stack.svg)
 
-The same finite facts are intentionally attacked from different directions:
-
 | Tool | Role | Load-bearing checks |
 |---|---|---|
-| Python | transparent reference/symbolic layer | pair-key anchors, 720 matching audit, exact resultants, twisted-Jacobi regressions |
+| Python | transparent reference/symbolic layer | pair-key anchors, 720 matching audit, exact resultants, twisted-Jacobi and full spectral-evidence regressions |
 | C++20 | independent exact/exhaustive kernels | fourth-moment pair keys, Cayley energies, cat-map order |
 | Lean 4 | kernel-checked finite propositions | pair-key counts, Cayley generic/exceptional controls, torus facts, historical falsifier |
 | TeX + CI | scientific integration | manuscript compiles and whole-tree provenance/structure gates stay green |
@@ -186,10 +184,10 @@ python computations/verification/repository_audit.py
 python computations/verification/current_regression.py
 python computations/verification/mixed_cayley_energy.py
 python computations/verification/twisted_jacobi_regression.py
-python computations/analysis/spectral_diagnostics.py quick
+python computations/analysis/spectral_diagnostics.py verify
 ```
 
-A much slower full preserved `N=3571` q-curve regression is available as
+A slower full preserved `N=3571` q-curve regression is available as
 
 ```bash
 python computations/verification/twisted_jacobi_regression.py --full-curves
@@ -215,8 +213,8 @@ cd formalization
 lake build
 ```
 
-Every active Lean module must be imported by `formalization/Bgs.lean`.
-CI checks exact coverage; an unimported `.lean` file cannot quietly sit in the
+Every active Lean module must be imported by `formalization/Bgs.lean`. CI
+checks exact coverage; an unimported `.lean` file cannot quietly sit in the
 active formalization tree.
 
 ### Manuscript
@@ -246,8 +244,8 @@ if `main` advances during the job.
 
 There is deliberately **no** second workspace under `record/`. The last
 pre-cleanup tree containing the curated historical corpus is identified in
-[`record/reconstruction.md`](record/reconstruction.md), and all original
-historical bytes remain reachable from Git history.
+[`record/reconstruction.md`](record/reconstruction.md), and original bytes
+remain reachable from Git history.
 
 ## Evidence discipline
 
@@ -262,6 +260,11 @@ historical bytes remain reachable from Git history.
 The spacing diagnostic reports an empirical CDF sup-distance to the GOE Wigner
 surmise. It does **not** attach textbook IID-KS significance because unfolded
 and pooled gaps are dependent.
+
+The maintained spectral producer diagonalizes the **full complex Hermitian**
+`M+M^*`. A reconstruction-era entrywise-real projection was found during the
+final audit, removed, guarded by regression, and both numerical JSON records
+were regenerated. No exact theorem or finite certificate depended on them.
 
 The historical “number variance” computation is retained only with its literal
 meaning: forward windows are anchored at eigenvalues and edge-truncated. The
@@ -297,11 +300,10 @@ Start in this order:
 1. Read [`mathematics/results.md`](mathematics/results.md) and
    [`record/claim_ledger.md`](record/claim_ledger.md). These define what may be
    cited as exact, finite, numerical, draft or open.
-2. Run `repository_audit.py`, the exact Python gates, CMake executables, and
+2. Run `repository_audit.py`, the exact Python gates, all C++ executables, and
    `lake build`.
 3. Read [`record/retractions.md`](record/retractions.md) before reviving an old
-   proof idea; several superficially attractive routes have concrete known
-   failure mechanisms.
+   proof idea; several attractive routes have concrete known failure modes.
 4. For M1, work from
    [`mathematics/elliptic_pencil.md`](mathematics/elliptic_pencil.md) and check
    every external theorem hypothesis against the actual family.

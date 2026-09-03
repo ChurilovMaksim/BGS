@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Repository-wide structural/provenance audit for the curated research branch.
 
-This gate is intentionally stricter than language-specific tests.  It prevents
+This gate is intentionally stricter than language-specific tests. It prevents
 historical workspace copies, Julia sources, orphaned producers, unimported Lean
-modules, unbuilt C++ sources, and byte-identical source/document duplicates from
-creeping back into ``main``.
+modules, unbuilt C++ sources, broken Markdown links and byte-identical
+source/document duplicates from creeping back into ``main``.
 """
 from __future__ import annotations
 
@@ -17,38 +17,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 EXPECTED_TOP_LEVEL = {
-    ".github",
-    ".gitignore",
-    "CMakeLists.txt",
-    "README.md",
-    "assets",
-    "computations",
-    "evidence",
-    "formalization",
-    "literature",
-    "manuscript",
-    "mathematics",
-    "record",
-    "requirements.txt",
+    ".github", ".gitignore", "CMakeLists.txt", "README.md", "assets",
+    "computations", "evidence", "formalization", "literature", "manuscript",
+    "mathematics", "record", "requirements.txt",
 }
 FORBIDDEN_PATHS = {
-    Path("record/corpus"),
-    Path("record/checkpoints"),
-    Path("record/engineering"),
-    Path("record/formal_drafts"),
+    Path("record/corpus"), Path("record/checkpoints"),
+    Path("record/engineering"), Path("record/formal_drafts"),
 }
 TEXT_DUPLICATE_SUFFIXES = {
-    ".cpp",
-    ".h",
-    ".hpp",
-    ".lean",
-    ".md",
-    ".py",
-    ".tex",
-    ".yml",
-    ".yaml",
+    ".cpp", ".h", ".hpp", ".lean", ".md", ".py", ".tex", ".yml", ".yaml",
 }
 SKIP_DIR_NAMES = {".git", ".lake", "__pycache__", "build"}
+MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
 
 def files_under(root: Path):
@@ -74,7 +55,6 @@ def check_no_historical_copies_or_julia() -> None:
     for relative in sorted(FORBIDDEN_PATHS):
         if (ROOT / relative).exists():
             raise AssertionError(f"forbidden historical copy tree exists: {relative}")
-
     julia = [p.relative_to(ROOT) for p in files_under(ROOT) if p.suffix == ".jl"]
     if julia:
         raise AssertionError(f"tracked Julia sources remain: {julia}")
@@ -88,8 +68,7 @@ def check_no_duplicate_text_sources() -> None:
         data = path.read_bytes()
         if len(data) < 64:
             continue
-        digest = hashlib.sha256(data).hexdigest()
-        groups[digest].append(path.relative_to(ROOT))
+        groups[hashlib.sha256(data).hexdigest()].append(path.relative_to(ROOT))
     duplicates = [sorted(paths) for paths in groups.values() if len(paths) > 1]
     if duplicates:
         formatted = "; ".join(", ".join(map(str, group)) for group in duplicates)
@@ -97,75 +76,96 @@ def check_no_duplicate_text_sources() -> None:
 
 
 def check_evidence_provenance() -> None:
-    for path in sorted((ROOT / "evidence").rglob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        producer = data.get("producer")
-        if producer:
-            producer_path = ROOT / str(producer)
-            if not producer_path.is_file():
-                raise AssertionError(
-                    f"{path.relative_to(ROOT)}: unresolved active producer {producer}"
-                )
-        refs = data.get("reference_inputs", {})
-        if refs is not None:
-            if not isinstance(refs, dict):
-                raise AssertionError(
-                    f"{path.relative_to(ROOT)}: reference_inputs must be an object"
-                )
-            for relative in refs:
-                candidate = ROOT / relative
-                if not candidate.is_file():
-                    raise AssertionError(
-                        f"{path.relative_to(ROOT)}: missing reference input {relative}"
-                    )
+    promoted_roots = (
+        ROOT / "evidence" / "certificates",
+        ROOT / "evidence" / "numerical",
+    )
+    for promoted_root in promoted_roots:
+        for path in sorted(promoted_root.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            producer = data.get("producer")
+            if not producer:
+                raise AssertionError(f"{path.relative_to(ROOT)}: promoted evidence lacks producer")
+            if not (ROOT / str(producer)).is_file():
+                raise AssertionError(f"{path.relative_to(ROOT)}: unresolved active producer {producer}")
+            if not data.get("scope") and not data.get("interpretation"):
+                raise AssertionError(f"{path.relative_to(ROOT)}: promoted evidence lacks scope/interpretation")
+            refs = data.get("reference_inputs", {})
+            if refs is not None:
+                if not isinstance(refs, dict):
+                    raise AssertionError(f"{path.relative_to(ROOT)}: reference_inputs must be an object")
+                for relative in refs:
+                    if not (ROOT / relative).is_file():
+                        raise AssertionError(f"{path.relative_to(ROOT)}: missing reference input {relative}")
+    for path in sorted((ROOT / "evidence" / "reference").rglob("*.json")):
+        json.loads(path.read_text(encoding="utf-8"))
 
 
-def check_lean_import_graph() -> None:
+def check_lean_import_graph_and_placeholders() -> None:
     module_dir = ROOT / "formalization" / "Bgs"
     modules = {f"Bgs.{p.stem}" for p in module_dir.glob("*.lean")}
     imports = set()
-    for line in (ROOT / "formalization" / "Bgs.lean").read_text(
-        encoding="utf-8"
-    ).splitlines():
+    for line in (ROOT / "formalization" / "Bgs.lean").read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if line.startswith("import "):
             imports.add(line.removeprefix("import ").strip())
     if modules != imports:
-        missing = sorted(modules - imports)
-        extra = sorted(imports - modules)
-        raise AssertionError(f"Lean import mismatch: missing={missing}, extra={extra}")
+        raise AssertionError(
+            f"Lean import mismatch: missing={sorted(modules-imports)}, extra={sorted(imports-modules)}"
+        )
+    placeholders: list[str] = []
+    for path in sorted(module_dir.glob("*.lean")):
+        text = path.read_text(encoding="utf-8")
+        for token in ("sorry", "admit"):
+            if re.search(rf"\b{token}\b", text):
+                placeholders.append(f"{path.relative_to(ROOT)}:{token}")
+    if placeholders:
+        raise AssertionError(f"Lean proof placeholders in active modules: {placeholders}")
 
 
 def check_cpp_build_coverage() -> None:
     cmake = (ROOT / "CMakeLists.txt").read_text(encoding="utf-8")
     sources = sorted((ROOT / "computations" / "cpp").glob("*.cpp"))
     orphaned = [
-        str(path.relative_to(ROOT))
-        for path in sources
+        str(path.relative_to(ROOT)) for path in sources
         if str(path.relative_to(ROOT)).replace("\\", "/") not in cmake
     ]
     if orphaned:
         raise AssertionError(f"C++ sources not covered by CMake: {orphaned}")
 
 
-def check_readme_relative_links() -> None:
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
-    targets = re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text)
+def check_markdown_relative_links() -> None:
     missing: list[str] = []
-    for raw in targets:
-        target = raw.strip().split()[0].strip("<>")
-        if (
-            not target
-            or target.startswith(("http://", "https://", "#", "mailto:"))
-        ):
+    for document in sorted(ROOT.rglob("*.md")):
+        if any(part in SKIP_DIR_NAMES for part in document.parts):
             continue
-        target = target.split("#", 1)[0]
-        if not target:
-            continue
-        if not (ROOT / target).exists():
-            missing.append(raw)
+        text = document.read_text(encoding="utf-8")
+        for raw in MARKDOWN_LINK_RE.findall(text):
+            target = raw.strip().split()[0].strip("<>")
+            if not target or target.startswith(("http://", "https://", "#", "mailto:")):
+                continue
+            target = target.split("#", 1)[0]
+            if not target:
+                continue
+            candidate = (document.parent / target).resolve()
+            try:
+                candidate.relative_to(ROOT.resolve())
+            except ValueError:
+                missing.append(f"{document.relative_to(ROOT)} -> {raw} (outside repo)")
+                continue
+            if not candidate.exists():
+                missing.append(f"{document.relative_to(ROOT)} -> {raw}")
     if missing:
-        raise AssertionError(f"README relative links do not resolve: {missing}")
+        raise AssertionError("broken Markdown relative links: " + "; ".join(missing))
+
+
+def check_manuscript_surface() -> None:
+    tex = ROOT / "manuscript" / "arithmetic_cat_map_moments.tex"
+    pdf = ROOT / "manuscript" / "arithmetic_cat_map_moments.pdf"
+    if not tex.is_file() or tex.stat().st_size < 1024:
+        raise AssertionError("active manuscript TeX is missing or unexpectedly small")
+    if not pdf.is_file() or pdf.stat().st_size < 1024:
+        raise AssertionError("committed manuscript PDF is missing or unexpectedly small")
 
 
 def main() -> None:
@@ -173,9 +173,10 @@ def main() -> None:
     check_no_historical_copies_or_julia()
     check_no_duplicate_text_sources()
     check_evidence_provenance()
-    check_lean_import_graph()
+    check_lean_import_graph_and_placeholders()
     check_cpp_build_coverage()
-    check_readme_relative_links()
+    check_markdown_relative_links()
+    check_manuscript_surface()
     print("repository structural/provenance audit: PASS")
 
 

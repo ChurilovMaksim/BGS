@@ -62,7 +62,6 @@ def check_finite_field_contracts() -> None:
     indices = annihilator_indices(p, 11, a, log)
     assert len(indices) == (p - 1) // 11
 
-    # A parity sector is a legitimate sub-sector of the annihilator.
     odd_sector = indices[indices % 2 == 1]
     sector_matrix = jacobi_matrix(p, 11, a, log, odd_sector, 1)
     assert sector_matrix.shape == (len(odd_sector), len(odd_sector))
@@ -144,7 +143,7 @@ def check_certificate_corpus() -> None:
     root = ROOT / "evidence" / "certificates"
     required = {
         "fourth_moment_factorization.json",
-        "second_moment_reduction.json",
+        "cayley_fixed_k_audit.json",
         "twisted_jacobi_moments.json",
         "twisted_jacobi_scalar_formula.json",
         "cayley_exception_k23.json",
