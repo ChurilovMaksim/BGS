@@ -1,0 +1,44 @@
+name: Build canonical paper
+
+on:
+  push:
+    branches:
+      - main
+      - refactor/language-paper-consolidation
+    paths:
+      - paper/main.tex
+      - .github/workflows/build-paper.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile canonical manuscript
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper/main.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Commit synchronized PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s paper/main.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add paper/main.pdf
+          if git diff --cached --quiet; then
+            echo "paper/main.pdf is already synchronized"
+            exit 0
+          fi
+          git commit -m "paper: rebuild canonical PDF [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
