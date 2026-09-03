@@ -69,16 +69,13 @@ def check_structure() -> None:
         if (ROOT / relative_path).exists():
             errors.append(f"forbidden generated/superseded path present: {relative_path}")
 
-    julia_outside_archive = [
-        path.relative_to(ROOT).as_posix()
-        for path in ROOT.rglob("*.jl")
-        if not is_immutable_legacy(path)
-    ]
-    for path in julia_outside_archive:
-        errors.append(f"Julia source outside immutable legacy snapshot: {path}")
+    for path in ROOT.rglob("*.jl"):
+        if not is_immutable_legacy(path):
+            errors.append(f"Julia source outside immutable legacy snapshot: {path.relative_to(ROOT)}")
 
-    paper_root = ROOT / "paper"
-    active_tex = sorted(path.relative_to(ROOT).as_posix() for path in paper_root.rglob("*.tex"))
+    active_tex = sorted(
+        path.relative_to(ROOT).as_posix() for path in (ROOT / "paper").rglob("*.tex")
+    )
     if active_tex != ["paper/main.tex"]:
         errors.append(f"active paper TeX set must be exactly ['paper/main.tex'], got {active_tex}")
 
@@ -89,20 +86,21 @@ def check_structure() -> None:
     )
 
 
-def check_python() -> None:
+def check_python(root_names: tuple[str, ...]) -> None:
     errors: list[str] = []
     count = 0
-    for root_name in PYTHON_ROOTS:
+    for root_name in root_names:
         directory = ROOT / root_name
         if not directory.exists():
             continue
         for path in directory.rglob("*.py"):
             count += 1
             try:
-                ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+                source = path.read_bytes()
+                compile(source, str(path), "exec", dont_inherit=True)
             except Exception as exc:
-                errors.append(f"Python syntax error in {path.relative_to(ROOT)}: {exc}")
-    finish("python", errors, f"{count} active/research Python files parse")
+                errors.append(f"Python compile error in {path.relative_to(ROOT)}: {exc}")
+    finish("python:" + ",".join(root_names), errors, f"{count} Python files compile")
 
 
 def check_json() -> None:
@@ -123,17 +121,21 @@ def check_json() -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--check",
-        choices=("all", "structure", "python", "json"),
-        default="all",
-        help="run one independently visible CI gate or the complete set",
+        "--check", choices=("all", "structure", "python", "json"), default="all"
+    )
+    parser.add_argument(
+        "--python-root",
+        action="append",
+        choices=PYTHON_ROOTS,
+        help="limit --check python to one or more executable roots",
     )
     args = parser.parse_args()
 
     if args.check in ("all", "structure"):
         check_structure()
     if args.check in ("all", "python"):
-        check_python()
+        roots = tuple(args.python_root) if args.python_root else PYTHON_ROOTS
+        check_python(roots)
     if args.check in ("all", "json"):
         check_json()
 
