@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import numpy as np
 
+from .finite_field import multiplicative_order, primitive_root
+
 TRACE = 3
 
 
@@ -45,33 +47,6 @@ def square_roots_mod_prime(value: int, prime: int) -> list[int]:
         root = root * b % prime
 
     return sorted({root, (-root) % prime})
-
-
-def multiplicative_order(value: int, prime: int) -> int | None:
-    """Return the multiplicative order of ``value`` modulo ``prime``."""
-    current = value % prime
-    order = 1
-    while current != 1:
-        current = current * value % prime
-        order += 1
-        if order > prime:
-            return None
-    return order
-
-
-def primitive_root(prime: int) -> int:
-    """Return the least primitive root modulo ``prime``."""
-    from sympy import factorint
-
-    prime_divisors = list(factorint(prime - 1))
-    generator = 2
-    while True:
-        if all(
-            pow(generator, (prime - 1) // divisor, prime) != 1
-            for divisor in prime_divisors
-        ):
-            return generator
-        generator += 1
 
 
 def find_design_eigenvalue(
