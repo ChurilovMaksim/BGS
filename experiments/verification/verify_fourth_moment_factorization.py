@@ -8,6 +8,7 @@ fourth-moment Fourier identity, and the character-twist collapse.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -272,7 +273,9 @@ def verify_design(
         "relative_std_over_K_over_N": (
             (std_sigma / mean_sigma) / (subgroup_order / prime)
         ),
-        "difference_distribution_B": fast_distribution.tolist(),
+        "difference_distribution_sha256": hashlib.sha256(
+            fast_distribution.astype("<i8", copy=False).tobytes()
+        ).hexdigest(),
         "q_checks": q_checks,
         "pass": passed,
     }
