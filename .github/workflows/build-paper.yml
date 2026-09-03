@@ -26,17 +26,24 @@ jobs:
       - name: Compile canonical manuscript
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: paper/main.tex
+          root_file: main.tex
+          working_directory: paper
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Verify canonical PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s paper/main.pdf
+          ls -lh paper/main.tex paper/main.pdf
 
       - name: Commit synchronized PDF
         shell: bash
         run: |
           set -euo pipefail
-          test -s paper/main.pdf
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add paper/main.pdf
+          git add -f paper/main.pdf
           if git diff --cached --quiet; then
             echo "paper/main.pdf is already synchronized"
             exit 0
