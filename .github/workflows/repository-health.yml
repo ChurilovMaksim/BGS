@@ -44,15 +44,17 @@ jobs:
       - name: Parse research and current JSON corpus
         run: python tools/check_repository.py --check json
 
-      - name: Compile supported C++20 programs strictly
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p build/ci
-          while IFS= read -r source; do
-            name="$(basename "${source}" .cpp)"
-            g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror "${source}" -o "build/ci/${name}"
-          done < <(find src/cpp -type f -name '*.cpp' | sort)
+      - name: Prepare C++ build directory
+        run: mkdir -p build/ci
+
+      - name: Compile C++ cat-map order scanner
+        run: g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror src/cpp/number_theory/catmap_order.cpp -o build/ci/catmap_order
+
+      - name: Compile C++ relation automaton
+        run: g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror src/cpp/shape/relation_automaton.cpp -o build/ci/relation_automaton
+
+      - name: Compile C++ fourth-moment verifier
+        run: g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror src/cpp/verification/fourth_moment_factorization.cpp -o build/ci/fourth_moment_factorization
 
       - name: Run migrated exact regression gates
         shell: bash
