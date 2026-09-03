@@ -1,29 +1,38 @@
 # Quantized cat maps and BGS: research workspace
 
-This repository studies spectral statistics of quantized hyperbolic cat maps after symmetry reduction. The long-term question is whether an explicit arithmetic family can be brought all the way from exact finite-field formulas to a rigorous random-matrix local law.
+This repository studies spectral statistics of quantized hyperbolic cat maps after symmetry reduction. The long-term goal is a rigorous path from exact finite-field formulas to a random-matrix local law.
 
-**Current status: the general BGS conclusion is not proved.** The strongest active line now starts from an exact pair-key description of the fourth-moment object, with independently checked finite identities and a sharply stated remaining variance problem. Historical proof attempts that used a Möbius-fiber surrogate are retained only in the archive because that surrogate is not the exact finite object.
+**Current status: general BGS is not proved.** The strongest active line uses the exact pair-key fourth-moment distribution `B(t)`. A restricted M1 concentration proof chain for odd prime `K`, explicit nonexceptional split primes `N`, and `K=o(N^(1/4))` is assembled but still marked audit/formalization pending. Historical Mobius-fiber proof claims remain archive-only because they analyze the wrong finite object.
 
 ## Start here
 
-1. `STATUS.md` — what is established, numerical, open, or retracted.
-2. `ROADMAP.md` — the research programme and promotion rules.
-3. `research/ledger.md` — chronological scientific decisions and new findings.
-4. `research/theory.md` — the current mathematical core, without historical overclaims.
-5. `research/problems/m1_fluctuation_energy.md` — the present load-bearing theorem target.
-6. `references/bibliography.md` — verified literature and why each source matters.
+1. `STATUS.md` - concise scientific status and theorem/draft/retraction boundary.
+2. `research/theory.md` - current mathematical core.
+3. `research/ledger.md` - active chronology of decisions and discoveries.
+4. `research/problems/m1_fluctuation_energy.md` - load-bearing M1 problem statement.
+5. `research/notes/k2_cayley_energy.md` and `research/notes/m1_offoff_elliptic_family.md` - detailed current derivations.
+6. `research/engineering/language_migration.md` - complete audit of the historical Julia layer and supported replacements.
+7. `paper/main.tex` - the single editable manuscript source.
+8. `references/bibliography.md` - literature used by the active proof program.
 
-## Working layout
+## Language and implementation policy
 
-- `src/python/bgs/` — reusable mathematical kernels, including the exact pair-key geometry.
-- `src/cpp/verification/` — independent C++20 verification/high-throughput implementations kept as source.
-- `experiments/verification/` — exact or regression checks that produce `results/verified/`.
-- `experiments/m1/` — current analytic-bottleneck diagnostics and falsifiers.
-- `experiments/spectral/` — numerical spectral-statistics experiments.
-- `results/` — only curated outputs with an explicit trust category.
-- `formal/` — Lean finite certificates. A file is not called verified merely because it is Lean source; build status is stated in `formal/README.md`.
-- `paper/` — future current manuscript only. Historical “proof/complete” manuscripts are not active.
-- `references/` — checked literature and search/symbolic provenance.
-- `archive/legacy-workspace/` — immutable pre-restructure research corpus, including failed routes and raw provenance.
+- `src/python/bgs/` - reusable symbolic/exact arithmetic and research kernels.
+- `src/cpp/` - expensive finite-field loops, exhaustive combinatorics, dynamic programs, and independent exact verification.
+- `experiments/` - reproducible drivers, falsifiers and verification entry points; not a second library tree.
+- Fortran is not introduced just to have another language. It is reserved for a future profiled dense-numerical kernel if it gives a concrete benefit.
+- A second implementation of the same mathematics exists only when independent reproduction is part of the scientific certificate.
 
-The archive is deliberately large; the active workspace is deliberately small. Useful old results are promoted out of the archive only after their producer and conventions are reconstructed, an independent check is performed, and the claim is rewritten with an honest status.
+All 31 historical Julia paths (23 byte-distinct sources) are accounted for. Supported mathematics was consolidated into a small number of Python/C++ components; falsified or superseded Julia lines were not mechanically cloned. The original Julia sources remain once in `archive/legacy-workspace/` and Git history.
+
+## Repository layout
+
+- `results/verified/` - curated finite/exact certificates.
+- `results/diagnostics/` - falsifiers and diagnostic outputs.
+- `results/numerical/` - numerical evidence only.
+- `formal/` - Lean sources/certificates with build status stated explicitly.
+- `paper/` - exactly one current manuscript source (`main.tex`) and its built PDF; no competing `proof/final/complete` TeX trees.
+- `references/` - bibliography plus literature/symbolic-check provenance.
+- `archive/legacy-workspace/` - immutable pre-restructure research corpus, including failed routes and historical manuscripts.
+
+The archive is intentionally large and provenance-oriented. The active workspace is intentionally compact and status-controlled. Historical material is promoted only after reconstruction, an appropriate independent check, and an honest rewrite of the claim.
