@@ -1,45 +1,63 @@
-# M1 note — cross terms in the historical Möbius-fiber assembly
+# M1 note — from historical cross terms to the exact key-table collapse
 
-A clean Python implementation and an independent C++20 implementation reproduce the historical fiber assembly and agree on the missing cross energy.
+## What the old diagnostic established
 
-For `N=53,K=13,m=4`:
-- diagonal raw energy: `934952569968`;
-- cross raw energy: `7805905040`;
-- cross/diagonal: `0.0083489851`.
+Independent Python and C++ implementations reproduced the historical Möbius-fiber assembly and showed that its diagonal-only energy decomposition was false: cross terms were nonzero at `N=53` and `N=199`.
 
-For `N=199,K=11,m=18`:
-- diagonal raw energy: approximately `1.1635012135e16`;
-- cross raw energy: approximately `3.1752387617e14`;
-- cross/diagonal: `0.0272903777`.
+That result remains a valid falsifier of the old proof mechanics. It is no longer the active M1 object, because the historical Möbius graph itself has now been shown to differ from the exact pair-key image.
 
-A substantial part is trivial/nontrivial coupling; the correction is not confined to nontrivial/nontrivial pairs.  Therefore the historical diagonal-only identity is false for this assembly.
-
-The code/result live at:
-- `experiments/m1/cross_term_energy.py`;
-- `src/cpp/m1/cross_term_energy.cpp`;
-- `results/diagnostics/m1_cross_term_energy.json`.
-
-## Fixed Fourier normalization and exact cross-Gram formula
+## Fixed Fourier normalization
 
 Use the unnormalized finite Fourier transform
 
-`f_hat(xi) = sum_d f(d) e_N(-xi d)`,
+`f_hat(xi)=sum_d f(d)e_N(-xi d)`
 
-with inverse `f(d)=(1/N) sum_xi f_hat(xi)e_N(xi d)`.  Then
+with inverse
 
-`<f,g> = (1/N) sum_xi f_hat(xi) conjugate(g_hat(xi))`
+`f(d)=(1/N)sum_xi f_hat(xi)e_N(xi d)`.
 
-and `hat(f*g)=f_hat g_hat`.  Hence, for `F_tau=A_tau*A_tau`,
+Then
 
-`G_(tau,sigma)=<F_tau,F_sigma>`
-`=(1/N) sum_xi A_hat_tau(xi)^2 conjugate(A_hat_sigma(xi)^2)`,
+`<f,g>=(1/N)sum_xi f_hat(xi)conjugate(g_hat(xi))`
 
-and the entire energy is exactly
+and `hat(f*g)=f_hat g_hat`.
 
-`E=(1/N) sum_xi |sum_tau A_hat_tau(xi)^2|^2`.
+For any family of amplitudes `A_tau`, if `F_tau=A_tau*A_tau`,
 
-This is the correct starting point for cancellation.  It says that the proof
-should control the **summed squared Fourier amplitudes at each frequency**, not
-bound each twist energy separately and add the bounds.  The Python diagnostic
-now evaluates the time-domain and Fourier-domain formulas independently; at
-`N=53,199` they agree to relative floating-point error of order `1e-16`.
+`<F_tau,F_sigma>=(1/N)sum_xi A_hat_tau(xi)^2 conjugate(A_hat_sigma(xi)^2)`
+
+and
+
+`||sum_tau F_tau||_2^2=(1/N)sum_xi |sum_tau A_hat_tau(xi)^2|^2`.
+
+This normalization is exact and remains valid.
+
+## The stronger identity for the correct amplitudes
+
+For the exact pair-key table, define
+
+`A_(chi,psi)(d)=sum_{r:d_r=d} n_r chi(u_r)psi(v_r)`.
+
+Double annihilator-character orthogonality then gives
+
+`sum_(chi,psi) (A_(chi,psi)*A_(chi,psi))(t)=m^2 B(t)`
+
+for every `t`, and therefore
+
+`sum_(chi,psi) A_hat_(chi,psi)(xi)^2=m^2 B_hat(xi)`
+
+for every frequency `xi`.
+
+So the full cross-Gram problem **collapses exactly**. The quantity that must be estimated is not a sum of separate twist energies; it is the single coupled difference distribution `B(t)`.
+
+The active Python verifier checks both identities through `N=199`. The C++ verifier repeats the test with direct DFT and direct circular convolution, independently of NumPy FFT.
+
+## Consequence
+
+The previous wording “find cancellation among cross twists” was one layer too early. The active problem is now
+
+`Var_(t!=0) B(t)=O(K^2 N)`.
+
+This is exactly equivalent to `std_(q!=0) Sigma_4(q)=O(NK)` by finite Fourier orthogonality.
+
+The historical cross-term numbers are preserved in `results/diagnostics/m1_cross_term_energy.json` only to document why the old proof failed.
