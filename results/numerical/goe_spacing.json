@@ -1,0 +1,10 @@
+{
+  "producer": "experiments/spectral/goe_spacing.py",
+  "interpretation": "Finite numerical evidence only; not a proof of a limiting spacing law.",
+  "reference": "GOE Wigner surmise P(s)=(pi s/2) exp(-pi s^2/4)",
+  "designs": [
+    {"N":3571,"K":17,"a":2469,"m_plus":105,"n_q":39,"n_gaps":4160,"mean_gap":1.0,"ks_D":0.01399592460024468,"ks_crit_5pct":0.02105489619651814,"ks_pass":true,"chi2":18.157553446589965,"dof":14,"chi2_over_dof":1.2969681033278546,"fresh_rerun":"2026-09-03"},
+    {"N":19489,"K":29,"a":4523,"m_plus":336,"n_q":42,"n_gaps":14405,"mean_gap":1.0,"ks_D":0.008878671492713985,"ks_crit_5pct":0.011314702479084978,"ks_pass":true,"chi2":20.498095986041058,"dof":15,"chi2_over_dof":1.3665397324027373,"fresh_rerun":false,"note":"Retained prior audited result; a full fresh rerun was not completed in the bounded 2026-09-03 audit window."}
+  ],
+  "finite_sample_criterion_pass": true
+}

@@ -1,0 +1,10 @@
+{
+  "producer": "experiments/verification/verify_second_moment_reduction.py",
+  "scope": "Finite exact reduction check; not an asymptotic theorem.",
+  "fresh_rerun": "2026-09-03 after the human restructure",
+  "results": [
+    {"N":53,"a":10,"K":13,"m":4,"constraint_pair_count":132,"expected_pair_count":132,"identity_max_abs_deviation":1.2505552149377763e-12,"pass":true},
+    {"N":199,"a":139,"K":11,"m":18,"constraint_pair_count":90,"expected_pair_count":90,"identity_max_abs_deviation":3.637978807091713e-10,"pass":true}
+  ],
+  "verdict": "PASS"
+}

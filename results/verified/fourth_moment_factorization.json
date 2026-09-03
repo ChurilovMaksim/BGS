@@ -1,0 +1,13 @@
+{
+  "producer": "experiments/verification/verify_fourth_moment_factorization.py",
+  "claim": "Finite-design verification of sum_{chi,psi in S}|J(chi,psi;q)|^4 = m^2 Sigma_4(q).",
+  "interpretation": "The general algebraic reduction is derived in research/theory.md; these checks do not prove the asymptotic estimate on the constraint variety.",
+  "fresh_rerun": "2026-09-03 after re-reading the original ZIP",
+  "independent_cpp": "src/cpp/verification/fourth_moment_factorization.cpp compiled with C++20 -O2 -Wall -Wextra -pedantic and independently reproduced the same finite counts and values to floating-point precision on 2026-09-03.",
+  "results": [
+    {"N":23,"a":2,"K":11,"m":2,"q":1,"sum_abs_jacobi_fourth":1334.443672749569,"m_squared_sigma_four_real":1334.4436727495695,"relative_deviation":3.512646129175695e-16,"constraint_variety_count":48621,"pass":true},
+    {"N":53,"a":10,"K":13,"m":4,"q":1,"sum_abs_jacobi_fourth":141859.87595816434,"m_squared_sigma_four_real":141859.8759581654,"relative_deviation":7.389430293480785e-15,"constraint_variety_count":423879,"pass":true},
+    {"N":53,"a":10,"K":13,"m":4,"q":7,"sum_abs_jacobi_fourth":31084.32142565475,"m_squared_sigma_four_real":31084.32142565496,"relative_deviation":6.919511395038458e-15,"constraint_variety_count":423879,"pass":true}
+  ],
+  "verdict": "PASS"
+}
