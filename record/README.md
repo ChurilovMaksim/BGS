@@ -2,22 +2,23 @@
 
 `record/` preserves information needed to audit how the current mathematics was obtained. It is not a second active source tree.
 
-## Authoritative record files
+## Living record files
 
-- `claim_ledger.md` — status of every current or historically important claim.
-- `retractions.md` — explicit false/superseded statements and mechanisms.
-- `reconstruction.md` — reconstruction and completeness policy.
-- `julia_migration.md` — disposition of all historical Julia paths.
-- `inventory_snapshot.py` — reproducible ZIP inventory/hashing tool.
-- `checkpoints/` — exact pre-consolidation status/index/theory snapshots.
-- `engineering/` — migration notes and historical computational diagnostics.
-- `formal_drafts/` — useful formal drafts that are not part of the active Lean library.
-- `corpus/` — broad historical source/data/manuscript corpus.
+- `claim_ledger.md` — authoritative status of current and historically important claims.
+- `retractions.md` — false/superseded statements, methodological corrections and failure mechanisms.
+- `reconstruction.md` — preservation policy and completeness boundary.
+- `julia_migration.md` — path-complete disposition of all 31 historical Julia files.
+- `inventory_snapshot.py` — deterministic inventory/hash tool for the supplied ZIP.
+- `engineering/historical_cpp/` — useful C++ ports/falsifiers that are intentionally outside the active build.
+- `formal_drafts/` — useful formal drafts that are intentionally outside the active Lean library.
+
+## Non-living provenance
+
+- `checkpoints/` — exact pre-consolidation ledgers/status/theory/editorial snapshots. They may contain obsolete paths and overclaims by design; do not edit them into apparent currency.
+- `corpus/` — broad historical source/data/manuscript/review material needed for archaeology, producer recovery, negative controls and future migration.
 
 ## Trust boundary
 
-`record/corpus/` and `record/checkpoints/` are provenance. Their old labels (`[PROVEN]`, theorem numbers, `PASS`, etc.) are historical text, not current status. Promotion requires an explicit entry in `claim_ledger.md` and, where applicable, a current derivation or reproducible certificate.
+Only the living record files above describe the current project. Old labels such as `[PROVEN]`, `PASS`, `final`, theorem numbers, and obsolete directory names inside `checkpoints/` or `corpus/` are historical data, not current status.
 
-Exact old Git tree/blob objects are reused where preservation matters, so moving material into the record does not rewrite its contents.
-
-Files unrelated to the cat-map research programme (for example historical LLM benchmark comparisons accidentally bundled into the workspace) are not kept in the current branch. They remain recoverable from Git history but are not research provenance for this project.
+Files unrelated to the arithmetic cat-map programme are not retained in the current branch merely because they were bundled into an old workspace. Scientifically useful false files are retained only when their failure mechanism matters for regression or provenance.

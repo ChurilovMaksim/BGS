@@ -1,10 +1,8 @@
-# Reconstruction record
+# Reconstruction and completeness record
 
 Date: 2026-09-03
 
-This record defines the preservation boundary for the repository rebuild. It is
-not a theorem-status document; theorem status lives in `claim_ledger.md` and
-the active mathematical notes.
+This file defines the preservation boundary for the repository. Mathematical status lives in `claim_ledger.md`; retracted statements live in `retractions.md`.
 
 ## Source snapshot
 
@@ -14,8 +12,7 @@ The user-supplied research snapshot is `BGS.zip`.
 - compressed size: `45,752,245` bytes
 - files: `1,100`
 - uncompressed payload: `115,910,280` bytes
-- original broad directories: `data` 443 files, `docs` 382, `code` 175,
-  `formal` 57, `paper` 37, plus root notes/tools
+- original broad directories: `data` 443 files, `docs` 382, `code` 175, `formal` 57, `paper` 37, plus root notes/tools
 - duplicate SHA-256 groups: `228`
 - redundant byte-identical file copies: `266`
 - Python sources: `329`
@@ -25,59 +22,35 @@ The user-supplied research snapshot is `BGS.zip`.
 - TeX sources: `26`
 - PDF files: `11`
 
-During this audit a complete deterministic per-file TSV was generated from the
-ZIP (path, byte size, SHA-256, coarse class, byte-identical predecessor). The
-repository contains `inventory_snapshot.py`, which regenerates that manifest
-byte-for-byte from the preserved ZIP instead of checking in a 1,100-line copy
-of metadata for a file that is not itself versioned here. Generated Lean build
-products, bundled tool binaries, caches and byte-identical duplicates are not
-promoted to the active scientific surface.
+A deterministic per-file inventory (path, byte size, SHA-256, coarse class and byte-identical predecessor) was generated during the audit. `inventory_snapshot.py` regenerates the manifest from the supplied ZIP whenever that source file is available locally; the ZIP itself is not duplicated into this Git repository.
+
+Generated Lean build state, bundled tool binaries, caches and byte-identical copies are not retained merely for volume. Scientific preservation is content-based, not file-count-based.
 
 ## Git provenance
 
-The repository commit
+Commit `06e8173d9a538412f3bd9212296e1664c4e25584` is the broad pre-compact reconstruction. Commit `a06f4b32831d3e21e74c3fa1c6892da068aa6599` contains important pair-key repairs but compressed the visible corpus too aggressively. The current tree reuses exact historical Git objects where they remain useful, while separating them from active mathematics.
 
-`06e8173d9a538412f3bd9212296e1664c4e25584`
+Historical checkpoints that would otherwise contradict the current claim ledger are stored under `record/checkpoints/`; they are snapshots, not living documentation. Broad source/data/review material is under `record/corpus/`. Files unrelated to the cat-map project, such as accidental LLM benchmark comparisons, were removed from the current branch rather than preserved as fake research provenance; Git history still records their former presence.
 
-is the last broad-corpus reconstruction immediately before the overly
-aggressive compact rebuild. It contains the broad research trees (`code/`,
-`data/`, `docs/`, `inputs/`, `research/`, supported `src/` and `experiments/`)
-and an immutable pre-restructure provenance snapshot. The current rebuild
-reuses those audited Git objects where they remain useful instead of
-re-encoding them or creating another duplicate archive.
+## Current preservation policy
 
-The compact commit
+The repository follows **preserve useful evidence, trust narrowly**:
 
-`a06f4b32831d3e21e74c3fa1c6892da068aa6599`
+1. `mathematics/`, `computations/`, `formalization/`, `evidence/`, `literature/` and `manuscript/` are the active scientific surface.
+2. Every active mathematical claim has one authoritative status in `claim_ledger.md` and a current derivation, finite certificate, numerical label, or explicit open/draft status.
+3. Broad historical files remain under `record/` only when they can still help reconstruct a result, reproduce an old output, explain a retraction, migrate useful code, or prevent regression.
+4. A false historical claim may be preserved as a negative control; a scientifically irrelevant file is not preserved just because it existed in the ZIP.
+5. Historical labels such as `[PROVEN]`, theorem-like filenames, or old `PASS` fields have no authority outside the current ledger.
+6. Exact duplicates are represented once where possible; Git history is preferred over cloning a second archive.
+7. Julia migration is path-complete in `julia_migration.md`; falsified Julia is not mechanically translated.
 
-introduced several correct scientific repairs (especially the corrected
-pair-key M1 line and the `(N,K)=(461,23)` Cayley negative control) but again
-compressed the visible corpus too far. This rebuild keeps those repairs while
-restoring discoverability and provenance.
+## Semantic completeness check
 
-## Preservation policy
+Mechanical completeness and scientific completeness are different.
 
-The active repository follows **preserve broadly, trust narrowly**.
+- **Mechanical source accounting:** the ZIP hash, file counts and deterministic inventory make the original 1,100 paths auditable.
+- **Claim accounting:** `claim_ledger.md`, `retractions.md`, the consolidated `mathematics/` files and the manuscript cover the current exact results, finite certificates, useful earlier foundations, numerical diagnostics, theorem drafts and known failures.
+- **Implementation accounting:** every promoted JSON producer/reference must resolve in CI; active Python compiles; current exact finite regressions run; active C++ builds; every active Lean module must occur in the root import graph and `lake build` must succeed.
+- **Manuscript accounting:** the article contains the current pair-key/Cayley chain, finite exceptional sets, negative control, elliptic obligations, retained earlier results, corrected numerical interpretation, retractions that matter to interpretation, and the still-open BGS bridge. TeX is independently compiled in CI and a dedicated workflow commits the synchronized PDF.
 
-1. Current theorem notes, supported implementations, finite certificates,
-   numerical evidence, formal sources and the manuscript have human scientific
-   paths.
-2. Broad historical code/data/review material remains available under
-   `record/corpus/`, but it is not automatically trusted.
-3. Historical Julia is not duplicated into the active language layer. Every
-   path is mapped in `julia_migration.md`; the original bytes are recoverable
-   from Git history and hash-accounted by the reproducible ZIP inventory.
-4. Retracted arguments remain named in `retractions.md` so future work cannot
-   silently resurrect them.
-5. No claim is promoted because an old README called it `PROVEN`. Promotion
-   requires a derivation, a finite certificate, a successful current
-   regression, or a source-exact theorem application with hypotheses checked.
-
-## Completeness checks
-
-The ZIP hash plus deterministic inventory generator is the mechanical
-completeness check for the user snapshot. The claim ledger is the semantic
-completeness check for scientific conclusions. The Julia inventory is the
-language-migration completeness check. The broad `record/corpus/` trees keep
-intermediate and negative research directly browsable while avoiding a second
-copy of generated `.lake` state, bundled binaries and other build trash.
+No finite audit can prove the metaphysical statement that a human could never extract another useful idea from an old notebook. The strongest defensible guarantee is narrower and testable: every scientifically distinct result identified by the source inventory, historical status/index checkpoints, promoted evidence, current producers and retraction review is either represented in the active scientific narrative with an honest status, retained as useful historical provenance, or deliberately excluded as irrelevant/duplicate/generated material.
