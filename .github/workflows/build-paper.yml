@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-      - refactor/language-paper-consolidation
+      - 'refactor/**'
+      - 'repair/**'
     paths:
       - paper/main.tex
       - .github/workflows/build-paper.yml
