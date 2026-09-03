@@ -1,38 +1,34 @@
 # Mixed pair-key term as Cayley additive energy
 
-**Status: EXACT for the reduction; EXACT FINITE ALGEBRA for the audited fixed-`K` exceptional-prime sets.**
+**Status: EXACT for the reduction; FINITE-CERTIFICATE for the audited `K=11,13` cyclotomic exceptional sets.**
 
-Let `H <= F_p^*` have odd prime order `K`, and let `A=c(H\{1})` with `c(h)=(h+1)/(h-1)`.
+Let `H <= F_p^*` have odd prime order `K`, and set `A=c(H\{1})` with `c(h)=(h+1)/(h-1)`.
 
-## Exact identity
+## Exact reduction
 
 For distinct `u,v in H\{1}`,
 
 `d(u,v)=(u-1)(v-1)/(v-u)=2/(c(u)-c(v))`.
 
-Consequently the nonzero multiplicities of the mixed histogram `C_H(t)` are the nonzero difference multiplicities of `A`, up to the bijection `x -> 2/x`. Therefore
+Thus the nonzero multiplicities of `C_H(t)` equal the nonzero difference multiplicities of `A` up to the permutation `x -> 2/x`, and
 
-`sum_t C_H(t)^2 = sum_{x!=0} r_{A-A}(x)^2 = E_+(A)-|A|^2`.
+`sum_t C_H(t)^2 = E_+(A)-|A|^2`.
 
-The inversion identity `c(h^-1)=-c(h)` gives `A=-A`. These symmetry collisions are forced and define the baseline used by the finite certificates.
+Since `c(h^-1)=-c(h)`, `A=-A`; the resulting central-symmetry collisions give the forced baseline `(K-1)(2K-5)` used by the finite verifier.
 
-The same multiplicity has the PGL2 intersection description
+The same multiplicity can be written as a PGL2 intersection count
 
 `r_{A-A}(x)=#{h in H\{1}: ((2-x)h+x)/(2+x-xh) in H\{1}}`.
 
-The active exact verifier checks this identity directly on every representative finite-field design below.
+## Integer matching classification
 
-## Characteristic-zero matching classification
+Clearing a Cayley-difference collision and matching the six terms produces `6!=720` integer linear systems. Their characteristic-zero ranks are 30 of rank 2, 240 of rank 3, and 450 of rank 4. The gcds of maximal nonzero minors show that an additional rank drop can occur only in characteristic 2. The admissible positive-dimensional low-rank kernels are identity/inversion-swap symmetries; the others force forbidden zero/diagonal configurations.
 
-After writing subgroup elements as powers of a primitive `K`-th root and clearing denominators, equality of two Cayley differences becomes equality of two six-term multisets. There are `6!=720` possible matchings.
+This classification is recomputed by `computations/verification/mixed_cayley_energy.py`.
 
-The exact integer-linear classification is `30` rank-2, `240` rank-3 and `450` rank-4 systems. The gcd of maximal nonzero minors shows that the only possible additional rank drop occurs in characteristic `2`. For odd `K`, every admissible positive-dimensional characteristic-zero kernel is the identity or inversion-swap symmetry; the remaining low-rank systems force a forbidden zero or diagonal.
+## Cyclotomic exceptional primes: audited values
 
-## Fixed-K bad reduction primes
-
-For a non-forced system, the cleared collision polynomial is a nonzero element of the `K`-th cyclotomic field. A finite-field collision can therefore appear only at rational primes dividing its cyclotomic norm. Normalizing one exponent by scaling makes the enumeration finite.
-
-The exact resultant computation gives
+For a specified prime `K`, a normalized non-forced collision gives a cyclotomic algebraic integer. If it is nonzero, finite-field collisions can occur only at rational primes dividing its norm. The repository performs the complete normalized nonvanishing/resultant enumeration for:
 
 `E_11={23,67,89}`
 
@@ -40,23 +36,21 @@ from 793 normalized non-forced quadruples and 8 distinct nonzero norms, and
 
 `E_13={53,79,131,157,313}`
 
-from 1431 quadruples and 14 distinct norms.
+from 1431 quadruples and 14 distinct nonzero norms.
 
-The CI producer recomputes these resultants from scratch: `computations/verification/mixed_cayley_energy.py`.
+The active verifier also checks the prediction in both directions on representative fields:
 
-The same script cross-checks the prediction in both directions:
+- `(53,13)`: exceptional, excess 208;
+- `(67,11)`: exceptional, excess 48;
+- `(199,11)`: non-exceptional, excess 0;
+- `(521,13)`: non-exceptional, excess 0.
 
-- `(53,13)`: exceptional, excess `208>0`;
-- `(67,11)`: exceptional, excess `48>0`;
-- `(199,11)`: non-exceptional, excess `0`;
-- `(521,13)`: non-exceptional, excess `0`.
-
-The previous historical verifier accepted an expected exceptional prime without requiring observed excess. The active verifier deliberately closes that regression loophole.
+The historical verifier had a one-way regression loophole: an expected exceptional prime could pass without requiring observed excess. The current verifier requires `exceptional <=> excess>0` on these audited designs.
 
 ## Non-uniformity witness
 
-At `(p,K)=(461,23)`, `sum_t C_H(t)^2=1190` while the forced baseline is `902`. The excess `288` proves that “only the forced baseline” is not a uniform-in-`K` statement.
+At `(p,K)=(461,23)`, `sum_t C_H(t)^2=1190` while the forced baseline is `902`. The excess `288` is an exact warning against extrapolating the `K=11,13` pattern uniformly in growing `K`.
 
 ## Scope
 
-For each fixed odd prime `K`, the cyclotomic argument yields only finitely many bad reduction primes. Nothing here supplies a useful bound uniform in growing `K`, and no part of this argument proves BGS local statistics.
+The cyclotomic mechanism explains why a fixed specified `K` leads to finitely many bad reductions once the relevant collision polynomials are proved nonzero. The current repository explicitly computes the complete exceptional sets only for `K=11` and `K=13`; it does not claim an explicit or useful uniform bound for arbitrary growing `K`.
