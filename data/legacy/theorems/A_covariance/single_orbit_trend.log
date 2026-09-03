@@ -1,0 +1,11 @@
+design points (p, K, m_pred): [(8969, 59, 152), (3571, 17, 210), (14503, 56, 258), (9349, 19, 492), (28657, 46, 622)]
+  p=  8969 K= 59 m= 153: control GOE 0.3503+-0.0554   single-orbit L1 mean 0.4847   z = +2.43 +- 0.46  [range +0.67,+4.77]  13.9s
+  p=  3571 K= 17 m= 210: control GOE 0.3029+-0.0512   single-orbit L1 mean 0.4449   z = +2.77 +- 0.47  [range +0.19,+4.07]  3.0s
+  p= 14503 K= 56 m= 259: control GOE 0.2876+-0.0529   single-orbit L1 mean 0.2903   z = +0.05 +- 0.36  [range -0.93,+2.29]  39.0s
+  p=  9349 K= 19 m= 492: control GOE 0.1900+-0.0352   single-orbit L1 mean 0.3756   z = +5.28 +- 0.45  [range +2.85,+6.44]  19.9s
+  p= 28657 K= 46 m= 623: control GOE 0.1743+-0.0291   single-orbit L1 mean 0.1920   z = +0.61 +- 0.15  [range -0.11,+1.28]  209.1s
+
+weighted fit  z = -0.873 * log m + +6.535
+  slope > 0  => deviation GROWS with multiplet size (single orbit not in the GOE class)
+  slope < 0  => deviation shrinks (deterministic BGS plausible)
+artifact -> C:\Users\churi\Desktop\BGS\artifacts\r71\single_orbit_trend.json

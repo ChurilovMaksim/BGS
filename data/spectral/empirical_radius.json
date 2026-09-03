@@ -1,0 +1,39 @@
+{
+ "run": "100.1",
+ "title": "Empirical radius R_emp of the parity-odd coset spectrum",
+ "measurements": [
+  {
+   "N": 3571,
+   "K": 17,
+   "m": 105,
+   "R": 2.0671,
+   "std": 0.1166
+  },
+  {
+   "N": 19489,
+   "K": 29,
+   "m": 336,
+   "R": 2.1087,
+   "std": 0.1094
+  },
+  {
+   "N": 95419,
+   "K": 57,
+   "m": 837,
+   "R": 2.19,
+   "std": 0.0501
+  }
+ ],
+ "analysis": "R_emp exceeds the variance-1 semicircle radius 2 by 0.07-0.19, but the per-q standard deviation (0.05-0.12) is comparable to the excess: the max-statistic is noisy at these sample sizes (8-9 q per design). No clean K- or m-scaling resolved. The bulk Stieltjes convergence (m^-1.2) is unaffected \u2014 it excludes the edge.",
+ "status": "[MEASURED, noisy]; needs ~100 q per design for a conclusion",
+ "resolution": {
+  "full_q_curve_N3571": {
+   "mean": 1.9517,
+   "std": 0.1274,
+   "max": 2.7748,
+   "n": 3570
+  },
+  "conclusion": "the earlier 'excess over 2' was upward noise of the max statistic on 8-9 q samples; the full q-curve gives mean 1.95 < 2 (finite-m semicircle approaches 2 from below) with rare outliers to 2.77. NO K-structure in the radius. The variance-1 semicircle is the correct limiting reference.",
+  "status": "RESOLVED"
+ }
+}

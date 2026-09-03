@@ -1,38 +1,62 @@
-# Quantized cat maps and BGS: research workspace
+# Quantized cat maps and BGS — complete research workspace
 
-This repository studies spectral statistics of quantized hyperbolic cat maps after symmetry reduction. The long-term goal is a rigorous path from exact finite-field formulas to a random-matrix local law.
+This repository is the working research record for quantized hyperbolic cat maps, symmetry reduction, moment identities and the BGS/local-statistics program. It is deliberately **broad in preservation and narrow in trust**: useful experiments, intermediate calculations, negative results, literature notes and historical derivations stay available, while theorem status is controlled separately.
 
-**Current status: general BGS is not proved.** The strongest active line uses the exact pair-key fourth-moment distribution `B(t)`. A restricted M1 concentration proof chain for odd prime `K`, explicit nonexceptional split primes `N`, and `K=o(N^(1/4))` is assembled but still marked audit/formalization pending. Historical Mobius-fiber proof claims remain archive-only because they analyze the wrong finite object.
+**Bottom line:** general BGS is not proved. The strongest current line is the exact pair-key/fourth-moment program summarized in `STATUS.md`; a restricted M1 concentration theorem for explicit split primes and `K=o(N^(1/4))` is an assembled proof draft pending line-by-line audit/formalization. M1 is therefore the present bottleneck, not the whole repository.
 
-## Start here
+## Read this first
 
-1. `STATUS.md` - concise scientific status and theorem/draft/retraction boundary.
-2. `research/theory.md` - current mathematical core.
-3. `research/ledger.md` - active chronology of decisions and discoveries.
-4. `research/problems/m1_fluctuation_energy.md` - load-bearing M1 problem statement.
-5. `research/notes/k2_cayley_energy.md` and `research/notes/m1_offoff_elliptic_family.md` - detailed current derivations.
-6. `research/engineering/language_migration.md` - complete audit of the historical Julia layer and supported replacements.
-7. `paper/main.tex` - the single editable manuscript source.
-8. `references/bibliography.md` - literature used by the active proof program.
+1. `RESEARCH_INDEX.md` — map of the entire research program and where the multi-year corpus lives.
+2. `STATUS.md` — authoritative theorem/draft/retraction boundary.
+3. `research/theory.md` — current mathematical core.
+4. `research/ledger.md` — current research chronology and decisions.
+5. `data/MANIFEST.md` — status/provenance guide for the broad output corpus.
+6. `code/README.md` — map of the broad executable research corpus.
+7. `research/engineering/language_migration.md` — Julia-to-Python/C++ audit and replacement map.
+8. `paper/main.tex` — single canonical manuscript source; `paper/main.pdf` is the synchronized build target.
 
-## Language and implementation policy
+## Repository layers
 
-- `src/python/bgs/` - reusable symbolic/exact arithmetic and research kernels.
-- `src/cpp/` - expensive finite-field loops, exhaustive combinatorics, dynamic programs, and independent exact verification.
-- `experiments/` - reproducible drivers, falsifiers and verification entry points; not a second library tree.
-- Fortran is not introduced just to have another language. It is reserved for a future profiled dense-numerical kernel if it gives a concrete benefit.
-- A second implementation of the same mathematics exists only when independent reproduction is part of the scientific certificate.
+### 1. Current/audited layer
 
-All 31 historical Julia paths (23 byte-distinct sources) are accounted for. Supported mathematics was consolidated into a small number of Python/C++ components; falsified or superseded Julia lines were not mechanically cloned. The original Julia sources remain once in `archive/legacy-workspace/` and Git history.
+- `src/python/bgs/` — reusable current Python kernels.
+- `src/cpp/` — performance-critical and independently verified C++20 kernels.
+- `experiments/` — current reproducible drivers/falsifiers; not a second library tree.
+- `research/` — current proof program, notes, problem statements and engineering records.
+- `results/verified/` — promoted exact/finite certificates.
+- `results/diagnostics/` — current falsifiers and diagnostic outputs.
+- `results/numerical/` — numerical evidence only.
+- `formal/` — Lean sources/certificates with status stated explicitly.
+- `paper/` — one active manuscript, not a forest of competing TeX drafts.
 
-## Repository layout
+### 2. Full research corpus
 
-- `results/verified/` - curated finite/exact certificates.
-- `results/diagnostics/` - falsifiers and diagnostic outputs.
-- `results/numerical/` - numerical evidence only.
-- `formal/` - Lean sources/certificates with build status stated explicitly.
-- `paper/` - exactly one current manuscript source (`main.tex`) and its built PDF; no competing `proof/final/complete` TeX trees.
-- `references/` - bibliography plus literature/symbolic-check provenance.
-- `archive/legacy-workspace/` - immutable pre-restructure research corpus, including failed routes and historical manuscripts.
+These paths are ordinary working material, not hidden archive storage:
 
-The archive is intentionally large and provenance-oriented. The active workspace is intentionally compact and status-controlled. Historical material is promoted only after reconstruction, an appropriate independent check, and an honest rewrite of the claim.
+- `code/` — broad historical and intermediate Python research code: core quantization, diagnostics, Kloosterman, large-m, shape automata, Sp4, theorem-oriented computations, utilities, verification and maintenance.
+- `data/` — diagnostics, moments, spectral data, rank-2/Sp4 data, proof-era outputs and preserved legacy numerical artifacts with an explicit manifest.
+- `docs/` — literature notes, referee/red-team material, old run archive, project notes, full pre-rebuild theory notebook and full historical research ledger.
+- `inputs/` — immutable legacy inputs used for regression/reconstruction.
+
+The broad corpus is retained because failed routes, finite counterexamples, calibration outputs and old computational experiments are part of the scientific provenance and often become useful again during proof repair.
+
+### 3. Immutable provenance snapshot
+
+- `archive/legacy-workspace/` — one complete pre-restructure snapshot used only as insurance/provenance.
+
+It does **not** override `STATUS.md`, and it is not the primary place to browse the project. Old Julia sources live there once; they are intentionally not duplicated back into the active research corpus after migration.
+
+## Language policy
+
+- Python: symbolic/exact orchestration, data analysis, moderate numerical work and readable research implementations.
+- C++20: expensive finite-field loops, exhaustive combinatorics, dynamic programs and independent exact verification.
+- Fortran: only if profiling identifies a dense numerical kernel for which it materially improves the implementation; no language is introduced for cosmetic diversity.
+- Independent duplicate implementations are kept only when independence is itself part of a scientific certificate.
+
+All 31 historical Julia paths are accounted for in `research/engineering/language_migration.md`. Useful mathematics is consolidated into a smaller set of supported Python/C++ components; falsified or superseded Julia lines are preserved only in the immutable archive/Git history rather than translated mechanically.
+
+## Trust rule
+
+A filename containing `proof`, `theorem`, `final` or `certificate` is not sufficient evidence of theorem status. `STATUS.md` is authoritative. In particular, the historical Mobius-fiber/M4D route, the old N=95419 spacing verdict, the unresolved word-trace certificate and several Hecke-centering/transfer claims remain explicitly quarantined.
+
+The intended working rule is simple: **preserve broadly; promote only after reconstruction, falsification attempts and an appropriate independent check.**

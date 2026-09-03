@@ -1,0 +1,11 @@
+V7 anchor p=5,k=2: total=6 types={'pairing': 6} PASS
+V1 matched identity: 51/51 pass
+V2 zero counts: 8/8 pass
+V3 p=5 k=2: COMPLETE enum matches k^3*Z4^2 = 21632
+V3 p=7 k=2: COMPLETE enum matches k^3*Z4^2 = 276768
+V3 p=7 k=3: COMPLETE enum matches k^3*Z4^2 = 934092
+V5 collision lemma: worst=2 over 8 (p,k) configs (PASS)
+V6 r=6 strata: 12/12 pass
+V4 tail bound: 38/38 configs pass (violations=0, degenerate patterns skipped=72)
+TOTAL runtime 105.9 s
+SUMMARY: {'V1': True, 'V2': True, 'V3': True, 'V4': True, 'V5': True, 'V6': True}

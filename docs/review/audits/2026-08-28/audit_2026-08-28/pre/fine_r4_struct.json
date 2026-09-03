@@ -1,0 +1,70 @@
+{
+ "checks": [
+  [
+   "U2 C(u,v)<=4 (p=113,k=14)",
+   true,
+   "max observed=1"
+  ],
+  [
+   "U2 C(u,v)<=4 (p=127,k=7)",
+   true,
+   "max observed=1"
+  ],
+  [
+   "U2 C(u,v)<=4 (p=181,k=9)",
+   true,
+   "max observed=1"
+  ],
+  [
+   "U1 fiber<=2 (p=113,k=14)",
+   true,
+   "max fiber=2"
+  ],
+  [
+   "U3 decomposition==brute (p=113,k=14)",
+   true,
+   "decomposed=5, brute=5"
+  ],
+  [
+   "U1 fiber<=2 (p=127,k=7)",
+   true,
+   "max fiber=1"
+  ],
+  [
+   "U3 decomposition==brute (p=127,k=7)",
+   true,
+   "decomposed=0, brute=0"
+  ]
+ ],
+ "scaling": [
+  {
+   "p": 113,
+   "alpha": 9,
+   "k": 14,
+   "total": 5,
+   "pairings": 0,
+   "extras": 5,
+   "model_k4_over_2p2": 1.5042681494243872,
+   "ratio_extras_model": 3.323875468554769
+  },
+  {
+   "p": 127,
+   "alpha": 3,
+   "k": 7,
+   "total": 0,
+   "pairings": 0,
+   "extras": 0,
+   "model_k4_over_2p2": 0.07443114886229772,
+   "ratio_extras_model": 0.0
+  }
+ ],
+ "_H": [
+  1,
+  3,
+  9,
+  27,
+  81,
+  116,
+  94
+ ]
+}

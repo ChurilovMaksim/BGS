@@ -1,0 +1,5 @@
+CHECK 1 (N=53): 2704 nonempty curves of 2809; mean size 49.06 (N=53), median 49.0, max 102;  sum sizes = 132651 = |X|^3 = 132651
+   curves with >3N points: 0 (0.0%) — OK: most curves are O(N)
+CHECK 2 (N=37,q=3): M6 third method = 2.123376e+05;  character-matrix = 2.123376e+05;  rel diff = 2.74e-16  (INDEPENDENT CONFIRM)
+   (1 s)
+CHECK 3: honest /N^k at N=95419 (recorded): k=1..5 = 0.9994 1.9973 4.9904 13.9672 41.8897 vs Catalan 1 2 5 14 42 — k=2..5 confirmed at the large design in the honest convention
