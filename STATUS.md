@@ -4,31 +4,80 @@ Updated: 2026-09-03.
 
 ## Established finite statements and reproducibility anchors
 
-- Twisted-Jacobi fourth-moment baseline reproduces the preserved R82 data at `N=199` and `N=3571` to approximately `6.0e-14` and `2.4e-13` maximum absolute deviation.
+- Twisted-Jacobi fourth-moment baseline reproduces the preserved R82 data at `N=199` and `N=3571` to the previously audited floating-point tolerance.
 - The exact `k=2` character-orthogonality reduction is reproduced at `N=53` and `N=199`; the off-diagonal constraint counts are `132=(13-1)(13-2)` and `90=(11-1)(11-2)`.
-- The vectorized twisted-Jacobi matrix formula agrees with independent direct scalar character sums at `N=461` and `N=19489` within the recorded numerical tolerance.
-- The `k=4` factorization has now been independently rechecked by clean Python and C++ implementations at `N=23` and `N=53` (two q values at `N=53`).  The same verifiers now reconstruct the complete difference distribution `B(t)` in two independent ways.  At `N=53`, `|V4|=423879`, `B(0)=12063`, and `sum_t B(t)^2=3410502105`; at `N=23`, the corresponding values are `48621`, `2609`, and `103156981`.
-- More generally, the even-moment factorization follows algebraically from expanding `J^s conjugate(J)^s` and applying character orthogonality twice.  This reduction is exact; it does **not** supply the asymptotic estimate on the resulting high-dimensional variety.
+- The vectorized twisted-Jacobi matrix formula agrees with independent direct scalar character sums at `N=461` and `N=19489` within the stored tolerance.
+- The exact `k=4` pair-key distribution `B(t)` is independently reconstructed in Python and C++. Current exact anchors are:
+  - `N=23,K=11`: `|V4|=48,621`, `B(0)=2,609`, `sum B(t)^2=103,156,981`;
+  - `N=53,K=13`: `423,879`, `12,063`, `3,410,502,105`;
+  - `N=199,K=11`: `4,681,821`, `96,641`, `115,589,503,389`;
+  - `N=461,K=23`: `111,147,915`, `641,799`, `26,960,554,630,421`.
+- For `N<=53`, original-pair collapse, explicit keys and the corrected `H^2` algorithm agree on the exact geometry. The twist-sum identity is independently checked through `N=199` in Python and direct-DFT C++.
+- The total k=4 variety count now has an exact closed form:
+  `V4=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`.
+- More generally, the even-moment factorization follows algebraically from expanding `J^s conjugate(J)^s` and applying character orthogonality twice. This is an exact reduction, not an asymptotic estimate.
 
-## Numerical evidence only
+## New exact reformulation of M1
 
-- GOE nearest-neighbour spacing tests pass the stored finite-sample criteria at the audited designs.  This is evidence, not a limiting theorem.
-- Matched-GOE number variance agrees within the stored two-standard-error criterion for the tested windows.
-- The old archive contains a potentially important three-design pattern `rel_k ~ c(k) K/N` for `k=2,4,6,8` and a resolvent/Stieltjes convergence experiment.  These are in the archaeology queue only: one archived large-design key-table producer has now been found to miss the reverse ordered diagonal/off-diagonal contribution, so provenance-specific recomputation is required before any promotion.
+The active fourth-moment object is the pair-key distribution `B(t)`, not the historical Möbius graph.
 
-## Main open problem: M1 fluctuation energy
+For the correct key amplitudes `A_(chi,psi)`, double character orthogonality gives exactly
 
-The historical Möbius-fiber proof is invalid.  Two independent implementations show that its diagonal-only energy decomposition omits nonzero cross terms.  In addition, the claimed uniform `4 sqrt(N)` bound fails on the degenerate fiber `d=0`: for semi-trivial twist pairs `(psi_1=1, psi_2!=1)`, the exact value is `A(0)=N-2`.
+`sum_(chi,psi) (A_(chi,psi)*A_(chi,psi))(t)=m^2 B(t)`
 
-The repaired problem is to derive the exact twist assembly, classify all exceptional fibers/twists, obtain the full cross-Gram formula with one Fourier normalization, and prove a remainder that genuinely tends to zero in a stated `(N,K,m)` regime.
+and in Fourier space
 
-## Explicitly not active
+`sum_(chi,psi) A_hat_(chi,psi)(xi)^2=m^2 B_hat(xi)`.
+
+The fourth-moment fluctuation is
+
+`Sigma4(q)=sum_t B(t)e_N(qt)`
+
+with exact identities
+
+`mean_(q!=0) Sigma4=(N B(0)-V4)/(N-1)`
+
+and
+
+`Var_(q!=0) Sigma4=N Var_(t!=0)B(t)`.
+
+Therefore the load-bearing variance target is now the clean geometric estimate
+
+`Var_(t!=0)B(t)=O(K^2 N)`.
+
+## Fresh corrected numerical evidence
+
+Using the corrected key-table producer, not archived Run-93 outputs, larger-`m` designs are consistent with
+
+`mean Sigma4 ~ 2N^2`,
+`std Sigma4 ~ 4NK`,
+`relative std ~ 2K/N`.
+
+Examples include `N=199,K=11,m=18`, `N=461,K=23,m=20`, and the new trace-3 design `N=521,K=13,m=40`. This is evidence for the theorem target, not a proof.
+
+## Main analytic frontier
+
+Write
+
+`B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_{t=0}`.
+
+The mean has two deterministic `N^2`-scale spikes: the diagonal key self-coupling and the `(h1,h2)=(1,1)` inversion class in `O(0)`. For generic `h1,h2!=1`, `h1!=h2`, the zero-difference off/off equation completes to a smooth plane cubic. Independent SymPy and Wolfram resultants give no additional generic `t=0` singular stratum. A Hasse-Weil argument therefore yields
+
+`mean Sigma4 = 2N^2 + O(KN + N + K^2 sqrt(N))`,
+
+once the displayed resultant factorization is converted into a publication-quality algebraic lemma. In particular the mean asymptotic holds in the provisional range `K=o(N^(3/4))`.
+
+The variance is harder. The off/off layer is a family of cubic/elliptic point-count fluctuations. Candidate Deligne/Katz/Fouvry-Kowalski-Michel trace-function correlation machinery has been identified, but its conductor, monodromy, geometric-isomorphism and exceptional-parameter hypotheses have **not** yet been verified for this family.
+
+## Explicitly retracted / not active
 
 - “General BGS proved.” — false.
-- Historical `M4D_PROOF` / Möbius-fiber theorem — superseded by the M1 audit.
-- R86/R87 trace-fluctuation shortcut — invalid as stated because it applies a commutative binomial expansion to noncommuting matrices and then uses an unproved factorization.
-- Historical `N=95419` ratio-vs-spacing KS result — invalid comparison of different statistics; raw numbers are preserved in the archive.
+- Historical `M4D_PROOF` / Möbius-fiber theorem — retracted as a theorem input.
+- The historical Möbius assembly itself is the wrong finite object: it contains a phantom `(1,1)` point for every `d!=0` and mishandles the multiplicity-`N-2` diagonal at `d=0`.
+- R86/R87 trace-fluctuation shortcut — invalid as stated because it uses a commutative binomial expansion for noncommuting matrices and an unproved factorization.
+- Historical `N=95419` ratio-vs-spacing KS result — invalid comparison of different statistics.
 - Old word-trace “certificate” — unresolved word case, not a proof.
-- Old Sp4/rank-2 theorem labels — retained as promising archaeology until their projector/basis conventions are independently rebuilt and checked.
+- Archived Run 93.2 third-calibration outputs — producer omits the reverse ordered off→diagonal coupling and must be recomputed before use.
+- Old Sp4/rank-2 theorem labels — archaeology until representation/projector conventions are rebuilt independently.
 
-No file in `archive/` changes the status above.
+No file under `archive/` changes the status above.
