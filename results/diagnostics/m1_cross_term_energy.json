@@ -1,7 +1,13 @@
 {
   "claim": "Compares the historical Mobius graph with the exact pair-key assembly and checks their closed-form difference.",
-  "conclusion": "The historical Mobius object is not the current M1 object.  Current work must use the pair-key assembly and its exact B(t) collapse.",
-  "producer": "experiments/m1/cross_term_energy.py",
+  "conclusion": "The historical Mobius object is not the current M1 object. Current work must use the pair-key assembly and its exact B(t) collapse.",
+  "migration": {
+    "previous_producer": "experiments/m1/cross_term_energy.py",
+    "replacement": "src/cpp/m1/cross_term_energy.cpp",
+    "reason": "The workload is dominated by finite-field exhaustive loops and circular convolutions. The C++20 producer removes the duplicate heavy Python implementation while retaining the same scientific diagnostic and preserved regression anchors.",
+    "validation": "C++20 strict build and verify mode reproduce both preserved integer sum_B_squared anchors and the historical normalized-energy anchors. Character values use long double complex arithmetic; the integer B-squared anchor is checked after a small numerical residual."
+  },
+  "producer": "src/cpp/m1/cross_term_energy.cpp",
   "results": [
     {
       "K": 13,
@@ -21,9 +27,9 @@
           "d_zero_first_twist_nontrivial": "A_hist=-1, A_key=N-2",
           "d_zero_first_twist_trivial": "A_hist=A_key=N-2"
         },
-        "fourier_domain_max_abs_residual": 1.5592040352320703e-13,
+        "fourier_domain_max_abs_residual": 1.4122632260982657e-16,
         "pass": true,
-        "time_domain_max_abs_residual": 8.578984880110011e-14
+        "time_domain_max_abs_residual": 4.62264723443517e-17
       },
       "historical_mobius_energy": {
         "cross_over_diagonal": 0.00834898506163491,
@@ -40,14 +46,14 @@
     {
       "K": 11,
       "N": 199,
-      "correct_energy_integer_residual": 7.62939453125e-05,
+      "correct_energy_integer_residual": 7.450580596923828e-09,
       "correct_energy_integer_sum_B_squared": 115589503389,
       "correct_key_table_energy": {
-        "cross_over_diagonal": 0.06388983805047846,
-        "cross_raw": 728691233665782.0,
-        "diagonal_raw": 1.140543247409789e+16,
-        "normalized_energy": 115589503389.00008,
-        "total_raw": 1.2134123707763672e+16
+        "cross_over_diagonal": 0.06388983805047907,
+        "cross_raw": 728691233665788.1,
+        "diagonal_raw": 1.1405432474097876e+16,
+        "normalized_energy": 115589503389.0,
+        "total_raw": 1.2134123707763664e+16
       },
       "correction_identity": {
         "formula": {
@@ -55,23 +61,23 @@
           "d_zero_first_twist_nontrivial": "A_hist=-1, A_key=N-2",
           "d_zero_first_twist_trivial": "A_hist=A_key=N-2"
         },
-        "fourier_domain_max_abs_residual": 7.316313328015526e-12,
+        "fourier_domain_max_abs_residual": 1.1176820335164227e-15,
         "pass": true,
-        "time_domain_max_abs_residual": 9.011365628733902e-13
+        "time_domain_max_abs_residual": 2.246301347732922e-16
       },
       "historical_mobius_energy": {
-        "cross_over_diagonal": 0.027290377739838702,
-        "cross_raw": 317523876170438.0,
-        "diagonal_raw": 1.1635012134951662e+16,
-        "normalized_energy": 113859701371.00003,
-        "total_raw": 1.19525360111221e+16
+        "cross_over_diagonal": 0.027290377739838535,
+        "cross_raw": 317523876170436.0,
+        "diagonal_raw": 1.163501213495166e+16,
+        "normalized_energy": 113859701371.0,
+        "total_raw": 1.1952536011122096e+16
       },
-      "historical_over_correct_energy": 0.9850349558802183,
+      "historical_over_correct_energy": 0.9850349558802176,
       "m": 18,
       "pass": true,
       "primitive_root": 3
     }
   ],
-  "status": "EXACT FINITE DIAGNOSTIC; HISTORICAL ASSEMBLY RETRACTED",
+  "status": "FINITE DIAGNOSTIC; HISTORICAL ASSEMBLY RETRACTED",
   "verdict": "PASS"
 }
