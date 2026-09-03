@@ -1,36 +1,42 @@
-# M1 off/off layer — elliptic pencil and correlation theorem route
+# M1 off/off layer — elliptic pencil and restricted variance theorem draft
 
-This note isolates the genuinely hard part of the fourth-moment variance after the exact `k=2` mixed term has been separated.
+This note isolates the pure off/off term `O(t)` in the exact fourth-moment distribution. The mixed `k=2` term is treated separately in `k2_cayley_energy.md`.
 
-## 1. Cayley coordinates
+## 1. Cayley model
 
-For an off-diagonal key write
+For an off-diagonal key put
 
-`a=c(u)=(u+1)/(u-1)`,
-`b=c(v)=(v+1)/(v-1)`.
+`a=c(u)=(u+1)/(u-1)`, `b=c(v)=(v+1)/(v-1)`.
 
-For a subgroup parameter `h`, put `alpha=c(h)`. Then
+For a subgroup parameter `h!=1`, write `alpha=c(h)`. Then
 
-`T_alpha(a)=c(h/u)=(alpha*a-1)/(a-alpha)`.
+`T_alpha(a)=c(h/u)=(alpha*a-1)/(a-alpha)`
 
-The key difference is
+and
 
 `d(u,v)=2/(a-b)`.
 
-For a fixed parameter pair `(h1,h2)`, with `alpha=c(h1)` and `beta=c(h2)`, the off/off fiber over `t` is
+For `lambda=(h1,h2)` with `alpha=c(h1)`, `beta=c(h2)`, the fiber over `t` is
 
 `2/(a-b)+2/(T_alpha(a)-T_beta(b))=t`.
 
-After clearing denominators this is a plane cubic. Solving quadratically in one variable gives a double cover of the `a`-line branched over a binary quartic.
+After clearing denominators this is a plane cubic. Viewed as a quadratic in one variable it is a double cover of `P^1` branched over a binary quartic.
 
-## 2. Binary-quartic discriminant
+The generic parameter set used below excludes the `O(K)` strata
+
+- `h1=1` or `h2=1`;
+- `h1=h2`;
+- `h1 h2=1`.
+
+These are handled separately in Section 8.
+
+## 2. Discriminant and generic elliptic geometry
 
 Set
 
-`p=alpha+beta`,
-`d=alpha-beta`.
+`p=alpha+beta`, `d=alpha-beta`.
 
-For the branch quartic let `I,J` denote the classical binary-quartic invariants. Up to a nonzero convention-dependent scalar, its discriminant factors as
+Up to a nonzero scalar away from characteristics `2,3`, the binary-quartic discriminant is
 
 `Delta=d^2(dt-2)^4`
 `      (p-d-2)^2(p-d+2)^2(p+d-2)^2(p+d+2)^2`
@@ -39,34 +45,21 @@ For the branch quartic let `I,J` denote the classical binary-quartic invariants.
 where
 
 `R_(p,d)(t)`
-`=d^2t^4`
-` +2d(p^2-d^2-4)t^3`
-` +4(5d^2-p^2+4)t^2`
-` -64dt+64`.
+`=d^2t^4+2d(p^2-d^2-4)t^3`
+` +4(5d^2-p^2+4)t^2-64dt+64`.
 
-The omitted scalar is nonzero away from characteristics `2,3`.
+The residual-quartic discriminant is proportional to
 
-The residual-quartic discriminant is, again up to a nonzero scalar,
+`d^2 p^2`
+`(p-d-2)^2(p-d+2)^2(p+d-2)^2(p+d+2)^2`.
 
-`disc_t R=d^2p^2`
-`         (p-d-2)^2(p-d+2)^2`
-`         (p+d-2)^2(p+d+2)^2`.
-
-For genuine Cayley parameters neither `alpha` nor `beta` equals `+1` or `-1`, so the last four factors never vanish. The only parameter strata where the residual quartic is not squarefree are
+For genuine Cayley parameters the last four factors never vanish. Thus the residual quartic is squarefree precisely off the two parameter strata
 
 `d=0 <=> h1=h2`,
 
-and
+`p=0 <=> h1 h2=1`.
 
-`p=0 <=> h1h2=1`.
-
-Each contains only `O(K)` of the `K^2` parameter pairs.
-
-The factorization has been reproduced independently in SymPy and Wolfram.
-
-## 3. Exact degree and non-isotriviality of j
-
-On the generic locus `d!=0`, the discriminant has the factor `(dt-2)^4`. At
+At
 
 `t0=2/d`
 
@@ -74,34 +67,23 @@ the quartic invariant satisfies exactly
 
 `I(t0)=256`.
 
-Thus the order-four discriminant zero is not cancelled in the elliptic `j`-invariant.
+Moreover, on the generic locus,
 
-A direct polynomial gcd computation gives, on the generic `(p,d)` locus,
+`gcd_t(I,Delta)=1`, `deg_t I=4`, `deg_t Delta=8`.
 
-`gcd_t(I(t),Delta(t))=1`
-
-up to a nonzero scalar. Moreover
-
-`deg_t I=4`,
-`deg_t Delta=8`.
-
-Therefore
-
-`j(t) ~ I(t)^3/Delta(t)`
-
-has rational-map degree exactly `12`. Its pole divisor has type
+Hence the generic elliptic `j`-map has degree exactly `12` and pole divisor
 
 `(4,4,1,1,1,1)`:
 
-- order four at `t=infinity`;
-- order four at `t=2/d`;
+- order `4` at `t=infinity`;
+- order `4` at `t=2/d`;
 - four simple poles at the roots of `R_(p,d)`.
 
-In particular every generic parameter pair defines a non-isotrivial one-parameter elliptic family.
+In particular the generic family is non-isotrivial.
 
-The gcd, degree, pole value and factorization have been reproduced independently in SymPy and Wolfram.
+These identities have been reproduced independently in SymPy and Wolfram.
 
-## 4. Exact parameter symmetry
+## 3. Exact parameter symmetries
 
 The key involution
 
@@ -111,277 +93,259 @@ preserves `d(u,v)` and sends
 
 `(h1,h2)->(h2^-1,h1^-1)`.
 
-Hence
+Therefore
 
 `O_(h1,h2)(t)=O_(h2^-1,h1^-1)(t)`.
 
-In Cayley parameters this is
+In Cayley variables this is
 
 `(alpha,beta)->(-beta,-alpha)`,
 
-which preserves `d` and changes `p` to `-p`.
+which preserves `d` and sends `p` to `-p`.
 
-The swap `(u,v)->(v,u)` gives the separate relation
+The swap `(u,v)->(v,u)` gives the separate reflection
 
 `O_(h1,h2)(t)=O_(h2,h1)(-t)`.
 
-At `N=53,K=13` and `N=199,K=11`, exact same-`t` class arrays have no coincidences beyond the first involution: there are `(K^2+K)/2` distinct arrays, with `K` fixed parameters `h1h2=1` and every other orbit of size two. A separate finite check finds no additional centered arrays related by a global sign.
+Finite exact arrays at `N=53,K=13` and `N=199,K=11` show no same-`t` coincidences, even up to a global sign after centering, beyond the first involution.
 
-## 5. Generic same-base j-classification
+## 4. Generic same-base j classification
 
-On the open locus
+On the generic locus the unique finite pole of order `4` occurs at `t=2/d`. Thus equality of two rational `j(t)` functions first recovers the same `d`.
 
-`d!=0`, `p!=0`,
-
-the residual quartic is squarefree. Thus `j(t)` has a unique finite pole of order four, at `t=2/d`.
-
-If two generic parameter pairs have the same rational `j(t)`, equality of that pole recovers the same `d`.
-
-Next take the polynomial part of `I^3/Delta` at infinity. If `L4,L3` are its `t^4,t^3` coefficients, then
+If `L4,L3` are the `t^4,t^3` coefficients of the polynomial part of `I^3/Delta` at infinity, then
 
 `L3/L4=4(p^2-d^2-2)/d`.
 
-Since `d` is already known, this recovers `p^2`. Therefore same-base equality of generic `j`-functions leaves only
-
-`p'=p`
-
-or
-
-`p'=-p`,
-
-that is
+So the same `d` and the same `j(t)` recover `p^2`. Consequently the only generic same-base `j` coincidences are
 
 `(alpha',beta')=(alpha,beta)`
 
-or
+and
 
 `(alpha',beta')=(-beta,-alpha)`.
 
-So the exact key involution accounts for every generic same-base `j` coincidence.
+Thus the exact key involution accounts for every generic same-`j` pair.
 
-## 6. No nontrivial generic isogenies
+## 5. No nontrivial generic isogenies
 
-Different `j`-functions are not by themselves enough to distinguish `R^1` local systems: isogenous elliptic curves have isomorphic rational Tate modules. The missing step can nevertheless be closed using the degree and cusp structure above.
+Different `j`-functions can still come from isogenous elliptic curves, so same-`j` classification alone is not enough for the `R^1` local systems.
 
-Assume two generic members are geometrically isogenous over the function field. Remove any common multiplication factor from an isogeny. A primitive separable isogeny has cyclic kernel of degree `n` prime to the characteristic, so the pair of `j`-maps lifts to the modular curve `X_0(n)`.
+Assume two generic family members are geometrically isogenous over the function field. After removing a common multiplication factor, a primitive separable isogeny has cyclic kernel of degree `n` prime to the characteristic and yields a lift
+
+`P^1_t -> X_0(n)`.
 
 Let
 
-`psi(n)=[SL_2(Z):Gamma_0(n)]=n product_(q|n)(1+1/q)`.
+`psi(n)=[SL_2(Z):Gamma_0(n)]`.
 
-Both degeneracy maps `X_0(n)->X(1)` have degree `psi(n)`. Since both of our generic `j`-maps have degree `12`, a nonconstant lift `f:P^1_t->X_0(n)` must have
+Both degeneracy maps `X_0(n)->X(1)` have degree `psi(n)`. Since both present `j`-maps have degree `12`, the lift has degree `12/psi(n)`. Hence `psi(n)|12`, leaving only
 
-`deg f=12/psi(n)`.
+`n in {2,3,4,5,6,8,9,11}`.
 
-Hence `psi(n)` divides `12`. Since `psi(n)>=n`, the only possibilities are
+For a cusp of denominator `c|n`, one degeneracy map has cusp width
 
-| n | psi(n) | deg f |
-|---:|---:|---:|
-| 2 | 3 | 4 |
-| 3 | 4 | 3 |
-| 4 | 6 | 2 |
-| 5 | 6 | 2 |
-| 6 | 12 | 1 |
-| 8 | 12 | 1 |
-| 9 | 12 | 1 |
-| 11 | 12 | 1 |
+`w(c)=n/gcd(c^2,n)`,
 
-For a cusp of denominator `c|n`, the first degeneracy map has cusp width
+while the Fricke-related map has width `w(n/c)`.
 
-`w(c)=n/gcd(c^2,n)`.
-
-The Fricke involution interchanges the two degeneracy maps and sends cusp denominator `c` to `n/c` up to cusp equivalence. Thus, at a point of ramification index `e` above such a cusp, the two `j`-pole orders are
-
-`e w(c)`
-
-and
-
-`e w(n/c)`.
-
-At `t=infinity` **both** of our family members have pole order exactly `4`. Therefore one needs
+At `t=infinity` both of our `j`-maps have pole order exactly `4`, so a lift of ramification index `e` would require
 
 `e w(c)=e w(n/c)=4`.
 
-Exact enumeration of the eight candidate levels gives:
+For `n=2,3,5,6,8,11` there is no Fricke-paired cusp with equal widths. For `n=4` equality occurs only at `c=2`, with width `1`, which would require `e=4` although the lift degree is `2`. For `n=9` the middle cusp likewise requires `e=4` although the lift degree is `1`. Thus every nontrivial separable cyclic isogeny is excluded.
 
-- `n=2,3,5,6,8,11`: no Fricke-paired cusp has equal widths;
-- `n=4`: equality occurs only at the middle cusp `c=2`, with `w=1`; this would require `e=4`, but `deg f=2`;
-- `n=9`: equality occurs only at `c=3`, with `w=1`; this would require `e=4`, but `deg f=1`.
+An inseparable Frobenius factor would multiply the degree of the source `j`-map by a positive power of the characteristic, while every member of this family still has degree `12`; hence no nontrivial inseparable factor is possible either.
 
-Every nontrivial separable cyclic isogeny is therefore impossible.
+Therefore two generic family members are geometrically isogenous only inside the exact parameter involution orbit.
 
-An inseparable isogeny has a nontrivial Frobenius factor. After a Frobenius factor of degree `N^r`, the source `j`-map has degree `12N^r`; a subsequent prime-to-`N` cyclic isogeny factors through two equal-degree degeneracy maps on `X_0(n)`, so the target `j`-map would have the same degree. Since every member of the present family has degree `12`, this forces `r=0`. Thus inseparable nontrivial isogenies are excluded as well.
+## 6. Local-system non-isomorphism
 
-Conclusion: two generic family members are geometrically isogenous **only** inside the exact involution orbit, where the finite key arrays are already identical.
+For a non-isotrivial elliptic curve over a geometric function field the geometric endomorphism ring is `Z`. Zarhin's geometric-field Tate theorem identifies `ell`-adic Galois-equivariant homomorphisms of Tate modules with geometric homomorphisms of the elliptic curves.
 
-This modular argument uses only standard formulas for the degree and cusp widths of `X_0(n)` plus the exact degree/pole data proved above.
+Thus an isomorphism of two generic rank-two `R^1` local systems would force a nonzero geometric homomorphism, hence an isogeny. Section 5 then shows that generic local systems are geometrically non-isomorphic outside the exact involution orbit.
 
-## 7. From local-system isomorphism to isogeny
+This closes the gap between the elementary `j` calculation and the sheaf quasi-orthogonality theorem.
 
-For a non-isotrivial elliptic curve over a geometric function field, the geometric endomorphism ring is `Z`; equivalently, extra endomorphisms force isotriviality. Zarhin's geometric-field Tate theorem then gives, for `ell` different from the characteristic,
+## 7. Trace-to-affine bookkeeping lemma
 
-`Hom(E1,E2) tensor Z_ell`
-` = Hom_Gal(T_ell(E1),T_ell(E2))`.
+Let `F_lambda` be the middle extension to the finite `t`-line of the rank-two `R^1` local system of a generic parameter `lambda`, and let `a_lambda(t)` denote its unnormalized Frobenius trace.
 
-Therefore an isomorphism of the generic rank-two `ell`-adic local systems would produce a nonzero homomorphism of elliptic curves, hence an isogeny.
+The exact affine key count differs from the projective elliptic count only by a uniformly bounded boundary, except at finitely many singular fibers.
 
-Combined with Section 6, this proves that generic geometric `R^1` local systems are non-isomorphic outside the exact parameter involution orbit.
+### 7.1 Boundary degree
 
-This closes the logical gap left by the earlier same-`j` classification.
+In projective `(a:b:z)` coordinates, the complement of the valid key-domain is contained in the union of
 
-## 8. Reducible bad fiber and the Cayley spike
+- the line at infinity `z=0`;
+- `a=+z`, `a=-z`, `a=alpha z`;
+- `b=+z`, `b=-z`, `b=beta z`;
+- the diagonal `a=b`;
+- the homogenized second-denominator conic `T_alpha(a)=T_beta(b)`.
 
-The order-four bad fiber is not merely nodal. At
+The sum of their degrees is `10`. On an irreducible cubic none is a component, so Bezout gives at most `30` geometric boundary intersection points, counted with multiplicity.
 
-`t0=2/(alpha-beta)=d(h1,h2)`
+Consequently, at every smooth finite fiber,
 
-the cleared cubic factors exactly into two lines:
+`O_lambda(t)=N-a_lambda(t)+e_lambda(t)`
+
+with an absolute bound on `e_lambda(t)`.
+
+### 7.2 Four simple residual bad fibers
+
+The four simple roots of `R_(p,d)` have one double branch point and give irreducible nodal/rational fibers. Their affine point counts are `N+O(1)`. The middle-extension trace is bounded by the fixed sheaf complexity, so after the unnormalized weight-one scaling any mismatch can be absorbed into
+
+`e_lambda(t)=O(sqrt(N))`
+
+at at most four `t`-values per generic parameter.
+
+### 7.3 Reducible fiber
+
+At
+
+`t_lambda=2/(alpha-beta)=d(h1,h2)`
+
+the cleared cubic factors, up to a nonzero scalar, as
 
 `[(beta-1)a+(1-alpha)b+(alpha-beta)]`
 
-and
+`*[(beta+1)a-(alpha+1)b+(beta-alpha)]`.
 
-`[(beta+1)a-(alpha+1)b+(beta-alpha)]`.
+The affine fiber is therefore two lines up to the same finite boundary deletion and has
 
-Thus this fiber can contribute an additional `N`-scale point-count term relative to the generic elliptic main term.
+`O_lambda(t_lambda)=2N+O(1)`.
 
-Crucially, the bad-fiber location is exactly the `k=2` difference
+Hence the uniform bookkeeping identity may be written
 
-`t0=d(h1,h2)`.
+`O_lambda(t)`
+`=N-a_lambda(t)`
+` +N 1_{t=t_lambda}`
+` +e_lambda(t)`,
 
-Hence the number `R(t)` of parameter pairs whose reducible fiber occurs at a fixed `t` satisfies
+where `e_lambda(t)=O(1)` away from the five singular fibers and `O(sqrt(N))` at those fibers.
 
-`R(t)<=C_H(t)`
+### 7.4 Aggregate error
 
-(up to the parameter strata that were already removed from the generic family).
+Let `Lambda_gen` be the generic parameter set, of size `O(K^2)`, and set
 
-The aggregate reducible-fiber spike is therefore bounded in `L^2` by the already solved Cayley energy:
+`E(t)=sum_(lambda in Lambda_gen)e_lambda(t)`.
 
-`(1/N) sum_t |N R(t)|^2`
-` <= N sum_t C_H(t)^2`.
+The ubiquitous bounded boundary part contributes `O(K^4)` to the population variance. The sparse singular part is supported on only `O(K^2)` parameter/fiber incidences and has size `O(sqrt(N))` per incidence; even the worst collision pattern gives another `O(K^4)` after division by `N`.
 
-Outside the explicit cyclotomic exception set for odd prime `K`,
+Thus
 
-`sum_t C_H(t)^2=(K-1)(2K-5)=O(K^2)`,
+`Var_t E(t)=O(K^4)`.
 
-so the entire reducible-fiber contribution is
+This is below the target `O(K^2N)` whenever `K^2<=N`, in particular throughout the first regime `K=o(N^(1/4))`.
 
-`O(K^2 N)`,
+## 8. Reducible spikes are controlled by the solved Cayley energy
 
-exactly the global M1 target scale.
+Let
 
-The four roots of the squarefree residual quartic are simple discriminant zeros. Their double-cover fibers have one double branch point and are irreducible nodal/rational fibers, so they contribute only bounded point-count corrections after subtracting the `N` main term. They do not create another `N`-scale spike family.
+`R(t)=#{lambda in Lambda_gen : t_lambda=t}`.
 
-This is why solving the `k=2` Cayley energy first was structurally useful rather than merely a side result.
+Since `t_lambda=d(h1,h2)`, every such parameter pair is counted by the `k=2` distribution `C_H(t)`. Therefore
 
-## 9. Special diagonal parameter stratum
+`R(t)<=C_H(t)`.
 
-When `h1=h2=h`, the cleared cubic factors by `(u-v)`. On the valid off-diagonal domain the residual curve is
+The aggregate `N`-scale spike has population `L^2` contribution
+
+`(1/N)sum_t |N R(t)|^2`
+`<=N sum_t C_H(t)^2`.
+
+For odd prime `K` outside the exact cyclotomic exception set `E_K`,
+
+`sum_t C_H(t)^2=(K-1)(2K-5)`.
+
+Hence all reducible generic fibers together contribute only
+
+`O(K^2N)`
+
+to `Var_t O(t)`.
+
+## 9. The generic trace correlation sum
+
+The standard sheaf inputs are now explicit.
+
+- **Purity.** Smooth proper base change plus Deligne gives a rank-two weight-one local system on the good locus; rescaling numerical traces by `N^-1/2` gives weight-zero trace functions.
+- **Geometric irreducibility.** Nonconstant `j` plus Igusa/open-image monodromy gives irreducible geometric rank-two monodromy.
+- **Uniform complexity.** The equations, compactification and bad-fiber degrees are absolutely bounded. Quantitative sheaf theory therefore gives a uniform complexity bound for the middle extensions.
+- **Geometric non-isomorphism.** Sections 5–6 leave only the exact involution orbit.
+- **Quasi-orthogonality.** Sawin–Forey–Fresan–Kowalski then gives square-root complete cross-correlation for pure geometrically irreducible bounded-complexity sheaves that are not geometrically isomorphic.
+
+Thus for generic non-equivalent parameters
+
+`sum_t a_lambda(t)a_mu(t)=O(N^(3/2))`,
+
+while self/involution correlations are `O(N^2)`.
+
+There are `O(K^2)` self/involution ordered pairs and `O(K^4)` non-equivalent ordered pairs. Therefore
+
+`Var_t sum_lambda a_lambda(t)`
+`=O(K^2N+K^4sqrt(N))`.
+
+## 10. Special parameter strata
+
+The complement of `Lambda_gen` has only `O(K)` parameter pairs:
+
+- one coordinate equal to the identity;
+- `h1=h2`;
+- `h1h2=1`.
+
+For each fixed special parameter, the cleared equation still has bounded degree. Away from `O(1)` values of `t`, the geometric component pattern is constant and every component has genus at most one. Weil bounds give `O(sqrt(N))` fluctuations around the appropriate component-count main term; the `O(1)` exceptional fibers contribute only `O(N)` to the per-family population second moment.
+
+Thus each special family has population variance `O(N)`. Cauchy-Schwarz over only `O(K)` families gives total special-stratum variance
+
+`O(K^2N)`.
+
+For `h1=h2` this can be seen directly from the explicit bilinear factor
 
 `(h-1)uv+h t(u-v)+h(1-h)=0`.
 
-For `h=1`,
+## 11. Restricted off/off variance theorem draft
 
-`O_(1,1)(0)=(N-2)(N-3)`
+Combining Sections 7–10 gives, for primes `N>3`, odd prime `K|N-1`, and `N` outside the explicit Cayley collision set `E_K`,
 
-and `O_(1,1)(t)=0` for `t!=0`.
+`Var_(t!=0) O(t)`
+`=O(K^2N+K^4sqrt(N)+K^4)`.
 
-For `h!=1`, the bilinear curve degenerates only when
+The implied constant is absolute once the standard sheaf complexity/quasi-orthogonality constants are fixed.
 
-`t^2=(h-1)^2/h`.
-
-For odd `K`, write uniquely `h=s^2` in `H`; the two special values are
-
-`t=+-(s-s^-1)`.
-
-The map `s->s-s^-1` is injective on `H\{1}` because equality forces either `s=r` or `sr=-1`, and `-1 notin H` for odd `K`.
-
-Thus the whole diagonal parameter stratum has only `O(K)` exceptional nonzero fibers. Its direct `L^2` contribution is `O(KN)` and is smaller than the target `O(K^2N)`.
-
-## 10. The inverse-pair stratum
-
-The second special locus is
-
-`h1h2=1`, equivalently `p=0`.
-
-It is the fixed locus of `(h1,h2)->(h2^-1,h1^-1)` and contains `K` parameter pairs. These classes can be removed from the generic pair-correlation sum.
-
-Each individual family still has fixed-degree geometry and nonconstant `j`; its centered trace has `L^2` norm `O(N^2)` by the same one-family elliptic/sheaf theory. Cauchy-Schwarz over only `K` classes gives aggregate variance `O(K^2N)`. No cross-family quasi-orthogonality is needed on this special stratum.
-
-## 11. Trace-sheaf input
-
-For a generic parameter pair `lambda=(h1,h2)`, let
-
-`pi_lambda:E_lambda->U_lambda`
-
-be the smooth elliptic family over the good `t`-locus, and let the middle extension of `R^1(pi_lambda)_* Q_ell` be normalized to weight zero.
-
-The required standard inputs now line up as follows.
-
-### Purity
-
-Smooth proper base change gives a lisse rank-two sheaf on `U_lambda`; Deligne purity gives weight one, hence weight zero after the conventional Frobenius normalization.
-
-### Geometric irreducibility
-
-The `j`-function is nonconstant. Igusa's open-image theorem for non-isotrivial elliptic curves over function fields gives open geometric monodromy in `SL_2`, hence geometric irreducibility of the rank-two local system.
-
-### Uniform complexity
-
-The cubic equation, the compactification and the number/degree of bad fibers are bounded independently of `N,K,lambda`. Quantitative sheaf theory controls complexity under the six operations, so the middle-extension sheaves have an absolute uniform complexity bound once characteristics `2,3` are excluded.
-
-### Geometric non-isomorphism
-
-Sections 6–7 prove that two generic local systems can be geometrically isomorphic only inside the exact involution orbit.
-
-### Quasi-orthogonality
-
-Sawin–Forey–Fresan–Kowalski quantitative sheaf theory gives effective quasi-orthogonality for pure geometrically irreducible perverse sheaves of bounded complexity that are not geometrically isomorphic. Applied on the `t`-line, the normalized trace functions therefore have complete cross-correlation `O(sqrt(N))` outside the exact involution orbit.
-
-Equivalently, the unnormalized elliptic traces satisfy
-
-`sum_t a_lambda(t)a_mu(t)=O(N^(3/2))`
-
-for generic non-equivalent parameter pairs, while self/involution pairs contribute `O(N^2)`.
-
-At this point the conceptual sheaf hypotheses are no longer unknown; what remains before promotion to a paper theorem is a fully formal write-up of the projective model/middle extension and the bookkeeping that connects its trace to the exact affine key count at every bad/boundary fiber.
-
-## 12. Variance consequence
-
-There are `O(K^2)` self/involution ordered pairs and `O(K^4)` generic non-equivalent ordered pairs. The sheaf correlations therefore give
-
-`O(K^2N+K^4 sqrt(N))`
-
-for the variance contribution of the centered generic elliptic traces.
-
-Section 8 gives `O(K^2N)` for the reducible bad-fiber spikes. Bounded boundary/nodal corrections contribute `O(K^4)`, which is smaller than `O(K^2N)` whenever `K^2<=N`. Sections 9–10 give `O(K^2N)` for the special parameter strata.
-
-Thus the off/off layer has the bound
-
-`Var_t O(t)`
-` = O(K^2N+K^4 sqrt(N)+K^4)`
-
-outside the explicit Cayley exception set, subject only to the formal trace-to-affine bookkeeping described at the end of Section 11.
-
-In particular, in the first honest regime
+In particular, if
 
 `K=o(N^(1/4))`,
 
-this becomes
+then
 
-`Var_t O(t)=O(K^2N)`.
+`Var_(t!=0)O(t)=O(K^2N)`.
 
-Combined with the exact Cayley bound for the mixed `C_H` layer and Cauchy-Schwarz for covariance, this gives the full M1 variance target in the same regime once the remaining bookkeeping lemma is written cleanly.
+Together with the exact mixed-layer estimate in `k2_cayley_energy.md` and Cauchy-Schwarz for covariance, this yields the full M1 variance scale
 
-This is substantially narrower than the ultimate conjectural range `K=o(N)`, but it is a concrete first asymptotic theorem target with the hard geometry reduced to standard published tools plus explicit finite algebra.
+`Var_(t!=0)B(t)=O(K^2N)`
 
-## 13. Literature route
+in the same regime.
 
-The proof architecture now uses four standard tool families:
+By the exact Fourier duality,
 
-- Igusa/open-image results for geometric irreducibility of non-isotrivial elliptic families;
-- Zarhin's Tate theorem over geometric fields to turn `ell`-adic local-system isomorphism into an elliptic-curve isogeny;
-- modular-curve degree/cusp-width formulas to exclude every nontrivial generic isogeny in this degree-12 family;
-- Sawin–Forey–Fresan–Kowalski quantitative sheaf theory for uniform complexity and quasi-orthogonality.
+`Var_(q!=0)Sigma_4(q)=N Var_(t!=0)B(t)`,
 
-These are no longer being cited as vague analogies: the repository records the exact hypotheses supplied by the present family and the one remaining affine/bad-fiber bookkeeping step before a restricted M1 theorem can be promoted.
+so
+
+`std Sigma_4=O(NK)`.
+
+The mean estimate already gives `mean Sigma_4~2N^2` in this smaller regime. Hence the relative fourth-moment fluctuation is `O(K/N)`.
+
+## 12. Promotion status
+
+The mathematical chain for the restricted M1 variance theorem is now assembled from:
+
+1. exact key-table combinatorics;
+2. exact Cayley collision energy outside `E_K`;
+3. explicit elliptic discriminant and `j` geometry;
+4. modular no-isogeny plus Zarhin's Tate theorem;
+5. published elliptic monodromy/purity and quantitative sheaf quasi-orthogonality;
+6. the explicit trace-to-affine bookkeeping lemma above.
+
+It is **not yet promoted as a final theorem in the paper layer**. Before promotion the project should do a line-by-line proof audit of the modular-curve cusp argument, replace the CAS discriminant/gcd identities by a hand or formal algebraic certificate, and pin exact theorem numbers/hypotheses for Igusa/Zarhin/Sawin in the manuscript.
+
+This is now a proof-verification/formalization task rather than an unidentified analytic gap.
