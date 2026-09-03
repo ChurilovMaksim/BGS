@@ -2,7 +2,33 @@
 from __future__ import annotations
 
 
+def is_prime(n: int) -> bool:
+    """Return whether ``n`` is prime by deterministic trial division.
+
+    Active computations use modest finite-field characteristics, so this
+    deliberately simple check is preferable to silently accepting a composite
+    modulus and then applying Fermat inverses.
+    """
+    if n < 2:
+        return False
+    if n % 2 == 0:
+        return n == 2
+    divisor = 3
+    while divisor * divisor <= n:
+        if n % divisor == 0:
+            return False
+        divisor += 2
+    return True
+
+
+def require_odd_prime(prime: int) -> None:
+    """Fail fast unless ``prime`` is an odd prime."""
+    if prime < 3 or not is_prime(prime):
+        raise ValueError(f"expected an odd prime modulus, got {prime}")
+
+
 def distinct_prime_factors(n: int) -> list[int]:
+    """Return the distinct prime factors of a positive integer."""
     if n < 1:
         raise ValueError("n must be positive")
     factors: list[int] = []
@@ -20,17 +46,17 @@ def distinct_prime_factors(n: int) -> list[int]:
 
 def primitive_root(prime: int) -> int:
     """Return the least primitive root modulo an odd prime."""
-    if prime < 3:
-        raise ValueError("prime must be an odd prime")
+    require_odd_prime(prime)
     factors = distinct_prime_factors(prime - 1)
     for generator in range(2, prime):
         if all(pow(generator, (prime - 1) // q, prime) != 1 for q in factors):
             return generator
-    raise ValueError(f"no primitive root modulo {prime}")
+    raise RuntimeError(f"primitive root not found modulo prime {prime}")
 
 
 def multiplicative_order(value: int, prime: int) -> int:
-    """Return the order of a nonzero residue using divisor reduction."""
+    """Return the multiplicative order of a nonzero residue modulo an odd prime."""
+    require_odd_prime(prime)
     value %= prime
     if value == 0:
         raise ValueError("zero has no multiplicative order")

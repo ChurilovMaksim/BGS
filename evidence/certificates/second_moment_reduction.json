@@ -1,141 +1,138 @@
 {
-  "producer": "experiments/verification/verify_second_moment_reduction.py",
-  "scope": "Finite exact k=2 reduction plus Cayley/additive-energy and cyclotomic reduction-prime audit; not an asymptotic theorem.",
-  "exact_identities": [
-    "d(u,v)=2/(c(u)-c(v)), c(h)=(h+1)/(h-1)",
-    "sum_t C_H(t)^2 = E_plus(c(H\\{1})) - (K-1)^2",
-    "c(h^-1)=-c(h)",
-    "r_{A-A}(x)=#{h in H\\{1}: g_x(h) in H\\{1}} with g_x(h)=((2-x)h+x)/(2+x-xh)"
-  ],
-  "matching_rank_audit": {
-    "matching_count": 720,
-    "rank_counts_over_Q": {"2": 30, "3": 240, "4": 450},
-    "bad_rank_drop_primes": [2],
-    "rank_two_kernel_types": {
-      "identity_r_i_s_j": 2,
-      "invalid_zero_or_diagonal": 26,
-      "inversion_swap_r_minus_j_s_minus_i": 2
-    },
-    "rank_three_kernel_types": {
-      "identity_r_i_s_j": 4,
-      "invalid_zero_or_diagonal": 236
-    },
-    "conclusion": "For odd prime K, every characteristic-zero Cayley difference collision is forced by identity or inversion-swap symmetry.",
-    "pass": true
-  },
   "cyclotomic_exception_audits": [
     {
       "K": 11,
-      "normalized_nonforced_quadruples_checked": 793,
       "distinct_nonzero_norms": 8,
       "exact_exception_primes_N_congruent_1_mod_K": [23, 67, 89],
+      "normalized_nonforced_quadruples_checked": 793,
       "pass": true
     },
     {
       "K": 13,
-      "normalized_nonforced_quadruples_checked": 1431,
       "distinct_nonzero_norms": 14,
       "exact_exception_primes_N_congruent_1_mod_K": [53, 79, 131, 157, 313],
+      "normalized_nonforced_quadruples_checked": 1431,
       "pass": true
     }
   ],
-  "results": [
+  "finite_field_designs": [
     {
-      "N": 53, "a": 10, "K": 13, "m": 4,
-      "constraint_pair_count": 132, "expected_pair_count": 132,
-      "identity_max_abs_deviation": 1.2505552149377763e-12,
-      "cayley_energy": {
-        "cayley_set_size": 12,
-        "central_symmetry_A_equals_minus_A": true,
-        "zero_in_cayley_set": false,
-        "cayley_difference_identity": true,
-        "mobius_intersection_identity": true,
-        "additive_energy_E_plus_A": 604,
-        "C_H_collision_energy": 460,
-        "forced_central_symmetry_baseline": 252,
-        "excess_collision_energy": 208,
-        "max_nonzero_difference_multiplicity": 6,
-        "pass": true
-      },
+      "C_H_collision_energy": 460,
+      "K": 13,
+      "N": 53,
+      "a": 10,
+      "additive_energy_E_plus_A": 604,
+      "cayley_difference_identity": true,
+      "cayley_set_size": 12,
+      "central_symmetry_A_equals_minus_A": true,
       "cyclotomic_exception_status": {
         "N_in_exact_exception_set": true,
-        "prediction": "non-forced collisions occur",
+        "observed_nonforced_collisions": true,
         "prediction_matches_finite_energy": true
       },
-      "pass": true
+      "excess_collision_energy": 208,
+      "forced_central_symmetry_baseline": 252,
+      "max_nonzero_difference_multiplicity": 6,
+      "mobius_intersection_identity": true,
+      "pass": true,
+      "zero_in_cayley_set": false
     },
     {
-      "N": 67, "a": 64, "K": 11, "m": 6,
-      "constraint_pair_count": 90, "expected_pair_count": 90,
-      "identity_max_abs_deviation": 8.640199666842818e-12,
-      "cayley_energy": {
-        "cayley_set_size": 10,
-        "central_symmetry_A_equals_minus_A": true,
-        "zero_in_cayley_set": false,
-        "cayley_difference_identity": true,
-        "mobius_intersection_identity": true,
-        "additive_energy_E_plus_A": 318,
-        "C_H_collision_energy": 218,
-        "forced_central_symmetry_baseline": 170,
-        "excess_collision_energy": 48,
-        "max_nonzero_difference_multiplicity": 4,
-        "pass": true
-      },
+      "C_H_collision_energy": 218,
+      "K": 11,
+      "N": 67,
+      "a": 64,
+      "additive_energy_E_plus_A": 318,
+      "cayley_difference_identity": true,
+      "cayley_set_size": 10,
+      "central_symmetry_A_equals_minus_A": true,
       "cyclotomic_exception_status": {
         "N_in_exact_exception_set": true,
-        "prediction": "non-forced collisions occur",
+        "observed_nonforced_collisions": true,
         "prediction_matches_finite_energy": true
       },
-      "pass": true
+      "excess_collision_energy": 48,
+      "forced_central_symmetry_baseline": 170,
+      "max_nonzero_difference_multiplicity": 4,
+      "mobius_intersection_identity": true,
+      "pass": true,
+      "zero_in_cayley_set": false
     },
     {
-      "N": 199, "a": 139, "K": 11, "m": 18,
-      "constraint_pair_count": 90, "expected_pair_count": 90,
-      "identity_max_abs_deviation": 3.637978807091713e-10,
-      "cayley_energy": {
-        "cayley_set_size": 10,
-        "central_symmetry_A_equals_minus_A": true,
-        "zero_in_cayley_set": false,
-        "cayley_difference_identity": true,
-        "mobius_intersection_identity": true,
-        "additive_energy_E_plus_A": 270,
-        "C_H_collision_energy": 170,
-        "forced_central_symmetry_baseline": 170,
-        "excess_collision_energy": 0,
-        "max_nonzero_difference_multiplicity": 2,
-        "pass": true
-      },
+      "C_H_collision_energy": 170,
+      "K": 11,
+      "N": 199,
+      "a": 139,
+      "additive_energy_E_plus_A": 270,
+      "cayley_difference_identity": true,
+      "cayley_set_size": 10,
+      "central_symmetry_A_equals_minus_A": true,
       "cyclotomic_exception_status": {
         "N_in_exact_exception_set": false,
-        "prediction": "only forced central-symmetry collisions occur",
+        "observed_nonforced_collisions": false,
         "prediction_matches_finite_energy": true
       },
-      "pass": true
+      "excess_collision_energy": 0,
+      "forced_central_symmetry_baseline": 170,
+      "max_nonzero_difference_multiplicity": 2,
+      "mobius_intersection_identity": true,
+      "pass": true,
+      "zero_in_cayley_set": false
     },
     {
-      "N": 521, "a": 101, "K": 13, "m": 40,
-      "constraint_pair_count": 132, "expected_pair_count": 132,
-      "identity_max_abs_deviation": 3.259629011154175e-09,
-      "cayley_energy": {
-        "cayley_set_size": 12,
-        "central_symmetry_A_equals_minus_A": true,
-        "zero_in_cayley_set": false,
-        "cayley_difference_identity": true,
-        "mobius_intersection_identity": true,
-        "additive_energy_E_plus_A": 396,
-        "C_H_collision_energy": 252,
-        "forced_central_symmetry_baseline": 252,
-        "excess_collision_energy": 0,
-        "max_nonzero_difference_multiplicity": 2,
-        "pass": true
-      },
+      "C_H_collision_energy": 252,
+      "K": 13,
+      "N": 521,
+      "a": 101,
+      "additive_energy_E_plus_A": 396,
+      "cayley_difference_identity": true,
+      "cayley_set_size": 12,
+      "central_symmetry_A_equals_minus_A": true,
       "cyclotomic_exception_status": {
         "N_in_exact_exception_set": false,
-        "prediction": "only forced central-symmetry collisions occur",
+        "observed_nonforced_collisions": false,
         "prediction_matches_finite_energy": true
       },
-      "pass": true
+      "excess_collision_energy": 0,
+      "forced_central_symmetry_baseline": 252,
+      "max_nonzero_difference_multiplicity": 2,
+      "mobius_intersection_identity": true,
+      "pass": true,
+      "zero_in_cayley_set": false
+    },
+    {
+      "C_H_collision_energy": 1190,
+      "K": 23,
+      "N": 461,
+      "a": 23,
+      "additive_energy_E_plus_A": 1674,
+      "cayley_difference_identity": true,
+      "cayley_set_size": 22,
+      "central_symmetry_A_equals_minus_A": true,
+      "excess_collision_energy": 288,
+      "forced_central_symmetry_baseline": 902,
+      "max_nonzero_difference_multiplicity": 6,
+      "mobius_intersection_identity": true,
+      "pass": true,
+      "zero_in_cayley_set": false
     }
   ],
+  "matching_rank_audit": {
+    "bad_rank_drop_primes": [2],
+    "matching_count": 720,
+    "pass": true,
+    "rank_counts_over_Q": {"2": 30, "3": 240, "4": 450},
+    "rank_three_kernel_types": {
+      "identity_r_i_s_j": 4,
+      "invalid_zero_or_diagonal": 236
+    },
+    "rank_two_kernel_types": {
+      "identity_r_i_s_j": 2,
+      "invalid_zero_or_diagonal": 26,
+      "inversion_swap_r_minus_j_s_minus_i": 2
+    }
+  },
+  "producer": "computations/verification/mixed_cayley_energy.py",
+  "scope": "Exact finite certificate for the fixed-K Cayley mixed term; not a uniform-in-K theorem and not a BGS theorem.",
   "verdict": "PASS"
 }

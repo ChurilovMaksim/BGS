@@ -29,7 +29,7 @@ jobs:
             echo 'Julia source leaked into the active research surface'
             exit 1
           fi
-      - name: Parse promoted JSON evidence and resolve historical producers
+      - name: Parse promoted JSON evidence and resolve producers
         run: |
           python - <<'PY'
           import json
@@ -55,6 +55,18 @@ jobs:
           PY
       - name: Run current exact finite regression
         run: python computations/verification/current_regression.py
+      - name: Recompute fixed-K Cayley exceptional-prime certificate
+        run: |
+          python computations/verification/mixed_cayley_energy.py > /tmp/mixed_cayley_energy.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          fresh = json.loads(Path('/tmp/mixed_cayley_energy.json').read_text())
+          committed = json.loads(Path('evidence/certificates/second_moment_reduction.json').read_text())
+          if fresh != committed:
+              raise SystemExit('second_moment_reduction.json is not synchronized with its exact producer')
+          print('fixed-K Cayley certificate: synchronized')
+          PY
       - name: Install C++ dependency
         run: |
           sudo apt-get update
@@ -90,6 +102,9 @@ jobs:
           missing = sorted(modules - imported)
           if missing:
               raise SystemExit('unimported active Lean modules: ' + ', '.join(missing))
+          extra = sorted(imported - modules)
+          if extra:
+              raise SystemExit('imports without active module files: ' + ', '.join(extra))
           print(f'Lean module coverage: {len(modules)}/{len(modules)}')
           PY
       - name: Install elan

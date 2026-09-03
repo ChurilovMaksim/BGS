@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Current finite regression gate for the active mathematical surface.
+"""Current exact finite regression gate for the active mathematical surface.
 
-This script deliberately checks exact finite identities and preserved anchors.
-It does not assert an asymptotic BGS law.
+Every assertion here is a finite identity, API invariant, or preserved exact
+anchor. Passing this script is evidence for those finite statements only; it
+is not an asymptotic theorem and does not imply the microscopic BGS law.
 """
 from __future__ import annotations
 
@@ -16,6 +17,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "computations" / "python"))
 
+from bgs.finite_field import multiplicative_order, primitive_root  # noqa: E402
+from bgs.jacobi import annihilator_indices, dlog_table  # noqa: E402
 from bgs.key_geometry import (  # noqa: E402
     explicit_key_table,
     fast_difference_distribution,
@@ -50,6 +53,30 @@ def element_of_order(prime: int, order: int) -> int:
     raise RuntimeError(f"no element of order {order} mod {prime}")
 
 
+def check_finite_field_contracts() -> None:
+    p = 199
+    g = primitive_root(p)
+    assert multiplicative_order(g, p) == p - 1
+    log = dlog_table(p, g)
+    a = element_of_order(p, 11)
+    indices = annihilator_indices(p, 11, a, log)
+    assert len(indices) == (p - 1) // 11
+
+    try:
+        annihilator_indices(p, 9, a, log)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("wrong subgroup_order was silently accepted")
+
+    try:
+        dlog_table(p, a)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("non-primitive dlog generator was silently accepted")
+
+
 def check_small_pair_map() -> None:
     p = 23
     left = records_as_map(original_pair_key_table(p))
@@ -66,23 +93,26 @@ def check_fourth_moment_anchors() -> None:
     }
     for (p, k), (expected_total, expected_zero, expected_energy) in anchors.items():
         a = element_of_order(p, k)
-        H = subgroup_elements(p, a, k)
-        B, classes = fast_difference_distribution(p, H)
-        assert int(B.sum()) == expected_total == variety_count_formula(p, k)
-        assert int(B[0]) == expected_zero
-        assert int(np.dot(B.astype(object), B.astype(object))) == expected_energy
+        subgroup = subgroup_elements(p, a, k)
+        distribution, classes = fast_difference_distribution(p, subgroup)
+        assert int(distribution.sum()) == expected_total == variety_count_formula(p, k)
+        assert int(distribution[0]) == expected_zero
+        assert int(np.dot(distribution.astype(object), distribution.astype(object))) == expected_energy
         assert sum(classes.values()) == expected_total
 
 
 def cayley_energy(prime: int, order: int) -> int:
     a = element_of_order(prime, order)
-    H = [int(x) for x in subgroup_elements(prime, a, order).tolist() if int(x) != 1]
+    subgroup = [
+        int(x) for x in subgroup_elements(prime, a, order).tolist() if int(x) != 1
+    ]
     cayley = {
-        h: (h + 1) * pow((h - 1) % prime, prime - 2, prime) % prime for h in H
+        h: (h + 1) * pow((h - 1) % prime, prime - 2, prime) % prime
+        for h in subgroup
     }
     counts: Counter[int] = Counter()
-    for u in H:
-        for v in H:
+    for u in subgroup:
+        for v in subgroup:
             if u == v:
                 continue
             delta = (cayley[u] - cayley[v]) % prime
@@ -95,7 +125,7 @@ def check_exceptional_k23() -> None:
     forced = (23 - 1) * (2 * 23 - 5)
     assert observed == 1190
     assert forced == 902
-    assert observed != forced
+    assert observed > forced
 
 
 def check_certificate_corpus() -> None:
@@ -107,18 +137,19 @@ def check_certificate_corpus() -> None:
         "twisted_jacobi_scalar_formula.json",
         "cayley_exception_k23.json",
     }
-    present = {p.name for p in root.glob("*.json")}
+    present = {path.name for path in root.glob("*.json")}
     assert required <= present
     for path in root.glob("*.json"):
         json.loads(path.read_text(encoding="utf-8"))
 
 
 def main() -> None:
+    check_finite_field_contracts()
     check_small_pair_map()
     check_fourth_moment_anchors()
     check_exceptional_k23()
     check_certificate_corpus()
-    print("current finite regression: PASS")
+    print("current exact finite regression: PASS")
 
 
 if __name__ == "__main__":
