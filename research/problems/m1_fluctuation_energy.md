@@ -1,56 +1,157 @@
-# M1 — fluctuation energy and cross-twist cancellation
+# M1 — concentration of the exact k=4 key-table energy
 
 ## Goal
 
-Prove an asymptotic fluctuation estimate strong enough to connect the exact even-moment reduction to the desired local spectral law, in a precisely stated regime for `(N,K,m)`.
+Prove concentration of the exact fourth-moment object strongly enough to support the next local-spectral-law step. The historical Möbius-fiber assembly is no longer the theorem object; it is retained only as a falsifier in `archive/` and `experiments/m1/cross_term_energy.py`.
 
-## Exact starting point
+## Exact object
 
-For ordered twist pairs `tau`, write the relevant fiber contribution as `A_tau` and its convolution contribution as `F_tau=A_tau*A_tau`.  The energy is
+For the collapsed pair-key records `r=(u_r,v_r,d_r,n_r)`, define
 
-`E = ||sum_tau F_tau||_2^2`.
+`B(t)=sum_{r,s} n_r n_s 1_H(u_r u_s)1_H(v_r v_s)1_{d_r+d_s=t}`.
 
-It must be expanded as diagonal plus cross terms.  No cross term may be dropped without exact orthogonality or a quantitative cancellation theorem.
+The exact fourth-moment fluctuation is
 
-## Known failure modes of the historical proof
+`Sigma_4(q)=sum_t B(t)e_N(qt)`
 
-1. `O(1/K^2)` is not `o(1)` when `N -> infinity` with fixed `K`.
-2. The old numerical table itself exceeded its stated `16/K^2` envelope at `K=17`.
-3. Cross-twist terms were omitted.
-4. Fourier/Parseval normalizations were inconsistent.
-5. Perfect-power exclusions were asserted rather than proved.
-6. The uniform `4 sqrt(N)` fiber bound misses the exact `d=0` semi-trivial degeneracy.
-7. The R86/R87 noncommutative-binomial shortcut is invalid as stated.
+and
 
-## Work packages
+`sum_{chi,psi in H^perp}|J(chi,psi;q)|^4=m^2 Sigma_4(q)`.
 
-### A. Exact fiber/divisor classification
-Classify every collision among zero, pole, `0` and infinity for `u^r v_d(u)^s`, including `d=0,±1`, and formulate the correct character-order congruences.
+The complete twist assembly also collapses exactly:
 
-### B. Exact cross-Gram formula
-With `f_hat(xi)=sum_d f(d)e_N(-xi d)`, Parseval and convolution give the exact identity
+`sum_tau (A_tau*A_tau)(t)=m^2 B(t)`.
 
-`<F_tau,F_sigma>=(1/N) sum_xi A_hat_tau(xi)^2 conjugate(A_hat_sigma(xi)^2)`,
+There is therefore no missing “cross-twist term” once the correct key-table object is used; all cross information is already encoded in `B`.
 
-so
+## Exact finite identities already available
 
-`E=(1/N) sum_xi |sum_tau A_hat_tau(xi)^2|^2`.
+- collapsed key count: `(N-2)(N-3)+1`;
+- diagonal weight: `N-2`;
+- each ordered diagonal/off class: `(N-2)(K-1)(K-2)`;
+- off/off total:
+  `K^2(N-2)(N-3)-3K(K-1)(N-3)+2(K-1)(K-2)`;
+- total variety:
+  `V4=(K^2+1)N^2-(6K^2+3K)N+13K^2-3K`;
+- mean:
+  `mean_(q!=0) Sigma_4=(N B(0)-V4)/(N-1)`;
+- variance duality:
+  `Var_(q!=0) Sigma_4=N Var_(t!=0)B(t)`.
 
-This harmonic identity is now fixed.  The open task is to rewrite the summed Fourier amplitude as a finite-field character sum suitable for genuine cancellation, rather than bounding individual twists independently.
+The active Python/C++ verifiers cross-check these finite structures at multiple designs.
 
-### C. Exceptional-fiber extraction
-Evaluate exceptional fibers exactly and remove them before any Weil/Deligne estimate.
+## New theorem target
 
-### D. Generic finite-field estimate
-Verify the divisor/perfect-power hypotheses and only then invoke an appropriate character-sum theorem.
+The load-bearing variance statement is
 
-### E. Summed cancellation and scaling
-Control the full Gram sum with the true number of twists and prove a remainder that tends to zero in the declared regime.
+`Var_(t!=0) B(t)=O(K^2 N)`.
 
-## Falsifiers
+It is exactly equivalent to
 
-Use at least `N=53,199,3571` and additional split primes.  Vary `K` where possible so apparent `N` decay cannot be confused with a small `K`-dependent constant.
+`std_(q!=0) Sigma_4(q)=O(NK)`.
+
+Combined with a mean of order `N^2`, this gives relative fluctuation `O(K/N)` and concentration whenever `K=o(N)`.
+
+A first realistic rigorous theorem may have a narrower range (for example a small-power condition on `K`) if it is obtained from pairwise trace-function correlations. That would still be meaningful progress; the range should be stated honestly and improved later.
+
+## Decomposition
+
+Write
+
+`B(t)=O(t)+2(N-2)C_H(t)+(N-2)^2 1_{t=0}`,
+
+where `C_H` is the `k=2` difference distribution and `O` is the pure off/off layer.
+
+Thus it is enough to control:
+
+1. `L^2` collisions of `C_H`;
+2. `L^2` fluctuations of `O`;
+3. their covariance.
+
+Fresh corrected data show that each of the first two standard deviations is naturally on the `K sqrt(N)` scale and that their covariance is positive but of the same order. This is evidence only.
+
+## Mean work package
+
+The mean can be attacked separately and is structurally easier.
+
+At `t=0`:
+
+- the diagonal key self-coupling contributes `(N-2)^2`;
+- `(h1,h2)=(1,1)` in the off/off layer contributes all `(N-2)(N-3)` off keys because inversion flips the sign of `d`;
+- `h1=1,h2!=1` and the reverse contribute no valid zero-difference off/off points;
+- `h1=h2=h!=1` reduces to the explicit equation `uv=h`;
+- `h1,h2!=1`, `h1!=h2` gives a smooth genus-one curve at `t=0` after projective completion, apart from finitely many boundary points.
+
+The generic `t=0` singularity resultant has now been factored independently in SymPy and Wolfram; away from `h1=1`, `h2=1`, and `h1=h2` it is nonzero. A conservative boundary count plus Hasse-Weil therefore gives
+
+`B(0)=B0_det+R0`,
+`B0_det=2N^2+K^2N-2KN-8N-4K+14-S_eta`,
+`|R0| <= (K-1)(K-2)(2 sqrt(N)+28)`,
+
+where `S_eta=sum_{h in H\{1}}eta(h)` is `K-1` for even `m` and `-1` for odd `m`. Hence
+
+`mean Sigma_4 = 2N^2 + O(KN+N+K^2 sqrt(N))`.
+
+This already gives the mean asymptotic for `K=o(N^(3/4))`, modulo turning the CAS-resultant identity into a publication-quality algebraic lemma. The variance, not the mean, is now the genuinely load-bearing obstruction.
+
+## Variance work package: off/off trace family
+
+For fixed `(h1,h2)`, define the cubic family
+
+`C_(h1,h2,t): d(u,v)+d(h1/u,h2/v)=t`.
+
+The branch-quartic discriminant factors as
+
+`h1^2 h2^2 (h1-h2)^2 ((h1-1)(h2-1)+t(h1-h2))^4 Q(h1,h2,t)`
+
+up to a nonzero scalar, with `Q` quartic in `t`.
+
+Tasks:
+
+1. prove the projective smoothness statement on the complement of the explicit bad strata;
+2. define the normalized Frobenius-trace function of the smooth family;
+3. bound its conductor uniformly in `(h1,h2)`;
+4. classify when two parameter pairs give geometrically isomorphic/dual trace sheaves;
+5. apply a correlation theorem only after those checks;
+6. count the exceptional parameter tuples separately.
+
+Fouvry–Kowalski–Michel-type sums-of-products results are candidate tools, not yet an applied theorem: their monodromy/independence hypotheses still need to be verified for this family.
+
+## Variance work package: k=2 collision energy
+
+`C_H(t)` has total mass `(K-1)(K-2)`. The desired scale is equivalent to an additive-energy estimate of the form
+
+`sum_t C_H(t)^2 = O(K^2 + K^4/N)`
+
+(up to harmless lower-order terms).
+
+This should be attacked directly from collisions of
+
+`d(u,v)=(u-1)(v-1)/(v-u)`
+
+on `(H\{1})^2`, rather than by a pointwise Weil bound for each `t`.
+
+## Fresh falsifiers
+
+Use exact/corrected designs, not archived producer outputs. Current anchors include
+
+| N | K | m | mean(Sigma4)/N^2 | std(Sigma4)/(NK) | relative std /(K/N) |
+|---:|---:|---:|---:|---:|---:|
+| 29 | 7 | 4 | 1.3236 | 2.2038 | 1.6650 |
+| 89 | 22 | 4 | 1.4512 | 3.2990 | 2.2733 |
+| 139 | 23 | 6 | 1.6683 | 3.8515 | 2.3086 |
+| 199 | 11 | 18 | 1.8556 | 3.7996 | 2.0476 |
+| 211 | 21 | 10 | 1.7752 | 3.8238 | 2.1540 |
+| 281 | 28 | 10 | 1.7814 | 4.0190 | 2.2561 |
+| 461 | 23 | 20 | 1.8895 | 3.8797 | 2.0532 |
+| 521 | 13 | 40 | 1.9357 | 3.8408 | 1.9842 |
+
+The larger-`m` rows strongly suggest, but do not prove,
+
+`mean Sigma4 ~ 2N^2`,
+`std Sigma4 ~ 4NK`,
+`relative std ~ 2K/N`.
 
 ## Status
 
-OPEN.  Current computations diagnose the missing terms; they do not yet prove the desired asymptotic estimate.
+OPEN, but substantially sharper than the historical M1 statement. The exact combinatorial object, its Fourier collapse, its mean/variance duality, and the first generic curve stratification are now explicit. The remaining obstacle is a genuine family-correlation theorem, not a missing normalization or an unspecified perfect-power exception.
