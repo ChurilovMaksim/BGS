@@ -4,7 +4,7 @@ For x,y outside {0,1}, set
 
     u=x/y,  v=(x-1)/(y-1),  d=x-y.
 
-Off the diagonal the map is bijective onto u,v in F_p^*\{1}, u!=v.
+Off the diagonal the map is bijective onto u,v in F_p^* minus {1}, u!=v.
 The diagonal collapses to (1,1), difference zero, with multiplicity p-2.
 This module contains finite combinatorics only; it asserts no BGS limit law.
 """
@@ -70,7 +70,7 @@ def key_difference(prime: int, u: int, v: int) -> int:
     u %= prime
     v %= prime
     if u in (0, 1) or v in (0, 1) or u == v:
-        raise ValueError("key_difference requires u,v in F_p^*\\{1}, u!=v")
+        raise ValueError("key_difference requires u,v in F_p^* minus {1}, u!=v")
     return (u - 1) * (v - 1) * pow((v - u) % prime, prime - 2, prime) % prime
 
 
