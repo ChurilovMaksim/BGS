@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
 """Exact finite certificate for the mixed Cayley-energy term.
 
-This script recomputes, rather than merely parses, the load-bearing finite
-claims used by the fixed-K mixed-term theorem:
-
-* the 6! matching-rank classification over Q;
-* the exact cyclotomic exceptional-prime sets for K=11 and K=13;
-* Cayley/additive-energy identities on representative exceptional and
-  non-exceptional finite-field designs.
-
-It is a finite/exact certificate. It does not prove a uniform-in-K estimate
-and it does not imply the microscopic BGS law.
+The script recomputes the 6! integer matching classification, exact
+cyclotomic exceptional-prime sets for K=11,13, and representative finite-field
+Cayley/additive-energy checks.  It is a finite exact certificate, not a
+uniform-in-K theorem and not a BGS theorem.
 """
 from __future__ import annotations
 
@@ -26,7 +20,6 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "computations" / "python"))
 
-from bgs.finite_field import primitive_root  # noqa: E402
 from bgs.key_geometry import key_difference, subgroup_elements  # noqa: E402
 
 EXPECTED_EXCEPTION_SETS = {
@@ -36,7 +29,7 @@ EXPECTED_EXCEPTION_SETS = {
 
 
 def cayley(prime: int, value: int) -> int:
-    """c(h)=(h+1)/(h-1) in F_p, for h != 1."""
+    """Return c(h)=(h+1)/(h-1) in F_p, for h != 1."""
     value %= prime
     if value == 1:
         raise ValueError("Cayley transform is singular at h=1")
@@ -95,7 +88,11 @@ def cayley_energy_audit(
             denominator = (2 + shift - h * shift) % prime
             if denominator == 0:
                 continue
-            image = ((2 - shift) * h + shift) * pow(denominator, prime - 2, prime) % prime
+            image = (
+                ((2 - shift) * h + shift)
+                * pow(denominator, prime - 2, prime)
+                % prime
+            )
             if image in nonidentity_set:
                 intersection += 1
         mobius_ok &= intersection == difference_counts[shift]
@@ -121,12 +118,20 @@ def cayley_energy_audit(
 def matching_rank_audit() -> dict[str, object]:
     """Classify all 6! multiset matchings as integer linear systems."""
     positive = [
-        (0, 0, 0, 1), (1, 0, 0, 0), (1, 0, 1, 1),
-        (0, 1, 1, 0), (0, 1, 1, 0), (1, 1, 0, 1),
+        (0, 0, 0, 1),
+        (1, 0, 0, 0),
+        (1, 0, 1, 1),
+        (0, 1, 1, 0),
+        (0, 1, 1, 0),
+        (1, 1, 0, 1),
     ]
     negative = [
-        (0, 0, 1, 0), (1, 0, 0, 1), (1, 0, 0, 1),
-        (0, 1, 0, 0), (0, 1, 1, 1), (1, 1, 1, 0),
+        (0, 0, 1, 0),
+        (1, 0, 0, 1),
+        (1, 0, 0, 1),
+        (0, 1, 0, 0),
+        (0, 1, 1, 1),
+        (1, 1, 1, 0),
     ]
 
     rank_counts: Counter[int] = Counter()
@@ -134,25 +139,36 @@ def matching_rank_audit() -> dict[str, object]:
     kernel_types: dict[int, Counter[str]] = {2: Counter(), 3: Counter()}
 
     invalid_forms = [
-        sp.Matrix([[1, 0, 0, 0]]), sp.Matrix([[0, 1, 0, 0]]),
-        sp.Matrix([[0, 0, 1, 0]]), sp.Matrix([[0, 0, 0, 1]]),
-        sp.Matrix([[1, -1, 0, 0]]), sp.Matrix([[0, 0, 1, -1]]),
+        sp.Matrix([[1, 0, 0, 0]]),
+        sp.Matrix([[0, 1, 0, 0]]),
+        sp.Matrix([[0, 0, 1, 0]]),
+        sp.Matrix([[0, 0, 0, 1]]),
+        sp.Matrix([[1, -1, 0, 0]]),
+        sp.Matrix([[0, 0, 1, -1]]),
     ]
     identity_forms = [
-        sp.Matrix([[1, 0, -1, 0]]), sp.Matrix([[0, 1, 0, -1]]),
+        sp.Matrix([[1, 0, -1, 0]]),
+        sp.Matrix([[0, 1, 0, -1]]),
     ]
     inversion_forms = [
-        sp.Matrix([[1, 0, 0, 1]]), sp.Matrix([[0, 1, 1, 0]]),
+        sp.Matrix([[1, 0, 0, 1]]),
+        sp.Matrix([[0, 1, 1, 0]]),
     ]
 
     def annihilates(form: sp.Matrix, nullspace: list[sp.Matrix]) -> bool:
         return all((form * vector)[0] == 0 for vector in nullspace)
 
     for permutation in itertools.permutations(range(6)):
-        matrix = sp.Matrix([
-            [positive[row][column] - negative[permutation[row]][column for column in range(4)]
-            for row in range(6)
-        ])
+        matrix = sp.Matrix(
+            [
+                [
+                    positive[row][column]
+                    - negative[permutation[row]][column]
+                    for column in range(4)
+                ]
+                for row in range(6)
+            ]
+        )
         rank = matrix.rank()
         rank_counts[rank] += 1
 
@@ -181,15 +197,16 @@ def matching_rank_audit() -> dict[str, object]:
             kernel_types[rank]["unclassified"] += 1
 
     expected_ranks = Counter({4: 450, 3: 240, 2: 30})
-    expected_rank2 = Counter({
-        "invalid_zero_or_diagonal": 26,
-        "identity_r_i_s_j": 2,
-        "inversion_swap_r_minus_j_s_minus_i": 2,
-    })
-    expected_rank3 = Counter({
-        "invalid_zero_or_diagonal": 236,
-        "identity_r_i_s_j": 4,
-    })
+    expected_rank2 = Counter(
+        {
+            "invalid_zero_or_diagonal": 26,
+            "identity_r_i_s_j": 2,
+            "inversion_swap_r_minus_j_s_minus_i": 2,
+        }
+    )
+    expected_rank3 = Counter(
+        {"invalid_zero_or_diagonal": 236, "identity_r_i_s_j": 4}
+    )
     passed = (
         rank_counts == expected_ranks
         and bad_rank_drop_primes == {2}
@@ -207,22 +224,36 @@ def matching_rank_audit() -> dict[str, object]:
 
 
 def collision_polynomial(
-    symbol: sp.Symbol, order: int, i: int, j: int, r: int, s: int
+    symbol: sp.Symbol,
+    order: int,
+    i: int,
+    j: int,
+    r: int,
+    s: int,
 ) -> sp.Expr:
     """Cleared Cayley-difference collision numerator, exponents mod K."""
     coefficients: Counter[int] = Counter()
     terms = [
-        (-1, r), (1, s), (1, i), (-2, s + i), (1, r + s + i),
-        (-1, j), (2, r + j), (-1, r + s + j),
-        (-1, r + i + j), (1, s + i + j),
+        (-1, r),
+        (1, s),
+        (1, i),
+        (-2, s + i),
+        (1, r + s + i),
+        (-1, j),
+        (2, r + j),
+        (-1, r + s + j),
+        (-1, r + i + j),
+        (1, s + i + j),
     ]
     for coefficient, exponent in terms:
         coefficients[exponent % order] += coefficient
-    return sp.Add(*[
-        coefficient * symbol**exponent
-        for exponent, coefficient in coefficients.items()
-        if coefficient
-    ])
+    return sp.Add(
+        *[
+            coefficient * symbol**exponent
+            for exponent, coefficient in coefficients.items()
+            if coefficient
+        ]
+    )
 
 
 def cyclotomic_exceptional_primes(order: int) -> dict[str, object]:
@@ -245,13 +276,16 @@ def cyclotomic_exceptional_primes(order: int) -> dict[str, object]:
                 if r == s:
                     continue
                 if (r == i and s == j) or (
-                    r % order == (-j) % order and s % order == (-i) % order
+                    r % order == (-j) % order
+                    and s % order == (-i) % order
                 ):
                     continue
                 polynomial = collision_polynomial(symbol, order, i, j, r, s)
                 norm = abs(int(sp.resultant(cyclotomic, polynomial, symbol)))
                 if norm == 0:
-                    raise AssertionError("non-forced characteristic-zero collision found")
+                    raise AssertionError(
+                        "non-forced characteristic-zero collision found"
+                    )
                 distinct_norms.add(norm)
                 for prime_factor in sp.factorint(norm):
                     if prime_factor % order == 1:
@@ -259,24 +293,26 @@ def cyclotomic_exceptional_primes(order: int) -> dict[str, object]:
                 quadruples_checked += 1
 
     result = sorted(possible_primes)
-    passed = result == EXPECTED_EXCEPTION_SETS[order]
     return {
         "K": order,
         "normalized_nonforced_quadruples_checked": quadruples_checked,
         "distinct_nonzero_norms": len(distinct_norms),
         "exact_exception_primes_N_congruent_1_mod_K": result,
-        "pass": passed,
+        "pass": result == EXPECTED_EXCEPTION_SETS[order],
     }
 
 
-def verify_design(prime: int, subgroup_generator: int, subgroup_order: int) -> dict[str, object]:
-    """Require finite energy to agree in both directions with exact bad-prime status."""
+def verify_design(
+    prime: int, subgroup_generator: int, subgroup_order: int
+) -> dict[str, object]:
+    """Check exact bad-prime status against observed finite collision excess."""
     if pow(subgroup_generator, subgroup_order, prime) != 1:
         raise ValueError("a^K != 1")
     if subgroup_generator % prime == 1:
         raise ValueError("non-trivial subgroup generator required")
     if (prime - 1) % subgroup_order:
         raise ValueError("K must divide N-1")
+
     energy = cayley_energy_audit(prime, subgroup_generator, subgroup_order)
     exceptional = prime in set(EXPECTED_EXCEPTION_SETS.get(subgroup_order, []))
     observed_nonforced = int(energy["excess_collision_energy"]) > 0
@@ -294,7 +330,10 @@ def verify_design(prime: int, subgroup_generator: int, subgroup_order: int) -> d
 
 def main() -> None:
     matching = matching_rank_audit()
-    audits = [cyclotomic_exceptional_primes(11), cyclotomic_exceptional_primes(13)]
+    audits = [
+        cyclotomic_exceptional_primes(11),
+        cyclotomic_exceptional_primes(13),
+    ]
     designs = [
         verify_design(53, 10, 13),
         verify_design(67, 64, 11),
@@ -303,13 +342,14 @@ def main() -> None:
         cayley_energy_audit(461, 23, 23),
     ]
     if int(designs[-1]["excess_collision_energy"]) <= 0:
-        raise AssertionError("(N,K)=(461,23) must remain an explicit non-uniformity witness")
+        raise AssertionError(
+            "(N,K)=(461,23) must remain an explicit non-uniformity witness"
+        )
 
     passed = (
-        matching["pass"]
-        and all(row["pass"] for row in audits)
-        and all(bool(row["pass"]) for row in designs[:-1])
-        and bool(designs[-1]["pass"])
+        bool(matching["pass"])
+        and all(bool(row["pass"]) for row in audits)
+        and all(bool(row["pass"]) for row in designs)
     )
     result = {
         "producer": "computations/verification/mixed_cayley_energy.py",
