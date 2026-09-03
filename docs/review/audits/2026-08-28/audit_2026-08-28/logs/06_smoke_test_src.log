@@ -1,9 +1,0 @@
-  FAIL core: catmap_core: No module named 'catmap_core'
-  FAIL core: master_formula_strong (find_orbit_H): No module named 'master_formula_strong'
-  FAIL renamed: reduced_resonance.n3_count: No module named 'reduced_resonance'
-  FAIL renamed: audit_tail_bound import: No module named 'audit_tail_bound'
-  FAIL renamed: diag_conditional_prob import: No module named 'diag_conditional_prob'
-Traceback (most recent call last):
-  File "C:\Users\churi\Desktop\BGS\BGS_portable_20260827\BGS\review\scripts\smoke_test_src.py", line 22, in <module>
-    from reduced_resonance import n3_count
-ModuleNotFoundError: No module named 'reduced_resonance'
