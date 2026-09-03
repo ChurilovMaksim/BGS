@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CANONICAL_REQUIRED = [
     "README.md", "STATUS.md", "THEORY.md", "HISTORY.md", "HANDBOOK.md",
     "requirements.txt", "research/README.md", "research/M1.md",
-    "research/M1_CROSS_TWIST_001.md",
+    "research/M1_CROSS_TWIST_001.md", "research/M1_WEIL_002.md",
     "code/math/twisted_jacobi.py", "code/math/jacobi.py",
     "code/verification/baseline_r82.py",
     "code/verification/h3_k2_exact_reduction.py",
@@ -27,6 +27,8 @@ CANONICAL_REQUIRED = [
     "code/research/m1/cross_twist_energy.py",
     "code/research/m1/cross_twist_energy.cpp",
     "code/research/m1/run_suite.py",
+    "code/research/m1/regular_weil_classifier.py",
+    "code/research/m1/regular_weil_classifier.cpp",
     "code/maintenance/audit_inventory.py",
     "results/verified/baseline_r82.json",
     "results/verified/h3_k2_exact_reduction.json",
@@ -34,12 +36,14 @@ CANONICAL_REQUIRED = [
     "results/numerical/bgs_spacing_goe.json",
     "results/numerical/number_variance_goe_control.json",
     "results/research/m1/cross_twist_suite.json",
+    "results/research/m1/regular_weil_classifier.json",
     "results/historical-numerical/bgs_spacing_N95419.json",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N199.npz",
     "inputs/r82-legacy/theorems/I_torus_rigidity/q_curve_N3571.npz",
     "inputs/r82-legacy/theorems/II_twisted_jacobi/closed_form.json",
     "formal/Bgs/K2Reduction.lean", "formal/Bgs/M1CrossEnergy.lean",
     "formal/Bgs/OpLocal.lean",
+    "docs/roadmap.md",
     "docs/audit/full_repository_sync_2026-09-03.md",
     "docs/audit/FILE_INVENTORY_SUMMARY.json",
     "docs/audit/PRODUCER_PATH_MAP.md", "docs/audit/CLAIM_STATUS_MAP.md",
@@ -64,6 +68,8 @@ FORBIDDEN_PATHS = [
     "results/verified/word_trace_proof.json",
     "code/research/m1/m1_cross_twist_energy",
     "code/research/m1/cross_twist_energy.exe",
+    "code/research/m1/m1_regular_weil_classifier",
+    "code/research/m1/regular_weil_classifier.exe",
 ]
 
 ACTIVE_RUNTIME_DIRS = [
@@ -168,10 +174,14 @@ def main() -> int:
         fail("STATUS.md lacks the superseded R86/R87 trace-fluctuation status", errors)
     if "M1 assembled asymptotic energy bound | **OPEN GAP**" not in status:
         fail("STATUS.md must keep the assembled M1 asymptotic bound OPEN", errors)
+    if "M1 regular single-twist character bound | **ANALYTIC LEMMA" not in status:
+        fail("STATUS.md lacks the cycle-002 regular single-twist lemma", errors)
 
     m1_text = (ROOT / "research" / "M1.md").read_text(encoding="utf-8-sig")
     if "Status: **OPEN GAP**" not in m1_text:
         fail("research/M1.md must keep M1 at OPEN GAP", errors)
+    if "Individual regular Weil estimate — CLOSED in cycle 002" not in m1_text:
+        fail("research/M1.md does not record the cycle-002 checkpoint closure", errors)
 
     m1_result_path = ROOT / "results" / "research" / "m1" / "cross_twist_suite.json"
     if m1_result_path.exists():
@@ -180,10 +190,24 @@ def main() -> int:
         except Exception:
             m1_result = {}
         if m1_result.get("status") != "ACTIVE_RESEARCH_DIAGNOSTIC_NOT_A_PROOF":
-            fail("M1 research result has an unsafe theorem-like status", errors)
+            fail("M1 assembly research result has an unsafe theorem-like status", errors)
         checks = m1_result.get("suite_checks")
         if not isinstance(checks, dict) or not checks or not all(checks.values()):
             fail("M1 cross-twist suite checks are not all passing", errors)
+
+    weil_result_path = ROOT / "results" / "research" / "m1" / "regular_weil_classifier.json"
+    if weil_result_path.exists():
+        try:
+            weil_result = json.loads(weil_result_path.read_text(encoding="utf-8"))
+        except Exception:
+            weil_result = {}
+        if weil_result.get("status") != "EXACT_EXPONENT_CLASSIFICATION_EXTERNAL_WEIL_THEOREM_REQUIRED":
+            fail("M1 Weil classifier result has an unsafe or unknown status", errors)
+        if weil_result.get("dual_implementation_pass") is not True:
+            fail("M1 regular Weil Python/C++ classifier cross-check failed", errors)
+        consequence = str(weil_result.get("mathematical_reduction", {}).get("consequence_if_standard_weil_theorem_applies", ""))
+        if "3 sqrt(N)" not in consequence:
+            fail("M1 Weil classifier is missing the expected 3 sqrt(N) consequence", errors)
 
     m1_lean = ROOT / "formal" / "Bgs" / "M1CrossEnergy.lean"
     if m1_lean.exists():
