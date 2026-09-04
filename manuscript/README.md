@@ -1,6 +1,6 @@
 # Manuscript
 
-`arithmetic_cat_map_moments.tex` is the active research article.
+`arithmetic_cat_map_moments.tex` is the single active research article.
 `arithmetic_cat_map_moments.pdf` is the committed build, synchronized by
 [`../.github/workflows/build-manuscript.yml`](../.github/workflows/build-manuscript.yml).
 
@@ -8,7 +8,7 @@ The manuscript is deliberately **status-accurate**: it develops exact
 finite-field moment results and the current arithmetic frontier, but it does
 not claim a proof of microscopic BGS/GOE universality.
 
-The publication-facing theorem surface now includes:
+The publication-facing theorem surface includes:
 
 - the exact pair-key bijection, constrained count `(K-1)(K-2)`, weighted
   diagonal and fourth-moment distribution;
@@ -30,10 +30,9 @@ The publication-facing theorem surface now includes:
 - explicit separation of all moment statements from the still-open
   mean-spacing BGS/GOE local-statistics problem.
 
-`frontier_addendum_20260904.tex` records publication-ready frontier material
-that is being integrated into the main article.  The authoritative mathematical
-versions are the corresponding files in `../mathematics/` and the status
-ledger `../record/claim_ledger.md`.
+The former dated frontier addendum has been integrated into the main article
+and removed.  Authoritative derivations remain in `../mathematics/`, with
+claim status governed by `../record/claim_ledger.md`.
 
 Build locally with
 
