@@ -8,8 +8,8 @@ and a valuation bound for the entire non-forced Cayley collision excess.
 
 It does **not** by itself prove the desired pointwise `K^(2+o(1))` energy bound.
 Its main value is structural: all exceptional reduction geometry is compressed
-into one discriminant, opening a new route to averaged prime budgets through the
-prime-to-`2K` part of that discriminant.
+into one discriminant.  The finer ratio-orbit and fourth-power structure is
+proved in `cayley_ratio_orbit_factorization.md`.
 
 ## 1. The Cayley root polynomial
 
@@ -93,11 +93,10 @@ w(alpha) in {1,2};                                      (9)
 weight one occurs for the central differences
 `c(zeta^a)-c(zeta^(-a))=2c(zeta^a)`, and weight two otherwise.
 
-The coefficients of the monic root polynomial lie in `Z[1/K]`: every
-`c(zeta^a)` is integral away from the unique cyclotomic prime above `K` because
-`1-zeta^a` is a unit away from `K`.  Hence the primitive integral polynomial
-`S_K` has leading coefficient supported only at `K`.  In particular, for every
-rational prime `p==1 (mod K)`, its leading coefficient is a `p`-adic unit.
+Every `c(zeta^a)` is integral away from the unique cyclotomic prime above `K`,
+so the leading coefficient of the primitive integral polynomial `S_K` has no
+prime support away from `K`.  In particular it is a `p`-adic unit for every
+split rational prime `p==1 (mod K)`.
 
 ## 3. Reduction at a split prime
 
@@ -154,8 +153,6 @@ Delta_K(p)
  =2 sum_d sum_{alpha<beta in C_d} w(alpha)w(beta).       (16)
 ```
 
-This identity is useful independently of any discriminant estimate.
-
 ## 4. Discriminant criterion and valuation theorem
 
 Write
@@ -197,54 +194,41 @@ v_p(Disc_K)>=2N_p.                                       (21)
 Conversely `v_p(Disc_K)>0` means that at least one pair coalesces modulo `p`,
 so (18) follows from the cluster description.
 
-For (19), expand (16).  By (9), every product of weights satisfies
-
-```text
-w(alpha)w(beta)<=4.
-```
-
-Therefore
+By (9), every product of weights is at most four.  Expanding (16),
 
 ```text
 Delta_K(p)
- <= 8 N_p
- <= 4 v_p(Disc_K),                                      (22)
+ <=8N_p
+ <=4v_p(Disc_K),                                        (22)
 ```
 
-as required.
-
-No resultant-size estimate is used in this proof.
+which proves (19).
 
 ## 5. Weighted split-prime budget from one integer
 
-Theorem 1 immediately implies the exact global inequality
+Theorem 1 gives
 
 ```text
 sum_{p==1 mod K} Delta_K(p) log p
- <= 4 sum_{p==1 mod K} v_p(Disc_K) log p
- <= 4 log |Disc_K|_(split),                              (23)
+ <=4 sum_{p==1 mod K}v_p(Disc_K)log p
+ <=4 log |Disc_K|_(split),                              (23)
 ```
 
 where
 
 ```text
 |Disc_K|_(split)
- := product_{p==1 mod K} p^(v_p(Disc_K)).                (24)
+ :=product_{p==1 mod K}p^(v_p(Disc_K)).                  (24)
 ```
 
-Thus the optimal average-prime problem is no longer to bound `O(K^3)`
-individual collision resultants separately.  It is to understand the split
-part of **one canonical discriminant**.
+Thus the arithmetic problem can be compressed from `O(K^3)` individual
+collision resultants to the split-prime part of one canonical discriminant.
+This compression is exact; it does **not** imply that the total logarithmic
+mass is smaller.
 
-The completely unconditional estimate obtained by replacing the split part by
-`|Disc_K|` need not improve the existing `O(K^4)`-scale budget.  The gain can
-only come from exploiting the very special arithmetic factorization of
-`Disc_K`.
+## 6. Exact small-K checks
 
-## 6. Exact small-K factorization
-
-The difference resultant has strikingly structured factorizations.  For
-example,
+For example,
 
 ```text
 K=5:
@@ -265,89 +249,76 @@ R_7(T)
   (7T^6+140T^4+336T^2+64).                              (26)
 ```
 
-The last factor in each case is the central-difference factor, proportional to
-`Q_K(T/2)`.  The squared factors encode the noncentral forced two-element
-classes.
-
-For the squarefree nonzero difference polynomial, exact computation gives:
+For `K=7`,
 
 ```text
-K=7:
 Disc(S_7)=2^348 7^63 13^12,
 ```
 
-so there is no split exceptional prime (`13==-1 mod 7`).
+and `13==-1 (mod 7)`, so there is no split exceptional prime.
 
 For the maintained promoted cases,
 
 ```text
-K=11: split prime divisors of Disc(S_11) = {23,67,89},
-K=13: split prime divisors of Disc(S_13) = {53,79,131,157,313}.  (27)
+K=11: split prime divisors of Disc(S_11)={23,67,89},
+K=13: split prime divisors of Disc(S_13)={53,79,131,157,313}.  (27)
 ```
 
 These are exactly the complete exceptional sets previously obtained by
-individual collision resultants.
-
-The corresponding discriminant exponents are
+individual collision resultants.  Their split discriminant valuations include
 
 ```text
-K=11:
-v_23=76, v_67=12, v_89=12;
-
-K=13:
-v_53=60, v_79=56, v_131=12, v_157=12, v_313=16.        (28)
+K=11: v_23=76, v_67=12, v_89=12,
+K=13: v_53=60, v_79=56, v_131=12, v_157=12, v_313=16.   (28)
 ```
 
-Direct finite-field energies satisfy (19) in every case; for example
+Direct finite-field energies obey (19); for example
 
 ```text
-K=11:
-Delta(23)=240 <= 4*76,
-Delta(67)=48  =  4*12,
-Delta(89)=32  <= 4*12.                                  (29)
+Delta_11(23)=240 <=4*76,
+Delta_11(67)=48  =4*12,
+Delta_11(89)=32  <=4*12.                                (29)
 ```
 
-## 7. A new asymptotic target
+## 7. Audit correction: the small-K `K^3 log K` heuristic is rejected
 
-Exact computations through `K=23` reveal that the enormous `K^4`-scale part
-of the full discriminant is dominated by powers of `2` (and, to a smaller
-extent, `K`), neither of which can be a split collision prime.  If
+An earlier version of this note observed the prime-to-`2K` discriminant only
+through `K=23` and proposed
 
 ```text
-Disc_K^(2K)
+log |Disc_K^(2K)|=O(K^3 log K)
 ```
 
-denotes the integer obtained from `Disc_K` by removing all prime factors
-`2` and `K`, the observed logarithmic sizes are consistent with
+as a possible research target.  That was explicitly marked conjectural, but a
+larger exact computation shows that it is not a credible scaling law.
+
+The structural refinement in `cayley_ratio_orbit_factorization.md` proves
 
 ```text
-log |Disc_K^(2K)| = O(K^3 log K).                        (30)
+|Disc(S_K)|
+ =2^((K-1)^4/4)
+  K^((K-1)(K^2-7)/4)
+  J_K^4,                                                 (30)
 ```
 
-For example, at `K=23` the exact squarefree difference polynomial has degree
-`242`; after removing the full `2`- and `23`-adic parts from its discriminant,
+and permits the residual cross-resultants to be computed one ratio orbit at a
+time.  Exact runs through `K=47` show average residual cross-resultant logarithms
+of order `c K^2`, with the normalized prime-to-`2K` fourth-power mass
+`4 log J_K^(2K)/K^4` increasing from about `0.0837` at `K=23` to about `0.1182`
+at `K=47`.
 
-```text
-log |Disc_23^(46)| / 23^3 = 1.9246059627... .            (31)
-```
-
-Equation (30) is **CONJECTURAL at present**.  It is now a high-value closure
-target because, together with (23), it would improve the global weighted
-split-prime collision budget from `O(K^4)` to `O(K^3 log K)`.  In the dyadic
-double-average framework this would move the exact-baseline density threshold
-from `theta<1/5` to `theta<1/4` (up to logarithms) and the normalized quadratic
-excess theorem toward the Bombieri--Vinogradov modulus barrier `theta<1/2`.
-
-The required next step is therefore structural: derive the prime-to-`2K`
-discriminant via the trace/Chebyshev factorization of the Cayley differences,
-rather than bound the full discriminant by generic polynomial height.
+Accordingly the former `O(K^3 log K)` heuristic is **REJECTED**.  No theorem or
+claimed threshold improvement depends on it.  The correct next target is to
+control only the **split-prime part** of the exact factors `I_r` and
+`M_(r,s)` from the ratio-orbit theorem; their total archimedean size genuinely
+need not beat the existing `K^4` scale.
 
 ## Evidence boundary
 
-- Theorem 1 is a symbolic consequence of the characteristic-zero collision
-  classification and the standard root formula for discriminants.
-- The exact factorizations and valuation regressions are finite computations;
-  they are not used to prove Theorem 1.
-- The `O(K^3 log K)` prime-to-`2K` discriminant bound is a research target, not
-  an established theorem.
+- Theorem 1 is a symbolic consequence of the maintained characteristic-zero
+  collision classification and the standard root formula for discriminants.
+- The small-`K` factorizations are finite exact regressions, not proofs of the
+  general theorem.
+- The discarded `K^3 log K` scaling was never promoted to theorem status and is
+  now explicitly rejected after the larger adversarial computation.
 - No statement here proves microscopic BGS/GOE universality.
