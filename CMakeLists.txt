@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+find_package(Boost REQUIRED)
+
 add_executable(
   fourth_moment_pair_key_verifier
   computations/cpp/fourth_moment_pair_key_verifier.cpp
@@ -20,18 +22,26 @@ add_executable(
   computations/cpp/cayley_energy_verifier.cpp
 )
 
+add_executable(
+  cayley_fibonacci_verifier
+  computations/cpp/cayley_fibonacci_verifier.cpp
+)
+target_include_directories(cayley_fibonacci_verifier PRIVATE ${Boost_INCLUDE_DIRS})
+
 if (MSVC)
   foreach(target
       fourth_moment_pair_key_verifier
       cat_map_order
-      cayley_energy_verifier)
+      cayley_energy_verifier
+      cayley_fibonacci_verifier)
     target_compile_options(${target} PRIVATE /W4)
   endforeach()
 else()
   foreach(target
       fourth_moment_pair_key_verifier
       cat_map_order
-      cayley_energy_verifier)
+      cayley_energy_verifier
+      cayley_fibonacci_verifier)
     target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
   endforeach()
 endif()

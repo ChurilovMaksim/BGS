@@ -57,6 +57,14 @@ jobs:
       - name: Regress prime-order uniform Cayley cutoff theorem
         run: python computations/verification/cayley_uniform_cutoff_regression.py
 
+      - name: Regress square-resultant and Fibonacci Cayley structure
+        run: python computations/verification/cayley_resultant_fibonacci.py
+
+      - name: Install C++ multiprecision dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libboost-dev
+
       - name: Build all maintained C++ verifiers
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
@@ -67,6 +75,7 @@ jobs:
           ./build/fourth_moment_pair_key_verifier
           ./build/cat_map_order verify
           ./build/cayley_energy_verifier
+          ./build/cayley_fibonacci_verifier
 
   formalization:
     runs-on: ubuntu-latest

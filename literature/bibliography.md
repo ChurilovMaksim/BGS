@@ -46,20 +46,62 @@ are linearly independent over `Q`. This is the exact external input used in
 more general moduli and derivatives of cotangent. The DOI/title metadata for
 both papers was independently resolved during the 2026-09-04 audit.
 
+## Fibonacci/Lucas divisibility and resultant structure
+
+14. R. D. Carmichael, **On the Numerical Factors of the Arithmetic Forms α^n ± β^n**, *Annals of Mathematics* **15** (1913–1914). The original article was published in two consecutive JSTOR records, pp. 30–48 (DOI `10.2307/1967797`) and pp. 49–70 (DOI `10.2307/1967798`); later literature commonly cites the combined pp. 30–70 work.
+15. M. Yabuta, **A Simple Proof of Carmichael's Theorem on Primitive Divisors**, *The Fibonacci Quarterly* **39** (2001), 439–443, DOI `10.1080/00150517.2001.12428701`.
+16. Y. Bilu, G. Hanrot and P. M. Voutier, **Existence of primitive divisors of Lucas and Lehmer numbers**, *Journal für die reine und angewandte Mathematik* **539** (2001), 75–122, DOI `10.1515/crll.2001.080`.
+17. T. M. Apostol, **Resultants of cyclotomic polynomials**, *Proceedings of the American Mathematical Society* **24** (1970), 457–462, DOI `10.1090/S0002-9939-1970-0251010-X`.
+18. M. Baker, **Reciprocity via Reciprocants**, *The American Mathematical Monthly* **132** (2025), 303–315, DOI `10.1080/00029890.2024.2439819` (arXiv:2309.02512).
+
+The load-bearing primitive-divisor input in
+`mathematics/fibonacci_ratio_energy_proof.md` is Yabuta's Theorem 3: the
+`n`-th Fibonacci term has a primitive divisor for
+`n notin {1,2,6,12}`. In particular every `F_n` with `n>12` has a prime divisor
+that divides no earlier positive Fibonacci number. This exact formulation was
+read from the paper during the 2026-09-04 audit, rather than inferred from a
+bibliographic snippet. Carmichael is retained for historical attribution;
+Yabuta is the publication-grade theorem locator used by the proof.
+
+Bilu–Hanrot–Voutier is a much broader primitive-divisor theorem for
+Lucas/Lehmer sequences and is useful for possible extensions to other slices;
+it is not needed to strengthen the Fibonacci special case. Apostol is standard
+background for cyclotomic resultants. Baker proves a general square-root
+phenomenon for resultants of even-degree reciprocal polynomials; this is close
+prior art for the square structure, while the project's `K^3 M^2` theorem is
+proved directly from the specific twisted reciprocity and the maximal real
+cyclotomic subfield.
+
+A bounded 2026-09-04 literature search checked cyclotomic-resultant,
+reciprocal-resultant and generalized-Fibonacci-resultant terminology and nearby
+citation chains. No checked source was found stating the exact project identity
+
+`Res(Phi_K, X^2+3X+1)=F_K^2`
+
+in this collision context, nor the exact additive-energy theorem for
+`{+-L_n/F_n}`. These are therefore described only as
+**apparently new within the recorded search scope**, not as global novelty
+claims; failure to find a source is not proof that an identity has never
+appeared elsewhere.
+
+The Yabuta, Baker, Carmichael and Bilu–Hanrot–Voutier citation records used here
+were independently checked against identifier metadata during the 2026-09-04
+audit; no retraction was reported by that check.
+
 ## Trace functions and quantitative sheaf theory
 
-14. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
-15. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
-16. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
+19. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
+20. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
+21. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
 
 These provide relevant technology once the actual sheaves, singularities,
 irreducibility/non-isomorphism, ramification and uniform conductor are proved.
 
 ## Elliptic families, Sato–Tate and isogeny detection
 
-17. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
-18. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
-19. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
+22. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
+23. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
+24. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
 
 Grove–Saad is a useful modern worked example because geometric independence is
 established before square-root correlation is invoked. Zarhin-type results are
