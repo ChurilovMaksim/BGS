@@ -7,55 +7,60 @@ wins.
 ## Status vocabulary
 
 - **EXACT** — current project derivation with explicit hypotheses.
-- **EXACT + EXTERNAL-THEOREM** — the project reduction is exact and the only
-  remaining named input is a verified published theorem whose hypotheses have
-  been checked in project notation.
-- **FINITE-CERTIFICATE** — exhaustive or kernel-checked statement at explicit
-  finite parameters.
-- **FINITE-REGRESSION** — exact finite implementation/reference agreement; not
-  a proof of a universal theorem.
+- **EXACT + EXTERNAL-THEOREM** — exact project reduction whose remaining named
+  input is a verified published theorem with its hypotheses checked in project
+  notation.
+- **FINITE-CERTIFICATE** — exact exhaustive or kernel-checked statement at
+  explicit finite parameters.
+- **FINITE-REGRESSION** — finite implementation/reference agreement; useful
+  for reproducibility, not a universal proof.
 - **NUMERICAL** — descriptive floating-point evidence only.
-- **OPEN** — the stated closure condition has not been achieved.
-- **SCOPED-HISTORICAL** — useful earlier result retained at a narrower audited
-  scope.
-- **NOT-PROMOTED** — exploratory structure retained without theorem status.
-- **RETRACTED / SUPERSEDED** — false, overclaimed, or replaced by a corrected
-  statement.
+- **DRAFT** — proof route with named unresolved obligations.
+- **OPEN** — closure condition not achieved.
+- **SCOPED-HISTORICAL** — useful earlier result whose safe present scope is
+  narrower than its historical label.
+- **NOT-PROMOTED** — retained evidence/conjectural structure, not accepted into
+  the current theorem set.
+- **RETRACTED** — false or superseded.
 
-## Active theorem chain
+## Active claim table
 
 | Claim | Status | Current support |
 |---|---|---|
 | pair-key bijection; diagonal multiplicity `p-2` | **EXACT** | `mathematics/fourth_moment_reduction.md` |
-| constrained off-diagonal count `(K-1)(K-2)` | **EXACT + FINITE-CERTIFICATE** | pair-key proof; Lean finite anchor |
-| `|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | **EXACT + FINITE-CERTIFICATE** | fourth-moment reduction; Python/C++/Lean |
-| character/Jacobi fourth-moment collapse and nonzero-frequency Fourier mean/variance | **EXACT + FINITE-REGRESSION** | `mathematics/fourth_moment_reduction.md` |
-| Cayley identity and reduction of the mixed layer to additive energy of `A=c(H\{1})` | **EXACT** | `mathematics/cayley_additive_energy.md` |
-| prime-order characteristic-zero additive collision classification | **EXACT** | Chowla cotangent independence + cross-polytope lemma |
-| `Res(Phi_K,P)=K^3M^2` for every cleared prime-order collision polynomial | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_resultant_structure.md` |
-| no non-forced finite collision if `K^3p^2>12^(K-1)` | **EXACT** | square-resultant theorem + coefficient norm |
+| constrained off-diagonal count `(K-1)(K-2)` | **EXACT + FINITE-CERTIFICATE** | pair-key proof; Lean finite certificate |
+| exact `|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | **EXACT + FINITE-CERTIFICATE** | current derivation + Python/C++/Lean finite checks |
+| corrected `B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}` and Fourier mean/variance | **EXACT + FINITE-REGRESSION** | `fourth_moment_reduction.md` |
+| Cayley identity and additive-energy reduction | **EXACT** | `cayley_additive_energy.md` |
+| odd-prime-order characteristic-zero additive collision rigidity | **EXACT** | Chowla cotangent independence + cross-polytope argument |
+| `Res(Phi_K,P)=K^3M^2` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_structure.md` |
+| `K^3p^2>12^(K-1)` implies exact nonzero Cayley baseline | **EXACT + FINITE-REGRESSION** | square resultant + coefficient norm |
 | Fibonacci slice `Res(Phi_K,X^2+3X+1)=F_K^2` | **EXACT + FINITE-REGRESSION** | exact Binet/Lucas derivation |
-| `S_N={+-L_n/F_n}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | Yabuta primitive-divisor input + bounded Lean residue |
-| `(K,p)=(131,F_131)` 28-digit witness has excess `32` | **FINITE-CERTIFICATE** | Lucas primality certificate + independent Python/C++ audits |
-| for `100<K<p^(3/4)/3`, `E_+(A)<34K^(8/3)` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | source-exact Vyugin--Makarychev theorem in `cayley_direct_energy.md` |
-| corresponding mixed centered variance `<136pK^(8/3)` | **EXACT** | exact mixed coefficient + direct energy theorem |
-| centered identity `E_+(A)=|A|^4/p+p^(-1)sum_{q!=0}|1_Ahat(q)|^4` | **EXACT** | `mathematics/cayley_centered_energy.md` |
-| global weighted split-prime budget `sum Delta_K(p)log p <=(K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_resultant_mass_budget.md` |
-| canonical additive polynomial `S_K`: `Delta_K(p)>0 iff p|Disc(S_K)` and `Delta_K(p)<=4v_p(Disc(S_K))` | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_difference_discriminant.md` |
-| ratio-orbit factorization, exact cross-resultant squares and one-factor fourth-power discriminants | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_ratio_orbit_factorization.md` |
-| global identity `|Disc(S_K)|=2^((K-1)^4/4)K^((K-1)(K^2-7)/4)J_K^4` | **EXACT + FINITE-REGRESSION** | ratio-orbit discriminant theorem |
-| characteristic-zero multiplicative rigidity and `E_x(A_K)=4(K-1)(K-2)` | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_multiplicative_rigidity.md` |
-| canonical product polynomial: `Delta_K^x(p)>0 iff p|Disc(S_K^x)` and `Delta_K^x(p)<=16v_p(Disc(S_K^x))` | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_product_discriminant.md` |
-| full-annihilator trace identity `1_Ahat(r)=K Tr M_S(2r)` and exact trace moments | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_jacobi_trace_average.md` |
-| fixed `0<theta<1/3`: dyadic split-pair average `Delta_K(p)/K^2 <<_theta X^(3theta-1)` | **EXACT + EXTERNAL-THEOREM** | global budget + Bombieri--Vinogradov + PNT |
-| fixed `0<theta<1/3`: full-trace fourth/second moment ratio tends to `3` in double-average absolute deviation | **EXACT** | exact trace moments + previous theorem |
-| fixed `0<theta<1/2`: bad split designs satisfy `#bad/#all <<_theta X^(5theta-1)` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_exact_baseline_density.md` |
-| fixed `0<theta<1/5`: density-one split pairs have `Delta_K(p)=0` exactly and `E_+(A)=3(K-1)(K-2)` | **EXACT + EXTERNAL-THEOREM** | integer excess + global budget + Bombieri--Vinogradov/PNT denominator |
-| generic off/off class has exact reducible spike `O_lambda(2/(alpha-beta))=2p-8`, four additional simple finite bad fibers, and parameter recovery up to `(h1,h2)<->(h2^-1,h1^-1)` | **EXACT + FINITE-REGRESSION** | `mathematics/offoff_elliptic_spike_theorem.md` |
-| corrected off/off variance `Var_{t!=0}O(t)<<pE_+(A)+K^2p+K^4sqrt(p)+K^4` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | spike extraction + Igusa monodromy + Grothendieck--Lefschetz/Deligne |
-| in `100<K<p^(3/4)/3`, corrected off/off variance `<<pK^(8/3)+K^4sqrt(p)+K^2p+K^4`; hence `<<pK^(8/3)` for `K=o(p^(1/4))` | **EXACT + EXTERNAL-THEOREM** | corrected off/off + direct Cayley theorem |
-| sharp pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` | **OPEN** | all current formulations isolate the same `K^(2/3)` loss |
-| microscopic BGS/GOE local eigenphase law | **OPEN** | no current mean-spacing local-law/comparison mechanism |
+| `S_N={+-L_n/F_n}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | `fibonacci_ratio_energy_proof.md`; external primitive-divisor theorem + bounded Lean residue |
+| `(K,p)=(131,F_131)` has energy `33442`, baseline `33410`, excess `32` | **FINITE-CERTIFICATE** | Lucas primality certificate + independent Python/C++ multiprecision checks |
+| for `100<K<p^(3/4)/3`, `E_+(c(H\{1}))<34K^(8/3)` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | `cayley_direct_energy.md`; Vyugin--Makarychev Theorem 2 |
+| corresponding mixed centered variance `<136pK^(8/3)` | **EXACT** | direct theorem + exact coefficient `2(p-2)` |
+| centered Fourier identity and Cayley character/Gram formulations | **EXACT** | `cayley_centered_energy.md` |
+| shifted-energy orbit inequality `sum_{t in T_(lambda H)}r(t)^2<=2(E_x(H+lambda)-(2K^2-K))` | **EXACT + FINITE-REGRESSION** | `cayley_shifted_energy_orbits.md`; CI regression |
+| for `K^2<p`, every nonzero parameter orbit has `L^2` mass `<<K^2 log K` | **EXACT + EXTERNAL-THEOREM** | preceding reduction + Shkredov, arXiv:1504.04522v1, Theorem 6 |
+| global shifted-energy identity `sum_lambda(E_x(H+lambda)-(2K^2-K))=K^4-E_+(H)` | **EXACT + FINITE-REGRESSION** | `cayley_shifted_energy_orbits.md`; full finite lambda-sums at `(199,11)`, `(461,23)` |
+| shifted-energy orbit route alone yields only global `O(K^3)` and does not improve `K^(8/3)` | **EXACT LIMITATION** | exact global identity + orbit partition |
+| weighted split-prime excess budget `sum_{p==1 mod K}Delta_K(p)log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_mass_budget.md` |
+| canonical difference discriminant: `Delta_K(p)>0 iff p|Disc(S_K)` and `Delta_K(p)<=4v_p(Disc(S_K))` | **EXACT + FINITE-REGRESSION** | `cayley_difference_discriminant.md` |
+| ratio-orbit factorization and one-factor fourth-power discriminants | **EXACT + FINITE-REGRESSION** | `cayley_ratio_orbit_factorization.md` |
+| global `|Disc(S_K)|=2^((K-1)^4/4)K^((K-1)(K^2-7)/4)J_K^4` | **EXACT + FINITE-REGRESSION** | ratio-orbit theorem + product-discriminant identity |
+| characteristic-zero multiplicative Cayley rigidity; `E_x(A_K)=4(K-1)(K-2)` | **EXACT + FINITE-REGRESSION** | `cayley_multiplicative_rigidity.md` |
+| canonical product discriminant classification and `Delta_K^x(p)<=16v_p(Disc(S_K^x))` | **EXACT + FINITE-REGRESSION** | `cayley_product_discriminant.md` |
+| full ordinary Jacobi trace `1_Ahat(r)=K Tr M_S(2r)` and exact second/fourth trace moments | **EXACT + FINITE-REGRESSION** | `cayley_jacobi_trace_average.md` |
+| for fixed `0<theta<1/3`, double-average `Delta_K(p)/K^2<<_theta X^(3theta-1)` | **EXACT + EXTERNAL-THEOREM** | mass budget + Bombieri--Vinogradov + PNT |
+| full normalized ordinary Jacobi-trace kurtosis tends to `3` in the same double average | **EXACT** | exact trace moments + preceding theorem; not a CLT |
+| for fixed `0<theta<1/5`, density-one split pairs satisfy `Delta_K(p)=0` exactly | **EXACT + EXTERNAL-THEOREM** | `cayley_exact_baseline_density.md` |
+| generic off/off reducible spike `O_lambda(2/(alpha-beta))=2p-8`; remaining singular support recovers parameters up to involution | **EXACT + FINITE-REGRESSION** | `offoff_elliptic_spike_theorem.md` |
+| corrected off/off variance `Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | spike extraction + Igusa + Grothendieck--Lefschetz/Deligne |
+| in `K=o(p^(1/4))` and direct-theorem range, `Var O<<pK^(8/3)` | **EXACT + EXTERNAL-THEOREM** | corrected off/off theorem + direct Cayley energy |
+| sharp centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` | **OPEN** | no verified theorem removes the `K^(2/3)` loss |
+| product-row `O(1)` intersection theorem in the polynomial split-prime regime | **OPEN / NOT-PROMOTED** | exact affine trace-set reduction; finite evidence only; stronger tentative `<=1` bound is false |
+| microscopic BGS/GOE local eigenphase law | **OPEN** | no mean-spacing local-law/comparison mechanism |
 
 ## Current obstruction architecture
 
@@ -65,157 +70,100 @@ The exact fourth-moment decomposition is
 B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}.
 ```
 
-Both nontrivial fluctuation layers are now controlled by the same pointwise
-quantity
+Both nontrivial layers are now controlled by the same arithmetic object
 
 ```text
-E_+(A),  A=c(H\{1}).
+A=c(H\{1}),
+E_+(A).
 ```
 
-For the mixed layer this is the direct Cayley reduction.  For the off/off layer
-the mechanism is the exact reducible fiber
+The mixed layer is exactly Cayley additive energy.  The corrected off/off layer
+contains coherent reducible spikes whose second moment is bounded by
+`pE_+(A)`; after spike extraction the residual elliptic trace functions are
+square-root quasi-orthogonal.  Thus the former elliptic draft is no longer an
+independent pointwise bottleneck.
 
-```text
-t_lambda=2/(c(h1)-c(h2)),
-O_lambda(t_lambda)=2p-8.
-```
-
-Parameter classes with equal Cayley difference align their `O(p)` spikes, so
-their aggregate second moment is controlled by `pE_+(A)`.  After extracting
-the spike, the residual rank-two elliptic trace sheaves are uniformly
-quasi-orthogonal at square-root scale.  Thus the old elliptic/sheaf gap is no
-longer independent.
-
-The strongest current uniform pointwise theorem is
+The best uniform pointwise estimate is still
 
 ```text
 E_+(A)<34K^(8/3)
 ```
 
-for `100<K<p^(3/4)/3`.  The remaining closure target is
+in `100<K<p^(3/4)/3`.  The target is
 
 ```text
-E_+(A)=(K-1)^4/p+O(K^(2+o(1))),
+E_+(A)=(K-1)^4/p+O(K^(2+o(1))).
 ```
 
-or equivalently
+The new shifted-energy orbit theorem shows that one entire multiplicative
+parameter block already has near-quadratic square mass `O(K^2 log K)`, but the
+exact sum over all blocks is only an `O(K^3)` argument.  Therefore the remaining
+information must be cross-block: sparsity/cancellation in the distribution of
+shifted multiplicative excess, or a direct bound on intersections of distinct
+product rows.
+
+## Product-row frontier
+
+For a noncentral product row write `xy=w^2`, `x=wz`, `y=wz^(-1)`.  For two
+rows `w^2` and `q^2`, a common finite Cayley parameter reduces exactly to
 
 ```text
-sum_{q!=0}|1_Ahat(q)|^4 << pK^(2+o(1)).
+Y=alpha X+beta,
+X=z+z^(-1),
+Y=y+y^(-1),
+alpha=w(1-q^2)/(q(1-w^2)),
+beta=2(q^2-w^2)/(q(1-w^2)).
 ```
 
-Because `c(h)=1+2/(h-1)`, the same target may be written for the reciprocal
-shifted subgroup `(H-1)^(-1)`.  Known near-quadratic multiplicative energy of
-shifted subgroups is relevant, but no verified reciprocal/cross-ratio transfer
-theorem currently supplies the required additive bound.
+Each row contributes at most one unordered subgroup pair to a fixed parameter.
+Hence an `O(1)` bound on the number of common parameters for every two distinct
+rows would force non-forced Cayley energy `O(K^2)` in the sparse regime.
 
-## Discriminant structure: what is proved and what is not
+This is currently **OPEN**.  Finite sweeps above `p>K^4` support a small
+intersection phenomenon, but computation is not promoted.  In particular, the
+stronger exploratory claim “at most one” has an explicit counterexample:
+`(K,p)=(41,2908049)` has a row pair with two common parameters.
 
-The additive difference discriminant compresses every split-prime exception
-into one integer.  The stronger ratio-orbit theorem gives
+## Finite negative controls
+
+The active regression corpus includes large split-prime exceptions
 
 ```text
-|Disc(S_K)|
- =2^((K-1)^4/4)
-  K^((K-1)(K^2-7)/4)
-  J_K^4.
+(K,p)=(29,728017),
+(K,p)=(31,1042903),
 ```
 
-This proves fourth-power split valuations.  However exact cross-resultant
-computations through `K=47` reject the earlier small-`K` scaling guess that the
-prime-to-`2K` residual logarithmic mass should be `O(K^3log K)`: the total
-archimedean cross-resultant mass remains genuinely `K^4`-scale.  Therefore the
-fourth-power factorization is structural, not a hidden pointwise quadratic
-energy theorem.
+both with `p>K^4` and additive Cayley excess `48`.  Therefore no theorem of the
+form “`p>K^4` implies exact baseline” is active or plausible without additional
+structure.
 
-The multiplicative Cayley theorem is an independent exact rigidity result.  It
-does not imply additive rigidity after finite-field reduction and is not used
-as if it did.
-
-## Double-average and density-one results
-
-The global budget plus Bombieri--Vinogradov/PNT gives two distinct theorems.
-
-First, for fixed `theta<1/3`,
+Complete fixed-order finite certificates remain
 
 ```text
-average Delta_K(p)/K^2 <<_theta X^(3theta-1) -> 0.
+E_11={23,67,89},
+E_13={53,79,131,157,313},
 ```
 
-Second, using only that `Delta_K(p)` is a nonnegative integer, for fixed
-`theta<1/2`,
+and `(p,K)=(461,23)` has energy `1190` versus forced baseline `902`.
 
-```text
-#bad/#all <<_theta X^(5theta-1).
-```
+## Evidence boundaries
 
-Hence for `theta<1/5`, asymptotically almost every dyadic split pair has no
-non-forced collision at all and
-
-```text
-E_+(A)=3(K-1)(K-2)
-```
-
-exactly.  These are averaged arithmetic theorems; neither is a pointwise
-statement for every split reduction.
-
-The full Jacobi trace identity transfers the additive-energy moments to an
-ordinary matrix trace.  The double-average standardized fourth-moment ratio
-tends to `3`, but this is neither a central limit theorem nor a local
-eigenphase-statistics result.
-
-## Promoted finite certificates / regressions
-
-- finite pair-key and fourth-moment anchors, including `(53,13)`;
-- complete additive exceptional sets `E_11={23,67,89}` and
-  `E_13={53,79,131,157,313}`;
-- negative control `(p,K)=(461,23)` with energy `1190` versus forced nonzero
-  baseline `902`;
-- the 28-digit Fibonacci witness with exact excess `32`;
-- additive/product discriminant regressions;
-- ratio-orbit/fourth-power regression through `K=47` for the recorded scaling
-  study, with smaller default CI cases;
-- exact symbolic and finite anchors for the corrected elliptic `2p-8` spike.
-
-Finite regressions are never promoted to proofs of universal claims.
-
-## Earlier useful foundations
-
-| Claim | Status | Scope |
-|---|---|---|
-| torus level-set cardinalities/orbit counts/freeness | **FINITE-CERTIFICATE** | `p=199,K=11`, Lean |
-| recorded branch scale `c^2=5 mod 199` | **FINITE-CERTIFICATE** | `p=199`, Lean |
-| twisted-Jacobi scalar formula / q-curve moments | **FINITE-REGRESSION** | explicit designs |
-| antiunitary eigenspace-preservation logic | **SCOPED-HISTORICAL** | no blanket global GOE-class promotion |
-| historical relation/shape finite counts | **SCOPED-HISTORICAL** | no current theorem dependency |
-| all-orders Catalan / full-group arcsine package | **NOT-PROMOTED** | unresolved historical word-trace rewrite |
-| higher-rank/Sp(2g) exploratory diagnostics | **NOT-PROMOTED** | no current general theorem re-certified |
-
-## Numerical records
-
-`evidence/numerical/goe_spacing.json` and
-`evidence/numerical/matched_window_count_variance.json` are descriptive
-full-complex-Hermitian diagnostics only.  Historical IID-KS/pass-fail language
-is withdrawn.  A reconstruction-era accidental real projection was corrected;
-no exact theorem depended on those records.
+- finite computation never proves a growing-parameter theorem;
+- the Jacobi kurtosis theorem is not a Gaussian distribution theorem;
+- ordinary full trace is not a parity/desymmetrized spectral block;
+- fourth-moment control is not a mean-spacing local eigenvalue law;
+- multiplicative Cayley rigidity is not silently transferred to additive
+  rigidity after reduction.
 
 ## Retractions and superseded routes
 
-See [`retractions.md`](retractions.md) for mechanisms.  In particular, the
-historical Möbius/M4D proof, one-sided mixed counting, ESY-to-BGS shortcut,
-noncommutative trace shortcut, Hecke-centering Julia route, unsupported
-higher-rank extrapolations and all-orders promotion from the unresolved
-word-trace route are not active.
+See [`retractions.md`](retractions.md) for mechanisms.  The historical
+Möbius/M4D M1 proof, one-sided mixed counting, ESY-to-BGS shortcut,
+noncommutative trace shortcut, Hecke-centering Julia line, `cdense_transfer`,
+`sol6`, unsupported higher-rank/Sp(2g) promotion, temporary real-projection
+spectral bug, unresolved all-orders word-trace promotion, the spike-free
+off/off theorem, and the residual discriminant-height `O(K^3 log K)` heuristic
+are not active results.
 
-Two current-era corrections are load-bearing:
-
-1. the old unconditional off/off target
-   `O(K^2p+K^4sqrt(p)+K^4)` is **RETRACTED / SUPERSEDED** because it omitted
-   the exact reducible `2p-8` spike; the corrected theorem contains
-   `pE_+(A)`;
-2. the small-`K` heuristic that the prime-to-`2K` residual discriminant should
-   have only `O(K^3log K)` logarithmic size is **RETRACTED** after larger exact
-   ratio-orbit computations.
-
-Microscopic BGS/GOE universality remains open even if the fourth-moment
-programme is completed.
+Microscopic BGS/GOE universality remains open even if the entire present
+fourth-moment programme is completed.
