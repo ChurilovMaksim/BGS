@@ -7,6 +7,19 @@
 #include <vector>
 
 using u64 = std::uint64_t;
+
+static u64 add_mod(u64 a, u64 b, u64 p) {
+    a %= p;
+    b %= p;
+    return (a >= p - b) ? a - (p - b) : a + b;
+}
+
+static u64 sub_mod(u64 a, u64 b, u64 p) {
+    a %= p;
+    b %= p;
+    return (a >= b) ? a - b : p - (b - a);
+}
+
 static u64 mul_mod(u64 a, u64 b, u64 p) {
     u64 result = 0;
     a %= p;
@@ -14,10 +27,10 @@ static u64 mul_mod(u64 a, u64 b, u64 p) {
         if (b & 1U) {
             // All active designs are far below uint64_t overflow, but this
             // branch-safe form also avoids relying on non-standard __int128.
-            result = (result >= p - a) ? result - (p - a) : result + a;
+            result = add_mod(result, a, p);
         }
         b >>= 1U;
-        if (b) a = (a >= p - a) ? a - (p - a) : a + a;
+        if (b) a = add_mod(a, a, p);
     }
     return result;
 }
@@ -62,6 +75,88 @@ static u64 cayley(u64 h, u64 p) {
     return mul_mod((h + 1) % p, inv_mod((h + p - 1) % p, p), p);
 }
 
+static u64 ratio_value(u64 rho, u64 x, u64 p) {
+    // d_rho(x)=(rho*x+x^{-1}-(rho+1))/(1-rho).
+    const u64 rx = mul_mod(rho, x, p);
+    const u64 numerator = sub_mod(add_mod(rx, inv_mod(x, p), p), add_mod(rho, 1, p), p);
+    return mul_mod(numerator, inv_mod(sub_mod(1, rho, p), p), p);
+}
+
+static u64 transformed_curve_value(u64 rho, u64 sigma, u64 U, u64 V, u64 p) {
+    // G_{rho,sigma}(U,V) from the toric change (x,y)=(U/V,UV).
+    const u64 U2 = mul_mod(U, U, p);
+    const u64 V2 = mul_mod(V, V, p);
+    const u64 UV = mul_mod(U, V, p);
+
+    u64 value = 0;
+    value = add_mod(
+        value,
+        mul_mod(mul_mod(sigma, sub_mod(rho, 1, p), p), mul_mod(U2, V2, p), p),
+        p);
+    value = add_mod(
+        value,
+        mul_mod(mul_mod(rho, sub_mod(1, sigma, p), p), U2, p),
+        p);
+    value = add_mod(
+        value,
+        mul_mod(mul_mod(2, sub_mod(sigma, rho, p), p), UV, p),
+        p);
+    value = add_mod(value, mul_mod(sub_mod(1, sigma, p), V2, p), p);
+    value = add_mod(value, sub_mod(rho, 1, p), p);
+    return value;
+}
+
+struct CurveAudit {
+    u64 enlarged_total;
+    u64 max_offdiag;
+};
+
+static CurveAudit audit_ratio_curves(const std::vector<u64>& subgroup, u64 p, u64 k) {
+    std::vector<u64> parameters;
+    for (u64 rho : subgroup) {
+        if (rho != 1) parameters.push_back(rho);
+    }
+
+    u64 enlarged_total = 0;
+    u64 max_offdiag = 0;
+
+    for (u64 rho : parameters) {
+        for (u64 sigma : parameters) {
+            u64 ratio_count = 0;
+            u64 transformed_count = 0;
+
+            for (u64 x : subgroup) {
+                const u64 dx = ratio_value(rho, x, p);
+                for (u64 y : subgroup) {
+                    if (dx == ratio_value(sigma, y, p)) ++ratio_count;
+                }
+            }
+
+            for (u64 U : subgroup) {
+                for (u64 V : subgroup) {
+                    if (transformed_curve_value(rho, sigma, U, V, p) == 0) {
+                        ++transformed_count;
+                    }
+                }
+            }
+
+            if (ratio_count != transformed_count) {
+                throw std::runtime_error("ratio-fibre count disagrees with toric curve count");
+            }
+            if (rho == sigma) {
+                if (ratio_count != 2 * k - 1) {
+                    throw std::runtime_error("parameter-diagonal curve count is not 2K-1");
+                }
+            } else {
+                max_offdiag = std::max(max_offdiag, ratio_count);
+            }
+            enlarged_total += ratio_count;
+        }
+    }
+
+    return {enlarged_total, max_offdiag};
+}
+
 struct Audit {
     u64 p;
     u64 k;
@@ -71,11 +166,14 @@ struct Audit {
     u64 baseline;
     u64 excess;
     u64 max_multiplicity;
+    u64 enlarged_curve_total;
+    u64 max_offdiag_curve;
 };
 
 static Audit audit_design(u64 p, u64 a, u64 k) {
     if (p < 3 || (p % 2) == 0) throw std::invalid_argument("p must be an odd prime design");
     if ((p - 1) % k != 0) throw std::invalid_argument("K must divide p-1");
+    if ((k % 2) == 0) throw std::invalid_argument("ratio-curve audit requires odd K");
     if (!has_exact_order(a, k, p)) throw std::invalid_argument("generator does not have exact order K");
 
     std::vector<u64> subgroup;
@@ -142,29 +240,42 @@ static Audit audit_design(u64 p, u64 a, u64 k) {
     const u64 baseline = (k - 1) * (2 * k - 5);
     if (collision_energy < baseline) throw std::runtime_error("energy below forced baseline");
 
+    const CurveAudit curve = audit_ratio_curves(subgroup, p, k);
+    if (collision_energy > curve.enlarged_total) {
+        throw std::runtime_error("ratio-fibre domain enlargement decreased the count");
+    }
+
     return {p, k, a, pair_count, collision_energy, baseline,
-            collision_energy - baseline, max_multiplicity};
+            collision_energy - baseline, max_multiplicity,
+            curve.enlarged_total, curve.max_offdiag};
 }
 
 struct Expected {
     u64 p, a, k, energy, max_multiplicity;
+    u64 enlarged_curve_total, max_offdiag_curve;
     const char* role;
 };
 
 int main() {
     const std::vector<Expected> designs = {
-        {199, 139, 11, 170, 2, "generic K=11 control"},
-        {67, 64, 11, 218, 4, "exceptional K=11 control"},
-        {521, 101, 13, 252, 2, "generic K=13 control"},
-        {53, 10, 13, 460, 6, "exceptional K=13 control"},
-        {461, 23, 23, 1190, 6, "K=23 non-uniformity witness"},
+        {199, 139, 11, 170, 2, 570, 4, "generic K=11 control"},
+        {67, 64, 11, 218, 4, 618, 8, "exceptional K=11 control"},
+        {521, 101, 13, 252, 2, 828, 4, "generic K=13 control"},
+        {53, 10, 13, 460, 6, 1036, 12, "exceptional K=13 control"},
+        {461, 23, 23, 1190, 6, 3126, 12, "K=23 non-uniformity witness"},
     };
 
     for (const auto& expected : designs) {
         const Audit a = audit_design(expected.p, expected.a, expected.k);
-        if (a.energy != expected.energy || a.max_multiplicity != expected.max_multiplicity) {
+        if (a.energy != expected.energy ||
+            a.max_multiplicity != expected.max_multiplicity ||
+            a.enlarged_curve_total != expected.enlarged_curve_total ||
+            a.max_offdiag_curve != expected.max_offdiag_curve) {
             std::cerr << "FAIL N=" << a.p << " K=" << a.k
-                      << ": energy=" << a.energy << " maxMultiplicity=" << a.max_multiplicity << "\n";
+                      << ": energy=" << a.energy
+                      << " maxMultiplicity=" << a.max_multiplicity
+                      << " enlargedCurveTotal=" << a.enlarged_curve_total
+                      << " maxOffdiagCurve=" << a.max_offdiag_curve << "\n";
             return 1;
         }
         std::cout << "PASS N=" << a.p
@@ -175,6 +286,8 @@ int main() {
                   << " baseline=" << a.baseline
                   << " excess=" << a.excess
                   << " maxMultiplicity=" << a.max_multiplicity
+                  << " enlargedCurveTotal=" << a.enlarged_curve_total
+                  << " maxOffdiagCurve=" << a.max_offdiag_curve
                   << "\n";
     }
     return 0;
