@@ -1,12 +1,15 @@
 # Research record
 
-`record/` is now a **compact provenance and status layer**, not an archive
-source tree.
+`record/` is a **compact provenance and status layer**, not an archive source
+tree.
 
 Authoritative living files:
 
 - `claim_ledger.md` — repository-wide status of current and historically
   important claims;
+- `research_routes.md` — compact route-level log of substantive research
+  advances, obstructions, and remaining closure conditions; current status
+  still comes from the claim ledger;
 - `retractions.md` — false/superseded statements and their failure mechanisms;
 - `reconstruction.md` — source-snapshot inventory and Git preservation
   boundary;
