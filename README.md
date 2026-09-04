@@ -25,6 +25,7 @@ Bohigas--Giannoni--Schmit (BGS) / GOE local-statistics problem.
 | Collision resultants | **EXACT / FINITE-REGRESSION** | `Res(Phi_K,P)=K^3 M^2`; improved exponential no-collision cutoff |
 | Fibonacci slice | **EXACT / FINITE-CERTIFICATE** | `Res(Phi_K,X^2+3X+1)=F_K^2`; rational excess `32`; 28-digit witness |
 | Direct polynomial-scale mixed energy | **EXACT / FINITE-REGRESSION** | `E_+(c(H\{1}))<34K^(8/3)` for `100<K<p^(3/4)/3` |
+| Split-prime non-forced mass | **EXACT / FINITE-REGRESSION** | explicit `O(K^4)` weighted budget over all `p==1 mod K` for odd prime `K` |
 | Sharp centered mixed energy | **OPEN** | target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` |
 | Off/off elliptic correlation | **DRAFT** | projective/sheaf/isogeny obligations remain |
 | GOE finite diagnostics | **NUMERICAL** | descriptive full-Hermitian diagnostics only |
@@ -101,7 +102,7 @@ A=c(H\{1}),   |A|=K-1,   A=-A.
 For odd prime `K`, Chowla's rational independence of
 
 ```text
-cot(pi*a/K), 1<=a< K/2,
+cot(pi*a/K), 1<=a<K/2,
 ```
 
 turns the characteristic-zero Cayley set into a rational cross-polytope. The
@@ -178,7 +179,7 @@ max multiplicity= 4
 Large exceptional primes therefore need not cause large total collision
 energy.
 
-## New direct polynomial-scale mixed theorem
+## Direct polynomial-scale mixed theorem
 
 The sum fiber of the Cayley image is unexpectedly simple:
 
@@ -210,21 +211,21 @@ A source-exact application of Vyugin--Makarychev Theorem 2 then gives, for
 and `t notin {0,-2}`,
 
 ```text
-r_{A+A}(t) <= 32 K^(2/3).
+r_{A+A}(t)<=32K^(2/3).
 ```
 
-The two exceptional fibers satisfy `r(0)=K-1` and `r(-2)<=K-1`; hence
+The exceptional fibers satisfy `r(0)=K-1` and `r(-2)<=K-1`; hence
 
 ```text
-E_+(A) < 34 K^(8/3),
-sum_t C_H(t)^2 < 34 K^(8/3).
+E_+(A)<34K^(8/3),
+sum_t C_H(t)^2<34K^(8/3).
 ```
 
 After propagating the exact mixed coefficient `2(p-2)` through the fourth-
 moment variance normalization,
 
 ```text
-Var_{t!=0}(2(p-2)C_H(t)) < 136 p K^(8/3).
+Var_{t!=0}(2(p-2)C_H(t))<136pK^(8/3).
 ```
 
 This is a genuine uniform polynomial-scale theorem. It applies to every
@@ -234,24 +235,24 @@ reductions, and does not use the resultant cutoff.
 Full proof and source audit:
 [`mathematics/cayley_direct_energy.md`](mathematics/cayley_direct_energy.md).
 
-## The remaining exponent gap is a centered-energy problem
+## Centered energy: the remaining pointwise exponent gap
 
 For every `A subset F_p`, with unnormalized additive Fourier transform,
 
 ```text
-E_+(A)=|A|^4/p + (1/p) sum_{q!=0}|1_Ahat(q)|^4.
+E_+(A)=|A|^4/p+(1/p)sum_{q!=0}|1_Ahat(q)|^4.
 ```
 
 The density term is unavoidable, so the correct sharp target is
 
 ```text
-E_+(A)=(K-1)^4/p + O(K^(2+o(1))),
+E_+(A)=(K-1)^4/p+O(K^(2+o(1))),
 ```
 
 or equivalently
 
 ```text
-sum_{q!=0}|1_Ahat(q)|^4 << p K^(2+o(1)).
+sum_{q!=0}|1_Ahat(q)|^4 << pK^(2+o(1)).
 ```
 
 For the Cayley image, letting `S=H^perp`, `m=(p-1)/K`, and
@@ -262,7 +263,7 @@ For the Cayley image, letting `S=H^perp`, `m=(p-1)/K`, and
 T_chi(q)=sum_{y!=0,-1} chi((y+1)/y)e_p(2qy).
 ```
 
-The character family has the exact Gram matrix
+The character family has exact Gram matrix
 
 ```text
 sum_q T_chi(q) conjugate(T_eta(q))
@@ -278,11 +279,40 @@ r_{A-A}(t)=#{h in H\{1}:u_t(h) in H\{1}},
 u_t(h)=((2-t)h+t)/(2+t-th).
 ```
 
-These exact structures isolate the next research step, but no verified theorem
-currently removes the remaining `K^(2/3)` exponent loss.
+No verified theorem currently removes the remaining `K^(2/3)` pointwise loss.
+See [`mathematics/cayley_centered_energy.md`](mathematics/cayley_centered_energy.md).
 
-See [`mathematics/cayley_centered_energy.md`](mathematics/cayley_centered_energy.md)
-and [`mathematics/open_questions.md`](mathematics/open_questions.md).
+## Global split-prime collision-mass theorem
+
+For odd prime subgroup order `K`, simultaneous exponent scaling partitions all
+non-forced collision quadruples into exactly
+
+```text
+N_K=K^3-5K^2+6K+1
+```
+
+free Galois orbits. If
+
+```text
+Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)
+```
+
+for split primes `p==1 mod K`, common-root counting inside each normalized
+orbit, together with `Res(Phi_K,P)=K^3M^2` and
+`|Res(Phi_K,P)|<=12^(K-1)`, gives
+
+```text
+sum_{p==1 mod K} Delta_K(p) log p
+ <= (K^3-5K^2+6K+1)((K-1)log12-3logK).
+```
+
+Thus all non-forced collision mass over all split rational primes has an
+explicit deterministic `O(K^4)` logarithmic budget, with immediate tail and
+sparsity corollaries. This is an average/sparsity theorem, not a pointwise
+replacement for the centered-energy target.
+
+Full proof and exact `K=11,13` regression:
+[`mathematics/cayley_resultant_mass_budget.md`](mathematics/cayley_resultant_mass_budget.md).
 
 ## Off/off and microscopic BGS remain separate gaps
 
@@ -290,7 +320,7 @@ The off/off term is organized historically by a genus-one/elliptic pencil. The
 conditional target is
 
 ```text
-O(K^2 p + K^4 sqrt(p) + K^4),
+O(K^2p+K^4sqrt(p)+K^4),
 ```
 
 with intended regime `K=o(p^(1/4))`. A publication-grade proof still needs the
@@ -308,7 +338,7 @@ comparison/local-law mechanism at mean-spacing scale.
 
 | Tool | Role |
 |---|---|
-| Python / SymPy | transparent exact reference, symbolic algebra, resultants, finite certificates, numerical diagnostics |
+| Python / SymPy | transparent exact reference, symbolic algebra, resultants, Galois-orbit/valuation regressions, finite certificates, numerical diagnostics |
 | C++20 | independent exact/exhaustive hot paths, including direct Cayley-energy and 28-digit multiprecision verifiers |
 | Lean 4 | kernel-checked finite pair-key/Cayley/Fibonacci residual statements and historical falsifiers |
 | TeX + CI | publication-facing integration and independent manuscript build |
@@ -322,6 +352,7 @@ python computations/verification/current_regression.py
 python computations/verification/mixed_cayley_energy.py
 python computations/verification/cayley_uniform_cutoff_regression.py
 python computations/verification/cayley_resultant_fibonacci.py
+python computations/verification/cayley_resultant_mass_budget.py
 python computations/verification/twisted_jacobi_regression.py
 python computations/analysis/spectral_diagnostics.py verify
 
@@ -355,7 +386,7 @@ and is intentionally not required on every CI run.
 ├── literature/     theorem-source map and current frontier notes
 ├── manuscript/     active TeX article + synchronized PDF
 ├── mathematics/    authoritative derivations and open obligations
-└── record/         claim/retraction/reconstruction/migration provenance
+└── record/         claim/retraction/research-route/reconstruction/migration provenance
 ```
 
 The current tree contains zero Julia source files. Historical bytes remain in
@@ -367,8 +398,8 @@ to change language percentages.
 1. Read `mathematics/results.md` and `record/claim_ledger.md`.
 2. Run the Python/C++/Lean gates above.
 3. Read `record/retractions.md` before reviving historical proof routes.
-4. For the mixed term, read `cayley_direct_energy.md` and then
-   `cayley_centered_energy.md`.
+4. For the mixed term, read `cayley_direct_energy.md`,
+   `cayley_centered_energy.md`, and `cayley_resultant_mass_budget.md`.
 5. For off/off, start from `mathematics/elliptic_pencil.md` and re-check every
    external theorem hypothesis against the actual family.
 6. Treat microscopic BGS as a separate closure problem after the moment layer.
@@ -377,9 +408,12 @@ to change language percentages.
 
 1. improve the proved mixed bound from `K^(8/3)` toward the centered quadratic
    scale using the exact character-family or torus--unipotent structure;
-2. close the projective/fiber/isogeny/sheaf certificate for the off/off elliptic
+2. combine the global resultant mass budget with a source-exact count of split
+   primes only in ranges where the required varying-modulus uniformity is
+   actually proved;
+3. close the projective/fiber/isogeny/sheaf certificate for the off/off elliptic
    pencil;
-3. formulate and falsify a concrete moment-to-microscopic-local-statistics
+4. formulate and falsify a concrete moment-to-microscopic-local-statistics
    mechanism rather than assuming moments imply BGS.
 
 The literature map is intentionally conservative:
