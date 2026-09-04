@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage[a4paper,margin=27mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -7,9 +7,9 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{xcolor}
+\usepackage{microtype}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!55!black}
-\usepackage{microtype}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -17,535 +17,670 @@
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\Fp}{\mathbf F_p}
+\newcommand{\Q}{\mathbf Q}
 \newcommand{\Status}[1]{\par\smallskip\noindent\textbf{Status: #1.}\ }
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Norm}{\operatorname{N}}
 
 \title{\textbf{Arithmetic Quantum Cat Maps:}\\
-Exact Moment Reductions, Finite Certificates, and the Remaining BGS Obstruction}
+Exact Fourth-Moment Reductions, Square Cyclotomic Resultants,\\
+and the Remaining BGS Frontier}
 \author{Maksim Churilov}
-\date{Research draft --- 3 September 2026}
+\date{Research draft --- 4 September 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We give a conservative reconstruction of a computational research programme on
-arithmetic quantum cat maps. The main verified contribution is an exact
-pair-key reduction for the fourth-moment geometry. It yields the general
-constrained-pair count $(K-1)(K-2)$, isolates a weighted diagonal key,
-decomposes the fourth-moment difference distribution into off/off, mixed, and
-diagonal pieces, and turns the mixed term through a Cayley transform into an
-additive-energy problem. An exhaustive integer matching audit and exact
-cyclotomic resultants give
+We develop an exact finite-field reduction of a fourth-moment problem arising
+in arithmetic quantum cat maps and isolate the arithmetic obstruction that
+remains before any microscopic Bohigas--Giannoni--Schmit (BGS) statement can
+be contemplated.  The pair-key geometry gives an exact constrained-pair count
+$(K-1)(K-2)$ and a corrected fourth-moment difference distribution
 \[
-E_{11}=\{23,67,89\},\qquad
-E_{13}=\{53,79,131,157,313\},
+B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf 1_{t=0}.
 \]
-while the exact design $(p,K)=(461,23)$ has collision energy $1190$ against a
-forced baseline $902$, ruling out a naive uniform-in-$K$ extrapolation.
-The remaining off/off term has a promising elliptic-family organization, but
-the required projective, bad-fiber, sheaf, isogeny and boundary arguments are
-not yet closed; its square-root correlation estimate is therefore a theorem
-draft, not a theorem. Earlier finite Lean certificates, twisted-Jacobi
-regressions, scoped antiunitary symmetry, and corrected finite GOE diagnostics
-are also recorded at their actual evidence levels. No result here proves
-microscopic Bohigas--Giannoni--Schmit (BGS) eigenphase statistics.
+A Cayley transform turns the mixed term into the nonzero additive-difference
+energy of a Mobius image of a multiplicative subgroup.  For odd prime subgroup
+order $K$, Chowla's rational independence theorem for cotangents gives a
+uniform characteristic-zero classification of all equal-difference
+collisions.  We then prove a new structural identity for every cleared
+collision polynomial $P$:
+\[
+\Res(\Phi_K,P)=K^3M^2,\qquad M\in\mathbf Z.
+\]
+This improves the elementary no-collision cutoff by a square root.  An explicit
+collision slice satisfies
+\[
+\Res(\Phi_K,X^2+3X+1)=F_K^2,
+\]
+so the square factor can grow exponentially and a polynomial bound for the
+whole resultant norm is impossible.  Nevertheless this exceptional slice is
+arithmetically sparse: for
+$S_N=\{\pm L_n/F_n:1\le n\le N\}$ its exact nonzero difference energy is
+\[
+E^*(S_N)=2N(4N-3)+32\qquad(N\ge3).
+\]
+A complete exact certificate at the 28-digit prime
+$p=F_{131}=1066340417491710595814572169$ reproduces the same excess $32$ in the
+finite Cayley set.  Thus the correct growing-$K$ mixed-term target is a uniform
+\emph{energy} bound, not elimination of every exceptional collision.  The
+off/off elliptic-family estimate remains a theorem draft, and no result in
+this paper proves microscopic BGS/GOE eigenphase statistics.
 \end{abstract}
 
-\section{Purpose, conventions, and evidence levels}
+\section{Scope and evidence discipline}
 
-The historical workspace mixed exact finite identities, useful numerical
-experiments, unfinished proof routes, and several statements labelled
-``proved'' too early. The present manuscript is the publication-facing
-description of the part that survives an adversarial reconstruction audit.
-
-Throughout, $p$ is an odd prime and $H\leq\Fp^\times$ is a multiplicative
-subgroup of order $K$. Division means multiplication by the inverse in
-$\Fp$. We use the following evidence levels:
+Throughout, $p$ is an odd prime and $H\le \Fp^\times$ is a multiplicative
+subgroup of order $K$.  Division is in $\Fp$.  We distinguish:
 \begin{itemize}
-\item \textbf{Exact}: a current algebraic derivation with stated hypotheses.
-\item \textbf{Finite certificate}: an exhaustive or kernel-checked proposition
-      at explicit finite parameters.
-\item \textbf{Finite regression}: an implementation/reference agreement at
-      explicit finite parameters.
-\item \textbf{Numerical}: descriptive floating-point evidence only.
-\item \textbf{Draft}: a proof architecture with named unresolved obligations.
-\item \textbf{Open}: the stated closure condition has not been achieved.
+\item \textbf{Exact}: a current proof with explicit hypotheses;
+\item \textbf{Finite certificate}: an exhaustive or kernel-checked statement
+      at explicit finite parameters;
+\item \textbf{Finite regression}: an implementation check that supports, but
+      does not prove, a universal statement;
+\item \textbf{Numerical}: descriptive floating-point evidence only;
+\item \textbf{Draft/Open}: a named closure condition remains.
 \end{itemize}
 
-The distinction between moment information and microscopic spectral
-statistics is load-bearing. Established cat-map literature includes
-Hecke-eigenfunction results, matrix-element moments and quantum ergodicity
-\cite{KR2005,KRR2007,KORS2025,BS2026}, as well as higher-dimensional
-eigenfunction delocalization/semiclassical-measure restrictions
-\cite{DJ2024}. These do not by themselves provide a microscopic eigenphase
-local law.
+The distinction between moment information and microscopic spectral statistics
+is essential.  Arithmetic cat-map literature contains strong matrix-element,
+eigenfunction and quantum-ergodicity results
+\cite{KR2005,KRR2007,DJ2024,KORS2025,BS2026}, but these are not interchangeable
+with a local eigenphase law.  Conversely, rigorous BGS-type results are known
+for special model classes such as mixing quantum graphs under their own
+large-graph hypotheses \cite{PW2014,PW2015}; they do not transfer to the
+arithmetic family treated here without a new argument.
 
 \section{Exact pair-key geometry}
 
 For $x,y\in\Fp\setminus\{0,1\}$ define
 \begin{equation}\label{eq:keydef}
 u=\frac{x}{y},\qquad
-v=\frac{x-1}{y-1},\qquad
-d=x-y.
+v=\frac{x-1}{y-1},\qquad d=x-y.
 \end{equation}
 
 \begin{proposition}[Off-diagonal pair-key bijection]\label{prop:key}
-If $x\neq y$, then
-$u,v\in\Fp^\times\setminus\{1\}$, $u\neq v$, and
+If $x\ne y$, then $u,v\in\Fp^\times\setminus\{1\}$, $u\ne v$, and
 \begin{equation}\label{eq:inverse}
 y=\frac{1-v}{u-v},\qquad
 x=\frac{u(1-v)}{u-v},\qquad
 d=\frac{(u-1)(v-1)}{v-u}.
 \end{equation}
-Conversely every pair
-$u,v\in\Fp^\times\setminus\{1\}$ with $u\neq v$ arises from exactly one
-off-diagonal pair $(x,y)$.
+Conversely every such ordered pair $(u,v)$ recovers a unique admissible
+off-diagonal $(x,y)$.  The diagonal $x=y$ collapses to $(u,v,d)=(1,1,0)$ with
+multiplicity $p-2$.
 \end{proposition}
 
 \begin{proof}
-From $x=uy$ and $x-1=v(y-1)$ we obtain
-$(u-v)y=1-v$, which gives the first two formulas in
-\eqref{eq:inverse}. Then
-\[
-x-y=(u-1)y
-=\frac{(u-1)(1-v)}{u-v}
-=\frac{(u-1)(v-1)}{v-u}.
-\]
-The inverse formulas prove both injectivity and surjectivity.
+From $x=uy$ and $x-1=v(y-1)$,
+$(u-v)y=1-v$, which gives the inverse formulas and then the formula for $d$.
+The diagonal statement is immediate.
 \end{proof}
 
-The diagonal is exceptional: all
-$p-2$ pairs $x=y\in\Fp\setminus\{0,1\}$ collapse to
-\[
-(u,v,d)=(1,1,0)
-\]
-with multiplicity $p-2$. This multiplicity is responsible for several
-historical factor errors.
-
 \begin{corollary}[Exact constrained-pair count]\label{cor:k2}
-Suppose the two pair constraints require $u,v\in H$. The number of admissible
-off-diagonal ordered pairs is
+If the two constraints are $u,v\in H$, the number of admissible off-diagonal
+ordered pairs is
 \[
 (K-1)(K-2).
 \]
 \end{corollary}
 
 \begin{proof}
-By Proposition~\ref{prop:key}, constrained off-diagonal pairs are in bijection
-with ordered pairs $(u,v)\in(H\setminus\{1\})^2$ satisfying $u\neq v$. There
-are $(K-1)(K-2)$ of them.
+Choose an ordered pair of distinct elements of $H\setminus\{1\}$ and apply
+Proposition~\ref{prop:key}.
 \end{proof}
 
-\Status{Exact.}
-A Lean certificate independently checks the parametrization and count at
-$(p,K)=(53,13)$; the finite certificate is a regression for, not the source
-of, the general proof.
+\Status{Exact.}  Independent Python/C++ checks and a Lean certificate at
+$(p,K)=(53,13)$ guard the implementation, but are not the source of the general
+proof.
 
-\section{Fourth-moment coupling and the exact distribution}
+\section{Fourth-moment coupling and finite Fourier identities}
 
-Give each collapsed key $r=(u_r,v_r,d_r)$ a multiplicity $n_r$, equal to one
-off the diagonal and $p-2$ at $(1,1,0)$. Define
+Give each collapsed key $r=(u_r,v_r,d_r)$ multiplicity $n_r$, equal to one off
+the diagonal and $p-2$ at $(1,1,0)$.  Define
 \begin{equation}\label{eq:Bdef}
 B(t)=\sum_{r,s}n_rn_s\,
-{\bf 1}_H(u_ru_s)\,{\bf 1}_H(v_rv_s)\,{\bf 1}_{d_r+d_s=t}.
+\mathbf 1_H(u_ru_s)\mathbf 1_H(v_rv_s)\mathbf 1_{d_r+d_s=t}.
 \end{equation}
-Let $O(t)$ be the off/off contribution and set
+Let $O(t)$ be the off/off contribution and
 \[
 C_H(t)=\#\left\{(u,v)\in(H\setminus\{1\})^2:
-u\neq v,\ 
-\frac{(u-1)(v-1)}{v-u}=t\right\}.
+ u\ne v,\ \frac{(u-1)(v-1)}{v-u}=t\right\}.
 \]
-The exact diagonal bookkeeping is
+Then the diagonal bookkeeping is exactly
 \begin{equation}\label{eq:Bdecomp}
-B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2{\bf 1}_{t=0}.
+B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf 1_{t=0}.
 \end{equation}
-The factor two is forced because diagonal/off and off/diagonal are distinct
+The coefficient $2$ is load-bearing: diagonal/off and off/diagonal are distinct
 ordered classes.
 
 \begin{proposition}[Exact total coupled count]\label{prop:v4}
-For the corrected pair-key model,
-\begin{equation}\label{eq:v4}
+\[
 |V_4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K.
-\end{equation}
+\]
 \end{proposition}
 
-\Status{Exact, with independent finite checks.}
-The maintained Python and C++ implementations reproduce, among others,
-\[
-|V_4|=48621\quad(p,K)=(23,11),
-\qquad
-|V_4|=423879\quad(p,K)=(53,13),
-\]
-and the Lean fourth-moment certificate independently checks the second design.
-
-\section{Character orthogonality and exact Fourier moments}
-
-Let
-\[
-S=H^\perp
-\]
-be the multiplicative-character annihilator of $H$. Then
-\[
-m=|S|=\frac{p-1}{K}.
-\]
-For the maintained twisted-Jacobi convention,
+Let $S=H^\perp$ be the multiplicative-character annihilator, so
+$m=|S|=(p-1)/K$.  In the maintained twisted-Jacobi convention,
 \begin{equation}\label{eq:fourier}
-\sum_{\chi,\psi\in S}|J(\chi,\psi;q)|^4
-=m^2\Sigma_4(q),
+\sum_{\chi,\psi\in S}|J(\chi,\psi;q)|^4=m^2\Sigma_4(q),
 \qquad
-\Sigma_4(q)=\sum_{t\in\Fp}B(t)e_p(qt),
+\Sigma_4(q)=\sum_{t\in\Fp}B(t)e_p(qt).
 \end{equation}
-where $e_p(z)=\exp(2\pi iz/p)$. Reversing the Fourier sign only conjugates the
-transform and does not alter the mean/variance statements below.
-
-Write
-\[
-V=\sum_tB(t),\qquad Z=B(0).
-\]
-For $q$ uniformly distributed over $\Fp^\times$,
-\begin{equation}\label{eq:mean}
-\mathbb E_{q\neq0}\Sigma_4(q)=\frac{pZ-V}{p-1}.
+Writing $V=\sum_tB(t)$ and $Z=B(0)$,
+\begin{equation}\label{eq:meanvar}
+\mathbb E_{q\ne0}\Sigma_4(q)=\frac{pZ-V}{p-1},
+\qquad
+\operatorname{Var}_{q\ne0}\Sigma_4(q)
+=p\operatorname{Var}_{t\ne0}B(t).
 \end{equation}
-Moreover,
-\begin{equation}\label{eq:variance}
-\operatorname{Var}_{q\neq0}\Sigma_4(q)
-=p\,\operatorname{Var}_{t\neq0}B(t).
-\end{equation}
+These follow directly from finite Fourier orthogonality and Parseval; no
+independence heuristic enters.
 
-\begin{proof}
-For $t\in\Fp$,
-\[
-\sum_{q\neq0}e_p(qt)=
-\begin{cases}
-p-1,&t=0,\\
--1,&t\neq0.
-\end{cases}
-\]
-This gives \eqref{eq:mean}. Applying finite Parseval to
-$\Sigma_4(q)=\widehat B(q)$ and subtracting the nonzero-frequency mean gives
-\eqref{eq:variance}.
-\end{proof}
+\section{Cayley transform and additive energy}
 
-Thus the fluctuation problem is a concrete finite $L^2$ problem for $B$, not
-a probabilistic independence heuristic.
-
-\section{The mixed term as Cayley additive energy}
-
-Introduce
+Put
 \[
 c(h)=\frac{h+1}{h-1},\qquad h\in H\setminus\{1\}.
 \]
-For $u\neq v$,
-\[
-c(u)-c(v)=\frac{2(v-u)}{(u-1)(v-1)},
-\]
-so
+For $u\ne v$,
 \begin{equation}\label{eq:cayley}
-d(u,v)=\frac{2}{c(u)-c(v)}.
+\frac{(u-1)(v-1)}{v-u}=\frac{2}{c(u)-c(v)}.
 \end{equation}
-Let $A=c(H\setminus\{1\})$. Since $x\mapsto2/x$ permutes $\Fp^\times$, the
-nonzero multiplicities of $C_H$ are the nonzero difference multiplicities of
-$A$. Consequently
+Thus for $A=c(H\setminus\{1\})$ the nonzero multiplicities of $C_H$ are the
+nonzero difference multiplicities of $A$, up to the permutation $x\mapsto2/x$.
+Consequently
 \begin{equation}\label{eq:energy}
-\sum_tC_H(t)^2=E_+(A)-|A|^2,
-\qquad E_+(A)=\sum_xr_{A-A}(x)^2.
+\sum_t C_H(t)^2=E_+(A)-|A|^2,
+\qquad E_+(A)=\sum_x r_{A-A}(x)^2.
 \end{equation}
-
-Also $c(h^{-1})=-c(h)$, so $A=-A$ and $0\notin A$. The forced
-central-symmetry collision baseline used by the finite verifier is
+Since $c(h^{-1})=-c(h)$, $A=-A$ and $0\notin A$.  With $n=|A|=K-1$, identity
+and inversion-swap alone force the nonzero-energy baseline
 \begin{equation}\label{eq:baseline}
-(K-1)(2K-5).
+n(2n-3)=(K-1)(2K-5).
 \end{equation}
 
-The same representation count has an exact PGL$_2$ intersection
-interpretation. This structural formulation replaces the historical
-M\"obius-fiber argument, whose $d=0$ fiber is degenerate.
-
-\section{Exact matching audit and fixed-\texorpdfstring{$K$}{K} exceptional primes}
-
-Clearing a collision between two Cayley differences and matching the six terms
-gives $6!=720$ integer linear systems.
-
-\begin{proposition}[Computer-assisted matching classification]\label{prop:matching}
-The exact verifier classifies the $720$ systems as
+A separate exact matching audit of all $6!=720$ integer systems obtained by
+clearing and matching Cayley collisions gives ranks
 \[
-30\text{ of rank }2,\qquad
-240\text{ of rank }3,\qquad
-450\text{ of rank }4
+30\ (\text{rank }2),\qquad240\ (\text{rank }3),\qquad450\ (\text{rank }4),
 \]
-over $\mathbb Q$. The gcds of maximal nonzero minors show that an additional
-rank drop can occur only in characteristic $2$. The admissible
-positive-dimensional low-rank systems are the identity and inversion-swap
-symmetries; the remaining low-rank kernels force forbidden zero/diagonal
-configurations.
-\end{proposition}
-
-\Status{Exact exhaustive finite algebra.}
-The integer matrices are recomputed in CI.
-
-For a specified odd prime $K$, a normalized non-forced collision produces a
-cyclotomic algebraic integer. If it is nonzero, a reduction collision can
-occur only at rational primes dividing its norm. The current repository
-performs the complete normalized nonvanishing/resultant enumeration for
-$K=11$ and $K=13$.
-
-\begin{theorem}[Audited exceptional sets]\label{thm:exceptions}
-The exact computer-assisted resultant computation gives
-\[
+and an extra rank drop can occur only in characteristic $2$.  Complete
+fixed-$K$ cyclotomic enumeration currently gives
+\begin{equation}\label{eq:fixed-exceptions}
 E_{11}=\{23,67,89\},\qquad
 E_{13}=\{53,79,131,157,313\}.
+\end{equation}
+These are exact computer-assisted finite statements, not a growing-$K$
+theorem.
+
+\section{Prime-order characteristic-zero rigidity}
+
+Let $K$ now be an odd prime and $\zeta=e^{2\pi i/K}$.  For
+$1\le j\le K-1$,
+\begin{equation}\label{eq:cot}
+c(\zeta^j)=-i\cot\frac{\pi j}{K}.
+\end{equation}
+Chowla proved that
+\[
+\cot\frac{\pi a}{K},\qquad1\le a\le\frac{K-1}{2},
 \]
-For $K=11$ the audit checks $793$ normalized non-forced quadruples and finds
-$8$ distinct nonzero norms; for $K=13$ it checks $1431$ quadruples and finds
-$14$ distinct nonzero norms.
+are linearly independent over $\Q$ \cite{Chowla1970}; Wang states this prime
+case explicitly and extends it \cite{Wang1982}.
+
+\begin{lemma}[Cross-polytope equal differences]\label{lem:crosspoly}
+Let $x,y,u,v$ be vertices of $\{\pm e_1,\ldots,\pm e_m\}$ with $x\ne y$ and
+$u\ne v$.  If $x-y=u-v$, then either $(u,v)=(x,y)$ or
+$(u,v)=(-y,-x)$.
+\end{lemma}
+
+\begin{proof}
+The equality is $x+v=u+y$.  If the common sum vanishes, then
+$v=-x$ and $u=-y$.  Otherwise a nonzero sum of two signed basis vectors
+uniquely determines its unordered pair of summands.  The alternative pairing
+would force $x=y$, excluded.
+\end{proof}
+
+\begin{theorem}[Prime-order collision rigidity]\label{thm:rigidity}
+Every characteristic-zero equal-difference collision in
+$\{c(\zeta^j):1\le j<K\}$ is either identity or central inversion-swap.
 \end{theorem}
 
-\Status{Finite/computer-assisted exact certificate for the two stated values of $K$.}
-Representative finite reductions test both directions:
-\[
-\begin{array}{c|c|c|c}
-(p,K)&\text{predicted exceptional?}&
-\sum_tC_H(t)^2-\text{baseline}&\text{result}\\\hline
-(53,13)&\text{yes}&208&\text{excess observed}\\
-(67,11)&\text{yes}&48&\text{excess observed}\\
-(199,11)&\text{no}&0&\text{forced only}\\
-(521,13)&\text{no}&0&\text{forced only}.
-\end{array}
-\]
+\begin{proof}
+Use \eqref{eq:cot}, replace each cotangent with the corresponding signed basis
+vector via Chowla's rational independence, and apply
+Lemma~\ref{lem:crosspoly}.
+\end{proof}
 
-\subsection{Non-uniformity witness}
+\section{Square cyclotomic resultants}
 
-At $(p,K)=(461,23)$,
+For nonzero residues $i,j,r,s\pmod K$, with $i\ne j$ and $r\ne s$, choose
+integer lifts and define the cleared collision polynomial
+\begin{align}\label{eq:Pdef}
+P(X)={}&X^{r+s+i}-X^{r+s+j}-X^{r+i+j}+2X^{r+j}-X^r\\
+&+X^{s+i+j}-2X^{s+i}+X^s+X^i-X^j.\nonumber
+\end{align}
+Direct denominator clearing gives
+\begin{equation}\label{eq:clear}
+2P(X)=\bigl(c(X^r)-c(X^s)-c(X^i)+c(X^j)\bigr)
+\prod_{a\in\{r,s,i,j\}}(X^a-1).
+\end{equation}
+The coefficient $\ell^1$ norm satisfies $\|P\|_1\le12$.
+
+\begin{lemma}[Cubic zero and reciprocity]\label{lem:reciprocity}
+Writing $T=i+j+r+s$, one has
 \[
-\sum_t C_H(t)^2=1190,
+P(X)=(X-1)^3Q(X),\qquad Q\in\mathbf Z[X],
 \]
-while \eqref{eq:baseline} is
+and
 \[
-22(46-5)=902.
+Q(X^{-1})=X^{3-T}Q(X).
 \]
-The exact excess is $288$. This does not contradict the fixed-$K$ mechanism;
-it blocks a silent extrapolation from $K=11,13$ to a useful
-uniform-in-growing-$K$ formula.
+\end{lemma}
+
+\begin{proof}
+In \eqref{eq:clear}, cancel the denominator of each Cayley term separately;
+every summand retains three factors $X^a-1$, proving the cubic zero.
+Furthermore $c(X^{-a})=-c(X^a)$ and
+$X^{-a}-1=-(X^a-1)/X^a$.  The four denominator factors contribute positive
+sign and total power $X^{-T}$, while the Cayley-difference contributes one
+minus sign.  Hence
+$P(X^{-1})=-X^{-T}P(X)$, which gives the formula for $Q$.
+\end{proof}
+
+\begin{theorem}[Square-resultant theorem]\label{thm:square-resultant}
+For every odd prime $K$ and every admissible collision quadruple,
+\begin{equation}\label{eq:square-resultant}
+\Res(\Phi_K,P)=K^3M^2
+\end{equation}
+for some $M\in\mathbf Z$.  For a non-forced characteristic-zero collision,
+$M\ne0$.
+\end{theorem}
+
+\begin{proof}
+Let $L=\Q(\zeta)$ and $L^+$ be its maximal real subfield.  Since $2$ is
+invertible modulo $K$, choose $m$ with
+$2m\equiv3-T\pmod K$ and put
+$\beta=\zeta^mQ(\zeta)$.  By
+Lemma~\ref{lem:reciprocity},
+\[
+\overline\beta=\zeta^{-m}Q(\zeta^{-1})
+=\zeta^{-m+3-T}Q(\zeta)=\beta.
+\]
+Thus $\beta$ is an algebraic integer in $L^+$.  Multiplication by $\zeta^m$
+does not change the norm, so
+\[
+\Norm_{L/\Q}(Q(\zeta))
+=\Norm_{L^+/\Q}(\beta)^2=M^2.
+\]
+Also
+$\Norm_{L/\Q}(\zeta-1)=\Phi_K(1)=K$.  Taking norms of
+$P(\zeta)=(\zeta-1)^3Q(\zeta)$ proves \eqref{eq:square-resultant}.
+The non-forced case has $P(\zeta)\ne0$ by
+Theorem~\ref{thm:rigidity}.
+\end{proof}
+
+\begin{corollary}[Improved no-collision cutoff]\label{cor:cutoff}
+Suppose $K\mid p-1$.  If a non-forced finite-field collision exists, then
+\begin{equation}\label{eq:cutoff}
+K^3p^2\le 12^{K-1}.
+\end{equation}
+Consequently $K^3p^2>12^{K-1}$ implies the exact baseline
+\eqref{eq:baseline}.
+\end{corollary}
+
+\begin{proof}
+A finite-field collision makes $P$ and $\Phi_K$ share a root modulo $p$, so
+$p\mid\Res(\Phi_K,P)$.  Since $K\mid p-1$, $p\ne K$.  Equation
+\eqref{eq:square-resultant} then gives $p\mid M$, hence
+$K^3p^2\le|\Res(\Phi_K,P)|$.  On the other hand
+$|P(\zeta^a)|\le\|P\|_1\le12$ for all $a$, giving the upper bound.
+\end{proof}
+
+The cutoff is stronger than the elementary $p>12^{K-1}$ bound, but it remains
+exponential in $K$.  The next section shows that this is not merely an artifact
+of a crude norm estimate.
+
+\section{An explicit Fibonacci collision slice}
+
+Consider
+\begin{equation}\label{eq:fibcollision}
+c(h^2)-c(h)=c(h)-c(h^{-1}).
+\end{equation}
+Since $c(h^{-1})=-c(h)$,
+\[
+c(h^2)-3c(h)
+=-\frac{2(h^2+3h+1)}{(h-1)(h+1)}.
+\]
+For odd-order $h\ne1$ we also have $h\ne-1$, so
+\eqref{eq:fibcollision} is equivalent to
+\begin{equation}\label{eq:q}
+q(h)=h^2+3h+1=0.
+\end{equation}
+
+\begin{theorem}[Fibonacci resultant identity]\label{thm:fibres}
+For every odd prime $K$,
+\begin{equation}\label{eq:fibres}
+\Res(\Phi_K(X),X^2+3X+1)=F_K^2.
+\end{equation}
+For the corresponding cleared Cayley collision polynomial, the full resultant
+is $K^3F_K^2$.
+\end{theorem}
+
+\begin{proof}
+Let $\alpha,\beta$ be the roots of $X^2+3X+1$, so
+$\alpha\beta=1$, $\alpha+\beta=-3$, and
+$\Phi_K(X)=(X^K-1)/(X-1)$.  Therefore
+\[
+\Res(\Phi_K,q)
+=\frac{(\alpha^K-1)(\beta^K-1)}{(\alpha-1)(\beta-1)}
+=\frac{2-(\alpha^K+\beta^K)}5.
+\]
+With $\varphi=(1+\sqrt5)/2$, the roots are $-\varphi^2$ and
+$-\varphi^{-2}$.  Since $K$ is odd,
+$\alpha^K+\beta^K=-L_{2K}$, and the standard identity
+$L_{2K}=5F_K^2-2$ for odd $K$ gives \eqref{eq:fibres}.  Comparing with
+Theorem~\ref{thm:square-resultant}, or directly taking the cleared denominator
+norm, gives $K^3F_K^2$.
+\end{proof}
+
+Because $F_K\sim\varphi^K/\sqrt5$, Theorem~\ref{thm:fibres} proves that no
+bound $|M|\le K^C$ can hold for all collision resultants.  Thus any useful
+polynomial-scale theorem must exploit the arithmetic of eligible prime divisors
+or directly bound total energy rather than total resultant size.
+
+If $p$ is prime and $K\mid p-1$, then \eqref{eq:fibcollision} occurs over
+$\Fp$ if and only if $p\mid F_K$.  Indeed $\Phi_K$ splits completely over
+$\Fp$, and \eqref{eq:fibres} is exactly the common-root criterion.
+
+\section{Fibonacci/Lucas ratios form an almost-Sidon set}
+
+Assume $q(h)=0$ and put $t=c(h)$.  Substitution
+$h=(t+1)/(t-1)$ into $q(h)=0$ gives
+\begin{equation}\label{eq:tquad}
+5t^2=1.
+\end{equation}
+A direct Binet calculation, equivalently an induction using the standard
+Fibonacci/Lucas recurrences, gives
+\begin{equation}\label{eq:ratio}
+F_n c(h^n)=L_n c(h),\qquad n\ge1.
+\end{equation}
+Thus the characteristic-zero model for half of the centrally symmetric Cayley
+set is
+\[
+x_n=\frac{L_n}{F_n},\qquad
+S_N=\{\pm x_1,\ldots,\pm x_N\}.
+\]
+Two identities will be used repeatedly:
+\begin{equation}\label{eq:sumdiff}
+x_m+x_n=\frac{2F_{m+n}}{F_mF_n},
+\qquad
+|x_m-x_n|=\frac{2F_{|m-n|}}{F_mF_n}.
+\end{equation}
+
+Carmichael's primitive-divisor theorem implies that $F_j$ has a prime divisor
+not dividing any earlier Fibonacci number for every $j>12$
+\cite{Carmichael1913,Yabuta2001}.  We use this only as a divisibility
+separation principle; the finite range through $12$ is checked exactly.
+
+\begin{theorem}[Exact almost-Sidon energy]\label{thm:almost-sidon}
+For every $N\ge3$, if
+\[
+E^*(S_N)=\sum_{d\ne0}r_{S_N-S_N}(d)^2,
+\]
+then
+\begin{equation}\label{eq:almost-sidon}
+E^*(S_N)=2N(4N-3)+32.
+\end{equation}
+The excess over the centrally symmetric forced baseline is exactly $32$,
+independent of $N$.
+\end{theorem}
+
+\begin{proof}
+First classify relations between positive $x_n$.
+
+For equal absolute differences, suppose $m>n$, $r>s$ and
+\[
+\frac{F_{m-n}}{F_mF_n}=\frac{F_{r-s}}{F_rF_s}.
+\]
+If, say, $m>r$ and $m>12$, a primitive divisor of $F_m$ divides the right
+cross-multiplied side but none of $F_{m-n},F_r,F_s$, a contradiction.  Thus
+beyond the bounded range the upper indices agree.  Then
+$F_{m-n}/F_n$ is strictly decreasing in $n$, so the lower indices agree.
+
+For equal sums, if $m+n>r+s$ and $m+n>12$, a primitive divisor of
+$F_{m+n}$ cannot divide any of $F_{r+s},F_m,F_n$, again a contradiction.
+Thus the index sums agree.  With $m+n=r+s=T$, equality reduces to
+$F_mF_n=F_rF_s$.  The identity
+\[
+5F_mF_n=L_T-(-1)^nL_{m-n}
+\]
+then forces the unordered pairs $\{m,n\}$ and $\{r,s\}$ to agree.
+
+Finally $1\le x_n\le3$.  A positive sum can equal an absolute difference only
+at the endpoint value $2$, giving $x_1+x_1=x_2-x_1$.  The remaining bounded
+relations are exactly those involving
+$x_1=1,x_2=3,x_3=2$:
+\[
+|x_3-x_1|=|x_2-x_3|=1,
+\quad x_1+x_1=x_2-x_1=2,
+\quad x_1+x_2=x_3+x_3=4.
+\]
+The finite residual statement is independently kernel-checked in Lean for
+indices through $12$.
+
+For a centrally symmetric set of size $2N$, forced inversion pairing alone
+contributes $2N(4N-3)$.  The two oriented bins $\pm1$ have multiplicity $4$
+rather than two independent multiplicity-$2$ bins, contributing excess $8$
+each.  The four bins $\pm2,\pm4$ have multiplicity $3$ rather than a
+multiplicity-$1$ and a multiplicity-$2$ bin, contributing excess $4$ each.
+The total excess is $2\cdot8+4\cdot4=32$.
+\end{proof}
+
+\begin{remark}
+The broad theorem of Bilu--Hanrot--Voutier \cite{BHV2001} supplies primitive
+divisors for much more general Lucas/Lehmer sequences for sufficiently large
+index.  For Theorem~\ref{thm:almost-sidon}, the classical real-discriminant
+Fibonacci theorem of Carmichael already suffices.
+\end{remark}
+
+\section{A 28-digit exact finite-field certificate}
+
+Set
+\[
+K=131,\qquad
+p=F_{131}=1066340417491710595814572169.
+\]
+The repository proves the primality of $p$ by the Lucas criterion using the
+complete factorization
+\[
+p-1=2^3\cdot11\cdot89\cdot131\cdot199\cdot521\cdot2081\cdot9901
+\cdot19801\cdot24571
+\]
+and base $3$: it checks
+\[
+3^{p-1}\equiv1\pmod p,
+\qquad
+\gcd\bigl(3^{(p-1)/q}-1,p\bigr)=1
+\]
+for every prime $q$ in this factorization.
+
+The explicit integer
+\[
+h=188706367382658195937453923
+\]
+satisfies
+\[
+h^2+3h+1\equiv0\pmod p,
+\qquad h^{131}\equiv1\pmod p,
+\qquad h\ne1.
+\]
+Since $131$ is prime, $h$ has exact order $131$.  Exact dictionary-based
+arbitrary-precision computation gives
+\begin{equation}\label{eq:giant}
+\sum_t C_H(t)^2=33442,
+\qquad
+(K-1)(2K-5)=33410,
+\qquad
+\text{excess}=32.
+\end{equation}
+The maximum nonzero difference multiplicity is $4$.  The complete
+multiplicity histogram is
+\[
+1^{\times126},\qquad2^{\times8312},\qquad3^{\times4},\qquad4^{\times2}.
+\]
+Independent Python arbitrary-precision and C++20 Boost.Multiprecision
+implementations verify these numbers and the primality certificate.  The
+finite low-index relation classification in
+Theorem~\ref{thm:almost-sidon} is separately checked by Lean 4.
+
+\Status{Finite certificate.}  This example is deliberately not extrapolated to
+an infinite sequence of Fibonacci primes.  Its role is to demonstrate that
+very large exceptional split primes can coexist with only constant excess
+energy.
+
+For comparison, the older independent design $(p,K)=(461,23)$ has
+\[
+\sum_tC_H(t)^2=1190,\qquad\text{baseline}=902,\qquad\text{excess}=288.
+\]
+Thus exceptional reductions can have different collision geometry.
+
+\section{The mixed-term target after the Fibonacci obstruction}
+
+The preceding results change the natural closure condition.  A theorem saying
+``all non-forced collisions disappear once $p$ is polynomially large in $K$''
+is neither the only nor the most relevant target.  Equation
+\eqref{eq:Bdecomp} shows that what ultimately matters is the $L^2$ contribution
+of $C_H$, hence the energy \eqref{eq:energy}.
+
+The next quantitative problem is therefore to prove a uniform or sufficiently
+averaged bound for
+\[
+\sum_t C_H(t)^2
+\]
+for $A=c(H\setminus\{1\})$ in a polynomial-scale range of $K$.  Candidate
+routes include incidence/sum-product estimates for Mobius images of
+multiplicative subgroups, arithmetic classification of high-multiplicity
+differences, and structured-plus-pseudorandom decompositions.  Before importing
+any generic energy theorem, the required exponent must be propagated through
+\eqref{eq:Bdecomp} and \eqref{eq:meanvar}; a numerically attractive bound that
+is too weak after the $(p-2)$ factor is not sufficient.
+
+\Status{Open.}  The new square-resultant and Fibonacci theorems remove one
+incorrect proof target and replace it with a sharper quantitative one; they do
+not themselves close the mixed contribution in the desired moment regime.
 
 \section{The off/off elliptic route}
 
-After the mixed term is separated, the unresolved contribution is the
-centered energy of $O(t)$. Historical symbolic computations organize the
-relevant fibers as a one-parameter genus-one family and suggest a
-quartic/Weierstrass model, a nonconstant rational $j$-map, visible bad fibers,
-and same-$j$ parameter symmetries.
+After separating the mixed term, the unresolved contribution is the centered
+energy of $O(t)$.  Historical symbolic work organizes the relevant fibers as a
+one-parameter genus-one family and suggests a quartic/Weierstrass model, a
+nonconstant rational $j$-map, visible bad fibers and same-$j$ parameter
+symmetries.
 
-\Status{Theorem draft; historical symbolic structure is not independently regenerated by current CI.}
-A publication-grade proof must re-establish or certify the structural
-calculation and then verify:
+\Status{Theorem draft.}  A publication-grade proof must re-establish or certify
+all of the following for the actual family:
 \begin{enumerate}
-\item a smooth projective model over an explicit open base;
-\item the complete discriminant and bad-fiber locus, including characteristic exceptions;
-\item the affine/projective boundary correction;
-\item purity, lissity, geometric irreducibility, and uniform conductor/ramification control for the actual $R^1$ sheaf;
-\item every relevant geometric isomorphism and twist between parameter fibers;
-\item separable and inseparable isogeny exclusions or exceptional strata;
-\item the exact hypotheses of the chosen trace-sheaf correlation theorem.
+\item a smooth projective model on an explicit open base;
+\item the complete discriminant/bad-fiber locus, including characteristic
+      exceptions;
+\item affine/projective boundary corrections;
+\item purity, lissity, geometric irreducibility, and uniform
+      conductor/ramification control of the relevant $R^1$ sheaf;
+\item all geometric isomorphisms and twists between parameter fibers;
+\item separable and inseparable isogeny exclusions or explicit exceptional
+      strata;
+\item the exact hypotheses of the trace-sheaf correlation theorem used.
 \end{enumerate}
 
 Michel-type family arguments \cite{Michel1995}, quantitative sheaf theory
 \cite{SFFK2023}, Tate/isogeny technology \cite{Zarhin2013}, and the modern
-joint-family example of Grove--Saad \cite{GroveSaad2025} are relevant tools.
-None is a plug-in proof for this pencil.
+joint-family example of Grove--Saad \cite{GroveSaad2025} are relevant tools,
+but none is a plug-in proof for this pencil.
 
-Conditional on the required square-root correlation estimate with uniform
-constants, the existing combinatorics lead to
-\begin{equation}\label{eq:target}
+Conditional on the required square-root correlation with uniform constants,
+the existing combinatorics suggest
+\begin{equation}\label{eq:offoff-target}
 O\!\left(K^2p+K^4p^{1/2}+K^4\right),
 \end{equation}
-with the intended restricted regime $K=o(p^{1/4})$. Equation \eqref{eq:target}
-remains a draft conclusion.
+with intended regime $K=o(p^{1/4})$.  Equation
+\eqref{eq:offoff-target} remains a draft conclusion.
 
-\section{Earlier results retained at their safe scope}
+\section{Finite spectral diagnostics and the microscopic BGS gap}
 
-\subsection{Finite torus geometry at \texorpdfstring{$p=199$}{p=199}}
-
-The active Lean module \texttt{TorusLevelSets.lean} verifies for
-\[
-Q(a,b)=a^2-ab-b^2\pmod{199}
-\]
-and the action of $A^T=\left(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\right)$:
-the generator has order $11$; each nonzero level contains $198$ nonzero
-points; the zero cone minus the origin has $396$ points; each nonzero level
-has $18$ cyclic orbits; and the cyclic action is free there. These are fixed
-finite \texttt{native\_decide} certificates, not a theorem for all primes.
-
-\subsection{Finite branch scale at \texorpdfstring{$p=199$}{p=199}}
-
-\texttt{TorusScaleLaw.lean} checks that $a=139$ has order $11$, its recorded
-inverse is $63$, and the branch scales $123$ and $76=-123$ satisfy
-\[
-123^2\equiv76^2\equiv5,\qquad
-123\cdot76\equiv-5\pmod{199}.
-\]
-Again this is a design certificate, not a general scale law.
-
-\subsection{Twisted-Jacobi finite regressions}
-
-Maintained scalar-versus-vectorized checks and preserved $q$-curve records
-validate the implementation at the explicit designs. A historical formula
-omitted a domain condition: the relevant $n_1$ must be nonzero. That condition
-is automatic on the audited nonzero-$q$ curves, so the finite regression
-survives while the unrestricted historical statement does not.
-
-\subsection{Antiunitary symmetry: safe statement}
-
-If an antiunitary $\Theta$ satisfies
-$\Theta U\Theta^{-1}=U^{-1}$ and $Uv=\lambda v$ with $|\lambda|=1$, then
-anti-linearity gives
-\[
-U\Theta v=\overline{\lambda}^{-1}\Theta v=\lambda\Theta v.
-\]
-Thus the eigenspace is preserved. We do not promote a blanket theorem that
-every relevant global block has already been certified as GOE class; that
-would require a convention-consistent treatment of all kernel charts and
-desymmetrizations if it becomes load-bearing.
-
-\subsection{Shape/Catalan, arcsine, and higher-rank historical material}
-
-Historical exact finite relation counts and finite moment patterns motivated
-Catalan/arcsine conjectures, but the old word-trace reduction has an unresolved
-higher rewrite case. Finitely many matching moments do not prove an all-orders
-law. Likewise historical higher-rank/Sp$(2g)$ diagonal and coset diagnostics
-remain useful test cases in Git history, but no general higher-rank theorem is
-promoted from them.
-
-\section{Corrected finite spectral diagnostics}
-
-The finite spectral records are deliberately descriptive. They use the full
-complex Hermitian sector matrix
+The maintained finite spectral code diagonalizes the full complex Hermitian
+sector matrix
 \[
 \mathcal H(q)=M(q)+M(q)^*.
 \]
-A reconstruction-era implementation accidentally diagonalized
-$\operatorname{Re}\mathcal H(q)$ instead. Hermitian matrices need not be
-entrywise real, so this changed the finite spectra. The bug was found by an
-independent comparison, a regression guard now separates the two spectra, and
-the promoted numerical records were regenerated. No exact result above
-depended on those records.
+A reconstruction-era implementation briefly replaced it by its entrywise real
+part; that bug was removed and guarded by regression.  Current spacing records
+are descriptive empirical-CDF comparisons only.  Pooled unfolded gaps are
+dependent, so no IID Kolmogorov--Smirnov significance is attached.  The
+forward-window statistic retained in the repository is likewise not stationary
+number variance.
 
-For the corrected spacing diagnostic, polynomially unfolded gaps are pooled
-only to report the empirical CDF sup-distance to the GOE Wigner surmise:
+The logical chain is
 \[
-\begin{array}{c|c|c|c|c}
-p&K&\text{sector dimension}&\#q&D_{\rm CDF}\\\hline
-3571&17&105&40&0.0077766786\\
-19489&29&336&43&0.0087662249.
-\end{array}
-\]
-No IID Kolmogorov--Smirnov significance is attached because the unfolded gaps
-are dependent.
-
-The second diagnostic uses forward windows anchored at each eigenvalue and
-truncated at the spectral edge. It is \emph{not} the stationary number
-variance $\Sigma^2(L)$. For $(p,K)=(19489,29)$, $25$ cat-map samples and $60$
-GOE simulations with fixed seed $20260901$ give
-\[
-\begin{array}{c|ccc}
-L&\text{cat-map mean}&\text{GOE mean}&\text{descriptive standardized difference}\\\hline
-1&0.328504&0.340868&2.3833\\
-2&0.492778&0.508477&1.5774\\
-3&0.578620&0.609855&2.3600\\
-5&0.778921&0.791360&0.6510\\
-8&1.203787&1.243551&2.0698\\
-12&2.416266&2.465283&2.2076
-\end{array}
-\]
-The standardized column is only a scale for the matched finite comparison; it
-is not a Gaussian hypothesis-test statistic. These observations are numerical
-context, compatible with earlier cat-map spacing experiments \cite{GLR2003},
-not evidence for a limiting BGS theorem.
-
-\section{Why microscopic BGS remains open}
-
-A BGS statement concerns local eigenphase correlations at the mean-spacing
-scale after relevant symmetries are removed. The exact pair-key identities and
-even the prospective estimate \eqref{eq:target} are moment/fluctuation
-statements about a structured deterministic arithmetic family.
-
-The current logical chain is therefore
-\[
-\begin{array}{c}
 \boxed{\text{exact pair-key/Fourier reduction}}
 \longrightarrow
-\boxed{\text{mixed Cayley term}}
-\\[4pt]
-\Downarrow\\[-2pt]
-\boxed{\text{off/off elliptic correlation: open}}
+\boxed{\text{mixed energy: open at polynomial scale}}
+\longrightarrow
+\boxed{\text{off/off elliptic correlation: draft}}
 \longrightarrow
 \boxed{\text{moment theorem}}
-\\[4pt]
-\Downarrow\\[-2pt]
-\boxed{\text{microscopic BGS bridge: open}}
-\end{array}
+\longrightarrow
+\boxed{\text{microscopic BGS bridge: open}}.
 \]
-Closing an earlier box does not close a later one. A local-statistics result
-still needs an explicit comparison/local-law mechanism (or a genuinely
-arithmetic replacement) with its scale, dependence structure and symmetry
-assumptions proved for the actual family.
+Closing an earlier box does not close a later one.  A local-statistics theorem
+still requires an explicit comparison/local-law mechanism, or a genuinely
+arithmetic replacement, at the mean-spacing scale with the correct symmetry
+class and uniformity.
 
-\section{Reproducibility, language migration, and negative controls}
+\section{Reproducibility and independent failure modes}
 
-The maintained repository has one current implementation role per language:
+The maintained verification stack is deliberately heterogeneous:
 \begin{itemize}
-\item Python for checked finite-field/reference/symbolic orchestration and numerical diagnostics;
-\item three C++20 programs for independent exact/exhaustive finite checks: pair-key fourth moments, Cayley energy, and cat-map order;
-\item six active Lean 4 modules for finite certificates and a historical falsifier;
-\item TeX plus a committed synchronized PDF for the manuscript.
+\item Python/SymPy: transparent symbolic algebra, exact resultants, finite-field
+      reference computations, primality and energy certificates;
+\item C++20: independent exact/exhaustive kernels and the 28-digit
+      Boost.Multiprecision Fibonacci witness;
+\item Lean 4: kernel-checked pair-key certificates, fixed Cayley controls,
+      torus facts, historical falsifiers, and the bounded Fibonacci-ratio
+      residual;
+\item TeX/CI: publication-facing integration and independent manuscript build.
 \end{itemize}
-The current branch contains no Julia source. All $31$ historical Julia paths
-($23$ byte-distinct sources) have final dispositions: useful current logic was
-replaced by maintained C++/Python where warranted, while false, duplicate or
-non-load-bearing code remains recoverable in Git history rather than being
-ported mechanically.
 
-CI checks whole-repository structure, promoted-evidence provenance, Markdown
-links, Python syntax warnings, exact Python regressions, complete committed
-numerical diagnostics, all maintained C++ programs, the Lean import graph and
-\texttt{lake build}, and an independent manuscript build. The fixed-$K$ Cayley
-JSON is regenerated from its exact producer and compared with the committed
-record.
+The C++ arbitrary-precision verifier intentionally uses a different code path
+from Python.  The Lean module does not formalize Carmichael's theorem; it
+certifies exactly the finite range left after the external primitive-divisor
+theorem is applied.  This separation keeps the evidence graph honest.
 
-Negative controls are retained when they test a different failure mode: the
-degenerate historical M\"obius fiber is a Lean finite falsifier, and
-$(461,23)$ is an independent Python/C++/Lean non-uniformity witness.
-
-\section{Retractions that affect interpretation}
-
-The following historical conclusions are explicitly excluded:
-\begin{itemize}
-\item the M\"obius/M4D proof of the mixed/off-diagonal fluctuation bound;
-\item the one-sided mixed-class count that omitted one ordered diagonal/off class;
-\item a shortcut from generic random-matrix universality to this structured deterministic family without verified hypotheses;
-\item the unrestricted twisted-Jacobi formula that omitted its domain condition;
-\item the all-orders arcsine/Catalan conclusion based on the unresolved word-trace rewrite;
-\item unsupported general Sp$(2g)$ extrapolations from finite diagnostics;
-\item finite numerical GOE ``passes'' interpreted as proof of a limiting law;
-\item the temporary entrywise-real Hermitian projection used during repository reconstruction.
-\end{itemize}
-The failure mechanisms are preserved in the research record so they remain
-useful regression tests.
+The current tree contains no Julia sources.  Historical Julia files remain
+accounted for in repository provenance; false algorithms were not ported merely
+to increase language diversity.
 
 \section{Conclusion}
 
-The reconstruction leaves a narrower but substantially stronger result than
-the historical workspace claimed. The pair-key bijection, exact
-$(K-1)(K-2)$ constrained count, weighted diagonal, fourth-moment coupling,
-Fourier mean/variance reduction, Cayley transform, complete $720$-matching
-audit, the explicit $E_{11}$ and $E_{13}$ resultant sets, and the $(461,23)$
-obstruction are reproducible. Earlier finite torus, scale and twisted-Jacobi
-results survive at their actual finite scope, while numerical spectral records
-are now regenerated from the correct complex Hermitian matrix.
+The exact pair-key/Fourier reduction and Cayley transform isolate the
+fourth-moment arithmetic obstruction sharply.  Prime-order cotangent rigidity
+removes characteristic-zero accidental collisions.  The new norm identity
+\[
+\Res(\Phi_K,P)=K^3M^2
+\]
+explains the systematic square structure seen in fixed-$K$ computations and
+strengthens the worst-case cutoff.  The Fibonacci slice then gives a more
+important lesson: large exceptional norms and even very large exceptional
+split primes do not force large additive energy.  Its exact rational energy is
+only baseline plus $32$, and the 28-digit $K=131$ certificate reproduces that
+structure in finite characteristic.
 
-The main analytic task is sharply localized: convert the historical elliptic
-organization into a publication-grade family and verify the exact sheaf and
-isogeny hypotheses required for square-root correlation. Even after that,
-microscopic BGS statistics require a separate local-law bridge.
+This changes, but does not close, the BGS programme.  The next mixed-term
+problem is a quantitative energy theorem for Mobius images of multiplicative
+subgroups.  The off/off elliptic correlation remains a separate geometric
+problem.  Even success on both fronts would still leave the microscopic BGS
+bridge as an independent local-statistics problem.
 
 \begin{thebibliography}{99}
 
@@ -559,12 +694,6 @@ doi:10.4007/annals.2005.161.489.
 P.~Kurlberg, L.~Rosenzweig and Z.~Rudnick,
 \emph{Matrix elements for the quantum cat map: fluctuations in short windows},
 arXiv:math/0701685 (2007).
-
-\bibitem{GLR2003}
-A.~Gamburd, J.~Lafferty and D.~Rockmore,
-\emph{Eigenvalue spacings for quantized cat maps},
-J. Phys. A \textbf{36} (2003), 3487--3499,
-doi:10.1088/0305-4470/36/12/336.
 
 \bibitem{DJ2024}
 S.~Dyatlov and M.~J\'ez\'equel,
@@ -583,6 +712,49 @@ S.~Bhakta and I.~E.~Shparlinski,
 \emph{On quantum ergodicity for higher-dimensional cat maps modulo prime powers},
 Bull. London Math. Soc. \textbf{58} (2026),
 doi:10.1112/blms.70300.
+
+\bibitem{PW2014}
+Z.~Pluha\v r and H.~A.~Weidenm\"uller,
+\emph{Universal Quantum Graphs},
+Phys. Rev. Lett. \textbf{112} (2014), 144102,
+doi:10.1103/PhysRevLett.112.144102.
+
+\bibitem{PW2015}
+Z.~Pluha\v r and H.~A.~Weidenm\"uller,
+\emph{Quantum graphs and random-matrix theory},
+J. Phys. A \textbf{48} (2015), 275102,
+doi:10.1088/1751-8113/48/27/275102.
+
+\bibitem{Chowla1970}
+S.~Chowla,
+\emph{The nonexistence of nontrivial linear relations between the roots of a
+certain irreducible equation},
+J. Number Theory \textbf{2} (1970), 120--123,
+doi:10.1016/0022-314X(70)90012-0.
+
+\bibitem{Wang1982}
+K.~Wang,
+\emph{On a theorem of S. Chowla},
+J. Number Theory \textbf{15} (1982), 1--4,
+doi:10.1016/0022-314X(82)90078-6.
+
+\bibitem{Carmichael1913}
+R.~D.~Carmichael,
+\emph{On the numerical factors of the arithmetic forms $\alpha^n\pm\beta^n$},
+Ann. of Math. \textbf{15} (1913--1914), 49--70,
+doi:10.2307/1967798.
+
+\bibitem{Yabuta2001}
+M.~Yabuta,
+\emph{A Simple Proof of Carmichael's Theorem on Primitive Divisors},
+Fibonacci Quart. \textbf{39} (2001), 439--443,
+doi:10.1080/00150517.2001.12428701.
+
+\bibitem{BHV2001}
+Y.~Bilu, G.~Hanrot and P.~M.~Voutier,
+\emph{Existence of primitive divisors of Lucas and Lehmer numbers},
+J. reine angew. Math. \textbf{539} (2001), 75--122,
+doi:10.1515/crll.2001.080.
 
 \bibitem{Michel1995}
 P.~Michel,
