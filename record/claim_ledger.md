@@ -50,8 +50,14 @@ wins.
 | `Delta_K(p)<=4 I_K(p)(K-1)(K-2)` for maximum row intersection `I_K(p)` | **EXACT** | immediate from the cross-row identity |
 | product-row intersection is the constrained affine trace-set equation `Y=alpha X+beta`, `X=z+z^-1`, with explicit `alpha,beta` | **EXACT + FINITE-REGRESSION** | `cayley_product_row_intersections.md` |
 | order-three row form obstruction: if `I_(i,j)(p)>=3`, then `p|G'_(K,r)^(3)` for the normalized ratio class `r=j/i` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | `cayley_product_row_subresultants.md`; Brown--Traub subresultant theorem; exact SymPy anchors |
-| if split `p` does not divide `G'_K^(3)`, then `I_K(p)<=2`, `Delta_K(p)<=8(K-1)(K-2)`, and `E_+(A)<=11(K-1)(K-2)` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | preceding obstruction + exact row-energy theorem |
-| bound `P_split^+(G'_K^(3))<=K^(4+o(1))`, or equivalent growing-`K` control of its split support | **OPEN** | this would close the pointwise centered Cayley target in `K=o(p^(1/4))`; no proof yet |
+| if split `p` does not divide `G'_K^(3)`, then `I_K(p)<=2`, `Delta_K(p)<=8(K-1)(K-2)`, and `E_+(A)<=11(K-1)(K-2)` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | preceding coarse obstruction + exact row-energy theorem |
+| universal row polynomial `P_K(Y)=sum_j binom(K,2j)Y^j`, `|Disc(P_K)|=2^((K-1)(K-3)/2)K^((K-3)/2)`, and its second-order ODE/row-coefficient recurrence | **EXACT + FINITE-REGRESSION** | `cayley_product_row_projective_bezout.md`; CI universal-row checks |
+| projective Bezout nullity equals projective row intersection degree, including roots at infinity | **EXACT + FINITE-REGRESSION** | self-contained Bezout proof + direct finite-field nullity/intersection regression |
+| exact determinantal support: for split `p`, `p|B'_K^(3)` iff `I_K(p)>=3` | **EXACT + FINITE-REGRESSION** | `(m-2)`-minor Fitting ideal in `cayley_product_row_projective_bezout.md`; CI negative/positive controls |
+| local exact valuation `v_P(B_(K,r)^(3))` is the sum of all cross-evaluation valuations after discarding the two largest | **EXACT** | local Lagrange diagonalization of the Bezoutian |
+| `B'_11^(3)=1`, hence `I_11(p)<=2` for every split `p==1 mod 11` | **FINITE-CERTIFICATE** | exact HNF norms for all five unordered ratio classes; optional deterministic verifier |
+| bound `P_split^+(B'_K^(3))<=K^(4+o(1))`, or equivalent growing-`K` control of the exact projective support | **OPEN** | strictly sharper closure target; would close pointwise centered Cayley scale in `K=o(p^(1/4))` |
+| coarse bound `P_split^+(G'_K^(3))<=K^(4+o(1))` | **OPEN** | still sufficient but superseded as the preferred divisor target by the exact `B'_K^(3)` support |
 | weighted split-prime excess budget `sum_{p==1 mod K}Delta_K(p)log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_mass_budget.md` |
 | canonical difference discriminant: `Delta_K(p)>0 iff p|Disc(S_K)` and `Delta_K(p)<=4v_p(Disc(S_K))` | **EXACT + FINITE-REGRESSION** | `cayley_difference_discriminant.md` |
 | ratio-orbit factorization and one-factor fourth-power discriminants | **EXACT + FINITE-REGRESSION** | `cayley_ratio_orbit_factorization.md` |
@@ -65,7 +71,7 @@ wins.
 | generic off/off reducible spike `O_lambda(2/(alpha-beta))=2p-8`; remaining singular support recovers parameters up to involution | **EXACT + FINITE-REGRESSION** | `offoff_elliptic_spike_theorem.md` |
 | corrected off/off variance `Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | spike extraction + Igusa + Grothendieck--Lefschetz/Deligne |
 | in `K=o(p^(1/4))` and direct-theorem range, `Var O<<pK^(8/3)` | **EXACT + EXTERNAL-THEOREM** | corrected off/off theorem + direct Cayley energy |
-| sharp centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` for all intended split designs | **OPEN** | closed outside `p|G'_K^(3)`; exceptional split support remains unresolved |
+| sharp centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` for all intended split designs | **OPEN** | quadratic scale closed outside `p|B'_K^(3)`; exact exceptional split support remains unresolved |
 | microscopic BGS/GOE local eigenphase law | **OPEN** | no mean-spacing local-law/comparison mechanism |
 
 ## Current obstruction architecture
@@ -106,7 +112,7 @@ at `O(K^2 log K)` square mass, but summing all blocks loses to `O(K^3)`.
 The fixed-product decomposition then isolates the genuinely non-forced part:
 all excess is interference between **different product rows**.
 
-## Product-row / subresultant frontier
+## Product-row / projective-Bezout frontier
 
 For a noncentral row `xy=w^2`, write `x=wz`, `y=wz^(-1)`. For two rows
 `w^2,q^2`, a common Cayley parameter is exactly a constrained affine
@@ -121,36 +127,31 @@ beta=2(w/q-q/w)/(w-w^(-1)).
 ```
 
 Each row supports at most one unordered subgroup pair at a fixed nonzero
-parameter. Hence, with `I_K(p)` the maximum number of common parameters between
-two distinct rows,
+parameter. Hence
 
 ```text
 Delta_K(p)<=4I_K(p)(K-1)(K-2).
 ```
 
-The projective row form
+The earlier projective row form
 
 ```text
 R_i(U,V)=prod_a(D_(i,a)U-N_iV)
 ```
 
-encodes all row parameters, including `t=2` as the point at infinity. After
-Galois-normalizing a row pair to `(1,r)`, the first three subresultants
-`S_0,S_1,S_2` define an explicit integer `G'_(K,r)^(3)` from the gcd of the
-absolute cyclotomic norms of their nonzero coefficients. Brown--Traub's
-subresultant theorem gives the exact implication
+encodes all row parameters, including `t=2` at infinity.  The fixed-degree
+subresultant integer `G'_K^(3)` is a correct safe obstruction but can have false
+positive split factors when dehomogenization loses leading degree.
+
+The exact refinement uses the ambient degree-`m` Bezout matrix of a normalized
+row pair.  Its nullity is exactly the homogeneous projective gcd degree.  The
+ideal generated by all `(m-2)x(m-2)` minors therefore has exact support:
 
 ```text
-I_(i,j)(p)>=3  ==>  p|G'_(K,r)^(3).
+p|B'_K^(3)  <=>  I_K(p)>=3
 ```
 
-Therefore outside
-
-```text
-G'_K^(3)=prod_[r]G'_(K,r)^(3)
-```
-
-one has pointwise
+for split primes.  Outside this smaller integer one has pointwise
 
 ```text
 I_K(p)<=2,
@@ -158,16 +159,35 @@ Delta_K(p)<=8(K-1)(K-2),
 E_+(A)<=11(K-1)(K-2).
 ```
 
-This closes the quadratic centered-energy scale on an explicit arithmetic
-subfamily. The only remaining arithmetic lemma on this route is to control the
-**split prime divisors** of `G'_K^(3)` as `K` grows. A bound
+The strictness is real: `G'_(11,7)^(3)=23`, but the exact projective nullity in
+that ratio class at `p=23` is at most one and globally `I_11(23)=2`. Exact HNF
+calculation over all `K=11` ratio classes gives
 
 ```text
-P_split^+(G'_K^(3))<=K^(4+o(1))
+B'_11^(3)=1.
 ```
 
-would close the pointwise Cayley-energy bottleneck throughout
-`K=o(p^(1/4))`. It is **OPEN**.
+The universal polynomial
+
+```text
+P_K(Y)=sum_j binom(K,2j)Y^j
+```
+
+has only `2,K` in its discriminant and generates every row by a Mobius
+substitution plus a second-order derivative recurrence.  Locally at a split
+prime the Bezoutian diagonalizes in a Lagrange basis; the exact ideal valuation
+is the total cross-evaluation valuation after the two largest entries are
+removed.  This identifies the precise remaining mass as the **third and later
+row collisions**.
+
+The preferred closure lemma is now
+
+```text
+P_split^+(B'_K^(3))<=K^(4+o(1)).
+```
+
+It is **OPEN**.  The older analogous statement for `G'_K^(3)` remains sufficient
+but is no longer the sharp arithmetic target.
 
 ## Adversarial finite controls
 
@@ -189,24 +209,23 @@ The stronger exploratory row claim `I_K(p)<=1` is false:
 
 has a row pair with two common parameters.
 
-The order-three subresultant regression includes the exact anchors
+The coarse order-three subresultant regression includes
 
 ```text
 G'_(7,2)^(3)=1,
 G'_(11,2)^(3)=1,
 G'_(13,3)^(3)=3^3,
 G'_(13,12)^(3)=5^8,
-G'_(17,10)^(3)=103^2.
+G'_(17,10)^(3)=103^2,
+G'_(23,18)^(3)=47^20*139^2.
 ```
 
-The split prime `103` is actually realized by a three-intersection row pair at
-`K=17`. A slower independently rerun anchor gives
+The split prime `103` is realized by a three-intersection row pair at `K=17`;
+for `K=23`, intersections of sizes `5` and `3` occur at `p=47,139`.
 
-```text
-G'_(23,18)^(3)=47^20*139^2,
-```
-
-with row intersections of sizes `5` at `p=47` and `3` at `p=139`.
+The exact projective regression additionally contains the false-positive control
+`(K,p,r)=(11,23,7)` and reproduces the genuine `K=17,23` projective nullities.
+Exact HNF norms at `K=11` remove every split factor from the order-three support.
 These are finite mechanism checks, not asymptotic evidence promoted to proof.
 
 Complete fixed-order finite certificates remain
