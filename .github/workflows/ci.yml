@@ -75,6 +75,9 @@ jobs:
       - name: Regress shifted-energy Cayley orbit reduction
         run: python computations/verification/cayley_shifted_energy_orbits.py
 
+      - name: Regress fixed-product row decomposition
+        run: python computations/verification/cayley_product_row_intersections.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
