@@ -81,6 +81,9 @@ jobs:
       - name: Regress higher product-row subresultant obstruction
         run: python computations/verification/cayley_product_row_subresultants.py
 
+      - name: Regress projective Bezout row support
+        run: python computations/verification/cayley_product_row_projective_bezout.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
