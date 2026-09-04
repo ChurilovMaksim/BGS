@@ -244,7 +244,7 @@ Hence their Minkowski distance satisfies
 
 ```text
 D_m(q_v,q_w)
- =(c(v)-c(w))(c(v)^(-1)-c(w)^(-1)
+ =(c(v)-c(w))(c(v)^(-1)-c(w)^(-1))
  =2-c(v)/c(w)-c(w)/c(v).                                 (27)
 ```
 
