@@ -10,6 +10,10 @@ parallel source trees.
   coupling-total and fourth-moment finite verifier.
 - `cpp/cayley_energy_verifier.cpp` — exact mixed Cayley-energy verifier with
   generic/exceptional controls for `K=11,13` plus `(461,23)`.
+- `cpp/cayley_direct_energy_verifier.cpp` — independent finite verifier for the
+  direct bilinear Cayley-fiber theorem on five subgroup designs with `K>100`.
+- `cpp/cayley_fibonacci_verifier.cpp` — arbitrary-precision independent check of
+  the 28-digit `K=131` Fibonacci exceptional-prime certificate.
 - `cpp/cat_map_order.cpp` — exact order/split-prime utility and regression for
   the old Julia order/comment mismatch.
 
@@ -28,6 +32,14 @@ sector) and rejects characters outside it.
 - `current_regression.py` — fast exact anchors and API contracts;
 - `mixed_cayley_energy.py` — 720 matching systems, exact cyclotomic resultants
   for `K=11,13`, finite reductions and the `K=23` witness;
+- `cayley_uniform_cutoff_regression.py` — finite exact checks for the original
+  prime-order resultant cutoff;
+- `cayley_resultant_fibonacci.py` — exact square-resultant, Fibonacci and
+  28-digit certificate producer;
+- `cayley_resultant_mass_budget.py` — exact normalized Galois-orbit,
+  common-root and `p`-adic resultant-valuation regression for the global
+  split-prime collision-mass theorem on the complete `K=11,13` exceptional
+  sets;
 - `twisted_jacobi_regression.py` — maintained producer for preserved finite
   twisted-Jacobi regressions;
 - `repository_audit.py` — whole-tree structure, no-Julia, duplicate,
