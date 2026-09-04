@@ -30,7 +30,7 @@ stronger language; this file wins.
 | prime-order collision resultant has shape `Res(Phi_K,P)=K^3 M^2` | **EXACT + FINITE-REGRESSION** | real-subfield norm argument in `mathematics/cayley_resultant_structure.md`; exhaustive normalized checks through `K=11` |
 | if odd prime `K | p-1` and `K^3 p^2 > 12^(K-1)`, mixed energy is exactly `(K-1)(2K-5)` | **EXACT + FINITE-REGRESSION** | square-resultant theorem + coefficient norm; stronger than the earlier `p>12^(K-1)` cutoff |
 | Fibonacci collision slice `Res(Phi_K,X^2+3X+1)=F_K^2` and full collision norm `K^3 F_K^2` | **EXACT + FINITE-REGRESSION** | Binet/Lucas derivation + exact resultant checks through `K=29` |
-| rational set `S_N={+-L_n/F_n:1<=n<=N}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | Carmichael primitive-divisor theorem + exact finite residual; `FibonacciRatioSmall.lean` kernel-checks the `N<=12` residue |
+| rational set `S_N={+-L_n/F_n:1<=n<=N}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | full proof in `mathematics/fibonacci_ratio_energy_proof.md`, using Yabuta Theorem 3 for the unbounded primitive-divisor step; Python + `FibonacciRatioSmall.lean` close only the bounded residue |
 | `(K,p)=(131,F_131)` is a 28-digit prime Fibonacci-slice witness with energy `33442`, baseline `33410`, excess `32` | **FINITE-CERTIFICATE** | complete Lucas primality certificate + independent Python/C++ arbitrary-precision Cayley audits |
 | useful polynomial-scale **energy bound** for arbitrary prime-order Cayley sets | **OPEN** | worst-case zero-collision cutoff is the wrong target; Fibonacci slice has large bad primes but only constant excess |
 | 720 matching rank classification; only characteristic-2 extra rank drop | **FINITE-CERTIFICATE** | `computations/verification/mixed_cayley_energy.py` |
@@ -46,6 +46,8 @@ stronger language; this file wins.
 The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff by a square root.  The explicit Fibonacci subfamily has `M=F_K`, so `M` itself grows exponentially: a strategy that first proves a polynomial bound on the *whole norm* is impossible.
 
 This does **not** show that the mixed energy is large.  In fact the rational Fibonacci/Lucas model has only constant excess `32`, and the exact 28-digit `K=131` finite-field witness has the same excess.  The open problem is therefore promoted from “eliminate every non-forced collision” to the more relevant quantitative question “bound the total collision energy uniformly”.
+
+The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption.  The full proof now spells out the two previously compressed load-bearing points: strict injectivity of the fixed-upper-index difference ratio and uniqueness of the fixed-index-sum Fibonacci product.  The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
 
 ## Earlier useful foundations
 
