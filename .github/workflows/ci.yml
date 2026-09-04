@@ -76,6 +76,7 @@ jobs:
           ./build/cat_map_order verify
           ./build/cayley_energy_verifier
           ./build/cayley_fibonacci_verifier
+          ./build/cayley_direct_energy_verifier
 
   formalization:
     runs-on: ubuntu-latest
