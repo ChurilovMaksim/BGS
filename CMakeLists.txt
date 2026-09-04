@@ -20,18 +20,25 @@ add_executable(
   computations/cpp/cayley_energy_verifier.cpp
 )
 
+add_executable(
+  cayley_fibonacci_verifier
+  computations/cpp/cayley_fibonacci_verifier.cpp
+)
+
 if (MSVC)
   foreach(target
       fourth_moment_pair_key_verifier
       cat_map_order
-      cayley_energy_verifier)
+      cayley_energy_verifier
+      cayley_fibonacci_verifier)
     target_compile_options(${target} PRIVATE /W4)
   endforeach()
 else()
   foreach(target
       fourth_moment_pair_key_verifier
       cat_map_order
-      cayley_energy_verifier)
+      cayley_energy_verifier
+      cayley_fibonacci_verifier)
     target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
   endforeach()
 endif()
