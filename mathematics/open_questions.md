@@ -15,54 +15,69 @@ theorem.
 **Closure condition:** a theorem with explicit `(p,K)` hypotheses and a
 uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
 
-## B. Prove a polynomial-scale mixed-term **energy** bound
+## B. Improve the proved direct mixed-energy exponent to the centered quadratic scale
 
-The earlier formulation asked for a growing-`K` exceptional-prime cutoff. That
-is now known to be the wrong closure condition.
+The old question “eliminate every exceptional collision” is no longer the
+right closure condition.  The square-resultant/Fibonacci analysis shows that
+very large exceptional split primes exist, while their total excess energy can
+remain small.
 
-For odd prime `K`, characteristic-zero Cayley collisions are completely
-classified.  The cleared collision resultant has the exact form
+There is now a genuine uniform polynomial-scale theorem.  For every odd prime
+`p`, every subgroup `H<=F_p^*` of order
 
-`Res(Phi_K,P)=K^3 M^2`,
+`100<K<p^(3/4)/3`,
 
-which improves the no-collision cutoff to
+and `A=c(H\{1})`, the bilinear-fiber argument in
+[`cayley_direct_energy.md`](cayley_direct_energy.md) gives
 
-`K^3 p^2 > 12^(K-1)`.
+`E_+(A)<34 K^(8/3)`
 
-However the explicit Fibonacci slice satisfies
+and hence
 
-`M=F_K`,
+`sum_t C_H(t)^2<34 K^(8/3)`.
 
-and therefore has exponentially large total norm.  More importantly, at
+After the exact coefficient `2(p-2)` is propagated through the repository
+variance normalization, the mixed centered variance is bounded by
 
-`K=131`, `p=F_131=1066340417491710595814572169`,
+`<136 p K^(8/3)`.
 
-there is an exact non-forced collision even though `p` is enormous relative to
-`K`.  The zero-excess strategy cannot be the primary growing-`K` mechanism.
+So a polynomial-scale mixed theorem is **proved**; what remains is the exponent
+gap.
 
-The same example points to the right invariant: its collision energy is only
+For every set `A subset F_p`, however,
 
-`33442 = 33410 + 32`,
+`E_+(A)=|A|^4/p + 1/p sum_{q!=0}|1_Ahat(q)|^4`.
 
-and the underlying rational Fibonacci/Lucas model has forced-baseline excess
-exactly `32` for every size.  Thus a large exceptional prime need not be a
-large-energy obstruction.
+Thus a global raw bound `E_+(A)=O(K^2)` is not even the correct statement in
+dense regimes.  The sharp target is the centered estimate
 
-**New closure condition:** prove a uniform or sufficiently averaged bound on
+`E_+(A)=(K-1)^4/p + O(K^(2+o(1)))`,
 
-`sum_t C_H(t)^2`
+or equivalently
 
-for the Cayley image `A=c(H\{1})`, at a strength compatible with the fourth-
-moment argument in the desired polynomial-scale regime.  The proof may use
-incidence/sum-product methods, multiplicative-subgroup structure, arithmetic
-classification of high-multiplicity differences, or a decomposition into
-structured Lucas-type slices plus a pseudorandom remainder.  Exact elimination
-of every non-forced collision is no longer required.
+`sum_{q!=0}|1_Ahat(q)|^4 << p K^(2+o(1))`.
 
-A useful next decision point is to determine the weakest exponent in an energy
-bound that actually closes the mixed contribution after the factor
-`2(p-2)C_H(t)` in `B(t)` is propagated through the variance identity.  This
-must be derived explicitly before importing a generic additive-energy theorem.
+In the intended regime `K=o(p^(1/4))`, the density term is negligible at the
+quadratic collision scale, so this is the natural mixed-term closure.
+
+[`cayley_centered_energy.md`](cayley_centered_energy.md) gives two exact
+reformulations which currently expose the highest-value routes:
+
+1. a character decomposition
+   `1_Ahat(q)=e_p(q)/|H^perp| * sum_chi T_chi(q)` with an exactly computed Gram
+   matrix for the `T_chi` family;
+2. a torus-versus-unipotent PGL2 intersection formulation, equivalently a
+   moving distinguished-product class in shifted subgroups `H+lambda`.
+
+Generic pointwise Stepanov gives the current `8/3` exponent.  The audited
+Möbius-incidence and shifted-subgroup multiplicative-energy theorems do not, by
+themselves, sum the moving distinguished classes with only quadratic loss.
+Likewise, termwise square-root bounds on the trace functions discard the
+character-family cancellation required by the fourth moment.
+
+**Closure condition:** prove the centered bound above, or any explicit
+`K^(2+delta)` bound with `delta<2/3` that materially enlarges the fourth-moment
+regime after complete propagation through `B(t)` and the variance identity.
 
 ## C. Re-audit global symmetry statements if they become load-bearing
 
