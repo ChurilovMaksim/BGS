@@ -11,9 +11,8 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
-from math import gcd
-from sympy import Poly, Symbol, discriminant, factorint, primitive, resultant, sqf_part
-from sympy import primerange
+
+from sympy import Poly, Symbol, ZZ, discriminant, expand, factorint, resultant, sqf_part
 
 X = Symbol("X")
 T = Symbol("T")
@@ -25,19 +24,19 @@ PROMOTED = {
 
 
 def q_poly(K: int) -> Poly:
-    expr = ((X + 1) ** K - (X - 1) ** K) // 2
-    return Poly(expr, X)
+    expr = expand(((X + 1) ** K - (X - 1) ** K) / 2)
+    return Poly(expr, X, domain=ZZ)
 
 
 def squarefree_difference_poly(K: int) -> Poly:
     q = q_poly(K)
     shifted = q.as_expr().subs(X, X - T)
-    r = Poly(resultant(q.as_expr(), shifted, X), T)
+    r = Poly(resultant(q.as_expr(), shifted, X), T, domain=ZZ)
     # The diagonal contributes exactly T^(K-1).
-    r_nz = r.exquo(Poly(T ** (K - 1), T))
-    sf = Poly(sqf_part(r_nz.as_expr()), T)
-    _, sf_primitive = primitive(sf)
-    # normalize positive leading coefficient
+    r_nz = r.exquo(Poly(T ** (K - 1), T, domain=ZZ))
+    sf = Poly(sqf_part(r_nz.as_expr()), T, domain=ZZ)
+    _, sf_primitive = sf.primitive()
+    # Normalize positive leading coefficient.
     if sf_primitive.LC() < 0:
         sf_primitive = -sf_primitive
     return sf_primitive
@@ -87,7 +86,7 @@ def check_K(K: int) -> None:
     D = abs(int(discriminant(S.as_expr(), T)))
     assert D != 0
 
-    # Leading coefficient must have no prime support away from K.
+    # The leading coefficient has no prime support away from K.
     lc_fac = factorint(abs(int(S.LC())))
     assert set(lc_fac).issubset({K}), (K, lc_fac)
 
@@ -103,7 +102,10 @@ def check_K(K: int) -> None:
             delta = cayley_excess(p, K)
             assert delta == expected_delta, (K, p, delta, expected_delta)
             assert delta <= 4 * vp(D, p), (K, p, delta, vp(D, p))
-            print(f"  p={p}: Delta={delta}, v_p(Disc)={vp(D,p)}, ratio={delta/(4*vp(D,p)):.6f}")
+            print(
+                f"  p={p}: Delta={delta}, v_p(Disc)={vp(D,p)}, "
+                f"ratio={delta/(4*vp(D,p)):.6f}"
+            )
 
 
 def main() -> None:
