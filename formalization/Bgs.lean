@@ -4,4 +4,5 @@ import Bgs.PairKeySecondMoment
 import Bgs.PairKeyFourthMoment
 import Bgs.HistoricalMobiusDegenerateFiber
 import Bgs.CayleyEnergy
+import Bgs.CayleyCurveEnergy
 import Bgs.FibonacciRatioSmall
