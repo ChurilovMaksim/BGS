@@ -5,18 +5,19 @@ The universal theorem is proved in mathematics/cayley_resultant_mass_budget.md.
 This script checks only the complete promoted finite exceptional sets K=11,13:
 
 * normalized orbit count;
-* nonzero resultant and |R| <= 12^(K-1);
+* nonzero resultant, |R| <= 12^(K-1), and R/K^3 a perfect square;
 * number of common primitive K-th roots modulo p is <= v_p(R);
 * summing common-root counts reproduces the directly computed non-forced
   Cayley energy excess;
 * on these finite designs the stronger equality sum v_p(R)=excess happens to
   hold;
-* the logarithmic weighted budget is checked by an equivalent exact integer
-  product inequality, with no floating-point logarithms.
+* the sharpened weighted budget with the inert K^3 factor removed is checked
+  by exact integer arithmetic, with no floating-point logarithms.
 """
 from __future__ import annotations
 
 import json
+import math
 from collections import Counter
 
 import sympy as sp
@@ -105,6 +106,7 @@ def audit(k: int, exceptional_primes: tuple[int, ...]) -> dict[str, object]:
 
     normalized = 0
     max_resultant = 0
+    max_square_factor = 0
     resultant_cap = 12 ** (k - 1)
 
     i = 1
@@ -129,8 +131,17 @@ def audit(k: int, exceptional_primes: tuple[int, ...]) -> dict[str, object]:
                         f"resultant norm bound failed at K={k}, {(i,j,r,s)}"
                     )
 
+                k3 = k**3
+                if resultant % k3:
+                    raise AssertionError("resultant lost its universal K^3 factor")
+                quotient = resultant // k3
+                square_factor = math.isqrt(quotient)
+                if square_factor * square_factor != quotient:
+                    raise AssertionError("R/K^3 lost its perfect-square structure")
+
                 normalized += 1
                 max_resultant = max(max_resultant, resultant)
+                max_square_factor = max(max_square_factor, square_factor)
 
                 for p in exceptional_primes:
                     h = generators[p]
@@ -144,6 +155,10 @@ def audit(k: int, exceptional_primes: tuple[int, ...]) -> dict[str, object]:
                         raise AssertionError(
                             "common-root count exceeds resultant valuation: "
                             f"K={k}, p={p}, q={(i,j,r,s)}, roots={common_roots}, v={vp}"
+                        )
+                    if vp % 2:
+                        raise AssertionError(
+                            f"split-prime valuation should be even by R=K^3 M^2: K={k}, p={p}"
                         )
                     root_totals[p] += common_roots
                     valuation_totals[p] += vp
@@ -180,11 +195,13 @@ def audit(k: int, exceptional_primes: tuple[int, ...]) -> dict[str, object]:
             }
         )
 
-    # Equivalent to sum_p Delta(p) log p <= N_K (K-1) log 12,
-    # but checked entirely in exact integer arithmetic.
+    # Equivalent to
+    #   sum Delta(p) log p <= N_K ((K-1)log 12 - 3log K),
+    # checked entirely in exact integer arithmetic.
+    exact_budget_lhs = exact_weighted_product * k ** (3 * normalized)
     exact_budget_rhs = 12 ** (normalized * (k - 1))
-    if exact_weighted_product > exact_budget_rhs:
-        raise AssertionError("exact weighted prime-budget product inequality failed")
+    if exact_budget_lhs > exact_budget_rhs:
+        raise AssertionError("sharpened weighted prime-budget product inequality failed")
 
     return {
         "K": k,
@@ -192,8 +209,9 @@ def audit(k: int, exceptional_primes: tuple[int, ...]) -> dict[str, object]:
         "formula_orbit_count": expected_orbits,
         "resultant_absolute_cap": resultant_cap,
         "max_resultant_seen": max_resultant,
+        "max_square_factor_M_seen": max_square_factor,
         "exceptional_prime_rows": prime_rows,
-        "weighted_budget_product_inequality": True,
+        "sharpened_weighted_budget_product_inequality": True,
     }
 
 
@@ -202,9 +220,9 @@ def main() -> None:
         "producer": "computations/verification/cayley_resultant_mass_budget.py",
         "scope": (
             "Exact finite regression of the Galois-orbit/common-root/resultant-valuation "
-            "mechanism on the complete promoted K=11,13 exceptional sets. The universal "
-            "weighted-prime theorem is proved separately in mathematics/"
-            "cayley_resultant_mass_budget.md."
+            "mechanism and sharpened K^3-square prime budget on the complete promoted "
+            "K=11,13 exceptional sets. The universal weighted-prime theorem is proved "
+            "separately in mathematics/cayley_resultant_mass_budget.md."
         ),
         "audits": [
             audit(11, (23, 67, 89)),
