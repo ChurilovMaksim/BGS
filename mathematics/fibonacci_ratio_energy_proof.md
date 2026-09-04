@@ -40,7 +40,7 @@ For `m,n>=1`, standard addition identities give
 
 ```text
 L_m F_n + L_n F_m = 2 F_(m+n),
-L_m F_n - L_n F_m = 2 (-1)^n F_(m-n),
+L_m F_n - L_n F_m = 2 (-1)^m F_(n-m),
 ```
 
 where the second identity is interpreted with the usual signed extension
