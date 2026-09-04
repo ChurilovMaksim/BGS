@@ -46,20 +46,48 @@ are linearly independent over `Q`. This is the exact external input used in
 more general moduli and derivatives of cotangent. The DOI/title metadata for
 both papers was independently resolved during the 2026-09-04 audit.
 
+## Fibonacci/Lucas divisibility used by the new resultant structure
+
+14. R. D. Carmichael, **On the Numerical Factors of the Arithmetic Forms α^n ± β^n**, *Annals of Mathematics* **15** (1913–1914), 49–70, DOI `10.2307/1967798`.
+15. Y. Bilu, G. Hanrot and P. M. Voutier, **Existence of primitive divisors of Lucas and Lehmer numbers**, *Journal für die reine und angewandte Mathematik* **539** (2001), 75–122, DOI `10.1515/crll.2001.080`.
+16. T. M. Apostol, **Resultants of cyclotomic polynomials**, *Proceedings of the American Mathematical Society* **24** (1970), 457–462, DOI `10.1090/S0002-9939-1970-0251010-X`.
+
+The general almost-Sidon proof in
+`mathematics/cayley_resultant_structure.md` uses only the classical Fibonacci
+special case of Carmichael's primitive-divisor theorem: for index `n>12`,
+`F_n` has a prime divisor that divides no earlier Fibonacci number. Bilu–Hanrot–
+Voutier is a modern much broader primitive-divisor theorem and is useful for
+possible extensions to other Lucas slices; it is not needed to make the
+Fibonacci argument stronger than Carmichael already makes it.
+
+A bounded 2026-09-04 literature search also checked cyclotomic-resultant and
+Fibonacci-resultant terminology. Apostol is standard background on cyclotomic
+resultants, and related generalized-Fibonacci resultant literature exists, but
+no searched source was found stating the exact project identity
+
+`Res(Phi_K, X^2+3X+1)=F_K^2`
+
+in this collision context. This is an **apparently new-within-search-scope**
+derivation, not a global novelty claim; a failed search is not proof that the
+identity has never appeared elsewhere.
+
+The Carmichael and Bilu–Hanrot–Voutier DOI/title records were independently
+resolved with the citation verifier; neither is retracted.
+
 ## Trace functions and quantitative sheaf theory
 
-14. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
-15. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
-16. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
+17. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
+18. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
+19. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
 
 These provide relevant technology once the actual sheaves, singularities,
 irreducibility/non-isomorphism, ramification and uniform conductor are proved.
 
 ## Elliptic families, Sato–Tate and isogeny detection
 
-17. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
-18. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
-19. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
+20. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
+21. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
+22. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
 
 Grove–Saad is a useful modern worked example because geometric independence is
 established before square-root correlation is invoked. Zarhin-type results are
