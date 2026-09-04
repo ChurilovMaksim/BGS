@@ -1,6 +1,6 @@
 # Claim ledger
 
-This file is the repository-wide status authority.  Historical commits, old
+This file is the repository-wide status authority. Historical commits, old
 manuscript text and exploratory notes may contain stronger claims; this file
 wins.
 
@@ -12,8 +12,8 @@ wins.
   notation.
 - **FINITE-CERTIFICATE** — exact exhaustive or kernel-checked statement at
   explicit finite parameters.
-- **FINITE-REGRESSION** — finite implementation/reference agreement; useful
-  for reproducibility, not a universal proof.
+- **FINITE-REGRESSION** — finite implementation/reference agreement; useful for
+  reproducibility, not a universal proof.
 - **NUMERICAL** — descriptive floating-point evidence only.
 - **DRAFT** — proof route with named unresolved obligations.
 - **OPEN** — closure condition not achieved.
@@ -44,7 +44,14 @@ wins.
 | shifted-energy orbit inequality `sum_{t in T_(lambda H)}r(t)^2<=2(E_x(H+lambda)-(2K^2-K))` | **EXACT + FINITE-REGRESSION** | `cayley_shifted_energy_orbits.md`; CI regression |
 | for `K^2<p`, every nonzero parameter orbit has `L^2` mass `<<K^2 log K` | **EXACT + EXTERNAL-THEOREM** | preceding reduction + Shkredov, arXiv:1504.04522v1, Theorem 6 |
 | global shifted-energy identity `sum_lambda(E_x(H+lambda)-(2K^2-K))=K^4-E_+(H)` | **EXACT + FINITE-REGRESSION** | `cayley_shifted_energy_orbits.md`; full finite lambda-sums at `(199,11)`, `(461,23)` |
-| shifted-energy orbit route alone yields only global `O(K^3)` and does not improve `K^(8/3)` | **EXACT LIMITATION** | exact global identity + orbit partition |
+| shifted-energy orbit summation alone yields only global `O(K^3)` | **EXACT** | exact global identity + orbit partition; documented limitation |
+| fixed-product row uniqueness: one unordered pair per row and nonzero Cayley parameter | **EXACT + FINITE-REGRESSION** | `cayley_product_row_intersections.md`; CI regression |
+| exact cross-row excess identity `Delta_K(p)=2 sum_{u<v} sum_{t in T_u cap T_v} omega_u(t)omega_v(t)` | **EXACT + FINITE-REGRESSION** | `cayley_product_row_intersections.md`; generic and exceptional checks |
+| `Delta_K(p)<=4 I_K(p)(K-1)(K-2)` for maximum row intersection `I_K(p)` | **EXACT** | immediate from the cross-row identity |
+| product-row intersection is the constrained affine trace-set equation `Y=alpha X+beta`, `X=z+z^-1`, with explicit `alpha,beta` | **EXACT + FINITE-REGRESSION** | `cayley_product_row_intersections.md` |
+| order-three row form obstruction: if `I_(i,j)(p)>=3`, then `p|G'_(K,r)^(3)` for the normalized ratio class `r=j/i` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | `cayley_product_row_subresultants.md`; Brown--Traub subresultant theorem; exact SymPy anchors |
+| if split `p` does not divide `G'_K^(3)`, then `I_K(p)<=2`, `Delta_K(p)<=8(K-1)(K-2)`, and `E_+(A)<=11(K-1)(K-2)` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | preceding obstruction + exact row-energy theorem |
+| bound `P_split^+(G'_K^(3))<=K^(4+o(1))`, or equivalent growing-`K` control of its split support | **OPEN** | this would close the pointwise centered Cayley target in `K=o(p^(1/4))`; no proof yet |
 | weighted split-prime excess budget `sum_{p==1 mod K}Delta_K(p)log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_mass_budget.md` |
 | canonical difference discriminant: `Delta_K(p)>0 iff p|Disc(S_K)` and `Delta_K(p)<=4v_p(Disc(S_K))` | **EXACT + FINITE-REGRESSION** | `cayley_difference_discriminant.md` |
 | ratio-orbit factorization and one-factor fourth-power discriminants | **EXACT + FINITE-REGRESSION** | `cayley_ratio_orbit_factorization.md` |
@@ -58,8 +65,7 @@ wins.
 | generic off/off reducible spike `O_lambda(2/(alpha-beta))=2p-8`; remaining singular support recovers parameters up to involution | **EXACT + FINITE-REGRESSION** | `offoff_elliptic_spike_theorem.md` |
 | corrected off/off variance `Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | spike extraction + Igusa + Grothendieck--Lefschetz/Deligne |
 | in `K=o(p^(1/4))` and direct-theorem range, `Var O<<pK^(8/3)` | **EXACT + EXTERNAL-THEOREM** | corrected off/off theorem + direct Cayley energy |
-| sharp centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` | **OPEN** | no verified theorem removes the `K^(2/3)` loss |
-| product-row `O(1)` intersection theorem in the polynomial split-prime regime | **OPEN / NOT-PROMOTED** | exact affine trace-set reduction; finite evidence only; stronger tentative `<=1` bound is false |
+| sharp centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` for all intended split designs | **OPEN** | closed outside `p|G'_K^(3)`; exceptional split support remains unresolved |
 | microscopic BGS/GOE local eigenphase law | **OPEN** | no mean-spacing local-law/comparison mechanism |
 
 ## Current obstruction architecture
@@ -70,72 +76,138 @@ The exact fourth-moment decomposition is
 B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}.
 ```
 
-Both nontrivial layers are now controlled by the same arithmetic object
+Both nontrivial layers are controlled by
 
 ```text
 A=c(H\{1}),
 E_+(A).
 ```
 
-The mixed layer is exactly Cayley additive energy.  The corrected off/off layer
+The mixed layer is exactly Cayley additive energy. The corrected off/off layer
 contains coherent reducible spikes whose second moment is bounded by
 `pE_+(A)`; after spike extraction the residual elliptic trace functions are
-square-root quasi-orthogonal.  Thus the former elliptic draft is no longer an
+square-root quasi-orthogonal. Thus the former elliptic draft is no longer an
 independent pointwise bottleneck.
 
-The best uniform pointwise estimate is still
+The best theorem with no arithmetic exclusion on the split prime remains
 
 ```text
 E_+(A)<34K^(8/3)
 ```
 
-in `100<K<p^(3/4)/3`.  The target is
+in `100<K<p^(3/4)/3`. The sharp target is
 
 ```text
 E_+(A)=(K-1)^4/p+O(K^(2+o(1))).
 ```
 
-The new shifted-energy orbit theorem shows that one entire multiplicative
-parameter block already has near-quadratic square mass `O(K^2 log K)`, but the
-exact sum over all blocks is only an `O(K^3)` argument.  Therefore the remaining
-information must be cross-block: sparsity/cancellation in the distribution of
-shifted multiplicative excess, or a direct bound on intersections of distinct
-product rows.
+The shifted-energy orbit theorem already puts one multiplicative parameter block
+at `O(K^2 log K)` square mass, but summing all blocks loses to `O(K^3)`.
+The fixed-product decomposition then isolates the genuinely non-forced part:
+all excess is interference between **different product rows**.
 
-## Product-row frontier
+## Product-row / subresultant frontier
 
-For a noncentral product row write `xy=w^2`, `x=wz`, `y=wz^(-1)`.  For two
-rows `w^2` and `q^2`, a common finite Cayley parameter reduces exactly to
+For a noncentral row `xy=w^2`, write `x=wz`, `y=wz^(-1)`. For two rows
+`w^2,q^2`, a common Cayley parameter is exactly a constrained affine
+intersection
 
 ```text
 Y=alpha X+beta,
 X=z+z^(-1),
 Y=y+y^(-1),
-alpha=w(1-q^2)/(q(1-w^2)),
-beta=2(q^2-w^2)/(q(1-w^2)).
+alpha=(q-q^(-1))/(w-w^(-1)),
+beta=2(w/q-q/w)/(w-w^(-1)).
 ```
 
-Each row contributes at most one unordered subgroup pair to a fixed parameter.
-Hence an `O(1)` bound on the number of common parameters for every two distinct
-rows would force non-forced Cayley energy `O(K^2)` in the sparse regime.
+Each row supports at most one unordered subgroup pair at a fixed nonzero
+parameter. Hence, with `I_K(p)` the maximum number of common parameters between
+two distinct rows,
 
-This is currently **OPEN**.  Finite sweeps above `p>K^4` support a small
-intersection phenomenon, but computation is not promoted.  In particular, the
-stronger exploratory claim “at most one” has an explicit counterexample:
-`(K,p)=(41,2908049)` has a row pair with two common parameters.
+```text
+Delta_K(p)<=4I_K(p)(K-1)(K-2).
+```
 
-## Finite negative controls
+The projective row form
 
-The active regression corpus includes large split-prime exceptions
+```text
+R_i(U,V)=prod_a(D_(i,a)U-N_iV)
+```
+
+encodes all row parameters, including `t=2` as the point at infinity. After
+Galois-normalizing a row pair to `(1,r)`, the first three subresultants
+`S_0,S_1,S_2` define an explicit integer `G'_(K,r)^(3)` from the gcd of the
+absolute cyclotomic norms of their nonzero coefficients. Brown--Traub's
+subresultant theorem gives the exact implication
+
+```text
+I_(i,j)(p)>=3  ==>  p|G'_(K,r)^(3).
+```
+
+Therefore outside
+
+```text
+G'_K^(3)=prod_[r]G'_(K,r)^(3)
+```
+
+one has pointwise
+
+```text
+I_K(p)<=2,
+Delta_K(p)<=8(K-1)(K-2),
+E_+(A)<=11(K-1)(K-2).
+```
+
+This closes the quadratic centered-energy scale on an explicit arithmetic
+subfamily. The only remaining arithmetic lemma on this route is to control the
+**split prime divisors** of `G'_K^(3)` as `K` grows. A bound
+
+```text
+P_split^+(G'_K^(3))<=K^(4+o(1))
+```
+
+would close the pointwise Cayley-energy bottleneck throughout
+`K=o(p^(1/4))`. It is **OPEN**.
+
+## Adversarial finite controls
+
+The active regression corpus contains large split exceptions
 
 ```text
 (K,p)=(29,728017),
 (K,p)=(31,1042903),
 ```
 
-both with `p>K^4` and additive Cayley excess `48`.  Therefore no theorem of the
-form “`p>K^4` implies exact baseline” is active or plausible without additional
-structure.
+both with `p>K^4` and additive Cayley excess `48`; therefore `p>K^4` alone does
+not imply exact baseline.
+
+The stronger exploratory row claim `I_K(p)<=1` is false:
+
+```text
+(K,p)=(41,2908049)
+```
+
+has a row pair with two common parameters.
+
+The order-three subresultant regression includes the exact anchors
+
+```text
+G'_(7,2)^(3)=1,
+G'_(11,2)^(3)=1,
+G'_(13,3)^(3)=3^3,
+G'_(13,12)^(3)=5^8,
+G'_(17,10)^(3)=103^2.
+```
+
+The split prime `103` is actually realized by a three-intersection row pair at
+`K=17`. A slower independently rerun anchor gives
+
+```text
+G'_(23,18)^(3)=47^20*139^2,
+```
+
+with row intersections of sizes `5` at `p=47` and `3` at `p=139`.
+These are finite mechanism checks, not asymptotic evidence promoted to proof.
 
 Complete fixed-order finite certificates remain
 
@@ -157,7 +229,7 @@ and `(p,K)=(461,23)` has energy `1190` versus forced baseline `902`.
 
 ## Retractions and superseded routes
 
-See [`retractions.md`](retractions.md) for mechanisms.  The historical
+See [`retractions.md`](retractions.md) for mechanisms. The historical
 Möbius/M4D M1 proof, one-sided mixed counting, ESY-to-BGS shortcut,
 noncommutative trace shortcut, Hecke-centering Julia line, `cdense_transfer`,
 `sol6`, unsupported higher-rank/Sp(2g) promotion, temporary real-projection
