@@ -54,6 +54,9 @@ jobs:
           print('fixed-K Cayley certificate: synchronized')
           PY
 
+      - name: Regress prime-order uniform Cayley cutoff theorem
+        run: python computations/verification/cayley_uniform_cutoff_regression.py
+
       - name: Build all maintained C++ verifiers
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release

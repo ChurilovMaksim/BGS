@@ -15,15 +15,29 @@ theorem.
 **Closure condition:** a theorem with explicit `(p,K)` hypotheses and a
 uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
 
-## B. Determine the useful growth regime in K
+## B. Extend the mixed-term growth regime beyond logarithmic K
 
-The current fixed-`K` mixed-term result does not control the number or size of
-cyclotomic bad primes uniformly in `K`, and `(461,23)` is an explicit warning
-against naive extrapolation.
+The characteristic-zero collision classification is now uniform for every odd
+prime `K`, and a resultant argument proves that no non-forced finite-field
+collision exists once
 
-**Closure condition:** either a rigorous growing-`K` exceptional-prime
-bound/average theorem, or a proof that the intended moment regime can avoid
-needing such a uniform statement.
+`p > 12^(K-1)`.
+
+Thus the exact forced-baseline formula is proved in the logarithmic regime
+
+`K-1 < log(p)/log(12)`.
+
+This is genuine progress beyond the earlier fixed-`K` enumerations, but it is
+far weaker than the polynomial-scale regime relevant to the draft off/off
+bound. The exact witness `(p,K)=(461,23)` remains a warning that the cutoff
+cannot simply be deleted: it lies far below `12^22` and has non-forced
+collisions.
+
+**Closure condition:** improve the arithmetic obstruction enough to control the
+mixed term in a polynomial-scale regime (ideally compatible with
+`K=o(p^(1/4))`), prove a sufficiently strong average-over-`p` theorem, or show
+that the eventual moment/local-statistics route can avoid needing such a
+uniform mixed-term statement.
 
 ## C. Re-audit global symmetry statements if they become load-bearing
 
