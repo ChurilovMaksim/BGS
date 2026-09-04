@@ -60,6 +60,11 @@ jobs:
       - name: Regress square-resultant and Fibonacci Cayley structure
         run: python computations/verification/cayley_resultant_fibonacci.py
 
+      - name: Install C++ multiprecision dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libboost-dev
+
       - name: Build all maintained C++ verifiers
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
