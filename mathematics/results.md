@@ -269,7 +269,42 @@ Moreover, if `E_x(H+lambda)` is multiplicative energy, then
 
 Known near-quadratic total multiplicative-energy bounds for shifted subgroups are relevant but do not, by themselves, control the square-sum of the moving distinguished class. This is the precise obstruction to that natural shortcut.
 
-## 14. Matching audit and fixed-K exceptional sets — FINITE-CERTIFICATE
+## 14. Global split-prime collision-mass budget — EXACT + FINITE-REGRESSION
+
+Return to odd prime subgroup order `K` and define the non-forced mixed excess
+
+`Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)`
+
+for split primes `p==1 mod K`.
+
+Simultaneous exponent scaling partitions all non-forced collision quadruples into
+
+`N_K=K^3-5K^2+6K+1`
+
+free Galois orbits. For a normalized orbit `q`, the number of its members that collide modulo `p` is the number of primitive `K`-th roots common to `P_q` and `Phi_K`, hence is at most `v_p(Res(Phi_K,P_q))`.
+
+Using the exact square structure
+
+`Res(Phi_K,P_q)=K^3 M_q^2`
+
+and the fact that a split prime is never `K`, the fixed `K^3` factor carries no collision valuation. The coefficient norm then gives
+
+> `sum_{p==1 mod K} Delta_K(p) log p`
+> `<= (K^3-5K^2+6K+1)((K-1)log12-3logK)`.
+
+Thus the entire non-forced collision mass over all split primes has a deterministic `O(K^4)` logarithmic budget. In particular, for `P>=2` and `L>0`,
+
+`sum_{p>=P, p==1 mod K} Delta_K(p) <= N_K C_K/log P`,
+
+`#{p>=P, p==1 mod K:Delta_K(p)>=L} <= N_K C_K/(L log P)`,
+
+where `C_K=(K-1)log12-3logK`.
+
+These are average/sparsity statements, not a pointwise `O(K^2)` theorem. The exact `K=11,13` regression verifies the Galois-orbit/root/valuation mechanism and, on those finite designs, observes equality between summed valuations and direct excess.
+
+See [`cayley_resultant_mass_budget.md`](cayley_resultant_mass_budget.md).
+
+## 15. Matching audit and fixed-K exceptional sets — FINITE-CERTIFICATE
 
 The 720 integer matching systems have ranks `30` (rank 2), `240` (rank 3), `450` (rank 4); the maximal-minor gcd audit permits an additional rank drop only in characteristic 2.
 
@@ -283,7 +318,7 @@ and
 
 At `(p,K)=(461,23)` the exact mixed Cayley collision energy is `1190`, the forced baseline is `902`, and the excess is `288`.
 
-## 15. Off/off elliptic organization — DRAFT
+## 16. Off/off elliptic organization — DRAFT
 
 Historical symbolic calculations organize the remaining off/off fluctuation by a non-isotrivial genus-one/elliptic pencil and exhibit candidate bad fibers and same-`j` relations. These calculations are structural evidence, not a current theorem certificate.
 
@@ -293,7 +328,7 @@ The target
 
 and regime `K=o(p^(1/4))` remain theorem-draft conclusions until the projective model, bad fibers, twists/isogenies, sheaf irreducibility/complexity, affine boundary and exact correlation-theorem hypotheses are all closed.
 
-## 16. Earlier finite foundations — SCOPED
+## 17. Earlier finite foundations — SCOPED
 
 - Lean finite level-set/orbit/freeness facts at `p=199, K=11`;
 - Lean branch-scale identities at the same design;
@@ -303,12 +338,12 @@ and regime `K=o(p^(1/4))` remain theorem-draft conclusions until the projective 
 
 See [`earlier_foundations.md`](earlier_foundations.md).
 
-## 17. Numerical GOE comparisons — NUMERICAL ONLY
+## 18. Numerical GOE comparisons — NUMERICAL ONLY
 
 The maintained spectral code diagonalizes the full complex Hermitian matrix `M+M^*`. The spacing record reports only a descriptive empirical-CDF distance to the Wigner surmise. The matched window-count record is not stationary number variance. Neither carries inferential pass/fail semantics.
 
 A reconstruction-era implementation briefly projected `M+M^*` to its entrywise real part before diagonalization; the numerical evidence was regenerated after that bug was found. No exact result depended on those floating-point records.
 
-## 18. BGS local statistics — OPEN
+## 19. BGS local statistics — OPEN
 
 Nothing above proves microscopic BGS/GOE eigenphase statistics for the arithmetic cat-map family. A local-law/comparison mechanism remains a separate open bridge. Rigorous BGS results do exist for special model classes such as mixing quantum graphs under their own hypotheses; they are not transferable to this family without a new argument.
