@@ -15,7 +15,7 @@ theorem.
 **Closure condition:** a theorem with explicit `(p,K)` hypotheses and a
 uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
 
-## B. Improve the proved direct mixed-energy exponent to the centered quadratic scale
+## B. Improve the proved pointwise mixed-energy exponent to the centered quadratic scale
 
 The old question “eliminate every exceptional collision” is no longer the
 right closure condition. The square-resultant/Fibonacci analysis shows that
@@ -24,56 +24,81 @@ remain small.
 
 ### What is already closed
 
-There is now a genuine uniform polynomial-scale theorem. For every odd prime
+There is a uniform pointwise polynomial-scale theorem. For every odd prime
 `p`, every subgroup `H<=F_p^*` of order
 
 `100<K<p^(3/4)/3`,
 
-and `A=c(H\{1})`, the bilinear-fiber argument in
-[`cayley_direct_energy.md`](cayley_direct_energy.md) gives
+and `A=c(H\{1})`,
 
-`E_+(A)<34 K^(8/3)`
+`E_+(A)<34 K^(8/3)`,
 
-and hence
+`sum_t C_H(t)^2<34 K^(8/3)`,
 
-`sum_t C_H(t)^2<34 K^(8/3)`.
-
-After the exact coefficient `2(p-2)` is propagated through the repository
-variance normalization, the mixed centered variance is
+and the mixed centered variance in the repository normalization is
 
 `<136 p K^(8/3)`.
 
-So a pointwise polynomial-scale mixed theorem is **proved**; the remaining
-pointwise issue is the exponent gap.
+See [`cayley_direct_energy.md`](cayley_direct_energy.md).
 
-There is also a new exact prime-averaged arithmetic theorem for odd prime `K`.
-If
-
-`Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)`
-
-for split primes `p==1 mod K`, then
+For odd prime `K`, the exact resultant theorem also gives the global split-prime budget
 
 `sum_{p==1 mod K} Delta_K(p) log p`
 
-is at most
+`<= (K^3-5K^2+6K+1)((K-1)log12-3logK)`,
 
-`(K^3-5K^2+6K+1)((K-1)log12-3logK)`.
+where
+
+`Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)`.
 
 See [`cayley_resultant_mass_budget.md`](cayley_resultant_mass_budget.md).
-This gives a deterministic `O(K^4)` budget for the total non-forced collision
-mass over **all** split primes and corresponding tail/sparsity bounds. It is a
-real averaged result, but it is not yet a normalized average in a prescribed
-`p`-interval; such a statement needs an independent lower bound for the number
-of split primes in that interval.
 
-### The remaining sharp target
+The previously open normalization step over a varying split-prime interval is
+now also closed in a two-parameter dyadic average. For every fixed
+
+`0<theta<1/3`,
+
+let `D_theta(X)` consist of prime pairs
+
+`K in (X^theta/2,X^theta]`,
+
+`p in (X/2,X]`,
+
+`p==1 mod K`.
+
+Bombieri--Vinogradov plus the ordinary prime number theorem gives
+
+`|D_theta(X)| ~ [log2/(2theta)] X/(log X)^2`,
+
+and the resultant mass budget gives
+
+`1/|D_theta(X)| sum_(K,p in D_theta(X)) Delta_K(p)/K^2`
+
+`<<_theta X^(3theta-1) -> 0`.
+
+Thus for every fixed `eta>0` the proportion of split pairs with
+`Delta_K(p)>=eta K^2` tends to zero. In particular, for `theta<1/4` this is an
+almost-all quadratic mixed-energy theorem strictly inside the intended
+`K=o(p^(1/4))` regime. The result actually holds as a double average up to
+`theta<1/3`.
+
+The same theorem has an exact full-annihilator twisted-Jacobi formulation:
+
+`1_Ahat(r)=K Tr M_S(2r)`.
+
+Its nonzero-frequency trace second/fourth moment ratio tends to the
+real-Gaussian value `3` in the same double average. This is not a CLT and not a
+local eigenvalue-statistics statement.
+
+See [`cayley_jacobi_trace_average.md`](cayley_jacobi_trace_average.md).
+
+### The remaining sharp pointwise target
 
 For every set `A subset F_p`,
 
 `E_+(A)=|A|^4/p + 1/p sum_{q!=0}|1_Ahat(q)|^4`.
 
-Thus a global raw bound `E_+(A)=O(K^2)` is not the correct statement in dense
-regimes. The sharp pointwise target is
+The density term is unavoidable. The sharp pointwise target is
 
 `E_+(A)=(K-1)^4/p + O(K^(2+o(1)))`,
 
@@ -84,30 +109,27 @@ or equivalently
 In the intended regime `K=o(p^(1/4))`, the density term is negligible at the
 quadratic collision scale.
 
-[`cayley_centered_energy.md`](cayley_centered_energy.md) gives two exact
-reformulations exposing the highest-value routes:
-
-1. a character decomposition
-   `1_Ahat(q)=e_p(q)/|H^perp| * sum_chi T_chi(q)` with an exactly computed Gram
-   matrix for the `T_chi` family;
-2. a torus-versus-unipotent PGL2 intersection formulation, equivalently a
-   moving distinguished-product class in shifted subgroups `H+lambda`.
+[`cayley_centered_energy.md`](cayley_centered_energy.md) gives the exact
+character Gram matrix, torus-versus-unipotent PGL2 intersection formulation,
+and shifted-product formulation. The new trace identity additionally identifies
+the same Fourier transform with the ordinary trace of the full annihilator
+Twisted-Jacobi matrix.
 
 Generic pointwise Stepanov gives the current `8/3` exponent. The audited
 Möbius-incidence and shifted-subgroup multiplicative-energy theorems do not, by
-themselves, sum the moving distinguished classes with only quadratic loss.
-Termwise square-root bounds on the trace functions also discard the joint
-character-family cancellation required by the fourth moment.
+themselves, remove the remaining `K^(2/3)` pointwise loss. Termwise square-root
+bounds on the trace functions also discard the joint character-family
+cancellation required by the fourth moment.
 
 **Pointwise closure condition:** prove the centered bound above, or any explicit
-`K^(2+delta)` bound with `delta<2/3` that materially enlarges the fourth-moment
-regime after complete propagation through `B(t)` and the variance identity.
+`K^(2+delta)` bound with `delta<2/3` that materially enlarges the pointwise
+fourth-moment regime after complete propagation through `B(t)` and the variance
+identity.
 
-**Prime-averaged closure condition:** combine the exact resultant mass budget
-with a source-exact lower bound for split primes in the relevant varying-modulus
-interval and show that the resulting normalized average is strong enough for
-the intended averaged moment statement. Do not assume a prime number theorem
-in arithmetic progressions in a range where its uniformity is unavailable.
+**Averaged continuation condition:** if a stronger average is pursued, specify
+its averaging measure and parameters explicitly. The dyadic prime-pair average
+above is already closed; do not silently relabel it as a pointwise theorem or
+as an average over a fixed `K`.
 
 ## C. Re-audit global symmetry statements if they become load-bearing
 
