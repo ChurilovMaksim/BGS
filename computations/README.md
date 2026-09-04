@@ -40,10 +40,20 @@ sector) and rejects characters outside it.
   common-root and `p`-adic resultant-valuation regression for the global
   split-prime collision-mass theorem on the complete `K=11,13` exceptional
   sets;
+- `cayley_jacobi_trace_regression.py` — finite complex128 comparison of the
+  exact ordinary full-annihilator identity `1_Ahat(r)=K Tr M_S(2r)` against an
+  independent direct Cayley Fourier transform; all frequencies are checked at
+  `(53,13)` and `(199,11)`, with deterministic larger checks at `(461,23)`, and
+  the exact-energy second/fourth trace-moment formulas are separately regressed;
 - `twisted_jacobi_regression.py` — maintained producer for preserved finite
   twisted-Jacobi regressions;
 - `repository_audit.py` — whole-tree structure, no-Julia, duplicate,
   provenance, Markdown-link, Lean-placeholder/import and CMake-coverage checks.
+
+The Cayley/Jacobi trace regression is intentionally labelled
+**FINITE-REGRESSION**: complex128 agreement checks phase and normalization but
+is not evidence for Bombieri--Vinogradov, the double-averaged asymptotic, a
+Gaussian distribution theorem, or microscopic BGS.
 
 `analysis/spectral_diagnostics.py` keeps the useful finite spectral experiments
 with corrected semantics. It diagonalizes the full complex Hermitian sector

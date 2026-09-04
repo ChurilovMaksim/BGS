@@ -36,7 +36,10 @@ stronger language; this file wins.
 | corresponding mixed centered variance bound `<136 p K^(8/3)` in the repository normalization | **EXACT** | direct energy theorem propagated through the exact mixed coefficient `2(p-2)` |
 | centered-energy identity `E_+(A)=|A|^4/p + p^(-1) sum_{q!=0}|1_Ahat(q)|^4` and exact Cayley Fourier/character Gram matrix | **EXACT** | `mathematics/cayley_centered_energy.md` |
 | for odd prime `K`, weighted split-prime excess budget `sum_{p==1 mod K} Delta_K(p) log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | Galois scaling orbits + `p`-adic common-root count + `K^3 M^2` resultant structure in `mathematics/cayley_resultant_mass_budget.md`; exact K=11,13 regression |
-| sharp centered Cayley target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` (equivalently nonzero Fourier fourth moment `<<pK^(2+o(1))`) | **OPEN** | exact Fourier/character, torus--unipotent, shifted-product and prime-budget reductions isolate the gap; no verified pointwise theorem closes the `K^(2/3)` loss |
+| full-annihilator ordinary trace identity `1_Ahat(r)=K Tr M_S(2r)` and exact trace second/fourth moments | **EXACT + FINITE-REGRESSION** | direct diagonal calculation in `mathematics/cayley_jacobi_trace_average.md`; independent Cayley-Fourier/Jacobi regression |
+| for fixed `0<theta<1/3`, dyadic split pairs `K~X^theta`, `p~X` satisfy average `Delta_K(p)/K^2 <<_theta X^(3theta-1)` and therefore almost-all quadratic excess in pair-density | **EXACT** | global resultant mass budget + classical Bombieri--Vinogradov + PNT in `mathematics/cayley_jacobi_trace_average.md` |
+| full normalized Jacobi trace nonzero-frequency kurtosis has double-average absolute deviation from `3` tending to zero for fixed `0<theta<1/3` | **EXACT** | exact trace moments + previous double-average theorem; this is only a second/fourth moment-ratio statement, not a CLT |
+| sharp pointwise centered Cayley target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` (equivalently nonzero Fourier fourth moment `<<pK^(2+o(1))`) | **OPEN** | exact Fourier/character, torus--unipotent, shifted-product, prime-budget and double-average reductions isolate the gap; no verified pointwise theorem closes the `K^(2/3)` loss |
 | 720 matching rank classification; only characteristic-2 extra rank drop | **FINITE-CERTIFICATE** | `computations/verification/mixed_cayley_energy.py` |
 | `E_11={23,67,89}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
 | `E_13={53,79,131,157,313}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
@@ -47,9 +50,9 @@ stronger language; this file wins.
 
 ## Interpretation of the mixed-term structure
 
-The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff, while the explicit Fibonacci subfamily has `M=F_K` and therefore exponential total norm.  A strategy based on making every non-forced resultant polynomially small is impossible.
+The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff, while the explicit Fibonacci subfamily has `M=F_K` and therefore exponential total norm. A strategy based on making every non-forced resultant polynomially small is impossible.
 
-This does **not** make the mixed energy large.  The rational Fibonacci/Lucas model has constant excess `32`, and the exact 28-digit `K=131` witness has the same excess.
+This does **not** make the mixed energy large. The rational Fibonacci/Lucas model has constant excess `32`, and the exact 28-digit `K=131` witness has the same excess.
 
 The direct Stepanov route gives a genuine pointwise polynomial-scale theorem for every subgroup reduction in
 
@@ -59,21 +62,29 @@ The direct Stepanov route gives a genuine pointwise polynomial-scale theorem for
 
 The load-bearing source hypothesis `deg P(x,0)>=1` was re-read visually from the primary arXiv PDF because text extraction can drop the equality bar; our bilinear Cayley fiber has degree exactly `1`, so this check is material.
 
-A second theorem now controls the exceptional reductions **globally over split primes**.  Normalizing non-forced collision quadruples by simultaneous exponent scaling leaves
+For odd prime `K`, the resultant mass theorem controls exceptional reductions globally:
 
-`N_K=K^3-5K^2+6K+1`
+`sum_{p==1 mod K} Delta_K(p) log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)`.
 
-orbits.  For one normalized orbit, common primitive `K`-th roots modulo a split prime are bounded by the `p`-adic valuation of its resultant.  Because that resultant is exactly `K^3 M^2` and a split prime is never `K`, the inert `K^3` factor can be removed.  Summing gives
+The new ordinary-trace identity identifies the same Cayley Fourier transform with the full annihilator twisted-Jacobi trace:
 
-`sum_{p==1 mod K} Delta_K(p) log p <= N_K((K-1)log12-3logK)`.
+`1_Ahat(r)=K Tr M_S(2r)`.
 
-Thus the total non-forced collision mass over all split primes has a deterministic `O(K^4)` logarithmic budget.  This is an average/sparsity result, not a pointwise quadratic theorem; converting it into a normalized interval average needs an independent count of split primes in that interval.
+This is a direct diagonal identity and uses no cyclic manipulation of noncommutative matrix words; the historical R86/R87 trace shortcut remains retracted.
 
-The remaining pointwise target is the near-quadratic **centered** energy.  Every subset has the zero-Fourier-mode density contribution `|A|^4/p`, so the right target is
+Combining the global `O(K^4)` split-prime budget with Bombieri--Vinogradov after averaging over prime subgroup orders gives a stronger almost-everywhere statement. For fixed `0<theta<1/3`, prime `K in (X^theta/2,X^theta]` and split prime `p in (X/2,X]`, the average normalized excess is
 
-`E_+(A)=(K-1)^4/p+O(K^(2+o(1)))`,
+`O_theta(X^(3theta-1))`.
 
-equivalently a nonzero Fourier fourth-moment bound. `mathematics/cayley_centered_energy.md` records the exact character decomposition, Gram matrix, conjugated-unipotent PGL2 formulation, and shifted-product reformulation. Generic pointwise curve bounds, generic Möbius-incidence bounds, and known total shifted-subgroup multiplicative-energy estimates have not been verified to remove the remaining `K^(2/3)` loss.
+Hence the proportion of such split pairs with `Delta_K(p)>=eta K^2` tends to zero for every fixed `eta>0`. In the BGS-relevant subrange `theta<1/4`, this lies uniformly inside `K=o(p^(1/4))`; the theorem actually extends as a double average to `theta<1/3`. This does **not** upgrade the pointwise centered-energy claim.
+
+Via the exact trace moments, the same double average forces the ordinary full-trace second/fourth moment ratio to the real-Gaussian value `3`. This is not a Gaussian distribution theorem, not a parity/desymmetrized block theorem, and not a local eigenvalue statistic.
+
+The remaining pointwise target is the near-quadratic **centered** energy
+
+`E_+(A)=(K-1)^4/p+O(K^(2+o(1)))`.
+
+Generic pointwise curve bounds, generic Möbius-incidence bounds, known total shifted-subgroup multiplicative-energy estimates, and termwise trace-function square-root bounds have not been verified to remove the remaining `K^(2/3)` loss.
 
 The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption. The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
 

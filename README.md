@@ -26,7 +26,9 @@ Bohigas--Giannoni--Schmit (BGS) / GOE local-statistics problem.
 | Fibonacci slice | **EXACT / FINITE-CERTIFICATE** | `Res(Phi_K,X^2+3X+1)=F_K^2`; rational excess `32`; 28-digit witness |
 | Direct polynomial-scale mixed energy | **EXACT / FINITE-REGRESSION** | `E_+(c(H\{1}))<34K^(8/3)` for `100<K<p^(3/4)/3` |
 | Split-prime non-forced mass | **EXACT / FINITE-REGRESSION** | explicit `O(K^4)` weighted budget over all `p==1 mod K` for odd prime `K` |
-| Sharp centered mixed energy | **OPEN** | target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` |
+| Full Cayley/Jacobi trace | **EXACT / FINITE-REGRESSION** | `1_Ahat(r)=K Tr M_S(2r)` with exact second/fourth trace moments |
+| Double-averaged quadratic mixed excess | **EXACT** | for fixed `theta<1/3`, average `Delta_K(p)/K^2 << X^(3theta-1)` over dyadic split prime pairs |
+| Sharp pointwise centered mixed energy | **OPEN** | target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` |
 | Off/off elliptic correlation | **DRAFT** | projective/sheaf/isogeny obligations remain |
 | GOE finite diagnostics | **NUMERICAL** | descriptive full-Hermitian diagnostics only |
 | Microscopic BGS/GOE law | **OPEN** | no local-law/comparison bridge for this arithmetic family |
@@ -147,7 +149,7 @@ Res(Phi_K(X),X^2+3X+1)=F_K^2.
 So the full cleared norm is `K^3F_K^2`, genuinely exponential in `K`; a
 polynomial bound on every collision resultant is impossible.
 
-Nevertheless the corresponding rational model
+Nevertheless the rational model
 
 ```text
 S_N={+-L_n/F_n:1<=n<=N}
@@ -167,42 +169,29 @@ p=F_131=1066340417491710595814572169,
 ```
 
 a complete Lucas primality certificate plus independent Python/C++
-computations gives
-
-```text
-mixed energy    = 33442
-forced baseline = 33410
-excess          = 32
-max multiplicity= 4
-```
+computations gives mixed energy `33442`, forced baseline `33410`, and excess
+`32`.
 
 Large exceptional primes therefore need not cause large total collision
 energy.
 
 ## Direct polynomial-scale mixed theorem
 
-The sum fiber of the Cayley image is unexpectedly simple:
+The Cayley sum fiber
 
 ```text
 c(x)+c(y)=t
 ```
 
-is equivalent to
+is equivalent to the bilinear equation
 
 ```text
 P_t(x,y)=(2-t)xy+t(x+y)-(2+t)=0.
 ```
 
-For a bilinear polynomial `axy+bx+cy+d`, reducibility over the algebraic closure
-is equivalent to `ad-bc=0`. Here
-
-```text
-ad-bc=-4,
-```
-
-so every fiber is absolutely irreducible in odd characteristic.
-
-A source-exact application of Vyugin--Makarychev Theorem 2 then gives, for
+Its bilinear determinant is `-4`, so every fiber is absolutely irreducible in
+odd characteristic. A source-exact application of Vyugin--Makarychev gives,
+for
 
 ```text
 100<K<p^(3/4)/3,
@@ -218,32 +207,23 @@ The exceptional fibers satisfy `r(0)=K-1` and `r(-2)<=K-1`; hence
 
 ```text
 E_+(A)<34K^(8/3),
-sum_t C_H(t)^2<34K^(8/3).
+sum_t C_H(t)^2<34K^(8/3),
 ```
 
-After propagating the exact mixed coefficient `2(p-2)` through the fourth-
-moment variance normalization,
+and the mixed centered variance is `<136pK^(8/3)` in the repository
+normalization.
 
-```text
-Var_{t!=0}(2(p-2)C_H(t))<136pK^(8/3).
-```
+Full proof: [`mathematics/cayley_direct_energy.md`](mathematics/cayley_direct_energy.md).
 
-This is a genuine uniform polynomial-scale theorem. It applies to every
-subgroup in the stated range, including cyclotomic/Fibonacci exceptional
-reductions, and does not use the resultant cutoff.
+## Pointwise centered target
 
-Full proof and source audit:
-[`mathematics/cayley_direct_energy.md`](mathematics/cayley_direct_energy.md).
-
-## Centered energy: the remaining pointwise exponent gap
-
-For every `A subset F_p`, with unnormalized additive Fourier transform,
+For every `A subset F_p`,
 
 ```text
 E_+(A)=|A|^4/p+(1/p)sum_{q!=0}|1_Ahat(q)|^4.
 ```
 
-The density term is unavoidable, so the correct sharp target is
+The sharp pointwise target for the Cayley image is
 
 ```text
 E_+(A)=(K-1)^4/p+O(K^(2+o(1))),
@@ -255,37 +235,15 @@ or equivalently
 sum_{q!=0}|1_Ahat(q)|^4 << pK^(2+o(1)).
 ```
 
-For the Cayley image, letting `S=H^perp`, `m=(p-1)/K`, and
-`y=(h-1)^(-1)`, the project derives exactly
-
-```text
-1_Ahat(q)=e_p(q)/m * sum_{chi in S} T_chi(q),
-T_chi(q)=sum_{y!=0,-1} chi((y+1)/y)e_p(2qy).
-```
-
-The character family has exact Gram matrix
-
-```text
-sum_q T_chi(q) conjugate(T_eta(q))
-  = p(p-2),  chi=eta,
-  = -p,      chi!=eta.
-```
-
-The same problem is an intersection problem with a one-parameter unipotent
-PGL2 family:
-
-```text
-r_{A-A}(t)=#{h in H\{1}:u_t(h) in H\{1}},
-u_t(h)=((2-t)h+t)/(2+t-th).
-```
-
-No verified theorem currently removes the remaining `K^(2/3)` pointwise loss.
-See [`mathematics/cayley_centered_energy.md`](mathematics/cayley_centered_energy.md).
+The exact character Gram matrix, one-parameter unipotent PGL2 formulation and
+shifted-product formulation are recorded in
+[`mathematics/cayley_centered_energy.md`](mathematics/cayley_centered_energy.md).
+The remaining pointwise exponent loss is `K^(2/3)`.
 
 ## Global split-prime collision-mass theorem
 
-For odd prime subgroup order `K`, simultaneous exponent scaling partitions all
-non-forced collision quadruples into exactly
+For odd prime `K`, simultaneous exponent scaling partitions the non-forced
+collision quadruples into exactly
 
 ```text
 N_K=K^3-5K^2+6K+1
@@ -297,9 +255,7 @@ free Galois orbits. If
 Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)
 ```
 
-for split primes `p==1 mod K`, common-root counting inside each normalized
-orbit, together with `Res(Phi_K,P)=K^3M^2` and
-`|Res(Phi_K,P)|<=12^(K-1)`, gives
+for split primes `p==1 mod K`, then
 
 ```text
 sum_{p==1 mod K} Delta_K(p) log p
@@ -307,12 +263,91 @@ sum_{p==1 mod K} Delta_K(p) log p
 ```
 
 Thus all non-forced collision mass over all split rational primes has an
-explicit deterministic `O(K^4)` logarithmic budget, with immediate tail and
-sparsity corollaries. This is an average/sparsity theorem, not a pointwise
-replacement for the centered-energy target.
+explicit deterministic `O(K^4)` logarithmic budget.
 
-Full proof and exact `K=11,13` regression:
-[`mathematics/cayley_resultant_mass_budget.md`](mathematics/cayley_resultant_mass_budget.md).
+Full proof: [`mathematics/cayley_resultant_mass_budget.md`](mathematics/cayley_resultant_mass_budget.md).
+
+## New: Cayley Fourier transform is the full Jacobi trace
+
+Let `S=H^perp` and let `J_S(q)` be the full annihilator twisted-Jacobi matrix
+in the maintained convention. Define
+
+```text
+M_S(q)=e_p(-q/2)J_S(q)/(p-1).
+```
+
+Then exactly
+
+```text
+1_Ahat(r)=K Tr M_S(2r).
+```
+
+Therefore
+
+```text
+sum_q |Tr M_S(q)|^2 = p(K-1)/K^2,
+sum_q |Tr M_S(q)|^4 = pE_+(A)/K^4,
+Tr M_S(0)=(K-1)/K.
+```
+
+This is an **ordinary full trace** identity, not a parity/desymmetrized block
+statement. It uses no cyclic manipulation of a noncommutative matrix word and
+does not revive the retracted historical trace shortcut.
+
+An independent finite regression compares the maintained Jacobi matrix with a
+direct Cayley Fourier calculation at `(53,13)`, `(199,11)` and sampled
+`(461,23)`.
+
+## New: double-averaged quadratic mixed excess
+
+Fix `0<theta<1/3`, put `Q=X^theta`, and average over prime pairs
+
+```text
+Q/2<K<=Q,
+X/2<p<=X,
+p==1 mod K.
+```
+
+Call this family `D_theta(X)`. Bombieri--Vinogradov, used only after summing
+over the varying prime moduli `K`, together with the ordinary prime number
+theorem gives
+
+```text
+|D_theta(X)| ~ [log2/(2theta)] X/(log X)^2.
+```
+
+Combining this denominator with the exact `O(K^4)` resultant mass budget gives
+
+```text
+1/|D_theta(X)| sum_(K,p) Delta_K(p)/K^2
+ <<_theta X^(3theta-1) -> 0.
+```
+
+Hence for every fixed `eta>0`, the proportion of split pairs with
+`Delta_K(p)>=eta K^2` tends to zero. Equivalently, asymptotically almost every
+dyadic split design has
+
+```text
+sum_t C_H(t)^2=(K-1)(2K-5)+o(K^2)
+```
+
+in pair-density.
+
+The theorem holds in the larger double-average range `theta<1/3`. In the BGS
+moment subrange `theta<1/4`, it lies uniformly inside `K=o(p^(1/4))`.
+
+For the ordinary full normalized Jacobi trace, the exact nonzero-frequency
+kurtosis `kappa=mu4/mu2^2` satisfies
+
+```text
+|kappa-3| << Delta_K(p)/K^2 + 1/K + K^2/p,
+```
+
+so its double-average absolute deviation from `3` tends to zero as well.
+
+**This is not a CLT, not a parity-block theorem, and not microscopic BGS.**
+
+Full proof: [`mathematics/cayley_jacobi_trace_average.md`](mathematics/cayley_jacobi_trace_average.md).
 
 ## Off/off and microscopic BGS remain separate gaps
 
@@ -338,8 +373,8 @@ comparison/local-law mechanism at mean-spacing scale.
 
 | Tool | Role |
 |---|---|
-| Python / SymPy | transparent exact reference, symbolic algebra, resultants, Galois-orbit/valuation regressions, finite certificates, numerical diagnostics |
-| C++20 | independent exact/exhaustive hot paths, including direct Cayley-energy and 28-digit multiprecision verifiers |
+| Python / SymPy | exact reference, resultants, Galois-orbit/valuation regressions, Jacobi/Cayley trace regression, numerical diagnostics |
+| C++20 | independent exact/exhaustive hot paths, direct Cayley-energy and 28-digit multiprecision verifiers |
 | Lean 4 | kernel-checked finite pair-key/Cayley/Fibonacci residual statements and historical falsifiers |
 | TeX + CI | publication-facing integration and independent manuscript build |
 
@@ -353,6 +388,7 @@ python computations/verification/mixed_cayley_energy.py
 python computations/verification/cayley_uniform_cutoff_regression.py
 python computations/verification/cayley_resultant_fibonacci.py
 python computations/verification/cayley_resultant_mass_budget.py
+python computations/verification/cayley_jacobi_trace_regression.py
 python computations/verification/twisted_jacobi_regression.py
 python computations/analysis/spectral_diagnostics.py verify
 
@@ -390,8 +426,7 @@ and is intentionally not required on every CI run.
 ```
 
 The current tree contains zero Julia source files. Historical bytes remain in
-Git history; false or duplicate algorithms were not mechanically ported merely
-to change language percentages.
+Git history.
 
 ## Onboarding another researcher
 
@@ -399,18 +434,18 @@ to change language percentages.
 2. Run the Python/C++/Lean gates above.
 3. Read `record/retractions.md` before reviving historical proof routes.
 4. For the mixed term, read `cayley_direct_energy.md`,
-   `cayley_centered_energy.md`, and `cayley_resultant_mass_budget.md`.
-5. For off/off, start from `mathematics/elliptic_pencil.md` and re-check every
-   external theorem hypothesis against the actual family.
+   `cayley_centered_energy.md`, `cayley_resultant_mass_budget.md`, and
+   `cayley_jacobi_trace_average.md`.
+5. For off/off, start from `mathematics/elliptic_pencil.md`.
 6. Treat microscopic BGS as a separate closure problem after the moment layer.
 
 ## Highest-value next targets
 
-1. improve the proved mixed bound from `K^(8/3)` toward the centered quadratic
-   scale using the exact character-family or torus--unipotent structure;
-2. combine the global resultant mass budget with a source-exact count of split
-   primes only in ranges where the required varying-modulus uniformity is
-   actually proved;
+1. improve the **pointwise** mixed bound from `K^(8/3)` toward centered
+   `K^(2+o(1))` using the exact character/full-trace or torus--unipotent
+   structure;
+2. extend the proved dyadic double-average theorem only under explicitly stated
+   averaging measures and source-exact prime-distribution input;
 3. close the projective/fiber/isogeny/sheaf certificate for the off/off elliptic
    pencil;
 4. formulate and falsify a concrete moment-to-microscopic-local-statistics

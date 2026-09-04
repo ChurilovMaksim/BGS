@@ -120,6 +120,29 @@ Grove–Saad is a useful modern worked example because geometric independence is
 established before square-root correlation is invoked. Zarhin-type results are
 relevant under their hypotheses; neither is a plug-in proof for this pencil.
 
+## Prime distribution input for the double-averaged mixed theorem
+
+28. E. Bombieri, **On the large sieve**, *Mathematika* **12** (1965), 201–225, DOI `10.1112/S0025579300005313`.
+29. H. Iwaniec and E. Kowalski, **Analytic Number Theory**, American Mathematical Society Colloquium Publications **53** (2004), DOI `10.1090/coll/053`.
+
+The only load-bearing use of these sources in the current project is the
+classical Bombieri--Vinogradov theorem for primes in arithmetic progressions,
+used in `mathematics/cayley_jacobi_trace_average.md` to count the two-parameter
+dyadic family of split designs after averaging over the prime modulus `K`.
+The exact form used is Iwaniec--Kowalski, Theorem 17.1: for every fixed error
+power, the sum over moduli up to `x^(1/2)` with a sufficient logarithmic saving
+of the maximal progression error is `O(x log^(-A-1)x)`.  For every fixed
+`theta<1/2`, the dyadic moduli `K asymp X^theta` eventually lie in this range at
+both endpoints `X` and `X/2`.  The ordinary prime number theorem and partial
+summation then give the dyadic main term.  No pointwise prime number theorem for
+an individual varying modulus is assumed, and no Bombieri--Vinogradov input is
+used in the pointwise `K^(8/3)` Cayley theorem.
+
+Bombieri's DOI/title record and the Iwaniec--Kowalski book DOI were independently
+resolved on 2026-09-04.  A secondary source was used only as a theorem locator
+for the exact Iwaniec--Kowalski theorem number; the mathematical statement was
+cross-checked against standard Bombieri--Vinogradov formulations.
+
 ## Citation discipline
 
 Any publication-grade use of an external theorem must cite the exact

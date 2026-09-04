@@ -171,9 +171,7 @@ This demonstrates that very large exceptional split primes are compatible with n
 
 ## 11. Direct polynomial-scale Cayley energy — EXACT + FINITE-REGRESSION
 
-Now no primality assumption on `K` is needed. Let `p` be odd, `H<=F_p^*` have order `K`, and
-
-`A=c(H\{1})`.
+No primality assumption on `K` is needed here. Let `p` be odd, `H<=F_p^*` have order `K`, and `A=c(H\{1})`.
 
 For
 
@@ -183,11 +181,9 @@ the equation `c(x)+c(y)=t` is exactly
 
 `P_t(x,y)=(2-t)xy+t(x+y)-(2+t)=0`.
 
-Every fiber is absolutely irreducible in odd characteristic because for a bilinear polynomial `axy+bx+cy+d` the determinant criterion gives
+Every fiber is absolutely irreducible in odd characteristic because the bilinear determinant is `-4`.
 
-`ad-bc=-4`.
-
-Vyugin--Makarychev Theorem 2, with its source hypotheses checked against the primary arXiv PDF, therefore gives for
+Vyugin--Makarychev Theorem 2, with its source hypotheses checked against the primary arXiv PDF, gives for
 
 `100<K<p^(3/4)/3`
 
@@ -199,7 +195,7 @@ The exceptional fibers satisfy `r(0)=K-1` and `r(-2)<=K-1`. Hence
 
 > `E_+(A)<34 K^(8/3)`.
 
-Equivalently for the mixed collision distribution,
+Equivalently
 
 > `sum_t C_H(t)^2 < 34 K^(8/3)`.
 
@@ -207,7 +203,7 @@ After the exact coefficient `2(p-2)` in the fourth-moment decomposition is propa
 
 > `Var_{t!=0}(2(p-2)C_H(t)) < 136 p K^(8/3)`.
 
-This is the first uniform polynomial-scale mixed theorem in the project. It applies to every subgroup reduction in the stated range, including cyclotomic/Fibonacci exceptional primes, and does not use a resultant cutoff.
+This is the first uniform pointwise polynomial-scale mixed theorem in the project.
 
 See [`cayley_direct_energy.md`](cayley_direct_energy.md).
 
@@ -217,9 +213,9 @@ For any `A subset F_p`, with unnormalized additive Fourier transform,
 
 `E_+(A)=|A|^4/p + 1/p sum_{q!=0}|1_Ahat(q)|^4`.
 
-Thus a global raw statement `E_+(A)=O(K^2)` is not the correct target: the density term `|A|^4/p` is unavoidable.
+Thus a global raw statement `E_+(A)=O(K^2)` is not the correct target: the density term is unavoidable.
 
-For the Cayley image the sharp target is
+For the Cayley image the sharp pointwise target is
 
 > `E_+(A)=(K-1)^4/p + O(K^(2+o(1)))`,
 
@@ -229,49 +225,26 @@ or equivalently
 
 This remains **OPEN**.
 
-Let `S=H^perp`, `m=(p-1)/K`. With `y=(h-1)^(-1)`, one has `h=(y+1)/y`, `c(h)=1+2y`, and exactly
-
-`1_Ahat(q)=e_p(q)/m * sum_{chi in S} T_chi(q)`,
-
-`T_chi(q)=sum_{y!=0,-1} chi((y+1)/y)e_p(2qy)`.
-
-The character family has exact Gram matrix
-
-`sum_q T_chi(q) conjugate(T_eta(q)) = p(p-2)` if `chi=eta`, and `-p` otherwise.
-
-This recovers `sum_q|1_Ahat(q)|^2=p(K-1)`, but the desired theorem is an `L^4` statement and needs genuinely joint character-family cancellation.
-
-The same problem has an exact PGL2 form:
-
-`r_{A-A}(t)=#{h in H\{1}:u_t(h) in H\{1}}`,
-
-`u_t(h)=((2-t)h+t)/(2+t-th)`,
-
-where `{u_t}` is a one-parameter unipotent subgroup conjugate to additive translations by the Cayley transform.
-
-See [`cayley_centered_energy.md`](cayley_centered_energy.md).
+The exact character decomposition and Gram matrix are recorded in
+[`cayley_centered_energy.md`](cayley_centered_energy.md), together with the equivalent one-parameter unipotent PGL2 and shifted-product formulations.
 
 ## 13. Shifted-product relation and its exact obstruction — EXACT
 
-For `t!=2`, put `lambda=t/(2-t)`. The sum fiber factorizes as
-
-`((2-t)x+t)((2-t)y+t)=(2-t)P_t(x,y)+4`,
-
-so on `P_t=0`,
+For `t!=2`, put `lambda=t/(2-t)`. The sum fiber factorizes so that on `P_t=0`,
 
 `(x+lambda)(y+lambda)=(1+lambda)^2`.
 
-Thus each Cayley fiber is one distinguished product class in the shifted subgroup `H+lambda`.
+Thus each Cayley fiber is one distinguished product class in `H+lambda`.
 
-Moreover, if `E_x(H+lambda)` is multiplicative energy, then
+Moreover,
 
 `sum_lambda E_x(H+lambda)=K^4-E_+(H)+p(2K^2-K)`.
 
-Known near-quadratic total multiplicative-energy bounds for shifted subgroups are relevant but do not, by themselves, control the square-sum of the moving distinguished class. This is the precise obstruction to that natural shortcut.
+Known near-quadratic total multiplicative-energy bounds for shifted subgroups do not by themselves control the square-sum of the moving distinguished class.
 
 ## 14. Global split-prime collision-mass budget — EXACT + FINITE-REGRESSION
 
-Return to odd prime subgroup order `K` and define the non-forced mixed excess
+For odd prime subgroup order `K`, define
 
 `Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)`
 
@@ -281,30 +254,90 @@ Simultaneous exponent scaling partitions all non-forced collision quadruples int
 
 `N_K=K^3-5K^2+6K+1`
 
-free Galois orbits. For a normalized orbit `q`, the number of its members that collide modulo `p` is the number of primitive `K`-th roots common to `P_q` and `Phi_K`, hence is at most `v_p(Res(Phi_K,P_q))`.
-
-Using the exact square structure
+free Galois orbits. A normalized orbit contributes at most the corresponding split-prime valuation of its resultant. Using
 
 `Res(Phi_K,P_q)=K^3 M_q^2`
 
-and the fact that a split prime is never `K`, the fixed `K^3` factor carries no collision valuation. The coefficient norm then gives
+and the coefficient norm gives
 
 > `sum_{p==1 mod K} Delta_K(p) log p`
 > `<= (K^3-5K^2+6K+1)((K-1)log12-3logK)`.
 
-Thus the entire non-forced collision mass over all split primes has a deterministic `O(K^4)` logarithmic budget. In particular, for `P>=2` and `L>0`,
-
-`sum_{p>=P, p==1 mod K} Delta_K(p) <= N_K C_K/log P`,
-
-`#{p>=P, p==1 mod K:Delta_K(p)>=L} <= N_K C_K/(L log P)`,
-
-where `C_K=(K-1)log12-3logK`.
-
-These are average/sparsity statements, not a pointwise `O(K^2)` theorem. The exact `K=11,13` regression verifies the Galois-orbit/root/valuation mechanism and, on those finite designs, observes equality between summed valuations and direct excess.
+Thus the total non-forced collision mass over all split primes has a deterministic `O(K^4)` logarithmic budget, with explicit tail/sparsity corollaries.
 
 See [`cayley_resultant_mass_budget.md`](cayley_resultant_mass_budget.md).
 
-## 15. Matching audit and fixed-K exceptional sets — FINITE-CERTIFICATE
+## 15. Cayley Fourier transform is the full twisted-Jacobi trace — EXACT + FINITE-REGRESSION
+
+Let `S=H^perp`, `m=(p-1)/K`, and let `J_S(q)` be the full annihilator twisted-Jacobi matrix in the maintained convention. Define
+
+`M_S(q)=e_p(-q/2) J_S(q)/(p-1)`.
+
+Then for every `r in F_p`,
+
+> `1_Ahat(r)=K Tr M_S(2r)`.
+
+This is an ordinary diagonal trace identity. It uses no cyclic manipulation of noncommutative matrix words and is unrelated to the retracted historical R86/R87 trace shortcut.
+
+Consequently
+
+`sum_q |Tr M_S(q)|^2 = p(K-1)/K^2`,
+
+`sum_q |Tr M_S(q)|^4 = p E_+(A)/K^4`,
+
+and `Tr M_S(0)=(K-1)/K`.
+
+An independent finite regression compares the maintained Jacobi matrix directly with Cayley Fourier values at `(53,13)`, `(199,11)` and sampled `(461,23)`.
+
+See [`cayley_jacobi_trace_average.md`](cayley_jacobi_trace_average.md).
+
+## 16. Double-averaged quadratic mixed excess — EXACT
+
+Fix `0<theta<1/3`, set `Q=X^theta`, and define
+
+`D_theta(X)={(K,p): K,p prime, Q/2<K<=Q, X/2<p<=X, p==1 mod K}`.
+
+Bombieri--Vinogradov, the prime number theorem and partial summation give
+
+`|D_theta(X)| ~ [log(2)/(2 theta)] X/(log X)^2`.
+
+Combining this denominator with the exact global resultant mass budget gives
+
+> `1/|D_theta(X)| sum_(K,p in D_theta(X)) Delta_K(p)/K^2`
+> `<<_theta X^(3theta-1) -> 0`.
+
+Hence for every fixed `eta>0`, the proportion of pairs with
+
+`Delta_K(p)>=eta K^2`
+
+tends to zero. Equivalently, asymptotically almost every dyadic split design has
+
+`sum_t C_H(t)^2=(K-1)(2K-5)+o(K^2)`
+
+in pair-density.
+
+The theorem holds throughout `theta<1/3`; in the BGS-moment subrange `theta<1/4`, it lies uniformly inside `K=o(p^(1/4))`. This is a **double-average/almost-all statement**, not a pointwise centered-energy theorem.
+
+## 17. Double-averaged full-trace fourth-moment ratio — EXACT
+
+Let `mu_2,mu_4` be the nonzero-frequency second and fourth moments of `Tr M_S(q)`, and set
+
+`kappa(K,p)=mu_4/mu_2^2`.
+
+The trace is real because `A=-A`. From the exact trace moments,
+
+`|kappa(K,p)-3| << Delta_K(p)/K^2 + 1/K + K^2/p`.
+
+Therefore over `D_theta(X)`, for every fixed `0<theta<1/3`,
+
+> `1/|D_theta(X)| sum |kappa(K,p)-3|`
+> `<<_theta X^(3theta-1)+X^(-theta)+X^(2theta-1) -> 0`.
+
+Thus the **ordinary full normalized Jacobi trace** has the real-Gaussian second/fourth moment ratio in this double average.
+
+This is not a CLT, not a parity/desymmetrized-block statement, and not a local eigenvalue-statistics theorem.
+
+## 18. Matching audit and fixed-K exceptional sets — FINITE-CERTIFICATE
 
 The 720 integer matching systems have ranks `30` (rank 2), `240` (rank 3), `450` (rank 4); the maximal-minor gcd audit permits an additional rank drop only in characteristic 2.
 
@@ -318,7 +351,7 @@ and
 
 At `(p,K)=(461,23)` the exact mixed Cayley collision energy is `1190`, the forced baseline is `902`, and the excess is `288`.
 
-## 16. Off/off elliptic organization — DRAFT
+## 19. Off/off elliptic organization — DRAFT
 
 Historical symbolic calculations organize the remaining off/off fluctuation by a non-isotrivial genus-one/elliptic pencil and exhibit candidate bad fibers and same-`j` relations. These calculations are structural evidence, not a current theorem certificate.
 
@@ -328,7 +361,7 @@ The target
 
 and regime `K=o(p^(1/4))` remain theorem-draft conclusions until the projective model, bad fibers, twists/isogenies, sheaf irreducibility/complexity, affine boundary and exact correlation-theorem hypotheses are all closed.
 
-## 17. Earlier finite foundations — SCOPED
+## 20. Earlier finite foundations — SCOPED
 
 - Lean finite level-set/orbit/freeness facts at `p=199, K=11`;
 - Lean branch-scale identities at the same design;
@@ -338,12 +371,12 @@ and regime `K=o(p^(1/4))` remain theorem-draft conclusions until the projective 
 
 See [`earlier_foundations.md`](earlier_foundations.md).
 
-## 18. Numerical GOE comparisons — NUMERICAL ONLY
+## 21. Numerical GOE comparisons — NUMERICAL ONLY
 
 The maintained spectral code diagonalizes the full complex Hermitian matrix `M+M^*`. The spacing record reports only a descriptive empirical-CDF distance to the Wigner surmise. The matched window-count record is not stationary number variance. Neither carries inferential pass/fail semantics.
 
 A reconstruction-era implementation briefly projected `M+M^*` to its entrywise real part before diagonalization; the numerical evidence was regenerated after that bug was found. No exact result depended on those floating-point records.
 
-## 19. BGS local statistics — OPEN
+## 22. BGS local statistics — OPEN
 
 Nothing above proves microscopic BGS/GOE eigenphase statistics for the arithmetic cat-map family. A local-law/comparison mechanism remains a separate open bridge. Rigorous BGS results do exist for special model classes such as mixing quantum graphs under their own hypotheses; they are not transferable to this family without a new argument.

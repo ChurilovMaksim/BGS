@@ -33,6 +33,9 @@ jobs:
       - name: Run active twisted-Jacobi regression
         run: python computations/verification/twisted_jacobi_regression.py
 
+      - name: Regress Cayley Fourier / full Jacobi trace identity
+        run: python computations/verification/cayley_jacobi_trace_regression.py
+
       - name: Verify committed full-Hermitian spectral diagnostics
         run: python computations/analysis/spectral_diagnostics.py verify
 
