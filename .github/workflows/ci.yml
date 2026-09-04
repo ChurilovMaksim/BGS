@@ -72,6 +72,9 @@ jobs:
       - name: Regress ratio-orbit and fourth-power discriminant structure
         run: python computations/verification/cayley_ratio_orbit_factorization.py
 
+      - name: Regress shifted-energy Cayley orbit reduction
+        run: python computations/verification/cayley_shifted_energy_orbits.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
