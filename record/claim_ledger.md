@@ -32,7 +32,10 @@ stronger language; this file wins.
 | Fibonacci collision slice `Res(Phi_K,X^2+3X+1)=F_K^2` and full collision norm `K^3 F_K^2` | **EXACT + FINITE-REGRESSION** | Binet/Lucas derivation + exact resultant checks through `K=29` |
 | rational set `S_N={+-L_n/F_n:1<=n<=N}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | full proof in `mathematics/fibonacci_ratio_energy_proof.md`, using Yabuta Theorem 3 for the unbounded primitive-divisor step; Python + `FibonacciRatioSmall.lean` close only the bounded residue |
 | `(K,p)=(131,F_131)` is a 28-digit prime Fibonacci-slice witness with energy `33442`, baseline `33410`, excess `32` | **FINITE-CERTIFICATE** | complete Lucas primality certificate + independent Python/C++ arbitrary-precision Cayley audits |
-| useful polynomial-scale **energy bound** for arbitrary prime-order Cayley sets | **OPEN** | worst-case zero-collision cutoff is the wrong target; Fibonacci slice has large bad primes but only constant excess |
+| for any odd prime `p` and subgroup `H<=F_p^*` of order `100<K<p^(3/4)/3`, `E_+(c(H\{1}))<34 K^(8/3)` and `sum_t C_H(t)^2<34K^(8/3)` | **EXACT + FINITE-REGRESSION** | bilinear fibers + source-exact Vyugin--Makarychev Theorem 2 in `mathematics/cayley_direct_energy.md`; independent C++ finite verifier |
+| corresponding mixed centered variance bound `<136 p K^(8/3)` in the repository normalization | **EXACT** | direct energy theorem propagated through the exact mixed coefficient `2(p-2)` |
+| centered-energy identity `E_+(A)=|A|^4/p + p^(-1) sum_{q!=0}|1_Ahat(q)|^4` and exact Cayley Fourier/character Gram matrix | **EXACT** | `mathematics/cayley_centered_energy.md` |
+| sharp centered Cayley target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` (equivalently nonzero Fourier fourth moment `<<pK^(2+o(1))`) | **OPEN** | exact Fourier/character and torus--unipotent reductions now isolate the gap; no verified theorem closes the `K^(2/3)` exponent loss |
 | 720 matching rank classification; only characteristic-2 extra rank drop | **FINITE-CERTIFICATE** | `computations/verification/mixed_cayley_energy.py` |
 | `E_11={23,67,89}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
 | `E_13={53,79,131,157,313}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
@@ -41,13 +44,21 @@ stronger language; this file wins.
 | off/off estimate `O(K^2 p+K^4 sqrt(p)+K^4)` | **DRAFT** | elliptic/sheaf obligations remain |
 | microscopic BGS/GOE local eigenphase law | **OPEN** | no current proof |
 
-## Interpretation of the new mixed-term structure
+## Interpretation of the mixed-term structure
 
 The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff by a square root.  The explicit Fibonacci subfamily has `M=F_K`, so `M` itself grows exponentially: a strategy that first proves a polynomial bound on the *whole norm* is impossible.
 
-This does **not** show that the mixed energy is large.  In fact the rational Fibonacci/Lucas model has only constant excess `32`, and the exact 28-digit `K=131` finite-field witness has the same excess.  The open problem is therefore promoted from “eliminate every non-forced collision” to the more relevant quantitative question “bound the total collision energy uniformly”.
+This does **not** show that the mixed energy is large.  The rational Fibonacci/Lucas model has only constant excess `32`, and the exact 28-digit `K=131` finite-field witness has the same excess.
 
-The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption.  The full proof now spells out the two previously compressed load-bearing points: strict injectivity of the fixed-upper-index difference ratio and uniqueness of the fixed-index-sum Fibonacci product.  The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
+The direct Stepanov route now gives a genuine polynomial-scale theorem for all subgroup reductions in the explicit range `100<K<p^(3/4)/3`:
+
+`E_+(c(H\{1})) < 34 K^(8/3)`.
+
+The load-bearing source hypothesis `deg P(x,0)>=1` was re-read visually from the primary arXiv PDF because text extraction can drop the equality bar; our bilinear Cayley fiber has degree exactly `1`, so this check is material.
+
+The remaining target is sharper than the old phrase “bound the total energy uniformly”.  Every subset has the zero-Fourier-mode density contribution `|A|^4/p`, so the right target is a near-quadratic **centered** energy, equivalently a nonzero Fourier fourth-moment bound.  `mathematics/cayley_centered_energy.md` records the exact character decomposition, its Gram matrix, the conjugated-unipotent PGL2 formulation, and the shifted-product reformulation.  Generic pointwise curve bounds, generic Möbius-incidence bounds, and known total shifted-subgroup multiplicative-energy estimates have not been verified to remove the remaining `K^(2/3)` loss.
+
+The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption.  The full proof spells out the two previously compressed load-bearing points: strict injectivity of the fixed-upper-index difference ratio and uniqueness of the fixed-index-sum Fibonacci product.  The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
 
 ## Earlier useful foundations
 
