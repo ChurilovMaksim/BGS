@@ -1,17 +1,18 @@
 # Higher product-row intersections and cyclotomic subresultants
 
-**Status: EXACT for the subresultant obstruction and its quadratic-energy corollary away from an explicit finite exceptional integer; FINITE-REGRESSION for small prime orders; OPEN for a growing-`K` bound on the eligible split prime divisors.**
+**Status: EXACT for the row-polynomial construction and reduction; EXACT + EXTERNAL-THEOREM for the standard subresultant criterion; FINITE-REGRESSION for small prime orders; OPEN for a growing-`K` bound on the eligible split prime divisors.**
 
 This note refines `cayley_product_row_intersections.md`.  The exact row identity
 shows that a uniform bound on pairwise product-row intersections would close the
-remaining pointwise Cayley-energy gap.  Here we isolate intersections of
-multiplicity at least four by the first three subresultants of two explicit
-cyclotomic row polynomials.
+remaining pointwise Cayley-energy gap.  Here intersections of multiplicity at
+least **three** are isolated by the first three subresultants of two explicit
+cyclotomic row forms.
 
 The main consequence is:
 
 > for each fixed odd prime `K`, every split prime outside an explicit finite set
-> already satisfies a pointwise `O(K^2)` Cayley excess bound.
+> already satisfies a pointwise `O(K^2)` Cayley-energy bound, with the explicit
+> estimate `E_+(A)<=11(K-1)(K-2)`.
 
 The unresolved issue is no longer the existence of occasional non-forced
 collisions.  It is the arithmetic size and split-prime support of the much
@@ -49,21 +50,28 @@ The trace class `a~-a` determines the unordered pair.  The invalid pair with
 A_i=(F_K/{+-1}) \ {+-i}.                                 (1)
 ```
 
-It has `m` elements.  For `a in A_i`, set
+There are `m+1` trace classes before the deletion and hence `|A_i|=m`.  For
+`a in A_i`, set
 
 ```text
 N_i=1-zeta^(2i),
 D_(i,a)=zeta^i(zeta^a+zeta^(-a))-2.                      (2)
 ```
 
-The shifted Cayley parameter `mu=t/(2-t)` satisfies
+The shifted Cayley parameter
+
+```text
+mu=t/(2-t)
+```
+
+satisfies
 
 ```text
 mu=N_i/D_(i,a).                                          (3)
 ```
 
-If `D_(i,a)=0`, equation (3) is the projective value `mu=infinity`,
-corresponding to `t=2`.
+If `D_(i,a)=0`, equation (3) is the projective value `mu=infinity`, which is
+exactly the finite Cayley parameter `t=2`.
 
 Define the homogeneous degree-`m` row form
 
@@ -71,15 +79,10 @@ Define the homogeneous degree-`m` row form
 R_i(U,V)=prod_{a in A_i}(D_(i,a) U-N_i V) in O_L[U,V].   (4)
 ```
 
-Its projective roots are exactly the valid nonzero Cayley parameters supported
-by row `i`, expressed in the `mu` coordinate.  The dehomogenization
-
-```text
-R_i(U)=R_i(U,1)                                           (5)
-```
-
-records all finite roots; a root at infinity appears as a drop of leading
-degree after reduction.
+The Mobius map `t -> mu=t/(2-t)` identifies the finite nonzero Cayley
+parameters of row `i` bijectively with the projective roots of `R_i`.  In
+particular `t=2` is not exceptional for the projective row form: it is simply
+`[U:V]=[1:0]`.
 
 Characteristic-zero Cayley rigidity implies that `R_i` and `R_j` have no
 common projective root for `i!=j`.
@@ -95,13 +98,13 @@ sigma_c(zeta)=zeta^c
 sends
 
 ```text
-R_i -> R_(ci).                                            (6)
+R_i -> R_(ci).                                            (5)
 ```
 
 Thus every ordered distinct row pair `(i,j)` is Galois-equivalent to
 
 ```text
-(1,r),  r=j/i in F_K^*\{1}.                              (7)
+(1,r),  r=j/i in F_K^*\{1}.                              (6)
 ```
 
 For unordered row pairs, `r` and `r^(-1)` describe the same Galois orbit.
@@ -109,90 +112,102 @@ There are `(K-1)/2` such ratio classes.
 
 ## 3. The order-three subresultant integer
 
-Fix `r!=1`.  Let
+Fix `r!=1`.  Dehomogenize at `V=1` in characteristic zero and let
 
 ```text
-S_j^(r)(U)=Sres_j(R_1(U),R_r(U)),  j=0,1,2,              (8)
+S_j^(r)(U)=Sres_j(R_1(U,1),R_r(U,1)),  j=0,1,2,          (7)
 ```
 
-be the classical polynomial subresultants over `O_L`; `S_0` is the resultant.
-Every coefficient of every `S_j^(r)` is an algebraic integer.
+be the fixed-degree classical polynomial subresultants; `S_0` is the
+resultant.  Equivalently, their coefficients are the standard determinantal
+minors of the two degree-`m` homogeneous coefficient arrays.  Every coefficient
+is an algebraic integer.
 
 Let `C_(K,r)^(3)` be the finite set of all **nonzero** coefficients occurring
 in `S_0^(r),S_1^(r),S_2^(r)`, and define
 
 ```text
 G_(K,r)^(3)
- =gcd{ |N_(L/Q)(c)| : c in C_(K,r)^(3) } in Z_(>0).      (9)
+ =gcd{ |N_(L/Q)(c)| : c in C_(K,r)^(3) } in Z_(>0).      (8)
 ```
 
-The resultant is nonzero in characteristic zero, so the set contains a nonzero
-norm and (9) is well-defined.
-
-Since every split prime satisfies `p!=2,K`, define the eligible part
+The characteristic-zero resultant is nonzero, so (8) is well-defined.
+Since every split prime satisfies `p!=2,K`, define
 
 ```text
 G'_(K,r)^(3)
- =G_(K,r)^(3) with all factors 2 and K removed.           (10)
+ =G_(K,r)^(3) with all factors 2 and K removed.           (9)
 ```
 
 Finally, over one representative from each unordered ratio class, put
 
 ```text
-G'_K^(3)=prod_[r] G'_(K,r)^(3).                           (11)
+G'_K^(3)=prod_[r] G'_(K,r)^(3).                           (10)
 ```
 
-No bound on (11) is asserted yet.
+No growing-`K` bound on (10) is asserted.
 
 ## 4. Exact high-intersection obstruction
 
 Let `p==1 mod K` be prime and choose a prime ideal `P` of `O_L` above `p`,
-corresponding to a reduction `zeta -> h` with `h` of exact order `K` in
-`F_p^*`.
-
-For two product rows, let `I_(i,j)(p)` be the number of common **finite Cayley
-parameters `t`** in the notation of `cayley_product_row_intersections.md`.
-There can be at most one common projective parameter with `t=2`.
-
-### Theorem 1 (subresultant obstruction)
-
-If two distinct product rows satisfy
+corresponding to a reduction
 
 ```text
-I_(i,j)(p)>=4,                                            (12)
+zeta -> h in F_p^*,   ord(h)=K.
 ```
 
-then, with `r=j/i mod K` (up to inversion),
+Let `I_(i,j)(p)` be the number of common finite Cayley parameters `t` of two
+distinct product rows.  By the projective parametrization in Section 1, these
+are exactly the common projective roots of the reduced homogeneous row forms.
+
+### Theorem 1 (order-three subresultant obstruction)
+
+If
 
 ```text
-p | G'_(K,r)^(3).                                         (13)
+I_(i,j)(p)>=3,                                            (11)
+```
+
+then, with `r=j/i mod K` up to inversion,
+
+```text
+p | G'_(K,r)^(3).                                         (12)
 ```
 
 ### Proof
 
-At most one of the common parameters in (12) is the projective value `t=2`.
-Therefore the reductions of the dehomogenized row polynomials have at least
-three distinct common finite roots.  Their gcd over `F_p[U]` has degree at
-least three.
+Reduce the two degree-`m` homogeneous row forms modulo `P`.  Condition (11)
+gives at least three distinct common projective roots, so their homogeneous gcd
+has degree at least three.
 
-The standard subresultant criterion then forces every coefficient of
+For two fixed-degree binary forms over a field, the subresultant theorem says
+that a gcd of degree `d` forces
 
 ```text
-S_0, S_1, S_2
+S_0=S_1=...=S_(d-1)=0.                                   (13)
 ```
 
-to vanish modulo `P`.  Hence `P` divides every algebraic-integer coefficient
-in `C_(K,r)^(3)`.  Taking absolute norms to `Q`, the rational prime `p`
-divides every nonzero norm in (9), and therefore divides their gcd.
+The determinantal proof is also useful here.  If the two degree-`m` forms are
+`HF` and `HG`, with `deg H=d`, the Sylvester multiplication map has a kernel
+of dimension at least `d`; the minors defining every coefficient of the
+subresultants of index `<d` therefore vanish.  This formulation automatically
+includes a common root at infinity, so no degree-preservation assumption on a
+dehomogenized specialization is needed.
 
-Applying the Galois automorphism `sigma_(i^(-1))` normalizes `(i,j)` to
-`(1,r)` and merely permutes the prime ideals above the split rational prime
-`p`.  Thus `p|G_(K,r)^(3)`.  Since `p!=2,K`, equation (13) follows.
+Applying (13) with `d>=3` shows that every coefficient of the specialized
+`S_0,S_1,S_2` vanishes modulo `P`.  Hence `P` divides every algebraic-integer
+coefficient in `C_(K,r)^(3)`.  Taking absolute norms to `Q`, the rational prime
+`p` divides every nonzero norm in (8), and therefore their gcd.
 
-Degree drops of a row polynomial after reduction do not invalidate the
-argument: the subresultants are universal minors of the Sylvester matrices,
-and three common finite roots force the relevant rank deficiency; leading
-coefficient vanishing can only increase that deficiency.
+Finally `sigma_(i^(-1))` normalizes `(i,j)` to `(1,r)` and merely permutes the
+prime ideals above the completely split rational prime `p`.  Thus
+`p|G_(K,r)^(3)`.  Since `p!=2,K`, equation (12) follows.
+
+The standard subresultant implication (13) is the fundamental theorem of
+W. S. Brown and J. F. Traub, *On Euclid's Algorithm and the Theory of
+Subresultants*, Journal of the ACM 18 (1971), 505--514,
+DOI `10.1145/321662.321665`.  The bibliographic record and DOI were independently
+verified in the current audit.
 
 ## 5. Quadratic Cayley energy away from the higher-intersection integer
 
@@ -208,7 +223,7 @@ The exact row-intersection theorem gives
 Delta_K(p)<=4 I_K(p)(K-1)(K-2).                          (15)
 ```
 
-### Corollary 2
+### Corollary 2 (explicit pointwise quadratic subfamily)
 
 If
 
@@ -216,33 +231,34 @@ If
 p does not divide G'_K^(3),                              (16)
 ```
 
-then
+then Theorem 1 excludes three common parameters for every row pair, so
 
 ```text
-I_K(p)<=3,                                                (17)
-Delta_K(p)<=12(K-1)(K-2),                                (18)
+I_K(p)<=2,                                                (17)
+Delta_K(p)<=8(K-1)(K-2),                                 (18)
 ```
 
-and therefore
+and, using the exact forced total energy
+`3(K-1)(K-2)`,
 
 ```text
 E_+(c(H\{1}))
- <=15(K-1)(K-2).                                         (19)
+ <=11(K-1)(K-2).                                         (19)
 ```
 
-Thus the desired quadratic collision scale holds pointwise for every split
-prime outside the explicit higher-intersection exceptional integer (11).
-
+Thus the desired quadratic collision scale already holds pointwise for every
+split prime outside the explicit higher-intersection exceptional integer (10).
 Equation (19) is stronger than the maintained `K^(8/3)` theorem on this
-subfamily.  It is still not a theorem for **all** split primes because no
-sufficient growing-`K` control on the prime divisors of `G'_K^(3)` has yet been
-proved.
+subfamily.
+
+This is still not a theorem for **all** split primes: no sufficient growing-`K`
+control on the prime divisors of `G'_K^(3)` is known.
 
 ## 6. Exact finite evidence
 
 `computations/verification/cayley_product_row_subresultants.py` independently
-constructs the row polynomials and subresultants.  The default finite anchors
-include
+constructs the row polynomials and their first three subresultants.  The default
+exact anchors are
 
 ```text
 K=7,  r=2:   G'_(K,r)^(3)=1,
@@ -252,39 +268,40 @@ K=13, r=12:  G'_(K,r)^(3)=5^8,
 K=17, r=10:  G'_(K,r)^(3)=103^2.                         (20)
 ```
 
-The last prime is split (`103==1 mod 17`) and the finite design `(K,p)=(17,103)`
-has a row pair of ratio class `r=10` with three common parameters.
+The last prime is split (`103==1 mod 17`), and the finite design
+`(K,p)=(17,103)` has a row pair of ratio class `r=10` with exactly three common
+parameters, as Theorem 1 predicts must be supported by (20).
 
-A slower extended computation gives
+A slower independently rerun extended computation gives
 
 ```text
 K=23, r=18:
-G'_(K,r)^(3)=47^20 * 139^2,                              (21)
+G'_(K,r)^(3)=47^20 * 139^2.                              (21)
 ```
 
-and both split primes are realized geometrically:
+Both rational primes are split, and finite row geometry realizes
 
 ```text
 p=47:   a row pair has 5 common parameters,
 p=139:  a row pair has 3 common parameters.              (22)
 ```
 
-These finite calculations are not a proof of any asymptotic bound on (11).
-Their value is mechanistic: the higher-subresultant integer detects exactly the
-kind of repeated row intersections that the quadratic-energy argument must
-exclude.
+These calculations are finite regressions, not a proof of any asymptotic bound
+on (10).  Their value is mechanistic: the order-three subresultant integer
+detects precisely the repeated row intersections that the quadratic-energy
+argument must control.
 
 ## 7. The remaining arithmetic lemma
 
-The new pointwise closure problem is:
+The pointwise closure problem has now narrowed to:
 
 > **Higher-row divisor problem.**  Control the split prime divisors of
 > `G'_K^(3)` uniformly in odd prime `K`.  In particular, prove a bound strong
 > enough that in the regime `K=o(p^(1/4))`, a split prime `p` cannot divide
-> `G'_K^(3)`; or prove directly that `I_K(p)=K^(o(1))` on the exceptional
+> `G'_K^(3)`; or prove directly that `I_K(p)=K^(o(1))` on this exceptional
 > support.
 
-A polynomial bound
+A bound
 
 ```text
 P_split^+(G'_K^(3)) <= K^(4+o(1))                        (23)
@@ -293,7 +310,7 @@ P_split^+(G'_K^(3)) <= K^(4+o(1))                        (23)
 would, together with Corollary 2, close the pointwise Cayley-energy problem in
 the intended fourth-moment regime.  This bound is **OPEN**.
 
-The structure behind (23) is unusually rigid: differences of cyclotomic trace
+The structure behind (23) is unusually rigid.  Differences of cyclotomic trace
 values factor as
 
 ```text
@@ -301,9 +318,9 @@ values factor as
  =(zeta^a-zeta^b)(1-zeta^(-a-b)),                        (24)
 ```
 
-so slopes determined by two row intersections are cyclotomic units.  Three or
-more intersections force simultaneous congruences among several such units.
-The next proof attempt should exploit the ideal gcd of these cyclotomic-unit
+so slopes determined by two row intersections are cyclotomic units.  Three
+intersections force simultaneous congruences among several such units.  The
+next proof attempt should exploit ideal gcds of these cyclotomic-unit
 differences rather than their individual archimedean norms.
 
 No Gaussian limit, local eigenvalue statistic, or microscopic BGS/GOE theorem
