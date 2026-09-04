@@ -78,6 +78,9 @@ jobs:
       - name: Regress fixed-product row decomposition
         run: python computations/verification/cayley_product_row_intersections.py
 
+      - name: Regress higher product-row subresultant obstruction
+        run: python computations/verification/cayley_product_row_subresultants.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
