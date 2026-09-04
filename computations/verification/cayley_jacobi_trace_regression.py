@@ -6,11 +6,11 @@ mathematics/cayley_jacobi_trace_average.md):
 
     hat(1_A)(r) = K * Tr M_S(2r),
 
-where A=c(H\{1}), S=H^perp and M_S is the full annihilator normalized
-Twisted-Jacobi matrix in the maintained convention.
+where A is the Cayley image of H with 1 removed, S=H^perp and M_S is the full
+annihilator normalized Twisted-Jacobi matrix in the maintained convention.
 
 This script checks only finite floating-point evaluations of that exact identity
-and its second/fourth Parseval consequences.  It does not prove the theorem,
+and its second/fourth Parseval consequences. It does not prove the theorem,
 Bombieri--Vinogradov, the double-averaged asymptotic, a CLT, or BGS.
 """
 from __future__ import annotations
