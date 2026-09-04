@@ -60,6 +60,9 @@ jobs:
       - name: Regress square-resultant and Fibonacci Cayley structure
         run: python computations/verification/cayley_resultant_fibonacci.py
 
+      - name: Regress polynomial-scale Cayley curve energy reduction
+        run: python computations/verification/cayley_energy_curve_regression.py
+
       - name: Install C++ multiprecision dependency
         run: |
           sudo apt-get update
