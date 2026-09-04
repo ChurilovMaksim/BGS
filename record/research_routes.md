@@ -2,7 +2,7 @@
 
 This file records only substantive bounded research routes that materially changed the current theorem set or identified a durable obstruction. It is not a command transcript. Current claim status remains authoritative in [`claim_ledger.md`](claim_ledger.md).
 
-## 2026-09-04 — Direct and averaged control of the mixed Cayley term
+## 2026-09-04 — Direct and resultant control of the mixed Cayley term
 
 **Target.** Replace the failed strategy “exclude every non-forced Cayley collision at polynomial scale” by a quantitative energy theorem strong enough to propagate through the exact fourth-moment variance identity.
 
@@ -16,7 +16,7 @@ Its bilinear determinant is `-4`, so it is absolutely irreducible in odd charact
 
 for `100<K<p^(3/4)/3`, hence mixed centered variance `<136 p K^(8/3)` in the repository normalization. An independent C++20 verifier checks five finite designs.
 
-**Centered reformulation — exact, target open.** Parseval shows the unavoidable density term
+**Centered reformulation — exact, pointwise target open.** Parseval shows the unavoidable density term
 
 `E_+(A)=|A|^4/p + p^(-1) sum_{q!=0}|1_Ahat(q)|^4`.
 
@@ -39,4 +39,52 @@ The complete `K=11,13` regression verifies the orbit/common-root/valuation mecha
 
 **Discarded shortcuts.** Generic Möbius rich-transform estimates, generic rational-function energy decompositions, and near-quadratic total multiplicative energy of shifted subgroups do not, in their checked forms, control the moving distinguished product class with only quadratic loss. Termwise Weil bounds on the Fourier trace functions also discard the joint character-family cancellation needed for the fourth moment.
 
-**Remaining gap.** Pointwise centered energy `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` remains open. A prime-averaged continuation additionally needs a source-exact lower bound for split primes in the relevant varying-modulus interval; no unsupported prime-number-theorem-in-progressions uniformity is assumed.
+**Remaining pointwise gap.** `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` remains open.
+
+## 2026-09-04 — Full Jacobi trace and double-averaged quadratic mixed energy
+
+**Target.** Determine whether the centered Cayley fourth moment is already encoded in the maintained twisted-Jacobi operator and whether the global resultant mass budget can be normalized over a genuine varying split-prime family without assuming a pointwise prime number theorem in arithmetic progressions.
+
+**Trace identity — proved.** For the full annihilator matrix
+
+`J_S(q)_(chi,psi)=sum_x chi^(-1)(x) psi(x-1)e_p(qx)`
+
+and normalized
+
+`M_S(q)=e_p(-q/2)J_S(q)/(p-1)`,
+
+a direct diagonal calculation gives
+
+`1_Ahat(r)=K Tr M_S(2r)`.
+
+Hence
+
+`sum_q|Tr M_S(q)|^2=p(K-1)/K^2`,
+
+`sum_q|Tr M_S(q)|^4=pE_+(A)/K^4`.
+
+This is an ordinary trace identity. It uses no cyclic rewrite of noncommutative matrix words and does not revive the retracted historical R86/R87 trace shortcut. A finite complex128 regression compares the maintained Jacobi implementation against an independent direct Cayley Fourier transform at `(53,13)`, `(199,11)` and sampled `(461,23)`; it is explicitly not the proof.
+
+**Dyadic normalization — proved.** Fix `0<theta<1/3`, put `Q=X^theta`, and average over prime pairs
+
+`Q/2<K<=Q`, `X/2<p<=X`, `p==1 mod K`.
+
+Bombieri--Vinogradov, used only after summing over the varying prime moduli `K`, gives
+
+`|D_theta(X)| ~ [log2/(2theta)]X/(logX)^2`.
+
+Combining this with the exact global resultant budget gives
+
+`average_(K,p) Delta_K(p)/K^2 <<_theta X^(3theta-1) -> 0`.
+
+Therefore for every fixed `eta>0`, the proportion of split pairs with `Delta_K(p)>=eta K^2` tends to zero. The theorem holds in the larger double-average range `theta<1/3`; the BGS-moment subrange `theta<1/4` is contained in it.
+
+**Trace fourth-moment consequence — proved with narrow semantics.** The exact nonzero-frequency kurtosis `kappa=mu4/mu2^2` satisfies
+
+`|kappa-3| << Delta_K(p)/K^2 + 1/K + K^2/p`.
+
+Thus its double-average absolute deviation from `3` tends to zero. This is only a real-Gaussian second/fourth moment ratio for the **ordinary full trace**. It is not a CLT, not a parity/desymmetrized-block theorem, and not microscopic BGS.
+
+**External inputs.** The varying-modulus denominator uses the classical Bombieri--Vinogradov theorem in the standard Iwaniec--Kowalski Theorem 17.1 range and the ordinary prime number theorem. The fixed `theta<1/2` dyadic moduli lie inside the Bombieri--Vinogradov modulus range at both endpoints `X` and `X/2`; the energy theorem then imposes the stricter threshold `theta<1/3`.
+
+**Remaining gap.** The pointwise centered `K^(2+o(1))` theorem remains open. Any future averaged statement must specify a different averaging measure explicitly rather than silently upgrading this dyadic pair-density result.
