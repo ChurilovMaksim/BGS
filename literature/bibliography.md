@@ -88,20 +88,33 @@ The Yabuta, Baker, Carmichael and Bilu–Hanrot–Voutier citation records used 
 were independently checked against identifier metadata during the 2026-09-04
 audit; no retraction was reported by that check.
 
+## Direct Cayley energy and finite-field incidence bounds
+
+19. S. Makarychev and I. Vyugin, **Solutions of Polynomial Equations in Subgroups of $\mathbb F_p^*$**, *Arnold Mathematical Journal* **5** (2019), 105–121, DOI `10.1007/s40598-019-00112-z`. The load-bearing pointwise subgroup-curve estimate used in `mathematics/cayley_direct_energy.md` is the predecessor Theorem 2 in I. Vyugin and S. Makarychev, arXiv:1504.01354v2 (24 Sep 2015): for an absolutely irreducible bivariate polynomial of bidegree `(m,n)` with `P(0,0)!=0` and `deg P(x,0)>=1`, and `100(mn)^(3/2)<|G|<p^(3/4)/3`, a single product-coset fiber contains at most `16 m n^2(m+n)|G|^(2/3)` points. The inequality `deg P(x,0)>=1` was checked visually in the source PDF because text extraction can lose the equality bar. The 2019 journal paper is the later publication and separately verified bibliographically; theorem numbering is not assumed to be unchanged.
+20. S. Macourt, I. D. Shkredov and I. E. Shparlinski, **Multiplicative Energy of Shifted Subgroups and Bounds On Exponential Sums with Trinomials in Finite Fields**, *Canadian Journal of Mathematics* **70** (2018), 1319–1338, DOI `10.4153/CJM-2017-044-2`. Corollary 4.1 gives a near-quadratic bound `E_x(G+lambda)-|G|^4/p << |G|^2 log|G|` in the small-subgroup range; this is relevant to the exact shifted-product reformulation in `mathematics/cayley_centered_energy.md` but does not by itself bound the moving distinguished product classes needed for Cayley additive energy.
+21. M. Rudnev and J. Wheeler, **On incidence bounds with Möbius hyperbolae in positive characteristic**, *Finite Fields and Their Applications* **78** (2022), 101978, DOI `10.1016/j.ffa.2021.101978` (arXiv:2104.10534). Provides quantitative incidence and rich-Möbius-hyperbola technology. The current audit did not find a lossless specialization yielding the desired near-quadratic centered Cayley energy; generic use remains weaker than the active target.
+
+All three DOI/title records above were independently resolved on 2026-09-04 and no retraction was reported. For item 19, the exact load-bearing hypothesis was additionally checked in the primary PDF rather than inferred from metadata or a search snippet.
+
 ## Trace functions and quantitative sheaf theory
 
-19. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
-20. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
-21. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
+22. E. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
+23. E. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
+24. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653–726, DOI `10.1090/jams/1008`.
 
 These provide relevant technology once the actual sheaves, singularities,
 irreducibility/non-isomorphism, ramification and uniform conductor are proved.
+For the centered Cayley problem the current exact Fourier decomposition produces
+a family of Kummer/Artin--Schreier transforms `T_chi(q)`; a useful trace-function
+argument must exploit cancellation jointly across the annihilator-character
+family, because termwise square-root bounds do not close the required fourth
+moment.
 
 ## Elliptic families, Sato–Tate and isogeny detection
 
-22. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
-23. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
-24. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
+25. P. Michel, **Rang moyen de familles de courbes elliptiques et lois de Sato–Tate**, *Monatshefte für Mathematik* **120** (1995), 127–136.
+26. Yu. G. Zarhin, **Homomorphisms of abelian varieties over geometric fields of finite characteristic**, *Journal of the Institute of Mathematics of Jussieu* **12** (2013), 225–236, DOI `10.1017/S1474748012000655` (arXiv:1012.5083).
+27. B. Grove and H. Saad, **Hypergeometric distributions and joint families of elliptic curves**, *Research in the Mathematical Sciences* **12**, 74 (2025), DOI `10.1007/s40687-025-00554-2`.
 
 Grove–Saad is a useful modern worked example because geometric independence is
 established before square-root correlation is invoked. Zarhin-type results are

@@ -60,6 +60,9 @@ jobs:
       - name: Regress square-resultant and Fibonacci Cayley structure
         run: python computations/verification/cayley_resultant_fibonacci.py
 
+      - name: Regress normalized resultant collision-mass budget
+        run: python computations/verification/cayley_resultant_mass_budget.py
+
       - name: Install C++ multiprecision dependency
         run: |
           sudo apt-get update
@@ -76,6 +79,7 @@ jobs:
           ./build/cat_map_order verify
           ./build/cayley_energy_verifier
           ./build/cayley_fibonacci_verifier
+          ./build/cayley_direct_energy_verifier
 
   formalization:
     runs-on: ubuntu-latest

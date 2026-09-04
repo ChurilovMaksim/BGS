@@ -28,11 +28,15 @@ stronger language; this file wins.
 | Cayley identity and additive-energy reduction | **EXACT** | `mathematics/cayley_additive_energy.md` |
 | prime-order characteristic-zero Cayley collision classification | **EXACT** | Chowla cotangent independence + elementary cross-polytope lemma in `mathematics/cayley_additive_energy.md` |
 | prime-order collision resultant has shape `Res(Phi_K,P)=K^3 M^2` | **EXACT + FINITE-REGRESSION** | real-subfield norm argument in `mathematics/cayley_resultant_structure.md`; exhaustive normalized checks through `K=11` |
-| if odd prime `K | p-1` and `K^3 p^2 > 12^(K-1)`, mixed energy is exactly `(K-1)(2K-5)` | **EXACT + FINITE-REGRESSION** | square-resultant theorem + coefficient norm; stronger than the earlier `p>12^(K-1)` cutoff |
+| if odd prime `K | p-1` and `K^3 p^2 > 12^(K-1)`, mixed energy is exactly `(K-1)(2K-5)` | **EXACT + FINITE-REGRESSION** | square-resultant theorem + coefficient norm |
 | Fibonacci collision slice `Res(Phi_K,X^2+3X+1)=F_K^2` and full collision norm `K^3 F_K^2` | **EXACT + FINITE-REGRESSION** | Binet/Lucas derivation + exact resultant checks through `K=29` |
 | rational set `S_N={+-L_n/F_n:1<=n<=N}` has nonzero difference energy `2N(4N-3)+32` for `N>=3` | **EXACT + FINITE-CERTIFICATE** | full proof in `mathematics/fibonacci_ratio_energy_proof.md`, using Yabuta Theorem 3 for the unbounded primitive-divisor step; Python + `FibonacciRatioSmall.lean` close only the bounded residue |
 | `(K,p)=(131,F_131)` is a 28-digit prime Fibonacci-slice witness with energy `33442`, baseline `33410`, excess `32` | **FINITE-CERTIFICATE** | complete Lucas primality certificate + independent Python/C++ arbitrary-precision Cayley audits |
-| useful polynomial-scale **energy bound** for arbitrary prime-order Cayley sets | **OPEN** | worst-case zero-collision cutoff is the wrong target; Fibonacci slice has large bad primes but only constant excess |
+| for any odd prime `p` and subgroup `H<=F_p^*` of order `100<K<p^(3/4)/3`, `E_+(c(H\{1}))<34 K^(8/3)` and `sum_t C_H(t)^2<34K^(8/3)` | **EXACT + FINITE-REGRESSION** | bilinear fibers + source-exact Vyugin--Makarychev Theorem 2 in `mathematics/cayley_direct_energy.md`; independent C++ finite verifier |
+| corresponding mixed centered variance bound `<136 p K^(8/3)` in the repository normalization | **EXACT** | direct energy theorem propagated through the exact mixed coefficient `2(p-2)` |
+| centered-energy identity `E_+(A)=|A|^4/p + p^(-1) sum_{q!=0}|1_Ahat(q)|^4` and exact Cayley Fourier/character Gram matrix | **EXACT** | `mathematics/cayley_centered_energy.md` |
+| for odd prime `K`, weighted split-prime excess budget `sum_{p==1 mod K} Delta_K(p) log p <= (K^3-5K^2+6K+1)((K-1)log12-3logK)` | **EXACT + FINITE-REGRESSION** | Galois scaling orbits + `p`-adic common-root count + `K^3 M^2` resultant structure in `mathematics/cayley_resultant_mass_budget.md`; exact K=11,13 regression |
+| sharp centered Cayley target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` (equivalently nonzero Fourier fourth moment `<<pK^(2+o(1))`) | **OPEN** | exact Fourier/character, torus--unipotent, shifted-product and prime-budget reductions isolate the gap; no verified pointwise theorem closes the `K^(2/3)` loss |
 | 720 matching rank classification; only characteristic-2 extra rank drop | **FINITE-CERTIFICATE** | `computations/verification/mixed_cayley_energy.py` |
 | `E_11={23,67,89}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
 | `E_13={53,79,131,157,313}` | **FINITE-CERTIFICATE** | complete exact resultants recomputed in CI |
@@ -41,13 +45,37 @@ stronger language; this file wins.
 | off/off estimate `O(K^2 p+K^4 sqrt(p)+K^4)` | **DRAFT** | elliptic/sheaf obligations remain |
 | microscopic BGS/GOE local eigenphase law | **OPEN** | no current proof |
 
-## Interpretation of the new mixed-term structure
+## Interpretation of the mixed-term structure
 
-The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff by a square root.  The explicit Fibonacci subfamily has `M=F_K`, so `M` itself grows exponentially: a strategy that first proves a polynomial bound on the *whole norm* is impossible.
+The theorem `Res(Phi_K,P)=K^3 M^2` improves the worst-case no-collision cutoff, while the explicit Fibonacci subfamily has `M=F_K` and therefore exponential total norm.  A strategy based on making every non-forced resultant polynomially small is impossible.
 
-This does **not** show that the mixed energy is large.  In fact the rational Fibonacci/Lucas model has only constant excess `32`, and the exact 28-digit `K=131` finite-field witness has the same excess.  The open problem is therefore promoted from “eliminate every non-forced collision” to the more relevant quantitative question “bound the total collision energy uniformly”.
+This does **not** make the mixed energy large.  The rational Fibonacci/Lucas model has constant excess `32`, and the exact 28-digit `K=131` witness has the same excess.
 
-The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption.  The full proof now spells out the two previously compressed load-bearing points: strict injectivity of the fixed-upper-index difference ratio and uniqueness of the fixed-index-sum Fibonacci product.  The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
+The direct Stepanov route gives a genuine pointwise polynomial-scale theorem for every subgroup reduction in
+
+`100<K<p^(3/4)/3`:
+
+`E_+(c(H\{1})) < 34 K^(8/3)`.
+
+The load-bearing source hypothesis `deg P(x,0)>=1` was re-read visually from the primary arXiv PDF because text extraction can drop the equality bar; our bilinear Cayley fiber has degree exactly `1`, so this check is material.
+
+A second theorem now controls the exceptional reductions **globally over split primes**.  Normalizing non-forced collision quadruples by simultaneous exponent scaling leaves
+
+`N_K=K^3-5K^2+6K+1`
+
+orbits.  For one normalized orbit, common primitive `K`-th roots modulo a split prime are bounded by the `p`-adic valuation of its resultant.  Because that resultant is exactly `K^3 M^2` and a split prime is never `K`, the inert `K^3` factor can be removed.  Summing gives
+
+`sum_{p==1 mod K} Delta_K(p) log p <= N_K((K-1)log12-3logK)`.
+
+Thus the total non-forced collision mass over all split primes has a deterministic `O(K^4)` logarithmic budget.  This is an average/sparsity result, not a pointwise quadratic theorem; converting it into a normalized interval average needs an independent count of split primes in that interval.
+
+The remaining pointwise target is the near-quadratic **centered** energy.  Every subset has the zero-Fourier-mode density contribution `|A|^4/p`, so the right target is
+
+`E_+(A)=(K-1)^4/p+O(K^(2+o(1)))`,
+
+equivalently a nonzero Fourier fourth-moment bound. `mathematics/cayley_centered_energy.md` records the exact character decomposition, Gram matrix, conjugated-unipotent PGL2 formulation, and shifted-product reformulation. Generic pointwise curve bounds, generic Möbius-incidence bounds, and known total shifted-subgroup multiplicative-energy estimates have not been verified to remove the remaining `K^(2/3)` loss.
+
+The almost-Sidon theorem was adversarially re-audited after the 2026-09-04 interruption. The finite Lean module remains explicitly scoped to the residual range and is not presented as a formalization of Carmichael/Yabuta.
 
 ## Earlier useful foundations
 
