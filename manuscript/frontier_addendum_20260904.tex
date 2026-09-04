@@ -1,0 +1,121 @@
+% Frontier addendum, 2026-09-04.
+% Intended for later integration into arithmetic_cat_map_moments.tex after full manuscript audit.
+
+\section{An exact-baseline density theorem from the global resultant budget}
+\label{sec:exact-baseline-density}
+
+We retain the notation of the Cayley-energy reduction.  Let $K$ be an odd
+prime, let $p\equiv1\pmod K$ be prime, let $H\leq\mathbb F_p^\times$ be the
+subgroup of order $K$, and put
+\[
+ A=c(H\setminus\{1\}),\qquad c(h)=\frac{h+1}{h-1}.
+\]
+For nonzero differences define
+\[
+ E_K^{\rm nz}(p)=\sum_{d\ne0}r_{A-A}(d)^2,
+ \qquad
+ B_K=(K-1)(2K-5),
+\]
+and let
+\[
+ \Delta_K(p)=E_K^{\rm nz}(p)-B_K\in\mathbb Z_{\ge0}.
+\]
+The global resultant argument established elsewhere in this manuscript gives
+\begin{equation}
+ \sum_{p\equiv1\,({\rm mod}\,K)}\Delta_K(p)\log p
+ \le N_K C_K,
+ \label{eq:global-resultant-budget-addendum}
+\end{equation}
+where
+\[
+ N_K=K^3-5K^2+6K+1,
+ \qquad
+ C_K=(K-1)\log 12-3\log K.
+\]
+In particular $N_K<K^3$ and $C_K<K\log12$ for $K\ge3$.
+
+Fix $0<\theta<1/2$, write $Q=X^\theta$, and define the dyadic split family
+\[
+ \mathcal D_\theta(X)=\{(K,p):K,p\ {\rm prime},\ Q/2<K\le Q,
+ X/2<p\le X,\ p\equiv1\pmod K\}.
+\]
+Let
+\[
+ \mathcal B_\theta(X)=\{(K,p)\in\mathcal D_\theta(X):\Delta_K(p)>0\}.
+\]
+The Bombieri--Vinogradov theorem together with the prime number theorem gives
+\begin{equation}
+ |\mathcal D_\theta(X)|\sim
+ \frac{\log2}{2\theta}\frac{X}{(\log X)^2}.
+ \label{eq:dyadic-design-count-addendum}
+\end{equation}
+
+\begin{theorem}[density-one exact Cayley baseline]
+\label{thm:exact-baseline-density}
+For every fixed $0<\theta<1/2$,
+\[
+ |\mathcal B_\theta(X)|
+ \ll_\theta \frac{X^{5\theta}}{(\log X)^2},
+ \qquad
+ \frac{|\mathcal B_\theta(X)|}{|\mathcal D_\theta(X)|}
+ \ll_\theta X^{5\theta-1}.
+\]
+Consequently, for every fixed $0<\theta<1/5$, asymptotically almost every
+$(K,p)\in\mathcal D_\theta(X)$ satisfies
+\[
+ \Delta_K(p)=0
+\]
+exactly, and hence
+\[
+ E_+(A)=3(K-1)(K-2).
+\]
+\end{theorem}
+
+\begin{proof}
+Fix a prime $K\in(Q/2,Q]$.  If $p\in(X/2,X]$ is bad, then the integrality and
+nonnegativity of $\Delta_K(p)$ imply $\Delta_K(p)\ge1$.  Thus every bad prime
+contributes at least $\log(X/2)$ to the left-hand side of
+\eqref{eq:global-resultant-budget-addendum}.  Therefore
+\[
+ \#\{p\in(X/2,X]:p\equiv1\pmod K,\ \Delta_K(p)>0\}
+ \le \frac{N_KC_K}{\log(X/2)}
+ \ll \frac{K^4}{\log X}.
+\]
+Summing over prime $K\in(Q/2,Q]$ and applying the prime number theorem with
+partial summation,
+\[
+ |\mathcal B_\theta(X)|
+ \ll \frac1{\log X}
+       \sum_{\substack{Q/2<K\le Q\\K\ {m prime}}}K^4
+ \ll \frac{Q^5}{\log Q\log X}
+ \ll_\theta \frac{X^{5\theta}}{(\log X)^2}.
+\]
+Division by \eqref{eq:dyadic-design-count-addendum} yields the second bound.
+If $\theta<1/5$, its right-hand side tends to zero.  Finally the zero-difference
+class contributes $(K-1)^2$ and the forced nonzero class contributes
+$(K-1)(2K-5)$, giving
+\[
+ E_+(A)=(K-1)^2+(K-1)(2K-5)=3(K-1)(K-2)
+\]
+on the good subfamily.
+\end{proof}
+
+The theorem is deliberately an additive-energy statement, not a microscopic
+Bohigas--Giannoni--Schmit theorem.  It strengthens the previously obtained
+almost-everywhere $o(K^2)$ excess to exact vanishing on the smaller range
+$\theta<1/5$.  The exponent $1/5$ reflects the current $O(K^4)$ total
+logarithmic resultant budget.  A constant-size collision symmetry orbit cannot
+change this exponent; an improvement requires either a smaller global
+resultant budget, a growing compulsory multiplicity for a bad reduction, or a
+new restriction on the split prime divisors of the normalized resultants.
+
+For the ordinary full-annihilator normalized Jacobi trace, the exact-baseline
+identity also gives
+\[
+ \kappa(K,p)
+ =\frac{(p-1)\bigl(3p(K-2)-(K-1)^3\bigr)}
+        {(K-1)(p-K+1)^2}
+ =3+O\!\left(K^{-1}+K^2/p\right).
+\]
+This fourth-moment ratio does not imply a central limit theorem and is not a
+local eigenphase statistic.
