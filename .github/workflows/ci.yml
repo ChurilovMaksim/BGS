@@ -90,6 +90,9 @@ jobs:
       - name: Regress exact real-trace row ideal
         run: python computations/verification/cayley_product_row_real_trace_ideal.py
 
+      - name: Regress scalar trace-intercept shift-resultant support
+        run: python computations/verification/cayley_trace_intercept_shift_resultant.py
+
       - name: Regress inverse-row reflection reduction
         run: python computations/verification/cayley_product_row_reflection.py
 
@@ -116,6 +119,7 @@ jobs:
           ./build/cayley_energy_verifier
           ./build/cayley_fibonacci_verifier
           ./build/cayley_direct_energy_verifier
+          ./build/cayley_trace_intercept_rigidity
 
   formalization:
     runs-on: ubuntu-latest
