@@ -6,8 +6,9 @@ Checks:
   2. the inverse translation specialization;
   3. exact finite-field trichotomy deg gcd(E,O)=0,1,2 on cyclotomic anchors.
 
-Finite checks are regression only; the universal statements are proved in the
-mathematics note.
+The real embedding exponent is part of every finite certificate. Finite checks
+are regression only; the universal statements are proved in the mathematics
+note.
 """
 from __future__ import annotations
 
@@ -88,11 +89,14 @@ def check_inverse_specialization() -> None:
     print("generic inverse translation derivative specialization: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_exponent: int = 1) -> int:
     assert p % K == 1
+    m = (K - 1) // 2
+    assert 1 <= embedding_exponent <= m
     generator = int(sp.primitive_root(p))
-    zeta = pow(generator, (p - 1) // K, p)
-    assert zeta != 1 and pow(zeta, K, p) == 1
+    zeta0 = pow(generator, (p - 1) // K, p)
+    assert zeta0 != 1 and pow(zeta0, K, p) == 1
+    zeta = pow(zeta0, embedding_exponent, p)
     return (zeta + pow(zeta, -1, p)) % p
 
 
@@ -142,15 +146,26 @@ def unique_linear_root(poly: sp.Poly, p: int) -> int:
     return (-b * pow(a, -1, p)) % p
 
 
-def check_finite_anchor(K: int, p: int, expected_gcd_degree: int) -> None:
+def check_finite_anchor(
+    K: int,
+    p: int,
+    expected_gcd_degree: int,
+    embedding_exponent: int = 1,
+) -> None:
     modulus, E_raw, O_raw = even_odd_pair(K)
     del modulus
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_exponent)
     E = specialize_poly(E_raw, tau, p)
     O = specialize_poly(O_raw, tau, p)
     gcd = sp.gcd(E, O)
     degree = gcd.degree()
-    assert degree == expected_gcd_degree, (K, p, degree, expected_gcd_degree)
+    assert degree == expected_gcd_degree, (
+        K,
+        p,
+        embedding_exponent,
+        degree,
+        expected_gcd_degree,
+    )
 
     rho0, rho1 = directional_resultant_coefficients(E, O, p)
 
@@ -171,13 +186,13 @@ def check_finite_anchor(K: int, p: int, expected_gcd_degree: int) -> None:
             * res_ab
             * (e_prime * e_prime - y * o_prime * o_prime)
         ) % p
-        assert rho1 == predicted, (K, p, rho1, predicted)
+        assert rho1 == predicted, (K, p, embedding_exponent, rho1, predicted)
     else:
         assert rho0 == 0 and rho1 == 0
 
     print(
-        f"K={K:2d} p={p:4d} deg_gcd={degree} "
-        f"rho0={rho0} rho1={rho1}: OK"
+        f"K={K:2d} p={p:4d} emb={embedding_exponent:2d} "
+        f"deg_gcd={degree} rho0={rho0} rho1={rho1}: OK"
     )
 
 
@@ -185,10 +200,11 @@ def main() -> None:
     check_universal_derivative()
     check_inverse_specialization()
 
-    # Exact split finite-field trichotomy.
-    check_finite_anchor(11, 23, 0)
-    check_finite_anchor(7, 29, 1)
-    check_finite_anchor(23, 47, 2)
+    # Exact split finite-field trichotomy.  The embedding is part of the
+    # certificate: the same rational split prime can realize different strata.
+    check_finite_anchor(11, 23, 0, embedding_exponent=1)
+    check_finite_anchor(11, 23, 1, embedding_exponent=2)
+    check_finite_anchor(23, 47, 2, embedding_exponent=1)
 
     print("cayley inverse resultant transversality regression: OK")
 
