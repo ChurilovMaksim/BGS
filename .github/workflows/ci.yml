@@ -87,6 +87,9 @@ jobs:
       - name: Regress product-row coefficient-ideal obstruction
         run: python computations/verification/cayley_product_row_coefficient_ideal.py
 
+      - name: Regress exact real-trace row ideal
+        run: python computations/verification/cayley_product_row_real_trace_ideal.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
