@@ -51,10 +51,10 @@ In particular no valid edge polynomial is divisible by `C_K` over `Q`.
 
 ## 2. Remove characteristic-zero polynomial gcds first
 
-Fix two valid edges `e,f`.  Choose the monic primitive gcd
+Fix two valid edges `e,f`.  Choose the monic primitive gcd over `Z[T]`, denoted
 
 ```text
-G_(e,f)=gcd_Z[T](w_e,w_f),                               (3)
+G_(e,f)=gcd(w_e,w_f) in Z[T],                             (3)
 ```
 
 and write
@@ -62,7 +62,7 @@ and write
 ```text
 w_e=G A,
 w_f=G B,
-gcd_Z[T](A,B)=1.                                      (4)
+gcd(A,B)=1 in Z[T].                                    (4)
 ```
 
 By (2),
