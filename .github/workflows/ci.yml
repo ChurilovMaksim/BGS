@@ -105,6 +105,9 @@ jobs:
       - name: Regress inverse resultant transversality
         run: python computations/verification/cayley_inverse_resultant_transversality.py
 
+      - name: Regress inverse quartic reduced edge support
+        run: python computations/verification/cayley_inverse_edge_norm_support.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
@@ -129,6 +132,7 @@ jobs:
           ./build/cayley_fibonacci_verifier
           ./build/cayley_direct_energy_verifier
           ./build/cayley_trace_intercept_rigidity
+          ./build/cayley_inverse_k89_witness
 
   formalization:
     runs-on: ubuntu-latest
