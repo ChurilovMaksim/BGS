@@ -4,9 +4,9 @@
 
 This note attacks the open torsion-factor question from
 `cayley_inverse_reduced_resultant_filter.md` by using the unlikely-intersection
-structure of a **fixed** algebraic torus variety.  It does not prove that every
-shared factor is torsion.  What it proves is that every non-torsion shared factor
-forces one bounded-coefficient affine relation among the four edge indices.
+structure of fixed algebraic torus varieties. It does not prove that every
+shared factor is torsion. What it proves is that every non-torsion shared factor
+forces a bounded-coefficient affine relation among the endpoint indices.
 Thus the universal torsion-factor conjecture reduces to finitely many affine
 exponent families.
 
@@ -49,7 +49,7 @@ here if every irreducible factor of its reciprocal lift
 z^deg(G) G(z+z^-1)                                       (5)
 ```
 
-is cyclotomic.  Equivalently, all reciprocal roots are roots of unity.
+is cyclotomic. Equivalently, all reciprocal roots are roots of unity.
 
 If a common factor is not torsion, one may therefore choose a common trace root
 `T_0` and a solution
@@ -70,7 +70,7 @@ form (4).
 ## 2. Quotient out the built-in reciprocal relations first
 
 A naive sparse embedding would use separate coordinates for
-`alpha^a,alpha^-a,...`.  That is useless for unlikely-intersection purposes:
+`alpha^a,alpha^-a,...`. That is useless for unlikely-intersection purposes:
 the exponent vector then has tautological bounded relations such as
 
 ```text
@@ -125,7 +125,7 @@ Work in the Laurent UFD
 R=Q[X^+-1,Y^+-1,U^+-1,V^+-1,Z^+-1].                     (13)
 ```
 
-The two Laurent polynomials in (9) are coprime.  To see this without losing
+The two Laurent polynomials in (9) are coprime. To see this without losing
 coefficient-ring factors under localization, write
 
 ```text
@@ -134,8 +134,8 @@ R=S[X^+-1].                                               (14)
 ```
 
 The `X`-width of a nonzero Laurent polynomial is the difference between its
-largest and smallest `X`-exponents.  Width is additive under multiplication in
-the domain `S[X^+-1]`.  Since `L_2` has `X`-width zero, every divisor of `L_2`
+largest and smallest `X`-exponents. Width is additive under multiplication in
+the domain `S[X^+-1]`. Since `L_2` has `X`-width zero, every divisor of `L_2`
 has `X`-width zero and hence, up to a monomial unit in `X`, lies in `S`.
 
 But
@@ -151,11 +151,11 @@ If a nonunit `H in S` divided `L_1`, then after multiplying by the unit `X`,
 X L_1=X^2+C X+1.                                         (16)
 ```
 
-In particular `H|1`, a contradiction.  Thus `L_1,L_2` are coprime in `R`.
+In particular `H|1`, a contradiction. Thus `L_1,L_2` are coprime in `R`.
 
-Therefore no height-one prime of the UFD `R` contains both `L_1,L_2`.  Every
-minimal prime over `(L_1,L_2)` has height at least `2`.  Krull's principal ideal
-theorem gives height at most `2`.  The ideal is proper because
+Therefore no height-one prime of the UFD `R` contains both `L_1,L_2`. Every
+minimal prime over `(L_1,L_2)` has height at least `2`. Krull's principal ideal
+theorem gives height at most `2`. The ideal is proper because
 
 ```text
 (1,1,1,1,1) in W.                                       (17)
@@ -165,24 +165,31 @@ Hence every component has height, equivalently codimension, exactly `2`. `□`
 
 ## 4. External unlikely-intersection input
 
-Theorem 3.1 of Amoroso--Leroux--Sombra states the following form sufficient
-here.
+Theorem 3.1 of Amoroso--Leroux--Sombra gives the following consequence. For an
+irreducible subvariety `C subset G_m^N` of codimension at least `2`, there is a
+constant `c_C`, depending only on `C`, such that a point of the form
 
-> Let `C` be an irreducible subvariety of `G_m^N` of codimension at least `2`.
-> There is a constant `c_C`, depending only on `C`, such that if
-> `(zeta_1 alpha^a_1,...,zeta_N alpha^a_N)` lies in `C`, with the `zeta_j`
-> roots of unity, then there is a nonzero integer vector `r` with
-> `max |r_j|<=c_C` whose corresponding multiplicative monomial equals `1`.
-> If `alpha` is not a root of unity, this forces
-> `sum_j a_j r_j=0`.
+```text
+(zeta_1 alpha^a_1,...,zeta_N alpha^a_N) in C             (18)
+```
 
-Only this existence statement is used below.  No effective numerical value of
+with torsion `zeta_j` satisfies a nontrivial multiplicative relation whose
+integer coefficients have sup norm at most `c_C`. If `alpha` is not a root of
+unity, the associated exponent sum
+
+```text
+sum_j a_j r_j                                             (19)
+```
+
+must vanish.
+
+Only this existence statement is used below. No effective numerical value of
 the constants is asserted in this project.
 
 Since `W` has finitely many irreducible components, Lemma 1 lets us set
 
 ```text
-C_int=max_C c_C,                                         (18)
+C_int=max_C c_C,                                         (20)
 ```
 
 where the maximum runs over those components.
@@ -195,7 +202,7 @@ Let
 
 ```text
 2<=a<b,
-2<=c<d,                                                   (19)
+2<=c<d,                                                   (21)
 ```
 
 and suppose `w_(a,b)(T)` and `w_(c,d)(T)` have a common non-torsion irreducible
@@ -205,13 +212,13 @@ Then there exists
 
 ```text
 (r,s,t,u,v) in Z^5 \ {0},
-max(|r|,|s|,|t|,|u|,|v|) <= C_int,                       (20)
+max(|r|,|s|,|t|,|u|,|v|) <= C_int,                       (22)
 ```
 
 such that
 
 ```text
-r a+s b+t c+u d+v=0.                                     (21)
+r a+s b+t c+u d+v=0.                                     (23)
 ```
 
 The constant `C_int` is independent of `a,b,c,d` and of the cyclotomic
@@ -219,28 +226,28 @@ conductor `K` in which the edge indices may later be used.
 
 ### Proof
 
-Choose a non-torsion reciprocal root `alpha` as in (6)--(7).  By (12),
+Choose a non-torsion reciprocal root `alpha` as in (6)--(7). By (12),
 
 ```text
-(alpha^a,alpha^b,alpha^c,alpha^d,alpha) in W.             (22)
+(alpha^a,alpha^b,alpha^c,alpha^d,alpha) in W.             (24)
 ```
 
 It lies in one irreducible component `C` of `W`, and Lemma 1 gives
-`codim(C)=2`.  Apply the external theorem with all torsion multipliers equal to
+`codim(C)=2`. Apply the external theorem with all torsion multipliers equal to
 `1` and exponent vector
 
 ```text
-(a,b,c,d,1).                                              (23)
+(a,b,c,d,1).                                              (25)
 ```
 
-We obtain a nonzero integer vector as in (20) for which
+We obtain a nonzero integer vector as in (22) for which
 
 ```text
-alpha^(r a+s b+t c+u d+v)=1.                             (24)
+alpha^(r a+s b+t c+u d+v)=1.                             (26)
 ```
 
-Because `alpha` is not a root of unity, the exponent in (24) is zero.  This is
-(21). `□`
+Because `alpha` is not a root of unity, the exponent in (26) is zero. This is
+(23). `□`
 
 ### Corollary 3 (finite affine-family reduction)
 
@@ -249,7 +256,7 @@ finite union
 
 ```text
 union_(0!=q in Z^5, ||q||_infinity<=C_int)
-  { (a,b,c,d): q_1 a+q_2 b+q_3 c+q_4 d+q_5=0 }.          (25)
+  { (a,b,c,d): q_1 a+q_2 b+q_3 c+q_4 d+q_5=0 }.          (27)
 ```
 
 Thus the non-torsion shared-factor problem is no longer a four-parameter
@@ -258,78 +265,122 @@ families with bounded integer coefficients.
 
 This does **not** say that those families actually contain non-torsion factors.
 
-## 6. Boundary edge with index zero
+## 6. One zero endpoint
 
-Valid inverse edges may contain the class `0`.  For a pair of **disjoint**
-edges, at most one edge can contain `0`.  Suppose for definiteness
+Suppose exactly one of the two edges contains the valid class `0`, for
+definiteness
 
 ```text
 e={0,b},
 f={c,d},
+b,c,d>=2.                                                 (28)
 ```
-
-with `b,c,d>=2` distinct.
 
 Use the fixed variety in `G_m^4` with coordinates `(Y,U,V,Z)`:
 
 ```text
 L_0=2+Y+Y^-1-2Z-2Z^-1,
-L_2=U+U^-1+V+V^-1-2Z-2Z^-1.                              (26)
+L_2=U+U^-1+V+V^-1-2Z-2Z^-1.                              (29)
 ```
 
-The proof of Lemma 1 applies verbatim with `Y` as the distinguished variable:
-`L_2` has zero `Y`-width, while `Y L_0` has leading and constant coefficients
-`1`.  Hence every irreducible component of
+The proof of Lemma 1 applies with `Y` as the distinguished variable: `L_2` has
+zero `Y`-width, while `Y L_0` has leading and constant coefficients `1`.
+Hence every irreducible component of
 
 ```text
-W_0=V(L_0,L_2)                                           (27)
+W_0=V(L_0,L_2)                                           (30)
 ```
 
-has codimension `2`.  Applying the same external theorem to
+has codimension `2`. Applying the external theorem to
 
 ```text
-x |-> (x^b,x^c,x^d,x)                                    (28)
+x |-> (x^b,x^c,x^d,x)                                    (31)
 ```
 
 gives an absolute constant `C_0` and a nonzero bounded vector
 
 ```text
 (r,s,t,v) in Z^4,
-max |.| <= C_0,                                           (29)
+max |.| <= C_0,                                           (32)
 ```
 
 such that every non-torsion common factor forces
 
 ```text
-r b+s c+t d+v=0.                                         (30)
+r b+s c+t d+v=0.                                         (33)
 ```
 
 The case in which the second edge contains `0` is symmetric.
 
-## 7. What the reduction buys
+## 7. Both edges contain zero
+
+Distinct valid edges can also share the endpoint `0`:
+
+```text
+e={0,b},
+f={0,d},
+2<=b!=d.                                                  (34)
+```
+
+Use the fixed variety in `G_m^3` with coordinates `(Y,V,Z)`:
+
+```text
+M_1=2+Y+Y^-1-2Z-2Z^-1,
+M_2=2+V+V^-1-2Z-2Z^-1.                                   (35)
+```
+
+Again the two equations are coprime by the width/coefficient argument, and the
+all-ones point shows the ideal is proper. Hence all irreducible components of
+
+```text
+W_00=V(M_1,M_2) subset G_m^3                             (36)
+```
+
+have codimension `2`. Applying the external theorem to
+
+```text
+x |-> (x^b,x^d,x)                                        (37)
+```
+
+gives an absolute constant `C_00` and a nonzero vector
+
+```text
+(r,s,v) in Z^3,
+max |.| <= C_00,                                          (38)
+```
+
+such that every non-torsion common factor forces
+
+```text
+r b+s d+v=0.                                              (39)
+```
+
+Sections 5--7 therefore cover **all** pairs of distinct valid inverse edge
+polynomials, not only the disjoint pairs relevant to one finite-field matching.
+
+## 8. What the reduction buys
 
 The open torsion classification
 
 ```text
-all shared inverse edge-polynomial factors are torsion                 (31)
+all shared inverse edge-polynomial factors are torsion                 (40)
 ```
 
 is now reduced to the following sharper task:
 
 1. classify the finitely many bounded-coefficient affine relations supplied by
-   Theorem 2 and its boundary analogue that are compatible with distinct valid
-   edges;
+   Sections 5--7 that are compatible with distinct valid edges;
 2. on each surviving affine family, prove that the common polynomial factors
    are cyclotomic/torsion, or exhibit a genuine non-torsion family.
 
-The external theorem alone does not perform step 1 or 2.  In particular, the
+The external theorem alone does not perform step 1 or 2. In particular, the
 finite max-index-50 audit in
 `evidence/cayley_inverse_torsion_gcd_audit_20260905.txt` cannot be promoted to a
 universal theorem merely because the affine coefficients are bounded: the
-constant is not computed here and each affine hyperplane has infinitely many
+constants are not computed here and each affine hyperplane has infinitely many
 integer points.
 
-## 8. Relation to the large-prime inverse route
+## 9. Relation to the large-prime inverse route
 
 This characteristic-zero reduction sits **before** the finite-prime arithmetic:
 
@@ -344,7 +395,7 @@ shared polynomial factor
 
 If all surviving affine families can be shown torsion, then the first factor
 `Res(C_K,G)` in the reduced-resultant filter becomes support-free uniformly
-outside the finitely compatible torsion conductors.  The remaining open
+outside the finitely compatible torsion conductors. The remaining open
 arithmetic problem would be the largest split prime in the coprime resultant
 `Res(A,B)` for nonassociate edge classes.
 
