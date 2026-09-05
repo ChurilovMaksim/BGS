@@ -38,6 +38,11 @@ add_executable(
   computations/cpp/cayley_trace_intercept_rigidity.cpp
 )
 
+add_executable(
+  cayley_inverse_k89_witness
+  computations/cpp/cayley_inverse_k89_witness.cpp
+)
+
 if (MSVC)
   foreach(target
       fourth_moment_pair_key_verifier
@@ -45,7 +50,8 @@ if (MSVC)
       cayley_energy_verifier
       cayley_fibonacci_verifier
       cayley_direct_energy_verifier
-      cayley_trace_intercept_rigidity)
+      cayley_trace_intercept_rigidity
+      cayley_inverse_k89_witness)
     target_compile_options(${target} PRIVATE /W4)
   endforeach()
 else()
@@ -55,7 +61,8 @@ else()
       cayley_energy_verifier
       cayley_fibonacci_verifier
       cayley_direct_energy_verifier
-      cayley_trace_intercept_rigidity)
+      cayley_trace_intercept_rigidity
+      cayley_inverse_k89_witness)
     target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
   endforeach()
 endif()
