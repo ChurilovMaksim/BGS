@@ -96,6 +96,9 @@ jobs:
       - name: Regress inverse-row reflection reduction
         run: python computations/verification/cayley_product_row_reflection.py
 
+      - name: Regress inverse pair-sum square factorization
+        run: python computations/verification/cayley_inverse_pair_sum_factorization.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
