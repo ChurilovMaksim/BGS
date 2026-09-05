@@ -3,20 +3,20 @@
 ## Objective
 
 The unchanged closure target is a rigorous microscopic BGS/RMT theorem for a
-natural deterministic chaotic quantum system after all genuine symmetries are
-resolved.  No finite-moment, eigenfunction, or numerical resemblance statement
+specified deterministic chaotic quantum system after all genuine symmetries are
+resolved. No finite-moment, eigenfunction, or numerical resemblance statement
 is accepted as a substitute for a mean-spacing local-statistics theorem.
 
-This pass produced two mathematically distinct advances and one literature lead.
-It did **not** solve the full BGS conjecture.
+This date produced several exact arithmetic and deterministic spectral advances.
+It did **not** solve microscopic BGS.
 
 ## A. Frobenius amplification over minimal finite extensions
 
-New file:
+Authoritative note:
 
 - `mathematics/cayley_frobenius_amplification.md`
 
-New exact regression:
+Exact regression:
 
 - `computations/verification/cayley_frobenius_extension.py`
 
@@ -27,53 +27,34 @@ f=ord_K(p), q=p^f,
 H=mu_K(F_q), A=c(H\{1}).
 ```
 
-The non-forced Cayley-collision set is Frobenius-stable and every Frobenius
-orbit has exactly `f` elements.  Therefore
+Every non-forced Cayley collision has a Frobenius orbit of size exactly `f`, so
 
 ```text
 f | Delta_K^ext(p),
 Delta_K^ext(p)>0 => Delta_K^ext(p)>=f.
 ```
 
-The normalized collision-resultant argument extends from completely split
-primes to every rational prime `p!=2,K` in the minimal extension:
+The normalized collision-resultant argument extends from split primes to every
+`p!=2,K` in the minimal extension:
 
 ```text
 sum_p Delta_K^ext(p) log p
- <= (K^3-5K^2+6K+1)((K-1)log12-3logK).
+ <=(K^3-5K^2+6K+1)((K-1)log12-3logK).
 ```
 
-The canonical difference-discriminant classification extends in the same
-model:
+The canonical difference-discriminant classification extends as well:
 
 ```text
-Delta_K^ext(p)>0 iff p | Disc(S_K),
-Delta_K^ext(p)<=4 v_p(Disc(S_K)).
+Delta_K^ext(p)>0 iff p|Disc(S_K),
+Delta_K^ext(p)<=4v_p(Disc(S_K)).
 ```
 
-Combining the `O(K^4)` mass budget with Frobenius orbit size and the scarcity
-of residue classes of multiplicative order at most `K^beta` gives:
+PNT, Brun--Titchmarsh and the scarcity of small multiplicative orders imply a
+density-one exact baseline for unrestricted prime pairs `K~X^theta,p~X` for
+every fixed `theta<1/3`. This does not improve the split slice, where
+`ord_K(p)=1`.
 
-> For every fixed `theta<1/3`, among unrestricted prime pairs
-> `K~X^theta`, `p~X`, asymptotically almost every minimal-extension Cayley set
-> has the exact baseline
-> `E_+(A)=3(K-1)(K-2)`.
-
-The proof uses only PNT, Brun--Titchmarsh, and `tau(n)=n^(o(1))` externally.
-The exponent `1/3` is natural for this mechanism: the global mass is `K^4` and
-Frobenius amplification is at most `K-1`, so a new saving in the global budget
-is needed to go beyond it by this route.
-
-### Independent finite checks
-
-Two exact implementations were compared:
-
-1. direct polynomial-basis arithmetic in `F_(p^f)`, explicit Cayley differences,
-   and Frobenius-orbit decomposition;
-2. factorization of `Phi_K` modulo `p` and independent sparse reduction of the
-   collision polynomial modulo an irreducible degree-`f` factor.
-
-They agree on
+Independent exact checks agree on
 
 ```text
 (K,p,f,Delta)
@@ -83,158 +64,325 @@ They agree on
  (13,5,4,496).
 ```
 
-For `K=7`, exhausting every odd `p!=7` below the universal resultant cutoff
-`94` gives only `(13,2,32)`, matching the exact factorization
-`Disc(S_7)=2^348 7^63 13^12`.
-
-GitHub Actions run 115 executed the new regression and the full repository
-Python/C++/Lean/TeX verification stack successfully.
-
-### Scope warning
-
-This is not an improvement of the original **split-prime** theorem: when
-`p==1 (mod K)`, `ord_K(p)=1`, so Frobenius amplification disappears.  It is a
-new exact theorem for the natural minimal-extension family and a structural
-probe of what the split condition destroys.
-
 ## B. Exact trace-to-local-statistics bridge
 
-New file:
+Authoritative note:
 
 - `mathematics/trace_to_local_statistics_bridge.md`
 
-For an `N x N` unitary matrix `U` with eigenangles `theta_j`, define the
-translation-invariant factorial microscopic `k`-point statistic by periodizing
-a Schwartz test at scale `1/N`.
-
-For every zero-sum integer tuple `m_1+...+m_k=0`, the distinct-index exponential
-sum is exactly
+For a zero-sum integer tuple, partition-lattice Mobius inversion gives exactly
 
 ```text
 D_U(m_1,...,m_k)
- = sum_(pi in Pi_k) mu(pi)
-   product_(B in pi) Tr(U^(sum_(a in B)m_a)),
+ =sum_(pi in Pi_k) mu(pi)
+  product_(B in pi) Tr(U^(sum_(a in B)m_a)).
 ```
 
-where
-
-```text
-mu(pi)=product_(B in pi)(-1)^(|B|-1)(|B|-1)!.
-```
-
-Poisson summation then gives the exact microscopic identity
+Poisson summation then gives
 
 ```text
 C_(k,N)(U;phi)
  =N^(-k) sum_(m in Z^(k-1))
-   phihat(m/N) D_U(m_1,...,m_k).
+   phihat(m/N)D_U(m_1,...,m_k).
 ```
 
-For compact Fourier support, only powers `|m|=O(N)` occur.  Thus the remaining
-local-statistics closure can be stated precisely as a weighted joint-trace
-comparison at **Heisenberg scale**, plus a high-frequency tail bound if the
-band-limit is to be removed.
+Compact Fourier support therefore requires joint trace information at powers
+`Theta(N)`, the Heisenberg scale. The deterministic Fourier conversion is
+closed; the open spectral theorem is a weighted Heisenberg-scale joint-trace
+comparison for the correct desymmetrized block, plus high-frequency tail
+control beyond band-limited tests.
 
-For `k=2`,
+## C. Exact real-trace order-three split support
+
+The original dehomogenized `D'/G'` coefficient constructions were adversarially
+re-audited. Leading degree can drop at the projective point `mu=infinity`, so
+their two-sided geometric interpretation is retracted; they remain safe
+one-way obstructions only.
+
+The active exact support is now the fixed-degree maximal-real trace ideal from
+
+- `mathematics/cayley_product_row_real_trace_ideal.md`,
+- `computations/verification/cayley_product_row_real_trace_ideal.py`.
+
+For every split prime,
 
 ```text
-C_(2,N)(U;phi)
- =N^(-2) sum_m phihat(m/N)(|Tr(U^m)|^2-N).
+p|Lambda_(K,r)^(3)
+iff
+some row pair in ratio class [r] has I>=3.
 ```
 
-Hence fixed trace moments or fixed fourth moments are mathematically
-insufficient for microscopic BGS unless supplemented by a mechanism controlling
-`Theta(N)` trace powers.  This closes the deterministic Fourier bridge itself;
-it does not prove the required arithmetic trace estimates.
+Hence outside the product support
 
-A direct finite numerical red-team of the partition-Mobius identity for
-`k=2,3,4` on a five-point rational eigenangle spectrum agreed to floating error
-`<1.1e-14`; the proof in the note is exact and does not depend on that test.
+```text
+I_K(p)<=2,
+Delta_K(p)<=8(K-1)(K-2),
+E_+(A)<=11(K-1)(K-2).
+```
 
-## C. Concurrent main-branch refinement: coefficient ideals
+Exact anchors include
 
-While this pass was running, `main` advanced with
+```text
+Lambda'_(17,10)^(3)=103,
+Lambda'_(23,18)^(3)=47^3*139.
+```
 
-- `mathematics/cayley_product_row_coefficient_ideal.md`,
-- `computations/verification/cayley_product_row_coefficient_ideal.py`.
+The primes `103`, `47`, and `139` are genuinely realized by intersections of
+size at least three.
 
-That refinement replaces the gcd of separate coefficient norms by the actual
-subresultant coefficient ideal `J_(K,r)^(3)` and its contraction
-`D_(K,r)^(3) Z=J intersect Z`.  This is arithmetically sharper because one
-realized finite-field row intersection forces a **single** prime ideal above
-`p` to contain all relevant coefficients.  The surviving split-prime closure
-problem is to bound the split rational prime divisors of `D'_K^(3)` (or prove a
-subpolynomial row-intersection bound on its support).
+## D. Inverse-row reflection reduction
 
-The Frobenius theorem and the coefficient-ideal theorem are complementary:
+New exact structure for `r=-1`:
 
-- coefficient ideals sharpen the residue-degree-one (`split`) exceptional
-  support;
-- Frobenius amplification exploits residue degree away from the split slice.
+- `mathematics/cayley_product_row_reflection.md`,
+- `computations/verification/cayley_product_row_reflection.py`.
 
-Neither currently implies the other.
+For the normalized inverse ratio,
 
-## D. Literature lead: short root-of-unity congruences
+```text
+alpha=-1,
+beta=2tau,
+Q(T)=-P(2tau-T).
+```
 
-A targeted search identified R. Dvornicich and U. Zannier,
-*Sums of roots of unity vanishing modulo a prime*, Arch. Math. 79 (2002),
-104--108, DOI `10.1007/s00013-002-8291-4`.
+Writing
 
-Its abstract states that it extends the Conway--Jones classification inequality
-from characteristic-zero linear relations among roots of unity to congruences
-modulo a prime.  This is potentially relevant because three product-row
-intersections yield simultaneous sparse cyclotomic-unit / root-of-unity
-congruences.
+```text
+F(Z)=P(tau+Z)=E(Z^2)+Z O(Z^2)
+```
 
-**Status: lead only.**  The exact theorem hypotheses and inequality have not yet
-been matched to the product-row equations, so no consequence for `D'_K^(3)` is
-claimed here.
+gives exactly
 
-## E. Current frontier after this pass
+```text
+I_-1(q)=2 deg gcd(E,O mod q).
+```
+
+Thus the order-three event is a corank-two half-degree problem. The associated
+specialization-safe support integer is `Xi_K`. At `(K,p)=(31,1303)` the direct
+finite-field intersection size is `4`.
+
+## E. Cyclotomic trace-intercept rigidity
+
+New authoritative note:
+
+- `mathematics/cayley_trace_intercept_rigidity.md`
+
+Independent implementations/evidence:
+
+- `computations/cpp/cayley_trace_intercept_rigidity.cpp`,
+- `evidence/cayley_trace_intercept_rigidity_20260905.txt`.
+
+Let
+
+```text
+t_a=zeta^a+zeta^(-a),
+s_a=zeta^a-zeta^(-a),
+gamma_r(a,b)=t_b-(s_r/s_1)t_a.
+```
+
+Bass's prime-conductor theorem on the group generated by `1-zeta^j` implies
+that
+
+```text
+|1-zeta|,...,|1-zeta^((K-1)/2)|
+```
+
+are multiplicatively independent. Together with
+
+```text
+|s_n|=E_[2n],
+|t_x-t_y|=E_[x-y]E_[x+y],
+```
+
+this gives a complete characteristic-zero affine-intercept classification.
+
+### Exact theorem
+
+For every odd prime `K>=7` and normalized ratio `r!=1`, every fibre of
+
+```text
+([a],[b]) -> gamma_r(a,b)
+```
+
+has cardinality at most two.
+
+- For `r=-1`, a double fibre is only a swap.
+- For `r!=+-1`, every double fibre is, up to signs/exchange,
+
+```text
+([a],   [a+1-r]),
+([a+2], [a+1+r]).
+```
+
+The equality is forced by the exact identity
+
+```text
+t_(x+r)-t_(x-r)=s_r s_x.
+```
+
+A third point would create a triangle in the step-two quotient of the odd
+`K`-cycle by `a~-a`; that quotient is a path. Hence the forced
+characteristic-zero row intersection is isolated and finite order-three support
+is genuinely created by reduction.
+
+### Independent C++20 regression
+
+The exact sparse group-ring verifier was compiled with
+
+```text
+g++ 14.2.0 -O3 -std=c++20 -Wall -Wextra -Wpedantic
+```
+
+and the recorded extended run checked
+
+```text
+K=7,11,13,17,23,31,47,79,101,127,151,181,199,
+  251,307,401,503,601,701,809.
+```
+
+Every normalized ratio has maximum fibre size `2`, inverse doubletons are swaps,
+and non-inverse doubletons have the proved step-two form. This is regression,
+not the universal proof.
+
+## F. Cyclotomic-unit matching and scalar shift-resultant support
+
+The row equation admits a direct cyclotomic-unit formulation. Put
+
+```text
+u_n=s_n/s_1,
+W_r(b)=u_((b+r)/2)u_((b-r)/2),
+V_r(a)=u_r u_((a+1)/2)u_((a-1)/2).
+```
+
+For every split embedding prime,
+
+```text
+row intersection
+iff
+W_r(b)=V_r(a) mod q.
+```
+
+Define the scalar shift resultant
+
+```text
+R_(K,r)(Z)
+ =Res_T(P_1(T),R_r(alpha_r T+beta_r+Z))
+ =c_0+c_1 Z+c_2 Z^2+....
+```
+
+The product formula proves exactly
+
+```text
+ord_(Z=0)(R_(K,r) mod q)=I_(1,r)(q).
+```
+
+Therefore
+
+```text
+I>=3 iff c_0=c_1=c_2=0 mod q.
+```
+
+The three-generator ideal `(c_0,c_1,c_2)` contracts to an integer
+`Omega_(K,r)^(3)` with the same **split rational-prime support** as the exact
+real-trace `Lambda_(K,r)^(3)`. Equality of the integers or non-split valuations
+is not claimed.
+
+Exact SymPy/Smith anchors are
+
+```text
+(K,r)=(7,2):   Omega=7^3,                  Omega'=1,
+(K,r)=(11,7):  Omega=11^5,                 Omega'=1,
+(K,r)=(13,3):  Omega=13^6,                 Omega'=1,
+(K,r)=(13,12): Omega=2^4*5^2*13^6,         Omega'=5^2.
+```
+
+The prime-to-`2K` support agrees with the corresponding `Lambda'` anchors.
+
+The nonzero constant coefficient gives a new deterministic per-ratio budget:
+
+```text
+sum_(p==1 mod K, I_r(p)>=3) log p = O(K^3).
+```
+
+This is a genuine improvement in localization, but not pointwise closure:
+there are `O(K)` ratios, so summing recovers `O(K^4)`. The next arithmetic
+question is simultaneous common-factor control of `c_0,c_1,c_2`, not another
+height bound on `c_0` alone.
+
+A naive full SymPy resultant becomes expensive by `K=17`; the intended scalable
+implementation should compute only the `Z^0,Z^1,Z^2` determinant coefficients
+in the quotient algebra rather than materializing a degree-`m^2` polynomial.
+
+## G. Literature audit
+
+### Bass / Fu
+
+H. Bass, *Generators and Relations for Cyclotomic Units*, Nagoya Math. J. 27
+(1966), Theorem 3, supplies the load-bearing prime-conductor multiplicative
+independence used in the intercept theorem. Hang Fu's *Projective Equivalence
+for the Roots of Unity* (J. Algebraic Combin. 56 (2022), arXiv:1905.01510)
+uses a related cross-ratio/cyclotomic-unit mechanism in characteristic zero.
+
+### Dvornicich--Zannier lead
+
+R. Dvornicich and U. Zannier, *Sums of roots of unity vanishing modulo a prime*,
+Arch. Math. 79 (2002), 104--108, DOI `10.1007/s00013-002-8291-4`, remains a
+lead only. Its abstract advertises a modulo-prime analogue of a Conway--Jones
+inequality, but the exact hypotheses have not been matched to a relation at one
+chosen prime ideal of `Q(zeta_K)`. The maintained Fibonacci collision family is
+a direct warning that the naive statement ``short finite-field relation forbids
+large prime K'' is false.
+
+No Dvornicich--Zannier consequence is promoted without the full hypothesis
+match.
+
+## H. Current frontier
 
 ### Established
 
-1. The maintained split-prime Cayley/resultant/discriminant/Jacobi chain remains
-   intact under the full CI regression stack.
-2. Minimal-extension Frobenius amplification gives a new density-one exact
-   quadratic-energy theorem for every `theta<1/3` in the unrestricted-prime
-   family.
-3. The deterministic local-statistics bridge is now explicit: the missing BGS
-   input is a weighted Heisenberg-scale joint-trace comparison, not merely an
-   unspecified `local law`.
-4. The newest split-prime arithmetic obstruction is the canonical
-   coefficient-ideal divisor problem from current `main`.
+1. The pair-key/fourth-moment reductions and corrected off/off theorem remain
+   intact.
+2. The exact split order-three support has two specialization-safe encodings:
+   fixed-degree real-trace subresultants `Lambda` and the three scalar shift
+   coefficients defining `Omega`.
+3. Characteristic-zero affine intercept fibres have size at most two and are
+   completely classified.
+4. Individual finite row intersections are explicit congruences between
+   cyclotomic units.
+5. Each fixed ratio has split order-three logarithmic support mass `O(K^3)`.
+6. The inverse ratio has a stronger half-degree reflection formulation.
+7. Frobenius amplification gives a density-one exact minimal-extension theorem
+   for `theta<1/3`.
+8. The deterministic trace-to-local-statistics bridge is exact at Heisenberg
+   scale.
 
 ### Open
 
-1. **Split pointwise Cayley energy.**  Prove
-   `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))`, or enough of it on the actual exceptional
-   support.
-2. **Coefficient-ideal divisor problem.**  Control split prime divisors of
-   `D'_K^(3)` strongly enough for growing `K`.
-3. **Heisenberg trace problem.**  Prove the weighted trace criterion from
-   `trace_to_local_statistics_bridge.md` for the desymmetrized quantum spectrum
-   at powers `Theta(N)`.
-4. **Symmetry resolution.**  State and verify the exact quantum-map symmetry
-   class before any GOE/COE/GUE/CUE comparison.
-5. **General BGS.**  No theorem for all chaotic systems has been proved here;
-   extra arithmetic symmetries and known counterexample mechanisms show that a
-   universal statement without hypotheses is not mathematically well posed.
-
-## F. Repository state
-
-Research branch:
+1. **Largest split support prime / common-gcd problem.** Prove, for example,
 
 ```text
-frontier/frobenius-bgs-20260905
+P_split^+(Lambda'_K^(3))<=K^(4+o(1))
 ```
 
-Draft PR:
+or an equivalent theorem for the simultaneous scalar support. The new
+per-ratio `O(K^3)` mass is insufficient.
+2. **Pointwise split Cayley energy.** Close
 
 ```text
-#12 Frobenius amplification for minimal-extension Cayley collisions
+E_+(A)=(K-1)^4/p+O(K^(2+o(1)))
 ```
 
-The PR is intentionally draft.  `main` advanced concurrently after the branch
-was cut, so the branch currently diverges from `main`; no merge should occur
-until the new `main` changes are reconciled and the final PR-head CI run passes.
+for all intended split designs.
+3. **Heisenberg trace problem.** Prove the weighted joint-trace comparison for
+the correct desymmetrized spectrum at powers `Theta(N)`.
+4. **High-frequency tail.** Remove the Fourier band-limit after the trace
+comparison.
+5. **Microscopic BGS/RMT.** Still open; no universal theorem for all chaotic
+systems is claimed.
+
+## I. Repository state
+
+The earlier frontier PR was merged into `main`. The current date's promoted
+results, verifiers, evidence, CI gates, theorem index, README and manuscript are
+being maintained directly on `main` under the repository operating protocol.
+The claim ledger remains the final status authority.
