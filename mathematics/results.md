@@ -37,8 +37,8 @@ c(h)=(h+1)/(h-1),
 A=c(H\{1}),
 ```
 
-one has `d(u,v)=2/(c(u)-c(v))` and `c(h^-1)=-c(h)`.  Thus the mixed layer is
-controlled by `E_+(A)`.  Prime-order characteristic-zero additive collisions
+one has `d(u,v)=2/(c(u)-c(v))` and `c(h^-1)=-c(h)`. Thus the mixed layer is
+controlled by `E_+(A)`. Prime-order characteristic-zero additive collisions
 are only the forced identity/inversion-swap relations.
 
 ## 3. Best uniform pointwise theorem — EXACT + EXTERNAL-THEOREM
@@ -162,7 +162,7 @@ is, up to signs/exchange,
 ([a+2], [a+1+r]).
 ```
 
-The identity comes from `t_(x+r)-t_(x-r)=s_r s_x`.  A third point would create
+The identity comes from `t_(x+r)-t_(x-r)=s_r s_x`. A third point would create
 a triangle in the step-two quotient of an odd cycle, which is impossible.
 
 An independent C++20 group-ring verifier checks every normalized ratio through
@@ -196,7 +196,7 @@ I>=3 iff c_0=c_1=c_2=0 mod q.
 ```
 
 The three-generator contraction `Omega_(K,r)^(3)` has the same split
-rational-prime support as `Lambda_(K,r)^(3)`.  For each fixed ratio,
+rational-prime support as `Lambda_(K,r)^(3)`. For each fixed ratio,
 
 ```text
 sum_(p==1 mod K, I_r(p)>=3) log p=O(K^3).
@@ -310,7 +310,83 @@ The translated route is orders of magnitude faster than the full shift
 resultant in the maintained SymPy reference computation; Smith normal form is
 the next finite-algebra bottleneck.
 
-## 11. Square collision resultants and canonical discriminants — EXACT
+## 11. Inverse quartic localization and reduced edge ideals — EXACT
+
+Two distinct zero pair sums of the split squarefree polynomial `F` cannot share
+a root. Therefore inverse order-three support is already a four-root event. For
+four distinct nonzero centred roots,
+
+```text
+I_-1>=3
+iff I_-1>=4
+iff e_1(x_1,x_2,x_3,x_4)=e_3(x_1,x_2,x_3,x_4)=0.
+```
+
+The converse is exact because the quartic
+
+```text
+X^4+e_2 X^2+e_4
+```
+
+is even, hence its four distinct nonzero roots form two opposite pairs.
+
+For a general monic `F` of degree `m`, the pair-sum polynomial also has the
+universal discriminant factorization
+
+```text
+Disc(S_F)=Disc(F)^(m-2) Q_F^2,
+Q_F=prod_(|A|=4)(e_1(A)^3-4e_1(A)e_2(A)+8e_3(A)).
+```
+
+The first factor comes from pairs of pair-sum edges sharing one vertex; the
+second comes from the three disjoint-edge pairings of each four-subset.
+
+In the prime real cyclotomic field define
+
+```text
+v_n=(t_n-2)/(tau-2),
+w_(a,b)=2-v_a-v_b.
+```
+
+Then `v_n` is a square of a real cyclotomic unit and
+
+```text
+2tau-t_a-t_b=(tau-2)w_(a,b),
+|N(tau-2)|=K.
+```
+
+Away from `K`, inverse zero pair sums are therefore exactly `w_(a,b)=0 mod q`.
+The inverse order-three support is equivalently the union of prime-ideal
+supports of the two-generator ideals `(w_e,w_f)` for disjoint edges, or of the
+quartic ideals `(e_1,e_3)`.
+
+A rational `gcd(N(w_e),N(w_f))` is only a candidate filter: the two rational
+norms can be divisible by the same `p` at different prime ideals. The maintained
+negative control `K=41,p=2908049` exhibits precisely this failure, so a
+same-embedding check is load-bearing.
+
+An independent exact finite witness is
+
+```text
+K=89,
+p=143207231,
+p/K^4=2.282469174...,
+I_-1=4,
+zero edges=(16,35),(20,33).
+```
+
+Moreover
+
+```text
+|N(w_(16,35))|=|N(w_(20,33))|=143207231.
+```
+
+Thus a strict finite inverse-support ceiling `p<=K^4` is false. This does **not**
+disprove the maintained asymptotic target `K^(4+o(1))`.
+
+See [`cayley_inverse_quartic_localization.md`](cayley_inverse_quartic_localization.md).
+
+## 12. Square collision resultants and canonical discriminants — EXACT
 
 Every maintained prime-order cleared collision polynomial satisfies
 
@@ -324,7 +400,7 @@ The Fibonacci slice
 Res(Phi_K,X^2+3X+1)=F_K^2
 ```
 
-shows individual resultants may be exponentially large.  The canonical
+shows individual resultants may be exponentially large. The canonical
 difference polynomial gives for split primes
 
 ```text
@@ -339,7 +415,7 @@ with exact ratio-orbit fourth-power structure
  =2^((K-1)^4/4)K^((K-1)(K^2-7)/4)J_K^4.
 ```
 
-## 12. Global split-prime mass and averaged theorems — EXACT / EXTERNAL-THEOREM
+## 13. Global split-prime mass and averaged theorems — EXACT / EXTERNAL-THEOREM
 
 For odd prime `K`,
 
@@ -354,7 +430,7 @@ For prime `K~X^theta`, split prime `p~X`, Bombieri--Vinogradov and PNT imply
 average Delta_K(p)/K^2 <<_theta X^(3theta-1)
 ```
 
-for fixed `theta<1/3`.  For fixed `theta<1/5`, asymptotically almost every split
+for fixed `theta<1/3`. For fixed `theta<1/5`, asymptotically almost every split
 pair has the exact baseline
 
 ```text
@@ -362,7 +438,7 @@ Delta_K(p)=0,
 E_+(A)=3(K-1)(K-2).
 ```
 
-## 13. Frobenius amplification in minimal finite extensions — EXACT
+## 14. Frobenius amplification in minimal finite extensions — EXACT
 
 For arbitrary prime `p!=2,K`, put
 
@@ -377,14 +453,14 @@ f | Delta_K^ext(p).
 ```
 
 The weighted resultant budget and canonical discriminant classification extend
-to all such rational primes.  For unrestricted prime pairs `K~X^theta,p~X`,
+to all such rational primes. For unrestricted prime pairs `K~X^theta,p~X`,
 PNT + Brun--Titchmarsh + the Frobenius multiplicity give a density-one exact
-baseline for every fixed `theta<1/3` in the minimal extension.  This does not
+baseline for every fixed `theta<1/3` in the minimal extension. This does not
 improve the split slice, where `f=1`.
 
 See [`cayley_frobenius_amplification.md`](cayley_frobenius_amplification.md).
 
-## 14. Full Cayley/Jacobi trace identity — EXACT
+## 15. Full Cayley/Jacobi trace identity — EXACT
 
 For the normalized full annihilator twisted-Jacobi matrix,
 
@@ -398,7 +474,7 @@ The normalized fourth/second moment ratio tends to `3` in the maintained split
 double average below `theta<1/3`. This is not a CLT and not a local spectral
 law.
 
-## 15. Corrected off/off elliptic theorem — EXACT + EXTERNAL-THEOREM
+## 16. Corrected off/off elliptic theorem — EXACT + EXTERNAL-THEOREM
 
 Every generic class has a coherent reducible fibre of exact size `2p-8`.
 After extraction, Igusa monodromy and Deligne/Fouvry--Kowalski--Michel
@@ -410,7 +486,7 @@ Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4.
 
 Thus the elliptic layer is governed by the same Cayley-energy bottleneck.
 
-## 16. Exact trace-to-local-statistics bridge — EXACT
+## 17. Exact trace-to-local-statistics bridge — EXACT
 
 For an `N x N` unitary matrix, partition-lattice Mobius inversion expresses
 distinct-index exponential sums through products of traces. Poisson summation
@@ -424,34 +500,40 @@ C_(2,N)(U;phi)
 
 Band-limited microscopic tests require trace powers `|m|=Theta(N)`.
 A weighted Heisenberg-scale joint-trace comparison with the target RMT ensemble
-is sufficient for the corresponding band-limited microscopic theorem.  The
+is sufficient for the corresponding band-limited microscopic theorem. The
 required arithmetic/spectral trace estimates and the high-frequency tail for
 arbitrary Schwartz tests are **OPEN**.
 
 See [`trace_to_local_statistics_bridge.md`](trace_to_local_statistics_bridge.md).
 
-## 17. Verification and adversarial controls
+## 18. Verification and adversarial controls
 
 Promoted finite controls include:
 
 - `(K,p)=(29,728017)` and `(31,1042903)` with `p>K^4` but positive excess;
-- `(K,p)=(41,2908049)` with a row pair sharing two parameters;
+- `(K,p)=(41,2908049)` with a row pair sharing two parameters, and separately
+  as a reduced-edge norm-gcd false positive for inverse support;
 - `(K,p)=(31,1303)` with inverse intersection size `4`;
+- `(K,p)=(89,143207231)` with inverse intersection size `4`,
+  `p=2.282469...K^4`, and exact four-root `e_1=e_3=0` certificate;
 - `(K,p)=(131,F_131)` with exact excess `32`;
 - C++20 characteristic-zero intercept regression through an extended prime
   anchor `K=809`;
+- independent C++20 verification of the `K=89` inverse witness;
 - inverse translated-resultant/Smith anchors through `K=23`;
+- exact reduced-edge split-support sweeps through the explicitly recorded
+  prime `K=101`; no interrupted larger-batch output is promoted;
 - minimal-extension controls
   `(K,p,f,Delta)=(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)`.
 
 Finite computation proves only its explicit finite statements.
 
-## 18. Current frontier — OPEN
+## 19. Current frontier — OPEN
 
 The arithmetic chain is
 
 ```text
-common split divisors of small cyclotomic scalar systems
+common split divisors of small cyclotomic scalar/local systems
         -> pointwise centered Cayley energy
         -> complete fourth-moment control.
 ```
@@ -462,7 +544,9 @@ A sufficient target remains, for example,
 P_split^+(Lambda'_K^(3))<=K^(4+o(1)),
 ```
 
-or an equivalent theorem for `Omega` / inverse `Theta` support.
+or an equivalent theorem for `Omega` / inverse `Theta` / reduced-edge support.
+The `K=89` certificate shows that a strict finite `K^4` ceiling is too strong,
+but it is compatible with `K^(4+o(1))`.
 
 The microscopic chain is independently
 
