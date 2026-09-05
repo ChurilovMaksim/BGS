@@ -91,3 +91,6 @@ jobs:
 
       - name: Regress shared-endpoint inverse torsion theorem
         run: python computations/verification/cayley_inverse_shared_endpoint_torsion.py
+
+      - name: Regress torsion inverse factors are support-free
+        run: python computations/verification/cayley_inverse_torsion_factors_support_free.py
