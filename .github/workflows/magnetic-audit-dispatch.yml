@@ -1,0 +1,28 @@
+name: Request full magnetic audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/magnetic-audit-dispatch.yml'
+      - 'computations/verification/magnetic_scalar_certificate.py'
+      - 'computations/maintenance/package_magnetic_research.py'
+permissions:
+  contents: read
+  actions: write
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel obsolete publication instances and request the current main audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for status in in_progress queued; do
+            for id in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/magnetic-publication.yml/runs?status=$status" --jq '.workflow_runs[].id'); do
+              gh api --method POST "repos/$GITHUB_REPOSITORY/actions/runs/$id/cancel" || true
+            done
+          done
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/magnetic-publication.yml/dispatches" \
+            -f ref=main -f 'inputs[publish]=true'
