@@ -67,3 +67,6 @@ jobs:
 
       - name: Regress inverse resultant transversality
         run: python computations/verification/cayley_inverse_resultant_transversality.py
+
+      - name: Regress inverse structural associates
+        run: python computations/verification/cayley_inverse_structural_associates.py
