@@ -46,5 +46,5 @@ theorem pell11 : pell 11 = (8119,5741) := by native_decide
 theorem period11 : vector 11 = (1,0) := by native_decide
 theorem pairKeyCount11 : pairKeys.length = 220 := by native_decide
 theorem pairKeysUnique11 : pairKeys.Nodup := by native_decide
-theorem pairKeysNonzero11 : Not (List.Mem (0,0) pairKeys) := by native_decide
+theorem pairKeysNonzero11 : pairKeys.contains (0,0) = false := by native_decide
 end Bgs.PellCohomology

@@ -26,13 +26,13 @@ def states : Nat → List State
 
 def coefficient (s : State) (t : Int) : Int :=
   (List.range 7).foldl (fun acc k =>
-    let x : Int := k
+    let x : Int := Int.ofNat k
     let pos : Int := if (s.u*x+s.v)%7=x ∧ (s.l*x+s.d)%7=t then 1 else 0
     let neg : Int := if (-s.u*x+s.v)%7=x ∧ (-s.l*x+s.d)%7=t then 1 else 0
     acc+pos-neg) 0
 
 def histogram (m : Nat) : List Int :=
-  (List.range 7).map (fun t => (states m).foldl (fun a s => a+coefficient s t) 0)
+  (List.range 7).map (fun t => (states m).foldl (fun a s => a+coefficient s (Int.ofNat t)) 0)
 
 def canonical (m : Nat) : List Int :=
   let c := histogram m

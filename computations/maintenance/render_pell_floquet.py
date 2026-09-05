@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 def main() -> None:
     src=ROOT/'mathematics/pell_floquet_normal_form.md'
     body=subprocess.check_output(['pandoc',str(src),'-f','markdown','-t','latex','--wrap=none'],text=True)
+    body=body.replace(r'\section{Related primary records}',r'\section{Related primary records}'+chr(10)+r'\small')
     digest=hashlib.sha256(src.read_bytes()).hexdigest()
     header=r'''\documentclass[11pt,a4paper]{article}
 \usepackage[margin=25mm]{geometry}
@@ -25,6 +26,7 @@ def main() -> None:
 \maketitle
 '''
     footer=r'''
+\normalsize
 \clearpage
 \section*{Reproducible numerical diagnostics}
 \begin{center}
