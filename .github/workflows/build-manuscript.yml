@@ -1,55 +1,24 @@
-name: Build committed manuscript PDF
+name: Independent manuscript build
 
 on:
   push:
     branches: [main]
-    paths:
-      - manuscript/**
+    paths: ['manuscript/**']
   workflow_dispatch:
-
-concurrency:
-  group: manuscript-pdf-${{ github.ref }}
-  cancel-in-progress: true
-
 permissions:
-  contents: write
-
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
       - name: Install TeX
         run: |
           sudo apt-get update
           sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
-      - name: Use source commit time for reproducible metadata
+      - name: Compile committed sources without publishing or repairing them
         run: |
-          epoch="$(git log -1 --format=%ct -- manuscript/arithmetic_cat_map_moments.tex)"
-          echo "SOURCE_DATE_EPOCH=${epoch}" >> "$GITHUB_ENV"
-          echo "FORCE_SOURCE_DATE=1" >> "$GITHUB_ENV"
-      - name: Compile manuscript
-        run: |
+          mkdir -p "$RUNNER_TEMP/paper"
           cd manuscript
-          latexmk -pdf -interaction=nonstopmode -halt-on-error arithmetic_cat_map_moments.tex
-          test -s arithmetic_cat_map_moments.pdf
-      - name: Commit synchronized PDF if branch head is unchanged
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f manuscript/arithmetic_cat_map_moments.pdf
-          if git diff --cached --quiet; then
-            echo "manuscript PDF is already synchronized"
-            exit 0
-          fi
-          git fetch origin "${GITHUB_REF_NAME}"
-          remote_head="$(git rev-parse "origin/${GITHUB_REF_NAME}")"
-          if [ "${remote_head}" != "${GITHUB_SHA}" ]; then
-            echo "branch advanced; verified build but skip stale PDF push"
-            exit 0
-          fi
-          git commit -m "manuscript: synchronize PDF [skip ci]"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="$RUNNER_TEMP/paper" arithmetic_cat_map_moments.tex
+          test -s "$RUNNER_TEMP/paper/arithmetic_cat_map_moments.pdf"
