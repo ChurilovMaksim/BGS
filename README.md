@@ -15,6 +15,41 @@ problem.
 
 ![Research pipeline](assets/research_pipeline.svg)
 
+## Fixed-strength review and sharp resonance minima
+
+The [fixed-strength proof review](mathematics/pell_fixed_strength_review.md)
+validates a nonaffine smooth Anosov family with arbitrary inverse-power
+operator-norm conjugacy through every polynomial time window. The classical
+strength is fixed, but smooth symplectic conjugacy retains arithmetic structure;
+this is not positive generic BGS. The previously uncommitted
+[full construction](mathematics/pell_all_orders_conjugacy.md) is now preserved.
+
+The [general single-orbit theorem](mathematics/pell_sharp_orbit_coercivity.md)
+extends the existing Pell-only sharp minimum to every hyperbolic matrix in
+SL(2,Z), with attained finite-span extrema and explicit minimizing
+correlations. The [complete first Fourier box](mathematics/pell_four_mode_coercivity.md)
+has the sharp bound `Gamma(g) >= 4*pi^2*||g||_2^4`, including all cross-orbit
+interference and every equality case. An exact radius-three integer witness
+has ratio `(6563/2178)*pi^2`, so the same constant cannot be extended unchanged.
+The [analytic rigidity review](mathematics/analytic_poisson_flatness_rigidity.md)
+adds a nonzero hbar-scale quantum commutator limit to the earlier classical lemma.
+
+The [audit record](record/rigidity_review_20260905.md) separates new results,
+recovered prior work, failed explorations and verification scope. The
+[compact evidence index](evidence/rigidity_validation.json) records 726 exact
+Python/C++ orbit comparisons, 720 cases for three further matrices, 80 exact
+multiorbit controls, the integer witness, and finite quantum/flow checks.
+No new Lean build, world-priority certification or repository-wide green CI
+is inferred. Raw reports are regenerable and included in the delivered archive.
+
+The companion article is built from maintained notes and the numerical index:
+
+```sh
+python manuscript/build_rigidity_paper.py
+cd manuscript
+pdflatex -interaction=nonstopmode -halt-on-error rigidity_and_sharp_resonance.tex
+```
+
 ## Pell Floquet continuation: actual propagator at recurrence times
 
 The [self-contained normal-form proof](mathematics/pell_floquet_normal_form.md)
