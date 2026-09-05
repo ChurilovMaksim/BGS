@@ -12,7 +12,20 @@ import json
 import math
 from pathlib import Path
 import numpy as np
-from pell_floquet_regression import design, odd_basis, weyl, expi, hs
+from pell_floquet_regression import design, weyl, hermitian_exponential
+
+def odd_basis(n):
+    q=np.zeros((n,(n-1)//2),dtype=complex)
+    j=np.arange(1,(n+1)//2)
+    q[j,j-1]=1/math.sqrt(2)
+    q[n-j,j-1]=-1/math.sqrt(2)
+    return q
+
+def expi(a,t):
+    return hermitian_exponential(a,t)
+
+def hs(a):
+    return float(np.linalg.norm(a,'fro')/math.sqrt(len(a)))
 
 
 def weights(k: int, t: int) -> list[int]:
@@ -54,7 +67,7 @@ def exact_checks() -> dict:
 def dense_checks() -> list[dict]:
     rows=[]
     for k in (3,5,7):
-        n,f,h,_=design(k)
+        n,f,h=design(k)
         q=odd_basis(n)
         d=q.shape[1]
         full_u=np.eye(n,dtype=complex)[(h*np.arange(n))%n]

@@ -26,8 +26,8 @@ $$
  \operatorname{supp}g\cap\operatorname{supp}(\mathcal Cg)=\varnothing,
  \qquad f=g-\mathcal Cg.                                      \tag{1}
 $$
-Nonzero examples form an infinite-dimensional linear space, constructed in
-Section 2. Let $N$ be odd, let $U_N$ be the cat quantization with the exact
+There is an infinite-dimensional real vector space of such generators,
+constructed in Section 2, containing nonzero functions. Let $N$ be odd, let $U_N$ be the cat quantization with the exact
 covariance below, and write
 $$
  G_N=\operatorname{Op}_N(g),\quad D_N=\operatorname{Op}_N(\mathcal Cg),
@@ -67,7 +67,7 @@ when interpreting its spectral statistics.
 
 **Theorem C (microscopic stability along Pell moduli).** Let $K$ tend to
 infinity through odd primes, put $N+F\sqrt2=(1+\sqrt2)^K$, and restrict to
-the odd parity space of dimension $D=(N-1)/2=Kn$. For fixed $\kappa$ the
+the odd parity space of dimension $D=(N-1)/2=Kn$. For fixed $\kappa$ and sufficiently large $N$, the
 spectrum consists of $K$ clusters, each containing exactly $n$ eigenvalues,
 whose angular halfwidth $a_N$ is $O(N^{-R})$ for every $R$. After a common
 rotation their centres are the $K$th roots of unity.
@@ -274,7 +274,7 @@ product of two kicks.
 For integer $t$, telescoping products of unitaries, or their adjoints when
 $t<0$, yields
 $$
- \|V_{\kappa,N}^t-A_{\kappa,N}U_N^tA_{\kappa,N}^*\|\
+ \|V_{\kappa,N}^t-A_{\kappa,N}U_N^tA_{\kappa,N}^*\|
        \leq |t|\delta_N.                                   \tag{21}
 $$
 Choosing $r$ larger than any fixed polynomial time exponent proves the
@@ -425,7 +425,7 @@ the lower bound and empty-process conclusion are the correct statements.
 For every generator in (1), $\{g,\mathcal Cg\}=0$. In the previous smooth
 notation, $\Gamma(g)=\sigma^2(\{g,\mathcal Cg\}/(4\pi))=0$. Thus the
 second-order exceptional set contains an explicit infinite-dimensional
-linear subspace of nonzero smooth generators. This does not contradict
+linear subspace containing nonzero smooth generators. This does not contradict
 openness and density of $\Gamma>0$; an infinite-dimensional exceptional
 subspace can still have empty interior. Subtracting the mean of $g$ places
 it in the zero-mean class without changing $f$, $\Gamma$, or the quantum

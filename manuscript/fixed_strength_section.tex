@@ -36,3 +36,19 @@ but it inherits arithmetic structure. This is not a generic BGS theorem,
 and not a claim of absent hidden symmetries or world priority. The complete
 proof, verification scope, and source audit are in the companion locality
 article and \texttt{mathematics/fixed\_strength\_locality.md}.
+
+
+\paragraph{Stability beyond individual mean-spacing precision.}
+The robustness addendum proves that a spectrum covered by $K$ arcs of total
+length $\ell$ has
+\[
+ \frac1D\#\{S_j>x\}\leq\frac KD+\frac\ell x,
+ \qquad R_D(x)\geq\frac1{K/D+\ell/x}-1.
+\]
+A random-origin window of unfolded length $L$ is occupied with probability
+at most $KL/D+\ell$. Thus the same three collapse conclusions hold under
+any additional unitary norm error $\eta_N=o(1/K)$, even when
+$\eta_N\gg1/D$. No assertion that every quantization of the same classical
+map meets this norm bound is made. For the explicit Gevrey-2 example, an
+unfolding restoring a nonempty local limit must have Lipschitz constant at
+least a fixed multiple of $e^{cN^{1/3}}/(KN^2)$ for large $N$.

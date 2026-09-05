@@ -8,3 +8,7 @@ import Bgs.FibonacciRatioSmall
 import Bgs.MagneticTraceSmall
 
 import Bgs.PellCohomology
+
+import Bgs.PellEchoWeights
+
+import Bgs.LocalityKernels
