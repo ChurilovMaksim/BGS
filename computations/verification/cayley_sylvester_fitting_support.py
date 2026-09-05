@@ -78,10 +78,11 @@ def check_generic_kernel() -> None:
     print("generic Sylvester nullity/Fitting criterion: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_power: int = 1) -> int:
     assert p % K == 1
     primitive = int(sp.primitive_root(p))
-    zeta = pow(primitive, (p - 1) // K, p)
+    assert 1 <= embedding_power < K
+    zeta = pow(primitive, embedding_power * ((p - 1) // K), p)
     return (zeta + pow(zeta, -1, p)) % p
 
 
@@ -109,9 +110,9 @@ def first_pscs(P: sp.Poly, Q: sp.Poly, count: int = 3) -> list[int]:
     return out
 
 
-def check_split_row(K: int, p: int, r: int, expected_g: int | None = None) -> int:
+def check_split_row(K: int, p: int, r: int, expected_g: int | None = None, embedding_power: int = 1) -> int:
     _, P0, Q0 = trace_cofactor_pair(K, r)
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_power)
     P = specialize(P0, tau, p)
     Q = specialize(Q0, tau, p)
     g = sp.gcd(P, Q).degree()
@@ -130,7 +131,7 @@ def check_split_row(K: int, p: int, r: int, expected_g: int | None = None) -> in
     compound_rank = math.comb(rank, n - 2) if rank >= n - 2 else 0
     assert (compound_rank == 0) == (g >= 3)
     print(
-        f"K={K:2d} p={p:4d} r={r:2d} gcd={g} "
+        f"K={K:2d} p={p:4d} r={r:2d} embedding={embedding_power} tau={tau} gcd={g} "
         f"rank={rank}/{n} psc012={psc}: OK"
     )
     return g
@@ -157,7 +158,8 @@ def main() -> None:
     check_split_row(11, 23, 10, expected_g=0)
     K, p, r = find_degree_one_anchor()
     check_split_row(K, p, r, expected_g=1)
-    check_split_row(7, 29, 6, expected_g=2)
+    check_split_row(7, 29, 6, expected_g=0)
+    check_split_row(11, 23, 10, expected_g=2, embedding_power=2)
     check_split_row(23, 47, 22, expected_g=4)
 
     print("cayley Sylvester/Fitting support regression: OK")

@@ -64,7 +64,7 @@ no points are dropped to improve the plot.
 `verify_workspace.py` executes every maintained executable Python verifier
 and every compiled C++ target with source/log hashes. Lean compilation and
 TeX builds are distinct mandatory workflow steps. The new Lean module proves
-three general cleared-denominator cohomology identities and four finite
+three general cleared-denominator cohomology identities and five finite
 K=11 assertions. It does not formalize the operator or limiting theorems.
 
 Wolfram was attempted but returned an MCP 404; no result is attributed to it.

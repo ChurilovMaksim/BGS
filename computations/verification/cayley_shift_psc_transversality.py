@@ -86,10 +86,11 @@ def check_generic_exact() -> None:
     print("generic shift/PSC leading coefficient identity: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_power: int = 1) -> int:
     assert p % K == 1
     primitive = int(sp.primitive_root(p))
-    zeta = pow(primitive, (p - 1) // K, p)
+    assert 1 <= embedding_power < K
+    zeta = pow(primitive, embedding_power * ((p - 1) // K), p)
     assert zeta != 1 and pow(zeta, K, p) == 1
     return (zeta + pow(zeta, -1, p)) % p
 
@@ -116,10 +117,10 @@ def alpha_mod(K: int, r: int, tau: int, p: int) -> int:
     return eval_tau(alpha_expr, tau, p)
 
 
-def check_split_row(K: int, p: int, r: int, expected_d: int | None = None) -> int:
+def check_split_row(K: int, p: int, r: int, expected_d: int | None = None, embedding_power: int = 1) -> int:
     modulus, P_raw, Q_raw = trace_cofactor_pair(K, r)
     del modulus
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_power)
     P = specialize(P_raw, tau, p)
     Q = specialize(Q_raw, tau, p)
     d = sp.gcd(P, Q).degree()
@@ -151,7 +152,7 @@ def check_split_row(K: int, p: int, r: int, expected_d: int | None = None) -> in
     assert psc_d != 0, (K, p, r, d)
 
     print(
-        f"K={K:2d} p={p:4d} r={r:2d} gcd_degree={d} "
+        f"K={K:2d} p={p:4d} r={r:2d} embedding={embedding_power} tau={tau} gcd_degree={d} "
         f"c_d={c_d} psc_d={psc_d}: OK"
     )
     return d
@@ -179,7 +180,8 @@ def main() -> None:
 
     # Project-specific fixed anchors for degree 0 and inverse degrees 2/4.
     check_split_row(11, 23, 10, expected_d=0)
-    check_split_row(7, 29, 6, expected_d=2)
+    check_split_row(7, 29, 6, expected_d=0)
+    check_split_row(11, 23, 10, expected_d=2, embedding_power=2)
     check_split_row(23, 47, 22, expected_d=4)
 
     K, p, r = find_degree_one_anchor()

@@ -474,3 +474,25 @@ Heisenberg-scale desymmetrized joint traces
 ```
 
 Full microscopic universality remains **OPEN**.
+
+## Magnetic quotient: restricted global law (2026-09-05)
+
+See [the complete proof](magnetic_quotient_semicircle.md). Exact: geometric
+antiunitary, orbit-basis equivalence and all-order signed trace histograms.
+Derived under explicit hypotheses: quantitative even-moment L2 bounds and
+global semicircle convergence for prime K=o(log p). Not derived: fixed-cat-map
+or microscopic BGS universality. Equation (21) proves the fixed-map obstruction.
+
+## Pell Floquet normal form and recurrence spectrum (2026-09-05)
+
+The [self-contained proof](pell_floquet_normal_form.md) establishes an explicit
+normal form for the actual fixed-map cosine-kicked propagator: odd normalized
+HS error at most 12 epsilon^2/sqrt(K), for every real epsilon and odd prime
+K>=11, with composite Pell moduli allowed. At epsilon=tau/sqrt(2K), the
+K-th power has wrapped normal eigenvalue law, with Fourier coefficients
+exp(-m^2 tau^2/2). Subcritical folded phases have a W2 Gaussian limit under
+epsilon sqrt(K)->0. These are project proofs, not externally refereed or
+fully Lean-formalized results; priority and microscopic BGS remain open.
+
+The corrected fourth-moment decimal is 5.614220692151198071627965... . A
+separate integer-interval verifier certifies it without floating point.

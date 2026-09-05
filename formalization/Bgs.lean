@@ -6,3 +6,5 @@ import Bgs.HistoricalMobiusDegenerateFiber
 import Bgs.CayleyEnergy
 import Bgs.FibonacciRatioSmall
 import Bgs.MagneticTraceSmall
+
+import Bgs.PellCohomology

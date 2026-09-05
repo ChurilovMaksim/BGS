@@ -11,9 +11,10 @@ I pw(I a,I e,I p){I b=1;for(;e;e/=2,a=a*a%p)if(e%2)b=b*a%p;return b;}
 bool isprime(I p){if(p<2)return false;for(I d=2;d*d<=p;++d)if(p%d==0)return false;return true;}
 struct Audit{
  I p,K,h,m,half;std::vector<I> ih,c;
- Audit(I P,I k,I g,I M):p(P),K(k),h(g),m(M),half((p+1)/2),c(p,0){
+ Audit(I P,I k,I g,I M):p(P),K(k),h(g),m(M),half((p+1)/2){
   if(!isprime(p)||p==2||p>1009||K<1||K%2==0||(p-1)%K||m<1||m>8)
    throw std::invalid_argument("require odd prime p<=1009, odd K|p-1, 1<=m<=8");
+  c.assign(static_cast<std::size_t>(p),0);
   h=mod(h,p);I a=1,work=1;
   for(I i=0;i<K;++i){if(i&&a==1)throw std::invalid_argument("smaller order");ih.push_back(pw(a,p-2,p));a=a*h%p;}
   if(a!=1)throw std::invalid_argument("wrong order");

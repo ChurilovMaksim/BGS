@@ -79,9 +79,15 @@ def goe_wigner_cdf(spacing: np.ndarray) -> np.ndarray:
 
 
 def empirical_cdf_sup_distance(gaps: np.ndarray) -> float:
-    ordered = np.sort(np.asarray(gaps, dtype=float))
-    empirical = np.arange(1, len(ordered) + 1) / len(ordered)
-    return float(np.max(np.abs(empirical - goe_wigner_cdf(ordered))))
+    """Supremum against the continuous Wigner-surmise CDF, both jump sides."""
+    ordered = np.asarray(gaps, dtype=float)
+    if ordered.ndim != 1 or len(ordered) == 0 or not np.all(np.isfinite(ordered)) or np.any(ordered < 0):
+        raise ValueError("a nonempty one-dimensional finite nonnegative gap sample is required")
+    ordered = np.sort(ordered)
+    target = goe_wigner_cdf(ordered)
+    right = np.arange(1, len(ordered) + 1) / len(ordered)
+    left = np.arange(0, len(ordered)) / len(ordered)
+    return float(max(np.max(right - target), np.max(target - left)))
 
 
 def forward_window_count_variance(

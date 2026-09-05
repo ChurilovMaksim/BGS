@@ -32,6 +32,34 @@ SKIP_DIR_NAMES = {".git", ".lake", "__pycache__", "build"}
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
 
+
+def _markdown_without_code(text: str) -> str:
+    """Exclude fenced and inline code while retaining real Markdown links."""
+    lines = []
+    fence_char = None
+    fence_length = 0
+    for line in text.splitlines(keepends=True):
+        match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line.rstrip("\n"))
+        if fence_char is not None:
+            if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length and not match.group(2).strip():
+                fence_char = None
+            lines.append("\n")
+            continue
+        if match and not (match.group(1)[0] == "`" and "`" in match.group(2)):
+            fence_char, fence_length = match.group(1)[0], len(match.group(1))
+            lines.append("\n")
+        else:
+            lines.append(line)
+    return re.sub(r"(?<!`)(`+)(?!`)(.*?)(?<!`)\1(?!`)", " ", "".join(lines), flags=re.S)
+
+
+def check_markdown_parser() -> None:
+    sample = "`Z[T](w_e,w_f)` and [real](README.md)\n```text\n[x](not-a-link)\n```\n"
+    assert MARKDOWN_LINK_RE.findall(_markdown_without_code(sample)) == ["README.md"]
+    assert MARKDOWN_LINK_RE.findall(_markdown_without_code("[broken](missing.md)")) == ["missing.md"]
+    assert MARKDOWN_LINK_RE.findall(_markdown_without_code("````\n```\n[x](fake)\n````\n[ok](README.md)")) == ["README.md"]
+
+
 def files_under(root: Path):
     for path in root.rglob("*"):
         if not path.is_file():
@@ -140,7 +168,7 @@ def check_markdown_relative_links() -> None:
         if any(part in SKIP_DIR_NAMES for part in document.parts):
             continue
         text = document.read_text(encoding="utf-8")
-        for raw in MARKDOWN_LINK_RE.findall(text):
+        for raw in MARKDOWN_LINK_RE.findall(_markdown_without_code(text)):
             target = raw.strip().split()[0].strip("<>")
             if not target or target.startswith(("http://", "https://", "#", "mailto:")):
                 continue
@@ -169,6 +197,7 @@ def check_manuscript_surface() -> None:
 
 
 def main() -> None:
+    check_markdown_parser()
     check_top_level()
     check_no_historical_copies_or_julia()
     check_no_duplicate_text_sources()

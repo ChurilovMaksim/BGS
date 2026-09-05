@@ -71,7 +71,7 @@ $$
  S_u f(x)=f(u^{-1}x),\qquad Rf(x)=f(-x).
 $$
 Here e_N(t)=exp(2 pi i t/N), and divisions in exponents mean inverses modulo
-N. All operators below preserve the odd subspace R=-1. For a character eta
+N. The symmetrized observables and spectral projectors preserve the odd subspace R=-1. Individual Weyl translations do not, in general, preserve parity. For a character eta
 of H, let E_eta be the eta eigenspace of S_h in that odd subspace, and let
 P_eta denote its orthogonal projection. Its dimension is n.
 
@@ -320,9 +320,7 @@ $$
  S_K=\frac1K\left(1+2\sum_{d=1}^{(K-1)/2}
                     \cos(4\pi P_{2d}/N)\right). \tag{20}
 $$
-These are finite-size bounds, not fitted matrix histograms. The companion
-certificate computes rational enclosures for the cosines, proves (13) by
-integer arithmetic, and includes the entire remainder in (19).
+These are finite-size bounds, not fitted matrix histograms. The maintained companion reports high-precision cosines and an analytic series-tail bound, separately from floating-point rounding. It includes the full remainder in (19), but does not provide rational interval enclosures.
 
 There is also a nontrivial explicit asymptotic correction:
 $$

@@ -1,0 +1,486 @@
+{
+  "producer": "computations/maintenance/verify_workspace.py",
+  "scope": "Execution of every maintained executable Python and C++ verifier on this worktree; not a complete proof audit. Lean and TeX are separate build steps.",
+  "input_commit": "ed67d60dd1b04d8c34a2a366357888f604d66fb2",
+  "python": "3.13.15",
+  "checks": [
+    {
+      "name": "cayley_difference_discriminant",
+      "source": "computations/verification/cayley_difference_discriminant.py",
+      "sha256": "e98dc59fca58677c0a642bccfdc373c1dce9c5fda0204e2ba4a148ec0520e43e",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_difference_discriminant.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.32,
+      "log_sha256": "fcc5f856444ce0c36b1b97bad18e0581b19920d141c97b33e95c0e56c7ba0c67"
+    },
+    {
+      "name": "cayley_frobenius_extension",
+      "source": "computations/verification/cayley_frobenius_extension.py",
+      "sha256": "bdc2a450f11620a6835e46992ec85616441278e8740affe6c07e52e6e3244dd6",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_frobenius_extension.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.12,
+      "log_sha256": "2140c78b610554667f64c0946ac59192d07ac2c2f55c8f47cbda72b56276e259"
+    },
+    {
+      "name": "cayley_inverse_pair_sum_factorization",
+      "source": "computations/verification/cayley_inverse_pair_sum_factorization.py",
+      "sha256": "edd62ada680376459ae449cfe9031c3cafd5f63bc10f4640f6ef2e92de1355c7",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_inverse_pair_sum_factorization.py"
+      ],
+      "exit_code": 0,
+      "seconds": 69.217,
+      "log_sha256": "ed2284a5a3d682ab121718cbd585cefdb7985e5c4d30b27e8461ffb762a533b5"
+    },
+    {
+      "name": "cayley_inverse_resultant_transversality",
+      "source": "computations/verification/cayley_inverse_resultant_transversality.py",
+      "sha256": "a85b4ab66e83fcfd8554e5cdec47d76c29da21524066961d768cdc0e2ffad04b",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_inverse_resultant_transversality.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.528,
+      "log_sha256": "7d98971ae1c07c36962c323aeb481310cd11340b4f9f275312c722d094a523b0"
+    },
+    {
+      "name": "cayley_jacobi_trace_regression",
+      "source": "computations/verification/cayley_jacobi_trace_regression.py",
+      "sha256": "6488d6b7a56c0214ebd05779c218dbd41a180efea247a989df963023cb2d531f",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_jacobi_trace_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.317,
+      "log_sha256": "f997186865a0232a0ccffc29a63d2e63f18d389cf5ebc20deec453ad0f313e2d"
+    },
+    {
+      "name": "cayley_principal_subresultant_support",
+      "source": "computations/verification/cayley_principal_subresultant_support.py",
+      "sha256": "cf40930302280d7af454472fc2e8dd0f77ceb0e1394b7fa6593e6ce988152f6d",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_principal_subresultant_support.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.959,
+      "log_sha256": "ffc6fd1ec8f74aeb1ba8161d1132df65a26e92798bff65671f83463b6147b53f"
+    },
+    {
+      "name": "cayley_product_discriminant",
+      "source": "computations/verification/cayley_product_discriminant.py",
+      "sha256": "76d24c8189052a920807d7d389803dd5658f919de9543d3750e5e9db47f0a863",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_discriminant.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.871,
+      "log_sha256": "ccd09471fc90e761c262d6645b610a3b418f0fd3acdc70f0592f97fb1453bbdf"
+    },
+    {
+      "name": "cayley_product_row_coefficient_ideal",
+      "source": "computations/verification/cayley_product_row_coefficient_ideal.py",
+      "sha256": "49bf6aff3a355c904cb92849222671560d2bd1e20ae69486f184a3e71c9784f2",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_coefficient_ideal.py"
+      ],
+      "exit_code": 0,
+      "seconds": 28.708,
+      "log_sha256": "e142d1d9c87e4813977950fbbe35d977b328f7cf73b9012c29b19d746e678844"
+    },
+    {
+      "name": "cayley_product_row_intersections",
+      "source": "computations/verification/cayley_product_row_intersections.py",
+      "sha256": "d921be96c194bfea2bec08d55c70ce1bc28537d397c4c0ba2513dc7d9efcfe75",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_intersections.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.067,
+      "log_sha256": "b659b6792cb91a2532ce419284e63530afb4aecc376919e623d920118d0f24e9"
+    },
+    {
+      "name": "cayley_product_row_real_trace_ideal",
+      "source": "computations/verification/cayley_product_row_real_trace_ideal.py",
+      "sha256": "61b4bc0cb0ec4f462295dd6ead9f471c76a634aae3ab554c81d997d137603081",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_real_trace_ideal.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.806,
+      "log_sha256": "b1ca7cea4a31289aac578d84555d13e69db84f4783a54c95d261c5657a98afff"
+    },
+    {
+      "name": "cayley_product_row_reflection",
+      "source": "computations/verification/cayley_product_row_reflection.py",
+      "sha256": "0adcbbbd6c5b7c32a214f62d9e0a0872463ddb126b0728b4f69dc7714f51e275",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_reflection.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.487,
+      "log_sha256": "df1a738221ce12aca6e09a3a86807876233765cc80e0a90fc311f6e19115045c"
+    },
+    {
+      "name": "cayley_product_row_subresultants",
+      "source": "computations/verification/cayley_product_row_subresultants.py",
+      "sha256": "18d20bf5cdfb713b55d91740382168493a8dab30d4216ec007a6552ce6c0c230",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_subresultants.py"
+      ],
+      "exit_code": 0,
+      "seconds": 40.507,
+      "log_sha256": "534d03a858725e8b8fe603eddcc021175cd307a138968719e0585c2178c690b2"
+    },
+    {
+      "name": "cayley_ratio_orbit_factorization",
+      "source": "computations/verification/cayley_ratio_orbit_factorization.py",
+      "sha256": "0250d44630d357b91768917e91d4015192ecde62ae9419556e2304902c2d8807",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_ratio_orbit_factorization.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.321,
+      "log_sha256": "2f96941800aeb2ea3fddeb5d3faf53853f508f05e1ddee615903063ca0e80e1d"
+    },
+    {
+      "name": "cayley_resultant_fibonacci",
+      "source": "computations/verification/cayley_resultant_fibonacci.py",
+      "sha256": "70666d43f37616c4aa4c6e5e05b14505f030ec7eb6d375ffc243f47c1b81627a",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_resultant_fibonacci.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.326,
+      "log_sha256": "c46bcb1705d9281f88cf3bbfcfd3a7f0ef8adba2e402e3aaecce41f3e058a6c4"
+    },
+    {
+      "name": "cayley_resultant_mass_budget",
+      "source": "computations/verification/cayley_resultant_mass_budget.py",
+      "sha256": "4e30c356e16fda6ea52a7ac9ac5a74ff5585c7141b42f2b919e06a1a47c0612d",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_resultant_mass_budget.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.736,
+      "log_sha256": "2a1d95bb63c7528487395611fb408bfda39648ec2f49b06f549d3d0e6c1ab7d8"
+    },
+    {
+      "name": "cayley_shift_psc_transversality",
+      "source": "computations/verification/cayley_shift_psc_transversality.py",
+      "sha256": "107aff0534f04f05dbe23e6560e8bcfe31657ec9b756a08c1fae286fa53e5293",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_shift_psc_transversality.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.983,
+      "log_sha256": "55d89b16a970639ffe7b087a9614d085760eac59df3db4d6d7881c89f0fa3620"
+    },
+    {
+      "name": "cayley_shifted_energy_orbits",
+      "source": "computations/verification/cayley_shifted_energy_orbits.py",
+      "sha256": "3a1fe1b8838209eeeaed57e9732e8bbf493a746cea3e8f917a57162de46e881f",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_shifted_energy_orbits.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.166,
+      "log_sha256": "b238849f61dbde2ec0535e936af2edb1b3a11d564541b619c194530fb64f909b"
+    },
+    {
+      "name": "cayley_sylvester_fitting_support",
+      "source": "computations/verification/cayley_sylvester_fitting_support.py",
+      "sha256": "4ec2df3d0ad79d8b38fa7e0b9d644dc3284630d46db169473ca2996d88c557bd",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_sylvester_fitting_support.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.78,
+      "log_sha256": "1f8f11e44f78e650c7575a2613e2fffb3bf3ec7b266edb2e968f232847a262bb"
+    },
+    {
+      "name": "cayley_trace_intercept_shift_resultant",
+      "source": "computations/verification/cayley_trace_intercept_shift_resultant.py",
+      "sha256": "d28628d32e0bda6a176f743789c08863037a1dcf29a858017c18946300f06d18",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_trace_intercept_shift_resultant.py"
+      ],
+      "exit_code": 0,
+      "seconds": 51.399,
+      "log_sha256": "b85514cf96a11c89c2781eb1495243bc34d335c14098cb9270b8ace3de0b9b72"
+    },
+    {
+      "name": "cayley_uniform_cutoff_regression",
+      "source": "computations/verification/cayley_uniform_cutoff_regression.py",
+      "sha256": "94456b54382ff18d8fcd72c18c0881cb5d8255253a0c3e9dee37eac982fe355d",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cayley_uniform_cutoff_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.273,
+      "log_sha256": "e21cd0a78c0d83dc59f780e0c6a848b0d84d02f5f97d9ab5bba2962436ca8192"
+    },
+    {
+      "name": "cdf_sup_regression",
+      "source": "computations/verification/cdf_sup_regression.py",
+      "sha256": "4bc83efb6381d68b02bfbf774d7f97cecc453a3b8ab98089f217dd457e6eb6b0",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/cdf_sup_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.166,
+      "log_sha256": "0b721d245b915e40cb157c08f3d110a1432a5c3e9e8273e1fc3a036298fd861a"
+    },
+    {
+      "name": "current_regression",
+      "source": "computations/verification/current_regression.py",
+      "sha256": "ab3764892cf068a08b8c4c5a13c228027b98e434f3eb85ff1e5938d8fc443398",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/current_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.218,
+      "log_sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
+    },
+    {
+      "name": "magnetic_quotient_regression",
+      "source": "computations/verification/magnetic_quotient_regression.py",
+      "sha256": "342424a1f94a5b7c9501226da33319ac67973d80bb1d0d6dc91e0ef5ba3f1fa7",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/magnetic_quotient_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.182,
+      "log_sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
+    },
+    {
+      "name": "magnetic_scalar_certificate",
+      "source": "computations/verification/magnetic_scalar_certificate.py",
+      "sha256": "b25582cf25bac7aef42cf364918f425723931a4b9f7c82475e12bc218a026d50",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/magnetic_scalar_certificate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.269,
+      "log_sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
+    },
+    {
+      "name": "mixed_cayley_energy",
+      "source": "computations/verification/mixed_cayley_energy.py",
+      "sha256": "e68b34e615cfedec351a64dc9d8b21091769d54bcc4b10c1d8c4f5e1d3dc6fdd",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/mixed_cayley_energy.py"
+      ],
+      "exit_code": 0,
+      "seconds": 10.15,
+      "log_sha256": "fd940082761c2e48c67cbb4b7f806227877fc9cda256e81963ccf0c1465162f1"
+    },
+    {
+      "name": "offoff_elliptic_spike_regression",
+      "source": "computations/verification/offoff_elliptic_spike_regression.py",
+      "sha256": "07057ac2b7a754d576e378feabce7c6a9bc9a45b0d47613391a3d9073e738716",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/offoff_elliptic_spike_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.626,
+      "log_sha256": "651f3be6fe205af2477c7f1be5c0e5ff137a542b5abe8ce1ae1524f1f209fe73"
+    },
+    {
+      "name": "pell_floquet_regression",
+      "source": "computations/verification/pell_floquet_regression.py",
+      "sha256": "f6319ae40ae71d84322d36e0c500b6529cddf6627fb4dfc62cb1790c6abe3639",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/pell_floquet_regression.py",
+        "--cpp",
+        "/home/runner/work/_temp/wow-build/pell_pair_orthogonality"
+      ],
+      "exit_code": 0,
+      "seconds": 1.12,
+      "log_sha256": "697ae348535c616815bdd8349eefbcab7afabd022b17015cc1afeb885463622b"
+    },
+    {
+      "name": "pell_gamma_interval",
+      "source": "computations/verification/pell_gamma_interval.py",
+      "sha256": "fc1bb2a95813a6c5c2fb0aae048411de9a45b778e2620296d018903259a21c9d",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/pell_gamma_interval.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.116,
+      "log_sha256": "81e5dbaed7b03af10a6731ba1cf311ec477878770d160ee0e61aabd606275c51"
+    },
+    {
+      "name": "pell_gaussian_regression",
+      "source": "computations/verification/pell_gaussian_regression.py",
+      "sha256": "e2301078a730b71f8047f9ae55e110e2fd28d9fcae82d6d604ca46f0bf816d1c",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/pell_gaussian_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.868,
+      "log_sha256": "329c1c5b4f89ace60617a87c9a09d238f7b23746fca30328bf4b2f74cd22e108"
+    },
+    {
+      "name": "repository_audit",
+      "source": "computations/verification/repository_audit.py",
+      "sha256": "b0f03bca2337de93e1476dfc895475b9a1b550e68f761808df58a6d3a0b36a46",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/repository_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.17,
+      "log_sha256": "1c0c41cb34fd03f022821ed2a542fd96beb2c591b452f54bbd8ce4fa27db5d17"
+    },
+    {
+      "name": "twisted_jacobi_regression",
+      "source": "computations/verification/twisted_jacobi_regression.py",
+      "sha256": "3b37a4968b91344b3ed9ab8152d326c9003b22c59e6e4a9e1c228bd29392ce5e",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/twisted_jacobi_regression.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.971,
+      "log_sha256": "10ad5d603daa8c72e63583e41ecad8d163df24d735eba7aaabb56af68ecee73f"
+    },
+    {
+      "name": "spectral_diagnostics_verify",
+      "source": "computations/analysis/spectral_diagnostics.py",
+      "sha256": "fb965008d457be9fcd14531f47fc8a36a27198bc8a54fa0e5235265c1ab87f7f",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/analysis/spectral_diagnostics.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "seconds": 33.011,
+      "log_sha256": "70b5a193aeeddcc8670f1143b5bd02fdde226e5440f8c09bc5e5cf512a7a6ca5"
+    },
+    {
+      "name": "cpp_cat_map_order",
+      "source": "computations/cpp/cat_map_order.cpp",
+      "sha256": "fdc47a958122848d477acc4d9b1ef0492e5444a54cbf8754757cb2e91e1b7054",
+      "command": [
+        "/home/runner/work/_temp/wow-build/cat_map_order",
+        "verify"
+      ],
+      "exit_code": 0,
+      "seconds": 0.009,
+      "log_sha256": "2d059d14d14256c2a219a2dcf410421ba7bc15d42eeba7c993340199ba7b29dd"
+    },
+    {
+      "name": "cpp_cayley_direct_energy_verifier",
+      "source": "computations/cpp/cayley_direct_energy_verifier.cpp",
+      "sha256": "ee3a665af1ab0f8d86344e6971b2494b73be8cbb4bd83bb5973141a0a80b65ab",
+      "command": [
+        "/home/runner/work/_temp/wow-build/cayley_direct_energy_verifier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.115,
+      "log_sha256": "869970209396d2c7d14a148d0ffc4ff63d51e16b92d92460bc56fc39be07fe1d"
+    },
+    {
+      "name": "cpp_cayley_energy_verifier",
+      "source": "computations/cpp/cayley_energy_verifier.cpp",
+      "sha256": "a9dc7ca1ebf5e1a7e2edadbbeb9e2bf3a84562cb8217bd0be871eed750b7623a",
+      "command": [
+        "/home/runner/work/_temp/wow-build/cayley_energy_verifier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.005,
+      "log_sha256": "ee25b390bf6817738773491dad1d301a63fa9d8e5d494dd2c83afb3f19dc3af4"
+    },
+    {
+      "name": "cpp_cayley_fibonacci_verifier",
+      "source": "computations/cpp/cayley_fibonacci_verifier.cpp",
+      "sha256": "c28243ae41f643f614457b5e9b96a27c0a9a5014dd2cce2eebc3428da301ddd2",
+      "command": [
+        "/home/runner/work/_temp/wow-build/cayley_fibonacci_verifier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.035,
+      "log_sha256": "2f7ea9a1c8a8a9216fd102ddb99b47c4e4ab736ca37e9f0eca1d6fd147d62260"
+    },
+    {
+      "name": "cpp_cayley_trace_intercept_rigidity",
+      "source": "computations/cpp/cayley_trace_intercept_rigidity.cpp",
+      "sha256": "5109a8f3c65b7cbb36a3d81cc5ee4f9e7dea157c050b1db8de6e55cc6217592b",
+      "command": [
+        "/home/runner/work/_temp/wow-build/cayley_trace_intercept_rigidity"
+      ],
+      "exit_code": 0,
+      "seconds": 0.922,
+      "log_sha256": "7fae0b63060e96bfa0bb78c35e60b2d8a7bf8918eafee9cbeb2aa1e8e19b410b"
+    },
+    {
+      "name": "cpp_fourth_moment_pair_key_verifier",
+      "source": "computations/cpp/fourth_moment_pair_key_verifier.cpp",
+      "sha256": "e7a2d8f064ae6d027f69756c81feaef8adf5beb73e536918ac058636b139527e",
+      "command": [
+        "/home/runner/work/_temp/wow-build/fourth_moment_pair_key_verifier"
+      ],
+      "exit_code": 0,
+      "seconds": 1.22,
+      "log_sha256": "2f3a4bd7a455e647f3eb15019c54775d1ce6202f9c5f14cec0f397360dd3f5ab"
+    },
+    {
+      "name": "cpp_magnetic_word_verifier",
+      "source": "computations/cpp/magnetic_word_verifier.cpp",
+      "sha256": "0848a5b7c8713015c7192b28d3aacdda6f402fa79ed95c52a528c28df95e21b0",
+      "command": [
+        "/home/runner/work/_temp/wow-build/magnetic_word_verifier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.01,
+      "log_sha256": "7d03f7776038582858ac97de6766675b2944537eb2de88d9522c8d916c2129a4"
+    },
+    {
+      "name": "cpp_pell_pair_orthogonality",
+      "source": "computations/cpp/pell_pair_orthogonality.cpp",
+      "sha256": "961239c85e184da5175a7097b1b3bf7cf60d2a504e89ecdd48fb6fb9ee4a1d39",
+      "command": [
+        "/home/runner/work/_temp/wow-build/pell_pair_orthogonality"
+      ],
+      "exit_code": 0,
+      "seconds": 0.036,
+      "log_sha256": "42af2b1c993c9ce2ed9592ba1b9a2e2542505e4587f666b5825c800485400a45"
+    }
+  ],
+  "passed": 40,
+  "total": 40
+}

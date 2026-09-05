@@ -19,7 +19,7 @@ A=c(H\{1}).
 The Cayley map is injective on `F_p\{1}` and `c(h^-1)=-c(h)`, so
 
 ```text
-|A|=K-1,   A=-A,   0 notin A.
+|A|=K-1,   A=-A,   0 in A iff K is even.
 ```
 
 Write

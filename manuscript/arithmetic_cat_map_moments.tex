@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{xcolor}
@@ -118,6 +119,11 @@ dimension, the Heisenberg scale.  The missing spectral theorem is therefore a
 weighted Heisenberg-scale trace comparison for the correct desymmetrized block,
 plus a high-frequency tail estimate beyond band-limited tests.  No microscopic
 BGS/GOE/COE universality theorem is claimed.
+Separately, a centered arithmetic normal form controls the actual cosine-kicked
+Pell propagator at its recurrence time. It gives a wrapped Gaussian law for
+its $K$th power at quantum kick strength $\tau/\sqrt{2K}$, with an explicit
+normalized Hilbert--Schmidt comparison error. This concerns a vanishing
+classical perturbation and logarithmic recurrence times, not microscopic BGS.
 \end{abstract}
 
 \section{Scope and evidence discipline}
@@ -822,15 +828,20 @@ rule; $(K,p)=(41,2908049)$ has a row pair with two common parameters,
 disproving $I_K(p)\le1$; and $(K,p)=(31,1303)$ has inverse-row intersection
 size four.
 
+\input{pell_gaussian_section.tex}
+\input{pell_floquet_section.tex}
+
 \section{Remaining frontier}
 
 The arithmetic fourth-moment chain is now
 \[
+\begin{gathered}
 \boxed{\text{common split divisors of small cyclotomic scalar systems}}
-\longrightarrow
+\\ \downarrow \\
 \boxed{\text{pointwise centered Cayley energy}}
-\longrightarrow
+\\ \downarrow \\
 \boxed{\text{complete fourth-moment control}}.
+\end{gathered}
 \]
 For general ratios the order-three event is encoded by three scalar shift
 coefficients; for the inverse ratio it reduces further to a half-degree
@@ -846,13 +857,15 @@ estimate.
 
 The microscopic spectral chain is independently
 \[
+\begin{gathered}
 \boxed{\text{Heisenberg-scale desymmetrized joint traces}}
-\longrightarrow
+\\ \downarrow \\
 \boxed{\text{band-limited microscopic RMT correlations}}
-\longrightarrow
+\\ \downarrow \\
 \boxed{\text{high-frequency tail control}}
-\longrightarrow
+\\ \downarrow \\
 \boxed{\text{full microscopic BGS/RMT}}.
+\end{gathered}
 \]
 The Fourier arrow is exact by \eqref{eq:factorial}--\eqref{eq:trace-local}; the
 joint-trace estimate itself is open.  Fixed powers, finitely many moments, or
@@ -875,6 +888,7 @@ minimal finite extensions while correctly leaving the split slice unchanged.
 On the spectral side, the exact partition-M\"obius/Poisson identity identifies
 Heisenberg-scale joint traces as the missing input for microscopic
 correlations.  Full BGS/GOE/COE universality remains open.
+
 
 \begin{thebibliography}{99}
 

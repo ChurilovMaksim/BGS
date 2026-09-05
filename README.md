@@ -15,6 +15,36 @@ problem.
 
 ![Research pipeline](assets/research_pipeline.svg)
 
+## Pell Floquet continuation: actual propagator at recurrence times
+
+The [self-contained normal-form proof](mathematics/pell_floquet_normal_form.md)
+establishes a project theorem for the fixed map `T=((3,2),(4,3))`, including
+composite Pell moduli. For the actual cosine-kicked propagator,
+`epsilon=tau/sqrt(2K)` gives
+
+```text
+Tr_-(U_epsilon^(mK))/d -> exp(-m^2 tau^2/2),  d=(N-1)/2.
+```
+
+Thus the K-th power has a wrapped Gaussian spectral limit. The explicit
+finite normal-form error is `12 epsilon^2/sqrt(K)` in normalized odd-space
+Hilbert--Schmidt norm. Subcritical folded phases converge in W2 whenever
+`epsilon sqrt(K) -> 0`; no isolated-cluster labelling is asserted.
+
+This is recurrence-scale, not microscopic BGS universality. The classical
+kick still tends to zero, K is logarithmic in N, and priority is not
+established. The proof, [independent Python verifier](computations/verification/pell_floquet_regression.py),
+[C++ pair verifier](computations/cpp/pell_pair_orthogonality.cpp), and
+[scope-labelled numerical certificate](evidence/certificates/pell_floquet_audit.json)
+are maintained together. The Lean contribution contains general cohomology
+identities and finite pair-key certificates, not the analytic limit.
+
+The corrected fourth-moment constant is `gamma=5.614220692151198071627965...`.
+An [integer interval certificate](computations/verification/pell_gamma_interval.py)
+now checks that decimal independently. The previously reported `5.612...`
+was a transcription/provenance error, not the value of the stated series.
+See [the continuation audit](record/floquet_continuation_20260905.md).
+
 ## Status at a glance — 5 September 2026
 
 | Layer | Status | Current statement |
@@ -328,3 +358,31 @@ or an equivalent largest-prime theorem for `Omega` / inverse `Theta`.
 Independently, microscopic BGS requires Heisenberg-scale desymmetrized joint
 trace estimates and high-frequency tail control.  Full BGS/GOE/COE
 universality remains **OPEN**.
+
+## Magnetic-quotient audit (2026-09-05)
+
+The [complete derivation](mathematics/magnetic_quotient_semicircle.md) gives an
+all-order Weyl trace identity, an explicit antiunitary real gauge, and a
+restricted **global** semicircle law for odd compressed observables when
+prime subgroup orders satisfy `K -> infinity`, `K=o(log p)`.
+This regime is proved impossible for the orders of one fixed hyperbolic cat
+map. No microscopic BGS/GOE law or priority claim is asserted.
+
+The [referee audit](record/referee_audit_20260905.md) records independently
+reproduced false triple-filter assertions in draft PR #13 and distinguishes
+execution coverage from a complete proof audit. The empirical CDF diagnostic
+now checks both sides of every jump; its numerical output is regenerated.
+
+Reproduce the new algebra with:
+
+```sh
+g++ -std=c++20 -O2 computations/cpp/magnetic_word_verifier.cpp -o /tmp/magnetic_word_verifier
+OPENBLAS_NUM_THREADS=1 python computations/verification/magnetic_quotient_regression.py --cpp /tmp/magnetic_word_verifier
+python computations/verification/cdf_sup_regression.py
+cd formalization && lake build
+```
+
+The Lean module contains four finite certificates, not the analytic theorem.
+The unified research publication workflow builds the companion TeX/PDF,
+exact JSON certificate and finite global-spectrum illustration from maintained sources.
+The source audit explicitly leaves full literature priority open.

@@ -356,11 +356,15 @@ three independent styles of checks.
    cases:
 
 ```text
-K=11, p=23: deg gcd(E,O)=0,   rho(0)!=0,
-K= 7, p=29: deg gcd(E,O)=1,   rho(0)=0, rho'(0)!=0,
-K=23, p=47: deg gcd(E,O)=2,   rho(0)=rho'(0)=0.           (34)
+K=11, p=23, tau=14 (embedding 1): deg gcd(E,O)=0, rho(0)!=0,
+K=11, p=23, tau=10 (embedding 2): deg gcd(E,O)=1, rho(0)=0, rho'(0)!=0,
+K=23, p=47, tau=10 (embedding 1): deg gcd(E,O)=2, rho(0)=rho'(0)=0.  (34)
 ```
 
+The earlier K=7,p=29 positive anchor was false: all three real embeddings
+give degree zero. It is retained as a negative control; the degree-one
+case uses the explicitly specified second embedding of K=11,p=23.
+The regression also compares a direct reflected trace set with the gcd.
 The finite checks are regression only; the universal statements are proved
 above.
 

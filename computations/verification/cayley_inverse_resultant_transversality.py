@@ -88,10 +88,11 @@ def check_inverse_specialization() -> None:
     print("generic inverse translation derivative specialization: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_power: int = 1) -> int:
     assert p % K == 1
     generator = int(sp.primitive_root(p))
-    zeta = pow(generator, (p - 1) // K, p)
+    assert 1 <= embedding_power < K
+    zeta = pow(generator, embedding_power * ((p - 1) // K), p)
     assert zeta != 1 and pow(zeta, K, p) == 1
     return (zeta + pow(zeta, -1, p)) % p
 
@@ -142,15 +143,23 @@ def unique_linear_root(poly: sp.Poly, p: int) -> int:
     return (-b * pow(a, -1, p)) % p
 
 
-def check_finite_anchor(K: int, p: int, expected_gcd_degree: int) -> None:
+def check_finite_anchor(K: int, p: int, expected_gcd_degree: int, embedding_power: int = 1) -> None:
     modulus, E_raw, O_raw = even_odd_pair(K)
     del modulus
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_power)
     E = specialize_poly(E_raw, tau, p)
     O = specialize_poly(O_raw, tau, p)
     gcd = sp.gcd(E, O)
     degree = gcd.degree()
     assert degree == expected_gcd_degree, (K, p, degree, expected_gcd_degree)
+    # Independent trace-set reflection count, not another polynomial gcd.
+    zeta = pow(int(sp.primitive_root(p)), (p-1)//K, p)
+    traces = {2} | {(pow(zeta,j,p)+pow(zeta,-j,p)) % p for j in range(1,K)}
+    traces.remove(tau)
+    centered = {(x-tau) % p for x in traces}
+    reflected = {(-x) % p for x in centered}
+    assert len(centered & reflected) == 2*degree
+
 
     rho0, rho1 = directional_resultant_coefficients(E, O, p)
 
@@ -176,7 +185,7 @@ def check_finite_anchor(K: int, p: int, expected_gcd_degree: int) -> None:
         assert rho0 == 0 and rho1 == 0
 
     print(
-        f"K={K:2d} p={p:4d} deg_gcd={degree} "
+        f"K={K:2d} p={p:4d} embedding={embedding_power} tau={tau} deg_gcd={degree} "
         f"rho0={rho0} rho1={rho1}: OK"
     )
 
@@ -187,7 +196,10 @@ def main() -> None:
 
     # Exact split finite-field trichotomy.
     check_finite_anchor(11, 23, 0)
-    check_finite_anchor(7, 29, 1)
+    # The former (7,29) positive anchor was false in every real embedding.
+    for e in (1,2,3):
+        check_finite_anchor(7, 29, 0, embedding_power=e)
+    check_finite_anchor(11, 23, 1, embedding_power=2)
     check_finite_anchor(23, 47, 2)
 
     print("cayley inverse resultant transversality regression: OK")

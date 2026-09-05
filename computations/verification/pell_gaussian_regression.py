@@ -14,6 +14,8 @@ import sympy as sp
 
 
 def pell(k: int) -> tuple[int, int]:
+    if k < 0:
+        raise ValueError("Pell index must be nonnegative")
     n, f = 1, 0
     for _ in range(k):
         n, f = n+2*f, n+f

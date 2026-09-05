@@ -101,10 +101,14 @@ For J terms, the nonnegative tail is bounded by
 0 <= gamma-gamma_J <= a^2 lambda^(-2J)/(1-lambda^(-2)).
 ```
 
-The numerical value starts 5.61214122496472564091. The maintained verifier separates the analytic series-tail bound from floating-point rounding; the decimal is not an interval certificate.
+The numerical value starts 5.61422069215119807163. The maintained verifier separates the analytic series-tail bound from floating-point rounding; the decimal is not an interval certificate.
 
 ## Verification and scope
 
 `computations/verification/pell_gaussian_regression.py` independently assembles odd orbit blocks, checks nontrivial sectors and composite N, compares matrix-power and eigenvalue moments, tests the fourth-moment remainder, and checks phase control at larger K without constructing exponentially large matrices.
 
 All pairings survive along this deterministic fixed-map Pell sequence, producing Gaussian fourth moment 3. The separately averaged prime magnetic construction suppresses crossings and has semicircle fourth moment 2. These are different families and averaging procedures. Neither result supplies Heisenberg-scale propagator trace comparison, local spacings, or a complete BGS theorem.
+
+## Independent exact interval certificate
+
+The corrected decimal is independently enclosed by `computations/verification/pell_gamma_interval.py`. It uses only integer and rational arithmetic: Machin's identity, alternating arctangent bounds, an integer square-root enclosure, outward fixed-point operations, cosine Taylor remainders, and the geometric tail above. Its output in `evidence/certificates/pell_gamma_interval.json` certifies forty decimal places without assuming floating-point rounding. The preceding numerical companion retains its separate diagnostic scope.

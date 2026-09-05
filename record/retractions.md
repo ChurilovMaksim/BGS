@@ -50,3 +50,35 @@ The historical certificate filename `second_moment_reduction.json` became
 misleading after the pair-key reconstruction: the file actually contains the
 fixed-`K` Cayley matching/resultant audit. It is now named
 `cayley_fixed_k_audit.json`.
+
+## Empirical CDF and draft triple filters (2026-09-05)
+
+The former empirical-CDF supremum omitted left limits at jumps. It could
+underestimate the descriptive discrepancy; this is corrected and the spacing
+JSON is regenerated. No new spacing-law theorem follows.
+
+Draft PR #13 asserted that each of 96 triple resultant filters equals p.
+That is false: K=43,p=173 gives 865=5p. Complete observed sets and the K=29
+pair-filter correction are in `referee_audit_20260905.md`. The necessary
+p-divisibility argument is not retracted. This does not claim a complete
+line-by-line review of that draft's mathematical corpus.
+
+
+## Floquet continuation: numerical and finite-anchor corrections
+
+The previous chat and the main-branch Pell rate note printed
+`gamma=5.61214122496472564091...`. Recomputing the stated convergent series
+independently gives `5.61422069215119807162796524101779463077...`.
+The earlier delivered JSON already contained the latter value; prose and
+computed evidence were inconsistent. The series, its tail estimate and the
+fourth-moment formula are unchanged. The new consistency regression compares
+the documentary decimal to the actual producer rather than another literal.
+
+The advertised inverse transversality anchor K=7,p=29 has gcd degree zero
+in all three real embeddings, not degree one. The matching shift-resultant
+test therefore has degree zero, not two. All three affected inverse, shift and Sylvester scripts now retain that false
+positive as a negative control and realize the positive cases using the
+explicit second embedding of K=11,p=23, where tau=10. The inverse gcd degree
+is one, and the row gcd degree is two. A direct reflected trace-set count
+independently checks the inverse polynomial gcd. The general derivative
+identities were not changed by this finite-anchor correction.

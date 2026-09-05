@@ -231,3 +231,46 @@ higher-rank extrapolations, the former spike-free off/off theorem, the residual
 dehomogenized `D/G` row ideals are not active.
 
 Microscopic BGS/GOE/COE universality remains open.
+
+## Magnetic-quotient claims (2026-09-05)
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Explicit antiunitary and Gauss real gauge | Exact project proof, finite numerical cross-checks | Does not establish GOE universality |
+| Signed orbit assembly and all-order Weyl trace identity | Exact project proof; independent Python/C++ histograms | Reference enumeration remains exponential in moment order |
+| Reciprocal short-relation rigidity | Proved for prime K, m<K, p^2>m^(K-1) | No polynomial-regime extension asserted |
+| Quantitative moment bound and global semicircle law | Complete project derivation, not externally refereed; prime K=o(log p) | Not microscopic BGS; priority not established |
+| Fixed-map scope obstruction | Exact growth argument | This regime cannot occur for orders of one fixed hyperbolic integral map |
+| Lean magnetic trace checks | Four finite native_decide certificates; compiler execution recorded separately by CI | Not an analytic formalization |
+| Triple-resultant filters of draft PR #13 | Necessary divisibility survives; exactness of every triple gcd is false | K=43,p=173 gives 865=5p |
+
+Proof authority for these additions is `mathematics/magnetic_quotient_semicircle.md`.
+The earlier ledger remains in force outside these explicitly delimited additions.
+
+## Pell Floquet continuation, 2026-09-05
+
+Proof authority: `mathematics/pell_floquet_normal_form.md`. The argument is
+self-contained and does not assume completion of the earlier arithmetic
+programme. Status: project theorem with proof, awaiting independent review;
+no priority or complete analytic Lean formalization is claimed.
+
+- Exact cyclic cohomological inverse and weighted phase bound
+  sum |c_j| a_j <= 2 pi/[K(1-lambda^(-K))].
+- Exact four-letter pair-support dissociation for odd prime K>=11 and
+  composite Pell N; exact full-HS commutator formula, bounded by 9/K.
+- Actual kicked-propagator normal form with odd normalized HS error
+  <=12 epsilon^2/sqrt(K), valid for all real epsilon.
+- Critical wrapped Gaussian law for U_epsilon^K at epsilon=tau/sqrt(2K).
+  The comparison error is 6|m|tau^2/sqrt(K); the additional Gaussian
+  characteristic-function error is only asserted to be o(1).
+- Subcritical folded-phase W2 limit under epsilon sqrt(K)->0; no statement
+  that the old clusters remain separate or keep identifiable ranks.
+- Independent C++/Python finite checks and finite/general-algebraic Lean
+  kernels are recorded at their own scope, not promoted to the full limit.
+- Gamma decimal corrected to 5.614220692151198071627965... and now enclosed
+  by a pure-integer interval certificate. Three legacy K=7,p=29 anchors
+  corrected with negative controls and explicit positive embeddings.
+
+Not established: Heisenberg-scale joint traces, microscopic local statistics,
+fixed nonzero classical-kick universality, or full BGS. K is logarithmic in N
+and the critical classical kick is of order 1/(N sqrt(K)).
