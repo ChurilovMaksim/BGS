@@ -1,0 +1,122 @@
+Inverse-row quartic localization / reduced edge support evidence
+Date: 2026-09-05
+Status: finite evidence and execution record only; see mathematics/cayley_inverse_quartic_localization.md for exact proofs.
+
+CLAIMS CHECKED BY EXECUTION
+
+1. Independent C++20 finite-field witness
+
+Source:
+  computations/cpp/cayley_inverse_k89_witness.cpp
+
+Local compilation used during development:
+  g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic \
+      /mnt/data/cayley_inverse_k89_witness.cpp \
+      -o /mnt/data/cayley_inverse_k89_witness
+
+Compilation exit code: 0
+Execution exit code: 0
+Execution output:
+  PASS K=89 p=143207231 h=28905841 p/K^4=2.28247 zero_edges=(16,35),(20,33) I_inverse=4 e1=e3=0
+
+The verifier checks independently:
+  - p=143207231 is prime by exact trial division;
+  - p==1 mod 89;
+  - p>89^4;
+  - h=28905841 has exact prime order 89;
+  - the 45 real trace classes are distinct;
+  - after removing the invalid [1] class, exactly two unordered centred pair sums vanish;
+  - the zero edges are exactly (16,35) and (20,33);
+  - the four-root elementary symmetric certificate has e1=e3=0;
+  - I_inverse=2*(number of zero pair-sums)=4.
+
+Recorded centred roots modulo p:
+  x_16=49215600
+  x_35=93991631
+  x_20=74755068
+  x_33=68452163
+with each displayed pair summing to 0 mod p.
+
+Exact arithmetic:
+  89^4 = 62742241
+  143207231 / 89^4 = 2.2824691741565...
+
+Therefore the strict finite statement
+  inverse order-three support => p<=K^4
+is false.
+
+This does NOT refute the asymptotic target
+  P_split^+(Theta'_K) <= K^(4+o(1)).
+
+2. Python/SymPy reduced edge-norm verifier
+
+Source:
+  computations/verification/cayley_inverse_edge_norm_support.py
+
+Local command:
+  python computations/verification/cayley_inverse_edge_norm_support.py
+
+Reference development run exit code: 0
+Reference development output:
+  K=31 exact inverse split support: [311, 1303]
+  K=41 p=2908049: norm-gcd candidate but same-embedding inverse support = false
+  K=89 p=143207231: N(w_16,35)=N(w_20,33)=143207231; same embedding j=23; I_inverse=4; p/K^4=2.282469174157
+  cayley inverse reduced edge-norm support regression: OK
+
+The script uses exact integer polynomials and SymPy resultants for
+  w_(a,b)=2-v_a-v_b,
+  v_n=(t_n-2)/(tau-2),
+and exact integer factorization only as a rational candidate filter.
+A split prime is promoted only after a same-embedding finite-field check.
+
+The K=41 value p=2908049 is a deliberate negative control: it survives the rational norm-gcd candidate stage for disjoint edge pairs but the two edge congruences occur at different prime ideals / embeddings.  It is therefore NOT inverse I>=4 support.  This directly guards against replacing an ideal-gcd statement by gcds of rational norms.
+
+At K=89 the two witness reduced edge norms are exactly
+  |N(w_(16,35))| = 143207231,
+  |N(w_(20,33))| = 143207231.
+
+3. Completed exact support sweeps
+
+The same prototype logic -- exact reduced edge norms, rational candidate factorization, then same-embedding finite-field promotion -- completed the following finite sweeps before the maintained verifier was compacted:
+
+  K=29:  59
+  K=31:  311, 1303
+  K=37:  149, 223, 593
+  K=41:  83, 739
+  K=43:  173, 431, 1721
+  K=47:  283, 659, 1129, 6863
+  K=53:  107, 1061
+  K=59:  709, 827, 1063, 21713, 50033
+  K=61:  367, 733, 977, 1831
+  K=67:  269, 1609, 680453
+  K=71:  569, 853, 1279, 1847, 2131, 2273, 2557
+  K=73:  293, 439, 877, 1607, 1753, 6571
+  K=79:  317, 1423, 2213, 34603
+  K=83:  167, 499, 997, 1163, 1993, 2657, 4483, 4649, 17702407
+  K=89:  179, 1069, 2137, 2671, 3739, 3917, 6053, 36313, 143207231
+  K=97:  389, 971, 1553, 1747, 3299, 3881, 4463, 4657, 5821, 8731, 11447, 69259
+  K=101: 607, 809, 1213, 3637, 4243, 5051, 6263, 6869, 8081, 10303
+
+Finite scope only.  These rows are not a growing-K theorem.
+
+A later SymPy batch beyond this range was interrupted while processing a larger K.  Its partial console output is intentionally NOT recorded as evidence and no values from the interrupted batch are promoted.
+
+4. Universal pair-sum discriminant identity regression
+
+Before promotion, the exact identity
+  Disc(S_F)=Disc(F)^(m-2) Q_F^2
+was independently expanded with exact SymPy integer arithmetic on test root sets of sizes m=4,5,6.  In each case the symbolic/integer difference was exactly zero.
+
+This finite regression is not the proof.  The proof in mathematics/cayley_inverse_quartic_localization.md partitions pairs of pair-sum roots into intersecting and disjoint graph edges.
+
+PERFORMANCE NOTE
+
+Repeated exact SymPy resultants/factorizations become the dominant cost near K~100 when all O(K^2) reduced edges are swept.  An attempted larger brute-force batch was stopped rather than silently truncating.  The scalable route should use a specialized modular or fraction-free resultant/norm kernel in compiled code, while preserving the same-embedding promotion gate.
+
+NON-CLAIMS
+
+- No asymptotic largest-prime theorem is claimed.
+- No claim that rational gcd(N(w_e),N(w_f)) equals an ideal contraction is made.
+- No data from interrupted computations are used.
+- The K=89 witness does not disprove K^(4+o(1)); it only disproves a strict finite K^4 ceiling.
+- No BGS/GOE/COE conclusion follows from these finite arithmetic certificates.
