@@ -31,6 +31,8 @@ else()
 endif()
 ''')
     append_once('formalization/Bgs.lean','import Bgs.PellCoboundary','import Bgs.PellCoboundary')
+    append_once('README.md','Exact generated-observable fourth moment',
+        'Exact generated-observable fourth moment: [closed formula and error budget](mathematics/pell_coboundary_fourth_moment.md), independently checked against Weyl convolution.')
     description='''
 ## Second-order coboundary resonance
 
@@ -131,6 +133,8 @@ def figures() -> None:
 def render() -> None:
     src=ROOT/'mathematics/pell_coboundary_resonance.md'
     body=subprocess.check_output(['pandoc',str(src),'-f','markdown','-t','latex','--wrap=none'],text=True)
+    appendix=ROOT/'mathematics/pell_coboundary_fourth_moment.md'
+    body+='\n\\clearpage\n'+subprocess.check_output(['pandoc',str(appendix),'-f','markdown','-t','latex','--wrap=none'],text=True)
     header=r'''\documentclass[11pt,a4paper]{article}
 \usepackage[margin=25mm]{geometry}
 \usepackage[T1]{fontenc}
@@ -172,6 +176,7 @@ def main() -> None:
     args=p.parse_args()
     integrate()
     if not args.integrate_only:
+        subprocess.run(['python','computations/verification/pell_coboundary_fourth_moment.py','--output','evidence/certificates/pell_coboundary_fourth_moment.json'],cwd=ROOT,check=True)
         figures();render()
     print('Coboundary registration complete; no verification status inferred.')
 

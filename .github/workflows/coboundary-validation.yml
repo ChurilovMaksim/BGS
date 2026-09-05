@@ -10,6 +10,8 @@ on:
       - 'mathematics/pell_coboundary_resonance.md'
       - 'formalization/Bgs/PellCoboundary.lean'
       - 'manuscript/pell_coboundary_section.tex'
+      - 'mathematics/pell_coboundary_fourth_moment.md'
+      - 'computations/verification/pell_coboundary_fourth_moment.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -88,7 +90,10 @@ jobs:
           import hashlib,json,os,platform
           from pathlib import Path
           import numpy,scipy,mpmath
-          paths=['mathematics/pell_coboundary_resonance.md',
+          paths=['mathematics/pell_coboundary_fourth_moment.md',
+                 'computations/verification/pell_coboundary_fourth_moment.py',
+                 'evidence/certificates/pell_coboundary_fourth_moment.json',
+                 'mathematics/pell_coboundary_resonance.md',
                  'computations/verification/pell_coboundary_regression.py',
                  'computations/verification/pell_floquet_regression.py',
                  'computations/cpp/pell_coboundary_pairs.cpp',
@@ -120,7 +125,8 @@ jobs:
             manuscript/arithmetic_cat_map_moments.pdf manuscript/pell_coboundary_resonance.tex \
             manuscript/pell_coboundary_resonance.pdf assets/figures/pell_coboundary_fourth.png \
             assets/figures/pell_coboundary_echo.png evidence/certificates/pell_coboundary_audit.json \
-            evidence/certificates/pell_coboundary_validation.json
+            evidence/certificates/pell_coboundary_validation.json \
+            evidence/certificates/pell_coboundary_fourth_moment.json
           if ! git diff --cached --quiet; then
             git commit -m 'research: publish verified coboundary evidence, finite certificates and papers [skip ci]'
             git push origin "HEAD:$branch"

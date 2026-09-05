@@ -10,3 +10,5 @@ import Bgs.MagneticTraceSmall
 import Bgs.PellCohomology
 
 import Bgs.PellCoboundary
+
+import Bgs.PellEchoWeights
