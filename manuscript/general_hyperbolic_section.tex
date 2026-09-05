@@ -1,0 +1,109 @@
+\section{General hyperbolic recurrences without residue-ring splitting}
+
+Let $A\in\mathrm{SL}(2,\mathbb Z)$ have $|\operatorname{Tr}A|>2$.
+Put $a=|\operatorname{Tr}A|$, $s=\operatorname{sgn}(\operatorname{Tr}A)$,
+and define $u_0=0$, $u_1=1$, $u_{j+1}=au_j-u_{j-1}$.
+For an odd prime $K>3$ not dividing $a-2s$, set
+\[
+ m=\frac{K-1}{2},\qquad N_K=u_{m+1}+s u_m,\qquad
+ c_K=\left(\frac{a-2s}{K}\right),\qquad
+ D_K=\frac{N_K-c_K}{2},\quad n_K=\frac{D_K}{K}.
+\]
+The parentheses defining $c_K$ denote the Legendre symbol. The exact identity
+\[
+ A^K-I=s^mN_K A^m(A-I)
+\]
+implies $A^K=I$ modulo $N_K$. All nontrivial powers have no nonzero fixed
+vector: $A-I$ is invertible modulo $N_K$, and Bezout for $j,K$ transfers a
+fixed vector of $A^j$ to one of $A$. The modulus is odd; it need not be prime,
+squarefree, or split for the characteristic polynomial of $A$.
+
+For exact covariance of integer Fourier symbols at arbitrary $A$, use
+\[
+ Q_N^*(v)=(-1)^{v_1v_2+v_1+v_2}W_N(v).
+\]
+This quadratic refinement modulo two is invariant under every invertible
+linear transformation of $\mathbb F_2^2$. It is an explicit quantization
+characteristic, not an assertion that the earlier characteristic gives the
+same finite operator for all $A$.
+
+\paragraph{Finite spectral theorem.}
+There is a scalar normalization of the Weyl implementer $U_N$ such that on
+$\operatorname{ran}(I-c_KR)/2$ each $K$-th root of unity has multiplicity
+exactly $n_K$. On the other parity sector the nontrivial roots have the same
+multiplicity, while the root one has multiplicity $n_K+c_K$.
+In particular, the uniform sector is even when $c_K=-1$.
+
+The proof does not diagonalize $A$ over $\mathbb Z/N_K\mathbb Z$.
+Weyl covariance gives
+\[
+ |\operatorname{Tr}U_N^j|^2=\#\ker(A^j-I)=1,\quad 0<j<K,
+ \qquad |\operatorname{Tr}(RU_N^j)|^2=1.
+\]
+After normalizing $U_N^K=I$, the second trace is an integral virtual
+character of the cyclic group with squared Fourier norm one and value one
+at zero. It is therefore a single character. A root-of-unity phase makes
+it identically one. If $M_l$ are the full multiplicities, then
+\[
+ \sum_l M_l=N_K,\qquad
+ \sum_l M_l^2=\frac{N_K^2+K-1}{K}.
+\]
+The least squared sum of integers of a prescribed total forces all
+multiplicities to differ by at most one, with exactly one exceptional root.
+Parity locates that root at one and gives the asserted sector. The argument
+also works for any odd recurrence order whose nontrivial powers are
+fixed-point-free, not just a prime order.
+
+For example, trace $+4$ and $K=11$ give $N=989=23\cdot43$ and an even
+uniform sector of dimension $495$, with multiplicity $45$. The discriminant
+is split modulo $23$ and nonsplit modulo $43$. Trace $-6$ and $K=7$ instead
+give $N=169=13^2$ and an odd uniform sector of dimension $84$, with
+multiplicity $12$. Its discriminant is nonsplit modulo $13$.
+
+\paragraph{Fixed classical strength.}
+Let $S=A^{\mathsf T}$, choose a real even smooth $g_0$ whose support is
+disjoint from its $S$-preimage, and put $g=g_0-\int g_0$, $f=g-g\circ S$.
+With $\hbar_N=(2\pi N)^{-1}$, define
+\[
+ V_{\kappa,N}=e^{i\kappa\operatorname{Op}_N^*(f)/\hbar_N}U_N,
+ \qquad J_{\kappa,N}=e^{i\kappa\operatorname{Op}_N^*(g)/\hbar_N}.
+\]
+For every positive odd $j$, the sine Taylor remainder and disjoint derivative
+supports give
+\[
+ \|J_{\kappa,N}^*V_{\kappa,N}J_{\kappa,N}-U_N\|_{\mathrm{op}}
+ \leq\frac{4\kappa^2\pi^{j+2}}{j!}
+ M_j(g)M_j(g\circ S)N^{2-j},
+\]
+where $M_j(g)=\sum_v|\widehat g(v)||v|_2^j$. Hence this difference is
+$O(N^{-L})$ for every $L$, uniformly on compact classical-strength intervals.
+Telescoping preserves that accuracy on every polynomial time window,
+including the Heisenberg scale. No smallness of $\kappa N$ is assumed.
+
+The associated classical map is exactly
+\[
+ S\Phi_f^{-\kappa}=\Phi_g^\kappa S\Phi_g^{-\kappa}.
+\]
+It is nonaffine and Anosov for nonzero $\kappa$, but retains the arithmetic
+structure by smooth symplectic conjugacy. It is therefore not a generic
+arithmetic-free BGS example.
+
+\paragraph{Local laws.}
+On the uniform parity sector there are $K$ clusters of exactly $n_K$ levels,
+with widths smaller than every inverse power of $N_K$. For each fixed
+factorial order $p\geq2$ and Schwartz test $\Phi$ on $\mathbb R^{p-1}$,
+\[
+ R_N^{(p)}(\Phi)=(n_K-1)_{p-1}\Phi(0)+O(N_K^{-L})
+\]
+for every $L$. At a uniformly random origin, a microscopic interval of
+length $x$ is empty with probability $1-x/n_K+O(N_K^{-L})$ and contains
+$n_K$ levels with probability $x/n_K+O(N_K^{-L})$. The mean count is exactly
+$x$, while its variance is $xn_K-x^2+O(N_K^{-L})$. The local point process
+converges to the empty measure; the unit mean intensity is not uniformly
+integrable. This is not a Poisson process.
+
+The detailed proofs, including the analytic rigidity boundary and the
+quantitative one-mode sublevel estimate for the second resonance, are in the
+companion mathematical notes. None of these conclusions is a positive
+universality theorem for a general chaotic system or a claim of established
+world priority.
