@@ -22,6 +22,7 @@ jobs:
       - name: Export tracked history and current-tree provenance
         run: |
           mkdir -p "$RUNNER_TEMP/research-snapshot"
+          git fsck --no-dangling
           git bundle create "$RUNNER_TEMP/research-snapshot/WoW.bundle" --all
           git archive --format=tar.gz -o "$RUNNER_TEMP/research-snapshot/WoW-source.tar.gz" HEAD
           git rev-parse HEAD > "$RUNNER_TEMP/research-snapshot/HEAD.txt"
