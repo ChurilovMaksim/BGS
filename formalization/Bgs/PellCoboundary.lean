@@ -50,4 +50,13 @@ theorem doubleKeyCount :
     (pairKeys.eraseDups.filter (fun v => multiplicity v == 2)).length = 44 := by
   native_decide
 
+#print axioms structuralIdentity
+#print axioms firstSpeciesPeriod
+#print axioms secondSpeciesPeriod
+#print axioms pairCount
+#print axioms distinctCount
+#print axioms noZero
+#print axioms multiplicityAtMostTwo
+#print axioms doubleKeyCount
+
 end Bgs.PellCoboundary
