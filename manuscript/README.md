@@ -54,7 +54,9 @@ The publication-facing theorem surface now includes:
 
 Authoritative derivations remain in `../mathematics/`, with claim status governed
 by `../record/claim_ledger.md`. The research/reproducibility discipline is
-recorded in `../record/research_operating_protocol.md`.
+recorded in `../record/research_operating_protocol.md`. The primary-source audit
+for the new cyclotomic trace-intercept theorem is
+[`../literature/cyclotomic_row_support_sources_20260905.md`](../literature/cyclotomic_row_support_sources_20260905.md); it marks Dvornicich--Zannier as an unmatched lead rather than a used theorem.
 
 Build locally with
 
