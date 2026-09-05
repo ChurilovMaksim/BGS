@@ -1,16 +1,8 @@
 # Reflection reduction for the inverse product-row class
 
-**Status: EXACT for the reflection/half-degree gcd reduction; EXACT + EXTERNAL-THEOREM for the determinantal/subresultant prime-support criterion; FINITE-REGRESSION for the displayed Smith anchors; OPEN for a uniform split-prime bound.**
+**Status: EXACT for the reflection/half-degree gcd reduction; EXACT + EXTERNAL-THEOREM for the fixed-degree subresultant support criterion; FINITE-REGRESSION for the Smith anchors; OPEN for a uniform split-prime bound.**
 
-This note isolates the normalized ratio class
-
-```text
-r=-1 mod K,
-```
-
-inside the exact real-trace framework of `cayley_product_row_real_trace_ideal.md`.  This class contains several of the largest finite order-three exceptions currently known, but it has an additional involution which cuts the algebraic degree essentially in half.
-
-No statement here is a Gaussian limit or a microscopic BGS theorem.
+This note isolates the normalized ratio class `r=-1 mod K` inside the exact real-trace framework of `cayley_product_row_real_trace_ideal.md`. This class contains several of the largest finite order-three exceptions currently known, but it has an involution that cuts the polynomial degree essentially in half.
 
 ## 1. Exact reflection
 
@@ -22,199 +14,128 @@ L^+=Q(tau),
 O^+=Z[tau].
 ```
 
-Let
-
-```text
-H_K(T)=(T-2)C_K(T)
-```
-
-be the full squarefree trace polynomial from `cayley_product_row_real_trace_ideal.md`, and
+Let `H_K(T)=(T-2)C_K(T)` be the full squarefree trace polynomial and
 
 ```text
 P(T)=H_K(T)/(T-tau).                                    (1)
 ```
 
-For the normalized row ratio `r=-1`, the affine trace coefficients simplify exactly to
+For normalized ratio `r=-1`,
 
 ```text
 alpha=-1,
 beta=2tau.                                               (2)
 ```
 
-Indeed `s_{-1}/s_1=-1` and `-2s_{-2}/s_1=2tau`.
-
-The target cofactor is therefore
+Hence
 
 ```text
-Q(T)=H_K(2tau-T)/(T-tau).                               (3)
-```
-
-Since
-
-```text
-H_K(T)=(T-tau)P(T),
-```
-
-substitution gives
-
-```text
-H_K(2tau-T)=-(T-tau)P(2tau-T),
-```
-
-hence the exact reflection identity
-
-```text
-Q(T)=-P(2tau-T).                                         (4)
+Q(T)=H_K(2tau-T)/(T-tau)=-P(2tau-T).                    (3)
 ```
 
 Thus a common trace is paired with its reflection about `tau`.
 
 ## 2. Even/odd half-degree decomposition
 
-Shift the reflection center to zero:
+Set
 
 ```text
-F(Z)=P(tau+Z).                                           (5)
+F(Z)=P(tau+Z)=E(Z^2)+Z O(Z^2),                           (4)
 ```
 
-Write uniquely
+with `E,O in O^+[Y]`. Then
 
 ```text
-F(Z)=E(Z^2)+Z O(Z^2),                                   (6)
-```
-
-with `E,O in O^+[Y]`.  Then
-
-```text
-Q(tau+Z)=-F(-Z),                                         (7)
-```
-
-and, since the split primes under study are odd,
-
-```text
+Q(tau+Z)=-F(-Z),
 F(Z)+F(-Z)=2E(Z^2),
-F(Z)-F(-Z)=2Z O(Z^2).                                   (8)
+F(Z)-F(-Z)=2Z O(Z^2).                                   (5)
 ```
 
-The root `Z=0` never occurs: `P(tau)=H_K'(tau)` and `H_K` is squarefree at every split prime `p!=K`.
+For every split prime `p!=K`, `F(0)=P(tau)=H_K'(tau)` is nonzero because the trace polynomial is squarefree.
 
-Moreover one parity component has unit leading coefficient:
+One parity component has unit leading coefficient:
 
 - if `m` is even, `E` is monic of degree `m/2`;
 - if `m` is odd, `O` is monic of degree `(m-1)/2`.
 
-Hence `E` and `O` cannot acquire a common projective root at infinity after split reduction.
+So the pair cannot acquire a **common** projective root at infinity after split specialization.
 
 ### Theorem 1 (exact halving identity)
 
-For every split prime `p==1 mod K` and every real embedding prime `q|p`, let `I_{-1}(q)` denote the number of common Cayley parameters of the corresponding normalized inverse-row pair. Then
+For every split prime `p==1 mod K` and every real embedding prime `q|p`, let `I_{-1}(q)` be the number of common Cayley parameters of the normalized inverse-row pair. Then
 
 ```text
-I_{-1}(q)=2 deg gcd(E,O mod q).                          (9)
+I_{-1}(q)=2 deg gcd(E,O mod q).                          (6)
 ```
 
-In particular
+Consequently
 
 ```text
-I_{-1}(q) is even,                                      (10)
-
-I_{-1}(q)>=3
-iff
-deg gcd(E,O mod q)>=2.                                  (11)
+I_{-1}(q) is even,
+I_{-1}(q)>=3 iff deg gcd(E,O mod q)>=2.                  (7)
 ```
 
 ### Proof
 
-By the exact real-trace theorem, `I_{-1}(q)` is the degree of the gcd of `P(T)` and `Q(T)`.  After the shift this is the number of common roots of `F(Z)` and `F(-Z)`.
+The exact real-trace theorem identifies `I_{-1}(q)` with the degree of the gcd of `P(T)` and `Q(T)`. After the shift this is the common-root count of `F(Z)` and `F(-Z)`.
 
-If `z` is common, (8) and `z!=0` imply
+If `z` is common, (5) and `z!=0` give `E(z^2)=O(z^2)=0`. Conversely, a common root `y` of `E,O` gives roots `+-z` of `F` for `z^2=y`. Since `F` is split and squarefree over `F_p`, `+-z` are distinct `F_p`-roots. A repeated common root of `E,O` would force a multiple root of `F`. Thus common `Y`-roots correspond bijectively to unordered pairs `+-Z`, proving (6).
 
-```text
-E(z^2)=O(z^2)=0.
-```
+## 3. Exact order-three support with a smaller fixed-degree problem
 
-Conversely, if `y` is a common root of `E,O`, then every square root `z` of `y` satisfies `F(z)=F(-z)=0`.  The polynomial `F` is split and squarefree over `F_p`; therefore the two roots `+-z` are distinct and lie in `F_p`.  A repeated common root of `E,O` would force a multiple root of `F`, so the gcd of `E,O` is squarefree.  Thus common `Y`-roots correspond bijectively to unordered pairs `+-Z`, proving (9).
-
-## 3. Exact order-three support with a smaller Sylvester problem
-
-Let
+Let `A` denote the parity component with unit leading coefficient and `B` the other component. Use their characteristic-zero degrees as fixed degree bounds. Brown--Traub's determinantal subresultant criterion, applied to these fixed coefficient arrays, gives
 
 ```text
-a=deg E,
-b=deg O,
-N=a+b.
-```
-
-Choose as `A` the parity component with unit leading coefficient and as `B` the other component.  Consider the fixed-degree Sylvester map
-
-```text
-S: O^+[Y]_{<b} direct_sum O^+[Y]_{<a}
-   -> O^+[Y]_{<a+b},
-(u,v) |-> uA+vB.                                        (12)
-```
-
-Because `A` retains its full degree after every split reduction, the kernel dimension of `S mod q` is exactly
-
-```text
-deg gcd(E,O mod q).                                     (13)
-```
-
-Let `J^-_K` be the ideal of `O^+` generated by all `(N-1)x(N-1)` minors of the square Sylvester matrix of (12).  Then
-
-```text
-J^-_K subset q
+deg gcd(E,O mod q)>=2
 iff
-corank(S mod q)>=2
-iff
-I_{-1}(q)>=3.                                            (14)
+the degree-1 and degree-0 subresultants vanish mod q.    (8)
 ```
 
-Write the contraction
+The unit leading coefficient of `A` is the key specialization safeguard: the Sylvester kernel has dimension exactly `deg gcd(E,O)` even if the other component loses leading degree. Equivalently, the same condition is rank at most `N-2` for the fixed Sylvester map
+
+```text
+O^+[Y]_{<deg B} direct_sum O^+[Y]_{<deg A}
+ -> O^+[Y]_{<deg A+deg B}.                              (9)
+```
+
+Let `J^-_K` be the ideal of `O^+` generated by all nonzero coefficients of those final two fixed-degree subresultants and write
 
 ```text
 J^-_K intersect Z = Xi_K Z,
-Xi_K>0.                                                  (15)
+Xi_K>0.                                                  (10)
 ```
 
-The standard contraction argument gives the exact rational-prime support:
+The standard contraction lemma and (7)--(8) give:
 
-### Theorem 2 (reflection-support integer)
+### Theorem 2 (exact reflection-support integer)
 
 For every split prime `p==1 mod K`,
 
 ```text
 p|Xi_K
 iff
-some inverse-ratio row pair has at least three common parameters.  (16)
+some inverse-ratio row pair has at least three common parameters. (11)
 ```
 
-Equivalently, after removing the harmless factors `2,K`, `Xi'_K` has the same **split prime support** as the `r=-1` factor `Lambda'_(K,-1)^(3)` of the full real-trace invariant.
+Thus, after removing factors `2,K`, `Xi'_K` has exactly the same **split prime support** as the `r=-1` factor `Lambda'_(K,-1)^(3)` of the full real-trace invariant.
 
-The minors in (14) are equivalently controlled by the first two fixed-degree subresultants of `E,O`; Brown--Traub's classical subresultant theorem supplies this standard determinantal equivalence.
-
-This formulation is genuinely smaller than the full `P,Q` problem: the polynomial degrees are approximately `m/2` rather than `m`, and only a corank-two condition is needed.
+This formulation is smaller than the full `P,Q` problem: the polynomial degrees are about `m/2` instead of `m`, and only a corank-two condition remains.
 
 ## 4. Chebyshev/Dickson fibre identity
 
-The trace polynomial is the squarefree support of a Chebyshev fibre.  Exactly
+The trace set is the squarefree support of one Chebyshev fibre. Exactly
 
 ```text
-2(T_K(T/2)-1)=(T-2) C_K(T)^2.                           (17)
+2(T_K(T/2)-1)=(T-2) C_K(T)^2.                           (12)
 ```
 
-This follows by writing `T=Z+Z^(-1)`:
+Indeed, for `T=Z+Z^(-1)`, one has `2T_K(T/2)=Z^K+Z^(-K)`. The left side has one zero at `T=2` and a double zero at every nontrivial `K`-trace, and the leading coefficients agree.
 
-```text
-2T_K(T/2)=Z^K+Z^(-K),
-```
-
-so the left side vanishes once at `T=2` and twice at every nontrivial trace `zeta^a+zeta^(-a)`; both sides are monic of degree `K` after the displayed normalization.
-
-Thus the reflection problem is an affine self-intersection of one explicit Dickson/Chebyshev fibre, not a generic degree-`m` polynomial intersection.
+So the inverse-row problem is an affine reflection self-intersection of a single explicit Dickson/Chebyshev fibre, not a generic polynomial intersection.
 
 ## 5. Exact finite anchors
 
-`computations/verification/cayley_product_row_reflection.py` constructs `E,O` and computes the contraction exponent via a Smith-normal-form representation of the first two subresultant coefficient ideal.  In the maintained anchors this has the same split prime support as the determinantal ideal `J^-_K`; the verifier also checks the exact Chebyshev identity (17).
+`computations/verification/cayley_product_row_reflection.py` constructs `E,O`, the final two fixed-degree subresultants, their coefficient ideal, and its Smith exponent. It also checks (12) exactly.
 
 The prime-to-`2K` values are
 
@@ -224,10 +145,10 @@ K=17: Xi'_K=1,
 K=19: Xi'_K=37,
 K=23: Xi'_K=47*137,
 K=29: Xi'_K=59^2*173*463,
-K=31: Xi'_K=5*61^2*311*557*929*1303.                   (18)
+K=31: Xi'_K=5*61^2*311*557*929*1303.                   (13)
 ```
 
-The corresponding split parts are
+The corresponding **split** parts are
 
 ```text
 K=13: 1,
@@ -235,39 +156,31 @@ K=17: 1,
 K=19: 1,
 K=23: 47,
 K=29: 59,
-K=31: 311*1303.                                         (19)
+K=31: 311*1303.                                         (14)
 ```
 
-The largest displayed split prime is
+At `(K,p)=(31,1303)` a direct finite-field check gives
 
 ```text
-1303=42*31+1 < 2*31^2.                                  (20)
+I_{-1}(p)=4.                                             (15)
 ```
 
-At `(K,p)=(31,1303)` the maintained direct finite-field computation finds
+Finite computation also gives
 
 ```text
-I_{-1}(p)=4,                                             (21)
+Lambda'_(K,-1)^(3)=(Xi'_K)^2                            (16)
 ```
 
-so this factor is geometric, not an artifact of the ideal calculation.
-
-Finite computation also shows
-
-```text
-Lambda'_(K,-1)^(3)=(Xi'_K)^2                            (22)
-```
-
-for every displayed `K`.  Equation (22) is **FINITE-REGRESSION ONLY**; no general square theorem is claimed here.
+for every displayed `K`. Equation (16) is **FINITE-REGRESSION ONLY**; no general square theorem is claimed.
 
 ## 6. Current subproblem
 
 A sufficient bound for the inverse-row class is
 
 ```text
-P_split^+(Xi'_K)<=K^(4+o(1)).                            (23)
+P_split^+(Xi'_K)<=K^(4+o(1)).                            (17)
 ```
 
-The finite data suggest a much stronger scale, but no polynomial bound is yet proved.  The reflection identity (4), the half-degree reduction (9), and the Dickson fibre formula (17) make this class the most structured current target for an explicit Bézout/subresultant calculation.
+The finite data suggest a much stronger scale, but no polynomial bound is yet proved. The reflection identity (3), half-degree reduction (6), and Dickson fibre formula (12) make this class the most structured current target for an explicit Bézout/subresultant calculation.
 
 The full BGS problem still requires the other ratio classes and, after fourth moments, a separate local-statistics mechanism.
