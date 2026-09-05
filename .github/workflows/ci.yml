@@ -102,6 +102,9 @@ jobs:
       - name: Regress inverse pair-sum square factorization
         run: python computations/verification/cayley_inverse_pair_sum_factorization.py
 
+      - name: Regress inverse resultant transversality
+        run: python computations/verification/cayley_inverse_resultant_transversality.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
