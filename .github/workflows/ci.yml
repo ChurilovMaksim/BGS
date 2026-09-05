@@ -90,6 +90,9 @@ jobs:
       - name: Regress exact real-trace row ideal
         run: python computations/verification/cayley_product_row_real_trace_ideal.py
 
+      - name: Regress inverse-row reflection reduction
+        run: python computations/verification/cayley_product_row_reflection.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
