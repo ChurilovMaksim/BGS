@@ -1,29 +1,26 @@
-# Research record
+# Record layer
 
-`record/` is a **compact provenance and status layer**, not an archive source
-tree.
+This directory contains the project-wide research state, provenance notes, and
+claim authority. It is not a second mathematics directory.
 
-Authoritative living files:
+- `claim_ledger.md` — repository-wide status authority. If another note or old
+  commit sounds stronger, the ledger wins.
+- `retractions.md` — invalidated or superseded routes that must not silently
+  re-enter active reasoning.
+- `frontier_pass_20260904.md` — first reconstructed frontier audit.
+- `frontier_pass_20260905.md` — Frobenius-amplification and trace-to-local
+  continuation, including exact scope and open gaps.
+- `frontier_pass_20260905_inverse_continuation.md` — inverse structural-associate
+  pivot continued through the full even-multiplicity filtration, cyclotomic-unit
+  / weight-eight normalization, specialization-safe reduced ordinary-resultant
+  filter, torsion-factor falsification audit, and the revised `I_-1>=6`
+  obstruction architecture.
+- `research_routes.md` — compact map of active mathematical routes.
+- `research_operating_protocol.md` — execution/evidence conventions.
+- `inventory_snapshot.py` — repository inventory helper.
+- `reconstruction.md` and `julia_migration.md` — historical/reconstruction
+  notes retained for provenance.
 
-- `claim_ledger.md` — repository-wide status of current and historically
-  important claims;
-- `research_routes.md` — compact route-level log of substantive research
-  advances, obstructions, and remaining closure conditions; current status
-  still comes from the claim ledger;
-- `retractions.md` — false/superseded statements and their failure mechanisms;
-- `reconstruction.md` — source-snapshot inventory and Git preservation
-  boundary;
-- `julia_migration.md` — path-complete disposition of all 31 historical Julia
-  files;
-- `inventory_snapshot.py` — deterministic inventory/hash tool for the supplied
-  ZIP when that ZIP is available locally.
-
-The old `corpus/`, `checkpoints/`, `engineering/` and `formal_drafts/` trees
-were removed from the current branch on 2026-09-03. They duplicated material
-already preserved by Git and made obsolete Julia/Python/TeX/Lean code look
-current to both humans and GitHub Linguist.
-
-The last `main` commit before that cleanup is
-`d0e414ec26ff7e43ad59e80f77c9d8c679e87c4b`. Historical bytes remain
-recoverable from Git history; they carry no authority over the current claim
-ledger.
+The record layer distinguishes exact derivation, external theorem input, finite
+certificate/regression, numerical evidence, open obligations, and retractions.
+It should never convert a finite computation or a failed search into a theorem.
