@@ -4,43 +4,48 @@
 [![Manuscript PDF](https://img.shields.io/badge/manuscript-PDF-b31b1b.svg)](manuscript/arithmetic_cat_map_moments.pdf)
 [![Lean 4](https://img.shields.io/badge/formalization-Lean%204-ffffff.svg)](formalization/)
 
-This repository is a curated research programme on arithmetic quantum cat maps,
-exact finite-field moment reductions, and the still-open microscopic
-Bohigas--Giannoni--Schmit (BGS) / GOE local-statistics problem.
+This repository is a research programme on arithmetic quantum cat maps, exact
+finite-field moment reductions, arithmetic collision geometry and the still
+open microscopic Bohigas--Giannoni--Schmit/RMT local-statistics problem.
 
-> **Status discipline.** Historical commits can contain stronger language.
-> The current authority is [`record/claim_ledger.md`](record/claim_ledger.md),
-> backed by current proofs, source audits and executable regression gates.
+> **Status discipline.** The repository-wide authority is
+> [`record/claim_ledger.md`](record/claim_ledger.md). Historical commits and
+> exploratory notes do not override it. The working/reproducibility discipline
+> is recorded in
+> [`record/research_operating_protocol.md`](record/research_operating_protocol.md).
 
 ![Research pipeline](assets/research_pipeline.svg)
 
-## Status at a glance — 2026-09-04
+## Status at a glance — 5 September 2026
 
 | Layer | Status | Current statement |
 |---|---|---|
 | Pair-key geometry | **EXACT** | off-diagonal bijection; diagonal multiplicity `p-2` |
 | Fourth-moment distribution | **EXACT** | exact `B(t)` decomposition, total count and Fourier mean/variance |
 | Cayley mixed reduction | **EXACT** | mixed collisions are additive energy of `A=c(H\{1})` |
-| Direct pointwise Cayley bound | **EXACT + EXTERNAL-THEOREM** | `E_+(A)<34K^(8/3)` for `100<K<p^(3/4)/3` |
+| Direct pointwise Cayley bound | **EXACT + EXTERNAL-THEOREM** | `E_+(A)<34K^(8/3)` in the maintained Stepanov range |
 | Characteristic-zero additive rigidity | **EXACT** | only identity and central inversion-swap for odd prime `K` |
-| Difference discriminant | **EXACT** | one polynomial `S_K` classifies every non-forced split-prime additive collision |
-| Ratio-orbit / fourth-power structure | **EXACT** | `Disc(S_K)` has an explicit universal `2,K` part times `J_K^4` |
-| Characteristic-zero multiplicative rigidity | **EXACT** | product collisions are only swap/simultaneous inversion |
-| Product discriminant | **EXACT** | one polynomial classifies multiplicative split-prime exceptions |
-| Global split-prime additive mass | **EXACT** | deterministic `O(K^4)` weighted excess budget |
-| Almost-all exact baseline | **EXACT + EXTERNAL-THEOREM** | for fixed `theta<1/5`, density-one split pairs have `Delta_K(p)=0` exactly |
+| Difference discriminant / ratio orbits | **EXACT** | canonical exceptional-prime polynomial; fourth-power discriminant structure |
+| Fixed-product rows | **EXACT** | non-forced excess is cross-row interference |
+| Exact order-three row support | **EXACT + EXTERNAL-THEOREM** | maximal-real trace ideal `Lambda'_K^(3)` gives the exact split-prime support of `I_K(p)>=3` |
+| Pointwise quadratic subfamily | **EXACT + EXTERNAL-THEOREM** | outside `p|Lambda'_K^(3)`, `E_+(A)<=11(K-1)(K-2)` |
+| Global split-prime additive mass | **EXACT** | deterministic explicit `O(K^4)` weighted excess budget |
+| Split almost-all exact baseline | **EXACT + EXTERNAL-THEOREM** | for fixed `theta<1/5`, density-one split pairs have `Delta_K(p)=0` |
+| Minimal-extension Frobenius amplification | **EXACT** | for `f=ord_K(p)`, `f|Delta_K^ext(p)` and every non-forced orbit has size `f` |
+| Minimal-extension almost-all exact baseline | **EXACT + EXTERNAL-THEOREM** | unrestricted prime pairs have exact baseline with density one for fixed `theta<1/3` |
 | Full Cayley/Jacobi trace | **EXACT** | `1_Ahat(r)=K Tr M_S(2r)` and exact second/fourth trace moments |
-| Double-average quadratic excess | **EXACT + EXTERNAL-THEOREM** | for `theta<1/3`, average `Delta_K(p)/K^2 << X^(3theta-1)` |
 | Corrected off/off elliptic layer | **EXACT + EXTERNAL-THEOREM** | reducible spike extracted; variance is controlled by the same `E_+(A)` |
-| Sharp pointwise centered energy | **OPEN** | target `(K-1)^4/p+O(K^(2+o(1)))` |
-| Microscopic BGS/GOE law | **OPEN** | no mean-spacing local-law/comparison bridge yet |
+| Trace-to-local-statistics Fourier bridge | **EXACT** | factorial microscopic statistics are exact partition-Mobius/Poisson sums of joint traces |
+| Sharp pointwise centered energy | **OPEN** | split-prime target `(K-1)^4/p+O(K^(2+o(1)))` |
+| Heisenberg-scale spectral trace comparison | **OPEN** | need joint traces for the correct desymmetrized block at `|n|=Theta(N)` |
+| Microscopic BGS/GOE/COE law | **OPEN** | no claimed universality theorem |
 
 The concise theorem index is [`mathematics/results.md`](mathematics/results.md).
 
-## Exact fourth-moment reduction
+## 1. Exact fourth-moment reduction
 
-Let `p` be odd and `H<=F_p^*` have order `K`.  For
-`x,y in F_p\{0,1}` define
+For odd prime `p`, subgroup `H<=F_p^*` of order `K`, and
+`x,y in F_p\{0,1}`, define
 
 ```text
 u=x/y,
@@ -48,8 +53,7 @@ v=(x-1)/(y-1),
 d=x-y.
 ```
 
-Off the diagonal this is a bijection onto
-`u,v in F_p^*\{1}`, `u!=v`, with
+Off the diagonal this is a bijection with
 
 ```text
 y=(1-v)/(u-v),
@@ -57,32 +61,24 @@ x=u(1-v)/(u-v),
 d=(u-1)(v-1)/(v-u).
 ```
 
-The diagonal collapses to `(1,1,0)` with multiplicity `p-2`.  Under the
-subgroup constraints the number of admissible off-diagonal ordered pairs is
-exactly `(K-1)(K-2)`.
-
-The fourth-moment difference distribution is
+The diagonal collapses to `(u,v,d)=(1,1,0)` with multiplicity `p-2`, and the
+subgroup constraints leave exactly `(K-1)(K-2)` admissible off-diagonal pairs.
+The corrected fourth-moment distribution is
 
 ```text
 B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0},
 ```
 
-with exact total
+with
 
 ```text
 |V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K.
 ```
 
-If `Sigma4(q)=sum_t B(t)e_p(qt)`, then finite Fourier orthogonality gives
+Finite Fourier orthogonality gives the exact nonzero-frequency mean/variance
+identities. No probabilistic independence assumption enters the reduction.
 
-```text
-E_{q!=0} Sigma4(q)=(pZ-V)/(p-1),
-Var_{q!=0} Sigma4(q)=p Var_{t!=0}B(t).
-```
-
-No probabilistic independence assumption enters this reduction.
-
-## One arithmetic bottleneck now controls both mixed and off/off layers
+## 2. One Cayley energy controls both nontrivial fourth-moment layers
 
 Put
 
@@ -98,39 +94,23 @@ d(u,v)=2/(c(u)-c(v)),
 c(h^-1)=-c(h),
 ```
 
-so the mixed collision problem is the additive energy `E_+(A)`.
-
-The corrected elliptic analysis shows that the pure off/off layer is governed
-by the same quantity.  Every generic parameter class has a reducible fiber at
-
-```text
-t_lambda=2/(c(h1)-c(h2))
-```
-
-with exactly `2p-8` valid affine points.  Those coherent `O(p)` spikes produce
-the term `pE_+(A)`.  After their extraction, the remaining rank-two elliptic
-trace sheaves are quasi-orthogonal at square-root scale.  The exact corrected
-bound is
+so the mixed term is governed by additive energy `E_+(A)`. The corrected
+off/off analysis finds a coherent reducible fiber of size `2p-8` in every
+generic parameter class; after spike extraction the residual elliptic trace
+functions are square-root quasi-orthogonal. The maintained bound is
 
 ```text
 Var_{t!=0} O(t)
  << pE_+(A)+K^2p+K^4sqrt(p)+K^4.
 ```
 
-Thus the historical spike-free target `O(K^2p+K^4sqrt(p)+K^4)` is superseded.
-See [`mathematics/offoff_elliptic_spike_theorem.md`](mathematics/offoff_elliptic_spike_theorem.md).
-
-The strongest current uniform pointwise Cayley theorem is
+The best uniform pointwise theorem currently available is
 
 ```text
-E_+(A)<34K^(8/3),
+E_+(A)<34K^(8/3)
 ```
 
-for `100<K<p^(3/4)/3`.  Hence in `K=o(p^(1/4))` the corrected off/off variance
-is `<<pK^(8/3)`.  The remaining pointwise loss is therefore the same
-`K^(2/3)` in both layers.
-
-The sharp closure target is
+for `100<K<p^(3/4)/3`. The sharp pointwise split target is
 
 ```text
 E_+(A)=(K-1)^4/p+O(K^(2+o(1))),
@@ -142,33 +122,94 @@ or equivalently
 sum_{q!=0}|1_Ahat(q)|^4 << pK^(2+o(1)).
 ```
 
-## Additive rigidity, canonical discriminant and fourth powers
+## 3. Exact row geometry and the current split-prime obstruction
 
-For odd prime `K`, Chowla's rational independence of the prime-modulus
-cotangents gives the complete characteristic-zero additive collision
-classification: identity and central inversion-swap are the only relations.
-The corresponding forced nonzero baseline is
+The fixed-product decomposition shows that all non-forced excess comes from
+interference between distinct product rows. If `I_K(p)` is the maximum number
+of common nonzero Cayley parameters of two distinct rows, then exactly
 
 ```text
-(K-1)(2K-5).
+Delta_K(p)<=4 I_K(p)(K-1)(K-2).
 ```
 
-Every cleared collision polynomial satisfies
+The older dehomogenized subresultant integers `G'` and `D'` are retained only
+as **one-way** obstructions. An adversarial degree-drop check at the projective
+point `mu=infinity` showed that their converses are false.
+
+The exact support is instead described in the maximal real cyclotomic field.
+With `tau=zeta+zeta^(-1)`, the normalized row map has Chebyshev coefficients
+
+```text
+alpha_r=U_(r-1)(tau/2),
+beta_r=-2U_(r-2)(tau/2).
+```
+
+The fixed-degree real-trace cofactors have gcd degree exactly equal to the row
+intersection count. The coefficient ideal of their first three subresultants
+contracts to
+
+```text
+Lambda_(K,r)^(3) Z.
+```
+
+For split primes,
+
+```text
+p|Lambda'_(K,r)^(3)
+iff
+some row pair in ratio class [r] has at least three common parameters.
+```
+
+Therefore outside
+
+```text
+Lambda'_K^(3)=product_[r] Lambda'_(K,r)^(3)
+```
+
+one has
+
+```text
+I_K(p)<=2,
+Delta_K(p)<=8(K-1)(K-2),
+E_+(A)<=11(K-1)(K-2).
+```
+
+The active arithmetic closure problem is
+
+```text
+P_split^+(Lambda'_K^(3))<=K^(4+o(1)),
+```
+
+or another growing-`K` estimate strong enough to control the exact split
+support. Such a theorem would close the pointwise Cayley-energy bottleneck in
+`K=o(p^(1/4))`.
+
+See
+[`mathematics/cayley_product_row_real_trace_ideal.md`](mathematics/cayley_product_row_real_trace_ideal.md).
+
+## 4. Discriminants, resultants and split-prime averages
+
+Characteristic-zero cotangent rigidity gives the forced nonzero baseline
+
+```text
+(K-1)(2K-5),
+```
+
+and every maintained cleared collision polynomial satisfies
 
 ```text
 Res(Phi_K,P)=K^3 M^2.
 ```
 
-More strongly, the canonical squarefree nonzero-difference polynomial `S_K`
-classifies every non-forced split-prime collision:
+The canonical difference polynomial `S_K` classifies additional split
+collisions:
 
 ```text
-Delta_K(p)>0  iff  p | Disc(S_K),
-Delta_K(p) <= 4 v_p(Disc(S_K)).
+Delta_K(p)>0 iff p|Disc(S_K),
+Delta_K(p)<=4v_p(Disc(S_K)).
 ```
 
-The polynomial factors into ratio orbits and its discriminant has the exact
-shape
+Its ratio-orbit factorization yields
 
 ```text
 |Disc(S_K)|
@@ -177,129 +218,155 @@ shape
   J_K^4.
 ```
 
-This fourth-power theorem explains the observed split-prime valuation pattern,
-but exact larger-`K` cross-resultants show that their total archimedean mass is
-genuinely `K^4`-scale.  It is therefore a structural theorem, not a hidden
-pointwise proof of the quadratic energy target.
-
-See [`mathematics/cayley_difference_discriminant.md`](mathematics/cayley_difference_discriminant.md)
-and [`mathematics/cayley_ratio_orbit_factorization.md`](mathematics/cayley_ratio_orbit_factorization.md).
-
-## Multiplicative rigidity is independently exact
-
-For the characteristic-zero Cayley set, product collisions satisfy only swap
-and simultaneous inversion, giving
-
-```text
-E_x(A_K)=4(K-1)(K-2).
-```
-
-A companion canonical product discriminant classifies all additional split
-finite-field product collisions and gives
-
-```text
-Delta_K^x(p)>0  iff  p | Disc(S_K^x),
-Delta_K^x(p) <= 16 v_p(Disc(S_K^x)).
-```
-
-This is useful extra structure, but it does not by itself transfer to the
-required additive energy after reduction.  See
-[`mathematics/cayley_multiplicative_rigidity.md`](mathematics/cayley_multiplicative_rigidity.md)
-and [`mathematics/cayley_product_discriminant.md`](mathematics/cayley_product_discriminant.md).
-
-## Global and almost-all theorems
-
-For odd prime `K`, with
-
-```text
-Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5),
-```
-
-the global resultant argument proves
+The total residual archimedean mass genuinely remains `K^4`-scale. The global
+weighted collision budget is
 
 ```text
 sum_{p==1 mod K} Delta_K(p) log p
  <=(K^3-5K^2+6K+1)((K-1)log12-3logK).
 ```
 
-For the dyadic split family
+For prime `K~X^theta`, prime `p~X`, `p==1 mod K`:
 
 ```text
-K~X^theta,
-p~X,
-p==1 mod K,
+average Delta_K(p)/K^2 <<_theta X^(3theta-1) -> 0
 ```
 
-Bombieri--Vinogradov and PNT give two consequences.
-
-1. For fixed `theta<1/3`,
+for fixed `theta<1/3`, while for fixed `theta<1/5` asymptotically almost every
+split pair has
 
 ```text
-average Delta_K(p)/K^2 <<_theta X^(3theta-1) -> 0.
+Delta_K(p)=0,
+E_+(A)=3(K-1)(K-2)
 ```
 
-2. Because `Delta_K(p)` is a nonnegative integer, for fixed `theta<1/5` the
-proportion of pairs with `Delta_K(p)>0` is
+exactly.
+
+## 5. Frobenius amplification over minimal finite extensions
+
+The split condition erases a useful symmetry. For arbitrary rational prime
+`p!=2,K`, put
 
 ```text
-O_theta(X^(5theta-1)) -> 0.
+f=ord_K(p),
+q=p^f,
+H=mu_K(F_q),
+A_(K,p)=c(H\{1}).
 ```
 
-Hence asymptotically almost every pair in that smaller range has the exact
-energy
+Frobenius multiplies every exponent in a collision tuple by `p mod K`. Every
+non-forced Frobenius orbit has size exactly `f`, hence
 
 ```text
-E_+(A)=3(K-1)(K-2).
+f | Delta_K^ext(p).
 ```
 
-See [`mathematics/cayley_jacobi_trace_average.md`](mathematics/cayley_jacobi_trace_average.md)
-and [`mathematics/cayley_exact_baseline_density.md`](mathematics/cayley_exact_baseline_density.md).
-
-## Full Jacobi trace identity
-
-Let `S=H^perp` and `J_S(q)` be the full annihilator twisted-Jacobi matrix in the
-maintained convention, with
+The collision-resultant valuation argument works at one prime ideal over `p`,
+so the same explicit `O(K^4)` weighted budget extends to all `p!=2,K`, and
 
 ```text
-M_S(q)=e_p(-q/2)J_S(q)/(p-1).
+Delta_K^ext(p)>0 iff p|Disc(S_K),
+Delta_K^ext(p)<=4v_p(Disc(S_K)).
 ```
 
-Then exactly
+For unrestricted prime pairs `K~X^theta,p~X`, PNT + Brun--Titchmarsh + the
+standard divisor bound show that for every fixed `theta<1/3`, asymptotically
+almost every pair has
+
+```text
+Delta_K^ext(p)=0,
+E_+(A_(K,p))=3(K-1)(K-2)
+```
+
+in the minimal extension. This does **not** improve the original split slice,
+because split primes have `f=1`.
+
+See
+[`mathematics/cayley_frobenius_amplification.md`](mathematics/cayley_frobenius_amplification.md).
+
+## 6. The exact trace-to-local-statistics closure map
+
+For an `N x N` unitary matrix `U`, partition-lattice Mobius inversion expresses
+each distinct-index exponential sum exactly as a finite combination of joint
+trace products
+
+```text
+prod_B Tr U^(sum_(a in B)m_a).
+```
+
+Poisson summation then converts microscopic factorial `k`-point statistics into
+weighted sums of these combinations. For pair correlation,
+
+```text
+C_(2,N)(U;phi)
+ =N^(-2) sum_m phihat(m/N)(|Tr U^m|^2-N).
+```
+
+Thus a band-limited microscopic test requires trace information through
+
+```text
+|m|=Theta(N),
+```
+
+the Heisenberg scale. The Fourier bridge is exact; the missing theorem is a
+weighted comparison of the **correct desymmetrized spectral-block** joint
+traces with the corresponding RMT ensemble. Removing the Fourier band-limit
+also requires a uniform high-frequency tail estimate.
+
+This is why a complete fourth-moment theorem would still not, by itself, prove
+BGS.
+
+See
+[`mathematics/trace_to_local_statistics_bridge.md`](mathematics/trace_to_local_statistics_bridge.md).
+
+## 7. Full Cayley/Jacobi trace identity
+
+For the normalized full annihilator twisted-Jacobi matrix
+
+```text
+M_S(q)=e_p(-q/2)J_S(q)/(p-1),
+```
+
+one has exactly
 
 ```text
 1_Ahat(r)=K Tr M_S(2r),
+sum_q |Tr M_S(q)|^2=p(K-1)/K^2,
+sum_q |Tr M_S(q)|^4=pE_+(A)/K^4.
 ```
 
-and therefore
+The double-average normalized fourth/second moment ratio tends to the
+real-Gaussian value `3`, but this is not a CLT and not a microscopic
+local-statistics statement.
 
-```text
-sum_q |Tr M_S(q)|^2 = p(K-1)/K^2,
-sum_q |Tr M_S(q)|^4 = pE_+(A)/K^4.
-```
+## 8. Finite certificates and adversarial controls
 
-The resulting double-average fourth-moment ratio tends to the real-Gaussian
-value `3`, but this is **not** a CLT and not a microscopic local-statistics
-statement.
+Promoted exact finite checks include:
 
-## Finite certificates and negative controls
-
-The repository retains exact finite certificates rather than treating them as
-proofs of asymptotic statements.  Promoted examples include:
-
-- `E_11={23,67,89}` and `E_13={53,79,131,157,313}` for additive exceptions;
-- `(p,K)=(461,23)` with energy `1190`, forced nonzero baseline `902`;
+- complete split exceptional sets `E_11={23,67,89}` and
+  `E_13={53,79,131,157,313}`;
+- `(p,K)=(461,23)` with energy `1190`, forced baseline `902`;
 - the Fibonacci slice `Res(Phi_K,X^2+3X+1)=F_K^2`;
-- the 28-digit witness `K=131`, `p=F_131`, with excess exactly `32`;
-- exact symbolic/finite anchors for the corrected elliptic `2p-8` spike.
+- `(K,p)=(131,F_131)` with excess exactly `32`;
+- `(K,p)=(29,728017)` and `(31,1042903)` with `p>K^4` but excess `48`,
+  falsifying a bare `p>K^4 => exact baseline` rule;
+- `(K,p)=(41,2908049)` with a row pair sharing two parameters, falsifying
+  `I_K(p)<=1`;
+- exact real-trace support anchors including
+  `Lambda'_(17,10)^(3)=103` and the extended
+  `Lambda'_(23,18)^(3)=47^3*139`;
+- minimal-extension controls
+  `(K,p,f,Delta)=(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)`,
+  with exact Frobenius orbit sizes.
 
-## Verification stack
+Finite computation proves only the stated finite assertions.
+
+## 9. Verification stack
 
 ![Verification stack](assets/verification_stack.svg)
 
-The maintained CI runs Python/SymPy exact regressions, independent C++20
+The maintained CI runs exact Python/SymPy regressions, independent C++20
 verifiers, all active Lean 4 modules, and a fresh TeX manuscript build.
-The current Python gates include the additive/product discriminants,
-ratio-orbit fourth-power structure and the corrected off/off spike theorem.
 
 Core local reproduction:
 
@@ -312,8 +379,13 @@ python computations/verification/cayley_jacobi_trace_regression.py
 python computations/verification/cayley_uniform_cutoff_regression.py
 python computations/verification/cayley_resultant_fibonacci.py
 python computations/verification/cayley_resultant_mass_budget.py
+python computations/verification/cayley_frobenius_extension.py
 python computations/verification/cayley_difference_discriminant.py
 python computations/verification/cayley_ratio_orbit_factorization.py
+python computations/verification/cayley_product_row_intersections.py
+python computations/verification/cayley_product_row_subresultants.py
+python computations/verification/cayley_product_row_coefficient_ideal.py
+python computations/verification/cayley_product_row_real_trace_ideal.py
 python computations/verification/cayley_product_discriminant.py
 python computations/verification/offoff_elliptic_spike_regression.py
 
@@ -328,34 +400,34 @@ cmake --build build -j
 cd formalization && lake build
 ```
 
+Use other languages/tools when they make a computation more reliable or more
+efficient; see the repository operating protocol above.
+
 ## Repository map
 
 ```text
 .
-├── assets/          diagrams
+├── assets/          reproducible diagrams / visual research artifacts
 ├── computations/   maintained Python/C++ verification and analysis
 ├── evidence/       promoted certificates, numerical records, reference inputs
-├── formalization/  active Lean 4 finite certificates and falsifiers
-├── literature/     source map and frontier audit
+├── formalization/  active Lean 4 certificates and falsifiers
+├── literature/     primary-source map and frontier audits
 ├── manuscript/     active TeX article and committed PDF
 ├── mathematics/    authoritative derivations and open obligations
-└── record/         claim ledger, retractions and research provenance
+└── record/         claim ledger, protocol, retractions and provenance
 ```
 
 ## What is still genuinely open
 
-The immediate mathematical closure target is the pointwise centered Cayley
-energy
+Two different scales now have precise closure conditions.
 
-```text
-E_+(c(H\{1}))=(K-1)^4/p+O(K^(2+o(1))).
-```
+**Arithmetic fourth-moment frontier.** Prove the sharp centered Cayley-energy
+bound for all intended split designs. The highest-value current route is exact
+split support through `Lambda'_K^(3)` plus cyclotomic-unit/Chebyshev structure.
 
-The current exact Fourier/character, shifted-product, torus--unipotent,
-discriminant, multiplicative-rigidity and double-average formulations all
-isolate this same gap; none currently removes the `K^(2/3)` pointwise loss.
+**Microscopic BGS frontier.** Prove the required joint trace estimates at
+Heisenberg scale for the correct desymmetrized spectral blocks and control the
+high-frequency tail when passing beyond band-limited tests.
 
-Even a complete fourth-moment theorem would not prove BGS.  A separate
-mean-spacing local eigenphase mechanism is still required.  The literature
-boundary is maintained in [`literature/bibliography.md`](literature/bibliography.md)
-and [`literature/frontier_2026.md`](literature/frontier_2026.md).
+Neither target has been silently weakened. Full microscopic BGS/GOE/COE
+universality remains **OPEN**.
