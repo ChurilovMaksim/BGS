@@ -84,6 +84,13 @@ assumed.
 | for every prime `K>=37`, writing `K=5r+s`, `s=1,2,3,4`, the inverse reduced-edge set contains an explicit pair of disjoint edges whose generators are associates by an explicit real cyclotomic unit; every split divisor of their common norm gives `I_-1>=4` at one embedding | **EXACT + FINITE-REGRESSION** | `cayley_inverse_structural_associates.md`; formal Laurent verifier |
 | step-two inverse edges satisfy `w_(a,a+2)=-tau v_(a+1)` and the boundary edge satisfies `w_(0,m-1)=-(tau-1)v_m`; these are unit edges and never contribute finite inverse support | **EXACT + FINITE-REGRESSION** | `cayley_inverse_associate_quotient.md`; exact polynomial anchors |
 | quotient inverse edges by `e~f iff w_e/w_f` is a unit; if a split prime divides no contraction `(w_e,w_f) cap Z` from two distinct nonunit associate classes, then all zero edges at one embedding lie in one class and `I_-1<=2B_K` | **EXACT + FINITE-REGRESSION** | `cayley_inverse_associate_quotient.md`; quotient verifier |
+| for every `d>=1`, inverse multiplicity satisfies `I_-1=2 deg gcd(E,O)=2 ord_(Z=0) rho(Z)` and `I_-1>=2d` iff some `2d` valid centred roots have `e_1=e_3=...=e_(2d-1)=0` | **EXACT + FINITE-REGRESSION** | `cayley_inverse_even_multiplicity_localization.md`; direct resultant/gcd regression |
+| inverse `I_-1>=6` is equivalently three disjoint zero edges, a six-root `e_1=e_3=e_5=0` certificate, `deg gcd(E,O)>=3`, or `rho_0=rho_1=rho_2=0` | **EXACT + FINITE-REGRESSION** | even-multiplicity theorem; exhaustive `K=29,p=59` six-subset control |
+| every valid centred inverse root has `x_a=(tau-2)lambda_a` with `lambda_a=v_a-1=eta_(a-1)eta_(a+1)` a real cyclotomic unit | **EXACT + FINITE-REGRESSION** | `cayley_inverse_cyclotomic_unit_normalization.md` |
+| a simultaneous `d`-edge inverse event is equivalent away from `K` to `d` Laurent relations at one primitive `K`-th root, each of coefficient `l1`-weight at most `8`; for `d=3` this is a three-generator weight-eight system | **EXACT + FINITE-REGRESSION** | unit-normalization note/verifier; cross-class and large structural controls |
+| after removing the polynomial gcd `G` of two inverse edge polynomials, same-embedding support at `q|p` implies `p` divides `|Res(C_K,G) Res(A,B)|`; hence `rad D_(K;e,f)` divides the radical of this reduced scalar filter | **EXACT + FINITE-REGRESSION** | `cayley_inverse_reduced_resultant_filter.md`; exact resultant anchors |
+| reciprocal lift `A~(z)=z^deg(A)A(z+z^-1)` satisfies `Res_z(A~,B~)=Res_T(A,B)^2` | **EXACT + FINITE-REGRESSION** | root-product proof + maintained resultant anchors |
+| every polynomial factor shared by two distinct valid inverse edge polynomials is torsion / real-cyclotomic | **OPEN** | no counterexample in the exact max-index-50 factor audit; not a growing-index theorem |
 | `(K,p)=(59,21713)` is a genuine nonassociate same-embedding event with `(w_(8,26),w_(9,10)) cap Z=21713 Z` | **FINITE-CERTIFICATE** | exact Hermite-normal-form contraction |
 | `(K,p)=(89,143207231)` is split inverse support with `I_-1=4` and `p=2.282469... K^4`; therefore a strict finite `p<=K^4` inverse ceiling is false | **FINITE-CERTIFICATE** | independent C++20 + exact reduced-edge norms / same-embedding Python |
 | `(K,p)=(229,966684838398077)` is split inverse support with exactly the structural zero edges `(44,91),(48,89)`, `I_-1=4`, and `p=351514.284... K^4` | **FINITE-CERTIFICATE** | exact resultant norms + complete same-embedding finite-field enumeration |
@@ -178,6 +185,79 @@ w_(a,b)=2-v_a-v_b,
 
 Thus the ubiquitous `K` factor is removed before the split-prime question and
 the remaining generators are sums of squares of real cyclotomic units.
+
+The inverse multiplicity filtration is exact at every even level. If
+
+```text
+F(X)=E(X^2)+X O(X^2),
+rho(Z)=Res_Y(E_Z,O_Z),
+```
+
+then
+
+```text
+I_-1=2 deg gcd(E,O)=2 ord_(Z=0) rho(Z).
+```
+
+Equivalently, `I_-1>=2d` iff some `2d` valid centred roots have every odd
+elementary symmetric function `e_1,e_3,...,e_(2d-1)` equal to zero. In
+particular the first threshold not already forced by universal size-two
+associate classes is
+
+```text
+I_-1>=6
+iff three disjoint zero edges
+iff six roots satisfy e_1=e_3=e_5=0
+iff rho_0=rho_1=rho_2=0.
+```
+
+There is also a rootwise cyclotomic-unit normalization
+
+```text
+x_a=(tau-2)lambda_a,
+lambda_a=v_a-1=eta_(a-1)eta_(a+1) in O^(+x).
+```
+
+For one edge, `w_(a,b)=-(lambda_a+lambda_b)`. More economically for sparse
+arithmetic, multiplying by the `K`-unit `tau-2` gives
+
+```text
+P_(a,b)=t_a+t_b-2tau,
+```
+
+which at a primitive `K`-th root is a Laurent relation of coefficient `l1`
+weight `8`. Row-subtracting one edge equation from the others keeps every
+additional generator at weight at most `8`. Thus `I_-1>=6` is a same-embedding
+three-generator weight-eight sparse system.
+
+For two edge polynomials before specializing `T=tau`, write
+
+```text
+G=gcd(w_e,w_f) in Z[T],
+w_e=G A,
+w_f=G B,
+gcd(A,B)=1.
+```
+
+Then same-embedding support at a prime ideal above `p` forces
+
+```text
+p | Res_T(C_K,G) Res_T(A,B).
+```
+
+Hence the exact cross-class contraction support is contained in the radical of
+this ordinary reduced resultant filter. The reciprocal change of variables
+`T=z+z^-1` loses no prime information: for reciprocal lifts one has exactly
+
+```text
+Res_z(A~,B~)=Res_T(A,B)^2.
+```
+
+Finite exhaustive audits support, but do not prove, the stronger structural
+claim that every polynomial factor shared by two distinct inverse edges is a
+torsion / real-cyclotomic factor. The development-scale max-index-50 audit is
+recorded in `evidence/cayley_inverse_torsion_gcd_audit_20260905.txt` and is not
+promoted to a theorem.
 
 There is now an additional characteristic-zero structure. For every prime
 `K>=37`, one explicit pair of disjoint inverse edges (depending only on
@@ -284,6 +364,9 @@ arbitrary Schwartz tests.
 - `(K,p)=(229,966684838398077)` has exactly the structural inverse zero edges `(44,91),(48,89)` in one embedding, so `I_-1=4`, while `p/K^4=351514.284...`.
 - at the `K=89` witness, `|N(w_(16,35))|=|N(w_(20,33))|=143207231`, and one split embedding has exactly those two zero pair sums.
 - at `K=229`, `|N(w_(44,91))|=|N(w_(48,89))|=33893*966684838398077`; both factors are split modulo `229`.
+- `K=29,p=59` has exactly three inverse zero edges at the maximal embedding; all `3003` six-subsets were checked and exactly one satisfies `e_1=e_3=e_5=0`.
+- the `K=229,p=966684838398077` structural weight-eight edge relations are indecomposable modulo `p`: no nonempty proper submultiset of the corresponding eight `2K`-th roots vanishes.
+- the exact max-index-50 shared-factor audit factored `1225` edge polynomials over `Z[T]`; all `24` irreducible factors repeated across distinct edges had cyclotomic reciprocal lifts (largest encountered cyclotomic order `25`). This is finite evidence only.
 - small exact associate-class audits through the recorded conductors find all observed nonunit classes of size `2`, but the four `K mod 5` structural families are not complete; no general `B_K<=2` theorem is claimed.
 - real-trace anchors include `Lambda'_(13,12)=5^2`, `Lambda'_(17,10)=103`, `Lambda'_(23,18)=47^3*139`.
 - inverse reflection anchors include `Xi'_13=5`, `Xi'_19=37`, `Xi'_23=47*137`.
@@ -305,6 +388,9 @@ valuations.
 - independent C++20 `K=89` witness verification checks primality, exact subgroup order, distinct trace classes, the two zero pair sums, and the quartic `e_1=e_3=0` certificate.
 - the inverse structural-associate verifier checks all four `K mod 5` Laurent identities formally in the affine exponent `r`, exact `K=89`/`K=229` norms, and the complete `K=229` zero-edge witness.
 - the inverse associate-quotient verifier checks the unit-edge skeleton, a noncanonical `K=31` associate class, the exact `K=59` cross-class contraction, small-`p` multiplicity controls, and a large-`p` `K=139` structural control.
+- the inverse even-multiplicity verifier checks gcd degree, translated-resultant order, odd symmetric invariants, and exhaustive six-subset localization at `K=29,p=59`.
+- the inverse cyclotomic-unit verifier checks exact root normalization, weight-eight trace generators, cross-class/associate anchors, and the `K=229` indecomposability control.
+- the inverse reduced-resultant verifier exhausts `K=31,37,41,43` polynomial gcds, checks support-free gcd evaluation, exact cross-class/structural resultants, and the reciprocal square identity.
 - exact reduced-edge support sweeps completed through the explicitly recorded prime `K=101`; a later interrupted symbolic batch contributes no promoted data.
 - minimal-extension controls remain
   `(K,p,f,Delta)=(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)`.
@@ -316,10 +402,12 @@ Finite computation proves only the displayed finite statements.
 - finite regression is not a growing-parameter proof;
 - equal split support does not imply equality of `Lambda`, `Omega`, `Xi`, `Theta`, or the local ideal products as integers/ideals/valuations;
 - `gcd(N(w_e),N(w_f))` does not imply one prime ideal divides both edge elements; same-embedding verification is load-bearing;
+- the reduced ordinary resultant is a one-way rational support filter; its extra prime factors need not correspond to the distinguished `K`-cyclotomic embedding;
 - for a proved structural associate pair, the same-ideal implication is exact because `(w_e)=(w_f)` as principal ideals, not because their rational norms happen to agree;
-- the inverse perfect-square or quartic factorization does not by itself bound the largest supported split prime;
+- the inverse perfect-square, quartic, weight-eight, or reduced-resultant reformulations do not by themselves bound the largest supported split prime;
 - the `K=89` and `K=229` witnesses refute strict finite `K^4` ceilings but do not refute `K^(4+o(1))`;
 - the four structural associate families are proved, but completeness of all unit-associate reduced-edge pairs is **not** claimed;
+- the torsion classification of every shared edge-polynomial factor is **OPEN** despite the max-index-50 exact audit;
 - bounded inverse multiplicity is not asserted uniformly over small split primes; every such target is scoped to the explicit intended regime `K=o(p^(1/4))`;
 - the inverse quotient reduction does not solve the other normalized ratio classes;
 - Dvornicich--Zannier and Hoechsmann remain unmatched literature leads until their exact hypotheses are verified for the one-prime-ideal / multiplicity setting;
