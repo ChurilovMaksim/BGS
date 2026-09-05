@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - manuscript/arithmetic_cat_map_moments.tex
+      - manuscript/**
   workflow_dispatch:
 
 concurrency:
