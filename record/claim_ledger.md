@@ -81,8 +81,11 @@ assumed.
 | reduced inverse edge equation `2tau-t_a-t_b=(tau-2)(2-v_a-v_b)`, where `v_n=((t_n-2)/(tau-2))` is a square of a real cyclotomic unit | **EXACT** | quartic-localization note |
 | products of local two-generator ideals `(w_e,w_f)` over disjoint edges, equivalently quartic `(e_1,e_3)` ideals, have the same split inverse order-three support as `Theta/Xi` | **EXACT + FINITE-REGRESSION** | quartic-localization theorem + exact finite sweep |
 | rational `gcd(N(w_e),N(w_f))` is only a candidate filter; same prime ideal / embedding is required | **EXACT + FINITE-CERTIFICATE** | ideal theory + `K=41,p=2908049` negative control |
+| for every prime `K>=37`, writing `K=5r+s`, `s=1,2,3,4`, the inverse reduced-edge set contains an explicit pair of disjoint edges whose generators are associates by an explicit real cyclotomic unit; every split divisor of their common norm gives `I_-1>=4` at one embedding | **EXACT + FINITE-REGRESSION** | `cayley_inverse_structural_associates.md`; formal Laurent verifier |
 | `(K,p)=(89,143207231)` is split inverse support with `I_-1=4` and `p=2.282469... K^4`; therefore a strict finite `p<=K^4` inverse ceiling is false | **FINITE-CERTIFICATE** | independent C++20 + exact reduced-edge norms / same-embedding Python |
-| polynomial largest-split-divisor bound such as `P_split^+(Lambda'_K^(3))<=K^(4+o(1))` | **OPEN** | sufficient pointwise arithmetic closure target; not refuted by the K=89 finite factor |
+| `(K,p)=(229,966684838398077)` is split inverse support with exactly the structural zero edges `(44,91),(48,89)`, `I_-1=4`, and `p=351514.284... K^4` | **FINITE-CERTIFICATE** | exact resultant norms + complete same-embedding finite-field enumeration |
+| polynomial largest-split-divisor bound such as `P_split^+(Lambda'_K^(3))<=K^(4+o(1))` | **OPEN** | correct sufficient route to force `I<=2`, but structurally overstrong in light of universal inverse associate pairs |
+| uniform same-embedding row multiplicity `I_K(p)=K^o(1)` (ideally `O(1)`) on the intended split range | **OPEN** | sufficient via `Delta<=4I_K(K-1)(K-2)` for near-quadratic (respectively quadratic) Cayley excess |
 | weighted split-prime excess budget is explicit `O(K^4)` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_mass_budget.md` |
 | canonical difference discriminant classification and ratio-orbit fourth-power structure | **EXACT + FINITE-REGRESSION** | difference-discriminant / ratio-orbit notes |
 | characteristic-zero multiplicative Cayley rigidity and product discriminant classification | **EXACT + FINITE-REGRESSION** | multiplicative notes/verifiers |
@@ -97,7 +100,7 @@ assumed.
 | exact Poisson/Fourier trace-to-microscopic-statistics identity | **EXACT** | trace-to-local note |
 | weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations | **EXACT** | deterministic comparison theorem |
 | uniform high-frequency tail needed to remove Fourier band-limit | **OPEN** | trace-to-local note |
-| sharp centered pointwise Cayley target for every intended split design | **OPEN** | closed outside exact order-three support only |
+| sharp centered pointwise Cayley target for every intended split design | **OPEN** | active route is multiplicity control rather than eliminating every order-three prime |
 | Heisenberg-scale trace estimates for required desymmetrized spectral blocks | **OPEN** | deterministic bridge closed; arithmetic/spectral estimate not proved |
 | microscopic BGS/GOE/COE local eigenphase law | **OPEN** | no current theorem |
 
@@ -171,18 +174,36 @@ w_(a,b)=2-v_a-v_b,
 Thus the ubiquitous `K` factor is removed before the split-prime question and
 the remaining generators are sums of squares of real cyclotomic units.
 
-The next arithmetic closure target is not another individual height bound. It
-is a uniform theorem controlling the **common split prime divisors** of these
-small scalar/local systems strongly enough to imply, for example,
+There is now an additional characteristic-zero structure.  For every prime
+`K>=37`, one explicit pair of disjoint inverse edges (depending only on
+`K mod 5`) has reduced generators satisfying
 
 ```text
-P_split^+(Lambda'_K^(3))<=K^(4+o(1)).
+w_e = epsilon_K w_f,
+epsilon_K in O^(+x),
 ```
 
+with `epsilon_K` an explicit quotient of four real cyclotomic units.  Hence a
+split prime ideal dividing one generator automatically divides the other and
+creates `I_-1>=4`.  Literal elimination of all order-three inverse support is
+therefore a structurally overstrong objective.
+
+The active pointwise arithmetic closure target is **multiplicity**, not mere
+support:
+
+```text
+I_K(p)=K^o(1),     ideally I_K(p)=O(1).                  (*)
+```
+
+By the exact row-energy inequality this yields respectively
+`Delta_K(p)=K^(2+o(1))` or `Delta_K(p)=O(K^2)`.  The former
+largest-split-divisor target remains a logically valid sufficient route to the
+stronger statement `I<=2`, but it is no longer the preferred mechanism.
+
 The existing per-ratio logarithmic mass `O(K^3)` and global `O(K^4)` mass are
-not polynomial largest-prime bounds. The exact `K=89` inverse witness has a
-supported prime `p=143207231>89^4`, so exponent four is already reached up to a
-constant factor in finite data; this does not settle the `K^(4+o(1))` target.
+not multiplicity bounds.  The exact `K=89` and `K=229` structural witnesses
+show that split order-three support can occur well beyond a strict finite
+`K^4` ceiling; neither finite witness settles any `K^(4+o(1))` asymptotic.
 
 ## Minimal-extension / Frobenius extension
 
@@ -220,7 +241,9 @@ arbitrary Schwartz tests.
 - `(K,p)=(41,2908049)` has a row pair with two common parameters: `I_K<=1` is false. The same rational prime is also a useful inverse norm-gcd false positive: rational edge norms can share `p` without a common embedding prime.
 - `(K,p)=(31,1303)` has inverse-row intersection size `4`.
 - `(K,p)=(89,143207231)` has inverse-row intersection size `4` with `p/K^4=2.282469...`; strict finite `p<=K^4` inverse support is false.
+- `(K,p)=(229,966684838398077)` has exactly the structural inverse zero edges `(44,91),(48,89)` in one embedding, so `I_-1=4`, while `p/K^4=351514.284...`.
 - at the `K=89` witness, `|N(w_(16,35))|=|N(w_(20,33))|=143207231`, and one split embedding has exactly those two zero pair sums.
+- at `K=229`, `|N(w_(44,91))|=|N(w_(48,89))|=33893*966684838398077`; both factors are split modulo `229`.
 - real-trace anchors include `Lambda'_(13,12)=5^2`, `Lambda'_(17,10)=103`, `Lambda'_(23,18)=47^3*139`.
 - inverse reflection anchors include `Xi'_13=5`, `Xi'_19=37`, `Xi'_23=47*137`.
 - two-scalar inverse anchors are
@@ -239,6 +262,7 @@ valuations.
 - independent C++20 characteristic-zero intercept regression reaches prime
   `K=809` in the recorded extended run with maximum fibre size `2` throughout.
 - independent C++20 `K=89` witness verification checks primality, exact subgroup order, distinct trace classes, the two zero pair sums, and the quartic `e_1=e_3=0` certificate.
+- the inverse structural-associate verifier checks all four `K mod 5` Laurent identities formally in the affine exponent `r`, exact `K=89`/`K=229` norms, and the complete `K=229` zero-edge witness.
 - exact reduced-edge support sweeps completed through the explicitly recorded prime `K=101`; a later interrupted symbolic batch contributes no promoted data.
 - minimal-extension controls remain
   `(K,p,f,Delta)=(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)`.
@@ -250,8 +274,10 @@ Finite computation proves only the displayed finite statements.
 - finite regression is not a growing-parameter proof;
 - equal split support does not imply equality of `Lambda`, `Omega`, `Xi`, `Theta`, or the local ideal products as integers/ideals/valuations;
 - `gcd(N(w_e),N(w_f))` does not imply one prime ideal divides both edge elements; same-embedding verification is load-bearing;
+- for the structural associate pair, the same-ideal implication is exact because `(w_e)=(w_f)` as principal ideals, not because their rational norms happen to agree;
 - the inverse perfect-square or quartic factorization does not by itself bound the largest supported split prime;
-- the `K=89` witness refutes a strict finite `K^4` ceiling but does not refute `K^(4+o(1))`;
+- the `K=89` and `K=229` witnesses refute strict finite `K^4` ceilings but do not refute `K^(4+o(1))`;
+- the four structural associate families are proved, but completeness of all unit-associate reduced-edge pairs is **not** claimed;
 - Dvornicich--Zannier remains an unmatched literature lead until its exact congruence hypotheses are verified for the one-prime-ideal setting;
 - fourth moments/kurtosis are not a CLT or local eigenvalue law;
 - the ordinary full Jacobi trace is not a parity/desymmetrized spectral block;
