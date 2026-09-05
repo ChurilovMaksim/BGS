@@ -33,13 +33,19 @@ add_executable(
   computations/cpp/cayley_direct_energy_verifier.cpp
 )
 
+add_executable(
+  cayley_trace_intercept_rigidity
+  computations/cpp/cayley_trace_intercept_rigidity.cpp
+)
+
 if (MSVC)
   foreach(target
       fourth_moment_pair_key_verifier
       cat_map_order
       cayley_energy_verifier
       cayley_fibonacci_verifier
-      cayley_direct_energy_verifier)
+      cayley_direct_energy_verifier
+      cayley_trace_intercept_rigidity)
     target_compile_options(${target} PRIVATE /W4)
   endforeach()
 else()
@@ -48,7 +54,8 @@ else()
       cat_map_order
       cayley_energy_verifier
       cayley_fibonacci_verifier
-      cayley_direct_energy_verifier)
+      cayley_direct_energy_verifier
+      cayley_trace_intercept_rigidity)
     target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
   endforeach()
 endif()
