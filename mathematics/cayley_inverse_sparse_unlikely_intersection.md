@@ -13,7 +13,7 @@ exponent families.
 The external input is Theorem 3.1 of Amoroso--Leroux--Sombra,
 *Overdetermined systems of sparse polynomial equations*, arXiv:1307.5788
 (the theorem is stated there in the refined Bombieri--Masser--Zannier form).
-Its load-bearing consequence is recalled explicitly in Section 3.
+Its load-bearing consequence is recalled explicitly in Section 4.
 
 ## 1. The inverse edge equation in one multiplicative parameter
 
@@ -26,7 +26,7 @@ P_(a,b)(T)=t_a(T)+t_b(T)-2T=-(T-2)w_(a,b)(T),            (1)
 where
 
 ```text
-t_n(z+z^-1)=z^n+z^-n.                                    (2)
+t_n(z+z^-1)=z^n+z^-n.                                   (2)
 ```
 
 Hence a nonzero complex number `alpha` satisfies
@@ -39,7 +39,7 @@ if and only if
 
 ```text
 alpha^a+alpha^-a+alpha^b+alpha^-b
- =2(alpha+alpha^-1).                                      (4)
+ =2(alpha+alpha^-1).                                     (4)
 ```
 
 A common irreducible factor of `w_(a,b)` and `w_(c,d)` is called **torsion**
@@ -125,18 +125,40 @@ Work in the Laurent UFD
 R=Q[X^+-1,Y^+-1,U^+-1,V^+-1,Z^+-1].                     (13)
 ```
 
-The two Laurent polynomials in (9) are coprime.  Indeed, regard the ring as a
-Laurent polynomial ring in `X` over the fraction field of the other variables.
-Then `L_1` is nonconstant in `X`, whereas `L_2` is a nonzero constant in `X`,
-so their gcd in that fraction-field Laurent ring is `1`; Gauss's lemma gives
-coprimality in `R`.
+The two Laurent polynomials in (9) are coprime.  To see this without losing
+coefficient-ring factors under localization, write
+
+```text
+S=Q[Y^+-1,U^+-1,V^+-1,Z^+-1],
+R=S[X^+-1].                                               (14)
+```
+
+The `X`-width of a nonzero Laurent polynomial is the difference between its
+largest and smallest `X`-exponents.  Width is additive under multiplication in
+the domain `S[X^+-1]`.  Since `L_2` has `X`-width zero, every divisor of `L_2`
+has `X`-width zero and hence, up to a monomial unit in `X`, lies in `S`.
+
+But
+
+```text
+L_1=X+X^-1+C,    C=Y+Y^-1-2Z-2Z^-1.                     (15)
+```
+
+If a nonunit `H in S` divided `L_1`, then after multiplying by the unit `X`,
+`H` would divide every coefficient of
+
+```text
+X L_1=X^2+C X+1.                                         (16)
+```
+
+In particular `H|1`, a contradiction.  Thus `L_1,L_2` are coprime in `R`.
 
 Therefore no height-one prime of the UFD `R` contains both `L_1,L_2`.  Every
 minimal prime over `(L_1,L_2)` has height at least `2`.  Krull's principal ideal
 theorem gives height at most `2`.  The ideal is proper because
 
 ```text
-(1,1,1,1,1) in W.                                       (14)
+(1,1,1,1,1) in W.                                       (17)
 ```
 
 Hence every component has height, equivalently codimension, exactly `2`. `□`
@@ -160,7 +182,7 @@ the constants is asserted in this project.
 Since `W` has finitely many irreducible components, Lemma 1 lets us set
 
 ```text
-C_int=max_C c_C,                                         (15)
+C_int=max_C c_C,                                         (18)
 ```
 
 where the maximum runs over those components.
@@ -173,7 +195,7 @@ Let
 
 ```text
 2<=a<b,
-2<=c<d,                                                   (16)
+2<=c<d,                                                   (19)
 ```
 
 and suppose `w_(a,b)(T)` and `w_(c,d)(T)` have a common non-torsion irreducible
@@ -183,13 +205,13 @@ Then there exists
 
 ```text
 (r,s,t,u,v) in Z^5 \ {0},
-max(|r|,|s|,|t|,|u|,|v|) <= C_int,                       (17)
+max(|r|,|s|,|t|,|u|,|v|) <= C_int,                       (20)
 ```
 
 such that
 
 ```text
-r a+s b+t c+u d+v=0.                                     (18)
+r a+s b+t c+u d+v=0.                                     (21)
 ```
 
 The constant `C_int` is independent of `a,b,c,d` and of the cyclotomic
@@ -200,7 +222,7 @@ conductor `K` in which the edge indices may later be used.
 Choose a non-torsion reciprocal root `alpha` as in (6)--(7).  By (12),
 
 ```text
-(alpha^a,alpha^b,alpha^c,alpha^d,alpha) in W.             (19)
+(alpha^a,alpha^b,alpha^c,alpha^d,alpha) in W.             (22)
 ```
 
 It lies in one irreducible component `C` of `W`, and Lemma 1 gives
@@ -208,17 +230,17 @@ It lies in one irreducible component `C` of `W`, and Lemma 1 gives
 `1` and exponent vector
 
 ```text
-(a,b,c,d,1).                                              (20)
+(a,b,c,d,1).                                              (23)
 ```
 
-We obtain a nonzero integer vector as in (17) for which
+We obtain a nonzero integer vector as in (20) for which
 
 ```text
-alpha^(r a+s b+t c+u d+v)=1.                             (21)
+alpha^(r a+s b+t c+u d+v)=1.                             (24)
 ```
 
-Because `alpha` is not a root of unity, the exponent in (21) is zero.  This is
-(18). `□`
+Because `alpha` is not a root of unity, the exponent in (24) is zero.  This is
+(21). `□`
 
 ### Corollary 3 (finite affine-family reduction)
 
@@ -227,7 +249,7 @@ finite union
 
 ```text
 union_(0!=q in Z^5, ||q||_infinity<=C_int)
-  { (a,b,c,d): q_1 a+q_2 b+q_3 c+q_4 d+q_5=0 }.          (22)
+  { (a,b,c,d): q_1 a+q_2 b+q_3 c+q_4 d+q_5=0 }.          (25)
 ```
 
 Thus the non-torsion shared-factor problem is no longer a four-parameter
@@ -252,32 +274,34 @@ Use the fixed variety in `G_m^4` with coordinates `(Y,U,V,Z)`:
 
 ```text
 L_0=2+Y+Y^-1-2Z-2Z^-1,
-L_2=U+U^-1+V+V^-1-2Z-2Z^-1.                              (23)
+L_2=U+U^-1+V+V^-1-2Z-2Z^-1.                              (26)
 ```
 
-Exactly the argument of Lemma 1 shows that every irreducible component of
+The proof of Lemma 1 applies verbatim with `Y` as the distinguished variable:
+`L_2` has zero `Y`-width, while `Y L_0` has leading and constant coefficients
+`1`.  Hence every irreducible component of
 
 ```text
-W_0=V(L_0,L_2)                                           (24)
+W_0=V(L_0,L_2)                                           (27)
 ```
 
 has codimension `2`.  Applying the same external theorem to
 
 ```text
-x |-> (x^b,x^c,x^d,x)                                    (25)
+x |-> (x^b,x^c,x^d,x)                                    (28)
 ```
 
 gives an absolute constant `C_0` and a nonzero bounded vector
 
 ```text
 (r,s,t,v) in Z^4,
-max |.| <= C_0,                                           (26)
+max |.| <= C_0,                                           (29)
 ```
 
 such that every non-torsion common factor forces
 
 ```text
-r b+s c+t d+v=0.                                         (27)
+r b+s c+t d+v=0.                                         (30)
 ```
 
 The case in which the second edge contains `0` is symmetric.
@@ -287,7 +311,7 @@ The case in which the second edge contains `0` is symmetric.
 The open torsion classification
 
 ```text
-all shared inverse edge-polynomial factors are torsion                 (28)
+all shared inverse edge-polynomial factors are torsion                 (31)
 ```
 
 is now reduced to the following sharper task:
