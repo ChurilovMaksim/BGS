@@ -1,0 +1,120 @@
+Inverse-row universal structural associates — evidence record
+Date: 2026-09-05
+Scope: exact finite computation / regression only where explicitly stated.
+Universal proofs are in mathematics/cayley_inverse_structural_associates.md.
+
+1. Formal Laurent verifier
+
+Source:
+  computations/verification/cayley_inverse_structural_associates.py
+
+The verifier represents a monomial y^(a*r+b) by the exact integer exponent
+pair (a,b).  It expands, for each s=1,2,3,4, the cleared numerator N_s of the
+claimed associate identity and verifies as an exact dictionary equality
+
+  N_s = (y^(10r+2s)-1) Q_s.
+
+Thus the check is symbolic in r; it is not a finite list of sampled conductors.
+A successful local development run of the identical script content returned
+exit code 0 with output:
+
+  s=1: N_s=(y^(2K)-1)Q_s formal affine-exponent identity: OK
+  s=2: N_s=(y^(2K)-1)Q_s formal affine-exponent identity: OK
+  s=3: N_s=(y^(2K)-1)Q_s formal affine-exponent identity: OK
+  s=4: N_s=(y^(2K)-1)Q_s formal affine-exponent identity: OK
+  K=89 structural norm=143207231: OK
+  K=229 structural norm=32763849227826023761=33893*966684838398077: OK
+  PASS K=229 p=966684838398077 emb=91 p/K^4=351514.284178626898 zero_edges=(44,91),(48,89) I_inverse=4
+  cayley inverse structural associates regression: OK
+
+A host spreadsheet-runtime warmup warning occurred after that subprocess run;
+the verifier itself returned rc=0 and produced the output above.  The warning
+is unrelated to the mathematical script and is not used as evidence.
+
+2. Exact K=229 norm certificate
+
+For K=229, r=45, s=4, the structural edges are
+
+  e=(44,91),
+  f=(48,89).
+
+Using the exact maximal-real cyclotomic polynomial and integer resultants, the
+verifier computes
+
+  |N(w_(44,91))|
+  = |N(w_(48,89))|
+  = 32763849227826023761
+  = 33893 * 966684838398077.
+
+Both factors were checked prime by SymPy and satisfy
+
+  33893 mod 229 = 1,
+  966684838398077 mod 229 = 1.
+
+As an independent primality control during development, the standard
+deterministic 64-bit Miller--Rabin basis
+
+  2, 325, 9375, 28178, 450775, 9780504, 1795265022
+
+also classified both factors as prime.  This second check is a finite software
+control, not a new theorem in the repository.
+
+3. Exact same-embedding K=229 witness
+
+Take
+
+  p=966684838398077,
+  h=667250341372998.
+
+The finite-field verifier checks
+
+  p is prime,
+  p == 1 mod 229,
+  h != 1,
+  h^229 == 1 mod p.
+
+Since 229 is prime, h has exact order 229.  The real trace classes are all
+distinct.  After deleting the invalid [1] trace class, complete enumeration of
+all unordered centred pair sums in this embedding gives exactly
+
+  (44,91),
+  (48,89).
+
+Therefore
+
+  I_inverse = 2*2 = 4.
+
+Exact integer comparison gives
+
+  229^4 = 2750058481,
+  p / 229^4 = 351514.2841786269...
+
+Thus a strict universal finite ceiling p<=K^4 for inverse order-three support
+is false by a factor exceeding 3.5e5 at this explicit parameter.
+
+This does NOT by itself refute any asymptotic assertion of the form
+
+  P_split^+(...) <= K^(4+o(1)).
+
+4. Structural interpretation
+
+The common-norm equality is not the reason the same embedding works.  The
+mathematics note proves the stronger characteristic-zero statement
+
+  w_e = epsilon_K w_f
+
+with epsilon_K an explicit real cyclotomic unit, hence
+
+  (w_e)=(w_f)
+
+as principal ideals.  Therefore every split prime ideal dividing one
+structural edge generator divides the other automatically.  This is exactly
+what fails for generic rational norm-gcd candidates such as the maintained
+K=41,p=2908049 negative control.
+
+NON-CLAIMS
+
+- No completeness theorem for all associate reduced-edge pairs is claimed.
+- No uniform bound on I_K(p) is proved.
+- No asymptotic largest-prime theorem is proved or refuted by the K=229 finite witness.
+- No microscopic BGS/GOE/COE conclusion follows from these arithmetic identities.
