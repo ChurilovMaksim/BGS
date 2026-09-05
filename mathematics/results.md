@@ -90,8 +90,8 @@ The target for every intended split design is
 E_+(A)=(K-1)^4/p+O(K^(2+o(1))).
 ```
 
-It is now proved on the explicit subfamily `p does not divide G'_K^(3)` below;
-the higher-row exceptional support remains open.
+It is now proved on the explicit subfamily `p does not divide D'_K^(3)` below;
+the coefficient-ideal split support remains open.
 
 See [`cayley_centered_energy.md`](cayley_centered_energy.md).
 
@@ -171,10 +171,10 @@ beta=2(w/q-q/w)/(w-w^-1).
 
 See [`cayley_product_row_intersections.md`](cayley_product_row_intersections.md).
 
-## 7. Order-three product-row subresultant theorem — EXACT + EXTERNAL-THEOREM
+## 7. Canonical order-three coefficient-ideal theorem — EXACT + EXTERNAL-THEOREM
 
-For odd prime `K`, let `zeta` be a primitive `K`-th root of unity and
-`m=(K-1)/2`. A noncentral product row indexed by `i` has homogeneous form
+For odd prime `K`, let `zeta` be primitive and `L=Q(zeta)`. A noncentral
+product row indexed by `i` has homogeneous form
 
 ```text
 R_i(U,V)=prod_a(D_(i,a)U-N_iV),
@@ -182,37 +182,32 @@ N_i=1-zeta^(2i),
 D_(i,a)=zeta^i(zeta^a+zeta^(-a))-2,
 ```
 
-where the invalid trace class `a=+-i` is omitted. Its projective roots are
-exactly the valid nonzero Cayley parameters in the coordinate
-`mu=t/(2-t)`; `t=2` is the point at infinity.
+with the invalid trace class omitted. Galois scaling normalizes a distinct row
+pair `(i,j)` to `(1,r)`.
 
-Galois scaling normalizes a distinct row pair `(i,j)` to `(1,r)` with `r=j/i`.
-Let `S_0,S_1,S_2` be the first three fixed-degree subresultants of the two row
-polynomials and define
+Let `S_0,S_1,S_2` be the first three fixed-degree homogeneous subresultants and
+let
 
 ```text
-G'_(K,r)^(3)
+J_(K,r)^(3)=(all coefficients of S_0,S_1,S_2) subset O_L,
+J_(K,r)^(3) cap Z = D_(K,r)^(3) Z.
 ```
 
-as the gcd of the absolute cyclotomic norms of all their nonzero coefficients,
-after removing factors `2` and `K`. Let
+The positive integer `D_(K,r)^(3)` is exactly the additive exponent of the
+finite group `O_L/J_(K,r)^(3)`. For every rational prime `p`,
 
 ```text
-G'_K^(3)=prod_[r]G'_(K,r)^(3)
+p|D_(K,r)^(3)
+iff
+there exists P|p with deg gcd(R_1,R_r mod P)>=3.
 ```
 
-over unordered ratio classes.
-
-Brown--Traub's subresultant theorem yields the exact implication
-
-```text
-I_(i,j)(p)>=3  ==>  p|G'_(K,r)^(3).
-```
-
-Therefore every split prime satisfying
+The equivalence uses the classical Brown--Traub fixed-degree subresultant
+criterion. After removing factors `2,K` and multiplying over ratio classes,
+write the resulting integer as `D'_K^(3)`. Then every split prime with
 
 ```text
-p does not divide G'_K^(3)
+p does not divide D'_K^(3)
 ```
 
 obeys
@@ -226,27 +221,62 @@ E_+(A)<=11(K-1)(K-2).
 So the pointwise quadratic Cayley-energy scale is already closed on this
 explicit arithmetic subfamily.
 
+The earlier norm-gcd obstruction `G_(K,r)^(3)` remains valid, but it can mix
+different prime ideals above the same rational prime. The coefficient ideal is
+strictly sharper at the level of prime support:
+
+```text
+rad(D_(K,r)^(3)) | rad(G_(K,r)^(3)).
+```
+
+After normalizing `w=zeta`, `q=zeta^r` and putting
+`tau=zeta+zeta^(-1)`, the affine coefficients have the exact Chebyshev form
+
+```text
+alpha=U_(r-1)(tau/2),
+beta=-2U_(r-2)(tau/2).
+```
+
+A common trace pair satisfies
+
+```text
+s_r t_a-s_1 t_b-2s_(r-1)=0,
+s_n=zeta^n-zeta^(-n),
+```
+
+and the corresponding Laurent polynomial has a universal `(X-1)^3` factor.
+Three row intersections therefore impose two simultaneous congruences among
+products of cyclotomic units.
+
 Exact CI anchors include
 
 ```text
-G'_(7,2)^(3)=1,
-G'_(11,2)^(3)=1,
-G'_(13,3)^(3)=3^3,
-G'_(13,12)^(3)=5^8,
-G'_(17,10)^(3)=103^2.
+D'_(7,2)^(3)=1,
+D'_(11,2)^(3)=1,
+D'_(13,3)^(3)=3,
+D'_(13,12)^(3)=5^2,
+D'_(17,10)^(3)=103,
+```
+
+and a slower extended computation gives
+
+```text
+D'_(23,18)^(3)=47^3*139.
 ```
 
 The remaining growing-`K` problem is to control eligible split prime divisors of
-`G'_K^(3)`. A bound
+`D'_K^(3)`. A bound
 
 ```text
-P_split^+(G'_K^(3))<=K^(4+o(1))
+P_split^+(D'_K^(3))<=K^(4+o(1))
 ```
 
 would close the pointwise Cayley-energy target throughout `K=o(p^(1/4))`.
 This divisor bound is **OPEN**.
 
-See [`cayley_product_row_subresultants.md`](cayley_product_row_subresultants.md).
+See [`cayley_product_row_coefficient_ideal.md`](cayley_product_row_coefficient_ideal.md)
+and the predecessor
+[`cayley_product_row_subresultants.md`](cayley_product_row_subresultants.md).
 
 ## 8. Square resultants and Fibonacci obstruction — EXACT
 
@@ -417,9 +447,14 @@ Promoted checks include:
   Cayley excess `48`, falsifying any bare `p>K^4 => exact baseline` rule;
 - `(K,p)=(41,2908049)` with a row pair sharing two parameters, falsifying the
   exploratory `I_K(p)<=1` claim;
-- the order-three subresultant anchors above. A slower independent check gives
-  `G'_(23,18)^(3)=47^20*139^2`, with row intersections of sizes `5` at `p=47`
-  and `3` at `p=139`.
+- coefficient-ideal anchors above. The split prime `103` is realized by a
+  three-intersection row pair at `K=17`; for `K=23,r=18`, intersections have
+  sizes `5` at `p=47` and `3` at `p=139`.
+
+The older norm-gcd values for the last examples are much larger,
+`103^2` and `47^20*139^2`, respectively; this is a direct finite demonstration
+that the coefficient ideal removes valuation inflation without weakening the
+realized split-prime mechanism.
 
 Finite computation proves only these finite assertions.
 
@@ -435,13 +470,13 @@ extrapolations, the former spike-free off/off theorem and the residual-height
 ## 19. Microscopic BGS/GOE — OPEN
 
 No theorem in this repository proves a mean-spacing local eigenphase law. Even
-closing the higher-row divisor problem and the complete fourth-moment layer
-would leave a separate local-statistics/comparison problem.
+closing the coefficient-ideal split-divisor problem and the complete
+fourth-moment layer would leave a separate local-statistics/comparison problem.
 
 The current frontier is
 
 ```text
-split support of G'_K^(3)
+split support of D'_K^(3)
         -> pointwise centered Cayley energy for all intended designs
         -> complete fourth-moment control
         -> new local-law/comparison mechanism
