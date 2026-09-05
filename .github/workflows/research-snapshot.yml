@@ -33,4 +33,4 @@ jobs:
           path: ${{ runner.temp }}/research-snapshot/
           retention-days: 3
           if-no-files-found: error
-# Snapshot protocol v2: magnetic and Pell spectral research state.
+# Snapshot protocol v3: exact source checkpoint for the Floquet continuation.
