@@ -108,6 +108,9 @@ jobs:
       - name: Regress inverse quartic reduced edge support
         run: python computations/verification/cayley_inverse_edge_norm_support.py
 
+      - name: Regress inverse structural associates
+        run: python computations/verification/cayley_inverse_structural_associates.py
+
       - name: Regress multiplicative Cayley discriminant structure
         run: python computations/verification/cayley_product_discriminant.py
 
