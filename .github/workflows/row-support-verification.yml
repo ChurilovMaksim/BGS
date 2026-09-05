@@ -73,3 +73,6 @@ jobs:
 
       - name: Regress inverse associate quotient
         run: python computations/verification/cayley_inverse_associate_quotient.py
+
+      - name: Regress inverse even-multiplicity localization
+        run: python computations/verification/cayley_inverse_even_multiplicity.py
