@@ -54,7 +54,8 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error arithmetic_cat_map_moments.
 ```
 
 The scientific CI independently recompiles the source. The PDF synchronization
-workflow uses the TeX source commit time for reproducible metadata and commits
-the binary only if `main` has not advanced during the build. A committed PDF
-must not be treated as synchronized until the corresponding workflow/build has
-actually succeeded.
+workflow watches the manuscript tree, uses the TeX source commit time for
+reproducible metadata, and commits the binary only if `main` has not advanced
+during the build. The synchronization commit carries `[skip ci]`, so rebuilding
+the binary does not create a workflow loop. A committed PDF must not be treated
+as synchronized until the corresponding workflow/build has actually succeeded.
