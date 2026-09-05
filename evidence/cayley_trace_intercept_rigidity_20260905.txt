@@ -1,0 +1,62 @@
+Trace-intercept rigidity / shift-resultant finite regression record
+Date: 2026-09-05
+Status: FINITE-REGRESSION ONLY. The universal theorem is proved separately in mathematics/cayley_trace_intercept_rigidity.md.
+
+Local toolchain used for the extended C++ run:
+  g++ (Debian 14.2.0-19) 14.2.0
+  compile flags: -O3 -std=c++20 -Wall -Wextra -Wpedantic
+  SHA256 of the exact local C++ source subsequently committed as
+  computations/cpp/cayley_trace_intercept_rigidity.cpp:
+  2f73fa6c55d399eadd94864ab5354200127570b18e862b1ce2c3ae6fc0a0d67d
+
+Command-equivalent run:
+  cayley_trace_intercept_rigidity --extended
+
+Observed output:
+PASS K=7 maxFiber=2 doubleFibers=18 seconds=2.5689e-05
+PASS K=11 maxFiber=2 doubleFibers=55 seconds=3.4513e-05
+PASS K=13 maxFiber=2 doubleFibers=81 seconds=4.8183e-05
+PASS K=17 maxFiber=2 doubleFibers=148 seconds=0.000161284
+PASS K=23 maxFiber=2 doubleFibers=286 seconds=0.000247915
+PASS K=31 maxFiber=2 doubleFibers=540 seconds=0.000556751
+PASS K=47 maxFiber=2 doubleFibers=1288 seconds=0.0018323
+PASS K=79 maxFiber=2 doubleFibers=3744 seconds=0.00865973
+PASS K=101 maxFiber=2 doubleFibers=6175 seconds=0.018394
+PASS K=127 maxFiber=2 doubleFibers=9828 seconds=0.0374692
+PASS K=151 maxFiber=2 doubleFibers=13950 seconds=0.06932
+PASS K=181 maxFiber=2 doubleFibers=20115 seconds=0.116968
+PASS K=199 maxFiber=2 doubleFibers=24354 seconds=0.14985
+PASS K=251 maxFiber=2 doubleFibers=38875 seconds=0.306356
+PASS K=307 maxFiber=2 doubleFibers=58293 seconds=0.585796
+PASS K=401 maxFiber=2 doubleFibers=99700 seconds=1.43039
+PASS K=503 maxFiber=2 doubleFibers=157126 seconds=2.8874
+PASS K=601 maxFiber=2 doubleFibers=224550 seconds=5.25081
+PASS K=701 maxFiber=2 doubleFibers=305725 seconds=8.74927
+PASS K=809 maxFiber=2 doubleFibers=407434 seconds=15.0402
+cayley trace-intercept rigidity regression: OK
+
+The verifier checks the full trace-class square for every normalized r!=1:
+  * max fibre cardinality <=2;
+  * r=-1 double fibres are swaps;
+  * r!=-1 double fibres have step-two source classes and the exact target pair predicted by the theorem.
+
+Independent SymPy scalar shift-resultant run:
+  Python 3.13.5
+  SymPy 1.14.0
+
+Observed output:
+K= 7 r= 2 degZ= 9 Omega3=343 Omega3'=1 smith_rank=3
+K=11 r= 7 degZ=25 Omega3=161051 Omega3'=1 smith_rank=5
+K=13 r= 3 degZ=36 Omega3=4826809 Omega3'=1 smith_rank=6
+K=13 r=12 degZ=36 Omega3=1930723600 Omega3'=25 smith_rank=6
+cayley trace-intercept shift-resultant regression: OK
+
+Factorizations:
+  343 = 7^3
+  161051 = 11^5
+  4826809 = 13^6
+  1930723600 = 2^4 * 5^2 * 13^6
+
+The prime-to-2K contractions 1,1,1,25 agree with the corresponding exact real-trace Lambda' anchors. Full valuations are not asserted to agree.
+
+A naive full symbolic resultant at K=17 was intentionally abandoned after becoming materially slower than the small reference anchors. This is a performance limitation of the reference implementation, not mathematical evidence. The intended scalable replacement is a truncated determinant/quotient-algebra computation of only c_0,c_1,c_2.
