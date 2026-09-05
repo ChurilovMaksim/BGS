@@ -5,3 +5,4 @@ import Bgs.PairKeyFourthMoment
 import Bgs.HistoricalMobiusDegenerateFiber
 import Bgs.CayleyEnergy
 import Bgs.FibonacciRatioSmall
+import Bgs.MagneticTraceSmall
