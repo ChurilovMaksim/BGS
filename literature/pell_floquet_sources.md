@@ -46,3 +46,47 @@ bounded-cluster word count then yields a wrapped normal law for the actual
 K-th power at epsilon=tau/sqrt(2K). These statements, including constants,
 are the precise candidates for further independent review, not a general
 claim to have proved BGS or discovered a new form of quantum mechanics.
+
+## Pair-limit comparison source
+
+E. Brezin and S. Hikami, *New correlation functions for random matrices and
+integrals over supergroups*, arXiv:math-ph/0208001 (2002),
+https://arxiv.org/html/math-ph/0208001 , Section 8, equation (181).
+The explicit GOE two-point formula was checked in the primary full text,
+not inferred from its abstract. Rescaling x=pi*s gives the unit-intensity
+formula used in the new Section 7. Its boundedness and convergence to 1
+are elementary from that displayed sine-integral formula. This is a
+standard comparison law, not a novelty claim for our work.
+
+## Additional priority-boundary audit after the compact-test extension
+
+Stefan Steinerberger, *Poissonian Pair Correlation and Discrepancy*,
+arXiv:1711.02497 (2017), published in Indagationes Mathematicae 29 (2018),
+1167--1178, DOI 10.1016/j.indag.2018.04.001.
+Primary records: https://arxiv.org/abs/1711.02497 and
+https://doi.org/10.1016/j.indag.2018.04.001 . The abstract and publisher
+record explicitly connect pair correlations, exponential sums, heat kernels
+and spatial localization. They are relevant precedent: the elementary
+positive-Fourier implication in our Section 7 is not claimed as a newly
+invented general principle. Our precise candidate statement concerns the
+Pell kicked family, its normal form, the bounded-critical-parameter pair
+obstruction, and the necessary escape scale. Full-text comparison of exact
+quantitative hypotheses remains part of independent priority review.
+
+J. P. Keating and F. Mezzadri, *Pseudo-symmetries of Anosov maps and spectral
+statistics*, Nonlinearity 13 (2000), 747--775, DOI
+10.1088/0951-7715/13/3/313. Author-institution primary bibliographic record:
+https://www.oqi.ox.ac.uk/publication/1049721/dimensions . That record verifies
+the citation, not a theorem-level comparison; no claim of full-text reading
+is made here.
+
+M. Degli Esposti and B. Winn, *The quantum perturbed cat map and symmetry*
+(2005). The author-institution abstract at
+https://cris.unibo.it/handle/11585/6708 explicitly discusses quantum
+symmetries on a subset of Planck constants and consequent changes in
+spectral statistics. Thus arithmetic/symmetry obstructions in perturbed
+cat maps are not a new phenomenon as such. The repository record's DOI
+string contains volume 35 while its citation lists volume 38; this metadata
+inconsistency is deliberately not propagated as a verified DOI. A complete
+comparison of the symmetry sectors, perturbation scaling and precise limits
+with our theorem is still required before claiming priority.

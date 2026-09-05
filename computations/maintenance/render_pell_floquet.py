@@ -27,17 +27,16 @@ def main() -> None:
 '''
     footer=r'''
 \normalsize
-\clearpage
 \section*{Reproducible numerical diagnostics}
 \begin{center}
-\includegraphics[width=\linewidth]{../assets/figures/pell_floquet_echo.png}
+\includegraphics[width=0.8\linewidth]{../assets/figures/pell_floquet_echo.png}
 \end{center}
 \noindent These are actual propagator traces, not fitted observable densities.
 Both Fourier modes are retained. Bars for the sampled traces represent
 an RMS bound over the random probes, not deterministic error bounds or
 confidence intervals. The visible finite-size bias is not removed.
 \begin{center}
-\includegraphics[width=\linewidth]{../assets/figures/pell_floquet_commutators.png}
+\includegraphics[width=0.8\linewidth]{../assets/figures/pell_floquet_commutators.png}
 \end{center}
 \noindent The constant bounds are analytic; the points are independent
 finite evaluations. Exact pair-key checks use both diagonal coordinates
