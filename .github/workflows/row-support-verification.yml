@@ -76,3 +76,6 @@ jobs:
 
       - name: Regress inverse even-multiplicity localization
         run: python computations/verification/cayley_inverse_even_multiplicity.py
+
+      - name: Regress inverse cyclotomic-unit normalization
+        run: python computations/verification/cayley_inverse_cyclotomic_unit_normalization.py
