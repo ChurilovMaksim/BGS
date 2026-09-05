@@ -222,7 +222,7 @@ A_e(y)
  =S_(a-1)S_(a+1)+S_(b-1)S_(b+1).                        (22)
 ```
 
-Each product of two `S`-terms has four Laurent monomials.  Therefore `A_e` has at most **eight** Laurent monomials, each with coefficient `+-1` before possible cancellation.
+Each product of two `S`-terms expands into four signed Laurent monomial occurrences.  Therefore `A_e` has coefficient `l1`-weight at most **eight**, and hence support size at most eight.  Equal exponents may merge, so collected coefficients need not be `+-1` (for example `+-2` occurs in maintained finite controls).
 
 For two oriented edges
 
@@ -239,18 +239,18 @@ B_(e,f)(y)
   -S_(b-1)S_(b+1)S_(c-1)S_(c+1).                        (23)
 ```
 
-Each product of four `S`-terms has sixteen Laurent monomials, so `B_(e,f)` has at most **thirty-two** Laurent monomials with coefficients `+-1` before cancellation.
+Each product of four `S`-terms expands into sixteen signed Laurent monomial occurrences.  Thus `B_(e,f)` has coefficient `l1`-weight at most **thirty-two**, and hence support size at most thirty-two; again collected coefficients may have magnitude greater than one.
 
 ### Corollary 4 (bounded-sparsity encoding of inverse multiplicity)
 
 At a split prime `p==1 mod K`, choose a `2K`-th root `y` reducing the characteristic-zero root.  A `d`-edge inverse event is equivalent to the simultaneous vanishing modulo the same embedding prime of
 
 ```text
-one Laurent polynomial with <=8 monomials,
-d-1 Laurent polynomials with <=32 monomials each.         (24)
+one Laurent polynomial of l1-weight <=8,
+d-1 Laurent polynomials of l1-weight <=32 each.           (24)
 ```
 
-The sparsity bound is independent of `K`.
+In particular their support sizes are bounded by the same constants.  Both bounds are independent of `K`.
 
 This is a substantially smaller arithmetic object than the full Sylvester determinants or global norm products.  It does **not** itself give a prime-size bound: sparse root-of-unity congruences in positive characteristic require a separate theorem with carefully verified hypotheses.
 
@@ -292,7 +292,7 @@ Among its controls:
 K=59, p=21713
 ```
 
-is a calibrated **cross-class** event with zero edges `(8,26)` and `(9,10)`.  In the supporting embedding both unit ratios are exactly `-1 mod p`, and the corresponding 32-term numerator for their ratio difference vanishes.
+is a calibrated **cross-class** event with zero edges `(8,26)` and `(9,10)`.  In the supporting embedding both unit ratios are exactly `-1 mod p`, and the corresponding ratio-difference Laurent numerator has coefficient `l1`-weight at most `32` and vanishes.
 
 The structural associate controls
 
@@ -303,11 +303,11 @@ K=89, p=143207231
 
 also satisfy `R_e=R_f=-1 mod p` at the supporting embeddings, as they must, despite `R_e` and `R_f` not being equal as characteristic-zero units in general.
 
-The finite checks are regression only; the identities (8), (13), (18), and the sparsity bounds are proved above.
+The finite checks are regression only; the identities (8), (13), (18), and the fixed-weight bounds are proved above.
 
 ## 8. Research target exposed by the normalization
 
-For `I_-1>=6`, choose three zero edges.  After the unit normalization, the event is governed by one `<=8`-term and two `<=32`-term congruences in a `2K`-th root of unity.
+For `I_-1>=6`, choose three zero edges.  After the unit normalization, the event is governed by one weight-`<=8` and two weight-`<=32` congruences in a `2K`-th root of unity.
 
 A high-value next theorem would classify or bound large split primes supporting such systems **after quotienting the characteristic-zero associate families**.  Any use of a Conway--Jones, Mann, Dvornicich--Zannier, or related finite-characteristic vanishing-sum theorem must verify its exact minimality, coefficient, residue-characteristic, and order hypotheses against (22)--(23); the existence of the known structural large-prime examples forbids a naive application.
 
