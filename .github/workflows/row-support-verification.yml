@@ -94,3 +94,6 @@ jobs:
 
       - name: Regress torsion inverse factors are support-free
         run: python computations/verification/cayley_inverse_torsion_factors_support_free.py
+
+      - name: Regress inverse signature-torsion theorem
+        run: python computations/verification/cayley_inverse_signature_torsion.py
