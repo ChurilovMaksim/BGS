@@ -1,0 +1,28 @@
+{
+  "input_commit": "18099af417154d708510086e6824b7299b220ecc",
+  "run_id": "33975526512",
+  "status": "PASS",
+  "scope": "Targeted Python/C++ exact and numerical checks, all imported Lean modules, two TeX builds and repository audit. Not all historical Python verifiers, full analytic formalization, or an external proof review.",
+  "python": "3.13.15",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "sha256": {
+    "mathematics/pell_coboundary_resonance.md": "9380347c5be06e56cea3e33d040c127d93ecbf032c8dd079f25b1a8e8410636c",
+    "computations/verification/pell_coboundary_regression.py": "7599d5f23b04c09438f6bed22db508709756ee92fb94c1c59a2bef525a82bdb6",
+    "computations/verification/pell_floquet_regression.py": "f6319ae40ae71d84322d36e0c500b6529cddf6627fb4dfc62cb1790c6abe3639",
+    "computations/cpp/pell_coboundary_pairs.cpp": "5ba6fa536a427fc85905d3a71b3d5f6b21f7e9ca3f1f229d18d9735cb18d38e4",
+    "formalization/Bgs/PellCoboundary.lean": "2e41c078e1186c1ba2094c06d69c1c4960697c2616c4698c99511bd833d1690e",
+    "computations/maintenance/publish_coboundary.py": "9088e37584bfb08287159c2de981fe3e84c5f1d6fcdceac1713a4f0e62f2effe",
+    "manuscript/pell_coboundary_section.tex": "14fc2080c3785408e1593ffa8f6e87cb657304b1f6e5dca72564118c77dd0570",
+    "manuscript/pell_coboundary_resonance.tex": "3c766f36019c42fd02e53a26b0aa3e7a3462558039fdb422f1bc73de7993085a",
+    "manuscript/pell_coboundary_resonance.pdf": "a8bc07cfc7779fcd6d54b1520e9707e606ec85cd7ae385676e853b820d600958",
+    "evidence/certificates/pell_coboundary_audit.json": "52663c5e7b4df9f953bc5612236e4e471553187c50294f76bfb1940358eaf7e6"
+  },
+  "logs": {
+    "arithmetic_cat_map_moments.log": "6cc818db5ca7a3477fc944b01bd93e86757171449bf252dc121237d1fcc69f15",
+    "coboundary.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lean.log": "6d3aa6b48c465f16bfca7b0ecfd8191f09359e52c5f0a1cf98a57593a54106fa",
+    "pell_coboundary_resonance.log": "b6b3d9a92e806298952d2ebb80595335b9e0567c08bc06adfa493801888719d4"
+  }
+}

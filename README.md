@@ -404,3 +404,20 @@ The Lean module contains four finite certificates, not the analytic theorem.
 The unified research publication workflow builds the companion TeX/PDF,
 exact JSON certificate and finite global-spectrum illustration from maintained sources.
 The source audit explicitly leaves full literature priority open.
+
+## Second-order coboundary resonance
+
+For the different fixed Fourier kick `H=B_(1,0)-B_(3,4)`, the first-order
+period average vanishes. A uniform second-order loop bound, together with
+an exact two-species multiplicity-two theorem, gives a deterministic
+wrapped-normal recurrence law at quantum strength
+`epsilon ~ sqrt(N) K^(-1/4)`. Its classical action amplitude still tends to
+zero. Bounded `|epsilon| K^(1/4)/sqrt(N)` obstructs any bounded globally
+unfolded pair density tending to one at large separation; escaping this
+obstruction is necessary, not sufficient, for universality.
+
+The complete proof is [the coboundary note](mathematics/pell_coboundary_resonance.md).
+The second-order residual mechanism has direct prior literature, audited in
+[literature/pell_coboundary_sources.md](literature/pell_coboundary_sources.md).
+No world-priority, fixed-system BGS, or complete analytic Lean claim is made.
+The independent Python/C++ and finite Lean components have narrower scope.

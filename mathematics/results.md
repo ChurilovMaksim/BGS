@@ -511,3 +511,14 @@ no density-adapted unfolding result, and no further-sector result is claimed.
 The forty finite configurations are checked independently by pair sums and
 moving-window integration; they are evidence about implementation, not the
 proof. Priority and analytic Lean formalization are not established.
+
+## Coboundary resonance extension
+
+[pell_coboundary_resonance.md](pell_coboundary_resonance.md) proves the uniform
+second-order loop estimate; classifies all four-atom two-species collisions;
+derives the wrapped-normal recurrence law at `epsilon ~ sqrt(N) K^(-1/4)`;
+and obtains necessary escape and subcritical microscopic-collapse criteria.
+This is a project proof with unestablished priority. Residual fidelity freeze
+is prior art. It concerns a specified vanishing-classical-kick family, not
+positive BGS universality. Exact finite pair certificates, numerical operator
+checks, and Lean compilation records are distinct verification layers.

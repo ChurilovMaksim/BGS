@@ -289,3 +289,25 @@ no density-adapted unfolding result, and no further-sector result is claimed.
 The forty finite configurations are checked independently by pair sums and
 moving-window integration; they are evidence about implementation, not the
 proof. Priority and analytic Lean formalization are not established.
+
+## Coboundary continuation, 2026-09-05
+
+PROJECT PROOF: `mathematics/pell_coboundary_resonance.md`, Theorems 1--2,
+Lemmas 3--4 and 6, Corollary 5. The proof combines a uniform second-order
+loop estimate and exact multiplicity-two arithmetic with a two-species
+Gaussian limit. Its quantum critical scale is `sqrt(N) K^(-1/4)` for a
+specified coboundary kick; the classical amplitude still tends to zero.
+The necessary escape criterion is not a sufficient universality criterion.
+
+FINITE EVIDENCE: `evidence/certificates/pell_coboundary_audit.json` records
+independent original-coordinate Python and quadratic-ring C++ enumeration,
+phase and dense-operator checks, all numerical fourth moments, and retained
+first and second recurrence modes including their finite-size deviations.
+Seeded RMS errors are not deterministic intervals. The Lean module covers
+an integer identity and finite K=11 counts, not an analytic limit theorem;
+its compilation is certified only by an actual successful build log.
+
+PRIORITY: second-order residual perturbations and quantum fidelity freeze
+are established prior work. No first-ever or prize-level claim is made.
+OPEN: fixed classical perturbations, positive microscopic BGS universality,
+correct full symmetry resolution, and Heisenberg-scale joint trace control.

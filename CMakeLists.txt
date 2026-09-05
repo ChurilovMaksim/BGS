@@ -28,3 +28,11 @@ foreach(target fourth_moment_pair_key_verifier cat_map_order cayley_energy_verif
     target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
   endif()
 endforeach()
+
+add_executable(pell_coboundary_pairs computations/cpp/pell_coboundary_pairs.cpp)
+target_include_directories(pell_coboundary_pairs PRIVATE ${Boost_INCLUDE_DIRS})
+if(MSVC)
+  target_compile_options(pell_coboundary_pairs PRIVATE /W4)
+else()
+  target_compile_options(pell_coboundary_pairs PRIVATE -Wall -Wextra -Wpedantic)
+endif()
