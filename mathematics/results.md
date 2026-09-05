@@ -386,6 +386,116 @@ disprove the maintained asymptotic target `K^(4+o(1))`.
 
 See [`cayley_inverse_quartic_localization.md`](cayley_inverse_quartic_localization.md).
 
+## 11a. Full inverse even-multiplicity filtration — EXACT
+
+The quartic statement is the first nontrivial case of a general theorem. On the
+split squarefree locus,
+
+```text
+I_-1(q)=2 deg gcd(E,O)=2 ord_(Z=0) rho(Z),
+rho(Z)=Res_Y(E_Z,O_Z).
+```
+
+For every `d>=1`,
+
+```text
+I_-1(q)>=2d
+iff some 2d valid centred roots satisfy
+e_1=e_3=...=e_(2d-1)=0.
+```
+
+Thus the first threshold not already manufactured by a universal size-two
+associate class is
+
+```text
+I_-1>=6
+iff three disjoint zero edges
+iff six roots satisfy e_1=e_3=e_5=0
+iff deg gcd(E,O)>=3
+iff rho_0=rho_1=rho_2=0.
+```
+
+The finite regression checks direct translated-resultant order at `K=29,43`
+and exhausts all `3003` six-subsets at `K=29,p=59`.
+
+See [`cayley_inverse_even_multiplicity_localization.md`](cayley_inverse_even_multiplicity_localization.md).
+
+## 11b. Cyclotomic-unit and weight-eight normalization — EXACT
+
+Each valid centred inverse root has the stronger factorization
+
+```text
+x_a=(tau-2)lambda_a,
+lambda_a=v_a-1=eta_(a-1)eta_(a+1) in O^(+x).
+```
+
+Hence
+
+```text
+w_(a,b)=-(lambda_a+lambda_b).
+```
+
+For sparse arithmetic it is even cheaper to use
+
+```text
+P_(a,b)=t_a+t_b-2tau=-(tau-2)w_(a,b).
+```
+
+At a primitive `K`-th root this is a Laurent relation of coefficient `l1`
+weight exactly `8`. For a simultaneous `d`-edge event, subtract the first edge
+equation from the other `d-1`; every generator still has weight at most `8`.
+Thus `I_-1>=6` is a same-embedding three-generator weight-eight system.
+
+The `K=229,p=966684838398077` structural edge relations are an adversarial
+control: each individual weight-eight relation is indecomposable modulo `p`, so
+small relation weight alone does not force small conductor in this split
+positive-characteristic setting.
+
+See [`cayley_inverse_cyclotomic_unit_normalization.md`](cayley_inverse_cyclotomic_unit_normalization.md).
+
+## 11c. Reduced ordinary-resultant filter — EXACT
+
+Before specializing `T=tau`, let `G` be the polynomial gcd of two inverse edge
+polynomials and write
+
+```text
+w_e=G A,
+w_f=G B,
+gcd(A,B)=1.
+```
+
+If one prime ideal `q|p` contains both specialized edge generators, then
+necessarily
+
+```text
+p | Res_T(C_K,G) Res_T(A,B).
+```
+
+Consequently the radical of the exact cross-class contraction integer divides
+the radical of this rational scalar filter. The implication is one-way: extra
+resultant primes need not correspond to the distinguished `K`-cyclotomic
+embedding.
+
+The reciprocal lift preserves the same prime information exactly. For
+
+```text
+A~(z)=z^deg(A) A(z+z^-1),
+B~(z)=z^deg(B) B(z+z^-1),
+```
+
+one has
+
+```text
+Res_z(A~,B~)=Res_T(A,B)^2.
+```
+
+Exhaustive CI audits at `K=31,37,41,43` show that every nonconstant polynomial
+gcd encountered evaluates as a unit at the real `K`-cyclotomic root. A separate
+max-index-50 exact development audit found no shared irreducible non-cyclotomic
+factor. The universal torsion-factor classification remains **OPEN**.
+
+See [`cayley_inverse_reduced_resultant_filter.md`](cayley_inverse_reduced_resultant_filter.md).
+
 ## 12. Square collision resultants and canonical discriminants — EXACT
 
 Every maintained prime-order cleared collision polynomial satisfies
@@ -514,8 +624,16 @@ Promoted finite controls include:
 - `(K,p)=(41,2908049)` with a row pair sharing two parameters, and separately
   as a reduced-edge norm-gcd false positive for inverse support;
 - `(K,p)=(31,1303)` with inverse intersection size `4`;
+- `(K,p)=(29,59)` with inverse multiplicity `6` and a unique six-root
+  `e_1=e_3=e_5=0` certificate among all `3003` six-subsets;
 - `(K,p)=(89,143207231)` with inverse intersection size `4`,
   `p=2.282469...K^4`, and exact four-root `e_1=e_3=0` certificate;
+- `(K,p)=(229,966684838398077)` with exactly two structural inverse zero edges,
+  `I_-1=4`, and indecomposable individual weight-eight relations;
+- exact reduced-resultant cross-class anchors at `K=59,73,97` and structural
+  anchors at `K=89,229`;
+- max-index-50 exact shared-factor audit: `1225` edge polynomials, `24`
+  repeated irreducible factor types, no non-cyclotomic reciprocal lift found;
 - `(K,p)=(131,F_131)` with exact excess `32`;
 - C++20 characteristic-zero intercept regression through an extended prime
   anchor `K=809`;
@@ -530,23 +648,46 @@ Finite computation proves only its explicit finite statements.
 
 ## 19. Current frontier — OPEN
 
-The arithmetic chain is
+The active inverse arithmetic chain is now
 
 ```text
-common split divisors of small cyclotomic scalar/local systems
-        -> pointwise centered Cayley energy
-        -> complete fourth-moment control.
+characteristic-zero edge associate classes
+        + cross-class same-embedding support
+        -> inverse multiplicity I_-1
+        -> pointwise centered Cayley energy.
 ```
 
-A sufficient target remains, for example,
+Literal elimination of every inverse `I>=4` event is structurally overstrong:
+explicit associate pairs exist for every prime residue class modulo `5` in the
+proved range. The more appropriate sufficient target is range-explicit
+multiplicity, for example
 
 ```text
-P_split^+(Lambda'_K^(3))<=K^(4+o(1)),
+K=o(p^(1/4)),
+B_K=K^o(1),
+large split primes excluded from nonassociate cross-class contractions,
 ```
 
-or an equivalent theorem for `Omega` / inverse `Theta` / reduced-edge support.
-The `K=89` certificate shows that a strict finite `K^4` ceiling is too strong,
-but it is compatible with `K^(4+o(1))`.
+which would imply `I_-1=K^o(1)`. A stronger old target such as
+
+```text
+P_split^+(Lambda'_K^(3))<=K^(4+o(1))
+```
+
+remains logically sufficient to force `I<=2`, but is no longer the preferred
+inverse mechanism. The new weight-eight and reduced-resultant formulations
+identify concrete subproblems; they do not yet provide the required
+largest-prime theorem. The torsion classification of shared edge-polynomial
+factors is also open.
+
+Even complete inverse control would not settle the other normalized row ratios.
+For the full arithmetic problem the target remains
+
+```text
+I_K(p)=K^o(1), ideally O(1),
+```
+
+in the intended large-prime regime, which feeds the exact row-energy bound.
 
 The microscopic chain is independently
 
