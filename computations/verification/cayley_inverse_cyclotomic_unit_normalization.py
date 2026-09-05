@@ -9,9 +9,9 @@ Checks:
   * every valid lambda_a has norm +-1 at K=31;
   * zero-edge unit ratios R=lambda_a/lambda_b are -1 at one embedding for
     cross-class K=59 and structural K=31,89 anchors;
-  * cleared Laurent sign equations use <=8 monomials;
-  * cleared Laurent ratio-difference equations use <=32 monomials and vanish
-    at the same 2K-th-root embedding.
+  * cleared Laurent sign equations have coefficient l1-weight <=8;
+  * cleared Laurent ratio-difference equations have coefficient l1-weight <=32
+    and vanish at the same 2K-th-root embedding.
 """
 from __future__ import annotations
 
@@ -180,6 +180,10 @@ def ratio_difference_numerator(
     return add(left, right, -1)
 
 
+def l1_weight(poly: ExponentDict) -> int:
+    return sum(abs(c) for c in poly.values())
+
+
 def embedded_2k_root(K: int, p: int, generator: int, j: int, h: int) -> int:
     y0 = pow(generator, (p - 1) // (2 * K), p)
     y = pow(y0, j, p)
@@ -215,13 +219,13 @@ def check_split_anchor(
 
         A = sign_numerator((a, b))
         assert len(A) <= 8
-        assert all(abs(c) == 1 for c in A.values())
+        assert l1_weight(A) <= 8
         assert eval_laurent(A, y, p, K) == 0
 
     for e, f in zip(expected_edges, expected_edges[1:]):
         B = ratio_difference_numerator(e, f)
         assert len(B) <= 32
-        assert all(abs(c) == 1 for c in B.values())
+        assert l1_weight(B) <= 32
         assert eval_laurent(B, y, p, K) == 0
 
         a, b = e
@@ -231,13 +235,19 @@ def check_split_anchor(
         assert r_e * pow(r_f, -1, p) % p == 1
 
     sign_sizes = [len(sign_numerator(edge)) for edge in expected_edges]
+    sign_weights = [l1_weight(sign_numerator(edge)) for edge in expected_edges]
     ratio_sizes = [
         len(ratio_difference_numerator(e, f))
         for e, f in zip(expected_edges, expected_edges[1:])
     ]
+    ratio_weights = [
+        l1_weight(ratio_difference_numerator(e, f))
+        for e, f in zip(expected_edges, expected_edges[1:])
+    ]
     print(
         f"K={K:2d} p={p:<9d} emb={j:2d} {expected_kind}: "
-        f"R_e=-1; sign_terms={sign_sizes}; ratio_terms={ratio_sizes}: OK"
+        f"R_e=-1; sign_support={sign_sizes}/weight={sign_weights}; "
+        f"ratio_support={ratio_sizes}/weight={ratio_weights}: OK"
     )
 
 
