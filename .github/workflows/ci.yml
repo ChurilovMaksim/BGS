@@ -90,6 +90,9 @@ jobs:
       - name: Regress exact real-trace row ideal
         run: python computations/verification/cayley_product_row_real_trace_ideal.py
 
+      - name: Regress principal-subresultant scalar support
+        run: python computations/verification/cayley_principal_subresultant_support.py
+
       - name: Regress scalar trace-intercept shift-resultant support
         run: python computations/verification/cayley_trace_intercept_shift_resultant.py
 
