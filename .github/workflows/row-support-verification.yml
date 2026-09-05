@@ -79,3 +79,6 @@ jobs:
 
       - name: Regress inverse cyclotomic-unit normalization
         run: python computations/verification/cayley_inverse_cyclotomic_unit_normalization.py
+
+      - name: Regress inverse reduced resultant filter
+        run: python computations/verification/cayley_inverse_reduced_resultant_filter.py
