@@ -353,16 +353,18 @@ three independent styles of checks.
    symbolic differentiation of a resultant.
 2. Generic inverse parity examples verify (16) exactly.
 3. Cyclotomic finite-field examples realize the three possible first-order
-   cases:
+   cases.  The real embedding exponent is part of each finite certificate:
 
 ```text
-K=11, p=23: deg gcd(E,O)=0,   rho(0)!=0,
-K= 7, p=29: deg gcd(E,O)=1,   rho(0)=0, rho'(0)!=0,
-K=23, p=47: deg gcd(E,O)=2,   rho(0)=rho'(0)=0.           (34)
+K=11, p=23, embedding 1: deg gcd(E,O)=0, rho(0)!=0,
+K=11, p=23, embedding 2: deg gcd(E,O)=1, rho(0)=0, rho'(0)!=0,
+K=23, p=47, embedding 1: deg gcd(E,O)=2, rho(0)=rho'(0)=0. (34)
 ```
 
-The finite checks are regression only; the universal statements are proved
-above.
+The formerly recorded `K=7,p=29` degree-one control was a regression-anchor
+error caused by suppressing the embedding choice; it was never a theorem input
+and has been removed.  The finite checks are regression only; the universal
+statements are proved above.
 
 ## 7. Arithmetic implication and limitation
 
