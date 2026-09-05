@@ -66,6 +66,9 @@ jobs:
       - name: Regress normalized resultant collision-mass budget
         run: python computations/verification/cayley_resultant_mass_budget.py
 
+      - name: Regress Frobenius amplification over minimal finite extensions
+        run: python computations/verification/cayley_frobenius_extension.py
+
       - name: Regress single difference-discriminant classification
         run: python computations/verification/cayley_difference_discriminant.py
 
