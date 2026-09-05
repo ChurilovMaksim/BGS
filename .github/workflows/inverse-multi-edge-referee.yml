@@ -1,0 +1,247 @@
+name: Referee correction of inverse multi-edge filters
+on:
+  push:
+    branches: ['frontier/inverse-quartic-20260905']
+    paths: ['.github/workflows/inverse-multi-edge-referee.yml']
+permissions:
+  contents: write
+  actions: write
+jobs:
+  repair-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements.txt
+      - name: Preserve the arithmetic implementation and correct only false finite anchors
+        run: |
+          python - <<'PY'
+          import ast
+          from pathlib import Path
+          path=Path('computations/verification/cayley_inverse_multi_edge_resultant_filter.py')
+          source=path.read_text()
+          if '_audit_expected_triple_filters' not in source:
+              tree=ast.parse(source)
+              names={n.id for n in ast.walk(tree) if isinstance(n,ast.Name)}
+              kn='K' if 'K' in names else 'k'
+              if kn not in names or 'p' not in names:raise RuntimeError('case variables not recognized')
+              changes=[]
+              def value(n):
+                  if isinstance(n,ast.Constant) and isinstance(n.value,int):return n.value
+                  if isinstance(n,ast.Name) and n.id=='p':return 59
+                  if isinstance(n,ast.BinOp) and isinstance(n.op,(ast.Add,ast.Sub,ast.Mult)):
+                      a,b=value(n.left),value(n.right)
+                      return a+b if isinstance(n.op,ast.Add) else a-b if isinstance(n.op,ast.Sub) else a*b
+                  raise ValueError
+              class Fix(ast.NodeTransformer):
+                  inside=False
+                  def visit_Assert(self,node):
+                      old=self.inside;self.inside=True
+                      node=self.generic_visit(node);self.inside=old
+                      return node
+                  def visit_Compare(self,node):
+                      node=self.generic_visit(node)
+                      if not self.inside or len(node.ops)!=1 or not isinstance(node.ops[0],ast.Eq):return node
+                      a,b=node.left,node.comparators[0]
+                      if isinstance(b,ast.Name) and b.id=='p':v=a
+                      elif isinstance(a,ast.Name) and a.id=='p':v=b
+                      else:return node
+                      changes.append({'line':node.lineno,'old':ast.unparse(node),'new':'verified membership in the complete observed triple-filter set'})
+                      return ast.copy_location(ast.Call(func=ast.Name(id='_audited_triple_filter',ctx=ast.Load()),
+                        args=[v,ast.Name(id=kn,ctx=ast.Load()),ast.Name(id='p',ctx=ast.Load())],keywords=[]),node)
+                  def visit_Set(self,node):return self.collection(node)
+                  def visit_List(self,node):return self.collection(node)
+                  def visit_Tuple(self,node):return self.collection(node)
+                  def collection(self,node):
+                      node=self.generic_visit(node)
+                      if self.inside:
+                          try:vals=[value(x) for x in node.elts]
+                          except ValueError:return node
+                          if len(vals)==3 and set(vals)=={59,118,1357}:
+                              changes.append({'line':node.lineno,'old':ast.unparse(node),'new':'{944,1357,1888}'})
+                              node.elts=[ast.Constant(v) for v in [944,1357,1888]]
+                      return node
+              tree=Fix().visit(tree)
+              if not any('observed triple' in c['new'] for c in changes):
+                  raise RuntimeError('no claimed exact-p assertion found; no guessed replacement applied')
+              helper='''
+          _audit_expected_triple_filters = {
+              (29,59): {59},
+              (43,173): {173,865},
+              (83,167): {167,334,668,2672,5344,21376,27889,85504},
+              (89,179): {179,358,716,1611,2864,5728,15394},
+          }
+          _audit_observed_triple_filters = {}
+          def _audited_triple_filter(value,K,p):
+              value=int(value);key=(int(K),int(p))
+              assert key in _audit_expected_triple_filters, key
+              assert value % p == 0, (key,value)
+              assert value in _audit_expected_triple_filters[key], (key,value)
+              _audit_observed_triple_filters.setdefault(key,set()).add(value)
+              return True
+          '''
+              index=0
+              while index<len(tree.body) and (isinstance(tree.body[index],(ast.Import,ast.ImportFrom)) or
+                  isinstance(tree.body[index],ast.Expr) and isinstance(tree.body[index].value,ast.Constant) and isinstance(tree.body[index].value.value,str)):
+                  index+=1
+              tree.body[index:index]=ast.parse(helper).body
+              tail='''
+          if __name__ == '__main__':
+              assert _audit_observed_triple_filters == _audit_expected_triple_filters, _audit_observed_triple_filters
+              print('referee regression: complete observed triple-filter sets verified; exact-p assertion withdrawn')
+          '''
+              tree.body.extend(ast.parse(tail).body)
+              ast.fix_missing_locations(tree)
+              path.write_text('#!/usr/bin/env python3\n# Corrected necessary filters; exact finite anchors are deliberately retained.\n'+ast.unparse(tree)+'\n')
+              print('Reviewed assertion changes:',changes)
+          PY
+      - name: Execute the corrected verifier and save the exact observed sets
+        run: |
+          python - <<'PY'
+          import json,runpy
+          from pathlib import Path
+          producer='computations/verification/cayley_inverse_multi_edge_resultant_filter.py'
+          ns=runpy.run_path(producer,run_name='__main__')
+          rows=[{'K':k,'p':p,'triple_filter_gcds':sorted(values)} for (k,p),values in sorted(ns['_audit_observed_triple_filters'].items())]
+          target=Path('evidence/certificates/inverse_multi_edge_referee.json');target.parent.mkdir(parents=True,exist_ok=True)
+          target.write_text(json.dumps({'producer':producer,'scope':'Exact finite observed sets, not universal exactness or distinguished-embedding sufficiency.','cases':rows},indent=2)+'\n')
+          PY
+      - name: Correct the mathematical scope and install a permanent read-only gate
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          Path('mathematics/cayley_inverse_multi_edge_resultant_filter.md').write_text(r'''# Multi-edge resultant filters: corrected scope
+
+          Status: necessary rational-prime filters, not an exact test for one
+          distinguished embedding. The old assertion that every one of 96
+          control triples has gcd exactly p is withdrawn.
+
+          ## The specialization-safe implication
+
+          Let C be the monic integral polynomial of the trace coordinate. Write
+          w_e=GA and w_f=GB with a primitive integral gcd G and integral A,B.
+          For primitive edge polynomials, the ordinary pair filter is
+
+          `F(e,f)=abs(Res(C,G) Res(A,B))`.
+
+          If a distinguished coordinate alpha modulo p annihilates C,w_e,w_f,
+          either G(alpha)=0, which forces p to divide Res(C,G), or A(alpha)=
+          B(alpha)=0, which forces p to divide Res(A,B). The latter implication
+          uses the polynomial resultant identity; when A,B are both constants,
+          primitive edge polynomials make them units, so that case cannot give
+          a common zero. Thus simultaneous same-embedding support implies
+          p | F(e,f), without asserting the converse.
+
+          Content assumptions must not be silently dropped. For arbitrary
+          nonzero integral polynomials a universally safe version multiplies
+          F by gcd(content(A),content(B)). This handles the exceptional
+          constant-constant case. For example C=T, G=T+1, A=3, B=6 at p=3
+          has a common specialized zero at T=0 although the unaugmented product
+          of resultants is 1. Primitive normalized edge polynomials do not
+          exhibit this content pathology.
+
+          ## Several edges
+
+          For three simultaneous zero edges e,f,g, p divides each pair filter,
+          and therefore
+
+          `p | gcd(F(e,f),F(e,g),F(f,g))`.
+
+          Equality with p does not follow. Resultants can retain extraneous
+          components, primes, or higher prime powers. Pairwise eliminations
+          also do not certify that all roots coincide with one selected
+          embedding. The gcd of all pair filters is a necessary filter too,
+          not an automatic converse.
+
+          ## Correct finite controls
+
+          Use the verifier's deterministic first-maximal-embedding convention.
+
+          | K | p | embedding | distinct triple-filter gcds |
+          |---|---|---|---|
+          | 29 | 59 | 2 | 59 |
+          | 43 | 173 | 1 | 173, 865 |
+          | 83 | 167 | 12 | 167, 334, 668, 2672, 5344, 21376, 27889, 85504 |
+          | 89 | 179 | 5 | 179, 358, 716, 1611, 2864, 5728, 15394 |
+
+          For K=29,p=59 the edges are (3,11),(4,8),(6,12), and the ordinary
+          pair filters are 944,1357,1888, namely 16p,23p,32p. They are not
+          2p,23p,p. For K=43,p=173 a triple gives 865=5p. These are explicit
+          negative controls against the withdrawn exactness claim.
+
+          The old all-pair gcd=p assertions on the four complete maximal
+          edge sets are finite observations, not a general theorem. The
+          corrected regression retains the full sets above, rather than
+          concealing the error by deleting every numerical assertion.
+
+          ## Ideal contraction is a different object
+
+          Let J=(C,w_1,...,w_s) in Z[T], with J intersect Z = D Z and D>0.
+          A common root in characteristic p implies p | D. Conversely, suppose
+          p | D. If J+(p) contained 1, write 1=j+pa with j in J. Multiplication
+          by the integer D/p would imply D/p=(D/p)j+Da belongs to J intersect Z,
+          contradicting its positive generator D. Thus J+(p) is proper and has
+          a common zero over an algebraic closure of F_p. If C splits into
+          linear factors over F_p, such a zero is already in F_p. This proves
+          an existence assertion for some embedding, not for a preselected one.
+
+          The contraction generator D is not silently identified with a gcd
+          of pairwise ordinary resultants. The latter can be a strictly
+          coarser filter, exactly as the controls demonstrate.
+
+          ## Boundary
+
+          Neither a universal bounded inverse multiplicity theorem nor a
+          microscopic BGS theorem follows from these filters. Structural
+          associates and same-embedding multiplicity remain distinct issues.
+          The rest of draft PR #13 is not certified by this targeted repair.
+          ''')
+          Path('.github/workflows/inverse-multi-edge-referee.yml').write_text('''name: Inverse multi-edge referee regression
+          on:
+            workflow_dispatch:
+            push:
+              paths:
+                - 'computations/verification/cayley_inverse_multi_edge_resultant_filter.py'
+                - 'mathematics/cayley_inverse_multi_edge_resultant_filter.md'
+                - '.github/workflows/inverse-multi-edge-referee.yml'
+            pull_request:
+              paths:
+                - 'computations/verification/cayley_inverse_multi_edge_resultant_filter.py'
+                - 'mathematics/cayley_inverse_multi_edge_resultant_filter.md'
+                - '.github/workflows/inverse-multi-edge-referee.yml'
+          permissions:
+            contents: read
+          jobs:
+            check:
+              runs-on: ubuntu-latest
+              steps:
+                - uses: actions/checkout@v7
+                - uses: actions/setup-python@v6
+                  with:
+                    python-version: '3.13'
+                - run: python -m pip install -r requirements.txt
+                - run: python computations/verification/cayley_inverse_multi_edge_resultant_filter.py
+          ''')
+          PY
+      - name: Publish only after the exact regression passes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add computations/verification/cayley_inverse_multi_edge_resultant_filter.py \
+            mathematics/cayley_inverse_multi_edge_resultant_filter.md \
+            evidence/certificates/inverse_multi_edge_referee.json \
+            .github/workflows/inverse-multi-edge-referee.yml
+          git fetch origin frontier/inverse-quartic-20260905
+          test "$(git rev-parse origin/frontier/inverse-quartic-20260905)" = "$GITHUB_SHA"
+          git commit -m 'fix: replace false triple exactness by complete finite control sets and necessary-filter proof'
+          git push origin HEAD:frontier/inverse-quartic-20260905
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/inverse-multi-edge-referee.yml/dispatches" \
+            -f ref=frontier/inverse-quartic-20260905
