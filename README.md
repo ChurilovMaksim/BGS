@@ -31,6 +31,8 @@ problem.
 | Inverse pair-sum factorization | **EXACT** | `R_-(Z)=2^mF(Z/2)S(Z)^2`; `I_-1=2 ord_0S` |
 | Inverse two-scalar support | **EXACT** | `I_-1>=3 iff S(0)=S'(0)=0`; exact support `Theta_K` |
 | Translated half-degree resultant | **EXACT** | `S(Z)=+-Res(E_Z,O_Z)`; support is resultant + translation derivative |
+| Inverse quartic localization | **EXACT** | `I_-1>=3 iff` four distinct centred roots have `e_1=e_3=0`; equivalent reduced two-edge ideals |
+| K=89 inverse witness | **FINITE-CERTIFICATE** | `p=143207231`, `I_-1=4`, `p=2.282469...K^4`; strict finite `p<=K^4` ceiling is false |
 | Pointwise quadratic subfamily | **EXACT** | outside exact order-three support, `E_+(A)<=11(K-1)(K-2)` |
 | Per-ratio split support mass | **EXACT** | `sum log p=O(K^3)` for each fixed ratio |
 | Global split-prime mass | **EXACT** | explicit deterministic `O(K^4)` budget |
@@ -61,7 +63,7 @@ c(h)=(h+1)/(h-1),
 A=c(H\{1}),
 ```
 
-both nontrivial fluctuation layers are controlled by `E_+(A)`.  The corrected
+both nontrivial fluctuation layers are controlled by `E_+(A)`. The corrected
 off/off theorem is
 
 ```text
@@ -90,7 +92,7 @@ Delta_K(p)<=4 I_K(p)(K-1)(K-2).
 ```
 
 The exact maximal-real construction removes the unique invalid
-characteristic-zero trace and keeps fixed polynomial degree.  Its first three
+characteristic-zero trace and keeps fixed polynomial degree. Its first three
 subresultants define `Lambda_(K,r)^(3)`, with
 
 ```text
@@ -122,7 +124,7 @@ gamma_r(a,b)=t_b-(s_r/s_1)t_a,
 
 Bass's prime-conductor cyclotomic-unit theorem gives a complete
 characteristic-zero fibre classification: every fibre of `gamma_r` has at
-most two points.  For non-inverse ratios the doubletons are exactly the
+most two points. For non-inverse ratios the doubletons are exactly the
 step-two family
 
 ```text
@@ -139,7 +141,7 @@ Finite row intersections are explicitly
 W_r(b)=V_r(a) mod q
 ```
 
-between products of cyclotomic units.  Equivalently, the scalar shift
+between products of cyclotomic units. Equivalently, the scalar shift
 resultant
 
 ```text
@@ -156,7 +158,7 @@ I>=3 iff c_0=c_1=c_2=0 mod q.
 ```
 
 The resulting three-generator support `Omega` has the same split rational-prime
-support as `Lambda`.  For each fixed ratio,
+support as `Lambda`. For each fixed ratio,
 
 ```text
 sum_(I_r(p)>=3) log p=O(K^3).
@@ -164,7 +166,7 @@ sum_(I_r(p)>=3) log p=O(K^3).
 
 ## Inverse class: perfect square and two scalars
 
-The inverse ratio `r=-1` is substantially more rigid.  Put
+The inverse ratio `r=-1` is substantially more rigid. Put
 
 ```text
 F(X)=P(tau+X)=E(X^2)+X O(X^2).
@@ -184,7 +186,7 @@ R_-(Z)=Res_X(F(X),F(Z-X))
 S(Z)=prod_(i<j)(Z-x_i-x_j),
 ```
 
-where `x_i` are the roots of `F`.  Since `2^mF(0)` is a unit at split
+where `x_i` are the roots of `F`. Since `2^mF(0)` is a unit at split
 `p!=K`,
 
 ```text
@@ -192,7 +194,7 @@ I_-1(q)=2 ord_0 S,
 I_-1(q)>=3 iff S(0)=S'(0)=0 mod q.
 ```
 
-Thus inverse order-three support is a **two-scalar** problem.  The contraction
+Thus inverse order-three support is a **two-scalar** problem. The contraction
 of `(S(0),S'(0))` is `Theta_K`; it has the same split support as the older
 half-degree reflection support `Xi_K`, though valuations may differ.
 
@@ -219,7 +221,7 @@ dO_Z/dZ|_0=E'.
 ```
 
 This replaces the full degree-`m^2` symbolic resultant by one `O(K)`-size
-Sylvester determinant over dual numbers.  In the exact SymPy reference path,
+Sylvester determinant over dual numbers. In the exact SymPy reference path,
 this changes the `K=17` calculation from roughly 51 s for the full resultant to
 about 0.58 s for the translated half-degree route; at `K=23` the latter remains
 around 6 s and Smith normal form becomes the bottleneck.
@@ -239,6 +241,68 @@ For `K=23`, `Xi'_23=47*137`: split prime support agrees, valuations do not.
 See
 [`mathematics/cayley_inverse_pair_sum_factorization.md`](mathematics/cayley_inverse_pair_sum_factorization.md).
 
+## Inverse class: quartic localization and reduced edge ideals
+
+The pair-sum description localizes further. Two distinct zero pair sums cannot
+share one root because `F` is squarefree, so an inverse order-three event uses
+four distinct centred roots. For such a four-set,
+
+```text
+I_-1>=3
+iff I_-1>=4
+iff e_1=e_3=0 mod q.
+```
+
+The last equivalence is pairing-free: a monic quartic with `e_1=e_3=0` is even,
+so four distinct nonzero roots occur as two opposite pairs.
+
+For every monic `F`, the full pair-sum discriminant also factors exactly as
+
+```text
+Disc(S_F)=Disc(F)^(m-2) Q_F^2,
+Q_F=prod_(|A|=4)(e_1(A)^3-4e_1(A)e_2(A)+8e_3(A)).
+```
+
+In cyclotomic trace coordinates define
+
+```text
+v_n=(t_n-2)/(tau-2),
+w_(a,b)=2-v_a-v_b.
+```
+
+Then `v_n` is a square of a real cyclotomic unit and
+
+```text
+2tau-t_a-t_b=(tau-2)w_(a,b),
+|N(tau-2)|=K.
+```
+
+Thus away from the ramified conductor prime, a zero inverse edge is simply
+`w_(a,b)=0 mod q`, and inverse order-three support is a union of local
+two-generator ideals `(w_e,w_f)` for disjoint edges. A rational
+`gcd(N(w_e),N(w_f))` is only a **candidate**: both elements must vanish at the
+same prime ideal / embedding. The exact `K=41,p=2908049` negative control shows
+why this distinction matters.
+
+The strongest new finite witness is
+
+```text
+K=89,
+p=143207231,
+p/K^4=2.282469174...,
+I_-1=4,
+zero pair edges=(16,35),(20,33),
+|N(w_(16,35))|=|N(w_(20,33))|=p.
+```
+
+An independent C++20 verifier checks primality, exact subgroup order, distinct
+trace classes, both zero pair sums and the quartic `e_1=e_3=0` certificate.
+Therefore a strict finite inverse-support statement `p<=K^4` is false. This is
+compatible with, and does **not** settle, the asymptotic target `K^(4+o(1))`.
+
+See
+[`mathematics/cayley_inverse_quartic_localization.md`](mathematics/cayley_inverse_quartic_localization.md).
+
 ## Global / minimal-extension arithmetic
 
 Every maintained cleared prime-order collision polynomial has
@@ -248,12 +312,12 @@ Res(Phi_K,P)=K^3M^2.
 ```
 
 The canonical difference polynomial classifies split exceptions and has exact
-fourth-power discriminant structure.  The global split weighted budget is
-explicitly `O(K^4)`.  For split prime pairs `K~X^theta,p~X`, this yields
+fourth-power discriminant structure. The global split weighted budget is
+explicitly `O(K^4)`. For split prime pairs `K~X^theta,p~X`, this yields
 normalized double-average excess tending to zero for fixed `theta<1/3`, and an
 exact density-one baseline for fixed `theta<1/5`.
 
-For arbitrary rational `p!=2,K`, let `f=ord_K(p)` and work in `F_(p^f)`.  Every
+For arbitrary rational `p!=2,K`, let `f=ord_K(p)` and work in `F_(p^f)`. Every
 non-forced collision Frobenius orbit has size exactly `f`, so
 
 ```text
@@ -261,13 +325,13 @@ f | Delta_K^ext(p).
 ```
 
 The all-prime budget plus PNT/Brun--Titchmarsh yields density-one exact baseline
-for unrestricted prime pairs for fixed `theta<1/3`.  This does not improve the
+for unrestricted prime pairs for fixed `theta<1/3`. This does not improve the
 split slice, where `f=1`.
 
 ## Microscopic spectral closure
 
 For an `N x N` unitary matrix, partition-Mobius inversion and Poisson summation
-give exact microscopic factorial correlation formulas in joint traces.  In
+give exact microscopic factorial correlation formulas in joint traces. In
 particular,
 
 ```text
@@ -276,8 +340,8 @@ C_(2,N)(U;phi)
 ```
 
 Band-limited microscopic statistics therefore require trace information for
-`|m|=Theta(N)`, the Heisenberg scale.  The deterministic Fourier bridge is
-closed.  The open spectral theorem is a weighted joint-trace comparison for
+`|m|=Theta(N)`, the Heisenberg scale. The deterministic Fourier bridge is
+closed. The open spectral theorem is a weighted joint-trace comparison for
 the correct desymmetrized block, plus a uniform high-frequency tail for general
 Schwartz tests.
 
@@ -286,7 +350,7 @@ Schwartz tests.
 ![Verification stack](assets/verification_stack.svg)
 
 The maintained CI runs exact Python/SymPy regressions, independent C++20
-verifiers, all active Lean 4 modules, and a fresh TeX build.  Representative
+verifiers, all active Lean 4 modules, and a fresh TeX build. Representative
 commands are
 
 ```bash
@@ -297,6 +361,7 @@ python computations/verification/cayley_product_row_real_trace_ideal.py
 python computations/verification/cayley_trace_intercept_shift_resultant.py
 python computations/verification/cayley_product_row_reflection.py
 python computations/verification/cayley_inverse_pair_sum_factorization.py
+python computations/verification/cayley_inverse_edge_norm_support.py
 python computations/verification/cayley_frobenius_extension.py
 python computations/verification/offoff_elliptic_spike_regression.py
 
@@ -306,6 +371,7 @@ cmake --build build -j
 ./build/cayley_energy_verifier
 ./build/cayley_trace_intercept_rigidity
 ./build/cayley_trace_intercept_rigidity --extended
+./build/cayley_inverse_k89_witness
 
 cd formalization && lake build
 ```
@@ -316,15 +382,18 @@ Exact calculation records are retained under `evidence/`; source audits under
 ## Current open targets
 
 The arithmetic closure target is now a **common-divisor theorem for small
-cyclotomic scalar systems**, not another generic incidence estimate. A
+cyclotomic scalar/local systems**, not another generic incidence estimate. A
 sufficient form remains
 
 ```text
 P_split^+(Lambda'_K^(3))<=K^(4+o(1)),
 ```
 
-or an equivalent largest-prime theorem for `Omega` / inverse `Theta`.
+or an equivalent largest-prime theorem for `Omega` / inverse `Theta` /
+reduced-edge support. The exact `K=89` certificate shows that the stronger
+strict finite ceiling `p<=K^4` is false; it does not refute the displayed
+asymptotic target.
 
 Independently, microscopic BGS requires Heisenberg-scale desymmetrized joint
-trace estimates and high-frequency tail control.  Full BGS/GOE/COE
+trace estimates and high-frequency tail control. Full BGS/GOE/COE
 universality remains **OPEN**.
