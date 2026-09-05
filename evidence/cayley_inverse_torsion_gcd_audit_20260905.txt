@@ -1,0 +1,82 @@
+Inverse edge polynomial shared-factor audit
+Date: 2026-09-05
+Status: FINITE-EVIDENCE / development execution record only.
+
+OBJECTIVE
+
+Adversarially test the open hypothesis suggested by
+  mathematics/cayley_inverse_reduced_resultant_filter.md
+that every characteristic-zero polynomial factor shared by two distinct inverse
+edge polynomials is a torsion / real-cyclotomic factor.
+
+No growing-K theorem is claimed here.
+
+DEFINITIONS
+
+For integer index n,
+  t_n(T)=2*T_n(T/2),
+  v_0(T)=0,
+  v_n(T)=(t_n(T)-2)/(T-2),
+  w_(a,b)(T)=2-v_a(T)-v_b(T).
+
+The audited edge set was
+  0 <= a < b <= 50,
+  a != 1,
+  b != 1.
+
+This gives exactly 1225 edge polynomials.
+
+ALGORITHM
+
+1. Factor every w_(a,b)(T) exactly over Z[T] using SymPy factor_list.
+2. Normalize each irreducible factor to a monic coefficient tuple.
+3. Retain only irreducible factors appearing in at least two distinct edge
+   polynomials.
+4. For each repeated factor F(T), form the reciprocal lift
+     F~(z)=z^deg(F) F(z+z^-1).
+5. Factor F~ exactly over Z[z].
+6. Compare every irreducible factor of F~ against exact ordinary cyclotomic
+   polynomials Phi_n(z), 1<=n<=250.
+
+ENVIRONMENT
+
+Python 3.13.5
+SymPy 1.14.0
+No floating-point arithmetic and no random sampling were used.
+
+RESULT
+
+  edge polynomials audited:                 1225
+  repeated irreducible factor types:          24
+  repeated factors with non-cyclotomic lift:   0
+  largest cyclotomic order encountered:       25
+  reference execution time:                34.37 s
+
+Thus no counterexample to the torsion-shared-factor hypothesis was found in
+this finite range.
+
+INTERPRETATION
+
+This is stronger as a falsification test than pairwise gcd inspection because
+an irreducible factor is factored once per edge and then matched globally.
+It does NOT prove that shared factors are always torsion for arbitrary indices
+or growing K.
+
+The maintained CI regression remains deliberately smaller.  It exhaustively
+checks K=31,37,41,43 for the support-free consequence
+  |Res(C_K,G)|=1
+for every nonconstant pairwise gcd G, and checks the reciprocal cyclotomic
+factorization of the 15 distinct K=31 gcds.  The max-index-50 audit is recorded
+here rather than added to CI so that a development-scale falsifier does not
+inflate the mandatory verification runtime.
+
+OPEN TARGET
+
+Prove or disprove:
+  every nonconstant gcd factor shared by two distinct valid inverse edge
+  polynomials w_e,w_f is a torsion factor; equivalently, every irreducible
+  shared factor has reciprocal lift equal to an ordinary cyclotomic polynomial.
+
+If true, then for prime K outside the finitely compatible torsion orders such a
+factor evaluates to a unit at the real K-cyclotomic root, reducing
+same-embedding cross-class support to the ordinary coprime resultant filter.
