@@ -7,6 +7,8 @@ checks the intrinsic linear-algebra statement behind it:
     nullity Sylv(P,Q) = deg gcd(P,Q),
 
 and therefore order-three support is precisely the corank>=3/Fitting locus.
+For split cyclotomic controls the real embedding exponent is part of the finite
+certificate.
 """
 from __future__ import annotations
 
@@ -78,10 +80,14 @@ def check_generic_kernel() -> None:
     print("generic Sylvester nullity/Fitting criterion: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_exponent: int = 1) -> int:
     assert p % K == 1
+    m = (K - 1) // 2
+    assert 1 <= embedding_exponent <= m
     primitive = int(sp.primitive_root(p))
-    zeta = pow(primitive, (p - 1) // K, p)
+    zeta0 = pow(primitive, (p - 1) // K, p)
+    assert zeta0 != 1 and pow(zeta0, K, p) == 1
+    zeta = pow(zeta0, embedding_exponent, p)
     return (zeta + pow(zeta, -1, p)) % p
 
 
@@ -109,14 +115,20 @@ def first_pscs(P: sp.Poly, Q: sp.Poly, count: int = 3) -> list[int]:
     return out
 
 
-def check_split_row(K: int, p: int, r: int, expected_g: int | None = None) -> int:
+def check_split_row(
+    K: int,
+    p: int,
+    r: int,
+    expected_g: int | None = None,
+    embedding_exponent: int = 1,
+) -> int:
     _, P0, Q0 = trace_cofactor_pair(K, r)
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_exponent)
     P = specialize(P0, tau, p)
     Q = specialize(Q0, tau, p)
     g = sp.gcd(P, Q).degree()
     if expected_g is not None:
-        assert g == expected_g, (K, p, r, g, expected_g)
+        assert g == expected_g, (K, p, r, embedding_exponent, g, expected_g)
 
     M = sylvester_map_matrix(P, Q)
     rank = rank_mod_p(M, p)
@@ -130,35 +142,39 @@ def check_split_row(K: int, p: int, r: int, expected_g: int | None = None) -> in
     compound_rank = math.comb(rank, n - 2) if rank >= n - 2 else 0
     assert (compound_rank == 0) == (g >= 3)
     print(
-        f"K={K:2d} p={p:4d} r={r:2d} gcd={g} "
-        f"rank={rank}/{n} psc012={psc}: OK"
+        f"K={K:2d} p={p:4d} r={r:2d} emb={embedding_exponent:2d} "
+        f"gcd={g} rank={rank}/{n} psc012={psc}: OK"
     )
     return g
 
 
-def find_degree_one_anchor() -> tuple[int, int, int]:
+def find_degree_one_anchor() -> tuple[int, int, int, int]:
     for K in (7, 11, 13):
+        m = (K - 1) // 2
         for p in sp.primerange(K + 1, 600):
             if p % K != 1:
                 continue
-            tau = tau_embedding(K, p)
-            for r in range(2, K):
-                _, P0, Q0 = trace_cofactor_pair(K, r)
-                P = specialize(P0, tau, p)
-                Q = specialize(Q0, tau, p)
-                if sp.gcd(P, Q).degree() == 1:
-                    return K, p, r
+            for embedding_exponent in range(1, m + 1):
+                tau = tau_embedding(K, p, embedding_exponent)
+                for r in range(2, K):
+                    _, P0, Q0 = trace_cofactor_pair(K, r)
+                    P = specialize(P0, tau, p)
+                    Q = specialize(Q0, tau, p)
+                    if sp.gcd(P, Q).degree() == 1:
+                        return K, p, r, embedding_exponent
     raise AssertionError("no small degree-one anchor found")
 
 
 def main() -> None:
     check_generic_kernel()
 
-    check_split_row(11, 23, 10, expected_g=0)
-    K, p, r = find_degree_one_anchor()
-    check_split_row(K, p, r, expected_g=1)
-    check_split_row(7, 29, 6, expected_g=2)
-    check_split_row(23, 47, 22, expected_g=4)
+    # The same rational split prime can realize different gcd strata at
+    # different real embedding primes, so the exponent is part of the witness.
+    check_split_row(11, 23, 10, expected_g=0, embedding_exponent=1)
+    K, p, r, emb = find_degree_one_anchor()
+    check_split_row(K, p, r, expected_g=1, embedding_exponent=emb)
+    check_split_row(11, 23, 10, expected_g=2, embedding_exponent=2)
+    check_split_row(23, 47, 22, expected_g=4, embedding_exponent=1)
 
     print("cayley Sylvester/Fitting support regression: OK")
 
