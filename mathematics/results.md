@@ -73,8 +73,8 @@ The target for every intended split design is
 E_+(A)=(K-1)^4/p+O(K^(2+o(1))).
 ```
 
-It is already closed on the explicit complement of the exact real-trace support
-`Lambda'_K^(3)` below.
+It is already closed on the complement of the exact order-three row support
+described below.
 
 ## 5. Shifted-energy orbit reduction — EXACT / EXTERNAL-THEOREM
 
@@ -101,7 +101,7 @@ c(x)+c(y)=2(u-1)/(u-s+1).
 
 At fixed `u` and nonzero parameter there is at most one unordered subgroup
 pair. If `I_K(p)` is the maximum number of common parameters between two
-distinct product rows, then exactly
+distinct product rows, then
 
 ```text
 Delta_K(p)
@@ -110,59 +110,43 @@ Delta_K(p)
 Delta_K(p)<=4 I_K(p)(K-1)(K-2).
 ```
 
-For rows `w^2,q^2`, row intersection is the constrained affine trace equation
+For normalized rows `(1,r)`, the intersection problem is an affine trace map
 
 ```text
-Y=alpha X+beta,
-X=z+z^-1,
-alpha=(q-q^-1)/(w-w^-1),
-beta=2(w/q-q/w)/(w-w^-1).
+Y=alpha_r X+beta_r,
+alpha_r=U_(r-1)(tau/2),
+beta_r=-2U_(r-2)(tau/2),
+tau=zeta+zeta^-1.
 ```
 
 See [`cayley_product_row_intersections.md`](cayley_product_row_intersections.md).
 
 ## 7. Exact real-trace order-three support — EXACT + EXTERNAL-THEOREM
 
-Let `K=2m+1`, `tau=zeta+zeta^-1`, and let `C_K(T)` be the minimal polynomial of
-`tau`. The full subgroup trace polynomial is
+Let `K=2m+1` and `C_K(T)` be the minimal polynomial of `tau`. Put
 
 ```text
 H_K(T)=(T-2)C_K(T).
 ```
 
-After normalizing a distinct row pair to `(1,r)`, the affine coefficients are
-consecutive Chebyshev values
-
-```text
-alpha_r=U_(r-1)(tau/2),
-beta_r=-2U_(r-2)(tau/2).
-```
-
-The unique characteristic-zero common trace is the invalid row class `T=tau`.
-Remove it explicitly:
+The unique characteristic-zero common trace of the two full row polynomials is
+the invalid row class. After dividing it out,
 
 ```text
 P_(K,r)(T)=H_K(T)/(T-tau),
-Q_(K,r)(T)=H_K(alpha_r T+beta_r)/(T-tau).
+Q_(K,r)(T)=H_K(alpha_r T+beta_r)/(T-tau)
 ```
 
-Both are degree `m` polynomials over the maximal real cyclotomic ring. For every
-split `p!=K` they remain fixed-degree and squarefree, and for each real
-embedding prime `q|p`,
+are degree-`m` polynomials over the maximal real cyclotomic ring. For every
+split `p!=K` and embedding prime `q|p`,
 
 ```text
 deg gcd(P_(K,r),Q_(K,r) mod q)
  = number of common Cayley parameters of that row pair.
 ```
 
-Let `Jtr_(K,r)^(3)` be the coefficient ideal of the first three fixed-degree
-subresultants and write
-
-```text
-Jtr_(K,r)^(3) cap Z = Lambda_(K,r)^(3) Z.
-```
-
-Brown--Traub plus the exact trace interpretation gives
+The coefficient ideal of their first three fixed-degree subresultants contracts
+to `Lambda_(K,r)^(3) Z`, and Brown--Traub gives
 
 ```text
 p|Lambda_(K,r)^(3)
@@ -175,17 +159,17 @@ After removing factors `2,K` and multiplying over ratio classes,
 ```text
 p does not divide Lambda'_K^(3)
 iff
-I_K(p)<=2.
+I_K(p)<=2,
 ```
 
-Hence outside the exact order-three support,
+hence
 
 ```text
 Delta_K(p)<=8(K-1)(K-2),
 E_+(A)<=11(K-1)(K-2).
 ```
 
-Exact Smith-normal-form anchors are
+Exact anchors include
 
 ```text
 Lambda'_(7,2)^(3)=1,
@@ -193,37 +177,203 @@ Lambda'_(11,7)^(3)=1,
 Lambda'_(13,3)^(3)=1,
 Lambda'_(13,12)^(3)=5^2,
 Lambda'_(17,10)^(3)=103,
-Lambda'_(23,18)^(3)=47^3*139  (extended).
+Lambda'_(23,18)^(3)=47^3*139.
 ```
 
 The split primes `103`, `47`, and `139` are genuinely realized by row
 intersections of size at least three.
 
-The remaining growing-`K` problem is
+The growing-`K` closure target remains
 
 ```text
 P_split^+(Lambda'_K^(3))<=K^(4+o(1)).
 ```
 
-A proof would close the pointwise Cayley-energy bottleneck throughout
-`K=o(p^(1/4))`. This is **OPEN**.
-
 See [`cayley_product_row_real_trace_ideal.md`](cayley_product_row_real_trace_ideal.md).
 
 ### Scope correction for predecessor invariants
 
-The older dehomogenized projective-row integers `G'_(K,r)^(3)` and
-`D'_(K,r)^(3)` remain valid **one-way** obstructions:
+The older dehomogenized integers `G'_(K,r)^(3)` and `D'_(K,r)^(3)` remain valid
+only in the direction
 
 ```text
 I>=3 ==> p|D' ==> p|G'.
 ```
 
-Their converses are not active: specialization can create leading-degree loss
-at `mu=infinity`, producing subresultant false positives. The real-trace
-`Lambda` construction removes this ambiguity.
+Their converses fail under specialization degree drop at `mu=infinity`.
 
-## 8. Square resultants and Fibonacci obstruction — EXACT
+## 8. Inverse-row reflection reduction — EXACT / EXTERNAL-THEOREM
+
+For `r=-1`,
+
+```text
+alpha=-1,
+beta=2tau,
+Q(T)=-P(2tau-T).
+```
+
+After shifting to `tau`, write
+
+```text
+F(Z)=P(tau+Z)=E(Z^2)+Z O(Z^2).
+```
+
+For every split embedding prime,
+
+```text
+I_-1(q)=2 deg gcd(E,O mod q).
+```
+
+Thus inverse-row intersections are automatically even, and `I_-1>=3` is a
+corank-two half-degree problem. A specialization-safe coefficient ideal gives
+an exact support integer `Xi_K`. The Chebyshev fibre identity
+
+```text
+2(T_K(T/2)-1)=(T-2)C_K(T)^2
+```
+
+shows that this is a reflection self-intersection of one explicit Dickson fibre.
+
+Finite split anchors include support prime `47` at `K=23`, `59` at `K=29`, and
+`311,1303` at `K=31`; at `(K,p)=(31,1303)`, `I_-1(p)=4`.
+
+See [`cayley_product_row_reflection.md`](cayley_product_row_reflection.md).
+
+## 9. Characteristic-zero trace-intercept rigidity — EXACT + EXTERNAL-THEOREM
+
+For trace classes `[a],[b]`, define
+
+```text
+gamma_r(a,b)=t_b-alpha_r t_a.
+```
+
+Bass's prime-conductor cyclotomic-unit theorem implies multiplicative
+independence of
+
+```text
+|1-zeta|, |1-zeta^2|, ..., |1-zeta^m|.
+```
+
+Using
+
+```text
+|s_n|=E_[2n],
+|t_x-t_y|=E_[x-y]E_[x+y],
+```
+
+one obtains a complete fibre classification.
+
+### Theorem
+
+For every odd prime `K>=7` and every normalized ratio `r!=1`, every
+characteristic-zero fibre of `gamma_r` has cardinality at most `2`.
+
+- For `r=-1`, every double fibre is only a swap.
+- For `r!=+-1`, every double fibre is, up to signs and exchange,
+
+```text
+([a],   [a+1-r]),
+([a+2], [a+1+r]),
+```
+
+and the equality follows exactly from
+
+```text
+t_(x+r)-t_(x-r)=s_r s_x.
+```
+
+A third point would create a triangle in the step-two quotient of the odd
+`K`-cycle by `a~-a`; this quotient is a path and has no such triangle.
+
+In particular the distinguished characteristic-zero row intersection
+`([1],[r])` is isolated. Order-three support is therefore genuinely created by
+finite reduction, not by a hidden characteristic-zero triple.
+
+An independent C++20 sparse group-ring verifier checks all normalized ratios in
+the maintained quick range through `K=199`; an extended recorded run also checks
+prime `K=251,307,401,503,601,701,809`, always with maximum fibre size `2`.
+
+See [`cayley_trace_intercept_rigidity.md`](cayley_trace_intercept_rigidity.md).
+
+## 10. Cyclotomic-unit matching and scalar shift-resultant support — EXACT
+
+For valid trace classes define `u_n=s_n/s_1` and
+
+```text
+W_r(b)=u_((b+r)/2)u_((b-r)/2),
+V_r(a)=u_r u_((a+1)/2)u_((a-1)/2).
+```
+
+Then
+
+```text
+gamma_r(a,b)-beta_r=s_1^2(W_r(b)-V_r(a)).
+```
+
+Since `s_1` is a unit away from `K`, every split row intersection is exactly a
+congruence
+
+```text
+W_r(b)=V_r(a) mod q
+```
+
+between explicit products of cyclotomic units.
+
+There is also a scalar exact-support encoding. Let
+
+```text
+P_1(T)=H_K(T)/(T-t_1),
+R_r(U)=H_K(U)/(U-t_r),
+mathcal R_(K,r)(Z)
+ =Res_T(P_1(T),R_r(alpha_r T+beta_r+Z))
+ =c_0+c_1 Z+c_2 Z^2+....
+```
+
+Over every split embedding prime,
+
+```text
+ord_(Z=0)(mathcal R_(K,r) mod q)=I_(1,r)(q).
+```
+
+Therefore
+
+```text
+I>=3 iff c_0=c_1=c_2=0 mod q.
+```
+
+The three-generator ideal
+
+```text
+J^shift_(K,r)=(c_0,c_1,c_2)
+```
+
+contracts to an integer `Omega_(K,r)^(3)` having the same **split
+rational-prime support** as `Lambda_(K,r)^(3)`. Equality of the full integers or
+non-split valuations is not claimed.
+
+SymPy/Smith anchors are
+
+```text
+(K,r)=(7,2):   Omega=7^3,                  Omega'=1,
+(K,r)=(11,7):  Omega=11^5,                 Omega'=1,
+(K,r)=(13,3):  Omega=13^6,                 Omega'=1,
+(K,r)=(13,12): Omega=2^4*5^2*13^6,         Omega'=5^2.
+```
+
+Finally, the nonzero constant coefficient already gives for every fixed ratio
+
+```text
+sum_(p==1 mod K, I_r(p)>=3) log p = O(K^3).
+```
+
+This does not close the largest-prime target: summing over `O(K)` ratio classes
+returns the existing `O(K^4)` global scale. The next arithmetic target is a
+simultaneous-gcd theorem for `c_0,c_1,c_2` or the explicit cyclotomic-unit
+matching graph, not another height bound on `c_0` alone.
+
+See [`cayley_trace_intercept_rigidity.md`](cayley_trace_intercept_rigidity.md).
+
+## 11. Square resultants and Fibonacci obstruction — EXACT
 
 Every admissible prime-order cleared collision polynomial satisfies
 
@@ -232,8 +382,7 @@ P(X)=(X-1)^3Q(X),
 Res(Phi_K,P)=K^3M^2.
 ```
 
-The maintained exponential norm cutoff excludes all non-forced reductions. The
-Fibonacci slice
+The Fibonacci slice
 
 ```text
 Res(Phi_K,X^2+3X+1)=F_K^2
@@ -243,7 +392,7 @@ shows why a polynomial bound on every individual collision resultant is
 impossible. The associated rational model and `(K,p)=(131,F_131)` certificate
 both exhibit exact excess `32`.
 
-## 9. Canonical additive discriminant and ratio-orbit structure — EXACT
+## 12. Canonical additive discriminant and ratio-orbit structure — EXACT
 
 A single squarefree difference polynomial `S_K` satisfies for split primes
 
@@ -263,7 +412,7 @@ and globally
 Exact larger-`K` computations falsify the former residual-height
 `O(K^3 log K)` heuristic: genuine `K^4` archimedean mass remains.
 
-## 10. Multiplicative Cayley rigidity — EXACT
+## 13. Multiplicative Cayley rigidity — EXACT
 
 Characteristic-zero product collisions are swap and simultaneous inversion
 only, giving
@@ -276,7 +425,7 @@ A canonical product discriminant gives the finite-field exceptional-prime
 classification. This is independent structure, not an additive-transfer
 theorem.
 
-## 11. Global split-prime additive mass budget — EXACT
+## 14. Global split-prime additive mass budget — EXACT
 
 For odd prime `K`,
 
@@ -287,9 +436,9 @@ sum_{p==1 mod K}Delta_K(p)log p
 
 This is a deterministic `O(K^4)` logarithmic budget over all split primes.
 
-## 12. Frobenius amplification over minimal finite extensions — EXACT
+## 15. Frobenius amplification over minimal finite extensions — EXACT
 
-For an arbitrary rational prime `p!=2,K`, put
+For arbitrary rational prime `p!=2,K`, put
 
 ```text
 f=ord_K(p),
@@ -298,44 +447,30 @@ H=mu_K(F_q),
 A_(K,p)=c(H\{1}).
 ```
 
-Frobenius multiplies every exponent in a collision tuple by `p mod K`. Every
-non-forced collision orbit has size exactly `f`, and therefore
+Every non-forced collision orbit under Frobenius has size exactly `f`, hence
 
 ```text
 f | Delta_K^ext(p).
 ```
 
-The normalized collision-resultant valuation argument works at a single prime
-ideal above `p`, so the split weighted budget extends to **all** `p!=2,K`:
-
-```text
-sum_{p!=2,K}Delta_K^ext(p)log p
- <=(K^3-5K^2+6K+1)((K-1)log12-3logK).
-```
-
-The canonical difference discriminant classification also extends:
+The normalized collision-resultant argument at one prime ideal extends the
+weighted budget to all `p!=2,K`, and the canonical discriminant classification
+extends as well:
 
 ```text
 Delta_K^ext(p)>0 iff p|Disc(S_K),
 Delta_K^ext(p)<=4v_p(Disc(S_K)).
 ```
 
-For unrestricted prime pairs `K~X^theta,p~X`, the Frobenius lower bound for a
-bad prime, PNT, Brun--Titchmarsh and `tau(n)=n^(o(1))` imply that for every fixed
-`theta<1/3`, asymptotically almost every pair has
+For unrestricted prime pairs `K~X^theta,p~X`, PNT, Brun--Titchmarsh and the
+Frobenius multiplicity imply a density-one exact baseline for every fixed
+`theta<1/3`.
 
-```text
-Delta_K^ext(p)=0,
-E_+(A_(K,p))=3(K-1)(K-2)
-```
-
-exactly in the minimal extension.
-
-This does **not** improve the original split slice, where `ord_K(p)=1`.
+This does **not** improve the split slice, where `ord_K(p)=1`.
 
 See [`cayley_frobenius_amplification.md`](cayley_frobenius_amplification.md).
 
-## 13. Full Cayley/Jacobi trace identity — EXACT
+## 16. Full Cayley/Jacobi trace identity — EXACT
 
 For the normalized full annihilator twisted-Jacobi matrix,
 
@@ -343,20 +478,19 @@ For the normalized full annihilator twisted-Jacobi matrix,
 1_Ahat(r)=K Tr M_S(2r),
 ```
 
-with exact second and fourth trace moments
+with exact moments
 
 ```text
 sum_q|Tr M_S(q)|^2=p(K-1)/K^2,
 sum_q|Tr M_S(q)|^4=pE_+(A)/K^4.
 ```
 
-This is the ordinary full trace and does not revive the retracted historical
-noncommutative trace shortcut.
+This is the ordinary full trace, not a desymmetrized spectral-block theorem.
 
-## 14. Averaged split theorems — EXACT + EXTERNAL-THEOREM
+## 17. Averaged split theorems — EXACT + EXTERNAL-THEOREM
 
 For fixed `theta<1/3`, prime `K~X^theta`, split prime `p~X`,
-Bombieri--Vinogradov and PNT imply
+Bombieri--Vinogradov and PNT give
 
 ```text
 average Delta_K(p)/K^2 <<_theta X^(3theta-1)->0.
@@ -370,14 +504,12 @@ baseline:
 
 ```text
 Delta_K(p)=0,
-E_+(A)=3(K-1)(K-2)
+E_+(A)=3(K-1)(K-2).
 ```
 
-for asymptotically almost every dyadic split pair.
+## 18. Corrected off/off elliptic theorem — EXACT + EXTERNAL-THEOREM
 
-## 15. Corrected off/off elliptic theorem — EXACT + EXTERNAL-THEOREM
-
-The generic off/off family has a distinguished reducible fiber with exact valid
+The generic off/off family has a distinguished reducible fibre with exact valid
 count `2p-8`. After spike extraction, Igusa monodromy and
 Grothendieck--Lefschetz/Deligne quasi-orthogonality give
 
@@ -388,73 +520,59 @@ Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4.
 Thus the off/off layer has collapsed onto the same pointwise Cayley-energy
 bottleneck.
 
-## 16. Exact trace-to-local-statistics bridge — EXACT
+## 19. Exact trace-to-local-statistics bridge — EXACT
 
-Let `U` be an `N x N` unitary matrix. Mobius inversion on the lattice of set
-partitions gives an exact formula for each distinct-index spectral exponential
-sum as a finite linear combination of products
-
-```text
-prod_B Tr U^(sum_(a in B)m_a).
-```
-
-Poisson summation then gives an exact formula for microscopic factorial
-`k`-point statistics in terms of these joint trace products. In the pair case,
+For an `N x N` unitary matrix, Mobius inversion on set partitions expresses
+each distinct-index exponential sum exactly through products of traces. Poisson
+summation then gives microscopic factorial `k`-point statistics as weighted
+sums of those products. In the pair case,
 
 ```text
 C_(2,N)(U;phi)
  =N^(-2) sum_m phihat(m/N)(|Tr U^m|^2-N).
 ```
 
-For compact Fourier support, the relevant exponents satisfy
+Compact Fourier support requires exponents of order `N`, the Heisenberg scale.
+Thus a weighted joint-trace comparison with the target RMT ensemble on that
+range is sufficient for the corresponding band-limited microscopic theorem.
 
-```text
-|m|=Theta(N),
-```
-
-the Heisenberg scale. Hence a weighted joint-trace comparison with the target
-RMT ensemble on that range is sufficient for the corresponding band-limited
-microscopic correlation theorem.
-
-The bridge itself is exact. The required Heisenberg-scale trace estimates for
-the correct desymmetrized arithmetic spectral block are **OPEN**. Removing the
-Fourier band-limit additionally requires a uniform high-frequency tail bound.
+The deterministic bridge is exact. The required Heisenberg-scale trace
+estimates for the correct desymmetrized arithmetic spectral block are **OPEN**.
+Removing the Fourier band-limit also requires a uniform high-frequency tail.
 
 See [`trace_to_local_statistics_bridge.md`](trace_to_local_statistics_bridge.md).
 
-## 17. Adversarial finite controls
+## 20. Adversarial finite controls
 
 - `(K,p)=(29,728017)` and `(31,1042903)` have `p>K^4` but excess `48`; bare `p>K^4 => exact baseline` is false.
 - `(K,p)=(41,2908049)` has a row pair with two common parameters; `I_K(p)<=1` is false.
-- complete additive exceptional sets remain `E_11={23,67,89}` and `E_13={53,79,131,157,313}`;
+- `(K,p)=(31,1303)` has inverse-row intersection size `4`.
+- complete additive exceptional sets include `E_11={23,67,89}` and `E_13={53,79,131,157,313}`;
 - `(p,K)=(461,23)` has energy `1190` versus forced baseline `902`;
-- minimal-extension regression controls are
-  `(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)` in `(K,p,f,Delta)` notation.
+- minimal-extension regression controls are `(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)` in `(K,p,f,Delta)` notation;
+- independent C++20 trace-intercept regression reaches prime `K=809` in the extended recorded run with maximum fibre size `2` throughout.
 
 Finite computation proves only its explicit finite statements.
 
-## 18. Retractions and scope boundaries
+## 21. Retractions and scope boundaries
 
 Historical all-orders Catalan/arcsine promotion, the noncommutative trace
 shortcut, unsupported higher-rank extrapolations, the former spike-free
 off/off theorem, the residual-height `O(K^3 log K)` heuristic, and the two-sided
 geometric interpretation of the dehomogenized `D/G` row ideals are not active.
 
+The scalar support `Omega` is not silently identified with `Lambda` beyond the
+proved equality of **split rational-prime support**.
+
 See [`../record/retractions.md`](../record/retractions.md).
 
-## 19. Microscopic BGS/GOE/COE — OPEN
+## 22. Microscopic BGS/GOE/COE — OPEN
 
 No theorem in this repository proves a mean-spacing local eigenphase law. The
-Fourier/partition conversion from traces to microscopic correlations is now
-exact, so the spectral closure condition is no longer vague: prove the required
-joint trace comparison at Heisenberg scale for the correct desymmetrized
-spectral blocks, and control the high-frequency tail when extending beyond
-band-limited tests.
-
-The current frontier is
+current frontier separates into two chains:
 
 ```text
-exact split support of Lambda'_K^(3)
+cyclotomic-unit / scalar order-three split support
         -> pointwise centered Cayley energy for all intended split designs
         -> complete fourth-moment control
 
@@ -465,3 +583,6 @@ Heisenberg-scale desymmetrized joint trace estimates
         -> high-frequency tail control
         -> full microscopic BGS/GOE/COE.
 ```
+
+The deterministic Fourier arrow in the second chain is already exact; the
+arithmetic and spectral estimates themselves remain open.
