@@ -44,11 +44,14 @@ boundary are maintained in
 \texttt{mathematics/pell\_coboundary\_resonance.md} and its companion PDF.
 General analytic arguments are not claimed to be fully formalized in Lean.
 
-
 The generated observable also admits an exact finite fourth-moment formula.
-For $X_K=(\sqrt K/2)\overline C$, its full-space fourth moment is
-$3-\gamma_C/K+O(1/(KN))$, with
-$\gamma_C=4.1785026500210028\ldots$; on the odd space the separately bounded
-parity error instead gives $3-\gamma_C/K+O(K^2/N)$. The closed formula and
-its error budget are proved in the companion article and checked independently
-against Weyl convolution. High-precision decimals are not interval certificates.
+For $X_K=(\sqrt K/2)\overline C$, the full-space and odd-space estimates are
+\[
+ \mu_{4,N}=3-\frac{\gamma_C}{K}+O\!\left(\frac1{KN}\right),
+ \qquad
+ \mu_{4,-}=3-\frac{\gamma_C}{K}+O\!\left(\frac{K^2}{N}\right),
+\]
+where $\gamma_C=4.178502650021\ldots$.
+The closed formula and its separate parity-error budget are proved in the
+companion article and checked independently against Weyl convolution.
+High-precision decimals are not interval certificates.
