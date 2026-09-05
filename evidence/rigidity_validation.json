@@ -1,0 +1,287 @@
+{
+  "status": "TARGETED_CHECKS_PASS",
+  "scope": "Finite exact and floating-point checks; no global CI, new Lean build, external proof acceptance or priority inferred.",
+  "read_base": "ae01ae4585f86de0c97b00d165abf6cd9f11d999",
+  "single_orbit_exact_cases": 726,
+  "other_maps": [
+    {
+      "matrix": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "exact_checks": 240,
+      "M1_Gamma_over_pi_squared": "256/65"
+    },
+    {
+      "matrix": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "exact_checks": 240,
+      "M1_Gamma_over_pi_squared": "1800/113"
+    },
+    {
+      "matrix": [
+        1,
+        2,
+        2,
+        5
+      ],
+      "exact_checks": 240,
+      "M1_Gamma_over_pi_squared": "9800/613"
+    }
+  ],
+  "rational_optimizer_count": 9,
+  "sample_spectral_factor_count": 6,
+  "four_mode_coefficient_identity": "exact polynomial equality and sum of squares over Z",
+  "four_mode_cpp_cases": 80,
+  "radius_three_witness": {
+    "frequencies": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        -3
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "coefficients": [
+      -5,
+      -7,
+      4,
+      1,
+      5,
+      -10,
+      10,
+      -5,
+      -1,
+      2,
+      2,
+      -6,
+      2,
+      2,
+      1,
+      -1
+    ],
+    "Gamma_over_pi_squared": 1890144,
+    "C0": 396,
+    "Gamma_over_pi_squared_L2_fourth": "6563/2178"
+  },
+  "support": {
+    "halfwidth": "1/16",
+    "second_coordinate_range": [
+      "3/16",
+      "13/16"
+    ],
+    "separation_gap": "1/8",
+    "arithmetic": "exact rational"
+  },
+  "algebra": {
+    "weyl_product_max_error": 2.0358293740687926e-15,
+    "cat_covariance_max_error": 1.4906276899456693e-15,
+    "nodal_control_max_error": 1.3854480080019692e-15,
+    "negative_controls": [
+      {
+        "N": 7,
+        "omitted_half_period_error": 2.0000000000000004
+      },
+      {
+        "N": 9,
+        "omitted_half_period_error": 2.000000000000001
+      },
+      {
+        "N": 15,
+        "omitted_half_period_error": 1.9999999999999998
+      },
+      {
+        "N": 31,
+        "omitted_half_period_error": 1.9999999999999998
+      }
+    ]
+  },
+  "classical_checks": 24,
+  "classical_max_error": 3.36775052289795e-12,
+  "classical_nonzero_displacement": 0.2105900422886804,
+  "wrong_sign_negative_control": 0.1399502876408083,
+  "analytic_commutator_checks": [
+    {
+      "N": 31,
+      "HS_commutator_over_hbar": 307.24855341638244,
+      "exact_value": 307.2485534163823,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 63,
+      "HS_commutator_over_hbar": 313.7372117774388,
+      "exact_value": 313.7372117774388,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 127,
+      "HS_commutator_over_hbar": 315.31223300031405,
+      "exact_value": 315.31223300031405,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 255,
+      "HS_commutator_over_hbar": 315.69952486905737,
+      "exact_value": 315.69952486905714,
+      "limiting_value": 315.82734083485946
+    }
+  ],
+  "flat_operator_checks": [
+    {
+      "N": 31,
+      "kappa": 0.02,
+      "commutator_operator_norm": 0.02347450174832262,
+      "gauge_operator_error": 0.16612168745989891
+    },
+    {
+      "N": 63,
+      "kappa": 0.02,
+      "commutator_operator_norm": 0.003633648273170779,
+      "gauge_operator_error": 0.09107539581927701
+    },
+    {
+      "N": 127,
+      "kappa": 0.02,
+      "commutator_operator_norm": 0.0008094521359839533,
+      "gauge_operator_error": 0.05007034666043206
+    },
+    {
+      "N": 255,
+      "kappa": 0.02,
+      "commutator_operator_norm": 7.165154168521227e-05,
+      "gauge_operator_error": 0.02229154900931499
+    },
+    {
+      "N": 511,
+      "kappa": 0.02,
+      "commutator_operator_norm": 2.9930138507543388e-06,
+      "gauge_operator_error": 0.003275965304789973
+    },
+    {
+      "N": 1023,
+      "kappa": 0.02,
+      "commutator_operator_norm": 4.607397319781572e-08,
+      "gauge_operator_error": 0.00022753642219380997
+    }
+  ],
+  "pell_kick_cases": 6,
+  "report_sha256": {
+    "sharp_coercivity.json": "2c6743c253af78a80b525b6bfb3205075afd5fdada72a0f4e750722d04fe9aa9",
+    "four_mode_coercivity.json": "c5d96a5c9f1e450f96d1e0926982353172f7229c75eb46b9562712789bca5541",
+    "flat_quantum.json": "d56f964d8a6e0bc7475480f67486b604005ccc8c9118b964956faab46533f20b",
+    "flat_quantum_large.json": "553c1e7a6129af968b41cdb665345897b740098b7de3ad0416545ae2c4f6089b"
+  },
+  "checked_code_sha256": {
+    "computations/cpp/pell_sharp_orbit_verifier.cpp": "bbcbbf308c80b8e32e0d304cd125160b70a437f24ce8a1195a5343c2c4d36661",
+    "computations/verification/pell_flat_quantum_check.py": "3f788062b86601e12acf04bad4e945de449af57a763037d6da89eeee1bfd6179",
+    "computations/verification/pell_four_mode_coercivity.py": "0db6bb8fe2ec758a9cafe29f00b15042b1f0879af633d09b54127e8389496722",
+    "computations/verification/pell_sharp_coercivity_check.py": "d2b06036d938a258f7fecadcc286bc911f86e377066a50b4a519a53c83c05931"
+  },
+  "executions": [
+    {
+      "label": "cpp_compile",
+      "returncode": 0,
+      "elapsed_seconds": 10.412,
+      "record_sha256": "0ec6c9b779b90ceeee4a24a5563e750808fe5aee32b8f56b0c9e8e54d463a3e5",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sharp_variational",
+      "returncode": 0,
+      "elapsed_seconds": 2.136,
+      "record_sha256": "f796bc1ca27fd9eb1428a7a5fe2c9858fcbb070429fd0dc3a537e216402822ae",
+      "log_sha256": "652d4b77b275a3c7054e6af0bb872b3a665a6c1cd36853ad20ea17424693d51f"
+    },
+    {
+      "label": "four_mode",
+      "returncode": 0,
+      "elapsed_seconds": 2.519,
+      "record_sha256": "190edb558d200b8e284f6aa016a4c116e26e560dfed924d89ca296b6cec2710f",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "quantum_core",
+      "returncode": 0,
+      "elapsed_seconds": 11.132,
+      "record_sha256": "84f6bec9244b380c13473305a2fe027097d90683a4647b77b20c0e173624cb8f",
+      "log_sha256": "1fdb6a3675db8547034e9f570d31ccb0c76893bdb1cc55f3450346392a2479ba"
+    },
+    {
+      "label": "quantum_1023",
+      "returncode": 0,
+      "elapsed_seconds": 18.135,
+      "record_sha256": "758d8b1a616600a11559df58a3c555f0241b0504f04a1fcb853319333ca0e35d",
+      "log_sha256": "8174fb27b9cbb500883809a7220d82f40036dfe9ae4718cb852bfb465b614045"
+    }
+  ],
+  "excluded_attempts": [
+    "N=1023,2047 combined run timed out; no N=2047 result.",
+    "No local Lean compiler available; no new Lean build claimed.",
+    "Radius-two/radius-three numerical optimization and restricted LP infeasibility are not global theorems."
+  ],
+  "rounding": "No outward interval rounding for matrix/ODE/root calculations. Exact combinatorics and rational identities are separately scoped."
+}
