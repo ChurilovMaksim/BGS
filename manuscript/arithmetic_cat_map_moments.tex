@@ -35,10 +35,11 @@ and Heisenberg-Scale Trace Criteria}
 \maketitle
 
 \begin{abstract}
-We develop exact arithmetic reductions for a fourth-moment problem in quantum
-cat maps and isolate two logically separate closure problems before microscopic
-Bohigas--Giannoni--Schmit (BGS) universality can be addressed.  Let $p$ be an
-odd prime, let $H\le\Fp^\times$ have odd prime order $K$, and put
+We develop exact arithmetic reductions for a fourth-moment problem arising in
+quantum cat maps and isolate two logically separate closure problems before a
+microscopic Bohigas--Giannoni--Schmit (BGS) statement can be attempted.  Let
+$p$ be an odd prime, let $H\le\mathbf F_p^\times$ have odd prime order $K$, and
+put
 \[
 c(h)=\frac{h+1}{h-1},\qquad A=c(H\setminus\{1\}).
 \]
@@ -46,83 +47,96 @@ An exact pair-key reduction gives
 \[
 B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf 1_{t=0},
 \]
-and both nontrivial fluctuation layers are controlled by the additive energy
-$E_+(A)$.  A source-exact subgroup-curve theorem yields
+and both nontrivial fourth-moment fluctuation layers are controlled by the
+additive energy $E_+(A)$.  A source-exact subgroup-curve theorem yields
 \[
 E_+(A)<34K^{8/3}\qquad(100<K<p^{3/4}/3),
 \]
 while the corrected off/off elliptic analysis gives
 \[
-\Var_{t\ne0}O(t)
-\ll pE_+(A)+K^2p+K^4p^{1/2}+K^4.
+\Var_{t\ne0}O(t)\ll pE_+(A)+K^2p+K^4p^{1/2}+K^4.
 \]
 
 The pointwise arithmetic obstruction admits a sharper exact geometry.  A
 fixed-product decomposition reduces non-forced excess to intersections of
 special affine copies of the prime cyclotomic trace set.  Fixed-degree
 subresultants in the maximal real cyclotomic field define an exact split-prime
-order-three support $\Lambda_K'{}^{(3)}$, and outside that support
+order-three support $\Lambda'_K{}^{(3)}$; outside it,
 \[
 E_+(A)\le 11(K-1)(K-2).
 \]
-For the inverse row ratio we prove a reflection identity that halves the
-polynomial degree.  More generally, Bass's prime-conductor relations for
-cyclotomic units imply a complete characteristic-zero affine-intercept
-classification: every intercept fibre has cardinality at most two, and every
-double fibre is explicit.  Thus order-three intersections are genuinely
-created by finite reduction.
+Bass's prime-conductor relations for cyclotomic units imply a complete
+characteristic-zero affine-intercept classification: every intercept fibre has
+cardinality at most two, and all double fibres are explicit.  Thus order-three
+intersections are genuinely created by finite reduction.
 
-We then replace the many-coefficient subresultant support by a scalar
-shift-resultant
+For a general row ratio we replace the many-coefficient subresultant support by
+one scalar shift resultant
 \[
 \mathcal R_{K,r}(Z)
  =\Res_T\!\left(P_1(T),R_r(\alpha_rT+\beta_r+Z)\right)
- =c_0+c_1Z+c_2Z^2+\cdots.
+ =c_0+c_1Z+c_2Z^2+\cdots,
 \]
-For every split embedding prime, the order of vanishing at $Z=0$ is exactly the
-row-intersection number.  Consequently $I\ge3$ is equivalent to
-$c_0=c_1=c_2=0$ modulo one prime ideal.  Individual intersections are also
-congruences between explicit products of cyclotomic units.  For each fixed row
-ratio the supported split primes satisfy the deterministic logarithmic budget
+whose order at $Z=0$ is exactly the row-intersection number.  Hence the event
+$I\ge3$ is equivalent to simultaneous vanishing of $c_0,c_1,c_2$ modulo one
+split prime ideal.  Individual intersections are also congruences between
+explicit products of cyclotomic units.  For each fixed ratio, the supported
+split primes satisfy
 \[
 \sum_{p\equiv1\,(K),\ I_r(p)\ge3}\log p=O(K^3).
 \]
-This does not yet prove the required polynomial largest-prime bound: summing
-over $O(K)$ ratios returns the existing $O(K^4)$ global scale.
+
+The inverse ratio $r=-1$ has additional structure.  If
+$F(X)=P(\tau+X)$ and $x_i$ are its roots, then universally
+\[
+\Res_X(F(X),F(Z-X))
+ =2^mF(Z/2)\,S(Z)^2,
+\qquad
+S(Z)=\prod_{i<j}(Z-x_i-x_j),
+\]
+with $m=(K-1)/2$.  At split primes the diagonal factor is a unit at $Z=0$, so
+$I_{-1}=2\ord_0S$ and the order-three event is exactly
+$S(0)=S'(0)=0$.  Writing
+$F_Z(X)=F(X+Z/2)=E_Z(X^2)+XO_Z(X^2)$, we further prove
+\[
+S(Z)=\pm\Res_Y(E_Z,O_Z).
+\]
+Thus the inverse support is controlled by a half-degree resultant and its
+translation derivative, computable without the degree-$m^2$ shift resultant.
 
 A companion minimal-extension theorem uses Frobenius: if
 $f=\ord_K(p)$ and the order-$K$ subgroup is placed in $\mathbf F_{p^f}$, every
 non-forced collision orbit has size exactly $f$.  Together with the global
-resultant budget this gives a density-one exact baseline for unrestricted prime
-pairs $K\asymp X^\theta$, $p\asymp X$ for every fixed $\theta<1/3$; it does not
-improve the split slice, where $f=1$.
+resultant budget this gives a density-one exact baseline for unrestricted
+prime pairs $K\asymp X^\theta$, $p\asymp X$ for every fixed $\theta<1/3$;
+it does not improve the split slice, where $f=1$.
 
-Finally, a partition-M\"obius identity and Poisson summation give an exact
-trace-to-local-statistics bridge: microscopic band-limited $k$-point
-statistics require joint traces at powers of order the matrix dimension, the
-Heisenberg scale.  The remaining spectral theorem is therefore a weighted
-Heisenberg-scale trace comparison for the correct desymmetrized block, plus a
-high-frequency tail estimate beyond band-limited tests.  No microscopic
+Finally, partition-M\"obius inversion and Poisson summation give an exact
+trace-to-local-statistics bridge.  Microscopic band-limited $k$-point
+statistics require joint trace information at powers of order the matrix
+dimension, the Heisenberg scale.  The missing spectral theorem is therefore a
+weighted Heisenberg-scale trace comparison for the correct desymmetrized block,
+plus a high-frequency tail estimate beyond band-limited tests.  No microscopic
 BGS/GOE/COE universality theorem is claimed.
 \end{abstract}
 
 \section{Scope and evidence discipline}
 
 Throughout the split finite-field part, $p$ is an odd prime and
-$H\le\Fp^\times$ is a multiplicative subgroup of odd prime order $K$.  Division
-is in $\Fp$.  Exact statements are promoted only with their hypotheses and
-load-bearing derivations.  Finite computations are certificates, regressions
-or falsifiers, never substitutes for growing-parameter proofs.  When a theorem
-from the literature is used, the relevant source and hypothesis are identified.
+$H\le\Fp^\times$ has odd prime order $K$.  Division is in $\Fp$.  Universal
+claims are called exact only when the load-bearing derivation is present;
+finite computations are certificates, regressions or falsifiers, never
+substitutes for asymptotic proof.  Literature inputs are used only with their
+hypotheses checked in the required regime.
 
-Moment information and microscopic spectral statistics are kept separate.
-Arithmetic cat-map literature contains strong quantum-ergodicity and
-matrix-element results \cite{KR2005,KRR2007,DJ2024,KORS2025,BS2026}, while
-random-matrix universality is rigorous in special model classes such as mixing
-quantum graphs under their own assumptions \cite{PW2014,PW2015}.  None of those
-results is silently transferred to the arithmetic family studied here.
+The distinction between moment information and microscopic spectral statistics
+is essential.  Arithmetic cat-map literature contains strong matrix-element and
+quantum-ergodicity results \cite{KR2005,KRR2007,DJ2024,KORS2025,BS2026}, while
+random-matrix universality is rigorous for special model classes such as mixing
+quantum graphs under their own hypotheses \cite{PW2014,PW2015}.  None of these
+results is silently transferred to the arithmetic family considered here.
 
-\section{Exact pair-key geometry and fourth-moment coupling}
+\section{Exact pair-key geometry}
 
 For $x,y\in\Fp\setminus\{0,1\}$ define
 \begin{equation}\label{eq:keydef}
@@ -139,7 +153,7 @@ If $x\ne y$, then $u,v\in\Fp^\times\setminus\{1\}$, $u\ne v$, and
  d=\frac{(u-1)(v-1)}{v-u}.
 \end{equation}
 Conversely every such $(u,v)$ gives a unique admissible off-diagonal pair.
-The diagonal $x=y$ collapses to $(u,v,d)=(1,1,0)$ with multiplicity $p-2$.
+The diagonal collapses to $(u,v,d)=(1,1,0)$ with multiplicity $p-2$.
 \end{proposition}
 
 \begin{proof}
@@ -147,42 +161,24 @@ The equations $x=uy$ and $x-1=v(y-1)$ give $(u-v)y=1-v$, hence
 \eqref{eq:inverse}.  The diagonal statement is immediate.
 \end{proof}
 
-\begin{corollary}\label{cor:k2}
-Under the subgroup constraints $u,v\in H$, the number of admissible
-off-diagonal ordered pairs is exactly $(K-1)(K-2)$.
-\end{corollary}
-
-Give each collapsed key $r=(u_r,v_r,d_r)$ multiplicity $n_r$, equal to one off
-the diagonal and $p-2$ at $(1,1,0)$.  Define
-\begin{equation}\label{eq:Bdef}
-B(t)=\sum_{r,s}n_rn_s\,
- \mathbf 1_H(u_ru_s)\mathbf 1_H(v_rv_s)
- \mathbf 1_{d_r+d_s=t}.
-\end{equation}
-Let $O(t)$ be the off/off contribution and
+Under the subgroup constraints $u,v\in H$, there are exactly
+$(K-1)(K-2)$ admissible off-diagonal ordered pairs.  If $O(t)$ denotes the
+off/off contribution and
 \[
 C_H(t)=\#\left\{(u,v)\in(H\setminus\{1\})^2:
- u\ne v,\ \frac{(u-1)(v-1)}{v-u}=t\right\}.
+ u\ne v,\ \frac{(u-1)(v-1)}{v-u}=t\right\},
 \]
-Then
+then exact bookkeeping gives
 \begin{equation}\label{eq:Bdecomp}
 B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf1_{t=0}.
 \end{equation}
-The coefficient two is load-bearing: diagonal/off and off/diagonal are distinct
-ordered classes.
-
-\begin{proposition}[Exact total coupled count]\label{prop:v4}
-\[
+The factor two is essential: diagonal/off and off/diagonal are distinct ordered
+classes.  The total count is
+\begin{equation}\label{eq:V4}
 |V_4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K.
-\]
-\end{proposition}
-
-If
-\[
-\Sigma_4(q)=\sum_{t\in\Fp}B(t)e_p(qt),\qquad
-V=\sum_tB(t),\qquad Z=B(0),
-\]
-finite Fourier orthogonality gives
+\end{equation}
+If $\Sigma_4(q)=\sum_tB(t)e_p(qt)$, $V=\sum_tB(t)$ and $Z=B(0)$, finite
+Fourier orthogonality gives
 \begin{equation}\label{eq:meanvar}
 \mathbb E_{q\ne0}\Sigma_4(q)=\frac{pZ-V}{p-1},
 \qquad
@@ -190,7 +186,7 @@ finite Fourier orthogonality gives
 \end{equation}
 No probabilistic independence assumption enters this reduction.
 
-\section{Cayley transform and the pointwise energy target}
+\section{Cayley energy and the best uniform bound}
 
 Put
 \[
@@ -201,57 +197,34 @@ For $u\ne v$,
 \frac{(u-1)(v-1)}{v-u}=\frac{2}{c(u)-c(v)},
 \qquad c(h^{-1})=-c(h).
 \end{equation}
-Thus $A=-A$, $0\notin A$, and the nonzero multiplicities of $C_H$ are the
-nonzero additive-difference multiplicities of $A$ up to the permutation
-$x\mapsto2/x$. Consequently
+Thus $A=-A$ and the nonzero multiplicities of $C_H$ are additive-difference
+multiplicities of $A$ up to the permutation $x\mapsto2/x$.  Hence
 \begin{equation}\label{eq:energyCH}
 \sum_tC_H(t)^2=E_+(A)-|A|^2,
 \qquad
 E_+(A)=\sum_xr_{A-A}(x)^2.
 \end{equation}
-With $n=K-1$, identity and central inversion force the nonzero baseline
-\begin{equation}\label{eq:forced-nz}
-n(2n-3)=(K-1)(2K-5).
+Identity and central inversion force the nonzero baseline
+\begin{equation}\label{eq:forced}
+(K-1)(2K-5).
 \end{equation}
-
 For the unnormalized Fourier transform,
 \begin{equation}\label{eq:centered}
-E_+(A)=\frac{|A|^4}{p}
+E_+(A)=\frac{(K-1)^4}{p}
  +\frac1p\sum_{q\ne0}|\widehat{1_A}(q)|^4.
 \end{equation}
-Hence the sharp pointwise target is
-\begin{equation}\label{eq:centered-target}
-E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}),
+The sharp pointwise target is therefore
+\begin{equation}\label{eq:sharp-target}
+E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}).
 \end{equation}
-equivalently
+
+For $r_A(t)=\#\{(a,b)\in A^2:a+b=t\}$, clearing Cayley denominators gives
 \[
-\sum_{q\ne0}|\widehat{1_A}(q)|^4\ll pK^{2+o(1)}.
+(2-t)xy+t(x+y)-(2+t)=0,
 \]
+an absolutely irreducible bidegree-$(1,1)$ curve in odd characteristic.
 
-There are two useful exact reformulations.  With $y=(h-1)^{-1}$,
-\[
-h=\frac{y+1}{y},\qquad c(h)=1+2y,
-\]
-so the problem is an additive-energy question for the reciprocal shifted
-subgroup $(H-1)^{-1}$.  Solving $c(h)-c(k)=t$ gives
-\begin{equation}\label{eq:unipotent}
-k=\frac{(2-t)h+t}{2+t-th},
-\end{equation}
-which is the Cayley conjugate of a translation.  Known shifted-subgroup and
-M\"obius-incidence estimates \cite{MSS2018,RW2022} do not by themselves imply
-\eqref{eq:centered-target}.
-
-\section{A uniform pointwise energy bound}
-
-For $t\in\Fp$, write $r(t)=\#\{(a,b)\in A^2:a+b=t\}$.  If $a=c(x)$ and
-$b=c(y)$, clearing denominators gives
-\begin{equation}\label{eq:bilinear-fiber}
-P_t(x,y)=(2-t)xy+t(x+y)-(2+t)=0.
-\end{equation}
-The bilinear determinant equals $-4$, so every fibre is absolutely irreducible
-in odd characteristic.
-
-\begin{theorem}[Direct Cayley energy bound]\label{thm:direct}
+\begin{theorem}[Direct pointwise Cayley bound]\label{thm:direct}
 If
 \[
 100<K<\frac13p^{3/4},
@@ -263,30 +236,24 @@ E_+(A)<34K^{8/3}.
 \end{theorem}
 
 \begin{proof}
-For $t\ne0,-2$, Theorem~2 of the source version of Vyugin--Makarychev
-\cite{VM2015}, with its degree hypotheses checked on
-\eqref{eq:bilinear-fiber}, gives $r(t)\le32K^{2/3}$.  The exceptional fibres
-satisfy $r(0)=K-1$ and $r(-2)\le K-1$.  Since
-$\sum_tr(t)=(K-1)^2$,
+For $t\ne0,-2$, the source form of Vyugin--Makarychev's subgroup-curve theorem
+\cite{VM2015,MV2019} gives $r_A(t)\le32K^{2/3}$ after its degree hypotheses are
+checked on the displayed bilinear polynomial.  The exceptional fibres satisfy
+$r_A(0)=K-1$ and $r_A(-2)\le K-1$.  Since
+$\sum_tr_A(t)=(K-1)^2$,
 \[
 E_+(A)
-\le2(K-1)^2+32K^{2/3}\sum_{t\ne0,-2}r(t)
+\le2(K-1)^2+32K^{2/3}\sum_{t\ne0,-2}r_A(t)
 <34K^{8/3}.
 \]
 \end{proof}
 
-The later journal version is \cite{MV2019}.  Combining with
-\eqref{eq:energyCH} gives the mixed centered-variance bound
-\begin{equation}\label{eq:mixed-var}
-\Var_{t\ne0}\bigl(2(p-2)C_H(t)\bigr)<136pK^{8/3}.
-\end{equation}
+\section{Prime-order rigidity, square resultants and discriminants}
 
-\section{Prime-order additive rigidity and square resultants}
-
-Let $K$ be an odd prime and $\zeta=e^{2\pi i/K}$. Then
-\begin{equation}\label{eq:cot}
+Let $\zeta=e^{2\pi i/K}$.  Then
+\[
 c(\zeta^a)=-i\cot\frac{\pi a}{K}.
-\end{equation}
+\]
 Chowla's prime-modulus cotangent independence \cite{Chowla1970,Wang1982}
 identifies the characteristic-zero Cayley set with a rational cross-polytope.
 
@@ -295,140 +262,85 @@ Every characteristic-zero equal-difference collision among
 $\{c(\zeta^a):a\in\mathbf F_K^*\}$ is identity or central inversion-swap.
 \end{theorem}
 
-For an admissible collision quadruple, clearing the Cayley denominators gives an
-integral polynomial
-\[
-P(X)=(X-1)^3Q(X),\qquad
-Q(X^{-1})=X^{3-T}Q(X),\qquad \|P\|_1\le12.
-\]
+For every admissible cleared collision polynomial $P(X)$, direct algebra gives
+$P(X)=(X-1)^3Q(X)$ and a reciprocal relation for $Q$.  Passing to the maximal
+real subfield yields:
 
 \begin{theorem}[Square-resultant theorem]\label{thm:square-res}
-For every odd prime $K$ and every admissible collision quadruple,
 \begin{equation}\label{eq:square-res}
-\Res(\Phi_K,P)=K^3M^2,
-\qquad M\in\Z.
+\Res(\Phi_K,P)=K^3M^2,\qquad M\in\Z.
 \end{equation}
 For a non-forced characteristic-zero collision, $M\ne0$.
 \end{theorem}
-
-\begin{proof}
-Let $L=\Q(\zeta)$ and $L^+$ be its maximal real subfield.  Choose $m$ with
-$2m\equiv3-T\pmod K$.  The reciprocal identity makes
-$\beta=\zeta^mQ(\zeta)$ a real algebraic integer. Hence
-\[
-\Norm_{L/\Q}(Q(\zeta))=\Norm_{L^+/\Q}(\beta)^2=M^2.
-\]
-Since $\Norm_{L/\Q}(\zeta-1)=K$, taking norms of
-$P(\zeta)=(\zeta-1)^3Q(\zeta)$ proves the formula.  Non-vanishing follows from
-Theorem~\ref{thm:add-rigidity}.
-\end{proof}
 
 The Fibonacci slice
 \[
 \Res(\Phi_K(X),X^2+3X+1)=F_K^2
 \]
 shows that individual collision resultants can be exponentially large.  At
-$K=131$, $p=F_{131}$, independent arbitrary-precision computations together
-with a Lucas primality certificate give exact nonzero Cayley excess $32$; this
-is a finite certificate, not an asymptotic theorem.  The primitive-divisor
-input for the corresponding rational model is taken from \cite{Yabuta2001}.
+$K=131$, $p=F_{131}$, a Lucas primality certificate and independent Python/C++
+arbitrary-precision computations give exact nonzero Cayley excess $32$; this is
+a finite certificate, not an asymptotic theorem.  The primitive-divisor input
+for the associated rational model is from \cite{Yabuta2001}.
 
-\section{Canonical difference discriminant and ratio orbits}
-
-Let
-\[
-Q_K(X)=\frac{(X+1)^K-(X-1)^K}{2},
-\qquad
-R_K(T)=\Res_X(Q_K(X),Q_K(X-T)).
-\]
-Remove the diagonal factor $T^{K-1}$ and take the primitive squarefree part
-$S_K(T)$.  Then $\deg S_K=(K-1)^2/2$.
-
-\begin{theorem}[Single-discriminant classification]\label{thm:disc-class}
-For every split prime $p\equiv1\pmod K$,
+Let $S_K$ be the primitive squarefree nonzero-difference polynomial obtained
+from the resultant of the characteristic-zero Cayley polynomial with its
+translate.  Then for split primes
 \begin{equation}\label{eq:disc-class}
 \Delta_K(p)>0\iff p\mid\Disc(S_K),
 \qquad
-\Delta_K(p)\le4v_p(\Disc(S_K)),
+\Delta_K(p)\le4v_p(\Disc(S_K)).
 \end{equation}
-where
-\[
-\Delta_K(p)=\sum_{d\ne0}r_{A-A}(d)^2-(K-1)(2K-5).
-\]
-\end{theorem}
-
-The polynomial factors into ratio orbits.  If $[r]$ denotes the involution
-$r\sim r^{-1}$, then
-\[
-S_K(T)=\prod_{[r]}F_r(T),
-\]
-and Dedekind-sum separation of the orbit factors \cite{JRW2011} yields exact
-squares in the cross-resultants.
-
-\begin{theorem}[Fourth-power discriminant structure]\label{thm:fourth-power}
-For a positive integer $J_K$,
+Ratio-orbit factorization and Dedekind-sum separation \cite{JRW2011} give the
+exact global form
 \begin{equation}\label{eq:global-fourth}
 |\Disc(S_K)|
- =2^{(K-1)^4/4}
-  K^{(K-1)(K^2-7)/4}
-  J_K^4.
+ =2^{(K-1)^4/4}K^{(K-1)(K^2-7)/4}J_K^4
 \end{equation}
-\end{theorem}
+for an integer $J_K>0$.  Exact computations show that the residual logarithmic
+mass genuinely remains $K^4$-scale, so \eqref{eq:global-fourth} is structural,
+not a hidden proof of \eqref{eq:sharp-target}.
 
-Exact computations through the maintained range reject an earlier
-$O(K^3\log K)$ residual-height heuristic: the cross-resultants retain genuine
-$K^4$-scale total archimedean mass.  Thus
-\eqref{eq:global-fourth} is structural, not a hidden proof of
-\eqref{eq:centered-target}.
+\section{Fixed-product rows and exact split support}
 
-\section{Fixed-product rows and exact real-trace support}
-
-For a valid subgroup pair put $u=xy$, $s=x+y$.  Then
-\begin{equation}\label{eq:row-param}
+For one valid subgroup pair put $u=xy$, $s=x+y$.  Then
+\begin{equation}\label{eq:rowparam}
 c(x)+c(y)=\frac{2(u-1)}{u-s+1}.
 \end{equation}
-At fixed $u\ne1$ and fixed nonzero Cayley parameter, there is at most one
-unordered pair.  If $I_K(p)$ is the maximum number of common parameters of two
-distinct product rows, the exact cross-row decomposition gives
-\begin{equation}\label{eq:row-energy}
+At fixed $u\ne1$ and nonzero parameter there is at most one unordered pair.
+Let $I_K(p)$ be the maximum number of common parameters of two distinct product
+rows.  The exact cross-row decomposition gives
+\begin{equation}\label{eq:rowenergy}
 \Delta_K(p)\le4I_K(p)(K-1)(K-2).
 \end{equation}
 
-Normalize a distinct row pair to $(1,r)$ and put
+Normalize a row pair to $(1,r)$ and set
 \[
 \tau=\zeta+\zeta^{-1},\qquad
 \alpha_r=U_{r-1}(\tau/2),\qquad
 \beta_r=-2U_{r-2}(\tau/2).
 \]
-The affine trace equation is
-\begin{equation}\label{eq:cheb-row}
+The row equation is the affine trace relation
+\begin{equation}\label{eq:affinetrace}
 Y=\alpha_rX+\beta_r.
 \end{equation}
 Let $C_K(T)$ be the minimal polynomial of $\tau$ and set
 \[
 H_K(T)=(T-2)C_K(T).
 \]
-The unique characteristic-zero common full trace is the invalid row trace
-$T=\tau$.  Remove it:
-\begin{equation}\label{eq:real-cofactors}
-P_{K,r}(T)=\frac{H_K(T)}{T-\tau},\qquad
-Q_{K,r}(T)=\frac{H_K(\alpha_rT+\beta_r)}{T-\tau}.
-\end{equation}
-Both are degree $m=(K-1)/2$ over $\Z[\tau]$.  For each split embedding prime
-$\mathfrak q\mid p$,
-\begin{equation}\label{eq:gcd-intersection}
+The two full row polynomials have one unique characteristic-zero common trace,
+the invalid row trace.  Removing it produces fixed-degree source/target
+cofactors over $\Z[\tau]$.  For every split embedding prime $\mathfrak q$,
+\begin{equation}\label{eq:gcdcount}
 \deg\gcd(P_{K,r},Q_{K,r}\bmod\mathfrak q)
  =I_{1,r}(\mathfrak q).
 \end{equation}
 
-Let $J^{\rm tr}_{K,r}$ be the coefficient ideal of the first three fixed-degree
-subresultants and write
-\[
-J^{\rm tr}_{K,r}\cap\Z=\Lambda_{K,r}^{(3)}\Z.
-\]
+Let the coefficient ideal of the first three fixed-degree subresultants
+contract to $\Lambda_{K,r}^{(3)}\Z$.
 
-\begin{theorem}[Exact real-trace order-three support]\label{thm:lambda-support}
-For every split prime $p\equiv1\pmod K$,
+\begin{theorem}[Exact real-trace order-three support]\label{thm:lambda}
+For every split rational prime $p\equiv1\pmod K$,
 \[
 p\mid\Lambda_{K,r}^{(3)}
 \]
@@ -437,18 +349,18 @@ Cayley parameters.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
-Equation \eqref{eq:gcd-intersection} is exact because the valid trace cofactors
-remain fixed-degree and squarefree after split reduction.  Brown--Traub's
-fixed-degree subresultant criterion \cite{BT1971} identifies gcd degree at least
-three with vanishing of the first three subresultants.  Requiring all their
-coefficients to vanish in one prime ideal and contracting to $\Z$ gives the
-rational-prime statement.
+The valid cofactors remain fixed-degree and squarefree after split reduction,
+so \eqref{eq:gcdcount} is exact.  Brown--Traub's fixed-degree subresultant
+criterion \cite{BT1971} identifies gcd degree at least three with vanishing of
+the first three subresultants.  Their coefficient ideal records simultaneous
+vanishing in one prime ideal; contraction to $\Z$ gives the rational-prime
+statement.
 \end{proof}
 
 After removing factors $2,K$ and multiplying over ratio classes, write the
-support as $\Lambda_K'{}^{(3)}$.  Then
-\begin{equation}\label{eq:lambda-complement}
-p\nmid\Lambda_K'{}^{(3)}
+result as $\Lambda'_K{}^{(3)}$.  Then
+\begin{equation}\label{eq:outside-support}
+p\nmid\Lambda'_K{}^{(3)}
 \Longrightarrow
 I_K(p)\le2,
 \quad
@@ -456,434 +368,368 @@ I_K(p)\le2,
 \quad
 E_+(A)\le11(K-1)(K-2).
 \end{equation}
+The older dehomogenized $D'/G'$ invariants remain valid only as one-way
+obstructions because specialization can reduce leading degree at projective
+infinity.
 
-Earlier dehomogenized projective-row invariants $D'$ and $G'$ remain valid only
-as one-way obstructions: specialization can lower their leading degree at the
-projective point at infinity.  The real-trace construction is the active exact
-geometric support.
+\section{Characteristic-zero affine-intercept rigidity}
 
-\section{Inverse-row reflection and half-degree support}
-
-The ratio $r=-1$ has an additional involution.  Here
-\[
-\alpha_{-1}=-1,\qquad \beta_{-1}=2\tau,
-\]
-and
-\begin{equation}\label{eq:reflection}
-Q(T)=-P(2\tau-T).
-\end{equation}
 Write
 \[
-F(Z)=P(\tau+Z)=E(Z^2)+ZO(Z^2).
-\]
-
-\begin{theorem}[Inverse-row halving]\label{thm:inverse-halving}
-For every split embedding prime $\mathfrak q$,
-\begin{equation}\label{eq:inverse-halving}
-I_{-1}(\mathfrak q)=2\deg\gcd(E,O\bmod\mathfrak q).
-\end{equation}
-\end{theorem}
-
-Thus inverse-row intersections are even and the order-three event is a
-corank-two problem at roughly half the degree.  A fixed-degree subresultant
-ideal defines an exact split support integer $\Xi_K$.  The trace set is also the
-squarefree support of the Chebyshev fibre
-\begin{equation}\label{eq:cheb-fibre}
-2\bigl(T_K(T/2)-1\bigr)=(T-2)C_K(T)^2.
-\end{equation}
-At $(K,p)=(31,1303)$ a direct finite-field check gives $I_{-1}(p)=4$.
-
-\section{Cyclotomic trace-intercept rigidity}
-
-We now classify the characteristic-zero fibres underlying all ratios.  Put
-\[
 t_a=\zeta^a+\zeta^{-a},\qquad
-s_a=\zeta^a-\zeta^{-a},
-\]
-and let $[a]$ denote the trace class $a\sim-a$.  Define
-\begin{equation}\label{eq:gamma}
+s_a=\zeta^a-\zeta^{-a},\qquad
 \gamma_r(a,b)=t_b-\alpha_rt_a.
-\end{equation}
-For $1\le j\le m$ set
-\[
-E_j=|1-\zeta^j|.
 \]
+Let $[a]$ denote the trace class $a\sim-a$, and put
+$E_j=|1-\zeta^j|$, $1\le j\le m=(K-1)/2$.
 
-\begin{lemma}[Prime-order cyclotomic absolute values]\label{lem:E-ind}
-The positive real numbers $E_1,\ldots,E_m$ are multiplicatively independent.
+\begin{lemma}[Prime-conductor multiplicative independence]\label{lem:bass}
+The positive numbers $E_1,\ldots,E_m$ are multiplicatively independent.
 \end{lemma}
 
 \begin{proof}
 Bass's prime-power theorem for the group generated by $1-\zeta^j$, modulo
-torsion, identifies the prime-conductor Galois orbit modulo complex conjugation
-with a free $\Z$-basis \cite{Bass1966}.  If
-$\prod_jE_j^{n_j}=1$, squaring and using
-\[
-1-\zeta^{-j}=-\zeta^{-j}(1-\zeta^j)
-\]
-produces a relation modulo torsion with exponent $2n_j$ on each basis element.
-Hence every $n_j=0$.
+torsion, gives a free $\Z$-basis represented by one Galois orbit modulo complex
+conjugation \cite{Bass1966}.  Squaring any multiplicative relation among the
+absolute values turns it into a relation in this torsion-free group, forcing all
+exponents to vanish.
 \end{proof}
 
-We use the elementary factorizations
-\begin{equation}\label{eq:abs-factor}
+Use the elementary identities
+\begin{equation}\label{eq:absfacts}
 |s_n|=E_{[2n]},\qquad
-|t_x-t_y|=E_{[x-y]}E_{[x+y]}
+|t_x-t_y|=E_{[x-y]}E_{[x+y]}.
 \end{equation}
-for distinct trace classes.
 
-\begin{theorem}[Trace-intercept fibre rigidity]\label{thm:intercept-rigidity}
-Let $K\ge7$ be an odd prime and $r\ne1$.  Every fibre of
-\[
-([a],[b])\longmapsto\gamma_r(a,b)
-\]
-has cardinality at most two.
+\begin{theorem}[Trace-intercept fibre rigidity]\label{thm:intercept}
+For every odd prime $K\ge7$ and every normalized ratio $r\ne1$, every fibre of
+$([a],[b])\mapsto\gamma_r(a,b)$ has cardinality at most two.
 
-If $r=-1$, every double fibre is a swap.  If $r\ne\pm1$, every double fibre is,
-up to signs of representatives and exchange of the two points,
-\begin{equation}\label{eq:double-fibre}
+If $r=-1$, a double fibre is only a swap.  If $r\ne\pm1$, every double fibre is,
+up to signs and exchange,
+\begin{equation}\label{eq:doublefibre}
 ([a],[a+1-r]),\qquad([a+2],[a+1+r]).
 \end{equation}
-Moreover the equality in \eqref{eq:double-fibre} is exact.
 \end{theorem}
 
 \begin{proof}
-For $r=-1$, $\gamma_{-1}(a,b)=t_a+t_b$.  Equality of two such sums is a
-rational relation among prime-order roots of unity with total coefficient sum
-zero.  Since the only rational relation among
-$1,\zeta,\ldots,\zeta^{K-1}$ is a multiple of $\Phi_K$, all coefficients must
-vanish; only identity or swap remains.
-
-Assume $r\ne\pm1$ and two distinct pairs have the same intercept.  Then both
-source and target trace classes differ and
+Suppose two distinct pairs have the same intercept.  For $r\ne-1$,
 \[
 t_b-t_d=\alpha_r(t_a-t_c).
 \]
-Taking absolute values and using \eqref{eq:abs-factor} gives
+Taking absolute values and applying \eqref{eq:absfacts} yields
 \[
 E_{[b-d]}E_{[b+d]}E_{[2]}
  =E_{[a-c]}E_{[a+c]}E_{[2r]}.
 \]
-Lemma~\ref{lem:E-ind} therefore yields the multiset identity
-\begin{equation}\label{eq:folded-multiset}
-\{[b-d],[b+d],[2]\}
- =\{[a-c],[a+c],[2r]\}.
-\end{equation}
-Since $[2r]\ne[2]$, the class $[2]$ must match one of $[a-c]$ or $[a+c]$.
-After changing representatives and exchanging the source points, take
-$c=a+2$.  Cancelling $[2]$ in \eqref{eq:folded-multiset} gives
-\[
-\{[b-d],[b+d]\}=\{[2r],[2a+2]\},
-\]
-hence the target classes are exactly $[a+1-r]$ and $[a+1+r]$.  The original
-signed equality selects the ordering.  Finally
+Lemma~\ref{lem:bass} makes the multisets of folded indices equal.  Since
+$[2r]\ne[2]$, one source difference must be $[2]$; after changing signs and
+ordering take $c=a+2$.  The remaining two indices force the target classes in
+\eqref{eq:doublefibre}.  The equality itself follows from
 \[
 t_{x+r}-t_{x-r}=s_rs_x,
 \qquad
-t_{a+2}-t_a=s_1s_{a+1}
+t_{a+2}-t_a=s_1s_{a+1}.
 \]
-proves the displayed double-fibre identity directly.
-
-A fibre of size three would give three distinct source trace classes pairwise
-adjacent by a step of two.  Multiplying indices by $2^{-1}$ identifies this
-graph with the quotient of the odd $K$-cycle by $a\sim-a$, which is a path
-(up to a harmless terminal loop) and has no triangle.  Thus no third point can
-occur.
+A third point would form a triangle in the step-two quotient of the odd
+$K$-cycle by $a\sim-a$; that quotient is a path.  For $r=-1$ the intercept is
+$t_a+t_b$, and prime cyclotomic linear independence leaves only identity or
+swap.
 \end{proof}
 
-\begin{corollary}\label{cor:forced-isolated}
-The distinguished characteristic-zero row solution $([1],[r])$ is isolated.
-Thus every finite order-three intersection is genuinely created by reduction.
-\end{corollary}
+The distinguished characteristic-zero row solution $([1],[r])$ is therefore
+isolated.  This mechanism is related to cyclotomic-unit cross-ratio methods in
+projective equivalence of roots of unity \cite{Fu2022}, but the affine theorem
+above is proved directly in the prime-conductor setting.
 
-The structure is related to the cyclotomic-unit mechanism used in projective
-equivalence of roots of unity \cite{Fu2022}, but the present theorem is a
-special prime-order affine statement proved directly above.
+\section{Cyclotomic-unit matching and a scalar shift resultant}
 
-\section{Cyclotomic-unit matching and scalar shift-resultant support}
-
-The same row equation can be rewritten as a congruence between explicit
-cyclotomic units.  Let division by two in subscripts mean multiplication by
-$2^{-1}$ modulo $K$ and put
-\[
-u_n=\frac{s_n}{s_1}.
-\]
-For valid classes $[a]\ne[1]$, $[b]\ne[r]$ define
+Put $u_n=s_n/s_1$.  For valid trace classes define
 \begin{equation}\label{eq:WV}
 W_r(b)=u_{(b+r)/2}u_{(b-r)/2},\qquad
 V_r(a)=u_ru_{(a+1)/2}u_{(a-1)/2}.
 \end{equation}
-The difference identities give
-\begin{equation}\label{eq:unit-match}
+A direct difference factorization gives
+\begin{equation}\label{eq:unitmatch}
 \gamma_r(a,b)-\beta_r=s_1^2\bigl(W_r(b)-V_r(a)\bigr).
 \end{equation}
-Since $s_1$ is a unit away from $K$, for every split embedding prime
-$\mathfrak q$,
-\begin{equation}\label{eq:unit-congruence}
-\gamma_r(a,b)\equiv\beta_r\pmod{\mathfrak q}
-\iff
-W_r(b)\equiv V_r(a)\pmod{\mathfrak q}.
-\end{equation}
+Since $s_1$ is a unit away from $K$, every split row intersection is exactly a
+congruence $W_r(b)\equiv V_r(a)\pmod{\mathfrak q}$ between explicit products
+of cyclotomic units.
 
-There is a second exact support detector involving only three scalar algebraic
-integers.  Let
+Let
 \[
 P_1(T)=\frac{H_K(T)}{T-t_1},\qquad
 R_r(U)=\frac{H_K(U)}{U-t_r}
 \]
-and define
-\begin{equation}\label{eq:shift-resultant}
+and define the scalar shift resultant
+\begin{equation}\label{eq:shiftres}
 \mathcal R_{K,r}(Z)
  =\Res_T\!\left(P_1(T),R_r(\alpha_rT+\beta_r+Z)\right)
  =c_0+c_1Z+c_2Z^2+\cdots.
 \end{equation}
 
-\begin{theorem}[Scalar shift-resultant support]\label{thm:shift-support}
+\begin{theorem}[Scalar support identity]\label{thm:scalar-support}
 For every split embedding prime $\mathfrak q$,
-\begin{equation}\label{eq:ord-intersection}
-\ord_{Z=0}\bigl(\mathcal R_{K,r}(Z)\bmod\mathfrak q\bigr)
+\begin{equation}\label{eq:ordshift}
+\ord_{Z=0}(\mathcal R_{K,r}(Z)\bmod\mathfrak q)
  =I_{1,r}(\mathfrak q).
 \end{equation}
 Consequently
-\begin{equation}\label{eq:three-coeff}
+\[
 I_{1,r}(\mathfrak q)\ge3
 \iff
 c_0\equiv c_1\equiv c_2\equiv0\pmod{\mathfrak q}.
-\end{equation}
+\]
 \end{theorem}
 
 \begin{proof}
-Over the split residue field,
+Over the split residue field the two valid trace polynomials factor linearly,
+so the product formula gives
 \[
-P_1(T)=\prod_{[a]\ne[1]}(T-t_a),\qquad
-R_r(U)=\prod_{[b]\ne[r]}(U-t_b).
-\]
-The product formula for the resultant therefore gives
-\begin{equation}\label{eq:shift-product}
 \mathcal R_{K,r}(Z)
  =\prod_{[a]\ne[1]}\prod_{[b]\ne[r]}
-   \bigl(Z+\alpha_rt_a+\beta_r-t_b\bigr).
-\end{equation}
-Every factor is linear in $Z$ and vanishes at zero exactly for one valid row
-intersection, proving \eqref{eq:ord-intersection} and
-\eqref{eq:three-coeff}.
+   (Z+\alpha_rt_a+\beta_r-t_b).
+\]
+Each factor is linear in $Z$ and vanishes at zero exactly for one row
+intersection.
 \end{proof}
 
-Define the three-generator ideal
-\[
-J^{\rm shift}_{K,r}=(c_0,c_1,c_2)\subset\Z[\tau],
-\qquad
-J^{\rm shift}_{K,r}\cap\Z=\Omega_{K,r}^{(3)}\Z.
-\]
-
-\begin{corollary}[Three-generator exact support]\label{cor:omega}
-For split rational primes, $\Omega_{K,r}^{(3)}$ has exactly the same
-order-three prime support as $\Lambda_{K,r}^{(3)}$.
-\end{corollary}
-
-Equality of the full integers or of non-split valuations is not asserted.
-Exact SymPy/Smith anchors give prime-to-$2K$ support
-$1,1,1,5^2$ for $(K,r)=(7,2),(11,7),(13,3),(13,12)$, matching the corresponding
-real-trace support.
-
-\begin{theorem}[Per-ratio support mass]\label{thm:per-ratio-mass}
-Uniformly in $r\ne1$,
-\begin{equation}\label{eq:c0-norm}
-\log\left|\Norm_{\Q(\tau)/\Q}(c_0)\right|=O(K^3),
+The ideal $(c_0,c_1,c_2)$ contracts to an integer
+$\Omega_{K,r}^{(3)}$ with the same split rational-prime order-three support as
+$\Lambda_{K,r}^{(3)}$.  Equality of the full integers is not asserted.
+Moreover, the nonzero characteristic-zero constant coefficient gives the
+per-ratio deterministic budget
+\begin{equation}\label{eq:perratio}
+\sum_{\substack{p\equiv1\,(K)\\I_r(p)\ge3}}\log p=O(K^3).
 \end{equation}
-and hence
-\begin{equation}\label{eq:per-ratio-mass}
-\sum_{\substack{p\equiv1\,(K)\\ I_r(p)\ge3}}\log p=O(K^3).
+Summing over $O(K)$ ratio classes recovers an $O(K^4)$ scale, so
+\eqref{eq:perratio} is not a polynomial largest-prime theorem.
+
+\section{Inverse reflection and the pair-sum square}
+
+The ratio $r=-1$ has additional symmetry.  Here
+\[
+\alpha=-1,\qquad \beta=2\tau,
+\qquad Q(T)=-P(2\tau-T).
+\]
+Set
+\begin{equation}\label{eq:FEO}
+F(X)=P(\tau+X)=E(X^2)+XO(X^2).
+\end{equation}
+The reflection reduction gives
+\begin{equation}\label{eq:inverse-gcd}
+I_{-1}(\mathfrak q)=2\deg\gcd(E,O\bmod\mathfrak q).
+\end{equation}
+Thus inverse-row intersections are automatically even.  A fixed-degree
+half-size subresultant construction defines the exact split support integer
+$\Xi_K$.
+
+The scalar shift resultant admits a stronger universal factorization.
+
+\begin{theorem}[Inverse pair-sum factorization]\label{thm:pairsum}
+Let $x_1,\ldots,x_m$ be the roots of the monic polynomial $F$.  Define
+\[
+S(Z)=\prod_{i<j}(Z-x_i-x_j).
+\]
+Then $S\in\Z[\tau][Z]$ and
+\begin{equation}\label{eq:pairsquare}
+\Res_X(F(X),F(Z-X))=2^mF(Z/2)S(Z)^2.
+\end{equation}
+For every split embedding prime,
+\begin{equation}\label{eq:inverse-order}
+I_{-1}(\mathfrak q)=2\ord_{Z=0}(S(Z)\bmod\mathfrak q).
+\end{equation}
+Hence
+\begin{equation}\label{eq:two-scalar}
+I_{-1}(\mathfrak q)\ge3
+\iff
+S(0)\equiv S'(0)\equiv0\pmod{\mathfrak q}.
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-Corollary~\ref{cor:forced-isolated} gives $c_0\ne0$ in characteristic zero.
-Under the embedding $\zeta\mapsto\zeta^j$,
+The root-product formula gives
 \[
-|u_n^{(j)}|
- =\frac{|\sin(2\pi jn/K)|}{|\sin(2\pi j/K)|}.
+\Res_X(F(X),F(Z-X))=\prod_{i,j}(Z-x_i-x_j).
 \]
-With $d_j=\min(j,K/2-j)$, the elementary sine lower bound gives
-$|u_n^{(j)}|\le K/(4d_j)$.  Every factor of \eqref{eq:shift-product} at
-$Z=0$ is therefore at most $2+K/d_j$ in absolute value.  Since there are
-$m^2$ factors,
-\[
-\log|\Norm(c_0)|
- \le m^2\sum_{j=1}^m\log(2+K/d_j).
-\]
-The last sum is $O(K)$ by splitting at $K/4$ and applying the elementary
-Stirling estimate to the resulting integer and half-integer products.  This
-proves \eqref{eq:c0-norm}.  Every supported split prime divides the rational
-integer $|\Norm(c_0)|$, yielding \eqref{eq:per-ratio-mass}.
+The diagonal ordered pairs give $2^mF(Z/2)$, and every unordered pair $i<j$
+occurs twice.  The coefficients of $S$ are symmetric integral polynomials in
+the roots.  At a split prime, $F(0)=P(\tau)=H'_K(\tau)$ is nonzero modulo every
+embedding prime, so the diagonal factor is a unit at $Z=0$.  Combining with the
+general shift-resultant identity gives \eqref{eq:inverse-order};
+\eqref{eq:two-scalar} follows because the left side is even.
 \end{proof}
 
-Summing over $O(K)$ ratio classes returns $O(K^4)$, so
-Theorem~\ref{thm:per-ratio-mass} does not prove a polynomial bound for the
-largest supported split prime.  The strongest current pointwise closure target
-remains, for example,
-\begin{equation}\label{eq:lambda-target}
-P^+_{\rm split}(\Lambda_K'{}^{(3)})\le K^{4+o(1)},
+Let $S(Z)=s_0+s_1Z+\cdots$ and let the ideal $(s_0,s_1)$ contract to
+$\Theta_K\Z$.  Then $\Theta_K$, $\Xi_K$, and the inverse factor of
+$\Lambda_{K,-1}^{(3)}$ have the same split rational-prime support; their
+valuations need not agree.
+
+\section{The pair-sum polynomial as a translated half-degree resultant}
+
+The square root $S$ itself can be obtained without constructing the
+degree-$m^2$ shift resultant.  Translate
+\begin{equation}\label{eq:translatedF}
+F_Z(X)=F(X+Z/2)=E_Z(X^2)+XO_Z(X^2).
 \end{equation}
-or an equivalent theorem for the simultaneous scalar support.  The new
-formulation shows that the high-value problem is common-factor control for
-$c_0,c_1,c_2$ or the explicit unit congruences
-\eqref{eq:unit-congruence}, not another height estimate on $c_0$ alone.
 
-\section{Global split-prime collision budget}
+\begin{theorem}[Translated parity-resultant identity]\label{thm:translated-res}
+There exists a convention-dependent sign $\varepsilon_m\in\{\pm1\}$ such that
+\begin{equation}\label{eq:translated-res}
+S(Z)=\varepsilon_m\Res_Y(E_Z(Y),O_Z(Y)).
+\end{equation}
+Consequently
+\begin{align}
+S(0)&=\varepsilon_m\Res_Y(E,O),\label{eq:s0res}\\
+S'(0)&=\varepsilon_m
+\left.\frac{d}{dZ}\Res_Y(E_Z,O_Z)\right|_{Z=0}.\label{eq:s1res}
+\end{align}
+The first-order deformation is
+\begin{equation}\label{eq:deformation}
+\left.\partial_ZE_Z\right|_0=\frac{O+2YO'}{2},
+\qquad
+\left.\partial_ZO_Z\right|_0=E'.
+\end{equation}
+\end{theorem}
 
-Simultaneous multiplication of all four exponent indices by
+\begin{proof}
+The roots of $F_Z$ are $y_i=x_i-Z/2$.  Apply the constant pair-sum identity
+from Theorem~\ref{thm:pairsum} to the monic polynomial $F_Z$.  Its unordered
+pair-sum product at zero is
+\[
+\prod_{i<j}(-y_i-y_j)
+ =\prod_{i<j}(Z-x_i-x_j)=S(Z).
+\]
+The even/odd decomposition \eqref{eq:translatedF} identifies this product,
+up to the fixed resultant sign, with $\Res(E_Z,O_Z)$.  Differentiating
+$F(X+Z/2)$ at $Z=0$ gives \eqref{eq:deformation}.
+\end{proof}
+
+Thus inverse order-three support is the simultaneous divisibility problem for a
+half-degree resultant and its translation derivative.  In exact computation,
+both scalars can be obtained in one Sylvester determinant over dual numbers
+$\varepsilon^2=0$, reducing the determinant dimension to $O(K)$ rather than
+materializing a degree-$m^2$ polynomial.
+
+Exact Smith contractions give, after removing factors $2K$,
+\[
+\Theta'_7=1,\quad
+\Theta'_{11}=1,\quad
+\Theta'_{13}=5,\quad
+\Theta'_{17}=1,\quad
+\Theta'_{19}=37,\quad
+\Theta'_{23}=47^2\cdot137.
+\]
+For comparison $\Xi'_{23}=47\cdot137$: split prime support agrees, valuations
+differ.  The reference SymPy implementation reduces the $K=17$ computation
+from roughly $51$ seconds for the full shift resultant to roughly $0.6$ seconds
+for the translated half-degree route; at $K=23$ the latter remains on the
+order of seconds, after which Smith normal form becomes the principal finite
+algebra bottleneck.  These timings are reproducibility data, not asymptotic
+complexity theorems.
+
+The norm of the inverse constant shift coefficient also has the exact shape
+\begin{equation}\label{eq:inverse-norm}
+\left|\Norm(R_-(0))\right|
+ =2^{m^2}K^m\left|\Norm(\Res(E,O))\right|^2,
+\end{equation}
+using $|\Norm(F(0))|=K^m$.  Hence every prime away from $2K$ occurs with even
+valuation in this particular norm.  This explains part of the observed square
+pattern but does not imply equality of the support integers.
+
+\section{Global split-prime budget and minimal-extension Frobenius}
+
+Simultaneous multiplication of collision exponent indices by
 $a\in\mathbf F_K^\times$ acts freely on non-forced collision quadruples.  The
 number of normalized scaling orbits is
-\begin{equation}\label{eq:NK}
+\[
 N_K=K^3-5K^2+6K+1.
-\end{equation}
-For one orbit let $P_q$ be its collision polynomial and
-$R_q=\Res(\Phi_K,P_q)$.
+\]
+Combining the square-resultant theorem with $|\Res(\Phi_K,P)|\le12^{K-1}$
+gives:
 
 \begin{theorem}[Weighted split-prime budget]\label{thm:budget}
-For every odd prime $K$,
 \begin{equation}\label{eq:budget}
 \sum_{p\equiv1\,(K)}\Delta_K(p)\log p
 \le N_K\bigl((K-1)\log12-3\log K\bigr).
 \end{equation}
 \end{theorem}
 
-\begin{proof}
-For one split prime, the number of scaled members of an orbit that collide is
-bounded by $v_p(R_q)$.  Since $R_q=K^3M_q^2$ and
-$|R_q|\le12^{K-1}$, summing the valuations over normalized orbits gives the
-claim.
-\end{proof}
+For prime $K\asymp X^\theta$ and split prime $p\asymp X$,
+Bombieri--Vinogradov and PNT \cite{Bombieri1965,IK2004} imply
+\[
+\operatorname{average}\frac{\Delta_K(p)}{K^2}
+ \ll_\theta X^{3\theta-1}
+\]
+for fixed $\theta<1/3$.  Integrality of the excess strengthens this to a
+density-one exact baseline for fixed $\theta<1/5$:
+\[
+\Delta_K(p)=0,
+\qquad
+E_+(A)=3(K-1)(K-2)
+\]
+for asymptotically almost every split pair.
 
-\section{Frobenius amplification over minimal finite extensions}
-
-Let $p\ne2,K$ be any rational prime and put
+Now let $p\ne2,K$ be arbitrary and put
 \[
 f=\ord_K(p),\qquad q=p^f.
 \]
-Then $\mathbf F_q^\times$ contains the unique subgroup $H$ of order $K$; put
-$A_{K,p}=c(H\setminus\{1\})$ and let $\Delta_K^{\rm ext}(p)$ denote the
-non-forced nonzero equal-difference excess.
+In $\mathbf F_q$ the order-$K$ subgroup exists uniquely.
 
 \begin{theorem}[Frobenius amplification]\label{thm:frob}
 Every non-forced collision orbit under the $p$-power Frobenius has size exactly
-$f$.  In particular,
-\begin{equation}\label{eq:frob-div}
+$f$.  Hence
+\[
 f\mid\Delta_K^{\rm ext}(p).
-\end{equation}
+\]
+The weighted resultant budget and the discriminant classification extend to
+all such rational primes in the minimal extension.
 \end{theorem}
 
 \begin{proof}
-Frobenius sends the exponent tuple $(i,j,r,s)$ to $(pi,pj,pr,ps)$ modulo $K$.
-If a positive power $d<f$ fixed the tuple, any nonzero coordinate would give
-$p^d\equiv1\pmod K$, contradicting the definition of $f$.
+Frobenius multiplies every exponent by $p$ modulo $K$.  If a positive power
+$d<f$ fixed a collision tuple, any nonzero coordinate would imply
+$p^d\equiv1\pmod K$, contradicting the definition of $f$.  The resultant
+argument is applied at one prime ideal over $p$; $p\ne K$ is unramified, so its
+valuation on rational integers is the ordinary $p$-valuation.
 \end{proof}
 
-The normalized resultant argument works at one prime ideal over $p$, so the
-split budget and discriminant classification extend to all $p\ne2,K$:
-\begin{align}
-\sum_{p\ne2,K}\Delta_K^{\rm ext}(p)\log p
-&\le N_K\bigl((K-1)\log12-3\log K\bigr),\label{eq:allprime-budget}\\
-\Delta_K^{\rm ext}(p)>0
-&\iff p\mid\Disc(S_K),\qquad
-\Delta_K^{\rm ext}(p)\le4v_p(\Disc(S_K)).\label{eq:ext-disc}
-\end{align}
+PNT, Brun--Titchmarsh and the scarcity of small multiplicative orders then give
+a density-one exact baseline for unrestricted prime pairs
+$K\asymp X^\theta$, $p\asymp X$ for every fixed $\theta<1/3$.  This mechanism
+is absent on the split slice because there $f=1$.
 
-\begin{theorem}[Density-one minimal-extension baseline]\label{thm:ext-density}
-Let $K\asymp X^\theta$ and $p\asymp X$ range independently over primes.  For
-every fixed $0<\theta<1/3$, asymptotically almost every pair satisfies
+\section{Full Cayley--Jacobi trace and corrected off/off geometry}
+
+Let $S=H^\perp$ be the multiplicative-character annihilator and define the
+normalized twisted-Jacobi matrix
 \[
-\Delta_K^{\rm ext}(p)=0,
-\qquad
-E_+(A_{K,p})=3(K-1)(K-2)
-\]
-exactly.
-\end{theorem}
-
-\begin{proof}[Proof sketch]
-Choose $\beta$ with $\max(0,4-1/\theta)<\beta<1$.  Residue classes modulo $K$
-of order at most $K^\beta$ number at most
-$K^\beta\tau(K-1)=K^{\beta+o(1)}$; Brun--Titchmarsh and PNT make their pair
-density $O(K^{\beta-1+o(1)})$.  On the complement, every bad prime costs at
-least $K^\beta$ units of excess by Theorem~\ref{thm:frob};
-\eqref{eq:allprime-budget} then gives density $O(K^{4-\beta}/X)$.  Both terms
-vanish by the choice of $\beta$.
-\end{proof}
-
-For the original split family, $p\equiv1\pmod K$ gives $f=1$, so this
-amplification disappears.
-
-\section{Full Jacobi trace and averaged split theorems}
-
-Let $S=H^\perp$ and define the normalized annihilator Jacobi matrix
-\[
-J_S(q)_{\chi,\psi}
- =\sum_{x\in\Fp\setminus\{0,1\}}
-   \chi^{-1}(x)\psi(x-1)e_p(qx),
-\qquad
 M_S(q)=\frac{e_p(-q/2)}{p-1}J_S(q).
 \]
-
-\begin{theorem}[Cayley--Jacobi trace identity]\label{thm:trace}
-For every $r\in\Fp$,
-\begin{equation}\label{eq:trace}
-\widehat{1_A}(r)=K\operatorname{Tr}M_S(2r).
+Character orthogonality gives the exact trace identity
+\begin{equation}\label{eq:jacobi}
+\widehat{1_A}(r)=K\operatorname{Tr}M_S(2r),
 \end{equation}
-Consequently
+and therefore
 \begin{align}
 \sum_q|\operatorname{Tr}M_S(q)|^2&=\frac{p(K-1)}{K^2},\label{eq:trace2}\\
 \sum_q|\operatorname{Tr}M_S(q)|^4&=\frac{pE_+(A)}{K^4}.\label{eq:trace4}
 \end{align}
-\end{theorem}
+The normalized fourth/second moment ratio tends to $3$ in the maintained split
+double average below $\theta<1/3$.  This is a fourth-moment theorem, not a CLT.
 
-For nonzero $q$, the exact moments are
-\begin{align}
-\mu_2(K,p)&=\frac{(K-1)(p-K+1)}{K^2(p-1)},\label{eq:mu2}\\
-\mu_4(K,p)&=\frac{pE_+(A)-(K-1)^4}{K^4(p-1)}.\label{eq:mu4}
-\end{align}
-
-For the dyadic split family with prime $K\asymp X^\theta$ and
-$p\asymp X$, Bombieri--Vinogradov and PNT \cite{Bombieri1965,IK2004} give:
-\begin{itemize}
-\item for fixed $\theta<1/3$,
-\[
-\operatorname{average}\frac{\Delta_K(p)}{K^2}
- \ll_\theta X^{3\theta-1}\longrightarrow0;
-\]
-\item for fixed $\theta<1/5$, asymptotically almost every split pair has
-\[
-\Delta_K(p)=0,\qquad E_+(A)=3(K-1)(K-2)
-\]
-exactly.
-\end{itemize}
-The normalized full Jacobi-trace fourth/second moment ratio tends to $3$ in the
-same $\theta<1/3$ double average.  This is not a CLT and is not a local spectral
-law.
-
-\section{Corrected off/off elliptic correlation}
-
-For an off-diagonal key $(u,v)$ set
-\[
-d(u,v)=\frac{(u-1)(v-1)}{v-u}.
-\]
-For a generic parameter $\lambda=(h_1,h_2)\in H^2$, the corresponding
-one-parameter fibre is a non-isotrivial genus-one pencil.  Its distinguished
-reducible fibre occurs at
+The pure off/off family contains a coherent reducible fibre.  For generic
+$\lambda=(h_1,h_2)$ it occurs at
 \[
 t_\lambda=\frac{2}{c(h_1)-c(h_2)}
 \]
-and contains exactly
-\begin{equation}\label{eq:spike}
-2p-8
-\end{equation}
-valid affine points.  After extracting this coherent spike, Igusa geometric
-monodromy \cite{BLV2009} and the Fouvry--Kowalski--Michel trace-correlation
-argument \cite{FKM2013} give square-root quasi-orthogonality for distinct
-geometric parameter classes.
+and has exactly $2p-8$ valid affine points.  After extracting the spike, Igusa
+geometric monodromy \cite{BLV2009} and the Fouvry--Kowalski--Michel
+trace-correlation argument \cite{FKM2013} give square-root quasi-orthogonality
+between non-isomorphic geometric parameter classes.
 
 \begin{theorem}[Corrected off/off variance]\label{thm:offoff}
-For $p>3$ and odd $|H|=K$,
 \begin{equation}\label{eq:offoff}
 \Var_{t\ne0}O(t)
 \ll pE_+(A)+K^2p+K^4p^{1/2}+K^4,
@@ -891,156 +737,112 @@ For $p>3$ and odd $|H|=K$,
 with an absolute implied constant.
 \end{theorem}
 
-Combining with Theorem~\ref{thm:direct},
-\[
-\Var_{t\ne0}O(t)
-\ll pK^{8/3}+K^4p^{1/2}+K^2p+K^4.
-\]
-Thus in $K=o(p^{1/4})$ the elliptic layer has collapsed onto the same
-$K^{2/3}$ pointwise Cayley-energy loss as the mixed layer.
+Thus the off/off layer has collapsed onto the same pointwise Cayley-energy
+bottleneck as the mixed layer.
 
 \section{Exact trace-to-local-statistics bridge}
 
 Let $U$ be an $N\times N$ unitary matrix with eigenvalues
-$e^{2\pi i\theta_1},\ldots,e^{2\pi i\theta_N}$.  For integers
+$e^{2\pi i\theta_1},\ldots,e^{2\pi i\theta_N}$.  For a zero-sum integer tuple
 $m_1+\cdots+m_k=0$, define
 \[
 D_U(m_1,\ldots,m_k)
  =\sum_{j_1,\ldots,j_k\ \mathrm{distinct}}
- e^{2\pi i\sum_{a=1}^k m_a\theta_{j_a}}.
+ e^{2\pi i\sum_{a=1}^km_a\theta_{j_a}}.
 \]
-For a partition $\pi$ of $\{1,\ldots,k\}$, put
+For a set partition $\pi$ of $\{1,\ldots,k\}$, put
 \[
-\mu(\pi)=\prod_{B\in\pi}(-1)^{|B|-1}(|B|-1)!,
-\qquad
-T_U(n)=\operatorname{Tr}(U^n),\quad T_U(0)=N.
+\mu(\pi)=\prod_{B\in\pi}(-1)^{|B|-1}(|B|-1)!.
 \]
 
-\begin{theorem}[Factorial trace identity]\label{thm:factorial-trace}
-\begin{equation}\label{eq:factorial-trace}
+\begin{theorem}[Factorial trace identity]\label{thm:factorial}
+\begin{equation}\label{eq:factorial}
 D_U(m_1,\ldots,m_k)
  =\sum_{\pi}\mu(\pi)
-   \prod_{B\in\pi}T_U\!\left(\sum_{a\in B}m_a\right).
+   \prod_{B\in\pi}
+   \operatorname{Tr}U^{\sum_{a\in B}m_a}.
 \end{equation}
 \end{theorem}
 
-\begin{proof}
-Impose equality of eigenvalue indices inside each block of a set partition and
-apply M\"obius inversion on the partition lattice.
-\end{proof}
-
-For $\phi\in\mathcal S(\mathbf R^{k-1})$, periodize at the mean-spacing scale,
-\[
-\Phi_N(t)=\sum_{n\in\Z^{k-1}}\phi(N(t+n)),
-\]
-and define the translation-invariant factorial statistic
-\[
-C_{k,N}(U;\phi)
- =\frac1N\sum_{j_1,\ldots,j_k\ \mathrm{distinct}}
- \Phi_N(\theta_{j_1}-\theta_{j_k},\ldots,
-        \theta_{j_{k-1}}-\theta_{j_k}).
-\]
-
-\begin{theorem}[Trace-to-local-statistics identity]\label{thm:trace-local}
-With $m_k=-(m_1+\cdots+m_{k-1})$,
+This is M\"obius inversion on the partition lattice.  Let
+$\phi\in\mathcal S(\mathbf R^{k-1})$ and periodize it at the mean-spacing scale.
+Poisson summation gives the exact microscopic statistic
 \begin{equation}\label{eq:trace-local}
 C_{k,N}(U;\phi)
  =N^{-k}\sum_{m\in\Z^{k-1}}
-  \widehat\phi(m/N)D_U(m_1,\ldots,m_k).
+  \widehat\phi(m/N)D_U(m_1,\ldots,m_k),
 \end{equation}
-\end{theorem}
-
-\begin{proof}
-Apply Poisson summation to $\Phi_N$ and interchange the absolutely convergent
-Schwartz sum with the finite eigenvalue sum.
-\end{proof}
-
-For $k=2$,
-\begin{equation}\label{eq:pair-trace-local}
+where $m_k=-(m_1+\cdots+m_{k-1})$.  In particular,
+\begin{equation}\label{eq:pair-local}
 C_{2,N}(U;\phi)
  =N^{-2}\sum_{m\in\Z}\widehat\phi(m/N)
-   \bigl(|\operatorname{Tr}U^m|^2-N\bigr).
+  \bigl(|\operatorname{Tr}U^m|^2-N\bigr).
 \end{equation}
-If $\widehat\phi$ is compactly supported, the relevant powers are
-$|m|=\Theta(N)$: microscopic correlations live at Heisenberg scale.
+If $\widehat\phi$ has compact support, the relevant powers satisfy
+$|m|=\Theta(N)$: microscopic local statistics probe the Heisenberg scale.
 
-\begin{corollary}[Weighted Heisenberg trace criterion]\label{cor:trace-criterion}
-Let $\mathbb E_N$ be the averaging functional for the quantum system and
-$\mathbb E_N^{\rm RMT}$ the target random-matrix average.  If for a fixed
-band-limited test
-\[
-N^{-k}\sum_m|\widehat\phi(m/N)|
-\left|
-\mathbb E_ND_U(m)-\mathbb E_N^{\rm RMT}D_V(m)
-\right|\longrightarrow0,
-\]
-then the corresponding averaged microscopic factorial statistic converges to
-its RMT value.
-\end{corollary}
-
-For arbitrary Schwartz tests one also needs a uniform high-frequency tail
-estimate.  The deterministic Fourier bridge is closed; the hard spectral task
-is the Heisenberg-scale joint-trace comparison for the correct desymmetrized
-block.
+A weighted comparison of the quantities $D_U(m)$ with the matching random
+matrix ensemble on this range is therefore sufficient for the corresponding
+band-limited microscopic correlation theorem.  Arbitrary Schwartz tests
+additionally require a uniform high-frequency tail bound.  This deterministic
+Fourier bridge is exact; the required arithmetic/spectral joint-trace estimates
+for the correct desymmetrized cat-map block remain open.
 
 \section{Reproducibility and adversarial controls}
 
-The repository deliberately uses mechanically different verification routes.
+The maintained repository uses distinct failure modes:
 \begin{itemize}
 \item Python/SymPy regenerates exact resultants, discriminants, Smith
-  contractions, finite-extension Frobenius checks, Jacobi identities and
-  elliptic spike algebra.
+  contractions, finite-extension Frobenius checks, trace identities and the
+  translated inverse-row support;
 \item C++20 independently checks finite-field hot paths, arbitrary-precision
-  witnesses and the sparse group-ring characteristic-zero intercept theorem.
-\item Lean 4 kernel-checks finite pair-key/Cayley statements, historical
-  falsifiers and bounded exact certificates.
-\item CI rebuilds the maintained code and recompiles this article; a separate
+  witnesses and characteristic-zero trace-intercept fibres;
+\item Lean 4 kernel-checks maintained finite certificates and falsifiers;
+\item CI rebuilds all maintained code and recompiles this article; a separate
   workflow synchronizes the committed PDF from the TeX source.
 \end{itemize}
 
-The C++ intercept regression checks every normalized ratio in the maintained
-quick range through $K=199$; a recorded extended run also checks prime
-$K=251,307,401,503,601,701,809$, always with maximum fibre size two and the
-predicted double-fibre form.  This verifies the implementation, not
-Theorem~\ref{thm:intercept-rigidity}, whose proof is independent.
-
-Exact scalar shift-resultant/Smith anchors are
+The C++ trace-intercept verifier checks every normalized ratio through the
+maintained quick range $K\le199$; a recorded extended run reaches prime
+$K=809$, always with maximum fibre size two and the predicted double-fibre form.
+The inverse translated-resultant verifier has exact Smith anchors through
+$K=23$.  Representative prime-to-$2K$ contractions are
 \[
-\begin{array}{c|c|c}
-(K,r)&\Omega_{K,r}^{(3)}&\text{prime-to-}2K\text{ part}\\\hline
-(7,2)&7^3&1\\
-(11,7)&11^5&1\\
-(13,3)&13^6&1\\
-(13,12)&2^4\,5^2\,13^6&5^2.
-\end{array}
+\Theta'_{13}=5,\qquad
+\Theta'_{19}=37,\qquad
+\Theta'_{23}=47^2\cdot137.
 \]
-Their prime-to-$2K$ support agrees with the corresponding exact real-trace
-$\Lambda'$ anchors; equality of full valuations is not claimed.
+The independent reflection invariant gives
+$\Xi'_{23}=47\cdot137$, confirming equal split prime support but different
+valuation.  No integer equality is inferred.
 
-Adversarial finite controls include $(K,p)=(29,728017)$ and
-$(31,1042903)$ with $p>K^4$ but positive excess, disproving a bare
-``$p>K^4$ implies baseline'' rule; $(K,p)=(41,2908049)$ has a row pair with two
-common parameters, disproving $I_K(p)\le1$; and $(K,p)=(31,1303)$ has an
-inverse-row intersection of size four.
+Adversarial finite controls include $(K,p)=(29,728017)$ and $(31,1042903)$ with
+$p>K^4$ but positive excess, disproving a bare ``$p>K^4$ implies baseline''
+rule; $(K,p)=(41,2908049)$ has a row pair with two common parameters,
+disproving $I_K(p)\le1$; and $(K,p)=(31,1303)$ has inverse-row intersection
+size four.
 
-\section{The remaining BGS frontier}
+\section{Remaining frontier}
 
 The arithmetic fourth-moment chain is now
 \[
-\boxed{\text{cyclotomic-unit / three-scalar split support}}
+\boxed{\text{common split divisors of small cyclotomic scalar systems}}
 \longrightarrow
 \boxed{\text{pointwise centered Cayley energy}}
 \longrightarrow
 \boxed{\text{complete fourth-moment control}}.
 \]
-The exact order-three event has two specialization-safe encodings: the
-fixed-degree $\Lambda$ subresultants and the three shift coefficients
-$c_0,c_1,c_2$.  The new per-ratio $O(K^3)$ logarithmic mass is not a polynomial
-largest-prime bound.  A sufficient remaining target is
+For general ratios the order-three event is encoded by three scalar shift
+coefficients; for the inverse ratio it reduces further to a half-degree
+resultant and its translation derivative.  The existing per-ratio
+$O(K^3)$ logarithmic mass does not bound the largest supported split prime
+polynomially.  A sufficient remaining target is, for example,
 \[
-P^+_{\rm split}(\Lambda_K'{}^{(3)})\le K^{4+o(1)},
+P^+_{\rm split}(\Lambda'_K{}^{(3)})\le K^{4+o(1)},
 \]
-or an equivalent simultaneous-gcd theorem for the scalar support.
+or an equivalent theorem for the scalar support systems.  The high-value next
+step is a uniform common-divisor/Bezout theorem, not another individual height
+estimate.
 
 The microscopic spectral chain is independently
 \[
@@ -1052,35 +854,26 @@ The microscopic spectral chain is independently
 \longrightarrow
 \boxed{\text{full microscopic BGS/RMT}}.
 \]
-The middle Fourier arrow is exact by
-Theorems~\ref{thm:factorial-trace}--\ref{thm:trace-local}; the load-bearing
-open problem is the trace estimate itself.  Fixed powers, finitely many
-moments, or even a completed fourth-moment theorem cannot be promoted to
-microscopic BGS.
+The Fourier arrow is exact by \eqref{eq:factorial}--\eqref{eq:trace-local}; the
+joint-trace estimate itself is open.  Fixed powers, finitely many moments, or
+even a completed fourth-moment theorem cannot be promoted to microscopic BGS.
 
 \section{Conclusion}
 
-The present programme has reduced a complicated fourth-moment problem to a
-sharper arithmetic obstruction.  The pair-key geometry is exact; the mixed and
-corrected off/off layers are governed by the same Cayley additive energy;
-prime-order characteristic-zero collisions are rigid; and exceptional split
-reductions admit canonical resultant/discriminant descriptions.  Fixed-product
-rows give an exact order-three support in the maximal real cyclotomic field.
-The new characteristic-zero intercept theorem proves that each affine
-intercept fibre has at most two points and classifies all double fibres.  The
-finite order-three event is therefore a genuine reduction phenomenon.
+The fourth-moment problem has been reduced to a progressively smaller
+arithmetic obstruction.  Fixed-product rows give an exact order-three split
+support.  Prime-conductor cyclotomic-unit rigidity closes the corresponding
+characteristic-zero fibre problem.  A scalar shift resultant compresses the
+general finite event to three coefficients, while the inverse row admits an
+additional perfect-square factorization that reduces the event to two
+half-degree scalar quantities: a resultant and its translation derivative.
+These reductions are exact and specialization-safe, but they do not yet supply
+a polynomial largest-split-prime theorem.
 
-The same event is now encoded by only three scalar coefficients of one shift
-resultant, while each row intersection is a congruence between explicit
-cyclotomic units.  This gives an $O(K^3)$ logarithmic support budget for each
-ratio but does not yet control the largest supported split prime polynomially.
-The next arithmetic target is simultaneous common-factor cancellation, not
-another generic incidence estimate.
-
-Frobenius amplification gives a complementary density-one exact theorem over
-minimal finite extensions, while leaving the split slice unchanged.  On the
-spectral side, the exact partition-M\"obius/Poisson formula identifies
-Heisenberg-scale joint traces as the required input for microscopic
+Frobenius amplification yields a complementary density-one exact theorem over
+minimal finite extensions while correctly leaving the split slice unchanged.
+On the spectral side, the exact partition-M\"obius/Poisson identity identifies
+Heisenberg-scale joint traces as the missing input for microscopic
 correlations.  Full BGS/GOE/COE universality remains open.
 
 \begin{thebibliography}{99}
@@ -1166,18 +959,6 @@ S.~Makarychev and I.~Vyugin,
 \emph{Solutions of Polynomial Equations in Subgroups of $\mathbf F_p^*$},
 Arnold Math. J. \textbf{5} (2019), 105--121,
 doi:10.1007/s40598-019-00112-z.
-
-\bibitem{MSS2018}
-S.~Macourt, I.~D.~Shkredov and I.~E.~Shparlinski,
-\emph{Multiplicative Energy of Shifted Subgroups and Bounds On Exponential Sums with Trinomials in Finite Fields},
-Canad. J. Math. \textbf{70} (2018), 1319--1338,
-doi:10.4153/CJM-2017-044-2.
-
-\bibitem{RW2022}
-M.~Rudnev and J.~Wheeler,
-\emph{On incidence bounds with M\"obius hyperbolae in positive characteristic},
-Finite Fields Appl. \textbf{78} (2022), 101978,
-doi:10.1016/j.ffa.2021.101978.
 
 \bibitem{JRW2011}
 S.~Jabuka, S.~Robins and X.~Wang,
