@@ -8,6 +8,10 @@ Checks:
      coefficient and first nonzero principal subresultant occur at the same
      gcd degree and differ by a nonzero residue-field unit.
 
+A split rational prime has multiple real cyclotomic embeddings.  Project-specific
+anchors therefore record the embedding exponent explicitly; a rational design
+alone does not determine the gcd degree.
+
 The finite checks are regression only; the theorem is proved in the note.
 """
 from __future__ import annotations
@@ -86,11 +90,14 @@ def check_generic_exact() -> None:
     print("generic shift/PSC leading coefficient identity: OK")
 
 
-def tau_embedding(K: int, p: int) -> int:
+def tau_embedding(K: int, p: int, embedding_exponent: int = 1) -> int:
     assert p % K == 1
+    m = (K - 1) // 2
+    assert 1 <= embedding_exponent <= m
     primitive = int(sp.primitive_root(p))
-    zeta = pow(primitive, (p - 1) // K, p)
-    assert zeta != 1 and pow(zeta, K, p) == 1
+    zeta0 = pow(primitive, (p - 1) // K, p)
+    assert zeta0 != 1 and pow(zeta0, K, p) == 1
+    zeta = pow(zeta0, embedding_exponent, p)
     return (zeta + pow(zeta, -1, p)) % p
 
 
@@ -116,15 +123,28 @@ def alpha_mod(K: int, r: int, tau: int, p: int) -> int:
     return eval_tau(alpha_expr, tau, p)
 
 
-def check_split_row(K: int, p: int, r: int, expected_d: int | None = None) -> int:
+def check_split_row(
+    K: int,
+    p: int,
+    r: int,
+    expected_d: int | None = None,
+    embedding_exponent: int = 1,
+) -> int:
     modulus, P_raw, Q_raw = trace_cofactor_pair(K, r)
     del modulus
-    tau = tau_embedding(K, p)
+    tau = tau_embedding(K, p, embedding_exponent)
     P = specialize(P_raw, tau, p)
     Q = specialize(Q_raw, tau, p)
     d = sp.gcd(P, Q).degree()
     if expected_d is not None:
-        assert d == expected_d, (K, p, r, d, expected_d)
+        assert d == expected_d, (
+            K,
+            p,
+            r,
+            embedding_exponent,
+            d,
+            expected_d,
+        )
 
     q_lc = int(Q.LC()) % p
     q_monic = sp.Poly(pow(q_lc, -1, p) * Q.as_expr(), T, modulus=p)
@@ -145,47 +165,61 @@ def check_split_row(K: int, p: int, r: int, expected_d: int | None = None) -> in
     # The first nonzero Z coefficient is exactly at the gcd degree.
     assert all(int(resultant.nth(j)) % p == 0 for j in range(d))
     c_d = int(resultant.nth(d)) % p
-    assert c_d != 0, (K, p, r, d)
+    assert c_d != 0, (K, p, r, embedding_exponent, d)
 
     psc_d = int(psc_at_gcd_degree(P, q_monic, d)) % p
-    assert psc_d != 0, (K, p, r, d)
+    assert psc_d != 0, (K, p, r, embedding_exponent, d)
 
     print(
-        f"K={K:2d} p={p:4d} r={r:2d} gcd_degree={d} "
-        f"c_d={c_d} psc_d={psc_d}: OK"
+        f"K={K:2d} p={p:4d} r={r:2d} emb={embedding_exponent:2d} "
+        f"gcd_degree={d} c_d={c_d} psc_d={psc_d}: OK"
     )
     return d
 
 
-def find_degree_one_anchor() -> tuple[int, int, int]:
+def find_degree_one_anchor() -> tuple[int, int, int, int]:
     # Small deterministic scan only; all polynomials have degree <=6 here.
     for K in (7, 11, 13):
+        m = (K - 1) // 2
         for p in list(sp.primerange(K + 1, 600)):
             if p % K != 1:
                 continue
-            for r in range(2, K):
-                modulus, P_raw, Q_raw = trace_cofactor_pair(K, r)
-                del modulus
-                tau = tau_embedding(K, p)
-                P = specialize(P_raw, tau, p)
-                Q = specialize(Q_raw, tau, p)
-                if sp.gcd(P, Q).degree() == 1:
-                    return K, p, r
+            for embedding_exponent in range(1, m + 1):
+                for r in range(2, K):
+                    modulus, P_raw, Q_raw = trace_cofactor_pair(K, r)
+                    del modulus
+                    tau = tau_embedding(K, p, embedding_exponent)
+                    P = specialize(P_raw, tau, p)
+                    Q = specialize(Q_raw, tau, p)
+                    if sp.gcd(P, Q).degree() == 1:
+                        return K, p, r, embedding_exponent
     raise AssertionError("no small gcd-degree-one row anchor found")
 
 
 def main() -> None:
     check_generic_exact()
 
-    # Project-specific fixed anchors for degree 0 and inverse degrees 2/4.
-    check_split_row(11, 23, 10, expected_d=0)
-    check_split_row(7, 29, 6, expected_d=2)
-    check_split_row(23, 47, 22, expected_d=4)
+    # Project-specific anchors.  The real embedding is part of each finite
+    # certificate: for example K=11,p=23,r=-1 has gcd degree 0 at emb=1 but
+    # degree 2 at emb=2.  The former K=7,p=29,r=-1 degree-2 anchor was false;
+    # direct enumeration gives degree 0 at every real embedding.
+    check_split_row(11, 23, 10, expected_d=0, embedding_exponent=1)
+    check_split_row(11, 23, 10, expected_d=2, embedding_exponent=2)
+    check_split_row(23, 47, 22, expected_d=4, embedding_exponent=1)
 
-    K, p, r = find_degree_one_anchor()
-    d = check_split_row(K, p, r, expected_d=1)
+    K, p, r, embedding_exponent = find_degree_one_anchor()
+    d = check_split_row(
+        K,
+        p,
+        r,
+        expected_d=1,
+        embedding_exponent=embedding_exponent,
+    )
     assert d == 1
-    print(f"small degree-one row anchor discovered deterministically: K={K}, p={p}, r={r}")
+    print(
+        "small degree-one row anchor discovered deterministically: "
+        f"K={K}, p={p}, r={r}, emb={embedding_exponent}"
+    )
 
     print("cayley shift/PSC transversality regression: OK")
 
