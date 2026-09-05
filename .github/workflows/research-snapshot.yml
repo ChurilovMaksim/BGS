@@ -19,10 +19,13 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Export tracked history and current-tree provenance
+      - name: Verify and export tracked history and current-tree provenance
         run: |
+          set -euo pipefail
           mkdir -p "$RUNNER_TEMP/research-snapshot"
+          git fsck --no-dangling
           git bundle create "$RUNNER_TEMP/research-snapshot/WoW.bundle" --all
+          git bundle verify "$RUNNER_TEMP/research-snapshot/WoW.bundle"
           git archive --format=tar.gz -o "$RUNNER_TEMP/research-snapshot/WoW-source.tar.gz" HEAD
           git rev-parse HEAD > "$RUNNER_TEMP/research-snapshot/HEAD.txt"
           git ls-files -s > "$RUNNER_TEMP/research-snapshot/tree-index.txt"
