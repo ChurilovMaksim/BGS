@@ -61,8 +61,10 @@ The publication-facing theorem surface now includes:
 
 Authoritative derivations remain in `../mathematics/`, with claim status governed
 by `../record/claim_ledger.md`. The research/reproducibility discipline is
-recorded in `../record/research_operating_protocol.md`. The source audit for the
-cyclotomic trace-intercept theorem is
+recorded in `../record/research_operating_protocol.md`. The current dated
+research-state audit is
+[`../record/frontier_pass_20260905.md`](../record/frontier_pass_20260905.md).
+The source audit for the cyclotomic trace-intercept theorem is
 [`../literature/cyclotomic_row_support_sources_20260905.md`](../literature/cyclotomic_row_support_sources_20260905.md); Dvornicich--Zannier remains an unmatched lead, not a used theorem. Exact inverse pair-sum timing/support data are recorded in
 [`../evidence/cayley_inverse_pair_sum_factorization_20260905.txt`](../evidence/cayley_inverse_pair_sum_factorization_20260905.txt).
 
