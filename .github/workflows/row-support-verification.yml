@@ -85,3 +85,6 @@ jobs:
 
       - name: Regress sparse unlikely-intersection geometry
         run: python computations/verification/cayley_inverse_sparse_unlikely_intersection.py
+
+      - name: Regress prime-ideal versus rational-modulus support
+        run: python computations/verification/cayley_inverse_prime_ideal_vs_rational_modulus.py
