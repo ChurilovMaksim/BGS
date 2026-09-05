@@ -82,10 +82,15 @@ assumed.
 | products of local two-generator ideals `(w_e,w_f)` over disjoint edges, equivalently quartic `(e_1,e_3)` ideals, have the same split inverse order-three support as `Theta/Xi` | **EXACT + FINITE-REGRESSION** | quartic-localization theorem + exact finite sweep |
 | rational `gcd(N(w_e),N(w_f))` is only a candidate filter; same prime ideal / embedding is required | **EXACT + FINITE-CERTIFICATE** | ideal theory + `K=41,p=2908049` negative control |
 | for every prime `K>=37`, writing `K=5r+s`, `s=1,2,3,4`, the inverse reduced-edge set contains an explicit pair of disjoint edges whose generators are associates by an explicit real cyclotomic unit; every split divisor of their common norm gives `I_-1>=4` at one embedding | **EXACT + FINITE-REGRESSION** | `cayley_inverse_structural_associates.md`; formal Laurent verifier |
+| step-two inverse edges satisfy `w_(a,a+2)=-tau v_(a+1)` and the boundary edge satisfies `w_(0,m-1)=-(tau-1)v_m`; these are unit edges and never contribute finite inverse support | **EXACT + FINITE-REGRESSION** | `cayley_inverse_associate_quotient.md`; exact polynomial anchors |
+| quotient inverse edges by `e~f iff w_e/w_f` is a unit; if a split prime divides no contraction `(w_e,w_f) cap Z` from two distinct nonunit associate classes, then all zero edges at one embedding lie in one class and `I_-1<=2B_K` | **EXACT + FINITE-REGRESSION** | `cayley_inverse_associate_quotient.md`; quotient verifier |
+| `(K,p)=(59,21713)` is a genuine nonassociate same-embedding event with `(w_(8,26),w_(9,10)) cap Z=21713 Z` | **FINITE-CERTIFICATE** | exact Hermite-normal-form contraction |
 | `(K,p)=(89,143207231)` is split inverse support with `I_-1=4` and `p=2.282469... K^4`; therefore a strict finite `p<=K^4` inverse ceiling is false | **FINITE-CERTIFICATE** | independent C++20 + exact reduced-edge norms / same-embedding Python |
 | `(K,p)=(229,966684838398077)` is split inverse support with exactly the structural zero edges `(44,91),(48,89)`, `I_-1=4`, and `p=351514.284... K^4` | **FINITE-CERTIFICATE** | exact resultant norms + complete same-embedding finite-field enumeration |
+| small-prime split controls `(83,167)` and `(89,179)` have inverse multiplicities `14` and `16`; a global `I_-1=O(1)` statement over all split primes is therefore not the active target | **FINITE-CERTIFICATE** | complete embedding enumeration; both lie outside `K=o(p^(1/4))` |
 | polynomial largest-split-divisor bound such as `P_split^+(Lambda'_K^(3))<=K^(4+o(1))` | **OPEN** | correct sufficient route to force `I<=2`, but structurally overstrong in light of universal inverse associate pairs |
-| uniform same-embedding row multiplicity `I_K(p)=K^o(1)` (ideally `O(1)`) on the intended split range | **OPEN** | sufficient via `Delta<=4I_K(K-1)(K-2)` for near-quadratic (respectively quadratic) Cayley excess |
+| same-embedding row multiplicity `I_K(p)=K^o(1)` (ideally `O(1)`) in the explicit intended regime `K=o(p^(1/4))` | **OPEN** | sufficient via `Delta<=4I_K(K-1)(K-2)` for near-quadratic (respectively quadratic) Cayley excess |
+| inverse quotient closure: `B_K=K^o(1)` plus `K^(4+o(1))` control of split divisors of nonassociate cross-class contractions | **OPEN** | sufficient for inverse `I_-1=K^o(1)` in `K=o(p^(1/4))`; general ratios remain open |
 | weighted split-prime excess budget is explicit `O(K^4)` | **EXACT + FINITE-REGRESSION** | `cayley_resultant_mass_budget.md` |
 | canonical difference discriminant classification and ratio-orbit fourth-power structure | **EXACT + FINITE-REGRESSION** | difference-discriminant / ratio-orbit notes |
 | characteristic-zero multiplicative Cayley rigidity and product discriminant classification | **EXACT + FINITE-REGRESSION** | multiplicative notes/verifiers |
@@ -100,7 +105,7 @@ assumed.
 | exact Poisson/Fourier trace-to-microscopic-statistics identity | **EXACT** | trace-to-local note |
 | weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations | **EXACT** | deterministic comparison theorem |
 | uniform high-frequency tail needed to remove Fourier band-limit | **OPEN** | trace-to-local note |
-| sharp centered pointwise Cayley target for every intended split design | **OPEN** | active route is multiplicity control rather than eliminating every order-three prime |
+| sharp centered pointwise Cayley target for every intended split design | **OPEN** | active route is range-explicit multiplicity control rather than eliminating every order-three prime |
 | Heisenberg-scale trace estimates for required desymmetrized spectral blocks | **OPEN** | deterministic bridge closed; arithmetic/spectral estimate not proved |
 | microscopic BGS/GOE/COE local eigenphase law | **OPEN** | no current theorem |
 
@@ -174,7 +179,7 @@ w_(a,b)=2-v_a-v_b,
 Thus the ubiquitous `K` factor is removed before the split-prime question and
 the remaining generators are sums of squares of real cyclotomic units.
 
-There is now an additional characteristic-zero structure.  For every prime
+There is now an additional characteristic-zero structure. For every prime
 `K>=37`, one explicit pair of disjoint inverse edges (depending only on
 `K mod 5`) has reduced generators satisfying
 
@@ -183,27 +188,59 @@ w_e = epsilon_K w_f,
 epsilon_K in O^(+x),
 ```
 
-with `epsilon_K` an explicit quotient of four real cyclotomic units.  Hence a
+with `epsilon_K` an explicit quotient of four real cyclotomic units. Hence a
 split prime ideal dividing one generator automatically divides the other and
-creates `I_-1>=4`.  Literal elimination of all order-three inverse support is
+creates `I_-1>=4`. Literal elimination of all order-three inverse support is
 therefore a structurally overstrong objective.
 
-The active pointwise arithmetic closure target is **multiplicity**, not mere
-support:
+The inverse problem is now quotient by characteristic-zero association. Write
 
 ```text
+e~f iff w_e/w_f is a unit,
+B_K=max size of a nonunit associate class,
+(w_e,w_f) cap Z=D_(K;e,f) Z  for e!~f.
+```
+
+Unit edges are support-free. If a split `p` divides no cross-class `D_(K;e,f)`,
+then every zero edge at one embedding lies in a single associate class and
+
+```text
+I_-1<=2B_K.
+```
+
+Thus the active inverse closure separates into
+
+```text
+(A) B_K=K^o(1), ideally O(1),
+(B) exclude p from cross-class contractions in K=o(p^(1/4)).
+```
+
+A sufficient form of (B) is a `K^(4+o(1))` largest-split-divisor bound for the
+product of cross-class contractions. This bound is deliberately applied only
+after quotienting structural associate classes.
+
+For the full row problem, the intended pointwise arithmetic closure target is
+**range-explicit multiplicity**, not mere support:
+
+```text
+K=o(p^(1/4)),
 I_K(p)=K^o(1),     ideally I_K(p)=O(1).                  (*)
 ```
 
 By the exact row-energy inequality this yields respectively
-`Delta_K(p)=K^(2+o(1))` or `Delta_K(p)=O(K^2)`.  The former
+`Delta_K(p)=K^(2+o(1))` or `Delta_K(p)=O(K^2)`. The former full-support
 largest-split-divisor target remains a logically valid sufficient route to the
 stronger statement `I<=2`, but it is no longer the preferred mechanism.
 
+The range restriction is load-bearing: `(K,p)=(83,167)` and `(89,179)` have
+inverse multiplicities `14` and `16`, respectively, but lie far outside
+`K=o(p^(1/4))`. Conversely the exact `K=139` and `K=229` large-prime
+structural witnesses have `I_-1=4` well beyond `K^4`, exactly as the quotient
+picture permits.
+
 The existing per-ratio logarithmic mass `O(K^3)` and global `O(K^4)` mass are
-not multiplicity bounds.  The exact `K=89` and `K=229` structural witnesses
-show that split order-three support can occur well beyond a strict finite
-`K^4` ceiling; neither finite witness settles any `K^(4+o(1))` asymptotic.
+not multiplicity bounds. The exact structural witnesses do not settle any
+`K^(4+o(1))` asymptotic.
 
 ## Minimal-extension / Frobenius extension
 
@@ -239,11 +276,15 @@ arbitrary Schwartz tests.
 
 - `(K,p)=(29,728017)` and `(31,1042903)` have `p>K^4` but positive excess: bare `p>K^4 => exact baseline` is false.
 - `(K,p)=(41,2908049)` has a row pair with two common parameters: `I_K<=1` is false. The same rational prime is also a useful inverse norm-gcd false positive: rational edge norms can share `p` without a common embedding prime.
-- `(K,p)=(31,1303)` has inverse-row intersection size `4`.
+- `(K,p)=(31,1303)` has inverse-row intersection size `4`; its two zero edges form an additional noncanonical characteristic-zero associate class.
+- `(K,p)=(59,21713)` is a nonassociate same-embedding event and calibrates the cross-class contraction problem.
+- `(K,p)=(83,167)` and `(89,179)` have inverse intersection sizes `14` and `16`; these are deliberate negative controls against silently dropping the intended large-`p` range.
 - `(K,p)=(89,143207231)` has inverse-row intersection size `4` with `p/K^4=2.282469...`; strict finite `p<=K^4` inverse support is false.
+- `(K,p)=(139,3596704231)` lies above `K^4` and has exactly the canonical structural pair of zero edges, so `I_-1=4`.
 - `(K,p)=(229,966684838398077)` has exactly the structural inverse zero edges `(44,91),(48,89)` in one embedding, so `I_-1=4`, while `p/K^4=351514.284...`.
 - at the `K=89` witness, `|N(w_(16,35))|=|N(w_(20,33))|=143207231`, and one split embedding has exactly those two zero pair sums.
 - at `K=229`, `|N(w_(44,91))|=|N(w_(48,89))|=33893*966684838398077`; both factors are split modulo `229`.
+- small exact associate-class audits through the recorded conductors find all observed nonunit classes of size `2`, but the four `K mod 5` structural families are not complete; no general `B_K<=2` theorem is claimed.
 - real-trace anchors include `Lambda'_(13,12)=5^2`, `Lambda'_(17,10)=103`, `Lambda'_(23,18)=47^3*139`.
 - inverse reflection anchors include `Xi'_13=5`, `Xi'_19=37`, `Xi'_23=47*137`.
 - two-scalar inverse anchors are
@@ -263,6 +304,7 @@ valuations.
   `K=809` in the recorded extended run with maximum fibre size `2` throughout.
 - independent C++20 `K=89` witness verification checks primality, exact subgroup order, distinct trace classes, the two zero pair sums, and the quartic `e_1=e_3=0` certificate.
 - the inverse structural-associate verifier checks all four `K mod 5` Laurent identities formally in the affine exponent `r`, exact `K=89`/`K=229` norms, and the complete `K=229` zero-edge witness.
+- the inverse associate-quotient verifier checks the unit-edge skeleton, a noncanonical `K=31` associate class, the exact `K=59` cross-class contraction, small-`p` multiplicity controls, and a large-`p` `K=139` structural control.
 - exact reduced-edge support sweeps completed through the explicitly recorded prime `K=101`; a later interrupted symbolic batch contributes no promoted data.
 - minimal-extension controls remain
   `(K,p,f,Delta)=(7,13,2,32),(11,43,2,128),(13,3,3,432),(13,5,4,496)`.
@@ -274,11 +316,13 @@ Finite computation proves only the displayed finite statements.
 - finite regression is not a growing-parameter proof;
 - equal split support does not imply equality of `Lambda`, `Omega`, `Xi`, `Theta`, or the local ideal products as integers/ideals/valuations;
 - `gcd(N(w_e),N(w_f))` does not imply one prime ideal divides both edge elements; same-embedding verification is load-bearing;
-- for the structural associate pair, the same-ideal implication is exact because `(w_e)=(w_f)` as principal ideals, not because their rational norms happen to agree;
+- for a proved structural associate pair, the same-ideal implication is exact because `(w_e)=(w_f)` as principal ideals, not because their rational norms happen to agree;
 - the inverse perfect-square or quartic factorization does not by itself bound the largest supported split prime;
 - the `K=89` and `K=229` witnesses refute strict finite `K^4` ceilings but do not refute `K^(4+o(1))`;
 - the four structural associate families are proved, but completeness of all unit-associate reduced-edge pairs is **not** claimed;
-- Dvornicich--Zannier remains an unmatched literature lead until its exact congruence hypotheses are verified for the one-prime-ideal setting;
+- bounded inverse multiplicity is not asserted uniformly over small split primes; every such target is scoped to the explicit intended regime `K=o(p^(1/4))`;
+- the inverse quotient reduction does not solve the other normalized ratio classes;
+- Dvornicich--Zannier and Hoechsmann remain unmatched literature leads until their exact hypotheses are verified for the one-prime-ideal / multiplicity setting;
 - fourth moments/kurtosis are not a CLT or local eigenvalue law;
 - the ordinary full Jacobi trace is not a parity/desymmetrized spectral block;
 - the exact trace-to-local-statistics identity does not prove the required Heisenberg-scale trace estimates.
