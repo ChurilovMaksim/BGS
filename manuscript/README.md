@@ -18,25 +18,34 @@ The publication-facing theorem surface now includes:
   obstruction/witness;
 - the canonical additive difference discriminant, ratio-orbit factorization
   and global fourth-power discriminant identity;
-- characteristic-zero multiplicative Cayley rigidity and its canonical product
-  discriminant;
 - the fixed-product row decomposition and the **exact** maximal-real trace
   support `Lambda'_K^(3)` for row intersections of multiplicity at least three;
-- the explicit scope correction that the older dehomogenized `D'/G'` row
-  invariants are one-way obstructions only because leading degree may drop at
-  the projective point at infinity;
+- the scope correction that the older dehomogenized `D'/G'` row invariants are
+  one-way obstructions only because leading degree may drop at the projective
+  point at infinity;
+- the inverse-row reflection theorem
+  `I_-1(q)=2 deg gcd(E,O mod q)` and its half-degree exact support;
+- the Bass-based characteristic-zero trace-intercept theorem: every affine
+  intercept fibre has size at most two and all double fibres are explicit;
+- the cyclotomic-unit matching formula `W_r(b)=V_r(a) mod q` for finite row
+  intersections;
+- the scalar shift-resultant identity
+  `ord_(Z=0) R_(K,r)(Z)=I_(1,r)` and the three-generator exact support
+  `c_0=c_1=c_2=0` for the event `I>=3`;
+- the per-ratio deterministic support budget
+  `sum_(I_r(p)>=3) log p = O(K^3)`, explicitly separated from the still-open
+  polynomial largest-split-prime target;
 - the pointwise quadratic Cayley-energy theorem
-  `E_+(A)<=11(K-1)(K-2)` outside `p|Lambda'_K^(3)`;
+  `E_+(A)<=11(K-1)(K-2)` outside the exact order-three split support;
 - the global `O(K^4)` split-prime collision-mass budget;
 - the full Cayley/Jacobi trace identity and exact second/fourth trace moments;
-- the double-averaged split excess theorem for `theta<1/3` and the density-one
+- the double-averaged split excess theorem for `theta<1/3` and density-one
   **exact** split baseline for `theta<1/5`;
 - Frobenius amplification over the minimal extension
   `F_(p^ord_K(p))`, the all-prime collision/discriminant extension, and the
   density-one exact minimal-extension baseline for fixed `theta<1/3`;
-- the corrected off/off elliptic theorem: every generic class has a reducible
-  `2p-8` spike, and after spike extraction
-  `Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4`;
+- the corrected off/off elliptic theorem with the reducible `2p-8` spike and
+  `Var O << pE_+(A)+K^2p+K^4sqrt(p)+K^4` after spike extraction;
 - the exact partition-Mobius and Poisson trace-to-local-statistics formulas,
   which isolate a weighted **Heisenberg-scale** joint-trace comparison as the
   remaining band-limited microscopic spectral closure condition;
