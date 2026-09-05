@@ -70,3 +70,6 @@ jobs:
 
       - name: Regress inverse structural associates
         run: python computations/verification/cayley_inverse_structural_associates.py
+
+      - name: Regress inverse associate quotient
+        run: python computations/verification/cayley_inverse_associate_quotient.py
