@@ -39,6 +39,24 @@ established. The proof, [independent Python verifier](computations/verification/
 are maintained together. The Lean contribution contains general cohomology
 identities and finite pair-key certificates, not the analytic limit.
 
+A further compact-test argument now gives a **negative microscopic result**
+for this globally unfolded odd spectrum. At fixed finite nonzero tau,
+
+```text
+liminf C_d(phi_L) >= Theta(tau) - 1/L,
+Theta(tau) = sum_m exp(-m^2 tau^2) > 1,
+liminf Var(number of levels in a length-L unfolded window)
+    >= L^2 (Theta(tau)-1).
+```
+
+Here phi_L(s)=(1/L)(1-|s|/L)_+ has compact support. If epsilon sqrt(K)->0,
+the fixed-L pair statistic diverges. A bounded clustering pair limit, including
+the usual Poisson and GOE/GUE bulk targets, consequently requires
+`|epsilon| sqrt(K) -> infinity`. This is necessary, not sufficient, and does
+not address a further symmetry sector or density-adapted re-unfolding.
+See Section 7 of the proof and the
+[independent compact-test verifier](computations/verification/pell_pair_obstruction.py).
+
 The corrected fourth-moment constant is `gamma=5.614220692151198071627965...`.
 An [integer interval certificate](computations/verification/pell_gamma_interval.py)
 now checks that decimal independently. The previously reported `5.612...`

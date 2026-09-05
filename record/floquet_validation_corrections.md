@@ -24,9 +24,10 @@ error log, and acceptance of an error-free zero-exit log.
 
 The same run stopped on the row-support companion's use of mixed color
 names without loading xcolor. Adding the package was independently compiled
-locally. The new eight-page companion layout was also re-rendered; its
+locally. At that checkpoint, the eight-page companion layout was also re-rendered; its
 bibliographic tail no longer occupies an almost empty extra page. The
-main article is seventeen pages. Numerical plots retain the full finite
+main article was seventeen pages. The later compact-test extension adds
+new mathematical content and changes those page counts. Numerical plots retain the full finite
 bias and distinguish stochastic RMS bounds from deterministic intervals.
 
 The successful final workflow, its source commit, exact execution manifest,

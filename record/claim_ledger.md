@@ -274,3 +274,18 @@ no priority or complete analytic Lean formalization is claimed.
 Not established: Heisenberg-scale joint traces, microscopic local statistics,
 fixed nonzero classical-kick universality, or full BGS. K is logarithmic in N
 and the critical classical kick is of order 1/(N sqrt(K)).
+
+## Compact-test microscopic obstruction in the Pell family
+
+Section 7 of `mathematics/pell_floquet_normal_form.md` proves a negative
+microscopic consequence under global mean-density unfolding of the complete
+odd space. For every fixed L and finite nonzero tau=lim epsilon sqrt(2K),
+liminf C_d(phi_L)>=Theta(tau)-1/L and liminf Var N_L>=L^2(Theta(tau)-1),
+where Theta(tau)=sum_m exp(-m^2 tau^2)>1. Subcritical tau->0 gives divergence
+of every such fixed-L pair statistic. Therefore a bounded clustering pair
+limit requires |epsilon|sqrt(K)->infinity. Compact tests avoid any hidden
+Schwartz-tail assumption. No sufficient condition for positive universality,
+no density-adapted unfolding result, and no further-sector result is claimed.
+The forty finite configurations are checked independently by pair sums and
+moving-window integration; they are evidence about implementation, not the
+proof. Priority and analytic Lean formalization are not established.

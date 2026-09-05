@@ -84,3 +84,27 @@ The resulting theorem is a recurrence-scale spectral statement. The next
 barrier is not another fourth-moment decimal: it is joint trace control at
 Heisenberg times with the correct symmetry reduction and a nonvanishing
 classical perturbation. Those requirements remain explicit and unsatisfied.
+
+## Subsequent compact-test extension
+
+After the normal-form baseline was actually published as
+`a92312ffcff698d08912c8415bd9d12a364bc70c`, the recurrence law yielded a
+stronger negative result. A triangular compactly supported test has a
+nonnegative Fourier transform. Retaining the resonant Fourier modes in the
+exact factorial pair identity gives a quadratic number-variance lower bound
+and excludes bounded clustering pair limits at every bounded critical
+quantum-kick parameter. The necessary escape condition is
+|epsilon_K|sqrt(K)->infinity, with the unfolding and whole-odd-space scope
+fixed. The first Gaussian-test attempt was deliberately replaced by a
+compact test: Gaussian tails alone would not exclude vague local pair
+convergence without extra uniform integrability. All lower limits are taken
+at fixed L and fixed number of retained modes before either is enlarged.
+
+Forty new finite configurations compare two different calculations: ordered
+pair differences and integration of the moving-window counting function.
+The exact constant-spacing spectrum is a zero-variance control at integral
+window length; a multiply repeated clock is a positive-resonance control.
+Asymptotic lower bounds are not imposed on small K. The full workspace
+runner now has 41 Python/C++ commands, separate from the verified Lean build.
+The theorem is an obstruction for the specified family, not a solution or
+refutation of the generic, properly qualified BGS conjecture.

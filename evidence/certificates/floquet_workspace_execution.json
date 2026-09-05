@@ -1,7 +1,7 @@
 {
   "producer": "computations/maintenance/verify_workspace.py",
   "scope": "Execution of every maintained executable Python and C++ verifier on this worktree; not a complete proof audit. Lean and TeX are separate build steps.",
-  "input_commit": "ed67d60dd1b04d8c34a2a366357888f604d66fb2",
+  "input_commit": "2d9fc8cbc26d114dc51528e2fed97c41935817fc",
   "python": "3.13.15",
   "checks": [
     {
@@ -13,7 +13,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_difference_discriminant.py"
       ],
       "exit_code": 0,
-      "seconds": 1.32,
+      "seconds": 1.422,
       "log_sha256": "fcc5f856444ce0c36b1b97bad18e0581b19920d141c97b33e95c0e56c7ba0c67"
     },
     {
@@ -25,7 +25,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_frobenius_extension.py"
       ],
       "exit_code": 0,
-      "seconds": 1.12,
+      "seconds": 1.07,
       "log_sha256": "2140c78b610554667f64c0946ac59192d07ac2c2f55c8f47cbda72b56276e259"
     },
     {
@@ -37,7 +37,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_inverse_pair_sum_factorization.py"
       ],
       "exit_code": 0,
-      "seconds": 69.217,
+      "seconds": 68.886,
       "log_sha256": "ed2284a5a3d682ab121718cbd585cefdb7985e5c4d30b27e8461ffb762a533b5"
     },
     {
@@ -49,7 +49,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_inverse_resultant_transversality.py"
       ],
       "exit_code": 0,
-      "seconds": 2.528,
+      "seconds": 2.526,
       "log_sha256": "7d98971ae1c07c36962c323aeb481310cd11340b4f9f275312c722d094a523b0"
     },
     {
@@ -61,7 +61,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_jacobi_trace_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 0.317,
+      "seconds": 0.369,
       "log_sha256": "f997186865a0232a0ccffc29a63d2e63f18d389cf5ebc20deec453ad0f313e2d"
     },
     {
@@ -73,7 +73,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_principal_subresultant_support.py"
       ],
       "exit_code": 0,
-      "seconds": 11.959,
+      "seconds": 12.162,
       "log_sha256": "ffc6fd1ec8f74aeb1ba8161d1132df65a26e92798bff65671f83463b6147b53f"
     },
     {
@@ -97,7 +97,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_coefficient_ideal.py"
       ],
       "exit_code": 0,
-      "seconds": 28.708,
+      "seconds": 29.18,
       "log_sha256": "e142d1d9c87e4813977950fbbe35d977b328f7cf73b9012c29b19d746e678844"
     },
     {
@@ -109,7 +109,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_intersections.py"
       ],
       "exit_code": 0,
-      "seconds": 0.067,
+      "seconds": 0.066,
       "log_sha256": "b659b6792cb91a2532ce419284e63530afb4aecc376919e623d920118d0f24e9"
     },
     {
@@ -121,7 +121,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_real_trace_ideal.py"
       ],
       "exit_code": 0,
-      "seconds": 11.806,
+      "seconds": 11.808,
       "log_sha256": "b1ca7cea4a31289aac578d84555d13e69db84f4783a54c95d261c5657a98afff"
     },
     {
@@ -133,7 +133,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_reflection.py"
       ],
       "exit_code": 0,
-      "seconds": 5.487,
+      "seconds": 5.639,
       "log_sha256": "df1a738221ce12aca6e09a3a86807876233765cc80e0a90fc311f6e19115045c"
     },
     {
@@ -145,7 +145,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_product_row_subresultants.py"
       ],
       "exit_code": 0,
-      "seconds": 40.507,
+      "seconds": 40.278,
       "log_sha256": "534d03a858725e8b8fe603eddcc021175cd307a138968719e0585c2178c690b2"
     },
     {
@@ -157,7 +157,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_ratio_orbit_factorization.py"
       ],
       "exit_code": 0,
-      "seconds": 1.321,
+      "seconds": 1.271,
       "log_sha256": "2f96941800aeb2ea3fddeb5d3faf53853f508f05e1ddee615903063ca0e80e1d"
     },
     {
@@ -169,7 +169,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_resultant_fibonacci.py"
       ],
       "exit_code": 0,
-      "seconds": 2.326,
+      "seconds": 2.375,
       "log_sha256": "c46bcb1705d9281f88cf3bbfcfd3a7f0ef8adba2e402e3aaecce41f3e058a6c4"
     },
     {
@@ -193,7 +193,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_shift_psc_transversality.py"
       ],
       "exit_code": 0,
-      "seconds": 4.983,
+      "seconds": 4.984,
       "log_sha256": "55d89b16a970639ffe7b087a9614d085760eac59df3db4d6d7881c89f0fa3620"
     },
     {
@@ -217,7 +217,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_sylvester_fitting_support.py"
       ],
       "exit_code": 0,
-      "seconds": 3.78,
+      "seconds": 3.83,
       "log_sha256": "1f8f11e44f78e650c7575a2613e2fffb3bf3ec7b266edb2e968f232847a262bb"
     },
     {
@@ -229,7 +229,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_trace_intercept_shift_resultant.py"
       ],
       "exit_code": 0,
-      "seconds": 51.399,
+      "seconds": 51.554,
       "log_sha256": "b85514cf96a11c89c2781eb1495243bc34d335c14098cb9270b8ace3de0b9b72"
     },
     {
@@ -241,7 +241,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cayley_uniform_cutoff_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 1.273,
+      "seconds": 1.32,
       "log_sha256": "e21cd0a78c0d83dc59f780e0c6a848b0d84d02f5f97d9ab5bba2962436ca8192"
     },
     {
@@ -253,7 +253,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/cdf_sup_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 0.166,
+      "seconds": 0.167,
       "log_sha256": "0b721d245b915e40cb157c08f3d110a1432a5c3e9e8273e1fc3a036298fd861a"
     },
     {
@@ -265,7 +265,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/current_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 0.218,
+      "seconds": 0.219,
       "log_sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
     },
     {
@@ -277,7 +277,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/magnetic_quotient_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 5.182,
+      "seconds": 5.188,
       "log_sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
     },
     {
@@ -289,7 +289,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/magnetic_scalar_certificate.py"
       ],
       "exit_code": 0,
-      "seconds": 0.269,
+      "seconds": 0.268,
       "log_sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
     },
     {
@@ -301,7 +301,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/mixed_cayley_energy.py"
       ],
       "exit_code": 0,
-      "seconds": 10.15,
+      "seconds": 10.303,
       "log_sha256": "fd940082761c2e48c67cbb4b7f806227877fc9cda256e81963ccf0c1465162f1"
     },
     {
@@ -313,7 +313,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/offoff_elliptic_spike_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 2.626,
+      "seconds": 2.673,
       "log_sha256": "651f3be6fe205af2477c7f1be5c0e5ff137a542b5abe8ce1ae1524f1f209fe73"
     },
     {
@@ -327,7 +327,7 @@
         "/home/runner/work/_temp/wow-build/pell_pair_orthogonality"
       ],
       "exit_code": 0,
-      "seconds": 1.12,
+      "seconds": 1.169,
       "log_sha256": "697ae348535c616815bdd8349eefbcab7afabd022b17015cc1afeb885463622b"
     },
     {
@@ -339,7 +339,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/pell_gamma_interval.py"
       ],
       "exit_code": 0,
-      "seconds": 0.116,
+      "seconds": 0.119,
       "log_sha256": "81e5dbaed7b03af10a6731ba1cf311ec477878770d160ee0e61aabd606275c51"
     },
     {
@@ -351,8 +351,22 @@
         "/home/runner/work/WoW/WoW/computations/verification/pell_gaussian_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 0.868,
+      "seconds": 0.871,
       "log_sha256": "329c1c5b4f89ace60617a87c9a09d238f7b23746fca30328bf4b2f74cd22e108"
+    },
+    {
+      "name": "pell_pair_obstruction",
+      "source": "computations/verification/pell_pair_obstruction.py",
+      "sha256": "3323986145033e7358c84c0343f7fba19638599aae7c17e45794db33bbf69122",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
+        "/home/runner/work/WoW/WoW/computations/verification/pell_pair_obstruction.py",
+        "--output",
+        "/home/runner/work/WoW/WoW/evidence/certificates/pell_pair_obstruction.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.767,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "repository_audit",
@@ -363,7 +377,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/repository_audit.py"
       ],
       "exit_code": 0,
-      "seconds": 0.17,
+      "seconds": 0.165,
       "log_sha256": "1c0c41cb34fd03f022821ed2a542fd96beb2c591b452f54bbd8ce4fa27db5d17"
     },
     {
@@ -375,7 +389,7 @@
         "/home/runner/work/WoW/WoW/computations/verification/twisted_jacobi_regression.py"
       ],
       "exit_code": 0,
-      "seconds": 0.971,
+      "seconds": 0.968,
       "log_sha256": "10ad5d603daa8c72e63583e41ecad8d163df24d735eba7aaabb56af68ecee73f"
     },
     {
@@ -388,7 +402,7 @@
         "verify"
       ],
       "exit_code": 0,
-      "seconds": 33.011,
+      "seconds": 33.018,
       "log_sha256": "70b5a193aeeddcc8670f1143b5bd02fdde226e5440f8c09bc5e5cf512a7a6ca5"
     },
     {
@@ -400,7 +414,7 @@
         "verify"
       ],
       "exit_code": 0,
-      "seconds": 0.009,
+      "seconds": 0.006,
       "log_sha256": "2d059d14d14256c2a219a2dcf410421ba7bc15d42eeba7c993340199ba7b29dd"
     },
     {
@@ -411,7 +425,7 @@
         "/home/runner/work/_temp/wow-build/cayley_direct_energy_verifier"
       ],
       "exit_code": 0,
-      "seconds": 0.115,
+      "seconds": 0.118,
       "log_sha256": "869970209396d2c7d14a148d0ffc4ff63d51e16b92d92460bc56fc39be07fe1d"
     },
     {
@@ -422,7 +436,7 @@
         "/home/runner/work/_temp/wow-build/cayley_energy_verifier"
       ],
       "exit_code": 0,
-      "seconds": 0.005,
+      "seconds": 0.006,
       "log_sha256": "ee25b390bf6817738773491dad1d301a63fa9d8e5d494dd2c83afb3f19dc3af4"
     },
     {
@@ -433,7 +447,7 @@
         "/home/runner/work/_temp/wow-build/cayley_fibonacci_verifier"
       ],
       "exit_code": 0,
-      "seconds": 0.035,
+      "seconds": 0.034,
       "log_sha256": "2f7ea9a1c8a8a9216fd102ddb99b47c4e4ab736ca37e9f0eca1d6fd147d62260"
     },
     {
@@ -444,8 +458,8 @@
         "/home/runner/work/_temp/wow-build/cayley_trace_intercept_rigidity"
       ],
       "exit_code": 0,
-      "seconds": 0.922,
-      "log_sha256": "7fae0b63060e96bfa0bb78c35e60b2d8a7bf8918eafee9cbeb2aa1e8e19b410b"
+      "seconds": 0.969,
+      "log_sha256": "18e74a2aa4461999b57fb4841d32517265b761c3f16a735277e79e6f26a89246"
     },
     {
       "name": "cpp_fourth_moment_pair_key_verifier",
@@ -455,7 +469,7 @@
         "/home/runner/work/_temp/wow-build/fourth_moment_pair_key_verifier"
       ],
       "exit_code": 0,
-      "seconds": 1.22,
+      "seconds": 1.219,
       "log_sha256": "2f3a4bd7a455e647f3eb15019c54775d1ce6202f9c5f14cec0f397360dd3f5ab"
     },
     {
@@ -477,10 +491,10 @@
         "/home/runner/work/_temp/wow-build/pell_pair_orthogonality"
       ],
       "exit_code": 0,
-      "seconds": 0.036,
+      "seconds": 0.037,
       "log_sha256": "42af2b1c993c9ce2ed9592ba1b9a2e2542505e4587f666b5825c800485400a45"
     }
   ],
-  "passed": 40,
-  "total": 40
+  "passed": 41,
+  "total": 41
 }

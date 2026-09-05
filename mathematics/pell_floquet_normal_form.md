@@ -11,7 +11,8 @@ priority, external referee acceptance, or full Lean formalization. The result
 concerns the actual kicked quantum propagator, but its **K-th power at the
 arithmetic recurrence scale**, not microscopic nearest-neighbour statistics.
 The critical quantum kick tends to zero. A fixed nonzero classical
-perturbation is not covered.
+perturbation is not covered. Section 7 additionally proves a negative
+microscopic pair-correlation consequence under global mean-density unfolding.
 
 Put
 $$
@@ -436,7 +437,158 @@ zero. Corollary B permits an additional factor K in the kick scale, but its
 observable is a folded spectral measure. It must not be restated as an
 individual-cluster rank or no-overlap theorem.
 
-# 7. Verification, reproducibility, and limits
+# 7. A compact-test microscopic obstruction
+
+A negative statement about microscopic correlations needs less information
+than a positive universality theorem. The recurrence law above supplies
+such a statement through Fourier positivity. This section concerns the
+whole odd spectrum, with its multiplicities and the **global mean-density
+unfolding**. It is not a claim about a further symmetry sector or an
+unfolding which first removes a nonconstant mesoscopic intensity profile.
+
+Let x_1,...,x_d be the eigenphases of a d-dimensional unitary U, measured in
+turns, so its eigenvalues are exp(2 pi i x_j). For a compactly supported
+continuous test phi define the ordered factorial pair statistic
+$$
+ C_d(U;\phi)=\frac1d\sum_{a\ne b}\sum_{n\in\mathbb Z}
+              \phi\bigl(d(x_a-x_b+n)\bigr).                    \tag{23}
+$$
+Distinct indices, not distinct eigenvalues, are required in this definition.
+For L>0 use the compact triangular test
+$$
+ \phi_L(s)=\frac1L(1-|s|/L)_+,\quad
+ \int\phi_L=1,\quad \phi_L(0)=1/L,\quad
+ \widehat\phi_L(u)=\operatorname{sinc}^2(Lu)\geq0,               \tag{24}
+$$
+where sinc(v)=sin(pi v)/(pi v), with value 1 at zero. Fourier transforms use
+exp(-2 pi i u s). Absolute convergence of the periodized Fourier series
+(the coefficients decay quadratically) gives the exact identity
+$$
+ C_d(U;\phi_L)=d^{-2}\sum_{t\in\mathbb Z}
+   \widehat\phi_L(t/d)(|\operatorname{Tr}U^t|^2-d).              \tag{25}
+$$
+If d>L, the total diagonal subtraction is exactly 1/L, because
+sum_n phi_L(d n)=phi_L(0). For any distinct positive integers r_1,...,r_M,
+positivity therefore gives
+$$
+ C_d(U;\phi_L)\geq1-\frac1L+
+   2\sum_{j=1}^M\operatorname{sinc}^2(Lr_j/d)
+                   |d^{-1}\operatorname{Tr}U^{r_j}|^2.         \tag{26}
+$$
+No control or truncation of the remaining high-frequency traces is needed
+for this lower bound; their contribution is nonnegative.
+
+There is an equivalent counting interpretation. Let N_L(y) count the
+phases in the circular interval [y,y+L/d), with y uniform in [0,1).
+Then E_y N_L=L and an overlap-of-intervals calculation gives
+$$
+ \operatorname{Var}_y N_L
+      =L^2\bigl(C_d(U;\phi_L)-1\bigr)+L.                       \tag{27}
+$$
+This identity is also verified independently by integrating the
+piecewise-constant counting function, rather than reusing the pair sum.
+
+**Theorem C (obstruction and necessary kick scale).** For the kicked Pell
+family of Theorem A, put tau_K=epsilon_K sqrt(2K).
+If tau_K tends to a finite nonzero tau, then for every fixed L>0,
+$$
+ \liminf_{K\to\infty} C_{d_N}(U_{\varepsilon_K,N};\phi_L)
+      \geq \Theta(\tau)-\frac1L,\qquad
+ \Theta(\tau)=\sum_{m\in\mathbb Z}e^{-m^2\tau^2}>1,             \tag{28}
+$$
+and
+$$
+ \liminf_{K\to\infty}\operatorname{Var}_y N_L
+      \geq L^2\bigl(\Theta(\tau)-1\bigr).                      \tag{29}
+$$
+If tau_K tends to zero, C_(d_N)(U_(epsilon_K,N);phi_L) tends to positive
+infinity for every fixed L. Consequently, convergence of the globally
+unfolded pair measures to a bounded density rho(s) satisfying
+rho(s)->1 as |s|->infinity requires
+$$
+             |\varepsilon_K|\sqrt K\longrightarrow\infty.     \tag{30}
+$$
+This is a necessary condition only, not a sufficient universality criterion.
+
+**Proof.** The recurrence trace limit remains valid if tau_K->tau varies
+with K. Indeed Lemma 2 bounds tau_-(|X_K|), and
+|tau_-(exp(im tau_K X_K))-tau_-(exp(im tau X_K))|
+<=|m| |tau_K-tau| tau_-(|X_K|). The error in (21) is uniform for bounded
+tau_K. Thus the normalized mK trace tends to exp(-m^2 tau^2/2) for each
+fixed m, including tau=0.
+
+Apply (26) with r_j=jK. Since K/d_N->0, the sinc factors tend to 1.
+For every fixed M the resulting lower bound is
+1-1/L+2 sum_(m=1)^M exp(-m^2 tau^2). Let M tend to infinity *after* taking
+the lower limit in K. This proves (28), or divergence when tau=0.
+Equation (27) gives (29).
+
+Suppose the pair measures converge vaguely to rho(s)ds, where rho is bounded
+and clusters to unit intensity. For every fixed L the limiting triangular
+statistic would be
+$$
+ A_L=\int_{-1}^1(1-|u|)\rho(Lu)\,du.
+$$
+Dominated convergence gives A_L->1 as L->infinity. But (28) requires
+A_L>=Theta(tau)-1/L for every L, a contradiction. For tau=0 a finite
+locally bounded target already contradicts the fixed-L divergence.
+Finally, if |epsilon_K|sqrt(K) does not tend to infinity, there is a
+subsequence on which tau_K is bounded and then a further subsequence
+converging to a finite tau. The same contradiction applies. End of proof.
+
+The use of a compact test is essential for the logical scope. A Gaussian
+test without an independently controlled tail would only obstruct a
+Schwartz-test limit, not automatically vague local convergence. If the
+pair convergence definition uses only smooth compact tests, positive
+measures acquire locally uniform mass bounds by testing a bump which is
+one on a given compact set; approximation then extends convergence to the
+continuous triangular tests. Alternatively, start directly with a smooth
+nonnegative compact f of integral one, take phi=f*tilde(f), and scale it:
+phi_hat=|f_hat|^2>=0 and the same proof uses phi(0)/L instead of 1/L.
+No unproved high-frequency-tail assumption is hidden in Theorem C.
+
+The Poisson pair density rho=1 and the sine-kernel density
+rho_2(s)=1-sinc(s)^2 are both excluded. More explicitly, keeping only the
+first resonance gives
+$$
+ \liminf C_{d_N}(U_{\varepsilon_K,N};\phi_L)
+        \geq1+2e^{-\tau^2}-1/L.                               \tag{31}
+$$
+Since integral phi_L rho_2<=1, taking L=exp(tau^2) yields a gap of at least
+exp(-tau^2) from the sine-kernel prediction. At tau=1, already L=2 gives
+lower bound 1.2357588823..., greater than both that prediction and the
+Poisson value 1.
+
+The standard GOE bulk pair density is excluded by the bounded-clustering
+part of the theorem, not by an assumed pointwise bound rho<=1. In unit
+intensity normalization it is the even continuation of
+$$
+ \rho_1(s)=1-S(s)^2-S'(s)\int_s^\infty S(t)\,dt,\qquad
+ S(s)=\operatorname{sinc}(s),\quad s\geq0.                       \tag{32}
+$$
+This standard formula is recorded in Brezin--Hikami, equation (181) after
+unfolding. It is bounded at zero, and integration by parts in the sine tail
+shows rho_1(s)=1+O(s^(-2)) at infinity. The same elementary criterion
+therefore applies. The random-matrix formulas, Fourier positivity and
+counting-variance identity are standard ingredients; no priority is claimed
+for those general tools.
+
+This changes the route toward a positive BGS result: the critical and
+subcritical globally unfolded odd spectra considered here are not merely
+unproved universal families; they are **excluded** from the bounded
+clustering pair limits just specified. The statement does not settle
+nearest-neighbour distributions individually, density-adapted re-unfolding,
+a further desymmetrized block, or fixed nonzero classical kicks. It is not
+a refutation of a correctly qualified generic BGS conjecture.
+
+The finite verifier keeps forty configurations (K=3,5,7, several tau and L)
+and two synthetic controls. At K=7,tau=1,L=2 it numerically gives
+C_d=1.30936229449... and Var N_L=3.23744917797..., while the finite lower
+bound retaining K and 2K is 1.21861711382... . These are floating-point
+checks of finite identities, not the proof of (28). In particular the
+asymptotic bound is not incorrectly enforced on small K.
+
+# 8. Verification, reproducibility, and limits
 
 The Python verifier constructs the cohomological generator explicitly,
 checks (4), compares the exact Fourier-support expression (12) to direct
@@ -478,10 +630,11 @@ in `literature/pell_floquet_sources.md`.
 
 Finally K is of order log N, whereas the odd-space Heisenberg scale is of
 order d_N. Equation (A) is a one-point spectral law of U_epsilon^K and a
-trace law at recurrence times. It supplies neither local correlations of
-U_epsilon nor fixed-strength classical BGS universality. The unresolved
-route requires joint trace control at times of order d_N, a justified
-symmetry reduction, and control under a nonvanishing classical perturbation.
+trace law at recurrence times. It does not supply positive local universality or fixed-strength classical
+BGS universality. Section 7 does supply a negative compact-test pair
+obstruction. A positive route must go beyond its necessary kick scale,
+justify the symmetry reduction and unfolding, and obtain joint trace
+control at times of order d_N for the intended classical perturbation.
 
 # Related primary records
 
@@ -500,3 +653,9 @@ Journal of Physics A 40 (2007); [arXiv:0706.4397](https://arxiv.org/abs/0706.439
 Its abstract concerns quantum--classical fidelity measured by phase-space
 overlap, a different statistic. This comparison uses primary abstracts and
 records, not a complete full-text priority review.
+
+E. Brezin and S. Hikami, *New correlation functions for random matrices and
+integrals over supergroups* (2002);
+[arXiv:math-ph/0208001](https://arxiv.org/abs/math-ph/0208001).
+Equation (181) supplies the standard GOE two-point function used only as
+a comparison target; its bounded-clustering property is checked above.

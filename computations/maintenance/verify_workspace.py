@@ -31,6 +31,8 @@ def main() -> None:
             cmd=[sys.executable,str(p)]
             if p.stem=='pell_floquet_regression':
                 cmd+=['--cpp',str(args.build.resolve()/'pell_pair_orthogonality')]
+            if p.stem=='pell_pair_obstruction':
+                cmd+=['--output',str(ROOT/'evidence/certificates/pell_pair_obstruction.json')]
             items.append((p.stem,cmd,p))
     p=ROOT/'computations/analysis/spectral_diagnostics.py'
     items.append(('spectral_diagnostics_verify',[sys.executable,str(p),'verify'],p))
