@@ -110,6 +110,7 @@ def histogram_audit(cpp=None):
         g=int(sp.primitive_root(p));h=pow(g,(p-1)//K,p);H=subgroup(p,K,h)
         for m in range(1,max_m+1):
             C=word_histogram(p,H,m);can=canonical_histogram(p,C)
+            if p==7 and m==1: assert can==[0,0,4,2,2,4,0], can
             if cpp:
                 raw=subprocess.check_output([str(cpp),'--histogram',str(p),str(K),str(h),str(m)],text=True)
                 assert list(map(int,raw.split()))==can,(p,K,m)

@@ -38,3 +38,15 @@ The descriptive empirical CDF supremum must examine both sides of every empirica
 ## Scientific boundary
 
 Structural inverse multiplicity four at very large split primes is compatible with a quadratic energy target; absence of every collision is unnecessarily strong. Independently, control of finitely many global moments does not provide Heisenberg-scale desymmetrized traces or microscopic BGS statistics. These are separate unresolved obligations.
+
+## Correction of a newly transcribed Lean anchor
+
+During this pass, the first literal Lean histogram was independently
+found to be wrong before a successful Lean build was claimed. On the
+one-dimensional odd block at p=7,K=3, direct character summation gives
+A_q=(z^2+z^5-z-z^6-1)/3. The canonical first histogram is therefore
+[0,0,4,2,2,4,0], not the initially transcribed vector. All four literal
+anchors were replaced by equality with independently constructed cyclic
+convolution powers of this polynomial. The analytic global-law proof
+does not depend on those finite vectors. Compilation status is a
+separate, mandatory CI check, not inferred from source inspection.

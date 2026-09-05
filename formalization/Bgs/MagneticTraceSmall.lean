@@ -38,8 +38,28 @@ def canonical (m : Nat) : List Int :=
   let c := histogram m
   c.map (fun a => a-c.getD 6 0)
 
-theorem trace1 : canonical 1 = [0,-2,-2,-2,-2,-2,0] := by native_decide
-theorem trace2 : canonical 2 = [52,-10,-4,-4,-4,-10,0] := by native_decide
-theorem trace3 : canonical 3 = [-60,-60,-156,-48,-156,-60,0] := by native_decide
-theorem trace4 : canonical 4 = [2416,-676,-76,-220,-76,-676,0] := by native_decide
+/- On the one-dimensional odd block at p=7,K=3,
+A_q=(z^2+z^5-z-z^6-1)/3, z=e_7(q).
+Hence the trace histogram is 2 times the m-th cyclic power of S.
+This calculation is independent of affine-word enumeration. -/
+def baseCoefficients : List Int := [-1,-1,1,0,0,1,-1]
+
+def cyclicConvolution (a b : List Int) : List Int :=
+  (List.range 7).map (fun t =>
+    (List.range 7).foldl (fun acc j =>
+      acc + a.getD j 0 * b.getD ((t+7-j)%7) 0) 0)
+
+def coefficientPower : Nat -> List Int
+  | 0 => [1,0,0,0,0,0,0]
+  | m+1 => cyclicConvolution (coefficientPower m) baseCoefficients
+
+def closedCanonical (m : Nat) : List Int :=
+  let c := (coefficientPower m).map (fun x => 2*x)
+  c.map (fun x => x-c.getD 6 0)
+
+theorem first_closed_anchor : closedCanonical 1 = [0,0,4,2,2,4,0] := by native_decide
+theorem trace1 : canonical 1 = closedCanonical 1 := by native_decide
+theorem trace2 : canonical 2 = closedCanonical 2 := by native_decide
+theorem trace3 : canonical 3 = closedCanonical 3 := by native_decide
+theorem trace4 : canonical 4 = closedCanonical 4 := by native_decide
 end Bgs.MagneticTraceSmall
