@@ -88,3 +88,6 @@ jobs:
 
       - name: Regress prime-ideal versus rational-modulus support
         run: python computations/verification/cayley_inverse_prime_ideal_vs_rational_modulus.py
+
+      - name: Regress shared-endpoint inverse torsion theorem
+        run: python computations/verification/cayley_inverse_shared_endpoint_torsion.py
