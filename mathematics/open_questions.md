@@ -20,7 +20,10 @@ uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
 The old question “eliminate every exceptional collision” is no longer the
 right closure condition. The square-resultant/Fibonacci analysis shows that
 very large exceptional split primes exist, while their total excess energy can
-remain small.
+remain small. The inverse structural-associate theorem strengthens this
+warning: for every sufficiently large prime conductor there are explicit
+characteristic-zero associate edge pairs whose simultaneous reduction is
+forced at every prime ideal dividing one common principal ideal.
 
 ### What is already closed
 
@@ -106,12 +109,17 @@ or equivalently
 
 `sum_{q!=0}|1_Ahat(q)|^4 << p K^(2+o(1))`.
 
-In the intended regime `K=o(p^(1/4))`, the density term is negligible at the
-quadratic collision scale.
+The **intended pointwise regime is explicitly**
+
+`K=o(p^(1/4))`.
+
+In this regime the density term is negligible at the quadratic collision
+scale. Statements about all split primes, including `p=O(K)`, are stronger
+than the actual closure condition and must not be silently substituted for it.
 
 [`cayley_centered_energy.md`](cayley_centered_energy.md) gives the exact
 character Gram matrix, torus-versus-unipotent PGL2 intersection formulation,
-and shifted-product formulation. The new trace identity additionally identifies
+and shifted-product formulation. The trace identity additionally identifies
 the same Fourier transform with the ordinary trace of the full annihilator
 Twisted-Jacobi matrix.
 
@@ -121,10 +129,90 @@ themselves, remove the remaining `K^(2/3)` pointwise loss. Termwise square-root
 bounds on the trace functions also discard the joint character-family
 cancellation required by the fourth moment.
 
+### New inverse-row quotient route
+
+The exact fixed-product-row inequality is
+
+`Delta_K(p)<=4 I_K(p)(K-1)(K-2)`.
+
+Hence one does not need to prove `I_K<=2`. In the intended regime it is enough
+to prove
+
+`I_K(p)=K^o(1)`,
+
+and `I_K(p)=O(1)` would already give a genuinely quadratic row contribution.
+
+For the inverse ratio there is now a sharper exact reduction. With
+
+`w_(a,b)=2-v_a-v_b`, `v_n=(t_n-2)/(tau-2)`,
+
+define characteristic-zero edge association by
+
+`e~f iff w_e/w_f is a unit of Z[tau]`.
+
+Discard unit edges and let `B_K` be the largest remaining associate-class
+size. For nonassociate edges define
+
+`(w_e,w_f) cap Z = D_(K;e,f) Z`.
+
+Then for a split embedding prime `q|p`, if `p` divides no cross-class
+`D_(K;e,f)`, every zero edge at `q` lies in one associate class and
+
+`I_-1(q)<=2 B_K`.
+
+See [`cayley_inverse_associate_quotient.md`](cayley_inverse_associate_quotient.md).
+
+This splits the inverse closure into two materially different tasks:
+
+1. **Characteristic-zero class size:** prove `B_K=K^o(1)`, ideally `O(1)`.
+2. **Cross-class arithmetic:** in the intended `K=o(p^(1/4))` regime, exclude
+   `p` from the split divisors of every `D_(K;e,f)` with `e!~f`; a sufficient
+   form is a largest-split-divisor bound `K^(4+o(1))` for the product of these
+   cross-class contractions.
+
+This is strictly weaker than bounding the largest divisor of the full inverse
+order-three support, because the universal structural associate classes are
+removed before the cross-class problem is formed.
+
+The range restriction is load-bearing. Direct exact finite controls include
+
+`K=83, p=167=2K+1: I_-1=14`,
+
+`K=89, p=179=2K+1: I_-1=16`.
+
+Thus a global `I_-1=O(1)` assertion over **all** split primes is not an active
+hypothesis. Those examples lie far outside `K=o(p^(1/4))`. Conversely the
+large-prime structural controls
+
+`K=139, p=3596704231>K^4: I_-1=4`,
+
+`K=229, p=966684838398077>>K^4: I_-1=4`
+
+show why bounded structural multiplicity, rather than absence of order-three
+support, is the correct compatible target.
+
+Finite data also contain genuine nonassociate same-embedding events, for
+example
+
+`K=59, p=21713`,
+
+where exact ideal contraction gives
+
+`(w_(8,26),w_(9,10)) cap Z = 21713 Z`.
+
+This calibrates the cross-class problem: it is nonempty and must be bounded,
+not wished away. Current finite data suggest many nonassociate factors lie on
+an `O(K^2)` scale, but **no exponent-two theorem is claimed**.
+
+The inverse quotient route is not yet a solution of the general row problem.
+One must either obtain analogous multiplicity control for every normalized
+ratio class or prove a theorem reducing the worst ratio to the inverse class.
+
 **Pointwise closure condition:** prove the centered bound above, or any explicit
 `K^(2+delta)` bound with `delta<2/3` that materially enlarges the pointwise
 fourth-moment regime after complete propagation through `B(t)` and the variance
-identity.
+identity. For the row route, a sufficient intermediate theorem is uniform
+`I_K(p)=K^o(1)` in the explicit regime `K=o(p^(1/4))`.
 
 **Averaged continuation condition:** if a stronger average is pursued, specify
 its averaging measure and parameters explicitly. The dyadic prime-pair average
@@ -146,10 +234,17 @@ spectral blocks used in the BGS statement.
 
 Even a completed moment estimate does not imply microscopic GOE spacing.
 
-**Closure condition:** identify and verify a theorem or new argument that
-transfers the available arithmetic information to a local eigenphase
-correlation law for this structured deterministic family at the mean-spacing
-scale, with all symmetry and uniformity assumptions explicit.
+The deterministic Fourier bridge is now exact: band-limited microscopic
+factorial statistics are weighted sums of joint traces at powers
+`|m|=Theta(N)`. What remains is not the Fourier conversion but the arithmetic /
+spectral estimate on the correct desymmetrized block, followed by uniform
+high-frequency tail control for arbitrary Schwartz tests.
+
+**Closure condition:** prove a weighted Heisenberg-scale joint-trace comparison
+with the target RMT ensemble for the actual desymmetrized block, with all
+symmetry and uniformity assumptions explicit, and control the Fourier tail
+needed to remove the band limit. Only then can one promote a microscopic
+BGS/GOE/COE local eigenphase law.
 
 ## Engineering status
 
