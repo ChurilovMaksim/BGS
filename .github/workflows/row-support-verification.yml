@@ -82,3 +82,6 @@ jobs:
 
       - name: Regress inverse reduced resultant filter
         run: python computations/verification/cayley_inverse_reduced_resultant_filter.py
+
+      - name: Regress sparse unlikely-intersection geometry
+        run: python computations/verification/cayley_inverse_sparse_unlikely_intersection.py
