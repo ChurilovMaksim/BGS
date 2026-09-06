@@ -3,8 +3,7 @@
 This record closes the repository-recovery pass requested after the interrupted
 main-branch integration. It distinguishes active mathematical claims, finite
 verification, external theorem inputs, historical provenance, and publication
-artifacts. The commit containing this file is the authoritative finalization
-commit; no force update is required or intended.
+artifacts. No force update is required or intended.
 
 ## 1. What was checked
 
@@ -22,7 +21,8 @@ The audit covered four independent surfaces:
 The original delivery archive was recovered as
 `WoW_consolidated_research.zip`, size 2,605,999 bytes, SHA-256
 `8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099`.
-Its archive contains exactly 204 files. The companion patch has SHA-256
+Its archive contains exactly 204 files with total uncompressed size 4,084,074
+bytes. The companion patch has SHA-256
 `366fe46e385b9af3f100fedc34d36413379ffde41cb2a2ddc08c749fb90081e8`.
 The historical delivery manifest records a clean 204-file patch round-trip and
 92-page consolidated build; those historical checks are preserved as
@@ -94,9 +94,13 @@ mere file-existence checks:
   point imports the complete `formalization/Bgs/*.lean` set, including
   `CayleyCurveEnergy`, `GeneralHyperbolicParity`, `LocalityKernels`,
   `PellCoboundary`, `PellEchoWeights` and `PellFourierKernel`.
-- `CMakeLists.txt` omitted two maintained C++ sources:
-  `fixed_strength_locality_exact.cpp` and `pell_coboundary_pairs.cpp`. Both are
-  now build targets and are covered by the warning gate.
+- `CMakeLists.txt` initially omitted `fixed_strength_locality_exact.cpp` and
+  `pell_coboundary_pairs.cpp`. A second source-enumeration pass then found the
+  remaining orphan `return_word_certificate.cpp`. The active directory has 16
+  C++ sources and the final CMake graph has 16 matching executable targets.
+  The return-word source was independently compiled with C++20 plus
+  `-Wall -Wextra -Wpedantic` and executed successfully: 30 geometry obligations
+  and 11 free-word tests passed.
 - `computations/verification/repository_audit.py` had a stale top-level
   whitelist predating `REPRODUCE_unified.md`, `requirements-nondegeneracy.txt`
   and the provenance archive. The final audit explicitly accepts the current
@@ -107,6 +111,12 @@ mere file-existence checks:
 - the independent manuscript workflow built only the older arithmetic article.
   The final workflow uses `build_unified_manuscript.py` as the canonical
   fail-closed builder and keeps the old article as a separate legacy build.
+- the unified builder's page-count parser could return `null` when TeX wrapped
+  the word `pages` across a log line. The parser is now whitespace-tolerant and
+  fails closed if the page count cannot be recovered.
+- the first final `REPRODUCE_unified.md` invoked `verify_workspace.py` without
+  its required `--build`, `--logs` and `--output` arguments. The reproduction
+  commands now build CMake first and pass all required arguments explicitly.
 
 ## 6. Mathematical review of the recovered material
 
@@ -150,18 +160,25 @@ labelled as a complete solution of that open problem.
 
 ## 8. CI and publication status
 
-The most recent GitHub Actions attempts observed before finalization failed
-before any step ran: the jobs reported `runner_id=0` and an empty `steps` list.
-Accordingly this audit does **not** claim cloud CI success or failure of a
-scientific test. The workflows are corrected so that the next provisioned
-runner will exercise the complete C++/Python/Lean graph and the canonical
-unified TeX build.
+The GitHub Actions attempts observed during the recovery initially failed before
+any step ran: the jobs reported `runner_id=0` and an empty `steps` list.
+Accordingly those runs are infrastructure evidence, not failures of a
+scientific test, and no green cloud-CI result is inferred from them.
 
-Historical local build logs report the earlier 92-page consolidated PDF and
-clean rebuild comparison. After the final source/editorial integration, a new
-cloud-built PDF should be treated as pending until a GitHub runner is actually
-assigned. Source correctness and typesetting execution are separate evidence
-layers.
+A final local manuscript reconstruction was nevertheless performed from the
+preserved 204-file manuscript corpus with the current `main` master TeX and
+final-delivery-note blobs. The canonical builder completed three TeX passes,
+kept every input hash unchanged, reported no forbidden warning, and produced a
+93-page PDF of 886,866 bytes. Pages 1, 92 and 93 were rendered and visually
+inspected; the same three page renders were byte-identical across two successive
+successful builds. The exact scope and blob identities are recorded in
+`record/final_manuscript_build_20260906.json`. The PDF binary itself is not
+committed and byte-identical PDF reproduction is not claimed, because document
+metadata/identifiers can change while rendered pages remain identical.
+
+The next provisioned GitHub runner should exercise the corrected complete
+C++/Python/Lean graph and the canonical unified TeX build. Source correctness,
+cloud execution and mathematical correctness remain separate evidence layers.
 
 ## 9. Final authority rule
 
