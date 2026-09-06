@@ -1,0 +1,100 @@
+\section{A two-window phase crossover}
+\label{sec:two-window-crossover}
+Fix $q\ge1$, $R\ge2q$, $v\in\mathbb Z^2\setminus\{0\}$ and put
+$t=|\operatorname{tr}A|$. Define one fixed-support family
+\[
+ g_\varepsilon=(C^2-tC+I)^q(e_v+e_{-v})
+                         +\varepsilon i(e_v-e_{-v}).
+\]
+Let $L_{R,n,m}(\varepsilon)$ be the $nm$-dimensional Gram matrix in
+$L^2(\mathbb T^2)$ of
+\[
+ \lambda^{-r}C^lh_r(g_\varepsilon),\qquad
+ R+1\le r\le R+n,\quad 1\le l\le m.
+\]
+The first index is lag, the second simultaneous time translation.
+
+\begin{theorem}[Two-window lower edge]\label{thm:two-window-edge}
+For $a=\min(n,m)$ there are positive constants depending only on
+$A,v,q,R$ such that, uniformly in $n,m\ge1$ and real $\varepsilon$,
+\[
+ \lambda_{\min}(L_{R,n,m}(\varepsilon))
+ \asymp (n^{-2q}+\varepsilon^2)(a^{-2q}+\varepsilon^2).
+\]
+This is a two-sided order estimate, not a claimed exact leading constant.
+\end{theorem}
+\begin{proof}
+Write $u(\theta)=2-2\cos\theta$ and
+$H(\theta)=u(\theta)(t^2-4+u(\theta))$. The exact symbol of
+Theorem~\ref{thm:two-variable-tail} is
+\begin{align*}
+ F_\varepsilon(\omega,\theta)
+ ={}&4\pi^2\xi(v)^2\eta(v)^2
+       \bigl(\lambda^{2q}H(\theta)^q+\varepsilon^2\bigr)\\
+ &\hspace{2em}\cdot
+       \bigl(\lambda^{-2q}H(\omega-\theta)^q+\varepsilon^2\bigr).
+\end{align*}
+Indeed the characteristic polynomial obeys
+\[
+ |((\lambda e^{i\theta})^2-t\lambda e^{i\theta}+1)^q|^2
+       =\lambda^{2q}H(\theta)^q,
+\]
+and the reciprocal-radius formula is analogous. The opposite orientations
+cancel the sine perturbation's mixed terms.
+
+For this single-orbit family the exact output row weight, relative to the
+symbol, is $(1-\lambda^{-2k})^2$. The temporal filter has degree $2q$, so
+$k\ge R+1-2q\ge1$. Thus the actual finite Gram matrix lies between the
+Toeplitz form and
+$(1-\lambda^{-2(R+1-2q)})^2$ times that form. This is a relative Loewner
+comparison, with no additive error near a closing gap. Since $H\asymp u$,
+it suffices to treat the symbol
+$(u(\theta)^q+\varepsilon^2)(u(\omega-\theta)^q+\varepsilon^2)$.
+
+Extend an $n$ by $m$ coefficient array by zero to $\mathbb Z^2$. Let $D_1$
+and $D_2$ be first differences in directions $(1,0)$ and $(-1,1)$.
+The form is exactly
+\begin{align*}
+ &\|D_1^qD_2^qx\|_2^2
+ +\varepsilon^2\bigl(\|D_1^qx\|_2^2+\|D_2^qx\|_2^2\bigr)
+ +\varepsilon^4\|x\|_2^2. \tag{TW.1}
+\end{align*}
+All boundary terms are included. A sequence supported on $s$ consecutive
+sites has first Dirichlet difference eigenvalue
+$4\sin^2(\pi/(2(s+1)))$. Fourier Jensen therefore gives
+$\|D^qy\|_2^2\ge c_qs^{-2q}\|y\|_2^2$.
+Horizontal chains have length $n$, diagonal chains length at most $a$.
+After $D_1^q$ the latter length is at most
+$\min(n+q,m)\le(q+1)a$. Applying these inequalities successively proves
+\[
+ \|D_1^qD_2^qx\|_2^2\ge c_qn^{-2q}a^{-2q}\|x\|_2^2,
+\]
+as well as the two single-difference lower bounds. Inserting them in (TW.1)
+proves the lower estimate.
+
+For the upper estimate take
+\[
+ x_{j,l}=f(j/(n+1))f(l/(m+1)),\qquad
+ f(s)=s^{2q}(1-s)^{2q}\mathbf1_{[0,1]}(s).
+\]
+Vanishing derivatives through order $2q-1$ at both endpoints give the finite
+difference bounds, including boundary crossings. If $E_j,E_l$ are shifts,
+$D_2=E_j^{-1}(D_l-D_j)$. The binomial expansion gives
+\begin{align*}
+ \|D_1^qx\|_2&\le C_qn^{-q}\|x\|_2,\\
+ \|D_2^qx\|_2&\le C_q(n^{-1}+m^{-1})^q\|x\|_2,\\
+ \|D_1^qD_2^qx\|_2&\le C_qn^{-q}(n^{-1}+m^{-1})^q\|x\|_2.
+\end{align*}
+Use this trial vector in (TW.1). The finitely many small window lengths are
+absorbed in the constants.
+\end{proof}
+
+When $m\ge n$, the edge has order $(n^{-2q}+\varepsilon^2)^2$, with
+threshold $|\varepsilon|\asymp n^{-q}$. When $m\ll n$, the two thresholds
+are $n^{-q}$ and $m^{-q}$, and the three orders are respectively
+$n^{-2q}m^{-2q}$, $\varepsilon^2m^{-2q}$ and $\varepsilon^4$.
+In particular a single simultaneous time, $m=1$, gives order $n^{-2q}$ at
+zero perturbation, whereas $m\ge n$ gives $n^{-4q}$. Setting the dynamical
+frequency to zero before specifying the time window would miss this
+proved distinction. No identification with a quantum spectral form factor
+is made.
