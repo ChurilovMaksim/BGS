@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "producer": "computations/maintenance/build_unified_manuscript.py",
+  "scope": "Final-source manuscript build reconstructed from the preserved 204-file consolidation manuscript corpus with the current main WoW_unified.tex and final_delivery_note.tex blobs. This is typesetting/build evidence, not full-repository CI and not a mathematical proof audit.",
+  "main_parent_commit": "170b25ce0ac0f1b0ae614d945215ad6b1ce56e37",
+  "master_git_blob_sha": "2bff0fbf871e165b2b58cb86b26a69458c5c505c",
+  "final_delivery_note_git_blob_sha": "a0a9be8ac963858bf28a711ca215d4eb0262735d",
+  "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "status": "PASS",
+  "latex_passes": 3,
+  "sources_unchanged": true,
+  "forbidden_warnings": [],
+  "page_count": 93,
+  "pdf_bytes": 886866,
+  "render_spotcheck_pages": [1, 92, 93],
+  "render_spotcheck_identical_across_successive_builds": true,
+  "return_word_certificate": {
+    "compiler_flags": "-std=c++20 -Wall -Wextra -Wpedantic",
+    "status": "PASS",
+    "geometry_obligations": 30,
+    "free_word_tests": 11,
+    "exact_bracket_coefficients": [0, -1, 1, 0]
+  },
+  "notes": [
+    "The builder initially returned page_count=null because TeX wrapped the word 'pages' across a log line; the final build-helper follow-up makes that parser whitespace-tolerant and fail-closed.",
+    "Successive PDF binaries can differ in metadata/document identifiers although spot-rendered pages are byte-identical; no final binary-PDF reproducibility claim is made from this check.",
+    "GitHub Actions runner provisioning remained a separate cloud-infrastructure issue at the time of this local finalization check."
+  ]
+}
