@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-06",
+  "base_commit": "e702a660ea542d0d0f36a97a87761c8fd89f1210",
+  "python": "3.13.5",
+  "checks": [
+    {
+      "name": "first",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact controls, not proof by enumeration",
+        "maximum_rank_parameter": 12,
+        "laguerre_families": 24,
+        "positive_root_count_method": "exact Sturm count and polynomial gcd",
+        "energy_state_pairs": 12,
+        "uniform_disk_bound_cases": 36,
+        "finite_probe_control": {
+          "probe_count": 4,
+          "orthogonal_states_constructed": 2,
+          "largest_fock_occupation": 5,
+          "negative_controls": 1
+        },
+        "source_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe"
+      },
+      "result_sha256": "235d5354e9caf406b5606e1d79616dd470403a48fdd2c59b4e7d5c641d9b7761",
+      "log_sha256": "235d5354e9caf406b5606e1d79616dd470403a48fdd2c59b4e7d5c641d9b7761"
+    },
+    {
+      "name": "second",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact controls, not proof by enumeration",
+        "maximum_rank_parameter": 16,
+        "laguerre_families": 32,
+        "positive_root_count_method": "exact Sturm count and polynomial gcd",
+        "energy_state_pairs": 12,
+        "uniform_disk_bound_cases": 36,
+        "finite_probe_control": {
+          "probe_count": 4,
+          "orthogonal_states_constructed": 2,
+          "largest_fock_occupation": 5,
+          "negative_controls": 1
+        },
+        "source_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe"
+      },
+      "result_sha256": "6930f608e56fd4d2748253433b6f198f12cddc268ff3cf9f41a53d84dbc5c837",
+      "log_sha256": "6930f608e56fd4d2748253433b6f198f12cddc268ff3cf9f41a53d84dbc5c837"
+    }
+  ],
+  "source_files": {
+    "computations/verification/husimi_shell_tomography.py": {
+      "git_blob": "cd85ccc9a3dc8fb99d4282f1809bd7a54af7bf85",
+      "sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe"
+    },
+    "manuscript/WoW_unified.tex": {
+      "git_blob": "e4b344f22fce92544e54e29d7c0295b9e88bb731",
+      "sha256": "2304d4a8bb9b79c46d892516d530042d2f74c870317aa607f460b4acc93a9254"
+    },
+    "manuscript/unified_bibliography.tex": {
+      "git_blob": "6993a0c20d089f3ae29196c1237fc26ca059204f",
+      "sha256": "13c5f624939179989c886c9aa5a895f694638baa9592199e0cd46a7016f53081"
+    },
+    "manuscript/unified_sections/husimi_shell_tomography.tex": {
+      "git_blob": "119f68a9825dd1e9926fd18cd4affe7557dd73b9",
+      "sha256": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965"
+    },
+    "record/claim_ledger.md": {
+      "git_blob": "8801271f192096c9788adddebd11327c9d4f0f82",
+      "sha256": "fb4fb6096f4a63078ddba89ff8fde100ba2fea72f3b931b5ff6ae6c70a392fbd"
+    },
+    "record/husimi_shell_review.md": {
+      "git_blob": "9a57900fa1832ecfad83865b368331a182a8ff9c",
+      "sha256": "d9e3b21c66ebd818b6a67c20782b498c252210399a2656ae2500e28145ff3644"
+    }
+  },
+  "publication": {
+    "scope": "four continuation sections only; not the full historical article",
+    "pages": 10,
+    "pdftex_passes": 3,
+    "rendered_pages_inspected": 10,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "unresolved_citations": 0,
+    "pdf_sha256": "ce707dcec85e58ec7823fbc322e574d4ee267fa86fb0618e66dac6f89cb1d1a2",
+    "final_log_sha256": "9fcd9d4e1d4dc2ad7308570a7edf0ff325acf497817749a20421c3aa69e2fd5a"
+  },
+  "boundaries": [
+    "whole angular functions, not finite scalar measurements",
+    "rank bounded competitors, not an arbitrary-rank strict-completeness theorem",
+    "Laguerre sharpness is a universal-radius guarantee, not every prescribed design",
+    "trace-distance modulus is a lower bound, not a matching upper rate",
+    "finite computations are not proofs of the infinite-dimensional statements",
+    "no BGS, external priority, Lean compilation, or full historical-manuscript build claimed"
+  ]
+}

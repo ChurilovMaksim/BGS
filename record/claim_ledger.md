@@ -348,3 +348,24 @@ limited PDF build scope are in `holomorphic_shell_review.md` and
 `../evidence/certificates/holomorphic_shell_review.json`. These entries do not
 assert external priority, full-repository referee acceptance, Lean compilation,
 or successful cloud CI. Positive microscopic BGS universality remains OPEN.
+
+
+## Bosonic Husimi-shell application
+
+Proof authority: `manuscript/unified_sections/husimi_shell_tomography.tex`,
+using the finite-rank holomorphic contact theorem above. The Hilbert space is
+not truncated. Each sphere carries ideal complete angular data.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Ranks a and b are distinguished by a+b total complete shell/normal-jet conditions in any finite number of bosonic modes | EXACT | No photon cutoff; ideal continuum data, not finite-copy sample complexity |
+| Any 2r circles give rank-r completeness; normalized Laguerre mixtures show 2r-1 can fail at trace distance one | EXACT + FINITE-REGRESSION | Sharp universal guarantee over radius choices; not failure at every prescribed design |
+| Rank-r strict completeness does not follow: ranks r and r+1 can agree on 2r circles | EXACT + FINITE-REGRESSION | Unknown competitor rank is a different tomography problem |
+| No finite set of coherent-state projectors identifies every pure state without a cutoff | EXACT + FINITE-REGRESSION | Infinite-dimensional orthogonal-complement construction |
+| Without an energy bound, bounded-region Husimi data have no uniform trace-distance inverse modulus | EXACT | Orthogonal number-state sequence |
+| Fixed mean energy restores uniform continuity on rank-bounded states, but not a Holder modulus even with a measured intensity floor | EXACT + FINITE-REGRESSION | Explicit pure-state pairs; modulus at least c sqrt(loglog(1/delta)/log(1/delta)); no matching upper rate |
+
+The pure scalar two-circle case and the definitions of rank-r versus strict
+completeness are prior work, explicitly cited. This application is not a BGS
+result. Execution, source hashes, and the combined-excerpt build scope are
+recorded in `husimi_shell_review.md` and its evidence certificate.

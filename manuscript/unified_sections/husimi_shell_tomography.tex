@@ -1,0 +1,179 @@
+\section{Finite-rank bosonic tomography from complete Husimi shells}
+\label{sec:husimi-shell}
+The preceding analytic theorem has a direct quantum-information consequence.
+The finite parameter is the rank of the density operator, not a photon-number
+cutoff or the dimension of the Hilbert space. Exact injectivity, finite-copy
+estimation, and stability in trace distance must nevertheless be separated.
+
+\subsection{The infinite-dimensional measurement model}
+For $s$ bosonic modes let $\mathcal H=\ell^2(\mathbb N^s)$, with occupation
+basis $|\nu\rangle$, and define the normalized coherent vector
+\[
+ |z\rangle=e^{-\|z\|^2/2}\sum_{\nu\in\mathbb N^s}
+               \frac{z^\nu}{\sqrt{\nu!}}|\nu\rangle,
+ \qquad z\in\mathbb C^s.
+\]
+For a positive trace-one operator $\rho$, use the Husimi convention
+\[
+ Q_\rho(z)=\pi^{-s}\langle z|\rho|z\rangle.
+\]
+These coherent-state probabilities and their role in tomography are standard;
+for a quantitative continuous-variable reconstruction framework see
+Landon-Cardinal, Govia and Clerk \cite{LGC2018}. We do not infer a sampling
+or numerical reconstruction algorithm from exact identifiability.
+
+For a vector $\psi\in\mathcal H$, the function
+\[
+ f_\psi(z)=\sum_\nu\overline{\psi_\nu}\frac{z^\nu}{\sqrt{\nu!}}
+\]
+is entire, since Cauchy--Schwarz bounds its modulus by
+$\|\psi\|e^{\|z\|^2/2}$, uniformly on compact sets. If
+$\rho=\sum_{j=1}^a\lambda_j|\psi_j\rangle\langle\psi_j|$ has finite rank,
+\[
+ \pi^s e^{\|z\|^2}Q_\rho(z)
+             =\sum_{j=1}^a\lambda_j|f_{\psi_j}(z)|^2.
+ \tag{H.1}\label{eq:husimi-bargmann}
+\]
+No finite mean energy is required for this identity or for the next theorem.
+
+\begin{theorem}[Rank-bounded shell tomography]\label{thm:husimi-shell}
+Let $\rho,\sigma$ be bosonic density operators of ranks $a,b<\infty$.
+If their Husimi functions have equal radial derivatives of orders
+$0,\ldots,m_i-1$ on each of the distinct complete spheres $\|z\|=\rho_i>0$, and
+$\sum_i m_i\ge a+b$, then $\rho=\sigma$.
+In particular, any $2r$ distinct positive-radius spheres distinguish all
+states of rank at most $r$ from one another, without a photon-number cutoff.
+\end{theorem}
+\begin{proof}
+Multiplication by $\pi^s e^{\|z\|^2}$ preserves zero normal multiplicities.
+Apply Theorem~\ref{thm:holomorphic-identify} to the maps with components
+$\sqrt{\lambda_j}f_{\psi_j}$ and the corresponding components for $\sigma$.
+The two polarized kernels coincide. The coefficient of
+$z^\nu\overline w^{\mu}/\sqrt{\nu!\mu!}$ is the corresponding density
+matrix element, so equality of the entire kernels gives equality of all
+matrix elements in the occupation basis.
+\end{proof}
+
+The conclusion is rank-$r$ completeness, in the terminology distinguishing it
+from rank-$r$ strict completeness \cite{BDK2016}. The latter would distinguish
+a rank-$r$ state from every state of arbitrary rank; it is not implied here.
+Each shell supplies a full angular function. The theorem does not replace
+that continuum by $2r$ scalar observations or claim finite sample complexity.
+Indeed no finite collection of coherent-state projectors distinguishes all
+pure states in $\mathcal H$: its vector span has an infinite-dimensional
+orthogonal complement, containing two orthogonal unit vectors with all those
+measurement probabilities zero.
+
+\subsection{Normalized sharp examples and the unknown-rank caveat}
+Let $m\ge1$ and define two diagonal, positive, normalized states
+\[
+ \rho_m^{\mathrm e}=2^{1-m}\sum_{\substack{0\le j\le m\\ j\ {\mathrm{even}}}}
+           \binom mj |j\rangle\langle j|,
+ \quad
+ \rho_m^{\mathrm o}=2^{1-m}\sum_{\substack{0\le j\le m\\ j\ {\mathrm{odd}}}}
+           \binom mj |j\rangle\langle j|.
+\]
+The even and odd binomial sums both equal $2^{m-1}$. Their supports are
+orthogonal, and their trace distance is therefore one. Direct evaluation gives
+\[
+ Q_{\rho_m^{\mathrm e}}(z)-Q_{\rho_m^{\mathrm o}}(z)
+     =\frac{2^{1-m}}{\pi}e^{-|z|^2}L_m(|z|^2),
+ \qquad L_m(x)=\sum_{j=0}^m(-1)^j\binom mj\frac{x^j}{j!}.
+ \tag{H.2}\label{eq:laguerre-ambiguity}
+\]
+The polynomial $L_m$ has $m$ distinct positive roots. A self-contained argument
+uses Rodrigues' identity
+$L_m(x)=e^x(d/dx)^m(e^{-x}x^m)/m!$. Integration by parts makes it orthogonal,
+with weight $e^{-x}$ on $(0,\infty)$, to every polynomial of degree below $m$.
+If it had fewer than $m$ positive sign changes, multiplying by the product of
+its sign-changing linear factors would give a nonzero integral of one sign,
+contradicting this orthogonality. Its degree is $m$, proving the assertion.
+
+Taking $m=2r-1$ in \eqref{eq:laguerre-ambiguity} gives two rank-$r$ states
+indistinguishable on $2r-1$ distinct complete circles, despite trace distance
+one. Thus $2r$ is a sharp universal guarantee over radius choices. This
+example does not claim failure for every prescribed configuration of $2r-1$
+radii. Taking $m=2r$ instead gives ranks $r+1$ and $r$ with identical data on
+$2r$ circles. Consequently the universal rank-$r$ completeness guarantee
+cannot be relabelled strict completeness when the competitor's rank is unknown.
+
+\subsection{Trace-distance stability needs more than exact shell data}
+For states define $D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1$. Without an
+energy bound no uniform trace-distance modulus exists, even on pure states
+and with arbitrarily many fixed bounded measurement circles. The orthogonal
+number states $|n\rangle$ and $|n+1\rangle$ have distance one, while on
+$|z|\le R$ their Husimi difference is bounded by
+\[
+ \frac{R^{2n}}{\pi n!}\left(1+\frac{R^2}{n+1}\right)\longrightarrow0.
+\]
+
+There is a stronger conditioned example. Fix $E>0$ and take integers $n>2E$.
+Set $u=E/n$ and
+\[
+ |\psi_n^\pm\rangle=\sqrt{1-u}|0\rangle\pm\sqrt u|n\rangle,
+ \qquad \rho_n^\pm=|\psi_n^\pm\rangle\langle\psi_n^\pm|.
+\]
+Both states have rank one, trace one and mean photon number exactly $E$.
+Their trace distance and data difference obey
+\begin{align}
+ D(\rho_n^+,\rho_n^-)&=2\sqrt{u(1-u)},\label{eq:husimi-trace-gap}\\
+ \sup_{|z|\le R}|Q_{\rho_n^+}(z)-Q_{\rho_n^-}(z)|
+ &\le\frac4\pi\sqrt{u(1-u)}\frac{R^n}{\sqrt{n!}}.
+ \label{eq:husimi-data-small}
+\end{align}
+The first formula follows by diagonalizing the two-by-two difference; the
+second follows by expanding the coherent-state amplitudes, whose diagonal
+terms cancel. For all sufficiently large $n$, uniformly on the same disk,
+\[
+ Q_{\rho_n^\pm}(z)\ge\frac{e^{-R^2}}{4\pi}.
+\]
+Indeed the amplitude before its Gaussian factor is at least
+$\sqrt{1-u}-\sqrt u R^n/\sqrt{n!}\ge1/2$.
+Thus even a fixed mean-energy bound and a positive lower bound on the measured
+intensities do not yield a uniform Holder estimate for trace-distance recovery.
+This is a global state error, not the interior intensity error in
+Theorem~\ref{thm:shell-instability}.
+
+\begin{proposition}[A compact inverse with a slow necessary modulus]
+Fix finitely many complete positive-radius circles, at least $2r$ in number,
+and let $\Omega_{r,E}(\delta)$ be the supremum of trace distance over pairs of
+rank-at-most-$r$ states with mean photon number at most $E$ and Husimi data
+error at most $\delta$ on these circles. Then $\Omega_{r,E}(\delta)\to0$ as
+$\delta\downarrow0$. For some $c>0$ and all sufficiently small $\delta$,
+\[
+ \Omega_{r,E}(\delta)\ge
+ c\sqrt{\frac{\log\log(1/\delta)}{\log(1/\delta)}}.
+ \tag{H.3}\label{eq:husimi-modulus}
+\]
+No matching upper rate is asserted.
+\end{proposition}
+\begin{proof}
+The energy constraint makes the state set compact in trace norm. For a direct
+verification, let $P_K$ project onto occupations $0,\ldots,K$. Its omitted
+probability is at most $E/(K+1)$. By decomposing a state into unit vectors,
+using the two-by-two rank-one calculation and Cauchy--Schwarz, one obtains
+$\|\rho-P_K\rho P_K\|_1\le2\sqrt{E/(K+1)}$. The finite-dimensional
+compressions are totally bounded. Positivity, trace one, rank at most $r$,
+and the lower-semicontinuous energy bound are closed conditions, proving
+compactness. The Husimi map is continuous into the sup norm because
+$|Q_\rho(z)-Q_\sigma(z)|\le\pi^{-1}\|\rho-\sigma\|_1$. It is injective on
+this set by Theorem~\ref{thm:husimi-shell}, so its inverse on its image is
+uniformly continuous.
+
+For the lower bound put $L=\log(1/\delta)$ and
+$n=\lceil4L/\log L\rceil$. The elementary estimate
+$\log(n!)\ge n\log n-n+1$ shows that the right side of
+\eqref{eq:husimi-data-small} is at most $e^{-L}$ for large $L$ and fixed
+$R,E$. Equation~\eqref{eq:husimi-trace-gap} is at least
+$\sqrt{2E/n}\ge c\sqrt{\log L/L}$. These rank-one pairs lie in every
+rank-at-most-$r$ class, completing the proof.
+\end{proof}
+
+All assertions concern ideal complete angular data; no finite-copy confidence
+statement follows. The pure-state two-circle case follows from prior scalar
+phase retrieval \cite{Perez2021}; bounded-rank and strictly-complete tomography
+are established subjects \cite{BDK2016}. The contribution relative to this
+project is the no-cutoff finite-rank shell implication, its normalized
+Laguerre ambiguities, and the explicit conditioned instability comparison.
+Priority for this precise combination has not been established. These
+results do not determine the eigenphase statistics of a chaotic propagator.
