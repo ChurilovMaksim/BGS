@@ -1,0 +1,175 @@
+\section{Exact pair-key geometry}
+
+Throughout the following finite-field arithmetic sections, p is an odd prime,
+$H\leq\mathbb F_p^\times$ has odd prime order K, and
+$e_p(t)=e^{2\pi i t/p}$. Fixed-degree row presentations impose $K\geq7$
+where stated. These hypotheses are distinct from the composite Pell moduli
+in the later quantum sections.
+
+For two admissible position pairs $(x_i,y_i)\in(\mathbb F_p\setminus\{0,1\})^2$,
+write their keys as $(u_i,v_i,d_i)$. Let $B(t)$ count the ordered quadruples
+satisfying $u_1u_2\in H$, $v_1v_2\in H$, and $d_1+d_2=t$; let $O(t)$ count
+those for which both position pairs are off diagonal. Write $V_4$ for the
+set of all such quadruples without fixing t. These definitions include
+multiplicities in the collapsed diagonal fibre.
+
+For $x,y\in\Fp\setminus\{0,1\}$ define
+\begin{equation}\label{eq:keydef}
+ u=\frac{x}{y},\qquad
+ v=\frac{x-1}{y-1},\qquad
+ d=x-y.
+\end{equation}
+
+\begin{proposition}[Pair-key bijection]\label{prop:key}
+If $x\ne y$, then $u,v\in\Fp^\times\setminus\{1\}$, $u\ne v$, and
+\begin{equation}\label{eq:inverse}
+ y=\frac{1-v}{u-v},\qquad
+ x=\frac{u(1-v)}{u-v},\qquad
+ d=\frac{(u-1)(v-1)}{v-u}.
+\end{equation}
+Conversely every such $(u,v)$ gives a unique admissible off-diagonal pair.
+The diagonal collapses to $(u,v,d)=(1,1,0)$ with multiplicity $p-2$.
+\end{proposition}
+
+\begin{proof}
+The equations $x=uy$ and $x-1=v(y-1)$ give $(u-v)y=1-v$, hence
+\eqref{eq:inverse}.  The diagonal statement is immediate.
+\end{proof}
+
+Under the subgroup constraints $u,v\in H$, there are exactly
+$(K-1)(K-2)$ admissible off-diagonal ordered pairs.  If $O(t)$ denotes the
+off/off contribution and
+\[
+C_H(t)=\#\left\{(u,v)\in(H\setminus\{1\})^2:
+ u\ne v,\ \frac{(u-1)(v-1)}{v-u}=t\right\},
+\]
+then exact bookkeeping gives
+\begin{equation}\label{eq:Bdecomp}
+B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf1_{t=0}.
+\end{equation}
+The factor two is essential: diagonal/off and off/diagonal are distinct ordered
+classes.  The total count is
+\begin{equation}\label{eq:V4}
+|V_4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K.
+\end{equation}
+If $\Sigma_4(q)=\sum_tB(t)e_p(qt)$, $V=\sum_tB(t)$ and $Z=B(0)$, finite
+Fourier orthogonality gives
+\begin{equation}\label{eq:meanvar}
+\mathbb E_{q\ne0}\Sigma_4(q)=\frac{pZ-V}{p-1},
+\qquad
+\Var_{q\ne0}\Sigma_4(q)=p\Var_{t\ne0}B(t).
+\end{equation}
+No probabilistic independence assumption enters this reduction.
+
+\section{Cayley energy and the best uniform bound}
+
+Put
+\[
+c(h)=\frac{h+1}{h-1},\qquad A=c(H\setminus\{1\}).
+\]
+For $u\ne v$,
+\begin{equation}\label{eq:cayley}
+\frac{(u-1)(v-1)}{v-u}=\frac{2}{c(u)-c(v)},
+\qquad c(h^{-1})=-c(h).
+\end{equation}
+Thus $A=-A$ and the nonzero multiplicities of $C_H$ are additive-difference
+multiplicities of $A$ up to the permutation $x\mapsto2/x$.  Hence
+\begin{equation}\label{eq:energyCH}
+\sum_tC_H(t)^2=E_+(A)-|A|^2,
+\qquad
+E_+(A)=\sum_xr_{A-A}(x)^2.
+\end{equation}
+Identity and central inversion force the nonzero baseline
+\begin{equation}\label{eq:forced}
+(K-1)(2K-5).
+\end{equation}
+For the unnormalized Fourier transform,
+\begin{equation}\label{eq:centered}
+E_+(A)=\frac{(K-1)^4}{p}
+ +\frac1p\sum_{q\ne0}|\widehat{1_A}(q)|^4.
+\end{equation}
+The sharp pointwise target is therefore
+\begin{equation}\label{eq:sharp-target}
+E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}).
+\end{equation}
+
+For $r_A(t)=\#\{(a,b)\in A^2:a+b=t\}$, clearing Cayley denominators gives
+\[
+(2-t)xy+t(x+y)-(2+t)=0,
+\]
+an absolutely irreducible curve in odd characteristic: when $t\ne2$ the
+bilinear coefficient determinant is $-4\ne0$, and when $t=2$ it is a
+nonconstant linear polynomial. Its bidegree is $(1,1)$ in either case.
+For $t\ne0,-2$ the constant term is nonzero and $\deg P(x,0)=1$, exactly
+the hypotheses needed for the subgroup-curve input.
+
+\begin{theorem}[Direct pointwise Cayley bound]\label{thm:direct}
+If
+\[
+100<K<\frac13p^{3/4},
+\]
+then
+\begin{equation}\label{eq:direct}
+E_+(A)<34K^{8/3}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For $t\ne0,-2$, the source form of Vyugin--Makarychev's subgroup-curve theorem
+\cite{VM2015,MV2019} gives $r_A(t)\le32K^{2/3}$ after its degree hypotheses are
+checked on the displayed bilinear polynomial.  The exceptional fibres satisfy
+$r_A(0)=K-1$ and $r_A(-2)\le K-1$.  Since
+$\sum_tr_A(t)=(K-1)^2$,
+\[
+E_+(A)
+\le2(K-1)^2+32K^{2/3}\sum_{t\ne0,-2}r_A(t)
+<34K^{8/3}.
+\]
+\end{proof}
+
+\section{Prime-order rigidity, square resultants and discriminants}
+
+Let $\zeta=e^{2\pi i/K}$.  Then
+\[
+c(\zeta^a)=-i\cot\frac{\pi a}{K}.
+\]
+Chowla's prime-modulus cotangent independence \cite{Chowla1970,Wang1982}
+identifies the characteristic-zero Cayley set with a rational cross-polytope.
+
+\begin{theorem}[Prime-order additive rigidity]\label{thm:add-rigidity}
+Every characteristic-zero equal-difference collision among
+$\{c(\zeta^a):a\in\mathbf F_K^*\}$ is identity or central inversion-swap.
+\end{theorem}
+
+For every admissible cleared collision polynomial $P(X)$, direct algebra gives
+$P(X)=(X-1)^3Q(X)$ and a reciprocal relation for $Q$.  Passing to the maximal
+real subfield yields:
+
+\begin{theorem}[Square-resultant theorem]\label{thm:square-res}
+\begin{equation}\label{eq:square-res}
+\Res(\Phi_K,P)=K^3M^2,\qquad M\in\Z.
+\end{equation}
+For a non-forced characteristic-zero collision, $M\ne0$.
+\end{theorem}
+
+\begin{proof}
+Here the cleared equal-difference polynomial can be defined explicitly.
+For $1\leq a_i<K$ and $(\epsilon_1,\epsilon_2,\epsilon_3,\epsilon_4)
+=(1,-1,-1,1)$, put
+\[
+ P(X)=\sum_{i=1}^4\epsilon_i(X^{a_i}+1)
+                         \prod_{j\ne i}(X^{a_j}-1),\qquad s=\sum_i a_i.
+\]
+Every term contains three factors vanishing at one, so
+$P=(X-1)^3Q$ with $Q\in\mathbb Z[X]$. Direct inversion gives
+$P(X^{-1})=-X^{-s}P(X)$ and hence $Q(X^{-1})=X^{3-s}Q(X)$.
+Choose an integer k with $2k\equiv s-3\pmod K$. Then
+$\xi=\zeta^{-k}Q(\zeta)$ is real and is an algebraic integer.
+The full cyclotomic norm of Q is the square of the real-subfield norm
+of $\xi$, because $\operatorname{Norm}(\zeta)=1$.
+Also $\operatorname{Norm}(\zeta-1)=K$. Therefore
+\[
+ \operatorname{Res}(\Phi_K,P)
+       =K^3\operatorname{Norm}_{\mathbb Q(\zeta+\zeta^{-1})/\mathbb Q}(\xi)^2.
+\]
+The inner norm is an integer. In the non-forced case the additive rigidity

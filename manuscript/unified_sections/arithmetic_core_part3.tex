@@ -1,0 +1,175 @@
+\section{Cyclotomic-unit matching and a scalar shift resultant}
+
+Put $u_n=s_n/s_1$.  For valid trace classes define
+\begin{equation}\label{eq:WV}
+W_r(b)=u_{(b+r)/2}u_{(b-r)/2},\qquad
+V_r(a)=u_ru_{(a+1)/2}u_{(a-1)/2}.
+\end{equation}
+A direct difference factorization gives
+\begin{equation}\label{eq:unitmatch}
+\gamma_r(a,b)-\beta_r=s_1^2\bigl(W_r(b)-V_r(a)\bigr).
+\end{equation}
+Since $s_1$ is a unit away from $K$, every split row intersection is exactly a
+congruence $W_r(b)\equiv V_r(a)\pmod{\mathfrak q}$ between explicit products
+of cyclotomic units.
+
+Let
+\[
+P_1(T)=\frac{H_K(T)}{T-t_1},\qquad
+R_r(U)=\frac{H_K(U)}{U-t_r}
+\]
+and define the scalar shift resultant
+\begin{equation}\label{eq:shiftres}
+\mathcal R_{K,r}(Z)
+ =\Res_T\!\left(P_1(T),R_r(\alpha_rT+\beta_r+Z)\right)
+ =c_0+c_1Z+c_2Z^2+\cdots.
+\end{equation}
+
+\begin{theorem}[Scalar support identity]\label{thm:scalar-support}
+For every split embedding prime $\mathfrak q$,
+\begin{equation}\label{eq:ordshift}
+\ord_{Z=0}(\mathcal R_{K,r}(Z)\bmod\mathfrak q)
+ =I_{1,r}(\mathfrak q).
+\end{equation}
+Consequently
+\[
+I_{1,r}(\mathfrak q)\ge3
+\iff
+c_0\equiv c_1\equiv c_2\equiv0\pmod{\mathfrak q}.
+\]
+\end{theorem}
+
+\begin{proof}
+Over the split residue field the two valid trace polynomials factor linearly,
+so the product formula gives
+\[
+\mathcal R_{K,r}(Z)
+ =\prod_{[a]\ne[1]}\prod_{[b]\ne[r]}
+   (Z+\alpha_rt_a+\beta_r-t_b).
+\]
+Each factor is linear in $Z$ and vanishes at zero exactly for one row
+intersection.
+\end{proof}
+
+The ideal $(c_0,c_1,c_2)$ contracts to an integer
+$\Omega_{K,r}^{(3)}$ with the same split rational-prime order-three support as
+$\Lambda_{K,r}^{(3)}$.  Equality of the full integers is not asserted.
+Moreover, the nonzero characteristic-zero constant coefficient gives the
+per-ratio deterministic budget
+\begin{equation}\label{eq:perratio}
+\sum_{\substack{p\equiv1\,(K)\\I_r(p)\ge3}}\log p=O(K^3).
+\end{equation}
+Summing over $O(K)$ ratio classes recovers an $O(K^4)$ scale, so
+\eqref{eq:perratio} is not a polynomial largest-prime theorem.
+
+\section{Inverse reflection and the pair-sum square}
+
+The ratio $r=-1$ has additional symmetry.  Here
+\[
+\alpha=-1,\qquad \beta=2\tau,
+\qquad Q(T)=-P(2\tau-T).
+\]
+Set
+\begin{equation}\label{eq:FEO}
+F(X)=P(\tau+X)=E(X^2)+XO(X^2).
+\end{equation}
+The reflection reduction gives
+\begin{equation}\label{eq:inverse-gcd}
+I_{-1}(\mathfrak q)=2\deg\gcd(E,O\bmod\mathfrak q).
+\end{equation}
+Thus inverse-row intersections are automatically even.  A fixed-degree
+half-size subresultant construction defines the exact split support integer
+$\Xi_K$.
+
+The scalar shift resultant admits a stronger universal factorization.
+
+\begin{theorem}[Inverse pair-sum factorization]\label{thm:pairsum}
+Let $x_1,\ldots,x_m$ be the roots of the monic polynomial $F$.  Define
+\[
+S(Z)=\prod_{i<j}(Z-x_i-x_j).
+\]
+Then $S\in\Z[\tau][Z]$ and
+\begin{equation}\label{eq:pairsquare}
+\Res_X(F(X),F(Z-X))=2^mF(Z/2)S(Z)^2.
+\end{equation}
+For every split embedding prime,
+\begin{equation}\label{eq:inverse-order}
+I_{-1}(\mathfrak q)=2\ord_{Z=0}(S(Z)\bmod\mathfrak q).
+\end{equation}
+Hence
+\begin{equation}\label{eq:two-scalar}
+I_{-1}(\mathfrak q)\ge3
+\iff
+S(0)\equiv S'(0)\equiv0\pmod{\mathfrak q}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The root-product formula gives
+\[
+\Res_X(F(X),F(Z-X))=\prod_{i,j}(Z-x_i-x_j).
+\]
+The diagonal ordered pairs give $2^mF(Z/2)$, and every unordered pair $i<j$
+occurs twice.  The coefficients of $S$ are symmetric integral polynomials in
+the roots.  At a split prime, $F(0)=P(\tau)=H'_K(\tau)$ is nonzero modulo every
+embedding prime, so the diagonal factor is a unit at $Z=0$.  Combining with the
+general shift-resultant identity gives \eqref{eq:inverse-order};
+\eqref{eq:two-scalar} follows because the left side is even.
+\end{proof}
+
+Let $S(Z)=s_0+s_1Z+\cdots$ and let the ideal $(s_0,s_1)$ contract to
+$\Theta_K\Z$.  Then $\Theta_K$, $\Xi_K$, and the inverse factor of
+$\Lambda_{K,-1}^{(3)}$ have the same split rational-prime support; their
+valuations need not agree.
+
+\section{The pair-sum polynomial as a translated half-degree resultant}
+
+The square root $S$ itself can be obtained without constructing the
+degree-$m^2$ shift resultant.  Translate
+\begin{equation}\label{eq:translatedF}
+F_Z(X)=F(X+Z/2)=E_Z(X^2)+XO_Z(X^2).
+\end{equation}
+
+\begin{theorem}[Translated parity-resultant identity]\label{thm:translated-res}
+There exists a convention-dependent sign $\varepsilon_m\in\{\pm1\}$ such that
+\begin{equation}\label{eq:translated-res}
+S(Z)=\varepsilon_m\Res_Y(E_Z(Y),O_Z(Y)).
+\end{equation}
+Consequently
+\begin{align}
+S(0)&=\varepsilon_m\Res_Y(E,O),\label{eq:s0res}\\
+S'(0)&=\varepsilon_m
+\left.\frac{d}{dZ}\Res_Y(E_Z,O_Z)\right|_{Z=0}.\label{eq:s1res}
+\end{align}
+The first-order deformation is
+\begin{equation}\label{eq:deformation}
+\left.\partial_ZE_Z\right|_0=\frac{O+2YO'}{2},
+\qquad
+\left.\partial_ZO_Z\right|_0=E'.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The roots of $F_Z$ are $y_i=x_i-Z/2$.  Apply the constant pair-sum identity
+from Theorem~\ref{thm:pairsum} to the monic polynomial $F_Z$.  Its unordered
+pair-sum product at zero is
+\[
+\prod_{i<j}(-y_i-y_j)
+ =\prod_{i<j}(Z-x_i-x_j)=S(Z).
+\]
+The even/odd decomposition \eqref{eq:translatedF} identifies this product,
+up to the fixed resultant sign, with $\Res(E_Z,O_Z)$.  Differentiating
+$F(X+Z/2)$ at $Z=0$ gives \eqref{eq:deformation}.
+\end{proof}
+
+Thus inverse order-three support is the simultaneous divisibility problem for a
+half-degree resultant and its translation derivative.  In exact computation,
+both scalars can be obtained in one Sylvester determinant over dual numbers
+$\varepsilon^2=0$, reducing the determinant dimension to $O(K)$ rather than
+materializing a degree-$m^2$ polynomial.
+
+Exact Smith contractions give, after removing factors $2K$,
+\[
+\Theta'_7=1,\quad
+\Theta'_{11}=1,\quad
+\Theta'_{13}=5,\quad
