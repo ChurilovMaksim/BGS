@@ -1,0 +1,128 @@
+\section{Rank-controlled polynomial rigidity}
+\label{sec:polynomial-multisphere}
+This section is independent of the spectral-statistics conjecture. Its
+statements are self-contained; priority relative to polynomial sphere-map
+and filter-bank literature is not asserted.
+
+For $P(z)=\sum_{j=0}^nv_jz^j\in\mathbb C^d[z]$, let
+$r=\dim\operatorname{span}\{v_j\}\ge1$. Call $\rho>0$ flat when
+$\|P(\rho e^{i\theta})\|^2$ is independent of $\theta$.
+
+\begin{theorem}[Sharp multiradius rigidity]\label{thm:multiradius}
+Either the nonzero coefficient vectors are pairwise Hermitian-orthogonal,
+so every positive radius is flat, or there are at most $r-1$ distinct
+positive flat radii. The bound is independent of the polynomial degree.
+\end{theorem}
+\begin{proof}
+A nonzero real polynomial with $k$ nonzero monomials has at most $k-1$
+distinct positive zeros: divide by the lowest monomial, differentiate and
+apply Rolle's theorem inductively. The same bound holds for complex
+coefficients by taking a scalar-rotated real part which is not identically
+zero.
+
+If the coefficients are not pairwise orthogonal, choose the largest
+$L\ge1$ with some $\langle v_j,v_{j+L}\rangle\ne0$. The angular coefficient
+at lag $L$ is $\rho^LB(\rho^2)$, where
+\[
+ B(x)=\sum_{j=0}^{n-L}\langle v_j,v_{j+L}\rangle x^j.
+\]
+Let $j_1<\cdots<j_k$ be its nonzero positions. The cross-Gram matrix
+\[
+ M_{ab}=\langle v_{j_a},v_{j_b+L}\rangle
+\]
+is triangular with nonzero diagonal: when $b>a$, the separation exceeds
+$L$ and the entry is zero. Hence $k=\operatorname{rank}M\le r$.
+Every flat radius gives a positive zero of the nonzero $k$-term polynomial
+$B$, so there are at most $k-1\le r-1$. If no such $L$ exists, orthogonality
+makes the squared norm radial at every radius.
+\end{proof}
+
+The bound is sharp at arbitrary prescribed radii. Given
+$\rho_1,\ldots,\rho_{d-1}>0$ distinct, write
+\[
+ B(x)=\prod_{s=1}^{d-1}(x-\rho_s^2)=\sum_{j=0}^{d-1}a_jx^j
+\]
+and define the $d$ components
+\[
+ P_j(z)=\sqrt{|a_j|}\,z^j(1+\operatorname{sgn}(a_j)z).
+\]
+Their coefficient span has rank $d$, and exactly
+\[
+ \|P(\rho e^{i\theta})\|^2
+ =(1+\rho^2)\sum_j|a_j|\rho^{2j}+2\rho\cos\theta\,B(\rho^2).
+\]
+Thus precisely the prescribed $d-1$ positive radii are flat. For radii $1,2$
+one may take $P=(2(1+z),\sqrt5z(1-z),z^2(1+z))$.
+
+\begin{theorem}[Concentric complex spheres]\label{thm:multisphere}
+Let $P:\mathbb C^m\to\mathbb C^d$ be a nonzero holomorphic polynomial map,
+with coefficient-span rank $r$. If $\|P\|$ is constant on each of $r$
+distinct positive concentric spheres, then
+\[
+ \|P(z)\|^2=\sum_kc_k\|z\|^{2k},\qquad c_k\ge0.
+\]
+Writing $P(z)=\sum_\alpha v_\alpha z^\alpha$, one has
+\[
+ \langle v_\alpha,v_\beta\rangle=0\quad(\alpha\ne\beta),
+ \qquad
+ \|v_\alpha\|^2=c_{|\alpha|}\frac{|\alpha|!}{\alpha!}.
+\]
+Consequently $P$ is, up to a target-unitary change of coordinates, an
+orthogonal sum of scaled homogeneous Veronese maps, and
+\[
+ r=\sum_{k:c_k>0}\binom{m+k-1}{k}.
+\]
+\end{theorem}
+\begin{proof}
+Decompose $P=\sum_kP_k$ into homogeneous degrees. Restriction to the complex
+line $z=wu$, for each unit vector $u$, and
+Theorem~\ref{thm:multiradius} give
+$\langle P_k(u),P_l(u)\rangle=0$ for $k\ne l$.
+Real scaling extends this identity to all $z$. Expansion in the independent
+monomials $z^\alpha\overline z^{\,\beta}$ makes the coefficient ranges of
+different homogeneous pieces orthogonal.
+
+There is a unit vector at which every nonzero homogeneous piece is nonzero,
+since a finite union of proper polynomial zero sets cannot cover the sphere.
+Thus the number of nonzero degrees is at most $r$. On the unit sphere, the
+$r$ prescribed radii give linear equations
+\[
+ \sum_k\rho_s^{2k}\|P_k(u)\|^2=C_s.
+\]
+The generalized Vandermonde matrix has full column rank: a dependence would
+be a sparse polynomial with too many positive zeros, contradicting the lemma
+used above. Hence $\|P_k(u)\|^2=c_k$ is constant in $u$. Homogeneity gives
+$\|P_k(z)\|^2=c_k(\sum_j|z_j|^2)^k$; coefficient comparison with the
+multinomial expansion proves the assertions.
+\end{proof}
+The centers in this theorem are fixed, and the maps are polynomial.
+No extension to rational maps with poles or to infinite series is assumed.
+
+\subsection{A complete single-orbit flat-tail classification}
+For a finite complex filter $p=A_0+iB_0$ with coefficientwise real
+$A_0,B_0$, apply Theorem~\ref{thm:multiradius} to $(A_0,B_0)$.
+Flatness of $|A_0|^2+|B_0|^2$ at two distinct radii forces at most two
+nonzero coefficients, orthogonal as vectors in $\mathbb R^2$.
+For a real observable on one signed $A$-orbit its tail symbol is
+\[
+ 4\pi^2\xi(v)^2\eta(v)^2
+ N_\lambda(\theta)N_{\lambda^{-1}}(\theta),\quad
+ N_\rho=|A_0(\rho e^{i\theta})|^2+|B_0(\rho e^{i\theta})|^2.
+\]
+A product of finite Laurent polynomials is a positive constant only if both
+factors are constant. Thus the symbol is flat exactly for one temporal tap,
+or two taps in phase quadrature.
+
+For taps $c_0=ae^{i\phi}$ and $c_d=ibe^{i\phi}$, $a,b\in\mathbb R$, put
+$D_r=\det(v,A^rv)$. The unnormalized dynamical Gram matrix is exactly
+diagonal for $r,s>d$, with
+\[
+ \Gamma_{rr}=4\pi^2\bigl((a^4+b^4)D_r^2
+                  +a^2b^2(D_{r+d}^2+D_{r-d}^2)\bigr).
+\]
+Indeed the same-sign channel has taps
+$e^{2i\phi}(iab,a^2-b^2,iab)$, while the opposite-sign channel has
+$(iab,a^2+b^2,-iab)$. At lag difference $d$ the cross terms are purely
+imaginary and cancel with the conjugate orientations; at difference $2d$
+the two channel types cancel each other. Other off-diagonal overlaps are
+absent. This covariance identity does not imply Gaussianity or independence.
