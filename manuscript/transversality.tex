@@ -1,0 +1,110 @@
+\section{Quantitative transversality and the absence of a bandwidth-only bound}
+\label{sec:transversality}
+This section consolidates the previously recorded one-mode transversality
+argument. It treats arbitrary smooth backgrounds and does not classify every
+zero of the second resonance. The last proposition explains why uniform
+polynomial coercivity on larger Fourier boxes is a different, false target.
+
+Let $A\in\mathrm{SL}(2,\mathbb Z)$ be hyperbolic and let g be real, even,
+smooth and of mean zero. For $h_g=\{g,\mathcal C_Ag\}/(4\pi)$ let
+\[
+ Q(g)=\sqrt2\biggl(\sum_{w\in\mathcal O/\{\pm1\}}a_w(h_g)\biggr)_{\mathcal O},
+ \qquad \Gamma_A(g)=\|Q(g)\|_{\ell^2}^2.
+\]
+The weighted Fourier absolute sums make Q a continuous homogeneous quadratic
+map. For a nonzero integer mode $b=b_v$, put
+\[
+ \gamma_b=\Gamma_A(b)=4\pi^2\det(v,Av)^2>0.
+\]
+The two generated frequencies $v-Av,v+Av$ have opposite nonzero values of
+the invariant form $q_A(w)=\det(w,Aw)$; hence their orbit sums cannot cancel.
+A rational eigenline of A would have an integral eigenvalue with integral
+inverse, necessarily $\pm1$, so $\det(v,Av)\ne0$.
+
+\begin{theorem}[Uniform one-mode sublevel estimate]
+For every such g and every $\epsilon>0$,
+\[
+ \operatorname{Leb}\{t\in\mathbb R:\Gamma_A(g+tb)\leq\epsilon\gamma_b\}
+       \leq 2\sqrt2\,\epsilon^{1/4}.
+\]
+The constant is independent of the background's number of Fourier modes,
+coefficients and frequency radius. It is a length estimate in the explicitly
+normalized scalar coefficient t, not a lower bound at a prescribed t.
+\end{theorem}
+\begin{proof}
+Project $Q(g+tb)$ onto $Q(b)$. The normalized projection is a monic real
+quadratic $p(t)=t^2+\beta t+\eta$, and Cauchy--Schwarz gives
+$\Gamma_A(g+tb)\geq\gamma_b p(t)^2$. Completing the square reduces
+$|p(t)|\leq\delta$ to $|x^2-a|\leq\delta$. If $a\leq\delta$ this is empty
+or an interval of length at most $2\sqrt{2\delta}$. If $a>\delta$, the total
+length is
+$2(\sqrt{a+\delta}-\sqrt{a-\delta})\leq2\sqrt{2\delta}$.
+Take $\delta=\sqrt\epsilon$.
+\end{proof}
+
+If T has a density bounded by M, the corresponding probability is at most
+$\min(1,2\sqrt2 M\epsilon^{1/4})$. This also holds conditionally on an
+arbitrary random background whenever the selected coefficient's conditional
+density is bounded by M. No independence of all the other coefficients is
+required. For $Z=\Gamma_A(g+Tb)/\gamma_b$, integrating the sublevel estimate
+at its transition point $(2\sqrt2 M)^{-4}$ gives
+\[
+ \mathbb E Z^{-p}\leq\frac{(2\sqrt2 M)^{4p}}{1-4p},
+                 \qquad 0<p<\tfrac14.
+\]
+The exponent threshold is exact for a background-uniform statement: at g=0,
+$Z=T^4$, so the negative moment diverges for $p\geq1/4$ when T has a density
+bounded below near zero. This statement is about a classical variance
+functional, not eigenvalue statistics of a randomly perturbed propagator.
+
+\begin{proposition}[A deterministic three-point certificate]
+For every r>0,
+\[
+ \max\{\Gamma_A(g-rb),\Gamma_A(g),\Gamma_A(g+rb)\}
+                    \geq \tfrac14r^4\gamma_b.
+\]
+If $\Gamma_A(g)=0$, then
+$\max\{\Gamma_A(g-rb),\Gamma_A(g+rb)\}\geq r^4\gamma_b$.
+\end{proposition}
+\begin{proof}
+For the monic quadratic above, $p(r)+p(-r)-2p(0)=2r^2$. At least one of its
+three absolute values is at least $r^2/2$. For the stronger assertion use
+$Q(g+rb)+Q(g-rb)=2r^2Q(b)$ when Q(g)=0 and the triangle inequality.
+\end{proof}
+
+\begin{proposition}[No polynomial-bandwidth coercivity on all backgrounds]
+For the Pell matrix T, let $\mathcal P_R$ be the real even mean-zero Fourier
+polynomials with $\|v\|_\infty\leq R$. There are $g_R\in\mathcal P_R$ with
+norm bounded below away from zero and bounded in every fixed smooth seminorm,
+such that
+\[
+             0<\Gamma_T(g_R)=O_L(R^{-L})\quad\hbox{for every }L>0.
+\]
+Thus no constants c,p>0 give $\Gamma_T(g)\geq cR^{-p}\|g\|_2^4$ for all
+nondegenerate g in all these Fourier boxes.
+\end{proposition}
+\begin{proof}
+Choose a nonzero mean-zero smooth generator g of the separated-support
+construction, so $\{g,\mathcal C_Tg\}=0$. Let $P_Rg$ be its rectangular
+Fourier partial sum and $e_R=P_Rg-g$. Smoothness implies
+$M_1(e_R)=O_L(R^{-L})$ for every L and $M_1(P_Rg)\leq M_1(g)$.
+The exact Fourier bracket bound
+$\|\widehat{\{a,b\}/(4\pi)}\|_1\leq\pi M_1(a)M_1(b)$ gives
+\[
+ \left\|\widehat{\{P_Rg,\mathcal C_TP_Rg\}/(4\pi)}\right\|_1
+       \leq2\pi\|T\|_{\mathrm{op}}M_1(g)M_1(e_R).
+\]
+For a real even h, $\sigma_T^2(h)\leq\tfrac12\|\widehat h\|_1^2$, so
+$\Gamma_T(P_Rg)$ is superpolynomially small. Partial sums converge in every
+smooth seminorm and in $L^2$.
+
+To ensure strict positivity, choose one nonzero mode v of radius one.
+The polynomial $z\mapsto\Gamma_T(P_Rg+zb_v)$ has degree four and positive
+leading coefficient $\Gamma_T(b_v)$. At least one of the five numbers
+$e^{-R},2e^{-R},3e^{-R},4e^{-R},5e^{-R}$ is not a root. Choose it as $z_R$.
+Then $g_R=P_Rg+z_Rb_v$ has strictly positive Gamma; this exponentially small
+change preserves every displayed estimate. End of proof.
+
+The certificate for the fixed radius-eight space remains consistent with this
+proposition: its positive coercivity constant depends on that fixed radius.
+Neither result settles exact nondegeneracy in every finite Fourier box.

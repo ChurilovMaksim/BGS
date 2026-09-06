@@ -1,0 +1,50 @@
+\section{Compensated kicks on dimension-proportional time windows}
+\label{sec:compensated-time}
+This is a consequence of the preceding smooth operator estimate, not a
+separate positive universality theorem. Let g be a fixed real $C^7$ symbol,
+$d=\mathcal Cg$, $r_g=\{g,d\}/(4\pi)$, and write
+$A=\operatorname{Op}_N(g)$, $D_0=\operatorname{Op}_N(d)$,
+$R_0=\operatorname{Op}_N(r_g)$. Define the explicitly compensated family
+\[
+ V_\varepsilon=\exp\bigl(i[\varepsilon(A-D_0)-\varepsilon^2R_0/N]\bigr)U_0,
+ \qquad V'=e^{-i\varepsilon A}V_\varepsilon e^{i\varepsilon A}.
+\]
+The compensation changes the symbol of the kick; it is part of the model,
+not a conclusion about the uncompensated family. The established uniform
+remainder is
+\[
+ \|V'-U_0\|_{\mathrm{op}}\leq\delta_N
+ =C_g|\varepsilon|^3/N^2+D_g\varepsilon^2/N^3.
+\]
+For every integer $\ell$, telescoping unitaries or adjoints gives
+\[
+ \|(V')^\ell-U_0^\ell\|_{\mathrm{op}}
+             \leq\min(2,|\ell|\delta_N).
+\]
+On the odd space, provided g is even,
+$\tau_-(U_0^\ell)=\mathbf1_{K\mid\ell}$. On the full space the normalized
+trace is $1/N$ at nonmultiples, not zero; at multiples it equals one.
+Consequently
+\[
+ \varepsilon_N=o(N^{1/3})\quad\Longrightarrow\quad
+ \sup_{|\ell|\leq cN}
+ |\tau_-(V_{\varepsilon_N}^\ell)-\mathbf1_{K\mid\ell}|\longrightarrow0
+\]
+for each fixed c. The quantum exponent may grow, but the corresponding
+classical strength $\varepsilon_N/(2\pi N)$ still vanishes.
+This is persistence of returns at the Heisenberg scale.
+
+For the conventional form factor
+$\mathcal F_N(\ell)=D^{-1}|\operatorname{Tr}_-V^\ell|^2$,
+$D=(N-1)/2$, nonresonant times satisfy
+\[
+ \mathcal F_N(\ell)\leq D\ell^2\delta_N^2.
+\]
+The stronger sufficient condition $\varepsilon_N=o(N^{1/6})$ makes this
+uniformly vanish for $0<|\ell|\leq cN$, $K\nmid\ell$.
+At multiples of K, $\mathcal F_N(\ell)/D\to1$. The extra factor D cannot
+be discarded by citing convergence of normalized traces alone.
+For spectral clustering only $K\delta_N\to0$ is needed; a sufficient range
+is $|\varepsilon_N|=o(N^{2/3}K^{-1/3})$. Thus recurrence traces,
+conventional form factors, and microscopic concentration have genuinely
+different error budgets. None gives positive random-matrix statistics.

@@ -1,0 +1,54 @@
+\section{The exact fourth moment of the generated two-species observable}\label{sec:cobfourth}
+This is an analytic verification addendum to \url{pell_coboundary_resonance.md}. It uses that note's proved four-atom classification, not a new universality assumption. Let \(K\geq11\) be an odd prime, with its Pell modulus N, and put \[
+ u=(2,4),\quad z=(4,4),\quad
+ X_K=(4K)^{-1/2}\sum_{j=0}^{K-1}(B_{T^ju}-B_{T^jz}),
+ \qquad \mu_{4,N}=N^{-1}\operatorname{Tr}X_K^4.
+\] The trace in this definition is on the full N-dimensional space. Odd-space normalization and its noncentral error are stated separately below.
+
+\subsection{Closed finite formula}\label{cobfourth:closed-finite-formula}
+
+Write \(c_a=\cos(a\pi/N)\) and \[
+ g_j=\cos^2(8\pi P_{2j}/N)+\cos^2(16\pi P_{2j}/N)
+                                  +2\cos^2(8\pi Q_{2j}/N).
+\] Then the exact formula is \[
+ \boxed{\displaystyle
+ \mu_{4,N}=1+\frac{1}{4K}+\frac1K\sum_{j=1}^{(K-1)/2}g_j
+       +\frac{c_{32}c_{16}+c_{24}^2+2c_8^2}{K}.}                \tag{CF.F1}
+\] This is a real trigonometric identity, not a floating-point assertion.
+
+\textbf{Proof.} Expand \(X_K^2\) in the orthonormal Weyl basis. Its coefficient at zero is 1. Doubling one signed atom gives 4K distinct keys, each of coefficient \(1/(4K)\), contributing \(1/(4K)\) to the squared norm. For a distinct-time unordered signed pair the coefficient is the product of its species signs multiplied by \(\cos(\pi\omega/N)/(2K)\). Squaring these contributions before combining coincident keys gives \(K^{-2}\sum_{j=1}^{K-1}(K-j)g_j\). The equality \(g_{K-j}=g_j\) reduces this to the sum in (CF.F1). Determinants of the original even integer vectors are even; centered modular division by two therefore has the same phase as the ordinary half of this determinant. No sign is lost at the cyclic seam.
+
+The complete four-atom classification gives exactly two distinct-time double classes at each cyclic time, with their negatives. The same-species class \(z_{j+1}-z_j=u_{j+1}+u_j\) has coefficient products \(c_{32}c_{16}/(4K^2)\); its 2K instances contribute the cross term \(c_{32}c_{16}/K\). The mixed class \(z_{j+1}-u_j=u_{j+1}+z_j\) similarly contributes \(c_{24}^2/K\). The signs of both coefficients within each class agree, including the minus signs in the mixed class.
+
+There remain the 4K equal-time cross-species pairs. They form 2K double classes by \(z_{j+1}-u_{j+1}=z_j+u_j\), with combined coefficient \(-c_8/K\). Their contribution is \(2c_8^2/K\). The classification also excludes all collisions of doubled-atom keys with these classes or with distinct-time keys. Summing the disjoint classes proves (CF.F1). End of proof.
+
+\subsection{Explicit limiting correction and finite remainder}\label{cobfourth:explicit-limiting-correction-and-finite-remainder}
+
+Let \(r=\lambda^{-1}\) and set \[
+ a=\frac{8\pi}{\sqrt2\alpha},\qquad b=\frac{8\pi}{\alpha}.
+\] Define \[
+ \gamma_C=-\frac94+\sum_{\ell=0}^{\infty}
+ [\sin^2(ar^\ell)+\sin^2(2ar^\ell)+2\sin^2(br^\ell)].          \tag{CF.F2}
+\] The series is absolutely convergent. Its numerical value begins \(4.1785026500210028\ldots\). Define \[
+ \begin{split}
+ E_K={}&\frac{(3a+2b)(r^K+r^{(K+1)/2})}{(1-r^K)(1-r)}\\
+      &+\frac{(5a^2+2b^2)r^{K-1}}{1-r^2}
+       +\frac{1344\pi^2}{N^2}.
+ \end{split}
+\] An explicit finite bound is \[
+ |K(3-\mu_{4,N})-\gamma_C|\leq E_K.                            \tag{CF.F3}
+\] In particular \(\mu_{4,N}=3-\gamma_C/K+O(1/(KN))\) along this family.
+
+To prove the estimate, reindex \(j=(K-1)/2-\ell\). The exact ratios are \[
+ \frac{P_{2j}}N=\frac{r^\ell}{\sqrt2\alpha}
+                  \frac{1-\lambda^{-2j}}{1-r^K},\qquad
+ \frac{Q_{2j}}N=\frac{r^\ell}{\alpha}
+                  \frac{1+\lambda^{-2j}}{1-r^K}.
+\] Use \(|\sin^2x-\sin^2y|\leq|x-y|\). Summing the argument errors gives the first term of E_K. The omitted series begins at \(\ell=(K-1)/2\) and is bounded by the second term, using \(\sin^2x\leq x^2\). Finally \[
+ |c_{32}c_{16}+c_{24}^2+2c_8^2-4|\leq1344\pi^2/N^2.
+\] Since \(\sum_jg_j=2K-2\) minus the finite sine-square sum, substitution in (CF.F1) yields precisely the constant \(-9/4\) in (CF.F2) and proves (CF.F3).
+
+For the odd-space fourth moment \(\mu_{4,-}\), the exact parity insertion formula gives the separate bound \[
+ \left|\mu_{4,-}-\frac{N}{N-1}\mu_{4,N}\right|
+                                      \leq\frac{16K^2}{N-1}.    \tag{CF.F4}
+\] Thus \(\mu_{4,-}=3-\gamma_C/K+O(K^2/N)\). The much larger odd-trace error must not be replaced by the full-trace error in (CF.F3).
