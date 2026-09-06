@@ -117,6 +117,14 @@ mere file-existence checks:
 - the first final `REPRODUCE_unified.md` invoked `verify_workspace.py` without
   its required `--build`, `--logs` and `--output` arguments. The reproduction
   commands now build CMake first and pass all required arguments explicitly.
+- the first complete-workspace runner still invoked several active Python
+  verifiers without their mandatory CLI arguments and attempted to write one
+  generated result into committed evidence. The final `verify_workspace.py`
+  redirects every generated output below `--logs`, treats committed evidence as
+  read-only, supplies the detected required arguments, generates the radius-8
+  resonance certificate before its strict replay, and defers the replay checker
+  until the certificate exists. The exact orchestration change is commit
+  `3a141579a93941d310b3c278c88c874b7868f8ba`.
 
 ## 6. Mathematical review of the recovered material
 
@@ -160,13 +168,26 @@ labelled as a complete solution of that open problem.
 
 ## 8. CI and publication status
 
-The GitHub Actions attempts observed during the recovery initially failed before
-any step ran: the jobs reported `runner_id=0` and an empty `steps` list.
-Accordingly those runs are infrastructure evidence, not failures of a
-scientific test, and no green cloud-CI result is inferred from them.
+The GitHub Actions attempts observed during the recovery failed before any
+scientific step ran. For the workspace-runner fix commit
+`3a141579a93941d310b3c278c88c874b7868f8ba`, Scientific verification run
+`34019814414` completed with GitHub conclusion `failure`, but its manuscript,
+computation and formalization jobs all expose `steps=null` and no job logs.
+Accordingly this is runner/provisioning infrastructure evidence, not a failed
+Python/C++, Lean, TeX or mathematical check, and no green cloud-CI result is
+inferred from it.
 
-A final local manuscript reconstruction was nevertheless performed from the
-preserved 204-file manuscript corpus with the current `main` master TeX and
+The formerly un-runnable dependent resonance chain was then executed locally
+with the corrected orchestration. Radius 8 produced status `CERTIFICATE`; the
+independent replay returned `PASS` after 5,704 deductions (3,293 `P`, 1,077 `S`,
+1,229 `D`, 105 `F`); the exact Hessian-obstruction check and the finite
+quantum-variance check both returned `PASS`. Exact hashes and the cloud run/job
+identifiers are recorded in `record/final_verification_followup_20260906.json`.
+This targeted execution closes the runner's dependency/CLI defect; it is not
+represented as a complete current-worktree green CI run.
+
+A final local manuscript reconstruction was performed from the preserved
+204-file manuscript corpus with the current `main` master TeX and
 final-delivery-note blobs. The canonical builder completed three TeX passes,
 kept every input hash unchanged, reported no forbidden warning, and produced a
 93-page PDF of 886,866 bytes. Pages 1, 92 and 93 were rendered and visually
