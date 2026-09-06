@@ -87,9 +87,12 @@ def main()->None:
         record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
         raise SystemExit('Build failed its warning/source-hash gate.')
     pdf=out/'WoW_unified.pdf'
-    match=re.search(r'Output written on .*?\(\s*(\d+)\s+pages?',text,re.S)
+    match=re.search(r'Output written on .*?\(\s*(\d+)\s+p\s*a\s*g\s*e\s*s?',text,re.S)
+    if not match:
+        record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
+        raise SystemExit('Build succeeded but PDF page count could not be parsed from the LaTeX log.')
     record.update(status='PASS',runtime_seconds=time.monotonic()-start,
-                  page_count=int(match[1]) if match else None,pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
+                  page_count=int(match[1]),pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
                   latex_log_sha256=digest(out/'WoW_unified.log'))
     if args.publish:
         target=MANUSCRIPT/pdf.name;shutil.copy2(pdf,target)
