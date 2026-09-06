@@ -1,0 +1,207 @@
+{
+  "date": "2026-09-06",
+  "base_commit": "ddf467af8c304f3d673b2cb5f5396969ae3d55cf",
+  "python": "3.13.5",
+  "cpp_compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "checks": [
+    {
+      "name": "extremal",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact regression, not a proof by enumeration",
+        "seed": 20260906,
+        "matrices_available": 53,
+        "supports": 100,
+        "witnesses": 1000,
+        "maximum_lag": 10,
+        "exact_gram_cases": 12,
+        "random_filter_comparisons": 48,
+        "nonzero_coboundary_examples": 12,
+        "homometric_filter_examples": 12,
+        "negative_controls": 4,
+        "source_sha256": "c89d7b6aedc7146810172ec3fbff3c9e8d678caa3c3830838dd9ab1c76e63c41",
+        "replay_sha256": "2ea44f9de3d752f1775721e5612378127eebe389db88d1daf1761604e9d9085b"
+      },
+      "log_sha256": "fc6bd4adbcea931fd695606d052103850dd22cdc5f9a7d8a220b7f61dc31571b"
+    },
+    {
+      "name": "holomorphic_shell_1",
+      "result": {
+        "status": "PASS",
+        "scope": "finite regression; universal proof is in the manuscript",
+        "seed": 20260906,
+        "exact": {
+          "confluent_determinants": 120,
+          "two_exact_determinant_algorithms": true,
+          "nonpolynomial_leading_jet_determinants": 12,
+          "sharp_mixed_shell_multiplicity_examples": 64,
+          "negative_controls": 4
+        },
+        "numerical": {
+          "scope": "high-precision numerical diagnostic, not an exact certificate",
+          "decimal_precision": 85,
+          "product_terms": 190,
+          "shell_angle_pairs": 117,
+          "max_relative_intensity_residual": "5.69954859119e-85",
+          "max_relative_functional_equation_residual": "2.57324579505e-85",
+          "nonproportionality_control_abs_Q_at_one_third": "0.190672116514921"
+        },
+        "source_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028"
+      },
+      "log_sha256": "3ae553e4ec66ae58bd586e01dc105960d08846f276e9baf0d22bcedf362d6295"
+    },
+    {
+      "name": "holomorphic_shell_2",
+      "result": {
+        "status": "PASS",
+        "scope": "finite regression; universal proof is in the manuscript",
+        "seed": 20260907,
+        "exact": {
+          "confluent_determinants": 180,
+          "two_exact_determinant_algorithms": true,
+          "nonpolynomial_leading_jet_determinants": 15,
+          "sharp_mixed_shell_multiplicity_examples": 64,
+          "negative_controls": 4
+        },
+        "numerical": {
+          "scope": "high-precision numerical diagnostic, not an exact certificate",
+          "decimal_precision": 85,
+          "product_terms": 190,
+          "shell_angle_pairs": 117,
+          "max_relative_intensity_residual": "5.69954859119e-85",
+          "max_relative_functional_equation_residual": "2.57324579505e-85",
+          "nonproportionality_control_abs_Q_at_one_third": "0.190672116514921"
+        },
+        "source_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028"
+      },
+      "log_sha256": "f00359b9063824d4db0f3f104dfcada862d94340fc462620d0a83d57b7f0ac31"
+    },
+    {
+      "name": "shell_instability_1",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact regression; not an all-degree proof",
+        "construction_count": 24,
+        "largest_degree": 194,
+        "whole_circle_checks": 48,
+        "tampered_sign_controls": 24,
+        "infinite_tail_bound_at_three_quarters": "86380343555303460998075/64074215137581349797888",
+        "independent_bounds": [
+          "Laurent recurrence",
+          "angular Fourier l1",
+          "disk supremum via positive coefficients",
+          "rational target value"
+        ],
+        "source_sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3"
+      },
+      "log_sha256": "2084d5acf8946198be8ca115fb249334f6f10a58119d34b05ac17ba34c45ecf7"
+    },
+    {
+      "name": "shell_instability_2",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact regression; not an all-degree proof",
+        "construction_count": 40,
+        "largest_degree": 322,
+        "whole_circle_checks": 80,
+        "tampered_sign_controls": 40,
+        "infinite_tail_bound_at_three_quarters": "86380343555303460998075/64074215137581349797888",
+        "independent_bounds": [
+          "Laurent recurrence",
+          "angular Fourier l1",
+          "disk supremum via positive coefficients",
+          "rational target value"
+        ],
+        "source_sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3"
+      },
+      "log_sha256": "1ecc96fba7d5ecd33de0445b62f186963781d24ab472606fc2f0f4d38b71d699"
+    },
+    {
+      "name": "spectral_resolution",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact negative controls; no BGS theorem",
+        "clock_pairs": 12,
+        "cyclotomic_trace_checks": 78,
+        "rounding_and_simple_splitting_cases": 36,
+        "source_sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52"
+      },
+      "log_sha256": "fb7b7e1cf006163343b826faf2e8155cb7f0d1da5b274da24b39c5859efbea69"
+    },
+    {
+      "name": "extremal_cpp",
+      "result": "PASS independent exact witnesses=1000",
+      "log_sha256": "8f1897e0dbc039694bf1c459d33fcac07b65a33a002ee8314fe6f6b633107004"
+    },
+    {
+      "name": "extremal_cpp_self",
+      "result": "PASS self-tests=60 negative-controls=1",
+      "log_sha256": "b07c0cb6982fb9dbd2e50c7c5d00924a07fa402a1b13773bf8d1d7688d98180c"
+    }
+  ],
+  "publication": {
+    "scope": "three new sections only, seven-page excerpt; not the full historical manuscript",
+    "pdftex_passes": 3,
+    "pages": 7,
+    "rendered_pages_inspected": 7,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "unresolved_citations": 0,
+    "pdf_sha256": "5e79e7f50982f4039126c15224f80efcaf88fa299972d19dbf4157ad85df019b",
+    "final_log_sha256": "38ddd14125c71e7a3e7e2411cfb434a7ffc5321657c2932f8f01ffb6823a669f"
+  },
+  "source_files": {
+    "computations/verification/holomorphic_shell_rigidity.py": {
+      "git_blob": "707fd317847d1bd160e2ca8524590f5aa00a7305",
+      "sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028"
+    },
+    "computations/verification/shell_instability.py": {
+      "git_blob": "a3ba52ef4b6d59327870eeb8cf408abdd3ed2e45",
+      "sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3"
+    },
+    "computations/verification/spectral_resolution.py": {
+      "git_blob": "04ba87ca9f5739545fc0e3e73bc9acf2e52a1b1c",
+      "sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52"
+    },
+    "manuscript/WoW_unified.tex": {
+      "git_blob": "21d38579197d32b90bca25afa4783a655e6e5abf",
+      "sha256": "636add6e5104135983e38cb8496e6710d78c215efe9bffdeeedba4f965ddcee8"
+    },
+    "manuscript/unified_bibliography.tex": {
+      "git_blob": "bff628ad0196b55e078f106347723152d3d28e5e",
+      "sha256": "5917ee2cf1feed95398b512ad71317535b0e2c5971cf89cd8dcb19981b1c0520"
+    },
+    "manuscript/unified_sections/holomorphic_shell_rigidity.tex": {
+      "git_blob": "1ccb53eb5d51a3ec5846ac4577caa5fc6d5bd678",
+      "sha256": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0"
+    },
+    "manuscript/unified_sections/shell_stability_obstruction.tex": {
+      "git_blob": "4a4b73a67f41a279b563b3a8221b4769ebd46099",
+      "sha256": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d"
+    },
+    "manuscript/unified_sections/spectral_resolution.tex": {
+      "git_blob": "0c3fc8cec7d8b33a708bb3b39820ff9dd3cd0263",
+      "sha256": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4"
+    },
+    "mathematics/holomorphic_shell_identifiability.md": {
+      "git_blob": "398050c3362dd000043aa2f04b35adcdb66cf4de",
+      "sha256": "8b2e931d841261a137eb1d7fd539b6ca8c2d6f15fe42e53fd0d182e2d9aac1b7"
+    },
+    "record/claim_ledger.md": {
+      "git_blob": "5a90065217d1b23d1833aae11cd6bec61740aa19",
+      "sha256": "68869a2e1a4ac40b12f2c32e436dbbcc49814fb5c8c915effd3708e4ead2fc44"
+    },
+    "record/holomorphic_shell_review.md": {
+      "git_blob": "94ca45268a2f029c3b827e77d8cc4fd18c89cc88",
+      "sha256": "98d5e9542d4991759bfcbb8a110254955dbcfbd4e749e843f3a2a6b32ab2118f"
+    }
+  },
+  "boundaries": [
+    "finite regressions are not universal proofs",
+    "scalar two-circle theorem attributed to Perez",
+    "full old repository not re-audited",
+    "Wolfram HTTP 404",
+    "Lean unavailable and not compiled",
+    "no full BGS or priority claim"
+  ]
+}

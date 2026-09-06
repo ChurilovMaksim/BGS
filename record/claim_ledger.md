@@ -322,3 +322,29 @@ checks, floating-point diagnostics, analytic proofs, and remote CI are separate
 evidence categories. The all-time finite-field statement does not furnish
 joint traces of a perturbed quantum propagator. Positive microscopic BGS /
 GOE / COE / GUE universality remains OPEN.
+
+
+## Holomorphic shell rigidity and spectral resolution
+
+The intervening Wiener, control, and polynomial-shell results and their
+corrections are recorded in `continuation_review_20260906.md`. The following
+entries extend the polynomial-shell branch, not the BGS universality claim.
+Proofs are included in the single canonical manuscript.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Rank-r holomorphic kernels have positive product-curve contacts of total multiplicity at most r-1 | EXACT + FINITE-REGRESSION | Centred bidisk, finite separated rank, positive product constants |
+| Two holomorphic maps to C^d are identified up to one unitary by 2d total shell/normal-jet conditions | EXACT + FINITE-REGRESSION | Whole interior spheres, centre included; no rationality or degree assumption |
+| 2d-1 prescribed conditions do not suffice, including mixed repeated-shell allocations | EXACT + FINITE-REGRESSION | Sharp in one complex dimension; nonpolynomial entire examples included |
+| Scalar two-circle uniqueness | PRIOR THEOREM | Perez, arXiv:2009.02061v2, Theorem 2.2; not claimed as new |
+| Punctured-domain scalar functions agree in intensity on infinitely many shells without a constant phase | EXACT + NUMERICAL | Analytic theta construction; numerical checks are diagnostics only |
+| Bounded disk-holomorphic pairs have no degree-uniform Holder intensity-recovery estimate from two circles | EXACT + FINITE-REGRESSION | Explicit polynomial sequence; norms bounded above and below; no measurement lower bound assumed |
+| Any uniform modulus is at least c exp(-C sqrt(log(1/delta))) | EXACT | Lower bound only; a matching upper rate is OPEN |
+| Simple clock spectra agree on all traces below N/2 but have different microscopic spacing laws | EXACT + FINITE-REGRESSION | Abstract unitary negative control, not chaotic dynamics |
+| Spectral rounding preserves O(1/N) Egorov while producing collapsed spacings, including a simple-spectrum variant | EXACT | Weak quantization axioms only; no fixed microlocal symbol-class assertion |
+
+Fresh execution coverage, exact source hashes, literature attribution and the
+limited PDF build scope are in `holomorphic_shell_review.md` and
+`../evidence/certificates/holomorphic_shell_review.json`. These entries do not
+assert external priority, full-repository referee acceptance, Lean compilation,
+or successful cloud CI. Positive microscopic BGS universality remains OPEN.

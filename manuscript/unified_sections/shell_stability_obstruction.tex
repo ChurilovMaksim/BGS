@@ -1,0 +1,132 @@
+\section{Exact identification does not imply a power-law stability bound}
+\label{sec:shell-instability}
+The scalar two-circle uniqueness theorem is prior work of Perez
+\cite{Perez2021}. We now distinguish that exact theorem, and the preceding
+finite-rank extension, from quantitative recovery with errors. All norms below
+are on a fixed disk; the measurement circles and the target point are fixed.
+
+\begin{theorem}[A two-circle instability sequence]\label{thm:shell-instability}
+For every integer $M\ge1$ there are scalar polynomials $p_M,q_M$ of degree
+at most $8M+2$ such that
+\[
+ \tfrac12\le\|p_M\|_{H^\infty(D_2)}<1,\qquad
+ \tfrac12\le\|q_M\|_{H^\infty(D_2)}<1,
+\]
+and, for $H_M=|p_M|^2-|q_M|^2$,
+\begin{align}
+ H_M(z)&=0 &&(|z|=1),\\
+ \sup_{|z|=1/2}|H_M(z)|&\le 2^{-4M^2-18M-3},\\
+ |H_M(3/4)|&\ge\frac1{40}(3/8)^{8M+2}.
+\end{align}
+In particular there are no constants $C,\alpha>0$ such that
+\[
+ |\,|p(3/4)|^2-|q(3/4)|^2\,|
+ \le C\left(\max_{\rho\in\{1/2,1\}}\sup_\theta
+ |\,|p(\rho e^{i\theta})|^2-|q(\rho e^{i\theta})|^2\,|\right)^\alpha
+\]
+for all scalar holomorphic $p,q$ bounded by one on $D_2$. This fails even
+when both functions are polynomials and each has disk supremum at least $1/2$.
+\end{theorem}
+\begin{proof}
+Put $b=1/4$, $L=4M+1$, and define the Laurent polynomials
+\[
+ \begin{gathered}
+ A_M(z)=\sum_{n=-M}^M b^{2n^2+n}z^{4n+1},\qquad B_M(z)=A_M(1/z),\\
+ p_M(z)=\frac{z^L A_M(z)}{4\,2^L},\qquad
+ q_M(z)=\frac{z^L B_M(z)}{4\,2^L}.
+ \end{gathered}
+\]
+The latter two are ordinary polynomials of degree at most $8M+2$.
+All coefficients are positive. At $|z|=2$ the Laurent sums are bounded by
+\[
+ A_\infty(2)=2\sum_{n\in\mathbb Z}2^{-4n^2+2n}
+ \le2\left(1+2\sum_{n\ge1}2^{-2n}\right)=\frac{10}3<4.
+\]
+Changing $n$ to $-n-1$ gives $A_\infty(1/2)=A_\infty(2)$, so this bound
+also applies to $B_M(2)$. The maximum principle proves the disk upper bound.
+The $n=0$ term of $A_M(2)$ is $2$ and the $n=-1$ term of $A_M(1/2)$ is
+$2$ for $M\ge1$, proving the lower bound for both disk suprema.
+
+Reindexing the finite sum leaves exactly two boundary terms:
+\begin{equation}\label{eq:theta-truncation-defect}
+ D_M(z):=A_M(bz)-b^{-2}z^{-4}A_M(z)
+ =b^{2M^2+5M+1}z^{4M+1}-b^{2M^2-M-2}z^{-4M-3}.
+\end{equation}
+Consequently, on $|z|=2$,
+\[
+ |D_M(z)|\le2^{-4M^2-6M-1}+2^{-4M^2-2M+1}
+           \le2^{-4M^2-2M+2}.
+\]
+On $|z|=1$, real coefficients give $B_M(z)=\overline{A_M(z)}$, which proves
+exact outer-circle equality. On $|z|=1/2$ one has $\overline z=b/z$, so
+\[
+ \begin{split}
+ \overline{A_M(z)}&=b^{-2}z^4B_M(z)+D_M(1/z),\\
+ \overline{B_M(z)}&=b^{-2}z^4\{A_M(z)-D_M(z/b)\}.
+ \end{split}
+\]
+Multiplication and subtraction eliminate the common term. As
+$|b^{-2}z^4|=1$, $|A_M(z)|,|B_M(z)|<4$, and both $1/z$ and $z/b$ have
+modulus two, this bounds the unnormalized intensity difference by
+$2^{-4M^2-2M+5}$. The squared normalization factor on this circle is
+$2^{-4L-4}$, proving the stated inner-circle estimate. It is uniform in the
+angle; no angular sampling is involved.
+
+At $x=3/4$, positivity of coefficients and three terms of $B_M$ give
+\[
+ B_M(x)\ge\frac43+\frac{27}{256}+\frac{16}{243}>\frac32.
+\]
+For a checkable infinite-sum upper bound on $A_M(x)$ put
+$T_n=b^{2n^2+n}x^{4n+1}$. Consecutive ratios bound both omitted tails and give
+\[
+ A_M(x)\le A_\infty(x)
+ \le\sum_{n=-2}^{1}T_n+
+       \frac{T_2}{1-b^{11}x^4}+\frac{T_{-3}}{1-b^{13}x^{-4}}
+ =\frac{86380343555303460998075}{64074215137581349797888}
+ <\frac{27}{20}.
+\]
+Thus $B_M(x)^2-A_M(x)^2>2/5$. Restoring the squared normalization proves
+$|H_M(x)|\ge (3/8)^{2L}/40$. The logarithm of the ratio of this lower bound
+to any fixed positive power of the measurement upper bound tends to positive
+infinity quadratically in $M$, proving the absence of a uniform H\"older bound.
+\end{proof}
+
+The theorem concerns absolute intensity errors, not phase error at a fixed
+nonvanishing reference function. Its examples do not keep the measured
+intensities bounded below. Additional nonvanishing or finite-dimensional
+conditioning assumptions are not ruled out as routes to better stability.
+
+\begin{corollary}[A lower bound on any uniform modulus]
+Let $\Omega(\delta)$ be the supremum of the target intensity error at $3/4$
+over pairs bounded by one on $D_2$ with measurement error at most $\delta$
+on the two circles. Then $\Omega(\delta)\to0$ as $\delta\downarrow0$, but,
+for some positive constants $c,C$ and all sufficiently small $\delta$,
+\[
+ \Omega(\delta)\ge c\exp\{-C\sqrt{\log(1/\delta)}\}.
+\]
+No matching upper rate is asserted.
+\end{corollary}
+\begin{proof}
+If the limit were not zero, Montel's theorem would provide locally uniformly
+convergent subsequences of a violating sequence of bounded pairs. The limits
+have equal intensity on both entire circles, hence are constant-phase
+multiples by Perez's theorem or Theorem~\ref{thm:holomorphic-identify}.
+Their target intensity errors therefore tend to zero, a contradiction.
+For the lower bound take
+$M=\lceil\tfrac12\sqrt{\log_2(1/\delta)}\rceil$ in the theorem. Its
+measurement upper bound is at most $2^{-4M^2}\le\delta$, while its target
+lower bound has logarithm bounded below by a negative constant times
+$1+\sqrt{\log(1/\delta)}$.
+\end{proof}
+
+Severe ill-posedness of infinite-dimensional phase retrieval is not a new
+phenomenon: Alaifari and Grohs \cite{AG2021} prove quadratic-exponential
+instability in a Gabor setting. Our construction concerns a different,
+explicit observation geometry, namely two complete circles inside a fixed
+disk and an interior target. The elementary recurrence
+\eqref{eq:theta-truncation-defect} and exact rational bounds are the input
+here, not a claim to have discovered general phase-retrieval instability.
+The accompanying finite verifier re-expands the full angular intensity
+polynomial and checks its coefficient $\ell^1$ bound independently of this
+recurrence. Neither the inverse-problem result nor its numerical illustration
+is a BGS spectral-statistics theorem.

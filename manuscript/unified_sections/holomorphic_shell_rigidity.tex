@@ -1,0 +1,208 @@
+\section{Holomorphic shell rigidity, normal jets, and an annular obstruction}
+\label{sec:holomorphic-shell}
+The finite-rank argument in this section removes the polynomial hypothesis
+from the earlier shell-identification result. The domain must include the
+centre of the measured spheres. We also count normal multiplicities and give
+an explicit obstruction on a punctured domain. These are project derivations;
+external priority and a proof-assistant formalization are not claimed.
+They do not assert microscopic spectral universality.
+
+\subsection{The analytic dilation determinant}
+\begin{lemma}[Confluent dilation independence]\label{lem:dilation-jets}
+Let $f_1,\ldots,f_r$ be linearly independent holomorphic functions on
+$D_R=\{z:|z|<R\}$. Let $0<c_1<\cdots<c_s$, and let positive integers
+$m_i$ satisfy $\sum_i m_i=r$. The determinant of the $r\times r$ matrix
+\[
+ \mathcal D(w)_{(i,k),j}=w^k f_j^{(k)}(c_iw),
+ \qquad 0\le k<m_i,
+\]
+is not identically zero on $|w|<R/c_s$.
+\end{lemma}
+\begin{proof}
+The finite-dimensional space spanned by the $f_j$ admits a basis with
+strictly increasing orders of vanishing at zero. This follows by successively
+eliminating the first nonzero Taylor coefficient; the process cannot leave a
+nonzero function with every Taylor coefficient zero. A constant invertible
+change of basis therefore gives
+\[
+ f_j(w)=a_jw^{n_j}+O(w^{n_j+1}),\qquad
+ 0\le n_1<\cdots<n_r,\quad a_j\ne0.
+\]
+Writing $(n)_k=n(n-1)\cdots(n-k+1)$, with $(n)_k=0$ for $k>n$, yields
+\[
+ \det\mathcal D(w)=\left(\prod_j a_j\right)w^{\sum_jn_j}
+ \det\bigl[(n_j)_k c_i^{n_j-k}\bigr]_{(i,k),j}
+ +O\bigl(w^{1+\sum_jn_j}\bigr).
+\]
+The constant determinant is nonzero. Otherwise a nonzero polynomial with at
+most $r$ monomials would have positive zeros $c_i$ of total multiplicity at
+least $r$. Such a polynomial has at most $r-1$ positive zeros counted with
+multiplicity: divide by its lowest power, differentiate, and apply Rolle's
+theorem inductively. For complex coefficients take a nonzero real part after
+a common scalar rotation; all the specified zeros and derivatives persist.
+Thus the displayed leading coefficient is nonzero. The constant change of
+basis only multiplies the determinant by a nonzero constant.
+\end{proof}
+
+\subsection{A rank bound without a degree bound}
+A holomorphic kernel on $D_{R_1}\times D_{R_2}$ has separated rank $r$ if $r$
+is the least number of terms in an expression
+\[
+ K(z,w)=\sum_{j=1}^r a_j(z)b_j(w).
+\]
+In a minimal expression both lists of functions are linearly independent.
+For $0<c<R_1R_2$, say that $K$ has multiplicity at least $m$ on $zw=c$ if
+\[
+ \partial_w^kK(z,c/z)=0\quad(0\le k<m)
+\]
+on the annulus $c/R_2<|z|<R_1$.
+
+\begin{theorem}[Finite-rank contact bound]\label{thm:analytic-contact}
+A nonzero holomorphic kernel of finite separated rank $r$ has total
+multiplicity at most $r-1$ on distinct positive product curves $zw=c_i$.
+\end{theorem}
+\begin{proof}
+If the total were at least $r$, reduce some multiplicities to make their sum
+exactly $r$. On the common nonempty annulus
+$c_s/R_2<|z|<R_1$, the column $(a_j(z))_j$ is annihilated by the matrix with
+rows $(b_j^{(k)}(c_i/z))_j$. Multiplying row $(i,k)$ by $z^{-k}$ gives the
+matrix in Lemma~\ref{lem:dilation-jets} with $w=1/z$. Its determinant is a
+nonzero holomorphic function on $|w|<R_2/c_s$. It cannot vanish throughout the
+open subannulus $1/R_1<|w|<R_2/c_s$. On a nonempty open set the matrix is
+therefore invertible, so every $a_j$ vanishes there. The identity theorem
+contradicts minimality of the separated representation.
+\end{proof}
+
+For a real-analytic diagonal $H(z)=K(z,\overline z)$, normal vanishing to
+order $m$ on $|z|=\rho>0$ means
+\[
+ \left.\partial_t^k H(te^{i\theta})\right|_{t=\rho}=0
+ \quad\hbox{for every $\theta$ and $0\le k<m$}.
+\]
+It is equivalent to the contact condition above with $c=\rho^2$.
+To verify the direction we need, expand
+$K(z,s/z)=\sum_{j\ge0}A_j(z)(s-c)^j$ locally near $s=c$.
+The zeroth normal condition and the identity theorem give $A_0=0$.
+Inductively, once $A_0,\ldots,A_{j-1}$ vanish, the $j$th normal derivative is
+$j!(2\rho)^j A_j(\rho e^{i\theta})$. The same identity theorem gives
+$A_j=0$. These identities continue to the full product-curve annulus.
+The reverse direction follows by the same expansion. Consequently the sum
+of positive zero-shell multiplicities of a nonzero rank-$r$ Hermitian
+analytic kernel is at most $r-1$.
+
+\subsection{Intensity identification in any complex dimension}
+\begin{theorem}[Shell-and-jet identification]\label{thm:holomorphic-identify}
+Let $P:B_R\subset\mathbb C^m\to\mathbb C^d$ and
+$Q:B_R\to\mathbb C^e$ be holomorphic, with finite $d,e$. Let distinct radii
+$0<\rho_i<R$ and positive integers $m_i$ satisfy $\sum_i m_i\ge d+e$.
+Assume that the normal derivatives of
+$\|P(tu)\|^2-\|Q(tu)\|^2$ of orders $0,\ldots,m_i-1$ vanish at $t=\rho_i$
+for every unit vector $u$. Then
+\[
+ \langle P(z),P(w)\rangle=\langle Q(z),Q(w)\rangle
+ \qquad(z,w\in B_R).
+\]
+There is a fixed linear isometry from the span of $P(B_R)$ onto the span of
+$Q(B_R)$ taking $P(z)$ to $Q(z)$. In particular, if $d=e$, it extends to
+$U\in U(d)$ and $Q=UP$ throughout the ball.
+\end{theorem}
+\begin{proof}
+Restrict to a complex line $z=\zeta u$ and polarize the norm difference in
+$\zeta,\overline\zeta$. This is a holomorphic kernel of separated rank at
+most $d+e$. Theorem~\ref{thm:analytic-contact}, with the normal-jet equivalence,
+forces the restricted diagonal to vanish identically. Every point of the
+ball lies on such a line, so the norm difference is zero everywhere.
+Expanding at zero, independence of the real-analytic monomials
+$z^\alpha\overline z^\beta$ makes all polarized coefficients zero.
+The polarized identity extends to the ball. It makes the map
+$\sum_j t_jP(z_j)\mapsto\sum_jt_jQ(z_j)$ well-defined and norm preserving;
+extending orthonormal bases proves the last assertion.
+\end{proof}
+
+In particular, $2d$ distinct spheres suffice for two $d$-output holomorphic
+maps, with no polynomial, rationality, or finite-Taylor-support hypothesis.
+Alternatively one sphere and its normal derivatives of orders $0$ through
+$2d-1$ suffice. Mixed allocations of the same total multiplicity are allowed.
+The actual separated rank of the norm-difference kernel can replace $d+e$.
+All measurements here are functions on whole spheres, not finite angular
+sample sets.
+
+\begin{proposition}[Sharpness, including repeated shells]
+In complex dimension one the count $2d$ cannot be decreased, even for
+polynomials, and even if the $2d-1$ conditions are prescribed as arbitrary
+positive shell multiplicities.
+\end{proposition}
+\begin{proof}
+Let $\sum_i m_i=2d-1$ and write
+\[
+ B(x)=\prod_i(x-\rho_i^2)^{m_i}=\sum_{j=0}^{2d-1}\beta_jx^j.
+\]
+Its coefficients are nonzero and alternate in sign, with exactly $d$ of
+each sign. Assign the components $\sqrt{\beta_j}z^j$ with $\beta_j>0$ to
+$P$, and $\sqrt{-\beta_j}z^j$ with $\beta_j<0$ to $Q$. Then
+$\|P(z)\|^2-\|Q(z)\|^2=B(|z|^2)$ has exactly the prescribed normal
+multiplicities, but is not identically zero. No constant unitary relates the
+maps. Multiplying both maps by $e^z$ gives nonpolynomial entire sharp examples.
+\end{proof}
+
+The same identification holds for rational maps with poles off the measured
+spheres: multiply both maps by a common polynomial denominator nonzero there.
+It also holds for meromorphic maps whenever such a holomorphic common
+denominator is available. Multiplication by its squared modulus preserves
+normal zero multiplicities. A finite-order pole at the centre can therefore
+be cleared; an essential singularity cannot in general be ignored.
+
+\subsection{Why the centre hypothesis matters}
+The following explicit scalar construction has equal intensity on infinitely
+many concentric circles without a constant phase relation. It is holomorphic
+on $\mathbb C^*$, not at the centre.
+For $q=1/4$, define the normally convergent product
+\[
+ \Theta(z;q)=\prod_{j=0}^{\infty}(1-q^jz)(1-q^{j+1}/z),\qquad z\ne0.
+\]
+Reindexing the product gives
+$\Theta(qz;q)=-z^{-1}\Theta(z;q)$. Its zeros are exactly $q^{\mathbb Z}$.
+Take $a=2,b=3,c=5,d=6/5$, so $ab=cd$, and set
+\[
+ \begin{split}
+ P(z)&=\Theta(az;q)\Theta(bz;q)\Theta(c/z;q)\Theta(d/z;q),\\
+ Q(z)&=P(1/z).
+ \end{split}
+\]
+Both functions have real Laurent coefficients. The functional equation gives
+\[
+ P(qz)=q^{-2}z^{-4}P(z),\qquad
+ Q(qz)=q^{-2}z^{-4}Q(z).
+\]
+Thus $R=P/Q$ is a meromorphic $q$-periodic function and
+$R(1/z)=1/R(z)$. On $|z|=q^{n/2}$, $\overline z=q^n/z$, so
+\[
+ \overline{R(z)}=R(\overline z)=R(q^n/z)=1/R(z).
+\]
+Away from zeros and poles this proves $|R|=1$. Continuity of $|P|^2-|Q|^2$
+extends the equality to the whole circle. The ratio is not constant: at
+$z=1/3$, $P$ is zero whereas the four arguments defining $Q$ are
+$5/3,2/5,6,9$, none in $q^{\mathbb Z}$. Hence $Q(1/3)\ne0$.
+This supplies infinitely many equal-intensity shells for scalar functions on
+a punctured domain. It does not contradict Theorem~\ref{thm:holomorphic-identify}.
+
+\subsection{Relation to earlier work and verification scope}
+The scalar two-circle uniqueness case is already contained in Perez's
+Theorem 2.2 \cite{Perez2021}, which treats the Nevanlinna class and boundary
+radial values; holomorphic functions on a larger disk are a special case.
+We do not claim that scalar statement as new. Al Helal, Lebl and Nandi
+\cite{ALN2024}, Theorems 1.4 and 3.5--3.15, study rational sphere maps and
+prove degree-dependent classification results. Their norm-to-unitary step is
+established prior mathematics, also proved above. The extension relative to
+this repository is the confluent finite-rank analytic contact argument and
+its vector-valued shell-and-jet consequences, not the unitary Gram argument,
+the generalized Vandermonde principle, or the theta functional equation.
+A literature search and a verified citation do not establish priority.
+
+The accompanying verifier checks confluent determinants in two exact rational
+implementations, leading Taylor jets of genuinely nonpolynomial functions,
+prescribed sharp examples and negative controls. Theta-product evaluation is
+separately labelled high-precision numerical evidence. None of those finite
+checks replaces the analytic proof. The following section gives a separate
+quantitative instability construction, rather than inferring a stability
+estimate from exact uniqueness.
