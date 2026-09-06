@@ -1,0 +1,521 @@
+\section{Spectral modules, filter roots, and exact quantum cycles}
+\label{sec:spectral-modules}
+This section strengthens the temporal support theorem in five directions.
+The classical statements concern observable covariance, not eigenvalue
+statistics. The finite-field theorem is exact at every time, including times
+of order the Hilbert-space dimension; it is not a local spectral law.
+
+\subsection{All temporal translates form a free, stable module}
+Retain $A,C,g,h_r$ and the isolated frequencies $k_r$ of
+Lemma~\ref{lem:temporal-support}. On each oriented frequency orbit choose a
+representative $k_{\mathcal O}$ and define the finite Laurent polynomial
+\[
+ H_r(\mathcal O,z)=\sum_{\ell\in\mathbb Z}
+       \widehat h_r(A^\ell k_{\mathcal O})z^\ell .
+\]
+Only finitely many orbits and coefficients occur for fixed $m$. Let
+$M_m(z)=(H_r(\mathcal O,z))_{\mathcal O,1\le r\le m}$ and
+$S_m(\theta)=M_m(e^{i\theta})^*M_m(e^{i\theta})$.
+Set
+\[
+ D_m^*=(2\pi^2)^m\prod_{r=1}^m
+  \det(u_r,A^rv_r)^2|\widehat g(u_r)\widehat g(v_r)|^2,
+ \qquad L_m=\sum_{r=1}^m\|\widehat h_r\|_1^2.
+\]
+Both are strictly positive.
+\begin{theorem}[Uniform spectral positivity and temporal Riesz bounds]
+\label{thm:module-riesz}
+For all real $\theta$,
+\[
+ \det S_m(\theta)\ge D_m^*,\qquad
+ \frac{D_m^*}{L_m^{m-1}}I_m\le S_m(\theta)\le L_m I_m.
+\]
+Consequently for every finitely supported complex coefficient array
+$(b_{r,j})$, with arbitrary integer times $j$,
+\begin{equation}\label{eq:module-riesz}
+ \frac{D_m^*}{L_m^{m-1}}\sum_{r,j}|b_{r,j}|^2
+ \le\left\|\sum_{r=1}^m\sum_j b_{r,j}C^jh_r\right\|_2^2
+ \le L_m\sum_{r,j}|b_{r,j}|^2.
+\end{equation}
+The family $h_1,h_2,\ldots$ is free over $\mathbb C[z,z^{-1}]$ under
+$z\cdot f=Cf$. In particular all functions
+$\{C^ig,C^jg\}$, indexed by integer $i<j$, are linearly independent over
+$\mathbb C$ in finite combinations.
+\end{theorem}
+\begin{proof}
+Use $k_r$ and $-k_r$ themselves as the representatives of their pairwise
+distinct orbits. In the rows of $M_m$ corresponding to this pair, columns
+$j<r$ vanish, while column $r$ is the constant
+$z_r=-\pi\det(u_r,A^rv_r)\widehat g(u_r)\widehat g(v_r)$ or its conjugate.
+Selecting one row from each pair gives $2^m$ triangular minors with squared
+absolute determinant $\prod_r|z_r|^2$, independently of $\theta$.
+Cauchy--Binet proves the determinant bound. The triangle inequality gives
+$\operatorname{Tr}S_m(\theta)\le L_m$, so every eigenvalue is at most $L_m$
+and the smallest is at least $D_m^*/L_m^{m-1}$.
+
+Transport by $C^j$ shifts the Fourier exponent on an orbit by $j$.
+Parseval on each orbit identifies the middle member of
+\eqref{eq:module-riesz} with
+$\int\|M_m(e^{i\theta})b(e^{i\theta})\|^2d\theta/(2\pi)$,
+where $b_r(z)=\sum_jb_{r,j}z^j$. A second application of Parseval proves the
+bounds and module freeness. The last assertion uses
+$\{C^ig,C^jg\}=4\pi C^ih_{j-i}$.
+\end{proof}
+The constants depend on the largest lag $m$ and the symbol $g$ but not on the
+length or location of the time window. Thus the assertion does not contradict
+the soft-mode theorem, which increases the number and size of the lags.
+It also shows that no nonzero finite scalar combination of the $h_r$ is an
+$L^2$ twisted coboundary $(C-e^{i\theta_0})F$: its orbit polynomial on the
+isolated highest-lag orbit is a nonzero constant. Solving the corresponding
+one-dimensional difference equation would require a nonsquare-summable tail.
+
+\subsection{Complete coercivity classification for filtered single modes}
+Let $g_0=a_0e_v+\overline{a_0}e_{-v}$ as before. Fix any nonzero real
+polynomial $P(z)=\sum_{i=0}^dp_iz^i$, put $g=P(C)g_0$, and take $R\ge d$.
+For $r=R+1,\ldots,R+n$, form the covariance matrix of
+$\lambda^{-r}[h_r(g)]$, denoted $\widetilde G_{P,R,n}$.
+Let $\nu_P(w)$ be the root multiplicity of $P$ at $w$ (zero if not a root),
+and define
+\[
+ \mu_P(\theta)=\nu_P(\lambda e^{i\theta})+
+                 \nu_P(\lambda^{-1}e^{-i\theta}),\qquad
+ M_P=\max_{\theta\in\mathbb R}\mu_P(\theta).
+\]
+The maximum is zero when there are no roots on either indicated circle.
+\begin{theorem}[Root-circle classification]\label{thm:root-circle}
+With constants depending on $A,v,a_0,P,R$ but not on $n$,
+\[
+ \lambda_{\min}(\widetilde G_{P,R,n})\asymp n^{-2M_P}.
+\]
+In particular lag-uniform coercivity holds if and only if $P$ has no roots
+on $|z|=\lambda$ or $|z|=\lambda^{-1}$.
+\end{theorem}
+\begin{proof}
+Set $b_k=\sum_i p_ip_{i+k}$, extended evenly and by zero, and $w_k=b_k\lambda^k$.
+The proof of \eqref{eq:soft-sandwich} applies unchanged and gives
+\[
+ C_0(1-\lambda^{-2(R+1-d)})^2T_n(F_P)
+ \le\widetilde G_{P,R,n}\le C_0T_n(F_P),\qquad
+ F_P(\theta)=|P(\lambda e^{i\theta})P(\lambda^{-1}e^{-i\theta})|^2.
+\]
+Here $C_0=4\pi^2|a_0|^4\det(v,Av)^2/(t^2-4)>0$.
+The zero order of $F_P$ at $\theta_0$ is exactly $2\mu_P(\theta_0)$.
+We give a direct finite-section estimate so that no external Toeplitz
+asymptotic theorem is needed.
+
+If there are no zeros, continuity and positivity bound $F_P$ above and below.
+Otherwise let $Z$ be its finite zero set, of cardinality $J$, and $M=M_P$.
+There is $c>0$ such that
+$F_P(\theta)\ge c\,\operatorname{dist}(\theta,Z)^{2M}$, using circular
+angular distance. For a degree-$(n-1)$ Fourier polynomial $p$ with normalized
+$L^2$ norm one, $|p(\theta)|^2\le n$. The union of the radius
+$\varepsilon=\pi/(4Jn)$ arcs about $Z$ therefore carries at most $1/4$ of
+its squared mass. Outside these arcs $F_P\ge c\varepsilon^{2M}$.
+This gives a lower bound $c'n^{-2M}$ for every Rayleigh quotient.
+
+Choose a zero $\theta_0$ of maximal order and factor the finite Laurent
+polynomial $P(\lambda z)P(\lambda^{-1}z^{-1})$ by
+$(z-e^{i\theta_0})^M$. The remaining Laurent polynomial is bounded on the
+unit circle. Use the coefficients
+$x_j=e^{-ij\theta_0}\phi(j/(n+1))$, where
+$\phi(x)=x^M(1-x)^M$ on $[0,1]$ and zero otherwise.
+Its zero extension has bounded weak derivative of order $M$. The twisted
+$M$th finite differences of $x$ have squared sum $O(n^{1-2M})$, while
+$\|x\|^2\ge c_Mn$. Parseval gives the upper bound $O(n^{-2M})$.
+For a real symmetric matrix a complex trial vector is harmless: its Rayleigh
+quotient is a weighted average of those of its real and imaginary parts.
+The quadratic-form comparison completes the proof.
+\end{proof}
+This specializes the familiar zero-order mechanism for Toeplitz eigenvalues
+to an exact dynamical Gram representation. The general Toeplitz phenomenon
+is prior theory, not a new universality mechanism; see B\"ottcher--Widom,
+\emph{From Toeplitz Eigenvalues through Green's Kernels to Higher-Order
+Wirtinger--Sobolev Inequalities}, arXiv:math/0412269.
+
+There is also an exact repair for collective soft modes. Choose finitely many
+filters $P_a$, take $R\ge\max_a\deg P_a$, and add their covariance matrices with the same
+coefficient vector for their separate observations. Their symbols add.
+Uniform coercivity is equivalent to absence of a common zero of the $F_{P_a}$.
+If common zeros exist, the rate is $n^{-2M}$, where
+\[
+ M=\max_{\theta:\,F_{P_a}(\theta)=0\ \forall a}
+                  \min_a\mu_{P_a}(\theta).
+\]
+The preceding lower and upper proofs apply to this positive sum; there can be
+no cancellation of its leading nonnegative terms.
+For example $P_\pm(z)=(z^2\mp tz+1)^q$ separately give $n^{-4q}$, but with
+$u=2-2\cos\theta$ their sum obeys
+\[
+ F_+(\theta)+F_-(\theta)
+ =u^{2q}(t^2-4+u)^{2q}
+ +(4-u)^{2q}(t^2-u)^{2q}
+ \ge 2^{2q+1}(t^2-4)^{2q}>0.
+\]
+Thus two explicit individually soft observations have a jointly uniform
+positive lower covariance bound at every lag-window size. This statement
+adds covariances of separate observations, not the covariance of their sum.
+
+\subsection{The high-lag classification for every finite Fourier symbol}
+The single-orbit restriction can be removed. Decompose the nonzero Fourier
+support of an arbitrary real trigonometric polynomial into oriented $A$-orbits.
+Choose one integer representative $w_a$ from each, shifting it so that
+\[
+ g=\sum_{a=1}^J P_a(C)e_{w_a},\qquad
+ P_a(z)=\sum_{i=0}^{d_a}c_{a,i}z^i,\qquad P_a(0)\ne0.
+\]
+Representatives and filters can be paired by $w_{-a}=-w_a$ and
+$P_{-a}=\overline{P_a}$ (coefficient conjugation). Put $d=\max_a d_a$ and
+let $P_g$ be the monic greatest common divisor of the $P_a$ in $\mathbb C[z]$.
+It has real coefficients, and changing representatives only multiplies filters
+by Laurent monomials, which does not change its nonzero roots.
+
+\begin{lemma}[Four-atom separation]\label{lem:four-atom-separation}
+For a fixed finite nonzero integer alphabet $V=-V$, there is an integer $G$
+such that every relation $\sum_{i=1}^4 A^{n_i}v_i=0$, $v_i\in V$, splits
+into two vanishing subrelations across any consecutive time gap larger than $G$.
+If $r,s>3G$ and
+\[
+ u+A^rv=A^j(u'+A^sv'),\qquad u,v,u',v'\in V,
+\]
+then necessarily $u=A^ju'$ and $A^rv=A^{j+s}v'$.
+\end{lemma}
+\begin{proof}
+Set $B=\operatorname{sign}(\operatorname{tr}A)A$, and choose its eigen-covectors
+$\xi,\eta$. There is $\kappa\ne0$ with
+$Q_B(x)=\det(x,Bx)=\kappa\xi(x)\eta(x)$.
+Let $X=\max_V|\xi|$, $Y=\max_V|\eta|$, and choose $G$ so that
+$16|\kappa|XY\lambda^{-G}<1$.
+Suppose a gap separates times at most $a$ from times at least $b$, $b-a>G$.
+The sum $w$ of the terms on the left is integral, and, using minus the sum
+on the right for its contracting coordinate,
+\[
+ |\xi(w)|\le4X\lambda^a,\qquad |\eta(w)|\le4Y\lambda^{-b}.
+\]
+Thus the integer $Q_B(w)$ has absolute value less than one. It vanishes,
+and irrationality of the eigenlines implies $w=0$. The other subrelation
+also vanishes. Signs from negative eigenvalues are harmless in these bounds.
+The same argument shows that cancellation of two alphabet atoms can occur
+only when their time difference has absolute value at most $G$.
+
+For the second assertion, order the four times $0,r,j,j+s$. Their span
+exceeds $3G$, so one of the three gaps exceeds $G$. Neither side can be a
+singleton because no atom is zero. Hence they split into two cancelling pairs.
+A pair cannot consist of the two atoms of the same side of the original
+identity, since $r,s>3G$. Crossed pairing would require
+$|j+s|\le G$ and $|r-j|\le G$, hence $r+s\le2G$, also impossible.
+Only the asserted parallel pairing remains.
+\end{proof}
+
+For definiteness the constant in this lemma can be bounded using integers.
+Write $B=(b_{ij})$, $t=\operatorname{tr}B$, $\Delta=t^2-4$.
+The covectors
+$\xi(x,y)=2b_{21}x+(t-2b_{11}+\sqrt\Delta)y$ and its conjugate satisfy
+$\xi\eta=4b_{21}Q_B$; here $b_{21}\ne0$.
+Taking
+$M=\max_{(x,y)\in V}\{2|b_{21}||x|+(|t-2b_{11}|+t)|y|\}$,
+any integer $G$ with $2^G>4M^2/|b_{21}|$ suffices, since $\lambda>2$.
+
+Choose eigenvectors $e_+,e_-$ of $B$ and write
+$w_a=\xi_a e_++\eta_a e_-$. Every $\xi_a,\eta_a$ is nonzero.
+Set $D_e=\det(e_+,e_-)$ and
+\[
+ F_g(\theta)=\pi^2 D_e^2
+ \left(\sum_a\eta_a^2|P_a(\lambda^{-1}e^{-i\theta})|^2\right)
+ \left(\sum_a\xi_a^2|P_a(\lambda e^{i\theta})|^2\right).
+\]
+This expression is independent of eigenvector rescaling.
+\begin{theorem}[Complete finite-symbol high-lag criterion]
+\label{thm:general-symbol}
+There is $R_0(A,g)$ such that, for every fixed $R\ge R_0$, the covariance
+matrix $\widetilde G_{g,R,n}$ of $\lambda^{-r}[h_r(g)]$,
+$r=R+1,\ldots,R+n$, satisfies
+\[
+ c\,T_n(F_g)\le\widetilde G_{g,R,n}\le C\,T_n(F_g)
+ \quad(n\ge1)
+\]
+with positive constants independent of $n$. Therefore
+\[
+ \lambda_{\min}(\widetilde G_{g,R,n})\asymp n^{-2M_g},\qquad
+ M_g=\max_\theta\{
+ \nu_{P_g}(\lambda e^{i\theta})+
+ \nu_{P_g}(\lambda^{-1}e^{-i\theta})\}.
+\]
+In particular uniform high-lag coercivity holds precisely when the common
+finite temporal divisor $P_g$ has no root on the two hyperbolic circles.
+This covers every finite real Fourier symbol, with arbitrary phases and any
+number of frequency orbits.
+\end{theorem}
+\begin{proof}
+Apply Lemma~\ref{lem:four-atom-separation} to the actual Fourier support $V$.
+For sufficiently large positive $r,s$, equality of two contributing frequency
+orbits is possible only by parallel matching of their two atoms. In the
+chosen orbit coordinates, this says that the orbit is uniquely indexed by
+an ordered pair $(a,b)$ and an effective lag $\ell=r+j-i$. Thus its Fourier
+sum is
+\[
+ -\pi D_{ab}(\ell)\,b_{ab}(\ell-r),\qquad
+ D_{ab}(\ell)=\det(w_a,A^\ell w_b),\quad
+ b_{ab}(k)=\sum_i c_{a,i}c_{b,i+k}.
+\]
+The coefficients have been extended by zero; $|k|\le d$.
+Consequently the exact covariance, before normalization, is
+\[
+ (G_{g,R,n})_{rs}
+ =\pi^2\sum_{a,b,\ell}D_{ab}(\ell)^2
+        b_{ab}(\ell-r)\overline{b_{ab}(\ell-s)}.
+\]
+If $s_A=\operatorname{sign}(\operatorname{tr}A)$, diagonalization gives
+\[
+ D_{ab}(\ell)=s_A^\ell
+ \{-D_e\eta_a\xi_b\lambda^\ell+D_e\xi_a\eta_b\lambda^{-\ell}\}.
+\]
+The leading coefficient $\gamma_{ab}=-D_e\eta_a\xi_b$ is nonzero.
+Choose $R_0$ so that all $r,s>3G$, all $\ell\ge R+1-d>0$, and
+\[
+ \left|\frac{D_e\xi_a\eta_b}{\gamma_{ab}}\right|
+          \lambda^{-2\ell}\le\tfrac12
+ \quad\hbox{for every }a,b.
+\]
+Then the squared residual factors are between $1/4$ and $9/4$.
+For $w_{ab,k}=b_{ab}(k)\lambda^k$, the normalized quadratic form is a sum
+of their convolution norms with these positive residual weights. Parseval
+gives the claimed comparison with constants $1/4$ and $9/4$ and symbol
+\[
+ \pi^2\sum_{a,b}\gamma_{ab}^2
+  |P_a(\lambda^{-1}e^{-i\theta})P_b(\lambda e^{i\theta})|^2=F_g(\theta).
+\]
+There is no missing conjugation in $b_{ab}$: it arises from the bilinear
+Poisson bracket. Conjugation enters only in the covariance and absolute square.
+The reality pairs make $F_g$ even and the covariance real.
+
+Each positive sum in $F_g$ vanishes precisely when all of its filters vanish.
+Its vanishing multiplicity is twice their minimum root multiplicity, namely
+that of their gcd. The product therefore has zero order $2M_g$ at its
+most degenerate zero. The multi-zero finite-section estimate in
+Theorem~\ref{thm:root-circle} applies to this symbol as well: it is a finite
+nonnegative trigonometric polynomial; near a maximal zero it is bounded above
+by a constant times $|e^{i\theta}-e^{i\theta_0}|^{2M_g}$.
+The same concentration lower bound and modulated finite-difference trial
+vector prove the asserted rate.
+\end{proof}
+For example, if one of the orbit filters is a nonzero constant, then
+$P_g=1$ and the high-lag covariance is uniformly coercive. More generally,
+adding a second orbit with a coprime temporal filter removes the common-root
+obstruction within a single observable. This is stronger than merely adding
+covariance matrices of separate observations, but relies on the exact
+large-lag orbit separation just proved. No claim about infinite Fourier
+support or nonlinear kicked spectral statistics follows from this criterion.
+
+
+\begin{corollary}[One-harmonic repair and its crossover scale]
+\label{cor:one-harmonic-repair}
+Let $v\ne0$ be integral, $g_v=e_v+e_{-v}$, $q\ge1$, and
+\[
+ g_\varepsilon=(C^2-tC+I)^qg_v+\varepsilon(e_{2v}+e_{-2v}),
+ \qquad 0\le\varepsilon\le1.
+\]
+For a sufficiently large fixed starting lag $R$, there are positive constants
+$c,C$, independent of both $n$ and $\varepsilon$, such that
+\[
+ c\,(n^{-2q}+\varepsilon^2)^2
+ \le\lambda_{\min}(\widetilde G_{g_\varepsilon,R,n})
+ \le C\,(n^{-2q}+\varepsilon^2)^2.
+\]
+Thus a single additional harmonic changes the arbitrarily soft $n^{-4q}$
+family into a uniformly coercive one. The crossover occurs at
+$n\asymp\varepsilon^{-1/q}$, and the large-window floor has order
+$\varepsilon^4$.
+\end{corollary}
+\begin{proof}
+The oriented orbits of $v$ and $2v$ are distinct, as
+$Q_B(2v)=4Q_B(v)\ne Q_B(v)$. The four filters in
+Theorem~\ref{thm:general-symbol} are $P_q,P_q,\varepsilon,\varepsilon$;
+the same separation and residual bounds work for all $\varepsilon$, including
+zero, by using the larger fixed support. Set $u=2-2\cos\theta$,
+$B(\theta)=u(t^2-4+u)$ and
+$C_0=4\pi^2\det(v,Av)^2/(t^2-4)$. The exact Toeplitz symbol is
+\[
+ F_{g_\varepsilon}(\theta)
+ =C_0\{B(\theta)^{2q}
+       +4\varepsilon^2(\lambda^{2q}+\lambda^{-2q})B(\theta)^q
+       +16\varepsilon^4\}.
+\]
+Since $t^2-4>0$ and $0\le u\le4$, this is bounded above and below by
+positive constant multiples of $(u^q+\varepsilon^2)^2$, uniformly in
+$\varepsilon$. For every normalized degree-$(n-1)$ polynomial $p$, Jensen's
+inequality bounds its integrals against $u^q$ and $u^{2q}$ below by the
+corresponding powers of the Dirichlet Laplacian minimum
+$4\sin^2(\pi/(2(n+1)))$. This gives the required lower estimate.
+The trial coefficients from the soft-mode theorem have normalized $q$th and
+$2q$th finite-difference squared norms $O(n^{-2q})$ and $O(n^{-4q})$.
+They yield the upper estimate including both cross and constant terms.
+The exact finite-covariance comparison completes the proof.
+\end{proof}
+This repair is a theorem about the covariance of one perturbed classical
+observable. It does not claim that this harmonic perturbation proves BGS for
+the corresponding quantum propagator.
+
+\subsection{An exact all-time quantum module over a finite field}
+Let $p$ be an odd prime and $A\in\mathrm{SL}(2,\mathbb F_p)$ satisfy
+$(\operatorname{tr}A)^2\ne4$. Assume its exact order $K\ge3$ is odd.
+Choose $v\in\mathbb F_p^2$ with $\det(v,Av)\ne0$.
+Use modular-centred Weyl matrices $W_p(w)$, so
+\[
+ W_p(u)W_p(w)=e_p(\omega(u,w)/2)W_p(u+w),\quad
+ W_p(w)^*=W_p(-w),\quad
+ p^{-1}\operatorname{Tr}(W_p(u)^*W_p(w))=\mathbf1_{u=w}.
+\]
+Here $1/2$ is the inverse of two in $\mathbb F_p$, not ordinary division.
+The map $\alpha(W_p(w))=W_p(Aw)$ extends to a $*$-automorphism of the full
+matrix algebra, hence is implemented by a unitary. This fixes the finite
+quantization convention; it does not assert physical-lift Egorov in every
+boundary sector for every integral matrix.
+Put $G=cW_p(v)+\overline cW_p(-v)$, $c\ne0$, and
+\[
+ H_r=\frac{ip}{2}[G,\alpha^rG],\quad
+ 1\le r\le m=(K-1)/2,\quad d_r=\det(v,A^rv)\in\mathbb F_p.
+\]
+Write $\widetilde d_r$ for any integer representative of $d_r$ and
+$\tau_p=p^{-1}\operatorname{Tr}$.
+\begin{theorem}[Cyclic module and variance at every time]
+\label{thm:quantum-cycles}
+For any finitely supported complex coefficients $b_{r,j}$, $j\in\mathbb Z$,
+\begin{equation}\label{eq:quantum-cyclic-module}
+ \tau_p\left|\sum_{r=1}^m\sum_j b_{r,j}\alpha^jH_r\right|^2
+ =4p^2|c|^4\sum_{r=1}^m\sin^2(\pi\widetilde d_r/p)
+       \sum_{a=0}^{K-1}\left|\sum_{j\equiv a\bmod K}b_{r,j}\right|^2.
+\end{equation}
+All $d_r$ are nonzero. The $Km$ operators
+$\alpha^aH_r$, $0\le a<K$, $1\le r\le m$, are pairwise orthogonal and
+nonzero. The kernel of the temporal Laurent-polynomial map is exactly
+$(z^K-1)\mathbb C[z,z^{-1}]^m$.
+
+For $n=qK+s$, $0\le s<K$, in particular,
+\begin{equation}\label{eq:quantum-all-time}
+ \tau_p\left|\sum_{j=0}^{n-1}\alpha^jH_r\right|^2
+ =4p^2|c|^4\sin^2(\pi\widetilde d_r/p)
+       \left\{\frac{n^2}{K}+s\left(1-\frac{s}{K}\right)\right\}.
+\end{equation}
+This holds for every integer $n\ge1$, without a no-alias time restriction.
+\end{theorem}
+\begin{proof}
+Over a splitting field, $A$ has distinct eigenvalues $\zeta,\zeta^{-1}$ of
+exact odd order $K$. Every nonzero vector has orbit length $K$, and no such
+orbit contains both $w$ and $-w$: otherwise a power of $\zeta$ would be $-1$.
+Let $Q(w)=\det(w,Aw)$ and $t_r=\zeta^r+\zeta^{-r}$. Then
+\[
+ Q(v\pm A^rv)=(2\pm t_r)Q(v).
+\]
+For $1\le r\le(K-1)/2$, all the $2m$ values $2\pm t_r$ are nonzero and
+distinct. Equality $t_r=t_s$ implies $r\equiv\pm s\pmod K$, while
+$t_r=-t_s$ would imply $\zeta^r=-\zeta^{\pm s}$, impossible at odd order.
+Thus the $4m$ frequencies $\pm(v+A^rv)$, $\pm(v-A^rv)$ lie in pairwise
+distinct orbits. The condition $Q(v)\ne0$ also gives
+$d_r=Q(v)(\zeta^r-\zeta^{-r})/(\zeta-\zeta^{-1})\ne0$.
+
+Expanding the Weyl commutator shows that $H_r$ has exactly these four
+frequencies, each with coefficient modulus
+$p|c|^2|\sin(\pi\widetilde d_r/p)|$. The modular phase may differ by a
+sign from ordinary half-division, but its squared modulus is the displayed
+one. Transport permutes each orbit without an additional phase in this
+convention. Since the orbits are disjoint, collecting coefficients by their
+residue class in time and applying Weyl orthogonality proves
+\eqref{eq:quantum-cyclic-module}. The only polynomial kernel is reduction to
+zero modulo $z^K-1$. For the constant time coefficients there are $s$ residue
+classes visited $q+1$ times and $K-s$ classes visited $q$ times; their squared
+counts sum to $Kq^2+(2q+1)s=n^2/K+s(1-s/K)$.
+\end{proof}
+For $n\le K$ the brace equals $n$, giving exact linear variance. For $n\gg K$
+it is $n^2/K+O(K)$, exposing coherent recurrences. When $n$ is of order $p$
+the formula still holds, regardless of whether $K$ is comparable to $p$;
+linear variance at that scale additionally requires $K\ge n$.
+No infinite sequence with $K\asymp p$ for one fixed integral $A$ is inferred.
+The theorem is about an unperturbed finite quantum map and commutator
+observables, not the local eigenphase statistics of a kicked propagator.
+The odd-order hypothesis is essential: at $p=7$ and
+$A=\left(\begin{smallmatrix}3&-1\\1&0\end{smallmatrix}\right)$ the order is
+$8$ and opposite frequencies share an orbit, invalidating the displayed
+orthogonality and variance formula. This is an explicit negative control.
+
+
+\subsection{Phase completion at even order and an exact rank transition}
+The failure at even order is not unavoidable. It depends on the Fourier phase
+of the real initial observable, and can be removed without randomness.
+Retain the regular-semisimple assumptions over $\mathbb F_p$, but allow any
+order $K\ge3$, and put $m=\lfloor(K-1)/2\rfloor$.
+\begin{theorem}[Balanced-phase completion]\label{thm:phase-completion}
+If $K$ is even, assume $c=a+ib$ with $a,b\in\mathbb R$ and $a^2=b^2>0$.
+Then \eqref{eq:quantum-cyclic-module} and \eqref{eq:quantum-all-time} hold
+unchanged for all $1\le r\le m$. Thus the cyclic module is free of rank $m$
+over $\mathbb C[z,z^{-1}]/(z^K-1)$ for every regular semisimple order,
+using an arbitrary nonzero phase at odd order and a balanced phase at even order.
+
+More generally, at even order let $ab\ne0$, set
+$s_r=\sin(2\pi \overline2\widetilde d_r/p)$, where
+$\overline2=(p+1)/2$, and define $J_r=H_r/(ps_r)$. If
+$B_{r,u}=\sum_{j\equiv u\bmod K}b_{r,j}$, then
+\[
+ 16\min(a^4,b^4)\sum_{r,u}|B_{r,u}|^2
+ \le\tau_p\left|\sum_{r,j}b_{r,j}\alpha^jJ_r\right|^2
+ \le16\max(a^4,b^4)\sum_{r,u}|B_{r,u}|^2.
+\]
+The dimension of the span of all $\alpha^jH_r$ is $K(K-2)/2$ for $ab\ne0$,
+but is exactly $K(K-2)/8$ for a nonzero purely real or purely imaginary $c$.
+\end{theorem}
+\begin{proof}
+Write $K=2L$. Then $A^L=-I$. The invariant $Q(w)=\det(w,Aw)$ groups
+the lags $r$ and $L-r$, for $1\le r<L/2$, into pairs. Different such
+pairs have disjoint label orbits. Indeed $t_r=t_s$ implies $r=\pm s$
+modulo $K$, while $t_r=-t_s$ now implies $r=L\pm s$ modulo $K$.
+Within a pair choose $E=W_p(v+A^rv)$ and $F=W_p(v-A^rv)$ as orbit seeds.
+Their $K$-element orbits are disjoint. Expanding the commutators gives, in
+the cyclic group algebra, with $z$ acting by $\alpha$,
+\[
+ J_r=-A_c(z)E+B_c(z)F,\qquad
+ z^rJ_{L-r}=B_c(z)E-A'_c(z)F,
+\]
+where
+\[
+ A_c(z)=c^2+\overline c^{\,2}z^L,\qquad
+ A'_c(z)=\overline c^{\,2}+c^2z^L,\qquad
+ B_c(z)=|c|^2(1+z^L).
+\]
+Here $d_{L-r}=d_r$, so the two sine normalizations agree. The frequency
+identities used are
+$v+A^{L-r}v=-A^{-r}(v-A^rv)$ and
+$v-A^{L-r}v=A^{-r}(v+A^rv)$.
+
+A unitary Fourier transform on each cyclic orbit reduces the block to
+\[
+ \begin{pmatrix}-A_c(z)&B_c(z)\\ B_c(z)&-A'_c(z)\end{pmatrix},
+ \qquad z^K=1.
+\]
+For $z^L=1$, its singular values are $4a^2$ and $4b^2$.
+For $z^L=-1$, both singular values are $4|ab|$.
+Multiplication of the second generator by $z^r$ is unitary and does not
+change a bound on coefficient norms.
+
+If $L$ is even, the remaining lag $r=L/2$ is a separate block: all four
+frequencies are on the single orbit of $E=W_p(v+A^rv)$, since
+$v-A^rv=A^{-r}(v+A^rv)$. Its orbit polynomial is
+\[
+ -c^2-\overline c^{\,2}z^{2r}+|c|^2(z^r+z^{-r}).
+\]
+At $z^r=1,-1,i,-i$ its values are respectively
+$4b^2,-4a^2,-4iab,-4iab$. Its squared singular values therefore satisfy
+the same bounds. These blocks exhaust the half-period lags.
+When $a^2=b^2$, every block is a scalar multiple of a unitary, with squared
+singular value $16a^4=4|c|^4$. Substituting $ps_rb_{r,j}$ for coefficients
+of $J_r$ proves the claimed exact formula for $H_r$.
+
+For $ab\ne0$ all blocks are invertible at all characters, giving $Km=2L(L-1)$.
+For a purely real or imaginary phase each two-generator block has rank one
+on the $L$ characters with $z^L=1$ and rank zero on the others. Its total
+rank is $L$. If present, the exceptional one-generator block has rank $K/4$.
+Counting $(L-1)/2$ pairs when $L$ is odd, or $(L-2)/2$ pairs and one
+exceptional block when $L$ is even, gives $L(L-1)/2=K(K-2)/8$.
+\end{proof}
+This is a phase-controlled rank transition in the module of commutator
+observables. It is not a transition theorem for eigenvalue statistics.
+The purely real even-order negative control remains valid; the balanced
+choice $c=1+i$ removes precisely that phase-dependent degeneracy.

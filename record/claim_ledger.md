@@ -289,3 +289,36 @@ no density-adapted unfolding result, and no further-sector result is claimed.
 The forty finite configurations are checked independently by pair sums and
 moving-window integration; they are evidence about implementation, not the
 proof. Priority and analytic Lean formalization are not established.
+
+## Temporal hierarchy and spectral modules (2026-09-06)
+
+Proof authority: `manuscript/unified_sections/temporal_resonance.tex`,
+`manuscript/unified_sections/spectral_modules.tex`, and `cayley_scaling.tex`.
+These are complete project derivations with the displayed hypotheses, not
+independent referee acceptance, established priority, or full Lean proofs.
+They supersede the old finite-band nondegeneracy open status only.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| All finite-lag h_r={g,C^r g}/(4 pi) independent modulo L2 coboundaries for every real nonconstant Fourier polynomial | EXACT + FINITE-REGRESSION | Both trace signs, arbitrary finite phases/support |
+| Full quadratic temporal cancellation iff all lag-diagonal sums vanish; explicit transfer | EXACT + FINITE-REGRESSION | Finite combinations |
+| Reciprocal-filter cancellation and autocorrelation classification | EXACT + FINITE-REGRESSION | Second-order classes, not quantum spectra |
+| Positive fixed-band coercivity and Gevrey stretched-exponential upper bound | EXACT | Not arbitrary infinite analytic support |
+| All h_r free over C[z,z^-1]; all-frequency spectral positivity; Riesz bounds uniform in time window | EXACT + FINITE-REGRESSION | Constants depend on the largest lag and fixed symbol |
+| Every finite Fourier symbol has an exact high-lag pair-orbit Gram formula and Toeplitz comparison | EXACT + FINITE-REGRESSION | Sufficiently large fixed starting lag; classical covariance |
+| High-lag smallest eigenvalue Theta(n^(-2M)) classified by common orbit-filter divisor on hyperbolic circles | EXACT + FINITE-REGRESSION | General Toeplitz zero-order mechanism is prior theory |
+| One-harmonic repair of the q-filter family has uniform crossover (n^(-2q)+epsilon^2)^2 | EXACT | Fixed A,q,v and sufficiently large starting lag; not kicked BGS |
+| Complementary separate filters remove common soft zeros | EXACT + FINITE-REGRESSION | Sum of separate covariance matrices, not covariance of their sum |
+| No-alias physical-Weyl HS variance lower bound | EXACT + NUMERICAL | Sufficient window logarithmic |
+| Regular semisimple finite quantum cyclic module with exact all-time variance | EXACT + FINITE-REGRESSION + NUMERICAL | Odd order with arbitrary nonzero c; observable commutators, not eigenphase correlations |
+| Balanced phase extends exact orthogonality/all-time formula to even order | EXACT + FINITE-REGRESSION + NUMERICAL | c=a+ib, a^2=b^2>0; correct modular-centred Weyl convention |
+| Even-order phase-rank transition: K(K-2)/2 for ab!=0, K(K-2)/8 for nonzero pure real/imaginary c | EXACT + FINITE-REGRESSION | Finite commutator-observable module, not spectral universality |
+| Cayley scaling classes are inversion pairs; unimodular toric classes have at most four members | EXACT + FINITE-REGRESSION | No energy-exponent improvement |
+
+Python and independent C++ witness sources are now supplied, and the previously
+dangling Fourier-tail reference points to a maintained proof. The Lean draft
+is outside active imports until compiler execution is verified. Exact integer
+checks, floating-point diagnostics, analytic proofs, and remote CI are separate
+evidence categories. The all-time finite-field statement does not furnish
+joint traces of a perturbed quantum propagator. Positive microscopic BGS /
+GOE / COE / GUE universality remains OPEN.

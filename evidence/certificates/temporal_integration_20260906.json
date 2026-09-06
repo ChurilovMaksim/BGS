@@ -1,0 +1,18 @@
+{
+  "scope": "Fresh local execution of the temporal/Cayley/module source packet; not a whole-repository proof audit or remote CI claim",
+  "baseline_commit": "ff546c6e66d3ece903f025a14ec4082ca3ecc18a",
+  "original_packet_sha256": "bd368694a035ab619384b186933f835c2e7fd3fa0fe3caffb912863ad3fa7709",
+  "lean_compiled": false,
+  "wolfram": "HTTP 404 on retry; no Wolfram verification used",
+  "checks": [
+    {"source": "extremal_resonance.py", "source_sha256": "c89d7b6aedc7146810172ec3fbff3c9e8d678caa3c3830838dd9ab1c76e63c41", "status": "PASS", "witnesses": 10000, "max_lag": 10, "exact_gram_cases": 20, "replay_sha256": "b76ed68256f039f56113aaa568ce48334513f5cbb7862e5c0d21df3d119f34b3", "independent_cpp_replay": "PASS 10000", "log_sha256": "4cb4b05a00e841d42c64262354868940d2856c85a5024523cf2424ce60f8ad98"},
+    {"source": "cayley_scaling_rigidity.py", "source_sha256": "39d4456c81bb35c0dcbfbae6b9623c8f0a7819eb247d07573c1301ec8d62d687", "status": "PASS", "prime_fields": 52, "ordered_pairs": 953856, "symbolic_identities": 10, "log_sha256": "4ef4141daac74478b031ecb40a0f898771da511b827264b4e8e364fdaeae486b"},
+    {"source": "temporal_soft_modes.py", "source_sha256": "ce0fb05ed4416d0b98a9dde3380b1a98b57c823bba5029ed9914d62cadaf61fe", "status": "PASS", "exact_gram_entries": 432, "rational_rayleigh_quotients": 21, "log_sha256": "12ec0ef3bba46e34715cdec33b499b8bee27377e0c5f69126c2d665df3193e3b"},
+    {"source": "temporal_quantum_variance.py", "source_sha256": "946edc710c960c1a73fe5c0c4e8586c1948505b498dd60f148c160dff78e801a", "status": "PASS", "numerical_cases": 12, "max_relative_error": 4.0945233123753043e-16, "aliasing_control_norm": 0.0, "log_sha256": "8d70ad79c730d127ae6b1d4d34944fd2fa369c2ba85a1bc2ffc843cd45df8fcb"},
+    {"source": "spectral_module_regression.py", "source_sha256": "a5ff2f67b7d3a69b4115cc74fcda3838955de6ae00db31fd7c9cd4dff0385d72", "status": "PASS", "exact_riesz_principal_minors": 72, "exact_filter_gram_entries": 300, "log_sha256": "bc9c8c4426102411f0f84997980fb1f60168ae07d3975fec5a76c43ed91b7c35"},
+    {"source": "general_symbol_covariance.py", "source_sha256": "39d5f82d26588790ab28a0c9e5936eda81d6dd8b602b2b8969808195bdb28518", "status": "PASS", "exact_multi_orbit_gram_entries": 96, "gcd_examples": 4, "log_sha256": "17561dae1fab00552b814e6c2775d69be12208841c9ad12bccffb32d430b9f26"},
+    {"source": "quantum_cyclic_module.py", "source_sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04", "status": "PASS", "lag_modules": 1332, "exact_count_checks": 9324, "numerical_cases": 16, "max_relative_error": 6.672149336016527e-16, "log_sha256": "673e2c52d58db7d64d3ada7409d8e89869a4c80668a25c740036aad1ec576e49"},
+    {"source": "quantum_phase_completion.py", "source_sha256": "26f2e951f5b77a55942ec24c2e6178a5b4a1b53806108dec2209aaecae6c28bc", "status": "PASS", "configurations": 121, "even_order_configurations": 84, "orthogonal_operators": 178435, "exact_generic_phase_blocks": 663, "exact_real_phase_rank_checks": 24, "numerical_cases": 20, "max_relative_error": 6.374712741105657e-16, "log_sha256": "dd92c11fda59c978836daa48cd53dfef6cc3846e87be35a701b449030604a608"}
+  ],
+  "interpretation": "Exact finite tests are implementation evidence. Analytic proofs and their hypotheses are in temporal_resonance.tex and spectral_modules.tex. No microscopic BGS theorem is claimed."
+}

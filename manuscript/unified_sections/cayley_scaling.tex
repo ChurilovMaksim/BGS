@@ -1,0 +1,58 @@
+\section{Scaling rigidity of the Cayley collision family}
+\label{sec:cayley-scaling}
+Consider the off-diagonal collision polynomial
+\[
+ G_{\rho,\sigma}(U,V)=\sigma(\rho-1)U^2V^2+\rho(1-\sigma)U^2
+          +2(\sigma-\rho)UV+(1-\sigma)V^2+\rho-1.
+\]
+Assume characteristic different from two, $\rho,\sigma\notin\{0,1,-1\}$,
+and $\rho\ne\sigma$. These assumptions hold for distinct nonunit parameters
+in an odd-order multiplicative subgroup.
+
+\begin{proposition}
+Among this family a scalar and diagonal-coordinate scaling class has exactly
+the two members $(\rho,\sigma)$ and $(\rho^{-1},\sigma^{-1})$ over an
+algebraic closure. Allowing invertible Laurent monomial coordinate changes
+and Laurent monomial multipliers enlarges it to at most four members, adding
+$(\sigma,\rho)$ and $(\sigma^{-1},\rho^{-1})$.
+For parameters in an odd-order subgroup all these equivalences can be
+realized by transformations preserving its Cartesian square.
+\end{proposition}
+\begin{proof}
+For coefficients $(a,b,c,d,e)$ of $(U^2V^2,U^2,UV,V^2,1)$, the quantities
+$I=ae/(bd)$ and $J=c^2/(bd)$ are scaling invariants. Here
+\[
+ I=\frac{\sigma(\rho-1)^2}{\rho(\sigma-1)^2},\qquad
+ J=\frac{4(\sigma-\rho)^2}{\rho(\sigma-1)^2}.
+\]
+Writing $z=(\sigma-\rho)/(\sigma-1)$ and $c_0=1-I+J/4$, direct algebra gives
+\[
+ z^2=J\rho/4,\quad c_0\rho=(\rho+1)z,\quad
+                       J(\rho+1)^2=4c_0^2\rho.
+\]
+The last equation is a reciprocal quadratic with $J\ne0$, so it allows at
+most two values of $\rho$. Each determines $z$ and then
+$\sigma=(z-\rho)/(z-1)$. Simultaneous inversion preserves the invariants
+and gives the second distinct pair. If
+$\alpha^2=(\rho\sigma)^{-1}$ and $\beta=\rho\alpha$, then
+\[
+ G_{\rho^{-1},\sigma^{-1}}(U,V)
+     =-\rho^{-1}G_{\rho,\sigma}(\alpha U,\beta V).
+\]
+Squaring is bijective in an odd-order subgroup, proving that restricted
+statement as well.
+
+The Newton polygon is the square $[0,2]^2$ with its centre as the only other
+support point. Its affine unimodular symmetries have signed-permutation
+linear parts. Interchanging the coordinates preserves $(I,J)$; inverting one
+coordinate changes it to $(I^{-1},J/I)$, the invariant pair obtained by
+interchanging $\rho,\sigma$. The first part therefore bounds the class by
+four, and the identity
+$G_{\sigma,\rho}(U,V)=-V^2G_{\rho,\sigma}(U,V^{-1})$ realizes the swap.
+There are only two distinct members when $\rho\sigma=1$, and four otherwise.
+\end{proof}
+
+This rules out the proposed direct conversion of an unbounded two-parameter
+collision family into rescalings of one fixed polynomial by these coordinate
+changes. It does not rule out other curve-averaging methods, and it supplies
+no improvement of the active $K^{8/3}$ pointwise energy exponent.

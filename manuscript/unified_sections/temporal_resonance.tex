@@ -1,0 +1,439 @@
+\section{Temporal Poisson brackets in dynamical cohomology}
+\label{sec:temporal-resonance}
+This section proves an unrestricted finite-Fourier theorem and a complete
+classification of quadratic temporal cancellations. The conclusions concern
+classical dynamical cohomology. Neither microscopic BGS universality nor
+priority over all external literature is asserted.
+
+\subsection{Definitions and the Fourier criterion}
+Let $A\in\mathrm{SL}(2,\mathbb Z)$, $|\operatorname{tr}A|>2$, let
+$S=A^{\mathsf T}$ act on $\mathbb T^2$, and write $Cf=f\circ S$.
+For a nonconstant real trigonometric polynomial $g$, subtract its mean and put
+\[
+ V=\{v:\widehat g(v)\ne0\}\subset\mathbb Z^2\setminus\{0\},
+ \qquad h_r=\frac{\{g,C^rg\}}{4\pi}\quad(r\ge1).
+\]
+Here $V=-V$, but Fourier coefficients need not be real. Our Poisson bracket is
+$\{f,q\}=\partial_1f\,\partial_2q-\partial_2f\,\partial_1q$ and
+$e_v(x)=\exp(2\pi i v\cdot x)$. Consequently
+\begin{equation}\label{eq:temporal-coeff}
+ \widehat h_r(k)=-\pi\sum_{u+A^rv=k}
+       \det(u,A^rv)\widehat g(u)\widehat g(v).
+\end{equation}
+In particular $\widehat h_r(0)=0$.
+
+For a mean-zero trigonometric polynomial $f$, let
+\[
+ H_f(\mathcal O)=\sum_{k\in\mathcal O}\widehat f(k),\qquad
+ \mathcal V_A(f)=\sum_{\mathcal O}|H_f(\mathcal O)|^2,
+\]
+where $\mathcal O$ runs over oriented $A$-orbits, not orbits modulo sign.
+These are finite sums. Expanding the squared norm and using Fourier
+orthogonality gives
+\[
+ \lim_{n\to\infty}\frac1n\left\|\sum_{j=0}^{n-1}C^jf\right\|_2^2
+ =\sum_{q\in\mathbb Z}\langle C^qf,f\rangle
+ =\mathcal V_A(f).
+\]
+Only finitely many correlations are nonzero: a nonzero integer frequency
+cannot return to itself under a nonzero power of $A$.
+Moreover $\mathcal V_A(f)=0$ if and only if $f=(C-I)F$ for a trigonometric
+polynomial $F$, if and only if it is such a coboundary with $F\in L^2$.
+Indeed, on each orbit the Fourier equation is a difference equation on
+$\mathbb Z$ with finitely supported forcing. Square-summability forces both
+constant tails to vanish, hence the forcing has zero sum. Conversely a
+zero-sum finite forcing has a finite cumulative-sum solution. This also proves
+the criterion without invoking a regularity theorem for transfer functions.
+
+\subsection{A support lemma uniform in the temporal lag}
+\begin{lemma}[Isolated highest-lag frequency]\label{lem:temporal-support}
+For every finite nonempty $V=-V\subset\mathbb Z^2\setminus\{0\}$ and every
+$r\ge1$, there are $u,v\in V$ and $k=u+A^rv$ such that this ordered
+decomposition is unique, $D=\det(u,A^rv)\ne0$, and
+\[
+ k\notin\bigcup_{j=1}^{r-1}(V+A^jV),\qquad
+ A^qk\notin\bigcup_{j=1}^{r}(V+A^jV)\quad(q\in\mathbb Z\setminus\{0\}).
+\]
+\end{lemma}
+\begin{proof}
+Set $s=\operatorname{sign}(\operatorname{tr}A)$, $B=sA$,
+$t=|\operatorname{tr}A|\ge3$, and
+\[
+ \lambda=\frac{t+\sqrt{t^2-4}}2,\qquad \Lambda=\lambda^r.
+\]
+We use $\lambda-\lambda^{-1}>2$ and
+$\lambda^2-2\lambda-1=(t-2)\lambda-2>0$.
+Choose independent real eigen-covectors $\xi,\eta$ of $B$, with factors
+$\lambda,\lambda^{-1}$. Neither vanishes on a nonzero integer vector:
+$t^2-4$ lies strictly between $(t-1)^2$ and $t^2$, so the eigendirections
+are irrational. Set $X=\max_V|\xi|>0$ and $Y=\max_V|\eta|>0$.
+Choose $v_X,u_Y\in V$ attaining $\xi(v_X)=X$, $\eta(u_Y)=Y$, and put
+$a=\xi(u_Y)/X$, $b=\eta(v_X)/Y$. Choose $\sigma\in\{1,-1\}$ with
+$\sigma(a+b)\ge0$ and define
+\[
+ L(z)=\xi(z)/X+\Lambda\sigma\eta(z)/Y.
+\]
+The trial points $\sigma u_Y\in V$ and $B^rv_X\in B^rV$ show that the sum
+of the two separate maxima of $L$ is at least $2\Lambda+|a+b|$.
+Select the lexicographic maximizers of $(L,\xi)$ on $V$ and $B^rV$.
+The two forms are independent, so both maximizers are unique. Write them as
+$u$ and $B^rw$, put $v=s^rw$, and let $k=u+B^rw=u+A^rv$. Then
+\begin{equation}\label{eq:temporal-large-L}
+ L(k)\ge2\Lambda.
+\end{equation}
+An alternative ordered decomposition of $k$ would sum two lexicographically
+bounded coordinate pairs to the sum of their maxima. Both pairs must attain
+their separate maxima. This proves uniqueness, including ties in $L$.
+
+Every point of $V+A^jV$ satisfies
+$|\xi(z)|\le(1+\lambda^j)X$ and
+$|\eta(z)|\le(1+\lambda^{-j})Y$. In particular $k$ satisfies these bounds
+with $j=r$. If $A^qk\in V+A^jV$ for $q\ge1$, $j\le r$, the first bound
+implies $|\xi(k)|\le(1+\Lambda)X/\lambda$. Using $k$'s own second bound,
+\[
+ L(k)\le\Lambda+\Lambda/\lambda+1+1/\lambda<2\Lambda.
+\]
+The gap is minimized at $r=1$ and is then $\lambda-\lambda^{-1}-2>0$.
+For $q\le-1$ and $j\ge1$ the second bound instead implies
+$|\eta(k)|\le(1+\lambda^{-1})Y/\lambda$. Thus
+\[
+ L(k)\le1+\Lambda+\Lambda/\lambda+\Lambda/\lambda^2<2\Lambda.
+\]
+Here too the gap is minimized at $r=1$ and equals
+$\lambda-\lambda^{-1}-2$. This excludes all nonzero iterates, without a
+finite orbit cutoff and for either sign of the trace.
+For $1\le j<r$, membership of $k$ itself would give
+\[
+ L(k)\le1+\Lambda+\lambda^j+\lambda^{r-j}
+       \le1+\Lambda+\lambda+\lambda^{r-1}<2\Lambda.
+\]
+The middle inequality follows from
+$(\lambda^{j-1}-1)(\lambda^{r-j-1}-1)\ge0$.
+The last gap is at least $\lambda^2-2\lambda-1>0$ since $r\ge2$.
+
+It remains to exclude $D=0$. If $u=cB^rw$, put $R=|c|$,
+$a_0=|\xi(w)|/X$, $b_0=|\eta(w)|/Y$.
+Membership of $u,w$ in $V$ gives $a_0,b_0\le1$,
+$R\Lambda a_0\le1$, $R\Lambda^{-1}b_0\le1$. For $R>0$,
+\[
+ |L(k)|\le(1+R)\{\min(\Lambda,R^{-1})+\min(1,\Lambda/R)\}
+          \le\Lambda+2+\Lambda^{-1}<2\Lambda.
+\]
+To verify the middle inequality, divide into $R\le\Lambda^{-1}$,
+$\Lambda^{-1}\le R\le\Lambda$, and $R\ge\Lambda$.
+The expressions are respectively $(1+R)(\Lambda+1)$,
+$2+R+R^{-1}$, and $(1+R^{-1})(\Lambda+1)$, maximized at the indicated
+boundary points. For $R=0$ the bound $\Lambda+1$ suffices.
+All these conclusions contradict \eqref{eq:temporal-large-L}.
+\end{proof}
+
+\subsection{Independence and a covariance determinant bound}
+\begin{theorem}\label{thm:temporal-independent}
+The classes $[h_1],[h_2],\ldots$ are linearly independent modulo $L^2$
+$C$-coboundaries. If $a_m\ne0$ and $m$ is the highest lag in a finite real
+combination, the witness in Lemma~\ref{lem:temporal-support} gives
+\begin{equation}\label{eq:temporal-lower}
+ \mathcal V_A\left(\sum_{r=1}^m a_rh_r\right)
+ \ge2\pi^2a_m^2D_m^2
+       |\widehat g(u_m)\widehat g(v_m)|^2>0.
+\end{equation}
+\end{theorem}
+\begin{proof}
+On the orbit of $k_m$ the entire combination has just one coefficient,
+$-\pi a_mD_m\widehat g(u_m)\widehat g(v_m)$, by the support lemma and
+\eqref{eq:temporal-coeff}. It is nonzero. The orbit of $-k_m$ is distinct,
+since $A^qk_m=-k_m$ would require an eigenvalue $-1$ of $A^q$, impossible
+for $q\ne0$, while $q=0$ would force $k_m=0$. Reality supplies the conjugate
+coefficient on that second orbit, proving the factor two and the theorem.
+\end{proof}
+
+Let $G_m$ be the covariance matrix
+$(G_m)_{ij}=\sum_{\mathcal O}H_{h_i}(\mathcal O)
+\overline{H_{h_j}(\mathcal O)}$. It is real positive definite. More precisely,
+\begin{equation}\label{eq:temporal-det}
+ \det G_m\ge(2\pi^2)^m
+       \prod_{r=1}^m D_r^2|\widehat g(u_r)\widehat g(v_r)|^2.
+\end{equation}
+Indeed the chosen orbits for distinct lags, including their negatives, are
+pairwise distinct. Their orbit-sum rows have zeros in columns $j<r$ and
+nonzero diagonal entries $z_r=-\pi D_r\widehat g(u_r)\widehat g(v_r)$.
+The Cauchy--Binet formula includes $2^m$ triangular minors obtained by choosing
+one member of each conjugate pair; each has squared modulus
+$\prod_r|z_r|^2$. All other terms are nonnegative.
+
+\subsection{A complete classification of quadratic temporal cancellations}
+\begin{theorem}\label{thm:temporal-cancellation}
+Given real $c_{ij}$, $0\le i<j\le m$, define
+\[
+ H=\frac1{4\pi}\sum_{0\le i<j\le m}c_{ij}\{C^ig,C^jg\},
+ \qquad a_r=\sum_{i=0}^{m-r}c_{i,i+r}.
+\]
+Then $H$ is an $L^2$ coboundary if and only if $a_1=\cdots=a_m=0$.
+The coefficient-to-cohomology map has rank $m$ and kernel dimension
+$m(m-1)/2$.
+\end{theorem}
+\begin{proof}
+Since $\det S=1$, the Poisson bracket commutes with $C$, and
+$\{C^ig,C^{i+r}g\}/(4\pi)=C^ih_r$. Therefore
+\[
+ H=\sum_{r=1}^m a_rh_r+(C-I)F,\qquad
+ F=\sum_{r=1}^m\sum_{i=0}^{m-r}c_{i,i+r}
+                      \sum_{\ell=0}^{i-1}C^\ell h_r.
+\]
+An empty sum is zero. The independence theorem proves necessity; this formula
+proves sufficiency with a polynomial transfer. The map $c\mapsto a$ is
+surjective onto $\mathbb R^m$, which proves the rank and nullity. A kernel
+basis is given by $E_{i,i+r}-E_{0,r}$, $1\le i\le m-r$.
+\end{proof}
+
+\begin{corollary}[Finite temporal filters]\label{cor:temporal-filters}
+For real polynomials $P,Q$, with $P\ne0$,
+\[
+ \begin{gathered}
+ \{P(C)g,Q(C)g\}/(4\pi)\text{ is a coboundary}\\
+ \Longleftrightarrow P(z^{-1})Q(z)=P(z)Q(z^{-1})\\
+ \Longleftrightarrow Q/P\in\mathbb R(z+z^{-1}).
+ \end{gathered}
+\]
+\end{corollary}
+\begin{proof}
+Extend coefficient lists by zeros. The coefficient of $z^r$ in the difference
+of the two Laurent polynomials is
+$\sum_i(p_iq_{i+r}-q_ip_{i+r})$, exactly the diagonal sum in the preceding
+theorem. The constant coefficient is zero and negative coefficients are the
+negatives of the positive ones. For the last equivalence put $w=z+z^{-1}$.
+The extension $\mathbb R(z)/\mathbb R(w)$ has basis $1,z$, and its involution
+sends $z$ to $w-z$. An invariant element $a(w)+zb(w)$ must have $b=0$.
+\end{proof}
+
+The criterion permits nonzero brackets with zero variance: for $P=z$ and
+$Q=1+z^2$ it gives
+\[
+ \{Cg,g+C^2g\}/(4\pi)=(C-I)h_1.
+\]
+Thus nonvanishing of a Poisson bracket must not be confused with a nonzero
+cohomology class.
+
+\begin{corollary}[Autocorrelation determines the second-order class]
+Write $h(f)=\{f,Cf\}/(4\pi)$. For two real finite filters,
+\[
+ [h(P(C)g)]=[h(Q(C)g)]
+ \quad\Longleftrightarrow\quad
+ P(z)P(z^{-1})=Q(z)Q(z^{-1}).
+\]
+\end{corollary}
+\begin{proof}
+Let $b_j(P)=\sum_i p_ip_{i+j}$ for $j\ge0$. Applying the cancellation
+formula to $P$ and $zP$ gives the coefficient
+$b_{r-1}(P)-b_{r+1}(P)$ at $[h_r]$. Equality of classes therefore makes the
+difference of the two autocorrelation sequences constant separately on each
+parity. Both sequences vanish eventually, so their difference is zero.
+The converse follows from the same formula.
+\end{proof}
+For example $P=1+5z+6z^2$ and $Q=2+7z+3z^2$ are not related by a sign,
+shift or reversal, but both have autocorrelations $(62,35,6)$ and give the
+same class $56[h_1]+35[h_2]+6[h_3]$. This is equality of a second-order
+class, not equality of full quantum spectra or of all perturbative orders.
+
+\subsection{Finite bandwidth and loss of coercivity}
+The case $r=1$ proves $\Gamma_A(g):=\mathcal V_A(h_1)>0$ without a
+bandwidth or phase restriction. If $M=|V|$ and
+$|\widehat g(v)|\ge\alpha\|g\|_2/\sqrt M$ on $V$, then the integer
+$D_1\ne0$ in \eqref{eq:temporal-lower} yields
+\[
+ \Gamma_A(g)\ge2\pi^2\alpha^4M^{-2}\|g\|_2^4.
+\]
+The amplitude hypothesis cannot be dropped. Let $\mathcal P_R$ be the real
+mean-zero Fourier polynomials of max-norm bandwidth at most $R\ge1$ and
+$c_R(A)=\inf_{0\ne g\in\mathcal P_R}\Gamma_A(g)/\|g\|_2^4$.
+Compactness of the finite-dimensional unit sphere gives $c_R(A)>0$.
+Nevertheless, for every $s>1$ there are constants depending on $A,s$ with
+\begin{equation}\label{eq:temporal-gevrey}
+ 0<c_R(A)\le C_s\exp(-c_sR^{1/s}).
+\end{equation}
+To see this, choose a small box $U$ around a point outside $Sx=\pm x$ so
+that $U\cup(-U)$ is disjoint from its inverse image under $S$.
+Take a nonzero real even Gevrey-$s$ bump supported there, and subtract its
+mean to obtain $b$. Then $\{b,Cb\}=0$, since the derivative supports are
+disjoint. Such bumps are obtained from
+$\exp(-(1-x^2)^{-1/(s-1)})$ on $(-1,1)$, extended by zero, by products,
+translation and rescaling. Their derivatives obey $C L^n(n!)^s$.
+For completeness, this derivative estimate follows from Cauchy's formula on
+a complex disk of radius proportional to the distance $d$ to the endpoint:
+the bound is $n! (c d)^{-n}\exp(-c'd^{-1/(s-1)})$. Maximizing in $d$
+gives $C L^n(n!)^s$; all derivatives tend to zero at the endpoint.
+Integration by parts and optimization in $n$ imply
+$|\widehat b(v)|\le C\exp(-c|v|^{1/s})$.
+For $b_R=P_Rb$ and $M_1(f)=\sum_v|v||\widehat f(v)|$, this gives
+$M_1(b-b_R)\le C\exp(-cR^{1/s})$ after absorbing polynomial factors.
+The determinant bound in the Fourier bracket implies
+\[
+ \left\|\widehat{\{b_R,Cb_R\}/(4\pi)}\right\|_1
+ \le\pi\|A\|_{\mathrm{op}}
+       \{M_1(b_R)+M_1(b)\}M_1(b_R-b).
+\]
+Orbit sums satisfy $\mathcal V_A(f)\le\|\widehat f\|_1^2$.
+Also $\|b_R\|_2$ stays bounded below. This proves
+\eqref{eq:temporal-gevrey}, using strict positivity for every nonzero $b_R$.
+No nondegeneracy theorem for arbitrary infinite analytic Fourier support is
+inferred from these finite-band statements.
+
+\subsection{Arbitrarily high-order collective soft modes}
+The following result distinguishes finite-dimensional nondegeneracy from
+coercivity uniform in the number of temporal lags.
+Let $t=|\operatorname{tr}A|$, $\delta=\sqrt{t^2-4}$,
+$\lambda=(t+\delta)/2$, and $g_0=a_0e_v+\overline{a_0}e_{-v}$,
+where $v\ne0$ is integral and $a_0\ne0$.
+
+\begin{lemma}[Exact single-mode orthogonality]\label{lem:single-lag-orth}
+For $D_j=\det(v,A^jv)$, the lag classes generated by $g_0$ have covariance
+\[
+ \langle[h_j(g_0)],[h_k(g_0)]\rangle
+       =4\pi^2|a_0|^4D_j^2\,\mathbf1_{j=k},\qquad
+ D_j^2=D_1^2\frac{(\lambda^j-\lambda^{-j})^2}{\delta^2}.
+\]
+\end{lemma}
+\begin{proof}
+The four Fourier frequencies of $h_j(g_0)$ are
+$\pm(v+A^jv)$ and $\pm(v-A^jv)$; each coefficient has modulus
+$\pi|D_j||a_0|^2$. The invariant $q_A(w)=\det(w,Aw)$ satisfies
+\[
+ q_A(v\pm A^jv)=q_A(v)(2\pm\operatorname{tr}A^j).
+\]
+The numbers $|\operatorname{tr}A^j|=\lambda^j+\lambda^{-j}$ strictly
+increase and exceed two. These invariants distinguish the two types and all
+different positive lags, including negative trace. Opposite frequencies
+cannot share an oriented orbit. The covariance formula follows.
+Cayley--Hamilton gives $D_{j+1}=\operatorname{tr}(A)D_j-D_{j-1}$ with
+$D_0=0$, which proves the squared closed form.
+\end{proof}
+
+\begin{theorem}[Soft modes of every even differential order]
+\label{thm:temporal-soft}
+Fix an integer $q\ge1$ and set
+\[
+ P_q(z)=(z^2-tz+1)^q,\qquad g_q=P_q(C)g_0,\qquad d=2q.
+\]
+For any fixed $R\ge d$, consider the $n$ cohomology vectors
+$\lambda^{-r}[h_r(g_q)]$, $r=R+1,\ldots,R+n$, and their covariance matrix
+$\widetilde G_{R,n}$. There are positive constants, independent of $n$, such
+that
+\[
+ c\,n^{-4q}\le\lambda_{\min}(\widetilde G_{R,n})\le C\,n^{-4q}.
+\]
+Thus the finite matrices are all positive definite but have collective
+almost-null directions of arbitrarily high algebraic order.
+\end{theorem}
+\begin{proof}
+Write $P_q(z)=\sum_{i=0}^dp_iz^i$ and
+$b_k=\sum_i p_ip_{i+k}$, with $b_{-k}=b_k$ and $b_k=0$ outside $[-d,d]$.
+For $r>d$, symplectic transport and reduction modulo coboundaries give the
+exact identity
+\[
+ [h_r(g_q)]=\sum_{k=-d}^d b_k[h_{r+k}(g_0)].
+\]
+Let $w_k=b_k\lambda^k$ and
+$C_0=4\pi^2|a_0|^4D_1^2/\delta^2$. By the preceding lemma, for a real
+coefficient vector $x=(x_r)$ the squared norm of its combination is
+\[
+ x^{\mathsf T}\widetilde G_{R,n}x
+ =C_0\sum_j(1-\lambda^{-2j})^2
+            \left|\sum_{r=R+1}^{R+n}x_rw_{j-r}\right|^2.
+\]
+All relevant $j$ satisfy $j\ge R+1-d\ge1$. Hence, in the order of quadratic
+forms,
+\begin{equation}\label{eq:soft-sandwich}
+ C_0(1-\lambda^{-2(R+1-d)})^2 T_n(F_q)
+ \ \le\ \widetilde G_{R,n}\ \le\ C_0T_n(F_q),
+\end{equation}
+where $T_n(F_q)$ is the Toeplitz matrix with symbol
+$F_q(\theta)=|\sum_kw_ke^{ik\theta}|^2$ and Haar normalization
+$d\theta/(2\pi)$.
+The autocorrelation identity gives
+\[
+ \sum_kw_ke^{ik\theta}=P_q(z)P_q(z^{-1}),\qquad z=\lambda e^{i\theta}.
+\]
+Since $(z^2-tz+1)(z^{-2}-tz^{-1}+1)=(z+z^{-1}-t)^2$, putting
+$u(\theta)=2-2\cos\theta$ yields the exact factorization
+\begin{equation}\label{eq:soft-symbol}
+ \boxed{F_q(\theta)=u(\theta)^{2q}(\delta^2+u(\theta))^{2q}.}
+\end{equation}
+Indeed $|z+z^{-1}-t|^2=t^2(\cos\theta-1)^2+\delta^2\sin^2\theta
+=u(\delta^2+u)$.
+
+It remains to bound the smallest eigenvalue. Since $0\le u\le4$, the factor
+$(\delta^2+u)^{2q}$ is bounded above and below by positive constants.
+For $p(\theta)=\sum_{j=1}^nx_je^{ij\theta}$ with $\|x\|_2=1$,
+Jensen's inequality and the Dirichlet tridiagonal Laplacian give
+\[
+ \int u^{2q}|p|^2\frac{d\theta}{2\pi}
+ \ge\left(\int u|p|^2\frac{d\theta}{2\pi}\right)^{2q}
+ \ge\left(4\sin^2\frac{\pi}{2(n+1)}\right)^{2q}.
+\]
+For an upper bound choose $x_j=\phi(j/(n+1))$, where
+$\phi(x)=x^{2q}(1-x)^{2q}$ on $[0,1]$ and is zero elsewhere.
+This extension has bounded weak derivative of order $2q$.
+Its finite differences of order $2q$ are bounded by $C_q(n+1)^{-2q}$,
+including across the endpoints. Parseval identifies the last integral,
+before normalization, with the sum of squares of these differences.
+That sum is at most $C_q n^{1-4q}$, while $\sum_j|x_j|^2\ge c_qn$
+for all sufficiently large $n$. This proves the matching $O(n^{-4q})$
+Rayleigh bound; finitely many smaller $n$ are absorbed in the constants.
+Combining with \eqref{eq:soft-sandwich} proves the theorem for the actual
+finite-lag covariance matrices, not only for a limiting Toeplitz model.
+\end{proof}
+
+The normalization $\lambda^{-r}$ removes the natural exponential growth of
+individual brackets. The theorem does not assert an exact null vector at any
+finite $n$, a random-matrix law, or a uniform-in-time quantum correspondence.
+It identifies a quantified obstruction to replacing finite-lag positivity by
+a lag-uniform lower bound.
+
+\subsection{A finite quantum consequence and its time boundary}
+Use the physical Weyl lift
+\[
+ (Q_N(a,b)u)(x)=e^{2\pi ia(x-b/2)/N}u(x-b\bmod N),\qquad
+ Q_N(v)Q_N(w)=e^{\pi i\det(v,w)/N}Q_N(v+w).
+\]
+Write $\operatorname{Op}_N(f)=\sum_v\widehat f(v)Q_N(v)$ and, for real
+$a_r$ with highest nonzero index $m$, form the Hermitian operator
+\[
+ T_{n,N}=\sum_{\ell=0}^{n-1}\sum_{r=1}^m a_r\frac{iN}{2}
+ [\operatorname{Op}_N(C^\ell g),\operatorname{Op}_N(C^{\ell+r}g)].
+\]
+These are defined as transported commutators. Identifying them with time
+evolution by a quantum cat map additionally requires exact Egorov in the
+chosen boundary sector; it is not assumed for every $A$ in a fixed sector.
+
+\begin{proposition}\label{prop:temporal-quantum}
+Let $R=\max_{v\in V}\|v\|_\infty$, $a=\|A\|_\infty$. If
+\[
+                 2R a^{n-1}(1+a^m)<N,
+\]
+then the witness of Lemma~\ref{lem:temporal-support} at lag $m$ gives
+\[
+ \frac{\operatorname{Tr}(T_{n,N}^2)}{nN}
+ \ge2a_m^2N^2\sin^2(\pi D_m/N)
+                   |\widehat g(u_m)\widehat g(v_m)|^2.
+\]
+It is strictly positive when $N$ does not divide $D_m$.
+\end{proposition}
+\begin{proof}
+All occurring frequencies lie in the open max-norm box of radius $N/2$,
+so distinct integer frequencies remain distinct modulo $N$ and their Weyl
+operators are orthogonal for the normalized Hilbert--Schmidt inner product.
+The support lemma isolates the $2n$ different frequencies
+$\pm A^\ell k_m$, $0\le\ell<n$, in the entire transported sum.
+Their coefficient moduli are
+$|a_m|N|\sin(\pi D_m/N)|\,|\widehat g(u_m)\widehat g(v_m)|$,
+since determinants are preserved by $A$. Summing their squared moduli proves
+the bound. Hermiticity identifies the squared Hilbert--Schmidt norm with the
+trace in the statement.
+\end{proof}
+For fixed $A,R,m$ the sufficient no-alias condition allows only
+$n=O(\log N)$, not the Heisenberg scale $n\asymp N$. This is an observable
+variance bound, not a joint-trace estimate for eigenphase correlations.
+The distinction is essential: at $N=3$, $A=\left(\begin{smallmatrix}4&1\\3&1\end{smallmatrix}\right)$
+and $g=e_{(1,0)}+e_{(-1,0)}$, the classical determinant is $3$, but
+$Q_3(A(1,0))=Q_3(1,0)$ and the first quantum commutator vanishes.
+The no-alias condition fails in this negative control.
