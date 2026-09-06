@@ -1,0 +1,28 @@
+{
+  "schema": "wow-consolidation-map-v2",
+  "canonical_entry_point": "manuscript/WoW_unified.tex",
+  "policy": "main contains one maintained publication surface; superseded standalone article copies remain in Git history only",
+  "sections": {
+    "arithmetic_core": ["manuscript/unified_sections/arithmetic_core_part1.tex", "manuscript/unified_sections/arithmetic_core_part2.tex", "manuscript/unified_sections/arithmetic_core_part3.tex", "manuscript/unified_sections/arithmetic_core_part4.tex", "manuscript/unified_sections/arithmetic_core_part5.tex"],
+    "row_frontier": ["manuscript/unified_sections/row_frontier.tex"],
+    "magnetic": ["manuscript/unified_sections/magnetic.tex"],
+    "floquet": ["manuscript/unified_sections/floquet_part1.tex", "manuscript/unified_sections/floquet_part2.tex", "manuscript/unified_sections/floquet_part3.tex", "manuscript/unified_sections/floquet_part4.tex"],
+    "coboundary": ["manuscript/unified_sections/coboundary_part1.tex", "manuscript/unified_sections/coboundary_part2.tex", "manuscript/unified_sections/coboundary_part3.tex"],
+    "fixed_strength_locality": ["manuscript/unified_sections/locality_part1.tex", "manuscript/unified_sections/locality_part2.tex", "manuscript/unified_sections/locality_part3.tex", "manuscript/unified_sections/locality_part4.tex", "manuscript/unified_sections/locality_part5.tex", "manuscript/unified_sections/locality_part6.tex", "manuscript/unified_sections/locality_part7.tex"],
+    "nondegeneracy": ["manuscript/unified_sections/nondegeneracy_part1.tex", "manuscript/unified_sections/nondegeneracy_part2.tex", "manuscript/unified_sections/nondegeneracy_part3.tex", "manuscript/unified_sections/nondegeneracy_part4.tex", "manuscript/unified_sections/nondegeneracy_part5.tex", "manuscript/unified_sections/nondegeneracy_part6.tex", "manuscript/unified_sections/nondegeneracy_part7.tex", "manuscript/unified_sections/nondegeneracy_part8.tex"],
+    "return_words": ["manuscript/unified_sections/return_words.tex"]
+  },
+  "historical_inputs_removed_from_active_tree": [
+    "arithmetic_cat_map_moments",
+    "cyclotomic_row_support_frontier",
+    "magnetic_quotient_semicircle",
+    "pell_coboundary_resonance",
+    "pell_floquet_normal_form"
+  ],
+  "delivery": {
+    "filename": "WoW_consolidated_research.zip",
+    "files": 204,
+    "bytes": 2605999,
+    "sha256": "8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099"
+  }
+}

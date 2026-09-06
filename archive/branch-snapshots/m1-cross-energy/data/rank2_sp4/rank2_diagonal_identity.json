@@ -1,7 +1,0 @@
-{
- "run": "105.3",
- "theorem": "rank-2 diagonal-sum identity [PROVEN, exact]",
- "statement": "sum_chi |<chi|U_D T(n)|chi>|^2 = 1 for EVERY n in (Z/N)^4, verified to 1.000000 spread at N=53.  Proof: U_D T(n) has at most one nonzero diagonal entry \u2014 (u1-1)x1 = a, (u2-1)x2 = b have unique solutions for u_i != 1, and the entry's |phase|^2 = 1.  This is the rank-2 analogue of the cat-map second-moment q-independence (Lemma 91.1), but collapsed to 1 because the Sp4 diagonal has a unique fixed character.",
- "boundary": "the nontrivial G0 content needs the 2-parameter level-set phase (the Sp4 analogue of the cat-map q-deformation) \u2014 the kernel <chi|U_D T(n) w^Q|chi> with a quadratic level-set phase Q; queued as M4d",
- "status": "[PROVEN] exact rank-2 identity"
-}

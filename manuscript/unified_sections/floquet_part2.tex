@@ -1,0 +1,76 @@
+\] for sufficiently large K at fixed m. This is impossible, so \(P(\lambda)=0\). For \(m=4\), a sufficient condition is \(\lambda^{K/4}(1-\lambda^{-K})^2>64\). It holds for \(K\geq11\): \(\lambda>5\), \(5^{11/4}>80\), and \(1-5^{-11}>9/10\) give a strict lower bound of 64.8. A nonzero polynomial of coefficient \(\ell^1\)-norm at most four cannot vanish at \(\lambda>3\), since its leading term strictly dominates the sum of all lower terms. Thus in this case the polynomial was zero. End of proof.
+
+It follows that the \(2K(K-1)\) vectors \[
+ \epsilon v_t+\delta v_s,\qquad 0\leq t<s<K,\quad
+ \epsilon,\delta\in\{-1,1\},                                  \tag{FN.11}
+\] are nonzero and distinct for \(K\geq11\). Any collision would give a balanced four-letter relation, forcing the original unordered signed pair. The matrices \(W(v)\) form an orthonormal basis for the full normalized Hilbert--Schmidt inner product, also for composite odd \(N\), because \(\operatorname{Tr}W(v)=N\mathbf1_{v=0}\).
+
+Each of the four Weyl coefficients in \([B_t,B_s]\) has modulus \(a_{s-t}\). Different unordered time pairs have disjoint support by (FN.11). Since \(c_t-c_s=(s-t)/K\), exact orthogonality gives \[
+ \|[G,\overline B]\|_{2,N}^2
+ =\frac4{K^4}\sum_{j=1}^{K-1}(K-j)j^2a_j^2
+ =\frac2{K^3}\sum_{j=1}^{K-1}j(K-j)a_j^2
+ \leq\frac9K.                                                  \tag{FN.12}
+\] Here \(\|A\|_{2,N}^2=\operatorname{Tr}(A^*A)/N\). The middle identity uses \(a_{K-j}=a_j\); the last uses \(j(K-j)\leq K^2/4\), \(a_j^2\leq2a_j\), and (FN.7).
+
+The operator norm needs no orthogonality. Four Weyl coefficients, (FN.7), and (FN.8) give \[
+ \|[G,B]\|_{\rm op}<\frac{26}{K},\qquad
+ \|[B,\overline B]\|_{\rm op}<\frac{36}{K}.                     \tag{FN.13}
+\] For a parity-preserving A, positivity of A*A implies \[
+ \|A\|_{2,-}\leq\sqrt{\frac{2N}{N-1}}\,\|A\|_{2,N}.             \tag{FN.14}
+\] No orthogonality of Weyl operators restricted to the odd subspace is assumed.
+
+\subsection{A finite normal form without a small generator}\label{floquet:a-finite-normal-form-without-a-small-generator}
+
+For finite Hermitian A,D, real \(\varepsilon\), and any unitarily invariant norm, \[
+ \|e^{i\varepsilon A}e^{i\varepsilon D}
+           -e^{i\varepsilon(A+D)}\|
+ \leq\frac{\varepsilon^2}{2}\|[A,D]\|.                          \tag{FN.15}
+\] This is the usual two-factor commutator estimate, not a new general product formula. Differentiate \(e^{i(\varepsilon-t)(A+D)}e^{itA}e^{itD}\). After factoring out unitaries, the integrand is \(e^{itA}De^{-itA}-D\). Integrate its derivative once more; the triangular integration domain has area \(\varepsilon^2/2\). Negative \(\varepsilon\) follows by replacing \(A,D\) with \(-A,-D\). In particular, \(|\varepsilon|\|A\|\) need not be small.
+
+Set \(V_\varepsilon=e^{-i\varepsilon G}\). By (FN.4), \[
+ V_\varepsilon U_\varepsilon V_\varepsilon^*
+ =e^{-i\varepsilon G}e^{i\varepsilon B}
+       e^{i\varepsilon C(G)}U_0.
+\] Apply (FN.15) first to \(-G,B\), then to \(B-G,C(G)\). Their total sum is \(\bar B\), and \([B-G,C(G)]=[B-G,\bar B]\). Equations (FN.12)--(FN.14) give \[
+ \begin{split}
+ \|V_\varepsilon U_\varepsilon V_\varepsilon^*
+       -e^{i\varepsilon\overline B}U_0\|_{2,-}
+ &\leq\frac{\varepsilon^2}{2}
+   \left(\frac{62}{K}+3\sqrt{\frac{2N}{(N-1)K}}\right)\\
+ &\leq\frac{12\varepsilon^2}{\sqrt K},\qquad K\geq11.
+ \end{split}\tag{FN.16}
+\] For the last step it even suffices to use \(N\geq7\) and \(31/\sqrt{11}+(3/2)\sqrt{7/3}<12\). This proves (FN.D) for all real \(\varepsilon\). G may have operator norm of order K. Expanding its exponential in powers of \(\varepsilon\) and requiring \(\varepsilon K\) small would incorrectly discard the critical regime. Estimate (FN.15) avoids that requirement.
+
+Since \(\bar B\) commutes with \(U_{0}\) and \(U_0^K=I\), telescoping unitary powers in the same norm yields, for any integer m, \[
+ \left|\tau_-(U_\varepsilon^{mK})
+       -\tau_-(e^{im\varepsilon K\overline B})\right|
+ \leq12|m|\varepsilon^2\sqrt K,\qquad
+ \tau_-(A)=d_N^{-1}\operatorname{Tr}_{-}A.                      \tag{FN.17}
+\] For negative m use adjoints. Cauchy--Schwarz for the normalized trace justifies the passage from the norm to traces.
+
+\subsection{A self-contained global law for the averaged observable}\label{floquet:a-self-contained-global-law-for-the-averaged-observable}
+
+The remaining input is established here directly on the whole odd subspace; no unproved claim about the old arithmetic-moment corpus is imported. Define \[
+ X_K=\sqrt{K/2}\,\overline B=(2K)^{-1/2}\sum_{j=0}^{K-1}B_j.
+\]
+
+\textbf{Lemma 2 (Gaussian average).} For each fixed integer \(r\geq1\), \[
+ \tau_-(X_K^{2r})=(2r-1)!!+O_r(K^{-1})+O_r(K^r/N),               \tag{FN.18}
+\] and for each fixed odd m, eventually \[
+ |\tau_-(X_K^m)|\leq (2K)^{m/2}/(N-1).                         \tag{FN.19}
+\] The empirical measures of \(X_{K}\) converge weakly and in quadratic Wasserstein distance to the standard normal law.
+
+\textbf{Proof.} In the full Weyl representation \(\operatorname{Tr}(RW(v))=1\) for every v: the unique fixed point \(x=-b/2\) of RW(a,b) contributes phase 1. Thus the normalized odd trace of a word \(e_{N}\)(\(\phi\))W(v) is \[
+ e_N(\phi)\frac{N\mathbf1_{v=0}-1}{N-1}.                       \tag{FN.20}
+\] Expanding \(X_K^m\), the noncentral part is bounded by \((2K)^{m/2}/(N-1)\). The central part is the weighted count of the reciprocal relations (FN.9), normalized by \([N/(N-1)](2K)^{-m/2}\).
+
+Here is the count including structurally forced nonbalanced relations. For a polynomial of coefficient \(\ell^1\)-norm at most m vanishing at \(\lambda\), a gap \(d>2\log_\lambda m\) separates two independently vanishing pieces. Write \(P=P_{\rm low}+Z^{a+d}P_{\rm high}\), with \(\deg P_{\rm low}\leq a\) and nonnegative exponents in \(P_{\rm high}\). If \(P_{\rm high}(\lambda)\ne0\), its algebraic-integer norm is a nonzero integer. Since \(|P_{\rm high}(\lambda^{-1})|\leq m\), we have \(|P_{\rm high}(\lambda)|\geq1/m\). Cancellation with \(|P_{\rm low}(\lambda)|\leq m\lambda^a\) would force \(\lambda^d\leq m^2\), a contradiction.
+
+Repeatedly splitting gives components with span bounded in terms of m, for example by \(D_m=(m-1)(\lceil2\log_\lambda m\rceil+1)\). Every nonzero component has at least three signed occurrences: two distinct positive powers cannot cancel with signs of magnitude one. Restore previously cancelled opposite pairs as two-occurrence components. A nonbalanced 2r-letter word therefore has at most r-1 components. For each of finitely many partitions of the 2r positions, signs and bounded relative offsets, each component has at most K translations on the cyclic time set. There are only \(O_r(K^{r-1})\) such words. There is no additional factor K from choosing a cut: the count is over the component translations themselves, and the largest-gap cut was used only to prove bounded width. Their normalized contribution is \(O_r(1/K)\).
+
+For odd m, a lifted P is an integer multiple of \(Z^2-6Z+1\), so \(P(1)\) is divisible by -4. But \(P(1)\) is the sum of an odd number of signs. Thus no central word exists once Lemma 1 applies, proving (FN.19).
+
+A balanced \(2r\)-word pairs identical time labels with opposite signs. Assignments with repeated pair labels cause only \(O_r(K^{r-1})\) overcount. Each matching of the \(2r\) positions has \(K^r\) pair-label choices and \(2^r\) orientations. Its Weyl phase is a product, over crossing pairs, of factors \(e_N(q(h^a-h^{-a}))\) or their conjugates. Summing the signed symplectic products in word order shows that disjoint or nested pairs cancel, while a crossing pair retains one full symplectic product.
+
+Each crossing difference of independent uniform pair labels is uniform modulo \(K\). Independence of the different crossing factors is neither true in general nor needed. The inequality \(|\prod_l u_l-1|\leq\sum_l|u_l-1|\), for \(|u_l|=1\), and (FN.7) give average phase error at most nine times the number of crossings divided by \(K\). Hence each matching contributes \(1+O_r(1/K)\) after normalization. There are \((2r-1)!!\) matchings. Together with the nonbalanced count and (FN.20), this proves (FN.18).
+

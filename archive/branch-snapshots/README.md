@@ -1,10 +1,8 @@
-# Historical branch snapshots
+# Historical branch provenance
 
-These directories are immutable Git-tree snapshots of research branches that diverged from the final consolidation line. They are preserved for provenance and loss prevention only.
+This directory is intentionally **metadata-only**. Historical research branch source trees are not vendored into `main`: doing so would reintroduce superseded code (including the retired Julia stack), duplicate current sources, and make a normal checkout ambiguous.
 
-The current top-level `main` tree is authoritative. Material under this directory may contain superseded notation, stale build configuration, exploratory claims, or results that were later corrected or re-expressed. Do not treat a snapshot as a current claim merely because it is archived here.
-
-Snapshots preserved in the 2026-09-06 final-main audit:
+The branch refs and Git history remain the byte-authoritative recovery mechanism. The table below records the heads and source-tree SHAs examined during the 2026-09-06 consolidation.
 
 | snapshot | source branch | head commit | source tree |
 |---|---|---|---|
@@ -20,4 +18,4 @@ Snapshots preserved in the 2026-09-06 final-main audit:
 | projective-bezout-row-20260904 | research/projective-bezout-row-20260904 | 7440eda59d866fca50483a54f3b7f362cb56bc48 | ad25780c2d1d3e3e9c0aa4550762927c5570b622 |
 | smooth-cohomology-20260905 | research/smooth-cohomology-20260905 | bda36a531ba79a5df1159f48771994824c700f74 | 78d5f5e8a9b4ba144516842c69d231fbc2e16216 |
 
-Branches that were verified to be strict ancestors of `main` were not duplicated here: their contents are already retained by normal Git history.
+The current top-level `main` tree is authoritative. A historical branch/tree may contain exploratory or superseded claims and must not be treated as current merely because its SHA is recorded here.

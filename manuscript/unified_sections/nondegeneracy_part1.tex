@@ -1,0 +1,29 @@
+\section{Arbitrary-phase nondegeneracy and a local Hessian obstruction}\label{sec:nondegeneracy}
+We study the second-order cohomological variance \(\Gamma_A(g)=\sigma_A^2(\{g,g\circ A^{\mathsf T}\}/(4\pi))\) for hyperbolic two-torus automorphisms. For the fixed Pell matrix we give a finite, independently replayable proof that it is positive for every nonconstant real trigonometric polynomial of frequency radius at most eight. All 288 real parameters are arbitrary: evenness and Fourier-phase alignment are not assumed. An exact finite quantum variance identity connects this certificate to a period-averaged observable, with an explicit non-aliasing hypothesis. A separate analytic theorem detects nonzero variance from the two hyperbolic curvatures at a fixed critical point. It implies nondegeneracy, without a bandwidth restriction, on the cone of even symbols with one-sign cosine coefficients, for every hyperbolic integral determinant-one matrix.
+
+These are project proofs and exact finite certificates, not a claim of world priority or positive BGS universality. The Fourier-orbit formula for asymptotic variance is established theory; we prove the specialized identities needed here. The certificate is stronger than sampling real coefficients but is not a Lean formalization. The unbounded-radius mixed-sign problem remains unresolved by these arguments. No uniform long-time quantum comparison is inferred from a positive classical variance alone.
+
+\subsection{Normalization and the cohomological question}\label{nondegeneracy:normalization-and-the-cohomological-question}
+
+Let \(A\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic, \(S=A^{\mathsf T}\), and \(\mathcal C_A f=f\circ S\). On the unit torus put \[
+ e_v(x)=e^{2\pi i v\cdot x},\qquad b_v=e_v+e_{-v},\qquad
+ \{f,h\}=f_{x_1}h_{x_2}-f_{x_2}h_{x_1}.
+\] For a real smooth mean-zero function \(h\), define \[
+ \sigma_A^2(h)=\sum_{\mathcal O}
+       \left|\sum_{v\in\mathcal O}\widehat h(v)\right|^2,
+ \qquad
+ \Gamma_A(g)=\sigma_A^2\!\left(\frac{\{g,\mathcal C_Ag\}}{4\pi}\right),
+ \tag{ND.1}
+\] where \(\mathcal O\) ranges over \textbf{oriented} \(A\)-orbits in \(\mathbb Z^2\setminus\{0\}\). An orbit and its negative are distinct: a nonzero integer vector cannot be periodic under \(-A^j\) for a hyperbolic \(A\). For real \(h\) they contribute conjugate sums. For even \(h=\sum a_v b_v\), (ND.1) therefore reduces to twice the sum of the squared cosine sums on signed orbits. Constants in \(g\) affect neither the bracket nor \(\Gamma_A\).
+
+For finite Fourier support, character orthogonality gives exactly \[
+ \sum_{n\in\mathbb Z}\int h(x)h(S^n x)\,dx
+   =\sum_{\mathcal O}\left|\sum_{v\in\mathcal O}\widehat h(v)\right|^2.
+ \tag{ND.2}
+\] The double absolute sum is bounded by \(\|\widehat h\|_1^2\), so the same identity holds for smooth \(h\) by absolute convergence. This is the usual Green--Kubo/orbit-sum variance, not the instantaneous \(L^2\) norm. Such spectral and orbit-sum descriptions are prior theory, including Cohen--Conze {[}1{]}.
+
+For a finite polynomial \(h\), \(\sigma_A^2(h)=0\) if and only if \(h=u-\mathcal C_Au\) for a finite polynomial \(u\). Indeed, on each orbit, let \(h_j\) be the finite coefficient sequence. If its sum is zero, the partial sums \(u_j=\sum_{k\leq j}h_k\) have finite support and \(h_j=u_j-u_{j-1}\). Conversely a finite difference has zero sum. Consequently proving only \(\{g,\mathcal C_Ag\}\ne0\) does not settle the nondegeneracy question.
+
+For Sections 2--3 fix \[
+ T=\begin{pmatrix}3&2\\4&3\end{pmatrix},\qquad
+ \lambda=3+2\sqrt2.

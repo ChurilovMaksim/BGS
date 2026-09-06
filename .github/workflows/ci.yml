@@ -57,15 +57,14 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
       - name: Install TeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
-      - name: Compile the committed articles independently
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
+      - name: Build canonical unified manuscript
         run: |
-          mkdir -p "$RUNNER_TEMP/paper"
-          cd manuscript
-          for paper in arithmetic_cat_map_moments pell_floquet_normal_form cyclotomic_row_support_frontier; do
-            latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="$RUNNER_TEMP/paper" "$paper.tex"
-            test -s "$RUNNER_TEMP/paper/$paper.pdf"
-          done
+          python computations/maintenance/build_unified_manuscript.py --repo-root . --output-dir "$RUNNER_TEMP/unified-paper" --runs 3
+          test -s "$RUNNER_TEMP/unified-paper/WoW_unified.pdf"

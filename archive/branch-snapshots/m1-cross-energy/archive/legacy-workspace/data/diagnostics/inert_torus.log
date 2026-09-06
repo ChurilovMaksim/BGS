@@ -1,9 +1,0 @@
-=== inert N=1103 K=48 (proj order 24) m=23 chi=1.0000-0.0000j: P+=0 P-=23 -> using P- (dim 23) (1 s)
-C1: |{Q=q}| = 1104 = N+1 all-equal; cone = 1 -> PASS
-C2: orbits in {Q=1} = 23 = m -> PASS
-C3: 6 level sets x 6 orbits: max intra-level dev = 6.58e-14
-C4: min inter-level distance = 5.838e-02 -> 11.9 decades
-C5: torus elements g=aI+bA: 10/10
-Traceback (most recent call last):
-  File "<stdin>", line 94, in <module>
-NameError: name 'c2' is not defined. Did you mean: 'cm'?

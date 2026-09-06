@@ -1,0 +1,15 @@
+The use of a compact test is essential for the logical scope. A Gaussian test without an independently controlled tail would only obstruct a Schwartz-test limit, not automatically vague local convergence. If the pair convergence definition uses only smooth compact tests, positive measures acquire locally uniform mass bounds by testing a bump which is one on a given compact set; approximation then extends convergence to the continuous triangular tests. Alternatively, start directly with a smooth nonnegative compact f of integral one, take \(\phi\)=f*tilde(f), and scale it: \(\widehat\phi=|\widehat f|^2\geq0\) and the same proof uses \(\phi\)(0)/L instead of 1/L. No unproved high-frequency-tail assumption is hidden in Theorem C.
+
+The Poisson pair density \(\rho\)=1 and the sine-kernel density \(\rho_2(s)=1-\operatorname{sinc}^2(s)\) are both excluded. More explicitly, keeping only the first resonance gives \[
+ \liminf C_{d_N}(U_{\varepsilon_K,N};\phi_L)
+        \geq1+2e^{-\tau^2}-1/L.                               \tag{FN.31}
+\] Since \(\int\phi_L\rho_2\leq1\), taking \(L=e^{\tau^2}\) yields a gap of at least \(e^{-\tau^2}\) from the sine-kernel prediction. At \(\tau=1\), already L=2 gives lower bound 1.2357588823\ldots, greater than both that prediction and the Poisson value 1.
+
+The standard GOE bulk pair density is excluded by the bounded-clustering part of the theorem, not by an assumed pointwise bound \(\rho\leq1\). In unit intensity normalization it is the even continuation of \[
+ \rho_1(s)=1-S(s)^2-S'(s)\int_s^\infty S(t)\,dt,\qquad
+ S(s)=\operatorname{sinc}(s),\quad s\geq0.                       \tag{FN.32}
+\] This standard formula is recorded in Brezin--Hikami, equation (181) after unfolding. It is bounded at zero, and integration by parts in the sine tail shows \(\rho_1(s)=1+O(s^{-2})\) at infinity. The same elementary criterion therefore applies. The random-matrix formulas, Fourier positivity and counting-variance identity are standard ingredients; no priority is claimed for those general tools.
+
+This changes the route toward a positive BGS result: the critical and subcritical globally unfolded odd spectra considered here are not merely unproved universal families; they are \textbf{excluded} from the bounded clustering pair limits just specified. The statement does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks. It is not a refutation of a correctly qualified generic BGS conjecture.
+
+The finite verifier keeps forty configurations (K=3,5,7, several \(\tau\) and L) and two synthetic controls. At K=7,\(\tau=1\),L=2 it numerically gives \(C_{d}\)=1.30936229449\ldots{} and Var \(N_{L}\)=3.23744917797\ldots, while the finite lower bound retaining K and 2K is 1.21861711382\ldots{} . These are floating-point checks of finite identities, not the proof of (FN.28). In particular the asymptotic bound is not incorrectly enforced on small K.

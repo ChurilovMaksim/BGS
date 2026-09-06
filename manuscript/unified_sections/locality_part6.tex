@@ -1,0 +1,23 @@
+\] The remainder is superpolynomially small. This formula is not asserted with this rate for an arbitrary continuous test.
+
+Choose an origin uniformly on the circle. A window of unfolded length \(L\) can meet a cluster only if its origin belongs to one of \(K\) arcs of length at most \(L/D+2a_N\). Hence \[
+ \mathbb P\{\hbox{window contains a level}\}
+       \leq KL/D+2Ka_N\longrightarrow0.                     \tag{LC.25}
+\] The same argument applies to any fixed compact observation window, giving vague convergence in probability of the translated local point measures to the empty measure. Their expected count is still \(L\); uniform integrability fails. This is a point-process statement, not an inference from diverging second moments alone.
+
+Now let \(F_N:\mathbb R\to\mathbb R\) be increasing with \(F_N(x+1)=F_N(x)+1\) and Lipschitz constant at most \(C N^A\). Image clusters have angular diameter at most \(2CN^Aa_N\). There are at most \(K\) gaps not internal to these clusters. Internal unfolded gaps tend uniformly to zero, proving spacing collapse. All \(n(n-1)\) ordered pairs in each original cluster are still close, so \(R_N(x)\geq n-1\) eventually. Finally (LC.25) is replaced by \[
+ \mathbb P\{\hbox{image window contains a level}\}
+       \leq KL/D+2KCN^Aa_N\longrightarrow0.                 \tag{LC.26}
+\] No lower bound on \(F_N'\) is used, and image clusters need not remain uniformly separated. Thus (LC.23) need not remain an equality after unfolding; the lower bound and empty-process conclusion are the correct statements.
+
+\subsection{Flat directions, hidden structure, and a falsification control}\label{locality:flat-directions-hidden-structure-and-a-falsification-control}
+
+For every generator in (LC.1), \(\{g,\mathcal Cg\}=0\). In the previous smooth notation, \(\Gamma(g)=\sigma^2(\{g,\mathcal Cg\}/(4\pi))=0\). Thus the second-order exceptional set contains an explicit infinite-dimensional linear subspace containing nonzero smooth generators. This does not contradict openness and density of \(\Gamma>0\); an infinite-dimensional exceptional subspace can still have empty interior. Subtracting the mean of \(g\) places it in the zero-mean class without changing \(f\), \(\Gamma\), or the quantum commutator. One should apply the support argument to the original bump, not falsely describe its mean-subtracted version as compactly supported.
+
+Poisson commutation \textbf{alone} is insufficient for (LC.3). For a negative control take \(a=b_{(1,0)}+b_{(0,1)}\), where \(b_v=2\cos(2\pi v\cdot x)\), and \(b=a^2\). Of course \(\{a,b\}=0\). Yet the cubic Weyl coefficient \[
+ \sum_{v+w=k}\widehat a(v)\widehat b(w)\omega(v,w)^3
+\] is nonzero: at frequencies \((-2,-1),(-2,1),(-1,-2),(-1,2)\) its values are \(-6,6,6,-6\), respectively, and the four opposite frequencies give the same values. The commutator therefore has a nonzero term of order \(N^{-3}\). For a sufficiently large odd \(N\) these finite frequencies are distinct modulo \(N\), so this is not a formal nonzero coefficient that disappears under quantization. Both implementations retain this negative control. The all-orders cancellation in (LC.11), not just its first term, is essential.
+
+Finally, if \(J_N\) commutes with \(U_N\) and \(\|J_N\|\leq1\), then \[
+ \|[V_{{\kappa_0},N},A_{{\kappa_0},N}J_NA_{{\kappa_0},N}^*]\|
+        \leq2\delta_N.                                    \tag{LC.27}

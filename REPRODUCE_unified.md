@@ -1,19 +1,8 @@
-# Consolidated research packet — final main, 6 September 2026
+# Reproduce the current consolidated research state
 
-The canonical editable publication entry point is
-`manuscript/WoW_unified.tex`. The repository-wide scientific status authority
-remains `record/claim_ledger.md`; the final recovery/audit record is
-`record/final_consolidation_audit_20260906.md`.
+The canonical editable publication entry point is `manuscript/WoW_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
-The recovery was performed only by fast-forward commits. It restored the
-previously unmerged fixed-strength, smooth-cohomology and coboundary work, the
-local noncommuting/nondegeneracy theorem notes, and three additional omitted
-Cayley packets (subgroup curve, elliptic product rows, projective Bezout). All
-remote research branches that diverged from the final line are preserved as
-exact Git-tree snapshots under `archive/branch-snapshots/`.
-
-The original 204-file delivery was recovered from the user's ChatGPT Library
-and verified before finalization:
+The original 204-file consolidation delivery was recovered from the user's Library and byte-verified before cleanup:
 
 ```text
 WoW_consolidated_research.zip
@@ -22,22 +11,16 @@ sha256  8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099
 files   204
 ```
 
-Its byte-level provenance, the companion patch hash, and the hashes of the two
-compressed binary members are recorded in
-`archive/delivery-20260906/README.md`. The outer ZIP remains the authoritative
-historical container; it is not re-encoded through the GitHub connector because
-large binary/base64 transport can be truncated. The maintained sources and all
-divergent Git branch trees are preserved directly in `main`.
+Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
-Install Python dependencies and run the structural/build graph gate first:
+Run the structural gate first:
 
 ```sh
 python -m pip install -r requirements.txt
 python computations/verification/repository_audit.py
 ```
 
-Build every maintained C++ verifier and execute the complete maintained
-Python/C++ verification surface with hashed logs:
+Build and execute the maintained C++/Python verification surface:
 
 ```sh
 cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
@@ -54,30 +37,21 @@ Build every active Lean module:
 (cd formalization && lake build)
 ```
 
-Build the canonical manuscript without publishing into the source tree:
+Build the canonical manuscript without writing a generated PDF into the source tree:
 
 ```sh
 python computations/maintenance/build_unified_manuscript.py \
-  --output-dir build/unified-paper
+  --repo-root . \
+  --output-dir build/unified-paper \
+  --runs 3
 ```
 
-To publish a locally verified PDF explicitly:
+To publish a locally verified PDF explicitly, use the builder's `--publish` option.
 
-```sh
-python computations/maintenance/build_unified_manuscript.py --publish
-```
+Important audit correction: the earlier recorded 93-page manuscript check was a successful build of the reconstructed 204-file consolidation corpus with the current master TeX. It was not a proof that the then-current clean Git checkout was self-contained; that checkout was missing several `\input` targets. The cleanup commit fixes that defect and the structural audit now fails whenever any canonical TeX input is absent.
 
-The final reconstructed manuscript check recorded in
-`record/final_manuscript_build_20260906.json` completed three TeX passes with
-no forbidden warnings, unchanged TeX inputs and 93 pages. That check is
-manuscript-build evidence, not full-repository CI or a mathematical proof audit.
+The active stack is Python/C++/Lean/TeX. Julia is retired and `repository_audit.py` rejects tracked `.jl`, `Project.toml`, and `Manifest.toml` files anywhere in the checkout, including `archive/`.
 
-The GitHub Actions attempts observed during finalization did not receive a
-runner (`runner_id=0`, no executed steps), so this file does not claim a green
-remote CI run. The workflows themselves have been repaired so the next
-provisioned runner exercises the canonical unified builder and the complete
-maintained C++/Lean graph.
+The finalization-era GitHub Actions attempts that were inspected had `runner_id=0`/no executed steps, so no green cloud-CI claim is inferred from them. Local verification evidence and cloud-runner status must remain separate.
 
-Scientific scope is unchanged by synchronization: no positive generic
-microscopic BGS theorem, no established world-priority claim, and no complete
-formalization of the analytic argument are inferred from repository recovery.
+Repository synchronization does not change mathematical scope: positive generic microscopic BGS/GOE/COE universality remains open, and finite certificates or obstruction results are not promoted to that theorem.

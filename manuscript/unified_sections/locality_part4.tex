@@ -1,0 +1,32 @@
+For Hermitian \(H,J\) and real \(t\), the two-factor Duhamel inequality gives \[
+ \|e^{it(H+J)}-e^{itH}e^{itJ}\|\leq(t^2/2)\|[H,J]\|.        \tag{LC.19}
+\] One proof differentiates \(e^{i(t-u)(H+J)}e^{iuH}e^{iuJ}\) and integrates the conjugation difference of \(J\) twice. Unitary invariance of the norm leaves a triangular integration domain of area \(t^2/2\). In particular, \(|t|\|H\|\) need not be small.
+
+By (LC.8), \[
+ A_{{\kappa_0},N}U_NA_{{\kappa_0},N}^*
+       =e^{i{\kappa_0} NG_N}e^{-i{\kappa_0} ND_N}U_N.
+\] Apply (LC.19) with \(t={\kappa_0} N\), \(H=G_N\), \(J=-D_N\), and then (LC.12). For every integer \(r\geq1\), \[
+ \boxed{\displaystyle
+ \delta_N\leq\frac{{\kappa_0}^2\pi^r}{r!}N^{2-r}
+                   \mathcal M_r(g)\mathcal M_r(\mathcal Cg).} \tag{LC.20}
+\] This proves Theorem A and (LC.18). Notice that we have not set the finite commutator to zero, nor silently replaced the one-exponential kick by a product of two kicks.
+
+For integer \(t\), telescoping products of unitaries, or their adjoints when \(t<0\), yields \[
+ \|V_{{\kappa_0},N}^t-A_{{\kappa_0},N}U_N^tA_{{\kappa_0},N}^*\|
+       \leq |t|\delta_N.                                   \tag{LC.21}
+\] Choosing \(r\) larger than any fixed polynomial time exponent proves the all-polynomial-time assertion. The same estimate proves the stretched exponential-time assertion from (LC.4). Normalized traces differ by at most \(|t|\delta_N\); their absolute squares differ by at most \(2|t|\delta_N\). These statements control Heisenberg times \(t\asymp D\), not just \(O(\log N)\).
+
+To establish (LC.5), note that (LC.1) implies \(\{g,\mathcal Cg\}=0\), so the two Hamiltonian flows commute and \[
+ \Phi_{\mathcal Cg}^t=M^{-1}\Phi_g^tM,\qquad
+ \Phi_f^t=\Phi_g^t\Phi_{\mathcal Cg}^{-t}.
+\] Consequently \(M\Phi_f^t=\Phi_g^{-t}M\Phi_g^t\). This is an exact classical identity for every finite \(t\). A smooth symplectic conjugacy transports the invariant hyperbolic splitting, with bounded derivatives in both directions, so it preserves uniform hyperbolicity. It also transports area measure; mixing follows from mixing of \(M\). The latter can be checked on Fourier characters: for nonzero integer \(v\), \(|T^nv|\to\infty\), and hence fixed Fourier modes eventually have zero correlation. Density extends the result to square-integrable observables.
+
+The normalization of classical time is checked rather than presumed: (LC.7) gives \[
+ [\operatorname{Op}_N(g),\operatorname{Op}_N(a)]
+ =-\frac{i}{2\pi N}\operatorname{Op}_N(\{g,a\})+O(N^{-3})
+\] for fixed smooth symbols. Differentiating unitary conjugation and using Duhamel on a fixed compact time interval gives the pullback by \(\Phi_g^{{\kappa_0}/(2\pi)}\), with a remainder tending to zero. Thus (LC.2) is a quantization of the fixed map in (LC.5).
+
+For nonzero \(g\) the smooth function \(f\) is nonconstant. Its flow moves some point for every sufficiently small nonzero time. The complement of the support of \(f\) has nonempty interior (the support occupies less than the whole torus), and the flow is exactly the identity there. Accordingly \(M_{\kappa_0}\) equals \(M\) on an open set but is not equal to it everywhere for small nonzero \({\kappa_0}\). An affine torus map agreeing with \(M\) on an open set agrees everywhere. Therefore these fixed maps are genuinely nonlinear, although smoothly conjugate to the same linear map.
+
+\subsection{Arithmetic multiplicities and individual cluster control}\label{locality:arithmetic-multiplicities-and-individual-cluster-control}
+

@@ -1,0 +1,99 @@
+
+\Theta'_{17}=1,\quad
+\Theta'_{19}=37,\quad
+\Theta'_{23}=47^2\cdot137.
+\]
+For comparison $\Xi'_{23}=47\cdot137$: split prime support agrees, valuations
+differ.  The reference SymPy implementation reduces the $K=17$ computation
+from roughly $51$ seconds for the full shift resultant to roughly $0.6$ seconds
+for the translated half-degree route; at $K=23$ the latter remains on the
+order of seconds, after which Smith normal form becomes the principal finite
+algebra bottleneck.  These timings are reproducibility data, not asymptotic
+complexity theorems.
+
+The norm of the inverse constant shift coefficient also has the exact shape
+\begin{equation}\label{eq:inverse-norm}
+\left|\Norm(R_-(0))\right|
+ =2^{m^2}K^m\left|\Norm(\Res(E,O))\right|^2,
+\end{equation}
+using $|\Norm(F(0))|=K^m$.  Hence every prime away from $2K$ occurs with even
+valuation in this particular norm.  This explains part of the observed square
+pattern but does not imply equality of the support integers.
+
+\section{Global split-prime budget and minimal-extension Frobenius}
+
+Simultaneous multiplication of collision exponent indices by
+$a\in\mathbf F_K^\times$ acts freely on non-forced collision quadruples.  The
+number of normalized scaling orbits is
+\[
+N_K=K^3-5K^2+6K+1.
+\]
+Combining the square-resultant theorem with $|\Res(\Phi_K,P)|\le12^{K-1}$
+gives:
+
+\begin{theorem}[Weighted split-prime budget]\label{thm:budget}
+\begin{equation}\label{eq:budget}
+\sum_{p\equiv1\,(K)}\Delta_K(p)\log p
+\le N_K\bigl((K-1)\log12-3\log K\bigr).
+\end{equation}
+\end{theorem}
+
+For prime $K\asymp X^\theta$ and split prime $p\asymp X$,
+Bombieri--Vinogradov and PNT \cite{Bombieri1965,IK2004} imply
+\[
+\operatorname{average}\frac{\Delta_K(p)}{K^2}
+ \ll_\theta X^{3\theta-1}
+\]
+for fixed $\theta<1/3$.  Integrality of the excess strengthens this to a
+density-one exact baseline for fixed $\theta<1/5$:
+\[
+\Delta_K(p)=0,
+\qquad
+E_+(A)=3(K-1)(K-2)
+\]
+for asymptotically almost every split pair.
+
+Now let $p\ne2,K$ be arbitrary and put
+\[
+f=\ord_K(p),\qquad q=p^f.
+\]
+In $\mathbf F_q$ the order-$K$ subgroup exists uniquely.
+
+\begin{theorem}[Frobenius amplification]\label{thm:frob}
+Every non-forced collision orbit under the $p$-power Frobenius has size exactly
+$f$.  Hence
+\[
+f\mid\Delta_K^{\rm ext}(p).
+\]
+The weighted resultant budget and the discriminant classification extend to
+all such rational primes in the minimal extension.
+\end{theorem}
+
+\begin{proof}
+Frobenius multiplies every exponent by $p$ modulo $K$.  If a positive power
+$d<f$ fixed a collision tuple, any nonzero coordinate would imply
+$p^d\equiv1\pmod K$, contradicting the definition of $f$.  The resultant
+argument is applied at one prime ideal over $p$; $p\ne K$ is unramified, so its
+valuation on rational integers is the ordinary $p$-valuation.
+\end{proof}
+
+PNT, Brun--Titchmarsh and the scarcity of small multiplicative orders then give
+a density-one exact baseline for unrestricted prime pairs
+$K\asymp X^\theta$, $p\asymp X$ for every fixed $\theta<1/3$.  This mechanism
+is absent on the split slice because there $f=1$.
+
+\section{Full Cayley--Jacobi trace and corrected off/off geometry}
+
+Let $S=H^\perp$ be the multiplicative-character annihilator and define the
+normalized twisted-Jacobi matrix
+\[
+M_S(q)=\frac{e_p(-q/2)}{p-1}J_S(q).
+\]
+Character orthogonality gives the exact trace identity
+\begin{equation}\label{eq:jacobi}
+\widehat{1_A}(r)=K\operatorname{Tr}M_S(2r),
+\end{equation}
+and therefore
+\begin{align}
+\sum_q|\operatorname{Tr}M_S(q)|^2&=\frac{p(K-1)}{K^2},\label{eq:trace2}\\
+\sum_q|\operatorname{Tr}M_S(q)|^4&=\frac{pE_+(A)}{K^4}.\label{eq:trace4}

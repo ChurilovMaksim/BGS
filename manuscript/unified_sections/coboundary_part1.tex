@@ -1,0 +1,83 @@
+\section{A second-order recurrence scale for a coboundary kick}\label{sec:coboundary}
+Set \[
+ T=\begin{pmatrix}3&2\\4&3\end{pmatrix},\qquad
+ \alpha=1+\sqrt2,\quad \lambda=3+2\sqrt2,\quad
+ N+F\sqrt2=\alpha^K,
+\] where K tends to infinity through odd primes. Then N is odd, \(N^2-2F^2=-1\), and \(N\asymp\lambda^{K/2}\). The moduli need not be prime. Use the phase-normalized cat quantization \(U_0\) from the \hyperref[sec:floquet]{finite Floquet construction}, so that \(U_0W(v)U_0^*=W(Tv)\) and \(U_0^K=I\). Let \[
+ W(a,b)f(x)=e_N(a(x-b/2))f(x-b),\qquad B_v=W(v)+W(-v).
+\] All symmetrized observables and \(U_0\) preserve odd parity. Write \(d=(N-1)/2\) and \(\tau_-(M)=d^{-1}\operatorname{Tr}_{-}M\).
+
+The perturbation is now a different, fixed Fourier observable: \[
+ A=B_{(1,0)},\quad D=U_0AU_0^*=B_{(3,4)},\quad
+ H=A-D,\quad V_\varepsilon=e^{i\varepsilon H}U_0.                 \tag{CB.1}
+\] It is a coboundary: \(\sum_{j=0}^{K-1}U_0^jHU_0^{-j}=0\) exactly. The real classical Fourier symbol of H is independent of N. The products of the two coordinates of (1,0), (3,4), (2,4), and (4,4) are even, so the centered finite-Weyl convention introduces no N-dependent sign for these fixed Fourier modes. As throughout the project, the quantum exponent \(\varepsilon\) corresponds to a classical action amplitude proportional to \(\varepsilon\)/N, not \(\varepsilon\) itself.
+
+Put \[
+ s_N=\sin(4\pi/N)>0,\quad \zeta=\varepsilon^2s_N,\quad
+ t_K=2\zeta\sqrt K.
+\] \textbf{Theorem 1 (second-order critical law).} If \(t_K\to t\in[0,\infty)\), then for every fixed integer m, \[
+ \tau_-(V_{\varepsilon_K}^{mK})\longrightarrow e^{-m^2t^2/2}.     \tag{CB.2}
+\] Thus the empirical spectrum of \(V_{\varepsilon_K}^K\) tends to the wrapped normal law of variance \(t^2\), or to the point mass at 1 when t=0. The critical quantum scale is \[
+ |\varepsilon_K|=\left(\frac{t}{2s_N\sqrt K}\right)^{1/2}
+ \sim\sqrt{\frac{t}{8\pi}}\,\sqrt N K^{-1/4}\quad(t>0).         \tag{CB.3}
+\] This can grow without bound, even though the classical amplitude tends to zero. The sign of \(\varepsilon\) does not change the limit in (CB.2).
+
+\textbf{Theorem 2 (negative microscopic consequences).} For the original propagator in (CB.1), on the whole odd space and with global mean-spacing normalization, the following hold.
+
+If \(|\varepsilon_K|K^{1/4}/\sqrt N\to0\), the empirical nearest-neighbour spacing measures tend weakly to \(\delta_0\), and the normalized number of ordered distinct pairs at distance at most x mean spacings tends to infinity for every fixed \(x>0\).
+
+For any subsequence on which \(|\varepsilon_K|K^{1/4}/\sqrt N\) is bounded, the pair measures cannot converge to a bounded density R(s) with \(R(s)\to1\) as \(|s|\to\infty\). In particular, escape from this obstruction requires \[
+ |\varepsilon_K|K^{1/4}/\sqrt N\longrightarrow\infty.            \tag{CB.4}
+\] Condition (CB.4) is only necessary. No positive universality theorem beyond it is proved. These statements concern global unfolding of the specified odd spectrum, not arbitrary clusterwise unfolding or an assertion that all arithmetic symmetries are resolved. They do not refute fixed-system BGS.
+
+\subsection{A second-order loop estimate valid at large quantum exponents}\label{coboundary:a-second-order-loop-estimate-valid-at-large-quantum-exponents}
+
+\textbf{Lemma 3.} For finite Hermitian A,D and any real \(\varepsilon\), \[
+ \left\|e^{-i\varepsilon A}e^{i\varepsilon(A-D)}e^{i\varepsilon D}
+       -e^{-\varepsilon^2[A,D]/2}\right\|_{\rm op}
+ \leq |\varepsilon|^3\left(
+       \frac12\|[A,[A,D]]\|_{\rm op}
+       +\frac16\|[D,[A,D]]\|_{\rm op}\right).                  \tag{CB.5}
+\] There is no hypothesis \(|\varepsilon|\|A\|\ll1\).
+
+\textbf{Proof.} Write \(Q=[A,D]\) and \(L(u)=e^{-iuA}e^{iu(A-D)}e^{iuD}\). Direct differentiation gives \[
+ L'(u)L(u)^*=-\int_0^u
+       \operatorname{Ad}_{e^{-iuA}e^{iv(A-D)}}Q\,dv.
+\] The logarithmic derivative of \(E(u)=e^{-u^2Q/2}\) is -uQ. By differentiating unitary conjugation and integrating, \[
+ \|\operatorname{Ad}_{e^{-iuA}e^{iv(A-D)}}Q-Q\|
+ \leq u\|[A,Q]\|+v\|[A-D,Q]\|\quad(0\leq v\leq u).
+\] Duhamel comparison of the two unitary evolutions, integrated over \(0\leq v\leq u\leq\varepsilon\), is at most \(\varepsilon^3(\|[A,Q]\|/3+\|[A-D,Q]\|/6)\). The triangle inequality proves (CB.5) for nonnegative \(\varepsilon\). Replace A,D by -A,-D for the other sign. This argument is a norm estimate, not a truncation of a formal BCH series. End of proof.
+
+Let u=(2,4), z=(4,4) and C=\(B_{u}\)-\(B_{z}\). Since \(W(v)W(w)=e_N(\omega(v,w)/2)W(v+w)\) and \(\omega((1,0),(3,4))=4\), exact multiplication yields \[
+ [A,D]=-2i s_N C.                                             \tag{CB.6}
+\] Each double commutator in (CB.5) has at most eight Weyl terms of coefficient modulus \(4s_N^2\). Therefore both norms are at most \(32s_N^2\), and \[
+ \left\|e^{-i\varepsilon A}V_\varepsilon e^{i\varepsilon A}
+                  -e^{i\zeta C}U_0\right\|_{\rm op}
+ \leq R_N(\varepsilon):=\frac{64}{3}|\varepsilon|^3s_N^2.        \tag{CB.7}
+\] The same bound holds in normalized odd Hilbert--Schmidt norm. At the scale (CB.3), \(KR_N=O_t(K^{1/4}/\sqrt N)\); this tends to zero. The small quantity is controlled by nested commutators, not by the norm of \(\varepsilon\) A.
+
+\subsection{A two-species arithmetic lemma: collisions must not be discarded}\label{coboundary:a-two-species-arithmetic-lemma-collisions-must-not-be-discarded}
+
+Identify an integer vector v=(a,b) with \(\psi(v)=b+\sqrt2 a\). Then \[
+ \psi(Tv)=\lambda\psi(v),\quad
+ \psi(u)=4+2\sqrt2,\quad \psi(z)=\sqrt2\psi(u),\quad
+ \operatorname{Norm}(\psi(u))=8.
+\] Since N is odd, multiplication by \(\psi(u)\) is invertible in \((\mathbb Z/N\mathbb Z)[\sqrt2]\). The two species of time translates are therefore faithfully represented by \(\lambda^j\) and \(\sqrt2\lambda^j\). Also \(T^K=I\) modulo N, as follows from \(Q_{2K}=2N^2+1\) and \(P_{2K}=2NF\). Rotating all labels modulo K preserves a vector relation.
+
+\textbf{Lemma 4 (lifting).} A signed m-atom modular zero relation in these two species, after cancellation of identical opposite atoms and rotation across a largest cyclic gap, has the form \[
+ P(\lambda)=\sum_\nu \epsilon_\nu b_\nu\lambda^{j_\nu},
+ \quad b_\nu\in\{1,\sqrt2\},\quad
+ 0\leq j_\nu\leq K-\lceil K/m\rceil.
+\] For sufficiently large K at fixed m this expression is zero in \(\mathbb Z[\sqrt2]\), not just modulo N. For m=4, \(K\geq11\) suffices.
+
+\textbf{Proof.} There are at most m occupied time labels, hence a cyclic gap of at least ceil(K/m). Modular vanishing and the invertibility just proved imply \(P(\lambda)\in N\mathbb Z[\sqrt2]\). Its nonzero algebraic norm would thus have absolute value at least \(N^2\), whereas the two real embeddings give \[
+ |\operatorname{Norm}P(\lambda)|
+ \leq2m^2\lambda^{K-\lceil K/m\rceil}.
+\] Since \(N^2=\lambda^K(1-\lambda^{-K})^2/4\), the latter is smaller than \(N^2\) for large K at fixed m. For m=4 it suffices that \(\lambda^{\lceil K/4\rceil}(1-\lambda^{-K})^2>128\). At \(K\geq11\) this follows from \(\lambda>11/2\), \(\lceil K/4\rceil\geq3\), and \(1-\lambda^{-K}>9/10\), since \((11/2)^3(9/10)^2>128\). End of proof.
+
+A four-atom relation in characteristic zero need \textbf{not} balance within individual species. Apart from cancellation, the sole type is \[
+ z_{j+1}-u_{j+1}=z_j+u_j,\qquad v_j:=T^jv,                     \tag{CB.8}
+\] up to translation and multiplication by -1. The identity is already true over the integers, since \(T(z-u)=z+u\).
+
+Here is a direct completeness proof. Look at the maximal exponent E after cancellation. With one atom at E, its coefficient has modulus at least 1, whereas the three lower atoms sum to at most \(3\sqrt2/\lambda<1\) times \(\lambda^E\). With three atoms at E, their nonzero coefficient has modulus at least \(2-\sqrt2>\sqrt2/\lambda\), which the remaining lower atom cannot cancel. With four atoms at E, linear independence of 1 and \(\sqrt2\) forces balance. With two atoms at E, the only possible nonzero coefficient small enough is \(\pm(\sqrt2-1)\). The lower atoms must both be at E-1: otherwise at that scale their modulus is at most \(\sqrt2(1+\lambda^{-1})<1+\sqrt2\). At E-1 they must be one of each species with equal signs because \(\lambda(\sqrt2-1)=1+\sqrt2\). This is exactly (CB.8). Relations with fewer occurrences reduce to the same cases; there is no nontrivial relation with at most three atoms.
+

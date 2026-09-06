@@ -6,63 +6,65 @@
 \usepackage{graphicx,booktabs,longtable,array,calc,multirow}
 \usepackage{enumitem,fvextra,xurl}
 \usepackage[hidelinks]{hyperref}
-\hypersetup{pdftitle={Arithmetic Quantum Maps: Exact Reductions, Resonant Dynamics, and Cohomological Obstructions},
- pdfauthor={Maksim Churilov; WoW research programme},
- pdfsubject={Consolidated research manuscript and noncommuting return-word constructions},
- pdfkeywords={quantum chaos, cat maps, Weyl quantization, cohomology, spectral statistics, exact certificates}}
+\hypersetup{pdftitle={Arithmetic Quantum Maps: Exact Reductions, Resonant Dynamics, and Cohomological Obstructions},pdfauthor={Maksim Churilov; WoW research programme},pdfsubject={Consolidated research manuscript and noncommuting return-word constructions},pdfkeywords={quantum chaos, cat maps, Weyl quantization, cohomology, spectral statistics, exact certificates}}
 \usepackage{fancyhdr}
 \pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Arithmetic quantum maps}\fancyhead[R]{\small Consolidated research manuscript}\fancyfoot[C]{\thepage}
-\setlength{\emergencystretch}{3em}
-\setlength{\parskip}{2pt}
-\setcounter{tocdepth}{1}
-\makeatletter
-\renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{2.5em}{\bfseries #1}{\bfseries #2}}
-\makeatother
+\setlength{\emergencystretch}{3em}\setlength{\parskip}{2pt}\setcounter{tocdepth}{1}
+\makeatletter\renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{2.5em}{\bfseries #1}{\bfseries #2}}\makeatother
 \setlist{nosep}
 \DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,fontsize=\small}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\providecommand{\passthrough}[1]{#1}
-\providecommand{\pandocbounded}[1]{#1}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{remark}[theorem]{Remark}
-\newcommand{\Fp}{\mathbf F_p}
-\newcommand{\Q}{\mathbf Q}
-\newcommand{\Z}{\mathbf Z}
-\newcommand{\Res}{\operatorname{Res}}
-\newcommand{\Norm}{\operatorname{N}}
-\newcommand{\Var}{\operatorname{Var}}
-\newcommand{\Disc}{\operatorname{Disc}}
-\newcommand{\ord}{\operatorname{ord}}
+\providecommand{\passthrough}[1]{#1}\providecommand{\pandocbounded}[1]{#1}
+\newtheorem{theorem}{Theorem}[section]\newtheorem{proposition}[theorem]{Proposition}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Fp}{\mathbf F_p}\newcommand{\Q}{\mathbf Q}\newcommand{\Z}{\mathbf Z}\newcommand{\Res}{\operatorname{Res}}\newcommand{\Norm}{\operatorname{N}}\newcommand{\Var}{\operatorname{Var}}\newcommand{\Disc}{\operatorname{Disc}}\newcommand{\ord}{\operatorname{ord}}
 \numberwithin{equation}{section}
 \title{\textbf{Arithmetic Quantum Maps:}\\Exact Reductions, Resonant Dynamics,\\and Cohomological Obstructions\\[1ex]\large A consolidated manuscript with noncommuting return-word constructions}
-\author{Maksim Churilov\\\small WoW research programme}
-\date{Consolidated research draft --- 6 September 2026}
+\author{Maksim Churilov\\\small WoW research programme}\date{Consolidated research draft --- 6 September 2026}
 \begin{document}
 \input{front_matter.tex}
-\input{unified_sections/arithmetic_core.tex}
+\input{unified_sections/arithmetic_core_part1.tex}
+\input{unified_sections/arithmetic_core_part2.tex}
+\input{unified_sections/arithmetic_core_part3.tex}
+\input{unified_sections/arithmetic_core_part4.tex}
+\input{unified_sections/arithmetic_core_part5.tex}
 \input{unified_sections/row_frontier.tex}
 \input{unified_sections/magnetic.tex}
 \input{general_spectra.tex}
 \input{unified_sections/pell_blocks.tex}
-\input{unified_sections/floquet.tex}
+\input{unified_sections/floquet_part1.tex}
+\input{unified_sections/floquet_part2.tex}
+\input{unified_sections/floquet_part3.tex}
+\input{unified_sections/floquet_part4.tex}
 \input{weighted_and_edgeworth.tex}
-\input{unified_sections/coboundary.tex}
+\input{unified_sections/coboundary_part1.tex}
+\input{unified_sections/coboundary_part2.tex}
+\input{unified_sections/coboundary_part3.tex}
 \input{unified_sections/cobfourth.tex}
 \input{unified_sections/finite_fourier.tex}
 \input{unified_sections/smooth.tex}
 \input{unified_sections/smooth_residual.tex}
 \input{unified_sections/mixed.tex}
 \input{compensated_times.tex}
-\input{unified_sections/locality.tex}
+\input{unified_sections/locality_part1.tex}
+\input{unified_sections/locality_part2.tex}
+\input{unified_sections/locality_part3.tex}
+\input{unified_sections/locality_part4.tex}
+\input{unified_sections/locality_part5.tex}
+\input{unified_sections/locality_part6.tex}
+\input{unified_sections/locality_part7.tex}
 \input{unified_sections/robustness.tex}
 \input{unified_sections/analytic.tex}
 \input{unified_sections/sharp.tex}
 \input{unified_sections/four_mode.tex}
 \input{transversality.tex}
-\input{unified_sections/nondegeneracy.tex}
+\input{unified_sections/nondegeneracy_part1.tex}
+\input{unified_sections/nondegeneracy_part2.tex}
+\input{unified_sections/nondegeneracy_part3.tex}
+\input{unified_sections/nondegeneracy_part4.tex}
+\input{unified_sections/nondegeneracy_part5.tex}
+\input{unified_sections/nondegeneracy_part6.tex}
+\input{unified_sections/nondegeneracy_part7.tex}
+\input{unified_sections/nondegeneracy_part8.tex}
 \input{unified_sections/return_words.tex}
 \input{audit_and_frontier.tex}
 \input{final_delivery_note.tex}

@@ -1,0 +1,38 @@
+\] No sharpness is claimed. There is no conflict with superpolynomially small positive variances of general Fourier approximations to smooth flat symbols: those approximations need not have one-sign coefficients.
+
+\subsection{An exact finite quantum variance consequence}\label{nondegeneracy:an-exact-finite-quantum-variance-consequence}
+
+The elementary second-moment bridge already occurs in earlier project notes. We reprove it here with an explicit integer sufficient bound so its application to Theorem 1 is auditable without a Gaussian-limit theorem. Let K be any odd positive integer greater than one, write \[
+ N+F\sqrt2=(1+\sqrt2)^K,
+ \qquad T=\begin{pmatrix}3&2\\4&3\end{pmatrix},
+\] and use the physical Weyl operators \[
+ Q_N(a,b)=(-1)^{ab}W_N(a,b),\qquad
+ Q_N(v)Q_N(w)=e^{\pi i\det(v,w)/N}Q_N(v+w).
+\] Here \(W_N\) uses modular division by two and is an orthonormal operator basis in normalized full-space Hilbert--Schmidt norm. Take \(U_N\) with the exact covariance \(U_NQ_N(v)U_N^*=Q_N(Tv)\). Such a unitary is explicitly furnished by the cat kernel in the earlier project; its phase is immaterial here. Primality of K is not needed in this section.
+
+Put \(H=(K-1)/2\) and let \(r_1,r_2\) be the absolute row sums of \(T^H\). For a real mean-zero polynomial h supported in \(\|v\|_\infty\leq M\), assume \[
+                    N^2>M^2(4+4r_1+2r_2).                  \tag{ND.24}
+\] Define \[
+ X_{K,N}(h)=\frac1{\sqrt K}\sum_{j=0}^{K-1}
+                    U_N^j\operatorname{Op}_N(h)U_N^{-j}.
+\] Then the following equality is \textbf{exact at finite N} on the full space: \[
+             \boxed{\frac1N\operatorname{Tr}X_{K,N}(h)^2
+                                  =\sigma_T^2(h).}          \tag{ND.25}
+\] No parity assumption is made. The equality is not an assertion about individual eigenphase spacings of a kicked propagator.
+
+\textbf{Proof.} The Pell norm gives \(N^2-2F^2=-1\), whence \[
+ T^K=\begin{pmatrix}2N^2+1&2NF\\4NF&2N^2+1\end{pmatrix}
+                           \equiv I\pmod{2N}.               \tag{ND.26}
+\] Thus \(Q_N(T^Kv)=Q_N(v)\), including its physical sign, and adjoint covariance has period K. Differences of times can be reduced to \(-H\leq s\leq H\).
+
+Let \(u,v\) lie in the frequency box and suppose \(u+T^sv\equiv0\pmod N\). Use the indefinite integral norm \(q(a,b)=b^2-2a^2\), invariant under T and nonzero on every nonzero integer vector. Since the row absolute sums of \(T^s\) are bounded by those of \(T^H\), \[
+ |q(u+T^sv)|
+ \leq |q(u)|+|q(v)|+2|u_2(T^sv)_2-2u_1(T^sv)_1|
+ \leq M^2(4+4r_1+2r_2).
+\] If \(u+T^sv\) were nonzero, its norm would be a nonzero integer multiple of \(N^2\), contradicting (ND.24). Hence the congruence lifts to the exact relation \(u=-T^sv\) in \(\mathbb Z^2\).
+
+Expand the square in (ND.25). Cyclicity of trace and covariance reduce its normalized value to \[
+ \sum_{s=0}^{K-1}\frac1N\operatorname{Tr}
+        \bigl(\operatorname{Op}_N(h)\operatorname{Op}_N(\mathcal C_T^s h)\bigr).
+\] Weyl traces vanish except at the zero modular frequency. Every surviving relation lifts as above; its two Weyl factors are adjoints and have product I, with no residual phase. There is no double counting of an integer relation since a nonzero integer vector has no nontrivial T-period. Conversely, any integer orbit relation between supported frequencies reduces modulo K and lifts back to the same centered relation. Thus the sum is exactly the oriented-orbit expression (ND.1). End of proof.
+

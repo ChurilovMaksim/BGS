@@ -1,0 +1,44 @@
+ \mathcal E_A(H)=(\operatorname{tr}(B_AH))^2+\Delta\det H,
+ \qquad
+ \mathcal L_A=c\partial_{x_1}^2+(d-a)\partial_{x_1}\partial_{x_2}
+                                  -b\partial_{x_2}^2.       \tag{ND.11}
+\]
+
+\textbf{Theorem 2 (fixed critical-point obstruction).} Let \(g\) be real smooth. If \(x_0\) is a fixed point of \(S=A^{\mathsf T}\) and \(dg(x_0)=0\), then \[
+ \boxed{\Gamma_A(g)=0\quad\Longrightarrow\quad
+                   \mathcal E_A(\operatorname{Hess}g(x_0))=0.} \tag{ND.12}
+\] In particular, if the two pure second derivatives in the stable and unstable coordinate directions are both nonzero at that point, \(\Gamma_A(g)>0\). Every even \(g\) is critical at the fixed point zero, but evenness is not a hypothesis of Theorem 2. A nondegenerate extremum at a fixed point is a sufficient condition, not a necessary one.
+
+\textbf{Proof.} Put \(h=\{g,\mathcal C_Ag\}/(4\pi)\). At a fixed point, \(e_{Av}(x_0)=e_v(x_0)\), and \(q_A(Av)=q_A(v)\). Grouping the absolutely convergent twice-differentiated Fourier series by oriented orbits gives \[
+ \mathcal L_Ah(x_0)
+ =-4\pi^2\sum_{\mathcal O}q_A(v_{\mathcal O})e_{v_{\mathcal O}}(x_0)
+                       \sum_{v\in\mathcal O}\widehat h(v).
+ \tag{ND.13}
+\] If the variance is zero, every orbit sum is zero, so (ND.13) vanishes. No regularity of a putative transfer function has been assumed.
+
+Only the quadratic Taylor jet of g contributes to the second derivative of its bracket at a critical point. For \(g_2=(H_{11}x_1^2+2H_{12}x_1x_2+H_{22}x_2^2)/2\), direct differentiation yields \[
+ \mathcal L_A\{g_2,g_2\circ A^{\mathsf T}\}
+                         =t\mathcal E_A(H).                \tag{ND.14}
+\] Equivalently, diagonalize S in an area-one eigenbasis. If its eigenvalues are \(\mu,\mu^{-1}\), set \(\gamma=\mu-\mu^{-1}\); then \(\gamma^2=\Delta\), \(\mathcal L_A=-\gamma\partial_u\partial_s\), and \[
+ \mathcal E_A(H)=\Delta H_{uu}H_{ss}.
+ \tag{ND.15}
+\] The mixed quadratic coefficient of the bracket is \((\mu^{-2}-\mu^2)H_{uu}H_{ss}\), giving (ND.14). This remains true for either sign of the trace. Since \(t\ne0\), (ND.13)--(ND.14) prove (ND.12). End of proof.
+
+The identity (ND.14) was also checked as a polynomial identity with formal matrix entries and Hessian entries. Before the determinant-one specialization, its discriminant is \(t^2-4\det A\). Two hundred integer instances provide a separate regression, not the general proof.
+
+The converse of (ND.12) is false. For the Pell matrix, \[
+ g=4b_{(1,0)}-b_{(2,0)},\qquad \operatorname{Hess}g(0)=0,
+ \qquad \Gamma_T(g)=25600\pi^2>0.                            \tag{ND.16}
+\] The exact Fourier computation is retained as a negative control. A vanishing Hessian obstruction is therefore not reported as a zero of the variance.
+
+\subsubsection{A quantitative smooth version}\label{nondegeneracy:a-quantitative-smooth-version}
+
+The same obstruction has an explicit lower bound when one controls a weighted Fourier tail. Put \(C_A=|c|+|d-a|+|b|>0\), let \(s>0\), and set \[
+ \mathcal H_s(h)=\sum_v|\widehat h(v)|(1+|v|_\infty)^{s+2},
+ \qquad
+ J=\frac{|\mathcal L_Ah(x_0)|}{4\pi^2}
+   =\frac{|t\mathcal E_A(H)|}{16\pi^3}.
+\] If \(J>0\), choose an integer \[
+ R\geq\max\{1,(2C_A\mathcal H_s(h)/J)^{1/s}\}.
+\] Then \[
+                  \Gamma_A(g)\geq\frac{J^2}{32C_A^2R^6}>0. \tag{ND.17}

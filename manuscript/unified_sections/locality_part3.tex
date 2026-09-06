@@ -1,0 +1,43 @@
+Put \(r_0=1/16\) and let \(S\) be the union of the closed torus squares of halfwidth \(r_0\) centred at \((1/4,0)\) and \((3/4,0)\). If \((q,p)\in S\), the second coordinate \(2q+3p\) of \(M(q,p)\) has distance at least \[
+ 1/2-5r_0=3/16>r_0                                          \tag{LC.13}
+\] from the integers. Therefore \(S\cap M^{-1}S=\varnothing\). Every real even smooth function supported in \(S\) satisfies (LC.1). This is an infinite-dimensional space. For nonzero \(g\), \(f\) is nonzero because it equals \(g\) on \(S\). Also \(\int f=0\), regardless of the mean of \(g\).
+
+Here is the fixed example used numerically. Write \(\langle x\rangle\) for the representative of \(x\bmod1\) in \([-1/2,1/2)\), set \[
+ \beta(u)=\begin{cases}\exp(1-1/(1-u^2)),&|u|<1,\\0,&|u|\geq1,\end{cases}
+ \quad u_\pm(q)=\langle q\mp1/4\rangle/r_0,
+\] and choose \(\eta=1/3\). Then \[
+ \begin{split}
+ A(q)&=\beta(u_+(q))(1+\eta u_+(q))
+                +\beta(u_-(q))(1-\eta u_-(q)),\\
+ B(p)&=\beta(\langle p\rangle/r_0),\qquad g(q,p)=A(q)B(p).
+ \end{split}                                                \tag{LC.14}
+\] This \(g\) is real, even and nonzero. The unequal tilts of its two lobes avoid a spurious half-period translation symmetry in the numerical example; no absence of all other symmetries is claimed.
+
+For completeness, its Gevrey regularity and the nonoptimal stretched exponential bound need no black-box pseudodifferential theorem. If \(D_t=1-t^2>0\), use the complex disk \(|z-t|\leq D_t/8\). On this disk \[
+ |(1-z^2)-D_t|\leq17D_t/64,\qquad
+ \mathop{\rm Re}(1-z^2)^{-1}\geq\frac{3008}{6561D_t}>
+ \frac1{3D_t}.
+\] Cauchy's estimate and maximization of \(D_t^{-j}e^{-1/(3D_t)}\) give \[
+ |\beta^{(j)}(t)|\leq e\,24^j(j!)^2.                         \tag{LC.15}
+\] All derivatives extend by zero at \(\pm1\). Multiplication by \(1\pm\eta t\) changes the prefactor to at most \(2e\), with the same base 24.
+
+A concrete Fourier-moment estimate follows. Put \(L_0=24/r_0\), \(B_0=9L_0/\pi\) and \[
+ A_0=8r_0+(8/3)r_0eL_0^2,\qquad
+ B_1=2r_0+(2/3)r_0eL_0^2.
+\] Integrating the one-dimensional Fourier coefficients by parts \(j+2\) times and using \(\sum_{k\ne0}k^{-2}=\pi^2/3\) proves \[
+ \sum_k(1+|k|)^j|\widehat A(k)|\leq A_0B_0^j(j!)^2,
+ \quad
+ \sum_k(1+|k|)^j|\widehat B(k)|\leq B_1B_0^j(j!)^2.           \tag{LC.16}
+\] One uses \((j+2)^2(j+1)^2\leq4\,9^j\). Expanding the sum of the two frequency weights gives \[
+ \mathcal M_j(g)\leq A_0B_1(2B_0)^j(j!)^2,
+ \quad
+ \mathcal M_j(\mathcal Cg)\leq A_0B_1(14B_0)^j(j!)^2,        \tag{LC.17}
+\] since \(\|T\|_1=7\). These explicit constants are intentionally coarse and are not useful finite-size error bars for the numerical matrices below.
+
+More generally, suppose \(\mathcal M_j(g)\leq A_gB_g^j(j!)^s\) and \(\mathcal M_j(\mathcal Cg)\leq A_dB_d^j(j!)^s\) for some \(s>1\). The comparison proved in Subsection~\ref{sec:locality}.3 has the bound \[
+ \delta_N\leq{\kappa_0}^2N^2A_gA_d(C/N)^j(j!)^{2s-1},
+ \qquad C=\pi B_gB_d.                                      \tag{LC.18}
+\] For \(j=\lfloor(N/(2C))^{1/(2s-1)}\rfloor\geq1\), use \(j!\leq j^j\) to bound the last factor by \(2^{-j}\). This proves a bound \(C'{\kappa_0}^2N^2\exp(-cN^{1/(2s-1)})\), and (LC.4) follows for \(s=2\). The general factorial-growth/optimal-truncation mechanism is established Gevrey analysis; this section does not claim to originate it or to improve the best Gevrey remainders in other quantization settings.
+
+\subsection{Fixed-strength conjugacy, classical dynamics, and long times}\label{locality:fixed-strength-conjugacy-classical-dynamics-and-long-times}
+

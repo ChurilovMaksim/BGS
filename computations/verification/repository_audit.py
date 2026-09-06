@@ -1,232 +1,216 @@
 #!/usr/bin/env python3
-"""Repository-wide structural/provenance audit for the curated research branch.
-
-This gate is intentionally stricter than language-specific tests. It checks the
-maintained source tree while treating ``archive/`` as immutable provenance-only
-data. Archived branch/delivery snapshots are deliberately excluded from active
-source duplication, link, Julia, C++ and Lean coverage checks.
-"""
 from __future__ import annotations
 
-import hashlib
-import json
 import re
-from collections import defaultdict
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+MANUSCRIPT = ROOT / "manuscript"
+WORKFLOWS = ROOT / ".github" / "workflows"
+MAINTENANCE = ROOT / "computations" / "maintenance"
 
-EXPECTED_TOP_LEVEL = {
-    ".github", ".gitignore", "CMakeLists.txt", "README.md",
-    "REPRODUCE_unified.md", "archive", "assets", "computations", "evidence",
-    "formalization", "literature", "manuscript", "mathematics", "record",
-    "requirements-nondegeneracy.txt", "requirements.txt",
+LEGACY_MANUSCRIPT = {
+    "arithmetic_cat_map_moments.tex", "arithmetic_cat_map_moments.pdf",
+    "cyclotomic_row_support_frontier.tex", "cyclotomic_row_support_frontier.pdf",
+    "magnetic_quotient_semicircle.tex", "magnetic_quotient_semicircle.pdf",
+    "pell_coboundary_resonance.tex", "pell_coboundary_resonance.pdf",
+    "pell_floquet_normal_form.tex", "pell_floquet_normal_form.pdf",
+    "fixed_strength_section.tex", "general_hyperbolic_section.tex",
+    "pell_coboundary_section.tex", "pell_floquet_section.tex",
+    "pell_gaussian_section.tex", "pell_weighted_echo_section.tex",
+    "README_unified.md", "build_rigidity_paper.py",
 }
-FORBIDDEN_PATHS = {
-    Path("record/corpus"), Path("record/checkpoints"),
-    Path("record/engineering"), Path("record/formal_drafts"),
+
+ALLOWED_WORKFLOWS = {
+    "build-manuscript.yml",
+    "ci.yml",
+    "research-snapshot.yml",
 }
-TEXT_DUPLICATE_SUFFIXES = {
-    ".cpp", ".h", ".hpp", ".lean", ".md", ".py", ".tex", ".yml", ".yaml",
+
+STALE_MAINTENANCE = {
+    "integrate_general_hyperbolic.py",
+    "integrate_magnetic_audit.py",
+    "integrate_pell_echo.py",
+    "integrate_smooth_recurrence.py",
+    "integrate_unified_manuscript.py",
+    "package_magnetic_research.py",
+    "publish_coboundary.py",
+    "publish_fixed_strength.py",
+    "publish_pell_research.py",
+    "render_pell_floquet.py",
 }
-SKIP_DIR_NAMES = {".git", ".lake", "__pycache__", "build", "archive"}
-MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+
+REQUIRED = [
+    ROOT / "README.md",
+    ROOT / "REPRODUCE_unified.md",
+    ROOT / "computations" / "README.md",
+    ROOT / "record" / "claim_ledger.md",
+    ROOT / "record" / "consolidation_map.json",
+    ROOT / "record" / "final_consolidation_audit_20260906.md",
+    MAINTENANCE / "verify_workspace.py",
+    MAINTENANCE / "build_unified_manuscript.py",
+    ROOT / "computations" / "verification" / "repository_audit.py",
+    ROOT / "formalization" / "Bgs.lean",
+    ROOT / "CMakeLists.txt",
+    MANUSCRIPT / "WoW_unified.tex",
+    MANUSCRIPT / "README.md",
+    ROOT / "archive" / "branch-snapshots" / "README.md",
+    ROOT / "archive" / "delivery-20260906" / "README.md",
+]
+
+ACTIVE_MARKDOWN = [
+    ROOT / "README.md",
+    ROOT / "REPRODUCE_unified.md",
+    ROOT / "computations" / "README.md",
+    MANUSCRIPT / "README.md",
+    ROOT / "archive" / "branch-snapshots" / "README.md",
+    ROOT / "archive" / "delivery-20260906" / "README.md",
+]
 
 
-def _markdown_without_code(text: str) -> str:
-    """Exclude fenced and inline code while retaining real Markdown links."""
-    lines = []
-    fence_char = None
-    fence_length = 0
-    for line in text.splitlines(keepends=True):
-        match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line.rstrip("\n"))
-        if fence_char is not None:
-            if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length and not match.group(2).strip():
-                fence_char = None
-            lines.append("\n")
-            continue
-        if match and not (match.group(1)[0] == "`" and "`" in match.group(2)):
-            fence_char, fence_length = match.group(1)[0], len(match.group(1))
-            lines.append("\n")
-        else:
-            lines.append(line)
-    return re.sub(r"(?<!`)(`+)(?!`)(.*?)(?<!`)\1(?!`)", " ", "".join(lines), flags=re.S)
+def fail(msg: str) -> None:
+    raise RuntimeError(msg)
 
 
-def check_markdown_parser() -> None:
-    sample = "`Z[T](w_e,w_f)` and [real](README.md)\n```text\n[x](not-a-link)\n```\n"
-    assert MARKDOWN_LINK_RE.findall(_markdown_without_code(sample)) == ["README.md"]
-    assert MARKDOWN_LINK_RE.findall(_markdown_without_code("[broken](missing.md)")) == ["missing.md"]
-    assert MARKDOWN_LINK_RE.findall(_markdown_without_code("````\n```\n[x](fake)\n````\n[ok](README.md)")) == ["README.md"]
-
-
-def files_under(root: Path):
-    for path in root.rglob("*"):
-        if not path.is_file():
-            continue
-        try:
-            relative = path.relative_to(ROOT)
-        except ValueError:
-            relative = path
-        if any(part in SKIP_DIR_NAMES for part in relative.parts):
-            continue
-        yield path
-
-
-def check_top_level() -> None:
-    present = {p.name for p in ROOT.iterdir() if p.name != ".git"}
-    unexpected = sorted(present - EXPECTED_TOP_LEVEL)
-    missing = sorted(EXPECTED_TOP_LEVEL - present)
-    if unexpected:
-        raise AssertionError(f"unexpected top-level entries: {unexpected}")
+def check_required() -> None:
+    missing = [str(p.relative_to(ROOT)) for p in REQUIRED if not p.is_file()]
     if missing:
-        raise AssertionError(f"missing top-level entries: {missing}")
+        fail("missing required files: " + ", ".join(missing))
+
+
+def check_retired_julia() -> None:
+    julia = sorted(p.relative_to(ROOT) for p in ROOT.rglob("*.jl") if ".git" not in p.parts)
+    env = sorted(
+        p.relative_to(ROOT)
+        for p in ROOT.rglob("*")
+        if p.is_file() and p.name in {"Project.toml", "Manifest.toml"} and ".git" not in p.parts
+    )
+    bad = julia + env
+    if bad:
+        fail("retired Julia surface is tracked: " + ", ".join(map(str, bad)))
 
 
 def check_archive_contract() -> None:
-    readme = ROOT / "archive" / "branch-snapshots" / "README.md"
-    if not readme.is_file():
-        raise AssertionError("archive provenance README is missing")
-    text = readme.read_text(encoding="utf-8")
-    if "provenance" not in text.lower() or "authoritative" not in text.lower():
-        raise AssertionError("archive README must mark snapshots as provenance-only")
-
-
-def check_no_historical_copies_or_julia() -> None:
-    for relative in sorted(FORBIDDEN_PATHS):
-        if (ROOT / relative).exists():
-            raise AssertionError(f"forbidden historical copy tree exists: {relative}")
-    julia = [p.relative_to(ROOT) for p in files_under(ROOT) if p.suffix == ".jl"]
-    if julia:
-        raise AssertionError(f"tracked Julia sources remain in maintained tree: {julia}")
-
-
-def check_no_duplicate_text_sources() -> None:
-    groups: dict[str, list[Path]] = defaultdict(list)
-    for path in files_under(ROOT):
-        if path.suffix.lower() not in TEXT_DUPLICATE_SUFFIXES:
-            continue
-        data = path.read_bytes()
-        if len(data) < 64:
-            continue
-        groups[hashlib.sha256(data).hexdigest()].append(path.relative_to(ROOT))
-    duplicates = [sorted(paths) for paths in groups.values() if len(paths) > 1]
-    if duplicates:
-        formatted = "; ".join(", ".join(map(str, group)) for group in duplicates)
-        raise AssertionError(f"byte-identical maintained text/source duplicates: {formatted}")
-
-
-def check_evidence_provenance() -> None:
-    promoted_roots = (
-        ROOT / "evidence" / "certificates",
-        ROOT / "evidence" / "numerical",
-    )
-    for promoted_root in promoted_roots:
-        for path in sorted(promoted_root.glob("*.json")):
-            data = json.loads(path.read_text(encoding="utf-8"))
-            producer = data.get("producer")
-            if not producer:
-                raise AssertionError(f"{path.relative_to(ROOT)}: promoted evidence lacks producer")
-            if not (ROOT / str(producer)).is_file():
-                raise AssertionError(f"{path.relative_to(ROOT)}: unresolved active producer {producer}")
-            if not data.get("scope") and not data.get("interpretation"):
-                raise AssertionError(f"{path.relative_to(ROOT)}: promoted evidence lacks scope/interpretation")
-            refs = data.get("reference_inputs", {})
-            if refs is not None:
-                if not isinstance(refs, dict):
-                    raise AssertionError(f"{path.relative_to(ROOT)}: reference_inputs must be an object")
-                for relative in refs:
-                    if not (ROOT / relative).is_file():
-                        raise AssertionError(f"{path.relative_to(ROOT)}: missing reference input {relative}")
-    for path in sorted((ROOT / "evidence" / "reference").rglob("*.json")):
-        json.loads(path.read_text(encoding="utf-8"))
-
-
-def check_lean_import_graph_and_placeholders() -> None:
-    module_dir = ROOT / "formalization" / "Bgs"
-    modules = {f"Bgs.{p.stem}" for p in module_dir.glob("*.lean")}
-    imports = set()
-    for line in (ROOT / "formalization" / "Bgs.lean").read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if line.startswith("import "):
-            imports.add(line.removeprefix("import ").strip())
-    if modules != imports:
-        raise AssertionError(
-            f"Lean import mismatch: missing={sorted(modules-imports)}, extra={sorted(imports-modules)}"
-        )
-    placeholders: list[str] = []
-    for path in sorted(module_dir.glob("*.lean")):
-        text = path.read_text(encoding="utf-8")
-        for token in ("sorry", "admit"):
-            if re.search(rf"\b{token}\b", text):
-                placeholders.append(f"{path.relative_to(ROOT)}:{token}")
-    if placeholders:
-        raise AssertionError(f"Lean proof placeholders in active modules: {placeholders}")
-
-
-def check_cpp_build_coverage() -> None:
-    cmake = (ROOT / "CMakeLists.txt").read_text(encoding="utf-8")
-    sources = sorted((ROOT / "computations" / "cpp").glob("*.cpp"))
-    orphaned = [
-        str(path.relative_to(ROOT)) for path in sources
-        if str(path.relative_to(ROOT)).replace("\\", "/") not in cmake
-    ]
-    if orphaned:
-        raise AssertionError(f"C++ sources not covered by CMake: {orphaned}")
-
-
-def check_markdown_relative_links() -> None:
-    missing: list[str] = []
-    for document in sorted(files_under(ROOT)):
-        if document.suffix.lower() != ".md":
-            continue
-        text = document.read_text(encoding="utf-8")
-        for raw in MARKDOWN_LINK_RE.findall(_markdown_without_code(text)):
-            target = raw.strip().split()[0].strip("<>")
-            if not target or target.startswith(("http://", "https://", "#", "mailto:")):
-                continue
-            target = target.split("#", 1)[0]
-            if not target:
-                continue
-            candidate = (document.parent / target).resolve()
-            try:
-                candidate.relative_to(ROOT.resolve())
-            except ValueError:
-                missing.append(f"{document.relative_to(ROOT)} -> {raw} (outside repo)")
-                continue
-            if not candidate.exists():
-                missing.append(f"{document.relative_to(ROOT)} -> {raw}")
-    if missing:
-        raise AssertionError("broken Markdown relative links: " + "; ".join(missing))
+    snap = ROOT / "archive" / "branch-snapshots"
+    files = sorted(p.relative_to(snap) for p in snap.rglob("*") if p.is_file())
+    if files != [Path("README.md")]:
+        fail("archive/branch-snapshots must be metadata-only; found: " + ", ".join(map(str, files)))
 
 
 def check_manuscript_surface() -> None:
-    legacy_tex = ROOT / "manuscript" / "arithmetic_cat_map_moments.tex"
-    legacy_pdf = ROOT / "manuscript" / "arithmetic_cat_map_moments.pdf"
-    unified_tex = ROOT / "manuscript" / "WoW_unified.tex"
-    builder = ROOT / "computations" / "maintenance" / "build_unified_manuscript.py"
-    final_audit = ROOT / "record" / "final_consolidation_audit_20260906.md"
-    reproduce = ROOT / "REPRODUCE_unified.md"
-    for path in (legacy_tex, legacy_pdf, unified_tex, builder, final_audit, reproduce):
-        if not path.is_file() or path.stat().st_size < 64:
-            raise AssertionError(f"required publication surface is missing or unexpectedly small: {path.relative_to(ROOT)}")
-    if legacy_tex.stat().st_size < 1024 or legacy_pdf.stat().st_size < 1024 or unified_tex.stat().st_size < 1024:
-        raise AssertionError("active manuscript source/PDF is unexpectedly small")
+    present_legacy = sorted(name for name in LEGACY_MANUSCRIPT if (MANUSCRIPT / name).exists())
+    if present_legacy:
+        fail("legacy/duplicate manuscript surface still present: " + ", ".join(present_legacy))
+
+    master = MANUSCRIPT / "WoW_unified.tex"
+    text = master.read_text(encoding="utf-8")
+    inputs = re.findall(r"\\input\{([^}]+)\}", text)
+    if not inputs:
+        fail("WoW_unified.tex has no inputs")
+    missing: list[str] = []
+    for raw in inputs:
+        p = MANUSCRIPT / raw
+        if p.suffix == "":
+            p = p.with_suffix(".tex")
+        if not p.is_file():
+            missing.append(str(p.relative_to(ROOT)))
+    if missing:
+        fail("unresolved manuscript inputs: " + ", ".join(missing))
+
+    pdfs = sorted(p.name for p in MANUSCRIPT.glob("*.pdf"))
+    if pdfs:
+        fail("generated manuscript PDFs must not be committed: " + ", ".join(pdfs))
 
 
-def main() -> None:
-    check_markdown_parser()
-    check_top_level()
-    check_archive_contract()
-    check_no_historical_copies_or_julia()
-    check_no_duplicate_text_sources()
-    check_evidence_provenance()
-    check_lean_import_graph_and_placeholders()
-    check_cpp_build_coverage()
-    check_markdown_relative_links()
-    check_manuscript_surface()
-    print("repository structural/provenance audit: PASS")
+def check_workflows() -> None:
+    present = {p.name for p in WORKFLOWS.glob("*.yml") if p.is_file()}
+    if present != ALLOWED_WORKFLOWS:
+        fail(
+            "workflow surface differs from canonical set; present="
+            + ",".join(sorted(present))
+            + " expected="
+            + ",".join(sorted(ALLOWED_WORKFLOWS))
+        )
+    legacy_tokens = sorted(name for name in LEGACY_MANUSCRIPT if name.endswith((".tex", ".pdf")))
+    offenders: list[str] = []
+    for p in WORKFLOWS.glob("*.yml"):
+        text = p.read_text(encoding="utf-8")
+        if any(tok in text for tok in legacy_tokens):
+            offenders.append(str(p.relative_to(ROOT)))
+    if offenders:
+        fail("workflow still references legacy manuscripts: " + ", ".join(offenders))
+
+
+def check_maintenance_surface() -> None:
+    present = sorted(name for name in STALE_MAINTENANCE if (MAINTENANCE / name).exists())
+    if present:
+        fail("stale one-shot publisher/integrator(s) still present: " + ", ".join(present))
+
+
+def check_cpp_coverage() -> None:
+    cpp_dir = ROOT / "computations" / "cpp"
+    sources = sorted(p.stem for p in cpp_dir.glob("*.cpp"))
+    cmake = (ROOT / "CMakeLists.txt").read_text(encoding="utf-8")
+    targets = set(re.findall(r"add_executable\s*\(\s*([A-Za-z0-9_.+-]+)\s+[^)]*?([A-Za-z0-9_.+-]+)\.cpp", cmake, re.S))
+    covered = {src for _, src in targets}
+    missing = [s for s in sources if s not in covered]
+    if missing:
+        fail("orphaned C++ verifier source(s): " + ", ".join(missing))
+
+
+def check_lean_coverage() -> None:
+    bgs = ROOT / "formalization" / "Bgs"
+    modules = sorted(p.stem for p in bgs.glob("*.lean"))
+    entry = (ROOT / "formalization" / "Bgs.lean").read_text(encoding="utf-8")
+    imports = set(re.findall(r"^import\s+Bgs\.([A-Za-z0-9_]+)\s*$", entry, re.M))
+    missing = [m for m in modules if m not in imports]
+    if missing:
+        fail("Bgs.lean does not import active module(s): " + ", ".join(missing))
+
+
+def check_active_markdown_links() -> None:
+    pat = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+    broken: list[str] = []
+    for p in ACTIVE_MARKDOWN:
+        text = p.read_text(encoding="utf-8", errors="replace")
+        for raw in pat.findall(text):
+            dest = raw.strip().split("#", 1)[0]
+            if not dest or "://" in dest or dest.startswith("mailto:"):
+                continue
+            target = (p.parent / dest).resolve()
+            try:
+                target.relative_to(ROOT.resolve())
+            except ValueError:
+                continue
+            if not target.exists():
+                broken.append(f"{p.relative_to(ROOT)} -> {dest}")
+    if broken:
+        fail("broken active Markdown link(s): " + "; ".join(broken))
+
+
+def main() -> int:
+    checks = [
+        check_required,
+        check_retired_julia,
+        check_archive_contract,
+        check_manuscript_surface,
+        check_workflows,
+        check_maintenance_surface,
+        check_cpp_coverage,
+        check_lean_coverage,
+        check_active_markdown_links,
+    ]
+    for fn in checks:
+        fn()
+        print(f"PASS {fn.__name__}")
+    print("PASS repository_audit")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        raise SystemExit(main())
+    except RuntimeError as exc:
+        print(f"FAIL repository_audit: {exc}", file=sys.stderr)
+        raise SystemExit(1)

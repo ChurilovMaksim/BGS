@@ -1,0 +1,72 @@
+\end{align}
+The normalized fourth/second moment ratio tends to $3$ in the maintained split
+double average below $\theta<1/3$.  This is a fourth-moment theorem, not a CLT.
+
+The pure off/off family contains a coherent reducible fibre.  For generic
+$\lambda=(h_1,h_2)$ it occurs at
+\[
+t_\lambda=\frac{2}{c(h_1)-c(h_2)}
+\]
+and has exactly $2p-8$ valid affine points.  After extracting the spike, Igusa
+geometric monodromy \cite{BLV2009} and the Fouvry--Kowalski--Michel
+trace-correlation argument \cite{FKM2013} give square-root quasi-orthogonality
+between non-isomorphic geometric parameter classes.
+
+\begin{theorem}[Corrected off/off variance]\label{thm:offoff}
+\begin{equation}\label{eq:offoff}
+\Var_{t\ne0}O(t)
+\ll pE_+(A)+K^2p+K^4p^{1/2}+K^4,
+\end{equation}
+with an absolute implied constant.
+\end{theorem}
+
+Thus the off/off layer has collapsed onto the same pointwise Cayley-energy
+bottleneck as the mixed layer.
+
+\section{Exact trace-to-local-statistics bridge}
+
+Let $U$ be an $N\times N$ unitary matrix with eigenvalues
+$e^{2\pi i\theta_1},\ldots,e^{2\pi i\theta_N}$.  For a zero-sum integer tuple
+$m_1+\cdots+m_k=0$, define
+\[
+D_U(m_1,\ldots,m_k)
+ =\sum_{j_1,\ldots,j_k\ \mathrm{distinct}}
+ e^{2\pi i\sum_{a=1}^km_a\theta_{j_a}}.
+\]
+For a set partition $\pi$ of $\{1,\ldots,k\}$, put
+\[
+\mu(\pi)=\prod_{B\in\pi}(-1)^{|B|-1}(|B|-1)!.
+\]
+
+\begin{theorem}[Factorial trace identity]\label{thm:factorial}
+\begin{equation}\label{eq:factorial}
+D_U(m_1,\ldots,m_k)
+ =\sum_{\pi}\mu(\pi)
+   \prod_{B\in\pi}
+   \operatorname{Tr}U^{\sum_{a\in B}m_a}.
+\end{equation}
+\end{theorem}
+
+This is M\"obius inversion on the partition lattice.  Let
+$\phi\in\mathcal S(\mathbf R^{k-1})$ and periodize it at the mean-spacing scale.
+Poisson summation gives the exact microscopic statistic
+\begin{equation}\label{eq:trace-local}
+C_{k,N}(U;\phi)
+ =N^{-k}\sum_{m\in\Z^{k-1}}
+  \widehat\phi(m/N)D_U(m_1,\ldots,m_k),
+\end{equation}
+where $m_k=-(m_1+\cdots+m_{k-1})$.  In particular,
+\begin{equation}\label{eq:pair-local}
+C_{2,N}(U;\phi)
+ =N^{-2}\sum_{m\in\Z}\widehat\phi(m/N)
+  \bigl(|\operatorname{Tr}U^m|^2-N\bigr).
+\end{equation}
+If $\widehat\phi$ has compact support, the relevant powers satisfy
+$|m|=\Theta(N)$: microscopic local statistics probe the Heisenberg scale.
+
+A weighted comparison of the quantities $D_U(m)$ with the matching random
+matrix ensemble on this range is therefore sufficient for the corresponding
+band-limited microscopic correlation theorem.  Arbitrary Schwartz tests
+additionally require a uniform high-frequency tail bound.  This deterministic
+Fourier bridge is exact; the required arithmetic/spectral joint-trace estimates
+for the correct desymmetrized cat-map block remain open.
