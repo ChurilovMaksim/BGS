@@ -1,0 +1,172 @@
+\section{The same sharp law for censored and full heterodyne detection}
+\label{sec:heterodyne-aperture}
+We now change the measurement, rather than silently identifying binary
+coherent tests with heterodyne detection. Standard multimode heterodyne
+measurement produces $Z\in\mathbb C^s$ with Lebesgue density
+$Q_\rho(z)=\pi^{-s}\langle z|\rho|z\rangle$. Its radius-$R$ censored version
+reports $Z$ when $\|Z\|\le R$ and a single symbol $\star$ otherwise. Every
+copy is counted, including outcomes labelled $\star$; the data are not
+postselected or renormalized. For $R=\infty$ this is ordinary heterodyne.
+Let $\mathfrak H_B(R)$ be its minimax expected trace-distance error on the
+same class $\mathcal S_{s,\beta,E}$, optimized over all estimators from $B$
+independent outcomes.
+
+\begin{theorem}[Heterodyne minimax law]
+\label{thm:heterodyne-minimax}
+Fix $s\ge1$, $\beta,E,R_0>0$. Uniformly for $R\ge R_0$, including
+$R=\infty$ and radii depending on $B$, one has
+\[
+ \boxed{
+ c\left(\frac{1+\log_+((\log B)/R^2)}{\log B}\right)^{\beta/2}
+ \le\mathfrak H_B(R)\le
+ C\left(\frac{1+\log_+((\log B)/R^2)}{\log B}\right)^{\beta/2}}
+ \tag{B.1}\label{eq:heterodyne-minimax}
+\]
+for all sufficiently large $B$. The lower bound holds on pure states. The
+upper bound needs no rank constraint. Constants may depend on the fixed
+$s,\beta,E,R_0$, not on $R$ or $B$.
+\end{theorem}
+
+\subsection{Upper bound from local counts and stable regularization}
+No independent repetitions at prescribed points are available in heterodyne
+sampling. Instead estimate the density locally, using the very same samples
+at each of the finitely many interpolation nodes. For every state,
+\[
+ |Q_\rho(z)-Q_\rho(w)|\le\pi^{-s}\|z-w\|,
+ \tag{B.2}\label{eq:heterodyne-lipschitz}
+\]
+since the operator norm distance of the two coherent projectors is
+$\sqrt{1-e^{-\|z-w\|^2}}\le\|z-w\|$.
+
+Put $T=\log B$, choose $K=\lfloor cK_R(T)\rfloor$ and
+$S=\min(R^2/4,K)$, and use the Chebyshev grid with $L=128sK$ from the
+previous section. Every node $z_j$ has norm at most $R/2$. Let
+$h=B^{-1/(4s+2)}$ and $v_{2s}=\pi^s/s!$, the unit-ball volume in
+$2s$ real dimensions. For large $B$ one has $h<R_0/2$. Therefore the
+balls $B(z_j,h)$ lie within the recorded region, and their membership is
+known even for censored observations. Define
+\[
+ \widehat Q_j=\frac{1}{Bv_{2s}h^{2s}}
+          \sum_{b=1}^B\mathbf1_{\{Z_b\in B(z_j,h)\}}.
+ \tag{B.3}\label{eq:heterodyne-density-estimate}
+\]
+The bias is at most $\pi^{-s}h$ by \eqref{eq:heterodyne-lipschitz}.
+Hoeffding's inequality and the union bound, without independence between
+nodes, give simultaneously with probability at least $1-B^{-2}$,
+\[
+ |\pi^s\widehat Q_j-p_\rho(z_j)|
+ \le h+\frac{s!}{h^{2s}}
+       \sqrt{\frac{\log(2(L+1)^{2s}B^2)}{2B}}
+ =\exp\!\left(-\frac{T}{4s+2}+O_s(\log T)\right).
+ \tag{B.4}\label{eq:heterodyne-density-error}
+\]
+Replacing $R$ by $R/2$ in the analytic interpolation estimate changes
+$\Phi_R(K)$ by at most $K\log4$, hence by a fixed factor. Choose $c>0$
+small enough that the noise amplification is at most $\exp(T/(8s+4))$
+up to polynomial factors. Lemmas~\ref{lem:aperture-coefficients} and
+\ref{lem:aperture-state}, and the analytic bias bound
+\eqref{eq:aperture-bias}, then give expected loss at most
+$CK_R(T)^{-\beta/2}$. The estimate is the normalized positive part of a
+finite reconstructed block; it is a genuine density operator. This proves
+the upper bound in \eqref{eq:heterodyne-minimax}.
+
+\subsection{An explicit exponentially indistinguishable pure-state pair}
+Use \eqref{eq:aperture-pair}, now with even $n=2k$. With $a_z,b_z$ as in
+the preceding section,
+\[
+ \bigl(\sqrt{Q_+(z)}-\sqrt{Q_-(z)}\bigr)^2
+       \le4\pi^{-s}\min(a_z^2,b_z^2)
+       \le4\pi^{-s}a_zb_z.
+\]
+Integration over the whole space separates the vacuum factors in modes
+$2,\ldots,s$ and gives the finite, explicit bound
+\begin{align}
+ h^2(Q_+,Q_-)
+ &\le4\sqrt{u(1-u)}\frac{\Gamma(n/2+1)}{\sqrt{n!}}\nonumber\\
+ &=\frac{4\sqrt{u(1-u)}}{\sqrt{\binom{2k}{k}}}
+ \le4\sqrt{u(n+1)}\,2^{-n/2}.
+ \tag{B.5}\label{eq:heterodyne-overlap}
+\end{align}
+The last inequality follows from
+$\binom{2k}{k}\ge2^{2k}/(2k+1)$: the central binomial coefficient is the
+largest of $2k+1$ coefficients whose sum is $2^{2k}$.
+This is an upper bound on statistical distinguishability, not merely a
+small difference of mean measurements.
+
+For a ball centred at the origin the two probabilities of $\star$ are
+exactly equal. Indeed the difference of the two densities is proportional
+to $\cos(n\arg z_1)$, whose angular integral vanishes on any such ball.
+The censored Hellinger distance therefore has only the inside-ball
+contribution. Bounding its integrand by $4\pi^{-s}b_z^2$ and integrating
+the other modes over their whole spaces gives
+\[
+ h_R^2(Q_+,Q_-)
+ \le \frac{4u}{n!}\int_0^{R^2}e^{-x}x^n\,dx
+ \le\frac{4uR^{2n+2}}{(n+1)!}.
+ \tag{B.6}\label{eq:heterodyne-aperture-overlap}
+\]
+For $R^2\le n$ this is at most $4uR^{2n}/n!$. Together with
+\eqref{eq:heterodyne-overlap} and $n!\ge(n/e)^n$, it follows that
+\[
+ h_R^2(Q_+,Q_-)
+ \le C_E\sqrt{n+1}\,
+                              \exp(-c\Phi_R(n))
+ \tag{B.7}\label{eq:heterodyne-small}
+\]
+for an absolute $c>0$ and large $n$, uniformly for every $R>0$.
+For $R^2>n$ the global estimate suffices; for $R^2\le n$ compare the
+two exponent bounds, as in \eqref{eq:aperture-hellinger}.
+
+For $B$ independent outcomes, product affinity gives
+$h^2(\mathbb P_+^{\otimes B},\mathbb P_-^{\otimes B})\le B h_R^2$.
+Choose the least even integer $n\ge C K_R(\log B)$ with a sufficiently
+large constant. Then \eqref{eq:heterodyne-small} makes the transcript total
+variation at most $1/2$ for all large $B$. The two states remain separated
+in trace distance by at least $\sqrt{2E}n^{-\beta/2}$. The same two-point
+testing argument as before gives risk at least one eighth of that distance.
+This proves the lower bound and completes Theorem~\ref{thm:heterodyne-minimax}.
+
+\subsection{Consequences and comparison with prior tomography bounds}
+Both the censored-heterodyne model and the adaptive binary coherent-test
+model have the same minimax order, although they are different statistical
+experiments and our proofs use different upper estimators and Hellinger
+bounds. The copy-complexity law \eqref{eq:aperture-complexity} holds for both.
+For fixed mean energy, ordinary heterodyne therefore requires and suffices
+with $\exp(\Theta(\varepsilon^{-2}))$ copies in this worst-case trace-distance
+problem. For a fixed finite recorded ball, the corresponding formula is
+\[
+ B_*(\varepsilon,R)=
+ \exp\!\bigl(\Theta(\varepsilon^{-2}\log(1/\varepsilon))\bigr)
+ \quad(\beta=1,\ 0<R<\infty\text{ fixed}).
+\]
+No statement here covers arbitrary squeezed Gaussian measurements,
+homodyne detection, or measurements jointly acting on several copies.
+Adaptive passive transformations followed by uncensored heterodyne only
+relabel the complete outcome and cannot evade its lower bound.
+
+Exponential heterodyne upper bounds at a hard photon cutoff were already
+reported by Gandhari et al.~\cite{Gandhari2024}; their paper explicitly
+leaves optimal lower bounds open. General moment-constrained tomography
+with more general measurements is studied by Mele et al.~\cite{Mele2025}.
+These are not priority claims for the difficulty of heterodyne inversion.
+The result proved here is a matching trace-distance rate under only one
+photon-moment bound, with no state truncation assumption and a uniform
+finite-aperture transition.
+
+A source-level distinction matters in comparing Becker et al.~\cite{BDLR2024}.
+The explicit heterodyne Theorem 4 in the journal version (Theorem 11 in
+arXiv v2) retains the cutoff-dependent norm
+$\widetilde\Sigma_r^{(\alpha)}(M,R)$ in its sample bound. It must not be
+replaced by a uniform constant. The overview Theorem 2 of the journal
+version (Theorem 3 in arXiv v2), read as a uniform polynomial-in-accuracy
+bound for full trace-norm recovery using ordinary heterodyne under only a
+fixed moment bound, is incompatible with the explicit pair
+\eqref{eq:heterodyne-overlap}. For an integer moment order $\beta$ our pair
+also satisfies
+$\operatorname{Tr}(\rho_n^\pm(I+\mathcal N)^\beta)\le1+2^\beta E$ uniformly
+in $n$, so changing between the two moment conventions cannot remove the
+conflict. This narrow comparison does not retract the explicit
+cutoff-dependent theorem, the homodyne results, or statements about a fixed
+finite set of polynomial observables. No author correspondence or accepted
+correction is claimed; the comparison and our proof require independent
+review.

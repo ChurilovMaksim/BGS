@@ -1,0 +1,421 @@
+\section{Aperture-dependent minimax tomography with coherent-state tests}
+\label{sec:coherent-aperture}
+This section gives matching deterministic and statistical rates for a specified
+measurement model. A copy is measured with the binary POVM
+$\{\Pi_z,I-\Pi_z\}$, where $\Pi_z=|z\rangle\langle z|$ is a normalized
+multimode coherent-state projector. Classical adaptation of $z$ is allowed;
+collective measurements, squeezing, and other measurement effects are not.
+This is not the continuous-outcome heterodyne POVM. Unlike the earlier shell
+injectivity theorem, the upper bounds below use points throughout a ball and
+do not assume bounded state rank. A photon cutoff is used in the estimator,
+with a proved bias bound, not imposed on the unknown state.
+
+\subsection{State class, data metric, and main statements}
+Fix a number of modes $s\ge1$, a moment exponent $\beta>0$, and $E>0$. Let
+$\mathcal N=\sum_{j=1}^s a_j^*a_j$ be the total photon-number operator and set
+\[
+ \mathcal S_{s,\beta,E}
+ =\{\rho\ge0:\operatorname{Tr}\rho=1,
+                    \operatorname{Tr}(\rho\mathcal N^\beta)\le E\}.
+\]
+Thus $E$ bounds the moment itself; at $\beta=1$ it is the mean photon number.
+Write $p_\rho(z)=\langle z|\rho|z\rangle=\pi^sQ_\rho(z)$ and
+$D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1$.
+For $0<R\le\infty$ define
+\[
+ d_R(\rho,\sigma)=\sup_{\|z\|\le R}|p_\rho(z)-p_\sigma(z)|,
+ \quad
+ \Omega_E(R,\delta)=\sup_{\substack{\rho,\sigma\in\mathcal S_{s,\beta,E}\\
+                                  d_R(\rho,\sigma)\le\delta}}
+                                  D(\rho,\sigma).
+\]
+An infinite radius means all of $\mathbb C^s$. Use the conventions
+$\log_+ x=\max(0,\log x)$ and $\log_+(x/\infty)=0$, and put
+\[
+ G_R(T)=1+\log_+(T/R^2),\qquad K_R(T)=T/G_R(T).
+ \tag{A.1}\label{eq:aperture-scale}
+\]
+All asymptotic constants below may depend on the fixed $s,\beta,E,R_0$,
+but are uniform for $R\ge R_0>0$, including radii that vary with $T$.
+No uniform claim as the number of modes tends to infinity is made.
+
+\begin{theorem}[Sharp deterministic modulus on a ball]
+\label{thm:aperture-modulus}
+For $T=\log(1/\delta)$ sufficiently large,
+\[
+ \boxed{\quad
+ c\,K_R(T)^{-\beta/2}
+ \le\Omega_E(R,\delta)\le C\,K_R(T)^{-\beta/2}.
+ \quad}
+ \tag{A.2}\label{eq:aperture-modulus}
+\]
+The lower bound already holds for pairs of pure states of moment exactly $E$.
+The upper bound holds for states of arbitrary, possibly infinite rank.
+\end{theorem}
+
+For $B$ copies, let $\mathfrak R_B(R)$ be the infimum, over all adaptive
+binary coherent-test protocols and density-operator estimators, of
+$\sup_{\rho\in\mathcal S_{s,\beta,E}}\mathbb E_\rho D(\widehat\rho,\rho)$.
+At each round the chosen amplitude has norm at most $R$ and a fresh copy is
+measured. The protocol may depend on $B,s,\beta,E,R$.
+
+\begin{theorem}[Sharp minimax rate, including classical adaptation]
+\label{thm:aperture-minimax}
+For all sufficiently large integers $B$,
+\[
+ \boxed{\quad
+ c\,K_R(\log B)^{-\beta/2}
+ \le\mathfrak R_B(R)\le C\,K_R(\log B)^{-\beta/2}.
+ \quad}
+ \tag{A.3}\label{eq:aperture-minimax}
+\]
+A nonadaptive tensor-Chebyshev design attains the upper order. The lower
+bound holds even if the unknown state is promised pure, and even against
+randomized adaptive choices of coherent amplitudes.
+\end{theorem}
+
+In particular, at fixed finite $R$ and $\beta=1$ the rate is
+$\sqrt{\log\log B/\log B}$; with arbitrary amplitudes it is
+$(\log B)^{-1/2}$. The transition is described by the whole factor $G_R$,
+not just these endpoints. For instance $R^2=\log B/(\log\log B)^a$, with
+fixed $a>0$, gives order $\sqrt{\log\log\log B/\log B}$ at $\beta=1$.
+A bounded-rank promise with any rank bound at least one does not improve
+these minimax orders, when the estimate may be an arbitrary density operator.
+These are rates up to fixed multiplicative constants, not sharp leading
+constants or claims about optimal runtime.
+
+\subsection{A finite interpolation estimate}
+Let $P_K$ project onto total occupations at most $K$, and let
+$d_K=\binom{K+s}{s}$. For $0<S\le R^2$ put $a=\sqrt{S/(2s)}$.
+For an integer $L\ge\max(2s,16S)$ use the $(L+1)^{2s}$ nodes whose real
+coordinates are
+\[
+ x_j=a\cos\frac{(j+1/2)\pi}{L+1},\qquad 0\le j\le L.
+ \tag{A.4}\label{eq:aperture-nodes}
+\]
+Each complex node lies in the ball of squared radius $S$.
+Define
+\begin{align}
+ A_K(S)&=\max\{1,K!(2s/S)^K\},\nonumber\\
+ C_{s,L}&=4^s(L+1)^{2s}3^L,\nonumber\\
+ \tau_{s,L}(S)&=4\sqrt{\binom{L+2s}{2s-1}}
+                    \frac{(2S)^{(L+1)/2}}{\sqrt{(L+1)!}}.
+ \tag{A.5}\label{eq:aperture-constants}
+\end{align}
+
+\begin{lemma}[Low coefficients from a finite probability grid]
+\label{lem:aperture-coefficients}
+Suppose $L\ge2K$ and two states obey
+$|p_\rho-p_\sigma|\le\eta$ at all nodes in \eqref{eq:aperture-nodes}.
+Then, for all occupation multiindices $|\mu|,|\nu|\le K$,
+\[
+ |(\rho-\sigma)_{\mu\nu}|
+ \le C_{s,L}A_K(S)\{e^S\eta+\tau_{s,L}(S)\}.
+ \tag{A.6}\label{eq:aperture-coefficient}
+\]
+There is also an explicit linear reconstruction from noisy values of a single
+state, with the same bound on each low matrix entry if the nodal probability
+errors are at most $\eta$.
+\end{lemma}
+\begin{proof}
+For $\Delta=\rho-\sigma$ define
+\[
+ F_\Delta(z)=e^{\|z\|^2}p_\Delta(z)
+   =\sum_{\mu,\nu}\frac{\Delta_{\mu\nu}
+                           \overline z^\mu z^\nu}{\sqrt{\mu!\nu!}}.
+ \tag{A.7}\label{eq:aperture-entire}
+\]
+The entries of $\Delta$ have modulus at most two. For total degree $j$,
+Cauchy--Schwarz and the multinomial identity bound the absolute sum on
+$\|z\|^2\le S$ by
+\[
+ 2\sqrt{\binom{j+2s-1}{2s-1}}\frac{(2S)^{j/2}}{\sqrt{j!}}.
+\]
+The ratio of consecutive summands without the leading two is
+$\sqrt{2S(j+2s)}/(j+1)\le1/2$ for $j\ge L$ under the stated restrictions.
+Consequently the total-degree-$L$ Taylor truncation $T_L$ has uniform error
+at most $\tau_{s,L}(S)$. The same bound works for a single state.
+
+In $2s$ real coordinates $T_L$ is a polynomial of total degree at most $L$.
+Tensor discrete Chebyshev orthogonality at the chosen nodes recovers its
+Chebyshev coefficients exactly. Keep only indices of total degree at most
+$L$; all others are zero for $T_L$. The nodal error in $F_\Delta$ is bounded
+by $e^S\eta+\tau_{s,L}(S)$. Each recovered coefficient error is at most
+$4^s$ times this bound, because every tensor cosine has modulus at most one
+and each nonconstant one-dimensional coefficient has prefactor two.
+
+The sum of absolute monomial coefficients of the Chebyshev polynomial $T_j$
+is at most $3^j$, by its recurrence. Replacing each real coordinate by
+$(z_\ell+\overline z_\ell)/2$ or
+$(z_\ell-\overline z_\ell)/(2i)$ does not increase the sum of absolute
+coefficients of a homogeneous monomial. Scaling by $a$ contributes exactly
+$a^{-d}$ to coefficients of total degree $d$. There are at most
+$(L+1)^{2s}$ retained Chebyshev terms. It follows that the coefficient error
+at $\overline z^\mu z^\nu$ is bounded by
+$C_{s,L}a^{-|\mu|-|\nu|}(e^S\eta+\tau_{s,L})$.
+
+Finally, $\mu!\le|\mu|!$. The sequence $\sqrt{j!}\,a^{-j}$ is log-convex,
+so its maximum for $0\le j\le K$ is attained at an endpoint. Multiplying
+two such maxima bounds
+$\sqrt{\mu!\nu!}a^{-|\mu|-|\nu|}$ by $A_K(S)$.
+The coefficients of $T_L$ below total degree $2K$ are the exact corresponding
+coefficients of \eqref{eq:aperture-entire}. This proves the estimate and
+describes the reconstruction. Hermitian symmetrization cannot enlarge the
+largest entrywise error relative to the true Hermitian block.
+\end{proof}
+
+\begin{lemma}[State reconstruction and controlled cutoff bias]
+\label{lem:aperture-state}
+If the reconstructed Hermitian block $M$ has entrywise error at most $b$
+relative to $P_K\rho P_K$, take its positive part and normalize its trace,
+using the vacuum state if the positive part is zero. The resulting state
+$\widehat\rho$, supported on $P_K$, satisfies
+\[
+ D(\widehat\rho,\rho)
+ \le \tfrac32\sqrt{E/(K+1)^\beta}+2d_K^{3/2}b
+ \tag{A.8}\label{eq:aperture-reconstruction}
+\]
+whenever $E/(K+1)^\beta\le1/2$. For two states in the moment class,
+\[
+ D(\rho,\sigma)
+ \le2\sqrt{E/(K+1)^\beta}
+    +\tfrac12d_K^{3/2}\max_{|\mu|,|\nu|\le K}|\Delta_{\mu\nu}|.
+ \tag{A.9}\label{eq:aperture-two-state}
+\]
+\end{lemma}
+\begin{proof}
+The omitted probability $q=\operatorname{Tr}((I-P_K)\rho)$ is at most
+$E/(K+1)^\beta$. Decomposing $\rho$ into rank-one states and applying
+Cauchy--Schwarz gives
+$\|\rho-P_K\rho P_K\|_1\le2\sqrt q$.
+Entrywise error $b$ implies trace-norm block error
+$h\le d_K^{3/2}b$ by the Hilbert--Schmidt inequality.
+If $A=M_+$, positivity of the true block implies
+$\operatorname{Tr}M_-\le h$, hence
+$\|A-P_K\rho P_K\|_1\le2h$.
+If $A\ne0$, normalizing it changes trace norm by
+$|1-\operatorname{Tr}A|\le q+2h$.
+Thus $D\le\sqrt q+q/2+2h$, which proves \eqref{eq:aperture-reconstruction}.
+If $A=0$, then $h\ge1-q\ge1/2$, so the displayed bound is at least one
+and remains valid for the vacuum fallback. Applying the cutoff bound to
+both states and the block trace-norm bound proves \eqref{eq:aperture-two-state}.
+\end{proof}
+
+\subsection{Balancing the aperture and the cutoff}
+Set
+\[
+ \Phi_R(K)=K\{1+\log_+(K/R^2)\},\quad
+ S=\min(R^2,K),\quad L=128sK.
+ \tag{A.10}\label{eq:aperture-phi}
+\]
+There is a constant $c_s$ such that the noise multiplier in
+\eqref{eq:aperture-coefficient} obeys
+\[
+ C_{s,L}A_K(S)e^S\le C_sK^{2s}\exp(c_s\Phi_R(K)).
+ \tag{A.11}\label{eq:aperture-noise}
+\]
+This follows from $K!\le K^K$, $S\le K$, and
+$\log(K/S)=\log_+(K/R^2)$.
+For the bias term one has the stronger uniform estimate
+\[
+ C_{s,L}A_K(S)\tau_{s,L}(S)
+ \le C_sK^{3s-1/2}2^{-(64s-1)K}.
+ \tag{A.12}\label{eq:aperture-bias}
+\]
+Indeed, use $n!\ge(n/e)^n$ in \eqref{eq:aperture-constants}. Apart from
+the displayed polynomial factors, the left side is at most
+\[
+ (2s)^K\left(\frac{18e}{128s}\right)^{64sK}
+        (S/K)^{(64s-1)K}
+ \le(2s)^{-(64s-1)K}\le2^{-(64s-1)K},
+\]
+since $e<3$ and $54/128<1/2$. The deliberately large $128s$ is a safe
+analytic choice, not an optimized numerical parameter.
+
+The elementary inverse-scale estimate is
+\[
+ (1-e^{-1})T\le\Phi_R(K_R(T))\le T.
+ \tag{A.13}\label{eq:aperture-inversion}
+\]
+For $T/R^2\le1$ it is immediate. Otherwise set
+$g=1+\log(T/R^2)\ge1$. Then $K_R(T)/R^2\ge1$ and the middle quantity equals
+$T(1-\log g/g)$; the maximum of $\log g/g$ on $g\ge1$ is $e^{-1}$.
+Also $\Phi_R(cK)\le c\Phi_R(K)$ for $0<c\le1$, and the reversed inequality
+holds for $c\ge1$. Integer rounding changes the resulting large-$T$ scales
+only by fixed factors, uniformly for $R\ge R_0>0$.
+
+To obtain the deterministic upper bound, take
+$K=\lfloor cK_R(T)\rfloor$ with a sufficiently small fixed $c>0$.
+Equations \eqref{eq:aperture-noise}--\eqref{eq:aperture-inversion} make the
+noise contribution, with $\eta=\delta=e^{-T}$, at most a polynomial in $T$
+times $e^{-T/2}$. The bias is exponentially small in $K$ by
+\eqref{eq:aperture-bias}. Equation \eqref{eq:aperture-two-state} gives
+$C K^{-\beta/2}$, as claimed. Only a finite subset of the ball was used.
+
+\subsection{The two-level lower bound, uniformly over amplitudes}
+For large integers $n$ let $u=E/n^\beta\le1/2$ and use states
+\[
+ |\psi_n^\pm\rangle=\sqrt{1-u}|0,\ldots,0\rangle
+       \pm\sqrt u|n,0,\ldots,0\rangle,\qquad
+ \rho_n^\pm=|\psi_n^\pm\rangle\langle\psi_n^\pm|.
+ \tag{A.14}\label{eq:aperture-pair}
+\]
+Their moment is exactly $E$ and
+\[
+ D(\rho_n^+,\rho_n^-)=2\sqrt{u(1-u)}\ge\sqrt{2E}\,n^{-\beta/2}.
+ \tag{A.15}\label{eq:aperture-pair-distance}
+\]
+Their coherent amplitudes are the sum and difference of two terms of moduli
+\[
+ a_z=\sqrt{1-u}\,e^{-\|z\|^2/2},\qquad
+ b_z=\sqrt u\,e^{-\|z\|^2/2}\frac{|z_1|^n}{\sqrt{n!}}.
+\]
+Their relative phase is $n\arg z_1$. Maximizing $e^{-x}x^{n/2}$ gives
+\[
+ |p_+(z)-p_-(z)|\le4a_zb_z,
+ \quad a_zb_z\le\sqrt u\,2^{-n/2},
+ \quad b_z^2\le u/2.
+ \tag{A.16}\label{eq:aperture-amplitudes}
+\]
+Here $e^{-n}n^n/n!\le1/e<1/2$ for $n\ge1$; the sequence is decreasing
+because $(1+1/n)^n<e$. Other modes only decrease both amplitudes.
+It follows that
+\[
+ d_R(\rho_n^+,\rho_n^-)
+ \le4\sqrt u\min\left\{2^{-n/2},\frac{R^n}{\sqrt{n!}}\right\}.
+ \tag{A.17}\label{eq:aperture-forward-small}
+\]
+Using $n!\ge(n/e)^n$, there is an absolute $c_0>0$ such that the right side
+is at most $4\exp(-c_0\Phi_R(n))$. To check uniformity, write
+$t=\log_+(n/R^2)$. The two exponents are
+$(\log2)n/2$ and $(t-1)n/2$; their maximum bounds a positive constant times
+$(1+t)n$. Choose $n=\lceil C K_R(T)\rceil$ with sufficiently large fixed $C$.
+Then \eqref{eq:aperture-inversion} makes \eqref{eq:aperture-forward-small}
+at most $e^{-T}$ for large $T$, and \eqref{eq:aperture-pair-distance} proves
+the lower bound in Theorem~\ref{thm:aperture-modulus}.
+
+\subsection{Adaptive experiments cannot beat the lower rate}
+For Bernoulli parameters $p_+,p_-$ define the unnormalized squared Hellinger
+distance
+\[
+ h^2(p_+,p_-)=(\sqrt{p_+}-\sqrt{p_-})^2
+                  +(\sqrt{1-p_+}-\sqrt{1-p_-})^2.
+\]
+For all large $n$, uniformly in $z\in\mathbb C^s$, one has
+$p_\pm(z)\le1-u/4$. Indeed \eqref{eq:aperture-amplitudes} bounds these
+probabilities by $1-u+u/2+2\sqrt u\,2^{-n/2}$, and the last term is at most
+$u/4$ for large $n$, since $u=E/n^\beta$.
+The difference of the square roots of the first probabilities is at most
+$2\min(a_z,b_z)$. For the complementary probabilities, rationalizing their
+square-root difference and using $1-p_\pm\ge u/4$ gives an upper bound
+$64a_z^2b_z^2/u$ for its square. Therefore
+\begin{align}
+ h^2(p_+(z),p_-(z))
+ &\le4\min(a_z^2,b_z^2)+64a_z^2b_z^2/u,\nonumber\\
+ \sup_{\|z\|\le R}h^2(p_+(z),p_-(z))
+ &\le68\min\left\{2^{-n/2},\frac{R^{2n}}{n!}\right\}
+ \le68e^{-c_1\Phi_R(n)}
+ \tag{A.18}\label{eq:aperture-hellinger}
+\end{align}
+for an absolute $c_1>0$. For the first of the two uniform bounds use
+$\min(a_z^2,b_z^2)\le a_zb_z$; for the second use
+$\min(a_z^2,b_z^2)\le b_z^2$ and drop Gaussian factors.
+The last inequality follows by comparing
+$(\log2)/2$ and $t-1$ for $t=\log_+(n/R^2)$.
+
+For completeness, the same estimate controls an adaptive transcript.
+Conditional on any common history the protocol uses the same distribution
+of actions under the two hypotheses. Its conditional Hellinger affinity is
+at least $1-\eta/2$ when the bound in \eqref{eq:aperture-hellinger} is $\eta$.
+Backward integration through the $B$ rounds shows total affinity at least
+$(1-\eta/2)^B\ge1-B\eta/2$. Thus transcript Hellinger distance squared is
+at most $B\eta$, and total variation is at most $\sqrt{B\eta}$.
+This argument includes randomized actions by conditioning also on the random
+seed, and does not suppose nonadaptive or independent action choices.
+
+Take $n=\lceil C K_R(\log B)\rceil$ with $C$ large enough that
+$\eta\le68B^{-3}$. For large $B$ the transcript total variation is at most
+$1/2$. Given any state estimate, classify it by the closer of
+$\rho_n^+$ and $\rho_n^-$. A classification error forces trace-distance
+loss at least half the distance in \eqref{eq:aperture-pair-distance}.
+The two-point testing bound therefore gives maximum expected loss at least
+one eighth of that distance. This proves the adaptive minimax lower bound.
+
+\subsection{A nonadaptive estimator attains the rate}
+Set $T=\log B$ and $K=\lfloor cK_R(T)\rfloor$, with $c>0$ chosen sufficiently
+small depending on $s$. Use \eqref{eq:aperture-phi} and repeat every grid
+setting $b=\lfloor B/(L+1)^{2s}\rfloor$ times. Unused copies may be discarded.
+Hoeffding's bound and a union bound show that, with probability at least
+$1-B^{-2}$, every empirical probability has error at most
+\[
+ \eta_B=\sqrt{\frac{\log(2(L+1)^{2s}B^2)}{2b}}
+            =\exp(-T/2+O_s(\log T)).
+ \tag{A.19}\label{eq:aperture-hoeffding}
+\]
+This concentration follows directly from the Bernoulli moment-generating
+function bound $\mathbb E e^{t(X-\mathbb EX)}\le e^{t^2/8}$ and Markov's
+inequality; no assumption on the unknown rank is used.
+By decreasing $c$, \eqref{eq:aperture-noise} amplifies this by at most
+$e^{T/4}$ up to polynomial factors. Use the linear reconstruction in
+Lemma~\ref{lem:aperture-coefficients} and the positive-part estimator in
+Lemma~\ref{lem:aperture-state}. On the concentration event its error is
+at most $C K^{-\beta/2}$, since the analytic bias remains exponentially
+small by \eqref{eq:aperture-bias}. On the complement its error is at most one.
+This proves the expected upper bound, completing
+Theorem~\ref{thm:aperture-minimax}.
+
+The estimator has a finite classical output matrix of dimension $d_K$.
+Its grid has $(128sK+1)^{2s}$ settings, which is polynomial in $\log B$ for
+fixed $s$ but not dimension-independent. Large interpolation condition
+numbers require sufficient arithmetic precision. Rounding settings to within
+$\epsilon$ perturbs a probability by at most $\epsilon$, because
+$\|\Pi_z-\Pi_w\|_{\rm op}=\sqrt{1-e^{-\|z-w\|^2}}\le\|z-w\|$.
+Thus logarithmically many precision digits in $B$ suffice for the asymptotic
+scheme. This does not make the exponential copy requirement practical.
+
+\subsection{Copy-complexity and measurement-model consequences}
+Let $B_*(\varepsilon,R)$ be the least budget with minimax expected error at
+most $\varepsilon$. For fixed $s,\beta,E,R_0$ and $\varepsilon\downarrow0$,
+\[
+ \boxed{
+ \log B_*(\varepsilon,R)
+ \asymp \varepsilon^{-2/\beta}
+                \{1+\log_+(\varepsilon^{-2/\beta}/R^2)\},
+ \qquad R\ge R_0.
+ }
+ \tag{A.20}\label{eq:aperture-complexity}
+\]
+This is equivalent to \eqref{eq:aperture-minimax} via
+\eqref{eq:aperture-inversion}; constants are not uniform in $E$ or $\beta$.
+For a mean-energy bound and fixed finite $R$, the copy complexity is
+$\exp(\Theta(\varepsilon^{-2}\log(1/\varepsilon)))$; for arbitrary coherent
+amplitudes it is $\exp(\Theta(\varepsilon^{-2}))$.
+Classical adaptation does not change either order. Rank one already forces
+the lower bounds.
+
+This is a restriction imposed by the allowed measurements, not by quantum
+mechanics alone. With arbitrary binary projectors a polynomial-copy scheme
+at fixed $s,\beta,E$ is elementary. Choose
+$K=O(\varepsilon^{-2/\beta})$ to control the cutoff bias, measure all
+occupation projectors and the projectors onto
+$(|j\rangle+|k\rangle)/\sqrt2$ and
+$(|j\rangle+i|k\rangle)/\sqrt2$ within $P_K$.
+Estimating these $O(d_K^2)$ probabilities to
+$O(\varepsilon/d_K^{3/2})$ recovers the low block in trace norm and needs
+$O(d_K^5\varepsilon^{-2}\log d_K)$ copies for fixed success probability.
+Normalization as above completes the estimate. This deliberately nonoptimal
+construction is sufficient to demonstrate a separation from coherent tests.
+Sharper general continuous-variable learning bounds are prior work
+\cite{Mele2025}. The coherent-test lower bound must not be applied to these
+other projectors, to homodyne measurements, to collective protocols, or to
+all Gaussian measurement schemes.
+
+Interpolation-based continuous-variable tomography is established prior work
+\cite{LGC2018}; the proposed contribution here is the matching trace-distance
+minimax law with an aperture-dependent radius and a sole photon-moment
+constraint, including adaptive lower bounds and the fixed-mode extension.
+Exact injectivity from finitely many complete shells is a different theorem.
+In particular, \eqref{eq:aperture-modulus} does not supply a matching upper
+rate for the fixed-shell modulus in \eqref{eq:husimi-modulus}.
+These results neither prove nor assume microscopic BGS universality.
+External priority and independent referee acceptance remain unestablished.

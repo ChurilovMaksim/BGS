@@ -369,3 +369,33 @@ The pure scalar two-circle case and the definitions of rank-r versus strict
 completeness are prior work, explicitly cited. This application is not a BGS
 result. Execution, source hashes, and the combined-excerpt build scope are
 recorded in `husimi_shell_review.md` and its evidence certificate.
+
+
+## Aperture-dependent statistical tomography (2026-09-06)
+
+Proofs: `manuscript/unified_sections/coherent_aperture_minimax.tex` and
+`heterodyne_aperture_minimax.tex`. Status: EXACT project derivations, with
+FINITE-REGRESSION for scalar identities and NUMERICAL high-precision
+reconstruction tests; not independently refereed or fully Lean formalized.
+
+For fixed s,beta,E,R0>0, states obey Tr(rho N_total^beta)<=E, without a
+rank or hard Fock cutoff. Define K_R(T)=T/(1+log_+(T/R^2)). Uniformly over
+R>=R0, including infinity and R varying with the budget:
+
+- Complete-ball coherent-probability modulus is Theta(K_R(log(1/delta))^(-beta/2)).
+- Adaptive fresh-copy binary coherent tests have minimax expected trace
+  distance Theta(K_R(log B)^(-beta/2)); a nonadaptive finite design suffices.
+- Heterodyne censored outside the ball, with an outside flag and every copy
+  counted, has the same minimax order. Infinity is ordinary heterodyne.
+- Pure-state vacuum/high-Fock pairs already imply all three lower bounds.
+- At beta=1 fixed radius requires exp(Theta(epsilon^-2 log(1/epsilon)))
+  copies; unrestricted amplitudes/full heterodyne require exp(Theta(epsilon^-2)).
+
+The estimator cutoff has a proved uniform bias; it is not a state truncation
+hypothesis. Constants are not uniform in s,beta,E. The proof does not cover
+homodyne, arbitrary squeezed Gaussian or collective measurements. It does
+not provide the still-missing upper rate for finitely many fixed shells.
+The one-mode numerical implementation has narrower dimensional scope than
+the analytic theorem. No established world priority or BGS universality is
+claimed. The source-level comparison with published heterodyne bounds is
+recorded narrowly in `literature/coherent_minimax_context.md`.

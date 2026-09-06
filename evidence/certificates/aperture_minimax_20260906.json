@@ -1,0 +1,215 @@
+{
+  "status": "PASS for the explicitly executed finite checks only",
+  "base_commit": "05590eff0613b4a0f7c56d891e258ea41a45c0f0",
+  "scope": "Exact scalar checks and high-precision finite reconstruction, not proof by enumeration; no full historical repository audit or full Lean build.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "sources": {
+    "CMakeLists.txt": "a2d5a4ff5092318a45c9721cf5c7e7b25398b8881249800639c73c95a3aa3999",
+    "requirements.txt": "4b9e8258d2945cac6b69a295c9871188b18adf1233b8920bc0677d86dfc5e723",
+    "manuscript/WoW_unified.tex": "0417963b9aa6be93ff73394d5184fa10a995c352082e19e9649912253151b1b0",
+    "manuscript/unified_bibliography.tex": "edd404ecb1efc6166ba81f1ad8cdaeb2fb057aac0660b965a77021fee4cfe19f",
+    "record/claim_ledger.md": "fd7cc096927ad82c66570b88e564b8e836dae7975160587934c8697912f9dbc4",
+    "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+    "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+    "computations/analysis/coherent_reconstruction.py": "65351b37a882f5dc33d7cf0097d47947ab7abe8557de21ac62014ca777d0da39",
+    "computations/verification/coherent_aperture_minimax.py": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+    "computations/cpp/coherent_aperture_bounds.cpp": "5e1f2041f7d53dd790a5e0753fb031cfdc20f7cbed80cb851e89ba008d480d8f",
+    "mathematics/coherent_aperture_minimax.md": "decc7e4a6f653f6a2bd54b71a0ab8c89523a7eb346a340ab5c883652309c5255",
+    "literature/coherent_minimax_context.md": "0b0c9c74a8aabb740820907a506632acdd9b152396f9bf170a10fd49780d8859",
+    "record/aperture_minimax_review.md": "a952ac64bd8daf9ce4f09b3cfe9626364cead80191dc39f805a7d709161ab855"
+  },
+  "runs": [
+    {
+      "name": "minimax_a",
+      "result": {
+        "status": "PASS",
+        "scope": "finite checks, not a proof by enumeration",
+        "seed": 20260906,
+        "exact": {
+          "chebyshev_l1": 257,
+          "factorial_bias": 382,
+          "logconvex_endpoints": 3624,
+          "tail_ratio": 1528,
+          "central_binomial": 2048,
+          "complex_coordinate_identities": 285
+        },
+        "high_precision": {
+          "probability_hellinger_cases": 3685,
+          "inverse_scale_cases": 28,
+          "decimal_precision": 110,
+          "largest_ratio_to_hellinger_bound": "0.053475935828424247655",
+          "largest_ratio_to_forward_bound": "0.99999999888241291022"
+        },
+        "reconstruction": {
+          "cases": 9,
+          "negative_controls": 3,
+          "details_log": "minimax_a.log"
+        },
+        "source_sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+        "implementation_sha256": "65351b37a882f5dc33d7cf0097d47947ab7abe8557de21ac62014ca777d0da39",
+        "seconds": 6.897,
+        "replay_sha256": "4b527996eb358d607650af35e97f6847bc21fa8eeee5800bad211ec96007e32b"
+      },
+      "log_sha256": "57932fa2165c9249efd78933fa9f299963b6f7d400703468c80f427533cfe383"
+    },
+    {
+      "name": "minimax_b",
+      "result": {
+        "status": "PASS",
+        "scope": "finite checks, not a proof by enumeration",
+        "seed": 20260907,
+        "exact": {
+          "chebyshev_l1": 257,
+          "factorial_bias": 576,
+          "logconvex_endpoints": 7776,
+          "tail_ratio": 2304,
+          "central_binomial": 2048,
+          "complex_coordinate_identities": 285
+        },
+        "high_precision": {
+          "probability_hellinger_cases": 3685,
+          "inverse_scale_cases": 28,
+          "decimal_precision": 140,
+          "largest_ratio_to_hellinger_bound": "0.053475935828424247655",
+          "largest_ratio_to_forward_bound": "0.99999999888241291022"
+        },
+        "reconstruction": {
+          "cases": 9,
+          "negative_controls": 3,
+          "details_log": "minimax_b.log"
+        },
+        "source_sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+        "implementation_sha256": "65351b37a882f5dc33d7cf0097d47947ab7abe8557de21ac62014ca777d0da39",
+        "seconds": 10.843,
+        "replay_sha256": "98b0ed0868762c68910d3a50f94fb446fef10942862bcce84a55ac3e74e34e12"
+      },
+      "log_sha256": "bb90cc8004f0c846dc8ab6864af73198009e9db785b7e557b02693c7b5474e53"
+    },
+    {
+      "name": "old_holomorphic",
+      "result": {
+        "status": "PASS",
+        "scope": "finite regression; universal proof is in the manuscript",
+        "seed": 20260908,
+        "exact": {
+          "confluent_determinants": 120,
+          "two_exact_determinant_algorithms": true,
+          "nonpolynomial_leading_jet_determinants": 12,
+          "sharp_mixed_shell_multiplicity_examples": 64,
+          "negative_controls": 4
+        },
+        "numerical": {
+          "scope": "high-precision numerical diagnostic, not an exact certificate",
+          "decimal_precision": 85,
+          "product_terms": 190,
+          "shell_angle_pairs": 117,
+          "max_relative_intensity_residual": "5.69954859119e-85",
+          "max_relative_functional_equation_residual": "2.57324579505e-85",
+          "nonproportionality_control_abs_Q_at_one_third": "0.190672116514921"
+        },
+        "source_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028"
+      },
+      "log_sha256": "1d39f99df70f7513805bfe4de112f95779cd7ef3f6a4ffc326d7b62efd54d1e1"
+    },
+    {
+      "name": "old_husimi",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact controls, not proof by enumeration",
+        "maximum_rank_parameter": 20,
+        "laguerre_families": 40,
+        "positive_root_count_method": "exact Sturm count and polynomial gcd",
+        "energy_state_pairs": 12,
+        "uniform_disk_bound_cases": 36,
+        "finite_probe_control": {
+          "probe_count": 4,
+          "orthogonal_states_constructed": 2,
+          "largest_fock_occupation": 5,
+          "negative_controls": 1
+        },
+        "source_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe"
+      },
+      "log_sha256": "0684206a1c6568cdc4fb2deca459dab64fa92e5d79fc3b7857d3c8117a216382"
+    },
+    {
+      "name": "old_shell",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact regression; not an all-degree proof",
+        "construction_count": 24,
+        "largest_degree": 194,
+        "whole_circle_checks": 48,
+        "tampered_sign_controls": 24,
+        "infinite_tail_bound_at_three_quarters": "exact rational bound verified; see full log",
+        "independent_bounds": [
+          "Laurent recurrence",
+          "angular Fourier l1",
+          "disk supremum via positive coefficients",
+          "rational target value"
+        ],
+        "source_sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3"
+      },
+      "log_sha256": "2084d5acf8946198be8ca115fb249334f6f10a58119d34b05ac17ba34c45ecf7"
+    },
+    {
+      "name": "old_spectral",
+      "result": {
+        "status": "PASS",
+        "scope": "finite exact negative controls; no BGS theorem",
+        "clock_pairs": 16,
+        "cyclotomic_trace_checks": 136,
+        "rounding_and_simple_splitting_cases": 48,
+        "source_sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52"
+      },
+      "log_sha256": "3923079e38b4dc278f80b843a797998ce113194b000bc3b5a8fe4fdd93967a16"
+    }
+  ],
+  "independent_cpp": [
+    {
+      "name": "cpp_replay_a",
+      "exit_code": 0,
+      "stdout": "PASS exact-bias=382 chebyshev=513 central-binomial=2048 negative-controls=1",
+      "log_sha256": "34b76372f06435a9299f404f20fc22b1a5d6dc626e9a8da3034cbba90e3a6677"
+    },
+    {
+      "name": "cpp_replay_b",
+      "exit_code": 0,
+      "stdout": "PASS exact-bias=576 chebyshev=513 central-binomial=2048 negative-controls=1",
+      "log_sha256": "5e140b6c115fecce878d90fbbb01a6be498ce7a6c33c53520eb5a7dc26056239"
+    },
+    {
+      "name": "cpp_selftests",
+      "exit_code": 0,
+      "stdout": "PASS exact-bias=64 chebyshev=513 central-binomial=2048 negative-controls=1",
+      "log_sha256": "e44db063626434679ae369a4acc77f240378588c6eab26b44679d281b20e9688"
+    }
+  ],
+  "build": {
+    "passes": [
+      {
+        "pass": 1,
+        "exit_code": 0
+      },
+      {
+        "pass": 2,
+        "exit_code": 0
+      },
+      {
+        "pass": 3,
+        "exit_code": 0
+      }
+    ],
+    "warnings": [],
+    "scope": "New tomography sections plus their three predecessor sections, not the entire canonical manuscript.",
+    "pdf_sha256": "4495f03515477aa8d039d0a0c70f997c97f7994d79404962a8d2719239d63b6f",
+    "pages": 17,
+    "rendered_pages": 17
+  },
+  "wolfram": "HTTP 404; no result used",
+  "excluded": "Interrupted M=48 inherited instability run; completed M=24 run is the evidence."
+}
