@@ -1,0 +1,168 @@
+\section{Infinite-orbit independence and entire temporal gauges}
+\label{sec:entire-gauge}
+Let a real observable with $M_1(g)<\infty$ be supported on one signed orbit:
+\[
+ g=\sum_{j\in\mathbb Z}
+       \bigl(c_je_{A^jv}+\overline{c_j}e_{-A^jv}\bigr),\qquad v\ne0.
+\]
+Put $D_k=\det(v,A^kv)$ and define the absolutely summable correlations
+\[
+ S_n=\sum_jc_jc_{j+n},\qquad
+ C_n=\sum_jc_j\overline{c_{j+n}}.
+\]
+Then $S_{-n}=S_n$, $C_{-n}=\overline{C_n}$. Direct Fourier multiplication,
+with $J=J_0$, gives for $k\ge1$
+\begin{align*}
+ J(h_r)_{[v+A^kv]}&=-\pi D_k(S_{k-r}-S_{k+r}),\\
+ J(h_r)_{[v-A^kv]}&= \pi D_k(C_{k-r}-C_{k+r}).
+\end{align*}
+Negative orientations contribute conjugates. The invariant
+$q_A(v\pm A^kv)=q_A(v)(2\pm\operatorname{tr}A^k)$ distinguishes all positive
+gaps and sign types, and a vector and its negative lie in different
+oriented orbits. Thus for finite real $a_r$, exactly
+\[
+ \mathcal V_A\!\left(\sum_ra_rh_r\right)
+ =2\pi^2\sum_{k\ge1}D_k^2(|A_k|^2+|B_k|^2),
+\]
+where $A_k=\sum_ra_r(S_{k-r}-S_{k+r})$ and
+$B_k=\sum_ra_r(C_{k-r}-C_{k+r})$.
+
+\begin{theorem}[Infinite-support single-orbit independence]\label{thm:infinite-orbit}
+For every nonzero $g$ in this class, the classes $[h_r(g)]$, $r\ge1$, are
+linearly independent modulo $L^2$ coboundaries.
+\end{theorem}
+\begin{proof}
+If the displayed variance vanishes, $B_k=0$ for $k>0$ and
+$B_{-k}=-\overline{B_k}=0$. Set
+$P(e^{i\theta})=\sum_jc_je^{ij\theta}$ and
+$s(\theta)=\sum_ra_r\sin(r\theta)$. Uniform convergence gives
+\[
+ \sum_kB_ke^{-ik\theta}=-2i s(\theta)|P(e^{i\theta})|^2.
+\]
+The left side is constant. Evaluation at $\theta=0$ makes that constant
+zero. The nonzero continuous function $P$ is nonzero on an interval; there
+$s$ vanishes, forcing the trigonometric polynomial $s$ to vanish
+identically. Complex relations separate into two real ones. A nonzero orbit
+sum excludes an $L^2$ coboundary by the Fourier difference equation.
+\end{proof}
+This argument does not select a maximum of an infinite Fourier support and
+does not extend to arbitrary unions of Fourier orbits.
+
+\subsection{A classified smooth gauge group}
+Let $P$ be holomorphic on $\mathbb C\setminus\{0\}$, have real Laurent
+coefficients $p_j$, and obey $|P(e^{i\theta})|=1$. Then
+\[
+ T_P=\sum_{j\in\mathbb Z}p_jC^j
+\]
+is unitary on $L^2$ and a continuous automorphism of every weighted Fourier
+space $M_s<\infty$ and of $C^\infty$.
+
+\begin{theorem}[Entire real all-pass filters]\label{thm:entire-allpass}
+Exactly these filters have the form
+\[
+ P(z)=\sigma z^n\exp H(z),\qquad
+ H(z)=\sum_{k\ge1}a_k(z^k-z^{-k}),
+\]
+where $\sigma\in\{\pm1\}$, $n\in\mathbb Z$, $a_k\in\mathbb R$, and $H$ is
+holomorphic on the punctured plane. For every real $M_1$ observable,
+\[
+ J(h_r(T_Pg))=J(h_r(g))\quad\text{for all }r.
+\]
+The difference is an actual $L^2$ coboundary, with a smooth transfer function
+when $g$ is smooth.
+\end{theorem}
+\begin{proof}
+Reality and the boundary modulus identity give $P(z)P(1/z)=1$ by analytic
+continuation. Hence $P$ has no zeros. Remove its winding monomial and its
+sign $P(1)$, and take a global logarithm $H$ normalized by $H(1)=0$.
+Reality and reciprocity give real Laurent coefficients and
+$H(z)+H(1/z)=0$, proving the classification.
+Cauchy estimates give $\sum_j|p_j|R^{|j|}<\infty$ for every $R>1$.
+Composition by $C^j$ grows at most exponentially on each fixed smooth
+seminorm or weighted Fourier norm. The operator series and its inverse
+therefore converge in each of those norms. The adjoint is $T_{P(1/z)}$,
+so the operator is unitary.
+
+Bilinearity and symplectic covariance yield
+\[
+ h_r(T_Pg)=\sum_{i,j}p_ip_jC^ih_{r+j-i}(g).
+\]
+The series converges in Fourier $\ell^1$, since bracket norms grow at most
+exponentially in the relative lag. The autocorrelations
+$\sum_ip_ip_{i+n}=\delta_{n0}$ follow from $P(z)P(1/z)=1$.
+Define $T_i=\sum_{l=0}^{i-1}C^l$ for $i>0$, $T_0=0$, and
+$T_i=-\sum_{l=i}^{-1}C^l$ for $i<0$. Then
+\[
+ h_r(T_Pg)-h_r(g)=(C-I)\sum_{i,j}p_ip_jT_ih_{r+j-i}(g).
+\]
+The transfer series converges in $L^2$ because $\|T_i\|\le|i|$, and in
+every smooth seminorm for smooth $g$. This proves both assertions.
+\end{proof}
+
+For example $T_a=\exp(a(C-C^{-1}))$, $a\in\mathbb R$, is a nontrivial smooth
+unitary group. It preserves every ordinary two-point correlation and the
+whole zero-frequency resonance synthesis operator. It does not preserve all
+nonzero dynamical-frequency matrices: its two-variable symbol multiplier is
+\[
+ \exp\bigl(2a(\lambda-\lambda^{-1})
+        (\cos\theta-\cos(\omega-\theta))\bigr).
+\]
+This equals one at $\omega=0$, but not in general.
+The rational all-pass resolvent need not preserve $C^\infty$; the entire
+filters above are different because their coefficients have every
+exponential moment.
+
+\subsection{A preserved hierarchy with a changing cubic moment}
+For $A=\left(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\right)$, put
+$v=(1,0)$, $w=Av$, $z=v+w$, $B_u=e_u+e_{-u}$, and
+$g_*=B_v+2B_w+B_z$. Exact Fourier multiplication gives
+\[
+ \int g_*^3=24,\qquad \int g_*^2Cg_*=4,
+ \qquad \int g_*(Cg_*)^2=16.
+\]
+For $g_a=T_ag_*$, the entire hierarchy in
+Theorem~\ref{thm:entire-allpass} is unchanged, while
+\[
+ \int g_a^3=24-36a+O(a^2).
+\]
+The derivative is $3\int g_*^2(C-C^{-1})g_*=-36$.
+For each fixed smooth symbol, direct dominated convergence in its Fourier
+triple expansion gives
+\[
+ \lim_{N\to\infty}N^{-1}\operatorname{Tr}\operatorname{Op}_N(g_a)^3
+       =\int g_a^3.
+\]
+Thus the preserved quadratic data do not determine all quantum observable
+spectral moments. This does not prove different unfolded microscopic
+universality classes, or identify the eigenphase law of a kicked map.
+
+A finite control makes the frequency distinction explicit. For
+$b=B_v$, $P=1-C/2$, $Q=C-I/2$, the dynamical cross-spectra of the first two
+brackets at $\omega=\pi$ are respectively $-12\pi^2$ and $+12\pi^2$.
+Indeed, writing $b_r=h_r(b)$,
+\begin{align*}
+ h_r(Pb)&=(1+C/4)b_r-\tfrac12(Cb_{r-1}+b_{r+1}),\\
+ h_r(Qb)&=(C+1/4)b_r-\tfrac12(Cb_{r-1}+b_{r+1}).
+\end{align*}
+The single-mode orbit weights are $4\pi^2\det(v,A^rv)^2$.
+The stronger all-frequency invariance claim is therefore false.
+
+\begin{theorem}[A Gevrey obstruction]\label{thm:gauge-gevrey}
+If a nontrivial entire real all-pass filter is applied to one nonzero
+harmonic $e_v+e_{-v}$, the result is smooth but satisfies no Fourier estimate
+$|\widehat g(k)|\le C\exp(-c|k|^\alpha)$ with $\alpha>0$.
+The only such filters retaining this decay are $P(z)=\pm z^n$.
+\end{theorem}
+\begin{proof}
+The assumed decay and hyperbolicity give
+$|p_j|\le C'\exp(-c'\lambda^{\alpha|j|})$, hence Gaussian decay in $j$.
+Gaussian summation bounds $\log\max_{|z|=\rho}|P(z)|$ by
+$O(1+|\log\rho|^2)$ at both ends. Reciprocity then bounds
+$|\operatorname{Re}H(\rho e^{i\theta})|$ by the same order.
+Its $k$th angular Fourier coefficient is
+$a_k(\rho^k-\rho^{-k})/2$. Letting $\rho\to\infty$ forces every $a_k=0$.
+\end{proof}
+The statement concerns the image of a single harmonic under an entire
+filter. It does not remove finite-polynomial homometric ambiguities, whose
+transfer ratios are rational, and does not prove general analytic
+identifiability from quadratic data.
