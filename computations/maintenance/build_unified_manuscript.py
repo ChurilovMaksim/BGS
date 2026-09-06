@@ -22,6 +22,18 @@ MANUSCRIPT=ROOT/'manuscript'
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def _validate_inherited_core(name: str, text: str, source: str) -> None:
+    artifacts=(r'\^{}',r'\textgreater',r'\textless',r'\textbar',r'\textsuperscript')
+    if any(x in text for x in artifacts):
+        raise ValueError(f'Unconverted ASCII mathematics in inherited core {source}')
+    required={
+        'pell_blocks.tex':(r'H=\langle h\rangle',r'Z^*(U_0-I)Z',r'J^*\Delta J'),
+        'floquet.tex':(r'V^*W(1,0)V',r'U_N=VU_0V^*'),
+    }
+    for token in required.get(name,()):
+        if token not in text:
+            raise ValueError(f'Missing restored mathematical token {token}: {source}')
+
 def inputs() -> dict[str,str]:
     master=MANUSCRIPT/'WoW_unified.tex'
     found:set[Path]=set()
@@ -30,26 +42,34 @@ def inputs() -> dict[str,str]:
         if p in found:return
         if not p.is_relative_to(MANUSCRIPT.resolve()):
             raise ValueError(f'Nonlocal TeX input: {p}')
+        if not p.is_file():
+            raise ValueError(f'Missing TeX input: {p}')
         found.add(p)
         text=p.read_text(encoding='utf-8')
         if re.search(r'\b(?:sqrt|exp|log|sin|cos|[A-Za-z])\([A-Z]{2}\.[A-Za-z0-9]+\)',text):
             raise ValueError(f'Spurious equation prefix inside a function evaluation: {p}')
         if p.name in ('pell_blocks.tex','floquet.tex'):
-            artifacts=(r'\^{}',r'\textgreater',r'\textless',r'\textbar',r'\textsuperscript')
-            if any(x in text for x in artifacts):
-                raise ValueError(f'Unconverted ASCII mathematics in inherited core: {p}')
-        required={
-            'pell_blocks.tex':(r'H=\langle h\rangle',r'Z^*(U_0-I)Z',r'J^*\Delta J'),
-            'floquet.tex':(r'V^*W(1,0)V',r'U_N=VU_0V^*'),
-        }
-        for token in required.get(p.name,()):
-            if token not in text:
-                raise ValueError(f'Missing restored mathematical token {token}: {p}')
+            _validate_inherited_core(p.name,text,str(p.relative_to(ROOT)))
         for rel in re.findall(r'\\input\{([^}]+)\}',text):
             q=MANUSCRIPT/rel
             if not q.suffix:q=q.with_suffix('.tex')
             visit(q)
     visit(master)
+
+    # The canonical Floquet core may be split into sequential source parts.
+    # Preserve the old fail-closed mathematical token/artifact gate by checking
+    # their concatenation, but only for parts actually reachable from the master.
+    floquet_parts=sorted(
+        (p for p in found if re.fullmatch(r'floquet_part\d+\.tex',p.name)),
+        key=lambda p:int(re.search(r'(\d+)',p.name).group(1)),
+    )
+    if floquet_parts:
+        indices=[int(re.search(r'(\d+)',p.name).group(1)) for p in floquet_parts]
+        if indices != list(range(1,len(indices)+1)):
+            raise ValueError(f'Noncontiguous canonical Floquet parts: {indices}')
+        combined=''.join(p.read_text(encoding='utf-8') for p in floquet_parts)
+        _validate_inherited_core('floquet.tex',combined,'canonical floquet_partN inputs')
+
     return {str(p.relative_to(ROOT)):digest(p) for p in sorted(found)}
 
 def main()->None:
