@@ -1,0 +1,33 @@
+\begin{lemma}[twisted vanishing]\label{lem:twisted}
+For every fixed $q\in\FF_N^*$,
+\[
+  \sum_{A,B\in\FF_N^*}|\Kl(A,B)|^2\,
+  \chi\bigl(A^2+4B(A+q)\bigr)=O(N^{5/2}),
+\]
+where $\chi$ is the quadratic character and $\Kl(A,B)=\sum_{u\neq0}
+\ep(Au+B/u)$ is the classical Kloosterman sum.
+\end{lemma}
+
+\begin{proof}[Sketch]
+$|\Kl(A,B)|^2=\sum_{u,v\neq0}\ep\bigl(A(u-v)+B(u^{-1}-v^{-1})\bigr)$ is the
+trace function of the geometric Kloosterman sheaf on
+$\mathbf A^2_{(A,B)}$ --- lisse of rank~2 on $\mathbf G_m^2$, with no
+geometrically constant part, and of geometric monodromy $SL_2$
+\cite{KR2003} (via \cite{KR2000}).  The factor
+$\chi\bigl(A^2+4B(A+q)\bigr)$ is the pullback of the quadratic character
+sheaf along the conic map $Q(A,B)=A^2+4B(A+q)$, geometrically non-trivial
+on $\mathbf G_m^2$.  The second moment equals
+$N^2$ times the Frobenius trace on the coinvariants of
+$\mathcal K\ell_2\otimes\mathcal K\ell_2^{\vee}\otimes{}$pullback;
+the tensor has no geometrically trivial summand (the $SL_2$-monodromy of
+$\mathcal K\ell_2$ has invariants exactly the scalar endomorphisms, and
+tensoring with the geometrically non-trivial quadratic pullback removes
+them), so Deligne's RH for the resulting lisse sheaf on the two-dimensional
+parameter space gives $O(N^2\cdot N^{1/2})=O(N^{5/2})$.  The ingredients
+are those of \cite{KR2003}; the monodromy check is routine given the
+$SL_2$-monodromy theorem for $\mathcal K\ell_2$.
+\end{proof}
+
+Numerically $|\cdot|/N^{5/2}\le0.16$ over seven primes
+$N=53\dots269$ with $q=\lfloor N/4\rfloor$ --- bounded, as the lemma
+predicts.

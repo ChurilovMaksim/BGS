@@ -1,0 +1,30 @@
+{
+  "producer": "computations/analysis/spectral_diagnostics.py",
+  "producer_command": "python computations/analysis/spectral_diagnostics.py spacing",
+  "interpretation": "Descriptive finite spacing comparison only; not an IID KS test and not evidence for a limiting local law.",
+  "reference": "GOE Wigner surmise P(s)=(pi s/2) exp(-pi s^2/4)",
+  "methodology_warning": "Polynomial unfolding and pooled gaps induce dependence; no textbook IID-KS critical value or pass/fail label is justified.",
+  "matrix_convention": "Eigenvalues are taken from the full complex Hermitian matrix M+M^*. Entrywise real projection is forbidden.",
+  "designs": [
+    {
+      "N": 3571,
+      "K": 17,
+      "a": 2469,
+      "matrix_dimension": 105,
+      "q_values_used": 40,
+      "gap_count": 4160,
+      "mean_normalized_gap": 1.0,
+      "cdf_sup_distance_to_wigner_surmise": 0.007776678620121186
+    },
+    {
+      "N": 19489,
+      "K": 29,
+      "a": 4523,
+      "matrix_dimension": 336,
+      "q_values_used": 43,
+      "gap_count": 14405,
+      "mean_normalized_gap": 1.0,
+      "cdf_sup_distance_to_wigner_surmise": 0.00876622493926528
+    }
+  ]
+}

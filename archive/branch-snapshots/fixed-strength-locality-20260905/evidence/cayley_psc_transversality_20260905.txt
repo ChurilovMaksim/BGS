@@ -1,0 +1,63 @@
+Principal-subresultant support + inverse resultant transversality evidence
+Date: 2026-09-05
+Status: FINITE-REGRESSION / CI PROVENANCE ONLY. Universal statements are proved in mathematics/cayley_principal_subresultant_support.md and mathematics/cayley_inverse_resultant_transversality.md.
+
+GitHub Actions scientific verification:
+  run id: 33947186705
+  head: 184a44a713da31fea629afae32dce6e555e081ca
+  conclusion: success
+
+The run completed all computation, C++20, Lean 4 and independent TeX jobs successfully. In the computation job the following dedicated gates both completed with conclusion=success:
+
+  Regress principal-subresultant scalar support
+    python computations/verification/cayley_principal_subresultant_support.py
+
+  Regress inverse resultant transversality
+    python computations/verification/cayley_inverse_resultant_transversality.py
+
+Principal-subresultant scalar anchors encoded by the exact verifier:
+
+  (K,r)=(7,2):
+    Pi=7
+    Pi'=1
+
+  (K,r)=(11,7):
+    Pi=11^2
+    Pi'=1
+
+  (K,r)=(13,3):
+    Pi=13^3
+    Pi'=1
+
+  (K,r)=(13,12):
+    Pi=2^4 * 5^3 * 13^3
+    Pi'=5^3
+
+  (K,r)=(17,10):
+    Pi=2^2 * 17^5 * 103
+    Pi'=103
+
+The K=13,r=12 anchor is a deliberate valuation negative control:
+  Pi'=5^3,
+  while the previously maintained Lambda'/Omega' support is 5^2.
+Only split rational-prime support equality is claimed.
+
+Inverse transversality finite-field trichotomy encoded by the exact verifier:
+
+  K=11, p=23:
+    deg gcd(E,O)=0
+    rho(0)!=0
+
+  K=7, p=29:
+    deg gcd(E,O)=1
+    rho(0)=0
+    rho'(0)!=0
+    the explicit simple-common-root derivative formula is checked exactly modulo p
+
+  K=23, p=47:
+    deg gcd(E,O)=2
+    rho(0)=rho'(0)=0
+
+The verifier also checks the universal simple-common-root directional derivative formula on exact integer-polynomial examples and its inverse-translation specialization before the cyclotomic finite-field anchors.
+
+No finite computation is used as the proof of the universal theorem. The finite gates are regression controls against sign, normalization, specialization and implementation errors.

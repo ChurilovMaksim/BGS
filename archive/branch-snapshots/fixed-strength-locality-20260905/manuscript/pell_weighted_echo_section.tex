@@ -1,0 +1,129 @@
+\section{Weighted Gaussian arrays and a periodic-memory echo}
+\label{sec:weighted-echo}
+
+The extension here concerns the interaction-picture echo, not only returns
+of the propagator. These are project proofs; no historical-priority or full
+analytic Lean-formalization claim is made.
+
+For a real coefficient array $f=(f_j)_{j=0}^{K-1}$, define
+\[
+ X_K(f)=\frac1{\sqrt{2K}}\sum_{j=0}^{K-1}f_jB_j,
+ \qquad Q_K(f,g)=\frac1K\sum_{j=0}^{K-1}f_jg_j.
+\]
+For each fixed $r$ and uniformly bounded real arrays $f_1,\ldots,f_{2r}$,
+\[
+ \begin{split}
+ \tau_-\bigl(X_K(f_1)\cdots X_K(f_{2r})\bigr)
+ &=\sum_{\pi}\prod_{\{a,b\}\in\pi}Q_K(f_a,f_b)\\
+ &\quad+O_r(K^{-1})+O_r(K^r/N),
+ \end{split}\tag{W1}
+\]
+where the sum is over all pairings and the implicit constants may depend
+on the common coefficient bound. Odd ordered moments tend to zero.
+The arrays may vary with $K$; convergence of their Gram matrices is enough
+for a joint centered Gaussian tracial limit.
+
+To prove (W1), the characteristic-zero lifting and bounded-component count
+from the preceding argument are unchanged by bounded weights. Nonbalanced
+words remain lower order. For each balanced pairing, the coefficient of a
+pair $\{a,b\}$ is $f_{a,j}f_{b,j}$. Removing its crossing phase incurs at
+most the common weight bound times $9/K$ per crossing, by the summed phase
+estimate. The remaining label sums factor into the empirical covariances.
+Thus independence of orbit operators or crossing phases is not assumed.
+
+For $p=\max_j|f_j|$, $q=\max_j|g_j|$ and
+$c_N=\sqrt{2N/(N-1)}$, disjoint signed-pair Weyl supports also give
+\[
+ \|[X_K(f),X_K(g)]\|_{2,-}
+ \leq\frac{6c_Npq}{\sqrt K},\qquad K\geq11.\tag{W2}
+\]
+Indeed the full normalized squared norm is
+\[
+ \frac1{K^2}\sum_{t<s}|f_tg_s-f_sg_t|^2a_{s-t}^2,
+\]
+which is at most $36p^2q^2/K$. Restriction to the odd subspace gives
+(W2). The statement is not an operator-norm almost-commutativity theorem.
+The Duhamel estimate and (W2) compare finite products of weighted
+exponentials with the exponential of their sum. Applying (W1) to that sum
+proves the corresponding Gaussian characteristic-function limits.
+
+\subsection{The echo at every bounded recurrence time}
+Let
+\[
+ \varepsilon=\frac{\tau}{\sqrt{2K}},\qquad
+ E_K(t)=U_\varepsilon^tU_0^{-t},\qquad t\in\mathbb Z.
+\]
+Write $t=mK+s$, $0\leq s<K$, and set
+\[
+ w_{t,K}(j)=m+\mathbf1_{j<s},\qquad
+ c_j=\frac{K-1-2j}{2K}.
+\]
+The exact identity
+\[
+ c_j+\frac tK-c_{(j-t)\bmod K}=w_{t,K}(j)\tag{W3}
+\]
+turns the finite Floquet normal form into a single weighted exponential:
+\[
+ \|E_K(t)-e^{i\tau X_K(w_{t,K})}\|_{2,-}
+ \leq\frac{(11C+2)\tau^2}{\sqrt K},
+ \qquad |t|\leq CK,\quad K\geq11.\tag{W4}
+\]
+For clarity, first telescope the one-step normal form. This approximates
+the echo by
+\[
+ e^{i\tau X_K(c)}
+ e^{i\tau(t/K)X_K(1)}
+ e^{-i\tau X_K(c_{\mathrm{shift}})}
+\]
+with error at most $6|t/K|\tau^2/\sqrt K$. Apply (W2) and the two-factor
+Duhamel estimate twice. Since $\|c\|_\infty$ and
+$\|c_{\mathrm{shift}}\|_\infty$ are at most $1/2$, the extra error is at
+most $c_N(3|t/K|+3/4)\tau^2/\sqrt K$. Identity (W3) and
+$c_N\leq\sqrt{7/3}$ give (W4). Negative $t$ follows by unitary adjoints
+in the telescoping estimate; the division $t=mK+s$ still uses the floor.
+
+For real $\alpha=m+a$, $m\in\mathbb Z$, $0\leq a<1$, define
+\[
+ Y(\alpha)=m\mathcal B(1)+\mathcal B(a),\tag{W5}
+\]
+where $\mathcal B$ is one standard real Brownian motion on $[0,1]$.
+For $\beta=n+b$ its covariance is
+\[
+ Q(\alpha,\beta)=mn+mb+na+\min(a,b).\tag{W6}
+\]
+The same Brownian interval is repeated at every cycle. It is not a sequence
+of independent increments across successive cycles.
+
+Fix finitely many real times $\alpha_l$, integers $r_l$, and sequences
+$t_{l,K}/K\to\alpha_l$. The finite-dimensional tracial echo limit is
+\[
+ \tau_-\!\left(\prod_l E_K(t_{l,K})^{r_l}\right)
+ \longrightarrow
+ \exp\!\left[-\frac{\tau^2}{2}
+     \sum_{l,j}r_lr_jQ(\alpha_l,\alpha_j)\right].\tag{W7}
+\]
+To see this, use (W4) to replace each factor, then (W2) to combine the
+weighted exponentials. The step arrays are uniformly bounded and their
+Gram matrices converge to (W6), including at integer limiting times.
+The weighted Gaussian theorem completes the argument.
+
+For a single time $t_K/K\to\alpha=m+a$, all integer moments of the unitary
+echo converge to those of a wrapped normal law with angular variance
+\[
+ \tau^2\bigl[m^2+(2m+1)a\bigr].\tag{W8}
+\]
+In particular,
+\[
+ \tau_-(E_K(t_K))\longrightarrow
+ e^{-\tau^2[m^2+(2m+1)a]/2}.
+\]
+Within the first cycle the variance is $\tau^2\alpha$, whereas at integer
+returns it is $\tau^2m^2$. At $\alpha=3/2$ it equals $5\tau^2/2$, not
+$3\tau^2/2$ as independent-cycle Brownian noise would predict.
+
+The word Brownian in this statement specifies a limiting tracial Gaussian
+covariance. It does not assert a sample-path invariance principle, a joint
+spectral distribution for noncommuting finite matrices, or independent
+eigenvalues. The time window is still $O(\log N)$ and the classical kick
+vanishes. Positive microscopic BGS at fixed classical strength remains a
+separate problem.

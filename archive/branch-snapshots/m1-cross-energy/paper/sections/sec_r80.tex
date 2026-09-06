@@ -1,0 +1,70 @@
+\subsection{Run 80: the generating function evaluated; a correction to
+Theorem \texorpdfstring{\ref{thm:H}}{H}}\label{sub:r80}
+
+Run 80 evaluates the Run-77 generating function \emph{exactly} and, in doing
+so, exposes a correction to Theorem \ref{thm:H} that the $r\le8$
+certification window was structurally blind to.
+
+\emph{The $J$-weighted automaton.}  Each accepting walk of the
+Run-79 reversed-normalized automaton (the support-normalised multiples of
+$m_t$, read top-down) carries the letter weight
+$J_c(y)=I_c(2y)/I_0(2y)$, internal zero gaps carrying $J_0=1$.  With
+\[
+  \Psi(y)=\sum_{\text{walks}}\prod_{\text{letters}}J_{|c|}(2y),
+  \qquad
+  \Psi_w(y)=\sum_{\text{walks}} w\prod_{\text{letters}}J_{|c|}(2y)
+\]
+($w$ the walk width), the identity
+$I_0(2y)^K\prod_{\text{letters}}J=\prod_{j<K}I_{|c_j|}(2y)$ (the dense
+$K$-window product, cancelled pairs included) turns Theorem \ref{thm:H}'s
+counts into exact coefficient extractions valid for every $r\le r_{\max}$
+and $K\le K_{\max}$ simultaneously:
+\[
+  X^{\ZZ}_r(K)=2r!\,[y^r]\,I_0(2y)^K\bigl((K{+}1)\Psi-\Psi_w\bigr),
+  \qquad
+  \operatorname{triv}(r,K)=r!\,[y^{2s}]\,I_0(2y)^K\ (r=2s),
+\]
+the rotation-inclusive count being $2Kr!\,[y^r]I_0(2y)^K\Psi$.  Note the
+exact rank-zero count $\operatorname{triv}(r,K)=r![y^{2s}]I_0(2y)^K$ (it
+gives $\operatorname{triv}(6,17)=538\,900$): the display
+$\binom{2s}{s}\mathrm P(s,K)$ in Theorem \ref{thm:H} is shorthand only.
+Certified against the census at every available row: $r\le8$ exact
+($\ZZ$/full/wrap at $K=17,19$), $X^{\ZZ}$ exact through $r=12$ including
+the padded shapes, $\mathrm S_{\mathrm{win}}(R;17)$ $8/8$ against the Run-79
+automaton, and an independent float implementation agreeing to
+$2.2\cdot10^{-15}$ (\texttt{r80\_jweight\_dp.py}, \texttt{r80\_julia\_bigdp.jl}).
+
+\emph{Wrap coincidences.}  The rotation-inclusive count equals the census
+exactly through $r=8$ and \emph{exceeds} it from $r=10$.  The
+$(\sigma,a,\pm)$ parametrisation of Theorem \ref{thm:H} is not injective
+once padded shapes exist: a wrapping rotation of a shape can equal another
+shape as a signed $K$-vector.  The mechanism is automatic --- if
+$\sigma_A=\pm x^a\sigma_B \pmod{x^K-1}$ with both $\sigma_{A,B}$
+$m_t$-multiples, then the difference is $(x^K-1)h$ with $m_t\mid h$, since
+$\gcd(m_t,x^K-1)=1$ over $\mathbb Q$ (the roots of $m_t$ are real units,
+not roots of unity) and Gauss's lemma lifts the divisibility to
+$\mathbb Z[x]$.  The first collisions occur at $\ell^1$ norm $10$, in the
+padded family $m_t(1+x^d)$ (e.g.\ at $K=17$,
+$\mathrm{rot}_{14}\,m_t(1+x^3)=m_t(1+x^{14})$ as vectors).  The exact
+excess of the rotation-inclusive count over the census,
+$\sum_v(\mathrm{mult}(v)-1)\operatorname{wc}(v,r)$ over signed vectors $v$,
+is $41\,126\,400$ ($r=10$), $1\,244\,073\,600$ ($r=11$) and
+$97\,037\,740\,800$ ($r=12$) at $K=17$ --- both checkable census deltas
+reproduced to the last digit (\texttt{r80\_wrap\_collisions.py}).  The
+correct statement of Theorem \ref{thm:H} is therefore at the level of
+\emph{distinct} collected vectors,
+$D_r-\operatorname{triv}-M_r=\sum_{\text{distinct }c}\operatorname{wc}(c,r)$,
+with the shapes of width $\le K$; the census reading, $M_r=0$ through
+$r=12$, is unaffected.
+
+\emph{The shape growth.}  The count DP (\texttt{r80\_julia\_bigdp.jl},
+exact integer arithmetic) gives, for the first time without a width cap:
+dense shapes (width $\le$ norm) $S(30)=301\,160\,711$, $S(50)=7.6\cdot
+10^{15}$, $S(80)=1.17\cdot10^{18}$, with $S(R)^{1/R}$ still rising ---
+$2.078$ at $R=50$, $2.179$ at $R=80$; the width-capped ($\le80$) curve
+peaks at $2.2499$ ($R=47$) and turns down, the $C^R\operatorname{poly}(R)$
+signature.  The growth constant of the language therefore satisfies
+$2.18<C_{\mathrm{dense}}\le3$, the upper bound being the elementary
+signed-compositions count.  Pinning $C_{\mathrm{dense}}$ (Perron analysis
+of the co-reachable automaton core, or a Frougny--Steiner transfer) is the
+named remaining arithmetic problem of the uniformity step.

@@ -1,0 +1,24 @@
+{
+  "producer": "computations/analysis/spectral_diagnostics.py",
+  "producer_command": "python computations/analysis/spectral_diagnostics.py window",
+  "interpretation": "Descriptive matched-GOE forward-window count variance; not stationary number variance Sigma^2(L) and not a hypothesis test.",
+  "methodology_warning": "Windows start at eigenvalues and are edge-truncated. Cat-map and GOE samples use the same algorithm, so this is a matched diagnostic only.",
+  "matrix_convention": "Cat-map eigenvalues are taken from the full complex Hermitian matrix M+M^*. Entrywise real projection is forbidden.",
+  "design": {
+    "N": 19489,
+    "K": 29,
+    "a": 4523,
+    "matrix_dimension": 336,
+    "q_values_used": 25,
+    "goe_simulations": 60,
+    "seed": 20260901,
+    "rows": [
+      {"L": 1, "catmap_mean": 0.32850375566893425, "goe_mean": 0.34086799650415717, "descriptive_standardized_difference": 2.383295921111187},
+      {"L": 2, "catmap_mean": 0.49277848639455774, "goe_mean": 0.5084766806027967, "descriptive_standardized_difference": 1.5774491234596177},
+      {"L": 3, "catmap_mean": 0.5786199688208616, "goe_mean": 0.6098549402399851, "descriptive_standardized_difference": 2.3599695458356154},
+      {"L": 5, "catmap_mean": 0.7789214852607711, "goe_mean": 0.7913604851662887, "descriptive_standardized_difference": 0.6509674600626018},
+      {"L": 8, "catmap_mean": 1.2037872023809524, "goe_mean": 1.2435505539021166, "descriptive_standardized_difference": 2.0697979536799114},
+      {"L": 12, "catmap_mean": 2.416265589569161, "goe_mean": 2.4652826495181412, "descriptive_standardized_difference": 2.2076151419898857}
+    ]
+  }
+}

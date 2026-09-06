@@ -1,0 +1,86 @@
+{
+ "note": "counting half of Theorem I: level-set sizes for split and inert primes",
+ "rows": [
+  {
+   "N": 107,
+   "split": false,
+   "cone": 0,
+   "level_size": 108,
+   "uniform": true,
+   "expected": 108,
+   "pass": true
+  },
+  {
+   "N": 113,
+   "split": false,
+   "cone": 0,
+   "level_size": 114,
+   "uniform": true,
+   "expected": 114,
+   "pass": true
+  },
+  {
+   "N": 127,
+   "split": false,
+   "cone": 0,
+   "level_size": 128,
+   "uniform": true,
+   "expected": 128,
+   "pass": true
+  },
+  {
+   "N": 197,
+   "split": false,
+   "cone": 0,
+   "level_size": 198,
+   "uniform": true,
+   "expected": 198,
+   "pass": true
+  },
+  {
+   "N": 233,
+   "split": false,
+   "cone": 0,
+   "level_size": 234,
+   "uniform": true,
+   "expected": 234,
+   "pass": true
+  },
+  {
+   "N": 199,
+   "split": true,
+   "cone": 396,
+   "level_size": 198,
+   "uniform": true,
+   "expected": 198,
+   "pass": true
+  },
+  {
+   "N": 3571,
+   "split": true,
+   "cone": 7140,
+   "level_size": 3570,
+   "uniform": true,
+   "expected": 3570,
+   "pass": true
+  },
+  {
+   "N": 281,
+   "split": true,
+   "cone": 560,
+   "level_size": 280,
+   "uniform": true,
+   "expected": 280,
+   "pass": true
+  },
+  {
+   "N": 401,
+   "split": true,
+   "cone": 800,
+   "level_size": 400,
+   "uniform": true,
+   "expected": 400,
+   "pass": true
+  }
+ ]
+}

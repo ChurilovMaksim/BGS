@@ -1,0 +1,31 @@
+name: Build row-support companion PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manuscript/cyclotomic_row_support_frontier.tex'
+      - '.github/workflows/build-row-support-companion.yml'
+  pull_request:
+    paths:
+      - 'manuscript/cyclotomic_row_support_frontier.tex'
+      - '.github/workflows/build-row-support-companion.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+      - name: Compile companion manuscript
+        run: |
+          mkdir -p build/row-support
+          latexmk -pdf -interaction=nonstopmode -halt-on-error \
+            -outdir=build/row-support manuscript/cyclotomic_row_support_frontier.tex
+          test -s build/row-support/cyclotomic_row_support_frontier.pdf

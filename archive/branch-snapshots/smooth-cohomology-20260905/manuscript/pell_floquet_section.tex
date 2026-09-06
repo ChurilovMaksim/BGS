@@ -1,0 +1,157 @@
+\section{An arithmetic normal form for the actual kicked propagator}
+\label{sec:pell-floquet}
+The Pell observable limit extends to an explicitly controlled spectral law
+of the perturbed propagator at its recurrence time. This extension concerns
+folded eigenphases, not microscopic BGS statistics. A self-contained proof,
+including a direct odd-space Gaussian moment argument, is supplied in the
+companion \emph{A resonance-scale spectral law for a deterministically kicked
+Pell cat map} (\texttt{pell\_floquet\_normal\_form.pdf}).
+
+Let $K\geq11$ be an odd prime, $N+F\sqrt2=(1+\sqrt2)^K$,
+$h=3+2F^{-1}\pmod N$, $q=-F\pmod N$, and $d=(N-1)/2$. In the odd subspace set
+\[
+ U_0=S_h^{-1},\quad B=W(q,1)+W(q,1)^*,\quad
+ U_\varepsilon=e^{i\varepsilon B}U_0,\quad
+ \overline B=\frac1K\sum_{j=0}^{K-1}U_0^jBU_0^{-j}.
+\]
+This entire kicked family is unitarily equivalent to a fixed cosine
+observable kicking the fixed map $T=\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)$.
+The equivalence does not depend on primality of $N$.
+
+\begin{theorem}[Finite normal form and critical recurrence law]
+Put $B_j=U_0^jBU_0^{-j}$,
+$c_j=(K-1-2j)/(2K)$, $G=\sum_jc_jB_j$ and
+$V_\varepsilon=e^{-i\varepsilon G}$. For every real $\varepsilon$,
+\[
+ \left\|V_\varepsilon U_\varepsilon V_\varepsilon^*
+               -e^{i\varepsilon\overline B}U_0\right\|_{2,-}
+       \leq\frac{12\varepsilon^2}{\sqrt K},
+ \qquad \|A\|_{2,-}^2=d^{-1}\operatorname{Tr}_{-}(A^*A).
+\]
+For each fixed real $\tau$, $\varepsilon=\tau/\sqrt{2K}$ and each integer $m$,
+\[
+ \frac1d\operatorname{Tr}_{-}U_\varepsilon^{mK}
+       \longrightarrow e^{-m^2\tau^2/2}.
+\]
+Equivalently, the empirical eigenvalue measures of $U_\varepsilon^K$
+converge to the wrapped normal law of $e^{i\tau Z}$, $Z\sim N(0,1)$.
+\end{theorem}
+
+\begin{proof}[Mechanism of the estimate]
+The centered coefficients solve $G-U_0GU_0^*=B-\overline B$ exactly.
+For $a_j=|e_N(q(h^j-h^{-j}))-1|$ and $\lambda=3+2\sqrt2$, Pell summation gives
+\[
+ \sum_j a_j<9,\qquad
+ \sum_j|c_j|a_j\leq\frac{2\pi}{K(1-\lambda^{-K})}.
+\]
+Four-letter quadratic lifting makes all distinct-time signed pair sums
+of Weyl indices different. Orthogonality in the \emph{full} Weyl space gives
+\[
+ \|[G,\overline B]\|_{2,N}^2
+   =\frac4{K^4}\sum_{j=1}^{K-1}(K-j)j^2a_j^2\leq\frac9K.
+\]
+Also $\|[G,B]\|_{\rm op}<26/K$ and
+$\|[B,\overline B]\|_{\rm op}<36/K$.
+For Hermitian $A,D$, Duhamel's integral identity yields
+\[
+ \|e^{i\varepsilon A}e^{i\varepsilon D}
+             -e^{i\varepsilon(A+D)}\|
+ \leq\tfrac12\varepsilon^2\|[A,D]\|
+\]
+in either relevant unitarily invariant norm. Applied twice, this proves
+the stated constant without requiring $\varepsilon\|G\|$ to be small.
+Telescoping $mK$ powers and using $U_0^K=I$ leaves comparison error
+$6|m|\tau^2/\sqrt K$ against
+$d^{-1}\operatorname{Tr}_{-}\exp(im\tau X_K)$,
+where $X_K=\sqrt{K/2}\,\overline B$. The Gaussian moment law for $X_K$
+proves the limit. The comparison rate is not asserted as the total rate
+of Gaussian characteristic-function convergence.
+\end{proof}
+
+\begin{corollary}[Subcritical folded phases]
+If $\varepsilon_K\ne0$ and $\tau_K=\varepsilon_K\sqrt{2K}\to0$, then
+\[
+ \frac{\operatorname{Arg}(e^{iK\theta_\ell})}{\tau_K},
+ \qquad e^{i\theta_\ell}\in\operatorname{Spec}(U_{\varepsilon_K}),
+\]
+have empirical measures converging in $W_2$ to $N(0,1)$.
+No labelling into isolated old clusters is required. The proof bounds the
+additional matching error by
+$24|\tau_K|/\sqrt K+(6|\tau_K|/\pi)\sqrt{d^{-1}\operatorname{Tr}_{-}X_K^4}$.
+\end{corollary}
+
+The quantum kick at criticality tends to zero; its corresponding classical
+strength is of order $1/(N\sqrt K)$. The recurrence time $K\asymp\log N$
+is much shorter than the Heisenberg scale $d$. These statements do not
+establish local spacing universality or the fixed-classical-perturbation
+BGS conjecture. Priority for the specific arithmetic construction remains
+unverified. Independent C++ and Python representations, finite Lean kernels,
+and exact-versus-sampled numerical provenance are maintained separately.
+
+
+\subsection{A compact-test obstruction to microscopic pair limits}
+The recurrence trace law has a negative microscopic consequence even though
+positive universality would require more information. Measure eigenphases
+in turns, $e^{2\pi i x_a}$, and define
+\[
+ C_d(U;\phi)=\frac1d\sum_{a\ne b}\sum_{n\in\mathbb Z}
+                  \phi(d(x_a-x_b+n)),\qquad
+ \phi_L(s)=\frac1L(1-|s|/L)_+.
+\]
+This is the globally unfolded full odd spectrum, retaining multiplicities.
+Since $\widehat\phi_L(u)=\operatorname{sinc}^2(Lu)\geq0$, where
+$\operatorname{sinc}(v)=\sin(\pi v)/(\pi v)$, the exact Fourier formula
+\[
+ C_d(U;\phi_L)=d^{-2}\sum_{t\in\mathbb Z}
+       \widehat\phi_L(t/d)(|\operatorname{Tr}U^t|^2-d)
+\]
+implies, for $d>L$ and every fixed $M$,
+\[
+ C_d(U;\phi_L)\geq 1-\frac1L+
+ 2\sum_{m=1}^M\operatorname{sinc}^2(LmK/d)
+                 |d^{-1}\operatorname{Tr}U^{mK}|^2.
+\]
+No tail estimate is required: all omitted squared-trace terms are nonnegative.
+
+\begin{theorem}[Necessary escape from the critical recurrence regime]
+Suppose $\tau_K=\varepsilon_K\sqrt{2K}\to\tau\ne0$ is finite. Then
+\[
+ \liminf_K C_d(U_{\varepsilon_K};\phi_L)
+    \geq\Theta(\tau)-1/L,\qquad
+ \Theta(\tau)=\sum_{m\in\mathbb Z}e^{-m^2\tau^2}>1.
+\]
+If $N_L(y)$ counts levels in a uniformly translated interval of unfolded
+length $L$, then
+\[
+ \liminf_K\operatorname{Var}_y N_L\geq L^2(\Theta(\tau)-1).
+\]
+If $\tau_K\to0$, the fixed-$L$ pair statistic diverges to infinity.
+Consequently a globally unfolded pair limit with a bounded density tending
+to $1$ at large separation requires $|\varepsilon_K|\sqrt K\to\infty$.
+\end{theorem}
+
+\begin{proof}
+The trace limit is stable under $\tau_K\to\tau$ by the uniform second
+moment of $X_K$. First take the lower limit at fixed $M,L$ above, using
+$K/d\to0$, then let $M\to\infty$. For $\tau=0$ every retained trace has
+limiting absolute value $1$, so the lower bound is unbounded in $M$.
+Interval overlap gives exactly
+$\operatorname{Var}N_L=L^2(C_d-1)+L$.
+If the limiting pair density were bounded and satisfied $\rho(s)\to1$,
+then its triangular average
+$\int_{-1}^1(1-|u|)\rho(Lu)\,du$ would tend to $1$ as $L\to\infty$,
+contradicting the lower bound. Any bounded subsequence of $\tau_K$ contains
+a convergent subsequence, proving the necessary escape condition.
+\end{proof}
+
+The sine-kernel and Poisson pair laws are explicitly excluded: at
+$L=e^{\tau^2}$, even the first resonance gives a limiting lower bound
+$1+e^{-\tau^2}$, while both target averages are at most $1$. The standard
+GOE bulk pair density is bounded and tends to $1$, so the general criterion
+also excludes it. The companion checks this property directly from the
+Brezin--Hikami formula, equation (181), arXiv:math-ph/0208001.
+The continuous compact test may be replaced by a smooth compact
+positive-definite autocorrelation; no unproved Schwartz-tail control is used.
+This obstruction does not address density-adapted re-unfolding, further
+symmetry sectors, or a fixed nonzero classical kick. It does not assert
+that the necessary larger-kick condition is sufficient for BGS.

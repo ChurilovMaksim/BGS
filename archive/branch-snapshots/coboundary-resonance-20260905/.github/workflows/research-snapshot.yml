@@ -1,0 +1,38 @@
+name: Reproducible research source snapshot
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, 'research/**']
+    paths:
+      - '.github/workflows/research-snapshot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Export tracked history and current-tree provenance
+        run: |
+          mkdir -p "$RUNNER_TEMP/research-snapshot"
+          git fsck --no-dangling
+          git bundle create "$RUNNER_TEMP/research-snapshot/WoW.bundle" --all
+          git archive --format=tar.gz -o "$RUNNER_TEMP/research-snapshot/WoW-source.tar.gz" HEAD
+          git rev-parse HEAD > "$RUNNER_TEMP/research-snapshot/HEAD.txt"
+          git ls-files -s > "$RUNNER_TEMP/research-snapshot/tree-index.txt"
+          git for-each-ref --format='%(objectname) %(refname)' > "$RUNNER_TEMP/research-snapshot/refs.txt"
+          cd "$RUNNER_TEMP/research-snapshot"
+          sha256sum WoW.bundle WoW-source.tar.gz tree-index.txt > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: private-research-source-${{ github.sha }}
+          path: ${{ runner.temp }}/research-snapshot/
+          retention-days: 3
+          if-no-files-found: error

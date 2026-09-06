@@ -1,0 +1,284 @@
+{
+ "checks": [
+  [
+   "X1[A(2, 1)..p7] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p7] U^K = chi*I exact",
+   true,
+   "K=8: off-diagonals vanish, diagonals share canonical element (mass=2401, peak res=0)"
+  ],
+  [
+   "X3[A(2, 1)..p7] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(2, 1)..p11] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p11] U^K = chi*I exact",
+   true,
+   "K=5: off-diagonals vanish, diagonals share canonical element (mass=1331, peak res=2)"
+  ],
+  [
+   "X3[A(2, 1)..p11] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(2, 1)..p13] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p13] U^K = chi*I exact",
+   true,
+   "K=14: off-diagonals vanish, diagonals share canonical element (mass=62748517, peak res=0)"
+  ],
+  [
+   "X3[A(2, 1)..p13] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(2, 1)..p17] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p17] U^K = chi*I exact",
+   true,
+   "K=18: off-diagonals vanish, diagonals share canonical element (mass=118587876497, peak res=0)"
+  ],
+  [
+   "X3[A(2, 1)..p17] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(2, 1)..p29] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p29] U^K = chi*I exact",
+   true,
+   "K=7: off-diagonals vanish, diagonals share canonical element (mass=707281, peak res=2)"
+  ],
+  [
+   "X3[A(2, 1)..p29] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(2, 1)..p41] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X2[A(2, 1)..p41] U^K = chi*I exact",
+   true,
+   "K=20: off-diagonals vanish, diagonals share canonical element (mass=13422659310152401, peak res=0)"
+  ],
+  [
+   "X3[A(2, 1)..p41] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p7] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p7] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=5"
+  ],
+  [
+   "X2[A(3, 1)..p7] U^K = chi*I exact",
+   true,
+   "K=8: off-diagonals vanish, diagonals share canonical element (mass=2401, peak res=0)"
+  ],
+  [
+   "X3[A(3, 1)..p7] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p11] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p11] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=9"
+  ],
+  [
+   "X2[A(3, 1)..p11] U^K = chi*I exact",
+   true,
+   "K=10: off-diagonals vanish, diagonals share canonical element (mass=1610510, peak res=1)"
+  ],
+  [
+   "X3[A(3, 1)..p11] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p13] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p13] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=11"
+  ],
+  [
+   "X2[A(3, 1)..p13] U^K = chi*I exact",
+   true,
+   "K=12: off-diagonals vanish, diagonals share canonical element (mass=4826809, peak res=0)"
+  ],
+  [
+   "X3[A(3, 1)..p13] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p17] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p17] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=15"
+  ],
+  [
+   "X2[A(3, 1)..p17] U^K = chi*I exact",
+   true,
+   "K=18: off-diagonals vanish, diagonals share canonical element (mass=118587876497, peak res=0)"
+  ],
+  [
+   "X3[A(3, 1)..p17] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p29] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p29] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=27"
+  ],
+  [
+   "X2[A(3, 1)..p29] U^K = chi*I exact",
+   true,
+   "K=15: off-diagonals vanish, diagonals share canonical element (mass=500246412961, peak res=1)"
+  ],
+  [
+   "X3[A(3, 1)..p29] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X1[A(3, 1)..p41] Egorov exact vs A^T, ALL n",
+   true,
+   "all n aligned with one global phase per n"
+  ],
+  [
+   "X1neg[A(3, 1)..p41] alignment vs A fails (non-symmetric)",
+   true,
+   "mismatch detected: inconsistent phase n=(1,0) x=1 z=39"
+  ],
+  [
+   "X2[A(3, 1)..p41] U^K = chi*I exact",
+   true,
+   "K=14: off-diagonals vanish, diagonals share canonical element (mass=194754273881, peak res=0)"
+  ],
+  [
+   "X3[A(3, 1)..p41] |Tr(T(v)U^J)|=|Tr(U^J)| exact",
+   true,
+   "J=1..4, v=((0, 1), (1, 0), (2, 3)) equal"
+  ],
+  [
+   "X4a completeness: sum_u TuTwTu* = 0 for w!=0 (exact)",
+   true,
+   "w=(1, 0):zero, w=(0, 1):zero, w=(1, 1):zero, w=(2, 1):zero"
+  ],
+  [
+   "X4b completeness: sum_u TuTu* = p^2 I (exact)",
+   true,
+   "p=7: p^2*I confirmed"
+  ],
+  [
+   "X5[p=13] Theta^2 exact scalar",
+   true,
+   "M=S*R=(-13, -8, -21, -13), R=(-13, -8, 21): Theta^2 == +1"
+  ],
+  [
+   "X5[p=11] Theta^2 exact scalar",
+   true,
+   "M=S*R=(-11, -4, -30, -11), R=(-11, -4, 30): Theta^2 == +1"
+  ],
+  [
+   "X6 NEG-CONTROL parabolic p=5: unimodularity broken",
+   true,
+   "J=2,v=(0,1); J=2,v=(1,0)"
+  ],
+  [
+   "X7 T17 closed form at fresh (p,alpha,k)",
+   true,
+   "p=41,k=8(-1inH):168==168; p=73,k=8(-1outH):120==120; p=113,k=14(-1outH):378==378; p=127,k=7(-1outH):91==91"
+  ]
+ ],
+ "t17_fresh": [
+  {
+   "p": 41,
+   "alpha": 3,
+   "k": 8,
+   "minus1_in_H": true,
+   "brute": 168,
+   "closed": 168,
+   "ok": true
+  },
+  {
+   "p": 73,
+   "alpha": 5,
+   "k": 8,
+   "minus1_in_H": false,
+   "brute": 120,
+   "closed": 120,
+   "ok": true
+  },
+  {
+   "p": 113,
+   "alpha": 9,
+   "k": 14,
+   "minus1_in_H": false,
+   "brute": 378,
+   "closed": 378,
+   "ok": true
+  },
+  {
+   "p": 127,
+   "alpha": 3,
+   "k": 7,
+   "minus1_in_H": false,
+   "brute": 91,
+   "closed": 91,
+   "ok": true
+  }
+ ],
+ "total_pass": 48,
+ "total": 48
+}

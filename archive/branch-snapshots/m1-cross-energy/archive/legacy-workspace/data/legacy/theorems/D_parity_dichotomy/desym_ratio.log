@@ -1,0 +1,31 @@
+eps=+1 design points (p,k,eps,K,m): [(3571, 17, 1, 17, 210), (9901, 33, 1, 33, 300), (19489, 29, 1, 29, 672)]
+==============================================================================
+p=3571 k=17 K=17 m=210 (m+=105, m-=105)  [5.0s]
+   refs full  : GOE=0.5292+-0.0150  GUE=0.5883+-0.0212  Poisson=0.3823+-0.0239  SUP_GUE=0.4287+-0.0234  SUP_GOE=0.4335+-0.0279
+   refs block : GOE=0.5373+-0.0248  GUE=0.6082+-0.0219  Poisson=0.3726+-0.0345
+   full   <r~> = 0.4250 +- 0.0056   z: GOE=-6.93  GUE=-7.71  Poisson=+1.79  SUP_GUE=-0.16  SUP_GOE=-0.30
+   plus   <r~> = 0.5291 +- 0.0083   z: GOE=-0.33  GUE=-3.61  Poisson=+4.54
+   minus  <r~> = 0.5417 +- 0.0067   z: GOE=+0.18  GUE=-3.04  Poisson=+4.90
+   haar   <r~> = 0.5981 +- 0.0077   z: GOE=+2.45  GUE=-0.46  Poisson=+6.54
+==============================================================================
+p=9901 k=33 K=33 m=300 (m+=150, m-=150)  [25.9s]
+   refs full  : GOE=0.5295+-0.0135  GUE=0.5973+-0.0194  Poisson=0.3801+-0.0166  SUP_GUE=0.4222+-0.0176  SUP_GOE=0.4284+-0.0178
+   refs block : GOE=0.5249+-0.0329  GUE=0.6089+-0.0169  Poisson=0.4000+-0.0298
+   full   <r~> = 0.4164 +- 0.0043   z: GOE=-8.36  GUE=-9.34  Poisson=+2.19  SUP_GUE=-0.33  SUP_GOE=-0.67
+   plus   <r~> = 0.5366 +- 0.0056   z: GOE=+0.35  GUE=-4.29  Poisson=+4.58
+   minus  <r~> = 0.5295 +- 0.0049   z: GOE=+0.14  GUE=-4.71  Poisson=+4.34
+   haar   <r~> = 0.5936 +- 0.0073   z: GOE=+2.09  GUE=-0.91  Poisson=+6.49
+==============================================================================
+p=19489 k=29 K=29 m=673 (m+=337, m-=336)  [136.1s]
+   refs full  : GOE=0.5258+-0.0121  GUE=0.5998+-0.0075  Poisson=0.3916+-0.0108  SUP_GUE=0.4229+-0.0126  SUP_GOE=0.4208+-0.0111
+   refs block : GOE=0.5354+-0.0186  GUE=0.6071+-0.0136  Poisson=0.3869+-0.0168
+   full   <r~> = 0.4125 +- 0.0032   z: GOE=-9.35  GUE=-25.07  Poisson=+1.93  SUP_GUE=-0.83  SUP_GOE=-0.74
+   plus   <r~> = 0.5313 +- 0.0050   z: GOE=-0.22  GUE=-5.59  Poisson=+8.59
+   minus  <r~> = 0.5334 +- 0.0040   z: GOE=-0.11  GUE=-5.44  Poisson=+8.71
+   haar   <r~> = 0.5928 +- 0.0049   z: GOE=+3.08  GUE=-1.06  Poisson=+12.24
+
+SUMMARY  (arithmetic content after desymmetrisation)
+  p=  3571 m= 210: full <r~>=0.4250 (z_SUPGUE=-0.16, z_GUE=-7.71) | block <r~>=0.5291 (z_GUE=-3.61, z_GOE=-0.33) | haar <r~>=0.5981 (z_GUE=-0.46)
+  p=  9901 m= 300: full <r~>=0.4164 (z_SUPGUE=-0.33, z_GUE=-9.34) | block <r~>=0.5366 (z_GUE=-4.29, z_GOE=+0.35) | haar <r~>=0.5936 (z_GUE=-0.91)
+  p= 19489 m= 673: full <r~>=0.4125 (z_SUPGUE=-0.83, z_GUE=-25.07) | block <r~>=0.5313 (z_GUE=-5.59, z_GOE=-0.22) | haar <r~>=0.5928 (z_GUE=-1.06)
+artifact -> C:\Users\churi\Desktop\BGS\artifacts\r72\desym_ratio_statistic.json

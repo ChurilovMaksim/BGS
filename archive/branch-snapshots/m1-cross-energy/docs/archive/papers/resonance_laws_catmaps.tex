@@ -1,0 +1,1101 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{experiment}[theorem]{Experiment}
+\newtheorem{openproblem}[theorem]{Open Problem}
+
+\title{Exact Resonance Laws for Compressed Cat Maps:\\
+Matched Identity, Ensemble Mean,\\
+and Perturbation-Induced Wigner--Dyson Statistics}
+
+\author{}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{quote}\small
+\textbf{Source edit log (2026-08-28):} the \texttt{.tex} source
+was edited on a machine with \emph{no} \LaTeX{} engine; the last
+successful \texttt{.pdf} compile is the 159.4\,KB file dated
+2026-08-27.  Edits applied in this source revision (without
+recompile) are:
+(1) the \texttt{gcd}($M_{21}$, $N$)$=$1 hypothesis on the
+anti-unitary $\Theta^2=+1$ result (Remark~\ref{rem:rev},
+and \S\ref{sec:status} status table footnote);
+(2) the \texttt{lem:fiber} non-degeneracy hypothesis
+(a$_1$,a$_3$,b$_1$,b$_3$ all nonzero, footnote in
+\S\ref{sec:unmatched});
+(3) the corrected U4 bound $\mathrm{EXTRAS}\le k^3p^{-2\delta}$
+with the explicit \texttt{k}$\ll$\texttt{p$^{2\delta}$} threshold
+(\S\ref{sec:unmatched}, Tail subsection);
+(4) the r=5 master-formula demoted to ``numerically supported for
+$r\le4$; one pass at $r=5$ (Arnold @ $N=101$, err$\le 4\times
+10^{-16}$); legacy \texttt{m1\_new\_configs.py} and
+\texttt{s\_of\_j5.jl} deprecated'' (\S\ref{sec:status} status
+table);
+(5) a new T21 status row recording that the $k\ge p^{3/7+\varepsilon}$
+smooth law is unchanged as of 2026-08-28, with the three
+Ring 2 attack lines (Stepanov / Deligne / Bourgain) all closing
+as $[\mathrm{OPEN\ GAP}]$.
+\textbf{Do not re-pdf-compile this source without auditing every
+edit against the LEDGER RUN 64--66 entries and the
+\texttt{artifacts/ring2/synthesis.md}.}
+\end{quote}
+
+
+\begin{abstract}
+We study spectral statistics of compressions $V_\lambda=P_\lambda V P_\lambda$
+of observables in degenerate eigenspaces of quantised hyperbolic toral
+automorphisms (Arnold cat maps). Three quantitative results are obtained
+for the arithmetic resonance counts that govern the moments of these
+compressions.
+
+\emph{(i) Matched identity.} For fully matched labels the fourth-order
+resonance count equals exactly $2k^2-k$ when $k$ is odd and $3k(k-1)$
+when $k$ is even, where $k$ is the order of the split eigenvalue
+$\alpha$ generating $H=\langle\alpha\rangle\subseteq\mathbb F_p^\times$.
+These are precisely the Wick-pairing masses for GUE and GOE; the third
+pairing in the even case is an arithmetic consequence of
+$-1\in H$, not of any classical symmetry. Classical reversibility of
+the map does not force $k$ to be even.
+
+\emph{(ii) Ensemble-mean law.} Averaged over the \emph{full} label
+ensemble $(a,b)\in(\mathbb F_p^\times)^8$, the reduced resonance count
+has an \emph{exactly computable} mean,
+$\langle N_3\rangle=k^3(p^2-3p+3)^2/(p-1)^6=k^3/p^2\,(1+O(1/p))$,
+proved by elementary double counting. Degenerate patterns form a set
+of relative measure $O(1/p)$, so the conditional mean over generic
+patterns shares the same leading term: a typical pattern has small
+expected resonance count once $k<p^{2/3}$, and nonzero counts are rare
+fluctuations around this small mean. A companion tail bound
+$\max N_3\le\lfloor k^2/p\rfloor+2$ over generic patterns is supported
+by zero violations across ${\sim}230$ configurations.
+
+\emph{(iii) Perturbation-induced Wigner--Dyson statistics.} Under the
+unitary perturbation flow $U_\varepsilon=e^{i\varepsilon E}U_A$ with
+$E$ drawn from the Gaussian unitary ensemble, intra-multiplet level
+spacings --- tracked through the flow by optimal assignment ---
+agree with the Wigner--Dyson surmise and clearly reject Poisson across
+four independent primes ($p\in\{1597,\dots,3001\}$, up to $204$
+spacings per prime). Scaling the same pipeline to three further
+primes ($13\,723$ spacings, reference ensembles matched to the
+observed multiplet dimensions) resolves the ensemble class: the data
+match GUE and exclude GOE with a KS gap five times the critical
+value, exactly as Lemma~\ref{lem:perturb} predicts for a GUE
+perturbation. This
+links the exact arithmetic core to random-matrix phenomenology under
+an infinitesimal symmetry breaking; it does not establish an
+unconditional local spacing law for the unperturbed compressions,
+which remains open.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}\label{sec:intro}
+
+The Bohigas--Giannoni--Schmit (BGS) conjecture asserts that quantum
+spectra of classically chaotic systems exhibit universal fluctuations
+described by random-matrix ensembles \cite{BGS84}: GOE for generic
+time-reversal-invariant systems, GUE when time reversal is absent,
+GSE with spin-$1/2$ and time reversal.
+
+Quantised Arnold cat maps --- hyperbolic elements of
+$\mathrm{SL}(2,\mathbb Z)$ acting on the torus, quantised via Weil's
+metaplectic representation --- provide one of the cleanest laboratories
+for such questions \cite{HB80}. Kurlberg--Rudnick
+\cite{KR00,KR01} showed that the Hecke algebra diagonalises $U_A$ and
+that matrix coefficients of Hecke eigenfunctions become Gaussian in
+the semiclassical limit. Raw (non-Hecke-symmetrised) maps, however,
+exhibit large eigenspace multiplicities: if $\alpha\in\mathbb F_p^\times$
+is a split eigenvalue of $A\bmod p$ and $H=\langle\alpha\rangle$
+with $k=|H|$, every eigenvalue of $U_A$ has multiplicity at least
+$\lfloor p/K\rfloor$, where $K$ is the quantum period
+\cite{KR00}. Inside one eigenspace the compression
+$V_\lambda:=P_\lambda V P_\lambda$ of an observable $V$ is an
+$m\times m$ matrix whose statistics invite comparison with
+random-matrix predictions.
+
+Moments of $V_\lambda$ reduce to \emph{resonance counts}: solutions in
+$H^r$ of two coupled linear equations, one linear in the variables
+$h_i$, one in their reciprocals. An earlier draft of this programme
+claimed a ``fine-scale Wigner--Dyson theorem'' at order four with error
+$C_Fk^8/p^2$ valid for $k=o(p^{2/3})$. \emph{[Historical note: that
+argument double-counted a prefactor between two equivalent
+formulations of the resonance count and was retracted; it is mentioned
+here only to record provenance, and no threshold of this shape is used
+or needed below.]} The present paper replaces asymptotic claims by
+exact statements and carefully separated statistical levels.
+
+\subsection*{Contributions}
+\begin{enumerate}
+\item \textbf{Matched identity (Theorem~\ref{thm:core}).} A complete
+proof, by structural decomposition into pairing types plus an
+$S=0$ layer, that the fully matched fourth-order count equals
+$2k^2-k$ ($k$ odd) resp.\ $3k(k-1)$ ($k$ even). Verified numerically
+in dozens of configurations and manually at $k=2,4$.
+\item \textbf{Reversibility vs.\ parity (Remark~\ref{rem:rev}).}
+Numerous reversible maps admit split primes with odd $k$; the GUE-type
+value of the counter there is forced by arithmetic alone.
+\item \textbf{Ensemble-mean law (Theorem~\ref{thm:meanlaw}).} An exact
+closed form for the mean unmatched resonance count over random labels,
+proved by double counting together with new zero-count lemmas for
+linear forms on $(\mathbb F_p^\times)^n$
+(Lemma~\ref{lem:zerocounts}); confirmed within Monte-Carlo errors in
+five configurations ($|z|<1.5$).
+\item \textbf{Tail bound (Conjecture~\ref{conj:tight}).} The empirical
+law $\max_{a,b}N_3\le\lfloor k^2/p\rfloor+2$ for generic patterns,
+with zero violations across ${\sim}230$ tested configurations;
+distinguished from the mean and from degenerate sectors, which obey
+their own closed forms.
+\item \textbf{Perturbation-induced universality
+(Lemma~\ref{lem:perturb}, Experiment~\ref{exp:multi}).} Under the
+unitary flow $U_\varepsilon=e^{i\varepsilon E}U_A$ with $E$ GUE,
+intra-multiplet splittings follow a GUE compression law; tracked
+spacings follow Wigner--Dyson and reject Poisson across four primes.
+\end{enumerate}
+
+Throughout, status tags distinguish proven statements from
+numerically supported ones (Section~\ref{sec:status}); no BGS claim is
+made beyond what these tags license.
+
+\section{Setup}\label{sec:setup}
+
+\subsection{Classical and quantised dynamics}
+
+Let $A=(\begin{smallmatrix}a&b\\ c&d\end{smallmatrix})
+\in\mathrm{SL}(2,\mathbb Z)$ be hyperbolic, $|\operatorname{tr}A|>2$,
+and let $N=p$ be an odd prime in the \emph{split} regime:
+$\Delta:=(\operatorname{tr}A)^2-4\not\equiv0$ is a quadratic residue
+mod $p$, so $A$ has eigenvalues $\alpha,\alpha^{-1}\in\mathbb F_p^\times$.
+The inert case lies outside this paper (Open Problem~\ref{op:inert}).
+
+On $\mathcal H_p=L^2(\mathbb Z/p)$, with $\omega=e^{2\pi i/p}$ and
+$b_2=2^{-1}\bmod p$, define the Weyl operators
+\[
+T(n_1,n_2)=\omega^{b_2n_1n_2}\,Q(n_2)P(n_1),
+\qquad
+(Q(n)\psi)(x)=\omega^{nx}\psi(x),\quad
+(P(n)\psi)(x)=\psi(x-n),
+\]
+satisfying $T(g)T(h)=\omega^{\Psi(g,h)/2}T(g+h)$ with
+$\Psi(g,h)=g_2h_1-g_1h_2$. The Weil quantisation $U_A$ is fixed (up to
+phase) by Egorov $U_A^{-1}T(v)U_A=T(Av)$ and obeys
+$U_A^{K}=\chi(A)\,I$, where the \emph{quantum period}
+\[
+K \;:=\; \operatorname{ord}_{\,\mathrm{PSU}(2,\mathbb Z/p)}(A)
+\]
+is the order of the image of $A$ in $\mathrm{PSU}(2,\mathbb Z/p)$
+(cf.\ \cite{FNDB03}) and
+$\chi(A)=\pm1$ is the metaplectic sign. Eigenspaces of $U_A$ itself
+are the objects of study.
+
+For later use we record the machine-level bridge between moments and
+resonance counts: expanding $\operatorname{Tr}(V_\lambda^r)$ through
+the Weyl product rule produces, for each label pattern, the count
+$\mathrm{sol}(a,b)$ multiplied by an explicit unit-modulus phase and
+the coefficients $c_n$; for $r\le4$ this ``master formula'' is
+certified to machine precision (relative error ${\le}10^{-14}$ over a
+regression suite), so bounding counts bounds moment contributions in
+absolute value regardless of phases.
+
+Fix a split eigenvalue $\lambda$, let
+$\mathcal H_\lambda=\ker(U_A-\lambda I)$ have dimension $m$ with
+projector $P_\lambda$, and let
+\[
+V=\sum_{n\in F}c_nT(n)
+\]
+be an observable with finite frequency support $F$; write
+$V_\lambda=P_\lambda VP_\lambda$. Since the classical map is ergodic,
+the spectrum of $V_\lambda$ concentrates near
+$\mu=m^{-1}\operatorname{Tr}(V_\lambda)$; fine-scale statistics concern
+the centred operator $W:=V_\lambda-\mu\mathbf 1$.
+
+\subsection{Resonance counts}
+
+Traces $\operatorname{Tr}(V_\lambda^r)$ expand over ordered signed
+frequency tuples; the coefficient of a pattern
+$(a_i;b_i)\in(\mathbb F_p^\times)^{8}$ with signs
+$(+,-,+,-)$ involves the number of tuples
+$(h_1,\dots,h_r)\in H^r$ solving
+\begin{equation}\label{eq:gen}
+a_1h_1-a_2h_2+a_3h_3-a_4h_4=0,\qquad
+b_1h_1^{-1}-b_2h_2^{-1}+b_3h_3^{-1}-b_4h_4^{-1}=0
+\ \ (\mathrm{mod}\ p),
+\end{equation}
+generalised to $r$ slots in the obvious way. We write
+$\mathrm{sol}(a,b)$ for the count and reserve
+$\mathrm{sol}_{+-+-}(H)$ for the fully matched pattern
+$a_i=b_i=1$.
+
+\begin{remark}[Collision lemma]\label{rem:collision}
+For a slot-pair with labels $(a_1,a_3;b_1,b_3)$ define
+$\Phi_{13}:H^2\to G^2$,
+$\Phi_{13}(x,y)=\bigl(a_1x+a_3y,\;b_1/x+b_3/y\bigr)$, and
+likewise $\Phi_{24}$. \emph{Non-degeneracy hypothesis
+(added 2026-08-28):} assume
+\[
+a_1\ne 0,\ a_3\ne 0,\ b_1\ne 0,\ b_3\ne 0,
+\qquad\text{and}\qquad a_1b_3\ne a_3b_1.
+\]
+(the first four conditions force the chart to be
+non-degenerate; the last forces the
+non-proportionality needed for the quadratic fibre
+argument). Under this hypothesis, every fibre of
+$\Phi_{13}$ has at most two points: substituting
+$y=(u-a_1x)/a_3$ into the cleared reciprocal equation
+gives a quadratic
+in $x$. Consequently a resonance value $(u,v)$ has at
+most
+$|\Phi_{13}^{-1}|\cdot|\Phi_{24}^{-1}|\le4$ preimage
+tuples; this is
+the \emph{collision lemma} $C(u,v)\le4$. Its algebraic
+core --- two
+pairs over a field sharing both sum and product coincide
+up to order
+--- is formalised in Lean~4
+(\texttt{BgsFormal.lean}, theorems \texttt{prod\_eq},
+\texttt{sum\_sq}; repository path recorded in the
+artefact manifest).
+Degenerate (proportional) slot-pairs
+or charts with one of $a_1,a_3,b_1,b_3$ equal to zero
+\emph{escape} the quadratic bound: in the red-team
+scan on the chart $(a_1,a_3)=(0,0)$ with $H=\langle
+\alpha\rangle$ of order $k$, the fibre of $\Phi_{13}$ is
+the whole $H^2$ of size $k^2$; the degenerate-stratum
+contribution is bounded by
+the explicit \emph{strata} law
+(Theorem~\ref{thm:meanlaw} and the R3 audit
+\texttt{audit\_degenerate\_strata.json}):
+the degenerate strata form a set of relative measure
+$O(1/p)$ in the label ensemble, and the leading-order
+contribution of degenerate patterns is captured by the
+mean law $k^3(p^2-3p+3)^2/(p-1)^6$. Degenerate
+patterns are excluded from the U1 statement by the
+non-degeneracy hypothesis above, and are treated
+separately via the mean law wherever they occur.
+\end{remark}
+
+\section{The matched sector}\label{sec:matched}
+
+\begin{theorem}[Exact resonance core]\label{thm:core}
+For any subgroup $H\subseteq\mathbb F_p^\times$, $k=|H|$,
+\[
+\mathrm{sol}_{+-+-}(H)=
+\begin{cases}
+2k^2-k,& k\ \text{odd},\\[0.4em]
+3k(k-1),& k\ \text{even}.
+\end{cases}
+\]
+These equal the Wick-pairing masses for GUE ($2$ pairings) and GOE
+($3$ pairings); the extra pairing exists precisely when
+$-1\in H$, i.e.\ iff $k$ is even.
+\end{theorem}
+
+\begin{proof}
+Decompose by structural type rather than by the value of
+$S:=h_1+h_3=h_2+h_4$.
+
+\emph{Step 1 (two universal families).} Tuples of type
+(a): $h_1=h_2=:t$, $h_3=h_4=:u$ satisfy both equations of
+\eqref{eq:gen} identically; there are $k^2$. Type
+(b): $h_1=h_4=:t$, $h_2=h_3=:u$ gives another $k^2$. Their overlap is
+$t=u$, of size $k$, so
+$|{\rm(a)}\cup{\rm(b)}|=2k^2-k$.
+
+\emph{Step 2 (no further $S\neq0$ solutions).} If $S\neq0$, combining
+the reciprocal equation over a common denominator gives
+$(h_1h_3-h_2h_4)\,S=0$, hence $h_1h_3=h_2h_4$: both unordered pairs
+are root pairs of $X^2-SX+h_1h_3$, which has at most two roots, so the
+pairs coincide and the tuple is of type (a) or (b).
+
+\emph{Step 3 (the $S=0$ layer).} If $S=0$ then $h_3=-h_1$,
+$h_4=-h_2$, and the second equation holds identically. Such tuples
+exist iff $-1\in H$, i.e.\ iff $k$ is even, and then number $k^2$,
+freely parametrised by $(h_1,h_2)$. Within them, $h_2=h_1$ gives type
+(a) and $h_2=-h_1$ gives type (b); these subfamilies are disjoint of
+size $k$ each, leaving $k^2-2k$ genuinely new solutions.
+
+\emph{Total.} Odd $k$: no $S=0$ layer, so $2k^2-k$. Even $k$:
+$(2k^2-k)+(k^2-2k)=3k(k-1)$.
+\end{proof}
+
+The theorem was verified exhaustively on small cases (e.g.\ $p=5$,
+$H=\{\pm1\}$: six solutions, decomposing as $\{$ab:2, a:2, b:2$\}$)
+and against brute-force enumeration for many $(p,k)$; see also
+Experiment~\ref{exp:exactmean}'s artefact discipline.
+
+\begin{remark}[Arithmetic shadow]\label{rem:shadow}
+The third pairing is governed by the unique order-two element
+$-1$ of the cyclic group $\mathbb F_p^\times$ lying in $H$: a shadow
+of $\mathbb F_p^\times[2]$, not of any classical symmetry.
+\end{remark}
+
+\begin{remark}[Wick dictionary, structural]\label{rem:wickdict}
+The three solution types map onto the three Wick pairings of four
+slots:
+\[
+\text{type (a)}\;\bigl(h_1{=}h_2,\ h_3{=}h_4\bigr)
+\leftrightarrow(12)(34),\qquad
+\text{type (b)}\;\bigl(h_1{=}h_4,\ h_2{=}h_3\bigr)
+\leftrightarrow(14)(23),
+\]
+\[
+S=0\ \text{layer}\;\bigl(h_3{=}-h_1,\ h_4{=}-h_2\bigr)
+\leftrightarrow(13)(24),
+\]
+the last existing precisely when $-1\in H$, which is exactly when the
+count jumps to the GOE-type mass $3k(k-1)$. We stress this as a
+\emph{structural analogy}: the finite-$k$ expressions $2k^2-k$ and
+$3k(k-1)$ carry endpoint corrections relative to naive Gaussian Wick
+masses $2k^2$ and $3k^2$, and no Gaussian integral is being evaluated.
+\end{remark}
+
+\begin{remark}[Reversibility does not force even $k$]\label{rem:rev}
+Call $A$ reversible if some $R\in\mathrm{GL}(2,\mathbb Z)$ satisfies
+$RAR^{-1}=A^{-1}$; then a traceless reverser exists and the quantised
+propagator admits an anti-unitary $\Theta$ with
+$\Theta U_A\Theta^{-1}=U_A^{-1}$.
+Nevertheless numerous reversible maps admit split primes with
+odd $k$: for $A=(\begin{smallmatrix}2&1\\1&1\end{smallmatrix})$ and
+$A=(\begin{smallmatrix}5&2\\2&1\end{smallmatrix})$, instances include
+$(p,k)=(101,25),(199,11),(211,21),(199,9)$, where
+Theorem~\ref{thm:core} forces the GUE-type value regardless of
+$\Theta$. Classical reversibility and multiplicative parity are
+independent.
+\end{remark}
+
+\begin{remark}[Degenerate chart: $M_{21}\equiv 0\pmod N$]\label{rem:reversing_degenerate}
+The Weil-cocycle identity
+$c(M,M^{-1})=\pm 1$ for
+$\Theta^2=U_M\,\overline{U_M}=c(M,M^{-1})\cdot 1$
+is proved for reversing involutions
+$R=[\![p,q],[\,r,-p\,]\!]\in\mathrm{GL}(2,\mathbb Z)$
+with $M=S\cdot R$ and
+$\gcd(M_{21},N)=1$.
+The standard symplectic reflection is
+$S=[\![1,0],[0,-1]\!]$.
+The hypothesis is automatic for
+$R=[\![0,-1],[1,0]\!]$ and
+$R=[\![\pm 1,0],[0,\mp 1]\!]$;
+it \emph{fails} for $R=[\![1,-1],[0,-1]\!]$
+($M_{21}=0$) and similar degenerate charts.
+In that case the twisted Weil cocycle collapses: the
+$M$-quantum propagator
+$U_M(x,y)=(1/\sqrt N)\exp(2\pi i(M_{11}xy+M_{12}x^2/2+M_{22}y^2/2)/N)$
+has $M_{21}\equiv 0$, so the $(x,y)$ cross-term
+vanishes and $U_M$ factorises as
+$\mathrm{chirpx}\otimes\mathrm{chirpy}$.
+Complex conjugation sends
+$U_M\mapsto\overline{U_M}$ and
+$\overline{U_M}\circ U_M=(1/N)\cdot 1$
+is the \emph{pointwise} identity on the basis
+$T(v)$;
+$\Theta^2$ acts as $+1$ on every basis vector.
+The $\beta=1/\beta=4$ dichotomy collapses trivially
+to $\beta=1$.
+This case is covered by the red-team
+review~\cite{redteam5} and the analytic paragraph in
+the LEDGER R12-A area;
+the analytic--empiric gap it exposed is closed
+by the explicit hypothesis
+$\gcd(M_{21},N)=1$ now stated.
+\end{remark}
+
+
+\section{The unmatched sector}\label{sec:unmatched}
+
+\subsection{Reduction to \texorpdfstring{$H^3$}{H3}}
+
+Fix signs $(+,-,+,-)$ and labels $(a;b)\in(\mathbb F_p^\times)^8$.
+Substituting $h_i=h_1u_i$ ($u_1=1$) factors out the scale $h_1\in H$;
+each reduced solution $(u_2,u_3,u_4)\in H^3$ lifts to exactly $k$
+full solutions, so
+\[
+\mathrm{sol}(a,b)=k\,N_3(a,b).
+\]
+Eliminating $u_4$ yields one polynomial of bidegree $(2,2)$ in
+$(u_2,u_3)$, whence the unconditional Schwartz--Zippel bound
+$N_3\le4k$. Empirically the truth is sharper and two-tiered: a small
+mean with Poisson-like fluctuations, and a tight worst-case ceiling.
+
+\subsection{Tail: the tight resonance bound}
+
+Call a label pattern $(a;b)$ \emph{generic} when neither slot-pair form
+is proportional --- $a_1b_3\ne a_3b_1$ and $a_2b_4\ne a_4b_2$ --- and,
+in addition, no cross-proportionality $a_ib_j=a_jb_i$ holds for
+$(i,j)\in\{(1,2),(1,4),(2,3),(3,4)\}$; these are precisely the
+conditions under which the bidegree-$(2,2)$ elimination polynomial has
+nonvanishing quadratic part. The proportionality locus is cut out by
+finitely many nonzero linear equations on the label torus, hence has
+relative measure $O(1/p)$ in $(G)^8$.
+
+Degenerate (proportionality-containing) patterns violate bounds of
+the shape below but resolve into finitely many families with their own
+exact formulae: fully matched labels give Theorem~\ref{thm:core};
+slot-proportional pairs collapse one resonance equation onto the other
+and contribute $\Theta(k^{3})$-type layers; each such family is a
+lower-dimensional stratum handled separately.
+
+\begin{conjecture}[Tight tail bound]\label{conj:tight}
+For every generic unmatched pattern,
+\[
+N_3(a,b)\;\le\;\Bigl\lfloor k^{2}/p\Bigr\rfloor+2 .
+\]
+\end{conjecture}
+
+The additive slack $2$ is not arbitrary: when $k^2/p$ sits just below
+an integer, the floor drops by one while the arithmetic count does
+not, so any floor-based law needs unit slack; the observed maximum
+requires exactly two.
+
+\begin{conjecture}[Unified tail bound]\label{conj:unified}
+In fact genericity may be unnecessary: for \emph{every} label pattern
+that is not Wick-compatible --- i.e.\ admits no perfect matching of
+the four slots into pairs $(i,j)$ with $a_i=a_j$ and $b_i=b_j$ ---
+the reduced count obeys
+\[
+N_3(a,b)\;\le\;\Bigl\lfloor k^{2}/p\Bigr\rfloor+2 .
+\]
+Patterns inside the Wick locus carry the exact pairing masses
+(Theorem~\ref{thm:core} and its multi-frequency analogue), so this
+one bound would subsume the degenerate-strata estimate used by
+Corollary~\ref{cor:domination}.
+\end{conjecture}
+
+\begin{remark}[Empirical support for Conjecture~\ref{conj:unified}]
+A stratified scan (\texttt{review/scripts/degenerate\_strata\_scan.py};
+artifacts \texttt{audit\_degenerate\_strata.json}) grew the ladder
+$p\in\{1009,\dots,8009\}$ with $k\sim\sqrt{\rho p}$ for
+$\rho\in\{1,4,16\}$ ($k$ up to $364$) and compared five non-Wick
+degenerate classes --- slot-proportionality, single cross-, double
+cross-, chained proportionalities, and the sharpest near-Wick edge
+where three of the four Wick equalities hold --- against a fully
+generic baseline, $250$ random instances per cell. All non-Wick
+classes tracked the generic statistics throughout: maxima stayed
+within $\{0,\dots,10\}$ versus the ceiling ${\sim}\rho{+}2$, means
+matched the exact ensemble law $k^3/p^2$, while the absorbed Wick
+sector gave exactly $\Theta(k)$. No violation or excess over the
+generic baseline was observed in any class.
+\end{remark}
+
+
+\begin{remark}[Smooth-law conditional on Ostafe--Shparlinski--Voloch]\label{rem:smoothconditional}
+The two conjectures above are unconditional on the empirical record
+($\sim 293$ tested configurations, $\sim 60{,}000$ random label patterns,
+$0$ violations; new lattice $p\le 2003$, $k\le 30$, 800 trials each,
+reported in \texttt{artifacts/audit\_conj\_tight\_extended.json}).
+A \emph{conditional} \textbf{proof} of the smooth tail law
+$N_3 \le k^2/p + \sqrt{k}$ at unit constant is available for
+$k \ge p^{3/7+\varepsilon}$ by combining
+the pointwise subgroup Kloosterman bound of
+Ostafe, Shparlinski and Voloch \cite{OSV21} (Corollary~2.9)
+with the nested-completion program of
+\texttt{drafts/tail\_bound\_attempt.md}\S2.
+Below the $p^{3/7}$ threshold the only available power-saving-in-$p$
+estimate is Bourgain's 2005 JAMS estimate, whose dependence
+$\delta(\varepsilon)$ is not explicit
+(per OSV's own Remark~2.11); a published explicit pointwise
+$\delta>0$ for $k < p^{3/7}$ is not available, and the precise
+gap is documented in \texttt{review/subgroup\_kloosterman.md} and
+\texttt{drafts/tail\_bound\_proof.md}.
+\end{remark}
+
+Across ${\sim}230$ tested configurations
+($p\le2729$, $3\le k\le682$, hundreds of random patterns each)
+there are zero violations; an earlier guess with constant $1$ failed
+on boundary cases where $k^2/p$ sits just below an integer, and the
+slack of $2$ accommodates that granularity.
+
+\subsection{Mean: an exact ensemble law}
+
+Worst-case and typical behaviour must not be conflated. The typical
+behaviour is governed by an exactly provable law.
+
+\begin{lemma}[Zero counts of linear forms]\label{lem:zerocounts}
+Let $p$ be prime, $G=\mathbb F_p^\times$, and
+$c_1,\dots,c_n\in G$. Then the number of solutions in $G^n$ of
+$c_1x_1+\dots+c_nx_n=0$ equals
+\[
+Z_2=p-1,\qquad
+Z_3=(p-1)(p-2),\qquad
+Z_4=(p-1)(p^2-3p+3),
+\]
+independently of the coefficients.
+\end{lemma}
+
+\begin{proof}
+$n=2$: each $x_1\in G$ determines $x_2=-c_1x_1/c_2\in G$.
+$n=3$: fix $(x_1,x_2)\in G^2$; $x_3$ is admissible iff
+$c_1x_1+c_2x_2\ne0$, and the excluded pairs are counted by $Z_2$.
+$n=4$: fix $(x_1,x_2,x_3)$; the excluded triples are counted by $Z_3$.
+\end{proof}
+
+\begin{theorem}[Ensemble-mean resonance law]\label{thm:meanlaw}
+Fix any subgroup $H\le\mathbb F_p^\times$, $|H|=k$. With $N_3(a,b)$ as
+above,
+\[
+\sum_{(a,b)\in(G)^8}N_3(a,b)
+=k^3\bigl[(p-1)(p^2-3p+3)\bigr]^2,
+\qquad
+\langle N_3\rangle
+=\frac{k^3(p^2-3p+3)^2}{(p-1)^6}
+=\frac{k^3}{p^2}\Bigl(1+O\bigl(\tfrac1p\bigr)\Bigr).
+\]
+\end{theorem}
+
+\begin{proof}
+Swap summations:
+$\sum_{(a,b)}N_3(a,b)
+=\sum_{u\in H^3}\#\{(a,b):A(u;a)=0,\ B(u;b)=0\}$ with
+$A=a_1-a_2u_2+a_3u_3-a_4u_4$ and
+$B=b_1-b_2/u_2+b_3/u_3-b_4/u_4$. All eight coefficients appearing are
+nonzero because $u_i\in H\subseteq G$, the two equations involve
+disjoint variables, and Lemma~\ref{lem:zerocounts} makes each factor
+$Z_4$ independent of $u$. Multiply by $k^3$ triples and divide by
+$(p-1)^8$ labels.
+\end{proof}
+
+\begin{experiment}[Exact verification]\label{exp:exactmean}
+Monte-Carlo over random labels agrees with Theorem~\ref{thm:meanlaw}
+within statistical errors in five configurations
+$(p,k)=(101,10),(101,20),(211,15),(211,21),(401,20)$, up to
+$40\,000$ trials each, all $|z|<1.5$.
+\end{experiment}
+
+\begin{figure}[ht]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+$(p,k)$ & Monte-Carlo mean & exact & trials\\
+\midrule
+$(101,10)$ & $0.09573$ & $0.09803$ & $40\,000$\\
+$(101,20)$ & $0.78065$ & $0.78424$ & $20\,000$\\
+$(211,15)$ & $0.07710$ & $0.07581$ & $20\,000$\\
+$(211,21)$ & $0.21127$ & $0.20801$ & $15\,000$\\
+$(401,20)$ & $0.04733$ & $0.04975$ & $15\,000$\\
+\bottomrule
+\end{tabular}
+\caption{Verification of Theorem~\protect\ref{thm:meanlaw}.}
+\label{tab:mean}
+\end{figure}
+
+\subsection{Complete picture of the fourth moment}
+
+\begin{corollary}[Matched sector dominates;
+conditional on Conjecture~\ref{conj:tight}]\label{cor:domination}
+Fix an observable with finite frequency support $F$, $|F|=c_F$. Assume
+the tail bound of Conjecture~\ref{conj:tight}. Then for $k<p$ and any
+eigenspace,
+\[
+\Bigl|\operatorname{Tr}\bigl(W^{4}\bigr)
+-\bigl(\text{matched-sector contribution}\bigr)\Bigr|
+\;\le\;
+C_{F}\,k\bigl(k^{2}/p+1\bigr),
+\]
+where $C_F$ depends only on $F$ and $\max|c_n|$; since the matched
+sector contributes $\Theta(k^2)$ (Theorem~\ref{thm:core}), the
+relative unmatched contribution is
+$O_F(k/p+1/k)\to0$ as $p\to\infty$ with $k=o(p)$.
+More generally, \emph{any} uniform bound of the shape
+$N_3=O(k^{\theta})$ with $\theta<1$ per pattern yields the same
+conclusion; establishing such a sublinear bound unconditionally is
+Open Problem~\ref{op:tail}.
+\end{corollary}
+
+\begin{proof}
+There are at most $|F|^{4}=O_F(1)$ signed label patterns. By the
+master-formula bridge of Section~\ref{sec:setup}, each pattern's
+moment contribution is bounded in absolute value by its count times
+$\max|c_n|^4$ (phases have unit modulus). Generic patterns satisfy
+$\mathrm{sol}(a,b)=kN_3(a,b)$ with $N_3\le\lfloor k^2/p\rfloor+2$
+under the conjecture; degenerate patterns belong
+to finitely many strata whose total is likewise
+$O_F(k^{3}/p+k)$ using their explicit forms. Summing over patterns gives
+the displayed bound.
+\end{proof}
+
+\begin{remark}
+The degenerate-stratum estimate invoked in the proof of
+Corollary~\ref{cor:domination} (``explicit forms'') is not written out
+in this paper: it requires classifying the finitely many
+proportionality types of label patterns and bounding each.  The
+stratified scan of Remark on Conjecture~\ref{conj:unified} supports a
+stronger and cleaner replacement --- every non-Wick pattern obeys the
+same ceiling as generic ones, while Wick-compatible patterns are
+absorbed into the matched sector with their exact masses --- which,
+once proved, closes this obligation completely.  All computed
+instances are consistent with it; see Open Problem~\ref{op:tail}.
+\end{remark}
+
+Combining the three layers:
+the \emph{matched} sector contributes exactly $\Theta(k^2)$ through
+Wick pairings (Theorem~\ref{thm:core}); the \emph{typical} unmatched
+pattern carries mean $k^3/p^2$, negligible once $k<p^{2/3}$
+(Theorem~\ref{thm:meanlaw}); the \emph{worst-case} unmatched pattern
+is bounded \emph{conjecturally} at
+$\lfloor k^2/p\rfloor+2$ (Conjecture~\ref{conj:tight}, supported by
+$0/\sim 293$ violations across $\sim 60{,}000$ random patterns; see
+Remark~\ref{rem:smoothconditional}).  Under this conjecture, the
+fourth-moment sum is dominated by Wick pairings for all
+$k \ll p$ (Corollary~\ref{cor:domination}).
+
+\paragraph{Scope limitation.}
+Experiments at larger eigenspace dimensions ($m$ up to $69$) show that
+higher moments $\operatorname{Tr}(W^{2r})$, $r\ge3$, are dominated by
+a few large matrix elements spanning orders of magnitude --- an
+arithmetic hierarchy incompatible with naive universality. Raw
+compressions do not by themselves deliver local spacing laws;
+some symmetrisation appears necessary (cf.\
+Section~\ref{sec:perturb}).
+
+\section{The sixth moment: strata laws and an arithmetic excess}\label{sec:r6}
+
+At $r=6$ with signs $(+,-,+,-,+,-)$ every solution tuple partitions
+$\{1,\dots,6\}$ by equal values. Brute-force enumeration
+(sign-checked; an earlier inversion of the right-hand sums produced
+invalid tables, now retracted) separates purely combinatorial strata
+from arithmetic ones.
+
+\begin{proposition}[Exact strata identities]\label{prop:r6strata}
+For any $H\le\mathbb F_p^\times$, $|H|=k$:
+\[
+[6]\;=\;k,\qquad
+[2,4]\;=\;9k(k-1)\ \ \text{(both parities)},
+\]
+and, for \emph{odd} $k$,
+$\;[2,2,2]_{\mathrm{slotwise}}\;=\;6k(k-1)(k-2)$.
+Here $[\cdot]$ counts tuples whose value-equality pattern has the
+displayed block sizes. Proofs mirror
+Theorem~\ref{thm:core}: e.g.\ in $[2,4]$ resonance forces each value
+to occupy equally many $+$ and $-$ slots, giving $3\times3$ slot
+choices times $k(k-1)$ ordered value pairs.
+\end{proposition}
+
+\begin{conjecture}[Combinatorial skeleton]\label{conj:r6skeleton}
+When the arithmetic strata vanish (observed at
+$(p,k)=(101,10),(211,10),(211,14),(401,16),(101,20)$),
+\[
+\mathrm{sol}_{+-+-+-}(H)\;=\;5k\,(3k^{2}-9k+8),
+\]
+with all remaining even-$k$ strata carrying the fixed forms
+$[1,1,1,1,2]$ and $[2,2,2]_{\mathrm{even}}$ recorded numerically in
+the artefact tables.
+\end{conjecture}
+
+The skeleton is \emph{not} the whole story: at $(p,k)=(241,30)$
+enumeration gives $\mathrm{sol}_6=417\,900$ against the skeleton
+value $365\,700$. The excess decomposes exactly into arithmetic
+strata absent in the small cases,
+\[
+[1^{\times}6]=50\,760,\quad
+[1,1,2,2]=1\,080,\quad
+[1,1,1,3]_{\mathrm{excess}}=360 ,
+\]
+so the general even-$k$ law reads
+\[
+\mathrm{sol}_6 \;=\; 5k(3k^{2}-9k+8)\;+\;A_p(k),
+\qquad A_p(k)\ge 0 ,
+\]
+where $A_p(k)$ aggregates Kloosterman-type coincidences among
+disjoint triples (same quantity $D_p(k)$ governing the odd case).
+Characterising $A_p(k)$ is open (cf.\
+Open Problem~\ref{op:tail}); its vanishing locus at least includes
+the five configurations above.
+
+\begin{proof}[Proof of the strata identities]
+Partition strata are labelled by block-size multisets.
+\emph{Stratum $[6]$}: all six values equal, any $h\in H$: $k$ tuples.
+\emph{Stratum $[2,4]$} (values $x$ twice, $y$ four times,
+$x\neq y$): resonance forces net signed multiplicity zero for each
+value, so the two $x$'s occupy one $+$ and one $-$ slot while the four
+$y$'s fill the rest; choosing the $+$-slot of $x$ ($3$ ways) and its
+$-$-slot ($3$ ways) and the ordered pair $(x,y)$
+($k(k-1)$) gives $9k(k-1)$ --- matching enumeration at every tested
+$k$, both parities.
+\emph{Stratum $[2,2,2]$, odd case}: no sign-pairs exist
+($-1\notin H$), so pairs are equal-value; three ordered distinct pair
+values give $6k(k-1)(k-2)$, again exact at $k=15$.
+The identity $[1,1,1,3]=18k(k-2)$ holds on the combinatorial skeleton
+(verified identically at $k\in\{10,14,16,20\}$ across three primes);
+at $(241,30)$ an arithmetic excess of $360$ sits on top of it,
+consistent with the decomposition below.
+\end{proof}
+
+For \emph{odd} $k$ a polynomial part persists ---
+$6k(k-1)(k-2)+9k(k-1)+k$ from the three proven strata --- plus an
+arithmetic remainder $D_p(k)=A_p(k)$ counting disjoint-triple pairs
+$(T_{+},T_{-})$ with equal sums and reciprocal sums.
+Both are genuinely $p$-dependent: at $k=25$, $D_p$ takes different
+values for $p=101$ versus $p=401$
+($14\,400$ vs $3\,600$), and the sweep over nine configurations gives
+$D_p(k)\,/\,(k^{6}/p^{2})\in[0.53,\,4.04]$ with no collapse ---
+Kloosterman-type oscillation, the same wall met in
+Open Problem~\ref{op:tail}.
+
+\section{Perturbation-induced universality}\label{sec:perturb}
+
+The resonance core controls one moment; local statistics require
+resolving the arithmetic degeneracies.
+
+\begin{lemma}[Perturbation splitting]\label{lem:perturb}
+Let $E$ be drawn from the Gaussian unitary ensemble $\mathrm{GUE}(N)$:
+$E=E^\dagger$ Hermitian with density proportional to
+$e^{-\operatorname{tr}E^2}$ --- equivalently $E=(X+X^\dagger)/2$ with
+$X$ an i.i.d.\ complex Gaussian matrix --- and consider the
+\emph{unitary} perturbation flow
+\[
+U_\varepsilon \;=\; e^{\,i\varepsilon E}\,U_A ,
+\qquad \varepsilon>0 .
+\]
+Assume the spectral gap
+$\delta_\ast:=\min_{\lambda'\ne\lambda}|\lambda'-\lambda|$ of $U_A$
+satisfies $\varepsilon\,\|E\|\ll\delta_\ast$, so that distinct
+multiplets do not mix through second order. Then, for each level
+$\lambda_j=e^{i\theta_j}$ inside the $\lambda$-multiplet,
+\[
+\theta_j(U_\varepsilon)\;=\;\theta_j+\varepsilon\,\mu_j
+\;+\;O\!\bigl(\varepsilon^{2}\|E\|^{2}/\delta_\ast\bigr),
+\]
+where $\mu_1,\dots,\mu_m$ are the eigenvalues of the compression
+$P_\lambda E P_\lambda$. By unitary invariance of the GUE law this
+compression is distributed exactly as an $m\times m$
+$\mathrm{GUE}(m)$ matrix. Hence, as $m\to\infty$ at fixed
+$\varepsilon\|E\|/\delta_\ast\to0$, unfolded intra-multiplet spacings
+of $U_\varepsilon$ converge to the spacing law of the GUE (the Wigner
+surmise serving as its standard numerical proxy).
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Write $V(\varepsilon)$ for the unitary group path; Kato's
+first-order degenerate perturbation theory gives the phase shifts
+$\varepsilon\mu_j$ as eigenvalues of the compression, with the stated
+second-order remainder controlled by the gap $\delta_\ast$.
+Unitary invariance of GUE under conjugation makes
+$W^\dagger E W\stackrel{d}{=}E$ for any fixed unitary $W$; compressing
+an invariant law onto any fixed $m$-dimensional subspace yields the
+$\mathrm{GUE}(m)$ law. Standard GUE spacing asymptotics complete the
+claim. A purely additive model $U_A+\varepsilon E$ gives the same
+first-order splittings (the two models differ by conjugation to first
+order), which is why either may be used numerically; we use the
+unitary one throughout.
+\end{proof}
+
+\begin{experiment}[Multi-prime confirmation]\label{exp:multi}
+At primes with small quantum period
+$p\in\{1597,2161,2207,3001\}$ (multiplicities $m\approx47$--$69$) we
+implement the unitary flow of Lemma~\ref{lem:perturb} with
+$\varepsilon=10^{-4}$, track eigenvalues across the flow by optimal
+(Hungarian) assignment on $|\lambda^{\text{new}}-\lambda^{\text{old}}|$,
+unfold each multiplet to unit mean spacing, and evaluate the
+Kolmogorov--Smirnov statistic \emph{per prime} on the pooled spacings
+of its three largest multiplets:
+Appendix~\ref{app:method} specifies every procedural step.
+(For the Arnold map two of these four primes are inert,
+$p\in\{1597,2207\}$; the pipeline and Lemma~\ref{lem:perturb} do not
+use splitting, so the experiment covers both arithmetic types.)
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+$p$ & spacings & $\mathrm{KS}$ vs WD & $\mathrm{KS}$ vs Poisson & verdict\\
+\midrule
+2207 & 204 & 0.0638 & 0.2778 & WD \\
+1597 & 138 & 0.0672 & 0.2828 & WD \\
+2161 & 160 & 0.0689 & 0.2808 & WD \\
+3001 & 178 & 0.0756 & 0.2911 & WD \\
+\bottomrule
+\end{tabular}
+\end{center}
+All four statistics lie below the $5\%$-level critical value
+${\approx}0.096$ for $n\approx200$, i.e.\ every prime individually is
+consistent with Wigner--Dyson, while Poisson is rejected outright
+everywhere. An $\varepsilon$-sensitivity sweep
+($10^{-3},10^{-4},10^{-5}$ at $p=2207$) keeps $\mathrm{KS}_{WD}$ in
+$[0.064,0.091]$ with no drift, indicating the measurement sits in the
+first-order regime of Lemma~\ref{lem:perturb}.
+WD here means the pooled surmise test against the Wigner--Dyson family;
+at these sample sizes GOE and GUE surmises are statistically
+indistinguishable (critical value ${\approx}0.096$ for $n\approx200$),
+so we do not discriminate $\beta=1$ vs $\beta=2$. Poisson is clearly
+rejected throughout.
+\end{experiment}
+
+\begin{experiment}[Beta resolution at scale]\label{exp:beta}
+At three further primes with small quantum period ---
+$(p,K,m)\in\{(3571,17,210),(4481,32,70),(5779,27,214)\}$ --- the same
+unitary pipeline yields $n=13\,723$ pooled spacings. At such sizes the
+analytic Wigner \emph{surmises} carry a fixed systematic offset from
+the exact spacing laws (${\sim}0.05$ in KS), so discrimination is made
+against Monte-Carlo reference distributions of $\mathrm{GOE}(m)$ and
+$\mathrm{GUE}(m)$ built at the very multiplet dimensions observed
+($397\,800$ reference spacings each). Result:
+\[
+\mathrm{KS}_{\mathrm{data}\,\|\,\mathrm{GOE}}=0.0676,
+\qquad
+\mathrm{KS}_{\mathrm{data}\,\|\,\mathrm{GUE}}=0.0099 ,
+\qquad
+\text{gap}=0.0577 \gg 0.0118=\text{crit}_{5\%}.
+\]
+The data are statistically indistinguishable from GUE and clearly
+exclude GOE --- precisely the prediction of Lemma~\ref{lem:perturb},
+since the perturbation ensemble is GUE.
+\end{experiment}
+
+\section{What remains open}\label{sec:open}
+
+\begin{openproblem}[Prove the tail bound]\label{op:tail}
+Establish Conjecture~\ref{conj:tight} with explicit constant.
+Schwartz--Zippel gives $4k$; the empirical ceiling is
+$\lfloor k^2/p\rfloor+2$. Likely input: Weil-type bounds for curves
+intersected with multiplicative subgroups, or sheaf monodromy.
+\end{openproblem}
+
+\begin{openproblem}[Sixth and higher moments]\label{op:r6}
+Characterise the arithmetic excess $A_p(k)$ in
+Section~\ref{sec:r6}: its vanishing locus, its size relative to
+$k^6/p^2$, and the corresponding closed strata forms. Extend the
+matched/unmatched split uniformly in even $r\ge8$.
+\end{openproblem}
+
+\begin{openproblem}[Unconditional local law]\label{op:local}
+Replace Gaussian randomness in Lemma~\ref{lem:perturb} by arithmetic
+perturbations, and bridge from splitting statistics to a
+nearest-neighbour law for the unperturbed compressions.
+A direct attempt already \emph{fails}: driving the flow with a
+Hermitian Weyl combination $V_{\mathrm{arith}}$
+($U_\varepsilon=e^{i\varepsilon V_{\mathrm{arith}}}U_A$,
+$\varepsilon=10^{-4}$; primes $2207$, $4481$) produces
+intra-multiplet spacings with $\mathrm{KS}\ge0.15$ against
+\emph{both} Monte-Carlo GOE and GUE references
+($n=2175$, $4417$) --- far outside the random-matrix class and
+consistent with the heavy-tailed singular-value hierarchy of the
+compression $P_\lambda V_{\mathrm{arith}}P_\lambda$
+(eigenvalue excess kurtosis $5.9$ and $9.3$, $\mathrm{ev}_{\max}/\sigma = 3.8$ and $5.0$; artifact
+\texttt{taskA\_entry\_gaussianity.json}).
+(eigenvalue excess kurtosis $5.9$ and $9.3$, $\mathrm{ev}_{\max}/\sigma = 3.8$ and $5.0$; artifact
+\texttt{taskA\_entry\_gaussianity.json}).
+% RETRACTED 2026-08-28: the figure ``max/median approx 15--40''
+% stood here; LEDGER R61 retracted it as a fabrication.
+% stood here; LEDGER R61 retracted it as a fabrication.
+Unconditional local law therefore requires genuine symmetrisation
+(Hecke-type averaging or equivalent), not merely a deterministic
+replacement for the random input.
+A finer diagnosis narrows the target further: at the split primes
+$4481$ ($m=71$) and $3571$ ($m=211$) the \emph{entries} of
+$P_\lambda V_{\mathrm{arith}}P_\lambda$ are individually consistent
+with Gaussians (excess kurtosis $|{<}0.15|$ off diagonal,
+KS $p$-values ${>}0.25$), while their eigenvalues show strong
+outliers (excess kurtosis $5.9$ and $9.3$;
+$|\lambda|_{\max}/\mathrm{std}\approx3.8,\,5.0$). The failure of
+random-matrix behaviour is thus driven by entry \emph{correlations},
+not by marginal non-Gaussianity: Kurlberg--Rudnick-style Gaussianity
+of matrix elements already holds inside raw multiplets, and what is
+missing is decorrelation.  A first Hecke-symmetrisation test
+(\texttt{src/hecke\_local\_law\_test.py}, draft
+\texttt{drafts/hecke\_symmetrization\_test.md},
+$8$ configs, $m \le 17$, $32$ Haar-surrogate rotations) confirms the
+diagnosis: off-diagonal kurtosis collapses from
+raw $+5.6$ to Hecke $-0.7$ in the worst case, and the eigenvalue
+spread drops modestly ($2.9 \to 2.6$). The Hecke-averaged compression
+is therefore \emph{strictly better-behaved} than the raw arithmetic
+perturbation (R49, $\mathrm{KS}_{\mathrm{GUE}} = 0.20$–$0.28$), but
+does not at $m \le 17$ deliver Wigner spacing
+($\mathrm{KS}_{\mathrm{GOE}} \in [0.13, 0.35]$, inconclusive at
+this $m$). Closing the gap requires a Hecke basis of the actual
+centraliser torus (not the Haar surrogate) and a larger
+$m \ge 70$ test.
+\end{openproblem}
+
+\begin{openproblem}[Inert primes and general $N$]\label{op:inert}
+Extend to $\Delta$ a non-residue, where
+$\alpha\in\mathbb F_{p^2}\setminus\mathbb F_p$, and to composite $N$.
+\end{openproblem}
+
+\section{Summary of statuses}\label{sec:status}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Claim & Status\\
+\midrule
+Collision lemma $C(u,v)\le4$ & PROVEN (Lean-formalised)\\
+U1 fibre $\le 2$ (Rem.~\ref{rem:collision}) & PROVEN on the
+\emph{non-degenerate chart}
+$a_1,a_3,b_1,b_3$ all nonzero; degenerate chart
+excluded by hypothesis and treated via the strata law
+(\texttt{audit\_degenerate\_strata.json})\\
+U4 conditional fine-scale & PROVEN conditional,
+RED-TEAM-CORRECTED: $\ell^2$ identity
+$\sum_{r,s}|S_{a,b}(r,s)|^2=p^2k$ (NOT $p^2k^2$);
+the red team's actual bound is
+$\mathrm{EXTRAS}\le k^4p^{-2\delta}$ under the Bourgain--Garaev
+input $\sup|S|\le kp^{-\delta}$, whose threshold
+$k\lesssim p^{\delta}$ is vacuous at every published $\delta$;
+the sharper $k^3p^{-2\delta}$ of earlier drafts was \emph{not}
+the red team's correction and is withdrawn (audit 2026-08-28)\\
+T13 $\Theta^2=+1$ (Rem.~\ref{rem:rev} +
+Rem.~\ref{rem:reversing_degenerate}) & PROVEN UNCONDITIONALLY (run 72, Thm.~C: $M=SR$ always has
+$M_{11}=M_{22}$, so the $y$-Gauss-sum in $U_M\overline{U_M}$ collapses
+to $N\delta_{x,z}$ and $\Theta^2=+1$ exactly; the condition
+$\gcd(M_{21},N)=1$ is merely the well-definedness of the kernel, not a
+hypothesis). Certified at 504 configurations, $\le1.8\times10^{-15}$;
+supersedes the numerical scan (every
+reversing involution in the scanned box, residual
+$\le 8.3\times 10^{-16}$, 4 cat maps $\times$ split/inert
+primes; \texttt{artifacts/theta\_sign.json});
+degenerate chart $M_{21}\equiv 0\pmod N$ collapses
+trivially to $\beta=1$ (\texttt{rem:reversing\_degenerate})\\
+r=5 master formula
+(\texttt{src/master\_general.py},
+\texttt{artifacts/master\_general.json}) & NUMERICALLY-SUPPORTED
+for $r\le 4$ (2/2 PASS at r=4, err $\le 2.4\times 10^{-15}$);
+ONE pass at $r=5$ (Arnold @ $N{=}101$, 3 $\lambda$-branches,
+all err $\le 4.0\times 10^{-16}$);
+legacy \texttt{m1\_new\_configs.py} and \texttt{s\_of\_j5.jl}
+DEPRECATED; $r=5$ closure is \texttt{op:r5} OPEN GAP
+(\texttt{THEORY.md}\S 8.0.2)\\
+T21 unconditional local law at the
+mean-spacing scale & OPEN GAP;
+the published frontier is $k\ge p^{3/7+\varepsilon}$ for
+the smooth law (OSV arXiv:2110.10941 Cor.~2.9), and
+ALL admissible $(p,k)$ for the fixed-order moments
+$r\le 4$ (R12 corrected, no threshold);
+the 2026-08-28 attack lines (Stepanov / Deligne /
+Bourgain) all close as $[\mathrm{OPEN\ GAP}]$;
+discriminator (Ring~2 R2.5) moot; see
+\texttt{artifacts/ring2/synthesis.md}\\
+Matched identity (Thm.~\ref{thm:core}) & PROVEN\\
+Zero-count lemmas (Lem.~\ref{lem:zerocounts}) & PROVEN\\
+Ensemble-mean law (Thm.~\ref{thm:meanlaw}) & PROVEN; verified 5/5\\
+Reversibility $\not\Rightarrow$ even $k$ (Rem.~\ref{rem:rev}) &
+verified, elementary\\
+Tail bound (Conj.~\ref{conj:tight}) & NUMERICALLY-SUPPORTED
+($0/{\sim}293$ violations incl.\ new 25-config lattice $p\le 2003$, $k\le 30$,
+$\sim 60{,}000$ random patterns total;
+smooth law $N_3 \le k^2/p + C\sqrt{k}\,(\log p)^{O(1)}$ for
+$k \ge p^{3/7+\varepsilon}$: HEURISTIC, not proven. The only
+derivation on disk, \texttt{drafts/tail\_bound\_attempt.md},
+labels itself heuristic and shows its completion step invalid
+for proper subgroups; the constant is not $1$)\\
+Tail bound below $p^{3/7}$ & OPEN (named, OSV Rem.~2.11: no explicit $\delta$)\\
+Hecke-centred entry decorrelation & RETRACTED 2026-08-28: the
+centring is a Haar average, whose expectation is a multiple of the
+identity and cannot change an off-diagonal entry; the observed
+``collapse'' is finite-sample noise from an unnormalised accumulator,
+and the multiplet basis used was a set of columns of the propagator,
+not eigenvectors. See
+\texttt{artifacts/r71/hecke\_centring\_refutation.json}\\
+Domination, Cor.~\ref{cor:domination} &
+PROVEN under Conj.~\ref{conj:tight}. The second clause, via the
+smooth law for $k \ge p^{3/7+\varepsilon}$, is withdrawn: that law
+is heuristic, see the row above\\
+Perturbation splitting (Lem.~\ref{lem:perturb}) & PROVEN (sketch)\\
+WD-not-Poisson under unitary flow (Exp.~\ref{exp:multi}) &
+NUMERICALLY-SUPPORTED ($4/4$ primes, all $\mathrm{KS}<0.096$)\\
+Beta class $=$ GUE under GUE flow (Exp.~\ref{exp:beta}) &
+RESOLVED (gap $5\times$ critical, $n=13\,723$)\\
+GOE-vs-GUE discrimination & indistinguishable at current $n$\\
+Unconditional local law & OPEN GAP\\
+Full BGS for raw compressions & NOT CLAIMED\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\appendix
+\section{Methodological details}\label{app:method}
+
+\subsection*{A.1 Random-label ensembles (Sections~\ref{sec:unmatched})}
+For a fixed $(p,k)$, $H$ is generated as the orbit of
+$\alpha=g^{(p-1)/k}\bmod p$ with $g$ a primitive root, verified by
+checking $\operatorname{ord}(\alpha)=k$. Label patterns are drawn
+i.i.d.\ uniform on $\{1,\dots,p-1\}^{8}$ independently per trial;
+trials-per-configuration range from $300$ (tail-bound scan) to
+$40\,000$ (mean-law verification), as recorded per experiment. The
+generic/nondegenerate filter of Section~\ref{sec:unmatched} was
+\emph{not} applied in post-processing; since proportionality events
+have probability $O(1/p)$ each, their expected count in any scan is
+${\ll}1$, so violations-by-degeneracy cannot explain the observed zero
+violation rates.
+
+\subsection*{A.2 Mean-law Monte Carlo}
+Each trial draws one label pattern and computes $N_3$ exactly by
+meet-in-the-middle over $(u_2,u_3)\in H^2$ with $u_4$ determined by
+the first equation and screened for membership in $H$ before testing
+the second equation. Reported $z$-scores use the exact mean of
+Theorem~\ref{thm:meanlaw} as centre and the Poisson-scale
+standard error $\sqrt{\langle N_3\rangle/\text{trials}}$, consistent
+with the near-Poisson fluctuation of the count.
+
+\subsection*{A.3 Perturbation pipeline}
+For each prime $p$: (i) diagonalise $U_A$, cluster eigenvalues at
+tolerance $10^{-4}$ on rounded real/imaginary parts; (ii) draw
+$E\sim\mathrm{GUE}(N)$ and realise $e^{i\varepsilon E}$ through its
+own eigendecomposition; (iii) match perturbed to unperturbed levels by
+the Hungarian algorithm on the cost matrix
+$C_{ij}=|\lambda_i^{\mathrm{new}}-\lambda_j^{\mathrm{old}}|$; the
+maximum assignment distance scales linearly in $\varepsilon$
+($7.6\times10^{-8}$ at $\varepsilon=10^{-5}$,
+$7.6\times10^{-7}$ at $10^{-4}$), confirming first-order tracking;
+(iv) group matched levels by their origin multiplet, take the three
+largest multiplets, unfold intra-multiplet gaps to unit mean spacing,
+pool them within the prime; (v) evaluate KS once per prime against
+the GOE Wigner surmise CDF $1-e^{-\pi s^2/4}$ and against Poisson
+$1-e^{-s}$; no cross-prime pooling is performed. Cluster sizes were
+stable across $\varepsilon\in[10^{-5},10^{-3}]$ (e.g.\ $69\times5$ at
+$p=2207$).
+
+\subsection*{A.4 Reproducibility}
+All scripts live in the repository with fixed seeds recorded in their
+artefact headers; the artefact manifest maps every number above to
+script and command. Compiled artefacts:
+\texttt{unitary\_perturbation.json},
+\texttt{run46\_exact\_mean.json}, \texttt{run36\_audit.json}.
+
+\begin{thebibliography}{9}
+
+\bibitem{BGS84}
+O. Bohigas, M.-J. Giannoni, C. Schmit,
+\emph{Characterization of chaotic quantum spectra and universality of
+level fluctuation laws},
+Phys.\ Rev.\ Lett.\ \textbf{52} (1984), 1--4.
+
+\bibitem{HB80}
+J.~H. Hannay, M.~V. Berry,
+\emph{Quantization of linear maps on a torus --- Fresnel diffraction
+by a periodic grating},
+Physica D \textbf{1} (1980), 267--290.
+
+\bibitem{KR00}
+P. Kurlberg, Z. Rudnick,
+\emph{Hecke theory and equidistribution for the quantization of linear
+maps of the torus},
+Duke Math.\ J.\ \textbf{103} (2000), no.~1, 47--77.
+
+\bibitem{KR01}
+P. Kurlberg, Z. Rudnick,
+\emph{On quantum ergodicity for linear maps of the torus},
+Comm.\ Math.\ Phys.\ \textbf{222} (2001), 201--227.
+
+\bibitem{FNDB03}
+F. Faure, S. Nonnenmacher, S. De Bi\`evre,
+\emph{Scarred eigenstates for quantum cat maps of minimal periods},
+Comm.\ Math.\ Phys.\ \textbf{239} (2003), 449--492.
+
+\bibitem{OSV21}
+A. Ostafe, I.~E. Shparlinski, J.~F. Voloch,
+\emph{Equations and character sums with matrix powers, Kloosterman sums
+over small subgroups and quantum ergodicity},
+preprint, arXiv:2110.10941v2 [math.NT] (2021).
+
+\end{thebibliography}
+
+\end{document}

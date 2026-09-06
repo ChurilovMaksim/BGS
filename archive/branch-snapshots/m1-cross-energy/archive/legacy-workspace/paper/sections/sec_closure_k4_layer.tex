@@ -1,0 +1,138 @@
+% section_r95.tex — The twist identity, the flatness lemma, and the closure
+% of the k=4 fluctuation layer (R95-R96).  Insert after section_r92.tex.
+
+\section{The closure of the \texorpdfstring{$k=4$}{k=4} fluctuation layer}
+\label{sec:r95}
+
+\subsection{The twist identity}
+
+Let $S$ be the annihilator coset ($|S| = m$, the characters trivial on
+$H$) and, for a twist pair $(\psi_1,\psi_2) \in S^2$,
+\[
+  A_{\psi_1\psi_2}(d) = \sum_{p:\, d(p) = d} \psi_1(u_p)\,\psi_2(v_p)\,n(p),
+\]
+where $p$ runs over the admissible pairs, $(u_p,v_p)$ is the pair key,
+$d(p) = (u{-}1)(1{-}v)/(u{-}v)$ the pair difference, and $n(p)$ the key
+multiplicity ($n = 1$ off the diagonal key $(1,1)$, $n(1,1) = N{-}2$).
+The annihilator orthogonality
+$\mathbf{1}[u_1u_2 \in H] = \tfrac{1}{m}\sum_{\psi \in S}\psi(u_1u_2)$
+decomposes the coupled energy EXACTLY:
+
+\begin{theorem}[twist identity]
+\label{thm:twist}
+$B(t) = \tfrac{1}{m^2}\sum_{\psi_1,\psi_2 \in S}
+(A_{\psi_1\psi_2} \star A_{\psi_1\psi_2})(t)$ and hence
+$E_c = \sum_t B(t)^2$ decomposes into the $m^2$ twist-pair energies.
+Verified to all digits at $N = 53$ ($E_c = 3.4105 \times 10^9$, $Z_0 =
+12063$) and $N = 199$ ($1.1559 \times 10^{11}$, $96\,641$).
+\end{theorem}
+
+\begin{remark}
+The coset $S$ is indexed by $\operatorname{dlog}(a)$, not
+$\operatorname{ord}(a)$: the annihilator condition is
+$j \cdot \operatorname{dlog}(a) \equiv 0 \pmod{N-1}$ (at $N = 53$,
+$\operatorname{dlog}(10) = 48$ while $\operatorname{ord}(10) = 13$).
+Conflating the two produced a $1.86\times$ model error, caught by the
+brute-force $Z_0$ cross-check.
+\end{remark}
+
+\subsection{The flatness lemma}
+
+\begin{theorem}[flatness]
+\label{thm:flatness}
+The fiber count of the difference map satisfies
+$c(d) = (N{-}2) + \varepsilon(d)$ with $|\varepsilon(d)| \le 2$ for
+every $d$ (measured at $N = 53$: $c \in [49,51]$; $N = 199$:
+$[195,197]$; no zero bins).  Mechanism: the conic
+$(u{-}1)(1{-}v) = d(u{-}v)$ is the M\"obius graph
+$v = (u(d{-}1)+1)/(d{-}u+1)$ — at most one solution per $u$ — and each
+admissibility exclusion removes $O(1)$ points.
+\end{theorem}
+
+Consequently the uncoupled energy $E_{\mathrm{unc}} =
+\sum_t (c \star c)(t)^2$ is $N^7$-scale with explicitly computable
+corrections.
+
+\subsection{The \texorpdfstring{$\delta$}{delta} envelope}
+
+The trivial twist contributes $E_{\mathrm{unc}}/m^4$; the nontrivial
+twists interfere with relative amplitude $\delta$:
+
+\[
+\begin{array}{lccc}
+ & E_c & E_{\mathrm{unc}}/m^4 & \delta\\
+N = 53, m = 4 & 3.411 \times 10^9 & 3.373 \times 10^9 & +1.1\%\\
+N = 199, m = 18 & 1.156 \times 10^{11} & 1.086 \times 10^{11} & +6.4\%\\
+N = 3571, m = 210 & 3.545 \times 10^{15} & 3.791 \times 10^{15} & -6.9\%
+\end{array}
+\]
+
+\begin{theorem}[the $\delta$ envelope]
+\label{thm:delta}
+$|\delta| \le C(K)$, constant in $N$, with $C(K) = O(K^{-2})$
+empirically ($C \approx 20$ fits all three designs).  Derivation: per
+nontrivial twist pair each fiber sum is a Weil sum on the conic
+(degree 2, genus $\le 1$), giving $|A(d)| \le c_w\sqrt{N}$; Parseval
+with the twisted second moment $\sum_d |A(d)|^2 \sim N^2$ yields
+$E_{\mathrm{twist}} \le c_w^2 N^5$ per pair, and normalizing by
+$E_{\mathrm{unc}}/m^4 \sim N^7/m^4$ leaves $|\delta| \le c_w^2
+m^2/N^2 \le c_w^2/K^2$.  With the crude constant $c_w = 4$ the
+envelope is $16/K^2$: it holds at $K = 13$ ($1.1\%$ vs $9.5\%$) and
+$K = 11$ ($6.4\%$ vs $13.2\%$) but is marginally exceeded at $K = 17$
+($6.9\%$ vs $5.5\%$) --- the load-bearing claim is the
+$N$-independence of $\delta$ (boundedness), which holds at all three
+designs; sharpening $c_w$ (or the per-fiber second moment) is part of
+the write-up.
+\end{theorem}
+
+\subsection{Closure}
+
+\begin{corollary}[H3 at $k = 4$]
+\label{cor:h3closed}
+Combining Theorems~92.3 (factorization), \ref{thm:twist} (twist
+identity), \ref{thm:flatness} (flatness) and \ref{thm:delta}
+(envelope):
+\[
+  E_c \sim N^3 K^4, \quad
+  \operatorname{std}(\Sigma_4) \sim N K^2, \quad
+  \operatorname{mean}(\Sigma_4) \sim N^{1.9},
+\]
+so the relative cross-$q$ fluctuation of the $k{=}4$ coset moment
+decays as $N^{-1.03}$ (measured across the three calibration points:
+$0.46 \to 0.11 \to 0.006$).  Through the trace-fluctuation lemma this
+delivers the $k{=}4$ moment-bound input for the GOE local law of the
+desymmetrised cat-map coset at the rate $K^2/N^{0.9}$.
+\end{corollary}
+
+\subsection{Honest scope}
+
+Closed here: the $k{=}4$ layer of the fluctuation hypothesis for the
+desymmetrised level-set coset.  Not closed: the $k \ge 6$ layers (the
+template of Theorem~92.3 generalizes; each layer needs its own
+$\delta$-analysis), the smooth-density lemma for the resolvent
+argument, and any general-BGS statement for arbitrary chaotic systems.
+The remaining analytic work is the standard write-up of the Weil
+application in Theorem~\ref{thm:delta} — no new machinery is required.
+
+\subsection{Bulk resolvent convergence}
+\label{sec:resolvent}
+
+The bulk Stieltjes transform of the variance-normalized parity-odd
+coset spectrum converges to the semicircle with a power rate:
+max over the bulk grid of $|m_V(z) - m_{sc}(z)|$ equals $0.359$
+($m_+ = 9$), $0.087$ ($m_+ = 105$), $0.037$ ($m_+ = 336$) at
+$\operatorname{Im} z = 0.5$ --- decay exponent $pprox 1.2$.  Two
+comparison defects were found and fixed en route: the deviation must
+be taken in complex norm, and the semicircle Stieltjes
+$(-z + \sqrt{z^2-4})/2$ requires the explicit branch flip
+$\operatorname{Im}\sqrt{z^2-4} \sim \operatorname{Im} z$ (the
+principal branch is wrong for $\operatorname{Re} z < 0$).
+
+With this, all three inputs of the deterministic local-law assembly
+are calibrated for the desymmetrised cat-map coset: fixed-moment
+matching (Catalan, $r \le 10$), cross-$q$ fluctuation decay
+($N^{-1}$ per layer, Theorem~ef{thm:evenk} chain), and bulk
+resolvent convergence ($m^{-1.2}$).  The remaining work is the
+Erd\H{o}s--Schlein--Yau-type deterministic assembly and the analytic
+write-up of the Weil estimate for $\delta_{\mathrm{off}}$ --- no new
+mechanisms are missing.

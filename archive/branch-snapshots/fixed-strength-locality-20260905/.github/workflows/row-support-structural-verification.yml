@@ -1,0 +1,41 @@
+name: Row-support structural verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mathematics/cayley_shift_psc_transversality.md'
+      - 'mathematics/cayley_sylvester_fitting_support.md'
+      - 'computations/verification/cayley_shift_psc_transversality.py'
+      - 'computations/verification/cayley_sylvester_fitting_support.py'
+      - '.github/workflows/row-support-structural-verification.yml'
+  pull_request:
+    paths:
+      - 'mathematics/cayley_shift_psc_transversality.md'
+      - 'mathematics/cayley_sylvester_fitting_support.md'
+      - 'computations/verification/cayley_shift_psc_transversality.py'
+      - 'computations/verification/cayley_sylvester_fitting_support.py'
+      - '.github/workflows/row-support-structural-verification.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact-structural-row-support:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install exact Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile structural verifiers
+        run: |
+          python -W error::SyntaxWarning -m py_compile \
+            computations/verification/cayley_shift_psc_transversality.py \
+            computations/verification/cayley_sylvester_fitting_support.py
+      - name: Verify shift / principal-subresultant transversality
+        run: python computations/verification/cayley_shift_psc_transversality.py
+      - name: Verify Sylvester nullity / Fitting support
+        run: python computations/verification/cayley_sylvester_fitting_support.py

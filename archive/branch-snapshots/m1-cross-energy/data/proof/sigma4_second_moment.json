@@ -1,0 +1,27 @@
+{
+ "run": "92.15",
+ "title": "Exact second moment of Sigma_4 via the key table (op:katz-twist-bound model, N=53)",
+ "model": {
+  "keys": "(u,v) in (F_N^*)^2 with u=v only at (1,1); y=(1-v)/(u-v) admissible in [2,N-1], x=uy admissible",
+  "pair_multiplicity": "n(u,v)=1 off-diagonal keys; n(1,1)=N-2 (diagonal pairs x=y)",
+  "difference": "d(u,v)=(u-1)(1-v)/(u-v) [FIXED: earlier version omitted the /(u-v)]",
+  "coupling": "pair-pair (p1,p2) allowed iff u1u2 in H and v1v2 in H",
+  "B(t)": "sum of n1n2 over coupled key pairs with (d1+d2)=t mod N"
+ },
+ "results_N53": {
+  "n_keys": 2551,
+  "n_pairs": 2601,
+  "V4_exact": 423879,
+  "Z0_exact": 12063,
+  "predicted_mean_Sigma4_over_q1_N2": 4143.46,
+  "measured_mean": 4143.46,
+  "exact_match": true,
+  "sum_t_B2": 3410502105,
+  "std_Sigma4_over_q1_N2": 1913.8,
+  "measured_max_dev": 4722,
+  "consistent": true
+ },
+ "bug_found": "d previously stored as (u-1)(1-v) without dividing by (u-v); fixed \u2014 Z0 now exact",
+ "consequence": "The Katz-input object is now a FINITE explicit computation: B(t) is a 4-fold H-coupled key count; the second moment over q is sum_t B(t)^2. The analytic bound (op:katz-twist-bound) must reproduce Var ~ K^4 N (measured std 1914 vs K^2 sqrt(N)=1233, ratio 1.55) and the mean ~ Z0. Both are now named quantities with exact values at N=53 and measurable scaling at larger N.",
+ "status": "[PROVEN] exact at N=53; scaling open (op:katz-twist-bound)"
+}

@@ -1,0 +1,88 @@
+{
+ "script": "src/r82e_edge_vs_bulk.py",
+ "designs": [
+  {
+   "N": 9349,
+   "K": 19,
+   "m_plus": 246,
+   "nrep": 48,
+   "raw_bulk_edge_mean": 0.45858451822507623,
+   "raw_lambda_max_mean": 0.6289667032251923,
+   "raw_lambda_max_max": 0.8205191149019054,
+   "operator_norm_bound": 2.0,
+   "lambda_max_over_bulk_edge": [
+    1.3717121412036628,
+    1.7885202133542688
+   ],
+   "goe_lambda_max_over_edge": [
+    1.399495183887269,
+    1.4593593887757452
+   ],
+   "n_beyond_edge_arith": [
+    43.354166666666664,
+    51
+   ],
+   "n_beyond_edge_goe": [
+    44.692708333333336,
+    48
+   ],
+   "trim_ladder": [
+    {
+     "k_trimmed": 0,
+     "var_mu4_arith": 0.05178345174548391,
+     "var_mu4_goe": 0.000134513318327416,
+     "ratio_mu4": 384.9689561552479,
+     "count_var_arith": 4.269503546099291,
+     "count_var_goe": 1.1439017961023852,
+     "ratio_count": 3.7324039184541578,
+     "mu4_mean_arith": 1.9634087253779218,
+     "mu4_mean_goe": 2.002404318663642
+    },
+    {
+     "k_trimmed": 1,
+     "var_mu4_arith": 0.048358730356495946,
+     "var_mu4_goe": 0.00013082043057764266,
+     "ratio_mu4": 369.65732449408785,
+     "count_var_arith": 4.21343085106383,
+     "count_var_goe": 1.0308818717277488,
+     "ratio_count": 4.087210151442626,
+     "mu4_mean_arith": 1.9550191777660288,
+     "mu4_mean_goe": 1.9948904103481357
+    },
+    {
+     "k_trimmed": 2,
+     "var_mu4_arith": 0.04631965654301629,
+     "var_mu4_goe": 0.0001300939657215383,
+     "ratio_mu4": 356.04769434242587,
+     "count_var_arith": 3.9375,
+     "count_var_goe": 1.1633716913903436,
+     "ratio_count": 3.3845588895964114,
+     "mu4_mean_arith": 1.9494623585324498,
+     "mu4_mean_goe": 1.9887582583893553
+    },
+    {
+     "k_trimmed": 4,
+     "var_mu4_arith": 0.04293521758161358,
+     "var_mu4_goe": 0.00012711423689932782,
+     "ratio_mu4": 337.7687553253181,
+     "count_var_arith": 3.9936465721040193,
+     "count_var_goe": 1.0679719313554399,
+     "ratio_count": 3.7394677283656654,
+     "mu4_mean_arith": 1.940333840129463,
+     "mu4_mean_goe": 1.978068335334622
+    },
+    {
+     "k_trimmed": 8,
+     "var_mu4_arith": 0.03716119864497847,
+     "var_mu4_goe": 0.0001236482731207209,
+     "ratio_mu4": 300.53956846366196,
+     "count_var_arith": 3.6761229314420807,
+     "count_var_goe": 1.0177428737638172,
+     "ratio_count": 3.612035049527825,
+     "mu4_mean_arith": 1.9255804220745343,
+     "mu4_mean_goe": 1.9612880755474202
+    }
+   ]
+  }
+ ]
+}

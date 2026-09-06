@@ -1,0 +1,36 @@
+RUN 86.1 -- fifth mixed moment <|J|^{10}>/N^5 at (3571, 17)
+-- certified design: N=3571, a=47, K=17, m=(N-1)/K=210
+   q=500/3570 (14.0%)
+   q=1000/3570 (28.0%)
+   q=1500/3570 (42.0%)
+   q=2000/3570 (56.0%)
+   q=2500/3570 (70.0%)
+   q=3000/3570 (84.0%)
+   q=3500/3570 (98.0%)
+   {"N": 3571, "a": 47, "K": 17, "m": 210, "e_2/N^1": 0.9994211070034289, "e_4/N^2": 1.988613454178851, "e_6/N^3": 4.955898896249506, "e_8/N^4": 13.856203819969087, "e_10/N^5": 41.541281488534416}
+   second-key at SMALL design (N=53, K=13)
+   second-key N=53,q=1: max|dJ|=1.87e-13, e10 direct 45426258237.307510 vs matrix 45426258237.304260
+   k=1: measured 0.999421, Catalan 1.0, Gaussian 1.0, dev/cat=-0.0006, dev/gauss=-0.0006
+   k=2: measured 1.988613, Catalan 2.0, Gaussian 2.0, dev/cat=-0.0114, dev/gauss=-0.0114
+   k=3: measured 4.955899, Catalan 5.0, Gaussian 6.0, dev/cat=-0.0441, dev/gauss=-1.0441
+   k=4: measured 13.856204, Catalan 14.0, Gaussian 24.0, dev/cat=-0.1438, dev/gauss=-10.1438
+   k=5: measured 41.541281, Catalan 42.0, Gaussian 120.0, dev/cat=-0.4587, dev/gauss=-78.4587
+artifact written
+RUN 86.1 -- fifth mixed moment <|J|^{10}>/N^5 at (3571, 17)
+-- certified design: N=3571, a=47, K=17, m=(N-1)/K=210
+   q=500/3570 (14.0%)
+   q=1000/3570 (28.0%)
+   q=1500/3570 (42.0%)
+   q=2000/3570 (56.0%)
+   q=2500/3570 (70.0%)
+   q=3000/3570 (84.0%)
+   q=3500/3570 (98.0%)
+   {"N": 3571, "a": 47, "K": 17, "m": 210, "e_2/N^1": 0.9994211070034289, "e_4/N^2": 1.988613454178851, "e_6/N^3": 4.955898896249506, "e_8/N^4": 13.856203819969087, "e_10/N^5": 41.541281488534416}
+   second-key at SMALL design (N=53, K=13)
+   second-key N=53,q=1: max|dJ|=1.87e-13, e10 direct 45426258237.307510 vs matrix 45426258237.304260
+   k=1: measured 0.999421, Catalan 1.0, Gaussian 1.0, dev/cat=-0.0006, dev/gauss=-0.0006
+   k=2: measured 1.988613, Catalan 2.0, Gaussian 2.0, dev/cat=-0.0114, dev/gauss=-0.0114
+   k=3: measured 4.955899, Catalan 5.0, Gaussian 6.0, dev/cat=-0.0441, dev/gauss=-1.0441
+   k=4: measured 13.856204, Catalan 14.0, Gaussian 24.0, dev/cat=-0.1438, dev/gauss=-10.1438
+   k=5: measured 41.541281, Catalan 42.0, Gaussian 120.0, dev/cat=-0.4587, dev/gauss=-78.4587
+artifact written

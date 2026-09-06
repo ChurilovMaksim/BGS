@@ -1,0 +1,17 @@
+==============================================================================
+EXACT IDENTITY CHECKS (small N, full matrices)
+==============================================================================
+  A=[[2, 1], [1, 1]] N=41: ord=10 K=20 m in [2, 3] sum=41
+     V1 unitary   4.44e-16   V2 Egorov 1.63e-14   V3 torsion 3.29e-14   V4 proj 1.24e-14
+     V5 Weyl frame(rel) 1.25e-14   V8 max| |Tr(TU^J)|-1 | 6.15e-14
+  A=[[2, 1], [1, 1]] N=101: ord=25 K=25 m in [4, 5] sum=101
+     V1 unitary   9.99e-16   V2 Egorov 7.12e-14   V3 torsion 5.37e-14   V4 proj 1.14e-14
+     V5 Weyl frame(rel) 6.85e-14   V8 max| |Tr(TU^J)|-1 | 9.24e-14
+  A=[[3, 1], [2, 1]] N=61: ord=30 K=60 m in [1, 2] sum=61
+     V1 unitary   7.77e-16   V2 Egorov 1.00e+00   V3 torsion 4.70e-14   V4 proj 1.38e-14
+     V5 Weyl frame(rel) 2.89e-14   V8 max| |Tr(TU^J)|-1 | 6.13e-14
+  A=[[5, 2], [2, 1]] N=71: ord=35 K=35 m in [2, 3] sum=71
+     V1 unitary   6.66e-16   V2 Egorov 2.32e-14   V3 torsion 2.09e-14   V4 proj 5.53e-15
+     V5 Weyl frame(rel) 6.13e-14   V8 max| |Tr(TU^J)|-1 | 2.73e-14
+
+wrote artifacts/catmap_independent_checks.json

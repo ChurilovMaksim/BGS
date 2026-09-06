@@ -1,0 +1,1033 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!55!black}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Fp}{\mathbf F_p}
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\Status}[1]{\par\smallskip\noindent\textbf{Status: #1.}\ }
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Norm}{\operatorname{N}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Disc}{\operatorname{Disc}}
+
+\title{\textbf{Arithmetic Quantum Cat Maps:}\\
+Exact Fourth-Moment Reductions, Cayley Discriminants,\\
+and Corrected Elliptic Correlations}
+\author{Maksim Churilov}
+\date{Research draft --- 4 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We develop an exact finite-field reduction of a fourth-moment problem arising
+in arithmetic quantum cat maps and identify one pointwise arithmetic quantity
+that controls both nontrivial fluctuation layers.  For an odd prime $p$ and a
+multiplicative subgroup $H\le\Fp^\times$ of order $K$, the pair-key geometry
+gives an exact constrained-pair count $(K-1)(K-2)$ and the fourth-moment
+difference distribution
+\[
+B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf 1_{t=0}.
+\]
+With the Cayley transform $c(h)=(h+1)/(h-1)$ and
+$A=c(H\setminus\{1\})$, the mixed term is governed by the additive energy
+$E_+(A)$.  A source-exact subgroup-curve estimate yields the uniform
+pointwise theorem
+\[
+E_+(A)<34K^{8/3}\qquad
+(100<K<p^{3/4}/3).
+\]
+For odd prime $K$, characteristic-zero cotangent rigidity gives a complete
+classification of forced additive collisions and the square norm identity
+$\Res(\Phi_K,P)=K^3M^2$.  We compress every additional split-prime collision
+into one canonical difference discriminant and prove a ratio-orbit
+factorization whose global discriminant is an explicit universal $2$/$K$
+part times a fourth power.  An independent multiplicative analogue gives exact
+characteristic-zero product rigidity and a canonical product discriminant.
+
+The global collision-resultant budget implies two averaged theorems.  For
+prime $K\asymp X^\theta$ and prime $p\asymp X$ with $p\equiv1\pmod K$, the
+average normalized non-forced excess is $O_\theta(X^{3\theta-1})$ for
+$\theta<1/3$.  More strongly, for $\theta<1/5$, asymptotically almost every
+such split pair has no non-forced additive collision at all and hence
+\[
+E_+(A)=3(K-1)(K-2)
+\]
+exactly.
+
+The historical off/off elliptic draft required a load-bearing correction.
+Every generic parameter class has a reducible fiber containing exactly
+$2p-8$ valid points.  Extracting these coherent spikes and then applying
+Igusa geometric monodromy and Deligne trace quasi-orthogonality gives
+\[
+\Var_{t\ne0}O(t)
+\ll pE_+(A)+K^2p+K^4p^{1/2}+K^4.
+\]
+Thus the elliptic layer is no longer an independent pointwise obstruction: the
+remaining fourth-moment bottleneck is the centered Cayley target
+\[
+E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}).
+\]
+This target remains open, and even its resolution would not by itself prove a
+microscopic Bohigas--Giannoni--Schmit/GOE eigenphase law; a separate
+mean-spacing local-statistics mechanism is still required.
+\end{abstract}
+
+\section{Scope and evidence discipline}
+
+Throughout, $p$ is an odd prime and $H\le\Fp^\times$ is a multiplicative
+subgroup of order $K$.  Division is in $\Fp$.  Universal claims below are
+labelled exact only when the load-bearing derivation is present; finite
+computations are used as regression or certificates, never as substitutes for
+proof.  When a theorem from the literature is load-bearing, we identify the
+specific source and the hypotheses used.
+
+The distinction between moment information and microscopic spectral statistics
+is essential.  Arithmetic cat-map literature contains strong eigenfunction,
+matrix-element and quantum-ergodicity results
+\cite{KR2005,KRR2007,DJ2024,KORS2025,BS2026}, but these do not imply a local
+eigenphase law.  Conversely, rigorous random-matrix universality is known for
+special model classes such as mixing quantum graphs under their own structural
+and large-graph assumptions \cite{PW2014,PW2015}; no transfer to the arithmetic
+family studied here is assumed.
+
+\section{Exact pair-key geometry and fourth-moment coupling}
+
+For $x,y\in\Fp\setminus\{0,1\}$ define
+\begin{equation}\label{eq:keydef}
+ u=\frac{x}{y},\qquad
+ v=\frac{x-1}{y-1},\qquad
+ d=x-y.
+\end{equation}
+
+\begin{proposition}[Pair-key bijection]\label{prop:key}
+If $x\ne y$, then $u,v\in\Fp^\times\setminus\{1\}$, $u\ne v$, and
+\begin{equation}\label{eq:inverse}
+ y=\frac{1-v}{u-v},\qquad
+ x=\frac{u(1-v)}{u-v},\qquad
+ d=\frac{(u-1)(v-1)}{v-u}.
+\end{equation}
+Conversely every such $(u,v)$ gives a unique admissible off-diagonal pair.
+The diagonal $x=y$ collapses to $(u,v,d)=(1,1,0)$ with multiplicity $p-2$.
+\end{proposition}
+
+\begin{proof}
+The equations $x=uy$ and $x-1=v(y-1)$ give
+$(u-v)y=1-v$, and then \eqref{eq:inverse}.  The diagonal statement is
+immediate.
+\end{proof}
+
+\begin{corollary}\label{cor:k2}
+Under the two subgroup constraints $u,v\in H$, the number of admissible
+off-diagonal ordered pairs is exactly
+\[
+(K-1)(K-2).
+\]
+\end{corollary}
+
+Give each collapsed key $r=(u_r,v_r,d_r)$ multiplicity $n_r$, equal to one off
+the diagonal and $p-2$ at $(1,1,0)$.  Define
+\begin{equation}\label{eq:Bdef}
+B(t)=\sum_{r,s}n_rn_s\,
+ \mathbf 1_H(u_ru_s)\mathbf 1_H(v_rv_s)
+ \mathbf 1_{d_r+d_s=t}.
+\end{equation}
+Let $O(t)$ be the off/off contribution and
+\[
+C_H(t)=\#\left\{(u,v)\in(H\setminus\{1\})^2:
+ u\ne v,\ \frac{(u-1)(v-1)}{v-u}=t\right\}.
+\]
+Then
+\begin{equation}\label{eq:Bdecomp}
+B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2\mathbf 1_{t=0}.
+\end{equation}
+The coefficient $2$ is essential: diagonal/off and off/diagonal are distinct
+ordered classes.
+
+\begin{proposition}[Exact total coupled count]\label{prop:v4}
+\[
+|V_4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K.
+\]
+\end{proposition}
+
+Let $S=H^\perp$ be the multiplicative-character annihilator and
+$m=|S|=(p-1)/K$.  In the maintained twisted-Jacobi convention,
+\begin{equation}\label{eq:fourier-collapse}
+\sum_{\chi,\psi\in S}|J(\chi,\psi;q)|^4=m^2\Sigma_4(q),
+\qquad
+\Sigma_4(q)=\sum_{t\in\Fp}B(t)e_p(qt).
+\end{equation}
+Writing $V=\sum_tB(t)$ and $Z=B(0)$, finite Fourier orthogonality gives
+\begin{equation}\label{eq:meanvar}
+\mathbb E_{q\ne0}\Sigma_4(q)=\frac{pZ-V}{p-1},
+\qquad
+\Var_{q\ne0}\Sigma_4(q)=p\Var_{t\ne0}B(t).
+\end{equation}
+No probabilistic independence assumption enters this step.
+
+\section{Cayley transform and the pointwise energy target}
+
+Put
+\[
+c(h)=\frac{h+1}{h-1},\qquad A=c(H\setminus\{1\}).
+\]
+For $u\ne v$,
+\begin{equation}\label{eq:cayley}
+\frac{(u-1)(v-1)}{v-u}=\frac{2}{c(u)-c(v)},
+\qquad c(h^{-1})=-c(h).
+\end{equation}
+Thus $A=-A$, $0\notin A$, and the nonzero multiplicities of $C_H$ are the
+nonzero additive-difference multiplicities of $A$, up to the permutation
+$x\mapsto2/x$.  Consequently
+\begin{equation}\label{eq:energyCH}
+\sum_tC_H(t)^2=E_+(A)-|A|^2,
+\qquad
+E_+(A)=\sum_xr_{A-A}(x)^2.
+\end{equation}
+With $n=|A|=K-1$, identity and central inversion force the nonzero baseline
+\begin{equation}\label{eq:forced-nz}
+n(2n-3)=(K-1)(2K-5).
+\end{equation}
+
+For every $A\subset\Fp$, with the unnormalized Fourier transform
+$\widehat{1_A}(q)=\sum_{a\in A}e_p(qa)$, Parseval gives
+\begin{equation}\label{eq:centered}
+E_+(A)=\frac{|A|^4}{p}
+ +\frac1p\sum_{q\ne0}|\widehat{1_A}(q)|^4.
+\end{equation}
+Hence the natural pointwise target is
+\begin{equation}\label{eq:centered-target}
+E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}),
+\end{equation}
+which is equivalent to
+\[
+\sum_{q\ne0}|\widehat{1_A}(q)|^4\ll pK^{2+o(1)}.
+\]
+This is the principal open arithmetic target of the present fourth-moment
+programme.
+
+There are two useful exact reformulations.  First, with
+$y=(h-1)^{-1}$,
+\[
+h=\frac{y+1}{y},\qquad c(h)=1+2y,
+\]
+so \eqref{eq:centered-target} is an additive-energy problem for the reciprocal
+shifted subgroup $(H-1)^{-1}$.  Second, solving $c(h)-c(k)=t$ gives
+\begin{equation}\label{eq:unipotent}
+k=\frac{(2-t)h+t}{2+t-th},
+\end{equation}
+which is the Cayley conjugate of a translation; the problem may therefore be
+viewed as an $L^2$ intersection problem between a multiplicative torus and a
+one-parameter unipotent family.  Known shifted-subgroup multiplicative-energy
+and M\"obius-incidence estimates \cite{MSS2018,RW2022} are relevant, but do not
+by themselves imply \eqref{eq:centered-target}.
+
+\section{A uniform pointwise bound}
+
+For $t\in\Fp$, write
+$r(t)=\#\{(a,b)\in A^2:a+b=t\}$.  If $a=c(x)$ and $b=c(y)$, clearing
+Cayley denominators gives
+\begin{equation}\label{eq:bilinear-fiber}
+P_t(x,y)=(2-t)xy+t(x+y)-(2+t)=0.
+\end{equation}
+The bilinear determinant is
+\[
+(2-t)(-(2+t))-t^2=-4,
+\]
+so every fiber is absolutely irreducible in odd characteristic.
+
+\begin{theorem}[Direct Cayley energy bound]\label{thm:direct}
+If
+\[
+100<K<\frac13p^{3/4},
+\]
+then
+\begin{equation}\label{eq:direct}
+E_+(A)<34K^{8/3}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For $t\ne0,-2$, the bidegree-$(1,1)$ polynomial
+\eqref{eq:bilinear-fiber} satisfies
+$P_t(0,0)\ne0$ and $\deg P_t(x,0)=1$.  Theorem~2 of the source version of
+Vyugin--Makarychev \cite{VM2015}, under the displayed range, gives
+$r(t)\le32K^{2/3}$.  The exceptional fibers satisfy
+$r(0)=K-1$ and trivially $r(-2)\le K-1$.  Since
+$\sum_tr(t)=(K-1)^2$,
+\[
+E_+(A)=\sum_tr(t)^2
+\le2(K-1)^2+32K^{2/3}\sum_{t\ne0,-2}r(t)
+<34K^{8/3}.
+\]
+\end{proof}
+
+The later journal publication is \cite{MV2019}.  The source hypothesis
+$\deg P(x,0)\ge1$ was checked directly; this equality case is load-bearing for
+the present application.  Combining \eqref{eq:energyCH} with the coefficient
+$2(p-2)$ in \eqref{eq:Bdecomp} gives the mixed variance bound
+\begin{equation}\label{eq:mixed-var}
+\Var_{t\ne0}\bigl(2(p-2)C_H(t)\bigr)<136pK^{8/3}.
+\end{equation}
+
+\section{Prime-order characteristic-zero rigidity and square resultants}
+
+Let $K$ now be an odd prime and $\zeta=e^{2\pi i/K}$.  Then
+\begin{equation}\label{eq:cot}
+c(\zeta^a)=-i\cot\frac{\pi a}{K}.
+\end{equation}
+Chowla proved that the $(K-1)/2$ cotangents with
+$1\le a\le(K-1)/2$ are rationally independent \cite{Chowla1970}; Wang states
+the prime case explicitly and extends it \cite{Wang1982}.
+
+\begin{lemma}[Cross-polytope differences]
+For vertices $x,y,u,v$ of a rational cross-polytope, with $x\ne y$ and
+$u\ne v$, the equality $x-y=u-v$ implies either
+$(u,v)=(x,y)$ or $(u,v)=(-y,-x)$.
+\end{lemma}
+
+\begin{proof}
+Write $x+v=u+y$.  If the common sum vanishes, the second alternative holds.
+Otherwise a sum of two signed basis vectors determines its unordered summands,
+and the other pairing would force $x=y$.
+\end{proof}
+
+\begin{theorem}[Prime-order additive rigidity]\label{thm:add-rigidity}
+Every characteristic-zero equal-difference collision among
+$\{c(\zeta^a):a\in\mathbf F_K^*\}$ is identity or central inversion-swap.
+\end{theorem}
+
+For an admissible collision quadruple, let $P(X)$ be the integral polynomial
+obtained by clearing the four Cayley denominators.  Direct algebra gives
+\[
+P(X)=(X-1)^3Q(X),
+\qquad
+Q(X^{-1})=X^{3-T}Q(X)
+\]
+for the appropriate exponent sum $T$, while $\|P\|_1\le12$.
+
+\begin{theorem}[Square-resultant theorem]\label{thm:square-res}
+For every odd prime $K$ and every admissible collision quadruple,
+\begin{equation}\label{eq:square-res}
+\Res(\Phi_K,P)=K^3M^2,
+\qquad M\in\Z.
+\end{equation}
+For a non-forced characteristic-zero collision, $M\ne0$.
+\end{theorem}
+
+\begin{proof}
+Put $L=\Q(\zeta)$ and let $L^+$ be its maximal real subfield.  Choose $m$ with
+$2m\equiv3-T\pmod K$.  The reciprocal identity makes
+$\beta=\zeta^mQ(\zeta)$ real, hence an algebraic integer of $L^+$.  Therefore
+\[
+\Norm_{L/\Q}(Q(\zeta))=\Norm_{L^+/\Q}(\beta)^2=M^2.
+\]
+Since $\Norm_{L/\Q}(\zeta-1)=K$, taking norms of
+$P(\zeta)=(\zeta-1)^3Q(\zeta)$ proves \eqref{eq:square-res}.
+Non-vanishing in the non-forced case follows from
+Theorem~\ref{thm:add-rigidity}.
+\end{proof}
+
+A non-forced collision modulo a split prime $p\equiv1\pmod K$ implies
+$p\mid M$ and hence
+\begin{equation}\label{eq:no-collision-cutoff}
+K^3p^2\le12^{K-1}.
+\end{equation}
+This improves the elementary cutoff but remains exponential in $K$.
+
+\section{Fibonacci slice and a large finite certificate}
+
+The relation
+\[
+c(h^2)-c(h)=c(h)-c(h^{-1})
+\]
+is equivalent, for odd-order $h\ne1$, to
+\[
+h^2+3h+1=0.
+\]
+
+\begin{theorem}[Fibonacci resultant]\label{thm:fibres}
+For every odd prime $K$,
+\[
+\Res(\Phi_K(X),X^2+3X+1)=F_K^2.
+\]
+The corresponding cleared Cayley collision has full norm $K^3F_K^2$.
+\end{theorem}
+
+\begin{proof}
+If $\alpha,\beta$ are the roots of $X^2+3X+1$, then
+$\alpha\beta=1$ and $\alpha+\beta=-3$.  Evaluating
+$\Phi_K(X)=(X^K-1)/(X-1)$ at the two roots reduces the resultant to
+$(2-(\alpha^K+\beta^K))/5$.  Writing the roots as
+$-\varphi^2,-\varphi^{-2}$ and using
+$L_{2K}=5F_K^2-2$ for odd $K$ yields the identity.
+\end{proof}
+
+Thus total collision norms may be exponentially large, so ``remove every
+exceptional prime'' is the wrong closure condition.  A stronger structural
+fact is that the rational Fibonacci/Lucas model
+\[
+S_N=\{\pm L_n/F_n:1\le n\le N\}
+\]
+has exact nonzero difference energy
+\begin{equation}\label{eq:almost-sidon}
+E^*(S_N)=2N(4N-3)+32\qquad(N\ge3).
+\end{equation}
+The unbounded divisibility separation uses the classical Fibonacci
+primitive-divisor theorem in the source-exact form of Yabuta
+\cite{Yabuta2001}; the bounded residue is checked independently in Lean.
+
+At the exact finite-field design
+\[
+K=131,\qquad
+p=F_{131}=1066340417491710595814572169,
+\]
+a complete Lucas primality certificate and independent Python/C++
+arbitrary-precision computations give nonzero Cayley energy $33442$, forced
+baseline $33410$, and excess $32$.  This is a finite certificate, not an
+asymptotic theorem.
+
+\section{Canonical difference discriminant}
+
+Let
+\[
+Q_K(X)=\frac{(X+1)^K-(X-1)^K}{2}.
+\]
+Its roots are exactly the characteristic-zero Cayley set.  Put
+\[
+R_K(T)=\Res_X(Q_K(X),Q_K(X-T)),
+\]
+remove the diagonal factor $T^{K-1}$, and let $S_K(T)$ be the primitive
+squarefree part.  By Theorem~\ref{thm:add-rigidity}, each nonzero
+characteristic-zero difference root has weight one or two, and
+\[
+\deg S_K=\frac{(K-1)^2}{2}.
+\]
+For a split prime $p$, reduction clusters distinct characteristic-zero roots
+of $S_K$ exactly when extra finite-field difference collisions occur.
+
+\begin{theorem}[Single-discriminant classification]\label{thm:disc-class}
+For every odd prime $K$ and every prime $p\equiv1\pmod K$,
+\begin{equation}\label{eq:disc-class}
+\Delta_K(p)>0\iff p\mid\Disc(S_K),
+\qquad
+\Delta_K(p)\le4v_p(\Disc(S_K)),
+\end{equation}
+where
+\[
+\Delta_K(p)=\sum_{d\ne0}r_{A-A}(d)^2-(K-1)(2K-5).
+\]
+\end{theorem}
+
+\begin{proof}
+The leading coefficient of $S_K$ is a $p$-adic unit and all its roots lie in
+$\Q_p$.  Hence
+\[
+v_p(\Disc S_K)=2\sum_{\alpha<\beta}v_p(\alpha-\beta).
+\]
+Each colliding reduction pair contributes at least two to this valuation.
+The collision weights are at most two, so expanding each reduction cluster
+gives the factor $4$ in \eqref{eq:disc-class}.
+\end{proof}
+
+\section{Ratio-orbit factorization and a fourth-power discriminant}
+
+For $r\in\mathbf F_K^*\setminus\{1\}$ and $a\in\mathbf F_K^*$ define
+\[
+d_{r,a}=c(\zeta^a)-c(\zeta^{ra}).
+\]
+The involution $(a,ra)\mapsto(-ra,-a)$ identifies $r$ with $r^{-1}$, giving
+$(K-1)/2$ ratio classes.  For one class set
+\[
+D_r(X)=(X-1)(X^r-1),\qquad
+N_r(X)=2(X^r-X),
+\]
+\[
+F_r(T)=\frac1K\Res_X\bigl(\Phi_K(X),TD_r(X)-N_r(X)\bigr).
+\]
+Then $F_r=F_{r^{-1}}$, distinct ratio classes give coprime factors, and
+\begin{equation}\label{eq:SK-factor}
+S_K(T)=\prod_{[r]}F_r(T).
+\end{equation}
+After the even rescaling
+$F_r(2U)=2^{K-1}H_r(U^2)$ one obtains
+\[
+H_r(Y)=1+KP_r(Y),
+\]
+with $P_r$ monic.  The next coefficient is
+\[
+\frac{(K-1)(K-2)}{12}-Ks(r,K),
+\]
+where $s(r,K)$ is the Dedekind sum.  The prime-modulus equality criterion
+\cite{JRW2011} shows that these coefficients distinguish the ratio classes.
+This one-degree drop in $P_s-P_r$ yields an exact square in every
+cross-resultant.
+
+\begin{theorem}[Fourth-power discriminant structure]\label{thm:fourth-power}
+Let $n=K-1$.  For each ratio class there is an integer $I_r>0$ such that
+\[
+|\Disc(F_r)|=2^{n^2}K^{K-2}I_r^4.
+\]
+For distinct classes there is an integer $M_{r,s}\ne0$ such that
+\[
+|\Res(F_r,F_s)|=2^{n^2}K^{K+1}M_{r,s}^2.
+\]
+Consequently, for a positive integer $J_K$,
+\begin{equation}\label{eq:global-fourth}
+|\Disc(S_K)|
+ =2^{(K-1)^4/4}
+  K^{(K-1)(K^2-7)/4}
+  J_K^4.
+\end{equation}
+\end{theorem}
+
+The one-factor formula comes from the index-discriminant identity in the
+maximal real cyclotomic field; the cross-resultant formula follows from
+$H_s-H_r=K(P_s-P_r)$ and the Poisson resultant formula.  Product discriminants
+then give \eqref{eq:global-fourth}.  In particular every split-prime valuation
+of $\Disc(S_K)$ is a multiple of four.
+
+Exact ratio-orbit computations through $K=47$ reject an earlier small-$K$
+heuristic that the prime-to-$2K$ residual logarithmic mass should be only
+$O(K^3\log K)$.  The cross-resultants retain genuine $K^4$-scale total
+archimedean mass.  Thus \eqref{eq:global-fourth} is structural, not a hidden
+proof of the pointwise target \eqref{eq:centered-target}.
+
+\section{Multiplicative Cayley rigidity}
+
+The same Cayley set has an independent multiplicative rigidity.  If
+$h_1=z/v$ and $h_2=zv$, write $T_x=x+x^{-1}$.  Then
+\[
+c(z/v)c(zv)=\frac{T_z+T_v}{T_z-T_v}.
+\]
+Equality of two such products reduces to equality of four-point exponent
+multisets; prime cyclotomic linear independence leaves only signed
+permutations.
+
+\begin{theorem}[Multiplicative rigidity]\label{thm:mult-rigidity}
+For $a,b,c,d\in\mathbf F_K^*$,
+\[
+c(\zeta^a)c(\zeta^b)=c(\zeta^c)c(\zeta^d)
+\]
+if and only if $(c,d)$ is one of
+\[
+(a,b),\ (b,a),\ (-a,-b),\ (-b,-a).
+\]
+Consequently the characteristic-zero multiplicative energy is
+\[
+E_\times(A_K)=4(K-1)(K-2).
+\]
+\end{theorem}
+
+There is a canonical squarefree product polynomial $S_K^\times$ for which the
+same reduction-cluster argument gives
+\[
+\Delta_K^\times(p)>0\iff p\mid\Disc(S_K^\times),
+\qquad
+\Delta_K^\times(p)\le16v_p(\Disc(S_K^\times)).
+\]
+This theorem is useful independent structure; no implication from
+multiplicative to additive energy is assumed.
+
+\section{A global split-prime collision budget}
+
+Simultaneous multiplication of all four exponent indices by
+$a\in\mathbf F_K^\times$ acts freely on non-forced collision quadruples.  The
+number of normalized scaling orbits is
+\begin{equation}\label{eq:NK}
+N_K=K^3-5K^2+6K+1.
+\end{equation}
+For one normalized orbit $q$, let $P_q$ be its collision polynomial and
+$R_q=\Res(\Phi_K,P_q)$.  If $p\equiv1\pmod K$, the number of scaled members of
+$q$ that collide modulo $p$ is bounded by $v_p(R_q)$; by
+Theorem~\ref{thm:square-res}, $v_p(R_q)$ is twice the valuation of its square
+factor.
+
+\begin{theorem}[Weighted split-prime budget]\label{thm:budget}
+For every odd prime $K$,
+\begin{equation}\label{eq:budget}
+\sum_{p\equiv1\,(K)}\Delta_K(p)\log p
+\le N_K\bigl((K-1)\log12-3\log K\bigr).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Sum the common-root bound over normalized scaling orbits and split primes.
+Since $R_q=K^3M_q^2$ and split primes are different from $K$,
+\[
+\sum_p\Delta_K(p)\log p
+\le\sum_q2\log|M_q|
+=\sum_q\log\frac{|R_q|}{K^3}.
+\]
+Finally $|R_q|\le12^{K-1}$.
+\end{proof}
+
+\section{Full Jacobi trace and the two-parameter averages}
+
+For $\chi,\psi\in S=H^\perp$ define
+\[
+J_S(q)_{\chi,\psi}
+ =\sum_{x\in\Fp\setminus\{0,1\}}
+   \chi^{-1}(x)\psi(x-1)e_p(qx),
+\qquad
+M_S(q)=\frac{e_p(-q/2)}{p-1}J_S(q).
+\]
+
+\begin{theorem}[Cayley--Jacobi trace identity]\label{thm:trace}
+For every $r\in\Fp$,
+\begin{equation}\label{eq:trace}
+\widehat{1_A}(r)=K\operatorname{Tr}M_S(2r).
+\end{equation}
+Consequently
+\begin{align}
+\sum_q|\operatorname{Tr}M_S(q)|^2&=\frac{p(K-1)}{K^2},\label{eq:trace2}\\
+\sum_q|\operatorname{Tr}M_S(q)|^4&=\frac{pE_+(A)}{K^4}.\label{eq:trace4}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+Put $y=(h-1)^{-1}$ and use character orthogonality on $H$.  After the change
+$x=y+1$, the resulting sums are precisely the diagonal entries of
+$J_S(2r)$, up to the normalizing phase.  Summing over the annihilator gives
+\eqref{eq:trace}; Parseval gives \eqref{eq:trace2}--\eqref{eq:trace4}.
+\end{proof}
+
+For $q\ne0$, the exact moments are
+\begin{align}
+\mu_2(K,p)&=\frac{(K-1)(p-K+1)}{K^2(p-1)},\label{eq:mu2}\\
+\mu_4(K,p)&=\frac{pE_+(A)-(K-1)^4}{K^4(p-1)}.\label{eq:mu4}
+\end{align}
+
+Fix $0<\theta<1/2$, put $Q=X^\theta$, and let
+\[
+\mathcal D_\theta(X)=\{(K,p):K,p\text{ prime},\ Q/2<K\le Q,\
+ X/2<p\le X,\ p\equiv1\pmod K\}.
+\]
+The classical Bombieri--Vinogradov theorem in the standard form of
+Iwaniec--Kowalski, together with the prime number theorem
+\cite{Bombieri1965,IK2004}, gives
+\begin{equation}\label{eq:design-count}
+|\mathcal D_\theta(X)|
+\sim\frac{\log2}{2\theta}\frac{X}{(\log X)^2}
+\end{equation}
+for fixed $\theta<1/2$.  No pointwise prime-number theorem for an individual
+varying modulus is used.
+
+\begin{theorem}[Double-averaged quadratic excess]\label{thm:doubleavg}
+For every fixed $0<\theta<1/3$,
+\begin{equation}\label{eq:doubleavg}
+\frac1{|\mathcal D_\theta(X)|}
+\sum_{(K,p)\in\mathcal D_\theta(X)}\frac{\Delta_K(p)}{K^2}
+\ll_\theta X^{3\theta-1}.
+\end{equation}
+Hence the average tends to zero.
+\end{theorem}
+
+\begin{proof}
+For $K\asymp Q$, divide \eqref{eq:budget} by $K^2\log(X/2)$ and sum over
+prime $K\in(Q/2,Q]$.  The numerator is
+$O(Q^3X^0/\log X)$ per prime-scale summation, equivalently
+$O(Q^3/(\log X))$ after the prime-modulus count; division by
+\eqref{eq:design-count} gives $O_\theta(X^{3\theta-1})$.  This is the same
+partial-summation bookkeeping as in the source note; all constants are uniform
+for fixed $\theta$.
+\end{proof}
+
+Via \eqref{eq:mu2}--\eqref{eq:mu4}, the standardized nonzero-frequency
+fourth/second moment ratio has double-average absolute deviation from $3$
+tending to zero for $\theta<1/3$.  This is a fourth-moment statement, not a
+central limit theorem.
+
+\section{Density-one exact baseline below $\theta=1/5$}
+
+The excess $\Delta_K(p)$ is a nonnegative integer.  This elementary fact turns
+the weighted budget into a counting theorem for bad designs.
+
+\begin{theorem}[Density-one exact Cayley baseline]\label{thm:density}
+For every fixed $0<\theta<1/2$, let
+\[
+\mathcal B_\theta(X)=\{(K,p)\in\mathcal D_\theta(X):\Delta_K(p)>0\}.
+\]
+Then
+\begin{equation}\label{eq:bad-count}
+|\mathcal B_\theta(X)|\ll_\theta\frac{X^{5\theta}}{(\log X)^2},
+\qquad
+\frac{|\mathcal B_\theta(X)|}{|\mathcal D_\theta(X)|}
+\ll_\theta X^{5\theta-1}.
+\end{equation}
+In particular, for every fixed $0<\theta<1/5$, asymptotically almost every
+pair in $\mathcal D_\theta(X)$ satisfies
+\begin{equation}\label{eq:exact-baseline}
+\Delta_K(p)=0,
+\qquad
+E_+(A)=3(K-1)(K-2)
+\end{equation}
+exactly.
+\end{theorem}
+
+\begin{proof}
+For a fixed $K$, every bad prime $p\in(X/2,X]$ contributes at least
+$\log(X/2)$ to the left side of \eqref{eq:budget}.  Since
+$N_K<K^3$ and $(K-1)\log12-3\log K<K\log12$,
+\[
+\#\{p\in(X/2,X]:\Delta_K(p)>0\}
+\ll\frac{K^4}{\log X}.
+\]
+Summing $K^4$ over primes $K\in(Q/2,Q]$ and using PNT/partial summation gives
+$O(Q^5/(\log X)^2)$.  Divide by \eqref{eq:design-count}.  When
+$\Delta_K(p)=0$, the zero-difference contribution $(K-1)^2$ plus the forced
+nonzero contribution \eqref{eq:forced-nz} gives the second identity in
+\eqref{eq:exact-baseline}.
+\end{proof}
+
+On this density-one subfamily the exact trace kurtosis is
+\[
+\kappa(K,p)=
+\frac{(p-1)\,[3p(K-2)-(K-1)^3]}
+ {(K-1)(p-K+1)^2}
+=3+O\!\left(\frac1K+\frac{K^2}{p}\right).
+\]
+Again, this is not a distributional or local-eigenvalue theorem.
+
+\section{Corrected off/off elliptic correlation}
+
+We now treat the pure off/off term $O(t)$ in \eqref{eq:Bdecomp}.  For an
+off-diagonal key $(u,v)$ set
+\[
+d(u,v)=\frac{(u-1)(v-1)}{v-u}.
+\]
+For $\lambda=(h_1,h_2)\in H^2$, let $O_\lambda(t)$ count valid off-diagonal
+$(u,v)$ such that $(h_1/u,h_2/v)$ is also off-diagonal and
+\[
+d(u,v)+d(h_1/u,h_2/v)=t.
+\]
+Then $O(t)=\sum_\lambda O_\lambda(t)$.
+
+Assume first that
+\[
+h_1,h_2\ne1,\qquad h_1\ne h_2,\qquad h_1h_2\ne1.
+\]
+Put
+\[
+\alpha=c(h_1),\quad\beta=c(h_2),\quad
+s=\alpha+\beta,\quad d=\alpha-\beta.
+\]
+With $a=c(u)$, $b=c(v)$ and
+$T_\alpha(a)=(\alpha a-1)/(a-\alpha)$, the fiber equation is
+\begin{equation}\label{eq:elliptic-fiber}
+\frac2{a-b}+\frac2{T_\alpha(a)-T_\beta(b)}=t.
+\end{equation}
+Clearing denominators and taking the branch-quartic discriminant gives, up to
+an everywhere nonzero scalar,
+\begin{align}
+\Disc_a(q)=&\ d^2(dt-2)^4
+(s-d-2)^2(s-d+2)^2(s+d-2)^2(s+d+2)^2
+R_{s,d}(t),\label{eq:branch-disc}\\
+R_{s,d}(t)=&\ d^2t^4+2d(s^2-d^2-4)t^3
+ +4(5d^2-s^2+4)t^2-64dt+64.\label{eq:R}
+\end{align}
+The residual discriminant is exactly
+\begin{equation}\label{eq:Rdisc}
+\Disc_t R_{s,d}
+=2^{16}d^2s^2
+(s-d-2)^2(s-d+2)^2(s+d-2)^2(s+d+2)^2.
+\end{equation}
+Thus the generic family has four simple residual bad fibers and the
+distinguished fiber
+\[
+t_\lambda=\frac2d.
+\]
+At this point the cleared cubic factors into two distinct affine lines:
+\begin{align*}
+L_-(a,b)&=(\beta-1)(a-1)-(\alpha-1)(b-1),\\
+L_+(a,b)&=(\beta+1)(a+1)-(\alpha+1)(b+1).
+\end{align*}
+After all valid-domain exclusions, their union contains exactly
+\begin{equation}\label{eq:spike}
+O_\lambda(t_\lambda)=2p-8
+\end{equation}
+valid points.  This is the correction missing from the historical draft.
+
+Let $a_\lambda(t)$ be the unnormalized Frobenius trace of the Jacobian of the
+generic genus-one pencil.  Boundary corrections have bounded degree, and the
+four residual fibers are multiplicative $I_1$ fibers while the distinguished
+fiber is multiplicative of type $I_4$.  Therefore
+\begin{equation}\label{eq:trace-decomp}
+O_\lambda(t)=p+p\mathbf1_{t=t_\lambda}-a_\lambda(t)+e_\lambda(t),
+\qquad |e_\lambda(t)|\le C
+\end{equation}
+for an absolute constant $C$.
+
+The pole of the $j$-invariant at $t_\lambda$ proves non-isotriviality.  Igusa's
+open-image theorem, in the modern formulation of
+Bandini--Longhi--Vigni \cite{BLV2009}, gives geometric irreducibility of the
+rank-two $R^1$ local system.  Rank, conductor and the number of bad points are
+uniformly bounded.  Moreover the finite singular-support polynomial is
+\[
+S_{s,d}(t)=(dt-2)R_{s,d}(t)
+\]
+with expansion
+\[
+d^3t^5+(-2d^4+2d^2s^2-10d^2)t^4
+ +(24d^3-8ds^2+32d)t^3
+ +(-104d^2+8s^2-32)t^2+192dt-128.
+\]
+Equality of singular supports therefore gives $d'=d$ and $s'^2=s^2$, so a
+geometric isomorphism can occur only for the same parameter or for the exact
+involution
+\begin{equation}\label{eq:involution}
+(h_1,h_2)\longleftrightarrow(h_2^{-1},h_1^{-1}).
+\end{equation}
+
+For two remaining generic parameters, the source-exact cohomological argument
+of Fouvry--Kowalski--Michel, Lemma~3.5 of
+\cite{FKM2013}, applied on the common good open, gives
+\begin{equation}\label{eq:trace-corr}
+\sum_{t\in\Fp}a_\lambda(t)\overline{a_\mu(t)}=O(p^{3/2}).
+\end{equation}
+Indeed Schur kills $H_c^2$ for non-isomorphic geometric representations,
+Grothendieck--Lefschetz reduces the correlation to $H_c^1$, Deligne's Riemann
+Hypothesis gives the $p^{1/2}$ eigenvalue bound after normalization, and the
+Grothendieck--Ogg--Shafarevich formula gives a uniform $O(1)$ cohomology
+dimension.  The bounded number of parameter-dependent deleted points changes
+the complete sum only by a bounded normalized amount.
+
+Define
+\[
+D(t)=\#\{\lambda\text{ generic}:t_\lambda=t\}.
+\]
+Since $d\mapsto2/d$ permutes $\Fp^*$ and $d=\alpha-\beta$,
+\begin{equation}\label{eq:spike-energy}
+\sum_{t\ne0}D(t)^2\le E_+(A).
+\end{equation}
+The $4K-3$ non-generic parameter classes are controlled directly by their
+bilinear or genus-one special fibers.
+
+\begin{theorem}[Corrected off/off variance]\label{thm:offoff}
+Let $p>3$ and let $H\le\Fp^\times$ have odd order $K$.  Then
+\begin{equation}\label{eq:offoff}
+\Var_{t\ne0}O(t)
+\ll pE_+(A)+K^2p+K^4p^{1/2}+K^4,
+\end{equation}
+with an absolute implied constant.
+\end{theorem}
+
+\begin{proof}
+Summing \eqref{eq:trace-decomp} over generic parameters, the deterministic
+spike part contributes $pE_+(A)$ by \eqref{eq:spike-energy}.  The trace part
+has second moment
+$O(K^2p^2+K^4p^{3/2})$ by \eqref{eq:trace-corr} and the
+$O(K^2)$ same/involution pairs.  The bounded boundary terms contribute
+$O(K^4)$, and the special strata contribute $O(K^2p)$.  Divide the complete
+second moments by the $p-1$ variance denominator and absorb covariance by
+$\Var(X+Y)\le2\Var X+2\Var Y$.
+\end{proof}
+
+Combining Theorems~\ref{thm:direct} and \ref{thm:offoff} gives
+\begin{equation}\label{eq:offoff-direct}
+\Var_{t\ne0}O(t)
+\ll pK^{8/3}+K^4p^{1/2}+K^2p+K^4.
+\end{equation}
+In particular, if $K=o(p^{1/4})$, then
+$\Var O\ll pK^{8/3}$.  The elliptic/sheaf layer has therefore collapsed onto
+the same pointwise Cayley-energy problem as the mixed layer.
+
+\section{The remaining BGS frontier}
+
+The exact logical chain is now
+\[
+\boxed{\text{pair-key/Fourier reduction}}
+\longrightarrow
+\boxed{\text{one pointwise Cayley-energy target}}
+\longrightarrow
+\boxed{\text{full fourth-moment control}}
+\longrightarrow
+\boxed{\text{new mean-spacing local-law/comparison mechanism}}
+\longrightarrow
+\boxed{\text{microscopic BGS/GOE}}.
+\]
+The second box remains open in the uniform pointwise sense: the present theorem
+has exponent $8/3$, whereas \eqref{eq:centered-target} asks for the quadratic
+centered scale.  The density-one theorem removes all non-forced collisions on
+a two-parameter subfamily with $\theta<1/5$, but it does not provide a theorem
+for every split reduction.
+
+Even a proof of \eqref{eq:centered-target}, combined with
+Theorem~\ref{thm:offoff}, would be a moment theorem.  It would not identify
+mean-spacing eigenphase correlations.  Such a result still requires a
+comparison theorem, local law, determinantal/Pfaffian mechanism, arithmetic
+trace formula with sufficient uniformity, or another genuinely microscopic
+argument adapted to the relevant symmetry class.
+
+\section{Reproducibility and adversarial checks}
+
+The maintained repository uses independent failure modes:
+\begin{itemize}
+\item Python/SymPy regenerates exact resultants, discriminants, ratio-orbit
+  identities, Jacobi/Cayley trace identities and the elliptic spike algebra;
+\item C++20 independently checks finite-field hot paths and the 28-digit
+  arbitrary-precision witness;
+\item Lean 4 kernel-checks finite pair-key/Cayley statements, historical
+  falsifiers and the bounded Fibonacci-ratio residue;
+\item CI rebuilds all maintained code and recompiles this manuscript.
+\end{itemize}
+The finite elliptic regression verifies the branch discriminant,
+\eqref{eq:Rdisc}, line factorization and exact $2p-8$ anchors; it is not the
+proof of Theorem~\ref{thm:offoff}.  Similarly, finite ratio-orbit computations
+are used to falsify scaling heuristics, not to establish the universal
+fourth-power theorem.
+
+\section{Conclusion}
+
+The fourth-moment programme now has a substantially simpler obstruction
+architecture than the historical draft.  The pair-key reduction is exact, the
+mixed term is a Cayley additive-energy problem, prime-order characteristic-zero
+collisions are completely rigid, and all additional split-prime additive
+collisions are compressed by a canonical discriminant with an exact
+ratio-orbit fourth-power structure.  A second exact rigidity theorem controls
+characteristic-zero products.  The global resultant budget yields both a
+quadratic double-average theorem below $\theta=1/3$ and an exact density-one
+baseline below $\theta=1/5$.
+
+The principal correction on the geometric side is the explicit reducible
+$2p-8$ fiber.  Once it is extracted, the residual elliptic trace family is
+quasi-orthogonal and the off/off variance is controlled by the same
+$E_+(A)$ that already governs the mixed layer.  The strongest uniform
+pointwise theorem is currently $E_+(A)<34K^{8/3}$; the natural centered
+$K^{2+o(1)}$ target remains open.  Microscopic BGS/GOE universality remains a
+separate problem beyond moment closure.
+
+\begin{thebibliography}{99}
+
+\bibitem{KR2005}
+P.~Kurlberg and Z.~Rudnick,
+\emph{On the distribution of matrix elements for the quantum cat map},
+Ann. of Math. \textbf{161} (2005), 489--507,
+doi:10.4007/annals.2005.161.489.
+
+\bibitem{KRR2007}
+P.~Kurlberg, L.~Rosenzweig and Z.~Rudnick,
+\emph{Matrix elements for the quantum cat map: fluctuations in short windows},
+arXiv:math/0701685 (2007).
+
+\bibitem{DJ2024}
+S.~Dyatlov and M.~J\'ez\'equel,
+\emph{Semiclassical Measures for Higher-Dimensional Quantum Cat Maps},
+Ann. Henri Poincar\'e \textbf{25} (2024), 1545--1605,
+doi:10.1007/s00023-023-01309-x.
+
+\bibitem{KORS2025}
+P.~Kurlberg, A.~Ostafe, Z.~Rudnick and I.~E.~Shparlinski,
+\emph{On Quantum Ergodicity for Higher Dimensional Cat Maps},
+Commun. Math. Phys. \textbf{406} (2025), 174,
+doi:10.1007/s00220-025-05350-1.
+
+\bibitem{BS2026}
+S.~Bhakta and I.~E.~Shparlinski,
+\emph{On quantum ergodicity for higher-dimensional cat maps modulo prime powers},
+Bull. London Math. Soc. \textbf{58} (2026),
+doi:10.1112/blms.70300.
+
+\bibitem{PW2014}
+Z.~Pluha\v r and H.~A.~Weidenm\"uller,
+\emph{Universal Quantum Graphs},
+Phys. Rev. Lett. \textbf{112} (2014), 144102,
+doi:10.1103/PhysRevLett.112.144102.
+
+\bibitem{PW2015}
+Z.~Pluha\v r and H.~A.~Weidenm\"uller,
+\emph{Quantum graphs and random-matrix theory},
+J. Phys. A \textbf{48} (2015), 275102,
+doi:10.1088/1751-8113/48/27/275102.
+
+\bibitem{Chowla1970}
+S.~Chowla,
+\emph{The nonexistence of nontrivial linear relations between the roots of a certain irreducible equation},
+J. Number Theory \textbf{2} (1970), 120--123,
+doi:10.1016/0022-314X(70)90012-0.
+
+\bibitem{Wang1982}
+K.~Wang,
+\emph{On a theorem of S. Chowla},
+J. Number Theory \textbf{15} (1982), 1--4,
+doi:10.1016/0022-314X(82)90078-6.
+
+\bibitem{Yabuta2001}
+M.~Yabuta,
+\emph{A Simple Proof of Carmichael's Theorem on Primitive Divisors},
+Fibonacci Quart. \textbf{39} (2001), 439--443,
+doi:10.1080/00150517.2001.12428701.
+
+\bibitem{VM2015}
+I.~V.~Vyugin and S.~Makarychev,
+\emph{Solutions of polynomial equation over $\mathbf F_p$ and new bounds of additive energy},
+arXiv:1504.01354v2 (2015).
+
+\bibitem{MV2019}
+S.~Makarychev and I.~Vyugin,
+\emph{Solutions of Polynomial Equations in Subgroups of $\mathbf F_p^*$},
+Arnold Math. J. \textbf{5} (2019), 105--121,
+doi:10.1007/s40598-019-00112-z.
+
+\bibitem{MSS2018}
+S.~Macourt, I.~D.~Shkredov and I.~E.~Shparlinski,
+\emph{Multiplicative Energy of Shifted Subgroups and Bounds On Exponential Sums with Trinomials in Finite Fields},
+Canad. J. Math. \textbf{70} (2018), 1319--1338,
+doi:10.4153/CJM-2017-044-2.
+
+\bibitem{RW2022}
+M.~Rudnev and J.~Wheeler,
+\emph{On incidence bounds with M\"obius hyperbolae in positive characteristic},
+Finite Fields Appl. \textbf{78} (2022), 101978,
+doi:10.1016/j.ffa.2021.101978.
+
+\bibitem{JRW2011}
+S.~Jabuka, S.~Robins and X.~Wang,
+\emph{When are two Dedekind sums equal?},
+Int. J. Number Theory \textbf{7} (2011), 2197--2203,
+arXiv:1103.0370.
+
+\bibitem{Bombieri1965}
+E.~Bombieri,
+\emph{On the large sieve},
+Mathematika \textbf{12} (1965), 201--225,
+doi:10.1112/S0025579300005313.
+
+\bibitem{IK2004}
+H.~Iwaniec and E.~Kowalski,
+\emph{Analytic Number Theory},
+AMS Colloquium Publications \textbf{53}, 2004,
+doi:10.1090/coll/053.
+
+\bibitem{FKM2013}
+\'E.~Fouvry, E.~Kowalski and P.~Michel,
+\emph{Counting sheaves using spherical codes},
+Math. Res. Lett. \textbf{20} (2013), 305--323,
+doi:10.4310/MRL.2013.V20.N2.A8,
+arXiv:1210.0851.
+
+\bibitem{BLV2009}
+A.~Bandini, I.~Longhi and S.~Vigni,
+\emph{Torsion points on elliptic curves over function fields and a theorem of Igusa},
+Expo. Math. \textbf{27} (2009), 175--209,
+doi:10.1016/j.exmath.2008.06.001,
+arXiv:0804.1425.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,17 @@
+{
+  "script":"code/experiments/number_variance_goe_control.py",
+  "generated":"2026-09-02T19:39:09",
+  "design":{"N":19489,"K":29,"a":4523,"m_plus":336,"n_q":25,"nsim":60},
+  "L_values":[1,2,3,5,8,12],
+  "rows":[
+    {"L":1,"catmap_mean":0.3384963151927438,"catmap_sem":0.004131670404461809,"goe_mean":0.34086799650415717,"goe_sem":0.0031516395777406066,"z":0.4564004271649427,"pass":true},
+    {"L":2,"catmap_mean":0.49673398526077095,"catmap_sem":0.008323246409501982,"goe_mean":0.5084766806027967,"goe_sem":0.005206589282206532,"z":1.1960878022400563,"pass":true},
+    {"L":3,"catmap_mean":0.5848483560090703,"catmap_sem":0.009868107626218486,"goe_mean":0.6098549402399851,"goe_sem":0.008331463914579569,"z":1.9362689129148456,"pass":true},
+    {"L":5,"catmap_mean":0.770359268707483,"catmap_sem":0.01349598333493537,"goe_mean":0.7913604851662887,"goe_sem":0.01005154726594117,"z":1.248006557558903,"pass":true},
+    {"L":8,"catmap_mean":1.2257745181405897,"catmap_sem":0.017288590504002815,"goe_mean":1.2435505539021166,"goe_sem":0.010797637806383669,"z":0.8720825240024637,"pass":true},
+    {"L":12,"catmap_mean":2.450457057823129,"catmap_sem":0.022046972070705616,"goe_mean":2.4652826495181412,"goe_sem":0.015620733303219262,"z":0.5486910977805542,"pass":true}
+  ],
+  "overall_pass":true,
+  "walltime_s":21.18526601791382,
+  "audit_2026_09_03":"fresh rerun; all L in {1,2,3,5,8,12} remained within |z|<2 against matched GOE control"
+}

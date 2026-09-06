@@ -1,0 +1,35 @@
+{
+ "script": "inline (LEDGER R82.23)",
+ "N": 9349,
+ "K": 19,
+ "c1_pred": 5778,
+ "c2_pred": 3571,
+ "branches": [
+  {
+   "k0": 0,
+   "c_name": "L_half=5778",
+   "max_dev": 0.02925263343611495,
+   "match": false
+  },
+  {
+   "k0": 0,
+   "c_name": "-5/c=3571",
+   "max_dev": 0.02925263343611917,
+   "match": false
+  },
+  {
+   "k0": 18,
+   "c_name": "L_half=5778",
+   "max_dev": 0.03149768278664933,
+   "match": false
+  },
+  {
+   "k0": 18,
+   "c_name": "-5/c=3571",
+   "max_dev": 0.01415868246456986,
+   "match": false
+  }
+ ],
+ "C1_confirmed": false,
+ "C2_confirmed": false
+}

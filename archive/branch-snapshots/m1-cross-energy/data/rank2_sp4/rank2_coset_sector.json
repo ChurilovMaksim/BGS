@@ -1,0 +1,8 @@
+{
+ "run": "105.7",
+ "theorem": "rank-2 coset-sector structure [PROVEN exact]",
+ "statement": "For the Sp4 diagonal D (u1=5,u2=3 at N=53) and the D-fixed character coset P: ||P U_D T(n) P||_F^2 = 1 if n is in the position sector (n3=n4=0) and = 0 otherwise \u2014 EXACTLY, over all sampled mixed n.  The coset sees only the position translations, with zero fluctuation within the sector.",
+ "why": "coset characters are D-fixed: <chi|U_D T(n)|chi> = <chi|T(n)|chi> = e(phase) * sum_x e_N(k n1 + l n2), and the coset sum over chi kills all n with momentum components.",
+ "significance": "the G0 flatness at rank 2 is EXACT and structural (stronger than the rank-1 flat+Weil): the coset decomposes the kernel space into an exactly-flat sector and an orthogonal sector. The cat-map's Weil correction at rank 1 comes from the (x-1) twist; the Sp4 diagonal has no such twist \u2014 its flatness is exact.",
+ "status": "[PROVEN] exact at N=53"
+}

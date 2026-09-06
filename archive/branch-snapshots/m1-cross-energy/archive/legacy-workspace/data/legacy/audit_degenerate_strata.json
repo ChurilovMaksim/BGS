@@ -1,0 +1,166 @@
+{
+ "rho": 16.0,
+ "trials": 250,
+ "configs": [
+  {
+   "p": 1009,
+   "k": 126,
+   "rho_actual": 15.734,
+   "GEN": {
+    "max": 7,
+    "mean": 1.888,
+    "frac_nz": 0.848
+   },
+   "WICK": {
+    "max": 133,
+    "mean": 127.844,
+    "frac_nz": 1.0
+   },
+   "WICK3Q": {
+    "max": 6,
+    "mean": 1.9,
+    "frac_nz": 0.844
+   },
+   "SLOT13": {
+    "max": 7,
+    "mean": 2.092,
+    "frac_nz": 0.884
+   },
+   "CROSS12": {
+    "max": 8,
+    "mean": 1.912,
+    "frac_nz": 0.852
+   },
+   "TWOCROSS": {
+    "max": 6,
+    "mean": 1.84,
+    "frac_nz": 0.84
+   },
+   "CHAIN": {
+    "max": 10,
+    "mean": 1.996,
+    "frac_nz": 0.876
+   }
+  },
+  {
+   "p": 2003,
+   "k": 182,
+   "rho_actual": 16.537,
+   "GEN": {
+    "max": 7,
+    "mean": 1.388,
+    "frac_nz": 0.776
+   },
+   "WICK": {
+    "max": 187,
+    "mean": 183.464,
+    "frac_nz": 1.0
+   },
+   "WICK3Q": {
+    "max": 6,
+    "mean": 1.444,
+    "frac_nz": 0.756
+   },
+   "SLOT13": {
+    "max": 6,
+    "mean": 1.616,
+    "frac_nz": 0.784
+   },
+   "CROSS12": {
+    "max": 7,
+    "mean": 1.52,
+    "frac_nz": 0.812
+   },
+   "TWOCROSS": {
+    "max": 6,
+    "mean": 1.528,
+    "frac_nz": 0.764
+   },
+   "CHAIN": {
+    "max": 5,
+    "mean": 1.476,
+    "frac_nz": 0.78
+   }
+  },
+  {
+   "p": 4001,
+   "k": 250,
+   "rho_actual": 15.621,
+   "GEN": {
+    "max": 7,
+    "mean": 1.06,
+    "frac_nz": 0.652
+   },
+   "WICK": {
+    "max": 257,
+    "mean": 251.0,
+    "frac_nz": 1.0
+   },
+   "WICK3Q": {
+    "max": 6,
+    "mean": 0.972,
+    "frac_nz": 0.628
+   },
+   "SLOT13": {
+    "max": 5,
+    "mean": 0.948,
+    "frac_nz": 0.64
+   },
+   "CROSS12": {
+    "max": 5,
+    "mean": 1.032,
+    "frac_nz": 0.648
+   },
+   "TWOCROSS": {
+    "max": 6,
+    "mean": 0.984,
+    "frac_nz": 0.616
+   },
+   "CHAIN": {
+    "max": 4,
+    "mean": 0.972,
+    "frac_nz": 0.648
+   }
+  },
+  {
+   "p": 8009,
+   "k": 364,
+   "rho_actual": 16.543,
+   "GEN": {
+    "max": 7,
+    "mean": 0.708,
+    "frac_nz": 0.5
+   },
+   "WICK": {
+    "max": 368,
+    "mean": 364.844,
+    "frac_nz": 1.0
+   },
+   "WICK3Q": {
+    "max": 4,
+    "mean": 0.748,
+    "frac_nz": 0.536
+   },
+   "SLOT13": {
+    "max": 4,
+    "mean": 0.796,
+    "frac_nz": 0.556
+   },
+   "CROSS12": {
+    "max": 5,
+    "mean": 0.82,
+    "frac_nz": 0.536
+   },
+   "TWOCROSS": {
+    "max": 5,
+    "mean": 0.764,
+    "frac_nz": 0.532
+   },
+   "CHAIN": {
+    "max": 4,
+    "mean": 0.764,
+    "frac_nz": 0.576
+   }
+  }
+ ]
+}

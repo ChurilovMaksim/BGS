@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Lean generated state
+formal/.lake/build/
+formal/.lake/packages/
+
+# Runtime logs and scratch
+results/**/*.log
+*.out
+*.tmp
+
+# Local-only working areas
+scratch/
+.local/
+
+# Generated audit inventory
+docs/audit/FILE_INVENTORY.generated.json

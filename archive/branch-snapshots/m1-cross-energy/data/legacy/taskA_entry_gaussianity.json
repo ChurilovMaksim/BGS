@@ -1,0 +1,60 @@
+[
+ {
+  "class": "GOE(71) reference",
+  "off_re": {
+   "kurtosis": 0.096,
+   "ks_norm": 0.0126,
+   "p": 0.82
+  },
+  "off_im": {
+   "kurtosis": NaN,
+   "ks_norm": 0.5,
+   "p": 0.0
+  },
+  "diag": {
+   "kurtosis": 0.556,
+   "ks_norm": 0.0729,
+   "p": 0.818
+  }
+ },
+ {
+  "class": "compressed p=4481 (m=71)",
+  "off_re": {
+   "kurtosis": -0.138,
+   "ks_norm": 0.0203,
+   "p": 0.252
+  },
+  "off_im": {
+   "kurtosis": -0.109,
+   "ks_norm": 0.0105,
+   "p": 0.945
+  },
+  "diag": {
+   "kurtosis": -0.176,
+   "ks_norm": 0.0731,
+   "p": 0.816
+  },
+  "ev_max/std": 3.82,
+  "ev_kurtosis": 5.902
+ },
+ {
+  "class": "compressed p=3571 (m=211)",
+  "off_re": {
+   "kurtosis": 0.004,
+   "ks_norm": 0.0042,
+   "p": 0.832
+  },
+  "off_im": {
+   "kurtosis": 0.071,
+   "ks_norm": 0.0043,
+   "p": 0.796
+  },
+  "diag": {
+   "kurtosis": 3.242,
+   "ks_norm": 0.057,
+   "p": 0.481
+  },
+  "ev_max/std": 4.98,
+  "ev_kurtosis": 9.347
+ }
+]

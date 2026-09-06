@@ -1,0 +1,108 @@
+hecke_real_centraliser_v7_fixed.jl (RING 1.2 v7-FIXED, 2026-08-28)
+julia 1.11.9  timestamp=2026-08-28T14:03:23.783
+
+=== A=(2, 1, 1, 1) @ p=4481 (v6 reference: k=64) ===
+  ord_p(A) (brute) ... 64  (0.03s)
+  k = ord_p(α) = 64
+  Building U_A ... 10.69s
+  Eigendecomp ... 61.01s
+  Multiplet size = 85
+  RAW kurt = 25.8776
+  R_n (Haar-Hecke) kurt = 0.0876
+  Reduction factor = 295.3x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.00036168926352176176, "sigma_median" => 0.06753852367769131, "sigma_max" => 0.16180534708966007, "ratio_max_over_median" => 2.3957489485827494)
+
+=== A=(2, 1, 1, 1) @ p=31 (p=31, expect k=5 or 6) ===
+  ord_p(A) (brute) ... 15  (0.00s)
+  k = ord_p(α) = 15
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.00s
+  Multiplet size = 4
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=41 (p=41, expect k=8) ===
+  ord_p(A) (brute) ... 20  (0.00s)
+  k = ord_p(α) = 20
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.00s
+  Multiplet size = 5
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=61 (p=61, expect k=12) ===
+  ord_p(A) (brute) ... 30  (0.00s)
+  k = ord_p(α) = 30
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.00s
+  Multiplet size = 3
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=71 (p=71, expect k=35) ===
+  ord_p(A) (brute) ... 35  (0.00s)
+  k = ord_p(α) = 35
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.00s
+  Multiplet size = 4
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=101 (p=101, expect k=20) ===
+  ord_p(A) (brute) ... 25  (0.00s)
+  k = ord_p(α) = 25
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.02s
+  Multiplet size = 7
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=151 (p=151, expect k=15) ===
+  ord_p(A) (brute) ... 25  (0.00s)
+  k = ord_p(α) = 25
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.04s
+  Multiplet size = 9
+  RAW kurt = 0.6238
+  R_n (Haar-Hecke) kurt = -1.0876
+  Reduction factor = 0.6x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.022046627313241453, "sigma_median" => 0.16605691904969389, "sigma_max" => 0.2373821787449301, "ratio_max_over_median" => 1.4295229617857208)
+
+=== A=(2, 1, 1, 1) @ p=181 (p=181, expect k=9) ===
+  ord_p(A) (brute) ... 45  (0.00s)
+  k = ord_p(α) = 45
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.04s
+  Multiplet size = 7
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=211 (p=211, expect k=21) ===
+  ord_p(A) (brute) ... 21  (0.00s)
+  k = ord_p(α) = 21
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.06s
+  Multiplet size = 14
+  RAW kurt = 1.3183
+  R_n (Haar-Hecke) kurt = 0.2477
+  Reduction factor = 5.3x
+  Churilov tail: Dict{String, Any}("sigma_min" => 0.013515702145165372, "sigma_median" => 0.12881984152854595, "sigma_max" => 0.2409987901661322, "ratio_max_over_median" => 1.8708204210352788)
+
+=== A=(2, 1, 1, 1) @ p=241 (p=241, expect k=24) ===
+  ord_p(A) (brute) ... 120  (0.00s)
+  k = ord_p(α) = 120
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.09s
+  Multiplet size = 5
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=271 (p=271, expect k=27) ===
+  ord_p(A) (brute) ... 135  (0.00s)
+  k = ord_p(α) = 135
+  Building U_A ... 0.00s
+  Eigendecomp ... 0.09s
+  Multiplet size = 4
+  Multiplet too small; SKIP Churilov probe
+=== A=(2, 1, 1, 1) @ p=311 (p=311, expect k=31) ===
+  ord_p(A) (brute) ... 155  (0.00s)
+  k = ord_p(α) = 155
+  Building U_A ... 0.01s
+  Eigendecomp ... 0.14s
+  Multiplet size = 4
+  Multiplet too small; SKIP Churilov probe
+=== v7-FIXED SUMMARY ===
+p, ord, k, m, kurt_raw, kurt_R, reduction
+4481  64  64  81   25.8776    0.0876     295.3x  (v6 reference: k=64)
+ 151  25  25   9    0.6238   -1.0876       0.6x  (p=151, expect k=15)
+ 211  21  21  12    1.3183    0.2477       5.3x  (p=211, expect k=21)
+
+Max reduction factor: k<30: 5.321274857597832x; 30<=k<60: 0x; k>=60: 295.30226553109566x
+
+VERDICT: Hecke-collapse FAILS at k < 30. R54 threshold k>=50 confirmed.

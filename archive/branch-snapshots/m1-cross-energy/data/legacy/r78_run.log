@@ -1,0 +1,13 @@
+=== N=1597: K=34 (k=17, A^17 = -I) ===
+  vectors: {(2, 'modular'): 34, (4, 'modular'): 578, (6, 'Z'): 62, (6, 'modular'): 7718, (6, 'wrap'): 6}
+  r=2: triv           68 + Z          0 + wrap        0 + modular     68 = D_N          136  (accounting ok)
+  r=4: triv        13668 + Z          0 + wrap        0 + modular  40188 = D_N        53856  (accounting ok)
+  r=6: triv      4511120 + Z      11160 + wrap     1080 + modular 30357920 = D_N     34881280  (accounting ok)
+=== N=2161: K=40 (k=20, A^20 = -I) ===
+  vectors: {(2, 'modular'): 40, (4, 'modular'): 800, (6, 'Z'): 74, (6, 'modular'): 12040, (6, 'wrap'): 6}
+  r=2: triv           80 + Z          0 + wrap        0 + modular     80 = D_N          160  (accounting ok)
+  r=4: triv        18960 + Z          0 + wrap        0 + modular  55920 = D_N        74880  (accounting ok)
+  r=6: triv      7395200 + Z      13320 + wrap     1080 + modular 49985600 = D_N     57395200  (accounting ok)
+artifact -> C:\Users\churi\OneDrive\Desktop\BGS\BGS\artifacts\r78\eps_minus.json
+total time 120.8 s
+EXIT 0

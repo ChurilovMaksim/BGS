@@ -1,0 +1,19 @@
+{
+  "audit_date": "2026-09-03",
+  "scope": "working/research corpus outside embedded archive/legacy-workspace snapshot",
+  "files": 1069,
+  "unique_sha256": 817,
+  "duplicate_groups": 224,
+  "duplicate_path_copies": 252,
+  "trust_counts": {
+    "canonical": 38,
+    "historical": 150,
+    "research": 881
+  },
+  "embedded_archive_snapshot": {
+    "tree_sha": "6c17a3536a60321f11d2e6a5b3d62b222d1bb6f6",
+    "review": "compared separately with the pristine pre-Git workspace"
+  },
+  "regenerate_full_inventory": "PYTHONDONTWRITEBYTECODE=1 python code/maintenance/audit_inventory.py",
+  "generated_output": "docs/audit/FILE_INVENTORY.generated.json (generated audit artifact; not required to be committed)"
+}

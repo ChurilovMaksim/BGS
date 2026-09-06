@@ -1,0 +1,67 @@
+{
+ "script": "src/large_m/baseline_repro_r82.py",
+ "generated": "2026-09-01T23:11:33",
+ "phase": "R87.0",
+ "designs": [
+  {
+   "N": 199,
+   "K": 11,
+   "a": 139,
+   "match": true,
+   "parity_odd": false,
+   "k0": 1,
+   "scale_c": 123,
+   "m_plus": 9,
+   "levels_checked": 198,
+   "max_abs_dev_mu4": 6.084022174945858e-14,
+   "mean_abs_dev_mu4": 1.2727193036839295e-14,
+   "wall_s": 0.5
+  },
+  {
+   "N": 3571,
+   "K": 17,
+   "a": 2469,
+   "match": true,
+   "parity_odd": false,
+   "k0": 1,
+   "scale_c": 2207,
+   "m_plus": 105,
+   "levels_checked": 3570,
+   "max_abs_dev_mu4": 2.402522625288839e-13,
+   "mean_abs_dev_mu4": 3.15746184256028e-14,
+   "wall_s": 21.0
+  }
+ ],
+ "legacy_R82_reference": [
+  {
+   "N": 199,
+   "K": 11,
+   "a": 139,
+   "match": true,
+   "parity_odd": false,
+   "k0": 1,
+   "scale_c": 123,
+   "m_plus": 9,
+   "levels_checked": 198,
+   "max_abs_dev_mu4": 6.084022174945858e-14,
+   "mean_abs_dev_mu4": 1.2727193036839295e-14
+  },
+  {
+   "N": 3571,
+   "K": 17,
+   "a": 2469,
+   "match": true,
+   "parity_odd": false,
+   "k0": 1,
+   "scale_c": 2207,
+   "m_plus": 105,
+   "levels_checked": 3570,
+   "max_abs_dev_mu4": 2.384759056894836e-13,
+   "mean_abs_dev_mu4": 3.1603167017664587e-14
+  }
+ ],
+ "verdict": {
+  "N=199": "PASS",
+  "N=3571": "PASS"
+ }
+}

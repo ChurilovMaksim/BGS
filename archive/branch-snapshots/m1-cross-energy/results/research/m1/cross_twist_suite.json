@@ -1,0 +1,188 @@
+{
+  "anchor_cases": [
+    {
+      "A_tau_d0": 51,
+      "B_l2_energy_exact_integer": 3410502105,
+      "HH_regular_mass": 132,
+      "HH_regular_mass_expected": 132,
+      "K": 13,
+      "N": 53,
+      "V4_count": 423879,
+      "a": 10,
+      "cpp_projector_max_abs_error": 3.7656180312911323e-13,
+      "cross_fraction_of_full": 0.009719720452276337,
+      "cross_gram": {
+        "computed": true,
+        "minimum_offdiag_abs": 561.3867187504484,
+        "possible_ordered_offdiag_entries": 240,
+        "significance_relative_threshold": 1e-07,
+        "significant_ordered_offdiag_entries": 240
+      },
+      "delta_vs_trivial": 0.011050266545592463,
+      "dual_implementation_comparison": {
+        "V4_count_exact": true,
+        "cross_fraction_abs_diff": 0.0,
+        "delta_abs_diff": 0.0,
+        "full_energy_abs_diff": 0.0,
+        "passed": true,
+        "regular_maxA_abs_diff": 0.0
+      },
+      "label": "historical subgroup calibration",
+      "m": 4,
+      "max_nontrivial_abs_A_regular_d_nonzero": 15.0,
+      "python_projector_max_abs_error": 2.7284841053187847e-12,
+      "regular_cross_fraction_of_full": 0.00783239078164596,
+      "regular_delta_vs_trivial": 0.008194551500102069,
+      "trace3_order_certificate": {
+        "applicable": false
+      }
+    },
+    {
+      "A_tau_d0": 197,
+      "B_l2_energy_exact_integer": 115589503389,
+      "HH_regular_mass": 90,
+      "HH_regular_mass_expected": 90,
+      "K": 11,
+      "N": 199,
+      "V4_count": 4681821,
+      "a": 63,
+      "cpp_projector_max_abs_error": 1.2005740418144095e-10,
+      "cross_fraction_of_full": 0.060053057906401815,
+      "cross_gram": {
+        "computed": true,
+        "minimum_offdiag_abs": 74.30694919598392,
+        "possible_ordered_offdiag_entries": 104652,
+        "significance_relative_threshold": 1e-07,
+        "significant_ordered_offdiag_entries": 104550
+      },
+      "delta_vs_trivial": 0.0644657332135615,
+      "dual_implementation_comparison": {
+        "V4_count_exact": true,
+        "cross_fraction_abs_diff": 1.1102230246251565e-15,
+        "delta_abs_diff": 6.106226635438361e-16,
+        "full_energy_abs_diff": 0.0,
+        "passed": true,
+        "regular_maxA_abs_diff": 7.105427357601002e-15
+      },
+      "label": "trace-3 split design",
+      "m": 18,
+      "max_nontrivial_abs_A_regular_d_nonzero": 29.0,
+      "python_projector_max_abs_error": 8.029592613409204e-11,
+      "regular_cross_fraction_of_full": 0.01385144418509711,
+      "regular_delta_vs_trivial": 0.0141658809525684,
+      "trace3_order_certificate": {
+        "K": 11,
+        "LK_minus_2_mod_N": 0,
+        "N_divides_LK_minus_2": true,
+        "applicable": true,
+        "logarithmic_lower_bound_logN_over_loglambda": 5.499973763185118
+      }
+    },
+    {
+      "A_tau_d0": 459,
+      "B_l2_energy_exact_integer": 26960554630421,
+      "HH_regular_mass": 462,
+      "HH_regular_mass_expected": 462,
+      "K": 23,
+      "N": 461,
+      "V4_count": 111147915,
+      "a": 23,
+      "cpp_projector_max_abs_error": 9.313559241400417e-10,
+      "cross_fraction_of_full": 0.009225243141060149,
+      "cross_gram": {
+        "computed": true,
+        "minimum_offdiag_abs": 609.6310909362793,
+        "possible_ordered_offdiag_entries": 159600,
+        "significance_relative_threshold": 1e-07,
+        "significant_ordered_offdiag_entries": 1026
+      },
+      "delta_vs_trivial": 0.00936501067426312,
+      "dual_implementation_comparison": {
+        "V4_count_exact": true,
+        "cross_fraction_abs_diff": 9.055256544598933e-16,
+        "delta_abs_diff": 8.656270145124267e-16,
+        "full_energy_abs_diff": 0.0,
+        "passed": true,
+        "regular_maxA_abs_diff": 4.263256414560601e-14
+      },
+      "label": "trace-3 split design / new anchor",
+      "m": 20,
+      "max_nontrivial_abs_A_regular_d_nonzero": 43.76220252608036,
+      "python_projector_max_abs_error": 9.604636996320837e-10,
+      "regular_cross_fraction_of_full": 0.0019276706500506366,
+      "regular_delta_vs_trivial": 0.0019429367268446417,
+      "trace3_order_certificate": {
+        "K": 23,
+        "LK_minus_2_mod_N": 0,
+        "N_divides_LK_minus_2": true,
+        "applicable": true,
+        "logarithmic_lower_bound_logN_over_loglambda": 6.372867127939924
+      }
+    }
+  ],
+  "implementations": {
+    "cpp17": "code/research/m1/cross_twist_energy.cpp",
+    "orchestrator": "code/research/m1/run_suite.py",
+    "python": "code/research/m1/cross_twist_energy.py"
+  },
+  "interpretation": {
+    "empirical_only": [
+      "regular-fiber 3 sqrt(N) envelope on sampled cases",
+      "observed K-scaling of full/regular energy corrections"
+    ],
+    "exact": [
+      "weighted key-table reconstruction",
+      "quotient-character projector reconstruction at tested finite N within floating tolerance",
+      "integer singular/regular B decomposition",
+      "regular quotient-coset total-mass formula"
+    ],
+    "not_claimed": [
+      "M1 asymptotic bound",
+      "cross-twist orthogonality",
+      "general BGS theorem"
+    ]
+  },
+  "purpose": "exact M1 projector/cross-twist assembly and falsifier suite",
+  "status": "ACTIVE_RESEARCH_DIAGNOSTIC_NOT_A_PROOF",
+  "suite_checks": {
+    "all_applicable_trace3_order_certificates_pass": true,
+    "all_coset_mass_identities_pass": true,
+    "all_dual_impl_anchors_pass": true,
+    "all_singular_regular_B_identities_pass": true,
+    "regular_3sqrtN_falsifier_pass_all_sampled": true
+  },
+  "sweep_rows": [
+    [11,5,5,2,0.08601632601954574,2.1504081504886434,0.01931576470588235,0.11248331981475182,2.8120829953687956,0.07807281621901313,1.507556722888818,true,0,0,true,true],
+    [29,7,7,4,0.05564140154069644,2.7264286754941254,0.046123530158785495,0.03230184823557924,1.5827905635433825,0.02964289041366533,1.7120264258353668,true,0,0,true,true],
+    [89,11,22,4,0.002853535330316249,1.3811110998730645,0.0026504792335117007,0.002593646977005221,1.255325136870527,0.002546876460116661,2.0251231062593744,true,0,0,true,true],
+    [139,65,23,6,0.003910978648833008,2.0689077052326614,0.003742002869516566,0.0019497265469620114,1.031405343342904,0.0019116859508303678,2.03565343123193,true,0,0,true,true],
+    [199,63,11,18,0.0644657332135615,7.800353718840942,0.060053057906401815,0.0141658809525684,1.7140715952607763,0.01385144418509711,2.055755494524174,true,0,0,true,true],
+    [211,34,21,10,0.007131728971263602,3.1450924763272483,0.006952128798051226,0.002044686387525712,0.901706696898839,0.002012143868370274,2.0413606228125087,true,0,0,true,true],
+    [281,39,28,10,0.003462577778938518,2.714660978687798,0.0033970210372528745,0.0010274777711650872,0.8055425725934284,0.0010148457964573422,2.0464618456742967,true,0,0,true,true],
+    [461,23,23,20,0.00936501067426312,4.95409064668519,0.009225243141060149,0.0019429367268446417,1.0278135285008154,0.0019276706500506366,2.03820897194207,true,0,0,true,true],
+    [541,174,45,12,0.0012230904283229628,2.4767581173539996,0.0012105972443122066,0.00032634919181657773,0.6608571134285699,0.0003238945563578008,2.0349946402883763,true,0,0,true,true],
+    [709,172,59,12,0.0006472446801179591,2.2530587314906154,0.0006418668162644666,0.00017640835900189025,0.61407749768558,0.00017530978531136329,2.028012568709435,true,0,0,true,true],
+    [859,278,39,22,0.0025337998374099896,3.8539095527005944,0.0025173777961752034,0.0004928790938144596,0.749669101691793,0.0004904725845905031,2.0308023809168168,true,0,0,true,true],
+    [911,69,35,26,0.00373583437418483,4.576397108376417,0.0037101736015823063,0.0007139738813657199,0.8746180046730069,0.0007109340142390777,2.0291361489519697,true,0,0,true,true],
+    [919,318,51,18,0.0011428090219709692,2.9724462661464908,0.0011362113425854767,0.0002323515955464138,0.6043465000162223,0.00023116836098068335,2.0245526736571176,true,0,0,true,true],
+    [1009,384,63,16,0.0006464251440037539,2.565661396550899,0.0006428761693097171,0.00014010023453088046,0.5560578308530646,0.00013941052466089808,2.028577172186418,true,0,0,true,true]
+  ],
+  "sweep_schema": [
+    "N",
+    "a",
+    "K",
+    "m",
+    "delta_vs_trivial",
+    "K2_delta",
+    "cross_fraction_of_full",
+    "regular_delta_vs_trivial",
+    "K2_regular_delta",
+    "regular_cross_fraction_of_full",
+    "max_regular_A_over_sqrtN",
+    "regular_3sqrtN_falsifier_pass",
+    "HH_mass_identity_error",
+    "singular_regular_B_identity_error",
+    "trace3_applicable",
+    "trace3_order_certificate_pass"
+  ]
+}

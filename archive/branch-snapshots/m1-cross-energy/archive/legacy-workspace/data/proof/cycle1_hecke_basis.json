@@ -1,0 +1,77 @@
+{
+ "script": "src/large_m/theorem_ii_extended.py",
+ "generated": "2026-09-01T16:03:36",
+ "phase": "R87.1",
+ "designs": [
+  {
+   "N": 461,
+   "K": 23,
+   "a": 23,
+   "k0": 1,
+   "parity_odd": false,
+   "m_plus": 10,
+   "qs_probed": 5,
+   "max_abs_dev_J": 0.0,
+   "max_rel_dev_J": 0.0,
+   "weil_ceiling": 0.09335178501558213,
+   "weil_ceiling_factor": 0.0,
+   "sampled": false,
+   "n_sample_pairs": 100,
+   "wall_s": 0.3
+  },
+  {
+   "N": 19489,
+   "K": 29,
+   "a": 4523,
+   "k0": 1,
+   "parity_odd": false,
+   "m_plus": 336,
+   "qs_probed": 5,
+   "max_abs_dev_J": 0.0,
+   "max_rel_dev_J": 0.0,
+   "weil_ceiling": 0.014327073949463186,
+   "weil_ceiling_factor": 0.0,
+   "sampled": false,
+   "n_sample_pairs": 112896,
+   "wall_s": 2.2
+  },
+  {
+   "N": 95419,
+   "K": 57,
+   "a": 10454,
+   "k0": 1,
+   "parity_odd": false,
+   "m_plus": 837,
+   "qs_probed": 5,
+   "max_abs_dev_J": 6.87429441225494e-13,
+   "max_rel_dev_J": 1.1750416087461921e-15,
+   "weil_ceiling": 0.006474662224820948,
+   "weil_ceiling_factor": 1.0617224765644114e-10,
+   "sampled": true,
+   "n_sample_pairs": 30,
+   "wall_s": 27.4
+  },
+  {
+   "N": 144481,
+   "K": 43,
+   "a": 100418,
+   "k0": 1,
+   "parity_odd": false,
+   "m_plus": 1680,
+   "qs_probed": 5,
+   "max_abs_dev_J": 1.4932220843409625e-12,
+   "max_rel_dev_J": 2.035756373495482e-15,
+   "weil_ceiling": 0.00526171877083903,
+   "weil_ceiling_factor": 2.837897936728485e-10,
+   "sampled": true,
+   "n_sample_pairs": 30,
+   "wall_s": 608.5
+  }
+ ],
+ "verdict": {
+  "N=461": "PASS",
+  "N=19489": "PASS",
+  "N=95419": "PASS",
+  "N=144481": "PASS"
+ }
+}

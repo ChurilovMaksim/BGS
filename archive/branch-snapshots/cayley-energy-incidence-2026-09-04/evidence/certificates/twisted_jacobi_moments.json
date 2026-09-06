@@ -1,0 +1,36 @@
+{
+  "producer": "computations/verification/twisted_jacobi_regression.py",
+  "producer_command": "python computations/verification/twisted_jacobi_regression.py",
+  "scope": "Finite reproducibility regression against preserved R82 q-curves; default CI checks the full N=199 curve and a deterministic N=3571 sample. --full-curves checks every preserved N=3571 q.",
+  "reference_inputs": {
+    "evidence/reference/r82/closed_form.json": "sha256:f0003f946e2ef2b17e00f9830534f16f9fe432749eafe325d194af0c5aa88ffa",
+    "evidence/reference/r82/q_curve_N199.npz": "sha256:6c1b8bbe82073c0c0f1d0ce1f8808a45f0117c1826e980c7c09444edc64ca893",
+    "evidence/reference/r82/q_curve_N3571.npz": "sha256:c77758459ce1a7804199e8459bab7081b009bdc702b5d0b7a528e3234a366c33"
+  },
+  "designs": [
+    {
+      "N": 199,
+      "K": 11,
+      "a": 139,
+      "reference_levels": 198,
+      "levels_checked_in_current_default": 198,
+      "matrix_dimension": 9,
+      "max_abs_mu4_deviation_current_default": 6.039613253960852e-14,
+      "absolute_tolerance": 5e-10,
+      "pass": true
+    },
+    {
+      "N": 3571,
+      "K": 17,
+      "a": 2469,
+      "reference_levels": 3570,
+      "levels_checked_in_current_default": 12,
+      "matrix_dimension": 105,
+      "max_abs_mu4_deviation_current_default": 1.9095836023552692e-13,
+      "absolute_tolerance": 5e-10,
+      "full_curve_available_with": "--full-curves",
+      "pass": true
+    }
+  ],
+  "verdict": "PASS"
+}

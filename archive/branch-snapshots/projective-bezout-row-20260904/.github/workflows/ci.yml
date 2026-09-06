@@ -1,0 +1,151 @@
+name: Scientific verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  computation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Audit repository structure and provenance
+        run: python computations/verification/repository_audit.py
+
+      - name: Compile all maintained Python without syntax warnings
+        run: python -W error::SyntaxWarning -m compileall -q computations
+
+      - name: Run exact finite regression
+        run: python computations/verification/current_regression.py
+
+      - name: Run active twisted-Jacobi regression
+        run: python computations/verification/twisted_jacobi_regression.py
+
+      - name: Regress Cayley Fourier / full Jacobi trace identity
+        run: python computations/verification/cayley_jacobi_trace_regression.py
+
+      - name: Verify committed full-Hermitian spectral diagnostics
+        run: python computations/analysis/spectral_diagnostics.py verify
+
+      - name: Recompute fixed-K Cayley exceptional-prime certificate
+        run: |
+          python computations/verification/mixed_cayley_energy.py > /tmp/cayley_fixed_k_audit.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          fresh = json.loads(Path('/tmp/cayley_fixed_k_audit.json').read_text())
+          committed = json.loads(
+              Path('evidence/certificates/cayley_fixed_k_audit.json').read_text()
+          )
+          if fresh != committed:
+              raise SystemExit(
+                  'cayley_fixed_k_audit.json is not synchronized with its exact producer'
+              )
+          print('fixed-K Cayley certificate: synchronized')
+          PY
+
+      - name: Regress prime-order uniform Cayley cutoff theorem
+        run: python computations/verification/cayley_uniform_cutoff_regression.py
+
+      - name: Regress square-resultant and Fibonacci Cayley structure
+        run: python computations/verification/cayley_resultant_fibonacci.py
+
+      - name: Regress normalized resultant collision-mass budget
+        run: python computations/verification/cayley_resultant_mass_budget.py
+
+      - name: Regress single difference-discriminant classification
+        run: python computations/verification/cayley_difference_discriminant.py
+
+      - name: Regress ratio-orbit and fourth-power discriminant structure
+        run: python computations/verification/cayley_ratio_orbit_factorization.py
+
+      - name: Regress shifted-energy Cayley orbit reduction
+        run: python computations/verification/cayley_shifted_energy_orbits.py
+
+      - name: Regress fixed-product row decomposition
+        run: python computations/verification/cayley_product_row_intersections.py
+
+      - name: Regress higher product-row subresultant obstruction
+        run: python computations/verification/cayley_product_row_subresultants.py
+
+      - name: Regress projective Bezout row support
+        run: python computations/verification/cayley_product_row_projective_bezout.py
+
+      - name: Regress multiplicative Cayley discriminant structure
+        run: python computations/verification/cayley_product_discriminant.py
+
+      - name: Regress corrected off/off elliptic spike theorem
+        run: python computations/verification/offoff_elliptic_spike_regression.py
+
+      - name: Install C++ multiprecision dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libboost-dev
+
+      - name: Build all maintained C++ verifiers
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j2
+
+      - name: Run C++ regression gates
+        run: |
+          ./build/fourth_moment_pair_key_verifier
+          ./build/cat_map_order verify
+          ./build/cayley_energy_verifier
+          ./build/cayley_fibonacci_verifier
+          ./build/cayley_direct_energy_verifier
+
+  formalization:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Audit Lean import coverage and placeholders
+        run: python computations/verification/repository_audit.py
+
+      - name: Install elan
+        run: |
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Build every active Lean module
+        run: |
+          cd formalization
+          lake build
+
+  manuscript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check committed PDF
+        run: test -s manuscript/arithmetic_cat_map_moments.pdf
+
+      - name: Install TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+
+      - name: Compile manuscript independently
+        run: |
+          mkdir -p build/manuscript
+          latexmk -pdf -interaction=nonstopmode -halt-on-error \
+            -outdir=build/manuscript manuscript/arithmetic_cat_map_moments.tex
+          test -s build/manuscript/arithmetic_cat_map_moments.pdf

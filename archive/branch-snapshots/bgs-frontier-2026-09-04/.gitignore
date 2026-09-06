@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# C/C++ build products
+build/
+*.o
+*.obj
+*.exe
+
+# Lean generated state
+formalization/.lake/build/
+formalization/.lake/packages/
+
+# LaTeX build products (PDF is intentionally versioned)
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.bcf
+manuscript/*.blg
+manuscript/*.fdb_latexmk
+manuscript/*.fls
+manuscript/*.log
+manuscript/*.out
+manuscript/*.run.xml
+manuscript/*.synctex.gz
+
+# Scratch
+scratch/
+.local/
+*.tmp
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
