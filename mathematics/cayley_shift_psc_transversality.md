@@ -1,302 +1,73 @@
 # Shift-resultant / principal-subresultant transversality
 
-**Status: EXACT + EXTERNAL-THEOREM for the field-level identity and its split-row specialization; FINITE-REGRESSION for symbolic and finite-field controls.**
+Status: exact field-level identity and squarefree split-row application, with corrected hypotheses. Finite regressions are not the proof.
 
-This note unifies two exact scalarizations of the product-row intersection
-problem:
+## Correction of the former statement
 
-- the low coefficients of the scalar shift resultant from
-  `cayley_trace_intercept_rigidity.md`;
-- the principal subresultant coefficients from
-  `cayley_principal_subresultant_support.md`.
+Squarefreeness of G=gcd(f,g) does not imply that a root of G is simple in f. The former field-level statement omitted this distinction. The counterexample
 
-The relation is local and geometric. At a point where the two fixed-degree row
-polynomials have gcd degree exactly `d`, the first nonzero shift coefficient and
-the first nonzero principal subresultant differ by an explicit factor that is a
-unit on the maintained squarefree split locus.
+    f=X^2, g=X(X-1), G=X, g_t=g+t
 
-## 1. Field-level setup
+has gcd degree one but Res(f,g_t)=t^2. The split-row application remains valid because the valid source row cofactor itself is squarefree.
 
-Let `k` be a field and let `f,g in k[T]` be monic polynomials of the same degree
-`n`. Assume
+## 1. Specialization-safe initial form
 
-```text
-G=gcd(f,g)
-```
+Let f=GA and g=GB have degrees n,m, with G monic of degree d. Put f_t=f+t phi, g_t=g+t psi, with the displayed degrees preserved. Then
 
-is monic, squarefree and has degree `d`. Write
+    Res(f_t,g_t)
+      =(-1)^(d(n-d)) Res(A,B) Res(G,A psi-B phi) t^d+O(t^(d+1)).
 
-```text
-f=G A,
-g=G B,
-gcd(A,B)=1.                                           (1)
-```
+This coefficient identity does not require G to be squarefree. If G is the gcd, the order is exactly d when the displayed coefficient is nonzero.
 
-Let
+To prove it first take generic characteristic-zero coefficients with G squarefree and coprime to A. A root y of G contributes t(A(y)psi(y)-B(y)phi(y))/A(y). The remaining roots contribute Res(A,G)Res(A,B), and Res(A,G)=(-1)^(d(n-d)) product A(y). Multiplying and cancelling proves the formula. Every coefficient below degree d vanishes. Both statements are polynomial identities with integer coefficients in the coefficients of monic G and A,B,phi,psi, so specialization proves them in arbitrary characteristic and for multiple roots. Since G is monic, the norm Res(G,A psi-B phi) is unaffected by a leading-degree drop of its second argument.
 
-```text
-g_Z(T)=g(T)+Z psi(T)+O(Z^2)                              (2)
-```
+## 2. Corrected fixed-f shift theorem
 
-be a degree-preserving deformation over `k[[Z]]`. Define
+Suppose f,g are monic of the same degree, G=gcd(f,g) is squarefree of degree d, f=GA, g=GB, gcd(A,B)=1. Assume additionally
 
-```text
-R(Z)=Res_T(f(T),g_Z(T)).                                  (3)
-```
+    gcd(A,G)=1,
+    psi(y)!=0 for every root y of G.
 
-Assume
+The first condition says precisely that the common roots are simple in f; squarefreeness of f is a sufficient stronger condition. For g_t=g+t psi+O(t^2),
 
-```text
-psi(y)!=0                                                 (4)
-```
+    ord_t Res(f,g_t)=d,
+    [t^d]Res(f,g_t)=Res(A,B)Res(A,G) product_(G(y)=0) psi(y).
 
-for every root `y` of `G` in an algebraic closure.
+In the fixed-degree monic subresultant convention this is, up to its fixed sign,
 
-The standard subresultant theorem gives
+    psc_d(f,g) Res(A,G) product psi(y).
 
-```text
-S_0=...=S_(d-1)=0,
-S_d=u Res(A,B) G                                         (5)
-```
+All factors are nonzero under the corrected hypotheses. Without gcd(A,G)=1 the formula for the degree-d coefficient remains valid, but it may vanish and is not necessarily the first nonzero coefficient.
 
-for a convention-dependent unit/sign `u` when `f,g,G` are monic. Hence
+More generally, with f fixed, let P contain the shared roots with their full multiplicities in f, and write f=P A0. When psi does not vanish at those roots, the exact order is deg P, with leading coefficient Res(A0,g)Res(P,psi). This follows from the root-product definition and does not replace multiplicities by a gcd degree.
 
-```text
-psc_d(f,g)=u Res(A,B).                                    (6)
-```
+## 3. Application to the fixed-degree product rows
 
-Only the nonzero unit convention in (6) is relevant below.
+For prime K=2m+1, use the specialization-safe maximal-real row cofactors P(T) and the target R_r(U). Normalize
 
-## 2. First nonzero shift coefficient
+    q_t(T)=alpha_r^(-m) R_r(alpha_r T+beta_r+t),
+    psi(T)=alpha_r^(-m)R_r'(alpha_r T+beta_r).
 
-The multi-root directional resultant formula from
-`cayley_inverse_resultant_transversality.md` applies with `phi=0`. For each
-common root `y`,
+At a maintained split embedding prime, alpha_r is nonzero, and both valid row cofactors are squarefree. At a common root y,
 
-```text
-J_y=f'(y) psi(y).                                         (7)
-```
+    q_0'(y)=alpha_r psi(y),
 
-### Theorem 1 (shift/PSC leading coefficient identity)
+so psi(y)!=0. All hypotheses of the corrected theorem hold. Therefore
 
-Under the hypotheses above,
+    ord_t Res(P,q_t)=deg gcd(P,q_0)=I_(1,r),
 
-```text
-ord_(Z=0) R(Z)=d,                                         (8)
-```
+and the first nonzero shift coefficient is a nonzero residue-field multiplier of the first nonzero principal subresultant.
 
-and, up to the fixed subresultant/resultant sign convention,
+Consequently the order-three locus is equivalently
 
-```text
-[Z^d]R(Z)
- = psc_d(f,g)
-   Res(A,G)
-   product_(G(y)=0) psi(y).                              (9)
-```
+    psc_0=psc_1=psc_2=0
 
-Equivalently,
+or vanishing of the first three shift coefficients. The statement is equality of split prime support, not equality of the integral contractions or of their valuations.
 
-```text
-[Z^d]R(Z) / psc_d(f,g)                                   (10)
-```
+For the inverse-ratio half-degree problem, the derivative-division proof must also accommodate a common root multiple in one input. The corrected proof is recorded in cayley_inverse_resultant_transversality.md.
 
-is a nonzero scalar whenever `f` is squarefree and (4) holds.
+## 4. Evidence and boundary
 
-### Proof
+The original finite tests in computations/verification/cayley_shift_psc_transversality.py remain finite controls for their actual squarefree examples. The new negative example above prevents reinstating the overbroad statement. The initial-form identity is also checked by explicit Sylvester determinants, independently of a resultant shortcut, in the current research packet.
 
-The general multi-root coefficient formula gives
-
-```text
-[Z^d]R(Z)
- =Res(A,G) Res(A,B)
-  product_y J_y/f'(y).                                   (11)
-```
-
-Substitute `J_y=f'(y)psi(y)` and use (6). The hypotheses make every factor in
-(9) nonzero, so the zero order is exactly `d`. `□`
-
-This is a field-level identity. It makes no number-theoretic claim about the
-size of the nonzero multiplier in characteristic zero.
-
-## 3. Specialization to the product-row shift
-
-For an odd prime `K=2m+1`, use the specialization-safe maximal-real row
-cofactors
-
-```text
-P(T), Q(T) in O^+[T],
-O^+=Z[tau].                                               (12)
-```
-
-For normalized ratio `r`, write the target cofactor in its natural target
-coordinate as a monic polynomial `R_r(U)`. The row shift is
-
-```text
-Q_Z(T)=R_r(alpha_r T+beta_r+Z).                          (13)
-```
-
-Its leading coefficient in `T` is the `Z`-independent unit `alpha_r^m` at every
-split prime away from `K`. Normalize
-
-```text
-q_Z(T)=alpha_r^(-m) Q_Z(T)                               (14)
-```
-
-so that `q_0` is monic. Then
-
-```text
-psi(T)=d/dZ q_Z(T)|_0
-      =alpha_r^(-m) R_r'(alpha_r T+beta_r).              (15)
-```
-
-At a common root `y` of `P` and `q_0`,
-
-```text
-q_0'(y)=alpha_r psi(y).                                  (16)
-```
-
-For every maintained split embedding prime:
-
-- `alpha_r` is nonzero;
-- the valid target cofactor is squarefree;
-- therefore `q_0'(y)!=0` and hence `psi(y)!=0`.
-
-### Corollary 2 (row-stratum transversality)
-
-Let a split embedding prime `q` satisfy
-
-```text
-d=I_(1,r)(q)=deg gcd(P,q_0 mod q).                       (17)
-```
-
-Then
-
-```text
-ord_(Z=0) Res(P,q_Z)=d,                                  (18)
-```
-
-and the first nonzero shift coefficient satisfies
-
-```text
-c_d
- = unit_q * psc_d(P,q_0)                                (19)
-```
-
-in the residue field, where `unit_q` is explicitly
-
-```text
-unit_q
- =+-Res(A,G) product_(G(y)=0) psi(y) !=0.                (20)
-```
-
-Thus the shift-resultant and principal-subresultant coordinates are transverse
-coordinate systems on the same fixed-degree gcd stratum.
-
-This gives a mechanism-level explanation for the exact support equality
-between `Omega` and `Pi`; it is stronger than merely observing that both
-criteria encode the same gcd degree.
-
-## 4. Consequences for the first strata
-
-At a split embedding prime:
-
-### gcd degree zero
-
-```text
-psc_0!=0,
-c_0!=0.                                                   (21)
-```
-
-### gcd degree one
-
-```text
-psc_0=c_0=0,
-psc_1!=0,
-c_1!=0,
-
-c_1=unit_q*psc_1.                                         (22)
-```
-
-### gcd degree two
-
-```text
-psc_0=psc_1=c_0=c_1=0,
-psc_2!=0,
-c_2!=0,
-
-c_2=unit_q*psc_2.                                         (23)
-```
-
-### gcd degree at least three
-
-```text
-psc_0=psc_1=psc_2=0,
-c_0=c_1=c_2=0.                                            (24)
-```
-
-Hence the order-three event is the common zero locus of either triple, and the
-first nonzero coordinate immediately after each lower stratum differs only by
-a residue-field unit.
-
-## 5. Relation to the inverse transversality theorem
-
-For `r=-1`, reflection changes variables to
-
-```text
-F(X)=E(X^2)+X O(X^2),
-rho(Z)=Res(E_Z,O_Z).                                      (25)
-```
-
-The inverse note proves the more explicit degree-one formula
-
-```text
-rho'(0)
- =+-Res(E/(Y-y),O/(Y-y))
-   [E'(y)^2-yO'(y)^2].                                   (26)
-```
-
-This is exactly Theorem 1 with the local shift multiplier evaluated in closed
-form. The squarefree Jacobian
-
-```text
-E'(y)^2-yO'(y)^2=-F'(z)F'(-z)/(4y)                       (27)
-```
-
-is the inverse specialization of the general nonzero unit in (20).
-
-## 6. Finite regression
-
-`computations/verification/cayley_shift_psc_transversality.py` checks two
-independent mechanisms.
-
-1. Generic exact monic integer-polynomial examples with gcd degree `1` and `2`
-   verify the coefficient identity (9) against a directly expanded resultant.
-2. Split cyclotomic row examples compare gcd degree, the first nonzero shift
-   coefficient and the first nonzero PSC modulo the split prime.
-
-Maintained finite controls include strata of degrees `0`, `1`, `2` and `>=3`.
-The finite checks are not the proof of Theorem 1.
-
-## 7. Arithmetic limitation and next target
-
-Equation (19) is a **residue-field unit relation at the first nonzero stratum**.
-It does not imply equality of the integral contractions `Pi` and `Omega`, and
-finite anchors already disprove such equality of valuations.
-
-The order-three arithmetic problem remains simultaneous divisibility of the
-three lower coordinates. The value of the theorem is structural: it shows that
-`Pi` and `Omega` are two transverse coordinate systems for one determinantal
-stratification, so future common-divisor work should be phrased intrinsically in
-terms of the Sylvester/Fitting module rather than treating the two triples as
-unrelated integers.
-
-A high-value next step is to exploit identities among consecutive principal
-Sylvester minors (Desnanot--Jacobi / subresultant PRS / Bezoutian identities) to
-control the common split prime divisors of
-
-```text
-psc_0, psc_1, psc_2.                                     (28)
-```
-
-Bounding any one of their norms separately cannot close the largest-prime
-target.
+These are local algebraic identities. They do not control the largest split rational prime dividing the lower coefficient ideal, do not remove the growing-K arithmetic bottleneck, and do not prove microscopic BGS universality.
