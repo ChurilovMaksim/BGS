@@ -29,6 +29,31 @@ historical container; it is not re-encoded through the GitHub connector because
 large binary/base64 transport can be truncated. The maintained sources and all
 divergent Git branch trees are preserved directly in `main`.
 
+Install Python dependencies and run the structural/build graph gate first:
+
+```sh
+python -m pip install -r requirements.txt
+python computations/verification/repository_audit.py
+```
+
+Build every maintained C++ verifier and execute the complete maintained
+Python/C++ verification surface with hashed logs:
+
+```sh
+cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
+cmake --build build/cmake --parallel
+python computations/maintenance/verify_workspace.py \
+  --build build/cmake \
+  --logs build/verification-logs \
+  --output build/workspace-verification.json
+```
+
+Build every active Lean module:
+
+```sh
+(cd formalization && lake build)
+```
+
 Build the canonical manuscript without publishing into the source tree:
 
 ```sh
@@ -42,15 +67,10 @@ To publish a locally verified PDF explicitly:
 python computations/maintenance/build_unified_manuscript.py --publish
 ```
 
-Run the structural gate and language/build checks with:
-
-```sh
-python computations/verification/repository_audit.py
-python computations/maintenance/verify_workspace.py
-cmake -S . -B build/cmake
-cmake --build build/cmake --parallel
-(cd formalization && lake build)
-```
+The final reconstructed manuscript check recorded in
+`record/final_manuscript_build_20260906.json` completed three TeX passes with
+no forbidden warnings, unchanged TeX inputs and 93 pages. That check is
+manuscript-build evidence, not full-repository CI or a mathematical proof audit.
 
 The GitHub Actions attempts observed during finalization did not receive a
 runner (`runner_id=0`, no executed steps), so this file does not claim a green
