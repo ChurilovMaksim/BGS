@@ -1,0 +1,134 @@
+\section{Exact finite spectra for arbitrary hyperbolic matrices}
+\label{sec:general-spectra}
+The following finite character argument is independent of the Gaussian and
+normal-form arguments below. In particular it does not assume a split torus
+or a prime Hilbert-space dimension. This section reconciles the positive- and
+negative-trace notes using one sign convention.
+
+\subsection{A fixed-point-free cyclic action}
+Let $N\geq3$ and $q\geq3$ be odd integers, and suppose
+$A\in\mathrm{SL}(2,\mathbb Z/N\mathbb Z)$ satisfies
+\begin{equation}\label{eq:general-free}
+ A^q=I,\qquad \det(A^j-I)\in(\mathbb Z/N\mathbb Z)^\times
+                      \quad(0<j<q).
+\end{equation}
+Use modular-centred Weyl operators $W(v)$ and $R\psi(x)=\psi(-x)$.
+The assignment $W(v)\mapsto W(Av)$ is a $*$-automorphism of the full matrix
+algebra, since it preserves the Weyl product and adjoint. It is implemented
+by a unitary $U$, unique up to a scalar; this follows by mapping a complete
+system of matrix units. No field hypothesis is required.
+
+\begin{theorem}[Uniform parity sector]\label{thm:uniform-sector}
+Under \eqref{eq:general-free}, $N\equiv c\pmod q$ for exactly one
+$c\in\{1,-1\}$. A scalar normalization of $U$ gives $U^q=I$ and
+\[
+ \operatorname{Tr}(RU^j)=1\quad\hbox{for every }j,\qquad
+ \operatorname{Tr}U^j=c\quad(q\nmid j).
+\]
+On $\mathcal H_c=\operatorname{ran}((I-cR)/2)$, every $q$th root has the same
+multiplicity $n=(N-c)/(2q)$, and $\dim\mathcal H_c=(N-c)/2$.
+On the complementary parity sector the multiplicities are $n$ at nontrivial
+roots and $n+c$ at the root $1$.
+\end{theorem}
+\begin{proof}
+Conjugation by $U^j$ permutes the Weyl basis. Its trace is consequently the
+number of fixed Weyl indices, while the trace of conjugation by a unitary V
+is $|\operatorname{Tr}V|^2$. Thus
+\[
+ |\operatorname{Tr}U^j|^2=1\quad(0<j<q),\qquad
+ |\operatorname{Tr}(RU^j)|^2=1\quad\hbox{for all }j.
+\]
+For the second identity, a vector with $A^jv=-v$ is zero: applying the
+relation $q$ times gives $v=-v$ and $2$ is a unit. The same argument modulo
+each prime divisor of N proves invertibility, including prime powers.
+The operators $RUR$ and U implement the same covariance. Their scalar ratio
+is one because $\operatorname{Tr}U\ne0$. Normalize $U^q=I$.
+
+Let $b_l$ be the difference between the even and odd multiplicities of the
+$l$th root. Fourier inversion for the virtual cyclic character
+$\operatorname{Tr}(RU^j)$ gives $b_l\in\mathbb Z$,
+$\sum_l b_l^2=1$, and $\sum_l b_l=\operatorname{Tr}R=1$.
+Exactly one coefficient is one. A further root-of-unity scalar puts it at
+$l=0$. Hence $\operatorname{Tr}(RU^j)=1$ for every j.
+For the full multiplicities $m_l$, Parseval yields
+\[
+ \sum_lm_l=N,\qquad \sum_lm_l^2=(N^2+q-1)/q.
+\]
+Write $N=qk+r$, $0\leq r<q$. The least sum of squares of q integers with
+this sum is $qk^2+2kr+r$: moving a pair which differs by two or more closer
+together reduces its squared sum. It follows that $r(q-r)\leq q-1$.
+Integrality also forces $r^2\equiv1\pmod q$, so $r\ne0$; therefore
+$r=1$ or $q-1$. For either residue the squared-sum minimum is attained.
+All $m_l$ equal $(N-c)/q$ except one, which differs by c. Since $(N-c)/q$
+is even and $b_0=1$, that exception must be at zero. Splitting by the already
+known parity differences gives the claimed formulas.
+\end{proof}
+
+\subsection{An explicit sequence, including negative trace}
+Let now $A\in\mathrm{SL}(2,\mathbb Z)$ be hyperbolic, put
+$a=|\operatorname{tr}A|\geq3$, $s=\operatorname{sgn}(\operatorname{tr}A)$,
+and let $u_0=0,u_1=1,u_{j+1}=a u_j-u_{j-1}$. For every odd prime $K>3$
+not dividing $a-2s$, set
+\begin{equation}\label{eq:general-moduli}
+ m=(K-1)/2,\qquad N_K=u_{m+1}+s u_m,\qquad
+ c_K=\left(\frac{a-2s}{K}\right).
+\end{equation}
+Here the last expression is a Legendre symbol, not an eigenvalue of A.
+Then $N_K$ is odd and
+\begin{equation}\label{eq:general-identity}
+ A^K-I=s^mN_K A^m(A-I).
+\end{equation}
+Moreover $\gcd(N_K,a-2s)=1$, so Theorem~\ref{thm:uniform-sector} applies
+with $q=K$ and sign $c=c_K$.
+
+Here are details of the signed extension. Put $B=sA$, of trace a. Summing
+$A^j=s^jB^j$ symmetrically around m and using Cayley--Hamilton yields
+$\sum_{j=0}^{K-1}A^j=s^mN_KA^m$, proving
+\eqref{eq:general-identity}. For $s=1$, the polynomial $N_K(a)$ evaluates
+to K at a=2. For $s=-1$, it evaluates to $(-1)^mK$ at a=-2.
+These evaluations prove the gcd assertion under the stated exclusion.
+Modulo 2, the recurrence is alternating when a is even and has period three
+when a is odd; the only obstruction is $K=3$, already excluded.
+If $A^jv=v$ modulo a prime dividing $N_K$ with $0<j<K$, Bezout applied
+to j,K and \eqref{eq:general-identity} gives $Av=v$. Invertibility of $A-I$
+then gives $v=0$. Thus all required determinants are units.
+
+The sign can be evaluated without a square root modulo $N_K$. For positive
+trace the integer polynomial identity
+\[
+ N_K(t)=2^{1-K}\sum_{\substack{1\leq j\leq K\\j\text{ odd}}}
+ \binom Kj(t+2)^{(K-j)/2}(t-2)^{(j-1)/2}
+\]
+gives $N_K(t)\equiv(t-2)^{(K-1)/2}\pmod K$. For negative trace apply
+it at $t=-a$ and use $N_K^{(+)}(-a)=(-1)^mN_K^{(-)}(a)$.
+Euler's criterion proves \eqref{eq:general-moduli}. With
+$\lambda=(a+\sqrt{a^2-4})/2$ one also obtains
+\[
+ N_K=\frac{\lambda^{K/2}-s\lambda^{-K/2}}{\sqrt{a-2s}},
+ \qquad K\asymp\log N_K.
+\]
+For trace four and $K=11$, $N_K=989=23\cdot43$, $c=-1$:
+the uniform sector is even, of dimension 495 and multiplicity 45.
+The discriminant 12 is a square modulo 23 and a nonsquare modulo 43.
+For trace $-6$ and $K=7$, $N_K=169=13^2$, $c=1$:
+the uniform odd sector has dimension 84 and multiplicity 12. These examples
+require neither a split characteristic polynomial nor squarefreeness.
+
+\subsection{The characteristic for general integer covariance}
+The physical lift $Q_N(a,b)=(-1)^{ab}W_N(a,b)$ used for T is not invariant
+under every integer symplectic matrix. For general A use instead
+\[
+ Q_N^*(a,b)=(-1)^{ab+a+b}W_N(a,b).
+\]
+The function $ab+a+b$ modulo two equals one on all three nonzero vectors,
+so it is invariant under $\mathrm{SL}(2,\mathbb F_2)$. Therefore
+\[
+ Q_N^*(v)Q_N^*(w)=e^{\pi i\omega(v,w)/N}Q_N^*(v+w),\qquad
+ U_NQ_N^*(v)U_N^*=Q_N^*(Av).
+\]
+This is an explicit quantization convention, not a claim that the old and
+new finite matrices coincide. The additional sign represents a fixed
+half-torus translation of symbols. Parity still corresponds to $x\mapsto-x$.
+The locality and return-word arguments later in the paper work verbatim with
+this characteristic and any such A once their finite support towers are
+chosen. The associated classical map is $S=A^{\mathsf T}$.

@@ -1,0 +1,80 @@
+\section{Smooth residual kicks and a quantified compensation}\label{sec:smooth_residual}
+Use the physical Weyl convention, fixed index action T, Pell moduli and normalized traces of the \hyperref[sec:smooth]{smooth recurrence theorem}. Let g be real \(C^7\), let f be real mean-zero \(C^6\), and put \[
+ d=\mathcal Cg=g\circ T^{\mathsf T},\qquad
+ r_g=\frac1{4\pi}\{g,d\},\qquad
+ \{g,d\}=\partial_1g\partial_2d-\partial_2g\partial_1d.          \tag{SC.R1}
+\] The symbol \(r_{g}\) has mean zero and is \(C^6\). Write \(A=A_N(g)\), \(D=A_N(d)=U_0AU_0^*\), \(F=A_N(f)\), \(R=A_N(r_g)\), and consider \[
+ \mathcal V_{\varepsilon,\eta}
+       =e^{i[\varepsilon(A-D)+\eta F]}U_0.                    \tag{SC.R2}
+\] Set \(a_K=\sqrt K\eta_K\) and \(t_K=\sqrt K\varepsilon_K^2/N\).
+
+\textbf{Theorem A (smooth joint crossover).} If \(a_K\to a\in\mathbb R\) and \(t_K\to t\geq0\), then for every fixed integer m, \[
+ \boxed{\tau_N(\mathcal V_{\varepsilon_K,\eta_K}^{mK})
+      \longrightarrow\exp[-m^2\sigma_{af+tr_g}^2/2].}         \tag{SC.R3}
+\] For inversion-even f and g the same holds on the odd sector. The variance is \[
+ \sigma_{af+tr_g}^2=a^2\sigma_f^2+2at\,\Gamma(f,r_g)
+                         +t^2\sigma_{r_g}^2,                 \tag{SC.R4}
+\] where Gamma is the polarized Green--Kubo form. Its cross term need not vanish. Thus the sum of two variances from the special three-orbit example is not a universal rule. The resulting Kth-power law is wrapped normal, including its degenerate zero-variance case. No independence of finite spectra is assumed.
+
+\textbf{Theorem B (compensated pinning).} Define the distinct, engineered family \[
+ \mathcal V^{\rm comp}_\varepsilon
+   =\exp\{i[\varepsilon(A-D)-\varepsilon^2 R/N]\}U_0.          \tag{SC.R5}
+\] There are explicit finite constants \(C_g,D_g\), independent of N,K, such that for every real \(\varepsilon\) \[
+ \boxed{\|e^{-i\varepsilon A}\mathcal V^{\rm comp}_\varepsilon
+             e^{i\varepsilon A}-U_0\|_{\rm op}
+        \leq C_g|\varepsilon|^3/N^2+D_g\varepsilon^2/N^3.}     \tag{SC.R6}
+\] Consequently, if \(|\varepsilon_K|=o(N^{2/3}K^{-1/3})\), all fixed recurrence traces tend to one. The globally unfolded neighbouring spacings tend weakly to \(\delta_{0}\) and normalized close-pair counts diverge at every fixed positive microscopic distance, on full space or either applicable parity sector. This statement preserves multiplicities and uses global mean spacing. It is not a universality claim after clusterwise unfolding.
+
+\subsection{Exact commutator estimates from Fourier moments}\label{smooth_residual:exact-commutator-estimates-from-fourier-moments}
+
+For h define \(M_j(h)=\sum_v|v|^j|\widehat h(v)|\). The moments through j=3 of g and d are finite under the stated regularity. The physical Weyl multiplication is exactly \(W^{\rm ph}(v)W^{\rm ph}(w)=e^{\pi i\omega(v,w)/N}W^{\rm ph}(v+w)\), even when indices must be reduced modulo N. Therefore \[
+ \|[A_N(h),A_N(k)]\|_{\rm op}
+                  \leq(2\pi/N)M_1(h)M_1(k).                 \tag{SC.R7}
+\] The Fourier coefficient of \(r_{g}\) is \(-\pi\sum_{v+w=z}\omega(v,w)\widehat g(v)\widehat d(w)\). Since \(|\sin x-x|\leq|x|^3/6\) for all real x, \[
+ \|[A,D]+(2i/N)R\|_{\rm op}
+          \leq\frac{\pi^3M_3(g)M_3(d)}{3N^3}.               \tag{SC.R8}
+\] This fixes both the sign and the factor \(1/(4\pi)\) in (SC.R1). Moreover, with \(H_*=M_2(g)M_1(d)+M_1(g)M_2(d)\), \[
+ \|[A,[A,D]]\|\leq L_A/N^2,\quad
+ \|[D,[A,D]]\|\leq L_D/N^2,
+ \quad L_A=4\pi^2M_1(g)H_*,\quad L_D=4\pi^2M_1(d)H_*.        \tag{SC.R9}
+\] For example a term with three frequencies u,v,w is bounded by \(4\pi^2|u||v||w|(|v|+|w|)/N^2\) times its coefficient product. Summing proves (SC.R9), so no unbounded pseudodifferential remainder is being assumed.
+
+\subsection{Uniform loop and the mixed error budget}\label{smooth_residual:uniform-loop-and-the-mixed-error-budget}
+
+The three-factor unitary Duhamel lemma in the \hyperref[sec:coboundary]{residual note} gives, for all real \(\varepsilon\), \[
+ \|e^{-i\varepsilon A}e^{i\varepsilon(A-D)}e^{i\varepsilon D}
+                         -e^{-\varepsilon^2[A,D]/2}\|
+  \leq|\varepsilon|^3(L_A/2+L_D/6)/N^2.
+\] Combining with (SC.R8) yields \[
+ \|e^{-i\varepsilon A}e^{i\varepsilon(A-D)}e^{i\varepsilon D}
+                           -e^{i\varepsilon^2R/N}\|
+ \leq C_3|\varepsilon|^3/N^2+C_2\varepsilon^2/N^3,             \tag{SC.R10}
+\] where \(C_3=L_A/2+L_D/6\) and \(C_2=\pi^3M_3(g)M_3(d)/6\). The estimates do not require \(|\varepsilon|\|A\|\) small.
+
+Split (SC.R2) into \(e^{i\eta F}e^{i\varepsilon(A-D)}U_0\) by the two-factor bound. Its cost is at most \(\pi|\varepsilon\eta|M_1(f)(M_1(g)+M_1(d))/N\). Under the gauge, the first factor becomes \(e^{i\eta\operatorname{Ad}_{e^{-i\varepsilon A}}F}\). Replacing it by \(e^{i\eta F}\) costs at most \(2\pi|\varepsilon\eta|M_1(g)M_1(f)/N\) by integrating the conjugation. Finally join it to \(e^{i\varepsilon^2R/N}\) using (SC.R7). Hence \[
+ \|e^{-i\varepsilon A}\mathcal V_{\varepsilon,\eta}e^{i\varepsilon A}
+                -e^{iA_N(\eta f+\varepsilon^2 r_g/N)}U_0\|
+ \leq E_N,                                                    \tag{SC.R11}
+\] \[
+ E_N=C_3|\varepsilon|^3/N^2+C_2\varepsilon^2/N^3
+   +\pi M_1(f)(3M_1(g)+M_1(d))|\varepsilon\eta|/N
+   +\pi M_1(f)M_1(r_g)|\eta|\varepsilon^2/N^2.
+\] The moment \(M_1(r_g)\) is finite; directly it is at most \(\pi H_*\). For bounded \(a_{K}\),\(t_{K}\), \(KE_N=O(K^{1/4}/\sqrt N)+O(1/N)\) and tends to zero.
+
+The effective symbol is \((a_K f+t_K r_g)/\sqrt K\). The smooth recurrence proof is uniform over bounded coefficients in the fixed two-dimensional span of f and \(r_{g}\): its Fourier bounds are uniform, and its fixed-cutoff characteristic-function argument allows converging coefficient vectors. It therefore applies without the invalid telescoping estimate \(\sqrt K|a_K-a|\). Telescoping (SC.R11) mK times and then using that uniform proof establishes (SC.R3)--(SC.R4).
+
+\subsection{Why compensation extends the pinning range}\label{smooth_residual:why-compensation-extends-the-pinning-range}
+
+For (SC.R5) take \(f=r_g\) and \(\eta=-\varepsilon^2/N\) in the preceding factorization. After replacing the gauged R by R, the two exponentials involving R cancel exactly. There is no joining error and no term of order \(\varepsilon^4/N^3\). Thus (SC.R6) holds with \[
+ C_g=C_3+\pi M_1(r_g)(3M_1(g)+M_1(d)),\qquad D_g=C_2.
+\] If \(\varepsilon=o(N^{2/3}K^{-1/3})\), K times the bound tends to zero. For the second term this also follows directly from \(K\varepsilon^2/N^3=o(K^{1/3}/N^{5/3})\); the zero or very small \(\varepsilon\) case needs no division by \(\varepsilon\).
+
+Normal-matrix spectral inclusion puts every eigenvalue of the gauged propagator within this operator-norm error of a Kth root of unity. Circle distance in R/Z is at most one quarter of chord distance. Hence its RMS lattice distance q obeys Kq tending to zero; K/d also tends to zero on each specified spectral space. The lattice concentration lemma (source file: \path{pell_microscopic_clustering.md}), whose proof is purely geometric, gives the spacing and pair-count conclusions in Theorem B. Alternatively unitary telescoping immediately proves the recurrence-trace statement.
+
+This is a larger quantum-exponent range than \(\sqrt N K^{-1/4}\), but only for the explicitly compensated family, not the original unchanged perturbation. With \(\kappa=\varepsilon/N\), its exponent is \(N[\kappa(g-\mathcal Cg)-\kappa^2r_g]\). Thus the extra term is a specified second-order classical correction. The classical strength still tends to zero, of order \(o(N^{-1/3}K^{-1/3})\), and is not a fixed perturbation.
+
+\subsection{Consistency example and verification}\label{smooth_residual:consistency-example-and-verification}
+
+For \(g=2\cos(2\pi x_1)\), direct differentiation gives \(r_g=4\pi(B_{(2,4)}-B_{(4,4)})\) at the symbol level. Its variance is \(64\pi^2\), recovering the special residual parameter b=8pi t. For an ordinary mode f on the original orbit the covariance is zero, recovering (SC.R4) as a sum of two terms. In contrast f=\(r_{g}\) gives \(\sigma_{af+tr_g}^2=(a+t)^2\sigma_{r_g}^2\) and the cancellation line a=-t. An ordinary term cannot universally be treated as independent noise.
+
+The verifier uses a finite multimode real g including an odd-ab frequency, constructs \(r_{g}\) by exact rational Fourier convolution before multiplying by \(\pi\), and checks the physical Weyl sign, Egorov covariance, (SC.R8)--(SC.R11), and compensated pinning by dense matrix calculations. These are numerical falsification tests of finite identities and bounds, not an asymptotic proof. The analytic regularity and cutoff arguments above are not formalized in Lean. Neither compensation nor the known residual mechanism is presented as a newly invented general principle.

@@ -1,0 +1,71 @@
+\section{Infinite Fourier tails and a smooth recurrence law}\label{sec:smooth}
+Let \(f:\mathbb T^2\to\mathbb R\) have mean zero and Fourier coefficients satisfying, for some \(p>5\), \[
+ |\widehat f(v)|\leq C_f(1+|v|)^{-p}.                         \tag{SR.S1}
+\] In particular every real mean-zero \(C^6\) function satisfies (SR.S1), with p=6, by applying three Laplacians in Fourier space. Use the fixed index action \(T=\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)\) and its Pell quantizations, as in the \hyperref[sec:finite_fourier]{finite-alphabet proof}. The dual classical action is \(\mathcal Cf(x)=f(T^{\mathsf T}x)\). Define the physical centered quantization by the absolutely convergent series \[
+ A_N(f)=\sum_{v=(a,b)\in\mathbb Z^2}\widehat f(v)(-1)^{ab}W_N(v),
+ \qquad U_{N,f}(\tau)=e^{i\tau A_N(f)/\sqrt K}U_0.              \tag{SR.S2}
+\] The factor \((-1)^{ab}\) converts modular-half Weyl operators to the physical centered convention. Since T is the identity modulo two, it is constant on each T-orbit. Egorov covariance and Hermiticity are exact.
+
+Let O run through the oriented nonzero T-orbits in \(\mathbb Z^2\) and put \[
+ \sigma_f^2=\sum_O\left|\sum_{v\in O}\widehat f(v)\right|^2
+          =\sum_{n\in\mathbb Z}\int_{\mathbb T^2}f(x)
+                                      (\mathcal C^nf)(x)\,dx. \tag{SR.S3}
+\] Both series converge absolutely: each ordered pair of nonzero frequencies can correspond to at most one shift n, and the Fourier coefficients are absolutely summable. Formula (SR.S3) is nonnegative. For real inversion-even f it is equivalently \(2\sum_{\text{signed }O}(\sum_{v\in O}a_v)^2\) in cosine coefficients with one representative of each pair v,-v.
+
+\textbf{Theorem (smooth recurrence law).} For every fixed real \(\tau\) and integer m, \[
+ \boxed{\frac1N\operatorname{Tr}U_{N,f}(\tau)^{mK}
+                  \longrightarrow e^{-m^2\tau^2\sigma_f^2/2}.} \tag{SR.S4}
+\] If f is inversion-even, the same conclusion holds on the odd subspace with normalized trace \(\tau_-\) and dimension \((N-1)/2\). The Kth-power empirical spectral measure tends to the wrapped normal law of variance \(\tau^2\sigma_f^2\). Zero variance gives a point mass, not a nondegenerate normal law. The theorem applies to each fixed f, not uniformly over an unbounded smoothness ball.
+
+\subsection{Fourier tails and bounded-orbit reduction}\label{smooth:fourier-tails-and-bounded-orbit-reduction}
+
+Take \(f_R=\sum_{0<|v|\leq R}\widehat f(v)e^{2\pi iv\cdot x}\). The quantization tail has operator norm at most its Fourier l1 norm, hence \[
+ \|A_N(f-f_R)\|_{\rm op}\leq C'_f R^{2-p}.                   \tag{SR.S5}
+\] For K steps at strength \(\tau/\sqrt K\), telescoping thus costs \(C_{f,m,\tau}\sqrt K R^{2-p}\). A fixed cutoff is insufficient for this propagator comparison. This is why a growing cutoff must be justified.
+
+Choose one minimal-norm integral representative in every signed orbit meeting the ball of radius R. The representative lies in that ball, and all its two real embeddings are bounded by \(M_R=2\max(1,R)\). For any two frequencies in that orbit and ball, the difference of their indices is \(O(\log(2R))\). Indeed their \(\beta\) values have absolute values between \(1/M_R\) and \(M_R\), since their nonzero integer norms have absolute value at least one. Their ratio is a power of \(\lambda\). The same bound holds for negative powers by exchanging the two points.
+
+Intermediate orbit points between two such endpoints stay in the ball: \(|T^tv|^2=A\lambda^{2t}+B\lambda^{-2t}+C\), with A,B positive, is convex in real t. Thus the orbitwise telescoping construction gives exactly \[
+ A_N(f_R)=Q_R+g_R-\operatorname{Ad}_{U_0}(g_R),                 \tag{SR.S6}
+\] where \(Q_{R}\) uses one signed-orbit representative, has coefficient l1 norm bounded in terms of f, has at most \(S_R=O(R^2)\) species, and \(\|g_R\|_{\rm Fourier\ l1}=O_f(\log(2R))\). Its frequencies have size \(O(R)\). These assertions also hold for complex Fourier coefficients paired with their conjugates, since the physical parity sign is constant on orbits.
+
+Commutators of two Fourier sums with frequencies of size O(R) have norm at most \(C R^2/N\) times the product of their coefficient l1 norms. This follows from the exact Weyl commutator and \(|\sin x|\leq|x|\); it remains true for modular half-exponents, including odd determinants. Using the two-factor Duhamel estimate twice in (SR.S6), the gauge \(e^{-ixg_R}\) removes the coboundary with error \(O_f(x^2R^2\log^2(2R)/N)\), for every real x.
+
+\subsection{Uniform normal form for the growing representative alphabet}\label{smooth:uniform-normal-form-for-the-growing-representative-alphabet}
+
+In the finite-alphabet lemma take \(B_R=O(\log(2R))\) with \(\lambda^{B_R}>16M_R^2\), and \(J_R=[2S_R(6B_R+1)]^2=O(R^4\log^2(2R))\). Its four-atom lifting condition holds for all sufficiently large K whenever R is a fixed power of K, since \(\lambda^{\lceil K/4\rceil}\) dominates \(R^2\). The phase bounds give \(L_K,W_K=O(R^2)\).
+
+The sharper Hilbert--Schmidt estimate uses \(\|r\|_2^2\), not \(S_R\|r\|_\infty^2\). Since \(\|r\|_2\leq\|r\|_1=O_f(1)\), formula (7) of the finite-alphabet proof, at \(x=\tau/\sqrt K\) and after mK steps, costs \[
+ O_{f,m,\tau}\left(\frac{R^2}{K}+
+                         \frac{R^3\log(2R)}{\sqrt K}\right). \tag{SR.S7}
+\] The period average of the coboundary vanishes exactly. Thus the target after both gauges is \(\exp(i m\tau\sqrt K\,\overline {A_N(f_R)})\). Combining (SR.S5)--(SR.S7) yields the fully specified finite comparison \[
+ \begin{split}
+ &\left|\tau\bigl(U_{N,f}(\tau_0)^{mK}\bigr)
+       -\tau\bigl(e^{im\tau_0\sqrt K\overline {A_N(f_R)}}\bigr)\right|\\
+ &\quad\leq C_{f,m,\tau_0}\left[
+ \sqrt K R^{2-p}+\frac{R^2}{K}+\frac{R^3\log(2R)}{\sqrt K}
+                       +\frac{R^2\log^2(2R)}N\right].
+ \end{split} \tag{SR.S8}
+\] Here \(\tau\) without a subscript on an operator means either normalized trace; \(\tau_{0}\) is the fixed real kick parameter. This notation avoids confusing the trace with that parameter. Choose \(R=K^{1/(p+1)}\). Then the right side is \[
+ O_{f,m,\tau_0}\left(K^{-(p-5)/(2(p+1))}\log K\right),         \tag{SR.S9}
+\] up to an exponentially small term. For p=6 the exponent is 1/14. This is a comparison rate, not a claimed rate for the final Gaussian limit.
+
+\subsection{Exact second moments close the approximation argument}\label{smooth:exact-second-moments-close-the-approximation-argument}
+
+One must not insert the growing alphabet directly into a fixed-moment CLT without controlling its constants. Instead use a separate uniform second moment and a two-limit argument.
+
+For any real Fourier polynomial h supported in the radius-R ball, once the two-atom lifting condition holds and \(\log R=o(K)\), \[
+ \tau_N\left((\sqrt K\,\overline {A_N(h)})^2\right)
+       =\sum_O\left|\sum_{v\in O}\widehat h(v)\right|^2
+       =\sigma_h^2\leq\|\widehat h\|_1^2.                    \tag{SR.S10}
+\] To verify it, expand the squared average in the full Weyl basis. A congruence \(T^jv=T^kw\) lifts, after cutting between its two labels, to a true signed orbit relation. The true time offset is \(O(\log R)\), so it has exactly one representative modulo K; each such offset supplies K ordered time pairs. No extra alias occurs. This proves the equality. Physical parity signs are constant on each orbit and cancel in the absolute square. For an even h, positivity bounds the odd norm by \(c_N\) times the full norm.
+
+Fix a cutoff L and let \(R=K^{1/(p+1)}\). Apply (SR.S10) to \(h=f_R-f_L\). Uniformly for sufficiently large K, its averaged observable differs from that of \(f_{L}\) in normalized Hilbert--Schmidt norm by at most \(c_N\|\widehat{f-f_L}\|_1\) (drop \(c_{N}\) on full space). The Duhamel inequality for exponentials in this norm then bounds the characteristic-function difference by \(|m\tau_0|c_N\|\widehat{f-f_L}\|_1\). For fixed L the finite-alphabet theorem supplies the Gaussian limit with variance \(\sigma_{f_L}^2\). Finally let L grow. Equation (SR.S3) and absolute summability imply \(\sigma_{f_L}^2\to\sigma_f^2\); the tail bound tends to zero. This proves (SR.S4) together with (SR.S8), without a growing-order moment argument or an unjustified exchange of cutoffs.
+
+The same approximation also proves the joint characteristic-function trace limit of finitely many averaged smooth observables: use telescoping of a fixed product of unitary exponentials, (SR.S10), and the ordered finite-alphabet limit. The covariance is the polarized Green--Kubo form. This does not assert that the unaveraged finite operators commute or possess a joint eigenvalue law.
+
+\subsection{Consequences and limitations}\label{smooth:consequences-and-limitations}
+
+The theorem includes generic finite Fourier symbols, smooth symbols with infinitely many frequencies, and degenerate variance. The familiar classical coboundary criterion concerns the kernel of (SR.S3); it is not a newly invented criterion. No constant classical kick is covered: the action amplitude in (SR.S2) is proportional to \(1/(N\sqrt K)\). The time is \(mK=O(\log N)\) for fixed m, not the Heisenberg scale O(N). Neither the variance formula nor the wrapped-normal Kth-power density proves local spectral universality.
+
+The companion exact test independently groups integer Fourier modes into signed orbits and compares (SR.S10) with modular Weyl coefficient accumulation. Small-modulus aliasing is retained as a negative control. Finite numerical agreement is not substituted for the cutoff proof above.

@@ -1,0 +1,145 @@
+\maketitle
+\begin{abstract}
+We consolidate the WoW research programme on arithmetic quantum toral maps,
+separating exact finite-field reductions, global laws of compressed
+observables, recurrence-scale laws of propagators, and genuinely microscopic
+spectral conclusions. The finite-field part reduces fourth-moment
+fluctuations to Cayley additive energy, cyclotomic row intersections and
+specialization-safe scalar supports. The quantum part proves short-period
+multiplicity formulas over composite rings, quantitative Pell normal forms,
+Gaussian weighted echoes, and smooth cohomological resonance laws. Sharp
+single-orbit and finite-box inequalities, a local Hessian obstruction,
+quantitative transversality, and an independently replayed certificate treat
+nondegeneracy of the second resonance, including arbitrary Fourier phases in
+288 real dimensions.
+
+The new construction uses finite noncommuting return words on separated
+support levels. It gives smooth generators with a nonzero consecutive
+Poisson bracket that is itself an exact coboundary, and a natural
+single-exponential quantum kick which remains conjugate to the arithmetic
+propagator to every inverse-power order at fixed classical strength. The
+conjugating operator is nonlinear in the kick parameter. Thus a nonzero
+principal commutator does not rule out all-orders spectral conjugacy.
+This construction, like the preceding commuting-support family, is smoothly
+symplectically conjugate to an arithmetic map. It yields cluster laws and
+Heisenberg-window control, not generic random-matrix universality.
+All hypotheses and finite verification ranges are kept explicit. The full
+positive Bohigas--Giannoni--Schmit universality problem is not solved here;
+no priority or prize-level certification is asserted.
+\end{abstract}
+\vspace{1ex}
+\noindent\textbf{Keywords.} Quantum cat maps; Weyl quantization; cyclotomic
+resultants; Green--Kubo variance; noncommutative coboundaries; spectral
+clustering; exact certificates.\\
+\textbf{Mathematics Subject Classification.} 81Q50, 37D20, 11T23, 11R18.
+{\small\tableofcontents}
+\clearpage
+
+\section{Scope, normalizations, and the dependency structure}
+\label{sec:scope}
+This is one consolidated research manuscript, not a concatenation of claims
+of equal evidentiary strength. Historical versions remain archived. Repeated
+proofs of the same mechanism have been combined or cross-referenced; distinct
+asymptotic regimes have not been identified. In particular, a global Gaussian
+law of an averaged observable and a sine-kernel law for local propagator
+levels are different assertions. The former supplies neither the latter
+nor Heisenberg-scale joint trace control.
+
+\subsection{The three spectral objects}
+We distinguish a quantum propagator $U_N$, a compressed observable
+$P_jB_NP_j|_{\operatorname{ran}P_j}$, and the matrix elements of $B_N$ in an
+eigenbasis. Universality for one of these is not universality for another.
+An empirical law of $U_N^K$ folds its phases K times; it is not the original
+nearest-neighbour law. A two-scale measure of one eigenvalue is not a
+two-eigenvalue correlation. These distinctions are used throughout.
+
+In the finite-field sections, p is an odd prime, H is a multiplicative
+subgroup and K is its order. In the Pell sections, N is the Hilbert-space
+parameter and can be composite, while K is an arithmetic return time with
+$N\asymp(3+2\sqrt2)^{K/2}$. No unexplained identification of p and N is made.
+The notation D denotes the dimension of the active parity sector except
+where an operator is explicitly introduced under another local convention.
+Normalized Hilbert--Schmidt norms are $\|X\|_{2,D}^2=D^{-1}\operatorname{Tr}X^*X$;
+operator norms carry the subscript $\mathrm{op}$. Replacing one by the other
+can change a valid statement into a false one.
+
+\subsection{Weyl, classical, and perturbation conventions}
+For the fixed Fourier-covector matrix
+$T=\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)$, the
+classical pullback matrix is $S=T^{\mathsf T}$. Define
+\[
+ W_N(a,b)\psi(x)=e_N(a(x-b/2))\psi(x-b),\qquad
+ Q_N(a,b)=(-1)^{ab}W_N(a,b),\qquad\hbar_N=(2\pi N)^{-1}.
+\]
+The half in W is modular; a,b in Q are integer Fourier frequencies before
+reduction. Thus $Q_N(v)Q_N(w)=e^{\pi i\omega(v,w)/N}Q_N(v+w)$.
+For general hyperbolic matrices an explicitly stated invariant characteristic
+$Q_N^*(a,b)=(-1)^{ab+a+b}W_N(a,b)$ is used instead.
+These characteristics are not silently interchanged.
+
+A quantum kick $e^{i\varepsilon\operatorname{Op}_N(f)}$ has classical action
+strength $\kappa=\hbar_N\varepsilon$. The fixed-strength convention in the
+new return-word section is $e^{i\kappa\operatorname{Op}_N(f)/\hbar_N}$.
+The older locality section writes $e^{i\kappa_0N\operatorname{Op}_N(f)}$;
+there $\kappa=\kappa_0/(2\pi)$. Its formulas retain the explicitly stated
+$\kappa_0$ convention. This factor does not disappear on consolidation.
+We use $\{f,h\}=f_qh_p-f_ph_q$ and $X_f=(f_p,-f_q)$; sources using
+$(-f_p,f_q)$ have their flow-time sign stated alongside the map.
+
+\subsection{What is proved, imported, checked, or unresolved}
+The internal dependency chains are as follows. Finite Weyl covariance gives
+fixed-point trace identities and the exact cyclic multiplicities. Quadratic
+norm lifting, bounded-cluster counting and summable Pell phases give the
+observable moment laws. A finite Duhamel estimate then transfers selected
+laws to recurrence times of the actual propagator. The much stronger
+fixed-classical-strength results use support locality or noncommuting
+return words; they do not follow from the moment laws.
+
+For the second resonance, the orbit expression of Green--Kubo variance gives
+its exact zero criterion. A local invariant differential operator gives the
+Hessian obstruction. The finite-box theorem additionally depends on an exact
+proof object, reconstructed and replayed by two implementations; it is not
+inferred from random sampling. The return-word example proves that a nonzero
+bracket can still lie in that zero set on the smooth infinite-frequency class.
+No implication from analytic nonzero bracket to positive variance is inserted.
+
+The finite-field reductions form a parallel chain: exact pair keys, Cayley
+energy, fixed-degree row polynomials, scalar supports, and conditional
+arithmetic estimates. They are not a substitute for spectral trace estimates.
+The subresultant, cyclotomic-unit and subgroup-curve inputs cited in those
+sections retain their named external hypotheses. Their historical derivations
+are preserved in this consolidated record; the present audit has not supplied
+new proofs of all external results. Exact-source checks and unretrieved leaves
+are listed separately in the source ledger, so no blanket referee verdict is
+attached to the whole historical corpus.
+
+The scalar Fejer--Riesz theorem is used only after strict positivity of the
+proposed Laurent polynomial has been proved. The classical orbit/coboundary
+criterion is consistent with Cohen--Conze~\cite{CohenConze}; it is not
+imported as a quantum central limit theorem. Residual perturbations and their
+second-order commutator have direct precedent in Prosen--Znidaric~\cite{PZ2005}.
+Nonlinear cat-map pseudo-symmetries also predate this project~\cite{KM2000}.
+The finite-return identity is group-valued coboundary algebra; no priority
+claim for that algebra is made. All new conclusions below are derived directly
+rather than assigned to a source merely from its title or abstract.
+
+\subsection{A precise universality obligation}
+For a D-dimensional spectrum $e^{2\pi ix_a}$, the global-density-unfolded
+factorial pair statistic is
+\[
+ R_D(\phi)=D^{-1}\sum_{a\ne b}\sum_{m\in\mathbb Z}
+                   \phi(D(x_a-x_b+m)).
+\]
+Poisson summation yields
+\[
+ R_D(\phi)=D^{-2}\sum_{k\in\mathbb Z}\widehat\phi(k/D)
+                  (|\operatorname{Tr}U_D^k|^2-D).
+\]
+Thus a positive local-universality result requires the appropriate weighted
+joint trace comparison on the Heisenberg scale, with symmetry reduction and
+unfolding fixed beforehand. Positivity can sometimes exclude a proposed limit
+using only a few shorter-time traces; it cannot prove the full comparison.
+The two principal unresolved obligations remain a sharp arithmetic closure
+in the split finite-field branch and positive spectral universality for a
+natural fixed map not retaining the arithmetic model by smooth conjugacy.
+Neither is declared solved by the present consolidation.

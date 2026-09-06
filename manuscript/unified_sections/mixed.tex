@@ -1,0 +1,80 @@
+\section{Mixed first- and second-order resonance fields}\label{sec:mixed}
+Use the same T, K, N, Weyl convention and odd trace as in the \hyperref[sec:finite_fourier]{finite Fourier theorem}. Let \(A=B_{(1,0)}\), \(D=U_0AU_0^*=B_{(3,4)}\), \(C=B_{(2,4)}-B_{(4,4)}\), and define \[
+ \mathcal U_{\varepsilon,\eta}
+   =\exp\{i[\varepsilon(A-D)+\eta A]\}U_0.                    \tag{MX.M1}
+\] This is a single exponential, not a split-kick model. Put \[
+ s_N=\sin(4\pi/N)>0,\quad \zeta=\varepsilon^2s_N,\quad
+ a_K=\sqrt{2K}\eta_K,\quad b_K=2\sqrt K\varepsilon_K^2s_N.
+\] \textbf{Theorem.} If \(a_K\to a\in\mathbb R\) and \(b_K\to b\geq0\), then \[
+ \boxed{\tau_-(\mathcal U_{\varepsilon_K,\eta_K}^{mK})
+               \longrightarrow e^{-m^2(a^2+b^2)/2}}
+ \qquad(m\in\mathbb Z\text{ fixed}).                         \tag{MX.M2}
+\] Thus the Kth-power spectrum tends to the wrapped normal law of variance \(a^2+b^2\). Independence describes limiting tracial Gaussian variables, not independence of finite matrices or their eigenvalues.
+
+\subsection{Finite proof including the mixed errors}\label{mixed:finite-proof-including-the-mixed-errors}
+
+The exact identity \([A,D]=-2is_NC\) implies \(\|[A,D]\|\leq8s_N\) and \(\|[A,C]\|\leq16s_N\). The two-factor Duhamel bound splits (MX.M1) into \(e^{i\eta A}e^{i\varepsilon(A-D)}U_0\) at cost \(4|\varepsilon\eta|s_N\). Conjugation by \(e^{-i\varepsilon A}\) commutes with the first factor. The uniform \hyperref[sec:coboundary]{residual loop estimate} has remainder \(R_N=(64/3)|\varepsilon|^3s_N^2\). Finally joining \(e^{i\eta A}e^{i\zeta C}\) costs \(8|\eta\zeta|s_N\). Consequently, with \(Q=\eta A+\zeta C\), \[
+ \|e^{-i\varepsilon A}\mathcal U_{\varepsilon,\eta}e^{i\varepsilon A}
+                              -e^{iQ}U_0\|_{\rm op}\leq\Delta_N,
+ \quad
+ \Delta_N=R_N+4|\varepsilon\eta|s_N+8|\eta\zeta|s_N.           \tag{MX.M3}
+\] No smallness of \(\varepsilon\) A is needed; all comparisons integrate unitary evolutions rather than truncate BCH at a growing exponent.
+
+The three frequencies v=(1,0),u=(2,4),z=(4,4) have quadratic norms -2,8,-16, so represent different signed T-orbits. Their embeddings are bounded by10. In the finite-alphabet theorem one may take \[
+ S=3,\quad M=10,\quad B=5,\quad D_*=15,\quad J=34596,
+ \quad L_K,W_K<3200.
+\] Four-atom lifting holds for every prime \(K\geq23\) because \(\lambda^{\lceil K/4\rceil}(1-\lambda^{-K})^2>5^6(9/10)^2>6400\). These deliberately conservative constants are analytic, not fitted.
+
+Let \(Q_j=U_0^jQU_0^{-j}\), \(\bar Q=K^{-1}\sum Q_j\), \(G_Q=\sum c_jQ_j\) and \(l=|\eta|+2|\zeta|\). The sharper version of (7) in that note gives the normal-form error \[
+ F_K=\frac{2l^2(W_K+L_K)}K+
+       \frac{c_N(\eta^2+2\zeta^2)\sqrt{JL_K}}{2\sqrt K}.
+\] After the two gauges, unitary telescoping gives the finite estimate \[
+ \left|\tau_-(\mathcal U_{\varepsilon,\eta}^{mK})
+                  -\tau_-(e^{imK\bar Q})\right|
+                         \leq|m|K(\Delta_N+F_K).              \tag{MX.M4}
+\] For bounded \(a_{K}\),\(b_{K}\), the right side is \(O(K^{-1/2})+O(K^{1/4}/\sqrt N)\). Indeed \(|\eta|=|a_K|/\sqrt{2K}\) and \(|\varepsilon|=\sqrt{b_K/(2s_N\sqrt K)}\). The zero \(b_{K}\) case is continuous.
+
+If \(Y_0,Y_1,Y_2\) denote the normalized three orbit sums, exactly \[
+ K\bar Q=a_KY_0+(b_K/\sqrt2)(Y_1-Y_2).                       \tag{MX.M5}
+\] Their joint trace limit is three independent standard Gaussians by the finite-alphabet theorem; hence (MX.M5) tends to a normal variable of variance \(a^2+b^2\). Its bounded continuous characteristic function and (MX.M4) prove (MX.M2). The characteristic-function convergence error is separately o(1); no rate for it is inferred from one fourth moment.
+
+The relation \(u=Tv-v\) gives real three-atom zero words. Thus the exponentially small odd-moment claim of a one-species model cannot be imported. The general \(O(K^{-1/2})\) bound, and the retained finite nonzero mixed third moments, are the appropriate statements here.
+
+\subsection{How precisely must a residual perturbation be tuned?}\label{mixed:how-precisely-must-a-residual-perturbation-be-tuned}
+
+Write \(\eta_K=\varepsilon_K\delta_K\), so the fixed-shape symbol is \(\varepsilon_K[(A-D)+\delta_KA]\). At a nonzero residual critical limit b, \[
+ |\varepsilon_K|\sim\sqrt{b/(8\pi)}\sqrt N K^{-1/4},\qquad
+ |a_K|\sim\sqrt{b/(4\pi)}|\delta_K|\sqrt N K^{1/4}.
+\] The relative contamination scale is therefore \[
+ \boxed{|\delta_K|\asymp N^{-1/2}K^{-1/4}.}                  \tag{MX.M6}
+\] Below it the ordinary contribution vanishes; at it a finite additional variance survives. Above it this bounded-parameter theorem does not predict positive universality. This quantifies fine tuning, not genericity of the residual mechanism. The sign of \(\varepsilon\) affects \(a_{K}\) when \(\delta\) is held fixed but not the leading pure residual term \(b_{K}\).
+
+\subsection{A combined necessary escape criterion}\label{mixed:a-combined-necessary-escape-criterion}
+
+Let \(\rho_K^2=a_K^2+b_K^2=2K\eta_K^2+4K\varepsilon_K^4s_N^2\). Keep the whole odd spectrum, multiplicities and global mean-spacing normalization. If \(\rho_{K}\) has a bounded subsequence, extract a further one with \(a_{K}\),\(b_{K}\) convergent. For \(\phi_L(x)=L^{-1}(1-|x|/L)_+\) and the periodized ordered distinct-pair test \(C_{d}\), Poisson summation gives, for \(d>L\), \[
+ C_d(\phi_L)\geq1-1/L+
+ 2\sum_{m=1}^{M_0}\operatorname{sinc}^2(LmK/d)
+                    |\tau_-(\mathcal U_{\varepsilon,\eta}^{mK})|^2,
+ \quad \operatorname{sinc}(x)=\frac{\sin\pi x}{\pi x}.         \tag{MX.M7}
+\] All omitted Fourier terms are nonnegative. Take K to infinity at fixed L,\(M_{0}\), then \(M_{0}\) to infinity. Equation (MX.M2) gives \(\liminf C_d(\phi_L)\geq\sum_{m\in\mathbb Z}e^{-m^2\rho^2}-1/L\). This exceeds one as L grows for every finite positive \(\rho\), and diverges at \(\rho\)=0. A bounded limiting pair density R(x) with R(x) tending to one at infinity would instead satisfy \(\int\phi_LR\to1\). Thus escape requires \[
+ \boxed{2K\eta_K^2+4K\varepsilon_K^4\sin^2(4\pi/N)\to\infty.} \tag{MX.M8}
+\] It is only necessary, not sufficient. The Fourier test is from the earlier project; the new input is the mixed recurrence law. L grows after, not simultaneously with, the semiclassical limit for fixed compact tests.
+
+When \(\rho_{K}\) tends to zero there is also spacing collapse. Distinctness of the 6K signed atoms gives \(\tau_N(\bar Q^2)=2(\eta^2+2\zeta^2)/K\). Spectral matching and arc-versus-chord comparison bound the RMS distance \(q_{K}\) to the K-point lattice by \[
+ q_K\leq(\Delta_N+F_K)/4+
+       \frac{c_N}{2\pi}\sqrt{2(\eta^2+2\zeta^2)/K}.
+\] Therefore \(Kq_K\to0\), and \(K/d\to0\). The independent geometric concentration lemma (source file: \path{pell_microscopic_clustering.md}) proves weak convergence of globally normalized neighbouring spacings to \(\delta_{0}\) and divergent normalized close-pair counts at every fixed positive distance.
+
+\subsection{An exact finite dependence diagnostic}
+For odd prime $K\geq23$, the full-space trace of the normalized orbit sums in \eqref{mixed:diagnostic-definition} below satisfies
+\[
+ Y_i=(2K)^{-1/2}\sum_{j=0}^{K-1}B_{T^jv_i},\qquad
+ v_0=(1,0),\quad v_1=(2,4),\quad v_2=(4,4),
+ \tag{MX.M9}\label{mixed:diagnostic-definition}
+\]
+\[
+ \tau_N(Y_0^2Y_1)=\tau_N(Y_0^2Y_2)
+              =\sqrt{\frac2K}\cos\!\left(\frac{4\pi}{N}\right).
+ \tag{MX.M10}
+\]
+After quadratic-norm lifting, a central word of two original-orbit atoms and one of the other species reduces to two powers of $\lambda$ whose sum or difference is a unit translate of the corresponding relative frequency. Their algebraic norms are $-4$ and $8$. The norms of $1\pm\lambda^j$ are $2\pm(\lambda^j+\lambda^{-j})$, so only adjacent times occur. The identities $v_1=Tv_0-v_0$ and $v_2=Tv_0+v_0$ give $4K$ ordered signed words, with phase sum $4K\cos(4\pi/N)$. Division by $(2K)^{3/2}$ proves the formulas. Thus the finite variables are not independent or exactly jointly Gaussian, although these third moments tend to zero. Their equality can cancel in particular scalar combinations and must not be replaced by an assumption that each third moment vanishes.
