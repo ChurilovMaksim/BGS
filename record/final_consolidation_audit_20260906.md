@@ -1,0 +1,174 @@
+# Final consolidation audit — 6 September 2026
+
+This record closes the repository-recovery pass requested after the interrupted
+main-branch integration. It distinguishes active mathematical claims, finite
+verification, external theorem inputs, historical provenance, and publication
+artifacts. The commit containing this file is the authoritative finalization
+commit; no force update is required or intended.
+
+## 1. What was checked
+
+The audit covered four independent surfaces:
+
+1. the complete list of surviving remote research branches and their relation
+   to `main`;
+2. the original 204-file consolidation delivery recovered from the user's
+   ChatGPT Library;
+3. the maintained source/build graph on `main` (Python, C++, Lean, TeX and
+   provenance gates);
+4. the mathematical/editorial boundary between exact project proofs, finite
+   regressions, named external inputs and still-open BGS obligations.
+
+The original delivery archive was recovered as
+`WoW_consolidated_research.zip`, size 2,605,999 bytes, SHA-256
+`8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099`.
+Its archive contains exactly 204 files. The companion patch has SHA-256
+`366fe46e385b9af3f100fedc34d36413379ffde41cb2a2ddc08c749fb90081e8`.
+The historical delivery manifest records a clean 204-file patch round-trip and
+92-page consolidated build; those historical checks are preserved as
+historical evidence rather than re-labelled as executions on the final commit.
+
+## 2. Recovered omissions
+
+Three research lines had been left outside the earlier recovery and were
+restored byte-for-byte from their historical Git blobs:
+
+- `mathematics/cayley_energy_curve_bound.md`,
+  `computations/verification/cayley_energy_curve_regression.py`, and
+  `formalization/Bgs/CayleyCurveEnergy.lean`;
+- `mathematics/cayley_product_row_elliptic.md` and
+  `computations/verification/cayley_product_rows.py`;
+- `mathematics/cayley_product_row_projective_bezout.md` and
+  `computations/verification/cayley_product_row_projective_bezout.py`.
+
+Earlier in the same recovery sequence, the fixed-strength/locality,
+smooth-cohomology, Pell coboundary, noncommuting return-word, resonance
+nondegeneracy and unified-manuscript material had already been restored.
+
+## 3. Branch-loss prevention
+
+Every remote research branch that was not a strict ancestor of `main` is
+preserved under `archive/branch-snapshots/` as its exact Git tree. These
+snapshots are provenance only. They may contain stale build files, superseded
+notation or exploratory claims; they do not override the maintained top-level
+source tree or `record/claim_ledger.md`.
+
+Branches proved to be strict ancestors of `main` were not duplicated because
+normal Git history already preserves them.
+
+## 4. Original 204-file packet preservation
+
+The original outer ZIP remains the byte-authoritative container for the
+historical repeated-run logs, frozen-input records and binary publication
+artifacts. It was verified locally during this audit and remains preserved in
+the user's ChatGPT Library. Its exact identity and the hashes of the two
+compressed binary members are recorded in
+`archive/delivery-20260906/README.md`.
+
+A binary re-encoding of that ZIP is intentionally not committed through the
+GitHub connector. Long base64 transfers can be truncated by the intermediate
+transport; a possibly corrupted duplicate would be worse provenance than an
+externally retained object with an independently checked SHA-256. The active
+source tree and all divergent historical Git trees are preserved directly in
+`main`; the external ZIP covers the residual historical logs and delivery
+artifacts.
+
+The two compressed binary members are:
+
+- `manuscript/WoW_unified.pdf`: 880,886 bytes, SHA-256
+  `0076d2feb521fe59819b9bf243423ead832dcfa64acafbce20012b6dc09c497d`;
+- `evidence/consolidation_20260906/reproduction_inputs.zip`: 1,177,213 bytes,
+  SHA-256
+  `16a4a92bbc078d90334528065f561cdff8032fb536985a03ab9c77573c9d87c3`.
+
+The PDF is a derived artifact from preserved TeX sources. The nested ZIP is a
+frozen duplicate-input package. Neither is used as the mathematical
+source-of-truth.
+
+## 5. Structural defects found and repaired
+
+The audit found several real integration defects that would have been hidden by
+mere file-existence checks:
+
+- `formalization/Bgs.lean` did not import every active module. The final entry
+  point imports the complete `formalization/Bgs/*.lean` set, including
+  `CayleyCurveEnergy`, `GeneralHyperbolicParity`, `LocalityKernels`,
+  `PellCoboundary`, `PellEchoWeights` and `PellFourierKernel`.
+- `CMakeLists.txt` omitted two maintained C++ sources:
+  `fixed_strength_locality_exact.cpp` and `pell_coboundary_pairs.cpp`. Both are
+  now build targets and are covered by the warning gate.
+- `computations/verification/repository_audit.py` had a stale top-level
+  whitelist predating `REPRODUCE_unified.md`, `requirements-nondegeneracy.txt`
+  and the provenance archive. The final audit explicitly accepts the current
+  publication surface while excluding `archive/` from maintained-source
+  duplicate/link/language checks.
+- the repository referred to `record/final_consolidation_audit_20260906.md`
+  although that record had never been committed. This file closes that gap.
+- the independent manuscript workflow built only the older arithmetic article.
+  The final workflow uses `build_unified_manuscript.py` as the canonical
+  fail-closed builder and keeps the old article as a separate legacy build.
+
+## 6. Mathematical review of the recovered material
+
+The restored Cayley curve note uses a bidegree-(2,2) subgroup-curve
+specialization. Makarychev--Vyugin Theorem 2 was re-read in the primary paper:
+with `m=n=2` and `g=h=1`, its displayed coefficient is
+`12*m*n*g*(m+n)=192`. The note's range `K>=5725` safely enforces the theorem's
+lower subgroup-size and `h<(320)^(-3)|G|^2` conditions, while the upper range is
+`K<p^(3/4)/3`. This is an independent auxiliary route. It does **not** replace
+the sharper maintained direct Cayley theorem `E_+(A)<34 K^(8/3)`.
+
+The restored product-row elliptic note gives an exact algebraic reduction and
+generic genus-one fibre-product description. It does not prove the desired
+uniform `O(1)` row-intersection bound; that growing-parameter conclusion remains
+open.
+
+The restored projective Bezout note gives a specialization-safe rank/nullity
+criterion and determinantal support description. It must not be confused with
+the older dehomogenized `D'/G'` invariants whose converse failed at projective
+infinity. The field-valued Bezout/gcd equivalence is a structural refinement;
+a growing-`K` polynomial bound on the relevant integral support remains open.
+
+No restored finite regression has been promoted into an asymptotic theorem.
+No equality of support integers is inferred merely from equality of split-prime
+support. No numerical or finite-matrix test is used as a substitute for a
+Heisenberg-scale trace estimate.
+
+## 7. BGS scope after consolidation
+
+The repository now contains substantial exact arithmetic, cohomological,
+recurrence, rigidity, obstruction and finite-certificate results. It also
+contains explicit negative mechanisms showing why several tempting shortcuts
+to BGS fail.
+
+The positive microscopic BGS/GOE/COE universality problem remains **OPEN**.
+The missing positive chain still requires, for a natural fixed nonarithmetic
+family with the correct symmetry reduction and unfolding, weighted joint trace
+(or equivalent local-resolvent) control at the Heisenberg scale together with
+tail control beyond compact Fourier support. Nothing in this consolidation is
+labelled as a complete solution of that open problem.
+
+## 8. CI and publication status
+
+The most recent GitHub Actions attempts observed before finalization failed
+before any step ran: the jobs reported `runner_id=0` and an empty `steps` list.
+Accordingly this audit does **not** claim cloud CI success or failure of a
+scientific test. The workflows are corrected so that the next provisioned
+runner will exercise the complete C++/Python/Lean graph and the canonical
+unified TeX build.
+
+Historical local build logs report the earlier 92-page consolidated PDF and
+clean rebuild comparison. After the final source/editorial integration, a new
+cloud-built PDF should be treated as pending until a GitHub runner is actually
+assigned. Source correctness and typesetting execution are separate evidence
+layers.
+
+## 9. Final authority rule
+
+For scientific status, `record/claim_ledger.md` remains the repository-wide
+claim authority. This audit records recovery and verification boundaries; it
+does not silently promote historical claims absent from that ledger. For
+publication, `manuscript/WoW_unified.tex` is the canonical editable entry point.
+For lost-work prevention, `archive/branch-snapshots/` is a provenance-only
+store and `archive/delivery-20260906/README.md` records the external byte-level
+delivery provenance. Neither overrides maintained source files.

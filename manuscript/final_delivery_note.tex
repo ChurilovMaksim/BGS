@@ -1,0 +1,55 @@
+\section{Final consolidation addendum}
+\label{sec:final-consolidation-addendum}
+This addendum records the repository state after the final recovery pass of
+6 September 2026.  It supersedes only delivery-state sentences in the preceding
+audit; it does not change the mathematical hypotheses of earlier theorems.
+The complete recovery record is
+\texttt{record/final\_consolidation\_audit\_20260906.md}.
+
+Three previously omitted arithmetic packets were recovered from their exact
+historical Git blobs: the Cayley subgroup-curve route, the generic elliptic
+product-row reduction, and the specialization-safe projective Bezout
+rank criterion.  The first should be distinguished from the bilinear curve
+used in the maintained direct Cayley theorem.  In the recovered route the
+polynomial has bidegree $(2,2)$.  Specializing Makarychev--Vyugin Theorem~2
+with $m=n=2$ and $g=h=1$ gives the coefficient
+\[
+ 12mng(m+n)=192,
+\]
+with the stated subgroup-size hypotheses.  This is an auxiliary independent
+route and does not replace the sharper maintained bound
+$E_+(A)<34K^{8/3}$ obtained from the bilinear specialization
+\cite{VM2015,MV2019}.
+
+The projective Bezout criterion is likewise not the retracted two-sided use of
+the older dehomogenized $D'/G'$ invariants.  Its matrix nullity equals the
+homogeneous gcd degree after specialization, giving an exact determinantal
+support description.  What remains open is the growing-$K$ control of the
+resulting integral support; no polynomial largest-prime theorem is inferred.
+The generic elliptic product-row construction reduces the cross-row problem to
+a genus-one fibre product, but a uniform $O(1)$ intersection theorem is also
+not claimed.
+
+The maintained build graph was repaired at the same time.  The top-level Lean
+module now imports every active \texttt{Bgs.*} file, every maintained C++ source
+is a CMake target, and the structural audit treats the new
+\texttt{archive/} namespace as provenance rather than active source.  The
+canonical manuscript workflow now invokes the fail-closed unified builder in
+addition to the legacy arithmetic article.
+
+All divergent historical research branches are retained as exact Git-tree
+snapshots.  The original 204-file consolidation ZIP was independently recovered
+from the user's delivery library and verified by SHA-256; its byte-level
+identity is recorded in \texttt{archive/delivery-20260906/README.md}.  The
+binary ZIP itself is intentionally kept as external provenance rather than
+re-encoded through a connector path that can truncate long base64 transfers.
+This does not promote its historical logs to executions of the final commit.
+
+Finally, the GitHub Actions attempts observed during this finalization did not
+receive a runner (no steps executed).  Consequently no cloud-CI success is
+claimed here.  This infrastructure fact is kept separate from the mathematical
+status.  In particular the positive microscopic BGS/GOE/COE conclusion remains
+open: the missing obligation is still the appropriately desymmetrized
+Heisenberg-scale joint-trace or local-resolvent control, together with the
+high-frequency tail needed to pass from band-limited tests to the full local
+law.

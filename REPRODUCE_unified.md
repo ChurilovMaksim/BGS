@@ -1,22 +1,63 @@
-# Consolidated research packet - 6 September 2026
+# Consolidated research packet — final main, 6 September 2026
 
-The canonical editable entry point is `manuscript/WoW_unified.tex`. The main
-branch was recovered in two fast-forward commits on 6 September 2026: first the
-previously unmerged fixed-strength, smooth-cohomology and coboundary sources,
-then the two local-only theorem notes. Large binary artifacts are intentionally
-not claimed as synchronized unless their Git blob is verified byte-for-byte.
+The canonical editable publication entry point is
+`manuscript/WoW_unified.tex`. The repository-wide scientific status authority
+remains `record/claim_ledger.md`; the final recovery/audit record is
+`record/final_consolidation_audit_20260906.md`.
 
-Build the article with:
+The recovery was performed only by fast-forward commits. It restored the
+previously unmerged fixed-strength, smooth-cohomology and coboundary work, the
+local noncommuting/nondegeneracy theorem notes, and three additional omitted
+Cayley packets (subgroup curve, elliptic product rows, projective Bezout). All
+remote research branches that diverged from the final line are preserved as
+exact Git-tree snapshots under `archive/branch-snapshots/`.
+
+The original 204-file delivery was recovered from the user's ChatGPT Library
+and verified before finalization:
+
+```text
+WoW_consolidated_research.zip
+bytes   2605999
+sha256  8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099
+files   204
+```
+
+Its byte-level provenance, the companion patch hash, and the hashes of the two
+compressed binary members are recorded in
+`archive/delivery-20260906/README.md`. The outer ZIP remains the authoritative
+historical container; it is not re-encoded through the GitHub connector because
+large binary/base64 transport can be truncated. The maintained sources and all
+divergent Git branch trees are preserved directly in `main`.
+
+Build the canonical manuscript without publishing into the source tree:
+
+```sh
+python computations/maintenance/build_unified_manuscript.py \
+  --output-dir build/unified-paper
+```
+
+To publish a locally verified PDF explicitly:
 
 ```sh
 python computations/maintenance/build_unified_manuscript.py --publish
 ```
 
-For a full local overlay of the original 204-file consolidation packet, download
-`WoW_consolidated_research.zip` from the ChatGPT delivery, extract it, and copy
-its `WoW_consolidated/` tree over a fresh `main` checkout without deleting other
-files. Then run the integration helper with `--check` before writing changes.
+Run the structural gate and language/build checks with:
 
-The proof status remains scoped: no positive generic BGS theorem, no established
-world-priority claim and no new complete Lean formalization are inferred from
-repository synchronization.
+```sh
+python computations/verification/repository_audit.py
+python computations/maintenance/verify_workspace.py
+cmake -S . -B build/cmake
+cmake --build build/cmake --parallel
+(cd formalization && lake build)
+```
+
+The GitHub Actions attempts observed during finalization did not receive a
+runner (`runner_id=0`, no executed steps), so this file does not claim a green
+remote CI run. The workflows themselves have been repaired so the next
+provisioned runner exercises the canonical unified builder and the complete
+maintained C++/Lean graph.
+
+Scientific scope is unchanged by synchronization: no positive generic
+microscopic BGS theorem, no established world-priority claim, and no complete
+formalization of the analytic argument are inferred from repository recovery.

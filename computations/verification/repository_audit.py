@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Repository-wide structural/provenance audit for the curated research branch.
 
-This gate is intentionally stricter than language-specific tests. It prevents
-historical workspace copies, Julia sources, orphaned producers, unimported Lean
-modules, unbuilt C++ sources, broken Markdown links and byte-identical
-source/document duplicates from creeping back into ``main``.
+This gate is intentionally stricter than language-specific tests. It checks the
+maintained source tree while treating ``archive/`` as immutable provenance-only
+data. Archived branch/delivery snapshots are deliberately excluded from active
+source duplication, link, Julia, C++ and Lean coverage checks.
 """
 from __future__ import annotations
 
@@ -17,9 +17,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 EXPECTED_TOP_LEVEL = {
-    ".github", ".gitignore", "CMakeLists.txt", "README.md", "assets",
-    "computations", "evidence", "formalization", "literature", "manuscript",
-    "mathematics", "record", "requirements.txt",
+    ".github", ".gitignore", "CMakeLists.txt", "README.md",
+    "REPRODUCE_unified.md", "archive", "assets", "computations", "evidence",
+    "formalization", "literature", "manuscript", "mathematics", "record",
+    "requirements-nondegeneracy.txt", "requirements.txt",
 }
 FORBIDDEN_PATHS = {
     Path("record/corpus"), Path("record/checkpoints"),
@@ -28,9 +29,8 @@ FORBIDDEN_PATHS = {
 TEXT_DUPLICATE_SUFFIXES = {
     ".cpp", ".h", ".hpp", ".lean", ".md", ".py", ".tex", ".yml", ".yaml",
 }
-SKIP_DIR_NAMES = {".git", ".lake", "__pycache__", "build"}
+SKIP_DIR_NAMES = {".git", ".lake", "__pycache__", "build", "archive"}
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
-
 
 
 def _markdown_without_code(text: str) -> str:
@@ -64,7 +64,11 @@ def files_under(root: Path):
     for path in root.rglob("*"):
         if not path.is_file():
             continue
-        if any(part in SKIP_DIR_NAMES for part in path.parts):
+        try:
+            relative = path.relative_to(ROOT)
+        except ValueError:
+            relative = path
+        if any(part in SKIP_DIR_NAMES for part in relative.parts):
             continue
         yield path
 
@@ -79,13 +83,22 @@ def check_top_level() -> None:
         raise AssertionError(f"missing top-level entries: {missing}")
 
 
+def check_archive_contract() -> None:
+    readme = ROOT / "archive" / "branch-snapshots" / "README.md"
+    if not readme.is_file():
+        raise AssertionError("archive provenance README is missing")
+    text = readme.read_text(encoding="utf-8")
+    if "provenance" not in text.lower() or "authoritative" not in text.lower():
+        raise AssertionError("archive README must mark snapshots as provenance-only")
+
+
 def check_no_historical_copies_or_julia() -> None:
     for relative in sorted(FORBIDDEN_PATHS):
         if (ROOT / relative).exists():
             raise AssertionError(f"forbidden historical copy tree exists: {relative}")
     julia = [p.relative_to(ROOT) for p in files_under(ROOT) if p.suffix == ".jl"]
     if julia:
-        raise AssertionError(f"tracked Julia sources remain: {julia}")
+        raise AssertionError(f"tracked Julia sources remain in maintained tree: {julia}")
 
 
 def check_no_duplicate_text_sources() -> None:
@@ -164,8 +177,8 @@ def check_cpp_build_coverage() -> None:
 
 def check_markdown_relative_links() -> None:
     missing: list[str] = []
-    for document in sorted(ROOT.rglob("*.md")):
-        if any(part in SKIP_DIR_NAMES for part in document.parts):
+    for document in sorted(files_under(ROOT)):
+        if document.suffix.lower() != ".md":
             continue
         text = document.read_text(encoding="utf-8")
         for raw in MARKDOWN_LINK_RE.findall(_markdown_without_code(text)):
@@ -188,17 +201,23 @@ def check_markdown_relative_links() -> None:
 
 
 def check_manuscript_surface() -> None:
-    tex = ROOT / "manuscript" / "arithmetic_cat_map_moments.tex"
-    pdf = ROOT / "manuscript" / "arithmetic_cat_map_moments.pdf"
-    if not tex.is_file() or tex.stat().st_size < 1024:
-        raise AssertionError("active manuscript TeX is missing or unexpectedly small")
-    if not pdf.is_file() or pdf.stat().st_size < 1024:
-        raise AssertionError("committed manuscript PDF is missing or unexpectedly small")
+    legacy_tex = ROOT / "manuscript" / "arithmetic_cat_map_moments.tex"
+    legacy_pdf = ROOT / "manuscript" / "arithmetic_cat_map_moments.pdf"
+    unified_tex = ROOT / "manuscript" / "WoW_unified.tex"
+    builder = ROOT / "computations" / "maintenance" / "build_unified_manuscript.py"
+    final_audit = ROOT / "record" / "final_consolidation_audit_20260906.md"
+    reproduce = ROOT / "REPRODUCE_unified.md"
+    for path in (legacy_tex, legacy_pdf, unified_tex, builder, final_audit, reproduce):
+        if not path.is_file() or path.stat().st_size < 64:
+            raise AssertionError(f"required publication surface is missing or unexpectedly small: {path.relative_to(ROOT)}")
+    if legacy_tex.stat().st_size < 1024 or legacy_pdf.stat().st_size < 1024 or unified_tex.stat().st_size < 1024:
+        raise AssertionError("active manuscript source/PDF is unexpectedly small")
 
 
 def main() -> None:
     check_markdown_parser()
     check_top_level()
+    check_archive_contract()
     check_no_historical_copies_or_julia()
     check_no_duplicate_text_sources()
     check_evidence_provenance()

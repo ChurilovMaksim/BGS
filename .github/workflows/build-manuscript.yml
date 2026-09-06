@@ -3,10 +3,15 @@ name: Independent manuscript build
 on:
   push:
     branches: [main]
-    paths: ['manuscript/**']
+    paths:
+      - 'manuscript/**'
+      - 'computations/maintenance/build_unified_manuscript.py'
+      - '.github/workflows/build-manuscript.yml'
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,10 +20,43 @@ jobs:
       - name: Install TeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
-      - name: Compile committed sources without publishing or repairing them
+          sudo apt-get install -y \
+            latexmk \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            lmodern
+      - name: Build canonical consolidated manuscript with fail-closed checks
         run: |
-          mkdir -p "$RUNNER_TEMP/paper"
+          python computations/maintenance/build_unified_manuscript.py \
+            --output-dir "$RUNNER_TEMP/unified"
+          test -s "$RUNNER_TEMP/unified/WoW_unified.pdf"
+          test -s "$RUNNER_TEMP/unified/build_manifest.json"
+          python - <<'PY'
+          import json, os, pathlib
+          p = pathlib.Path(os.environ['RUNNER_TEMP'])/'unified'/'build_manifest.json'
+          d = json.loads(p.read_text())
+          assert d['status'] == 'PASS', d
+          assert d.get('sources_unchanged') is True, d
+          assert not d.get('forbidden_warnings'), d
+          print('canonical unified manuscript: PASS', d.get('page_count'), d.get('pdf_sha256'))
+          PY
+      - name: Build legacy arithmetic article independently
+        run: |
+          mkdir -p "$RUNNER_TEMP/legacy-paper"
           cd manuscript
-          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="$RUNNER_TEMP/paper" arithmetic_cat_map_moments.tex
-          test -s "$RUNNER_TEMP/paper/arithmetic_cat_map_moments.pdf"
+          latexmk -pdf -interaction=nonstopmode -halt-on-error \
+            -outdir="$RUNNER_TEMP/legacy-paper" arithmetic_cat_map_moments.tex
+          test -s "$RUNNER_TEMP/legacy-paper/arithmetic_cat_map_moments.pdf"
+      - name: Upload canonical build evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: wow-unified-manuscript-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/unified/WoW_unified.pdf
+            ${{ runner.temp }}/unified/build_manifest.json
+            ${{ runner.temp }}/unified/pass-1.log
+            ${{ runner.temp }}/unified/pass-2.log
+            ${{ runner.temp }}/unified/pass-3.log
+          if-no-files-found: error
