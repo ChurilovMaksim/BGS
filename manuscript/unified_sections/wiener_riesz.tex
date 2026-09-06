@@ -1,0 +1,165 @@
+\section{Uniform synthesis and the full resonance lattice}
+\label{sec:wiener-riesz}
+Let $A\in\mathrm{SL}(2,\mathbb Z)$ be hyperbolic, $Cf=f\circ A^{\mathsf T}$,
+$\mu=\operatorname{sgn}(\operatorname{tr}A)\lambda$, and $\lambda>1$.
+For a real observable, modulo constants, write
+\[
+ M_s(g)=\sum_{v\ne0}|v|^s|\widehat g(v)|,
+ \qquad h_r(g)=\frac{\{g,C^rg\}}{4\pi}.
+\]
+Assume $M_1(g)<\infty$. The brackets have absolutely summable Fourier
+coefficients and zero mean. For representatives $v_{\mathcal O}$ of the
+oriented nonzero $A$-orbits define
+\[
+ J_\omega(f)_{\mathcal O}
+ =\sum_{j\in\mathbb Z}\widehat f(A^jv_{\mathcal O})e^{ij\omega}.
+\]
+Then $J_\omega(Cf)=e^{i\omega}J_\omega(f)$ and
+$\|f\|_2^2=\int\|J_\omega(f)\|_2^2\,d\omega/(2\pi)$.
+The variable $\omega$ is dual to simultaneous time translation. The variable
+$\theta$ below is dual to lag. Neither is a quantum eigenphase.
+
+\begin{lemma}[Two visits]\label{lem:two-visits}
+For fixed nonzero integer $u,v$, an oriented $A$-orbit contains
+$u+A^rv$ for at most two positive integers $r$, omitting the zero vector.
+\end{lemma}
+\begin{proof}
+In real eigen-coordinates the invariant $q_A(k)=\det(k,Ak)$ gives
+\[
+ q_A(u+A^rv)=q_A(u)+q_A(v)+a\mu^r+b\mu^{-r},\qquad ab\ne0.
+\]
+Both eigen-coordinates of a nonzero integer vector are nonzero: otherwise
+$A$ would have a rational eigenvalue, whereas
+$(\operatorname{tr}A)^2-4$ is not a square. A fixed value of $q_A$ therefore
+gives a quadratic equation in the distinct numbers $\mu^r$.
+\end{proof}
+
+Put $\kappa_A=\sup_{r\ge1}\lambda^{-r}\|A^r\|_{\rm op}<\infty$.
+\begin{theorem}[Uniform bilinear synthesis]\label{thm:wiener-synthesis}
+The operator
+\[
+ B_{g,f}(\omega)x=\sum_{r\ge1}x_r\lambda^{-r}
+          J_\omega\!\left(\frac{\{g,C^rf\}}{4\pi}\right)
+\]
+extends to $\ell^2(\mathbb N)$ and satisfies
+\[
+ \sup_\omega\|B_{g,f}(\omega)\|
+ \le\sqrt2\pi\kappa_A M_1(g)M_1(f).
+\]
+\end{theorem}
+\begin{proof}
+For one ordered Fourier pair the synthesis matrix has one entry per column
+and at most two per row, by Lemma~\ref{lem:two-visits}. The entries have
+modulus at most $\pi\kappa_A|u||v|$. Rowwise Cauchy--Schwarz and the triangle
+inequality over Fourier pairs prove the estimate. The Fourier sum converges
+in operator norm, uniformly in $\omega$.
+\end{proof}
+Let $S_g=B_{g,g}$ and $G_g=S_g^*S_g$. Bilinearity gives
+\[
+ \sup_\omega\|S_g-S_f\|
+ \le\sqrt2\pi\kappa_A(M_1(g)+M_1(f))M_1(g-f).
+\]
+Thus finite Fourier truncation converges uniformly in operator norm, not
+merely entrywise in a fixed lag window.
+
+Choose eigen-covectors $\xi,\eta$ normalized by
+$\det(u,v)=\xi(u)\eta(v)-\eta(u)\xi(v)$.
+Use representatives $v_a$ for \emph{all} oriented orbits, paired by
+$v_{-a}=-v_a$, and put
+\begin{align*}
+ P_a(z)&=\sum_j\widehat g(A^jv_a)z^j,\\
+ X_g(\theta)&=\sum_a\xi(v_a)^2|P_a(\lambda e^{i\theta})|^2,\\
+ Y_g(\theta)&=\sum_a\eta(v_a)^2|P_a(\lambda^{-1}e^{i\theta})|^2.
+\end{align*}
+Both functions are continuous, nonnegative and even. For example,
+$\sum_{a,j}|\xi(v_a)|\lambda^j|\widehat g(A^jv_a)|
+\le\|\xi\|M_1(g)$; the stable estimate is analogous.
+
+\begin{theorem}[Two-variable tail symbol]\label{thm:two-variable-tail}
+With $T$ denoting the Toeplitz operator on positive lag indices,
+\[
+ G_g(\omega)=T(F_g(\omega,\cdot))+K_g(\omega),\qquad
+ F_g(\omega,\theta)=\pi^2X_g(\theta)Y_g(\omega-\theta).
+\]
+The remainder is compact, self-adjoint and operator-norm continuous in
+$\omega$. It is trace class for finite Fourier polynomials.
+\end{theorem}
+\begin{proof}
+For finite support, sufficiently large pair gaps have unique ordered orbit
+labels $(a,b,k)$ for $v_a+A^kv_b$. Here is a uniform gap argument. Identify
+integer vectors with a fixed fractional lattice in the real quadratic field
+of $\mu$. Bound both embeddings of the finite representative set by $M$ and
+the absolute norm of a nonzero lattice element below by $\delta>0$.
+A gap $B$ with $\lambda^B>16M^2/\delta$ in a vanishing four-atom relation
+splits it into two vanishing pieces: the high piece has conjugate embedding
+at most $4M$, and so a nonzero real embedding at least $\delta/(4M)$,
+which the low piece cannot cancel. Singleton pieces are impossible.
+Two internal pair gaps greater than $3B$ force two cross-cancellations;
+uniqueness of the chosen representatives then forces the ordered labels to
+agree. This excludes all integer translates.
+
+At such a label the exact output of $S_g(\omega)$ is
+\[
+ \pi\operatorname{sgn}(\operatorname{tr}A)^k
+ \bigl(\eta(v_a)\xi(v_b)-\lambda^{-2k}\xi(v_a)\eta(v_b)\bigr)
+ (R_{ab}(\omega,\cdot)*x)_k,
+\]
+where
+\[
+ R_{ab}(\omega,z)
+   =P_a(\lambda^{-1}e^{i\omega}z^{-1})P_b(\lambda z).
+\]
+Indeed a pair at times $i,j$ and lag $r$ has $k=r+j-i$, simultaneous shift
+$i$, and factor $\lambda^{-r}=\lambda^{j-i}\lambda^{-k}$.
+The constant squared row weights give the stated symbol. Remaining weights
+decay as $O(\lambda^{-2k})$, so finite filters give a trace-class correction.
+The finitely many excluded columns add finite rank.
+
+For general $g$, Theorem~\ref{thm:wiener-synthesis} gives uniform convergence
+of the Gram operators under truncation. The boundary sums give uniform
+convergence of the symbols on the two-torus. Compact operators are
+norm-closed, proving the assertion and continuity of the remainder.
+\end{proof}
+
+\begin{theorem}[Full Riesz criterion]\label{thm:full-riesz}
+There are $R$ and $c>0$ such that every finite array supported on $r>R$ obeys
+\begin{align*}
+ c\sum_{r,l}|x_{r,l}|^2
+ &\le\left\|\sum_{r,l}x_{r,l}\lambda^{-r}C^lh_r(g)\right\|_2^2\\
+ &\le2\pi^2\kappa_A^2M_1(g)^4\sum_{r,l}|x_{r,l}|^2
+\end{align*}
+if and only if $X_g,Y_g$ have no zeros. The limiting lower tail edge is
+\[
+ c_\infty(g)=\pi^2\min X_g\min Y_g.
+\]
+\end{theorem}
+\begin{proof}
+Compactness and continuity imply
+$\sup_\omega\|E_RK_g(\omega)E_R\|\to0$; use a finite norm net of the compact
+image of $K_g$. Toeplitz positivity gives the lower edge. Shifted long plane
+waves at minimizing $\theta$ and $\omega-\theta$ give the matching upper
+edge. Finally apply Parseval to the simultaneous-translation variable.
+If the edge is zero, localization near the minimizing $\omega$ by a long
+trigonometric polynomial rules out a positive uniform lower bound.
+\end{proof}
+
+For every real inversion-even background, a sine quadrature gives
+\[
+ X_{g+\varepsilon i(e_v-e_{-v})}=X_g+2\varepsilon^2\xi(v)^2,
+ \qquad
+ Y_{g+\varepsilon i(e_v-e_{-v})}=Y_g+2\varepsilon^2\eta(v)^2.
+\]
+Hence for every nonzero $\varepsilon$,
+\[
+ c_\infty\ge
+ \frac{4\pi^2\varepsilon^4\det(v,Av)^2}{(\operatorname{tr}A)^2-4}>0.
+\]
+Only a phase quadrature is added when $v$ is already supported. For an
+arbitrary real $M_{1+\delta}$ background, $\delta>0$, varying the one
+conjugate coefficient pair by $(u+iw,u-iw)$ fails only on a subset of two
+rectifiable curves in the $(u,w)$ plane: a zero requires both real and
+imaginary coefficient-filter components to equal $-u,-w$ on one of the two
+radii. Thus almost every arbitrarily small such change gives the full Riesz
+property. The property is open and dense in the real $M_1$ space and in
+$C^\infty$, using finite-polynomial approximation for density.
+No quantum Heisenberg-scale comparison follows from these classical bounds.
