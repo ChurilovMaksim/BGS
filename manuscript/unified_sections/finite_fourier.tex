@@ -1,0 +1,70 @@
+\section{Finite Fourier alphabets and cohomological variance}\label{sec:finite_fourier}
+Fix \(T=\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)\), \(\alpha=1+\sqrt2\), \(\lambda=\alpha^2\), and \(N+F\sqrt2=\alpha^K\) for odd prime K. Use \(U_0^K=I\), \(U_0W(v)U_0^*=W(Tv)\) and \(W(a,b)f(x)=e_N(a(x-b/2))f(x-b)\) as in the \hyperref[sec:floquet]{finite construction}. Let \(B_v=W(v)+W(-v)\). Write \(\tau_N=\operatorname{Tr}/N\), \(\tau_-=\operatorname{Tr}_-/d\), \(d=(N-1)/2\), and \(c_N=\sqrt{2N/(N-1)}\).
+
+\subsection{Uniform finite-alphabet arithmetic}\label{finite_fourier:uniform-finite-alphabet-arithmetic}
+
+Choose nonzero integral representatives \(v_1,\ldots,v_S\) from distinct signed T-orbits: \(v_a\ne\pm T^jv_b\) for a different from b and every integer j. Put \(\beta_{(a,b)}=b+\sqrt2 a\), so \(\beta_{Tv}=\lambda\beta_v\), and let \(M\geq1\) bound both real embeddings of all \(\beta\) values.
+
+\textbf{Lifting lemma.} If \[
+ \lambda^{\lceil K/m\rceil}(1-\lambda^{-K})^2>4m^2M^2,          \tag{FA.1}
+\] a signed modular zero relation of m orbit atoms, after cyclic rotation, is a characteristic-zero relation with all exponents between 0 and \(K-\lceil K/m\rceil\).
+
+Indeed cut at the largest of the gaps between at most m occupied labels. Rotation is valid modulo N since \(T^K=I\). The resulting algebraic integer P is in \(N\mathbb Z[\sqrt2]\), since its two coordinates vanish modulo N. If nonzero its integer norm is divisible by \(N^2\), but its two real embeddings bound that norm by \(m^2M^2\lambda^{K-\lceil K/m\rceil}<N^2\). Here \(N^2=\lambda^K(1-\lambda^{-K})^2/4\). This proves the claim also for composite N, without invertibility of the chosen \(\beta\) values.
+
+A gap B satisfying \(\lambda^B>m^2M^2\) splits a lifted relation into independently vanishing pieces. Write it as \(P_{\rm low}+\lambda^{a+B}P_{\rm high}\) with low exponents at most a and high exponents nonnegative. A nonzero high part has absolute value at least \(1/(mM)\) because its conjugate is bounded by mM and its norm is a nonzero integer. It cannot be cancelled by a low part bounded by \(mM\lambda^a\).
+
+There is no one-atom zero relation. A two-atom relation only cancels an identical species and exponent with the opposite sign, by the orbit assumption and \(\lambda>1\).
+
+\textbf{Bounded multiplicity lemma.} Choose integer B with \(\lambda^B>16M^2\). Put \(D_*=3B\) and \(J=[2S(2D_*+1)]^2\). Once (FA.1) holds for m=4, every signed unordered pair key with distinct time labels is nonzero and has at most J representations.
+
+For two equal keys cancel identical opposite atoms. A trivial cancellation gives the same pair. Otherwise four occurrences remain, and cannot split into proper zero components: the only possible two-plus-two decomposition would itself be cancellation. The gap lemma confines all four to one cyclic interval of length at most \(D_*\). Pin an atom in the first pair. Each atom of any other representation lies within circular distance \(D_*\) of it, giving at most \(2S(2D_*+1)\) choices per atom. Squaring gives J, also when this neighbourhood covers the circle. A zero pair would lift to a forbidden two-atom relation. This bound allows structural collisions; it is not claimed sharp.
+
+\subsection{Ordered Gaussian moments and the variance kernel}\label{finite_fourier:ordered-gaussian-moments-and-the-variance-kernel}
+
+Let \(Y_{s,K}=(2K)^{-1/2}\sum_{j<K} B_{T^jv_s}\). Their ordered joint moments converge to those of S independent standard real Gaussians. In particular, for r in a fixed bounded subset of \(\mathbb R^S\), \[
+ \tau_-\bigl((\sum_s r_sY_{s,K})^{2q}\bigr)
+ = (2q-1)!!\|r\|_2^{2q}+O(K^{-1})+O(K^q/N).                  \tag{FA.2}
+\] Odd moments of fixed order m are \(O(K^{-1/2})+O(K^{m/2}/N)\), not in general exponentially small. The same assertions hold for the full normalized trace.
+
+\textbf{Proof.} The exact odd trace of a Weyl word is \[
+ \tau_-(e_N(\phi)W(v))=e_N(\phi)\frac{N\mathbf1_{v=0}-1}{N-1}. \tag{FA.3}
+\] The subtracted parity term in the mth moment is bounded by \((\sqrt{2K}\|r\|_1)^m/(N-1)\). Lift central words, cancel opposite identical atoms, and split the rest at large gaps. Nontrivial components have at least three occurrences and bounded span at fixed m. Restore the cancelled pairs as two-occurrence components. A nonpaired 2q-word then has at most q-1 components, while a word of length 2q+1 has at most q. There are finitely many partitions, species, signs and bounded offsets; each component has K translations. Their normalized contributions are respectively \(O(1/K)\) and \(O(1/\sqrt K)\). The cyclic cut introduces no extra K: translations were already counted on the original cyclic label set.
+
+The remaining words pair identical species-time atoms with opposite signs. Each pairing gives the Wick covariance product; repeated labels cause only \(O(1/K)\) normalized overcount. The phase is a product of crossing factors \(e_N(\omega(v_s,T^jv_t))\) and conjugates. Their uniform sum bound (FA.5) below, uniformity of each pair-label difference, and \(|\prod z_i-1|\leq\sum|z_i-1|\) give an \(O(1/K)\) phase error. No independence of crossing phases is required. This proves the ordered mixed version of (FA.2). Tightness, uniform integrability from higher even moments and Gaussian moment determinacy give weak convergence of each real linear combination, also for bounded coefficient vectors converging along subsequences.
+
+For a fixed finite real cosine symbol \(f=\sum_v a_v B_v\), first combine v and -v, then group frequencies by signed T-orbits O. Write \(c_O=\sum_{v\in O}a_v\). Exactly, \[
+ \bar f=\frac1K\sum_{j<K}U_0^jfU_0^{-j}=\sum_O c_O\frac1K\sum_{j<K}B_{T^jv_O}.
+\] Consequently \(\sqrt K\bar f\) has Gaussian trace limit of variance \[
+ \sigma_f^2=2\sum_Oc_O^2.                                    \tag{FA.4}
+\] Fourier orthogonality identifies this with the classical Green--Kubo sum \(\sum_{n\in\mathbb Z}\int f\,\mathcal C^nf\), where \(\mathcal C\) acts on Fourier indices by T. Only finitely many terms are nonzero for finite support. The kernel consists exactly of finite Fourier coboundaries: on each orbit, if a finite sequence \(a_{n}\) has sum zero, then \(b_n=\sum_{j\leq n}a_j\) has finite support and \(a_n=b_n-b_{n-1}\). Conversely a difference has zero sum. The classical interpretation is prior mathematics, not a novelty claim.
+
+\subsection{Explicit phase and commutator bounds}\label{finite_fourier:explicit-phase-and-commutator-bounds}
+
+Define \[
+ a_j=\max_{s,t}|e_N(\omega(v_s,T^jv_t))-1|,\quad L_K=\sum_ja_j,\quad W_K=K\sum_j|c_j|a_j,\quad c_j=\frac{K-1-2j}{2K}.
+\] Species exchange gives \(a_{K-j}=a_j\). The embeddings give \(|\omega(v_s,T^\delta v_t)|\leq M^2\lambda^{|\delta|}\) for centered \(\delta\). With \(r=\lambda^{-1}\) and \(|\delta|=(K-1)/2-\ell>0\), \(a_j\leq4\pi M^2r^\ell/[\alpha(1-r^K)]\); also \(a_0\leq2\pi M^2/N\). The two weights are \(\ell/K\) and \((\ell+1)/K\). Summing geometric series gives \[
+ L_K\leq\frac{4\pi M^2}{1-r^K}+\frac{2\pi M^2}{N},\qquad W_K\leq\frac{2\sqrt2\pi M^2}{1-r^K}+\frac{\pi M^2K}{N}. \tag{FA.5}
+\] Both are less than \(32M^2\) for \(K\geq3\). The identity needed for the weighted sum is \((1+r)/[\alpha(1-r)^2]=1/\sqrt2\).
+
+For \(Q=\sum_s r_s B_{v_s}\), set \(Q_j=U_0^jQU_0^{-j}\), \(\bar Q=K^{-1}\sum Q_j\), \(G=\sum c_jQ_j\) and \(l=\|r\|_1\). Then \(G-U_0GU_0^*=Q-\bar Q\), and \[
+ \|[G,Q]\|_{\rm op}\leq4l^2W_K/K,\quad \|[Q,\bar Q]\|_{\rm op}\leq4l^2L_K/K.
+\] The distinct-time expansion of \([G,\bar Q]\) has coefficient \((s-t)/K^2\). Cauchy--Schwarz within each of the at most J representations of a key, followed by full-space Weyl orthogonality, yields the useful sharper bound \[
+ \|[G,\bar Q]\|_{2,N}^2\leq\frac{4J\|r\|_2^4}{K^4}\sum_{j=1}^{K-1}(K-j)j^2a_j^2\leq\frac{J\|r\|_2^4L_K}{K}. \tag{FA.6}
+\] The last inequality uses symmetry, \(a_j^2\leq2a_j\) and \(j(K-j)\leq K^2/4\). The weaker bound with \(S^2\|r\|_\infty^4\) in place of \(\|r\|_2^4\) is also valid. Restriction to odd space costs \(c_N\) by positivity; restricted Weyl orthogonality is not assumed.
+
+\textbf{Finite normal form.} For all real x, once four-atom lifting holds, \[
+ \begin{split}
+ &\|e^{-ixG}(e^{ixQ}U_0)e^{ixG}-e^{ix\bar Q}U_0\|_{2,-}\\
+ &\quad\leq x^2\left[\frac{2l^2(W_K+L_K)}K+\frac{c_N\|r\|_2^2\sqrt{JL_K}}{2\sqrt K}\right].
+ \end{split} \tag{FA.7}
+\] Join -G,Q and then Q-G,\(U_0GU_0^*\) using the two-factor Duhamel inequality. The second commutator is \([Q-G,\bar Q]\). Equations (FA.5)--(FA.6) prove (FA.7), without requiring xG small. On full space replace \(c_N\) by one.
+
+At \(x=\tau/\sqrt K\) this gives \[
+ \tau_-((e^{i\tau f/\sqrt K}U_0)^{mK})\longrightarrow e^{-m^2\tau^2\sigma_f^2/2} \tag{FA.8}
+\] for every fixed finite real cosine symbol, not only orbit representatives. Indeed write \(f=f_{\rm rep}+g-\mathcal Cg\) with fixed finite g. The triple \(e^{-ixg}e^{ixf}e^{ix\mathcal Cg}\) has sum \(f_{rep}\); its commutators \([-g,f]\) and \([f-g,\mathcal Cg]\) are \(O_f(1/N)\) in norm because their frequencies are fixed. Its error is \(O_f(x^2/N)\), hence \(O_f(1/N)\) over K steps. Apply (FA.7) to \(f_{rep}\) and (FA.2) to its average.
+
+\subsection{Further scope}\label{finite_fourier:further-scope}
+
+General real Fourier symbols on the full quantum space are covered by replacing \(r_sB_v\) with \(c_sW(v)+\bar c_sW(-v)\). In the proof of (FA.2), the two orientations of a pair sum to \(2\operatorname{Re}(c_a\bar c_b)\); the scalar variance is \(2\sum|c_O|^2\). All norm estimates use absolute coefficients and remain valid. On odd space retain inversion-even symbols. The standard physical centered operator is \((-1)^{ab}W(a,b)\). Since \(T=I\) modulo 2, this sign is constant on each orbit and does not change the variance or the covariance. It must nevertheless be included when identifying a physical Fourier symbol.
+
+The smooth-symbol extension, with a justified growing cutoff, is proved in \url{pell_smooth_observable_recurrence.md}. The distinct-orbit tool also proves the \hyperref[sec:mixed]{mixed-kick crossover}. No constants here supply Heisenberg-scale joint traces or positive BGS universality.

@@ -1,0 +1,211 @@
+\section{Weighted echoes, a resonance comb, and fixed-polynomial corrections}
+\label{sec:weighted}
+This section consolidates the weighted-observable, echo, resonance-comb,
+and polynomial-correction notes. All statements use the fixed Pell map and
+odd prime K, with $N+F\sqrt2=(1+\sqrt2)^K$, $D=(N-1)/2$,
+$B_j=U_0^jBU_0^{-j}$, and $\tau_-=D^{-1}\operatorname{Tr}_-$.
+The parameter $\tau$ below is a real kick amplitude, not a trace symbol.
+The preceding normal form and lifting lemmas supply the stated inputs;
+no independence of the finite Weyl operators is assumed.
+
+\subsection{Bounded arrays and the ordered Gaussian law}
+For real arrays f define
+\[
+ X_K(f)=(2K)^{-1/2}\sum_{j<K} f_j B_j,\qquad
+ Q_K(f,g)=K^{-1}\sum_{j<K}f_jg_j.
+\]
+For fixed r and arrays uniformly bounded by M, the ordered mixed moments obey
+\begin{equation}\label{eq:weighted-moments}
+ \tau_-\bigl(X_K(f_1)\cdots X_K(f_{2r})\bigr)
+ =\sum_{\pi\in\mathcal P_2(2r)}\prod_{\{a,b\}\in\pi}Q_K(f_a,f_b)
+       +O_{r,M}(K^{-1})+O_{r,M}(K^r/N).
+\end{equation}
+For each fixed odd m, after the lifting threshold,
+\[
+ |\tau_-(X_K(f_1)\cdots X_K(f_m))|
+       \leq M^m(2K)^{m/2}/(N-1).
+\]
+Thus convergence of a finite set of empirical Gram matrices gives the Wick
+moments of a commuting real Gaussian vector with that covariance.
+
+\begin{proof}
+The exact parity-projected word trace is
+$e_N(\phi)(N\mathbf1_{v=0}-1)/(N-1)$. It bounds the noncentral contribution
+as displayed. The largest-gap norm lift and bounded-cluster argument confine
+nonpaired words to $O_r(K^{r-1})$ choices. Odd central words are impossible:
+a lifted polynomial is divisible by $z^2-6z+1$, so its value at one is
+divisible by four and cannot be a sum of an odd number of signs.
+For each matching of a balanced word, pair-label summation with the phase
+replaced by one gives exactly the product of Q's. Repeated labels cost
+$O_{r,M}(K^{-1})$. Its crossing phase is a product of $z_{a-b}^{\pm1}$.
+Each individual difference is uniform, and $\sum_d|z_d-1|<9$; therefore
+$|\prod u_e-1|\leq\sum_e|u_e-1|$ bounds its weighted mean error by
+$9M^{2r}$ times the number of crossings divided by K. Distinct crossings
+need not be independent. Summation proves the formula.
+\end{proof}
+The exact four-letter support theorem also gives
+\begin{equation}\label{eq:weighted-comm}
+ \|[X_K(f),X_K(g)]\|_{2,-}
+ \leq\frac{6}{\sqrt K}\sqrt{\frac{2N}{N-1}}
+                   \|f\|_\infty\|g\|_\infty,\qquad K\geq11.
+\end{equation}
+Indeed, the coefficient of $[B_t,B_s]$ is
+$(f_tg_s-f_sg_t)/(2K)$, bounded by $\|f\|_\infty\|g\|_\infty/K$.
+The four Weyl terms for different unordered pairs have disjoint support.
+Their full-space squared norm is therefore at most
+$4\|f\|_\infty^2\|g\|_\infty^2K^{-2}\sum_{j=1}^{K-1}(K-j)a_j^2$.
+Use $a_{K-j}=a_j$, $a_j^2\leq2a_j$, and $\sum a_j<9$, then restrict the
+positive quadratic form to the odd sector. This proves
+\eqref{eq:weighted-comm}; it is not an operator-norm assertion.
+
+\subsection{The interaction-picture echo}
+Let $U_\varepsilon=e^{i\varepsilon B}U_0$,
+$\varepsilon=\tau/\sqrt{2K}$ and $E_K(t)=U_\varepsilon^tU_0^{-t}$.
+Write $t=mK+s$, $0\leq s<K$, including negative t by the usual floor
+convention. Define $w_{t,K}(j)=m+\mathbf1_{j<s}$.
+The centered coefficients $c_j=(K-1-2j)/(2K)$ satisfy the exact identity
+\[
+ c_j+t/K-c_{(j-t)\bmod K}=w_{t,K}(j).
+\]
+Inserting the finite normal form, telescoping t unitary factors, and combining
+the three exponentials with \eqref{eq:weighted-comm} gives
+\begin{equation}\label{eq:echo-finite}
+ \|E_K(t)-e^{i\tau X_K(w_{t,K})}\|_{2,-}
+       \leq (11C+2)\tau^2/\sqrt K\qquad(|t|\leq CK).
+\end{equation}
+To detail the constant, the original normal-form error contributes
+$6|t/K|\tau^2/\sqrt K$. The comparison has three factors with arrays c,
+the constant $t/K$, and the negative shifted c. The two Duhamel errors sum
+to at most $c_N(3|t/K|+3/4)\tau^2/\sqrt K$, where
+$c_N=\sqrt{2N/(N-1)}\leq\sqrt{7/3}$. This yields the displayed bound.
+The same argument uses adjoints at negative times.
+
+Let $\mathcal B(a)$, $0\leq a\leq1$, be one standard Brownian motion and,
+for $\alpha=m+a$ with $0\leq a<1$, put
+\[
+ Y(\alpha)=m\mathcal B(1)+\mathcal B(a).
+\]
+For $\beta=n+b$ its covariance is
+$mn+mb+na+\min(a,b)$. The arrays $w_{t,K}$ have precisely this limiting
+Gram matrix when $t/K\to\alpha$. Therefore for every fixed finite collection
+of integer exponents $r_l$ and times $t_l/K\to\alpha_l$,
+\[
+ \tau_-\left(\prod_l E_K(t_l)^{r_l}\right)
+ \longrightarrow
+ \exp\left[-\frac{\tau^2}{2}\sum_{l,j}r_lr_j
+                     \operatorname{Cov}(Y(\alpha_l),Y(\alpha_j))\right].
+\]
+The order of the factors on the left is retained. Commutator estimates allow
+them to be combined in the limit; there is no common eigenbasis at finite K.
+In particular the phase variance of one echo is
+$\tau^2[m^2+(2m+1)a]$. The same Brownian interval is reused on each cycle:
+fresh independent noise would give a different variance. This is a tracial
+finite-dimensional-distribution statement, not convergence of quantum
+measurement trajectories in a path space.
+
+\subsection{The full bounded recurrence window}
+For $1\leq s<K$, the fixed-point equations for $W(v)U_0^s$ and
+$RW(v)U_0^s$ have unique solutions, so
+$|\tau_-(W(v)U_0^s)|\leq1/D$. Hence, with $X_K=X_K(1)$,
+\[
+ |\tau_-(X_K^lU_0^s)|\leq(2K)^{l/2}/D.
+\]
+For $|t|\leq CK$, $K\nmid t$, let $A_0=C|\tau|$. Taylor's integral
+remainder of degree $2r-1$ and the normal form yield
+\[
+ |\tau_-(U_\varepsilon^t)|
+ \leq\frac{6C\tau^2}{\sqrt K}
+ +\frac1D\sum_{l<2r}\frac{(A_0\sqrt{2K})^l}{l!}
+ +\frac{A_0^{2r}}{(2r)!}\tau_-(X_K^{2r}).
+\]
+First let K grow at fixed r, then r grow. The last limiting bound is
+$A_0^{2r}/(2^rr!)\to0$. Thus nonresonant traces vanish uniformly in this
+window, whereas $\tau_-(U_\varepsilon^{mK})\to e^{-m^2\tau^2/2}$.
+If $e^{i\theta_l}$ are the actual eigenvalues, the empirical measure of
+$(e^{i\theta_l},e^{iK\theta_l})$ converges to Haar measure times the wrapped
+normal law: its Fourier coefficients are traces at $a+bK$.
+This is a two-scale law of one eigenvalue, not independence of two levels.
+
+\subsection{Minimal Pell relations and the first polynomial correction}
+For an integer polynomial P, write $\|P\|_1$ for its coefficient norm.
+If $P\ne0$ and $P(\lambda)=0$, then $\|P\|_1\geq8$, with equality only for
+$\pm z^j(z^2-6z+1)$. Indeed $P(1)$ is divisible by four, so its norm is even;
+if it were at most six the leading term would dominate since $\lambda>5$.
+At norm eight the leading coefficient is one in absolute value. After a sign
+change write $P=z^L+c z^{L-1}+R$, $\|R\|_1=7-|c|$. Evaluation gives
+$|(6+c)\lambda-1|\leq7-|c|$, forcing $c=-6$ and then
+$R=z^{L-2}$. Thus the first genuinely nonpaired central words have length eight.
+The bounded-cluster argument improves their normalized contribution at any
+fixed even order to $O_r(K^{-3})$.
+
+For a fixed simple crossing graph, expand the phase product through first
+order in $z_d-1$. Any two distinct edges form a forest, so their label
+differences are independent uniform variables. The remainder is therefore
+$O(K^{-2})$. A matching with c crossings contributes
+$1+c(S_K-1)+O(K^{-2})$, $S_K=K^{-1}\sum_dz_d$. The total crossing count is
+$A_r=\binom{2r}{4}(2r-5)!!$: choose four interlaced endpoints and match the
+rest. Four repeated positions cause one excess matching; their six balanced
+sign assignments contribute $3A_r/(2K)+O(K^{-2})$. Since
+$S_K=1-(\gamma-3/2)/K+O((KN)^{-1})$, it follows that
+\begin{equation}\label{eq:edgeworth-mom}
+ \tau_-(X_K^{2r})=(2r-1)!!-
+       \frac{\gamma}{K}\binom{2r}{4}(2r-5)!!
+       +O_r(K^{-2})+O_r(K^r/N).
+\end{equation}
+Here
+\[
+ \gamma=\frac32+2\sum_{j\geq0}
+ \left[1-\cos\left(\frac{4\pi}{\sqrt2(1+\sqrt2)}\lambda^{-j}\right)\right].
+\]
+For every fixed real polynomial f and standard Gaussian Z,
+\[
+ \tau_-(f(X_K))=\mathbb Ef(Z)-\frac{\gamma}{24K}\mathbb Ef^{(4)}(Z)
+             +O_f(K^{-2})+O_f(K^{\deg f/2}/N).
+\]
+This is a fixed-polynomial expansion, not a distribution-function Edgeworth
+theorem. Constants are not controlled as the polynomial degree grows.
+
+For completeness, the stronger crossing-graph expansion is
+$\mathbb E Z_G=S_K^{|E(G)|}+O_G(K^{-3}+N^{-1})$. Three independent forest
+edges give $O(K^{-3})$. A triangle is the only three-edge exception; its
+three differences sum to zero modulo K, while large defects concentrate
+near the half-period. Writing $\ell=(K-1)/2-|d|$, a triangle forces
+$\sum\ell\geq(K-3)/2$, so the product is $O(\lambda^{-K/2})=O(N^{-1})$.
+Every larger edge subset contains a three-edge forest or is that triangle;
+remaining factors are bounded by two. This proves the stated refinement.
+
+At order eight, the minimal relation is
+$(3,-4)+(3,4)-6(1,0)=0$. Among its 56 orders the seven half-symplectic phases
+$-12,-8,-4,0,4,8,12$ each occur eight times. Both signs and K time shifts
+therefore give the isolated nonpaired central contribution
+\[
+ \frac{N}{N-1}K^{-3}
+  [1+2\cos(8\pi/N)+2\cos(16\pi/N)+2\cos(24\pi/N)].
+\]
+It is $7/K^3+O((K^3N)^{-1})$, in addition to all balanced contributions;
+it is not the whole eighth moment. The sufficient eight-letter lifting
+threshold holds for odd primes $K\geq29$. Its remaining odd-parity trace
+error is at most $16K^4/(N-1)$.
+
+\subsection{Subcritical microscopic concentration without a Gaussian input}
+For a circle spectrum define $a^2=D^{-1}\sum_l\operatorname{dist}
+(\theta_l,K^{-1}\mathbb Z)^2$. Arcs of halfwidth $w<1/(2K)$ about the roots
+contain at least $D(1-a^2/w^2)_+$ points. Counting gaps and applying
+Cauchy--Schwarz to cells of length $x/D$ gives
+\[
+ \frac1D\#\{S_l>x\}\leq\frac{2a^2}{w^2}+\frac KD+\frac{2Kw}{x},
+ \qquad
+ R_D(x)\geq\frac{(1-a^2/w^2)_+^2}{K/D+2Kw/x}-1.
+\]
+An eigenvalue matching for normal matrices follows by decomposing their
+squared-eigenbasis-overlap matrix into permutations. Chord distance bounds
+circle distance, and the finite normal form gives
+\[
+ a\leq\frac{3\varepsilon^2+
+            (|\varepsilon|/\pi)\sqrt{N/(N-1)}}{\sqrt K}.
+\]
+Consequently $|\varepsilon|\sqrt K\to0$ implies $Ka\to0$, collapse of the
+gap law to $\delta_0$, and divergence of $R_D(x)$ for each fixed x. Set
+$w=(Ka)^{2/3}/K$ for the gap estimate and $w=2a$ for the pair estimate;
+the case $a=0$ is direct. These conclusions need no Gaussian limit and
+refer to the original phases, not folded phases or isolated old eigenspaces.
