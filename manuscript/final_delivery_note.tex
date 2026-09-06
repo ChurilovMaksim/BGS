@@ -1,63 +1,82 @@
+% Maintained continuation, included through the single canonical manuscript.
+\input{unified_sections/wiener_riesz.tex}
+\input{unified_sections/phase_crossover.tex}
+\input{unified_sections/polynomial_multisphere.tex}
+\input{unified_sections/balanced_control.tex}
+\input{unified_sections/entire_gauge.tex}
+
 \section{Final consolidation addendum}
 \label{sec:final-consolidation-addendum}
-This addendum records the corrected canonical repository state after the final
-recovery and cleanup pass of 6 September 2026.  It supersedes delivery-state
-sentences in the preceding audit; it does not change the mathematical
-hypotheses or conclusions of earlier theorems.  The repository-shape record is
-\texttt{record/final\_consolidation\_audit\_20260906.md} and claim status is
-controlled by \texttt{record/claim\_ledger.md}.
+This addendum records the corrected canonical repository state after the
+recovery and cleanup pass of 6 September 2026, followed by the research
+continuation above. It supersedes delivery-state sentences in the preceding
+audit; it does not silently change the hypotheses of earlier theorems.
+The historical repository-shape record is
+\texttt{record/final\_consolidation\_audit\_20260906.md}.
+Claim status is controlled by \texttt{record/claim\_ledger.md}, with the
+explicit proof and correction scopes of the maintained continuation notes.
 
 Three previously omitted arithmetic packets were recovered from exact
 historical Git blobs: the Cayley subgroup-curve route, the generic elliptic
 product-row reduction, and the specialization-safe projective Bezout rank
-criterion.  The first is distinct from the bilinear curve used in the
-maintained direct Cayley theorem.  In the recovered route the polynomial has
-bidegree $(2,2)$.  Specializing Makarychev--Vyugin Theorem~2 with $m=n=2$ and
+criterion. The first is distinct from the bilinear curve used in the
+maintained direct Cayley theorem. In the recovered route the polynomial has
+bidegree $(2,2)$. Specializing Makarychev--Vyugin Theorem~2 with $m=n=2$ and
 $g=h=1$ gives the coefficient
 \[
  12mng(m+n)=192,
 \]
-with the stated subgroup-size hypotheses.  This auxiliary route does not
+with the stated subgroup-size hypotheses. This auxiliary route does not
 replace the sharper maintained bound $E_+(A)<34K^{8/3}$ from the bilinear
 specialization \cite{VM2015,MV2019}.
 
 The projective Bezout criterion is not the retracted two-sided use of the older
-dehomogenized $D'/G'$ invariants.  Its matrix nullity equals the homogeneous
+dehomogenized $D'/G'$ invariants. Its matrix nullity equals the homogeneous
 gcd degree after specialization, giving an exact determinantal support
-description.  Growing-$K$ control of the resulting integral support remains
-open; no polynomial largest-prime theorem is inferred.  The generic elliptic
+description. Growing-$K$ control of the resulting integral support remains
+open; no polynomial largest-prime theorem is inferred. The generic elliptic
 product-row construction reduces the cross-row problem to a genus-one fibre
 product, but no uniform $O(1)$ intersection theorem is claimed.
 
-The maintained checkout now has one publication surface,
-\texttt{manuscript/WoW\_unified.tex}.  Obsolete standalone article copies and
+The maintained checkout has one publication surface,
+\texttt{manuscript/WoW\_unified.tex}. Obsolete standalone article copies and
 the one-shot scripts that regenerated them are absent from canonical
-\texttt{main}.  The active computational stack is Python/C++/Lean/TeX; Julia is
+\texttt{main}. The active computational stack is Python/C++/Lean/TeX; Julia is
 retired and the structural audit rejects tracked Julia sources or project
-environments anywhere in the checkout.  Every maintained C++ verifier remains
-in the CMake graph and the top-level Lean module remains the import surface for
-active \texttt{Bgs.*} certificates.
+environments anywhere in the checkout. Maintained C++ verifiers belong to
+the CMake graph and the top-level Lean module is the import surface for
+active \texttt{Bgs.*} certificates. Draft Lean sources are not counted as
+compiled analytic proofs.
 
 Divergent historical research branches are preserved by Git branch refs,
 commit SHAs, and tree SHAs rather than by copying their source trees under
-\texttt{archive/branch-snapshots}.  That directory is metadata-only.  The
-original 204-file consolidation ZIP was independently recovered from the
-user's delivery library and verified by SHA-256; its byte-level identity is
-recorded in \texttt{archive/delivery-20260906/README.md}.  Historical logs and
-artifacts remain provenance and are not relabelled as executions of the final
-commit.
+\texttt{archive/branch-snapshots}. That directory is metadata-only. The
+original 204-file consolidation ZIP was recovered from the user's delivery
+library and verified by SHA-256; its byte-level identity is recorded in
+\texttt{archive/delivery-20260906/README.md}. Historical logs and artifacts
+remain provenance and are not relabelled as executions of a later commit.
 
-The corrected canonical TeX graph is self-contained.  Recovered long sections
-are partitioned only into non-overlapping sequential inputs; split boundaries
-are required to respect TeX environments.  A clean reconstruction of the
-current source blobs, after the boundary-only arithmetic repair, completes
-three pdfTeX passes without unresolved references/citations or overfull boxes.
-This is build evidence, not independent mathematical referee acceptance.
+The earlier corrected canonical TeX graph was reconstructed and passed three
+pdfTeX passes after a boundary-only arithmetic repair. That is historical
+build evidence, not a fresh execution claim for the continuation inputs and
+not independent mathematical referee acceptance. Current sources, command
+exit codes and output hashes must be judged from their own execution record.
 
-GitHub Actions attempts observed during finalization did not receive a runner
-(no job steps executed), so no cloud-CI success is inferred from those runs.
-This infrastructure fact is separate from the scientific status.  In
-particular positive microscopic BGS/GOE/COE universality remains open: the
-missing obligation is still appropriately desymmetrized Heisenberg-scale joint
-trace or local-resolvent control, together with the high-frequency tail needed
-to pass from band-limited tests to the full local law.
+The new results distinguish two Fourier variables, retain both oriented
+orbits, and separate classical covariance from quantum spectral statistics.
+They include a uniform weighted-Fourier synthesis bound, a full translated
+resonance-lattice criterion, a two-window phase crossover, sharp polynomial
+rank rigidity, explicit quantum controllability, and a classified smooth
+temporal gauge. Their proofs do not establish priority or a complete Lean
+formalization. The corrected resultant arguments distinguish squarefreeness
+of a gcd from simplicity in an input and retain ambient degrees when an
+input degree drops. The former all-frequency all-pass promotion is excluded
+by an explicit negative control.
+
+GitHub Actions attempts observed during the earlier finalization did not
+receive a runner, so no cloud-CI success is inferred from those runs. This
+infrastructure fact is separate from scientific status. In particular no
+positive microscopic BGS/GOE/COE universality theorem is claimed here: the
+missing obligation is appropriately desymmetrized Heisenberg-scale joint
+trace or local-resolvent control, together with the required high-frequency
+tail. Controllability with variable controls is not that spectral theorem.
