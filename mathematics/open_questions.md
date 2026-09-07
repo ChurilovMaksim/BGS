@@ -75,13 +75,31 @@ The project contains several strong negative and structural lessons:
 
 ## E. All-members analytic resonance nondegeneracy
 
-The generic infinite-support part is now closed. `resonance_wiener_stability.md` gives an explicit weighted-Wiener stability ball around every nonconstant real trigonometric polynomial, and `generic_wiener_resonance.md` proves that `{Gamma_A>0}` is open and dense in the natural weighted-Wiener Banach space and in every fixed analytic Wiener strip. Hence exact zero-variance cancellations are closed and nowhere dense in those spaces.
+The generic infinite-support part is now closed substantially beyond analytic strips. `resonance_wiener_stability.md` gives an explicit weighted-Wiener stability ball around every nonconstant real trigonometric polynomial. `generic_wiener_resonance.md` proves that `{Gamma_A>0}` is open and dense in the natural weighted-Wiener Banach space, every fixed analytic Wiener strip, every `H^s(T^2)` with `s>2`, and `C^infinity(T^2)` with its Frechet topology. Exact zero-variance cancellations are therefore closed and nowhere dense in all of those spaces.
 
-What remains open is strictly stronger:
+Two further analytic mechanisms are also closed:
 
-**Open question:** is `Gamma_A(g)>0` for every nonconstant real-analytic observable, or can one construct an analytic infinite-support exact-cancellation counterexample? A bare all-members analyticity theorem is not currently claimed.
+1. `analytic_bracket_rigidity.md` proves
 
-Smooth infinite-support counterexamples from the separated-support and noncommuting-return-word constructions remain compatible with the generic theorem: they occupy no open weighted-Wiener neighbourhood.
+```text
+{g,C_A g}=0 identically and g real analytic  =>  g constant.
+```
+
+So the separated-support pointwise-zero mechanism cannot occur for a nonconstant analytic observable.
+
+2. `analytic_coboundary_regularization.md` proves that an analytic zero-orbit-sum observable has an analytic cohomological transfer, with an explicit positive strip-width loss. Hence any hypothetical nonconstant analytic `g` with `Gamma_A(g)=0` must satisfy
+
+```text
+{g,C_A g}/(4*pi)=u-C_A u,
+{g,C_A g} != 0,
+u real analytic.                                                (*)
+```
+
+The remaining question is therefore sharply reduced:
+
+**Open question:** can the nonlinear analytic cohomological equation (*) have a nonconstant real-analytic solution `g`, or can one prove it impossible? Equivalently, is `Gamma_A(g)>0` for every nonconstant real-analytic observable?
+
+The known compactly supported Gevrey counterexample is not analytic; the project's nontrivial entire temporal all-pass gauges of one harmonic are proved to lie in no finite Gevrey class. Neither resolves (*).
 
 This question may inform perturbation theory but is not itself the missing BGS theorem.
 
