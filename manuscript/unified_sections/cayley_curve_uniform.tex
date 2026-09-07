@@ -1,0 +1,161 @@
+\section{A global Cayley subgroup-curve energy bound}
+\label{sec:cayley-curve-uniform}
+The scaling-rigidity result above explains why the two-parameter collision
+family cannot be reduced to one polynomial by elementary coordinate changes.
+There is nevertheless a uniform bound for every subgroup size, obtained by
+applying the positive-characteristic curve theorem of Corvaja--Zannier,
+\emph{J. Eur. Math. Soc.} \textbf{15} (2013), Theorem~2/Corollary~2,
+to each off-diagonal ratio curve.  The exponent remains
+$8/3$, but the earlier parity and size restrictions disappear.
+
+Let $p$ be an odd prime, let $H\leq\mathbf F_p^*$ have order $K\geq2$, and put
+\[
+ c(h)=\frac{h+1}{h-1},\qquad A=c(H\setminus\{1\}),
+\]
+with ratio-fibre map
+\[
+ d_\rho(x)=\frac{(\rho x-1)(x-1)}{(1-\rho)x},
+ \qquad \rho\in H\setminus\{1\}.
+\]
+For $\rho,\sigma\in H\setminus\{1\}$ define the extended collision count
+\[
+ N(\rho,\sigma)=\#\{(x,y)\in H^2:d_\rho(x)=d_\sigma(y)\}.
+\]
+The original pair-key energy satisfies
+\begin{equation}\label{eq:czu-ec}
+ E_C:=\sum_t C_H(t)^2=E_+(A)-(K-1)^2.
+\end{equation}
+
+\begin{theorem}[Uniform Cayley curve bound]\label{thm:czu-cayley}
+For every odd prime $p$, every subgroup $H\leq\mathbf F_p^*$ of order
+$K\geq2$, and every distinct $\rho,\sigma\in H\setminus\{1\}$,
+\begin{equation}\label{eq:czu-point}
+ N(\rho,\sigma)\leq
+ \min\!\left\{2K,
+ \max\!\left(3\sqrt[3]{32}\,K^{2/3},\frac{48K^2}{p}\right)\right\}.
+\end{equation}
+If
+\[
+ B(K,p)=\min\!\left\{2K,
+ \max\!\left(3\sqrt[3]{32}\,K^{2/3},\frac{48K^2}{p}\right)\right\}
+\]
+and
+\[
+ D_K=2K^2-7K+4+\gcd(2,K),
+\]
+then
+\begin{equation}\label{eq:czu-energy-exact}
+ E_+(A)-(K-1)^2
+ \leq D_K+(K-1)(K-2)\bigl(B(K,p)-4\bigr).
+\end{equation}
+Consequently, uniformly for every subgroup size,
+\begin{equation}\label{eq:czu-energy-asymp}
+ E_+(A)\ll K^{8/3}+\frac{K^4}{p},
+\end{equation}
+with an absolute implied constant.
+\end{theorem}
+
+\begin{proof}
+Clearing denominators in $d_\rho(x)=d_\sigma(y)$ gives
+\begin{equation}\label{eq:czu-F}
+ F_{\rho,\sigma}(x,y)
+ =(1-\sigma)y(\rho x-1)(x-1)
+ -(1-\rho)x(\sigma y-1)(y-1).
+\end{equation}
+For $\rho\neq\sigma$ this has bidegree $(2,2)$.  Viewed as a quadratic in
+$y$, its discriminant is a quartic in $x$, and direct elimination gives
+\begin{equation}\label{eq:czu-disc}
+ \operatorname{disc}_x\!\bigl(\operatorname{disc}_yF_{\rho,\sigma}\bigr)
+ =4096\rho^2\sigma^2(\rho-1)^6(\rho-\sigma)^2(\sigma-1)^6.
+\end{equation}
+The right side is nonzero in odd characteristic for distinct nonzero
+nonunit parameters.  Hence the quadratic discriminant is squarefree and is
+not a square in $\overline{\mathbf F}_p(x)$; therefore the curve is
+geometrically irreducible.
+
+Its closure in $\mathbf P^1\times\mathbf P^1$ has exactly the four boundary
+points
+\[
+ (0,0),\quad(0,\infty),\quad(\infty,0),\quad(\infty,\infty).
+\]
+In the corresponding affine charts the pairs of first derivatives are
+\[
+ (\rho-1,1-\sigma),\quad
+ (\sigma(\rho-1),1-\sigma),\quad
+ (\rho-1,\rho(1-\sigma)),\quad
+ (\sigma(\rho-1),\rho(1-\sigma)),
+\]
+so none is singular.  Equivalently, \eqref{eq:czu-disc} exhibits the
+normalization as a double cover of $\mathbf P^1$ branched at four points,
+thus of genus one.  Since a bidegree $(2,2)$ divisor has arithmetic genus
+one, there are no hidden projective singularities.
+
+The coordinate functions $x$ and $y$ both have degree two.  Their valuation
+pairs at the four boundary points are
+\[
+ (1,1),\quad(1,-1),\quad(-1,1),\quad(-1,-1),
+\]
+which proves multiplicative independence modulo constants.  With $S$ the
+boundary divisor, the affine Euler characteristic entering
+Corvaja--Zannier is therefore
+\[
+ \chi=|S|+2g-2=4.
+\]
+The degree-two coordinate maps are separable because $p$ is odd, while
+$p\nmid K$ because $K\mid p-1$.  Corollary~2 of that paper, applied with
+$m_1=m_2=K$, $d_1=d_2=2$, and $\chi=4$, now yields
+\[
+ N(\rho,\sigma)
+ \leq\max\!\left(3\sqrt[3]{32}\,K^{2/3},\frac{48K^2}{p}\right).
+\]
+For each fixed $x\in H$, equation \eqref{eq:czu-F} is quadratic in $y$,
+which also gives the trivial bound $N(\rho,\sigma)\leq2K$.  This proves
+\eqref{eq:czu-point}.
+
+It remains to restore the exact pair-key domain.  Extending one ratio fibre
+to all $x\in H$ adds precisely $x=1$ and $x=\rho^{-1}$, and both have value
+zero.  Hence every ordered parameter pair contributes exactly four
+artificial zero--zero collisions, giving the exact identity
+\begin{equation}\label{eq:czu-restore}
+ E_C=\sum_{\rho,\sigma\neq1}N(\rho,\sigma)-4(K-1)^2.
+\end{equation}
+On the diagonal,
+\[
+ F_{\rho,\rho}(x,y)=-(\rho-1)(x-y)(\rho xy-1).
+\]
+Summing the intersections of these two components over $\rho\neq1$ gives
+$K-\gcd(2,K)$ and therefore
+\[
+ \sum_{\rho\neq1}N(\rho,\rho)
+ =2K(K-1)-K+\gcd(2,K).
+\]
+After subtracting the four artificial collisions for every diagonal ratio,
+the total diagonal contribution to $E_C$ is exactly $D_K$.  There are
+$(K-1)(K-2)$ ordered off-diagonal parameter pairs; inserting
+\eqref{eq:czu-point} into \eqref{eq:czu-restore} proves
+\eqref{eq:czu-energy-exact}.  Finally
+$B(K,p)\ll K^{2/3}+K^2/p$, and the diagonal term is $O(K^2)$, which gives
+\eqref{eq:czu-energy-asymp}.
+\end{proof}
+
+\begin{remark}[Range and sharp frontier]
+The characteristic-free term dominates whenever
+$128K^4\leq p^3$, equivalently
+$K\leq2^{-7/4}p^{3/4}$.  Its coefficient is
+$3\sqrt[3]{32}=9.5244063118\ldots$.  This removes the old odd-order and
+subgroup-size restrictions from the project curve route, but it does not
+improve the exponent.  The centered pointwise target
+\[
+ E_+(A)=\frac{(K-1)^4}{p}+O\!\left(K^{2+o(1)}\right)
+\]
+remains open and requires cancellation across the two-parameter family,
+not merely a worst-curve estimate.
+\end{remark}
+
+\begin{remark}[Exact regression boundary]
+The maintained exact verifier checks the discriminant identity, all four
+boundary gradients, diagonal factorization, restoration correction and the
+integer form of the energy estimate for every subgroup order $K\geq3$
+occurring for odd primes $p\leq257$.  This is a finite algebra and
+implementation regression; it does not re-prove the external Corvaja--Zannier theorem.
+\end{remark}
