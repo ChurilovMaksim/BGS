@@ -1,47 +1,30 @@
 # Evidence
 
-`evidence/` contains **promoted evidence only**. Promotion means that an object
-is still useful to the current research programme; it does not mean every
-object is a theorem.
+`evidence/` contains promoted evidence only. Promotion means that an object is useful to the current research programme; it does not mean every object is a theorem.
 
 ## Categories
 
 ### `certificates/`
 
-Exact finite certificates or finite implementation regressions. Each JSON file
-states its scope and maintained producer. The fixed-`K` Cayley audit is
-regenerated from scratch in CI and compared structurally with the committed
-JSON.
+Exact finite certificates, finite implementation regressions, and dated execution records. `provenance.md` is the path-complete current inventory and maps all committed certificate files to their maintained interpretation/validation surface.
+
+Not every verifier writes a committed certificate. In particular, the extremal-resonance producer writes exact witness/replay artifacts to the requested verification log directory and is independently replayed by C++; this is intentional workspace behavior.
 
 ### `numerical/`
 
-Descriptive floating-point diagnostics. These are not hypothesis tests and do
-not establish a limiting law.
-
-- `goe_spacing.json` reports an empirical CDF sup-distance to the Wigner
-  surmise. The old IID-KS `pass` interpretation is rejected because unfolded
-  gaps from the same spectra are dependent.
-- `matched_window_count_variance.json` compares a cat-map statistic with GOE
-  under the **same forward-window algorithm**. That algorithm is edge-truncated
-  and is not stationary number variance `Sigma^2(L)`.
-
-Both maintained numerical records diagonalize the **full complex Hermitian**
-sector matrix `M+M^*`. CI recomputes the complete committed diagnostics and
-compares them numerically. A temporary reconstruction-era entrywise-real
-projection is recorded as a bug in `../record/retractions.md`.
+Descriptive floating-point diagnostics. They are not hypothesis tests and do not establish limiting laws. The maintained spacing/window records diagonalize the full complex Hermitian sector matrix; historical entrywise-real projection is recorded as a bug in `../record/retractions.md`.
 
 ### `reference/`
 
-Only the minimal preserved inputs required by a maintained regression live
-here. Their SHA-256 hashes are pinned before use.
+Only minimal preserved inputs required by maintained regressions live here. Consumers pin their hashes before use.
 
 ## Trust rule
 
-A JSON file is interpreted only at the level stated by its `scope` or
-`interpretation` field. Numerical agreement is never silently upgraded to a
-proof; a fixed finite certificate is never silently upgraded to a uniform
-asymptotic theorem.
+Interpret a JSON object only at the level stated by its `scope`, `interpretation`, run command and associated review. Numerical agreement is never silently upgraded to proof; a finite certificate is never silently upgraded to a growing-parameter theorem; a failed workflow with `steps=[]` is not treated as a scientific test failure.
 
-See [`provenance.md`](provenance.md) for producer/validator mapping and
-[`../record/claim_ledger.md`](../record/claim_ledger.md) for repository-wide
-claim status.
+Repository-wide claim status is controlled by
+
+- `../record/claim_ledger.md` for the base corpus;
+- `../record/claim_ledger_addendum_20260907.md` for the dated later/corrected scopes.
+
+See `provenance.md` for the current certificate inventory.
