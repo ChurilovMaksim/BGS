@@ -59,6 +59,31 @@ Since
 the embedding $X_\rho\hookrightarrow X_A$ is continuous and finite
 trigonometric polynomials are dense in $X_\rho$.  Therefore
 $\{\Gamma_A>0\}$ is open and dense in every fixed analytic Wiener strip as
-well.  In particular zero-variance analytic cancellations, if present, are
-topologically unstable in these Banach scales.  An all-members theorem for
-arbitrary nonconstant analytic observables remains open.
+well.
+
+There is also a natural Sobolev version.  For $s>2$, Cauchy--Schwarz gives
+\[
+ M_0(f)\leq\|f\|_{H^s}
+ \left(\sum_{v\in\mathbb Z^2}\|v\|_1^2\langle v\rangle^{-2s}\right)^{1/2},
+ \qquad M_A(f)\leq\|A\|_{1\to1}M_0(f),
+\]
+and the lattice sum converges because its radial shell is
+$O(n^{3-2s})$.  Hence $H^s(\mathbb T^2)$ embeds continuously in $X_A$ and
+trigonometric polynomials are dense there.
+
+\begin{corollary}[Sobolev and smooth genericity]
+For every $s>2$, modulo constants,
+\[
+ \{g\in H^s(\mathbb T^2;\mathbb R):\Gamma_A(g)>0\}
+\]
+is open and dense; the zero-variance set is closed and nowhere dense.  The
+same conclusion holds in $C^\infty(\mathbb T^2)$ with its Fr\'echet topology.
+\end{corollary}
+
+Thus the known smooth exact-cancellation examples are topologically
+exceptional even though they remain valid.  The separated-support example is
+compactly supported Gevrey-$s$ with $s>1$, not analytic, while the nontrivial
+entire temporal all-pass gauges of one harmonic are proved elsewhere to lie
+in no finite Gevrey class.  An all-members theorem for arbitrary nonconstant
+analytic observables, or an analytic exact-cancellation counterexample,
+remains open.
