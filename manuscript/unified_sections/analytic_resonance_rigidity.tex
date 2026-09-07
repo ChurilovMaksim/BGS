@@ -1,0 +1,137 @@
+\section{Analytic rigidity of zero resonance mechanisms}
+\label{sec:analytic-resonance-rigidity}
+The genericity theorem leaves open the stronger question whether every
+nonconstant real-analytic observable has positive resonance variance.  Two
+rigidity results substantially narrow any possible counterexample.  First,
+pointwise vanishing of the Poisson bracket is impossible in the analytic
+category.  Second, if the variance nevertheless vanishes, the cohomological
+transfer inherits analyticity from the bracket.
+
+\begin{theorem}[Analytic pointwise-bracket rigidity]
+\label{thm:analytic-bracket-rigidity}
+Let $S\in\mathrm{SL}(2,\mathbb Z)$ be hyperbolic and let
+$Cg=g\circ S$.  If a real-analytic $g:\mathbb T^2\to\mathbb R$ satisfies
+\[
+ \{g,Cg\}\equiv0,
+\]
+then $g$ is constant.
+\end{theorem}
+\begin{proof}
+Suppose $g$ is nonconstant and let
+$R=\{x:dg_x\ne0\}$.  At least one first derivative of $g$ is a nonzero
+real-analytic function, so its zero set has measure zero; hence $R$ is open
+and has full measure.  On $R$ define the level-set tangent line
+\[
+ L(x)=\ker dg_x\in\mathbb{RP}^1.
+\]
+Whenever $x,Sx\in R$, the bracket identity says that the two nonzero
+covectors $dg_x$ and $dg_{Sx}\circ S$ are linearly dependent.  Thus
+\begin{equation}\label{eq:analytic-line-equivariance}
+ L(Sx)=S L(x).
+\end{equation}
+The invariant full-measure set
+$R_\infty=\bigcap_{n\in\mathbb Z}S^{-n}R$ contains almost every recurrent
+point by Poincar\'e recurrence.  If $S^{n_j}x\to x$ for such a point, then
+continuity gives $L(S^{n_j}x)\to L(x)$, while
+\eqref{eq:analytic-line-equivariance} gives
+$L(S^{n_j}x)=S^{n_j}L(x)$.
+
+Let $E^s,E^u$ be the stable and unstable eigenlines.  The projective action
+of a hyperbolic matrix has precisely these fixed points, and every line other
+than $E^s$ converges under positive iteration to $E^u$.  Recurrence therefore
+forces $L(x)\in\{E^s,E^u\}$ for almost every regular $x$.  By continuity this
+holds everywhere on $R$.  On each connected component of $R$ the line field
+is constant, because its target is the discrete two-point set
+$\{E^s,E^u\}$.  On one nonempty component $U$ there is an eigenvector $e$
+with
+\[
+ D_e g=0\quad\hbox{on }U.
+\]
+The left side is real analytic, hence vanishes on all of the connected torus.
+An eigenline of a hyperbolic integral determinant-one matrix has irrational
+slope: a rational eigenline would give a rational algebraic-integer
+eigenvalue and therefore an integer unit $\pm1$.  The linear flow in the
+direction $e$ is consequently dense.  Since $g$ is constant along that flow,
+continuity makes $g$ constant on the torus, a contradiction.
+\end{proof}
+
+We now make the remaining cohomological alternative analytic as well.  Put
+$A=S^{\mathsf T}$ for the frequency action.  After replacing $A$ by
+$\operatorname{sign}(\operatorname{tr}A)A$, choose real eigen-covectors
+$\xi,\eta$ with expanding eigenvalue $\lambda>1$ and define
+\[
+ N_A(k)=|\xi(k)|+|\eta(k)|.
+\]
+There are constants $0<c_A\le C_A$ such that
+$c_A\|k\|_1\le N_A(k)\le C_A\|k\|_1$.
+
+\begin{theorem}[Analytic orbit-sum coboundary regularity]
+\label{thm:analytic-coboundary-regularity}
+Let $h$ have zero mean and satisfy
+\[
+ |\widehat h(k)|\le M e^{-\rho N_A(k)}
+ \qquad(k\ne0).
+\]
+If every oriented $A$-orbit has zero coefficient sum, then there is a transfer
+$u$, unique modulo constants, such that
+\[
+ h=u-Cu,
+\]
+and
+\begin{equation}\label{eq:analytic-transfer-decay}
+ |\widehat u(k)|\le M' e^{-(\rho/2)N_A(k)}.
+\end{equation}
+In particular $u$ is real analytic whenever $h$ is real analytic.
+\end{theorem}
+\begin{proof}
+Fix an orbit $k_j=A^jk_0$ and write
+$X_j=|\xi(k_j)|$, $Y_j=|\eta(k_j)|$.  Then
+$X_j=\lambda^jX_0$ and $Y_j=\lambda^{-j}Y_0$.
+Choose the unique switching index $j_*$ with
+$X_{j_*}\ge Y_{j_*}$ and $X_{j_*-1}<Y_{j_*-1}$.
+For $j\ge j_*$ and $n\ge0$,
+\[
+ N_A(k_{j+n})\ge \frac{\lambda^n}{2}N_A(k_j),
+\]
+while for $j<j_*$,
+\[
+ N_A(k_{j-n})\ge \frac{\lambda^n}{2}N_A(k_j).
+\]
+The zero orbit sum allows the same transfer coefficient to be written as
+\[
+ u_j=\sum_{\ell\le j}h_\ell=-\sum_{\ell>j}h_\ell.
+\]
+Use the forward tail on the expanding side and the backward tail on the
+contracting side.  The preceding inequalities give a uniformly convergent
+geometric-superexponential bound by a constant times
+$e^{-(\rho/2)N_A(k_j)}$.  This proves
+\eqref{eq:analytic-transfer-decay} on every orbit.  The recurrence
+$h_j=u_j-u_{j-1}$ is precisely the Fourier form of $h=u-Cu$.
+If two decaying transfers existed, their difference would be $C$-invariant;
+constant coefficients along every infinite nonzero frequency orbit are
+incompatible with exponential decay, so only the zero frequency can remain.
+\end{proof}
+
+\begin{corollary}[Reduced all-analytic frontier]
+\label{cor:analytic-resonance-frontier}
+If a nonconstant real-analytic $g$ satisfies $\Gamma_A(g)=0$, then there is a
+real-analytic $u$ such that
+\begin{equation}\label{eq:analytic-nonlinear-cohomology}
+ \frac{\{g,Cg\}}{4\pi}=u-Cu,
+ \qquad \{g,Cg\}\not\equiv0.
+\end{equation}
+Thus an analytic zero-variance counterexample, if one exists, must solve the
+nontrivial analytic nonlinear cohomological equation
+\eqref{eq:analytic-nonlinear-cohomology}.  The compactly supported
+Gevrey separated-support construction cannot realize this mechanism.
+\end{corollary}
+
+In ordinary Fourier coordinates, an estimate
+$|\widehat h(k)|\le M e^{-r\|k\|_1}$ yields, for example,
+\[
+ |\widehat u(k)|\le M'
+ e^{-r c_A\|k\|_1/(2C_A)}.
+\]
+These results stop short of the all-members analytic variance theorem. They
+exclude the pointwise-zero mechanism and show that loss of transfer regularity
+is not the remaining obstruction.
