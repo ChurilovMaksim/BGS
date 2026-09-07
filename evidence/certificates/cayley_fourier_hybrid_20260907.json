@@ -15,7 +15,7 @@
     {"p":509,"K":254,"index":2,"size_A":253,"energy":8082797,"centered_numerator":16991592,"integer_rhs":131867648,"max_sum_fiber":253},
     {"p":509,"K":508,"index":1,"size_A":507,"energy":129811771,"centered_numerator":3038,"integer_rhs":2064504,"max_sum_fiber":507}
   ],
-  "source_sha256": "cb86ee699be060fde2478cd849920b1f6af55f384dce5f898bf732dd527954e2",
+  "source_sha256": "1316f125c8a55dca1c265c33f19d84d6e93bbee1be35a2e3953689da164c6999",
   "independent_cpp": {
     "status": "PASS",
     "prime_limit": 509,
@@ -23,7 +23,17 @@
     "dense_hybrid_designs": 364,
     "max_order": 508,
     "negative_controls": 1,
-    "source_sha256": "84f467ba358fce9f09748fd452d079376b3febdcea0f55c170cad5938e628e98"
+    "source_sha256": "18fd11442666a8227038247f1ca87bb38ffe6b4d5e7240bdbe92543d05ab8b83",
+    "compile": "g++ -std=c++20 -O2 -Wall -Wextra -Wpedantic"
+  },
+  "readback_rerun": {
+    "status": "PASS",
+    "date": "2026-09-07",
+    "prime_limit": 509,
+    "designs": 807,
+    "dense_hybrid_designs": 364,
+    "max_order": 508,
+    "note": "Source texts were read back from main, hashed, compiled/executed independently, and the stale certificate hashes were replaced."
   },
   "external_input": "classical mixed Weil/Deligne bound |T_chi(q)| <= 2 sqrt(p); finite regression does not prove it",
   "proof_note_sha256": "37051ca9a99b1456d6169e1b4f49815c6494532a3c8d4373f579992217bb36eb"
