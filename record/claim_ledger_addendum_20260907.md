@@ -20,7 +20,7 @@ This file is the authoritative dated extension of `claim_ledger.md`. For claims 
 
 **Audit correction.** On 2026-09-07 a repeated synchronization audit found that Section 4 of the standalone finite-Fourier mathematical note incorrectly propagated both eigencoordinate rectangle bounds through one time direction. The theorem statement and exact witness checkers were unchanged. Commit `08a4a5d33d631b81abd6083c55187f1840c87660` replaced that paragraph by the correct two-sided argument: `L(k)>t+2` separately forces forward `xi` escape and backward `eta` escape.
 
-## B. Global Cayley subgroup-curve bound
+## B. Global Cayley subgroup-curve and dense Fourier bounds
 
 Let `H<=F_p^*`, `|H|=K>=2`, `p` odd, and `A=c(H\{1})` with `c(h)=(h+1)/(h-1)`. For distinct nonunit ratio parameters the extended collision curve is a geometrically irreducible smooth bidegree `(2,2)` genus-one curve with four boundary points. Corvaja--Zannier's positive-characteristic gcd/curve theorem therefore gives
 
@@ -39,14 +39,39 @@ D_K=2K^2-7K+4+gcd(2,K),
 E_+(A) << K^(8/3)+K^4/p.
 ```
 
+A complementary complete-field Fourier argument uses the annihilator-character expansion of `1_H`. If `m=(p-1)/K`, `n=K-1`, then for every nonzero additive frequency
+
+```text
+|Ahat(q)| <= 2*((m-1)*sqrt(p)+1)/m <= 2sqrt(p),
+```
+
+where the nontrivial-character input is the classical mixed Weil/Deligne bound for `chi((z+1)/(z-1)) e_p(qz)`. Parseval then gives
+
+```text
+0 <= E_+(A)-n^4/p
+   <= 4*((m-1)*sqrt(p)+1)^2/(m^2*p) * n(p-n)
+   <= 4n(p-n).
+```
+
+Consequently
+
+```text
+E_+(A)-(K-1)^4/p
+ << min(pK, K^(8/3)+K^4/p).
+```
+
 | Claim | Status | Boundary / authority |
 |---|---|---|
 | Curve geometry, restoration correction and diagonal bookkeeping above | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_curve_uniform.md`; `computations/verification/cayley_curve_uniform.py` |
-| Uniform point bound and resulting global energy theorem | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | Corvaja--Zannier JEMS 2013 is the external input |
-| Same exponent with no odd-order or subgroup-size restriction | **EXACT + EXTERNAL-THEOREM** | strengthens the older project Makarychev--Vyugin route; it does not improve the `8/3` exponent |
-| Centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` | **OPEN** | the new theorem does not supply family-wide cancellation |
+| Uniform curve point bound and resulting global energy theorem | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | Corvaja--Zannier JEMS 2013 is the external input |
+| Same curve exponent with no odd-order or subgroup-size restriction | **EXACT + EXTERNAL-THEOREM** | strengthens the older project Makarychev--Vyugin route; it does not improve the `8/3` exponent |
+| Annihilator-character decomposition, Parseval reduction, exact centered inequality above | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_fourier_hybrid.md`; Python and independent C++20 exact implementations |
+| Pointwise Fourier bound `|Ahat(q)|<=2*((m-1)sqrt(p)+1)/m` | **EXACT + EXTERNAL-WEIL** | project-internal character algebra plus classical mixed Weil/Deligne estimate `|T_chi(q)|<=2sqrt(p)` |
+| Hybrid centered error `<< min(pK,K^(8/3)+K^4/p)` | **EXACT + EXTERNAL-THEOREMS** | combines the preceding Fourier and genus-one bounds |
+| Strict exponent improvement over `K^(8/3)` when `K=p^(alpha+o(1))`, `alpha>3/5` | **EXACT consequence** | Fourier branch is `K^(1+1/alpha+o(1))`; this is dense-regime only |
+| Centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` uniformly in the sparse/intermediate arithmetic regime | **OPEN** | neither the genus-one worst-curve theorem nor complete mixed-Weil cancellation closes this range |
 
-The dated exact certificate covers every subgroup order `K>=3` occurring for odd primes `p<=257`: 338 designs, 114 odd orders, 224 even orders, maximum tested order 256. This finite run audits algebra and implementation only. External priority for this specialized Cayley application is not established.
+The global-curve dated exact certificate covers every subgroup order `K>=3` occurring for odd primes `p<=257`: 338 designs, 114 odd orders, 224 even orders, maximum tested order 256. The dense-Fourier certificate covers every subgroup design for odd primes through `p<=509`: 807 designs, 364 strict dense-side cases `K^5>p^3`, maximum order 508. Both finite runs audit algebra and implementation only. External priority for these specialized Cayley applications is not established.
 
 ## C. Rare-phase and Gaussian information limits
 
@@ -63,13 +88,14 @@ The dated exact certificate covers every subgroup order `K>=3` occurring for odd
 ## D. Verification, formalization and publication boundary
 
 - The September 7 rare-phase, Gaussian and pure-loss Python/C++ sources were read back from GitHub and matched the independently rerun local sources at Git-blob level where recorded in `record/session_science_sync_20260907.md`.
-- The global Cayley verifier was independently rerun locally: 338 exact designs through odd primes `p<=257`, including even subgroup orders, with status PASS.
+- The global Cayley curve verifier was independently rerun locally: 338 exact designs through odd primes `p<=257`, including even subgroup orders, with status PASS.
+- The dense Cayley Fourier verifier was read back from `main` and rerun through `p<=509`: Python and independently compiled C++20 both returned PASS on 807 designs, including 364 strict dense-side cases. This audit detected stale source hashes in the first dated certificate; commit `6770d9a1101c2a209c94f7a63b0347c753181b96` refreshed the provenance without changing theorem values.
 - The weighted-Wiener stability regression was freshly executed against the current exact temporal witness implementation: eight hyperbolic matrices, support radii one through three, and sixteen admitted integer tail multipliers all passed the exact lower-bound assertions.
 - The analytic bracket-rigidity and analytic coboundary-regularity manuscript section was compiled independently through two pdfTeX passes, then preflighted and visually inspected; no LaTeX warning or overfull box remains in the standalone build.
 - `formalization/Bgs.lean` imports every active `.lean` module under `formalization/Bgs/`; `formalization/drafts/` is outside the active import graph. The general September 7 analytic theorems are not claimed to be fully Lean-formalized.
 - A fresh local Lean build was attempted: the repository pins `leanprover/lean4:v4.33.1`, but this container has no Lean toolchain and its restricted network could not fetch the roughly 570 MB official release archive. GitHub-hosted workflow attempts continue to terminate with `steps=[]`; neither condition is scientific execution evidence.
-- The 146-page base PDF with SHA-256 `55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd` remains byte-stable. The canonical TeX source now includes the restored global Cayley theorem, weighted-Wiener stability, Sobolev/smooth/analytic-strip genericity, and the analytic-rigidity/coboundary reduction. Locally rendered addendum pages have been preflighted and visually checked; a full fresh canonical-source rebuild remains blocked by the unavailable complete private checkout in this container.
+- The 146-page base PDF with SHA-256 `55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd` remains byte-stable. The canonical TeX source now includes the restored global Cayley theorem, the dense Fourier complement, weighted-Wiener stability, Sobolev/smooth/analytic-strip genericity, and the analytic-rigidity/coboundary reduction. Locally rendered addendum pages have been preflighted and visually checked; a full fresh canonical-source rebuild remains blocked by the unavailable complete private checkout in this container.
 
 ## E. Still open
 
-Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, generic Sobolev/analytic-strip nondegeneracy, analytic pointwise rigidity, fourth-moment Cayley energy control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison and high-frequency tail control.
+Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, generic Sobolev/analytic-strip nondegeneracy, analytic pointwise rigidity, improved dense-regime Cayley fourth-moment control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison and high-frequency tail control.
