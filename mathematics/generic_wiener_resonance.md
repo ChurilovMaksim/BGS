@@ -1,6 +1,6 @@
-# Generic infinite-support resonance nondegeneracy in weighted Wiener spaces
+# Generic infinite-support resonance nondegeneracy in weighted Wiener and Sobolev spaces
 
-**Status: EXACT.** This is a topological consequence of the unrestricted finite-Fourier theorem plus the weighted-Wiener bracket estimate. It proves open-dense nondegeneracy for a natural infinite-support Banach class and for every fixed analytic Wiener strip. It does **not** prove that every analytic observable is nondegenerate.
+**Status: EXACT.** This is a topological consequence of the unrestricted finite-Fourier theorem plus the weighted-Wiener bracket estimate. It proves open-dense nondegeneracy for a natural infinite-support Banach class, every fixed analytic Wiener strip, every Sobolev space `H^s(T^2)` with `s>2`, and the smooth Frechet space. It does **not** prove that every analytic observable is nondegenerate.
 
 Fix a hyperbolic `A in SL(2,Z)`. For a Fourier series `f` define
 
@@ -116,7 +116,7 @@ C_rho=sup_(n>=1) n exp(-rho n)<infinity.                (11)
 
 Finite trigonometric polynomials are dense in `X_rho`. The same proof therefore gives:
 
-### Corollary
+### Corollary 1
 
 For every `rho>0`, the set
 
@@ -128,16 +128,55 @@ is open and dense in `X_rho` modulo constants. Its zero-variance complement is c
 
 Any function holomorphic in a strictly wider complex strip belongs to `X_rho` after shrinking the strip width, so the corollary applies to the usual nested analytic scales.
 
-## 4. What this settles and what remains open
+## 4. Sobolev and smooth genericity
 
-The project now has three distinct levels:
+Let `H^s(T^2)` carry the norm
+
+```text
+||f||_(H^s)^2=sum_v <v>^(2s)|f^(v)|^2.
+```
+
+For `s>2`, Cauchy--Schwarz gives
+
+```text
+M_0(f)
+ <= ||f||_(H^s)
+    [sum_v ||v||_1^2 <v>^(-2s)]^(1/2),                 (12)
+```
+
+and the lattice sum is finite because in two dimensions its radial shell is `O(n^(3-2s))`. Moreover
+
+```text
+M_A(f)<=||A||_(1->1) M_0(f).                           (13)
+```
+
+Thus `H^s -> X_A` is continuous for every `s>2`, while trigonometric polynomials are dense in `H^s`.
+
+### Corollary 2
+
+For every `s>2`,
+
+```text
+{g in H^s(T^2;R) : Gamma_A(g)>0}
+```
+
+is open and dense modulo constants. The zero-variance set is closed and nowhere dense in `H^s`.
+
+The same conclusion holds in the real Frechet space `C^infinity(T^2)`: continuity follows through any fixed `H^s`, `s>2`, and Fourier truncations converge in every smooth seminorm. Thus the known smooth exact-cancellation constructions are genuinely exceptional in the topological sense; they contain no open smooth neighbourhood.
+
+## 5. What this settles and what remains open
+
+The project now has four distinct levels:
 
 ```text
 all nonconstant finite Fourier symbols:       Gamma_A>0;
+H^s, s>2, and C^infinity:                     Gamma_A>0 generically (open dense);
 weighted-Wiener / fixed analytic strip:       Gamma_A>0 generically (open dense);
-arbitrary nonconstant analytic symbol:        still OPEN.
+arbitrary nonconstant analytic symbol:        still OPEN as an all-members claim.
 ```
 
-Thus smooth or analytic exact cancellations, if they exist in these Banach classes, are topologically unstable: they cannot contain any open set. What remains unresolved is an all-members theorem for analyticity alone, or a construction of an analytic exact-cancellation counterexample.
+The existing separated-support counterexample is a compactly supported Gevrey-`s` construction with `s>1`, hence smooth but not analytic. The nontrivial entire temporal all-pass gauges of one harmonic are proved elsewhere in the project to belong to no finite Gevrey class. These facts are compatible with the generic theorem and do not presently furnish an analytic exact-cancellation counterexample.
+
+Thus smooth or analytic exact cancellations, if present in these Banach classes, are topologically unstable: they cannot contain any open set. What remains unresolved is an all-members theorem for analyticity alone, or a construction of an analytic exact-cancellation counterexample.
 
 This result is classical-topological and does not by itself imply Heisenberg-scale trace statistics or microscopic BGS universality.
