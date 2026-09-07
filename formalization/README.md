@@ -1,43 +1,40 @@
 # Lean 4 formalization
 
-`formalization/` is the active **finite-certificate and falsifier layer** of the
-project. It is intentionally smaller than the informal mathematics: Lean code
-is added only when a precise finite statement or regression guard is worth
-kernel checking. The repository does **not** pad the language statistics with
-speculative `sorry` files.
+`formalization/` is the active finite-certificate, algebraic-kernel and falsifier layer. It is intentionally smaller than the informal mathematics: a Lean theorem certifies only the proposition and scope stated in its source. The repository does not treat speculative `sorry` files as progress.
 
-Build every active module:
+Build every active module with
 
 ```bash
 cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file under `formalization/Bgs/`. The repository
-audit and CI both check that the import graph and the directory agree exactly.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains exactly the following 15 modules; `formalization/drafts/` is deliberately outside it.
 
-## Active modules
+| Module | Maintained scope |
+|---|---|
+| `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
+| `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
+| `FibonacciRatioSmall.lean` | exact residual Lucas/Fibonacci ratio range `1..12`; not a formalization of Carmichael's theorem |
+| `GeneralHyperbolicParity.lean` | finite Boolean/parity and explicit hyperbolic-period kernels; not the full character-theoretic spectral theorem |
+| `HistoricalMobiusDegenerateFiber.lean` | concrete finite falsifier for the retracted Möbius route |
+| `LocalityKernels.lean` | cleared-denominator support-strip and elementary locality/exponent-budget kernels; no semiclassical limit |
+| `MagneticTraceSmall.lean` | exact affine-word histograms at `p=7,K=3` through fourth order; not the global semicircle theorem |
+| `PairKeyFourthMoment.lean` | finite diagonal/off-diagonal pair-key and coupled fourth-moment count certificate |
+| `PairKeySecondMoment.lean` | finite pair-key parametrization/constraint-count certificate |
+| `PellCoboundary.lean` | universal integer structural identity plus finite Pell coboundary/pair-key certificates; no Duhamel or limiting law |
+| `PellCohomology.lean` | cleared-denominator cohomological identities plus finite original-coordinate pair-key certificate |
+| `PellEchoWeights.lean` | finite/exact algebraic kernels for Pell echo weights and their rational identities |
+| `PellFourierKernel.lean` | finite/exact Fourier-kernel identities used by the Pell/Floquet branch |
+| `TorusLevelSets.lean` | finite torus level-set cardinalities, orbit counts and freeness |
+| `TorusScaleLaw.lean` | finite branch-scale identities |
 
-| Module | What it certifies | Scope |
-|---|---|---|
-| `PairKeySecondMoment.lean` | constraint count and pair-key parametrization | finite `p=53, K=13` |
-| `PairKeyFourthMoment.lean` | diagonal multiplicity, off-diagonal injectivity, coupled count | finite `p=53, K=13` |
-| `CayleyEnergy.lean` | generic/exceptional mixed Cayley energies for `K=11,13` and the `K=23` non-uniformity witness | explicit finite designs |
-| `TorusLevelSets.lean` | level-set cardinalities, orbit counts, freeness | finite `p=199, K=11` |
-| `TorusScaleLaw.lean` | branch-scale identities | finite `p=199` |
-| `HistoricalMobiusDegenerateFiber.lean` | concrete `d=0` degeneracy in the retracted Möbius route | finite falsifier at `p=53,199` |
-
-The former `CayleyExceptionalK23.lean` was folded into the reusable
-`CayleyEnergy.lean` module so the same formal implementation now includes
-generic and exceptional controls rather than a single isolated anchor.
+The former isolated `CayleyExceptionalK23.lean` was folded into `CayleyEnergy.lean` so generic and exceptional controls share one implementation.
 
 ## Trust boundary
 
-Most large finite searches use `native_decide`. A theorem here certifies its
-stated finite proposition; it does not silently become a symbolic theorem for
-all primes. Open analytic obligations—especially the elliptic/sheaf estimate
-and the microscopic BGS bridge—remain in `mathematics/`, not as `sorry`-based
-pseudo-progress in the active Lean library.
+Many large finite propositions use `native_decide`. They are exact kernel-checked finite statements when a real `lake build` succeeds; they do not become symbolic theorems for all primes. The September 7 unrestricted finite-Fourier theorem, Corvaja--Zannier Cayley theorem, Gaussian information-limit theorems and microscopic BGS questions are not claimed to be fully formalized by this tree.
 
-Historical formal drafts are recoverable from Git history before the
-2026-09-03 archive cleanup; they are not duplicated in the current tree.
+Source presence is not compilation evidence. During the September 7 repeat audit the available local environment had no `lean`/`lake`, and the contemporary GitHub-hosted jobs ended before executing any step. Therefore that audit records static import-graph completeness, not a fresh Lean compiler pass.
+
+Historical formal drafts remain recoverable from Git history. `formalization/drafts/TemporalCancellation.lean` is explicitly not imported by `Bgs.lean` until its compiler/proof status is promoted.
