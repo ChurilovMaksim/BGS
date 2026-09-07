@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "base_commit": "7f9ac291da9b484d2c89e9ba7228ce0b6c6a7ae4",
+  "scope": "rare-phase exact scalar/finite checks, Gaussian-channel exact/numerical checks, and final 146-page self-contained manuscript build; analytic proofs remain separate",
+  "rare_phase": {
+    "python_status": "PASS",
+    "terms": 8192,
+    "central_binomial_checks": 4096,
+    "finite_copy_checks": 4,
+    "constant_lower_numerator": "2908610238318050510439407961472116717925027068379561923812086",
+    "constant_upper_numerator": "2908610238318273566707832369760282103872775032560794531390875",
+    "constant_denominator": "1000000000000000000000000000000000000000000000000000000000000",
+    "dps": 80,
+    "radial_diagnostics": 4,
+    "likelihood_quadrature_status": "PASS",
+    "likelihood_order": 112,
+    "likelihood_angles": 1536,
+    "chernoff_C_diagnostic": 2.9086102353618015,
+    "python_sha256": "703ec58e6465b97c2c291ca6b537473839a25c30babbc281ec998161d6bbcf00",
+    "likelihood_sha256": "8d229515e82e50f8696c8743d0e5227b098b7197df46abe7eeb77f2988c85548",
+    "cpp_sha256": "66c21fdc769ab1620e68a06a85109c11f77dcfc7ab912ce45f60bc25867ee5fd"
+  },
+  "gaussian": {
+    "run65": {
+      "status": "PASS",
+      "exact": {
+        "matrix_unit_weyl_inversions": 256,
+        "loss_identities": 512,
+        "additive_noise_factorizations": 4,
+        "finite_half_loss_inequalities": 6
+      },
+      "numerical": {
+        "dps": 65,
+        "kraus_characteristic_checks": 18,
+        "fidelity_checks": 9,
+        "weyl_kernel_bounds": 146,
+        "amplifier_trace_norm_bounds": 16,
+        "anchors": [
+          {
+            "eta": "0.2",
+            "root_fidelity_gap": "5.316911983139646995789e-92"
+          },
+          {
+            "eta": "0.5",
+            "root_fidelity_gap": "4.591774807899560578003e-41"
+          },
+          {
+            "eta": "0.9",
+            "root_fidelity_gap": "2.172007068392886449452e-8"
+          }
+        ]
+      },
+      "source_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+      "implementation_sha256": "c5063f599b86583ffefd7c52eb839d056830b653bf9e27947b8858760742eeb4",
+      "negative_controls": 4
+    },
+    "run95": {
+      "status": "PASS",
+      "exact": {
+        "matrix_unit_weyl_inversions": 1296,
+        "loss_identities": 512,
+        "additive_noise_factorizations": 4,
+        "finite_half_loss_inequalities": 6
+      },
+      "numerical": {
+        "dps": 95,
+        "kraus_characteristic_checks": 18,
+        "fidelity_checks": 9,
+        "weyl_kernel_bounds": 146,
+        "amplifier_trace_norm_bounds": 16,
+        "anchors": [
+          {
+            "eta": "0.2",
+            "root_fidelity_gap": "5.316911983139646995789e-92"
+          },
+          {
+            "eta": "0.5",
+            "root_fidelity_gap": "4.591774807899560578003e-41"
+          },
+          {
+            "eta": "0.9",
+            "root_fidelity_gap": "2.172007068392886449452e-8"
+          }
+        ]
+      },
+      "source_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+      "implementation_sha256": "c5063f599b86583ffefd7c52eb839d056830b653bf9e27947b8858760742eeb4",
+      "negative_controls": 4
+    },
+    "verifier_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+    "implementation_sha256": "c5063f599b86583ffefd7c52eb839d056830b653bf9e27947b8858760742eeb4"
+  },
+  "manuscript": {
+    "tex_sha256": "e7e0ddcee9d4ee96683b9e7640b509e283b8011582dac28fe0e7b3937b81f583",
+    "pdf_sha256": "55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd",
+    "pages": 146,
+    "tex_files_expected": 1,
+    "pdf_files_expected": 1,
+    "inputs": 0,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "overfull_hboxes": 0,
+    "visual_readback": "PASS on final title and pages 131, 136, 140, 146; no clipping or broken glyphs observed"
+  },
+  "literature_check_date": "2026-09-07",
+  "nonclaims": [
+    "external priority",
+    "independent referee acceptance",
+    "full Lean formalization of these sections",
+    "microscopic BGS universality",
+    "full varying-noise tomography minimax transition"
+  ]
+}
