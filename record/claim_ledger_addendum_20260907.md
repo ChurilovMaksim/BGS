@@ -2,16 +2,19 @@
 
 This file is the authoritative dated extension of `claim_ledger.md`. For claims dated through 2026-09-06, the base ledger remains authoritative. For the scopes below, this addendum wins over older notes, manuscript wording, exploratory files, and earlier audit prose. `OPEN` still means open; finite execution is never promoted to a uniform theorem.
 
-## A. Unrestricted finite-Fourier resonance nondegeneracy
+## A. Unrestricted finite-Fourier and generic weighted-Wiener resonance nondegeneracy
 
 | Claim | Status | Boundary / authority |
 |---|---|---|
 | For every hyperbolic `A in SL(2,Z)` and every nonconstant real trigonometric polynomial `g`, the second bracket variance `Gamma_A(g)` is strictly positive | **EXACT + FINITE-REGRESSION** | `mathematics/extremal_resonance_nondegeneracy.md`; equivalent all-lag theorem in `manuscript/unified_sections/temporal_resonance.tex` |
 | There is an exposed frequency `k=u+Av` with unique support decomposition, nonzero determinant and no nonzero `A`-iterate in `V+AV` | **EXACT + FINITE-REGRESSION** | support-geometric proof; Python exact quadratic-field witness generator plus independent C++ replay |
 | Every fixed real mean-zero Fourier box has a positive coercivity minimum | **EXACT** | finite-dimensional compactness; no uniform lower bound as bandwidth grows |
-| Positivity for every nonconstant analytic infinite-support observable | **OPEN** | the finite-support maximum is load-bearing; smooth counterexamples remain valid |
+| If `g=p+r` and `E=M_0(p)M_A(r)+M_0(r)M_A(p)+M_0(r)M_A(r)<D=|det(u,Av)||phat(u)phat(v)|`, then `Gamma_A(g)>=2 pi^2(D-E)^2` | **EXACT + FINITE-REGRESSION** | `mathematics/resonance_wiener_stability.md`; exact integer regression in `computations/verification/resonance_wiener_stability.py` |
+| In the natural first-moment weighted-Wiener Banach space, `{Gamma_A>0}` is open and dense and `{Gamma_A=0}` is closed nowhere dense | **EXACT** | `mathematics/generic_wiener_resonance.md`; continuity of the orbit-sum map plus density of finite truncations |
+| The same open-dense statement holds in every fixed analytic Wiener strip `sum exp(rho||v||_1)|ghat(v)|<infinity` | **EXACT** | continuous embedding into weighted Wiener space; finite polynomials dense |
+| Positivity for **every** nonconstant analytic infinite-support observable | **OPEN** | generic/open-dense positivity is now proved; an all-members theorem or analytic exact-cancellation counterexample remains unknown |
 
-**Audit correction.** On 2026-09-07 a repeated synchronization audit found that Section 4 of the standalone mathematical note incorrectly propagated both eigencoordinate rectangle bounds through one time direction. The theorem statement and exact witness checkers were unchanged. Commit `08a4a5d33d631b81abd6083c55187f1840c87660` replaced that paragraph by the correct two-sided argument: `L(k)>t+2` separately forces forward `xi` escape and backward `eta` escape.
+**Audit correction.** On 2026-09-07 a repeated synchronization audit found that Section 4 of the standalone finite-Fourier mathematical note incorrectly propagated both eigencoordinate rectangle bounds through one time direction. The theorem statement and exact witness checkers were unchanged. Commit `08a4a5d33d631b81abd6083c55187f1840c87660` replaced that paragraph by the correct two-sided argument: `L(k)>t+2` separately forces forward `xi` escape and backward `eta` escape.
 
 ## B. Global Cayley subgroup-curve bound
 
@@ -56,11 +59,12 @@ The dated exact certificate covers every subgroup order `K>=3` occurring for odd
 ## D. Verification, formalization and publication boundary
 
 - The September 7 rare-phase, Gaussian and pure-loss Python/C++ sources were read back from GitHub and matched the independently rerun local sources at Git-blob level where recorded in `record/session_science_sync_20260907.md`.
-- The new global Cayley verifier was independently rerun locally and its Git blob equals the remote blob. The committed certificate records the full 338-design run.
+- The global Cayley verifier was independently rerun locally: 338 exact designs through odd primes `p<=257`, including even subgroup orders, with status PASS.
+- The weighted-Wiener stability regression was freshly executed against the current exact temporal witness implementation: eight hyperbolic matrices, support radii one through three, and sixteen admitted integer tail multipliers all passed the exact lower-bound assertions.
 - `formalization/Bgs.lean` imports every active `.lean` module under `formalization/Bgs/`; `formalization/drafts/` is outside the active import graph. The general September 7 analytic theorems are not claimed to be fully Lean-formalized.
-- Current GitHub-hosted workflow attempts have failed before executing a step (`steps=[]`); this is not positive or negative scientific execution evidence.
-- The locally verified 146-page PDF with SHA-256 `55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd` contains the late rare-phase/Gaussian/pure-loss sections, but predates restoration of the Corvaja--Zannier Cayley theorem. That restored theorem is currently authoritative in the mathematical/evidence layer, not yet in that verified PDF.
+- A fresh local Lean build was attempted: the repository pins `leanprover/lean4:v4.33.1`, but this container has no Lean toolchain and its restricted network could not fetch the roughly 570 MB official release archive. GitHub-hosted workflow attempts continue to terminate with `steps=[]`; neither condition is scientific execution evidence.
+- The 146-page base PDF with SHA-256 `55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd` remains byte-stable. The canonical TeX source now includes both the restored global Cayley theorem and the weighted-Wiener/generic resonance continuation. A locally rendered addendum version has been visually/preflight checked; a full fresh canonical-source rebuild remains blocked by the unavailable complete private checkout in this container.
 
 ## E. Still open
 
-Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, fourth-moment Cayley energy control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison and high-frequency tail control.
+Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, generic analytic-strip nondegeneracy, fourth-moment Cayley energy control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison and high-frequency tail control.
