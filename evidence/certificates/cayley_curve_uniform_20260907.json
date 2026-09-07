@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "symbolic identities plus finite exact field regression; Corvaja--Zannier is the external theorem input",
+  "prime_limit": 257,
+  "max_order": 256,
+  "finite_designs": 338,
+  "odd_orders": 114,
+  "even_orders": 224,
+  "max_tested_order": 256,
+  "symbolic": {
+    "bidegree": [2, 2],
+    "discriminant_of_discriminant": "4096*r**2*s**2*(r - 1)**6*(r - s)**2*(s - 1)**6",
+    "disc_identity": true,
+    "diagonal_factorization": "-(r - 1)*(x - y)*(r*x*y - 1)",
+    "diagonal_identity": true,
+    "boundary_gradients": {
+      "00": ["r - 1", "1 - s"],
+      "0inf": ["s*(r - 1)", "1 - s"],
+      "inf0": ["r - 1", "-r*(s - 1)"],
+      "infinf": ["s*(r - 1)", "-r*(s - 1)"]
+    },
+    "boundary_gradient_identity": true
+  },
+  "anchors": [
+    {"p": 5, "K": 4, "energy": 10, "extended": 46, "diagonal_extended": 22, "offdiag_min": 4, "offdiag_max": 4, "B_integer": 8, "energy_upper": 34},
+    {"p": 7, "K": 3, "energy": 2, "extended": 18, "diagonal_extended": 10, "offdiag_min": 4, "offdiag_max": 4, "B_integer": 6, "energy_upper": 6},
+    {"p": 7, "K": 6, "energy": 68, "extended": 168, "diagonal_extended": 56, "offdiag_min": 4, "offdiag_max": 8, "B_integer": 12, "energy_upper": 196},
+    {"p": 11, "K": 5, "energy": 20, "extended": 84, "diagonal_extended": 36, "offdiag_min": 4, "offdiag_max": 4, "B_integer": 10, "energy_upper": 92},
+    {"p": 11, "K": 10, "energy": 520, "extended": 844, "diagonal_extended": 172, "offdiag_min": 4, "offdiag_max": 12, "B_integer": 20, "energy_upper": 1288},
+    {"p": 13, "K": 6, "energy": 44, "extended": 144, "diagonal_extended": 56, "offdiag_min": 4, "offdiag_max": 6, "B_integer": 12, "energy_upper": 196},
+    {"p": 251, "K": 250, "energy": 15253240, "extended": 15501244, "diagonal_extended": 124252, "offdiag_min": 220, "offdiag_max": 276, "B_integer": 500, "energy_upper": 30752248},
+    {"p": 257, "K": 32, "energy": 4590, "extended": 8434, "diagonal_extended": 1954, "offdiag_min": 4, "offdiag_max": 18, "B_integer": 64, "energy_upper": 57630},
+    {"p": 257, "K": 64, "energy": 63478, "extended": 79354, "diagonal_extended": 8002, "offdiag_min": 4, "offdiag_max": 36, "B_integer": 128, "energy_upper": 492094},
+    {"p": 257, "K": 128, "energy": 1004214, "extended": 1068730, "diagonal_extended": 32386, "offdiag_min": 34, "offdiag_max": 92, "B_integer": 256, "energy_upper": 4064382},
+    {"p": 257, "K": 256, "energy": 16387318, "extended": 16647418, "diagonal_extended": 130306, "offdiag_min": 224, "offdiag_max": 284, "B_integer": 512, "energy_upper": 33032446}
+  ],
+  "source_sha256": "d9799af9d770d769b3d1e716ea465e1fdac995093d6435df14d4d80be3b3bf1c",
+  "certificate_sha256_before_commit": "a04e44a71202fbbd93590ef418bb4fd2210c918ce81f2f485706c582cf2aa124",
+  "run_command": "python computations/verification/cayley_curve_uniform.py --prime-limit 257 --max-order 256 --output evidence/certificates/cayley_curve_uniform_20260907.json",
+  "note": "The committed JSON is a normalized record of the local exact run; finite enumeration is not the proof of the external Corvaja--Zannier theorem."
+}
