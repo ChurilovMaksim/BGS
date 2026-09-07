@@ -5,9 +5,9 @@ This directory contains the authoritative maintained mathematical derivations. F
 ## Reading order
 
 1. `results.md` — base concise theorem index.
-2. `results_20260907_addendum.md` — later temporal, global-Cayley, holomorphic/tomography and information-limit results.
+2. `results_20260907_addendum.md` — later temporal, global-Cayley, dense-Fourier, holomorphic/tomography and information-limit results.
 3. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
-4. `cayley_curve_uniform.md` — global Corvaja--Zannier subgroup-curve energy theorem, including even subgroup orders and exact restoration bookkeeping.
+4. `cayley_curve_uniform.md` and `cayley_fourier_hybrid.md` — complementary global genus-one and dense-regime mixed-Weil Cayley energy theorems, including the centered hybrid bound.
 5. `extremal_resonance_nondegeneracy.md` and `temporal_resonance_hierarchy.md` — unrestricted finite-Fourier resonance/temporal theorems and their audited scope.
 6. `trace_to_local_statistics_bridge.md` — exact deterministic route from joint traces to microscopic tests.
 7. `open_questions.md` — only genuinely unresolved obligations.
