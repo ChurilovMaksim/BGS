@@ -12,16 +12,29 @@ Var O << p E_+(A)+K^2p+K^4 sqrt(p)+K^4.
 
 The mixed/off-off bottleneck is therefore the same Cayley additive energy.
 
-Two uniform polynomial-scale theorems are already closed:
+Three complementary pointwise bounds are now closed:
 
 1. the older Vyugin--Makarychev route gives `E_+(A)<34K^(8/3)` in its explicit range;
 2. `cayley_curve_uniform.md`, using Corvaja--Zannier, gives globally for every subgroup order `K>=2`
 
 ```text
-E_+(A) << K^(8/3)+K^4/p.
+E_+(A) << K^(8/3)+K^4/p;
 ```
 
-The latter removes the odd-order and subgroup-size restrictions but does not improve the exponent.
+3. `cayley_fourier_hybrid.md`, using the classical mixed Weil bound after the exact annihilator-character expansion, gives the centered estimate
+
+```text
+0 <= E_+(A)-(K-1)^4/p <= 4(K-1)(p-K+1),
+```
+
+and therefore
+
+```text
+E_+(A)-(K-1)^4/p
+ << min(pK, K^(8/3)+K^4/p).
+```
+
+The Fourier branch is strictly stronger than the previous worst-curve scale when `K>p^(3/5)`; for `K=p^(alpha+o(1))`, `alpha>3/5`, it has centered exponent `1+1/alpha<8/3` in `K`. It approaches the quadratic scale as `alpha->1`, but it does not improve the sparse arithmetic regime.
 
 The sharp pointwise target remains
 
@@ -35,9 +48,7 @@ or equivalently
 sum_(q!=0)|1_Ahat(q)|^4 << p K^(2+o(1)).
 ```
 
-A material intermediate advance would be any explicit pointwise `K^(2+delta)` bound with `delta<2/3` after complete propagation through the exact `B(t)` decomposition.
-
-The exact split-prime support machinery, scalar resultants, Frobenius amplification and dyadic averaged theorems remain available inputs. None currently implies the centered pointwise bound.
+The remaining material intermediate target is now specifically the sparse/intermediate range: obtain any explicit centered `K^(2+delta)` bound with `delta<2/3` where the complete mixed-Weil `pK` branch is not already stronger. The exact split-prime support machinery, scalar resultants, Frobenius amplification and dyadic averaged theorems remain available inputs. None currently gives that sparse pointwise cancellation.
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
