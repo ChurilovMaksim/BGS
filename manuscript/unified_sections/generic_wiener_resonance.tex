@@ -1,0 +1,64 @@
+\subsection{Generic infinite-support nondegeneracy}
+Let $X_A$ be the real Banach space obtained by adjoining the constant Fourier
+mode to the two weighted moments in \eqref{eq:wiener-moments}:
+\[
+ \|f\|_{X_A}=|\widehat f(0)|+M_0(f)+M_A(f).
+\]
+On absolutely summable Fourier sequences define the orbit-sum map
+\[
+ (\mathcal Ph)_{\mathcal O}=\sum_{k\in\mathcal O}\widehat h(k).
+\]
+Because the oriented frequency orbits partition $\mathbb Z^2\setminus\{0\}$,
+\begin{equation}\label{eq:wiener-orbit-cont}
+ \|\mathcal Ph\|_{\ell^2(\mathcal O)}
+ \leq\|\mathcal Ph\|_{\ell^1(\mathcal O)}
+ \leq\|\widehat h\|_{\ell^1}.
+\end{equation}
+Moreover
+\[
+ h_g-h_f=B_A(g-f,g)+B_A(f,g-f),
+\]
+so \eqref{eq:wiener-bilinear} yields
+\begin{equation}\label{eq:wiener-gamma-cont}
+ \|\widehat{h_g-h_f}\|_{\ell^1}
+ \leq\pi\{M_0(g-f)M_A(g)+M_0(f)M_A(g-f)\}.
+\end{equation}
+Thus $g\mapsto\mathcal Ph_g$ is continuous from $X_A$ to
+$\ell^2(\mathcal O)$ and
+$\Gamma_A(g)=\|\mathcal Ph_g\|_2^2$ is continuous.
+
+\begin{theorem}[Generic weighted-Wiener nondegeneracy]
+\label{thm:wiener-generic}
+Modulo constants, the set
+\[
+ \{g\in X_A:\Gamma_A(g)>0\}
+\]
+is open and dense.  Its exact-cancellation complement is closed and nowhere
+dense.
+\end{theorem}
+\begin{proof}
+Openness follows from continuity.  For density, let $p_R$ be the Fourier
+truncation of $g$ to $\|v\|_1\leq R$.  Absolute convergence of the weighted
+moments gives $p_R\to g$ in $X_A$.  If $g$ is nonconstant then $p_R$ is
+nonconstant for all sufficiently large $R$, and the unrestricted
+finite-Fourier theorem gives $\Gamma_A(p_R)>0$.  Constants are approximated by
+adding an arbitrarily small nonzero cosine mode.  Hence the positive set is
+dense; its closed complement has empty interior.
+\end{proof}
+
+For $\rho>0$ let
+\[
+ X_\rho=\left\{f:\sum_v e^{\rho\|v\|_1}|\widehat f(v)|<\infty\right\}.
+\]
+Since
+\[
+ M_0(f)\leq C_\rho\|f\|_{X_\rho},\qquad
+ M_A(f)\leq\|A\|_{1\to1}C_\rho\|f\|_{X_\rho},\qquad
+ C_\rho=\sup_{n\ge1}ne^{-\rho n}<\infty,
+\]
+the embedding $X_\rho\hookrightarrow X_A$ is continuous and finite
+trigonometric polynomials are dense in $X_\rho$.  Therefore
+$\{\Gamma_A>0\}$ is open and dense in every fixed analytic Wiener strip as
+well.  In particular zero-variance analytic cancellations, if present, are
+topologically unstable in these Banach scales.  An all-members theorem for
+arbitrary nonconstant analytic observables remains open.
