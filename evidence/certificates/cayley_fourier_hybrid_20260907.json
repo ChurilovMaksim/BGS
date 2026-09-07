@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "exact finite regression; mixed Weil estimate is external",
+  "prime_limit": 509,
+  "designs": 807,
+  "dense_hybrid_designs": 364,
+  "max_order": 508,
+  "anchors": [
+    {"p":3,"K":2,"index":1,"size_A":1,"energy":1,"centered_numerator":2,"integer_rhs":24,"max_sum_fiber":1},
+    {"p":5,"K":2,"index":2,"size_A":1,"energy":1,"centered_numerator":4,"integer_rhs":80,"max_sum_fiber":1},
+    {"p":5,"K":4,"index":1,"size_A":3,"energy":19,"centered_numerator":14,"integer_rhs":120,"max_sum_fiber":3},
+    {"p":7,"K":2,"index":3,"size_A":1,"energy":1,"centered_numerator":6,"integer_rhs":168,"max_sum_fiber":1},
+    {"p":509,"K":4,"index":127,"size_A":3,"energy":19,"centered_numerator":9590,"integer_rhs":3090648,"max_sum_fiber":3},
+    {"p":509,"K":127,"index":4,"size_A":126,"energy":522914,"centered_numerator":14115850,"integer_rhs":98253288,"max_sum_fiber":126},
+    {"p":509,"K":254,"index":2,"size_A":253,"energy":8082797,"centered_numerator":16991592,"integer_rhs":131867648,"max_sum_fiber":253},
+    {"p":509,"K":508,"index":1,"size_A":507,"energy":129811771,"centered_numerator":3038,"integer_rhs":2064504,"max_sum_fiber":507}
+  ],
+  "source_sha256": "cb86ee699be060fde2478cd849920b1f6af55f384dce5f898bf732dd527954e2",
+  "independent_cpp": {
+    "status": "PASS",
+    "prime_limit": 509,
+    "designs": 807,
+    "dense_hybrid_designs": 364,
+    "max_order": 508,
+    "negative_controls": 1,
+    "source_sha256": "84f467ba358fce9f09748fd452d079376b3febdcea0f55c170cad5938e628e98"
+  },
+  "external_input": "classical mixed Weil/Deligne bound |T_chi(q)| <= 2 sqrt(p); finite regression does not prove it",
+  "proof_note_sha256": "37051ca9a99b1456d6169e1b4f49815c6494532a3c8d4373f579992217bb36eb"
+}
