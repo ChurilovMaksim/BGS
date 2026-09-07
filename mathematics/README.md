@@ -1,35 +1,34 @@
 # Mathematics
 
-This directory is the **authoritative current mathematical narrative**. It is
-kept deliberately small: current derivations live here; false/superseded routes
-are summarized in [`../record/retractions.md`](../record/retractions.md) and
-remain recoverable from Git history rather than being duplicated as executable
-archive source.
+This directory contains the authoritative maintained mathematical derivations. False or superseded routes are summarized in `../record/retractions.md` and remain recoverable from Git history rather than being duplicated as current source.
 
 ## Reading order
 
-1. [`results.md`](results.md) — concise claim/status index.
-2. [`fourth_moment_reduction.md`](fourth_moment_reduction.md) — exact pair-key
-   reduction, general constrained-pair count and Fourier identities.
-3. [`cayley_additive_energy.md`](cayley_additive_energy.md) — exact mixed-term
-   reduction, audited fixed-`K` exceptional primes and the `K=23` obstruction.
-4. [`elliptic_pencil.md`](elliptic_pencil.md) — theorem-draft off/off route with
-   explicit remaining algebraic-geometric and sheaf-theoretic obligations.
-5. [`earlier_foundations.md`](earlier_foundations.md) — older results that
-   survived the audit, each with its safe present scope.
-6. [`open_questions.md`](open_questions.md) — genuinely open obligations.
+1. `results.md` — base concise theorem index.
+2. `results_20260907_addendum.md` — later temporal, global-Cayley, holomorphic/tomography and information-limit results.
+3. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
+4. `cayley_curve_uniform.md` — global Corvaja--Zannier subgroup-curve energy theorem, including even subgroup orders and exact restoration bookkeeping.
+5. `extremal_resonance_nondegeneracy.md` and `temporal_resonance_hierarchy.md` — unrestricted finite-Fourier resonance/temporal theorems and their audited scope.
+6. `trace_to_local_statistics_bridge.md` — exact deterministic route from joint traces to microscopic tests.
+7. `open_questions.md` — only genuinely unresolved obligations.
+8. `earlier_foundations.md` — older results that survived the audit, each with its safe present scope.
 
-Evidence levels are separated throughout:
+The old `elliptic_pencil.md` is retained as a historical theorem-draft route; the maintained corrected off/off result is `offoff_elliptic_spike_theorem.md`, so completing the old pencil is no longer listed as an open closure condition.
 
-- **EXACT** — current algebraic identity/derivation;
-- **FINITE-CERTIFICATE** — exact machine/exhaustive statement at explicit
-  finite parameters;
+## Evidence levels
+
+- **EXACT** — current algebraic/analytic derivation with explicit hypotheses;
+- **EXACT + EXTERNAL-THEOREM** — exact project reduction whose stated input is an identified external theorem;
+- **FINITE-CERTIFICATE** — exact finite statement at explicit parameters;
 - **FINITE-REGRESSION** — finite implementation/reference agreement;
-- **NUMERICAL** — floating-point evidence only;
-- **DRAFT** — promising route with named unresolved proof obligations;
+- **NUMERICAL** — descriptive floating-point evidence only;
+- **DRAFT** — route with named unresolved obligations;
 - **OPEN** — closure condition not achieved;
-- **SCOPED-HISTORICAL / NOT-PROMOTED / RETRACTED** — provenance or quarantine,
-  never a current theorem.
+- **RETRACTED / SCOPED-HISTORICAL / NOT-PROMOTED** — no current theorem authority.
 
-Repository-wide status authority:
-[`../record/claim_ledger.md`](../record/claim_ledger.md).
+Repository-wide status authority is the pair
+
+- `../record/claim_ledger.md` for the base corpus through 2026-09-06;
+- `../record/claim_ledger_addendum_20260907.md` for the dated later/corrected scopes.
+
+The addendum wins where its scope overlaps older prose. Neither a finite verifier nor a manuscript statement may silently strengthen those ledgers.
