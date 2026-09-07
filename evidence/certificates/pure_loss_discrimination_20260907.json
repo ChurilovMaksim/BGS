@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "claim_id": "pure-loss-discrimination-uniform-finite-copy",
+  "repository": {
+    "base_commit": "7f9ac291da9b484d2c89e9ba7228ce0b6c6a7ae4",
+    "dirty": true
+  },
+  "mathematics": {
+    "assertion_tested": "Load-bearing scalar inequalities and finite-B binomial replacement used in the uniform pure-loss discrimination theorem.",
+    "coefficient_domain": "real high-precision arithmetic; independent Boost.Multiprecision finite grid",
+    "conventions": "D(rho,sigma)=1/2 ||rho-sigma||_1; t=B u eta^n; 0<u<=1/16; 0<eta<=1",
+    "non_claims": [
+      "finite checks are not a continuum proof",
+      "not full tomography minimax",
+      "not BGS universality"
+    ]
+  },
+  "python": {
+    "path": "computations/verification/pure_loss_discrimination.py",
+    "sha256": "fdaba7c752698fdc1cc94aa2e5941118d20ccd3eddd99fd43ead80873fbbe471",
+    "status": "PASS",
+    "scalar_grid_points": 440,
+    "finite_B_cases": 300,
+    "max_delta_over_q": 4.266666666666667,
+    "max_abs_L_minus_4q_over_uq": 4.368073023755583,
+    "max_proved_lhs_over_theorem_rhs": 0.05514879935351338
+  },
+  "cpp": {
+    "path": "computations/cpp/pure_loss_discrimination_bounds.cpp",
+    "sha256": "fb7f495a8c232df2195e6e5b1ecfaead36c99d40965271c6b32c01fb344f546f",
+    "status": "PASS",
+    "cases": 168,
+    "max_delta_over_q": 4.26667,
+    "max_log_error_ratio": 4.36807
+  },
+  "manuscript": {
+    "tex_sha256": "e7e0ddcee9d4ee96683b9e7640b509e283b8011582dac28fe0e7b3937b81f583",
+    "pdf_sha256": "55f759c1d4205d76b6499cbf52e52d2caf0273eac18aa0eaa990cbab94c73edd",
+    "pages": 146,
+    "tex_files_expected": 1,
+    "pdf_files_expected": 1,
+    "input_directives": 0,
+    "visual_readback": "PASS on title, representative interior pages, all new bosonic-information sections, and final bibliography"
+  },
+  "result": "PASS",
+  "residual_risks": [
+    "external priority not established",
+    "independent human referee review not performed",
+    "GitHub Actions runner executed no steps"
+  ]
+}
