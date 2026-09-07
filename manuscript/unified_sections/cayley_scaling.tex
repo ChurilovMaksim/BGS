@@ -58,3 +58,79 @@ changes. It does not rule out other curve-averaging methods, and it supplies
 no improvement of the active $K^{8/3}$ pointwise energy exponent.
 
 \input{unified_sections/cayley_curve_uniform.tex}
+
+\subsection{Dense-regime Fourier complement}
+\label{subsec:cayley-fourier-hybrid}
+The genus-one curve estimate is strongest in the sparse and intermediate
+regimes.  A different argument gives a centered estimate for dense subgroups.
+Let $m=(p-1)/K$, $n=K-1$, and use the unnormalised transform
+\[
+ \widehat{1_A}(q)=\sum_{a\in A}e_p(qa).
+\]
+If $S=H^\perp$ is the group of multiplicative characters trivial on $H$,
+then $|S|=m$ and for $q\ne0$
+\[
+ \widehat{1_A}(q)=\frac1m\sum_{\chi\in S}T_\chi(q),\qquad
+ T_\chi(q)=\sum_{h\in\mathbf F_p^*,\ h\ne1}
+     \chi(h)e_p\!\left(q\frac{h+1}{h-1}\right).
+\]
+The trivial character contributes exactly $-e_p(q)-e_p(-q)$.  For
+$\chi\ne1$, the substitution $z=(h+1)/(h-1)$ gives the mixed
+multiplicative--additive sum
+\[
+ T_\chi(q)=\sum_{z\in\mathbf F_p\setminus\{-1,1\}}
+ \chi\!\left(\frac{z+1}{z-1}\right)e_p(qz).
+\]
+The classical mixed Weil bound gives $|T_\chi(q)|\le2\sqrt p$; the
+Kummer factor has one simple zero and one simple pole and the additive
+factor has its sole pole at infinity. Consequently
+\begin{equation}\label{eq:cayley-fourier-max}
+ |\widehat{1_A}(q)|\le
+ M_m(p):=\frac{2((m-1)\sqrt p+1)}m\le2\sqrt p .
+\end{equation}
+
+\begin{theorem}[Dense centered Cayley energy bound]
+For every odd prime $p$ and every subgroup $H\le\mathbf F_p^*$ of order
+$K\ge2$, with $A=c(H\setminus\{1\})$, $n=K-1$ and
+$m=(p-1)/K$,
+\begin{align}
+0\le E_+(A)-\frac{n^4}{p}
+&\le \frac{M_m(p)^2}{p}\,n(p-n) \\
+&=4\frac{((m-1)\sqrt p+1)^2}{m^2p}\,n(p-n) \\
+&\le4n(p-n).                                      \label{eq:cayley-fourier-energy}
+\end{align}
+Combining this with Theorem~\ref{thm:czu-cayley},
+\[
+ E_+(A)-\frac{(K-1)^4}{p}
+ \ll \min\!\left\{pK,\ K^{8/3}+\frac{K^4}{p}\right\}.
+\]
+Thus if $K=p^{\alpha+o(1)}$ with $\alpha>3/5$, the centered error has
+strictly smaller exponent than $K^{8/3}$; in $K$-notation the Fourier
+branch is $K^{1+1/\alpha+o(1)}$.  For example $\alpha=2/3$ gives a
+$K^{5/2+o(1)}$ centered bound.
+\end{theorem}
+\begin{proof}
+Parseval gives
+\[
+ \sum_q|\widehat{1_A}(q)|^2=pn,\qquad
+ \sum_{q\ne0}|\widehat{1_A}(q)|^2=n(p-n).
+\]
+Also
+\[
+ E_+(A)=\frac1p\sum_q|\widehat{1_A}(q)|^4.
+\]
+Apply \eqref{eq:cayley-fourier-max} to one factor of the nonzero-frequency
+fourth moment and Parseval to the other.  This proves
+\eqref{eq:cayley-fourier-energy}; the hybrid estimate follows from
+Theorem~\ref{thm:czu-cayley}.
+\end{proof}
+
+\begin{remark}
+This is a genuine dense-regime improvement, not the missing sparse theorem.
+The required inversive subgroup sums below the square-root scale are not
+controlled by this complete mixed-Weil argument.  In particular the centered
+$K^{2+o(1)}$ target remains open in the arithmetic regime relevant to the
+present BGS route.  The maintained Python and independent C++ exact
+regressions check 807 subgroup designs through $p\le509$, including 364
+strict dense-side cases $K^5>p^3$.
+\end{remark}
