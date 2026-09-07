@@ -12,7 +12,7 @@ The fixed-box consequence is
 c_R(A)=inf Gamma_A(g)/||g||_2^4 > 0
 ```
 
-on every finite real mean-zero Fourier box. There is no claimed bandwidth-uniform lower bound, and the theorem does not cover arbitrary analytic infinite-support observables.
+on every finite real mean-zero Fourier box. There is no claimed bandwidth-uniform lower bound.
 
 See `extremal_resonance_nondegeneracy.md` and `../manuscript/unified_sections/temporal_resonance.tex`.
 
@@ -112,7 +112,44 @@ the pure-loss outputs satisfy
 
 Thus the known-pair copy penalty is asymptotically `eta^{-n}`. At 50% loss and `n=128`, the certified 75% threshold obeys `3e39<B_75<=4e39`. This does not determine the full varying-noise tomography minimax transition.
 
-## 8. Current principal open frontiers
+## 8. Infinite-support resonance stability and genericity — EXACT / FINITE-REGRESSION
+
+Let
+
+```text
+M_0(f)=sum_v ||v||_1 |fhat(v)|,
+M_A(f)=sum_v ||A v||_1 |fhat(v)|.
+```
+
+For a nonconstant finite polynomial `p`, the isolated witness `u,v` gives
+
+```text
+D=|det(u,Av)| |phat(u) phat(v)|>0.
+```
+
+If `g=p+r` and
+
+```text
+E=M_0(p)M_A(r)+M_0(r)M_A(p)+M_0(r)M_A(r)<D,
+```
+
+then
+
+```text
+Gamma_A(g)>=2 pi^2 (D-E)^2>0.
+```
+
+Thus every nonconstant finite polynomial has an explicit infinite-support weighted-Wiener stability ball. More globally, on the real Banach space with norm `|fhat(0)|+M_0(f)+M_A(f)`, the set `{Gamma_A>0}` is open and dense; its exact-cancellation complement is closed and nowhere dense. The same open-dense theorem holds in every fixed analytic Wiener strip
+
+```text
+sum_v exp(rho ||v||_1)|fhat(v)|<infinity.
+```
+
+This is a generic analytic nondegeneracy theorem, not an all-members theorem: whether every nonconstant analytic observable has positive variance remains open.
+
+See `resonance_wiener_stability.md`, `generic_wiener_resonance.md`, and the exact regression `../computations/verification/resonance_wiener_stability.py`.
+
+## 9. Current principal open frontiers
 
 The remaining BGS chain is still
 
@@ -123,4 +160,4 @@ Heisenberg-scale desymmetrized joint traces
  -> full microscopic BGS/GOE/COE.
 ```
 
-The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`; the global curve theorem above does not close it. The analytic infinite-support resonance question and the full vanishing-noise tomography transition are also open but logically separate from BGS.
+The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`; the global curve theorem above does not close it. The all-members analytic resonance question and the full vanishing-noise tomography transition are also open but logically separate from BGS.
