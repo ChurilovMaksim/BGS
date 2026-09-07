@@ -1,0 +1,99 @@
+\section{Weighted-Wiener stability of the isolated resonance mode}
+\label{sec:wiener-resonance-stability}
+The finite-Fourier theorem above has an explicit infinite-support stability
+region.  This is useful because finite support and arbitrary smooth support
+are qualitatively different: smooth exact coboundary cancellations exist, but
+they cannot approach a fixed finite polynomial too closely in a suitable
+weighted Wiener topology while preserving zero variance.
+
+For a Fourier series $f$ put
+\[
+ M_0(f)=\sum_{v\in\mathbb Z^2}\|v\|_1|\widehat f(v)|,
+ \qquad
+ M_A(f)=\sum_{v\in\mathbb Z^2}\|Av\|_1|\widehat f(v)|.
+ \tag{W.1}\label{eq:wiener-moments}
+\]
+Constants are invisible to these seminorms and to the Poisson bracket.  Write
+\[
+ B_A(f,g)=\frac{\{f,\mathcal C_A g\}}{4\pi},
+ \qquad h_g=B_A(g,g).
+\]
+The Fourier formula is
+\[
+ \widehat{B_A(f,g)}(k)
+ =-\pi\!\sum_{u+Av=k}\det(u,Av)\widehat f(u)\widehat g(v).
+ \tag{W.2}\label{eq:wiener-bracket}
+\]
+Since $|\det(u,w)|\leq\|u\|_1\|w\|_1$, absolute summation gives
+\begin{equation}\label{eq:wiener-bilinear}
+ \|\widehat{B_A(f,g)}\|_{\ell^1}
+ \leq \pi M_0(f)M_A(g).
+\end{equation}
+Thus all orbit sums are absolutely convergent whenever the two weighted
+moments are finite.
+
+\begin{theorem}[Explicit weighted-Wiener stability]
+\label{thm:wiener-resonance-stability}
+Let $p$ be a nonconstant real trigonometric polynomial.  Choose the isolated
+finite-support witness $u,v$ supplied by Lemma~\ref{lem:temporal-support},
+for lag one, and put
+\[
+ d=|\det(u,Av)|,\qquad
+ D=d\,|\widehat p(u)\widehat p(v)|>0.
+\]
+For a real weighted-Wiener perturbation $g=p+r$, define
+\[
+ P_0=M_0(p),\quad P_A=M_A(p),\quad
+ \varepsilon_0=M_0(r),\quad \varepsilon_A=M_A(r)
+\]
+and
+\[
+ E=P_0\varepsilon_A+\varepsilon_0P_A
+       +\varepsilon_0\varepsilon_A.
+\]
+If $E<D$, then
+\begin{equation}\label{eq:wiener-gamma-lower}
+ \Gamma_A(g)\geq2\pi^2(D-E)^2>0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Bilinearity and \eqref{eq:wiener-bilinear} give
+\[
+ \|\widehat{h_g-h_p}\|_{\ell^1}
+ \leq\pi E.
+\]
+If $k=u+Av$, the isolated-mode theorem says that the oriented $A$-orbit of
+$k$ contains exactly one Fourier coefficient of $h_p$, with modulus $\pi D$.
+Hence the same orbit sum for $h_g$ has modulus at least $\pi(D-E)$.
+For real $g$ the distinct orbit of $-k$ has the conjugate sum, so those two
+orbits alone give \eqref{eq:wiener-gamma-lower}.
+\end{proof}
+
+A one-parameter radius follows immediately.  If
+\[
+ P=P_0+P_A,
+ \qquad \varepsilon=\max\{M_0(r),M_A(r)\},
+\]
+then $E\leq P\varepsilon+\varepsilon^2$.  Therefore every perturbation with
+\begin{equation}\label{eq:wiener-radius}
+ \varepsilon<\varepsilon_*(p;u,v)
+ :=\frac{\sqrt{P^2+4D}-P}{2}
+\end{equation}
+has positive resonance variance.  In particular every nonconstant real
+trigonometric polynomial is an interior point of the nondegenerate set in
+this weighted Wiener topology.
+
+For analytic tails the criterion is fully explicit.  If
+$|\widehat r(v)|\leq C e^{-\rho\|v\|_1}$ and the tail is supported on
+$\|v\|_1>R$, then
+\[
+ M_0(r)\leq4C\sum_{n>R}n^2e^{-\rho n},
+ \qquad M_A(r)\leq\|A\|_{1\to1}M_0(r).
+ \tag{W.3}\label{eq:wiener-analytic-tail}
+\]
+Substitution into the theorem gives a computable analytic-tail condition.
+This proves nondegeneracy on an infinite-dimensional open neighbourhood of
+every finite polynomial; it does not prove that every nonconstant analytic
+observable lies in one of these neighbourhoods.  The latter global coverage
+question remains open.
