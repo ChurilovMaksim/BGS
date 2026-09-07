@@ -1,6 +1,6 @@
 # Claim addendum: rare-phase, fixed Gaussian noise, and uniform pure-loss limits (2026-09-07)
 
-This dated addendum records the new information-theoretic claims from the session. The repository-wide authority remains `record/claim_ledger.md`; until the next full ledger rewrite, this addendum is the canonical status source for the claims below.
+This scoped note records the information-theoretic claims from the session. Repository-wide authority is now `record/claim_ledger.md` together with `record/claim_ledger_addendum_20260907.md`; the latter incorporates and governs the claims below.
 
 - **EXACT + FINITE-CERTIFICATE:** rare-phase balance radius `x_n~n/e`, radial Hellinger profile, exact aperture exponent, and certified scalar `2.9086102383180<C_*<2.9086102383183` for the explicit fixed-moment vacuum/high-Fock pair.
 - **EXACT + FINITE-CERTIFICATE:** for `n=128`, mean photon number one, exactly 10 unrestricted input copies first reach 75% known-pair success; ordinary heterodyne needs more than `3e18`, unit-aperture censored heterodyne more than `3e218`.
