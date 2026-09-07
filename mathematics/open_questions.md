@@ -1,163 +1,98 @@
 # Open mathematical obligations
 
-Only unresolved obligations belong here. Superseded proof attempts and false
-historical statements belong in
-[`../record/retractions.md`](../record/retractions.md).
+Only unresolved obligations belong here. Closed routes, corrected theorems and finite controls are indexed in `results.md` and `results_20260907_addendum.md`; false or superseded statements belong in `../record/retractions.md`.
 
-## A. Complete the off/off elliptic correlation theorem
+## A. Improve pointwise Cayley energy to the centered quadratic scale
 
-Close every obligation listed in
-[`elliptic_pencil.md`](elliptic_pencil.md) for the actual family: projective
-model, discriminant, bad fibers, twists/isogenies, sheaf irreducibility and
-conductor, affine boundary, and the exact hypotheses of the chosen correlation
-theorem.
+The off/off elliptic correlation layer is no longer an independent open problem: after extraction of the coherent reducible fibre, `offoff_elliptic_spike_theorem.md` proves
 
-**Closure condition:** a theorem with explicit `(p,K)` hypotheses and a
-uniform proved error bound; no CAS-only or unnamed “Katz-style” step.
+```text
+Var O << p E_+(A)+K^2p+K^4 sqrt(p)+K^4.
+```
 
-## B. Improve the proved pointwise mixed-energy exponent to the centered quadratic scale
+The mixed/off-off bottleneck is therefore the same Cayley additive energy.
 
-The old question “eliminate every exceptional collision” is no longer the
-right closure condition. The square-resultant/Fibonacci analysis shows that
-very large exceptional split primes exist, while their total excess energy can
-remain small.
+Two uniform polynomial-scale theorems are already closed:
 
-### What is already closed
+1. the older Vyugin--Makarychev route gives `E_+(A)<34K^(8/3)` in its explicit range;
+2. `cayley_curve_uniform.md`, using Corvaja--Zannier, gives globally for every subgroup order `K>=2`
 
-There is a uniform pointwise polynomial-scale theorem. For every odd prime
-`p`, every subgroup `H<=F_p^*` of order
+```text
+E_+(A) << K^(8/3)+K^4/p.
+```
 
-`100<K<p^(3/4)/3`,
+The latter removes the odd-order and subgroup-size restrictions but does not improve the exponent.
 
-and `A=c(H\{1})`,
+The sharp pointwise target remains
 
-`E_+(A)<34 K^(8/3)`,
-
-`sum_t C_H(t)^2<34 K^(8/3)`,
-
-and the mixed centered variance in the repository normalization is
-
-`<136 p K^(8/3)`.
-
-See [`cayley_direct_energy.md`](cayley_direct_energy.md).
-
-For odd prime `K`, the exact resultant theorem also gives the global split-prime budget
-
-`sum_{p==1 mod K} Delta_K(p) log p`
-
-`<= (K^3-5K^2+6K+1)((K-1)log12-3logK)`,
-
-where
-
-`Delta_K(p)=sum_{d!=0}r_{A-A}(d)^2-(K-1)(2K-5)`.
-
-See [`cayley_resultant_mass_budget.md`](cayley_resultant_mass_budget.md).
-
-The previously open normalization step over a varying split-prime interval is
-now also closed in a two-parameter dyadic average. For every fixed
-
-`0<theta<1/3`,
-
-let `D_theta(X)` consist of prime pairs
-
-`K in (X^theta/2,X^theta]`,
-
-`p in (X/2,X]`,
-
-`p==1 mod K`.
-
-Bombieri--Vinogradov plus the ordinary prime number theorem gives
-
-`|D_theta(X)| ~ [log2/(2theta)] X/(log X)^2`,
-
-and the resultant mass budget gives
-
-`1/|D_theta(X)| sum_(K,p in D_theta(X)) Delta_K(p)/K^2`
-
-`<<_theta X^(3theta-1) -> 0`.
-
-Thus for every fixed `eta>0` the proportion of split pairs with
-`Delta_K(p)>=eta K^2` tends to zero. In particular, for `theta<1/4` this is an
-almost-all quadratic mixed-energy theorem strictly inside the intended
-`K=o(p^(1/4))` regime. The result actually holds as a double average up to
-`theta<1/3`.
-
-The same theorem has an exact full-annihilator twisted-Jacobi formulation:
-
-`1_Ahat(r)=K Tr M_S(2r)`.
-
-Its nonzero-frequency trace second/fourth moment ratio tends to the
-real-Gaussian value `3` in the same double average. This is not a CLT and not a
-local eigenvalue-statistics statement.
-
-See [`cayley_jacobi_trace_average.md`](cayley_jacobi_trace_average.md).
-
-### The remaining sharp pointwise target
-
-For every set `A subset F_p`,
-
-`E_+(A)=|A|^4/p + 1/p sum_{q!=0}|1_Ahat(q)|^4`.
-
-The density term is unavoidable. The sharp pointwise target is
-
-`E_+(A)=(K-1)^4/p + O(K^(2+o(1)))`,
+```text
+E_+(A)=(K-1)^4/p+O(K^(2+o(1))),
+```
 
 or equivalently
 
-`sum_{q!=0}|1_Ahat(q)|^4 << p K^(2+o(1))`.
+```text
+sum_(q!=0)|1_Ahat(q)|^4 << p K^(2+o(1)).
+```
 
-In the intended regime `K=o(p^(1/4))`, the density term is negligible at the
-quadratic collision scale.
+A material intermediate advance would be any explicit pointwise `K^(2+delta)` bound with `delta<2/3` after complete propagation through the exact `B(t)` decomposition.
 
-[`cayley_centered_energy.md`](cayley_centered_energy.md) gives the exact
-character Gram matrix, torus-versus-unipotent PGL2 intersection formulation,
-and shifted-product formulation. The new trace identity additionally identifies
-the same Fourier transform with the ordinary trace of the full annihilator
-Twisted-Jacobi matrix.
+The exact split-prime support machinery, scalar resultants, Frobenius amplification and dyadic averaged theorems remain available inputs. None currently implies the centered pointwise bound.
 
-Generic pointwise Stepanov gives the current `8/3` exponent. The audited
-Möbius-incidence and shifted-subgroup multiplicative-energy theorems do not, by
-themselves, remove the remaining `K^(2/3)` pointwise loss. Termwise square-root
-bounds on the trace functions also discard the joint character-family
-cancellation required by the fourth moment.
+## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
-**Pointwise closure condition:** prove the centered bound above, or any explicit
-`K^(2+delta)` bound with `delta<2/3` that materially enlarges the pointwise
-fourth-moment regime after complete propagation through `B(t)` and the variance
-identity.
+For the correct `N x N` spectral block, the deterministic bridge is exact:
 
-**Averaged continuation condition:** if a stronger average is pursued, specify
-its averaging measure and parameters explicitly. The dyadic prime-pair average
-above is already closed; do not silently relabel it as a pointwise theorem or
-as an average over a fixed `K`.
+```text
+C_(2,N)(U;phi)
+ = N^(-2) sum_m phihat(m/N)(|Tr U^m|^2-N),
+```
 
-## C. Re-audit global symmetry statements if they become load-bearing
+and the higher factorial correlations are partition-Mobius sums of joint traces. Compact Fourier support probes powers `|m|=Theta(N)`.
 
-The finite/operator identities in
-[`earlier_foundations.md`](earlier_foundations.md) are useful, but a complete
-blockwise symmetry-class theorem should be re-derived with every kernel chart,
-desymmetrization convention and antiunitary action stated explicitly if it is
-needed in a future local-statistics argument.
+**Closure condition:** prove the weighted joint-trace comparison with the appropriate GOE/COE/GUE target on the Heisenberg scale for a clearly specified natural deterministic family, with all symmetry reduction and unfolding conventions fixed before the estimate.
 
-**Closure condition:** one convention-consistent theorem covering exactly the
-spectral blocks used in the BGS statement.
+Classical Green--Kubo positivity, global moment laws, recurrence-time normal forms and finite cyclic-module identities do not substitute for this estimate.
 
-## D. Build the microscopic BGS bridge
+## C. Remove the Fourier band-limit
 
-Even a completed moment estimate does not imply microscopic GOE spacing.
+Even a complete Heisenberg-scale comparison for compactly supported Fourier tests yields only band-limited microscopic correlations.
 
-**Closure condition:** identify and verify a theorem or new argument that
-transfers the available arithmetic information to a local eigenphase
-correlation law for this structured deterministic family at the mean-spacing
-scale, with all symmetry and uniformity assumptions explicit.
+**Closure condition:** prove a uniform high-frequency tail estimate strong enough to pass from compact Fourier support to the intended Schwartz/local test class without changing the symmetry block or unfolding.
 
-## Engineering status
+This is logically separate from the trace-to-local Fourier identity, which is already exact.
 
-The historical Julia migration is complete: the current branch tracks no
-`.jl` sources, and all 31 historical paths have a final disposition in
-[`../record/julia_migration.md`](../record/julia_migration.md). Language
-migration is therefore **not** an open mathematical task. Future language
-choices are driven by the scientific kernel: Python/SymPy for transparent CAS
-and orchestration, C++20 for exact/exhaustive hot paths including arbitrary-
-precision certificates, Lean for kernel-checked finite residues and algebraic
-lemmas, and TeX for the publication-facing proof record.
+## D. Positive microscopic BGS universality for a natural fixed map
+
+The project contains several strong negative and structural lessons:
+
+- arithmetic cat maps retain exceptional symmetries;
+- some kicked families remain smoothly or all-orders conjugate to the arithmetic model;
+- bounded clustering in the Pell critical regime is incompatible with GOE/COE under global unfolding;
+- weak Egorov information alone allows spectral rounding counterexamples.
+
+**Closure condition:** identify a natural fixed chaotic map/quantization family not protected by the known conjugacies, determine the correct desymmetrized ensemble, and close B and C for that family. Only then can a positive BGS/GOE/COE/GUE microscopic theorem be asserted.
+
+## E. Infinite-support resonance nondegeneracy
+
+For every nonconstant real trigonometric polynomial, unrestricted finite-Fourier nondegeneracy is closed. The proof uses an exposed maximum of finite Fourier support. Smooth infinite-support counterexamples exist in the separated-support and noncommuting-return-word constructions.
+
+**Open question:** identify a natural infinite-support regularity/nondegeneracy class (for example a quantitatively constrained analytic class) for which positive second-order variance follows, or prove that no comparably broad analytic statement is possible. A bare analyticity assumption is not currently claimed sufficient.
+
+This question may inform perturbation theory but is not itself the missing BGS theorem.
+
+## F. Full vanishing-noise tomography transition
+
+For every fixed strictly noisy phase-insensitive Gaussian product channel, moment-class input tomography has logarithmic minimax risk, and the explicit pure-loss binary pair has a uniform varying-loss transition with penalty `eta^{-n}`.
+
+**Open question:** determine the matching minimax transition for the full moment class when the physical channel noise vanishes with the copy budget. The binary-pair theorem supplies a lower-bound mechanism but is not a complete minimax characterization.
+
+## G. Formalization depth
+
+The active Lean tree contains kernel-checked finite residues and algebraic lemmas, not formalizations of the full analytic asymptotic theorems.
+
+**Open engineering/mathematical task:** formalize load-bearing algebraic pieces when doing so reduces proof risk, especially exact finite-support/cohomological identities and finite Cayley bookkeeping. Do not label source presence as compilation or analytic formalization.
+
+## Engineering boundary
+
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence.
