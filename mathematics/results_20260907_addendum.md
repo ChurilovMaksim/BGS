@@ -36,6 +36,45 @@ for every subgroup size, with no odd-order or lower/upper subgroup-size restrict
 
 See `cayley_curve_uniform.md` and `../evidence/certificates/cayley_curve_uniform_20260907.json`.
 
+## 2a. Dense Cayley Fourier hybrid — EXACT + EXTERNAL-WEIL + FINITE-REGRESSION
+
+Let `m=(p-1)/K`, `A=c(H\{1})`, and `n=K-1`. Expanding `1_H` in multiplicative characters trivial on `H` gives, for every nonzero additive frequency `q`,
+
+```text
+Ahat(q)=m^(-1) sum_(chi in H^perp) T_chi(q).
+```
+
+The trivial character contributes exactly `-e_p(q)-e_p(-q)`. For every nontrivial annihilator character, the classical mixed multiplicative-additive Weil/Deligne bound applied to
+
+```text
+chi((z+1)/(z-1)) e_p(qz)
+```
+
+gives `|T_chi(q)|<=2sqrt(p)`. Therefore
+
+```text
+|Ahat(q)| <= 2*((m-1)*sqrt(p)+1)/m <= 2sqrt(p).
+```
+
+Parseval and the additive-energy identity then imply the explicit centered bound
+
+```text
+0 <= E_+(A)-(K-1)^4/p
+   <= 4*((m-1)*sqrt(p)+1)^2/(m^2*p) * (K-1)(p-K+1)
+   <= 4(K-1)(p-K+1).
+```
+
+Combined with the global genus-one theorem,
+
+```text
+E_+(A)-(K-1)^4/p
+ << min(pK, K^(8/3)+K^4/p).
+```
+
+Hence for `K=p^(alpha+o(1))` with `alpha>3/5`, the centered exponent in `K` is `1+1/alpha<8/3`; at `alpha=2/3` this is `K^(5/2+o(1))`, and it approaches the quadratic scale as `alpha->1`. This is a genuine dense-regime improvement, but it does not improve the sparse arithmetic regime relevant to the present BGS route.
+
+The Python exact verifier and an independent C++20 implementation both pass every subgroup design for odd primes through `p<=509`: 807 designs total, 364 on the strict dense side `K^5>p^3`, maximum order 508. The dated certificate was re-read and refreshed after detecting stale source hashes; the theorem values did not change. See `cayley_fourier_hybrid.md`, `../computations/verification/cayley_fourier_hybrid.py`, `../computations/cpp/cayley_fourier_hybrid.cpp`, and `../evidence/certificates/cayley_fourier_hybrid_20260907.json`.
+
 ## 3. Temporal hierarchy and spectral modules — EXACT / FINITE-REGRESSION
 
 The maintained September 6–7 temporal branch proves, in addition to the finite-lag nondegeneracy theorem:
@@ -196,4 +235,4 @@ Heisenberg-scale desymmetrized joint traces
  -> full microscopic BGS/GOE/COE.
 ```
 
-The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`; the global curve theorem above does not close it. The all-members analytic resonance question is now reduced to the nonzero analytic coboundary equation (C). The full vanishing-noise tomography transition is also open but logically separate from BGS.
+The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`. The dense Fourier branch closes a stronger pointwise regime for `K>p^(3/5)` but leaves the sparse/intermediate regime open; the global curve theorem and the mixed-Weil hybrid do not close that remaining range. The all-members analytic resonance question is now reduced to the nonzero analytic coboundary equation (C). The full vanishing-noise tomography transition is also open but logically separate from BGS.
