@@ -139,17 +139,53 @@ then
 Gamma_A(g)>=2 pi^2 (D-E)^2>0.
 ```
 
-Thus every nonconstant finite polynomial has an explicit infinite-support weighted-Wiener stability ball. More globally, on the real Banach space with norm `|fhat(0)|+M_0(f)+M_A(f)`, the set `{Gamma_A>0}` is open and dense; its exact-cancellation complement is closed and nowhere dense. The same open-dense theorem holds in every fixed analytic Wiener strip
+Thus every nonconstant finite polynomial has an explicit infinite-support weighted-Wiener stability ball. More globally, on the real Banach space with norm `|fhat(0)|+M_0(f)+M_A(f)`, the set `{Gamma_A>0}` is open and dense; its exact-cancellation complement is closed and nowhere dense.
+
+The same open-dense conclusion holds in each of the following spaces:
 
 ```text
-sum_v exp(rho ||v||_1)|fhat(v)|<infinity.
+fixed analytic Wiener strip: sum_v exp(rho ||v||_1)|fhat(v)|<infinity,
+H^s(T^2;R) for every s>2,
+C^infinity(T^2;R) with its Frechet topology.
 ```
 
-This is a generic analytic nondegeneracy theorem, not an all-members theorem: whether every nonconstant analytic observable has positive variance remains open.
+The Sobolev statement follows from the continuous embedding `H^s -> X_A` for `s>2`, and the smooth statement follows through any such Sobolev norm plus density of Fourier truncations. Smooth exact-cancellation examples therefore remain valid but form a closed nowhere-dense exceptional set in these topologies.
 
 See `resonance_wiener_stability.md`, `generic_wiener_resonance.md`, and the exact regression `../computations/verification/resonance_wiener_stability.py`.
 
-## 9. Current principal open frontiers
+## 9. Analytic rigidity of the remaining zero-variance mechanism — EXACT
+
+For every hyperbolic toral automorphism `S` and every real-analytic observable `g`,
+
+```text
+{g,g o S}=0 identically  =>  g is constant.             (A)
+```
+
+The proof uses the analytic level-set line field `L=ker dg`, its equivariance `L(Sx)=S L(x)`, Poincare recurrence, projective hyperbolicity and irrationality of the stable/unstable eigenlines. Thus the compactly supported separated-support mechanism cannot occur for a nonconstant analytic observable.
+
+There is also an analytic cohomological regularity theorem. In an adapted hyperbolic frequency norm
+
+```text
+N_A(k)=|xi(k)|+|eta(k)|,
+```
+
+if a zero-mean analytic `h` obeys `|hhat(k)|<=M exp(-rho N_A(k))` and has zero sum on every oriented frequency orbit, then
+
+```text
+h=u-C_A u,
+|uhat(k)|<=M' exp(-(rho/2)N_A(k)).                       (B)
+```
+
+Hence if a nonconstant real-analytic `g` nevertheless has `Gamma_A(g)=0`, its bracket is necessarily **nonzero** and solves a genuinely analytic nonlinear cohomological equation
+
+```text
+{g,C_A g}/(4*pi)=u-C_A u,
+u analytic.                                                        (C)
+```
+
+This sharply reduces but does not close the all-members analytic question. See `analytic_bracket_rigidity.md`, `analytic_coboundary_regularization.md`, and `../manuscript/unified_sections/analytic_resonance_rigidity.tex`.
+
+## 10. Current principal open frontiers
 
 The remaining BGS chain is still
 
@@ -160,4 +196,4 @@ Heisenberg-scale desymmetrized joint traces
  -> full microscopic BGS/GOE/COE.
 ```
 
-The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`; the global curve theorem above does not close it. The all-members analytic resonance question and the full vanishing-noise tomography transition are also open but logically separate from BGS.
+The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`; the global curve theorem above does not close it. The all-members analytic resonance question is now reduced to the nonzero analytic coboundary equation (C). The full vanishing-noise tomography transition is also open but logically separate from BGS.
