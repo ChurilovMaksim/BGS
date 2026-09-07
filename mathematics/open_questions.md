@@ -73,11 +73,15 @@ The project contains several strong negative and structural lessons:
 
 **Closure condition:** identify a natural fixed chaotic map/quantization family not protected by the known conjugacies, determine the correct desymmetrized ensemble, and close B and C for that family. Only then can a positive BGS/GOE/COE/GUE microscopic theorem be asserted.
 
-## E. Infinite-support resonance nondegeneracy
+## E. All-members analytic resonance nondegeneracy
 
-For every nonconstant real trigonometric polynomial, unrestricted finite-Fourier nondegeneracy is closed. The proof uses an exposed maximum of finite Fourier support. Smooth infinite-support counterexamples exist in the separated-support and noncommuting-return-word constructions.
+The generic infinite-support part is now closed. `resonance_wiener_stability.md` gives an explicit weighted-Wiener stability ball around every nonconstant real trigonometric polynomial, and `generic_wiener_resonance.md` proves that `{Gamma_A>0}` is open and dense in the natural weighted-Wiener Banach space and in every fixed analytic Wiener strip. Hence exact zero-variance cancellations are closed and nowhere dense in those spaces.
 
-**Open question:** identify a natural infinite-support regularity/nondegeneracy class (for example a quantitatively constrained analytic class) for which positive second-order variance follows, or prove that no comparably broad analytic statement is possible. A bare analyticity assumption is not currently claimed sufficient.
+What remains open is strictly stronger:
+
+**Open question:** is `Gamma_A(g)>0` for every nonconstant real-analytic observable, or can one construct an analytic infinite-support exact-cancellation counterexample? A bare all-members analyticity theorem is not currently claimed.
+
+Smooth infinite-support counterexamples from the separated-support and noncommuting-return-word constructions remain compatible with the generic theorem: they occupy no open weighted-Wiener neighbourhood.
 
 This question may inform perturbation theory but is not itself the missing BGS theorem.
 
@@ -95,4 +99,4 @@ The active Lean tree contains kernel-checked finite residues and algebraic lemma
 
 ## Engineering boundary
 
-Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence.
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. A fresh local Lean build remains environment-blocked here: the repository pins `leanprover/lean4:v4.33.1`, but the present container has no Lean toolchain and cannot fetch the large release archive through its restricted network.
