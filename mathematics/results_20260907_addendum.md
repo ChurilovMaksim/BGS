@@ -212,7 +212,7 @@ if a zero-mean analytic `h` obeys `|hhat(k)|<=M exp(-rho N_A(k))` and has zero s
 
 ```text
 h=u-C_A u,
-|uhat(k)|<=M' exp(-(rho/2)N_A(k)).                       (B)
+|uhat(k)|<=M' exp(-rho N_A(k)).                       (B)
 ```
 
 Hence if a nonconstant real-analytic `g` nevertheless has `Gamma_A(g)=0`, its bracket is necessarily **nonzero** and solves a genuinely analytic nonlinear cohomological equation
@@ -230,9 +230,8 @@ The remaining BGS chain is still
 
 ```text
 Heisenberg-scale desymmetrized joint traces
- -> band-limited microscopic RMT correlations
- -> uniform high-frequency tail
- -> full microscopic BGS/GOE/COE.
+ -> correlations at every compact Fourier support
+ -> Schwartz correlations by positivity (extension proved 2026-09-08).
 ```
 
 The arithmetic pointwise frontier remains the centered Cayley energy scale `K^(2+o(1))`. The dense Fourier branch closes a stronger pointwise regime for `K>p^(3/5)` but leaves the sparse/intermediate regime open; the global curve theorem and the mixed-Weil hybrid do not close that remaining range. The all-members analytic resonance question is now reduced to the nonzero analytic coboundary equation (C). The full vanishing-noise tomography transition is also open but logically separate from BGS.

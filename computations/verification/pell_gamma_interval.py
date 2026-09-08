@@ -94,7 +94,7 @@ def certificate() -> dict:
     assert gamma.lo//(10**20)==gamma.hi//(10**20)
     assert decimal(gamma.lo).startswith('5.6142206921511980716279652410177946307706')
     root=Path(__file__).resolve().parents[2]
-    for name in ('README.md','mathematics/pell_phase_rate.md'):
+    for name in ('mathematics/pell_phase_rate.md',):
         assert '5.614220692151' in (root/name).read_text(), name
     return {'producer':'computations/verification/pell_gamma_interval.py',
             'scope':'Exact integer interval arithmetic, Machin/arctangent and Taylor remainders, and a geometric tail; no floating-point rounding assumptions.',

@@ -56,14 +56,21 @@ continuity makes $g$ constant on the torus, a contradiction.
 \end{proof}
 
 We now make the remaining cohomological alternative analytic as well.  Put
-$A=S^{\mathsf T}$ for the frequency action.  After replacing $A$ by
-$\operatorname{sign}(\operatorname{tr}A)A$, choose real eigen-covectors
-$\xi,\eta$ with expanding eigenvalue $\lambda>1$ and define
+$A=S^{\mathsf T}$ for the frequency action and
+$B=\operatorname{sign}(\operatorname{tr}A)A$.  Choose real eigen-covectors
+$\xi,\eta$ of $B$ with factors $\lambda>1$ and $\lambda^{-1}$ and define
 \[
  N_A(k)=|\xi(k)|+|\eta(k)|.
 \]
 There are constants $0<c_A\le C_A$ such that
 $c_A\|k\|_1\le N_A(k)\le C_A\|k\|_1$.
+The original matrix $A$, including its sign, continues to define frequency
+orbits.  With these covectors fixed, put
+\[
+ m_A=\inf_{k\in\mathbb Z^2\setminus\{0\}}N_A(k)\ge c_A>0,
+ \qquad d=\frac{\lambda+\lambda^{-1}}2-1
+       =\frac{|\operatorname{tr}A|}2-1>0.
+\]
 
 \begin{theorem}[Analytic orbit-sum coboundary regularity]
 \label{thm:analytic-coboundary-regularity}
@@ -72,45 +79,77 @@ Let $h$ have zero mean and satisfy
  |\widehat h(k)|\le M e^{-\rho N_A(k)}
  \qquad(k\ne0).
 \]
-If every oriented $A$-orbit has zero coefficient sum, then there is a transfer
-$u$, unique modulo constants, such that
+If every oriented $A$-orbit has zero coefficient sum, then there is an analytic
+transfer $u$, unique among analytic transfers modulo constants, such that
 \[
  h=u-Cu,
 \]
 and
 \begin{equation}\label{eq:analytic-transfer-decay}
- |\widehat u(k)|\le M' e^{-(\rho/2)N_A(k)}.
+ |\widehat u(k)|\le M' e^{-\rho N_A(k)},
+ \qquad M'=\frac{M}{1-e^{-\rho d m_A}}.
 \end{equation}
-In particular $u$ is real analytic whenever $h$ is real analytic.
+Thus the full adapted Fourier exponent is preserved.  If $h$ is real-valued,
+$u$ may be chosen real-valued.
 \end{theorem}
 \begin{proof}
 Fix an orbit $k_j=A^jk_0$ and write
 $X_j=|\xi(k_j)|$, $Y_j=|\eta(k_j)|$.  Then
 $X_j=\lambda^jX_0$ and $Y_j=\lambda^{-j}Y_0$.
+The sign of $A$ disappears only inside these absolute values.  Both coordinates
+are positive because the eigenlines contain no nonzero integer vector.
 Choose the unique switching index $j_*$ with
 $X_{j_*}\ge Y_{j_*}$ and $X_{j_*-1}<Y_{j_*-1}$.
 For $j\ge j_*$ and $n\ge0$,
 \[
- N_A(k_{j+n})\ge \frac{\lambda^n}{2}N_A(k_j),
+ \frac{N_A(k_{j+n})}{N_A(k_j)}
+ =\frac{\lambda^nX_j+\lambda^{-n}Y_j}{X_j+Y_j}
+ \ge\frac{\lambda^n+\lambda^{-n}}2\ge1+nd.
 \]
-while for $j<j_*$,
+Indeed, the difference in the first inequality is
+$(X_j-Y_j)(\lambda^n-\lambda^{-n})/[2(X_j+Y_j)]\ge0$.
+For $a_n=(\lambda^n+\lambda^{-n})/2$, the identity
 \[
- N_A(k_{j-n})\ge \frac{\lambda^n}{2}N_A(k_j).
+ a_{n+2}-2a_{n+1}+a_n
+ =\tfrac12\bigl(\lambda^n(\lambda-1)^2
+       +\lambda^{-n}(\lambda^{-1}-1)^2\bigr)\ge0
+\]
+gives $a_n\ge a_0+n(a_1-a_0)=1+nd$.
+Interchanging $X_j,Y_j$ gives, for $j<j_*$,
+\[
+ N_A(k_{j-n})\ge(1+nd)N_A(k_j).
 \]
 The zero orbit sum allows the same transfer coefficient to be written as
 \[
  u_j=\sum_{\ell\le j}h_\ell=-\sum_{\ell>j}h_\ell.
 \]
 Use the forward tail on the expanding side and the backward tail on the
-contracting side.  The preceding inequalities give a uniformly convergent
-geometric-superexponential bound by a constant times
-$e^{-(\rho/2)N_A(k_j)}$.  This proves
+contracting side.  Either tail is bounded by
+\[
+ M\sum_{n\ge0}e^{-\rho(1+nd)N_A(k_j)}
+ \le\frac{M e^{-\rho N_A(k_j)}}{1-e^{-\rho d m_A}}.
+\]
+This proves
 \eqref{eq:analytic-transfer-decay} on every orbit.  The recurrence
 $h_j=u_j-u_{j-1}$ is precisely the Fourier form of $h=u-Cu$.
 If two decaying transfers existed, their difference would be $C$-invariant;
 constant coefficients along every infinite nonzero frequency orbit are
 incompatible with exponential decay, so only the zero frequency can remain.
 \end{proof}
+
+For completeness, the orbit-sum variance identity extends to mean-zero
+analytic $h$ by absolute summability:
+\[
+ \sum_{q\in\mathbb Z}|\langle C^qh,h\rangle|
+ \le\sum_{\mathcal O}\left(\sum_{k\in\mathcal O}|\widehat h(k)|\right)^2
+ \le\left(\sum_{k\ne0}|\widehat h(k)|\right)^2<\infty.
+\]
+There are no periodic nonzero frequency orbits, so each pair in an orbit
+appears exactly once in the correlation sum.  Rearrangement and the normalized
+squared norm of the Birkhoff sum give
+$\mathcal V_A(h)=\sum_{\mathcal O}|\sum_{k\in\mathcal O}\widehat h(k)|^2$.
+In particular its vanishing forces each orbit sum to vanish.  The analytic
+bracket $h=\{g,Cg\}/(4\pi)$ has zero mean by integration by parts.
 
 \begin{corollary}[Reduced all-analytic frontier]
 \label{cor:analytic-resonance-frontier}
@@ -130,7 +169,7 @@ In ordinary Fourier coordinates, an estimate
 $|\widehat h(k)|\le M e^{-r\|k\|_1}$ yields, for example,
 \[
  |\widehat u(k)|\le M'
- e^{-r c_A\|k\|_1/(2C_A)}.
+ e^{-r c_A\|k\|_1/C_A}.
 \]
 These results stop short of the all-members analytic variance theorem. They
 exclude the pointwise-zero mechanism and show that loss of transfer regularity

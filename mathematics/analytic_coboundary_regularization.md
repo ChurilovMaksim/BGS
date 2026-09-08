@@ -37,19 +37,29 @@ Let `h` have zero mean and satisfy (3). Assume that on every oriented `A`-orbit 
 sum_(k in O) hhat(k)=0.                                 (4)
 ```
 
-Then there is a transfer `u`, unique modulo constants, such that
+Then there is an analytic transfer `u`, unique among analytic transfers modulo constants, such that
 
 ```text
 h=u-C_A u,                                              (5)
 ```
 
-and `u` is analytic. More quantitatively, there is a constant `M'`, depending only on `A,rho,M`, such that
+More quantitatively, fix the covectors defining `N_A` and put
 
 ```text
-|uhat(k)| <= M' exp(-(rho/2) N_A(k)).                   (6)
+m_A = inf_(k in Z^2\{0}) N_A(k) >= c_A > 0,
+d = (lambda+lambda^(-1))/2-1 = |tr A|/2-1 > 0.
 ```
 
-Thus an exponential Fourier strip survives, with at most a factor-two loss in the adapted exponent.
+Then
+
+```text
+|uhat(k)| <= M' exp(-rho N_A(k)),                      (6)
+M' = M/[1-exp(-rho d m_A)].
+```
+
+Thus the full adapted Fourier exponent survives. This is an estimate in the
+coefficient class (3); no claim about preservation of a boundary supremum norm
+of a holomorphic extension is needed.
 
 ## Proof
 
@@ -76,18 +86,28 @@ X_(j_*) >= Y_(j_*),
 X_(j_*-1) < Y_(j_*-1).                                  (8)
 ```
 
-If `j>=j_*`, then `X_j>=Y_j`, hence `N_A(k_j)<=2X_j`, and for every `n>=0`,
+If `j>=j_*`, then `X_j>=Y_j`. For every integer `n>=0`,
 
 ```text
-N_A(k_(j+n)) >= X_(j+n)
-                  =lambda^n X_j
-                  >=(lambda^n/2) N_A(k_j).              (9)
+N_A(k_(j+n))/N_A(k_j)
+ = (lambda^n X_j+lambda^(-n)Y_j)/(X_j+Y_j)
+ >= (lambda^n+lambda^(-n))/2
+ >= 1+n d.                                              (9)
 ```
 
-If `j<j_*`, then `Y_j>X_j`, and similarly
+The first inequality follows by subtracting the right side: the difference is
+`(X_j-Y_j)(lambda^n-lambda^(-n))/(2(X_j+Y_j))>=0`.
+For the second, put `a_n=(lambda^n+lambda^(-n))/2`. Its successive
+increments are nondecreasing, since
+`a_(n+2)-2a_(n+1)+a_n`
+equals
+`[lambda^n(lambda-1)^2+lambda^(-n)(lambda^(-1)-1)^2]/2>=0`.
+Thus `a_n>=a_0+n(a_1-a_0)=1+n d`.
+
+If `j<j_*`, then `Y_j>X_j`; interchanging `X_j,Y_j` gives
 
 ```text
-N_A(k_(j-n)) >=(lambda^n/2) N_A(k_j),  n>=0.            (10)
+N_A(k_(j-n)) >=(1+n d) N_A(k_j),  n>=0.                (10)
 ```
 
 Condition (4) permits the same coefficient to be written using either tail:
@@ -102,20 +122,20 @@ For `j>=j_*`, use the forward tail in (11). By (3) and (9),
 
 ```text
 |u_j| <= M sum_(n>=1)
-              exp[-(rho/2) lambda^n N_A(k_j)].           (12)
+              exp[-rho (1+n d) N_A(k_j)].              (12)
 ```
 
 For `j<j_*`, use the backward tail and (10):
 
 ```text
 |u_j| <= M sum_(n>=0)
-              exp[-(rho/2) lambda^n N_A(k_j)].           (13)
+              exp[-rho (1+n d) N_A(k_j)].              (13)
 ```
 
-By (2), `N_A(k)>=c_A` for every nonzero integer `k`. Since `lambda^n>=1+n(lambda-1)`, both sums are bounded by a constant depending only on `A,rho` times
+Since `N_A(k)>=m_A>0` on nonzero integer frequencies, both sums are bounded by
 
 ```text
-exp[-(rho/2) N_A(k_j)].                                 (14)
+M exp[-rho N_A(k_j)]/[1-exp(-rho d m_A)].               (14)
 ```
 
 This proves (6) uniformly over all frequency orbits. The exponential bound makes the Fourier series of `u` real analytic. If `h` is real then the decaying solution respects conjugation and `u` may be chosen real.
@@ -130,7 +150,21 @@ Let `g` be real analytic and
 h_g={g,C_A g}/(4*pi).
 ```
 
-Then `h_g` is real analytic and has zero mean. If
+Then `h_g` is real analytic and has zero mean, because the integral of a
+periodic Poisson bracket vanishes by integration by parts. The orbit-sum
+variance identity also holds for analytic observables, not just polynomials.
+Indeed, for a mean-zero analytic `h`, absolute Fourier summability and the
+absence of nonzero periodic frequencies give
+
+```text
+sum_(q in Z) |<C_A^q h,h>|
+ <= sum_O (sum_(k in O) |hhat(k)|)^2
+ <= (sum_(k != 0) |hhat(k)|)^2 < infinity.
+```
+
+Absolute convergence permits rearrangement by orbit. Expanding the squared
+norm of `sum_(j=0)^(n-1) C_A^j h` and taking its normalized limit therefore gives
+`sum_O |sum_(k in O) hhat(k)|^2`. In particular, if
 
 ```text
 Gamma_A(g)=0,
@@ -153,7 +187,17 @@ In ordinary `l1` frequency coordinates, (2) converts any bound
 into (6) with an explicit positive reduced exponent, for example
 
 ```text
-|uhat(k)| <= M' exp[- r c_A/(2 C_A) ||k||_1].           (16)
+|uhat(k)| <= M' exp[- r c_A/C_A ||k||_1].              (16)
 ```
 
 The remaining all-analytic question is therefore a nonlinear analytic cohomological-rigidity problem, not a regularity problem for the transfer.
+
+## Exact finite regression
+
+Run `python3 computations/verification/analytic_coboundary.py`. The dependency-free
+check verifies the scalar growth inequality through exact Chebyshev recurrences
+and Laurent-polynomial identities on stated finite ranges, and checks an exact
+negative-trace counterexample to replacing frequency orbits of `A` by those of
+`-A`. It also checks the transfer recurrence on finite zero-sum data. These
+regressions protect the proof conventions; the universal estimates above are
+proved analytically, not extrapolated from computation.

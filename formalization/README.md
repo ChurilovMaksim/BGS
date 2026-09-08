@@ -9,10 +9,11 @@ cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains exactly the following 15 modules; `formalization/drafts/` is deliberately outside it.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains exactly the following 16 modules; `formalization/drafts/` is deliberately outside it.
 
 | Module | Maintained scope |
 |---|---|
+| `AnalyticOrbitKernels.lean` | symbolic discrete-increment growth and exact signed-action counterexample; no analytic estimates |
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
 | `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
 | `FibonacciRatioSmall.lean` | exact residual Lucas/Fibonacci ratio range `1..12`; not a formalization of Carmichael's theorem |
@@ -33,8 +34,25 @@ The former isolated `CayleyExceptionalK23.lean` was folded into `CayleyEnergy.le
 
 ## Trust boundary
 
-Many large finite propositions use `native_decide`. They are exact kernel-checked finite statements when a real `lake build` succeeds; they do not become symbolic theorems for all primes. The September 7 unrestricted finite-Fourier theorem, Corvaja--Zannier Cayley theorem, Gaussian information-limit theorems and microscopic BGS questions are not claimed to be fully formalized by this tree.
+Many large finite propositions use `native_decide`. A successful build accepts
+these certificates with additional trust in native compilation/evaluation;
+`#print axioms` exposes generated `native_decide` axioms. They are not
+independent small-kernel recomputations of the finite search. Ordinary
+symbolic proofs have their separately printed dependencies. None of these
+finite propositions becomes a uniform analytic or BGS theorem.
 
-Source presence is not compilation evidence. During the September 7 repeat audit the available local environment had no `lean`/`lake`, and the contemporary GitHub-hosted jobs ended before executing any step. Therefore that audit records static import-graph completeness, not a fresh Lean compiler pass.
+On 8 September 2026 the pinned Lean 4.33.1 archive was downloaded and its
+release SHA-256 verified. The full project, including all 16 active modules,
+built successfully (19 Lake jobs). `AnalyticOrbitKernels` uses no
+`native_decide`: its growth lemma depends on `propext` and `Quot.sound`, and
+its three concrete signed-action checks have no axioms.
 
-Historical formal drafts remain recoverable from Git history. `formalization/drafts/TemporalCancellation.lean` is explicitly not imported by `Bgs.lean` until its compiler/proof status is promoted.
+This runtime exposes `/proc/self/exe` but not the per-process executable link
+used by Lean. The optional Linux shim
+`computations/maintenance/lean_proc_self_compat.c` redirects only that exact
+self lookup. The official Lean executable and proof-checking code are unchanged.
+Ordinary environments do not need this shim. See `record/referee_audit_20260908.md`
+for the reproduction commands and evidence boundary.
+
+Historical drafts remain outside the active import graph. No general analytic
+asymptotic theorem is claimed to have been formalized by this build.

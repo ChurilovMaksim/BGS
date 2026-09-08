@@ -87,7 +87,7 @@ full integers or valuations is not silently assumed.
 | partition-Mobius formula for distinct-index spectral sums | **EXACT** | `trace_to_local_statistics_bridge.md` |
 | exact Poisson/Fourier trace-to-microscopic-statistics identity | **EXACT** | trace-to-local note |
 | weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations | **EXACT** | deterministic comparison theorem |
-| uniform high-frequency tail needed to remove Fourier band-limit | **OPEN** | trace-to-local note |
+| all-bandwidth comparison extends to every Schwartz correlation test under positive normalized spectral averages and a reference Schwartz limit | **EXACT** | `bandlimited_correlation_extension.md`; corrected 2026-09-08; no separate tail hypothesis |
 | sharp centered pointwise Cayley target for every intended split design | **OPEN** | closed outside exact order-three support only |
 | Heisenberg-scale trace estimates for required desymmetrized spectral blocks | **OPEN** | deterministic bridge closed; arithmetic/spectral estimate not proved |
 | microscopic BGS/GOE/COE local eigenphase law | **OPEN** | no current theorem |
@@ -182,8 +182,10 @@ C_(2,N)(U;phi)
 
 Compact Fourier support probes `|m|=Theta(N)`.  The Fourier conversion is exact;
 the open spectral problem is a weighted Heisenberg-scale joint-trace comparison
-for the **correct desymmetrized block**, plus high-frequency tail control for
-arbitrary Schwartz tests.
+for the **correct desymmetrized block** at every compact Fourier support.
+For positive normalized averages with a reference Schwartz limit, extension to
+arbitrary Schwartz correlation tests follows from the translated-cube bound
+in `bandlimited_correlation_extension.md` (correction, 2026-09-08).
 
 ## Adversarial finite controls
 

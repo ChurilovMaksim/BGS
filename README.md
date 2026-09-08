@@ -13,7 +13,7 @@ Repository-wide claim status is controlled by:
 
 The dated addendum wins for claims in its scope. Historical prose, exploratory notes and finite experiments do not override these ledgers.
 
-A positive generic microscopic BGS/GOE/COE universality theorem is **not** claimed and remains open. In particular, the missing positive bridge is still Heisenberg-scale desymmetrized joint-trace control plus a high-frequency tail for the intended local test class.
+A positive generic microscopic BGS/GOE/COE universality theorem is **not** claimed and remains open. In particular, the missing positive bridge is still Heisenberg-scale desymmetrized joint-trace comparison on every compact Fourier support. Under positive normalized averaging, the deterministic extension to all Schwartz correlation tests is now proved; it needs no separate trace-tail assumption.
 
 ## Current theorem index
 
@@ -33,7 +33,16 @@ Build it with:
 python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper
 ```
 
-The split `.tex` files under `manuscript/` are source segments of that one article, not parallel publications. A locally flattened 146-page PDF was independently built and visually checked during the September 7 audit; its exact scope and transport boundary are recorded in `record/session_science_sync_20260907.md` and the claim-ledger addendum. The later-restored global Cayley theorem is authoritative in the mathematical/evidence layer but is not silently claimed to be present in that earlier verified PDF.
+The split `.tex` files under `manuscript/` are source segments of that one
+article. The September 8 revision builds to 153 pages. Its analytic transfer
+estimate preserves the full adapted exponential rate, and its deterministic
+correlation theorem removes the band-limit under explicit positivity and
+all-bandwidth hypotheses. The scoped proof review, limitations and actual
+execution record are in `record/referee_audit_20260908.md`.
+
+An exact illustration of why a fixed Fourier cap is insufficient is in
+`assets/figures/correlation_bandwidth.svg`; its producer is
+`computations/analysis/correlation_bandwidth_figure.py`.
 
 ## Verification
 
@@ -50,7 +59,10 @@ python computations/maintenance/verify_workspace.py --build build/cmake --logs b
 
 The active computational stack is Python/C++/Lean/TeX. Julia is retired from the repository and the structural audit rejects tracked `.jl`, `Project.toml`, or `Manifest.toml` files.
 
-A workflow marked failed with `steps=[]` is an infrastructure non-run, not scientific evidence. Successful execution must be reported from an actual local or cloud run.
+The September 8 local pass completed 106 Python/C++ checks and the full pinned
+Lean build (16 active modules). Native Lean certificates retain their native
+evaluation trust boundary; see `formalization/README.md`. A workflow ending
+with `steps=[]` is an infrastructure non-run and supplies no scientific evidence.
 
 ## Provenance
 

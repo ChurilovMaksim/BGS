@@ -7,7 +7,7 @@ The files in `unified_sections/` are source segments of that one manuscript. Som
 Build with:
 
 ```sh
-python ../computations/maintenance/build_unified_manuscript.py --repo-root .. --output-dir ../build/unified-paper
+python ../computations/maintenance/build_unified_manuscript.py --output-dir ../build/unified-paper
 ```
 
 or from the repository root:

@@ -16,7 +16,7 @@ build/
 formalization/.lake/build/
 formalization/.lake/packages/
 
-# LaTeX build products (PDF is intentionally versioned)
+# LaTeX build products (generated PDFs stay outside manuscript/)
 manuscript/*.aux
 manuscript/*.bbl
 manuscript/*.bcf

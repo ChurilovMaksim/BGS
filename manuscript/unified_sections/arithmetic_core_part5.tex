@@ -64,8 +64,105 @@ If $\widehat\phi$ has compact support, the relevant powers satisfy
 $|m|=\Theta(N)$: microscopic local statistics probe the Heisenberg scale.
 
 A weighted comparison of the quantities $D_U(m)$ with the matching random
-matrix ensemble on this range is therefore sufficient for the corresponding
-band-limited microscopic correlation theorem.  Arbitrary Schwartz tests
-additionally require a uniform high-frequency tail bound.  This deterministic
-Fourier bridge is exact; the required arithmetic/spectral joint-trace estimates
-for the correct desymmetrized cat-map block remain open.
+matrix ensemble at every compact Fourier support is sufficient for the
+corresponding band-limited microscopic correlations. Under positive normalized
+averaging, the next theorem removes the band-limit. The required joint-trace
+estimates for the correct desymmetrized cat-map block remain open.
+
+\subsection{Positive correlation measures remove the band-limit}
+Write $d=k-1$, unfold the circle to length $N$, and let $x_j=N\theta_j$.
+The lifted anchored factorial measure is
+\[
+ \mu_N=\frac1N\sum_{j_1,\ldots,j_k\ \mathrm{distinct}}
+ \sum_{\ell\in\mathbb Z^d}
+ \delta_{(x_{j_1}-x_{j_k}+N\ell_1,\ldots,x_{j_d}-x_{j_k}+N\ell_d)}.
+\]
+It is positive, even when eigenvalues coincide, and
+$\mu_N(\phi)=C_{k,N}(U;\phi)$.
+
+\begin{lemma}[Uniform translated-cube bound]
+\label{lem:factorial-cube-bound}
+For $N>2$ and every $a\in\mathbb R^d$,
+\[
+ \mu_N(a+[0,1)^d)\le 2k^k\bigl(1+\mu_N([-2,2]^d)\bigr).
+\]
+The same bound holds under positive normalized averaging.
+\end{lemma}
+\begin{proof}
+Let $n(t)$ count the periodically lifted points in $[t,t+2)$, with
+multiplicity, and put $a_k=0$. For each tuple in the cube, integrate starting
+points $t$ in the unit interval immediately preceding its anchor. Each of its
+other points lies in $[t+a_i,t+a_i+2)$ apart from irrelevant endpoints.
+Since $2<N$, every window contains at most one lift of each labelled point.
+Integration over a period and then H\"older's inequality give
+\[
+ \mu_N(a+[0,1)^d)
+ \le\frac1N\int_0^N\prod_{i=1}^k n(t+a_i)\,dt
+ \le\frac1N\int_0^N n(t)^k\,dt.
+\]
+For the falling factorial $(r)_k$ one has
+$r^k\le k^k((r)_k+r)$ for nonnegative integers $r$.
+Indeed, for $r<k$ use $r^k\le k^{k-1}r$; for $r\ge k$ each factor in
+$(r)_k$ is at least $r/k$. Moreover,
+\[
+ \frac1N\int_0^N n(t)\,dt=2,
+\]
+\[
+ \frac1N\int_0^N(n(t))_k\,dt
+ =\int\bigl(2-\operatorname{span}(0,z_1,\ldots,z_d)\bigr)_+\,d\mu_N(z)
+ \le2\mu_N([-2,2]^d).
+\]
+The identity counts the possible starts of a common length-two window for
+each distinct-label tuple; their total length is the displayed positive part.
+This proves the bound. Positivity and normalization preserve it on averaging.
+\end{proof}
+
+\begin{theorem}[Extension from all compact Fourier supports]
+\label{thm:factorial-schwartz-extension}
+Fix $k\ge2$. Let $\mu_N,\nu_N$ be positive normalized averages of lifted
+$k$-point factorial measures of $N$-point spectra. Suppose that $\nu_N$ has a
+limit on all Schwartz tests and
+\[
+ \mu_N(f)-\nu_N(f)\longrightarrow0
+\]
+for every Schwartz $f$ with compact Fourier support, with no common upper
+bound on that support. Then the same comparison holds for every Schwartz $f$.
+\end{theorem}
+\begin{proof}
+Choose a nonzero nonnegative smooth compactly supported Fourier bump $\eta$,
+and put $h=\mathcal F^{-1}\eta$. Since $h(0)>0$, for sufficiently small
+$\epsilon>0$ the nonnegative band-limited Schwartz function
+\[
+ B(z)=4|h(\epsilon z)|^2/h(0)^2
+\]
+majorizes one on $[-2,2]^d$. The hypotheses bound $\nu_N(B)$ and
+$\mu_N(B)$. Lemma~\ref{lem:factorial-cube-bound} therefore bounds both
+measures on every translated unit cube by one constant $M$.
+For $p>d$ and every Schwartz $g$ this implies
+\[
+ |\mu_N(g)|+|\nu_N(g)|
+ \le C_{d,p}M\sup_z(1+|z|)^p|g(z)|.
+\]
+For a smooth compactly supported $\chi$ equal to one near zero, set
+$f_R=\mathcal F^{-1}(\chi(\cdot/R)\widehat f)$.
+Then $f_R\to f$ in Schwartz topology. The last inequality makes the two
+approximation errors uniform in $N$. First send $N\to\infty$ at fixed $R$,
+then $R\to\infty$.
+\end{proof}
+
+Thus a separate absolute high-frequency trace-tail estimate is unnecessary
+for this positive-average, all-bandwidth criterion. This does not establish
+such an absolute estimate, or extend a comparison confined to one fixed cap.
+For example, for even $N$, the unit clock and a period-two configuration with
+basis $\{0,a\}$, $0<a<2$, $a\ne1$, have pair measures
+\[
+ \sum_{r\in\mathbb Z}\delta_r-\sum_{r\in\mathbb Z}\delta_{Nr},
+ \qquad
+ \sum_{r\in\mathbb Z}\delta_{2r}
+ +\frac12\sum_{r\in\mathbb Z}(\delta_{2r+a}+\delta_{2r-a})
+ -\sum_{r\in\mathbb Z}\delta_{Nr}.
+\]
+They agree on tests supported in Fourier space inside $(-1/2,1/2)$ but
+have different full limits. The theorem also requires positivity of the
+averages. It addresses correlation tests, not a spacing-distribution theorem
+without the additional point-process hypotheses needed for that conclusion.

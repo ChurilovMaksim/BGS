@@ -424,9 +424,12 @@ C_(2,N)(U;phi)
 
 Band-limited microscopic tests require trace powers `|m|=Theta(N)`.
 A weighted Heisenberg-scale joint-trace comparison with the target RMT ensemble
-is sufficient for the corresponding band-limited microscopic theorem.  The
-required arithmetic/spectral trace estimates and the high-frequency tail for
-arbitrary Schwartz tests are **OPEN**.
+is sufficient for the corresponding band-limited microscopic theorem. For
+positive normalized averages and a reference Schwartz limit, comparison on
+**every** compact Fourier support extends automatically to all Schwartz tests.
+The proof uses a positive band-limited majorant and uniform translated-cube
+bounds; see `bandlimited_correlation_extension.md`. The required dynamical
+Heisenberg-scale estimates remain **OPEN**; a fixed Fourier cap is insufficient.
 
 See [`trace_to_local_statistics_bridge.md`](trace_to_local_statistics_bridge.md).
 
@@ -468,9 +471,11 @@ The microscopic chain is independently
 
 ```text
 Heisenberg-scale desymmetrized joint traces
-        -> band-limited microscopic RMT correlations
-        -> high-frequency tail control
-        -> full microscopic BGS/GOE/COE.
+        -> correlations at every compact Fourier support
+        -> Schwartz correlations by positivity and occupation bounds.
+
+The dynamical trace comparison is open; the extension arrow is proved.
+Spacing/process conclusions require their own stated hypotheses.
 ```
 
 Full microscopic universality remains **OPEN**.

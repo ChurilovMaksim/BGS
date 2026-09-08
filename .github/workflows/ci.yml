@@ -66,5 +66,5 @@ jobs:
           sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
       - name: Build canonical unified manuscript
         run: |
-          python computations/maintenance/build_unified_manuscript.py --repo-root . --output-dir "$RUNNER_TEMP/unified-paper" --runs 3
+          python computations/maintenance/build_unified_manuscript.py --output-dir "$RUNNER_TEMP/unified-paper"
           test -s "$RUNNER_TEMP/unified-paper/WoW_unified.pdf"

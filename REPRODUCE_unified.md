@@ -41,12 +41,12 @@ Build the canonical manuscript without writing a generated PDF into the source t
 
 ```sh
 python computations/maintenance/build_unified_manuscript.py \
-  --repo-root . \
-  --output-dir build/unified-paper \
-  --runs 3
+  --output-dir build/unified-paper
 ```
 
-To publish a locally verified PDF explicitly, use the builder's `--publish` option.
+Generated PDFs stay in `build/`; the repository structural gate rejects PDFs
+in `manuscript/`. Distribute the built PDF separately. The maintained
+`--publish` switch is a legacy local export and does not publish to GitHub.
 
 Important audit correction: the earlier recorded 93-page manuscript check was a successful build of the reconstructed 204-file consolidation corpus with the current master TeX. It was not a proof that the then-current clean Git checkout was self-contained; that checkout was missing several `\input` targets. The cleanup commit fixes that defect and the structural audit now fails whenever any canonical TeX input is absent.
 

@@ -183,3 +183,33 @@ slightly narrower common-open hypothesis than the project family, the project
 must either reduce to that hypothesis explicitly or reproduce the short proof
 with the common-good-open modification, as done for Fouvry--Kowalski--Michel
 Lemma 3.5 in the corrected off/off theorem.
+
+
+## Source checks — 8 September 2026
+
+**Corvaja–Zannier, JEMS 15 (2013), 1927–1942**,
+[DOI 10.4171/JEMS/409, publisher PDF](https://ems.press/doi/pdf/10.4171/JEMS/409).
+Theorem 2 (p. 1929) and Corollary 2 (p. 1930) were read directly.
+For the smooth Cayley curve, the coordinate degrees are two, the four boundary
+points give chi=4, and independent boundary valuations exclude a translated
+subtorus. Substituting m1=m2=K and d1=d2=2 gives exactly
+max(3*cuberoot(32)*K^(2/3),48*K^2/p). Odd characteristic ensures separability;
+K divides p-1. This verifies the external implication in
+`cayley_curve_uniform.md`. It is an application of a known theorem, with no
+priority claim for the specialization. No local source copy was retained.
+
+**Kieler–Fritzsch–Bäcker, Semiclassical foundation of universality in chaotic
+quantum circuits**, [arXiv:2605.27052v1](https://arxiv.org/html/2605.27052v1).
+Read the trace-formula and range-of-validity discussion around equations
+(3), (11) and the subsequent resummation paragraph. The requested version URL
+labels v1; its rendered author date is August 24, 2026, so metadata should be
+rechecked before publication citation. The argument uses stationary phase and
+explicitly conjectures the resummed Heisenberg-scale formula. It does not
+supply this project's uniform joint-trace comparison. Classification: adjacent
+semiclassical work, not an imported proof of the missing implication.
+No local source copy was retained.
+
+Search scope: web queries for BGS, rigorous spectral statistics and
+band-limited Schwartz correlation extension on September 8, 2026. The two
+internal extensions in this pass are self-contained; this bounded search does
+not establish their global novelty.

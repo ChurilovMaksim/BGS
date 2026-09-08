@@ -65,13 +65,20 @@ and the higher factorial correlations are partition-Mobius sums of joint traces.
 
 Classical Green--Kubo positivity, global moment laws, recurrence-time normal forms and finite cyclic-module identities do not substitute for this estimate.
 
-## C. Remove the Fourier band-limit
+## C. Scope of Fourier-support control
 
-Even a complete Heisenberg-scale comparison for compactly supported Fourier tests yields only band-limited microscopic correlations.
+The former separate tail obligation is **closed as a deterministic implication**
+for positive normalized averages of finite-circle spectral measures. By
+`bandlimited_correlation_extension.md`, comparison on every compact Fourier
+support with a reference Schwartz limit extends to every Schwartz correlation
+test. The proof supplies uniform translated-cube bounds from one nonnegative
+band-limited majorant. It does not bound the absolute Fourier trace tail.
 
-**Closure condition:** prove a uniform high-frequency tail estimate strong enough to pass from compact Fourier support to the intended Schwartz/local test class without changing the symmetry block or unfolding.
-
-This is logically separate from the trace-to-local Fourier identity, which is already exact.
+**Remaining scope requirement:** the trace comparison in B must hold for every
+compact Fourier support, not merely a common fixed cap. The clock/period-two
+counterexample proves that the latter is insufficient. Signed averages,
+Hamiltonian window boundaries, and conversion from correlation functions to a
+full point-process or spacing law require separately stated hypotheses.
 
 ## D. Positive microscopic BGS universality for a natural fixed map
 
@@ -82,7 +89,7 @@ The project contains several strong negative and structural lessons:
 - bounded clustering in the Pell critical regime is incompatible with GOE/COE under global unfolding;
 - weak Egorov information alone allows spectral rounding counterexamples.
 
-**Closure condition:** identify a natural fixed chaotic map/quantization family not protected by the known conjugacies, determine the correct desymmetrized ensemble, and close B and C for that family. Only then can a positive BGS/GOE/COE/GUE microscopic theorem be asserted.
+**Closure condition:** identify a natural fixed chaotic map/quantization family not protected by the known conjugacies, determine the correct desymmetrized ensemble, and prove B on every compact Fourier support with the hypotheses in C. Only then can a positive BGS/GOE/COE/GUE microscopic theorem be asserted.
 
 ## E. All-members analytic resonance nondegeneracy
 
@@ -122,10 +129,12 @@ For every fixed strictly noisy phase-insensitive Gaussian product channel, momen
 
 ## G. Formalization depth
 
-The active Lean tree contains kernel-checked finite residues and algebraic lemmas, not formalizations of the full analytic asymptotic theorems.
+The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. All 16 active modules compiled on 8 September 2026.
 
 **Open engineering/mathematical task:** formalize load-bearing algebraic pieces when doing so reduces proof risk, especially exact finite-support/cohomological identities and finite Cayley bookkeeping. Do not label source presence as compilation or analytic formalization.
 
 ## Engineering boundary
 
-Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. A fresh local Lean build remains environment-blocked here: the repository pins `leanprover/lean4:v4.33.1`, but the present container has no Lean toolchain and cannot fetch the large release archive through its restricted network.
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build now succeeds locally; the earlier environment
+block is resolved. This changes execution status, not the scope of the
+formalized mathematics. Full analytic formalization remains open.

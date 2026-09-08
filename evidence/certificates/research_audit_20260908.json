@@ -1,0 +1,925 @@
+{
+  "schema_version": 1,
+  "claim_id": "WOW-20260908-analytic-and-correlation-extension",
+  "repository": {
+    "commit": "6224ecef882ba8d198dc1981d839259834d9765c",
+    "tree": "bb7b180a43062635635d877654039ff4e41430f6",
+    "dirty": true,
+    "input_files_verified": 406
+  },
+  "command": "python computations/maintenance/verify_workspace.py --build build/cmake --logs build/verification-logs --output build/workspace-verification.json; rerun only two corrected failures and add analytic_coboundary; lake build; python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper",
+  "environment": {
+    "software": [
+      "Python 3.12.13",
+      "numpy 2.3.5",
+      "sympy 1.14.0",
+      "mpmath 1.3.0",
+      "GCC 13.3.0",
+      "CMake 4.4.3",
+      "Boost 1.83",
+      "Lean 4.33.1",
+      "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
+    ],
+    "hardware": "x86_64",
+    "lean_compatibility": "Official Lean binary plus self-process readlink compatibility shim; no proof engine modification."
+  },
+  "mathematics": {
+    "assertion_tested": "Maintained finite regressions, signed-orbit counterexample, scalar transfer inequalities, occupation identities; typesetting and Lean compilation separately.",
+    "coefficient_domain": "Integers/rationals for exact claims; finite-field arithmetic; declared floating-point tolerances in numerical verifiers.",
+    "conventions": "A retains its sign; adapted coefficient decay; labelled factorial spectra, positive normalized averages, every compact Fourier support.",
+    "inputs": [
+      "All maintained Python/C++ verification entry points",
+      "All 16 active Lean modules",
+      "Canonical unified manuscript"
+    ],
+    "bounds": {
+      "checks_passed": 106,
+      "checks_total": 106,
+      "cpp_targets": 21,
+      "lean_modules": 16,
+      "lake_jobs": 19,
+      "pdf_pages": 153,
+      "correlation_configuration_order_cases": 48,
+      "correlation_identities": 96,
+      "correlation_inequalities": 480,
+      "analytic_chebyshev_cases": 1950,
+      "analytic_laurent_identities": 65,
+      "analytic_rational_cases": 780,
+      "analytic_transfer_cases": 16
+    },
+    "non_claims": [
+      "No full BGS solution",
+      "No global novelty certification",
+      "No complete manuscript proof audit",
+      "No formalization of the general analytic theorems",
+      "Native-decide results retain native compiler/evaluator trust",
+      "No cloud CI success inferred"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random for new occupation regression; prior verifiers document their own generators",
+    "seed": 73019
+  },
+  "run": {
+    "started_at": "2026-09-08T10:22:21.566107+00:00",
+    "runtime_seconds": 333.968,
+    "runtime_semantics": "Sum of check CPU-process wall durations; overlapping work means this is not total elapsed time. started_at is the final manuscript-build timestamp.",
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "build/workspace-verification.json",
+      "sha256": "b7b01a5f8a62e23fb5548ed7c736851522261f8ad9f290f735c85c8b8bbd2036"
+    },
+    {
+      "path": "build/lean-build.log",
+      "sha256": "fd0ca91f29b0b60ffa25d02ca0749b3dd9d6b1bea0adefd8b1f32485fa6a84dd"
+    },
+    {
+      "path": "build/lean-build-followup.log",
+      "sha256": "8cd59c6c567e256ce38b5d69a3e0add1dfc9bb3f4e9839ba6bb8f1672768f3b3"
+    },
+    {
+      "path": "build/unified-paper/build_manifest.json",
+      "sha256": "7ef784c37bcd7fddae95181435391de22aa51a4422d717f2d76600d2d9da000d"
+    },
+    {
+      "path": "build/unified-paper/WoW_unified.pdf",
+      "sha256": "f0ab9661b096356eed58bf1c41b4302a8563f7c2a94bcd64596c1ef00f847fea"
+    },
+    {
+      "path": "assets/figures/correlation_bandwidth.svg",
+      "sha256": "2cb201a46124f36cc7dc8f04e4300817ed9a0956b48cb2cdbf330d2a76cbe4eb"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balanced_weyl_gaps",
+      "source": "computations/verification/balanced_weyl_gaps.py",
+      "sha256": "e0931db6a9b6f096a05edb7985c2dd05cefa5beed51787ded08f9b005853c8b9",
+      "exit_code": 0,
+      "log_sha256": "05549fea17c2fa97cf7e5f4c99ae8f23e4f26c0a174ba12749f20278bcd99d5f"
+    },
+    {
+      "name": "cayley_curve_uniform",
+      "source": "computations/verification/cayley_curve_uniform.py",
+      "sha256": "d9799af9d770d769b3d1e716ea465e1fdac995093d6435df14d4d80be3b3bf1c",
+      "exit_code": 0,
+      "log_sha256": "501112dedcbcd30e062218defd03e592931d0663ecc16138da25b8bd4bcd6f05"
+    },
+    {
+      "name": "cayley_difference_discriminant",
+      "source": "computations/verification/cayley_difference_discriminant.py",
+      "sha256": "e98dc59fca58677c0a642bccfdc373c1dce9c5fda0204e2ba4a148ec0520e43e",
+      "exit_code": 0,
+      "log_sha256": "fcc5f856444ce0c36b1b97bad18e0581b19920d141c97b33e95c0e56c7ba0c67"
+    },
+    {
+      "name": "cayley_energy_curve_regression",
+      "source": "computations/verification/cayley_energy_curve_regression.py",
+      "sha256": "dae45156ca620a3edbc4bbecfece78c9dedcf8d19ce0a48e07cd71c3d86de97b",
+      "exit_code": 0,
+      "log_sha256": "d1d69c63a5b928ba06535c87aed305b34b90f27a363b60e06def5bc27ae2c35d"
+    },
+    {
+      "name": "cayley_fourier_hybrid",
+      "source": "computations/verification/cayley_fourier_hybrid.py",
+      "sha256": "1316f125c8a55dca1c265c33f19d84d6e93bbee1be35a2e3953689da164c6999",
+      "exit_code": 0,
+      "log_sha256": "f11d97891a77a8363ee9a6e498da47ad69c69adfaabcd85fd89b60af70c544e8"
+    },
+    {
+      "name": "cayley_frobenius_extension",
+      "source": "computations/verification/cayley_frobenius_extension.py",
+      "sha256": "bdc2a450f11620a6835e46992ec85616441278e8740affe6c07e52e6e3244dd6",
+      "exit_code": 0,
+      "log_sha256": "2140c78b610554667f64c0946ac59192d07ac2c2f55c8f47cbda72b56276e259"
+    },
+    {
+      "name": "cayley_inverse_pair_sum_factorization",
+      "source": "computations/verification/cayley_inverse_pair_sum_factorization.py",
+      "sha256": "edd62ada680376459ae449cfe9031c3cafd5f63bc10f4640f6ef2e92de1355c7",
+      "exit_code": 0,
+      "log_sha256": "ed2284a5a3d682ab121718cbd585cefdb7985e5c4d30b27e8461ffb762a533b5"
+    },
+    {
+      "name": "cayley_inverse_resultant_transversality",
+      "source": "computations/verification/cayley_inverse_resultant_transversality.py",
+      "sha256": "a85b4ab66e83fcfd8554e5cdec47d76c29da21524066961d768cdc0e2ffad04b",
+      "exit_code": 0,
+      "log_sha256": "7d98971ae1c07c36962c323aeb481310cd11340b4f9f275312c722d094a523b0"
+    },
+    {
+      "name": "cayley_jacobi_trace_regression",
+      "source": "computations/verification/cayley_jacobi_trace_regression.py",
+      "sha256": "6488d6b7a56c0214ebd05779c218dbd41a180efea247a989df963023cb2d531f",
+      "exit_code": 0,
+      "log_sha256": "cf9086579ba63292b92b96d128005944e9e7230d0fadedaec66549dfba2d4279"
+    },
+    {
+      "name": "cayley_principal_subresultant_support",
+      "source": "computations/verification/cayley_principal_subresultant_support.py",
+      "sha256": "cf40930302280d7af454472fc2e8dd0f77ceb0e1394b7fa6593e6ce988152f6d",
+      "exit_code": 0,
+      "log_sha256": "ffc6fd1ec8f74aeb1ba8161d1132df65a26e92798bff65671f83463b6147b53f"
+    },
+    {
+      "name": "cayley_product_discriminant",
+      "source": "computations/verification/cayley_product_discriminant.py",
+      "sha256": "76d24c8189052a920807d7d389803dd5658f919de9543d3750e5e9db47f0a863",
+      "exit_code": 0,
+      "log_sha256": "ccd09471fc90e761c262d6645b610a3b418f0fd3acdc70f0592f97fb1453bbdf"
+    },
+    {
+      "name": "cayley_product_row_coefficient_ideal",
+      "source": "computations/verification/cayley_product_row_coefficient_ideal.py",
+      "sha256": "49bf6aff3a355c904cb92849222671560d2bd1e20ae69486f184a3e71c9784f2",
+      "exit_code": 0,
+      "log_sha256": "e142d1d9c87e4813977950fbbe35d977b328f7cf73b9012c29b19d746e678844"
+    },
+    {
+      "name": "cayley_product_row_intersections",
+      "source": "computations/verification/cayley_product_row_intersections.py",
+      "sha256": "d921be96c194bfea2bec08d55c70ce1bc28537d397c4c0ba2513dc7d9efcfe75",
+      "exit_code": 0,
+      "log_sha256": "b659b6792cb91a2532ce419284e63530afb4aecc376919e623d920118d0f24e9"
+    },
+    {
+      "name": "cayley_product_row_projective_bezout",
+      "source": "computations/verification/cayley_product_row_projective_bezout.py",
+      "sha256": "e5acf1bfcb7b798748eb60c5967f887ef3622b327a216e02bad53ee1897cef3f",
+      "exit_code": 0,
+      "log_sha256": "1977883c6a143b47e0e8f145a47861eb2304ffc629f7c39e58eabbc95b14f1d0"
+    },
+    {
+      "name": "cayley_product_row_real_trace_ideal",
+      "source": "computations/verification/cayley_product_row_real_trace_ideal.py",
+      "sha256": "61b4bc0cb0ec4f462295dd6ead9f471c76a634aae3ab554c81d997d137603081",
+      "exit_code": 0,
+      "log_sha256": "b1ca7cea4a31289aac578d84555d13e69db84f4783a54c95d261c5657a98afff"
+    },
+    {
+      "name": "cayley_product_row_reflection",
+      "source": "computations/verification/cayley_product_row_reflection.py",
+      "sha256": "0adcbbbd6c5b7c32a214f62d9e0a0872463ddb126b0728b4f69dc7714f51e275",
+      "exit_code": 0,
+      "log_sha256": "df1a738221ce12aca6e09a3a86807876233765cc80e0a90fc311f6e19115045c"
+    },
+    {
+      "name": "cayley_product_row_subresultants",
+      "source": "computations/verification/cayley_product_row_subresultants.py",
+      "sha256": "18d20bf5cdfb713b55d91740382168493a8dab30d4216ec007a6552ce6c0c230",
+      "exit_code": 0,
+      "log_sha256": "534d03a858725e8b8fe603eddcc021175cd307a138968719e0585c2178c690b2"
+    },
+    {
+      "name": "cayley_product_rows",
+      "source": "computations/verification/cayley_product_rows.py",
+      "sha256": "e88604d32b2061d8a96748705e050e032ebca6ceb3efdce12f135d19645a3d3c",
+      "exit_code": 0,
+      "log_sha256": "2ce8dc45ed95e3ef6bd927d03defd017bffb4c0c40463a59bd650e47eaf3676f"
+    },
+    {
+      "name": "cayley_ratio_orbit_factorization",
+      "source": "computations/verification/cayley_ratio_orbit_factorization.py",
+      "sha256": "0250d44630d357b91768917e91d4015192ecde62ae9419556e2304902c2d8807",
+      "exit_code": 0,
+      "log_sha256": "2f96941800aeb2ea3fddeb5d3faf53853f508f05e1ddee615903063ca0e80e1d"
+    },
+    {
+      "name": "cayley_resultant_fibonacci",
+      "source": "computations/verification/cayley_resultant_fibonacci.py",
+      "sha256": "70666d43f37616c4aa4c6e5e05b14505f030ec7eb6d375ffc243f47c1b81627a",
+      "exit_code": 0,
+      "log_sha256": "c46bcb1705d9281f88cf3bbfcfd3a7f0ef8adba2e402e3aaecce41f3e058a6c4"
+    },
+    {
+      "name": "cayley_resultant_mass_budget",
+      "source": "computations/verification/cayley_resultant_mass_budget.py",
+      "sha256": "4e30c356e16fda6ea52a7ac9ac5a74ff5585c7141b42f2b919e06a1a47c0612d",
+      "exit_code": 0,
+      "log_sha256": "2a1d95bb63c7528487395611fb408bfda39648ec2f49b06f549d3d0e6c1ab7d8"
+    },
+    {
+      "name": "cayley_scaling_rigidity",
+      "source": "computations/verification/cayley_scaling_rigidity.py",
+      "sha256": "39d4456c81bb35c0dcbfbae6b9623c8f0a7819eb247d07573c1301ec8d62d687",
+      "exit_code": 0,
+      "log_sha256": "4ef4141daac74478b031ecb40a0f898771da511b827264b4e8e364fdaeae486b"
+    },
+    {
+      "name": "cayley_shift_psc_transversality",
+      "source": "computations/verification/cayley_shift_psc_transversality.py",
+      "sha256": "107aff0534f04f05dbe23e6560e8bcfe31657ec9b756a08c1fae286fa53e5293",
+      "exit_code": 0,
+      "log_sha256": "55d89b16a970639ffe7b087a9614d085760eac59df3db4d6d7881c89f0fa3620"
+    },
+    {
+      "name": "cayley_shifted_energy_orbits",
+      "source": "computations/verification/cayley_shifted_energy_orbits.py",
+      "sha256": "3a1fe1b8838209eeeaed57e9732e8bbf493a746cea3e8f917a57162de46e881f",
+      "exit_code": 0,
+      "log_sha256": "b238849f61dbde2ec0535e936af2edb1b3a11d564541b619c194530fb64f909b"
+    },
+    {
+      "name": "cayley_sylvester_fitting_support",
+      "source": "computations/verification/cayley_sylvester_fitting_support.py",
+      "sha256": "4ec2df3d0ad79d8b38fa7e0b9d644dc3284630d46db169473ca2996d88c557bd",
+      "exit_code": 0,
+      "log_sha256": "1f8f11e44f78e650c7575a2613e2fffb3bf3ec7b266edb2e968f232847a262bb"
+    },
+    {
+      "name": "cayley_trace_intercept_shift_resultant",
+      "source": "computations/verification/cayley_trace_intercept_shift_resultant.py",
+      "sha256": "d28628d32e0bda6a176f743789c08863037a1dcf29a858017c18946300f06d18",
+      "exit_code": 0,
+      "log_sha256": "b85514cf96a11c89c2781eb1495243bc34d335c14098cb9270b8ace3de0b9b72"
+    },
+    {
+      "name": "cayley_uniform_cutoff_regression",
+      "source": "computations/verification/cayley_uniform_cutoff_regression.py",
+      "sha256": "94456b54382ff18d8fcd72c18c0881cb5d8255253a0c3e9dee37eac982fe355d",
+      "exit_code": 0,
+      "log_sha256": "e21cd0a78c0d83dc59f780e0c6a848b0d84d02f5f97d9ab5bba2962436ca8192"
+    },
+    {
+      "name": "cdf_sup_regression",
+      "source": "computations/verification/cdf_sup_regression.py",
+      "sha256": "4bc83efb6381d68b02bfbf774d7f97cecc453a3b8ab98089f217dd457e6eb6b0",
+      "exit_code": 0,
+      "log_sha256": "0b721d245b915e40cb157c08f3d110a1432a5c3e9e8273e1fc3a036298fd861a"
+    },
+    {
+      "name": "coherent_aperture_minimax",
+      "source": "computations/verification/coherent_aperture_minimax.py",
+      "sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+      "exit_code": 0,
+      "log_sha256": "cf66608c4bcd558cf00f9e93324e00f6dd412d51b0a9857dcf556cbdb433f4db"
+    },
+    {
+      "name": "compensated_trace_window",
+      "source": "computations/verification/compensated_trace_window.py",
+      "sha256": "8b661ffb317791cd6c362b5903420bc962f5ea05b7fe12093ffa51fd046e4d9f",
+      "exit_code": 0,
+      "log_sha256": "df64ea9c70cbff382bbd3a0f739f99e378457b5b7b42d60e82aeae42dfe421aa"
+    },
+    {
+      "name": "correlation_extension",
+      "source": "computations/verification/correlation_extension.py",
+      "sha256": "cd4a76a303f3ff2877e2b944393185d37053c110add7c6ba8c4cd29e4605b6db",
+      "exit_code": 0,
+      "log_sha256": "47eb7954d5284c5057511fccf76d93b1a452996d8637ffbe07e008a1569e2da5"
+    },
+    {
+      "name": "current_regression",
+      "source": "computations/verification/current_regression.py",
+      "sha256": "ab3764892cf068a08b8c4c5a13c228027b98e434f3eb85ff1e5938d8fc443398",
+      "exit_code": 0,
+      "log_sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
+    },
+    {
+      "name": "extremal_resonance",
+      "source": "computations/verification/extremal_resonance.py",
+      "sha256": "c89d7b6aedc7146810172ec3fbff3c9e8d678caa3c3830838dd9ab1c76e63c41",
+      "exit_code": 0,
+      "log_sha256": "4cb4b05a00e841d42c64262354868940d2856c85a5024523cf2424ce60f8ad98"
+    },
+    {
+      "name": "fixed_strength_classical",
+      "source": "computations/verification/fixed_strength_classical.py",
+      "sha256": "430b3631be71e44560c9b99e90eb73ef8a491e2e3a7e843447c0203e9204d0c8",
+      "exit_code": 0,
+      "log_sha256": "b1ef93492ef3866bbf407d00230e8def03acf0df50db4c7c69a55d756e5143bf"
+    },
+    {
+      "name": "fixed_strength_locality",
+      "source": "computations/verification/fixed_strength_locality.py",
+      "sha256": "360b2b24dc41fe4a0d8709cd4f7a87a53f8b7b179ed4c84783504efa830acf12",
+      "exit_code": 0,
+      "log_sha256": "bb957202078ff84edaaf779ff5ca8708ed48de5f346b899657629a1514f1e5de"
+    },
+    {
+      "name": "gaussian_channel_minimax",
+      "source": "computations/verification/gaussian_channel_minimax.py",
+      "sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+      "exit_code": 0,
+      "log_sha256": "c9c1b641df0f8d1e346664b3e8285bff99d8e360ff53a43f11e169c3fdd2f146"
+    },
+    {
+      "name": "general_character_recheck",
+      "source": "computations/verification/general_character_recheck.py",
+      "sha256": "0925eb6ab8ec01057abc66782f6c7de237a64048963f03108096cce71ac8802b",
+      "exit_code": 0,
+      "log_sha256": "4a907aa1bb0f80c8a3dee81e7933cf73803e1bb654069728944bfbdaac93611c"
+    },
+    {
+      "name": "general_hyperbolic_prime_spectra",
+      "source": "computations/verification/general_hyperbolic_prime_spectra.py",
+      "sha256": "0fd4e26410028182b11b672fa86c0bede94302d665df33b2383509c2ba1e1602",
+      "exit_code": 0,
+      "log_sha256": "123ccf96483fbacff4a91e64a8a5cd6a9369d624a2fb0e72be2bf0c94cc20640"
+    },
+    {
+      "name": "general_symbol_covariance",
+      "source": "computations/verification/general_symbol_covariance.py",
+      "sha256": "39d5f82d26588790ab28a0c9e5936eda81d6dd8b602b2b8969808195bdb28518",
+      "exit_code": 0,
+      "log_sha256": "17561dae1fab00552b814e6c2775d69be12208841c9ad12bccffb32d430b9f26"
+    },
+    {
+      "name": "holomorphic_shell_rigidity",
+      "source": "computations/verification/holomorphic_shell_rigidity.py",
+      "sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028",
+      "exit_code": 0,
+      "log_sha256": "3ae553e4ec66ae58bd586e01dc105960d08846f276e9baf0d22bcedf362d6295"
+    },
+    {
+      "name": "husimi_shell_tomography",
+      "source": "computations/verification/husimi_shell_tomography.py",
+      "sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe",
+      "exit_code": 0,
+      "log_sha256": "235d5354e9caf406b5606e1d79616dd470403a48fdd2c59b4e7d5c641d9b7761"
+    },
+    {
+      "name": "locality_robustness",
+      "source": "computations/verification/locality_robustness.py",
+      "sha256": "a0c8473c6fbbb5a60ea90deabf41c6154265cc929cce8b92c76283ba2314b9a4",
+      "exit_code": 0,
+      "log_sha256": "104056bc837a88748abef497b65f74ecb1be9126cc6fbc54b848bda64bf77c19"
+    },
+    {
+      "name": "magnetic_quotient_regression",
+      "source": "computations/verification/magnetic_quotient_regression.py",
+      "sha256": "342424a1f94a5b7c9501226da33319ac67973d80bb1d0d6dc91e0ef5ba3f1fa7",
+      "exit_code": 0,
+      "log_sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
+    },
+    {
+      "name": "magnetic_scalar_certificate",
+      "source": "computations/verification/magnetic_scalar_certificate.py",
+      "sha256": "b25582cf25bac7aef42cf364918f425723931a4b9f7c82475e12bc218a026d50",
+      "exit_code": 0,
+      "log_sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
+    },
+    {
+      "name": "mixed_cayley_energy",
+      "source": "computations/verification/mixed_cayley_energy.py",
+      "sha256": "e68b34e615cfedec351a64dc9d8b21091769d54bcc4b10c1d8c4f5e1d3dc6fdd",
+      "exit_code": 0,
+      "log_sha256": "fd940082761c2e48c67cbb4b7f806227877fc9cda256e81963ccf0c1465162f1"
+    },
+    {
+      "name": "multiradius_rigidity",
+      "source": "computations/verification/multiradius_rigidity.py",
+      "sha256": "72117bc46ed4662e4fd5d0d82458b60e905e529d70ad952b44899bb48856eadd",
+      "exit_code": 0,
+      "log_sha256": "6937ba1105e1fff10bc220d05499dc68a5617caba4b5e9dd43a6ef3c901dbb3e"
+    },
+    {
+      "name": "noncommuting_tower",
+      "source": "computations/verification/noncommuting_tower.py",
+      "sha256": "26f932d0914d9bfbb0b34b7dcc5f8e038ac2b2c139793275843b339b4d7654ef",
+      "exit_code": 0,
+      "log_sha256": "b0b1511def7ffdce953d0fce052bafdec51623d976fe70549ba8039965768529"
+    },
+    {
+      "name": "offoff_elliptic_spike_regression",
+      "source": "computations/verification/offoff_elliptic_spike_regression.py",
+      "sha256": "07057ac2b7a754d576e378feabce7c6a9bc9a45b0d47613391a3d9073e738716",
+      "exit_code": 0,
+      "log_sha256": "651f3be6fe205af2477c7f1be5c0e5ff137a542b5abe8ce1ae1524f1f209fe73"
+    },
+    {
+      "name": "pell_coboundary_fourth_moment",
+      "source": "computations/verification/pell_coboundary_fourth_moment.py",
+      "sha256": "212e1e993b09565600c226e99cfc56f210932c075f32488cd38a3799cc370258",
+      "exit_code": 0,
+      "log_sha256": "89d3453398df274d1c15850cb66f2f57dd55feb5f8fca9cd4c7434893a3548b4"
+    },
+    {
+      "name": "pell_coboundary_regression",
+      "source": "computations/verification/pell_coboundary_regression.py",
+      "sha256": "7599d5f23b04c09438f6bed22db508709756ee92fb94c1c59a2bef525a82bdb6",
+      "exit_code": 0,
+      "log_sha256": "8d21644037a5254c768c3943c5f0f0bf8cc50dd33c3c253fc61f2f57208c4a93"
+    },
+    {
+      "name": "pell_flat_quantum_check",
+      "source": "computations/verification/pell_flat_quantum_check.py",
+      "sha256": "3f788062b86601e12acf04bad4e945de449af57a763037d6da89eeee1bfd6179",
+      "exit_code": 0,
+      "log_sha256": "c0314c6580410a60b90f31cbc928466569fb2a5f3763dd7127078a0e51003ff0"
+    },
+    {
+      "name": "pell_floquet_regression",
+      "source": "computations/verification/pell_floquet_regression.py",
+      "sha256": "f6319ae40ae71d84322d36e0c500b6529cddf6627fb4dfc62cb1790c6abe3639",
+      "exit_code": 0,
+      "log_sha256": "07bc3dfffe214471627be56f1b72d11a66032e481e3db7d1ccfc89814a0a53bf"
+    },
+    {
+      "name": "pell_four_mode_coercivity",
+      "source": "computations/verification/pell_four_mode_coercivity.py",
+      "sha256": "0db6bb8fe2ec758a9cafe29f00b15042b1f0879af633d09b54127e8389496722",
+      "exit_code": 0,
+      "log_sha256": "7e0784be3435caa30a5b32ebd6fe5dd5e46f9ca15f591cbdb9cc9a487590df49"
+    },
+    {
+      "name": "pell_gamma_interval",
+      "source": "computations/verification/pell_gamma_interval.py",
+      "sha256": "11b0b6501aa705fb1b37b266207d522591cd58cea640d5a313b61ec022040a66",
+      "exit_code": 0,
+      "log_sha256": "81e5dbaed7b03af10a6731ba1cf311ec477878770d160ee0e61aabd606275c51"
+    },
+    {
+      "name": "pell_gaussian_regression",
+      "source": "computations/verification/pell_gaussian_regression.py",
+      "sha256": "e2301078a730b71f8047f9ae55e110e2fd28d9fcae82d6d604ca46f0bf816d1c",
+      "exit_code": 0,
+      "log_sha256": "147828ab02ea03824fe505a99e77d5a7a68ef63c9fa508bcb6f0fb4c59bdb0fd"
+    },
+    {
+      "name": "pell_pair_obstruction",
+      "source": "computations/verification/pell_pair_obstruction.py",
+      "sha256": "3323986145033e7358c84c0343f7fba19638599aae7c17e45794db33bbf69122",
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pell_sharp_coercivity_check",
+      "source": "computations/verification/pell_sharp_coercivity_check.py",
+      "sha256": "d2b06036d938a258f7fecadcc286bc911f86e377066a50b4a519a53c83c05931",
+      "exit_code": 0,
+      "log_sha256": "862d08fc31bbf1fc0690dadf87e59adaab2ba742b93a1486d7512fbe6bfb9dad"
+    },
+    {
+      "name": "pell_single_orbit_sharp_constant",
+      "source": "computations/verification/pell_single_orbit_sharp_constant.py",
+      "sha256": "0ceca4cfbf25861b5088f3691f07737a3bcfda0b47e20f18d106610a46f3abb2",
+      "exit_code": 0,
+      "log_sha256": "9170f016bcf3c2847f3a8d439cd644e4041308d8e2874854e4f456c9ced9edcb"
+    },
+    {
+      "name": "pell_smooth_cohomology",
+      "source": "computations/verification/pell_smooth_cohomology.py",
+      "sha256": "efeec62f344a7ca2ac2a1a7693f857daf608f4df482ef0b0cf50233e3702ebd0",
+      "exit_code": 0,
+      "log_sha256": "aab8b9660cdb7bcc96c170506d3c18dd1241898064d287f162347b1044118296"
+    },
+    {
+      "name": "pell_weighted_echo_regression",
+      "source": "computations/verification/pell_weighted_echo_regression.py",
+      "sha256": "b0b636e9643a5abc2b854bf5bab7d00bfa795dd6ca2bb1ab09897ea4d6990485",
+      "exit_code": 0,
+      "log_sha256": "3b2f9268d105ccf19dafbd1fbc2a19bcdf5424814d0f7c6f848f7b15939dfeb8"
+    },
+    {
+      "name": "pure_loss_discrimination",
+      "source": "computations/verification/pure_loss_discrimination.py",
+      "sha256": "fdaba7c752698fdc1cc94aa2e5941118d20ccd3eddd99fd43ead80873fbbe471",
+      "exit_code": 0,
+      "log_sha256": "0114f1ab708234d297be5b09a70ebbb5be4c1250d3e04c7f78ba56e5f6db2569"
+    },
+    {
+      "name": "quantum_cyclic_module",
+      "source": "computations/verification/quantum_cyclic_module.py",
+      "sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04",
+      "exit_code": 0,
+      "log_sha256": "673e2c52d58db7d64d3ada7409d8e89869a4c80668a25c740036aad1ec576e49"
+    },
+    {
+      "name": "quantum_phase_completion",
+      "source": "computations/verification/quantum_phase_completion.py",
+      "sha256": "26f2e951f5b77a55942ec24c2e6178a5b4a1b53806108dec2209aaecae6c28bc",
+      "exit_code": 0,
+      "log_sha256": "dd92c11fda59c978836daa48cd53dfef6cc3846e87be35a701b449030604a608"
+    },
+    {
+      "name": "rare_phase_limit",
+      "source": "computations/verification/rare_phase_limit.py",
+      "sha256": "8d229515e82e50f8696c8743d0e5227b098b7197df46abe7eeb77f2988c85548",
+      "exit_code": 0,
+      "log_sha256": "2c2e0e9808360c2b60825d89e381b84780ea9a9fdc2f3502dd644f38268e29e5"
+    },
+    {
+      "name": "rare_phase_testing",
+      "source": "computations/verification/rare_phase_testing.py",
+      "sha256": "703ec58e6465b97c2c291ca6b537473839a25c30babbc281ec998161d6bbcf00",
+      "exit_code": 0,
+      "log_sha256": "51a49cfa3b96bc9eb025b87c13525fa3a3f5059d683a17ca8cc0738f4234d5e9"
+    },
+    {
+      "name": "repository_audit",
+      "source": "computations/verification/repository_audit.py",
+      "sha256": "95dc82fdec2ef346d26c94dd3abfe5ca7cca2493e747fde4001ec397846c791b",
+      "exit_code": 0,
+      "log_sha256": "02234b2c56222f90df3cbe36275870f9a595bc2aedf040bdfbdf5ef48b002f00"
+    },
+    {
+      "name": "resonance_hessian_obstruction",
+      "source": "computations/verification/resonance_hessian_obstruction.py",
+      "sha256": "114c36402ddb1a5d75929990a4ff4491522e1f0418e665c1279bfc351b352c8c",
+      "exit_code": 0,
+      "log_sha256": "a05a32e8c8b309a8cfa46384fdffa8a9c64c9af01a8cc8d8a89f3e02e62511d5"
+    },
+    {
+      "name": "resonance_nondegeneracy_certificate",
+      "source": "computations/verification/resonance_nondegeneracy_certificate.py",
+      "sha256": "2919661b2c6ebacc381bce42d77031ccfb28727aa3d13466f7a5335286b2fd3a",
+      "exit_code": 0,
+      "log_sha256": "d2b4db42e75d5c6aaaaadd14ce0b9e9e39b2ee0f1ffc80a158672496d7796014"
+    },
+    {
+      "name": "resonance_pair_variance_regression",
+      "source": "computations/verification/resonance_pair_variance_regression.py",
+      "sha256": "9dda92f0e78ec4a201d97a48462761b25b73221bc0a8716478d8084fe39f0678",
+      "exit_code": 0,
+      "log_sha256": "f87a7c9df131201946f548b10249c5670c60813b2363d5222ca7c141bfe872ad"
+    },
+    {
+      "name": "resonance_quantum_variance",
+      "source": "computations/verification/resonance_quantum_variance.py",
+      "sha256": "8152e6987d077b6ba0db3f230bc6eef961ccf9ed286f270e2aa43a7211f5b94c",
+      "exit_code": 0,
+      "log_sha256": "25146b901ab59dbd39d6fb9f5d302caa2e70c1108de7f2b3c84ba6123219fbc3"
+    },
+    {
+      "name": "resonance_wiener_stability",
+      "source": "computations/verification/resonance_wiener_stability.py",
+      "sha256": "72acd7ba8e3975863f62a876bba50edf30b75c4bbd309db58f1162d5c0a2f910",
+      "exit_code": 0,
+      "log_sha256": "3f0cd2fcc6b2a20cb0fe0ed2ddff67ef1500afdabec4457963c91546ff7621b6"
+    },
+    {
+      "name": "shell_instability",
+      "source": "computations/verification/shell_instability.py",
+      "sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3",
+      "exit_code": 0,
+      "log_sha256": "2084d5acf8946198be8ca115fb249334f6f10a58119d34b05ac17ba34c45ecf7"
+    },
+    {
+      "name": "smooth_recurrence_and_compensation",
+      "source": "computations/verification/smooth_recurrence_and_compensation.py",
+      "sha256": "09d0af7d0f9b94e83d5a4005314a91bdb63b756b3d11b950fcfec8ce6025e4a8",
+      "exit_code": 0,
+      "log_sha256": "db4bc9e7f2d647e0d6c0ef963926327bf0db67918b381dfb76a99a7ab5fb0325"
+    },
+    {
+      "name": "spectral_lattice_clustering",
+      "source": "computations/verification/spectral_lattice_clustering.py",
+      "sha256": "d088c49316825709bf67852ba1ec27d76286f1963fe402e04b63c3f535a7a930",
+      "exit_code": 0,
+      "log_sha256": "3ba077e4fb5e655d0db7931a81925744f1f9aa71f4150e07f2f28b13431b958a"
+    },
+    {
+      "name": "spectral_module_regression",
+      "source": "computations/verification/spectral_module_regression.py",
+      "sha256": "a5ff2f67b7d3a69b4115cc74fcda3838955de6ae00db31fd7c9cd4dff0385d72",
+      "exit_code": 0,
+      "log_sha256": "bc9c8c4426102411f0f84997980fb1f60168ae07d3975fec5a76c43ed91b7c35"
+    },
+    {
+      "name": "spectral_resolution",
+      "source": "computations/verification/spectral_resolution.py",
+      "sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52",
+      "exit_code": 0,
+      "log_sha256": "fb7b7e1cf006163343b826faf2e8155cb7f0d1da5b274da24b39c5859efbea69"
+    },
+    {
+      "name": "temporal_quantum_variance",
+      "source": "computations/verification/temporal_quantum_variance.py",
+      "sha256": "946edc710c960c1a73fe5c0c4e8586c1948505b498dd60f148c160dff78e801a",
+      "exit_code": 0,
+      "log_sha256": "8d70ad79c730d127ae6b1d4d34944fd2fa369c2ba85a1bc2ffc843cd45df8fcb"
+    },
+    {
+      "name": "temporal_soft_modes",
+      "source": "computations/verification/temporal_soft_modes.py",
+      "sha256": "ce0fb05ed4416d0b98a9dde3380b1a98b57c823bba5029ed9914d62cadaf61fe",
+      "exit_code": 0,
+      "log_sha256": "12ec0ef3bba46e34715cdec33b499b8bee27377e0c5f69126c2d665df3193e3b"
+    },
+    {
+      "name": "twisted_jacobi_regression",
+      "source": "computations/verification/twisted_jacobi_regression.py",
+      "sha256": "3b37a4968b91344b3ed9ab8152d326c9003b22c59e6e4a9e1c228bd29392ce5e",
+      "exit_code": 0,
+      "log_sha256": "abfa49c982c1a471a3ed7177968e599f2dfb977a5eb3a07aa9662e62f6c43a8c"
+    },
+    {
+      "name": "two_radius_rigidity",
+      "source": "computations/verification/two_radius_rigidity.py",
+      "sha256": "a218a65eb5e4eb5508babfe323d44e08b94af8551cd35dd94f8ea443ea86826b",
+      "exit_code": 0,
+      "log_sha256": "34d7f758d54f8d3e4d74bd5b4d04eb0950b8fc5a9236f548689b83e95863019f"
+    },
+    {
+      "name": "wiener_resonance_audit",
+      "source": "computations/verification/wiener_resonance_audit.py",
+      "sha256": "365376ef4c28780eaa69452061684330f0ada27f474390d3f931442e8a457678",
+      "exit_code": 0,
+      "log_sha256": "16641669f56782f64e46722321ba7140231d9a0995df9e837e7f9635ea0851ce"
+    },
+    {
+      "name": "spectral_diagnostics_verify",
+      "source": "computations/analysis/spectral_diagnostics.py",
+      "sha256": "fb965008d457be9fcd14531f47fc8a36a27198bc8a54fa0e5235265c1ab87f7f",
+      "exit_code": 0,
+      "log_sha256": "70b5a193aeeddcc8670f1143b5bd02fdde226e5440f8c09bc5e5cf512a7a6ca5"
+    },
+    {
+      "name": "cpp_cat_map_order",
+      "source": "computations/cpp/cat_map_order.cpp",
+      "sha256": "fdc47a958122848d477acc4d9b1ef0492e5444a54cbf8754757cb2e91e1b7054",
+      "exit_code": 0,
+      "log_sha256": "2d059d14d14256c2a219a2dcf410421ba7bc15d42eeba7c993340199ba7b29dd"
+    },
+    {
+      "name": "cpp_cayley_direct_energy_verifier",
+      "source": "computations/cpp/cayley_direct_energy_verifier.cpp",
+      "sha256": "ee3a665af1ab0f8d86344e6971b2494b73be8cbb4bd83bb5973141a0a80b65ab",
+      "exit_code": 0,
+      "log_sha256": "869970209396d2c7d14a148d0ffc4ff63d51e16b92d92460bc56fc39be07fe1d"
+    },
+    {
+      "name": "cpp_cayley_energy_verifier",
+      "source": "computations/cpp/cayley_energy_verifier.cpp",
+      "sha256": "a9dc7ca1ebf5e1a7e2edadbbeb9e2bf3a84562cb8217bd0be871eed750b7623a",
+      "exit_code": 0,
+      "log_sha256": "ee25b390bf6817738773491dad1d301a63fa9d8e5d494dd2c83afb3f19dc3af4"
+    },
+    {
+      "name": "cpp_cayley_fibonacci_verifier",
+      "source": "computations/cpp/cayley_fibonacci_verifier.cpp",
+      "sha256": "c28243ae41f643f614457b5e9b96a27c0a9a5014dd2cce2eebc3428da301ddd2",
+      "exit_code": 0,
+      "log_sha256": "2f7ea9a1c8a8a9216fd102ddb99b47c4e4ab736ca37e9f0eca1d6fd147d62260"
+    },
+    {
+      "name": "cpp_cayley_fourier_hybrid",
+      "source": "computations/cpp/cayley_fourier_hybrid.cpp",
+      "sha256": "18fd11442666a8227038247f1ca87bb38ffe6b4d5e7240bdbe92543d05ab8b83",
+      "exit_code": 0,
+      "log_sha256": "00aa73294db4436b7062a371651d3a51c1bc15af54c075f05a456aa3e135976a"
+    },
+    {
+      "name": "cpp_cayley_trace_intercept_rigidity",
+      "source": "computations/cpp/cayley_trace_intercept_rigidity.cpp",
+      "sha256": "5109a8f3c65b7cbb36a3d81cc5ee4f9e7dea157c050b1db8de6e55cc6217592b",
+      "exit_code": 0,
+      "log_sha256": "c68348945614b8688ea9ddf3b395252e47fb6f94efa9ef964fddeb964c724fa9"
+    },
+    {
+      "name": "cpp_coherent_aperture_bounds",
+      "source": "computations/cpp/coherent_aperture_bounds.cpp",
+      "sha256": "5e1f2041f7d53dd790a5e0753fb031cfdc20f7cbed80cb851e89ba008d480d8f",
+      "exit_code": 0,
+      "log_sha256": "e44db063626434679ae369a4acc77f240378588c6eab26b44679d281b20e9688"
+    },
+    {
+      "name": "cpp_extremal_resonance_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "exit_code": 0,
+      "log_sha256": "b07c0cb6982fb9dbd2e50c7c5d00924a07fa402a1b13773bf8d1d7688d98180c"
+    },
+    {
+      "name": "cpp_fixed_strength_locality_exact",
+      "source": "computations/cpp/fixed_strength_locality_exact.cpp",
+      "sha256": "52517e97704f33e41b7a3753acc905ee779dc906e75effcef826c02fc9867c7a",
+      "exit_code": 0,
+      "log_sha256": "0f3729589eb300a86c3f63e098d9e6d94fbf08fca6b078fe32052ae2ec3b9e17"
+    },
+    {
+      "name": "cpp_fourth_moment_pair_key_verifier",
+      "source": "computations/cpp/fourth_moment_pair_key_verifier.cpp",
+      "sha256": "e7a2d8f064ae6d027f69756c81feaef8adf5beb73e536918ac058636b139527e",
+      "exit_code": 0,
+      "log_sha256": "2f3a4bd7a455e647f3eb15019c54775d1ce6202f9c5f14cec0f397360dd3f5ab"
+    },
+    {
+      "name": "cpp_general_hyperbolic_periods",
+      "source": "computations/cpp/general_hyperbolic_periods.cpp",
+      "sha256": "fd8cb9ce14b24e0cd483e16219c68cccdabb217ba8a64c6a0e291f31d1858a0e",
+      "exit_code": 0,
+      "log_sha256": "ca84b31ff8bceef80f16f4b03e2226a582d2cdf30b7383800e944347eed6a547"
+    },
+    {
+      "name": "cpp_magnetic_word_verifier",
+      "source": "computations/cpp/magnetic_word_verifier.cpp",
+      "sha256": "0848a5b7c8713015c7192b28d3aacdda6f402fa79ed95c52a528c28df95e21b0",
+      "exit_code": 0,
+      "log_sha256": "7d03f7776038582858ac97de6766675b2944537eb2de88d9522c8d916c2129a4"
+    },
+    {
+      "name": "cpp_pell_coboundary_pairs",
+      "source": "computations/cpp/pell_coboundary_pairs.cpp",
+      "sha256": "5ba6fa536a427fc85905d3a71b3d5f6b21f7e9ca3f1f229d18d9735cb18d38e4",
+      "exit_code": 0,
+      "log_sha256": "7cc0f38bca889b6f496a86a3d8678e7b287f983d03dbc5dbc4a119d68833c9ac"
+    },
+    {
+      "name": "cpp_pell_floquet_pair_verifier",
+      "source": "computations/cpp/pell_floquet_pair_verifier.cpp",
+      "sha256": "7878b211c4996fe8cfdb6a29c39e62fc17a417fef50bf9e30df5f893bd4a15cc",
+      "exit_code": 0,
+      "log_sha256": "9e74cc230b1f6e4bf9ec104f3823144d50da52bd197baf5d0c50d2e9dfd40e88"
+    },
+    {
+      "name": "cpp_pell_minimal_relation_verifier",
+      "source": "computations/cpp/pell_minimal_relation_verifier.cpp",
+      "sha256": "205ad16fb8240957aeaca2ba6380f4533c29c5262e126eccba34580f4e679b39",
+      "exit_code": 0,
+      "log_sha256": "bc30dcb93d5f01522bcb4fca75f71a3b1b83149dfa7b72e434de369e38c2d79c"
+    },
+    {
+      "name": "cpp_pell_pair_orthogonality",
+      "source": "computations/cpp/pell_pair_orthogonality.cpp",
+      "sha256": "961239c85e184da5175a7097b1b3bf7cf60d2a504e89ecdd48fb6fb9ee4a1d39",
+      "exit_code": 0,
+      "log_sha256": "42af2b1c993c9ce2ed9592ba1b9a2e2542505e4587f666b5825c800485400a45"
+    },
+    {
+      "name": "cpp_pell_sharp_orbit_verifier",
+      "source": "computations/cpp/pell_sharp_orbit_verifier.cpp",
+      "sha256": "bbcbbf308c80b8e32e0d304cd125160b70a437f24ce8a1195a5343c2c4d36661",
+      "exit_code": 0,
+      "log_sha256": "75850e16a3b97b7e9027bcb927b8f40b110a72b38691509844d2180e76c736c9"
+    },
+    {
+      "name": "cpp_pure_loss_discrimination_bounds",
+      "source": "computations/cpp/pure_loss_discrimination_bounds.cpp",
+      "sha256": "fb7f495a8c232df2195e6e5b1ecfaead36c99d40965271c6b32c01fb344f546f",
+      "exit_code": 0,
+      "log_sha256": "3719c7dd9110428b407b8dd084de15ff09093f73321ff1b046f5a6796d4d31fb"
+    },
+    {
+      "name": "cpp_rare_phase_certificate",
+      "source": "computations/cpp/rare_phase_certificate.cpp",
+      "sha256": "66c21fdc769ab1620e68a06a85109c11f77dcfc7ab912ce45f60bc25867ee5fd",
+      "exit_code": 0,
+      "log_sha256": "0dbac965b5198e58b97f42eb1dff02d329c0c9df5eca198535cb7cbf375cf8b2"
+    },
+    {
+      "name": "cpp_return_word_certificate",
+      "source": "computations/cpp/return_word_certificate.cpp",
+      "sha256": "707012e699e4ab6717ee67f6a86e10623007110b9b66efded31ac98e7cfe053a",
+      "exit_code": 0,
+      "log_sha256": "9b437739a6749f4125ce1f01b48c98841a214bda6a02a6a90aa16ea18bb934ea"
+    },
+    {
+      "name": "cpp_spectral_lattice_clustering",
+      "source": "computations/cpp/spectral_lattice_clustering.cpp",
+      "sha256": "83b052be5c9ce134a178d7a33251d63e18b5900da706a56343c5295694295f42",
+      "exit_code": 0,
+      "log_sha256": "7d11e0cdbd864ef9160c7351d5bdc47a29ecafb9fb34569e31750abcb5e0b31b"
+    },
+    {
+      "name": "check_resonance_certificate",
+      "source": "computations/verification/check_resonance_certificate.py",
+      "sha256": "e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5",
+      "exit_code": 0,
+      "log_sha256": "41a317b5097d735b6bb37c9c16ded645daee817b746620edbe1dcc3ebf2934d2"
+    },
+    {
+      "name": "extremal_independent_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "exit_code": 0,
+      "log_sha256": "852b94c1dd1125b3e83e13d97f582db3a7e64460fc7aa4f0126de3251daff376"
+    },
+    {
+      "name": "analytic_coboundary",
+      "source": "computations/verification/analytic_coboundary.py",
+      "sha256": "d8ca959730c21b52c7380635772be365fc14517f1f83fc6c5505d6e34628e94f",
+      "exit_code": 0,
+      "log_sha256": "68e4534edea315dcf384a0b2e3f7f09ebf11a0c4a17eb1db8cce486e548f13fa"
+    }
+  ],
+  "result": "106/106 finite checks pass; all 16 Lean modules compile; canonical 153-page PDF passes warning gates. Proof verdicts are separately scoped in record/referee_audit_20260908.md.",
+  "residual_risks": [
+    "Heisenberg-scale joint-trace comparison remains open",
+    "Sparse centered Cayley energy and nonlinear analytic coboundary question remain open",
+    "Only changed proof pages and contents visually inspected",
+    "Mixed Weil external proof not source-reconstructed in this pass"
+  ],
+  "lean_new_axioms": {
+    "growthBySteps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "positiveCancellation": [],
+    "negativeNoncancellation": [],
+    "signedActionsDiffer": []
+  },
+  "tex_source_sha256": {
+    "manuscript/WoW_unified.tex": "8f808c9b73150ac92748117145d189f993031306692e8736891d017b3fa1db0e",
+    "manuscript/audit_and_frontier.tex": "3fc84a77a186f0705430ea19b5cd04783959c131e5cc00b9b68de27ac818f358",
+    "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+    "manuscript/final_delivery_note.tex": "f239bf52ee9a4adcbcbc3cf408561e862ac696d8dbdbab3af7319e5921536efe",
+    "manuscript/front_matter.tex": "1791977d7397d7a165f85c192c3da6ed105da777eb2881b387b689a416622d29",
+    "manuscript/general_spectra.tex": "43f339d0afc0a7951f82bfeb9d3f86339ad6611673707ee5b9f1d484ce02896d",
+    "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+    "manuscript/unified_bibliography.tex": "1a9c505e1f5afe47a35847b44a69e01ed339e223ec3bedd80389ddc844346f73",
+    "manuscript/unified_sections/analytic.tex": "c00a28c93b98baf15334a17db93fb30ff180ab8dea77bba0ddde6b49d49bb973",
+    "manuscript/unified_sections/analytic_resonance_rigidity.tex": "0ee2c259a2fafc68492d907cb7cf0b05af86b0a43b577d7c2f32fa9be5913614",
+    "manuscript/unified_sections/arithmetic_core_part1.tex": "61672319f6f5789b14533ad8737c39e7f4125f147ef58041129a04c273b81589",
+    "manuscript/unified_sections/arithmetic_core_part2.tex": "2d0c03ee9fac2d1e68812086ce5947592fa0cb6e41f98ce10c2ba448125bf8e8",
+    "manuscript/unified_sections/arithmetic_core_part3.tex": "c6fde3e758d76b5d9beb3eb568a0af305a3c15d026a9774c1539396595f9ea31",
+    "manuscript/unified_sections/arithmetic_core_part4.tex": "d226d26e0455ece2623daecb99c7fb321294e9eb3f1ed67ab15ed1bdd4d347af",
+    "manuscript/unified_sections/arithmetic_core_part5.tex": "09586696030b4bb69c2c95b5ffb4fa074bb28756463c8eb907706dfb75012d43",
+    "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+    "manuscript/unified_sections/cayley_curve_uniform.tex": "a6a6ac5f97696347fc268a259cdfe7f773d2abb029b8e3bc796dfb3450f6772c",
+    "manuscript/unified_sections/cayley_scaling.tex": "d02e489a6eb68d1e6931c3c8bd2aba64a7b6539eea6a91ed3f059b158677b4f6",
+    "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+    "manuscript/unified_sections/coboundary_part1.tex": "6ebcafb50bb2180ba62d21f389a8515bafdac0fac3f646cccdc2a2d18e9e5b20",
+    "manuscript/unified_sections/coboundary_part2.tex": "ca860c57d593d86abec7403c190dc48ae757131c18851d883469cb6f96078d9e",
+    "manuscript/unified_sections/coboundary_part3.tex": "650041a3d7117cd0f99a9a9ca00b269abb84111c44bbc34043618a9752300500",
+    "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+    "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+    "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+    "manuscript/unified_sections/floquet_part1.tex": "45a041fb919d9ad3e13de2c39fb2b09871003fa6c14a49dbff8a980fb820ceb1",
+    "manuscript/unified_sections/floquet_part2.tex": "0f58e78312bfb14c5d58a009366c83d8e04c9d82908b0568509857f2cfcf5587",
+    "manuscript/unified_sections/floquet_part3.tex": "cbd4c2d393c0908e6b835408310d169e54c8c3a5ae713fb1da797e96f2664820",
+    "manuscript/unified_sections/floquet_part4.tex": "f2b7859935c17bc8da0032d322b67895195f8a9146b2ae7320ecdbc41c2d88ec",
+    "manuscript/unified_sections/four_mode.tex": "aba02e34d17d0df6ff5da571c8592699a860375c4681ef666dfe3726dd307ea3",
+    "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+    "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+    "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+    "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+    "manuscript/unified_sections/locality_part1.tex": "4fa3f9c327af9617397c5fa98776d7a07daa42fa2d2e54d17677505edef01c0d",
+    "manuscript/unified_sections/locality_part2.tex": "dcae47f13d6cf3c93f464eb9e150505ff088cc771138c180a21f819ea6cd2d3f",
+    "manuscript/unified_sections/locality_part3.tex": "3980aca87bff9a2635f88795b225fdaf9ca465cb4526da589a632786285f4b72",
+    "manuscript/unified_sections/locality_part4.tex": "12eb40ee83198d7d2f801de174082f246b63e6bb0fe9768aba610f8a8a868cb6",
+    "manuscript/unified_sections/locality_part5.tex": "69850dc9c78d44801142533626ddf9e859f36c09c5f556b2e7f829558519af13",
+    "manuscript/unified_sections/locality_part6.tex": "ac6cb02cdaa9275fb18b2257f2bfc1918562a51f9d6b93a159cd7deb32539d47",
+    "manuscript/unified_sections/locality_part7.tex": "95d6927d7593ccb8f8a0b3188ba89a5354d45515567b1eddd35053fa182b67b0",
+    "manuscript/unified_sections/magnetic.tex": "aab23d2df4cef52331c63c494d57f2db23cd997bf948f1dc4d2491f1067cf400",
+    "manuscript/unified_sections/mixed.tex": "8069ab82eaa31ae49bfb1b3fc7dcf05fc3c31831cf7973a443f9290f9c73c454",
+    "manuscript/unified_sections/nondegeneracy_part1.tex": "0acf4ad454b8aa4d05ad67ea2a27c8fe3646978da0a40e5d566bd3c00e5b300e",
+    "manuscript/unified_sections/nondegeneracy_part2.tex": "e2bb4609697e4c3c6e23fc8a77461dbc68da93e62fba75f5849736f682852593",
+    "manuscript/unified_sections/nondegeneracy_part3.tex": "e1d607498c2129cacaf4f143f9c871184ee5dc8e5c514d2d409592ff77caf343",
+    "manuscript/unified_sections/nondegeneracy_part4.tex": "cbf2e3119617e9e203580b63909dc76e5085c43c32d6675559dfe253ff8d35c5",
+    "manuscript/unified_sections/nondegeneracy_part5.tex": "dfd4fb68bb61e37deae065b0d6e0334dad313135633c716a803334fe0dc6df9f",
+    "manuscript/unified_sections/nondegeneracy_part6.tex": "1b2b5bc55141a07ed5d2d0ae44f521073adf2ec7df92a6b4891dabedbe1427a4",
+    "manuscript/unified_sections/nondegeneracy_part7.tex": "93bb3717182d10ef7dc39fbfc44c67d9b05d1b56e2fe1ece275f4e789e5f3c63",
+    "manuscript/unified_sections/nondegeneracy_part8.tex": "f535063a31b074d91a0cdb163f6086c42e439798e166e9e72b7616a1a3c86be7",
+    "manuscript/unified_sections/pell_blocks.tex": "7c62ea0a0f412487a4797352d281e375082f182dffdeaa7e3f338f59d2811449",
+    "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+    "manuscript/unified_sections/polynomial_multisphere.tex": "b0a73db94e5af9fee8ce4478f2b1679509d267990ae8b5648898b1430a333d7e",
+    "manuscript/unified_sections/return_words.tex": "ba2d35409b20dad1e26880952210512b15ad0ccc96a9e6f2245837f145e36be8",
+    "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+    "manuscript/unified_sections/row_frontier.tex": "52cf66b3ea3681d5ca0198a46c2a854a94a16fc08f4372c398f4c02a73036c92",
+    "manuscript/unified_sections/sharp.tex": "06f53aaa9e3cdf7a37392563f8f4e7e0d9b3d6e292d5b152635c8b6ef48910af",
+    "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+    "manuscript/unified_sections/smooth.tex": "91254920ba583cd2a99301cf53848ba6a95337cae8f6f39ddd5f58ab73ed08a9",
+    "manuscript/unified_sections/smooth_residual.tex": "dffc4feba8dd2c69c71d3718f67cd12eb273af533e7547d26e4fa7dde5177509",
+    "manuscript/unified_sections/spectral_modules.tex": "1ee12569246197585c21795b8b47c10b0c2e2e7e9547a43d305e51804e5b393a",
+    "manuscript/unified_sections/spectral_resolution.tex": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+    "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+    "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+    "manuscript/unified_sections/wiener_riesz.tex": "fdf370992aa6c8092d2cb3a3622fe7ccaa571ea3b2e110831fdedb9d358ebcf6",
+    "manuscript/weighted_and_edgeworth.tex": "97df939f30e5cafd8d03b97275a262b616d54f21fd529d07239c3e145cf847ad"
+  }
+}

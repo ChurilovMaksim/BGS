@@ -2,6 +2,12 @@
 
 This file is the authoritative dated extension of `claim_ledger.md`. For claims dated through 2026-09-06, the base ledger remains authoritative. For the scopes below, this addendum wins over older notes, manuscript wording, exploratory files, and earlier audit prose. `OPEN` still means open; finite execution is never promoted to a uniform theorem.
 
+**September 8 corrections:** full adapted analytic coefficient decay is now
+preserved; all-bandwidth Schwartz extension is automatic under positive
+normalized averages; a fresh Lean build and full PDF rebuild now succeed.
+The detailed audit is `referee_audit_20260908.md`. Historical execution bullets
+below describe September 7 only.
+
 ## A. Finite-Fourier, generic infinite-support and analytic resonance structure
 
 | Claim | Status | Boundary / authority |
@@ -14,7 +20,7 @@ This file is the authoritative dated extension of `claim_ledger.md`. For claims 
 | The same open-dense statement holds in every fixed analytic Wiener strip | **EXACT** | continuous embedding into weighted Wiener space; finite polynomials dense |
 | The same open-dense statement holds in `H^s(T^2;R)` for every `s>2` and in `C^infinity(T^2;R)` | **EXACT** | Cauchy--Schwarz gives continuous `H^s -> X_A` embedding for `s>2`; smooth conclusion follows through any such Sobolev norm |
 | A real-analytic `g` satisfying `{g,C_A g}=0` identically must be constant | **EXACT** | `mathematics/analytic_bracket_rigidity.md`; level-line equivariance, recurrence and projective hyperbolicity |
-| An analytic zero-mean `h` with zero sum on every oriented frequency orbit has an analytic transfer `h=u-C_Au`; in an adapted exponential norm the exponent loses at most a factor two | **EXACT** | `mathematics/analytic_coboundary_regularization.md`; direct bilateral Fourier-tail construction |
+| An analytic zero-mean `h` with zero sum on every oriented frequency orbit has an analytic transfer `h=u-C_Au`; in the adapted frequency norm the full exponential coefficient rate is preserved (strengthened 2026-09-08) | **EXACT** | `mathematics/analytic_coboundary_regularization.md`; direct bilateral Fourier-tail construction |
 | Therefore any nonconstant real-analytic `g` with `Gamma_A(g)=0` must satisfy `{g,C_Ag}/(4*pi)=u-C_Au` with a **nonzero** bracket and real-analytic transfer `u` | **EXACT reduction** | combines the preceding two analytic theorems |
 | Positivity for **every** nonconstant analytic infinite-support observable | **OPEN** | reduced to exclusion or construction of the nontrivial analytic nonlinear coboundary equation above |
 
@@ -98,4 +104,4 @@ The global-curve dated exact certificate covers every subgroup order `K>=3` occu
 
 ## E. Still open
 
-Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, generic Sobolev/analytic-strip nondegeneracy, analytic pointwise rigidity, improved dense-regime Cayley fourth-moment control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison and high-frequency tail control.
+Microscopic BGS/GOE/COE universality remains **OPEN**. In particular, neither positive classical resonance variance, generic Sobolev/analytic-strip nondegeneracy, analytic pointwise rigidity, improved dense-regime Cayley fourth-moment control, noisy tomography limits, nor finite certificates supply the required Heisenberg-scale desymmetrized joint-trace comparison. The September 8 deterministic correction in `bandlimited_correlation_extension.md` shows that, for positive normalized averages and a reference Schwartz limit, comparison on every compact Fourier support needs no separate tail hypothesis.

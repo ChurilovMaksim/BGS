@@ -233,17 +233,31 @@ Condition (17) is deliberately stated only as a sufficient condition.  It is
 far stronger than necessary; cancellation in the frequency sum or a weighted
 `L^1` estimate such as (15) may be much more attainable.
 
-## 6. Extension from band-limited tests
+## 6. Extension from all compact Fourier supports — corrected 2026-09-08
 
-Theorems 1--2 are exact for every Schwartz test, but the clean finite
-Heisenberg window (12) uses compact Fourier support.  To deduce convergence for
-all Schwartz tests from a band-limited comparison theorem one additionally
-needs a **uniform tail bound** that justifies approximation of `phihat` by a
-compactly supported function inside (10).
+For positive normalized averages of the factorial spectral measures, convergence
+against **every** band-limited Schwartz test, with no common bound on its
+Fourier support, implies convergence against every Schwartz test. There is no
+additional independent high-frequency-tail hypothesis in this setting.
 
-This requirement is material.  Without a uniform bound on the high-frequency
-trace-correlation contribution, band-limited convergence alone does not imply
-full local-statistics convergence.
+The complete proof is in `bandlimited_correlation_extension.md`. Its key
+estimate, for `d=k-1`, `N>2` and the lifted anchored factorial measure `mu_N`, is
+
+```text
+sup_a mu_N(a+[0,1)^d) <= 2 k^k (1+mu_N([-2,2]^d)).
+```
+
+A single nonnegative band-limited Schwartz majorant of `[-2,2]^d` bounds the
+right side. Periodic occupation counts, Holder's inequality and factorial
+moment expansion then give uniform bounds on translated cubes. These bounds
+make Schwartz Fourier-cutoff approximation uniform in `N`.
+
+This corrects the earlier assertion that the tail was necessarily a separate
+open obligation. It does **not** imply an absolute-value bound on the Fourier
+trace tail. A comparison restricted to one fixed Fourier cap still does not
+determine all local correlations; the extension note gives an exact clock /
+period-two counterexample. Signed averaging functionals also fall outside this
+positive-measure argument.
 
 ## 7. Relation to the current arithmetic-cat-map programme
 
@@ -262,14 +276,16 @@ The local-statistics gap can now be stated as an explicit theorem target:
 
 > **Heisenberg trace comparison problem.**  For each fixed `k` and each compact
 > Fourier support, prove (15) for the desymmetrized quantum-map spectrum against
-> the correct COE/CUE/CSE (or GOE/GUE/GSE Hamiltonian) symmetry class, together
-> with a uniform high-frequency tail bound sufficient to remove the band-limit.
+> the correct COE/CUE/CSE symmetry class. For positive normalized averages and
+> a reference Schwartz limit, comparison on every compact Fourier support
+> automatically extends to all Schwartz tests. Hamiltonian energy-window
+> formulations require their own unfolding and boundary treatment.
 
-This criterion is system-independent and separates the two hard tasks cleanly:
+For the finite-circle model the remaining tasks are:
 
 1. arithmetic/dynamical control of the joint traces at powers `Theta(N)`;
-2. a deterministic Fourier step from those traces to local correlations,
-   which is already closed by (7)--(16).
+2. the deterministic conversion to local correlations, including removal of
+   the band-limit under the positive-average hypotheses, which is now closed.
 
 No claim is made here that the required Heisenberg-scale trace comparison has
 been proved for the arithmetic cat maps in this repository.
