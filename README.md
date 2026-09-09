@@ -19,6 +19,20 @@ A positive generic microscopic BGS/GOE/COE universality theorem is **not** claim
 
 Read `mathematics/results.md` together with `mathematics/results_20260907_addendum.md`. The current genuinely open obligations are in `mathematics/open_questions.md`.
 
+The latest result connects Gaussian and semicircular **global observable
+laws in the same fixed Pell cat map**. Sample unit harmonics up to
+$L=N^{\beta+o(1)}$, $0\le\beta\le1/2$. Every fixed spectral moment converges
+in probability, uniformly over the odd eigenspaces, to a circle-graphon
+moment law. Its fourth moment is $3-2\beta$; the sixth moment distinguishes
+it from an independent-crossing model. The limiting support is unbounded
+for every $\beta<1/2$ and becomes $[-2,2]$ at $\beta=1/2$.
+Ordered quantum moments and an explicit commutator limit are also proved.
+The graphon law construction is prior work; priority for this arithmetic
+realization is unverified. See
+[`mathematics/pell_harmonic_transition.md`](mathematics/pell_harmonic_transition.md)
+and [the scoped review](record/pell_harmonic_transition_review_20260909.md).
+These changing-frequency observables do not establish microscopic BGS.
+
 The September 7 addendum includes the audited unrestricted finite-Fourier theorem, the global Corvaja--Zannier Cayley subgroup-curve specialization, and the rare-phase / fixed-noisy-Gaussian / pure-loss information-limit results.
 
 The September 9 result is a Gaussian limit for the normalized **full
@@ -57,8 +71,15 @@ correlation theorem removes the band-limit under explicit positivity and
 all-bandwidth hypotheses. The scoped proof review, limitations and actual
 execution record are in `record/referee_audit_20260908.md`.
 The September 9 revision adds the trace-limit proof and scalar error bounds,
-and builds to 159 pages. Its specific review
+and initially built to 159 pages. Its specific review
 and verification scope is recorded in `record/cayley_trace_review_20260909.md`.
+The subsequent harmonic-transition revision builds to 165 pages, with the
+new proof in Section 24, pages 40--46.
+
+The harmonic transition is illustrated in
+`assets/figures/pell_harmonic_transition.svg`. Its points are numerical
+harmonic samples, with the sixth pairing sum explicitly labeled as a proxy;
+the proof does not rely on fitting those samples.
 
 An exact illustration of why a fixed Fourier cap is insufficient is in
 `assets/figures/correlation_bandwidth.svg`; its producer is

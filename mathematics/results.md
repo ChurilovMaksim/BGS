@@ -1,5 +1,27 @@
 # Current results and exact scope
 
+## Harmonic-scale transition in the fixed Pell cat map
+
+**EXACT (project proof).** For prime Pell periods $K\to\infty$, sample
+integers $1\le a\le L_K\le\sqrt{N_K}$ coprime to $N_K$, with
+$\log L_K/\log N_K\to\beta\in[0,1/2]$. Compressions of the physical harmonic
+$2\cos(2\pi ax/N_K)$ have global empirical spectral measures converging in
+probability, uniformly over all odd cat eigenspaces, to the circle-graphon
+law of radius $(1-2\beta)/2$. Every fixed moment converges in $L^2$.
+
+The fourth moment is $3-2\beta$. With $\rho=1-2\beta$, the sixth is
+$5+6\rho+15\rho^2/4+(3\rho/2-1)_+^2$. These laws have unbounded support for
+$\beta<1/2$, while the endpoint is the variance-one semicircle. They vary
+weakly continuously. A weighted ordered-moment theorem interpolates between
+commuting Gaussian and free semicircular fields; normalized complementary
+half-window commutators have limiting squared norm $8\beta(1-\beta)$.
+
+The proof, exact scopes and prior graphon results are in
+`pell_harmonic_transition.md`. The key arithmetic input is quadratic
+harmonic-phase averaging, not finite independence of the Weyl variables.
+This does not prove local statistics of a quantum propagator. Priority
+for the arithmetic realization remains unverified.
+
 This is the concise theorem index. The repository-wide status authority is
 [`../record/claim_ledger.md`](../record/claim_ledger.md); historical commits or
 notes do not override it.

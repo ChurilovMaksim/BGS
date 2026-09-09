@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "claim_id": "PELL_HARMONIC_TRANSITION_FINITE",
+  "repository": {
+    "commit": "580674f30007b6cbcb667895a1de61e36edfc0cc",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "computations/verification/pell_harmonic_transition.py",
+    "--output",
+    "evidence/certificates/pell_harmonic_transition_20260909/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      }
+    ],
+    "hardware": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact Pell phases, all oriented matching words through ten positions on specified label arrays, integer circle triangle counts, rational moment identities, and independent physical-harmonic versus Weyl-block numerical spectra",
+    "coefficient_domain": "Z and Q for exact controls; complex128 for matrix and finite exponential-sum controls",
+    "conventions": "Modular-centered Weyl; physical a-th harmonic corresponds to parameter a^2*q0; odd parity compression",
+    "inputs": [
+      "computations/verification/pell_harmonic_transition.py",
+      "mathematics/pell_harmonic_transition.md",
+      "manuscript/unified_sections/pell_harmonic_transition.tex"
+    ],
+    "bounds": {
+      "K_arithmetic": [
+        3,
+        5,
+        7,
+        11,
+        19,
+        31,
+        61,
+        127
+      ],
+      "word_K": 11,
+      "maximum_word_length": 10,
+      "label_arrays": [
+        "all zero",
+        "j mod K",
+        "j^2 mod K"
+      ],
+      "word_harmonics": [
+        1,
+        2
+      ],
+      "matrix_K": [
+        3,
+        5,
+        7
+      ],
+      "matrix_sectors": "0,1,K-1",
+      "matrix_harmonics": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_tolerance": 2e-10,
+      "triangle_moduli": [
+        5,
+        7,
+        11,
+        19,
+        31,
+        51
+      ]
+    },
+    "non_claims": [
+      "No all-order analytic formalization",
+      "No universal asymptotic verification by finite data",
+      "No microscopic BGS or novelty certificate",
+      "Floating controls are not interval-certified"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-09T15:38:20.402647+00:00",
+    "runtime_seconds": 1.620693,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/pell_harmonic_transition.py",
+    "mathematics/pell_harmonic_transition.md",
+    "manuscript/unified_sections/pell_harmonic_transition.tex"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/pell_harmonic_transition.py",
+      "sha256": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85",
+      "sha256_after": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85"
+    },
+    {
+      "path": "mathematics/pell_harmonic_transition.md",
+      "sha256": "97504d7730110aa7e2131d3157d72d75ff7c2d4fd2e09fc00de38d3e68bfc05c",
+      "sha256_after": "97504d7730110aa7e2131d3157d72d75ff7c2d4fd2e09fc00de38d3e68bfc05c"
+    },
+    {
+      "path": "manuscript/unified_sections/pell_harmonic_transition.tex",
+      "sha256": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab",
+      "sha256_after": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab"
+    }
+  ],
+  "output_directory": "evidence/certificates/pell_harmonic_transition_20260909",
+  "declared_results": [
+    "evidence/certificates/pell_harmonic_transition_20260909/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/certificates/pell_harmonic_transition_20260909/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/certificates/pell_harmonic_transition_20260909/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/certificates/pell_harmonic_transition_20260909/result.json",
+      "sha256": "356d2fde1d794636d1470a4b2712acc6e6972c4cd801e7ef502ce6aae3e9a82f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

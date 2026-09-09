@@ -109,6 +109,12 @@ The numerical value starts 5.61422069215119807163. The maintained verifier separ
 
 All pairings survive along this deterministic fixed-map Pell sequence, producing Gaussian fourth moment 3. The separately averaged prime magnetic construction suppresses crossings and has semicircle fourth moment 2. These are different families and averaging procedures. Neither result supplies Heisenberg-scale propagator trace comparison, local spacings, or a complete BGS theorem.
 
+The later [harmonic-transition theorem](pell_harmonic_transition.md) constructs
+a bridge inside the Pell model itself by sampling growing physical harmonics.
+Its phase is multiplied by $a^2$, and its circle-graphon laws have fourth
+moment $3-2\beta$ at frequency scale $N^\beta$. The fixed-harmonic estimates
+of the present note remain the $\beta=0$ endpoint.
+
 ## Independent exact interval certificate
 
 The corrected decimal is independently enclosed by `computations/verification/pell_gamma_interval.py`. It uses only integer and rational arithmetic: Machin's identity, alternating arctangent bounds, an integer square-root enclosure, outward fixed-point operations, cosine Taylor remainders, and the geometric tail above. Its output in `evidence/certificates/pell_gamma_interval.json` certifies forty decimal places without assuming floating-point rounding. The preceding numerical companion retains its separate diagnostic scope.

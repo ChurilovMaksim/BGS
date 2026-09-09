@@ -95,6 +95,11 @@ full point-process or spacing law require separately stated hypotheses.
 
 ## D. Positive microscopic BGS universality for a natural fixed map
 
+The harmonic-transition theorem now realizes circle-graphon global laws,
+including a free semicircular endpoint, in the same fixed Pell cat map.
+It varies and samples the observable frequency up to $\sqrt N$. It does not
+change the propagator's arithmetic spectrum or settle this obligation.
+
 The project contains several strong negative and structural lessons:
 
 - arithmetic cat maps retain exceptional symmetries;

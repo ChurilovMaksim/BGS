@@ -1,0 +1,440 @@
+\hypertarget{pell-harmonic-a-harmonic-scale-transition-in-the-pell-cat-map}{%
+\section{A harmonic-scale transition in the Pell cat map}\label{pell-harmonic-a-harmonic-scale-transition-in-the-pell-cat-map}}
+
+\textbf{Status: project proof, with explicit scope.} This note derives a family of
+global observable laws in one fixed arithmetic quantum map. It does not prove
+microscopic BGS statistics. The limiting graphon moment construction is prior
+work; the claim here is its realization by growing harmonics of the Pell cat
+map. Priority for that realization has not been established.
+
+\hypertarget{pell-harmonic-statement-and-normalization}{%
+\subsection{Statement and normalization}\label{pell-harmonic-statement-and-normalization}}
+
+Let \(K\) tend to infinity through odd primes. Write
+\[
+ \alpha=1+\sqrt2,\quad \lambda=\alpha^2,\qquad
+ N+F\sqrt2=\alpha^K,\qquad T=\begin{pmatrix}3&2\\4&3\end{pmatrix}.
+\]
+Use the parity-preserving quantization \(U_0\) of this fixed matrix, normalized
+by \(U_0^K=I\), as in the preceding Pell block proof.
+The odd parity space has dimension \(D=(N-1)/2\). Its \(K\) eigenspaces
+\(E_\eta\) have equal dimension \(n=(N-1)/(2K)\); let \(P_\eta\) be their projections.
+
+For a positive integer \(a\) coprime to \(N\), take the actual physical harmonic
+\[
+ B_a=W(a,0)+W(-a,0),\qquad
+ (B_a u)(x)=2\cos(2\pi ax/N)u(x).
+\]
+Here \(W\) has the modular-centered convention of the Pell block proof.
+Define
+\[
+ X_{K,a,\eta}=\sqrt{K/2}\,(P_\eta B_aP_\eta)|_{E_\eta},
+ \qquad \mu_{m,K,\eta}(a)=n^{-1}\operatorname{Tr}X_{K,a,\eta}^m.       \tag{H1}
+\]
+Let \(1\le L_K\le\lfloor\sqrt N\rfloor\) be integers with
+\[
+ \frac{\log L_K}{\log N}\longrightarrow\beta\in[0,1/2],
+ \qquad \mathcal A_K=\{1\le a\le L_K:\gcd(a,N)=1\}.                 \tag{H2}
+\]
+Probability and \(L^2\) below use the uniform distribution on \(\mathcal A_K\).
+No randomness is added to the map or to its quantization.
+
+Put \(\rho=1-2\beta\) and define on the unit circle
+\[
+ w_\beta(x,y)=\mathbf1\{\operatorname{dist}_{\mathbb R/\mathbb Z}(x,y)
+                                  <\rho/2\}.                    \tag{H3}
+\]
+Endpoint values on the distance boundary do not affect integrals. For a pair
+partition \(\pi\) of \(2r\) positions, its crossing graph \(G_\pi\) has one vertex
+per pair and an edge precisely when the two pairs interlace. Define
+\[
+ t(G,w)=\int_{[0,1]^{V(G)}}\prod_{\{i,j\}\in E(G)}w(x_i,x_j)\,dx .
+\]
+\[
+ M_{2r}(\beta)=\sum_{\pi\in\mathcal P_2(2r)}t(G_\pi,w_\beta),
+ \quad M_{2r+1}(\beta)=0,\quad M_0=1.                            \tag{H4}
+\]
+
+\textbf{Theorem 1.} For every fixed nonnegative integer \(m\),
+\[
+ \left\|\sup_\eta|\mu_{m,K,\eta}-M_m(\beta)|\right\|_{L^2(\mathcal A_K)}
+       \longrightarrow0.                                     \tag{H5}
+\]
+There is a unique probability measure \(\nu_\beta\) with moments (H4).
+The empirical spectral measures of (H1) converge weakly to \(\nu_\beta\) in
+probability, uniformly over all \(K\) sectors. The averaged measures converge
+weakly too. At \(\beta=0\) the limit is the standard Gaussian; at \(\beta=1/2\)
+it is the variance-one semicircle.
+
+For every \(0\le\beta<1/2\), \(\nu_\beta\) has unbounded support. Thus the
+compactly supported endpoint is a genuine change of support, despite weak
+continuity of the family.
+
+The intermediate laws are not the ordinary \(q\)-Gaussian laws with
+\(q=\rho\). In particular,
+\[
+ M_2=1,\qquad M_4=2+\rho=3-2\beta,
+\]
+\[
+ M_6=5+6\rho+\frac{15}{4}\rho^2+
+                         \left(\frac32\rho-1\right)_+^2.        \tag{H6}
+\]
+Thus (H5) is an all-fixed-order statement, not an interpolation inferred
+from the fourth moment.
+
+\hypertarget{pell-harmonic-why-the-harmonic-enters-quadratically}{%
+\subsection{Why the harmonic enters quadratically}\label{pell-harmonic-why-the-harmonic-enters-quadratically}}
+
+Set \(s=F^{-1}\pmod N\), \(h=3+2s\), and \(q_0=-F\). In the diagonal coordinates
+of the Pell block proof, the fixed conjugation taking \(B_1\) to
+\(W(q_0,1)+W(q_0,1)^*\) takes \(B_a\) to
+\[
+ W(aq_0,a)+W(aq_0,a)^*.
+\]
+The dilation \(S_u f(x)=f(u^{-1}x)\) satisfies
+\[
+ S_uW(b,c)S_u^{-1}=W(b/u,uc).
+\]
+Taking \(u=a^{-1}\) converts this to \(W(a^2q_0,1)+W(a^2q_0,1)^*\).
+This dilation commutes with \(S_h\) and parity, so it preserves every sector.
+Consequently (H1) is unitarily equivalent to the previously defined block
+\(X_{q,\eta}\) with \(q=a^2q_0\), up to the fixed initial permutation of sector
+labels. It is not the block with \(q=aq_0\).
+
+For a residue \(d\) modulo \(K\), let \(\delta(d)\) be its signed representative
+in \([-(K-1)/2,(K-1)/2]\). Extend the even Pell sequence by
+\(P_{-2d}=-P_{2d}\). The exact identity is
+\[
+ q_0(h^d-h^{-d})\equiv-2P_{2\delta(d)}\pmod N,\qquad
+ P_{2d}=\frac{\lambda^d-\lambda^{-d}}{2\sqrt2}.                  \tag{H7}
+\]
+Thus a crossing contributes a phase quadratic in \(a\).
+
+\hypertarget{pell-harmonic-the-unit-restriction-has-vanishing-cost}{%
+\subsection{The unit restriction has vanishing cost}\label{pell-harmonic-the-unit-restriction-has-vanishing-cost}}
+
+Every prime \(\ell\mid N\) admits an element \(h\) of exact order \(K\):
+\(h^K=1\) and \(h-1\) is a unit, so reduction modulo \(\ell\) cannot have order
+one. Therefore \(\ell\equiv1\pmod{2K}\) and \(\ell\ge2K+1\). Counting distinct
+prime divisors gives
+\[
+ \frac{\#([1,L_K]\setminus\mathcal A_K)}{L_K}
+ \le\sum_{\ell\mid N}\frac1\ell
+ \le\frac{\log N}{(2K+1)\log(2K+1)}
+ =O(1/\log K).                                               \tag{H8}
+\]
+The first inequality uses \(\lfloor L_K/\ell\rfloor\le L_K/\ell\) and
+is valid even for bounded \(L_K\). We will perform phase averaging over the
+whole interval and condition afterwards. All averaged phase expressions
+are bounded in modulus; no unbounded-moment conditioning is implicit.
+
+\hypertarget{pell-harmonic-reduction-to-pairings-uniformly-in-the-harmonic}{%
+\subsection{Reduction to pairings, uniformly in the harmonic}\label{pell-harmonic-reduction-to-pairings-uniformly-in-the-harmonic}}
+
+The all-order trace identity and largest-gap lifting argument of the Pell
+block proof apply uniformly to every unit \(q\), hence to \(q=a^2q_0\).
+For completeness, a central signed \(m\)-word gives both reciprocal
+congruences. After cutting at its largest cyclic gap, its signed polynomial
+\(P\) has degree at most \(K-\lceil K/m\rceil\) and coefficient norm at most \(m\).
+Its remainder modulo \(Z^2-6Z+1\) is divisible coefficientwise by \(N\).
+A nonzero quadratic norm would therefore satisfy
+\[
+ N^2\le|\operatorname{Norm}P(\lambda)|
+       \le m^2\lambda^{K-\lceil K/m\rceil},
+\]
+which is impossible for sufficiently large \(K\) at fixed \(m\).
+Thus the relation lifts to \(P(\lambda)=0\).
+
+A gap greater than \(2\log_\lambda m\) splits this relation into separately
+vanishing pieces: if the high piece were nonzero, its value at \(\lambda\)
+would have modulus at least \(1/m\) by its integral quadratic norm, while
+the lower part cannot cancel it across such a gap. Each nonzero piece
+has bounded span and at least three signed occurrences. Reinsert cancelled
+opposite pairs as two-occurrence pieces. A nonbalanced \(2r\)-word then has
+at most \(r-1\) translation parameters; after pinning one label there are
+\(O_r(K^{r-2})\) such words. The normalized contribution is \(O_r(K^{-1})\),
+independently of their phases. For odd \(m\), the equality \(P(\lambda)=0\)
+implies \(4\mid P(1)\), impossible for an odd number of signs.
+
+Balanced words are counted by pair partitions, opposite orientations
+\(\sigma_i\in\{-1,1\}\), and labels \(e_i\in\mathbb Z/K\mathbb Z\).
+Duplicated labels contribute \(O_r(K^{-1})\) after normalization.
+Orient pairs by their first endpoints. For a crossing graph with \(r\)
+vertices, set
+\[
+ Z_{\pi,\sigma,K}(a)=K^{-(r-1)}
+ \sum_{\substack{e_1=0\\e_2,\ldots,e_r\bmod K}}
+       e\!\left(a^2 u_{\pi,\sigma,K}(e)\right),\qquad e(t)=e^{2\pi it},
+\]
+\[
+ u_{\pi,\sigma,K}(e)=
+ -\frac2N\sum_{\substack{i<j\\\{i,j\}\in E(G_\pi)}}
+       \sigma_i\sigma_j P_{2\delta(e_j-e_i)}.                    \tag{H9}
+\]
+The exact Weyl multiplication formula gives
+\[
+ \mu_{2r,K,\eta}(a)
+ =\frac{N}{N-1}\sum_{\pi}2^{-r}\sum_\sigma Z_{\pi,\sigma,K}(a)
+       +O_r(K^{-1})+O_r(K^{r+1}/N).                            \tag{H10}
+\]
+The errors are uniform over all unit \(a\) and all sectors. Odd moments
+are uniformly \(O_m(K^{m/2+1}/N)\). The common leading expression in
+(H10), rather than a union bound over \(K\) sectors, will give (H5).
+
+\hypertarget{pell-harmonic-an-elementary-quadratic-sum-estimate}{%
+\subsection{An elementary quadratic-sum estimate}\label{pell-harmonic-an-elementary-quadratic-sum-estimate}}
+
+\textbf{Lemma 2.} Suppose \(u=u_K\) is real and
+\[
+ 0<|u|\le N^{-c},\qquad L_K\sqrt{|u|}\ge N^c                 \tag{H11}
+\]
+for some fixed \(c>0\). Then
+\[
+ L_K^{-1}\sum_{a=1}^{L_K}e(ua^2)\longrightarrow0
+\]
+uniformly under (H11).
+
+\textbf{Proof.} For \(z_a=e(ua^2)\) on \(1\le a\le L\), zero elsewhere, Cauchy--Schwarz
+applied to \(H\sum z_a=\sum_b\sum_{j=0}^{H-1}z_{b-j}\) gives, for \(H\le L\),
+\[
+ \left|L^{-1}\sum z_a\right|^2
+ \le\frac2H+\frac4{HL}\sum_{j=1}^{H-1}
+                   \min\!\left(L,\frac1{2\|2uj\|_{\mathbb R/\mathbb Z}}\right).
+                                                               \tag{H12}
+\]
+Take \(H=\lfloor(4\sqrt{|u|})^{-1}\rfloor\). Eventually \(2\le H\le L\) and
+\(\|2uj\|=2|u|j\) for \(1\le j<H\). The geometric-sum bound and the harmonic
+sum therefore imply
+\[
+ \left|L^{-1}\sum z_a\right|^2
+ \ll \sqrt{|u|}+
+      \frac{\log(2/|u|)}{L\sqrt{|u|}}.                         \tag{H13}
+\]
+In our application \(|u|\ge N^{-C}\) for fixed \(C\), so (H11)--(H13) tend
+to zero. In fact (H11) and \(L\le\sqrt N\) already imply such a polynomial
+lower bound. This proves the lemma without assuming independence or
+irrationality of \(u\). Rational phases are included.
+
+\hypertarget{pell-harmonic-the-largest-crossing-distance-controls-the-phase}{%
+\subsection{The largest crossing distance controls the phase}\label{pell-harmonic-the-largest-crossing-distance-controls-the-phase}}
+
+\textbf{Lemma 3.} For every fixed pair partition and orientation,
+\[
+ \|Z_{\pi,\sigma,K}-t(G_\pi,w_\beta)\|_{L^2([1,L_K])}
+       \longrightarrow0.                                    \tag{H14}
+\]
+
+\textbf{Proof.} If there are no edges, both expressions are one.
+Otherwise regard \(x_i=e_i/K\) as points on the circle, with \(x_1=0\),
+and let \(d_{ij}=\operatorname{dist}(x_i,x_j)\) for graph edges.
+Fix a small \(\varepsilon>0\). Discard configurations for which an edge
+distance is within \(\varepsilon\) of \(0\), \(1/2\), or \(\rho/2\), or two
+distinct edge distances differ by at most \(\varepsilon\).
+Their normalized number is \(O_r(\varepsilon+K^{-1})\).
+
+Here is the geometric justification, including dependent edges. Each circle
+distance is piecewise affine in the labels. On each of finitely many cells,
+distance equality for two distinct edges is a nontrivial affine equation:
+their endpoint coefficient vectors differ, even when the edges share a
+vertex or one vertex is fixed at zero. Its \(\varepsilon\)-neighborhood has
+volume \(O_r(\varepsilon)\) and grid count \(O_r(\varepsilon K^{r-1}+K^{r-2})\).
+The same argument handles the three single-distance boundaries. No assertion
+of independent edge distances is made.
+
+On the remaining configurations, let \(d_*=\max d_{ij}\). Its edge is unique
+and is separated from every other edge by at least \(\varepsilon\).
+Formula (H7) implies that the associated Pell term dominates the sum
+in (H9), regardless of orientations. More precisely,
+\[
+ |u_{\pi,\sigma,K}(e)|\asymp_r
+       \lambda^{Kd_*-K/2}\asymp_r N^{2d_*-1},                 \tag{H15}
+\]
+uniformly on these configurations for sufficiently large \(K\).
+The ratio of all other terms to the largest is
+\(O_r(\lambda^{-\varepsilon K})\). The exclusion near \(1/2\) ensures
+\(|u|\ll_r N^{-2\varepsilon}\): there is no hidden reduction near a nonzero
+integer in applying Lemma 2.
+
+If \(d_*<\rho/2-\varepsilon\), then
+\(L_K^2|u|\to0\) uniformly, so \(e(a^2u)\to1\) uniformly for \(a\le L_K\).
+If \(d_*>\rho/2+\varepsilon\), then
+\(L_K\sqrt{|u|}\ge N^{\varepsilon/2}\) eventually; (H13) makes its
+average over \(a\) tend to zero. Taking Riemann sums, then letting
+\(\varepsilon\downarrow0\), proves
+\[
+ \mathbb E_a Z_{\pi,\sigma,K}\longrightarrow t(G_\pi,w_\beta).
+                                                               \tag{H16}
+\]
+Pinning \(x_1=0\) does not change this integral, by translation invariance.
+
+For the second moment use two independent label configurations \(e,f\)
+and expand
+\[
+ \mathbb E_a|Z_{\pi,\sigma,K}(a)|^2
+ =\mathbb E_{e,f}\mathbb E_a
+           e\!\left(a^2[u_{\pi,\sigma,K}(e)-u_{\pi,\sigma,K}(f)]\right).
+                                                               \tag{H17}
+\]
+In addition discard ties between an edge distance in one copy and an edge
+distance in the other. They again have measure and grid proportion
+\(O_r(\varepsilon+K^{-1})\), since the two copies have independent free
+coordinates. Outside this set there is a unique largest edge among both
+copies. Its coefficient is \(1\) or \(-1\) and cannot cancel.
+The same low/high dichotomy shows that only configurations where \textbf{all}
+edges of both copies have distance below \(\rho/2\) survive. Their limiting
+volume is \(t(G_\pi,w_\beta)^2\). Together with (H16), this proves (H14).
+At \(\beta=0\) only the low region survives; at \(\beta=1/2\) only the high
+region survives for a graph with an edge. Thus both endpoints are included.
+
+\hypertarget{pell-harmonic-completion-of-the-spectral-limit}{%
+\subsection{Completion of the spectral limit}\label{pell-harmonic-completion-of-the-spectral-limit}}
+
+Since \(|Z_{\pi,\sigma,K}|\le1\), (H8) transfers (H14) to \(\mathcal A_K\).
+Sum over the finitely many pairings and orientations in (H10). Its uniform
+remainder proves (H5), including the supremum over sectors.
+
+To justify the probability measure and weak convergence, note
+\[
+ 0\le M_{2r}(\beta)\le(2r-1)!!.
+\]
+The averaged empirical measures have bounded second moments and hence
+are tight. Their uniformly bounded higher even moments, supplied by
+(H10), give uniform integrability for each lower moment. Any weak
+subsequential limit therefore has moments (H4), proving existence.
+The displayed Gaussian moment bound gives
+\(\int e^{t x^2}\,d\nu_\beta(x)<\infty\) for \(0<t<1/2\) by monotone expansion.
+It implies moment determinacy (expand the characteristic function under
+this domination). Thus the measure is unique.
+
+For the random empirical laws, from any subsequence choose a further one
+on which the suprema in (H5) tend to zero almost surely for every integer
+\(m\), by diagonal extraction. Tightness and higher-moment uniform
+integrability then give weak convergence for every choice of sector,
+including choices depending on \(a\). A contradiction using a maximizing
+sector proves uniform weak convergence in probability, equivalently
+convergence of the supremum of bounded-Lipschitz distances. Boundedness of
+that distance also gives the averaged statement. At the endpoints (H4)
+counts respectively all pairings and only noncrossing pairings.
+
+\textbf{Corollary 4 (support transition and continuity).} For \(\rho>0\), choose
+one circle interval \(I\) of length \(b=\rho/2\). On \(I\times I\) the kernel is
+one almost everywhere. For every crossing graph on \(r\) vertices,
+\(t(G,w_\beta)\ge b^r\) by restricting all labels to \(I\). Consequently
+\[
+ b^r(2r-1)!!\le M_{2r}(\beta)\le(2r-1)!!.                    \tag{H22}
+\]
+The \(2r\)-th root of the lower bound tends to infinity: the last
+\(\lfloor r/2\rfloor\) factors of \((2r-1)!!\) are at least \(r\).
+A probability measure supported on \([-R,R]\) would instead have all these
+roots bounded by \(R\). Hence the support is unbounded for \(\beta<1/2\).
+For \(\beta=1/2\) only noncrossing pairings survive, giving support \([-2,2]\).
+
+For each fixed graph, its density is continuous in \(\beta\) by dominated
+convergence, since each distance boundary has measure zero. Thus every
+fixed moment is continuous, uniformly bounded by the Gaussian moments.
+Tightness, uniform integrability, and moment determinacy prove weak
+continuity of \(\beta\mapsto\nu_\beta\), including at the compact endpoint.
+This is a statement about the limiting measures, not finite-\(N\) extreme
+eigenvalue rigidity.
+
+\hypertarget{pell-harmonic-sixth-moment-and-the-failure-of-an-independent-crossing-model}{%
+\subsection{Sixth moment and the failure of an independent-crossing model}\label{pell-harmonic-sixth-moment-and-the-failure-of-an-independent-crossing-model}}
+
+The fifteen pairings of six positions have respectively \(0,1,2,3\) crossings
+with multiplicities \(5,6,3,1\). The two-edge graphs are trees, whose
+densities are \(\rho^2\) because \(w_\beta\) has constant degree \(\rho\).
+The last graph is a triangle. Put \(b=\rho/2\). Fix its first vertex at zero:
+\[
+ t(K_3,w_\beta)
+ =\int_{-b}^b\int_{-b}^b
+        \mathbf1\{\operatorname{dist}(x,y)<b\}\,dx\,dy
+ =3b^2+(3b-1)_+^2.                                        \tag{H18}
+\]
+Indeed the central region \(|x-y|<b\) has area \(3b^2\); when \(3b>1\),
+the two wrapped corner triangles add \((3b-1)^2\). This proves (H6).
+An independent-crossing model would instead assign \(\rho^3\) to the
+triangle. The difference is
+\[
+ t(K_3,w_\beta)-\rho^3=
+ \begin{cases}
+  \rho^2(3/4-\rho),&0\le\rho\le2/3,\\
+  (1-\rho)^3,&2/3\le\rho\le1.
+ \end{cases}                                               \tag{H19}
+\]
+It is strictly positive for \(0<\rho<1\). For example, at \(\beta=1/4\),
+\(M_4=5/2\), \(M_6=143/16\), whereas that \(q\)-Gaussian model gives \(71/8\).
+
+\hypertarget{pell-harmonic-weighted-quantum-fields-and-a-noncommutativity-diagnostic}{%
+\subsection{Weighted quantum fields and a noncommutativity diagnostic}\label{pell-harmonic-weighted-quantum-fields-and-a-noncommutativity-diagnostic}}
+
+There is also an ordered mixed-moment version on the full odd space.
+For a bounded real Riemann-integrable profile \(f\) on \([0,1)\), set
+\[
+ Y_{K,a}(f)=\frac1{\sqrt{2K}}\sum_{j=0}^{K-1}
+                 f(j/K)U_0^jB_aU_0^{-j},\qquad
+ \tau_-(A)=D^{-1}\operatorname{Tr}_-A .
+\]
+For fixed profiles \(f_1,\ldots,f_{2r}\), their ordered mixed trace converges
+in \(L^2(\mathcal A_K)\) to
+\[
+ \sum_{\pi\in\mathcal P_2(2r)}
+ \int_{[0,1]^r}
+   \prod_{\{u,v\}\in\pi} f_u(x_{\{u,v\}})f_v(x_{\{u,v\}})
+   \prod_{\{i,j\}\in E(G_\pi)}w_\beta(x_i,x_j)\,dx.             \tag{H20}
+\]
+Odd mixed traces tend to zero. In proving this version, use all \(r\) labels
+without pinning one; keep the profiles inside the sums. The same discarded
+sets and quadratic-phase bounds apply with a fixed supremum-norm factor.
+The product profiles and indicator kernels are Riemann integrable, so the
+remaining grid sums converge. The noncentral full-space trace error is
+\(O_{r,f}(K^r/N)\) and the unbalanced/repeated-label error is \(O_{r,f}(K^{-1})\).
+This proves (H20); it is not an assumption of finite quantum independence.
+
+At \(\beta=0\), (H20) is the commuting Gaussian field with covariance
+\(\int fg\); at \(\beta=1/2\) it is the free semicircular field with that
+covariance. These descriptions concern tracial moments.
+For \(f=\sqrt2\,\mathbf1_{[0,1/2)}\) and
+\(g=\sqrt2\,\mathbf1_{[1/2,1)}\), (H20) gives
+\[
+ \tau_-\!\left([Y_{K,a}(f),Y_{K,a}(g)]^*
+                    [Y_{K,a}(f),Y_{K,a}(g)]\right)
+ \longrightarrow 2(1-\rho^2)=8\beta(1-\beta)                 \tag{H21}
+\]
+in \(L^2(\mathcal A_K)\). To check the coefficient, for any disjointly supported
+real profiles the limit is
+\(2\int f(x)^2g(y)^2[1-w_\beta(x,y)]\,dx\,dy\).
+The area of allowed pairs across the two half-circles is \(b^2\).
+This gives (H21), and shows why the limiting intermediate fields cannot
+be treated as commuting random variables.
+
+\hypertarget{pell-harmonic-prior-work-verification-and-the-remaining-bgs-gap}{%
+\subsection{Prior work, verification, and the remaining BGS gap}\label{pell-harmonic-prior-work-verification-and-the-remaining-bgs-gap}}
+
+Cébron, Oliveira Santos, and Youssef,
+\emph{Graphon-Theoretic Approach to Central Limit Theorems for
+\(\epsilon\)-Independence}, \href{https://arxiv.org/html/2411.13062v2}{arXiv:2411.13062v2},
+Theorem 1.1 and Section 2,
+already give the graphon moment family (H4), including Gaussian and
+semicircular endpoints. Their weighted and multivariate extensions also
+precede this note. The present Weyl orbit is not assumed to satisfy their
+finite independence hypotheses. The additional argument here is the
+arithmetic harmonic realization (H7)--(H17). Its priority is unverified.
+
+That paper's Proposition 2.6 assumes \(\|w\|_\infty<1\) to obtain a density.
+For \(0\le\beta<1/2\), our kernel has essential supremum one, so that
+proposition does not automatically prove absolute continuity here.
+No density or finite-\(N\) spectral-edge assertion is being imported; the
+limiting support statement follows instead from (H22).
+
+The dedicated verifier checks the physical harmonic/squared-phase
+identification against finite matrices, exact Pell and oriented-word
+identities, and the low-order crossing geometry. The companion numerical
+experiment samples harmonics with integer modular phases; sampling and
+floating-point output are not an asymptotic proof. Source hashes and actual
+run ranges belong to the dated review record.
+
+The classical map is fixed, but the observable frequency and its distribution
+vary with \(N\). These are global spectra of compressed observables and ordered
+moments of orbit sums. No local spacing law for \(U_0\), perturbed-propagator
+universality, Heisenberg-time trace comparison, or absence of arithmetic
+symmetries follows. BGS remains open.

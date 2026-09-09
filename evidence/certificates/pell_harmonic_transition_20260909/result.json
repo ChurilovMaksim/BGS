@@ -1,0 +1,338 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite algebra plus floating independent matrix regressions; no asymptotic or BGS certification",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "exact_phase": {
+    "oriented_word_identities": 192324,
+    "K_values": [
+      3,
+      5,
+      7,
+      11,
+      19,
+      31,
+      61,
+      127
+    ],
+    "six_position_crossing_histogram": {
+      "0": 5,
+      "1": 6,
+      "2": 3,
+      "3": 1
+    }
+  },
+  "exact_geometry": {
+    "integer_circle_triangle_designs": 65,
+    "rational_interior_parameters": 119,
+    "beta_quarter_sixth_moment": "143/16",
+    "independent_crossing_sixth_moment": "71/8"
+  },
+  "matrix": {
+    "scope": "floating physical-potential spectrum versus squared-parameter Weyl block",
+    "checks": [
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 0,
+        "harmonic": 1,
+        "dimension": 1,
+        "spectral_error": 2.220446049250313e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 0,
+        "harmonic": 2,
+        "dimension": 1,
+        "spectral_error": 6.661338147750939e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 0,
+        "harmonic": 3,
+        "dimension": 1,
+        "spectral_error": 1.2212453270876722e-15
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 0,
+        "harmonic": 4,
+        "dimension": 1,
+        "spectral_error": 5.551115123125783e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 1,
+        "harmonic": 1,
+        "dimension": 1,
+        "spectral_error": 0.0
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 1,
+        "harmonic": 2,
+        "dimension": 1,
+        "spectral_error": 8.049116928532385e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 1,
+        "harmonic": 3,
+        "dimension": 1,
+        "spectral_error": 1.942890293094024e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 1,
+        "harmonic": 4,
+        "dimension": 1,
+        "spectral_error": 7.494005416219807e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 2,
+        "harmonic": 1,
+        "dimension": 1,
+        "spectral_error": 3.3306690738754696e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 2,
+        "harmonic": 2,
+        "dimension": 1,
+        "spectral_error": 5.273559366969494e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 2,
+        "harmonic": 3,
+        "dimension": 1,
+        "spectral_error": 6.661338147750939e-16
+      },
+      {
+        "K": 3,
+        "N": 7,
+        "sector": 2,
+        "harmonic": 4,
+        "dimension": 1,
+        "spectral_error": 8.881784197001252e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 0,
+        "harmonic": 1,
+        "dimension": 4,
+        "spectral_error": 6.661338147750939e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 0,
+        "harmonic": 2,
+        "dimension": 4,
+        "spectral_error": 4.440892098500626e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 0,
+        "harmonic": 3,
+        "dimension": 4,
+        "spectral_error": 1.5543122344752192e-15
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 0,
+        "harmonic": 4,
+        "dimension": 4,
+        "spectral_error": 8.326672684688674e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 1,
+        "harmonic": 1,
+        "dimension": 4,
+        "spectral_error": 1.1102230246251565e-15
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 1,
+        "harmonic": 2,
+        "dimension": 4,
+        "spectral_error": 6.938893903907228e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 1,
+        "harmonic": 3,
+        "dimension": 4,
+        "spectral_error": 9.43689570931383e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 1,
+        "harmonic": 4,
+        "dimension": 4,
+        "spectral_error": 4.440892098500626e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 4,
+        "harmonic": 1,
+        "dimension": 4,
+        "spectral_error": 4.996003610813204e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 4,
+        "harmonic": 2,
+        "dimension": 4,
+        "spectral_error": 6.661338147750939e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 4,
+        "harmonic": 3,
+        "dimension": 4,
+        "spectral_error": 8.881784197001252e-16
+      },
+      {
+        "K": 5,
+        "N": 41,
+        "sector": 4,
+        "harmonic": 4,
+        "dimension": 4,
+        "spectral_error": 6.661338147750939e-16
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 0,
+        "harmonic": 1,
+        "dimension": 17,
+        "spectral_error": 1.1379786002407855e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 0,
+        "harmonic": 2,
+        "dimension": 17,
+        "spectral_error": 2.886579864025407e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 0,
+        "harmonic": 3,
+        "dimension": 17,
+        "spectral_error": 1.3322676295501878e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 0,
+        "harmonic": 4,
+        "dimension": 17,
+        "spectral_error": 1.7763568394002505e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 1,
+        "harmonic": 1,
+        "dimension": 17,
+        "spectral_error": 1.9984014443252818e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 1,
+        "harmonic": 2,
+        "dimension": 17,
+        "spectral_error": 1.5543122344752192e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 1,
+        "harmonic": 3,
+        "dimension": 17,
+        "spectral_error": 1.9984014443252818e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 1,
+        "harmonic": 4,
+        "dimension": 17,
+        "spectral_error": 1.1102230246251565e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 6,
+        "harmonic": 1,
+        "dimension": 17,
+        "spectral_error": 1.1102230246251565e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 6,
+        "harmonic": 2,
+        "dimension": 17,
+        "spectral_error": 2.220446049250313e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 6,
+        "harmonic": 3,
+        "dimension": 17,
+        "spectral_error": 2.130240428499519e-15
+      },
+      {
+        "K": 7,
+        "N": 239,
+        "sector": 6,
+        "harmonic": 4,
+        "dimension": 17,
+        "spectral_error": 1.3322676295501878e-15
+      }
+    ],
+    "max_correct_error": 2.886579864025407e-15,
+    "max_linear_parameter_negative_control_error": 1.963920354471784
+  },
+  "quadratic_sum": {
+    "scope": "floating checks of the finite differencing inequality, rational phases",
+    "designs": 15,
+    "maximum_observed_to_bound_ratio": 0.03177715923555537
+  },
+  "source_sha256": {
+    "computations/verification/pell_harmonic_transition.py": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85",
+    "mathematics/pell_harmonic_transition.md": "97504d7730110aa7e2131d3157d72d75ff7c2d4fd2e09fc00de38d3e68bfc05c"
+  },
+  "runtime_seconds": 1.4983610659999158
+}

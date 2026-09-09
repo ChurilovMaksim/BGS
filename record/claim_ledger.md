@@ -44,6 +44,10 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
+| fixed Pell cat map, unit harmonics up to $L=N^{\beta+o(1)}\le\sqrt N$: all fixed compressed-observable moments converge in $L^2$ to circle-graphon moments, uniformly over odd eigenspaces | **EXACT** | `mathematics/pell_harmonic_transition.md`, Theorem 1; sampled harmonics, global observable law only |
+| harmonic law has fourth moment $3-2\beta$, explicit sixth moment, weak continuity, and unbounded support for $\beta<1/2$ with semicircle endpoint | **EXACT** | same note, (H6), (H18)--(H19), Corollary 4; no finite-size edge rigidity |
+| harmonic weighted ordered quantum moments have graphon limits; complementary normalized half-window commutator squared norm tends to $8\beta(1-\beta)$ | **EXACT** | same note, (H20)--(H21); tracial convergence, no measurement path or BGS claim |
+| physical harmonic $a$ produces magnetic parameter $a^2q_0$; 192324 finite oriented word checks and 36 numerical independent spectral comparisons | **FINITE-CERTIFICATE + FINITE-REGRESSION** | `evidence/certificates/pell_harmonic_transition_20260909/`; exact algebra and floating matrix results separated |
 | scalar Cayley trace `d_Kol<=C((K-1)^(-1/2)+sqrt((K-1)/log p))`; dyadic rate `O(Q^(-1/2)+sqrt(log Q/log X))` outside fraction `O((log X)X^(-1/4))` for large `Q<=X^(1/4)` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_trace_gaussian_limit.md`, Section 7; Esseen smoothing; constants unoptimized |
 | all-order weighted Cayley collision budget `sum_p Delta_w(p) log p = O_w(K^r)` for prime `K`, split primes `p`, and a fixed positive integer word of length `r>=1` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_trace_gaussian_limit.md`, Proposition 3; Chowla input |
 | normalized full Cayley--Jacobi trace: joint independent Gaussian limit at fixed distinct positive parameter multipliers for `K->infinity`, `K=o(log p)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 1; not traces of matrix powers |
