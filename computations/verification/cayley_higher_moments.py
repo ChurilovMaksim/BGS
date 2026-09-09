@@ -164,6 +164,31 @@ def check_word(K, weights):
             'orbit_valuation_checks': valuation_checks}
 
 
+def check_rate_kernels():
+    """Finite exact checks; the uniform smoothing argument remains analytic."""
+    counts = Counter()
+    for K in [3, 5, 7, 11, 31, 101]:
+        n = K-1
+        for s in range(1, 11):
+            gaussian = Fraction(factorial(2*s), 2**s*factorial(s))
+            assert Fraction(scalar_baseline(K, 2*s), n**s) <= gaussian
+            counts['balanced_moment_majorants'] += 1
+        for s in range(1, 65):
+            assert sum(2*r*n**r for r in range(1, 2*s+1)) <= 8*s*n**(2*s)
+            counts['all_order_budget_sums'] += 1
+    for s in range(1, 65):
+        for r in range(1, 2*s+1):
+            assert r*2**r <= 2**(4*s)
+            counts['integer_cutoffs'] += 1
+    # X=2^a, Q=2^b: exact floor and density-exponent inequalities.
+    for a in range(8, 129):
+        for b in range(1, a//4+1):
+            s = a//(4*b)
+            assert s >= 1 and 4*b*(2*s+1) <= 3*a and a <= 8*b*s
+            counts['density_floor_bounds'] += 1
+    return dict(counts)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -201,6 +226,7 @@ def main():
                        'in each listed (K,word); all split primes up to 257 for valuation tests. '
                        'Not an asymptotic proof or enumeration of all exceptional primes.',
               'cases': cases, 'counterexamples': controls,
+              'quantitative_rate_kernels': check_rate_kernels(),
               'totals': {key: sum(c[key] for c in cases) for key in
                          ['ordered_tuples', 'normalized_orbits', 'nonzero_resultants',
                           'orbit_valuation_checks']}}
@@ -208,6 +234,7 @@ def main():
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps({'cases': len(cases), **result['totals'],
+                      'quantitative_rate_kernels': result['quantitative_rate_kernels'],
                       'counterexamples': controls}, indent=2))
 
 

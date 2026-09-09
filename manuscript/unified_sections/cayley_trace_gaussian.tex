@@ -207,3 +207,116 @@ checks. These are implementation regressions, not proofs of the external
 arithmetic inputs. The full statements, proof details, source locators,
 and limits of the BGS interpretation are in
 \path{mathematics/cayley_trace_gaussian_limit.md}.
+
+\subsection{A quantitative scalar refinement}
+The scalar limit admits a rate by keeping all constants uniform in the
+number of moments. Write $\mu_{K,p}$ for the empirical scalar law with
+$q\ne0$, $\gamma=N(0,1)$, and
+$D_{K,p}=\sup_x|\mu_{K,p}((-\infty,x])-\gamma((-\infty,x])|$.
+
+\begin{theorem}[Pointwise Kolmogorov bound]
+There is an absolute constant $C$ such that, for every odd prime $K$ and
+split prime $p$,
+\[
+ D_{K,p}\le C\left((K-1)^{-1/2}
+                    +\sqrt{\frac{K-1}{\log p}}\right).
+\]
+\end{theorem}
+
+\begin{theorem}[Density Kolmogorov bound]
+For sufficiently large $X,Q$ with $Q\le X^{1/4}$, all but a proportion
+at most $C(\log X)X^{-1/4}$ of the designs in $\mathcal D(X)$ satisfy
+\[
+ D_{K,p}\le C\left(Q^{-1/2}
+                   +\sqrt{\frac{\log Q}{\log X}}\right).
+\]
+The average distance is bounded by this right side plus
+$C(\log X)X^{-1/4}$. Constants are absolute and not optimized.
+\end{theorem}
+For fixed $Q=X^\theta$ this only gives an $O(\sqrt\theta)$ discrepancy;
+it does not establish a fixed-power CLT.
+
+\paragraph{Finite moments and smoothing.}
+Let $\mu^{\rm all}_{K,p}$ include $q=0$, and let $\nu_K$ be the scalar
+independent-phase law above. If $\Delta_{K,r}(p)=0$ for $1\le r\le2s$,
+then these laws have exactly the same first $2s$ moments.
+The coefficientwise inequality
+\[
+ \sum_{j\ge0}\frac{z^{2j}}{n^j(j!)^2}\preceq\exp(z^2/n)
+\]
+is preserved by taking the $d$-th power. Thus
+$\int y^{2s}\,d\nu_K(y)\le(2s)!/(2^ss!)$.
+Taylor expansion of $e^{ity}$ through degree $2s-1$ gives
+\[
+ |\widehat\mu^{\rm all}_{K,p}(t)-\widehat\nu_K(t)|
+ \le\frac{2|t|^{2s}}{2^ss!}.
+\]
+For $T^2\le s/(2e)$ this implies
+\[
+ \int_0^T\frac{|\widehat\mu^{\rm all}_{K,p}(t)-\widehat\nu_K(t)|}{t}\,dt
+ \le\frac{T^{2s}}{s\,2^ss!}\le\frac{4^{-s}}s.
+\]
+
+For $|t|\le\sqrt n/4$, put $v=t^2/n\le1/16$.
+The cosine expansion gives
+$1-v\le J_0(2t/\sqrt n)\le1-v+v^2/4$, so this quantity is positive and
+\[
+ |\log J_0(2t/\sqrt n)+v|\le\tfrac8{15}v^2.
+\]
+Both $d\log J_0(2t/\sqrt n)$ and $-t^2/2$ are at most $-t^2/3$.
+Since $\widehat\nu_K(t)=J_0(2t/\sqrt n)^d$, the mean-value theorem gives
+\[
+ |\widehat\nu_K(t)-e^{-t^2/2}|
+ \le\frac4{15n}t^4e^{-t^2/3},\qquad
+ \int_0^T\frac{|\widehat\nu_K(t)-e^{-t^2/2}|}{t}\,dt\le\frac6{5n}.
+\]
+The logarithmic bound follows from
+$\log(1-v)\ge-v-v^2/[2(1-v)]$ and $\log(1+u)\le u$.
+
+Apply the classical Esseen smoothing inequality against the normal target
+with $T=\min\{\sqrt{s/(2e)},\sqrt n/4\}$. This inequality permits an atomic
+first law; only the target needs a Lipschitz CDF. An exact statement is
+B.~Borda, arXiv:2005.04925v2, Theorem A, p.~2.
+The smoothing remainder $O(1/T)$ and the preceding integrals imply
+\[
+ d_{\rm K}(\mu^{\rm all}_{K,p},\gamma)\le C(s^{-1/2}+n^{-1/2}).
+\]
+Removing zero changes the law by at most $1/p$ in Kolmogorov distance, because
+$\mu^{\rm all}_{K,p}=p^{-1}\delta_{\sqrt n}+(1-p^{-1})\mu_{K,p}$. Hence
+\begin{equation}
+ \big[\Delta_{K,r}(p)=0\ (1\le r\le2s)\big]
+ \ \Longrightarrow\
+ D_{K,p}\le C(s^{-1/2}+n^{-1/2})+1/p.
+ \label{eq:cayley-finite-moment-rate}
+\end{equation}
+
+\paragraph{Uniform arithmetic cutoffs.}
+For $r\le2s$, $r2^r\le2s\,2^{2s}\le2^{4s}$.
+Thus $p>2^{4ns}$ excludes every nonbalanced scalar relation through order
+$2s$. Taking $s=\lfloor\log p/(8n\log2)\rfloor$ when it is positive
+ensures the strict cutoff and gives the pointwise theorem by
+\eqref{eq:cayley-finite-moment-rate}. If the floor is zero, the right side
+of the asserted bound is bounded below by an absolute positive constant,
+and $D_{K,p}\le1$ suffices.
+
+For density, the all-order budget and $\log(r2^r)\le2r$ imply uniformly
+for every integer $s\ge1$ that
+\[
+ \sum_{r=1}^{2s}\sum_{p\equiv1\pmod K}\Delta_{K,r}(p)\log p
+ \le\sum_{r=1}^{2s}2r n^r\le8s n^{2s}.
+\]
+A design with any excess through order $2s$ consumes at least $\log(X/2)$,
+by integrality. Bound $n^{2s}\le Q^{2s}$ before using the prime count
+$O(Q/\log Q)$. Dividing by the same uniform Bombieri--Vinogradov
+denominator shows that the exceptional fraction is at most
+$CsQ^{2s+1}/X$, with a constant independent of $s$.
+For $s=\lfloor\log X/(4\log Q)\rfloor$ and $Q\le X^{1/4}$,
+\[
+ s\ge1,\qquad Q^{2s+1}\le X^{3/4},\qquad
+ s^{-1/2}\le C\sqrt{\log Q/\log X}.
+\]
+The exceptional fraction is therefore at most $C(\log X)X^{-1/4}$.
+On its complement, use \eqref{eq:cayley-finite-moment-rate},
+$n\ge Q/3$ and $p>X/2$. This proves the density rate and, by bounding
+distance by one on the exceptional set, its averaged version.
+No dimension-uniform multivariate rate or microscopic spectral law is inferred.

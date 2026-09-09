@@ -2,7 +2,9 @@
 
 **Status: EXACT + EXTERNAL-THEOREM.** The external arithmetic inputs are
 Chowla's cotangent independence and, for the density statement only, the
-classical Bombieri--Vinogradov theorem and PNT. This extends the repository's
+classical Bombieri--Vinogradov theorem and PNT. The quantitative scalar
+refinement also uses the classical Esseen smoothing inequality.
+This extends the repository's
 fourth-moment results to a distribution theorem in explicitly sparse regimes.
 Priority for this specialization is not established. It is not a microscopic
 BGS theorem, and the trace parameters below are not powers of one matrix.
@@ -327,6 +329,158 @@ family in (5) varies an additive parameter in a full Jacobi matrix. Converting
 one into the other would be an additional mathematical theorem; none is
 asserted here.
 
+## 7. Quantitative scalar refinement
+
+Let $\mu_{K,p}$ be the scalar empirical law with $q\ne0$, and let
+$\gamma=N(0,1)$. Write $D_{K,p}=d_{\rm K}(\mu_{K,p},\gamma)$, where
+$d_{\rm K}$ is the supremum distance between cumulative distribution functions.
+All constants in this section are absolute.
+
+**Theorem 4 (pointwise rate).** For every odd prime $K$ and split prime $p$,
+$$
+ D_{K,p}\le C\left((K-1)^{-1/2}
+              +\sqrt{\frac{K-1}{\log p}}\right).
+ \tag{26}
+$$
+When the right side is large the estimate is only the trivial bound
+$D_{K,p}\le1$. It does not assert convergence at fixed polynomial subgroup
+size.
+
+**Theorem 5 (density rate).** For sufficiently large $X,Q$ with
+$Q\le X^{1/4}$, in the design family (3), all but a proportion at most
+$C(\log X)X^{-1/4}$ satisfy
+$$
+ D_{K,p}\le C\left(Q^{-1/2}+
+                  \sqrt{\frac{\log Q}{\log X}}\right).
+ \tag{27}
+$$
+The average of $D_{K,p}$ is bounded by the right side of (27) plus
+$C(\log X)X^{-1/4}$. This specializes to a quantitative convergence rate when
+$Q\to\infty$, $\log Q=o(\log X)$. The constant is not optimized or given a
+numerical value; the estimate is asymptotic up to an absolute constant.
+No effective numerical onset for the Bombieri--Vinogradov constants is asserted.
+
+### 7.1 A finite-moment comparison with no smoothness assumption on the data
+
+Include the zero frequency temporarily and call the resulting law
+$\mu^{\rm all}_{K,p}$. Let $\nu_K$ be the scalar independent-phase law in (19).
+Suppose $\Delta_{K,r}(p)=0$ for every $1\le r\le2s$, where $s\ge1$.
+Orthogonality now gives exact equality of the first $2s$ moments of
+$\mu^{\rm all}_{K,p}$ and $\nu_K$, without any zero-frequency correction.
+
+The moment-generating function of $\nu_K$ is
+$I_0(2z/\sqrt n)^d$. The nonnegative coefficient inequality
+$$
+ \sum_{j\ge0}\frac{z^{2j}}{n^j(j!)^2}
+ \preceq \exp(z^2/n)
+$$
+is preserved by the $d$-th power. Consequently, uniformly in $n,s$,
+$$
+ \int y^{2s}\,d\nu_K(y)\le\frac{(2s)!}{2^s s!}.
+ \tag{28}
+$$
+Taylor's formula with integral remainder for $e^{ity}$, expanded through
+degree $2s-1$, gives
+$$
+ |\widehat\mu^{\rm all}_{K,p}(t)-\widehat\nu_K(t)|
+ \le \frac{2|t|^{2s}}{2^s s!}. \tag{29}
+$$
+The even absolute moment in the remainder is exactly the matching moment.
+For $T^2\le s/(2e)$, integrating (29) and using $s!\ge(s/e)^s$ gives
+$$
+ \int_0^T
+ \frac{|\widehat\mu^{\rm all}_{K,p}(t)-\widehat\nu_K(t)|}{t}\,dt
+ \le\frac{T^{2s}}{s\,2^s s!}\le\frac{4^{-s}}s.
+ \tag{30}
+$$
+
+For the comparison to the normal law,
+$\widehat\nu_K(t)=J_0(2t/\sqrt n)^d$.
+Put $v=t^2/n$. For $|t|\le\sqrt n/4$, the cosine expansion under phase
+integration gives
+$$
+ 1-v\le J_0(2t/\sqrt n)\le1-v+v^2/4,\qquad 0\le v\le1/16.
+$$
+In this interval the Bessel function is positive. The elementary estimates
+$\log(1-v)\ge-v-v^2/[2(1-v)]$ and $\log(1+u)\le u$ imply
+$$
+ |\log J_0(2t/\sqrt n)+v|\le\tfrac8{15}v^2.
+$$
+Both $d\log J_0(2t/\sqrt n)$ and $-t^2/2$ are at most $-t^2/3$.
+The mean-value theorem for the exponential therefore yields
+$$
+ |\widehat\nu_K(t)-e^{-t^2/2}|
+ \le\frac4{15n}t^4e^{-t^2/3},\qquad
+ \int_0^T\frac{|\widehat\nu_K(t)-e^{-t^2/2}|}{t}\,dt
+ \le\frac6{5n}. \tag{31}
+$$
+
+Apply Esseen's smoothing inequality with the normal target and
+$$
+ T=\min\{\sqrt{s/(2e)},\sqrt n/4\}.
+$$
+The target has bounded density; the first law may be atomic.
+Equations (30)--(31), together with the smoothing remainder $O(1/T)$, give
+$$
+ d_{\rm K}(\mu^{\rm all}_{K,p},\gamma)
+ \le C(s^{-1/2}+n^{-1/2}).
+$$
+Finally
+$\mu^{\rm all}_{K,p}=p^{-1}\delta_{\sqrt n}+(1-p^{-1})\mu_{K,p}$,
+so the two empirical laws differ in Kolmogorov distance by at most $1/p$.
+We have proved the uniform finite-moment implication
+$$
+ [\Delta_{K,r}(p)=0\text{ for }1\le r\le2s]
+ \quad\Longrightarrow\quad
+ D_{K,p}\le C(s^{-1/2}+n^{-1/2})+1/p.
+ \tag{32}
+$$
+
+### 7.2 Choosing a growing moment cutoff
+
+For $1\le r\le2s$, the elementary bound
+$r2^r\le2s\,2^{2s}\le2^{4s}$ shows from (17) that
+$$
+ p>2^{4ns}\quad\Longrightarrow\quad
+ \Delta_{K,r}(p)=0\quad(1\le r\le2s). \tag{33}
+$$
+Choose $s=\lfloor\log p/(8n\log2)\rfloor$ when this is at least one.
+Then $2^{4ns}\le\sqrt p<p$, and $s^{-1/2}\le C\sqrt{n/\log p}$.
+Equation (32) proves (26), absorbing $1/p$.
+If this choice has $s=0$, $\sqrt{n/\log p}$ is bounded below by a
+positive absolute constant, and $D_{K,p}\le1$ completes the statement.
+
+For the density theorem, do not hide dependence on $r$ in an asymptotic
+constant. From (16), using $\log(r2^r)\le2r$ and $n\ge2$,
+$$
+ \sum_{r=1}^{2s}\sum_{p\equiv1\ ({\rm mod}\ K)}
+ \Delta_{K,r}(p)\log p
+ \le\sum_{r=1}^{2s}2r n^r\le8s n^{2s}. \tag{34}
+$$
+If a design has any nonbalanced relation through order $2s$, it consumes
+at least $\log(X/2)$ of this budget, since the excesses are integers.
+Sum over the prime $K$ window, using $n^{2s}\le Q^{2s}$ *before*
+the elementary prime count $O(Q/\log Q)$. The denominator (22) is uniform
+for $Q\le X^{1/4}$, $X,Q$ sufficiently large. Hence the bad fraction is
+$$
+ \frac{\#\{(K,p)\in\mathcal D(X):
+          \exists r\le2s,\ \Delta_{K,r}(p)>0\}}{|\mathcal D(X)|}
+ \le C\frac{sQ^{2s+1}}X. \tag{35}
+$$
+The constant is independent of the growing integer $s$.
+Set $s=\lfloor\log X/(4\log Q)\rfloor\ge1$.
+Then $Q^{2s+1}\le X^{3/4}$ and
+$s^{-1/2}\le C\sqrt{\log Q/\log X}$.
+Equation (35) bounds the exceptional fraction by
+$C(\log X)X^{-1/4}$. On its complement, use (32), $n\ge Q/3$
+for sufficiently large $Q$, and $p>X/2$. This proves (27).
+Bounding distance by one on the exceptional designs gives the average bound.
+
+This argument quantifies the scalar law; it does not supply an analogous
+dimension-uniform multivariate rate, a fixed-power CLT, or a local spectral
+law. The power of $1/4$ in the displayed exceptional bound is a convenient
+choice, not an optimized threshold.
+
 ## Sources and review boundary
 
 - K. Wang, *On a theorem of S. Chowla*, J. Number Theory 15 (1982), 1--4,
@@ -352,5 +506,16 @@ asserted here.
 
 An independent read-only review checked the statement, orbit valuation
 argument, growing-modulus denominator, and moment-to-law quantifiers.
+The quantitative continuation received a separate review of the growing
+moment cutoff, the smoothing argument, zero-frequency removal, and constants
+uniform in the moment order.
 Finite tests are implementation checks, not substitutes for those proofs.
 Neither the source screening nor the review establishes global novelty.
+
+For the smoothing input, B. Borda, *Berry--Esseen smoothing inequality for the
+Wasserstein metric on compact Lie groups*,
+[arXiv:2005.04925v2](https://arxiv.org/abs/2005.04925v2), Theorem A, p. 2,
+explicitly states the classical real-line Kolmogorov smoothing inequality
+for arbitrary Borel probability measures and a Lipschitz target CDF.
+Only that restated classical theorem is used here, not the paper's new
+compact-group result.

@@ -19,6 +19,13 @@ split designs `K in (Q/2,Q]`, `p in (X/2,X]`, whenever
 by a global `O_w(K^r)` collision budget. Its quantitative average normalized
 excess is `O_w(Q^(r/2+1)/X)`.
 
+The scalar law also has the quantitative pointwise estimate
+`d_Kol <= C((K-1)^(-1/2)+sqrt((K-1)/log p))`.
+For sufficiently large `X,Q` with `Q<=X^(1/4)`, outside a design fraction
+`O((log X)X^(-1/4))`, its Kolmogorov distance is
+`O(Q^(-1/2)+sqrt(log Q/log X))`. The additional input is classical
+Esseen smoothing; the uniform growing-moment budget is proved explicitly.
+
 This is a full-trace distribution theorem, not a local spectral theorem or
 a theorem about traces of matrix powers. External inputs: Chowla independence,
 and Bombieri--Vinogradov/PNT for the density version. Global novelty has not

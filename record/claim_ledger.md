@@ -44,6 +44,7 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
+| scalar Cayley trace `d_Kol<=C((K-1)^(-1/2)+sqrt((K-1)/log p))`; dyadic rate `O(Q^(-1/2)+sqrt(log Q/log X))` outside fraction `O((log X)X^(-1/4))` for large `Q<=X^(1/4)` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_trace_gaussian_limit.md`, Section 7; Esseen smoothing; constants unoptimized |
 | all-order weighted Cayley collision budget `sum_p Delta_w(p) log p = O_w(K^r)` for prime `K`, split primes `p`, and a fixed positive integer word of length `r>=1` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_trace_gaussian_limit.md`, Proposition 3; Chowla input |
 | normalized full Cayley--Jacobi trace: joint independent Gaussian limit at fixed distinct positive parameter multipliers for `K->infinity`, `K=o(log p)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 1; not traces of matrix powers |
 | same joint empirical laws converge weakly in probability over dyadic split designs with `Q->infinity`, `log Q=o(log X)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 2; Bombieri--Vinogradov/PNT; does not cover fixed `Q=X^theta` |

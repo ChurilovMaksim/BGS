@@ -31,6 +31,13 @@ cyclotomic resultant budgets at every fixed order. See
 Parameter multiples are not powers of one quantum propagator; microscopic
 BGS remains open.
 
+The scalar refinement also gives a Kolmogorov-distance bound
+`C((K-1)^(-1/2)+sqrt((K-1)/log p))` for every split-prime design.
+In dyadic windows with sufficiently large `Q<=X^(1/4)`, all but a fraction
+`O((log X)X^(-1/4))` have distance
+`O(Q^(-1/2)+sqrt(log Q/log X))` from the standard normal law.
+These are quantitative bounds with absolute, unoptimized constants.
+
 ## Canonical publication
 
 There is one maintained publication entry point:
@@ -49,7 +56,8 @@ estimate preserves the full adapted exponential rate, and its deterministic
 correlation theorem removes the band-limit under explicit positivity and
 all-bandwidth hypotheses. The scoped proof review, limitations and actual
 execution record are in `record/referee_audit_20260908.md`.
-The September 9 revision adds the trace-limit proof; its specific review
+The September 9 revision adds the trace-limit proof and scalar error bounds,
+and builds to 159 pages. Its specific review
 and verification scope is recorded in `record/cayley_trace_review_20260909.md`.
 
 An exact illustration of why a fixed Fourier cap is insufficient is in

@@ -2,10 +2,10 @@
   "schema": 1,
   "status": "FINITE-REGRESSION",
   "base_commit": "d6086cfa9ce9be37aa3d936875e8ec1da3edf811",
-  "source_sha256": "d4294ea721e58013342d4e404fe4dd28c071332d37f9a32397d29ec796225bd3",
+  "source_sha256": "8495ace32bc4141b5dbb07658561230e9ea0ba7360dbcdd069bfbfbfff85386e",
   "associated_proof_sha256": {
-    "mathematics/cayley_trace_gaussian_limit.md": "892d25c5408d6db64fe605ac85dbc6ed338f561803e62841fd517596f61e04f2",
-    "manuscript/unified_sections/cayley_trace_gaussian.tex": "7287730335ffdbce7b7da8f85d9b27679c2d750cc9f584af3cec3664233b36a0"
+    "mathematics/cayley_trace_gaussian_limit.md": "4d4c229751113e1bd7633064eef0b63e23bfea95224727de59fed75136d2fd1a",
+    "manuscript/unified_sections/cayley_trace_gaussian.tex": "5dfd87a9637059e248fffc665385905b1ac6096a4a68b3549ab45753ab91bcc4"
   },
   "scope": "All ordered tuples represented by every normalized scaling orbit in each listed (K,word); all split primes up to 257 for valuation tests. Not an asymptotic proof or enumeration of all exceptional primes.",
   "cases": [
@@ -1020,6 +1020,12 @@
       ]
     }
   ],
+  "quantitative_rate_kernels": {
+    "balanced_moment_majorants": 60,
+    "all_order_budget_sums": 384,
+    "integer_cutoffs": 4160,
+    "density_floor_bounds": 2012
+  },
   "totals": {
     "ordered_tuples": 6440,
     "normalized_orbits": 1242,

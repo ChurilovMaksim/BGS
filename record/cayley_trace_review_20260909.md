@@ -41,9 +41,10 @@ The final review examined pre-correction SHA256 values
 `2ea66a57b8be417f53589f9ebacbd3c0e9ed70c5f23315a98032768657230203`
 (mathematical note) and
 `00a8deabac2a5282c7173f00cc54a908408182439b4d2e1d0e8aefb6df5ab982`
-(TeX section). The only subsequent change to those proof files is the
-domain correction just described; final hashes are in the associated
-verification certificate.
+(TeX section). The ensuing correction to that argument is the domain
+correction just described. A separate quantitative continuation, reviewed
+below, was then appended; final hashes are in the associated verification
+certificate.
 
 ## Evidence
 
@@ -92,3 +93,35 @@ The BGS target remains separate: prove desymmetrized joint traces of powers
 of one quantum propagator at Heisenberg times. Parameter multiples of a full
 Jacobi matrix are not those powers. Neither full BGS, a sparse pointwise
 quadratic energy theorem, nor a world-priority discovery is claimed.
+
+## Quantitative continuation
+
+Starting from committed revision `43e787d2d422f0ed2d5f862577892b1c5122be73`,
+the next calculation replaced qualitative moment determinacy by a uniform
+finite-moment smoothing bound. This proves the pointwise scalar rate
+`C((K-1)^(-1/2)+sqrt((K-1)/log p))` and a dyadic Kolmogorov bound
+`C(Q^(-1/2)+sqrt(log Q/log X))` outside a proportion
+`O((log X)X^(-1/4))` for large `Q<=X^(1/4)`.
+
+The proof matches moments after temporarily including zero frequency,
+uses coefficientwise sub-Gaussian moment bounds for the independent cosine
+model, and applies Esseen smoothing against the normal target.
+It removes zero at total-variation cost at most `1/p`. The density argument
+uses the uniform budget `sum_(r<=2s) sum_p Delta_r log p <=8s(K-1)^(2s)`
+and chooses a growing order cutoff. It does not use fixed-order asymptotic
+constants with an unstated dependence on that cutoff.
+
+A separate independent review found this argument valid, including its
+atomic input law, floor-function boundaries, and constants uniform in `s`.
+The actual quantitative sections were also reviewed at SHA256
+`81a755c3fa1cc58e15c44dc1b76b4a2ad0e5e25dfee0043791cb1fcdeba7db42`
+(mathematical note) and
+`5dfd87a9637059e248fffc665385905b1ac6096a4a68b3549ab45753ab91bcc4`
+(TeX). Subsequently the note's description of the rate was clarified to
+avoid asserting an effective numerical onset for the BV constants.
+The exact source for smoothing was checked in Borda,
+arXiv:2005.04925v2, Theorem A, p. 2.
+The finite verifier now also checks 60 balanced-moment majorants,
+384 budget sums, 4,160 integer cutoffs and 2,012 density floor bounds.
+These finite algebra checks do not formalize the analytical smoothing theorem.
+The quantitative manuscript revision builds to 159 pages.
