@@ -52,6 +52,19 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The September 9 all-order budget now proves a Gaussian distribution theorem
+for the full Cayley--Jacobi trace in logarithmic pointwise and subpolynomial
+dyadic density regimes; see `cayley_trace_gaussian_limit.md`.
+This concerns `Tr M_S(mq)` as an additive parameter varies. The following
+obligation concerns `Tr U^m` for a single correctly desymmetrized propagator.
+No identity transferring the new theorem to that obligation has been proved.
+
+For the arithmetic trace itself, extending the CLT to fixed polynomial
+subgroup size is also open. At order `r`, the current averaged error contains
+`Q^(r/2+1)/X`; no fixed positive exponent `Q=X^theta` makes it small for every
+order. A stronger all-order estimate or a different distributional argument
+is needed to cross this boundary.
+
 For the correct `N x N` spectral block, the deterministic bridge is exact:
 
 ```text

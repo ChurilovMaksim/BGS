@@ -4,6 +4,26 @@ This is the concise theorem index. The repository-wide status authority is
 [`../record/claim_ledger.md`](../record/claim_ledger.md); historical commits or
 notes do not override it.
 
+## September 9: full Cayley--Jacobi trace Gaussian limit
+
+**EXACT + EXTERNAL-THEOREM.** For odd prime subgroup order `K`, split prime `p`,
+and `n=K-1`, the real variable
+`n^(-1/2) sum_(a in c(H\{1})) e_p(qa)`, with uniform `q!=0`,
+converges to `N(0,1)` whenever `K->infinity` and `K=o(log p)`.
+At any finitely many distinct positive fixed integer multiples of `q`,
+the joint limit is a vector of independent standard normals.
+
+The same empirical joint laws converge weakly in probability over dyadic
+split designs `K in (Q/2,Q]`, `p in (X/2,X]`, whenever
+`Q->infinity`, `log Q=o(log X)`. The proof controls all fixed weighted moments
+by a global `O_w(K^r)` collision budget. Its quantitative average normalized
+excess is `O_w(Q^(r/2+1)/X)`.
+
+This is a full-trace distribution theorem, not a local spectral theorem or
+a theorem about traces of matrix powers. External inputs: Chowla independence,
+and Bombieri--Vinogradov/PNT for the density version. Global novelty has not
+been established. See [`cayley_trace_gaussian_limit.md`](cayley_trace_gaussian_limit.md).
+
 ## 1. Pair-key / fourth-moment reduction — EXACT
 
 For odd prime `p`, the off-diagonal key

@@ -6,6 +6,12 @@ This note connects the centered Cayley-energy problem to the **ordinary trace of
 
 The result is an averaged fourth-moment statement.  It is **not** a central-limit theorem, is not a statement about a parity/desymmetrized spectral block, and does not prove microscopic BGS/GOE statistics.
 
+**September 9 continuation:** [`cayley_trace_gaussian_limit.md`](cayley_trace_gaussian_limit.md)
+supplies a separate all-order proof of a full-trace Gaussian limit, pointwise
+for `K=o(log p)` and in dyadic density for subpolynomial `K`.
+Its smaller size regimes and its new higher-moment argument are essential;
+the fourth-moment theorem in this note alone does not imply it.
+
 ## 1. Twisted-Jacobi normalization
 
 Let `p` be an odd prime, let `H<=F_p^*` have order `K`, and let

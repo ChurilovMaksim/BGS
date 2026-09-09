@@ -1,0 +1,209 @@
+\section{Gaussian limits for the full Cayley--Jacobi trace}
+\label{sec:cayley-gaussian}
+The fourth-moment results admit an all-order extension in sparse regimes.
+The external arithmetic inputs are Chowla's cotangent independence and,
+for the density statement only, Bombieri--Vinogradov and the prime number
+theorem. Priority for this specialization has not been established.
+
+Let $K$ be an odd prime, $p\equiv1\pmod K$ a prime, $H\le\Fp^*$ of order
+$K$, and $A=c(H\setminus\{1\})$, where $c(h)=(h+1)/(h-1)$.
+Put $n=K-1$, $d=n/2$, and
+\[
+ X_{K,p}(q)=n^{-1/2}\sum_{a\in A}e^{2\pi iqa/p},\qquad q\in\Fp.
+\]
+This is real since $A=-A$, and $X_{K,p}(0)=\sqrt n$.
+Probability within a design means uniform sampling of $q\in\Fp^*$,
+not sampling matrix eigenvalues.
+
+\begin{theorem}[Pointwise sparse trace limit]
+For every sequence of split prime designs with $K\to\infty$ and
+$K=o(\log p)$, the law of $X_{K,p}(q)$ tends to $N(0,1)$.
+For fixed distinct positive integers $m_1,\ldots,m_L$, more generally,
+\[
+ (X_{K,p}(m_1q),\ldots,X_{K,p}(m_Lq))\Longrightarrow N(0,I_L).
+\]
+\end{theorem}
+
+\begin{theorem}[Density trace limit]
+Let $Q=Q(X)\to\infty$, $\log Q=o(\log X)$, and
+\[
+ \mathcal D(X)=\{(K,p):K,p\text{ prime},\
+ Q/2<K\le Q,\ X/2<p\le X,\ p\equiv1\pmod K\}.
+\]
+Let $\mu_{K,p}^{\boldsymbol m}$ be the empirical joint law in the preceding
+theorem, for fixed distinct positive multipliers. For each $\varepsilon>0$,
+\[
+ \frac{\#\{(K,p)\in\mathcal D(X):
+ d_{\rm BL}(\mu_{K,p}^{\boldsymbol m},N(0,I_L))>\varepsilon\}}
+ {|\mathcal D(X)|}\longrightarrow0,
+\]
+where $d_{\rm BL}$ denotes the bounded-Lipschitz metric on probability measures.
+\end{theorem}
+
+These statements transfer to the full annihilator twisted-Jacobi trace through
+the exact identity from the arithmetic core,
+\[
+ X_{K,p}(mq)=\frac K{\sqrt{K-1}}\operatorname{Tr}M_{H^\perp}(2mq).
+\]
+They concern parameter multiples, not $\operatorname{Tr}(M_{H^\perp}(q)^m)$.
+They imply no microscopic BGS or desymmetrized spectral universality theorem.
+
+\subsection{Weighted relations and their resultant budget}
+Fix a nonempty word $\boldsymbol w=(w_1,\ldots,w_r)$ of positive integers,
+and set $W=\sum_iw_i$. A tuple $\boldsymbol a\in(\mathbf F_K^*)^r$ is
+balanced when
+\[
+ \sum_{i:a_i=b}w_i=\sum_{i:a_i=-b}w_i\qquad(1\le b\le d).
+\]
+Write $B_{K,\boldsymbol w}$ for its balanced count. Since
+$c(\zeta^a)=-i\cot(\pi a/K)$, Chowla's independence theorem says that
+$\sum_iw_ic(\zeta^{a_i})=0$ holds exactly for balanced tuples.
+Wang's \emph{On a theorem of S.~Chowla}, J.~Number Theory 15 (1982), 1--4,
+Theorem A, states precisely this prime-order independence input.
+
+Let $Z_{K,\boldsymbol w}(p)$ count all ordered tuples satisfying
+$\sum_iw_ic(h^{a_i})=0$ in $\Fp$, where $h$ generates $H$, and put
+$\Delta_{K,\boldsymbol w}(p)=Z_{K,\boldsymbol w}(p)-B_{K,\boldsymbol w}\ge0$.
+The inequality follows because every balanced relation survives reduction.
+For representatives $1\le a_i<K$, use the integer polynomial
+\[
+ F_{\boldsymbol a,\boldsymbol w}(T)
+ =\sum_{i=1}^r w_i(T^{a_i}+1)\prod_{j\ne i}(T^{a_j}-1).
+\]
+For a nonbalanced tuple, its resultant $R=\Res(\Phi_K,F)$ satisfies
+\begin{equation}
+ R\ne0,\qquad |R|\le(W2^r)^n,\qquad K^{r-1}\mid R.
+ \label{eq:cayley-allorder-norm}
+\end{equation}
+Indeed $\|F\|_1\le W2^r$, and all $n$ conjugates of $F(\zeta)$ have this
+modulus bound. Each summand of $F$ is divisible by $(T-1)^{r-1}$, so
+multiplicativity of the resultant and $\Res(\Phi_K,T-1)=K$ prove divisibility.
+
+Simultaneous scaling of the exponents by $\mathbf F_K^*$ acts freely,
+preserves balance, and gives $(n^r-B_{K,\boldsymbol w})/n$ nonbalanced orbits.
+Choose one representative with $a_1=1$ from each orbit.
+At a split prime $p$, the $n$ roots of $\Phi_K$ lift to $\mathbf Z_p$.
+Every colliding member of the orbit contributes a factor divisible by $p$
+to the product formula for its representative's resultant. Hence its number
+of colliding members is at most $v_p(R)$.
+Since $p\ne K$, removing the factor $K^{r-1}$ and summing yields
+\begin{proposition}[All-order weighted budget]
+For $r\ge1$,
+\begin{equation}
+ \sum_{\substack{p\ {\rm prime}\\p\equiv1\pmod K}}
+ \Delta_{K,\boldsymbol w}(p)\log p
+ \le\frac{n^r-B_{K,\boldsymbol w}}n
+ \left[n\log(W2^r)-(r-1)\log K\right]
+ =O_{\boldsymbol w}(K^r).
+ \label{eq:cayley-allorder-budget}
+\end{equation}
+Also $p>(W2^r)^n$ implies $\Delta_{K,\boldsymbol w}(p)=0$.
+\end{proposition}
+The zeroth moment equals one and is not included in this resultant argument.
+For the scalar fourth moment, the earlier specialized coefficient $12$
+is sharper; the present gain is access to every fixed weighted order.
+
+\subsection{Balanced moments and the Gaussian comparison}
+For the scalar word of length $2s$, write $B_{K,2s}$. Counting equal positive
+and negative multiplicities gives
+\[
+ B_{K,2s}=(2s)![t^s]\left(\sum_{j\ge0}\frac{t^j}{(j!)^2}\right)^d,
+ \qquad B_{K,2s+1}=0.
+\]
+Thus $B_{K,2}=n$, $B_{K,4}=3n(n-1)$, and
+$B_{K,6}=15n^3-45n^2+40n$. The terms with $s$ different antipodal
+coordinates give $(2s)!\binom ds$; the others are $O_s(d^{s-1})$.
+Consequently $B_{K,2s}/n^s=(2s-1)!!+O_s(n^{-1})$.
+
+Additive orthogonality gives the exact mixed-moment identity
+\begin{equation}
+ \frac1{p-1}\sum_{q\ne0}\prod_{i=1}^rX_{K,p}(w_iq)
+ =\frac{p(B_{K,\boldsymbol w}+\Delta_{K,\boldsymbol w}(p))-n^r}
+ {(p-1)n^{r/2}}.
+ \label{eq:cayley-allorder-moment}
+\end{equation}
+The subtraction removes $q=0$; in particular the exact mean is
+$-\sqrt n/(p-1)$ and the second moment is $(p-n)/(p-1)$.
+
+For independent uniform phases $\Theta_1,\ldots,\Theta_d$ on $[0,2\pi]$, put
+\[
+ Y_{K,j}=n^{-1/2}\sum_{b=1}^d2\cos(m_j\Theta_b).
+\]
+Expansion and phase integration show that their mixed moment for a word
+$\boldsymbol w$ is exactly $B_{K,\boldsymbol w}/n^{r/2}$.
+The vectors $(\sqrt2\cos(m_j\Theta_b))_{j=1}^L$ are bounded, independent
+over $b$, have mean zero and covariance $I_L$. In a fixed mixed-moment
+expansion, singleton blocks vanish. Pair partitions supply Wick's formula;
+all other partitions contribute $O_{\boldsymbol w}(d^{-1/2})$ or less.
+Their moments therefore tend to those of $N(0,I_L)$.
+Relations among the multipliers only affect lower-order terms:
+$B_{K,(1,1,2)}=n$ gives normalized mixed third moment $n^{-1/2}$.
+
+For a fixed word, the difference between
+\eqref{eq:cayley-allorder-moment} and its independent-phase moment is at most
+\[
+ \frac p{p-1}\frac{\Delta_{K,\boldsymbol w}(p)}{n^{r/2}}
+ +\frac{2n^{r/2}}{p-1}.
+\]
+Under $K=o(\log p)$, the excess eventually vanishes for each fixed word,
+by \eqref{eq:cayley-allorder-norm}. The remaining error tends to zero.
+Gaussian moment determinacy, or the scalar moment argument for every linear
+combination, proves the pointwise theorem.
+
+\subsection{The density denominator and the law-level limit}
+Bombieri--Vinogradov at $X$ and $X/2$ gives
+\[
+ |\mathcal D(X)|=
+ (\operatorname{Li}(X)-\operatorname{Li}(X/2))
+ \sum_{\substack{Q/2<K\le Q\\K\ {\rm prime}}}\frac1{K-1}
+ +O_A(X/(\log X)^A).
+\]
+Its modulus range contains $Q=X^{o(1)}$ eventually. PNT and partial summation
+give the reciprocal sum $(\log2+o(1))/\log Q$. Therefore
+\[
+ |\mathcal D(X)|\sim\frac{\log2}{2}\frac X{\log X\log Q}.
+\]
+A fixed $A=3$ already makes the relative error tend to zero, even for
+arbitrarily slowly growing $Q$. No individual varying-modulus PNT is used.
+
+By \eqref{eq:cayley-allorder-budget} and $\log p\ge\log(X/2)$,
+\[
+ \sum_{(K,p)\in\mathcal D(X)}
+ \frac{\Delta_{K,\boldsymbol w}(p)}{(K-1)^{r/2}}
+ \ll_{\boldsymbol w}
+ \frac1{\log X}\sum_{\substack{Q/2<K\le Q\\K\ {\rm prime}}}K^{r/2}
+ \ll_{\boldsymbol w}\frac{Q^{r/2+1}}{\log X\log Q}.
+\]
+After division by the design count, the average normalized excess is
+$O_{\boldsymbol w}(Q^{r/2+1}/X)=o(1)$. Markov's inequality proves convergence
+in probability of every mixed moment to its Gaussian value.
+
+For completeness, this implies convergence of the random empirical laws.
+From any sequence, extract a subsequence on which the first $j$ moments
+are simultaneously accurate with failure probability at most $2^{-j}$.
+On a product coupling, Borel--Cantelli gives almost sure convergence of all
+mixed moments along this subsequence. Second moments give tightness, higher
+even moments give uniform integrability of lower polynomials, and Gaussian
+moment determinacy identifies every limit. Thus the bounded-Lipschitz
+distance tends to zero almost surely along a further subsequence, proving
+convergence in probability as claimed.
+
+At a fixed scale $Q=X^\theta$, the same calculation proves only the
+order-$r$ moment conclusion when
+$0<\theta<\min(1/2,2/(r+2))$. The allowed thresholds tend to zero with $r$;
+this argument does not give a fixed-polynomial-scale CLT.
+
+\subsection{A finite obstruction to the fourth-moment shortcut}
+Exact integer convolution for $(K,p)=(11,199)$ gives
+\[
+ (Z_3,B_3)=(6,0),\qquad (Z_4,B_4)=(270,270),\qquad
+ (Z_6,B_6)=(12250,10900).
+\]
+Thus the exact fourth-order baseline does not force the higher-order
+classification. The all-order budgets are needed.
+The maintained verifier checks 32 finite word/order designs, representing
+6440 ordered tuples and 1242 scaling orbits, with 13293 orbit-valuation
+checks. These are implementation regressions, not proofs of the external
+arithmetic inputs. The full statements, proof details, source locators,
+and limits of the BGS interpretation are in
+\path{mathematics/cayley_trace_gaussian_limit.md}.

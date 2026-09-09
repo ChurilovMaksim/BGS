@@ -210,6 +210,11 @@ relations.
 This is stronger than an `O(K^2)` bound on this density-one subfamily: the
 entire non-forced collision excess vanishes.
 
+This assertion concerns only fourth-order collisions. For example `(K,p)=(11,199)`
+has this exact fourth-order baseline but additional third- and sixth-order
+relations. The all-order continuation is proved separately in
+[`cayley_trace_gaussian_limit.md`](cayley_trace_gaussian_limit.md).
+
 ## 4. Exact Jacobi-trace fourth moment on the good subfamily
 
 The maintained trace identity gives, for `q!=0`,

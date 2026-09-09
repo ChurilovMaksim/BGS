@@ -44,6 +44,10 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
+| all-order weighted Cayley collision budget `sum_p Delta_w(p) log p = O_w(K^r)` for prime `K`, split primes `p`, and a fixed positive integer word of length `r>=1` | **EXACT + EXTERNAL-THEOREM** | `mathematics/cayley_trace_gaussian_limit.md`, Proposition 3; Chowla input |
+| normalized full Cayley--Jacobi trace: joint independent Gaussian limit at fixed distinct positive parameter multipliers for `K->infinity`, `K=o(log p)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 1; not traces of matrix powers |
+| same joint empirical laws converge weakly in probability over dyadic split designs with `Q->infinity`, `log Q=o(log X)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 2; Bombieri--Vinogradov/PNT; does not cover fixed `Q=X^theta` |
+| `(K,p)=(11,199)` has `Z4=B4=270` but `Z3=6`, `Z6-B6=1350` | **FINITE-CERTIFICATE** | exact integer convolution in `computations/verification/cayley_higher_moments.py` |
 | pair-key bijection; diagonal multiplicity `p-2`; exact constrained count `(K-1)(K-2)` | **EXACT + FINITE-CERTIFICATE** | `mathematics/fourth_moment_reduction.md`; Python/C++/Lean |
 | exact `|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | **EXACT + FINITE-CERTIFICATE** | fourth-moment note + independent checks |
 | corrected `B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}` and Fourier mean/variance | **EXACT + FINITE-REGRESSION** | `fourth_moment_reduction.md` |

@@ -1,0 +1,1029 @@
+{
+  "schema": 1,
+  "status": "FINITE-REGRESSION",
+  "base_commit": "d6086cfa9ce9be37aa3d936875e8ec1da3edf811",
+  "source_sha256": "d4294ea721e58013342d4e404fe4dd28c071332d37f9a32397d29ec796225bd3",
+  "associated_proof_sha256": {
+    "mathematics/cayley_trace_gaussian_limit.md": "892d25c5408d6db64fe605ac85dbc6ed338f561803e62841fd517596f61e04f2",
+    "manuscript/unified_sections/cayley_trace_gaussian.tex": "7287730335ffdbce7b7da8f85d9b27679c2d750cc9f584af3cec3664233b36a0"
+  },
+  "scope": "All ordered tuples represented by every normalized scaling orbit in each listed (K,word); all split primes up to 257 for valuation tests. Not an asymptotic proof or enumeration of all exceptional primes.",
+  "cases": [
+    {
+      "K": 3,
+      "weights": [
+        1
+      ],
+      "ordered_tuples": 2,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 25
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1
+      ],
+      "ordered_tuples": 4,
+      "normalized_orbits": 2,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 2,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 25
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 8,
+      "normalized_orbits": 4,
+      "nonzero_resultants": 4,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 100
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 16,
+      "normalized_orbits": 8,
+      "nonzero_resultants": 5,
+      "balanced_tuples": 6,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 125
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 32,
+      "normalized_orbits": 16,
+      "nonzero_resultants": 16,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 400
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 64,
+      "normalized_orbits": 32,
+      "nonzero_resultants": 22,
+      "balanced_tuples": 20,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 550
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 128,
+      "normalized_orbits": 64,
+      "nonzero_resultants": 64,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 1600
+    },
+    {
+      "K": 5,
+      "weights": [
+        1
+      ],
+      "ordered_tuples": 4,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 13
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1
+      ],
+      "ordered_tuples": 16,
+      "normalized_orbits": 4,
+      "nonzero_resultants": 3,
+      "balanced_tuples": 4,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 39
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 64,
+      "normalized_orbits": 16,
+      "nonzero_resultants": 16,
+      "balanced_tuples": 0,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 208
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 256,
+      "normalized_orbits": 64,
+      "nonzero_resultants": 55,
+      "balanced_tuples": 36,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 715
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 1024,
+      "normalized_orbits": 256,
+      "nonzero_resultants": 256,
+      "balanced_tuples": 0,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 3328
+    },
+    {
+      "K": 7,
+      "weights": [
+        1
+      ],
+      "ordered_tuples": 6,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 8
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        1
+      ],
+      "ordered_tuples": 36,
+      "normalized_orbits": 6,
+      "nonzero_resultants": 5,
+      "balanced_tuples": 6,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 40
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 216,
+      "normalized_orbits": 36,
+      "nonzero_resultants": 36,
+      "balanced_tuples": 0,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 288
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 1296,
+      "normalized_orbits": 216,
+      "nonzero_resultants": 201,
+      "balanced_tuples": 90,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 1608
+    },
+    {
+      "K": 11,
+      "weights": [
+        1
+      ],
+      "ordered_tuples": 10,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        23,
+        67,
+        89,
+        199
+      ],
+      "orbit_valuation_checks": 4
+    },
+    {
+      "K": 11,
+      "weights": [
+        1,
+        1
+      ],
+      "ordered_tuples": 100,
+      "normalized_orbits": 10,
+      "nonzero_resultants": 9,
+      "balanced_tuples": 10,
+      "split_primes": [
+        23,
+        67,
+        89,
+        199
+      ],
+      "orbit_valuation_checks": 36
+    },
+    {
+      "K": 11,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "ordered_tuples": 1000,
+      "normalized_orbits": 100,
+      "nonzero_resultants": 100,
+      "balanced_tuples": 0,
+      "split_primes": [
+        23,
+        67,
+        89,
+        199
+      ],
+      "orbit_valuation_checks": 400
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        2
+      ],
+      "ordered_tuples": 8,
+      "normalized_orbits": 4,
+      "nonzero_resultants": 3,
+      "balanced_tuples": 2,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 75
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "ordered_tuples": 8,
+      "normalized_orbits": 4,
+      "nonzero_resultants": 3,
+      "balanced_tuples": 2,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 75
+    },
+    {
+      "K": 3,
+      "weights": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ordered_tuples": 16,
+      "normalized_orbits": 8,
+      "nonzero_resultants": 6,
+      "balanced_tuples": 4,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 150
+    },
+    {
+      "K": 3,
+      "weights": [
+        3
+      ],
+      "ordered_tuples": 2,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 25
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1,
+        2
+      ],
+      "ordered_tuples": 64,
+      "normalized_orbits": 16,
+      "nonzero_resultants": 15,
+      "balanced_tuples": 4,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 195
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "ordered_tuples": 64,
+      "normalized_orbits": 16,
+      "nonzero_resultants": 15,
+      "balanced_tuples": 4,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 195
+    },
+    {
+      "K": 5,
+      "weights": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ordered_tuples": 256,
+      "normalized_orbits": 64,
+      "nonzero_resultants": 60,
+      "balanced_tuples": 16,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 780
+    },
+    {
+      "K": 5,
+      "weights": [
+        3
+      ],
+      "ordered_tuples": 4,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        11,
+        31,
+        41,
+        61,
+        71,
+        101,
+        131,
+        151,
+        181,
+        191,
+        211,
+        241,
+        251
+      ],
+      "orbit_valuation_checks": 13
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        1,
+        2
+      ],
+      "ordered_tuples": 216,
+      "normalized_orbits": 36,
+      "nonzero_resultants": 35,
+      "balanced_tuples": 6,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 280
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "ordered_tuples": 216,
+      "normalized_orbits": 36,
+      "nonzero_resultants": 35,
+      "balanced_tuples": 6,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 280
+    },
+    {
+      "K": 7,
+      "weights": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ordered_tuples": 1296,
+      "normalized_orbits": 216,
+      "nonzero_resultants": 210,
+      "balanced_tuples": 36,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 1680
+    },
+    {
+      "K": 7,
+      "weights": [
+        3
+      ],
+      "ordered_tuples": 6,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        29,
+        43,
+        71,
+        113,
+        127,
+        197,
+        211,
+        239
+      ],
+      "orbit_valuation_checks": 8
+    },
+    {
+      "K": 3,
+      "weights": [
+        7
+      ],
+      "ordered_tuples": 2,
+      "normalized_orbits": 1,
+      "nonzero_resultants": 1,
+      "balanced_tuples": 0,
+      "split_primes": [
+        7,
+        13,
+        19,
+        31,
+        37,
+        43,
+        61,
+        67,
+        73,
+        79,
+        97,
+        103,
+        109,
+        127,
+        139,
+        151,
+        157,
+        163,
+        181,
+        193,
+        199,
+        211,
+        223,
+        229,
+        241
+      ],
+      "orbit_valuation_checks": 25
+    }
+  ],
+  "counterexamples": [
+    {
+      "K": 11,
+      "p": 199,
+      "orders": [
+        3,
+        4,
+        6
+      ],
+      "zero_counts": [
+        6,
+        270,
+        12250
+      ],
+      "balanced_counts": [
+        0,
+        270,
+        10900
+      ]
+    },
+    {
+      "K": 13,
+      "p": 521,
+      "orders": [
+        3,
+        4,
+        6
+      ],
+      "zero_counts": [
+        6,
+        396,
+        22650
+      ],
+      "balanced_counts": [
+        0,
+        396,
+        19920
+      ]
+    }
+  ],
+  "totals": {
+    "ordered_tuples": 6440,
+    "normalized_orbits": 1242,
+    "nonzero_resultants": 1183,
+    "orbit_valuation_checks": 13293
+  }
+}

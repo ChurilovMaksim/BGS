@@ -21,6 +21,16 @@ Read `mathematics/results.md` together with `mathematics/results_20260907_addend
 
 The September 7 addendum includes the audited unrestricted finite-Fourier theorem, the global Corvaja--Zannier Cayley subgroup-curve specialization, and the rare-phase / fixed-noisy-Gaussian / pure-loss information-limit results.
 
+The September 9 result is a Gaussian limit for the normalized **full
+Cayley--Jacobi trace**, jointly at finitely many distinct positive integer
+multiples of its additive parameter. It holds along every split-prime sequence
+with prime subgroup order `K -> infinity`, `K=o(log p)`, and in probability over
+dyadic split designs with `K=X^(o(1)) -> infinity`. The proof uses weighted
+cyclotomic resultant budgets at every fixed order. See
+[`mathematics/cayley_trace_gaussian_limit.md`](mathematics/cayley_trace_gaussian_limit.md).
+Parameter multiples are not powers of one quantum propagator; microscopic
+BGS remains open.
+
 ## Canonical publication
 
 There is one maintained publication entry point:
@@ -34,15 +44,26 @@ python computations/maintenance/build_unified_manuscript.py --output-dir build/u
 ```
 
 The split `.tex` files under `manuscript/` are source segments of that one
-article. The September 8 revision builds to 153 pages. Its analytic transfer
+article. The September 8 revision built to 153 pages. Its analytic transfer
 estimate preserves the full adapted exponential rate, and its deterministic
 correlation theorem removes the band-limit under explicit positivity and
 all-bandwidth hypotheses. The scoped proof review, limitations and actual
 execution record are in `record/referee_audit_20260908.md`.
+The September 9 revision adds the trace-limit proof; its specific review
+and verification scope is recorded in `record/cayley_trace_review_20260909.md`.
 
 An exact illustration of why a fixed Fourier cap is insufficient is in
 `assets/figures/correlation_bandwidth.svg`; its producer is
 `computations/analysis/correlation_bandwidth_figure.py`.
+
+The complete finite trace laws for three arithmetic designs are illustrated in
+`assets/figures/cayley_trace_gaussian.svg`. This floating-point illustration is
+separate from the exact all-order verifier:
+
+```sh
+python computations/verification/cayley_higher_moments.py
+python computations/analysis/cayley_trace_limit_figure.py
+```
 
 ## Verification
 

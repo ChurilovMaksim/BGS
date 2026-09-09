@@ -48,6 +48,13 @@ are linearly independent over `Q`. This is the exact external input used in
 more general moduli and derivatives of cotangent. The DOI/title metadata for
 both papers was independently resolved during the 2026-09-04 audit.
 
+On September 9, Wang's Theorem A was checked directly in the
+[author-posted article](https://www.researchgate.net/profile/Kai-Wang-227/publication/256257948_On_a_theorem_of_S_Chowla/links/5c423968a6fdccd6b5b7dd15/On-a-theorem-of-S-Chowla.pdf).
+The same independence input classifies weighted Cayley relations of every
+fixed length in `mathematics/cayley_trace_gaussian_limit.md`. That note proves
+a full-trace Gaussian limit in its stated sparse regimes; no priority claim
+is based on this source check.
+
 ## Fibonacci/Lucas divisibility and resultant structure
 
 14. R. D. Carmichael, **On the Numerical Factors of the Arithmetic Forms α^n ± β^n**, *Annals of Mathematics* **15** (1913--1914). The original article was published in two consecutive JSTOR records, pp. 30--48 (DOI `10.2307/1967797`) and pp. 49--70 (DOI `10.2307/1967798`); later literature commonly cites the combined pp. 30--70 work.
