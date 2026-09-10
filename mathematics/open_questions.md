@@ -52,6 +52,14 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The September 10 harmonic return theorem now does concern powers of the
+actual kicked propagator: `pell_harmonic_returns.md` proves its global
+return law, including a free unitary Brownian endpoint. Its multiplicity
+$m$ is fixed and its times $mK$ are logarithmic in dimension.
+Extending the diagram phase estimates and summability uniformly to
+$m\asymp D/K$, and obtaining the required joint-trace comparison, are
+unresolved. A marginal free probability law supplies neither estimate.
+
 The September 9 all-order budget now proves a Gaussian distribution theorem
 for the full Cayley--Jacobi trace in logarithmic pointwise and subpolynomial
 dyadic density regimes; see `cayley_trace_gaussian_limit.md`.
@@ -95,10 +103,13 @@ full point-process or spacing law require separately stated hypotheses.
 
 ## D. Positive microscopic BGS universality for a natural fixed map
 
-The harmonic-transition theorem now realizes circle-graphon global laws,
+The harmonic-transition theorem realizes circle-graphon global laws,
 including a free semicircular endpoint, in the same fixed Pell cat map.
 It varies and samples the observable frequency up to $\sqrt N$. It does not
-change the propagator's arithmetic spectrum or settle this obligation.
+change the unperturbed propagator's arithmetic spectrum.
+The harmonic return theorem subsequently perturbs the propagator and
+identifies its global recurrence law, but the quantum kick vanishes,
+harmonics are sampled, and microscopic universality remains unproved.
 
 The project contains several strong negative and structural lessons:
 

@@ -19,7 +19,21 @@ A positive generic microscopic BGS/GOE/COE universality theorem is **not** claim
 
 Read `mathematics/results.md` together with `mathematics/results_20260907_addendum.md`. The current genuinely open obligations are in `mathematics/open_questions.md`.
 
-The latest result connects Gaussian and semicircular **global observable
+The latest result proves a harmonic-scale family of **global laws for the
+actual kicked return propagator**. At quantum kick
+$\epsilon=\tau/\sqrt{2K}$, every fixed normalized return trace
+$D^{-1}\operatorname{Tr}_-U_{\epsilon,a}^{mK}$ converges in $L^2$ over the
+sampled unit harmonics. The endpoint laws of $U_{\epsilon,a}^K$ are wrapped
+normal and free unitary Brownian, with an absolutely convergent diagram
+series between them and a closed second-return formula for $\beta\ge1/6$.
+An all-order Bessel bound controls nonzero arithmetic aggregate relations
+by $O_{m,\tau}(K^{-1})$. See
+[`mathematics/pell_harmonic_returns.md`](mathematics/pell_harmonic_returns.md)
+and [the proof and execution review](record/pell_harmonic_returns_review_20260910.md).
+This controls fixed multiples of the logarithmic arithmetic period;
+the Heisenberg-scale BGS obligation remains open.
+
+The preceding result connects Gaussian and semicircular **global observable
 laws in the same fixed Pell cat map**. Sample unit harmonics up to
 $L=N^{\beta+o(1)}$, $0\le\beta\le1/2$. Every fixed spectral moment converges
 in probability, uniformly over the odd eigenspaces, to a circle-graphon
@@ -75,6 +89,10 @@ and initially built to 159 pages. Its specific review
 and verification scope is recorded in `record/cayley_trace_review_20260909.md`.
 The subsequent harmonic-transition revision builds to 165 pages, with the
 new proof in Section 24, pages 40--46.
+The September 10 return-law revision builds to 169 pages. Its proof is
+Section 25, pages 46--50. The second-return formulas are illustrated in
+`assets/figures/pell_harmonic_returns.svg`; these are analytic limit curves,
+not finite-spectrum data.
 
 The harmonic transition is illustrated in
 `assets/figures/pell_harmonic_transition.svg`. Its points are numerical

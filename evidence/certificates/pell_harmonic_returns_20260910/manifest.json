@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "claim_id": "PELL_HARMONIC_RETURN_FINITE",
+  "repository": {
+    "commit": "50ed425c62d6b63f80cf02032ac67fbd9014121c",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "computations/verification/pell_harmonic_returns.py",
+    "--output",
+    "evidence/certificates/pell_harmonic_returns_20260910/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      }
+    ],
+    "hardware": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact ordered cycle-pair Weyl phases, noncrossing counts, cyclic relation norm bound, rational lifting cutoffs, circle clique geometry; independent finite Bessel-word trace versus unitary matrices",
+    "coefficient_domain": "Z and Q exact; complex128 finite matrix and Bessel-series controls",
+    "conventions": "Centered Weyl, odd normalized trace, physical harmonic parameter a^2 q0; cycle-major product order; crossing edges oriented by first endpoint",
+    "inputs": [
+      "computations/verification/pell_harmonic_returns.py",
+      "computations/verification/pell_harmonic_transition.py",
+      "mathematics/pell_harmonic_returns.md",
+      "mathematics/pell_harmonic_transition.md",
+      "manuscript/unified_sections/pell_harmonic_returns.tex"
+    ],
+    "bounds": {
+      "diagram_m": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "diagram_ell": "0..min(m,4)",
+      "word_K": 11,
+      "word_harmonic": 2,
+      "word_labels": "j^2 mod 11",
+      "word_orientations": "all",
+      "recurrence_m_ell_max": 12,
+      "cyclic_K": [
+        3,
+        5,
+        7
+      ],
+      "cyclic_q_entries": [
+        -1,
+        0,
+        1
+      ],
+      "lifting_K": [
+        19,
+        31,
+        61,
+        127
+      ],
+      "circle_sizes": [
+        7,
+        11,
+        17
+      ],
+      "circle_subset_sizes": [
+        2,
+        3,
+        4
+      ],
+      "matrix_designs": [
+        [
+          3,
+          1,
+          7
+        ],
+        [
+          3,
+          2,
+          7
+        ],
+        [
+          5,
+          1,
+          5
+        ]
+      ],
+      "matrix_harmonics": [
+        1,
+        2
+      ],
+      "epsilon": 0.23
+    },
+    "non_claims": [
+      "No asymptotic phase proof",
+      "No microscopic BGS",
+      "No novelty or complete Lean validation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-10T05:15:20.269607+00:00",
+    "runtime_seconds": 1.971301,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/pell_harmonic_returns.py",
+    "computations/verification/pell_harmonic_transition.py",
+    "mathematics/pell_harmonic_returns.md",
+    "mathematics/pell_harmonic_transition.md",
+    "manuscript/unified_sections/pell_harmonic_returns.tex"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/pell_harmonic_returns.py",
+      "sha256": "592c74f6b650508380fd5409750c77a5e7a019f1b4a8497e209fc158cf44d767",
+      "sha256_after": "592c74f6b650508380fd5409750c77a5e7a019f1b4a8497e209fc158cf44d767"
+    },
+    {
+      "path": "computations/verification/pell_harmonic_transition.py",
+      "sha256": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85",
+      "sha256_after": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85"
+    },
+    {
+      "path": "mathematics/pell_harmonic_returns.md",
+      "sha256": "bcf1f57b2af13e4901ae9b8199d63c4fe3cd7aa17593191c4feb5c2acd03539f",
+      "sha256_after": "bcf1f57b2af13e4901ae9b8199d63c4fe3cd7aa17593191c4feb5c2acd03539f"
+    },
+    {
+      "path": "mathematics/pell_harmonic_transition.md",
+      "sha256": "97504d7730110aa7e2131d3157d72d75ff7c2d4fd2e09fc00de38d3e68bfc05c",
+      "sha256_after": "97504d7730110aa7e2131d3157d72d75ff7c2d4fd2e09fc00de38d3e68bfc05c"
+    },
+    {
+      "path": "manuscript/unified_sections/pell_harmonic_returns.tex",
+      "sha256": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec",
+      "sha256_after": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec"
+    }
+  ],
+  "output_directory": "evidence/certificates/pell_harmonic_returns_20260910",
+  "declared_results": [
+    "evidence/certificates/pell_harmonic_returns_20260910/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/certificates/pell_harmonic_returns_20260910/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/certificates/pell_harmonic_returns_20260910/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/certificates/pell_harmonic_returns_20260910/result.json",
+      "sha256": "ec7e2e339bafa56345bf2539bf3e99c8115ba37ba82b943b7c2830c472254e51",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,5 +1,24 @@
 # Current results and exact scope
 
+## Harmonic-scale laws of the actual kicked return propagator
+
+**EXACT (project proof; independently audited by a second agent).** In the
+Pell harmonic window described below, set $\epsilon=\tau/\sqrt{2K}$ and
+$U_{\epsilon,a}=e^{i\epsilon B_a}U_0$. For every fixed $m,\tau$, the normalized
+odd trace of $U_{\epsilon,a}^{mK}$ converges in $L^2$ over harmonics to the
+absolutely convergent cycle-pair diagram series in `pell_harmonic_returns.md`.
+It determines a weakly continuous family of probability measures on the
+circle. At $\beta=0$ its moments are $e^{-m^2\tau^2/2}$; at $\beta=1/2$
+they are $e^{-m\tau^2/2}L_{m-1}^{(1)}(m\tau^2)/m$.
+The second moment equals
+$e^{-t}(1-te^{-(1-2\beta)t/2})$ for $t=\tau^2$ and $\beta\ge1/6$.
+
+The key additional estimate is uniform control of nonzero aggregate
+relations in the full Fourier--Bessel expansion, using the integer image
+of $S^2-6S+I$ and its $\ell^1$ lower bound. The endpoint probability laws
+are known. Arithmetic priority, external referee assessment and BGS are
+not established. Fixed $mK\asymp\log N$ is the precise time scope.
+
 ## Harmonic-scale transition in the fixed Pell cat map
 
 **EXACT (project proof).** For prime Pell periods $K\to\infty$, sample

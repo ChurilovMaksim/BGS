@@ -44,6 +44,10 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
+| actual kicked Pell propagator at $\epsilon=\tau/\sqrt{2K}$: all fixed return traces converge in $L^2$ over harmonic windows to the cycle-pair diagram series | **EXACT** | `mathematics/pell_harmonic_returns.md`, Theorem 1; fixed $m,\tau$, full odd space, global law |
+| return-law endpoints are wrapped normal and free unitary Brownian; second-return closed formula for $\beta\ge1/6$ | **EXACT + EXTERNAL-THEOREM** | same note (R4)--(R5); moments derived internally, conventional free Brownian identification uses Demni (1) |
+| full nonzero lifted-aggregate Bessel weight is $O_{m,\tau}(K^{-1})$ | **EXACT** | same note Lemma 2, cyclic integer image and $\ell^1$ dominance; no growing-$m$ phase theorem |
+| finite return-diagram, cyclic-lattice, circle-clique and independent matrix controls | **FINITE-CERTIFICATE + FINITE-REGRESSION** | `evidence/certificates/pell_harmonic_returns_20260910/`; exact checks separated from floating approximation |
 | fixed Pell cat map, unit harmonics up to $L=N^{\beta+o(1)}\le\sqrt N$: all fixed compressed-observable moments converge in $L^2$ to circle-graphon moments, uniformly over odd eigenspaces | **EXACT** | `mathematics/pell_harmonic_transition.md`, Theorem 1; sampled harmonics, global observable law only |
 | harmonic law has fourth moment $3-2\beta$, explicit sixth moment, weak continuity, and unbounded support for $\beta<1/2$ with semicircle endpoint | **EXACT** | same note, (H6), (H18)--(H19), Corollary 4; no finite-size edge rigidity |
 | harmonic weighted ordered quantum moments have graphon limits; complementary normalized half-window commutator squared norm tends to $8\beta(1-\beta)$ | **EXACT** | same note, (H20)--(H21); tracial convergence, no measurement path or BGS claim |
