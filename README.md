@@ -19,7 +19,21 @@ A positive generic microscopic BGS/GOE/COE universality theorem is **not** claim
 
 Read `mathematics/results.md` together with `mathematics/results_20260907_addendum.md`. The current genuinely open obligations are in `mathematics/open_questions.md`.
 
-The latest result proves a harmonic-scale family of **global laws for the
+The September 11–12 working proofs give **Gevrey return laws for every
+fixed hyperbolic matrix in SL(2,Z)** along explicit arithmetic dimension
+subsequence. They include every fixed finite Gevrey order, covering
+nonanalytic smooth perturbations with stretched-exponential Fourier
+decay. For period-averaged observables a square-root logarithmic
+Fourier weight suffices for a joint Gaussian limit; fixed continuous
+examples show sharpness, even after subtracting the quantum mean.
+See [the general theorem](mathematics/general_cat_return_laws.md),
+[the analytic phase-space proof](mathematics/phase_space_return_gas.md),
+and [the smooth-symbol and second-order analysis](mathematics/periodic_point_trace_comparison.md).
+These project derivations have limited internal review and reproducible
+finite checks. External priority is unverified. They are not yet in the
+canonical PDF and do not close the Heisenberg-scale BGS obligation.
+
+The September 10 result proves a harmonic-scale family of **global laws for the
 actual kicked return propagator**. At quantum kick
 $\epsilon=\tau/\sqrt{2K}$, every fixed normalized return trace
 $D^{-1}\operatorname{Tr}_-U_{\epsilon,a}^{mK}$ converges in $L^2$ over the

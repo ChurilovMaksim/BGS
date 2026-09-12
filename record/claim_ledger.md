@@ -414,3 +414,107 @@ The one-mode numerical implementation has narrower dimensional scope than
 the analytic theorem. No established world priority or BGS universality is
 claimed. The source-level comparison with published heterodyne bounds is
 recorded narrowly in `literature/coherent_minimax_context.md`.
+
+
+## Arithmetic returns: smooth symbols and periodic points (2026-09-11)
+
+Working-proof base: 9ed93cd1bc5e3362c1dbf520f0f391478dfb6969.
+The sources below are working mathematical notes; this entry does not
+claim their incorporation into the canonical manuscript or PDF.
+EXACT retains its project-derivation meaning. Independent review,
+priority verification, and Lean formalization of these results are open.
+
+| Claim | Status | Proof and boundary |
+|---|---|---|
+| Fixed-harmonic return suppression, uniformly in every replica count with r abs(epsilon) below a fixed radius; explicit quartic replica correction | EXACT + FINITE-REGRESSION + NUMERICAL | mathematics/fixed_harmonic_return_gas.md; one arithmetic sequence, fixed harmonic, vanishing classical kick |
+| Entire-lattice weighted resonance bound; Gaussian return estimate for analytic position symbols | EXACT + FINITE-REGRESSION | mathematics/analytic_kick_return_gas.md, Sections 1–4; all Fourier modes and 32 classes included |
+| First Edgeworth correction is the classical third-cumulant rate, uniformly in replicas at epsilon=t/(r sqrt(K)) | EXACT + FINITE-REGRESSION | Same note, Section 6; O(1/K) error for analytic symbols, bounded t |
+| Smooth position symbols with finite order-32 Fourier moment have the same first correction with O(K^(-7/12)) error | EXACT | Same note, Section 7; controlled moving truncation, not the whole large-variance regime |
+| General real smooth symbols on T² admit a one-return comparison with an explicit classical periodic-point average, with O(K^(-q)) error for every q at epsilon=t/sqrt(K) | EXACT + FINITE-REGRESSION + NUMERICAL | mathematics/periodic_point_trace_comparison.md; balanced Weyl quantization; accuracy is in K, not N |
+| Centered-cell coupling to Haar measure; one-return Gaussian law with the full Green–Kubo variance for finite fourth Fourier moment | EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION | Same note, Section 7; Cohen–Conze Theorem 2.18 checked at source; no imported Gaussian convergence rate |
+| Uniform comparison of all integer replicas with error O(K^(-1/2)) for finite fourth Fourier moment | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | Same note, Sections 8–9; epsilon=t/(r sqrt(K)); normalized Hilbert–Schmidt normal form, not operator-norm normal form |
+| Smooth zero variance iff smooth coboundary; first-scale operator return error O(1/N); uniform second-order Gaussian return law | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | Same note, Section 10; second-scale epsilon=±sqrt(t N/(r sqrt(K))); generated variance may vanish |
+| Joint characteristic trace law for any fixed finite family of physical critical return operators | EXACT + NUMERICAL | Same note, Section 11; self-reviewed deduction from normal-form commutator estimates; not Heisenberg-scale joint traces |
+| General analytic phase-space kicks: exponential return suppression and absolute Gaussian approximation O(K^(-1/2)), uniformly when r abs(epsilon) is below a fixed radius | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | mathematics/phase_space_return_gas.md, Sections 1–6; full orbit variance, vector Weyl phases and all 32 classes; vanishing classical strength |
+| Joint Gaussian characteristic traces of period-averaged observables under sum abs(f_hat(v)) sqrt(log(2+norm(v))) < infinity | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION | Same note, Section 7; averaged observables only, including zero variance; full space and even symbols on the odd block |
+| The logarithmic exponent one half is sharp as a class guarantee, including after quantum centering | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | Same note, Sections 8–9; fixed continuous examples for all smaller exponents; centered example has at least 1/25-o(1) escaping mass |
+| Replacing the classical period by rK fails at quadratic order; keeping period K and scaling the kick fails at order 1/K | EXACT + FINITE-REGRESSION | Same note, (P15)–(P16); failures of proposed comparisons, not counterexamples to BGS |
+| Required Heisenberg-scale joint traces and microscopic BGS universality | OPEN | Neither comparison supplies the missing long-time estimate or a fixed nonzero classical perturbation |
+
+The analytic-symbol verifier exhausts 612,864 ordered cubic atom words,
+2,532,760 independently organized unordered multisets, and 5,152,304
+multisets classified by exact rational preimages. The finite sets overlap
+between methods; these are not counts of distinct systems.
+The computation found additional winding aliases and corrected the
+initial cubic prediction. The logarithmic coefficient is explicitly
+per period length in (A14).
+
+The two-dimensional verifier checks 960 rational-preimage cases and
+1,206 integer-word phases, including 603 odd local areas, and compares
+an N=35 physical matrix with all 39,200 classical periodic points.
+Exact algebra and floating diagnostics are reported separately.
+Reproduction commands are in the notes; generated outputs are
+build/analytic-kick-return-gas-precheck.json and
+build/periodic-point-trace-comparison-precheck.json.
+Continuation on the same date closes the formerly missing classical step.
+A direct centered-time coupling transfers the checked Haar CLT; no
+periodic-point theorem is silently imported. Source version and hashes
+are in literature/periodic_return_clt_sources.md.
+The updated verifier additionally exhausts 1,122,112 ordered pair
+representations, including a K=262 case in the theorem's range; checks
+seven exact distance bounds; and separately tests the unitary normal
+form, joint products, and second-order loops on physical N=35 matrices.
+The limited internal analytic review covers the pair multiplicity,
+weighted fourth-moment estimate, and second-order proof. The coupling
+and joint-law extension remain self-reviewed, and none of this is
+external referee acceptance or a completed Lean proof.
+Uniformity in the replica count is at the explicitly scaled amplitude;
+it does not give Heisenberg-time control at a fixed classical strength.
+
+The analytic phase-space continuation removes the position-only
+restriction on the small-amplitude, all-variance return theorem.
+Orbit-representative cohomology removes quadratic finite-component
+resonances; a positive Fourier-atom majorant then starts at degree three.
+The proof keeps the onsite phase and the nontrivial antipodal phase.
+The logarithmic regularity theorem uses an early-return estimate.
+Its centered counterexample retains spectral escape after the actual
+quantum mean is removed. This is a regularity boundary for period
+averages, not a closure of microscopic BGS.
+
+The new verifier passes 320 exact phase identities, 3,000 rational
+endpoint inequalities, 120 finite runs, 1,224 finite atomic exclusions,
+25 early-return cases, both counterexample arithmetic constructions,
+and separately labeled small-matrix diagnostics. Reproduction and
+precise internal review scope are in the phase-space note, Section 10.
+Growing-parameter proofs are not inferred from finite checks.
+
+## General hyperbolic toral automorphisms (2026-09-12)
+
+| Claim | Status | Proof and boundary |
+|---|---|---|
+| For every fixed hyperbolic A in SL(2,Z), an explicit odd-dimensional arithmetic subsequence carries the same analytic return suppression and O(K^(-1/2)) Gaussian approximation | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | mathematics/general_cat_return_laws.md, Theorem 1; constants depend on A,f; all replicas with r abs(epsilon) below the stated fixed radius |
+| The return suppression and approximation extend to every fixed finite Gevrey order, with Fourier weight exp(rho norm(v)^alpha), 0<alpha<=1 | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION | Same note, Section 6; capped Weyl phases give logarithmic particle weights and conditional-field penalties; no uniform alpha-to-zero limit or all-smooth theorem |
+| The weighted logarithmic averaged-observable joint CLT holds for every such A, and exponent one half is sharp even after quantum centering | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION | Same note, Theorems 2–3; counterexample is a fixed continuous symbol for each A; subsequence depends on A |
+| Universal quadratic refinement, composite odd moduli, negative traces, and exact arithmetic class count Delta q_A² | EXACT + LIMITED INTERNAL AUDIT + FINITE-REGRESSION + NUMERICAL | Same note, Sections 2–3; excludes N=1; central character at (N,0) is minus the identity in this convention |
+| Generic microscopic BGS for fixed nonlinear chaotic systems | OPEN | Generality over linear hyperbolic maps and global return laws does not establish Heisenberg-scale joint spectral correlations |
+
+The generalization changes both the arithmetic subsequence and the
+Weyl convention. The invariant refinement v1*v2+v1+v2 modulo two
+works for all SL(2,Z); its negative central sign is retained in the
+counterexample. The latter uses an odd prime other than five dividing
+b5=t^4-3t²+1, followed by prime-square lifting. A fixed positive
+fraction of the centered empirical spectrum then escapes.
+The arithmetic, phase, estimate-transfer, and prime-lifting arguments
+received limited independent internal review. External priority and
+formal verification remain open.
+
+The Gevrey extension uses a further analytic estimate: the bounded
+Weyl phase gives a logarithmic, rather than linear, charge cost.
+A size Ds²L in the tree criterion retains the connected O(Ks⁴)
+remainder. The subadditive alpha quasi-norm of the cyclic Green
+operator supplies the stretched-exponential lattice estimate.
+The general verifier covers 72 matrices, 200 admissible dimension
+cases, 800 exact cyclic preimages, 3,200 exact phase identities,
+28 prime-lifting cases, eight counterexample cases, and 72 exact
+capped-kernel envelope sums. Physical quantization tests at four
+small dimensions are explicitly floating diagnostics.
