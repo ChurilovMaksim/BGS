@@ -25,6 +25,19 @@ theorem invariant_refinement :
         refinement x y := by
   decide
 
+/-- Polarization of the invariant refinement is the symplectic form over F₂.
+This certifies the parity identity used in Weyl multiplication, not the
+operator representation or any limiting theorem. -/
+theorem refinement_polarization :
+    forall x y u v : Bool,
+      add2 (refinement (add2 x u) (add2 y v))
+        (add2 (refinement x y) (refinement u v)) =
+          add2 (x && v) (y && u) := by
+  decide
+
+theorem nontrivial_central_parity : refinement true false = true := by
+  decide
+
 abbrev Mat := (Int × Int) × (Int × Int)
 
 def identity : Mat := ((1,0),(0,1))
@@ -57,6 +70,8 @@ theorem nonsplit_square_control :
     ([1,3,4,9,10,12] : List Int).contains 6 = false := by decide
 
 #print axioms invariant_refinement
+#print axioms refinement_polarization
+#print axioms nontrivial_central_parity
 #print axioms negative_trace_period
 #print axioms mixed_period
 

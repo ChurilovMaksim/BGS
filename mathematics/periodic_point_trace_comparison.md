@@ -17,9 +17,11 @@ tends to zero.
 
 Retain
 $$
+ \begin{gathered}
  A=\begin{pmatrix}3&4\\2&3\end{pmatrix},\quad
  \lambda=3+2\sqrt2,\quad K=2m,\quad m\ge3\ \hbox{odd},\quad N=b_m,
- \quad b_0=0,\ b_1=1,\ b_{j+1}=6b_j-b_{j-1}.
+ \\ b_0=0,\quad b_1=1,\quad b_{j+1}=6b_j-b_{j-1}.
+ \end{gathered}
 $$
 Normalize the metaplectic operator by $U_0^K=I$.
 For integer frequency vectors use the balanced Weyl convention
@@ -893,5 +895,6 @@ The Section 10 audit referenced snapshot
 Subsequent amendments make the integer-replica quantifier explicit and
 add Section 11; that extension is not represented as independently audited.
 The source check documents the external classical CLT separately.
-Generated results remain in the reproducible build output; these working
-proofs have not been integrated into the canonical manuscript or PDF.
+Generated results remain in the reproducible build output. These proofs are
+included in the canonical manuscript through a generated TeX chapter; the
+analytic limit theorems are not Lean-formalized.

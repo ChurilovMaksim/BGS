@@ -86,7 +86,8 @@ normalized trace. Constants are not uniform as $A$ or $f$ varies.
 Consequently, for $\epsilon_K\to0$ and positive variance the global
 return eigenphase law is Haar exactly when $K\epsilon_K^2\to\infty$;
 when $K\epsilon_K^2\to v<\infty$ it is wrapped Gaussian with variance
-$v\sigma_A^2(f)$. The physical classical kick strength is $\epsilon/N$.
+$v\sigma_A^2(f)$. With $\hbar_N=(2\pi N)^{-1}$, the classical action
+parameter is $\kappa=\hbar_N\epsilon=\epsilon/(2\pi N)$.
 
 **Theorem 2 (averaged-observable CLT).** For fixed real mean-zero
 $f_1,\ldots,f_J$ with $\mathcal L_{1/2}(f_j)<\infty$ and fixed
@@ -372,9 +373,11 @@ In particular $u_p=0\bmod p$.
 
 Let $c=5p$ for even $t$, and $c=15p$ for odd $t$. Set
 $$
+ \begin{gathered}
  L_j=c(4\cdot2^{\,2^j}+2),\quad
  M_j=b_{L_j/2}/q_A,\quad d_j=M_j/p,\quad a_j=j/\sqrt{L_j},
- \qquad f(z)=2\sum_{j\ge1}a_j\cos(2\pi d_jz_1).           \tag{U21}
+ \\ f(z)=2\sum_{j\ge1}a_j\cos(2\pi d_jz_1).
+ \end{gathered}                                          \tag{U21}
 $$
 All $L_j$ belong to (U1). The divisibility $b_u\mid b_{u\ell}$,
 which follows from the same recurrence identity, and (U20)
@@ -651,6 +654,7 @@ For the BGS programme the remaining target is still local,
 desymmetrized spectral correlation at Heisenberg times for a fixed
 nonzero classical perturbation. Here $K$ is logarithmic in $N$,
 the replica amplitude obeys $r|\epsilon|\le s_0$, and the classical
-strength is $\epsilon/N$. The estimates above do not supply that
-missing comparison. External priority has not been established;
-these proofs are not yet incorporated into the canonical manuscript.
+action parameter is $\kappa=\epsilon/(2\pi N)$. The estimates above do not
+supply that missing comparison. External priority has not been established.
+These proofs are included in the canonical manuscript through a generated
+TeX chapter; the analytic limit theorems are not Lean-formalized.

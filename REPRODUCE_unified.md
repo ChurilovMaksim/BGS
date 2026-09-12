@@ -2,15 +2,6 @@
 
 The canonical editable publication entry point is `manuscript/WoW_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
-The original 204-file consolidation delivery was recovered from the user's Library and byte-verified before cleanup:
-
-```text
-WoW_consolidated_research.zip
-bytes   2605999
-sha256  8addfd45f0c8d3d43d06472477aa8c5aac8eb3f2b94082fe6b715b20a3447099
-files   204
-```
-
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
 Run the structural gate first:
@@ -31,13 +22,40 @@ python computations/maintenance/verify_workspace.py \
   --output build/workspace-verification.json
 ```
 
-Build every active Lean module:
+To reproduce only the eight return-law checks (without compiling C++):
+
+```sh
+python computations/maintenance/verify_workspace.py \
+  --build build/cmake --logs build/return-checks \
+  --output build/return-checks/manifest.json \
+  --only general_cat_return_laws --only phase_space_return_gas \
+  --only periodic_point_trace_comparison --only fixed_harmonic_return_gas \
+  --only analytic_kick_return_gas --only even_period_spin_resonance \
+  --only hyperbolic_return_pressure --only pell_resonance_lattice
+```
+
+A focused manifest records its selection and does not certify the complete
+historical suite. Each return-law producer receives a separate JSON output
+path; the runner records the source hash, exit status and log hash.
+
+Build every active Lean module with the version pinned in
+`formalization/lean-toolchain`:
 
 ```sh
 (cd formalization && lake build)
 ```
 
-Build the canonical manuscript without writing a generated PDF into the source tree:
+The five return-law TeX sections are generated from their Markdown proof
+sources. The current generated chapters use Pandoc 3.1.3. Install that
+version for byte-for-byte regeneration, edit those proof sources, then synchronize:
+
+```sh
+python computations/maintenance/sync_return_sections.py
+python computations/maintenance/sync_return_sections.py --check
+```
+
+Other manuscript sections remain directly maintained TeX. Build the canonical
+manuscript with pdfLaTeX without writing a generated PDF into the source tree:
 
 ```sh
 python computations/maintenance/build_unified_manuscript.py \

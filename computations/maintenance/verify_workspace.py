@@ -24,6 +24,8 @@ def main() -> None:
     parser.add_argument('--logs',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--workers',type=int,default=2)
+    parser.add_argument('--only',action='append',default=[],
+                        help='Run only named checks; repeat for a focused verification group.')
     args=parser.parse_args()
     if args.workers<1:parser.error('--workers must be positive')
     args.build=args.build.resolve();args.logs=args.logs.resolve();args.output=args.output.resolve()
@@ -36,6 +38,10 @@ def main() -> None:
     temporal={'temporal_soft_modes','temporal_quantum_variance','spectral_module_regression',
               'general_symbol_covariance','quantum_cyclic_module','quantum_phase_completion',
               'cayley_scaling_rigidity'}
+    return_checks={'analytic_kick_return_gas','even_period_spin_resonance',
+                   'fixed_harmonic_return_gas','general_cat_return_laws',
+                   'hyperbolic_return_pressure','pell_resonance_lattice',
+                   'periodic_point_trace_comparison','phase_space_return_gas'}
     for p in sorted((ROOT/'computations/verification').glob('*.py')):
         if '__main__' not in p.read_text(encoding='utf-8'):continue
         if p.stem=='check_resonance_certificate':
@@ -56,6 +62,8 @@ def main() -> None:
             extremal_producer=True
             cmd+=['--cases','1000','--max-lag','10','--algebra-cases','20',
                   '--output',str(args.logs/'extremal.json'),'--replay',str(extremal_replay)]
+        elif p.stem in return_checks:
+            cmd+=['--output',str(args.logs/(p.stem+'.json'))]
         elif p.stem in temporal:
             cmd+=['--output',str(args.logs/(p.stem+'.json'))]
             if p.stem in {'quantum_cyclic_module','cayley_scaling_rigidity'}:
@@ -68,6 +76,14 @@ def main() -> None:
         cmd=[str(args.build/p.stem)]
         if p.stem=='cat_map_order':cmd+=['verify']
         items.append(('cpp_'+p.stem,cmd,p))
+    if args.only:
+        missing=set(args.only)-{item[0] for item in items}
+        if missing:parser.error('Unknown checks: '+', '.join(sorted(missing)))
+        items=[item for item in items if item[0] in args.only]
+        # The complete run below owns the dependent certificate replays.
+        if any(item[0] in {'resonance_nondegeneracy_certificate','extremal_resonance'}
+               for item in items):
+            parser.error('Dependent certificate producers require a complete run.')
     env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MPLBACKEND='Agg')
     def check(item):
         name,cmd,source=item;start=time.monotonic();log=args.logs/(name+'.log')
@@ -90,18 +106,20 @@ def main() -> None:
         return row
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         rows=list(pool.map(check,items))
-    if deferred_checker is None or not extremal_producer:
+    if not args.only and (deferred_checker is None or not extremal_producer):
         raise SystemExit('A required certificate producer/checker is missing.')
-    cmd=[sys.executable,str(deferred_checker),str(resonance_certificate),
-         '--output',str(args.logs/'resonance_certificate_replay.json')]
-    rows.append(check(('check_resonance_certificate',cmd,deferred_checker)))
-    source=ROOT/'computations/cpp/extremal_resonance_replay.cpp'
-    rows.append(check(('extremal_independent_replay',
-                       [str(args.build/'extremal_resonance_replay'),str(extremal_replay)],source)))
+    if not args.only:
+        cmd=[sys.executable,str(deferred_checker),str(resonance_certificate),
+             '--output',str(args.logs/'resonance_certificate_replay.json')]
+        rows.append(check(('check_resonance_certificate',cmd,deferred_checker)))
+        source=ROOT/'computations/cpp/extremal_resonance_replay.cpp'
+        rows.append(check(('extremal_independent_replay',
+                           [str(args.build/'extremal_resonance_replay'),str(extremal_replay)],source)))
     data={'producer':'computations/maintenance/verify_workspace.py',
           'scope':'Executable Python/C++ coverage with sequential certificate replays; not a complete proof audit. Lean and TeX are separate.',
           'input_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
           'python':platform.python_version(),'checks':rows,
+          'selection':args.only or 'complete Python/C++ surface',
           'passed':sum(r['exit_code']==0 for r in rows),'total':len(rows),
           'repository_mutation_policy':'Generated verifier outputs stay below --logs; committed evidence is not rewritten.'}
     args.output.parent.mkdir(parents=True,exist_ok=True)

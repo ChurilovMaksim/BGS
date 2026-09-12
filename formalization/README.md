@@ -56,3 +56,14 @@ for the reproduction commands and evidence boundary.
 
 Historical drafts remain outside the active import graph. No general analytic
 asymptotic theorem is claimed to have been formalized by this build.
+
+## Publication revision, 12 September 2026
+
+The full pinned Lean 4.33.1 project was rebuilt successfully: 16 active
+modules, 19 Lake jobs. `GeneralHyperbolicParity` now also proves
+`refinement_polarization` and `nontrivial_central_parity`. Both use ordinary
+`decide`; their printed axiom lists are empty. The existing invariant
+refinement proof remains the finite modulo-two invariance check. These
+statements certify the parity algebra used in the general return-law
+construction, not its operator realization, cluster estimates, or limits.
+See `record/publication_review_20260912.md` for this revision's checks.

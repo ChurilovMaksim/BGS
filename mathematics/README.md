@@ -2,6 +2,14 @@
 
 This directory contains the authoritative maintained mathematical derivations. False or superseded routes are summarized in `../record/retractions.md` and remain recoverable from Git history rather than being duplicated as current source.
 
+The current general return-law entry point is
+[general_cat_return_laws.md](general_cat_return_laws.md). Read it with its
+analytic precursor [phase_space_return_gas.md](phase_space_return_gas.md)
+and the smooth-symbol/second-order analysis in
+[periodic_point_trace_comparison.md](periodic_point_trace_comparison.md).
+Position-only and fixed-harmonic proof modules are retained because they
+contain distinct arguments and estimates, not parallel obsolete papers.
+
 ## Reading order
 
 1. `results.md` — base concise theorem index.

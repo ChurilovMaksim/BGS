@@ -518,3 +518,17 @@ cases, 800 exact cyclic preimages, 3,200 exact phase identities,
 28 prime-lifting cases, eight counterexample cases, and 72 exact
 capped-kernel envelope sums. Physical quantization tests at four
 small dimensions are explicitly floating diagnostics.
+
+## Publication integration (2026-09-12)
+
+The five fixed-harmonic, position-kick, periodic-point, phase-space, and
+general return-law proof modules are now included in the canonical TeX
+manuscript. `sync_return_sections.py --check` verifies source synchronization.
+This is publication integration, not a new mathematical scope promotion.
+
+The general modulo-two refinement already had a Lean invariance certificate.
+Its polarization identity and nontrivial central parity are now also
+kernel-checked without axioms. The full 16-module build passed; the general
+analytic return and regularity theorems remain unformalized. Eight focused
+return-law Python checks passed. The complete historical Python/C++ suite
+was not rerun in this revision. See `publication_review_20260912.md`.

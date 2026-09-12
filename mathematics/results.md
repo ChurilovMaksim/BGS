@@ -1,5 +1,22 @@
 # Current results and exact scope
 
+## General hyperbolic return laws and sharp regularity
+
+**Project proof with limited internal review; external priority unverified.**
+For every fixed hyperbolic matrix in SL(2,Z), explicit odd-dimensional
+arithmetic subsequences support Gevrey return suppression and an absolute
+Gaussian approximation of order $K^{-1/2}$ at the stated small scaled
+replica amplitude. Every fixed finite Gevrey order is allowed; constants
+are not uniform as the Fourier-decay exponent tends to zero.
+
+For period-averaged observables, a square-root logarithmic Fourier weight
+suffices for a joint Gaussian limit. For each map a fixed continuous symbol
+shows that every smaller logarithmic exponent is insufficient, even after
+subtracting the quantum mean. See
+[general_cat_return_laws.md](general_cat_return_laws.md), Theorems 1–3.
+These are global, arithmetic-subsequence results. They do not close the
+Heisenberg-time, fixed-classical-strength BGS comparison.
+
 ## Harmonic-scale laws of the actual kicked return propagator
 
 **EXACT (project proof; independently audited by a second agent).** In the

@@ -63,8 +63,9 @@ jobs:
       - name: Install TeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra lmodern pandoc
       - name: Build canonical unified manuscript
         run: |
+          python computations/maintenance/sync_return_sections.py --check
           python computations/maintenance/build_unified_manuscript.py --output-dir "$RUNNER_TEMP/unified-paper"
           test -s "$RUNNER_TEMP/unified-paper/WoW_unified.pdf"

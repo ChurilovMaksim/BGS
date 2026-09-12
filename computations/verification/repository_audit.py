@@ -60,6 +60,8 @@ REQUIRED = [
 ]
 
 ACTIVE_MARKDOWN = [
+    ROOT / "RESEARCH.md",
+    ROOT / "record" / "publication_review_20260912.md",
     ROOT / "README.md",
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
