@@ -532,3 +532,17 @@ kernel-checked without axioms. The full 16-module build passed; the general
 analytic return and regularity theorems remain unformalized. Eight focused
 return-law Python checks passed. The complete historical Python/C++ suite
 was not rerun in this revision. See `publication_review_20260912.md`.
+
+
+## Short-return obstruction (2026-09-12)
+
+| Claim | Status | Exact boundary |
+|---|---|---|
+| Ergodic intensity-one local-process convergence forces uniformly vanishing normalized sublinear-frequency traces | PROJECT PROOF + SELF-REVIEW | return_trace_obstruction.md, Theorem 1; first-moment uniform integrability, no second-moment hypothesis |
+| The same convergence forces spatial L1 self-averaging on every window with a diverging number of mean spacings | PROJECT PROOF + SELF-REVIEW | Same note, bounded-Lipschitz strengthening; no mixing-rate assumption |
+| Critical Gevrey/harmonic returns preclude those local limits and standard globally unfolded pair limits | DERIVED FROM PROJECT RETURN THEOREMS + SELF-REVIEW | Existing return-law proofs remain inputs; shrinking quantum kicks, stated spectral sectors, global unfolding |
+| Positive microscopic BGS at fixed classical strength | OPEN | The new criterion is necessary only; a density-dependent unfolding can remove the return obstruction |
+
+Finite exact Fourier/marked-convolution checks and separate floating Gaussian
+controls are in the companion verifier. No new full analytic Lean formalization
+or external referee validation is claimed. Review: return_obstruction_review_20260912.md.

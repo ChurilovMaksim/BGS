@@ -19,6 +19,7 @@ SOURCES = (
     ('periodic_point_trace_comparison', 'periodic'),
     ('phase_space_return_gas', 'phase'),
     ('general_cat_return_laws', 'general'),
+    ('return_trace_obstruction', 'obstruction'),
 )
 
 
@@ -28,8 +29,8 @@ def render(name, prefix):
     # LaTeX supplies hierarchical heading numbers; avoid printing them twice.
     text = re.sub(r'^(#{2,6}\s+)\d+(?:\.\d+)*\.?\s+', r'\1', text, flags=re.M)
     # New-family equation numbers are unique in the consolidated publication.
-    text = re.sub(r'\\tag\{([UPRGA]\d+[a-z]?)\}',r'\\tag{Ret.\1}',text)
-    text = re.sub(r'\(([UPRGA]\d+[a-z]?)\)',r'(Ret.\1)',text)
+    text = re.sub(r'\\tag\{([UPRGAS]\d+[a-z]?)\}',r'\\tag{Ret.\1}',text)
+    text = re.sub(r'\(([UPRGAS]\d+[a-z]?)\)',r'(Ret.\1)',text)
     # Links to other proof modules remain navigable in the source repository.
     parsed=subprocess.run(['pandoc','--from=markdown+tex_math_dollars','--to=json'],
                           input=text,text=True,check=True,capture_output=True)
@@ -85,7 +86,7 @@ def main():
             if not target.exists() or target.read_text()!=content:stale.append(str(target.relative_to(ROOT)))
         else:target.write_text(content)
     if stale:raise SystemExit('Stale generated chapters: '+', '.join(stale))
-    print('PASS return-law source synchronization' if args.check else 'Updated five return-law chapters')
+    print('PASS return-law source synchronization' if args.check else f'Updated {len(SOURCES)} return-law chapters')
 
 
 if __name__=='__main__':

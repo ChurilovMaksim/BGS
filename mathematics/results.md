@@ -1,5 +1,22 @@
 # Current results and exact scope
 
+## Short returns and ergodic local limits
+
+**Project proof; self-reviewed; priority unverified.** An ergodic stationary
+intensity-one local limit forces vanishing normalized traces uniformly over
+all sublinear frequency windows. More generally it forces uniform density
+in spatial L1 on every window containing a diverging number of mean spacings.
+No second-moment convergence assumption is needed for this implication.
+The proof uses a slowly changing mark and preservation of first moments.
+
+Applied to the existing cat-map return laws, it excludes such local limits
+when $\epsilon_K\to0$ and $K\epsilon_K^2$ remains bounded. Positive-variance
+universality would require $K\epsilon_K^2\to\infty$; this is not sufficient.
+An independent Gaussian pair inequality gives explicit Poisson/sine-kernel
+discrepancies and low-frequency budgets. The critical conclusion depends on
+global mean-spacing unfolding. See
+[return_trace_obstruction.md](return_trace_obstruction.md) and its linked review.
+
 ## General hyperbolic return laws and sharp regularity
 
 **Project proof with limited internal review; external priority unverified.**

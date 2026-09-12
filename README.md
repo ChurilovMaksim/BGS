@@ -12,6 +12,9 @@ Gaussian limit for period-averaged observables under a square-root logarithmic
 Fourier weight, and continuous counterexamples showing the sharpness of that
 weight even after quantum centering. Constants depend on the fixed map and
 symbol. These are global laws at logarithmic return times.
+The [local-limit obstruction](mathematics/return_trace_obstruction.md) now
+connects nonuniform short returns to failure of ergodic intensity-one local
+limits, under explicitly stated unfolding and scaling conventions.
 
 **Microscopic BGS universality remains open.** The analytic results are project
 proofs with limited internal review; external priority and external referee
@@ -24,7 +27,7 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 - [General return laws](mathematics/general_cat_return_laws.md): assumptions, statements, proofs, and counterexamples.
 - [Results index](mathematics/results.md) and [earlier addendum](mathematics/results_20260907_addendum.md): the broader mathematical corpus.
 - [Claim ledger](record/claim_ledger.md) and [scoped addendum](record/claim_ledger_addendum_20260907.md): evidence levels and corrections; the addendum governs claims in its stated scope.
-- [Canonical manuscript](manuscript/WoW_unified.tex): one publication entry point, including the five return-law proof modules.
+- [Canonical manuscript](manuscript/WoW_unified.tex): one publication entry point, including the six return-law proof modules.
 - [Reproduction guide](REPRODUCE_unified.md) and [publication review](record/publication_review_20260912.md): commands and the scope of actual checks.
 
 ## Research materials

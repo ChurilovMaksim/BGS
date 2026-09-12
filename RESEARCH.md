@@ -47,6 +47,14 @@ transition, and fixed-strength locality results. Their hypotheses remain
 separate; combining them in one manuscript does not supply a missing theorem.
 See the [results index](mathematics/results.md).
 
+The [short-return obstruction](mathematics/return_trace_obstruction.md) now
+gives a necessary condition at the local-process level: an ergodic stationary
+limit of intensity one requires sublinear-time returns to become Haar, and
+empirical densities to self-average on every mesoscopic window. Applied to
+the current shrinking-kick family, this requires K epsilon squared to diverge.
+This condition is not sufficient; the clock counterexample and the effect of
+density-dependent unfolding are included in the proof.
+
 ## Next decisive research tasks
 
 1. **Independent validation and priority comparison.** Audit the general return

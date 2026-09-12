@@ -22,7 +22,7 @@ python computations/maintenance/verify_workspace.py \
   --output build/workspace-verification.json
 ```
 
-To reproduce only the eight return-law checks (without compiling C++):
+To reproduce only the nine return-law checks (without compiling C++):
 
 ```sh
 python computations/maintenance/verify_workspace.py \
@@ -31,7 +31,8 @@ python computations/maintenance/verify_workspace.py \
   --only general_cat_return_laws --only phase_space_return_gas \
   --only periodic_point_trace_comparison --only fixed_harmonic_return_gas \
   --only analytic_kick_return_gas --only even_period_spin_resonance \
-  --only hyperbolic_return_pressure --only pell_resonance_lattice
+  --only hyperbolic_return_pressure --only pell_resonance_lattice \
+  --only return_trace_obstruction
 ```
 
 A focused manifest records its selection and does not certify the complete
@@ -45,7 +46,7 @@ Build every active Lean module with the version pinned in
 (cd formalization && lake build)
 ```
 
-The five return-law TeX sections are generated from their Markdown proof
+The six return-law TeX sections are generated from their Markdown proof
 sources. The current generated chapters use Pandoc 3.1.3. Install that
 version for byte-for-byte regeneration, edit those proof sources, then synchronize:
 
@@ -73,3 +74,7 @@ The active stack is Python/C++/Lean/TeX. Julia is retired and `repository_audit.
 The finalization-era GitHub Actions attempts that were inspected had `runner_id=0`/no executed steps, so no green cloud-CI claim is inferred from them. Local verification evidence and cloud-runner status must remain separate.
 
 Repository synchronization does not change mathematical scope: positive generic microscopic BGS/GOE/COE universality remains open, and finite certificates or obstruction results are not promoted to that theorem.
+
+Reproduce the new analytic illustration with
+`python computations/analysis/return_obstruction_figure.py`. The plotted curves
+are analytic limits and lower bounds, not measured cat-map spectra.

@@ -52,6 +52,16 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The short-return necessary condition is now explicit in
+`return_trace_obstruction.md`: an ergodic intensity-one local limit requires
+all normalized sublinear-time traces to vanish, and mesoscopic empirical
+densities to become uniform in spatial L1. For the current positive-variance
+Gevrey return regime this requires $K\epsilon_K^2\to\infty$.
+The converse fails for clock spectra, and density-dependent unfolding changes
+the critical obstruction. No positive trace comparison is supplied by this
+necessary condition.
+
+
 The September 10 harmonic return theorem now does concern powers of the
 actual kicked propagator: `pell_harmonic_returns.md` proves its global
 return law, including a free unitary Brownian endpoint. Its multiplicity

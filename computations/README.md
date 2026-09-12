@@ -13,12 +13,12 @@ The maintained computational surface is deliberately compact and independently c
 `verification/` contains the scientific gates and exact/finite regressions. `maintenance/verify_workspace.py` orchestrates their execution and the C++ verifier surface without mutating committed evidence. `maintenance/build_unified_manuscript.py` is the sole maintained manuscript builder.
 
 `maintenance/sync_return_sections.py` is the maintained Markdown-to-TeX
-synchronizer for the five return-law chapters. It transforms document links
+synchronizer for the six return-law chapters. It transforms document links
 through the Pandoc syntax tree so mathematical brackets are not rewritten as
 links. `--check` detects stale generated source.
 
 For focused execution, repeat `verify_workspace.py --only NAME`; the
-[reproduction guide](../REPRODUCE_unified.md) gives the eight return-law names.
+[reproduction guide](../REPRODUCE_unified.md) gives the return-law selection.
 Focused execution is recorded in the manifest and does not claim full coverage.
 
 One-shot scripts that used to integrate research branches into older standalone papers have been retired from `main`; their history remains in Git. New scientific work should change the canonical source/verifier directly rather than regenerate superseded article copies.
