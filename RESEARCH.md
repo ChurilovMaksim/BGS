@@ -54,6 +54,18 @@ empirical densities to self-average on every mesoscopic window. Applied to
 the current shrinking-kick family, this requires K epsilon squared to diverge.
 This condition is not sufficient; the clock counterexample and the effect of
 density-dependent unfolding are included in the proof.
+The strengthened theorem bounds the intensity of any ergodic local limit by
+the essential infimum of the return density, even when first moments are lost.
+The bound is sharp among abstract unitary spectra. At the free Brownian
+harmonic endpoint with $0<t<4$, every ergodic local limit is empty; general
+limits have a quantitative empty-component lower bound. These statements
+retain the harmonic averaging and shrinking-kick assumptions.
+
+An explicit inverse-density construction realizes the same smooth positive
+return law with lattice, Poisson, or sine statistics after local unfolding.
+Therefore knowing all fixed return moments cannot choose between those
+statistics. The positive programme needs dynamical information about the
+conditional local process, beyond its conditional first moment.
 
 ## Next decisive research tasks
 

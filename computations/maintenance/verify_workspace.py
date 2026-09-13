@@ -38,7 +38,7 @@ def main() -> None:
     temporal={'temporal_soft_modes','temporal_quantum_variance','spectral_module_regression',
               'general_symbol_covariance','quantum_cyclic_module','quantum_phase_completion',
               'cayley_scaling_rigidity'}
-    return_checks={'return_trace_obstruction','analytic_kick_return_gas','even_period_spin_resonance',
+    return_checks={'return_local_limits','return_trace_obstruction','analytic_kick_return_gas','even_period_spin_resonance',
                    'fixed_harmonic_return_gas','general_cat_return_laws',
                    'hyperbolic_return_pressure','pell_resonance_lattice',
                    'periodic_point_trace_comparison','phase_space_return_gas'}

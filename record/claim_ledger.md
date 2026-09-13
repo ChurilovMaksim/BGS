@@ -546,3 +546,10 @@ was not rerun in this revision. See `publication_review_20260912.md`.
 Finite exact Fourier/marked-convolution checks and separate floating Gaussian
 controls are in the companion verifier. No new full analytic Lean formalization
 or external referee validation is claimed. Review: return_obstruction_review_20260912.md.
+
+
+## Return intensity and local unfolding (2026-09-13)
+
+Theorem 3 of mathematics/return_trace_obstruction.md proves conditional-intensity domination by the absolutely continuous return density, with an essential-infimum cap for ergodic local limits and explicit sharp abstract-spectrum constructions. Formula (S22) quantifies possible first-moment loss. Formula (S25) supplies the origin-weighted density transport; (S26) realizes the same return law with different locally unfolded statistics.
+
+Status: PROJECT PROOF + SELF-REVIEW. The free Brownian support-gap consequence (S24), for 0<t<4, additionally uses the existing project harmonic return theorem and the checked Demni--Hmidi source. It does not identify the full cat-map local limit. Finite rational, symbolic, and floating controls have distinct scopes. External priority and full analytic formalization remain unverified. See record/return_local_limits_review_20260913.md.

@@ -1,4 +1,4 @@
-# Short quantum returns obstruct ergodic local spectral limits
+# Short quantum returns, intensity loss, and local spectral limits
 
 **Status:** project proof with adversarial self-review. Finite computations are
 separate evidence. The positivity mechanism has close published antecedents;
@@ -135,6 +135,128 @@ Uniqueness of Fourier coefficients proves both assertions.
 A nonconstant return density therefore forces nonergodicity of any local
 limit preserving intensity one. A singular return law precludes such an
 intensity-preserving limit. No conditional spacing law is identified by (S5).
+
+### Intensity loss: a sharp compatibility theorem
+
+**Theorem 3.** Let $1\le K_D=o(D)$ be integers, and suppose that the empirical
+law of $U_D^{K_D}$ converges weakly in probability to a deterministic
+probability measure $\mu$ on the circle. Write its Lebesgue decomposition as
+$\mu=\rho(y)\,dy+\mu_{\rm s}$. Let $\Xi$ be any subsequential local-process
+limit; intensity preservation and ergodicity are not assumed.
+There is a joint limit with the uniform mark $Y_D=K_DX_D\bmod1$ whose
+conditional first moment has the form
+$$
+ \mathbb E[\langle\Xi,\psi\rangle\mid Y=y]
+      =h(y)\int\psi,\qquad 0\le h(y)\le\rho(y)\quad\text{a.e.}   \tag{S19}
+$$
+for every continuous compactly supported $\psi$. In particular, writing
+$\alpha$ for the intensity of $\Xi$,
+$$
+ \alpha\le\int\rho\,dy,\qquad
+ \mathbb P\{\Xi=0\}\ge |\{y:\rho(y)=0\}|.                        \tag{S20}
+$$
+If $\Xi$ is ergodic, the stronger bound is
+$$
+                 \alpha\le\operatorname*{ess\,inf}\rho.          \tag{S21}
+$$
+Thus a purely singular return law forces convergence of the entire local
+process sequence to the empty process, not just failure of intensity one.
+
+**Proof.** Finite processes have uniformly bounded expected mass on every
+compact set, so their laws are tight in the vague topology of locally finite
+counting measures. The compact circle mark preserves joint tightness.
+As in Section 1, any joint limit is invariant under translating the point
+process with the mark fixed. Its joint first-moment measure on
+$\mathbb T\times\mathbb R$ is locally finite: truncation and weak convergence
+give $\mathbb E\langle\Xi,\psi\rangle\le\int\psi$ for $\psi\ge0$.
+Translation invariance makes this measure $\eta(dy)\,dx$. The uniform marginal
+of $Y$ implies $\eta\ll dy$; write $\eta=h(y)dy$. This proves the conditional
+first-moment formula without assuming that moments converge.
+
+For nonnegative continuous $b$ on the circle and $\psi\ge0$, the exact
+finite identity is
+$$
+ \mathbb E[b(Y_D)\langle\Xi_D,\psi\rangle\mid U_D]
+ =\frac1D\sum_j\int\psi(z)b(K_D\theta_j-K_Dz/D)\,dz.
+$$
+Uniform continuity of $b$, $K_D/D\to0$, and the assumed folded-law
+convergence show that its expectation tends to
+$(\int\psi)\int b\,d\mu$. On the other hand, apply weak convergence to the
+bounded continuous function
+$b(Y_D)\min(\langle\Xi_D,\psi\rangle,R)$, then increase $R$.
+It follows that $\int b h\,dy\le\int b\,d\mu$.
+Thus $h(y)dy\le\mu$, equivalently $h\le\rho$ a.e.; the singular part cannot
+supply a conditional intensity at a uniform circle mark.
+This is an inequality, not the unjustified equality obtained by exchanging
+unbounded first moments and a weak limit.
+
+Integrating proves the first bound in (S20). Where $\rho=0$, every
+nonnegative compact local count has conditional expectation zero; a countable
+family of windows shows that the whole conditional process is empty there.
+If the first marginal is ergodic, the invariant coupling is a product by the
+argument of Section 1, so $h(y)=\alpha$ a.e. and (S21) follows.
+For purely singular $\mu$, every subsequential limit has intensity zero and
+is empty almost surely; tightness upgrades this to convergence of the sequence.
+
+There is also a version requiring no specified return law. If
+$\Xi_D\Rightarrow\Xi$ with ergodic intensity $\alpha\in[0,1]$, then
+$$
+ \limsup_D\mathbb E\max_{1\le m\le M_D}|t_D(m)|\le1-\alpha
+                         \qquad(M_D=o(D)).                      \tag{S22}
+$$
+Use the aligned mark (S3) and put $N_D=\langle\Xi_D,\psi\rangle$,
+$I=\int\psi>0$. Independence in the joint limit gives
+$\mathbb E[Z_D\min(N_D,R)]\to0$ for fixed $R$.
+The remaining modulus is at most
+$\mathbb E(N_D-R)_+=I-\mathbb E\min(N_D,R)$.
+First take the upper limit in $D$, then $R\to\infty$; the bound is
+$(1-\alpha)I$. Equation (S4) proves (S22). This explicitly quantifies the
+first-moment loss that Theorem 1 excludes.
+
+**Sharpness among abstract spectra.** For every probability measure $\mu$,
+every $1\le K_D=o(D)$, and every $0\le\alpha\le\operatorname*{ess\,inf}\rho$,
+there are deterministic simple $D$-point spectra with folded law tending to
+$\mu$ and ergodic local limit of intensity $\alpha$. For $\alpha>0$ the limit
+can be the uniformly shifted lattice of spacing $1/\alpha$; for $\alpha=0$
+it is empty. A random construction can instead give the Poisson process of
+intensity $\alpha$. These are abstract spectra, not new cat-map quantizations.
+
+Here is an explicit construction and its limiting proof. If $\alpha=1$,
+then $\mu=dy$ and a $D$-point clock (or independent uniform points) suffices.
+Otherwise put
+$n_D=\lfloor\alpha D\rfloor$, $m_D=D-n_D$, and
+$\sigma=(\mu-\alpha\,dy)/(1-\alpha)$.
+Choose $B_D=\lfloor\sqrt{m_D/K_D}\rfloor$ for all sufficiently large $D$.
+Then $B_D\to\infty$, $J_D=K_DB_D=o(D)$, and $J_D/m_D\to0$.
+Choose points $y_1,\ldots,y_{B_D}$ whose equally weighted empirical laws
+tend to $\sigma$; quantiles of a representative on $[0,1)$ suffice.
+Place clouds at the $J_D$ circle centers
+$$
+             (b+y_j)/K_D,\qquad 0\le b<K_D,\ 1\le j\le B_D.
+$$
+Distribute $m_D$ levels among them with occupancies differing by at most one.
+Together with an $n_D$-point clock these give $D$ levels. Choose all cloud
+levels distinct, and different from clock levels, within circle distance
+$D^{-3}$ of their centers. Such a finite choice always exists.
+
+Folding the clock gives Haar in the limit when $\alpha>0$: its distinct
+folded grid has $n_D/\gcd(n_D,K_D)\ge n_D/K_D\to\infty$ sites.
+The cloud folded law tends to $\sigma$, since occupancy rounding has total
+variation error at most $J_D/m_D$ and folded displacements are at most
+$K_DD^{-3}$. Their weights tend to $\alpha$ and $1-\alpha$, giving $\mu$.
+For a local window of length $L$ the probability of hitting any cloud is
+at most
+$$
+                       J_D(L/D+2D^{-3})\longrightarrow0.        \tag{S23}
+$$
+The remaining clock converges to the stated ergodic lattice, or is absent
+when $\alpha=0$. Replacing the clock by $n_D$ independent uniform circle
+points gives Poisson intensity $\alpha$ by the elementary multinomial
+rare-event limit; their folded empirical measure tends to Haar in probability.
+When $K_D\to\infty$, the full phase laws in either construction also tend to
+Haar: averaging a continuous test over the $K_D$ translates is a uniformly
+convergent Riemann sum. Thus the example need not violate macroscopic
+equidistribution.
 
 ## 3. A finite positive-Fourier pair inequality
 
@@ -276,6 +398,41 @@ The exclusions persist under these $o(1/K_D)$ perturbations, which may be
 larger than the mean spacing. Equality of classical principal maps alone
 is not asserted to imply the required norm estimate.
 
+### A support gap forces an empty ergodic limit
+
+In the harmonic family, (S22) and its first return give the bound
+$\alpha\le1-e^{-t/2}$ for every ergodic harmonic-averaged local limit,
+where $t=\tau^2$ and any $\beta\in[0,1/2]$ is allowed.
+This conclusion does not assume intensity preservation.
+
+At $\beta=1/2$, the full return law is the known free unitary Brownian law.
+For $0<t<4$ it is supported on $|\vartheta|\le b(t)$ in radian coordinates,
+where
+$$
+ b(t)=\tfrac12\sqrt{t(4-t)}+\arccos(1-t/2)<\pi.
+$$
+The support statement and moment normalization are verified in Demni--Hmidi,
+Sections 1, 4 and 5, as recorded in
+[the source comparison](../literature/return_local_limits_sources.md).
+Theorem 3 therefore implies, for every harmonic-averaged subsequential
+local limit,
+$$
+ \mathbb P\{\Xi=0\}\ge
+       g(t):=1-\frac{b(t)}{\pi}>0,\qquad 0<t<4.                 \tag{S24}
+$$
+If that limit is ergodic, it is empty almost surely. This is stronger than
+excluding an intensity-one ergodic limit, but does not identify the
+nonempty components or assert that the full sequence tends to the empty
+process. The application retains all assumptions of the project harmonic
+return theorem, including averaging over the prescribed sampled harmonics.
+
+For example, $g(1)\approx0.3910$, $g(2)\approx0.1817$, and
+$g(3)\approx0.05767$. Differentiation gives
+$b'(t)=\tfrac12\sqrt{(4-t)/t}$, hence
+$g(4-s)=s^{3/2}/(6\pi)+O(s^{5/2})$ as $s\downarrow0$.
+These describe a lower bound on the empty component, not its exact weight.
+The strict support-gap argument makes no claim at $t=4$.
+
 ## 5. Sharp boundaries and unfolding
 
 A $D$-point clock has $t_D(D)=1$, while its local process is the uniformly
@@ -312,6 +469,58 @@ Lipschitz constant are bounded independently of $K$. The transformed folded
 law is Haar, so this density-dependent unfolding removes this particular
 obstruction. It does not prove local universality after the change.
 
+The effect on the local process can be identified exactly, provided its
+joint law with the slow phase is known. Write $S_c\xi$ for the point measure
+obtained by multiplying all locations by $c>0$.
+Let $\rho$ be any fixed positive $C^1$ circle density, $F'=\rho$,
+$F(0)=0$, $F(y+1)=F(y)+1$, and use $H_K$ in (S18).
+If $(\Xi_D,K_DX_D\bmod1)\Rightarrow(\Xi,Y)$ with conditional process
+laws $P_y$, then the spectra transformed by $H_{K_D}$ have local limit
+$$
+              Q=\int_0^1 \rho(y)(S_{\rho(y)})_*P_y\,dy.         \tag{S25}
+$$
+The weighting factor $\rho(y)$ is indispensable: a uniform origin in the
+transformed coordinate has pullback density $H_K'(x)=\rho(Kx)$.
+
+**Proof.** Set the new origin to $H_K(X_D)$. Conditional on this origin,
+each local displacement $z=D(\theta_j-X_D+\ell)$ is changed to
+$D[H_K(X_D+z/D)-H_K(X_D)]$. On bounded $z$ sets Taylor's theorem gives
+$$
+ \left|D[H_K(X_D+z/D)-H_K(X_D)]-\rho(KX_D)z\right|
+             \le\|\rho'\|_\infty K z^2/(2D)=o(1).
+$$
+The positive upper and lower bounds on $\rho$ keep the relevant point
+locations in a bounded set. Tightness of their counts and uniform continuity
+of compact test functions identify the limiting dilation.
+Changing the origin density multiplies expectations of bounded continuous
+process tests by the bounded continuous mark weight $\rho(Y_D)$.
+Joint weak convergence proves (S25), without a pair-moment assumption.
+
+**Same returns, different unfolded statistics.** Start with any $D$-point
+spectra whose local processes tend to an ergodic intensity-one law $P$.
+Transform their phases by $H_{K_D}^{-1}$. The new spectra have folded
+law $\rho(y)dy$, while their local process law tends to
+$$
+                   \int_0^1(S_{1/\rho(y)})_*P\,dy.              \tag{S26}
+$$
+Indeed Theorem 1 makes the original folded laws Haar, and the inverse CDF
+sends Haar to $\rho\,dy$. The old local process and its slow uniform mark
+become independent by ergodicity. Apply the preceding change-of-origin
+argument with inverse derivative $1/\rho(F^{-1}(v))$; the substitution
+$v=F(y)$ cancels the origin weight and yields (S26).
+Each conditional component has intensity $\rho(y)$, and the total intensity
+is one. Applying $H_{K_D}$ back recovers the original finite spectra exactly.
+
+The starting spectra may be a clock, independent uniform points, or Haar
+unitary eigenphases. Their respective local limits are the shifted lattice,
+Poisson process, and sine process. The latter is the standard CUE kernel
+limit and is ergodic; its precise source is in the linked source comparison.
+Consequently the same entire family of fixed return moments, including a
+prescribed positive wrapped-Gaussian profile, is compatible with all three
+different locally unfolded laws. This establishes non-identifiability from
+return laws among abstract spectra. It supplies no dynamical realization of
+the positive Poisson or sine examples in the maintained cat-map family.
+
 ## 6. Prior work, checks, and the remaining gap
 
 Aistleitner, Lachmann and Pausinger,
@@ -337,5 +546,7 @@ convolution identities, then independently compares floating Gaussian pair
 and trace formulas. It also checks the sine integral and scope counterexamples.
 These finite checks do not prove process convergence or the cat-map return laws.
 See [the scoped research review](../record/return_obstruction_review_20260912.md).
+The intensity-loss and unfolding extension has a separate
+[proof and computation review](../record/return_local_limits_review_20260913.md).
 The positive BGS target still requires fixed-classical-strength,
 Heisenberg-time desymmetrized joint-trace estimates.

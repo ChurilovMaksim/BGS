@@ -22,7 +22,7 @@ python computations/maintenance/verify_workspace.py \
   --output build/workspace-verification.json
 ```
 
-To reproduce only the nine return-law checks (without compiling C++):
+To reproduce only the ten return-law checks (without compiling C++):
 
 ```sh
 python computations/maintenance/verify_workspace.py \
@@ -32,7 +32,7 @@ python computations/maintenance/verify_workspace.py \
   --only periodic_point_trace_comparison --only fixed_harmonic_return_gas \
   --only analytic_kick_return_gas --only even_period_spin_resonance \
   --only hyperbolic_return_pressure --only pell_resonance_lattice \
-  --only return_trace_obstruction
+  --only return_trace_obstruction --only return_local_limits
 ```
 
 A focused manifest records its selection and does not certify the complete

@@ -21,6 +21,14 @@ For focused execution, repeat `verify_workspace.py --only NAME`; the
 [reproduction guide](../REPRODUCE_unified.md) gives the return-law selection.
 Focused execution is recorded in the manifest and does not claim full coverage.
 
+The return-local-limits verifier checks exact rational window probabilities
+for simple spectral clouds, including an independent brute-force enumerator.
+Separate floating and symbolic controls check density transport, its origin
+Jacobian, and free Brownian support-gap calculus. The Wolfram cross-check is
+retained in [return_gap.wl](verification/return_gap.wl); the full Python
+entry point is [return_local_limits.py](verification/return_local_limits.py).
+Neither program proves weak process convergence or the analytic return law.
+
 One-shot scripts that used to integrate research branches into older standalone papers have been retired from `main`; their history remains in Git. New scientific work should change the canonical source/verifier directly rather than regenerate superseded article copies.
 
 `analysis/spectral_diagnostics.py` and the figure scripts retain useful finite numerical experiments with corrected semantics. Their outputs are descriptive/regression evidence and are not promoted to asymptotic or microscopic BGS theorems.

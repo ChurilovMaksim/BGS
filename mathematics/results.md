@@ -17,6 +17,18 @@ discrepancies and low-frequency budgets. The critical conclusion depends on
 global mean-spacing unfolding. See
 [return_trace_obstruction.md](return_trace_obstruction.md) and its linked review.
 
+Theorem 3 now allows intensity loss. For a folded law
+$\mu=\rho\,dy+\mu_{\rm s}$, every marked local limit has conditional
+intensity $h\le\rho$; an ergodic limit of intensity $\alpha$ requires
+$\alpha\le\operatorname*{ess\,inf}\rho$. Explicit simple-spectrum
+constructions attain every admissible $\alpha$. This sharpness is in the
+class of abstract spectra, not in the cat-map quantization class.
+For the free Brownian harmonic endpoint, $0<t<4$, every local limit has
+empty-component weight at least $1-b(t)/\pi$; an ergodic limit is empty.
+The density-transport formula also constructs identical return laws with
+different locally unfolded statistics. Review and finite evidence:
+[return_local_limits_review_20260913.md](../record/return_local_limits_review_20260913.md).
+
 ## General hyperbolic return laws and sharp regularity
 
 **Project proof with limited internal review; external priority unverified.**

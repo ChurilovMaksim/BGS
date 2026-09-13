@@ -61,6 +61,15 @@ The converse fails for clock spectra, and density-dependent unfolding changes
 the critical obstruction. No positive trace comparison is supplied by this
 necessary condition.
 
+The intensity-loss extension now gives the sharp abstract bound
+$\alpha\le\operatorname*{ess\,inf}\rho$ for an ergodic local limit and
+return density $\rho$. At the free Brownian endpoint with $0<t<4$, such a
+limit must be empty. Identifying the actual nonergodic local limit, or its
+conditional law after unfolding by $\rho$, remains open for the kicked map.
+The inverse-density construction produces the same complete return law
+with different unfolded local laws among abstract spectra. Thus return-law
+identification alone cannot close this conditional-law obligation.
+
 
 The September 10 harmonic return theorem now does concern powers of the
 actual kicked propagator: `pell_harmonic_returns.md` proves its global

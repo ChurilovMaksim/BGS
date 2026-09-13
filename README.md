@@ -15,6 +15,9 @@ symbol. These are global laws at logarithmic return times.
 The [local-limit obstruction](mathematics/return_trace_obstruction.md) now
 connects nonuniform short returns to failure of ergodic intensity-one local
 limits, under explicitly stated unfolding and scaling conventions.
+Its extension quantifies intensity loss, proves a sharp bound for ergodic
+local limits among abstract spectra, and shows why the same return law can
+coexist with different statistics after unfolding by the local density.
 
 **Microscopic BGS universality remains open.** The analytic results are project
 proofs with limited internal review; external priority and external referee
