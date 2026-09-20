@@ -11,6 +11,18 @@ identify the CUE value. The full all-order criterion is conditional on an
 external loop-characterization theorem and a still-open model estimate.
 All recovered proof and computational records are in the indexed supplement.
 
+## Recovered finite-window result and scope corrections
+
+The [compensated-family note](compensated_heisenberg_trace_control.md),
+(H8)--(H9), gives an explicit separated-cluster bound and its averaged
+Heisenberg-window consequence at epsilon=o(N^(1/3)). The parent operator
+estimate, inversion symmetry and vanishing classical strength remain inputs.
+The [trace bridge](trace_to_local_statistics_bridge.md) now includes an exact
+short-trace counterexample while retaining its later bandlimit extension.
+The Cayley support proposals imply exclusion with a fixed power margin;
+K^(4+o(1)) is insufficient for the full K=o(p^(1/4)) regime.
+See [recovery audit](../record/recovery_audit_20260920.md).
+
 ## Short returns and ergodic local limits
 
 **Project proof; self-reviewed; priority unverified.** An ergodic stationary

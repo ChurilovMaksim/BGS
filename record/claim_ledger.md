@@ -24,6 +24,22 @@ The [publication review](fixed_map_publication_20260920.md) records the
 actual verification scope. Dated snapshot statements about earlier
 nonpublication and old execution states are historical provenance.
 
+## Recovered amendments, 20 September 2026
+
+Self-review of a previously uncommitted workspace patch; see
+[recovery audit](recovery_audit_20260920.md). The newer fixed-map work above
+and the positive-measure bandlimit extension remain authoritative.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Largest split divisor bound K^(4+o(1)) excludes exceptional primes | Correct only with a fixed power margin | K<=p^(1/4-epsilon), fixed epsilon>0; does not imply the full little-o regime |
+| Separated-cluster averaged form-factor estimate (H8) | PROJECT PROOF + SELF-REVIEW + FINITE-REGRESSION | Odd K>=3, D=Kn, phase radius <=1/(4K); finite unitary spectra |
+| Compensated-family window mean (H9) equals (d_N/K)(1+o(1)) | CONDITIONAL ON PROJECT PARENT ESTIMATE + SELF-REVIEW | Inversion-even C7 symbol, epsilon=o(N^(1/3)), specified Pell subsequence; vanishing classical strength |
+| Matching traces for 0<abs(m)<N/2 does not determine pair statistics | EXACT COUNTEREXAMPLE | Even N; clock versus doubled half-clock; abstract spectra |
+| Elliptic monodromy argument and weight conventions | SOURCE-DEPENDENT CLARIFICATION | BLV v2 arithmetic image plus commutators; purity on the lisse locus, bounded omitted stalks |
+
+These recoveries do not prove fixed-coupling BGS. No new Lean build is claimed.
+
 ## Status vocabulary
 
 - **EXACT** — current project derivation with explicit hypotheses.

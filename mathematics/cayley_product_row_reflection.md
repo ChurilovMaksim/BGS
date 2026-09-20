@@ -181,6 +181,12 @@ A sufficient bound for the inverse-row class is
 P_split^+(Xi'_K)<=K^(4+o(1)).                            (17)
 ```
 
+This proposed bound excludes supported split primes for each fixed
+`0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. It does not alone cover all of
+`K=o(p^(1/4))`; an `O(K^4)` largest-split-divisor bound would suffice for
+that full regime. See the quantifier distinction in
+`cayley_product_row_real_trace_ideal.md`, Section 8.
+
 The finite data suggest a much stronger scale, but no polynomial bound is yet proved. The reflection identity (3), half-degree reduction (6), and Dickson fibre formula (12) make this class the most structured current target for an explicit Bézout/subresultant calculation.
 
 The full BGS problem still requires the other ratio classes and, after fourth moments, a separate local-statistics mechanism.

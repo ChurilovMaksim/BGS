@@ -26,6 +26,8 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 
 ## Start here
 
+- [Recovery audit](record/recovery_audit_20260920.md): reconciled chat/repository state, recovered amendments, and the exact remaining target.
+
 - [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
 - [Reproducible fixed-map supplement](supplement/fixed_map/README.md): recovered proofs, Python/C++/Wolfram sources and finite evidence; [current verification review](record/fixed_map_publication_20260920.md).
 - [Research brief](RESEARCH.md): why cat maps, contributions, limitations, and the next decisive questions.

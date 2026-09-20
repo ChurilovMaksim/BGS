@@ -296,6 +296,12 @@ P_split^+( product_[r] Pi'_(K,r)^(3) ) <= K^(4+o(1)),    (19)
 which is equivalent at the level of split prime support to the maintained
 `Lambda` or `Omega` largest-prime target.
 
+This proposed bound excludes supported split primes for each fixed
+`0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. It does not alone cover all of
+`K=o(p^(1/4))`; an `O(K^4)` largest-split-divisor bound would suffice for
+that full regime. See the quantifier distinction in
+`cayley_product_row_real_trace_ideal.md`, Section 8.
+
 The useful new formulation is that the general exceptional prime must divide
 three canonical nested Sylvester determinants simultaneously.  A high-value
 next step is a Desnanot--Jacobi / Bezout / subresultant identity that forces a

@@ -55,18 +55,22 @@ The following identity is independent of cyclotomic structure.
 
 ### Theorem 1 (pair-sum factorization)
 
-Let `R` be an integral domain and let
+Let `R` be an integral domain and let `F in R[X]` be monic, with factorization
 
 ```text
 F(X)=prod_(i=1)^m (X-x_i)
 ```
 
-be monic over a splitting extension. Define
+over a splitting extension. Define
 
 ```text
-D_F(Z)=prod_i (Z-2x_i)=2^m F(Z/2),                       (4)
+D_F(Z)=prod_i (Z-2x_i)=sum_(j=0)^m 2^(m-j) f_j Z^j,     (4)
 S_F(Z)=prod_(i<j)(Z-x_i-x_j).                            (5)
 ```
+
+Here `F(X)=sum_(j=0)^m f_j X^j`, with `f_m=1`. The notation
+`2^m F(Z/2)` below abbreviates the coefficient formula (4); it requires no
+division by two and is meaningful even in characteristic two.
 
 Then `D_F,S_F` lie in `R[Z]`, `S_F` is monic of degree `binom(m,2)`, and
 
@@ -434,6 +438,12 @@ A sufficient pointwise theorem remains, for example,
 ```text
 P_split^+(Theta'_K)<=K^(4+o(1)).                         (39)
 ```
+
+This proposed bound excludes supported split primes for each fixed
+`0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. It does not alone cover all of
+`K=o(p^(1/4))`; an `O(K^4)` largest-split-divisor bound would suffice for
+that full regime. See the quantifier distinction in
+`cayley_product_row_real_trace_ideal.md`, Section 8.
 
 The translated resultant formulation makes the next high-value arithmetic
 question very concrete: derive a Bezout or norm identity coupling

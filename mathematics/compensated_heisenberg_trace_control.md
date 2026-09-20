@@ -4,8 +4,8 @@ This is a direct quantitative corollary of Theorem 3 in
 [smooth_recurrence_and_compensation.md](smooth_recurrence_and_compensation.md),
 not a positive BGS theorem or a newly claimed general perturbation method.
 The family, its vanishing classical strength and its norms are essential.
-No computational verification or external priority assessment is asserted
-by this note.
+The finite verifier checks normalization and the cluster estimate; it does not
+certify the analytic parent theorem. External priority is unassessed.
 
 ## Exact finite statement
 
@@ -90,6 +90,71 @@ in (H4) alone does NOT imply F_N(ell)->0, because the latter multiplies the
 squared normalized trace by d_N. This note does not exchange these two
 normalizations or silently claim (H6) at the weaker scale.
 
+## An averaged form-factor theorem at the weaker strength
+
+The pointwise qualification above does not prevent an averaged statement at
+the weaker scale epsilon=o(N^(1/3)). Spectral separation supplies the missing
+upper bound; normalized trace convergence alone would not supply it.
+
+**Finite cluster estimate.** Let K>=3 be odd and D=Kn. Suppose a unitary
+spectrum has exactly n phases in each circular arc of radius eta about j/K,
+0<=j<K, where 0<=eta<=1/(4K). Choose real lifts
+
+    theta_(j,r)=j/K+e_(j,r),  |e_(j,r)|<=eta.
+
+For M>=1 consecutive integer times I, put L=max_(ell in I)|ell| and
+H_h=sum_(r=1)^h 1/r. With F(ell)=|Tr U^ell|^2/D, one has
+
+    |(1/M)sum_(ell in I) F(ell)-n|
+       <= 8 pi^2 n L^2 eta^2 + (2D/M) H_((K-1)/2).          (H8)
+
+**Proof.** Expand the squared trace into ordered eigenphase pairs. The
+same-cluster contribution would be n if all e_(j,r) were zero. Ordered
+pair symmetry cancels its imaginary part. The inequality
+1-cos(t)<=t^2/2 and |e_(j,r)-e_(j,s)|<=2eta show that this contribution is
+between n-8 pi^2 n L^2 eta^2 and n.
+
+For a distinct-cluster pair, write h=min(|j-k|,K-|j-k|). Its phase
+difference has circular distance at least h/K-2eta>=h/(2K). A finite
+geometric sum and |sin(pi x)|>=2 dist(x,Z) therefore give
+
+    |(1/M)sum_(ell in I) exp(2 pi i ell(theta_(j,r)-theta_(k,s)))|
+       <= 1/(M |sin(pi(theta_(j,r)-theta_(k,s)))|)
+       <= K/(Mh).
+
+There are n^2 ordered eigenphase pairs for each ordered pair of clusters,
+and sum_(j!=k)1/h=2K H_((K-1)/2). After dividing by D, the total
+distinct-cluster contribution in absolute value is at most
+2D H_((K-1)/2)/M. Combining the two bounds proves (H8). No randomness,
+independence or cancellation between different cluster pairs is assumed.
+
+**Application to the compensated family.** Assume g is inversion-even and
+epsilon_N=o(N^(1/3)). Then, for fixed 0<a<b,
+
+    (1/#I_N)sum_(ell in I_N) F_N(ell) = (d_N/K)(1+o(1)),
+    I_N={ell in Z : a d_N<=ell<=b d_N}.                      (H9)
+
+To justify multiplicities rather than merely spectral proximity, set
+S=exp(-i epsilon A)V exp(i epsilon A). Once delta_N<sin(pi/K), the
+straight homotopy U0+t(S-U0) has its spectrum in disjoint disks about the
+K roots. The normal resolvent bound for U0 excludes spectrum outside the
+delta_N neighborhoods throughout the homotopy. Contour projection ranks
+are constant, hence each final cluster contains exactly n=d_N/K levels.
+Every final eigenvalue is unitary and within chord distance delta_N of its
+root. Circular phase distance is at most one quarter of chord distance,
+so eta=delta_N/4 is valid. For large N, eta<=1/(4K), since
+N delta_N->0 and K=O(log N) on this Pell sequence.
+
+Apply (H8) with D=d_N, M=#I_N asymp D and L=O(D). Dividing its right
+side by n gives
+
+    O_(a,b)((D delta_N)^2 + K log K/D)=o(1).
+
+This proves (H9). Its mean diverges because d_N/K tends to infinity.
+It is a form-factor obstruction in a Heisenberg window for the explicitly
+compensated family, with the same symmetry and vanishing-classical-strength
+qualifications as (H4). It does not strengthen the pointwise assertion (H6).
+
 ## Relation to the larger microscopic pinning range
 
 The parent note obtains nearest-neighbour spacing collapse and divergent
@@ -100,7 +165,7 @@ compatible conclusions for different ranges, not an improvement of the
 Heisenberg-time estimate at unchanged strength.
 
 The counterterm -epsilon^2 R/N is explicitly part of V. It must not be
-removed when quoting (H1)--(H7), nor described as an unchanged fixed-strength
+removed when quoting (H1)--(H9), nor described as an unchanged fixed-strength
 classical perturbation. These statements do not establish the microscopic
 BGS conjecture, do not resolve all arithmetic symmetries, and do not claim
 novelty for the elementary telescoping argument.

@@ -502,6 +502,12 @@ P_split^+(Omega'_K^(3)) <= K^(4+o(1)),                  (42)
 
 where `Omega'_K^(3)` denotes the prime-to-`2K` product over ratio classes (with duplicate ratio classes quotiented as in the real-trace framework).
 
+This proposed bound excludes supported split primes for each fixed
+`0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. It does not alone cover all of
+`K=o(p^(1/4))`; an `O(K^4)` largest-split-divisor bound would suffice for
+that full regime. See the quantifier distinction in
+`cayley_product_row_real_trace_ideal.md`, Section 8.
+
 The bound (33) is exponentially weaker than (42).  The highest-value next step is therefore **not** another height estimate for `c_0`; it is a simultaneous-gcd theorem exploiting the special cyclotomic-unit expressions (23) or an exact low-order formula for `c_0,c_1,c_2` that exposes cancellation/common factors.
 
 Microscopic BGS/RMT remains downstream of the separate Heisenberg-scale trace-comparison problem in `trace_to_local_statistics_bridge.md`.

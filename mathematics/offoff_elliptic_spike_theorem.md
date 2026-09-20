@@ -147,11 +147,17 @@ I(2/d)=256 !=0.                                          (16)
 ```
 
 (The raw quartic before removing its common content has `I=65536`; only
-non-vanishing is load-bearing.)  Consequently the distinguished fiber has
-multiplicative type `I_4`, while the four simple residual roots have type
-`I_1`.  In particular all five finite points have nontrivial tame local
-monodromy in the rank-two `R^1` sheaf.  The pole of `j` at `t0` proves that the
-Jacobian over `F_p(t)` is non-isotrivial.
+non-vanishing is load-bearing.)  To pass to the Jacobian, use the classical
+binary-quartic formulas: for `p>3`, its integral Weierstrass model has `c4`
+equal to a unit multiple of `I`, and discriminant equal to a unit multiple
+of the quartic discriminant.  At `t0`, `c4` is a unit and the discriminant
+has order four, so this model is minimal with multiplicative type `I_4`.
+At a simple residual root, `I` cannot vanish: the identity
+`27 Disc(q)=4I^3-J^2` would then force `J` to vanish and the discriminant to
+have order at least two.  Thus these four fibers have type `I_1`.
+In particular all five finite points have nontrivial tame local monodromy in
+the rank-two `R^1` sheaf.  The pole of `j` at `t0` proves that the Jacobian
+over `F_p(t)` is non-isotrivial.
 
 ## 3. Exact reducible spike
 
@@ -222,18 +228,32 @@ uniformly bounded after the usual weight normalization.
 ## 5. Geometric irreducibility and conductor
 
 For a non-isotrivial elliptic curve over a global function field,
-Igusa's open-image theorem implies that the geometric image is open in the
-expected `SL_2` factor.  In particular the rank-two geometric `R^1` local
-system is irreducible.  A convenient modern source is Bandini--Longhi--Vigni,
-*Torsion points on elliptic curves over function fields and a theorem of
-Igusa*, Theorem 1.3 (equivalently Theorem 3.23), together with the determinant
-sequence displayed there.
+Igusa's open-image theorem gives an open arithmetic image in the group with
+cyclotomic determinant.  For any auxiliary prime `ell!=p`, this image contains
+an open subgroup of `SL_2(Z_ell)`.  The quotient by the geometric image is a
+quotient of the procyclic constants Galois group, hence is abelian.  The
+geometric image therefore contains the commutator of the arithmetic image;
+the commutator of an open subgroup of `SL_2(Z_ell)` contains an open subgroup
+of `SL_2(Z_ell)`.  This proves geometric irreducibility of the rank-two `R^1`
+local system.  A source for the arithmetic theorem and determinant sequence
+is Bandini--Longhi--Vigni,
+[*Torsion points on elliptic curves over function fields and a theorem of
+Igusa*, arXiv:0804.1425v2](https://arxiv.org/pdf/0804.1425v2),
+Theorem 1.3 (equivalently Theorem 3.23); its Lemma 4.1 supplies the required
+congruence-subgroup commutator inclusion.
 
-After the half-Tate normalization, the sheaf is pointwise pure of weight zero.
-The five finite singularities are tame multiplicative; there is at most one
-additional place at infinity.  Since the family has fixed degree and rank and
-`p>3`, its conductor is bounded by an absolute constant independent of
-`p,K,lambda`.
+After normalization by `sqrt(p)`, the local system is pointwise pure of
+weight zero on the smooth lisse locus.  At a multiplicative fiber the
+middle-extension stalk has unnormalized eigenvalue `+1` or `-1`; its
+normalized eigenvalue is therefore `+p^(-1/2)` or `-p^(-1/2)`, of weight
+minus one.  The middle extension has weights at most zero, rather than
+pointwise weight zero everywhere.
+
+The five finite singularities are tame multiplicative, and there is at most
+one additional place at infinity.  Elliptic-curve `R^1` has no wild
+ramification in residue characteristic `p>3`, including at infinity.
+Thus rank two and at most six singular places give an absolute conductor
+bound independent of `p,K,lambda`.
 
 ## 6. Finite singular support recovers the generic parameter class
 
@@ -303,12 +323,13 @@ Put
 K_lambda(t)=a_lambda(t)/sqrt(p).                         (28)
 ```
 
-These are traces of geometrically irreducible, weight-zero, uniformly bounded
-conductor middle-extension sheaves.
+These are traces of geometrically irreducible middle-extension sheaves of
+uniformly bounded conductor, pure of weight zero on their respective smooth
+lisse loci, with uniformly bounded traces also at singular points.
 
 The exact input is the Grothendieck--Lefschetz/Deligne argument written as
 Lemma 3.5 in Fouvry--Kowalski--Michel, *Counting sheaves using spherical codes*
-(arXiv:1210.0851): for geometrically irreducible weight-zero sheaves of bounded
+([arXiv:1210.0851v5](https://arxiv.org/pdf/1210.0851v5)): for geometrically irreducible weight-zero sheaves of bounded
 conductor that are not geometrically isomorphic, the normalized complete
 correlation is `O(p^(-1/2))`.
 

@@ -2,9 +2,12 @@
 
 `record/` is a compact provenance and status layer, not an archive source tree.
 
+See [the recovery audit](recovery_audit_20260920.md) for the current handoff,
+recovered amendments, verification boundary, and next mathematical obligation.
+
 ## Authoritative living status files
 
-- `claim_ledger.md` — base repository-wide claim status through 2026-09-06;
+- `claim_ledger.md` — repository-wide claim status, including the dated September 20 update;
 - `claim_ledger_addendum_20260907.md` — authoritative dated extension for later/corrected September 7 scopes; it wins over older prose in those scopes;
 - `research_routes.md` — route-level log of advances, obstructions and closure conditions; status still comes from the ledgers above;
 - `retractions.md` — false/superseded statements and failure mechanisms;

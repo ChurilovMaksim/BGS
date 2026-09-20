@@ -273,7 +273,7 @@ The pointwise Cayley-energy problem is now reduced to the exact geometric suppor
 P_split^+(Lambda'_K^(3)) <= K^(4+o(1)).                  (29)
 ```
 
-Indeed, (29) implies that for `K=o(p^(1/4))` every sufficiently large intended split design lies outside the exact order-three exceptional support and hence satisfies (24).
+For each fixed `0<epsilon<1/4`, (29) implies that every sufficiently large split design with `K<=p^(1/4-epsilon)` lies outside the exact order-three exceptional support and hence satisfies (24). It does not by itself cover the full regime `K=o(p^(1/4))`: the unspecified subpower factor in `K^(4+o(1))` may exceed the diverging ratio `p/K^4`. A bound `P_split^+(Lambda'_K^(3))=O(K^4)` would suffice for that full regime. For example, a loss `exp(sqrt(log K))` is permitted by (29), while `p/K^4` could grow only like `log K`; the proposed estimate alone does not compare those scales.
 
 No proof of (29) is currently known.  Generic subgroup-on-curve estimates retain the `K^(2/3)` loss, and bounded-solution statements for related Möbius/subgroup equations remain conjectural in the literature.  The active route is therefore to exploit the special Chebyshev/cyclotomic-unit structure of (7), not to invoke a nonexistent generic `O(1)` incidence theorem.
 

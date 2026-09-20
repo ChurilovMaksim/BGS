@@ -329,6 +329,12 @@ example,
 P_split^+( product_[r] Pi'_(K,r)^(3) ) <= K^(4+o(1)).    (26)
 ```
 
+This proposed bound excludes supported split primes for each fixed
+`0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. It does not alone cover all of
+`K=o(p^(1/4))`; an `O(K^4)` largest-split-divisor bound would suffice for
+that full regime. See the quantifier distinction in
+`cayley_product_row_real_trace_ideal.md`, Section 8.
+
 The new result changes the object to attack: the exceptional prime is a
 third-corank prime of a highly structured cyclotomic Sylvester module, not just
 a divisor of an opaque giant integer.

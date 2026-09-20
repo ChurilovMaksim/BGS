@@ -307,8 +307,11 @@ A bound
 P_split^+(G'_K^(3)) <= K^(4+o(1))                        (23)
 ```
 
-would, together with Corollary 2, close the pointwise Cayley-energy problem in
-the intended fourth-moment regime.  This bound is **OPEN**.
+would, together with Corollary 2, close the pointwise Cayley-energy problem
+for each fixed `0<epsilon<1/4` when `K<=p^(1/4-epsilon)`. The full intended
+regime `K=o(p^(1/4))` would follow from the stronger bound
+`P_split^+(G'_K^(3))=O(K^4)`; an unspecified subpower loss in (23) does not
+establish that conclusion. Both proposed bounds are **OPEN**.
 
 The structure behind (23) is unusually rigid.  Differences of cyclotomic trace
 values factor as

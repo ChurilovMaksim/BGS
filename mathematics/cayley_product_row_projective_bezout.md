@@ -563,12 +563,11 @@ now
 > P_split^+(B'_K^(3))<=K^(4+o(1)).                       (46)
 > ```
 
-By (35)--(36), (46) closes the pointwise quadratic Cayley-energy target in the
-intended regime
-
-```text
-K=o(p^(1/4)).
-```
+By (35)--(36), (46) closes the pointwise quadratic Cayley-energy target for
+each fixed `0<epsilon<1/4` in the regime `K<=p^(1/4-epsilon)`. To cover the
+full intended regime `K=o(p^(1/4))` by this exclusion argument, a bound
+`P_split^+(B'_K^(3))=O(K^4)` would suffice. The unspecified subpower loss
+in (46) does not by itself suffice for that full regime.
 
 Equation (46) is **OPEN**.
 
