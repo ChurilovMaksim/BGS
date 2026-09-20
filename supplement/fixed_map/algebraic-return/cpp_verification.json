@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_arguments": [
+    "-std=c++20",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "compiler_exit": 0,
+  "verifier_exit": 0,
+  "results": [
+    {
+      "N": 3,
+      "ordinary_midpoint": 0,
+      "p": 13,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 5,
+      "ordinary_midpoint": 0,
+      "p": 41,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": 0,
+      "p": 73,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 15,
+      "ordinary_midpoint": 0,
+      "p": 61,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 21,
+      "ordinary_midpoint": 0,
+      "p": 337,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": 0,
+      "p": 821,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 239,
+      "ordinary_midpoint": 0,
+      "p": 1913,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 1393,
+      "ordinary_midpoint": 0,
+      "p": 5573,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 7,
+      "ordinary_midpoint": 1,
+      "p": 29,
+      "independent_replay": "passed"
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": 1,
+      "p": 821,
+      "independent_replay": "passed"
+    }
+  ],
+  "corrupt_certificate_exit": 1,
+  "corrupt_certificate_stderr": "REJECTED: q(B)v != 0",
+  "elapsed_seconds": 2.918985709000026,
+  "input_sha256": {
+    "replay.cpp": "3d9f0dd6bdf8333b15721ee5c5697e4bc9d1f8e5ec453d6d9c373f0128dc3ce0",
+    "certificates.txt": "c9a3c12f0b6350ad70ffa5532231754334343452dba2582ceb7f1090f668ce31",
+    "certificates.json": "e6c8273511beac97a14999e8324331c9641943e998f5dd02106ebedf98e0b4ac"
+  },
+  "scope": "Exact finite C++ verification; not a formal proof assistant or asymptotic theorem"
+}

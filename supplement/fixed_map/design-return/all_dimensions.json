@@ -1,0 +1,56 @@
+[
+  {
+    "N": 2,
+    "probe_count": 11,
+    "checks": [
+      {
+        "repeated": false,
+        "energy": 0.8165382049305997,
+        "reconstruction_error": 4.9960036108132044e-15,
+        "erroneous_all_invariants_removed": 0.8165382049305997
+      },
+      {
+        "repeated": true,
+        "energy": 0.06064281382656156,
+        "reconstruction_error": 3.774758283725532e-15,
+        "erroneous_all_invariants_removed": 0.06064281382656156
+      }
+    ]
+  },
+  {
+    "N": 4,
+    "probe_count": 85,
+    "checks": [
+      {
+        "repeated": false,
+        "energy": 0.36054357593099917,
+        "reconstruction_error": 4.440892098500626e-16,
+        "erroneous_all_invariants_removed": 0.3605435759309993
+      },
+      {
+        "repeated": true,
+        "energy": 2.071828886617448,
+        "reconstruction_error": 7.993605777301127e-15,
+        "erroneous_all_invariants_removed": 0.03101256008683517
+      }
+    ]
+  },
+  {
+    "N": 6,
+    "probe_count": 735,
+    "checks": [
+      {
+        "repeated": false,
+        "energy": 0.7812477701615426,
+        "reconstruction_error": 1.1657341758564144e-14,
+        "erroneous_all_invariants_removed": 0.7812477701615427
+      },
+      {
+        "repeated": true,
+        "energy": 4.10239533559981,
+        "reconstruction_error": 2.6645352591003757e-14,
+        "erroneous_all_invariants_removed": 0.02076268253858398
+      }
+    ]
+  }
+]

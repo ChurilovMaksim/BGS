@@ -289,3 +289,136 @@ For the finite-circle model the remaining tasks are:
 
 No claim is made here that the required Heisenberg-scale trace comparison has
 been proved for the arithmetic cat maps in this repository.
+
+## 8. Stability under perturbations below one level spacing — 2026-09-16
+
+**Status: internal proof, not a BGS theorem or a priority claim.**
+This addresses the operator-comparison route proposed in the uploaded
+`BGS_verified_state(1).md`, §21.5o. Its unconditional `o(N^-2)` criterion
+is sufficient but is not a necessary accuracy threshold.
+
+### Theorem 4 (all fixed correlation orders)
+
+Let `U_N,V_N` be unitary matrices of the same dimension `N`, and put
+`epsilon_N=||U_N-V_N||op`. Fix `k>=2`. Suppose the factorial statistics
+`C_(k,N)(V_N;psi)` are bounded for every nonnegative Schwartz function `psi`.
+If `N epsilon_N -> 0`, then for every Schwartz test `phi`,
+
+```text
+C_(k,N)(U_N;phi)-C_(k,N)(V_N;phi) -> 0.
+```
+
+In particular, convergence of the reference correlations transfers at every
+fixed order for which this hypothesis holds. No averaging is needed. A scalar
+phase rotation or a unitary conjugation of the reference can be performed
+before applying the norm criterion, since neither changes these statistics.
+
+**Proof.** For `epsilon<2`, let `H` be the principal Hermitian logarithm of
+`UV*`, so `U=exp(iH)V` and
+
+```text
+||H||op <= 2 arcsin(epsilon/2).
+```
+
+Follow the eigenvalues along the analytic unitary path `exp(itH)V`,
+`0<=t<=1`. Continuous eigenangle lifts can be chosen piecewise analytically;
+at a multiple eigenvalue their one-sided angle derivatives are the eigenvalues
+of the compression of `H` to its eigenspace. At a simple eigenvalue the
+angle derivative is the expectation of `H` in the normalized eigenvector.
+In both cases its absolute value is at most `||H||op`. Integrating gives a
+bijection of eigenvalues, with multiplicities, and real phase lifts such that
+
+```text
+max_j |theta_j(U)-theta_j(V)| <= eta := arcsin(epsilon/2)/pi.
+```
+
+One can justify the piecewise analytic choice directly by applying analytic
+Hermitian perturbation theory to a local Cayley transform of the unitary path;
+finitely many overlapping spectral arcs cover the compact path. Relabeling at
+crossings does not change the bound. Integer changes of the final lifts are
+absorbed by the periodizing lattice in (1).
+
+For any anchored distinct-index tuple, every coordinate of its unfolded
+argument therefore moves by at most `d_N=2N eta`. Choose a nonnegative Schwartz
+function `psi` majorizing
+
+```text
+sup_{||h||infinity<=1} sum_l |partial_l phi(x+h)|.
+```
+
+Such a majorant exists: the displayed nonnegative function decays faster than
+any polynomial, and a smooth locally finite unit-cube partition gives a
+Schwartz majorant with the same decay property. For `d_N<=1`, the mean-value
+formula, followed by summation of the positive periodized measures, yields
+
+```text
+|C_(k,N)(U;phi)-C_(k,N)(V;phi)| <= d_N C_(k,N)(V;psi).   (18)
+```
+
+The right side tends to zero under the stated hypotheses. Absolute
+convergence of the periodizations follows from Schwartz decay. This proves
+the theorem, including multiple spectra. `□`
+
+The hypothesis on the reference measure matters. This is not an unconditional
+bound on the absolute Fourier trace discrepancy, and it does not apply to
+nonunitary, merely power-bounded reference operators.
+
+### Sharpness of the scale for general spectra
+
+Fix `0<a<1/4` and take even `N`. Let `V_N` be the diagonal clock with phases
+`j/N`, and let `U_N` have phases `(j+(-1)^j a)/N`. Both spectra are simple,
+and
+
+```text
+||U_N-V_N||op = 2 sin(pi a/N).
+```
+
+Choose `phi` smooth, supported in `(1-a,1+a)`, with `phi(1)=1`. Then exactly
+
+```text
+C_(2,N)(V_N;phi)=1,       C_(2,N)(U_N;phi)=0.
+```
+
+Indeed, clock differences in this interval equal 1. The perturbed differences
+are even integers or odd integers shifted by `+2a` or `-2a`, so none is in
+that interval; periodic lifts have the same property because `N` is even.
+Thus `O(1/N)` cannot replace `o(1/N)` in a general stability theorem. This is
+not a counterexample to CUE universality for a fixed nonlinear map.
+
+### A separate improvement for absolute Fourier comparisons
+
+For a nonnegative bounded weight `w` supported in `[-sigma,sigma]`, assume
+
+```text
+Q_V := N^-2 sum_m w(m/N) |Tr V_N^m|^2 = O(1).
+```
+
+Writing `d_m=Tr U_N^m-Tr V_N^m`, telescoping gives
+`|d_m|<=N |m| epsilon_N`, and therefore
+
+```text
+E := N^-2 sum_m w(m/N)|d_m|^2 = O(N^3 epsilon_N^2).
+```
+
+Cauchy--Schwarz gives the actual absolute Fourier bound
+
+```text
+N^-2 sum_m w(m/N) ||Tr U_N^m|^2-|Tr V_N^m|^2|
+ <= 2 sqrt(Q_V E)+E
+ = O(N^(3/2) epsilon_N + N^3 epsilon_N^2).             (19)
+```
+
+So `o(N^-3/2)` suffices in this stronger norm under the additional reference
+bound. Equations (18) and (19) control different quantities. Neither supplies
+a reference ensemble theorem, a comparison operator, or the required
+comparison accuracy for the proposed nonlinear map.
+
+## 9. Coherent summation rather than a per-time bound
+
+`heisenberg_time_insertion.md` proves a complementary deterministic mechanism:
+a small operator-valued Wiener budget in the time variable controls a
+Liouville insertion after summing over a Heisenberg window. A positive-window
+absorption argument can supply the required local pair bound. Exact
+counterexamples show why an unspecified positive-power per-time saving or
+small operator norm alone is insufficient. Its model-specific representation
+hypothesis remains open for the proposed fixed nonlinear map.

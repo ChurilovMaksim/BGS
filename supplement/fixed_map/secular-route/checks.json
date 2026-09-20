@@ -1,0 +1,122 @@
+{
+  "status": "checks passed, BGS route not closed",
+  "dense": [
+    {
+      "N": 5,
+      "identity_errors": [
+        {
+          "epsilon": 5e-80,
+          "kick_below_floating_resolution": true,
+          "Cauchy_Binet": 2.4428954017525815e-15,
+          "self_inversive": 2.4424906541753444e-15,
+          "Newton": 1.8333987949339546e-15
+        },
+        {
+          "epsilon": 0.17,
+          "kick_below_floating_resolution": false,
+          "Cauchy_Binet": 1.2009699976900343e-15,
+          "self_inversive": 2.4424906541753444e-15,
+          "Newton": 2.7649290304760724e-15
+        },
+        {
+          "epsilon": 2.4,
+          "kick_below_floating_resolution": false,
+          "Cauchy_Binet": 1.5840143722667706e-15,
+          "self_inversive": 2.4424906541753444e-15,
+          "Newton": 2.401779625492033e-15
+        }
+      ],
+      "phase_grid_error": 1.6653345369377348e-15,
+      "independent_phase_mean_abs_coefficient_squared": [
+        1.0,
+        0.9907730173900494,
+        0.5545252508287373,
+        0.5545252508287375,
+        0.9907730173900486,
+        0.9999999999999976
+      ],
+      "CUE_mean_abs_coefficient_squared_each_k": 1,
+      "scope": "finite algebra checks only; auxiliary phase grid is a different ensemble"
+    },
+    {
+      "N": 9,
+      "identity_errors": [
+        {
+          "epsilon": 8.999999999999999e-80,
+          "kick_below_floating_resolution": true,
+          "Cauchy_Binet": 4.750989259956121e-15,
+          "self_inversive": 5.407014809374268e-15,
+          "Newton": 1.0945120482019085e-14
+        },
+        {
+          "epsilon": 0.17,
+          "kick_below_floating_resolution": false,
+          "Cauchy_Binet": 5.311767472816653e-15,
+          "self_inversive": 4.775249788392737e-15,
+          "Newton": 1.1495320234295624e-14
+        },
+        {
+          "epsilon": 2.4,
+          "kick_below_floating_resolution": false,
+          "Cauchy_Binet": 8.322971118520123e-15,
+          "self_inversive": 4.551914400963142e-15,
+          "Newton": 7.381104677948019e-15
+        }
+      ],
+      "phase_grid_error": 2.220446049250313e-15,
+      "independent_phase_mean_abs_coefficient_squared": [
+        1.0,
+        0.9818473677410922,
+        0.6529648958333332,
+        0.8807945337828156,
+        1.0903405012652454,
+        1.0903405012652458,
+        0.8807945337828144,
+        0.6529648958333318,
+        0.9818473677410899,
+        0.9999999999999987
+      ],
+      "CUE_mean_abs_coefficient_squared_each_k": 1,
+      "scope": "finite algebra checks only; auxiliary phase grid is a different ensemble"
+    }
+  ],
+  "pigeonhole_exact_rational_evaluations": [
+    {
+      "N": 41,
+      "k": 20,
+      "subset_count_bits": 38,
+      "frequency_gap_upper_display": "1.7627239E-10",
+      "averaging_exponent_horizon": 13422659310152401,
+      "interval_character_modulus_loss_upper_display": "9.3302752E+11",
+      "loss_less_than_1e_minus_4_exact": false
+    },
+    {
+      "N": 239,
+      "k": 119,
+      "subset_count_bits": 235,
+      "frequency_gap_upper_display": "6.2102721E-69",
+      "averaging_exponent_horizon": 608105609331265108509601,
+      "interval_character_modulus_loss_upper_display": "2.3769937E-90",
+      "loss_less_than_1e_minus_4_exact": true
+    },
+    {
+      "N": 1393,
+      "k": 696,
+      "subset_count_bits": 1388,
+      "frequency_gap_upper_display": "3.5744496E-415",
+      "averaging_exponent_horizon": 27511303263205519495955740177249,
+      "interval_character_modulus_loss_upper_display": "1.6117194E-767",
+      "loss_less_than_1e_minus_4_exact": true
+    },
+    {
+      "N": 10001,
+      "k": 5000,
+      "subset_count_bits": 9995,
+      "frequency_gap_upper_display": "3.7257377E-3005",
+      "averaging_exponent_horizon": 10010004501200210025202100120004500100001,
+      "interval_character_modulus_loss_upper_display": "2.3181516E-5930",
+      "loss_less_than_1e_minus_4_exact": true
+    }
+  ],
+  "warning": "Pigeonhole concerns uniform character control, not the weighted determinant sum."
+}

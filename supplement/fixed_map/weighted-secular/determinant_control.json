@@ -1,0 +1,173 @@
+{
+  "exact_controls": [
+    {
+      "N": 2,
+      "integer_polynomial_and_Newton_checks": "passed",
+      "rational_Abel_identity": "passed"
+    },
+    {
+      "N": 3,
+      "integer_polynomial_and_Newton_checks": "passed",
+      "rational_Abel_identity": "passed"
+    },
+    {
+      "N": 9,
+      "integer_polynomial_and_Newton_checks": "passed",
+      "rational_Abel_identity": "passed"
+    },
+    {
+      "N": 31,
+      "integer_polynomial_and_Newton_checks": "passed",
+      "rational_Abel_identity": "passed"
+    },
+    {
+      "N": 127,
+      "integer_polynomial_and_Newton_checks": "passed",
+      "rational_Abel_identity": "passed"
+    }
+  ],
+  "ratio_checks": [
+    {
+      "N": 5,
+      "auxiliary_epsilon": 0.17,
+      "s": 1.0,
+      "resolvent_quadrature": 0.2685990126388923,
+      "exact_geometric_Abel_sum": 0.18004730251722967,
+      "identity_error": 1.3877787807814457e-16,
+      "scope": "floating identity check; not a trace comparison"
+    },
+    {
+      "N": 9,
+      "auxiliary_epsilon": 2.4,
+      "s": 1.0,
+      "resolvent_quadrature": 0.48151141551837223,
+      "exact_geometric_Abel_sum": 0.38556420033697525,
+      "identity_error": 2.1649348980190553e-15,
+      "scope": "floating identity check; not a trace comparison"
+    }
+  ],
+  "finite_CUE_ratio_checks": [
+    {
+      "N": 1,
+      "grid_per_angle": 64,
+      "formula_error": 3.0357660829594124e-18
+    },
+    {
+      "N": 2,
+      "grid_per_angle": 64,
+      "formula_error": 1.1159342773238595e-16
+    },
+    {
+      "N": 3,
+      "grid_per_angle": 40,
+      "formula_error": 1.1265022314309467e-16
+    }
+  ],
+  "limiting_control": [
+    {
+      "N": 31,
+      "s": 0.5,
+      "clock_Abel": 0.5844464130511032,
+      "clock_limit": 0.5819767068693263,
+      "CUE_limit": 0.6321205588285577
+    },
+    {
+      "N": 31,
+      "s": 1.0,
+      "clock_Abel": 0.1607806263592007,
+      "clock_limit": 0.15651764274966565,
+      "CUE_limit": 0.21616617919084682
+    },
+    {
+      "N": 31,
+      "s": 2.0,
+      "clock_Abel": 0.023900235742077454,
+      "clock_limit": 0.01865736036377405,
+      "CUE_limit": 0.06135527256945411
+    },
+    {
+      "N": 127,
+      "s": 0.5,
+      "clock_Abel": 0.582596004250644,
+      "clock_limit": 0.5819767068693263,
+      "CUE_limit": 0.6321205588285577
+    },
+    {
+      "N": 127,
+      "s": 1.0,
+      "clock_Abel": 0.15759279473305124,
+      "clock_limit": 0.15651764274966565,
+      "CUE_limit": 0.21616617919084682
+    },
+    {
+      "N": 127,
+      "s": 2.0,
+      "clock_Abel": 0.02000497884805729,
+      "clock_limit": 0.01865736036377405,
+      "CUE_limit": 0.06135527256945411
+    },
+    {
+      "N": 511,
+      "s": 0.5,
+      "clock_Abel": 0.582131615780402,
+      "clock_limit": 0.5819767068693263,
+      "CUE_limit": 0.6321205588285577
+    },
+    {
+      "N": 511,
+      "s": 1.0,
+      "clock_Abel": 0.1567869475419887,
+      "clock_limit": 0.15651764274966565,
+      "CUE_limit": 0.21616617919084682
+    },
+    {
+      "N": 511,
+      "s": 2.0,
+      "clock_Abel": 0.018996445555038207,
+      "clock_limit": 0.01865736036377405,
+      "CUE_limit": 0.06135527256945411
+    },
+    {
+      "N": 2047,
+      "s": 0.5,
+      "clock_Abel": 0.5820154389050701,
+      "clock_limit": 0.5819767068693263,
+      "CUE_limit": 0.6321205588285577
+    },
+    {
+      "N": 2047,
+      "s": 1.0,
+      "clock_Abel": 0.15658500018790697,
+      "clock_limit": 0.15651764274966565,
+      "CUE_limit": 0.21616617919084682
+    },
+    {
+      "N": 2047,
+      "s": 2.0,
+      "clock_Abel": 0.018742266024508677,
+      "clock_limit": 0.01865736036377405,
+      "CUE_limit": 0.06135527256945411
+    },
+    {
+      "N": 8191,
+      "s": 0.5,
+      "clock_Abel": 0.5819863901714074,
+      "clock_limit": 0.5819767068693263,
+      "CUE_limit": 0.6321205588285577
+    },
+    {
+      "N": 8191,
+      "s": 1.0,
+      "clock_Abel": 0.15653448404537212,
+      "clock_limit": 0.15651764274966565,
+      "CUE_limit": 0.21616617919084682
+    },
+    {
+      "N": 8191,
+      "s": 2.0,
+      "clock_Abel": 0.018678595146759163,
+      "clock_limit": 0.01865736036377405,
+      "CUE_limit": 0.06135527256945411
+    }
+  ]
+}

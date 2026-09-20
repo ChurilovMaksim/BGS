@@ -43,3 +43,11 @@ One-shot scripts that used to integrate research branches into older standalone 
 - **Julia:** retired; zero tracked `.jl` sources and no tracked Julia project environment.
 
 The goal is not a language percentage. It is one maintained implementation per scientific role, with independent checks where they materially increase confidence.
+# Recovered fixed-map computations
+
+The source and historical finite evidence for the fixed-map continuation
+are indexed in [the supplement](../supplement/fixed_map/README.md).
+Run `python computations/maintenance/verify_fixed_map_supplement.py` from
+the root for inventory/syntax checks and 28 isolated replays. The runner
+keeps generated outputs under `build/` and does not overwrite evidence.
+This complements the existing whole-workspace runner.

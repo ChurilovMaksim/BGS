@@ -4,6 +4,26 @@ This file is the repository-wide status authority. Historical commits, old
 manuscript text, exploratory notes and finite experiments may contain stronger
 language; this file wins.
 
+## Fixed-map update, 20 September 2026
+
+The [current fixed-map chapter](../mathematics/fixed_map_resolvent_frontier.md)
+and [indexed supplement](../supplement/fixed_map/README.md) integrate the
+previously unpublished work without promoting its open hypotheses.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Cotangent mixed-loop and Brownian identities | EXACT | Finite unitary spectra; not residual decay |
+| Full normalized mixed hierarchy implies compact all-order anchored correlations | EXACT + EXTERNAL-THEOREM | Bourgade--Huang v2, Theorem 1.9; whole-space moments; model hypothesis OPEN |
+| First two mixed levels imply the stated interval for subsequential pair limits | EXACT, conditional | Vanishing residuals unproved; interval does not identify CUE |
+| Microscopic RMS preservation forces global CUE entropy/N to diverge | EXACT | Global comparison only; local methods not excluded |
+| Algebraic-return and block-memory results | Scoped project proofs | Read exact hypotheses and finite/shrinking-coupling distinctions in the supplement |
+| Fixed-coupling BGS at tau=10^-80 | OPEN | No Heisenberg-scale mixed cancellation estimate |
+| New Lean kernels | Source formalization pending current build | Integer algebra only; no analytic BGS formalization |
+
+The [publication review](fixed_map_publication_20260920.md) records the
+actual verification scope. Dated snapshot statements about earlier
+nonpublication and old execution states are historical provenance.
+
 ## Status vocabulary
 
 - **EXACT** — current project derivation with explicit hypotheses.

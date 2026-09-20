@@ -78,3 +78,21 @@ Repository synchronization does not change mathematical scope: positive generic 
 Reproduce the new analytic illustration with
 `python computations/analysis/return_obstruction_figure.py`. The plotted curves
 are analytic limits and lower bounds, not measured cat-map spectra.
+# Fixed-map supplement, 20 September 2026
+
+The additional dependency `scipy==1.17.0` is pinned in `requirements.txt`.
+From the root run:
+
+```sh
+python computations/maintenance/verify_fixed_map_supplement.py
+python computations/maintenance/sync_fixed_map_section.py --check
+```
+
+The first command checks every retained inventory hash and Python source,
+and runs 28 isolated finite replays, including independent C++ replay and
+weighted minors through N=23. Results go to `build/fixed-map-replay/`.
+Exploratory echo and redesigned-symbol monodromy simulations, and Wolfram
+scripts, retain their dated evidence and are not counted as fresh runs.
+The new Lean kernel is included in the pinned `lake build`; its current
+execution status must be read separately from earlier 16-module reports.
+See [the publication review](record/fixed_map_publication_20260920.md).

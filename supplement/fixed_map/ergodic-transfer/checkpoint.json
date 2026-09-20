@@ -1,0 +1,22 @@
+{
+  "base_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "date": "2026-09-18",
+  "status": "Internal theorem, self-review and finite checks; BGS unresolved; no commit or push",
+  "files": {
+    "ergodic_spectral_transfer.md": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8",
+    "audit.md": "b6a57cfa03e5621967e5a41b48f82b3fc74b1db8df4ba01d29a155252af9b767",
+    "finite_checks.py": "f19739d9715140afe68f591fcf2c78e08573393817c66a94728a77e456bf003c",
+    "finite_checks.json": "49e8ba801ea208a60cda9a59afbd373182ee6ec94be5bb4abbd538acf647610f",
+    "endpoint_check.wl": "34421c58ab5202fcdbea3ca210fda2085df21bcc44d9788942f5caf7c3a3888f"
+  },
+  "dependency_hashes": {
+    "build/design-return/finite_symbol_normal_form.md": "b036d15cdfc114a58d11e7eac37b9b5a3b6590c09bafd64dbae7cda3c14a95c2",
+    "build/design-return/sparse_orbit_theorem.md": "15f349fc41eb18b6f2435aa9c97d72b15a43e5fbb1166537a37e228bfc5403e9",
+    "build/design-return/fixed_coupling_barrier.md": "604f4253d0d142e20ecb605cba54af8d73c05650502277765f909fc981e9707d",
+    "mathematics/bandlimited_correlation_extension.md": "1dcc4b156ee8fe0ae31745b5f3eae9d0dfbc0b9d808959f6fdb640bdfa24af90",
+    "mathematics/trace_to_local_statistics_bridge.md": "a85dcaf186f9c5942645af21b1d61c16d67a8700b0cb2f7da3ab008e4e44a63d"
+  },
+  "completed_command": "OPENBLAS_NUM_THREADS=1 python build/ergodic-transfer/finite_checks.py",
+  "review": "Self-review; no external referee or Lean certificate",
+  "last_metadata_update": "2026-09-19; recorded previously executed Wolfram Taylor check"
+}

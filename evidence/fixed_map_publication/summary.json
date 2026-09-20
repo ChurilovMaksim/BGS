@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "main_BGS_status": "OPEN",
+  "workspace_distinct_checks": 121,
+  "initial_passed": 119,
+  "repaired_checks": [
+    "pell_harmonic_returns",
+    "repository_audit"
+  ],
+  "repairs": [
+    "Supply required --output to harmonic-return check",
+    "Finish the linked publication review before structural recheck"
+  ],
+  "supplement_checks": 28,
+  "recovered_inventory_files": 115,
+  "low_order_finite_cases": 27,
+  "pdf_pages": 225,
+  "pdf_all_pages_rendered": true,
+  "new_chapter_pages_visually_reviewed": [
+    220,
+    221,
+    222,
+    223
+  ],
+  "Lean_current_revision": "Not compiled locally; source prepared for pinned CI",
+  "scope": "Executed coverage, source integrity and finite identity checks; not a complete proof audit of the mathematical corpus."
+}

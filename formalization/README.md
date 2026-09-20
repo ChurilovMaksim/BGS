@@ -9,13 +9,14 @@ cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains exactly the following 16 modules; `formalization/drafts/` is deliberately outside it.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 17 modules; `formalization/drafts/` is deliberately outside it.
 
 | Module | Maintained scope |
 |---|---|
 | `AnalyticOrbitKernels.lean` | symbolic discrete-increment growth and exact signed-action counterexample; no analytic estimates |
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
 | `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
+| `CueLoopKernels.lean` | integer positive-part cubic identity and cleared-denominator elimination; analytic hypotheses and limits are not formalized |
 | `FibonacciRatioSmall.lean` | exact residual Lucas/Fibonacci ratio range `1..12`; not a formalization of Carmichael's theorem |
 | `GeneralHyperbolicParity.lean` | finite Boolean/parity and explicit hyperbolic-period kernels; not the full character-theoretic spectral theorem |
 | `HistoricalMobiusDegenerateFiber.lean` | concrete finite falsifier for the retracted Möbius route |
@@ -56,6 +57,11 @@ for the reproduction commands and evidence boundary.
 
 Historical drafts remain outside the active import graph. No general analytic
 asymptotic theorem is claimed to have been formalized by this build.
+
+The 20 September `CueLoopKernels` addition is source-level formalization
+pending a successful current Lean build. This session has no local Lean
+executable; earlier 16-module build records do not certify the new module.
+The CI job runs the pinned full project and records its own actual status.
 
 ## Publication revision, 12 September 2026
 

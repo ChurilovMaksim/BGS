@@ -1,0 +1,152 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "N": 3,
+      "ordinary_midpoint": false,
+      "p": 13,
+      "period": 4,
+      "characteristic_degree": 3,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 5,
+      "ordinary_midpoint": false,
+      "p": 41,
+      "period": 6,
+      "characteristic_degree": 5,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": false,
+      "p": 73,
+      "period": 12,
+      "characteristic_degree": 9,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 15,
+      "ordinary_midpoint": false,
+      "p": 61,
+      "period": 12,
+      "characteristic_degree": 15,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 21,
+      "ordinary_midpoint": false,
+      "p": 337,
+      "period": 12,
+      "characteristic_degree": 21,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": false,
+      "p": 821,
+      "period": 5,
+      "characteristic_degree": 41,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 239,
+      "ordinary_midpoint": false,
+      "p": 1913,
+      "period": 7,
+      "characteristic_degree": 239,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 1393,
+      "ordinary_midpoint": false,
+      "p": 5573,
+      "period": 9,
+      "characteristic_degree": 1393,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 7,
+      "ordinary_midpoint": true,
+      "p": 29,
+      "period": 3,
+      "characteristic_degree": 7,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": true,
+      "p": 821,
+      "period": 5,
+      "characteristic_degree": 41,
+      "annihilator_residual_zero": true,
+      "resolvent_coprime": true,
+      "squarefree": true
+    }
+  ],
+  "failed_candidates": [
+    {
+      "N": 3,
+      "ordinary_midpoint": false,
+      "p": 13,
+      "weight": 1,
+      "candidate_degree": 2,
+      "reason": "candidate degree was not N"
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": false,
+      "p": 37,
+      "weight": 1,
+      "candidate_degree": 7,
+      "reason": "candidate degree was not N"
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": false,
+      "p": 37,
+      "weight": 2,
+      "candidate_degree": 5,
+      "reason": "candidate degree was not N"
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": false,
+      "p": 73,
+      "weight": 1,
+      "candidate_degree": 8,
+      "reason": "candidate degree was not N"
+    },
+    {
+      "N": 15,
+      "ordinary_midpoint": false,
+      "p": 61,
+      "weight": 1,
+      "candidate_degree": 11,
+      "reason": "candidate degree was not N"
+    }
+  ],
+  "raw_N7_rejected": true,
+  "corrupt_polynomial_rejected": true,
+  "elapsed_seconds": 6.969948498000122,
+  "certificate_sha256": "e6c8273511beac97a14999e8324331c9641943e998f5dd02106ebedf98e0b4ac",
+  "scope": "Exact finite simplicity certificates, not an all-N simplicity or BGS theorem"
+}

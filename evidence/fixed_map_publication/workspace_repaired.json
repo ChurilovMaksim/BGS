@@ -1,0 +1,43 @@
+{
+  "producer": "computations/maintenance/verify_workspace.py",
+  "scope": "Executable Python/C++ coverage with sequential certificate replays; not a complete proof audit. Lean and TeX are separate.",
+  "input_commit": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "name": "pell_harmonic_returns",
+      "source": "computations/verification/pell_harmonic_returns.py",
+      "sha256": "592c74f6b650508380fd5409750c77a5e7a019f1b4a8497e209fc158cf44d767",
+      "source_unchanged": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/75a15b7b1123/WoW/computations/verification/pell_harmonic_returns.py",
+        "--output",
+        "/workspace/scratch/75a15b7b1123/WoW/build/publication-20260920/repaired-workspace-logs/pell_harmonic_returns.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.719,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "repository_audit",
+      "source": "computations/verification/repository_audit.py",
+      "sha256": "e02744ae4c3fb753a93d0821ac418e03ee406bbc4c8b2f158c9936014fa39fc0",
+      "source_unchanged": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/75a15b7b1123/WoW/computations/verification/repository_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.114,
+      "log_sha256": "02234b2c56222f90df3cbe36275870f9a595bc2aedf040bdfbdf5ef48b002f00"
+    }
+  ],
+  "selection": [
+    "pell_harmonic_returns",
+    "repository_audit"
+  ],
+  "passed": 2,
+  "total": 2,
+  "repository_mutation_policy": "Generated verifier outputs stay below --logs; committed evidence is not rewritten."
+}

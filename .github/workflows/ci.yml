@@ -29,6 +29,7 @@ jobs:
         run: |
           python -W error::SyntaxWarning -m compileall -q computations
           python computations/maintenance/verify_workspace.py --build "$RUNNER_TEMP/wow-build" --logs "$RUNNER_TEMP/checks" --output "$RUNNER_TEMP/workspace.json"
+          python computations/maintenance/verify_fixed_map_supplement.py --output-dir "$RUNNER_TEMP/fixed-map-replay"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -36,6 +37,7 @@ jobs:
           path: |
             ${{ runner.temp }}/checks/
             ${{ runner.temp }}/workspace.json
+            ${{ runner.temp }}/fixed-map-replay/verification.json
   formalization:
     runs-on: ubuntu-latest
     timeout-minutes: 20

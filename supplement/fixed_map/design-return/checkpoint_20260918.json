@@ -1,0 +1,28 @@
+{
+  "base_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "checkpoint_date": "2026-09-18",
+  "status": "Internal analytic proofs and finite checks; fixed-map BGS unresolved; not committed or pushed",
+  "files": {
+    "research_checkpoint.md": "9f7f0073a45d5adabce8bb5d2d55c8d30d0ba72f59d24f01f2550c606bbd2748",
+    "finite_symbol_normal_form.md": "b036d15cdfc114a58d11e7eac37b9b5a3b6590c09bafd64dbae7cda3c14a95c2",
+    "sparse_orbit_theorem.md": "15f349fc41eb18b6f2435aa9c97d72b15a43e5fbb1166537a37e228bfc5403e9",
+    "fixed_coupling_barrier.md": "604f4253d0d142e20ecb605cba54af8d73c05650502277765f909fc981e9707d",
+    "sparse_orbit_checks.py": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
+    "sparse_orbit_checks.json": "223ca5c9e426a3dc5af9be4abdf81d9b62d25a7128f82ae30e6c83c975d2c300",
+    "sparse_orbit_checks.wl": "05ac957992263a086b3d7e412d47cb73753f665174d52cf4e74dbea96d55f3d9",
+    "frozen_sharp_return.py": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
+    "frozen_sharp_return.json": "f9f24116689d717933dd108c0e0d22d4f4c95fbf704160e46a9ef21f8608f056",
+    "frozen_matrix_check.py": "d17436d7d954e40e52f3ec475e0f8f2c204f37ee4f99bd1614450ddb93efcc8f",
+    "frozen_matrix_check.json": "fc347c6d9c722d9feb1e16430ba7b8b5999997c7fe0c79cf451c4f30259eed64",
+    "fixed_kick_bandwidth.py": "779259081f57d36b3538f7099f32438d0747caa7c8280a14c28dc201c3177447",
+    "fixed_kick_bandwidth.json": "9a86433e1be39d7c07fd93498e156b1d4d4612f7332ef0442ba56dda94fa793a"
+  },
+  "completed_commands": [
+    "python build/design-return/sparse_orbit_checks.py",
+    "python build/design-return/frozen_sharp_return.py",
+    "OPENBLAS_NUM_THREADS=1 python build/design-return/frozen_matrix_check.py",
+    "OPENBLAS_NUM_THREADS=1 python build/design-return/fixed_kick_bandwidth.py"
+  ],
+  "wolfram": "Exact code executed via Wolfram evaluator; returned expression recorded in sparse_orbit_checks.wl",
+  "formalization": "No Lean verification of these analytic proofs"
+}

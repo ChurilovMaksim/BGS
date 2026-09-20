@@ -1,0 +1,78 @@
+{
+  "checkpoint": "report-audit-20260919-cue-variance-folded-control",
+  "date": "2026-09-19",
+  "base_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "original_goal": "Fixed deterministic smooth perturbed map; Heisenberg-window all-k CUE statistics without parameter averaging",
+  "goal_status": "Open; no complete BGS proof, no fixed-map counterexample and no established novelty claim",
+  "publication": "No tracked edits, commit or push; user condition on main barrier remains in force",
+  "inputs": {
+    "/workspace/scratch/75a15b7b1123/upload/research-summary.md": "eff0741b86f8bbe3de385e0c92b464c920eeb5a59321205604b1ffd49b4e5ad1",
+    "/workspace/scratch/75a15b7b1123/upload/research-summary (1).md": "c3a5f13c6c5f9d7d90ba32bb62c47bb339d01d8f2802d347a22d810999fa42c3"
+  },
+  "artifacts": {
+    "audit.md": "8fd21059bd23fbab382e78c930a931fc6a88716418f1d22ba74f5f77eb4eb3b0",
+    "cubic_variance.json": "6941499f8acfbd1065b8e562705dacaf8ca453cc6850d10c7f3f3824558cc47f",
+    "cubic_variance.md": "57eb5bf2056b860d56d1ae6b540f60887346eeae9c53afc3ee9046c8b95ea5e9",
+    "cubic_variance.py": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
+    "cue_reference.md": "0d2d142f4b1e85489125f2c4d45569f47e4c9a779e6f9047d6a371b2a18b6c03",
+    "cue_reference.png": "c61a155193a823d8e1544b0f157ecbe409f4400a699653c31ec2bd5857bf4708",
+    "cue_reference.svg": "31d0e0b26cae6ab5f47924774529ec429ab6cf8abcf74fd5b192c3ff52181bbf",
+    "exact_symbol_check.wl": "0786c85bb8d2d537139ac2ee4e69b21c203c07f35a0be8a1cc60a9fccf58fbc4",
+    "folded_spectrum_control.json": "025236997b1a9e9351e7be6e8be87d78f7bf47d9cb52117de39442d7c2c7cea4",
+    "folded_spectrum_control.md": "c8474014a2eedad9b1b3d71163c5516dde5f4b03ce86cf6188ace644c3962c6e",
+    "folded_spectrum_control.py": "6a8e574c09f0df9c164be5661b129125108d3e04e5f1d70774bb9d2f60c26e10",
+    "independent_variance_review.json": "9fadaaede5e157b908fc6c5022b4da82fc2f68dfd8ad2a2476db0b9809806424",
+    "independent_variance_review.py": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
+    "monodromy_eigenangles.npz": "11f18c06908ebd9d2849c8db7339507be93a0fe3394c436344034dbb55cd6773",
+    "monodromy_experiment.json": "426c97b72dae6c73178709d9af545595ed493151edfe5e7de8879e551c01d1a2",
+    "monodromy_experiment.py": "e2c7a0881c5f780b6770e99368e60b462fd3a69ae5f0ce89a073d21443fb0f06",
+    "plot_reference.py": "d22728c24135431002fc31bd8551a87f96b1c970ef3e041dc37455f65cee02b4",
+    "resonant_normalization.md": "cffe68c1dc6b0cb8fb9d144704d638933efadd500584fdb0205e9b8d4d5b5748",
+    "symbol_and_symmetry.md": "91a755b36e6828742a430f34695733c1b1ae950f05ccb40ea63b9ee1e67a9e2d",
+    "verify.json": "96d4f339cd530fc71d74e536a01c85e9f0243ee854f89ed36348c8e4c4c544b6",
+    "verify.py": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322"
+  },
+  "dependencies": {
+    "mathematics/trace_to_local_statistics_bridge.md": "a85dcaf186f9c5942645af21b1d61c16d67a8700b0cb2f7da3ab008e4e44a63d",
+    "mathematics/bandlimited_correlation_extension.md": "1dcc4b156ee8fe0ae31745b5f3eae9d0dfbc0b9d808959f6fdb640bdfa24af90",
+    "mathematics/heisenberg_time_insertion.md": "f1937a140fb6bd27846856b17bb21f862f22c88c4452a7ede7b3b4562e7a08ed",
+    "build/ergodic-transfer/ergodic_spectral_transfer.md": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "matplotlib": "3.10.8"
+  },
+  "executed": [
+    "PYTHONPATH=../dependencies/python OPENBLAS_NUM_THREADS=1 python build/report-audit-20260919/verify.py",
+    "OPENBLAS_NUM_THREADS=1 python build/report-audit-20260919/monodromy_experiment.py",
+    "PYTHONPATH=../dependencies/python OPENBLAS_NUM_THREADS=1 python build/report-audit-20260919/cubic_variance.py",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=../dependencies/python python build/report-audit-20260919/independent_variance_review.py",
+    "OPENBLAS_NUM_THREADS=1 python build/report-audit-20260919/folded_spectrum_control.py",
+    "OPENBLAS_NUM_THREADS=1 python build/report-audit-20260919/plot_reference.py",
+    "Wolfram exact_symbol_check.wl; observed exact output saved as comments in that source"
+  ],
+  "review": {
+    "primary": "Self-review of the report audit and folded-spectrum proof",
+    "separate": "One focused agent independently derived the cubic covariance and rebuilt the sixth-cumulant certificate via cyclic onto maps",
+    "saved_verifier_execution": "Final saved independent verifier executed by root after review; all assertions passed",
+    "external_referee": false,
+    "lean_formalization": false
+  },
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/math/0002099",
+      "locator": "Soshnikov, Theorem 2, equation (1.28)",
+      "role": "finite-rank determinantal generating-function framework"
+    },
+    {
+      "url": "https://users.math.msu.edu/users/newhous7/Papers/PDF/Codimension-1-Anosov.pdf",
+      "locator": "Newhouse (1970), Corollary (1.3), page 762",
+      "role": "topological classification input for the classical candidate"
+    }
+  ],
+  "remaining_obligation": "Coherent CUE-subtracted trace or folded monodromy estimates for the actual fixed smooth quantization at times of order N; existing local bounds and short traces do not imply them",
+  "running_jobs": []
+}

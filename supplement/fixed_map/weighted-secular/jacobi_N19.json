@@ -1,0 +1,45 @@
+{
+  "N": 19,
+  "generator_eigenvalue_error": 5.348044056219248e-15,
+  "subset_frequency_error": 1.1324274851176597e-14,
+  "principal_minor_error": 9.759456084714785e-14,
+  "windows": [
+    {
+      "t": 0.0,
+      "width": 0.05263157894736842,
+      "signed_sum_error": 1.0480505352461478e-13,
+      "pair_count_agrees": true
+    },
+    {
+      "t": 0.0,
+      "width": 0.002770083102493075,
+      "signed_sum_error": 1.432187701766452e-14,
+      "pair_count_agrees": true
+    },
+    {
+      "t": 1.0,
+      "width": 0.05263157894736842,
+      "signed_sum_error": 6.128431095930864e-14,
+      "pair_count_agrees": true
+    },
+    {
+      "t": 1.0,
+      "width": 0.002770083102493075,
+      "signed_sum_error": 4.907185768843192e-14,
+      "pair_count_agrees": true
+    },
+    {
+      "t": 100.0,
+      "width": 0.05263157894736842,
+      "signed_sum_error": 3.2383123960144644e-12,
+      "pair_count_agrees": true
+    },
+    {
+      "t": 100.0,
+      "width": 0.002770083102493075,
+      "signed_sum_error": 2.6152413568070187e-12,
+      "pair_count_agrees": true
+    }
+  ],
+  "scope": "two floating implementations; no interval or asymptotic certificate"
+}

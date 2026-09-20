@@ -1,0 +1,277 @@
+{
+  "status": "finite identity checks passed; full mixed hierarchy UNPROVED",
+  "CUE": {
+    "integer_coefficients_checked": 767,
+    "rational_CUE_stationarity": true,
+    "warning": "CUE expectations are references, not the deterministic model."
+  },
+  "loops": [
+    {
+      "N": 3,
+      "case": "clock",
+      "mixed_formula_error": 2.2887833992611187e-16,
+      "same_half_plane_max_error": 3.477763656540197e-15,
+      "Fourier_sum_error": 4.163336342344337e-17,
+      "data": {
+        "L": 0.12461038228415615,
+        "C0_real": 0.015527747373003538,
+        "C0_imag": 0.0,
+        "derivative": -0.2802762593143194,
+        "C1": 0.034925331818330616,
+        "source": 0.18761175651349013,
+        "Brownian_W": 0.012548295037999826,
+        "mixed_bracket_real": -0.06647344059077417,
+        "mixed_bracket_imag": 0.0
+      }
+    },
+    {
+      "N": 3,
+      "case": "nonuniform_control",
+      "mixed_formula_error": 6.087272963323595e-16,
+      "same_half_plane_max_error": 4.907951813174212e-15,
+      "Fourier_sum_error": 1.1102230246251565e-16,
+      "data": {
+        "L": 0.33103066975089834,
+        "C0_real": 0.1178684088219422,
+        "C0_imag": -0.020532217653848193,
+        "derivative": -0.4773877514816253,
+        "C1": 0.15469881664070834,
+        "source": 0.18761175651349013,
+        "Brownian_W": -0.20578093586803087,
+        "mixed_bracket_real": 0.2422875083249067,
+        "mixed_bracket_imag": -0.020532217653848193
+      }
+    },
+    {
+      "N": 3,
+      "case": "frozen_auxiliary_epsilon_0.17",
+      "mixed_formula_error": 2.2724877535296173e-16,
+      "same_half_plane_max_error": 3.0201331455116262e-15,
+      "Fourier_sum_error": 2.7755575615628914e-17,
+      "data": {
+        "L": 0.1621699899708758,
+        "C0_real": 0.012168570795923803,
+        "C0_imag": -0.0013002544373762234,
+        "derivative": -0.2710975376541568,
+        "C1": 0.03712880452377549,
+        "source": 0.18761175651349013,
+        "Brownian_W": 0.014934183162636248,
+        "mixed_bracket_real": -0.03227300948113426,
+        "mixed_bracket_imag": -0.0013002544373762234
+      }
+    },
+    {
+      "N": 5,
+      "case": "clock",
+      "mixed_formula_error": 2.3714374201337736e-16,
+      "same_half_plane_max_error": 1.8209540316140613e-15,
+      "Fourier_sum_error": 1.3877787807814457e-17,
+      "data": {
+        "L": 0.12461038228415618,
+        "C0_real": 0.015527747373003546,
+        "C0_imag": 3.944304526105059e-34,
+        "derivative": -0.2802762593143193,
+        "C1": 0.03492533181833062,
+        "source": 0.1877998130581572,
+        "Brownian_W": 0.012736351582666929,
+        "mixed_bracket_real": -0.06647344059077415,
+        "mixed_bracket_imag": 3.944304526105059e-34
+      }
+    },
+    {
+      "N": 5,
+      "case": "nonuniform_control",
+      "mixed_formula_error": 2.833104712928967e-16,
+      "same_half_plane_max_error": 5.881301029635769e-16,
+      "Fourier_sum_error": 1.1753596676954348e-17,
+      "data": {
+        "L": 0.15466814245033508,
+        "C0_real": 0.013005914668668031,
+        "C0_imag": -0.00015959297287348307,
+        "derivative": -0.2743847535456845,
+        "C1": 0.036700875989555,
+        "source": 0.1877998130581572,
+        "Brownian_W": 0.01390656029575997,
+        "mixed_bracket_real": -0.038937513128930734,
+        "mixed_bracket_imag": -0.00015959297287348307
+      }
+    },
+    {
+      "N": 5,
+      "case": "frozen_auxiliary_epsilon_0.17",
+      "mixed_formula_error": 1.2491213638023616e-16,
+      "same_half_plane_max_error": 3.0436364816617974e-16,
+      "Fourier_sum_error": 5.551115123125783e-17,
+      "data": {
+        "L": 0.14909195715990262,
+        "C0_real": 0.012350107493530818,
+        "C0_imag": -0.0013029004877262512,
+        "derivative": -0.2721062083821754,
+        "C1": 0.03683055801032955,
+        "source": 0.1877998130581572,
+        "Brownian_W": 0.014916150856739953,
+        "mixed_bracket_real": -0.04516950559450042,
+        "mixed_bracket_imag": -0.0013029004877262512
+      }
+    },
+    {
+      "N": 9,
+      "case": "clock",
+      "mixed_formula_error": 2.249570423364532e-16,
+      "same_half_plane_max_error": 1.3632057083724538e-15,
+      "Fourier_sum_error": 2.7755575615628914e-17,
+      "data": {
+        "L": 0.12461038228415618,
+        "C0_real": 0.015527747373003541,
+        "C0_imag": 2.775446144675564e-18,
+        "derivative": -0.2802762593143194,
+        "C1": 0.03492533181833062,
+        "source": 0.18782591914582578,
+        "Brownian_W": 0.012762457670335466,
+        "mixed_bracket_real": -0.06647344059077415,
+        "mixed_bracket_imag": 2.775446144675564e-18
+      }
+    },
+    {
+      "N": 9,
+      "case": "nonuniform_control",
+      "mixed_formula_error": 2.6697343572326224e-15,
+      "same_half_plane_max_error": 2.5989654674417885e-15,
+      "Fourier_sum_error": 6.546139416680338e-17,
+      "data": {
+        "L": 0.316535403977266,
+        "C0_real": 0.07307987066443211,
+        "C0_imag": 0.017256287801398575,
+        "derivative": -0.35530806090525185,
+        "C1": 0.10176270254315592,
+        "source": 0.18782591914582578,
+        "Brownian_W": -0.09159081384995607,
+        "mixed_bracket_real": 0.18300370439376423,
+        "mixed_bracket_imag": 0.017256287801398575
+      }
+    },
+    {
+      "N": 9,
+      "case": "frozen_auxiliary_epsilon_0.17",
+      "mixed_formula_error": 3.4021815010030383e-16,
+      "same_half_plane_max_error": 2.500323328637634e-15,
+      "Fourier_sum_error": 2.7755575615628914e-17,
+      "data": {
+        "L": 0.15585287492677152,
+        "C0_real": 0.012601203360964453,
+        "C0_imag": -0.0013105824996177112,
+        "derivative": -0.27168615993930256,
+        "C1": 0.03677620691159253,
+        "source": 0.18782591914582578,
+        "Brownian_W": 0.015206632264581965,
+        "mixed_bracket_real": -0.03815749196019788,
+        "mixed_bracket_imag": -0.0013105824996177112
+      }
+    },
+    {
+      "N": 15,
+      "case": "clock",
+      "mixed_formula_error": 3.4982123884438884e-16,
+      "same_half_plane_max_error": 2.1010187007221412e-15,
+      "Fourier_sum_error": 2.7755575615628914e-17,
+      "data": {
+        "L": 0.12461038228415615,
+        "C0_real": 0.015527747373003536,
+        "C0_imag": -5.072661569037824e-19,
+        "derivative": -0.2802762593143194,
+        "C1": 0.034925331818330616,
+        "source": 0.18782833870303553,
+        "Brownian_W": 0.012764877227545227,
+        "mixed_bracket_real": -0.06647344059077417,
+        "mixed_bracket_imag": -5.072661569037824e-19
+      }
+    },
+    {
+      "N": 15,
+      "case": "nonuniform_control",
+      "mixed_formula_error": 0.0,
+      "same_half_plane_max_error": 3.84752750796379e-15,
+      "Fourier_sum_error": 4.2276033262255756e-16,
+      "data": {
+        "L": 0.5487863917509154,
+        "C0_real": 0.2530887649112576,
+        "C0_imag": 0.08902983315311266,
+        "derivative": -0.3635894182705776,
+        "C1": 0.1669821903517483,
+        "source": 0.18782833870303553,
+        "Brownian_W": -0.16094856078400158,
+        "mixed_bracket_real": 0.595263586414239,
+        "mixed_bracket_imag": 0.08902983315311266
+      }
+    },
+    {
+      "N": 15,
+      "case": "frozen_auxiliary_epsilon_0.17",
+      "mixed_formula_error": 2.001678469026771e-15,
+      "same_half_plane_max_error": 1.5266197384099925e-15,
+      "Fourier_sum_error": 1.4046172853913366e-16,
+      "data": {
+        "L": 0.3147898701682531,
+        "C0_real": 0.12793215163745625,
+        "C0_imag": 0.0017743890147212849,
+        "derivative": -0.49410610971289254,
+        "C1": 0.1842979371848524,
+        "source": 0.18782833870303553,
+        "Brownian_W": -0.24352265333826315,
+        "mixed_bracket_real": 0.2361104515577755,
+        "mixed_bracket_imag": 0.0017743890147212849
+      }
+    }
+  ],
+  "Brownian": [
+    {
+      "N": 3,
+      "m": 1,
+      "generator": -0.2944678452053888,
+      "error": 6.0751403907488566e-12
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "generator": 2.653001380386147,
+      "error": 5.316529438914586e-10
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "generator": -24.393289459127843,
+      "error": 4.1009645457279476e-08
+    },
+    {
+      "N": 3,
+      "observable": "L",
+      "W": 0.013144399345310025,
+      "error": 6.554631837296654e-12
+    },
+    {
+      "N": 5,
+      "m": 1,
+      "generator": 0.13596082048239266,
+      "error": 1.5392992436247255e-11
+    },
+    {
+      "N": 5,
+      "m": 2,
+      "generator": 1.2783184579258553,
+      "error": 2.3019564032722428e-10
+    },
+    {
+      "N": 5,
+      "m": 4,
+      "generator": 16.392242564542553,
+      "error": 4.177650225756224e-09
+    },
+    {
+      "N": 5,
+      "observable": "L",
+      "W": 0.014225215902187137,
+      "error": 1.4944677440009713e-11
+    }
+  ],
+  "scope": "Auxiliary exponents check formulas only. Original tau=1e-80 is not resolved."
+}

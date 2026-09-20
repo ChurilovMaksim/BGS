@@ -1,0 +1,234 @@
+{
+  "identity_divisor_cases": 348,
+  "pair_rows": [
+    {
+      "K": 9,
+      "nonzero_pairs": 5152,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 15,
+      "nonzero_pairs": 8608,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 21,
+      "nonzero_pairs": 12064,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 25,
+      "nonzero_pairs": 14368,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 27,
+      "nonzero_pairs": 15520,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 33,
+      "nonzero_pairs": 18976,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 35,
+      "nonzero_pairs": 20128,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 39,
+      "nonzero_pairs": 22432,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 45,
+      "nonzero_pairs": 25888,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 49,
+      "nonzero_pairs": 28192,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 63,
+      "nonzero_pairs": 36256,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 99,
+      "nonzero_pairs": 56992,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 105,
+      "nonzero_pairs": 60448,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 193,
+      "nonzero_pairs": 111136,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 195,
+      "nonzero_pairs": 112288,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 197,
+      "nonzero_pairs": 113440,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 199,
+      "nonzero_pairs": 114592,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 201,
+      "nonzero_pairs": 115744,
+      "short_orbit_pairs": 0
+    },
+    {
+      "K": 203,
+      "nonzero_pairs": 116896,
+      "short_orbit_pairs": 0
+    }
+  ],
+  "radius9_random_stress_cases": 40000,
+  "sharp_examples": [
+    {
+      "K": 9,
+      "terms": 3,
+      "period": 3,
+      "label": [
+        199,
+        0
+      ]
+    },
+    {
+      "K": 15,
+      "terms": 3,
+      "period": 5,
+      "label": [
+        6727,
+        0
+      ]
+    },
+    {
+      "K": 21,
+      "terms": 3,
+      "period": 7,
+      "label": [
+        228487,
+        0
+      ]
+    },
+    {
+      "K": 25,
+      "terms": 5,
+      "period": 5,
+      "label": [
+        45245801,
+        0
+      ]
+    },
+    {
+      "K": 27,
+      "terms": 3,
+      "period": 9,
+      "label": [
+        7761799,
+        0
+      ]
+    },
+    {
+      "K": 33,
+      "terms": 3,
+      "period": 11,
+      "label": [
+        263672647,
+        0
+      ]
+    },
+    {
+      "K": 35,
+      "terms": 5,
+      "period": 7,
+      "label": [
+        52206080681,
+        0
+      ]
+    },
+    {
+      "K": 39,
+      "terms": 3,
+      "period": 13,
+      "label": [
+        8957108167,
+        0
+      ]
+    },
+    {
+      "K": 49,
+      "terms": 7,
+      "period": 7,
+      "label": [
+        11928358550250479,
+        0
+      ]
+    },
+    {
+      "K": 99,
+      "terms": 3,
+      "period": 33,
+      "label": [
+        18331383042996456903624199,
+        0
+      ]
+    },
+    {
+      "K": 105,
+      "terms": 3,
+      "period": 35,
+      "label": [
+        622727397928480968026608327,
+        0
+      ]
+    },
+    {
+      "K": 195,
+      "terms": 3,
+      "period": 65,
+      "label": [
+        57655281103594740648817333742004609724017524689927,
+        0
+      ]
+    },
+    {
+      "K": 201,
+      "terms": 3,
+      "period": 67,
+      "label": [
+        1958582344510753500163305643119281127603585742169287,
+        0
+      ]
+    },
+    {
+      "K": 203,
+      "terms": 7,
+      "period": 29,
+      "label": [
+        4008383343494913355776677556098122854267413735404796407285729181039,
+        0
+      ]
+    }
+  ],
+  "threshold_certificate": {
+    "N39": 423859315570607,
+    "rhs": 387420489000000
+  },
+  "scope": "Exact finite checks; the separate proof supplies all-K quantifiers"
+}

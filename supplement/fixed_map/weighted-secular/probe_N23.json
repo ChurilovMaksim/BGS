@@ -1,0 +1,62 @@
+{
+  "N": 23,
+  "k": 11,
+  "subset_count": 1352078,
+  "principal_minor_sum_check": 3.5100350850307074e-12,
+  "minimum_adjacent_frequency_gap_float": 4.061146974265739e-10,
+  "maximum_absolute_subset_frequency": 6.652691401952313,
+  "diagonal_mass": 1.9118825345168058,
+  "total_weight_squared": 4.00000000000004,
+  "windows": [
+    {
+      "width": 0.043478260869565216,
+      "unordered_close_pairs": 14128429764,
+      "signed_offdiagonal_sum": 7.038912330414865,
+      "absolute_offdiagonal_sum": 26228.68723099668,
+      "diagonal_mass": 1.911882534516806,
+      "signed_over_diagonal": 3.681665689881844,
+      "signed_over_absolute": 0.000268366932299089,
+      "independent_phase_standard_deviation": 0.23311004182596126,
+      "artificial_phase_controls": [
+        -0.05638812836716203,
+        0.45792403677595367,
+        -0.08850174623132759,
+        0.060896557360911284
+      ]
+    },
+    {
+      "width": 0.001890359168241966,
+      "unordered_close_pairs": 613594149,
+      "signed_offdiagonal_sum": 0.5677133008682622,
+      "absolute_offdiagonal_sum": 1138.6990294677394,
+      "diagonal_mass": 1.911882534516806,
+      "signed_over_diagonal": 0.2969394252098974,
+      "signed_over_absolute": 0.0004985630848685518,
+      "independent_phase_standard_deviation": 0.04856547849633376,
+      "artificial_phase_controls": [
+        -0.09216844345610295,
+        0.03522590518662837,
+        0.00011082810229887533,
+        -0.023678326765132107
+      ]
+    },
+    {
+      "width": 3.5734577849564572e-06,
+      "unordered_close_pairs": 1331926,
+      "signed_offdiagonal_sum": -0.01133654528716867,
+      "absolute_offdiagonal_sum": 2.4485723444500462,
+      "diagonal_mass": 1.911882534516806,
+      "signed_over_diagonal": -0.0059295197704359905,
+      "signed_over_absolute": -0.004629859237307884,
+      "independent_phase_standard_deviation": 0.0022449107192517885,
+      "artificial_phase_controls": [
+        0.0015164621713976032,
+        0.0018600879460473577,
+        -0.0033206245114587394,
+        0.0018033609663538179
+      ]
+    }
+  ],
+  "seconds": 6.644964915999935,
+  "scope": "floating diagnostic of minor weights at epsilon=0; no asymptotic or CUE claim"
+}

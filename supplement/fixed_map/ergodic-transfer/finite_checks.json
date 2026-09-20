@@ -1,0 +1,250 @@
+{
+  "fixtures": [
+    {
+      "label": "Seeded unitary finite fixture",
+      "N": 31,
+      "RMS_unfolded_displacement": 0.022365747717998114,
+      "max_unfolded_displacement": 0.04692577040298718,
+      "allowed_max": 0.18086298465373052,
+      "bounds": [
+        {
+          "T": 1,
+          "time_average_HS": 0.7382411530116701,
+          "RMS_upper": 0.11749472869566756,
+          "sampled_path_variance_max": 0.019810022781261306
+        },
+        {
+          "T": 2,
+          "time_average_HS": 0.5222477198619712,
+          "RMS_upper": 0.08974836770245967,
+          "sampled_path_variance_max": 0.019810022781261306
+        },
+        {
+          "T": 4,
+          "time_average_HS": 0.3737607605639429,
+          "RMS_upper": 0.0793760572814045,
+          "sampled_path_variance_max": 0.019810022781261306
+        },
+        {
+          "T": 8,
+          "time_average_HS": 0.27013500755274467,
+          "RMS_upper": 0.08940375272987462,
+          "sampled_path_variance_max": 0.019810022781261306
+        },
+        {
+          "T": 16,
+          "time_average_HS": 0.19017466618452455,
+          "RMS_upper": 0.12971816169345143,
+          "sampled_path_variance_max": 0.019810022781261306
+        }
+      ],
+      "pair_change": 0.030743978894122725,
+      "pair_transfer_upper": 3.2005236000125974
+    },
+    {
+      "label": "Seeded unitary finite fixture",
+      "N": 63,
+      "RMS_unfolded_displacement": 0.012998505907672412,
+      "max_unfolded_displacement": 0.035538539292156335,
+      "allowed_max": 0.1808376183573615,
+      "bounds": [
+        {
+          "T": 1,
+          "time_average_HS": 0.7382411530116699,
+          "RMS_upper": 0.11749472869566753,
+          "sampled_path_variance_max": 0.0067642663053176545
+        },
+        {
+          "T": 2,
+          "time_average_HS": 0.5228709750234084,
+          "RMS_upper": 0.08647899647031698,
+          "sampled_path_variance_max": 0.0067642663053176545
+        },
+        {
+          "T": 4,
+          "time_average_HS": 0.3708563877832385,
+          "RMS_upper": 0.06880811588109495,
+          "sampled_path_variance_max": 0.0067642663053176545
+        },
+        {
+          "T": 8,
+          "time_average_HS": 0.26313002731816804,
+          "RMS_upper": 0.06470891789602998,
+          "sampled_path_variance_max": 0.0067642663053176545
+        },
+        {
+          "T": 16,
+          "time_average_HS": 0.1795490681890475,
+          "RMS_upper": 0.07749856467076945,
+          "sampled_path_variance_max": 0.0067642663053176545
+        }
+      ],
+      "pair_change": 0.0015506799035571728,
+      "pair_transfer_upper": 1.8513502457903077
+    },
+    {
+      "label": "Seeded unitary finite fixture",
+      "N": 127,
+      "RMS_unfolded_displacement": 0.010590059277899518,
+      "max_unfolded_displacement": 0.030455772558251604,
+      "allowed_max": 0.18087605606763332,
+      "bounds": [
+        {
+          "T": 1,
+          "time_average_HS": 0.73824115301167,
+          "RMS_upper": 0.11749472869566754,
+          "sampled_path_variance_max": 0.004459528488181861
+        },
+        {
+          "T": 2,
+          "time_average_HS": 0.5223301761002851,
+          "RMS_upper": 0.08475002487191596,
+          "sampled_path_variance_max": 0.004459528488181861
+        },
+        {
+          "T": 4,
+          "time_average_HS": 0.36769849226782103,
+          "RMS_upper": 0.06337681887034703,
+          "sampled_path_variance_max": 0.004459528488181861
+        },
+        {
+          "T": 8,
+          "time_average_HS": 0.25830694812083876,
+          "RMS_upper": 0.052440995564881174,
+          "sampled_path_variance_max": 0.004459528488181861
+        },
+        {
+          "T": 16,
+          "time_average_HS": 0.18138599087063317,
+          "RMS_upper": 0.05314740834711392,
+          "sampled_path_variance_max": 0.004459528488181861
+        }
+      ],
+      "pair_change": 0.0019484083989559364,
+      "pair_transfer_upper": 1.5046020945305956
+    },
+    {
+      "label": "Pell cat with frozen centred observable",
+      "N": 41,
+      "RMS_unfolded_displacement": 0.04566293064856971,
+      "max_unfolded_displacement": 0.07140810245224072,
+      "allowed_max": 0.15403407343863812,
+      "bounds": [
+        {
+          "T": 1,
+          "time_average_HS": 0.6424221742748301,
+          "RMS_upper": 0.10224466458768225,
+          "sampled_path_variance_max": 0.0823770939831195
+        },
+        {
+          "T": 2,
+          "time_average_HS": 0.4542591496051567,
+          "RMS_upper": 0.07593363714526882,
+          "sampled_path_variance_max": 0.0823770939831195
+        },
+        {
+          "T": 5,
+          "time_average_HS": 0.28729749389787596,
+          "RMS_upper": 0.06026900845530999,
+          "sampled_path_variance_max": 0.0823770939831195
+        }
+      ],
+      "pair_change": 0.0,
+      "pair_transfer_upper": 7.516052210225385,
+      "Pell_first_order_RMS": 0.045724816291760575,
+      "ratio_to_Pell_first_order": 0.9986465633279752
+    },
+    {
+      "label": "Pell cat with frozen centred observable",
+      "N": 239,
+      "RMS_unfolded_displacement": 0.038651072872550665,
+      "max_unfolded_displacement": 0.08588122699613676,
+      "allowed_max": 0.17439456986790522,
+      "bounds": [
+        {
+          "T": 1,
+          "time_average_HS": 0.6424221742748301,
+          "RMS_upper": 0.10224466458768225,
+          "sampled_path_variance_max": 0.05899688011721042
+        },
+        {
+          "T": 2,
+          "time_average_HS": 0.45425914960515673,
+          "RMS_upper": 0.07309714325797108,
+          "sampled_path_variance_max": 0.05899688011721042
+        },
+        {
+          "T": 7,
+          "time_average_HS": 0.24281069934062982,
+          "RMS_upper": 0.04344184795719872,
+          "sampled_path_variance_max": 0.05899688011721042
+        }
+      ],
+      "pair_change": 0.0,
+      "pair_transfer_upper": 26.397348370888317,
+      "Pell_first_order_RMS": 0.038644523035661245,
+      "ratio_to_Pell_first_order": 1.0001694893965538
+    }
+  ],
+  "failure_controls": {
+    "rare_clusters": [
+      {
+        "N": 64,
+        "RMS_squared_exact": "1/200",
+        "pair_before": "7/8",
+        "pair_after": "3/8",
+        "cluster_third_factorial_mass": "21/4"
+      },
+      {
+        "N": 256,
+        "RMS_squared_exact": "1/400",
+        "pair_before": "15/16",
+        "pair_after": "7/16",
+        "cluster_third_factorial_mass": "105/8"
+      },
+      {
+        "N": 1024,
+        "RMS_squared_exact": "1/800",
+        "pair_before": "31/32",
+        "pair_after": "15/32",
+        "cluster_third_factorial_mass": "465/16"
+      }
+    ],
+    "zero_endpoint_variance": [
+      {
+        "N": 32,
+        "initial_diagonal_variance": 0,
+        "RMS_displacement": 0.024641647292917797,
+        "T4_average_norm": 0.9760625312022029
+      },
+      {
+        "N": 64,
+        "initial_diagonal_variance": 0,
+        "RMS_displacement": 0.024699863978029972,
+        "T4_average_norm": 0.9939859830849765
+      },
+      {
+        "N": 128,
+        "initial_diagonal_variance": 0,
+        "RMS_displacement": 0.02471440748529639,
+        "T4_average_norm": 0.9984946376874473
+      },
+      {
+        "N": 512,
+        "initial_diagonal_variance": 0,
+        "RMS_displacement": 0.02471895145813096,
+        "T4_average_norm": 0.9999058785392123
+      }
+    ],
+    "endpoint_RMS_limit": 0.024719254373788396,
+    "commuting_clock": {
+      "N": 64,
+      "a": 0.2,
+      "RMS": 0.2,
+      "pair_before": 1.0,
+      "pair_after": 0.0,
+      "time_average_HS": 1.2566370614359172
+    }
+  },
+  "scope": "Finite checks only; analytic limit and comparison assumptions are in the proof"
+}

@@ -1,6 +1,7 @@
 import Bgs.AnalyticOrbitKernels
 import Bgs.CayleyCurveEnergy
 import Bgs.CayleyEnergy
+import Bgs.CueLoopKernels
 import Bgs.FibonacciRatioSmall
 import Bgs.GeneralHyperbolicParity
 import Bgs.HistoricalMobiusDegenerateFiber

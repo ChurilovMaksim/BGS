@@ -26,6 +26,8 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 
 ## Start here
 
+- [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
+- [Reproducible fixed-map supplement](supplement/fixed_map/README.md): recovered proofs, Python/C++/Wolfram sources and finite evidence; [current verification review](record/fixed_map_publication_20260920.md).
 - [Research brief](RESEARCH.md): why cat maps, contributions, limitations, and the next decisive questions.
 - [General return laws](mathematics/general_cat_return_laws.md): assumptions, statements, proofs, and counterexamples.
 - [Results index](mathematics/results.md) and [earlier addendum](mathematics/results_20260907_addendum.md): the broader mathematical corpus.
@@ -43,6 +45,7 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 | [formalization](formalization/README.md) | Pinned Lean 4 project and explicit trust boundary |
 | [evidence](evidence/provenance.md) | Selected certificates and their provenance |
 | [record](record/claim_ledger.md) | Scoped reviews, corrections, and execution records |
+| [supplement/fixed_map](supplement/fixed_map/README.md) | Indexed fixed-map proofs and computational evidence, with isolated replay |
 | [archive](archive/branch-snapshots/README.md) | Historical provenance; no parallel active branch copies |
 
 ## Reproduce
@@ -59,6 +62,7 @@ chapters and build the article:
 
 ```sh
 python computations/maintenance/sync_return_sections.py --check
+python computations/maintenance/sync_fixed_map_section.py --check
 python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper
 ```
 
@@ -67,6 +71,16 @@ run, focused return-law checks, and Lean build. Generated reports and PDFs stay
 in `build/`; source, formalization, and maintained programs belong in `main`.
 Historical run counts and manuscript page counts are kept in dated reviews,
 so they cannot be mistaken for a fresh full verification.
+
+To audit and replay the recovered fixed-map research:
+
+```sh
+python computations/maintenance/verify_fixed_map_supplement.py
+```
+
+This writes fresh reports to `build/fixed-map-replay/` and preserves the
+retained evidence. The mixed-loop hypotheses for the fixed coupling are
+still unproved; successful finite checks do not establish universality.
 
 The scientific scope is determined by explicit hypotheses and proofs, not by
 repository synchronization or a successful software build.

@@ -1,0 +1,254 @@
+# Fixed-map spectral statistics: exact reductions and the remaining estimate
+
+**Status, 20 September 2026.** The fixed-map BGS target is open. This chapter
+consolidates the recovered research, states a conditional all-order criterion,
+and proves what its first two mixed levels imply. The
+[supplement](../supplement/fixed_map/README.md) contains full derivations,
+programs, finite certificates and dated audits. External priority is not
+claimed. Formalization covers only explicitly stated algebraic kernels.
+
+## The unchanged target
+
+For odd $N\ge3$, use raw modular Weyl operators
+
+$$
+(T_N(a,b)\psi)(x)=e_N\bigl(b(x+2^{-1}a)\bigr)\psi(x+a),
+\qquad e_N(t)=\exp(2\pi i t/N),
+$$
+
+with modular inverses. Let $S=\left(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\right)$ and
+
+$$
+(M_N)_{xy}=N^{-1/2}e_N\bigl(-8^{-1}(3x^2-2xy+3y^2)\bigr),
+\qquad U_N=\exp(i\tau N A_N)M_N,\quad \tau=10^{-80}.
+$$
+
+Here $A_N$ quantizes $f-1/10$ using $e^{2\pi i(kq+lp)}\mapsto T_N(l,k)$,
+where
+
+$$
+\begin{split}
+r(q)&=(1-\cos14\pi q)(1+\cos2\pi q),\\
+f(q,p)&=\cos14\pi q+\frac{r(q)}{10}
+ +\frac{r(q)\sin2\pi q}{100}
+ +\frac{r(q)\cos(2\pi p-\alpha_0)}{100},\\
+e^{i\alpha_0}&=(-3+4i)/5.
+\end{split}
+$$
+
+Centering changes only a common spectral rotation. Neither an auxiliary
+coupling average nor independent phases replace this fixed family.
+
+Writing $p_m=\operatorname{Tr}U_N^m$, the pair target can be expressed as
+
+$$
+L_N(s):=N^{-2}\sum_{m\ge1}e^{-2sm/N}|p_m|^2
+ \longrightarrow \frac{1-e^{-2s}}{4s^2},\qquad s>0.
+$$
+
+The [determinant-ratio reduction](../supplement/fixed_map/weighted-secular/determinant_boundary.md)
+proves equivalence with all compact weighted pair tests, with an explicit
+positive-definite tail bound. No estimate establishing this limit for the
+displayed $U_N$ has been obtained. All-order universality needs more than
+this pair target.
+
+## What the recovered work establishes
+
+Exact algebraic arguments exclude scalar-algebraic returns for the stated
+frozen family except its explicitly treated raw $N=7$ exception. They do not
+give microscopic eigenvalue separation. Exact simplicity certificates cover
+specified finite dimensions, not all $N$. Structured ergodic comparison
+controls unfolded RMS motion of subprincipal perturbations under its stated
+Egorov and ergodicity hypotheses; transferring factorial correlations also
+needs local occupation moments.
+
+The block-memory analysis distinguishes closed quantum propagation from
+reset evolution. Mixing of the positive reset chain does not imply decay
+of coherent quantum memory. Actual weighted principal-minor computations
+show cancellation within and across frequency windows. They do not justify
+independent-phase substitution. A rotated deleted clock has exactly the
+CUE characteristic-polynomial covariance and nevertheless regular spacings;
+covariance alone therefore does not determine pair statistics.
+
+Full statements, assumptions and proofs are in the topic-indexed supplement.
+The [shadow-tube analysis](shadow_tube_history_bridge.md), recovered from the
+remote branch, likewise keeps its geometric equidistribution assumption
+separate from its proved symbolic filling bound. Both local and remote
+research lines are retained.
+
+## A conditional route to every compact correlation order
+
+For eigenangles $\theta_j$ in radians and a uniform common origin
+$\alpha\in[0,2\pi)$, put
+
+$$
+s_N(w)=\frac1N\sum_j\cot\left(\frac{\theta_j-\alpha}{2}-\frac wN\right).
+$$
+
+This Herglotz function has unit-mass particles at
+$N(\theta_j-\alpha)/2+\pi N\ell$, and intensity $1/\pi$.
+Define, using holomorphic extension at coincident arguments,
+
+$$
+\begin{split}
+\mathcal E_{p,N}(\mathbf w)={}&
+\mathbb E[(s_N(w_1)^2+1)\prod_{j=2}^p s_N(w_j)]\\
+&+\sum_{j=2}^p\mathbb E\left[
+\partial_{w_j}\frac{s_N(w_1)-s_N(w_j)}{w_1-w_j}
+\prod_{\ell=2,\ell\ne j}^p s_N(w_\ell)\right].
+\end{split}
+$$
+
+Theorem 1.9 of Bourgade--Huang,
+[*Loop Equations Characterize Random Matrix Statistics*, arXiv:2607.07617v2](https://arxiv.org/abs/2607.07617v2),
+provides the external convergence theorem. Our sufficient model hypothesis is
+
+$$
+\sup_{\mathbf w\in K^p}
+\frac{|\mathcal E_{p,N}(\mathbf w)|}
+ {1+\mathbb E\max_j|s_N(w_j)|^{p+1}}\longrightarrow0
+$$
+
+for every fixed $p$ and every compact $K\subset\mathbb C\setminus\mathbb R$.
+The event in that theorem is the whole origin probability space. Its moment
+bootstrap then bounds all local particle-count moments, since
+$\mu_N([-B,B])\le(1+B^2)|s_N(i)|$. Uniform integrability upgrades weak
+point-process convergence to all compact factorial correlation tests.
+Dividing positions by $\pi$ and integrating the origin gives exactly the
+usual deterministic anchored statistic, with normalization $1/N$.
+The [detailed bridge](../supplement/fixed_map/resolvent-flow/loop_bridge.md)
+checks these steps. This is a conditional implication; the model hypothesis
+is unproved. It does not assert pointwise correlation densities.
+
+## The first two mixed equations
+
+For arguments in the same half-plane every loop residual vanishes for
+every unitary spectrum. Indeed, the nonconstant Fourier frequencies in the
+uniform origin all have the same strict sign. Such tests cannot verify
+universality.
+
+Fix $s>0$, $w=is/2$, $v=-is/2$, $q=e^{-2s/N}$, and define
+
+$$
+C_N=N^{-3}\sum_{a,b\ge1}q^{a+b}p_{-a}p_{-b}p_{a+b}.
+$$
+
+Absolute Fourier convergence gives the exact mixed identity
+
+$$
+\mathcal E_{2,N}(w,v)=8i\left(L_N+C_N-\frac1{4s^2}\right).
+$$
+
+The cubic quantity $C_N$ need not be real. Finite circular CUE satisfies
+$\mathbb E(L_N+C_N)=1/(4N^2\sinh^2(s/N))$, so the limiting straight-line
+equation has a finite-size correction even in the reference ensemble.
+
+Put $Z=s_N(w)$, $M_r=\mathbb E|Z|^r$,
+$e_2=L_N+\Re C_N-1/(4s^2)$, and $e_3=\mathcal E_{3,N}(w,v,v)$.
+Then
+
+$$
+e_3=M_4-1-\frac2{s^2}(M_2+1)\in\mathbb R.
+$$
+
+To prove this, write $T=s_N(v)=\bar Z$. Same-half-plane identities give
+$\mathbb ET^2=-1$ and $\mathbb E(T'T)=0$. Each differentiated quotient,
+multiplied by $T$, has expectation $-(M_2+1)/s^2$. There are two such
+terms; the leading expectation is $M_4-1$.
+
+For $P=(Z/i-1)/2$ and $Q=\mathbb E|P|^4$, Fourier orthogonality yields
+$M_2=1+4L_N$ and $M_4=1+16L_N+32\Re C_N+16Q$. Eliminating $C_N$ gives
+
+$$
+Q=\left(1+\frac1{2s^2}\right)L_N-\frac1{4s^2}
+       +\frac{e_3}{16}-2e_2.
+$$
+
+Consequently $Q\ge L_N^2$ implies
+
+$$
+L_N^2-\left(1+\frac1{2s^2}\right)L_N+\frac1{4s^2}
+ \le\frac{e_3}{16}-2e_2.
+$$
+
+These conclusions require no probabilistic independence. If
+$|e_3|\le\delta_N(1+M_4)$ with $\delta_N\to0$, Jensen gives, for
+$x=M_2$ and $t=s^{-2}$,
+
+$$
+(1-\delta_N)x^2-2tx-(1+\delta_N+2t)\le0.
+$$
+
+Thus $M_2,M_4$ are bounded and $e_3\to0$. A normalized vanishing $p=2$
+residual now also vanishes without normalization. Every subsequential
+limit $\ell$ of $L_N(s)$ lies in
+
+$$
+\frac12+\frac1{4s^2}-\frac12\sqrt{1+\frac1{4s^4}}
+ \le\ell\le\frac1{2s^2}.
+$$
+
+The interval has positive width. These low-order bounds do not identify
+the CUE value or prove convergence; no realizable non-CUE process satisfying
+the two vanishing residuals is asserted either. Establishing those residual
+hypotheses for the actual map remains a dynamical problem.
+
+## Why a direct noise replacement does not close the estimate
+
+For the unitary Brownian generator $G=(2N)^{-1}\sum_a D_{H_a}^2$, with
+$\operatorname{Tr}(H_aH_b)=\delta_{ab}$, matrix completeness gives
+
+$$
+G|p_m|^2=m^2-m|p_m|^2-
+ \frac mN\Re\left(\bar p_m\sum_{a=1}^{m-1}p_a p_{m-a}\right).
+$$
+
+Hence exactly
+
+$$
+\frac1N GL_N(s)=\frac12\partial_s
+ \left[L_N(s)+\Re C_N(s)-\frac{q}{N^2(1-q)^2}\right].
+$$
+
+The unknown mixed defect reappears in the attempt to remove noise. For an
+exact clock it is nonzero. Moreover, transport directions $V^jAV^{-j}$
+have identical diagonal entries in a simple eigenbasis of $V$; Gaussian
+linear combinations therefore give rank at most one for instantaneous
+eigenphase covariance. Nonlinear bracket effects are not excluded.
+
+A separate elementary obstruction concerns global entropy. On the unfolded
+circle of length $N$, let $d_N$ be RMS matching distance to a deterministic
+configuration, minimized over permutations and common rotation. Labeled
+CUE density is at most $1/N!$ by Hadamard's inequality. A rotation mesh
+and a union of Euclidean balls therefore give
+
+$$
+Q_N(d_N\le\delta)\le
+ \min\left\{1,\left\lceil\frac N\delta\right\rceil
+                   (\sqrt{8\pi e}\,\delta)^N\right\}.
+$$
+
+Binary relative-entropy contraction shows that $d_N\to0$ in $P_N$
+probability forces $D(P_N\Vert Q_N)/N\to\infty$. Thus global entropy
+$o(N)$ and microscopic RMS preservation cannot both justify the proposed
+comparison. This does not exclude local entropy methods or universality.
+The [full proof](../supplement/fixed_map/resolvent-flow/entropy_obstruction.md)
+includes the torus-volume and labeling factors.
+
+## Verification and remaining work
+
+The recovered supplement includes exact arithmetic replay, an independent
+C++ verifier, independent matrix assemblies and numerical identity checks.
+The new quartic relation was checked in 27 finite cases and by a separate
+internal algebra audit. Its source code and proof are retained. Auxiliary
+kick strengths in these tests do not resolve $\tau=10^{-80}$.
+
+The Lean module `CueLoopKernels` states the cubic positive-part identity
+and a cleared-denominator elimination kernel over integers. These are a
+small algebraic layer; they do not formalize the analytic loop criterion.
+Current compilation results are recorded in the publication review.
+
+The remaining task is a model-specific Heisenberg-scale cancellation
+estimate for the actual mixed resolvent products, or an equally strong
+direct trace comparison. No noise approximation, source theorem or finite
+computation in this chapter supplies that missing estimate.

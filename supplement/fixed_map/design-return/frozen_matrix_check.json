@@ -1,0 +1,86 @@
+[
+  {
+    "K": 5,
+    "N": 41,
+    "quantizations": [
+      {
+        "gauge": "raw modular",
+        "jacobi_assembly_error": 1.3744779368763624e-15,
+        "homological_error": 3.402325669265305e-16,
+        "K_times_average_HS_squared": 0.41269925000000035,
+        "cases": [
+          {
+            "epsilon": 0.01,
+            "one_step_error": 1.554762873521402e-05,
+            "direct_commutator_bound": 2.2255589392480564e-05
+          },
+          {
+            "epsilon": 0.1,
+            "one_step_error": 0.0015552973773311585,
+            "direct_commutator_bound": 0.002225558939248057
+          }
+        ]
+      },
+      {
+        "gauge": "ordinary midpoint",
+        "jacobi_assembly_error": 1.3743342118039985e-15,
+        "homological_error": 3.1514953514598905e-16,
+        "K_times_average_HS_squared": 0.4126992500000002,
+        "cases": [
+          {
+            "epsilon": 0.01,
+            "one_step_error": 1.5549264925080682e-05,
+            "direct_commutator_bound": 2.2256605225674053e-05
+          },
+          {
+            "epsilon": 0.1,
+            "one_step_error": 0.0015554583024829569,
+            "direct_commutator_bound": 0.0022256605225674055
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "K": 7,
+    "N": 239,
+    "quantizations": [
+      {
+        "gauge": "raw modular",
+        "jacobi_assembly_error": 1.1842729192083425e-15,
+        "homological_error": 7.218729908977865e-16,
+        "K_times_average_HS_squared": 0.41269925000000024,
+        "cases": [
+          {
+            "epsilon": 0.01,
+            "one_step_error": 1.4925171965444865e-05,
+            "direct_commutator_bound": 1.9922584030528955e-05
+          },
+          {
+            "epsilon": 0.1,
+            "one_step_error": 0.0014919374481707777,
+            "direct_commutator_bound": 0.001992258403052896
+          }
+        ]
+      },
+      {
+        "gauge": "ordinary midpoint",
+        "jacobi_assembly_error": 1.1841615319171387e-15,
+        "homological_error": 7.219782079813187e-16,
+        "K_times_average_HS_squared": 0.41269925000000024,
+        "cases": [
+          {
+            "epsilon": 0.01,
+            "one_step_error": 1.4926109723192526e-05,
+            "direct_commutator_bound": 1.9923189900875988e-05
+          },
+          {
+            "epsilon": 0.1,
+            "one_step_error": 0.001492031075213042,
+            "direct_commutator_bound": 0.001992318990087599
+          }
+        ]
+      }
+    ]
+  }
+]

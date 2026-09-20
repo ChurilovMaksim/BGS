@@ -1,0 +1,127 @@
+{
+  "status": "completed",
+  "operator_norm_bound": "643/500",
+  "rows": [
+    {
+      "N": 3,
+      "ordinary_midpoint": false,
+      "R": 4,
+      "weight": 2,
+      "cyclotomic_degree": 4,
+      "integral_scaling": 16000,
+      "all_conjugates_norm_bound": 73152,
+      "min_gap_B_at_least_10_to_minus_L": 71,
+      "frozen_epsilon_in_conservative_splitting_interval": true,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 5,
+      "ordinary_midpoint": false,
+      "R": 6,
+      "weight": 1,
+      "cyclotomic_degree": 8,
+      "integral_scaling": 24000,
+      "all_conjugates_norm_bound": 102864,
+      "min_gap_B_at_least_10_to_minus_L": 479,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 9,
+      "ordinary_midpoint": false,
+      "R": 12,
+      "weight": 2,
+      "cyclotomic_degree": 12,
+      "integral_scaling": 48000,
+      "all_conjugates_norm_bound": 267456,
+      "min_gap_B_at_least_10_to_minus_L": 2591,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 15,
+      "ordinary_midpoint": false,
+      "R": 12,
+      "weight": 2,
+      "cyclotomic_degree": 16,
+      "integral_scaling": 48000,
+      "all_conjugates_norm_bound": 315456,
+      "min_gap_B_at_least_10_to_minus_L": 10079,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 21,
+      "ordinary_midpoint": false,
+      "R": 12,
+      "weight": 1,
+      "cyclotomic_degree": 24,
+      "integral_scaling": 48000,
+      "all_conjugates_norm_bound": 301728,
+      "min_gap_B_at_least_10_to_minus_L": 30239,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": false,
+      "R": 5,
+      "weight": 1,
+      "cyclotomic_degree": 80,
+      "integral_scaling": 20000,
+      "all_conjugates_norm_bound": 165720,
+      "min_gap_B_at_least_10_to_minus_L": 393599,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 239,
+      "ordinary_midpoint": false,
+      "R": 7,
+      "weight": 1,
+      "cyclotomic_degree": 476,
+      "integral_scaling": 28000,
+      "all_conjugates_norm_bound": 484008,
+      "min_gap_B_at_least_10_to_minus_L": 81227495,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 1393,
+      "ordinary_midpoint": false,
+      "R": 9,
+      "weight": 1,
+      "cyclotomic_degree": 2376,
+      "integral_scaling": 36000,
+      "all_conjugates_norm_bound": 1414296,
+      "min_gap_B_at_least_10_to_minus_L": 16125189694,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 7,
+      "ordinary_midpoint": true,
+      "R": 3,
+      "weight": 1,
+      "cyclotomic_degree": 12,
+      "integral_scaling": 12000,
+      "all_conjugates_norm_bound": 51432,
+      "min_gap_B_at_least_10_to_minus_L": 1511,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    },
+    {
+      "N": 41,
+      "ordinary_midpoint": true,
+      "R": 5,
+      "weight": 1,
+      "cyclotomic_degree": 80,
+      "integral_scaling": 20000,
+      "all_conjugates_norm_bound": 165720,
+      "min_gap_B_at_least_10_to_minus_L": 393599,
+      "frozen_epsilon_in_conservative_splitting_interval": false,
+      "interpretation": "A failed interval test does not mean the actual spectrum is degenerate"
+    }
+  ],
+  "scope": "Quantitative finite-dimensional bound; no uniform BGS estimate"
+}

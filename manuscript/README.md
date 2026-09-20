@@ -26,3 +26,10 @@ python computations/maintenance/build_unified_manuscript.py --output-dir build/u
 Old standalone article `.tex/.pdf` copies are intentionally absent from the current tree. They were inputs to the consolidation process and remain recoverable from Git history; they are not separate maintained deliverables.
 
 The scientific claim-status authority is `../record/claim_ledger.md`; the source-consolidation map is `../record/consolidation_map.json`.
+
+The fixed-map frontier chapter is generated from
+`../mathematics/fixed_map_resolvent_frontier.md` by
+`computations/maintenance/sync_fixed_map_section.py`. Use `--check` to detect
+drift. Its detailed proofs and computational evidence are indexed in
+`../supplement/fixed_map/README.md`; the conditional loop criterion is not
+an established BGS limit for the frozen map.

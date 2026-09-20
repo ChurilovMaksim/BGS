@@ -1,0 +1,474 @@
+{
+  "brute_audit": {
+    "max_error": 2.220446049250313e-16,
+    "coincident_frequency_control": "passed"
+  },
+  "finite_centres": [
+    {
+      "N": 15,
+      "rows": [
+        {
+          "auxiliary_t": 0.0,
+          "epsilon": 0.0,
+          "coefficient_absolute_squared": 1.0000000000000013,
+          "direct_coefficient_residual": 1.1048224130803324e-14,
+          "windows": [
+            {
+              "width": 0.06666666666666667,
+              "unordered_close_pairs": 641885,
+              "signed_offdiagonal_sum": 6.162937627389354,
+              "absolute_offdiagonal_sum": 242.9457408711527,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 4.039905492182541,
+              "signed_over_absolute": 0.0253675475243581,
+              "independent_phase_standard_deviation": 0.2790870351510261,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.0044444444444444444,
+              "unordered_close_pairs": 46358,
+              "signed_offdiagonal_sum": 1.1064915708451002,
+              "absolute_offdiagonal_sum": 17.700545411345008,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 0.7253231566460571,
+              "signed_over_absolute": 0.06251172182162841,
+              "independent_phase_standard_deviation": 0.0757869223251889,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 0.1,
+          "epsilon": 1.5,
+          "coefficient_absolute_squared": 7.913388101576954,
+          "direct_coefficient_residual": 7.73979586790872e-14,
+          "windows": [
+            {
+              "width": 0.06666666666666667,
+              "unordered_close_pairs": 641885,
+              "signed_offdiagonal_sum": 6.209273199300408,
+              "absolute_offdiagonal_sum": 242.9457408711527,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 4.070279210490994,
+              "signed_over_absolute": 0.025558271476730773,
+              "independent_phase_standard_deviation": 0.2790870351510261,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.0044444444444444444,
+              "unordered_close_pairs": 46358,
+              "signed_offdiagonal_sum": 1.1055639568145983,
+              "absolute_offdiagonal_sum": 17.700545411345008,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 0.7247150906160204,
+              "signed_over_absolute": 0.06245931586413132,
+              "independent_phase_standard_deviation": 0.0757869223251889,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 1.0,
+          "epsilon": 15.0,
+          "coefficient_absolute_squared": 0.5838980553999562,
+          "direct_coefficient_residual": 1.158535011891759e-13,
+          "windows": [
+            {
+              "width": 0.06666666666666667,
+              "unordered_close_pairs": 641885,
+              "signed_offdiagonal_sum": 6.0675568956943415,
+              "absolute_offdiagonal_sum": 242.9457408711527,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 3.977381876802988,
+              "signed_over_absolute": 0.02497494656188394,
+              "independent_phase_standard_deviation": 0.2790870351510261,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.0044444444444444444,
+              "unordered_close_pairs": 46358,
+              "signed_offdiagonal_sum": 1.0965289688222588,
+              "absolute_offdiagonal_sum": 17.700545411345008,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 0.7187925095647633,
+              "signed_over_absolute": 0.06194888029379299,
+              "independent_phase_standard_deviation": 0.0757869223251889,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 10.0,
+          "epsilon": 150.0,
+          "coefficient_absolute_squared": 0.9399546311963766,
+          "direct_coefficient_residual": 1.1759616012759406e-13,
+          "windows": [
+            {
+              "width": 0.06666666666666667,
+              "unordered_close_pairs": 641885,
+              "signed_offdiagonal_sum": -0.7678522528624023,
+              "absolute_offdiagonal_sum": 242.9457408711527,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": -0.5033395956722667,
+              "signed_over_absolute": -0.003160591538295936,
+              "independent_phase_standard_deviation": 0.2790870351510261,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.0044444444444444444,
+              "unordered_close_pairs": 46358,
+              "signed_offdiagonal_sum": 0.9423564072910359,
+              "absolute_offdiagonal_sum": 17.700545411345008,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": 0.6177298969389599,
+              "signed_over_absolute": 0.05323883447608574,
+              "independent_phase_standard_deviation": 0.0757869223251889,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 100.0,
+          "epsilon": 1500.0,
+          "coefficient_absolute_squared": 0.38719674228509954,
+          "direct_coefficient_residual": 3.0075606099365647e-13,
+          "windows": [
+            {
+              "width": 0.06666666666666667,
+              "unordered_close_pairs": 641885,
+              "signed_offdiagonal_sum": -0.13564679033645896,
+              "absolute_offdiagonal_sum": 242.9457408711527,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": -0.08891866937639759,
+              "signed_over_absolute": -0.0005583419155654175,
+              "independent_phase_standard_deviation": 0.2790870351510261,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.0044444444444444444,
+              "unordered_close_pairs": 46358,
+              "signed_offdiagonal_sum": -0.11891209460403729,
+              "absolute_offdiagonal_sum": 17.700545411345008,
+              "diagonal_mass": 1.5255152971560861,
+              "signed_over_diagonal": -0.0779488051189765,
+              "signed_over_absolute": -0.006717990425753866,
+              "independent_phase_standard_deviation": 0.0757869223251889,
+              "artificial_phase_controls": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 19,
+      "rows": [
+        {
+          "auxiliary_t": 0.0,
+          "epsilon": 0.0,
+          "coefficient_absolute_squared": 0.999999999999997,
+          "direct_coefficient_residual": 9.346395422208079e-13,
+          "windows": [
+            {
+              "width": 0.05263157894736842,
+              "unordered_close_pairs": 87036996,
+              "signed_offdiagonal_sum": 9.21413219947886,
+              "absolute_offdiagonal_sum": 2417.9789611403758,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 4.938107276704318,
+              "signed_over_absolute": 0.003810675091702724,
+              "independent_phase_standard_deviation": 0.26144457208559474,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.002770083102493075,
+              "unordered_close_pairs": 4778289,
+              "signed_offdiagonal_sum": 0.5689723417637731,
+              "absolute_offdiagonal_sum": 133.68086075070195,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 0.30492795200681994,
+              "signed_over_absolute": 0.004256198969460821,
+              "independent_phase_standard_deviation": 0.061839404052969116,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 0.1,
+          "epsilon": 1.9000000000000001,
+          "coefficient_absolute_squared": 5.117372785075684,
+          "direct_coefficient_residual": 8.608436742272079e-13,
+          "windows": [
+            {
+              "width": 0.05263157894736842,
+              "unordered_close_pairs": 87036996,
+              "signed_offdiagonal_sum": 9.089267334048776,
+              "absolute_offdiagonal_sum": 2417.9789611403758,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 4.871188755541807,
+              "signed_over_absolute": 0.003759034913092074,
+              "independent_phase_standard_deviation": 0.26144457208559474,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.002770083102493075,
+              "unordered_close_pairs": 4778289,
+              "signed_offdiagonal_sum": 0.5697565024607724,
+              "absolute_offdiagonal_sum": 133.68086075070195,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 0.3053482053264084,
+              "signed_over_absolute": 0.004262064885438588,
+              "independent_phase_standard_deviation": 0.061839404052969116,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 1.0,
+          "epsilon": 19.0,
+          "coefficient_absolute_squared": 5.315542535581212,
+          "direct_coefficient_residual": 2.2129505313045548e-13,
+          "windows": [
+            {
+              "width": 0.05263157894736842,
+              "unordered_close_pairs": 87036996,
+              "signed_offdiagonal_sum": 7.011003795910096,
+              "absolute_offdiagonal_sum": 2417.9789611403758,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 3.757390073429093,
+              "signed_over_absolute": 0.002899530520564803,
+              "independent_phase_standard_deviation": 0.26144457208559474,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.002770083102493075,
+              "unordered_close_pairs": 4778289,
+              "signed_offdiagonal_sum": 0.5767083305719455,
+              "absolute_offdiagonal_sum": 133.68086075070195,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 0.3090738815202146,
+              "signed_over_absolute": 0.004314068052325264,
+              "independent_phase_standard_deviation": 0.061839404052969116,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 10.0,
+          "epsilon": 190.0,
+          "coefficient_absolute_squared": 0.6049416338420923,
+          "direct_coefficient_residual": 3.151261289522265e-13,
+          "windows": [
+            {
+              "width": 0.05263157894736842,
+              "unordered_close_pairs": 87036996,
+              "signed_offdiagonal_sum": -0.1171969346266857,
+              "absolute_offdiagonal_sum": 2417.9789611403758,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": -0.06280906580873773,
+              "signed_over_absolute": -4.84689637545121e-05,
+              "independent_phase_standard_deviation": 0.26144457208559474,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.002770083102493075,
+              "unordered_close_pairs": 4778289,
+              "signed_offdiagonal_sum": 0.633811371669754,
+              "absolute_offdiagonal_sum": 133.68086075070195,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 0.3396769743196627,
+              "signed_over_absolute": 0.004741227488441541,
+              "independent_phase_standard_deviation": 0.061839404052969116,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 100.0,
+          "epsilon": 1900.0,
+          "coefficient_absolute_squared": 0.3535175159904461,
+          "direct_coefficient_residual": 1.146144441809476e-12,
+          "windows": [
+            {
+              "width": 0.05263157894736842,
+              "unordered_close_pairs": 87036996,
+              "signed_offdiagonal_sum": -0.09954001496997011,
+              "absolute_offdiagonal_sum": 2417.9789611403758,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": -0.05334623615170912,
+              "signed_over_absolute": -4.116661748083395e-05,
+              "independent_phase_standard_deviation": 0.26144457208559474,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.002770083102493075,
+              "unordered_close_pairs": 4778289,
+              "signed_offdiagonal_sum": 0.527643662343524,
+              "absolute_offdiagonal_sum": 133.68086075070195,
+              "diagonal_mass": 1.8659238617489797,
+              "signed_over_diagonal": 0.2827787741826452,
+              "signed_over_absolute": 0.003947039683769791,
+              "independent_phase_standard_deviation": 0.061839404052969116,
+              "artificial_phase_controls": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 23,
+      "rows": [
+        {
+          "auxiliary_t": 0.0,
+          "epsilon": 0.0,
+          "coefficient_absolute_squared": 4.00000000000004,
+          "direct_coefficient_residual": 3.5100350850307074e-12,
+          "windows": [
+            {
+              "width": 0.043478260869565216,
+              "unordered_close_pairs": 14128429764,
+              "signed_offdiagonal_sum": 7.038912330414865,
+              "absolute_offdiagonal_sum": 26228.68723099668,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 3.681665689881844,
+              "signed_over_absolute": 0.000268366932299089,
+              "independent_phase_standard_deviation": 0.23311004182596126,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.001890359168241966,
+              "unordered_close_pairs": 613594149,
+              "signed_offdiagonal_sum": 0.5677133008682622,
+              "absolute_offdiagonal_sum": 1138.6990294677394,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 0.2969394252098974,
+              "signed_over_absolute": 0.0004985630848685518,
+              "independent_phase_standard_deviation": 0.04856547849633376,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 0.1,
+          "epsilon": 2.3000000000000003,
+          "coefficient_absolute_squared": 1.6885544524038532,
+          "direct_coefficient_residual": 1.1620584481128967e-11,
+          "windows": [
+            {
+              "width": 0.043478260869565216,
+              "unordered_close_pairs": 14128429764,
+              "signed_offdiagonal_sum": 6.84603540136201,
+              "absolute_offdiagonal_sum": 26228.68723099668,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 3.580782437082215,
+              "signed_over_absolute": 0.0002610132692143077,
+              "independent_phase_standard_deviation": 0.23311004182596126,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.001890359168241966,
+              "unordered_close_pairs": 613594149,
+              "signed_offdiagonal_sum": 0.5673162839870832,
+              "absolute_offdiagonal_sum": 1138.6990294677394,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 0.296731767639931,
+              "signed_over_absolute": 0.0004982144265568252,
+              "independent_phase_standard_deviation": 0.04856547849633376,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 1.0,
+          "epsilon": 23.0,
+          "coefficient_absolute_squared": 1.9047076002698986,
+          "direct_coefficient_residual": 8.39683993180501e-13,
+          "windows": [
+            {
+              "width": 0.043478260869565216,
+              "unordered_close_pairs": 14128429764,
+              "signed_offdiagonal_sum": 4.450293008767988,
+              "absolute_offdiagonal_sum": 26228.68723099668,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 2.3277021095298203,
+              "signed_over_absolute": 0.00016967273160010452,
+              "independent_phase_standard_deviation": 0.23311004182596126,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.001890359168241966,
+              "unordered_close_pairs": 613594149,
+              "signed_offdiagonal_sum": 0.5636909457006601,
+              "absolute_offdiagonal_sum": 1138.6990294677394,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 0.2948355537141422,
+              "signed_over_absolute": 0.0004950306719451105,
+              "independent_phase_standard_deviation": 0.04856547849633376,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 10.0,
+          "epsilon": 230.0,
+          "coefficient_absolute_squared": 0.29551483246441257,
+          "direct_coefficient_residual": 4.810840653293938e-12,
+          "windows": [
+            {
+              "width": 0.043478260869565216,
+              "unordered_close_pairs": 14128429764,
+              "signed_offdiagonal_sum": -0.8333002385423963,
+              "absolute_offdiagonal_sum": 26228.68723099668,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": -0.4358532616403643,
+              "signed_over_absolute": -3.1770565991484856e-05,
+              "independent_phase_standard_deviation": 0.23311004182596126,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.001890359168241966,
+              "unordered_close_pairs": 613594149,
+              "signed_offdiagonal_sum": 0.5227501444962472,
+              "absolute_offdiagonal_sum": 1138.6990294677394,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 0.27342168520220467,
+              "signed_over_absolute": 0.00045907665763146886,
+              "independent_phase_standard_deviation": 0.04856547849633376,
+              "artificial_phase_controls": []
+            }
+          ]
+        },
+        {
+          "auxiliary_t": 100.0,
+          "epsilon": 2300.0,
+          "coefficient_absolute_squared": 0.0018728329685679332,
+          "direct_coefficient_residual": 3.9534738812601816e-12,
+          "windows": [
+            {
+              "width": 0.043478260869565216,
+              "unordered_close_pairs": 14128429764,
+              "signed_offdiagonal_sum": -0.6149248972368282,
+              "absolute_offdiagonal_sum": 26228.68723099668,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": -0.3216331998096522,
+              "signed_over_absolute": -2.3444745511705172e-05,
+              "independent_phase_standard_deviation": 0.23311004182596126,
+              "artificial_phase_controls": []
+            },
+            {
+              "width": 0.001890359168241966,
+              "unordered_close_pairs": 613594149,
+              "signed_offdiagonal_sum": 0.13057663970721053,
+              "absolute_offdiagonal_sum": 1138.6990294677394,
+              "diagonal_mass": 1.911882534516806,
+              "signed_over_diagonal": 0.0682974175190169,
+              "signed_over_absolute": 0.0001146717757090263,
+              "independent_phase_standard_deviation": 0.04856547849633376,
+              "artificial_phase_controls": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "finite window sums; no claim about the frozen tau asymptotic"
+}

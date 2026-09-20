@@ -1,0 +1,81 @@
+{
+  "checkpoint_id": "resolvent-flow-20260920-mixed-hierarchy",
+  "parent_checkpoint_id": "weighted-secular-20260920-covariance-control-and-ratio-target",
+  "base_git_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "main_goal_status": "OPEN",
+  "fixed_model": "exp(i tau N A_N) M_N; original raw centered Weyl generator; tau=10^-80",
+  "outcome": "Conditional all-order loop criterion, exact mixed/Brownian identities, and two limits of noise-comparison mechanisms. No fixed-model mixed-loop estimate.",
+  "external_dependency": {
+    "title": "Loop Equations Characterize Random Matrix Statistics",
+    "authors": [
+      "Paul Bourgade",
+      "Jiaoyang Huang"
+    ],
+    "version": "arxiv:2607.07617v2",
+    "version_date": "2026-09-09",
+    "url": "https://arxiv.org/abs/2607.07617v2",
+    "locators": [
+      "Assumption 1.4",
+      "Theorem 1.9",
+      "equations (2.18)-(2.20)"
+    ],
+    "sha256": "9ae676c7e1161d100244080dae040c5bbce8b0ddb829c9ab1326ec8c3e3ec223",
+    "verification_scope": "Source statement, normalization, application hypotheses and moment bootstrap checked. Entire external proof not re-proved."
+  },
+  "routes": [
+    {
+      "name": "mixed resolvent loop hierarchy",
+      "status": "sufficient all-k reduction checked; model hypothesis unproved"
+    },
+    {
+      "name": "unitary Brownian generator",
+      "status": "exact identity reconstructed; cubic feedback remains uncontrolled"
+    },
+    {
+      "name": "linear transport of noise directions",
+      "status": "rank obstruction proved for proposed isotropic identification; nonlinear bracket routes not excluded"
+    },
+    {
+      "name": "microscopic preserving global entropy smoothing",
+      "status": "incompatibility proved; local entropy and other DBM approaches not excluded"
+    }
+  ],
+  "internal_review": {
+    "agent": "audit_loop_bridge",
+    "scope": "Source-to-model bridge, anchored all-k moments, p=2 and same-half identities, entropy proof, instantaneous phase-rank qualification",
+    "external_peer_review": false,
+    "Lean_certification": false
+  },
+  "executions": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 build/resolvent-flow/checks.py",
+      "status": "completed, exit 0",
+      "max_mixed_identity_error": 2.6697343572326224e-15,
+      "max_same_half_identity_error": 4.907951813174212e-15,
+      "max_matrix_laplacian_error": 4.1009645457279476e-08,
+      "integer_CUE_coefficient_checks": 767
+    }
+  ],
+  "numerical_scope": {
+    "N": [
+      3,
+      5,
+      9,
+      15
+    ],
+    "auxiliary_epsilon": 0.17,
+    "original_tau_resolved": false,
+    "interval_certification": false
+  },
+  "next_load_bearing_obligation": "Prove the normalized mixed loop residuals vanish for every fixed order and compact off-real argument set in the original fixed family; even the cubic term in the first mixed equation is uncontrolled.",
+  "publication": "No tracked changes, commit, or push. Main-barrier closure condition remains unsatisfied.",
+  "artifacts": {
+    "build/resolvent-flow/bourgade_huang_2607_07617v2.pdf": "9ae676c7e1161d100244080dae040c5bbce8b0ddb829c9ab1326ec8c3e3ec223",
+    "build/resolvent-flow/bourgade_huang_2607_07617v2.txt": "f82f5b0e1b622babe49ca862ca13d09da27a90cc2e8e15440a0dc618cfc1203b",
+    "build/resolvent-flow/checks.json": "b657e3c08fad69cd59a95d23fdaa4cba2c7a59c6d4a6bfd422b144401c97b79a",
+    "build/resolvent-flow/checks.py": "9c80a6021a1b36d4a72a853e0cd4f8fa648af00459f1b295b53267384f9a61c3",
+    "build/resolvent-flow/entropy_obstruction.md": "b4efc17701d2d81ccd728c6780131bf9cb315a8f39122ed997547be6c5b5dc19",
+    "build/resolvent-flow/loop_bridge.md": "636c63a912053a60a653ade651c6c45329d421acacd307ad0e9438ecec183fa4",
+    "build/resolvent-flow/review.md": "ea512fa70157ef502b6337a86cbe81dcce13923d14580a435ce6997b5312f029"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "K": 5,
+      "N": 41,
+      "kappa": 0.0001,
+      "quantum_phase_scale": 0.025761059759436305,
+      "L": 8,
+      "fejer_return_energy": 6.668980828360428,
+      "cue_U_reference_expectation": 0.062462819750148724,
+      "unperturbed_cat_energy_exact": 7,
+      "smoothed_cubic": [
+        158.05851520721023,
+        1.5070368807123382
+      ],
+      "cue_cubic_reference": 0.4995326822052454,
+      "smoothed_pair_form_factor": 13.600950237318441,
+      "cue_pair_reference": 0.7497663411026227,
+      "unit_circle_max_error": 4.107825191113079e-15,
+      "hermitian_entry_error": 2.7755575615628914e-16
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "kappa": 0.0004,
+      "quantum_phase_scale": 0.10304423903774522,
+      "L": 8,
+      "fejer_return_energy": 3.9769103905111747,
+      "cue_U_reference_expectation": 0.062462819750148724,
+      "unperturbed_cat_energy_exact": 7,
+      "smoothed_cubic": [
+        -0.7667626991521674,
+        1.175512302760733
+      ],
+      "cue_cubic_reference": 0.4995326822052454,
+      "smoothed_pair_form_factor": 1.1835435354867803,
+      "cue_pair_reference": 0.7497663411026227,
+      "unit_circle_max_error": 3.885780586188048e-15,
+      "hermitian_entry_error": 2.7755575615628914e-16
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "kappa": 0.0001,
+      "quantum_phase_scale": 0.1501681288415921,
+      "L": 34,
+      "fejer_return_energy": 2.759650174208721,
+      "cue_U_reference_expectation": 0.04718054655905884,
+      "unperturbed_cat_energy_exact": 33,
+      "smoothed_cubic": [
+        0.21708841437045828,
+        0.3351509768542197
+      ],
+      "cue_cubic_reference": 0.4999871239078423,
+      "smoothed_pair_form_factor": 0.3767297177017579,
+      "cue_pair_reference": 0.7499935619539213,
+      "unit_circle_max_error": 1.2434497875801753e-14,
+      "hermitian_entry_error": 6.661338147750939e-16
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "kappa": 0.0004,
+      "quantum_phase_scale": 0.6006725153663685,
+      "L": 34,
+      "fejer_return_energy": 0.15736926478158592,
+      "cue_U_reference_expectation": 0.04718054655905884,
+      "unperturbed_cat_energy_exact": 33,
+      "smoothed_cubic": [
+        0.9302501557332424,
+        0.22851526237650674
+      ],
+      "cue_cubic_reference": 0.4999871239078423,
+      "smoothed_pair_form_factor": 0.5518165850426366,
+      "cue_pair_reference": 0.7499935619539213,
+      "unit_circle_max_error": 1.3100631690576847e-14,
+      "hermitian_entry_error": 6.661338147750939e-16
+    },
+    {
+      "K": 9,
+      "N": 1393,
+      "kappa": 0.0001,
+      "quantum_phase_scale": 0.8752477132901163,
+      "L": 154,
+      "fejer_return_energy": 0.044130743210100326,
+      "cue_U_reference_expectation": 0.03666419473018873,
+      "unperturbed_cat_energy_exact": 153,
+      "smoothed_cubic": [
+        0.4904123913286718,
+        0.7402463614708777
+      ],
+      "cue_cubic_reference": 0.49999999997284283,
+      "smoothed_pair_form_factor": 0.6892679293629502,
+      "cue_pair_reference": 0.7499999999864218,
+      "unit_circle_max_error": 2.4868995751603507e-14,
+      "hermitian_entry_error": 2.7755575615628914e-16
+    },
+    {
+      "K": 9,
+      "N": 1393,
+      "kappa": 0.0004,
+      "quantum_phase_scale": 3.500990853160465,
+      "L": 154,
+      "fejer_return_energy": 0.0401702721794457,
+      "cue_U_reference_expectation": 0.03666419473018873,
+      "unperturbed_cat_energy_exact": 153,
+      "smoothed_cubic": [
+        0.29316140801439355,
+        0.23109099048684767
+      ],
+      "cue_cubic_reference": 0.49999999997284283,
+      "smoothed_pair_form_factor": 0.7569168844304037,
+      "cue_pair_reference": 0.7499999999864218,
+      "unit_circle_max_error": 2.5979218776228663e-14,
+      "hermitian_entry_error": 2.7755575615628914e-16
+    }
+  ],
+  "elapsed_seconds": 17.725119869999844,
+  "scope": "f_star finite-dimension diagnostics, not a test at frozen tau=10^-80 and not a universality proof"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "algebraic-return-20260919-fixed-strength-and-exact-simplicity",
+  "date": "2026-09-19",
+  "base_git_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "parent_checkpoint": "report-audit-20260919-cue-variance-folded-control",
+  "original_goal": "All-k microscopic CUE statistics for the prescribed fixed nonlinear map; general BGS ambition retained",
+  "original_goal_status": "OPEN",
+  "new_claims": [
+    {
+      "claim": "No positive power is projectively an algebraic-entry matrix, including no scalar return",
+      "range": "Raw frozen family: every odd N>=3 except 7; every nonzero real algebraic tau; every positive integer time",
+      "evidence": "Written proof with imported Lindemann-Weierstrass and an exact uniform Weyl-orbit witness 169/500; independent internal mathematical review"
+    },
+    {
+      "claim": "At least one eigenvalue ratio transcendental",
+      "range": "Same range as nonreturn theorem",
+      "evidence": "Written proof and separate internal derivation"
+    },
+    {
+      "claim": "Simple spectrum for every nonzero real algebraic quantum exponent",
+      "range": "Raw N=3,5,9,15,21,41,239,1393; ordinary-midpoint N=7,41 only",
+      "evidence": "Exact finite-field certificates; independent Python/C++ assembly and replay; corrupted inputs rejected"
+    },
+    {
+      "claim": "Explicit first-order gap estimate and sufficient small-exponent interval",
+      "range": "Conditional finite-dimensional Schur-complement theorem and evaluations in the certified dimensions",
+      "evidence": "Self-reviewed proof and exact rational evaluation; bounds insufficient at most dimensions"
+    }
+  ],
+  "remaining_obligations": [
+    "Uniform algebraic cyclicity/simple block splitting for all dimensions is unproved",
+    "No quantitative Heisenberg-time near-resonance suppression or all-k trace comparison",
+    "Exact nonreturn and simple spectrum do not imply BGS; explicit controls retained"
+  ],
+  "publication": {
+    "tracked_tree_clean": true,
+    "commit_created": false,
+    "push_performed": false,
+    "reason": "User requires closure of main barrier before git publication"
+  },
+  "execution": {
+    "status": "completed",
+    "running_jobs": [],
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "finite_certificates": 10,
+    "cpp_negative_control": "rejected: q(B)v != 0",
+    "lean": "not run; no lean or lake executable found in this environment"
+  },
+  "review": {
+    "qualitative": "Separate internal agent derivation of specialization, projective nonreturn, spectral consequence, orbit witness and first-order simplicity implication",
+    "quantitative": "Self-review only; independent-agent review not claimed",
+    "formalization": "No proof-assistant certification or external refereeing"
+  },
+  "sources": [
+    {
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio15-4.pdf",
+      "locator": "Theorem 4.8, printed page 48, PDF page 4",
+      "used_for": "Linear-independence form of Lindemann-Weierstrass"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2112.05004v2",
+      "locator": "Theorem 1.2, PDF page 2",
+      "used_for": "Audit of possible quantitative continuation only; no bound for BGS imported"
+    }
+  ],
+  "input_sha256": {
+    "build/report-audit-20260919/checkpoint.json": "24ae5f534b488799ad27db7dc9efd50c7aedf919080ad2c0f9061a0384a4d560",
+    "build/design-return/frozen_sharp_return.py": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
+    "build/design-return/sparse_orbit_checks.py": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
+    "mathematics/phase_space_return_gas.md": "95acc1bc4b196a68852a62cc813201bf2494a9ad36083fc45ec58d7f4ead6385",
+    "mathematics/resonance_microscopic_obstruction.md": "d739775b6d5d2be632894c25d78aead4ffe6aefc5a3b15b673429492d0d62602"
+  },
+  "artifact_sha256": {
+    "certificates.json": "e6c8273511beac97a14999e8324331c9641943e998f5dd02106ebedf98e0b4ac",
+    "certificates.txt": "c9a3c12f0b6350ad70ffa5532231754334343452dba2582ceb7f1090f668ce31",
+    "coefficient_checks.json": "b2fd6082bc48c402162895b7eaa42be7387660da95bb886ac01ac830f946dda7",
+    "cpp_verification.json": "716e41a3b9e74e50d589cc3bd70699582758589deb293a4d59d76c6e642f66b7",
+    "exact_coefficients.py": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
+    "exact_return_theorem.md": "40c46ed7587c0f7bac61a91f3f555580119bbe5a2975905b7c09dade189a5919",
+    "export_certificates.py": "00fc3124c26c96444c856176d69da3e882c2e649de234505e05710cb92266c7f",
+    "quantitative_bounds.json": "5427cc5e50f3d7a1d9e9efddd651431275a9dc97b00a3b56f0fc4e7e1c229869",
+    "quantitative_bounds.py": "f4e0ad40cc8c1bf63e53f2580460598902746ba1ad1828ba45743b71f3a3e95e",
+    "quantitative_split.md": "98422dbb660d7fce7403bcaccee93824ce9080435efa1ddd9fd433441a0b513c",
+    "replay.cpp": "3d9f0dd6bdf8333b15721ee5c5697e4bc9d1f8e5ec453d6d9c373f0128dc3ce0",
+    "simple_spectrum.json": "6c086e852876cec596e9b9a8e1a3738d4dc042e56d042f88455ad4ed80603068",
+    "simple_spectrum.py": "224307655a9ca4de5a2fe0df23809c7cf9cc1792430f514a90cf28097bd3078b",
+    "verify_cpp.py": "acd9b6ab646117b9d49c082e4874682d2e4b3c01b7328e146060cf6da3f28ebd"
+  },
+  "live_index": "build/design-return/research_checkpoint.md",
+  "live_index_sha256": "14da6c2beddab65e7c404371883f4a4ff2469ecb0383f6413b7944370bae8434",
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python build/algebraic-return/simple_spectrum.py",
+    "python build/algebraic-return/verify_cpp.py",
+    "python build/algebraic-return/quantitative_bounds.py"
+  ]
+}

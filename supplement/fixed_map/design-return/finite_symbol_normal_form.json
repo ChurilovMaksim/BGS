@@ -1,0 +1,50 @@
+[
+  {
+    "K": 5,
+    "N": 41,
+    "homological_error": 3.8847601029315115e-16,
+    "commutator_operator": 0.6804696996653807,
+    "commutator_hs": 0.2668415072504381,
+    "checks": [
+      {
+        "epsilon": 0.003,
+        "error": 1.5778535024013306e-06,
+        "error_over_epsilon_squared": 0.17531705582237006
+      },
+      {
+        "epsilon": 0.01,
+        "error": 1.7526280828251757e-05,
+        "error_over_epsilon_squared": 0.17526280828251756
+      },
+      {
+        "epsilon": 0.03,
+        "error": 0.0001575911941417548,
+        "error_over_epsilon_squared": 0.175101326824172
+      }
+    ]
+  },
+  {
+    "K": 7,
+    "N": 239,
+    "homological_error": 8.836636004363474e-16,
+    "commutator_operator": 0.5249339613519547,
+    "commutator_hs": 0.22877536772370452,
+    "checks": [
+      {
+        "epsilon": 0.003,
+        "error": 1.229670048819627e-06,
+        "error_over_epsilon_squared": 0.136630005424403
+      },
+      {
+        "epsilon": 0.01,
+        "error": 1.3662919303186261e-05,
+        "error_over_epsilon_squared": 0.1366291930318626
+      },
+      {
+        "epsilon": 0.03,
+        "error": 0.0001229598478616534,
+        "error_over_epsilon_squared": 0.1366220531796149
+      }
+    ]
+  }
+]

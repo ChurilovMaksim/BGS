@@ -1,0 +1,107 @@
+{
+  "id": "block-memory-20260919-frozen-symbol-doeblin-and-coherent-retention",
+  "date": "2026-09-19",
+  "base_git_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "parent_checkpoint": "algebraic-return-20260919-fixed-strength-and-exact-simplicity",
+  "original_goal": "All-k microscopic CUE statistics for the prescribed fixed nonlinear map; general BGS ambition retained",
+  "original_goal_status": "OPEN",
+  "claims": [
+    {
+      "claim": "Uniform Doeblin minorization T_rs >= epsilon^2 pi_r/300",
+      "scope": "Prime Pell K>=13, actual frozen Fourier symbol, 0<abs(epsilon)<=1/10",
+      "evidence": "Written proof; separate internal mathematical audit"
+    },
+    {
+      "claim": "All-integer-time block retention >=1-4(K epsilon F0)^2",
+      "scope": "K abs(epsilon) F0<=1/4, F0=593/500",
+      "evidence": "Riesz projector estimate; internal audit; dense diagnostics"
+    },
+    {
+      "claim": "Closed and repeatedly reset distributions have TV>0.9937 for all m>=N",
+      "scope": "Actual tau=10^-80, prime K=199, one exact finite dimension",
+      "evidence": "Analytic inequalities evaluated with Fraction; independent internal arithmetic comparison"
+    },
+    {
+      "claim": "Quantitative Abel memory cancellation of Markov drift",
+      "scope": "Same smallness regime, invariant compression >=(1-2 rho^2)^2 I; useful Heisenberg bound if N epsilon^2/300>1+1/c",
+      "evidence": "Written resolvent proof; separate internal audit; spectral-resolvent diagnostics"
+    },
+    {
+      "claim": "Every block transition strictly positive at any nonzero real algebraic epsilon",
+      "scope": "Prime Pell K>=13, no smallness assumption; no rate uniform in N",
+      "evidence": "Self-reviewed corollary of offdiagonal A bound and prior Lindemann-Weierstrass specialization"
+    }
+  ],
+  "not_claimed": [
+    "A fixed-tau asymptotic BGS theorem or counterexample",
+    "Control of the full CUE-subtracted trace products",
+    "A new Schur memory identity or transcendence theorem",
+    "Location of the Abel memory at lags comparable to N",
+    "External refereeing, exhaustive novelty determination or Lean verification"
+  ],
+  "next_mathematical_obligation": "A quantitative coherent trace estimate after full invariant subtraction at epsilon=tau*N with fixed nonzero tau; block population mixing and exact positivity do not supply it",
+  "review": {
+    "main_theorem": "Separate internal audit passed arithmetic, charge projections, unnormalized trace error, constants, Riesz estimates and interpretation",
+    "memory_extension": "Separate audit passed after repair to ordinary Hilbert-Schmidt normalization; no inverse at z=1 asserted",
+    "qualitative_extension": "Self-reviewed application of the already audited specialization lemma"
+  },
+  "execution": {
+    "status": "completed",
+    "running_jobs": [],
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "exact_checks": "passed; decisive comparisons are rational",
+    "negative_control": "K=9,N=1393 has 49 fixed Weyl labels at j=3, violating prime-period trace bound",
+    "dense_dimensions": [
+      41,
+      239
+    ],
+    "dense_exponent": 0.03,
+    "dense_scope": "Auxiliary exponent and small dimensions, not examples satisfying full conservative Doeblin N condition",
+    "largest_dense_time": 500000,
+    "maximum_dense_covariance_error": 2.5592957562088362e-15,
+    "maximum_dense_schur_residual": 3.2461995326173066e-14,
+    "plot": "Rendered and visually inspected; labels disclose finite auxiliary diagnostic",
+    "lean": "not run; no executable in this environment"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python build/block-memory/verify.py",
+    "python build/block-memory/verify.py --exact-only"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/nlin/0402029v2",
+      "locator": "equation (2)",
+      "use": "Scope audit: bond-phase averaging in quantum graph argument; no BGS theorem imported"
+    },
+    {
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio15-4.pdf",
+      "locator": "Theorem 4.8, printed page 48",
+      "use": "Prior verified Lindemann-Weierstrass input, reused for qualitative strict positivity"
+    }
+  ],
+  "input_sha256": {
+    "build/algebraic-return/checkpoint.json": "f945c47ca2c55aa91b8fa63fbc1c882559435ec4d0f9e2f6c338d3187176f243",
+    "build/algebraic-return/exact_coefficients.py": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
+    "build/algebraic-return/exact_return_theorem.md": "40c46ed7587c0f7bac61a91f3f555580119bbe5a2975905b7c09dade189a5919",
+    "build/coherent-return/research_checkpoint.md": "f33c2a99a696153e07a0ab0ab94a1f5c7927f5b221a238cc738403dac1a5ac50"
+  },
+  "artifact_sha256": {
+    "abel_memory_bound.md": "16807f4f13b8ac21c39cdd29feea289162ebcfdcb6005936ad6119fc7cdf97ff",
+    "block_memory.png": "02ebec4acc6adc370759acc2bfa36b0c8fd3c338a8e6a97e85170bf4161f7db1",
+    "block_memory.svg": "6838956fe87694a119b448d0f42111ca76cd5543119c5aa70604f60ac1030805",
+    "block_memory_theorem.md": "c430547270f39234d2b975d3e485bff072c5cc6c5eab9c9efc60e57c95be35b4",
+    "dense_diagnostics.json": "bcff65dc574597ec729570fe59150a08529f988ea3c4d1fe74c3d564fcf38d49",
+    "exact_certificate.json": "888e9e5ddeb52e0917efa5b6ced6c2621216798396c39df46e720786080b4626",
+    "verify.py": "3cd46442e4eaf12844d3aedcd7b9d898ba7b4a7f9e41322aa7e9ed7122136f80"
+  },
+  "live_index": "build/design-return/research_checkpoint.md",
+  "live_index_sha256": "543c899f28e1cca089d1d219e8e434fed1869ad67eea25c8261266d0a62ef86c",
+  "publication": {
+    "tracked_tree_clean": true,
+    "commit_created": false,
+    "push_performed": false,
+    "reason": "User requires closure of the main barrier before publication"
+  }
+}

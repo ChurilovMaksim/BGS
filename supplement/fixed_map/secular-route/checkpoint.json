@@ -1,0 +1,62 @@
+{
+  "id": "secular-route-20260920-direct-fixed-coupling-attempt",
+  "base_git_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "parent_checkpoint": "block-memory-20260919-frozen-symbol-doeblin-and-coherent-retention",
+  "original_goal_status": "OPEN",
+  "principal_estimate_proved": false,
+  "new_breakthrough_claimed": false,
+  "target": "Weighted CUE-subtracted pair trace comparison for U_N at the original fixed tau=10^-80, then all-k microscopic statistics",
+  "executed_routes": [
+    {
+      "name": "exact determinant resummation",
+      "status": "blocked",
+      "missing": "Weighted coherent subset-energy sum at degree proportional to N"
+    },
+    {
+      "name": "independent-phase replacement",
+      "status": "proposed uniform characterwise version rejected",
+      "missing": "Weighted comparison, without replacing the fixed parameter by an ensemble"
+    },
+    {
+      "name": "prequantum long-time formula transfer",
+      "status": "source import not justified",
+      "missing": "Structured microscopic comparison between the specified unitary and the corrected almost-unitary outer-band operator"
+    }
+  ],
+  "evidence": {
+    "finite_dimensions": [
+      5,
+      9
+    ],
+    "method": "independent matrix construction, principal-minor expansion, Newton identities, self-inversiveness, exact independent-phase grid",
+    "scope": "floating identity checks, not a BGS experiment; tiny original-tau kick unresolved",
+    "subset_scale": "exact rational comparisons; decimal strings preserve nonzero tiny values",
+    "review": "self-review only",
+    "running_jobs": [],
+    "proof_assistant": "not run"
+  },
+  "input_sha256": {
+    "build/block-memory/checkpoint.json": "db7f2cc3a45f3cf9b2bf5e620e0b3d56bd125ef941346e6334efd091f2fdba74",
+    "build/ergodic-transfer/ergodic_spectral_transfer.md": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8",
+    "build/algebraic-return/exact_coefficients.py": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c"
+  },
+  "artifact_sha256": {
+    "checks.json": "404773c4deb52aa6d802cf15db4fbd5649f92f2d3d820ceb33dafaf18fd745cd",
+    "exact_structure_checks.py": "da38c8235b6c743a7f635c40e00cff36ffa85f5df48c61820b14ee346413b7c3",
+    "attempt.md": "44faea400afe0d15244c899871d9124e767dd5f04679ab773f6c66733147a723"
+  },
+  "source_cache_sha256": {
+    "build/source-audit-20260920/faure_tsujii_1206_0282v2.txt": "aeb6a0257d59fc08e5d667214e671be9a1f0d0095af06e7d3489f64c7c9f2780",
+    "build/source-audit-20260920/faure_tsujii_1206_0282v2.pdf": "0b597be8902e94f5b1a7adf4cbf1b85953a7ea4cd89166d485efbb739831e23b"
+  },
+  "live_index": "build/design-return/research_checkpoint.md",
+  "live_index_sha256": "faeb83cd2cf6e0cd142fcefd715e4f768574835827c288bf780e6e563ead415f",
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python build/secular-route/exact_structure_checks.py"
+  ],
+  "publication": {
+    "tracked_tree_clean": true,
+    "commit_created": false,
+    "push_performed": false
+  }
+}

@@ -6,6 +6,7 @@ on:
       - 'manuscript/**'
       - 'mathematics/**'
       - 'computations/maintenance/sync_return_sections.py'
+      - 'computations/maintenance/sync_fixed_map_section.py'
       - 'computations/maintenance/build_unified_manuscript.py'
       - '.github/workflows/build-manuscript.yml'
   pull_request:
@@ -13,6 +14,7 @@ on:
       - 'manuscript/**'
       - 'mathematics/**'
       - 'computations/maintenance/sync_return_sections.py'
+      - 'computations/maintenance/sync_fixed_map_section.py'
       - 'computations/maintenance/build_unified_manuscript.py'
       - '.github/workflows/build-manuscript.yml'
   workflow_dispatch:
@@ -34,6 +36,7 @@ jobs:
       - name: Build canonical unified manuscript
         run: |
           python computations/maintenance/sync_return_sections.py --check
+          python computations/maintenance/sync_fixed_map_section.py --check
           python computations/maintenance/build_unified_manuscript.py --output-dir "$RUNNER_TEMP/unified-paper"
           test -s "$RUNNER_TEMP/unified-paper/WoW_unified.pdf"
       - uses: actions/upload-artifact@v4

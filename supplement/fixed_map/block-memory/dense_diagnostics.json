@@ -1,0 +1,1006 @@
+[
+  {
+    "evidence": "floating diagnostics only, not certification",
+    "K": 5,
+    "N": 41,
+    "epsilon": 0.03,
+    "original_fixed_tau": false,
+    "large_N_hypothesis_for_proved_Doeblin_constant": false,
+    "retention_smallness_hypothesis": true,
+    "dimensions": [
+      9,
+      8,
+      8,
+      8,
+      8
+    ],
+    "errors": {
+      "covariance": 1.1186724717504585e-15,
+      "twisted_trace": 1.9984014443252818e-15,
+      "block_basis_unitarity": 2.318068894981739e-15,
+      "Schur_diagonalization": 8.360281863993851e-15,
+      "edge_expansion_max_remainder": 0.00011668212071892152
+    },
+    "minimum_sqrt_K_charge_A_norm": 0.6424204907076356,
+    "observed_Doeblin_coefficient": 0.00028039110015602394,
+    "closed_diagonal_rigorous_lower_bound": 0.87340636,
+    "pi_max": 0.21951219512195122,
+    "observations": [
+      {
+        "m": 1,
+        "min_closed_diagonal": 0.9996932104061704,
+        "max_markov_diagonal": 0.9997255402078538,
+        "min_TV_closed_vs_markov": 1.142816852435502e-16,
+        "max_markov_TV_to_pi": 0.8045767847503684,
+        "markov_column_drift": 1.1102230246251565e-15
+      },
+      {
+        "m": 2,
+        "min_closed_diagonal": 0.9995259530802711,
+        "max_markov_diagonal": 0.9994511773272977,
+        "min_TV_closed_vs_markov": 0.00021374085049358704,
+        "max_markov_TV_to_pi": 0.804275634166311,
+        "markov_column_drift": 2.220446049250313e-15
+      },
+      {
+        "m": 3,
+        "min_closed_diagonal": 0.999523593215523,
+        "max_markov_diagonal": 0.9991769113239647,
+        "min_TV_closed_vs_markov": 0.00039784032773512306,
+        "max_markov_TV_to_pi": 0.8039745969853511,
+        "markov_column_drift": 3.3306690738754696e-15
+      },
+      {
+        "m": 4,
+        "min_closed_diagonal": 0.9996915378592053,
+        "max_markov_diagonal": 0.9989027421634993,
+        "min_TV_closed_vs_markov": 0.0008201399180829756,
+        "max_markov_TV_to_pi": 0.80367367316454,
+        "markov_column_drift": 4.440892098500626e-15
+      },
+      {
+        "m": 5,
+        "min_closed_diagonal": 0.999999235767308,
+        "max_markov_diagonal": 0.9986286698115586,
+        "min_TV_closed_vs_markov": 0.001370762645681229,
+        "max_markov_TV_to_pi": 0.8033728626609459,
+        "markov_column_drift": 5.551115123125783e-15
+      },
+      {
+        "m": 6,
+        "min_closed_diagonal": 0.999694906395852,
+        "max_markov_diagonal": 0.9983546942338118,
+        "min_TV_closed_vs_markov": 0.0013734737168291775,
+        "max_markov_TV_to_pi": 0.8030721654316533,
+        "markov_column_drift": 6.439293542825908e-15
+      },
+      {
+        "m": 8,
+        "min_closed_diagonal": 0.9995221054211988,
+        "max_markov_diagonal": 0.9978070332636388,
+        "min_TV_closed_vs_markov": 0.0017668651252159366,
+        "max_markov_TV_to_pi": 0.8024711106243916,
+        "markov_column_drift": 8.659739592076221e-15
+      },
+      {
+        "m": 10,
+        "min_closed_diagonal": 0.9999969507013461,
+        "max_markov_diagonal": 0.9972597589785787,
+        "min_TV_closed_vs_markov": 0.002737976012560577,
+        "max_markov_TV_to_pi": 0.8018705083997563,
+        "markov_column_drift": 1.0880185641326534e-14
+      },
+      {
+        "m": 13,
+        "min_closed_diagonal": 0.9995215083707027,
+        "max_markov_diagonal": 0.9964395719858037,
+        "min_TV_closed_vs_markov": 0.0031340753616973453,
+        "max_markov_TV_to_pi": 0.8009704529055622,
+        "markov_column_drift": 1.4210854715202004e-14
+      },
+      {
+        "m": 16,
+        "min_closed_diagonal": 0.9996983500383331,
+        "max_markov_diagonal": 0.9956202534929944,
+        "min_TV_closed_vs_markov": 0.004113054956985958,
+        "max_markov_TV_to_pi": 0.8000714137955435,
+        "markov_column_drift": 1.7319479184152442e-14
+      },
+      {
+        "m": 20,
+        "min_closed_diagonal": 0.9999879241374336,
+        "max_markov_diagonal": 0.9945291782396023,
+        "min_TV_closed_vs_markov": 0.005461843789865344,
+        "max_markov_TV_to_pi": 0.7988742740293082,
+        "markov_column_drift": 2.1760371282653068e-14
+      },
+      {
+        "m": 25,
+        "min_closed_diagonal": 0.9999812723759702,
+        "max_markov_diagonal": 0.9931674997829659,
+        "min_TV_closed_vs_markov": 0.00681856744379788,
+        "max_markov_TV_to_pi": 0.7973803832339496,
+        "markov_column_drift": 2.708944180085382e-14
+      },
+      {
+        "m": 32,
+        "min_closed_diagonal": 0.9995562486346965,
+        "max_markov_diagonal": 0.9912651847769833,
+        "min_TV_closed_vs_markov": 0.008331524996584579,
+        "max_markov_TV_to_pi": 0.7952936565456191,
+        "markov_column_drift": 3.4638958368304884e-14
+      },
+      {
+        "m": 40,
+        "min_closed_diagonal": 0.9999535886231185,
+        "max_markov_diagonal": 0.9890968609202747,
+        "min_TV_closed_vs_markov": 0.010868506870287896,
+        "max_markov_TV_to_pi": 0.7929155525039715,
+        "markov_column_drift": 4.3520742565306136e-14
+      },
+      {
+        "m": 41,
+        "min_closed_diagonal": 0.9997070818499323,
+        "max_markov_diagonal": 0.9888262509056963,
+        "min_TV_closed_vs_markov": 0.010919031708476842,
+        "max_markov_TV_to_pi": 0.7926187929649374,
+        "markov_column_drift": 4.463096558993129e-14
+      },
+      {
+        "m": 50,
+        "min_closed_diagonal": 0.9999296206620906,
+        "max_markov_diagonal": 0.9863950562992325,
+        "min_TV_closed_vs_markov": 0.013552277113449425,
+        "max_markov_TV_to_pi": 0.7899529803469795,
+        "markov_column_drift": 5.395683899678261e-14
+      },
+      {
+        "m": 63,
+        "min_closed_diagonal": 0.9995617051680883,
+        "max_markov_diagonal": 0.9828969439270948,
+        "min_TV_closed_vs_markov": 0.016703759258956605,
+        "max_markov_TV_to_pi": 0.7861182785722366,
+        "markov_column_drift": 6.838973831690964e-14
+      },
+      {
+        "m": 80,
+        "min_closed_diagonal": 0.9998416708054512,
+        "max_markov_diagonal": 0.9783466528826703,
+        "min_TV_closed_vs_markov": 0.02153329368137864,
+        "max_markov_TV_to_pi": 0.781131911671856,
+        "markov_column_drift": 8.615330671091215e-14
+      },
+      {
+        "m": 100,
+        "min_closed_diagonal": 0.9997802260553947,
+        "max_markov_diagonal": 0.9730282236204382,
+        "min_TV_closed_vs_markov": 0.026802881236079882,
+        "max_markov_TV_to_pi": 0.7753063200650204,
+        "markov_column_drift": 1.0791367799356522e-13
+      },
+      {
+        "m": 126,
+        "min_closed_diagonal": 0.9997326750687513,
+        "max_markov_diagonal": 0.9661701798369806,
+        "min_TV_closed_vs_markov": 0.033603496264288504,
+        "max_markov_TV_to_pi": 0.7677983459410211,
+        "markov_column_drift": 1.3566925360919413e-13
+      },
+      {
+        "m": 159,
+        "min_closed_diagonal": 0.9996332480487008,
+        "max_markov_diagonal": 0.9575559182017782,
+        "min_TV_closed_vs_markov": 0.04211515166850351,
+        "max_markov_TV_to_pi": 0.758374235222212,
+        "markov_column_drift": 1.7119639039719914e-13
+      },
+      {
+        "m": 200,
+        "min_closed_diagonal": 0.9996430376159371,
+        "max_markov_diagonal": 0.9469922249519671,
+        "min_TV_closed_vs_markov": 0.052689853418532856,
+        "max_markov_TV_to_pi": 0.7468274320726482,
+        "markov_column_drift": 2.1471713296250527e-13
+      },
+      {
+        "m": 251,
+        "min_closed_diagonal": 0.9997466546282716,
+        "max_markov_diagonal": 0.9340636384050294,
+        "min_TV_closed_vs_markov": 0.06569485418638524,
+        "max_markov_TV_to_pi": 0.7327108540918137,
+        "markov_column_drift": 2.688960165642129e-13
+      },
+      {
+        "m": 316,
+        "min_closed_diagonal": 0.9997058873437656,
+        "max_markov_diagonal": 0.9179198475741077,
+        "min_TV_closed_vs_markov": 0.0818038560646426,
+        "max_markov_TV_to_pi": 0.7151075237297112,
+        "markov_column_drift": 3.375077994860476e-13
+      },
+      {
+        "m": 398,
+        "min_closed_diagonal": 0.9996837061544472,
+        "max_markov_diagonal": 0.8980751719297788,
+        "min_TV_closed_vs_markov": 0.1016633193152987,
+        "max_markov_TV_to_pi": 0.6935058422485402,
+        "markov_column_drift": 4.2299497238218464e-13
+      },
+      {
+        "m": 501,
+        "min_closed_diagonal": 0.9996636173773029,
+        "max_markov_diagonal": 0.8739484925090205,
+        "min_TV_closed_vs_markov": 0.12574992427461285,
+        "max_markov_TV_to_pi": 0.6672996615731306,
+        "markov_column_drift": 5.302425165609748e-13
+      },
+      {
+        "m": 631,
+        "min_closed_diagonal": 0.9996751446721657,
+        "max_markov_diagonal": 0.8447228985327107,
+        "min_TV_closed_vs_markov": 0.1550193479854146,
+        "max_markov_TV_to_pi": 0.6356411221140592,
+        "markov_column_drift": 6.643574579356937e-13
+      },
+      {
+        "m": 794,
+        "min_closed_diagonal": 0.999668685544638,
+        "max_markov_diagonal": 0.8099227088572255,
+        "min_TV_closed_vs_markov": 0.18978952701113255,
+        "max_markov_TV_to_pi": 0.5980720971281369,
+        "markov_column_drift": 8.30002733209767e-13
+      },
+      {
+        "m": 1000,
+        "min_closed_diagonal": 0.9996852029108637,
+        "max_markov_diagonal": 0.7687097661637716,
+        "min_TV_closed_vs_markov": 0.23101867061182946,
+        "max_markov_TV_to_pi": 0.5537700256551579,
+        "markov_column_drift": 1.0365042157900461e-12
+      },
+      {
+        "m": 1259,
+        "min_closed_diagonal": 0.9996839152736559,
+        "max_markov_diagonal": 0.7209660302737262,
+        "min_TV_closed_vs_markov": 0.2787279490789671,
+        "max_markov_TV_to_pi": 0.5027226770516037,
+        "markov_column_drift": 1.2918555114538322e-12
+      },
+      {
+        "m": 1585,
+        "min_closed_diagonal": 0.9996540368811561,
+        "max_markov_diagonal": 0.6667476826896521,
+        "min_TV_closed_vs_markov": 0.33300408456868263,
+        "max_markov_TV_to_pi": 0.44723548756689757,
+        "markov_column_drift": 1.6067147612375265e-12
+      },
+      {
+        "m": 1995,
+        "min_closed_diagonal": 0.9996351405292638,
+        "max_markov_diagonal": 0.6068313313615151,
+        "min_TV_closed_vs_markov": 0.39285134952645606,
+        "max_markov_TV_to_pi": 0.3873191362385669,
+        "markov_column_drift": 1.994182596831706e-12
+      },
+      {
+        "m": 2511,
+        "min_closed_diagonal": 0.9997072846107764,
+        "max_markov_diagonal": 0.5427350019486431,
+        "min_TV_closed_vs_markov": 0.45697897360311696,
+        "max_markov_TV_to_pi": 0.323222806825457,
+        "markov_column_drift": 2.4698021405811232e-12
+      },
+      {
+        "m": 3161,
+        "min_closed_diagonal": 0.9996930782721305,
+        "max_markov_diagonal": 0.47691362958095773,
+        "min_TV_closed_vs_markov": 0.5228045581323709,
+        "max_markov_TV_to_pi": 0.2574014344574802,
+        "markov_column_drift": 3.0526692285093304e-12
+      },
+      {
+        "m": 3979,
+        "min_closed_diagonal": 0.9996630228928644,
+        "max_markov_diagonal": 0.41283517349586407,
+        "min_TV_closed_vs_markov": 0.5868505928754785,
+        "max_markov_TV_to_pi": 0.19332297837202939,
+        "markov_column_drift": 3.766986722553156e-12
+      },
+      {
+        "m": 5009,
+        "min_closed_diagonal": 0.9996635591315611,
+        "max_markov_diagonal": 0.35438524771568264,
+        "min_TV_closed_vs_markov": 0.6453841601409319,
+        "max_markov_TV_to_pi": 0.13487305259140983,
+        "markov_column_drift": 4.64317473358733e-12
+      },
+      {
+        "m": 6305,
+        "min_closed_diagonal": 0.9996782052202109,
+        "max_markov_diagonal": 0.30531099847377574,
+        "min_TV_closed_vs_markov": 0.6943861526686147,
+        "max_markov_TV_to_pi": 0.08579880334896421,
+        "markov_column_drift": 5.7205351566835816e-12
+      },
+      {
+        "m": 7937,
+        "min_closed_diagonal": 0.9996732727896354,
+        "max_markov_diagonal": 0.2681033585970606,
+        "min_TV_closed_vs_markov": 0.7316442045003546,
+        "max_markov_TV_to_pi": 0.048591163471582655,
+        "markov_column_drift": 7.0534689200485445e-12
+      },
+      {
+        "m": 9991,
+        "min_closed_diagonal": 0.9996731499079007,
+        "max_markov_diagonal": 0.2433060148180199,
+        "min_TV_closed_vs_markov": 0.7564246292862707,
+        "max_markov_TV_to_pi": 0.023793819691714305,
+        "markov_column_drift": 8.708589405159728e-12
+      },
+      {
+        "m": 12577,
+        "min_closed_diagonal": 0.9996703454886559,
+        "max_markov_diagonal": 0.22921880096953925,
+        "min_TV_closed_vs_markov": 0.7705201486310572,
+        "max_markov_TV_to_pi": 0.009706605842199706,
+        "markov_column_drift": 1.077671285543147e-11
+      },
+      {
+        "m": 15832,
+        "min_closed_diagonal": 0.9996647449555806,
+        "max_markov_diagonal": 0.2226629202992983,
+        "min_TV_closed_vs_markov": 0.7770494764274973,
+        "max_markov_TV_to_pi": 0.0031507251706623524,
+        "markov_column_drift": 1.336952770714106e-11
+      },
+      {
+        "m": 19930,
+        "min_closed_diagonal": 0.9996461689795769,
+        "max_markov_diagonal": 0.2202800781555233,
+        "min_TV_closed_vs_markov": 0.7794944336297752,
+        "max_markov_TV_to_pi": 0.0007678830252577512,
+        "markov_column_drift": 1.662869841823067e-11
+      },
+      {
+        "m": 25088,
+        "min_closed_diagonal": 0.9996495043269469,
+        "max_markov_diagonal": 0.21964294973283563,
+        "min_TV_closed_vs_markov": 0.7800367874506964,
+        "max_markov_TV_to_pi": 0.00013075460052001942,
+        "markov_column_drift": 2.0728752048171373e-11
+      },
+      {
+        "m": 31581,
+        "min_closed_diagonal": 0.9996719404354357,
+        "max_markov_diagonal": 0.21952639748554736,
+        "min_TV_closed_vs_markov": 0.7802028606156721,
+        "max_markov_TV_to_pi": 1.4202350651304485e-05,
+        "markov_column_drift": 2.5889734800443875e-11
+      },
+      {
+        "m": 39755,
+        "min_closed_diagonal": 0.9996891555936953,
+        "max_markov_diagonal": 0.2195130725757743,
+        "min_TV_closed_vs_markov": 0.7802261524635052,
+        "max_markov_TV_to_pi": 9.070722345322357e-07,
+        "markov_column_drift": 3.2386537895945366e-11
+      },
+      {
+        "m": 50044,
+        "min_closed_diagonal": 0.9996206203832178,
+        "max_markov_diagonal": 0.2195122218200525,
+        "min_TV_closed_vs_markov": 0.7801619074694944,
+        "max_markov_TV_to_pi": 2.8971616258810506e-08,
+        "markov_column_drift": 4.056444069533427e-11
+      },
+      {
+        "m": 62996,
+        "min_closed_diagonal": 0.9996496432924505,
+        "max_markov_diagonal": 0.21951219546595432,
+        "min_TV_closed_vs_markov": 0.7801860327197807,
+        "max_markov_TV_to_pi": 3.798184267100879e-10,
+        "markov_column_drift": 5.0859094713473496e-11
+      },
+      {
+        "m": 79300,
+        "min_closed_diagonal": 0.9996660169879871,
+        "max_markov_diagonal": 0.21951219513747847,
+        "min_TV_closed_vs_markov": 0.7801686196930573,
+        "max_markov_TV_to_pi": 3.190894770632724e-11,
+        "markov_column_drift": 6.381783990150325e-11
+      },
+      {
+        "m": 99824,
+        "min_closed_diagonal": 0.9996861019124731,
+        "max_markov_diagonal": 0.2195121951397134,
+        "min_TV_closed_vs_markov": 0.7802561106324123,
+        "max_markov_TV_to_pi": 4.006532605682622e-11,
+        "markov_column_drift": 8.01305688469256e-11
+      },
+      {
+        "m": 125661,
+        "min_closed_diagonal": 0.9996775187326865,
+        "max_markov_diagonal": 0.21951219514421996,
+        "min_TV_closed_vs_markov": 0.7801816019669627,
+        "max_markov_TV_to_pi": 5.033322370007198e-11,
+        "markov_column_drift": 1.0066636413341712e-10
+      },
+      {
+        "m": 158183,
+        "min_closed_diagonal": 0.9996573839002524,
+        "max_markov_diagonal": 0.21951219514989412,
+        "min_TV_closed_vs_markov": 0.7802299597532387,
+        "max_markov_TV_to_pi": 6.325784340788232e-11,
+        "markov_column_drift": 1.2651568681576464e-10
+      },
+      {
+        "m": 199124,
+        "min_closed_diagonal": 0.9996597422766378,
+        "max_markov_diagonal": 0.21951219515703727,
+        "min_TV_closed_vs_markov": 0.7801859173204801,
+        "max_markov_TV_to_pi": 7.95281757115518e-11,
+        "markov_column_drift": 1.5905632366752798e-10
+      },
+      {
+        "m": 250660,
+        "min_closed_diagonal": 0.9996515905573803,
+        "max_markov_diagonal": 0.21951219516602893,
+        "min_TV_closed_vs_markov": 0.7802104830575542,
+        "max_markov_TV_to_pi": 1.0000918149177807e-10,
+        "markov_column_drift": 2.0001844625028298e-10
+      },
+      {
+        "m": 315534,
+        "min_closed_diagonal": 0.9996790494649301,
+        "max_markov_diagonal": 0.21951219517734755,
+        "min_TV_closed_vs_markov": 0.7802107901580738,
+        "max_markov_TV_to_pi": 1.25790669547321e-10,
+        "markov_column_drift": 2.515814223613688e-10
+      },
+      {
+        "m": 397199,
+        "min_closed_diagonal": 0.9997106771403719,
+        "max_markov_diagonal": 0.21951219519159598,
+        "min_TV_closed_vs_markov": 0.7802879541448422,
+        "max_markov_TV_to_pi": 1.5824536125919053e-10,
+        "markov_column_drift": 3.164908335406835e-10
+      },
+      {
+        "m": 500000,
+        "min_closed_diagonal": 0.9996243520668555,
+        "max_markov_diagonal": 0.2195121952095319,
+        "min_TV_closed_vs_markov": 0.780176035348394,
+        "max_markov_TV_to_pi": 1.990994730194373e-10,
+        "markov_column_drift": 3.9819902930560147e-10
+      }
+    ],
+    "memory": {
+      "invariant_compression_proved_lower": 0.8774128474221126,
+      "observed_cluster_overlap_min_singular_squared": 0.9995369406919968,
+      "Abel_checks": [
+        {
+          "Abel_time": 41,
+          "z": 0.975609756097561,
+          "memory_difference_from_I_minus_F": 2.0641763593702613e-05,
+          "proved_error_upper": 0.05218815451441485
+        },
+        {
+          "Abel_time": 5000,
+          "z": 0.9998,
+          "memory_difference_from_I_minus_F": 1.70420544182016e-07,
+          "proved_error_upper": 0.00042794286701815427
+        },
+        {
+          "Abel_time": 500000,
+          "z": 0.999998,
+          "memory_difference_from_I_minus_F": 1.7042971416973344e-09,
+          "proved_error_upper": 4.279428670067516e-06
+        }
+      ]
+    }
+  },
+  {
+    "evidence": "floating diagnostics only, not certification",
+    "K": 7,
+    "N": 239,
+    "epsilon": 0.03,
+    "original_fixed_tau": false,
+    "large_N_hypothesis_for_proved_Doeblin_constant": false,
+    "retention_smallness_hypothesis": true,
+    "dimensions": [
+      34,
+      34,
+      34,
+      34,
+      34,
+      35,
+      34
+    ],
+    "errors": {
+      "covariance": 2.5592957562088362e-15,
+      "twisted_trace": 3.397282455352979e-14,
+      "block_basis_unitarity": 3.847549181753633e-15,
+      "Schur_diagonalization": 3.2461995326173066e-14,
+      "edge_expansion_max_remainder": 0.00013924369693481026
+    },
+    "minimum_sqrt_K_charge_A_norm": 0.6424187774118896,
+    "observed_Doeblin_coefficient": 0.0003535085374615942,
+    "closed_diagonal_rigorous_lower_bound": 0.7518764656000001,
+    "pi_max": 0.14644351464435146,
+    "observations": [
+      {
+        "m": 1,
+        "min_closed_diagonal": 0.9996784017698831,
+        "max_markov_diagonal": 0.9996885818541029,
+        "min_TV_closed_vs_markov": 1.1208617584426706e-16,
+        "max_markov_TV_to_pi": 0.8574233941747357,
+        "markov_column_drift": 9.992007221626409e-16
+      },
+      {
+        "m": 2,
+        "min_closed_diagonal": 0.9994653278696702,
+        "max_markov_diagonal": 0.9993772773396061,
+        "min_TV_closed_vs_markov": 0.00023471827327609392,
+        "max_markov_TV_to_pi": 0.8571063198822111,
+        "markov_column_drift": 1.9984014443252818e-15
+      },
+      {
+        "m": 3,
+        "min_closed_diagonal": 0.999353698091758,
+        "max_markov_diagonal": 0.9990660864150432,
+        "min_TV_closed_vs_markov": 0.0005231449831660222,
+        "max_markov_TV_to_pi": 0.8567893628530978,
+        "markov_column_drift": 2.9976021664879227e-15
+      },
+      {
+        "m": 4,
+        "min_closed_diagonal": 0.9993559731571272,
+        "max_markov_diagonal": 0.998755009038963,
+        "min_TV_closed_vs_markov": 0.0007311544707703365,
+        "max_markov_TV_to_pi": 0.8564725230440248,
+        "markov_column_drift": 4.107825191113079e-15
+      },
+      {
+        "m": 5,
+        "min_closed_diagonal": 0.9994687176267647,
+        "max_markov_diagonal": 0.9984440451699292,
+        "min_TV_closed_vs_markov": 0.0010421299536373602,
+        "max_markov_TV_to_pi": 0.8561558004116367,
+        "markov_column_drift": 4.9960036108132044e-15
+      },
+      {
+        "m": 6,
+        "min_closed_diagonal": 0.9996798233282099,
+        "max_markov_diagonal": 0.998133194766521,
+        "min_TV_closed_vs_markov": 0.0015566767348161674,
+        "max_markov_TV_to_pi": 0.8558391949125953,
+        "markov_column_drift": 6.106226635438361e-15
+      },
+      {
+        "m": 8,
+        "min_closed_diagonal": 0.9996763415845024,
+        "max_markov_diagonal": 0.9975118341909723,
+        "min_TV_closed_vs_markov": 0.002174944467724295,
+        "max_markov_TV_to_pi": 0.8552063351412754,
+        "markov_column_drift": 8.104628079763643e-15
+      },
+      {
+        "m": 10,
+        "min_closed_diagonal": 0.9993525025917133,
+        "max_markov_diagonal": 0.9968909269812513,
+        "min_TV_closed_vs_markov": 0.0024859659919932433,
+        "max_markov_TV_to_pi": 0.8545739433836738,
+        "markov_column_drift": 1.0103029524088925e-14
+      },
+      {
+        "m": 13,
+        "min_closed_diagonal": 0.9996802463499539,
+        "max_markov_diagonal": 0.9959604155039841,
+        "min_TV_closed_vs_markov": 0.003730218330076998,
+        "max_markov_TV_to_pi": 0.8536262325158928,
+        "markov_column_drift": 1.3211653993039363e-14
+      },
+      {
+        "m": 16,
+        "min_closed_diagonal": 0.9994575483039223,
+        "max_markov_diagonal": 0.995030922240017,
+        "min_TV_closed_vs_markov": 0.004445842966195419,
+        "max_markov_TV_to_pi": 0.8526795727331083,
+        "markov_column_drift": 1.6209256159527285e-14
+      },
+      {
+        "m": 20,
+        "min_closed_diagonal": 0.9996801923614878,
+        "max_markov_diagonal": 0.9937931798496542,
+        "min_TV_closed_vs_markov": 0.005897681265374545,
+        "max_markov_TV_to_pi": 0.8514189926956715,
+        "markov_column_drift": 2.0317081350640365e-14
+      },
+      {
+        "m": 25,
+        "min_closed_diagonal": 0.9993689838370867,
+        "max_markov_diagonal": 0.9922485405910854,
+        "min_TV_closed_vs_markov": 0.007143246972354749,
+        "max_markov_TV_to_pi": 0.8498458882428894,
+        "markov_column_drift": 2.531308496145357e-14
+      },
+      {
+        "m": 32,
+        "min_closed_diagonal": 0.9993752297507288,
+        "max_markov_diagonal": 0.9900907753755803,
+        "min_TV_closed_vs_markov": 0.009306819899545063,
+        "max_markov_TV_to_pi": 0.8476484241436637,
+        "markov_column_drift": 3.2307490016592055e-14
+      },
+      {
+        "m": 40,
+        "min_closed_diagonal": 0.9994888579753883,
+        "max_markov_diagonal": 0.9876314983477248,
+        "min_TV_closed_vs_markov": 0.011875888061230288,
+        "max_markov_TV_to_pi": 0.8451439939022013,
+        "markov_column_drift": 4.030109579389318e-14
+      },
+      {
+        "m": 50,
+        "min_closed_diagonal": 0.9996538431651437,
+        "max_markov_diagonal": 0.9845674819026086,
+        "min_TV_closed_vs_markov": 0.015099159333982905,
+        "max_markov_TV_to_pi": 0.8420238599323878,
+        "markov_column_drift": 5.0737192225369654e-14
+      },
+      {
+        "m": 63,
+        "min_closed_diagonal": 0.9999357804010451,
+        "max_markov_diagonal": 0.9806009412367828,
+        "min_TV_closed_vs_markov": 0.019337350612533718,
+        "max_markov_TV_to_pi": 0.8379849017671673,
+        "markov_column_drift": 6.361577931102147e-14
+      },
+      {
+        "m": 80,
+        "min_closed_diagonal": 0.9993966463661316,
+        "max_markov_diagonal": 0.9754422404762234,
+        "min_TV_closed_vs_markov": 0.023976555875118058,
+        "max_markov_TV_to_pi": 0.8327324078677107,
+        "markov_column_drift": 8.060219158778636e-14
+      },
+      {
+        "m": 100,
+        "min_closed_diagonal": 0.9994487339115492,
+        "max_markov_diagonal": 0.9694140146528825,
+        "min_TV_closed_vs_markov": 0.030060161307387527,
+        "max_markov_TV_to_pi": 0.8265951412866981,
+        "markov_column_drift": 1.0047518372857667e-13
+      },
+      {
+        "m": 126,
+        "min_closed_diagonal": 0.999789122465418,
+        "max_markov_diagonal": 0.961642813714213,
+        "min_TV_closed_vs_markov": 0.03815423685005247,
+        "max_markov_TV_to_pi": 0.8186842719910534,
+        "markov_column_drift": 1.262323578998803e-13
+      },
+      {
+        "m": 159,
+        "min_closed_diagonal": 0.9995618355521801,
+        "max_markov_diagonal": 0.9518849641368142,
+        "min_TV_closed_vs_markov": 0.047695453685343246,
+        "max_markov_TV_to_pi": 0.8087524980434787,
+        "markov_column_drift": 1.5876189252139739e-13
+      },
+      {
+        "m": 200,
+        "min_closed_diagonal": 0.9995907927459081,
+        "max_markov_diagonal": 0.9399241387806975,
+        "min_TV_closed_vs_markov": 0.05968355348832193,
+        "max_markov_TV_to_pi": 0.7965807098145851,
+        "markov_column_drift": 1.9872992140790302e-13
+      },
+      {
+        "m": 239,
+        "min_closed_diagonal": 0.9995381697046062,
+        "max_markov_diagonal": 0.9287116576727596,
+        "min_TV_closed_vs_markov": 0.07085631442200815,
+        "max_markov_TV_to_pi": 0.7851727233648003,
+        "markov_column_drift": 2.3636648194269583e-13
+      },
+      {
+        "m": 251,
+        "min_closed_diagonal": 0.9995479238469853,
+        "max_markov_diagonal": 0.9252936468515175,
+        "min_TV_closed_vs_markov": 0.07426616926803938,
+        "max_markov_TV_to_pi": 0.781695554216072,
+        "markov_column_drift": 2.48245868306185e-13
+      },
+      {
+        "m": 316,
+        "min_closed_diagonal": 0.9995383073225795,
+        "max_markov_diagonal": 0.9070373223142705,
+        "min_TV_closed_vs_markov": 0.09252846154339801,
+        "max_markov_TV_to_pi": 0.7631267787119183,
+        "markov_column_drift": 3.1019631308026874e-13
+      },
+      {
+        "m": 398,
+        "min_closed_diagonal": 0.9995397703431718,
+        "max_markov_diagonal": 0.8846155181700064,
+        "min_TV_closed_vs_markov": 0.11494281743391054,
+        "max_markov_TV_to_pi": 0.7403295169549482,
+        "markov_column_drift": 3.8702374638432957e-13
+      },
+      {
+        "m": 501,
+        "min_closed_diagonal": 0.999569896583269,
+        "max_markov_diagonal": 0.8573858319603482,
+        "min_TV_closed_vs_markov": 0.14220818298530086,
+        "max_markov_TV_to_pi": 0.7126565175266063,
+        "markov_column_drift": 4.819478149897805e-13
+      },
+      {
+        "m": 631,
+        "min_closed_diagonal": 0.9995556573086661,
+        "max_markov_diagonal": 0.8244476596171866,
+        "min_TV_closed_vs_markov": 0.17514110000982003,
+        "max_markov_TV_to_pi": 0.6792013559902099,
+        "markov_column_drift": 5.985212325754219e-13
+      },
+      {
+        "m": 794,
+        "min_closed_diagonal": 0.9995615807777729,
+        "max_markov_diagonal": 0.7852962010056398,
+        "min_TV_closed_vs_markov": 0.21429484446807268,
+        "max_markov_TV_to_pi": 0.6394641482612284,
+        "markov_column_drift": 7.406297797274419e-13
+      },
+      {
+        "m": 1000,
+        "min_closed_diagonal": 0.9995628349760272,
+        "max_markov_diagonal": 0.7390342261217098,
+        "min_TV_closed_vs_markov": 0.26055266640566993,
+        "max_markov_TV_to_pi": 0.592590711477815,
+        "markov_column_drift": 9.133804823591163e-13
+      },
+      {
+        "m": 1259,
+        "min_closed_diagonal": 0.9995591124970368,
+        "max_markov_diagonal": 0.6855941375721434,
+        "min_TV_closed_vs_markov": 0.3139782410287171,
+        "max_markov_TV_to_pi": 0.5391506229283526,
+        "markov_column_drift": 1.121103210266483e-12
+      },
+      {
+        "m": 1585,
+        "min_closed_diagonal": 0.9995705799351339,
+        "max_markov_diagonal": 0.6251267013091111,
+        "min_TV_closed_vs_markov": 0.37446061000101494,
+        "max_markov_TV_to_pi": 0.47868318666544396,
+        "markov_column_drift": 1.368682944757893e-12
+      },
+      {
+        "m": 1995,
+        "min_closed_diagonal": 0.9995755084213559,
+        "max_markov_diagonal": 0.5586126070046722,
+        "min_TV_closed_vs_markov": 0.4409739965793785,
+        "max_markov_TV_to_pi": 0.412169092361151,
+        "markov_column_drift": 1.6605605779318466e-12
+      },
+      {
+        "m": 2511,
+        "min_closed_diagonal": 0.9995610160990152,
+        "max_markov_diagonal": 0.48787705463668873,
+        "min_TV_closed_vs_markov": 0.5116954131746829,
+        "max_markov_TV_to_pi": 0.3414335399933378,
+        "markov_column_drift": 2.001065979584382e-12
+      },
+      {
+        "m": 3161,
+        "min_closed_diagonal": 0.9995606941890453,
+        "max_markov_diagonal": 0.4157857228237264,
+        "min_TV_closed_vs_markov": 0.5838192255610831,
+        "max_markov_TV_to_pi": 0.26934220818057275,
+        "markov_column_drift": 2.3955282202337003e-12
+      },
+      {
+        "m": 3979,
+        "min_closed_diagonal": 0.9995652756330834,
+        "max_markov_diagonal": 0.34628424506324734,
+        "min_TV_closed_vs_markov": 0.6533152307473526,
+        "max_markov_TV_to_pi": 0.19984073042032025,
+        "markov_column_drift": 2.848721258885689e-12
+      },
+      {
+        "m": 5009,
+        "min_closed_diagonal": 0.9995563391098928,
+        "max_markov_diagonal": 0.2836818146790353,
+        "min_TV_closed_vs_markov": 0.7159085074038934,
+        "max_markov_TV_to_pi": 0.137238300036368,
+        "markov_column_drift": 3.3681946121078e-12
+      },
+      {
+        "m": 6305,
+        "min_closed_diagonal": 0.9995611614037978,
+        "max_markov_diagonal": 0.2319749817782105,
+        "min_TV_closed_vs_markov": 0.7676057914517689,
+        "max_markov_TV_to_pi": 0.08553146713584246,
+        "markov_column_drift": 3.966826866985684e-12
+      },
+      {
+        "m": 7937,
+        "min_closed_diagonal": 0.9995536722379974,
+        "max_markov_diagonal": 0.19360102090971523,
+        "min_TV_closed_vs_markov": 0.8059853412487156,
+        "max_markov_TV_to_pi": 0.047157506267696755,
+        "markov_column_drift": 4.665934305592145e-12
+      },
+      {
+        "m": 9991,
+        "min_closed_diagonal": 0.9995591656453788,
+        "max_markov_diagonal": 0.16873475581836334,
+        "min_TV_closed_vs_markov": 0.8308377739300198,
+        "max_markov_TV_to_pi": 0.02229124117676097,
+        "markov_column_drift": 5.498157484851163e-12
+      },
+      {
+        "m": 12577,
+        "min_closed_diagonal": 0.999565212273759,
+        "max_markov_diagonal": 0.1551224112347992,
+        "min_TV_closed_vs_markov": 0.8444763698043923,
+        "max_markov_TV_to_pi": 0.008678896593702634,
+        "markov_column_drift": 6.509681682587143e-12
+      },
+      {
+        "m": 15832,
+        "min_closed_diagonal": 0.9995734363180135,
+        "max_markov_diagonal": 0.1490911773732611,
+        "min_TV_closed_vs_markov": 0.8504927325089395,
+        "max_markov_TV_to_pi": 0.00264766273278981,
+        "markov_column_drift": 7.760236897524919e-12
+      },
+      {
+        "m": 19930,
+        "min_closed_diagonal": 0.9995736443817336,
+        "max_markov_diagonal": 0.14703753878344622,
+        "min_TV_closed_vs_markov": 0.8525548550263351,
+        "max_markov_TV_to_pi": 0.0005940241437565191,
+        "markov_column_drift": 9.32343091619714e-12
+      },
+      {
+        "m": 25088,
+        "min_closed_diagonal": 0.9995637870625261,
+        "max_markov_diagonal": 0.14653408306342308,
+        "min_TV_closed_vs_markov": 0.8530500140681456,
+        "max_markov_TV_to_pi": 9.056842471508175e-05,
+        "markov_column_drift": 1.1286860335246729e-11
+      },
+      {
+        "m": 31581,
+        "min_closed_diagonal": 0.9995648332908265,
+        "max_markov_diagonal": 0.14645200484798396,
+        "min_TV_closed_vs_markov": 0.8531454497266105,
+        "max_markov_TV_to_pi": 8.490210511163943e-06,
+        "markov_column_drift": 1.3757217587340165e-11
+      },
+      {
+        "m": 39755,
+        "min_closed_diagonal": 0.9995653109728256,
+        "max_markov_diagonal": 0.14644394613559672,
+        "min_TV_closed_vs_markov": 0.8531597429848673,
+        "max_markov_TV_to_pi": 4.3149967877964546e-07,
+        "markov_column_drift": 1.686706330161769e-11
+      },
+      {
+        "m": 50044,
+        "min_closed_diagonal": 0.999555373759413,
+        "max_markov_diagonal": 0.14644352479499176,
+        "min_TV_closed_vs_markov": 0.8531416758072816,
+        "max_markov_TV_to_pi": 1.016103094719778e-08,
+        "markov_column_drift": 2.078115457493368e-11
+      },
+      {
+        "m": 62996,
+        "min_closed_diagonal": 0.9995689125193534,
+        "max_markov_diagonal": 0.14644351473099737,
+        "min_TV_closed_vs_markov": 0.8531519042192761,
+        "max_markov_TV_to_pi": 9.950032464622893e-11,
+        "markov_column_drift": 2.5708768447429975e-11
+      },
+      {
+        "m": 79300,
+        "min_closed_diagonal": 0.9995674950335802,
+        "max_markov_diagonal": 0.1464435146396623,
+        "min_TV_closed_vs_markov": 0.8531468123682941,
+        "max_markov_TV_to_pi": 1.5955792243005362e-11,
+        "markov_column_drift": 3.19113624414058e-11
+      },
+      {
+        "m": 99824,
+        "min_closed_diagonal": 0.9995631742228878,
+        "max_markov_diagonal": 0.1464435146382798,
+        "min_TV_closed_vs_markov": 0.8531414447737427,
+        "max_markov_TV_to_pi": 1.9859891509099725e-11,
+        "markov_column_drift": 3.971967199589699e-11
+      },
+      {
+        "m": 125661,
+        "min_closed_diagonal": 0.9995666822481903,
+        "max_markov_diagonal": 0.1464435146368402,
+        "min_TV_closed_vs_markov": 0.8531409432259691,
+        "max_markov_TV_to_pi": 2.477455740557133e-11,
+        "markov_column_drift": 4.9549142566718274e-11
+      },
+      {
+        "m": 158183,
+        "min_closed_diagonal": 0.9995571582804933,
+        "max_markov_diagonal": 0.14644351463502828,
+        "min_TV_closed_vs_markov": 0.8531298347338004,
+        "max_markov_TV_to_pi": 3.09609005100242e-11,
+        "markov_column_drift": 6.19218010200484e-11
+      },
+      {
+        "m": 199124,
+        "min_closed_diagonal": 0.9995550468387412,
+        "max_markov_diagonal": 0.14644351463274732,
+        "min_TV_closed_vs_markov": 0.8531346784475837,
+        "max_markov_TV_to_pi": 3.874869869413544e-11,
+        "markov_column_drift": 7.749734187711965e-11
+      },
+      {
+        "m": 250660,
+        "min_closed_diagonal": 0.9995548517398246,
+        "max_markov_diagonal": 0.14644351462987612,
+        "min_TV_closed_vs_markov": 0.8531463363082947,
+        "max_markov_TV_to_pi": 4.855188473484873e-11,
+        "markov_column_drift": 9.710365844739499e-11
+      },
+      {
+        "m": 315534,
+        "min_closed_diagonal": 0.999563230120802,
+        "max_markov_diagonal": 0.14644351462626176,
+        "min_TV_closed_vs_markov": 0.8531328514610503,
+        "max_markov_TV_to_pi": 6.089233284267692e-11,
+        "markov_column_drift": 1.2178469344092946e-10
+      },
+      {
+        "m": 397199,
+        "min_closed_diagonal": 0.999567595388797,
+        "max_markov_diagonal": 0.14644351462171196,
+        "min_TV_closed_vs_markov": 0.8531542282480449,
+        "max_markov_TV_to_pi": 7.642665666995896e-11,
+        "markov_column_drift": 1.5285339660664476e-10
+      },
+      {
+        "m": 500000,
+        "min_closed_diagonal": 0.9995544803908125,
+        "max_markov_diagonal": 0.1464435146159846,
+        "min_TV_closed_vs_markov": 0.8531389214176981,
+        "max_markov_TV_to_pi": 9.598152828083073e-11,
+        "markov_column_drift": 1.9196289002820777e-10
+      }
+    ],
+    "memory": {
+      "invariant_compression_proved_lower": 0.7672677876807871,
+      "observed_cluster_overlap_min_singular_squared": 0.999360845569198,
+      "Abel_checks": [
+        {
+          "Abel_time": 239,
+          "z": 0.99581589958159,
+          "memory_difference_from_I_minus_F": 4.237886539285672e-06,
+          "proved_error_upper": 0.009637346971425388
+        },
+        {
+          "Abel_time": 5000,
+          "z": 0.9998,
+          "memory_difference_from_I_minus_F": 2.028300340556812e-07,
+          "proved_error_upper": 0.0004606651852340877
+        },
+        {
+          "Abel_time": 500000,
+          "z": 0.999998,
+          "memory_difference_from_I_minus_F": 2.0284277627772868e-09,
+          "proved_error_upper": 4.606651852218131e-06
+        }
+      ]
+    }
+  }
+]

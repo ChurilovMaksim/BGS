@@ -40,7 +40,7 @@ def main() -> None:
               'cayley_scaling_rigidity'}
     return_checks={'return_local_limits','return_trace_obstruction','analytic_kick_return_gas','even_period_spin_resonance',
                    'fixed_harmonic_return_gas','general_cat_return_laws',
-                   'hyperbolic_return_pressure','pell_resonance_lattice',
+                   'hyperbolic_return_pressure','pell_resonance_lattice','pell_harmonic_returns',
                    'periodic_point_trace_comparison','phase_space_return_gas'}
     for p in sorted((ROOT/'computations/verification').glob('*.py')):
         if '__main__' not in p.read_text(encoding='utf-8'):continue

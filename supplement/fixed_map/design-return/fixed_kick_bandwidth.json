@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "N": 1023,
+      "tau": 0.04,
+      "epsilon": 40.92,
+      "Q": 7,
+      "retained_HS_mass": 0.1092955858001288,
+      "best_HS_approximation_error": 0.9437713781419053,
+      "proved_mass_upper_bound": 11.730205278592376,
+      "FFT_Bessel_discrepancy": 1.9200013998327145e-16
+    },
+    {
+      "N": 4095,
+      "tau": 0.04,
+      "epsilon": 163.8,
+      "Q": 9,
+      "retained_HS_mass": 0.03501450456854131,
+      "best_HS_approximation_error": 0.982336752560678,
+      "proved_mass_upper_bound": 3.7118437118437115,
+      "FFT_Bessel_discrepancy": 2.6104075116624946e-16
+    },
+    {
+      "N": 16383,
+      "tau": 0.04,
+      "epsilon": 655.32,
+      "Q": 10,
+      "retained_HS_mass": 0.009864912453138204,
+      "best_HS_approximation_error": 0.9950553188375316,
+      "proved_mass_upper_bound": 1.025453213697125,
+      "FFT_Bessel_discrepancy": 6.005248826272321e-16
+    },
+    {
+      "N": 65535,
+      "tau": 0.04,
+      "epsilon": 2621.4,
+      "Q": 12,
+      "retained_HS_mass": 0.0030894671962139004,
+      "best_HS_approximation_error": 0.9984540714543589,
+      "proved_mass_upper_bound": 0.3051804379339284,
+      "FFT_Bessel_discrepancy": 9.705263060793273e-16
+    },
+    {
+      "N": 262143,
+      "tau": 0.04,
+      "epsilon": 10485.72,
+      "Q": 13,
+      "retained_HS_mass": 0.0008490803084395722,
+      "best_HS_approximation_error": 0.9995753696903302,
+      "proved_mass_upper_bound": 0.08239777526006799,
+      "FFT_Bessel_discrepancy": 2.518851911363742e-15
+    },
+    {
+      "N": 1048575,
+      "tau": 0.04,
+      "epsilon": 41943.0,
+      "Q": 14,
+      "retained_HS_mass": 0.00021462924498678946,
+      "best_HS_approximation_error": 0.9998926796186745,
+      "proved_mass_upper_bound": 0.022125265240922204,
+      "FFT_Bessel_discrepancy": 2.3218529786655582e-14
+    }
+  ],
+  "scope": "One-harmonic kick, test coupling .04; no frozen-map or asymptotic numerical proof"
+}

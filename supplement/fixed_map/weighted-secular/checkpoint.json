@@ -1,0 +1,88 @@
+{
+  "checkpoint_id": "weighted-secular-20260920-covariance-control-and-ratio-target",
+  "parent_checkpoint_id": "secular-route-20260920-direct-fixed-coupling-attempt",
+  "base_git_revision": "e0ada2e2c44dfe10bebf928dc8a1d6526ae15cb7",
+  "main_goal_status": "OPEN",
+  "fixed_model": "exp(i tau N A_N) M_N, original raw generator, tau=10^-80",
+  "outcome": "No fixed-coupling trace estimate. Exact determinant-covariance counterexample, ratio/Abel reduction, and finite weighted-minor diagnostics.",
+  "routes": [
+    {
+      "name": "actual weighted subset-frequency sums",
+      "execution_status": "completed",
+      "mathematical_status": "finite diagnostic only; weighted cancellation not proved"
+    },
+    {
+      "name": "long-time Egorov import",
+      "execution_status": "completed",
+      "mathematical_status": "source range logarithmic, insufficient for target"
+    },
+    {
+      "name": "determinant covariance closure",
+      "execution_status": "completed",
+      "mathematical_status": "refuted as a general implication by deleted-clock control"
+    },
+    {
+      "name": "determinant ratio closure",
+      "execution_status": "completed",
+      "mathematical_status": "exact sufficient reduction proved; fixed-map ratio estimate remains unproved"
+    }
+  ],
+  "review": "adversarial self-review; no fresh-agent or Lean certification",
+  "executions": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python build/weighted-secular/weighted_probe.py",
+      "last_session_id": 25220,
+      "status": "completed, exit 0"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python build/weighted-secular/center_checks.py",
+      "last_session_id": 80239,
+      "status": "completed, exit 0"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python build/weighted-secular/jacobi_audit.py",
+      "last_session_id": 67517,
+      "status": "completed, exit 0"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python build/weighted-secular/determinant_control.py",
+      "status": "completed, exit 0"
+    }
+  ],
+  "finite_scope": {
+    "dimensions": [
+      15,
+      19,
+      23
+    ],
+    "auxiliary_t_centres": [
+      0,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "largest_subset_count": 1352078,
+    "original_tau_resolved": false,
+    "interval_certification": false
+  },
+  "next_load_bearing_obligation": "Prove L_N(s)->(1-exp(-2s))/(4s^2) at the original fixed tau, for s=s0+n/2, n>=0, without independent-phase or parameter averaging.",
+  "publication": "No tracked edits, commit, or push; user requires main barrier closure first.",
+  "artifacts": {
+    "build/weighted-secular/attempt.md": "ac8c8f2c9b346d59320f4d72e1c17ef1bedf9afc2da94a7693ed5b9c87b6f660",
+    "build/weighted-secular/center_checks.json": "9b68123c3bda047d85970bc2bb8e8af0defea34c566a7dd1a2824e6e975cecfd",
+    "build/weighted-secular/center_checks.py": "560ef16e99ec9094b39448fb2938ad8120afe8ff48dbc0adfdf2172df3184ac9",
+    "build/weighted-secular/determinant_boundary.md": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c",
+    "build/weighted-secular/determinant_control.json": "24d5e4e93d3a7b276de7531db6255090492fe43fe96e90e42ff20748087d23aa",
+    "build/weighted-secular/determinant_control.py": "84589d025d9e93f8eb890b1b31286ac30cc63f6a017d489e8ad1ed0a030c6eee",
+    "build/weighted-secular/jacobi_N15.json": "44354433c04c327e6094c72bf60a2c7d9064ff4a50c128bba1ccdd14e3024937",
+    "build/weighted-secular/jacobi_N19.json": "4cde0c35a784917f73f53388c8392e35655b282fe8c7cb8bf548333c619f06f9",
+    "build/weighted-secular/jacobi_N23.json": "43e0fc4ffa5630212981ac3e26e1758559ee882a4b6fb1c5249bb574b3e1e9bc",
+    "build/weighted-secular/jacobi_audit.py": "efb3240b4e26ff8a0484ba3fb388bec2e4a5f997279e273d4bd82cdb800f06bb",
+    "build/weighted-secular/probe_N15.json": "d891a5b8de8a2363df4828218b037403f52f2be880d6472f5ce266855ee03606",
+    "build/weighted-secular/probe_N19.json": "3535fbbf36bfe2bd565439d76641212db6b1a901b75bc0f50be5f3e56c40861b",
+    "build/weighted-secular/probe_N23.json": "d6ec0eba96eb667a025d83e8caabffdb9bce0a01c0e1c71eb967610c7fa41993",
+    "build/weighted-secular/self_review.md": "355afc314176fbe0a260d82595d365d8c59ed15944236523c1de88cd246d4b97",
+    "build/weighted-secular/weighted_probe.py": "d88a1d86345148de4a4c594d18d321c2774da55e445f9075700197fd287eeea9"
+  }
+}

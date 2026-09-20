@@ -1,0 +1,147 @@
+{
+  "scope": "Finite diagnostic only; frozen nonlinear map not simulated",
+  "obstructions": [
+    {
+      "N": 8,
+      "operator_sup": 0.3535533905932738,
+      "wiener_budget": 2.8284271247461903
+    },
+    {
+      "N": 16,
+      "operator_sup": 0.25,
+      "wiener_budget": 4.0
+    },
+    {
+      "N": 32,
+      "operator_sup": 0.1767766952966369,
+      "wiener_budget": 5.656854249492381
+    },
+    {
+      "N": 64,
+      "operator_sup": 0.125,
+      "wiener_budget": 8.0
+    }
+  ],
+  "models": [
+    {
+      "model": "clock",
+      "N": 15,
+      "wiener_budget": 0.05964738872203109,
+      "operator_sup": 0.009553750807650526,
+      "signed_weighted_residual": -0.06399013765067775
+    },
+    {
+      "model": "linear cat",
+      "N": 15,
+      "wiener_budget": 0.02929412869614068,
+      "operator_sup": 0.00998508809149371,
+      "signed_weighted_residual": -0.004275892595494646
+    },
+    {
+      "model": "Haar control",
+      "sample": 0,
+      "N": 15,
+      "wiener_budget": 0.044183690911546294,
+      "operator_sup": 0.015566778309179482,
+      "signed_weighted_residual": 0.013607644711199308
+    },
+    {
+      "model": "Haar control",
+      "sample": 1,
+      "N": 15,
+      "wiener_budget": 0.049535605300752523,
+      "operator_sup": 0.014699891534785948,
+      "signed_weighted_residual": -0.005533170084649313
+    },
+    {
+      "model": "clock",
+      "N": 31,
+      "wiener_budget": 0.06010793996918074,
+      "operator_sup": 0.00459897667826791,
+      "signed_weighted_residual": -0.06441519184708001
+    },
+    {
+      "model": "linear cat",
+      "N": 31,
+      "wiener_budget": 0.035727702039625796,
+      "operator_sup": 0.003911044845552416,
+      "signed_weighted_residual": -0.04988255986697156
+    },
+    {
+      "model": "Haar control",
+      "sample": 0,
+      "N": 31,
+      "wiener_budget": 0.024276525135842268,
+      "operator_sup": 0.0053545535372823815,
+      "signed_weighted_residual": 0.020559517295261037
+    },
+    {
+      "model": "Haar control",
+      "sample": 1,
+      "N": 31,
+      "wiener_budget": 0.02353701112531629,
+      "operator_sup": 0.0073249118945257615,
+      "signed_weighted_residual": -0.012742337114916099
+    },
+    {
+      "model": "clock",
+      "N": 63,
+      "wiener_budget": 0.060235774543286366,
+      "operator_sup": 0.0022791563817167763,
+      "signed_weighted_residual": -0.0645425728398219
+    },
+    {
+      "model": "linear cat",
+      "N": 63,
+      "wiener_budget": 0.9855075529893826,
+      "operator_sup": 0.7435768593588278,
+      "signed_weighted_residual": 1.5371073030583302
+    },
+    {
+      "model": "Haar control",
+      "sample": 0,
+      "N": 63,
+      "wiener_budget": 0.023527188353218636,
+      "operator_sup": 0.00551249639351871,
+      "signed_weighted_residual": -0.0009600918161587592
+    },
+    {
+      "model": "Haar control",
+      "sample": 1,
+      "N": 63,
+      "wiener_budget": 0.026174545229357443,
+      "operator_sup": 0.0045585702764011915,
+      "signed_weighted_residual": 0.01651250933978997
+    },
+    {
+      "model": "clock",
+      "N": 127,
+      "wiener_budget": 0.06026713849074805,
+      "operator_sup": 0.0011303812091151186,
+      "signed_weighted_residual": -0.06457408833957488
+    },
+    {
+      "model": "linear cat",
+      "N": 127,
+      "wiener_budget": 0.045473415293096224,
+      "operator_sup": 0.001087381599716784,
+      "signed_weighted_residual": -0.06083482760445954
+    },
+    {
+      "model": "Haar control",
+      "sample": 0,
+      "N": 127,
+      "wiener_budget": 0.018608835444587794,
+      "operator_sup": 0.0023801873689248553,
+      "signed_weighted_residual": -0.012812935980951167
+    },
+    {
+      "model": "Haar control",
+      "sample": 1,
+      "N": 127,
+      "wiener_budget": 0.017629807238271636,
+      "operator_sup": 0.0027431116157739543,
+      "signed_weighted_residual": 0.004135055566608693
+    }
+  ]
+}

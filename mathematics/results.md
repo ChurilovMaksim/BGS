@@ -1,5 +1,16 @@
 # Current results and exact scope
 
+## Fixed-family reductions, 20 September 2026
+
+[The fixed-map chapter](fixed_map_resolvent_frontier.md) consolidates
+algebraic-return, coherent-memory, determinant-ratio and mixed-loop work.
+The new exact p=3 mixed identity gives a conditional bounded interval for
+the Abel pair statistic when the first two residuals vanish. Those
+residuals remain unproved for the fixed map, and the interval does not
+identify the CUE value. The full all-order criterion is conditional on an
+external loop-characterization theorem and a still-open model estimate.
+All recovered proof and computational records are in the indexed supplement.
+
 ## Short returns and ergodic local limits
 
 **Project proof; self-reviewed; priority unverified.** An ergodic stationary

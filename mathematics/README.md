@@ -12,6 +12,12 @@ contain distinct arguments and estimates, not parallel obsolete papers.
 
 ## Reading order
 
+The current fixed-family branch is consolidated in
+[fixed_map_resolvent_frontier.md](fixed_map_resolvent_frontier.md), with
+[full supplementary derivations and computations](../supplement/fixed_map/README.md).
+It includes the low-order mixed-loop bounds and preserves the unresolved
+Heisenberg-scale estimate explicitly.
+
 1. `results.md` — base concise theorem index.
 2. `results_20260907_addendum.md` — later temporal, global-Cayley, dense-Fourier, holomorphic/tomography and information-limit results.
 3. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
