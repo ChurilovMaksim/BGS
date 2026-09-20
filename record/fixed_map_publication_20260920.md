@@ -70,11 +70,28 @@ formalize Herglotz analysis, the external loop theorem, or BGS.
 
 No Lean executable is available locally. The attempted pinned-release
 download timed out. A successful historical build of 16 modules does not
-certify this 17-module revision. The current pinned CI build is the next
-compilation check; its result must be reported separately, not inferred.
+certify this 17-module revision. The CI run for publication commit `3139f47` completed with failure before
+any job steps executed: every returned job has an empty step list. No
+Lean compilation therefore occurred. The job-log endpoint returned
+`BlobNotFound`; the connected reader does not expose the annotation
+endpoint, so the underlying pre-execution failure reason is not asserted.
+The referenced `actions/checkout@v7` and `actions/setup-python@v7` tags
+were checked and both exist; no speculative workflow downgrade was made.
 
 ## Publication gate
 
 Publication preserves the remote head through a non-forced update and
 does not overwrite independently added research. Repository synchronization
 and software verification do not change the OPEN mathematical status.
+
+## Remote verification
+
+The publication commit is [3139f47](https://github.com/ChurilovMaksim/WoW/commit/3139f478c5147e6e487578d9af88bef0ffa97410). Its tree
+`f908f55bfc13b78736d685c52e21685958fc63af` exactly matched the locally
+staged tree. The update was a non-forced fast-forward of remote main.
+The remote-only files and their original commits remain in the ancestry.
+
+[Scientific CI run](https://github.com/ChurilovMaksim/WoW/actions/runs/35525732662)
+and [manuscript CI run](https://github.com/ChurilovMaksim/WoW/actions/runs/35525732685)
+failed before executing steps. These failures are recorded separately from
+the successful local runs; they are not reported as passing CI.

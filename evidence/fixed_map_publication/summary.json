@@ -22,6 +22,15 @@
     222,
     223
   ],
-  "Lean_current_revision": "Not compiled locally; source prepared for pinned CI",
-  "scope": "Executed coverage, source integrity and finite identity checks; not a complete proof audit of the mathematical corpus."
+  "Lean_current_revision": "Not compiled: no local executable; publication CI failed before executing any job steps.",
+  "scope": "Executed coverage, source integrity and finite identity checks; not a complete proof audit of the mathematical corpus.",
+  "publication_commit": "3139f478c5147e6e487578d9af88bef0ffa97410",
+  "CI": {
+    "scientific_run": 35525732662,
+    "manuscript_run": 35525732685,
+    "conclusion": "failure",
+    "executed_job_steps": 0,
+    "job_log_status": "BlobNotFound",
+    "underlying_cause": "not established; annotations unavailable through connected reader"
+  }
 }

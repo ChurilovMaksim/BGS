@@ -61,7 +61,9 @@ asymptotic theorem is claimed to have been formalized by this build.
 The 20 September `CueLoopKernels` addition is source-level formalization
 pending a successful current Lean build. This session has no local Lean
 executable; earlier 16-module build records do not certify the new module.
-The CI job runs the pinned full project and records its own actual status.
+The CI job is configured to run the pinned full project. The publication
+run failed before any job steps executed, so it did not compile this module.
+See `record/fixed_map_publication_20260920.md` for the observed status.
 
 ## Publication revision, 12 September 2026
 
