@@ -96,8 +96,10 @@ historical completeness.  The authoritative continuation is
 
 That reconciliation recovered the raw-Weyl Heisenberg path-escape theorem,
 the exact/19-adic direct-attack results and the one-shear antiunitary no-go,
-while also preserving the later retractions of the v9 two-frequency Bourgain
-shortcut and the unevaluated historical “CUE contraction sector” assertion.
+while also preserving the later retraction of the v9 two-frequency Bourgain
+shortcut and the correction of the historical blanket “CUE contraction
+sector = min(m,N)” assertion.  The later refinement below repairs its ramp
+part while leaving the plateau and post-cyclic residual open.
 
 
 ### Recovered ramp/history refinement

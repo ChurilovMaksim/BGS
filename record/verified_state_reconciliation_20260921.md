@@ -33,7 +33,7 @@ v9 correctly derived a two-frequency hyperbolic phase of the form A lambda^j + B
 
 The v9 two-frequency theorem and its sliding-variable / BCD2 corollary therefore remain RETRACTED. Passing finite scripts that print sample incomplete sums do not repair the missing theorem.
 
-A second correction is independent: v7--v9 referred to an “exact CUE contraction sector” and assigned it the value min(m,N). For the final two-directional deterministic map that sub-sum was never explicitly defined and evaluated. The label is not a theorem. Even perfect control of a separately named connected remainder would not finish pair BGS without this signed main-term calculation.
+The chronology of the historical “CUE contraction sector” claim is subtler. v7--v9 used the label before deriving the required deterministic sub-sum, and v11 correctly flagged that gap. The 16 September verified state subsequently supplied an exact cyclic path skeleton and a one-step unistochastic argument for the **ramp** part m below the plateau. Its nonpairing curvature witness, however, used the pre-gauge midpoint symbol. The current audit repairs that proof at q0=1/7 for the corrected symbol; see mathematics/fixed_map_unistochastic_ramp.md. Thus the cyclic ramp is now maintained. The blanket extension to min(m,N), the plateau and the signed post-cyclic residual remain open.
 
 ## v11: promoted direct results
 

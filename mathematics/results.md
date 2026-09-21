@@ -28,13 +28,13 @@ rather than copied from the historical checkpoint.
   at every odd dimension, so the old one-shear fallback cannot be a CUE
   example merely by changing its classical interpretation.
 
-These are structural/direct cancellation results, not pair BGS.  The signed
-bulk insertion and the deterministic triangular CUE main term remain open.
-The [dossier reconciliation](../record/verified_state_reconciliation_20260921.md)
-also records two historical corrections: the v9 two-frequency
-Bourgain/sliding theorem is retracted, and the old phrase “CUE contraction
-sector = min(m,N)” was never backed by an explicit deterministic sub-sum
-evaluation.
+These are structural/direct cancellation results, not pair BGS.  The repaired
+cyclic sector now supplies the triangular CUE ramp for `m<N`; the signed
+post-cyclic insertion, the plateau, genuine partner localization and higher
+joint traces remain open.  The [dossier reconciliation](../record/verified_state_reconciliation_20260921.md)
+records the chronology: the v9 two-frequency Bourgain/sliding theorem is
+retracted, while the later cyclic-ramp derivation has been repaired for the
+correct raw-to-midpoint gauge rather than discarded.
 
 ## Fixed-map continuation, 21 September 2026
 
