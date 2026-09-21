@@ -63,6 +63,72 @@ This is deterministic cancellation at Heisenberg length on the stated
 subsequence, but it is not yet inserted into every constrained variable of
 the full quantum tensor sum.
 
+\subsection{Repaired cyclic ramp and one-step gap}
+For the spectrally conjugate family $V_N=M_Ne^{i\tau N A_N}$, let
+$P_N(x,y)=|V_N(x,y)|^2$.  Every unitary matrix satisfies the exact
+multiplicity-counted cyclic identity
+\[
+ D_N^{\rm cyc}(m)=m\,\operatorname{Tr}P_N^m.
+\]
+The old branch-dephasing proof used the pre-gauge midpoint symbol.  With the
+correct symbol the witness moves from $q_0=1/14$ to $q_0=1/7$; all aliased
+non-pairing branch quadruples then have nonzero curvature.  Fixed-time FIO
+stationary phase gives
+\[
+ \limsup_{N\to\infty}s_2(P_N)<7/8,
+ \qquad
+ D_N^{\rm cyc}(m)=m+O(mN(7/8)^m).
+\]
+Thus the deterministic cyclic sector supplies the CUE ramp on every fixed
+window below the plateau.  This does not control the signed post-cyclic
+residual.
+
+\subsection{All-time classical stability sum}
+For the corrected physical classical map $F_\tau$, topological conjugacy to
+$S$ gives exact periodic counts
+\[
+ \#\operatorname{Fix}(F_\tau^m)=|\det(S^m-I)|.
+\]
+J\'ez\'equel's analytic Ruelle trace formula and mixing give constants
+$C_{\rm cl}<\infty$, $0<\rho_{\rm cl}<1$ with
+\[
+ \sum_{F_\tau^m x=x}{1\over|\det(I-D_xF_\tau^m)|}
+ =1+O(C_{\rm cl}\rho_{\rm cl}^m).
+\]
+This is an all-time classical theorem, not a quantum form-factor estimate.
+
+\subsection{Exact history normalization and reconnection tensors}
+For an arbitrary finite-dimensional unitary evolution and any Parseval
+instrument $\{\mathcal M_a\}$ with
+$\sum_a\mathcal M_a^*\mathcal M_a=I$, open history operators satisfy
+\[
+ \sum_{\boldsymbol a}\|H_{\boldsymbol a}\|_{\rm HS}^2=D.
+\]
+Thus first-witness Hilbert--Schmidt gluing carries no factor for the number
+of possible witness positions.  Separately, if an exact position path is
+cut into $L$ oriented segments and only the boundary reconnection is
+permuted, all internal long-link phases cancel identically.  The resulting
+pair sum is a finite tensor built from powers of the unistochastic matrix.
+Under the repaired one-step gap, every fixed-complexity logarithmic-link
+reconnection tends to the flat factor
+\[
+ N^{\#\operatorname{cyc}(c^{-1}\pi)-L}=N^{-(L-V)}.
+\]
+This literal reconnection identity is not silently identified with every
+semiclassical shadowing partner tube.
+
+\subsection{All-order unitary combinatorial envelope}
+For the standard unitary encounter coefficients $\widetilde N(\mathbf v)$,
+the exact estimate
+\[
+ A_n^{\rm abs}\le(27/4)^{n-1}
+\]
+gives absolute convergence of the universal main encounter series on
+$0<\tau<4/27$.  The published unitary permutation recursion cancels every
+main coefficient of order $n\ge2$.  This removes a purely combinatorial
+all-order ambiguity, but not the required uniform quantum localization and
+domination of the frozen map.
+
 \subsection{One-shear no-go and the signed frontier}
 If the upper-right cat entry is invertible modulo odd $N$, the metaplectic
 kernel is diagonal--Fourier--diagonal. Multiplying it by any $q$-only

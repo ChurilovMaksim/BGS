@@ -7,6 +7,8 @@ scientifically useful layer that was absent from the consolidated tree.
 It has now been re-derived against the actual raw modular Weyl convention,
 rather than copied from the historical checkpoint.
 
+- [Repaired one-step unistochastic gap and ramp skeleton](fixed_map_unistochastic_ramp.md): after correcting the midpoint symbol, the spectrally conjugate frozen quantization has eventual `s_2<7/8`; its exact multiplicity-counted cyclic sector is `m+O(mN(7/8)^m)` and therefore supplies the CUE ramp on every fixed window below the plateau.  The post-cyclic signed residual remains open.
+- [All-time classical stability sum](fixed_map_classical_sum_rule.md): the corrected real-analytic Anosov map has exact linear-cat periodic counts and stability-weighted sum `1+O(rho_cl^m)` from the analytic Ruelle trace formula.
 - [Exact Weyl path escape](fixed_map_weyl_path_escape.md): the frozen map has
   an exact one-kick microhop bound, an all-near contribution
   `1+O(0.145^m)`, and a multiscale theorem forcing every surviving
@@ -19,6 +21,8 @@ rather than copied from the historical checkpoint.
   Parseval, and a p-adic finite-type argument with Cluckers' van der Corput
   theorem gives the pointwise bound `O(N^(2/3) log N)` on intervals of
   Heisenberg length.
+- [Exact history/reconnection algebra](quantum_history_reconnection.md): open Liouville histories and smooth Parseval histories have exact total Hilbert--Schmidt mass; first-witness gluing has no location-entropy factor; literal fixed-complexity segment reconnections have an exact tensor and flat-link limit `N^{-(L-V)}` once logarithmic links mix.
+- [Unitary encounter envelope](unitary_encounter_envelope.md): the standard unitary encounter coefficients obey `A_n^abs <= (27/4)^(n-1)`; together with the published order-by-order unitary cancellation, the pure universal main-term series is absolutely summable for `tau<4/27`.  Uniform frozen-map quantum domination is still open.
 - [One-shear antiunitary no-go](one_shear_antiunitary_no_go.md): for the
   project cat, every q-only diagonal kick has an exact antiunitary reversor
   at every odd dimension, so the old one-shear fallback cannot be a CUE

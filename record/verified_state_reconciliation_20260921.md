@@ -64,3 +64,37 @@ kicked_cat_sine_kernel.md is retained only as a historical diagnostic. Its “al
 The recovered path theorem removes one ambiguity: nontrivial Heisenberg paths cannot spend almost all their time in small Weyl modes. On N=19^k, a deterministic pointwise cancellation bound is also available for free hyperbolic time phases.
 
 What remains open is the signed insertion problem: prove that the complete fixed-map tensor/path expansion exposes enough summable nonresonant variables, while explicitly evaluating the surviving signed main sector as the CUE triangular form factor. The loop-equation route in the current fixed-map chapter is an alternative sufficient formulation of the same microscopic cancellation difficulty.
+
+
+## Additional recovered result: all-time classical stability
+
+The verified state also contained a classical theorem that survives the
+later symbol repair.  The corrected physical map is still real-analytic,
+area-preserving, Anosov and topologically conjugate to S.  Jézéquel's
+analytic Ruelle trace formula therefore gives the all-time
+stability-weighted periodic-point sum 1+O(rho_cl^m), while topological
+conjugacy gives the exact cat periodic counts.  This is now maintained in
+mathematics/fixed_map_classical_sum_rule.md.  It is a classical input, not a
+quantum form-factor estimate.
+
+
+## Selective-authority rule for the remaining 16 September state
+
+The 16 September working state contains many later labels such as
+`[PROVEN]` for logarithmic FIO blocks, Hilbert-valued Dolgopyat transfer,
+quantum cylinders, Naimark dilation, shadow tubes and encounter localization.
+Those historical labels are **not** imported wholesale into the current claim
+ledger.  The document was a living internal state, and later 17--20 September
+audits changed the status of several of those routes.
+
+This reconciliation promotes only results that were independently
+re-derived/replayed here or already have a later maintained proof:
+raw-Weyl path escape and rank, the repaired one-step ramp, the 19-adic
+direct theorem, one-shear no-go, the classical stability sum, exact
+history/reconnection identities and the universal encounter coefficient
+envelope.  All other old `[PROVEN]` labels remain historical until a
+separate current-source audit promotes them.
+
+In particular, the later maintained shadow-tube audit continues to govern
+over the old TUBE-SAT label, and no Naimark/cylinder/Dolgopyat chain is treated
+as a completed BGS bridge merely because the working state used that label.

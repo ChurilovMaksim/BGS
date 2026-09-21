@@ -7,13 +7,18 @@ source-audit corrections.  Only claims surviving that chronology are promoted.
 
 | Claim | Status | Boundary / authority |
 |---|---|---|
+| Open/smooth quantum histories have exact total squared HS mass D; two-sided HS gluing transfers a local descendant contraction without a witness-location factor | **EXACT + FRESH FINITE REGRESSION** | `mathematics/quantum_history_reconnection.md`; model-specific descendant contraction remains open |
+| Literal segment reconnections have exact tensor (6); under flatness and one-step gap their logarithmic-link limit is `N^(#cyc(c^-1 pi)-L)=N^{-(n-1)}` for fixed complexity | **EXACT + REPAIRED GAP INPUT + FRESH FINITE REGRESSION** | same note; does not identify every semiclassical shadowing partner with an identical discrete path |
+| Standard unitary encounter absolute coefficients obey `A_n^abs <= (27/4)^(n-1)` and their universal main series is absolutely convergent for `tau<4/27`; published unitary recursion cancels every n>=2 main coefficient | **EXACT COMBINATORIAL + EXTERNAL-SOURCE + FRESH INTEGER REGRESSION** | `mathematics/unitary_encounter_envelope.md`; actual frozen quantum all-order domination remains open |
+| Corrected fixed-map one-step unistochastic matrix has eventual `s_2<7/8`; its exact cyclic skeleton is `m+O(mN(7/8)^m)` and supplies the CUE ramp on every fixed window below the plateau | **PROJECT PROOF + EXTERNAL-FIO + FRESH EXACT/FINITE REGRESSION** | `mathematics/fixed_map_unistochastic_ramp.md`; the old witness is repaired to `q0=1/7`; post-cyclic residual and plateau remain open |
+| Corrected frozen classical map has exact cat periodic-point counts and stability sum `sum_Fix 1/abs(det(I-DF^m)) = 1+O(rho_cl^m)` | **PROJECT PROOF + EXTERNAL-RUELLE-THEOREM + FRESH INTEGER REGRESSION** | `mathematics/fixed_map_classical_sum_rule.md`; Jézéquel arXiv:2212.09881 Prop. 4.3; classical only |
 | Frozen raw-modular map: exact microhop bound, all-near error below `0.145^m`, long-near-run suppression, and multiscale escape to at least `(tau_0/26)N^(1-epsilon)` bulk visits | **PROJECT PROOF + FRESH EXACT/FINITE REGRESSION** | `mathematics/fixed_map_weyl_path_escape.md`; structural path theorem, not signed bulk cancellation |
 | Encounter support kernel satisfies `rank_F(B_P)>=s(P)/25` over every field | **EXACT COMBINATORIAL + FRESH FINITE REGRESSION** | induced-matching minor with determinant plus/minus one; same note |
 | Every q-only kick for the project cat has an exact antiunitary reversor at every odd N | **EXACT** | `mathematics/one_shear_antiunitary_no_go.md`; rules out the one-shear fallback as a CUE route |
 | On `N=19^k`, `ord_N(S)=20*19^(k-1)` and primitive orbit phases obey exact Parseval | **EXACT + FRESH FINITE REGRESSION** | `mathematics/hyperbolic_19adic_dephasing.md` |
 | Primitive 19-adic hyperbolic incomplete sums are `O(N^(2/3) log N)` for intervals of length at most N | **PROJECT PROOF + EXTERNAL-THEOREM + FRESH FINITE REGRESSION** | Cluckers arXiv:1001.2013 Prop. 3.3 plus explicit finite-type reduction |
 | v9 two-frequency Bourgain incomplete-sum theorem and sliding-variable BCD2 corollary | **RETRACTED** | cited source did not imply the required uniform single incomplete-sum estimate |
-| Deterministic final-map “CUE contraction sector” has already been evaluated as `min(m,N)` | **OPEN / HISTORICAL OVERCLAIM** | the CUE reference value is correct; the required deterministic sub-sum decomposition/evaluation was not derived |
+| Historical blanket claim that one deterministic “CUE contraction sector” already equals `min(m,N)` for all m | **PARTLY REPAIRED / OTHERWISE OPEN** | the cyclic ramp `m` for `m<N` is now repaired and proved in `fixed_map_unistochastic_ramp.md`; plateau and full signed contraction structure remain open |
 
 ## 21 September 2026 — recovered fixed-map continuation
 

@@ -234,3 +234,28 @@ The explicit singular-stalk wording in the recovered proof makes that
 convention transparent. These are source-dependent clarifications, not
 new monodromy or quasi-orthogonality theorems. See
 [recovery audit](../record/recovery_audit_20260920.md).
+
+
+## Recovered Heisenberg-scale analytic inputs (audited 21 September 2026)
+
+- M. Jézéquel, *Distribution of Ruelle resonances for real-analytic Anosov
+  diffeomorphisms*, arXiv:2212.09881. Proposition 4.3 is the trace-class
+  periodic-point trace formula used by the recovered classical stability sum.
+- D. Robert, *On the Herman--Kluk Semiclassical Approximation*,
+  arXiv:0908.0847. Used only for the standard fixed-time semiclassical FIO
+  expansion of a Weyl Hamiltonian propagator.
+- F. Faure, *Semi-classical formula beyond the Ehrenfest time in quantum
+  chaos. (I) Trace formula*, arXiv:nlin/0610004. Used for the torus nonlinear
+  Anosov quantization framework; the recovered cyclic-ramp theorem itself
+  needs only one fixed classical step, not the long-time trace formula.
+- R. Cluckers, *Analytic van der Corput lemma for p-adic and
+  F_q((t)) oscillatory integrals*, arXiv:1001.2013, Proposition 3.3.
+  Used in the repaired N=19^k incomplete hyperbolic-sum theorem.
+
+
+- S. Müller, S. Heusler, P. Braun, F. Haake, A. Altland,
+  *Periodic-Orbit Theory of Universality in Quantum Chaos*,
+  arXiv:nlin/0503052. Equations (29)--(30) define the encounter coefficients;
+  equations (45)--(49) prove their order-by-order cancellation in the unitary
+  class.  The repository's additional absolute envelope is a separate
+  elementary combinatorial estimate, not attributed to the paper.

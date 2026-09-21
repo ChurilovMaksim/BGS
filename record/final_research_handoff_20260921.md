@@ -98,3 +98,29 @@ That reconciliation recovered the raw-Weyl Heisenberg path-escape theorem,
 the exact/19-adic direct-attack results and the one-shear antiunitary no-go,
 while also preserving the later retractions of the v9 two-frequency Bourgain
 shortcut and the unevaluated historical “CUE contraction sector” assertion.
+
+
+### Recovered ramp/history refinement
+
+The same forensic pass subsequently reconstructed two further layers from the
+16 September verified working state, but only after repairing their chronology
+against the later gauge/source audits.
+
+The one-step unistochastic argument was not discarded wholesale.  Its old
+non-pairing curvature witness used the pre-gauge midpoint symbol and failed
+after the raw-to-midpoint correction.  A new witness at q0=1/7 restores the
+argument for the corrected physical symbol; the resulting exact cyclic
+skeleton supplies the CUE ramp below the plateau.  This does not evaluate the
+post-cyclic residual or the plateau.
+
+The audit also recovered exact finite-dimensional Parseval history
+normalization, two-sided Hilbert--Schmidt stopping-time gluing, literal
+segment-reconnection tensors, and an elementary absolute envelope for the
+standard unitary encounter coefficients.  These narrow the complete-matching
+all-order problem to genuine partner localization/uniform quantum domination;
+they are not represented as a completed partner-orbit theorem.
+
+The maintained status authority is therefore the combination of
+`record/verified_state_reconciliation_20260921.md`,
+`record/claim_ledger.md`, and `record/retractions.md`, rather than any
+historical dossier label.

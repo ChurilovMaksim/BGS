@@ -92,12 +92,14 @@ identities were not changed by this finite-anchor correction.
     single-sum estimate from multiplicative order alone.  The advertised
     sliding-variable/BCD2 corollary is therefore retracted.  The maintained
     replacement is the separately proved `N=19^k` p-adic theorem.
-20. **Historical “CUE contraction sector = min(m,N)” assertion.** The CUE
-    ensemble identity `E|Tr V^m|^2=min(m,N)` is not in dispute.  What was
-    missing was an explicit deterministic sub-sum of the final two-directional
-    map and a proof that it equals that value.  Treating that main term as
-    already evaluated is withdrawn; it remains part of the signed
-    Heisenberg-scale closure problem.
+20. **Historical blanket “CUE contraction sector = min(m,N)” assertion.** The
+    CUE ensemble identity is not in dispute.  A later 16 September cyclic
+    path argument did derive the ramp part for `m<N`, but its original
+    nonpairing witness used the pre-gauge symbol.  That ramp has now been
+    repaired for the correct symbol in `fixed_map_unistochastic_ramp.md`.
+    What remains withdrawn is the blanket extension to the plateau/full
+    deterministic contraction sector and any claim that the post-cyclic
+    signed residual was already controlled.
 21. **Unqualified September-16 shadow-history/TUBE-SAT promotion.** The later
     maintained audit proves the symbolic filling estimate, makes the geometric
     periodic-pair transfer conditional on the stated equidistribution input,

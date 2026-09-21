@@ -61,13 +61,27 @@ On the exact subsequence `N=19^k`, primitive hyperbolic time phases also
 satisfy a deterministic pointwise incomplete-sum saving
 `O(N^(2/3) log N)`.
 
-This narrows the missing theorem but does not close it.  One still has to
-show that the constraints of the **complete signed tensor/path expansion**
-leave enough variables to which such cancellation can actually be applied,
-and simultaneously evaluate the surviving deterministic main sector as the
-CUE triangular form factor.  Historical v9 claims that large multiplicative
-order alone supplied a uniform two-frequency Bourgain bound are retracted;
-the 19-adic theorem is the maintained direct replacement.
+This narrows the missing theorem but does not close it.  The repaired
+one-step FIO/unistochastic argument now **does** isolate the deterministic
+CUE ramp below the plateau:
+`m Tr(P_N^m)=m+O(mN(7/8)^m)`.  What remains is the signed **post-cyclic**
+residual, the plateau side `m>=N`, and then the higher joint-trace
+hierarchy.  The path-escape and 19-adic estimates must be inserted into that
+complete constrained residual without losing their cancellation.
+
+Historical v9 claims that large multiplicative order alone supplied a
+uniform two-frequency Bourgain bound are retracted; the 19-adic theorem is
+the maintained direct replacement.
+
+The complete-matching side is now sharper as well.  Exact quantum history
+normalization removes a spurious witness-location entropy factor, and every
+fixed-complexity literal reconnection has an exact long-link tensor whose
+flat limit is `N^{-(L-V)}`.  The standard unitary encounter coefficients also
+have an absolute envelope `(27/4)^(n-1)`, so their universal main series is
+absolutely summable on every fixed window `tau<4/27`.  The remaining task is
+therefore a **uniform quantum localization/domination theorem for genuine
+shadowing partner tubes**, including non-overcounting and the high-complexity
+tail; literal reconnection identities alone do not supply it.
 
 The 21 September continuation narrows the loop-equation route without closing
 it.  Exact moment inequalities strengthen the first two mixed levels, and a

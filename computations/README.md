@@ -74,3 +74,22 @@ Both are discovered automatically by a complete `verify_workspace.py` run.
 They are finite/exact regressions of load-bearing algebra; they do not
 machine-prove the analytic p-adic van der Corput theorem, the infinite
 path-sum estimates, or BGS.
+
+
+The repaired cyclic-ramp proof has its own exact finite gate,
+`verification/fixed_map_unistochastic_ramp_audit.py`: it enumerates every
+aliased non-pairing four-branch configuration, checks the corrected
+`q0=1/7` curvature witness and a certified one-step gap margin, and
+replays the exact cyclic identity on independent finite unitaries.
+`verification/fixed_map_classical_sum_rule_audit.py` checks the exact cat
+periodic-count/Mobius formulas through period 80.  The fixed-time FIO and
+analytic Ruelle trace theorems remain external analytic inputs.
+
+
+`verification/quantum_history_reconnection_audit.py` checks exact open and
+smooth Parseval history normalization together with finite flat-reconnection
+identities.  `verification/unitary_encounter_envelope_audit.py` checks the
+integer/combinatorial envelope behind the recovered small-time unitary
+encounter series.  These gates deliberately do not certify genuine
+semiclassical partner localization or the frozen-map all-order quantum
+domination theorem.

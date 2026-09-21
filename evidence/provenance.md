@@ -44,3 +44,10 @@ The maintained proof statements are in
 `mathematics/hyperbolic_19adic_dephasing.md` and
 `mathematics/one_shear_antiunitary_no_go.md`.
 Historical v7--v11 files are not vendored as competing claim authorities.
+
+
+The same recovery record now also covers the repaired cyclic-ramp regression,
+the exact history/reconnection regression, the classical periodic-count gate
+and the unitary encounter-envelope integer audit.  External analytic inputs
+are enumerated inside the JSON with their exact role; successful finite
+regression is never used as a substitute for those analytic theorems.

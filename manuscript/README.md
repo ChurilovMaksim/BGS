@@ -48,3 +48,16 @@ proofs are the maintained Markdown notes
 `../mathematics/hyperbolic_19adic_dephasing.md` and
 `../mathematics/one_shear_antiunitary_no_go.md`; the historical v7--v11
 dossiers are provenance, not parallel claim authorities.
+
+
+The recovered Heisenberg section also records the corrected cyclic-ramp
+repair and the all-time classical stability sum.  The ramp proof uses
+fixed-time FIO theory only at one step; the classical sum uses the analytic
+Ruelle trace formula.  Neither is represented as a proof of the post-cyclic
+quantum residual.
+
+
+The recovered Heisenberg section also summarizes the exact history/reconnection
+bookkeeping and the universal encounter-coefficient envelope.  These are
+presented as normalization/combinatorial tools, not as a completed
+microlocal partner-orbit theorem.

@@ -68,17 +68,70 @@
       "parseval_relative_error": "4.58e-16",
       "finite_type_quadratic_fixtures": 6156,
       "finite_type_cubic_fixtures": 324
+    },
+    "corrected_unistochastic_ramp": {
+      "status": "PASS",
+      "aliased_nonpairing_quadruples": 36,
+      "min_abs_corrected_phase_factor": "0.4",
+      "corrected_witness": "q0=1/7, Q0=3/7",
+      "r_q0_plus_half": "0.75302039628253293895",
+      "safe_curvature_lower": "pi^2/4000",
+      "pairing_frobenius_upper": "1.7612829534681182361",
+      "limiting_s2_upper": "0.8725153027128626 < 7/8",
+      "cyclic_identity_fixtures": "DFT N=3 and seeded Haar N=4, m=1..5",
+      "max_cyclic_identity_error": "4.45e-15"
+    },
+    "classical_periodic_counts": {
+      "status": "PASS",
+      "periods_checked": 80,
+      "scope": "integer cat fixed-point and primitive-orbit count formulas only; analytic Ruelle theorem is external"
+    },
+    "quantum_history_reconnection": {
+      "status": "PASS",
+      "history_fixtures": 18,
+      "max_history_error": "5.33e-15",
+      "flat_reconnection_fixtures": 12,
+      "max_flat_error": "2.89e-15"
+    },
+    "unitary_encounter_envelope": {
+      "status": "PASS",
+      "integer_rows_checked": 99,
+      "envelope": "A_n^abs <= binom(3(n-1)-2,n-1) <= (27/4)^(n-1)"
     }
-  },
-  "external_input": {
-    "name": "Raf Cluckers, Analytic van der Corput Lemma for p-adic and F_q((t)) Oscillatory Integrals, singular Fourier transforms, and restriction theorems",
-    "arxiv": "1001.2013",
-    "proposition": "3.3",
-    "use": "non-archimedean analytic van der Corput decay; theorem statement separately checked before promotion"
   },
   "retractions": [
     "v9 two-frequency Bourgain incomplete single-sum theorem and its sliding-variable/BCD2 corollary",
-    "historical assertion that a deterministic final-map CUE contraction sub-sum had already been explicitly evaluated as min(m,N)"
+    "historical blanket min(m,N) contraction claim: ramp m below plateau is now repaired/proved; plateau and post-cyclic signed residual remain open"
   ],
-  "boundary": "The recovered results force nontrivial Heisenberg paths into bulk Weyl modes and give deterministic time-phase cancellation on N=19^k. They do not evaluate the signed bulk contribution or prove pair/all-order BGS."
+  "boundary": "The recovered results force nontrivial Heisenberg paths into bulk Weyl modes and give deterministic time-phase cancellation on N=19^k. They do not evaluate the signed bulk contribution or prove pair/all-order BGS.",
+  "external_inputs": [
+    {
+      "name": "Raf Cluckers, Analytic van der Corput Lemma for p-adic and F_q((t)) Oscillatory Integrals, singular Fourier transforms, and restriction theorems",
+      "arxiv": "1001.2013",
+      "proposition": "3.3",
+      "use": "non-archimedean analytic van der Corput decay; theorem statement separately checked before promotion"
+    },
+    {
+      "name": "Didier Robert, On the Herman-Kluk Semiclassical Approximation",
+      "arxiv": "0908.0847",
+      "use": "fixed-time Weyl Hamiltonian propagator FIO expansion"
+    },
+    {
+      "name": "Frederic Faure, Semi-classical formula beyond the Ehrenfest time in quantum chaos. (I) Trace formula",
+      "arxiv": "nlin/0610004",
+      "use": "torus nonlinear Anosov quantization/descent framework"
+    },
+    {
+      "name": "Malo Jezequel, Distribution of Ruelle resonances for real-analytic Anosov diffeomorphisms",
+      "arxiv": "2212.09881",
+      "proposition": "4.3",
+      "use": "trace-class analytic Anosov periodic-point trace formula"
+    },
+    {
+      "name": "Sebastian Müller, Stefan Heusler, Petr Braun, Fritz Haake, Alexander Altland, Periodic-Orbit Theory of Universality in Quantum Chaos",
+      "arxiv": "nlin/0503052",
+      "equations": "(29),(30),(45)-(49)",
+      "use": "definition of the standard unitary encounter coefficients and published order-by-order cancellation"
+    }
+  ]
 }

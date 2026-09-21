@@ -36,7 +36,10 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 
 - [Final recovery/integration audit](record/final_research_handoff_20260921.md): reconciles the late handoff, old PRs, replay status, and the remaining target.
 - [14--16 September dossier reconciliation](record/verified_state_reconciliation_20260921.md): recovers the earlier Heisenberg-scale direct attack, promotes only repaired claims, and records later retractions.
-- [Exact fixed-map Weyl path escape](mathematics/fixed_map_weyl_path_escape.md) and [19-adic dephasing](mathematics/hyperbolic_19adic_dephasing.md): recovered direct Heisenberg-time structure; the signed CUE main term remains open.
+- [Exact fixed-map Weyl path escape](mathematics/fixed_map_weyl_path_escape.md) and [19-adic dephasing](mathematics/hyperbolic_19adic_dephasing.md): recovered direct Heisenberg-time structure.
+- [Repaired cyclic CUE ramp](mathematics/fixed_map_unistochastic_ramp.md): the corrected frozen one-step FIO has an eventual uniform unistochastic gap and its exact cyclic path sector supplies the CUE ramp below the plateau; the post-cyclic residual remains open.
+- [All-time classical stability sum](mathematics/fixed_map_classical_sum_rule.md): exact periodic counts and exponentially accurate stability-weighted sum for the corrected frozen classical map.
+- [Exact history/reconnection algebra](mathematics/quantum_history_reconnection.md) and [unitary encounter envelope](mathematics/unitary_encounter_envelope.md): finite-dimensional normalization/long-link identities and a convergent universal combinatorial envelope; genuine partner localization and the post-cyclic residual remain open.
 - [Recovery audit](record/recovery_audit_20260920.md): reconciled the preceding chat/repository state and recovered omitted amendments.
 
 - [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
@@ -92,6 +95,10 @@ python computations/maintenance/verify_fixed_map_supplement.py
 python computations/verification/bgs_20260921_regression.py --output build/bgs-20260921-regression.json
 python computations/verification/bgs_heisenberg_path_audit.py --output build/bgs-heisenberg-path-audit.json
 python computations/verification/hyperbolic_19adic_audit.py --output build/hyperbolic-19adic-audit.json
+python computations/verification/fixed_map_unistochastic_ramp_audit.py
+python computations/verification/fixed_map_classical_sum_rule_audit.py
+python computations/verification/quantum_history_reconnection_audit.py
+python computations/verification/unitary_encounter_envelope_audit.py
 ```
 
 This writes fresh reports to `build/fixed-map-replay/` and preserves the
