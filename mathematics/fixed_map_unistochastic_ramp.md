@@ -346,7 +346,7 @@ For every fixed \(0<\sigma<1\) and
 {1\over N^2}\sum_{m\ge1}w(m/N)
 \left[D_{V_N}^{\rm cyc}(m)-m\right]
 =O(N^{-1}).
-\tag{19}
+\tag{24}
 \]
 
 Thus the deterministic path expansion contains the complete CUE **ramp**
