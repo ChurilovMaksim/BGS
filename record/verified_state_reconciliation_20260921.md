@@ -98,3 +98,28 @@ separate current-source audit promotes them.
 In particular, the later maintained shadow-tube audit continues to govern
 over the old TUBE-SAT label, and no Naimark/cylinder/Dolgopyat chain is treated
 as a completed BGS bridge merely because the working state used that label.
+
+
+## Earlier 19 September summary attachments
+
+Two different files named `research-summary.md` and
+`research-summary (1).md` were present in Library and are not duplicates:
+
+- `research-summary.md`:
+  SHA-256 `eff0741b86f8bbe3de385e0c92b464c920eeb5a59321205604b1ffd49b4e5ad1`;
+- `research-summary (1).md`:
+  SHA-256 `c3a5f13c6c5f9d7d90ba32bb62c47bb339d01d8f2802d347a22d810999fa42c3`.
+
+They summarize different stages of model selection and low-order obstruction
+work (mixed/redesigned kicks, resonant-period and quartic diagnostics).  They
+are historical summaries, not current theorem ledgers.  The scientifically
+relevant redesigned-symbol material is already preserved under
+`supplement/fixed_map/design-return/` and the 19 September
+`report-audit-20260919/` correction layer.  No summary-only claim is
+promoted here over those maintained proofs/audits.
+
+The separate attachment `kicked_cat_sine_kernel.md` has SHA-256
+`515dd3d0429419c732dae0e0df579c88b9f2d1ab0b7d338259b9bfbe719f669d`.
+It remains a historical diagnostic only: its reduction of all orders to the
+two-point case is false, its Anosov argument is incomplete, and its finite
+antiunitary tests are not exhaustive.
