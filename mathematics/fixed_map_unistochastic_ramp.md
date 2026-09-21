@@ -298,7 +298,7 @@ The pairing terms give
 \|P_{V_N}\|_F^2\longrightarrow
 \int_{\mathbb T^2}
 \left(2K(q,Q)^2-\sum_{\nu=0}^3w_\nu(q,Q)^2\right)dq\,dQ,
-\tag{24}
+\tag{19}
 \]
 
 where \(K=\sum_\nu w_\nu\). If merely
@@ -330,7 +330,7 @@ uniformly in \(m\ge1\).
 
 ## 6. The repaired CUE ramp skeleton
 
-Combining (2) and (17),
+Combining (2) and (22),
 
 \[
 \boxed{
