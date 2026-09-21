@@ -187,18 +187,106 @@ Hamilton--Jacobi variation gives, up to a harmless global sign,
 \]
 
 The shift \(q\mapsto q+1/2\) changes Fourier signs but not magnitudes or
-frequencies. The same finite-Fourier majorant gives
-\(M_j\le2(20\pi)^j\), \(j=1,\ldots,4\). Elementary variational equations
-and implicit differentiation give the deliberately loose bound
-
+frequencies. Hence the same finite-Fourier derivative majorant is valid:
 \[
-\sup_{|\kappa|\le10^{-6}}
-|\partial_Q^2\partial_\kappa^2\Psi|<10^{10}.
+M_j:=\max_{|\beta|=j}\|\partial^\beta g\|_\infty
+\le2(20\pi)^j,\qquad j=1,\ldots,4.
 \tag{13}
 \]
+Numerically,
+\[
+M_1<126,\quad M_2<7.90\cdot10^3,\quad
+M_3<4.97\cdot10^5,\quad M_4<3.12\cdot10^7.
+\tag{14}
+\]
 
-Since \(10^{10}|\kappa_0|<2\cdot10^{-71}\), every aliased nonpairing phase
-at the actual \(\kappa_0\) is genuinely nonlinear. Poisson summation and
+For completeness, the curvature-persistence estimate is explicit. On
+\(|\kappa|\le10^{-6}\), the first three variational equations give
+\[
+\|D\Phi_g^{-\kappa}\|<1.01,\qquad
+\|D^2\Phi_g^{-\kappa}\|<0.52,\qquad
+\|D^3\Phi_g^{-\kappa}\|<34.
+\tag{15}
+\]
+Indeed,
+\[
+\|D\Phi\|\le e^{M_2|\kappa|},\qquad
+\|D^2\Phi\|\le |\kappa|M_3e^{3M_2|\kappa|}<0.52,
+\]
+and, with \(A=1.01\), \(B=0.52\),
+\[
+\|D^3\Phi\|
+\le |\kappa|e^{M_2|\kappa|}
+\left(3M_3AB+M_4A^3\right)<34.
+\]
+
+Let
+\[
+H_\kappa(q,p)=\pi_q S\Phi_g^{-\kappa}(q,p).
+\]
+Since the first row of \(S\) has \(\ell^1\)-norm seven, (13)--(15)
+give
+\[
+H_p>3.94,\quad |H_\kappa|<9\cdot10^2,\quad
+|H_{\kappa p}|<6\cdot10^4,\quad
+|H_{\kappa pp}|<4\cdot10^6,
+\]
+and
+\[
+|H_{pp}|<4,\qquad |H_{ppp}|<2.5\cdot10^2.
+\tag{16}
+\]
+Implicit differentiation of
+\[
+H_\kappa(q,p_\nu^\kappa(q,Q))=Q+\nu
+\]
+then yields
+\[
+|p_Q|<0.26,\quad |p_{QQ}|<0.07,\quad
+|p_\kappa|<2.3\cdot10^2,\quad
+|p_{\kappa Q}|<4\cdot10^3,\quad
+|p_{\kappa QQ}|<7\cdot10^4.
+\tag{17}
+\]
+For example,
+\[
+p_{\kappa QQ}
+=
+-{H_{\kappa pp}\over H_p^3}
++{3H_{\kappa p}H_{pp}\over H_p^4}
++{H_\kappa H_{ppp}\over H_p^4}
+-{3H_\kappa H_{pp}^2\over H_p^5},
+\]
+whose absolute value is below \(7\cdot10^4\).
+
+Hamilton--Jacobi variation gives
+\(\partial_\kappa W_\nu^\kappa=\pm g(q,p_\nu^\kappa)\). Therefore
+\[
+\partial_Q^2\partial_\kappa^2W_\nu^\kappa
+=
+g_{ppp}p_Q^2p_\kappa
++g_{pp}p_{QQ}p_\kappa
++2g_{pp}p_Qp_{\kappa Q}
++g_p p_{\kappa QQ},
+\]
+up to the same harmless global sign. Inserting (14) and (17) gives
+\[
+|\partial_Q^2\partial_\kappa^2W_\nu^\kappa|<4\cdot10^7.
+\]
+A fourth phase has four branches, so the deliberately loose uniform estimate
+\[
+\boxed{
+\sup_{\mathbf n,\ |\kappa|\le10^{-6}}
+|\partial_Q^2\partial_\kappa^2\Psi_{\mathbf n}^{\kappa}|<10^{10}}
+\tag{18}
+\]
+follows. Since \(10^{10}|\kappa_0|<2\cdot10^{-71}\), Taylor's theorem and
+(12) show that every aliased nonpairing phase stays nonlinear at the actual
+\(\kappa_0\).
+
+If \(\Delta\not\equiv0\pmod4\), one unperturbed grid slope stays at
+distance at least \(1/4\) from the integer lattice, while the perturbation
+is \(O(\kappa_0)\); it cannot become integer-affine. Poisson summation and
 fixed-dimensional oscillatory integration therefore make every nonpairing
 fourth-moment branch contribution \(o(1)\).
 
@@ -210,7 +298,7 @@ The pairing terms give
 \|P_{V_N}\|_F^2\longrightarrow
 \int_{\mathbb T^2}
 \left(2K(q,Q)^2-\sum_{\nu=0}^3w_\nu(q,Q)^2\right)dq\,dQ,
-\tag{14}
+\tag{24}
 \]
 
 where \(K=\sum_\nu w_\nu\). If merely
@@ -220,14 +308,14 @@ where \(K=\sum_\nu w_\nu\). If merely
 2\left({4\over4-0.01}\right)^2
 -{4\over(4+0.01)^2}
 =1.7612829534\ldots<1.762.
-\tag{15}
+\tag{20}
 \]
 
 Hence
 
 \[
 \boxed{\limsup_{N\to\infty,\ N\ {\rm odd}}s_2(P_{V_N})<7/8.}
-\tag{16}
+\tag{21}
 \]
 
 For all sufficiently large odd \(N\),
@@ -235,7 +323,7 @@ For all sufficiently large odd \(N\),
 \[
 \operatorname{Tr}P_{V_N}^m
 =1+O(N(7/8)^m)
-\tag{17}
+\tag{22}
 \]
 
 uniformly in \(m\ge1\).
@@ -248,7 +336,7 @@ Combining (2) and (17),
 \boxed{
 D_{V_N}^{\rm cyc}(m)
 =m+O(mN(7/8)^m).}
-\tag{18}
+\tag{23}
 \]
 
 For every fixed \(0<\sigma<1\) and

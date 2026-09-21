@@ -19,11 +19,15 @@ Immediately before the final fast-forward, the published `main` head was
 
 `39d4e01ae6a6b3eb472ab30266b708ca71a70a16`.
 
-The audited recovery head was
+The preservation-audit checkpoint before final verifier normalization was
 
 `befd253b4f85515bb89c7492e6ed0c39ff5263cf`.
 
-The recovery head is a strict descendant of `main`.  The following late
+The branch actually promoted to `main` is
+`research/recover-heisenberg-audit-20260921`; its exact merge head is the
+new `main` head after the final fast-forward and must be read from Git rather
+than hard-coded self-referentially in this pre-merge record.  The recovery
+branch is a strict descendant of the pre-final `main`.  The following late
 branches contain no commit absent from that lineage:
 
 | branch | relation to pre-final main |

@@ -187,9 +187,11 @@
   "branch_reconciliation": {
     "record": "record/final_branch_reconciliation_20260921.md",
     "future_main_parent": "39d4e01ae6a6b3eb472ab30266b708ca71a70a16",
-    "audited_recovery_head": "befd253b4f85515bb89c7492e6ed0c39ff5263cf",
     "open_pull_requests": 0,
     "recovery_removed_files": 0,
-    "legacy_refs_preserved": true
+    "legacy_refs_preserved": true,
+    "preservation_audit_checkpoint": "befd253b4f85515bb89c7492e6ed0c39ff5263cf",
+    "final_promotion_ref": "research/recover-heisenberg-audit-20260921",
+    "final_head_policy": "Read the promoted main head from Git after fast-forward; do not self-reference a pre-merge JSON commit."
   }
 }
