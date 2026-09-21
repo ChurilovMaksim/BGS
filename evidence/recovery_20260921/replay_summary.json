@@ -1,0 +1,68 @@
+{
+  "producer": "integration audit 2026-09-21",
+  "status": "PASS",
+  "handoff_archive": {
+    "filename": "BGS_final_handoff_20260921.zip",
+    "bytes": 123387,
+    "sha256": "032e965cd39a12d2a19f5520fad84fdb305043ef2717e8e8adeac79a34e02c01",
+    "manifest_files": 54,
+    "manifest_sha256_checks": "all root and nested entries matched"
+  },
+  "fresh_python_replay": {
+    "environment": "temporary copied handoff; PYTHONDONTWRITEBYTECODE=1; OPENBLAS/OMP/MKL/NUMEXPR threads=1",
+    "checks": [
+      {
+        "name": "growing-transfer",
+        "status": "PASS",
+        "general_checks": 18,
+        "pell_checks": 6,
+        "source_sha256": "a69861a2becd09cc16ace3feddae3dba8fc82cf4cb8d068fe80a0f7bce8cd210"
+      },
+      {
+        "name": "moment-controls",
+        "status": "PASS",
+        "symbolic_orders": 20,
+        "repeated_clock_cases": 6,
+        "simple_split_cases": 3,
+        "moment_cases": 18,
+        "source_sha256": "37b83f877d4eb0eb81f675eeed1b261d3e94fac792fd4c753b56f9fabbc4e49e"
+      },
+      {
+        "name": "three-orientation",
+        "status": "PASS",
+        "finite_cases": 21,
+        "max_identity_error": "3.06e-14",
+        "source_sha256": "cb0900532da1451ca41a8ab3fea5dcbbfcf87f52dcd2c46a062335f2a0a7dc1d"
+      },
+      {
+        "name": "fixed-model-symmetries",
+        "status": "PASS",
+        "finite_dimensions": [
+          19,
+          41,
+          81,
+          161
+        ],
+        "source_sha256": "1659c8e931f42d9629be2c3c1d7f00ba6d6aeba38faa663d65a2edfc6bad001f"
+      },
+      {
+        "name": "full-symbol-crossover",
+        "status": "PASS",
+        "exact_variance": "1650797/4000000",
+        "source_sha256": "66932b0283eea83071828319e6967fe85c9f13313f70715de1651fb67d995ea6"
+      },
+      {
+        "name": "fourier-line-rigidity",
+        "status": "PASS",
+        "exact_orbit_identities": 750,
+        "recurrence_cases": 520,
+        "source_sha256": "236b45aed46b90719496157b52c13fb6a0cd8d41827a0176f8ff64c01fe40e29"
+      }
+    ]
+  },
+  "wolfram": {
+    "fresh_execution": false,
+    "note": "Saved Wolfram source/results were covered by verified handoff manifests; they were not rerun in this environment."
+  },
+  "boundary": "Finite/symbolic replay does not prove the analytic asymptotic statements or fixed-tau BGS."
+}

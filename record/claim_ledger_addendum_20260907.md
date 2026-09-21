@@ -72,7 +72,7 @@ E_+(A)-(K-1)^4/p
 | Uniform curve point bound and resulting global energy theorem | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | Corvaja--Zannier JEMS 2013 is the external input |
 | Same curve exponent with no odd-order or subgroup-size restriction | **EXACT + EXTERNAL-THEOREM** | strengthens the older project Makarychev--Vyugin route; it does not improve the `8/3` exponent |
 | Annihilator-character decomposition, Parseval reduction, exact centered inequality above | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_fourier_hybrid.md`; Python and independent C++20 exact implementations |
-| Pointwise Fourier bound `|Ahat(q)|<=2*((m-1)sqrt(p)+1)/m` | **EXACT + EXTERNAL-WEIL** | project-internal character algebra plus classical mixed Weil/Deligne estimate `|T_chi(q)|<=2sqrt(p)` |
+| Pointwise Fourier bound `abs(Ahat(q))<=2*((m-1)sqrt(p)+1)/m` | **EXACT + EXTERNAL-WEIL** | project-internal character algebra plus classical mixed Weil/Deligne estimate `|T_chi(q)|<=2sqrt(p)` |
 | Hybrid centered error `<< min(pK,K^(8/3)+K^4/p)` | **EXACT + EXTERNAL-THEOREMS** | combines the preceding Fourier and genus-one bounds |
 | Strict exponent improvement over `K^(8/3)` when `K=p^(alpha+o(1))`, `alpha>3/5` | **EXACT consequence** | Fourier branch is `K^(1+1/alpha+o(1))`; this is dense-regime only |
 | Centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` uniformly in the sparse/intermediate arithmetic regime | **OPEN** | neither the genus-one worst-curve theorem nor complete mixed-Weil cancellation closes this range |
@@ -88,7 +88,7 @@ The global-curve dated exact certificate covers every subgroup order `K>=3` occu
 | For every fixed finite-mode phase-insensitive Gaussian product channel with positive gains and at least one strictly noisy mode, inaccessible environment and no pre-channel encoding, moment-class input tomography has minimax expected input trace-distance risk `Theta((log B)^(-beta/2))`, even against collective output POVMs | **EXACT** | randomized product homodyne supplies the upper order; fixed channel parameters |
 | Corresponding deterministic inverse modulus is `Theta((log(1/delta))^(-beta/2))` | **EXACT** | fixed nonzero channel noise |
 | At 50% pure loss, the explicit `n=128` known pair has optimal collective-output 75% threshold `3e39 < B_75 <= 4e39` | **EXACT + FINITE-CERTIFICATE** | known binary pair |
-| Uniform pure-loss two-state approximation `|D-sqrt(1-exp(-4t))| <= 5ut+sqrt(u(43t+8sqrt(t)))`, `t=Bu eta^n`, and the critical penalty `eta^{-n}` | **EXACT + FINITE-REGRESSION** | `mathematics/pure_loss_discrimination.md`; Python and independent C++ scalar audits |
+| Uniform pure-loss two-state approximation `abs(D-sqrt(1-exp(-4t))) <= 5ut+sqrt(u(43t+8sqrt(t)))`, `t=Bu eta^n`, and the critical penalty `eta^{-n}` | **EXACT + FINITE-REGRESSION** | `mathematics/pure_loss_discrimination.md`; Python and independent C++ scalar audits |
 | Matching full moment-class minimax transition when physical channel noise vanishes with `B` | **OPEN** | binary-pair theorem is not a full tomography minimax theorem |
 
 ## D. Verification, formalization and publication boundary
