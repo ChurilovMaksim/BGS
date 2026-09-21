@@ -133,7 +133,7 @@ def local_jet():
     relation=(lam**2+lam**-2)/2
     assert sp.simplify(resonant.subs(a**2,relation)) == 0
     pure=sp.expand(bracket).coeff(u,6)
-    assert sp.simplify(pure)==8*a*(lam**2-lam**4)
+    assert sp.simplify(pure-8*a*(lam**2-lam**4)) == 0
     return {"resonant_u3z3": "0 under a^2=(lambda^2+lambda^-2)/2",
             "u6": "8*a*(lambda^2-lambda^4)"}
 
