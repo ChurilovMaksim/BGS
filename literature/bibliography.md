@@ -220,3 +220,17 @@ Search scope: web queries for BGS, rigorous spectral statistics and
 band-limited Schwartz correlation extension on September 8, 2026. The two
 internal extensions in this pass are self-contained; this bounded search does
 not establish their global novelty.
+
+
+## Recovery clarification, 20 September 2026
+
+For the elliptic off/off proof, BLV arXiv:0804.1425v2 Theorems 1.3--1.4
+supply arithmetic openness; Lemma 4.1 supplies the commutator congruence
+subgroup inclusion used to pass to geometric irreducibility. Its proof is
+sketched by reference. FKM arXiv:1210.0851v5 Lemma 3.5 and its proof were
+checked for the common smooth open; v1 was unavailable in this pass. In
+that paper purity of a middle extension is defined on its lisse locus.
+The explicit singular-stalk wording in the recovered proof makes that
+convention transparent. These are source-dependent clarifications, not
+new monodromy or quasi-orthogonality theorems. See
+[recovery audit](../record/recovery_audit_20260920.md).

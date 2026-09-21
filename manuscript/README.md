@@ -27,6 +27,12 @@ Old standalone article `.tex/.pdf` copies are intentionally absent from the curr
 
 The scientific claim-status authority is `../record/claim_ledger.md`; the source-consolidation map is `../record/consolidation_map.json`.
 
+The 21 September fixed-map continuation is maintained directly as
+`unified_sections/research_20260921.tex` and is included immediately after
+the generated fixed-map frontier.  Its detailed theorem statements live in
+`../mathematics/`; the TeX section is a publication summary, not a second
+claim authority.
+
 The fixed-map frontier chapter is generated from
 `../mathematics/fixed_map_resolvent_frontier.md` by
 `computations/maintenance/sync_fixed_map_section.py`. Use `--check` to detect

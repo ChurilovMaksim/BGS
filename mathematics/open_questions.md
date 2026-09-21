@@ -52,6 +52,16 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The 21 September continuation narrows the loop-equation route without closing
+it.  Exact moment inequalities strengthen the first two mixed levels, and a
+second orientation ((w,w,v)) yields a strictly stronger conditional
+differential barrier.  Conversely, repeated-clock spectra show that
+arbitrarily many one-upper tests ((w,v,\ldots,v)) at one selected height can
+all vanish while the pair statistic remains non-CUE.  Hence any successful
+route must control the relevant orientations and varying off-real arguments,
+not merely one residual row.
+
+
 The short-return necessary condition is now explicit in
 `return_trace_obstruction.md`: an ergodic intensity-one local limit requires
 all normalized sublinear-time traces to vanish, and mesoscopic empirical
@@ -122,6 +132,20 @@ full point-process or spacing law require separately stated hypotheses.
 
 ## D. Positive microscopic BGS universality for a natural fixed map
 
+For the prescribed frozen model, the ordinary midpoint symbol is now derived
+exactly from the raw Weyl convention.  Its classical map is analytic Anosov,
+has only power (C^1) commuters, has no (C^1) reversor, and is not
+(C^1)-conjugate to the relevant affine model in the proved small-coupling
+range containing the actual (\tau/(2\pi)).  Thus smooth inherited classical
+symmetry is no longer a plausible missing explanation.  This does not rule
+out (N)-dependent quantum arithmetic structure.
+
+The full-symbol odd-Pell crossover also proves that bounded
+(|\epsilon_K|\sqrt K) is incompatible with the CUE pair transform.  The
+actual frozen strength eventually escapes that obstruction, so the theorem
+locates rather than closes the hard regime.
+
+
 The harmonic-transition theorem realizes circle-graphon global laws,
 including a free semicircular endpoint, in the same fixed Pell cat map.
 It varies and samples the observable frequency up to $\sqrt N$. It does not
@@ -160,6 +184,14 @@ So the separated-support pointwise-zero mechanism cannot occur for a nonconstant
 {g,C_A g} != 0,
 u real analytic.                                                (*)
 ```
+
+A complete infinite-dimensional subfamily is now closed: for every
+Fourier-line observable (g(x)=G(v\cdot x)) in the stated (H^{1+\beta})
+coercive range, the 21 September theorem gives a sharp positive orbit-sum
+bound and excludes an (L^2) coboundary.  In particular (H^{3/2}) positivity
+holds for every such line when (|\operatorname{tr}A|\ge6).  An exact local
+polynomial example simultaneously shows that fixed-point Taylor jets alone
+cannot settle the global periodic equation.
 
 The remaining question is therefore sharply reduced:
 

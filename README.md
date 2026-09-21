@@ -19,12 +19,23 @@ Its extension quantifies intensity loss, proves a sharp bound for ergodic
 local limits among abstract spectra, and shows why the same return law can
 coexist with different statistics after unfolding by the local density.
 
+The 20--21 September continuation adds a theorem excluding smooth classical
+centralizers/reversors for the actual frozen model, a full-symbol odd-Pell
+Gaussian crossover with exact variance `1650797/4000000`, a stronger
+three-orientation mixed-loop barrier, and sharp resonance coercivity on every
+Fourier-line (H^{1+\beta}) class in its stated positive-coercivity range.
+These advances remove several candidate obstructions but do not provide the
+missing Heisenberg-scale quantum cancellation estimate.
+
 **Microscopic BGS universality remains open.** The analytic results are project
 proofs with limited internal review; external priority and external referee
 validation have not been established. Lean checks a smaller algebraic and
 finite layer. Numerical experiments do not certify asymptotic theorems.
 
 ## Start here
+
+- [Final recovery/integration audit](record/final_research_handoff_20260921.md): reconciles the late handoff, old PRs, replay status, and the remaining target.
+- [Recovery audit](record/recovery_audit_20260920.md): reconciled the preceding chat/repository state and recovered omitted amendments.
 
 - [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
 - [Reproducible fixed-map supplement](supplement/fixed_map/README.md): recovered proofs, Python/C++/Wolfram sources and finite evidence; [current verification review](record/fixed_map_publication_20260920.md).
@@ -76,6 +87,7 @@ To audit and replay the recovered fixed-map research:
 
 ```sh
 python computations/maintenance/verify_fixed_map_supplement.py
+python computations/verification/bgs_20260921_regression.py --output build/bgs-20260921-regression.json
 ```
 
 This writes fresh reports to `build/fixed-map-replay/` and preserves the

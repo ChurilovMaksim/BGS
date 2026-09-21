@@ -43,7 +43,13 @@ The current small-amplitude return estimates therefore concern a vanishing
 classical perturbation. This distinction matters when comparing with BGS.
 
 The broader corpus contains complementary Cayley, Pell/Floquet, harmonic
-transition, and fixed-strength locality results. Their hypotheses remain
+transition, fixed-strength locality, and the 21 September fixed-model
+continuation.  For the prescribed frozen operator, the latter now excludes
+nontrivial smooth classical commuting symmetries and reversors, proves an
+odd-Pell full-symbol crossover obstruction, strengthens the conditional
+mixed-loop lower barrier using a second orientation, and proves sharp
+resonance coercivity on every Fourier-line class.  None of these statements
+supplies the still-missing fixed-strength Heisenberg-time trace estimate. Their hypotheses remain
 separate; combining them in one manuscript does not supply a missing theorem.
 See the [results index](mathematics/results.md).
 
@@ -73,11 +79,11 @@ conditional local process, beyond its conditional first moment.
    proof, especially the capped-phase cluster estimate and the centered
    counterexample, against explicit source theorems. Success means a
    referee-checkable dependency chain and a precise comparison with prior work.
-2. **Transfer beyond arithmetic linear dynamics.** Establish a quantitative
-   statement for a specified nonlinear perturbation with fixed nonzero
-   classical strength. Success requires uniform error estimates in the actual
-   perturbation regime; merely substituting a growing quantum amplitude into
-   a small-amplitude theorem does not qualify.
+2. **Frozen-model Heisenberg dynamics.** The classical map attached to the
+   prescribed operator is now explicitly identified and its smooth classical
+   symmetry explanation is excluded.  The remaining transfer problem is
+   quantum: obtain uniform estimates in the actual fixed-(\tau) regime.
+   Small/growing-amplitude comparison theorems stop far before that scale.
 3. **Heisenberg-time spectral comparison.** Prove the needed desymmetrized
    joint-trace comparison on every compact Fourier support. The existing
    deterministic bridge explains how such input would imply microscopic

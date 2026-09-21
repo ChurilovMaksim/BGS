@@ -78,3 +78,41 @@ This is a larger quantum-exponent range than \(\sqrt N K^{-1/4}\), but only for 
 For \(g=2\cos(2\pi x_1)\), direct differentiation gives \(r_g=4\pi(B_{(2,4)}-B_{(4,4)})\) at the symbol level. Its variance is \(64\pi^2\), recovering the special residual parameter b=8pi t. For an ordinary mode f on the original orbit the covariance is zero, recovering (SC.R4) as a sum of two terms. In contrast f=\(r_{g}\) gives \(\sigma_{af+tr_g}^2=(a+t)^2\sigma_{r_g}^2\) and the cancellation line a=-t. An ordinary term cannot universally be treated as independent noise.
 
 The verifier uses a finite multimode real g including an odd-ab frequency, constructs \(r_{g}\) by exact rational Fourier convolution before multiplying by \(\pi\), and checks the physical Weyl sign, Egorov covariance, (SC.R8)--(SC.R11), and compensated pinning by dense matrix calculations. These are numerical falsification tests of finite identities and bounds, not an asymptotic proof. The analytic regularity and cutoff arguments above are not formalized in Lean. Neither compensation nor the known residual mechanism is presented as a newly invented general principle.
+
+
+\subsection{Recovered averaged Heisenberg-window consequence}
+For odd $K\ge3$, let $D=Kn$ and suppose a unitary spectrum has exactly
+$n$ phases in each arc of radius $\eta\le1/(4K)$ around $j/K$.
+For $M\ge1$ consecutive integer times $I$, set $L=\max_{\ell\in I}|\ell|$.
+Writing $H_h=\sum_{r=1}^h r^{-1}$, the exact finite estimate is
+\[
+ \left|\frac1M\sum_{\ell\in I}\frac{|\operatorname{Tr}U^\ell|^2}{D}-n\right|
+ \le 8\pi^2n L^2\eta^2+\frac{2D}{M}H_{(K-1)/2}.
+\]
+Indeed, ordered pairs within a cluster contribute between
+$n-8\pi^2 nL^2\eta^2$ and $n$, by $1-\cos t\le t^2/2$.
+For two clusters at cyclic distance $h$, phase separation is at least
+$h/(2K)$, so the averaged geometric sum is at most $K/(Mh)$.
+Summing over ordered clusters and their $n^2$ ordered level pairs gives
+the second term. The argument requires no independence.
+
+For the inversion-even compensated family in (SC.R5), put
+$D=d_N=(N-1)/2$ and
+$\delta_N=C_g|\varepsilon|^3/N^2+D_g\varepsilon^2/N^3$.
+If $\varepsilon=o(N^{1/3})$, then $N\delta_N\to0$.
+The norm-small straight homotopy from $U_0$ to the gauged propagator
+preserves each contour projection rank in disjoint disks around the
+$K$ roots. Thus each cluster has rank $n=d_N/K$ and radius at most
+$\eta=\delta_N/4$ in $\mathbb R/\mathbb Z$.
+For fixed $0<a<b$ and $I_N=\mathbb Z\cap[a d_N,b d_N]$, the bound gives
+\[
+ \frac1{\# I_N}\sum_{\ell\in I_N}
+       \frac{|\operatorname{Tr}_{-}((\mathcal V^{\rm comp}_\varepsilon)^\ell)|^2}{d_N}
+   =\frac{d_N}{K}(1+o(1)).
+\]
+Here the trace denotes the trace of the $\ell$th power on the odd sector.
+The relative error is $O((d_N\delta_N)^2+K\log K/d_N)$; the Pell
+sequence has $K=O(\log N)$. This is an obstruction for the engineered
+vanishing-strength family, conditional on its parent operator estimate.
+It supplies no fixed-strength BGS limit. The full proof and finite
+verification are in \path{compensated_heisenberg_trace_control.md}.

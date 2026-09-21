@@ -1,5 +1,22 @@
 # Claim ledger
 
+## 21 September 2026 — recovered fixed-map continuation
+
+The statements below were recovered from the final conversation handoff,
+hash-audited, and their supplied Python checks were freshly rerun.  “Project
+proof” is not external referee acceptance; finite replay is not an asymptotic
+proof and does not promote the fixed-(\tau) BGS target.
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| Correct ordinary-midpoint symbol for the raw frozen generator; resulting (G_\kappa=S\circ\Phi_g^\kappa) has only power (C^1) commuters, no (C^1) reversor, and no relevant affine (C^1) conjugacy for (0<|\kappa|\le10^{-12}) | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_symmetry_theorem.md`; does not exclude quantum (N)-dependent symmetries |
+| Odd-Pell full-symbol Gaussian crossover, exact variance (1650797/4000000), and necessary ( |\epsilon_K|\sqrt K\to\infty) for CUE pair behaviour in that family | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_pell_crossover.md`; frozen strength is outside the proved bounded window |
+| Exact moment inequalities, stronger first-two-level interval, repeated-clock one-upper-loop falsifier, and growing perturbation RMS transfer | **EXACT IDENTITIES / PROJECT ASYMPTOTIC CONSEQUENCES + FRESH REGRESSION** | `mathematics/fixed_map_moment_control_and_transfer.md` |
+| Three-orientation residual decay implies the explicit (1/64) differential lower barrier for (L_N(s)) | **CONDITIONAL PROJECT THEOREM + FRESH FINITE-REGRESSION** | `mathematics/three_orientation_resolvent_barrier.md`; hypotheses unproved for frozen (U_N) |
+| Fourier-line resonance coercivity with sharp (\kappa_\beta), exact (\kappa_1=\sqrt{(T-2)/(T+2)}), and (H^{3/2}) positivity for trace magnitude at least 6 | **PROJECT PROOF + FRESH EXACT REGRESSION** | `mathematics/fourier_line_resonance_coercivity.md`; arbitrary two-dimensional analytic symbols remain open |
+| Strict-minimum local polynomial with nonzero bracket that is nevertheless a polynomial coboundary | **EXACT LOCAL CONSTRUCTION + FRESH SYMBOLIC REGRESSION** | `mathematics/local_jet_resonance_obstruction.md`; not a periodic torus counterexample |
+| Microscopic BGS / fixed-(\tau) mixed-resolvent or Heisenberg joint-trace estimate | **OPEN** | none of the recovered continuation results supplies this estimate |
+
 This file is the repository-wide status authority. Historical commits, old
 manuscript text, exploratory notes and finite experiments may contain stronger
 language; this file wins.
@@ -23,6 +40,22 @@ previously unpublished work without promoting its open hypotheses.
 The [publication review](fixed_map_publication_20260920.md) records the
 actual verification scope. Dated snapshot statements about earlier
 nonpublication and old execution states are historical provenance.
+
+## Recovered amendments, 20 September 2026
+
+Self-review of a previously uncommitted workspace patch; see
+[recovery audit](recovery_audit_20260920.md). The newer fixed-map work above
+and the positive-measure bandlimit extension remain authoritative.
+
+| Claim | Status | Boundary |
+|---|---|---|
+| Largest split divisor bound K^(4+o(1)) excludes exceptional primes | Correct only with a fixed power margin | K<=p^(1/4-epsilon), fixed epsilon>0; does not imply the full little-o regime |
+| Separated-cluster averaged form-factor estimate (H8) | PROJECT PROOF + SELF-REVIEW + FINITE-REGRESSION | Odd K>=3, D=Kn, phase radius <=1/(4K); finite unitary spectra |
+| Compensated-family window mean (H9) equals (d_N/K)(1+o(1)) | CONDITIONAL ON PROJECT PARENT ESTIMATE + SELF-REVIEW | Inversion-even C7 symbol, epsilon=o(N^(1/3)), specified Pell subsequence; vanishing classical strength |
+| Matching traces for 0<abs(m)<N/2 does not determine pair statistics | EXACT COUNTEREXAMPLE | Even N; clock versus doubled half-clock; abstract spectra |
+| Elliptic monodromy argument and weight conventions | SOURCE-DEPENDENT CLARIFICATION | BLV v2 arithmetic image plus commutators; purity on the lisse locus, bounded omitted stalks |
+
+These recoveries do not prove fixed-coupling BGS. No new Lean build is claimed.
 
 ## Status vocabulary
 

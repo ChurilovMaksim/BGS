@@ -15,7 +15,7 @@ below describe September 7 only.
 | For every hyperbolic `A in SL(2,Z)` and every nonconstant real trigonometric polynomial `g`, the second bracket variance `Gamma_A(g)` is strictly positive | **EXACT + FINITE-REGRESSION** | `mathematics/extremal_resonance_nondegeneracy.md`; equivalent all-lag theorem in `manuscript/unified_sections/temporal_resonance.tex` |
 | There is an exposed frequency `k=u+Av` with unique support decomposition, nonzero determinant and no nonzero `A`-iterate in `V+AV` | **EXACT + FINITE-REGRESSION** | support-geometric proof; Python exact quadratic-field witness generator plus independent C++ replay |
 | Every fixed real mean-zero Fourier box has a positive coercivity minimum | **EXACT** | finite-dimensional compactness; no uniform lower bound as bandwidth grows |
-| If `g=p+r` and `E=M_0(p)M_A(r)+M_0(r)M_A(p)+M_0(r)M_A(r)<D=|det(u,Av)||phat(u)phat(v)|`, then `Gamma_A(g)>=2 pi^2(D-E)^2` | **EXACT + FINITE-REGRESSION** | `mathematics/resonance_wiener_stability.md`; exact integer regression in `computations/verification/resonance_wiener_stability.py` |
+| If `g=p+r` and `E=M_0(p)M_A(r)+M_0(r)M_A(p)+M_0(r)M_A(r)<D=abs(det(u,Av))*abs(phat(u)*phat(v))`, then `Gamma_A(g)>=2 pi^2(D-E)^2` | **EXACT + FINITE-REGRESSION** | `mathematics/resonance_wiener_stability.md`; exact integer regression in `computations/verification/resonance_wiener_stability.py` |
 | In the natural first-moment weighted-Wiener Banach space, `{Gamma_A>0}` is open and dense and `{Gamma_A=0}` is closed nowhere dense | **EXACT** | `mathematics/generic_wiener_resonance.md`; continuity of the orbit-sum map plus density of finite truncations |
 | The same open-dense statement holds in every fixed analytic Wiener strip | **EXACT** | continuous embedding into weighted Wiener space; finite polynomials dense |
 | The same open-dense statement holds in `H^s(T^2;R)` for every `s>2` and in `C^infinity(T^2;R)` | **EXACT** | Cauchy--Schwarz gives continuous `H^s -> X_A` embedding for `s>2`; smooth conclusion follows through any such Sobolev norm |
@@ -72,7 +72,7 @@ E_+(A)-(K-1)^4/p
 | Uniform curve point bound and resulting global energy theorem | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | Corvaja--Zannier JEMS 2013 is the external input |
 | Same curve exponent with no odd-order or subgroup-size restriction | **EXACT + EXTERNAL-THEOREM** | strengthens the older project Makarychev--Vyugin route; it does not improve the `8/3` exponent |
 | Annihilator-character decomposition, Parseval reduction, exact centered inequality above | **EXACT + FINITE-REGRESSION** | `mathematics/cayley_fourier_hybrid.md`; Python and independent C++20 exact implementations |
-| Pointwise Fourier bound `|Ahat(q)|<=2*((m-1)sqrt(p)+1)/m` | **EXACT + EXTERNAL-WEIL** | project-internal character algebra plus classical mixed Weil/Deligne estimate `|T_chi(q)|<=2sqrt(p)` |
+| Pointwise Fourier bound `abs(Ahat(q))<=2*((m-1)sqrt(p)+1)/m` | **EXACT + EXTERNAL-WEIL** | project-internal character algebra plus classical mixed Weil/Deligne estimate `abs(T_chi(q))<=2sqrt(p)` |
 | Hybrid centered error `<< min(pK,K^(8/3)+K^4/p)` | **EXACT + EXTERNAL-THEOREMS** | combines the preceding Fourier and genus-one bounds |
 | Strict exponent improvement over `K^(8/3)` when `K=p^(alpha+o(1))`, `alpha>3/5` | **EXACT consequence** | Fourier branch is `K^(1+1/alpha+o(1))`; this is dense-regime only |
 | Centered pointwise target `E_+(A)=(K-1)^4/p+O(K^(2+o(1)))` uniformly in the sparse/intermediate arithmetic regime | **OPEN** | neither the genus-one worst-curve theorem nor complete mixed-Weil cancellation closes this range |
@@ -88,7 +88,7 @@ The global-curve dated exact certificate covers every subgroup order `K>=3` occu
 | For every fixed finite-mode phase-insensitive Gaussian product channel with positive gains and at least one strictly noisy mode, inaccessible environment and no pre-channel encoding, moment-class input tomography has minimax expected input trace-distance risk `Theta((log B)^(-beta/2))`, even against collective output POVMs | **EXACT** | randomized product homodyne supplies the upper order; fixed channel parameters |
 | Corresponding deterministic inverse modulus is `Theta((log(1/delta))^(-beta/2))` | **EXACT** | fixed nonzero channel noise |
 | At 50% pure loss, the explicit `n=128` known pair has optimal collective-output 75% threshold `3e39 < B_75 <= 4e39` | **EXACT + FINITE-CERTIFICATE** | known binary pair |
-| Uniform pure-loss two-state approximation `|D-sqrt(1-exp(-4t))| <= 5ut+sqrt(u(43t+8sqrt(t)))`, `t=Bu eta^n`, and the critical penalty `eta^{-n}` | **EXACT + FINITE-REGRESSION** | `mathematics/pure_loss_discrimination.md`; Python and independent C++ scalar audits |
+| Uniform pure-loss two-state approximation `abs(D-sqrt(1-exp(-4t))) <= 5ut+sqrt(u(43t+8sqrt(t)))`, `t=Bu eta^n`, and the critical penalty `eta^{-n}` | **EXACT + FINITE-REGRESSION** | `mathematics/pure_loss_discrimination.md`; Python and independent C++ scalar audits |
 | Matching full moment-class minimax transition when physical channel noise vanishes with `B` | **OPEN** | binary-pair theorem is not a full tomography minimax theorem |
 
 ## D. Verification, formalization and publication boundary

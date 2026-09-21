@@ -51,3 +51,11 @@ Run `python computations/maintenance/verify_fixed_map_supplement.py` from
 the root for inventory/syntax checks and 28 isolated replays. The runner
 keeps generated outputs under `build/` and does not overwrite evidence.
 This complements the existing whole-workspace runner.
+
+The late 20--21 September continuation also has a compact exact regression
+gate at `verification/bgs_20260921_regression.py`.  It checks the
+three-orientation algebra, Fourier-line recurrence identities, the frozen
+full-symbol variance, and the local-jet negative control.  It is included
+automatically in a complete `verify_workspace.py` run.  Its scope is exact
+finite/symbolic regression only, not proof of the analytic asymptotic
+theorems or fixed-`tau` BGS.

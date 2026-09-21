@@ -185,6 +185,27 @@ C_(2,N)(U;phi)
 If `phihat` is supported in `[-sigma,sigma]`, the sum still contains `Theta(N)`
 trace powers.
 
+### A concrete failure of reconstruction from short traces
+
+The insufficiency can be proved independently of the Fourier identity. Let
+N=2M. Compare the spectrum consisting of all N-th roots once with the
+spectrum consisting of all M-th roots twice. For both unitary matrices,
+
+```text
+T_U(n)=0,                       1<=|n|<M,
+T_U(0)=N.
+```
+
+Nevertheless, for any smooth test phi supported in (-1/2,1/2) with phi(0)=1,
+their C_(2,N) statistics are respectively 0 and 1. In the first spectrum
+every distinct unfolded difference is a nonzero integer. In the second,
+the only contributing pairs are the two ordered distinct-label pairs at
+each repeated root: there are 2M=N of them, all at difference zero.
+Periodization introduces no further term in that support. Thus even exact
+agreement of all traces throughout this linear window does not determine
+the microscopic pair statistic. In particular it rules out reconstruction
+from only fixed powers or an o(N) window without additional assumptions.
+
 ## 5. A precise RMT-comparison closure criterion
 
 Let `E_N` be any averaging functional appropriate to the deterministic quantum

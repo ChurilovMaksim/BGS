@@ -1,5 +1,23 @@
 # Current results and exact scope
 
+## Fixed-map continuation, 21 September 2026
+
+**Project proofs with fresh exact/finite replay; external priority and referee
+validation unestablished.**  The late fixed-map handoff adds the following
+maintained results while leaving microscopic BGS open:
+
+| Result | Established scope | Boundary |
+|---|---|---|
+| [Actual frozen-model symmetry theorem](fixed_model_symmetry_theorem.md) | Exact raw-to-midpoint Weyl dictionary; analytic Anosov classical map; trivial (C^1) centralizer, no (C^1) reversor, no relevant affine (C^1) conjugacy for (0<|\kappa|\le10^{-12}) | Does not exclude (N)-dependent quantum commutants or prove trace cancellation |
+| [Full-symbol odd-Pell crossover](fixed_model_pell_crossover.md) | Gaussian moment law for (\sqrt K\,\overline A_K), exact variance (1650797/4000000), and necessary escape ( |\epsilon_K|\sqrt K\to\infty) for CUE pair behaviour in the stated family | Frozen (\epsilon_K=\tau N_K) lies beyond the proved crossover window |
+| [Moment controls and transfer](fixed_map_moment_control_and_transfer.md) | Stronger two-level moment interval, exact repeated-clock loop-test falsifier, and RMS perturbation-transfer estimate | Conditional/asymptotic inputs do not reach fixed (\tau) |
+| [Three-orientation barrier](three_orientation_resolvent_barrier.md) | Under three normalized mixed-residual hypotheses, explicit lower barrier with additive (s^3/[64(1+s^2)^{7/2}]) | Residual decay for the actual propagator is still unproved |
+| [Fourier-line resonance coercivity](fourier_line_resonance_coercivity.md) | Sharp lower constant on every real Fourier-line (H^{1+\beta}) class when (\kappa_\beta>0); (\kappa_1=\sqrt{(T-2)/(T+2)}), hence (1/\sqrt2) for the stated project convention; (H^{3/2}) positivity for (|\operatorname{tr}A|\ge6) | Does not solve the full two-dimensional analytic cohomological equation |
+| [Local jet obstruction](local_jet_resonance_obstruction.md) | Exact polynomial local coboundary with a strict local minimum | Local model only; shows why fixed-point jets cannot settle the torus problem |
+
+The [final integration audit](../record/final_research_handoff_20260921.md)
+records the recovered archive hashes, fresh replay and old-PR disposition.
+
 ## Fixed-family reductions, 20 September 2026
 
 [The fixed-map chapter](fixed_map_resolvent_frontier.md) consolidates
@@ -10,6 +28,18 @@ residuals remain unproved for the fixed map, and the interval does not
 identify the CUE value. The full all-order criterion is conditional on an
 external loop-characterization theorem and a still-open model estimate.
 All recovered proof and computational records are in the indexed supplement.
+
+## Recovered finite-window result and scope corrections
+
+The [compensated-family note](compensated_heisenberg_trace_control.md),
+(H8)--(H9), gives an explicit separated-cluster bound and its averaged
+Heisenberg-window consequence at epsilon=o(N^(1/3)). The parent operator
+estimate, inversion symmetry and vanishing classical strength remain inputs.
+The [trace bridge](trace_to_local_statistics_bridge.md) now includes an exact
+short-trace counterexample while retaining its later bandlimit extension.
+The Cayley support proposals imply exclusion with a fixed power margin;
+K^(4+o(1)) is insufficient for the full K=o(p^(1/4)) regime.
+See [recovery audit](../record/recovery_audit_20260920.md).
 
 ## Short returns and ergodic local limits
 

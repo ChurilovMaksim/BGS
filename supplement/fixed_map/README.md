@@ -21,6 +21,12 @@ finite evidence recovered from the previously unpublished research of
 | Mixed loops | [Full criterion](resolvent-flow/loop_bridge.md), [low-order bounds](resolvent-flow/low_order_bounds.md) | Conditional all-order correlation criterion and exact finite identities |
 | Entropy comparison | [Obstruction](resolvent-flow/entropy_obstruction.md) | Global entropy cannot be small while preserving one spectrum at vanishing microscopic RMS distance |
 
+The [20--21 September continuation](continuation-20260921/README.md) indexes
+the late handoff now promoted into maintained theorem notes: fixed-model
+symmetry exclusion, full-symbol Pell crossover, moment/transfer controls,
+the three-orientation barrier, Fourier-line coercivity, and the local-jet
+negative control.
+
 The remaining `echo-research`, `fixed-map-audit`, and `time-insertion`
 folders retain preliminary diagnostics and their limitations. They are not
 additional asymptotic theorems.
