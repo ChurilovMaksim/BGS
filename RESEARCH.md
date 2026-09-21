@@ -47,10 +47,23 @@ transition, fixed-strength locality, and the 21 September fixed-model
 continuation.  For the prescribed frozen operator, the latter now excludes
 nontrivial smooth classical commuting symmetries and reversors, proves an
 odd-Pell full-symbol crossover obstruction, strengthens the conditional
-mixed-loop lower barrier using a second orientation, and proves sharp
-resonance coercivity on every Fourier-line class.  None of these statements
-supplies the still-missing fixed-strength Heisenberg-time trace estimate. Their hypotheses remain
-separate; combining them in one manuscript does not supply a missing theorem.
+mixed-loop lower barrier, and proves sharp resonance coercivity on every
+Fourier-line class.
+
+A later forensic recovery of the 14--16 September working dossiers also
+restores genuine **fixed-strength Heisenberg-time** structure for this same
+frozen operator: exact raw-Weyl path escape forces surviving nonidentity paths
+through polynomially many bulk modes; a corrected one-step FIO/unistochastic
+argument supplies the deterministic CUE ramp below the plateau; and the
+subsequence `N=19^k` has a pointwise hyperbolic incomplete-sum saving.
+Exact history/reconnection identities and an absolute encounter-coefficient
+envelope further isolate the remaining complete-match problem.
+
+These results still do not prove microscopic BGS.  The signed post-cyclic
+residual, plateau, genuine partner localization/uniform all-order quantum
+domination, and higher joint traces remain open.  The different return-law
+and fixed-map hypotheses remain separate; combining them in one manuscript
+does not supply those missing implications.
 See the [results index](mathematics/results.md).
 
 The [short-return obstruction](mathematics/return_trace_obstruction.md) now
@@ -79,15 +92,18 @@ conditional local process, beyond its conditional first moment.
    proof, especially the capped-phase cluster estimate and the centered
    counterexample, against explicit source theorems. Success means a
    referee-checkable dependency chain and a precise comparison with prior work.
-2. **Frozen-model Heisenberg dynamics.** The classical map attached to the
-   prescribed operator is now explicitly identified and its smooth classical
-   symmetry explanation is excluded.  The remaining transfer problem is
-   quantum: obtain uniform estimates in the actual fixed-(\tau) regime.
-   Small/growing-amplitude comparison theorems stop far before that scale.
-3. **Heisenberg-time spectral comparison.** Prove the needed desymmetrized
-   joint-trace comparison on every compact Fourier support. The existing
-   deterministic bridge explains how such input would imply microscopic
-   correlation limits, but does not provide that input.
+2. **Close the signed post-cyclic fixed-map residual.**  The actual
+   fixed-(\tau) dynamics is no longer untouched: near-mode paths escape,
+   the cyclic ramp is proved below the plateau, and fixed-complexity literal
+   reconnections have the universal flat-link power.  The decisive pair-level
+   task is to insert the available bulk/time cancellation into the full
+   signed post-cyclic residual, including genuine shadowing partners and the
+   high-complexity tail, and then control the plateau.
+3. **Upgrade pair control to the full joint-trace hierarchy.**  Once the pair
+   residual is closed, prove the desymmetrized joint-trace comparison on every
+   compact Fourier support (or the equivalent full mixed-loop criterion).
+   The existing deterministic bridge then converts that input to microscopic
+   correlation limits; it does not provide the input itself.
 
 A useful outcome may be a new theorem or a rigorous obstruction that rules out
 a proposed transfer mechanism. No advance is labeled a breakthrough solely

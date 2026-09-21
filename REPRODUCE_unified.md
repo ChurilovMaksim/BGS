@@ -96,3 +96,33 @@ scripts, retain their dated evidence and are not counted as fresh runs.
 The new Lean kernel is included in the pinned `lake build`; its current
 execution status must be read separately from earlier 16-module reports.
 See [the publication review](record/fixed_map_publication_20260920.md).
+
+
+# Recovered fixed-map Heisenberg direct attack, 21 September 2026
+
+The complete workspace runner discovers the recovered gates automatically.
+For a focused replay run:
+
+```sh
+python computations/verification/bgs_heisenberg_path_audit.py \
+  --output build/bgs-heisenberg-path-audit.json
+python computations/verification/hyperbolic_19adic_audit.py \
+  --output build/hyperbolic-19adic-audit.json
+python computations/verification/fixed_map_unistochastic_ramp_audit.py
+python computations/verification/fixed_map_classical_sum_rule_audit.py
+python computations/verification/quantum_history_reconnection_audit.py
+python computations/verification/unitary_encounter_envelope_audit.py
+```
+
+These commands check the load-bearing exact/finite algebra of the recovered
+raw-Weyl path escape, `19^k` arithmetic, corrected branch witness/cyclic
+identity, periodic counts, history/reconnection identities and encounter
+envelope.  They do **not** machine-prove the external fixed-time FIO,
+non-archimedean van der Corput, analytic Ruelle-trace, or periodic-orbit
+combinatorial source theorems.
+
+The forensic source/status map is
+`record/verified_state_reconciliation_20260921.md`.  In particular, the v9
+two-frequency Bourgain/sliding theorem is retracted; the repaired cyclic ramp
+is maintained only below the plateau, and the signed post-cyclic residual,
+plateau, genuine partner localization and higher joint traces remain open.

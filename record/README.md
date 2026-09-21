@@ -2,15 +2,20 @@
 
 `record/` is a compact provenance and status layer, not an archive source tree.
 
-See [the recovery audit](recovery_audit_20260920.md) for the current handoff,
-recovered amendments, verification boundary, and next mathematical obligation.
+See [the final handoff](final_research_handoff_20260921.md) for the integrated
+20--21 September state and
+[the verified-state reconciliation](verified_state_reconciliation_20260921.md)
+for the later forensic recovery of the 14--16 September BGS working dossiers.
+The earlier [recovery audit](recovery_audit_20260920.md) remains the preceding
+checkpoint, not the final status authority.
 
 ## Authoritative living status files
 
-- `claim_ledger.md` — repository-wide claim status, including the dated September 20 update;
+- `claim_ledger.md` — repository-wide claim status, including the September 20--21 recovery and repaired Heisenberg direct-attack layer;
 - `claim_ledger_addendum_20260907.md` — authoritative dated extension for later/corrected September 7 scopes; it wins over older prose in those scopes;
 - `research_routes.md` — route-level log of advances, obstructions and closure conditions; status still comes from the ledgers above;
 - `retractions.md` — false/superseded statements and failure mechanisms;
+- `verified_state_reconciliation_20260921.md` — selective promotion/quarantine map for the recovered v7--v11 and 16 September working state; historical `[PROVEN]` labels outside this reconciliation are not current authority;
 - `session_science_sync_20260907.md` — late-session byte/readback and rerun audit;
 - `session_integrity_audit_20260907.md` — repeated cross-layer integrity audit after synchronization;
 - `reconstruction.md` — source-snapshot inventory and Git preservation boundary;
