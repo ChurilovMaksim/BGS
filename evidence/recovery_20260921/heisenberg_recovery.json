@@ -1,0 +1,84 @@
+{
+  "schema": "wow-bgs-heisenberg-recovery-v1",
+  "date": "2026-09-21",
+  "status": "PASS",
+  "historical_sources": [
+    {
+      "name": "BGS_full_resolution_dossier_v7(1).md",
+      "sha256": "49c4298eadbd13d7cf561a5282471e6d800e1f02433bd6e82db8c52a1845f56f",
+      "disposition": "path-escape and all-characteristic rank core recovered after raw-Weyl re-derivation; classical-symbol layer superseded"
+    },
+    {
+      "name": "BGS_full_resolution_dossier_v9.md",
+      "sha256": "6ba8a60962417221e04a40623eb6ec2be600a0c2142867f53ae1fe0fa4638b6b",
+      "disposition": "arithmetic diagnostics retained; two-frequency Bourgain/sliding closure retracted"
+    },
+    {
+      "name": "BGS_direct_attack_v11.md",
+      "sha256": "42f5e7ce844d7584115ce48fea7c5f3138c2a3af827cda12798cc9186ae21e0d",
+      "disposition": "one-shear no-go and 19-adic direct attack recovered"
+    },
+    {
+      "name": "BGS_verified_state(1).md",
+      "sha256": "d38bcd35482a288251f981cf97ba6f68978ac811b5a92579f2cf52c9540fbfe4",
+      "disposition": "status map only; not imported wholesale"
+    },
+    {
+      "name": "bgs_v7_verification.py",
+      "sha256": "913bbd1519c438d08c4a0bee72c75e05fe20c79e9a62f66159aab1203cdb2f46",
+      "fresh_replay": "PASS"
+    },
+    {
+      "name": "bgs_v9_arithmetic_checks.py",
+      "sha256": "338e4528dd1bc5269d8b730dea207b193f002619b4fa236b89916e2fc24b3ed2",
+      "fresh_replay": "PASS; finite incomplete sums diagnostic only"
+    },
+    {
+      "name": "bgs_v10_direct_checks.py",
+      "sha256": "3c1a3999f5def76c483b6dab85ad5a28f198744e64ba3a8ef7b67ddd47a6c724",
+      "fresh_replay": "PASS"
+    },
+    {
+      "name": "bgs_v11_padic_checks.py",
+      "sha256": "8b8916fec7b813437a69d6005af86a6f9652337285f8f5f8378ace2b09d62a57",
+      "fresh_replay": "PASS"
+    }
+  ],
+  "fresh_regressions": {
+    "raw_weyl_path_escape": {
+      "status": "PASS",
+      "exact_A1": "2*sqrt(101)/25 + 1307/200",
+      "nonzero_fourier_coefficients": 32,
+      "R0": 9,
+      "qstar_approx": "4.150101100477e-78",
+      "gamma_approx": "3.393181490411",
+      "Z_gamma_approx": "0.143915507193",
+      "raw_commutator_fixtures": 96,
+      "raw_commutator_max_abs_error": "2.24e-15",
+      "encounter_rank_field_checks": 11688,
+      "tested_characteristics": [
+        2,
+        101
+      ]
+    },
+    "hyperbolic_19adic": {
+      "status": "PASS",
+      "order_checks_k": "1..7",
+      "primitive_basis_vectors_mod_19": 360,
+      "parseval_relative_error": "4.58e-16",
+      "finite_type_quadratic_fixtures": 6156,
+      "finite_type_cubic_fixtures": 324
+    }
+  },
+  "external_input": {
+    "name": "Raf Cluckers, Analytic van der Corput Lemma for p-adic and F_q((t)) Oscillatory Integrals, singular Fourier transforms, and restriction theorems",
+    "arxiv": "1001.2013",
+    "proposition": "3.3",
+    "use": "non-archimedean analytic van der Corput decay; theorem statement separately checked before promotion"
+  },
+  "retractions": [
+    "v9 two-frequency Bourgain incomplete single-sum theorem and its sliding-variable/BCD2 corollary",
+    "historical assertion that a deterministic final-map CUE contraction sub-sum had already been explicitly evaluated as min(m,N)"
+  ],
+  "boundary": "The recovered results force nontrivial Heisenberg paths into bulk Weyl modes and give deterministic time-phase cancellation on N=19^k. They do not evaluate the signed bulk contribution or prove pair/all-order BGS."
+}

@@ -84,3 +84,17 @@ The six recovered Python verifiers passed locally as described above. A compact 
 The environment used for this recovery still has no local Lean/Lake executable. Existing Lean source status is therefore unchanged: source-level audit only unless a later CI run actually compiles it.
 
 The remaining mathematical bottleneck is still a model-specific Heisenberg-scale estimate for the frozen operator: either mixed-resolvent defect decay at all required orders or an equally strong direct joint-trace comparison. Classical symmetry exclusion, positive resonance variance, weak-kick crossover obstructions, and finite regressions do not supply that estimate.
+
+
+## Post-integration forensic continuation
+
+A later same-day audit obtained older 14--16 September Library artifacts that
+were not available in the original handoff archive.  This does not invalidate
+the recovery above, but it means this record is no longer the last word on
+historical completeness.  The authoritative continuation is
+[verified_state_reconciliation_20260921.md](verified_state_reconciliation_20260921.md).
+
+That reconciliation recovered the raw-Weyl Heisenberg path-escape theorem,
+the exact/19-adic direct-attack results and the one-shear antiunitary no-go,
+while also preserving the later retractions of the v9 two-frequency Bourgain
+shortcut and the unevaluated historical “CUE contraction sector” assertion.

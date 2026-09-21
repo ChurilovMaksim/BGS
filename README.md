@@ -35,6 +35,8 @@ finite layer. Numerical experiments do not certify asymptotic theorems.
 ## Start here
 
 - [Final recovery/integration audit](record/final_research_handoff_20260921.md): reconciles the late handoff, old PRs, replay status, and the remaining target.
+- [14--16 September dossier reconciliation](record/verified_state_reconciliation_20260921.md): recovers the earlier Heisenberg-scale direct attack, promotes only repaired claims, and records later retractions.
+- [Exact fixed-map Weyl path escape](mathematics/fixed_map_weyl_path_escape.md) and [19-adic dephasing](mathematics/hyperbolic_19adic_dephasing.md): recovered direct Heisenberg-time structure; the signed CUE main term remains open.
 - [Recovery audit](record/recovery_audit_20260920.md): reconciled the preceding chat/repository state and recovered omitted amendments.
 
 - [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
@@ -88,6 +90,8 @@ To audit and replay the recovered fixed-map research:
 ```sh
 python computations/maintenance/verify_fixed_map_supplement.py
 python computations/verification/bgs_20260921_regression.py --output build/bgs-20260921-regression.json
+python computations/verification/bgs_heisenberg_path_audit.py --output build/bgs-heisenberg-path-audit.json
+python computations/verification/hyperbolic_19adic_audit.py --output build/hyperbolic-19adic-audit.json
 ```
 
 This writes fresh reports to `build/fixed-map-replay/` and preserves the

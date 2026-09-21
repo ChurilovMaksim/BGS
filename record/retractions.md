@@ -82,3 +82,25 @@ explicit second embedding of K=11,p=23, where tau=10. The inverse gcd degree
 is one, and the row gcd degree is two. A direct reflected trace-set count
 independently checks the inverse polynomial gcd. The general derivative
 identities were not changed by this finite-anchor correction.
+
+
+## Recovered BGS direct-attack corrections (21 September 2026)
+
+19. **v9 two-frequency Bourgain/sliding dephasing theorem.** The split-prime
+    phase reduction to `A lambda^j+B lambda^-j` is algebraically useful, but
+    the cited Bourgain theorem did not supply the required uniform incomplete
+    single-sum estimate from multiplicative order alone.  The advertised
+    sliding-variable/BCD2 corollary is therefore retracted.  The maintained
+    replacement is the separately proved `N=19^k` p-adic theorem.
+20. **Historical “CUE contraction sector = min(m,N)” assertion.** The CUE
+    ensemble identity `E|Tr V^m|^2=min(m,N)` is not in dispute.  What was
+    missing was an explicit deterministic sub-sum of the final two-directional
+    map and a proof that it equals that value.  Treating that main term as
+    already evaluated is withdrawn; it remains part of the signed
+    Heisenberg-scale closure problem.
+21. **Unqualified September-16 shadow-history/TUBE-SAT promotion.** The later
+    maintained audit proves the symbolic filling estimate, makes the geometric
+    periodic-pair transfer conditional on the stated equidistribution input,
+    and gives an exact coherent-history counterexample to the shortcut
+    “small positive history mass implies small coherent trace.”  The later
+    `mathematics/shadow_tube_history_bridge.md` status governs.

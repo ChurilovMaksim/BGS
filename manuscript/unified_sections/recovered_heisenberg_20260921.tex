@@ -1,0 +1,80 @@
+\section{Recovered Heisenberg-scale structural results}
+\label{sec:recovered-heisenberg-20260921}
+
+A forensic reread of the 14--16 September working dossiers recovered several
+exact results that had not survived into the consolidated repository. They
+are restated only after reconciliation with the corrected raw modular Weyl
+convention. None evaluates the complete CUE form factor.
+
+\subsection{Raw-Weyl path escape}
+For the frozen operator, raw Weyl multiplication differs from ordinary
+midpoint multiplication by a sign, but the commutator magnitude remains
+\[
+2\left|\sin{\pi\sigma(r,n)\over N}\right|.
+\]
+For the frozen finite Fourier generator,
+\[
+ A_1={2\sqrt{101}\over25}+{1307\over200}<8,\qquad R_0=9.
+\]
+The exact Dyson expansion and the stable/unstable Green function give
+\[
+ \gamma=3.39318149\ldots,\qquad Z_\gamma=0.14391550\ldots<0.145.
+\]
+If $\mathcal T^{\rm near}_{N,m}$ is the exact path contribution with every
+Weyl state satisfying $\|n_j\|_\infty\le N/32$, then
+\[
+ |\mathcal T^{\rm near}_{N,m}-1|\le Z_\gamma^m.
+\]
+With $R=N^\epsilon$, long nonzero near runs contribute
+$O(N^6e^{-8N^\epsilon})$. Hence, uniformly for
+$m\in[\tau_0N,\tau_1N]$, after deleting an $o(1)$ sub-sum every
+surviving nonidentity path has at least
+\[
+ {\tau_0\over26}N^{1-\epsilon}
+\]
+bulk visits. This is Heisenberg-time structure, not smallness of the bulk
+contribution. For the encounter kernel $B_P=P^TA_mP-A_m$, if $s(P)$ is the
+number of nonzero rows, an induced matching gives
+\[
+ \operatorname{rank}_{\mathbb F}B_P\ge s(P)/25
+\]
+over every field.
+
+\subsection{The long-period subsequence $N=19^k$}
+Exact lifting gives
+\[
+ \operatorname{ord}_{19^k}(S)=20\,19^{k-1}={20\over19}N>N.
+\]
+Every vector primitive modulo 19 has the full orbit period. For distinct
+times below the period,
+\[
+ \sum_{\xi\in(\mathbb Z/N\mathbb Z)^2}
+ \left|\sum_{j\in J}a_je_N(\xi\cdot S^jr)\right|^2
+ =N^2\sum_{j\in J}|a_j|^2.
+\]
+A p-adic finite-type analysis together with Cluckers' analytic
+non-archimedean van der Corput lemma gives, for primitive $r,\xi$ and
+every interval $J$ of length at most $N$,
+\[
+ \left|\sum_{j\in J}e_N(\xi\cdot S^jr)\right|
+ \le C N^{2/3}\log N.
+\]
+This is deterministic cancellation at Heisenberg length on the stated
+subsequence, but it is not yet inserted into every constrained variable of
+the full quantum tensor sum.
+
+\subsection{One-shear no-go and the signed frontier}
+If the upper-right cat entry is invertible modulo odd $N$, the metaplectic
+kernel is diagonal--Fourier--diagonal. Multiplying it by any $q$-only
+diagonal kick remains unitarily equivalent to a symmetric unitary and has
+an exact antiunitary reversor. The project cat has upper-right entry $4$,
+so every one-position-shear fallback is excluded as a CUE route.
+
+The forensic audit also retracted two historical shortcuts. The v9
+split-prime two-frequency Bourgain estimate was not supplied by the cited
+source, and the phrase ``CUE contraction sector'' had not been accompanied
+by an explicit evaluation of that deterministic sub-sum as $\min(m,N)$.
+The remaining problem is signed: insert the available bulk cancellation
+into the complete path expansion and simultaneously derive the triangular
+CUE main term. Absolute suppression of every nonidentity path would be the
+wrong target.

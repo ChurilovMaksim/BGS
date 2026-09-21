@@ -1,5 +1,20 @@
 # Claim ledger
 
+## 21 September 2026 — recovered 14--16 September Heisenberg layer
+
+The earlier BGS working dossiers were reread against the later raw-Weyl and
+source-audit corrections.  Only claims surviving that chronology are promoted.
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| Frozen raw-modular map: exact microhop bound, all-near error below `0.145^m`, long-near-run suppression, and multiscale escape to at least `(tau_0/26)N^(1-epsilon)` bulk visits | **PROJECT PROOF + FRESH EXACT/FINITE REGRESSION** | `mathematics/fixed_map_weyl_path_escape.md`; structural path theorem, not signed bulk cancellation |
+| Encounter support kernel satisfies `rank_F(B_P)>=s(P)/25` over every field | **EXACT COMBINATORIAL + FRESH FINITE REGRESSION** | induced-matching minor with determinant plus/minus one; same note |
+| Every q-only kick for the project cat has an exact antiunitary reversor at every odd N | **EXACT** | `mathematics/one_shear_antiunitary_no_go.md`; rules out the one-shear fallback as a CUE route |
+| On `N=19^k`, `ord_N(S)=20*19^(k-1)` and primitive orbit phases obey exact Parseval | **EXACT + FRESH FINITE REGRESSION** | `mathematics/hyperbolic_19adic_dephasing.md` |
+| Primitive 19-adic hyperbolic incomplete sums are `O(N^(2/3) log N)` for intervals of length at most N | **PROJECT PROOF + EXTERNAL-THEOREM + FRESH FINITE REGRESSION** | Cluckers arXiv:1001.2013 Prop. 3.3 plus explicit finite-type reduction |
+| v9 two-frequency Bourgain incomplete-sum theorem and sliding-variable BCD2 corollary | **RETRACTED** | cited source did not imply the required uniform single incomplete-sum estimate |
+| Deterministic final-map “CUE contraction sector” has already been evaluated as `min(m,N)` | **OPEN / HISTORICAL OVERCLAIM** | the CUE reference value is correct; the required deterministic sub-sum decomposition/evaluation was not derived |
+
 ## 21 September 2026 — recovered fixed-map continuation
 
 The statements below were recovered from the final conversation handoff,

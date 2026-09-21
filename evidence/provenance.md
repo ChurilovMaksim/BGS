@@ -33,3 +33,14 @@ The reference q-curves live only under `evidence/reference/r82/`; their hashes a
 ## Trust rule
 
 A certificate can establish only its explicit finite/execution proposition. External theorem inputs remain external theorem inputs; analytic continuum statements remain proof-authoritative; numerical agreement remains numerical. Repository-wide claim status is controlled by `../record/claim_ledger.md` plus `../record/claim_ledger_addendum_20260907.md`.
+
+
+## 21 September 2026 — recovered Heisenberg direct attack
+
+`recovery_20260921/heisenberg_recovery.json` records the hashes and fresh
+replay disposition of the recovered 14--16 September BGS working artifacts.
+The maintained proof statements are in
+`mathematics/fixed_map_weyl_path_escape.md`,
+`mathematics/hyperbolic_19adic_dephasing.md` and
+`mathematics/one_shear_antiunitary_no_go.md`.
+Historical v7--v11 files are not vendored as competing claim authorities.

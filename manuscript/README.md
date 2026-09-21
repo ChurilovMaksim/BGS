@@ -39,3 +39,12 @@ The fixed-map frontier chapter is generated from
 drift. Its detailed proofs and computational evidence are indexed in
 `../supplement/fixed_map/README.md`; the conditional loop criterion is not
 an established BGS limit for the frozen map.
+
+
+The recovered Heisenberg direct-attack layer is summarized in
+`unified_sections/recovered_heisenberg_20260921.tex`.  Its authoritative
+proofs are the maintained Markdown notes
+`../mathematics/fixed_map_weyl_path_escape.md`,
+`../mathematics/hyperbolic_19adic_dephasing.md` and
+`../mathematics/one_shear_antiunitary_no_go.md`; the historical v7--v11
+dossiers are provenance, not parallel claim authorities.

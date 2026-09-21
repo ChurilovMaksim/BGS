@@ -59,3 +59,18 @@ full-symbol variance, and the local-jet negative control.  It is included
 automatically in a complete `verify_workspace.py` run.  Its scope is exact
 finite/symbolic regression only, not proof of the analytic asymptotic
 theorems or fixed-`tau` BGS.
+
+
+## Recovered Heisenberg direct-attack regressions
+
+`verification/bgs_heisenberg_path_audit.py` checks the corrected raw-Weyl
+commutator magnitude, exact frozen-symbol first moment/radius, near-sector
+constants, cyclic forcing fixtures and the all-characteristic encounter-rank
+kernel.  `verification/hyperbolic_19adic_audit.py` checks the exact
+`19^k` matrix order, primitive-orbit basis, Parseval identity and the finite
+quadratic/cubic finite-type dichotomy.
+
+Both are discovered automatically by a complete `verify_workspace.py` run.
+They are finite/exact regressions of load-bearing algebra; they do not
+machine-prove the analytic p-adic van der Corput theorem, the infinite
+path-sum estimates, or BGS.

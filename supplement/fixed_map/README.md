@@ -20,6 +20,7 @@ finite evidence recovered from the previously unpublished research of
 | Determinant ratios | [Boundary and reduction](weighted-secular/determinant_boundary.md) | Covariance alone is insufficient; exact Abel/ratio target |
 | Mixed loops | [Full criterion](resolvent-flow/loop_bridge.md), [low-order bounds](resolvent-flow/low_order_bounds.md) | Conditional all-order correlation criterion and exact finite identities |
 | Entropy comparison | [Obstruction](resolvent-flow/entropy_obstruction.md) | Global entropy cannot be small while preserving one spectrum at vanishing microscopic RMS distance |
+| Recovered Heisenberg direct attack | [raw-Weyl path escape](../../mathematics/fixed_map_weyl_path_escape.md), [19-adic dephasing](../../mathematics/hyperbolic_19adic_dephasing.md), [one-shear no-go](../../mathematics/one_shear_antiunitary_no_go.md), [dossier reconciliation](../../record/verified_state_reconciliation_20260921.md) | Exact structural path escape and arithmetic dephasing inputs; signed bulk/main-term BGS estimate remains open |
 
 The [20--21 September continuation](continuation-20260921/README.md) indexes
 the late handoff now promoted into maintained theorem notes: fixed-model

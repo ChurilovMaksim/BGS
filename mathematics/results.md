@@ -1,5 +1,37 @@
 # Current results and exact scope
 
+## Recovered Heisenberg-scale direct attack, reconciled 21 September 2026
+
+A forensic reread of the 14--16 September working dossiers recovered a
+scientifically useful layer that was absent from the consolidated tree.
+It has now been re-derived against the actual raw modular Weyl convention,
+rather than copied from the historical checkpoint.
+
+- [Exact Weyl path escape](fixed_map_weyl_path_escape.md): the frozen map has
+  an exact one-kick microhop bound, an all-near contribution
+  `1+O(0.145^m)`, and a multiscale theorem forcing every surviving
+  nonidentity Heisenberg path through at least
+  `(tau_0/26) N^(1-epsilon)` bulk Weyl states after an `o(1)` removal.
+  The associated encounter kernel has characteristic-free rank at least
+  `s(P)/25`.
+- [19-adic hyperbolic dephasing](hyperbolic_19adic_dephasing.md): on
+  `N=19^k`, `ord_N(S)=(20/19)N`, primitive orbit phases satisfy exact
+  Parseval, and a p-adic finite-type argument with Cluckers' van der Corput
+  theorem gives the pointwise bound `O(N^(2/3) log N)` on intervals of
+  Heisenberg length.
+- [One-shear antiunitary no-go](one_shear_antiunitary_no_go.md): for the
+  project cat, every q-only diagonal kick has an exact antiunitary reversor
+  at every odd dimension, so the old one-shear fallback cannot be a CUE
+  example merely by changing its classical interpretation.
+
+These are structural/direct cancellation results, not pair BGS.  The signed
+bulk insertion and the deterministic triangular CUE main term remain open.
+The [dossier reconciliation](../record/verified_state_reconciliation_20260921.md)
+also records two historical corrections: the v9 two-frequency
+Bourgain/sliding theorem is retracted, and the old phrase “CUE contraction
+sector = min(m,N)” was never backed by an explicit deterministic sub-sum
+evaluation.
+
 ## Fixed-map continuation, 21 September 2026
 
 **Project proofs with fresh exact/finite replay; external priority and referee

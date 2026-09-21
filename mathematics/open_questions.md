@@ -52,6 +52,23 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The recovered raw-Weyl path theorem now supplies genuine fixed-strength
+Heisenberg structure for the prescribed operator.  For
+`m in [tau_0 N,tau_1 N]`, after an `o(1)` contribution is removed, every
+surviving nonidentity Weyl path has at least
+`(tau_0/26) N^(1-epsilon)` visits outside the radius `N^epsilon` sector.
+On the exact subsequence `N=19^k`, primitive hyperbolic time phases also
+satisfy a deterministic pointwise incomplete-sum saving
+`O(N^(2/3) log N)`.
+
+This narrows the missing theorem but does not close it.  One still has to
+show that the constraints of the **complete signed tensor/path expansion**
+leave enough variables to which such cancellation can actually be applied,
+and simultaneously evaluate the surviving deterministic main sector as the
+CUE triangular form factor.  Historical v9 claims that large multiplicative
+order alone supplied a uniform two-frequency Bourgain bound are retracted;
+the 19-adic theorem is the maintained direct replacement.
+
 The 21 September continuation narrows the loop-equation route without closing
 it.  Exact moment inequalities strengthen the first two mixed levels, and a
 second orientation ((w,w,v)) yields a strictly stronger conditional
