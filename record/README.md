@@ -16,6 +16,7 @@ checkpoint, not the final status authority.
 - `research_routes.md` — route-level log of advances, obstructions and closure conditions; status still comes from the ledgers above;
 - `retractions.md` — false/superseded statements and failure mechanisms;
 - `verified_state_reconciliation_20260921.md` — selective promotion/quarantine map for the recovered v7--v11 and 16 September working state; historical `[PROVEN]` labels outside this reconciliation are not current authority;
+- `final_branch_reconciliation_20260921.md` — final all-branch / early-artifact preservation audit before promotion to `main`; records why diverged legacy workspaces are preserved by refs rather than re-vendored;
 - `session_science_sync_20260907.md` — late-session byte/readback and rerun audit;
 - `session_integrity_audit_20260907.md` — repeated cross-layer integrity audit after synchronization;
 - `reconstruction.md` — source-snapshot inventory and Git preservation boundary;

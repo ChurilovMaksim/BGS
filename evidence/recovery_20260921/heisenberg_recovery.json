@@ -57,6 +57,41 @@
       "name": "kicked_cat_sine_kernel.md",
       "sha256": "515dd3d0429419c732dae0e0df579c88b9f2d1ab0b7d338259b9bfbe719f669d",
       "disposition": "historical diagnostic only; higher-order reduction/Anosov/symmetry claims not promoted"
+    },
+    {
+      "name": "BGS_verified_state_2026-09-14.md",
+      "sha256": "3381449c560103a61b1142b0ed181fb6048f8d9dd74df1b8d60c8cb53b885d31",
+      "disposition": "pre-v7 audit; single-shear/early candidate state, superseded by later model chronology"
+    },
+    {
+      "name": "BGS_research_progress_2026-09-14_v2.md",
+      "sha256": "eef3ab6d4481d36dc828d747359048b567201ea00b871260b930a23621b6840d",
+      "disposition": "Fejer-Hermite candidate; not the final frozen operator"
+    },
+    {
+      "name": "bgs_fejer_candidate_checks.py",
+      "sha256": "7568d42ae40fcb68c8ebc9a4e468df5c57de67b6687c8366873d9fe68dd68fa0",
+      "fresh_replay": "PASS"
+    },
+    {
+      "name": "bgs_exact_checks.py",
+      "sha256": "bcb89ced7ae47014cc43f6fb9e2c609ee33415e08fcf4e1aa3ceee87838c5d1d",
+      "fresh_replay": "PASS; reusable arithmetic/rank core later re-derived"
+    },
+    {
+      "name": "BGS_research_progress_2026-09-14_v6.md",
+      "sha256": "665d36b64ea4330db4ecf2671ae822b33d89906ef83c3a696c11096766c7b720",
+      "disposition": "superseded two-directional candidate with c=1e-8, not v7 frozen c=1e-80 model"
+    },
+    {
+      "name": "bgs_final_candidate_v6.py",
+      "sha256": "1a7b738c1eee0ff7b4bc2e004e694bdc1882d096a5b22c1daeaf0d67820dae69",
+      "fresh_replay": "PASS for superseded v6 candidate"
+    },
+    {
+      "name": "BGS_full_resolution_dossier_v7.md",
+      "sha256": "49c4298eadbd13d7cf561a5282471e6d800e1f02433bd6e82db8c52a1845f56f",
+      "disposition": "byte-identical duplicate of already audited v7(1)"
     }
   ],
   "fresh_regressions": {
@@ -148,5 +183,13 @@
       "equations": "(29),(30),(45)-(49)",
       "use": "definition of the standard unitary encounter coefficients and published order-by-order cancellation"
     }
-  ]
+  ],
+  "branch_reconciliation": {
+    "record": "record/final_branch_reconciliation_20260921.md",
+    "future_main_parent": "39d4e01ae6a6b3eb472ab30266b708ca71a70a16",
+    "audited_recovery_head": "befd253b4f85515bb89c7492e6ed0c39ff5263cf",
+    "open_pull_requests": 0,
+    "recovery_removed_files": 0,
+    "legacy_refs_preserved": true
+  }
 }

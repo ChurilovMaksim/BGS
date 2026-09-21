@@ -123,3 +123,19 @@ The separate attachment `kicked_cat_sine_kernel.md` has SHA-256
 It remains a historical diagnostic only: its reduction of all orders to the
 two-point case is false, its Anosov argument is incomplete, and its finite
 antiunitary tests are not exhaustive.
+
+
+## Pre-v7 artifacts and full branch preservation
+
+The final audit subsequently located the 14 September pre-v7
+`BGS_verified_state_2026-09-14.md`, progress v2/v6, and their candidate
+checks.  Those candidates are not the final frozen operator: v2 is the
+Fejer--Hermite construction and v6 uses a different two-directional
+Hamiltonian with (c=10^{-8}), whereas v7 fixes the current low-degree
+(c=10^{-80}) model.  Their supplied checks were rerun successfully, but
+their model-specific claims are not promoted into the active fixed-map
+ledger.
+
+The complete hashes, branch-by-branch Git disposition, and the separate
+`research/m1-cross-energy` legacy status are recorded in
+[final_branch_reconciliation_20260921.md](final_branch_reconciliation_20260921.md).

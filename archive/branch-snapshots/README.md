@@ -27,3 +27,23 @@ wholesale because the dated referee audit records a corrected false exact
 triple-filter anchor; its surviving inverse-support core has later maintained
 formulations on the authoritative tree.  See
 `../../record/final_research_handoff_20260921.md`.
+
+
+## Final 21 September branch re-audit
+
+A second branch-by-branch audit was performed before the final Heisenberg
+recovery was promoted to `main`.  The detailed disposition, including
+blob-level comparison counts and the legacy M1 branch, is recorded in
+[record/final_branch_reconciliation_20260921.md](../../record/final_branch_reconciliation_20260921.md).
+
+Important additions to the preservation map:
+
+| branch | head | final disposition |
+|---|---|---|
+| `fix/fibonacci-signed-identity-2026-09-04` | `cd24ac46c2e9c9fd1fb803dd7f57f51154fd3181` | maintained proof exists on current tree in a later form; absent paths are retired standalone manuscript files |
+| `frontier/inverse-quartic-20260905` | `914a1c47323832ee03e4674c49250794fd57808d` | do not merge wholesale; draft triple-filter claim is false, valid inverse core is maintained later |
+| `hoplite/andros-a16085fa` | `89dc45e766a2fd2631e93849559723bb92be8cb9` | legacy workspace preserved by ref; not vendored |
+| `rebuild/main-clean` | `7dd1fd591189c92af9ce0897794cfbc59500f0b2` | reconstructed legacy workspace; not vendored |
+| `research/m1-cross-energy` | `057431853b02b4a65f16f32c79299adb9f46fcce` | corrected historical M1 line; exact core partly maintained, assembled variance remains open; whole legacy tree not vendored |
+
+No branch ref is deleted by the final audit.
