@@ -72,6 +72,7 @@ def coefficient_constants():
     assert Z < sp.Rational(145,1000)
     A=sp.log(t)/R0
     assert A < sp.Rational(989,100)
+    # Check the long-run exponent at the advertised L=25R.
     assert sp.N(4*A+25*sp.log(Z),60) < -8
     return {
         'nonzero_coefficients':len(coeff),
@@ -97,6 +98,7 @@ def raw_commutator_checks():
     fixtures=0
     maxerr=0.0
     for N in (11,19):
+        # Individual modes avoid ambiguity from aliases; check the exact raw gauge law.
         for r,z in sorted(coeff.items())[:12]:
             Tr=T_raw(N,*r)
             for n in ((1,2),(3,1),(4,5),(0,1)):
@@ -113,6 +115,7 @@ def raw_commutator_checks():
     return {'fixtures':fixtures,'max_abs_error':maxerr}
 
 def forcing_checks():
+    # Deterministic periodic integer fixtures; h_j=n_{j+1}-S n_j.
     lam=3+2*math.sqrt(2)
     worst=0.0; fixtures=0
     patterns=[[(1,0),(-1,1)],[(2,-1),(0,1),(-2,0)],[(j%5-2,(3*j)%7-3) for j in range(11)],[(j%9-4,(5*j)%11-5) for j in range(37)]]

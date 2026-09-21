@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Finite integer regression for the unitary encounter absolute envelope."""
 from __future__ import annotations
 from fractions import Fraction
 from math import comb

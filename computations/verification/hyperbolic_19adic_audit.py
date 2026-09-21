@@ -60,14 +60,12 @@ def parseval_check():
     weights=[complex((j%3)-1,(j%2)*0.5) for j in J]
     orbit=[]
     for j in J:
-        A=mpow(S,j,N)
-        orbit.append(((A[0][0]*r[0]+A[0][1]*r[1])%N,(A[1][0]*r[0]+A[1][1]*r[1])%N))
+        A=mpow(S,j,N); orbit.append(((A[0][0]*r[0]+A[0][1]*r[1])%N,(A[1][0]*r[0]+A[1][1]*r[1])%N))
     lhs=0.0
     for x in range(N):
         for y in range(N):
             z=0j
-            for w,v in zip(weights,orbit):
-                z += w*cmath.exp(2j*math.pi*((x*v[0]+y*v[1])%N)/N)
+            for w,v in zip(weights,orbit): z += w*cmath.exp(2j*math.pi*((x*v[0]+y*v[1])%N)/N)
             lhs += abs(z)**2
     rhs=N*N*sum(abs(w)**2 for w in weights)
     rel=abs(lhs-rhs)/rhs
@@ -95,7 +93,6 @@ def main():
     data={'status':'PASS','scope':'Exact finite arithmetic/regression only; Cluckers analytic van der Corput input and asymptotic BGS are separate.',
           'orders':order_checks(),'primitive_basis':primitive_basis_checks(),'parseval':parseval_check(),'finite_type':finite_type_check()}
     if args.output:
-        args.output.parent.mkdir(parents=True,exist_ok=True)
-        args.output.write_text(json.dumps(data,indent=2)+'\n')
+        args.output.parent.mkdir(parents=True,exist_ok=True); args.output.write_text(json.dumps(data,indent=2)+'\n')
     print(json.dumps(data,indent=2))
 if __name__=='__main__':main()
