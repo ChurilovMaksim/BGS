@@ -9,8 +9,8 @@ proof and does not promote the fixed-(\tau) BGS target.
 
 | Claim | Status | Boundary / authority |
 |---|---|---|
-| Correct ordinary-midpoint symbol for the raw frozen generator; resulting (G_\kappa=S\circ\Phi_g^\kappa) has only power (C^1) commuters, no (C^1) reversor, and no relevant affine (C^1) conjugacy for (0<|\kappa|\le10^{-12}) | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_symmetry_theorem.md`; does not exclude quantum (N)-dependent symmetries |
-| Odd-Pell full-symbol Gaussian crossover, exact variance (1650797/4000000), and necessary ( |\epsilon_K|\sqrt K\to\infty) for CUE pair behaviour in that family | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_pell_crossover.md`; frozen strength is outside the proved bounded window |
+| Correct ordinary-midpoint symbol for the raw frozen generator; resulting (G_\kappa=S\circ\Phi_g^\kappa) has only power (C^1) commuters, no (C^1) reversor, and no relevant affine (C^1) conjugacy for (0<\operatorname{abs}(\kappa)\le10^{-12}) | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_symmetry_theorem.md`; does not exclude quantum (N)-dependent symmetries |
+| Odd-Pell full-symbol Gaussian crossover, exact variance (1650797/4000000), and necessary ( \operatorname{abs}(\epsilon_K)\sqrt K\to\infty) for CUE pair behaviour in that family | **PROJECT PROOF + FRESH FINITE-REGRESSION** | `mathematics/fixed_model_pell_crossover.md`; frozen strength is outside the proved bounded window |
 | Exact moment inequalities, stronger first-two-level interval, repeated-clock one-upper-loop falsifier, and growing perturbation RMS transfer | **EXACT IDENTITIES / PROJECT ASYMPTOTIC CONSEQUENCES + FRESH REGRESSION** | `mathematics/fixed_map_moment_control_and_transfer.md` |
 | Three-orientation residual decay implies the explicit (1/64) differential lower barrier for (L_N(s)) | **CONDITIONAL PROJECT THEOREM + FRESH FINITE-REGRESSION** | `mathematics/three_orientation_resolvent_barrier.md`; hypotheses unproved for frozen (U_N) |
 | Fourier-line resonance coercivity with sharp (\kappa_\beta), exact (\kappa_1=\sqrt{(T-2)/(T+2)}), and (H^{3/2}) positivity for trace magnitude at least 6 | **PROJECT PROOF + FRESH EXACT REGRESSION** | `mathematics/fourier_line_resonance_coercivity.md`; arbitrary two-dimensional analytic symbols remain open |
@@ -111,7 +111,7 @@ full integers or valuations is not silently assumed.
 | same joint empirical laws converge weakly in probability over dyadic split designs with `Q->infinity`, `log Q=o(log X)` | **EXACT + EXTERNAL-THEOREM** | same note, Theorem 2; Bombieri--Vinogradov/PNT; does not cover fixed `Q=X^theta` |
 | `(K,p)=(11,199)` has `Z4=B4=270` but `Z3=6`, `Z6-B6=1350` | **FINITE-CERTIFICATE** | exact integer convolution in `computations/verification/cayley_higher_moments.py` |
 | pair-key bijection; diagonal multiplicity `p-2`; exact constrained count `(K-1)(K-2)` | **EXACT + FINITE-CERTIFICATE** | `mathematics/fourth_moment_reduction.md`; Python/C++/Lean |
-| exact `|V4|=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | **EXACT + FINITE-CERTIFICATE** | fourth-moment note + independent checks |
+| exact `card(V4)=(K^2+1)p^2-(6K^2+3K)p+13K^2-3K` | **EXACT + FINITE-CERTIFICATE** | fourth-moment note + independent checks |
 | corrected `B(t)=O(t)+2(p-2)C_H(t)+(p-2)^2 1_{t=0}` and Fourier mean/variance | **EXACT + FINITE-REGRESSION** | `fourth_moment_reduction.md` |
 | Cayley identity and additive-energy reduction for `A=c(H\{1})` | **EXACT** | `cayley_additive_energy.md` |
 | prime-order characteristic-zero additive collision rigidity | **EXACT** | Chowla cotangent independence + cross-polytope argument |
@@ -124,7 +124,7 @@ full integers or valuations is not silently assumed.
 | affine trace equation with `alpha_r=U_(r-1)(tau/2)`, `beta_r=-2U_(r-2)(tau/2)` | **EXACT** | `cayley_product_row_real_trace_ideal.md` |
 | dehomogenized `G'` and `D'` order-three invariants | **EXACT, one-way only** | subresultant/coefficient-ideal notes; degree-drop correction |
 | fixed-degree real-trace cofactors have gcd degree exactly equal to row-intersection count | **EXACT** | real-trace note |
-| split `p|Lambda_(K,r)^(3)` iff some row pair in ratio class `[r]` has `I>=3` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | fixed-degree subresultants + Brown--Traub + Smith gate |
+| split `p divides Lambda_(K,r)^(3)` iff some row pair in ratio class `[r]` has `I>=3` | **EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION** | fixed-degree subresultants + Brown--Traub + Smith gate |
 | outside product support `Lambda'_K^(3)`: `I_K<=2`, `Delta<=8(K-1)(K-2)`, `E_+(A)<=11(K-1)(K-2)` | **EXACT + EXTERNAL-THEOREM** | exact support + row-energy identity |
 | inverse ratio reflection `Q(T)=-P(2tau-T)` and `I_-1(q)=2 deg gcd(E,O mod q)` | **EXACT + FINITE-REGRESSION** | `cayley_product_row_reflection.md` |
 | inverse exact support integer `Xi_K` from the half-degree reflection problem | **EXACT + FINITE-REGRESSION** | reflection note/verifier |
