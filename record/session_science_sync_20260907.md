@@ -4,7 +4,7 @@
 
 The remote base before the late-session synchronization was `7f9ac291da9b484d2c89e9ba7228ce0b6c6a7ae4`. The preceding 52 real commits in the audited session history were already linear ancestors of that commit. A previously reported `e1ff0d2a71403547e0bb8c9e3e7cdcf9ff9edb2c` does not resolve on GitHub and is not counted as a repository commit.
 
-The information-limit science first landed through the continuation ending at merge commit `b4b601d76193123e250cee0180052b873575afe3`. The readback audit was committed as `8d8de801faf38c832a69726c97952c2cb3b51a0e`; verified external references were added in `79d0fb1dcd2a52a248870ecd16e8ced85e80a27c`; and the rare-phase, fixed-noisy-Gaussian and uniform pure-loss theorem/proof sections were then embedded directly in the canonical article in `60ac556b0bdb5b324e3013f38f57a8cba20b02bb`. Thus these results are not only side notes or certificates: they are present in `manuscript/WoW_unified.tex` on `main`.
+The information-limit science first landed through the continuation ending at merge commit `b4b601d76193123e250cee0180052b873575afe3`. The readback audit was committed as `8d8de801faf38c832a69726c97952c2cb3b51a0e`; verified external references were added in `79d0fb1dcd2a52a248870ecd16e8ced85e80a27c`; and the rare-phase, fixed-noisy-Gaussian and uniform pure-loss theorem/proof sections were then embedded directly in the canonical article in `60ac556b0bdb5b324e3013f38f57a8cba20b02bb`. Thus these results are not only side notes or certificates: they are present in `manuscript/BGS_unified.tex` on `main`.
 
 ## Byte-level remote/local check
 

@@ -1,98 +1,128 @@
-# WoW — arithmetic quantum chaos
+# BGS — arithmetic quantum chaos and spectral universality
 
-A research collection on quantized hyperbolic toral automorphisms, arithmetic
-resonances, and the passage from quantum dynamics to spectral statistics.
-The current return-law programme treats every **fixed hyperbolic matrix in
-SL(2,Z)** along explicitly constructed arithmetic dimension subsequences.
+Long-horizon research repository on rigorous routes to the Bohigas–Giannoni–Schmit (BGS) conjecture for arithmetic and nonlinear quantum maps.
 
-## Scientific status
+**Scientific status (22 September 2026):** the fixed-strength microscopic BGS problem for the maintained frozen quantum map remains **OPEN**. The repository contains exact reductions, theorem-level project proofs, external-theorem applications, formal finite certificates, reproducible finite computations, counterexamples to insufficient proof strategies, and a consolidated research manuscript. Numerical agreement is never treated as a proof of universality.
 
-The principal current derivations establish Gevrey return laws, a joint
-Gaussian limit for period-averaged observables under a square-root logarithmic
-Fourier weight, and continuous counterexamples showing the sharpness of that
-weight even after quantum centering. Constants depend on the fixed map and
-symbol. These are global laws at logarithmic return times.
-The [local-limit obstruction](mathematics/return_trace_obstruction.md) now
-connects nonuniform short returns to failure of ergodic intensity-one local
-limits, under explicitly stated unfolding and scaling conventions.
-Its extension quantifies intensity loss, proves a sharp bound for ergodic
-local limits among abstract spectra, and shows why the same return law can
-coexist with different statistics after unfolding by the local density.
+## Research question
 
-The 20--21 September continuation adds a theorem excluding smooth classical
-centralizers/reversors for the actual frozen model, a full-symbol odd-Pell
-Gaussian crossover with exact variance `1650797/4000000`, a stronger
-three-orientation mixed-loop barrier, and sharp resonance coercivity on every
-Fourier-line (H^{1+\beta}) class in its stated positive-coercivity range.
-These advances remove several candidate obstructions but do not provide the
-missing Heisenberg-scale quantum cancellation estimate.
+The central programme asks when deterministic quantizations of classically chaotic maps exhibit random-matrix local spectral statistics, and what arithmetic, dynamical, cohomological, or symmetry mechanisms can obstruct that limit.
 
-**Microscopic BGS universality remains open.** The analytic results are project
-proofs with limited internal review; external priority and external referee
-validation have not been established. Lean checks a smaller algebraic and
-finite layer. Numerical experiments do not certify asymptotic theorems.
+For the maintained fixed nonlinear family
 
-## Start here
+$$
+U_N=\\exp(i\\tau N A_N)M_N,\\qquad \\tau=10^{-80},
+$$
+the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order $N$. The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
 
-- [Final recovery/integration audit](record/final_research_handoff_20260921.md): reconciles the late handoff, old PRs, replay status, and the remaining target.
-- [Recovery audit](record/recovery_audit_20260920.md): reconciled the preceding chat/repository state and recovered omitted amendments.
+## Current scientific picture
 
-- [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md): the exact frozen model, mixed-loop criterion, new low-order bounds, and the unresolved estimate.
-- [Reproducible fixed-map supplement](supplement/fixed_map/README.md): recovered proofs, Python/C++/Wolfram sources and finite evidence; [current verification review](record/fixed_map_publication_20260920.md).
-- [Research brief](RESEARCH.md): why cat maps, contributions, limitations, and the next decisive questions.
-- [General return laws](mathematics/general_cat_return_laws.md): assumptions, statements, proofs, and counterexamples.
-- [Results index](mathematics/results.md) and [earlier addendum](mathematics/results_20260907_addendum.md): the broader mathematical corpus.
-- [Claim ledger](record/claim_ledger.md) and [scoped addendum](record/claim_ledger_addendum_20260907.md): evidence levels and corrections; the addendum governs claims in its stated scope.
-- [Canonical manuscript](manuscript/WoW_unified.tex): one publication entry point, including the six return-law proof modules.
-- [Reproduction guide](REPRODUCE_unified.md) and [publication review](record/publication_review_20260912.md): commands and the scope of actual checks.
+The repository currently establishes, in their stated scopes:
 
-## Research materials
+- exact trace-to-microscopic-statistics identities showing why fixed moments and $o(N)$-time trace information do not determine microscopic BGS statistics;
+- arithmetic return laws and Gaussian/global limits on explicit cat-map subsequences, together with sharp counterexamples below their regularity thresholds;
+- exact finite-field and Cayley-energy reductions, resultant structure, averaged arithmetic bounds, and finite independent certificates;
+- a fixed-model classical symmetry theorem excluding ordinary $C^1$ centralizers, reversors, and relevant affine conjugacies in the stated perturbative range;
+- a full-symbol odd-Pell Gaussian crossover and a necessary escape condition from the weak-kick obstruction;
+- mixed-loop/resolvent identities and conditional barriers that sharpen the fixed-map frontier without identifying the CUE limit;
+- resonance/cohomology theorems, including sharp coercivity on complete Fourier-line classes and explicit obstructions to purely local fixed-point arguments;
+- negative controls and retractions documenting proof routes that fail.
 
-| Directory | Role |
+The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and the maintained mathematical notes.
+
+## Where to start
+
+For a mathematical reader or referee, the recommended order is:
+
+1. [Claim ledger](record/claim_ledger.md) — repository-wide authority for the current status of claims.
+2. [Results index](mathematics/results.md) — concise map of established results and their boundaries.
+3. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) — the maintained frozen model and the remaining BGS estimate.
+4. [Open questions](mathematics/open_questions.md) — unresolved obligations only.
+5. [Trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) — exact Heisenberg-scale reduction.
+6. [Research manuscript](manuscript/BGS_unified.tex) — consolidated long-form exposition.
+7. [Literature map](literature/bibliography.md) — load-bearing external results and scope checks.
+8. [Evidence provenance](evidence/provenance.md) — interpretation of promoted certificates and numerical records.
+9. [Retractions](record/retractions.md) — false, superseded, or insufficient historical routes.
+10. [Repository conventions](record/repository_conventions.md) — source-of-truth, synchronization, archival, and review policy.
+
+## Evidence and claim discipline
+
+The project distinguishes the following levels:
+
+| Level | Meaning |
 |---|---|
-| [mathematics](mathematics/README.md) | Maintained proofs, theorem index, and unresolved obligations |
-| [manuscript](manuscript/README.md) | Canonical TeX source and its component sections |
-| [computations](computations/README.md) | Python reference verifiers, independent C++ kernels, and figure producers |
-| [formalization](formalization/README.md) | Pinned Lean 4 project and explicit trust boundary |
-| [evidence](evidence/provenance.md) | Selected certificates and their provenance |
-| [record](record/claim_ledger.md) | Scoped reviews, corrections, and execution records |
-| [supplement/fixed_map](supplement/fixed_map/README.md) | Indexed fixed-map proofs and computational evidence, with isolated replay |
-| [archive](archive/branch-snapshots/README.md) | Historical provenance; no parallel active branch copies |
+| **EXACT** | Maintained project derivation with explicit hypotheses |
+| **EXACT + EXTERNAL-THEOREM** | Exact project reduction using a named external theorem whose assumptions are tracked |
+| **FINITE-CERTIFICATE** | Exact statement at explicit finite parameters |
+| **FINITE-REGRESSION** | Independent implementation/reference agreement at finite parameters |
+| **NUMERICAL** | Descriptive floating-point evidence |
+| **CONDITIONAL** | Theorem whose stated hypotheses remain unproved for the target model |
+| **OPEN** | Required closure condition not established |
+| **RETRACTED** | False, superseded, or insufficient route retained for provenance |
 
-## Reproduce
+The current status authority is [record/claim_ledger.md](record/claim_ledger.md). Historical notes, old commits, finite computations, and manuscript prose do not silently strengthen it.
 
-From the repository root, install the Python requirements and run the structural gate:
+## Research corpus
+
+| Area | Role |
+|---|---|
+| [mathematics/](mathematics/README.md) | Maintained theorem statements, proofs, reductions, counterexamples, and open problems |
+| [manuscript/](manuscript/README.md) | Canonical consolidated research manuscript |
+| [literature/](literature/bibliography.md) | Theorem-level source map and literature boundary |
+| [formalization/](formalization/README.md) | Lean 4 algebraic kernels and finite certificates with an explicit trust boundary |
+| [computations/](computations/README.md) | Exact/finite verification, independent implementations, and numerical diagnostics |
+| [evidence/](evidence/provenance.md) | Promoted certificates, reference data, and execution provenance |
+| [record/](record/claim_ledger.md) | Claim authority, audits, retractions, research process, and historical decisions |
+| [supplement/fixed_map/](supplement/fixed_map/README.md) | Detailed fixed-map derivations and replayable evidence |
+| [archive/](archive/branch-snapshots/README.md) | Historical provenance only; not a competing source of current truth |
+
+## Reproducibility
+
+The repository is designed so that theorem statements, verification code, formal certificates, manuscript text, and status records can be audited separately.
+
+The structural gate is:
 
 ```sh
 python -m pip install -r requirements.txt
 python computations/verification/repository_audit.py
 ```
 
-With Pandoc and a TeX installation available, verify the generated return-law
-chapters and build the article:
+The maintained Python/C++ verification surface is:
+
+```sh
+cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
+cmake --build build/cmake --parallel
+python computations/maintenance/verify_workspace.py \
+  --build build/cmake \
+  --logs build/verification-logs \
+  --output build/workspace-verification.json
+```
+
+The active Lean project is pinned under `formalization/`:
+
+```sh
+(cd formalization && lake build)
+```
+
+The canonical manuscript is built with:
 
 ```sh
 python computations/maintenance/sync_return_sections.py --check
 python computations/maintenance/sync_fixed_map_section.py --check
-python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper
+python computations/maintenance/build_unified_manuscript.py \
+  --output-dir build/unified-paper
 ```
 
-The [reproduction guide](REPRODUCE_unified.md) provides the complete Python/C++
-run, focused return-law checks, and Lean build. Generated reports and PDFs stay
-in `build/`; source, formalization, and maintained programs belong in `main`.
-Historical run counts and manuscript page counts are kept in dated reviews,
-so they cannot be mistaken for a fresh full verification.
+See [REPRODUCE_unified.md](REPRODUCE_unified.md) for the complete reproduction contract and the exact boundary between local execution records and cloud CI.
 
-To audit and replay the recovered fixed-map research:
+## Publication and review model
 
-```sh
-python computations/maintenance/verify_fixed_map_supplement.py
-python computations/verification/bgs_20260921_regression.py --output build/bgs-20260921-regression.json
-```
+`manuscript/BGS_unified.tex` is the single maintained long-form research manuscript. It is a consolidated research record rather than a claim that every theorem family should be submitted as one journal article. Focused publication should extract coherent theorem families while preserving the repository-level dependency graph and provenance.
 
-This writes fresh reports to `build/fixed-map-replay/` and preserves the
-retained evidence. The mixed-loop hypotheses for the fixed coupling are
-still unproved; successful finite checks do not establish universality.
+The repository is maintained as a long-term scientific record: corrected results remain traceable, retractions are explicit, historical evidence is not rewritten, and generated publication surfaces are synchronized from their maintained mathematical sources where applicable.
 
-The scientific scope is determined by explicit hypotheses and proofs, not by
-repository synchronization or a successful software build.
+## Authorship and scope
+
+Maintainer and manuscript author: **Maksim Churilov**.
+
+The repository does not claim a general proof of the BGS conjecture, external priority for the full project corpus, or independent referee validation of every project theorem. The goal is to make the exact boundary between proved mathematics, imported theorems, finite evidence, conditional reductions, and open problems inspectable.

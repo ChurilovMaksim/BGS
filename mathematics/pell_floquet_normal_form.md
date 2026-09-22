@@ -1,6 +1,6 @@
 ---
 title: "A resonance-scale spectral law for a deterministically kicked Pell cat map"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

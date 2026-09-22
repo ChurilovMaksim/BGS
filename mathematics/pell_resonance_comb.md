@@ -1,6 +1,6 @@
 ---
 title: "The full bounded recurrence window and a two-scale spectral limit"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

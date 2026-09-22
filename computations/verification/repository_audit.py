@@ -46,6 +46,7 @@ REQUIRED = [
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
     ROOT / "record" / "claim_ledger.md",
+    ROOT / "record" / "repository_conventions.md",
     ROOT / "record" / "consolidation_map.json",
     ROOT / "record" / "final_consolidation_audit_20260906.md",
     MAINTENANCE / "verify_workspace.py",
@@ -53,7 +54,7 @@ REQUIRED = [
     ROOT / "computations" / "verification" / "repository_audit.py",
     ROOT / "formalization" / "Bgs.lean",
     ROOT / "CMakeLists.txt",
-    MANUSCRIPT / "WoW_unified.tex",
+    MANUSCRIPT / "BGS_unified.tex",
     MANUSCRIPT / "README.md",
     ROOT / "archive" / "branch-snapshots" / "README.md",
     ROOT / "archive" / "delivery-20260906" / "README.md",
@@ -86,6 +87,39 @@ def fail(msg: str) -> None:
     raise RuntimeError(msg)
 
 
+
+def check_canonical_identity() -> None:
+    active_roots = [
+        ROOT / "README.md",
+        ROOT / "REPRODUCE_unified.md",
+        ROOT / "CMakeLists.txt",
+        ROOT / ".github" / "workflows",
+        ROOT / "manuscript",
+        ROOT / "mathematics",
+        ROOT / "computations",
+        ROOT / "formalization",
+    ]
+    forbidden = ("ChurilovMaksim/WoW", "WoW research programme", "WoW_unified", "wow_catmap_verifiers")
+    offenders: list[str] = []
+    for root in active_roots:
+        paths = [root] if root.is_file() else [p for p in root.rglob("*") if p.is_file()]
+        for p in paths:
+            if p.resolve() == Path(__file__).resolve():
+                continue
+            if p.suffix.lower() not in {".md", ".tex", ".py", ".cpp", ".c", ".yml", ".yaml", ".toml", ".txt", ""}:
+                continue
+            text = p.read_text(encoding="utf-8", errors="replace")
+            hits = [token for token in forbidden if token in text]
+            if hits:
+                offenders.append(f"{p.relative_to(ROOT)}: {', '.join(hits)}")
+    if offenders:
+        fail("legacy WoW identity remains on active surface: " + "; ".join(offenders))
+
+    if (MANUSCRIPT / "WoW_unified.tex").exists():
+        fail("legacy manuscript entry point is still present")
+    if not (MANUSCRIPT / "BGS_unified.tex").is_file():
+        fail("canonical manuscript entry point manuscript/BGS_unified.tex is missing")
+
 def check_required() -> None:
     missing = [str(p.relative_to(ROOT)) for p in REQUIRED if not p.is_file()]
     if missing:
@@ -116,11 +150,11 @@ def check_manuscript_surface() -> None:
     if present_legacy:
         fail("legacy/duplicate manuscript surface still present: " + ", ".join(present_legacy))
 
-    master = MANUSCRIPT / "WoW_unified.tex"
+    master = MANUSCRIPT / "BGS_unified.tex"
     text = master.read_text(encoding="utf-8")
     inputs = re.findall(r"\\input\{([^}]+)\}", text)
     if not inputs:
-        fail("WoW_unified.tex has no inputs")
+        fail("BGS_unified.tex has no inputs")
     missing: list[str] = []
     for raw in inputs:
         p = MANUSCRIPT / raw
@@ -204,6 +238,7 @@ def check_active_markdown_links() -> None:
 
 def main() -> int:
     checks = [
+        check_canonical_identity,
         check_required,
         check_retired_julia,
         check_archive_contract,

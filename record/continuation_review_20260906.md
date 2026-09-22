@@ -82,7 +82,7 @@ checks sharp constructions and finite coefficient alphabets; it is not an
 arbitrary-degree proof by enumeration. Floating-point quantum tests retain
 their numerical label.
 
-The maintained manuscript remains manuscript/WoW_unified.tex. The continuation
+The maintained manuscript remains manuscript/BGS_unified.tex. The continuation
 inputs are connected through final_delivery_note.tex; no second publication
 root is intended. A fresh successful fail-closed build and visual inspection
 must be recorded separately before any new PDF is described as validated.

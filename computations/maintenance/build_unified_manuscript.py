@@ -35,7 +35,7 @@ def _validate_inherited_core(name: str, text: str, source: str) -> None:
             raise ValueError(f'Missing restored mathematical token {token}: {source}')
 
 def inputs() -> dict[str,str]:
-    master=MANUSCRIPT/'WoW_unified.tex'
+    master=MANUSCRIPT/'BGS_unified.tex'
     found:set[Path]=set()
     def visit(p:Path)->None:
         p=p.resolve()
@@ -89,7 +89,7 @@ def main()->None:
             'engine':version,'source_sha256':before,'passes':[]}
     env=dict(os.environ,SOURCE_DATE_EPOCH='1788652800',FORCE_SOURCE_DATE='1',TZ='UTC')
     for number in range(1,4):
-        command=[engine,'-interaction=nonstopmode','-halt-on-error',f'-output-directory={out}','WoW_unified.tex']
+        command=[engine,'-interaction=nonstopmode','-halt-on-error',f'-output-directory={out}','BGS_unified.tex']
         log=out/f'pass-{number}.log'
         with log.open('w') as stream:
             result=subprocess.run(command,cwd=MANUSCRIPT,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=90)
@@ -97,7 +97,7 @@ def main()->None:
         if result.returncode:
             record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
             raise SystemExit(f'LaTeX pass {number} failed; see {log}')
-    text=(out/'WoW_unified.log').read_text(errors='replace')
+    text=(out/'BGS_unified.log').read_text(errors='replace')
     forbidden=['Overfull \\hbox','undefined references','undefined citations','multiply defined','destination with the same identifier']
     hits=[x for x in forbidden if x in text]
     if re.search(r"LaTeX Warning: (Reference|Citation) .* undefined",text):hits.append('unresolved cross-reference')
@@ -106,14 +106,14 @@ def main()->None:
     if hits or before!=after:
         record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
         raise SystemExit('Build failed its warning/source-hash gate.')
-    pdf=out/'WoW_unified.pdf'
+    pdf=out/'BGS_unified.pdf'
     match=re.search(r'Output written on .*?\(\s*(\d+)\s+p\s*a\s*g\s*e\s*s?',text,re.S)
     if not match:
         record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
         raise SystemExit('Build succeeded but PDF page count could not be parsed from the LaTeX log.')
     record.update(status='PASS',runtime_seconds=time.monotonic()-start,
                   page_count=int(match[1]),pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
-                  latex_log_sha256=digest(out/'WoW_unified.log'))
+                  latex_log_sha256=digest(out/'BGS_unified.log'))
     if args.publish:
         target=MANUSCRIPT/pdf.name;shutil.copy2(pdf,target)
         record['published_pdf']=str(target.relative_to(ROOT))

@@ -1,6 +1,6 @@
 ---
 title: "Weighted Gaussian limits and a periodic Brownian echo for the Pell cat map"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

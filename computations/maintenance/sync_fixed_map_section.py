@@ -22,7 +22,7 @@ def render():
                     rel = (SOURCE.parent/url).resolve().relative_to(ROOT)
                     if not (ROOT/rel).is_file():
                         raise ValueError('Missing manuscript link: '+str(rel))
-                    node['c'][2][0] = 'https://github.com/ChurilovMaksim/WoW/blob/main/'+str(rel)
+                    node['c'][2][0] = 'https://github.com/ChurilovMaksim/BGS/blob/main/'+str(rel)
             for value in node.values():
                 visit(value)
         elif isinstance(node, list):

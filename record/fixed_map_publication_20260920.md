@@ -86,12 +86,12 @@ and software verification do not change the OPEN mathematical status.
 
 ## Remote verification
 
-The publication commit is [3139f47](https://github.com/ChurilovMaksim/WoW/commit/3139f478c5147e6e487578d9af88bef0ffa97410). Its tree
+The publication commit is [3139f47](https://github.com/ChurilovMaksim/BGS/commit/3139f478c5147e6e487578d9af88bef0ffa97410). Its tree
 `f908f55bfc13b78736d685c52e21685958fc63af` exactly matched the locally
 staged tree. The update was a non-forced fast-forward of remote main.
 The remote-only files and their original commits remain in the ancestry.
 
-[Scientific CI run](https://github.com/ChurilovMaksim/WoW/actions/runs/35525732662)
-and [manuscript CI run](https://github.com/ChurilovMaksim/WoW/actions/runs/35525732685)
+[Scientific CI run](https://github.com/ChurilovMaksim/BGS/actions/runs/35525732662)
+and [manuscript CI run](https://github.com/ChurilovMaksim/BGS/actions/runs/35525732685)
 failed before executing steps. These failures are recorded separately from
 the successful local runs; they are not reported as passing CI.

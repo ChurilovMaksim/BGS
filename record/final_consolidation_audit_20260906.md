@@ -8,7 +8,7 @@ This record supersedes earlier repository-shape and delivery-state conclusions. 
 
 2. **Julia is retired globally.** The maintained computational stack is Python/C++/Lean/TeX. The structural audit scans the whole checkout, including `archive/`, and rejects `.jl`, `Project.toml`, and `Manifest.toml` anywhere.
 
-3. **There is one publication surface.** Superseded standalone `.tex/.pdf` article pairs and obsolete manuscript fragments were removed from canonical `main`; they remain recoverable from Git history. `manuscript/WoW_unified.tex` is the sole maintained publication entry point and the canonical workflows build only it.
+3. **There is one publication surface.** Superseded standalone `.tex/.pdf` article pairs and obsolete manuscript fragments were removed from canonical `main`; they remain recoverable from Git history. `manuscript/BGS_unified.tex` is the sole maintained publication entry point and the canonical workflows build only it.
 
 4. **There is one maintained verification/publication architecture.** Stale specialized workflows and one-shot integration/publication scripts that regenerated superseded copies were removed. The maintained orchestration is `verify_workspace.py` plus `build_unified_manuscript.py`; the scientific verifier/source corpus itself is retained.
 

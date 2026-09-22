@@ -2,7 +2,7 @@
 
 Proof authority: `manuscript/unified_sections/temporal_resonance.tex` and
 `manuscript/unified_sections/spectral_modules.tex`, both included by the single
-canonical master `manuscript/WoW_unified.tex`.
+canonical master `manuscript/BGS_unified.tex`.
 
 For every hyperbolic A in SL(2,Z) and nonconstant real finite Fourier symbol g,
 h_r={g,C^r g}/(4 pi) are independent modulo L2 coboundaries. The highest-lag

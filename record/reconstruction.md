@@ -1,7 +1,7 @@
 # Reconstruction and preservation boundary
 
 The repository was reconstructed from two overlapping sources: the supplied
-`BGS.zip` research snapshot and the Git history of `ChurilovMaksim/WoW`.
+`BGS.zip` research snapshot and the Git history of the former repository name `ChurilovMaksim/WoW`.
 Preservation and scientific authority are deliberately separated.
 
 ## Supplied snapshot

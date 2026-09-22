@@ -23,7 +23,7 @@ def main():
     spectra=[np.linalg.eigvalsh(np.sqrt(K/2)*orbit_matrix(p,H,int(q))) for q in q_values]
     eigenvalues=np.concatenate(spectra)
     args.output_dir.mkdir(parents=True,exist_ok=True)
-    matplotlib.rcParams['svg.hashsalt']='wow-magnetic-20260905'
+    matplotlib.rcParams['svg.hashsalt']='bgs-magnetic-20260905'
     fig,ax=plt.subplots(figsize=(8,4.6))
     ax.hist(eigenvalues,bins=64,density=True,histtype='step',linewidth=1.2,label='Finite magnetic quotient spectra')
     x=np.linspace(-2,2,500)

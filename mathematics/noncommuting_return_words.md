@@ -1,6 +1,6 @@
 ---
 title: "Noncommuting return words and all-orders arithmetic quantum conjugacy"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "6 September 2026"
 ---
 

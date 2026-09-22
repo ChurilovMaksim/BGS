@@ -2,7 +2,7 @@
 
 Source checkpoint: main `739cba4536ebb1829b5f2b3d8596681a3bd013c8`.
 This is a research record, not a priority claim or a complete review of every
-historical proof in WoW.
+historical proof in BGS.
 
 ## Result and route
 

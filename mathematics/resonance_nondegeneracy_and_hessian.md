@@ -1,6 +1,6 @@
 ---
 title: "Certified multiorbit resonance and an invariant Hessian obstruction"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "6 September 2026"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Smooth Green--Kubo recurrence and compensated residual kicks"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

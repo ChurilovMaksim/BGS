@@ -1,6 +1,6 @@
 ---
 title: "Short-period quantum spectra from Weyl covariance, without a split-torus assumption"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

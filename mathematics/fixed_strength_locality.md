@@ -1,6 +1,6 @@
 ---
 title: "Fixed-strength coboundary kicks: locality, long-time conjugacy, and microscopic clustering"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

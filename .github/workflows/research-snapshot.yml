@@ -24,14 +24,14 @@ jobs:
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/research-snapshot"
           git fsck --no-dangling
-          git bundle create "$RUNNER_TEMP/research-snapshot/WoW.bundle" --all
-          git bundle verify "$RUNNER_TEMP/research-snapshot/WoW.bundle"
-          git archive --format=tar.gz -o "$RUNNER_TEMP/research-snapshot/WoW-source.tar.gz" HEAD
+          git bundle create "$RUNNER_TEMP/research-snapshot/BGS.bundle" --all
+          git bundle verify "$RUNNER_TEMP/research-snapshot/BGS.bundle"
+          git archive --format=tar.gz -o "$RUNNER_TEMP/research-snapshot/BGS-source.tar.gz" HEAD
           git rev-parse HEAD > "$RUNNER_TEMP/research-snapshot/HEAD.txt"
           git ls-files -s > "$RUNNER_TEMP/research-snapshot/tree-index.txt"
           git for-each-ref --format='%(objectname) %(refname)' > "$RUNNER_TEMP/research-snapshot/refs.txt"
           cd "$RUNNER_TEMP/research-snapshot"
-          sha256sum WoW.bundle WoW-source.tar.gz tree-index.txt > SHA256SUMS
+          sha256sum BGS.bundle BGS-source.tar.gz tree-index.txt > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with:
           name: private-research-source-${{ github.sha }}
