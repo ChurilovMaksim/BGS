@@ -10,9 +10,9 @@ The central programme asks when deterministic quantizations of classically chaot
 
 For the maintained fixed nonlinear family
 
-$
+$$
 U_N=\\exp(i\\tau N A_N)M_N,\\qquad \\tau=10^{-80},
-$
+$$
 the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order $N$. The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
 
 ## Current scientific picture
