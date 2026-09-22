@@ -1,6 +1,6 @@
 # Current-results addendum — 2026-09-07
 
-This file extends `results.md`. The status authority is `../record/claim_ledger.md` together with `../record/claim_ledger_addendum_20260907.md`; the dated addendum wins for the scopes it covers.
+This is a preserved dated results supplement. Current status authority is solely `../record/claim_ledger.md`; this file supplies detailed September 7 exposition and does not override the consolidated ledger.
 
 ## 1. Unrestricted finite-Fourier temporal nondegeneracy — EXACT
 
