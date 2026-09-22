@@ -46,6 +46,7 @@ REQUIRED = [
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
     ROOT / "record" / "claim_ledger.md",
+    ROOT / "record" / "repository_conventions.md",
     ROOT / "record" / "consolidation_map.json",
     ROOT / "record" / "final_consolidation_audit_20260906.md",
     MAINTENANCE / "verify_workspace.py",
@@ -103,6 +104,8 @@ def check_canonical_identity() -> None:
     for root in active_roots:
         paths = [root] if root.is_file() else [p for p in root.rglob("*") if p.is_file()]
         for p in paths:
+            if p.resolve() == Path(__file__).resolve():
+                continue
             if p.suffix.lower() not in {".md", ".tex", ".py", ".cpp", ".c", ".yml", ".yaml", ".toml", ".txt", ""}:
                 continue
             text = p.read_text(encoding="utf-8", errors="replace")

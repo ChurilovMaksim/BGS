@@ -9,19 +9,20 @@ Long-horizon research repository on rigorous routes to the Bohigas–Giannoni–
 The central programme asks when deterministic quantizations of classically chaotic maps exhibit random-matrix local spectral statistics, and what arithmetic, dynamical, cohomological, or symmetry mechanisms can obstruct that limit.
 
 For the maintained fixed nonlinear family
-[
-U_N=\exp(i\tau N A_N)M_N,\qquad \tau=10^{-80},
-]
-the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order (N). The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
+
+$
+U_N=\\exp(i\\tau N A_N)M_N,\\qquad \\tau=10^{-80},
+$
+the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order $N$. The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
 
 ## Current scientific picture
 
 The repository currently establishes, in their stated scopes:
 
-- exact trace-to-microscopic-statistics identities showing why fixed moments and (o(N))-time trace information do not determine microscopic BGS statistics;
+- exact trace-to-microscopic-statistics identities showing why fixed moments and $o(N)$-time trace information do not determine microscopic BGS statistics;
 - arithmetic return laws and Gaussian/global limits on explicit cat-map subsequences, together with sharp counterexamples below their regularity thresholds;
 - exact finite-field and Cayley-energy reductions, resultant structure, averaged arithmetic bounds, and finite independent certificates;
-- a fixed-model classical symmetry theorem excluding ordinary (C^1) centralizers, reversors, and relevant affine conjugacies in the stated perturbative range;
+- a fixed-model classical symmetry theorem excluding ordinary $C^1$ centralizers, reversors, and relevant affine conjugacies in the stated perturbative range;
 - a full-symbol odd-Pell Gaussian crossover and a necessary escape condition from the weak-kick obstruction;
 - mixed-loop/resolvent identities and conditional barriers that sharpen the fixed-map frontier without identifying the CUE limit;
 - resonance/cohomology theorems, including sharp coercivity on complete Fourier-line classes and explicit obstructions to purely local fixed-point arguments;
