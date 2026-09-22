@@ -1,8 +1,8 @@
 # Manuscript
 
-`WoW_unified.tex` is the single maintained publication entry point on `main`.
+`BGS_unified.tex` is the single maintained publication entry point on `main`.
 
-The files in `unified_sections/` are source segments of that one manuscript. Some long sections are split into sequential `*_partN.tex` files solely to preserve exact recovered bytes while retaining later corrections already present in `main`; the parts are non-overlapping and are included in order by `WoW_unified.tex`.
+The files in `unified_sections/` are source segments of that one manuscript. Some long sections are split into sequential `*_partN.tex` files solely to preserve exact recovered bytes while retaining later corrections already present in `main`; the parts are non-overlapping and are included in order by `BGS_unified.tex`.
 
 The six `unified_sections/return_*.tex` chapters are generated from the
 corresponding maintained Markdown proofs by

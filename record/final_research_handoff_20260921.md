@@ -73,7 +73,7 @@ PR #16 is direct ancestry of this integration. Its 27-file recovery is preserved
 
 ## 5. Canonical manuscript and CI repair
 
-A complete readback shows that manuscript/unified_sections/fixed_map_frontier.tex was already included near the end of WoW_unified.tex. An earlier partial view of the long master file was misleading; no claim of a missing frontier input is retained.
+A complete readback shows that manuscript/unified_sections/fixed_map_frontier.tex was already included near the end of BGS_unified.tex. An earlier partial view of the long master file was misleading; no claim of a missing frontier input is retained.
 
 The actual CI asymmetry was narrower: the independent manuscript workflow checked both return-section and fixed-map synchronization, while the main scientific workflow checked only the return sections before building. The integration adds sync_fixed_map_section.py --check to the main workflow and inserts the separate 21 September publication summary immediately after the already-present fixed-map frontier.
 

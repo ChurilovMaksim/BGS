@@ -1,6 +1,6 @@
 ---
 title: "Microscopic clustering stable above the mean-spacing scale"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

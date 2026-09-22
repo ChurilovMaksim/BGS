@@ -71,7 +71,7 @@ radius hypothesis was made explicit, and the excerpt was rebuilt and the
 changed page inspected again. The scientific formulas were unchanged.
 
 The excerpt is not a second maintained publication root. The full canonical
-source is still `manuscript/WoW_unified.tex`; its input graph was updated.
+source is still `manuscript/BGS_unified.tex`; its input graph was updated.
 No fresh build or full proof audit of every older chapter is claimed. Lean
 compilation, successful cloud CI, and independent referee acceptance are not
 asserted. The earlier seven-page excerpt and its execution certificate remain

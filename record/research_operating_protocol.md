@@ -2,7 +2,7 @@
 
 **Status:** repository process specification, adopted 5 September 2026.
 
-This file records the working discipline for the WoW research programme. It is
+This file records the working discipline for the BGS research programme. It is
 not a mathematical theorem and does not override `claim_ledger.md` on claim
 status. Its purpose is to prevent research results, computations, formal
 certificates, manuscript text and repository summaries from drifting apart.

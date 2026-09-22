@@ -1,6 +1,6 @@
 ---
 title: "Smooth observables, Fourier cohomology, and two arithmetic resonance scales"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

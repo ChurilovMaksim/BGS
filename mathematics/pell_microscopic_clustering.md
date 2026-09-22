@@ -1,6 +1,6 @@
 ---
 title: "Microscopic clustering under subcritical kicks: a spectral concentration criterion"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

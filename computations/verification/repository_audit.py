@@ -53,7 +53,7 @@ REQUIRED = [
     ROOT / "computations" / "verification" / "repository_audit.py",
     ROOT / "formalization" / "Bgs.lean",
     ROOT / "CMakeLists.txt",
-    MANUSCRIPT / "WoW_unified.tex",
+    MANUSCRIPT / "BGS_unified.tex",
     MANUSCRIPT / "README.md",
     ROOT / "archive" / "branch-snapshots" / "README.md",
     ROOT / "archive" / "delivery-20260906" / "README.md",
@@ -116,11 +116,11 @@ def check_manuscript_surface() -> None:
     if present_legacy:
         fail("legacy/duplicate manuscript surface still present: " + ", ".join(present_legacy))
 
-    master = MANUSCRIPT / "WoW_unified.tex"
+    master = MANUSCRIPT / "BGS_unified.tex"
     text = master.read_text(encoding="utf-8")
     inputs = re.findall(r"\\input\{([^}]+)\}", text)
     if not inputs:
-        fail("WoW_unified.tex has no inputs")
+        fail("BGS_unified.tex has no inputs")
     missing: list[str] = []
     for raw in inputs:
         p = MANUSCRIPT / raw

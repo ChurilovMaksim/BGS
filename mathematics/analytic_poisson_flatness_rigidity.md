@@ -1,6 +1,6 @@
 ---
 title: "Poisson rigidity of analytic observables under a hyperbolic toral automorphism"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

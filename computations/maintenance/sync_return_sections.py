@@ -44,7 +44,7 @@ def render(name, prefix):
                 target=node['c'][2][0]
                 if not target.startswith(('http:', 'https:', '#')):
                     relative=(source.parent/target).resolve().relative_to(ROOT)
-                    node['c'][2][0]='https://github.com/ChurilovMaksim/WoW/blob/main/'+str(relative)
+                    node['c'][2][0]='https://github.com/ChurilovMaksim/BGS/blob/main/'+str(relative)
             for value in node.values():links(value)
         elif isinstance(node,list):
             for value in node:links(value)

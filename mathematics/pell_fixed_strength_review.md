@@ -1,6 +1,6 @@
 ---
 title: "Review and verification of the fixed-strength flat-kick branch"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

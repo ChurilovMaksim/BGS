@@ -1,6 +1,6 @@
 ---
 title: "Fixed-strength nonlinear cat maps with all-orders quantum conjugacy"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 
