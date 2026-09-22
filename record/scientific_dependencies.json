@@ -1,0 +1,123 @@
+{
+  "schema": "bgs-scientific-dependencies-v1",
+  "updated": "2026-09-22",
+  "nodes": [
+    "BGS-FM-001",
+    "BGS-FM-002",
+    "BGS-FM-003",
+    "BGS-FM-004",
+    "BGS-LOOP-001",
+    "BGS-TRACE-001",
+    "BGS-TRACE-002",
+    "BGS-TRACE-003",
+    "BGS-TRACE-004",
+    "BGS-CAYLEY-001",
+    "BGS-CAYLEY-002",
+    "BGS-CAYLEY-003",
+    "BGS-CAYLEY-004",
+    "BGS-CAYLEY-005",
+    "BGS-RET-001",
+    "BGS-RET-002",
+    "BGS-RES-001",
+    "BGS-RES-002",
+    "BGS-FORMAL-001",
+    "BGS-BGS-001"
+  ],
+  "edges": [
+    {
+      "from": "BGS-FM-003",
+      "to": "BGS-FM-004",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-002",
+      "to": "BGS-LOOP-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-001",
+      "to": "BGS-TRACE-002",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-002",
+      "to": "BGS-TRACE-003",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-003",
+      "to": "BGS-TRACE-004",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-001",
+      "to": "BGS-CAYLEY-002",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-002",
+      "to": "BGS-CAYLEY-003",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-002",
+      "to": "BGS-CAYLEY-004",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-002",
+      "to": "BGS-CAYLEY-005",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-003",
+      "to": "BGS-CAYLEY-005",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-CAYLEY-004",
+      "to": "BGS-CAYLEY-005",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-002",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-003",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-004",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-LOOP-001",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-003",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-004",
+      "to": "BGS-BGS-001",
+      "type": "scientific-prerequisite"
+    }
+  ],
+  "terminal_open_claims": [
+    "BGS-CAYLEY-005",
+    "BGS-BGS-001"
+  ],
+  "note": "Edges encode maintained logical/programme dependencies among registered claims, not every lemma used inside each proof."
+}

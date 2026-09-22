@@ -1,0 +1,29 @@
+{
+  "schema": "bgs-paper-manifest-v1",
+  "slug": "arithmetic-cayley",
+  "title": "Arithmetic and Cayley energy",
+  "status": "candidate-scope",
+  "authority": "record/claims.json",
+  "claims": [
+    "BGS-CAYLEY-001",
+    "BGS-CAYLEY-002",
+    "BGS-CAYLEY-003",
+    "BGS-CAYLEY-004"
+  ],
+  "authoritative_sources": [
+    "mathematics/fourth_moment_reduction.md",
+    "mathematics/cayley_additive_energy.md",
+    "mathematics/cayley_direct_energy.md",
+    "mathematics/cayley_curve_uniform.md"
+  ],
+  "external_dependencies": [
+    "EXT-VM-2015",
+    "EXT-CZ-2013"
+  ],
+  "excluded_open_claims": [
+    "BGS-CAYLEY-005",
+    "BGS-BGS-001"
+  ],
+  "verification_commit": null,
+  "note": "Focused arithmetic reduction/bounds paper; microscopic BGS is outside scope."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "bgs-runtime-manifest-v1",
+  "updated": "2026-09-22",
+  "python": {
+    "ci": "3.13",
+    "requirements": "requirements.txt",
+    "pinning": "exact package versions; artifact hashes not yet locked"
+  },
+  "cpp": {
+    "standard": "C++20",
+    "build_system": "CMake >= 3.20",
+    "boost": "system libboost-dev in CI"
+  },
+  "lean": {
+    "toolchain_file": "formalization/lean-toolchain",
+    "manifest": "formalization/lake-manifest.json"
+  },
+  "manuscript": {
+    "builder": "computations/maintenance/build_unified_manuscript.py",
+    "pandoc": "workflow-provisioned",
+    "tex": "workflow-provisioned"
+  },
+  "verification": {
+    "structural": "python computations/verification/repository_audit.py",
+    "scientific_registry": "python computations/verification/scientific_registry_audit.py",
+    "workspace": "python computations/maintenance/verify_workspace.py"
+  },
+  "caveat": "A manifest describes the target environment. Actual execution status must be recorded separately."
+}
