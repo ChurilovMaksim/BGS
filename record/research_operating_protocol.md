@@ -70,17 +70,18 @@ A result is not fully integrated merely because a proof note or script exists.
 Before promoting a substantive result, check as applicable:
 
 1. complete statement/hypotheses/proof/gaps in `mathematics/`;
-2. reproducible code in `computations/verification/` or `computations/analysis/`;
-3. Lean modules when there is a useful formalizable kernel/certificate;
-4. promoted compact evidence in `evidence/` rather than terminal/chat output;
-5. correct status in `record/claim_ledger.md`;
-6. theorem-index update in `mathematics/results.md`;
-7. README status/frontier/verification-command update;
-8. TeX manuscript update if the main mathematical narrative changes;
-9. literature update when an external theorem becomes load-bearing;
-10. research-route/retraction/provenance record update;
-11. CI regression gate when future refactors could silently break evidence;
-12. synchronization of generated PDFs/figures/tables whenever the available
+2. stable claim ID and cross-layer links in `record/claims.json`;
+3. reproducible code in `computations/verification/` or `computations/analysis/`;
+4. Lean modules when there is a useful formalizable kernel/certificate;
+5. promoted compact evidence in `evidence/` rather than terminal/chat output;
+6. correct status in `record/claim_ledger.md`;
+7. theorem-index update in `mathematics/results.md`;
+8. README status/frontier/verification-command update;
+9. TeX manuscript update if the main mathematical narrative changes;
+10. literature update with exact locator and hypothesis mapping in `literature/external_dependencies.json` when an external theorem becomes load-bearing;
+11. research-route/retraction/provenance record update;
+12. CI regression gate when future refactors could silently break evidence;
+13. synchronization of generated PDFs/figures/tables whenever the available
     repository interface permits binary-safe updates; otherwise record the
     limitation explicitly rather than pretending synchronization occurred.
 

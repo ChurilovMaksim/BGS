@@ -15,13 +15,14 @@ Active source, documentation, manuscript, workflow, package/project identifiers,
 When two surfaces disagree, use the following order:
 
 1. `record/claim_ledger.md` — current claim status and evidentiary boundary;
-2. maintained proof sources in `mathematics/`;
-3. explicit load-bearing external sources in `literature/`;
-4. formal statements in `formalization/`, within their stated trust boundary;
-5. reproducible verification sources in `computations/`;
-6. promoted execution evidence in `evidence/`;
-7. the consolidated manuscript and README summaries;
-8. historical records and Git history.
+2. `record/claims.json` — stable machine-readable claim identities and cross-layer links;
+3. maintained proof sources in `mathematics/`;
+4. explicit load-bearing external sources in `literature/`;
+5. formal statements in `formalization/`, within their stated trust boundary;
+6. reproducible verification sources in `computations/`;
+7. promoted execution evidence in `evidence/`;
+8. the consolidated manuscript, paper manifests, and README summaries;
+9. historical records and Git history.
 
 Historical material never overrides a later correction in the current claim ledger.
 
@@ -30,9 +31,9 @@ Historical material never overrides a later correction in the current claim ledg
 A substantive result is considered integrated only when the relevant layers agree:
 
 - theorem statement, assumptions, proof, and boundary in `mathematics/`;
-- claim status in `record/claim_ledger.md`;
+- claim status in `record/claim_ledger.md` and a stable ID/cross-links in `record/claims.json`;
 - theorem index entry when the result is part of the maintained corpus;
-- external theorem locator and hypothesis check when a source is load-bearing;
+- external theorem locator and hypothesis mapping in `literature/external_dependencies.json` when a source is load-bearing;
 - verification or formalization when these materially increase confidence;
 - manuscript integration when the result changes the long-form scientific narrative;
 - explicit retraction or supersession record when an earlier route becomes false.
@@ -102,4 +103,4 @@ Prefer one maintained implementation per scientific role, with independent imple
 
 Retire obsolete publishers, duplicated manuscripts, stale experiment copies, and dead integration scripts after their history is safely preserved. Keep `main` navigable to a new researcher without requiring reconstruction of the project's chronological development.
 
-The repository should remain usable in three modes: mathematical reading, independent verification, and historical audit.
+The repository should remain usable in three modes: mathematical reading, independent verification, and historical audit. Stable proof paths are preferred over bulk renames; thematic navigation is maintained through `mathematics/topics/` and `record/mathematics_topics.json`.

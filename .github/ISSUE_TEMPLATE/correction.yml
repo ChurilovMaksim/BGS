@@ -1,0 +1,36 @@
+name: Scientific correction
+description: Report a possible false statement, scope error, constant error, or evidence mismatch.
+title: "[Correction] "
+labels: []
+body:
+  - type: input
+    id: claims
+    attributes:
+      label: Affected claim IDs
+      placeholder: BGS-CAYLEY-003
+  - type: textarea
+    id: location
+    attributes:
+      label: Exact location
+      description: File, theorem/equation/line or certificate path.
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: Reproducible discrepancy
+      description: Give the mathematical counterexample, exact computation, or source mismatch.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Downstream consequence
+      description: Which claims, manuscript statements, evidence, or publications may need revision?
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Independent verification
+      description: Commands or independent derivation used, if any.

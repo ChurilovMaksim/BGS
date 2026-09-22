@@ -1,0 +1,41 @@
+name: Proof obligation
+description: Record a precise unresolved mathematical obligation.
+title: "[Proof obligation] "
+labels: []
+body:
+  - type: input
+    id: claims
+    attributes:
+      label: Claim IDs
+      description: Stable BGS claim IDs affected by this obligation.
+      placeholder: BGS-TRACE-005
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact statement
+      description: State the missing estimate/theorem with hypotheses and normalization.
+    validations:
+      required: true
+  - type: textarea
+    id: sufficiency
+    attributes:
+      label: Why this closes or advances the route
+      description: Name the downstream implication and any remaining independent obligations.
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: Strongest current result and failed routes
+      description: Link maintained sources, negative controls, and relevant retractions.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: External and internal dependencies
+      description: Exact theorem locators, claim IDs, or state that none are used.
+    validations:
+      required: true

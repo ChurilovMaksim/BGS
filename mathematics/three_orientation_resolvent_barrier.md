@@ -1,5 +1,7 @@
 # Three-orientation mixed-loop barrier for the pair transform
 
+**Claim ID:** `BGS-FM-004`
+
 Date: 21 September 2026.
 
 Status: conditional theorem for arbitrary unitary spectra. Its residual hypotheses are not proved for the frozen BGS map. The proof is self-reviewed with exact symbolic and finite numerical checks; there is no Lean certificate or independent referee report.

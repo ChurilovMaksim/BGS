@@ -4,6 +4,16 @@
   "rules": [
     {
       "generated": [
+        "record/claim_registry.md"
+      ],
+      "producer": "computations/maintenance/render_claim_registry.py",
+      "mode": "deterministic Markdown view; --check is fail-closed",
+      "authoritative_sources": [
+        "record/claims.json"
+      ]
+    },
+    {
+      "generated": [
         "manuscript/unified_sections/return_gas.tex",
         "manuscript/unified_sections/return_position.tex",
         "manuscript/unified_sections/return_periodic.tex",

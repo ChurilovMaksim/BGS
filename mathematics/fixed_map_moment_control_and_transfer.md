@@ -1,5 +1,7 @@
 # Fixed-map continuation: moment controls, a loop-test falsifier, and growing spectral transfer
 
+**Claim ID:** `BGS-FM-003`
+
 Date: 20--21 September 2026.
 
 Status: exact finite-spectrum identities plus conditional asymptotic consequences. The fixed-\(\tau\) BGS estimate remains open.

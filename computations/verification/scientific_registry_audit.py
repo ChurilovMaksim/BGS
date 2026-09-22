@@ -60,10 +60,15 @@ def audit_claims() -> tuple[dict[str, dict], set[str]]:
             fail(f"{cid}: invalid state {row.get('state')!r}")
         if not row.get("ledger_status"):
             fail(f"{cid}: missing ledger_status")
+        if "EXTERNAL" in row["ledger_status"] and not row.get("external_dependencies"):
+            fail(f"{cid}: external-theorem status lacks external_dependencies")
         source = row.get("source")
         if not isinstance(source, str):
             fail(f"{cid}: missing source")
         require_path(source)
+        source_text = (ROOT / source).read_text(encoding="utf-8", errors="replace")
+        if cid not in source_text:
+            fail(f"{cid}: stable claim id is not anchored in source {source}")
         for field in ("evidence", "verifiers", "formalization", "manuscript"):
             values = row.get(field, [])
             if not isinstance(values, list):
@@ -138,7 +143,7 @@ def audit_graph(claims: dict[str, dict]) -> None:
     for node in sorted(ids):
         dfs(node)
 
-def audit_papers(claim_ids: set[str], external_ids: set[str]) -> None:
+def audit_papers(claims_by_id: dict[str, dict], claim_ids: set[str], external_ids: set[str]) -> None:
     if not PAPERS.is_dir():
         fail("papers/ is missing")
     manifests = sorted(PAPERS.glob("*/paper.json"))
@@ -151,6 +156,8 @@ def audit_papers(claim_ids: set[str], external_ids: set[str]) -> None:
         for cid in data.get("claims", []):
             if cid not in claim_ids:
                 fail(f"{path.relative_to(ROOT)}: unknown claim {cid}")
+            if claims_by_id[cid]["state"] == "open":
+                fail(f"{path.relative_to(ROOT)}: OPEN claim {cid} cannot be listed as an included result")
         for cid in data.get("excluded_open_claims", []):
             if cid not in claim_ids:
                 fail(f"{path.relative_to(ROOT)}: unknown excluded claim {cid}")
@@ -159,6 +166,21 @@ def audit_papers(claim_ids: set[str], external_ids: set[str]) -> None:
                 fail(f"{path.relative_to(ROOT)}: unknown external dependency {eid}")
         for rel in data.get("authoritative_sources", []):
             require_path(rel)
+
+def audit_python_pins() -> None:
+    req = ROOT / "requirements.txt"
+    require_path("requirements.txt")
+    lines = [
+        line.strip() for line in req.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    ]
+    bad = [line for line in lines if not re.fullmatch(r"[A-Za-z0-9_.-]+==[^<>=!~; ]+", line)]
+    if bad:
+        fail("requirements.txt contains non-exact runtime pin(s): " + ", ".join(bad))
+    python_version = (ROOT / ".python-version").read_text(encoding="utf-8").strip()
+    env = load(ENVIRONMENT)
+    if python_version != str(env["python"]["ci"]):
+        fail(".python-version and runtime-manifest Python version disagree")
 
 def audit_generated_and_environment() -> None:
     data = load(GENERATED)
@@ -215,6 +237,10 @@ def audit_governance_surface() -> None:
         "record/branch_protection_policy.md", "record/scientific_dependency_graph.md",
         "record/history/2026/INDEX.md", "evidence/executions/README.md",
         "environment/README.md", "papers/README.md", "mathematics/topics/README.md",
+        "record/claim_registry.md", "computations/maintenance/render_claim_registry.py",
+        ".github/ISSUE_TEMPLATE/proof-obligation.yml",
+        ".github/ISSUE_TEMPLATE/correction.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
     ]
     for rel in required:
         require_path(rel)
@@ -223,7 +249,8 @@ def main() -> int:
     claims, claim_ids = audit_claims()
     external_ids = audit_external(claims)
     audit_graph(claims)
-    audit_papers(claim_ids, external_ids)
+    audit_papers(claims, claim_ids, external_ids)
+    audit_python_pins()
     audit_generated_and_environment()
     audit_topics()
     audit_governance_surface()

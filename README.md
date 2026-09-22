@@ -13,6 +13,7 @@ For the maintained fixed nonlinear family
 $$
 U_N=\\exp(i\\tau N A_N)M_N,\\qquad \\tau=10^{-80},
 $$
+
 the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order $N$. The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
 
 ## Current scientific picture
@@ -28,26 +29,24 @@ The repository currently establishes, in their stated scopes:
 - resonance/cohomology theorems, including sharp coercivity on complete Fourier-line classes and explicit obstructions to purely local fixed-point arguments;
 - negative controls and retractions documenting proof routes that fail.
 
-The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and the maintained mathematical notes.
+The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and maintained mathematical sources.
 
 ## Where to start
 
-For a mathematical reader or referee, the recommended order is:
+For a mathematical reader or referee:
 
-1. [Claim ledger](record/claim_ledger.md) — repository-wide authority for the current status of claims.
-2. [Results index](mathematics/results.md) — concise map of established results and their boundaries.
-3. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) — the maintained frozen model and the remaining BGS estimate.
-4. [Open questions](mathematics/open_questions.md) — unresolved obligations only.
-5. [Trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) — exact Heisenberg-scale reduction.
-6. [Research manuscript](manuscript/BGS_unified.tex) — consolidated long-form exposition.
-7. [Literature map](literature/bibliography.md) — load-bearing external results and scope checks.
-8. [Evidence provenance](evidence/provenance.md) — interpretation of promoted certificates and numerical records.
-9. [Retractions](record/retractions.md) — false, superseded, or insufficient historical routes.
-10. [Repository conventions](record/repository_conventions.md) — source-of-truth, synchronization, archival, and review policy.
+1. [Source of truth](SOURCE_OF_TRUTH.md) — the repository authority hierarchy.
+2. [Claim ledger](record/claim_ledger.md) — repository-wide authority for current scientific status.
+3. [Stable claim registry](record/claim_registry.md), its [machine-readable source](record/claims.json), and the [dependency graph](record/scientific_dependency_graph.md) — stable identities and programme dependencies.
+4. [Results index](mathematics/results.md) and [open obligations](mathematics/open_questions.md).
+5. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) and [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md).
+6. [Mathematics topic views](mathematics/topics/README.md) — thematic navigation without moving authoritative proof paths.
+7. [Research manuscript](manuscript/BGS_unified.tex) — consolidated long-form exposition.
+8. [Focused publication candidates](papers/README.md) — scoped paper manifests without duplicated proofs.
+9. [External theorem registry](literature/external_dependencies.json), [evidence provenance](evidence/provenance.md), and [errata](ERRATA.md).
+10. [Review protocol](REVIEWING.md), [contribution protocol](CONTRIBUTING.md), and [roadmap](ROADMAP.md).
 
 ## Evidence and claim discipline
-
-The project distinguishes the following levels:
 
 | Level | Meaning |
 |---|---|
@@ -60,7 +59,7 @@ The project distinguishes the following levels:
 | **OPEN** | Required closure condition not established |
 | **RETRACTED** | False, superseded, or insufficient route retained for provenance |
 
-The current status authority is [record/claim_ledger.md](record/claim_ledger.md). Historical notes, old commits, finite computations, and manuscript prose do not silently strengthen it.
+The current status authority is [record/claim_ledger.md](record/claim_ledger.md). [record/claims.json](record/claims.json) supplies stable IDs and cross-links but cannot strengthen the ledger. Historical notes, old commits, finite computations, and manuscript prose cannot silently strengthen either.
 
 ## Research corpus
 
@@ -68,28 +67,29 @@ The current status authority is [record/claim_ledger.md](record/claim_ledger.md)
 |---|---|
 | [mathematics/](mathematics/README.md) | Maintained theorem statements, proofs, reductions, counterexamples, and open problems |
 | [manuscript/](manuscript/README.md) | Canonical consolidated research manuscript |
-| [literature/](literature/bibliography.md) | Theorem-level source map and literature boundary |
+| [papers/](papers/README.md) | Focused publication scopes linked to stable claim IDs |
+| [literature/](literature/bibliography.md) | Theorem-level source map and external-dependency checks |
 | [formalization/](formalization/README.md) | Lean 4 algebraic kernels and finite certificates with an explicit trust boundary |
 | [computations/](computations/README.md) | Exact/finite verification, independent implementations, and numerical diagnostics |
-| [evidence/](evidence/provenance.md) | Promoted certificates, reference data, and execution provenance |
-| [record/](record/claim_ledger.md) | Claim authority, audits, retractions, research process, and historical decisions |
+| [evidence/](evidence/provenance.md) | Promoted certificates, numerical/reference data, and execution provenance |
+| [record/](record/README.md) | Claim authority, machine registries, audits, retractions, and historical decisions |
+| [environment/](environment/README.md) | Reproducibility target and release environment contract |
 | [supplement/fixed_map/](supplement/fixed_map/README.md) | Detailed fixed-map derivations and replayable evidence |
 | [archive/](archive/branch-snapshots/README.md) | Historical provenance only; not a competing source of current truth |
 
 ## Reproducibility
 
-The repository is designed so that theorem statements, verification code, formal certificates, manuscript text, and status records can be audited separately.
-
-The structural gate is:
+Start with the two cheap fail-closed gates:
 
 ```sh
-python -m pip install -r requirements.txt
+python computations/verification/scientific_registry_audit.py
 python computations/verification/repository_audit.py
 ```
 
-The maintained Python/C++ verification surface is:
+Then run the maintained Python/C++ verification surface:
 
 ```sh
+python -m pip install -r requirements.txt
 cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build build/cmake --parallel
 python computations/maintenance/verify_workspace.py \
@@ -113,16 +113,18 @@ python computations/maintenance/build_unified_manuscript.py \
   --output-dir build/unified-paper
 ```
 
-See [REPRODUCE_unified.md](REPRODUCE_unified.md) for the complete reproduction contract and the exact boundary between local execution records and cloud CI.
+See [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manifest.json](environment/runtime-manifest.json) for the execution contract. A GitHub Actions run that ends with `runner_id=0` and `steps=[]` is an infrastructure non-run, not a pass or scientific failure.
 
-## Publication and review model
+## Publication, citation, and review
 
-`manuscript/BGS_unified.tex` is the single maintained long-form research manuscript. It is a consolidated research record rather than a claim that every theorem family should be submitted as one journal article. Focused publication should extract coherent theorem families while preserving the repository-level dependency graph and provenance.
+`manuscript/BGS_unified.tex` is the single maintained programme manuscript. Focused publication candidates under `papers/` select coherent theorem families by stable claim ID and never duplicate proof authority.
 
-The repository is maintained as a long-term scientific record: corrected results remain traceable, retractions are explicit, historical evidence is not rewritten, and generated publication surfaces are synchronized from their maintained mathematical sources where applicable.
+Citation metadata is in [CITATION.cff](CITATION.cff). Research-state releases follow [RELEASES.md](RELEASES.md); archival metadata is prepared in `.zenodo.json`, but no DOI is claimed until an external archive issues one. Licensing remains an explicit release decision documented in [LICENSE_POLICY.md](LICENSE_POLICY.md).
+
+The repository is maintained as a long-term scientific record: corrected results remain traceable, retractions are explicit, historical evidence is not rewritten, and generated publication surfaces are synchronized from maintained mathematical sources.
 
 ## Authorship and scope
 
 Maintainer and manuscript author: **Maksim Churilov**.
 
-The repository does not claim a general proof of the BGS conjecture, external priority for the full project corpus, or independent referee validation of every project theorem. The goal is to make the exact boundary between proved mathematics, imported theorems, finite evidence, conditional reductions, and open problems inspectable.
+The repository does not claim a general proof of the BGS conjecture, external priority for the full project corpus, or independent referee validation of every project theorem. Its purpose is to make the exact boundary between proved mathematics, imported theorems, finite evidence, conditional reductions, and open problems inspectable.

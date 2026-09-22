@@ -22,6 +22,7 @@ jobs:
       - name: Validate scientific registries and repository structure
         run: |
           python computations/verification/scientific_registry_audit.py
+          python computations/maintenance/render_claim_registry.py --check
           python computations/verification/repository_audit.py
       - name: Check generated manuscript sections
         run: |

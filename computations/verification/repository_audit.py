@@ -26,6 +26,7 @@ ALLOWED_WORKFLOWS = {
     "build-manuscript.yml",
     "ci.yml",
     "research-snapshot.yml",
+    "research-release.yml",
 }
 
 STALE_MAINTENANCE = {
@@ -47,11 +48,26 @@ REQUIRED = [
     ROOT / "computations" / "README.md",
     ROOT / "record" / "claim_ledger.md",
     ROOT / "record" / "repository_conventions.md",
+    ROOT / "record" / "claims.json",
+    ROOT / "record" / "claim_registry.md",
+    ROOT / "record" / "scientific_dependencies.json",
+    ROOT / "record" / "generated_sources.json",
+    ROOT / "record" / "mathematics_topics.json",
+    ROOT / "literature" / "external_dependencies.json",
+    ROOT / "evidence" / "index.json",
+    ROOT / "environment" / "runtime-manifest.json",
+    ROOT / "papers" / "README.md",
+    ROOT / "CITATION.cff",
+    ROOT / "SOURCE_OF_TRUTH.md",
+    ROOT / "CONTRIBUTING.md",
+    ROOT / "REVIEWING.md",
     ROOT / "record" / "consolidation_map.json",
     ROOT / "record" / "final_consolidation_audit_20260906.md",
     MAINTENANCE / "verify_workspace.py",
+    MAINTENANCE / "render_claim_registry.py",
     MAINTENANCE / "build_unified_manuscript.py",
     ROOT / "computations" / "verification" / "repository_audit.py",
+    ROOT / "computations" / "verification" / "scientific_registry_audit.py",
     ROOT / "formalization" / "Bgs.lean",
     ROOT / "CMakeLists.txt",
     MANUSCRIPT / "BGS_unified.tex",
@@ -219,7 +235,24 @@ def check_lean_coverage() -> None:
 def check_active_markdown_links() -> None:
     pat = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
     broken: list[str] = []
-    for p in ACTIVE_MARKDOWN:
+    dynamic = sorted((ROOT / "mathematics" / "topics").rglob("README.md"))
+    dynamic += sorted((ROOT / "papers").rglob("README.md"))
+    dynamic += [
+        ROOT / "SOURCE_OF_TRUTH.md",
+        ROOT / "CONTRIBUTING.md",
+        ROOT / "REVIEWING.md",
+        ROOT / "ROADMAP.md",
+        ROOT / "RELEASES.md",
+        ROOT / "ERRATA.md",
+        ROOT / "record" / "README.md",
+        ROOT / "mathematics" / "README.md",
+        ROOT / "evidence" / "provenance.md",
+    ]
+    seen: set[Path] = set()
+    for p in [*ACTIVE_MARKDOWN, *dynamic]:
+        if p in seen:
+            continue
+        seen.add(p)
         text = p.read_text(encoding="utf-8", errors="replace")
         for raw in pat.findall(text):
             dest = raw.strip().split("#", 1)[0]

@@ -1,6 +1,27 @@
 # Open mathematical obligations
 
-Only unresolved obligations belong here. Closed routes, corrected theorems and finite controls are indexed in `results.md` and `results_20260907_addendum.md`; false or superseded statements belong in `../record/retractions.md`.
+Only unresolved obligations belong here. Stable IDs are assigned in
+`../record/claims.json`; current status authority remains
+`../record/claim_ledger.md`. Closed routes and finite controls are indexed in
+`results.md`; false or superseded statements belong in
+`../record/retractions.md`.
+
+## Frontier board
+
+| Claim ID | Priority / role | Closure condition |
+|---|---|---|
+| `BGS-TRACE-005` | **central fixed-map bottleneck** | Prove the correctly desymmetrized weighted Heisenberg-scale joint-trace comparison, or an equivalent mixed-resolvent hierarchy, on every compact Fourier support. |
+| `BGS-BGS-001` | **terminal microscopic target** | Combine `BGS-TRACE-005` with the exact trace bridge, every-bandwidth extension, fixed unfolding, and correct symmetry-class hypotheses to prove the positive microscopic law for the maintained frozen map. |
+| `BGS-CAYLEY-005` | arithmetic fourth-moment frontier | Prove centered Cayley energy `(K-1)^4/p + O(K^(2+o(1)))`, or a genuinely equivalent support/divisor theorem in the intended pointwise regime. |
+| `BGS-RES-003` | analytic resonance frontier | Resolve the nonlinear analytic coboundary equation for arbitrary nonconstant real-analytic observables. |
+| `BGS-INFO-001` | information-theory application frontier | Determine matching minimax upper/lower transitions for the full moment class when physical Gaussian-channel noise vanishes with copy budget. |
+| `BGS-FORMAL-001` | verification-depth task | Rebuild the current 17-module Lean source graph and deepen formalization only where it materially reduces proof risk. |
+
+The principal BGS route is therefore not “prove everything above first”.
+`BGS-TRACE-005` is the direct model-specific obligation. The Cayley,
+resonance, and information-theory frontiers are valuable independent
+programmes and possible sources of techniques, but they are not silently
+treated as prerequisites for `BGS-BGS-001`.
 
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 

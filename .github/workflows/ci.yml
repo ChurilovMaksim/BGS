@@ -7,7 +7,32 @@ on:
 permissions:
   contents: read
 jobs:
+  scientific-registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Audit claim registry, dependencies, papers, and governance
+        run: |
+          python computations/verification/scientific_registry_audit.py
+          python computations/maintenance/render_claim_registry.py --check
+
+  repository-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Audit canonical repository structure
+        run: python computations/verification/repository_audit.py
+
   computation:
+    needs: [scientific-registry, repository-structure]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
@@ -38,23 +63,23 @@ jobs:
             ${{ runner.temp }}/checks/
             ${{ runner.temp }}/workspace.json
             ${{ runner.temp }}/fixed-map-replay/verification.json
+
   formalization:
+    needs: [scientific-registry, repository-structure]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.13'
-      - name: Audit active modules and compile all finite formal certificates
+      - name: Install Lean and compile all active finite formal certificates
         run: |
-          python computations/verification/repository_audit.py
           curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
           sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
           export PATH="$HOME/.elan/bin:$PATH"
           cd formalization
           lake build
+
   manuscript:
+    needs: [scientific-registry, repository-structure]
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

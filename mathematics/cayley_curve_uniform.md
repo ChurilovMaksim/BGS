@@ -1,5 +1,7 @@
 # Global Cayley energy from the Corvaja--Zannier curve bound
 
+**Claim ID:** `BGS-CAYLEY-004`
+
 **Status: EXACT + EXTERNAL-THEOREM.** The internal algebraic geometry and energy bookkeeping are proved below. The only external theorem input is Corvaja--Zannier, *J. Eur. Math. Soc.* 15 (2013), Theorem 2 / Corollary 2, DOI 10.4171/JEMS/409. External priority for this particular Cayley specialization has not been established.
 
 This strengthens the earlier Makarychev--Vyugin curve route in `cayley_energy_curve_bound.md`: the exponent `8/3` is unchanged, but the subgroup-size parity/range restrictions disappear and the leading fixed-curve constant is much smaller. It does not close the sharp centered `K^(2+o(1))` target and has no direct implication for microscopic BGS statistics.

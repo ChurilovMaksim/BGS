@@ -1,5 +1,7 @@
 # From band-limited to Schwartz factorial correlations
 
+**Claim ID:** `BGS-TRACE-004`
+
 **Status: proved deterministic extension lemma.** This corrects the separate
 high-frequency-tail requirement in §6 of `trace_to_local_statistics_bridge.md`.
 It supplies no arithmetic or dynamical trace estimates, and makes no claim
