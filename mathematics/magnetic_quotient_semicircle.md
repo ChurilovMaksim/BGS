@@ -1,6 +1,6 @@
 ---
 title: "Magnetic quotients and a restricted global semicircle law"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

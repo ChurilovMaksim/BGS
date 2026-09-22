@@ -97,7 +97,7 @@ def main()->None:
         if result.returncode:
             record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
             raise SystemExit(f'LaTeX pass {number} failed; see {log}')
-    text=(out/'WoW_unified.log').read_text(errors='replace')
+    text=(out/'BGS_unified.log').read_text(errors='replace')
     forbidden=['Overfull \\hbox','undefined references','undefined citations','multiply defined','destination with the same identifier']
     hits=[x for x in forbidden if x in text]
     if re.search(r"LaTeX Warning: (Reference|Citation) .* undefined",text):hits.append('unresolved cross-reference')
@@ -113,7 +113,7 @@ def main()->None:
         raise SystemExit('Build succeeded but PDF page count could not be parsed from the LaTeX log.')
     record.update(status='PASS',runtime_seconds=time.monotonic()-start,
                   page_count=int(match[1]),pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
-                  latex_log_sha256=digest(out/'WoW_unified.log'))
+                  latex_log_sha256=digest(out/'BGS_unified.log'))
     if args.publish:
         target=MANUSCRIPT/pdf.name;shutil.copy2(pdf,target)
         record['published_pdf']=str(target.relative_to(ROOT))

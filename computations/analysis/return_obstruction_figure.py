@@ -7,7 +7,7 @@ import math
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
-matplotlib.rcParams.update({'svg.fonttype': 'none', 'svg.hashsalt': 'wow-return-obstruction'})
+matplotlib.rcParams.update({'svg.fonttype': 'none', 'svg.hashsalt': 'bgs-return-obstruction'})
 import matplotlib.pyplot as plt
 from return_trace_obstruction import cue_gaussian
 

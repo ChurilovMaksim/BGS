@@ -1,6 +1,6 @@
 ---
 title: "Gaussian spectral blocks of a fixed cat map along Pell moduli"
-author: "WoW research programme"
+author: "BGS research programme"
 date: "5 September 2026"
 ---
 

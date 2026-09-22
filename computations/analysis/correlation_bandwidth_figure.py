@@ -20,7 +20,7 @@ def main():
         for sign in (-1, 1):
             dimer[F(2*r)+F(sign, 2)] = F(1, 2)
     dimer = {x: w for x, w in dimer.items() if abs(x) <= 3}
-    plt.rcParams.update({'font.size': 10, 'svg.hashsalt': 'wow-bandwidth-v1'})
+    plt.rcParams.update({'font.size': 10, 'svg.hashsalt': 'bgs-bandwidth-v1'})
     fig, axes = plt.subplots(3, 1, figsize=(7.3, 6.0), constrained_layout=True)
     for ax, atoms, title, color in zip(axes[:2], [clock, dimer],
             ['Unit clock: limiting pair measure',

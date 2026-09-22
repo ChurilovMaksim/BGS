@@ -35,7 +35,7 @@ def main():
                         default=ROOT/'evidence/certificates/cayley_trace_illustration_20260909.json')
     args = parser.parse_args()
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 10,
-                         'svg.hashsalt': 'wow-cayley-trace-20260909',
+                         'svg.hashsalt': 'bgs-cayley-trace-20260909',
                          'axes.spines.top': False, 'axes.spines.right': False})
     fig, axes = plt.subplots(1, 3, figsize=(12.3, 4.0), sharey=True)
     records = []
