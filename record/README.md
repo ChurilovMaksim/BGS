@@ -1,24 +1,41 @@
 # Research record
 
-`record/` is a compact provenance and status layer, not an archive source tree.
+`record/` is the status, governance, and provenance layer of the BGS research
+programme.
 
-See [the recovery audit](recovery_audit_20260920.md) for the current handoff,
-recovered amendments, verification boundary, and next mathematical obligation.
+## Authoritative living surface
 
-## Authoritative living status files
+- `claim_ledger.md` — sole repository-wide authority for current scientific status;
+- `claims.json` — stable machine-readable IDs/cross-links for core load-bearing claims and programme obligations;
+- `claim_registry.md` — generated human-readable view of that core registry;
+- `scientific_dependencies.json` and `scientific_dependency_graph.md` — maintained theorem/programme DAG;
+- `research_routes.md` — route-level advances, obstructions, and closure conditions;
+- `retractions.md` — full false/superseded statements and failure mechanisms;
+- `errata.json` — normalized correction IDs used to generate the reader-facing `../ERRATA.md`;
+- `repository_conventions.md` — scientific repository governance;
+- `generated_sources.json` — generated/publication source contracts;
+- `mathematics_topics.json` — complete thematic classification of maintained proof notes;
+- `branch_protection_policy.md` — intended canonical-branch review policy.
 
-- `claim_ledger.md` — repository-wide claim status, including the dated September 20 update;
-- `claim_ledger_addendum_20260907.md` — authoritative dated extension for later/corrected September 7 scopes; it wins over older prose in those scopes;
-- `research_routes.md` — route-level log of advances, obstructions and closure conditions; status still comes from the ledgers above;
-- `retractions.md` — false/superseded statements and failure mechanisms;
-- `session_science_sync_20260907.md` — late-session byte/readback and rerun audit;
-- `session_integrity_audit_20260907.md` — repeated cross-layer integrity audit after synchronization;
-- `reconstruction.md` — source-snapshot inventory and Git preservation boundary;
-- `julia_migration.md` — path-complete disposition of historical Julia files;
-- `inventory_snapshot.py` — deterministic inventory/hash tool for a supplied ZIP when locally available.
+The dated `claim_ledger_addendum_20260907.md` is preserved as historical
+source material. It no longer competes with the current consolidated
+`claim_ledger.md`.
 
-Dated review files under `record/` document narrower theorem/evidence scopes; they do not override the claim ledgers unless explicitly incorporated by the dated addendum.
+## Historical record
 
-Historical `corpus/`, `checkpoints/`, `engineering/` and `formal_drafts/` trees were removed from the current branch because they duplicated Git-preserved history and made obsolete source look current. Historical bytes remain recoverable from Git; they carry no authority over the current ledgers.
+Dated reviews document what was checked at a particular research state; they
+cannot override the living status surface. A curated chronological view is in
+[history/2026/INDEX.md](history/2026/INDEX.md).
 
-Execution evidence is separated from source presence. A GitHub workflow ending before any step executes (`steps=[]`) is an infrastructure non-run, not a scientific failure or pass. Likewise the presence of a Lean source does not establish compilation unless an actual build is recorded.
+Historical files remain at stable paths when moving them would break existing
+provenance or manuscript references. New dated operational reviews should
+normally be created under `history/YYYY/`.
+
+## Execution boundary
+
+Execution evidence is separated from source presence. A GitHub workflow ending
+before any step executes (`steps=[]`, `runner_id=0`) is an infrastructure
+non-run, not a scientific failure or pass. Likewise, the presence of a Lean
+source does not establish compilation unless an actual build is recorded.
+
+See `../SOURCE_OF_TRUTH.md` for the compact repository-wide authority order.

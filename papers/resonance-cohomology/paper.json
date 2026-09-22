@@ -1,0 +1,21 @@
+{
+  "schema": "bgs-paper-manifest-v1",
+  "slug": "resonance-cohomology",
+  "title": "Resonance and cohomological obstructions",
+  "status": "candidate-scope",
+  "authority": "record/claims.json",
+  "claims": [
+    "BGS-RES-001",
+    "BGS-RES-002"
+  ],
+  "authoritative_sources": [
+    "mathematics/fourier_line_resonance_coercivity.md",
+    "mathematics/local_jet_resonance_obstruction.md",
+    "mathematics/analytic_bracket_rigidity.md",
+    "mathematics/analytic_coboundary_regularization.md"
+  ],
+  "external_dependencies": [],
+  "excluded_open_claims": [],
+  "verification_commit": null,
+  "note": "Coercivity, rigidity, and limitations of local-jet proof strategies."
+}

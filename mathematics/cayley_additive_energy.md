@@ -1,5 +1,7 @@
 # Mixed pair-key term as Cayley additive energy
 
+**Claim ID:** `BGS-CAYLEY-002`
+
 **Status: EXACT for the reduction and the prime-order cutoff below; FINITE-CERTIFICATE for the audited `K=11,13` exact exceptional sets.**
 
 Let `H <= F_p^*` have odd prime order `K`, and set `A=c(H\{1})` with `c(h)=(h+1)/(h-1)`.

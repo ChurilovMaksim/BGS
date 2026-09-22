@@ -1,38 +1,38 @@
 # Mathematics
 
-This directory contains the authoritative maintained mathematical derivations. False or superseded routes are summarized in `../record/retractions.md` and remain recoverable from Git history rather than being duplicated as current source.
+This directory contains the authoritative maintained mathematical derivations.
+False or superseded routes are summarized in `../record/retractions.md` and
+remain recoverable from Git history rather than being duplicated as current
+source.
 
-The current general return-law entry point is
-[general_cat_return_laws.md](general_cat_return_laws.md). Read it with its
-analytic precursor [phase_space_return_gas.md](phase_space_return_gas.md)
-and the smooth-symbol/second-order analysis in
-[periodic_point_trace_comparison.md](periodic_point_trace_comparison.md).
-Position-only and fixed-harmonic proof modules are retained because they
-contain distinct arguments and estimates, not parallel obsolete papers.
+Stable proof-file paths are intentionally preserved. The thematic organization
+is provided by [topic views](topics/README.md), whose complete membership is
+machine-readable in `../record/mathematics_topics.json` and checked by the
+scientific registry audit.
 
 ## Reading order
 
 The current fixed-family branch is consolidated in
 [fixed_map_resolvent_frontier.md](fixed_map_resolvent_frontier.md), with
 [full supplementary derivations and computations](../supplement/fixed_map/README.md).
-It includes the low-order mixed-loop bounds and preserves the unresolved
-Heisenberg-scale estimate explicitly.
 
-1. `results.md` — base concise theorem index.
-2. `results_20260907_addendum.md` — later temporal, global-Cayley, dense-Fourier, holomorphic/tomography and information-limit results.
-3. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
-4. `cayley_curve_uniform.md` and `cayley_fourier_hybrid.md` — complementary global genus-one and dense-regime mixed-Weil Cayley energy theorems, including the centered hybrid bound.
-5. `extremal_resonance_nondegeneracy.md` and `temporal_resonance_hierarchy.md` — unrestricted finite-Fourier resonance/temporal theorems and their audited scope.
-6. `trace_to_local_statistics_bridge.md` — exact deterministic route from joint traces to microscopic tests.
-7. `open_questions.md` — only genuinely unresolved obligations.
-8. `earlier_foundations.md` — older results that survived the audit, each with its safe present scope.
+1. `results.md` — concise theorem index.
+2. `open_questions.md` — current closure obligations, keyed to stable claim IDs.
+3. `trace_to_local_statistics_bridge.md` — exact deterministic route from joint traces to microscopic tests.
+4. `fixed_map_resolvent_frontier.md` — maintained frozen-model frontier.
+5. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
+6. `general_cat_return_laws.md`, `pell_harmonic_transition.md`, and `pell_harmonic_returns.md` — global return/observable laws with explicit microscopic boundaries.
+7. `topics/README.md` — thematic navigation across the full maintained corpus.
+8. `earlier_foundations.md` — older results that survived audit in their safe present scope.
 
-The old `elliptic_pencil.md` is retained as a historical theorem-draft route; the maintained corrected off/off result is `offoff_elliptic_spike_theorem.md`, so completing the old pencil is no longer listed as an open closure condition.
+The old `elliptic_pencil.md` is retained as a historical theorem-draft route;
+the maintained corrected off/off result is
+`offoff_elliptic_spike_theorem.md`.
 
 ## Evidence levels
 
 - **EXACT** — current algebraic/analytic derivation with explicit hypotheses;
-- **EXACT + EXTERNAL-THEOREM** — exact project reduction whose stated input is an identified external theorem;
+- **EXACT + EXTERNAL-THEOREM** — exact project reduction whose input is an identified external theorem;
 - **FINITE-CERTIFICATE** — exact finite statement at explicit parameters;
 - **FINITE-REGRESSION** — finite implementation/reference agreement;
 - **NUMERICAL** — descriptive floating-point evidence only;
@@ -40,9 +40,11 @@ The old `elliptic_pencil.md` is retained as a historical theorem-draft route; th
 - **OPEN** — closure condition not achieved;
 - **RETRACTED / SCOPED-HISTORICAL / NOT-PROMOTED** — no current theorem authority.
 
-Repository-wide status authority is the pair
+Repository-wide status authority is `../record/claim_ledger.md`.
+`../record/claims.json` assigns stable IDs and cross-layer links but does not
+override the ledger. Dated addenda and reviews are historical/source records;
+their surviving conclusions matter only insofar as they are incorporated into
+the current ledger and maintained proof sources.
 
-- `../record/claim_ledger.md` for the base corpus through 2026-09-06;
-- `../record/claim_ledger_addendum_20260907.md` for the dated later/corrected scopes.
-
-The addendum wins where its scope overlaps older prose. Neither a finite verifier nor a manuscript statement may silently strengthen those ledgers.
+Neither a finite verifier, a source file, nor a manuscript sentence may
+silently strengthen the current claim ledger.

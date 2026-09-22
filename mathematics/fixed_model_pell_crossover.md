@@ -1,5 +1,7 @@
 # Full-symbol Gaussian crossover on odd Pell periods
 
+**Claim ID:** `BGS-FM-002`
+
 Date: 21 September 2026.
 
 Status: project theorem with self-review and exact/finite checks. It is an incremental fixed-symbol extension of earlier return-law mechanisms, not a fixed-\(\tau\) BGS theorem, independent referee acceptance, or a priority claim.

@@ -32,4 +32,4 @@ The reference q-curves live only under `evidence/reference/r82/`; their hashes a
 
 ## Trust rule
 
-A certificate can establish only its explicit finite/execution proposition. External theorem inputs remain external theorem inputs; analytic continuum statements remain proof-authoritative; numerical agreement remains numerical. Repository-wide claim status is controlled by `../record/claim_ledger.md` plus `../record/claim_ledger_addendum_20260907.md`.
+A certificate can establish only its explicit finite/execution proposition. External theorem inputs remain external theorem inputs; analytic continuum statements remain proof-authoritative; numerical agreement remains numerical. Repository-wide claim status is controlled solely by `../record/claim_ledger.md`. The machine-readable `../record/claims.json` provides stable IDs and links but cannot strengthen that ledger; dated addenda and reviews are historical sources.

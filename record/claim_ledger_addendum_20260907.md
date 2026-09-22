@@ -1,6 +1,6 @@
 # Claim-ledger addendum — 2026-09-07
 
-This file is the authoritative dated extension of `claim_ledger.md`. For claims dated through 2026-09-06, the base ledger remains authoritative. For the scopes below, this addendum wins over older notes, manuscript wording, exploratory files, and earlier audit prose. `OPEN` still means open; finite execution is never promoted to a uniform theorem.
+This is a preserved dated supporting record. The current repository-wide status authority is `claim_ledger.md`; where this historical addendum and the current ledger differ, the current ledger wins. The statements below document the September 7 research state and remain useful for provenance and detailed scope. `OPEN` still means open; finite execution is never promoted to a uniform theorem.
 
 **September 8 corrections:** full adapted analytic coefficient decay is now
 preserved; all-bandwidth Schwartz extension is automatic under positive

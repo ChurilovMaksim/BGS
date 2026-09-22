@@ -1,0 +1,22 @@
+{
+  "schema": "bgs-main-branch-policy-v1",
+  "branch": "main",
+  "prohibit_force_push": true,
+  "prohibit_deletion": true,
+  "require_pull_request_for": [
+    "THEOREM",
+    "CORRECTION",
+    "EXTERNAL-DEPENDENCY",
+    "FORMALIZATION",
+    "PUBLICATION_ARCHITECTURE"
+  ],
+  "required_checks_when_runner_operational": [
+    "scientific-registry",
+    "repository-structure",
+    "computation",
+    "formalization",
+    "manuscript"
+  ],
+  "infrastructure_non_run_rule": "runner_id=0 and steps=[] is neither pass nor scientific failure",
+  "enforcement": "target-policy; GitHub administrative ruleset write is unavailable through the current connector"
+}

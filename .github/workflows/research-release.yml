@@ -1,0 +1,47 @@
+name: Research state release
+
+on:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: "Research-state label, e.g. research-2026.09.1"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  release-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Validate scientific registries and repository structure
+        run: |
+          python computations/verification/scientific_registry_audit.py
+          python computations/maintenance/render_claim_registry.py --check
+          python computations/maintenance/render_errata.py --check
+          python computations/verification/repository_audit.py
+      - name: Check generated manuscript sections
+        run: |
+          python computations/maintenance/sync_return_sections.py --check
+          python computations/maintenance/sync_fixed_map_section.py --check
+      - name: Package immutable research-state metadata
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/bgs-release"
+          git rev-parse HEAD > "$RUNNER_TEMP/bgs-release/COMMIT"
+          git ls-files -s > "$RUNNER_TEMP/bgs-release/TREE_INDEX"
+          cp record/claims.json "$RUNNER_TEMP/bgs-release/"
+          cp record/scientific_dependencies.json "$RUNNER_TEMP/bgs-release/"
+          cp literature/external_dependencies.json "$RUNNER_TEMP/bgs-release/"
+          cp environment/runtime-manifest.json "$RUNNER_TEMP/bgs-release/"
+          git archive --format=tar.gz -o "$RUNNER_TEMP/bgs-release/BGS-source.tar.gz" HEAD
+          (cd "$RUNNER_TEMP/bgs-release" && sha256sum * > SHA256SUMS)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bgs-research-state-${{ inputs.label }}-${{ github.sha }}
+          path: ${{ runner.temp }}/bgs-release

@@ -1,0 +1,110 @@
+{
+  "schema": "bgs-external-dependencies-v1",
+  "updated": "2026-09-22",
+  "dependencies": [
+    {
+      "id": "EXT-BH-2026",
+      "authors": [
+        "Paul Bourgade",
+        "Jiaoyang Huang"
+      ],
+      "title": "Loop Equations Characterize Random Matrix Statistics",
+      "identifier": "arXiv:2607.07617",
+      "pinned_version": "v2",
+      "locator": "Theorem 1.9",
+      "checked_on": "2026-09-22",
+      "mapping": "Used only for the loop-hierarchy characterization/convergence implication. The approximate mixed loop equations for the maintained deterministic model remain a project hypothesis.",
+      "project_sources": [
+        "mathematics/fixed_map_resolvent_frontier.md",
+        "record/claim_ledger.md"
+      ]
+    },
+    {
+      "id": "EXT-VM-2015",
+      "authors": [
+        "I. Vyugin",
+        "S. Makarychev"
+      ],
+      "title": "Solutions of polynomial equation over F_p and new bounds of additive energy",
+      "identifier": "arXiv:1504.01354v2",
+      "pinned_version": "v2 (24 Sep 2015)",
+      "locator": "Theorem 2",
+      "checked_on": "2026-09-04",
+      "mapping": "Applied to the displayed absolutely irreducible subgroup curve after the project's degree and size-range checks.",
+      "project_sources": [
+        "mathematics/cayley_direct_energy.md",
+        "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-CZ-2013",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "title": "Some cases of Vojta's conjecture on integral points over function fields",
+      "identifier": "DOI:10.4171/JEMS/409",
+      "pinned_version": "JEMS 15 (2013), 1927-1942",
+      "locator": "Theorem 2 and Corollary 2",
+      "checked_on": "2026-09-08",
+      "mapping": "Applied to the smooth Cayley curve after explicit degree, boundary, separability, and translated-subtorus checks.",
+      "project_sources": [
+        "mathematics/cayley_curve_uniform.md",
+        "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-FKM-2014",
+      "authors": [
+        "Etienne Fouvry",
+        "Emmanuel Kowalski",
+        "Philippe Michel"
+      ],
+      "title": "Algebraic trace functions over the primes",
+      "identifier": "arXiv:1210.0851v5",
+      "pinned_version": "v5",
+      "locator": "Lemma 3.5 and its proof",
+      "checked_on": "2026-09-20",
+      "mapping": "The project reproduces the proof on the common good open to handle moving bad points; no stronger black-box statement is assumed.",
+      "project_sources": [
+        "mathematics/offoff_elliptic_spike_theorem.md",
+        "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-BLV-2009",
+      "authors": [
+        "Andrea Bandini",
+        "Ignazio Longhi",
+        "Stefano Vigni"
+      ],
+      "title": "Torsion points on elliptic curves over function fields and a theorem of Igusa",
+      "identifier": "DOI:10.1016/j.exmath.2008.06.001; arXiv:0804.1425v2",
+      "pinned_version": "arXiv v2 / Expositiones Mathematicae 27 (2009)",
+      "locator": "Theorems 1.3-1.4 and Lemma 4.1",
+      "checked_on": "2026-09-20",
+      "mapping": "Supplies arithmetic openness/irreducibility input in the corrected elliptic off/off route after project-specific non-isotriviality and singular-support checks.",
+      "project_sources": [
+        "mathematics/offoff_elliptic_spike_theorem.md",
+        "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-IK-2004",
+      "authors": [
+        "Henryk Iwaniec",
+        "Emmanuel Kowalski"
+      ],
+      "title": "Analytic Number Theory",
+      "identifier": "DOI:10.1090/coll/053",
+      "pinned_version": "AMS Colloquium Publications 53 (2004)",
+      "locator": "Theorem 17.1 (Bombieri-Vinogradov)",
+      "checked_on": "2026-09-04",
+      "mapping": "Used only for the stated dyadic averaged split-design prime-counting arguments; no pointwise PNT for a varying modulus is assumed.",
+      "project_sources": [
+        "mathematics/cayley_jacobi_trace_average.md",
+        "literature/bibliography.md"
+      ]
+    }
+  ]
+}

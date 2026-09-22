@@ -1,0 +1,29 @@
+{
+  "schema": "bgs-evidence-index-v1",
+  "updated": "2026-09-22",
+  "classes": {
+    "finite-certificates": {
+      "canonical_prefix": "evidence/certificates/",
+      "meaning": "Exact finite propositions and execution manifests; no asymptotic promotion."
+    },
+    "numerical": {
+      "canonical_prefix": "evidence/numerical/",
+      "meaning": "Floating-point descriptive evidence only."
+    },
+    "reference": {
+      "canonical_prefix": "evidence/reference/",
+      "meaning": "Pinned immutable reference inputs/curves used by maintained regressions."
+    },
+    "executions": {
+      "future_prefix": "evidence/executions/",
+      "legacy_paths": [
+        "evidence/fixed_map_publication/",
+        "evidence/recovery_20260920/",
+        "evidence/recovery_20260921/"
+      ],
+      "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance."
+    }
+  },
+  "authority": "evidence/provenance.md",
+  "trust_rule": "Evidence establishes only the proposition explicitly recorded by its producer/review."
+}

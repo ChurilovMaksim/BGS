@@ -1,5 +1,7 @@
 # Fixed frozen model: exact Weyl dictionary, trivial C1 centralizer, and no C1 reversor
 
+**Claim ID:** `BGS-FM-001`
+
 Date: 21 September 2026.
 
 Status: project theorem with author-level self-review, exact rational/symbolic checks, and an independent Wolfram recomputation in the recovered handoff. It is not an independent referee report, a Lean proof, a priority claim, or a proof of BGS.

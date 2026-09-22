@@ -1,5 +1,7 @@
 # Harmonic-scale return laws for the kicked Pell cat map
 
+**Claim ID:** `BGS-RET-001`
+
 **Status: project proof.** This is a global spectral theorem for the actual
 return propagator. It concerns a vanishing quantum kick and times of order
 the arithmetic period, not Heisenberg-scale correlations or BGS. The endpoint

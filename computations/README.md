@@ -10,7 +10,14 @@ The maintained computational surface is deliberately compact and independently c
 
 `python/bgs/` contains the maintained finite-field, discrete-log, pair-key and twisted-Jacobi primitives with fail-fast validation.
 
-`verification/` contains the scientific gates and exact/finite regressions. `maintenance/verify_workspace.py` orchestrates their execution and the C++ verifier surface without mutating committed evidence. `maintenance/build_unified_manuscript.py` is the sole maintained manuscript builder.
+`verification/` contains the scientific gates and exact/finite regressions.
+`verification/scientific_registry_audit.py` checks the machine-readable claim,
+dependency, paper, evidence, environment, and topic contracts before expensive
+science runs. `maintenance/render_claim_registry.py --check` prevents the
+human claim index from drifting from `record/claims.json`.
+`maintenance/verify_workspace.py` orchestrates scientific Python/C++
+execution without mutating committed evidence. `maintenance/build_unified_manuscript.py`
+is the sole maintained consolidated-manuscript builder.
 
 `maintenance/sync_return_sections.py` is the maintained Markdown-to-TeX
 synchronizer for the six return-law chapters. It transforms document links

@@ -1,5 +1,7 @@
 # Direct additive-energy bound for the Cayley image of a subgroup
 
+**Claim ID:** `BGS-CAYLEY-003`
+
 **Status: EXACT, conditional only on the cited Vyugin--Makarychev Stepanov theorem; FINITE-REGRESSION anchors are maintained independently.**
 
 This note gives a growing-`K` bound for the mixed Cayley term that does not

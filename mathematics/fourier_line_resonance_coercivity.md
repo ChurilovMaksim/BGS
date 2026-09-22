@@ -1,5 +1,7 @@
 # Sharp coercivity for the resonance functional on a Fourier line
 
+**Claim ID:** `BGS-RES-001`
+
 Date: 21 September 2026.
 
 Status: self-contained project proof with exact finite regressions and separate Wolfram checks in the recovered handoff. No independent referee, Lean certificate, global priority claim, or BGS conclusion is asserted.

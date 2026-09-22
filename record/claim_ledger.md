@@ -1,5 +1,17 @@
 # Claim ledger
 
+**Status authority.** This file is the sole repository-wide authority for the
+current status and scope of scientific claims. Stable identifiers and
+cross-layer links are maintained in `claims.json`; that registry may index
+this ledger but may not strengthen it. Dated addenda, reviews, manuscripts,
+source presence, and finite computations are subordinate to the current
+ledger.
+
+Key programme IDs include `BGS-TRACE-005` for the missing model-specific
+Heisenberg-scale estimate and `BGS-BGS-001` for the terminal fixed-strength
+microscopic universality claim. Both remain **OPEN**.
+
+
 ## 21 September 2026 — recovered fixed-map continuation
 
 The statements below were recovered from the final conversation handoff,

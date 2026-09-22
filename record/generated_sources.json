@@ -1,0 +1,64 @@
+{
+  "schema": "bgs-generated-sources-v1",
+  "updated": "2026-09-22",
+  "rules": [
+    {
+      "generated": [
+        "ERRATA.md"
+      ],
+      "producer": "computations/maintenance/render_errata.py",
+      "mode": "deterministic reader-facing correction index; --check is fail-closed",
+      "authoritative_sources": [
+        "record/errata.json",
+        "record/retractions.md"
+      ]
+    },
+    {
+      "generated": [
+        "record/claim_registry.md"
+      ],
+      "producer": "computations/maintenance/render_claim_registry.py",
+      "mode": "deterministic Markdown view; --check is fail-closed",
+      "authoritative_sources": [
+        "record/claims.json"
+      ]
+    },
+    {
+      "generated": [
+        "manuscript/unified_sections/return_gas.tex",
+        "manuscript/unified_sections/return_position.tex",
+        "manuscript/unified_sections/return_periodic.tex",
+        "manuscript/unified_sections/return_phase.tex",
+        "manuscript/unified_sections/return_general.tex",
+        "manuscript/unified_sections/return_obstruction.tex"
+      ],
+      "producer": "computations/maintenance/sync_return_sections.py",
+      "mode": "fail-closed check available",
+      "authoritative_sources": [
+        "mathematics/"
+      ]
+    },
+    {
+      "generated": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "producer": "computations/maintenance/sync_fixed_map_section.py",
+      "mode": "fail-closed check available",
+      "authoritative_sources": [
+        "mathematics/fixed_map_resolvent_frontier.md",
+        "supplement/fixed_map/"
+      ]
+    },
+    {
+      "generated": [
+        "build/unified-paper/BGS_unified.pdf"
+      ],
+      "producer": "computations/maintenance/build_unified_manuscript.py",
+      "mode": "build artifact; never source authority",
+      "authoritative_sources": [
+        "manuscript/BGS_unified.tex"
+      ]
+    }
+  ],
+  "policy": "Generated publication surfaces may not strengthen their authoritative mathematical sources."
+}

@@ -1,5 +1,7 @@
 # Local jet obstruction to a purely fixed-point proof of resonance nondegeneracy
 
+**Claim ID:** `BGS-RES-002`
+
 Date: 21 September 2026.
 
 Status: exact local polynomial construction. It is deliberately not a torus observable and not a counterexample to the global analytic resonance problem.

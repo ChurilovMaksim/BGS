@@ -1,0 +1,23 @@
+{
+  "schema": "bgs-paper-manifest-v1",
+  "slug": "return-laws",
+  "title": "Arithmetic return laws",
+  "status": "candidate-scope",
+  "authority": "record/claims.json",
+  "claims": [
+    "BGS-RET-001",
+    "BGS-RET-002"
+  ],
+  "authoritative_sources": [
+    "mathematics/pell_harmonic_returns.md",
+    "mathematics/pell_harmonic_transition.md",
+    "mathematics/general_cat_return_laws.md",
+    "mathematics/return_trace_obstruction.md"
+  ],
+  "external_dependencies": [],
+  "excluded_open_claims": [
+    "BGS-BGS-001"
+  ],
+  "verification_commit": null,
+  "note": "Global return and compressed-observable laws with explicit local-statistics boundaries."
+}

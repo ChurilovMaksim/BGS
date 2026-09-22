@@ -1,5 +1,8 @@
 # Lean 4 formalization
 
+**Claim ID:** `BGS-FORMAL-001`
+
+
 `formalization/` is the active finite-certificate, algebraic-kernel and falsifier layer. It is intentionally smaller than the informal mathematics: a Lean theorem certifies only the proposition and scope stated in its source. The repository does not treat speculative `sorry` files as progress.
 
 Build every active module with

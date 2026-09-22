@@ -1,5 +1,7 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
+**Claim IDs:** `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+
 **Status, 20 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The

@@ -1,0 +1,36 @@
+{
+  "schema": "bgs-paper-manifest-v1",
+  "slug": "fixed-map-bgs-frontier",
+  "title": "Fixed-map BGS frontier",
+  "status": "candidate-scope",
+  "authority": "record/claims.json",
+  "claims": [
+    "BGS-FM-001",
+    "BGS-FM-002",
+    "BGS-FM-003",
+    "BGS-FM-004",
+    "BGS-LOOP-001",
+    "BGS-TRACE-001",
+    "BGS-TRACE-002",
+    "BGS-TRACE-003",
+    "BGS-TRACE-004"
+  ],
+  "authoritative_sources": [
+    "mathematics/fixed_model_symmetry_theorem.md",
+    "mathematics/fixed_model_pell_crossover.md",
+    "mathematics/fixed_map_moment_control_and_transfer.md",
+    "mathematics/three_orientation_resolvent_barrier.md",
+    "mathematics/fixed_map_resolvent_frontier.md",
+    "mathematics/trace_to_local_statistics_bridge.md",
+    "mathematics/bandlimited_correlation_extension.md"
+  ],
+  "external_dependencies": [
+    "EXT-BH-2026"
+  ],
+  "excluded_open_claims": [
+    "BGS-TRACE-005",
+    "BGS-BGS-001"
+  ],
+  "verification_commit": null,
+  "note": "Frontier paper: exact/conditional reductions and obstructions; not a positive BGS theorem."
+}

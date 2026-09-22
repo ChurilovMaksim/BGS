@@ -1,0 +1,475 @@
+{
+  "schema": "bgs-claims-v1",
+  "updated": "2026-09-22",
+  "status_authority": "record/claim_ledger.md",
+  "id_policy": {
+    "format": "BGS-<AREA>-<NNN>",
+    "immutable_after_publication": true,
+    "areas": [
+      "BGS",
+      "FM",
+      "TRACE",
+      "LOOP",
+      "CAYLEY",
+      "RET",
+      "RES",
+      "FORMAL",
+      "INFO"
+    ]
+  },
+  "claims": [
+    {
+      "id": "BGS-BGS-001",
+      "title": "Fixed-strength microscopic BGS universality for the maintained frozen map",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-002",
+        "BGS-FM-003",
+        "BGS-FM-004",
+        "BGS-LOOP-001",
+        "BGS-TRACE-004",
+        "BGS-TRACE-005"
+      ],
+      "external_dependencies": [
+        "EXT-BH-2026"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "No current theorem supplies the model-specific Heisenberg-scale mixed cancellation/joint-trace estimate for the correctly desymmetrized fixed propagator.",
+      "closure_condition": "Prove the required model-specific Heisenberg-scale joint-trace or equivalent mixed-resolvent estimate on every compact Fourier support, then verify the stated unfolding and symmetry-class hypotheses."
+    },
+    {
+      "id": "BGS-CAYLEY-001",
+      "title": "Pair-key and fourth-moment reduction",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-CERTIFICATE",
+      "source": "mathematics/fourth_moment_reduction.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/fourth_moment_factorization.json"
+      ],
+      "verifiers": [
+        "computations/verification/current_regression.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/PairKeyFourthMoment.lean",
+        "formalization/Bgs/PairKeySecondMoment.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Finite-field reduction; not a microscopic spectral theorem."
+    },
+    {
+      "id": "BGS-CAYLEY-002",
+      "title": "Cayley additive-energy reduction",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/cayley_additive_energy.md",
+      "dependencies": [
+        "BGS-CAYLEY-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/CayleyEnergy.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target."
+    },
+    {
+      "id": "BGS-CAYLEY-003",
+      "title": "Direct K^(8/3) Cayley energy bound in the explicit subgroup-size range",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "source": "mathematics/cayley_direct_energy.md",
+      "dependencies": [
+        "BGS-CAYLEY-002"
+      ],
+      "external_dependencies": [
+        "EXT-VM-2015"
+      ],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/cayley_energy_curve_regression.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Applies in the stated range; it does not reach the centered K^(2+o(1)) target."
+    },
+    {
+      "id": "BGS-CAYLEY-004",
+      "title": "Uniform subgroup-curve Cayley energy bound",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
+      "source": "mathematics/cayley_curve_uniform.md",
+      "dependencies": [
+        "BGS-CAYLEY-002"
+      ],
+      "external_dependencies": [
+        "EXT-CZ-2013"
+      ],
+      "evidence": [
+        "evidence/certificates/cayley_curve_uniform_20260907.json"
+      ],
+      "verifiers": [
+        "computations/verification/cayley_curve_uniform.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/CayleyCurveEnergy.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Uniform K^(8/3)+K^4/p scale; does not prove centered quadratic pointwise energy."
+    },
+    {
+      "id": "BGS-CAYLEY-005",
+      "title": "Sharp centered pointwise Cayley energy target",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-CAYLEY-002",
+        "BGS-CAYLEY-003",
+        "BGS-CAYLEY-004"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Existing pointwise, support, and averaged estimates do not give E_+(A)=(K-1)^4/p+O(K^(2+o(1))) in the intended sparse/intermediate regime.",
+      "closure_condition": "Prove the centered K^(2+o(1)) estimate, or an equivalent common-split-divisor theorem strong enough to imply it."
+    },
+    {
+      "id": "BGS-FM-001",
+      "title": "Frozen-model classical symmetry theorem",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
+      "source": "mathematics/fixed_model_symmetry_theorem.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Excludes ordinary C1 centralizers/reversors and relevant affine C1 conjugacies in the stated small-coupling range; does not exclude N-dependent quantum symmetries or prove BGS."
+    },
+    {
+      "id": "BGS-FM-002",
+      "title": "Odd-Pell full-symbol Gaussian crossover",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
+      "source": "mathematics/fixed_model_pell_crossover.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Frozen epsilon_K=tau N_K lies outside the proved bounded crossover window."
+    },
+    {
+      "id": "BGS-FM-003",
+      "title": "Fixed-map moment controls, falsifier, and perturbation transfer",
+      "state": "proved",
+      "ledger_status": "EXACT IDENTITIES / PROJECT ASYMPTOTIC CONSEQUENCES + FRESH REGRESSION",
+      "source": "mathematics/fixed_map_moment_control_and_transfer.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Low-order and one-orientation loop information does not identify CUE."
+    },
+    {
+      "id": "BGS-FM-004",
+      "title": "Three-orientation mixed-resolvent lower barrier",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL PROJECT THEOREM + FRESH FINITE-REGRESSION",
+      "source": "mathematics/three_orientation_resolvent_barrier.md",
+      "dependencies": [
+        "BGS-FM-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Normalized mixed-residual decay hypotheses remain unproved for the frozen propagator."
+    },
+    {
+      "id": "BGS-FORMAL-001",
+      "title": "Active Lean algebraic/finite kernel graph",
+      "state": "verification-pending",
+      "ledger_status": "SOURCE FORMALIZATION PENDING CURRENT BUILD",
+      "source": "formalization/README.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs.lean"
+      ],
+      "manuscript": [],
+      "boundary": "Source presence does not establish compilation; analytic BGS theorems are not formalized."
+    },
+    {
+      "id": "BGS-INFO-001",
+      "title": "Full vanishing-noise tomography transition",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Existing fixed-noise and binary-pair results do not characterize the full moment-class minimax transition when channel noise vanishes with copy budget.",
+      "closure_condition": "Determine matching minimax upper and lower transitions for the full moment class in the varying-noise regime."
+    },
+    {
+      "id": "BGS-LOOP-001",
+      "title": "Full mixed loop hierarchy implies target compact anchored correlations",
+      "state": "conditional",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [
+        "EXT-BH-2026"
+      ],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/CueLoopKernels.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "The external characterization is available; the model-specific approximate mixed hierarchy remains open."
+    },
+    {
+      "id": "BGS-RES-001",
+      "title": "Sharp Fourier-line resonance coercivity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH EXACT REGRESSION",
+      "source": "mathematics/fourier_line_resonance_coercivity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Closes Fourier-line classes in the stated coercive range; arbitrary two-dimensional analytic symbols remain open."
+    },
+    {
+      "id": "BGS-RES-002",
+      "title": "Local-jet resonance obstruction",
+      "state": "proved",
+      "ledger_status": "EXACT LOCAL CONSTRUCTION + FRESH SYMBOLIC REGRESSION",
+      "source": "mathematics/local_jet_resonance_obstruction.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Local polynomial counterexample; not a periodic torus counterexample."
+    },
+    {
+      "id": "BGS-RES-003",
+      "title": "All-members analytic resonance nondegeneracy",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-RES-001",
+        "BGS-RES-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Generic positivity and Fourier-line classes are closed, but the nonlinear analytic coboundary equation is unresolved for arbitrary nonconstant real-analytic observables.",
+      "closure_condition": "Prove impossibility of a nonconstant real-analytic solution to the stated nonlinear coboundary equation, or construct one."
+    },
+    {
+      "id": "BGS-RET-001",
+      "title": "Harmonic return law for the actual kicked Pell propagator",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/pell_harmonic_returns.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_harmonic_returns_20260910/manifest.json",
+        "evidence/certificates/pell_harmonic_returns_20260910/result.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_harmonic_returns.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/pell_harmonic_returns.tex"
+      ],
+      "boundary": "Fixed multiplicity and logarithmic return time; not Heisenberg-scale microscopic BGS."
+    },
+    {
+      "id": "BGS-RET-002",
+      "title": "Harmonic-scale global transition in the fixed Pell cat map",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/pell_harmonic_transition.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_harmonic_transition_20260909/manifest.json",
+        "evidence/certificates/pell_harmonic_transition_20260909/result.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_harmonic_transition.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/pell_harmonic_transition.tex"
+      ],
+      "boundary": "Global compressed-observable law; not local eigenphase statistics of a fixed propagator."
+    },
+    {
+      "id": "BGS-TRACE-001",
+      "title": "Partition-Mobius formula for distinct-index spectral sums",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Deterministic finite-N identity."
+    },
+    {
+      "id": "BGS-TRACE-002",
+      "title": "Exact Fourier trace representation of microscopic factorial statistics",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Compact Fourier support probes trace powers of order N."
+    },
+    {
+      "id": "BGS-TRACE-003",
+      "title": "Weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Sufficiency theorem only; the required model-specific Heisenberg-scale estimate is open."
+    },
+    {
+      "id": "BGS-TRACE-004",
+      "title": "Every-compact-bandwidth comparison extends to Schwartz correlation tests",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/bandlimited_correlation_extension.md",
+      "dependencies": [
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Requires positive normalized spectral averages and a reference Schwartz limit; a single fixed bandwidth is insufficient."
+    },
+    {
+      "id": "BGS-TRACE-005",
+      "title": "Model-specific Heisenberg-scale desymmetrized joint-trace estimate",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "The deterministic bridge is closed, but no current theorem proves the required weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N.",
+      "closure_condition": "Prove the correctly desymmetrized weighted joint-trace comparison, or an equivalent mixed-resolvent hierarchy, uniformly on every compact Fourier support."
+    }
+  ],
+  "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."
+}

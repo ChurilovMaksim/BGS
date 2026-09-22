@@ -1,5 +1,11 @@
 # Current results and exact scope
 
+Stable claim IDs and cross-layer links are in `../record/claims.json`; status
+authority remains `../record/claim_ledger.md`. The thematic navigation layer
+is `topics/README.md`. This index is expository and cannot strengthen the
+claim ledger.
+
+
 ## Fixed-map continuation, 21 September 2026
 
 **Project proofs with fresh exact/finite replay; external priority and referee

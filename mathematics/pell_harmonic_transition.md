@@ -1,5 +1,7 @@
 # A harmonic-scale transition in the Pell cat map
 
+**Claim ID:** `BGS-RET-002`
+
 **Status: project proof, with explicit scope.** This note derives a family of
 global observable laws in one fixed arithmetic quantum map. It does not prove
 microscopic BGS statistics. The limiting graphon moment construction is prior

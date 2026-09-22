@@ -1,5 +1,7 @@
 # Exact trace-to-local-statistics bridge at Heisenberg scale
 
+**Claim IDs:** `BGS-TRACE-001`, `BGS-TRACE-002`, `BGS-TRACE-003`
+
 **Status: EXACT.**  This note is a deterministic Fourier/partition identity for
 finite unitary spectra.  It isolates a sufficient trace-comparison closure
 condition for microscopic `k`-point statistics.  It does **not** prove that the

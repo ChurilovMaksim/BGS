@@ -1,5 +1,7 @@
 # Exact fourth-moment pair-key reduction
 
+**Claim ID:** `BGS-CAYLEY-001`
+
 **Status: EXACT**, with independent finite Python/C++/Lean regression checks.
 
 ## Pair keys

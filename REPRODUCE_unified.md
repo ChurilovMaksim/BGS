@@ -4,11 +4,17 @@ The canonical editable publication entry point is `manuscript/BGS_unified.tex`. 
 
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
-Run the structural gate first:
+Run the cheap fail-closed metadata and structural gates first:
+
+```sh
+python computations/verification/scientific_registry_audit.py
+python computations/verification/repository_audit.py
+```
+
+Then install the pinned Python requirements before scientific computation:
 
 ```sh
 python -m pip install -r requirements.txt
-python computations/verification/repository_audit.py
 ```
 
 Build and execute the maintained C++/Python verification surface:
@@ -40,7 +46,7 @@ historical suite. Each return-law producer receives a separate JSON output
 path; the runner records the source hash, exit status and log hash.
 
 Build every active Lean module with the version pinned in
-`formalization/lean-toolchain`:
+`formalization/lean-toolchain`. Source presence is not compilation evidence:
 
 ```sh
 (cd formalization && lake build)
@@ -73,7 +79,16 @@ The active stack is Python/C++/Lean/TeX. Julia is retired and `repository_audit.
 
 The finalization-era GitHub Actions attempts that were inspected had `runner_id=0`/no executed steps, so no green cloud-CI claim is inferred from them. Local verification evidence and cloud-runner status must remain separate.
 
-Repository synchronization does not change mathematical scope: positive generic microscopic BGS/GOE/COE universality remains open, and finite certificates or obstruction results are not promoted to that theorem.
+Repository synchronization does not change mathematical scope: fixed-strength
+microscopic BGS/GOE/COE/GUE universality remains open, and finite certificates
+or obstruction results are not promoted to that theorem.
+
+The machine-readable scientific state is split deliberately:
+`record/claim_ledger.md` controls status,
+`record/claims.json` supplies stable IDs and cross-layer links,
+`literature/external_dependencies.json` pins load-bearing external theorem
+locators, and `environment/runtime-manifest.json` describes the intended
+execution environment. A scientific release should preserve all four.
 
 Reproduce the new analytic illustration with
 `python computations/analysis/return_obstruction_figure.py`. The plotted curves
