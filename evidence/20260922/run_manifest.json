@@ -1,0 +1,50 @@
+{
+  "date_utc": "2026-09-22T13:47:08.264079+00:00",
+  "base_revision": "39d4e01ae6a6b3eb472ab30266b708ca71a70a16",
+  "remote_main_rechecked": "same base SHA via GitHub GET before delivery",
+  "remote_changes_by_this_pass": false,
+  "python": "3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "pandoc": "pandoc 3.1.11.1",
+  "git": "git version 2.47.3",
+  "python_run": {
+    "command": "python3 computations/verification/finite_orbit_resonance.py --output evidence/20260922/finite_orbit_exact.json",
+    "status": "passed",
+    "matrices": 8,
+    "channel_comparisons": 2976,
+    "cross_patterns": 28520,
+    "largest_observed_exceptional_target_gap": 4,
+    "nonclaim": "No universal finite cutoff or analytic theorem certified by this run"
+  },
+  "cpp_run": {
+    "compile_command": "g++ -std=c++20 -O2 -Wall -Wextra -pedantic computations/verification/finite_orbit_degeneracy.cpp -o build/verification/finite_orbit_degeneracy",
+    "run_command": "build/verification/finite_orbit_degeneracy",
+    "status": "compiled and passed",
+    "compiler_diagnostics": "",
+    "candidates": 147456,
+    "identity_cases": 912,
+    "recurrence_checks": 7680,
+    "late_collision_checks": 40
+  },
+  "installer_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 test_integration.py",
+    "status": "5 tests passed",
+    "scope": "synthetic Git fixture, not complete BGS checkout"
+  },
+  "manuscript": {
+    "status": "canonical Markdown and generated section match",
+    "standalone_pdf": "compiled, 5 pages; all 5 rendered pages visually inspected",
+    "full_unified_manuscript": "not built",
+    "command_from_manuscript_directory": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=../build/finite-orbit-paper finite_orbit_note.tex"
+  },
+  "wolfram": "auxiliary input and actual output preserved; not a full proof check",
+  "lean": "source only; not compiled; not imported into maintained Lean build",
+  "full_repository_audit": "not performed; scoped source and metadata audit only",
+  "proof_status": "project derivation and adversarial self-review; external priority and referee validation unestablished",
+  "sha256": {
+    "mathematics/finite_orbit_resonance_rigidity.md": "d97e00efc74d1acbe5afd13c91b1e56e904dfe752598139c7578381243d3d135",
+    "manuscript/unified_sections/finite_orbit_resonance.tex": "15a75fcacda676b89194d72ea44e45864081bed2e00fa405d6fb01521ffa3eb0",
+    "computations/verification/finite_orbit_resonance.py": "089ff5bfff883ba7e146b0b2f89b4e1fef63fbcd27934ab94a9525ee392395d9",
+    "computations/verification/finite_orbit_degeneracy.cpp": "8e473f545ba44265363ce61ae7dd5b77295e4ab7b9519a6b1e0c80a1bc5afe36"
+  }
+}

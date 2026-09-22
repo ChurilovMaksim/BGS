@@ -73,6 +73,13 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
+The [clustered Abel calculation](clustered_abel_window_boundary.md) gives a
+quantitative corollary in the existing compensated pinning range, and a
+simple-spectrum counterexample to inferring a positive-time Heisenberg-window
+form-factor bound from cluster containment, spacing collapse, or Abel
+divergence alone. The example does not model the prescribed frozen map; it
+clarifies why its mixed-resolvent estimate must still be proved separately.
+
 The 21 September continuation narrows the loop-equation route without closing
 it.  Exact moment inequalities strengthen the first two mixed levels, and a
 second orientation ((w,w,v)) yields a strictly stronger conditional
@@ -198,7 +205,7 @@ Two further analytic mechanisms are also closed:
 
 So the separated-support pointwise-zero mechanism cannot occur for a nonconstant analytic observable.
 
-2. `analytic_coboundary_regularization.md` proves that an analytic zero-orbit-sum observable has an analytic cohomological transfer, with an explicit positive strip-width loss. Hence any hypothetical nonconstant analytic `g` with `Gamma_A(g)=0` must satisfy
+2. `analytic_coboundary_regularization.md` proves that an analytic zero-orbit-sum observable has an analytic cohomological transfer, with no loss of the exponent in its adapted frequency norm (and a positive strip width in ordinary coordinates). Hence any hypothetical nonconstant analytic `g` with `Gamma_A(g)=0` must satisfy
 
 ```text
 {g,C_A g}/(4*pi)=u-C_A u,
@@ -218,6 +225,15 @@ The remaining question is therefore sharply reduced:
 
 **Open question:** can the nonlinear analytic cohomological equation (*) have a nonconstant real-analytic solution `g`, or can one prove it impossible? Equivalently, is `Gamma_A(g)>0` for every nonconstant real-analytic observable?
 
+**22 September partial closure.** The project proof in
+`finite_orbit_resonance_rigidity.md` excludes zero variance, and proves all
+finite-lag independence, for every nonconstant real smooth observable whose
+support is contained in finitely many signed A-orbits. Equivalently, it
+covers support with bounded `abs(det(k,Ak))`. Any remaining analytic
+counterexample must have infinitely many such orbits and unbounded invariant
+values. The large-gap separation threshold is not uniform in the family;
+no passage to arbitrary analytic support is justified by truncation alone.
+
 The known compactly supported Gevrey counterexample is not analytic; the project's nontrivial entire temporal all-pass gauges of one harmonic are proved to lie in no finite Gevrey class. Neither resolves (*).
 
 This question may inform perturbation theory but is not itself the missing BGS theorem.
@@ -230,12 +246,11 @@ For every fixed strictly noisy phase-insensitive Gaussian product channel, momen
 
 ## G. Formalization depth
 
-The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. All 16 active modules compiled on 8 September 2026.
+The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. The historical 16-module build passed on 8 September 2026; the subsequently added `CueLoopKernels` module has source-level status pending a fresh full build.
 
 **Open engineering/mathematical task:** formalize load-bearing algebraic pieces when doing so reduces proof risk, especially exact finite-support/cohomological identities and finite Cayley bookkeeping. Do not label source presence as compilation or analytic formalization.
 
 ## Engineering boundary
 
-Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build now succeeds locally; the earlier environment
-block is resolved. This changes execution status, not the scope of the
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build succeeded for the earlier 16-module revision; a full build including the newer module remains to be recorded. This changes execution status, not the scope of the
 formalized mathematics. Full analytic formalization remains open.

@@ -1,8 +1,7 @@
 // Exact finite controls for pell_polynomial_edgeworth.md.
 //
 // Standalone build (not claimed executed by the existence of this source):
-// c++ -std=c++20 -O2 -Wall -Wextra -Wpedantic \
-//   computations/cpp/pell_minimal_relation_verifier.cpp -o pell_minimal_relation_verifier
+// c++ -std=c++20 -O2 -Wall -Wextra -Wpedantic computations/cpp/pell_minimal_relation_verifier.cpp -o pell_minimal_relation_verifier
 //
 // These checks concern finite arithmetic and combinatorics. They do not
 // prove the general Gaussian limit or microscopic BGS.

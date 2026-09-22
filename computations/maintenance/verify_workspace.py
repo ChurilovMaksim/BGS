@@ -129,6 +129,8 @@ def main() -> None:
             cmd+=['--output',str(args.logs/'resonance_hessian_obstruction.json')]
         elif p.stem=='resonance_quantum_variance':
             cmd+=['--output',str(args.logs/'resonance_quantum_variance.json')]
+        elif p.stem=='finite_orbit_resonance':
+            cmd+=['--output',str(args.logs/'finite_orbit_resonance.json')]
         elif p.stem=='extremal_resonance':
             extremal_producer=True
             cmd+=['--cases','1000','--max-lag','10','--algebra-cases','20',

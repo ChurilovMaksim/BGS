@@ -2,6 +2,12 @@
 
 The canonical editable publication entry point is `manuscript/BGS_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
+The finite-orbit section has a maintained mathematical source and a generated
+TeX view. Validate it with
+`python computations/maintenance/sync_finite_orbit_section.py --check`.
+The 22 September proof, audit, source-level Lean kernels and exact finite
+regressions are indexed in `record/integration_20260922.md`.
+
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
 Run the cheap fail-closed metadata and structural gates first:

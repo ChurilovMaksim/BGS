@@ -41,7 +41,9 @@ int main(){
    const Z base=(n-c)/k;
    require(k*base+c==n,"multiplicity total");
    require(k*base*base+2*c*base+1==(n*n+k-1)/k,"squared multiplicity total");
-   if(comma)std::cout<<',';comma=true;++count;
+   if(comma) std::cout<<',';
+   comma=true;
+   ++count;
    std::cout<<"{\"trace\":"<<t<<",\"K\":"<<k<<",\"N\":\""<<n<<"\",\"sign\":"<<c<<",\"uniform_dimension\":\""<<(n-c)/2<<"\",\"root_multiplicity\":\""<<(n-c)/(2*k)<<"\"}";
   }
   require(count==131,"unexpected test count");

@@ -26,7 +26,7 @@ The repository currently establishes, in their stated scopes:
 - a fixed-model classical symmetry theorem excluding ordinary $C^1$ centralizers, reversors, and relevant affine conjugacies in the stated perturbative range;
 - a full-symbol odd-Pell Gaussian crossover and a necessary escape condition from the weak-kick obstruction;
 - mixed-loop/resolvent identities and conditional barriers that sharpen the fixed-map frontier without identifying the CUE limit;
-- resonance/cohomology theorems, including sharp coercivity on complete Fourier-line classes and explicit obstructions to purely local fixed-point arguments;
+- resonance/cohomology theorems, including [smooth rigidity on finitely many signed Fourier orbits](mathematics/finite_orbit_resonance_rigidity.md), sharp coercivity on complete Fourier-line classes, and explicit obstructions to purely local fixed-point arguments;
 - negative controls and retractions documenting proof routes that fail.
 
 The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and maintained mathematical sources.
@@ -108,6 +108,7 @@ The canonical manuscript is built with:
 
 ```sh
 python computations/maintenance/sync_return_sections.py --check
+python computations/maintenance/sync_finite_orbit_section.py --check
 python computations/maintenance/sync_fixed_map_section.py --check
 python computations/maintenance/build_unified_manuscript.py \
   --output-dir build/unified-paper

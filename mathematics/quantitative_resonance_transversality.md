@@ -143,8 +143,11 @@ or (6). Those inequalities allow a thin set of near-degenerate values and
 permit changing one coefficient; they do not give a positive lower bound
 uniform over all coefficients in a Fourier box.
 
-The unresolved deterministic question remains whether a nonzero finite
-trigonometric polynomial with several signed A-orbits can have Gamma=0.
-The analytic no-Poisson-commutation theorem proves only h_g is nonzero; it
-does not exclude h_g from being a coboundary. This gap is deliberately not
-filled by a genericity assertion or by the bounds above.
+The finite-polynomial several-orbit question is already closed by
+`extremal_resonance_nondegeneracy.md`: every nonconstant real trigonometric
+polynomial has positive Gamma. The 22 September project proof in
+`finite_orbit_resonance_rigidity.md` further covers every nonconstant real
+smooth observable supported on finitely many signed A-orbits, and all finite
+lag combinations. Arbitrary real-analytic support on infinitely many orbit
+families remains open. Pointwise nonvanishing, genericity, and the bounds
+above are not substitutes for that remaining all-members theorem.

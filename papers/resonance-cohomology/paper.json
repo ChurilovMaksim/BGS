@@ -6,16 +6,20 @@
   "authority": "record/claims.json",
   "claims": [
     "BGS-RES-001",
-    "BGS-RES-002"
+    "BGS-RES-002",
+    "BGS-RES-004"
   ],
   "authoritative_sources": [
     "mathematics/fourier_line_resonance_coercivity.md",
     "mathematics/local_jet_resonance_obstruction.md",
     "mathematics/analytic_bracket_rigidity.md",
-    "mathematics/analytic_coboundary_regularization.md"
+    "mathematics/analytic_coboundary_regularization.md",
+    "mathematics/finite_orbit_resonance_rigidity.md"
   ],
   "external_dependencies": [],
-  "excluded_open_claims": [],
+  "excluded_open_claims": [
+    "BGS-RES-003"
+  ],
   "verification_commit": null,
-  "note": "Coercivity, rigidity, and limitations of local-jet proof strategies."
+  "note": "Fourier-line coercivity, finite-orbit rigidity and limits of local-jet arguments; the all-members analytic question remains open."
 }

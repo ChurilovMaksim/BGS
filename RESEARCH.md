@@ -1,5 +1,15 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [smooth finite-orbit rigidity theorem](mathematics/finite_orbit_resonance_rigidity.md)
+proves independence of all finite Poisson-bracket lag classes modulo $L^2$
+coboundaries for real nonconstant smooth observables supported on finitely
+many signed frequency orbits. It is a project proof with an internal audit;
+the all-analytic infinite-orbit problem remains open. The
+[clustered Abel boundary](mathematics/clustered_abel_window_boundary.md)
+shows precisely why spectral pinning alone cannot yield positive-time
+Heisenberg-window trace estimates. The fixed-strength quantum problem
+remains open.
+
 ## Question and choice of model
 
 The long-term question is when classical chaos produces universal local

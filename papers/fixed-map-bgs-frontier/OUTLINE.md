@@ -7,8 +7,9 @@
 5. Mixed-resolvent identities and three-orientation barrier (`BGS-FM-004`).
 6. Exact trace-to-local-statistics bridge (`BGS-TRACE-001`–`004`).
 7. External loop-characterization input and its exact hypothesis map (`BGS-LOOP-001`).
-8. Frontier: the missing model estimate `BGS-TRACE-005`.
-9. Explicit statement that `BGS-BGS-001` remains open.
+8. Clustered Abel transform and the positive-time counterexample (`BGS-TRACE-006`).
+9. Frontier: the missing model estimate `BGS-TRACE-005`.
+10. Explicit statement that `BGS-BGS-001` remains open.
 
 The paper should be framed as a rigorous frontier/obstruction paper, not as a
 positive universality theorem until the excluded open claims are closed.

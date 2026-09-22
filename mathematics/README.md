@@ -19,10 +19,14 @@ The current fixed-family branch is consolidated in
 1. `results.md` — concise theorem index.
 2. `open_questions.md` — current closure obligations, keyed to stable claim IDs.
 3. `trace_to_local_statistics_bridge.md` — exact deterministic route from joint traces to microscopic tests.
+   `clustered_abel_window_boundary.md` records a sharp limit of what cluster
+   and Abel information alone can infer about positive Heisenberg-time windows.
 4. `fixed_map_resolvent_frontier.md` — maintained frozen-model frontier.
 5. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
 6. `general_cat_return_laws.md`, `pell_harmonic_transition.md`, and `pell_harmonic_returns.md` — global return/observable laws with explicit microscopic boundaries.
 7. `topics/README.md` — thematic navigation across the full maintained corpus.
+   `finite_orbit_resonance_rigidity.md` contains the 22 September smooth
+   finite-orbit theorem and its explicit infinite-orbit boundary.
 8. `earlier_foundations.md` — older results that survived audit in their safe present scope.
 
 The old `elliptic_pencil.md` is retained as a historical theorem-draft route;

@@ -339,6 +339,28 @@
       "closure_condition": "Prove impossibility of a nonconstant real-analytic solution to the stated nonlinear coboundary equation, or construct one."
     },
     {
+      "id": "BGS-RES-004",
+      "title": "Smooth finite-orbit Poisson-bracket lag independence",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INTERNAL AUDIT + EXACT FINITE REGRESSION",
+      "source": "mathematics/finite_orbit_resonance_rigidity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260922/finite_orbit_exact.json",
+        "evidence/20260922/finite_orbit_cpp.json"
+      ],
+      "verifiers": [
+        "computations/verification/finite_orbit_resonance.py",
+        "computations/verification/finite_orbit_degeneracy.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/finite_orbit_resonance.tex"
+      ],
+      "boundary": "A fixed finite number of signed A-frequency orbits, smooth observables and finite lag combinations. The analytic infinite-orbit and quantum BGS targets remain open."
+    },
+    {
       "id": "BGS-RET-001",
       "title": "Harmonic return law for the actual kicked Pell propagator",
       "state": "proved",
@@ -469,6 +491,20 @@
       ],
       "boundary": "The deterministic bridge is closed, but no current theorem proves the required weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N.",
       "closure_condition": "Prove the correctly desymmetrized weighted joint-trace comparison, or an equivalent mixed-resolvent hierarchy, uniformly on every compact Fourier support."
+    },
+    {
+      "id": "BGS-TRACE-006",
+      "title": "Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier",
+      "state": "proved",
+      "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL SELF-REVIEW",
+      "source": "mathematics/clustered_abel_window_boundary.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

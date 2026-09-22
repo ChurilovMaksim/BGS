@@ -8,6 +8,7 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [entire_temporal_gauge](../../entire_temporal_gauge.md)
 - [even_period_spin_resonance](../../even_period_spin_resonance.md)
 - [extremal_resonance_nondegeneracy](../../extremal_resonance_nondegeneracy.md)
+- [finite_orbit_resonance_rigidity](../../finite_orbit_resonance_rigidity.md)
 - [fourier_line_resonance_coercivity](../../fourier_line_resonance_coercivity.md)
 - [generic_wiener_resonance](../../generic_wiener_resonance.md)
 - [infinite_orbit_resonance](../../infinite_orbit_resonance.md)

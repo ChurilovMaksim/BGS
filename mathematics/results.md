@@ -1,5 +1,34 @@
 # Current results and exact scope
 
+## Clustered Abel transform and positive-time windows, 22 September 2026
+
+For unitary spectra in \(K\) arcs of radius \(\eta\), the exact Poisson-kernel
+bound in [the proof](clustered_abel_window_boundary.md) yields
+\(L_D(s)\to\infty\) if \(K/D\to0\) and \(K\eta\to0\).
+The explicitly compensated Pell family inherits this consequence in its
+existing larger pinning range. An explicit simple-spectrum construction has
+the same Abel divergence and spacing collapse, yet its form factor tends to
+zero uniformly on each \(m\in[aD,bD]\), \(0<a<b\). This limits what
+clustering alone can prove about Heisenberg-time traces. Claim
+`BGS-TRACE-006` is independent of the unproved frozen-map estimate;
+see its [dated research record](../record/abel_window_research_20260922.md).
+
+## Smooth finite-orbit rigidity, 22 September 2026
+
+**Project proof; adversarial self-review and exact finite regressions.**
+For every hyperbolic A in SL(2,Z), the finite lag classes
+`{g,C^r g}/(4*pi)` are independent modulo L2 coboundaries for every real
+nonconstant smooth g supported on finitely many signed A-orbits.
+The pair-channel normal form is a common real entire all-pass filter of a
+finite Fourier polynomial. A zero-variance smooth counterexample therefore
+requires unbounded `abs(det(k,Ak))` on its support.
+See [proof](finite_orbit_resonance_rigidity.md),
+[audit](../record/finite_orbit_proof_audit_20260922.md), and
+[scope record](../record/research_pass_20260922.md).
+This does not prove arbitrary-analytic nondegeneracy, a uniform coercivity
+bound, quantum microscopic statistics, or external priority.
+
+
 Stable claim IDs and cross-layer links are in `../record/claims.json`; status
 authority remains `../record/claim_ledger.md`. The thematic navigation layer
 is `topics/README.md`. This index is expository and cannot strengthen the

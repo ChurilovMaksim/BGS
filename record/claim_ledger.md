@@ -1,5 +1,32 @@
 # Claim ledger
 
+## 22 September 2026 — clustered Abel and time-window inference
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| `BGS-TRACE-006`: short-arc clustering implies the exact Abel lower bound (A1), and simple macroscopically uniform spectra can have divergent Abel transforms and spacing collapse while their form factor tends uniformly to zero on every fixed positive Heisenberg-time window | EXACT ELEMENTARY PROOF + INTERNAL SELF-REVIEW | `mathematics/clustered_abel_window_boundary.md`; abstract spectra, not a realization by the frozen quantum map |
+| The existing compensated Pell family has a divergent Abel transform in its larger pinning range | COROLLARY OF PROJECT PINNING THEOREM | Requires its counterterm, parity assumptions for the odd sector, and vanishing classical strength; fixed-coupling mixed-loop cancellation remains OPEN |
+
+The proof, finite diagnostics and inference limits are in
+`record/abel_window_research_20260922.md`.
+
+## 22 September 2026 — smooth finite-orbit extension
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| All finite Poisson-bracket lag classes are independent modulo L2 coboundaries for every real nonconstant smooth observable on finitely many signed hyperbolic Fourier orbits | PROJECT PROOF + SELF-REVIEW + EXACT FINITE REGRESSION | `mathematics/finite_orbit_resonance_rigidity.md`; no independent referee or external priority claim |
+| Eventual cancellation of all same/opposite-sign pair channels forces a common real entire all-pass filter of a finite Fourier polynomial | PROJECT PROOF | Finite orbit family; smoothness; not a zero-variance example |
+| A smooth zero-variance counterexample requires unbounded abs(det(k,Ak)) on its Fourier support | PROJECT COROLLARY | No quantitative tail estimate |
+| Arbitrary-analytic resonance nondegeneracy and microscopic fixed-coupling BGS | OPEN | Neither follows by truncation or by classical variance positivity |
+| `formalization/FiniteOrbitAlgebra20260922.lean` | SOURCE ONLY, NOT COMPILED IN THIS PASS | Two conditional algebraic lemmas, not an analytic formalization |
+
+Actual access, integration and execution scope are recorded in
+`record/research_pass_20260922.md`. The earlier prepared overlay was not itself a remote commit or a full-repository CI result. See `record/integration_20260922.md` for subsequent integration and verification.
+An independently reconstructed internal [derivation and dependency audit](finite_orbit_secondary_review_20260922.md)
+checks both pair-channel signs, separation, factorization and the pinned finite-Fourier input;
+it is not an external referee report.
+
+
 **Status authority.** This file is the sole repository-wide authority for the
 current status and scope of scientific claims. Stable identifiers and
 cross-layer links are maintained in `claims.json`; that registry may index

@@ -51,6 +51,16 @@
     },
     {
       "generated": [
+        "manuscript/unified_sections/finite_orbit_resonance.tex"
+      ],
+      "producer": "computations/maintenance/sync_finite_orbit_section.py",
+      "mode": "fail-closed byte-level source hash and rendering check",
+      "authoritative_sources": [
+        "mathematics/finite_orbit_resonance_rigidity.md"
+      ]
+    },
+    {
+      "generated": [
         "build/unified-paper/BGS_unified.pdf"
       ],
       "producer": "computations/maintenance/build_unified_manuscript.py",

@@ -11,4 +11,5 @@ Before submission, fill `verification_commit` with the exact audited commit,
 run the referee protocol in `../../REVIEWING.md`, and ensure every external
 dependency is pinned in `../../literature/external_dependencies.json`.
 
-Scope note: Coercivity, rigidity, and limitations of local-jet proof strategies.
+Scope note: Fourier-line coercivity, smooth finite-orbit rigidity, and the
+limits of local-jet proof strategies; the all-members analytic question stays open.
