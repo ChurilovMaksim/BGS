@@ -37,7 +37,7 @@ For a mathematical reader or referee:
 
 1. [Source of truth](SOURCE_OF_TRUTH.md) — the repository authority hierarchy.
 2. [Claim ledger](record/claim_ledger.md) — repository-wide authority for current scientific status.
-3. [Stable claim registry](record/claim_registry.md), its [machine-readable source](record/claims.json), and the [dependency graph](record/scientific_dependency_graph.md) — stable identities and programme dependencies.
+3. [Core claim registry](record/claim_registry.md), its [machine-readable source](record/claims.json), and the [dependency graph](record/scientific_dependency_graph.md) — stable identities and programme dependencies.
 4. [Results index](mathematics/results.md) and [open obligations](mathematics/open_questions.md).
 5. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) and [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md).
 6. [Mathematics topic views](mathematics/topics/README.md) — thematic navigation without moving authoritative proof paths.

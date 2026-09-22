@@ -4,6 +4,17 @@
   "rules": [
     {
       "generated": [
+        "ERRATA.md"
+      ],
+      "producer": "computations/maintenance/render_errata.py",
+      "mode": "deterministic reader-facing correction index; --check is fail-closed",
+      "authoritative_sources": [
+        "record/errata.json",
+        "record/retractions.md"
+      ]
+    },
+    {
+      "generated": [
         "record/claim_registry.md"
       ],
       "producer": "computations/maintenance/render_claim_registry.py",

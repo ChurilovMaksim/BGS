@@ -50,6 +50,7 @@ REQUIRED = [
     ROOT / "record" / "repository_conventions.md",
     ROOT / "record" / "claims.json",
     ROOT / "record" / "claim_registry.md",
+    ROOT / "record" / "errata.json",
     ROOT / "record" / "scientific_dependencies.json",
     ROOT / "record" / "generated_sources.json",
     ROOT / "record" / "mathematics_topics.json",
@@ -65,6 +66,7 @@ REQUIRED = [
     ROOT / "record" / "final_consolidation_audit_20260906.md",
     MAINTENANCE / "verify_workspace.py",
     MAINTENANCE / "render_claim_registry.py",
+    MAINTENANCE / "render_errata.py",
     MAINTENANCE / "build_unified_manuscript.py",
     ROOT / "computations" / "verification" / "repository_audit.py",
     ROOT / "computations" / "verification" / "scientific_registry_audit.py",
@@ -247,6 +249,8 @@ def check_active_markdown_links() -> None:
         ROOT / "record" / "README.md",
         ROOT / "mathematics" / "README.md",
         ROOT / "evidence" / "provenance.md",
+        ROOT / "evidence" / "README.md",
+        ROOT / "literature" / "README.md",
     ]
     seen: set[Path] = set()
     for p in [*ACTIVE_MARKDOWN, *dynamic]:

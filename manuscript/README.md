@@ -25,7 +25,10 @@ python computations/maintenance/build_unified_manuscript.py --output-dir build/u
 
 Old standalone article `.tex/.pdf` copies are intentionally absent from the current tree. They were inputs to the consolidation process and remain recoverable from Git history; they are not separate maintained deliverables.
 
-The scientific claim-status authority is `../record/claim_ledger.md`; the source-consolidation map is `../record/consolidation_map.json`.
+The scientific claim-status authority is `../record/claim_ledger.md`;
+stable claim IDs are in `../record/claims.json`; the source-consolidation map
+is `../record/consolidation_map.json`. Focused publication candidates live
+under `../papers/` and do not duplicate proof authority.
 
 The 21 September fixed-map continuation is maintained directly as
 `unified_sections/research_20260921.tex` and is included immediately after

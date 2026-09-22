@@ -22,6 +22,8 @@ def render() -> str:
         "This file is generated from `record/claims.json`. It is a navigation",
         "surface, not an independent status authority; `claim_ledger.md` wins.",
         "",
+        data["registry_scope"],
+        "",
         "| Claim ID | State | Title | Authoritative source | Boundary / closure |",
         "|---|---|---|---|---|",
     ]

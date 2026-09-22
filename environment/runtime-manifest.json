@@ -23,7 +23,9 @@
   "verification": {
     "structural": "python computations/verification/repository_audit.py",
     "scientific_registry": "python computations/verification/scientific_registry_audit.py",
-    "workspace": "python computations/maintenance/verify_workspace.py"
+    "workspace": "python computations/maintenance/verify_workspace.py (requires a clean Git worktree by default; records whole-tracked-tree and toolchain fingerprints)",
+    "claim_registry": "python computations/maintenance/render_claim_registry.py --check",
+    "errata": "python computations/maintenance/render_errata.py --check"
   },
   "caveat": "A manifest describes the target environment. Actual execution status must be recorded separately."
 }

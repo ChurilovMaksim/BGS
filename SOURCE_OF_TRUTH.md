@@ -6,7 +6,7 @@ This file is the short operational map. Detailed policy is in
 When surfaces disagree, resolve them in this order:
 
 1. `record/claim_ledger.md` — current scientific status and scope.
-2. `record/claims.json` — stable machine-readable claim identities and links.
+2. `record/claims.json` — stable machine-readable IDs and links for core load-bearing claims and programme obligations; it is intentionally not a replacement for the full ledger.
 3. authoritative proof sources in `mathematics/`.
 4. exact external dependency records in `literature/external_dependencies.json`.
 5. formal kernels in `formalization/`, within their stated trust boundary.

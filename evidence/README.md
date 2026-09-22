@@ -18,13 +18,20 @@ Descriptive floating-point diagnostics. They are not hypothesis tests and do not
 
 Only minimal preserved inputs required by maintained regressions live here. Consumers pin their hashes before use.
 
+### `executions/`
+
+New execution/build manifests belong here. Legacy execution records remain at
+their original paths when moving them would destroy path-level provenance.
+`index.json` records the canonical evidence taxonomy and those legacy
+exceptions.
+
 ## Trust rule
 
 Interpret a JSON object only at the level stated by its `scope`, `interpretation`, run command and associated review. Numerical agreement is never silently upgraded to proof; a finite certificate is never silently upgraded to a growing-parameter theorem; a failed workflow with `steps=[]` is not treated as a scientific test failure.
 
-Repository-wide claim status is controlled by
+Repository-wide claim status is controlled solely by
+`../record/claim_ledger.md`. Stable IDs and cross-layer links live in
+`../record/claims.json` and cannot strengthen that ledger.
 
-- `../record/claim_ledger.md` for the base corpus;
-- `../record/claim_ledger_addendum_20260907.md` for the dated later/corrected scopes.
-
-See `provenance.md` for the current certificate inventory.
+See `provenance.md` for the current certificate inventory and `index.json`
+for machine-readable evidence classes.

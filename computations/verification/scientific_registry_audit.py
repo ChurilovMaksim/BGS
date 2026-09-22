@@ -21,6 +21,7 @@ ENVIRONMENT = ROOT / "environment" / "runtime-manifest.json"
 PAPERS = ROOT / "papers"
 TOPICS = ROOT / "record" / "mathematics_topics.json"
 
+ERRATA_RE = re.compile(r"^ERR-[0-9]{3}$")
 CLAIM_RE = re.compile(r"^BGS-[A-Z]+-[0-9]{3}$")
 EXTERNAL_RE = re.compile(r"^EXT-[A-Z0-9]+-[A-Z0-9-]+$")
 ALLOWED_STATES = {"proved", "conditional", "open", "verification-pending"}
@@ -45,6 +46,8 @@ def require_path(rel: str, *, allow_build: bool = False) -> None:
 
 def audit_claims() -> tuple[dict[str, dict], set[str]]:
     data = load(CLAIMS)
+    if not data.get("registry_scope"):
+        fail("record/claims.json is missing registry_scope")
     rows = data.get("claims")
     if not isinstance(rows, list) or not rows:
         fail("record/claims.json has no claims")
@@ -166,6 +169,10 @@ def audit_papers(claims_by_id: dict[str, dict], claim_ids: set[str], external_id
                 fail(f"{path.relative_to(ROOT)}: unknown external dependency {eid}")
         for rel in data.get("authoritative_sources", []):
             require_path(rel)
+        if not (path.parent / "README.md").is_file():
+            fail(f"{path.parent.relative_to(ROOT)}: missing README.md")
+        if not (path.parent / "OUTLINE.md").is_file():
+            fail(f"{path.parent.relative_to(ROOT)}: missing OUTLINE.md")
 
 def audit_python_pins() -> None:
     req = ROOT / "requirements.txt"
@@ -203,6 +210,24 @@ def audit_generated_and_environment() -> None:
         if prefix:
             require_path(prefix.rstrip("/"))
 
+def audit_errata() -> None:
+    data=load(ROOT / "record" / "errata.json")
+    rows=data.get("entries")
+    if not isinstance(rows,list) or not rows:
+        fail("record/errata.json has no entries")
+    ids=set()
+    for row in rows:
+        eid=row.get("id")
+        if not isinstance(eid,str) or not ERRATA_RE.fullmatch(eid):
+            fail(f"invalid erratum id: {eid!r}")
+        if eid in ids:
+            fail(f"duplicate erratum id: {eid}")
+        ids.add(eid)
+        for key in ("title","disposition","downstream","authority"):
+            if not row.get(key):
+                fail(f"{eid}: missing {key}")
+        require_path(row["authority"])
+
 def audit_topics() -> None:
     data = load(TOPICS)
     topics = data.get("topics")
@@ -238,6 +263,7 @@ def audit_governance_surface() -> None:
         "record/history/2026/INDEX.md", "evidence/executions/README.md",
         "environment/README.md", "papers/README.md", "mathematics/topics/README.md",
         "record/claim_registry.md", "computations/maintenance/render_claim_registry.py",
+        "record/errata.json", "computations/maintenance/render_errata.py",
         ".github/ISSUE_TEMPLATE/proof-obligation.yml",
         ".github/ISSUE_TEMPLATE/correction.yml",
         ".github/ISSUE_TEMPLATE/config.yml",
@@ -252,6 +278,7 @@ def main() -> int:
     audit_papers(claims, claim_ids, external_ids)
     audit_python_pins()
     audit_generated_and_environment()
+    audit_errata()
     audit_topics()
     audit_governance_surface()
     print(

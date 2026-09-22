@@ -3,6 +3,8 @@
 This file is generated from `record/claims.json`. It is a navigation
 surface, not an independent status authority; `claim_ledger.md` wins.
 
+Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID.
+
 | Claim ID | State | Title | Authoritative source | Boundary / closure |
 |---|---|---|---|---|
 | `BGS-BGS-001` | **OPEN** | Fixed-strength microscopic BGS universality for the maintained frozen map | [source](../mathematics/fixed_map_resolvent_frontier.md) | Prove the required model-specific Heisenberg-scale joint-trace or equivalent mixed-resolvent estimate on every compact Fourier support, then verify the stated unfolding and symmetry-class hypotheses. |

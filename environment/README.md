@@ -25,6 +25,11 @@ For a scientific release, record:
 `lake env lean --version`, Pandoc version, TeX engine/version, operating
 system image, commit SHA, and source hashes.
 
+The maintained workspace runner now requires a clean Git worktree by default,
+hashes every tracked file before and after execution, records a canonical
+whole-tree fingerprint, and captures Python package, compiler, CMake, Git, and
+Boost version information in its execution manifest.
+
 The current Python dependency file is version-pinned but not wheel-hash-locked.
 Do not claim supply-chain hash locking until a generated lock with actual
 package artifact hashes is committed and independently replayed.

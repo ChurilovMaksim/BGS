@@ -75,6 +75,10 @@ conditional local process, beyond its conditional first moment.
 
 ## Next decisive research tasks
 
+The machine-readable frontier is `record/claims.json`; the human board is
+`mathematics/open_questions.md`. The direct fixed-map path is centered on
+`BGS-TRACE-005` and terminates at `BGS-BGS-001`.
+
 1. **Independent validation and priority comparison.** Audit the general return
    proof, especially the capped-phase cluster estimate and the centered
    counterexample, against explicit source theorems. Success means a
@@ -84,7 +88,7 @@ conditional local process, beyond its conditional first moment.
    symmetry explanation is excluded.  The remaining transfer problem is
    quantum: obtain uniform estimates in the actual fixed-(\tau) regime.
    Small/growing-amplitude comparison theorems stop far before that scale.
-3. **Heisenberg-time spectral comparison.** Prove the needed desymmetrized
+3. **Heisenberg-time spectral comparison (`BGS-TRACE-005`).** Prove the needed desymmetrized
    joint-trace comparison on every compact Fourier support. The existing
    deterministic bridge explains how such input would imply microscopic
    correlation limits, but does not provide that input.
@@ -97,7 +101,9 @@ because it generalizes a finite experiment or increases computational size.
 
 The repository provides a canonical manuscript, proof sources, maintained
 programs, a pinned formalization project, and reproducibility instructions.
-The [publication review](record/publication_review_20260912.md) distinguishes
+Focused paper scopes are maintained under [papers/](papers/README.md), while
+the programme-level roadmap is [ROADMAP.md](ROADMAP.md). The
+[publication review](record/publication_review_20260912.md) distinguishes
 checks performed in this revision from historical evidence. External peer
 review, a targeted journal article distilled from this large collection, and
 a funding-call-specific application remain separate work. No funding budget,

@@ -6,10 +6,12 @@ programme.
 ## Authoritative living surface
 
 - `claim_ledger.md` — sole repository-wide authority for current scientific status;
-- `claims.json` — stable machine-readable claim IDs and cross-layer links;
+- `claims.json` — stable machine-readable IDs/cross-links for core load-bearing claims and programme obligations;
+- `claim_registry.md` — generated human-readable view of that core registry;
 - `scientific_dependencies.json` and `scientific_dependency_graph.md` — maintained theorem/programme DAG;
 - `research_routes.md` — route-level advances, obstructions, and closure conditions;
-- `retractions.md` — false/superseded statements and failure mechanisms;
+- `retractions.md` — full false/superseded statements and failure mechanisms;
+- `errata.json` — normalized correction IDs used to generate the reader-facing `../ERRATA.md`;
 - `repository_conventions.md` — scientific repository governance;
 - `generated_sources.json` — generated/publication source contracts;
 - `mathematics_topics.json` — complete thematic classification of maintained proof notes;
