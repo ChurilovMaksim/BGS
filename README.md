@@ -120,7 +120,7 @@ C_{2,N}(U;\phi)
 \sum_{m\in\mathbb Z}
 \widehat{\phi}(m/N)
 \left(
-|\operatorname{Tr}U^m|^2-N
+|\mathrm{Tr}U^m|^2-N
 \right).
 ```
 
@@ -136,7 +136,7 @@ For Haar unitary matrices $V_N\in U(N)$ the exact second-moment benchmark is
 
 ```math
 \mathbb E_{\mathrm{CUE}}
-\left|\operatorname{Tr}V_N^m\right|^2
+\left|\mathrm{Tr}V_N^m\right|^2
 =
 \min(|m|,N).
 ```
@@ -214,7 +214,7 @@ The strongest conceptual part of the programme is the exact passage from local s
 For higher correlations, partition-lattice Möbius inversion produces constrained products of traces,
 
 ```math
-\prod_{\nu=1}^{r}\operatorname{Tr}U_N^{m_\nu},
+\prod_{\nu=1}^{r}\mathrm{Tr}U_N^{m_\nu},
 ```
 
 with linear relations among the Fourier modes.
@@ -280,7 +280,7 @@ The actual frozen scaling eventually lies outside the proved bounded crossover w
 **BGS-FM-005** gives the exact frozen-kick multiplicity/rank boundary, including
 
 ```math
-\operatorname{rank}(U_N-zM_N)
+\mathrm{rank}(U_N-zM_N)
 \ge
 N-\gcd(N,7)
 ```
@@ -354,10 +354,10 @@ For the pair statistic, the desired comparison has the schematic form
 \sum_{m\in\mathbb Z}
 w(m/N)
 \left[
-|\operatorname{Tr}U_N^m|^2
+|\mathrm{Tr}U_N^m|^2
 -
 \mathbb E_{\mathrm{RMT}}
-|\operatorname{Tr}V_N^m|^2
+|\mathrm{Tr}V_N^m|^2
 \right]
 \longrightarrow 0.
 ```
