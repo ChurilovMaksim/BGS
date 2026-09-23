@@ -1,5 +1,16 @@
 # Claim ledger
 
+## 23 September 2026 — full-lag frozen-symbol gap and exact kick rank
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| `BGS-RES-005`: all positive lag classes of the actual physical symbol, transported by the **linear** cat map, form a uniformly bounded-below lattice under every simultaneous time translation; lower singular bound `7*pi/2`, retained for arbitrary `M1` perturbations of radius `1/100` | PROJECT PROOF + SEPARATE INTERNAL DERIVATION REVIEW + EXACT SYMBOL CERTIFICATE | `mathematics/frozen_full_lag_resonance.md`; audit `record/frozen_full_lag_review_20260923.md`; nonlinear classical transport and quantum BGS remain open |
+| `BGS-FM-005`: the frozen generator has `gcd(N,7)` irreducible Jacobi chains and `rank(U_N-zM_N)>=N-gcd(N,7)` for all odd `N>=3` and algebraic nonzero coupling; the explicit approximate-rank bound holds only when `|tau N|79/50<=pi` | PROJECT PROOF + EXACT EXTERNAL INPUT + SELF-REVIEW + FINITE DIAGNOSTICS | `mathematics/frozen_kick_rank_boundary.md`; Hermite–Lindemann in `EXT-EV-2015`; the single-chain coprime case was already in the weighted-secular supplement. Neither exact rank nor the restricted approximation gives Heisenberg-scale joint-trace cancellation |
+| `BGS-TRACE-005`, `BGS-BGS-001`, and arbitrary analytic resonance `BGS-RES-003` | **OPEN** | The two new claims do not close any of these programme obligations |
+
+Commands, checked numerical scope, source hashes and the continuation boundary
+are recorded in `record/integration_20260923.md`.
+
 ## 22 September 2026 — clustered Abel and time-window inference
 
 | Claim | Status | Boundary / authority |

@@ -27,6 +27,7 @@ The repository currently establishes, in their stated scopes:
 - a full-symbol odd-Pell Gaussian crossover and a necessary escape condition from the weak-kick obstruction;
 - mixed-loop/resolvent identities and conditional barriers that sharpen the fixed-map frontier without identifying the CUE limit;
 - resonance/cohomology theorems, including [smooth rigidity on finitely many signed Fourier orbits](mathematics/finite_orbit_resonance_rigidity.md), sharp coercivity on complete Fourier-line classes, and explicit obstructions to purely local fixed-point arguments;
+- a [uniform all-lag classical resonance bound](mathematics/frozen_full_lag_resonance.md) for the physical frozen symbol under the linear cat map, and an [exact rank obstruction](mathematics/frozen_kick_rank_boundary.md) for the frozen generator;
 - negative controls and retractions documenting proof routes that fail.
 
 The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and maintained mathematical sources.

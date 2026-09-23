@@ -23,6 +23,11 @@ resonance, and information-theory frontiers are valuable independent
 programmes and possible sources of techniques, but they are not silently
 treated as prerequisites for `BGS-BGS-001`.
 
+The 23 September exact kick-rank result `BGS-FM-005` does not estimate joint
+traces at Heisenberg times. The all-lag classical gap `BGS-RES-005` uses
+linear transport of one physical symbol; arbitrary analytic observables
+under nonlinear transport remain within `BGS-RES-003`.
+
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 
 The off/off elliptic correlation layer is no longer an independent open problem: after extraction of the coherent reducible fibre, `offoff_elliptic_spike_theorem.md` proves

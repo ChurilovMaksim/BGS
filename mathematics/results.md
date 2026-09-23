@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Full-lag gap and exact generator rank, 23 September 2026
+
+For the **actual physical symbol** of the frozen model under the linear cat
+transport, [a uniform Riesz bound](frozen_full_lag_resonance.md) controls every
+positive lag and simultaneous dynamical translate, including the first lag:
+the singular bound is at least `7*pi/2`. It persists for arbitrary real
+weighted-Wiener perturbations of radius `1/100`, including observables with
+infinitely many frequency orbits. The proof uses a one-visit property of the
+specific Fourier support; its [internal independent audit](../record/frozen_full_lag_review_20260923.md)
+and exact coefficient check are separate evidence. This is a classical
+linear-map result, not an estimate for the nonlinear kicked flow.
+
+The [frozen generator rank boundary](frozen_kick_rank_boundary.md) gives at
+most `gcd(N,7)` eigenvalue multiplicity and exact
+`rank(U_N-zM_N)>=N-gcd(N,7)` for odd `N>=3`. It uses the existing Jacobi
+representation and a checked Hermite–Lindemann input. The quantitative
+approximate-rank bound is restricted to `|tau N|79/50<=pi`; it gives no
+fixed-strength large-`N` trace bound. Status, limits and verification scope
+are in the [continuation record](../record/integration_20260923.md).
+
 ## Clustered Abel transform and positive-time windows, 22 September 2026
 
 For unitary spectra in \(K\) arcs of radius \(\eta\), the exact Poisson-kernel

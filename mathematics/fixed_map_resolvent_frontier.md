@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
 
-**Status, 20 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 23 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -55,6 +55,18 @@ displayed $U_N$ has been obtained. All-order universality needs more than
 this pair target.
 
 ## What the recovered work establishes
+
+For the actual frozen kick, the [exact Jacobi-chain decomposition](frozen_kick_rank_boundary.md)
+has $\gcd(N,7)$ irreducible blocks for every odd dimension. With the cited
+Hermite--Lindemann input, it implies
+$\operatorname{rank}(U_N-zM_N)\ge N-\gcd(N,7)$ for every complex $z$ and
+every nonzero algebraic coupling. Its approximate-rank bound applies only
+before eigenphase wrapping, $|\tau N|(79/50)\le\pi$; it supplies no fixed-strength
+asymptotic control. Separately, the [full-lag classical gap](frozen_full_lag_resonance.md)
+proves a uniform translated Riesz bound for the exact physical symbol under
+the *linear* cat map, including small weighted-Fourier perturbations. It
+does not treat transport by the nonlinear kicked map. Neither result bounds
+the Heisenberg-scale joint traces needed for `BGS-TRACE-005`.
 
 Exact algebraic arguments exclude scalar-algebraic returns for the stated
 frozen family except its explicitly treated raw $N=7$ exception. They do not

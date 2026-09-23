@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -230,6 +230,28 @@
       "boundary": "Normalized mixed-residual decay hypotheses remain unproved for the frozen propagator."
     },
     {
+      "id": "BGS-FM-005",
+      "title": "Actual frozen-kick Jacobi decomposition and exact low-rank obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE DIAGNOSTICS",
+      "source": "mathematics/frozen_kick_rank_boundary.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-EV-2015"
+      ],
+      "evidence": [
+        "evidence/20260923/frozen_kick_rank.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_kick_rank.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT."
+    },
+    {
       "id": "BGS-FORMAL-001",
       "title": "Active Lean algebraic/finite kernel graph",
       "state": "verification-pending",
@@ -359,6 +381,26 @@
         "manuscript/unified_sections/finite_orbit_resonance.tex"
       ],
       "boundary": "A fixed finite number of signed A-frequency orbits, smooth observables and finite lag combinations. The analytic infinite-orbit and quantum BGS targets remain open."
+    },
+    {
+      "id": "BGS-RES-005",
+      "title": "Full-lag uniform classical Riesz gap for the frozen physical symbol under linear transport",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + SEPARATE INTERNAL REVIEW + EXACT SYMBOL CERTIFICATE",
+      "source": "mathematics/frozen_full_lag_resonance.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260923/frozen_full_lag_gap.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_full_lag_gap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "All positive lags and all linear-map translates; stable for arbitrary M1 perturbations of radius 1/100. Does not cover nonlinear transport, quantum Heisenberg traces, or BGS."
     },
     {
       "id": "BGS-RET-001",

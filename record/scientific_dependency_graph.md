@@ -21,9 +21,11 @@ graph TD
   T3 --> T5
 
   F3[BGS-FM-003 moment controls] --> F4[BGS-FM-004 three-orientation barrier]
+  F5[BGS-FM-005 exact kick-rank boundary]
   T2 --> L1[BGS-LOOP-001 mixed loop hierarchy]
 
   R4[BGS-RES-004 finite-orbit rigidity]
+  R5[BGS-RES-005 full-lag linear gap]
   R1[BGS-RES-001 Fourier-line coercivity] --> R3[BGS-RES-003 analytic all-members OPEN]
   R2[BGS-RES-002 local-jet obstruction] --> R3
 

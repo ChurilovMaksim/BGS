@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "dependencies": [
     {
       "id": "EXT-BH-2026",
@@ -104,6 +104,22 @@
       "project_sources": [
         "mathematics/cayley_jacobi_trace_average.md",
         "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-EV-2015",
+      "authors": [
+        "Jan-Hendrik Evertse"
+      ],
+      "title": "Chapter 4: Transcendence results",
+      "identifier": "https://pub.math.leidenuniv.nl/~evertsejh/dio15-4.pdf",
+      "pinned_version": "author-hosted PDF, Chapter 4 (2015)",
+      "locator": "Theorem 4.8 and Corollary 4.9(i), printed page 48, PDF page 4",
+      "checked_on": "2026-09-23",
+      "mapping": "For two distinct algebraic exponents 0 and i tau N(lambda-mu), coefficients -1 and 1, exponentials cannot coincide. This gives qualitative injectivity only, no spectral gap. The underlying single-chain representation was already recorded in supplement/fixed_map/weighted-secular/attempt.md.",
+      "project_sources": [
+        "mathematics/frozen_kick_rank_boundary.md",
+        "record/frozen_rank_review_20260923.md"
       ]
     }
   ]

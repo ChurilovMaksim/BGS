@@ -1,5 +1,14 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The 23 September continuation proves a [full-lag classical gap for the
+physical frozen symbol](mathematics/frozen_full_lag_resonance.md) under the
+linear map, including an explicit unrestricted `M1` neighborhood. It also
+derives an [exact rank bound for the frozen kick](mathematics/frozen_kick_rank_boundary.md)
+from its Jacobi-chain structure and the classical algebraic-exponential
+theorem. The nonlinear dynamics and fixed-strength Heisenberg joint traces
+remain the decisive unresolved inputs; see
+`record/integration_20260923.md` for the precise checks and limits.
+
 The [smooth finite-orbit rigidity theorem](mathematics/finite_orbit_resonance_rigidity.md)
 proves independence of all finite Poisson-bracket lag classes modulo $L^2$
 coboundaries for real nonconstant smooth observables supported on finitely
