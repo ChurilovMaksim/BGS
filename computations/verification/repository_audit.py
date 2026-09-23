@@ -44,6 +44,7 @@ STALE_MAINTENANCE = {
 
 REQUIRED = [
     ROOT / "README.md",
+    ROOT / "README.ru.md",
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
     ROOT / "record" / "claim_ledger.md",
@@ -93,6 +94,7 @@ ACTIVE_MARKDOWN = [
     ROOT / "mathematics" / "fourier_line_resonance_coercivity.md",
     ROOT / "mathematics" / "local_jet_resonance_obstruction.md",
     ROOT / "README.md",
+    ROOT / "README.ru.md",
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
     MANUSCRIPT / "README.md",
@@ -109,6 +111,7 @@ def fail(msg: str) -> None:
 def check_canonical_identity() -> None:
     active_roots = [
         ROOT / "README.md",
+        ROOT / "README.ru.md",
         ROOT / "REPRODUCE_unified.md",
         ROOT / "CMakeLists.txt",
         ROOT / ".github" / "workflows",
@@ -256,6 +259,34 @@ def check_lean_coverage() -> None:
         fail("Bgs.lean does not import active module(s): " + ", ".join(missing))
 
 
+def check_bilingual_readmes() -> None:
+    english = ROOT / "README.md"
+    russian = ROOT / "README.ru.md"
+    for path in (english, russian):
+        text = path.read_text(encoding="utf-8", errors="replace")
+        if text.count("$") % 2:
+            fail(f"unbalanced display-math delimiters in {path.name}")
+        if re.search(r"\\\(|\\\)|\\\[|\\\]", text):
+            fail(f"legacy non-GitHub-native math delimiters remain in {path.name}")
+        if text.count("\n# ") != 0:
+            fail(f"{path.name} must have exactly one H1 at the document start")
+        for raw in re.findall(r'<img[^>]+src="([^"]+)"', text):
+            if "://" in raw:
+                continue
+            target = (ROOT / raw).resolve()
+            try:
+                target.relative_to(ROOT.resolve())
+            except ValueError:
+                continue
+            if not target.is_file():
+                fail(f"missing README image asset: {path.name} -> {raw}")
+
+    if "README.ru.md" not in english.read_text(encoding="utf-8"):
+        fail("README.md does not link to README.ru.md")
+    if "README.md" not in russian.read_text(encoding="utf-8"):
+        fail("README.ru.md does not link back to README.md")
+
+
 def check_active_markdown_links() -> None:
     pat = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
     broken: list[str] = []
@@ -306,6 +337,7 @@ def main() -> int:
         check_maintenance_surface,
         check_cpp_coverage,
         check_lean_coverage,
+        check_bilingual_readmes,
         check_active_markdown_links,
     ]
     for fn in checks:
