@@ -263,8 +263,43 @@ def check_bilingual_readmes() -> None:
     english = ROOT / "README.md"
     russian = ROOT / "README.ru.md"
 
-    for path in (english, russian):
-        text = path.read_text(encoding="utf-8", errors="replace")
+    texts = {
+        english: english.read_text(encoding="utf-8", errors="replace"),
+        russian: russian.read_text(encoding="utf-8", errors="replace"),
+    }
+
+    required_sections = {
+        english: (
+            "## 1. Overview",
+            "## 4. Why Heisenberg time is unavoidable",
+            "## 6. Notation and scales",
+            "## 7. The exact trace-to-local-statistics bridge",
+            "## 8. Research architecture",
+            "## 10. Negative results and ruled-out shortcuts",
+            "## 11. The central open frontier",
+            "## 13. Evidence, proof, formalization, and trust boundaries",
+            "## 15. Historical development of the programme",
+            "## 16. Glossary",
+            "## 17. Frequently asked questions",
+            "## 19. Repository and reproducibility",
+        ),
+        russian: (
+            "## 1. Обзор",
+            "## 4. Почему неизбежно время Гейзенберга",
+            "## 6. Обозначения и масштабы",
+            "## 7. Точный переход от следов к локальной статистике",
+            "## 8. Архитектура исследовательской программы",
+            "## 10. Отрицательные результаты и исключённые сокращения",
+            "## 11. Главный открытый фронтир",
+            "## 13. Доказательства, вычисления, формализация и границы доверия",
+            "## 15. История развития программы",
+            "## 16. Глоссарий",
+            "## 17. Часто задаваемые вопросы",
+            "## 19. Репозиторий и воспроизводимость",
+        ),
+    }
+
+    for path, text in texts.items():
         if not text.startswith("# "):
             fail(f"{path.name} must start with an H1")
         if len(re.findall(r"^# ", text, re.M)) != 1:
@@ -283,17 +318,21 @@ def check_bilingual_readmes() -> None:
         for macro in forbidden_math_macros:
             if macro in text:
                 fail(f"GitHub-unsafe README math macro {macro!r} in {path.name}")
-        without_fenced = re.sub(
-            r"```math\n[\s\S]*?\n```",
-            "",
-            text,
-        )
+
+        without_fenced = re.sub(r"```math\n[\s\S]*?\n```", "", text)
         if len(re.findall(r"(?<!\$)\$(?!\$)", without_fenced)) % 2:
             fail(f"unbalanced inline-math delimiters in {path.name}")
-        if len(re.findall(r"^```math\s*$", text, re.M)) != len(
-            re.findall(r"^```\s*$", text, re.M)
-        ) - len(re.findall(r"^```(?:sh|mermaid)\s*$", text, re.M)):
-            fail(f"unbalanced fenced math blocks in {path.name}")
+
+        fenced_math = len(re.findall(r"^```math\s*$", text, re.M))
+        fenced_other = len(re.findall(r"^```(?:sh|mermaid)\s*$", text, re.M))
+        fenced_closers = len(re.findall(r"^```\s*$", text, re.M))
+        if fenced_closers != fenced_math + fenced_other:
+            fail(f"unbalanced fenced blocks in {path.name}")
+
+        for heading in required_sections[path]:
+            if heading not in text:
+                fail(f"missing wiki section in {path.name}: {heading}")
+
         for raw in re.findall(r'<img[^>]+src="([^"]+)"', text):
             if "://" in raw:
                 continue
@@ -305,10 +344,20 @@ def check_bilingual_readmes() -> None:
             if not target.is_file():
                 fail(f"missing README image asset: {path.name} -> {raw}")
 
-    if "README.ru.md" not in english.read_text(encoding="utf-8"):
+    if "README.ru.md" not in texts[english]:
         fail("README.md does not link to README.ru.md")
-    if "README.md" not in russian.read_text(encoding="utf-8"):
+    if "README.md" not in texts[russian]:
         fail("README.ru.md does not link back to README.md")
+
+    claim_pattern = re.compile(r"BGS-[A-Z]+-\d{3}")
+    english_claims = set(claim_pattern.findall(texts[english]))
+    russian_claims = set(claim_pattern.findall(texts[russian]))
+    if english_claims != russian_claims:
+        fail(
+            "bilingual README claim-ID drift: "
+            f"English-only={sorted(english_claims-russian_claims)}, "
+            f"Russian-only={sorted(russian_claims-english_claims)}"
+        )
 
 
 def check_active_markdown_links() -> None:
