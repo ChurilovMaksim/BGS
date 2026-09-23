@@ -1,139 +1,337 @@
-# BGS — arithmetic quantum chaos and spectral universality
+# BGS — Arithmetic Quantum Chaos and Spectral Universality
 
-Long-horizon research repository on rigorous routes to the
-Bohigas–Giannoni–Schmit (BGS) conjecture for arithmetic and nonlinear quantum
-maps.
+<p align="center">
+  <img src="assets/readme/bgs_hero.svg" alt="BGS programme: classical chaos to quantum spectrum to random-matrix statistics, with the current Heisenberg-scale frontier highlighted." width="100%">
+</p>
 
-**Scientific status (23 September 2026):** the fixed-strength microscopic BGS
-problem for the maintained frozen quantum map remains **OPEN**. The repository
-contains exact reductions, theorem-level project proofs, external-theorem
-applications, finite certificates, reproducible computations, counterexamples
-to insufficient proof strategies, and a consolidated research manuscript.
-Numerical agreement is never treated as a proof of universality.
+<p align="center">
+  <strong>A long-term research programme on the Bohigas–Giannoni–Schmit conjecture, arithmetic quantum maps, and the mechanism by which deterministic chaos may produce universal microscopic spectra.</strong>
+</p>
 
-## Research question
+<p align="center">
+  <a href="#the-bgs-problem">The problem</a> ·
+  <a href="#the-maintained-fixed-map">Fixed map</a> ·
+  <a href="#the-exact-trace-bridge">Trace bridge</a> ·
+  <a href="#what-has-been-established">Results</a> ·
+  <a href="#the-central-open-frontier">Open frontier</a> ·
+  <a href="#selected-project-figures">Figures</a> ·
+  <a href="#repository-and-reproducibility">Repository</a>
+</p>
 
-The central programme asks when deterministic quantizations of classically chaotic maps exhibit random-matrix local spectral statistics, and what arithmetic, dynamical, cohomological, or symmetry mechanisms can obstruct that limit.
+> **Scientific status — 23 September 2026.**  
+> The maintained fixed-strength microscopic BGS problem is **open**. The repository contains exact reductions, project proofs, externally sourced theorem inputs with hypothesis maps, formal finite kernels, finite certificates, numerical diagnostics, explicit counterexamples to insufficient proof strategies, and a consolidated research manuscript. None of these is promoted into a full BGS theorem without the missing Heisenberg-scale dynamical estimate.
 
-For the maintained fixed nonlinear family
+## Abstract
 
-$$
-U_N=\exp(i\tau N A_N)M_N,\qquad \tau=10^{-80},
-$$
+The **Bohigas–Giannoni–Schmit (BGS) conjecture** predicts that, once ordinary symmetries are removed and the mean density is normalized, quantum systems with chaotic classical dynamics exhibit the same *local* spectral statistics as the appropriate random-matrix ensemble. The prediction is simple to state and notoriously difficult to prove: classical hyperbolicity and mixing are macroscopic dynamical properties, while BGS asks about eigenvalue correlations at the mean-spacing scale, where one must control quantum propagation for times comparable with the Hilbert-space dimension.
 
-the decisive unresolved obligation is a model-specific **Heisenberg-scale quantum cancellation estimate**: mixed-resolvent control or an equivalent weighted joint-trace comparison for powers of order $N$. The deterministic trace-to-local-statistics bridge is already available; the missing input is the dynamical estimate for the actual fixed map.
+This repository develops a rigorous programme around that gap. Its current laboratory is an explicit nonlinear perturbation of a hyperbolic quantum cat map. The programme has already closed the deterministic passage from microscopic correlation functions to weighted products of traces, isolated symmetry and arithmetic obstructions, proved several global return and crossover laws, established new classical resonance/cohomology results, and built exact finite-field/Cayley reductions. The remaining fixed-map bottleneck is now sharply stated: prove **model-specific mixed-resolvent or joint-trace cancellation at Heisenberg time** for the actual frozen propagator.
 
-## Current scientific picture
+<p align="center">
+  <img src="assets/readme/bgs_pipeline_motion.svg" alt="Animated conceptual BGS pipeline from classical chaos through quantum traces to the open cancellation estimate and the local random-matrix target." width="82%">
+</p>
 
-The repository currently establishes, in their stated scopes:
+<p align="center"><sub>Conceptual motion diagram. It summarizes the logical route; it is not numerical evidence.</sub></p>
 
-- exact trace-to-microscopic-statistics identities showing why fixed moments and $o(N)$-time trace information do not determine microscopic BGS statistics;
-- arithmetic return laws and Gaussian/global limits on explicit cat-map subsequences, together with sharp counterexamples below their regularity thresholds;
-- exact finite-field and Cayley-energy reductions, resultant structure, averaged arithmetic bounds, and finite independent certificates;
-- a fixed-model classical symmetry theorem excluding ordinary $C^1$ centralizers, reversors, and relevant affine conjugacies in the stated perturbative range;
-- a full-symbol odd-Pell Gaussian crossover and a necessary escape condition from the weak-kick obstruction;
-- mixed-loop/resolvent identities and conditional barriers that sharpen the fixed-map frontier without identifying the CUE limit;
-- resonance/cohomology theorems, including [smooth rigidity on finitely many signed Fourier orbits](mathematics/finite_orbit_resonance_rigidity.md), sharp coercivity on complete Fourier-line classes, and explicit obstructions to purely local fixed-point arguments;
-- a [uniform all-lag classical resonance bound](mathematics/frozen_full_lag_resonance.md) for the physical frozen symbol under the linear cat map, and an [exact rank obstruction](mathematics/frozen_kick_rank_boundary.md) for the frozen generator;
-- negative controls and retractions documenting proof routes that fail.
+## The BGS problem
 
-The authoritative theorem scopes are not inferred from this summary. They are recorded in the claim ledger and maintained mathematical sources.
+### From classical chaos to quantum spectra
 
-## Where to start
+A classical chaotic system stretches and folds phase space, has exponentially proliferating orbit structures, and typically loses detailed memory of initial data. Quantization replaces the classical evolution by an operator acting on a Hilbert space. For an \(N\)-dimensional quantum map one obtains a unitary propagator
+
+\[
+U_N\psi_j=e^{i\theta_j}\psi_j,
+\]
+
+so the spectrum is a set of eigenphases \(\theta_1,\dots,\theta_N\) on the circle.
+
+BGS asks a much more delicate question than whether the classical system is chaotic: **after desymmetrization and unfolding, do the spacings and higher local correlations of the \(\theta_j\) converge to the universal laws of random matrix theory?**
+
+The relevant random-matrix ensemble is determined by the symmetry class. In a map without an antiunitary/reversing symmetry one expects a unitary-class law; with a suitable time-reversal symmetry the orthogonal class is the natural comparison. A rigorous theorem must fix that symmetry reduction and unfolding *before* taking the limit.
+
+### What “microscopic” means
+
+The average eigenphase spacing is of order \(1/N\). A microscopic statistic therefore zooms into windows of that scale rather than looking only at the global spectral density.
+
+This distinction is essential. A system may have a correct global limiting density, Gaussian moments of selected observables, or convincing finite spacing histograms and still fail the microscopic BGS law. The repository contains exact counterexamples demonstrating several versions of this logical gap.
+
+### Why the conjecture is hard
+
+Classical mixing is not itself a theorem about eigenphase spacings. Semiclassical trace formulae relate dynamics to traces of powers of the propagator, but microscopic spectral tests probe powers all the way out to the **Heisenberg scale**
+
+\[
+m=\Theta(N).
+\]
+
+Fixed-time Egorov estimates, \(o(N)\)-time trace information, finitely many moments, and global return laws therefore do not close the problem. The central difficulty is a long-time *quantum cancellation mechanism* strong enough to reproduce the target random-matrix joint-trace statistics.
+
+## The maintained fixed map
+
+The principal fixed-family laboratory is
+
+\[
+U_N=\exp(i\tau N A_N)\,M_N,
+\qquad
+\tau=10^{-80},
+\]
+
+where \(M_N\) is the quantization of the hyperbolic cat map
+
+\[
+S=
+\begin{pmatrix}
+3&4\\
+2&3
+\end{pmatrix},
+\]
+
+and \(A_N\) is the explicitly maintained quantization of the nonlinear kick symbol.
+
+The value of \(\tau\) is extraordinarily small but **fixed**. This matters: the quantum exponent contains \(\tau N\), so the large-\(N\) regime is not uniformly perturbative. The project therefore distinguishes carefully between shrinking-kick regimes, bounded crossover regimes, logarithmic return times, and the genuine fixed-strength semiclassical limit.
+
+For the actual classical frozen map, the maintained project proof establishes analyticity and Anosov dynamics in the relevant small-coupling range, excludes ordinary \(C^1\) centralizers beyond powers of the map, excludes a \(C^1\) reversor, and excludes the relevant affine \(C^1\) conjugacies. A separate exact result gives the frozen kick generator an eigenvalue-multiplicity bound \(\le \gcd(N,7)\) and the rank inequality
+
+\[
+\operatorname{rank}(U_N-zM_N)\ge N-\gcd(N,7)
+\]
+
+for the stated odd-dimensional regime. These results remove important classical and low-rank explanations of spectral rigidity, but they do **not** imply long-time trace cancellation.
+
+## The exact trace bridge
+
+One of the central achievements of the programme is that the deterministic “spectral side” of the BGS implication is explicit.
+
+For a unitary \(N\times N\) matrix and a microscopic pair test \(\phi\), the maintained normalization gives
+
+\[
+C_{2,N}(U;\phi)
+=
+\frac{1}{N^2}
+\sum_{m\in\mathbb Z}
+\widehat{\phi}(m/N)
+\left(
+|\operatorname{Tr}U^m|^2-N
+\right).
+\]
+
+Higher factorial correlations are given by exact partition–Möbius sums of products of traces. Thus compact Fourier support at microscopic scale still requires control of powers \(|m|=\Theta(N)\).
+
+This converts an imprecise slogan — “chaos should imply random matrices” — into a concrete theorem strategy:
+
+1. desymmetrize the correct quantum block;
+2. prove weighted joint-trace comparison with the target ensemble for every compact Fourier support at Heisenberg scale;
+3. use the exact trace bridge to obtain band-limited microscopic correlations;
+4. use positivity/occupation bounds to extend every-compact-bandwidth convergence to Schwartz tests;
+5. add the separately stated hypotheses needed for the desired point-process or spacing conclusion.
+
+The bridge in steps 3–4 is closed. Step 2 is the central open input.
+
+<p align="center">
+  <img src="assets/readme/bgs_frontier.svg" alt="Five-stage frontier diagram showing fixed-map structure, exact trace bridge, obstruction results, the open Heisenberg estimate, and microscopic BGS." width="100%">
+</p>
+
+## What has been established
+
+The project is broader than a single proof attempt. Several theorem families have been developed because they either close a necessary layer, identify a genuine obstruction, or rule out a tempting but insufficient route.
+
+<p align="center">
+  <img src="assets/readme/bgs_results_map.svg" alt="Map of the main BGS theorem families and the central open Heisenberg-scale input." width="100%">
+</p>
+
+| Programme | Current contribution | What it buys | Boundary |
+|---|---|---|---|
+| **Trace bridge** · BGS-TRACE-001–004 | Exact partition–Möbius formulae, microscopic Fourier representation, Heisenberg-scale sufficiency, every-bandwidth Schwartz extension | Reduces microscopic universality to explicit weighted joint traces | Does not provide the dynamical trace estimate |
+| **Fixed map** · BGS-FM-001–005 | Symmetry theorem, odd-Pell crossover, moment/transfer controls, conditional three-orientation barrier, exact kick-rank boundary | Removes several structural obstructions and sharply locates the hard fixed-strength regime | The actual \(m=\Theta(N)\) mixed cancellation is unproved |
+| **Loop/resolvent route** · BGS-LOOP-001 | Exact low-order identities and a conditional all-order characterization route | Provides an analytic language for the desired local law | Approximate mixed loop equations for the deterministic propagator remain open |
+| **Resonance/cohomology** · BGS-RES-001–005 | Fourier-line coercivity, local-jet obstruction, finite-orbit rigidity, full-lag classical Riesz gap for the physical frozen symbol under linear transport | Rules out broad classes of classical degeneracy and identifies what a counterexample would need to exploit | Classical/nonlinear-to-quantum transfer is not automatic |
+| **Arithmetic/Cayley** · BGS-CAYLEY-001–005 | Exact fourth-moment reductions, additive-energy formulation, pointwise \(K^{8/3}\)-scale bounds, uniform subgroup-curve bounds, sharp centered target isolated | Gives a deep arithmetic model of collision/energy mechanisms | The centered \(K^{2+o(1)}\) pointwise target is still open and is not equivalent to BGS |
+| **Return laws / Pell** · BGS-RET-001–002, BGS-TRACE-006 | Global harmonic transition, actual kicked-propagator return laws, clustered Abel lower bounds and a simple-spectrum Heisenberg-window falsifier | Separates global recurrence information from microscopic universality and supplies exact negative controls | Logarithmic-time/global laws do not determine the Heisenberg-scale local spectrum |
+
+### Recent structural advances
+
+The 23 September continuation adds two particularly sharp fixed-model facts. First, the **full-lag classical resonance bound** for the actual frozen physical symbol controls every positive lag under the linear cat transport, with a singular lower bound at least \(7\pi/2\), stable under the stated weighted-Wiener perturbation ball. Second, the **frozen kick-rank theorem** gives the exact multiplicity/rank boundary above. Together with the earlier finite-orbit rigidity theorem, these results make classical degeneracy and simple low-rank explanations substantially less plausible.
+
+At the same time, BGS-TRACE-006 shows why one must not overinterpret clustering or Abel-transform divergence: there are explicit simple spectra with strong clustering signatures while the positive-time Heisenberg-window form factor tends to zero. The desired mixed estimate must therefore use the actual dynamics of the frozen quantum map.
+
+## What does **not** count as a BGS proof
+
+The repository deliberately keeps several seductive but invalid shortcuts visible because they are reusable lessons:
+
+- finite GOE/CUE-looking histograms are evidence, not an asymptotic theorem;
+- global semicircle, Gaussian, wrapped-normal, or free-unitary-Brownian laws do not determine local eigenphase statistics;
+- fixed moments and finitely many loop identities do not identify the microscopic point process;
+- trace information restricted to \(o(N)\) times is insufficient;
+- one orientation of loop equations at one spectral height can vanish for non-CUE spectra;
+- clustering, spacing collapse, or Abel divergence alone does not imply the required positive-time form factor;
+- classical nondegeneracy is not itself quantum Heisenberg-time cancellation.
+
+These failures are recorded formally in the [retraction/correction record](record/retractions.md) and, where useful, by explicit counterexamples in the mathematical notes.
+
+## The central open frontier
+
+The direct fixed-map bottleneck is the stable claim **BGS-TRACE-005**:
+
+> Prove the correctly desymmetrized weighted Heisenberg-scale joint-trace comparison — or an equivalently strong mixed-resolvent hierarchy — for the actual frozen propagator, uniformly on every compact Fourier support.
+
+In pair form, the desired comparison has the schematic shape
+
+\[
+\frac{1}{N^2}
+\sum_m
+w(m/N)
+\left(
+|\operatorname{Tr}U_N^m|^2
+-
+\mathbb E_{\mathrm{RMT}}
+|\operatorname{Tr}V_N^m|^2
+\right)
+\longrightarrow 0,
+\]
+
+with the symmetry block, unfolding convention, test class, and target ensemble fixed precisely. Higher correlations require the corresponding joint products of traces.
+
+Closing this estimate, together with the already established deterministic bridge and the remaining point-process hypotheses, would close **BGS-BGS-001** for the maintained fixed model.
+
+### What a successful closure would give
+
+A proof at this frontier would do more than add another asymptotic formula. It would provide:
+
+- a rigorous microscopic random-matrix theorem for an explicit deterministic nonlinear chaotic quantum map;
+- a transparent mechanism connecting long-time quantum dynamics to local spectral universality;
+- a reusable diagnostic for separating genuine dynamical universality from arithmetic, symmetry, recurrence, and clustering obstructions;
+- a template that could be tested on broader classes of chaotic quantizations.
+
+It would **not**, by itself, prove every formulation of the BGS conjecture for every chaotic Hamiltonian. The programme keeps the distinction between a model theorem and the full conjectural landscape explicit.
+
+## Selected project figures
+
+The following are maintained project figures, not decorative illustrations.
+
+<p align="center">
+  <img src="assets/figures/correlation_bandwidth.svg" alt="Exact clock and period-two correlation counterexample showing why a single fixed Fourier bandwidth is insufficient." width="48%">
+  <img src="assets/figures/pell_harmonic_returns.svg" alt="Analytic second-return limits for the kicked Pell cat map." width="48%">
+</p>
+
+<p align="center">
+  <sub><strong>Left:</strong> exact clock/dimer pair measures with identical low-frequency data on a fixed band but different microscopic correlations. <strong>Right:</strong> proved analytic second-return limits in the harmonic Pell regime — a global return law, explicitly not a microscopic BGS theorem.</sub>
+</p>
+
+<p align="center">
+  <img src="assets/figures/cayley_trace_gaussian.svg" alt="Finite Cayley-trace distributions compared with a standard normal law." width="78%">
+</p>
+
+<p align="center">
+  <sub>Finite Cayley-trace laws. This maintained figure is explicitly numerical/illustrative; the asymptotic Gaussian theorem has its own stated regime and neither the finite plots nor that full-trace law imply local spectral universality.</sub>
+</p>
+
+## How the pieces fit together
+
+There are two kinds of progress in this repository.
+
+The first kind **closes arrows**: exact trace identities, deterministic extension theorems, symmetry classification, finite-field reductions, or rigorous return laws. These become stable claims with explicit scope.
+
+The second kind **eliminates false arrows**: counterexamples showing that a proposed statistic, time scale, loop orientation, perturbative regime, or classical argument cannot by itself imply BGS. These negative results are treated as part of the scientific output rather than discarded failed work.
+
+That combination is intentional. In a problem where many partial signatures look “random-matrix-like,” the ability to prove that a route is insufficient is nearly as important as proving a new positive estimate.
+
+---
+
+## Repository and reproducibility
+
+The remainder of this README is the operational layer. The scientific narrative above should be readable without knowing the repository layout.
+
+### Recommended reading order
 
 For a mathematical reader or referee:
 
-1. [Source of truth](SOURCE_OF_TRUTH.md) — the repository authority hierarchy.
-2. [Claim ledger](record/claim_ledger.md) — repository-wide authority for current scientific status.
-3. [Core claim registry](record/claim_registry.md), its [machine-readable source](record/claims.json), and the [dependency graph](record/scientific_dependency_graph.md) — stable identities and programme dependencies.
-4. [Results index](mathematics/results.md) and [open obligations](mathematics/open_questions.md).
-5. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) and [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md).
-6. [Mathematics topic views](mathematics/topics/README.md) — thematic navigation without moving authoritative proof paths.
-7. [Research manuscript](manuscript/BGS_unified.tex) — consolidated long-form exposition.
-8. [Focused publication candidates](papers/README.md) — scoped paper manifests without duplicated proofs.
-9. [External theorem registry](literature/external_dependencies.json), [evidence provenance](evidence/provenance.md), and [errata](ERRATA.md).
-10. [Review protocol](REVIEWING.md), [contribution protocol](CONTRIBUTING.md), and [roadmap](ROADMAP.md).
+1. [Current results](mathematics/results.md) — concise theorem index and exact scope.
+2. [Open obligations](mathematics/open_questions.md) — the current frontier, especially BGS-TRACE-005.
+3. [Trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) — the exact microscopic reduction.
+4. [Fixed-map frontier](mathematics/fixed_map_resolvent_frontier.md) — the maintained frozen-model route.
+5. [Stable claim registry](record/claim_registry.md) and [dependency graph](record/scientific_dependency_graph.md).
+6. [Unified research manuscript](manuscript/BGS_unified.tex).
+7. [Literature map](literature/bibliography.md) and [external theorem registry](literature/external_dependencies.json).
+8. [Retractions and corrections](record/retractions.md).
 
-## Evidence and claim discipline
+### Scientific authority
 
-| Level | Meaning |
-|---|---|
-| **EXACT** | Maintained project derivation with explicit hypotheses |
-| **EXACT + EXTERNAL-THEOREM** | Exact project reduction using a named external theorem whose assumptions are tracked |
-| **FINITE-CERTIFICATE** | Exact statement at explicit finite parameters |
-| **FINITE-REGRESSION** | Independent implementation/reference agreement at finite parameters |
-| **NUMERICAL** | Descriptive floating-point evidence |
-| **CONDITIONAL** | Theorem whose stated hypotheses remain unproved for the target model |
-| **OPEN** | Required closure condition not established |
-| **RETRACTED** | False, superseded, or insufficient route retained for provenance |
+The repository uses a deliberately strict hierarchy:
 
-The current status authority is [record/claim_ledger.md](record/claim_ledger.md). [record/claims.json](record/claims.json) supplies stable IDs and cross-links but cannot strengthen the ledger. Historical notes, old commits, finite computations, and manuscript prose cannot silently strengthen either.
+- [record/claim_ledger.md](record/claim_ledger.md) is the sole authority for current claim status and scope;
+- [record/claims.json](record/claims.json) supplies stable core IDs and cross-links;
+- maintained proofs live in [mathematics/](mathematics/README.md);
+- external load-bearing theorems are pinned in [literature/external_dependencies.json](literature/external_dependencies.json);
+- formalization, computation, evidence, and manuscript text cannot silently strengthen the claim ledger.
 
-## Research corpus
+The compact authority map is in [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).
 
-| Area | Role |
-|---|---|
-| [mathematics/](mathematics/README.md) | Maintained theorem statements, proofs, reductions, counterexamples, and open problems |
-| [manuscript/](manuscript/README.md) | Canonical consolidated research manuscript |
-| [papers/](papers/README.md) | Focused publication scopes linked to stable claim IDs |
-| [literature/](literature/bibliography.md) | Theorem-level source map and external-dependency checks |
-| [formalization/](formalization/README.md) | Lean 4 algebraic kernels and finite certificates with an explicit trust boundary |
-| [computations/](computations/README.md) | Exact/finite verification, independent implementations, and numerical diagnostics |
-| [evidence/](evidence/provenance.md) | Promoted certificates, numerical/reference data, and execution provenance |
-| [record/](record/README.md) | Claim authority, machine registries, audits, retractions, and historical decisions |
-| [environment/](environment/README.md) | Reproducibility target and release environment contract |
-| [supplement/fixed_map/](supplement/fixed_map/README.md) | Detailed fixed-map derivations and replayable evidence |
-| [archive/](archive/branch-snapshots/README.md) | Historical provenance only; not a competing source of current truth |
+### Reproducing the maintained verification surface
 
-## Reproducibility
+Start with the fail-closed metadata and structural gates:
 
-Start with the two cheap fail-closed gates:
-
-```sh
+~~~sh
 python computations/verification/scientific_registry_audit.py
 python computations/verification/repository_audit.py
-```
+~~~
 
-Then run the maintained Python/C++ verification surface:
+Then build and execute the maintained Python/C++ verification surface:
 
-```sh
+~~~sh
 python -m pip install -r requirements.txt
 cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build build/cmake --parallel
+
 python computations/maintenance/verify_workspace.py \
   --build build/cmake \
   --logs build/verification-logs \
   --output build/workspace-verification.json
-```
+~~~
 
-The active Lean project is pinned under `formalization/`:
+Build the active Lean project:
 
-```sh
+~~~sh
 (cd formalization && lake build)
-```
+~~~
 
-The canonical manuscript is built with:
+Check generated manuscript sections and build the canonical manuscript:
 
-```sh
+~~~sh
 python computations/maintenance/sync_return_sections.py --check
 python computations/maintenance/sync_finite_orbit_section.py --check
 python computations/maintenance/sync_fixed_map_section.py --check
 python computations/maintenance/build_unified_manuscript.py \
   --output-dir build/unified-paper
-```
+~~~
 
-See [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manifest.json](environment/runtime-manifest.json) for the execution contract. A GitHub Actions run that ends with `runner_id=0` and `steps=[]` is an infrastructure non-run, not a pass or scientific failure.
+See [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manifest.json](environment/runtime-manifest.json) for the full execution contract.
 
-## Publication, citation, and review
+### Repository map
 
-`manuscript/BGS_unified.tex` is the single maintained programme manuscript. Focused publication candidates under `papers/` select coherent theorem families by stable claim ID and never duplicate proof authority.
+| Area | Purpose |
+|---|---|
+| [mathematics/](mathematics/README.md) | Authoritative theorem statements, proofs, reductions, counterexamples, and open questions |
+| [manuscript/](manuscript/README.md) | Canonical consolidated research manuscript |
+| [papers/](papers/README.md) | Focused publication candidate scopes without duplicated proof authority |
+| [literature/](literature/bibliography.md) | Literature boundary and theorem-level external dependencies |
+| [formalization/](formalization/README.md) | Lean 4 algebraic kernels and finite certificates |
+| [computations/](computations/README.md) | Verification, exact computation, independent implementations, and diagnostics |
+| [evidence/](evidence/provenance.md) | Promoted finite certificates, numerical/reference data, and execution provenance |
+| [record/](record/README.md) | Claim authority, audits, corrections, research process, and historical decisions |
+| [supplement/fixed_map/](supplement/fixed_map/README.md) | Detailed fixed-map derivations and replayable evidence |
+| [assets/](assets/) | Maintained figures and README visual material |
 
-Citation metadata is in [CITATION.cff](CITATION.cff). Research-state releases follow [RELEASES.md](RELEASES.md); archival metadata is prepared in `.zenodo.json`, but no DOI is claimed until an external archive issues one. Licensing remains an explicit release decision documented in [LICENSE_POLICY.md](LICENSE_POLICY.md).
+### Publication, citation, and review
 
-The repository is maintained as a long-term scientific record: corrected results remain traceable, retractions are explicit, historical evidence is not rewritten, and generated publication surfaces are synchronized from maintained mathematical sources.
+The canonical long-form programme manuscript is [manuscript/BGS_unified.tex](manuscript/BGS_unified.tex). Focused paper scopes live under [papers/](papers/README.md).
 
-## Authorship and scope
+Citation metadata: [CITATION.cff](CITATION.cff)  
+Contribution protocol: [CONTRIBUTING.md](CONTRIBUTING.md)  
+Referee protocol: [REVIEWING.md](REVIEWING.md)  
+Research roadmap: [ROADMAP.md](ROADMAP.md)  
+Release policy: [RELEASES.md](RELEASES.md)
+
+### Authorship and scope
 
 Maintainer and manuscript author: **Maksim Churilov**.
 
-The repository does not claim a general proof of the BGS conjecture, external priority for the full project corpus, or independent referee validation of every project theorem. Its purpose is to make the exact boundary between proved mathematics, imported theorems, finite evidence, conditional reductions, and open problems inspectable.
+This repository does not claim a proof of the general BGS conjecture, external priority for the entire corpus, or independent referee validation of every project theorem. Its purpose is to push a concrete microscopic universality problem as far as possible while making the boundary between proved mathematics, imported theorems, formal/finite verification, numerical evidence, conditional reductions, and open obligations inspectable.
