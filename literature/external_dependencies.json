@@ -121,6 +121,55 @@
         "mathematics/frozen_kick_rank_boundary.md",
         "record/frozen_rank_review_20260923.md"
       ]
+    },
+    {
+      "id": "EXT-PESIN-1977",
+      "authors": [
+        "Yakov B. Pesin"
+      ],
+      "title": "Characteristic Lyapunov exponents and smooth ergodic theory",
+      "identifier": "Russian Mathematical Surveys 32:4 (1977), 55-114; https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&paperid=3219&what=fullteng",
+      "pinned_version": "1977 English translation, Math-Net full PDF",
+      "locator": "Theorem 5.1, printed p. 81, PDF p. 26",
+      "checked_on": "2026-09-23",
+      "mapping": "Smooth normalized area invariant under analytic G_kappa has entropy equal to its positive Lyapunov exponent, the integral of log unstable expansion; together with the Ruelle inequality this identifies P(-phi)=0.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md"
+      ]
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "authors": [
+        "David Ruelle"
+      ],
+      "title": "An inequality for the entropy of differentiable maps",
+      "identifier": "Boletim da Sociedade Brasileira de Matematica 9 (1978), 83-87; https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B51%5D.pdf",
+      "pinned_version": "Author-hosted scan of 1978 publication",
+      "locator": "Theorem 2, printed pp. 84-85, PDF pp. 2-3",
+      "checked_on": "2026-09-23",
+      "mapping": "For every invariant probability on the smooth area-preserving Anosov two-torus, entropy is at most the integral of the one-dimensional unstable potential; hence P(-phi)<=0.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md"
+      ]
+    },
+    {
+      "id": "EXT-PP-1990",
+      "authors": [
+        "William Parry",
+        "Mark Pollicott"
+      ],
+      "title": "Zeta functions and the periodic orbit structure of hyperbolic dynamics",
+      "identifier": "Asterisque 187-188 (1990); https://smf.emath.fr/system/files/filepdf/AST_1990__187-188__1_0.pdf",
+      "pinned_version": "Published 1990 SMF PDF",
+      "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66)",
+      "checked_on": "2026-09-23",
+      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md"
+      ]
     }
   ]
 }

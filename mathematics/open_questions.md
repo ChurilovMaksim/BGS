@@ -25,8 +25,12 @@ treated as prerequisites for `BGS-BGS-001`.
 
 The 23 September exact kick-rank result `BGS-FM-005` does not estimate joint
 traces at Heisenberg times. The all-lag classical gap `BGS-RES-005` uses
-linear transport of one physical symbol; arbitrary analytic observables
-under nonlinear transport remain within `BGS-RES-003`.
+linear transport of one physical symbol. The subsequent
+[`BGS-FM-006`](nonlinear_bracket_pressure.md) proves that **the same**
+linear normalization has no uniform nonlinear full-lag upper bound for the
+actual kicked map. This classical pressure obstruction does not supply the
+`BGS-TRACE-005` quantum joint-trace estimate. The separate arbitrary-analytic
+resonance question remains `BGS-RES-003`.
 
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 

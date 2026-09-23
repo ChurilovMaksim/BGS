@@ -18,6 +18,7 @@ graph TD
   T3 --> T4[BGS-TRACE-004 Schwartz extension]
   T6[BGS-TRACE-006 clustered Abel and time-window boundary]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
+  F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
   T3 --> T5
 
   F3[BGS-FM-003 moment controls] --> F4[BGS-FM-004 three-orientation barrier]

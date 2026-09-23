@@ -8,4 +8,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [frozen_kick_rank_boundary](../../frozen_kick_rank_boundary.md)
 - [fixed_model_pell_crossover](../../fixed_model_pell_crossover.md)
 - [fixed_model_symmetry_theorem](../../fixed_model_symmetry_theorem.md)
+- [nonlinear_bracket_pressure](../../nonlinear_bracket_pressure.md)
 - [three_orientation_resolvent_barrier](../../three_orientation_resolvent_barrier.md)

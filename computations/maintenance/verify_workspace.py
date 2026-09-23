@@ -131,7 +131,8 @@ def main() -> None:
             cmd+=['--output',str(args.logs/'resonance_quantum_variance.json')]
         elif p.stem=='finite_orbit_resonance':
             cmd+=['--output',str(args.logs/'finite_orbit_resonance.json')]
-        elif p.stem in {'frozen_full_lag_gap', 'frozen_kick_rank'}:
+        elif p.stem in {'frozen_full_lag_gap', 'frozen_kick_rank',
+                        'nonlinear_pressure_variance'}:
             cmd+=['--output',str(args.logs/(p.stem+'.json'))]
         elif p.stem=='extremal_resonance':
             extremal_producer=True

@@ -13,6 +13,7 @@
     "BGS-FM-003",
     "BGS-FM-004",
     "BGS-FM-005",
+    "BGS-FM-006",
     "BGS-FORMAL-001",
     "BGS-INFO-001",
     "BGS-LOOP-001",
@@ -31,6 +32,11 @@
     "BGS-TRACE-006"
   ],
   "edges": [
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-006",
+      "type": "scientific-prerequisite"
+    },
     {
       "from": "BGS-FM-001",
       "to": "BGS-BGS-001",

@@ -1,5 +1,13 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [nonlinear bracket pressure theorem](mathematics/nonlinear_bracket_pressure.md)
+shows that the linear-map full-lag normalization fails for the **actual**
+nonlinear classical frozen map at every allowed nonzero coupling. Its exact
+quadratic pressure-gap coefficient is positive, but it does not control the
+quantum propagator at Heisenberg times. The fixed-strength BGS target remains
+open; the verification boundary is recorded in
+`record/nonlinear_pressure_review_20260923.md`.
+
 The 23 September continuation proves a [full-lag classical gap for the
 physical frozen symbol](mathematics/frozen_full_lag_resonance.md) under the
 linear map, including an explicit unrestricted `M1` neighborhood. It also

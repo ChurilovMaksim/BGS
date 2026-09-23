@@ -1,0 +1,18 @@
+{
+  "claim_id": "BGS-FM-006",
+  "arithmetic": "exact rational pairs representing Q(i)",
+  "scope": "32 Fourier modes, complete covariance support by a proved cone argument; no pressure-limit or BGS proof",
+  "fourier_modes": 32,
+  "two_over_pi4_times_covariance": {
+    "0": "313386243/20000",
+    "1": "-7/500000",
+    "all_n_ge_2": "0"
+  },
+  "two_over_pi4_times_asymptotic_variance": "7834656061/500000",
+  "fixed_points_sqrt2_b_over_pi2": {
+    "(0/2,0/2)": "19606/125",
+    "(0/2,1/2)": "19594/125",
+    "(1/2,0/2)": "-24306/125",
+    "(1/2,1/2)": "-24894/125"
+  }
+}

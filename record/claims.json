@@ -252,6 +252,32 @@
       "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT."
     },
     {
+      "id": "BGS-FM-006",
+      "title": "Nonlinear bracket pressure growth and frozen-map linear-normalization boundary",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/nonlinear_bracket_pressure.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-PESIN-1977",
+        "EXT-RUELLE-1978",
+        "EXT-PP-1990"
+      ],
+      "evidence": [
+        "evidence/20260923/nonlinear_pressure_variance.json"
+      ],
+      "verifiers": [
+        "computations/verification/nonlinear_pressure_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Classical Anosov bracket norms for the exact nonlinear map and a perturbative coefficient; no effective remainder at fixed tau, nonlinear Riesz lower theorem, quantum joint traces, BGS law or external referee/priority determination."
+    },
+    {
       "id": "BGS-FORMAL-001",
       "title": "Active Lean algebraic/finite kernel graph",
       "state": "verification-pending",

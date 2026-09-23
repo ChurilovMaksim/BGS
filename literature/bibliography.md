@@ -4,6 +4,19 @@ Only sources that constrain the active argument or its interpretation are
 listed here. A citation is **not** a claim that its hypotheses have already
 been verified for this project.
 
+## Thermodynamic formalism for the nonlinear frozen map
+
+The classical bracket-pressure application in
+[`BGS-FM-006`](../mathematics/nonlinear_bracket_pressure.md) uses Pesin's
+entropy formula (1977, Theorem 5.1), Ruelle's entropy inequality (1978,
+Theorem 2), and the Gibbs, pressure-analyticity, variance and convexity
+results in Parry--Pollicott (1990, Appendix III, Chapters 2--4).
+Exact published-source locators and the notation mapping are in
+[`external_dependencies.json`](external_dependencies.json). The
+two-endpoint cylinder comparison and the model-specific variance are project
+derivations; these sources do not give a fixed-strength Heisenberg-time
+joint-trace theorem or establish the application's priority.
+
 ## Arithmetic quantum cat maps
 
 1. P. Kurlberg and Z. Rudnick, **Value distribution for eigenfunctions of desymmetrized quantum maps**, arXiv:math-ph/0101008 (2001). Split-prime Hecke-eigenfunction value distributions; not an eigenphase-spacing theorem.

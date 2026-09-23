@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
 
 **Status, 23 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -65,8 +65,13 @@ before eigenphase wrapping, $|\tau N|(79/50)\le\pi$; it supplies no fixed-streng
 asymptotic control. Separately, the [full-lag classical gap](frozen_full_lag_resonance.md)
 proves a uniform translated Riesz bound for the exact physical symbol under
 the *linear* cat map, including small weighted-Fourier perturbations. It
-does not treat transport by the nonlinear kicked map. Neither result bounds
-the Heisenberg-scale joint traces needed for `BGS-TRACE-005`.
+does not treat transport by the nonlinear kicked map. The
+[nonlinear bracket pressure theorem](nonlinear_bracket_pressure.md) shows
+that this same $\lambda^{-r}$ normalization cannot have a uniform upper
+bound for the **actual** nonlinear map: its individual bracket norms grow
+at a strictly larger exponential rate. This result is classical and uses
+thermodynamic-formalism inputs; none of these results bounds the
+Heisenberg-scale joint traces needed for `BGS-TRACE-005`.
 
 Exact algebraic arguments exclude scalar-algebraic returns for the stated
 frozen family except its explicitly treated raw $N=7$ exception. They do not

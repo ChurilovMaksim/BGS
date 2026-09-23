@@ -23,8 +23,10 @@ The current fixed-family branch is consolidated in
    and Abel information alone can infer about positive Heisenberg-time windows.
 4. `fixed_map_resolvent_frontier.md` — maintained frozen-model frontier.
    `frozen_kick_rank_boundary.md` and `frozen_full_lag_resonance.md` record
-   the exact kick-rank and linear-transport classical results, respectively;
-   neither supplies the open Heisenberg-scale quantum estimate.
+   the exact kick-rank and linear-transport classical results, respectively.
+   `nonlinear_bracket_pressure.md` determines the failure of the same
+   normalization for nonlinear classical transport; none supplies the open
+   Heisenberg-scale quantum estimate.
 5. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
 6. `general_cat_return_laws.md`, `pell_harmonic_transition.md`, and `pell_harmonic_returns.md` — global return/observable laws with explicit microscopic boundaries.
 7. `topics/README.md` — thematic navigation across the full maintained corpus.

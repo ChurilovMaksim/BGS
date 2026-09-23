@@ -1,5 +1,19 @@
 # Current results and exact scope
 
+## Nonlinear classical pressure boundary, 23 September 2026
+
+For the **actual nonlinear Anosov map** of the fixed frozen model,
+[`BGS-FM-006`](nonlinear_bracket_pressure.md) proves that the squared norm of
+the physical symbol's lag-$r$ Poisson bracket is comparable to
+$\exp(rP(\log J^u))$, where $P(\log J^u)>2\log(3+2\sqrt2)$ at every
+allowed nonzero coupling. Hence the linear $\lambda^{-r}$ normalization
+cannot have a uniform nonlinear full-lag upper bound. A perturbation
+calculation gives the exact positive leading coefficient
+$(\pi^4/2)(7834656061/500000)$ for the pressure gap as the classical
+coupling tends to zero. The [exact coefficient check](../computations/verification/nonlinear_pressure_variance.py)
+does not establish the pressure theorem. The classical result does not
+estimate fixed-strength Heisenberg-time quantum traces or BGS statistics.
+
 ## Full-lag gap and exact generator rank, 23 September 2026
 
 For the **actual physical symbol** of the frozen model under the linear cat

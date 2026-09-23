@@ -11,6 +11,10 @@ The maintained computational surface is deliberately compact and independently c
 `python/bgs/` contains the maintained finite-field, discrete-log, pair-key and twisted-Jacobi primitives with fail-fast validation.
 
 `verification/` contains the scientific gates and exact/finite regressions.
+[`nonlinear_pressure_variance.py`](verification/nonlinear_pressure_variance.py)
+independently assembles the physical symbol and checks the exact rational
+Fourier variance for `BGS-FM-006`; its finite arithmetic does not prove
+the pressure theorem.
 `verification/scientific_registry_audit.py` checks the machine-readable claim,
 dependency, paper, evidence, environment, and topic contracts before expensive
 science runs. `maintenance/render_claim_registry.py --check` prevents the

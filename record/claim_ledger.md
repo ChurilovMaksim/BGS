@@ -1,5 +1,13 @@
 # Claim ledger
 
+## 23 September 2026 — nonlinear classical pressure boundary
+
+| Claim | Status | Boundary / authority |
+|---|---|---|
+| `BGS-FM-006`: for the actual nonzero fixed kick, the squared $L^2$ norm of every nonconstant-observable bracket under $G_\kappa$ has exponential rate $P_{G_\kappa}(\log J^u)>2\log(3+2\sqrt2)$; the exact physical-symbol pressure gap has a positive, explicitly calculated quadratic coefficient at $\kappa=0$ | **PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR SELF-REVIEW** | `mathematics/nonlinear_bracket_pressure.md`, `record/nonlinear_pressure_review_20260923.md`. Depends on the internally reviewed `BGS-FM-001`; asymptotic theorem has no independent referee or priority determination. No effective remainder at $\kappa=10^{-80}/(2\pi)$ and no quantum trace conclusion. |
+| The earlier linear $\lambda^{-r}$ full-lag upper bound extends with the same normalization to the actual nonlinear map | **REFUTED FOR THIS MODEL** | A single lag in `BGS-FM-006` has norm tending to infinity after that normalization; the valid *linear* `BGS-RES-005` remains unchanged. |
+| `BGS-TRACE-005`, `BGS-BGS-001` | **OPEN** | No Heisenberg-time desymmetrized joint-trace comparison or fixed-strength microscopic universality follows from classical pressure. |
+
 ## 23 September 2026 — full-lag frozen-symbol gap and exact kick rank
 
 | Claim | Status | Boundary / authority |

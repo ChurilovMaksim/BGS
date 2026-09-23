@@ -62,6 +62,24 @@ python computations/maintenance/verify_workspace.py \
   --only frozen_full_lag_gap --only frozen_kick_rank
 ```
 
+The additional nonlinear pressure result has a focused exact Fourier
+regression. This verifies its coefficient and fixed-point algebra, not the
+analytic pressure theorem or quantum universality:
+
+```sh
+python computations/verification/nonlinear_pressure_variance.py \
+  --output build/nonlinear_pressure_variance.json
+cmp evidence/20260923/nonlinear_pressure_variance.json \
+  build/nonlinear_pressure_variance.json
+python computations/maintenance/verify_workspace.py \
+  --build build/cmake --logs build/nonlinear-check \
+  --output build/nonlinear-check/manifest.json \
+  --only nonlinear_pressure_variance --allow-dirty
+```
+
+Read `record/nonlinear_pressure_review_20260923.md` for the proof audit and
+the precise source dependencies of `BGS-FM-006`.
+
 Build every active Lean module with the version pinned in
 `formalization/lean-toolchain`. Source presence is not compilation evidence:
 

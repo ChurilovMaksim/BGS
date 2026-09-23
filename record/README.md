@@ -21,6 +21,10 @@ The dated `claim_ledger_addendum_20260907.md` is preserved as historical
 source material. It no longer competes with the current consolidated
 `claim_ledger.md`.
 
+The dated review [`nonlinear_pressure_review_20260923.md`](nonlinear_pressure_review_20260923.md)
+audits the classical pressure claim `BGS-FM-006` and its exact arithmetic;
+the missing Heisenberg-time estimate retains its OPEN status.
+
 ## Historical record
 
 Dated reviews document what was checked at a particular research state; they
