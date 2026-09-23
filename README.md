@@ -33,11 +33,11 @@ The guiding question of quantum chaos is what remains of that complexity after q
 
 For an $N$-dimensional quantum map, one step of evolution is represented by a unitary matrix $U_N$. Its eigenvalues lie on the unit circle:
 
-~~~math
+```math
 U_N\psi_j=e^{i\theta_j}\psi_j,
 \qquad
 j=1,\ldots,N.
-~~~
+```
 
 The eigenphases $\theta_j$ form the quantum spectrum.
 
@@ -45,9 +45,9 @@ The average angular spacing is of order $2\pi/N$. BGS is therefore not a stateme
 
 A schematic unfolded coordinate is
 
-~~~math
+```math
 x_j=\frac{N}{2\pi}\bigl(\theta_j-\theta_0\bigr).
-~~~
+```
 
 The question is whether the local point process formed by the $x_j$ converges to the random-matrix point process dictated by the actual symmetry class.
 
@@ -60,7 +60,7 @@ BGS originates in the 1984 paper by O. Bohigas, M. J. Giannoni and C. Schmit:
 
 Their computation for a chaotic billiard crystallized the conjectural link between classical chaos and random-matrix level statistics. The modern mathematical task is much sharper: identify a deterministic family, fix the symmetry reduction and unfolding, and prove the microscopic limit.
 
-~~~mermaid
+```mermaid
 flowchart LR
     A["Classical hyperbolic dynamics"] --> B["Quantization U_N"]
     B --> C["Long quantum traces<br/>m = Θ(N)"]
@@ -72,7 +72,7 @@ flowchart LR
 
     classDef open fill:#fff3cd,stroke:#b58105,color:#24292f,stroke-width:2px;
     classDef target fill:#ffe3e3,stroke:#cf222e,color:#24292f,stroke-width:2px;
-~~~
+```
 
 The highlighted step is the present bottleneck: classical chaos does not automatically provide the required cancellation of quantum traces at times proportional to $N$.
 
@@ -82,13 +82,13 @@ The highlighted step is the present bottleneck: classical chaos does not automat
 
 A pair statistic may be written schematically as
 
-~~~math
+```math
 \frac{1}{N}
 \sum_{j\neq k}
 \phi\!\left(
 \frac{N}{2\pi}(\theta_j-\theta_k)
 \right),
-~~~
+```
 
 with a sufficiently regular test function $\phi$.
 
@@ -113,7 +113,7 @@ The key mechanism is Fourier duality.
 
 For the maintained pair normalization, the exact trace identity is
 
-~~~math
+```math
 C_{2,N}(U;\phi)
 =
 \frac{1}{N^2}
@@ -122,24 +122,24 @@ C_{2,N}(U;\phi)
 \left(
 |\operatorname{Tr}U^m|^2-N
 \right).
-~~~
+```
 
 If $\widehat{\phi}$ is supported in a fixed interval $[-c,c]$, then the sum still uses powers
 
-~~~math
+```math
 |m|\le cN.
-~~~
+```
 
 So microscopic Fourier support does **not** reduce the problem to short times. It rescales the Fourier mode by $N$.
 
 For Haar unitary matrices $V_N\in U(N)$ the exact second-moment benchmark is
 
-~~~math
+```math
 \mathbb E_{\mathrm{CUE}}
 \left|\operatorname{Tr}V_N^m\right|^2
 =
 \min(|m|,N).
-~~~
+```
 
 Therefore a deterministic BGS proof must reproduce the correct weighted trace statistics throughout the **Heisenberg window** $m=\Theta(N)$.
 
@@ -157,21 +157,21 @@ This is the reason fixed-time semiclassics, $O(\log N)$ return laws, and even br
 
 The principal family is
 
-~~~math
+```math
 U_N=\exp(i\tau N A_N)\,M_N,
 \qquad
 \tau=10^{-80},
-~~~
+```
 
 where $M_N$ quantizes the hyperbolic cat map
 
-~~~math
+```math
 S=
 \begin{pmatrix}
 3&4\\
 2&3
 \end{pmatrix},
-~~~
+```
 
 and $A_N$ is the maintained Weyl quantization of an explicit nonlinear kick symbol.
 
@@ -213,15 +213,15 @@ The strongest conceptual part of the programme is the exact passage from local s
 
 For higher correlations, partition-lattice Möbius inversion produces constrained products of traces,
 
-~~~math
+```math
 \prod_{\nu=1}^{r}\operatorname{Tr}U_N^{m_\nu},
-~~~
+```
 
 with linear relations among the Fourier modes.
 
 Thus the deterministic side of the implication is already explicit:
 
-~~~mermaid
+```mermaid
 flowchart TD
     A["Weighted joint traces at m = Θ(N)"] --> B["Band-limited microscopic correlations"]
     B --> C["Every compact Fourier bandwidth"]
@@ -235,7 +235,7 @@ flowchart TD
 
     classDef open fill:#fff3cd,stroke:#b58105,color:#24292f,stroke-width:2px;
     classDef done fill:#e6ffec,stroke:#1a7f37,color:#24292f;
-~~~
+```
 
 The first box is the unresolved model-specific input.
 
@@ -261,15 +261,15 @@ A useful way to read the repository is by theorem family rather than by director
 
 **BGS-FM-002** gives the odd-Pell full-symbol Gaussian crossover. Its exact variance is
 
-~~~math
+```math
 \sigma^2=\frac{1650797}{4000000}=0.41269925.
-~~~
+```
 
 A necessary escape condition for CUE pair behaviour in that crossover family is
 
-~~~math
+```math
 |\epsilon_K|\sqrt K\longrightarrow\infty.
-~~~
+```
 
 The actual frozen scaling eventually lies outside the proved bounded crossover window.
 
@@ -279,11 +279,11 @@ The actual frozen scaling eventually lies outside the proved bounded crossover w
 
 **BGS-FM-005** gives the exact frozen-kick multiplicity/rank boundary, including
 
-~~~math
+```math
 \operatorname{rank}(U_N-zM_N)
 \ge
 N-\gcd(N,7)
-~~~
+```
 
 in the stated odd-dimensional regime.
 
@@ -294,13 +294,13 @@ in the stated odd-dimensional regime.
 
 The fourth-moment problem is reduced to additive energy of a Cayley-transformed subgroup set. The current sharp centered target is
 
-~~~math
+```math
 E_+(A)
 =
 \frac{(K-1)^4}{p}
 +
 O\!\left(K^{2+o(1)}\right).
-~~~
+```
 
 This is **BGS-CAYLEY-005** and remains open.
 
@@ -349,7 +349,7 @@ The current fixed-map bottleneck is **BGS-TRACE-005**:
 
 For the pair statistic, the desired comparison has the schematic form
 
-~~~math
+```math
 \frac{1}{N^2}
 \sum_{m\in\mathbb Z}
 w(m/N)
@@ -360,7 +360,7 @@ w(m/N)
 |\operatorname{Tr}V_N^m|^2
 \right]
 \longrightarrow 0.
-~~~
+```
 
 Higher correlations require the corresponding constrained joint products.
 
@@ -466,7 +466,7 @@ See [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).
 <details>
 <summary><strong>Reproduce the maintained verification surface</strong></summary>
 
-~~~sh
+```sh
 python computations/verification/scientific_registry_audit.py
 python computations/verification/repository_audit.py
 
@@ -486,7 +486,7 @@ python computations/maintenance/sync_finite_orbit_section.py --check
 python computations/maintenance/sync_fixed_map_section.py --check
 python computations/maintenance/build_unified_manuscript.py \
   --output-dir build/unified-paper
-~~~
+```
 
 Full contract: [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manifest.json](environment/runtime-manifest.json).
 
