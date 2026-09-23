@@ -27,6 +27,12 @@ The **Bohigas–Giannoni–Schmit (BGS) conjecture** predicts that, once ordinar
 
 This repository develops a rigorous programme around that gap. Its current laboratory is an explicit nonlinear perturbation of a hyperbolic quantum cat map. The programme has already closed the deterministic passage from microscopic correlation functions to weighted products of traces, isolated symmetry and arithmetic obstructions, proved several global return and crossover laws, established new classical resonance/cohomology results, and built exact finite-field/Cayley reductions. The remaining fixed-map bottleneck is now sharply stated: prove **model-specific mixed-resolvent or joint-trace cancellation at Heisenberg time** for the actual frozen propagator.
 
+### Historical origin
+
+The programme takes its name from the 1984 paper by O. Bohigas, M. J. Giannoni, and C. Schmit, [*Characterization of Chaotic Quantum Spectra and Universality of Level Fluctuation Laws*](https://doi.org/10.1103/PhysRevLett.52.1), *Physical Review Letters* **52**, 1–4. Their Sinai-billiard computation exhibited level fluctuations consistent with the Gaussian orthogonal ensemble and crystallized the universality conjecture now associated with BGS. The modern question is not whether such agreement can be observed numerically, but under what hypotheses it can be **proved for deterministic quantum systems** and which symmetry class and unfolding are correct.
+
+For a broader source map — quantum cat maps, semiclassical inputs, arithmetic obstructions, random-matrix characterization theorems, and the exact external results used here — see the maintained [literature bibliography](literature/bibliography.md).
+
 <p align="center">
   <img src="assets/readme/bgs_pipeline_motion.svg" alt="Animated conceptual BGS pipeline from classical chaos through quantum traces to the open cancellation estimate and the local random-matrix target." width="82%">
 </p>
