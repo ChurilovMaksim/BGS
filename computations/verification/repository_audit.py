@@ -262,11 +262,6 @@ def check_lean_coverage() -> None:
 def check_bilingual_readmes() -> None:
     english = ROOT / "README.md"
     russian = ROOT / "README.ru.md"
-    visuals = [
-        ROOT / "assets" / "readme" / "bgs_overview.svg",
-        ROOT / "assets" / "readme" / "bgs_scales.svg",
-        ROOT / "assets" / "readme" / "bgs_proof_architecture.svg",
-    ]
 
     for path in (english, russian):
         text = path.read_text(encoding="utf-8", errors="replace")
@@ -274,13 +269,19 @@ def check_bilingual_readmes() -> None:
             fail(f"{path.name} must start with an H1")
         if len(re.findall(r"^# ", text, re.M)) != 1:
             fail(f"{path.name} must contain exactly one H1")
-        if text.count("$$") % 2:
-            fail(f"unbalanced display-math delimiters in {path.name}")
-        without_display = re.sub(r"\$\$[\s\S]*?\$\$", "", text)
-        if len(re.findall(r"(?<!\$)\$(?!\$)", without_display)) % 2:
-            fail(f"unbalanced inline-math delimiters in {path.name}")
         if re.search(r"\\\(|\\\)|\\\[|\\\]", text):
             fail(f"legacy non-GitHub-native math delimiters remain in {path.name}")
+        without_fenced = re.sub(
+            r"~~~math\n[\s\S]*?\n~~~",
+            "",
+            text,
+        )
+        if len(re.findall(r"(?<!\$)\$(?!\$)", without_fenced)) % 2:
+            fail(f"unbalanced inline-math delimiters in {path.name}")
+        if len(re.findall(r"^~~~math\s*$", text, re.M)) != len(
+            re.findall(r"^~~~\s*$", text, re.M)
+        ) - len(re.findall(r"^~~~(?:sh|mermaid)\s*$", text, re.M)):
+            fail(f"unbalanced fenced math blocks in {path.name}")
         for raw in re.findall(r'<img[^>]+src="([^"]+)"', text):
             if "://" in raw:
                 continue
@@ -296,15 +297,6 @@ def check_bilingual_readmes() -> None:
         fail("README.md does not link to README.ru.md")
     if "README.md" not in russian.read_text(encoding="utf-8"):
         fail("README.ru.md does not link back to README.md")
-
-    for path in visuals:
-        if not path.is_file():
-            fail(f"missing canonical README visual: {path.relative_to(ROOT)}")
-        text = path.read_text(encoding="utf-8", errors="replace")
-        if "<script" in text.lower() or "<foreignobject" in text.lower():
-            fail(f"unsafe/nonportable README SVG content: {path.relative_to(ROOT)}")
-        if re.search(r'(?:href|xlink:href)=["\']https?://', text, re.I):
-            fail(f"external README SVG dependency: {path.relative_to(ROOT)}")
 
 
 def check_active_markdown_links() -> None:
