@@ -15,7 +15,7 @@
   <img src="assets/readme/bgs_overview.svg" alt="The BGS question: classical chaotic dynamics, a quantum spectrum with mean spacing of order 1/N, and universal local random-matrix statistics after the correct symmetry reduction." width="100%">
 </p>
 
-## Abstract
+### Abstract
 
 The Bohigas–Giannoni–Schmit conjecture predicts that a quantum system whose classical limit is chaotic should, after removal of ordinary symmetries and suitable unfolding, exhibit the same **local spectral statistics** as the corresponding random-matrix ensemble. The phrase “local” is decisive: the mean level spacing is of order $1/N$, so a microscopic limit probes eigenvalue correlations on a scale that shrinks with the Hilbert-space dimension.
 
@@ -37,9 +37,20 @@ $$
 
 for the actual desymmetrized frozen propagator. This is stable claim **BGS-TRACE-005**. Closing it, together with the already established deterministic bridge and the required symmetry/unfolding hypotheses, would close the maintained fixed-map target **BGS-BGS-001**.
 
+### Status at a glance
+
+| Layer | Status | Precise role |
+|---|---|---|
+| Deterministic trace bridge | **Established** | Converts microscopic correlation tests into weighted trace products and identifies the Heisenberg-scale requirement |
+| Frozen classical map | **Established in stated scope** | Analytic Anosov dynamics; ordinary classical symmetry obstructions substantially reduced |
+| Arithmetic / return / resonance branches | **Established in stated scopes** | Supply exact reductions, transition laws, coercive estimates, and falsifiers |
+| Full mixed loop hierarchy | **Conditional** | Would characterize the target local law if model-specific mixed residuals were controlled |
+| Model-specific Heisenberg estimate | **OPEN** | BGS-TRACE-005 — the central missing quantum input |
+| Fixed-map microscopic universality | **OPEN** | BGS-BGS-001 — terminal target for the maintained frozen model |
+
 ---
 
-## Contents
+### Contents
 
 1. [The BGS conjecture from first principles](#the-bgs-conjecture-from-first-principles)
 2. [What “microscopic universality” means](#what-microscopic-universality-means)
@@ -55,9 +66,9 @@ for the actual desymmetrized frozen propagator. This is stable claim **BGS-TRACE
 
 ---
 
-# The BGS conjecture from first principles
+## The BGS conjecture from first principles
 
-## Classical chaos
+### Classical chaos
 
 A deterministic Hamiltonian system or symplectic map may be strongly chaotic: trajectories separate exponentially, stable and unstable directions coexist, periodic orbits proliferate, and long-time classical observables exhibit mixing-like behaviour. For maps, hyperbolicity is particularly clean because one can study iterates of a fixed transformation rather than continuous-time flow.
 
@@ -65,7 +76,7 @@ The classical side of the present programme begins with a hyperbolic toral autom
 
 Classical chaos, however, is not yet a statement about a quantum spectrum.
 
-## Quantization
+### Quantization
 
 For an $N$-dimensional quantum map, the one-step evolution is a unitary operator $U_N$. Its eigenvalues lie on the unit circle,
 
@@ -83,7 +94,7 @@ $$
 
 At global scale, many very different spectra can look similar. BGS concerns the opposite regime: the scale of a **single mean spacing**.
 
-## Historical origin
+### Historical origin
 
 The programme takes its name from the 1984 work of O. Bohigas, M. J. Giannoni, and C. Schmit, who observed random-matrix-type level fluctuations in a chaotic quantum billiard and formulated the universality principle now associated with BGS:
 
@@ -97,9 +108,9 @@ The modern mathematical problem is not to reproduce another convincing histogram
 
 ---
 
-# What microscopic universality means
+## What microscopic universality means
 
-## Unfolding and mean spacing
+### Unfolding and mean spacing
 
 On the unit circle the mean angular spacing is approximately $2\pi/N$. After unfolding to unit mean spacing, one studies local configurations such as
 
@@ -111,7 +122,7 @@ modulo the precise centering/unfolding convention.
 
 A microscopic observable sees intervals of length $O(1/N)$ in the original phase variable. That is fundamentally different from a global density theorem.
 
-## Pair and higher correlations
+### Pair and higher correlations
 
 A typical pair statistic can be written schematically as
 
@@ -129,7 +140,7 @@ Higher $k$-point correlations ask whether tuples of distinct unfolded eigenphase
 
 The target depends on symmetry. In the unitary class the local benchmark is the sine-kernel/CUE family; with an appropriate antiunitary symmetry the orthogonal class is relevant. A rigorous statement must determine the symmetry class from the operator, not choose it retrospectively from a numerical fit.
 
-## Global resemblance is not enough
+### Global resemblance is not enough
 
 The following are all strictly weaker than microscopic BGS:
 
@@ -145,7 +156,7 @@ The repository contains exact constructions demonstrating several of these failu
 
 ---
 
-# Why Heisenberg time appears
+## Why Heisenberg time appears
 
 The decisive observation is Fourier duality.
 
@@ -188,7 +199,7 @@ This is why fixed-time semiclassics, $m=O(\log N)$ return laws, and even broad $
 
 ---
 
-# The maintained fixed model
+## The maintained fixed model
 
 The principal laboratory is
 
@@ -212,7 +223,7 @@ and $A_N$ is the maintained Weyl quantization of an explicit nonlinear symbol.
 
 Two features matter immediately.
 
-### 1. The classical perturbation is tiny but fixed
+#### 1. The classical perturbation is tiny but fixed
 
 The parameter $\tau$ does **not** go to zero with $N$. Hence the exponent contains $\tau N$, and the large-$N$ problem is not uniformly perturbative.
 
@@ -224,7 +235,7 @@ $$
 
 A proof in a vanishing-strength family is informative, but it is not automatically a proof for the frozen model.
 
-### 2. Arithmetic returns coexist with nonlinear dynamics
+#### 2. Arithmetic returns coexist with nonlinear dynamics
 
 The underlying cat map has strong arithmetic structure. Pell-type subsequences produce exact or near returns and therefore create a natural laboratory for testing whether global recurrence signatures genuinely control local statistics.
 
@@ -232,7 +243,7 @@ One major theme of the project is to identify which arithmetic mechanisms are re
 
 ---
 
-# The exact trace-to-local-statistics bridge
+## The exact trace-to-local-statistics bridge
 
 The deterministic spectral reduction is one of the most mature parts of the programme.
 
@@ -248,19 +259,19 @@ with linear constraints among the Fourier modes.
 
 The maintained bridge has four core layers.
 
-### BGS-TRACE-001 — exact partition–Möbius formula
+#### BGS-TRACE-001 — exact partition–Möbius formula
 
 Distinct-index spectral sums are converted into trace products by an exact finite-$N$ combinatorial identity.
 
-### BGS-TRACE-002 — microscopic Fourier representation
+#### BGS-TRACE-002 — microscopic Fourier representation
 
 After unfolding, compact support of the rescaled Fourier transform forces trace powers up to order $N$.
 
-### BGS-TRACE-003 — Heisenberg-scale sufficiency
+#### BGS-TRACE-003 — Heisenberg-scale sufficiency
 
 If the correctly weighted joint traces of the deterministic propagator match the target random-matrix joint traces on every fixed compact Fourier support, then the corresponding band-limited microscopic correlations converge.
 
-### BGS-TRACE-004 — extension to Schwartz tests
+#### BGS-TRACE-004 — extension to Schwartz tests
 
 Under the maintained positivity/normalization hypotheses, convergence on **every** compact Fourier bandwidth extends to Schwartz correlation tests.
 
@@ -272,11 +283,11 @@ The word “every” matters. A single fixed bandwidth is not enough; the reposi
 
 ---
 
-# What has been established
+## What has been established
 
 The current programme is best read as a collection of theorem families with explicit logical boundaries.
 
-## 1. Fixed-map structure
+### 1. Fixed-map structure
 
 **BGS-FM-001 — frozen-model classical symmetry theorem.**  
 For the maintained small-coupling regime, the classical map is analytic and Anosov; the ordinary $C^1$ centralizer is reduced to powers of the map, no $C^1$ reversor survives, and the relevant affine $C^1$ conjugacies are excluded.
@@ -315,7 +326,7 @@ in the exact stated regime.
 
 **Boundary:** a rank obstruction is not a local spectral universality theorem.
 
-## 2. Resonance and cohomology
+### 2. Resonance and cohomology
 
 The resonance programme asks whether low variance could come from an underlying classical coboundary or degeneracy.
 
@@ -331,7 +342,7 @@ The resonance programme asks whether low variance could come from an underlying 
 
 These results make simple classical degeneracy increasingly implausible, but they still do not produce the missing quantum Heisenberg-time estimate.
 
-## 3. Arithmetic and Cayley energy
+### 3. Arithmetic and Cayley energy
 
 The arithmetic branch converts fourth-moment problems into finite-field additive-energy questions.
 
@@ -355,7 +366,7 @@ recorded as **BGS-CAYLEY-005 — OPEN**.
 
 A major correction in this branch was conceptual: eliminating every exceptional collision is too strong and is not the right objective. Large exceptional primes can coexist with only constant excess energy. The correct target is centered energy control.
 
-## 4. Return laws and Pell regimes
+### 4. Return laws and Pell regimes
 
 The project proves global spectral/observable laws on explicit arithmetic subsequences.
 
@@ -365,7 +376,7 @@ The project proves global spectral/observable laws on explicit arithmetic subseq
 
 These are rigorous and interesting, but their time scale is not Heisenberg time.
 
-## 5. Clustered Abel statistics and falsifiers
+### 5. Clustered Abel statistics and falsifiers
 
 **BGS-TRACE-006** provides two complementary facts.
 
@@ -383,35 +394,35 @@ Therefore clustering alone cannot be the missing BGS mechanism.
 
 ---
 
-# What has been ruled out
+## What has been ruled out
 
 This repository treats negative results as first-class research output. Several plausible proof strategies have been shown to be insufficient.
 
-### Fixed moments are not enough
+#### Fixed moments are not enough
 
 Two spectra may agree on a long initial range of traces and still have different microscopic pair statistics.
 
-### A single Fourier bandwidth is not enough
+#### A single Fourier bandwidth is not enough
 
 Agreement for one fixed compact support does not imply full Schwartz convergence. The bandlimit must be allowed to grow through an exhaustion argument.
 
-### One-sided or same-half-plane loop equations are not enough
+#### One-sided or same-half-plane loop equations are not enough
 
 Some loop residuals vanish identically for every spectrum; only genuinely mixed orientations carry local spectral information.
 
-### Low-order loop identities are not enough
+#### Low-order loop identities are not enough
 
 Explicit repeated-clock spectra can satisfy substantial finite collections of identities without approaching the CUE point process.
 
-### Global return laws are not enough
+#### Global return laws are not enough
 
 Logarithmic-time or harmonic return distributions may be exactly computable while the microscopic spectrum remains undetermined.
 
-### Finite random-matrix resemblance is not enough
+#### Finite random-matrix resemblance is not enough
 
 Numerical histograms are useful diagnostics and falsification tools, but they do not establish an asymptotic local law.
 
-### Classical nondegeneracy is not enough
+#### Classical nondegeneracy is not enough
 
 Even a strong classical Riesz gap does not automatically become quantum trace cancellation at $m=\Theta(N)$.
 
@@ -419,7 +430,7 @@ The permanent correction record is maintained in [record/retractions.md](record/
 
 ---
 
-# The central open frontier
+## The central open frontier
 
 The direct fixed-map bottleneck is **BGS-TRACE-005**:
 
@@ -459,7 +470,7 @@ The second language is encoded conditionally in **BGS-LOOP-001**. The model-spec
 
 ---
 
-# What a successful closure would mean
+## What a successful closure would mean
 
 If BGS-TRACE-005 were proved in the required scope, the repository would already contain most of the deterministic machinery needed to pass to microscopic correlations. One would then need to finish the exact symmetry-block, unfolding, and point-process bookkeeping for the target statement BGS-BGS-001.
 
@@ -474,7 +485,7 @@ It would **not** by itself prove the BGS conjecture for every chaotic Hamiltonia
 
 ---
 
-# Selected scientific figures
+## Selected scientific figures
 
 The figures below come from the maintained computation/exposition layer. Their captions state their actual evidentiary role.
 
@@ -495,7 +506,7 @@ The figures below come from the maintained computation/exposition layer. Their c
 
 ---
 
-# Relation to the broader BGS landscape
+## Relation to the broader BGS landscape
 
 The repository is intentionally conservative about scope.
 
@@ -512,11 +523,11 @@ The maintained [literature bibliography](literature/bibliography.md) separates:
 
 ---
 
-# Repository, verification, and publication
+## Repository, verification, and publication
 
 The scientific exposition above is the front door. The rest of the repository is organized to make every serious claim auditable.
 
-## Recommended reading order
+### Recommended reading order
 
 1. [Current results](mathematics/results.md) — theorem index and exact scope.
 2. [Open obligations](mathematics/open_questions.md) — unresolved mathematical frontier.
@@ -528,7 +539,7 @@ The scientific exposition above is the front door. The rest of the repository is
 8. [Literature map](literature/bibliography.md).
 9. [Retractions and corrections](record/retractions.md).
 
-## Source-of-truth hierarchy
+### Source-of-truth hierarchy
 
 Current status is controlled by [record/claim_ledger.md](record/claim_ledger.md).
 
@@ -538,7 +549,7 @@ Formalization, computations, evidence files, README prose, and the manuscript ar
 
 See [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).
 
-## Reproducibility
+### Reproducibility
 
 Start with the cheap fail-closed gates:
 
@@ -579,7 +590,7 @@ python computations/maintenance/build_unified_manuscript.py \
 
 See [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manifest.json](environment/runtime-manifest.json) for the complete execution contract.
 
-## Repository map
+### Repository map
 
 | Area | Purpose |
 |---|---|
@@ -594,7 +605,7 @@ See [REPRODUCE_unified.md](REPRODUCE_unified.md) and [environment/runtime-manife
 | [supplement/fixed_map/](supplement/fixed_map/README.md) | Detailed fixed-map derivations and replayable evidence |
 | [assets/](assets/) | Maintained project figures and README diagrams |
 
-## Publication and review
+### Publication and review
 
 The long-form programme manuscript is [manuscript/BGS_unified.tex](manuscript/BGS_unified.tex). Focused paper scopes are maintained under [papers/](papers/README.md).
 
@@ -604,7 +615,7 @@ The long-form programme manuscript is [manuscript/BGS_unified.tex](manuscript/BG
 - Research roadmap: [ROADMAP.md](ROADMAP.md)
 - Release policy: [RELEASES.md](RELEASES.md)
 
-## Authorship and scope
+### Authorship and scope
 
 Maintainer and manuscript author: **Maksim Churilov**.
 
