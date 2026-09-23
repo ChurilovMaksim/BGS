@@ -1,17 +1,22 @@
 # README visual assets
 
-The files in this directory are editorial visualizations for the repository
-front page.
+This directory contains **editorial scientific diagrams** used by the bilingual
+repository front page.
 
-- bgs_hero.svg — conceptual overview from classical chaos to local RMT.
-- bgs_frontier.svg — current fixed-map proof frontier.
-- bgs_results_map.svg — high-level map of maintained theorem families.
-- bgs_pipeline_motion.svg — lightweight animated SVG of the research pipeline.
+Current maintained diagrams:
 
-These diagrams are **not evidence** and do not encode measured numerical data.
-They summarize the scientific structure recorded in the current claim ledger
-and claim registry. Empirical, exact finite, and analytic project figures live
-under ../figures/ and retain their own provenance.
+- bgs_overview.svg — the BGS question: classical chaos → quantum spectrum → local RMT;
+- bgs_scales.svg — why microscopic tests force trace information to Heisenberg time;
+- bgs_proof_architecture.svg — the maintained fixed-map proof architecture and the open BGS-TRACE-005 bottleneck.
 
-When the scientific status changes, update the diagrams together with README.md
-and the relevant authoritative status files.
+Design policy:
+
+- figures are static, journal-style, and self-contained;
+- they do not encode empirical data and are not evidence;
+- no theorem status is determined by a diagram;
+- scientific status is controlled by record/claim_ledger.md and record/claims.json;
+- empirical, exact finite, and analytic project figures live under ../figures/
+  and retain their own producer/provenance records.
+
+When the core scientific architecture changes, update README.md,
+README.ru.md, and these diagrams together.
