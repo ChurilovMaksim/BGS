@@ -271,6 +271,18 @@ def check_bilingual_readmes() -> None:
             fail(f"{path.name} must contain exactly one H1")
         if re.search(r"\\\(|\\\)|\\\[|\\\]", text):
             fail(f"legacy non-GitHub-native math delimiters remain in {path.name}")
+
+        forbidden_math_macros = (
+            r"\\operatorname",
+            r"\\newcommand",
+            r"\\renewcommand",
+            r"\\DeclareMathOperator",
+            r"\\def",
+            r"\\require",
+        )
+        for macro in forbidden_math_macros:
+            if macro in text:
+                fail(f"GitHub-unsafe README math macro {macro!r} in {path.name}")
         without_fenced = re.sub(
             r"```math\n[\s\S]*?\n```",
             "",
