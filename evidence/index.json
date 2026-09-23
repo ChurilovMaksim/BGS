@@ -21,10 +21,14 @@
         "evidence/recovery_20260920/",
         "evidence/recovery_20260921/"
       ],
-      "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance.",
-      "dated_paths": [
-        "evidence/20260923/"
-      ]
+      "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance."
+    },
+    "dated-research-packets": {
+      "canonical_prefix": "evidence/20260923/",
+      "historical_paths": [
+        "evidence/20260922/"
+      ],
+      "meaning": "Dated packets may mix exact finite checks, floating diagnostics, and execution records. Each object's own scope and accompanying review control its interpretation; the directory name is not an evidence grade."
     }
   },
   "authority": "evidence/provenance.md",

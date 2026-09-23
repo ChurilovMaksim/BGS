@@ -25,6 +25,15 @@ their original paths when moving them would destroy path-level provenance.
 `index.json` records the canonical evidence taxonomy and those legacy
 exceptions.
 
+### Dated research packets
+
+`20260922/` preserves an earlier finite-orbit delivery and its historical
+execution manifest. `20260923/` contains the exact finite frozen-symbol
+check and the separately labelled floating frozen-kick diagnostics. These
+directories mix evidence types; consult each object's scope and its dated
+integration review. They are indexed separately in `index.json`, not treated
+as general execution logs or continuum proofs.
+
 ## Trust rule
 
 Interpret a JSON object only at the level stated by its `scope`, `interpretation`, run command and associated review. Numerical agreement is never silently upgraded to proof; a finite certificate is never silently upgraded to a growing-parameter theorem; a failed workflow with `steps=[]` is not treated as a scientific test failure.

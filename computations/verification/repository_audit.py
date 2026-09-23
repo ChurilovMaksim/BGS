@@ -183,6 +183,28 @@ def check_manuscript_surface() -> None:
     if missing:
         fail("unresolved manuscript inputs: " + ", ".join(missing))
 
+    # A separate finite-orbit note was actually compiled in the historical
+    # 2026-09-22 delivery. Keep that source for its recorded execution; reject
+    # other unused TeX copies, which would create competing publication roots.
+    reachable: set[Path] = set()
+    def visit(path: Path) -> None:
+        if path in reachable:
+            return
+        reachable.add(path)
+        for raw in re.findall(r"\\input\{([^}]+)\}", path.read_text(encoding="utf-8")):
+            dep = MANUSCRIPT / raw
+            if dep.suffix == "":
+                dep = dep.with_suffix(".tex")
+            if not dep.is_file():
+                fail(f"unresolved nested manuscript input: {dep.relative_to(ROOT)}")
+            visit(dep)
+    visit(master)
+    orphaned = {p for p in MANUSCRIPT.rglob("*.tex") if p not in reachable}
+    historical = {MANUSCRIPT / "finite_orbit_note.tex"}
+    if orphaned != historical:
+        fail("unexpected unused manuscript TeX sources: " +
+             ", ".join(str(p.relative_to(ROOT)) for p in sorted(orphaned ^ historical)))
+
     pdfs = sorted(p.name for p in MANUSCRIPT.glob("*.pdf"))
     if pdfs:
         fail("generated manuscript PDFs must not be committed: " + ", ".join(pdfs))

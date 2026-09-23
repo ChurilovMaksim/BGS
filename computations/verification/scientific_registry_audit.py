@@ -209,6 +209,9 @@ def audit_generated_and_environment() -> None:
         prefix = item.get("canonical_prefix") or item.get("future_prefix")
         if prefix:
             require_path(prefix.rstrip("/"))
+        for field in ("legacy_paths", "historical_paths"):
+            for rel in item.get(field, []):
+                require_path(rel.rstrip("/"))
 
 def audit_errata() -> None:
     data=load(ROOT / "record" / "errata.json")

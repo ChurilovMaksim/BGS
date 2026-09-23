@@ -51,6 +51,17 @@ A focused manifest records its selection and does not certify the complete
 historical suite. Each return-law producer receives a separate JSON output
 path; the runner records the source hash, exit status and log hash.
 
+To replay the two 23 September checks without compiling C++, select them
+explicitly. The first uses exact rational arithmetic for a finite symbol
+check; the second is a floating-point finite-matrix diagnostic:
+
+```sh
+python computations/maintenance/verify_workspace.py \
+  --build build/cmake --logs build/frozen-checks \
+  --output build/frozen-checks/manifest.json \
+  --only frozen_full_lag_gap --only frozen_kick_rank
+```
+
 Build every active Lean module with the version pinned in
 `formalization/lean-toolchain`. Source presence is not compilation evidence:
 
@@ -67,8 +78,17 @@ python computations/maintenance/sync_return_sections.py
 python computations/maintenance/sync_return_sections.py --check
 ```
 
-Other manuscript sections remain directly maintained TeX. Build the canonical
-manuscript with pdfLaTeX without writing a generated PDF into the source tree:
+The fixed-map frontier and finite-orbit resonance sections have separate
+generated TeX views. Check all three generator families before building:
+
+```sh
+python computations/maintenance/sync_finite_orbit_section.py --check
+python computations/maintenance/sync_fixed_map_section.py --check
+```
+
+Other included manuscript sections are directly maintained TeX. Build the
+canonical manuscript with pdfLaTeX without writing a generated PDF into the
+source tree:
 
 ```sh
 python computations/maintenance/build_unified_manuscript.py \
@@ -99,7 +119,7 @@ execution environment. A scientific release should preserve all four.
 Reproduce the new analytic illustration with
 `python computations/analysis/return_obstruction_figure.py`. The plotted curves
 are analytic limits and lower bounds, not measured cat-map spectra.
-# Fixed-map supplement, 20 September 2026
+## Fixed-map supplement
 
 The additional dependency `scipy==1.17.0` is pinned in `requirements.txt`.
 From the root run:

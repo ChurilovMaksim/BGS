@@ -4,10 +4,18 @@ This index is navigational; status authority remains
 `../../claim_ledger.md`.
 
 ## Fixed map and recovery
+- [23 September integration and execution scope](../../integration_20260923.md)
+- [frozen-kick rank self-review](../../frozen_rank_review_20260923.md)
+- [22 September integration and verification](../../integration_20260922.md)
 - [fixed-map attachment audit](../../fixed_map_attachment_audit_20260916.md)
 - [fixed-map publication review](../../fixed_map_publication_20260920.md)
 - [recovery audit](../../recovery_audit_20260920.md)
 - [final research handoff](../../final_research_handoff_20260921.md)
+
+## Resonance and inference boundaries
+- [full-lag classical gap: separate internal derivation review](../../frozen_full_lag_review_20260923.md)
+- [finite-orbit independent internal review](../../finite_orbit_secondary_review_20260922.md)
+- [clustered Abel/time-window analysis](../../abel_window_research_20260922.md)
 
 ## Return laws and locality
 - [Pell harmonic transition review](../../pell_harmonic_transition_review_20260909.md)
@@ -17,6 +25,7 @@ This index is navigational; status authority remains
 - [fixed-strength locality audit](../../fixed_strength_locality_audit.md)
 
 ## Publication and integrity
+- [23 September repository-wide editorial and verification pass](repository_hygiene_20260923.md)
 - [final consolidation audit](../../final_consolidation_audit_20260906.md)
 - [publication review](../../publication_review_20260912.md)
 - [session science synchronization](../../session_science_sync_20260907.md)

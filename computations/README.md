@@ -50,7 +50,7 @@ One-shot scripts that used to integrate research branches into older standalone 
 - **Julia:** retired; zero tracked `.jl` sources and no tracked Julia project environment.
 
 The goal is not a language percentage. It is one maintained implementation per scientific role, with independent checks where they materially increase confidence.
-# Recovered fixed-map computations
+## Recovered fixed-map computations
 
 The source and historical finite evidence for the fixed-map continuation
 are indexed in [the supplement](../supplement/fixed_map/README.md).
@@ -66,3 +66,9 @@ full-symbol variance, and the local-jet negative control.  It is included
 automatically in a complete `verify_workspace.py` run.  Its scope is exact
 finite/symbolic regression only, not proof of the analytic asymptotic
 theorems or fixed-`tau` BGS.
+
+The 23 September verifiers `frozen_full_lag_gap.py` and
+`frozen_kick_rank.py` check the exact physical-symbol expansion and finite
+Jacobi/rank diagnostics, respectively. Both are discovered by the whole-
+workspace runner and write scoped JSON outputs under its log directory.
+Their finite runs are not proofs of the infinite-lag or all-dimension claims.

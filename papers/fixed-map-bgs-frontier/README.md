@@ -11,4 +11,6 @@ Before submission, fill `verification_commit` with the exact audited commit,
 run the referee protocol in `../../REVIEWING.md`, and ensure every external
 dependency is pinned in `../../literature/external_dependencies.json`.
 
-Scope note: Frontier paper: exact/conditional reductions and obstructions; not a positive BGS theorem.
+Scope note: exact and conditional reductions, the frozen-kick rank boundary,
+and obstructions to insufficient spectral arguments. The Heisenberg-scale
+model estimate is still open; this is not a positive BGS theorem.

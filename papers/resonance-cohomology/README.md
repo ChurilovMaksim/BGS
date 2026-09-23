@@ -11,5 +11,7 @@ Before submission, fill `verification_commit` with the exact audited commit,
 run the referee protocol in `../../REVIEWING.md`, and ensure every external
 dependency is pinned in `../../literature/external_dependencies.json`.
 
-Scope note: Fourier-line coercivity, smooth finite-orbit rigidity, and the
-limits of local-jet proof strategies; the all-members analytic question stays open.
+Scope note: Fourier-line coercivity, smooth finite-orbit rigidity, the
+all-lag bound for one physical symbol under linear cat-map transport, and
+the limits of local-jet proof strategies. The all-members analytic question
+and nonlinear-transport extension stay open.

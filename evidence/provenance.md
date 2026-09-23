@@ -30,6 +30,14 @@ The current directory contains no committed `extremal_resonance.json`. That is d
 
 The reference q-curves live only under `evidence/reference/r82/`; their hashes are pinned by the maintained twisted-Jacobi regression. Numerical records under `evidence/numerical/` remain descriptive and are not hypothesis-test certificates.
 
+The dated `evidence/20260922/` packet records finite-orbit delivery checks
+against its historical base; `record/integration_20260922.md` documents the
+subsequent integration and verification on the then-current repository. The
+`evidence/20260923/` packet contains an exact rational frozen-symbol check
+and separate floating Jacobi/rank diagnostics, with commands, file hashes,
+proof boundaries, and review status in `record/integration_20260923.md`.
+Neither dated packet itself proves an all-lag or all-dimension theorem.
+
 ## Trust rule
 
 A certificate can establish only its explicit finite/execution proposition. External theorem inputs remain external theorem inputs; analytic continuum statements remain proof-authoritative; numerical agreement remains numerical. Repository-wide claim status is controlled solely by `../record/claim_ledger.md`. The machine-readable `../record/claims.json` provides stable IDs and links but cannot strengthen that ledger; dated addenda and reviews are historical sources.

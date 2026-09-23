@@ -1,8 +1,15 @@
 # BGS — arithmetic quantum chaos and spectral universality
 
-Long-horizon research repository on rigorous routes to the Bohigas–Giannoni–Schmit (BGS) conjecture for arithmetic and nonlinear quantum maps.
+Long-horizon research repository on rigorous routes to the
+Bohigas–Giannoni–Schmit (BGS) conjecture for arithmetic and nonlinear quantum
+maps.
 
-**Scientific status (22 September 2026):** the fixed-strength microscopic BGS problem for the maintained frozen quantum map remains **OPEN**. The repository contains exact reductions, theorem-level project proofs, external-theorem applications, formal finite certificates, reproducible finite computations, counterexamples to insufficient proof strategies, and a consolidated research manuscript. Numerical agreement is never treated as a proof of universality.
+**Scientific status (23 September 2026):** the fixed-strength microscopic BGS
+problem for the maintained frozen quantum map remains **OPEN**. The repository
+contains exact reductions, theorem-level project proofs, external-theorem
+applications, finite certificates, reproducible computations, counterexamples
+to insufficient proof strategies, and a consolidated research manuscript.
+Numerical agreement is never treated as a proof of universality.
 
 ## Research question
 

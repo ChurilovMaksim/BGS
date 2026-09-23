@@ -27,9 +27,16 @@ trust boundary.
 
 For the central programme, review in this order:
 
-- `BGS-FM-001` through `BGS-FM-004`;
-- `BGS-TRACE-001` through `BGS-TRACE-004`;
-- the open closure claim `BGS-BGS-001`.
+- `BGS-FM-001` through `BGS-FM-005`, including the algebraic-exponential
+  input and the pre-wrapping restriction in `BGS-FM-005`;
+- `BGS-TRACE-001` through `BGS-TRACE-004`, then the abstract counterexample
+  `BGS-TRACE-006`;
+- the open model estimate `BGS-TRACE-005` and terminal `BGS-BGS-001`.
+
+For the resonance route, inspect `BGS-RES-004` and the separate internal
+derivation review of `BGS-RES-005`; its full-lag bound uses the *linear* map
+and one physical observable, whereas `BGS-RES-003` remains open for arbitrary
+real-analytic observables under nonlinear transport.
 
 The final positive BGS claim may not be promoted until the open
 Heisenberg-scale model estimate is proved for the correctly desymmetrized

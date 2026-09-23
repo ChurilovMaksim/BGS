@@ -28,6 +28,7 @@ jobs:
       - name: Check generated manuscript sections
         run: |
           python computations/maintenance/sync_return_sections.py --check
+          python computations/maintenance/sync_finite_orbit_section.py --check
           python computations/maintenance/sync_fixed_map_section.py --check
       - name: Package immutable research-state metadata
         run: |
