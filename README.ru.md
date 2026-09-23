@@ -120,7 +120,7 @@ C_{2,N}(U;\phi)
 \sum_{m\in\mathbb Z}
 \widehat{\phi}(m/N)
 \left(
-|\operatorname{Tr}U^m|^2-N
+|\mathrm{Tr}U^m|^2-N
 \right).
 ```
 
@@ -136,7 +136,7 @@ C_{2,N}(U;\phi)
 
 ```math
 \mathbb E_{\mathrm{CUE}}
-\left|\operatorname{Tr}V_N^m\right|^2
+\left|\mathrm{Tr}V_N^m\right|^2
 =
 \min(|m|,N).
 ```
@@ -214,7 +214,7 @@ S=
 Для высших корреляций обращение Мёбиуса по решётке разбиений приводит к ограниченным произведениям следов
 
 ```math
-\prod_{\nu=1}^{r}\operatorname{Tr}U_N^{m_\nu},
+\prod_{\nu=1}^{r}\mathrm{Tr}U_N^{m_\nu},
 ```
 
 где индексы Фурье связаны линейными соотношениями.
@@ -280,7 +280,7 @@ flowchart TD
 **BGS-FM-005** — точная граница кратности и ранга для фиксированного генератора возмущения, включая
 
 ```math
-\operatorname{rank}(U_N-zM_N)
+\mathrm{rank}(U_N-zM_N)
 \ge
 N-\gcd(N,7)
 ```
@@ -354,10 +354,10 @@ O\!\left(K^{2+o(1)}\right).
 \sum_{m\in\mathbb Z}
 w(m/N)
 \left[
-|\operatorname{Tr}U_N^m|^2
+|\mathrm{Tr}U_N^m|^2
 -
 \mathbb E_{\mathrm{RMT}}
-|\operatorname{Tr}V_N^m|^2
+|\mathrm{Tr}V_N^m|^2
 \right]
 \longrightarrow 0.
 ```
