@@ -272,15 +272,15 @@ def check_bilingual_readmes() -> None:
         if re.search(r"\\\(|\\\)|\\\[|\\\]", text):
             fail(f"legacy non-GitHub-native math delimiters remain in {path.name}")
         without_fenced = re.sub(
-            r"~~~math\n[\s\S]*?\n~~~",
+            r"```math\n[\s\S]*?\n```",
             "",
             text,
         )
         if len(re.findall(r"(?<!\$)\$(?!\$)", without_fenced)) % 2:
             fail(f"unbalanced inline-math delimiters in {path.name}")
-        if len(re.findall(r"^~~~math\s*$", text, re.M)) != len(
-            re.findall(r"^~~~\s*$", text, re.M)
-        ) - len(re.findall(r"^~~~(?:sh|mermaid)\s*$", text, re.M)):
+        if len(re.findall(r"^```math\s*$", text, re.M)) != len(
+            re.findall(r"^```\s*$", text, re.M)
+        ) - len(re.findall(r"^```(?:sh|mermaid)\s*$", text, re.M)):
             fail(f"unbalanced fenced math blocks in {path.name}")
         for raw in re.findall(r'<img[^>]+src="([^"]+)"', text):
             if "://" in raw:
