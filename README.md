@@ -431,7 +431,7 @@ The programme is intentionally conservative about transfer. Quantum ergodicity, 
 
 ---
 
-# Repository and reproducibility
+## 12. Repository and reproducibility
 
 The scientific narrative above is the front door. Operational information lives here, at the end.
 
