@@ -21,6 +21,17 @@ lower bound, eigenvalue gap, or local spectral statistic. The dependency
 and its exact scope are pinned in
 [`external_dependencies.json`](external_dependencies.json).
 
+For the **effective**, model-specific but submicroscopic
+[`BGS-FM-011`](../mathematics/frozen_effective_gap_floor.md), see D. Roy,
+[*Une version effective du théorème de Lindemann–Weierstrass par des
+méthodes d'indépendance algébrique*, arXiv:1607.00579v1,
+Theorem 1.1](https://arxiv.org/pdf/1607.00579v1.pdf). The algebraic
+exponent and integer-polynomial hypotheses and exact constants were
+checked against the primary text on 24 September 2026. The project
+separately proves the needed discriminant is a nonzero
+integer-polynomial specialization with the stated height bounds;
+Roy's theorem alone does not give microscopic statistics.
+
 ## Thermodynamic formalism for the nonlinear frozen map
 
 The classical bracket-pressure application in

@@ -87,3 +87,10 @@ in the full verification runner, have dated immutable reference outputs
 under `evidence/20260924/`, and are available as focused selections.
 The analytic and all-dimension steps are documented separately in
 [`record/submitted_article_review_20260924.md`](../record/submitted_article_review_20260924.md).
+
+The later [`frozen_arithmetic_traces.py`](verification/frozen_arithmetic_traces.py)
+checks 1248 exact finite Weyl fixed-point cases and the rational
+\(169/500\) orbit margin in `BGS-FM-010`; its dated reference is
+[`frozen_arithmetic_traces.json`](../evidence/20260924/frozen_arithmetic_traces.json).
+It runs in the whole-workspace suite and by `--only frozen_arithmetic_traces`.
+It does not evaluate the kicked traces or validate the asymptotic BGS target.

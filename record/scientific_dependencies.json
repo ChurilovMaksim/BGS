@@ -17,6 +17,8 @@
     "BGS-FM-007",
     "BGS-FM-008",
     "BGS-FM-009",
+    "BGS-FM-010",
+    "BGS-FM-011",
     "BGS-FORMAL-001",
     "BGS-INFO-001",
     "BGS-LOOP-001",
@@ -173,6 +175,21 @@
     {
       "from": "BGS-TRACE-003",
       "to": "BGS-TRACE-005",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-010",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-008",
+      "to": "BGS-FM-010",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-008",
+      "to": "BGS-FM-011",
       "type": "scientific-prerequisite"
     }
   ],

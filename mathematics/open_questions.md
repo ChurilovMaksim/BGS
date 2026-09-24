@@ -47,6 +47,14 @@ $N^{-1}\operatorname{Tr}\Gamma_{N,N}^2\to4/3$, where
 $\Gamma_{N,N}=[N^{-1}\operatorname{Tr}U_N^{b-a}]_{0\le a,b<N}$;
 this has not been proved for the model.
 
+The later exact [arithmetic trace theorem](frozen_arithmetic_trace_rigidity.md)
+(`BGS-FM-010`) proves *nonvanishing* of every positive-power trace,
+including at \(7\mid N\), but gives no **upper** estimate in the Abel
+sum. The [effective gap floor](frozen_effective_gap_floor.md)
+(`BGS-FM-011`) for \(7\nmid N\) is vastly smaller than the mean gap;
+it gives no local occupation control. Neither result changes the
+closure condition of `BGS-TRACE-005`.
+
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 
 The off/off elliptic correlation layer is no longer an independent open problem: after extraction of the coherent reducible fibre, `offoff_elliptic_spike_theorem.md` proves

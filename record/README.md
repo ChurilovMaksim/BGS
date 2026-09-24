@@ -30,6 +30,12 @@ audits the uploaded 87-page fixed-cat-map manuscript and identifies the
 maintained scope of `BGS-FM-007`–`009`; the individual review files document
 their analytical and finite certificate checks.
 
+The dated [`two_continuations_review_20260924.md`](two_continuations_review_20260924.md)
+audits the two later submitted Russian continuations and identifies the
+maintained `BGS-FM-010` and `BGS-FM-011` proofs. Its separately claimed
+492-degree certificate was not supplied; the pair and joint-trace goals
+remain open.
+
 ## Historical record
 
 Dated reviews document what was checked at a particular research state; they

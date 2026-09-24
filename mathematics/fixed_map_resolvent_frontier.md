@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
 
 **Status, 24 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -87,6 +87,13 @@ removes exact level multiplicity when $7\nmid N$, while the
 [integer commutator-cube certificate](frozen_common_antireversor_certificate.md)
 excludes a common antiunitary reversal of $(A_N,M_N)$ except at $N=7$.
 These results are qualitative and do not estimate near-degenerate spacings.
+The [arithmetic trace identity and rigidity theorem](frozen_arithmetic_trace_rigidity.md)
+also proves exact nonvanishing of every $\operatorname{Tr}U_N^m$
+on the odd sequence and classifies scalar powers. The
+[effective gap floor](frozen_effective_gap_floor.md) makes spectral
+simplicity quantitative for $7\nmid N$, but its bound is far below
+the mean spacing $N^{-1}$. Neither result supplies an upper bound for
+Heisenberg-time traces or the open Abel limit.
 
 Exact algebraic arguments exclude scalar-algebraic returns for the stated
 frozen family except its explicitly treated raw $N=7$ exception. They do not

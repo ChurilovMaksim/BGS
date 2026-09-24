@@ -352,6 +352,51 @@
       "boundary": "For odd N>=3 except N=7, no arbitrary common antiunitary reversing the pair (A_N,M_N). For U_N alone excludes only algebraic-entry antiunitaries; arbitrary finite-dimensional antiunitary reversors always exist."
     },
     {
+      "id": "BGS-FM-010",
+      "title": "Nonvanishing of every fixed-model power trace and classification of scalar returns",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXACT INTEGER REGRESSION + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_arithmetic_trace_rigidity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/frozen_arithmetic_traces.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_arithmetic_traces.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality."
+    },
+    {
+      "id": "BGS-FM-011",
+      "title": "Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_effective_gap_floor.md",
+      "dependencies": [
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-ROY-2016"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd 7-not-dividing-N only. Explicit enormous N-dependent lower gap from Roy Theorem 1.1 and discriminant height; vastly below 1/N, giving no local occupation, Abel, or CUE estimate."
+    },
+    {
       "id": "BGS-FORMAL-001",
       "title": "Active Lean algebraic/finite kernel graph",
       "state": "verification-pending",

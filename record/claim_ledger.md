@@ -1,5 +1,19 @@
 # Claim ledger
 
+## 24 September 2026 — audited two further fixed-map continuations
+
+Only `REPORT_RU(1).md` and `NEW_RESULTS_RU(1).md` were provided
+in the second submission; the claimed 492-degree factorization files
+and program were absent. The [section-by-section audit](two_continuations_review_20260924.md)
+distinguishes these texts from previously maintained proofs.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| `BGS-FM-010`: for every odd \(N\) and integer \(m\ge1\), \(\operatorname{Tr}U_N^m\ne0\); an exact scalar power occurs only at \(N=7\); algebraic-entry commutants are scalar when \(7\nmid N\) | **PROJECT PROOF + EXACT FINITE INTEGER REGRESSION + CHECKED LINDEMANN–WEIERSTRASS INPUT + AUTHOR SELF-REVIEW** | [proof](../mathematics/frozen_arithmetic_trace_rigidity.md), [audit](two_continuations_review_20260924.md). The latter commutant assertion needs the all-minor input `BGS-FM-008`; at odd \(N\ge19\) the unitary Weyl-normalizer commuter is scalar even if \(7\mid N\). Neither nonzero traces nor non-scalar powers provide trace *upper bounds*. |
+| `BGS-FM-011`: explicit positive, \(N\)-dependent eigenphase gap floor for the original coupling when \(7\nmid N\) | **PROJECT PROOF + CHECKED PRIMARY EFFECTIVE ROY THEOREM + AUTHOR SELF-REVIEW** | [proof and enormous constants](../mathematics/frozen_effective_gap_floor.md), [audit](two_continuations_review_20260924.md). This floor is vastly smaller than \(N^{-1}\); it gives no microscopic repulsion, Abel bound or CUE. No finite factorization certificate is needed for this claim. |
+| Submitted 492-degree \(\mathbb F_5\) certificate for common antiunitaries | **NOT REPLAYED — AUXILIARY CERTIFICATE MISSING** | The claimed conclusion is already covered for *all* odd \(N\ne7\) by the stronger, previously reproduced `BGS-FM-009`. Do not attribute the earlier verifier to the newly submitted polynomial. |
+| `BGS-TRACE-005`, `BGS-BGS-001` | **OPEN** | No fixed-coupling Heisenberg-scale signed joint-trace comparison, pair Abel limit or full sine-kernel law has been proved. |
+
 ## 24 September 2026 — audited 87-page outside-agent submission
 
 The [submission review](submitted_article_review_20260924.md) checks an

@@ -14,5 +14,6 @@ dependency is pinned in `../../literature/external_dependencies.json`.
 Scope note: exact and conditional reductions, the frozen-kick rank boundary,
 the nonlinear classical pressure boundary, the seven-cut fixed-coupling
 transfer, scoped algebraic spectral results, and obstructions to insufficient
-spectral arguments. The Heisenberg-scale
-model estimate is still open; this is not a positive BGS theorem.
+spectral arguments. Exact nonvanishing of traces and the explicit
+submicroscopic gap floor also leave the Heisenberg-scale model estimate
+open; this is not a positive BGS theorem.

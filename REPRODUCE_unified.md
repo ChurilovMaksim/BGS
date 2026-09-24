@@ -32,6 +32,21 @@ Alternatively select these three names with repeated `--only` arguments
 in `verify_workspace.py`. None of these finite computations evaluates the
 unproved sine-kernel or Abel limits.
 
+The next two submitted continuations are audited in
+`record/two_continuations_review_20260924.md`. To reproduce their retained
+integer-only regression for `BGS-FM-010`:
+
+```sh
+python -S computations/verification/frozen_arithmetic_traces.py \
+  --output build/frozen_arithmetic_traces.json
+cmp evidence/20260924/frozen_arithmetic_traces.json \
+  build/frozen_arithmetic_traces.json
+```
+
+This checks finite fixed-point counts and a rational kick-coefficient
+margin, not the all-dimension proof, the effective `BGS-FM-011` bound,
+or any microscopic statistic.
+
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
 Run the cheap fail-closed metadata and structural gates first:

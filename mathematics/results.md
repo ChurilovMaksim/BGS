@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Arithmetic returns and effective submicroscopic gap, 24 September 2026
+
+[`BGS-FM-010`](frozen_arithmetic_trace_rigidity.md) computes
+\(|\operatorname{Tr}M_N^m|^2\) exactly as a square of a Pell gcd for
+every odd \(N,m\ge1\). Algebraic-time exponential independence then
+shows \(\operatorname{Tr}U_N^m\ne0\) at the unchanged \(\tau=10^{-80}\).
+Scalar powers of \(U_N\) occur only at \(N=7\), while algebraic-entry
+commutants are scalar for \(7\nmid N\). These are qualitative exact
+statements, not upper estimates of \(|\operatorname{Tr}U_N^m|\).
+
+[`BGS-FM-011`](frozen_effective_gap_floor.md) uses
+[Roy, Theorem 1.1](https://arxiv.org/pdf/1607.00579v1.pdf) to turn
+the pre-existing simple-spectrum result into an explicit but
+astronomically weak \(N\)-dependent eigenphase gap floor at \(7\nmid N\).
+The [two-file audit](../record/two_continuations_review_20260924.md)
+lists source boundaries and omitted duplicate claims. In particular,
+the claimed alternative 492-degree finite certificate was not
+provided, and neither new claim approaches the required \(N^{-1}\)
+statistics or the Heisenberg signed joint traces.
+
 ## Exact fixed-coupling seven-cut and algebraic bounds, 24 September 2026
 
 The [seven-cut theorem](frozen_seven_cut_reduction.md) (`BGS-FM-007`)

@@ -1,5 +1,18 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [follow-up audit](record/two_continuations_review_20260924.md)
+retains two additional scoped claims. An
+[exact arithmetic return theorem](mathematics/frozen_arithmetic_trace_rigidity.md)
+(`BGS-FM-010`) proves every positive-power trace of the unchanged
+fixed map is nonzero at all odd dimensions and classifies its exact
+scalar powers (only \(N=7\)). An
+[effective eigenphase gap floor](mathematics/frozen_effective_gap_floor.md)
+(`BGS-FM-011`), using Roy's published theorem, is explicit but far
+below the mean spacing. Several other arguments in those two uploads
+duplicate existing results; their alleged 492-degree certificate was
+not attached. The pair Abel limit and mixed Heisenberg trace comparison
+remain open.
+
 The [24 September submitted-article audit](record/submitted_article_review_20260924.md)
 promotes three scoped results: an exact seven-cut reduction at unchanged
 $\tau=10^{-80}$ with pair/Abel transfer

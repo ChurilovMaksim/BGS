@@ -470,6 +470,18 @@ These claims provide no uniform eigenphase gaps or Heisenberg-time trace
 estimates. Read the [submission audit](record/submitted_article_review_20260924.md)
 for their scope and verification.
 
+**BGS-FM-010 and BGS-FM-011 — exact traces and a gap floor.**
+The [arithmetic trace theorem](mathematics/frozen_arithmetic_trace_rigidity.md)
+proves $\operatorname{Tr}U_N^m\ne0$ for every odd $N$ and positive $m$,
+and identifies $N=7$ as the sole dimension with a scalar power.
+The [effective gap estimate](mathematics/frozen_effective_gap_floor.md),
+for $7\nmid N$, gives a positive but astronomically submicroscopic
+eigenphase separation. Both leave Heisenberg-scale trace **upper** estimates
+and the BGS pair limit open. The
+[audit of the two subsequent texts](record/two_continuations_review_20260924.md)
+lists duplicate assertions and the alternative finite certificate that
+was referenced but not supplied.
+
 ---
 
 ### 9.2 Resonance and cohomology
