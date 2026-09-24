@@ -6,7 +6,7 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 23 September 2026.**  
+> **Scientific status — 24 September 2026.**  
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
 The **Bohigas–Giannoni–Schmit (BGS) conjecture** asks whether deterministic quantum systems with chaotic classical dynamics exhibit universal **local spectral statistics** described by random matrix theory after the correct symmetry reduction and unfolding.
@@ -446,6 +446,29 @@ N-\gcd(N,7).
 ```
 
 This eliminates a large class of simple low-rank explanations of the spectrum.
+
+**BGS-FM-006 — nonlinear bracket-pressure boundary.**
+The physical symbol's linear full-lag normalization has no uniform upper
+bound under the actual nonlinear kicked map; see the
+[proof and hypotheses](mathematics/nonlinear_bracket_pressure.md).
+
+**BGS-FM-007 — seven-cut reduction at the original fixed coupling.**
+Cutting seven small edges in the Jacobi *generator* gives a full propagator
+$V_N$ with $\|U_N-V_N\|_1=O(\tau/N)$. Their fixed-order local sine-kernel
+targets are equivalent, and their pair and Abel statistics differ by
+$O(\tau/\log N)$ without a universality assumption. The full $V_N$
+continues to couple all seven paths; see the
+[proof](mathematics/frozen_seven_cut_reduction.md).
+
+**BGS-FM-008 and BGS-FM-009 — qualitative spectral rigidity.**
+For odd $7\nmid N$, the [algebraic-time
+proof](mathematics/frozen_algebraic_spectral_simplicity.md) gives simple
+spectra and excludes exact power collisions. The
+[integer certificate](mathematics/frozen_common_antireversor_certificate.md)
+rules out a *common* antiunitary reversor of $(A_N,M_N)$ for odd $N\ne7$.
+These claims provide no uniform eigenphase gaps or Heisenberg-time trace
+estimates. Read the [submission audit](record/submitted_article_review_20260924.md)
+for their scope and verification.
 
 ---
 
