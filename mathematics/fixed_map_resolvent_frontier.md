@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
 
-**Status, 23 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 24 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -73,10 +73,26 @@ at a strictly larger exponential rate. This result is classical and uses
 thermodynamic-formalism inputs; none of these results bounds the
 Heisenberg-scale joint traces needed for `BGS-TRACE-005`.
 
+An [exact seven-cut reduction](frozen_seven_cut_reduction.md) now gives
+$\|U_N-e^{i\tau N A_N^{\rm cut}}M_N\|_1\le28\pi^2\tau/(25N)$
+for the same fixed coupling. The two **full** propagators have equivalent
+fixed-order sine-kernel targets. Their pair and full Abel statistics differ
+by $O_s(\tau/\log N)$ without assuming a CUE limit. The seven paths
+belong only to the generator: every proper union of paths exchanges
+Hilbert–Schmidt mass $d(N-d)/N$ with its complement under the full
+propagator. Thus `BGS-TRACE-005` can be attacked for either full
+propagator, with no claim of independent seven-block spectra. The
+[all-minor and simple-spectrum theorem](frozen_algebraic_spectral_simplicity.md)
+removes exact level multiplicity when $7\nmid N$, while the
+[integer commutator-cube certificate](frozen_common_antireversor_certificate.md)
+excludes a common antiunitary reversal of $(A_N,M_N)$ except at $N=7$.
+These results are qualitative and do not estimate near-degenerate spacings.
+
 Exact algebraic arguments exclude scalar-algebraic returns for the stated
 frozen family except its explicitly treated raw $N=7$ exception. They do not
-give microscopic eigenvalue separation. Exact simplicity certificates cover
-specified finite dimensions, not all $N$. Structured ergodic comparison
+give microscopic eigenvalue separation. The new qualitative simplicity
+theorem covers all odd $7\nmid N$, whereas the older *quantitative*
+finite-size certificates cover only specified dimensions. Structured ergodic comparison
 controls unfolded RMS motion of subprincipal perturbations under its stated
 Egorov and ergodicity hypotheses; transferring factorial correlations also
 needs local occupation moments.

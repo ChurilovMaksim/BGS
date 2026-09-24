@@ -4,6 +4,23 @@ Only sources that constrain the active argument or its interpretation are
 listed here. A citation is **not** a claim that its hypotheses have already
 been verified for this project.
 
+## Exponential independence for the frozen algebraic-time claims
+
+A. Popescu, [*A simple and self-contained proof for the
+Lindemann–Weierstrass theorem*, arXiv:2306.14352v2,
+Theorem 3.2](https://arxiv.org/pdf/2306.14352). For **distinct algebraic**
+numbers $\alpha_j$, the exponentials $e^{\alpha_j}$ are linearly
+independent over the field of algebraic numbers. The precise theorem was
+checked in its primary text on 24 September 2026. In
+[`BGS-FM-008`](../mathematics/frozen_algebraic_spectral_simplicity.md)
+and the algebraic-entry corollary of
+[`BGS-FM-009`](../mathematics/frozen_common_antireversor_certificate.md),
+this transfers a finite exponential-polynomial **identity** at nonzero
+algebraic time into a global analytic identity. It gives no effective
+lower bound, eigenvalue gap, or local spectral statistic. The dependency
+and its exact scope are pinned in
+[`external_dependencies.json`](external_dependencies.json).
+
 ## Thermodynamic formalism for the nonlinear frozen map
 
 The classical bracket-pressure application in

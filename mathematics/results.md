@@ -1,5 +1,26 @@
 # Current results and exact scope
 
+## Exact fixed-coupling seven-cut and algebraic bounds, 24 September 2026
+
+The [seven-cut theorem](frozen_seven_cut_reduction.md) (`BGS-FM-007`)
+removes seven nearly zero Jacobi edges from the exact fixed generator.
+The nuclear distance of the full propagators is at most
+$28\pi^2\tau/(25N)$, and their *existing* sine-kernel laws of every
+fixed order are equivalent. Their pair and infinite Abel statistics
+differ by $O(\tau/\log N)$ without assuming CUE. The cut generator has
+seven path blocks; the full propagator retains strong metaplectic
+interblock coupling.
+
+[Total minor nonvanishing and fixed-time spectral simplicity](frozen_algebraic_spectral_simplicity.md)
+(`BGS-FM-008`) apply at all odd $7\nmid N$ and nonzero real algebraic
+couplings, including $\tau N$. The [commutator-cube certificate](frozen_common_antireversor_certificate.md)
+(`BGS-FM-009`) excludes a common antiunitary of $(A_N,M_N)$ at every
+odd $N\ne7$ and, with algebraic entries, a reversor of $U_N$.
+Neither result supplies a quantitative eigenphase gap. The
+[submission audit](../record/submitted_article_review_20260924.md)
+separates these statements from the still-open Heisenberg joint-trace
+comparison and main BGS law.
+
 ## Nonlinear classical pressure boundary, 23 September 2026
 
 For the **actual nonlinear Anosov map** of the fixed frozen model,

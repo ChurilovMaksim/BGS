@@ -12,6 +12,7 @@ run the referee protocol in `../../REVIEWING.md`, and ensure every external
 dependency is pinned in `../../literature/external_dependencies.json`.
 
 Scope note: exact and conditional reductions, the frozen-kick rank boundary,
-the nonlinear classical pressure boundary, and obstructions to insufficient
+the nonlinear classical pressure boundary, the seven-cut fixed-coupling
+transfer, scoped algebraic spectral results, and obstructions to insufficient
 spectral arguments. The Heisenberg-scale
 model estimate is still open; this is not a positive BGS theorem.

@@ -32,6 +32,21 @@ actual kicked map. This classical pressure obstruction does not supply the
 `BGS-TRACE-005` quantum joint-trace estimate. The separate arbitrary-analytic
 resonance question remains `BGS-RES-003`.
 
+After the 24 September seven-cut reduction (`BGS-FM-007`), the same
+compact-frequency signed joint-trace obligation may be proved for either
+the original $U_N$ or the **full** approximant
+$V_N=e^{i\tau N A_N^{\rm cut}}M_N$. Their full fixed-order local-law
+statements are equivalent, and their pair/Abel tests differ by
+$O(\tau/\log N)$. The seven path projectors of $A_N^{\rm cut}$ do not
+commute with $V_N$; assume no independent spectra. Algebraic
+simple-spectrum (`BGS-FM-008`, only $7\nmid N$) and common antiunitary
+obstruction (`BGS-FM-009`, except $N=7$) exclude exact degeneracy
+mechanisms within their scopes but give no quantitative mixed-trace
+cancellation. A concrete necessary pair milestone is
+$N^{-1}\operatorname{Tr}\Gamma_{N,N}^2\to4/3$, where
+$\Gamma_{N,N}=[N^{-1}\operatorname{Tr}U_N^{b-a}]_{0\le a,b<N}$;
+this has not been proved for the model.
+
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 
 The off/off elliptic correlation layer is no longer an independent open problem: after extraction of the coherent reducible fibre, `offoff_elliptic_spike_theorem.md` proves

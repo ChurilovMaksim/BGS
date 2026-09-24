@@ -1,5 +1,20 @@
 # Claim ledger
 
+## 24 September 2026 — audited 87-page outside-agent submission
+
+The [submission review](submitted_article_review_20260924.md) checks an
+87-page PDF and all seven embedded finite programs. Its **own** abstract
+correctly states that the fixed-strength sine-kernel and Abel limits remain
+unproved. Author-level review is not external referee acceptance; no
+priority or complete BGS claim is made.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| `BGS-FM-007`: seven near-zero generator edges can be cut at fixed $\tau=10^{-80}$ with nuclear error $\|U_N-V_N\|_1\le28\pi^2\tau/(25N)$; full fixed-order local CUE laws for $U_N$ and $V_N$ are equivalent; all odd-$N$ pair and Abel differences are $O_s(\tau/\log N)$ | **PROJECT PROOF + EXACT FINITE REGRESSION + INDEPENDENT RAW-MATRIX FINITE CHECK + AUTHOR SELF-REVIEW** | [proof](../mathematics/frozen_seven_cut_reduction.md), [audit](frozen_seven_cut_review_20260924.md). Only the kick **generator** splits into seven paths. The metaplectic matrix couples every block; no joint-trace limit follows. |
+| `BGS-FM-008`: at odd $7\nmid N$, every eigenbasis minor of $M_N$ is nonzero; at each nonzero real algebraic coupling $t$, $e^{itA_N}M_N$ and all its nonzero powers have simple spectra and distinct eigenvalue ratios are transcendental | **PROJECT PROOF + CHECKED LINDEMANN–WEIERSTRASS INPUT + EXACT FINITE REGRESSION + AUTHOR SELF-REVIEW** | [proof](../mathematics/frozen_algebraic_spectral_simplicity.md), [audit](frozen_algebraic_review_20260924.md). Qualitative; no uniform spacing or claim for $7\mid N$. |
+| `BGS-FM-009`: $\operatorname{Tr}[A_N,M_N]^3\ne0$ for every odd $N\ne7$; excludes an arbitrary **common** antiunitary of the pair and an algebraic-entry reversor of $U_N$ | **CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR SELF-REVIEW** | [proof](../mathematics/frozen_common_antireversor_certificate.md), [audit](frozen_antireversor_review_20260924.md). At $N=7$ the common reversor exists. Every unitary matrix has some eigenbasis antiunitary reversor, so no claim excludes all reversors of $U_N$. |
+| `BGS-TRACE-005`, `BGS-BGS-001` | **OPEN** | No signed, mixed Heisenberg-time joint-trace comparison or actual fixed-strength microscopic universality follows from these subsidiary results. |
+
 ## 23 September 2026 — nonlinear classical pressure boundary
 
 | Claim | Status | Boundary / authority |

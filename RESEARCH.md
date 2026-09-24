@@ -1,5 +1,17 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [24 September submitted-article audit](record/submitted_article_review_20260924.md)
+promotes three scoped results: an exact seven-cut reduction at unchanged
+$\tau=10^{-80}$ with pair/Abel transfer
+([`BGS-FM-007`](mathematics/frozen_seven_cut_reduction.md)), qualitative
+fixed-time simple spectrum away from $7\mid N$
+([`BGS-FM-008`](mathematics/frozen_algebraic_spectral_simplicity.md)),
+and a certificate excluding common antiunitary reversal except $N=7$
+([`BGS-FM-009`](mathematics/frozen_common_antireversor_certificate.md)).
+The seven generator paths remain coupled by $M_N$ in the full
+propagator. The fixed-strength Heisenberg signed joint-trace estimate,
+the pair Abel limit and BGS remain open.
+
 The [nonlinear bracket pressure theorem](mathematics/nonlinear_bracket_pressure.md)
 shows that the linear-map full-lag normalization fails for the **actual**
 nonlinear classical frozen map at every allowed nonzero coupling. Its exact

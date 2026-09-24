@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -276,6 +276,80 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Classical Anosov bracket norms for the exact nonlinear map and a perturbative coefficient; no effective remainder at fixed tau, nonlinear Riesz lower theorem, quantum joint traces, BGS law or external referee/priority determination."
+    },
+    {
+      "id": "BGS-FM-007",
+      "title": "Exact seven-cut frozen-generator reduction and microscopic trace-norm stability",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + RAW-WEYL INDEPENDENT MATRIX CHECK + EXACT FINITE REGRESSION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_seven_cut_reduction.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-005",
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260924/frozen_seven_cut.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_seven_cut.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Generator, not full propagator, splits into seven paths. Entire odd-sequence local-law equivalence; unconditional pair and Abel differences O(tau/log N). Does not establish any CUE limit or independent quantum sectors."
+    },
+    {
+      "id": "BGS-FM-008",
+      "title": "Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED LINDEMANN-WEIERSTRASS INPUT + FINITE REGRESSION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_algebraic_spectral_simplicity.md",
+      "dependencies": [
+        "BGS-FM-005"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/frozen_total_minors.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_total_minors.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions."
+    },
+    {
+      "id": "BGS-FM-009",
+      "title": "Exact commutator-cube obstruction to common antiunitary reversal",
+      "state": "proved",
+      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_common_antireversor_certificate.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/antireversor/certificate_result.json",
+        "evidence/20260924/antireversor/certificate_polynomial.csv",
+        "evidence/20260924/antireversor/certificate_polynomial_7.csv"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_antireversor.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "For odd N>=3 except N=7, no arbitrary common antiunitary reversing the pair (A_N,M_N). For U_N alone excludes only algebraic-entry antiunitaries; arbitrary finite-dimensional antiunitary reversors always exist."
     },
     {
       "id": "BGS-FORMAL-001",

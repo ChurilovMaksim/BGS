@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "dependencies": [
     {
       "id": "EXT-BH-2026",
@@ -169,6 +169,23 @@
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
         "record/nonlinear_pressure_review_20260923.md"
+      ]
+    },
+    {
+      "id": "EXT-POPESCU-2023",
+      "authors": [
+        "Sever Angel Popescu"
+      ],
+      "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
+      "identifier": "arXiv:2306.14352v2; https://arxiv.org/pdf/2306.14352",
+      "pinned_version": "v2, 17 September 2023",
+      "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients)",
+      "checked_on": "2026-09-24",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input.",
+      "project_sources": [
+        "mathematics/frozen_algebraic_spectral_simplicity.md",
+        "mathematics/frozen_common_antireversor_certificate.md",
+        "record/frozen_algebraic_review_20260924.md"
       ]
     }
   ]

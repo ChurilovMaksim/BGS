@@ -76,3 +76,14 @@ The 23 September verifiers `frozen_full_lag_gap.py` and
 Jacobi/rank diagnostics, respectively. Both are discovered by the whole-
 workspace runner and write scoped JSON outputs under its log directory.
 Their finite runs are not proofs of the infinite-lag or all-dimension claims.
+
+The submitted article's three retained 24 September checks are
+[`frozen_seven_cut.py`](verification/frozen_seven_cut.py),
+[`frozen_total_minors.py`](verification/frozen_total_minors.py), and
+[`frozen_antireversor.py`](verification/frozen_antireversor.py).
+They replay finite geometry, 5-adic/Fourier subset arithmetic, and an
+exhaustive integer cyclotomic certificate, respectively. All are included
+in the full verification runner, have dated immutable reference outputs
+under `evidence/20260924/`, and are available as focused selections.
+The analytic and all-dimension steps are documented separately in
+[`record/submitted_article_review_20260924.md`](../record/submitted_article_review_20260924.md).

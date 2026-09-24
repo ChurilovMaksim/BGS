@@ -25,6 +25,11 @@ The dated review [`nonlinear_pressure_review_20260923.md`](nonlinear_pressure_re
 audits the classical pressure claim `BGS-FM-006` and its exact arithmetic;
 the missing Heisenberg-time estimate retains its OPEN status.
 
+[`submitted_article_review_20260924.md`](submitted_article_review_20260924.md)
+audits the uploaded 87-page fixed-cat-map manuscript and identifies the
+maintained scope of `BGS-FM-007`–`009`; the individual review files document
+their analytical and finite certificate checks.
+
 ## Historical record
 
 Dated reviews document what was checked at a particular research state; they

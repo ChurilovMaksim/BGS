@@ -8,6 +8,30 @@ TeX view. Validate it with
 The 22 September proof, audit, source-level Lean kernels and exact finite
 regressions are indexed in `record/integration_20260922.md`.
 
+The 24 September audit of the submitted 87-page fixed-map article and the
+exact boundaries of its three retained claims are in
+`record/submitted_article_review_20260924.md`. The attached source and
+outputs were replayed in isolation; the compact maintained versions can be
+reproduced with:
+
+```sh
+python -S computations/verification/frozen_seven_cut.py \
+  --output build/frozen_seven_cut.json
+python -S computations/verification/frozen_total_minors.py \
+  --output build/frozen_total_minors.json
+python -S computations/verification/frozen_antireversor.py \
+  --output-dir build/frozen_antireversor
+cmp evidence/20260924/frozen_seven_cut.json build/frozen_seven_cut.json
+cmp evidence/20260924/frozen_total_minors.json build/frozen_total_minors.json
+cmp evidence/20260924/antireversor/certificate_result.json \
+  build/frozen_antireversor/certificate_result.json
+```
+
+The antireversor reference CSVs can be compared in the same manner.
+Alternatively select these three names with repeated `--only` arguments
+in `verify_workspace.py`. None of these finite computations evaluates the
+unproved sine-kernel or Abel limits.
+
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
 Run the cheap fail-closed metadata and structural gates first:

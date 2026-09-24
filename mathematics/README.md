@@ -26,7 +26,11 @@ The current fixed-family branch is consolidated in
    the exact kick-rank and linear-transport classical results, respectively.
    `nonlinear_bracket_pressure.md` determines the failure of the same
    normalization for nonlinear classical transport; none supplies the open
-   Heisenberg-scale quantum estimate.
+   Heisenberg-scale quantum estimate. The 24 September continuation
+   `frozen_seven_cut_reduction.md`, `frozen_algebraic_spectral_simplicity.md`
+   and `frozen_common_antireversor_certificate.md` records a fixed-coupling
+   reduction and scoped qualitative spectral obstructions without claiming
+   that estimate.
 5. `fourth_moment_reduction.md` and `cayley_additive_energy.md` — exact pair-key and Cayley reductions.
 6. `general_cat_return_laws.md`, `pell_harmonic_transition.md`, and `pell_harmonic_returns.md` — global return/observable laws with explicit microscopic boundaries.
 7. `topics/README.md` — thematic navigation across the full maintained corpus.

@@ -19,10 +19,14 @@ graph TD
   T6[BGS-TRACE-006 clustered Abel and time-window boundary]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
+  F1 --> F7[BGS-FM-007 seven-cut transfer]
+  F5[BGS-FM-005 exact kick-rank boundary] --> F7
+  T1 --> F7
+  F5 --> F8[BGS-FM-008 simple spectrum away from seven]
+  F1 --> F9[BGS-FM-009 common antiunitary obstruction]
   T3 --> T5
 
   F3[BGS-FM-003 moment controls] --> F4[BGS-FM-004 three-orientation barrier]
-  F5[BGS-FM-005 exact kick-rank boundary]
   T2 --> L1[BGS-LOOP-001 mixed loop hierarchy]
 
   R4[BGS-RES-004 finite-orbit rigidity]
