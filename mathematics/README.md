@@ -22,6 +22,13 @@ The current fixed-family branch is consolidated in
    `clustered_abel_window_boundary.md` records a sharp limit of what cluster
    and Abel information alone can infer about positive Heisenberg-time windows.
 4. `fixed_map_resolvent_frontier.md` — maintained frozen-model frontier.
+   It now contains the exact adjoint-resolvent representation of the pair
+   Abel limit, its universal regular-polygon lower floor, and smooth
+   scalar-resolvent transfer to the seven-cut **full** propagator;
+   `two_clock_gram_falsifier.md` rules out a tempting sufficiency claim
+   even with simple, weakly Haar spectra and bounded local occupancy;
+   `frozen_spectral_flow_controls.md` audits the phase-flow identities,
+   ordered kick product, and isospectral control example.
    `frozen_kick_rank_boundary.md` and `frozen_full_lag_resonance.md` record
    the exact kick-rank and linear-transport classical results, respectively.
    `nonlinear_bracket_pressure.md` determines the failure of the same

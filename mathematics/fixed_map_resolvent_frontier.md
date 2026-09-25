@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-BGS-001`
 
-**Status, 24 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 25 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -53,6 +53,174 @@ proves equivalence with all compact weighted pair tests, with an explicit
 positive-definite tail bound. No estimate establishing this limit for the
 displayed $U_N$ has been obtained. All-order universality needs more than
 this pair target.
+
+## An exact adjoint-resolvent form of the pair target
+
+**Claim ID:** `BGS-RES-006`. This identity is finite-dimensional and holds
+for every unitary $N\times N$ matrix, not just the frozen family. On the
+Hilbert--Schmidt space $M_N(\mathbb C)$ define
+
+$$
+\mathcal U_N(X)=U_N XU_N^*,\qquad
+\mathcal D_N=\frac{N^2}{4}\left(2I-\mathcal U_N-\mathcal U_N^*\right),\qquad
+T_N(s)=\frac1N\operatorname{Tr}_{HS}(\mathcal D_N+s^2I)^{-1}.
+$$
+
+The map $\mathcal U_N$ is unitary on Hilbert--Schmidt space, so
+$\mathcal D_N\ge0$. If $e^{i\theta_j}$ are the eigenvalues of $U_N$, the
+matrix units in its eigenbasis diagonalize $\mathcal D_N$, with eigenvalues
+$N^2\sin^2((\theta_j-\theta_k)/2)$. Summing the Poisson series with
+$q=e^{-2s/N}$ gives the exact identity
+
+$$
+1+2L_N(s)=N\sinh(s/N)\cosh(s/N)\,T_N\!\left(N\sinh(s/N)\right).
+$$
+
+For every unitary spectrum and every $s>0$ one also has the uniform comparison
+
+$$
+0\le \frac{1+2L_N(s)}{s}-T_N(s)
+\le \frac{2}{3N}\cosh(2s/N).                         \tag{R1}
+$$
+
+To see the sign and the error, set $a=s/N$ and
+$y_{jk}=N^2\sin^2((\theta_j-\theta_k)/2)$. The ratio of the $(j,k)$ summand
+in $(1+2L_N(s))/s$ to its summand in $T_N(s)$ is
+
+$$
+\frac{\sinh(2a)}{2a}\,\frac{y_{jk}+s^2}{y_{jk}+N^2\sinh^2a}.
+$$
+
+It lies between $1$ and $\sinh(2a)/(2a)$. Also
+$T_N(s)\le N/s^2$, and
+$\sinh x/x-1\le x^2\cosh(x)/6$ for $x\ge0$, which proves (R1).
+Consequently, for each fixed $s>0$,
+
+$$
+L_N(s)\longrightarrow\frac{1-e^{-2s}}{4s^2}
+\quad\Longleftrightarrow\quad
+T_N(s)\longrightarrow\frac1s+\frac{1-e^{-2s}}{2s^3}.
+$$
+
+This is a reformulation of the same open pair limit. It gives no estimate
+for $T_N(s)$ for the prescribed $U_N$ and no higher-order joint-trace
+comparison. The detailed audit and the companion exact
+[spectral-flow and control identities](frozen_spectral_flow_controls.md)
+also rule out collapsing the actual iterated kicks into an unordered single
+exponential; they do not estimate the ordered product at $m\asymp N$.
+
+## A universal finite-dimensional Abel floor
+
+**Claim ID:** `BGS-TRACE-007`. Every $N$-point unitary spectrum satisfies
+
+$$
+L_N(s)\ge \frac1{e^{2s}-1},\qquad s>0,                 \tag{R2}
+$$
+
+and the bound is attained by a rotated regular $N$-gon. Here is the precise
+energy reduction. For $N=1$ the bound is equality directly. For $N\ge2$, put
+$z_j=e^{i\theta_j}$ and
+
+$$
+f_q(r)=\frac{1-q^2}{(1-q)^2+qr},\qquad 0<q<1.
+$$
+
+This is strictly completely monotone on $[0,4]$. The regular $N$-gon is a
+sharp configuration on $S^1$: it is a circular $(N-1)$-design and has
+$\lfloor N/2\rfloor$ distinct inner products between different vertices.
+Cohn--Kumar, Theorem 1.2 in
+[*Universally optimal distribution of points on spheres*](https://arxiv.org/abs/math/0607446v2),
+therefore minimizes $\sum_{j\ne k}f_q(|z_j-z_k|^2)$. The diagonal terms of
+the full ordered sum are configuration-independent. If eigenangles
+coincide, perturb them to distinct angles and pass to the limit; $f_q$ is
+continuous at zero. Since
+
+$$
+\frac{1-q^2}{|1-qe^{it}|^2}
+=\sum_{m\in\mathbb Z}q^{|m|}e^{imt},
+$$
+
+the minimized full sum is $N^2+2\sum_{m\ge1}q^m|p_m|^2$. For the regular
+polygon $p_m=N$ exactly when $N\mid m$, and is zero otherwise. Taking
+$q=e^{-2s/N}$ yields (R2).
+
+The CUE benchmark is strictly above this floor:
+
+$$
+\frac{1-e^{-2s}}{4s^2}-\frac1{e^{2s}-1}
+=\frac{e^{-s}(\sinh^2s-s^2)}{2s^2\sinh s}>0.
+$$
+
+Thus (R2) is a sharp universal lower bound but does not identify the frozen
+model's limit or give a uniform excess over the clock value.
+
+## Smooth resolvent transfer for the seven-cut *full* propagator
+
+**Claim ID:** `BGS-RES-007`. Let $U_N$ and $V_N$ be the original and
+seven-cut **full** propagators of [`BGS-FM-007`](frozen_seven_cut_reduction.md).
+For an arbitrary unitary $W$ write $L_{W,N}$ and $T_{W,N}$ for the pair
+Abel and adjoint-resolvent functions above. For every compact
+$K\subset(0,\infty)$ and every integer $r\ge0$, there are constants
+$C_{K,r},N_{K,r}$ such that, for odd $N\ge N_{K,r}$,
+
+$$
+\sup_{s\in K}|\partial_s^r(L_{U,N}(s)-L_{V,N}(s))|
+ \le C_{K,r}\frac{\tau}{\log N},                         \tag{R3}
+$$
+
+$$
+\sup_{s\in K}|\partial_s^r(T_{U,N}(s)-T_{V,N}(s))|
+ \le C_{K,r}\left(\frac{\tau}{\log N}+\frac1N\right). \tag{R4}
+$$
+
+Thus $T_{U,N}-T_{V,N}\to0$ in $C^\infty_{\rm loc}(0,\infty)$.
+This is equivalence of any possible scalar-resolvent limits, not
+convergence of either resolvent to the CUE value.
+
+**Proof.** Formula (13) of `BGS-FM-007` expresses $L_{W,N}$ as
+$\frac12 C_{2,N}^W(h_s)$ plus terms independent of $W$, where
+$h_s(x)=s/(s^2+\pi^2x^2)$. All Abel series and their fixed-order
+$s$ derivatives converge absolutely on $K$ at each $N$. For every $r$,
+the derivatives $\partial_s^r h_s$ and their $x$ derivatives have
+uniformly summable unit-interval suprema as $s$ runs over $K$;
+the $x$ derivative is $O_{K,r}(|x|^{-3})$ at infinity. Apply the
+phase-coupling estimate (7) there to these differentiated tests.
+Its coupled total displacement is $O(\tau)$, and the seven-cut
+occupancy is $O(N/\log N)$. The spectrum-independent terms cancel,
+giving (R3) uniformly on $K$.
+
+It remains to pass from the Abel functions to the resolvents **with
+derivatives**, since (R1) alone bounds only their values. Set
+$y_{jk}=N^2\sin^2((\theta_j-\theta_k)/2)$,
+$c_N(s)=\sinh(2s/N)/(2s/N)$, and
+$b_N(s)=N^2\sinh^2(s/N)$. The exact identity preceding (R1) gives
+
+$$
+R_{W,N}(s):=\frac{1+2L_{W,N}(s)}s-T_{W,N}(s)
+=\frac1N\sum_{j,k=1}^N\left[
+ \frac{c_N(s)}{y_{jk}+b_N(s)}-\frac1{y_{jk}+s^2}\right]. \tag{R5}
+$$
+
+On a fixed small complex neighborhood of $K$ in $\Re s>0$ and for all
+sufficiently large $N$, the expansions
+$c_N(s)=1+O_K(N^{-2})$ and $b_N(s)=s^2+O_K(N^{-2})$
+hold uniformly. Both denominators have modulus at least
+$c_K(1+y_{jk})$ there. Hence each bracket in (R5) is bounded by
+$C_KN^{-2}/(1+y_{jk})$. The $N^2$ terms and the exterior $1/N$
+give $\sup |R_{W,N}|\le C_K/N$ uniformly over **every** unitary $W$.
+Cauchy's derivative estimates on a slightly smaller neighborhood yield
+$\sup_{s\in K}|\partial_s^rR_{W,N}(s)|\le C_{K,r}/N$.
+Subtract (R5) for $U_N,V_N$ and use (R3), together with the bounded
+derivatives of $1/s$ on $K$, to obtain (R4). $\square$
+
+The proof exploits the already established full-propagator phase coupling;
+it neither decomposes $V_N$ into independent spectra nor evaluates
+its scalar resolvent at Heisenberg times. The all-order mixed-resolvent
+obligation `BGS-TRACE-005` therefore remains open. The separate
+[`BGS-TRACE-008` two-clock example](two_clock_gram_falsifier.md)
+also proves that the necessary Gram moment $4/3$, simple phases,
+macroscopic Haar convergence, uniformly bounded unfolded unit occupancy
+and nonvanishing traces cannot replace that obligation.
 
 ## What the recovered work establishes
 
@@ -236,6 +404,30 @@ the two vanishing residuals is asserted either. Establishing those residual
 hypotheses for the actual map remains a dynamical problem.
 
 ## Why a direct noise replacement does not close the estimate
+
+There is also an exact identity for depolarizing noise. Let
+$\mathcal P_N(X)=\operatorname{Tr}(X)I/N$ and
+$\Phi_{\eta,N}=e^{-\eta}\mathcal U_N+(1-e^{-\eta})\mathcal P_N$ for
+$\eta\ge0$. The scalar matrices have eigenvalue $1$ under $\Phi_{\eta,N}$;
+on traceless matrices it acts as $e^{-\eta}\mathcal U_N$. Therefore
+
+$$
+\operatorname{Tr}_{HS}\Phi_{\eta,N}^m
+=1+e^{-m\eta}(|p_m|^2-1).
+$$
+
+For
+$L_{\eta,N}(s)=N^{-2}\sum_{m\ge1}e^{-2sm/N}\operatorname{Tr}_{HS}\Phi_{\eta,N}^m$,
+this gives
+
+$$
+L_{\eta,N}(s)=L_N(s+N\eta/2)+\rho_N(s,\eta),\qquad
+\rho_N(s,\eta)=\frac1{N^2}\sum_{m\ge1}e^{-2sm/N}(1-e^{-m\eta}),
+$$
+
+with $0\le\rho_N(s,\eta)\le(2Ns)^{-1}$. Noise shifts the unknown
+parameter from $s$ to $s+N\eta/2$; this identity alone does not recover the
+fixed-$s$ pair limit or control Heisenberg-time traces.
 
 For the unitary Brownian generator $G=(2N)^{-1}\sum_a D_{H_a}^2$, with
 $\operatorname{Tr}(H_aH_b)=\delta_{ab}$, matrix completeness gives

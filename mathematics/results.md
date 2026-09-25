@@ -1,5 +1,43 @@
 # Current results and exact scope
 
+## Seven-cut smooth transfer and two-clock Gram falsifier, 25 September 2026
+
+[`BGS-RES-007`](fixed_map_resolvent_frontier.md) upgrades the seven-cut
+pair transfer to every fixed derivative in $s$ on compact positive
+intervals. The scalar adjoint-resolvent traces of the two **full**
+propagators differ by $O_{K,r}(\tau/\log N+1/N)$ in each such derivative;
+neither trace has been shown to approach the CUE value.
+
+[`BGS-TRACE-008`](two_clock_gram_falsifier.md) constructs simple abstract
+odd-dimensional spectra with weak Haar empirical limit, unit-interval
+occupancy at most three, every positive power trace nonzero and
+$N^{-1}\operatorname{Tr}\Gamma_N^2\to4/3$, but an explicitly non-CUE
+pair Abel limit. The even companion attains the exact finite-$N$ CUE
+**expected** Gram moment. Neither construction is the maintained frozen
+map. The [cycle review](../record/bgs_program_20260925.md) records the
+remaining signed Heisenberg-trace and mixed-loop obstacle.
+
+## Pair resolvent, universal Abel floor, and spectral-flow audit, 25 September 2026
+
+[`BGS-RES-006`](fixed_map_resolvent_frontier.md) gives an exact
+finite-dimensional resolvent representation of the pair Abel statistic and
+shows that the CUE pair limit is equivalent to the corresponding scalar
+resolvent limit. For fixed $s>0$, the explicit comparison error is at most
+$2\cosh(2s/N)/(3N)$; the model-specific limit remains open.
+[`BGS-TRACE-007`](fixed_map_resolvent_frontier.md) gives the sharp universal
+floor $L_N(s)\ge1/(e^{2s}-1)$ from Cohn--Kumar's regular-polygon energy
+theorem. The floor is strictly below the CUE value and does not identify the
+limit.
+
+The [spectral-flow audit](frozen_spectral_flow_controls.md) proves the exact
+phase-velocity equations, retains the ordered product in powers of the
+propagator, and supplies an isospectral clock control family with uniformly
+delocalized kick entries. It refutes the tempting collapse of the ordered
+product to one exponential for odd $7\nmid N$; it is not a
+counterexample for the maintained frozen family. The accompanying exact
+depolarizing-noise identity shifts the unknown Abel parameter and does not
+bound the original long traces.
+
 ## Arithmetic returns and effective submicroscopic gap, 24 September 2026
 
 [`BGS-FM-010`](frozen_arithmetic_trace_rigidity.md) computes

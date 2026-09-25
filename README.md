@@ -6,7 +6,7 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 24 September 2026.**  
+> **Scientific status — 25 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
 The **Bohigas–Giannoni–Schmit (BGS) conjecture** asks whether deterministic quantum systems with chaotic classical dynamics exhibit universal **local spectral statistics** described by random matrix theory after the correct symmetry reduction and unfolding.
@@ -332,7 +332,7 @@ The same arithmetic structure that makes the model tractable also creates nontri
 
 The deterministic spectral reduction is one of the most mature layers of the programme.
 
-### Core trace claims
+### Core trace and resolvent claims
 
 | Claim | Status | Content |
 |---|---|---|
@@ -342,6 +342,10 @@ The deterministic spectral reduction is one of the most mature layers of the pro
 | **BGS-TRACE-004** | **proved** | every-compact-bandwidth convergence extends to Schwartz correlation tests |
 | **BGS-TRACE-005** | **open** | model-specific Heisenberg-scale joint-trace / mixed-resolvent estimate |
 | **BGS-TRACE-006** | **proved** | clustered Abel lower bound plus a simple-spectrum Heisenberg-window falsifier |
+| **BGS-TRACE-007** | **proved** | sharp universal Abel floor, attained by the regular clock spectrum |
+| **BGS-TRACE-008** | **proved** | odd two-clock counterexample to sufficiency of the Gram $4/3$ limit, even with simple phases and nonzero power traces |
+| **BGS-RES-006** | **proved** | exact adjoint-resolvent representation of the pair target |
+| **BGS-RES-007** | **proved in stated scope** | compact positive-$s$ smooth scalar-resolvent transfer between the original and seven-cut full propagators |
 
 For higher correlations, partition-lattice Möbius inversion produces constrained products
 
@@ -541,6 +545,41 @@ These are rigorous global results, but they live on a different scale from micro
 2. explicit **simple spectra** can have analogous clustering signatures while the positive-time Heisenberg-window form factor tends to zero.
 
 Therefore clustering is a useful diagnostic, not a substitute for the missing dynamical estimate.
+
+### 9.6 Exact resolvent and control identities
+
+**BGS-RES-006** rewrites the pair Abel statistic as a resolvent trace of the
+positive adjoint Laplacian. Replacing its hyperbolic parameter by the original
+$s$ has uniform error at most $2\cosh(2s/N)/(3N)$. This gives an equivalent
+scalar-resolvent target for each fixed $s$, but no estimate for the frozen
+model.
+
+**BGS-RES-007** strengthens the comparison between the original and
+seven-cut **full** propagators: on each compact $s$ interval, all fixed
+derivatives of their Abel statistics differ by $O(\tau/\log N)$ and of
+their scalar adjoint resolvents by $O(\tau/\log N+1/N)$. The
+[`BGS-TRACE-008` construction](mathematics/two_clock_gram_falsifier.md)
+shows that even the necessary Gram $4/3$ limit, simple phases, weak
+Haar convergence, bounded microscopic unit occupancy, and nonzero
+traces of every positive power together need not give the pair
+CUE law. Its spectra are abstract and do not arise from the maintained
+map. The [three-route research cycle](record/bgs_program_20260925.md)
+records the exact remaining signed-trace obstruction.
+
+**BGS-TRACE-007** proves $L_N(s)\ge(e^{2s}-1)^{-1}$ for every finite
+unitary spectrum, with equality for a regular $N$-gon. The bound follows from
+the [Cohn–Kumar sharp-configuration theorem](https://arxiv.org/abs/math/0607446v2)
+for completely monotone chordal potentials. The CUE benchmark lies strictly
+above the floor, so the inequality alone does not imply BGS.
+
+The exact depolarizing-noise identity shifts the unknown Abel parameter from
+$s$ to $s+N\eta/2$ and adds a remainder bounded by $(2Ns)^{-1}$. The
+[spectral-flow and control note](mathematics/frozen_spectral_flow_controls.md)
+also records the local eigenphase acceleration formula, the ordered product
+for iterated kicks, and a Legendre-character control family that keeps an
+exact clock spectrum. It corrects the single-exponential collapse already
+retracted in the permanent correction record. None of these results estimates
+the Heisenberg-scale traces of the maintained propagator.
 
 ---
 

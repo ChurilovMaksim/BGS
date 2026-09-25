@@ -1,5 +1,48 @@
 # Claim ledger
 
+## 25 September 2026 — smooth full-propagator transfer and a Gram falsifier
+
+The [new research cycle](bgs_program_20260925.md) pursued three routes to
+the fixed-map trace frontier. Two scoped claims were proved internally;
+the direct Heisenberg/mixed-loop route remains open.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| `BGS-RES-007`: the original and seven-cut **full** propagators have pair Abel differences $O_{K,r}(\tau/\log N)$ and scalar adjoint-resolvent differences $O_{K,r}(\tau/\log N+1/N)$, with all fixed $s$ derivatives on compact $K\subset(0,\infty)$ | **PROJECT DERIVATION FROM `BGS-FM-007` + `BGS-RES-006`; AUTHOR SELF-REVIEW** | [proof](../mathematics/fixed_map_resolvent_frontier.md). Equivalence of possible smooth scalar-resolvent limits; does not evaluate either limit or any mixed-resolvent hierarchy. |
+| `BGS-TRACE-008`: simple odd spectra with weak Haar empirical limit, unit-interval occupancy $\le3$, all positive power traces nonzero and $N^{-1}\operatorname{Tr}\Gamma_N^2\to4/3$, yet with an explicit non-CUE pair Abel limit | **EXACT ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW** | [proof](../mathematics/two_clock_gram_falsifier.md). Abstract unitary spectra only. The even companion matches the exact finite-$N$ CUE expectation of that Gram moment. No claim about realizing it as the frozen map. |
+| `BGS-TRACE-005`, `BGS-BGS-001` | **OPEN** | The actual signed joint traces at times $m\asymp N$ and all-order local statistics are not established. |
+
+## 25 September 2026 — exact pair-resolvent bridge and universal Abel floor
+
+The [adjoint-resolvent reduction](../mathematics/fixed_map_resolvent_frontier.md)
+adds two finite-dimensional results. Neither estimates the actual frozen
+traces at Heisenberg times.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| `BGS-RES-006`: the pair Abel statistic is exactly represented by the resolvent trace of the positive adjoint Laplacian; replacing its hyperbolic argument by $s$ incurs the explicit uniform $O_s(N^{-1})$ bound | **EXACT FINITE-N IDENTITY + PROJECT DERIVATION** | Any $N\times N$ unitary. Equates the pair Abel limit with a scalar resolvent limit; no model-specific convergence or higher joint traces follow. |
+| `BGS-TRACE-007`: $L_N(s)\ge(e^{2s}-1)^{-1}$, sharply attained by the regular $N$-gon | **EXACT + CHECKED COHN–KUMAR THEOREM 1.2** | Every finite unitary spectrum, $s>0$. The lower floor is strictly below the CUE benchmark and gives no uniform excess for the frozen family. |
+
+The [spectral-flow audit](../mathematics/frozen_spectral_flow_controls.md)
+records the exact eigenphase equations, the ordered product formula for
+iterated kicks, and an exact isospectral clock control example. It also
+corrects the proposed single-exponential collapse: for odd $7\nmid N$ it
+is false already at $m=2$, using `BGS-FM-008` and the already checked
+exponential-independence input `EXT-POPESCU-2023`. These identities do not
+change the open status of `BGS-TRACE-005` or `BGS-BGS-001`.
+
+The exact depolarizing identity in the same frontier section shifts the
+noise-regularized pair statistic from $s$ to $s+N\eta/2$ and adds a
+nonnegative remainder at most $(2Ns)^{-1}$; it does not close the fixed-$s$
+trace limit.
+
+Two compressed claims in adjacent conversation summaries were not promoted:
+the proposed $c_{53}$ huge-dimension estimate lacks its recurrence,
+trace lower-bound derivation and reproducible pair-test definition in the
+audited handoff; the quoted commutator-limit constant lacks its complete
+Fourier set, coefficient data and summation proof. No result is inferred
+from those summaries.
+
 ## 24 September 2026 — audited two further fixed-map continuations
 
 Only `REPORT_RU(1).md` and `NEW_RESULTS_RU(1).md` were provided

@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -548,6 +548,43 @@
       "boundary": "All positive lags and all linear-map translates; stable for arbitrary M1 perturbations of radius 1/100. Does not cover nonlinear transport, quantum Heisenberg traces, or BGS."
     },
     {
+      "id": "BGS-RES-006",
+      "title": "Exact adjoint-resolvent representation and pair-Abel equivalence",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N IDENTITY + PROJECT DERIVATION",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/gram_resolvent_normalization.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
+    },
+    {
+      "id": "BGS-RES-007",
+      "title": "Smooth scalar-resolvent transfer between the original and seven-cut full propagators",
+      "state": "proved",
+      "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR SELF-REVIEW",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-FM-007",
+        "BGS-RES-006"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "C-infinity local equivalence of scalar resolvents for the two full propagators; does not establish the value or existence of either limit, or a mixed hierarchy."
+    },
+    {
       "id": "BGS-RET-001",
       "title": "Harmonic return law for the actual kicked Pell propagator",
       "state": "proved",
@@ -692,6 +729,42 @@
       "formalization": [],
       "manuscript": [],
       "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted."
+    },
+    {
+      "id": "BGS-TRACE-007",
+      "title": "Universal sharp Abel lower bound attained by the clock spectrum",
+      "state": "proved",
+      "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-CK-2006"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved."
+    },
+    {
+      "id": "BGS-TRACE-008",
+      "title": "Two-clock falsifier for sufficiency of the CUE Gram second moment",
+      "state": "proved",
+      "ledger_status": "EXACT ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/two_clock_gram_falsifier.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/gram_resolvent_normalization.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Abstract simple odd unitary spectra, weakly Haar with unit-interval occupancy at most three, all power traces nonzero, and Gram second moment tending to 4/3, yet pair Abel limit differs from CUE. Not the maintained frozen propagator."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,22 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [current three-route cycle](record/bgs_program_20260925.md)
+strengthens the seven-cut scalar-resolvent comparison in all positive-$s$
+derivatives (`BGS-RES-007`) and supplies an odd-dimensional two-clock
+falsifier to the sufficiency of the Gram $4/3$ milestone even with simple
+phases and all positive power traces nonzero (`BGS-TRACE-008`). The
+counterexample is an abstract spectrum, not the actual quantum map.
+The signed mixed Heisenberg-scale cancellation remains open.
+
+The 25 September update adds an exact
+[adjoint-resolvent representation](mathematics/fixed_map_resolvent_frontier.md)
+of the pair Abel target (`BGS-RES-006`) and the universal regular-polygon floor
+(`BGS-TRACE-007`). The [spectral-flow audit](mathematics/frozen_spectral_flow_controls.md)
+records exact phase velocities, the ordered product of conjugated kicks, an
+isospectral clock control, and why an unordered single exponential is false
+for odd `7 not dividing N`. These results do not control the frozen traces at
+Heisenberg times; `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+
 The [follow-up audit](record/two_continuations_review_20260924.md)
 retains two additional scoped claims. An
 [exact arithmetic return theorem](mathematics/frozen_arithmetic_trace_rigidity.md)

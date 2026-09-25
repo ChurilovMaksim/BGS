@@ -15,6 +15,10 @@ The maintained computational surface is deliberately compact and independently c
 independently assembles the physical symbol and checks the exact rational
 Fourier variance for `BGS-FM-006`; its finite arithmetic does not prove
 the pressure theorem.
+[`gram_resolvent_normalization.py`](verification/gram_resolvent_normalization.py)
+cross-checks finite Toeplitz Gram norms, two-clock Abel sums, the pair
+Poisson kernel and adjoint resolvent for `BGS-TRACE-008`/`BGS-RES-006`.
+It verifies normalizations, not a limiting spectral theorem.
 `verification/scientific_registry_audit.py` checks the machine-readable claim,
 dependency, paper, evidence, environment, and topic contracts before expensive
 science runs. `maintenance/render_claim_registry.py --check` prevents the

@@ -25,6 +25,12 @@ The dated review [`nonlinear_pressure_review_20260923.md`](nonlinear_pressure_re
 audits the classical pressure claim `BGS-FM-006` and its exact arithmetic;
 the missing Heisenberg-time estimate retains its OPEN status.
 
+The [25 September fixed-map research cycle](bgs_program_20260925.md)
+records the exact target contract, three independent routes, the smooth
+seven-cut resolvent transfer (`BGS-RES-007`), the abstract two-clock
+Gram falsifier (`BGS-TRACE-008`), and the unresolved order-$N$ signed
+joint-trace requirement.
+
 [`submitted_article_review_20260924.md`](submitted_article_review_20260924.md)
 audits the uploaded 87-page fixed-cat-map manuscript and identifies the
 maintained scope of `BGS-FM-007`–`009`; the individual review files document

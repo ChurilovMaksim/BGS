@@ -23,6 +23,22 @@ resonance, and information-theory frontiers are valuable independent
 programmes and possible sources of techniques, but they are not silently
 treated as prerequisites for `BGS-BGS-001`.
 
+The pair part of this frontier now has an exact adjoint-resolvent form
+(`BGS-RES-006`) and a universal regular-polygon lower floor
+(`BGS-TRACE-007`). These sharpen the finite-dimensional description but do
+not estimate the model's resolvent or its Heisenberg-scale joint traces. The
+closure condition of `BGS-TRACE-005` is unchanged.
+
+The [smooth seven-cut transfer](fixed_map_resolvent_frontier.md)
+(`BGS-RES-007`) identifies all compact positive-$s$ scalar-resolvent
+limits and their derivatives between the original and cut **full**
+propagators, without supplying a value for either. The
+[`BGS-TRACE-008` two-clock example](two_clock_gram_falsifier.md)
+shows that the $4/3$ Gram milestone, even alongside simple phases and
+nonzero traces of every positive power, is insufficient as a universal
+criterion for CUE pairs. The milestone is still necessary and open for
+the actual frozen model.
+
 The 23 September exact kick-rank result `BGS-FM-005` does not estimate joint
 traces at Heisenberg times. The all-lag classical gap `BGS-RES-005` uses
 linear transport of one physical symbol. The subsequent

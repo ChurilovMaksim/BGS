@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "dependencies": [
     {
       "id": "EXT-BH-2026",
@@ -17,6 +17,24 @@
       "project_sources": [
         "mathematics/fixed_map_resolvent_frontier.md",
         "record/claim_ledger.md"
+      ]
+    },
+    {
+      "id": "EXT-CK-2006",
+      "authors": [
+        "Henry Cohn",
+        "Abhinav Kumar"
+      ],
+      "title": "Universally optimal distribution of points on spheres",
+      "identifier": "arXiv:math/0607446v2",
+      "pinned_version": "v2 (19 October 2006); JAMS 20 (2007), 99-148",
+      "locator": "Theorem 1.2",
+      "checked_on": "2026-09-25",
+      "mapping": "For N>=2 the regular N-gon on S^1 is a sharp configuration (N=1 is immediate). Theorem 1.2 minimizes pair energy for completely monotone functions of squared chord distance; the project potential f_q(r)=(1-q^2)/((1-q)^2+qr) meets this hypothesis. Continuity extends the inequality to spectral multisets with repeated phases.",
+      "project_sources": [
+        "mathematics/fixed_map_resolvent_frontier.md",
+        "record/claim_ledger.md",
+        "literature/bibliography.md"
       ]
     },
     {

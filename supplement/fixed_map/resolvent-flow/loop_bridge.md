@@ -114,7 +114,7 @@ and partitioning R into periods gives, for all sufficiently large N,
 
 \[
 \mathbb E\xi_N^{[k]}(F)=\frac1N
- \sum_{j_1,\ldots,j_k\ {m distinct}}
+ \sum_{j_1,\ldots,j_k\ \mathrm{distinct}}
  \sum_{\ell\in\mathbb Z^{k-1}}
  \phi(y_{j_1}-y_{j_k}+N\ell_1,\ldots,
       y_{j_{k-1}}-y_{j_k}+N\ell_{k-1}).

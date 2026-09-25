@@ -25,6 +25,17 @@ archive snapshot.
 16. **A complete explicit cyclotomic exceptional-set theorem for arbitrary growing prime `K`.** Complete current resultant enumerations are only for `K=11,13`; `(461,23)` warns against extrapolation.
 17. **Finite GOE resemblance as proof of a limiting BGS law.** Numerical evidence does not supply the microscopic bridge.
 18. **Reconstruction-era entrywise-real spectral projection.** A temporary diagnostic formed the correct complex Hermitian matrix `H=M+M^*` and then diagonalized `H.real`. Hermitian matrices need not be entrywise real; the projection changed finite spectra. Current code diagonalizes the full complex Hermitian matrix, contains a regression guard, and the promoted numerical JSON files were regenerated. No exact pair-key, Cayley, Lean or theorem-level result depended on those floating-point records.
+19. **Collapsing iterated frozen kicks to one exponential.** The expression
+    `U_N^m=exp(i tau N sum_{ell<m} M_N^ell A_N M_N^{-ell}) M_N^m`
+    is false for odd `7 not dividing N`, already at `m=2` and the maintained
+    nonzero algebraic coupling. The exact identity is the ordered product of
+    the conjugated exponentials. `BGS-FM-008` implies
+    `[A_N,M_N A_N M_N^{-1}] != 0`; `EXT-POPESCU-2023` rules out accidental
+    equality at `tau N` from a zero of the corresponding algebraic
+    exponential polynomial. The scalar-generator case `N=7` is exceptional;
+    this argument does not classify dimensions divisible by 7 and greater
+    than 7. See
+    [`frozen_spectral_flow_controls.md`](../mathematics/frozen_spectral_flow_controls.md).
 
 ## Editorial and implementation corrections
 

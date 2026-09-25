@@ -32,6 +32,21 @@ separately proves the needed discriminant is a nonzero
 integer-polynomial specialization with the stated height bounds;
 Roy's theorem alone does not give microscopic statistics.
 
+## Universal energy floor for pair Abel sums
+
+Henry Cohn and Abhinav Kumar,
+[*Universally optimal distribution of points on spheres*, arXiv:math/0607446v2,
+Theorem 1.2](https://arxiv.org/abs/math/0607446v2), *Journal of the American
+Mathematical Society* 20 (2007), 99--148. The theorem says sharp spherical
+configurations minimize energy for completely monotone functions of squared
+chord distance; on $S^1$ this includes every regular $N$-gon. The application
+in [`BGS-TRACE-007`](../mathematics/fixed_map_resolvent_frontier.md) uses
+$f_q(r)=(1-q^2)/((1-q)^2+qr)$ and the Poisson expansion. It proves a sharp
+universal lower floor for the pair Abel sum, not the CUE limit for the frozen
+map. The primary arXiv version and Theorem 1.2 were checked on 25 September
+2026; the exact dependency and notation mapping are pinned in
+[`external_dependencies.json`](external_dependencies.json).
+
 ## Thermodynamic formalism for the nonlinear frozen map
 
 The classical bracket-pressure application in

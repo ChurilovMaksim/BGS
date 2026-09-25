@@ -1,12 +1,13 @@
 {
   "schema": "bgs-mathematics-topics-v1",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "policy": "Stable proof-file paths are preserved; topic directories are canonical navigational views rather than duplicate proof sources.",
   "topics": {
     "fixed-map": [
       "mathematics/balanced_phase_controllability.md",
       "mathematics/fixed_map_moment_control_and_transfer.md",
       "mathematics/fixed_map_resolvent_frontier.md",
+      "mathematics/frozen_spectral_flow_controls.md",
       "mathematics/fixed_model_pell_crossover.md",
       "mathematics/fixed_model_symmetry_theorem.md",
       "mathematics/frozen_algebraic_spectral_simplicity.md",
@@ -23,7 +24,8 @@
       "mathematics/clustered_abel_window_boundary.md",
       "mathematics/compensated_heisenberg_trace_control.md",
       "mathematics/heisenberg_time_insertion.md",
-      "mathematics/trace_to_local_statistics_bridge.md"
+      "mathematics/trace_to_local_statistics_bridge.md",
+      "mathematics/two_clock_gram_falsifier.md"
     ],
     "cayley-arithmetic": [
       "mathematics/cayley_additive_energy.md",
