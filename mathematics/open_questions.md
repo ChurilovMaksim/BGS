@@ -71,6 +71,18 @@ sum. The [effective gap floor](frozen_effective_gap_floor.md)
 it gives no local occupation control. Neither result changes the
 closure condition of `BGS-TRACE-005`.
 
+The [singular Haar-CUE benchmark](cue_singular_energy.md)
+(BGS-CUE-001) identifies the reference law when the
+adjoint inverse-gap regularization is removed, but
+weak local process limits alone do not control this
+singular boundary. The [coboundary spectral-flow bound](coboundary_spectral_flow_bound.md)
+(BGS-FLOW-001) would transfer weak local limits under
+specified Birkhoff and commutator estimates, neither
+of which is available for the maintained fixed family.
+Its associated sine-curvature calculation (BGS-FLOW-002)
+blocks a proposed Gaussian-coboundary Dyson-noise shortcut.
+None changes the exact closure condition above.
+
 ## A. Improve pointwise Cayley energy to the centered quadratic scale
 
 The off/off elliptic correlation layer is no longer an independent open problem: after extraction of the coherent reducible fibre, `offoff_elliptic_spike_theorem.md` proves

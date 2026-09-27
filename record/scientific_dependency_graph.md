@@ -19,6 +19,9 @@ graph TD
   T6[BGS-TRACE-006 clustered Abel and time-window boundary]
   T7[BGS-TRACE-007 universal clock Abel floor]
   T8[BGS-TRACE-008 two-clock Gram falsifier]
+  CUE1[BGS-CUE-001 Haar singular-energy reference]
+  FLOW1[BGS-FLOW-001 finite coboundary phase bound]
+  FLOW2[BGS-FLOW-002 no coboundary Dyson diffusion]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
   F1 --> F7[BGS-FM-007 seven-cut transfer]
@@ -53,6 +56,8 @@ graph TD
   I[BGS-INFO-001 vanishing-noise tomography OPEN]
 ```
 
+The new Haar-CUE and finite coboundary nodes are auxiliary controls,
+with no asserted implication to the fixed-map target.
 The graph is intentionally sparse. An edge means “maintained scientific
 prerequisite in the registered programme architecture”, not “every lemma
 cited by the downstream proof”.

@@ -347,6 +347,14 @@ The deterministic spectral reduction is one of the most mature layers of the pro
 | **BGS-RES-006** | **proved** | exact adjoint-resolvent representation of the pair target |
 | **BGS-RES-007** | **proved in stated scope** | compact positive-$s$ smooth scalar-resolvent transfer between the original and seven-cut full propagators |
 
+The newer [Haar-CUE singular-energy benchmark](mathematics/cue_singular_energy.md)
+(BGS-CUE-001) derives a stable inverse-gap energy law from the published
+small-gap Poisson theorem and an explicit tail bound. The
+[coboundary spectral-flow note](mathematics/coboundary_spectral_flow_bound.md)
+(BGS-FLOW-001/002) proves a finite phase-motion estimate and excludes
+the proposed infinitesimal Dyson-noise shortcut. Neither supplies
+the missing Heisenberg trace estimate for the fixed map.
+
 For higher correlations, partition-lattice Möbius inversion produces constrained products
 
 ```math

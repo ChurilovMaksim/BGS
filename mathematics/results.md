@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Singular CUE benchmark and coboundary spectral flow, 25 September 2026
+
+[BGS-CUE-001](cue_singular_energy.md) deduces a stable law for the
+centered inverse-chord energy of **Haar CUE**, $3/2<p<3$, from the
+checked Ben Arous--Bourgade small-gap theorem and an explicit
+determinantal tail-variance estimate. For $p=2$ the exact
+normalized mean is $(1-N^{-2})/6$, its variance is infinite,
+and $N^{1/3}$ centered fluctuations have a $3/2$-stable limit.
+It also shows that weak local point-process convergence alone
+cannot justify an unregularized inverse-gap limit.
+
+[BGS-FLOW-001 and BGS-FLOW-002](coboundary_spectral_flow_bound.md)
+give a quantitative finite-matrix coboundary spectral-flow bound,
+an abstract sequence attaining its leading constant, and the
+infinitesimal sine-drift obstruction to producing Dyson diffusion
+with a Gaussian coboundary. The previously maintained
+three-exponential second-order normal form is credited as prior
+project work. [Audit and checks](../record/research_pass_cue_flow_20260925.md).
+No deterministic Heisenberg trace bound or full BGS claim is implied.
+
 ## Seven-cut smooth transfer and two-clock Gram falsifier, 25 September 2026
 
 [`BGS-RES-007`](fixed_map_resolvent_frontier.md) upgrades the seven-cut

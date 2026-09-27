@@ -3,6 +3,24 @@
   "updated": "2026-09-25",
   "dependencies": [
     {
+      "id": "EXT-BAB-2013",
+      "authors": [
+        "Gérard Ben Arous",
+        "Paul Bourgade"
+      ],
+      "title": "Extreme gaps between eigenvalues of random matrices",
+      "identifier": "DOI:10.1214/11-AOP710; arXiv:1010.1294",
+      "pinned_version": "Annals of Probability 41 (2013), 2648–2681; author-hosted published PDF",
+      "locator": "Theorem 1.1, printed pp. 2650–2651",
+      "checked_on": "2026-09-25",
+      "mapping": "For Haar CUE(N), consecutive circular eigenangle gaps scaled by N^(4/3), with angular location in an interior arc, converge to a marked Poisson process. Integrating over angle gives gap intensity u^2 du/(24 pi). Seam and all-pair singular-tail reductions are proved separately in the project; no theorem about the fixed deterministic map is supplied by this source.",
+      "project_sources": [
+        "mathematics/cue_singular_energy.md",
+        "literature/cue_singular_energy_sources.md",
+        "record/claim_ledger.md"
+      ]
+    },
+    {
       "id": "EXT-BH-2026",
       "authors": [
         "Paul Bourgade",

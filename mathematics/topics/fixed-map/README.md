@@ -3,6 +3,7 @@
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
 
 - [balanced_phase_controllability](../../balanced_phase_controllability.md)
+- [coboundary_spectral_flow_bound](../../coboundary_spectral_flow_bound.md)
 - [fixed_map_moment_control_and_transfer](../../fixed_map_moment_control_and_transfer.md)
 - [fixed_map_resolvent_frontier](../../fixed_map_resolvent_frontier.md)
 - [frozen_spectral_flow_controls](../../frozen_spectral_flow_controls.md) — exact phase flow, ordered kick powers, and an isospectral clock control.

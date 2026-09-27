@@ -1,5 +1,16 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The latest [CUE reference and spectral-flow audit](record/research_pass_cue_flow_20260925.md)
+adds a stable-law theorem for a singular Haar-CUE pair energy and
+a sharp finite coboundary-flow estimate. The former depends on the
+published small-gap Poisson theorem and a separate determinantal
+tail bound; the latter needs unproved quantitative hypotheses
+to apply to the fixed map. A Gaussian coboundary produces a
+first-order sine drift at second order in time, rather than
+Dyson radial diffusion. These results sharpen the limits of two
+proposed routes. The actual Heisenberg-time signed trace comparison
+and the fixed-strength BGS limit remain open.
+
 The [current three-route cycle](record/bgs_program_20260925.md)
 strengthens the seven-cut scalar-resolvent comparison in all positive-$s$
 derivatives (`BGS-RES-007`) and supplies an odd-dimensional two-clock

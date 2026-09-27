@@ -14,7 +14,9 @@
       "RET",
       "RES",
       "FORMAL",
-      "INFO"
+      "INFO",
+      "CUE",
+      "FLOW"
     ]
   },
   "claims": [
@@ -765,6 +767,62 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Abstract simple odd unitary spectra, weakly Haar with unit-interval occupancy at most three, all power traces nonzero, and Gram second moment tending to 4/3, yet pair Abel limit differs from CUE. Not the maintained frozen propagator."
+    },
+    {
+      "id": "BGS-CUE-001",
+      "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
+      "source": "mathematics/cue_singular_energy.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-BAB-2013"
+      ],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/cue_singular_energy.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Haar U(N) only: stable limit for inverse chord powers 3/2<p<3 and exact p=2 mean. Weak local limits do not control unregularized pair energy. No transfer to the maintained deterministic map, and novelty/priority is unestablished."
+    },
+    {
+      "id": "BGS-FLOW-001",
+      "title": "Uniform finite coboundary eigenphase-flow bound and sharpness sequence",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR SELF-REVIEW",
+      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/coboundary_flow.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Any finite unitary U and Hermitian G; optimal leading coefficient on an abstract clock sequence. Small-displacement limit requires unproved quantitative Birkhoff and nested-commutator hypotheses for the maintained map. Second-order normal form is earlier project work."
+    },
+    {
+      "id": "BGS-FLOW-002",
+      "title": "Coboundary kicks have sine curvature but no infinitesimal Dyson diffusion",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR SELF-REVIEW",
+      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/coboundary_flow.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Simple-spectrum phase curvature and infinitesimal Gaussian covariance only; excludes the proposed coboundary noise mechanism, not every perturbation scheme or CUE for the fixed map."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

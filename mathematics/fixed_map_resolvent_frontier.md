@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-BGS-001`
 
 **Status, 25 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -468,6 +468,42 @@ $o(N)$ and microscopic RMS preservation cannot both justify the proposed
 comparison. This does not exclude local entropy methods or universality.
 The [full proof](../supplement/fixed_map/resolvent-flow/entropy_obstruction.md)
 includes the torus-volume and labeling factors.
+
+## The singular reference boundary and a coboundary control
+
+The [Haar-CUE reference proof](cue_singular_energy.md) (BGS-CUE-001)
+evaluates an unregularized object beyond the fixed-positive-$s$
+pair Abel statistic: if $F_{N,2}=\sum_{j\ne k}
+|e^{i\theta_j}-e^{i\theta_k}|^{-2}$, then
+$\mathbb EF_{N,2}=N(N^2-1)/6$ while its variance
+is infinite. Centered $N^{-8/3}F_{N,2}$ has a
+spectrally positive $3/2$-stable law, derived from the
+published Haar-CUE small-gap Poisson limit and a
+project determinantal tail bound. The same proof covers
+inverse chord powers $3/2<p<3$.
+Moving one eigenphase by $O(N^{-1})$ can preserve
+weak local process limits while making the normalized
+unregularized inverse-gap energy diverge. Therefore
+neither a weak local limit nor the exact positive-$s$
+adjoint-resolvent identity permits taking the singular
+boundary without an additional gap/uniform-integrability
+estimate. None has been established for the maintained
+fixed propagator.
+
+The [finite coboundary spectral-flow theorem](coboundary_spectral_flow_bound.md)
+(BGS-FLOW-001) controls RMS unfolded phase motion by an
+adjoint Birkhoff average of $H=iN[G,UGU^*]$, with
+explicit higher-order commutator errors and a sharp
+abstract clock example. Its needed logarithmic-time
+average and nested-commutator bounds remain unproved
+for the frozen family. The related infinitesimal
+calculation (BGS-FLOW-002) shows that Gaussian
+coboundary kicks produce a sine drift and no radial
+Dyson diffusion. The second-order three-exponential
+normal form itself was previously proved in
+[the Pell coboundary note](pell_coboundary_resonance.md).
+These observations leave the mixed Heisenberg-time
+trace obligation unchanged.
 
 ## Verification and remaining work
 

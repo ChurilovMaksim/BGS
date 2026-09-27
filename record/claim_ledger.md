@@ -1,5 +1,21 @@
 # Claim ledger
 
+## 25 September 2026 — CUE singular energy and coboundary flow
+
+The [CUE energy proof](../mathematics/cue_singular_energy.md) and
+[coboundary flow proof](../mathematics/coboundary_spectral_flow_bound.md)
+are auxiliary reference/obstruction results. The
+[self-audit](research_pass_cue_flow_20260925.md) records exact
+dependencies, finite checks, and the corrections to the initial
+research note. They do not change the open fixed-map frontier.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| BGS-CUE-001: for Haar CUE, inverse chord energy has a stable $3/p$ law for $3/2<p<3$; at $p=2$, its mean is exactly $(1-N^{-2})/6$ and its variance is infinite | **PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW** | The published small-gap Poisson theorem supplies the external input; a determinantal variance bound controls the omitted pairs. [Source check](../literature/cue_singular_energy_sources.md). No fixed-map local law or world-priority claim. |
+| BGS-FLOW-001: a uniform finite bound for RMS unfolded eigenphase motion under $e^{it(G-UGU^*)}U$, sharp leading constant on an abstract clock sequence | **EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR SELF-REVIEW** | Requires an unproved long-time adjoint Birkhoff estimate and nested-commutator control to imply any local transfer for the maintained map. The three-exponential second-order lemma was already in the Pell note. |
+| BGS-FLOW-002: coboundary phase curvature is a regular sine drift; a Gaussian coboundary has no infinitesimal radial Dyson diffusion | **EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR SELF-REVIEW** | An infinitesimal objection to a specified noise route, not a no-go theorem for general noise or a fixed-map spectral law. |
+| BGS-TRACE-005, BGS-BGS-001 | **OPEN** | Neither the pair Abel limit nor the signed joint Heisenberg-time trace estimates of the specified fixed propagator follow from these auxiliary claims. |
+
 ## 25 September 2026 — smooth full-propagator transfer and a Gram falsifier
 
 The [new research cycle](bgs_program_20260925.md) pursued three routes to

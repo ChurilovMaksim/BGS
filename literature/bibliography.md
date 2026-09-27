@@ -47,6 +47,21 @@ map. The primary arXiv version and Theorem 1.2 were checked on 25 September
 2026; the exact dependency and notation mapping are pinned in
 [`external_dependencies.json`](external_dependencies.json).
 
+## Small CUE gaps and singular reference statistics
+
+The singular reference energy studied in
+[BGS-CUE-001](../mathematics/cue_singular_energy.md)
+uses G. Ben Arous and P. Bourgade,
+[*Extreme gaps between eigenvalues of random matrices*,
+Theorem 1.1](https://math.nyu.edu/~bourgade/papers/ExtremeGaps.pdf),
+*Annals of Probability* **41** (2013), 2648--2681,
+DOI:10.1214/11-AOP710. This supplies a Poisson limit for
+**Haar CUE** gaps of size \(N^{-4/3}\), not a singular-energy
+sum or fixed deterministic-map limit. The exact normalization,
+seam restriction, comparison with smooth pair-statistics work,
+and priority limitation are in
+[the source check](cue_singular_energy_sources.md).
+
 ## Thermodynamic formalism for the nonlinear frozen map
 
 The classical bracket-pressure application in
