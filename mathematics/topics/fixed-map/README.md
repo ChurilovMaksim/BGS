@@ -9,6 +9,7 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [frozen_spectral_flow_controls](../../frozen_spectral_flow_controls.md) — exact phase flow, ordered kick powers, and an isospectral clock control.
 - [frozen_algebraic_spectral_simplicity](../../frozen_algebraic_spectral_simplicity.md)
 - [frozen_arithmetic_trace_rigidity](../../frozen_arithmetic_trace_rigidity.md)
+- [frozen_periodic_point_annihilator](../../frozen_periodic_point_annihilator.md) — exact all-time grids and physical-symbol averages.
 - [frozen_common_antireversor_certificate](../../frozen_common_antireversor_certificate.md)
 - [frozen_effective_gap_floor](../../frozen_effective_gap_floor.md)
 - [frozen_kick_rank_boundary](../../frozen_kick_rank_boundary.md)

@@ -6,8 +6,13 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 25 September 2026.**
+> **Scientific status — 27 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [27 September upload audit](record/cue_upload_review_20260927.md) adds
+an exact all-time periodic-point averaging result and corrects the submitted
+symbol, bispectrum, phase and cutoff checks. Its proposed full CUE proof
+remains incomplete; pair-only estimates do not supply all-order correlations.
 
 The **Bohigas–Giannoni–Schmit (BGS) conjecture** asks whether deterministic quantum systems with chaotic classical dynamics exhibit universal **local spectral statistics** described by random matrix theory after the correct symmetry reduction and unfolding.
 

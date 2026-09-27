@@ -1,5 +1,22 @@
 # Claim ledger
 
+## 27 September 2026 — audit of the independent CUE upload
+
+The [upload review](cue_upload_review_20260927.md) finds the proposed
+all-order CUE proof **INCOMPLETE**. Its pair-only TG-mean hypothesis does
+not supply higher joint traces. The review corrects the ordinary symbol,
+bispectrum sign/distinct-index convention, Gauss-phase diagnostic, and
+Abel cutoff accuracy. The submitted suite reproduced 52 PASS, but missed
+these failures; new adversarial checks and source hashes are preserved.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| BGS-FM-012: rectangular periodic-point annihilator for every positive time, and exact averages of the physical frozen symbol | **ELEMENTARY PROJECT PROOF + EXACT FINITE REGRESSION** | Linear cat $S$ only; mean values $-1/10,-1/20,0$ at times $1,2,\ge3$. No nonlinear orbit weight, Heisenberg trace cancellation or BGS limit. |
+
+The proof is [frozen_periodic_point_annihilator.md](../mathematics/frozen_periodic_point_annihilator.md).
+Existing Pell arithmetic and Fourier bridges are credited as prior project
+work. BGS-TRACE-005 and BGS-BGS-001 remain **OPEN**.
+
 ## 25 September 2026 — CUE singular energy and coboundary flow
 
 The [CUE energy proof](../mathematics/cue_singular_energy.md) and

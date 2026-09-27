@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "arithmetic": "exact integers/fractions; complex128 diagnostics",
+  "lattice": {
+    "times": [
+      1,
+      100
+    ],
+    "membership_box": 9,
+    "brute_enumerated_times": [
+      1,
+      2,
+      3
+    ],
+    "first_grids": [
+      {
+        "m": 1,
+        "grid": [
+          2,
+          2
+        ],
+        "points": 4
+      },
+      {
+        "m": 2,
+        "grid": [
+          4,
+          8
+        ],
+        "points": 32
+      },
+      {
+        "m": 3,
+        "grid": [
+          14,
+          14
+        ],
+        "points": 196
+      },
+      {
+        "m": 4,
+        "grid": [
+          24,
+          48
+        ],
+        "points": 1152
+      },
+      {
+        "m": 5,
+        "grid": [
+          82,
+          82
+        ],
+        "points": 6724
+      },
+      {
+        "m": 6,
+        "grid": [
+          140,
+          280
+        ],
+        "points": 39200
+      }
+    ]
+  },
+  "conventions": {
+    "wrong_symbol_HS_squared_over_N": [
+      [
+        19,
+        0.00019999999999999974
+      ],
+      [
+        31,
+        0.00020000000000000015
+      ],
+      [
+        101,
+        0.00020000000000000012
+      ]
+    ],
+    "phase_rows": [
+      {
+        "N": 1001,
+        "raw_error": 0.15425666563115834,
+        "phase_normalized_error": 0.15425666563115878
+      },
+      {
+        "N": 1003,
+        "raw_error": 1.65984488269466,
+        "phase_normalized_error": 0.15393825021337548
+      },
+      {
+        "N": 1005,
+        "raw_error": 2.193540844832744,
+        "phase_normalized_error": 0.15364395990199842
+      },
+      {
+        "N": 1007,
+        "raw_error": 1.4426176802270054,
+        "phase_normalized_error": 0.15332806373234292
+      },
+      {
+        "N": 8001,
+        "raw_error": 0.019318155420087878,
+        "phase_normalized_error": 0.019318155420088124
+      },
+      {
+        "N": 8003,
+        "raw_error": 1.569215560253492,
+        "phase_normalized_error": 0.019313147361807725
+      },
+      {
+        "N": 8005,
+        "raw_error": 2.19990226206012,
+        "phase_normalized_error": 0.019308502645468215
+      },
+      {
+        "N": 8007,
+        "raw_error": 1.5419095597990657,
+        "phase_normalized_error": 0.01930349959000749
+      }
+    ]
+  },
+  "homometry": {
+    "phase_numerators_X": [
+      0,
+      1,
+      4,
+      10,
+      11,
+      14,
+      22,
+      23,
+      26
+    ],
+    "phase_numerators_Y": [
+      0,
+      1,
+      4,
+      12,
+      13,
+      16,
+      22,
+      23,
+      26
+    ],
+    "denominator": 101,
+    "distinct_triple_offsets": [
+      6,
+      18
+    ],
+    "counts": [
+      1,
+      0
+    ]
+  },
+  "bispectrum": {
+    "N": 3,
+    "theta": [
+      0.0,
+      0.1,
+      0.35
+    ],
+    "sigma": 0.08,
+    "nmax": 80,
+    "offsets": [
+      0.3,
+      1.05
+    ],
+    "real_space": 8.296652747923952,
+    "submitted_sign": 0.0073339116844428065,
+    "corrected_sign": 8.296652747923948,
+    "distinct_index_modes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        -1
+      ]
+    ]
+  },
+  "taylor": {
+    "finite_cases": 6,
+    "lambda": 0.02,
+    "orders": [
+      1,
+      2
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "source_sha256": "74127c3c852d848942fcedac13afb5ac0713f812a910e132d7fa68c2e7710292",
+  "nonclaim": "Finite regression; no BGS, high-time remainder or novelty certification.",
+  "proxy": {
+    "N": 1001,
+    "tau_eff": 0.05,
+    "cutoff": 8008,
+    "rows": [
+      {
+        "s": 0.5,
+        "truncated": 0.633090539674313,
+        "infinite_poisson": 0.633423004725076,
+        "tail": 0.0003324650507630089,
+        "universal_tail_bound": 0.3356303871437546
+      },
+      {
+        "s": 1.0,
+        "truncated": 0.2159744324655513,
+        "infinite_poisson": 0.2159744882123079,
+        "tail": 5.574675659980599e-08,
+        "universal_tail_bound": 5.6267606096753734e-05
+      },
+      {
+        "s": 2.0,
+        "truncated": 0.0604423551205526,
+        "infinite_poisson": 0.06044235512055651,
+        "tail": 3.913536161803677e-15,
+        "universal_tail_bound": 3.1628795630565032e-12
+      }
+    ],
+    "nonclaim": "Proxy coupling, not the prescribed tau=1e-80 limit."
+  }
+}

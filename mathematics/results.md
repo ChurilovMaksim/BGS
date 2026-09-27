@@ -1,5 +1,19 @@
 # Current results and exact scope
 
+## All-time periodic-point arithmetic and upload audit, 27 September 2026
+
+[BGS-FM-012](frozen_periodic_point_annihilator.md) gives the exact rectangular
+Fourier annihilator of $\operatorname{Fix}(S^m)$ for every $m\ge1$ by a Pell
+factorization. The physical symbol averages exactly $-1/10,-1/20,0$ at
+$m=1,2,\ge3$. This extends the explicitly indexed arithmetic control,
+without implying any nonlinear weighted or quantum trace estimate.
+
+The [CUE upload audit](../record/cue_upload_review_20260927.md) reproduces
+the submitted suite but rejects its all-order implication. New controls
+exhibit loss of higher correlations from pair-only data, a bispectrum
+Fourier-sign error, and incorrect phase/cutoff diagnostics. The corrected
+finite identities and fresh proxy data are recorded with their boundaries.
+
 ## Singular CUE benchmark and coboundary spectral flow, 25 September 2026
 
 [BGS-CUE-001](cue_singular_energy.md) deduces a stable law for the

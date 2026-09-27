@@ -8,6 +8,12 @@ Only unresolved obligations belong here. Stable IDs are assigned in
 
 ## Frontier board
 
+The [27 September upload audit](../record/cue_upload_review_20260927.md)
+does not close any quantum frontier below. The retained classical
+periodic-point average (BGS-FM-012) has no oscillatory weight. Pair-only
+TG-mean estimates, even if proved, still require a separate higher-order
+joint-trace argument to reach the all-order target.
+
 | Claim ID | Priority / role | Closure condition |
 |---|---|---|
 | `BGS-TRACE-005` | **central fixed-map bottleneck** | Prove the correctly desymmetrized weighted Heisenberg-scale joint-trace comparison, or an equivalent mixed-resolvent hierarchy, on every compact Fourier support. |

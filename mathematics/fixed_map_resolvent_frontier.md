@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-BGS-001`
 
-**Status, 25 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 27 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -504,6 +504,30 @@ normal form itself was previously proved in
 [the Pell coboundary note](pell_coboundary_resonance.md).
 These observations leave the mixed Heisenberg-time
 trace obligation unchanged.
+
+## Audited periodic-point control from the 27 September upload
+
+The [all-time annihilator theorem](frozen_periodic_point_annihilator.md)
+(`BGS-FM-012`) writes
+$C^m=\left(\begin{smallmatrix}x_m&2y_m\\y_m&x_m\end{smallmatrix}\right)$
+for $C=\left(\begin{smallmatrix}1&2\\1&1\end{smallmatrix}\right)$,
+$C^2=S$, and proves
+
+$$
+(S^m-I)^T\mathbb Z^2=
+\begin{cases}2x_m\mathbb Z^2,&m\text{ odd},\\
+2y_m\mathbb Z\times4y_m\mathbb Z,&m\text{ even}.
+\end{cases}
+$$
+
+Thus the physical ordinary symbol averages exactly $-1/10,-1/20,0$
+over the linear-cat fixed-point sets at times $1,2,\ge3$. This unweighted
+identity does not estimate an oscillatory Birkhoff sum or quantum trace.
+The [submission audit](../record/cue_upload_review_20260927.md) rejects
+the proposed upgrade from pair-only TG-mean estimates to all-order CUE.
+It also corrects the submitted ordinary-symbol translation, bispectrum
+Fourier sign, distinct-index convention and Abel cutoff accuracy.
+These controls do not change the Heisenberg-scale joint-trace obligation.
 
 ## Verification and remaining work
 

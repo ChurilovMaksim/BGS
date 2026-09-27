@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -823,6 +823,29 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Simple-spectrum phase curvature and infinitesimal Gaussian covariance only; excludes the proposed coboundary noise mechanism, not every perturbation scheme or CUE for the fixed map."
+    },
+    {
+      "id": "BGS-FM-012",
+      "title": "Exact all-time periodic-point grids and physical-symbol averages for the fixed linear cat",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + EXACT FINITE REGRESSION + AUTHOR-LEVEL AUDIT",
+      "source": "mathematics/frozen_periodic_point_annihilator.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260927/cue_upload_audit.json",
+        "evidence/20260927/cue_upload_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/cue_upload_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every positive classical linear-cat time. Exact unweighted Fourier averages only; no oscillatory Birkhoff weight, nonlinear fixed-point sum, quantum Heisenberg trace estimate or BGS limit. Prior Pell arithmetic credited; novelty unverified."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

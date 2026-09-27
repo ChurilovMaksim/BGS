@@ -30,6 +30,7 @@ graph TD
   F5 --> F8[BGS-FM-008 simple spectrum away from seven]
   F1 --> F9[BGS-FM-009 common antiunitary obstruction]
   F1 --> F10[BGS-FM-010 arithmetic traces]
+  F1 --> F12[BGS-FM-012 periodic-point annihilator]
   F8 --> F10
   F8 --> F11[BGS-FM-011 effective gap floor]
   T3 --> T5

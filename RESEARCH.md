@@ -1,6 +1,13 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
-The latest [CUE reference and spectral-flow audit](record/research_pass_cue_flow_20260925.md)
+The [27 September CUE upload audit](record/cue_upload_review_20260927.md)
+retains an [all-time periodic-point annihilator formula](mathematics/frozen_periodic_point_annihilator.md)
+(`BGS-FM-012`) and corrects several numerical/quantization controls.
+Its proposed pair-to-all-order implication is incomplete; a nine-phase
+homometric example makes the missing information explicit. The quantum
+Heisenberg joint-trace frontier is unchanged.
+
+The 25 September [CUE reference and spectral-flow audit](record/research_pass_cue_flow_20260925.md)
 adds a stable-law theorem for a singular Haar-CUE pair energy and
 a sharp finite coboundary-flow estimate. The former depends on the
 published small-gap Poisson theorem and a separate determinantal
