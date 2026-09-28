@@ -1,5 +1,15 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [28 September research cycle](record/quadratic_noise_program_20260928.md)
+proves an [exact quadratic-noise covariance theorem](mathematics/quadratic_coboundary_noise.md)
+(`BGS-FLOW-003`). Its degeneracy is controlled completely by
+$|\operatorname{Tr}U^2/N|$; a stated covariance correction yields the
+infinitesimal traceless Dyson generator. An exact Haar stationarity defect
+for the raw noise and rank bounds for finite-direction inputs prevent
+unjustified identifications. A pair-generator comparison at microscopic
+noise time is available under an unproved-for-this-map occupancy bound.
+The deterministic transfer and all-order BGS target remain open.
+
 The [27 September CUE upload audit](record/cue_upload_review_20260927.md)
 retains an [all-time periodic-point annihilator formula](mathematics/frozen_periodic_point_annihilator.md)
 (`BGS-FM-012`) and corrects several numerical/quantization controls.

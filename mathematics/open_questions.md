@@ -1,5 +1,13 @@
 # Open mathematical obligations
 
+The [quadratic-noise theorem BGS-FLOW-003](quadratic_coboundary_noise.md)
+adds a possible noise mechanism but no closure of BGS-TRACE-005. The next
+obligation for this route is quantitative microscopic occupancy and its
+propagation, comparison of evolved observables, and transfer back to the
+original deterministic spectrum. Fixed-time trace decay alone supplies
+none of those implications. Frozen-frame finite-direction constructions
+also face the stated rank bound; evolving-frame mechanisms remain open.
+
 Only unresolved obligations belong here. Stable IDs are assigned in
 `../record/claims.json`; current status authority remains
 `../record/claim_ledger.md`. Closed routes and finite controls are indexed in

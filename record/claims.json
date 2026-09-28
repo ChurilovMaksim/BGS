@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -822,7 +822,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Simple-spectrum phase curvature and infinitesimal Gaussian covariance only; excludes the proposed coboundary noise mechanism, not every perturbation scheme or CUE for the fixed map."
+      "boundary": "Simple-spectrum phase curvature and Gaussian expansion at second order in kick time only; fourth-order centered covariance is treated in BGS-FLOW-003. Neither calculation proves CUE for the fixed map."
     },
     {
       "id": "BGS-FM-012",
@@ -846,6 +846,27 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Every positive classical linear-cat time. Exact unweighted Fourier averages only; no oscillatory Birkhoff weight, nonlinear fixed-point sum, quantum Heisenberg trace estimate or BGS limit. Prior Pell arithmetic credited; novelty unverified."
+    },
+    {
+      "id": "BGS-FLOW-003",
+      "title": "Quadratic coboundary covariance, ellipticity, corrected Dyson generator and transfer boundaries",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT DERIVATION + BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR SELF-REVIEW",
+      "source": "mathematics/quadratic_coboundary_noise.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260928/quadratic_coboundary_noise.json",
+        "evidence/20260928/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_coboundary_noise.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "External Gaussian noise at a fixed unitary. Pair-generator comparison needs microscopic occupancy. No uniform diffusion limit, deterministic noise removal, all-order trace estimate, or novelty claim; original coboundary only has a fixed-N fourth-order covariance statement."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

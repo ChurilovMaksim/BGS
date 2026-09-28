@@ -1,5 +1,17 @@
 # Claim ledger
 
+## 28 September 2026 — quadratic coboundary noise
+
+[BGS-FLOW-003](../mathematics/quadratic_coboundary_noise.md) supplies the
+fourth-order covariance missing from the second-order obstruction. The
+[research checkpoint](quadratic_noise_program_20260928.md) records three
+routes, finite checks, and the unclosed deterministic transfer.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| BGS-FLOW-003: exact quadratic commutator covariance; ellipticity iff the spectrum is not antipodal; corrected infinitesimal Dyson generator; raw Haar defect and finite-direction rank bound | **EXACT FINITE-N PROJECT DERIVATION + DETERMINISTIC BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR SELF-REVIEW** | External Gaussian noise at a fixed unitary. The local pair-generator comparison extends to small nonzero second trace under an explicit microscopic occupancy assumption. No uniform diffusion/relaxation limit, deterministic noise removal, all-order trace estimate, or priority claim. |
+| BGS-TRACE-005, BGS-BGS-001 | **OPEN** | Ellipticity and a corrected external noise process do not imply universality of the original deterministic spectrum. |
+
 ## 27 September 2026 — audit of the independent CUE upload
 
 The [upload review](cue_upload_review_20260927.md) finds the proposed

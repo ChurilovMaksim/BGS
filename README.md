@@ -6,8 +6,13 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 27 September 2026.**
+> **Scientific status — 28 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [28 September research result](mathematics/quadratic_coboundary_noise.md)
+gives an exact quadratic-noise covariance and a corrected infinitesimal
+Dyson generator, together with precise rank and transfer boundaries.
+The original deterministic BGS limit remains open.
 
 The [27 September upload audit](record/cue_upload_review_20260927.md) adds
 an exact all-time periodic-point averaging result and corrects the submitted

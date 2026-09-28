@@ -3,6 +3,7 @@
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
 
 - [balanced_phase_controllability](../../balanced_phase_controllability.md)
+- [quadratic_coboundary_noise](../../quadratic_coboundary_noise.md) — fourth-order covariance, ellipticity, corrected noise, and transfer boundaries.
 - [coboundary_spectral_flow_bound](../../coboundary_spectral_flow_bound.md)
 - [fixed_map_moment_control_and_transfer](../../fixed_map_moment_control_and_transfer.md)
 - [fixed_map_resolvent_frontier](../../fixed_map_resolvent_frontier.md)

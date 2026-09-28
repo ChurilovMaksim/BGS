@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-BGS-001`
 
-**Status, 27 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 28 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -528,6 +528,36 @@ the proposed upgrade from pair-only TG-mean estimates to all-order CUE.
 It also corrects the submitted ordinary-symbol translation, bispectrum
 Fourier sign, distinct-index convention and Abel cutoff accuracy.
 These controls do not change the Heisenberg-scale joint-trace obligation.
+
+## Quadratic noise and its deterministic-transfer boundary
+
+The [quadratic-noise theorem](quadratic_coboundary_noise.md)
+(`BGS-FLOW-003`) goes beyond the second-order radial obstruction. For
+normalized GUE $G$, put $X=i[G,UGU^*]/\sqrt2-\mathbb E(i[G,UGU^*]/\sqrt2)$
+and $m_2=\operatorname{Tr}U^2/N$. Its exact covariance obeys
+
+$$
+\frac{1-|m_2|}{N}\operatorname{Tr}T^2
+\le\mathbb E(\operatorname{Tr}XT)^2
+\le\frac{2+|m_2|}{N}\operatorname{Tr}T^2
+$$
+
+for every traceless Hermitian $T$. It is nonsingular precisely when the
+spectrum is not contained in two antipodal points. Inverting the square
+root of its covariance yields the infinitesimal traceless Dyson generator.
+The raw noise is different: for $N\ge4$,
+$\int\mathcal L_X|\operatorname{Tr}U^2|^2\,d\mathrm{Haar}=4+2/N^2$.
+
+For a compactly supported smooth local pair statistic, microscopic-time
+generators differ by at most
+$C_{R,\phi}|m_2|M^2(1+\log N)+2N^{-2}\sup|x^2\phi''|$
+if every mean-spacing arc contains at most $M$ phases. That occupancy
+bound and its propagation are not proved for the frozen map. A quadratic
+noise built from $d$ Gaussian directions has covariance rank at most
+$d(d+1)/2$; finitely many smooth directions and logarithmically many
+frozen-frame time translates do not yield full instantaneous radial rank.
+None of these results supplies deterministic noise removal or the required
+all-order Heisenberg trace comparison.
 
 ## Verification and remaining work
 

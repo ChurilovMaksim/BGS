@@ -1,5 +1,21 @@
 # Current results and exact scope
 
+## Quadratic noise mechanism and exact boundaries, 28 September 2026
+
+[BGS-FLOW-003](quadratic_coboundary_noise.md) computes the complete covariance
+of $i[G,UGU^*]/\sqrt2$ for normalized GUE $G$. Centered noise is elliptic on
+traceless Hermitian directions exactly when $|\operatorname{Tr}U^2/N|<1$;
+explicit covariance whitening gives the infinitesimal traceless Dyson
+generator. The original coboundary eigenphase covariance starts at fourth
+order, consistently with the earlier second-order obstruction.
+
+The raw noise fails exact Haar stationarity by $4+2/N^2$ on
+$|\operatorname{Tr}U^2|^2$ for $N\ge4$. A local pair-generator bound for
+small nonzero second trace requires microscopic occupancy control; this
+and deterministic noise removal are unproved for the frozen map.
+Finite-direction quadratic noise has rank at most $d(d+1)/2$.
+See the [research checkpoint](../record/quadratic_noise_program_20260928.md).
+
 ## All-time periodic-point arithmetic and upload audit, 27 September 2026
 
 [BGS-FM-012](frozen_periodic_point_annihilator.md) gives the exact rectangular
