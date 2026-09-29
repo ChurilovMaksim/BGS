@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-25",
+  "updated": "2026-09-29",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -239,6 +239,38 @@
         "mathematics/frozen_effective_gap_floor.md",
         "record/two_continuations_review_20260924.md",
         "literature/bibliography.md"
+      ]
+    },
+    {
+      "id": "EXT-FORRESTER-1996",
+      "authors": [
+        "P. J. Forrester"
+      ],
+      "title": "Some exact correlations in the Dyson Brownian motion model for transitions to the CUE",
+      "identifier": "arXiv:chao-dyn/9603010",
+      "pinned_version": "v1; Physica A 223 (1996), 365–390",
+      "locator": "Sections 3.1 and 5.2; (3.5)–(3.9), (5.5)–(5.8)",
+      "checked_on": "2026-09-29",
+      "mapping": "Prior circular Dyson clock kernel. Project rederives odd-N normalization and an explicit uniform bound, then applies its quadratic-noise comparison. No novelty for Dyson clock relaxation.",
+      "project_sources": [
+        "mathematics/quadratic_noise_clock_limit.md",
+        "literature/quadratic_noise_sources_20260929.md"
+      ]
+    },
+    {
+      "id": "EXT-FAURE-2007",
+      "authors": [
+        "Frédéric Faure"
+      ],
+      "title": "Semi-classical formula beyond the Ehrenfest time in quantum chaos. (I) Trace formula",
+      "identifier": "arXiv:nlin/0610004",
+      "pinned_version": "v2; Ann. Inst. Fourier 57 (2007), 2525–2599",
+      "locator": "Section 2.2.2; Section 3.2 / Proposition 4; Proposition 11, (68)–(69); Theorem 12",
+      "checked_on": "2026-09-29",
+      "mapping": "Conditional plane fixed-time input. Even-N torus theorem is not directly applicable to odd project dimensions. Exact parity repair is recorded; full source-to-model identification remains conditional.",
+      "project_sources": [
+        "mathematics/quadratic_noise_fixed_time_input.md",
+        "literature/quadratic_noise_sources_20260929.md"
       ]
     }
   ]

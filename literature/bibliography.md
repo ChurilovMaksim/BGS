@@ -305,3 +305,11 @@ The explicit singular-stalk wording in the recovered proof makes that
 convention transparent. These are source-dependent clarifications, not
 new monodromy or quasi-orthogonality theorems. See
 [recovery audit](../record/recovery_audit_20260920.md).
+
+## Quadratic-noise continuation sources (29 September 2026)
+
+- P. J. Forrester, *Some exact correlations in the Dyson Brownian motion model for transitions to the CUE*, Physica A 223 (1996), 365–390, [arXiv:chao-dyn/9603010v1](https://arxiv.org/html/chao-dyn/9603010v1).
+- F. Faure, *Semi-classical formula beyond the Ehrenfest time in quantum chaos. (I) Trace formula*, Ann. Inst. Fourier 57 (2007), 2525–2599, [arXiv:nlin/0610004v2](https://arxiv.org/html/nlin/0610004v2).
+
+Exact locators and the conditional odd-dimensional application are recorded
+in [the source review](quadratic_noise_sources_20260929.md).

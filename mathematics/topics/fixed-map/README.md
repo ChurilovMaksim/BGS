@@ -19,3 +19,9 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [fixed_model_symmetry_theorem](../../fixed_model_symmetry_theorem.md)
 - [nonlinear_bracket_pressure](../../nonlinear_bracket_pressure.md)
 - [three_orientation_resolvent_barrier](../../three_orientation_resolvent_barrier.md)
+
+- [quadratic_noise_coupling](../../quadratic_noise_coupling.md) — Quantitative raw-noise/Dyson coupling and phase-averaged local transfer.
+- [quadratic_noise_reversibility](../../quadratic_noise_reversibility.md) — Haar-reversible drift, gradient identity and short-time path total variation.
+- [quadratic_noise_trace_fluctuations](../../quadratic_noise_trace_fluctuations.md) — Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction.
+- [quadratic_noise_clock_limit](../../quadratic_noise_clock_limit.md) — Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal.
+- [quadratic_noise_fixed_time_input](../../quadratic_noise_fixed_time_input.md) — Conditional fixed-time trace input via odd-dimensional periodization.

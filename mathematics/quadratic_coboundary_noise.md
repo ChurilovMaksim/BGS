@@ -1,5 +1,13 @@
 # Quadratic coboundary noise: covariance, ellipticity, and its transfer boundary
 
+**Continuation, 29 September 2026.** [FLOW-004](quadratic_noise_coupling.md)
+compares evolved noisy laws without occupancy;
+[FLOW-005](quadratic_noise_reversibility.md) supplies a Haar-reversible drift;
+[FLOW-006](quadratic_noise_trace_fluctuations.md) identifies the fixed-trace
+anomaly; [FLOW-007](quadratic_noise_clock_limit.md) proves a scoped clock
+local limit. These do not complete deterministic noise removal.
+
+
 **Claim ID:** BGS-FLOW-003. **Status:** exact finite-dimensional project
 derivation with deterministic finite checks and author self-review.
 No priority claim; no fixed-map universality theorem. This note resolves a

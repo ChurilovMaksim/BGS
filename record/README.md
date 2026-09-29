@@ -1,5 +1,10 @@
 # Research record
 
+The [29 September quadratic-noise review](quadratic_noise_review_20260929.md)
+records coupling, reversible path comparison, trace CLTs, the clock local
+limit, and a conditional fixed-time source adaptation, with fresh evidence.
+
+
 `record/` is the status, governance, and provenance layer of the BGS research
 programme.
 

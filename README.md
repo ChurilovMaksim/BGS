@@ -6,8 +6,14 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 28 September 2026.**
+> **Scientific status — 29 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [29 September continuation](record/quadratic_noise_review_20260929.md)
+adds quantitative noise/Dyson coupling, an explicit reversible correction,
+trace-process limit theorems and a clock-to-Sine local limit for the
+auxiliary noise. The actual-map fixed-time source application is conditional;
+deterministic noise removal and BGS remain open.
 
 The [28 September research result](mathematics/quadratic_coboundary_noise.md)
 gives an exact quadratic-noise covariance and a corrected infinitesimal

@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -867,6 +867,131 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "External Gaussian noise at a fixed unitary. Pair-generator comparison needs microscopic occupancy. No uniform diffusion limit, deterministic noise removal, all-order trace estimate, or novelty claim; original coboundary only has a fixed-N fourth-order covariance statement."
+    },
+    {
+      "id": "BGS-FLOW-004",
+      "title": "Quantitative raw-noise/Dyson coupling and phase-averaged local transfer",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_coupling.md",
+      "dependencies": [
+        "BGS-FLOW-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
+    },
+    {
+      "id": "BGS-FLOW-005",
+      "title": "Haar-reversible drift, gradient identity and short-time path total variation",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_reversibility.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Path total variation compares raw and corrected processes with the same covariance, N>=4K and bounded initial traces. No path-TV comparison to Dyson, finite-N ergodicity, or raw Gibbs-density claim."
+    },
+    {
+      "id": "BGS-FLOW-006",
+      "title": "Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_trace_fluctuations.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-005"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "All fixed initial traces uniformly bounded; selected initial traces converge; fixed K and T only. Raw second-trace variance 6(1-exp(-t)), reversible 2(1-exp(-3t)); no growing-index/time or finite-N stationary claim."
+    },
+    {
+      "id": "BGS-FLOW-007",
+      "title": "Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_clock_limit.md",
+      "dependencies": [
+        "BGS-FLOW-004",
+        "BGS-FLOW-005"
+      ],
+      "external_dependencies": [
+        "EXT-FORRESTER-1996"
+      ],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json",
+        "evidence/20260929/quadratic_noise_clock.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py",
+        "computations/verification/quadratic_noise_clock.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd-dimensional clock start; phase-averaged weak local law at t->0, Nt->infinity. Dyson clock kernel is established prior work. No original-map universality or unbounded correlation-moment transfer."
+    },
+    {
+      "id": "BGS-FM-013",
+      "title": "Conditional fixed-time trace input via odd-dimensional periodization",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL SOURCE APPLICATION + EXACT PARITY CONTROL",
+      "source": "mathematics/quadratic_noise_fixed_time_input.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-FAURE-2007"
+      ],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Exact parity repair only; source-to-model regularized trace formula, quantization identification and remainder control still need completion. Conditional O_j(1) fixed traces, no effective N threshold or Heisenberg-scale claim.",
+      "closure_condition": "Complete the regularized odd-N periodized trace identity and its exact matching to the maintained quantization, with the fixed-time plane remainder hypotheses checked."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

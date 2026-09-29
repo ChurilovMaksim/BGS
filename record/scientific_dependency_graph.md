@@ -23,6 +23,14 @@ graph TD
   FLOW1[BGS-FLOW-001 finite coboundary phase bound]
   FLOW2[BGS-FLOW-002 second-order radial obstruction]
   FLOW3[BGS-FLOW-003 quadratic noise and transfer boundary]
+  FLOW3 --> FLOW4[BGS-FLOW-004 short-time coupling]
+  FLOW3 --> FLOW5[BGS-FLOW-005 reversible correction]
+  FLOW4 --> FLOW5
+  FLOW3 --> FLOW6[BGS-FLOW-006 trace limits]
+  FLOW5 --> FLOW6
+  FLOW4 --> FLOW7[BGS-FLOW-007 clock local limit]
+  FLOW5 --> FLOW7
+  F1 --> F13[BGS-FM-013 fixed-time source application CONDITIONAL]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
   F1 --> F7[BGS-FM-007 seven-cut transfer]

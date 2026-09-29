@@ -1,5 +1,24 @@
 # Current results and exact scope
 
+## Quadratic-noise dynamics, 29 September 2026
+
+- [FLOW-004](quadratic_noise_coupling.md): exact synchronous cancellation,
+  every-even-moment bound, microscopic coupling at t log N -> 0, and
+  phase-averaged local comparison without an occupancy hypothesis.
+- [FLOW-005](quadratic_noise_reversibility.md): explicit Haar-reversible
+  correction, gradient potential, and vanishing raw/corrected path TV at t -> 0.
+- [FLOW-006](quadratic_noise_trace_fluctuations.md): fixed-trace OU limits
+  for both processes and a fixed-positive-time obstruction to raw/Dyson coupling.
+- [FLOW-007](quadratic_noise_clock_limit.md): phase-averaged Sine_2 weak
+  limit from an odd clock at t -> 0, Nt -> infinity, using the credited
+  Dyson clock formula; a strict obstruction to generic noise removal.
+- [FM-013](quadratic_noise_fixed_time_input.md): **conditional** source
+  adaptation for fixed-time traces of the actual map; parity is checked,
+  but the full regularized trace/quantization identification remains open.
+
+These auxiliary results do not close deterministic BGS. See the
+[proof and computation audit](../record/quadratic_noise_review_20260929.md).
+
 ## Quadratic noise mechanism and exact boundaries, 28 September 2026
 
 [BGS-FLOW-003](quadratic_coboundary_noise.md) computes the complete covariance

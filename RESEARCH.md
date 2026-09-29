@@ -1,5 +1,12 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [29 September continuation](record/quadratic_noise_review_20260929.md)
+proves short-time coupling without occupancy, a reversible correction,
+raw/corrected fixed-trace limits and a scoped clock-to-Sine theorem.
+The fixed-time source application to the actual map remains conditional.
+Deterministic noise removal and the Heisenberg joint-trace target remain open.
+
+
 The [28 September research cycle](record/quadratic_noise_program_20260928.md)
 proves an [exact quadratic-noise covariance theorem](mathematics/quadratic_coboundary_noise.md)
 (`BGS-FLOW-003`). Its degeneracy is controlled completely by

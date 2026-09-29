@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FM-013`, `BGS-BGS-001`
 
-**Status, 28 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 29 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -558,6 +558,83 @@ $d(d+1)/2$; finitely many smooth directions and logarithmically many
 frozen-frame time translates do not yield full instantaneous radial rank.
 None of these results supplies deterministic noise removal or the required
 all-order Heisenberg trace comparison.
+
+## Quantitative quadratic-noise dynamics: a scoped continuation
+
+The [coupling theorem](quadratic_noise_coupling.md) (`BGS-FLOW-004`)
+compares the raw diffusion $U_t$ with traceless unitary Brownian motion
+$V_t$ from the same matrix. For $0\le t\le1$,
+
+$$
+N\mathbb E\|U_t-V_t\|_{\rm HS}^2
+\le10e^3t(1+|\operatorname{Tr}U_0|^2+|\operatorname{Tr}U_0^2|^2).
+$$
+
+Symmetry of the covariance square root cancels the relative Itô
+commutator. Every-even-moment estimates strengthen this to
+$N\|U_{t_N}-V_{t_N}\|_{\rm op}\to0$ in probability when the initial
+first two traces are bounded and $t_N\log N\to0$. A separate integrated
+translation estimate gives phase-averaged local Laplace and finite-count
+comparison for every $t_N\to0$ with bounded initial low traces, without
+an occupancy assumption. It does not give unbounded correlation moments.
+
+The [reversible correction](quadratic_noise_reversibility.md)
+(`BGS-FLOW-005`) is the commuting traceless Hermitian drift
+
+$$
+A=-\operatorname{Im}[(m_2+m_1^2/2)U^{*2}+(m_2\bar m_1/2)U^*],
+\qquad m_j=N^{-1}\operatorname{Tr}U^j.
+$$
+
+Adding $D_A$ puts the generator in Haar divergence form. Moreover
+$A=-(4N)^{-1}\operatorname{grad}(|p_2|^2+N^{-1}\operatorname{Re}(p_2\bar p_1^2))$.
+For $N\ge4K$, initial $|p_1|,|p_2|\le K/2$, and $t\le1/12$,
+Girsanov and an explicit exit estimate give
+
+$$
+d_{\rm TV}(P_X^{[0,t]},P_R^{[0,t]})
+\le\min(1,2K\sqrt t+16e^{-K^2/(768t)}).
+$$
+
+This compares full path laws with the same covariance, not path laws
+with Dyson covariance. Haar reversibility does not imply ergodicity;
+scalar matrices are absorbing.
+
+The [fixed-trace theorem](quadratic_noise_trace_fluctuations.md)
+(`BGS-FLOW-006`) assumes every fixed initial trace is uniformly bounded
+and the selected initial traces converge. For fixed $K,T$, it proves
+joint path convergence to independent circular complex OU processes
+with variance coefficient $b_k^2=k^2(1+\mathbf1_{k=2}/2)$ and rates
+
+$$
+a_X(k)=k/2-\mathbf1_{k=2}/2,\qquad
+a_R(k)=k/2+\mathbf1_{k=2}/2.
+$$
+
+Uniform maximal trace moments justify the limit. From zero initial
+traces the raw second-trace variance is $6(1-e^{-t})$, whereas Dyson
+has $2(1-e^{-2t})$. Their difference prohibits microscopic operator
+coupling at fixed positive time. The reversible limit has variance
+$2(1-e^{-3t})$, with Haar-compatible stationary value two; no finite-$N$
+stationary convergence or growing-order theorem is implied.
+
+For the odd clock start, the [local-limit theorem](quadratic_noise_clock_limit.md)
+(`BGS-FLOW-007`) uses the established circular Dyson clock kernel of
+Forrester, with a rederived odd-$N$ normalization and explicit alias
+bound. Both quadratic diffusions converge after phase averaging to
+Sine$_2$ at $t_N\to0$, $Nt_N\to\infty$, with Laplace error
+$O_f(\sqrt t+(Nt)^{-1}+N^{-2})$. The initial clock has exactly one point
+per unit interval while Sine$_2$ has a positive hole probability.
+Thus low traces and bounded occupancy cannot justify generic noise removal.
+
+The [fixed-time model input](quadratic_noise_fixed_time_input.md)
+(`BGS-FM-013`) is **conditional**. Its parity repair is exact, but the
+full regularized trace and quantization/remainder identification for
+Faure's plane estimate remain to be checked. No even-dimensional torus
+theorem is silently applied to odd dimensions. These auxiliary results
+leave `BGS-TRACE-005` and `BGS-BGS-001` open. The
+[research audit](../record/quadratic_noise_review_20260929.md) separates
+proofs, finite controls, prior work and the conditional application.
 
 ## Verification and remaining work
 

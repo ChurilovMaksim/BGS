@@ -135,7 +135,8 @@ def main() -> None:
             cmd+=['--output-dir',str(args.logs/'frozen_antireversor')]
         elif p.stem in {'frozen_full_lag_gap', 'frozen_kick_rank',
                         'nonlinear_pressure_variance', 'frozen_seven_cut',
-                        'frozen_total_minors', 'frozen_arithmetic_traces'}:
+                        'frozen_total_minors', 'frozen_arithmetic_traces',
+                        'quadratic_noise_dynamics', 'quadratic_noise_clock'}:
             cmd+=['--output',str(args.logs/(p.stem+'.json'))]
         elif p.stem=='extremal_resonance':
             extremal_producer=True

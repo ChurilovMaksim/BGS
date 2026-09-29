@@ -1,5 +1,27 @@
 # Claim ledger
 
+## 29 September 2026 — quadratic-noise dynamics and audited integration
+
+The [research review](quadratic_noise_review_20260929.md) integrates the
+previous scratch derivations and proves two extensions: raw/reversible
+path-law comparison and the reversible fixed-trace CLT. All new proofs
+have author self-review only; no independent review, formal certificate,
+or world-priority claim is asserted.
+
+| Claim | Status | Exact scope |
+|---|---|---|
+| [BGS-FLOW-004](../mathematics/quadratic_noise_coupling.md) | PROJECT PROOF + FINITE CONTROLS | Hilbert–Schmidt and every-even-moment coupling; microscopic operator comparison at t log N -> 0; averaged local weak/count-vector transfer without occupancy. |
+| [BGS-FLOW-005](../mathematics/quadratic_noise_reversibility.md) | PROJECT PROOF + FINITE CONTROLS | Explicit Haar-reversible correction and gradient; full raw/corrected path-law TV vanishes at t -> 0 for bounded initial low traces. |
+| [BGS-FLOW-006](../mathematics/quadratic_noise_trace_fluctuations.md) | PROJECT PROOF + FINITE CONTROLS | Raw and corrected fixed-K, fixed-T trace OU limits; second-trace anomaly excludes microscopic raw/Dyson coupling at fixed positive time. |
+| [BGS-FLOW-007](../mathematics/quadratic_noise_clock_limit.md) | PROJECT DEDUCTION + CREDITED DYSON CLOCK FORMULA + FINITE CONTROLS | Odd clock start, t -> 0 and Nt -> infinity: phase-averaged Sine_2 weak limit for both quadratic diffusions; explicit noise-removal obstruction. |
+| [BGS-FM-013](../mathematics/quadratic_noise_fixed_time_input.md) | CONDITIONAL SOURCE APPLICATION | Exact odd-N parity repair retained. Full regularized trace and quantization/remainder identification remain to be checked before promoting fixed-time trace bounds for the actual map. |
+| BGS-TRACE-005, BGS-BGS-001 | **OPEN** | No deterministic noise removal or model-specific Heisenberg joint-trace bound has been established. |
+
+The occupancy-dependent generator estimate in FLOW-003 is still valid;
+FLOW-004 provides a different process comparison that does not need
+occupancy. The raw diffusion remains distinct from the full fourth-order
+limit of the original finite Gaussian coboundary flow.
+
 ## 28 September 2026 — quadratic coboundary noise
 
 [BGS-FLOW-003](../mathematics/quadratic_coboundary_noise.md) supplies the

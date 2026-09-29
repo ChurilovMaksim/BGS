@@ -10,6 +10,10 @@ is provided by [topic views](topics/README.md), whose complete membership is
 machine-readable in `../record/mathematics_topics.json` and checked by the
 scientific registry audit.
 
+The [quadratic-noise continuation](../record/quadratic_noise_review_20260929.md)
+links the covariance, coupling, reversibility, trace CLTs and clock local
+limit, with a separate conditional fixed-time model input.
+
 ## Reading order
 
 The current fixed-family branch is consolidated in

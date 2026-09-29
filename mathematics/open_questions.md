@@ -1,12 +1,16 @@
 # Open mathematical obligations
 
-The [quadratic-noise theorem BGS-FLOW-003](quadratic_coboundary_noise.md)
-adds a possible noise mechanism but no closure of BGS-TRACE-005. The next
-obligation for this route is quantitative microscopic occupancy and its
-propagation, comparison of evolved observables, and transfer back to the
-original deterministic spectrum. Fixed-time trace decay alone supplies
-none of those implications. Frozen-frame finite-direction constructions
-also face the stated rank bound; evolving-frame mechanisms remain open.
+The [quadratic-noise continuation](quadratic_noise_coupling.md)
+removes microscopic occupancy from comparison of the two evolved noisy
+laws. It does not close BGS-TRACE-005. This route still needs Dyson
+relaxation for the actual starting spectrum, deterministic noise removal,
+and uniform integrability for unbounded local correlations. The
+[clock theorem](quadratic_noise_clock_limit.md) proves that low traces
+and bounded occupancy alone cannot remove the noise. The
+[fixed-time source application](quadratic_noise_fixed_time_input.md)
+remains conditional on its full regularized trace/quantization matching.
+The full fourth-order diffusion limit of the original finite Gaussian
+coboundary flow also remains unproved.
 
 Only unresolved obligations belong here. Stable IDs are assigned in
 `../record/claims.json`; current status authority remains
