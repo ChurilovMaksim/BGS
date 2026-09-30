@@ -9,8 +9,14 @@ and uniform integrability for unbounded local correlations. The
 and bounded occupancy alone cannot remove the noise. The
 [fixed-time source application](quadratic_noise_fixed_time_input.md)
 remains conditional on its full regularized trace/quantization matching.
-The full fourth-order diffusion limit of the original finite Gaussian
-coboundary flow also remains unproved.
+The [Möbius reduction](coboundary_mobius_diffusion.md) now proves a
+fixed-dimension stopped spectral quotient limit for repeated Gaussian
+coboundary steps and an iterated clock-to-Sine theorem. An explicit
+simultaneous regime is now established by
+[FLOW-010](coboundary_joint_limit.md) at epsilon_N=exp(-N).
+An economical polynomial step-size regime, relaxation from the actual
+starting spectra and deterministic noise removal remain open. No convergence
+of the rapidly changing original matrix paths is asserted.
 
 Only unresolved obligations belong here. Stable IDs are assigned in
 `../record/claims.json`; current status authority remains

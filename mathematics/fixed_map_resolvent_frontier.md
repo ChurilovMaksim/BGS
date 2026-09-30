@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FM-013`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-BGS-001`
 
 **Status, 29 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -635,6 +635,73 @@ theorem is silently applied to odd dimensions. These auxiliary results
 leave `BGS-TRACE-005` and `BGS-BGS-001` open. The
 [research audit](../record/quadratic_noise_review_20260929.md) separates
 proofs, finite controls, prior work and the conditional application.
+
+## From finite coboundary kicks to a spectral diffusion
+
+The [fourth-order calculation](coboundary_fourth_order_drift.md)
+(`BGS-FLOW-008`) distinguishes the actual step
+$U\mapsto e^{i\varepsilon(G-UGU^*)}U$ from the raw quadratic diffusion.
+In its conjugated logarithm, the expected second-degree Hermitian field
+is $J=-\operatorname{Im}(m_1U^*)$; a further fourth-degree drift remains
+even after frozen subtraction of $J$. Thus covariance alone cannot
+identify the limit. Both logarithmic mean terms vanish at $m_1=0$.
+
+The [Möbius reduction](coboundary_mobius_diffusion.md)
+(`BGS-FLOW-009`) uses
+$\Pi(U)=(U-wI)(I-\bar wU)^{-1}$, with the small $w$ chosen to set
+$\operatorname{Tr}\Pi(U)=0$. The faster field $J$ lies on common
+Möbius orbits. Phase-averaged local Laplace functionals change by
+$O_f(|m_1|)$ under centering, without an occupancy assumption.
+At fixed dimension, killed trace moments control the fast mode and
+identify the stopped spectral quotient limit at step $\varepsilon^4/2$
+with generator $\overline Lf=L_X(f\circ\Pi)$ on the centered slice.
+The projected diffusion has an explicit additional Itô drift of operator
+norm at most $80/N^2$ for $|m_2|\le1/2$; it admits a dimension-uniform
+short-time comparison with Dyson motion.
+
+Consequently, for independent normalized GUE kicks and odd clock start,
+if $t_N\to0$ and $Nt_N\to\infty$,
+
+$$
+\lim_{N\to\infty,\ N\ {\rm odd}}\limsup_{\varepsilon\downarrow0}
+\left|\mathbb E\Phi_{N,f}
+ (U^\varepsilon_{\lfloor2t_N/\varepsilon^4\rfloor})
+-\Phi_{\rm Sine}(f)\right|=0.
+$$
+
+The chain contains no centering drift or covariance whitening. This proof
+first fixes dimension; the following extension supplies an explicit joint
+regime. No convergence of the original matrix paths is asserted. The initial clock remains
+a counterexample to generic noise removal. This auxiliary theorem does not
+establish the deterministic map's Heisenberg joint-trace estimate. The
+[continuation audit](../record/coboundary_mobius_review_20260929.md) records
+the proof obligations, exact algebra and finite projection checks.
+
+## A dimension-quantitative joint regime for the random chain
+
+The [uniform-step theorem](coboundary_joint_limit.md) (`BGS-FLOW-010`)
+strengthens the fast-coordinate estimate to
+$\mathbb E[|m_1|;j<\sigma]\le C(\varepsilon/N+\varepsilon^4)$.
+Its full quartic mean and absolute sixth-order remainder are retained.
+Smooth localization gives backward derivative growth $e^{CNt}$;
+a discrete second-trace Lyapunov estimate controls exits directly.
+For smooth nonnegative compactly supported tests, the original chain obeys
+
+$$
+\left|\mathbb E\Phi_{N,f}
+ (U^\varepsilon_{\lfloor2t/\varepsilon^4\rfloor})
+-\Phi_{\rm Sine}(f)\right|
+\le C_f[\sqrt t+(Nt)^{-1}+N^{-2}+N^{20}e^{CNt}\varepsilon],
+\qquad 1/N\le t\le1/12.
+$$
+
+Hence $\varepsilon_N=e^{-N}$, $t_N\to0$ and $Nt_N\to\infty$ give
+a simultaneous local weak limit. At $t_N=N^{-2/3}$ the smooth-test rate
+is $O_f(N^{-1/3})$. Nonnegative $C_c^1$ tests follow by approximation,
+without this rate. The exponential step count is not practical, and no
+polynomial-step theorem or deterministic noise removal follows. The
+[author audit](../record/coboundary_joint_review_20260930.md) separates
+the analytic proof from exact algebra and finite Frechet-gradient checks.
 
 ## Verification and remaining work
 

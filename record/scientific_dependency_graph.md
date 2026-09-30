@@ -30,6 +30,16 @@ graph TD
   FLOW5 --> FLOW6
   FLOW4 --> FLOW7[BGS-FLOW-007 clock local limit]
   FLOW5 --> FLOW7
+  FLOW3 --> FLOW8[BGS-FLOW-008 fourth-order drift]
+  FLOW3 --> FLOW9[BGS-FLOW-009 Mobius spectral limit]
+  FLOW4 --> FLOW9
+  FLOW7 --> FLOW9
+  FLOW8 --> FLOW9
+  FLOW3 --> FLOW10[BGS-FLOW-010 simultaneous random-kick limit]
+  FLOW4 --> FLOW10
+  FLOW7 --> FLOW10
+  FLOW8 --> FLOW10
+  FLOW9 --> FLOW10
   F1 --> F13[BGS-FM-013 fixed-time source application CONDITIONAL]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]

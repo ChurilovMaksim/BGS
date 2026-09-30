@@ -1,6 +1,6 @@
 {
   "schema": "bgs-mathematics-topics-v1",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "policy": "Stable proof-file paths are preserved; topic directories are canonical navigational views rather than duplicate proof sources.",
   "topics": {
     "fixed-map": [
@@ -25,7 +25,10 @@
       "mathematics/quadratic_noise_reversibility.md",
       "mathematics/quadratic_noise_trace_fluctuations.md",
       "mathematics/quadratic_noise_clock_limit.md",
-      "mathematics/quadratic_noise_fixed_time_input.md"
+      "mathematics/quadratic_noise_fixed_time_input.md",
+      "mathematics/coboundary_fourth_order_drift.md",
+      "mathematics/coboundary_mobius_diffusion.md",
+      "mathematics/coboundary_joint_limit.md"
     ],
     "trace-bridge": [
       "mathematics/bandlimited_correlation_extension.md",

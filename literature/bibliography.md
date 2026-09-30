@@ -313,3 +313,11 @@ new monodromy or quasi-orthogonality theorems. See
 
 Exact locators and the conditional odd-dimensional application are recorded
 in [the source review](quadratic_noise_sources_20260929.md).
+
+## Möbius geometry background
+
+B. Chen, J. R. Engelbrecht and R. Mirollo, *Hyperbolic Geometry of Kuramoto
+Oscillator Networks*, [arXiv:1707.00713v1](https://arxiv.org/abs/1707.00713v1),
+DOI:10.1088/1751-8121/aa7e39. Credited background for common Möbius
+first-harmonic motion. Only abstract/metadata inspected in this continuation;
+the local centering facts used in FLOW-009 are proved directly.

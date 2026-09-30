@@ -1,5 +1,30 @@
 # Claim ledger
 
+## 30 September 2026 — simultaneous coboundary clock limit
+
+[BGS-FLOW-010](../mathematics/coboundary_joint_limit.md): **PROJECT PROOF
++ AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS**.
+For independent normalized GUE kicks, the original uncentered chain from
+an odd clock has a joint Sine_2 weak limit at epsilon_N=exp(-N),
+t_N -> 0, N t_N -> infinity. Uniform fast-mode control and a quantitative
+backward-semigroup comparison remove the earlier order-of-limits restriction
+in this explicit regime. Smooth tests at t_N=N^(-2/3) have rate O_f(N^(-1/3)).
+The [audit](coboundary_joint_review_20260930.md) records the proof boundary.
+Polynomial step sizes, actual-map relaxation, BGS-TRACE-005 and BGS-BGS-001
+remain **OPEN**. No independent or formal validation is asserted.
+
+## 29 September 2026 — continued research: the actual coboundary chain
+
+The [Möbius continuation audit](coboundary_mobius_review_20260929.md)
+records a fourth-order spectral mechanism for repeated uncentered Gaussian
+coboundary steps. Status is project proof with author self-review only.
+
+| Claim | Status | Exact domain and boundary |
+|---|---|---|
+| [BGS-FLOW-008](../mathematics/coboundary_fourth_order_drift.md) | PROJECT PROOF + EXACT ALGEBRA + FINITE CONTROLS | Full expected fourth-degree logarithm, faster Möbius mean motion, and the extra drift left by frozen mean compensation. Fixed N first. |
+| [BGS-FLOW-009](../mathematics/coboundary_mobius_diffusion.md) | PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS | Stopped spectral quotient limit and phase-averaged clock-to-Sine limit for the original uncentered random chain, with epsilon -> 0 before N -> infinity. No deterministic noise removal or uniform simultaneous limit. |
+| BGS-TRACE-005, BGS-BGS-001 | **OPEN** | The initial clock's local law changes under these perturbations. Removing the collective mean does not remove the residual stochastic evolution. |
+
 ## 29 September 2026 — quadratic-noise dynamics and audited integration
 
 The [research review](quadratic_noise_review_20260929.md) integrates the

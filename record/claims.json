@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -992,6 +992,82 @@
       ],
       "boundary": "Exact parity repair only; source-to-model regularized trace formula, quantization identification and remainder control still need completion. Conditional O_j(1) fixed traces, no effective N threshold or Heisenberg-scale claim.",
       "closure_condition": "Complete the regularized odd-N periodized trace identity and its exact matching to the maintained quantization, with the fixed-time plane remainder hypotheses checked."
+    },
+    {
+      "id": "BGS-FLOW-008",
+      "title": "Exact fourth-order drift of Gaussian coboundary steps",
+      "source": "mathematics/coboundary_fourth_order_drift.md",
+      "dependencies": [
+        "BGS-FLOW-003"
+      ],
+      "boundary": "Fixed dimension first. Distinguishes the original step, frozen mean compensation and raw quadratic diffusion; no uniform joint epsilon/N limit or deterministic noise removal.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/coboundary_mobius_diffusion.json",
+        "evidence/20260929/coboundary_mobius_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_mobius_diffusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-009",
+      "title": "Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks",
+      "source": "mathematics/coboundary_mobius_diffusion.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004",
+        "BGS-FLOW-007",
+        "BGS-FLOW-008"
+      ],
+      "boundary": "Independent normalized GUE steps, odd clock start; epsilon -> 0 at fixed N precedes N -> infinity, t_N -> 0, N t_N -> infinity. Local stopped spectral quotient diffusion only; no original matrix-path convergence, explicit simultaneous epsilon_N rate, actual-map relaxation or deterministic BGS.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/coboundary_mobius_diffusion.json",
+        "evidence/20260929/coboundary_mobius_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_mobius_diffusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-010",
+      "title": "Dimension-quantitative simultaneous clock-to-Sine limit for uncentered Gaussian coboundary kicks",
+      "source": "mathematics/coboundary_joint_limit.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004",
+        "BGS-FLOW-007",
+        "BGS-FLOW-008",
+        "BGS-FLOW-009"
+      ],
+      "boundary": "Independent normalized GUE kicks, odd clock start, epsilon_N=exp(-N), t_N -> 0, N t_N -> infinity. Smooth-test rate O_f(N^(-1/3)) at t_N=N^(-2/3). Exponential step count; no polynomial step-size theorem, actual-map relaxation, matrix-path convergence or deterministic noise removal.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/coboundary_joint_limit.json",
+        "evidence/20260930/coboundary_joint_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_joint_limit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

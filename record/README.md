@@ -1,5 +1,13 @@
 # Research record
 
+The [30 September joint-limit audit](coboundary_joint_review_20260930.md)
+records uniform fast-mode estimates and an explicit simultaneous
+clock-to-Sine limit for the original random chain, with exponential step count.
+
+The [Möbius continuation audit](coboundary_mobius_review_20260929.md)
+records the fourth-order drift and iterated local limit of actual uncentered
+random coboundary steps, following the earlier quadratic-noise checkpoint.
+
 The [29 September quadratic-noise review](quadratic_noise_review_20260929.md)
 records coupling, reversible path comparison, trace CLTs, the clock local
 limit, and a conditional fixed-time source adaptation, with fresh evidence.

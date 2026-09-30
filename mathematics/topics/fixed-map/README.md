@@ -25,3 +25,6 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [quadratic_noise_trace_fluctuations](../../quadratic_noise_trace_fluctuations.md) — Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction.
 - [quadratic_noise_clock_limit](../../quadratic_noise_clock_limit.md) — Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal.
 - [quadratic_noise_fixed_time_input](../../quadratic_noise_fixed_time_input.md) — Conditional fixed-time trace input via odd-dimensional periodization.
+- [coboundary_fourth_order_drift](../../coboundary_fourth_order_drift.md) — Exact fourth-order drift of Gaussian coboundary steps.
+- [coboundary_mobius_diffusion](../../coboundary_mobius_diffusion.md) — Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks.
+- [coboundary_joint_limit](../../coboundary_joint_limit.md) — Uniform fast-mode control and a joint clock-to-Sine limit at exponential small step.

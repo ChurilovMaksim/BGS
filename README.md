@@ -6,8 +6,20 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 29 September 2026.**
+> **Scientific status — 30 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [30 September extension](record/coboundary_joint_review_20260930.md)
+proves a simultaneous clock-to-Sine limit for the original uncentered
+Gaussian coboundary chain at epsilon_N=exp(-N). Its dimension-uniform
+fast-mode bound removes the earlier order-of-limits restriction in that
+explicit regime; deterministic BGS and polynomial step sizes remain open.
+
+The [further Möbius reduction](record/coboundary_mobius_review_20260929.md)
+connects finite uncentered random coboundary steps to a spectral diffusion
+and proves their clock-to-Sine local limit with the small-step limit taken
+first. It identifies a missing fourth-order drift; deterministic noise
+removal remains open.
 
 The [29 September continuation](record/quadratic_noise_review_20260929.md)
 adds quantitative noise/Dyson coupling, an explicit reversible correction,

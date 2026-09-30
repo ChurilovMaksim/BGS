@@ -1,5 +1,17 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [30 September continuation](record/coboundary_joint_review_20260930.md)
+proves a dimension-quantitative joint clock-to-Sine limit for the original
+uncentered random kicks at epsilon_N=exp(-N). Uniform first-trace control
+closes this order-of-limits question. The exponential step count, polynomial
+step-size question and deterministic BGS frontier remain explicit limitations.
+
+The [Möbius continuation](record/coboundary_mobius_review_20260929.md)
+identifies the actual fourth-order coboundary drift and proves an iterated
+clock-to-Sine limit for repeated uncentered Gaussian coboundary kicks.
+The faster first-harmonic mean is removed only on a spectral quotient;
+this does not remove the external randomness from the deterministic BGS target.
+
 The [29 September continuation](record/quadratic_noise_review_20260929.md)
 proves short-time coupling without occupancy, a reversible correction,
 raw/corrected fixed-trace limits and a scoped clock-to-Sine theorem.

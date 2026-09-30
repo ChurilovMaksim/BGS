@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Simultaneous random-kick limit, 30 September 2026
+
+[FLOW-010](coboundary_joint_limit.md) makes the coboundary clock theorem
+quantitative in dimension: the original uncentered chain has a joint
+Sine_2 weak limit at epsilon_N=exp(-N), t_N -> 0, N t_N -> infinity.
+The stopped first-trace scale is epsilon/N + epsilon^4. Smooth tests at
+t_N=N^(-2/3) have error O_f(N^(-1/3)). This is a project proof with
+author self-review; polynomial step sizes and deterministic BGS remain open.
+See the [audit](../record/coboundary_joint_review_20260930.md).
+
+## Actual coboundary steps and Möbius reduction, 29 September 2026
+
+[FLOW-008](coboundary_fourth_order_drift.md) computes the missing fourth-order
+drift of finite Gaussian coboundary steps. [FLOW-009](coboundary_mobius_diffusion.md)
+removes their faster mean through a Möbius spectral quotient and proves a
+clock-to-Sine local limit for the uncentered random chain in an explicit
+iterated limit. This closes a scoped connection from finite random kicks to
+the noise mechanism, not deterministic BGS. See the
+[self-audit](../record/coboundary_mobius_review_20260929.md).
+
 ## Quadratic-noise dynamics, 29 September 2026
 
 - [FLOW-004](quadratic_noise_coupling.md): exact synchronous cancellation,

@@ -1,0 +1,30 @@
+{
+  "checkpoint": "coboundary-joint-20260930",
+  "date": "2026-09-30",
+  "local_base_commit": "ab3a6587a9bcc5c08370cd50f546638a132cd9f6",
+  "remote_base_commit": "c11f45165c9dc2fdb720ec783aa94eba348a148e",
+  "arithmetic": "Fraction exact words; complex128 finite contractions and Frechet derivatives",
+  "commands": [
+    "python3 computations/verification/coboundary_joint_limit.py --output evidence/20260930/coboundary_joint_limit.json",
+    "python3 computations/verification/coboundary_mobius_diffusion.py --output /tmp/mobius-audit-20260930.json"
+  ],
+  "sha256": {
+    "mathematics/coboundary_joint_limit.md": "6ada678bb24a58a27510435005d5c268ffbf33c373fe9168dc08059b2e97a8e8",
+    "record/coboundary_joint_review_20260930.md": "e13bea66316fff5daf25b1d5eb095860f275826f45ecb41ec79bcd54cce6ee72",
+    "mathematics/coboundary_mobius_diffusion.md": "699f97454edee866fdcebe9f69b92d4ce28334cd177e17ed7952118d4a4df4ee",
+    "mathematics/coboundary_fourth_order_drift.md": "044aed16ff82fbb6903d6cad334d6e43930ebe8faecfacb99566f650e7b3a35e",
+    "computations/verification/coboundary_joint_limit.py": "682cac6863baee3c68bffb50fe4c03086bd3fd434eb9406065dd68f478aec355",
+    "computations/verification/coboundary_mobius_diffusion.py": "369a25d7cf7a5fa1a73cfa81e4e9bb96e746fba963c1005444e9f24d3f0801a6",
+    "evidence/20260930/coboundary_joint_limit.json": "754d0315a816b623e232a406607d33b7748b672bc9c37fb11d8e1e962b7993d5",
+    "evidence/20260930/coboundary_mobius_rerun.json": "fd79bb27c774ae455479fb586bc74df1f6abbf1e3bbf494ab9dfc7dcd322b0be",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "fcb7d4b7d05504940a659b7685d22e3e1f0577d1508da55d5a7418919b8c30a2",
+    "evidence/20260930/coboundary_joint_integration.json": "adf55fd895a85da7a59c41c3d19907649f15b8f40b85108da81dfe5e523571eb"
+  },
+  "scope": "New finite controls and unchanged FLOW-008/009 verifier rerun on 30 September; embedded older protocol date preserved. Analytic theorem is a separate project proof with author self-review.",
+  "exclusions": [
+    "No joint-limit simulation",
+    "No independent referee",
+    "No Lean build",
+    "No deterministic BGS result"
+  ]
+}
