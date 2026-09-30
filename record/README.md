@@ -1,5 +1,11 @@
 # Research record
 
+The [Heisenberg-note audit](heisenberg_note_review_20260930.md) records
+three completed subsidiary results, a full disposition of the outside
+note, pinned source checks and the remaining quantum/renewal obligations.
+Its [execution record](../evidence/20260930/heisenberg_note_execution.json)
+separates focused checks from the complete manuscript build.
+
 The [30 September joint-limit audit](coboundary_joint_review_20260930.md)
 records uniform fast-mode estimates and an explicit simultaneous
 clock-to-Sine limit for the original random chain, with exponential step count.

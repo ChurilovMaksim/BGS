@@ -9,6 +9,12 @@
 > **Scientific status — 30 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
+The [Heisenberg-note audit](record/heisenberg_note_review_20260930.md)
+completes uniform scalar finite type, an explicit classical commutator
+action at the fixed coupling, and a parity classification of ideal digit
+Fourier FUP using Cohen's prior theorem. The quantum normal form and
+Heisenberg-time renewal estimates remain open.
+
 The [30 September extension](record/coboundary_joint_review_20260930.md)
 proves a simultaneous clock-to-Sine limit for the original uncentered
 Gaussian coboundary chain at epsilon_N=exp(-N). Its dimension-uniform

@@ -28,3 +28,7 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [coboundary_fourth_order_drift](../../coboundary_fourth_order_drift.md) — Exact fourth-order drift of Gaussian coboundary steps.
 - [coboundary_mobius_diffusion](../../coboundary_mobius_diffusion.md) — Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks.
 - [coboundary_joint_limit](../../coboundary_joint_limit.md) — Uniform fast-mode control and a joint clock-to-Sine limit at exponential small step.
+
+- [frozen_phase_finite_type](../../frozen_phase_finite_type.md)
+- [frozen_commutator_action](../../frozen_commutator_action.md)
+- [offdiagonal_digit_fup](../../offdiagonal_digit_fup.md)

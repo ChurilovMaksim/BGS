@@ -28,6 +28,7 @@ mechanisms and historical context remain authoritative in
 | `ERR-020` | PR #13 triple resultant equality | retracted | p-divisibility only survives |
 | `ERR-021` | Pell gamma decimal | corrected | theorem formula unchanged |
 | `ERR-022` | inverse transversality K=7,p=29 anchor | corrected | positive K=11,p=23 anchor |
+| `ERR-023` | Outside Heisenberg note: line geometry, anisotropic scope and summation/convention errors | corrected before promotion | ideal FUP conclusion repaired; no quantum or CUE promotion |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

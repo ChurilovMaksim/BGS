@@ -321,3 +321,16 @@ Oscillator Networks*, [arXiv:1707.00713v1](https://arxiv.org/abs/1707.00713v1),
 DOI:10.1088/1751-8121/aa7e39. Credited background for common Möbius
 first-harmonic motion. Only abstract/metadata inspected in this continuation;
 the local centering facts used in FLOW-009 are proved directly.
+
+## Heisenberg-note source audit (30 September 2026)
+
+- A. Cohen, *Fractal uncertainty for discrete two-dimensional Cantor sets*,
+  Analysis & PDE 18 (2025), 743--772; arXiv:2206.14131v3.
+- F. Faure and M. Tsujii, *Prequantum transfer operator for symplectic
+  Anosov diffeomorphism*, arXiv:1206.0282v2 (2013).
+- L. Jin, A. Zhang and H. Zhang, *Anisotropic 2D FUP and quantum open
+  baker's map*, arXiv:2606.23160v1 (2026).
+
+Exact theorem locators and the restrictions on their use are recorded in
+[the source audit](heisenberg_note_sources.md). Only Cohen is a new
+load-bearing ideal-model dependency; no general BGS theorem is imported.

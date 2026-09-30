@@ -51,7 +51,10 @@
     "BGS-FM-013",
     "BGS-FLOW-008",
     "BGS-FLOW-009",
-    "BGS-FLOW-010"
+    "BGS-FLOW-010",
+    "BGS-FM-014",
+    "BGS-FM-015",
+    "BGS-FUP-001"
   ],
   "edges": [
     {
@@ -312,6 +315,21 @@
     {
       "from": "BGS-FLOW-009",
       "to": "BGS-FLOW-010",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-014",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-015",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-014",
+      "to": "BGS-FM-015",
       "type": "scientific-prerequisite"
     }
   ],

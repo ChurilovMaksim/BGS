@@ -1068,6 +1068,76 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ]
+    },
+    {
+      "id": "BGS-FM-014",
+      "title": "Uniform finite type and scalar cancellation for translated physical-symbol differences",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/frozen_phase_finite_type.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Actual q-circle separation at least 1/7. Order 14 for the plain scalar phase; order 15 uniform under linear additions. Local half-shift Morse-Bott controls only; no quantum FIO or operator norm gap."
+    },
+    {
+      "id": "BGS-FM-015",
+      "title": "Explicit classical commutator generating action at the maintained fixed coupling",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/frozen_commutator_action.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-014"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Local mixed-coordinate generating function, analytic flow time |t|<=1e-8 and finite-type time |t|<=1e-52; actual t=tau/(2pi) qualifies. C15 remainder is explicit. No global quantum phase, torus FIO or Planck-scale compression gap."
+    },
+    {
+      "id": "BGS-FUP-001",
+      "title": "Parity classification of Fourier FUP for ideal off-diagonal digit alphabets",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/offdiagonal_digit_fup.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-COHEN-2025"
+      ],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Ideal isotropic digit sets only: odd bases and M=2 pass; even M>=4 have exact norm 1 at every scale by a supported discrete unit vector. Binary norm sqrt(2/N). Prior Cohen criterion; no exponent extracted for base 7, nonlinear distortion theorem or actual-map coding."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,11 @@
 # Computations
 
+[heisenberg_note_audit.py](verification/heisenberg_note_audit.py)
+checks exact symbol/annihilator and analytic-constant arithmetic, finite
+CUE factorial cycles against two existing references, rational digit
+geometry and independent matrix conventions. Finite checks do not certify
+the analytic action proof, external FUP theorem or deterministic CUE.
+
 The maintained computational surface is deliberately compact and independently cross-checked. Historical language ports, one-shot publication migrators, and exploratory branch source trees are not kept as parallel implementations on `main`.
 
 ## C++20 — exact/exhaustive kernels

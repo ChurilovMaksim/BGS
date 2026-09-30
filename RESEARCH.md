@@ -1,5 +1,12 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [Heisenberg-note audit](record/heisenberg_note_review_20260930.md)
+adds uniform scalar finite type, an explicit classical commutator action
+at the fixed coupling, and a parity classification of ideal digit Fourier
+FUP using Cohen's prior theorem. It repairs convention, boundary and
+summation errors. Quantum normal form, renewal and deterministic CUE
+remain open; the exact new results and their limits are separately indexed.
+
 The [30 September continuation](record/coboundary_joint_review_20260930.md)
 proves a dimension-quantitative joint clock-to-Sine limit for the original
 uncentered random kicks at epsilon_N=exp(-N). Uniform first-trace control

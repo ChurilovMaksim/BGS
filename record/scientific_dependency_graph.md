@@ -50,6 +50,11 @@ graph TD
   F1 --> F9[BGS-FM-009 common antiunitary obstruction]
   F1 --> F10[BGS-FM-010 arithmetic traces]
   F1 --> F12[BGS-FM-012 periodic-point annihilator]
+  F1 --> F14[BGS-FM-014 scalar finite type]
+  F1 --> F15[BGS-FM-015 classical action remainder]
+  F14 --> F15
+  FU1[BGS-FUP-001 ideal digit parity classification]
+
   F8 --> F10
   F8 --> F11[BGS-FM-011 effective gap floor]
   T3 --> T5
@@ -87,3 +92,7 @@ The exact nodes `BGS-RES-006` and `BGS-TRACE-007` are finite-spectrum results; `
 `BGS-TRACE-005`, `BGS-RES-003`, `BGS-INFO-001`, and the final
 `BGS-BGS-001`. Closing the arithmetic Cayley target alone would not prove
 the fixed-map BGS claim.
+
+The scalar/classical-action nodes close specified classical obligations.
+The ideal digit FUP node uses EXT-COHEN-2025 and has no model-to-CUE edge.
+The actual quantum FIO, open compression and renewal estimates remain open.

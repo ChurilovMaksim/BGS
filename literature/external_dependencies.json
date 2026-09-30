@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -271,6 +271,23 @@
       "project_sources": [
         "mathematics/quadratic_noise_fixed_time_input.md",
         "literature/quadratic_noise_sources_20260929.md"
+      ]
+    },
+    {
+      "id": "EXT-COHEN-2025",
+      "authors": [
+        "Alex Cohen"
+      ],
+      "title": "Fractal uncertainty for discrete two-dimensional Cantor sets",
+      "identifier": "DOI:10.2140/apde.2025.18.743; arXiv:2206.14131v3",
+      "pinned_version": "v3 (5 October 2024); Analysis & PDE 18 (2025), 743-772",
+      "locator": "Theorem 2, printed p. 3; sharpness in Section 5.2 inspected, even-base failure derived internally",
+      "checked_on": "2026-09-30",
+      "mapping": "Both alphabets equal A_M={(r,s):r!=s}; both iterates have side N=M^k and unitary 2D Fourier normalization 1/N. Project geometry excludes orthogonal full affine torus lines for odd M, and derives exact norm 1 at every scale internally for even M>=4 by an explicit supported unit vector. Binary norm is derived internally. Ideal digit model only; no actual doubled-map FUP or nonlinear coordinate-distortion hypothesis is supplied.",
+      "project_sources": [
+        "mathematics/offdiagonal_digit_fup.md",
+        "literature/heisenberg_note_sources.md",
+        "record/heisenberg_note_review_20260930.md"
       ]
     }
   ]

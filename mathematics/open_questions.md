@@ -1,5 +1,14 @@
 # Open mathematical obligations
 
+The [Heisenberg-note audit](../record/heisenberg_note_review_20260930.md)
+closes the classical commutator action and ideal-alphabet FUP obligations.
+It leaves the actual quantum torus FIO, normalized matrix-element bounds,
+boundary/adjacent-strip channels, a controlled open-compression normal
+form, and the pair/all-order renewal identities unresolved. Neither a
+scalar finite-type estimate nor an ideal Fourier FUP derives the CUE
+plateau or BGS-TRACE-005. A natural-quantization route additionally needs
+one common all-order identification with controlled norms/holonomy.
+
 The [quadratic-noise continuation](quadratic_noise_coupling.md)
 removes microscopic occupancy from comparison of the two evolved noisy
 laws. It does not close BGS-TRACE-005. This route still needs Dyson

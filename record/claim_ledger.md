@@ -1,5 +1,34 @@
 # Claim ledger
 
+## 30 September 2026 — audit and completion of the Heisenberg note
+
+The [full audit](heisenberg_note_review_20260930.md) is **INCOMPLETE** at the
+fixed-map CUE target. Its useful subsidiary results have been completed:
+
+- **BGS-FM-014 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS:**
+  uniform physical-symbol finite type, order 14 for the plain phase and
+  order 15 under arbitrary linear additions; scalar cancellation with a
+  complete sublevel proof, under actual circle separation at least 1/7.
+- **BGS-FM-015 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS:**
+  local classical commutator action with explicit C15 remainder 1e61 t^2
+  and normalized q-derivative remainder 1e49 t^2. The maintained
+  t=tau/(2pi) preserves finite type. Quantum FIO identification is open.
+- **BGS-FUP-001 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS:**
+  exact parity classification of the ideal off-diagonal digit alphabet:
+  odd bases and the binary base have Fourier FUP; even bases >=4 have exact norm 1.
+  Cohen's pinned prior theorem is the external input; the binary norm is
+  sqrt(2/N). This is not FUP for the actual doubled map.
+
+The finite CUE cycle benchmark, determinant/tensor representations,
+quantitative conditional Fejer estimate, Weyl convention repair and
+near-unitary positive/negative-time transfer are retained in
+[supporting lemmas](../mathematics/heisenberg_trace_support.md).
+Different strip labels do not guarantee macroscopic separation; the
+submitted line classification is false and repaired, and the anisotropic
+2026 theorem does not directly apply to equal base 7. Existing pair-Abel,
+resolvent, seven-cut and symmetry results are credited as prior repository
+work. **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.**
+
 ## 30 September 2026 — simultaneous coboundary clock limit
 
 [BGS-FLOW-010](../mathematics/coboundary_joint_limit.md): **PROJECT PROOF

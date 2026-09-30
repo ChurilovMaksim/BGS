@@ -1,5 +1,18 @@
 # Current results and exact scope
 
+## Heisenberg-note completions, 30 September 2026
+
+[FM-014](frozen_phase_finite_type.md) proves scalar transversality of order
+14, and order 15 robust to linear phases. [FM-015](frozen_commutator_action.md)
+constructs a local classical commutator action with explicit derivative
+remainder that preserves transversality at the maintained fixed coupling.
+[FUP-001](offdiagonal_digit_fup.md) classifies the ideal off-diagonal
+digit alphabets by parity, using Cohen's prior criterion; its binary
+norm is exact. [Supporting identities](heisenberg_trace_support.md)
+complete the finite CUE cycle benchmark and conditional Fejer/transfer
+arguments. The [audit](../record/heisenberg_note_review_20260930.md)
+records the errors, checks, duplicates and still-open quantum/renewal arrows.
+
 ## Simultaneous random-kick limit, 30 September 2026
 
 [FLOW-010](coboundary_joint_limit.md) makes the coboundary clock theorem

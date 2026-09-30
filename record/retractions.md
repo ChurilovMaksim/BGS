@@ -93,3 +93,18 @@ explicit second embedding of K=11,p=23, where tau=10. The inverse gcd degree
 is one, and the row gcd degree is two. A direct reflected trace-set count
 independently checks the inverse polynomial gcd. The general derivative
 identities were not changed by this finite-anchor correction.
+
+## Outside Heisenberg note: corrections before promotion (30 September 2026)
+
+**ERR-023 — corrected before promotion.** The uploaded assertion that all
+contained ideal base-7 lines have direction (1,1) is false: direction
+(1,-6) persists in the limiting set. Different seven-strip labels also
+do not imply circle distance at least 1/7. The repaired geometry and
+finite-type hypotheses are in FM-014/FUP-001. The equal-base application
+of the anisotropic Jin--Zhang--Zhang theorem is outside its hypotheses;
+the ideal-model conclusion instead uses Cohen's isotropic criterion.
+Uniform o(1) Egorov errors do not give the submitted logarithmic Fejer
+rate; a quantitative summation budget is required. The raw Weyl expansion
+must include (-1)^(nm) when using ordinary physical-symbol coefficients.
+The [full audit](heisenberg_note_review_20260930.md) records all boundaries.
+These outside statements were not previously accepted repository theorems.

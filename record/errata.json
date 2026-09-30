@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-09-22",
+  "updated": "2026-09-30",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -155,6 +155,13 @@
       "title": "inverse transversality K=7,p=29 anchor",
       "disposition": "corrected",
       "downstream": "positive K=11,p=23 anchor",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-023",
+      "title": "Outside Heisenberg note: line geometry, anisotropic scope and summation/convention errors",
+      "disposition": "corrected before promotion",
+      "downstream": "ideal FUP conclusion repaired; no quantum or CUE promotion",
       "authority": "record/retractions.md"
     }
   ]

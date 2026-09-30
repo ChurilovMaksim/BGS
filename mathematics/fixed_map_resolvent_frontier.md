@@ -703,6 +703,65 @@ polynomial-step theorem or deterministic noise removal follows. The
 [author audit](../record/coboundary_joint_review_20260930.md) separates
 the analytic proof from exact algebra and finite Frechet-gradient checks.
 
+## Classical action completion and the ideal Fourier alphabet
+
+The [Heisenberg-note audit](../record/heisenberg_note_review_20260930.md)
+retains three scoped results. For the unchanged physical symbol, actual
+q-circle separation at least $1/7$ gives
+
+$$
+\max_{1\le j\le14}|D_q^j\Delta_\delta g|\ge\kappa_0,\qquad
+\max_{2\le j\le15}|D_q^j(\Delta_\delta g+\ell q)|\ge\kappa_0,
+\quad \kappa_0=\frac{4}{3}\frac{(\sqrt{101}\sin(\pi/7)-1)/100}
+{6409325/2286144}.
+$$
+
+The [finite-type proof](frozen_phase_finite_type.md) (`BGS-FM-014`)
+includes uniform scalar cancellation of order $1/14$ for the plain phase
+and $1/15$ with arbitrary linear additions. It also limits the submitted
+half-shift Hessian argument to its local Morse--Bott neighborhoods.
+
+The [classical action theorem](frozen_commutator_action.md) (`BGS-FM-015`)
+constructs a local mixed-coordinate generating function for
+$\Phi_{g_\delta}^t\circ\Phi_g^{-t}$ with
+
+$$
+s_{t,\delta}=t\Delta_\delta g+E_{t,\delta},\qquad
+\|E_{t,\delta}\|_{C^{15}}\le10^{61}t^2,\qquad
+\max_{1\le j\le15}\|D_q^jE_{t,\delta}\|_\infty\le10^{49}t^2.
+$$
+
+The analytic flow construction holds for $|t|\le10^{-8}$; finite type
+is preserved for $0<|t|\le10^{-52}$, including the maintained
+$t=\tau/(2\pi)$. This is a classical chart statement. A uniform quantum
+torus FIO with controlled amplitudes and an operator norm gap is still
+missing. Different strip labels do not imply the separation hypothesis.
+
+The [ideal-alphabet theorem](offdiagonal_digit_fup.md) (`BGS-FUP-001`)
+uses Cohen's pinned prior Fourier criterion and a corrected limiting-set
+geometry proof. For $\mathcal A_M=\{(r,s):r\ne s\}$ and $N=M^k$:
+
+| Base | Ideal two-dimensional Fourier compression |
+|---|---|
+| Odd $M\ge3$ | Some $C N^{-\beta}$ bound with $\beta>0$ |
+| $M=2$ | Exact norm $\sqrt{2/N}$ for $k\ge1$ |
+| Even $M\ge4$ | Exact norm 1 at every scale, by an explicit Fourier-supported unit vector |
+
+In base 7 the limiting set contains a skew line of direction $(1,-6)$;
+the submitted exclusion of such lines is false. Absence of perpendicular
+pairs, with closed-drawing boundary issues handled, is the relevant prior
+criterion. The 2026 anisotropic Jin--Zhang--Zhang theorem assumes unequal
+bases and cannot be specialized directly to this equal-base alphabet.
+The [source audit](../literature/heisenberg_note_sources.md) pins the exact
+theorems and limits their source-to-model use.
+
+The [supporting lemmas](heisenberg_trace_support.md) give the complete
+finite factorial CUE cycle benchmark, corrected raw/ordinary Weyl
+dictionary, an explicit conditional Fejer error budget, and near-unitary
+transfer for positive and negative times. None supplies the remaining
+actual-map quantum normal form, universal renewal weights, CUE plateau or
+joint traces at every order. BGS-TRACE-005 and BGS-BGS-001 remain open.
+
 ## Verification and remaining work
 
 The recovered supplement includes exact arithmetic replay, an independent
