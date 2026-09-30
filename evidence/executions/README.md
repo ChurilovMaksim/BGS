@@ -1,5 +1,9 @@
 # Execution evidence
 
+[20260930-signed-heisenberg.json](20260930-signed-heisenberg.json)
+records the scoped TRACE-010 checks and independently validated manuscript;
+it does not certify BGS or a full-workspace proof audit.
+
 New execution/build manifests belong here unless a scientific subproject has a
 stronger immutable historical path convention.
 

@@ -1,5 +1,31 @@
 # Claim ledger
 
+## 30 September 2026 — universal absolute obstruction and signed cubic continuation
+
+**BGS-TRACE-010 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM
++ FINITE CONTROLS.** The [proof](../mathematics/signed_heisenberg_comparison.md)
+shows that absolute pair CUE comparison for one deterministic spectrum forces
+absolute factorial cubic discrepancy at least $(1/1024+o(1))\sqrt N$
+on the stated box; the fixed-order generalization grows as $N^{k/2-1}$.
+The simultaneous unaveraged all-order absolute sufficient hypothesis
+is therefore impossible. TRACE-003 remains a valid implication; averages
+taken before the modulus and the sparse TRACE-009 pair criterion are unaffected.
+ERR-025 records the stronger boundary. TRACE-005 explicitly requires the
+signed weighted sum, with the modulus outside the complete sum.
+
+An exact arbitrary-weight low-band CUE cubic variance uses Diaconis--Evans
+Theorem 2.1(a), within its corrected stable range. Bounded weights have
+variance O(1/N); the three resonant strips have O(1/(Nd)+1/N^2).
+These are reference laws, not frozen-map estimates. A formal quadratic-phase
+trace table has rapid signed cancellation but its N=3 Toeplitz moment
+determinant is negative; no unitary construction is promoted. The available
+absolute resonant cubic bound loses a factor of order sqrt(N/d), exposing
+a need for joint signed cancellation beyond the pair-sector mass.
+The [review](signed_heisenberg_review_20260930.md) credits prior signed
+cubic work and records the next actual-map proof obligation.
+**BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** No external validation,
+Lean compilation, solution of BGS, or world-first priority is claimed.
+
 ## 30 September 2026 — independent prime-resonant summary audit
 
 **BGS-TRACE-009 — ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW +

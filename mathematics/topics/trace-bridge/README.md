@@ -7,6 +7,7 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [compensated_heisenberg_trace_control](../../compensated_heisenberg_trace_control.md)
 - [heisenberg_time_insertion](../../heisenberg_time_insertion.md)
 - [trace_to_local_statistics_bridge](../../trace_to_local_statistics_bridge.md)
+- [signed_heisenberg_comparison](../../signed_heisenberg_comparison.md) — Universal all-order absolute-norm obstruction, exact signed CUE variance and formal phase controls.
 - [two_clock_gram_falsifier](../../two_clock_gram_falsifier.md) — simple odd spectra matching the necessary Gram limit but violating the pair CUE law.
 
 - [heisenberg_trace_support](../../heisenberg_trace_support.md)

@@ -9,7 +9,11 @@ Heisenberg-scale pair-trace/mixed-resolvent estimate for the correctly
 desymmetrized frozen propagator on every compact Fourier support.
 
 **Milestone 2. Higher correlations.** Extend the model-specific estimate to
-the joint trace products required by the partition-Möbius bridge.
+the signed joint trace products required by the partition-Möbius bridge,
+starting with the factorial cubic and all three resonant strips. Retain
+the exact finite CUE counterterms. TRACE-010 excludes the simultaneous
+unaveraged all-order absolute strengthening; the actual signed estimate
+remains open.
 
 **Milestone 3. Point-process closure.** State and verify the exact unfolding,
 symmetry class, positivity/tightness, and point-process hypotheses needed to

@@ -1,5 +1,9 @@
 # Research record
 
+The [signed Heisenberg continuation](signed_heisenberg_review_20260930.md)
+records the universal absolute-norm obstruction, exact signed cubic
+calibration, a failed unitary realization check, and the next actual-map attack.
+
 The [Heisenberg-note audit](heisenberg_note_review_20260930.md) records
 three completed subsidiary results, a full disposition of the outside
 note, pinned source checks and the remaining quantum/renewal obligations.

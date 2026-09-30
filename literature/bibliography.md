@@ -342,3 +342,13 @@ the local centering facts used in FLOW-009 are proved directly.
 Exact theorem locators and the restrictions on their use are recorded in
 [the source audit](heisenberg_note_sources.md). Only Cohen is a new
 load-bearing ideal-model dependency; no general BGS theorem is imported.
+
+## Signed Heisenberg source audit (30 September 2026)
+
+Persi Diaconis and Steven N. Evans, *Linear functionals of eigenvalues of
+random matrices*, Transactions of the AMS 353 (2001), 2615--2633,
+DOI `10.1090/S0002-9947-01-02800-8`, Theorem 2.1(a), author-hosted
+Berkeley PDF printed pp. 3--4. EXT-DE-2001 is used only within its
+corrected weighted-degree bound for the low-band CUE cubic variance.
+The [source audit](signed_heisenberg_sources.md) also credits Prange's
+prior non-self-averaging warning. No source gives actual-map cancellation.

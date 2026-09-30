@@ -1,5 +1,17 @@
 # Current results and exact scope
 
+## Absolute obstruction and signed cubic continuation, 30 September 2026
+
+[TRACE-010](signed_heisenberg_comparison.md) proves that simultaneous
+unaveraged absolute pair and all-order CUE comparison is impossible: the
+cubic error must grow at least as sqrt(N) under the pair premise, with
+an explicit constant, and the fixed-order generalization grows as
+N^(k/2-1). The exact signed bridge remains viable. A low-band CUE variance
+calibrates arbitrary complex weights and resonant strips; a formal
+quadratic-phase control has rapid cancellation but fails moment positivity.
+The [review](../record/signed_heisenberg_review_20260930.md) records the
+first actual-map signed cubic attack. It and BGS remain open.
+
 ## Prime-resonant sector audit, 30 September 2026
 
 [TRACE-009](prime_resonant_sector.md) proves the exact mass criterion for

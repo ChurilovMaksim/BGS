@@ -1,5 +1,14 @@
 # Research route log
 
+## 2026-09-30 — Excluding the unaveraged absolute route; retaining the signed cubic
+
+The [continuation](signed_heisenberg_review_20260930.md) proves the
+universal pair-to-higher absolute-norm obstruction (TRACE-010). Exact CUE
+variance calibrates a signed joint-resonant test. A formal quadratic-phase
+mechanism cancels on positive cones but fails moment positivity at N=3.
+The next actual-map target is the signed factorial cubic, with its exact
+counterterms and all three resonant strips. That estimate remains open.
+
 This file records only substantive bounded research routes that materially changed the current theorem set or identified a durable obstruction. It is not a command transcript. Current claim status remains authoritative in [`claim_ledger.md`](claim_ledger.md).
 
 ## 2026-09-04 — Direct and resultant control of the mixed Cayley term

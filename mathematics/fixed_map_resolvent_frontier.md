@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-TRACE-010`, `BGS-BGS-001`
 
-**Status, 29 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 30 September 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -799,6 +799,37 @@ prime needs exclusion from the scalar test. The stronger scalar-power
 exclusion is prior FM-010 and gives no upper trace bound.
 Nonresonant powers, composite dimensions and higher joint correlations
 remain outside this reduction. TRACE-005 and BGS-BGS-001 remain open.
+
+## A universal boundary on the norm used for the deterministic target
+
+[TRACE-010](signed_heisenberg_comparison.md) proves that the unaveraged
+all-order absolute CUE trace criterion is impossible. If
+$N^{-2}\sum_{j\in[N/8,N/2]}||p_j|^2-j|\to0$, then
+$$
+\liminf N^{-1/2}N^{-3}\sum_{m,n\in[N/8,N/4]}
+|D_N(m,n,-m-n)-2(N-m-n)|\ge1/1024.
+$$
+The same obstruction grows as $N^{k/2-1}$ at every fixed $k\ge3$
+on the stated positive cones. It does not refute BGS: the exact
+microscopic bridge uses the weighted **signed** sum, with a modulus
+outside the whole sum. TRACE-003's absolute sufficient implication
+remains correct, including averages taken before the modulus; its
+simultaneous unaveraged all-order premise is excluded.
+
+The continuation calibrates the signed factorial cubic with an exact
+Haar-CUE complex variance for arbitrary low-band weights. Its reference
+root mean square scale is $O(N^{-1/2})$, with variance
+$O(1/(Nd)+1/N^2)$ on the three resonant strips. These are reference
+laws, not estimates for this map. A formal quadratic-phase trace table
+exhibits rapid signed cancellation but fails moment positivity already
+at $N=3$; it is not a unitary construction.
+
+The next direct model-specific attack is the full signed factorial cubic,
+separating $d_p\mid m$, $d_p\mid n$, and $d_p\mid m+n$ with the actual
+ordered block and retaining the nonzero CUE counterterms above the ramp.
+The pair-sector mass alone loses a factor of order $\sqrt{N/d}$ in the
+available absolute Cauchy--Schwarz estimate. No such signed actual-map
+bound is proved. TRACE-005 and BGS-BGS-001 remain open.
 
 ## Verification and remaining work
 

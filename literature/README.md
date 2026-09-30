@@ -1,5 +1,9 @@
 # Literature and external theorem dependencies
 
+[signed_heisenberg_sources.md](signed_heisenberg_sources.md) pins the
+corrected Diaconis--Evans stable moment range and credits prior
+non-self-averaging and project cubic calibrations.
+
 `literature/` records the external mathematical boundary of the BGS research
 programme. A citation is not treated as a proof merely because its title or
 abstract resembles the needed statement.

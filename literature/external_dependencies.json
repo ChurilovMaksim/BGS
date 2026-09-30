@@ -306,6 +306,24 @@
         "literature/prime_resonant_sources.md",
         "record/claim_ledger.md"
       ]
+    },
+    {
+      "id": "EXT-DE-2001",
+      "authors": [
+        "Persi Diaconis",
+        "Steven N. Evans"
+      ],
+      "title": "Linear functionals of eigenvalues of random matrices",
+      "identifier": "DOI:10.1090/S0002-9947-01-02800-8",
+      "pinned_version": "Author-hosted Berkeley tech-report 577, 19-page PDF; retrieved 30 September 2026",
+      "locator": "Theorem 2.1(a), printed pp. 3-4",
+      "checked_on": "2026-09-30",
+      "mapping": "Exact Haar-CUE joint trace moments equal Gaussian moments when both weighted degrees are <=N. All sixth, cubic/pair cross and pair/pair moments in the low-band arbitrary-weight variance have degree <=4 max I<=N. No arbitrary-Heisenberg Gaussian independence or deterministic-map theorem follows.",
+      "project_sources": [
+        "mathematics/signed_heisenberg_comparison.md",
+        "literature/signed_heisenberg_sources.md",
+        "record/claim_ledger.md"
+      ]
     }
   ]
 }

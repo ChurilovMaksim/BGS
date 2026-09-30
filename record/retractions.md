@@ -121,3 +121,17 @@ norm collisions at 29 and 97 do not create scalar exceptions: the
 selected sums are 903/1000 and 9/10. See the
 [reconstruction](prime_resonant_review_20260930.md) and TRACE-009.
 These outside claims were never accepted repository theorems.
+
+## Absolute sufficiency and the unaveraged all-order target (30 September 2026)
+
+**ERR-025 — scope strengthened; sufficient implication retained.**
+TRACE-003's triangle-inequality comparison is correct, including averages
+taken before the modulus. It must not be interpreted as a feasible
+simultaneous all-order absolute goal for one deterministic spectrum:
+[TRACE-010](../mathematics/signed_heisenberg_comparison.md) proves that
+its absolute pair CUE premise forces absolute cubic discrepancy to diverge
+at least as sqrt(N) on a fixed positive box. The viable TRACE-005 target
+is the signed weighted sum. This is a correction of the proposed norm's
+scope, not a retraction of the exact trace bridge or of BGS. The formal
+quadratic-phase control also fails moment positivity at N=3; no actual
+quantum family is inferred from its trace amplitudes and phases.

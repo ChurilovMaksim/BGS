@@ -1,5 +1,10 @@
 # Evidence
 
+The [signed Heisenberg packet](20260930/signed_heisenberg_manifest.json)
+records TRACE-010 finite controls. Its
+[execution record](executions/20260930-signed-heisenberg.json) separates
+exact algebra, focused regression, manuscript parsing and selected-page review.
+
 `evidence/` contains promoted evidence only. Promotion means that an object is useful to the current research programme; it does not mean every object is a theorem.
 
 ## Categories

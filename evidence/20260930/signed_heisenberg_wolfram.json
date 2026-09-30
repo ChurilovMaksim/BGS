@@ -1,0 +1,15 @@
+{
+  "schema": "bgs-wolfram-algebra-control-v1",
+  "date": "2026-09-30",
+  "source": "computations/verification/signed_heisenberg_checks.wl",
+  "scope": "Actually executed stateless Wolfram algebra; exact equivalent positive radical form -5-12 Sqrt[2+Sqrt[3]]. Not a proof audit or BGS computation.",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= \"{\\n\\t\\\"CubicDiscrepancy\\\":\\\"-dm - dn - ds + pp\\\",\\n\\t\\\"QuadraticTracePhase\\\":\\\"-2*mm*nn\\\",\\n\\t\\\"ConeConstant\\\":\\\"1\\\\/1024\\\",\\n\\t\\\"TwoBlockCoefficientChecks\\\":[\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue\\n\\t],\\n\\t\\\"ToeplitzDeterminantN3\\\":\\\"-5 - 12*Sqrt[2 + Sqrt[3]]\\\"\\n}\""
+      }
+    ],
+    "isError": false
+  }
+}

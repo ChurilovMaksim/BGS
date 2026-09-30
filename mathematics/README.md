@@ -1,5 +1,9 @@
 # Mathematics
 
+[signed_heisenberg_comparison.md](signed_heisenberg_comparison.md)
+proves the universal absolute-norm obstruction and separates signed
+CUE calibration from an unrealized phase table and the actual-map frontier.
+
 The [Heisenberg-note completions](../record/heisenberg_note_review_20260930.md)
 add scalar finite type, an explicit classical action remainder and an
 ideal-alphabet Fourier FUP classification, with separate quantum boundaries.

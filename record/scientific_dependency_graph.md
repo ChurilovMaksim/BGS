@@ -20,6 +20,9 @@ graph TD
   T7[BGS-TRACE-007 universal clock Abel floor]
   T8[BGS-TRACE-008 two-clock Gram falsifier]
   T3 --> T9[BGS-TRACE-009 prime-resonant sector criterion]
+  T1 --> T10[BGS-TRACE-010 absolute obstruction and signed controls]
+  T2 --> T10
+  T3 --> T10
   F1 --> T9
   F10 --> T9
   CUE1[BGS-CUE-001 Haar singular-energy reference]
@@ -102,3 +105,7 @@ The actual quantum FIO, open compression and renewal estimates remain open.
 
 TRACE-009 proves the sector criterion and spectral comb. Actual block
 trace-mass cancellation is open; there is no asserted closure edge to TRACE-005.
+
+TRACE-010 excludes the simultaneous unaveraged all-order absolute target.
+Its CUE variance and formal phase control have no closure edge to TRACE-005;
+the latter explicitly retains signed weighted cancellation.

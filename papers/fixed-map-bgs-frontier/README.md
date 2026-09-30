@@ -17,3 +17,5 @@ transfer, scoped algebraic spectral results, and obstructions to insufficient
 spectral arguments. Exact nonvanishing of traces and the explicit
 submicroscopic gap floor also leave the Heisenberg-scale model estimate
 open; this is not a positive BGS theorem.
+The TRACE-010 absolute-norm obstruction is included, with its exact CUE
+calibration clearly separated from the still-open signed model estimate.

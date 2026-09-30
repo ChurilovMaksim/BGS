@@ -55,7 +55,8 @@
     "BGS-FM-014",
     "BGS-FM-015",
     "BGS-FUP-001",
-    "BGS-TRACE-009"
+    "BGS-TRACE-009",
+    "BGS-TRACE-010"
   ],
   "edges": [
     {
@@ -346,6 +347,21 @@
     {
       "from": "BGS-TRACE-003",
       "to": "BGS-TRACE-009",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-001",
+      "to": "BGS-TRACE-010",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-002",
+      "to": "BGS-TRACE-010",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-003",
+      "to": "BGS-TRACE-010",
       "type": "scientific-prerequisite"
     }
   ],

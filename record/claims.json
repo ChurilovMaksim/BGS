@@ -45,7 +45,7 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "No current theorem supplies the model-specific Heisenberg-scale mixed cancellation/joint-trace estimate for the correctly desymmetrized fixed propagator.",
-      "closure_condition": "Prove the required model-specific Heisenberg-scale joint-trace or equivalent mixed-resolvent estimate on every compact Fourier support, then verify the stated unfolding and symmetry-class hypotheses."
+      "closure_condition": "Prove the model-specific signed weighted factorial joint-trace comparison for every fixed k and compact smooth Fourier weight, or an equivalent mixed-resolvent hierarchy, then verify the stated unfolding and symmetry-class hypotheses."
     },
     {
       "id": "BGS-CAYLEY-001",
@@ -678,7 +678,7 @@
       "manuscript": [
         "manuscript/audit_and_frontier.tex"
       ],
-      "boundary": "Sufficiency theorem only; the required model-specific Heisenberg-scale estimate is open."
+      "boundary": "Triangle-inequality sufficiency only; averaging is before modulus. TRACE-010 excludes simultaneous unaveraged all-order absolute CUE premises under pair absolute comparison. The exact signed bridge is viable but its actual-map estimate is open."
     },
     {
       "id": "BGS-TRACE-004",
@@ -700,7 +700,7 @@
     },
     {
       "id": "BGS-TRACE-005",
-      "title": "Model-specific Heisenberg-scale desymmetrized joint-trace estimate",
+      "title": "Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate",
       "state": "open",
       "ledger_status": "OPEN",
       "source": "mathematics/open_questions.md",
@@ -715,8 +715,8 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "The deterministic bridge is closed, but no current theorem proves the required weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N.",
-      "closure_condition": "Prove the correctly desymmetrized weighted joint-trace comparison, or an equivalent mixed-resolvent hierarchy, uniformly on every compact Fourier support."
+      "boundary": "No current theorem proves the signed weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N. The modulus is outside the complete sum; the simultaneous unaveraged all-order absolute strengthening is excluded by TRACE-010.",
+      "closure_condition": "For every fixed k and every compact smooth Fourier weight, prove the CUE/RMT-subtracted factorial joint-trace sum tends to zero, with the modulus outside the complete sum, after correct symmetry reduction and unfolding; or establish an equivalent mixed-resolvent hierarchy."
     },
     {
       "id": "BGS-TRACE-006",
@@ -1165,6 +1165,34 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Exact block orientation, prime order/parity and sparse-sector criterion; actual frozen-map trace mass o(1) is OPEN. Fejer baseline 1+o(1) is a sufficient unproved model hypothesis. Coherent-mode obstruction is conditional on an infinite prime subsequence. Scalar exclusions are prior FM-010; Rains describes only the Haar reference. No nonresonant/composite/all-order BGS closure or priority claim."
+    },
+    {
+      "id": "BGS-TRACE-010",
+      "title": "Universal deterministic absolute-norm obstruction against CUE and signed cancellation controls",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "source": "mathematics/signed_heisenberg_comparison.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-002",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/20260930/signed_heisenberg_checks.json",
+        "evidence/20260930/signed_heisenberg_manifest.json",
+        "evidence/20260930/signed_heisenberg_wolfram.json"
+      ],
+      "verifiers": [
+        "computations/verification/signed_heisenberg_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Unaveraged pair absolute comparison forces cubic absolute error >=(1/1024+o(1)) sqrt(N) on the specified box, and N^(k/2-1) at every fixed higher order. The signed CUE variance is a prior-law calibration in the stable band; the quadratic-phase trace table fails positivity at N=3 and is only an algebra control. Actual frozen-map signed comparison, BGS and external priority remain unproved."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

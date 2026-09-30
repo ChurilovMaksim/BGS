@@ -1,5 +1,11 @@
 # Computations
 
+[signed_heisenberg_audit.py](verification/signed_heisenberg_audit.py)
+checks exact CUE cycles/covariances against independent representations,
+finite absolute-norm bounds and a negative spectral-moment determinant.
+[Wolfram algebra](verification/signed_heisenberg_checks.wl) was actually
+evaluated. Neither certifies an asymptotic estimate for the frozen map.
+
 [prime_resonant_audit.py](verification/prime_resonant_audit.py) checks
 exact prime orders, split/nonsplit parity, -98/29/97 orbit arithmetic,
 control matrix orientation and Fejer combs. Tiny frozen coupling and

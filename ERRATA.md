@@ -30,6 +30,7 @@ mechanisms and historical context remain authoritative in
 | `ERR-022` | inverse transversality K=7,p=29 anchor | corrected | positive K=11,p=23 anchor |
 | `ERR-023` | Outside Heisenberg note: line geometry, anisotropic scope and summation/convention errors | corrected before promotion | ideal FUP conclusion repaired; no quantum or CUE promotion |
 | `ERR-024` | Outside prime-resonant summary: inverse block orientation and pointwise CUE equivalence | corrected before promotion | exact whole-sector mass criterion; no model cancellation promoted; 29/97 scalar exclusions removed |
+| `ERR-025` | Absolute trace sufficiency versus a feasible unaveraged all-order criterion | scope strengthened; sufficient implication retained | Simultaneous unaveraged absolute pair/all-order hypotheses are impossible; TRACE-005 explicitly retains signed cancellation |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

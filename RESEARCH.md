@@ -1,5 +1,13 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [signed Heisenberg continuation](record/signed_heisenberg_review_20260930.md)
+proves that the simultaneous unaveraged all-order absolute target is
+impossible under pair absolute comparison. The next direct attack retains
+the signed factorial cubic, all three resonant strips and the exact CUE
+counterterms. Reference variance and formal phase cancellation are checked;
+the latter fails a spectral moment-positivity test. Actual-map cancellation
+and the complete BGS goal remain open.
+
 The [prime-resonant audit](record/prime_resonant_review_20260930.md)
 repairs the ordered block and rejects the claimed pointwise CUE
 equivalence. It proves a whole-sector mass criterion and exact spectral

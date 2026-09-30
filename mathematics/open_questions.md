@@ -1,5 +1,13 @@
 # Open mathematical obligations
 
+The [absolute-norm obstruction](signed_heisenberg_comparison.md)
+(`BGS-TRACE-010`) excludes simultaneous unaveraged absolute pair and
+all-order comparison. TRACE-005 means the **signed** weighted discrepancy,
+with a modulus outside the entire sum. The first mixed attack is the
+factorial cubic, splitting all three resonant strips and retaining the
+exact finite CUE counterterms. The reference variance and formal phase
+control in that note are not actual-map estimates.
+
 The [prime-resonant audit](prime_resonant_sector.md) identifies the exact
 remaining sector input: for every compact positive Heisenberg window,
 prove $p^{-2}\sum_{rd_p/p\in K}|\operatorname{Tr}C_{p,d_p}^r|^2=o(1)$.
@@ -52,7 +60,7 @@ joint-trace argument to reach the all-order target.
 
 | Claim ID | Priority / role | Closure condition |
 |---|---|---|
-| `BGS-TRACE-005` | **central fixed-map bottleneck** | Prove the correctly desymmetrized weighted Heisenberg-scale joint-trace comparison, or an equivalent mixed-resolvent hierarchy, on every compact Fourier support. |
+| `BGS-TRACE-005` | **central fixed-map bottleneck** | Prove the correctly desymmetrized signed weighted Heisenberg-scale joint-trace comparison, with the modulus outside the whole sum, or an equivalent mixed-resolvent hierarchy, on every compact Fourier support. |
 | `BGS-BGS-001` | **terminal microscopic target** | Combine `BGS-TRACE-005` with the exact trace bridge, every-bandwidth extension, fixed unfolding, and correct symmetry-class hypotheses to prove the positive microscopic law for the maintained frozen map. |
 | `BGS-CAYLEY-005` | arithmetic fourth-moment frontier | Prove centered Cayley energy `(K-1)^4/p + O(K^(2+o(1)))`, or a genuinely equivalent support/divisor theorem in the intended pointwise regime. |
 | `BGS-RES-003` | analytic resonance frontier | Resolve the nonlinear analytic coboundary equation for arbitrary nonconstant real-analytic observables. |

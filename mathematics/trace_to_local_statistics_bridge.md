@@ -253,8 +253,24 @@ because a fixed compact Fourier support contains `O(N^(k-1))` lattice points,
 and then (15) is `o(1)`.
 
 Condition (17) is deliberately stated only as a sufficient condition.  It is
-far stronger than necessary; cancellation in the frequency sum or a weighted
-`L^1` estimate such as (15) may be much more attainable.
+far stronger than necessary. For an unaveraged deterministic spectrum,
+one must retain cancellation in the frequency sum: the
+[absolute-norm obstruction](signed_heisenberg_comparison.md) (`BGS-TRACE-010`)
+proves that absolute pair CUE comparison on every compact support forces
+absolute cubic error to grow at least as sqrt(N) on a fixed positive box.
+Thus (15) cannot hold simultaneously at every order in that unaveraged
+CUE setting. The implication above remains correct, including comparisons
+averaged before taking the modulus.
+
+For one fixed test, the weaker signed condition
+
+```text
+N^(-k) sum_m phihat(m/N) Delta_D,N(m) -> 0              (15S)
+```
+
+is exactly equivalent to (16), by identity (10). A modulus may be placed
+outside the entire sum in (15S). This is the viable deterministic
+`BGS-TRACE-005` closure condition; it has not been proved for the frozen map.
 
 ## 6. Extension from all compact Fourier supports — corrected 2026-09-08
 
