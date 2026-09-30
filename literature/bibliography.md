@@ -32,6 +32,14 @@ separately proves the needed discriminant is a nonzero
 integer-polynomial specialization with the stated height bounds;
 Roy's theorem alone does not give microscopic statistics.
 
+## Haar power-map reference for resonant blocks
+
+For the prime-resonant block reference, see Eric M. Rains,
+[*Images of eigenvalue distributions under power maps*](https://arxiv.org/pdf/math/0008079v1),
+Theorem 1.3 (prior Haar power-map law), and the
+[exact source mapping](prime_resonant_sources.md). It describes the
+reference power $V^{d_p}$ and supplies no deterministic cancellation.
+
 ## Universal energy floor for pair Abel sums
 
 Henry Cohn and Abhinav Kumar,

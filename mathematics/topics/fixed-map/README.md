@@ -32,3 +32,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [frozen_phase_finite_type](../../frozen_phase_finite_type.md)
 - [frozen_commutator_action](../../frozen_commutator_action.md)
 - [offdiagonal_digit_fup](../../offdiagonal_digit_fup.md)
+
+- [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.

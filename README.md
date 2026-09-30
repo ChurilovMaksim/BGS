@@ -9,6 +9,10 @@
 > **Scientific status — 30 September 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
+The [prime-resonant audit](record/prime_resonant_review_20260930.md)
+corrects the block orientation and proves an exact whole-sector mass
+criterion and spectral comb. Actual deterministic cancellation remains open.
+
 The [Heisenberg-note audit](record/heisenberg_note_review_20260930.md)
 completes uniform scalar finite type, an explicit classical commutator
 action at the fixed coupling, and a parity classification of ideal digit

@@ -1,5 +1,10 @@
 # Computations
 
+[prime_resonant_audit.py](verification/prime_resonant_audit.py) checks
+exact prime orders, split/nonsplit parity, -98/29/97 orbit arithmetic,
+control matrix orientation and Fejer combs. Tiny frozen coupling and
+asymptotic cancellation are not numerically certified.
+
 [heisenberg_note_audit.py](verification/heisenberg_note_audit.py)
 checks exact symbol/annihilator and analytic-constant arithmetic, finite
 CUE factorial cycles against two existing references, rational digit

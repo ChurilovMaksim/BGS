@@ -1,5 +1,30 @@
 # Claim ledger
 
+## 30 September 2026 — independent prime-resonant summary audit
+
+**BGS-TRACE-009 — ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW +
+EXTERNAL REFERENCE LAW + FINITE CONTROLS.** The
+[exact sector theorem](../mathematics/prime_resonant_sector.md) corrects
+the conjugation orientation and proves
+$|S_p(K)-E_p(K)|\le(b-a)/d_p+1/p$, with
+$d_p>2\log p/\log(3+2\sqrt2)$. Thus the requested resonant comparison
+vanishes exactly when the actual total normalized resonant trace mass
+does. An exact Fejer identity pulls back to a comb of shifted microscopic
+pair kernels. One coherent trace at bounded positive Heisenberg time on
+an infinite prime subsequence would obstruct pair CUE comparison.
+The actual mass estimate and that infinite-subsequence premise are
+**NOT PROVED**. The correct reference block law is Rains' prior theorem,
+not Haar CUE of the same dimension.
+
+The [audit](prime_resonant_review_20260930.md) reconstructs the selected
+invariant -98 and candidate prime set. At 29 the orbit coefficient sum
+is 903/1000; at 97 the candidate norm-colliding modes are in another
+orbit and the sum is 9/10. Both exclusions are unnecessary for the
+scalar test. The stronger scalar-power exclusion is already FM-010.
+Pointwise ensemble-leading-value requirements and the submitted
+single-mode reduction of full BGS are rejected before promotion.
+**BGS-TRACE-005 and BGS-BGS-001 remain OPEN.**
+
 ## 30 September 2026 — audit and completion of the Heisenberg note
 
 The [full audit](heisenberg_note_review_20260930.md) is **INCOMPLETE** at the

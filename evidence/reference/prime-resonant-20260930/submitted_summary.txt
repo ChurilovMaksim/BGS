@@ -1,0 +1,770 @@
+Ниже даю честное подробное summary. Главный итог: **полное доказательство исходной CUE-универсальности пока не закрыто**, но мы существенно продвинули задачу. Самый важный достигнутый результат: исходная открытая проблема сведена к очень конкретной детерминированной square-root cancellation лемме для proper-period блока в резонансных простых временах. Это уже не расплывчатая “сложность CUE”, а точный математический bottleneck.
+
+## 1. Что было целью
+
+Исходная цель:
+
+Для фиксированного детерминированного оператора
+
+$$
+U_N=e^{i\tau N A_N}M_N,\qquad \tau=10^{-80},
+$$
+
+при нечётных $N\to\infty$ доказать, что для каждого фиксированного $k\ge2$ и compact Fourier cutoff выполняется
+
+$$
+N^{-k}
+\sum_{m_1,\ldots,m_{k-1}}
+\left|
+\widehat\phi\!\left(\frac{m_1}{N},\ldots,\frac{m_{k-1}}{N}\right)
+\right|
+\left|
+D_N(m_1,\ldots,m_k)-D_N^{\mathrm{CUE}}(m_1,\ldots,m_k)
+\right|
+\to0,
+$$
+
+где $m_k=-m_1-\cdots-m_{k-1}$.
+
+Критически важно: без усреднения по $\tau$, $N$, фазам, ансамблю, параметрам. Не form factor only, не $m=o(N)$, не fixed $m$. Полное Heisenberg window:
+
+$$
+|m_a|=\Theta(N).
+$$
+
+## 2. Что удалось сделать на уровне общей стратегии
+
+Были построены и проверены три уровня программы:
+
+1. **Problem/gap map** в “Fixed Anosov CUE”: выяснено, что обычные подходы к quantum chaos и random matrix comparison не дают готового детерминированного результата. Главная трудность не в вычислении отдельных следов, а в signed/mixed cancellation всех joint traces.
+
+2. **Loop hierarchy route** в “Loop Hierarchy Target” и “Loop Proof Architecture”: выбран основной путь через mixed-resolvent/loop hierarchy плюс Weyl/modular arithmetic cancellation.
+
+3. **Weyl Trace Reduction**: начата точная конечномерная алгебраическая редукция. Именно она дала главный прогресс: выявила резонансные простые времена, proper-period факторизацию и точную недостающую лемму.
+
+Сейчас наиболее сильная формулировка оставшегося барьера:
+
+$$
+\boxed{
+|\operatorname{Tr}(C_{p,d_p}^{q_p})|\le C\sqrt p
+}
+$$
+
+для резонансных простых $p$, с фиксированным $g$ и фиксированным $\tau=10^{-80}$.
+
+Если эта оценка доказана в нужной точности, то prime-resonant $k=2$ перестаёт быть препятствием. Если она ложна, возникает серьёзный кандидат на контрмеханизм к исходной CUE-формулировке.
+
+## 3. Полностью решённые алгебраические части
+
+### 3.1. Исправлена проблема с $W_N$
+
+Исходно задано
+
+$$
+W_N(a,b)=(-1)^{ab}T_N(a,b).
+$$
+
+Для нечётных $N$ это не является внутренне определённой функцией на
+
+$$
+(\mathbb Z/N\mathbb Z)^2
+$$
+
+без выбора целочисленных представителей. Например, замена $a\mapsto a+N$ меняет знак на $(-1)^b$.
+
+Итог:
+
+- строгую алгебру надо вести через intrinsic-операторы $T_N$;
+- исходная $W_N$-формула сохраняется как section-dependent запись;
+- для безопасных простых и фиксированной секции коэффициенты переходят как
+
+$$
+\alpha(m,n)=(-1)^{mn}\widehat g(n,m).
+$$
+
+Это важное исправление: без него нельзя корректно доказывать глобальные congruence identities.
+
+### 3.2. Получена точная Weyl product law
+
+Для
+
+$$
+v=(a,b),\qquad w=(c,d),
+$$
+
+и
+
+$$
+\omega(v,w)=ad-bc,
+$$
+
+получено:
+
+$$
+T_N(v)T_N(w)
+=
+e_N\!\left(2^{-1}\omega(v,w)\right)T_N(v+w).
+$$
+
+След:
+
+$$
+\operatorname{Tr}T_N(a,b)
+=
+\begin{cases}
+N,&a\equiv b\equiv0\pmod N,\\
+0,&\text{иначе}.
+\end{cases}
+$$
+
+Это полностью закрытая часть.
+
+### 3.3. Получена точная Egorov-ковариантность
+
+Метаплектический оператор $M_N$ реализует
+
+$$
+M_N^{-1}T_N(v)M_N=T_N(Sv),
+$$
+
+где
+
+$$
+S=
+\begin{pmatrix}
+3&-4\\
+-2&3
+\end{pmatrix}.
+$$
+
+Проверено:
+
+$$
+\det S=1,\qquad \operatorname{Tr}S=6,
+$$
+
+характеристический полином:
+
+$$
+\lambda^2-6\lambda+1,
+$$
+
+собственные значения:
+
+$$
+3\pm2\sqrt2.
+$$
+
+То есть классическая cat-map часть гиперболична.
+
+## 4. Полностью вычислен фиксированный символ $g$
+
+Был вычислен конечный Fourier support для
+
+$$
+g(q,p)=\sum_{n,m}\widehat g(n,m)e^{2\pi i(nq+mp)}.
+$$
+
+Важное исправление: степень по $q$ не $\le8$, а доходит до $9$. Носитель конечен, всего $32$ ненулевых моды.
+
+Ключевые свойства:
+
+$$
+\widehat g(-n,-m)=\overline{\widehat g(n,m)},
+$$
+
+то есть $g$ действителен.
+
+Также:
+
+$$
+\widehat g(0,0)=0,
+$$
+
+и
+
+$$
+\|\widehat g\|_1
+=
+\frac{19}{20}+\frac{\sqrt{101}}{50}.
+$$
+
+Полный список коэффициентов был передан в последнюю итерацию “Weyl Trace Reduction”. Он теперь зафиксирован как рабочий пакет данных.
+
+## 5. Экспонента kick-оператора сведена к twisted convolution
+
+Положим
+
+$$
+B_N=e^{i\tau N A_N}.
+$$
+
+В intrinsic $T_N$-базисе:
+
+$$
+A_N=\sum_v\alpha_N(v)T_N(v).
+$$
+
+Тогда получено точное абсолютно сходящееся разложение:
+
+$$
+B_N=\sum_v\beta_N(v)T_N(v),
+$$
+
+где
+
+$$
+\boxed{
+\beta_N(v)
+=
+\sum_{\ell\ge0}
+\frac{(i\tau N)^\ell}{\ell!}
+\alpha_N^{\star\ell}(v)
+}
+$$
+
+и $\star$ это twisted convolution, задаваемая Weyl product law.
+
+Получена грубая, но строгая оценка:
+
+$$
+\sum_v|\beta_N(v)|
+\le
+\exp\!\left(
+|\tau|N\|\widehat g\|_1
+\right)
+=
+\exp\!\left(
+|\tau|N
+\left(
+\frac{19}{20}+\frac{\sqrt{101}}{50}
+\right)
+\right).
+$$
+
+Это полностью решённая редукционная часть.
+
+## 6. Следы $p_N(r)$ сведены к конечным modular sums
+
+Было выведено:
+
+$$
+p_N(r)=\operatorname{Tr}\left((B_NM_N)^r\right)
+$$
+
+как конечная сумма по векторам
+
+$$
+v_1,\ldots,v_r\in(\mathbb Z/N\mathbb Z)^2,
+$$
+
+с фазами из симплектической формы и trace-kernel
+
+$$
+K_r(u)=\operatorname{Tr}\left(T_N(u)M_N^r\right).
+$$
+
+Главное: нельзя просто заменить условие на
+
+$$
+\sum_j S^{-j}v_j=0.
+$$
+
+Правильная структура задаётся solvability/stationary congruence conditions, связанными с
+
+$$
+I-S^r.
+$$
+
+Это важный результат: он показал, где именно сидят резонансы.
+
+## 7. Полностью выписан $k=2$ объект и CUE-бенчмарк
+
+Для $k=2$:
+
+$$
+D_N(m,-m)=p_N(m)p_N(-m)-N.
+$$
+
+Так как $U_N$ унитарен,
+
+$$
+p_N(-m)=\overline{p_N(m)},
+$$
+
+поэтому
+
+$$
+\boxed{
+D_N(m,-m)=|p_N(m)|^2-N.
+}
+$$
+
+CUE benchmark из данной формулы циклов даёт для $m\neq0$:
+
+$$
+D_N^{\mathrm{CUE}}(m,-m)
+=
+-(N-|m|)_+.
+$$
+
+Эквивалентно, CUE-цель для $k=2$ есть
+
+$$
+\boxed{
+|p_N(m)|^2
+\sim
+\min(|m|,N)
+}
+$$
+
+в Heisenberg window.
+
+Именно поэтому нельзя довольствоваться “малостью следа”. В CUE масштабе след должен иметь квадрат примерно порядка $N$, а не $o(1)$ и не $N^2$.
+
+## 8. Полностью выписан $k=3$ distinct-index объект
+
+При
+
+$$
+a+b+c=0
+$$
+
+получено:
+
+$$
+\boxed{
+D_N(a,b,c)
+=
+p_N(a)p_N(b)p_N(c)
+-p_N(a+b)p_N(c)
+-p_N(a+c)p_N(b)
+-p_N(b+c)p_N(a)
++2N.
+}
+$$
+
+Это полезно для следующего этапа, но главный барьер уже виден на $k=2$.
+
+## 9. Обнаружена резонансная prime-подпоследовательность
+
+Для нечётных простых $p$ введено
+
+$$
+\chi_p=\left(\frac{2}{p}\right).
+$$
+
+Ключевой резонанс:
+
+$$
+\boxed{
+S^{p-\chi_p}\equiv I\pmod p.
+}
+$$
+
+То есть при
+
+$$
+N=p,\qquad m_p=p-\chi_p,
+$$
+
+мы попадаем прямо в Heisenberg window:
+
+$$
+m_p=\Theta(p).
+$$
+
+И это не редкая техническая деталь, а встроенная арифметическая структура cat-map.
+
+Следствие: $M_p^{m_p}$ скаляризуется, то есть
+
+$$
+M_p^{m_p}=\zeta_p I
+$$
+
+с фазой $|\zeta_p|=1$.
+
+Тогда
+
+$$
+\operatorname{Tr}\left((B_pM_p)^{m_p}\right)
+=
+\zeta_p\operatorname{Tr}Q_p,
+$$
+
+где $Q_p$ это упорядоченное произведение conjugated kicks.
+
+Это ключевой прорыв в редукции: резонансная проблема превращается в вопрос о следе одного конкретного ordered product.
+
+## 10. Получена pre-asymptotic опасность масштаба $p^2$
+
+В резонансных простых временах perturbative regime даёт:
+
+$$
+|p_p(m_p)|^2
+=
+p^2\left(1+O(\tau p^2C_g)\right)
+$$
+
+при
+
+$$
+\tau p^2 C_g\ll1.
+$$
+
+Поскольку
+
+$$
+\tau=10^{-80},
+$$
+
+этот режим огромен, примерно до масштабов порядка $p\ll10^{40}$, но он всё же конечен. Поэтому это не строгий контрпример при $p\to\infty$, но это сильный сигнал:
+
+- в pre-asymptotic режиме след когерентен, порядка $p^2$;
+- CUE требует порядка $p$;
+- значит, если CUE всё же верно, оно должно возникать из настоящей непертурбативной cancellation при больших $p$.
+
+Это важный отрицательный прогресс: простое “$\tau$ маленькое” не решает задачу.
+
+## 11. Proper-period факторизация
+
+Введён порядок
+
+$$
+d_p=\operatorname{ord}_p(S),
+$$
+
+и
+
+$$
+q_p=\frac{p-\chi_p}{d_p}.
+$$
+
+Тогда резонансный ordered product факторизуется как
+
+$$
+\boxed{
+Q_p=C_{p,d_p}^{q_p}.
+}
+$$
+
+Здесь
+
+$$
+C_{p,d}
+=
+\prod_{j=0}^{d-1}
+\exp(i\tau p A_{p,j}),
+$$
+
+где
+
+$$
+A_{p,j}=M_p^{-j}A_pM_p^j.
+$$
+
+То есть задача сведена к spectrum/block problem:
+
+$$
+\operatorname{Tr}Q_p
+=
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right).
+$$
+
+Prime-resonant $k=2$ CUE эквивалентен
+
+$$
+\boxed{
+\left|
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|^2
+=
+p-\frac{1+\chi_p}{2}+o(p).
+}
+$$
+
+В частности нужна оценка
+
+$$
+\boxed{
+\left|
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|
+=
+O(\sqrt p).
+}
+$$
+
+## 12. Проверена точная scalar obstruction и в основном устранена
+
+Был получен критерий:
+
+One-period orbit-sum является скалярным тогда и только тогда, когда все ненулевые Weyl coefficients в этой orbit-sum исчезают.
+
+Для конкретного фиксированного $g$ был найден invariant, в частности selected invariant $-98$, и выделены collision primes:
+
+$$
+\{1,2,3,5,11,13,29,97\}.
+$$
+
+Итог:
+
+Для safe primes
+
+$$
+p>17,\qquad p\notin\{29,97\},
+$$
+
+точная scalarization one-period orbit-sum исключена.
+
+Это важно, но недостаточно. Non-scalar не означает square-root trace cancellation. Можно быть non-scalar и всё равно иметь слишком большой след нужной степени.
+
+## 13. Получена transversality identity
+
+Был вычислен ключевой симплектический показатель:
+
+$$
+\boxed{
+\omega(v,Sv)=-2(a^2-2b^2)
+}
+$$
+
+для
+
+$$
+v=(a,b).
+$$
+
+Также:
+
+$$
+\det(I+S)=8.
+$$
+
+Это исключает часть forced degeneracies и показывает, какие Weyl directions действительно transverse.
+
+Но это не закрывает задачу, потому что constrained phase имеет radical directions. То есть обычная логика “невырожденная квадратичная фаза даёт square-root bound” не работает напрямую.
+
+## 14. Арифметика $q_p$: split и nonsplit действительно разные
+
+Был сделан q-arithmetic split.
+
+Для
+
+$$
+\chi_p=\left(\frac{2}{p}\right)
+$$
+
+есть два режима.
+
+### Split primes: $\chi_p=1$
+
+Тогда
+
+$$
+m_p=p-1.
+$$
+
+Анализ показывает, что появляется особая power-проблема, связанная с малым $q_p$, в частности режимом типа $q_p=2$ в split safe case.
+
+Ключевая целевая оценка:
+
+$$
+\left|\operatorname{Tr}(C_{p,d_p}^2)\right|=O(\sqrt p)
+$$
+
+для соответствующего split-блока.
+
+### Nonsplit primes: $\chi_p=-1$
+
+Тогда
+
+$$
+m_p=p+1.
+$$
+
+Получено:
+
+$$
+d_p\mid p+1,
+$$
+
+и
+
+$$
+q_p=\frac{p+1}{d_p}
+$$
+
+нечётен.
+
+То есть nonsplit случай нельзя свести к тому же $q_p=2$ механизму. Для него требуется отдельная odd-$q_p$ cancellation theory.
+
+## 15. Последний результат с полным $g$: что он реально даёт
+
+Последняя итерация “Weyl Trace Reduction” с полным символом $g$ дала формулировку в терминах
+
+$$
+\mathfrak G_p
+=
+\left|
+\frac1p
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|.
+$$
+
+Желаемая bound:
+
+$$
+\mathfrak G_p=O(p^{-1/2})
+$$
+
+эквивалентна
+
+$$
+|\operatorname{Tr}(C_{p,d_p}^{q_p})|=O(\sqrt p).
+$$
+
+Но важная честная оценка: это не доказано как завершённая теорема. Это точная нормализованная форма missing theorem. Вычисление зафиксировало структуру, но Wolfram не закрыл саму cancellation.
+
+Что стало ясно:
+
+- radical directions существуют;
+- cancellation должна идти через amplitude/time-ordered product structure фиксированного $g$;
+- нельзя закрыть задачу только non-scalarity, transversality или “$\tau$ очень маленькое”;
+- нужно доказать новую детерминированную block-spectrum cancellation lemma.
+
+## 16. Что можно считать главным достигнутым прорывом
+
+Главный прогресс не в том, что исходная CUE-теорема доказана. Она не доказана. Главный прогресс в другом:
+
+Мы свели колоссальную исходную задачу к точному узкому месту уже на $k=2$:
+
+$$
+\boxed{
+\text{Для резонансных простых }p
+\text{ доказать }
+|\operatorname{Tr}(C_{p,d_p}^{q_p})|\le C\sqrt p.
+}
+$$
+
+Причём:
+
+- $C_{p,d_p}$ определён явно через фиксированный $g$;
+- $d_p=\operatorname{ord}_p(S)$;
+- $q_p=(p-\chi_p)/d_p$;
+- split/nonsplit режимы классифицированы;
+- exact scalar obstruction для фиксированного $g$ почти всюду устранена;
+- transversality вычислена;
+- radical directions идентифицированы как настоящий remaining difficulty.
+
+Это уже рабочий “prize lemma”. Она значительно точнее, чем исходное “доказать CUE”.
+
+## 17. Что остаётся открытым
+
+### Открыто 1: prime-resonant $k=2$
+
+Нужно доказать:
+
+$$
+\left|
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|^2
+=
+p-\frac{1+\chi_p}{2}+o(p).
+$$
+
+Более грубо достаточно:
+
+$$
+\left|
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|
+=
+O(\sqrt p).
+$$
+
+### Открыто 2: uniform $k=2$ во всём Heisenberg window
+
+Даже если prime-resonant subsequence закрыть, нужно доказать равномерно:
+
+$$
+\sup_{|m|/N\in I}
+\frac{
+\left|
+|p_N(m)|^2-\min(|m|,N)
+\right|
+}{N}
+\to0.
+$$
+
+### Открыто 3: общий $k$
+
+Для $k\ge3$ нужно доказать mixed joint-trace cancellation:
+
+$$
+D_N(m_1,\ldots,m_k)-D_N^{\mathrm{CUE}}(m_1,\ldots,m_k)
+$$
+
+на всей compact Fourier support области.
+
+### Открыто 4: переход к Sine$_2$ point process
+
+Даже после $k$-point factorial correlation нужно отдельно закрыть tightness/uniform integrability для rooted point process convergence.
+
+## 18. Точный следующий математический шаг
+
+Следующая лемма должна быть сформулирована так.
+
+### Split/nonsplit block-spectrum cancellation lemma
+
+Для safe primes $p>17$, $p\notin\{29,97\}$, пусть
+
+$$
+\chi_p=\left(\frac{2}{p}\right),\qquad
+m_p=p-\chi_p,\qquad
+d_p=\operatorname{ord}_p(S),\qquad
+q_p=\frac{m_p}{d_p}.
+$$
+
+Пусть
+
+$$
+C_{p,d_p}
+=
+\prod_{j=0}^{d_p-1}
+\exp(i\tau p A_{p,j}),
+\qquad
+A_{p,j}=M_p^{-j}A_pM_p^j.
+$$
+
+Тогда нужно доказать:
+
+$$
+\boxed{
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+=
+O(\sqrt p).
+}
+$$
+
+С точным CUE leading square желательно:
+
+$$
+\boxed{
+\left|
+\operatorname{Tr}\left(C_{p,d_p}^{q_p}\right)
+\right|^2
+=
+p-\frac{1+\chi_p}{2}+o(p).
+}
+$$
+
+Эта лемма должна быть доказана:
+
+- отдельно для split case, где ключевой риск $q_p=2$;
+- отдельно для nonsplit case, где $q_p$ нечётен;
+- с контролем radical-direction amplitude.
+
+## 19. Что я считаю текущим итогом в одной фразе
+
+Мы не получили полного доказательства CUE, но получили серьёзную редукцию: **исходная детерминированная микроскопическая CUE-задача уже на уровне $k=2$ сведена к конкретной proper-period block-spectrum square-root cancellation теореме для фиксированного символа $g$; эта теорема является главным оставшимся узким местом и наиболее вероятной точкой настоящего прорыва или контрпримера.**

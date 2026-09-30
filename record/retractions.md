@@ -108,3 +108,16 @@ rate; a quantitative summation budget is required. The raw Weyl expansion
 must include (-1)^(nm) when using ordinary physical-symbol coefficients.
 The [full audit](heisenberg_note_review_20260930.md) records all boundaries.
 These outside statements were not previously accepted repository theorems.
+
+## Outside prime-resonant summary: corrections before promotion (30 September 2026)
+
+**ERR-024 — corrected before promotion.** For $U=e^{itA}M$, the
+left-to-right ordered block uses $M^jAM^{-j}$, not $M^{-j}AM^j$.
+The associated symplectic transversality sign changes with orientation.
+Pointwise agreement of a single trace square with its Haar expectation
+is not equivalent to the weighted pair target. The summary's claimed
+reduction of full BGS to one square-root bound is rejected. Candidate
+norm collisions at 29 and 97 do not create scalar exceptions: the
+selected sums are 903/1000 and 9/10. See the
+[reconstruction](prime_resonant_review_20260930.md) and TRACE-009.
+These outside claims were never accepted repository theorems.

@@ -19,6 +19,9 @@ graph TD
   T6[BGS-TRACE-006 clustered Abel and time-window boundary]
   T7[BGS-TRACE-007 universal clock Abel floor]
   T8[BGS-TRACE-008 two-clock Gram falsifier]
+  T3 --> T9[BGS-TRACE-009 prime-resonant sector criterion]
+  F1 --> T9
+  F10 --> T9
   CUE1[BGS-CUE-001 Haar singular-energy reference]
   FLOW1[BGS-FLOW-001 finite coboundary phase bound]
   FLOW2[BGS-FLOW-002 second-order radial obstruction]
@@ -96,3 +99,6 @@ the fixed-map BGS claim.
 The scalar/classical-action nodes close specified classical obligations.
 The ideal digit FUP node uses EXT-COHEN-2025 and has no model-to-CUE edge.
 The actual quantum FIO, open compression and renewal estimates remain open.
+
+TRACE-009 proves the sector criterion and spectral comb. Actual block
+trace-mass cancellation is open; there is no asserted closure edge to TRACE-005.

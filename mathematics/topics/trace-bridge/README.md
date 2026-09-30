@@ -10,3 +10,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [two_clock_gram_falsifier](../../two_clock_gram_falsifier.md) — simple odd spectra matching the necessary Gram limit but violating the pair CUE law.
 
 - [heisenberg_trace_support](../../heisenberg_trace_support.md)
+
+- [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.

@@ -1,5 +1,16 @@
 # Current results and exact scope
 
+## Prime-resonant sector audit, 30 September 2026
+
+[TRACE-009](prime_resonant_sector.md) proves the exact mass criterion for
+the full prime-resonant sector, its Fejer spectral-comb representation
+and a conditional one-coherent-mode obstruction. The product orientation
+is corrected; -98 and the alleged exceptional primes are reconstructed,
+and neither 29 nor 97 needs exclusion from the scalar test. Rains' prior
+power-map theorem supplies the correct Haar reference. Actual frozen-map
+sector cancellation and the complete BGS target remain open; see the
+[independent reconstruction](../record/prime_resonant_review_20260930.md).
+
 ## Heisenberg-note completions, 30 September 2026
 
 [FM-014](frozen_phase_finite_type.md) proves scalar transversality of order

@@ -1138,6 +1138,33 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Ideal isotropic digit sets only: odd bases and M=2 pass; even M>=4 have exact norm 1 at every scale by a supported discrete unit vector. Binary norm sqrt(2/N). Prior Cohen criterion; no exponent extracted for base 7, nonlinear distortion theorem or actual-map coding."
+    },
+    {
+      "id": "BGS-TRACE-009",
+      "title": "Prime-resonant sector mass criterion, exact spectral comb and coherent-mode obstruction",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL REFERENCE LAW + FINITE CONTROLS",
+      "source": "mathematics/prime_resonant_sector.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-010",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [
+        "EXT-RAINS-2003"
+      ],
+      "evidence": [
+        "evidence/20260930/prime_resonant_checks.json",
+        "evidence/20260930/prime_resonant_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/prime_resonant_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Exact block orientation, prime order/parity and sparse-sector criterion; actual frozen-map trace mass o(1) is OPEN. Fejer baseline 1+o(1) is a sufficient unproved model hypothesis. Coherent-mode obstruction is conditional on an infinite prime subsequence. Scalar exclusions are prior FM-010; Rains describes only the Haar reference. No nonresonant/composite/all-order BGS closure or priority claim."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

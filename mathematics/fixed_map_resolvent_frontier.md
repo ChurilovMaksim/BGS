@@ -762,6 +762,44 @@ transfer for positive and negative times. None supplies the remaining
 actual-map quantum normal form, universal renewal weights, CUE plateau or
 joint traces at every order. BGS-TRACE-005 and BGS-BGS-001 remain open.
 
+## Prime-resonant blocks and the actual sector obligation
+
+The [prime-resonant audit](prime_resonant_sector.md) (`BGS-TRACE-009`)
+retains the exact left-to-right block
+$$
+C_{p,d_p}=\prod_{j=0}^{d_p-1}e^{i\tau p M_p^jA_pM_p^{-j}},\qquad
+U_p^{rd_p}=\zeta_p^r C_{p,d_p}^r.
+$$
+The known order relation $d_p\mid p-(2/p)$ and the integer determinant
+give $d_p>2\log p/\log(3+2\sqrt2)$. For a compact window
+$K\subset[a,b]\subset(0,\infty)$, let $S_p(K)$ be the normalized
+absolute resonant comparison and $E_p(K)$ the normalized actual
+trace-square mass. Then
+$$
+|S_p(K)-E_p(K)|\le(b-a)/d_p+1/p.
+$$
+Thus the whole-sector comparison vanishes exactly when its actual
+mass does. A single deterministic trace need not equal its CUE ensemble
+expectation. The correct reference block is a Haar power, whose smaller
+independent component law is Rains' prior theorem; it is not Haar CUE
+of dimension $p$.
+
+The exact Fejer pullback is an average of microscopic pair kernels
+centered at all rational shifts $h/d_p$. A baseline $1+o(1)$ for that
+comb would dispose of the sector; this quantitative hypothesis remains
+unproved for the frozen map. Conversely, a trace of size at least $cp$
+at positive bounded Heisenberg times on an infinite prime subsequence
+would already obstruct the pair law through a positive time-mass.
+Finite coherence at $|\tau|p^2\ll1$ is not such a subsequence.
+
+The selected invariant -98 and candidate prime list were reproduced
+exactly. At 29 the selected orbit sum is 903/1000; at 97 the norm-colliding
+candidate points lie in another orbit and the sum is 9/10. Neither
+prime needs exclusion from the scalar test. The stronger scalar-power
+exclusion is prior FM-010 and gives no upper trace bound.
+Nonresonant powers, composite dimensions and higher joint correlations
+remain outside this reduction. TRACE-005 and BGS-BGS-001 remain open.
+
 ## Verification and remaining work
 
 The recovered supplement includes exact arithmetic replay, an independent

@@ -138,7 +138,7 @@ def main() -> None:
                         'frozen_total_minors', 'frozen_arithmetic_traces',
                         'quadratic_noise_dynamics', 'quadratic_noise_clock',
                         'coboundary_mobius_diffusion', 'coboundary_joint_limit',
-                        'heisenberg_note_audit'}:
+                        'heisenberg_note_audit', 'prime_resonant_audit'}:
             cmd+=['--output',str(args.logs/(p.stem+'.json'))]
         elif p.stem=='extremal_resonance':
             extremal_producer=True

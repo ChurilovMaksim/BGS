@@ -1,5 +1,14 @@
 # Open mathematical obligations
 
+The [prime-resonant audit](prime_resonant_sector.md) identifies the exact
+remaining sector input: for every compact positive Heisenberg window,
+prove $p^{-2}\sum_{rd_p/p\in K}|\operatorname{Tr}C_{p,d_p}^r|^2=o(1)$.
+An equivalent absolute sector comparison has only an $O_K(1/d_p+1/p)$
+reference correction. A sufficient spectral condition is Fejer comb energy
+$1+o(1)$ across shifted microscopic pairs. Scalar exclusion and a bound
+for one selected mode do not establish it. Nonresonant times, composite
+dimensions and higher joint traces remain separate TRACE-005 obligations.
+
 The [Heisenberg-note audit](../record/heisenberg_note_review_20260930.md)
 closes the classical commutator action and ideal-alphabet FUP obligations.
 It leaves the actual quantum torus FIO, normalized matrix-element bounds,

@@ -289,6 +289,23 @@
         "literature/heisenberg_note_sources.md",
         "record/heisenberg_note_review_20260930.md"
       ]
+    },
+    {
+      "id": "EXT-RAINS-2003",
+      "authors": [
+        "Eric M. Rains"
+      ],
+      "title": "Images of eigenvalue distributions under power maps",
+      "identifier": "arXiv:math/0008079; Probability Theory and Related Fields 125 (2003), 522–538",
+      "pinned_version": "arXiv:math/0008079v1 (10 August 2000), full primary PDF",
+      "locator": "Theorem 1.3, equation (8), PDF pp. 2–3",
+      "checked_on": "2026-09-30",
+      "mapping": "For Haar V in U(n), eigenvalues of V^d are the union of d independent Haar spectra of sizes ceil((n-i)/d), 0<=i<d. Project n=p and power d=d_p. Used only for the correct reference block law; not needed for the elementary sector criterion and gives no deterministic block independence or cancellation.",
+      "project_sources": [
+        "mathematics/prime_resonant_sector.md",
+        "literature/prime_resonant_sources.md",
+        "record/claim_ledger.md"
+      ]
     }
   ]
 }

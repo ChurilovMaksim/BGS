@@ -1,5 +1,11 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [prime-resonant audit](record/prime_resonant_review_20260930.md)
+repairs the ordered block and rejects the claimed pointwise CUE
+equivalence. It proves a whole-sector mass criterion and exact spectral
+comb, and reproduces -98/29/97 without scalar exceptions at the latter
+two primes. The actual frozen-map trace-mass estimate remains open.
+
 The [Heisenberg-note audit](record/heisenberg_note_review_20260930.md)
 adds uniform scalar finite type, an explicit classical commutator action
 at the fixed coupling, and a parity classification of ideal digit Fourier
