@@ -13,3 +13,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [heisenberg_trace_support](../../heisenberg_trace_support.md)
 
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
+
+- [resonant_cubic_density_control](../../resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.

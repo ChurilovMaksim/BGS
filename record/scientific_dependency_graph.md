@@ -23,6 +23,9 @@ graph TD
   T1 --> T10[BGS-TRACE-010 absolute obstruction and signed controls]
   T2 --> T10
   T3 --> T10
+  T1 --> T11[BGS-TRACE-011 resonant density and critical tails]
+  T9 --> T11
+  T10 --> T11
   F1 --> T9
   F10 --> T9
   CUE1[BGS-CUE-001 Haar singular-energy reference]

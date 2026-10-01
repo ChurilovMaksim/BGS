@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -317,12 +317,14 @@
       "identifier": "DOI:10.1090/S0002-9947-01-02800-8",
       "pinned_version": "Author-hosted Berkeley tech-report 577, 19-page PDF; retrieved 30 September 2026",
       "locator": "Theorem 2.1(a), printed pp. 3-4",
-      "checked_on": "2026-09-30",
-      "mapping": "Exact Haar-CUE joint trace moments equal Gaussian moments when both weighted degrees are <=N. All sixth, cubic/pair cross and pair/pair moments in the low-band arbitrary-weight variance have degree <=4 max I<=N. No arbitrary-Heisenberg Gaussian independence or deterministic-map theorem follows.",
+      "checked_on": "2026-10-01",
+      "mapping": "Exact Haar-CUE joint trace moments equal Gaussian moments when both weighted degrees are <=N. All sixth, cubic/pair cross and pair/pair moments in the low-band arbitrary-weight variance have degree <=4 max I<=N. No arbitrary-Heisenberg Gaussian independence or deterministic-map theorem follows. TRACE-011 uses background dimension H=N-K and verifies 4bN<=H for the mixed-cluster second/fourth/sixth moments. Its all-band pair covariance and occupancy controls are separately derived by finite determinants, without Gaussian matching beyond the stable range.",
       "project_sources": [
         "mathematics/signed_heisenberg_comparison.md",
         "literature/signed_heisenberg_sources.md",
-        "record/claim_ledger.md"
+        "record/claim_ledger.md",
+        "mathematics/resonant_cubic_density_control.md",
+        "literature/resonant_density_sources.md"
       ]
     }
   ]

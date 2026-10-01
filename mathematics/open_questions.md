@@ -1,5 +1,13 @@
 # Open mathematical obligations
 
+[TRACE-011](resonant_cubic_density_control.md) supplies a conditional
+resonant cubic deletion: prove the actual block mass $E_p\to0$ and a
+bounded averaged local occupancy moment of any order s>3, or critical
+cubic density uniform integrability. A quantitative alternative is
+$E_p=O(1/d_p)$ and $M_4(p)=o(d_p)$. These inputs remain open. The new
+pair-compatible rare-cluster counterexample rules out deriving the needed
+cubic tails from pair tests and spectral positivity alone.
+
 The [absolute-norm obstruction](signed_heisenberg_comparison.md)
 (`BGS-TRACE-010`) excludes simultaneous unaveraged absolute pair and
 all-order comparison. TRACE-005 means the **signed** weighted discrepancy,

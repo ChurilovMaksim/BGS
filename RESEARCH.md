@@ -1,5 +1,12 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [1 October density continuation](record/resonant_density_review_20261001.md)
+proves a signed resonant cubic bound without the cardinality loss and
+identifies the sharp critical third-moment tail boundary. A realizable
+rare-cluster obstruction persists through every signed CUE pair test.
+For the unchanged frozen map, block mass and local spectral tail estimates
+remain the next explicit inputs; neither they nor BGS are proved.
+
 The [signed Heisenberg continuation](record/signed_heisenberg_review_20260930.md)
 proves that the simultaneous unaveraged all-order absolute target is
 impossible under pair absolute comparison. The next direct attack retains

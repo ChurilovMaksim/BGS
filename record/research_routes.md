@@ -1,5 +1,14 @@
 # Research route log
 
+## 2026-10-01 — Density-controlled resonant deletion and critical clusters
+
+The [review](resonant_density_review_20261001.md) closes the generic
+three-strip cubic question under local density control, with budget
+$C_W\sqrt{E_N M_4(N)}$. Realizable rare clusters refute the critical
+bounded-third-moment strengthening, even after every signed CUE pair
+test is preserved. The actual block mass and density hypotheses remain
+open; the fixed map and complete goal are unchanged.
+
 ## 2026-09-30 — Excluding the unaveraged absolute route; retaining the signed cubic
 
 The [continuation](signed_heisenberg_review_20260930.md) proves the

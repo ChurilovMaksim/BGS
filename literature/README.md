@@ -1,5 +1,9 @@
 # Literature and external theorem dependencies
 
+[resonant_density_sources.md](resonant_density_sources.md) records the
+reused Diaconis--Evans degree gate, independently derived determinant
+bounds, related prior work and the absence of a priority claim.
+
 [signed_heisenberg_sources.md](signed_heisenberg_sources.md) pins the
 corrected Diaconis--Evans stable moment range and credits prior
 non-self-averaging and project cubic calibrations.

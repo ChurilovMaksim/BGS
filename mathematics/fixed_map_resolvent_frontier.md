@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-TRACE-010`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
-**Status, 30 September 2026.** The fixed-map BGS target is open. This chapter
+**Status, 1 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -830,6 +830,77 @@ ordered block and retaining the nonzero CUE counterterms above the ramp.
 The pair-sector mass alone loses a factor of order $\sqrt{N/d}$ in the
 available absolute Cauchy--Schwarz estimate. No such signed actual-map
 bound is proved. TRACE-005 and BGS-BGS-001 remain open.
+
+## Resonant cubic deletion from local spectral density
+
+**Claim ID:** `BGS-TRACE-011`. The [full proof](resonant_cubic_density_control.md)
+closes a conditional sector question and identifies a sharp tail obstruction.
+It gives no unconditional Heisenberg estimate for the frozen map.
+
+For the occupancies $n_h$ of the $N$ intervals of length $1/N$, put
+$M_s=N^{-1}\sum_h n_h^s$. Fix $0<a<b$, $2b<1$, positive times in
+$[aN,bN]$, and let $E_N=N^{-2}\sum_{j\in[aN,2bN],d\mid j}|p_j|^2$.
+For every compact smooth complex weight W, the signed union of the three
+resonant strips satisfies
+$$
+\left|N^{-3}\sum_{\substack{m,n\in[aN,bN]\\d\mid m\text{ or }d\mid n\text{ or }d\mid(m+n)}}
+ W(m/N,n/N)p_mp_n\overline{p_{m+n}}\right|
+ \le C_W\sqrt{E_N M_4}.
+$$
+The modulus is outside the entire sum. More generally, for $3<s\le4$,
+the bound is $C_{W,s}E_N^{(s-3)/(s-2)}M_s^{1/(s-2)}$.
+It has no cardinality loss. With $Q_N=N^{-2}\sum_{j\in[aN,2bN]}|p_j|^2$
+and $\ell=|[aN,bN]\cap\mathbb Z|/N$, the factorial counterterms cost at most
+$$
+\|W\|_\infty\left[3\ell E_N+6(\ell/d+1/N)Q_N
+                   +12b\ell(\ell/d+1/N)\right].
+$$
+Therefore $d$ tending to infinity, $E$ tending to zero and bounded $M_s$ for
+some $s>3$ delete the full resonant factorial cubic. Critical cubic uniform
+integrability is an alternative to the higher moment. Bounded $M_3$ alone fails.
+
+The proof retains phases. A positive Gaussian density at scale 1/N has
+Fourier coefficients $e^{-(m/N)^2}p_m/N$, and its $L^s$ norm to the $s$ power
+is comparable to $M_s$. Smooth frequency filters have uniformly integrable
+convolution kernels. The projection onto $d$-divisible modes is the positive
+average over shifts $h/d$. Parseval supplies its $L^2$ bound by the square root
+of $E$; Holder supplies $L^4$ bounds for the other two factors. General $W$ follows
+by Fourier inversion with translation-independent kernel norms. The union
+indicator equals the three strip indicators minus twice the common
+intersection. Direct incidence counting gives the displayed counterterm
+budget, including the $m+n$ strip.
+
+The critical obstruction is realizable. Take $N=dq^3$, $q$ copies of a $d$-clock
+and an $(N-dq)$-clock background. Its active traces are
+$dq\,\mathbf1_{d\mid m}$, its $E$ is $O(1/q)$, $M_3$ is bounded and $M_4$ has order $q$.
+Yet its resonant factorial cubic tends to the integral of $W$. Tiny phase
+perturbations make the spectrum simple and preserve these limits.
+The interpolation exponents have constant-order budget on this family.
+
+There is a stronger variant: for odd $q=2^l+1$, $d=q$ and $N=q^4$, select
+an $(N-q^2)$-dimensional CUE background instead. Deterministic simple
+realizations exist which satisfy every compact smooth signed CUE pair
+comparison and have vanishing resonant mass and bounded $M_3$, while both
+the resonant and full-box factorial cubic tend to the integral of $W$ for
+$0<a<b<1/4$. All-band pair variance follows from a finite projection
+cumulant bound $|\kappa_4|\le26(N-q^2)$. The second/fourth/sixth mixed
+cubic moments use Diaconis--Evans only when $4bN\le N-q^2$.
+Microscopic count covariances are controlled by positive block determinants,
+not by independent-bin assumptions. Uniform negative-Sobolev bounds and
+summability justify all smooth cubic weights. These are abstract spectra,
+not the frozen map, prime-period theorems or weak-process counterexamples.
+
+For the actual primes, the oriented block from TRACE-009 gives exactly
+the $E$ above. The needed block-mass bound and spectral density tails remain
+open. The quantitative alternative $E=O(1/d_p)$ with $M_4=o(d_p)$ also suffices.
+When $d_p$ is comparable to $p$, bounded $Q$ and $E$ tending to zero already close
+the sector by the earlier finite-cardinality budget. The new mechanism
+addresses growing sectors without assuming they exhaust the prime orders.
+Nonresonant signed cubic cancellation, other cones, composites and every
+higher factorial order remain separate obligations. A raw $k$-factor version
+has budget $C_{W,k}\sqrt{E_N M_{2(k-1)}}$, but does not automatically treat
+proper subset resonances and CUE counterterms. TRACE-005 and BGS-BGS-001
+remain open; no change to the coupling, unfolding or symmetry class is made.
 
 ## Verification and remaining work
 

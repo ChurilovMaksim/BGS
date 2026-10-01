@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -1193,6 +1193,35 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Unaveraged pair absolute comparison forces cubic absolute error >=(1/1024+o(1)) sqrt(N) on the specified box, and N^(k/2-1) at every fixed higher order. The signed CUE variance is a prior-law calibration in the stable band; the quadratic-phase trace table fails positivity at N=3 and is only an algebra control. Actual frozen-map signed comparison, BGS and external priority remain unproved."
+    },
+    {
+      "id": "BGS-TRACE-011",
+      "title": "Resonant cubic deletion by local density and a pair-compatible critical cluster obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "source": "mathematics/resonant_cubic_density_control.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-009",
+        "BGS-TRACE-010"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/20261001/resonant_density_checks.json",
+        "evidence/20261001/resonant_density_wolfram.json",
+        "evidence/executions/20261001-resonant-density.json"
+      ],
+      "verifiers": [
+        "computations/verification/resonant_density_audit.py",
+        "computations/verification/resonant_density_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Universal signed three-strip bound under explicit local density control. A deterministic simple spectrum can satisfy every signed CUE pair test, have vanishing resonant pair mass and bounded third occupancy moment, yet fail cubic comparison. This is not the frozen spectrum, a prime-order theorem, a weak-process counterexample or BGS; actual block mass and density tails remain open."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,9 @@
 # Research record
 
+The [1 October review](resonant_density_review_20261001.md) records
+resonant cubic deletion under explicit density control, sharp critical
+clusters, independent checks and the remaining actual-map estimates.
+
 The [signed Heisenberg continuation](signed_heisenberg_review_20260930.md)
 records the universal absolute-norm obstruction, exact signed cubic
 calibration, a failed unitary realization check, and the next actual-map attack.

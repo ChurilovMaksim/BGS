@@ -1,5 +1,10 @@
 # Mathematics
 
+[resonant_cubic_density_control.md](resonant_cubic_density_control.md)
+proves the local-density resonant cubic deletion, its critical tail boundary
+and a deterministic pair-compatible cluster obstruction. Actual-map
+hypotheses and BGS remain open.
+
 [signed_heisenberg_comparison.md](signed_heisenberg_comparison.md)
 proves the universal absolute-norm obstruction and separates signed
 CUE calibration from an unrealized phase table and the actual-map frontier.

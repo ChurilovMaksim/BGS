@@ -1,5 +1,16 @@
 # Current results and exact scope
 
+## Resonant density mechanism and its critical boundary, 1 October 2026
+
+[TRACE-011](resonant_cubic_density_control.md) bounds the signed union of
+all three resonant cubic strips by $C_W\sqrt{E_N M_4(N)}$, without the
+number-of-times loss. A local moment above order three, or critical cubic
+uniform integrability, closes the sector under vanishing resonant mass.
+A realizable sharp cluster obstruction survives every signed smooth CUE
+pair test after selecting a CUE background, even with simple spectra.
+Actual-map mass/density estimates and BGS remain open; the
+[review](../record/resonant_density_review_20261001.md) fixes the next inputs.
+
 ## Absolute obstruction and signed cubic continuation, 30 September 2026
 
 [TRACE-010](signed_heisenberg_comparison.md) proves that simultaneous

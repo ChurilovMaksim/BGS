@@ -19,3 +19,7 @@ submicroscopic gap floor also leave the Heisenberg-scale model estimate
 open; this is not a positive BGS theorem.
 The TRACE-010 absolute-norm obstruction is included, with its exact CUE
 calibration clearly separated from the still-open signed model estimate.
+
+TRACE-011 adds the density-conditioned resonant cubic deletion and its
+critical pair-compatible cluster obstruction. Actual-map density and block
+mass hypotheses remain open; no positive universality claim is added.

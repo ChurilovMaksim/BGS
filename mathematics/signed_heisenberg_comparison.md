@@ -287,3 +287,10 @@ positive-time obstruction on an infinite dimension subsequence.
 The [verifier](../computations/verification/signed_heisenberg_audit.py)
 checks independent finite identities and adversarial controls. It does
 not prove the asymptotics or this model-specific obligation.
+
+## Subsequent density-controlled sector estimate
+
+[TRACE-011](resonant_cubic_density_control.md) replaces the cardinality loss
+under explicit local spectral density control and proves a realizable critical
+cluster obstruction, including a CUE-pair-compatible background. It supplies
+no actual-map mass/density estimate and leaves the signed BGS target open.

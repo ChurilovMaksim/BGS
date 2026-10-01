@@ -1,5 +1,11 @@
 # Computations
 
+[resonant_density_audit.py](verification/resonant_density_audit.py)
+checks signed Fourier/Holder identities and all counterterms, exact
+realizable clusters, all-band CUE covariance and independent density
+moments. The [Wolfram checks](verification/resonant_density_checks.wl)
+were executed. No frozen-map density or BGS estimate is inferred.
+
 [signed_heisenberg_audit.py](verification/signed_heisenberg_audit.py)
 checks exact CUE cycles/covariances against independent representations,
 finite absolute-norm bounds and a negative spectral-moment determinant.

@@ -1,5 +1,33 @@
 # Claim ledger
 
+## 1 October 2026 — resonant cubic density control and critical tails
+
+**BGS-TRACE-011 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM
++ FINITE CONTROLS.** The [proof](../mathematics/resonant_cubic_density_control.md)
+replaces the resonant cubic cardinality loss by
+$C_W\sqrt{E_N M_4(N)}$, for the signed union of all three strips and
+arbitrary compact smooth complex weights. An exact factorial counterterm
+budget closes the sector when d->infinity, E->0 and a local occupancy
+moment of any order above three is bounded. At order three, uniform
+integrability of the positive smoothed cubic density suffices.
+
+A realizable rare-cluster construction proves the critical boundary:
+resonant pair mass tends to zero and M3 stays bounded, while the signed
+factorial cubic remains nonzero. A selected CUE background gives
+deterministic simple odd-dimensional spectra satisfying **every signed
+smooth pair comparison** but failing the cubic. The construction uses
+Diaconis--Evans only at verified degree 4bN<=H; all-band pair variance
+and occupancy controls are separately derived from finite determinants.
+This refutes a generic inference from pair tests/positivity to cubic tail
+control; it is not a spectrum of the frozen map or a weak-process
+counterexample. The raw fixed-order extension is not a full factorial law.
+
+The [review](resonant_density_review_20261001.md) identifies the remaining
+actual-map block mass and spectral tail estimates. Both remain **OPEN**,
+as do nonresonant signed cancellation and **BGS-TRACE-005/BGS-BGS-001**.
+No external referee, Lean compilation, world-first priority or BGS solution
+is claimed.
+
 ## 30 September 2026 — universal absolute obstruction and signed cubic continuation
 
 **BGS-TRACE-010 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM
