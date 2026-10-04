@@ -1,5 +1,36 @@
 # Current results and exact scope
 
+## Actual-start comparison and logarithmic regularity, 4 October 2026
+
+[FLOW-012](coboundary_general_start.md) compares the original uncentered
+chain from any odd unitary with $|p_1|+|p_2|\le K$ to Dyson motion from
+exactly its Möbius-centered initial matrix. The bound is
+$C_{f,K}[\sqrt t+N^{-1}+N^4\varepsilon+N^9\varepsilon^2+
+tN^9\varepsilon+tN^{10}\varepsilon^2]$.
+The $O_f(N^{-1/3})$ comparison at $2N^{34}$ steps applies eventually to
+the actual frozen map. Its reference limit at that faster time is open.
+
+[FLOW-013](dyson_relaxation_obstruction.md) constructs an empty local
+Dyson limit at each prescribed vanishing time, using schedule-dependent
+globally uniform simple spectra with bounded fixed traces and nonzero
+power traces. Its chain consequence retains finite unit intensity without
+uniform integrability. [FM-017](frozen_mesoscopic_regularity.md) extracts
+logarithmic-scale Poisson regularity from the existing FM-007 and gives
+two controlled local stationary points and exponential unweighted
+vertical phase-tail bounds for a slower heat phase.
+[FLOW-014](circular_dyson_actual_start.md) now closes the gap-independent
+resummed circular contour and the entire Fredholm series, including
+repeated initial levels. Its reference Brownian Laplace bound is
+$C_f[E_N+(Nt_N)^{-1/2}]$. For the unchanged actual spectrum,
+$t_N=8g_N$, $g_N=4\log J_N/J_N$, and balanced
+$\varepsilon_N=N^{-9}/\sqrt{t_N}$ give the original uncentered chain
+Sine$_2$ with smooth Laplace error $O_f(\sqrt{g_N})$ after
+$\lfloor2t_N^3N^{36}\rfloor$ steps. The imported finite kernel is prior;
+the startup threshold is ineffective, priority unestablished and
+deterministic noise removal still open.
+The [review](../record/general_start_review_20261004.md) records independent
+internal checking of the new implications and the finite evidence boundary.
+
 ## Polynomial original-coboundary limit, 4 October 2026
 
 [FLOW-011](coboundary_polynomial_limit.md) proves, for independent
@@ -18,8 +49,9 @@ the sixth test norm by $C_fN^6$. The weaker slow-time polynomial
 corollary already follows from FLOW-010; its former scope statement is
 corrected. The [review](../record/polynomial_coboundary_review_20261004.md)
 records an independent internal check of the new estimates and finite
-controls. Actual-map relaxation, deterministic noise removal and BGS
-remain open; unbounded correlation transfer requires uniform integrability.
+controls. Actual-start relaxation is supplied separately by FLOW-014
+at the logarithmic time; deterministic noise removal and BGS remain open.
+Unbounded correlation transfer for the chain requires uniform integrability.
 
 ## Fixed-time trace closure and expansion/memory boundary, 4 October 2026
 

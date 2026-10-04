@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 1 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -768,9 +768,184 @@ converges to $\det(I-(1-z)K_I)$ for $0\le z\le1$; the hole probability
 converges to $\det(I-K_I)$, with $K_I$ the restricted sine kernel.
 Smooth $L^1$ approximation uses unit intensity; no interval-test rate
 or higher-factorial-moment uniform integrability is asserted.
-The polynomial exponent is not optimized. Actual-map relaxation,
-deterministic noise removal and all-order unbounded-correlation transfer
-remain separate obligations; BGS-TRACE-005 and BGS-BGS-001 remain open.
+The polynomial exponent is not optimized. FLOW-014 supplies actual-start
+relaxation separately at a logarithmic time. Deterministic noise removal
+and all-order unbounded-correlation transfer remain separate obligations; BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+## Retaining the actual initial spectrum in the stochastic comparison
+
+The [general-start proof](coboundary_general_start.md) (`BGS-FLOW-012`)
+starts the original uncentered Gaussian coboundary chain at any odd
+unitary $A_N$ with $|p_1|+|p_2|\le K$. Its normalized traceless Dyson
+reference starts at exactly $\Pi(A_N)$; the algorithm inserts no centering.
+For nonnegative compact smooth local Laplace tests, writing
+$n=\lfloor2t/\varepsilon^4\rfloor$ and $1/N\le t\le1/12$,
+
+$$
+\left|\mathbb E\Phi_{N,f}(U_n^\varepsilon)
+-\mathbb E\Phi_{N,f}(D_t[\Pi A_N])\right|
+\le C_{f,K}[\sqrt t+N^{-1}+N^4\varepsilon+N^9\varepsilon^2
++tN^9\varepsilon+tN^{10}\varepsilon^2].
+$$
+
+The fast coordinate has a decaying initial part as well as the stationary
+scale $\rho=\varepsilon/N+\varepsilon^4$. Summation retains
+$h\sum_{j<n}\mathbb E[|m_1(U_j)|;j<\sigma]
+\le C\varepsilon^2|m_1(A_N)|+Ct\rho$.
+The frozen stopped sixth moment bounds exits without an inverse-step
+loss from the initial term. The centered initial second trace is $O_K(1)$,
+giving an $N^{-2}$ initial exit cost. Backward telescoping then adds
+$N^9\varepsilon^2$ to the previous error.
+At $t=N^{-2/3}$, $\varepsilon=N^{-26/3}$, exactly $2N^{34}$ steps have
+$O_f(N^{-1/3})$ comparison error. FM-013 supplies $K=20$ for the actual
+frozen map eventually; the Dyson limit at that faster time is still unknown.
+
+The [prescribed-time obstruction](dyson_relaxation_obstruction.md)
+(`BGS-FLOW-013`) constructs, for every selected vanishing $t_N$, a
+schedule-dependent globally uniform simple spectrum with bounded fixed
+traces and every positive power trace nonzero. Its Dyson local limit is
+empty at that time, both before and after centering. The proof combines
+$\mathbb E N^{-1}\|B_tA-A\|_{\rm HS}^2\le t$ with spectral matching
+and $Q$ narrow balanced clusters. With width $\delta$ and $I\subset[-R,R]$,
+
+$$
+\mathbb P(X_{N,t}(I)>0)
+\le\frac Q\pi(b+2\pi R/N)
++|I|\frac{2\delta^2+(\pi^2/2)t}{b^2}.
+$$
+
+Taking $Q\le\min(N^{1/10},t_N^{-1/6})$ and $b=Q^{-2}$ proves the
+empty limit. Existing EXT-POPESCU-2023 supplies all-power nonvanishing
+after one algebraic-exponent perturbation. Under $Nt_N\to\infty$,
+FLOW-012 also transfers the empty limit to the chain at $\varepsilon=N^{-10}$.
+The finite laws retain unit intensity without uniform integrability.
+No actual-map counterexample or obstruction to every family-dependent
+slower schedule is asserted.
+
+## Logarithmic initial regularity and local heat-phase stationary points
+
+The [corollary](frozen_mesoscopic_regularity.md) (`BGS-FM-017`) uses the
+existing FM-007 bound $|p_j(U_N)|\le CN^{39/40}$ for
+$1\le j\le J_N=\lfloor c\log N\rfloor$. For
+$H_A(z)=N^{-1}\operatorname{Tr}[(A+z)(A-z)^{-1}]$ and
+$d_N=CN^{-1/40}$, the absolutely convergent trace series gives
+
+$$
+\sup_{|z|\le e^{-g}}|H_{U_N}(z)-1|
+\le\frac{2[d_N+e^{-(J_N+1)g}]}{1-e^{-g}}.
+$$
+
+At $g_N=4\log J_N/J_N$ this tends to zero. Centering contributes only
+$C/[N(1-e^{-g_N})^2]$, so the exact reference initial spectrum has
+uniform Poisson-smoothed density down to that logarithmic scale.
+Every fixed angular derivative also converges at the larger scale
+$J_N^{-1/2}$. This is not a microscopic local law.
+
+At $t_N=\sqrt{g_N}$, FLOW-012 gives vanishing comparison error
+$O_f(g_N^{1/4})+o(1)$ for $\varepsilon=N^{-10}$.
+For the centered eigenangles $\alpha_j$, the local phase
+
+$$
+\mathcal S_N(\zeta;\theta)=\frac{(\zeta-\theta)^2}{2t_N}
++\frac1N\sum_j\log\left[2\sin\frac{\zeta-\alpha_j}{2}\right]
+$$
+
+has unique stationary points in the radius-$t_N/8$ disks about
+$\theta\pm it_N/2$, with shifts $o(t_N)$ and
+$t_N\mathcal S_N''=1+o(1)$ uniformly in $\theta$.
+A contraction proof uses $\mathcal S_N'=(\zeta-\theta)/t_N
+-iH_A(e^{i\zeta})/2$ and Cauchy bounds in the two off-real strips.
+The [route note](../record/circular_kernel_route_20261004.md) credits the
+prior arbitrary-start determinantal formula and checks its normalization.
+The real logarithmic potential additionally bounds the unweighted
+vertical phase tails by $C\sqrt{t_N/N}\,e^{N a_N(\theta,t_N/2)-cNt_N}$
+outside the two stationary neighborhoods. This uses positivity of the
+initial Herglotz real part near the real axis and the trace-series bound
+away from it, with no lower-gap assumption. The full kernel's amplitudes
+are not bounded by this estimate alone; the separate FLOW-014 argument
+below handles them. Even the whole
+logarithmic trace window cannot abstractly select $t=N^{-2/3}$:
+the FLOW-013 family at that time satisfies it and still has an empty limit.
+
+The [review](../record/general_start_review_20261004.md) states the
+independent internal proof-checking boundary. Deterministic noise removal
+and the original signed Heisenberg hierarchy remain open.
+
+## Actual-start circular relaxation and the original-chain Sine law
+
+The [full proof](circular_dyson_actual_start.md) (`BGS-FLOW-014`) uses
+the prior arbitrary-start circular Brownian biorthogonal kernel of
+Kieburg--Li--Zhang--Forrester, with source time $t/(2N)$ and angular
+measure $d\theta/(2\pi)$. Its sine-product interpolation and backward
+Gaussian heat representation give an exact double contour plus a
+crossing term. The crossing-pole residue is negative before rearrangement;
+the resulting kernel receives the full positive residue, not a half-residue.
+All circle windings are retained.
+
+Let $E_N$ be the initial Herglotz error on the strips $|\Im z|\ge t/8$,
+and $v_N$ the real-potential error beyond $g\le t/8$, as explicitly
+defined in the full proof. When $E_N\to0$, $v_N/t\to0$ and $Nt\to\infty$,
+Cauchy bounds give global horizontal convexity and vertical concavity
+of the phase, not merely nonzero local Hessians. The near-axis central
+barrier comes from FM-017. With $w=\sqrt{t/N}$, the remaining pole
+amplitude is controlled by
+
+$$
+\int_{\mathbb R^2}\frac{e^{-|z-a|^2/(4w^2)}}{|z-c|}\,d^2z\le Cw,
+$$
+
+uniformly even when the Gaussian center and pole coincide.
+Period-cell summation and the $N/t$ prefactor then give a remainder
+$C_R\sqrt{N/t}$ in each fixed microscopic window. There are no separately
+estimated initial-gap denominators. Define the unfolded kernel by
+
+$$
+\widehat K_{N,t}^{\theta_0}(x,y)
+=N^{-1}K_{N,t}(\theta_0+2\pi x/N,\theta_0+2\pi y/N).
+$$
+
+The explicit crossing term yields, uniformly in $\theta_0$ and $|x|,|y|\le R$,
+
+$$
+\left|\widehat K_{N,t}^{\theta_0}(x,y)
+-\frac{\sin\pi(x-y)}{\pi(x-y)}\right|
+\le C_R[E_N+(Nt)^{-1/2}].
+$$
+
+Hadamard bounds and determinant telescoping are summable after division
+by $k!$, so the entire Laplace/Fredholm series converges with that error.
+Gap-independent estimates pass to repeated initial levels by continuity
+of the bounded Laplace test. Full and traceless Brownian motion have
+exactly the same uniform-origin observable.
+
+For $A_N=\Pi U_N$, the actual logarithmic trace input gives the required
+errors at $g_N=4\log J_N/J_N$, $t_N=8g_N$, and
+$E_N+(Nt_N)^{-1/2}=o(\sqrt{g_N})$. Balanced comparison parameters are
+
+$$
+\varepsilon_N=N^{-9}/\sqrt{t_N},\qquad
+n_N=\lfloor2t_N^3N^{36}\rfloor.
+$$
+
+FLOW-012's six terms reduce to
+$\sqrt t$, $N^{-1}$, $N^{-5}/\sqrt t$, $N^{-9}/t$,
+$\sqrt t$, $N^{-8}$, all $O(\sqrt t)$ for $t\ge1/N$.
+Thus the original uncentered chain from the unchanged $U_N$ has
+
+$$
+\mathbb E\Phi_{N,f}(U_{n_N}^{\varepsilon_N})
+=\mathcal L_{\mathrm{Sine}_2}(f)+O_f(\sqrt{g_N}),
+\qquad 0\le f\in C_c^\infty.
+$$
+
+This closes the actual-start stochastic relaxation step at the stated
+logarithmic time, with an ineffective startup threshold. It does not
+compare the noisy spectrum with its deterministic initial spectrum,
+prove relaxation at $N^{-2/3}$, or transfer unbounded correlations of the
+original chain. Deterministic BGS remains open. The new analytic
+implications received an independent internal audit; the prior finite
+kernel and inherited project proofs retain their separate trust boundaries.
+No external referee report, priority or prize-level significance is asserted.
 
 ## Classical action completion and the ideal Fourier alphabet
 

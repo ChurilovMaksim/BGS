@@ -1,5 +1,22 @@
 # Scientific changelog
 
+## 2026-10-04 — actual-start comparison and circular relaxation
+
+- FLOW-012: original-chain comparison retaining the bounded-trace starting
+  matrix and its exact centered Dyson reference; initial transient controlled.
+- FLOW-013: schedule-dependent empty noisy limits with global uniformity,
+  bounded fixed traces, simple spectra and all positive power traces nonzero.
+- FM-017: initial Poisson regularity from FM-007's existing logarithmic
+  trace window, two controlled heat-phase stationary points and exponential
+  unweighted vertical-tail suppression at a slower vanishing time.
+- FLOW-014: gap-independent resummed contour bounds, complete crossing
+  residues and windings, confluence and full Fredholm convergence.
+  Actual-start original-chain Sine_2 at t=8g, epsilon=N^-9/sqrt(t),
+  floor(2t^3N^36) steps, with smooth Laplace error O_f(sqrt(g)).
+- Independent internal checks and two bounded finite-control packets.
+  Deterministic noise removal, faster actual-start relaxation and BGS OPEN;
+  priority is unestablished.
+
 ## 2026-10-04 — polynomial original-coboundary joint limit
 
 - FLOW-011: dimension-uniform coefficient and semigroup derivatives;

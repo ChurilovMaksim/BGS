@@ -57,6 +57,18 @@ graph TD
   FLOW7 --> FLOW11
   FLOW9 --> FLOW11
   FLOW10 --> FLOW11
+  FLOW9 --> FLOW12[BGS-FLOW-012 actual-start comparison]
+  FLOW10 --> FLOW12
+  FLOW11 --> FLOW12
+  F13 --> FLOW12
+  FLOW12 --> FLOW13[BGS-FLOW-013 prescribed-time obstruction]
+  F7 --> F17[BGS-FM-017 logarithmic regularity and local saddles]
+  F13 --> F17
+  FLOW9 --> F17
+  FLOW12 --> F17
+  FLOW13 --> F17
+  F17 --> FLOW14[BGS-FLOW-014 actual-start circular relaxation]
+  FLOW12 --> FLOW14
   F1 --> F16[BGS-FM-016 overlap rigidity]
   FLOW3 --> F16
   T13[BGS-TRACE-013 auxiliary expansion word obstruction]
@@ -128,3 +140,11 @@ TRACE-011 and TRACE-012 give conditional resonant-sector deletion and
 realizable spectral boundary controls. Actual E and shifted four-point
 energy, root allocation and nonresonant cancellation remain open;
 neither node has an asserted closure edge to TRACE-005.
+
+FLOW-012 retains the actual bounded-trace start and its exact centered
+Dyson reference. FLOW-013 excludes prescribed-time relaxation from the
+listed abstract inputs. FM-017 derives logarithmic initial regularity
+and local stationary points from FM-007. FLOW-014 closes the gap-independent
+circular kernel and full Laplace law at t=8g, and transfers Sine_2 to the
+original noisy chain. Deterministic noise removal remains open. These nodes have no asserted
+closure edge to TRACE-005 or BGS-BGS-001.

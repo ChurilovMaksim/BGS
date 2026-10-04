@@ -1,5 +1,12 @@
 # Research record
 
+The [actual-start review](general_start_review_20261004.md) records the
+general comparison, a prescribed-time obstruction, logarithmic initial
+regularity and actual-start circular relaxation. The
+[direct kernel route](circular_kernel_route_20261004.md) pins the prior
+arbitrary-start formula and the closed contour/Fredholm argument,
+separately from the open deterministic noise-removal obligation.
+
 The [projected-square review](folded_quadratic_review_20261001.md)
 records a sharper signed bound, root-allocation controls, balanced
 crowding counts and the finite/asymptotic map boundary.

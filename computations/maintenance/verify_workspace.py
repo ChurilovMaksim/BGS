@@ -138,7 +138,8 @@ def main() -> None:
                         'frozen_total_minors', 'frozen_arithmetic_traces',
                         'quadratic_noise_dynamics', 'quadratic_noise_clock',
                         'coboundary_mobius_diffusion', 'coboundary_joint_limit',
-                        'coboundary_polynomial_limit',
+                        'coboundary_polynomial_limit', 'coboundary_general_start',
+                        'circular_dyson_relaxation',
                         'heisenberg_note_audit', 'prime_resonant_audit',
                         'signed_heisenberg_audit', 'resonant_density_audit',
                         'folded_quadratic_audit', 'expansion_wavepacket_audit'}:

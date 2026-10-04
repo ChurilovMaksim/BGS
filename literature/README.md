@@ -1,5 +1,11 @@
 # Literature and external theorem dependencies
 
+[actual_start_dyson_sources_20261004.md](actual_start_dyson_sources_20261004.md)
+checks real-line scale restrictions, circular local-law initial conditions
+and the prior arbitrary-start determinantal kernel. No microscopic
+circular relaxation theorem is silently imported. FLOW-014 derives its
+global contour and Fredholm estimates separately from the prior finite kernel.
+
 [resonant_density_sources.md](resonant_density_sources.md) records the
 reused Diaconis--Evans degree gate, independently derived determinant
 bounds, related prior work and the absence of a priority claim.

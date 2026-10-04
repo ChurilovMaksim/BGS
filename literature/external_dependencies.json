@@ -217,13 +217,14 @@
       "pinned_version": "v2, 17 September 2023",
       "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
       "checked_on": "2026-10-04",
-      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation.",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation.",
       "project_sources": [
         "mathematics/frozen_algebraic_spectral_simplicity.md",
         "mathematics/frozen_common_antireversor_certificate.md",
         "record/frozen_algebraic_review_20260924.md",
         "mathematics/arithmetic_word_expansion_obstruction.md",
-        "literature/expansion_wavepacket_sources_20261004.md"
+        "literature/expansion_wavepacket_sources_20261004.md",
+        "mathematics/dyson_relaxation_obstruction.md"
       ]
     },
     {
@@ -378,6 +379,28 @@
       "project_sources": [
         "mathematics/arithmetic_word_expansion_obstruction.md",
         "literature/expansion_wavepacket_sources_20261004.md"
+      ]
+    },
+    {
+      "id": "EXT-KLZF-2022",
+      "authors": [
+        "Mario Kieburg",
+        "Shi-Hao Li",
+        "Jiyuan Zhang",
+        "Peter J. Forrester"
+      ],
+      "title": "Cyclic Polya Ensembles on the Unitary Matrices and their Spectral Statistics",
+      "identifier": "arXiv:2012.11993v2; DOI:10.1007/s00365-023-09630-8",
+      "pinned_version": "v2, 24 May 2022 (PDF dated 25 May)",
+      "locator": "Proposition 12, (2.4.10), printed p.18; Theorem 7(3), p.13; Proposition 21, (3.2.2)-(3.2.3), pp.33-34",
+      "checked_on": "2026-10-04",
+      "mapping": "Prior finite arbitrary-start circular Brownian biorthogonal kernel used in FLOW-014 and finite identity calibration. Source heat time is project time/(2N), verified by the fundamental-character decay. Prop.21 distinct-spectrum condition retained; project uses gap-independent bounds and finite-N Laplace continuity for confluence. Heat Laurent series analytic on every annulus. No microscopic asymptotic theorem or BGS implication imported; the global contour/Fredholm analysis is a separate project proof.",
+      "project_sources": [
+        "literature/actual_start_dyson_sources_20261004.md",
+        "record/circular_kernel_route_20261004.md",
+        "computations/verification/coboundary_general_start.py",
+        "mathematics/circular_dyson_actual_start.md",
+        "computations/verification/circular_dyson_relaxation.py"
       ]
     }
   ]

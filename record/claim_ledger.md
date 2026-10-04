@@ -1,5 +1,74 @@
 # Claim ledger
 
+## 4 October 2026 — actual-start comparison and circular relaxation
+
+**BGS-FLOW-012 — PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW
+IMPLICATIONS + EXACT ALGEBRA AND FINITE CONTROLS.** The
+[general-start proof](../mathematics/coboundary_general_start.md) retains
+any odd-dimensional initial unitary with $|p_1|+|p_2|\le K$ in the original
+uncentered Gaussian coboundary chain. Its reference Dyson motion starts
+at exactly $\Pi(A_N)$. The local Laplace comparison is
+$C_{f,K}[\sqrt t+N^{-1}+N^4\varepsilon+N^9\varepsilon^2+
+tN^9\varepsilon+tN^{10}\varepsilon^2]$.
+The extra $N^9\varepsilon^2$ is the initial first-trace boundary layer;
+stopped Lyapunov control avoids a spurious inverse-step exit loss.
+It applies eventually to the actual frozen map by FM-013, giving
+$O_f(N^{-1/3})$ comparison at $2N^{34}$ steps. Its reference limit
+for that map at the faster $N^{-2/3}$ time is **not** proved to be Sine$_2$.
+
+**BGS-FLOW-013 — PROJECT PROOF + EXTERNAL-THEOREM + INDEPENDENT INTERNAL
+CHECK OF NEW IMPLICATIONS + FINITE CONTROLS.** For every prescribed
+vanishing noise time, the [construction](../mathematics/dyson_relaxation_obstruction.md)
+gives a schedule-dependent, simple, globally uniform initial family with
+bounded fixed traces and every positive power trace nonzero, whose Dyson
+local law is empty at that time. Under $Nt_N\to\infty$, the original
+chain also has the empty limit at $\varepsilon=N^{-10}$.
+Every finite law still has unit mean intensity; its counts are not
+uniformly integrable. The algebraic perturbation uses existing
+EXT-POPESCU-2023. This refutes the stated abstract relaxation implication,
+not BGS for the actual map or a slower family-dependent schedule.
+
+**BGS-FM-017 — PROJECT COROLLARY OF FM-007 + INDEPENDENT INTERNAL CHECK
+OF NEW ESTIMATES + FINITE CONTROLS.** The
+[Poisson/phase proof](../mathematics/frozen_mesoscopic_regularity.md)
+derives uniform initial density at scales
+$g_N=4\log J_N/J_N$, $J_N=\lfloor c\log N\rfloor$, including for the exact
+centered spectrum. At $t_N=\sqrt{g_N}$ it proves two local complex
+stationary points with controlled nonzero Hessians, exponentially suppressed
+unweighted vertical phase tails, and a vanishing
+chain-to-Dyson comparison. FM-007 owns the existing logarithmic trace
+input. Even that whole trace window does not abstractly imply the faster
+$N^{-2/3}$ relaxation: FLOW-013 supplies a falsifier. No microscopic
+kernel law follows from the two local stationary points alone.
+
+**BGS-FLOW-014 — PROJECT PROOF + EXTERNAL FINITE-KERNEL INPUT +
+INDEPENDENT INTERNAL CHECK OF NEW ANALYTIC IMPLICATIONS + FINITE IDENTITY
+CONTROLS.** The [circular relaxation proof](../mathematics/circular_dyson_actual_start.md)
+resums the prior arbitrary-start Brownian kernel, retains its full crossing
+residue and every winding, and bounds its remaining double integral by
+$C_R\sqrt{N/t}$ uniformly in initial gaps. The integrable crossing
+singularity, global phase bounds, all-order Fredholm passage and repeated
+initial levels are treated explicitly. The general strip/potential
+hypotheses yield local Sine$_2$ with Laplace error
+$C_f[E_N+(Nt_N)^{-1/2}]$.
+For the actual centered frozen spectrum they hold at $t_N=8g_N$,
+$g_N=4\log J_N/J_N$, $J_N=\lfloor c\log N\rfloor$.
+FLOW-012 then gives the original **uncentered** chain from $U_N$ its
+Sine$_2$ weak local limit, with smooth Laplace error $O_f(\sqrt{g_N})$,
+$\varepsilon_N=N^{-9}/\sqrt{t_N}$ and
+$n_N=\lfloor2t_N^3N^{36}\rfloor$. The fixed coupling stays $10^{-80}$.
+The startup threshold remains ineffective. The imported finite kernel
+is KLZF Proposition 21, not a new formula or imported asymptotic theorem.
+
+The [review](general_start_review_20261004.md) separates these proof
+implications from finite controls, inherited inputs and prior arbitrary-start
+determinantal formulas. A [direct kernel route](circular_kernel_route_20261004.md)
+now has a checked gap-independent global estimate and full Laplace limit
+at the stated logarithmic time. **Faster actual-start relaxation,
+deterministic noise removal, unbounded-correlation transfer for the
+original chain, BGS-TRACE-005 and BGS-BGS-001 remain OPEN.**
+No priority or Fields/Poincaré-level significance is established.
+
 ## 4 October 2026 — polynomial original-coboundary clock limit
 
 **BGS-FLOW-011 — PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW

@@ -29,6 +29,10 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [coboundary_mobius_diffusion](../../coboundary_mobius_diffusion.md) — Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks.
 - [coboundary_joint_limit](../../coboundary_joint_limit.md) — Uniform fast-mode control and a joint clock-to-Sine limit at exponential small step.
 - [coboundary_polynomial_limit](../../coboundary_polynomial_limit.md) — Dimension-uniform coefficient derivatives and an original-chain polynomial joint limit.
+- [coboundary_general_start](../../coboundary_general_start.md) — Polynomial comparison retaining the bounded-trace initial spectrum and its exact centered Dyson reference.
+- [dyson_relaxation_obstruction](../../dyson_relaxation_obstruction.md) — Schedule-dependent empty noisy limits with bounded fixed traces, global uniformity and all-power nonvanishing.
+- [circular_dyson_actual_start](../../circular_dyson_actual_start.md) — Gap-independent circular kernel/Fredholm relaxation and the original-chain Sine_2 law from the actual frozen start at a logarithmic time.
+- [frozen_mesoscopic_regularity](../../frozen_mesoscopic_regularity.md) — Poisson regularity from the existing logarithmic trace window, local heat-phase stationary points and uniform unweighted vertical tails.
 
 - [frozen_phase_finite_type](../../frozen_phase_finite_type.md)
 - [frozen_commutator_action](../../frozen_commutator_action.md)

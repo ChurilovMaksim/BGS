@@ -1,5 +1,19 @@
 # Computations
 
+[coboundary_general_start.py](verification/coboundary_general_start.py)
+checks exact exponents and Brownian normalization, 120-digit balanced
+cluster traces, independent spectral matching and uniform-origin geometry,
+Poisson/Möbius and clock-potential bounds, and the prior arbitrary-start kernel's finite
+normalization. It does not sample Brownian endpoints, run enormous step
+counts, prove global kernel asymptotics or establish deterministic BGS.
+
+[circular_dyson_relaxation.py](verification/circular_dyson_relaxation.py)
+independently calibrates sine interpolation, shifted backward heat,
+rectangle orientation and the crossing residue against Fourier formulas.
+Exact rational exponents check the balanced comparison rule. The bounded
+packet records 144 residue cases and 32 heat cases; finite quadrature
+does not certify the analytic contour/Fredholm proof.
+
 [resonant_density_audit.py](verification/resonant_density_audit.py)
 checks signed Fourier/Holder identities and all counterterms, exact
 realizable clusters, all-band CUE covariance and independent density

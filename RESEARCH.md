@@ -1,5 +1,18 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [actual-start continuation](record/general_start_review_20261004.md)
+extends the polynomial random-chain comparison to the actual bounded-trace
+initial matrix, with its exact centered Dyson reference and the initial
+boundary-layer cost retained. A constructive prescribed-time obstruction
+and a logarithmic-scale density corollary distinguish fast unsupported
+relaxation from a slower route now closed by FLOW-014. Its resummed circular
+kernel has a full crossing residue and a uniformly controlled double
+integral, giving the entire local Laplace law even for repeated initial
+levels. At t_N=8g_N, g_N=4logJ_N/J_N, balanced epsilon_N=N^-9/sqrt(t_N)
+gives O_f(sqrt(g_N)) error after floor(2t_N^3N^36) original steps.
+Deterministic noise removal and faster actual-start relaxation remain open.
+The full fixed-map BGS target is unchanged; no priority is asserted.
+
 The [polynomial continuation](record/polynomial_coboundary_review_20261004.md)
 closes the random-chain polynomial-regime question at the earlier
 O_f(N^(-1/3)) rate, with exactly 2N^34 original uncentered steps.

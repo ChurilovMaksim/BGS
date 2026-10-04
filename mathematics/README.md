@@ -1,5 +1,16 @@
 # Mathematics
 
+[coboundary_general_start.md](coboundary_general_start.md) preserves the
+bounded-trace original start in the stochastic comparison.
+[dyson_relaxation_obstruction.md](dyson_relaxation_obstruction.md) gives a
+prescribed-time empty noisy limit. [frozen_mesoscopic_regularity.md](frozen_mesoscopic_regularity.md)
+derives logarithmic initial density, local heat-phase stationary points
+and exponentially suppressed unweighted vertical phase tails
+from the existing trace window.
+[circular_dyson_actual_start.md](circular_dyson_actual_start.md) closes
+the circular kernel and Fredholm argument at t=8g and transfers Sine_2
+to the original chain from the actual map. Deterministic BGS remains open.
+
 [coboundary_polynomial_limit.md](coboundary_polynomial_limit.md)
 closes the polynomial-step clock-to-Sine question for the original
 random chain, with a dimension-uniform derivative proof and the earlier

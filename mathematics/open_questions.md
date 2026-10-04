@@ -1,5 +1,22 @@
 # Open mathematical obligations
 
+The [general-start comparison](coboundary_general_start.md) now retains
+the actual frozen initial matrix and compares its original random chain
+to the exact centered-start Dyson law. [FM-017](frozen_mesoscopic_regularity.md) supplies initial Poisson
+regularity at $g_N\asymp\log\log N/\log N$ and controlled local stationary
+points and unweighted vertical phase-tail suppression at $t_N=\sqrt{g_N}$.
+[FLOW-014](circular_dyson_actual_start.md) closes the gap-independent
+global contour estimate, crossing residues, all windings, confluence and
+Fredholm convergence. At $t_N=8g_N$, the original chain from the actual
+map has the Sine$_2$ weak local limit. The next deterministic obligation
+is to compare this noisy law with the initial spectrum using actual-map
+information; it does not follow by continuity on the microscopic scale.
+The [kernel route](../record/circular_kernel_route_20261004.md)
+pins the prior finite formula and actual normalization. The
+[prescribed-time falsifier](dyson_relaxation_obstruction.md) excludes
+choosing $N^{-2/3}$ using only the listed trace inputs, even the whole
+logarithmic window. Deterministic noise removal remains a separate task.
+
 The direct FM-013 Gaussian refinement closes K=20 for the first two
 initial traces at all sufficiently large odd dimensions. An effective
 dimension threshold, the sharper historical action-phase formula,
@@ -51,9 +68,10 @@ one common all-order identification with controlled norms/holonomy.
 
 The [quadratic-noise continuation](quadratic_noise_coupling.md)
 removes microscopic occupancy from comparison of the two evolved noisy
-laws. It does not close BGS-TRACE-005. This route still needs Dyson
-relaxation for the actual starting spectrum, deterministic noise removal,
-and uniform integrability for unbounded local correlations. The
+laws. It does not close BGS-TRACE-005. FLOW-014 supplies actual-start
+Dyson relaxation at a logarithmic time; deterministic noise removal
+and uniform integrability for the original chain's unbounded local
+correlations remain open. The
 [clock theorem](quadratic_noise_clock_limit.md) proves that low traces
 and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed_time_wavepacket_trace_bound.md)
 now closes bounded starting traces; its constants are not uniform at
@@ -68,8 +86,8 @@ simultaneous regime is now established by
 [FLOW-010](coboundary_joint_limit.md) at epsilon_N=exp(-N), and the
 [polynomial continuation](coboundary_polynomial_limit.md) closes that
 clock regime with epsilon_N=N^(-26/3) and exactly 2N^34 steps.
-Optimizing this large exponent, relaxation from the actual
-starting spectra and deterministic noise removal remain open. No convergence
+Optimizing the step exponent, actual-start relaxation at faster than the
+proved logarithmic time, and deterministic noise removal remain open. No convergence
 of the rapidly changing original matrix paths is asserted.
 
 Only unresolved obligations belong here. Stable IDs are assigned in

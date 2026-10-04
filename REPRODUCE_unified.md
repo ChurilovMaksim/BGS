@@ -2,6 +2,20 @@
 
 The canonical editable publication entry point is `manuscript/BGS_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
+The 4 October actual-start comparison, cluster obstruction, logarithmic
+phase bounds and circular relaxation are reviewed in `record/general_start_review_20261004.md`.
+Their finite controls require the pinned Python requirements and run as:
+
+```sh
+python3 computations/verification/coboundary_general_start.py \
+  --output build/general-start-replay.json
+python3 computations/verification/circular_dyson_relaxation.py \
+  --output build/circular-dyson-replay.json
+```
+
+This checks finite normalizations, geometry and prior kernel conventions;
+it is not a Brownian simulation or an asymptotic BGS certificate.
+
 The finite-orbit section has a maintained mathematical source and a generated
 TeX view. Validate it with
 `python computations/maintenance/sync_finite_orbit_section.py --check`.
