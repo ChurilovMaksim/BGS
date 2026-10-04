@@ -55,9 +55,14 @@ Do not run output-writing scripts directly in this source directory.
 
 ## Provenance and historical wording
 
-`inventory.json` records original paths, byte counts and SHA-256 values.
-Files were preserved byte-for-byte, including dated reviews and checkpoint
-metadata. References to `build/topic/` mean the original working layout;
+`inventory.json` records original paths and the current edition's byte counts
+and SHA-256 values. Dated reviews and checkpoint metadata retain their
+historical contents. The 4 October 2026 integrity repair synchronizes the
+mixed-loop proof's already corrected text with this inventory; it does not
+rewrite the historical checkpoint hashes. The
+[integrity review](../../record/history/2026/ci_integrity_20261004.md) records
+the failure and fresh replay. References to `build/topic/` mean
+the original working layout;
 the replay runner reconstructs that layout. Earlier statements such as
 "unpublished" or "no push" describe their historical checkpoint, not the
 current publication status. Old checkpoint hashes refer to those historical

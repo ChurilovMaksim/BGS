@@ -1,0 +1,860 @@
+{
+  "schema": "bgs-ci-integrity-completion-v1",
+  "date": "2026-10-04",
+  "canonical_input_commit": "90a08af25405a75bf42ab4fe6cb4ca22e4c6576c",
+  "scope": "Post-publication integrity repair and complete isolated supplement replay; no theorem status change.",
+  "remote_first_run": {
+    "run_id": 37188008404,
+    "conclusion": "failure",
+    "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404",
+    "jobs": [
+      {
+        "name": "scientific-registry",
+        "conclusion": "success",
+        "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404/job/111394022005"
+      },
+      {
+        "name": "repository-structure",
+        "conclusion": "success",
+        "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404/job/111394022207"
+      },
+      {
+        "name": "formalization",
+        "conclusion": "success",
+        "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404/job/111394057232"
+      },
+      {
+        "name": "manuscript",
+        "conclusion": "success",
+        "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404/job/111394057236"
+      },
+      {
+        "name": "computation",
+        "conclusion": "failure",
+        "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/37188008404/job/111394057237"
+      }
+    ],
+    "maintained_python_cpp": {
+      "passed": 146,
+      "total": 146,
+      "verifier_exit_rows": [
+        {
+          "timestamp": "2026-10-04T08:11:06.1847286Z",
+          "name": "analytic_coboundary",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:06.7018441Z",
+          "name": "balanced_weyl_gaps",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:07.7214055Z",
+          "name": "bgs_20260921_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:08.5411023Z",
+          "name": "cayley_curve_uniform",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:09.4608589Z",
+          "name": "cayley_difference_discriminant",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:10.7294356Z",
+          "name": "cayley_energy_curve_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:11.0481045Z",
+          "name": "cayley_fourier_hybrid",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:11.7654882Z",
+          "name": "cayley_frobenius_extension",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:12.8370922Z",
+          "name": "cayley_higher_moments",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:13.6628825Z",
+          "name": "analytic_kick_return_gas",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:15.3331394Z",
+          "name": "cayley_inverse_resultant_transversality",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:15.5516319Z",
+          "name": "cayley_jacobi_trace_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:23.3361029Z",
+          "name": "cayley_principal_subresultant_support",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:23.9522263Z",
+          "name": "cayley_product_discriminant",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:43.1173627Z",
+          "name": "cayley_product_row_coefficient_ideal",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:43.1573033Z",
+          "name": "cayley_product_row_intersections",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:43.5242124Z",
+          "name": "cayley_product_row_projective_bezout",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:51.0584791Z",
+          "name": "cayley_product_row_real_trace_ideal",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:54.5841888Z",
+          "name": "cayley_product_row_reflection",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:58.5256473Z",
+          "name": "cayley_inverse_pair_sum_factorization",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:58.5915889Z",
+          "name": "cayley_product_rows",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:11:59.4592759Z",
+          "name": "cayley_ratio_orbit_factorization",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:01.0291064Z",
+          "name": "cayley_resultant_fibonacci",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:04.8573398Z",
+          "name": "cayley_resultant_mass_budget",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:10.0871084Z",
+          "name": "cayley_scaling_rigidity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:13.3117329Z",
+          "name": "cayley_shift_psc_transversality",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:13.4264224Z",
+          "name": "cayley_shifted_energy_orbits",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:16.1557383Z",
+          "name": "cayley_sylvester_fitting_support",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:20.6751682Z",
+          "name": "cayley_product_row_subresultants",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:21.5989564Z",
+          "name": "cayley_uniform_cutoff_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:21.7193885Z",
+          "name": "cdf_sup_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:22.3869645Z",
+          "name": "coboundary_flow",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:22.8601004Z",
+          "name": "coboundary_joint_limit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:23.9763455Z",
+          "name": "coboundary_mobius_diffusion",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:28.2530307Z",
+          "name": "coherent_aperture_minimax",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:28.4286019Z",
+          "name": "compensated_trace_window",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:30.9090897Z",
+          "name": "correlation_extension",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:31.9774342Z",
+          "name": "cue_singular_energy",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:32.4980480Z",
+          "name": "cue_upload_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:32.6640607Z",
+          "name": "current_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:43.8190001Z",
+          "name": "even_period_spin_resonance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:45.5410012Z",
+          "name": "expansion_wavepacket_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:50.9091079Z",
+          "name": "cayley_trace_intercept_shift_resultant",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:12:52.9285941Z",
+          "name": "finite_orbit_resonance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:02.2190421Z",
+          "name": "fixed_harmonic_return_gas",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:02.8372274Z",
+          "name": "fixed_map_convention_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:06.8139566Z",
+          "name": "extremal_resonance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:08.1180561Z",
+          "name": "fixed_strength_classical",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:09.7874785Z",
+          "name": "folded_quadratic_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:11.8585597Z",
+          "name": "frozen_antireversor",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:13.1297829Z",
+          "name": "frozen_arithmetic_traces",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:13.1963638Z",
+          "name": "frozen_full_lag_gap",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:13.5150077Z",
+          "name": "frozen_kick_rank",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:14.3321562Z",
+          "name": "frozen_seven_cut",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:16.4522567Z",
+          "name": "frozen_total_minors",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:17.3901217Z",
+          "name": "gaussian_channel_minimax",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:18.7920109Z",
+          "name": "general_cat_return_laws",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:19.0562335Z",
+          "name": "general_character_recheck",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:19.4724558Z",
+          "name": "general_hyperbolic_prime_spectra",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:20.5942999Z",
+          "name": "general_symbol_covariance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:20.6597997Z",
+          "name": "gram_resolvent_normalization",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:23.6832604Z",
+          "name": "heisenberg_note_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:26.1069869Z",
+          "name": "heisenberg_time_insertion",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:30.2001429Z",
+          "name": "fixed_strength_locality",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:31.4205774Z",
+          "name": "husimi_shell_tomography",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:34.0449818Z",
+          "name": "hyperbolic_return_pressure",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:37.4685613Z",
+          "name": "locality_robustness",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:41.1932801Z",
+          "name": "magnetic_quotient_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:41.4110380Z",
+          "name": "magnetic_scalar_certificate",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:44.3250976Z",
+          "name": "holomorphic_shell_rigidity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:45.4490985Z",
+          "name": "multiradius_rigidity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:48.6984005Z",
+          "name": "mixed_cayley_energy",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:48.7637879Z",
+          "name": "nonlinear_pressure_variance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:50.7348562Z",
+          "name": "offoff_elliptic_spike_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:52.0074567Z",
+          "name": "pell_coboundary_fourth_moment",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:13:53.6265702Z",
+          "name": "pell_coboundary_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:00.0571102Z",
+          "name": "noncommuting_tower",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:00.9271598Z",
+          "name": "pell_floquet_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:01.3950347Z",
+          "name": "pell_four_mode_coercivity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:01.4588832Z",
+          "name": "pell_gamma_interval",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:02.2278347Z",
+          "name": "pell_gaussian_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:02.2679614Z",
+          "name": "pell_flat_quantum_check",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:05.3591232Z",
+          "name": "pell_harmonic_transition",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:05.8171174Z",
+          "name": "pell_harmonic_returns",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:05.9290078Z",
+          "name": "pell_pair_obstruction",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:06.2320987Z",
+          "name": "pell_resonance_lattice",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:06.3470826Z",
+          "name": "pell_sharp_coercivity_check",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:06.4973785Z",
+          "name": "pell_single_orbit_sharp_constant",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:07.4143698Z",
+          "name": "pell_weighted_echo_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:10.5710763Z",
+          "name": "periodic_point_trace_comparison",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:11.3085122Z",
+          "name": "pell_smooth_cohomology",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:11.8411395Z",
+          "name": "phase_space_return_gas",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:12.5342153Z",
+          "name": "prime_resonant_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:13.0013511Z",
+          "name": "quadratic_coboundary_noise",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:13.2171240Z",
+          "name": "quadratic_noise_clock",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:13.7383128Z",
+          "name": "quadratic_noise_dynamics",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:16.4120725Z",
+          "name": "quantum_cyclic_module",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:17.1783080Z",
+          "name": "pure_loss_discrimination",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:18.1479980Z",
+          "name": "rare_phase_limit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:22.8423485Z",
+          "name": "quantum_phase_completion",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:23.0607871Z",
+          "name": "repository_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:24.0791721Z",
+          "name": "resonance_hessian_obstruction",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:25.6864346Z",
+          "name": "rare_phase_testing",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:26.3571958Z",
+          "name": "resonance_pair_variance_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:28.6780800Z",
+          "name": "resonance_quantum_variance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:28.8987461Z",
+          "name": "resonance_wiener_stability",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:30.3705257Z",
+          "name": "resonant_density_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:32.1953654Z",
+          "name": "return_local_limits",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:33.1652060Z",
+          "name": "return_trace_obstruction",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:33.2307971Z",
+          "name": "scientific_registry_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:34.8508569Z",
+          "name": "shell_instability",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:35.4822936Z",
+          "name": "resonance_nondegeneracy_certificate",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:36.3018172Z",
+          "name": "smooth_recurrence_and_compensation",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:38.9264972Z",
+          "name": "signed_heisenberg_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:39.9443802Z",
+          "name": "spectral_module_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:42.3664318Z",
+          "name": "spectral_resolution",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:42.7316315Z",
+          "name": "temporal_quantum_variance",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:43.7538910Z",
+          "name": "temporal_soft_modes",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:43.9915346Z",
+          "name": "spectral_lattice_clustering",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:44.4738267Z",
+          "name": "twisted_jacobi_regression",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.1099913Z",
+          "name": "two_radius_rigidity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.6953825Z",
+          "name": "wiener_resonance_audit",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.7003253Z",
+          "name": "cpp_cat_map_order",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.7730302Z",
+          "name": "cpp_cayley_direct_energy_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.7773083Z",
+          "name": "cpp_cayley_energy_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.7959868Z",
+          "name": "cpp_cayley_fibonacci_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:45.8103013Z",
+          "name": "cpp_cayley_fourier_hybrid",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:46.5276900Z",
+          "name": "cpp_cayley_trace_intercept_rigidity",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:46.5956201Z",
+          "name": "cpp_coherent_aperture_bounds",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:46.6003422Z",
+          "name": "cpp_extremal_resonance_replay",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:46.6080175Z",
+          "name": "cpp_fixed_strength_locality_exact",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.6763763Z",
+          "name": "cpp_fourth_moment_pair_key_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.6830575Z",
+          "name": "cpp_general_hyperbolic_periods",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.6872065Z",
+          "name": "cpp_magnetic_word_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.7528230Z",
+          "name": "cpp_pell_coboundary_pairs",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.7705521Z",
+          "name": "cpp_pell_floquet_pair_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.7753436Z",
+          "name": "cpp_pell_minimal_relation_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.7952842Z",
+          "name": "cpp_pell_pair_orthogonality",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.9150285Z",
+          "name": "cpp_pell_sharp_orbit_verifier",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:47.9480086Z",
+          "name": "cpp_pure_loss_discrimination_bounds",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:48.1140296Z",
+          "name": "cpp_rare_phase_certificate",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:48.1153759Z",
+          "name": "cpp_return_word_certificate",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:14:48.1334402Z",
+          "name": "cpp_spectral_lattice_clustering",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:15:12.2383761Z",
+          "name": "spectral_diagnostics_verify",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:15:12.6035515Z",
+          "name": "check_resonance_certificate",
+          "exit_code": 0
+        },
+        {
+          "timestamp": "2026-10-04T08:15:13.3190195Z",
+          "name": "extremal_independent_replay",
+          "exit_code": 0
+        }
+      ]
+    },
+    "failure": "verify_fixed_map_supplement.py:65 source SHA-256 assertion for resolvent-flow/loop_bridge.md; supplement checks not started",
+    "computation_log_sha256": "568f89a18859a780cf65b9c3e0da0afb7ab09bb221cf0edf5e018464bb5b31d0"
+  },
+  "inventory_repair": {
+    "path": "supplement/fixed_map/resolvent-flow/loop_bridge.md",
+    "prior_inventory_sha256": "636c63a912053a60a653ade651c6c45329d421acacd307ad0e9438ecec183fa4",
+    "prior_inventory_bytes": 13390,
+    "actual_sha256": "a85aec3d223ea8d0c85ae8e5062b03c458eb633679873432428c85012255c448",
+    "actual_bytes": 13394,
+    "inherited_unchanged_from": "34d682096f03bd4b7bd033d99755a02d921eb79a",
+    "complete_current_edition_files_checked": 115,
+    "hash_or_byte_count_mismatches": 0,
+    "historical_evidence_rewritten": false
+  },
+  "fresh_full_supplement_replay": {
+    "status": "PASS",
+    "passed": 28,
+    "total": 28,
+    "evidence": "evidence/20261004/supplement_replay_completion.json"
+  },
+  "remote_result_after_repair": "Consult the resulting commit's GitHub checks; no future CI outcome is asserted by this pre-publication evidence.",
+  "first_local_attempt": {
+    "status": "FAIL",
+    "passed": 23,
+    "total": 28,
+    "failure_class": "Missing local sympy/mpmath imports before numerical assertions",
+    "failed_checks": [
+      {
+        "script": "coherent-return/gap_identity.py",
+        "arguments": [],
+        "status": "FAIL",
+        "exit_code": 1,
+        "seconds": 0.032,
+        "source_sha256": "b5ce46d597e27f56bfbd5829a4f30e515e2816fe6d8ae87e1941b295b4ea5a67",
+        "log": "runs/coherent-return__gap_identity/execution.log",
+        "log_sha256": "8d8b6fea7b6004640f94b6f02e70cbc9c2a3ddd92c1be31d3cb98fd103ac477e"
+      },
+      {
+        "script": "report-audit-20260919/verify.py",
+        "arguments": [],
+        "status": "FAIL",
+        "exit_code": 1,
+        "seconds": 0.114,
+        "source_sha256": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
+        "log": "runs/report-audit-20260919__verify/execution.log",
+        "log_sha256": "723cd4376b84104115517d54826b62ec04d037af845bcd3a3814658ef73d43db"
+      },
+      {
+        "script": "report-audit-20260919/cubic_variance.py",
+        "arguments": [],
+        "status": "FAIL",
+        "exit_code": 1,
+        "seconds": 0.114,
+        "source_sha256": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
+        "log": "runs/report-audit-20260919__cubic_variance/execution.log",
+        "log_sha256": "75b3c3b89c74c293c2b7d4579737ced4ae1e461e6e8b6ac57da94c7974f8bb15"
+      },
+      {
+        "script": "report-audit-20260919/independent_variance_review.py",
+        "arguments": [],
+        "status": "FAIL",
+        "exit_code": 1,
+        "seconds": 0.114,
+        "source_sha256": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
+        "log": "runs/report-audit-20260919__independent_variance_review/execution.log",
+        "log_sha256": "4e2e33ea2863893dc8d3d5ff00477778fa9bec29ec755cedc335f1ed50defca7"
+      },
+      {
+        "script": "fixed-map-audit/classical.py",
+        "arguments": [],
+        "status": "FAIL",
+        "exit_code": 1,
+        "seconds": 0.016,
+        "source_sha256": "670a26a79259b515448a4620db025771fd41fa35fd38fb1741c13499783190fc",
+        "log": "runs/fixed-map-audit__classical/execution.log",
+        "log_sha256": "9e171520bbd81ab03503ba927ec7638d806891d011f91c320a7cf67d6da2a17b"
+      }
+    ],
+    "python": "3.12.14"
+  },
+  "overlay_source_hashes": {
+    "supplement/fixed_map/inventory.json": "e5e1b95b57222d252eda1f4159907c75a342f4710bdf59a53f12c4196d886722",
+    "supplement/fixed_map/README.md": "f5aab868c5d3f10d6fd6f3ce0e086a02ff7e2784760885652b1b401f1907a15c",
+    "record/history/2026/ci_integrity_20261004.md": "e93180ba3ae0f84a345b5bc1bed5f92897f74e1b0e5bdd7dd1329be2a9d21042",
+    "record/history/2026/INDEX.md": "0ccc0eaec7e3b7d4ecc35faf50f60afe19d9af9f878715fa8c4d186ad43cbf09",
+    "computations/maintenance/verify_fixed_map_supplement.py": "d1f98edebb11596fc66cc94b53081fe168ee29a0947ad035c666082cf6812ac5"
+  }
+}
