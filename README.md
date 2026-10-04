@@ -9,6 +9,13 @@
 > **Scientific status — 4 October 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
+The [4 October research audit](record/expansion_wavepacket_review_20261004.md)
+closes bounded fixed-time traces for the unchanged odd-N model by a direct
+packet/frame proof. It also proves an auxiliary-expansion counterexample
+with extensive tensor memory, simple spectra, bounded fixed traces and
+coherent Heisenberg returns. Original-map resonant cancellation and BGS
+remain open; normalized fixed-time trace vanishing was already known.
+
 The [projected-square continuation](record/folded_quadratic_review_20261001.md)
 sharpens the resonant cubic bound and proves a block-crowding criterion
 for higher correlations. Root allocation remains explicit; the actual-map
@@ -49,7 +56,7 @@ removal remains open.
 The [29 September continuation](record/quadratic_noise_review_20260929.md)
 adds quantitative noise/Dyson coupling, an explicit reversible correction,
 trace-process limit theorems and a clock-to-Sine local limit for the
-auxiliary noise. The actual-map fixed-time source application is conditional;
+auxiliary noise. Bounded actual-map fixed-time traces are now proved by a separate packet argument; the sharper Faure source adaptation remains conditional;
 deterministic noise removal and BGS remain open.
 
 The [28 September research result](mathematics/quadratic_coboundary_noise.md)

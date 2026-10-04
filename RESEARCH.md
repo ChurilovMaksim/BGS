@@ -1,5 +1,12 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [4 October continuation](record/expansion_wavepacket_review_20261004.md)
+closes bounded fixed-time traces for the unchanged odd-N model by a direct
+packet/frame proof. It also proves an auxiliary-expansion counterexample
+with extensive tensor memory, simple spectra, bounded fixed traces and
+coherent Heisenberg returns. Original-map resonant cancellation and BGS
+remain open; normalized fixed-time trace vanishing was already known.
+
 The [projected-square continuation](record/folded_quadratic_review_20261001.md)
 sharpens resonant cubic control using a shifted four-point energy.
 It keeps root allocation and proves an exact factorial crowding threshold.
@@ -49,7 +56,7 @@ this does not remove the external randomness from the deterministic BGS target.
 The [29 September continuation](record/quadratic_noise_review_20260929.md)
 proves short-time coupling without occupancy, a reversible correction,
 raw/corrected fixed-trace limits and a scoped clock-to-Sine theorem.
-The fixed-time source application to the actual map remains conditional.
+The historical Faure source application remains conditional; a separate 4 October packet proof now establishes its bounded-trace input.
 Deterministic noise removal and the Heisenberg joint-trace target remain open.
 
 

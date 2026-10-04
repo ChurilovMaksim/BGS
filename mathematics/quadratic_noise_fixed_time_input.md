@@ -1,6 +1,14 @@
-# Fixed-time trace input for the maintained map: conditional source adaptation
+# Historical Faure trace adaptation and the now-proved bounded input
 
-**Claim ID: BGS-FM-013. Status: CONDITIONAL APPLICATION.**
+**Claim ID: BGS-FM-013. Current bounded-input status: PROJECT PROOF.**
+4 October 2026: the [direct odd-N packet/frame proof](fixed_time_wavepacket_trace_bound.md)
+now gives $|p_j(U_N)|=O_j(1)$ for every fixed nonzero integer j.
+The Faure source adaptation below, its full action-phase trace formula
+and the numerical constants in (3) remain **CONDITIONAL**. This page
+preserves that narrower unresolved source route; it is not the authority
+for the new proof. No effective threshold or Heisenberg estimate is supplied.
+
+**Historical source-route status: CONDITIONAL APPLICATION.**
 29 September 2026. The parity calculation below is exact. The proposed
 application of the plane semiclassical trace estimate to the maintained
 odd-dimensional quantization is recorded separately from the proved
@@ -66,7 +74,7 @@ physical ordinary Weyl symbol of [FM-001](fixed_model_symmetry_theorem.md),
 including its momentum half-shift. The classical map is
 $\Phi_g^{-\tau/(2\pi)}S^{-1}$.
 
-Before promoting this application to proved, check (2) with the
+Before promoting this particular source application to proved, check (2) with the
 distributional cell-trace regularization and remainder hypotheses of
 the plane proposition, and explicitly identify its odd-dimensional
 restriction with the maintained $M_N,A_N$. Exact Weyl conjugation would

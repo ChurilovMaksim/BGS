@@ -1,5 +1,44 @@
 # Claim ledger
 
+## 4 October 2026 — bounded fixed traces and auxiliary-expansion obstruction
+
+**BGS-FM-013 — PROJECT PROOF + AUTHOR SELF-REVIEW.** The
+[direct packet/frame proof](../mathematics/fixed_time_wavepacket_trace_bound.md)
+establishes $|\operatorname{Tr}U_N^j|=O_j(1)$ for each fixed nonzero integer
+j in the unchanged odd-dimensional frozen model. It uses an exact torus
+Gaussian frame, odd-N sampling and a controlled finite-order packet residual.
+The stronger historical Faure action-phase adaptation and numerical K=20
+remain conditional; no effective threshold, all-N initial trace convergence
+or uniform estimate for j~N is claimed. FM-007 already proved normalized
+trace vanishing and ellipticity; only the bounded unnormalized input is new
+in this continuation. FLOW-003 now has m2=O(1/N).
+
+**BGS-FM-016 — PROJECT PROOF + AUTHOR SELF-REVIEW.** The
+[overlap lemma](../mathematics/egorov_overlap_rigidity.md) separates quantizers
+of distinct fixed classical maps. All fixed nonzero powers of the actual map
+remain non-affine under C1 conjugacy; fixed analytic conjugators give
+normalized HS separation sqrt(2), and fixed smooth ones give operator-norm
+liminf at least sqrt(2). Arbitrary N-dependent spectral basis changes are
+outside the result.
+
+**BGS-TRACE-013 — PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW.**
+The [counterexample](../mathematics/arithmetic_word_expansion_obstruction.md)
+has a different primitive irreversible fixed arithmetic map, a uniform
+one-copy quantum channel gap, exact tensor ranks D2=(p+7)/4 and an all-k
+character formula. An enlarged full-space channel has a uniform two-copy
+gap gamma/18. Factorial flat perturbations preserve the clock obstruction
+and coherent Heisenberg sector while making spectra simple, all power
+traces nonzero and all scalar powers absent. Fixed power traces are bounded
+as well. The enlarged channel mixes parity and its added translation is
+absent from the selected word; no sector-preserving two-copy claim is made.
+Basic frame-potential and Clifford mechanisms are credited as prior.
+
+The [audit](expansion_wavepacket_review_20261004.md) records source mappings,
+finite convention checks, and the corrected fixed-line test fixture.
+The unchanged frozen resonant mass and signed higher hierarchy are still
+unproved: **TRACE-005 and BGS-BGS-001 remain OPEN**. No world-first claim,
+external referee approval or new Lean compilation is asserted.
+
 ## 1 October 2026 — projected-square refinement and block crowding
 
 **BGS-TRACE-012 — ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW +

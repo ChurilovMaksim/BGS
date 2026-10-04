@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-01",
+  "updated": "2026-10-04",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -215,13 +215,15 @@
       "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
       "identifier": "arXiv:2306.14352v2; https://arxiv.org/pdf/2306.14352",
       "pinned_version": "v2, 17 September 2023",
-      "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients)",
-      "checked_on": "2026-09-24",
-      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input.",
+      "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
+      "checked_on": "2026-10-04",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation.",
       "project_sources": [
         "mathematics/frozen_algebraic_spectral_simplicity.md",
         "mathematics/frozen_common_antireversor_certificate.md",
-        "record/frozen_algebraic_review_20260924.md"
+        "record/frozen_algebraic_review_20260924.md",
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
       ]
     },
     {
@@ -267,7 +269,7 @@
       "pinned_version": "v2; Ann. Inst. Fourier 57 (2007), 2525–2599",
       "locator": "Section 2.2.2; Section 3.2 / Proposition 4; Proposition 11, (68)–(69); Theorem 12",
       "checked_on": "2026-09-29",
-      "mapping": "Conditional plane fixed-time input. Even-N torus theorem is not directly applicable to odd project dimensions. Exact parity repair is recorded; full source-to-model identification remains conditional.",
+      "mapping": "Conditional plane fixed-time input. Even-N torus theorem is not directly applicable to odd project dimensions. Exact parity repair is recorded; full source-to-model identification remains conditional. As of 4 October, bounded fixed-time traces are proved independently by the odd-N packet/frame argument; the sharper action-phase adaptation here remains conditional.",
       "project_sources": [
         "mathematics/quadratic_noise_fixed_time_input.md",
         "literature/quadratic_noise_sources_20260929.md"
@@ -325,6 +327,57 @@
         "record/claim_ledger.md",
         "mathematics/resonant_cubic_density_control.md",
         "literature/resonant_density_sources.md"
+      ]
+    },
+    {
+      "id": "EXT-BG-2008",
+      "authors": [
+        "Jean Bourgain",
+        "Alex Gamburd"
+      ],
+      "title": "Uniform expansion bounds for Cayley graphs of SL2(Fp)",
+      "identifier": "Annals of Mathematics 167 (2008), 625–642; https://annals.math.princeton.edu/wp-content/uploads/annals-v167-n2-p07.pdf",
+      "pinned_version": "Published 2008 primary PDF",
+      "locator": "Theorem 1, printed p.626",
+      "checked_on": "2026-10-04",
+      "mapping": "Fixed S,V in SL2(Z) generate a non-elementary subgroup, as witnessed by hyperbolic S,R with disjoint quadratic eigenline fields. Uniform Cayley gap transfers to nontrivial finite-group unitary irreducible representations. Laziness gives the auxiliary HS channel gap; no prescribed-word universality follows.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
+      ]
+    },
+    {
+      "id": "EXT-GAE-2007",
+      "authors": [
+        "David Gross",
+        "Koenraad Audenaert",
+        "Jens Eisert"
+      ],
+      "title": "Evenly distributed unitaries: on the structure of unitary designs",
+      "identifier": "arXiv:quant-ph/0611002v2; https://arxiv.org/pdf/quant-ph/0611002",
+      "pinned_version": "v2, 13 May 2007",
+      "locator": "Theorem 2; Section III.B, equation (20), Theorem 6; Section IV.C",
+      "checked_on": "2026-10-04",
+      "mapping": "Prior frame-potential/character identity and Clifford two-design mechanism. Exact even-sector ranks and a full-space orbit-compression gap proof are reconstructed in the project. No quantum-design average is treated as a deterministic word spectral theorem.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
+      ]
+    },
+    {
+      "id": "EXT-DIRICHLET-1837",
+      "authors": [
+        "Peter Gustav Lejeune Dirichlet"
+      ],
+      "title": "There are infinitely many prime numbers in all arithmetic progressions with first term and difference coprime",
+      "identifier": "Original 1837 paper; English translation arXiv:0808.1408v2; https://arxiv.org/pdf/0808.1408",
+      "pinned_version": "v2 translation, 24 November 2014",
+      "locator": "The theorem stated in the opening paragraph, p.1, proved in the original article",
+      "checked_on": "2026-10-04",
+      "mapping": "Use only infinitely many primes p=1 mod20, since gcd(1,20)=1. Fourth-power order divisibility is proved separately. No maximal-order assertion.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
       ]
     }
   ]

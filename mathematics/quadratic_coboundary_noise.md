@@ -437,6 +437,10 @@ $|\operatorname{Tr}U_N^2|\le C N^{39/40}$ would give
 $|m_2|=O(N^{-1/40})$ in (3) for the actual frozen family. This is an
 application of that earlier project bound, not a new audit of its proof.
 The covariance theorem itself needs no dynamical assumption.
+The [4 October direct packet proof](fixed_time_wavepacket_trace_bound.md)
+now gives $|\operatorname{Tr}U_N^2|=O(1)$, strengthening that application
+to $|m_2|=O(N^{-1})$. This improves the covariance rate, not the already
+available ellipticity or deterministic noise removal.
 
 What is now available is an explicit nondegenerate quadratic noise and
 an exact way to correct its covariance. What remains unavailable is a

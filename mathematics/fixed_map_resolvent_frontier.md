@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 1 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -627,14 +627,16 @@ $O_f(\sqrt t+(Nt)^{-1}+N^{-2})$. The initial clock has exactly one point
 per unit interval while Sine$_2$ has a positive hole probability.
 Thus low traces and bounded occupancy cannot justify generic noise removal.
 
-The [fixed-time model input](quadratic_noise_fixed_time_input.md)
-(`BGS-FM-013`) is **conditional**. Its parity repair is exact, but the
-full regularized trace and quantization/remainder identification for
-Faure's plane estimate remain to be checked. No even-dimensional torus
-theorem is silently applied to odd dimensions. These auxiliary results
-leave `BGS-TRACE-005` and `BGS-BGS-001` open. The
-[research audit](../record/quadratic_noise_review_20260929.md) separates
-proofs, finite controls, prior work and the conditional application.
+The [direct fixed-time model input](fixed_time_wavepacket_trace_bound.md)
+(`BGS-FM-013`) is now **proved at project/author-review level**: every fixed
+nonzero power trace is O_j(1), along all sufficiently large odd N.
+Its exact Gaussian frame and sampled packet residual are separate from
+Faure's even-dimensional torus formula. The [historical source route](quadratic_noise_fixed_time_input.md),
+its sharper action-phase amplitudes and numerical K=20 remain conditional.
+No effective threshold, uniform Heisenberg estimate or all-N initial trace
+convergence follows. These results leave `BGS-TRACE-005` and `BGS-BGS-001`
+open. The [current audit](../record/expansion_wavepacket_review_20261004.md)
+records the strengthened input and its proof boundary.
 
 ## From finite coboundary kicks to a spectral diffusion
 
@@ -986,6 +988,113 @@ growing word expansion. Nonperturbative E/G estimates, nonresonant
 signed cancellation and the complete TRACE-005/BGS-BGS-001 goals
 remain open. The [review](../record/folded_quadratic_review_20261001.md)
 separates proof, finite controls and prior work.
+
+## Fixed-time bounded traces and quantizer overlap
+
+**Claim IDs:** `BGS-FM-013`, `BGS-FM-016`. The [packet proof](fixed_time_wavepacket_trace_bound.md)
+retains the exact frozen odd-N family and establishes
+$|\operatorname{Tr}U_N^j|=O_j(1)$ for every fixed nonzero integer j.
+The method is standard finite-time coherent propagation, reconstructed
+with the exact ordinary Weyl symbol and boundary character.
+
+For z=(q,p), the frame is
+$$
+\psi_{z,N}(x)=\left(\frac2N\right)^{1/4}\sum_{k\in\mathbb Z}
+ e^{-\pi N(x/N-q-k)^2}e^{2\pi iNp(x/N-q-k)},
+\qquad N\int|\psi_{z,N}\rangle\langle\psi_{z,N}|dz=I.
+$$
+The p integral sets x=y,k=l; the remaining Gaussian integral is exactly
+1/N. Odd midpoint Weyl sampling, the invariant lattice character under
+S0 mod2, and clock/shift irreducibility identify the actual matrix M_N.
+A degree-five triangular packet expansion has residual O(h^4); sampling
+that weighted-Schwartz residual before finite-dimensional Duhamel gives
+error O(h^3). Its overlap with the original packet is bounded by
+$C_{j,M}(1+\operatorname{dist}(F^jz,z)/\sqrt h)^{-M}+C_jh^3$.
+Anosov nondegeneracy of fixed-time periodic points gives sublevel area
+O_j(r^2), and the exact frame trace gives O_j(Nh)=O_j(1).
+One-step Egorov or a first-order Gaussian approximation alone would not
+justify this bound. The proof supplies no effective constants, no numerical
+K=20 and no estimate with j of order N.
+
+FM-007 had already proved normalized fixed-time traces tend to zero in
+an actual logarithmic time window. The new bounded unnormalized input
+improves the starting FLOW-003 covariance rate to |m2|=O(1/N), and closes
+the fixed-trace boundedness assumptions, with subsequences for convergence
+of the initial traces. It does not remove the external noise.
+
+The [Egorov overlap lemma](egorov_overlap_rigidity.md) states that if two
+fixed quantized classical maps F,G coincide on area zero, then
+$$
+N^{-1}\operatorname{Tr}(K_N^*L_N)\to0,\qquad
+\inf_{|\zeta|=1}N^{-1/2}\|K_N-\zeta L_N\|_{HS}\to\sqrt2.
+$$
+If the maps differ at one point, the operator-norm liminf is at least
+sqrt(2), by localized coherent states. The four actual fixed-point
+Hessians show every fixed nonzero power remains non-affine under C1
+conjugacy. Fixed smooth conjugators therefore give the operator separation;
+fixed analytic ones also give the HS separation. N-dependent spectral
+basis changes are outside these assertions.
+
+## Coherent words despite auxiliary expansion
+
+**Claim ID:** `BGS-TRACE-013`. The [complete counterexample](arithmetic_word_expansion_obstruction.md)
+uses three fixed integral hyperbolic matrices
+$$
+R=\begin{pmatrix}4&9\\19&43\end{pmatrix},\quad
+S=\begin{pmatrix}3&2\\1&1\end{pmatrix},\quad
+V=\begin{pmatrix}-5&19\\-24&91\end{pmatrix},\quad VS=R.
+$$
+R has no integer/topological root and no topological reversor. The proofs
+exhaust determinant signs and use incompatible modulo-three/seven Lucas
+periods, respectively. The rational fourth root (R+8I)/21 gives
+$d_p=\operatorname{ord}_pR\mid(p-1)/4$ for all primes p=1 mod20.
+Thus the even Weil sector of odd dimension N=(p+1)/2 has a clock of
+unfolded pitch N/d>2, failing Sine2 and its weak local law.
+
+The non-elementary fixed generators S,V have a uniform Cayley gap by
+Bourgain--Gamburd. Representation transfer and even-sector irreducibility
+therefore give a uniform one-copy quantum mixing gap. Yet its two-copy
+invariant rank is D2=(p+7)/4, not the Haar rank two. More generally
+$$
+D_{k,p}=\frac{2((p+1)/2)^{2k}+(p-3)p(p+1)/2
+ +(p^2-1)2^{1-2k}\sum_{l=0}^k\binom{2k}{2l}p^l}{p(p^2-1)}.
+$$
+The character/frame-potential method is prior Gross--Audenaert--Eisert
+mathematics. The complete class calculation gives extensive invariant
+memory and, for k>=3, D_k~N^(2k-3)/4.
+
+On the full p-space the symplectic two-copy invariant rank is 2p+1.
+Adding a fixed Weyl translation only to the auxiliary channel leaves I
+and swap, and compresses every other orbit by -1/(p^2-1). A two-case
+Dirichlet argument gives a uniform two-copy gap gamma/18. This channel
+mixes parity; the added translation never enters the selected word VS.
+It therefore excludes a full-space auxiliary-gap sufficiency criterion,
+without asserting a sector-preserving two-copy counterexample.
+
+Label an algebraic eigenbasis of rho(R) by j=1,...,p and perturb by
+$D_p=\exp(iA_p/p!)$, $A_p=\sum_j(j/p)|\psi_j\rangle\langle\psi_j|$.
+Hermite--Lindemann proves simple spectra, nonzero traces of every positive
+power and absence of scalar powers. The perturbation is analytic flat
+on each fixed strip; the enlarged two-copy gap remains gamma/36.
+Nevertheless, for the even sector,
+$$
+N^{-2}\sum_{\substack{N\le m\le2N\\d_p\mid m}}
+ \left||\operatorname{Tr}((D_p\rho(R))^m)|^2-N\right|\ge2-o(1).
+$$
+The full p-space lower bound is 4-o(1). At every fixed nonzero time,
+the regular Weil character and flat perturbation give bounded traces
+1+o(1). Thus all these exact exclusions, fixed-time bounds and auxiliary
+gaps coexist with coherent Heisenberg returns. Fixed nonlinear shear
+conjugation preserves the joint construction, but retains smooth
+arithmetic conjugacy. Earlier project nonlinear arithmetic examples
+are credited. This is a different map, not an obstruction established
+for the frozen operator.
+
+The [current research audit](../record/expansion_wavepacket_review_20261004.md)
+records exact rational/modular controls, finite character and channel tests,
+odd coherent frames, checked source leaves and prior-scope comparison.
+The actual frozen block mass, shifted microscopic energy and nonresonant
+signed hierarchy remain unproved.
 
 ## Verification and remaining work
 

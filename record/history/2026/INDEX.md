@@ -39,3 +39,5 @@ This index is navigational; status authority remains
 - [retractions](../../retractions.md)
 
 Additional dated records remain searchable in `record/` and Git history.
+
+- [4 October expansion and packet research audit](../../expansion_wavepacket_review_20261004.md)

@@ -140,7 +140,7 @@ def main() -> None:
                         'coboundary_mobius_diffusion', 'coboundary_joint_limit',
                         'heisenberg_note_audit', 'prime_resonant_audit',
                         'signed_heisenberg_audit', 'resonant_density_audit',
-                        'folded_quadratic_audit'}:
+                        'folded_quadratic_audit', 'expansion_wavepacket_audit'}:
             cmd+=['--output',str(args.logs/(p.stem+'.json'))]
         elif p.stem=='extremal_resonance':
             extremal_producer=True

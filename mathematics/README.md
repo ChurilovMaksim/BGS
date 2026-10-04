@@ -25,7 +25,9 @@ scientific registry audit.
 
 The [quadratic-noise continuation](../record/quadratic_noise_review_20260929.md)
 links the covariance, coupling, reversibility, trace CLTs and clock local
-limit, with a separate conditional fixed-time model input.
+limit. Its bounded fixed-time model input is now proved by the separate
+[odd-N packet/frame argument](fixed_time_wavepacket_trace_bound.md);
+the sharper historical Faure adaptation remains conditional.
 
 ## Reading order
 

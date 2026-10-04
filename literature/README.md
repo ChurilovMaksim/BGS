@@ -34,3 +34,5 @@ their dependencies.
 
 Historical literature notes remain useful audit records, but the current
 machine registry is the normalization layer for load-bearing dependencies.
+
+[Expansion and packet source checks](expansion_wavepacket_sources_20261004.md) separate published gap/transcendence inputs, prior coherent-state methods and the historical conditional trace formula.

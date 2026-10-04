@@ -1,5 +1,15 @@
 # Scientific changelog
 
+## 2026-10-04 — fixed-time packet trace closure and auxiliary-expansion boundary
+
+- FM-013: direct odd-N proof of O_j(1) fixed traces; sharper Faure amplitudes
+  remain conditional. Earlier normalized trace vanishing is credited.
+- FM-016: fixed-classical-map overlap and affine-quantizer separation.
+- TRACE-013: primitive irreversible arithmetic word obstruction, exact tensor
+  hierarchy, enlarged two-copy gap and factorial flat spectral exclusions.
+- Reproducible finite character, orbit, channel and coherent-frame controls;
+  frozen Heisenberg sector and full BGS remain OPEN.
+
 This changelog records changes in scientific state. Ordinary formatting and
 implementation-only commits need not appear here.
 

@@ -58,7 +58,9 @@
     "BGS-TRACE-009",
     "BGS-TRACE-010",
     "BGS-TRACE-011",
-    "BGS-TRACE-012"
+    "BGS-TRACE-012",
+    "BGS-FM-016",
+    "BGS-TRACE-013"
   ],
   "edges": [
     {
@@ -399,6 +401,16 @@
     {
       "from": "BGS-TRACE-011",
       "to": "BGS-TRACE-012",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-016",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FLOW-003",
+      "to": "BGS-FM-016",
       "type": "scientific-prerequisite"
     }
   ],

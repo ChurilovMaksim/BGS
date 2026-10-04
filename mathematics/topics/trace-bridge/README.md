@@ -15,3 +15,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
 
 - [resonant_cubic_density_control](../../resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.
+
+- [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.

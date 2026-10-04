@@ -49,9 +49,12 @@ laws. It does not close BGS-TRACE-005. This route still needs Dyson
 relaxation for the actual starting spectrum, deterministic noise removal,
 and uniform integrability for unbounded local correlations. The
 [clock theorem](quadratic_noise_clock_limit.md) proves that low traces
-and bounded occupancy alone cannot remove the noise. The
-[fixed-time source application](quadratic_noise_fixed_time_input.md)
-remains conditional on its full regularized trace/quantization matching.
+and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed_time_wavepacket_trace_bound.md)
+now closes bounded starting traces; its constants are not uniform at
+Heisenberg times. The historical Faure action-phase application remains
+conditional on regularized trace matching. [TRACE-013](arithmetic_word_expansion_obstruction.md)
+shows that even bounded fixed traces and a full-space auxiliary two-copy
+channel gap cannot replace coherent-word estimates.
 The [Möbius reduction](coboundary_mobius_diffusion.md) now proves a
 fixed-dimension stopped spectral quotient limit for repeated Gaussian
 coboundary steps and an iterated clock-to-Sine theorem. An explicit

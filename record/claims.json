@@ -969,29 +969,29 @@
     },
     {
       "id": "BGS-FM-013",
-      "title": "Conditional fixed-time trace input via odd-dimensional periodization",
-      "state": "conditional",
-      "ledger_status": "CONDITIONAL SOURCE APPLICATION + EXACT PARITY CONTROL",
-      "source": "mathematics/quadratic_noise_fixed_time_input.md",
+      "title": "Bounded fixed-time traces for the unchanged odd-dimensional frozen map",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT FRAME AND FINITE CONVENTION CONTROLS",
+      "source": "mathematics/fixed_time_wavepacket_trace_bound.md",
       "dependencies": [
         "BGS-FM-001"
       ],
-      "external_dependencies": [
-        "EXT-FAURE-2007"
-      ],
+      "external_dependencies": [],
       "evidence": [
         "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json"
+        "evidence/20260929/quadratic_noise_manifest.json",
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json"
       ],
       "verifiers": [
-        "computations/verification/quadratic_noise_dynamics.py"
+        "computations/verification/quadratic_noise_dynamics.py",
+        "computations/verification/expansion_wavepacket_audit.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Exact parity repair only; source-to-model regularized trace formula, quantization identification and remainder control still need completion. Conditional O_j(1) fixed traces, no effective N threshold or Heisenberg-scale claim.",
-      "closure_condition": "Complete the regularized odd-N periodized trace identity and its exact matching to the maintained quantization, with the fixed-time plane remainder hypotheses checked."
+      "boundary": "For every fixed nonzero integer j, Tr(U_N^j)=O_j(1) along all sufficiently large odd N, by an exact Gaussian frame and finite-order packet construction. Constants and thresholds are ineffective; no j~N, all-N trace convergence, numerical K=20 or complete action-phase trace formula. The historical sharper Faure adaptation remains conditional."
     },
     {
       "id": "BGS-FLOW-008",
@@ -1254,6 +1254,56 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Universal signed three-strip bound sqrt(E G_d), G_d=||P_d rho^2||_2^2, with exact factorial budget. Root allocation is explicit and cannot be inferred from block density. Balanced crowding at (N d^(r-1))^(1/r) obstructs factorial correlations on a shrinking-arc sublinear-d subsequence, not weak-process convergence alone. Actual-map E/G asymptotics and such an infinite subsequence are open; p=239 is finite coherence. No BGS solution, priority, external referee or Lean analytic certificate."
+    },
+    {
+      "id": "BGS-FM-016",
+      "title": "Egorov overlap rigidity and actual fixed-power separation from affine quantizations",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FLOW-003"
+      ],
+      "external_dependencies": [],
+      "source": "mathematics/egorov_overlap_rigidity.md",
+      "boundary": "Normalized overlap vanishes when fixed Egorov maps coincide on area zero; operator separation >=sqrt(2) if maps differ at one point. Fixed actual powers exclude affine conjugacy, giving separation after fixed smooth/analytic classical conjugators. Fixed-time trace vanishing and initial noise ellipticity already followed from FM-007; no arbitrary N-dependent basis change or Heisenberg cancellation.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "evidence": [
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json"
+      ],
+      "verifiers": [
+        "computations/verification/expansion_wavepacket_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-013",
+      "title": "Arithmetic coherent words despite uniform auxiliary quantum expansion and exact spectral exclusions",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-BG-2008",
+        "EXT-GAE-2007",
+        "EXT-POPESCU-2023",
+        "EXT-DIRICHLET-1837"
+      ],
+      "source": "mathematics/arithmetic_word_expansion_obstruction.md",
+      "boundary": "A different fixed primitive irreversible arithmetic map; odd parity sectors have uniform one-copy gap and exact extensive tensor memory, and an enlarged full-space channel has a uniform two-copy gap. Flat perturbations retain bounded fixed traces and coherent Heisenberg returns while removing exact spectral markers. Full-space channel mixes parity, and no translation enters the selected word. Not the frozen map, sector-preserving two-copy falsifier, BGS solution or priority claim.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "evidence": [
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json"
+      ],
+      "verifiers": [
+        "computations/verification/expansion_wavepacket_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,17 @@
 # Current results and exact scope
 
+## Fixed-time trace closure and expansion/memory boundary, 4 October 2026
+
+[FM-013](fixed_time_wavepacket_trace_bound.md) proves bounded unnormalized
+traces at every fixed nonzero time for the original odd-N frozen operator.
+Its exact frame and finite-order sampled residual avoid the even-N trace
+formula. [FM-016](egorov_overlap_rigidity.md) proves fixed-map overlap rigidity
+and affine-quantizer separation. [TRACE-013](arithmetic_word_expansion_obstruction.md)
+gives a different primitive irreversible arithmetic map with uniform auxiliary
+mixing gaps and coherent words, surviving flat destruction of exact markers.
+The exact even tensor hierarchy is computed. These are project proofs with
+self-review; all Heisenberg estimates for the frozen map and BGS remain open.
+
 ## Projected-square control and block crowding, 1 October 2026
 
 [TRACE-012](folded_quadratic_resonance_control.md) bounds the signed
@@ -90,9 +102,10 @@ the noise mechanism, not deterministic BGS. See the
 - [FLOW-007](quadratic_noise_clock_limit.md): phase-averaged Sine_2 weak
   limit from an odd clock at t -> 0, Nt -> infinity, using the credited
   Dyson clock formula; a strict obstruction to generic noise removal.
-- [FM-013](quadratic_noise_fixed_time_input.md): **conditional** source
-  adaptation for fixed-time traces of the actual map; parity is checked,
-  but the full regularized trace/quantization identification remains open.
+- [Historical FM-013 route](quadratic_noise_fixed_time_input.md): the
+  sharper Faure source adaptation retains its conditional regularized
+  trace identification. The [direct 4 October proof](fixed_time_wavepacket_trace_bound.md)
+  now closes bounded fixed-time traces separately.
 
 These auxiliary results do not close deterministic BGS. See the
 [proof and computation audit](../record/quadratic_noise_review_20260929.md).

@@ -34,3 +34,7 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [offdiagonal_digit_fup](../../offdiagonal_digit_fup.md)
 
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
+
+- [fixed_time_wavepacket_trace_bound](../../fixed_time_wavepacket_trace_bound.md) — 4 October proof and exact scope.
+
+- [egorov_overlap_rigidity](../../egorov_overlap_rigidity.md) — 4 October proof and exact scope.

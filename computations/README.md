@@ -121,3 +121,5 @@ checks 1248 exact finite Weyl fixed-point cases and the rational
 [`frozen_arithmetic_traces.json`](../evidence/20260924/frozen_arithmetic_traces.json).
 It runs in the whole-workspace suite and by `--only frozen_arithmetic_traces`.
 It does not evaluate the kicked traces or validate the asymptotic BGS target.
+
+The 4 October `verification/expansion_wavepacket_audit.py --output <path>` checks exact arithmetic, finite Weil characters, channels and odd coherent frames. `verification/expansion_wavepacket_checks.wl` is an exact algebra replay source; its execution status is recorded separately. Neither certifies a uniform Heisenberg estimate.

@@ -53,7 +53,10 @@ graph TD
   FLOW7 --> FLOW10
   FLOW8 --> FLOW10
   FLOW9 --> FLOW10
-  F1 --> F13[BGS-FM-013 fixed-time source application CONDITIONAL]
+  F1 --> F16[BGS-FM-016 overlap rigidity]
+  FLOW3 --> F16
+  T13[BGS-TRACE-013 auxiliary expansion word obstruction]
+  F1 --> F13[BGS-FM-013 bounded fixed-time packet traces]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
   F1 --> F7[BGS-FM-007 seven-cut transfer]
