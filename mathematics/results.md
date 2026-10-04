@@ -1,5 +1,16 @@
 # Current results and exact scope
 
+## Projected-square control and block crowding, 1 October 2026
+
+[TRACE-012](folded_quadratic_resonance_control.md) bounds the signed
+resonant cubic by $C_W\sqrt{E_N\|P_d(\rho_N^2)\|_2^2}$, retaining
+the factorial budget. A simple-spectrum family proves strict improvement
+over the global fourth moment. Root allocation can produce a d^2 loss
+if omitted from block density. Balanced counts give a general factorial
+crowding obstruction. The actual-map application remains finite;
+E/G asymptotics and BGS remain open. The
+[review](../record/folded_quadratic_review_20261001.md) records the checks.
+
 ## Resonant density mechanism and its critical boundary, 1 October 2026
 
 [TRACE-011](resonant_cubic_density_control.md) bounds the signed union of

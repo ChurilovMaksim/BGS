@@ -1,5 +1,11 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [projected-square continuation](record/folded_quadratic_review_20261001.md)
+sharpens resonant cubic control using a shifted four-point energy.
+It keeps root allocation and proves an exact factorial crowding threshold.
+Actual-map mass/energy asymptotics and any infinite-subsequence obstruction
+remain open; finite coherence does not settle BGS.
+
 The [1 October density continuation](record/resonant_density_review_20261001.md)
 proves a signed resonant cubic bound without the cardinality loss and
 identifies the sharp critical third-moment tail boundary. A realizable

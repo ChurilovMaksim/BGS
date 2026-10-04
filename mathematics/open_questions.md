@@ -1,5 +1,14 @@
 # Open mathematical obligations
 
+[TRACE-012](folded_quadratic_resonance_control.md) refines the actual-map
+input to $E_pG_{d_p,p}=o(1)$ with factorial counterterm control, where
+$G_{d,p}=\|P_d(\rho_p^2)\|_2^2$. For prime orders, $G_{d_p,p}=o(d_p^2)$
+is sufficient for the latter. Estimate the positive shifted four-point
+energy, retaining root allocation, or derive signed cancellation bypassing
+this sufficient condition. A crowding obstruction needs an infinite
+prime subsequence; finite small-tau*p^2 coherence is not one. Actual
+asymptotic inputs and nonresonant signed cancellation remain open.
+
 [TRACE-011](resonant_cubic_density_control.md) supplies a conditional
 resonant cubic deletion: prove the actual block mass $E_p\to0$ and a
 bounded averaged local occupancy moment of any order s>3, or critical

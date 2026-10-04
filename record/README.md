@@ -1,5 +1,11 @@
 # Research record
 
+The [projected-square review](folded_quadratic_review_20261001.md)
+records a sharper signed bound, root-allocation controls, balanced
+crowding counts and the finite/asymptotic map boundary.
+The [final audit of 4 October](folded_quadratic_audit_20261004.md)
+pins the proof revision and its exact scope at author-review level.
+
 The [1 October review](resonant_density_review_20261001.md) records
 resonant cubic deletion under explicit density control, sharp critical
 clusters, independent checks and the remaining actual-map estimates.

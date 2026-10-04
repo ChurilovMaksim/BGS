@@ -26,6 +26,10 @@ graph TD
   T1 --> T11[BGS-TRACE-011 resonant density and critical tails]
   T9 --> T11
   T10 --> T11
+  T1 --> T12[BGS-TRACE-012 folded square and crowding]
+  T9 --> T12
+  T11 --> T12
+  F1 --> T12
   F1 --> T9
   F10 --> T9
   CUE1[BGS-CUE-001 Haar singular-energy reference]
@@ -112,3 +116,8 @@ trace-mass cancellation is open; there is no asserted closure edge to TRACE-005.
 TRACE-010 excludes the simultaneous unaveraged all-order absolute target.
 Its CUE variance and formal phase control have no closure edge to TRACE-005;
 the latter explicitly retains signed weighted cancellation.
+
+TRACE-011 and TRACE-012 give conditional resonant-sector deletion and
+realizable spectral boundary controls. Actual E and shifted four-point
+energy, root allocation and nonresonant cancellation remain open;
+neither node has an asserted closure edge to TRACE-005.

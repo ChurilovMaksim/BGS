@@ -3,6 +3,16 @@
 This changelog records changes in scientific state. Ordinary formatting and
 implementation-only commits need not appear here.
 
+## 2026-10-01 — folded-square refinement of resonant cubic control
+
+- `BGS-TRACE-012`: sharper signed sector estimate, explicit root
+  allocation, strict realizable separation from the global fourth
+  moment and exact factorial crowding thresholds;
+- finite Fourier, convex-count, Gram and noncommuting controls, with
+  recorded independent Wolfram symbolic values;
+- actual-map coherence remains finite-dimensional; E/G asymptotics,
+  nonresonant cancellation and BGS remain OPEN.
+
 ## 2026-09-23 — scoped classical and frozen-kick results
 
 - `BGS-RES-005`: all-lag translated classical Riesz gap for the fixed physical

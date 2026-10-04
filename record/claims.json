@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-01",
+  "updated": "2026-10-04",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -1222,6 +1222,38 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Universal signed three-strip bound under explicit local density control. A deterministic simple spectrum can satisfy every signed CUE pair test, have vanishing resonant pair mass and bounded third occupancy moment, yet fail cubic comparison. This is not the frozen spectrum, a prime-order theorem, a weak-process counterexample or BGS; actual block mass and density tails remain open."
+    },
+    {
+      "id": "BGS-TRACE-012",
+      "title": "Folded-square signed resonant cubic control, explicit root allocation and factorial block-crowding obstruction",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/folded_quadratic_resonance_control.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-001",
+        "BGS-TRACE-009",
+        "BGS-TRACE-011"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20261001/folded_quadratic_checks.json",
+        "evidence/20261001/folded_quadratic_wolfram.json",
+        "evidence/executions/20261001-folded-quadratic.json",
+        "evidence/20261004/folded_quadratic_manifest.json",
+        "evidence/20261004/folded_quadratic_checks_corrected.json",
+        "evidence/20261004/folded_quadratic_manifest_corrected.json",
+        "evidence/executions/20261004-folded-quadratic-format-correction.json"
+      ],
+      "verifiers": [
+        "computations/verification/folded_quadratic_audit.py",
+        "computations/verification/folded_quadratic_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Universal signed three-strip bound sqrt(E G_d), G_d=||P_d rho^2||_2^2, with exact factorial budget. Root allocation is explicit and cannot be inferred from block density. Balanced crowding at (N d^(r-1))^(1/r) obstructs factorial correlations on a shrinking-arc sublinear-d subsequence, not weak-process convergence alone. Actual-map E/G asymptotics and such an infinite subsequence are open; p=239 is finite coherence. No BGS solution, priority, external referee or Lean analytic certificate."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

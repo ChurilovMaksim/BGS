@@ -1,5 +1,27 @@
 # Claim ledger
 
+## 1 October 2026 — projected-square refinement and block crowding
+
+**BGS-TRACE-012 — ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW +
+FINITE CONTROLS.** The [proof](../mathematics/folded_quadratic_resonance_control.md)
+improves the signed three-strip cubic budget to $C_W\sqrt{E_NG_d}$,
+with $G_d=\|P_d(\rho_N^2)\|_2^2$ and the exact factorial counterterm
+budget retained. A realizable simple-spectrum family separates this
+condition from the preceding global fourth-moment criterion.
+An exact root-allocation identity prevents a d^2 block-density loss.
+Balanced falling-factorial counts turn block crowding into a general
+higher-correlation obstruction, conditional on an infinite subsequence.
+
+The [review](folded_quadratic_review_20261001.md) gives a certified finite
+p=239 application at the actual coupling and quantifies why fixed Taylor
+degree does not furnish a Heisenberg remainder. Finite CUE/Sine bounds
+are derived directly. Actual E/G asymptotics, nonresonant cancellation,
+**TRACE-005 and BGS-BGS-001 remain OPEN**. No actual infinite-subsequence
+obstruction, external referee, new Lean compilation, priority or BGS
+solution is asserted.
+The [final 4 October audit](folded_quadratic_audit_20261004.md)
+clarifies common scalar phases and records the obligation matrix.
+
 ## 1 October 2026 — resonant cubic density control and critical tails
 
 **BGS-TRACE-011 — PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM

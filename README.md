@@ -6,8 +6,13 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 1 October 2026.**
+> **Scientific status — 4 October 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [projected-square continuation](record/folded_quadratic_review_20261001.md)
+sharpens the resonant cubic bound and proves a block-crowding criterion
+for higher correlations. Root allocation remains explicit; the actual-map
+asymptotic estimates and BGS remain open.
 
 The [density continuation](record/resonant_density_review_20261001.md)
 proves a signed resonant cubic bound under local spectral density control,

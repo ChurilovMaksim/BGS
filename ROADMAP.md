@@ -16,6 +16,9 @@ unaveraged all-order absolute strengthening; the actual signed estimate
 remains open. TRACE-011 deletes the resonant cubic sector once the
 actual block mass and local spectral tails are controlled; its
 pair-compatible critical clusters exclude a generic pair-only shortcut.
+TRACE-012 replaces the sufficient global moment by the smaller projected
+square energy. Actual resonant mass, that energy, root allocation and
+nonresonant signed cancellation still require model-specific estimates.
 
 **Milestone 3. Point-process closure.** State and verify the exact unfolding,
 symmetry class, positivity/tightness, and point-process hypotheses needed to
