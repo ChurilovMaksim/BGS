@@ -4,6 +4,8 @@
 
 [FM-013](fixed_time_wavepacket_trace_bound.md) proves bounded unnormalized
 traces at every fixed nonzero time for the original odd-N frozen operator.
+The explicit Gaussian refinement gives eventual first-two-trace bounds
+4 and 9 and closes the starting K=20 choice, with no effective threshold.
 Its exact frame and finite-order sampled residual avoid the even-N trace
 formula. [FM-016](egorov_overlap_rigidity.md) proves fixed-map overlap rigidity
 and affine-quantizer separation. [TRACE-013](arithmetic_word_expansion_obstruction.md)

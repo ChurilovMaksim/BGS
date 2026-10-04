@@ -16,6 +16,11 @@ with extensive tensor memory, simple spectra, bounded fixed traces and
 coherent Heisenberg returns. Original-map resonant cancellation and BGS
 remain open; normalized fixed-time trace vanishing was already known.
 
+The [completion](record/history/2026/completion_review_20261004.md) gives
+eventual first-two-trace bounds 4 and 9, closing the numerical K=20 input,
+and records a successful exact Wolfram replay. No effective dimension
+threshold or Heisenberg-time estimate follows.
+
 The [projected-square continuation](record/folded_quadratic_review_20261001.md)
 sharpens the resonant cubic bound and proves a block-crowding criterion
 for higher correlations. Root allocation remains explicit; the actual-map

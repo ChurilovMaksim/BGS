@@ -3,6 +3,8 @@
 **Claim ID: BGS-FM-013. Current bounded-input status: PROJECT PROOF.**
 4 October 2026: the [direct odd-N packet/frame proof](fixed_time_wavepacket_trace_bound.md)
 now gives $|p_j(U_N)|=O_j(1)$ for every fixed nonzero integer j.
+Its completion additionally proves eventual $|p_1|<4$, $|p_2|<9$, so
+the numerical starting choice $K=20$ is available without this source route.
 The Faure source adaptation below, its full action-phase trace formula
 and the numerical constants in (3) remain **CONDITIONAL**. This page
 preserves that narrower unresolved source route; it is not the authority

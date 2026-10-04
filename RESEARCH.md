@@ -1,5 +1,10 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [completion review](record/history/2026/completion_review_20261004.md)
+closes the numerical K=20 startup input by an explicit Gaussian trace
+bound, repairs the stored Wolfram replay and records its actual execution.
+It preserves the full fixed-strength Heisenberg target as open.
+
 The [4 October continuation](record/expansion_wavepacket_review_20261004.md)
 closes bounded fixed-time traces for the unchanged odd-N model by a direct
 packet/frame proof. It also proves an auxiliary-expansion counterexample

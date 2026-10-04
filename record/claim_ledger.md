@@ -7,11 +7,15 @@
 establishes $|\operatorname{Tr}U_N^j|=O_j(1)$ for each fixed nonzero integer
 j in the unchanged odd-dimensional frozen model. It uses an exact torus
 Gaussian frame, odd-N sampling and a controlled finite-order packet residual.
-The stronger historical Faure action-phase adaptation and numerical K=20
-remain conditional; no effective threshold, all-N initial trace convergence
+The completion's explicit Gaussian overlap bound gives limsup bounds below
+4 and 9 for the first two traces, closing K=20 at all sufficiently large
+odd dimensions. The stronger historical Faure action-phase adaptation
+remains conditional; no effective threshold, all-N initial trace convergence
 or uniform estimate for j~N is claimed. FM-007 already proved normalized
 trace vanishing and ellipticity; only the bounded unnormalized input is new
-in this continuation. FLOW-003 now has m2=O(1/N).
+in this continuation. FLOW-003 now has m2=O(1/N). The
+[completion review](history/2026/completion_review_20261004.md) records the
+Gaussian normalization, higher-packet localization and successful Wolfram replay.
 
 **BGS-FM-016 — PROJECT PROOF + AUTHOR SELF-REVIEW.** The
 [overlap lemma](../mathematics/egorov_overlap_rigidity.md) separates quantizers
@@ -208,7 +212,7 @@ or world-priority claim is asserted.
 | [BGS-FLOW-005](../mathematics/quadratic_noise_reversibility.md) | PROJECT PROOF + FINITE CONTROLS | Explicit Haar-reversible correction and gradient; full raw/corrected path-law TV vanishes at t -> 0 for bounded initial low traces. |
 | [BGS-FLOW-006](../mathematics/quadratic_noise_trace_fluctuations.md) | PROJECT PROOF + FINITE CONTROLS | Raw and corrected fixed-K, fixed-T trace OU limits; second-trace anomaly excludes microscopic raw/Dyson coupling at fixed positive time. |
 | [BGS-FLOW-007](../mathematics/quadratic_noise_clock_limit.md) | PROJECT DEDUCTION + CREDITED DYSON CLOCK FORMULA + FINITE CONTROLS | Odd clock start, t -> 0 and Nt -> infinity: phase-averaged Sine_2 weak limit for both quadratic diffusions; explicit noise-removal obstruction. |
-| [BGS-FM-013](../mathematics/quadratic_noise_fixed_time_input.md) | CONDITIONAL SOURCE APPLICATION | Exact odd-N parity repair retained. Full regularized trace and quantization/remainder identification remain to be checked before promoting fixed-time trace bounds for the actual map. |
+| [Historical Faure route for BGS-FM-013](../mathematics/quadratic_noise_fixed_time_input.md) | CONDITIONAL SOURCE APPLICATION | The full regularized action-phase formula and sharper amplitudes remain conditional. The separate current packet proof establishes bounded fixed traces and eventual K=20; this historical route does not override that proof. |
 | BGS-TRACE-005, BGS-BGS-001 | **OPEN** | No deterministic noise removal or model-specific Heisenberg joint-trace bound has been established. |
 
 The occupancy-dependent generator estimate in FLOW-003 is still valid;

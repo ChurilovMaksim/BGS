@@ -981,7 +981,10 @@
         "evidence/20260929/quadratic_noise_dynamics.json",
         "evidence/20260929/quadratic_noise_manifest.json",
         "evidence/20261004/expansion_wavepacket_checks.json",
-        "evidence/executions/20261004-expansion-wavepacket.json"
+        "evidence/executions/20261004-expansion-wavepacket.json",
+        "evidence/20261004/expansion_wavepacket_completion_checks.json",
+        "evidence/20261004/expansion_wavepacket_wolfram_completion.json",
+        "evidence/executions/20261004-completion.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py",
@@ -991,7 +994,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "For every fixed nonzero integer j, Tr(U_N^j)=O_j(1) along all sufficiently large odd N, by an exact Gaussian frame and finite-order packet construction. Constants and thresholds are ineffective; no j~N, all-N trace convergence, numerical K=20 or complete action-phase trace formula. The historical sharper Faure adaptation remains conditional."
+      "boundary": "For every fixed nonzero integer j, Tr(U_N^j)=O_j(1) along sufficiently large odd N, by an exact Gaussian frame and finite-order packet construction. A leading-Gaussian limsup bound gives eventual first-two trace bounds below 4 and 9, closing K=20. No effective dimension threshold, j~N estimate, all-N trace convergence or complete action-phase trace formula. The sharper historical Faure adaptation remains conditional."
     },
     {
       "id": "BGS-FLOW-008",

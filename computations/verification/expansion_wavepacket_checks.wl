@@ -17,7 +17,12 @@ checks = <|
  "mod3" -> Mod[Take[lucas,4],3],
  "mod7" -> Mod[Take[lucas,8],7],
  "rank1" -> rank[1],
- "rank2Identity" -> (Cancel[rank[2]-(p+7)/4] == 0),
- "rank3Identity" -> (Cancel[rank[3]-(p+3)(p^2+4 p+19)/32] == 0)
+ "rank2Identity" -> (Expand[rank[2]-(p+7)/4] === 0),
+ "rank3Identity" -> (Expand[rank[3]-(p+3)(p^2+4 p+19)/32] === 0),
+ "catFixedPointCounts" -> {Abs[Det[{{3,-4},{-2,3}}-IdentityMatrix[2]]],
+   Abs[Det[{{17,-24},{-12,17}}-IdentityMatrix[2]]]},
+ "catFrobeniusSquares" -> {3^2+4^2+2^2+3^2,17^2+24^2+12^2+17^2},
+ "firstTraceBoundBelow4" -> (40^4*164 < 39^4*4^4),
+ "secondTraceBoundBelow9" -> (320^4*5204 < 319^4*9^4)
 |>;
 ExportString[checks, "RawJSON"]

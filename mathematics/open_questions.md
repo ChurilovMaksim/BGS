@@ -1,5 +1,11 @@
 # Open mathematical obligations
 
+The direct FM-013 Gaussian refinement closes K=20 for the first two
+initial traces at all sufficiently large odd dimensions. An effective
+dimension threshold, the sharper historical action-phase formula,
+all-N initial-trace convergence and Heisenberg-time cancellation remain
+open; they are different obligations from fixed-time boundedness.
+
 [TRACE-012](folded_quadratic_resonance_control.md) refines the actual-map
 input to $E_pG_{d_p,p}=o(1)$ with factorial counterterm control, where
 $G_{d,p}=\|P_d(\rho_p^2)\|_2^2$. For prime orders, $G_{d_p,p}=o(d_p^2)$

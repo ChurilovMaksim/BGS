@@ -1,5 +1,14 @@
 # Scientific changelog
 
+## 2026-10-04 — completion of the fixed-time input
+
+- Explicit leading-Gaussian bound for FM-013: eventual first-two traces
+  below 4 and 9, hence numerical K=20 without the historical Faure route.
+- Higher-packet localization retained in the quantitative trace integral;
+  the dimension threshold and Heisenberg estimates remain unavailable.
+- Wolfram replay executes successfully after exact polynomial identity
+  reduction; source typo and historical/current scope wording repaired.
+
 ## 2026-10-04 — fixed-time packet trace closure and auxiliary-expansion boundary
 
 - FM-013: direct odd-N proof of O_j(1) fixed traces; sharper Faure amplitudes

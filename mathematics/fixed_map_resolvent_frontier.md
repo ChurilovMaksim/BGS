@@ -632,7 +632,9 @@ The [direct fixed-time model input](fixed_time_wavepacket_trace_bound.md)
 nonzero power trace is O_j(1), along all sufficiently large odd N.
 Its exact Gaussian frame and sampled packet residual are separate from
 Faure's even-dimensional torus formula. The [historical source route](quadratic_noise_fixed_time_input.md),
-its sharper action-phase amplitudes and numerical K=20 remain conditional.
+and its sharper action-phase amplitudes remain conditional. The direct
+Gaussian overlap bound now gives limsup values below 4 and 9 for the first
+two traces, closing K=20 for sufficiently large odd N.
 No effective threshold, uniform Heisenberg estimate or all-N initial trace
 convergence follows. These results leave `BGS-TRACE-005` and `BGS-BGS-001`
 open. The [current audit](../record/expansion_wavepacket_review_20261004.md)
@@ -1013,8 +1015,19 @@ $C_{j,M}(1+\operatorname{dist}(F^jz,z)/\sqrt h)^{-M}+C_jh^3$.
 Anosov nondegeneracy of fixed-time periodic points gives sublevel area
 O_j(r^2), and the exact frame trace gives O_j(Nh)=O_j(1).
 One-step Egorov or a first-order Gaussian approximation alone would not
-justify this bound. The proof supplies no effective constants, no numerical
-K=20 and no estimate with j of order N.
+justify this bound. Keeping the leading Gaussian gives the explicit
+fixed-time limsup upper bound
+$$
+\sqrt2\sum_{z\in\operatorname{Fix}(F^j)}
+\frac{\det(I+DF^j(z)DF^j(z)^{\mathsf T})^{1/4}}
+{|\det(DF^j(z)-I)|}.
+$$
+Localized higher packets contribute O(sqrt(h)) after the trace integral;
+the norm remainder contributes O(Nh^3). The classical derivative bound
+and the 4/32 fixed-point counts yield eventual
+$|\operatorname{Tr}U_N|<4$, $|\operatorname{Tr}U_N^2|<9$ and sum below 13.
+Thus K=20 is available. No effective dimension threshold or estimate
+with j of order N is supplied.
 
 FM-007 had already proved normalized fixed-time traces tend to zero in
 an actual logarithmic time window. The new bounded unnormalized input

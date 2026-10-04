@@ -261,6 +261,40 @@ def frames():
     return {'finite_frames': rows, 'exact_q_hessians_over_pi_squared': hessians}
 
 
+def gaussian_trace_bounds():
+    """Exact normalization/algebra controls for the fixed-time bound only."""
+    a, b, c, d = sp.symbols('a b c d', real=True)
+    mat = sp.Matrix([[a, b], [c, d]])
+    sigma = sp.eye(2)+mat*mat.T
+    frobenius_square = sum(value**2 for value in mat)
+    assert sp.expand(sigma.det()-1-frobenius_square-mat.det()**2) == 0
+    cat = sp.Matrix([[3, -4], [-2, 3]])
+    rows = []
+    for j, points, square, sigma_upper, ratio, bound in (
+            (1, 4, 38, 41, sp.Rational(40, 39), 4),
+            (2, 32, 1298, 1301, sp.Rational(320, 319), 9)):
+        jac = cat**j
+        assert jac.det() == 1 and abs((jac-sp.eye(2)).det()) == points
+        assert sum(value**2 for value in jac) == square
+        covariance = sp.eye(2)+jac*jac.T
+        displacement = jac-sp.eye(2)
+        quadratic = displacement.T*covariance.inv()*displacement
+        assert quadratic.det() == sp.Rational(points**2, square+2)
+        # Fourth powers remove every radical from the strict upper bounds.
+        fourth_power = ratio**4*4*sigma_upper
+        assert fourth_power < bound**4
+        rows.append({'j': j, 'cat_fixed_points': points,
+                     'cat_frobenius_square': square,
+                     'displacement_gaussian_determinant': str(quadratic.det()),
+                     'conservative_bound_fourth_power': str(fourth_power),
+                     'strict_limsup_bound': bound})
+    # Identity propagation: the Gaussian overlap amplitude must be one.
+    assert sp.sqrt(2)*(sp.eye(2)*2).det()**(-sp.Rational(1, 4)) == 1
+    return {'general_covariance_determinant_identity': True,
+            'vacuum_overlap_normalization': True, 'first_two_times': rows,
+            'scope': 'Exact Gaussian/matrix algebra; not a numerical test of the nonlinear trace limit, threshold or Heisenberg estimates.'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -269,7 +303,7 @@ def main():
             'python': platform.python_version(), 'numpy': np.__version__, 'sympy': sp.__version__,
             'arithmetic': arithmetic(), 'characters': characters(),
             'translation_compression': compression(), 'finite_channels': channels(),
-            'coherent_frames': frames(),
+            'coherent_frames': frames(), 'gaussian_trace_bounds': gaussian_trace_bounds(),
             'non_claims': ['asymptotic proof certification', 'actual flat-kick numerical spectra',
                           'Heisenberg trace cancellation', 'BGS', 'priority',
                           'independent referee', 'Lean compilation']}

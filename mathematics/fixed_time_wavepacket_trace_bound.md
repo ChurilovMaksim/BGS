@@ -29,8 +29,10 @@ $$
 |\operatorname{Tr}U_N^j|\le C_j\qquad(N\ge N_j,\ N\text{ odd}). \tag{1}
 $$
 
-The constants and thresholds are not effective here and are not uniform
-in $j$. In particular, no estimate is supplied for $j\asymp N$.
+The thresholds are not effective here and the estimates are not uniform
+in $j$. Section 5 gives explicit conservative asymptotic bounds at
+$j=1,2$, sufficient for the numerical starting bound $K=20$.
+No estimate is supplied for $j\asymp N$.
 The earlier [FM-007 proof](frozen_seven_cut_reduction.md), (9)--(12),
 already gives $O(N^{39/40})$ through a sufficiently short logarithmic
 time window. Thus qualitative normalized fixed-time trace vanishing,
@@ -125,7 +127,7 @@ and higher terms $h^{r/2}\operatorname{Op}_1(H_{r+2})$, $r\ge1$.
 For a truncation order $L$, solve the triangular equations
 
 $$
-i\partial_t a_\ell=operatorname{Op}_1(H_2)a_\ell+
+i\partial_t a_\ell=\operatorname{Op}_1(H_2)a_\ell+
 \sum_{r=1}^{\ell}\operatorname{Op}_1(H_{r+2})a_{\ell-r},
 \qquad 0\le\ell\le L.                                      \tag{6}
 $$
@@ -218,13 +220,123 @@ $|\operatorname{Tr}U_N^j|\le C_jNh+C_jNh^3=O_j(1)$, since
 $Nh=1/(2\pi)$. Negative powers follow by unitarity and complex conjugation.
 This proves (1) without evaluating a regularized plane trace.
 
-## 5. Closed inputs and what remains open
+## 5. Explicit first-two-trace bounds from the leading Gaussian
+
+The leading packet supplies a quantitative bound without a full trace
+formula or evaluation of its action phases. For a fixed positive $j$ put
+$J_z=DF^j(z)$ and $\Sigma_z=I+J_zJ_z^{\mathsf T}$. Then
+
+$$
+\limsup_{\substack{N\to\infty\\N\text{ odd}}}
+|\operatorname{Tr}U_N^j|
+\le B_j:=\sqrt2\sum_{z\in\operatorname{Fix}(F^j)}
+\frac{\det(\Sigma_z)^{1/4}}{|\det(J_z-I)|}.                  \tag{9}
+$$
+
+Here $B_j$ is a fixed-time bound, not the sharper stationary-phase
+amplitude sum. The following argument keeps every higher packet's
+localization; a first-order global norm error alone would not suffice.
+
+The degree-zero envelope in (6) is a normalized metaplectic Gaussian.
+Its classical variational equation is precisely that of $DF^j$, so
+its covariance is $(h/2)J_zJ_z^{\mathsf T}$; the incoming covariance
+is $(h/2)I$. For two such plane Gaussians with center displacement
+$\delta$, a direct Gaussian integral of their Wigner functions gives
+
+$$
+|\langle f_0,f_{J,\delta}\rangle|
+=\sqrt2\det(I+JJ^{\mathsf T})^{-1/4}
+\exp\left(-\frac{\delta^{\mathsf T}(I+JJ^{\mathsf T})^{-1}
+\delta}{2h}\right).                                         \tag{10}
+$$
+
+Indeed the incoming Wigner function is
+$(\pi h)^{-1}e^{-|w|^2/h}$ and the outgoing one is
+$(\pi h)^{-1}e^{-(w-\delta)^{\mathsf T}(JJ^{\mathsf T})^{-1}
+(w-\delta)/h}$. The identity
+$|\langle f_0,f_{J,\delta}\rangle|^2=2\pi h\int W_0W_1$
+and $\det J=1$ give (10). This also checks the normalization:
+at $J=I,\delta=0$ the right side is one.
+
+Sampling adds the integer position/momentum images from Section 4.
+In a small chart around each fixed point there is just one resonant
+image; the others are exponentially small. Away from the finitely many
+fixed-point charts all leading overlaps are exponentially small as well.
+Phases of those images and the transported action have modulus one.
+
+For a fixed point $z_0$, the lifted displacement has derivative
+$J_{z_0}-I$. Set $z=z_0+\sqrt h\,y$ in the integral of the leading
+absolute overlap. Its contribution, including the factor $N$ in (4),
+tends to
+
+$$
+\frac1{2\pi}\sqrt2\det(\Sigma_{z_0})^{-1/4}
+\int_{\mathbb R^2}
+e^{-y^{\mathsf T}(J_{z_0}-I)^{\mathsf T}
+\Sigma_{z_0}^{-1}(J_{z_0}-I)y/2}dy
+=\frac{\sqrt2\det(\Sigma_{z_0})^{1/4}}
+{|\det(J_{z_0}-I)|}.                                        \tag{11}
+$$
+
+Nondegeneracy and the uniform Gaussian decay justify dominated
+convergence. Each degree-$\ell\ge1$ packet has coefficient
+$h^{\ell/2}$ and the localized polynomial-Gaussian overlap of Section 4.
+Its integrated absolute contribution after multiplication by $N$ is
+$O_j(h^{\ell/2})$, not $O_j(Nh^{\ell/2})$. The norm remainder contributes
+$O_j(Nh^3)=o(1)$. Taking the triangle inequality before the trace
+integral and summing (11) proves (9).
+
+For the actual coupling we can bound $B_1,B_2$ explicitly. Write
+$B=S_0^{-1}$ and use FM-001's $\|DX_g\|\le3000$.
+Since $\kappa<10^{-80}$, Gronwall gives
+$\|D\Phi_g^{-\kappa}-I\|\le e^{3000\kappa}-1<6\cdot10^{-77}$.
+Also $\|B\|_{\mathrm{op}}<7$. Therefore, uniformly in $z$,
+
+$$
+\|DF(z)-B\|<10^{-74},\qquad
+\|DF^2(z)-B^2\|<10^{-72}.                                   \tag{12}
+$$
+
+The second inequality follows by expanding
+$(B+E_2)(B+E_1)-B^2$, with each $\|E_i\|<10^{-74}$.
+FM-001's topological conjugacy gives exactly 4 and 32 fixed points
+at these two times. Direct matrix calculation gives
+$\operatorname{tr}B=6$, $\operatorname{tr}B^2=34$,
+$\|B\|_F^2=38$, $\|B^2\|_F^2=1298$. For a real symplectic
+$2\times2$ matrix, $\det(I+JJ^{\mathsf T})=2+\|J\|_F^2$
+and $|\det(J-I)|=|2-\operatorname{tr}J|$.
+Equation (12) thus yields the deliberately loose rational bounds
+
+$$
+B_1<\frac{40}{39}\sqrt2\,41^{1/4}<4,\qquad
+B_2<\frac{320}{319}\sqrt2\,1301^{1/4}<9.                       \tag{13}
+$$
+
+The last comparisons are exact integer inequalities after taking fourth
+powers. In the unperturbed cat the corresponding bounds are
+$\sqrt2\,40^{1/4}$ and $\sqrt2\,1300^{1/4}$, respectively;
+these are conservative absolute-overlap bounds, not its exact traces.
+
+Consequently there exists an unspecified $N_0$ such that for every odd
+$N\ge N_0$,
+
+$$
+|\operatorname{Tr}U_N|<4,\qquad
+|\operatorname{Tr}U_N^2|<9,\qquad
+|\operatorname{Tr}U_N|+|\operatorname{Tr}U_N^2|<13<20.          \tag{14}
+$$
+
+This closes the numerical $K=20$ initial-trace input to FLOW-004/005.
+It gives neither an effective threshold nor an all-$N$ bound. The sharper
+historical Faure action-phase amplitudes remain conditional.
+
+## 6. Closed inputs and what remains open
 
 For each fixed finite list of powers, the initial unnormalized traces
 are now uniformly bounded; subsequences with convergent initial traces
 exist. Convergence of those traces along all odd $N$ is not proved.
-FLOW-004/005 can use some finite bound on $|p_1|+|p_2|$ for sufficiently
-large $N$; this proof does not supply the numerical choice $K=20$.
+FLOW-004/005 can now use $K=20$ on $|p_1|+|p_2|$ for sufficiently
+large odd $N$, by (14), with an unspecified starting threshold.
 The sharp limsup constants in the historical FM-013 source adaptation,
 or the complete action-phase trace formula, remain conditional there.
 

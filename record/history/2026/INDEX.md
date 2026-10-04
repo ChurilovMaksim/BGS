@@ -25,6 +25,7 @@ This index is navigational; status authority remains
 - [fixed-strength locality audit](../../fixed_strength_locality_audit.md)
 
 ## Publication and integrity
+- [4 October numerical trace-input completion and successful Wolfram replay](completion_review_20261004.md)
 - [4 October inherited-inventory repair and full supplement replay](ci_integrity_20261004.md)
 - [23 September repository-wide editorial and verification pass](repository_hygiene_20260923.md)
 - [final consolidation audit](../../final_consolidation_audit_20260906.md)
