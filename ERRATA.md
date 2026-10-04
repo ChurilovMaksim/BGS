@@ -31,6 +31,7 @@ mechanisms and historical context remain authoritative in
 | `ERR-023` | Outside Heisenberg note: line geometry, anisotropic scope and summation/convention errors | corrected before promotion | ideal FUP conclusion repaired; no quantum or CUE promotion |
 | `ERR-024` | Outside prime-resonant summary: inverse block orientation and pointwise CUE equivalence | corrected before promotion | exact whole-sector mass criterion; no model cancellation promoted; 29/97 scalar exclusions removed |
 | `ERR-025` | Absolute trace sufficiency versus a feasible unaveraged all-order criterion | scope strengthened; sufficient implication retained | Simultaneous unaveraged absolute pair/all-order hypotheses are impossible; TRACE-005 explicitly retains signed cancellation |
+| `ERR-026` | FLOW-010 denial of all polynomial-step regimes | scope corrected; previous theorem retained | Slow-time polynomial corollary already follows from FLOW-010; FLOW-011 retains the earlier N^(-1/3) rate with 2 N^34 original random steps. Deterministic BGS remains open. |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

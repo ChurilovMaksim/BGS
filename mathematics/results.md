@@ -1,5 +1,26 @@
 # Current results and exact scope
 
+## Polynomial original-coboundary limit, 4 October 2026
+
+[FLOW-011](coboundary_polynomial_limit.md) proves, for independent
+normalized GUE kicks from an odd clock, the smooth local Laplace bound
+
+$$
+C_f[\sqrt t+(Nt)^{-1}+N^{-2}+N^4\varepsilon
++tN^9\varepsilon+tN^{10}\varepsilon^2].
+$$
+
+With $t=N^{-2/3}$ and $\varepsilon=N^{-26/3}$, exactly $2N^{34}$
+original uncentered steps have error $O_f(N^{-1/3})$.
+The proof retains fast-coordinate suppression, establishes
+dimension-uniform semigroup derivatives and uses positivity to bound
+the sixth test norm by $C_fN^6$. The weaker slow-time polynomial
+corollary already follows from FLOW-010; its former scope statement is
+corrected. The [review](../record/polynomial_coboundary_review_20261004.md)
+records an independent internal check of the new estimates and finite
+controls. Actual-map relaxation, deterministic noise removal and BGS
+remain open; unbounded correlation transfer requires uniform integrability.
+
 ## Fixed-time trace closure and expansion/memory boundary, 4 October 2026
 
 [FM-013](fixed_time_wavepacket_trace_bound.md) proves bounded unnormalized
@@ -79,7 +100,8 @@ quantitative in dimension: the original uncentered chain has a joint
 Sine_2 weak limit at epsilon_N=exp(-N), t_N -> 0, N t_N -> infinity.
 The stopped first-trace scale is epsilon/N + epsilon^4. Smooth tests at
 t_N=N^(-2/3) have error O_f(N^(-1/3)). This is a project proof with
-author self-review; polynomial step sizes and deterministic BGS remain open.
+author self-review. Polynomial step sizes are now treated in FLOW-011;
+deterministic BGS remains open.
 See the [audit](../record/coboundary_joint_review_20260930.md).
 
 ## Actual coboundary steps and Möbius reduction, 29 September 2026

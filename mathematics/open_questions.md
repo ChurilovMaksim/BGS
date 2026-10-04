@@ -65,8 +65,10 @@ The [Möbius reduction](coboundary_mobius_diffusion.md) now proves a
 fixed-dimension stopped spectral quotient limit for repeated Gaussian
 coboundary steps and an iterated clock-to-Sine theorem. An explicit
 simultaneous regime is now established by
-[FLOW-010](coboundary_joint_limit.md) at epsilon_N=exp(-N).
-An economical polynomial step-size regime, relaxation from the actual
+[FLOW-010](coboundary_joint_limit.md) at epsilon_N=exp(-N), and the
+[polynomial continuation](coboundary_polynomial_limit.md) closes that
+clock regime with epsilon_N=N^(-26/3) and exactly 2N^34 steps.
+Optimizing this large exponent, relaxation from the actual
 starting spectra and deterministic noise removal remain open. No convergence
 of the rapidly changing original matrix paths is asserted.
 

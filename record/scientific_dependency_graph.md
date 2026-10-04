@@ -53,6 +53,10 @@ graph TD
   FLOW7 --> FLOW10
   FLOW8 --> FLOW10
   FLOW9 --> FLOW10
+  FLOW3 --> FLOW11[BGS-FLOW-011 polynomial random-kick limit]
+  FLOW7 --> FLOW11
+  FLOW9 --> FLOW11
+  FLOW10 --> FLOW11
   F1 --> F16[BGS-FM-016 overlap rigidity]
   FLOW3 --> F16
   T13[BGS-TRACE-013 auxiliary expansion word obstruction]

@@ -1,5 +1,16 @@
 # Scientific changelog
 
+## 2026-10-04 — polynomial original-coboundary joint limit
+
+- FLOW-011: dimension-uniform coefficient and semigroup derivatives;
+  positive microscopic Laplace test norm $C_fN^6$.
+- Exactly $2N^{34}$ original random steps retain the $O_f(N^{-1/3})$
+  clock-to-Sine rate. Independent internal checking covers the new estimates.
+- ERR-026: a slower polynomial regime already follows from FLOW-010's
+  previous bound; current scope surfaces corrected, dated evidence retained.
+- Forty finite matrix controls, exact derivative partitions and Wolfram
+  exponent checks; deterministic BGS and noise removal remain OPEN.
+
 ## 2026-10-04 — completion of the fixed-time input
 
 - Explicit leading-Gaussian bound for FM-013: eventual first-two traces

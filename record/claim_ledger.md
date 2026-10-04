@@ -1,5 +1,31 @@
 # Claim ledger
 
+## 4 October 2026 — polynomial original-coboundary clock limit
+
+**BGS-FLOW-011 — PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW
+ESTIMATES + EXACT ALGEBRA AND FINITE CONTROLS.**
+The [proof](../mathematics/coboundary_polynomial_limit.md) bounds the
+original uncentered normalized-GUE chain from an odd clock by
+$C_f[\sqrt t+(Nt)^{-1}+N^{-2}+N^4\varepsilon+
+tN^9\varepsilon+tN^{10}\varepsilon^2]$ for nonnegative smooth local
+Laplace tests. Taking $t=N^{-2/3}$, $\varepsilon=N^{-26/3}$ and exactly
+$2N^{34}$ steps gives $O_f(N^{-1/3})$. Nonnegative $C_c^1$ tests have
+the weak limit by approximation. The new proof establishes normalized
+covariance-square-root and projected-coefficient derivatives, backward
+stability $e^{Ct}$ and microscopic test norm $C_fN^6$.
+
+**ERR-026:** FLOW-010's own bound already implied a slower polynomial
+regime at $t=L_N/N$, $L_N\to\infty$, $L_N=o(\log N)$, $\varepsilon=N^{-a}$,
+$a>20$. Its former “no polynomial-step regime” scope statement is
+corrected; the old quantitative theorem and dated evidence remain valid.
+The [review](polynomial_coboundary_review_20261004.md) states which new
+proof obligations received independent internal checking. Inherited
+FLOW-003/007/009/010 proofs are not thereby externally refereed.
+This closes the recorded random-chain polynomial question, not
+actual-map relaxation, deterministic noise removal, or unbounded
+correlation uniform integrability. **BGS-TRACE-005 and BGS-BGS-001
+remain OPEN.** Priority and prize-level significance are unestablished.
+
 ## 4 October 2026 — bounded fixed traces and auxiliary-expansion obstruction
 
 **BGS-FM-013 — PROJECT PROOF + AUTHOR SELF-REVIEW.** The
@@ -183,8 +209,10 @@ t_N -> 0, N t_N -> infinity. Uniform fast-mode control and a quantitative
 backward-semigroup comparison remove the earlier order-of-limits restriction
 in this explicit regime. Smooth tests at t_N=N^(-2/3) have rate O_f(N^(-1/3)).
 The [audit](coboundary_joint_review_20260930.md) records the proof boundary.
-Polynomial step sizes, actual-map relaxation, BGS-TRACE-005 and BGS-BGS-001
-remain **OPEN**. No independent or formal validation is asserted.
+**4 October correction:** polynomial step sizes are now supplied by
+FLOW-011 above, and a slower regime already follows from this bound.
+Actual-map relaxation, BGS-TRACE-005 and BGS-BGS-001 remain **OPEN**.
+The dated audit does not assert independent or formal validation.
 
 ## 29 September 2026 — continued research: the actual coboundary chain
 

@@ -9,6 +9,13 @@
 > **Scientific status — 4 October 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
+The [polynomial coboundary continuation](record/polynomial_coboundary_review_20261004.md)
+proves a joint Sine_2 weak limit for the original random chain from an odd
+clock with epsilon_N=N^(-26/3), t_N=N^(-2/3) and exactly 2N^34 steps.
+Smooth Laplace tests retain error O_f(N^(-1/3)). Dimension-uniform
+coefficient derivatives close the recorded polynomial-regime question;
+actual-map relaxation and deterministic noise removal remain open.
+
 The [4 October research audit](record/expansion_wavepacket_review_20261004.md)
 closes bounded fixed-time traces for the unchanged odd-N model by a direct
 packet/frame proof. It also proves an auxiliary-expansion counterexample
@@ -50,7 +57,8 @@ The [30 September extension](record/coboundary_joint_review_20260930.md)
 proves a simultaneous clock-to-Sine limit for the original uncentered
 Gaussian coboundary chain at epsilon_N=exp(-N). Its dimension-uniform
 fast-mode bound removes the earlier order-of-limits restriction in that
-explicit regime; deterministic BGS and polynomial step sizes remain open.
+explicit regime. The polynomial question is closed by FLOW-011 above;
+deterministic BGS remains open.
 
 The [further Möbius reduction](record/coboundary_mobius_review_20260929.md)
 connects finite uncentered random coboundary steps to a spectral diffusion

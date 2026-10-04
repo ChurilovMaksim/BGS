@@ -1,5 +1,13 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [polynomial continuation](record/polynomial_coboundary_review_20261004.md)
+closes the random-chain polynomial-regime question at the earlier
+O_f(N^(-1/3)) rate, with exactly 2N^34 original uncentered steps.
+It also corrects the old scope statement: FLOW-010 itself already implies
+a slower polynomial regime at t_N=L_N/N, L_N=o(log N).
+The review records three research routes, the new derivative proof,
+an independent internal check and the unchanged deterministic frontier.
+
 The [completion review](record/history/2026/completion_review_20261004.md)
 closes the numerical K=20 startup input by an explicit Gaussian trace
 bound, repairs the stored Wolfram replay and records its actual execution.
@@ -49,8 +57,9 @@ remain open; the exact new results and their limits are separately indexed.
 The [30 September continuation](record/coboundary_joint_review_20260930.md)
 proves a dimension-quantitative joint clock-to-Sine limit for the original
 uncentered random kicks at epsilon_N=exp(-N). Uniform first-trace control
-closes this order-of-limits question. The exponential step count, polynomial
-step-size question and deterministic BGS frontier remain explicit limitations.
+closes this order-of-limits question. Its displayed example has an
+exponential step count; FLOW-011 above now closes the polynomial question.
+The deterministic BGS frontier remains open.
 
 The [Möbius continuation](record/coboundary_mobius_review_20260929.md)
 identifies the actual fourth-order coboundary drift and proves an iterated

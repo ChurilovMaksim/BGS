@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-09-30",
+  "updated": "2026-10-04",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -176,6 +176,13 @@
       "title": "Absolute trace sufficiency versus a feasible unaveraged all-order criterion",
       "disposition": "scope strengthened; sufficient implication retained",
       "downstream": "Simultaneous unaveraged absolute pair/all-order hypotheses are impossible; TRACE-005 explicitly retains signed cancellation",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-026",
+      "title": "FLOW-010 denial of all polynomial-step regimes",
+      "disposition": "scope corrected; previous theorem retained",
+      "downstream": "Slow-time polynomial corollary already follows from FLOW-010; FLOW-011 retains the earlier N^(-1/3) rate with 2 N^34 original random steps. Deterministic BGS remains open.",
       "authority": "record/retractions.md"
     }
   ]

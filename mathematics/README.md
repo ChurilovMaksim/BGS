@@ -1,5 +1,10 @@
 # Mathematics
 
+[coboundary_polynomial_limit.md](coboundary_polynomial_limit.md)
+closes the polynomial-step clock-to-Sine question for the original
+random chain, with a dimension-uniform derivative proof and the earlier
+$O_f(N^{-1/3})$ smooth-test rate. The deterministic BGS target stays open.
+
 [resonant_cubic_density_control.md](resonant_cubic_density_control.md)
 proves the local-density resonant cubic deletion, its critical tail boundary
 and a deterministic pair-compatible cluster obstruction. Actual-map

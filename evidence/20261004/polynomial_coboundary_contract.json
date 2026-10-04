@@ -1,0 +1,63 @@
+{
+  "claim_id": "BGS-FLOW-011",
+  "mathematics": {
+    "assertion_tested": "Finite coefficient contractions, first square-root/projected-noise Frechet derivatives, rational exponent bookkeeping and derivative partitions",
+    "coefficient_domain": "exact Q/Z and complex128 diagnostics",
+    "conventions": "real traceless Hermitian HS-orthonormal basis; B=N C; normalized GUE covariance 1/N",
+    "inputs": [
+      "computations/verification/coboundary_polynomial_limit.py",
+      "FLOW-003 exact covariance, FLOW-009 projected coefficients"
+    ],
+    "bounds": {
+      "N": [
+        3,
+        5,
+        7,
+        9,
+        13
+      ],
+      "spectra": [
+        "clock",
+        "warped"
+      ],
+      "directions_per_spectrum": 4,
+      "derivative_orders_exact_partitions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "finite_difference_step": 2e-05,
+      "noise_error_tolerance": 2e-07
+    },
+    "non_claims": [
+      "No stochastic-limit proof from computation",
+      "No practical step simulation",
+      "No deterministic BGS theorem"
+    ]
+  },
+  "execution_artifacts": [
+    "computations/verification/coboundary_polynomial_limit.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.17.0"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.default_rng PCG64",
+    "seed": 20261004
+  }
+}

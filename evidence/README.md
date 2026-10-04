@@ -1,5 +1,12 @@
 # Evidence
 
+The [polynomial coboundary run](executions/20261004/polynomial-coboundary/manifest.json)
+records FLOW-011 finite coefficient and exact exponent controls.
+[Wolfram evidence](20261004/polynomial_coboundary_wolfram.json) contains
+the actual scalar/exponent response; it is not a stochastic proof certificate.
+The [integration record](executions/20261004-polynomial-integration.json)
+separates focused regression, source synchronization and manuscript build.
+
 The [signed Heisenberg packet](20260930/signed_heisenberg_manifest.json)
 records TRACE-010 finite controls. Its
 [execution record](executions/20260930-signed-heisenberg.json) separates

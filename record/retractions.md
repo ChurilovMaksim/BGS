@@ -135,3 +135,17 @@ is the signed weighted sum. This is a correction of the proposed norm's
 scope, not a retraction of the exact trace bridge or of BGS. The formal
 quadratic-phase control also fails moment positivity at N=3; no actual
 quantum family is inferred from its trace amplitudes and phases.
+
+## Polynomial coboundary-step scope (4 October 2026)
+
+**ERR-026 — scope corrected; previous theorem retained.**
+The current summary of FLOW-010 had incorrectly ruled out every polynomial
+step regime. Its own bound gives convergence with
+$t_N=L_N/N$, $L_N\to\infty$, $L_N=o(\log N)$ and
+$\varepsilon_N=N^{-a}$, $a>20$, since
+$N^{20}e^{CNt_N}\varepsilon_N=N^{20-a+o(1)}$.
+The stronger [FLOW-011](../mathematics/coboundary_polynomial_limit.md)
+now retains the $O_f(N^{-1/3})$ smooth-test rate at exactly $2N^{34}$
+original random steps. Current status surfaces are corrected; the
+30 September quantitative theorem and dated evidence are not retracted.
+Neither result proves deterministic noise removal or BGS.

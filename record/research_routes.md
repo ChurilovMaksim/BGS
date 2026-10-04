@@ -1,5 +1,17 @@
 # Research route log
 
+## 2026-10-04 — Uniform derivatives close the random-chain polynomial regime
+
+The [research and proof review](polynomial_coboundary_review_20261004.md)
+records the frozen full BGS target and three routes. A direct fixed-time
+extension and an arbitrary-analytic orbit truncation supply no missing
+uniform estimate. The random-chain route yields FLOW-011: dimension-uniform
+coefficient derivatives, positive microscopic Laplace test norm $C_fN^6$,
+and exactly $2N^{34}$ original steps at error $O_f(N^{-1/3})$.
+FLOW-010's slow-time polynomial corollary also repairs its earlier
+scope statement. Heisenberg signed traces and deterministic noise removal
+remain the explicit continuation targets; no full BGS proof is claimed.
+
 ## 2026-10-01 — Density-controlled resonant deletion and critical clusters
 
 The [review](resonant_density_review_20261001.md) closes the generic

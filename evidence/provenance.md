@@ -1,5 +1,16 @@
 # Evidence provenance
 
+The 4 October [polynomial coboundary packet](executions/20261004/polynomial-coboundary/manifest.json)
+pins final source, run limits, seed and 40 finite matrix-direction controls.
+Its [checks](executions/20261004/polynomial-coboundary/checks.json) distinguish
+complex128 diagnostics from exact rational/partition arithmetic.
+[Wolfram output](20261004/polynomial_coboundary_wolfram.json) checks exponents
+and a scalar sixth derivative only. The
+[review](../record/polynomial_coboundary_review_20261004.md) states the
+analytic proof and independent internal review boundary; the
+[integration record](executions/20261004-polynomial-integration.json)
+records focused regression and publication checks.
+
 Every promoted evidence object is interpreted only at the scope stated in its JSON and associated review. This index is path-complete for the current `evidence/certificates/` directory as audited on 2026-09-07. Historical producer names remain available in Git but do not override maintained sources.
 
 | Certificate | Current interpretation / maintained validation surface |

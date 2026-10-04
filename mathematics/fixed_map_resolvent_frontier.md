@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 1 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
@@ -702,10 +702,75 @@ $$
 Hence $\varepsilon_N=e^{-N}$, $t_N\to0$ and $Nt_N\to\infty$ give
 a simultaneous local weak limit. At $t_N=N^{-2/3}$ the smooth-test rate
 is $O_f(N^{-1/3})$. Nonnegative $C_c^1$ tests follow by approximation,
-without this rate. The exponential step count is not practical, and no
-polynomial-step theorem or deterministic noise removal follows. The
+without this rate. The displayed exponential step count is not practical.
+Its bound also gives a slower polynomial regime at $t=L_N/N$,
+$L_N\to\infty$, $L_N=o(\log N)$, $\varepsilon=N^{-a}$, $a>20$;
+the earlier denial of any polynomial regime is corrected by ERR-026.
+No deterministic noise removal follows. The
 [author audit](../record/coboundary_joint_review_20260930.md) separates
 the analytic proof from exact algebra and finite Frechet-gradient checks.
+
+## Polynomial original-coboundary steps with the previous local rate
+
+The [polynomial continuation](coboundary_polynomial_limit.md)
+(`BGS-FLOW-011`) proves for the same original chain, odd clock start and
+nonnegative $f\in C_c^\infty(\mathbb R)$ that
+
+$$
+\left|\mathbb E\Phi_{N,f}
+(U^\varepsilon_{\lfloor2t/\varepsilon^4\rfloor})
+-\Phi_{\mathrm{Sine}_2}(f)\right|
+\le C_f[\sqrt t+(Nt)^{-1}+N^{-2}
++N^4\varepsilon+tN^9\varepsilon+tN^{10}\varepsilon^2],
+\quad 1/N\le t\le1/12.
+$$
+
+Here the original kicks retain independent normalized GUE and do not
+insert centering or covariance whitening. The proof improves two
+dimension estimates. On the localized region $|m_2|\le3/5$, writing
+$B=N\mathcal C_U$ on the fixed traceless Hermitian Hilbert space,
+positive-order derivatives satisfy
+$\|D^rB\|_{\rm op}\le C_r$ and
+$\|D^rB\|_{\rm HS}\le C_r\sqrt N$.
+In the differentiated square-root resolvent, placing one derivative in
+the latter norm cancels the exterior $N^{-1/2}$, giving
+$\|D^r\mathcal C_U^{1/2}\|_{\rm HS}\le C_r$.
+The rank-two Möbius projection has the same normalized structure.
+Its contracted noise drift follows from the exact identities
+
+$$
+Q_K=I-\tfrac12(m_2\bar m_1U^*+\bar m_2m_1U),\qquad
+Q_L=Q_K+2i(T^*U^*-TU)+2vI-\zeta U^{*2}-\bar\zeta U^2,
+$$
+
+where $T=\sum_a\bar w_aK_a$, $v=\sum_a|w_a|^2$,
+$\zeta=\sum_aw_a^2$ are the FLOW-009 coefficients.
+The derivative norms of drift and noise are dimension-uniform, including
+the normalized-trace cutoffs. Stochastic-flow variation estimates yield
+$\|S_sF\|_6\le Ce^{Cs}\|F\|_6$. Retaining the fast coordinate
+$\varepsilon/N+\varepsilon^4$ in the weak sum gives
+$tN^4\|F\|_6(\varepsilon/N+\varepsilon^2)$.
+
+For $A=\operatorname{Tr}f_{N,\alpha}(U)\ge0$, positivity bounds its first
+derivative by $C_fN\sqrt A$. For orders $j\ge2$, two direction factors
+in Schatten-2 norm bound differentiated Fourier traces by $C_{f,j}N^j$.
+Partition differentiation of $e^{-A}$ absorbs all remaining powers of
+$A$, proving $\|\Phi_{N,f}\|_6\le C_fN^6$, even at collisions.
+This completes the stated estimate.
+
+Taking $t=N^{-2/3}$ and $\varepsilon=N^{-26/3}$ gives exactly
+$2N^{34}$ steps and error $O_f(N^{-1/3})$. Nonnegative $C_c^1$ tests
+have the weak limit by approximation. The
+[review](../record/polynomial_coboundary_review_20261004.md) records the
+independent internal check of the new estimates and finite controls.
+For a fixed bounded interval $I$, the local counting generating function
+converges to $\det(I-(1-z)K_I)$ for $0\le z\le1$; the hole probability
+converges to $\det(I-K_I)$, with $K_I$ the restricted sine kernel.
+Smooth $L^1$ approximation uses unit intensity; no interval-test rate
+or higher-factorial-moment uniform integrability is asserted.
+The polynomial exponent is not optimized. Actual-map relaxation,
+deterministic noise removal and all-order unbounded-correlation transfer
+remain separate obligations; BGS-TRACE-005 and BGS-BGS-001 remain open.
 
 ## Classical action completion and the ideal Fourier alphabet
 

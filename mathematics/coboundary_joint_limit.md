@@ -31,9 +31,15 @@ Nonnegative $C_c^1$ tests have the joint limit, without the stated
 smooth-test rate, by approximation in $L^1$.
 
 This replaces the order-of-limits restriction for one explicit random
-model. Its step count is of order $t_Ne^{4N}$ and is not computationally
-practical. It does not prove a polynomial step-size regime, relaxation
-from the deterministic frozen spectrum, or removal of external noise.
+model. The displayed exponential example has step count of order
+$t_Ne^{4N}$ and is not computationally practical.
+**Scope correction, 4 October:** (1) itself also gives polynomial steps
+at $t_N=L_N/N$, $L_N\to\infty$, $L_N=o(\log N)$ and
+$\varepsilon_N=N^{-a}$, $a>20$, since its last term is
+$N^{20-a+o(1)}$. The [FLOW-011 continuation](coboundary_polynomial_limit.md)
+proves a stronger polynomial regime at the previous $N^{-1/3}$ rate.
+Neither theorem gives relaxation
+from the deterministic frozen spectrum or removal of external noise.
 The BGS-TRACE-005 and BGS-BGS-001 obligations remain open.
 
 ## 2. Uniform Gaussian bounds and the fast coordinate
@@ -339,9 +345,10 @@ The small fast coordinate has scale $\varepsilon/N+\varepsilon^4$,
 rather than an unspecified dimension-dependent $O_N(\varepsilon)$.
 Together with controlled derivatives on the Möbius slice this closes
 an explicit simultaneous regime for the original random kicks.
-It leaves a concrete quantitative question: replace the exponentially
-small step by an economical polynomial step without the coarse
-$e^{CNt}$ stability cost. More fundamentally, the initial clock has
+The quantitative polynomial question without the coarse $e^{CNt}$
+stability cost is now closed by [FLOW-011](coboundary_polynomial_limit.md);
+its large polynomial exponent is not optimized. The slower polynomial
+corollary of (1) is recorded above. More fundamentally, the initial clock has
 rigid spacings and this chain changes them to Sine$_2$. The argument
 therefore supplies no deterministic noise-removal estimate for the
 frozen quantum map.
