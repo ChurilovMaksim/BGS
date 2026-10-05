@@ -1,5 +1,13 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [critical-noise continuation](record/critical_noise_program_20261005.md)
+proves an exact signed clock pair comparison at rate $(Nt)^{-2}$ and
+critical all-order limits. Every fixed neutral trace projection of the
+actual operator has the correct compact-test CUE expectation at rate
+$O(N^{-1/2})$, uniformly at all heat times. The complementary unprojected
+statistic remains open; a particular local test refutes recovery from
+its small Haar norm. Full deterministic BGS is unchanged and OPEN.
+
 The [all-order continuation](record/all_order_program_20261005.md) closes
 every fixed local factorial order for the original noisy chain from the
 actual operator, with one superpolynomial step sequence. FLOW-016 transfers

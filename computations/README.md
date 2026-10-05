@@ -1,5 +1,11 @@
 # Computations
 
+[clock_structure_and_heat_projection.py](verification/clock_structure_and_heat_projection.py)
+checks rational Fourier selection, clock generator jets, compensated
+mesh masses, Abel signs, stable Gram matrices and cross-block determinant
+surrogates. Complex128 kernel and variance comparisons are diagnostics;
+no stochastic trajectory or asymptotic theorem is computationally certified.
+
 [local_moment_transport.py](verification/local_moment_transport.py)
 integrates rational periodic windows exactly, checks packing witnesses
 and collapsed-clock high-order failures, and differentiates low-degree

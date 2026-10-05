@@ -1,5 +1,12 @@
 # Mathematics
 
+[clock_structure_and_noise_scale.md](clock_structure_and_noise_scale.md)
+gives exact finite clock covariance, signed compensation, the sharp pair
+rate and all-order critical limits.
+[fixed_degree_heat_projection.md](fixed_degree_heat_projection.md)
+estimates every fixed neutral projection for the actual map and proves
+compact projected CUE agreement at $O(N^{-1/2})$. Its complement is open.
+
 [local_moment_transport.md](local_moment_transport.md) proves a packing
 theorem and all-order projected-to-Dyson transfer at $t^2\log N\to0$.
 [coboundary_all_order_limit.md](coboundary_all_order_limit.md) extends the

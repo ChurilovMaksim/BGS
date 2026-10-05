@@ -170,3 +170,15 @@ The spatial ergodicity leaf EXT-SOSH-2000 is pinned in the external registry.
 C16--C17 identify the exact remaining deterministic defect; its vanishing
 is open. Neither new node has a closure edge to deterministic TRACE-005 or
 BGS-BGS-001. This is not an all-order polynomial-schedule theorem.
+
+The critical-noise branch adds these exact registered dependencies.
+
+| New node | Scientific prerequisites | Remaining actual boundary |
+|---|---|---|
+| BGS-FLOW-018 | FLOW-007, FLOW-015, FLOW-016, FLOW-017, TRACE-007 | Exact clock selection rule and clock matching are not established for U_N. |
+| BGS-FLOW-019 | FLOW-015, FM-013, FLOW-017 | Every fixed projection is estimated; growing-degree complementary evaluation remains open. |
+
+EXT-KT-2009 credits the prior lattice kernel; EXT-DE-2001 is used only at
+2Q<=N. Neither node has a deterministic closure edge to TRACE-005 or
+BGS-BGS-001. The small-Haar-norm complement obstruction is for a local
+test on an abstract clock, not a counterexample to the maintained map.

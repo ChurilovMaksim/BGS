@@ -1,5 +1,12 @@
 # Bohigas–Giannoni–Schmit programme
 
+The [critical-noise continuation](record/critical_noise_program_20261005.md)
+adds exact clock pair compensation and the sharp $(Nt)^{-2}$ rate.
+[Fixed trace projections](mathematics/fixed_degree_heat_projection.md)
+of actual-map compact local tests agree with CUE at $O(N^{-1/2})$; the
+unprojected complement remains open. These partial estimates preserve
+the full deterministic target and do not assert a solution of BGS.
+
 The [5 October all-order continuation](record/all_order_program_20261005.md)
 proves all fixed local correlation orders for the original random chain
 from the actual operator, including one-chain origin averages and complete

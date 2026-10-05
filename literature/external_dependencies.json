@@ -257,7 +257,9 @@
       "mapping": "Prior circular Dyson clock kernel. Project rederives odd-N normalization and an explicit uniform bound, then applies its quadratic-noise comparison. No novelty for Dyson clock relaxation.",
       "project_sources": [
         "mathematics/quadratic_noise_clock_limit.md",
-        "literature/quadratic_noise_sources_20260929.md"
+        "literature/quadratic_noise_sources_20260929.md",
+        "mathematics/clock_structure_and_noise_scale.md",
+        "literature/critical_noise_sources_20261005.md"
       ]
     },
     {
@@ -327,7 +329,9 @@
         "literature/signed_heisenberg_sources.md",
         "record/claim_ledger.md",
         "mathematics/resonant_cubic_density_control.md",
-        "literature/resonant_density_sources.md"
+        "literature/resonant_density_sources.md",
+        "mathematics/fixed_degree_heat_projection.md",
+        "literature/critical_noise_sources_20261005.md"
       ]
     },
     {
@@ -457,6 +461,23 @@
         "literature/all_order_sources_20261005.md",
         "literature/return_local_limits_sources.md",
         "record/claim_ledger.md"
+      ]
+    },
+    {
+      "id": "EXT-KT-2009",
+      "authors": [
+        "Makoto Katori",
+        "Hideki Tanemura"
+      ],
+      "title": "Non-Equilibrium Dynamics of Dyson's Model with an Infinite Number of Particles",
+      "identifier": "arXiv:0812.4108v3; DOI:10.1007/s00220-009-0912-3",
+      "pinned_version": "v3, 19 June 2009",
+      "locator": "(1.1), (1.5)-(1.7), pp.1,4; Theorem 2.2, p.7; Section 4.3, pp.20-21",
+      "checked_on": "2026-10-05",
+      "mapping": "Prior integer-lattice Dyson relaxation kernel and sine attraction, credited as known. Source Brownian spatial time is project Nt/(4 pi^2); transpose the equal-time kernel and shift the uniform lattice phase. FLOW-018 independently derives the finite circular limit, without importing line truncation topology or a new infinite SDE construction.",
+      "project_sources": [
+        "mathematics/clock_structure_and_noise_scale.md",
+        "literature/critical_noise_sources_20261005.md"
       ]
     }
   ]

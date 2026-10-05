@@ -1,0 +1,323 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FLOW-018",
+  "repository": {
+    "commit": "0f3ac906f804a69006edd95194ea32fc6c5f601f",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/clock_structure_and_heat_projection.py",
+    "--output",
+    "evidence/executions/20261005/critical-noise/checks.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite Fourier selection, compensated mesh masses, clock generator jets, direct radial polynomial controls, Abel summand signs, stable Gram/generator matrices; generic rational cross-block Taylor surrogates; numerical critical kernels and variance/rate diagnostics",
+    "coefficient_domain": "Fraction exact rationals for algebraic controls; complex128/binary64 numerical diagnostics without interval certification",
+    "conventions": "Odd N clock, full normalized unitary Brownian generator D2, unfolded period N and unit intensity, p_0=N, Fourier exp(-2 pi i x xi), total variation without factor 1/2; stable Haar Gram requires 2Q<=N",
+    "inputs": [
+      "mathematics/clock_structure_and_noise_scale.md",
+      "mathematics/fixed_degree_heat_projection.md",
+      "mathematics/quadratic_noise_clock_limit.md",
+      "mathematics/microscopic_noise_removal.md",
+      "mathematics/local_moment_transport.md",
+      "mathematics/coboundary_all_order_limit.md",
+      "mathematics/fixed_time_wavepacket_trace_bound.md",
+      "literature/critical_noise_sources_20261005.md",
+      "computations/verification/clock_structure_and_heat_projection.py",
+      "computations/verification/microscopic_noise_removal.py",
+      "computations/verification/quadratic_noise_clock.py",
+      "mathematics/coboundary_mobius_diffusion.md",
+      "mathematics/quadratic_noise_coupling.md",
+      "mathematics/coboundary_joint_limit.md",
+      "mathematics/coboundary_polynomial_limit.md",
+      "mathematics/coboundary_general_start.md",
+      "literature/signed_heisenberg_sources.md"
+    ],
+    "bounds": {
+      "angular_N": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "angular_m": "1..2N+1",
+      "rational_z": [
+        "1/4",
+        "2/3",
+        "9/10"
+      ],
+      "angular_cases": 168,
+      "mass_N": [
+        3,
+        5,
+        7
+      ],
+      "mass_q": "1..4",
+      "mass_cases": 36,
+      "Abel_w": [
+        "1/2",
+        "4/5"
+      ],
+      "Abel_sign_cases": 72,
+      "jet_N": [
+        3,
+        5,
+        7
+      ],
+      "jet_m": "1..N+2",
+      "jet_order": "0..4",
+      "jet_cases": 105,
+      "direct_radial_N": 3,
+      "direct_radial_m": "1..5",
+      "direct_radial_order": "0..3",
+      "direct_radial_cases": 20,
+      "Gram_Q": "0..4",
+      "Gram_N": "distinct max(3,2Q), max(3,2Q+1), 2Q+3",
+      "Gram_cases": 12,
+      "max_Gram_dimension": 40,
+      "cross_block_surrogate_size": "2..6",
+      "cross_block_split": "1..size-1",
+      "cross_block_rational_patterns": 2,
+      "cross_block_surrogate_cases": 30,
+      "kernel_N": [
+        31,
+        63,
+        127
+      ],
+      "kernel_tau": [
+        0.5,
+        2.0,
+        8.0
+      ],
+      "kernel_phase": [
+        0.17,
+        0.43
+      ],
+      "kernel_alias_rmax": 12,
+      "kernel_cases": 18,
+      "band_N": [
+        31,
+        101,
+        301
+      ],
+      "band_tau": [
+        0.5,
+        2.0,
+        8.0
+      ],
+      "band_quadrature": 96,
+      "band_cases": 9,
+      "sharp_N": [
+        1001,
+        2001,
+        4001,
+        8001
+      ],
+      "sharp_tau": [
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "sharp_cases": 4,
+      "numerical_tolerances": {
+        "kernel_roundoff_margin": 2e-12,
+        "band_error": "2e-4/N",
+        "sharp_final_error": 1e-05
+      }
+    },
+    "non_claims": [
+      "No proof of all-N asymptotics or all-Q estimates by finite checks",
+      "Generic Taylor matrices are algebraic surrogates, not CUE samples",
+      "No stochastic trajectory, huge original-chain simulation or analytic Lean",
+      "No actual-map complementary/noise-defect estimate, full BGS or world novelty certification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-05T11:24:01.818106+00:00",
+    "runtime_seconds": 0.518064,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "mathematics/clock_structure_and_noise_scale.md",
+    "mathematics/fixed_degree_heat_projection.md",
+    "mathematics/quadratic_noise_clock_limit.md",
+    "mathematics/microscopic_noise_removal.md",
+    "mathematics/local_moment_transport.md",
+    "mathematics/coboundary_all_order_limit.md",
+    "mathematics/fixed_time_wavepacket_trace_bound.md",
+    "literature/critical_noise_sources_20261005.md",
+    "computations/verification/clock_structure_and_heat_projection.py",
+    "computations/verification/microscopic_noise_removal.py",
+    "computations/verification/quadratic_noise_clock.py",
+    "mathematics/coboundary_mobius_diffusion.md",
+    "mathematics/quadratic_noise_coupling.md",
+    "mathematics/coboundary_joint_limit.md",
+    "mathematics/coboundary_polynomial_limit.md",
+    "mathematics/coboundary_general_start.md",
+    "literature/signed_heisenberg_sources.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "mathematics/clock_structure_and_noise_scale.md",
+      "sha256": "08f2d087da3f471581339bd8a83db12a1f07abf7c877f39a723f36ea0de976fb",
+      "sha256_after": "08f2d087da3f471581339bd8a83db12a1f07abf7c877f39a723f36ea0de976fb"
+    },
+    {
+      "path": "mathematics/fixed_degree_heat_projection.md",
+      "sha256": "670bdf1e6815ae8add447706726c556874bc7d0f0f562721cb0a3e2b6655f84e",
+      "sha256_after": "670bdf1e6815ae8add447706726c556874bc7d0f0f562721cb0a3e2b6655f84e"
+    },
+    {
+      "path": "mathematics/quadratic_noise_clock_limit.md",
+      "sha256": "4d8d4ed8ce94a360152b9d7ffd4c8e004c185da5f512df5a58b5ceaa6acdfdd3",
+      "sha256_after": "4d8d4ed8ce94a360152b9d7ffd4c8e004c185da5f512df5a58b5ceaa6acdfdd3"
+    },
+    {
+      "path": "mathematics/microscopic_noise_removal.md",
+      "sha256": "f90d7b5ce1d24a05947f74fb101f19c0f40fc02ce13868f00576a1700eb96dfd",
+      "sha256_after": "f90d7b5ce1d24a05947f74fb101f19c0f40fc02ce13868f00576a1700eb96dfd"
+    },
+    {
+      "path": "mathematics/local_moment_transport.md",
+      "sha256": "dcbf7ecdf146186188c03e4076d6aec8fe8bcf71397016a32c70049e9801757a",
+      "sha256_after": "dcbf7ecdf146186188c03e4076d6aec8fe8bcf71397016a32c70049e9801757a"
+    },
+    {
+      "path": "mathematics/coboundary_all_order_limit.md",
+      "sha256": "ac59bc85917aa5414cf1d3b6498a08af9bd65464213042e6d8379e4a86b3176f",
+      "sha256_after": "ac59bc85917aa5414cf1d3b6498a08af9bd65464213042e6d8379e4a86b3176f"
+    },
+    {
+      "path": "mathematics/fixed_time_wavepacket_trace_bound.md",
+      "sha256": "dea4b671554a5726756e4d1871b427469b4a3ff960fed52ac4a425a0f481a4b4",
+      "sha256_after": "dea4b671554a5726756e4d1871b427469b4a3ff960fed52ac4a425a0f481a4b4"
+    },
+    {
+      "path": "literature/critical_noise_sources_20261005.md",
+      "sha256": "750d61b4b4b110336358a541950416b3f744e861b87dc2105915b9d48ec93453",
+      "sha256_after": "750d61b4b4b110336358a541950416b3f744e861b87dc2105915b9d48ec93453"
+    },
+    {
+      "path": "computations/verification/clock_structure_and_heat_projection.py",
+      "sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+      "sha256_after": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f"
+    },
+    {
+      "path": "computations/verification/microscopic_noise_removal.py",
+      "sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+      "sha256_after": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158"
+    },
+    {
+      "path": "computations/verification/quadratic_noise_clock.py",
+      "sha256": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07",
+      "sha256_after": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07"
+    },
+    {
+      "path": "mathematics/coboundary_mobius_diffusion.md",
+      "sha256": "699f97454edee866fdcebe9f69b92d4ce28334cd177e17ed7952118d4a4df4ee",
+      "sha256_after": "699f97454edee866fdcebe9f69b92d4ce28334cd177e17ed7952118d4a4df4ee"
+    },
+    {
+      "path": "mathematics/quadratic_noise_coupling.md",
+      "sha256": "82811249be42c9c44eb2e59c72037e469681853d8e01f8bab8b7f1b9ba3b71fa",
+      "sha256_after": "82811249be42c9c44eb2e59c72037e469681853d8e01f8bab8b7f1b9ba3b71fa"
+    },
+    {
+      "path": "mathematics/coboundary_joint_limit.md",
+      "sha256": "b3a831c9d9855031924bbb81f4bb9421f500d1a9dc724d7764f43bcee7f9d53f",
+      "sha256_after": "b3a831c9d9855031924bbb81f4bb9421f500d1a9dc724d7764f43bcee7f9d53f"
+    },
+    {
+      "path": "mathematics/coboundary_polynomial_limit.md",
+      "sha256": "80e4ecb86aca0cf8d3c4f6e5115ced3ed9665e1800e8e771afd67dde2134785e",
+      "sha256_after": "80e4ecb86aca0cf8d3c4f6e5115ced3ed9665e1800e8e771afd67dde2134785e"
+    },
+    {
+      "path": "mathematics/coboundary_general_start.md",
+      "sha256": "a1827a51b718032cfa79b9664ef02dfe546c499974a89d8e69728c088e8eebfc",
+      "sha256_after": "a1827a51b718032cfa79b9664ef02dfe546c499974a89d8e69728c088e8eebfc"
+    },
+    {
+      "path": "literature/signed_heisenberg_sources.md",
+      "sha256": "c651a196e4b088fa8d3c4f02968a56306b31ecf0b848c82a08f142d7f809efe7",
+      "sha256_after": "c651a196e4b088fa8d3c4f02968a56306b31ecf0b848c82a08f142d7f809efe7"
+    }
+  ],
+  "output_directory": "evidence/executions/20261005/critical-noise",
+  "declared_results": [
+    "evidence/executions/20261005/critical-noise/checks.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261005/critical-noise/stdout.txt",
+      "sha256": "63f6adc7392334775a2ed17e848badd5a89a7d0458b6ed17fbbf0a9d2a1581fa",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261005/critical-noise/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261005/critical-noise/checks.json",
+      "sha256": "63f6adc7392334775a2ed17e848badd5a89a7d0458b6ed17fbbf0a9d2a1581fa",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

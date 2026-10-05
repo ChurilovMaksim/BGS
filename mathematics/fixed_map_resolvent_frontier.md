@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states the deterministic all-order
@@ -1066,6 +1066,96 @@ The [finite packet](../evidence/executions/20261005/all-order/manifest.json)
 and [source review](../literature/all_order_sources_20261005.md) do not
 establish deterministic noise removal, world priority, external refereeing,
 an all-order polynomial schedule, or full BGS.
+
+## Critical-noise compensation and the entire fixed-degree projection
+
+**Claim IDs:** `BGS-FLOW-018`, `BGS-FLOW-019`. These results sharpen the
+transfer route and retain its open deterministic complement. The
+[clock proof](clock_structure_and_noise_scale.md) begins with the prior
+odd-dimensional Dyson kernel, and the
+[projection proof](fixed_degree_heat_projection.md) uses stable Haar trace
+moments in exactly the range $2Q\le N$.
+
+For the clock start and $\tau=Nt$, the exact covariance spectral measure is
+
+$$
+\mathcal S_{N,t}=\frac1{N^2}\sum_{m\ne0}
+\mathbb E|\operatorname{Tr}(B_tC_N)^m|^2\delta_{m/N}.
+$$
+
+Define $b_{q,\tau}(\xi)=(1-|\xi-q|)_+e^{-\tau q\xi}$ and
+
+$$
+a_{q,N}(\tau)=e^{-\tau q^2/2}
+\frac{\sinh(\tau q/2)}{N\sinh(\tau q/(2N))}.
+$$
+
+Exact angular Fourier selection gives
+$\mathbb E|p_m|^2=N[1-\sum_q b_{q,\tau}(m/N)]
++\mathbf1_{N\mid m}N^2a_{m/N,N}^2$, where the $q=0$ summand is
+$(1-|\xi|)_+$. The negative $q\ne0$ mesh mass equals $a_{q,N}^2$
+exactly. Consequently
+
+$$
+\mathcal S_{N,t}-\mathcal S_N^{\rm CUE}
+=\sum_{q\ne0}a_{q,N}^2(\delta_q-\nu_{q,N,\tau}),\qquad
+\|\mathcal S_{N,t}-\mathcal S_N^{\rm CUE}\|_{\rm TV}\le8/\tau^2
+$$
+
+for $\tau\ge1$, with $\nu$ a probability mesh measure. This signed pair
+rate improves the absolute kernel bound by one factor of $Nt$. It is
+sharp: if $\tau\to\infty$ and $t\to0$, the rescaled difference converges
+against compact weights to $\delta_1+\delta_{-1}-2\delta_0$.
+The positive-frequency Abel difference is strictly negative for every
+finite positive time and has leading coefficient $e^{-2s}-1$ in this
+joint regime. Its lower floor remains TRACE-007; no monotonicity in time
+is asserted.
+
+At $Nt\to\tau\in(0,\infty)$ the critical local law is the known
+lattice-relaxation phase mixture, with all fixed factorial moments.
+Its covariance density on $0<|\xi|<1$ is
+$|\xi|(1-e^{-\tau|\xi|})$, and it retains nonzero Bragg atoms.
+The ordered-lift Ito estimate
+
+$$
+\mathbb E\frac1N\sum_j|N(\theta_j(t)-2\pi j/N)/(2\pi)|^{2r}
+\le(2r-1)!![Nt/(4\pi^2)]^r
+$$
+
+and synchronous particle-noise contractivity transfer this trichotomy to
+starts with vanishing unfolded matching moments of every fixed order.
+Clock preservation requires $Nt\to0$, while its Sine relaxation requires
+$Nt\to\infty$. The original uncentered chain has the critical all-order
+corollary in the stated $t\ge1/N$ superpolynomial step regime. No such
+clock matching is established for the actual $U_N$.
+
+The actual-map estimate uses the neutral trace span $\mathcal H_{Q,N}$
+of positive and negative weighted degree at most a fixed $Q$. Its Haar
+Gram matrix is dimension independent and positive at $N\ge2Q$.
+D5 preserves it with generator coefficients $a+b/N$; Haar self-adjointness
+makes its projection $\mathsf P_{Q,N}$ commute with heat evolution.
+The bounded fixed traces of FM-013 therefore imply
+
+$$
+|(P_t-I)\mathsf P_{Q,N}\Phi_{N,f}(U_N)|\le C_{Q,f}t.
+$$
+
+A finite CUE cross-window determinant bound additionally proves
+$\operatorname{Var}_{\rm CUE}F_N\le C_F/N$ for compact factorial or
+Laplace tests. Thus, uniformly at every heat time $t\ge0$,
+
+$$
+|P_t\mathsf P_{Q,N}F_N(U_N)-\mathbb E_{\rm CUE}F_N|\le C_{Q,F}N^{-1/2}.
+$$
+
+Schwartz factorial tests have qualitative $o(1)$ only. These statements
+concern the projected observable, not the full local statistic.
+The complementary evaluation remains open. For a narrow positive
+Laplace test, its complement has Haar norm $O(N^{-1/2})$ yet has a
+nonzero limiting value on the clock. A small Haar norm cannot replace
+an actual complementary pointwise estimate. Neither claim closes
+TRACE-005 or deterministic BGS. Prior kernels and standard mechanisms
+are credited; world priority is unverified.
 
 ## The exact deterministic noise-removal obligation
 

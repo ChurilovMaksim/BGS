@@ -1,5 +1,19 @@
 # Current results and exact scope
 
+## Critical noise and actual fixed-degree projections, 5 October 2026
+
+[FLOW-018](clock_structure_and_noise_scale.md) proves exact finite clock
+covariance and equal-mass signed compensation. The pair comparison is
+uniformly $O((Nt)^{-2})$ and has a sharp three-atom leading defect.
+Its critical law has all fixed moments and a scoped original-chain
+corollary. The Abel statistic is strictly below finite CUE.
+[FLOW-019](fixed_degree_heat_projection.md) proves a $C_{Q,K}t$ defect
+bound for every fixed neutral projection, including the actual map.
+Compact projected local statistics agree with CUE at $O(N^{-1/2})$
+uniformly at all heat times. Schwartz versions are qualitative. A
+particular local complement has small Haar norm but a nonzero clock
+evaluation. The actual unprojected complement and full BGS remain open.
+
 ## All fixed correlation orders for the original random chain, 5 October 2026
 
 [FLOW-016](local_moment_transport.md) supplies local uniform integrability

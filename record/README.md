@@ -1,5 +1,11 @@
 # Research record
 
+The [critical-noise programme](critical_noise_program_20261005.md) records
+three executed routes, exact signed clock compensation, the actual-map
+fixed-degree projection estimates and the unresolved complement. The
+[review](critical_noise_review_20261005.md) separates independent internal
+proof checking from the bounded finite computation.
+
 The [all-order programme](all_order_program_20261005.md) and
 [independent internal review](all_order_review_20261005.md) record the
 transport theorem, high-moment localization, all fixed correlations of

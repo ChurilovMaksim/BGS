@@ -1,5 +1,12 @@
 # Research route log
 
+The [critical-noise portfolio](critical_noise_program_20261005.md) closes
+the entire fixed-degree projected estimate for the actual map and a sharp
+signed clock comparison. Finite CUE covariance decay yields projected
+compact-test agreement at $O(N^{-1/2})$ uniformly in heat time. The
+growing-degree complementary evaluation remains open; small Haar norm
+is insufficient even for one positive compact local Laplace test.
+
 ## 2026-10-05 — All-order stochastic closure retaining the deterministic goal
 
 The [continuation](all_order_program_20261005.md) executes character-heat,

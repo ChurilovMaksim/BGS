@@ -1,5 +1,8 @@
 # Trace Bridge
 
+- [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.
+- [fixed_degree_heat_projection](../../fixed_degree_heat_projection.md) — Actual fixed-degree projected CUE estimates and the open complementary evaluation.
+
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
 
 - [local_moment_transport](../../local_moment_transport.md) — Local uniform integrability from displacement moments and reference density.

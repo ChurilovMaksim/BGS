@@ -1,5 +1,52 @@
 # Claim ledger
 
+## 5 October 2026 — critical-noise compensation and actual fixed-degree projections
+
+**BGS-FLOW-018 — PROJECT PROOF + PRIOR CLOCK KERNEL + INDEPENDENT INTERNAL
+CHECK OF NEW IMPLICATIONS + FINITE CONTROLS.** The
+[proof](../mathematics/clock_structure_and_noise_scale.md) computes the
+exact Brownian-clock covariance, retaining the squared conditional means
+and every compensating mesh term. The entire signed pair comparison with
+finite CUE is bounded by $8/(Nt)^2$ for $Nt\ge1$. Its joint rescaled limit
+is $\delta_1+\delta_{-1}-2\delta_0$ when $Nt\to\infty$, $t\to0$,
+proving the rate is sharp. The Abel comparison is strictly negative,
+with leading coefficient $e^{-2s}-1$; no time monotonicity is asserted.
+
+The critical local phase-mixture law has all fixed factorial and ordinary
+moments. Ordered-lift moment control and synchronous particle coupling
+transfer it to starts with vanishing unfolded matching moments. These
+clock-like starts preserve all fixed local statistics precisely when
+$Nt\to0$. An original uncentered-chain annealed corollary retains its
+$t\ge1/N$ and superpolynomial-step restrictions. The prescribed actual
+map is not proved clock-matched; these are not its covariance identities.
+
+**BGS-FLOW-019 — PROJECT PROOF + PRIOR STABLE HAAR TRACE MOMENTS +
+INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS.**
+The [proof](../mathematics/fixed_degree_heat_projection.md) treats the
+entire fixed neutral trace span at positive/negative degree at most $Q$.
+Its fixed positive Haar Gram matrix uses Diaconis--Evans only at
+$2Q\le N$. Generator invariance and bounded evaluation give a projected
+heat defect $C_{Q,K}t$ for the actual map.
+
+Finite CUE covariance decay gives variance $C_F/N$ for compact local
+origin averages. Their fixed-degree projections at the actual operator
+agree with CUE at $O_{Q,F}(N^{-1/2})$, uniformly at every heat time.
+Schwartz variants are qualitative. The unprojected complementary
+statistic in P7 remains open. For one positive narrow Laplace test,
+that complement has Haar norm $O(N^{-1/2})$ but a nonzero clock
+point evaluation, proving an amplification of at least $c\sqrt N$.
+This is not an inverse-heat norm estimate or a chaotic counterexample.
+
+The [programme](critical_noise_program_20261005.md),
+[independent internal review](critical_noise_review_20261005.md) and
+[source check](../literature/critical_noise_sources_20261005.md) preserve
+prior attribution and the new/inherited review boundary. A two-sided
+alias majorant was corrected before acceptance. The Forrester v1 visible
+plus-sign formula is not imported; its incompatibility with the adopted
+initial data is documented separately from any journal-version claim.
+**Actual unprojected noise removal, TRACE-005 and full BGS remain OPEN.**
+No world priority, external referee or analytic Lean certification is asserted.
+
 ## 5 October 2026 — all-order original-chain law and exact remaining transfer
 
 **BGS-FLOW-016 — PROJECT PROOF + INHERITED FINITE-KERNEL INPUT +

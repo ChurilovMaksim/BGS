@@ -1,5 +1,12 @@
 # Open mathematical obligations
 
+The [fixed-degree projection](fixed_degree_heat_projection.md) now
+estimates every fixed neutral projected local test on the actual map.
+The exact remaining unperturbed term is $(I-\mathsf P_{Q,N})F_N(U_N)$
+for each fixed Q; P7 does not bound it. Small Haar norm is insufficient.
+The [clock compensation](clock_structure_and_noise_scale.md) is an exact
+control mechanism, not an identity for the actual initial spectrum.
+
 [FLOW-017](coboundary_all_order_limit.md) closes all fixed unbounded
 factorial orders and the complete signed Fourier target for the original
 **noisy** chain at one superpolynomial step schedule, including one-chain

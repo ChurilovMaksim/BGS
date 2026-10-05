@@ -1,5 +1,10 @@
 # Literature and external theorem dependencies
 
+[critical_noise_sources_20261005.md](critical_noise_sources_20261005.md)
+pins prior lattice relaxation kernels and the stable-range Haar input,
+with explicit time conversion and a source-formula incompatibility that
+is excluded from the proof. No priority claim is made.
+
 [all_order_sources_20261005.md](all_order_sources_20261005.md) checks
 Soshnikov's spatial ergodicity for Sine$_2$, explains why the inspected
 quantum-graph averaging setup supplies no fixed-map arrow, and states
