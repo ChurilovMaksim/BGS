@@ -1,5 +1,50 @@
 # Claim ledger
 
+## 5 October 2026 — growing degree and a particular microscopic inverse obstruction
+
+**BGS-FLOW-020 — PROJECT PROOF + PRIOR STABLE HAAR MOMENTS AND MEHLER
+IDENTITY + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT FINITE
+CONTROLS.** The [proof](../mathematics/growing_degree_trace_projection.md)
+constructs the exact neutral Wick basis and its point-evaluation kernel
+through $2Q\le N$. A prior Mehler identity gives an explicit degree
+bound. Fixed-order packet interaction words, weighted sampling and
+lattice overlap estimates newly supply the actual uniform input
+$|p_j(U_N)|\le C_0e^{\alpha|j|}$. This is proved with exponential
+seminorm bookkeeping, rather than inferred from a fixed-time threshold.
+
+At $Q_N=\lfloor\gamma\log N\rfloor$, compact actual-map projected
+local statistics agree with CUE at $O(N^{-1/4})$, uniformly at all
+heat times. The stronger logarithm-squared range requires uniformly
+bounded traces through the entire degree and is not proved for this
+operator. No quantitative Schwartz rate is claimed.
+
+Every starting unitary has whole-span evaluation cost at least
+$e^{c\sqrt Q}$ at large stable degree. Moreover, for one fixed real
+even Schwartz pair test
+$J_{N,w}=N^{-2}\sum_mw(m/N)(|p_m|^2-m)$, supported in
+$0<a<m/N<b<1/2$, every $Q<aN$ projection is **exactly zero**.
+Its Haar variance is exactly $N^{-4}\sum m^2|w(m/N)|^2=O(N^{-1})$,
+while its clock value has a nonzero limit. Every sublinear degree
+therefore misses this concrete microscopic comparison.
+
+An internally reconstructed permutation cut-and-join isometry gives
+the attained top-degree Casimir interval $q\pm q(q-1)/N$.
+For the same fixed pair test this proves a heat gap $a(1-b)N$ and
+inverse cost at least $e^{a(1-b)Nt}$ in **Haar $L^2$**.
+Unlike FLOW-015's global character example, this concerns a particular
+fixed local test, but it remains a function-space norm statement,
+not an estimate of its actual-map value.
+
+The [programme](growing_degree_program_20261005.md),
+[review](growing_degree_review_20261005.md) and
+[source check](../literature/growing_degree_sources_20261005.md) record
+three passes by one fresh reviewer and resolved small-N/inverse-wording
+corrections. The reviewer did not execute the finite checker.
+**Actual $J_{N,w}(U_N)$ vanishing, the complete signed complementary
+comparison, TRACE-005 and full deterministic BGS remain OPEN.**
+No world novelty, external refereeing or analytic Lean certificate
+follows from these partial proofs or exact finite controls.
+
 ## 5 October 2026 — critical-noise compensation and actual fixed-degree projections
 
 **BGS-FLOW-018 — PROJECT PROOF + PRIOR CLOCK KERNEL + INDEPENDENT INTERNAL

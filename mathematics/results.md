@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Actual growing projection and a particular local inverse boundary, 5 October 2026
+
+[FLOW-020](growing_degree_trace_projection.md) gives an exact neutral
+Wick basis, Mehler evaluation bound and actual exponential-in-time trace
+control. Compact actual local projections through
+$Q_N=\lfloor\gamma\log N\rfloor$ agree with CUE at
+$O(N^{-1/4})$, uniformly at every heat time. A stronger bounded-trace
+family has a separate logarithm-squared range; the actual map is not
+proved to satisfy that stronger input.
+
+Whole-span evaluation norm is universally at least $e^{c\sqrt Q}$
+at large stable degree. One fixed Schwartz pair comparison has exact
+zero projection for every $Q<aN$ and variance $O(N^{-1})$, but a
+nonzero clock limit. The attained top-degree Casimir interval
+$q\pm q(q-1)/N$ proves a heat gap $a(1-b)N$ and exponential
+Haar-$L^2$ inverse cost for that very local test. These results have
+independent internal analytic review; their finite rational checks
+certify only the specified cases. Its actual unprojected value,
+TRACE-005 and full deterministic BGS remain open.
+
 ## Critical noise and actual fixed-degree projections, 5 October 2026
 
 [FLOW-018](clock_structure_and_noise_scale.md) proves exact finite clock

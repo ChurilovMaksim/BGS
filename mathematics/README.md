@@ -1,5 +1,11 @@
 # Mathematics
 
+[growing_degree_trace_projection.md](growing_degree_trace_projection.md)
+gives the exact Wick evaluation cost, actual logarithmic projection
+rate $N^{-1/4}$, universal degree-cost lower bound, sublinear blindness
+to a fixed pair test and its particular Haar-$L^2$ inverse obstruction.
+The complete actual complementary value remains open.
+
 [clock_structure_and_noise_scale.md](clock_structure_and_noise_scale.md)
 gives exact finite clock covariance, signed compensation, the sharp pair
 rate and all-order critical limits.

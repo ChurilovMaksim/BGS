@@ -1,12 +1,14 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
-The [critical-noise continuation](record/critical_noise_program_20261005.md)
-proves an exact signed clock pair comparison at rate $(Nt)^{-2}$ and
-critical all-order limits. Every fixed neutral trace projection of the
-actual operator has the correct compact-test CUE expectation at rate
-$O(N^{-1/2})$, uniformly at all heat times. The complementary unprojected
-statistic remains open; a particular local test refutes recovery from
-its small Haar norm. Full deterministic BGS is unchanged and OPEN.
+The [growing-degree checkpoint](record/growing_degree_program_20261005.md)
+closes a logarithmic actual-map projection window at rate $N^{-1/4}$.
+A fixed Schwartz pair comparison is exactly orthogonal to every
+sublinear trace degree and has a heat gap of order N, giving unstable
+Haar-$L^2$ recovery even for that particular local test. The complete
+actual signed Heisenberg vector remains unestimated. Full deterministic
+BGS is unchanged and OPEN; the preceding
+[critical-noise checkpoint](record/critical_noise_program_20261005.md)
+is preserved rather than rewritten.
 
 The [all-order continuation](record/all_order_program_20261005.md) closes
 every fixed local factorial order for the original noisy chain from the

@@ -1,5 +1,15 @@
 # Research route log
 
+## 2026-10-05 — Growing degree and a fixed local test
+
+The [continuation](growing_degree_program_20261005.md) executes Wick
+evaluation, missed-observable and permutation heat-spectrum mechanisms.
+FLOW-020 proves actual logarithmic projected error $N^{-1/4}$, exact
+blindness of every sublinear projection to one fixed pair test and
+exponential Haar-$L^2$ inverse cost for that same test. Applying the
+new trace input to its Heisenberg band gives no vanishing estimate.
+Actual signed cancellation and full BGS remain OPEN.
+
 The [critical-noise portfolio](critical_noise_program_20261005.md) closes
 the entire fixed-degree projected estimate for the actual map and a sharp
 signed clock comparison. Finite CUE covariance decay yields projected

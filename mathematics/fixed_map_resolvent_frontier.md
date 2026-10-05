@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states the deterministic all-order
@@ -1156,6 +1156,90 @@ nonzero limiting value on the clock. A small Haar norm cannot replace
 an actual complementary pointwise estimate. Neither claim closes
 TRACE-005 or deterministic BGS. Prior kernels and standard mechanisms
 are credited; world priority is unverified.
+
+## Growing neutral degree and the particular missed local test
+
+**Claim ID:** `BGS-FLOW-020`. The
+[full proof](growing_degree_trace_projection.md) replaces the fixed-degree
+Gram bound by its exact reproducing kernel. For $2Q\le N$, normalized
+complex Wick polynomials give an orthonormal basis $E_{\boldsymbol a,\boldsymbol b}$
+of the neutral span. With
+$\mathcal K_Q(A)=\sum|E_{\boldsymbol a,\boldsymbol b}(A)|^2$,
+centered point evaluation has norm $\sqrt{\mathcal K_Q(A)-1}$.
+The prior complex Mehler identity gives, for every $s>0$,
+
+$$
+\log\mathcal K_Q(A)\le2sQ+\frac{\pi^2}{12s}
++2\sum_{m\le Q}\frac{e^{-sm}}{1+e^{-sm}}\frac{|p_m(A)|^2}{m}.
+$$
+
+For the unchanged actual odd-N operator, a fixed-order interaction
+packet expansion proves $|p_j(U_N)|\le C_0e^{\alpha|j|}$ uniformly
+in dimension. An order-$\ell$ word has at most $\ell$ insertions and
+degree at most $3\ell$ after removing accumulated quadratic evolution.
+Fixed Schwartz seminorms, weighted sampling and torus lattice overlap
+therefore grow exponentially through a logarithmic window. The exact
+frame and uniform return-volume bound give the trace estimate there;
+unitarity extends the coarse exponential bound outside that window.
+It supplies no cancellation at $j\asymp N$.
+
+Set $s=2\alpha+1$, $\gamma=1/(4s)$ and
+$Q_N=\lfloor\gamma\log N\rfloor$. The evaluation norm is at most
+$CN^{1/4}$, whereas compact local CUE deviation has Haar norm
+$C_FN^{-1/2}$. Consequently, uniformly at all heat times,
+
+$$
+|P_t\mathsf P_{Q_N}F_N(U_N)-\mathbb E_{\rm CUE}F_N|
+\le C'_FN^{-1/4}.
+$$
+
+This is a growing-degree projection theorem. A separate stronger bound
+$|p_m(A_N)|\le K$ through $m\le Q_N$ gives convergence for
+$Q_N\le c(\log N)^2$, $c<3/(2\pi^2)$, but that input is not
+proved for the actual operator. No quantitative Schwartz rate follows.
+
+The universal cost obeys
+$\mathcal K_Q(A)\ge(33/32)^L$ with
+$L=\lfloor(\sqrt{1+4Q}-1)/2\rfloor$, for every unitary in the
+stable range. Thus a whole-filtration norm estimate becomes
+superpolynomial when $Q/(\log N)^2\to\infty$.
+More concretely, choose fixed nonzero
+$0\le w\in C_c^\infty((a,b))$, $0<a<b<1/2$, and put
+
+$$
+J_{N,w}=N^{-2}\sum_mw(m/N)(|p_m|^2-m).
+$$
+
+It is the fixed real even Schwartz pair comparison with
+$\widehat\varphi(\xi)=w(|\xi|)/2$. Exactly,
+
+$$
+\mathsf P_QJ_{N,w}=0\quad(Q<aN),\qquad
+\|J_{N,w}\|_2^2=N^{-4}\sum_m m^2|w(m/N)|^2.
+$$
+
+Hence every sublinear degree misses this same microscopic observable.
+Its Haar norm is $O(N^{-1/2})$, but its clock value tends to
+$-\int_a^b\xi w(\xi)d\xi<0$.
+
+Permutation cut-and-join, transported through the Wick isometry, gives
+the attained decay interval $q\pm q(q-1)/N$ on
+$\mathcal H_{q,N}\ominus\mathcal H_{q-1,N}$. Each participating
+pair term has degree $m$, so
+
+$$
+\|P_tJ_{N,w}\|_2\le e^{-a(1-b)Nt}\|J_{N,w}\|_2.
+$$
+
+A left inverse recovering this particular local test therefore has
+Haar-$L^2$ norm at least $e^{a(1-b)Nt}$. This is a norm obstruction,
+not actual point evaluation. The specific signed vector
+$J_{N,w}(U_N)$ remains unestimated, as do the full higher-order
+counterterms. The [review](../record/growing_degree_review_20261005.md)
+checks the new analytic implications; the
+[finite packet](../evidence/executions/20261005/degree-growth/manifest.json)
+does not certify their all-degree limits, priority or BGS.
+The complete deterministic target remains OPEN.
 
 ## The exact deterministic noise-removal obligation
 

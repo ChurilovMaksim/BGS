@@ -1,5 +1,12 @@
 # Computations
 
+[growing_degree_trace_projection.py](verification/growing_degree_trace_projection.py)
+checks exact Wick/Gram and Mehler coefficients, actual unitary trace
+designs, full tensor Casimirs, high-band blindness/covariance and
+independently enumerated permutation cut-and-join versus the top-Wick
+generator. Arithmetic is rational; composition counts are bookkeeping,
+not an analytic packet or BGS certificate.
+
 [clock_structure_and_heat_projection.py](verification/clock_structure_and_heat_projection.py)
 checks rational Fourier selection, clock generator jets, compensated
 mesh masses, Abel signs, stable Gram matrices and cross-block determinant

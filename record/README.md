@@ -1,5 +1,12 @@
 # Research record
 
+The [growing-degree programme](growing_degree_program_20261005.md) records
+actual logarithmic projection control, exact sublinear blindness and
+particular-local-test heat inversion. Its
+[review](growing_degree_review_20261005.md) separates three analytic
+passes by one reviewer from author finite execution and inherited inputs.
+The actual signed band and full BGS remain open.
+
 The [critical-noise programme](critical_noise_program_20261005.md) records
 three executed routes, exact signed clock compensation, the actual-map
 fixed-degree projection estimates and the unresolved complement. The

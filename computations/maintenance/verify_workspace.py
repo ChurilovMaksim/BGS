@@ -142,6 +142,7 @@ def main() -> None:
                         'circular_dyson_relaxation', 'microscopic_noise_removal',
                         'local_moment_transport',
                         'clock_structure_and_heat_projection',
+                        'growing_degree_trace_projection',
                         'heisenberg_note_audit', 'prime_resonant_audit',
                         'signed_heisenberg_audit', 'resonant_density_audit',
                         'folded_quadratic_audit', 'expansion_wavepacket_audit'}:

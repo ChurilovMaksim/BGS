@@ -1,5 +1,16 @@
 # Open mathematical obligations
 
+The [growing-degree proof](growing_degree_trace_projection.md) now controls
+actual compact local projections through $Q=\gamma\log N$ at rate
+$N^{-1/4}$. Every $Q_N=o(N)$ still misses the fixed pair vector
+$J_{N,w}(U_N)=N^{-2}\sum_mw(m/N)(|p_m(U_N)|^2-m)$, with
+$0<a<m/N<b<1/2$, exactly. Its actual vanishing remains open.
+G13 obstructs whole-filtration norm control at Heisenberg degree;
+G15--G16 obstruct stable Haar-$L^2$ heat inversion even for this
+particular fixed local test. Neither excludes a model-specific signed
+comparison. The stronger logarithm-squared projection range requires
+a uniform growing-index trace bound not proved for the actual operator.
+
 The [fixed-degree projection](fixed_degree_heat_projection.md) now
 estimates every fixed neutral projected local test on the actual map.
 The exact remaining unperturbed term is $(I-\mathsf P_{Q,N})F_N(U_N)$

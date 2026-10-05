@@ -1,11 +1,13 @@
 # Bohigas–Giannoni–Schmit programme
 
-The [critical-noise continuation](record/critical_noise_program_20261005.md)
-adds exact clock pair compensation and the sharp $(Nt)^{-2}$ rate.
-[Fixed trace projections](mathematics/fixed_degree_heat_projection.md)
-of actual-map compact local tests agree with CUE at $O(N^{-1/2})$; the
-unprojected complement remains open. These partial estimates preserve
-the full deterministic target and do not assert a solution of BGS.
+The [growing-degree continuation](record/growing_degree_program_20261005.md)
+proves actual-map compact local projection error $O(N^{-1/4})$ through
+$Q=\gamma\log N$. Its [proof](mathematics/growing_degree_trace_projection.md)
+also identifies one fixed local pair test missed exactly by every
+sublinear projection and proves unstable heat inversion for that test
+in Haar $L^2$. Its actual signed value and full deterministic BGS remain
+open. The preceding [critical-noise result](record/critical_noise_program_20261005.md)
+and its sharp clock comparison retain their stated scope.
 
 The [5 October all-order continuation](record/all_order_program_20261005.md)
 proves all fixed local correlation orders for the original random chain

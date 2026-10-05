@@ -1,5 +1,15 @@
 # Literature and external theorem dependencies
 
+[periodic_orbit_clt_scope_20261005.md](periodic_orbit_clt_scope_20261005.md)
+checks a recent primary periodic-orbit route and gives an exact
+growing-frequency falsifier for the weak-CLT shortcut. Its actual-map
+oscillatory estimate remains open.
+
+[growing_degree_sources_20261005.md](growing_degree_sources_20261005.md)
+pins the prior complex Hermite/Mehler normalization and stable Haar
+input, and distinguishes the internally reconstructed permutation
+spectrum from an external highest-weight theorem. No priority is claimed.
+
 [critical_noise_sources_20261005.md](critical_noise_sources_20261005.md)
 pins prior lattice relaxation kernels and the stable-range Haar input,
 with explicit time conversion and a source-formula incompatibility that

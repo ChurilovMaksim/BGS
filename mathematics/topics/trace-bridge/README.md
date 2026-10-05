@@ -1,6 +1,7 @@
 # Trace Bridge
 
 - [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.
+- [growing_degree_trace_projection](../../growing_degree_trace_projection.md) — Actual logarithmic projection rate, exact sublinear missed pair test and particular heat-inverse obstruction.
 - [fixed_degree_heat_projection](../../fixed_degree_heat_projection.md) — Actual fixed-degree projected CUE estimates and the open complementary evaluation.
 
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
