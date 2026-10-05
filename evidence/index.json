@@ -1,6 +1,6 @@
 {
   "schema": "bgs-evidence-index-v1",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "classes": {
     "finite-certificates": {
       "canonical_prefix": "evidence/certificates/",
@@ -33,7 +33,8 @@
         "evidence/20260929/",
         "evidence/20260930/",
         "evidence/20261001/",
-        "evidence/20261004/"
+        "evidence/20261004/",
+        "evidence/20261005/"
       ],
       "meaning": "Dated packets may mix exact finite checks, floating diagnostics, and execution records. Each object's own scope and accompanying review control its interpretation; the directory name is not an evidence grade."
     }

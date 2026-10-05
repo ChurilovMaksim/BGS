@@ -1,5 +1,13 @@
 # Mathematics
 
+[local_moment_transport.md](local_moment_transport.md) proves a packing
+theorem and all-order projected-to-Dyson transfer at $t^2\log N\to0$.
+[coboundary_all_order_limit.md](coboundary_all_order_limit.md) extends the
+actual-start original random chain to every fixed factorial order, with
+one superpolynomial step sequence, $L^2$ origin averages and full signed
+Fourier comparison. Its exact deterministic transfer condition is stated;
+actual vanishing and full BGS remain open.
+
 [microscopic_noise_removal.md](microscopic_noise_removal.md) proves the
 exact integrated Laplace defect and four scoped transfer boundaries,
 including all-order flat heat jets with a positive eventual defect and

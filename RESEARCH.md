@@ -1,5 +1,16 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [all-order continuation](record/all_order_program_20261005.md) closes
+every fixed local factorial order for the original noisy chain from the
+actual operator, with one superpolynomial step sequence. FLOW-016 transfers
+moments through averaged displacements without the maximum-displacement
+logarithmic loss. FLOW-017 controls high-order exits and proves $L^2$
+convergence of one-chain origin averages and the complete signed Fourier/CUE
+sum. Its exact discrete defect criterion retains the full deterministic
+target; actual noise removal is open. New implications received independent
+internal review. Full BGS, world priority, an all-order polynomial schedule
+and growing-order control are not established.
+
 The [5 October transfer programme](record/noise_removal_program_20261005.md)
 executes six distinct routes. FLOW-015 identifies the exact signed local
 noise defect and proves a flat-heat-jet falsifier, an actual bounded-trace

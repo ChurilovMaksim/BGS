@@ -400,7 +400,9 @@
         "record/circular_kernel_route_20261004.md",
         "computations/verification/coboundary_general_start.py",
         "mathematics/circular_dyson_actual_start.md",
-        "computations/verification/circular_dyson_relaxation.py"
+        "computations/verification/circular_dyson_relaxation.py",
+        "mathematics/local_moment_transport.md",
+        "mathematics/coboundary_all_order_limit.md"
       ]
     },
     {
@@ -437,6 +439,24 @@
         "mathematics/microscopic_noise_removal.md",
         "literature/noise_removal_sources_20261005.md",
         "record/noise_removal_program_20261005.md"
+      ]
+    },
+    {
+      "id": "EXT-SOSH-2000",
+      "authors": [
+        "Alexander Soshnikov"
+      ],
+      "title": "Determinantal random point fields",
+      "identifier": "arXiv:math/0002099v4",
+      "pinned_version": "v4, 28 November 2000",
+      "locator": "Section 3, Theorem 7, printed pp.38-42; statement p.40",
+      "checked_on": "2026-10-05",
+      "mapping": "The intensity-one sine Fourier projection on [-1/2,1/2] is Hermitian, a positive contraction and locally trace class. Theorem 7 supplies spatial translation ergodicity of its determinantal probability law. Mean ergodic averaging for L2 local factorial observables is used after the internally proved chain moments. The periodic conditional-law Jensen step and order of limits are project proofs; no temporal Dyson ergodicity or deterministic BGS identification is imported.",
+      "project_sources": [
+        "mathematics/coboundary_all_order_limit.md",
+        "literature/all_order_sources_20261005.md",
+        "literature/return_local_limits_sources.md",
+        "record/claim_ledger.md"
       ]
     }
   ]

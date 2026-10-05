@@ -157,3 +157,16 @@ FLOW-015 proves an exact weak-local defect criterion and four scoped method
 boundaries. Its prerequisites preserve the prior clock, actual noisy law,
 partition bridge and bounded actual traces. The actual signed defect is open;
 there is no closure edge from FLOW-015 to TRACE-005 or BGS-BGS-001.
+
+The later all-order branch has the following registered direct edges.
+They supplement the schematic diagram; the JSON remains the complete DAG.
+
+| New node | Scientific prerequisites | Exact conclusion |
+|---|---|---|
+| BGS-FLOW-016 | FLOW-004, FLOW-009, FLOW-014 | Packing moment transfer and projected-to-Dyson all fixed orders at t²logN→0. |
+| BGS-FLOW-017 | FLOW-016, FLOW-010, FLOW-011, FLOW-012, FLOW-014, TRACE-001, FM-013 | Actual-start original-chain all fixed factorial limits and L2 signed CUE sums at one superpolynomial step schedule. |
+
+The spatial ergodicity leaf EXT-SOSH-2000 is pinned in the external registry.
+C16--C17 identify the exact remaining deterministic defect; its vanishing
+is open. Neither new node has a closure edge to deterministic TRACE-005 or
+BGS-BGS-001. This is not an all-order polynomial-schedule theorem.

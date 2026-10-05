@@ -1,5 +1,47 @@
 # Claim ledger
 
+## 5 October 2026 — all-order original-chain law and exact remaining transfer
+
+**BGS-FLOW-016 — PROJECT PROOF + INHERITED FINITE-KERNEL INPUT +
+INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS.**
+The [transport proof](../mathematics/local_moment_transport.md) bounds a
+target local count moment of order $s<p+1$ by reference maximal-density
+moments and averaged $p$th displacement cost. All fixed vanishing transport
+moments give all fixed factorial limits. A collapsed clock refutes transfer
+above $p+1$ from one $p$th cost. Schatten moments of the projected-to-Dyson
+coupling vanish when $t_N^2\log N\to0$, including the actual logarithmic
+time. Repeated starts use fixed-N dominated convergence of smooth factorial
+majorants. No maximum-displacement theorem in this window is asserted.
+
+**BGS-FLOW-017 — PROJECT PROOF + PRIOR SPATIAL ERGODICITY + INDEPENDENT
+INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS.** The
+[all-order proof](../mathematics/coboundary_all_order_limit.md) retains the
+original uncentered chain and actual start. High localization moments and
+polynomial smooth-test norms give all fixed factorial orders for one
+superpolynomial step sequence. At $t_N=8g_N$,
+$\varepsilon_N=N^{-\log\log N}$, it uses
+$\lfloor2t_NN^{4\log\log N}\rfloor$ steps. One-chain uniform-origin
+statistics converge in $L^2$ over Gaussian randomness, using Soshnikov's
+spatial ergodicity theorem. The complete signed Fourier/partition sum with
+exact CUE counterterms and the modulus outside the sum converges in $L^2$
+for every fixed compact Fourier test and order.
+
+C16--C17 make the deterministic signed target equivalent to vanishing
+of an exact signed sum of one-step defects, or of its $L^2$ noise-removal
+discrepancy. **This actual vanishing is open.** One polynomial schedule for
+all orders, growing-order estimates, an effective threshold and an
+almost-sure full-sequence assertion are not proved. The earlier polynomial
+bounded-Laplace schedule remains valid with its original scope.
+
+The [programme](all_order_program_20261005.md),
+[independent internal review](all_order_review_20261005.md),
+[source check](../literature/all_order_sources_20261005.md) and bounded packet
+separate proof from finite controls. One independent reviewer checked the
+new implications; inherited results retain their existing evidence levels.
+No external referee, analytic Lean or world-priority certification is claimed.
+Deterministic TRACE-005 and BGS-BGS-001 remain OPEN, with the full objective
+unchanged.
+
 ## 5 October 2026 — exact noise-removal defect and four transfer boundaries
 
 **BGS-FLOW-015 — PROJECT PROOF + STANDARD EXTERNAL INPUTS + INDEPENDENT

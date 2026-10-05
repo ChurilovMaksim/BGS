@@ -140,6 +140,7 @@ def main() -> None:
                         'coboundary_mobius_diffusion', 'coboundary_joint_limit',
                         'coboundary_polynomial_limit', 'coboundary_general_start',
                         'circular_dyson_relaxation', 'microscopic_noise_removal',
+                        'local_moment_transport',
                         'heisenberg_note_audit', 'prime_resonant_audit',
                         'signed_heisenberg_audit', 'resonant_density_audit',
                         'folded_quadratic_audit', 'expansion_wavepacket_audit'}:

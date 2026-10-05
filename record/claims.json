@@ -1439,7 +1439,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Odd dimensions and stated strip/potential hypotheses, no minimum initial gap. Full Brownian fixed-origin Laplace law uniformly Sine_2; traceless equality only for uniform-origin observable. Repeated initial levels handled by continuity. Actual-map original uncentered GUE-coboundary chain at t=8g, g=4logJ/J, epsilon=N^-9/sqrt(t), floor(2t^3N^36) steps has smooth Laplace error O_f(sqrt(g)); ineffective threshold. Prior finite kernel imported, asymptotics project-proved and internally checked. No faster actual-start relaxation, deterministic noise removal, chain unbounded-correlation UI, full BGS, external referee or priority claim."
+      "boundary": "Odd dimensions and stated strip/potential hypotheses, no minimum initial gap. Full Brownian fixed-origin Laplace law uniformly Sine_2; traceless equality only for uniform-origin observable. Repeated initial levels handled by continuity. Actual-map original uncentered GUE-coboundary chain at t=8g, g=4logJ/J, epsilon=N^-9/sqrt(t), floor(2t^3N^36) steps has smooth Laplace error O_f(sqrt(g)); ineffective threshold. Prior finite kernel imported, asymptotics project-proved and internally checked. No faster actual-start relaxation, deterministic noise removal, chain unbounded-correlation UI, full BGS, external referee or priority claim. All-order extension at a different superpolynomial step sequence is supplied separately by FLOW-016/017."
     },
     {
       "id": "BGS-FLOW-015",
@@ -1469,6 +1469,66 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Actual weak local Sine_2 equivalent to signed integrated noise-defect vanishing given prior FLOW-014; this vanishing remains OPEN. Narrow separated-window tests have all initial heat derivatives zero but perturbed-clock positive limiting defect, with every positive trace nonzero. Bounded actual starting traces exclude unscaled full-class stationarity, not normalized microscopic loops. Standard character modes obstruct uniform global heat inversion, not inversion for one local test. Every raw finite periodic deterministic spectral field has infinite Poisson specific entropy, but weak limits may have finite entropy. No unbounded factorial-moment transfer, actual Heisenberg cancellation, full BGS, external referee, analytic Lean or priority certification."
+    },
+    {
+      "id": "BGS-FLOW-016",
+      "title": "Local moment transport and all-order projected diffusion comparison at t^2 log N -> 0",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INHERITED EXTERNAL FINITE-KERNEL INPUT + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/local_moment_transport.md",
+      "dependencies": [
+        "BGS-FLOW-004",
+        "BGS-FLOW-009",
+        "BGS-FLOW-014"
+      ],
+      "external_dependencies": [
+        "EXT-KLZF-2022"
+      ],
+      "boundary": "Period-N counting fields with multiplicities and all fixed reference unit-window moments: bounded pth displacement cost controls count moments 1<s<p+1; vanishing costs transfer fixed factorial orders k<p+1. All fixed costs give all orders; a collapsed clock refutes k>p+1 from one cost, no critical-endpoint claim. Fixed high Schatten moments give projected-to-Dyson costs O_r((t+t^2 log N)^r)+O_r(N^-2r-4), with reference hypotheses and bounded initial traces. Includes actual logarithmic time and repeated starts by fixed-N majorants; no maximum displacement, deterministic noise removal, growing order, full BGS or priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/all-order/manifest.json",
+        "evidence/executions/20261005/all-order/checks.json",
+        "record/all_order_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/local_moment_transport.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-017",
+      "title": "All fixed factorial orders and one-chain L2 signed CUE comparison for the actual-start original coboundary chain",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL SPATIAL ERGODICITY + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/coboundary_all_order_limit.md",
+      "dependencies": [
+        "BGS-FLOW-016",
+        "BGS-FLOW-010",
+        "BGS-FLOW-011",
+        "BGS-FLOW-012",
+        "BGS-FLOW-014",
+        "BGS-TRACE-001",
+        "BGS-FM-013"
+      ],
+      "external_dependencies": [
+        "EXT-SOSH-2000"
+      ],
+      "boundary": "Original uncentered normalized-GUE chain, exact initial A_N, bounded p1,p2, 1/N<=t->0, t^2 log N->0, reference FLOW-014 from Pi A_N, and N^b epsilon->0 for every fixed b. All fixed compact-continuous/Schwartz factorial orders and bounded-window moments; conditional uniform-origin statistics and complete signed Fourier/CUE counterterm sums converge in L2. Actual t=8g, epsilon=N^-loglogN, floor(2t N^(4loglogN)) steps. C16-C17 exactly reduce deterministic signed target to signed chain-defect vanishing; that actual estimate is OPEN. No all-order polynomial schedule, growing-order uniformity, effective threshold, full-sequence almost sure, deterministic BGS, external refereeing, analytic Lean or priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/all-order/manifest.json",
+        "evidence/executions/20261005/all-order/checks.json",
+        "record/all_order_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/local_moment_transport.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

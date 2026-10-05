@@ -1,5 +1,16 @@
 # Open mathematical obligations
 
+[FLOW-017](coboundary_all_order_limit.md) closes all fixed unbounded
+factorial orders and the complete signed Fourier target for the original
+**noisy** chain at one superpolynomial step schedule, including one-chain
+origin averages in $L^2$. C16--C17 reduce the deterministic signed target
+to vanishing of the exact signed sum of one-step defects, equivalently
+$L^2$ noise removal for each fixed test. That estimate remains open for
+the actual $U_N$. Do not replace the signed sum by absolute step errors.
+A single polynomial schedule for all orders, growing-order bounds, an
+effective startup threshold and almost-sure full-sequence convergence
+also remain open.
+
 [FLOW-015](microscopic_noise_removal.md) states the next weak local
 obligation exactly: prove $\int_0^{t_N}P_sG_N\Phi_{N,f}(U_N)ds\to0$
 for every positive compact smooth test at the proved logarithmic time.
@@ -82,9 +93,9 @@ one common all-order identification with controlled norms/holonomy.
 The [quadratic-noise continuation](quadratic_noise_coupling.md)
 removes microscopic occupancy from comparison of the two evolved noisy
 laws. It does not close BGS-TRACE-005. FLOW-014 supplies actual-start
-Dyson relaxation at a logarithmic time; deterministic noise removal
-and uniform integrability for the original chain's unbounded local
-correlations remain open. The
+Dyson relaxation at a logarithmic time. FLOW-016--017 now supply all-order
+uniform integrability and limits for the original noisy chain at a different
+superpolynomial step schedule; deterministic noise removal remains open. The
 [clock theorem](quadratic_noise_clock_limit.md) proves that low traces
 and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed_time_wavepacket_trace_bound.md)
 now closes bounded starting traces; its constants are not uniform at

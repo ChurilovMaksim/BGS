@@ -2,6 +2,9 @@
 
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
 
+- [local_moment_transport](../../local_moment_transport.md) — Maximal-density packing and all-order projected/Dyson moments at t²logN→0.
+- [coboundary_all_order_limit](../../coboundary_all_order_limit.md) — Actual-start original-chain all fixed correlations, one-chain L2 signed CUE sums and the open exact deterministic transfer condition.
+
 - [balanced_phase_controllability](../../balanced_phase_controllability.md)
 - [quadratic_coboundary_noise](../../quadratic_coboundary_noise.md) — fourth-order covariance, ellipticity, corrected noise, and transfer boundaries.
 - [coboundary_spectral_flow_bound](../../coboundary_spectral_flow_bound.md)

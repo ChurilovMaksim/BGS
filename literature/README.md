@@ -1,5 +1,10 @@
 # Literature and external theorem dependencies
 
+[all_order_sources_20261005.md](all_order_sources_20261005.md) checks
+Soshnikov's spatial ergodicity for Sine$_2$, explains why the inspected
+quantum-graph averaging setup supplies no fixed-map arrow, and states
+the bounded overlap search. Transport and chain priority remain unverified.
+
 The [5 October transfer source audit](noise_removal_sources_20261005.md)
 pins the standard character heat calculus and specific-entropy definition,
 records canonical-PDF version headers and unavailable versioned URLs,

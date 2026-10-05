@@ -2,6 +2,9 @@
 
 This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
 
+- [local_moment_transport](../../local_moment_transport.md) — Local uniform integrability from displacement moments and reference density.
+- [coboundary_all_order_limit](../../coboundary_all_order_limit.md) — Complete signed Fourier/CUE comparison for the original noisy chain, and exact remaining deterministic defect criterion.
+
 - [bandlimited_correlation_extension](../../bandlimited_correlation_extension.md)
 - [clustered_abel_window_boundary](../../clustered_abel_window_boundary.md) — exact cluster-to-Abel bound and abstract time-window falsifier.
 - [compensated_heisenberg_trace_control](../../compensated_heisenberg_trace_control.md)

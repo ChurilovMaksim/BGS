@@ -1,5 +1,15 @@
 # Research route log
 
+## 2026-10-05 — All-order stochastic closure retaining the deterministic goal
+
+The [continuation](all_order_program_20261005.md) executes character-heat,
+quantum-graph-source and transport routes. Low neutral characters do not
+estimate the growing-degree signed tail; the graph averaging result is not
+mapped to this fixed operator. The transport route proves FLOW-016--017:
+all fixed factorial moments at one superpolynomial chain schedule and
+$L^2$ origin averages and complete signed Fourier sums. C16--C17 identify
+the deterministic target with actual signed defect vanishing, still OPEN.
+
 ## 2026-10-05 — Signed noise removal and four rigorous method boundaries
 
 The [six-route programme](noise_removal_program_20261005.md) gives FLOW-015:

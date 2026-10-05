@@ -1,5 +1,14 @@
 # Bohigas–Giannoni–Schmit programme
 
+The [5 October all-order continuation](record/all_order_program_20261005.md)
+proves all fixed local correlation orders for the original random chain
+from the actual operator, including one-chain origin averages and complete
+signed Fourier comparisons in $L^2$. The
+[transport](mathematics/local_moment_transport.md) and
+[chain proof](mathematics/coboundary_all_order_limit.md) received independent
+internal review and use one superpolynomial step schedule. Their exact
+deterministic noise-removal condition remains unestimated; full BGS is OPEN.
+
 ### Arithmetic quantum chaos, trace statistics, and microscopic spectral universality
 
 <p align="center">

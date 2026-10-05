@@ -1,5 +1,12 @@
 # Research record
 
+The [all-order programme](all_order_program_20261005.md) and
+[independent internal review](all_order_review_20261005.md) record the
+transport theorem, high-moment localization, all fixed correlations of
+the original chain and $L^2$ one-chain origin averages. The deterministic
+transfer condition remains open. Finite checks do not simulate the enormous
+chain or certify asymptotic theorems.
+
 The [5 October deterministic-transfer programme](noise_removal_program_20261005.md)
 records six executed routes, two internal proof passes, the exact signed
 noise defect, four scoped transfer boundaries and the unresolved actual-map

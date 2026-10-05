@@ -1,5 +1,12 @@
 # Computations
 
+[local_moment_transport.py](verification/local_moment_transport.py)
+integrates rational periodic windows exactly, checks packing witnesses
+and collapsed-clock high-order failures, and differentiates low-degree
+characters with the direct radial Laurent generator. The bounded packet
+separates these controls from numerical unitary matching. It does not
+simulate the enormous chain, certify asymptotic transfer or solve BGS.
+
 [microscopic_noise_removal.py](verification/microscopic_noise_removal.py)
 compares the mixed-trace generator with an independent direct radial Laurent
 implementation in Fraction arithmetic, checks finite character/gap geometry

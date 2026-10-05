@@ -1,5 +1,22 @@
 # Current results and exact scope
 
+## All fixed correlation orders for the original random chain, 5 October 2026
+
+[FLOW-016](local_moment_transport.md) supplies local uniform integrability
+through a maximal-density packing bound and high Schatten moments.
+Projected-to-Dyson factorial transfer holds when $t_N^2\log N\to0$,
+including the actual logarithmic time.
+[FLOW-017](coboundary_all_order_limit.md) proves all fixed factorial orders
+for the original uncentered chain from the actual operator using one
+superpolynomial step sequence. With $\varepsilon_N=N^{-\log\log N}$ it
+takes $\lfloor2t_NN^{4\log\log N}\rfloor$ steps. Its one-chain origin
+averages and complete signed Fourier/CUE comparisons converge in $L^2$.
+C16--C17 state the exact remaining deterministic transfer condition;
+its actual vanishing is not proved. The
+[review](../record/all_order_review_20261005.md) records the independent
+internal check and inherited-input boundary. Full BGS remains open and
+world priority is unverified.
+
 ## Exact noise defect and transfer boundaries, 5 October 2026
 
 [FLOW-015](microscopic_noise_removal.md) computes the full local Laplace
@@ -73,7 +90,9 @@ corrected. The [review](../record/polynomial_coboundary_review_20261004.md)
 records an independent internal check of the new estimates and finite
 controls. Actual-start relaxation is supplied separately by FLOW-014
 at the logarithmic time; deterministic noise removal and BGS remain open.
-Unbounded correlation transfer for the chain requires uniform integrability.
+Unbounded correlation transfer at this polynomial schedule still needs
+another estimate. FLOW-017 supplies all orders at a different superpolynomial
+step schedule; it does not strengthen FLOW-011's earlier rate.
 
 ## Fixed-time trace closure and expansion/memory boundary, 4 October 2026
 

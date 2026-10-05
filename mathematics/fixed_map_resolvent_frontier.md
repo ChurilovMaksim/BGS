@@ -1,10 +1,10 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
-consolidates the recovered research, states a conditional all-order criterion,
-and proves what its first two mixed levels imply. The
+consolidates the recovered research, states the deterministic all-order
+criterion and proves its auxiliary original-chain version. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
 programs, finite certificates and dated audits. External priority is not
 claimed. Formalization covers only explicitly stated algebraic kernels.
@@ -576,7 +576,8 @@ $N\|U_{t_N}-V_{t_N}\|_{\rm op}\to0$ in probability when the initial
 first two traces are bounded and $t_N\log N\to0$. A separate integrated
 translation estimate gives phase-averaged local Laplace and finite-count
 comparison for every $t_N\to0$ with bounded initial low traces, without
-an occupancy assumption. It does not give unbounded correlation moments.
+an occupancy assumption. Those earlier weak-law estimates alone do not give
+unbounded moments; FLOW-016 supplies a separate high-moment transport below.
 
 The [reversible correction](quadratic_noise_reversibility.md)
 (`BGS-FLOW-005`) is the commuting traceless Hermitian drift
@@ -770,7 +771,9 @@ Smooth $L^1$ approximation uses unit intensity; no interval-test rate
 or higher-factorial-moment uniform integrability is asserted.
 The polynomial exponent is not optimized. FLOW-014 supplies actual-start
 relaxation separately at a logarithmic time. Deterministic noise removal
-and all-order unbounded-correlation transfer remain separate obligations; BGS-TRACE-005 and BGS-BGS-001 remain open.
+and all-order transfer at that polynomial step schedule remain separate
+obligations. FLOW-017 below closes all orders at a different superpolynomial
+schedule; deterministic BGS-TRACE-005 and BGS-BGS-001 remain open.
 
 ## Retaining the actual initial spectrum in the stochastic comparison
 
@@ -946,6 +949,123 @@ original chain. Deterministic BGS remains open. The new analytic
 implications received an independent internal audit; the prior finite
 kernel and inherited project proofs retain their separate trust boundaries.
 No external referee report, priority or prize-level significance is asserted.
+
+## All local moments and the original-chain signed criterion
+
+**Claim IDs:** `BGS-FLOW-016`, `BGS-FLOW-017`. The
+[transport proof](local_moment_transport.md) matches two period-N fields
+with averaged unfolded displacement cost
+$c_{p,N}=N^{-1}\sum_j|d_j|^p$. Let
+$M(u)=\sup_{r\ge1}B_N([u-r,u+r])/(2r)$ be the reference maximal density.
+Its fixed moments are bounded by the periodic Hardy--Littlewood estimate
+and the reference's fixed unit-window moments. If
+$n=A_N([u-R,u+R])>16(R+1)M$, matching and packing give
+
+$$
+\sum_{a_j+\ell N\in[u-R,u+R]}|d_j|^p
+\ge\frac{3n^{p+1}}{4\,16^pM^p}.
+$$
+
+Hölder and origin integration bound all target count moments $1<s<p+1$.
+If $\mathbb Ec_{p,N}\to0$, positive Laplace tests transfer the weak law;
+the moment bound supplies uniform integrability for every factorial order
+$k<p+1$. All fixed vanishing transport moments therefore transfer every
+fixed factorial order. Collapsing K clock points at one location has cost
+$N^{-1}\sum_{j<K}j^p$ and kth factorial mean $(K)_k/N$. At $N\sim K^k$
+this refutes extending a single pth cost to $k>p+1$. No critical-endpoint
+or growing-order theorem is asserted.
+
+Along a unitary logarithm path, Jensen for eigenangle speeds and
+Schatten triangle give the matching inequality
+
+$$
+c_{p,N}(V,W)\le\frac{N^{p-1}}{4^p}\operatorname{Tr}|V-W|^p.
+$$
+
+For the projected diffusion Y and its coupled Dyson reference V, stop the
+comparison at $|p_2(Y)|=K_{N,r}$ with
+$K_{N,r}^2=C_{K,r}(1+t\log N)$. The inherited covariance and drift
+estimates bound both matrix brackets by
+$(4K_{N,r}^2+44)N^{-2}I\,ds$. The Hermitian-dilation moment inequality
+and the exponential trace exit tail yield
+
+$$
+\mathbb Ec_{2r,N}(Y_t,V_t)
+\le C_{K,r}(t+t^2\log N)^r+C_{K,r}N^{-2r-4}\to0.
+$$
+
+This holds when $t\to0$, $t^2\log N\to0$, including the actual
+$t=8g$ with $g=4\log J/J$, $J=\lfloor c\log N\rfloor$.
+It proves no largest-displacement estimate at this time. FLOW-014's
+gap-independent kernel bounds supply reference count moments, including
+repeated starts by fixed-N continuity of bounded smooth factorial majorants.
+Thus the projected diffusion has all fixed local factorial limits.
+
+The [original-chain proof](coboundary_all_order_limit.md) strengthens
+localization to $\mathbb P(\sigma\le n)\le C_{L,K}(N^{-L}+N^4\varepsilon)$
+for every fixed L. It uses the frozen stopped fast moments and
+$|p_2|^{2r}$ Lyapunov tests; no inverse-power initial-layer loss occurs.
+The exact partition/Fourier formula gives polynomial $C^6$ derivative
+norms for each fixed factorial test without spectral-gap denominators.
+The dimension-uniform backward semigroup and fast terminal centering then
+transfer every fixed test for one sequence satisfying
+$N^b\varepsilon_N\to0$ for all fixed b. The algorithm remains
+
+$$
+U_{j+1}=\exp[i\varepsilon_N(G_j-U_jG_jU_j^*)]U_j,
+\qquad U_0=U_N,
+$$
+
+with fresh normalized GUE. At the actual logarithmic time one may take
+$\varepsilon_N=N^{-\log\log N}$ and
+$n_N=\lfloor2t_NN^{4\log\log N}\rfloor$.
+This schedule is superpolynomial; the earlier polynomial bounded-Laplace
+result remains valid with its original scope.
+
+Spatial ergodicity of Sine$_2$, from Soshnikov's prior Theorem 7, turns
+the barycenter limit and moment bounds into one-chain origin-average
+convergence in $L^2$. For a fixed block average $\mathcal A_S\varphi$,
+periodicity and Jensen give
+
+$$
+\mathbb E_\omega|F_N(\omega)-c|^2
+\le\int|\mathcal A_S\varphi-c|^2dQ_N.
+$$
+
+Take $N\to\infty$ at fixed S using uniform integrability, then
+$S\to\infty$ using the mean ergodic theorem. Schwartz tails also remove
+tuples using two copies of the same circle label, whose diameter is at
+least N. Hence, writing
+$W_N(m;A)=\sum_\pi\mu(\pi)\prod_{B\in\pi}p_{\sum_{i\in B}m_i}(A)$,
+for every fixed $\widehat\psi\in C_c^\infty(\mathbb R^k)$,
+
+$$
+\mathbb E_\omega\left|
+\frac1{N^k}\sum_{\sum_i m_i=0}\widehat\psi(m/N)
+\left[W_N(m;U_{n_N})-\mathbb E_{\rm CUE}W_N(m;V_N)\right]
+\right|^2\to0.
+$$
+
+Every partition counterterm and $p_0=N$ remains present; the modulus
+stays outside the whole signed sum. This is a stochastic theorem.
+For the original one-step Markov operator $T_\varepsilon$, the exact
+discrete defect is
+
+$$
+\mathfrak D^{\rm chain}_{N,\psi}
+=\sum_{j<n_N}\mathbb E[(T_{\varepsilon_N}-I)F_{N,\psi}(U_j)]
+=\mathbb EF_{N,\psi}(U_{n_N})-F_{N,\psi}(U_N).
+$$
+
+The deterministic complete signed CUE target for each fixed test is now
+equivalent to $\mathfrak D^{\rm chain}_{N,\psi}\to0$, or to
+$\mathbb E|F_{N,\psi}(U_{n_N})-F_{N,\psi}(U_N)|^2\to0$.
+Its actual vanishing remains open. Independent internal review checked the
+new implications; inherited inputs keep their stated evidence levels.
+The [finite packet](../evidence/executions/20261005/all-order/manifest.json)
+and [source review](../literature/all_order_sources_20261005.md) do not
+establish deterministic noise removal, world priority, external refereeing,
+an all-order polynomial schedule, or full BGS.
 
 ## The exact deterministic noise-removal obligation
 
