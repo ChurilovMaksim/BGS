@@ -1,5 +1,13 @@
 # Computations
 
+[microscopic_noise_removal.py](verification/microscopic_noise_removal.py)
+compares the mixed-trace generator with an independent direct radial Laurent
+implementation in Fraction arithmetic, checks finite character/gap geometry
+and records quadrature resolution for the local Laplace and Fredholm tests.
+The [bounded packet](../evidence/executions/20261005/noise-removal/manifest.json)
+contains 348 exact generator equalities and 630 charge-closure checks.
+It does not certify all-order flatness, entropy, actual noise removal or BGS.
+
 [coboundary_general_start.py](verification/coboundary_general_start.py)
 checks exact exponents and Brownian normalization, 120-digit balanced
 cluster traces, independent spectral matching and uniform-origin geometry,

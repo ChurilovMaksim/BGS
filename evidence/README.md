@@ -1,5 +1,14 @@
 # Evidence
 
+The [5 October noise-removal run](executions/20261005/noise-removal/manifest.json)
+and [results](executions/20261005/noise-removal/checks.json) record FLOW-015's
+independent rational generator/character/gap controls and separately labelled
+binary64 quadrature. The [contract](20261005/noise_removal_contract.json)
+declares exact coverage, resources and non-claims.
+The [integration record](executions/20261005-noise-removal-integration.json)
+separates five focused regressions, source synchronization, full manuscript
+build and selected-page inspection from proof and remote CI.
+
 The [polynomial coboundary run](executions/20261004/polynomial-coboundary/manifest.json)
 records FLOW-011 finite coefficient and exact exponent controls.
 [Wolfram evidence](20261004/polynomial_coboundary_wolfram.json) contains

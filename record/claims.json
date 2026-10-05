@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -1440,6 +1440,35 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Odd dimensions and stated strip/potential hypotheses, no minimum initial gap. Full Brownian fixed-origin Laplace law uniformly Sine_2; traceless equality only for uniform-origin observable. Repeated initial levels handled by continuity. Actual-map original uncentered GUE-coboundary chain at t=8g, g=4logJ/J, epsilon=N^-9/sqrt(t), floor(2t^3N^36) steps has smooth Laplace error O_f(sqrt(g)); ineffective threshold. Prior finite kernel imported, asymptotics project-proved and internally checked. No faster actual-start relaxation, deterministic noise removal, chain unbounded-correlation UI, full BGS, external referee or priority claim."
+    },
+    {
+      "id": "BGS-FLOW-015",
+      "title": "Exact microscopic noise defect, flat heat jets and scoped stationarity, inversion and entropy boundaries",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + STANDARD EXTERNAL INPUTS + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT AND FINITE CONTROLS",
+      "source": "mathematics/microscopic_noise_removal.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-FLOW-007",
+        "BGS-FLOW-014",
+        "BGS-FM-013"
+      ],
+      "external_dependencies": [
+        "EXT-LEMOINE-2025",
+        "EXT-EHL-2018"
+      ],
+      "evidence": [
+        "evidence/executions/20261005/noise-removal/manifest.json",
+        "evidence/executions/20261005/noise-removal/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/microscopic_noise_removal.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Actual weak local Sine_2 equivalent to signed integrated noise-defect vanishing given prior FLOW-014; this vanishing remains OPEN. Narrow separated-window tests have all initial heat derivatives zero but perturbed-clock positive limiting defect, with every positive trace nonzero. Bounded actual starting traces exclude unscaled full-class stationarity, not normalized microscopic loops. Standard character modes obstruct uniform global heat inversion, not inversion for one local test. Every raw finite periodic deterministic spectral field has infinite Poisson specific entropy, but weak limits may have finite entropy. No unbounded factorial-moment transfer, actual Heisenberg cancellation, full BGS, external referee, analytic Lean or priority certification."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

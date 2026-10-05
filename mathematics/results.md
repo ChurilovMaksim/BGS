@@ -1,5 +1,27 @@
 # Current results and exact scope
 
+## Exact noise defect and transfer boundaries, 5 October 2026
+
+[FLOW-015](microscopic_noise_removal.md) computes the full local Laplace
+generator, its exact signed integrated defect and the mixed-trace
+split/merge hierarchy. Given FLOW-014's noisy law, the deterministic
+weak local Sine$_2$ target is equivalent to vanishing of that defect
+for every positive compact smooth test; the actual estimate remains open.
+
+For a one-phase perturbed clock with every positive trace nonzero,
+the logarithmic trace window and bounded occupancy, every initial heat
+derivative vanishes for narrow tests, but the defect tends to
+$\delta_f\ge(1-a_f/3)e_2>0$ whenever $t_N\to0$, $Nt_N\to\infty$.
+For the actual bounded-trace start, unscaled full-class stationarity is
+excluded by a lower bound tending to $(\sqrt{17}-1)/4$.
+Standard character modes yield uniform global inverse cost
+$e^{(2N-1)t}$; every raw finite deterministic periodic field has infinite
+Poisson specific entropy. These statements leave normalized microscopic
+loops, particular-test comparisons and justified limit-level variational
+routes open. Two internal proof passes and a bounded exact/numerical
+packet are recorded in the [review](../record/noise_removal_program_20261005.md).
+No full BGS or priority conclusion follows.
+
 ## Actual-start comparison and logarithmic regularity, 4 October 2026
 
 [FLOW-012](coboundary_general_start.md) compares the original uncentered

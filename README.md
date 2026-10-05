@@ -6,8 +6,17 @@
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 4 October 2026.**
+> **Scientific status — 5 October 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
+
+The [noise-removal continuation](record/noise_removal_program_20261005.md)
+gives an exact signed defect criterion and a flat-heat-jet counterexample:
+every initial heat derivative vanishes, yet the local noisy defect has a
+strictly positive limit. It also excludes unscaled full-class stationarity
+for the actual bounded-trace start, quantifies uniform global heat-inverse
+instability and proves infinite Poisson entropy of every raw finite
+deterministic spectral field. These are scoped transfer boundaries;
+the actual signed defect, deterministic BGS and priority remain open.
 
 The [actual-start continuation](record/general_start_review_20261004.md)
 retains the original frozen initial spectrum and proves its auxiliary

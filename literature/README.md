@@ -1,5 +1,11 @@
 # Literature and external theorem dependencies
 
+The [5 October transfer source audit](noise_removal_sources_20261005.md)
+pins the standard character heat calculus and specific-entropy definition,
+records canonical-PDF version headers and unavailable versioned URLs,
+and distinguishes the published variational characterization from its
+unproved actual-map input. No priority or local PDF hash is claimed.
+
 [actual_start_dyson_sources_20261004.md](actual_start_dyson_sources_20261004.md)
 checks real-line scale restrictions, circular local-law initial conditions
 and the prior arbitrary-start determinantal kernel. No microscopic

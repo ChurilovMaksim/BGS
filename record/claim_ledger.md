@@ -1,5 +1,47 @@
 # Claim ledger
 
+## 5 October 2026 — exact noise-removal defect and four transfer boundaries
+
+**BGS-FLOW-015 — PROJECT PROOF + STANDARD EXTERNAL INPUTS + INDEPENDENT
+INTERNAL CHECK OF NEW IMPLICATIONS + EXACT AND FINITE CONTROLS.** The
+[proof](../mathematics/microscopic_noise_removal.md) computes the complete
+local Laplace generator and its signed integrated defect. Given FLOW-014,
+the unchanged map's weak local Sine$_2$ limit is equivalent to vanishing
+of that defect for every positive compact smooth test. The mixed-trace
+generator and finite inclusion-exclusion retain every zero-index factor,
+factor multiplicity and Heisenberg-scale index. The actual vanishing
+estimate is **OPEN**; weak Laplace convergence does not transfer unbounded
+factorial moments.
+
+A one-phase perturbation of the clock has every positive trace nonzero,
+the full logarithmic trace window and bounded local occupancy. For every
+nonzero positive test of support width below one, all its initial heat
+derivatives vanish exactly, yet its integrated defect tends to
+$\delta_f\ge(1-a_f/3)e_2>0$ whenever $t_N\to0$ and $Nt_N\to\infty$.
+This excludes the initial-heat-jet shortcut, not BGS for the actual map.
+
+For the actual family, FM-013 yields the distinct obstruction
+$\max(|G_NX|,|G_NW|)\ge(\sqrt{17}-1)/4-2K^3/N$,
+where $X=|p_1|^2$ and $W=|p_1|^4$,
+eventually with K=20. Unscaled full-class infinitesimal stationarity is
+therefore too strong; normalized microscopic mixed loops remain possible.
+Standard character calculus gives the uniform backward-heat inverse cost
+$e^{(2N-1)t}$ on a growing-degree global class-function space. This is not
+an inverse lower bound for one local Laplace observable. Finally, every
+finite deterministic periodic spectral field, including the actual map,
+has infinite specific relative entropy to Poisson. The published Sine-beta
+free-energy characterization thus cannot be applied as a finite-entropy
+near-minimizer argument directly to those raw finite fields.
+
+The [six-route review](noise_removal_program_20261005.md) records both
+internal audit passes, the corrected full/traceless normalization, the
+source-version limits and the bounded exact/numerical packet. Character
+heat calculus and the specific-entropy definition are credited to the
+[primary sources](../literature/noise_removal_sources_20261005.md).
+**Actual signed noise removal, Heisenberg cancellation, BGS-TRACE-005 and
+BGS-BGS-001 remain OPEN.** No priority or external referee certification
+is asserted.
+
 ## 4 October 2026 — actual-start comparison and circular relaxation
 
 **BGS-FLOW-012 — PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW

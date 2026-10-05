@@ -1,5 +1,15 @@
 # Research route log
 
+## 2026-10-05 — Signed noise removal and four rigorous method boundaries
+
+The [six-route programme](noise_removal_program_20261005.md) gives FLOW-015:
+exact integrated Laplace defect and mixed-trace action; all-order flat
+initial jets with a positive perturbed-clock defect; an actual bounded-trace
+obstruction to unscaled full-class stationarity; standard character-mode
+inverse cost; infinite entropy of every raw finite deterministic spectral
+field. The logarithmic foundation estimate is preserved after audit.
+Actual signed cancellation and the original full BGS objective remain open.
+
 ## 2026-10-04 — Uniform derivatives close the random-chain polynomial regime
 
 The [research and proof review](polynomial_coboundary_review_20261004.md)

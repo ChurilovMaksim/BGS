@@ -69,6 +69,10 @@ graph TD
   FLOW13 --> F17
   F17 --> FLOW14[BGS-FLOW-014 actual-start circular relaxation]
   FLOW12 --> FLOW14
+  T1 --> FLOW15[BGS-FLOW-015 exact noise defect and transfer boundaries]
+  FLOW7 --> FLOW15
+  FLOW14 --> FLOW15
+  F13 --> FLOW15
   F1 --> F16[BGS-FM-016 overlap rigidity]
   FLOW3 --> F16
   T13[BGS-TRACE-013 auxiliary expansion word obstruction]
@@ -148,3 +152,8 @@ and local stationary points from FM-007. FLOW-014 closes the gap-independent
 circular kernel and full Laplace law at t=8g, and transfers Sine_2 to the
 original noisy chain. Deterministic noise removal remains open. These nodes have no asserted
 closure edge to TRACE-005 or BGS-BGS-001.
+
+FLOW-015 proves an exact weak-local defect criterion and four scoped method
+boundaries. Its prerequisites preserve the prior clock, actual noisy law,
+partition bridge and bounded actual traces. The actual signed defect is open;
+there is no closure edge from FLOW-015 to TRACE-005 or BGS-BGS-001.

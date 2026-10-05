@@ -1,5 +1,11 @@
 # Mathematics
 
+[microscopic_noise_removal.md](microscopic_noise_removal.md) proves the
+exact integrated Laplace defect and four scoped transfer boundaries,
+including all-order flat heat jets with a positive eventual defect and
+an actual-map obstruction to unscaled full-class stationarity.
+Deterministic signed noise removal remains open.
+
 [coboundary_general_start.md](coboundary_general_start.md) preserves the
 bounded-trace original start in the stochastic comparison.
 [dyson_relaxation_obstruction.md](dyson_relaxation_obstruction.md) gives a

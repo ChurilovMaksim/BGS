@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
-**Status, 1 October 2026.** The fixed-map BGS target is open. This chapter
+**Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states a conditional all-order criterion,
 and proves what its first two mixed levels imply. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -946,6 +946,106 @@ original chain. Deterministic BGS remains open. The new analytic
 implications received an independent internal audit; the prior finite
 kernel and inherited project proofs retain their separate trust boundaries.
 No external referee report, priority or prize-level significance is asserted.
+
+## The exact deterministic noise-removal obligation
+
+**Claim ID:** `BGS-FLOW-015`. The
+[full proof](microscopic_noise_removal.md) retains the unchanged $U_N$
+and the positive uniform-origin local Laplace test $\Phi_{N,f}$.
+For normalized unitary Brownian motion, let
+$P_tF(A)=\mathbb E F(B_tA)$ and
+
+$$
+G_N=\frac1{2N}\sum_j\partial_j^2+
+\frac1{2N}\sum_j\sum_{k\ne j}
+\cot\frac{\theta_j-\theta_k}{2}\partial_j.
+$$
+
+The generator applied to the smooth Laplace function extends through
+collisions by cancellation of its paired derivative differences.
+At each fixed dimension, the exact signed identity is
+
+$$
+\mathfrak D_{N,f}(A,t)=\int_0^tP_s(G_N\Phi_{N,f})(A)ds
+=P_t\Phi_{N,f}(A)-\Phi_{N,f}(A).
+$$
+
+FLOW-014 applies directly to the uncentered $U_N$ using FM-007's
+logarithmic trace estimate. Consequently its deterministic weak local
+Sine$_2$ law is equivalent to $\mathfrak D_{N,f}(U_N,t_N)\to0$
+for every nonnegative $f\in C_c^\infty$, at the proved logarithmic time
+$t_N=8g_N$. The modulus stays outside the full signed integral.
+This equivalence does not establish its vanishing or the stronger
+unbounded factorial-moment target TRACE-005.
+
+The full mixed-trace generator splits and merges factor positions,
+including the factor $p_0=N$ on opposite-index merging. It preserves
+the finite spaces of charge-zero products with positive degree at most q.
+Those spanning symbols need not be independent when $q\ge N$;
+finite closure does not give uniformly bounded complexity or a
+fixed-correlation-order closure. The exact inclusion-exclusion/Fourier
+formula still involves signed mixed traces with indices of order N.
+FM-007's $e^{Cm}$ error control does not reach that range.
+
+Four precise boundaries follow.
+
+1. For a test supported in width $w<1$, a spectrum with minimum unfolded
+   gap greater than w has $\Phi_{N,f}=1-a_f$ on an open neighborhood,
+   where $a_f=\int(1-e^{-f})$. Hence every initial generator iterate and
+   right heat derivative is zero. Nevertheless the simple family
+   $A_N=\operatorname{diag}(e^{iN^{-4}},e^{2\pi i/N},\ldots,
+   e^{2\pi i(N-1)/N})$ has all positive traces nonzero and the whole
+   logarithmic trace window, but whenever $t_N\to0$, $Nt_N\to\infty$,
+
+   $$
+   \mathfrak D_{N,f}(A_N,t_N)\to\delta_f
+   \ge(1-a_f/3)e_2>0,
+   $$
+
+   $$
+   e_2=\frac12\iint h(x)h(y)
+   \left[1-\left(\frac{\sin\pi(x-y)}{\pi(x-y)}\right)^2\right]dxdy,
+   \qquad h=1-e^{-f}.
+   $$
+
+   The proof uses the prior clock theorem and a uniform-origin
+   $O_f(N^{-3})$ comparison. It refutes the heat-jet transfer shortcut.
+   Its strict-gap hypothesis is not established for the actual map.
+2. At a deterministic matrix put $X=|p_1|^2$, $W=X^2$ and
+   $Z=\Re(p_2\bar p_1^2)$. The exact equations
+   $G_NX=1-X$ and $G_NW=-2W-2Z/N+4X$ give
+
+   $$
+   \max\{|G_NX|,|G_NW|\}\ge(\sqrt{17}-1)/4-2K^3/N
+   \quad\text{if } |p_1|+|p_2|\le K.
+   $$
+
+   FM-013 makes this an eventual actual-map bound with K=20.
+   Unscaled full-class stationarity fails; the normalized microscopic
+   mixed loop hierarchy remains a possible route.
+3. The normalized character of highest weight $(r,0,\ldots,0,-r)$
+   has sup norm one and heat multiplier
+   $e^{-tr(r+N-1)/N}$. At $r=N$, any sup-norm left inverse containing
+   this mode has norm at least $e^{(2N-1)t}$, exceeding every fixed
+   polynomial at the chosen logarithmic time. This standard character
+   calculation concerns a global growing-degree function space,
+   not instability for one fixed local Laplace test.
+4. The stationary periodic point field of every finite deterministic
+   spectrum has infinite relative entropy to Poisson on every interval
+   of length at least two, and infinite specific entropy. An adjacent
+   gap $d\le1$ produces an event of a fixed pair distance with positive
+   probability $(2-d)/N$, whereas Poisson gives that event probability zero.
+   The published Sine-beta free-energy minimizer characterization does
+   not supply finite-entropy near-minimality of those raw fields.
+   A limit-level or justified regularized variational argument remains open.
+
+The [source audit](../literature/noise_removal_sources_20261005.md)
+credits the character heat input and entropy definition. A bounded packet
+checks 348 independent exact radial/trace identities, 630 charge-closure
+cases, literal low-trace rows, finite character and rational gap controls,
+and separate quadrature diagnostics. Two internal proof passes checked
+the new implications. These controls do not establish the outstanding
+model-specific defect estimate, external referee validation or priority.
 
 ## Classical action completion and the ideal Fourier alphabet
 

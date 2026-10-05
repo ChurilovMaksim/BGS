@@ -1,5 +1,18 @@
 # Open mathematical obligations
 
+[FLOW-015](microscopic_noise_removal.md) states the next weak local
+obligation exactly: prove $\int_0^{t_N}P_sG_N\Phi_{N,f}(U_N)ds\to0$
+for every positive compact smooth test at the proved logarithmic time.
+The modulus must remain outside the entire signed integral. Initial heat
+jets cannot establish this in general, even if every derivative vanishes.
+Unscaled full-class stationarity is too strong for the actual bounded-trace
+start; normalized microscopic loops remain possible. A variational route
+must establish a genuine limiting minimizer or justify regularization,
+since every raw finite deterministic field has infinite Poisson entropy.
+The [six-route review](../record/noise_removal_program_20261005.md)
+records the exact alternatives and boundaries. Neither the actual
+defect nor the stronger signed factorial hierarchy is estimated yet.
+
 The [general-start comparison](coboundary_general_start.md) now retains
 the actual frozen initial matrix and compares its original random chain
 to the exact centered-start Dyson law. [FM-017](frozen_mesoscopic_regularity.md) supplies initial Poisson

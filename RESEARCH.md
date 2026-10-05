@@ -1,5 +1,14 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [5 October transfer programme](record/noise_removal_program_20261005.md)
+executes six distinct routes. FLOW-015 identifies the exact signed local
+noise defect and proves a flat-heat-jet falsifier, an actual bounded-trace
+obstruction to unscaled full-class stationarity, a uniform global
+heat-inverse bound and infinite entropy for every raw finite deterministic
+spectral field. The signed actual-map estimate remains open; normalized
+microscopic loops and justified limit-level variational routes are not
+excluded. The full BGS objective and quantization are unchanged.
+
 The [actual-start continuation](record/general_start_review_20261004.md)
 extends the polynomial random-chain comparison to the actual bounded-trace
 initial matrix, with its exact centered Dyson reference and the initial

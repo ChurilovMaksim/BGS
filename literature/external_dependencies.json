@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -401,6 +401,42 @@
         "computations/verification/coboundary_general_start.py",
         "mathematics/circular_dyson_actual_start.md",
         "computations/verification/circular_dyson_relaxation.py"
+      ]
+    },
+    {
+      "id": "EXT-LEMOINE-2025",
+      "authors": [
+        "Thibaut Lemoine"
+      ],
+      "title": "Almost flat highest weights and application to Wilson loops on compact surfaces",
+      "identifier": "arXiv:2303.11286; https://arxiv.org/pdf/2303.11286",
+      "pinned_version": "Canonical primary PDF internally marked v3, 26 May 2025; title-page date 27 May; version-suffixed URL unavailable, no local PDF bytes/hash",
+      "locator": "Section 1.2, printed p.3; Section 2, equations (17)--(18), printed p.10",
+      "checked_on": "2026-10-05",
+      "mapping": "Prior normalized unitary Casimir and character heat multiplier. Project generator is half the normalized Laplacian; highest weight (r,0,...,-r) decays at r(r+N-1)/N. Full Brownian fundamental and determinant rate 1/2; traceless determinant rate zero, fundamental (1-N^-2)/2. Charge-zero characters unchanged. Re-derived analytically in D18--D19; no Yang--Mills asymptotic or deterministic BGS import.",
+      "project_sources": [
+        "mathematics/microscopic_noise_removal.md",
+        "literature/noise_removal_sources_20261005.md",
+        "record/noise_removal_program_20261005.md"
+      ]
+    },
+    {
+      "id": "EXT-EHL-2018",
+      "authors": [
+        "Matthias Erbar",
+        "Martin Huesmann",
+        "Thomas Leblé"
+      ],
+      "title": "The one-dimensional log-gas free energy has a unique minimiser",
+      "identifier": "arXiv:1812.06929; https://arxiv.org/pdf/1812.06929",
+      "pinned_version": "Canonical primary PDF internally marked v1, 17 December 2018; title-page date 18 December; version-suffixed URL unavailable, no local PDF bytes/hash",
+      "locator": "Theorem 1 and Corollary 1.1, printed p.2; Definition 2.9, equation (2.17), and Definition 2.10, equation (2.18), printed p.7",
+      "checked_on": "2026-10-05",
+      "mapping": "Source definition of specific relative entropy to unit-intensity Poisson and prior uniqueness of Sine_beta as the free-energy minimizer at intensity one. The project separately proves infinite entropy of every raw finite deterministic periodic spectral field. The source does not supply minimizing property for the actual map, finite-entropy near-minimality of those raw fields or an entropy upper bound for a weak limit.",
+      "project_sources": [
+        "mathematics/microscopic_noise_removal.md",
+        "literature/noise_removal_sources_20261005.md",
+        "record/noise_removal_program_20261005.md"
       ]
     }
   ]

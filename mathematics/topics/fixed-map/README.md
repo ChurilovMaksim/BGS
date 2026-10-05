@@ -43,3 +43,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [fixed_time_wavepacket_trace_bound](../../fixed_time_wavepacket_trace_bound.md) — 4 October proof and exact scope.
 
 - [egorov_overlap_rigidity](../../egorov_overlap_rigidity.md) — 4 October proof and exact scope.
+
+- [microscopic_noise_removal](../../microscopic_noise_removal.md) — Exact signed defect, all-order flat heat jets, actual full-stationarity boundary, global inverse cost and finite-field entropy.

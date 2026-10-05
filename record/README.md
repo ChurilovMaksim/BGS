@@ -1,5 +1,10 @@
 # Research record
 
+The [5 October deterministic-transfer programme](noise_removal_program_20261005.md)
+records six executed routes, two internal proof passes, the exact signed
+noise defect, four scoped transfer boundaries and the unresolved actual-map
+estimate. Its bounded packet separates exact arithmetic from quadrature.
+
 The [actual-start review](general_start_review_20261004.md) records the
 general comparison, a prescribed-time obstruction, logarithmic initial
 regularity and actual-start circular relaxation. The
