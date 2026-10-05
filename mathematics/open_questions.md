@@ -1,5 +1,16 @@
 # Open mathematical obligations
 
+The [exact pair heat formula](heisenberg_pair_heat_formula.md) now gives
+every signed contraction and a superpolynomial **smoothed** stable-band
+form factor for the actual map at a vanishing logarithmic time.
+For $J_{N,w}=N^{-2}\sum_mw(m/N)(|p_m|^2-m)$, its actual heat defect is
+$-J_{N,w}(U_N)+o(N^{-H})$ for every fixed H>0. The unknown original
+value remains the required estimate. The matching simple-spectrum
+construction excludes estimating this defect from the specified
+sublinear short traces alone. A model-specific signed determinant or
+propagator estimate is still needed; this one fixed band is necessary
+but does not cover the full signed factorial hierarchy.
+
 The [growing-degree proof](growing_degree_trace_projection.md) now controls
 actual compact local projections through $Q=\gamma\log N$ at rate
 $N^{-1/4}$. Every $Q_N=o(N)$ still misses the fixed pair vector

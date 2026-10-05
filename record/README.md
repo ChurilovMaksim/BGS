@@ -1,5 +1,11 @@
 # Research record
 
+The [pair-heat programme](heisenberg_pair_program_20261005.md) records
+the exact compensated heat formula, actual-start smoothed form factor,
+short-trace information limitation and unresolved deterministic signed
+band. Its [review](heisenberg_pair_review_20261005.md) distinguishes
+three analytic passes by one fresh reviewer from finite author execution.
+
 The [growing-degree programme](growing_degree_program_20261005.md) records
 actual logarithmic projection control, exact sublinear blindness and
 particular-local-test heat inversion. Its

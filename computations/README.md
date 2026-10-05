@@ -1,5 +1,13 @@
 # Computations
 
+[heisenberg_pair_heat_formula.py](verification/heisenberg_pair_heat_formula.py)
+checks exact hook Gram matrices, cut-and-join and two mixed generators,
+complete Wick compensation on genuine diagonal unitaries, triangular
+mode multiplicities and finite contour exponents. Arithmetic is rational.
+The separate [Wolfram source](verification/heisenberg_pair_heat_checks.wl)
+was evaluated. These checks do not certify analytic asymptotics, the
+actual unperturbed Heisenberg traces or deterministic BGS.
+
 [growing_degree_trace_projection.py](verification/growing_degree_trace_projection.py)
 checks exact Wick/Gram and Mehler coefficients, actual unitary trace
 designs, full tensor Casimirs, high-band blindness/covariance and

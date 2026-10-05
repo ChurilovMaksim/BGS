@@ -1,0 +1,310 @@
+{
+  "schema": "bgs-pair-heat-integration-v1",
+  "date": "2026-10-05",
+  "base_commit": "1e25c415239c283652c9155d03b0924b8aa61674",
+  "claims": [
+    "BGS-FLOW-021"
+  ],
+  "proof_and_source_sha256": {
+    "mathematics/heisenberg_pair_heat_formula.md": "abd5c0ab8c132667a0b7a91390ce4da3072f779a1440d72f33b35da5726d8cb2",
+    "record/heisenberg_pair_review_20261005.md": "5a1f9f6b8a820209117c67a8d0b220f81e592fafa9e51eea3ceaed4532d21429",
+    "literature/heisenberg_pair_heat_sources_20261005.md": "131147cdbd01796ef0f42c65b3eeed0c9f23a2db39bc076e685e176a8f254612",
+    "computations/verification/heisenberg_pair_heat_formula.py": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0",
+    "computations/verification/heisenberg_pair_heat_checks.wl": "0a5482d6133bd66d045d2138cb6c89a3a7e116df71f503c15a334bbd407f7798",
+    "mathematics/fixed_map_resolvent_frontier.md": "ab7cbfd8c85966a3d3fc1350e022d598248c0ea582900bae99c5c65a384763f0",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "53f25d0bf3c25f0268af3dce2075bd332f8e9cdd9152767f413d8a914fb198d2"
+  },
+  "independent_internal_review": {
+    "path": "record/heisenberg_pair_review_20261005.md",
+    "sha256": "5a1f9f6b8a820209117c67a8d0b220f81e592fafa9e51eea3ceaed4532d21429",
+    "reviewers": 1,
+    "analytic_passes": 3,
+    "closing_wording_check": true,
+    "accepted_pre_promotion_sha256": "a7b9b2b136a9fbe7ac3d50737b8434a3fda09eb010ef5f6679d481861822a9d0",
+    "mathematical_body_unchanged_on_promotion": true,
+    "boundary": "New H1--H31 analytic implications reconstructed relative to inherited stable Haar, full Wick generator and actual trace inputs. No fresh audit of the full inherited packet proof, external refereeing, computation execution by reviewer, world priority or analytic Lean."
+  },
+  "bounded_manifest": {
+    "path": "evidence/executions/20261005/pair-heat/manifest.json",
+    "sha256": "23e02e503f94ac14d3319e0e60f643390a1e35568dd2b003779caf5152a8fbfb",
+    "exit_status": 0,
+    "input_unchanged": true,
+    "input_count": 9,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "wall_timeout_seconds": 55.0,
+    "runtime_seconds": 1.572494,
+    "validator": "valid evidence record; mathematical interpretation requires review",
+    "result_path": "evidence/executions/20261005/pair-heat/checks.json",
+    "result_sha256": "5cd3d442fb9a2101dc3274b12f78de9fcd4cb6edc8be773c1feedadde99ea0a7",
+    "arithmetic": "exact fractions and rational real/imaginary pairs",
+    "case_families": {
+      "complete_contraction_evaluations": 108,
+      "contracted_contour_exponents": 10911,
+      "determinant_hook_evaluations": 108,
+      "finite_spectral_multiplicity_cases": 72,
+      "holomorphic_cut_join_modes": 36,
+      "holomorphic_gram_entries": 204,
+      "mixed_wick_d5_eigenvectors": 110,
+      "power_sum_reconstructions": 8,
+      "radial_laurent_eigenvectors": 15,
+      "uncontracted_contour_exponents": 1052
+    },
+    "floating_point_diagnostics": 0,
+    "non_claims": [
+      "No asymptotic BGS proof",
+      "No actual frozen-map Heisenberg trace computation",
+      "No large-N spectral experiment",
+      "No analytic Lean certificate",
+      "Finite cases do not prove H4 or the limiting spectral measure"
+    ]
+  },
+  "wolfram": {
+    "source": "computations/verification/heisenberg_pair_heat_checks.wl",
+    "source_sha256": "0a5482d6133bd66d045d2138cb6c89a3a7e116df71f503c15a334bbd407f7798",
+    "receipt": "evidence/20261005/heisenberg_pair_heat_wolfram.json",
+    "receipt_sha256": "773fb767ef47c7edb7bcc50968c6518e71eff793ffe828f1e430d419de2e9efe",
+    "returned_checks": "All returned checks true: 4 contraction degrees, rational factor, 12 cut-and-join degrees, 2 symbolic contour exponents",
+    "time_constraint_requested_seconds": 40,
+    "kernel_version": "not returned",
+    "effective_resource_limits": "not returned",
+    "boundary": "Separate symbolic finite algebra, not an analytic certificate."
+  },
+  "focused": {
+    "path": "build/pair-heat/focused.json",
+    "sha256": "9b4795ae2b019338f1c3b9f3cc21ea125ff704e79646da13b8ebecb14cbb7345",
+    "source_tree_unchanged": true,
+    "source_tree_sha256": "514d194c210e7700eed8566efb85b68828e01ad999777315c1536a0e4b5a25be",
+    "passed": 4,
+    "total": 4,
+    "toolchain": {
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "packages": {
+        "numpy": "2.3.5",
+        "sympy": null,
+        "mpmath": null,
+        "matplotlib": "3.10.8",
+        "scipy": "1.17.0"
+      },
+      "git": "git version 2.51.1",
+      "cmake": null,
+      "cxx": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "boost_lib_version": null,
+      "requirements_sha256": "921ce31d490adf67593d00a6e92df271c9ebedd5bc26a3bf5aa6697dc8ff4ba0",
+      "cmake_lists_sha256": "9e55928bcc45365e1d536345860ebee4d2446febcd68862072326423eb1c17e0",
+      "verify_workspace_sha256": "e2c5b29eae34eb3b587338f50a3247c9596266f6345def0e09d9eb5171ee4c86"
+    },
+    "checks": [
+      {
+        "name": "clock_structure_and_heat_projection",
+        "source": "computations/verification/clock_structure_and_heat_projection.py",
+        "sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/clock_structure_and_heat_projection.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/pair-heat/focused-logs/clock_structure_and_heat_projection.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.071,
+        "log_sha256": "63f6adc7392334775a2ed17e848badd5a89a7d0458b6ed17fbbf0a9d2a1581fa"
+      },
+      {
+        "name": "growing_degree_trace_projection",
+        "source": "computations/verification/growing_degree_trace_projection.py",
+        "sha256": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/growing_degree_trace_projection.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/pair-heat/focused-logs/growing_degree_trace_projection.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.321,
+        "log_sha256": "4efcae9c8ee573442eeb33ffb3bf6270ef587d5589a6fd6a010991a1b7e4e9e1"
+      },
+      {
+        "name": "heisenberg_pair_heat_formula",
+        "source": "computations/verification/heisenberg_pair_heat_formula.py",
+        "sha256": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/heisenberg_pair_heat_formula.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/pair-heat/focused-logs/heisenberg_pair_heat_formula.json"
+        ],
+        "exit_code": 0,
+        "seconds": 2.615,
+        "log_sha256": "bd495e49f103051c0588723b61196f9d11e06f85c4c722f2371e9c9842403b57"
+      },
+      {
+        "name": "microscopic_noise_removal",
+        "source": "computations/verification/microscopic_noise_removal.py",
+        "sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/microscopic_noise_removal.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/pair-heat/focused-logs/microscopic_noise_removal.json"
+        ],
+        "exit_code": 0,
+        "seconds": 2.795,
+        "log_sha256": "8d9374c88eb92240ec0b2a00bde27b9640dc9a8c915bac785551a41a4094d868"
+      }
+    ],
+    "boundary": "Four selected executions on the recorded dirty source snapshot. Later integration metadata does not change those executed mathematics/code inputs; full remote coverage is observed separately."
+  },
+  "manuscript": {
+    "manifest_path": "build/pair-heat/manuscript/build_manifest.json",
+    "manifest_sha256": "2574d35d191c5c01d791695bab137c5b3f69e1ae1613cafab3052d5b795bb88c",
+    "pdf_path": "build/pair-heat/manuscript/BGS_unified.pdf",
+    "pdf_sha256": "b3fa925b31fb25bc4dfba2e1c4fc3cf9b849502ec93a7949c61e98c5a6739fe0",
+    "page_count": 253,
+    "passes": 3,
+    "sources_unchanged": true,
+    "forbidden_warnings": [],
+    "visually_inspected_pages": [
+      241,
+      242
+    ],
+    "page_images": {
+      "241": {
+        "path": "build/pair-heat/manuscript/pair-page-241.png",
+        "sha256": "70c5f4c1951e95b4e0728d616bb3340e017cb1b334f24dc0fcfca2b547249768"
+      },
+      "242": {
+        "path": "build/pair-heat/manuscript/pair-page-242.png",
+        "sha256": "cb869872914a5e1e8e921f22fcc2a3feadb103079938730cb0f6dcee4c944457"
+      }
+    },
+    "boundary": "Three full LaTeX passes, immutable reachable TeX inputs and visual inspection of the new pages; not mathematical certification."
+  },
+  "static_checks": {
+    "path": "build/pair-heat/static-checks.json",
+    "sha256": "da17a06323b30ffe036647c5c06314961ef6c8fdfbd671a6e1a59b5f8b335778",
+    "status": "PASS",
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "computations/verification/scientific_registry_audit.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.06,
+        "stdout": "scientific-registry-audit: OK (71 claims, 28 external dependencies)\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/verification/repository_audit.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.18,
+        "stdout": "PASS check_canonical_identity\nPASS check_required\nPASS check_retired_julia\nPASS check_archive_contract\nPASS check_manuscript_surface\nPASS check_workflows\nPASS check_maintenance_surface\nPASS check_cpp_coverage\nPASS check_lean_coverage\nPASS check_bilingual_readmes\nPASS check_active_markdown_links\nPASS repository_audit\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/render_claim_registry.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.045,
+        "stdout": "claim-registry-render: OK\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/render_errata.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.051,
+        "stdout": "errata-render: OK\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_finite_orbit_section.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.155,
+        "stdout": "finite-orbit manuscript section matches canonical Markdown\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_return_sections.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 1.438,
+        "stdout": "PASS return-law source synchronization\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_fixed_map_section.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.422,
+        "stdout": "PASS fixed-map source synchronization\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "-Werror::SyntaxWarning",
+          "-m",
+          "compileall",
+          "-q",
+          "computations"
+        ],
+        "exit_code": 0,
+        "seconds": 0.069,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.017,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "claims": 71,
+    "external_dependencies": 28
+  },
+  "scientific_status": {
+    "BGS-FLOW-021": "proved within its written hypotheses",
+    "actual_smoothed_fixed_stable_band": "superpolynomial form-factor mean estimate; no concentration",
+    "actual_unperturbed_signed_pair_and_all_orders": "OPEN",
+    "BGS-TRACE-005": "OPEN",
+    "BGS-BGS-001": "OPEN"
+  },
+  "publication": "Exact publication commit and subsequent CI observation are recorded separately; no self-referential publication SHA in this tracked object."
+}

@@ -1,0 +1,209 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FLOW-021",
+  "repository": {
+    "commit": "1e25c415239c283652c9155d03b0924b8aa61674",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/heisenberg_pair_heat_formula.py",
+    "--output",
+    "evidence/executions/20261005/pair-heat/checks.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5",
+        "role": "Imported through inherited helpers; no floating diagnostics executed by the new checker"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite exact determinant-ratio hook Gram/cut-and-join identities, mixed Wick heat eigenvectors against trace and independent radial generators, complete contractions on genuine diagonal unitary spectra, triangular multiplicities, and the full affine contour exponents including the finite-dimension correction",
+    "coefficient_domain": "Fraction exact rationals and rational real/imaginary pairs; no floating arithmetic executed by these checks",
+    "conventions": "Normalized unitary heat; stable range 2m<=N; p_0=N; independent positive/negative formal trace variables; H_0=0 and determinant-ratio constant coefficient 1; y=1 is the polynomial removable limit",
+    "inputs": [
+      "mathematics/heisenberg_pair_heat_formula.md",
+      "mathematics/growing_degree_trace_projection.md",
+      "literature/heisenberg_pair_heat_sources_20261005.md",
+      "literature/signed_heisenberg_sources.md",
+      "computations/verification/heisenberg_pair_heat_formula.py",
+      "computations/verification/growing_degree_trace_projection.py",
+      "computations/verification/clock_structure_and_heat_projection.py",
+      "computations/verification/microscopic_noise_removal.py",
+      "computations/verification/quadratic_noise_clock.py"
+    ],
+    "bounds": {
+      "holomorphic_degree": "1..8",
+      "holomorphic_cut_join_modes": 36,
+      "holomorphic_gram_entries": 204,
+      "power_sum_reconstructions": 8,
+      "mixed_wick_degree": "1..5",
+      "mixed_wick_N": "2m,2m+1",
+      "mixed_wick_d5_eigenvectors": 110,
+      "independent_radial_degree": "1..3",
+      "independent_radial_N": "distinct 2m,max(3,2m)",
+      "radial_laurent_eigenvectors": 15,
+      "determinant_point_degree": "1..6",
+      "determinant_point_N": "max(3,2m)",
+      "unitary_designs": [
+        "identity",
+        "balanced +1/-1",
+        "successive powers of i"
+      ],
+      "y_nodes": [
+        "-1",
+        "0",
+        "1/2",
+        "1",
+        "3/2",
+        "2"
+      ],
+      "determinant_hook_evaluations": 108,
+      "complete_contraction_evaluations": 108,
+      "spectral_multiplicity_degree": "1..12",
+      "finite_spectral_multiplicity_cases": 72,
+      "contour_N": "5..65",
+      "contour_m": "1..floor(N/2)",
+      "uncontracted_contour_exponents": 1052,
+      "contracted_contour_exponents": 10911
+    },
+    "non_claims": [
+      "Finite identities do not certify the all-degree heat formula, limiting spectral measure or analytic contour theorem",
+      "No Brownian path sample, actual large-N frozen-map spectrum, noisy concentration or all-order extension",
+      "No deterministic noise-removal estimate, full BGS, analytic Lean certificate or world priority"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-05T17:28:08.057868+00:00",
+    "runtime_seconds": 1.572494,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "mathematics/heisenberg_pair_heat_formula.md",
+    "mathematics/growing_degree_trace_projection.md",
+    "literature/heisenberg_pair_heat_sources_20261005.md",
+    "literature/signed_heisenberg_sources.md",
+    "computations/verification/heisenberg_pair_heat_formula.py",
+    "computations/verification/growing_degree_trace_projection.py",
+    "computations/verification/clock_structure_and_heat_projection.py",
+    "computations/verification/microscopic_noise_removal.py",
+    "computations/verification/quadratic_noise_clock.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "mathematics/heisenberg_pair_heat_formula.md",
+      "sha256": "abd5c0ab8c132667a0b7a91390ce4da3072f779a1440d72f33b35da5726d8cb2",
+      "sha256_after": "abd5c0ab8c132667a0b7a91390ce4da3072f779a1440d72f33b35da5726d8cb2"
+    },
+    {
+      "path": "mathematics/growing_degree_trace_projection.md",
+      "sha256": "8d1f24b798e44eb0cd8c2841dc624c56b584b0e39c27d83fc5bc331071c88a24",
+      "sha256_after": "8d1f24b798e44eb0cd8c2841dc624c56b584b0e39c27d83fc5bc331071c88a24"
+    },
+    {
+      "path": "literature/heisenberg_pair_heat_sources_20261005.md",
+      "sha256": "131147cdbd01796ef0f42c65b3eeed0c9f23a2db39bc076e685e176a8f254612",
+      "sha256_after": "131147cdbd01796ef0f42c65b3eeed0c9f23a2db39bc076e685e176a8f254612"
+    },
+    {
+      "path": "literature/signed_heisenberg_sources.md",
+      "sha256": "c651a196e4b088fa8d3c4f02968a56306b31ecf0b848c82a08f142d7f809efe7",
+      "sha256_after": "c651a196e4b088fa8d3c4f02968a56306b31ecf0b848c82a08f142d7f809efe7"
+    },
+    {
+      "path": "computations/verification/heisenberg_pair_heat_formula.py",
+      "sha256": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0",
+      "sha256_after": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0"
+    },
+    {
+      "path": "computations/verification/growing_degree_trace_projection.py",
+      "sha256": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d",
+      "sha256_after": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d"
+    },
+    {
+      "path": "computations/verification/clock_structure_and_heat_projection.py",
+      "sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+      "sha256_after": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f"
+    },
+    {
+      "path": "computations/verification/microscopic_noise_removal.py",
+      "sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+      "sha256_after": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158"
+    },
+    {
+      "path": "computations/verification/quadratic_noise_clock.py",
+      "sha256": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07",
+      "sha256_after": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07"
+    }
+  ],
+  "output_directory": "evidence/executions/20261005/pair-heat",
+  "declared_results": [
+    "evidence/executions/20261005/pair-heat/checks.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261005/pair-heat/stdout.txt",
+      "sha256": "bd495e49f103051c0588723b61196f9d11e06f85c4c722f2371e9c9842403b57",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261005/pair-heat/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261005/pair-heat/checks.json",
+      "sha256": "5cd3d442fb9a2101dc3274b12f78de9fcd4cb6edc8be773c1feedadde99ea0a7",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

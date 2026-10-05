@@ -1,5 +1,10 @@
 # Literature and external theorem dependencies
 
+[heisenberg_pair_heat_sources_20261005.md](heisenberg_pair_heat_sources_20261005.md)
+pins the inherited stable Haar input, credits prior unitary cut-and-join
+heat calculus, and separates exact Riemann--Siegel algebra from the
+unproved actual-map quantum remainder. No world priority is claimed.
+
 [periodic_orbit_clt_scope_20261005.md](periodic_orbit_clt_scope_20261005.md)
 checks a recent primary periodic-orbit route and gives an exact
 growing-frequency falsifier for the weak-CLT shortcut. Its actual-map

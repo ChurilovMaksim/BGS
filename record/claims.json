@@ -1618,6 +1618,34 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ]
+    },
+    {
+      "id": "BGS-FLOW-021",
+      "title": "Exact stable Heisenberg pair heat compensation and actual-start superpolynomial smoothed form factor",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + PRIOR STABLE HAAR INPUT + INHERITED WICK GENERATOR AND ACTUAL TRACE BOUND + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT FINITE AND WOLFRAM CONTROLS",
+      "source": "mathematics/heisenberg_pair_heat_formula.md",
+      "dependencies": [
+        "BGS-FLOW-020"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "boundary": "For every unitary A and 2m<=N, exact heat evolution of |p_m|^2-m through determinant-ratio hook coefficients with every Wick contraction. Exact Haar-L2 norm/autocorrelation and triangular local-band spectral measure, not point evaluation. Short traces |p_j(A)|<=Nd through J give an explicit stable-band point heat bound under the stated Delta<=a(1-b)t/16 hypothesis. Actual U_N satisfies it eventually at t_N=max(32,8/a) log J_N/J_N with J_N=floor[log N/(2(alpha+1))], yielding superpolynomial accuracy of smoothed form-factor means at each m in aN<=m<=bN<N/2. No concentration, growing bandwidth, effective startup, original-chain schedule at this new time, or unperturbed cancellation is inferred. Simple globally uniform spectra with identical first Q_N=o(N) traces and common exponential bounds have separated original pair values and signed defects. Actual J_N,w(U_N), all other bands/orders, TRACE-005 and deterministic BGS remain OPEN. No world priority, external referee or analytic Lean certificate.",
+      "evidence": [
+        "evidence/executions/20261005/pair-heat/manifest.json",
+        "evidence/executions/20261005/pair-heat/checks.json",
+        "evidence/20261005/heisenberg_pair_heat_wolfram.json",
+        "record/heisenberg_pair_review_20261005.md",
+        "evidence/executions/20261005-pair-heat-integration.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_pair_heat_formula.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,12 @@
 # Mathematics
 
+[heisenberg_pair_heat_formula.md](heisenberg_pair_heat_formula.md)
+gives the exact stable-band heat formula and every signed contraction,
+its Haar spectral profile, and a superpolynomial smoothed form-factor
+estimate for the actual map. Simple spectra with identical specified
+short traces separate the unperturbed statistic and the signed heat
+defect. Actual deterministic noise removal remains open.
+
 [growing_degree_trace_projection.md](growing_degree_trace_projection.md)
 gives the exact Wick evaluation cost, actual logarithmic projection
 rate $N^{-1/4}$, universal degree-cost lower bound, sublinear blindness

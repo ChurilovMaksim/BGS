@@ -1,5 +1,45 @@
 # Claim ledger
 
+## 5 October 2026 — exact Heisenberg pair compensation and actual smoothed form factor
+
+**BGS-FLOW-021 — PROJECT PROOF + PRIOR STABLE HAAR INPUT + INHERITED
+WICK GENERATOR AND ACTUAL TRACE BOUND + INDEPENDENT INTERNAL CHECK OF
+NEW IMPLICATIONS + EXACT FINITE AND WOLFRAM CONTROLS.** The
+[proof](../mathematics/heisenberg_pair_heat_formula.md) gives exact
+pointwise heat evolution of $|p_m|^2-m$ at $2m\le N$, through
+determinant-ratio hook coefficients with every Wick contraction retained.
+Direct generating-function algebra proves the eigenvalues and
+orthogonality. Exact Haar-$L^2$ norms, autocorrelations and a triangular
+limiting local-band heat spectral measure remain function-space facts.
+
+A reflection/Cauchy argument gives a new actual-start estimate: the
+unchanged U_N's logarithmic trace window yields superpolynomial accuracy
+of the **smoothed** CUE form-factor mean throughout each fixed
+$aN\le m\le bN<N/2$. At
+$t_N=\max(32,8/a)\log J_N/J_N$ its error is bounded by
+$[e^b(at_N)^{-2}+N^2/2+N]e^{-a(1-b)Nt_N/4}$.
+The finite-dimension exponent correction, band-dependent time and
+eventual dimension restriction are explicit. No concentration,
+effective startup or deterministic noise removal follows.
+
+For every sublinear trace window, two simple globally uniform spectra
+can share all those traces and a common exponential bound while
+their original pair values and signed heat defects separate. This
+rules out recovery from just those data, including nonlinear recovery;
+it constructs no chaotic counterexample or version of U_N.
+
+The [programme](heisenberg_pair_program_20261005.md),
+[review](heisenberg_pair_review_20261005.md) and
+[source check](../literature/heisenberg_pair_heat_sources_20261005.md)
+retain inherited input grades and prior attribution. One fresh
+read-only reviewer reconstructed the new analytic implications;
+finite rational and separate Wolfram runs verify only their stated
+algebraic cases. The Riemann--Siegel determinant identity transfers,
+but supplies no actual uniform Heisenberg quantum remainder.
+**Actual unperturbed $J_{N,w}(U_N)$, the complete signed noise defect,
+TRACE-005 and full deterministic BGS remain OPEN.** No world priority,
+external referee or analytic Lean certificate is claimed.
+
 ## 5 October 2026 — growing degree and a particular microscopic inverse obstruction
 
 **BGS-FLOW-020 — PROJECT PROOF + PRIOR STABLE HAAR MOMENTS AND MEHLER

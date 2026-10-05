@@ -1,14 +1,15 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
-The [growing-degree checkpoint](record/growing_degree_program_20261005.md)
-closes a logarithmic actual-map projection window at rate $N^{-1/4}$.
-A fixed Schwartz pair comparison is exactly orthogonal to every
-sublinear trace degree and has a heat gap of order N, giving unstable
-Haar-$L^2$ recovery even for that particular local test. The complete
-actual signed Heisenberg vector remains unestimated. Full deterministic
-BGS is unchanged and OPEN; the preceding
-[critical-noise checkpoint](record/critical_noise_program_20261005.md)
-is preserved rather than rewritten.
+The [Heisenberg pair checkpoint](record/heisenberg_pair_program_20261005.md)
+resolves the full stable pair heat vector into explicit determinant
+coefficients and signed contractions. A reflection/Cauchy estimate using
+the actual logarithmic trace window gives superpolynomial **smoothed**
+CUE form-factor error in every fixed band $aN\le m\le bN<N/2$.
+Two simple spectra can match every specified sublinear short trace and
+the global exponential bound while retaining different signed heat
+defects. The actual unperturbed pair sum, all higher signed counterterms
+and full deterministic BGS remain OPEN. The
+[parent checkpoint](record/growing_degree_program_20261005.md) is preserved.
 
 The [all-order continuation](record/all_order_program_20261005.md) closes
 every fixed local factorial order for the original noisy chain from the

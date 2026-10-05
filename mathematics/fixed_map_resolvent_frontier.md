@@ -1,6 +1,6 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FLOW-021`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states the deterministic all-order
@@ -1240,6 +1240,84 @@ checks the new analytic implications; the
 [finite packet](../evidence/executions/20261005/degree-growth/manifest.json)
 does not certify their all-degree limits, priority or BGS.
 The complete deterministic target remains OPEN.
+
+## Exact Heisenberg pair heat compensation and the actual smoothed band
+
+**Claim ID:** `BGS-FLOW-021`. The
+[full proof](heisenberg_pair_heat_formula.md) diagonalizes the particular
+stable pair vector $Q_m=|p_m|^2-m$, $2m\le N$, directly from
+determinant-ratio hook modes. Define
+
+$$
+H_m(A;y)=\frac{[x^m]}{1-y}
+ \frac{\det(I-yxA)}{\det(I-xA)},\qquad H_m(A;1)=p_m(A),
+$$
+
+$$
+K_m(A;y)=|H_m(A;y)|^2-my^{m-1}
+ -(1-y)^2\sum_{k=1}^{m-1}(m-k)y^{m-k-1}|H_k(A;y)|^2.
+$$
+
+The complete pointwise identity, including every Wick contraction, is
+
+$$
+P_tQ_m(A)=e^{-t[m+m(m-1)/N]}K_m(A;e^{mt/N}).
+$$
+
+It holds at repeated eigenvalues and does not require a minimum gap.
+The $m^2$ orthonormal modes have rates
+$m+m(m-1-r-s)/N$, $0\le r,s<m$, with their repeated-sum
+multiplicities retained. In particular
+
+$$
+\|P_tQ_m\|_2^2=e^{-2mt}
+ \left[\frac{\sinh(m^2t/N)}{\sinh(mt/N)}\right]^2.
+$$
+
+This is a Haar-$L^2$ identity, not point evaluation. The local band
+has an exact triangular limiting heat spectral measure at time $s/N$.
+The clock value is separately $P_tQ_m(C_N)=-me^{-mt}$.
+
+The same determinant formula also gives a quantitative actual-start
+estimate. Suppose $|p_j(A)|\le Nd$ through $j\le J$ and put
+$\vartheta=a(1-b)$ for fixed $0<a<b<1/2$. If $0<t\le1$ and
+
+$$
+d(1+\log J)+\frac{8e^{-aJt/4}}{aJt}\le\vartheta t/16,
+$$
+
+then throughout $aN\le m\le bN$,
+
+$$
+|P_tQ_m(A)|\le\left[e^b(at)^{-2}+N^2/2+N\right]
+ e^{-\vartheta Nt/4}.
+$$
+
+The proof reflects the numerator outside the unit disk and takes the
+coefficient circle at $e^{-3(m/N)t/4}$. The factor $e^b$ retains the
+finite-dimension exponent correction. FLOW-020's actual exponential
+trace bound gives $J_N=\lfloor\log N/[2(\alpha+1)]\rfloor$ and
+$d_N=C_0N^{-1/2}$. At
+$t_N=\max(32,8/a)\log J_N/J_N$, the entire actual smoothed stable
+band agrees with the CUE form factor to $o(N^{-H})$ for every fixed
+$H>0$. The time constant depends on the band endpoint $a$; no effective
+starting dimension or unperturbed universality is inferred.
+
+For every sublinear trace window there are two simple globally uniform
+spectra with identical trace data and common exponential bounds, but
+one unperturbed pair vector has a negative clock limit while the other
+grows as $L\int w>0$. Both smoothed vectors vanish at this schedule.
+Thus the full signed noise defects remain distinguishable even when
+all the specified short-trace data match. The proof and
+[programme](../record/heisenberg_pair_program_20261005.md) preserve this
+input limitation without presenting a chaotic counterexample.
+
+For the original $U_N$, the determinant formula makes the full signed
+defect explicit, but does not estimate it. The actual
+$N^{-2}\sum_mw(m/N)(|p_m(U_N)|^2-m)$, other Fourier bands and all
+higher factorial counterterms remain open. Exact determinant
+self-inversiveness supplies no missing uniform quantum remainder.
+The complete deterministic BGS target remains OPEN.
 
 ## The exact deterministic noise-removal obligation
 

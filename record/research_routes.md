@@ -1,5 +1,16 @@
 # Research route log
 
+## 2026-10-05 — Exact Heisenberg pair heat and actual determinant control
+
+The [continuation](heisenberg_pair_program_20261005.md) executes explicit
+hook-mode resolution, a reflected coefficient-circle estimate, matching
+simple-spectrum falsifiers and a primary Riemann--Siegel source check.
+FLOW-021 gives every signed contraction and a superpolynomial smoothed
+stable-band form factor for the unchanged actual operator. The matching
+families separate unperturbed values and signed defects despite identical
+specified sublinear short traces. The remaining model-specific signed
+determinant sum, the full deterministic hierarchy and BGS remain OPEN.
+
 ## 2026-10-05 — Growing degree and a fixed local test
 
 The [continuation](growing_degree_program_20261005.md) executes Wick

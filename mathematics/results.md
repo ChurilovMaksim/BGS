@@ -1,5 +1,29 @@
 # Current results and exact scope
 
+## Exact pair heat and actual-start smoothing, 5 October 2026
+
+[FLOW-021](heisenberg_pair_heat_formula.md) diagonalizes the stable
+pair vector through determinant-ratio hook modes and gives its exact
+pointwise heat evolution, including all signed contractions. It computes
+the Haar spectral measure and the complete fixed microscopic-time profile.
+These identities hold at repeated eigenvalues in the range 2m<=N.
+
+For every fixed 0<a<b<1/2, the actual map satisfies a gap-independent
+superpolynomial **smoothed** form-factor estimate at
+$t_N=\max(32,8/a)\log J_N/J_N$ with
+$J_N=\lfloor\log N/[2(\alpha+1)]\rfloor$. This uses the inherited
+actual exponential trace bound and a reflected determinant contour.
+The finite-dimension correction is retained explicitly. Independent
+internal review checked the new analytic steps; exact finite checks
+cover only their recorded cases.
+
+Two simple globally uniform spectral families have the same first
+specified $Q_N=o(N)$ traces and one global exponential trace bound,
+but separated unperturbed pair values and signed heat defects. This
+rules out recovery from those data alone, not a model-specific estimate
+for U_N. The actual unsmoothed statistic, all-order deterministic
+comparison, TRACE-005 and full BGS remain OPEN.
+
 ## Actual growing projection and a particular local inverse boundary, 5 October 2026
 
 [FLOW-020](growing_degree_trace_projection.md) gives an exact neutral

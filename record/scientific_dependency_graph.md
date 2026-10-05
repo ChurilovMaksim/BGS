@@ -178,6 +178,7 @@ The critical-noise branch adds these exact registered dependencies.
 | BGS-FLOW-018 | FLOW-007, FLOW-015, FLOW-016, FLOW-017, TRACE-007 | Exact clock selection rule and clock matching are not established for U_N. |
 | BGS-FLOW-019 | FLOW-015, FM-013, FLOW-017 | Every fixed projection is estimated; growing-degree complementary evaluation remains open. |
 | BGS-FLOW-020 | FLOW-019, FLOW-015, FM-013, FM-007 | Actual logarithmic projection is estimated; a fixed pair test is missed by every sublinear projection and has unstable Haar-L2 heat inversion. Actual signed value remains open. |
+| BGS-FLOW-021 | FLOW-020 | Exact determinant pair compensation and superpolynomial actual-start smoothed band estimate. Actual signed noise removal and all deterministic bands/orders remain open. |
 
 EXT-KT-2009 credits the prior lattice kernel; EXT-DE-2001 is used only at
 2Q<=N. Neither node has a deterministic closure edge to TRACE-005 or

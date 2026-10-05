@@ -1,13 +1,15 @@
 # Bohigas–Giannoni–Schmit programme
 
-The [growing-degree continuation](record/growing_degree_program_20261005.md)
-proves actual-map compact local projection error $O(N^{-1/4})$ through
-$Q=\gamma\log N$. Its [proof](mathematics/growing_degree_trace_projection.md)
-also identifies one fixed local pair test missed exactly by every
-sublinear projection and proves unstable heat inversion for that test
-in Haar $L^2$. Its actual signed value and full deterministic BGS remain
-open. The preceding [critical-noise result](record/critical_noise_program_20261005.md)
-and its sharp clock comparison retain their stated scope.
+The [Heisenberg pair continuation](record/heisenberg_pair_program_20261005.md)
+gives an exact determinant formula for the full stable pair heat
+compensation. For the unchanged frozen operator, its logarithmic trace
+window now gives superpolynomial CUE form-factor accuracy **after heat
+smoothing** throughout each fixed band $aN\le m\le bN<N/2$.
+The [proof](mathematics/heisenberg_pair_heat_formula.md) also constructs
+simple spectra with identical sublinear short-trace data but different
+signed noise defects. Actual unperturbed cancellation and full BGS remain
+OPEN; the [growing-degree results](record/growing_degree_program_20261005.md)
+retain their established projection and inverse-norm scope.
 
 The [5 October all-order continuation](record/all_order_program_20261005.md)
 proves all fixed local correlation orders for the original random chain
