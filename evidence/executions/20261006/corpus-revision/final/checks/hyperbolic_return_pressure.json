@@ -1,0 +1,783 @@
+{
+  "scope": "Exact finite action/tiling/series checks and explicitly truncated floating experiments; no asymptotic, priority, or BGS certificate.",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "arithmetic": {
+    "counts": {
+      "determinants": 63,
+      "matrix_orbits": 63,
+      "integer_actions": 16875,
+      "affine_actions": 11232
+    },
+    "determinants": [
+      {
+        "T": 4,
+        "K": 3,
+        "N": 5,
+        "determinant": -50
+      },
+      {
+        "T": 4,
+        "K": 5,
+        "N": 19,
+        "determinant": -722
+      },
+      {
+        "T": 4,
+        "K": 7,
+        "N": 71,
+        "determinant": -10082
+      },
+      {
+        "T": 4,
+        "K": 9,
+        "N": 265,
+        "determinant": -140450
+      },
+      {
+        "T": 4,
+        "K": 11,
+        "N": 989,
+        "determinant": -1956242
+      },
+      {
+        "T": 4,
+        "K": 13,
+        "N": 3691,
+        "determinant": -27246962
+      },
+      {
+        "T": 4,
+        "K": 15,
+        "N": 13775,
+        "determinant": -379501250
+      },
+      {
+        "T": 4,
+        "K": 17,
+        "N": 51409,
+        "determinant": -5285770562
+      },
+      {
+        "T": 4,
+        "K": 19,
+        "N": 191861,
+        "determinant": -73621286642
+      },
+      {
+        "T": 6,
+        "K": 3,
+        "N": 7,
+        "determinant": -196
+      },
+      {
+        "T": 6,
+        "K": 5,
+        "N": 41,
+        "determinant": -6724
+      },
+      {
+        "T": 6,
+        "K": 7,
+        "N": 239,
+        "determinant": -228484
+      },
+      {
+        "T": 6,
+        "K": 9,
+        "N": 1393,
+        "determinant": -7761796
+      },
+      {
+        "T": 6,
+        "K": 11,
+        "N": 8119,
+        "determinant": -263672644
+      },
+      {
+        "T": 6,
+        "K": 13,
+        "N": 47321,
+        "determinant": -8957108164
+      },
+      {
+        "T": 6,
+        "K": 15,
+        "N": 275807,
+        "determinant": -304278004996
+      },
+      {
+        "T": 6,
+        "K": 17,
+        "N": 1607521,
+        "determinant": -10336495061764
+      },
+      {
+        "T": 6,
+        "K": 19,
+        "N": 9369319,
+        "determinant": -351136554095044
+      },
+      {
+        "T": 8,
+        "K": 3,
+        "N": 9,
+        "determinant": -486
+      },
+      {
+        "T": 8,
+        "K": 5,
+        "N": 71,
+        "determinant": -30246
+      },
+      {
+        "T": 8,
+        "K": 7,
+        "N": 559,
+        "determinant": -1874886
+      },
+      {
+        "T": 8,
+        "K": 9,
+        "N": 4401,
+        "determinant": -116212806
+      },
+      {
+        "T": 8,
+        "K": 11,
+        "N": 34649,
+        "determinant": -7203319206
+      },
+      {
+        "T": 8,
+        "K": 13,
+        "N": 272791,
+        "determinant": -446489578086
+      },
+      {
+        "T": 8,
+        "K": 15,
+        "N": 2147679,
+        "determinant": -27675150522246
+      },
+      {
+        "T": 8,
+        "K": 17,
+        "N": 16908641,
+        "determinant": -1715412842801286
+      },
+      {
+        "T": 8,
+        "K": 19,
+        "N": 133121449,
+        "determinant": -106327921103157606
+      },
+      {
+        "T": 10,
+        "K": 3,
+        "N": 11,
+        "determinant": -968
+      },
+      {
+        "T": 10,
+        "K": 5,
+        "N": 109,
+        "determinant": -95048
+      },
+      {
+        "T": 10,
+        "K": 7,
+        "N": 1079,
+        "determinant": -9313928
+      },
+      {
+        "T": 10,
+        "K": 9,
+        "N": 10681,
+        "determinant": -912670088
+      },
+      {
+        "T": 10,
+        "K": 11,
+        "N": 105731,
+        "determinant": -89432354888
+      },
+      {
+        "T": 10,
+        "K": 13,
+        "N": 1046629,
+        "determinant": -8763458109128
+      },
+      {
+        "T": 10,
+        "K": 15,
+        "N": 10360559,
+        "determinant": -858729462339848
+      },
+      {
+        "T": 10,
+        "K": 17,
+        "N": 102558961,
+        "determinant": -84146723851196168
+      },
+      {
+        "T": 10,
+        "K": 19,
+        "N": 1015229051,
+        "determinant": -8245520207954884808
+      },
+      {
+        "T": 12,
+        "K": 3,
+        "N": 13,
+        "determinant": -1690
+      },
+      {
+        "T": 12,
+        "K": 5,
+        "N": 155,
+        "determinant": -240250
+      },
+      {
+        "T": 12,
+        "K": 7,
+        "N": 1847,
+        "determinant": -34114090
+      },
+      {
+        "T": 12,
+        "K": 9,
+        "N": 22009,
+        "determinant": -4843960810
+      },
+      {
+        "T": 12,
+        "K": 11,
+        "N": 262261,
+        "determinant": -687808321210
+      },
+      {
+        "T": 12,
+        "K": 13,
+        "N": 3125123,
+        "determinant": -97663937651290
+      },
+      {
+        "T": 12,
+        "K": 15,
+        "N": 37239215,
+        "determinant": -13867591338162250
+      },
+      {
+        "T": 12,
+        "K": 17,
+        "N": 443745457,
+        "determinant": -1969100306081388490
+      },
+      {
+        "T": 12,
+        "K": 19,
+        "N": 5287706269,
+        "determinant": -279598375872219003610
+      },
+      {
+        "T": 14,
+        "K": 3,
+        "N": 15,
+        "determinant": -2700
+      },
+      {
+        "T": 14,
+        "K": 5,
+        "N": 209,
+        "determinant": -524172
+      },
+      {
+        "T": 14,
+        "K": 7,
+        "N": 2911,
+        "determinant": -101687052
+      },
+      {
+        "T": 14,
+        "K": 9,
+        "N": 40545,
+        "determinant": -19726764300
+      },
+      {
+        "T": 14,
+        "K": 11,
+        "N": 564719,
+        "determinant": -3826890587532
+      },
+      {
+        "T": 14,
+        "K": 13,
+        "N": 7865521,
+        "determinant": -742397047217292
+      },
+      {
+        "T": 14,
+        "K": 15,
+        "N": 109552575,
+        "determinant": -144021200269567500
+      },
+      {
+        "T": 14,
+        "K": 17,
+        "N": 1525870529,
+        "determinant": -27939370455248878092
+      },
+      {
+        "T": 14,
+        "K": 19,
+        "N": 21252634831,
+        "determinant": -5420093847118012782732
+      },
+      {
+        "T": 20,
+        "K": 3,
+        "N": 21,
+        "determinant": -7938
+      },
+      {
+        "T": 20,
+        "K": 5,
+        "N": 419,
+        "determinant": -3160098
+      },
+      {
+        "T": 20,
+        "K": 7,
+        "N": 8359,
+        "determinant": -1257711858
+      },
+      {
+        "T": 20,
+        "K": 9,
+        "N": 166761,
+        "determinant": -500566160178
+      },
+      {
+        "T": 20,
+        "K": 11,
+        "N": 3326861,
+        "determinant": -199224074039778
+      },
+      {
+        "T": 20,
+        "K": 13,
+        "N": 66370459,
+        "determinant": -79290680901672258
+      },
+      {
+        "T": 20,
+        "K": 15,
+        "N": 1324082319,
+        "determinant": -31557491774791519698
+      },
+      {
+        "T": 20,
+        "K": 17,
+        "N": 26415275921,
+        "determinant": -12559802435686123168338
+      },
+      {
+        "T": 20,
+        "K": 19,
+        "N": 526981436101,
+        "determinant": -4998769811911302229479618
+      }
+    ]
+  },
+  "cyclic_tilings": {
+    "scope": "All cyclic spins in {-1,0,1} with an adjacent zero pair; exact signed monomials.",
+    "configurations": 64588,
+    "rows": [
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 3,
+        "configurations": 7,
+        "nonzero_polynomial_coefficients": 2
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 4,
+        "configurations": 25,
+        "nonzero_polynomial_coefficients": 4
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 5,
+        "configurations": 91,
+        "nonzero_polynomial_coefficients": 7
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 6,
+        "configurations": 313,
+        "nonzero_polynomial_coefficients": 10
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 7,
+        "configurations": 1051,
+        "nonzero_polynomial_coefficients": 13
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 8,
+        "configurations": 3457,
+        "nonzero_polynomial_coefficients": 16
+      },
+      {
+        "T": 4,
+        "theta": "0",
+        "K": 9,
+        "configurations": 11203,
+        "nonzero_polynomial_coefficients": 19
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 3,
+        "configurations": 7,
+        "nonzero_polynomial_coefficients": 2
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 4,
+        "configurations": 25,
+        "nonzero_polynomial_coefficients": 4
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 5,
+        "configurations": 91,
+        "nonzero_polynomial_coefficients": 6
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 6,
+        "configurations": 313,
+        "nonzero_polynomial_coefficients": 9
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 7,
+        "configurations": 1051,
+        "nonzero_polynomial_coefficients": 12
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 8,
+        "configurations": 3457,
+        "nonzero_polynomial_coefficients": 15
+      },
+      {
+        "T": 4,
+        "theta": "1/2",
+        "K": 9,
+        "configurations": 11203,
+        "nonzero_polynomial_coefficients": 19
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 3,
+        "configurations": 7,
+        "nonzero_polynomial_coefficients": 2
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 4,
+        "configurations": 25,
+        "nonzero_polynomial_coefficients": 4
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 5,
+        "configurations": 91,
+        "nonzero_polynomial_coefficients": 7
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 6,
+        "configurations": 313,
+        "nonzero_polynomial_coefficients": 11
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 7,
+        "configurations": 1051,
+        "nonzero_polynomial_coefficients": 15
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 8,
+        "configurations": 3457,
+        "nonzero_polynomial_coefficients": 19
+      },
+      {
+        "T": 6,
+        "theta": "0",
+        "K": 9,
+        "configurations": 11203,
+        "nonzero_polynomial_coefficients": 23
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 3,
+        "configurations": 7,
+        "nonzero_polynomial_coefficients": 2
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 4,
+        "configurations": 25,
+        "nonzero_polynomial_coefficients": 4
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 5,
+        "configurations": 91,
+        "nonzero_polynomial_coefficients": 7
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 6,
+        "configurations": 313,
+        "nonzero_polynomial_coefficients": 10
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 7,
+        "configurations": 1051,
+        "nonzero_polynomial_coefficients": 14
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 8,
+        "configurations": 3457,
+        "nonzero_polynomial_coefficients": 19
+      },
+      {
+        "T": 6,
+        "theta": "1/2",
+        "K": 9,
+        "configurations": 11203,
+        "nonzero_polynomial_coefficients": 23
+      }
+    ]
+  },
+  "series_and_constants": {
+    "log_J0_coefficients": {
+      "2": "-1",
+      "4": "-1/4",
+      "6": "-1/9",
+      "8": "-11/192",
+      "10": "-19/600"
+    },
+    "T6_single_site_coefficients": {
+      "8": "1/360",
+      "10": "13/2520",
+      "12": "803/120960"
+    },
+    "rod_bound": "9/2000",
+    "Cauchy_remainder_constant": "16216/1973"
+  },
+  "finite_transfer_experiment": {
+    "scope": "Finite spin cutoff {-1,0,1}, 9 by 9 matrix; NOT a certified infinite-spin pressure.",
+    "mpmath": "1.3.0",
+    "decimal_precision": 80,
+    "rows": [
+      {
+        "T": 4,
+        "theta": "0.0",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(-0.083371124338277603031406942545157577 + 4.2546276739394878060386304638019981e-76j)",
+        "leading_theoretical_coefficient": "(-0.083333333333333333333333333333333333 + 0.0j)",
+        "absolute_error": "3.77910049442697e-5"
+      },
+      {
+        "T": 4,
+        "theta": "0.0",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(-0.0833427786042438993650943685339921 + 2.0128564728500023919167154390215176e-74j)",
+        "leading_theoretical_coefficient": "(-0.083333333333333333333333333333333333 + 0.0j)",
+        "absolute_error": "9.44527091056603e-6"
+      },
+      {
+        "T": 4,
+        "theta": "0.5",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(-0.083415613258226395022668057211471431 - 9.6753916672869464123835928053866066e-76j)",
+        "leading_theoretical_coefficient": "(-0.083333333333333333333333333333333333 - 1.7861160941406746817497016927540581e-82j)",
+        "absolute_error": "8.22799248930617e-5"
+      },
+      {
+        "T": 4,
+        "theta": "0.5",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(-0.083353892493617865963749021462454874 + 1.753960695900258218009157596794614e-74j)",
+        "leading_theoretical_coefficient": "(-0.083333333333333333333333333333333333 - 1.7861160941406746817497016927540581e-82j)",
+        "absolute_error": "2.05591602845326e-5"
+      },
+      {
+        "T": 4,
+        "theta": "0.2",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(0.067448650833742507139980146964267266 + 0.049030459578105322927921968112951183j)",
+        "leading_theoretical_coefficient": "(0.067418082864578952008524451431901588 + 0.048982104357706094097392162886589397j)",
+        "absolute_error": "5.72068883845473e-5"
+      },
+      {
+        "T": 4,
+        "theta": "0.2",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(0.067425723899784285805524948764121692 + 0.04899418824784849997398861046048518j)",
+        "leading_theoretical_coefficient": "(0.067418082864578952008524451431901588 + 0.048982104357706094097392162886589397j)",
+        "absolute_error": "1.42970563397814e-5"
+      },
+      {
+        "T": 6,
+        "theta": "0.0",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(0.002779842354722718363210179673254429 - 8.3726892169335182481567297506532821e-77j)",
+        "leading_theoretical_coefficient": "(0.0027777777777777777777777777777777778 + 0.0j)",
+        "absolute_error": "2.06457694494059e-6"
+      },
+      {
+        "T": 6,
+        "theta": "0.0",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(0.0027782937185757742316922198930649099 - 1.8671622262554548073212092984109466e-74j)",
+        "leading_theoretical_coefficient": "(0.0027777777777777777777777777777777778 + 0.0j)",
+        "absolute_error": "5.15940797996454e-7"
+      },
+      {
+        "T": 6,
+        "theta": "0.5",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(-0.0027798423547232136171211708808104166 - 7.9532936964484734145808598581007061e-76j)",
+        "leading_theoretical_coefficient": "(-0.0027777777777777777777777777777777778 + 2.7829727995527635071943515931963971e-84j)",
+        "absolute_error": "2.06457694543584e-6"
+      },
+      {
+        "T": 6,
+        "theta": "0.5",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(-0.0027782937185757819533098464648929222 - 9.5389982969458358982792896856661014e-74j)",
+        "leading_theoretical_coefficient": "(-0.0027777777777777777777777777777777778 + 2.7829727995527635071943515931963971e-84j)",
+        "absolute_error": "5.15940798004176e-7"
+      },
+      {
+        "T": 6,
+        "theta": "0.2",
+        "epsilon": "0.02",
+        "rescaled_log_eigenvalue": "(-0.0022489396664109400881811147999049775 + 0.0016339503267285399511427828547676615j)",
+        "leading_theoretical_coefficient": "(-0.0022472694288192984002841483810633863 + 0.0016327368119235364699130720962196466j)",
+        "absolute_error": "2.06453670214304e-6"
+      },
+      {
+        "T": 6,
+        "theta": "0.2",
+        "epsilon": "0.01",
+        "rescaled_log_eigenvalue": "(-0.0022476868311797794979675150363961613 + 0.0016330400734990745952902990443655853j)",
+        "leading_theoretical_coefficient": "(-0.0022472694288192984002841483810633863 + 0.0016327368119235364699130720962196466j)",
+        "absolute_error": "5.15938284810362e-7"
+      }
+    ]
+  },
+  "physical_controls": [
+    {
+      "T": 4,
+      "K": 3,
+      "N": 5,
+      "period_scalar_error": 2.342359005732408e-16,
+      "Egorov_error": 1.8577678370907732e-16,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9550010167282437,
+      "normalized_return_imaginary": -0.1443342869091166
+    },
+    {
+      "T": 4,
+      "K": 5,
+      "N": 19,
+      "period_scalar_error": 4.0305758564400053e-16,
+      "Egorov_error": 1.0269562977782698e-15,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9531812277986399,
+      "normalized_return_imaginary": -0.05187972654169937
+    },
+    {
+      "T": 4,
+      "K": 7,
+      "N": 71,
+      "period_scalar_error": 6.662331690608674e-16,
+      "Egorov_error": 1.2262814116578437e-15,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9362801452358911,
+      "normalized_return_imaginary": -0.018195710018694432
+    },
+    {
+      "T": 6,
+      "K": 3,
+      "N": 7,
+      "period_scalar_error": 1.2453389723104504e-16,
+      "Egorov_error": 2.4813552656008775e-16,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9718837941031022,
+      "normalized_return_imaginary": -0.09867617456237215
+    },
+    {
+      "T": 6,
+      "K": 5,
+      "N": 41,
+      "period_scalar_error": 4.532807333372827e-16,
+      "Egorov_error": 7.850462293418876e-16,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9554672741280691,
+      "normalized_return_imaginary": -0.024005780357852457
+    },
+    {
+      "T": 6,
+      "K": 7,
+      "N": 239,
+      "period_scalar_error": 6.437980129220019e-16,
+      "Egorov_error": 2.3972849129904254e-15,
+      "epsilon": 0.1,
+      "a": 2,
+      "normalized_return_real": 0.9343586530066079,
+      "normalized_return_imaginary": -0.005336288518561492
+    }
+  ],
+  "elapsed_seconds": 1.4856525559989677
+}

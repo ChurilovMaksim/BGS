@@ -1,0 +1,74 @@
+{
+  "scope": "exact finite controls, not the general theorem",
+  "two_component": {
+    "coefficient_arrays": 66430,
+    "flat_at_both_radii": 6,
+    "one_radius_counterexample": true
+  },
+  "sharp_examples": [
+    {
+      "coefficient_rank": 2,
+      "prescribed_radius_squares": [
+        1
+      ],
+      "angular_polynomial": "x - 1",
+      "exact_cross_gram_rank": 2
+    },
+    {
+      "coefficient_rank": 3,
+      "prescribed_radius_squares": [
+        1,
+        4
+      ],
+      "angular_polynomial": "x**2 - 5*x + 4",
+      "exact_cross_gram_rank": 3
+    },
+    {
+      "coefficient_rank": 4,
+      "prescribed_radius_squares": [
+        1,
+        4,
+        9
+      ],
+      "angular_polynomial": "x**3 - 14*x**2 + 49*x - 36",
+      "exact_cross_gram_rank": 4
+    },
+    {
+      "coefficient_rank": 5,
+      "prescribed_radius_squares": [
+        1,
+        4,
+        9,
+        16
+      ],
+      "angular_polynomial": "x**4 - 30*x**3 + 273*x**2 - 820*x + 576",
+      "exact_cross_gram_rank": 5
+    },
+    {
+      "coefficient_rank": 6,
+      "prescribed_radius_squares": [
+        1,
+        4,
+        9,
+        16,
+        25
+      ],
+      "angular_polynomial": "x**5 - 55*x**4 + 1023*x**3 - 7645*x**2 + 21076*x - 14400",
+      "exact_cross_gram_rank": 6
+    },
+    {
+      "coefficient_rank": 7,
+      "prescribed_radius_squares": [
+        1,
+        4,
+        9,
+        16,
+        25,
+        36
+      ],
+      "angular_polynomial": "x**6 - 91*x**5 + 3003*x**4 - 44473*x**3 + 296296*x**2 - 773136*x + 518400",
+      "exact_cross_gram_rank": 7
+    }
+  ],
+  "triangular_rank_cases": 25
+}

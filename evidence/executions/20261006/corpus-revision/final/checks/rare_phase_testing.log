@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "scope": "finite exact checks and separately labelled numerical diagnostics",
+  "exact": {
+    "central_binomial_tail_checks": 4096,
+    "finite_copy_checks": 4,
+    "finite_example": {
+      "photon_number": 128,
+      "mean_energy": 1,
+      "quantum_copies_for_075_success": 10,
+      "heterodyne_necessary_copies_strict_lower": "3e18",
+      "unit_aperture_necessary_copies_strict_lower": "3e218"
+    },
+    "constant_interval": {
+      "terms": 2048,
+      "decimal_scale_digits": 60,
+      "lower_numerator": "2908610238306233668705851811331235275619052970899379011549522",
+      "upper_numerator": "2908610238320509269885013941773819976274922678498265896107562",
+      "denominator": "1000000000000000000000000000000000000000000000000000000000000",
+      "e_lower_numerator": "2718281828459045235360287471352662497757247093699959574966967",
+      "e_upper_numerator": "2718281828459045235360287471352662497757247093699959574966968",
+      "construction": "integer outward rounding; factorial-series e enclosure; analytic a/(3M^3) tail"
+    }
+  },
+  "numerical": {
+    "decimal_precision": 50,
+    "C_quadrature": "2.90861023831823806945030866844323032738200504",
+    "angular_cross_checks": [
+      {
+        "t": "0.01",
+        "F": "0.0199499996874921871948093",
+        "direct_difference": "0.0"
+      },
+      {
+        "t": "0.2",
+        "F": "0.379949492030842298516342",
+        "direct_difference": "6.6819118e-52"
+      },
+      {
+        "t": "1.0",
+        "F": "1.45352091052967462769786",
+        "direct_difference": "2.6727647e-51"
+      },
+      {
+        "t": "5.0",
+        "F": "1.89974746015421149258171",
+        "direct_difference": "2.6727647e-51"
+      },
+      {
+        "t": "100.0",
+        "F": "1.99499996874921871948093",
+        "direct_difference": "0.0"
+      }
+    ],
+    "finite_radial_diagnostics": [
+      {
+        "n": 32,
+        "balance_squared_radius": "14.2391944255443788579173",
+        "scaled_Hellinger": "3.15942355399051587856487",
+        "relative_error_to_limit": "0.086231325314078"
+      },
+      {
+        "n": 128,
+        "balance_squared_radius": "50.1998988770542783200622",
+        "scaled_Hellinger": "2.99280598938165562730119",
+        "relative_error_to_limit": "0.028947072369552"
+      },
+      {
+        "n": 512,
+        "balance_squared_radius": "192.172281274514759623184",
+        "scaled_Hellinger": "2.9354886245511381097219",
+        "relative_error_to_limit": "0.0092409721587314"
+      }
+    ],
+    "boundary_profile": [
+      {
+        "offset": -4,
+        "limit_profile": "0.00120496251092551979648736"
+      },
+      {
+        "offset": -2,
+        "limit_profile": "0.0374344813873196073734274"
+      },
+      {
+        "offset": 0,
+        "limit_profile": "1.04730805444341895522111"
+      },
+      {
+        "offset": 2,
+        "limit_profile": "2.63802105350988513324628"
+      },
+      {
+        "offset": 4,
+        "limit_profile": "2.87196438138738638514783"
+      }
+    ],
+    "finite_example": {
+      "D": "0.176084807337260076294531307683",
+      "success_9": "0.748412259985263176223392587495",
+      "success_10": "0.759897645242062529003193451889",
+      "heterodyne_necessary_lower_value": "3474171681354105651.31054881523",
+      "unit_aperture_log10_lower": "218.599839790833189949624879468"
+    },
+    "scope": "numerical diagnostic only; constant certification is a separate exact calculation"
+  },
+  "negative_controls": 3,
+  "source_sha256": "703ec58e6465b97c2c291ca6b537473839a25c30babbc281ec998161d6bbcf00"
+}

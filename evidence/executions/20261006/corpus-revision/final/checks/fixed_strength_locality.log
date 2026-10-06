@@ -1,0 +1,176 @@
+{
+  "producer": "computations/verification/fixed_strength_locality.py",
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "Exact finite algebra plus numerical finite operator falsifiers; not an asymptotic proof or a priority certificate.",
+  "source_sha256": "360b2b24dc41fe4a0d8709cd4f7a87a53f8b7b179ed4c84783504efa830acf12",
+  "geometry": {
+    "radius": "1/16",
+    "image_distance_lower_bound": "3/16",
+    "separation_margin": "1/8",
+    "cauchy_real_inverse_bound": "3008/6561",
+    "integer_grid_checks": 5603
+  },
+  "conventions": {
+    "covariance_tests": 15,
+    "largest_covariance_entry_error": 8.95090418262362e-16,
+    "includes_composite_modulus": 9,
+    "physical_odd_product_mode": true
+  },
+  "poisson_only_negative_control": {
+    "first_moyal_coefficient_zero": true,
+    "third_moyal_coefficient": {
+      "(-2, -1)": -6,
+      "(-2, 1)": 6,
+      "(-1, -2)": 6,
+      "(-1, 2)": -6,
+      "(1, -2)": -6,
+      "(1, 2)": 6,
+      "(2, -1)": 6,
+      "(2, 1)": -6
+    },
+    "matrix_checks": [
+      {
+        "N": 31,
+        "commutator_operator_norm": 0.010049018067938606,
+        "N_cubed_norm": 299.370297261959
+      },
+      {
+        "N": 63,
+        "commutator_operator_norm": 0.0013527785438840819,
+        "N_cubed_norm": 338.258216562583
+      },
+      {
+        "N": 127,
+        "commutator_operator_norm": 0.0001755088110087793,
+        "N_cubed_norm": 359.5092648205964
+      }
+    ],
+    "meaning": "Poisson commutation alone does not imply all-orders quantum commutation."
+  },
+  "coefficient_controls": {
+    "two_grid_coefficient_l1_difference": 4.464962244330251e-16,
+    "quadrature": [
+      {
+        "frequency": 0,
+        "fft_coefficient_real": 0.07543127015236725,
+        "quadrature_absolute_difference": 2.7755575615628914e-17,
+        "quadrature_internal_error_estimate": 9.220765320980603e-15
+      },
+      {
+        "frequency": 1,
+        "fft_coefficient_real": 0.07451559692826523,
+        "quadrature_absolute_difference": 2.7829968769710744e-17,
+        "quadrature_internal_error_estimate": 8.437177302184501e-15
+      },
+      {
+        "frequency": 7,
+        "fft_coefficient_real": 0.038902768409239064,
+        "quadrature_absolute_difference": 7.255571130104554e-18,
+        "quadrature_internal_error_estimate": 9.50188058831204e-15
+      },
+      {
+        "frequency": 31,
+        "fft_coefficient_real": 0.0006846606471803991,
+        "quadrature_absolute_difference": 1.8971506284263355e-18,
+        "quadrature_internal_error_estimate": 2.1086346082762392e-14
+      },
+      {
+        "frequency": 100,
+        "fft_coefficient_real": 4.496135647367773e-05,
+        "quadrature_absolute_difference": 2.5871532576014672e-18,
+        "quadrature_internal_error_estimate": 7.450329702184407e-14
+      },
+      {
+        "frequency": 250,
+        "fft_coefficient_real": 4.0279474090845063e-07,
+        "quadrature_absolute_difference": 8.687729681098561e-18,
+        "quadrature_internal_error_estimate": 5.450796783501927e-16
+      }
+    ],
+    "two_dimensional_reference_cutoff": 640,
+    "two_dimensional_reference_operator_difference": 2.356745448554892e-09,
+    "scope": "Numerical refinement checks, not certified Fourier-tail or rounding intervals."
+  },
+  "matrix_checks": [
+    {
+      "N": 7,
+      "dimension": 3,
+      "kappa": 0.125,
+      "full_product_operator_norm": 0.024303237196944466,
+      "full_commutator_operator_norm": 0.04829303366060966,
+      "odd_kick_conjugacy_operator_error": 0.010304292795315566,
+      "trotter_upper_bound": 0.018487176948202136,
+      "hermiticity_entry_error": 2.085283531640722e-16,
+      "Fourier_refinement_operator_difference": 1.2799097895542843e-15,
+      "rounding_scope": "Double precision; no interval certification.",
+      "seconds": 0.35973351699976774,
+      "spacing_min": 0.9976085192471709,
+      "spacing_mean": 0.9999999999999999,
+      "spacing_fraction_below_0_01": 0.0,
+      "Pell_period": 3,
+      "unperturbed_return_phase_real": -2.9360953657646983e-16,
+      "unperturbed_return_phase_imag": -0.9999999999999997,
+      "actual_normalized_return_modulus": 0.9999500816620728,
+      "phase_corrected_return_error": 4.9918360159252775e-05
+    },
+    {
+      "N": 41,
+      "dimension": 20,
+      "kappa": 0.125,
+      "full_product_operator_norm": 0.008933592747947652,
+      "full_commutator_operator_norm": 0.009636732562166,
+      "odd_kick_conjugacy_operator_error": 0.11394010328144269,
+      "trotter_upper_bound": 0.12655740185157066,
+      "hermiticity_entry_error": 8.367667900095181e-17,
+      "Fourier_refinement_operator_difference": 5.310130862861322e-15,
+      "rounding_scope": "Double precision; no interval certification.",
+      "seconds": 0.444596924000507,
+      "spacing_min": 0.004795548168483599,
+      "spacing_mean": 1.0,
+      "spacing_fraction_below_0_01": 0.05,
+      "Pell_period": 5,
+      "unperturbed_return_phase_real": 1.0,
+      "unperturbed_return_phase_imag": -7.949370328663719e-17,
+      "actual_normalized_return_modulus": 0.9950802618323323,
+      "phase_corrected_return_error": 0.004919765762749958
+    },
+    {
+      "N": 127,
+      "dimension": 63,
+      "kappa": 0.125,
+      "full_product_operator_norm": 0.0008886838730184735,
+      "full_commutator_operator_norm": 0.0009314079137191327,
+      "odd_kick_conjugacy_operator_error": 0.06004336236500768,
+      "trotter_upper_bound": 0.11736467375293665,
+      "hermiticity_entry_error": 6.955154644540095e-17,
+      "Fourier_refinement_operator_difference": 1.1091379198791245e-14,
+      "rounding_scope": "Double precision; no interval certification.",
+      "seconds": 0.524541495999074,
+      "spacing_min": 0.9259615170181301,
+      "spacing_mean": 1.0000000000000002,
+      "spacing_fraction_below_0_01": 0.0
+    },
+    {
+      "N": 239,
+      "dimension": 119,
+      "kappa": 0.125,
+      "full_product_operator_norm": 0.0001173676442741907,
+      "full_commutator_operator_norm": 0.00011857068388821561,
+      "odd_kick_conjugacy_operator_error": 0.027783121184977996,
+      "trotter_upper_bound": 0.05291309401858409,
+      "hermiticity_entry_error": 5.551219026988034e-17,
+      "Fourier_refinement_operator_difference": 1.7246696627257467e-14,
+      "rounding_scope": "Double precision; no interval certification.",
+      "seconds": 0.6601776650004467,
+      "spacing_min": 3.9887400275606666e-05,
+      "spacing_mean": 1.0000000000000002,
+      "spacing_fraction_below_0_01": 0.6890756302521008,
+      "Pell_period": 7,
+      "unperturbed_return_phase_real": -2.811508715925123e-15,
+      "unperturbed_return_phase_imag": -0.9999999999999993,
+      "actual_normalized_return_modulus": 0.9999401068148053,
+      "phase_corrected_return_error": 5.989319746776103e-05
+    }
+  ]
+}

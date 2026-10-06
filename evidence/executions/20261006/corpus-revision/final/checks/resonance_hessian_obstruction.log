@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "hessian_cases": 200,
+  "phase_cases": 36,
+  "negative_control": {
+    "g": "4*b_(1,0)-b_(2,0)",
+    "Hessian_at_zero": "zero",
+    "Gamma_over_pi_squared": 25600
+  }
+}

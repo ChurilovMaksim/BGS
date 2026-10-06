@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "matrix": [
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "radius": 8,
+  "basis": "complex_fourier",
+  "variables": 144,
+  "dimension": 288,
+  "orbit_equations": 1475,
+  "equation_sha256": "7462bc1a522a57741028efd6642710fa50aa271b27f21bfc6a683f578aee53f4",
+  "status": "CERTIFICATE",
+  "remaining": [],
+  "search": {
+    "failed_trials": 241,
+    "rounds": 5,
+    "elapsed_seconds": 7.413807
+  },
+  "scope": "Exact real-algebra nondegeneracy of the specified real Fourier box, arbitrary phases; not positive BGS."
+}

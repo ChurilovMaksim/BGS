@@ -1,0 +1,167 @@
+{
+  "producer": "computations/verification/return_local_limits.py",
+  "source_sha256": "f8d0a8162f39658a3570efbc3970d804255dc2e2b0820463d1223810e53eafbb",
+  "input_commit": null,
+  "dirty": null,
+  "upstream_commit": null,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "exact": {
+    "rational_window_cases": 144,
+    "independent_brute_cases": 36,
+    "scope": "D=24,60,180,480; K=1,3,7; alpha=0,1/3,2/3,1; L=1/2,1,2",
+    "intensity_loss_examples": [
+      {
+        "D": 24,
+        "mean_count": "1",
+        "void_probability": "68531/117504",
+        "background_void": "2/3",
+        "cloud_hit_bound": "289/2304"
+      },
+      {
+        "D": 60,
+        "mean_count": "1",
+        "void_probability": "2804363/4428000",
+        "background_void": "2/3",
+        "cloud_hit_bound": "1801/36000"
+      },
+      {
+        "D": 180,
+        "mean_count": "1",
+        "void_probability": "156815881/235224000",
+        "background_void": "2/3",
+        "cloud_hit_bound": "16201/972000"
+      },
+      {
+        "D": 480,
+        "mean_count": "1",
+        "void_probability": "11759385283/17750016000",
+        "background_void": "2/3",
+        "cloud_hit_bound": "115201/18432000"
+      }
+    ]
+  },
+  "unfolding": {
+    "clock_transport": [
+      {
+        "D": 256,
+        "K": 5,
+        "inverse_residual": 2.220446049250313e-16,
+        "moments": [
+          {
+            "r": 1,
+            "error": 2.1677797545656835e-16,
+            "bound": 0.3067961575771282
+          },
+          {
+            "r": 2,
+            "error": 2.394923822510486e-16,
+            "bound": 0.6135923151542564
+          },
+          {
+            "r": 3,
+            "error": 5.579239908607368e-16,
+            "bound": 0.9203884727313846
+          },
+          {
+            "r": 4,
+            "error": 7.634754316485563e-17,
+            "bound": 1.2271846303085128
+          }
+        ]
+      },
+      {
+        "D": 1024,
+        "K": 11,
+        "inverse_residual": 1.1102230246251565e-16,
+        "moments": [
+          {
+            "r": 1,
+            "error": 1.4579316239745695e-15,
+            "bound": 0.1687378866674205
+          },
+          {
+            "r": 2,
+            "error": 3.900351275818947e-16,
+            "bound": 0.337475773334841
+          },
+          {
+            "r": 3,
+            "error": 2.875457875277858e-16,
+            "bound": 0.5062136600022615
+          },
+          {
+            "r": 4,
+            "error": 6.285380986259738e-16,
+            "bound": 0.674951546669682
+          }
+        ]
+      },
+      {
+        "D": 4096,
+        "K": 17,
+        "inverse_residual": 2.220446049250313e-16,
+        "moments": [
+          {
+            "r": 1,
+            "error": 5.447031714567174e-16,
+            "bound": 0.06519418348513975
+          },
+          {
+            "r": 2,
+            "error": 1.7711390765716741e-16,
+            "bound": 0.1303883669702795
+          },
+          {
+            "r": 3,
+            "error": 1.6614279564202982e-16,
+            "bound": 0.19558255045541922
+          },
+          {
+            "r": 4,
+            "error": 4.035796046010454e-17,
+            "bound": 0.260776733940559
+          }
+        ]
+      }
+    ],
+    "jacobian_correct_mean": 0.33333333333333326,
+    "jacobian_omitted_mean": 0.41666666666666663,
+    "cue_kernel": [
+      {
+        "D": 32,
+        "sup_error": 0.0018224781256612615
+      },
+      {
+        "D": 64,
+        "sup_error": 0.00045082506008525813
+      },
+      {
+        "D": 128,
+        "sup_error": 0.00011241022971573977
+      }
+    ],
+    "arithmetic": "float64/complex128; tolerances and Riemann bounds, not intervals"
+  },
+  "free_brownian_gap": {
+    "symbolic_derivative_zero": true,
+    "endpoint_coefficient": "1/(6*pi)",
+    "wolfram_compared_values": [
+      {
+        "t": 1,
+        "gap_lower_bound": 0.3910022189557706
+      },
+      {
+        "t": 2,
+        "gap_lower_bound": 0.18169011381620936
+      },
+      {
+        "t": 3,
+        "gap_lower_bound": 0.05766888562243733
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "finite exact edge-gap criteria, not the all-N proof or a computed Lie rank",
+  "arithmetic": "Z[x]/Phi_(4N)(x)",
+  "cases": [
+    {
+      "N": 3,
+      "cyclotomic_degree": 4,
+      "unit_steps": 2,
+      "exact_nonzero_gaps_checked": 6,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 5,
+      "cyclotomic_degree": 8,
+      "unit_steps": 4,
+      "exact_nonzero_gaps_checked": 20,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 7,
+      "cyclotomic_degree": 12,
+      "unit_steps": 6,
+      "exact_nonzero_gaps_checked": 42,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 9,
+      "cyclotomic_degree": 12,
+      "unit_steps": 6,
+      "exact_nonzero_gaps_checked": 54,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 11,
+      "cyclotomic_degree": 20,
+      "unit_steps": 10,
+      "exact_nonzero_gaps_checked": 110,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 15,
+      "cyclotomic_degree": 16,
+      "unit_steps": 8,
+      "exact_nonzero_gaps_checked": 120,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 21,
+      "cyclotomic_degree": 24,
+      "unit_steps": 12,
+      "exact_nonzero_gaps_checked": 252,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    },
+    {
+      "N": 25,
+      "cyclotomic_degree": 40,
+      "unit_steps": 20,
+      "exact_nonzero_gaps_checked": 500,
+      "distinct_squared_gaps_for_every_step": true,
+      "pure_cosine_negative_control": true
+    }
+  ],
+  "total_unit_steps": 68,
+  "total_gaps": 1104
+}

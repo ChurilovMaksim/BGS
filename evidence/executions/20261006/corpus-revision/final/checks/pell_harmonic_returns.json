@@ -1,0 +1,197 @@
+{
+  "scope": "Finite exact diagram/lattice checks and floating return-matrix controls; not an asymptotic proof.",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "exact_diagrams": {
+    "enumerated_counts": [
+      {
+        "m": 1,
+        "ell": 0,
+        "noncrossing": 1
+      },
+      {
+        "m": 1,
+        "ell": 1,
+        "noncrossing": 0
+      },
+      {
+        "m": 2,
+        "ell": 0,
+        "noncrossing": 1
+      },
+      {
+        "m": 2,
+        "ell": 1,
+        "noncrossing": 1
+      },
+      {
+        "m": 2,
+        "ell": 2,
+        "noncrossing": 0
+      },
+      {
+        "m": 3,
+        "ell": 0,
+        "noncrossing": 1
+      },
+      {
+        "m": 3,
+        "ell": 1,
+        "noncrossing": 3
+      },
+      {
+        "m": 3,
+        "ell": 2,
+        "noncrossing": 3
+      },
+      {
+        "m": 3,
+        "ell": 3,
+        "noncrossing": 0
+      },
+      {
+        "m": 4,
+        "ell": 0,
+        "noncrossing": 1
+      },
+      {
+        "m": 4,
+        "ell": 1,
+        "noncrossing": 6
+      },
+      {
+        "m": 4,
+        "ell": 2,
+        "noncrossing": 16
+      },
+      {
+        "m": 4,
+        "ell": 3,
+        "noncrossing": 16
+      },
+      {
+        "m": 4,
+        "ell": 4,
+        "noncrossing": 0
+      },
+      {
+        "m": 5,
+        "ell": 0,
+        "noncrossing": 1
+      },
+      {
+        "m": 5,
+        "ell": 1,
+        "noncrossing": 10
+      },
+      {
+        "m": 5,
+        "ell": 2,
+        "noncrossing": 50
+      },
+      {
+        "m": 5,
+        "ell": 3,
+        "noncrossing": 125
+      },
+      {
+        "m": 5,
+        "ell": 4,
+        "noncrossing": 125
+      }
+    ],
+    "exact_ordered_Weyl_words": 191304,
+    "rational_recurrence_checks": 144
+  },
+  "exact_lattice": {
+    "cyclic_integer_vectors": 2457,
+    "rational_lifting_cutoffs": [
+      {
+        "K": 19,
+        "R0": 7,
+        "degree": 16
+      },
+      {
+        "K": 31,
+        "R0": 9,
+        "degree": 27
+      },
+      {
+        "K": 61,
+        "R0": 15,
+        "degree": 56
+      },
+      {
+        "K": 127,
+        "R0": 25,
+        "degree": 121
+      }
+    ]
+  },
+  "exact_cliques": {
+    "exact_distinct_circle_subsets": 17812
+  },
+  "floating_matrices": [
+    {
+      "K": 3,
+      "m": 1,
+      "a": 1,
+      "coefficient_cutoff": 7,
+      "matrix_real": 0.86456582719068,
+      "matrix_imag": -0.21489963214699803,
+      "absolute_error": 1.8182606762186616e-10,
+      "analytic_truncation_bound": 3.1638904136077593e-09
+    },
+    {
+      "K": 3,
+      "m": 1,
+      "a": 2,
+      "coefficient_cutoff": 7,
+      "matrix_real": 0.9496661848201847,
+      "matrix_imag": -0.22112664063031975,
+      "absolute_error": 2.6139211371903857e-10,
+      "analytic_truncation_bound": 3.1638904136077593e-09
+    },
+    {
+      "K": 3,
+      "m": 2,
+      "a": 1,
+      "coefficient_cutoff": 7,
+      "matrix_real": 0.49670754248521903,
+      "matrix_imag": -0.3455936482455664,
+      "absolute_error": 4.987752719818112e-10,
+      "analytic_truncation_bound": 2.5152306308529032e-08
+    },
+    {
+      "K": 3,
+      "m": 2,
+      "a": 2,
+      "coefficient_cutoff": 7,
+      "matrix_real": 0.8125434354612153,
+      "matrix_imag": -0.3920693651348091,
+      "absolute_error": 4.494892106301265e-10,
+      "analytic_truncation_bound": 2.5152306308529032e-08
+    },
+    {
+      "K": 5,
+      "m": 1,
+      "a": 1,
+      "coefficient_cutoff": 5,
+      "matrix_real": 0.7836452666134543,
+      "matrix_imag": -0.04638835979120353,
+      "absolute_error": 8.035197731053755e-08,
+      "analytic_truncation_bound": 1.4113018661545142e-05
+    },
+    {
+      "K": 5,
+      "m": 1,
+      "a": 2,
+      "coefficient_cutoff": 5,
+      "matrix_real": 0.7892153259247515,
+      "matrix_imag": -0.05050496526462962,
+      "absolute_error": 6.85768070907517e-08,
+      "analytic_truncation_bound": 1.4113018661545142e-05
+    }
+  ],
+  "elapsed_seconds": 1.75635267799953
+}

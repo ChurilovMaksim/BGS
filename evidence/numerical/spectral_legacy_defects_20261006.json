@@ -1,0 +1,63 @@
+{
+  "inversions": [
+    {
+      "index": 2,
+      "levels": [
+        -0.6432799985672301,
+        -0.6381922518017393
+      ],
+      "unfolded": [
+        4.184026996507852,
+        4.157953333683147
+      ],
+      "difference": -0.02607366282470469
+    },
+    {
+      "index": 3,
+      "levels": [
+        -0.6381922518017393,
+        -0.6351306554399148
+      ],
+      "unfolded": [
+        4.157953333683147,
+        4.152402194998796
+      ],
+      "difference": -0.005551138684350754
+    },
+    {
+      "index": 103,
+      "levels": [
+        0.6873669116322614,
+        0.7931586898184865
+      ],
+      "unfolded": [
+        104.75967308914869,
+        103.89239892209474
+      ],
+      "difference": -0.8672741670539494
+    }
+  ],
+  "single_realization": {
+    "N": 199,
+    "K": 11,
+    "a": 139,
+    "matrix_dimension": 9,
+    "q_values_used": 1,
+    "goe_simulations": 1,
+    "seed": 20260901,
+    "rows": [
+      {
+        "L": 2,
+        "catmap_mean": 0.4691358024691357,
+        "goe_mean": 0.4444444444444444,
+        "descriptive_standardized_difference": 0.0
+      },
+      {
+        "L": 3,
+        "catmap_mean": 0.9876543209876544,
+        "goe_mean": 1.0617283950617284,
+        "descriptive_standardized_difference": 0.0
+      }
+    ]
+  }
+}

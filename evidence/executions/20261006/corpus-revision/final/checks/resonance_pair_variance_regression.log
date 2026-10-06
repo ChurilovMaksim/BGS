@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "clock",
+      "dimension": 9,
+      "L": "7/3",
+      "exact_variance": "2/9",
+      "fourier_partial_variance": 0.2219940219369459,
+      "pair_statistics": [
+        {
+          "scale": 0.7,
+          "direct": 0.20989069439400332,
+          "fourier": 0.2098906943940032
+        },
+        {
+          "scale": 2.0,
+          "direct": 0.7179052073204689,
+          "fourier": 0.7179052073204689
+        },
+        {
+          "scale": 7.0,
+          "direct": 0.8883215642189289,
+          "fourier": 0.8883215642189289
+        }
+      ]
+    },
+    {
+      "case": "triple_clock",
+      "dimension": 12,
+      "L": "5/2",
+      "exact_variance": "5/4",
+      "fourier_partial_variance": 1.2490894761152316,
+      "pair_statistics": [
+        {
+          "scale": 0.7,
+          "direct": 1.6119702897161756,
+          "fourier": 1.6119702897161754
+        },
+        {
+          "scale": 2.0,
+          "direct": 0.7427938996780795,
+          "fourier": 0.7427938996780796
+        },
+        {
+          "scale": 7.0,
+          "direct": 0.9108679834167819,
+          "fourier": 0.9108679834167818
+        }
+      ]
+    },
+    {
+      "case": "nonuniform_with_multiplicity",
+      "dimension": 6,
+      "L": "11/5",
+      "exact_variance": "213/175",
+      "fourier_partial_variance": 1.2169400001082056,
+      "pair_statistics": [
+        {
+          "scale": 0.7,
+          "direct": 0.7731028877837192,
+          "fourier": 0.773102887783719
+        },
+        {
+          "scale": 2.0,
+          "direct": 0.8095835613252724,
+          "fourier": 0.8095835613252724
+        },
+        {
+          "scale": 7.0,
+          "direct": 0.8333332252953864,
+          "fourier": 0.8333332252953862
+        }
+      ]
+    },
+    {
+      "case": "wide_wrapping_window",
+      "dimension": 4,
+      "L": "13/4",
+      "exact_variance": "223/528",
+      "fourier_partial_variance": 0.4222470881012901,
+      "pair_statistics": [
+        {
+          "scale": 0.7,
+          "direct": 0.5607513345479531,
+          "fourier": 0.560751334547953
+        },
+        {
+          "scale": 2.0,
+          "direct": 0.7356926445251812,
+          "fourier": 0.735692644525181
+        },
+        {
+          "scale": 7.0,
+          "direct": 0.7499999999999875,
+          "fourier": 0.7499999999999873
+        }
+      ]
+    }
+  ],
+  "replicated_spectrum_trace_checks": 25,
+  "scope": "Exact rational finite variance identities and numerical Poisson/positivity checks only. No proof of the Pell normal form, Gaussian limit, or BGS is inferred.",
+  "source_sha256": "9dda92f0e78ec4a201d97a48462761b25b73221bc0a8716478d8084fe39f0678"
+}

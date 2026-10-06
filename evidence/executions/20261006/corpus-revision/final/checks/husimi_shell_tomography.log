@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "scope": "finite exact controls, not proof by enumeration",
+  "maximum_rank_parameter": 12,
+  "laguerre_families": 24,
+  "positive_root_count_method": "exact Sturm count and polynomial gcd",
+  "energy_state_pairs": 12,
+  "uniform_disk_bound_cases": 36,
+  "finite_probe_control": {
+    "probe_count": 4,
+    "orthogonal_states_constructed": 2,
+    "largest_fock_occupation": 5,
+    "negative_controls": 1
+  },
+  "source_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe",
+  "laguerre_anchors": [
+    {
+      "laguerre_degree": 1,
+      "ranks": [
+        1,
+        1
+      ],
+      "exact_positive_simple_roots": 1,
+      "trace_distance": 1
+    },
+    {
+      "laguerre_degree": 23,
+      "ranks": [
+        12,
+        12
+      ],
+      "exact_positive_simple_roots": 23,
+      "trace_distance": 1
+    },
+    {
+      "laguerre_degree": 24,
+      "ranks": [
+        13,
+        12
+      ],
+      "exact_positive_simple_roots": 24,
+      "trace_distance": 1
+    }
+  ],
+  "energy_anchors": [
+    {
+      "mean_energy": "1/2",
+      "n": 10,
+      "trace_distance_squared": "19/100",
+      "ranks": [
+        1,
+        1
+      ],
+      "bounds": [
+        {
+          "radius": "1/2",
+          "pi_squared_error_bound_squared": "19/95126814720000",
+          "positive_intensity_floor_verified": true
+        },
+        {
+          "radius": "1",
+          "pi_squared_error_bound_squared": "19/90720000",
+          "positive_intensity_floor_verified": true
+        },
+        {
+          "radius": "2",
+          "pi_squared_error_bound_squared": "77824/354375",
+          "positive_intensity_floor_verified": true
+        }
+      ]
+    },
+    {
+      "mean_energy": "3",
+      "n": 120,
+      "trace_distance_squared": "39/400",
+      "ranks": [
+        1,
+        1
+      ],
+      "bounds": [
+        {
+          "radius": "1/2",
+          "pi_squared_error_bound_squared": "1/30305970737061642296392665323432788183161168603200968968310167127986406183721278458704293594771184191117449103618590023799959675122622235834218852133232332163877643975497358965816025087727886969013047942701028952380184910298933492276961214464000000000000000000000000000000",
+          "positive_intensity_floor_verified": true
+        },
+        {
+          "radius": "1",
+          "pi_squared_error_bound_squared": "1/17152571572946479634841328343821468171160888033687255923835054749491368095499905100940702987876884567456814456136446386032139509203610568871534566959973461553756309028864000000000000000000000000000000",
+          "positive_intensity_floor_verified": true
+        },
+        {
+          "radius": "2",
+          "pi_squared_error_bound_squared": "5316911983139663491615228241121378304/51616642524348275192626167777407590225084744991873546066162552339956729513275853767716153693741659788231090189416200583593706280055503406672337092459201812744140625",
+          "positive_intensity_floor_verified": true
+        }
+      ]
+    }
+  ]
+}

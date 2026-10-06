@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "scope": "exact integer Riesz and Gram tests; numerical Toeplitz diagnostics separately labelled",
+  "exact_riesz_configurations": 9,
+  "exact_riesz_principal_minors": 72,
+  "exact_filter_gram_entries": 300,
+  "symbolic_root_examples": 4,
+  "riesz_records": [
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "lags": 1,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 4,
+      "lower_numerator": "338",
+      "lower_denominator": "1"
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "lags": 2,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 8,
+      "lower_numerator": "1098500",
+      "lower_denominator": "324640"
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "lags": 3,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 12,
+      "lower_numerator": "24134045000",
+      "lower_denominator": "5118019388416"
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "lags": 1,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 4,
+      "lower_numerator": "338",
+      "lower_denominator": "1"
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "lags": 2,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 8,
+      "lower_numerator": "1098500",
+      "lower_denominator": "324640"
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "lags": 3,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 12,
+      "lower_numerator": "24134045000",
+      "lower_denominator": "5118019388416"
+    },
+    {
+      "A": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "lags": 1,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 4,
+      "lower_numerator": "5408",
+      "lower_denominator": "1"
+    },
+    {
+      "A": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "lags": 2,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 8,
+      "lower_numerator": "1052872704",
+      "lower_denominator": "9732880"
+    },
+    {
+      "A": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "lags": 3,
+      "times": [
+        -2,
+        0,
+        1,
+        4
+      ],
+      "dimension": 12,
+      "lower_numerator": "6975071089459200",
+      "lower_denominator": "111377635193094400"
+    }
+  ],
+  "numerical_complementary_filter_records": [
+    {
+      "n": 8,
+      "soft_plus_min": 1.7406907257378301,
+      "soft_minus_min": 1.7406907257378301,
+      "joint_min": 476.11157858522034,
+      "proved_symbol_lower": 200
+    },
+    {
+      "n": 16,
+      "soft_plus_min": 0.1415018157774368,
+      "soft_minus_min": 0.1415018157774368,
+      "joint_min": 418.4265083220477,
+      "proved_symbol_lower": 200
+    },
+    {
+      "n": 32,
+      "soft_plus_min": 0.010206907365265225,
+      "soft_minus_min": 0.010206907365265225,
+      "joint_min": 399.4418209570069,
+      "proved_symbol_lower": 200
+    },
+    {
+      "n": 64,
+      "soft_plus_min": 0.000688469798456173,
+      "soft_minus_min": 0.000688469798456173,
+      "joint_min": 393.9765783905889,
+      "proved_symbol_lower": 200
+    },
+    {
+      "n": 128,
+      "soft_plus_min": 4.476439220078347e-05,
+      "soft_minus_min": 4.476439220078347e-05,
+      "joint_min": 392.50944482879885,
+      "proved_symbol_lower": 200
+    }
+  ],
+  "source_sha256": "a5ff2f67b7d3a69b4115cc74fcda3838955de6ae00db31fd7c9cd4dff0385d72"
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "finite exact controls, not the arbitrary-degree proof",
+  "two_radius": {
+    "coefficient_arrays": 66430,
+    "flat_at_both_radii": 6,
+    "one_radius_counterexample": true
+  },
+  "quadrature_covariance": {
+    "exact_gram_matrices": 54,
+    "exact_gram_entries": 1350,
+    "normalization": "Gram divided by pi squared",
+    "orbit_method": "exact norm descent, no iteration cutoff"
+  }
+}

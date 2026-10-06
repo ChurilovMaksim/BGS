@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "Exact symbolic/arithmetic regression only; no asymptotic proof audit, Lean certificate, or fixed-tau BGS claim.",
+  "three_orientation": {
+    "schur_identity": true,
+    "barrier_constant": "1/64"
+  },
+  "fourier_line": {
+    "recurrence_checks": 520,
+    "project_kappa_H2": "1/sqrt(2)"
+  },
+  "crossover": {
+    "variance": "1650797/4000000",
+    "F1": "7491/1000",
+    "lags": {
+      "-4": "0",
+      "-3": "0",
+      "-2": "0",
+      "-1": "-7/2000000",
+      "0": "66033/160000",
+      "1": "-7/2000000",
+      "2": "0",
+      "3": "0",
+      "4": "0"
+    }
+  },
+  "local_jet": {
+    "resonant_u3z3": "0 under a^2=(lambda^2+lambda^-2)/2",
+    "u6": "8*a*(lambda^2-lambda^4)"
+  }
+}

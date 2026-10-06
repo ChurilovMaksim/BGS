@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "scope": "numerical quadrature, not a rigorous interval certificate",
+  "radial_order": 96,
+  "angles": 1024,
+  "window": 25,
+  "chernoff_C_crosscheck": 2.9086102284062223,
+  "characteristic_exponents": [
+    {
+      "v": 0.25,
+      "limit_real": -0.515849944870686,
+      "limit_imaginary": -1.4984216588465233,
+      "finite": [
+        {
+          "n": 32,
+          "real": -0.5772082306695244,
+          "imaginary": -1.6323373655976614,
+          "distance_to_limit": 0.1473032781401308
+        },
+        {
+          "n": 128,
+          "real": -0.5359268539006435,
+          "imaginary": -1.5432376207924166,
+          "distance_to_limit": 0.04910756277125691
+        },
+        {
+          "n": 512,
+          "real": -0.5221491317865218,
+          "imaginary": -1.5126981359280705,
+          "distance_to_limit": 0.015604408148359113
+        },
+        {
+          "n": 2048,
+          "real": -0.5177616884315,
+          "imaginary": -1.5028047047238713,
+          "distance_to_limit": 0.004781825446965866
+        }
+      ]
+    },
+    {
+      "v": 0.5,
+      "limit_real": -1.8429755512133128,
+      "limit_imaginary": -2.5978822009097513,
+      "finite": [
+        {
+          "n": 32,
+          "real": -2.0438306745124946,
+          "imaginary": -2.7870228361996774,
+          "distance_to_limit": 0.27589302360408885
+        },
+        {
+          "n": 128,
+          "real": -1.9091494506172,
+          "imaginary": -2.662466828396044,
+          "distance_to_limit": 0.09246707019182003
+        },
+        {
+          "n": 512,
+          "real": -1.8638287645644156,
+          "imaginary": -2.618728181410963,
+          "distance_to_limit": 0.029485783186537773
+        },
+        {
+          "n": 2048,
+          "real": -1.8493249527738005,
+          "imaginary": -2.604344743027942,
+          "distance_to_limit": 0.009059765493969084
+        }
+      ]
+    },
+    {
+      "v": 1.0,
+      "limit_real": -5.433900948726987,
+      "limit_imaginary": -3.527673300314597,
+      "finite": [
+        {
+          "n": 32,
+          "real": -5.853563332488654,
+          "imaginary": -3.589614416688166,
+          "distance_to_limit": 0.42420893229884776
+        },
+        {
+          "n": 128,
+          "real": -5.576517580290233,
+          "imaginary": -3.555517256100036,
+          "distance_to_limit": 0.14530928900874857
+        },
+        {
+          "n": 512,
+          "real": -5.479757713276449,
+          "imaginary": -3.538126108104701,
+          "distance_to_limit": 0.04703301016989686
+        },
+        {
+          "n": 2048,
+          "real": -5.448074298484804,
+          "imaginary": -3.5312535029409764,
+          "distance_to_limit": 0.014618539400478569
+        }
+      ]
+    }
+  ],
+  "source_sha256": "8d229515e82e50f8696c8743d0e5227b098b7197df46abe7eeb77f2988c85548"
+}

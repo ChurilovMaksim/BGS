@@ -1,0 +1,86 @@
+{
+  "moment_curve": [
+    {
+      "K": 11,
+      "N": 199,
+      "a": 139,
+      "absolute_tolerance": 5e-10,
+      "full_curve_rerun": true,
+      "levels_checked_now": 198,
+      "matrix_dimension": 9,
+      "max_abs_mu4_deviation": 6.039613253960852e-14,
+      "mean_abs_mu4_deviation": 1.2748500347412908e-14,
+      "pass": true,
+      "reference_levels": 198
+    },
+    {
+      "K": 17,
+      "N": 3571,
+      "a": 2469,
+      "absolute_tolerance": 5e-10,
+      "full_curve_rerun": false,
+      "levels_checked_now": 12,
+      "matrix_dimension": 105,
+      "max_abs_mu4_deviation": 1.9229062786507711e-13,
+      "mean_abs_mu4_deviation": 6.992554683430778e-14,
+      "pass": true,
+      "reference_levels": 3570
+    }
+  ],
+  "producer": "computations/verification/twisted_jacobi_regression.py",
+  "reference_sha256": {
+    "closed_form.json": "f0003f946e2ef2b17e00f9830534f16f9fe432749eafe325d194af0c5aa88ffa",
+    "q_curve_N199.npz": "6c1b8bbe82073c0c0f1d0ce1f8808a45f0117c1826e980c7c09444edc64ca893",
+    "q_curve_N3571.npz": "c77758459ce1a7804199e8459bab7081b009bdc702b5d0b7a528e3234a366c33"
+  },
+  "scalar_formula": [
+    {
+      "K": 23,
+      "N": 461,
+      "a": 23,
+      "entries_checked_per_q": 100,
+      "matrix_dimension": 10,
+      "max_abs_deviation": 9.289756113649953e-12,
+      "max_relative_deviation": 1.4166352564530244e-11,
+      "pass": true,
+      "q_values_checked": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "relative_tolerance": 5e-10,
+      "worst_q_i_j": [
+        3,
+        7,
+        9
+      ]
+    },
+    {
+      "K": 29,
+      "N": 19489,
+      "a": 4523,
+      "entries_checked_per_q": 32,
+      "matrix_dimension": 336,
+      "max_abs_deviation": 2.3906481905486104e-09,
+      "max_relative_deviation": 1.2714969482034705e-10,
+      "pass": true,
+      "q_values_checked": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "relative_tolerance": 5e-10,
+      "worst_q_i_j": [
+        5,
+        304,
+        334
+      ]
+    }
+  ],
+  "scope": "Finite floating-point implementation/reference regression; not an asymptotic theorem and not a BGS local-statistics result.",
+  "verdict": "PASS"
+}

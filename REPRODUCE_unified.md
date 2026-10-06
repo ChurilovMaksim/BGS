@@ -243,7 +243,14 @@ python computations/maintenance/sync_return_sections.py --check
 ```
 
 The fixed-map frontier and finite-orbit resonance sections have separate
-generated TeX views. Check all three generator families before building:
+generated TeX views. The 6 October repaired-source build also passed all three
+synchronization checks with Pandoc 2.17.1.1; the fixed-map renderer normalizes
+its narrowly identified table-footer difference from 3.1.3. Pandoc 3.1.11.1
+changes additional heading/anchor output and is not byte-compatible with
+these generated views. A check failure with that version is not evidence
+that the mathematical source changed: use a verified compatible version
+rather than overwriting the generated chapters solely to silence the check.
+Check all three generator families before building:
 
 ```sh
 python computations/maintenance/sync_finite_orbit_section.py --check

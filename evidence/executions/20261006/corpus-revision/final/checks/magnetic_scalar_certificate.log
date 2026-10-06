@@ -1,0 +1,78 @@
+{
+  "producer": "computations/verification/magnetic_scalar_certificate.py",
+  "scope": "Exact cyclic convolution versus signed Weyl words, plus a floating scalar-matrix check.",
+  "histograms": [
+    {
+      "m": 1,
+      "canonical_histogram": [
+        0,
+        0,
+        4,
+        2,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "m": 2,
+      "canonical_histogram": [
+        10,
+        0,
+        -2,
+        -2,
+        -2,
+        -2,
+        0
+      ]
+    },
+    {
+      "m": 3,
+      "canonical_histogram": [
+        -4,
+        0,
+        22,
+        14,
+        14,
+        22,
+        0
+      ]
+    },
+    {
+      "m": 4,
+      "canonical_histogram": [
+        52,
+        0,
+        -22,
+        -24,
+        -24,
+        -22,
+        0
+      ]
+    },
+    {
+      "m": 5,
+      "canonical_histogram": [
+        -42,
+        0,
+        128,
+        102,
+        102,
+        128,
+        0
+      ]
+    },
+    {
+      "m": 6,
+      "canonical_histogram": [
+        282,
+        0,
+        -186,
+        -220,
+        -220,
+        -186,
+        0
+      ]
+    }
+  ]
+}

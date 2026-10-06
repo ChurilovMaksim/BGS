@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "finite regression; universal proof is in the manuscript",
+  "seed": 20260906,
+  "exact": {
+    "confluent_determinants": 120,
+    "two_exact_determinant_algorithms": true,
+    "nonpolynomial_leading_jet_determinants": 12,
+    "sharp_mixed_shell_multiplicity_examples": 64,
+    "negative_controls": 4
+  },
+  "numerical": {
+    "scope": "high-precision numerical diagnostic, not an exact certificate",
+    "decimal_precision": 85,
+    "product_terms": 190,
+    "shell_angle_pairs": 117,
+    "max_relative_intensity_residual": "5.69954859119e-85",
+    "max_relative_functional_equation_residual": "2.57324579505e-85",
+    "nonproportionality_control_abs_Q_at_one_third": "0.190672116514921"
+  },
+  "source_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028"
+}

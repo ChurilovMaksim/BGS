@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "scope": "floating-point finite regression of a proved no-alias bound",
+  "cases": 12,
+  "maximum_relative_error": 4.0945233123753043e-16,
+  "aliasing_negative_control_norm": 0.0,
+  "records": [
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 1,
+      "variance": 20484.149641892953,
+      "fourier_variance": 20484.149641892946,
+      "witness_determinant": 1,
+      "lower_bound": 3335.591306439297,
+      "relative_error": 3.5519939765051677e-16,
+      "hermiticity_error": 3.390964013198314e-15
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 2,
+      "variance": 238866.74481621681,
+      "fourier_variance": 238866.74481621673,
+      "witness_determinant": 5,
+      "lower_bound": 31995.76758161869,
+      "relative_error": 3.6552384651692826e-16,
+      "hermiticity_error": 2.0649183788363993e-15
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 1,
+      "variance": 20247.302921909097,
+      "fourier_variance": 20247.302921909093,
+      "witness_determinant": 1,
+      "lower_bound": 3335.591306439297,
+      "relative_error": 1.7967720545906129e-16,
+      "hermiticity_error": 5.7438508322218925e-15
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 2,
+      "variance": 248692.17373149414,
+      "fourier_variance": 248692.1737314942,
+      "witness_determinant": 5,
+      "lower_bound": 31995.76758161869,
+      "relative_error": 2.3405505706147617e-16,
+      "hermiticity_error": 5.508947580912017e-15
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 1,
+      "variance": 20484.14964189295,
+      "fourier_variance": 20484.149641892946,
+      "witness_determinant": 1,
+      "lower_bound": 3335.591306439297,
+      "relative_error": 1.775996988252584e-16,
+      "hermiticity_error": 2.162318392796686e-15
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 2,
+      "variance": 189146.0565306194,
+      "fourier_variance": 189146.05653061933,
+      "witness_determinant": 5,
+      "lower_bound": 31995.76758161869,
+      "relative_error": 3.077392253432713e-16,
+      "hermiticity_error": 1.661289426724273e-15
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 1,
+      "variance": 19615.71166861882,
+      "fourier_variance": 19615.711668618813,
+      "witness_determinant": 1,
+      "lower_bound": 3335.591306439297,
+      "relative_error": 3.7092498794338875e-16,
+      "hermiticity_error": 5.9036852479057435e-15
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 2,
+      "variance": 167717.61164550157,
+      "fourier_variance": 167717.61164550157,
+      "witness_determinant": 5,
+      "lower_bound": 31995.76758161869,
+      "relative_error": 0.0,
+      "hermiticity_error": 6.9168595929778294e-15
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 1,
+      "variance": 30732.053049488764,
+      "fourier_variance": 30732.053049488764,
+      "witness_determinant": 3,
+      "lower_bound": 11537.00455167205,
+      "relative_error": 0.0,
+      "hermiticity_error": 1.8470233702074306e-15
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "N": 181,
+      "times": 1,
+      "lags": 2,
+      "variance": 284319.59704584087,
+      "fourier_variance": 284319.597045841,
+      "witness_determinant": 8,
+      "lower_bound": 81588.71814105766,
+      "relative_error": 4.0945233123753043e-16,
+      "hermiticity_error": 3.328921705583479e-15
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 1,
+      "variance": 33258.418062649886,
+      "fourier_variance": 33258.41806264989,
+      "witness_determinant": 3,
+      "lower_bound": 11537.00455167205,
+      "relative_error": 2.1877040575043241e-16,
+      "hermiticity_error": 1.0849438937292272e-14
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "N": 181,
+      "times": 2,
+      "lags": 2,
+      "variance": 240149.29604924095,
+      "fourier_variance": 240149.29604924095,
+      "witness_determinant": 8,
+      "lower_bound": 81588.71814105766,
+      "relative_error": 0.0,
+      "hermiticity_error": 1.2396855693666475e-14
+    }
+  ],
+  "source_sha256": "946edc710c960c1a73fe5c0c4e8586c1948505b498dd60f148c160dff78e801a"
+}

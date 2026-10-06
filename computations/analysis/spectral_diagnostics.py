@@ -20,11 +20,13 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import numpy as np
+from scipy.special import ndtr
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "computations" / "python"))
@@ -53,7 +55,8 @@ def unfold_polynomial(eigenvalues: np.ndarray, degree: int = 11) -> np.ndarray:
     """Polynomially unfold one finite spectrum.
 
     This is retained solely to reproduce the historical finite diagnostic.
-    The resulting gaps are dependent and are not fed into an IID test.
+    KNOWN DEFECT: this can reverse level order. Never use it for active
+    diagnostics. Kept only for the explicit legacy-failure regression.
     """
     ordered = np.sort(np.asarray(eigenvalues, dtype=float))
     if len(ordered) < 4:
@@ -64,9 +67,43 @@ def unfold_polynomial(eigenvalues: np.ndarray, degree: int = 11) -> np.ndarray:
     return len(ordered) * np.polyval(coefficients, ordered)
 
 
-def normalized_gaps(eigenvalues: np.ndarray) -> np.ndarray:
-    unfolded = np.sort(unfold_polynomial(eigenvalues))
+def unfold_monotone(eigenvalues: np.ndarray, bandwidth_factor: float = 1.0,
+                    edge_fraction: float = 0.0) -> np.ndarray:
+    """Integrated Gaussian KDE, evaluated at sorted raw levels, never re-sorted.
+
+    U(x) = sum_j Phi((x-lambda_j)/h), h = 1.06*s*n**(-1/5)*factor,
+    where s is the sample standard deviation (ddof=1). Thus U'(x)>0
+    for finite x and h>0 in exact arithmetic. This is a smoothed CDF,
+    not the empirical CDF at its own nodes. Fit all levels before trimming
+    floor(n*edge_fraction) levels at each edge. No universality is inferred.
+    """
+    raw = np.asarray(eigenvalues, dtype=float)
+    if raw.ndim != 1 or len(raw) < 4 or not np.all(np.isfinite(raw)):
+        raise ValueError("at least four finite one-dimensional eigenvalues required")
+    if not np.isfinite(bandwidth_factor) or bandwidth_factor <= 0:
+        raise ValueError("bandwidth_factor must be finite and positive")
+    if not np.isfinite(edge_fraction) or not 0 <= edge_fraction < 0.5:
+        raise ValueError("edge_fraction must be in [0, 0.5)")
+    ordered = np.sort(raw)
+    bandwidth = 1.06 * float(ordered.std(ddof=1)) * len(ordered)**(-0.2) * bandwidth_factor
+    if not np.isfinite(bandwidth) or bandwidth <= 0:
+        raise ValueError("spectrum must have positive finite spread")
+    unfolded = ndtr((ordered[:, None] - ordered[None, :]) / bandwidth).sum(axis=1)
+    if not np.all(np.isfinite(unfolded)) or np.any(np.diff(unfolded) < 0):
+        raise ValueError("unfolding is nonfinite or reverses raw level order")
+    trim = int(len(ordered) * edge_fraction)
+    unfolded = unfolded[trim:len(ordered)-trim]
+    if len(unfolded) < 4:
+        raise ValueError("edge trimming must retain at least four levels")
+    return unfolded
+
+
+def normalized_gaps(eigenvalues: np.ndarray, bandwidth_factor: float = 1.0,
+                    edge_fraction: float = 0.0) -> np.ndarray:
+    unfolded = unfold_monotone(eigenvalues, bandwidth_factor, edge_fraction)
     gaps = np.diff(unfolded)
+    if not np.all(np.isfinite(gaps)) or np.any(gaps < 0):
+        raise ValueError("unfolded levels must preserve order")
     mean = float(gaps.mean())
     if not mean > 0.0:
         raise ValueError("non-positive mean unfolded gap")
@@ -94,7 +131,12 @@ def forward_window_count_variance(
     unfolded: np.ndarray, widths: list[int]
 ) -> dict[int, float]:
     """Historical edge-truncated forward-window statistic, named literally."""
-    ordered = np.sort(np.asarray(unfolded, dtype=float))
+    ordered = np.asarray(unfolded, dtype=float)
+    if (ordered.ndim != 1 or len(ordered) < 2 or not np.all(np.isfinite(ordered))
+            or np.any(np.diff(ordered) < 0)):
+        raise ValueError("unfolded levels must be finite and already nondecreasing")
+    if any(not np.isfinite(width) or width <= 0 for width in widths):
+        raise ValueError("window widths must be finite and positive")
     count = len(ordered)
     output: dict[int, float] = {}
     for width in widths:
@@ -181,12 +223,16 @@ def spacing_design(
     subgroup_order: int,
     eigenvalue: int,
     q_values: list[int],
+    bandwidth_factor: float = 1.0,
+    edge_fraction: float = 0.0,
 ) -> dict[str, object]:
     context = build_sector_context(prime, subgroup_order, eigenvalue)
+    if not q_values:
+        raise ValueError("at least one q value is required")
     gaps: list[float] = []
     for q in q_values:
         spectrum = np.linalg.eigvalsh(hermitian_matrix(context, q))
-        gaps.extend(normalized_gaps(spectrum).tolist())
+        gaps.extend(normalized_gaps(spectrum, bandwidth_factor, edge_fraction).tolist())
     array = np.asarray(gaps, dtype=float)
     return {
         "N": prime,
@@ -208,14 +254,18 @@ def matched_window_design(
     widths: list[int],
     goe_simulations: int,
     seed: int,
+    bandwidth_factor: float = 1.0,
+    edge_fraction: float = 0.0,
 ) -> dict[str, object]:
+    if not q_values or goe_simulations < 1:
+        raise ValueError("nonempty cat-map and GOE samples required")
     context = build_sector_context(prime, subgroup_order, eigenvalue)
     cat_samples = {width: [] for width in widths}
     dimension = len(context.character_indices)
     for q in q_values:
         spectrum = np.linalg.eigvalsh(hermitian_matrix(context, q))
         statistic = forward_window_count_variance(
-            unfold_polynomial(spectrum), widths
+            unfold_monotone(spectrum, bandwidth_factor, edge_fraction), widths
         )
         for width in widths:
             cat_samples[width].append(statistic[width])
@@ -226,7 +276,7 @@ def matched_window_design(
         random_matrix = rng.normal(size=(dimension, dimension))
         goe_matrix = (random_matrix + random_matrix.T) / 2.0
         statistic = forward_window_count_variance(
-            unfold_polynomial(np.linalg.eigvalsh(goe_matrix)), widths
+            unfold_monotone(np.linalg.eigvalsh(goe_matrix), bandwidth_factor, edge_fraction), widths
         )
         for width in widths:
             goe_samples[width].append(statistic[width])
@@ -237,16 +287,13 @@ def matched_window_design(
         goe = np.asarray(goe_samples[width], dtype=float)
         cat_mean = float(cat.mean())
         goe_mean = float(goe.mean())
-        cat_sem = float(cat.std(ddof=0) / np.sqrt(len(cat)))
-        goe_sem = float(goe.std(ddof=0) / np.sqrt(len(goe)))
-        scale = float(np.hypot(cat_sem, goe_sem))
-        standardized = abs(cat_mean - goe_mean) / scale if scale > 0 else 0.0
+        comparison = descriptive_difference(cat, goe)
         rows.append(
             {
                 "L": width,
                 "catmap_mean": cat_mean,
                 "goe_mean": goe_mean,
-                "descriptive_standardized_difference": float(standardized),
+                **comparison,
             }
         )
 
@@ -262,17 +309,51 @@ def matched_window_design(
     }
 
 
+def descriptive_difference(cat: np.ndarray, goe: np.ndarray) -> dict[str, object]:
+    """Descriptive SEM scaling only; q-values need not be independent.
+
+    Use sample variance (ddof=1), requiring >=2 values in each group.
+    Any zero denominator is undefined, including equal means. JSON null
+    with an explicit status prevents absence of spread from implying agreement.
+    """
+    cat, goe = np.asarray(cat, dtype=float), np.asarray(goe, dtype=float)
+    if any(a.ndim != 1 or not len(a) or not np.all(np.isfinite(a)) for a in (cat, goe)):
+        raise ValueError("finite nonempty one-dimensional samples required")
+    difference = abs(float(cat.mean()) - float(goe.mean()))
+    status = "insufficient_replicates"
+    scale = None
+    standardized = None
+    if min(len(cat), len(goe)) >= 2:
+        scale = float(np.hypot(cat.std(ddof=1)/np.sqrt(len(cat)),
+                               goe.std(ddof=1)/np.sqrt(len(goe))))
+        status = "zero_spread" if scale == 0 else "defined"
+        if scale > 0:
+            standardized = difference / scale
+    return {"absolute_mean_difference": difference,
+            "descriptive_sem_scale": scale,
+            "descriptive_standardized_difference": standardized,
+            "standardized_difference_status": status}
+
+
+def unfolding_metadata() -> dict[str, object]:
+    return {"method": "integrated Gaussian KDE", "bandwidth": "1.06 * sample_std(ddof=1) * n**(-1/5)",
+            "bandwidth_factor": 1.0, "edge_fraction": 0.0,
+            "order_contract": "sort raw levels only; reject transformed inversions",
+            "spread_contract": "ddof=1; fewer than two replicates or zero scale is null with status"}
+
+
 def spacing_report() -> dict[str, object]:
     return {
         "producer": "computations/analysis/spectral_diagnostics.py",
         "producer_command": "python computations/analysis/spectral_diagnostics.py spacing",
+        "unfolding": unfolding_metadata(),
         "interpretation": (
             "Descriptive finite spacing comparison only; not an IID KS test "
             "and not evidence for a limiting local law."
         ),
         "reference": "GOE Wigner surmise P(s)=(pi s/2) exp(-pi s^2/4)",
         "methodology_warning": (
-            "Polynomial unfolding and pooled gaps induce dependence; no "
+            "Smoothed unfolding and pooled gaps induce dependence; no "
             "textbook IID-KS critical value or pass/fail label is justified."
         ),
         "matrix_convention": (
@@ -290,6 +371,7 @@ def window_report() -> dict[str, object]:
     return {
         "producer": "computations/analysis/spectral_diagnostics.py",
         "producer_command": "python computations/analysis/spectral_diagnostics.py window",
+        "unfolding": unfolding_metadata(),
         "interpretation": (
             "Descriptive matched-GOE forward-window count variance; not "
             "stationary number variance Sigma^2(L) and not a hypothesis test."
@@ -336,23 +418,28 @@ def _assert_close(actual: Any, expected: Any, path: str = "$") -> None:
 
 
 def verify_committed_evidence() -> dict[str, object]:
+    # Reproducing numbers alone cannot certify the transformation contract.
+    subprocess.run([sys.executable, str(ROOT / "computations" / "verification" /
+                                       "spectral_diagnostics_contracts.py")],
+                   check=True, capture_output=True, text=True)
     spacing = spacing_report()
     window = window_report()
     spacing_expected = json.loads(
-        (ROOT / "evidence" / "numerical" / "goe_spacing.json").read_text(
+        (ROOT / "evidence" / "numerical" / "goe_spacing_monotone_v2.json").read_text(
             encoding="utf-8"
         )
     )
     window_expected = json.loads(
         (
-            ROOT / "evidence" / "numerical" / "matched_window_count_variance.json"
+            ROOT / "evidence" / "numerical" / "matched_window_count_variance_monotone_v2.json"
         ).read_text(encoding="utf-8")
     )
     _assert_close(spacing, spacing_expected, "$.spacing")
     _assert_close(window, window_expected, "$.window")
     return {
         "producer": "computations/analysis/spectral_diagnostics.py",
-        "mode": "verify-committed-evidence",
+        "mode": "verify-corrected-descriptive-evidence",
+        "interpretation": "Numerical regression only; historical polynomial outputs are superseded, not certified.",
         "verdict": "PASS",
     }
 
@@ -403,7 +490,7 @@ def main() -> None:
     else:
         result = verify_committed_evidence()
 
-    text = json.dumps(result, indent=2, sort_keys=True) + "\n"
+    text = json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n"
     if args.output is not None:
         args.output.write_text(text, encoding="utf-8")
     print(text, end="")

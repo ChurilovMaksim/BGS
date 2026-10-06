@@ -1,0 +1,1019 @@
+{
+  "scope": "Bounded exact checks and finite floating controls; not a BGS or priority certificate.",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "mpmath": "1.3.0",
+  "Penrose_partition": [
+    {
+      "vertices": 2,
+      "all_graphs": 2,
+      "connected_graphs": 1,
+      "tree_intervals": 1
+    },
+    {
+      "vertices": 3,
+      "all_graphs": 8,
+      "connected_graphs": 4,
+      "tree_intervals": 3
+    },
+    {
+      "vertices": 4,
+      "all_graphs": 64,
+      "connected_graphs": 38,
+      "tree_intervals": 16
+    },
+    {
+      "vertices": 5,
+      "all_graphs": 1024,
+      "connected_graphs": 728,
+      "tree_intervals": 125
+    },
+    {
+      "vertices": 6,
+      "all_graphs": 32768,
+      "connected_graphs": 26704,
+      "tree_intervals": 1296
+    }
+  ],
+  "word_phases": {
+    "seed": 197346,
+    "rows": [
+      {
+        "K": 6,
+        "N": 35,
+        "harmonic": 1,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 6,
+        "N": 35,
+        "harmonic": 2,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 6,
+        "N": 35,
+        "harmonic": 3,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 10,
+        "N": 1189,
+        "harmonic": 1,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 10,
+        "N": 1189,
+        "harmonic": 2,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 10,
+        "N": 1189,
+        "harmonic": 3,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 14,
+        "N": 40391,
+        "harmonic": 1,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 14,
+        "N": 40391,
+        "harmonic": 2,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 14,
+        "N": 40391,
+        "harmonic": 3,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 18,
+        "N": 1372105,
+        "harmonic": 1,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 18,
+        "N": 1372105,
+        "harmonic": 2,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      },
+      {
+        "K": 18,
+        "N": 1372105,
+        "harmonic": 3,
+        "seeded_ordered_word_checks": 360,
+        "constructed_central_words": 180
+      }
+    ]
+  },
+  "replica_charges": [
+    {
+      "replicas": 1,
+      "species": 0,
+      "complete_pairings": 0,
+      "nonzero_pairings": 0,
+      "histogram": {}
+    },
+    {
+      "replicas": 2,
+      "species": 2,
+      "complete_pairings": 4,
+      "nonzero_pairings": 4,
+      "histogram": {
+        "-2": 2,
+        "2": 2
+      }
+    },
+    {
+      "replicas": 3,
+      "species": 6,
+      "complete_pairings": 36,
+      "nonzero_pairings": 24,
+      "histogram": {
+        "-2": 12,
+        "0": 12,
+        "2": 12
+      }
+    },
+    {
+      "replicas": 4,
+      "species": 12,
+      "complete_pairings": 144,
+      "nonzero_pairings": 80,
+      "histogram": {
+        "-2": 40,
+        "0": 64,
+        "2": 40
+      }
+    },
+    {
+      "replicas": 5,
+      "species": 20,
+      "complete_pairings": 400,
+      "nonzero_pairings": 200,
+      "histogram": {
+        "-2": 100,
+        "0": 200,
+        "2": 100
+      }
+    },
+    {
+      "replicas": 6,
+      "species": 30,
+      "complete_pairings": 900,
+      "nonzero_pairings": 420,
+      "histogram": {
+        "-2": 210,
+        "0": 480,
+        "2": 210
+      }
+    },
+    {
+      "replicas": 7,
+      "species": 42,
+      "complete_pairings": 1764,
+      "nonzero_pairings": 784,
+      "histogram": {
+        "-2": 392,
+        "0": 980,
+        "2": 392
+      }
+    },
+    {
+      "replicas": 8,
+      "species": 56,
+      "complete_pairings": 3136,
+      "nonzero_pairings": 1344,
+      "histogram": {
+        "-2": 672,
+        "0": 1792,
+        "2": 672
+      }
+    },
+    {
+      "replicas": 9,
+      "species": 72,
+      "complete_pairings": 5184,
+      "nonzero_pairings": 2160,
+      "histogram": {
+        "-2": 1080,
+        "0": 3024,
+        "2": 1080
+      }
+    },
+    {
+      "replicas": 10,
+      "species": 90,
+      "complete_pairings": 8100,
+      "nonzero_pairings": 3300,
+      "histogram": {
+        "-2": 1650,
+        "0": 4800,
+        "2": 1650
+      }
+    },
+    {
+      "replicas": 11,
+      "species": 110,
+      "complete_pairings": 12100,
+      "nonzero_pairings": 4840,
+      "histogram": {
+        "-2": 2420,
+        "0": 7260,
+        "2": 2420
+      }
+    },
+    {
+      "replicas": 12,
+      "species": 132,
+      "complete_pairings": 17424,
+      "nonzero_pairings": 6864,
+      "histogram": {
+        "-2": 3432,
+        "0": 10560,
+        "2": 3432
+      }
+    }
+  ],
+  "Bessel_constant_checks": [
+    {
+      "harmonic": 1,
+      "replicas": 1,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.01446460761021398,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 1,
+      "replicas": 2,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.014462645865084051,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 1,
+      "replicas": 3,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.014461992334029596,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 1,
+      "replicas": 7,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.01446124558342007,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 1,
+      "replicas": 31,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.014460812030973281,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 1,
+      "replicas": 100,
+      "allowed_r_epsilon": 0.016464296196241207,
+      "tree_criterion_value": 0.014460724780987037,
+      "relative_exponent_loss_bound": 0.1562500254958205
+    },
+    {
+      "harmonic": 2,
+      "replicas": 1,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.014442115849430897,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 2,
+      "replicas": 2,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.014441497703183674,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 2,
+      "replicas": 3,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.014441291692641215,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 2,
+      "replicas": 7,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.014441056266157083,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 2,
+      "replicas": 31,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.01444091957135588,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 2,
+      "replicas": 100,
+      "allowed_r_epsilon": 0.00925126382477471,
+      "tree_criterion_value": 0.014440892061770396,
+      "relative_exponent_loss_bound": 0.15625000080244703
+    },
+    {
+      "harmonic": 7,
+      "replicas": 1,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432670121718278,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    },
+    {
+      "harmonic": 7,
+      "replicas": 2,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432615289973562,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    },
+    {
+      "harmonic": 7,
+      "replicas": 3,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432597013026214,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    },
+    {
+      "harmonic": 7,
+      "replicas": 7,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432576125197726,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    },
+    {
+      "harmonic": 7,
+      "replicas": 31,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432563996816219,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    },
+    {
+      "harmonic": 7,
+      "replicas": 100,
+      "allowed_r_epsilon": 0.002756473166946212,
+      "tree_criterion_value": 0.014432561555981356,
+      "relative_exponent_loss_bound": 0.15625000000056147
+    }
+  ],
+  "physical_quartic_controls": [
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 1,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.9379086787108972,
+        -2.1177871156926182e-11
+      ],
+      "symmetrized_odd_trace": [
+        0.9387024943195834,
+        -1.6810374010480921e-06
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.2507132971818913,
+        -5.5126675099411876e-08
+      ],
+      "absolute_coefficient_error": 0.0007132971840214948
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 2,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.7706843904155638,
+        -2.6443296616181233e-06
+      ],
+      "symmetrized_odd_trace": [
+        0.7727112902881418,
+        -1.0518361172225824e-05
+      ],
+      "predicted_fourth_coefficient": -10.488456224396161,
+      "estimated_fourth_coefficient": [
+        -10.928564874195045,
+        -0.008376818115426517
+      ],
+      "absolute_coefficient_error": 0.4401883627602339
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 3,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.5473582972264377,
+        -1.9973833291619632e-05
+      ],
+      "symmetrized_odd_trace": [
+        0.5487773927125172,
+        -2.3897018070967837e-05
+      ],
+      "predicted_fourth_coefficient": -59.18073734637697,
+      "estimated_fourth_coefficient": [
+        -65.06754876964857,
+        -0.08909016572886584
+      ],
+      "absolute_coefficient_error": 5.887485523616219
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 4,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.32667835878806617,
+        -6.978569319269091e-05
+      ],
+      "symmetrized_odd_trace": [
+        0.3247365322271297,
+        -3.722221373805108e-05
+      ],
+      "predicted_fourth_coefficient": -193.76912448792325,
+      "estimated_fourth_coefficient": [
+        -231.3944863296009,
+        -0.5215381440069443
+      ],
+      "absolute_coefficient_error": 37.62897627829951
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 5,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.15469145051212346,
+        -0.00016235166093998311
+      ],
+      "symmetrized_odd_trace": [
+        0.1487213395225376,
+        -6.810727583166651e-05
+      ],
+      "predicted_fourth_coefficient": -480.6728112198081,
+      "estimated_fourth_coefficient": [
+        -650.2007742576585,
+        -2.5623020074693588
+      ],
+      "absolute_coefficient_error": 169.5473256743976
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 1,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.9841210171782498,
+        -2.5469580651205906e-14
+      ],
+      "symmetrized_odd_trace": [
+        0.9843403228098726,
+        -1.180979457392076e-07
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.25017791661101196,
+        -1.0109584866304379e-09
+      ],
+      "absolute_coefficient_error": 0.00017791661101483567
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 2,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.9377506314149073,
+        -4.5334252793939614e-08
+      ],
+      "symmetrized_odd_trace": [
+        0.9385451042602295,
+        -8.885512061348219e-07
+      ],
+      "predicted_fourth_coefficient": -10.488456224396161,
+      "estimated_fourth_coefficient": [
+        -10.594401979919743,
+        -0.001888422348584636
+      ],
+      "absolute_coefficient_error": 0.10596258420984818
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 3,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.8645470634029992,
+        -3.902378148514513e-07
+      ],
+      "symmetrized_odd_trace": [
+        0.8660461436042375,
+        -2.7059783801550315e-06
+      ],
+      "predicted_fourth_coefficient": -59.18073734637697,
+      "estimated_fourth_coefficient": [
+        -60.5287231988423,
+        -0.01763196624904631
+      ],
+      "absolute_coefficient_error": 1.3481011626285635
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 4,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.7701545392742318,
+        -1.6297434543721695e-06
+      ],
+      "symmetrized_odd_trace": [
+        0.7721781951523979,
+        -5.552397940240571e-06
+      ],
+      "predicted_fourth_coefficient": -193.76912448792325,
+      "estimated_fourth_coefficient": [
+        -201.72202787677514,
+        -0.08266114193952641
+      ],
+      "absolute_coefficient_error": 7.953332960262552
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 5,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.6615869540941334,
+        -4.702519112558505e-06
+      ],
+      "symmetrized_odd_trace": [
+        0.6636484597333436,
+        -9.020624097308113e-06
+      ],
+      "predicted_fourth_coefficient": -480.6728112198081,
+      "estimated_fourth_coefficient": [
+        -512.259928237921,
+        -0.27765383173666175
+      ],
+      "absolute_coefficient_error": 31.588337296639025
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 1,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9960075908700347,
+        -3.548231686678166e-17
+      ],
+      "symmetrized_odd_trace": [
+        0.9960637736333194,
+        -7.594737168396511e-09
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.2500444529506446,
+        -2.2265340389993334e-11
+      ],
+      "absolute_coefficient_error": 4.445295064459678e-05
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 2,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9841107637083435,
+        -7.252614626982279e-10
+      ],
+      "symmetrized_odd_trace": [
+        0.984330138546561,
+        -5.98350588754625e-08
+      ],
+      "predicted_fourth_coefficient": -10.488456224396161,
+      "estimated_fourth_coefficient": [
+        -10.514700354715236,
+        -0.0004606071093850281
+      ],
+      "absolute_coefficient_error": 0.02624817203375879
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 3,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9645484473064847,
+        -6.454856296229439e-09
+      ],
+      "symmetrized_odd_trace": [
+        0.9650223116139256,
+        -1.9684860506766818e-07
+      ],
+      "predicted_fourth_coefficient": -59.18073734637697,
+      "estimated_fourth_coefficient": [
+        -59.510880639723176,
+        -0.004182563557495944
+      ],
+      "absolute_coefficient_error": 0.3301697865937919
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 4,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.937711359590753,
+        -2.824329135166269e-08
+      ],
+      "symmetrized_odd_trace": [
+        0.9385059932504958,
+        -4.5016961097840355e-07
+      ],
+      "predicted_fourth_coefficient": -193.76912448792325,
+      "estimated_fourth_coefficient": [
+        -195.68519844889872,
+        -0.01882461688689907
+      ],
+      "absolute_coefficient_error": 1.9161664306967583
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 1,
+      "replicas": 5,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9041310265785631,
+        -8.650487517705608e-08
+      ],
+      "symmetrized_odd_trace": [
+        0.9052800706783408,
+        -8.395187837745483e-07
+      ],
+      "predicted_fourth_coefficient": -480.6728112198081,
+      "estimated_fourth_coefficient": [
+        -488.1176171149808,
+        -0.059798353774293295
+      ],
+      "absolute_coefficient_error": 7.445046048206296
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 1,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.9379086786470483,
+        -3.84632051467497e-12
+      ],
+      "symmetrized_odd_trace": [
+        0.938534073416454,
+        1.7184176818776367e-06
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.25071346338269396,
+        -1.0012095162160743e-08
+      ],
+      "absolute_coefficient_error": 0.0007134633827642077
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 2,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.7692502180758062,
+        -1.322919852025942e-05
+      ],
+      "symmetrized_odd_trace": [
+        0.7713614706604595,
+        -1.409531535626128e-06
+      ],
+      "predicted_fourth_coefficient": -14.552574713193977,
+      "estimated_fourth_coefficient": [
+        -15.476028175507482,
+        -0.041986140774139126
+      ],
+      "absolute_coefficient_error": 0.9244074497081393
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 3,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.5403454297563333,
+        -0.00010120352508855479
+      ],
+      "symmetrized_odd_trace": [
+        0.5438422561709084,
+        -7.062191543949085e-05
+      ],
+      "predicted_fourth_coefficient": -83.56544827916386,
+      "estimated_fourth_coefficient": [
+        -96.54941811862984,
+        -0.4572610448385724
+      ],
+      "absolute_coefficient_error": 12.992019106177809
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 4,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.30938557821504165,
+        -0.0003549703069951998
+      ],
+      "symmetrized_odd_trace": [
+        0.3131574769403057,
+        -0.000306920125283233
+      ],
+      "predicted_fourth_coefficient": -275.05149426387953,
+      "estimated_fourth_coefficient": [
+        -364.1755269529055,
+        -2.801120694734179
+      ],
+      "absolute_coefficient_error": 89.16804068667786
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 5,
+      "epsilon": 0.08,
+      "symmetrized_full_trace": [
+        0.12627581036569274,
+        -0.0008029353006138468
+      ],
+      "symmetrized_odd_trace": [
+        0.12871243360789866,
+        -0.0007535108780217773
+      ],
+      "predicted_fourth_coefficient": -683.8787356596988,
+      "estimated_fourth_coefficient": [
+        -1145.6703559497494,
+        -15.523676601244302
+      ],
+      "absolute_coefficient_error": 462.05247007816143
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 1,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.9841210171781849,
+        -2.0970422856119815e-14
+      ],
+      "symmetrized_odd_trace": [
+        0.984284923641721,
+        1.1565619651213426e-07
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.25017791918887206,
+        -8.323744016421749e-10
+      ],
+      "absolute_coefficient_error": 0.00017791918887400258
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 2,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.9376503790835145,
+        -2.2682566456256182e-07
+      ],
+      "symmetrized_odd_trace": [
+        0.9382795201579248,
+        6.643411195631985e-07
+      ],
+      "predicted_fourth_coefficient": -14.552574713193977,
+      "estimated_fourth_coefficient": [
+        -14.770689265480083,
+        -0.009449553607214747
+      ],
+      "absolute_coefficient_error": 0.21831915166183732
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 3,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.8639746491833658,
+        -1.9619252228628615e-06
+      ],
+      "symmetrized_odd_trace": [
+        0.8652946016540561,
+        8.612242738308476e-07
+      ],
+      "predicted_fourth_coefficient": -83.56544827916386,
+      "estimated_fourth_coefficient": [
+        -86.40046206724737,
+        -0.08870364899061245
+      ],
+      "absolute_coefficient_error": 2.836401155684416
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 4,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.7683758443156248,
+        -8.24384844049748e-06
+      ],
+      "symmetrized_odd_trace": [
+        0.7704977728532969,
+        -2.1300468526026708e-06
+      ],
+      "predicted_fourth_coefficient": -275.05149426387953,
+      "estimated_fourth_coefficient": [
+        -292.0423775487757,
+        -0.4190987159173354
+      ],
+      "absolute_coefficient_error": 16.99605126300361
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 5,
+      "epsilon": 0.04,
+      "symmetrized_full_trace": [
+        0.657529662308831,
+        -2.3947562683576497e-05
+      ],
+      "symmetrized_odd_trace": [
+        0.66042772668617,
+        -1.3349974042573985e-05
+      ],
+      "predicted_fourth_coefficient": -683.8787356596988,
+      "estimated_fourth_coefficient": [
+        -752.5547463631618,
+        -1.4226759955267685
+      ],
+      "absolute_coefficient_error": 68.69074503257637
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 1,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9960075908700347,
+        -8.254307435034326e-17
+      ],
+      "symmetrized_odd_trace": [
+        0.9960490527766777,
+        7.3628856375024775e-09
+      ],
+      "predicted_fourth_coefficient": -0.25,
+      "estimated_fourth_coefficient": [
+        -0.2500444529506446,
+        -5.1796213143215146e-11
+      ],
+      "absolute_coefficient_error": 4.445295064462138e-05
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 2,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9841043210864195,
+        -3.6271634058117966e-09
+      ],
+      "symmetrized_odd_trace": [
+        0.984268479055953,
+        5.472670852818898e-08
+      ],
+      "predicted_fourth_coefficient": -14.552574713193977,
+      "estimated_fourth_coefficient": [
+        -14.606365674821602,
+        -0.0023035943243595383
+      ],
+      "absolute_coefficient_error": 0.05384026466907302
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 3,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9645102643638448,
+        -3.232359713223332e-08
+      ],
+      "symmetrized_odd_trace": [
+        0.964873343202068,
+        1.6156072046071826e-07
+      ],
+      "predicted_fourth_coefficient": -83.56544827916386,
+      "estimated_fourth_coefficient": [
+        -84.25283277249694,
+        -0.02094560208850703
+      ],
+      "absolute_coefficient_error": 0.6877035407220404
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 4,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9375862629725185,
+        -1.4168314384463563e-07
+      ],
+      "symmetrized_odd_trace": [
+        0.9382163352577565,
+        3.0788432256500034e-07
+      ],
+      "predicted_fourth_coefficient": -275.05149426387953,
+      "estimated_fourth_coefficient": [
+        -279.06970826262875,
+        -0.09444673882289178
+      ],
+      "absolute_coefficient_error": 4.019323814551206
+    },
+    {
+      "K": 10,
+      "N": 1189,
+      "harmonic": 2,
+      "replicas": 5,
+      "epsilon": 0.02,
+      "symmetrized_full_trace": [
+        0.9038251795333052,
+        -4.3491745826607536e-07
+      ],
+      "symmetrized_odd_trace": [
+        0.9047793106850851,
+        4.184836992792741e-07
+      ],
+      "predicted_fourth_coefficient": -683.8787356596988,
+      "estimated_fourth_coefficient": [
+        -699.5767270211107,
+        -0.30074777464889124
+      ],
+      "absolute_coefficient_error": 15.700872014220103
+    }
+  ],
+  "S_harmonic_1": "1.62212749867922952449036680680889064369236803",
+  "S_series_tail_bound": "6.67000723459e-77",
+  "elapsed_seconds": 9.579961471999923
+}

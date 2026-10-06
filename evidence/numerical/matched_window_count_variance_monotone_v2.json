@@ -1,0 +1,80 @@
+{
+  "design": {
+    "K": 29,
+    "N": 19489,
+    "a": 4523,
+    "goe_simulations": 60,
+    "matrix_dimension": 336,
+    "q_values_used": 25,
+    "rows": [
+      {
+        "L": 1,
+        "absolute_mean_difference": 0.01376612103174596,
+        "catmap_mean": 0.338764526643991,
+        "descriptive_sem_scale": 0.006355420830093736,
+        "descriptive_standardized_difference": 2.1660439803705214,
+        "goe_mean": 0.35253064767573694,
+        "standardized_difference_status": "defined"
+      },
+      {
+        "L": 2,
+        "absolute_mean_difference": 0.018417215844671264,
+        "catmap_mean": 0.5078064767573696,
+        "descriptive_sem_scale": 0.014575125881487194,
+        "descriptive_standardized_difference": 1.2636059540359892,
+        "goe_mean": 0.5262236926020408,
+        "standardized_difference_status": "defined"
+      },
+      {
+        "L": 3,
+        "absolute_mean_difference": 0.005997496220710441,
+        "catmap_mean": 0.6304283588435373,
+        "descriptive_sem_scale": 0.030031828609918338,
+        "descriptive_standardized_difference": 0.1997046632961172,
+        "goe_mean": 0.6364258550642478,
+        "standardized_difference_status": "defined"
+      },
+      {
+        "L": 5,
+        "absolute_mean_difference": 0.030953680083144475,
+        "catmap_mean": 0.8843792517006803,
+        "descriptive_sem_scale": 0.06043484082866209,
+        "descriptive_standardized_difference": 0.5121827022081649,
+        "goe_mean": 0.8534255716175358,
+        "standardized_difference_status": "defined"
+      },
+      {
+        "L": 8,
+        "absolute_mean_difference": 0.10416861536281163,
+        "catmap_mean": 1.4962701955782314,
+        "descriptive_sem_scale": 0.14959598073793637,
+        "descriptive_standardized_difference": 0.6963329820023386,
+        "goe_mean": 1.3921015802154197,
+        "standardized_difference_status": "defined"
+      },
+      {
+        "L": 12,
+        "absolute_mean_difference": 0.18752489016439933,
+        "catmap_mean": 3.0240500992063493,
+        "descriptive_sem_scale": 0.273389531051177,
+        "descriptive_standardized_difference": 0.6859256440558278,
+        "goe_mean": 2.83652520904195,
+        "standardized_difference_status": "defined"
+      }
+    ],
+    "seed": 20260901
+  },
+  "interpretation": "Descriptive matched-GOE forward-window count variance; not stationary number variance Sigma^2(L) and not a hypothesis test.",
+  "matrix_convention": "Cat-map eigenvalues are taken from the full complex Hermitian matrix M+M^*. Entrywise real projection is forbidden.",
+  "methodology_warning": "Windows start at eigenvalues and are edge-truncated. Cat-map and GOE samples use the same algorithm, so this is a matched diagnostic only.",
+  "producer": "computations/analysis/spectral_diagnostics.py",
+  "producer_command": "python computations/analysis/spectral_diagnostics.py window",
+  "unfolding": {
+    "bandwidth": "1.06 * sample_std(ddof=1) * n**(-1/5)",
+    "bandwidth_factor": 1.0,
+    "edge_fraction": 0.0,
+    "method": "integrated Gaussian KDE",
+    "order_contract": "sort raw levels only; reject transformed inversions",
+    "spread_contract": "ddof=1; fewer than two replicates or zero scale is null with status"
+  }
+}

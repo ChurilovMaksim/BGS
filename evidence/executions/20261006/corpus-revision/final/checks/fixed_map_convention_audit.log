@@ -1,0 +1,107 @@
+{
+  "conventions": [
+    {
+      "N": 5,
+      "correct_commutator_error": 2.482534153247273e-16,
+      "covariance_error": 3.6848937326742525e-16,
+      "raw_zero_edges": [
+        2
+      ],
+      "ordinary_zero_edges": [
+        2
+      ]
+    },
+    {
+      "N": 7,
+      "correct_commutator_error": 2.2887833992611187e-16,
+      "covariance_error": 5.15614684843089e-16,
+      "raw_zero_edges": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "ordinary_zero_edges": [
+        3
+      ]
+    },
+    {
+      "N": 9,
+      "correct_commutator_error": 4.0412728104402656e-16,
+      "covariance_error": 9.458075874302824e-16,
+      "raw_zero_edges": [
+        4
+      ],
+      "ordinary_zero_edges": [
+        4
+      ]
+    },
+    {
+      "N": 11,
+      "correct_commutator_error": 5.900916318210353e-16,
+      "covariance_error": 5.993163319327609e-16,
+      "raw_zero_edges": [
+        5
+      ],
+      "ordinary_zero_edges": [
+        5
+      ]
+    },
+    {
+      "N": 21,
+      "correct_commutator_error": 7.2815418263566e-16,
+      "covariance_error": 1.537459350250552e-15,
+      "raw_zero_edges": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19
+      ],
+      "ordinary_zero_edges": [
+        10
+      ]
+    }
+  ],
+  "classical": {
+    "fixed_hessian_coefficients": [
+      "-19894/125",
+      "-19306/125",
+      "24594/125",
+      "24606/125"
+    ],
+    "period_three_polynomial": true,
+    "period_one_curvature": 1
+  },
+  "sharpness": [
+    {
+      "N": 8,
+      "clock_pair": 1.0,
+      "perturbed_pair": 0.0,
+      "N_operator_error": 1.255345531645521
+    },
+    {
+      "N": 16,
+      "clock_pair": 1.0,
+      "perturbed_pair": 0.0,
+      "N_operator_error": 1.256314104290203
+    },
+    {
+      "N": 32,
+      "clock_pair": 1.0,
+      "perturbed_pair": 0.0,
+      "N_operator_error": 1.2565563174802203
+    },
+    {
+      "N": 64,
+      "clock_pair": 1.0,
+      "perturbed_pair": 0.0,
+      "N_operator_error": 1.2566168751552165
+    }
+  ]
+}

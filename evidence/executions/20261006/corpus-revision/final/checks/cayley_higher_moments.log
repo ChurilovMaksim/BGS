@@ -1,0 +1,53 @@
+{
+  "cases": 32,
+  "ordered_tuples": 6440,
+  "normalized_orbits": 1242,
+  "nonzero_resultants": 1183,
+  "orbit_valuation_checks": 13293,
+  "quantitative_rate_kernels": {
+    "balanced_moment_majorants": 60,
+    "all_order_budget_sums": 384,
+    "integer_cutoffs": 4160,
+    "density_floor_bounds": 2012
+  },
+  "counterexamples": [
+    {
+      "K": 11,
+      "p": 199,
+      "orders": [
+        3,
+        4,
+        6
+      ],
+      "zero_counts": [
+        6,
+        270,
+        12250
+      ],
+      "balanced_counts": [
+        0,
+        270,
+        10900
+      ]
+    },
+    {
+      "K": 13,
+      "p": 521,
+      "orders": [
+        3,
+        4,
+        6
+      ],
+      "zero_counts": [
+        6,
+        396,
+        22650
+      ],
+      "balanced_counts": [
+        0,
+        396,
+        19920
+      ]
+    }
+  ]
+}

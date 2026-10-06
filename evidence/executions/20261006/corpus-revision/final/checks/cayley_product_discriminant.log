@@ -1,0 +1,13 @@
+K=5: degree=6, split_disc={}
+K=7: degree=12, split_disc={}
+K=11: degree=30, split_disc={23: 20, 89: 4}
+  p=23: E=552, Delta_x=192, v_p(Disc)=20, maxmult=8
+  p=67: E=360, Delta_x=0, v_p(Disc)=0, maxmult=4
+  p=89: E=376, Delta_x=16, v_p(Disc)=4, maxmult=4
+K=13: degree=42, split_disc={53: 12, 79: 12, 313: 4}
+  p=53: E=656, Delta_x=128, v_p(Disc)=12, maxmult=8
+  p=79: E=624, Delta_x=96, v_p(Disc)=12, maxmult=6
+  p=131: E=528, Delta_x=0, v_p(Disc)=0, maxmult=4
+  p=157: E=528, Delta_x=0, v_p(Disc)=0, maxmult=4
+  p=313: E=544, Delta_x=16, v_p(Disc)=4, maxmult=4
+cayley product-discriminant regression: OK

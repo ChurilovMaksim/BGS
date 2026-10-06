@@ -1,0 +1,1264 @@
+{
+  "producer": "computations/verification/pell_weighted_echo_regression.py",
+  "source_sha256": "b0b636e9643a5abc2b854bf5bab7d00bfa795dd6ca2bb1ab09897ea4d6990485",
+  "scope": "Exact finite coefficient/covariance identities and numerical operator comparisons, not a formal proof or priority certificate.",
+  "exact": {
+    "coefficient_identities": 2718,
+    "gram_identities": 1252,
+    "half_period_variance": "1/2",
+    "three_half_period_variance": "5/2",
+    "arithmetic": "exact rational",
+    "passed": true
+  },
+  "passed": true,
+  "dense": [
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": -4,
+      "alpha": -1.3333333333333333,
+      "variance": 2.0,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.04249269507441091,
+      "triple_to_single_error": 0.08689728451255939,
+      "generic_duhamel_bound": 0.14564859489449847,
+      "echo_trace": [
+        0.7946725585340962,
+        0.24401515286293002
+      ],
+      "echo_second_trace": [
+        0.2718811447167133,
+        0.3394283221073909
+      ],
+      "limiting_trace_prediction": 0.7788007830714049,
+      "limiting_second_trace_prediction": 0.36787944117144233,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": -1,
+      "alpha": -0.3333333333333333,
+      "variance": 0.3333333333333333,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.020936760856488185,
+      "triple_to_single_error": 0.020936760856488074,
+      "generic_duhamel_bound": 0.03792482989666901,
+      "echo_trace": [
+        0.965589972582782,
+        0.06616703812579294
+      ],
+      "echo_second_trace": [
+        0.8660458380128457,
+        0.12145939709105365
+      ],
+      "limiting_trace_prediction": 0.9591894571091382,
+      "limiting_second_trace_prediction": 0.8464817248906141,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 1.1109391467604782e-15,
+      "triple_to_single_error": 1.1109391467604782e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 1,
+      "alpha": 0.3333333333333333,
+      "variance": 0.3333333333333333,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.020936760856488167,
+      "triple_to_single_error": 0.020936760856488164,
+      "generic_duhamel_bound": 0.037924829896669024,
+      "echo_trace": [
+        0.9655899725827812,
+        -0.06616703812579283
+      ],
+      "echo_second_trace": [
+        0.8660458380128446,
+        -0.1214593970910533
+      ],
+      "limiting_trace_prediction": 0.9591894571091382,
+      "limiting_second_trace_prediction": 0.8464817248906141,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 2,
+      "alpha": 0.6666666666666666,
+      "variance": 0.6666666666666666,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.029906626058929416,
+      "triple_to_single_error": 0.032221386305221485,
+      "generic_duhamel_bound": 0.07344908922466489,
+      "echo_trace": [
+        0.9259785037284491,
+        -0.13181455562974514
+      ],
+      "echo_second_trace": [
+        0.7157631500864694,
+        -0.23907714082801973
+      ],
+      "limiting_trace_prediction": 0.9200444146293233,
+      "limiting_second_trace_prediction": 0.7165313105737893,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 3,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.03242109157940933,
+      "triple_to_single_error": 0.10427921583789268,
+      "generic_duhamel_bound": 0.1089204664568849,
+      "echo_trace": [
+        0.8909872464291154,
+        -0.193412219935358
+      ],
+      "echo_second_trace": [
+        0.5888333583196725,
+        -0.3262027056632939
+      ],
+      "limiting_trace_prediction": 0.8824969025845955,
+      "limiting_second_trace_prediction": 0.6065306597126334,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 4,
+      "alpha": 1.3333333333333333,
+      "variance": 2.0,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.04249269507441095,
+      "triple_to_single_error": 0.08689728451255949,
+      "generic_duhamel_bound": 0.1456485948944985,
+      "echo_trace": [
+        0.794672558534094,
+        -0.24401515286292913
+      ],
+      "echo_second_trace": [
+        0.2718811447167121,
+        -0.33942832210738844
+      ],
+      "limiting_trace_prediction": 0.7788007830714049,
+      "limiting_second_trace_prediction": 0.36787944117144233,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 0.5,
+      "time": 6,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.02093676085648814,
+      "echo_to_triple_error": 0.06410905584500569,
+      "triple_to_single_error": 0.18405034170696447,
+      "generic_duhamel_bound": 0.2178409329137698,
+      "echo_trace": [
+        0.5888333583196727,
+        -0.32620270566329396
+      ],
+      "echo_second_trace": [
+        -0.2922288777888744,
+        -0.26590713362689455
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": -4,
+      "alpha": -1.3333333333333333,
+      "variance": 2.0,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.21030240689639715,
+      "triple_to_single_error": 0.3555814507228243,
+      "generic_duhamel_bound": 0.5825943795779939,
+      "echo_trace": [
+        0.3949494840502765,
+        0.36188271586160276
+      ],
+      "echo_second_trace": [
+        -0.598190428034892,
+        0.024193830614749307
+      ],
+      "limiting_trace_prediction": 0.36787944117144233,
+      "limiting_second_trace_prediction": 0.01831563888873418,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": -1,
+      "alpha": -0.3333333333333333,
+      "variance": 0.3333333333333333,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.08729674407809554,
+      "triple_to_single_error": 0.08729674407809532,
+      "generic_duhamel_bound": 0.15169931958667604,
+      "echo_trace": [
+        0.8660458380128455,
+        0.12145939709105358
+      ],
+      "echo_second_trace": [
+        0.5196653979834134,
+        0.16644740692255977
+      ],
+      "limiting_trace_prediction": 0.8464817248906141,
+      "limiting_second_trace_prediction": 0.513417119032592,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 1.1046864397415436e-15,
+      "triple_to_single_error": 1.1046864397415436e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 1,
+      "alpha": 0.3333333333333333,
+      "variance": 0.3333333333333333,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.08729674407809557,
+      "triple_to_single_error": 0.08729674407809561,
+      "generic_duhamel_bound": 0.1516993195866761,
+      "echo_trace": [
+        0.8660458380128448,
+        -0.12145939709105341
+      ],
+      "echo_second_trace": [
+        0.5196653979834132,
+        -0.16644740692255944
+      ],
+      "limiting_trace_prediction": 0.8464817248906141,
+      "limiting_second_trace_prediction": 0.513417119032592,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 2,
+      "alpha": 0.6666666666666666,
+      "variance": 0.6666666666666666,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.14200077827413604,
+      "triple_to_single_error": 0.10836380537803587,
+      "generic_duhamel_bound": 0.29379635689865957,
+      "echo_trace": [
+        0.7223757784594744,
+        -0.2397054259046875
+      ],
+      "echo_second_trace": [
+        0.05439812828178726,
+        -0.31437012828862065
+      ],
+      "limiting_trace_prediction": 0.7165313105737893,
+      "limiting_second_trace_prediction": 0.26359713811572677,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 3,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.1748621277565578,
+      "triple_to_single_error": 0.3645558718596021,
+      "generic_duhamel_bound": 0.4356818658275396,
+      "echo_trace": [
+        0.6473768815387921,
+        -0.33373688564704684
+      ],
+      "echo_second_trace": [
+        -0.14391826331720536,
+        -0.3047191195855846
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 4,
+      "alpha": 1.3333333333333333,
+      "variance": 2.0,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.2103024068963972,
+      "triple_to_single_error": 0.3555814507228248,
+      "generic_duhamel_bound": 0.582594379577994,
+      "echo_trace": [
+        0.39494948405027547,
+        -0.3618827158616014
+      ],
+      "echo_second_trace": [
+        -0.598190428034888,
+        -0.02419383061474899
+      ],
+      "limiting_trace_prediction": 0.36787944117144233,
+      "limiting_second_trace_prediction": 0.01831563888873418,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "tau": 1.0,
+      "time": 6,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.08729674407809555,
+      "echo_to_triple_error": 0.3266224340865845,
+      "triple_to_single_error": 0.40768408771886955,
+      "generic_duhamel_bound": 0.8713637316550792,
+      "echo_trace": [
+        -0.14391826331720523,
+        -0.3047191195855846
+      ],
+      "echo_second_trace": [
+        -0.8269484825399789,
+        0.5486527940620359
+      ],
+      "limiting_trace_prediction": 0.1353352832366127,
+      "limiting_second_trace_prediction": 0.00033546262790251185,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": -6,
+      "alpha": -1.2,
+      "variance": 1.6,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.035401491004652785,
+      "triple_to_single_error": 0.07756972404021599,
+      "generic_duhamel_bound": 0.11665231375506073,
+      "echo_trace": [
+        0.8298283146548286,
+        0.04019071931914347
+      ],
+      "echo_second_trace": [
+        0.42650236515226647,
+        0.04703551978430079
+      ],
+      "limiting_trace_prediction": 0.8187307530779818,
+      "limiting_second_trace_prediction": 0.44932896411722156,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": -1,
+      "alpha": -0.2,
+      "variance": 0.2,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.013154282568166066,
+      "triple_to_single_error": 0.013154282568166071,
+      "generic_duhamel_bound": 0.02134395675079781,
+      "echo_trace": [
+        0.9757743300595764,
+        0.007774589822679623
+      ],
+      "echo_second_trace": [
+        0.9048697447722074,
+        0.014778177930382254
+      ],
+      "limiting_trace_prediction": 0.9753099120283326,
+      "limiting_second_trace_prediction": 0.9048374180359595,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 2.6526713290484104e-15,
+      "triple_to_single_error": 2.6526713290484104e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 2,
+      "alpha": 0.4,
+      "variance": 0.4,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.021142847899266803,
+      "triple_to_single_error": 0.018608051878085428,
+      "generic_duhamel_bound": 0.042966016089451026,
+      "echo_trace": [
+        0.9544420043108925,
+        -0.014846083637529685
+      ],
+      "echo_second_trace": [
+        0.8267091437731384,
+        -0.02428723606097055
+      ],
+      "limiting_trace_prediction": 0.951229424500714,
+      "limiting_second_trace_prediction": 0.8187307530779818,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 4,
+      "alpha": 0.8,
+      "variance": 0.8,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.02648908985568403,
+      "triple_to_single_error": 0.06484671368395163,
+      "generic_duhamel_bound": 0.08481560755710965,
+      "echo_trace": [
+        0.9110607792344481,
+        -0.02903309657195475
+      ],
+      "echo_second_trace": [
+        0.6737793617960699,
+        -0.04411597378832002
+      ],
+      "limiting_trace_prediction": 0.9048374180359595,
+      "limiting_second_trace_prediction": 0.6703200460356393,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 5,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.029640216175993994,
+      "triple_to_single_error": 0.09411497939846515,
+      "generic_duhamel_bound": 0.09980206806701093,
+      "echo_trace": [
+        0.8919058459445882,
+        -0.03568530098082138
+      ],
+      "echo_second_trace": [
+        0.6137348177426902,
+        -0.05208049461129958
+      ],
+      "limiting_trace_prediction": 0.8824969025845955,
+      "limiting_second_trace_prediction": 0.6065306597126334,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 6,
+      "alpha": 1.2,
+      "variance": 1.6,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.03540149100465286,
+      "triple_to_single_error": 0.07756972404021593,
+      "generic_duhamel_bound": 0.11665231375506077,
+      "echo_trace": [
+        0.8298283146548286,
+        -0.04019071931914375
+      ],
+      "echo_second_trace": [
+        0.42650236515226664,
+        -0.047035519784301344
+      ],
+      "limiting_trace_prediction": 0.8187307530779818,
+      "limiting_second_trace_prediction": 0.44932896411722156,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 7,
+      "alpha": 1.4,
+      "variance": 2.2,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.04070495653364908,
+      "triple_to_single_error": 0.058169705066502486,
+      "generic_duhamel_bound": 0.13945442565926064,
+      "echo_trace": [
+        0.7739931891060894,
+        -0.04332221401112538
+      ],
+      "echo_second_trace": [
+        0.2982409262096086,
+        -0.03719389505910308
+      ],
+      "limiting_trace_prediction": 0.7595721232249685,
+      "limiting_second_trace_prediction": 0.33287108369807955,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 0.5,
+      "time": 10,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.013154282568166068,
+      "echo_to_triple_error": 0.055265545182222583,
+      "triple_to_single_error": 0.16057315942066103,
+      "generic_duhamel_bound": 0.19960413613402186,
+      "echo_trace": [
+        0.6137348177426903,
+        -0.0520804946112996
+      ],
+      "echo_second_trace": [
+        0.021133719313292262,
+        -0.03367357211228176
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": -6,
+      "alpha": -1.2,
+      "variance": 1.6,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.14561526864953633,
+      "triple_to_single_error": 0.25619445798524715,
+      "generic_duhamel_bound": 0.4666092550202429,
+      "echo_trace": [
+        0.4546064657214921,
+        0.050272848009445786
+      ],
+      "echo_second_trace": [
+        -0.16344748571250448,
+        0.0179475752611949
+      ],
+      "limiting_trace_prediction": 0.44932896411722156,
+      "limiting_second_trace_prediction": 0.04076220397836621,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": -1,
+      "alpha": -0.2,
+      "variance": 0.2,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.05168967403771176,
+      "triple_to_single_error": 0.051689674037711755,
+      "generic_duhamel_bound": 0.08537582700319124,
+      "echo_trace": [
+        0.9048697447722076,
+        0.014778177930382315
+      ],
+      "echo_second_trace": [
+        0.646694175912872,
+        0.023839518512172905
+      ],
+      "limiting_trace_prediction": 0.9048374180359595,
+      "limiting_second_trace_prediction": 0.6703200460356393,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 2.61283242802872e-15,
+      "triple_to_single_error": 2.61283242802872e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 2,
+      "alpha": 0.4,
+      "variance": 0.4,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.08341914866078984,
+      "triple_to_single_error": 0.07350040253824999,
+      "generic_duhamel_bound": 0.1718640643578041,
+      "echo_trace": [
+        0.8271310477362471,
+        -0.024291188900566925
+      ],
+      "echo_second_trace": [
+        0.43457376443533563,
+        -0.015615720096772125
+      ],
+      "limiting_trace_prediction": 0.8187307530779818,
+      "limiting_second_trace_prediction": 0.44932896411722156,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 4,
+      "alpha": 0.8,
+      "variance": 0.8,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.11766545541695833,
+      "triple_to_single_error": 0.2351877505661913,
+      "generic_duhamel_bound": 0.3392624302284386,
+      "echo_trace": [
+        0.6836536810071334,
+        -0.043920011147351605
+      ],
+      "echo_second_trace": [
+        0.09441552164934347,
+        -0.014361093864833543
+      ],
+      "limiting_trace_prediction": 0.6703200460356393,
+      "limiting_second_trace_prediction": 0.20189651799465538,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 5,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.1331999716816997,
+      "triple_to_single_error": 0.31736089436973675,
+      "generic_duhamel_bound": 0.39920827226804373,
+      "echo_trace": [
+        0.6273423615657647,
+        -0.05357846543539349
+      ],
+      "echo_second_trace": [
+        0.029222636008214866,
+        -0.03648166377899733
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 6,
+      "alpha": 1.2,
+      "variance": 1.6,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.14561526864953656,
+      "triple_to_single_error": 0.2561944579852469,
+      "generic_duhamel_bound": 0.4666092550202431,
+      "echo_trace": [
+        0.45460646572149177,
+        -0.05027284800944609
+      ],
+      "echo_second_trace": [
+        -0.16344748571250453,
+        -0.01794757526119418
+      ],
+      "limiting_trace_prediction": 0.44932896411722156,
+      "limiting_second_trace_prediction": 0.04076220397836621,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 7,
+      "alpha": 1.4,
+      "variance": 2.2,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.15575660549493803,
+      "triple_to_single_error": 0.24175145588929647,
+      "generic_duhamel_bound": 0.5578177026370426,
+      "echo_trace": [
+        0.3314088562850368,
+        -0.04298017805669635
+      ],
+      "echo_second_trace": [
+        -0.08798612573670961,
+        -0.014049091390912842
+      ],
+      "limiting_trace_prediction": 0.33287108369807955,
+      "limiting_second_trace_prediction": 0.012277339903068436,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "tau": 1.0,
+      "time": 10,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.051689674037711755,
+      "echo_to_triple_error": 0.1982193375873347,
+      "triple_to_single_error": 0.38258196686645835,
+      "generic_duhamel_bound": 0.7984165445360875,
+      "echo_trace": [
+        0.029222636008214776,
+        -0.03648166377899732
+      ],
+      "echo_second_trace": [
+        0.1510871283523869,
+        -0.1921004932123009
+      ],
+      "limiting_trace_prediction": 0.1353352832366127,
+      "limiting_second_trace_prediction": 0.00033546262790251185,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": -8,
+      "alpha": -1.1428571428571428,
+      "variance": 1.4285714285714286,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.02309867865099389,
+      "triple_to_single_error": 0.07935030409094254,
+      "generic_duhamel_bound": 0.10194241288246833,
+      "echo_trace": [
+        0.8394827546237631,
+        0.007036425947925255
+      ],
+      "echo_second_trace": [
+        0.4642535757009544,
+        0.005314286626651323
+      ],
+      "limiting_trace_prediction": 0.8364643072929833,
+      "limiting_second_trace_prediction": 0.4895416595569531,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": -1,
+      "alpha": -0.14285714285714285,
+      "variance": 0.14285714285714285,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.007840259525730957,
+      "triple_to_single_error": 0.007840259525730947,
+      "generic_duhamel_bound": 0.012718338033317785,
+      "echo_trace": [
+        0.9822968917467553,
+        0.0011096256483327913
+      ],
+      "echo_second_trace": [
+        0.9301281417178713,
+        0.0021404629795438593
+      ],
+      "limiting_trace_prediction": 0.9823013510997377,
+      "limiting_second_trace_prediction": 0.9310627797040227,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 3.918050173378395e-15,
+      "triple_to_single_error": 3.918050173378395e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 3,
+      "alpha": 0.42857142857142855,
+      "variance": 0.42857142857142855,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.017059523404730232,
+      "triple_to_single_error": 0.016291516604118098,
+      "generic_duhamel_bound": 0.04203101455226531,
+      "echo_trace": [
+        0.9486583252036153,
+        -0.003030421013211451
+      ],
+      "echo_second_trace": [
+        0.807223282222448,
+        -0.004262328107717279
+      ],
+      "limiting_trace_prediction": 0.9478382358546584,
+      "limiting_second_trace_prediction": 0.8071177470053893,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 6,
+      "alpha": 0.8571428571428571,
+      "variance": 0.8571428571428571,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.019573052796035537,
+      "triple_to_single_error": 0.06871416994774508,
+      "generic_duhamel_bound": 0.08380566829408519,
+      "echo_trace": [
+        0.9006598609181264,
+        -0.005835212835050259
+      ],
+      "echo_second_trace": [
+        0.6447682829883039,
+        -0.007144050435772344
+      ],
+      "limiting_trace_prediction": 0.898397321348071,
+      "limiting_second_trace_prediction": 0.6514390575310556,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 7,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.02056640344564776,
+      "triple_to_single_error": 0.08786742155931204,
+      "generic_duhamel_bound": 0.0925373525380563,
+      "echo_trace": [
+        0.8856269058192959,
+        -0.006597687288415036
+      ],
+      "echo_second_trace": [
+        0.5987027657426104,
+        -0.006988387945208358
+      ],
+      "limiting_trace_prediction": 0.8824969025845955,
+      "limiting_second_trace_prediction": 0.6065306597126334,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 8,
+      "alpha": 1.1428571428571428,
+      "variance": 1.4285714285714286,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.023098678650993985,
+      "triple_to_single_error": 0.07935030409094244,
+      "generic_duhamel_bound": 0.1019424128824684,
+      "echo_trace": [
+        0.8394827546237612,
+        -0.007036425947925469
+      ],
+      "echo_second_trace": [
+        0.46425357570095244,
+        -0.005314286626651916
+      ],
+      "limiting_trace_prediction": 0.8364643072929833,
+      "limiting_second_trace_prediction": 0.4895416595569531,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 10,
+      "alpha": 1.4285714285714286,
+      "variance": 2.2857142857142856,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.02856899236928085,
+      "triple_to_single_error": 0.052493744070738924,
+      "generic_duhamel_bound": 0.13189998385299595,
+      "echo_trace": [
+        0.754771108888738,
+        -0.007181817850698614
+      ],
+      "echo_second_trace": [
+        0.27590353352438607,
+        3.8321611659898154e-05
+      ],
+      "limiting_trace_prediction": 0.751477293075286,
+      "limiting_second_trace_prediction": 0.31890655732397044,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 0.5,
+      "time": 14,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.007840259525730949,
+      "echo_to_triple_error": 0.038489524773224544,
+      "triple_to_single_error": 0.1530719209007542,
+      "generic_duhamel_bound": 0.1850747050761126,
+      "echo_trace": [
+        0.5987027657426104,
+        -0.00698838794520835
+      ],
+      "echo_second_trace": [
+        0.04135526398955339,
+        0.008842781894612753
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": -8,
+      "alpha": -1.1428571428571428,
+      "variance": 1.4285714285714286,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.10825814516875913,
+      "triple_to_single_error": 0.27042823765177043,
+      "generic_duhamel_bound": 0.4077696515298733,
+      "echo_trace": [
+        0.48591989813406306,
+        0.00615453929991725
+      ],
+      "echo_second_trace": [
+        -0.0642837806378584,
+        -0.012952525029125668
+      ],
+      "limiting_trace_prediction": 0.4895416595569531,
+      "limiting_second_trace_prediction": 0.05743261926761735,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": -1,
+      "alpha": -0.14285714285714285,
+      "variance": 0.14285714285714285,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.031086488854033454,
+      "triple_to_single_error": 0.031086488854033433,
+      "generic_duhamel_bound": 0.05087335213327114,
+      "echo_trace": [
+        0.9301281417178713,
+        0.002140462979543857
+      ],
+      "echo_second_trace": [
+        0.7351208646248142,
+        0.0036837881097983457
+      ],
+      "limiting_trace_prediction": 0.9310627797040227,
+      "limiting_second_trace_prediction": 0.751477293075286,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 0,
+      "alpha": 0.0,
+      "variance": 0.0,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 3.891281037065088e-15,
+      "triple_to_single_error": 3.891281037065088e-15,
+      "generic_duhamel_bound": 0.0,
+      "echo_trace": [
+        1.0,
+        0.0
+      ],
+      "echo_second_trace": [
+        1.0,
+        0.0
+      ],
+      "limiting_trace_prediction": 1.0,
+      "limiting_second_trace_prediction": 1.0,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 3,
+      "alpha": 0.42857142857142855,
+      "variance": 0.42857142857142855,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.069372113379893,
+      "triple_to_single_error": 0.0665424680179887,
+      "generic_duhamel_bound": 0.16812405820906123,
+      "echo_trace": [
+        0.8074497187285994,
+        -0.0042627766145363595
+      ],
+      "echo_second_trace": [
+        0.399352756503276,
+        0.0002876012864542199
+      ],
+      "limiting_trace_prediction": 0.8071177470053893,
+      "limiting_second_trace_prediction": 0.42437284567695,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 6,
+      "alpha": 0.8571428571428571,
+      "variance": 0.8571428571428571,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.09624397310301296,
+      "triple_to_single_error": 0.244278798353308,
+      "generic_duhamel_bound": 0.33522267317634075,
+      "echo_trace": [
+        0.6544834323822987,
+        -0.007462009944263806
+      ],
+      "echo_second_trace": [
+        0.09708128424270406,
+        0.002882410987373584
+      ],
+      "limiting_trace_prediction": 0.6514390575310556,
+      "limiting_second_trace_prediction": 0.1800923121479524,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 7,
+      "alpha": 1.0,
+      "variance": 1.0,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.10283702802837834,
+      "triple_to_single_error": 0.3022673398155476,
+      "generic_duhamel_bound": 0.3701494101522252,
+      "echo_trace": [
+        0.611553597361315,
+        -0.007460628675589403
+      ],
+      "echo_second_trace": [
+        0.047863996835436386,
+        0.00964597444012463
+      ],
+      "limiting_trace_prediction": 0.6065306597126334,
+      "limiting_second_trace_prediction": 0.1353352832366127,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 8,
+      "alpha": 1.1428571428571428,
+      "variance": 1.4285714285714286,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.10825814516875927,
+      "triple_to_single_error": 0.2704282376517702,
+      "generic_duhamel_bound": 0.4077696515298736,
+      "echo_trace": [
+        0.48591989813406183,
+        -0.006154539299917605
+      ],
+      "echo_second_trace": [
+        -0.06428378063785752,
+        0.012952525029125299
+      ],
+      "limiting_trace_prediction": 0.4895416595569531,
+      "limiting_second_trace_prediction": 0.05743261926761735,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 10,
+      "alpha": 1.4285714285714286,
+      "variance": 2.2857142857142856,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.11678810521690162,
+      "triple_to_single_error": 0.22680795139502824,
+      "generic_duhamel_bound": 0.5275999354119838,
+      "echo_trace": [
+        0.30641774219801476,
+        -0.001469310990084613
+      ],
+      "echo_second_trace": [
+        -0.02560248253272758,
+        0.014396678497336234
+      ],
+      "limiting_trace_prediction": 0.31890655732397044,
+      "limiting_second_trace_prediction": 0.01034317319661825,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "tau": 1.0,
+      "time": 14,
+      "alpha": 2.0,
+      "variance": 4.0,
+      "normal_step_error": 0.031086488854033433,
+      "echo_to_triple_error": 0.1519108169452119,
+      "triple_to_single_error": 0.3854315330527422,
+      "generic_duhamel_bound": 0.7402988203044504,
+      "echo_trace": [
+        0.04786399683543637,
+        0.009645974440124638
+      ],
+      "echo_second_trace": [
+        0.09901882539522315,
+        0.0422421350769108
+      ],
+      "limiting_trace_prediction": 0.1353352832366127,
+      "limiting_second_trace_prediction": 0.00033546262790251185,
+      "scope": "finite numerical mechanism check below K=11; does not assert the uniform arithmetic constant or asymptotic equality here"
+    }
+  ]
+}

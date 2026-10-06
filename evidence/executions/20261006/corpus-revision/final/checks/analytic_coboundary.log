@@ -1,0 +1,2 @@
+PASS analytic coboundary exact regressions
+{"arithmetic": "exact integers and rationals", "negative_trace": {"A": [[-2, -1], [-1, -1]], "A_orbit_sums_divided_by_i": ["-1", "1"], "B": [[2, 1], [1, 1]], "B_orbit_sums_divided_by_i": ["0", "0"]}, "scalar": {"chebyshev_cases": 1950, "laurent_identities": 65, "order_range": [0, 64], "rational_ratio_cases": 780, "trace_range": [3, 32]}, "scope": "finite algebra regressions; universal proof is in mathematics/", "status": "PASS", "transfer_cases": 16}

@@ -1,0 +1,968 @@
+{
+  "producer": "computations/verification/pell_pair_obstruction.py",
+  "scope": "Floating-point finite identity and inequality checks. Direct compactly supported pair sums versus exact-in-x piecewise-constant window integration. The analytic theorem is proved independently; no claim of universal finite-size asymptotics.",
+  "source_sha256": "3323986145033e7358c84c0343f7fba19638599aae7c17e45794db33bbf69122",
+  "checks": [
+    {
+      "dimension": 3,
+      "L": 1.0,
+      "pair_statistic": 1.4802973661668753e-16,
+      "independent_window_variance": 0.0,
+      "finite_pair_lower_bound": 0.0,
+      "finite_variance_lower_bound": 6.0782974543389866e-33,
+      "selected_traces": [
+        [
+          3,
+          1.0,
+          6.432490598706546e-16
+        ],
+        [
+          6,
+          1.0,
+          1.2864981197413093e-15
+        ]
+      ],
+      "K": 3,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.0
+    },
+    {
+      "dimension": 3,
+      "L": 2.0,
+      "pair_statistic": 0.5,
+      "independent_window_variance": -4.440892098500626e-16,
+      "finite_pair_lower_bound": 0.5,
+      "finite_variance_lower_bound": 2.4313189817355946e-32,
+      "selected_traces": [
+        [
+          3,
+          1.0,
+          6.432490598706546e-16
+        ],
+        [
+          6,
+          1.0,
+          1.2864981197413093e-15
+        ]
+      ],
+      "K": 3,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.5
+    },
+    {
+      "dimension": 3,
+      "L": 1.0,
+      "pair_statistic": 0.09774651326708679,
+      "independent_window_variance": 0.09774651326708672,
+      "finite_pair_lower_bound": 0.0,
+      "finite_variance_lower_bound": 3.9034810726934346e-33,
+      "selected_traces": [
+        [
+          3,
+          0.8909872464291155,
+          -0.19341221993535898
+        ],
+        [
+          6,
+          0.5888333583196712,
+          -0.3262027056632955
+        ]
+      ],
+      "K": 3,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 1.55760156614281
+    },
+    {
+      "dimension": 3,
+      "L": 2.0,
+      "pair_statistic": 0.5244366283167716,
+      "independent_window_variance": 0.09774651326708739,
+      "finite_pair_lower_bound": 0.5,
+      "finite_variance_lower_bound": 1.5613924290773739e-32,
+      "selected_traces": [
+        [
+          3,
+          0.8909872464291155,
+          -0.19341221993535898
+        ],
+        [
+          6,
+          0.5888333583196712,
+          -0.3262027056632955
+        ]
+      ],
+      "K": 3,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.05760156614281
+    },
+    {
+      "dimension": 3,
+      "L": 1.0,
+      "pair_statistic": 0.17468212595963242,
+      "independent_window_variance": 0.17468212595963228,
+      "finite_pair_lower_bound": 0.0,
+      "finite_variance_lower_bound": 1.9573435090062187e-33,
+      "selected_traces": [
+        [
+          3,
+          0.6473768815387917,
+          -0.33373688564704806
+        ],
+        [
+          6,
+          -0.14391826331720853,
+          -0.3047191195855846
+        ]
+      ],
+      "K": 3,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 0.7357588823428847
+    },
+    {
+      "dimension": 3,
+      "L": 2.0,
+      "pair_statistic": 0.5436705314899081,
+      "independent_window_variance": 0.17468212595963362,
+      "finite_pair_lower_bound": 0.5,
+      "finite_variance_lower_bound": 7.829374036024875e-33,
+      "selected_traces": [
+        [
+          3,
+          0.6473768815387917,
+          -0.33373688564704806
+        ],
+        [
+          6,
+          -0.14391826331720853,
+          -0.3047191195855846
+        ]
+      ],
+      "K": 3,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.2357588823428847
+    },
+    {
+      "dimension": 3,
+      "L": 1.0,
+      "pair_statistic": 0.27067864125014857,
+      "independent_window_variance": 0.27067864125014873,
+      "finite_pair_lower_bound": 0.0,
+      "finite_variance_lower_bound": 1.4110085418571807e-33,
+      "selected_traces": [
+        [
+          3,
+          0.2954816126406744,
+          -0.4203738274490121
+        ],
+        [
+          6,
+          -0.349757876176948,
+          0.2791477124056312
+        ]
+      ],
+      "K": 3,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.03663127777746844
+    },
+    {
+      "dimension": 3,
+      "L": 2.0,
+      "pair_statistic": 0.5676696603125372,
+      "independent_window_variance": 0.2706786412501492,
+      "finite_pair_lower_bound": 0.5,
+      "finite_variance_lower_bound": 5.644034167428723e-33,
+      "selected_traces": [
+        [
+          3,
+          0.2954816126406744,
+          -0.4203738274490121
+        ],
+        [
+          6,
+          -0.349757876176948,
+          0.2791477124056312
+        ]
+      ],
+      "K": 3,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.5366312777774684
+    },
+    {
+      "dimension": 20,
+      "L": 1.0,
+      "pair_statistic": 2.9999999999999973,
+      "independent_window_variance": 2.999999999999997,
+      "finite_pair_lower_bound": 2.4317084074161066,
+      "finite_variance_lower_bound": 2.4317084074161066,
+      "selected_traces": [
+        [
+          5,
+          1.0,
+          -6.599266724350176e-16
+        ],
+        [
+          10,
+          1.0,
+          -1.3198533448700353e-15
+        ]
+      ],
+      "K": 5,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.0
+    },
+    {
+      "dimension": 20,
+      "L": 2.0,
+      "pair_statistic": 1.4999999999999993,
+      "independent_window_variance": 3.9999999999999947,
+      "finite_pair_lower_bound": 1.3105694691387022,
+      "finite_variance_lower_bound": 3.2422778765548093,
+      "selected_traces": [
+        [
+          5,
+          1.0,
+          -6.599266724350176e-16
+        ],
+        [
+          10,
+          1.0,
+          -1.3198533448700353e-15
+        ]
+      ],
+      "K": 5,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.5
+    },
+    {
+      "dimension": 20,
+      "L": 3.0,
+      "pair_statistic": 0.9999999999999997,
+      "independent_window_variance": 2.9999999999999947,
+      "finite_pair_lower_bound": 0.9368564897129008,
+      "finite_variance_lower_bound": 2.4317084074161066,
+      "selected_traces": [
+        [
+          5,
+          1.0,
+          -6.599266724350176e-16
+        ],
+        [
+          10,
+          1.0,
+          -1.3198533448700353e-15
+        ]
+      ],
+      "K": 5,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.6666666666666665
+    },
+    {
+      "dimension": 20,
+      "L": 5.0,
+      "pair_statistic": 0.9199999999999999,
+      "independent_window_variance": 3.000000000000007,
+      "finite_pair_lower_bound": 0.8972683362966443,
+      "finite_variance_lower_bound": 2.431708407416107,
+      "selected_traces": [
+        [
+          5,
+          1.0,
+          -6.599266724350176e-16
+        ],
+        [
+          10,
+          1.0,
+          -1.3198533448700353e-15
+        ]
+      ],
+      "K": 5,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.8
+    },
+    {
+      "dimension": 20,
+      "L": 1.0,
+      "pair_statistic": 1.7316958465728747,
+      "independent_window_variance": 1.7316958465728751,
+      "finite_pair_lower_bound": 1.5991901451963328,
+      "finite_variance_lower_bound": 1.5991901451963328,
+      "selected_traces": [
+        [
+          5,
+          0.8919058459445882,
+          -0.035685300980822045
+        ],
+        [
+          10,
+          0.61373481774269,
+          -0.05208049461129989
+        ]
+      ],
+      "K": 5,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 1.55760156614281
+    },
+    {
+      "dimension": 20,
+      "L": 2.0,
+      "pair_statistic": 1.1829239616432186,
+      "independent_window_variance": 2.7316958465728742,
+      "finite_pair_lower_bound": 1.1458370134051412,
+      "finite_variance_lower_bound": 2.5833480536205644,
+      "selected_traces": [
+        [
+          5,
+          0.8919058459445882,
+          -0.035685300980822045
+        ],
+        [
+          10,
+          0.61373481774269,
+          -0.05208049461129989
+        ]
+      ],
+      "K": 5,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.05760156614281
+    },
+    {
+      "dimension": 20,
+      "L": 3.0,
+      "pair_statistic": 0.8590773162858751,
+      "independent_window_variance": 1.731695846572876,
+      "finite_pair_lower_bound": 0.8443544605773705,
+      "finite_variance_lower_bound": 1.5991901451963333,
+      "selected_traces": [
+        [
+          5,
+          0.8919058459445882,
+          -0.035685300980822045
+        ],
+        [
+          10,
+          0.61373481774269,
+          -0.05208049461129989
+        ]
+      ],
+      "K": 5,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.2242682328094765
+    },
+    {
+      "dimension": 20,
+      "L": 5.0,
+      "pair_statistic": 0.8692678338629151,
+      "independent_window_variance": 1.7316958465728796,
+      "finite_pair_lower_bound": 0.8639676058078534,
+      "finite_variance_lower_bound": 1.599190145196333,
+      "selected_traces": [
+        [
+          5,
+          0.8919058459445882,
+          -0.035685300980822045
+        ],
+        [
+          10,
+          0.61373481774269,
+          -0.05208049461129989
+        ]
+      ],
+      "K": 5,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.35760156614281
+    },
+    {
+      "dimension": 20,
+      "L": 1.0,
+      "pair_statistic": 0.8467531255415317,
+      "independent_window_variance": 0.8467531255415321,
+      "finite_pair_lower_bound": 0.644437627353124,
+      "finite_variance_lower_bound": 0.6444376273531242,
+      "selected_traces": [
+        [
+          5,
+          0.6273423615657648,
+          -0.05357846543539362
+        ],
+        [
+          10,
+          0.029222636008214578,
+          -0.036481663778996996
+        ]
+      ],
+      "K": 5,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 0.7357588823428847
+    },
+    {
+      "dimension": 20,
+      "L": 2.0,
+      "pair_statistic": 0.879497796501332,
+      "independent_window_variance": 1.517991186005328,
+      "finite_pair_lower_bound": 0.8213333174971564,
+      "finite_variance_lower_bound": 1.285333269988626,
+      "selected_traces": [
+        [
+          5,
+          0.6273423615657648,
+          -0.05357846543539362
+        ],
+        [
+          10,
+          0.029222636008214578,
+          -0.036481663778996996
+        ]
+      ],
+      "K": 5,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.2357588823428847
+    },
+    {
+      "dimension": 20,
+      "L": 3.0,
+      "pair_statistic": 0.7647380955981398,
+      "independent_window_variance": 0.8826428603832603,
+      "finite_pair_lower_bound": 0.7382708474836805,
+      "finite_variance_lower_bound": 0.6444376273531243,
+      "selected_traces": [
+        [
+          5,
+          0.6273423615657648,
+          -0.05357846543539362
+        ],
+        [
+          10,
+          0.029222636008214578,
+          -0.036481663778996996
+        ]
+      ],
+      "K": 5,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.4024255490095514
+    },
+    {
+      "dimension": 20,
+      "L": 5.0,
+      "pair_statistic": 0.8341465947557154,
+      "independent_window_variance": 0.8536648688928992,
+      "finite_pair_lower_bound": 0.825777505094125,
+      "finite_variance_lower_bound": 0.6444376273531242,
+      "selected_traces": [
+        [
+          5,
+          0.6273423615657648,
+          -0.05357846543539362
+        ],
+        [
+          10,
+          0.029222636008214578,
+          -0.036481663778996996
+        ]
+      ],
+      "K": 5,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.5357588823428847
+    },
+    {
+      "dimension": 20,
+      "L": 1.0,
+      "pair_statistic": 0.3704200666416931,
+      "independent_window_variance": 0.37042006664169325,
+      "finite_pair_lower_bound": 0.05411163249295137,
+      "finite_variance_lower_bound": 0.05411163249295131,
+      "selected_traces": [
+        [
+          5,
+          0.12483504745183019,
+          -0.07521426693352305
+        ],
+        [
+          10,
+          -0.11095614235167,
+          -0.10938160359247029
+        ]
+      ],
+      "K": 5,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.03663127777746844
+    },
+    {
+      "dimension": 20,
+      "L": 2.0,
+      "pair_statistic": 0.6077936117479116,
+      "independent_window_variance": 0.43117444699164764,
+      "finite_pair_lower_bound": 0.5172172858480961,
+      "finite_variance_lower_bound": 0.06886914339238474,
+      "selected_traces": [
+        [
+          5,
+          0.12483504745183019,
+          -0.07521426693352305
+        ],
+        [
+          10,
+          -0.11095614235167,
+          -0.10938160359247029
+        ]
+      ],
+      "K": 5,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.5366312777774684
+    },
+    {
+      "dimension": 20,
+      "L": 3.0,
+      "pair_statistic": 0.71533903210514,
+      "independent_window_variance": 0.43805128894626755,
+      "finite_pair_lower_bound": 0.6726790702769947,
+      "finite_variance_lower_bound": 0.05411163249295132,
+      "selected_traces": [
+        [
+          5,
+          0.12483504745183019,
+          -0.07521426693352305
+        ],
+        [
+          10,
+          -0.11095614235167,
+          -0.10938160359247029
+        ]
+      ],
+      "K": 5,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.7032979444441352
+    },
+    {
+      "dimension": 20,
+      "L": 5.0,
+      "pair_statistic": 0.8155345786265145,
+      "independent_window_variance": 0.38836446566286753,
+      "finite_pair_lower_bound": 0.8021644652997182,
+      "finite_variance_lower_bound": 0.05411163249295131,
+      "selected_traces": [
+        [
+          5,
+          0.12483504745183019,
+          -0.07521426693352305
+        ],
+        [
+          10,
+          -0.11095614235167,
+          -0.10938160359247029
+        ]
+      ],
+      "K": 5,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.8366312777774685
+    },
+    {
+      "dimension": 119,
+      "L": 1.0,
+      "pair_statistic": 15.999999999999687,
+      "independent_window_variance": 15.99999999999981,
+      "finite_pair_lower_bound": 3.887909775665702,
+      "finite_variance_lower_bound": 3.887909775665702,
+      "selected_traces": [
+        [
+          7,
+          1.0,
+          -8.213831553578786e-16
+        ],
+        [
+          14,
+          1.0,
+          -1.6427663107157571e-15
+        ]
+      ],
+      "K": 7,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.0
+    },
+    {
+      "dimension": 119,
+      "L": 2.0,
+      "pair_statistic": 7.999999999999922,
+      "independent_window_variance": 29.999999999999794,
+      "finite_pair_lower_bound": 4.071825886365869,
+      "finite_variance_lower_bound": 14.287303545463477,
+      "selected_traces": [
+        [
+          7,
+          1.0,
+          -8.213831553578786e-16
+        ],
+        [
+          14,
+          1.0,
+          -1.6427663107157571e-15
+        ]
+      ],
+      "K": 7,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.5
+    },
+    {
+      "dimension": 119,
+      "L": 3.0,
+      "pair_statistic": 5.333333333333298,
+      "independent_window_variance": 41.999999999999744,
+      "finite_pair_lower_bound": 3.7735340461458873,
+      "finite_variance_lower_bound": 27.961806415312985,
+      "selected_traces": [
+        [
+          7,
+          1.0,
+          -8.213831553578786e-16
+        ],
+        [
+          14,
+          1.0,
+          -1.6427663107157571e-15
+        ]
+      ],
+      "K": 7,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.6666666666666665
+    },
+    {
+      "dimension": 119,
+      "L": 5.0,
+      "pair_statistic": 3.1999999999999873,
+      "independent_window_variance": 59.99999999999974,
+      "finite_pair_lower_bound": 2.8335842118734322,
+      "finite_variance_lower_bound": 50.83960529683581,
+      "selected_traces": [
+        [
+          7,
+          1.0,
+          -8.213831553578786e-16
+        ],
+        [
+          14,
+          1.0,
+          -1.6427663107157571e-15
+        ]
+      ],
+      "K": 7,
+      "tau": 0.0,
+      "asymptotic_single_resonance_pair_bound": 2.8
+    },
+    {
+      "dimension": 119,
+      "L": 1.0,
+      "pair_statistic": 2.552420206086509,
+      "independent_window_variance": 2.5524202060865058,
+      "finite_pair_lower_bound": 2.235908933920591,
+      "finite_variance_lower_bound": 2.235908933920591,
+      "selected_traces": [
+        [
+          7,
+          0.8856269058192964,
+          -0.0065976872884154075
+        ],
+        [
+          14,
+          0.5987027657426106,
+          -0.006988387945208891
+        ]
+      ],
+      "K": 7,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 1.55760156614281
+    },
+    {
+      "dimension": 119,
+      "L": 2.0,
+      "pair_statistic": 2.7391348475288178,
+      "independent_window_variance": 8.956539390115294,
+      "finite_pair_lower_bound": 2.5941616572947064,
+      "finite_variance_lower_bound": 8.376646629178826,
+      "selected_traces": [
+        [
+          7,
+          0.8856269058192964,
+          -0.0065976872884154075
+        ],
+        [
+          14,
+          0.5987027657426106,
+          -0.006988387945208891
+        ]
+      ],
+      "K": 7,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.05760156614281
+    },
+    {
+      "dimension": 119,
+      "L": 3.0,
+      "pair_statistic": 2.6233399110986415,
+      "independent_window_variance": 17.61005919988778,
+      "finite_pair_lower_bound": 2.5484616718762294,
+      "finite_variance_lower_bound": 16.936155046886064,
+      "selected_traces": [
+        [
+          7,
+          0.8856269058192964,
+          -0.0065976872884154075
+        ],
+        [
+          14,
+          0.5987027657426106,
+          -0.006988387945208891
+        ]
+      ],
+      "K": 7,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.2242682328094765
+    },
+    {
+      "dimension": 119,
+      "L": 5.0,
+      "pair_statistic": 2.1745041820303697,
+      "independent_window_variance": 34.362604550759215,
+      "finite_pair_lower_bound": 2.164365164852566,
+      "finite_variance_lower_bound": 34.109129121314155,
+      "selected_traces": [
+        [
+          7,
+          0.8856269058192964,
+          -0.0065976872884154075
+        ],
+        [
+          14,
+          0.5987027657426106,
+          -0.006988387945208891
+        ]
+      ],
+      "K": 7,
+      "tau": 0.5,
+      "asymptotic_single_resonance_pair_bound": 2.35760156614281
+    },
+    {
+      "dimension": 119,
+      "L": 1.0,
+      "pair_statistic": 1.0559096711927696,
+      "independent_window_variance": 1.0559096711927682,
+      "finite_pair_lower_bound": 0.7441842612263105,
+      "finite_variance_lower_bound": 0.7441842612263104,
+      "selected_traces": [
+        [
+          7,
+          0.6115535973613158,
+          -0.007460628675589901
+        ],
+        [
+          14,
+          0.04786399683543615,
+          0.00964597444012369
+        ]
+      ],
+      "K": 7,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 0.7357588823428847
+    },
+    {
+      "dimension": 119,
+      "L": 2.0,
+      "pair_statistic": 1.309362294493355,
+      "independent_window_variance": 3.2374491779734234,
+      "finite_pair_lower_bound": 1.218617113821367,
+      "finite_variance_lower_bound": 2.8744684552854682,
+      "selected_traces": [
+        [
+          7,
+          0.6115535973613158,
+          -0.007460628675589901
+        ],
+        [
+          14,
+          0.04786399683543615,
+          0.00964597444012369
+        ]
+      ],
+      "K": 7,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.2357588823428847
+    },
+    {
+      "dimension": 119,
+      "L": 3.0,
+      "pair_statistic": 1.384727772874258,
+      "independent_window_variance": 6.462549955868324,
+      "finite_pair_lower_bound": 1.344308742748263,
+      "finite_variance_lower_bound": 6.098778684734365,
+      "selected_traces": [
+        [
+          7,
+          0.6115535973613158,
+          -0.007460628675589901
+        ],
+        [
+          14,
+          0.04786399683543615,
+          0.00964597444012369
+        ]
+      ],
+      "K": 7,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.4024255490095514
+    },
+    {
+      "dimension": 119,
+      "L": 5.0,
+      "pair_statistic": 1.3729051922606637,
+      "independent_window_variance": 14.32262980651662,
+      "finite_pair_lower_bound": 1.3593071468829367,
+      "finite_variance_lower_bound": 13.982678672073417,
+      "selected_traces": [
+        [
+          7,
+          0.6115535973613158,
+          -0.007460628675589901
+        ],
+        [
+          14,
+          0.04786399683543615,
+          0.00964597444012369
+        ]
+      ],
+      "K": 7,
+      "tau": 1.0,
+      "asymptotic_single_resonance_pair_bound": 1.5357588823428847
+    },
+    {
+      "dimension": 119,
+      "L": 1.0,
+      "pair_statistic": 0.5120334686214473,
+      "independent_window_variance": 0.5120334686214474,
+      "finite_pair_lower_bound": 0.03996687956500122,
+      "finite_variance_lower_bound": 0.03996687956500121,
+      "selected_traces": [
+        [
+          7,
+          0.1275674969252383,
+          0.006807557209736627
+        ],
+        [
+          14,
+          0.03278708069113814,
+          0.054348034651544315
+        ]
+      ],
+      "K": 7,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.03663127777746844
+    },
+    {
+      "dimension": 119,
+      "L": 2.0,
+      "pair_statistic": 0.6728142379806353,
+      "independent_window_variance": 0.6912569519225435,
+      "finite_pair_lower_bound": 0.5378728862147604,
+      "finite_variance_lower_bound": 0.1514915448590416,
+      "selected_traces": [
+        [
+          7,
+          0.1275674969252383,
+          0.006807557209736627
+        ],
+        [
+          14,
+          0.03278708069113814,
+          0.054348034651544315
+        ]
+      ],
+      "K": 7,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.5366312777774684
+    },
+    {
+      "dimension": 119,
+      "L": 3.0,
+      "pair_statistic": 0.7667075092229039,
+      "independent_window_variance": 0.9003675830061404,
+      "finite_pair_lower_bound": 0.7013479863952727,
+      "finite_variance_lower_bound": 0.3121318775574535,
+      "selected_traces": [
+        [
+          7,
+          0.1275674969252383,
+          0.006807557209736627
+        ],
+        [
+          14,
+          0.03278708069113814,
+          0.054348034651544315
+        ]
+      ],
+      "K": 7,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.7032979444441352
+    },
+    {
+      "dimension": 119,
+      "L": 5.0,
+      "pair_statistic": 0.8503192259598863,
+      "independent_window_variance": 1.257980648997112,
+      "finite_pair_lower_bound": 0.8265286631913205,
+      "finite_variance_lower_bound": 0.6632165797830087,
+      "selected_traces": [
+        [
+          7,
+          0.1275674969252383,
+          0.006807557209736627
+        ],
+        [
+          14,
+          0.03278708069113814,
+          0.054348034651544315
+        ]
+      ],
+      "K": 7,
+      "tau": 2.0,
+      "asymptotic_single_resonance_pair_bound": 0.8366312777774685
+    }
+  ],
+  "clock_control": {
+    "dimension": 64,
+    "L": 3.0,
+    "pair_statistic": 0.6666666666666667,
+    "independent_window_variance": 0.0,
+    "finite_pair_lower_bound": 0.6666666666666667,
+    "finite_variance_lower_bound": 1.5501652954483083e-31,
+    "selected_traces": [
+      [
+        1,
+        -1.734723475976807e-17,
+        2.8189256484623115e-18
+      ],
+      [
+        8,
+        -1.0030953531220544e-16,
+        5.86761718887621e-17
+      ]
+    ]
+  },
+  "repeated_clock_control": {
+    "dimension": 64,
+    "L": 2.0,
+    "pair_statistic": 3.5,
+    "independent_window_variance": 12.0,
+    "finite_pair_lower_bound": 2.9317084074161066,
+    "finite_variance_lower_bound": 9.726833629664426,
+    "selected_traces": [
+      [
+        8,
+        1.0,
+        -8.572527594031472e-16
+      ],
+      [
+        16,
+        1.0,
+        -1.7145055188062944e-15
+      ]
+    ]
+  },
+  "status": "PASS"
+}

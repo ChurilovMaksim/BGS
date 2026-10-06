@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "scope": "finite checks, not a proof by enumeration",
+  "seed": 20260906,
+  "exact": {
+    "chebyshev_l1": 257,
+    "factorial_bias": 95,
+    "logconvex_endpoints": 334,
+    "tail_ratio": 380,
+    "central_binomial": 2048,
+    "complex_coordinate_identities": 285
+  },
+  "high_precision": {
+    "probability_hellinger_cases": 3685,
+    "inverse_scale_cases": 28,
+    "decimal_precision": 90,
+    "largest_ratio_to_hellinger_bound": "0.053475935828424247655",
+    "largest_ratio_to_forward_bound": "0.99999999888241291022",
+    "anchors": [
+      {
+        "n": 8,
+        "mean_energy": 1,
+        "trace_distance": "0.661437827766147647625404",
+        "full_heterodyne_h2_upper": "0.158113883008418966599945",
+        "unit_aperture_h2_upper": "0.00000137786596119929453262787"
+      },
+      {
+        "n": 16,
+        "mean_energy": 1,
+        "trace_distance": "0.484122918275927110647408",
+        "full_heterodyne_h2_upper": "0.00853485927498648590476283",
+        "unit_aperture_h2_upper": "7.02864313586380190799736e-16"
+      },
+      {
+        "n": 32,
+        "mean_energy": 1,
+        "trace_distance": "0.347985272676876370132467",
+        "full_heterodyne_h2_upper": "0.0000283873322053470044212875",
+        "unit_aperture_h2_upper": "1.43954195259649378507336e-38"
+      },
+      {
+        "n": 64,
+        "mean_energy": 1,
+        "trace_distance": "0.248039185412305367859526",
+        "full_heterodyne_h2_upper": "3.664490418470438523679e-10",
+        "unit_aperture_h2_upper": "7.57791558968300244998387e-93"
+      },
+      {
+        "n": 128,
+        "mean_energy": 1,
+        "trace_distance": "0.176084807337260076294531",
+        "full_heterodyne_h2_upper": "7.19595986985188655778509e-20",
+        "unit_aperture_h2_upper": "6.28203306347533833064803e-220"
+      },
+      {
+        "n": 256,
+        "mean_energy": 1,
+        "trace_distance": "0.124755620489619624992736",
+        "full_heterodyne_h2_upper": "3.28513097499680222198156e-39",
+        "unit_aperture_h2_upper": "7.08748024548114546398827e-512"
+      }
+    ]
+  },
+  "reconstruction": {
+    "cases": [
+      {
+        "kind": "finite_exact_polynomial",
+        "cutoff": 1,
+        "degree": 5,
+        "max_entry_error": "3.31363808908e-90",
+        "trace_distance": "3.87721762783e-90"
+      },
+      {
+        "kind": "finite_exact_polynomial",
+        "cutoff": 2,
+        "degree": 7,
+        "max_entry_error": "3.42640851111e-89",
+        "trace_distance": "3.59765842918e-89"
+      },
+      {
+        "kind": "finite_exact_polynomial",
+        "cutoff": 3,
+        "degree": 9,
+        "max_entry_error": "3.33523810032e-87",
+        "trace_distance": "2.77841183581e-87"
+      },
+      {
+        "kind": "infinite_coherent_mixture",
+        "cutoff": 2,
+        "degree": 32,
+        "max_entry_error": "2.69163237677932e-58",
+        "proved_entry_bound": "0.00347091901833749"
+      },
+      {
+        "kind": "infinite_coherent_mixture",
+        "cutoff": 2,
+        "degree": 48,
+        "max_entry_error": "9.13298804118581e-83",
+        "proved_entry_bound": "3.12798542341197e-11"
+      },
+      {
+        "kind": "bounded_noise_infinite_input",
+        "cutoff": 2,
+        "degree": 32,
+        "noise": "0.000000000000000000000001",
+        "max_entry_error": "3.63656723785002e-19",
+        "proved_entry_bound": "0.0054426920126444"
+      }
+    ],
+    "negative_controls": 3
+  },
+  "source_sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+  "implementation_sha256": "65351b37a882f5dc33d7cf0097d47947ab7abe8557de21ac62014ca777d0da39",
+  "seconds": 2.471
+}

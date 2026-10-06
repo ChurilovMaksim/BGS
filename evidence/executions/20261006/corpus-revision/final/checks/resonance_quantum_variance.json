@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "producer": "computations/verification/resonance_quantum_variance.py",
+  "source_sha256": "8152e6987d077b6ba0db3f230bc6eef961ccf9ed286f270e2aa43a7211f5b94c",
+  "checks": [
+    {
+      "R": 1,
+      "K": 9,
+      "N": 1393,
+      "trial": 0,
+      "N_squared": 1940449,
+      "nonaliasing_upper_bound": 430720,
+      "raw_bracket_frequencies": 52,
+      "Gamma_over_pi_squared": 9764,
+      "weyl_trace_over_pi_squared": "9764"
+    },
+    {
+      "R": 1,
+      "K": 9,
+      "N": 1393,
+      "trial": 1,
+      "N_squared": 1940449,
+      "nonaliasing_upper_bound": 430720,
+      "raw_bracket_frequencies": 54,
+      "Gamma_over_pi_squared": 15460,
+      "weyl_trace_over_pi_squared": "15460"
+    },
+    {
+      "R": 1,
+      "K": 9,
+      "N": 1393,
+      "trial": 2,
+      "N_squared": 1940449,
+      "nonaliasing_upper_bound": 430720,
+      "raw_bracket_frequencies": 52,
+      "Gamma_over_pi_squared": 35376,
+      "weyl_trace_over_pi_squared": "35376"
+    },
+    {
+      "R": 3,
+      "K": 11,
+      "N": 8119,
+      "trial": 0,
+      "N_squared": 65918161,
+      "nonaliasing_upper_bound": 22582656,
+      "raw_bracket_frequencies": 502,
+      "Gamma_over_pi_squared": 17549648,
+      "weyl_trace_over_pi_squared": "17549648"
+    },
+    {
+      "R": 3,
+      "K": 11,
+      "N": 8119,
+      "trial": 1,
+      "N_squared": 65918161,
+      "nonaliasing_upper_bound": 22582656,
+      "raw_bracket_frequencies": 512,
+      "Gamma_over_pi_squared": 12023556,
+      "weyl_trace_over_pi_squared": "12023556"
+    },
+    {
+      "R": 3,
+      "K": 11,
+      "N": 8119,
+      "trial": 2,
+      "N_squared": 65918161,
+      "nonaliasing_upper_bound": 22582656,
+      "raw_bracket_frequencies": 524,
+      "Gamma_over_pi_squared": 23919380,
+      "weyl_trace_over_pi_squared": "23919380"
+    },
+    {
+      "R": 8,
+      "K": 13,
+      "N": 47321,
+      "trial": 0,
+      "N_squared": 2239277041,
+      "nonaliasing_upper_bound": 935895040,
+      "raw_bracket_frequencies": 3632,
+      "Gamma_over_pi_squared": 31212371000,
+      "weyl_trace_over_pi_squared": "31212371000"
+    },
+    {
+      "R": 8,
+      "K": 13,
+      "N": 47321,
+      "trial": 1,
+      "N_squared": 2239277041,
+      "nonaliasing_upper_bound": 935895040,
+      "raw_bracket_frequencies": 3640,
+      "Gamma_over_pi_squared": 28333453024,
+      "weyl_trace_over_pi_squared": "28333453024"
+    },
+    {
+      "R": 8,
+      "K": 13,
+      "N": 47321,
+      "trial": 2,
+      "N_squared": 2239277041,
+      "nonaliasing_upper_bound": 935895040,
+      "raw_bracket_frequencies": 3632,
+      "Gamma_over_pi_squared": 34436996176,
+      "weyl_trace_over_pi_squared": "34436996176"
+    },
+    {
+      "R": 8,
+      "K": 17,
+      "N": 1607521,
+      "trial": 0,
+      "N_squared": 2584123765441,
+      "nonaliasing_upper_bound": 31792340992,
+      "raw_bracket_frequencies": 3632,
+      "Gamma_over_pi_squared": 37095599656,
+      "weyl_trace_over_pi_squared": "37095599656"
+    },
+    {
+      "R": 8,
+      "K": 17,
+      "N": 1607521,
+      "trial": 1,
+      "N_squared": 2584123765441,
+      "nonaliasing_upper_bound": 31792340992,
+      "raw_bracket_frequencies": 3634,
+      "Gamma_over_pi_squared": 27210276192,
+      "weyl_trace_over_pi_squared": "27210276192"
+    },
+    {
+      "R": 8,
+      "K": 17,
+      "N": 1607521,
+      "trial": 2,
+      "N_squared": 2584123765441,
+      "nonaliasing_upper_bound": 31792340992,
+      "raw_bracket_frequencies": 3632,
+      "Gamma_over_pi_squared": 37299805232,
+      "weyl_trace_over_pi_squared": "37299805232"
+    }
+  ],
+  "small_modulus_negative_control": {
+    "R": 2,
+    "K": 3,
+    "N": 7,
+    "Gamma_over_pi_squared": 1656432,
+    "finite_quantum_trace_over_pi_squared": "2201256"
+  },
+  "scope": "Exact Gaussian-integer Weyl coefficient norms on the full space. Not a dense eigenspectrum, a quantum commutator equality at finite N, or a BGS theorem."
+}

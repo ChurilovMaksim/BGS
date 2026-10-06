@@ -1,0 +1,76 @@
+{
+  "finite_fields_above_cutoff": [
+    {
+      "K": 3,
+      "energy": 2,
+      "forced_baseline": 2,
+      "multiplicities": [
+        1
+      ],
+      "p": 151,
+      "pass": true,
+      "threshold": 144
+    },
+    {
+      "K": 5,
+      "energy": 20,
+      "forced_baseline": 20,
+      "multiplicities": [
+        1,
+        2
+      ],
+      "p": 20771,
+      "pass": true,
+      "threshold": 20736
+    },
+    {
+      "K": 7,
+      "energy": 54,
+      "forced_baseline": 54,
+      "multiplicities": [
+        1,
+        2
+      ],
+      "p": 2985991,
+      "pass": true,
+      "threshold": 2985984
+    }
+  ],
+  "producer": "computations/verification/cayley_uniform_cutoff_regression.py",
+  "scope": "Independent finite/symbolic regression for the theorem proof; bounded checks are not the source of the universal theorem.",
+  "small_resultants": [
+    {
+      "K": 3,
+      "all_nonzero": true,
+      "all_within_bound": true,
+      "max_abs_resultant": 108,
+      "nonforced_quadruples": 2,
+      "pass": true,
+      "universal_bound": 144
+    },
+    {
+      "K": 5,
+      "all_nonzero": true,
+      "all_within_bound": true,
+      "max_abs_resultant": 3125,
+      "nonforced_quadruples": 124,
+      "pass": true,
+      "universal_bound": 20736
+    },
+    {
+      "K": 7,
+      "all_nonzero": true,
+      "all_within_bound": true,
+      "max_abs_resultant": 57967,
+      "nonforced_quadruples": 846,
+      "pass": true,
+      "universal_bound": 2985984
+    }
+  ],
+  "symbolic": {
+    "cleared_identity": true,
+    "coefficient_l1": 12,
+    "pass": true
+  },
+  "verdict": "PASS"
+}

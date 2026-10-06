@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "date": "2026-09-30",
+  "seed": 20260930,
+  "arithmetic": "numpy complex128; scipy matrix-exponential Frechet derivative",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cases": [
+    {
+      "N": 3,
+      "spectrum": "clock",
+      "fourth_mean_error": 6.352650070598816e-33,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 6.170162198266673e-05,
+          "bound": 0.000559498060844133,
+          "ratio": 0.11028031426878492
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.003943330367508344,
+          "bound": 0.03580787589402451,
+          "ratio": 0.11012466584666623
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.03802741567813809,
+          "bound": 0.34968628802758306,
+          "ratio": 0.10874723139026403
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "spectrum": "perturbed",
+      "fourth_mean_error": 3.878959614448864e-18,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 4.613357721358943e-05,
+          "bound": 0.00041661951582174487,
+          "ratio": 0.1107331160965781
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.002950270973392039,
+          "bound": 0.026663649012591672,
+          "ratio": 0.11064768261833928
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.028622803565429258,
+          "bound": 0.26038719738859056,
+          "ratio": 0.10992400491454972
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "spectrum": "clock",
+      "fourth_mean_error": 1.5407439555097887e-33,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 3.81848780030117e-05,
+          "bound": 0.0006067130632428703,
+          "ratio": 0.0629372932880565
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.0024419135024943946,
+          "bound": 0.0388296360475437,
+          "ratio": 0.06288788026507568
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.023680078432429367,
+          "bound": 0.37919566452679393,
+          "ratio": 0.06244817820367283
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "spectrum": "perturbed",
+      "fourth_mean_error": 1.7371737682292054e-18,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 7.358474231595288e-05,
+          "bound": 0.0007306938223432471,
+          "ratio": 0.10070530236587394
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.004698458982110992,
+          "bound": 0.046764404629967816,
+          "ratio": 0.10047083929087597
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.04494406579464223,
+          "bound": 0.45668363896452946,
+          "ratio": 0.09841400470694994
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "spectrum": "clock",
+      "fourth_mean_error": 4.81482486096809e-34,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 3.903806228750747e-05,
+          "bound": 0.0004856986409523136,
+          "ratio": 0.08037507004541992
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.002495631390950938,
+          "bound": 0.03108471302094807,
+          "ratio": 0.08028484577834531
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.024128475149110876,
+          "bound": 0.30356165059519596,
+          "ratio": 0.07948459596856838
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "spectrum": "perturbed",
+      "fourth_mean_error": 8.755226245912859e-18,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 4.9275655172302714e-05,
+          "bound": 0.0007012619728932103,
+          "ratio": 0.07026711425546886
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.0031514850766537813,
+          "bound": 0.04488076626516546,
+          "ratio": 0.07021905682345334
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.030149173780155487,
+          "bound": 0.43828873305825644,
+          "ratio": 0.06878838424566146
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "spectrum": "clock",
+      "fourth_mean_error": 2.3429949003396023e-33,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 3.8606445165542506e-05,
+          "bound": 0.0006148960179801228,
+          "ratio": 0.06278532310611012
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.0024632884685942455,
+          "bound": 0.03935334515072786,
+          "ratio": 0.0625941316846018
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.02355187195543672,
+          "bound": 0.3843100112375767,
+          "ratio": 0.061283524411954976
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "spectrum": "perturbed",
+      "fourth_mean_error": 3.604284441186896e-18,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 3.544489166775843e-05,
+          "bound": 0.0004438134220090206,
+          "ratio": 0.0798643977627112
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.002264504046507024,
+          "bound": 0.02840405900857732,
+          "ratio": 0.07972466350049477
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.021838130752833616,
+          "bound": 0.27738338875563784,
+          "ratio": 0.07872905025351758
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "spectrum": "clock",
+      "fourth_mean_error": 3.087500576075521e-33,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 2.9628005242587236e-05,
+          "bound": 0.0003925899217138938,
+          "ratio": 0.07546807394658267
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.001893849213623038,
+          "bound": 0.025125754989689202,
+          "ratio": 0.07537481816567154
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.01824570807899033,
+          "bound": 0.24536870107118358,
+          "ratio": 0.07436037277507979
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "spectrum": "perturbed",
+      "fourth_mean_error": 1.387785194738422e-17,
+      "gradient": [
+        {
+          "epsilon": 0.01,
+          "gradient_norm": 3.30510157079517e-05,
+          "bound": 0.0004642995643356186,
+          "ratio": 0.07118467956188045
+        },
+        {
+          "epsilon": 0.08,
+          "gradient_norm": 0.0021116112761742365,
+          "bound": 0.02971517211747959,
+          "ratio": 0.07106172119165033
+        },
+        {
+          "epsilon": 0.25,
+          "gradient_norm": 0.020246025428882236,
+          "bound": 0.2901872277097616,
+          "ratio": 0.06976883713549183
+        }
+      ]
+    }
+  ],
+  "exact_fourth_coefficient": {
+    "(-2, 1, 2)": "1/24",
+    "(-1, -1, 3)": "1/24",
+    "(-1, 1, 1)": "-1/24",
+    "(-1, 2)": "-1/6",
+    "(1,)": "1/8"
+  },
+  "source_sha256": "682cac6863baee3c68bffb50fe4c03086bd3fd434eb9406065dd68f478aec355",
+  "coverage": {
+    "N": [
+      3,
+      4,
+      5,
+      7,
+      9
+    ],
+    "spectra": [
+      "clock",
+      "perturbed"
+    ],
+    "Wick_words": 16,
+    "pairings_per_word": 3,
+    "gradient_directions": "full N^2 real Hermitian basis"
+  },
+  "exclusions": [
+    "No joint-limit simulation",
+    "No numerical semigroup certificate",
+    "No independent proof review",
+    "No Lean compilation",
+    "No deterministic BGS theorem"
+  ]
+}

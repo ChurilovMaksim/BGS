@@ -1,0 +1,397 @@
+{
+  "status": "PASS",
+  "scope": "exact Fourier Gram identities and exact rational trial-vector quotients",
+  "symbolic_identities": 2,
+  "gram_configurations": 12,
+  "gram_entry_checks": 432,
+  "rational_rayleigh_quotients": 21,
+  "gram_checks": [
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "q": 1,
+      "lags": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "q": 2,
+      "lags": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        3,
+        -1,
+        1,
+        0
+      ],
+      "q": 3,
+      "lags": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -3,
+        1,
+        -1,
+        0
+      ],
+      "q": 1,
+      "lags": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -3,
+        1,
+        -1,
+        0
+      ],
+      "q": 2,
+      "lags": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -3,
+        1,
+        -1,
+        0
+      ],
+      "q": 3,
+      "lags": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        6,
+        -1,
+        1,
+        0
+      ],
+      "q": 1,
+      "lags": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        6,
+        -1,
+        1,
+        0
+      ],
+      "q": 2,
+      "lags": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        6,
+        -1,
+        1,
+        0
+      ],
+      "q": 3,
+      "lags": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -6,
+        1,
+        -1,
+        0
+      ],
+      "q": 1,
+      "lags": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -6,
+        1,
+        -1,
+        0
+      ],
+      "q": 2,
+      "lags": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "entry_checks": 36
+    },
+    {
+      "A": [
+        -6,
+        1,
+        -1,
+        0
+      ],
+      "q": 3,
+      "lags": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "entry_checks": 36
+    }
+  ],
+  "rayleigh_data": [
+    {
+      "q": 1,
+      "n": 8,
+      "numerator": "5910",
+      "denominator": "3203",
+      "rayleigh_quotient": 1.8451451763971276,
+      "scaled_by_n_power": 7557.714642522635
+    },
+    {
+      "q": 1,
+      "n": 16,
+      "numerator": "72582",
+      "denominator": "490195",
+      "rayleigh_quotient": 0.14806760574873265,
+      "scaled_by_n_power": 9703.758610348943
+    },
+    {
+      "q": 1,
+      "n": 32,
+      "numerator": "178194",
+      "denominator": "16927625",
+      "rayleigh_quotient": 0.010526816372645307,
+      "scaled_by_n_power": 11038.167004762925
+    },
+    {
+      "q": 1,
+      "n": 64,
+      "numerator": "4101270",
+      "denominator": "5837367211",
+      "rayleigh_quotient": 0.0007025890014716774,
+      "scaled_by_n_power": 11787.48743691465
+    },
+    {
+      "q": 1,
+      "n": 128,
+      "numerator": "53545530",
+      "denominator": "1179569499389",
+      "rayleigh_quotient": 4.539412898327382e-05,
+      "scaled_by_n_power": 12185.393713347925
+    },
+    {
+      "q": 1,
+      "n": 256,
+      "numerator": "254325462",
+      "denominator": "88157477027851",
+      "rayleigh_quotient": 2.8848995068183797e-06,
+      "scaled_by_n_power": 12390.54903403147
+    },
+    {
+      "q": 1,
+      "n": 512,
+      "numerator": "5766122",
+      "denominator": "31712961733717",
+      "rayleigh_quotient": 1.8182224821560893e-07,
+      "scaled_by_n_power": 12494.729756339755
+    },
+    {
+      "q": 2,
+      "n": 8,
+      "numerator": "5757606947",
+      "denominator": "24812843",
+      "rayleigh_quotient": 232.04140480798594,
+      "scaled_by_n_power": 3893008769.4070187
+    },
+    {
+      "q": 2,
+      "n": 16,
+      "numerator": "1028651787277",
+      "denominator": "738472350810",
+      "rayleigh_quotient": 1.3929455668160278,
+      "scaled_by_n_power": 5982655654.583022
+    },
+    {
+      "q": 2,
+      "n": 32,
+      "numerator": "384898204391997",
+      "denominator": "58269266163985844",
+      "rayleigh_quotient": 0.006605509726324455,
+      "scaled_by_n_power": 7262834751.481202
+    },
+    {
+      "q": 2,
+      "n": 64,
+      "numerator": "834829108048879121",
+      "denominator": "29457754469703760682248",
+      "rayleigh_quotient": 2.833987597077268e-05,
+      "scaled_by_n_power": 7976965928.85612
+    },
+    {
+      "q": 2,
+      "n": 128,
+      "numerator": "392659592299490428881",
+      "denominator": "3386083396014242189166578192",
+      "rayleigh_quotient": 1.1596276475697259e-07,
+      "scaled_by_n_power": 8355997826.373668
+    },
+    {
+      "q": 2,
+      "n": 256,
+      "numerator": "192603561959865621703505",
+      "denominator": "415466175046559754161352544441376",
+      "rayleigh_quotient": 4.6358421822975423e-10,
+      "scaled_by_n_power": 8551619430.294994
+    },
+    {
+      "q": 2,
+      "n": 512,
+      "numerator": "32170340642761966177330715",
+      "denominator": "17560890191581863439166464430416323264",
+      "rayleigh_quotient": 1.831931086169163e-12,
+      "scaled_by_n_power": 8651049960.25224
+    },
+    {
+      "q": 3,
+      "n": 8,
+      "numerator": "122291589726546296",
+      "denominator": "648143800449",
+      "rayleigh_quotient": 188679.71836161838,
+      "scaled_by_n_power": 1.2965971516506266e+16
+    },
+    {
+      "q": 3,
+      "n": 16,
+      "numerator": "254250426757125321217",
+      "denominator": "2604961740140419665",
+      "rayleigh_quotient": 97.60236507098182,
+      "scaled_by_n_power": 2.747262343525955e+16
+    },
+    {
+      "q": 3,
+      "n": 32,
+      "numerator": "1259540889866611668465617",
+      "denominator": "41440674101584486385052770",
+      "rayleigh_quotient": 0.030393832078577435,
+      "scaled_by_n_power": 3.5041702610801348e+16
+    },
+    {
+      "q": 3,
+      "n": 64,
+      "numerator": "7775213132177340750775861489",
+      "denominator": "949319125384600529343659211520964",
+      "rayleigh_quotient": 8.190304950432075e-06,
+      "scaled_by_n_power": 3.867762158240176e+16
+    },
+    {
+      "q": 3,
+      "n": 128,
+      "numerator": "54889302988717112160672016263473",
+      "denominator": "26261593330334684318355134508885575443336",
+      "rayleigh_quotient": 2.090097973046999e-09,
+      "scaled_by_n_power": 4.0428374482251496e+16
+    },
+    {
+      "q": 3,
+      "n": 256,
+      "numerator": "416675252450133667382043137657278897",
+      "denominator": "799661887409883119811114975486278968881688803088",
+      "rayleigh_quotient": 5.210642885579443e-13,
+      "scaled_by_n_power": 4.128296613424834e+16
+    },
+    {
+      "q": 3,
+      "n": 512,
+      "numerator": "3284409164816151714041627193490883003057",
+      "denominator": "25557151190701941748576963361958162934949614992908660256",
+      "rayleigh_quotient": 1.285123345833266e-16,
+      "scaled_by_n_power": 4.170463694624896e+16
+    }
+  ],
+  "source_sha256": "ce0fb05ed4416d0b98a9dde3380b1a98b57c823bba5029ed9914d62cadaf61fe"
+}

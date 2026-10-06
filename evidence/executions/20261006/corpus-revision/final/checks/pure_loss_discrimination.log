@@ -1,0 +1,16 @@
+{
+  "finite_B_cases": 300,
+  "max_abs_L_minus_4q_over_uq": 4.368073023755583,
+  "max_delta_over_q": 4.266666666666667,
+  "max_proved_lhs_over_theorem_rhs": 0.05514879935351338,
+  "replacement_precision_regression": {
+    "absolute_tolerance": "1e-95",
+    "cases": 3,
+    "decimal_precision": 110,
+    "maximum_absolute_error": "1.4137757281277062937e-110",
+    "reference": "direct mpmath binomial sum; no Python float division"
+  },
+  "scalar_grid_points": 440,
+  "scope": "Deterministic high-precision finite checks of scalar inequalities and the binomial replacement formula; analytic proof supplies the continuum theorem.",
+  "status": "PASS"
+}

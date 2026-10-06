@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "exact finite regression; mixed Weil estimate is external",
+  "prime_limit": 257,
+  "designs": 392,
+  "dense_hybrid_designs": 181,
+  "max_order": 256,
+  "anchors": [
+    {
+      "p": 3,
+      "K": 2,
+      "index": 1,
+      "size_A": 1,
+      "energy": 1,
+      "centered_numerator": 2,
+      "integer_rhs": 24,
+      "max_sum_fiber": 1
+    },
+    {
+      "p": 5,
+      "K": 2,
+      "index": 2,
+      "size_A": 1,
+      "energy": 1,
+      "centered_numerator": 4,
+      "integer_rhs": 80,
+      "max_sum_fiber": 1
+    },
+    {
+      "p": 5,
+      "K": 4,
+      "index": 1,
+      "size_A": 3,
+      "energy": 19,
+      "centered_numerator": 14,
+      "integer_rhs": 120,
+      "max_sum_fiber": 3
+    },
+    {
+      "p": 7,
+      "K": 2,
+      "index": 3,
+      "size_A": 1,
+      "energy": 1,
+      "centered_numerator": 6,
+      "integer_rhs": 168,
+      "max_sum_fiber": 1
+    },
+    {
+      "p": 257,
+      "K": 32,
+      "index": 8,
+      "size_A": 31,
+      "energy": 5551,
+      "centered_numerator": 503086,
+      "integer_rhs": 7202168,
+      "max_sum_fiber": 31
+    },
+    {
+      "p": 257,
+      "K": 64,
+      "index": 4,
+      "size_A": 63,
+      "energy": 67447,
+      "centered_numerator": 1580918,
+      "integer_rhs": 12564216,
+      "max_sum_fiber": 63
+    },
+    {
+      "p": 257,
+      "K": 128,
+      "index": 2,
+      "size_A": 127,
+      "energy": 1020343,
+      "centered_numerator": 2083510,
+      "integer_rhs": 16972280,
+      "max_sum_fiber": 127
+    },
+    {
+      "p": 257,
+      "K": 256,
+      "index": 1,
+      "size_A": 255,
+      "energy": 16452343,
+      "centered_numerator": 1526,
+      "integer_rhs": 524280,
+      "max_sum_fiber": 255
+    }
+  ],
+  "source_sha256": "1316f125c8a55dca1c265c33f19d84d6e93bbee1be35a2e3953689da164c6999"
+}

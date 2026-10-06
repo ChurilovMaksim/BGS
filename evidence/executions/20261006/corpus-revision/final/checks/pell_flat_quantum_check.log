@@ -1,0 +1,703 @@
+N 31 comm 0.02347450174832262 loop [0.16612168745990002, 0.16612168745989891, 1.4074956722062628]
+N 63 comm 0.003633648273170779 loop [0.09107539581927589, 0.09107539581927701, 1.2300910287062625]
+N 127 comm 0.0008094521359839533 loop [0.05007034666043036, 0.05007034666043206, 0.6834680307728289]
+N 255 comm 7.165154168521227e-05 loop [0.022291549009309936, 0.02229154900931499, 0.3491948547715801]
+N 511 comm 2.9930138507543388e-06 loop [0.0032759653047377013, 0.003275965304789973, 0.057415975967459364]
+{
+  "producer": "computations/verification/pell_flat_quantum_check.py",
+  "scope": "Finite exact rational geometry and floating-point operator/flow controls; not full theorem formalization.",
+  "source_sha256": "3f788062b86601e12acf04bad4e945de449af57a763037d6da89eeee1bfd6179",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "support": {
+    "halfwidth": "1/16",
+    "second_coordinate_range": [
+      "3/16",
+      "13/16"
+    ],
+    "separation_gap": "1/8",
+    "arithmetic": "exact rational"
+  },
+  "algebra": {
+    "weyl_product_max_error": 2.0358293740687926e-15,
+    "cat_covariance_max_error": 1.4906276899456693e-15,
+    "nodal_control_max_error": 1.3854480080019692e-15,
+    "negative_controls": [
+      {
+        "N": 7,
+        "omitted_half_period_error": 2.0000000000000004
+      },
+      {
+        "N": 9,
+        "omitted_half_period_error": 2.000000000000001
+      },
+      {
+        "N": 15,
+        "omitted_half_period_error": 1.9999999999999998
+      },
+      {
+        "N": 31,
+        "omitted_half_period_error": 1.9999999999999998
+      }
+    ]
+  },
+  "classical": {
+    "method": "DOP853, not interval integration; both separated supports tested",
+    "maximum_displacement": 0.2105900422886804,
+    "wrong_sign_negative_control": 0.1399502876408083,
+    "checks": [
+      {
+        "kappa": -0.013,
+        "point": [
+          0.26,
+          0.02
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.049495559550546964,
+        "wrong_sign_error": 0.03281204306088481
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.235,
+          -0.012
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.006376019001445243,
+        "wrong_sign_error": 0.030685146348749637
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.74,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.03678466305980477,
+        "wrong_sign_error": 0.07061278875257804
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.1,
+          0.3
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.52,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.7000000000000001,
+          -0.46
+        ],
+        "error": 6.805112029439897e-13,
+        "nonlinear_displacement": 0.012290540414495288,
+        "wrong_sign_error": 0.028457572337665882
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          0.753,
+          -0.506
+        ],
+        "error": 3.880229471064922e-13,
+        "nonlinear_displacement": 0.012109528822235927,
+        "wrong_sign_error": 0.01846730937611374
+      },
+      {
+        "kappa": -0.013,
+        "point": [
+          2.18,
+          -1.45
+        ],
+        "error": 2.9742874829707944e-13,
+        "nonlinear_displacement": 0.0065220393085505535,
+        "wrong_sign_error": 0.010087541250704324
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.26,
+          0.02
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.2105900422886804,
+        "wrong_sign_error": 0.029580262944244873
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.235,
+          -0.012
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.15433461084916622,
+        "wrong_sign_error": 0.027999479565891994
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.74,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.05342251467984749,
+        "wrong_sign_error": 0.06972335951981723
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.1,
+          0.3
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.52,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.7000000000000001,
+          -0.46
+        ],
+        "error": 1.1235457009206584e-13,
+        "nonlinear_displacement": 0.04148311745352373,
+        "wrong_sign_error": 0.024880324305170953
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          0.753,
+          -0.506
+        ],
+        "error": 7.405187574249794e-14,
+        "nonlinear_displacement": 0.030047105531686658,
+        "wrong_sign_error": 0.01678139390317801
+      },
+      {
+        "kappa": 0.007,
+        "point": [
+          2.18,
+          -1.45
+        ],
+        "error": 1.2989609388114332e-14,
+        "nonlinear_displacement": 0.02354107488563395,
+        "wrong_sign_error": 0.009960479931405586
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.26,
+          0.02
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.08536597565472126,
+        "wrong_sign_error": 0.03848774144734912
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.235,
+          -0.012
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.04809968110378293,
+        "wrong_sign_error": 0.04667049336015083
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.74,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0797216540555854,
+        "wrong_sign_error": 0.1399502876408083
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.1,
+          0.3
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.52,
+          0.01
+        ],
+        "error": 0.0,
+        "nonlinear_displacement": 0.0,
+        "wrong_sign_error": 0.0
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.7000000000000001,
+          -0.46
+        ],
+        "error": 1.018185535883731e-12,
+        "nonlinear_displacement": 0.020658874856665177,
+        "wrong_sign_error": 0.03662064996300629
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          0.753,
+          -0.506
+        ],
+        "error": 7.828182546631979e-13,
+        "nonlinear_displacement": 0.023803611639556577,
+        "wrong_sign_error": 0.02906236970114917
+      },
+      {
+        "kappa": 0.021,
+        "point": [
+          2.18,
+          -1.45
+        ],
+        "error": 3.36775052289795e-12,
+        "nonlinear_displacement": 0.019742959353890033,
+        "wrong_sign_error": 0.019992898237837897
+      }
+    ]
+  },
+  "analytic": [
+    {
+      "N": 31,
+      "HS_commutator_over_hbar": 307.24855341638244,
+      "exact_value": 307.2485534163823,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 63,
+      "HS_commutator_over_hbar": 313.7372117774388,
+      "exact_value": 313.7372117774388,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 127,
+      "HS_commutator_over_hbar": 315.31223300031405,
+      "exact_value": 315.31223300031405,
+      "limiting_value": 315.82734083485946
+    },
+    {
+      "N": 255,
+      "HS_commutator_over_hbar": 315.69952486905737,
+      "exact_value": 315.69952486905714,
+      "limiting_value": 315.82734083485946
+    }
+  ],
+  "pell_spectra": [
+    {
+      "N": 7,
+      "K": 3,
+      "odd_dimension": 3,
+      "kappa": 0.002,
+      "gauge_operator_error": 0.00010439764277024255,
+      "cluster_counts": [
+        1,
+        1,
+        1
+      ],
+      "trace_controls": [
+        {
+          "time": -3,
+          "trace_error": 5.132441138994679e-09,
+          "unitary_telescope_bound": 0.00031319292831072766
+        },
+        {
+          "time": 1,
+          "trace_error": 2.388061082161205e-05,
+          "unitary_telescope_bound": 0.00010439764277024255
+        },
+        {
+          "time": 3,
+          "trace_error": 5.132438696504025e-09,
+          "unitary_telescope_bound": 0.00031319292831072766
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "K": 3,
+      "odd_dimension": 3,
+      "kappa": 0.02,
+      "gauge_operator_error": 0.010413730990863757,
+      "cluster_counts": [
+        1,
+        1,
+        1
+      ],
+      "trace_controls": [
+        {
+          "time": -3,
+          "trace_error": 5.098341425508471e-05,
+          "unitary_telescope_bound": 0.031241192972591272
+        },
+        {
+          "time": 1,
+          "trace_error": 0.0023826922412210853,
+          "unitary_telescope_bound": 0.010413730990863757
+        },
+        {
+          "time": 3,
+          "trace_error": 5.0983414255528816e-05,
+          "unitary_telescope_bound": 0.031241192972591272
+        }
+      ]
+    },
+    {
+      "N": 41,
+      "K": 5,
+      "odd_dimension": 20,
+      "kappa": 0.002,
+      "gauge_operator_error": 0.001199866239445649,
+      "cluster_counts": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "trace_controls": [
+        {
+          "time": -20,
+          "trace_error": 1.0096217494866402e-05,
+          "unitary_telescope_bound": 0.02399732478891298
+        },
+        {
+          "time": -5,
+          "trace_error": 6.310170813496847e-07,
+          "unitary_telescope_bound": 0.005999331197228245
+        },
+        {
+          "time": 1,
+          "trace_error": 2.7754730797299583e-05,
+          "unitary_telescope_bound": 0.001199866239445649
+        },
+        {
+          "time": 5,
+          "trace_error": 6.310170837921696e-07,
+          "unitary_telescope_bound": 0.005999331197228245
+        },
+        {
+          "time": 20,
+          "trace_error": 1.0096217504969064e-05,
+          "unitary_telescope_bound": 0.02399732478891298
+        }
+      ]
+    },
+    {
+      "N": 41,
+      "K": 5,
+      "odd_dimension": 20,
+      "kappa": 0.02,
+      "gauge_operator_error": 0.10853769889328152,
+      "cluster_counts": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "trace_controls": [
+        {
+          "time": -20,
+          "trace_error": 0.07658593337157182,
+          "unitary_telescope_bound": 2.1707539778656306
+        },
+        {
+          "time": -5,
+          "trace_error": 0.004996386632356056,
+          "unitary_telescope_bound": 0.5426884944664077
+        },
+        {
+          "time": 1,
+          "trace_error": 0.0025918923667239318,
+          "unitary_telescope_bound": 0.10853769889328152
+        },
+        {
+          "time": 5,
+          "trace_error": 0.004996386632352688,
+          "unitary_telescope_bound": 0.5426884944664077
+        },
+        {
+          "time": 20,
+          "trace_error": 0.07658593337155528,
+          "unitary_telescope_bound": 2.1707539778656306
+        }
+      ]
+    },
+    {
+      "N": 239,
+      "K": 7,
+      "odd_dimension": 119,
+      "kappa": 0.002,
+      "gauge_operator_error": 0.0003675733931433706,
+      "cluster_counts": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "trace_controls": [
+        {
+          "time": -119,
+          "trace_error": 3.941261674145829e-06,
+          "unitary_telescope_bound": 0.043741233784061105
+        },
+        {
+          "time": -7,
+          "trace_error": 1.3637642126699858e-08,
+          "unitary_telescope_bound": 0.0025730137520035942
+        },
+        {
+          "time": 1,
+          "trace_error": 1.2828444267265993e-06,
+          "unitary_telescope_bound": 0.0003675733931433706
+        },
+        {
+          "time": 7,
+          "trace_error": 1.3637634466160986e-08,
+          "unitary_telescope_bound": 0.0025730137520035942
+        },
+        {
+          "time": 119,
+          "trace_error": 3.941261542362353e-06,
+          "unitary_telescope_bound": 0.043741233784061105
+        }
+      ]
+    },
+    {
+      "N": 239,
+      "K": 7,
+      "odd_dimension": 119,
+      "kappa": 0.02,
+      "gauge_operator_error": 0.022884278176607268,
+      "cluster_counts": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "trace_controls": [
+        {
+          "time": -119,
+          "trace_error": 0.013337572200793148,
+          "unitary_telescope_bound": 2.7232291030162648
+        },
+        {
+          "time": -7,
+          "trace_error": 4.6811300065884205e-05,
+          "unitary_telescope_bound": 0.16018994723625088
+        },
+        {
+          "time": 1,
+          "trace_error": 4.798021488240123e-05,
+          "unitary_telescope_bound": 0.022884278176607268
+        },
+        {
+          "time": 7,
+          "trace_error": 4.6811300058223666e-05,
+          "unitary_telescope_bound": 0.16018994723625088
+        },
+        {
+          "time": 119,
+          "trace_error": 0.013337572200665365,
+          "unitary_telescope_bound": 2.7232291030162648
+        }
+      ]
+    }
+  ],
+  "flat": [
+    {
+      "N": 31,
+      "commutator_operator_norm": 0.02347450174832262,
+      "hermiticity_frobenius_error": 0.0,
+      "parity_frobenius_error": 1.3780967872517297e-16,
+      "checks": [
+        {
+          "kappa": -0.02,
+          "quantum_exponent": -3.895574890451343,
+          "gauge_operator_error": 0.16612168745990002,
+          "measured_commutator_product_bound": 0.17811869438691869,
+          "independent_expm_error": 1.7311697496018413e-13
+        },
+        {
+          "kappa": 0.02,
+          "quantum_exponent": 3.895574890451343,
+          "gauge_operator_error": 0.16612168745989891,
+          "measured_commutator_product_bound": 0.17811869438691869,
+          "independent_expm_error": 1.732327390758922e-13
+        },
+        {
+          "kappa": 0.1,
+          "quantum_exponent": 19.477874452256717,
+          "gauge_operator_error": 1.4074956722062628,
+          "measured_commutator_product_bound": 4.452967359672968,
+          "independent_expm_error": 1.7505921409488877e-13
+        }
+      ],
+      "seconds": 0.0032627310010866495,
+      "precision_warning": "Floating-point value; small residual is not an exact zero or a proof of asymptotic rate."
+    },
+    {
+      "N": 63,
+      "commutator_operator_norm": 0.003633648273170779,
+      "hermiticity_frobenius_error": 1.2284792326410193e-16,
+      "parity_frobenius_error": 2.747429475270223e-15,
+      "checks": [
+        {
+          "kappa": -0.02,
+          "quantum_exponent": -7.916813487046279,
+          "gauge_operator_error": 0.09107539581927589,
+          "measured_commutator_product_bound": 0.11387115292394599,
+          "independent_expm_error": 2.1520163651206743e-13
+        },
+        {
+          "kappa": 0.02,
+          "quantum_exponent": 7.916813487046279,
+          "gauge_operator_error": 0.09107539581927701,
+          "measured_commutator_product_bound": 0.11387115292394599,
+          "independent_expm_error": 2.1523803993839448e-13
+        },
+        {
+          "kappa": 0.1,
+          "quantum_exponent": 39.5840674352314,
+          "gauge_operator_error": 1.2300910287062625,
+          "measured_commutator_product_bound": 2.8467788230986497,
+          "independent_expm_error": 2.169472011018838e-13
+        }
+      ],
+      "seconds": 0.016603632999249385,
+      "precision_warning": "Floating-point value; small residual is not an exact zero or a proof of asymptotic rate."
+    },
+    {
+      "N": 127,
+      "commutator_operator_norm": 0.0008094521359839533,
+      "hermiticity_frobenius_error": 4.788085549291937e-16,
+      "parity_frobenius_error": 3.5488703697958195e-15,
+      "checks": [
+        {
+          "kappa": -0.02,
+          "quantum_exponent": -15.95929068023615,
+          "gauge_operator_error": 0.05007034666043036,
+          "measured_commutator_product_bound": 0.10308330820430554,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.02,
+          "quantum_exponent": 15.95929068023615,
+          "gauge_operator_error": 0.05007034666043206,
+          "measured_commutator_product_bound": 0.10308330820430554,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.1,
+          "quantum_exponent": 79.79645340118076,
+          "gauge_operator_error": 0.6834680307728289,
+          "measured_commutator_product_bound": 2.577082705107639,
+          "independent_expm_error": null
+        }
+      ],
+      "seconds": 0.026932923999993363,
+      "precision_warning": "Floating-point value; small residual is not an exact zero or a proof of asymptotic rate."
+    },
+    {
+      "N": 255,
+      "commutator_operator_norm": 7.165154168521227e-05,
+      "hermiticity_frobenius_error": 3.4774134164778524e-16,
+      "parity_frobenius_error": 5.88073754815242e-15,
+      "checks": [
+        {
+          "kappa": -0.02,
+          "quantum_exponent": -32.04424506661589,
+          "gauge_operator_error": 0.022291549009309936,
+          "measured_commutator_product_bound": 0.03678710674780608,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.02,
+          "quantum_exponent": 32.04424506661589,
+          "gauge_operator_error": 0.02229154900931499,
+          "measured_commutator_product_bound": 0.03678710674780608,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.1,
+          "quantum_exponent": 160.22122533307947,
+          "gauge_operator_error": 0.3491948547715801,
+          "measured_commutator_product_bound": 0.9196776686951521,
+          "independent_expm_error": null
+        }
+      ],
+      "seconds": 0.14823223399980634,
+      "precision_warning": "Floating-point value; small residual is not an exact zero or a proof of asymptotic rate."
+    },
+    {
+      "N": 511,
+      "commutator_operator_norm": 2.9930138507543388e-06,
+      "hermiticity_frobenius_error": 5.954497662650797e-16,
+      "parity_frobenius_error": 7.0433202018751265e-15,
+      "checks": [
+        {
+          "kappa": -0.02,
+          "quantum_exponent": -64.21415383937537,
+          "gauge_operator_error": 0.0032759653047377013,
+          "measured_commutator_product_bound": 0.006170782785022674,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.02,
+          "quantum_exponent": 64.21415383937537,
+          "gauge_operator_error": 0.003275965304789973,
+          "measured_commutator_product_bound": 0.006170782785022674,
+          "independent_expm_error": null
+        },
+        {
+          "kappa": 0.1,
+          "quantum_exponent": 321.0707691968769,
+          "gauge_operator_error": 0.057415975967459364,
+          "measured_commutator_product_bound": 0.1542695696255669,
+          "independent_expm_error": null
+        }
+      ],
+      "seconds": 0.9883569679986977,
+      "precision_warning": "Floating-point value; small residual is not an exact zero or a proof of asymptotic rate."
+    }
+  ],
+  "status": "PASS"
+}

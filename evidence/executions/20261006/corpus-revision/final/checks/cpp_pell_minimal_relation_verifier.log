@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Exact finite combinatorial controls only; not a BGS or Gaussian-limit proof.",
+  "polynomial_controls": 624,
+  "minimal_polynomial_equalities": 8,
+  "eight_word_phase_histogram": {"-12":8,"-8":8,"-4":8,"0":8,"4":8,"8":8,"12":8},
+  "matching_controls": [
+    {"r":1,"pairings":1,"crossings":0},
+    {"r":2,"pairings":3,"crossings":1},
+    {"r":3,"pairings":15,"crossings":15},
+    {"r":4,"pairings":105,"crossings":210},
+    {"r":5,"pairings":945,"crossings":3150},
+    {"r":6,"pairings":10395,"crossings":51975}
+  ]
+}

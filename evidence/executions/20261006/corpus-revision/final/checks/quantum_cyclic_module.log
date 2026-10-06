@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "exact modular orbit and Gaussian-integer identities; dense checks numerical",
+  "configurations": 67,
+  "lag_modules": 1332,
+  "all_time_count_checks": 9324,
+  "dense_checks": 16,
+  "max_dense_relative_error": 6.672149336016527e-16,
+  "even_order_negative_control": {
+    "p": 7,
+    "K": 8,
+    "measured_normalized_squared_norm": 64,
+    "inapplicable_odd_order_value": 32
+  },
+  "source_sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04"
+}

@@ -1,0 +1,699 @@
+{
+  "producer": "computations/verification/return_trace_obstruction.py",
+  "source_sha256": "122fb17a191b8c7536251bf203df84728018ae909c57d4a70ecf703b571e5602",
+  "input_commit": null,
+  "dirty": null,
+  "upstream_commit": null,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "exact": {
+    "rational_pair_identities_and_bounds": 3000,
+    "integer_mark_identities": 3000,
+    "domain": "all multiplicity vectors on four quarter-circle sites, D=1..10; caps 1,3,7",
+    "omitted_diagonal_counterexample": {
+      "D": 1,
+      "counts": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "pair": "0"
+    }
+  },
+  "numerical": {
+    "cases": [
+      {
+        "D": 1,
+        "family": "clock",
+        "L": 0.5,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -0.044068846918716265
+      },
+      {
+        "D": 1,
+        "family": "clock",
+        "L": 1.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -6.974685763383448e-06
+      },
+      {
+        "D": 1,
+        "family": "clock",
+        "L": 3.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "clock",
+        "L": 8.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "coincident",
+        "L": 0.5,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -0.044068846918716265
+      },
+      {
+        "D": 1,
+        "family": "coincident",
+        "L": 1.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -6.974685763383448e-06
+      },
+      {
+        "D": 1,
+        "family": "coincident",
+        "L": 3.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "coincident",
+        "L": 8.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "random",
+        "L": 0.5,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -0.044068846918716265
+      },
+      {
+        "D": 1,
+        "family": "random",
+        "L": 1.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -6.974685763383448e-06
+      },
+      {
+        "D": 1,
+        "family": "random",
+        "L": 3.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "random",
+        "L": 8.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "two_bands",
+        "L": 0.5,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -0.044068846918716265
+      },
+      {
+        "D": 1,
+        "family": "two_bands",
+        "L": 1.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": -6.974685763383448e-06
+      },
+      {
+        "D": 1,
+        "family": "two_bands",
+        "L": 3.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 1,
+        "family": "two_bands",
+        "L": 8.0,
+        "pair": 0.0,
+        "residual": 0.0,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 4,
+        "family": "clock",
+        "L": 0.5,
+        "pair": 6.974684712417995e-06,
+        "residual": 2.833833428333987e-17,
+        "lower_bound": -0.5
+      },
+      {
+        "D": 4,
+        "family": "clock",
+        "L": 1.0,
+        "pair": 0.08643481121330802,
+        "residual": 4.163336342344337e-17,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 4,
+        "family": "clock",
+        "L": 3.0,
+        "pair": 1.9924929025057063,
+        "residual": 0.0,
+        "lower_bound": 1.9924929025025528
+      },
+      {
+        "D": 4,
+        "family": "clock",
+        "L": 8.0,
+        "pair": 5.999986050630576,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 5.999986050630575
+      },
+      {
+        "D": 4,
+        "family": "coincident",
+        "L": 0.5,
+        "pair": 3.0,
+        "residual": 0.0,
+        "lower_bound": 0.32172495803387724
+      },
+      {
+        "D": 4,
+        "family": "coincident",
+        "L": 1.0,
+        "pair": 3.0,
+        "residual": 0.0,
+        "lower_bound": 0.9118762555319924
+      },
+      {
+        "D": 4,
+        "family": "coincident",
+        "L": 3.0,
+        "pair": 3.0225212924923412,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 1.9976015325593839
+      },
+      {
+        "D": 4,
+        "family": "coincident",
+        "L": 8.0,
+        "pair": 6.000041848108276,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 5.999986050630575
+      },
+      {
+        "D": 4,
+        "family": "random",
+        "L": 0.5,
+        "pair": 2.3458329459366,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 0.2558244229258202
+      },
+      {
+        "D": 4,
+        "family": "random",
+        "L": 1.0,
+        "pair": 2.802135789057253,
+        "residual": 0.0,
+        "lower_bound": 0.8387457845582578
+      },
+      {
+        "D": 4,
+        "family": "random",
+        "L": 3.0,
+        "pair": 3.0009976452110925,
+        "residual": 0.0,
+        "lower_bound": 1.997191831659925
+      },
+      {
+        "D": 4,
+        "family": "random",
+        "L": 8.0,
+        "pair": 6.000040698653748,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 5.999986050630575
+      },
+      {
+        "D": 4,
+        "family": "two_bands",
+        "L": 0.5,
+        "pair": 1.499236822156917,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 0.32070251593351884
+      },
+      {
+        "D": 4,
+        "family": "two_bands",
+        "L": 1.0,
+        "pair": 1.4998201180577007,
+        "residual": 0.0,
+        "lower_bound": 0.9107416414925165
+      },
+      {
+        "D": 4,
+        "family": "two_bands",
+        "L": 3.0,
+        "pair": 2.254105653418975,
+        "residual": 0.0,
+        "lower_bound": 1.99759517607916
+      },
+      {
+        "D": 4,
+        "family": "two_bands",
+        "L": 8.0,
+        "pair": 6.0000000152725965,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 5.999986050630575
+      },
+      {
+        "D": 11,
+        "family": "clock",
+        "L": 0.5,
+        "pair": 6.974684712418e-06,
+        "residual": 2.8333252085656346e-17,
+        "lower_bound": -0.5
+      },
+      {
+        "D": 11,
+        "family": "clock",
+        "L": 1.0,
+        "pair": 0.08643481121330804,
+        "residual": 5.551115123125783e-17,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 11,
+        "family": "clock",
+        "L": 3.0,
+        "pair": 2.000000000003153,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 2.0
+      },
+      {
+        "D": 11,
+        "family": "clock",
+        "L": 8.0,
+        "pair": 6.99473369558464,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 6.994733695584639
+      },
+      {
+        "D": 11,
+        "family": "coincident",
+        "L": 0.5,
+        "pair": 10.0,
+        "residual": 1.7763568394002505e-15,
+        "lower_bound": 0.44325554154054525
+      },
+      {
+        "D": 11,
+        "family": "coincident",
+        "L": 1.0,
+        "pair": 10.0,
+        "residual": 0.0,
+        "lower_bound": 1.5832425639672207
+      },
+      {
+        "D": 11,
+        "family": "coincident",
+        "L": 3.0,
+        "pair": 10.0,
+        "residual": 0.0,
+        "lower_bound": 2.7325013036382026
+      },
+      {
+        "D": 11,
+        "family": "coincident",
+        "L": 8.0,
+        "pair": 10.052663044153615,
+        "residual": 0.0,
+        "lower_bound": 6.99473881520202
+      },
+      {
+        "D": 11,
+        "family": "random",
+        "L": 0.5,
+        "pair": 0.3875713278960626,
+        "residual": 3.885780586188048e-16,
+        "lower_bound": -0.3521903399620241
+      },
+      {
+        "D": 11,
+        "family": "random",
+        "L": 1.0,
+        "pair": 0.7281594191250875,
+        "residual": 6.661338147750939e-16,
+        "lower_bound": 0.24809665549957316
+      },
+      {
+        "D": 11,
+        "family": "random",
+        "L": 3.0,
+        "pair": 2.2022392845709,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 2.114784132082921
+      },
+      {
+        "D": 11,
+        "family": "random",
+        "L": 8.0,
+        "pair": 7.012723667197034,
+        "residual": 2.6645352591003757e-15,
+        "lower_bound": 6.994734497836914
+      },
+      {
+        "D": 11,
+        "family": "two_bands",
+        "L": 0.5,
+        "pair": 4.347375625234201,
+        "residual": 1.7763568394002505e-15,
+        "lower_bound": -0.4920782220352431
+      },
+      {
+        "D": 11,
+        "family": "two_bands",
+        "L": 1.0,
+        "pair": 4.4941511607383395,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 0.013296604688499025
+      },
+      {
+        "D": 11,
+        "family": "two_bands",
+        "L": 3.0,
+        "pair": 4.5399826164325825,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 2.006151792839552
+      },
+      {
+        "D": 11,
+        "family": "two_bands",
+        "L": 8.0,
+        "pair": 7.040610920226543,
+        "residual": 1.7763568394002505e-15,
+        "lower_bound": 6.994733738580912
+      },
+      {
+        "D": 37,
+        "family": "clock",
+        "L": 0.5,
+        "pair": 6.974684712418079e-06,
+        "residual": 2.825363098861444e-17,
+        "lower_bound": -0.5
+      },
+      {
+        "D": 37,
+        "family": "clock",
+        "L": 1.0,
+        "pair": 0.08643481121330829,
+        "residual": 3.0531133177191805e-16,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 37,
+        "family": "clock",
+        "L": 3.0,
+        "pair": 2.000000000003154,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 2.0
+      },
+      {
+        "D": 37,
+        "family": "clock",
+        "L": 8.0,
+        "pair": 7.000000000000001,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 7.0
+      },
+      {
+        "D": 37,
+        "family": "coincident",
+        "L": 0.5,
+        "pair": 36.0,
+        "residual": 0.0,
+        "lower_bound": 0.47955854284029575
+      },
+      {
+        "D": 37,
+        "family": "coincident",
+        "L": 1.0,
+        "pair": 36.0,
+        "residual": 7.105427357601002e-15,
+        "lower_bound": 1.8414145977531344
+      },
+      {
+        "D": 37,
+        "family": "coincident",
+        "L": 3.0,
+        "pair": 36.0,
+        "residual": 0.0,
+        "lower_bound": 4.852630521300429
+      },
+      {
+        "D": 37,
+        "family": "coincident",
+        "L": 8.0,
+        "pair": 36.0,
+        "residual": 0.0,
+        "lower_bound": 7.0808912390846395
+      },
+      {
+        "D": 37,
+        "family": "random",
+        "L": 0.5,
+        "pair": 0.4606425717967859,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": -0.48394905011659195
+      },
+      {
+        "D": 37,
+        "family": "random",
+        "L": 1.0,
+        "pair": 0.9120724193354948,
+        "residual": 0.0,
+        "lower_bound": 0.03017323838288477
+      },
+      {
+        "D": 37,
+        "family": "random",
+        "L": 3.0,
+        "pair": 3.082743978072182,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 2.0467429229911156
+      },
+      {
+        "D": 37,
+        "family": "random",
+        "L": 8.0,
+        "pair": 7.6011221771638215,
+        "residual": 0.0,
+        "lower_bound": 7.001325475883034
+      },
+      {
+        "D": 37,
+        "family": "two_bands",
+        "L": 0.5,
+        "pair": 10.139329332038827,
+        "residual": 3.552713678800501e-15,
+        "lower_bound": 0.4469225821138836
+      },
+      {
+        "D": 37,
+        "family": "two_bands",
+        "L": 1.0,
+        "pair": 14.58325297239116,
+        "residual": 3.552713678800501e-15,
+        "lower_bound": 1.7800641711425302
+      },
+      {
+        "D": 37,
+        "family": "two_bands",
+        "L": 3.0,
+        "pair": 17.21239427129932,
+        "residual": 3.552713678800501e-15,
+        "lower_bound": 4.757589404727466
+      },
+      {
+        "D": 37,
+        "family": "two_bands",
+        "L": 8.0,
+        "pair": 17.56277232095809,
+        "residual": 0.0,
+        "lower_bound": 7.078196184949109
+      },
+      {
+        "D": 101,
+        "family": "clock",
+        "L": 0.5,
+        "pair": 6.974684712417931e-06,
+        "residual": 2.8401861754383945e-17,
+        "lower_bound": -0.5
+      },
+      {
+        "D": 101,
+        "family": "clock",
+        "L": 1.0,
+        "pair": 0.08643481121330784,
+        "residual": 1.3877787807814457e-16,
+        "lower_bound": 0.0
+      },
+      {
+        "D": 101,
+        "family": "clock",
+        "L": 3.0,
+        "pair": 2.000000000003152,
+        "residual": 1.3322676295501878e-15,
+        "lower_bound": 2.0
+      },
+      {
+        "D": 101,
+        "family": "clock",
+        "L": 8.0,
+        "pair": 6.999999999999997,
+        "residual": 2.6645352591003757e-15,
+        "lower_bound": 7.0
+      },
+      {
+        "D": 101,
+        "family": "coincident",
+        "L": 0.5,
+        "pair": 100.0,
+        "residual": 1.4210854715202004e-14,
+        "lower_bound": 0.4923303359618538
+      },
+      {
+        "D": 101,
+        "family": "coincident",
+        "L": 1.0,
+        "pair": 100.0,
+        "residual": 0.0,
+        "lower_bound": 1.9393449703058105
+      },
+      {
+        "D": 101,
+        "family": "coincident",
+        "L": 3.0,
+        "pair": 100.0,
+        "residual": 1.4210854715202004e-14,
+        "lower_bound": 6.547543928032274
+      },
+      {
+        "D": 101,
+        "family": "coincident",
+        "L": 8.0,
+        "pair": 100.0,
+        "residual": 0.0,
+        "lower_bound": 9.229074701402677
+      },
+      {
+        "D": 101,
+        "family": "random",
+        "L": 0.5,
+        "pair": 0.33070110900336674,
+        "residual": 8.326672684688674e-16,
+        "lower_bound": -0.49568304374634364
+      },
+      {
+        "D": 101,
+        "family": "random",
+        "L": 1.0,
+        "pair": 0.799713138849965,
+        "residual": 4.440892098500626e-16,
+        "lower_bound": 0.008436774624493992
+      },
+      {
+        "D": 101,
+        "family": "random",
+        "L": 3.0,
+        "pair": 2.660973823098766,
+        "residual": 1.3322676295501878e-15,
+        "lower_bound": 2.0197832793047357
+      },
+      {
+        "D": 101,
+        "family": "random",
+        "L": 8.0,
+        "pair": 7.380861919363267,
+        "residual": 8.881784197001252e-16,
+        "lower_bound": 7.009697192178207
+      },
+      {
+        "D": 101,
+        "family": "two_bands",
+        "L": 0.5,
+        "pair": 14.585290413767625,
+        "residual": 1.7763568394002505e-15,
+        "lower_bound": 0.4178322519811535
+      },
+      {
+        "D": 101,
+        "family": "two_bands",
+        "L": 1.0,
+        "pair": 26.057996523057625,
+        "residual": 3.552713678800501e-15,
+        "lower_bound": 1.793750827680562
+      },
+      {
+        "D": 101,
+        "family": "two_bands",
+        "L": 3.0,
+        "pair": 44.9070931249019,
+        "residual": 7.105427357601002e-15,
+        "lower_bound": 6.206142181880784
+      },
+      {
+        "D": 101,
+        "family": "two_bands",
+        "L": 8.0,
+        "pair": 49.96619124321714,
+        "residual": 7.105427357601002e-15,
+        "lower_bound": 9.061729425050334
+      }
+    ],
+    "maximum_pair_trace_residual": 1.4210854715202004e-14,
+    "maximum_quadrature_error": 5.985434370359144e-12,
+    "half_filled_cells": [
+      {
+        "D": 128,
+        "n": 16,
+        "K": 8,
+        "return_modulus": 0.6376435773361455,
+        "pair": 0.9318971689268224,
+        "mixture_limit": 1.000013949369425
+      },
+      {
+        "D": 256,
+        "n": 32,
+        "K": 8,
+        "return_modulus": 0.6368755077217535,
+        "pair": 0.9659555591481237,
+        "mixture_limit": 1.000013949369425
+      },
+      {
+        "D": 512,
+        "n": 64,
+        "K": 8,
+        "return_modulus": 0.6366836927259825,
+        "pair": 0.9829847542587743,
+        "mixture_limit": 1.000013949369425
+      }
+    ],
+    "clock_pair": 0.08643481121330784,
+    "sine_pair": 0.3167433509644965,
+    "scope": "float64/complex128, analytic Gaussian tail cutoffs; not interval-certified"
+  }
+}

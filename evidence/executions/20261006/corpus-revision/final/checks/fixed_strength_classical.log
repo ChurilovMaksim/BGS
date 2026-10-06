@@ -1,0 +1,289 @@
+{
+  "producer": "computations/verification/fixed_strength_classical.py",
+  "status": "PASS",
+  "scope": "Finite ODE/gradient sign and conjugacy checks, not proof of Anosov dynamics or certified trajectory intervals.",
+  "source_sha256": "430b3631be71e44560c9b99e90eb73ef8a491e2e3a7e843447c0203e9204d0c8",
+  "gradient_errors": [
+    2.188772718625387e-09,
+    5.7998086333554966e-09,
+    7.962627890378826e-09,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "checks": [
+    {
+      "kappa": -0.125,
+      "point": [
+        0.25,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.04660124790440334,
+      "Hamiltonian_conservation_error": 2.3590018827235326e-12
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.27,
+        0.01
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.058968608390587374,
+      "Hamiltonian_conservation_error": 1.372346680739156e-12
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.75,
+        -0.02
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.053503041103344806,
+      "Hamiltonian_conservation_error": 1.2885248423799567e-12
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.11,
+        0.28
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.0,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.13,
+        0.37
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.7499999999999997,
+        -0.4999999999999998
+      ],
+      "conjugacy_circle_error": 1.1860512572070547e-12,
+      "nonlinear_displacement_from_M": 0.0083551015276917,
+      "Hamiltonian_conservation_error": 8.36664071357518e-13
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        0.7699999999999997,
+        -0.5099999999999998
+      ],
+      "conjugacy_circle_error": 2.9304336734981007e-13,
+      "nonlinear_displacement_from_M": 0.012717351761542872,
+      "Hamiltonian_conservation_error": 1.8153256675645935e-12
+    },
+    {
+      "kappa": -0.125,
+      "point": [
+        2.329999999999999,
+        -1.5599999999999994
+      ],
+      "conjugacy_circle_error": 7.046585537295869e-13,
+      "nonlinear_displacement_from_M": 0.01103131663933965,
+      "Hamiltonian_conservation_error": 8.97171226199589e-13
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.25,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.04001205318880763,
+      "Hamiltonian_conservation_error": 6.661338147750939e-16
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.27,
+        0.01
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.05514033272362817,
+      "Hamiltonian_conservation_error": 2.220446049250313e-16
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.75,
+        -0.02
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.055676861375963504,
+      "Hamiltonian_conservation_error": 2.220446049250313e-15
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.11,
+        0.28
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.0,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.13,
+        0.37
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.7499999999999997,
+        -0.4999999999999998
+      ],
+      "conjugacy_circle_error": 1.2212453270876722e-15,
+      "nonlinear_displacement_from_M": 0.007519945989275856,
+      "Hamiltonian_conservation_error": 7.549516567451064e-15
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        0.7699999999999997,
+        -0.5099999999999998
+      ],
+      "conjugacy_circle_error": 1.6653345369377348e-15,
+      "nonlinear_displacement_from_M": 0.012018833138182972,
+      "Hamiltonian_conservation_error": 1.4099832412739488e-14
+    },
+    {
+      "kappa": 0.01,
+      "point": [
+        2.329999999999999,
+        -1.5599999999999994
+      ],
+      "conjugacy_circle_error": 2.9976021664879227e-15,
+      "nonlinear_displacement_from_M": 0.013187740355999455,
+      "Hamiltonian_conservation_error": 1.8540724511240114e-14
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.25,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.020239564326618442,
+      "Hamiltonian_conservation_error": 2.360334150353083e-12
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.27,
+        0.01
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.017134714480865676,
+      "Hamiltonian_conservation_error": 5.463407504180395e-13
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.75,
+        -0.02
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.07699655231293745,
+      "Hamiltonian_conservation_error": 2.7751134723530413e-12
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.11,
+        0.28
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.0,
+        0.0
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.13,
+        0.37
+      ],
+      "conjugacy_circle_error": 0.0,
+      "nonlinear_displacement_from_M": 0.0,
+      "Hamiltonian_conservation_error": 0.0
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.7499999999999997,
+        -0.4999999999999998
+      ],
+      "conjugacy_circle_error": 1.5748513604307846e-13,
+      "nonlinear_displacement_from_M": 0.0083551015287201,
+      "Hamiltonian_conservation_error": 1.5886181259361365e-12
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        0.7699999999999997,
+        -0.5099999999999998
+      ],
+      "conjugacy_circle_error": 7.381872890732666e-13,
+      "nonlinear_displacement_from_M": 0.01614697905690521,
+      "Hamiltonian_conservation_error": 3.362865541589599e-13
+    },
+    {
+      "kappa": 0.125,
+      "point": [
+        2.329999999999999,
+        -1.5599999999999994
+      ],
+      "conjugacy_circle_error": 2.1949109196839345e-13,
+      "nonlinear_displacement_from_M": 0.017274354397831537,
+      "Hamiltonian_conservation_error": 1.1549650125175503e-12
+    }
+  ]
+}

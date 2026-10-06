@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "radius": 8,
+  "dimension": 288,
+  "complex_variables": 144,
+  "orbit_equations": 1475,
+  "rules": {
+    "P": 3293,
+    "S": 1077,
+    "D": 1229,
+    "F": 105
+  },
+  "negative_controls_rejected": 4,
+  "independent_cpp_coefficients": "NOT_RUN",
+  "independent_cpp_proof_replay": null,
+  "proof_text_sha256": "ed26c33904551e11a5185d55702d781b4f2555d7a14153ceaf6e8a0b5f71d94a",
+  "certificate_sha256": "571fb52097457f81f09a980b05efd024c25514d1759e29863399e0e7dbf49c9f",
+  "equation_sha256": "7462bc1a522a57741028efd6642710fa50aa271b27f21bfc6a683f578aee53f4",
+  "source_sha256": {
+    "check_resonance_certificate.py": "e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5"
+  },
+  "scope": "Exact coefficient construction and real-algebra proof replay; no Lean, external priority or BGS claim."
+}

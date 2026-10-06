@@ -1,0 +1,85 @@
+{
+  "audits": [
+    {
+      "K": 11,
+      "exceptional_prime_rows": [
+        {
+          "direct_nonforced_excess": 240,
+          "finite_equality": true,
+          "normalized_common_root_count": 240,
+          "p": 23,
+          "sum_resultant_p_adic_valuations": 240
+        },
+        {
+          "direct_nonforced_excess": 48,
+          "finite_equality": true,
+          "normalized_common_root_count": 48,
+          "p": 67,
+          "sum_resultant_p_adic_valuations": 48
+        },
+        {
+          "direct_nonforced_excess": 32,
+          "finite_equality": true,
+          "normalized_common_root_count": 32,
+          "p": 89,
+          "sum_resultant_p_adic_valuations": 32
+        }
+      ],
+      "formula_orbit_count": 793,
+      "max_resultant_seen": 15813611,
+      "max_square_factor_M_seen": 109,
+      "normalized_nonforced_scaling_orbits": 793,
+      "resultant_absolute_cap": 61917364224,
+      "sharpened_weighted_budget_product_inequality": true
+    },
+    {
+      "K": 13,
+      "exceptional_prime_rows": [
+        {
+          "direct_nonforced_excess": 208,
+          "finite_equality": true,
+          "normalized_common_root_count": 208,
+          "p": 53,
+          "sum_resultant_p_adic_valuations": 208
+        },
+        {
+          "direct_nonforced_excess": 176,
+          "finite_equality": true,
+          "normalized_common_root_count": 176,
+          "p": 79,
+          "sum_resultant_p_adic_valuations": 176
+        },
+        {
+          "direct_nonforced_excess": 48,
+          "finite_equality": true,
+          "normalized_common_root_count": 48,
+          "p": 131,
+          "sum_resultant_p_adic_valuations": 48
+        },
+        {
+          "direct_nonforced_excess": 48,
+          "finite_equality": true,
+          "normalized_common_root_count": 48,
+          "p": 157,
+          "sum_resultant_p_adic_valuations": 48
+        },
+        {
+          "direct_nonforced_excess": 48,
+          "finite_equality": true,
+          "normalized_common_root_count": 48,
+          "p": 313,
+          "sum_resultant_p_adic_valuations": 48
+        }
+      ],
+      "formula_orbit_count": 1431,
+      "max_resultant_seen": 232058125,
+      "max_square_factor_M_seen": 325,
+      "normalized_nonforced_scaling_orbits": 1431,
+      "resultant_absolute_cap": 8916100448256,
+      "sharpened_weighted_budget_product_inequality": true
+    }
+  ],
+  "producer": "computations/verification/cayley_resultant_mass_budget.py",
+  "scope": "Exact finite regression of the Galois-orbit/common-root/resultant-valuation mechanism and sharpened K^3-square prime budget on the complete promoted K=11,13 exceptional sets. The universal weighted-prime theorem is proved separately in mathematics/cayley_resultant_mass_budget.md.",
+  "verdict": "PASS"
+}

@@ -1,0 +1,1392 @@
+{
+  "producer": "computations/verification/locality_robustness.py",
+  "status": "PASS",
+  "source_sha256": "a0c8473c6fbbb5a60ea90deabf41c6154265cc929cce8b92c76283ba2314b9a4",
+  "scope": "Exact finite rational covering, pair-count and origin-probability tests. No asymptotic theorem or interval-certified matrix calculation is inferred.",
+  "seed": 20260905,
+  "base_cases": 27,
+  "unfolded_cases": 27,
+  "thresholds_per_case": 3,
+  "origin_coverage_checks": 54,
+  "checks": [
+    {
+      "D": 25,
+      "K": 3,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "203/960",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        }
+      ]
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "31799/156000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        }
+      ]
+    },
+    {
+      "D": 17,
+      "K": 3,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "42153/136000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 108
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 108
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 108
+        }
+      ]
+    },
+    {
+      "D": 19,
+      "K": 3,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "1087/3040",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 4,
+          "ordered_pairs": 106
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 136
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 136
+        }
+      ]
+    },
+    {
+      "D": 25,
+      "K": 3,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "233/800",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 120
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 200
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 200
+        }
+      ]
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "343/1248",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 138
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 232
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 232
+        }
+      ]
+    },
+    {
+      "D": 21,
+      "K": 3,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "9/16",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 38
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 64
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 2,
+          "ordered_pairs": 136
+        }
+      ]
+    },
+    {
+      "D": 14,
+      "K": 3,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "5/8",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 7,
+          "ordered_pairs": 16
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 42
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 1,
+          "ordered_pairs": 94
+        }
+      ]
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "253/416",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 13,
+          "ordered_pairs": 32
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 88
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 228
+        }
+      ]
+    },
+    {
+      "D": 34,
+      "K": 5,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "87959/340000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        }
+      ]
+    },
+    {
+      "D": 34,
+      "K": 5,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "10997/42500",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        }
+      ]
+    },
+    {
+      "D": 46,
+      "K": 5,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "7069/36800",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        }
+      ]
+    },
+    {
+      "D": 37,
+      "K": 5,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "4721/14800",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 7,
+          "ordered_pairs": 156
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 276
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 276
+        }
+      ]
+    },
+    {
+      "D": 30,
+      "K": 5,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "913/2400",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 7,
+          "ordered_pairs": 98
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 164
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 164
+        }
+      ]
+    },
+    {
+      "D": 30,
+      "K": 5,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "223/600",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 6,
+          "ordered_pairs": 114
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 168
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 168
+        }
+      ]
+    },
+    {
+      "D": 42,
+      "K": 5,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "49/80",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 21,
+          "ordered_pairs": 72
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 12,
+          "ordered_pairs": 132
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 378
+        }
+      ]
+    },
+    {
+      "D": 36,
+      "K": 5,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "151/240",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 23,
+          "ordered_pairs": 32
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 8,
+          "ordered_pairs": 122
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 254
+        }
+      ]
+    },
+    {
+      "D": 47,
+      "K": 5,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "947/1504",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 25,
+          "ordered_pairs": 58
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 8,
+          "ordered_pairs": 152
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 432
+        }
+      ]
+    },
+    {
+      "D": 61,
+      "K": 9,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "142543/549000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 442
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 442
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 442
+        }
+      ]
+    },
+    {
+      "D": 71,
+      "K": 9,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "285559/1278000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 568
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 568
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 568
+        }
+      ]
+    },
+    {
+      "D": 55,
+      "K": 9,
+      "cover_length": "1/500",
+      "window_length": "7/4",
+      "exact_hit_probability": "75941/264000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        }
+      ]
+    },
+    {
+      "D": 76,
+      "K": 9,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "7741/27360",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 11,
+          "ordered_pairs": 414
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 618
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 618
+        }
+      ]
+    },
+    {
+      "D": 72,
+      "K": 9,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "421/1440",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 10,
+          "ordered_pairs": 384
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 558
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 558
+        }
+      ]
+    },
+    {
+      "D": 62,
+      "K": 9,
+      "cover_length": "1/10",
+      "window_length": "7/4",
+      "exact_hit_probability": "2479/7440",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 10,
+          "ordered_pairs": 306
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 414
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 414
+        }
+      ]
+    },
+    {
+      "D": 61,
+      "K": 9,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "309/488",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 35,
+          "ordered_pairs": 62
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 16,
+          "ordered_pairs": 170
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 7,
+          "ordered_pairs": 404
+        }
+      ]
+    },
+    {
+      "D": 88,
+      "K": 9,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "949/1584",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 42,
+          "ordered_pairs": 126
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 15,
+          "ordered_pairs": 284
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 778
+        }
+      ]
+    },
+    {
+      "D": 73,
+      "K": 9,
+      "cover_length": "1/2",
+      "window_length": "7/4",
+      "exact_hit_probability": "13859/21024",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 43,
+          "ordered_pairs": 88
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 18,
+          "ordered_pairs": 178
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 6,
+          "ordered_pairs": 574
+        }
+      ]
+    }
+  ],
+  "unfolded_checks": [
+    {
+      "D": 25,
+      "K": 3,
+      "cover_length": "11/7200",
+      "window_length": "7/4",
+      "exact_hit_probability": "121631/576000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 204
+        }
+      ],
+      "Lipschitz_constant": "77/48"
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "11/6000",
+      "window_length": "7/4",
+      "exact_hit_probability": "813407/3993600",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 208
+        }
+      ],
+      "Lipschitz_constant": "11/8"
+    },
+    {
+      "D": 17,
+      "K": 3,
+      "cover_length": "143/87000",
+      "window_length": "7/4",
+      "exact_hit_probability": "7326887/23664000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 108
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 108
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 2,
+          "ordered_pairs": 168
+        }
+      ],
+      "Lipschitz_constant": "44/29"
+    },
+    {
+      "D": 19,
+      "K": 3,
+      "cover_length": "41/340",
+      "window_length": "7/4",
+      "exact_hit_probability": "5861/15504",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 94
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 136
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 136
+        }
+      ],
+      "Lipschitz_constant": "88/51"
+    },
+    {
+      "D": 25,
+      "K": 3,
+      "cover_length": "11/128",
+      "window_length": "7/4",
+      "exact_hit_probability": "42101/153600",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 3,
+          "ordered_pairs": 164
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 200
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 200
+        }
+      ],
+      "Lipschitz_constant": "11/8"
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "19/150",
+      "window_length": "7/4",
+      "exact_hit_probability": "4723/15600",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 6,
+          "ordered_pairs": 96
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 222
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 232
+        }
+      ],
+      "Lipschitz_constant": "8/5"
+    },
+    {
+      "D": 21,
+      "K": 3,
+      "cover_length": "1177/3000",
+      "window_length": "7/4",
+      "exact_hit_probability": "2641/6000",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 8,
+          "ordered_pairs": 54
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 4,
+          "ordered_pairs": 114
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 134
+        }
+      ],
+      "Lipschitz_constant": "44/25"
+    },
+    {
+      "D": 14,
+      "K": 3,
+      "cover_length": "31/60",
+      "window_length": "7/4",
+      "exact_hit_probability": "977/1560",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 7,
+          "ordered_pairs": 14
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 3,
+          "ordered_pairs": 44
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 0,
+          "ordered_pairs": 80
+        }
+      ],
+      "Lipschitz_constant": "88/65"
+    },
+    {
+      "D": 26,
+      "K": 3,
+      "cover_length": "971/1770",
+      "window_length": "7/4",
+      "exact_hit_probability": "60497/92040",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 19,
+          "ordered_pairs": 14
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 8,
+          "ordered_pairs": 64
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 2,
+          "ordered_pairs": 222
+        }
+      ],
+      "Lipschitz_constant": "88/59"
+    },
+    {
+      "D": 34,
+      "K": 5,
+      "cover_length": "341/150000",
+      "window_length": "7/4",
+      "exact_hit_probability": "703927/2720000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 246
+        }
+      ],
+      "Lipschitz_constant": "22/15"
+    },
+    {
+      "D": 34,
+      "K": 5,
+      "cover_length": "77/33500",
+      "window_length": "7/4",
+      "exact_hit_probability": "11799987/45560000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 250
+        }
+      ],
+      "Lipschitz_constant": "88/67"
+    },
+    {
+      "D": 46,
+      "K": 5,
+      "cover_length": "319/155000",
+      "window_length": "7/4",
+      "exact_hit_probability": "10961067/57040000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 384
+        }
+      ],
+      "Lipschitz_constant": "77/62"
+    },
+    {
+      "D": 37,
+      "K": 5,
+      "cover_length": "321/3050",
+      "window_length": "7/4",
+      "exact_hit_probability": "73059/225700",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 8,
+          "ordered_pairs": 180
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 276
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 286
+        }
+      ],
+      "Lipschitz_constant": "88/61"
+    },
+    {
+      "D": 30,
+      "K": 5,
+      "cover_length": "77/900",
+      "window_length": "7/4",
+      "exact_hit_probability": "1601/4320",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 6,
+          "ordered_pairs": 118
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 164
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 212
+        }
+      ],
+      "Lipschitz_constant": "77/54"
+    },
+    {
+      "D": 30,
+      "K": 5,
+      "cover_length": "341/3550",
+      "window_length": "7/4",
+      "exact_hit_probability": "7879/21300",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 5,
+          "ordered_pairs": 112
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 5,
+          "ordered_pairs": 168
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 208
+        }
+      ],
+      "Lipschitz_constant": "88/71"
+    },
+    {
+      "D": 42,
+      "K": 5,
+      "cover_length": "191/400",
+      "window_length": "7/4",
+      "exact_hit_probability": "72727/124800",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 23,
+          "ordered_pairs": 64
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 194
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 4,
+          "ordered_pairs": 352
+        }
+      ],
+      "Lipschitz_constant": "22/13"
+    },
+    {
+      "D": 36,
+      "K": 5,
+      "cover_length": "709/1500",
+      "window_length": "7/4",
+      "exact_hit_probability": "10639/18000",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 16,
+          "ordered_pairs": 58
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 8,
+          "ordered_pairs": 154
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 3,
+          "ordered_pairs": 290
+        }
+      ],
+      "Lipschitz_constant": "77/45"
+    },
+    {
+      "D": 47,
+      "K": 5,
+      "cover_length": "279/460",
+      "window_length": "7/4",
+      "exact_hit_probability": "1149549/1729600",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 29,
+          "ordered_pairs": 44
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 12,
+          "ordered_pairs": 138
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 2,
+          "ordered_pairs": 434
+        }
+      ],
+      "Lipschitz_constant": "44/23"
+    },
+    {
+      "D": 61,
+      "K": 9,
+      "cover_length": "77/34500",
+      "window_length": "7/4",
+      "exact_hit_probability": "52493461/202032000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 442
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 442
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 8,
+          "ordered_pairs": 502
+        }
+      ],
+      "Lipschitz_constant": "44/23"
+    },
+    {
+      "D": 71,
+      "K": 9,
+      "cover_length": "121/67500",
+      "window_length": "7/4",
+      "exact_hit_probability": "34244147/153360000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 568
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 568
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 8,
+          "ordered_pairs": 784
+        }
+      ],
+      "Lipschitz_constant": "22/15"
+    },
+    {
+      "D": 55,
+      "K": 9,
+      "cover_length": "121/59625",
+      "window_length": "7/4",
+      "exact_hit_probability": "12079327/41976000",
+      "cover_exceeds_mean_spacing": false,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 350
+        }
+      ],
+      "Lipschitz_constant": "77/53"
+    },
+    {
+      "D": 76,
+      "K": 9,
+      "cover_length": "44/435",
+      "window_length": "7/4",
+      "exact_hit_probability": "89389/317376",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 10,
+          "ordered_pairs": 408
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 616
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 618
+        }
+      ],
+      "Lipschitz_constant": "44/29"
+    },
+    {
+      "D": 72,
+      "K": 9,
+      "cover_length": "539/5400",
+      "window_length": "7/4",
+      "exact_hit_probability": "25379/86400",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 11,
+          "ordered_pairs": 422
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 554
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 8,
+          "ordered_pairs": 654
+        }
+      ],
+      "Lipschitz_constant": "22/15"
+    },
+    {
+      "D": 62,
+      "K": 9,
+      "cover_length": "11/108",
+      "window_length": "7/4",
+      "exact_hit_probability": "298069/892800",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 11,
+          "ordered_pairs": 328
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 9,
+          "ordered_pairs": 414
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 9,
+          "ordered_pairs": 414
+        }
+      ],
+      "Lipschitz_constant": "22/15"
+    },
+    {
+      "D": 61,
+      "K": 9,
+      "cover_length": "97/195",
+      "window_length": "7/4",
+      "exact_hit_probability": "43889/70272",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 32,
+          "ordered_pairs": 82
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 15,
+          "ordered_pairs": 216
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 6,
+          "ordered_pairs": 442
+        }
+      ],
+      "Lipschitz_constant": "77/52"
+    },
+    {
+      "D": 88,
+      "K": 9,
+      "cover_length": "5269/10800",
+      "window_length": "7/4",
+      "exact_hit_probability": "5003/8640",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 61,
+          "ordered_pairs": 76
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 18,
+          "ordered_pairs": 280
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 7,
+          "ordered_pairs": 842
+        }
+      ],
+      "Lipschitz_constant": "22/15"
+    },
+    {
+      "D": 73,
+      "K": 9,
+      "cover_length": "73/144",
+      "window_length": "7/4",
+      "exact_hit_probability": "73295/112128",
+      "cover_exceeds_mean_spacing": true,
+      "threshold_checks": [
+        {
+          "threshold": "1/3",
+          "long_gaps": 43,
+          "ordered_pairs": 80
+        },
+        {
+          "threshold": "1",
+          "long_gaps": 21,
+          "ordered_pairs": 190
+        },
+        {
+          "threshold": "4",
+          "long_gaps": 5,
+          "ordered_pairs": 572
+        }
+      ],
+      "Lipschitz_constant": "11/8"
+    }
+  ]
+}

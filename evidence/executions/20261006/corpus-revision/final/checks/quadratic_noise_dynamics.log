@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "arithmetic": "numpy complex128; Python exact integers for parity",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "resource_caps": {
+    "max_basis_N": 7,
+    "max_radial_N": 13,
+    "max_trace_order": 6,
+    "max_moment_order": 8,
+    "finite_difference_step": 1e-05
+  },
+  "coupling": {
+    "cases": 25,
+    "max_errors": {
+      "commutator": 5.003707553108402e-17,
+      "relative_drift": 7.303274681243416e-16,
+      "matrix_variance": 1.887379141862766e-15,
+      "root_square": 9.43689570931383e-16
+    },
+    "max_energy_to_bound": 0.47999997778257636
+  },
+  "traces": {
+    "drift_cases": 72,
+    "max_errors": {
+      "drift": 1.1672860642828221e-13,
+      "carr_conj": 2.273821850269685e-13,
+      "carr_plain": 1.676941070798811e-13,
+      "gradient": 2.7878255259849993e-11,
+      "corrected_drift": 2.9976021664879227e-14
+    }
+  },
+  "reversibility": {
+    "radial_divergence": 1.64932512092264e-11,
+    "second_trace_drift": 6.131407058289218e-16,
+    "full_matrix_divergence": 3.552085912751354e-11
+  },
+  "moment_and_parity": {
+    "moment_terms": 252,
+    "max_ratio": 0.7896057816747748,
+    "integer_parity_cases": 1875,
+    "seed": 20260929,
+    "exclusion": "finite controls do not prove moment induction or source-to-model identification"
+  },
+  "source_sha256": "7dcb306694e52976ea4b67c4104a10f8848d934dac0ab75383745b4ec9ff96a7",
+  "scope": "Finite identities only; no asymptotic theorem certified by execution."
+}

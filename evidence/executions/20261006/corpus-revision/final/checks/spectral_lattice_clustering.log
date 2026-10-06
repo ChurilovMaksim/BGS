@@ -1,0 +1,14 @@
+{
+  "producer": "computations/verification/spectral_lattice_clustering.py",
+  "source_sha256": "d088c49316825709bf67852ba1ec27d76286f1963fe402e04b63c3f535a7a930",
+  "scope": "Exact finite rational tests of the concentration lemma; not formalization or evidence of positive BGS universality.",
+  "rational_instances": 23175,
+  "inequalities_per_instance": 2,
+  "controls": [
+    "repeated points",
+    "circle seam",
+    "uniform rational grids",
+    "mean spacing equals one despite weak collapse"
+  ],
+  "passed": true
+}

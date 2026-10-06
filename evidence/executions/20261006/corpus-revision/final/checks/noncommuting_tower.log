@@ -1,0 +1,808 @@
+{
+  "status": "PASS",
+  "producer": "computations/verification/noncommuting_tower.py",
+  "source_sha256": "26f932d0914d9bfbb0b34b7dcc5f8e038ac2b2c139793275843b339b4d7654ef",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scope": "Exact rational support separation; finite noncommuting block identity; exact-formula nodal matrices and floating ODE/unitary checks. No numerical proof of asymptotic order, priority, or BGS.",
+  "geometry": {
+    "center": [
+      "5/11",
+      "0"
+    ],
+    "radius": "1/96",
+    "base_lobe_gap": "37/528",
+    "four_level_area_bound": "1/288",
+    "tests": [
+      {
+        "power": 1,
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "candidate_ranges": [
+          {
+            "sign": -1,
+            "bounds": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "sign": 1,
+            "bounds": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "separations": []
+      },
+      {
+        "power": 2,
+        "matrix": [
+          [
+            17,
+            24
+          ],
+          [
+            12,
+            17
+          ]
+        ],
+        "candidate_ranges": [
+          {
+            "sign": -1,
+            "bounds": [
+              [
+                8,
+                8
+              ],
+              [
+                6,
+                5
+              ]
+            ]
+          },
+          {
+            "sign": 1,
+            "bounds": [
+              [
+                7,
+                7
+              ],
+              [
+                6,
+                5
+              ]
+            ]
+          }
+        ],
+        "separations": []
+      },
+      {
+        "power": 3,
+        "matrix": [
+          [
+            99,
+            140
+          ],
+          [
+            70,
+            99
+          ]
+        ],
+        "candidate_ranges": [
+          {
+            "sign": -1,
+            "bounds": [
+              [
+                43,
+                47
+              ],
+              [
+                31,
+                33
+              ]
+            ]
+          },
+          {
+            "sign": 1,
+            "bounds": [
+              [
+                43,
+                47
+              ],
+              [
+                31,
+                33
+              ]
+            ]
+          }
+        ],
+        "separations": [
+          {
+            "sign": -1,
+            "translate": [
+              43,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "999/11",
+            "rhs": "85/48",
+            "gap": "47017/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              43,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2088/11",
+            "rhs": "85/48",
+            "gap": "99289/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              43,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "3177/11",
+            "rhs": "85/48",
+            "gap": "151561/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              44,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "229/11",
+            "rhs": "85/48",
+            "gap": "10057/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              44,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1318/11",
+            "rhs": "85/48",
+            "gap": "62329/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              44,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2407/11",
+            "rhs": "85/48",
+            "gap": "114601/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              45,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "541/11",
+            "rhs": "85/48",
+            "gap": "25033/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              45,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "548/11",
+            "rhs": "85/48",
+            "gap": "25369/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              45,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1637/11",
+            "rhs": "85/48",
+            "gap": "77641/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              46,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1311/11",
+            "rhs": "85/48",
+            "gap": "61993/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              46,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "222/11",
+            "rhs": "85/48",
+            "gap": "9721/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              46,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "867/11",
+            "rhs": "85/48",
+            "gap": "40681/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              47,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2081/11",
+            "rhs": "85/48",
+            "gap": "98953/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              47,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "992/11",
+            "rhs": "85/48",
+            "gap": "46681/528"
+          },
+          {
+            "sign": -1,
+            "translate": [
+              47,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "97/11",
+            "rhs": "85/48",
+            "gap": "3721/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              43,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "299/11",
+            "rhs": "85/48",
+            "gap": "13417/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              43,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1388/11",
+            "rhs": "85/48",
+            "gap": "65689/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              43,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2477/11",
+            "rhs": "85/48",
+            "gap": "117961/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              44,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "471/11",
+            "rhs": "85/48",
+            "gap": "21673/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              44,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "618/11",
+            "rhs": "85/48",
+            "gap": "28729/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              44,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1707/11",
+            "rhs": "85/48",
+            "gap": "81001/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              45,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1241/11",
+            "rhs": "85/48",
+            "gap": "58633/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              45,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "152/11",
+            "rhs": "85/48",
+            "gap": "6361/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              45,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "937/11",
+            "rhs": "85/48",
+            "gap": "44041/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              46,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2011/11",
+            "rhs": "85/48",
+            "gap": "95593/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              46,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "922/11",
+            "rhs": "85/48",
+            "gap": "43321/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              46,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "167/11",
+            "rhs": "85/48",
+            "gap": "7081/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              47,
+              31
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "2781/11",
+            "rhs": "85/48",
+            "gap": "132553/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              47,
+              32
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "1692/11",
+            "rhs": "85/48",
+            "gap": "80281/528"
+          },
+          {
+            "sign": 1,
+            "translate": [
+              47,
+              33
+            ],
+            "normal": [
+              -70,
+              99
+            ],
+            "lhs": "603/11",
+            "rhs": "85/48",
+            "gap": "28009/528"
+          }
+        ]
+      }
+    ]
+  },
+  "nodal": [
+    {
+      "N": 7,
+      "two_grid_error": 2.1536308712335845e-15,
+      "one_grid_negative_control": 0.8573232284112291
+    },
+    {
+      "N": 9,
+      "two_grid_error": 2.8492342294781113e-15,
+      "one_grid_negative_control": 0.9027257216419501
+    },
+    {
+      "N": 17,
+      "two_grid_error": 5.1766559301705446e-15,
+      "one_grid_negative_control": 0.9620361121686974
+    },
+    {
+      "N": 31,
+      "two_grid_error": 8.641069277698394e-15,
+      "one_grid_negative_control": 0.9495233311324445
+    }
+  ],
+  "blocks": [
+    {
+      "exponent": -3.0,
+      "return_word_gauge_error": 1.1257416716650449e-15,
+      "linear_gauge_negative_control": 1.71120994348124
+    },
+    {
+      "exponent": -0.2,
+      "return_word_gauge_error": 1.2175647891051865e-16,
+      "linear_gauge_negative_control": 0.026373323934495572
+    },
+    {
+      "exponent": 0.7,
+      "return_word_gauge_error": 2.430168354679834e-16,
+      "linear_gauge_negative_control": 0.3028734914238084
+    },
+    {
+      "exponent": 2.5,
+      "return_word_gauge_error": 6.530573553219264e-16,
+      "linear_gauge_negative_control": 1.6890816461064053
+    }
+  ],
+  "classical": {
+    "method": "DOP853 finite falsifiers, not interval-certified",
+    "nonzero_base_bracket": 8411.826078230019,
+    "explicit_bracket_value": 8411.82607822999,
+    "rows": [
+      {
+        "kappa": -2e-06,
+        "point": [
+          0.4555871212121212,
+          0.0031249999999999997
+        ],
+        "circle_error": 0.0,
+        "displacement": 0.00024529046676158295
+      },
+      {
+        "kappa": -2e-06,
+        "point": [
+          1.354261363636363,
+          -0.9017992424242419
+        ],
+        "circle_error": 2.220446049250313e-16,
+        "displacement": 0.00020652666870590863
+      },
+      {
+        "kappa": -2e-06,
+        "point": [
+          7.669981060605626,
+          -5.4139204545451465
+        ],
+        "circle_error": 4.9960036108132044e-15,
+        "displacement": 0.0011560200840596835
+      },
+      {
+        "kappa": -2e-06,
+        "point": [
+          44.66562500006157,
+          -31.58172348489202
+        ],
+        "circle_error": 7.096545573404001e-13,
+        "displacement": 0.002999149552842084
+      },
+      {
+        "kappa": 1e-06,
+        "point": [
+          0.4555871212121212,
+          0.0031249999999999997
+        ],
+        "circle_error": 0.0,
+        "displacement": 0.00011391771353608249
+      },
+      {
+        "kappa": 1e-06,
+        "point": [
+          1.354261363636363,
+          -0.9017992424242419
+        ],
+        "circle_error": 2.1094237467877974e-15,
+        "displacement": 0.0001011864108364513
+      },
+      {
+        "kappa": 1e-06,
+        "point": [
+          7.669981060605626,
+          -5.4139204545451465
+        ],
+        "circle_error": 2.6645352591003757e-15,
+        "displacement": 0.0005749549508031748
+      },
+      {
+        "kappa": 1e-06,
+        "point": [
+          44.66562500006157,
+          -31.58172348489202
+        ],
+        "circle_error": 1.199040866595169e-13,
+        "displacement": 0.001472898298359837
+      }
+    ]
+  },
+  "matrices": [
+    {
+      "N": 63,
+      "principal_pair_commutator_norm": 0.0010417703157630498,
+      "max_cross_site_commutator_norm": 0.0006172422439902177,
+      "rows": [
+        {
+          "kappa": -0.002,
+          "exponent": -0.7916813487046279,
+          "nonlinear_gauge_error": 0.000411808678159412,
+          "conservative_cross_site_bound": 0.09903676224099922,
+          "linear_gauge_error": 0.0003264392029256011
+        },
+        {
+          "kappa": 0.002,
+          "exponent": 0.7916813487046279,
+          "nonlinear_gauge_error": 0.00041291428637112404,
+          "conservative_cross_site_bound": 0.09903676224099922,
+          "linear_gauge_error": 0.00032643920292562523
+        },
+        {
+          "kappa": 0.02,
+          "exponent": 7.916813487046279,
+          "nonlinear_gauge_error": 0.04144781088752717,
+          "conservative_cross_site_bound": 9.903676224099923,
+          "linear_gauge_error": 0.032344268417791984
+        }
+      ],
+      "seconds": 0.03204277400072897
+    },
+    {
+      "N": 127,
+      "principal_pair_commutator_norm": 0.003927713802991495,
+      "max_cross_site_commutator_norm": 0.0025005708363861337,
+      "rows": [
+        {
+          "kappa": -0.002,
+          "exponent": -1.595929068023615,
+          "nonlinear_gauge_error": 0.006012511963329561,
+          "conservative_cross_site_bound": 1.6304455397734345,
+          "linear_gauge_error": 0.004996888722018439
+        },
+        {
+          "kappa": 0.002,
+          "exponent": 1.595929068023615,
+          "nonlinear_gauge_error": 0.0059167514177947255,
+          "conservative_cross_site_bound": 1.6304455397734345,
+          "linear_gauge_error": 0.004996888722018745
+        },
+        {
+          "kappa": 0.02,
+          "exponent": 15.95929068023615,
+          "nonlinear_gauge_error": 0.4878957062229565,
+          "conservative_cross_site_bound": 163.04455397734347,
+          "linear_gauge_error": 0.4511599506082855
+        }
+      ],
+      "seconds": 0.15900280700043368
+    },
+    {
+      "N": 255,
+      "principal_pair_commutator_norm": 0.01070966080148607,
+      "max_cross_site_commutator_norm": 0.0072539374324926045,
+      "rows": [
+        {
+          "kappa": -0.002,
+          "exponent": -3.204424506661589,
+          "nonlinear_gauge_error": 0.06039760683838107,
+          "conservative_cross_site_bound": 19.06838269912004,
+          "linear_gauge_error": 0.054514631819522555
+        },
+        {
+          "kappa": 0.002,
+          "exponent": 3.204424506661589,
+          "nonlinear_gauge_error": 0.0589040455624708,
+          "conservative_cross_site_bound": 19.06838269912004,
+          "linear_gauge_error": 0.0545146318195224
+        },
+        {
+          "kappa": 0.02,
+          "exponent": 32.04424506661589,
+          "nonlinear_gauge_error": 1.9789617051961839,
+          "conservative_cross_site_bound": 1906.8382699120045,
+          "linear_gauge_error": 1.9898502101391753
+        }
+      ],
+      "seconds": 1.0568755380008952
+    },
+    {
+      "N": 511,
+      "principal_pair_commutator_norm": 0.022801862893154154,
+      "max_cross_site_commutator_norm": 0.013088494493660185,
+      "rows": [
+        {
+          "kappa": -0.002,
+          "exponent": -6.4214153839375365,
+          "nonlinear_gauge_error": 0.3960168434532574,
+          "conservative_cross_site_bound": 138.1628197921273,
+          "linear_gauge_error": 0.4205024510298173
+        },
+        {
+          "kappa": 0.002,
+          "exponent": 6.4214153839375365,
+          "nonlinear_gauge_error": 0.42216238792140615,
+          "conservative_cross_site_bound": 138.1628197921273,
+          "linear_gauge_error": 0.4205024510298167
+        },
+        {
+          "kappa": 0.02,
+          "exponent": 64.21415383937537,
+          "nonlinear_gauge_error": 1.9998357713167991,
+          "conservative_cross_site_bound": 13816.28197921273,
+          "linear_gauge_error": 1.9984866463940325
+        }
+      ],
+      "seconds": 7.111557123998864
+    }
+  ]
+}
+

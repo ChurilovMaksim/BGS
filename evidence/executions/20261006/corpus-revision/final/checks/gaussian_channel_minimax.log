@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "exact": {
+    "matrix_unit_weyl_inversions": 256,
+    "loss_identities": 512,
+    "additive_noise_factorizations": 4,
+    "finite_half_loss_inequalities": 6
+  },
+  "numerical": {
+    "dps": 65,
+    "kraus_characteristic_checks": 18,
+    "fidelity_checks": 9,
+    "weyl_kernel_bounds": 146,
+    "amplifier_trace_norm_bounds": 16,
+    "anchors": [
+      {
+        "eta": "0.2",
+        "root_fidelity_gap": "5.316911983139646995789e-92"
+      },
+      {
+        "eta": "0.5",
+        "root_fidelity_gap": "4.591774807899560578003e-41"
+      },
+      {
+        "eta": "0.9",
+        "root_fidelity_gap": "2.172007068392886449452e-8"
+      }
+    ]
+  },
+  "source_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+  "implementation_sha256": "c5063f599b86583ffefd7c52eb839d056830b653bf9e27947b8858760742eeb4",
+  "negative_controls": 4
+}

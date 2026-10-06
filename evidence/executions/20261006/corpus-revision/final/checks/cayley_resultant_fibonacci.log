@@ -1,0 +1,325 @@
+{
+  "fibonacci_resultant_audits": [
+    {
+      "F_K": 2,
+      "K": 3,
+      "resultant": 4
+    },
+    {
+      "F_K": 5,
+      "K": 5,
+      "resultant": 25
+    },
+    {
+      "F_K": 13,
+      "K": 7,
+      "resultant": 169
+    },
+    {
+      "F_K": 89,
+      "K": 11,
+      "resultant": 7921
+    },
+    {
+      "F_K": 233,
+      "K": 13,
+      "resultant": 54289
+    },
+    {
+      "F_K": 1597,
+      "K": 17,
+      "resultant": 2550409
+    },
+    {
+      "F_K": 4181,
+      "K": 19,
+      "resultant": 17480761
+    },
+    {
+      "F_K": 28657,
+      "K": 23,
+      "resultant": 821223649
+    },
+    {
+      "F_K": 514229,
+      "K": 29,
+      "resultant": 264431464441
+    }
+  ],
+  "giant_fibonacci_witness": {
+    "K": 131,
+    "cayley_set_size": 130,
+    "energy": 33442,
+    "excess": 32,
+    "explicit_collision_exponent_pairs": [
+      [
+        1,
+        130
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        130,
+        129
+      ]
+    ],
+    "explicit_difference": 275571073090557681575865728,
+    "forced_baseline": 33410,
+    "h": 188706367382658195937453923,
+    "h_exact_order_K": true,
+    "h_quadratic_relation": true,
+    "max_multiplicity": 4,
+    "multiplicity_histogram": {
+      "1": 126,
+      "2": 8312,
+      "3": 4,
+      "4": 2
+    },
+    "nonzero_difference_classes": 8444,
+    "p": 1066340417491710595814572169,
+    "p_equals_F_K": true,
+    "p_mod_K": 1,
+    "primality_certificate": {
+      "base": 3,
+      "criterion": "Lucas primality criterion with complete factorization of p-1",
+      "fermat_condition": true,
+      "p_minus_1_factorization": {
+        "11": 1,
+        "131": 1,
+        "19801": 1,
+        "199": 1,
+        "2": 3,
+        "2081": 1,
+        "24571": 1,
+        "521": 1,
+        "89": 1,
+        "9901": 1
+      },
+      "prime_factor_gcd_conditions": [
+        {
+          "gcd": 1,
+          "q": 2
+        },
+        {
+          "gcd": 1,
+          "q": 11
+        },
+        {
+          "gcd": 1,
+          "q": 89
+        },
+        {
+          "gcd": 1,
+          "q": 131
+        },
+        {
+          "gcd": 1,
+          "q": 199
+        },
+        {
+          "gcd": 1,
+          "q": 521
+        },
+        {
+          "gcd": 1,
+          "q": 2081
+        },
+        {
+          "gcd": 1,
+          "q": 9901
+        },
+        {
+          "gcd": 1,
+          "q": 19801
+        },
+        {
+          "gcd": 1,
+          "q": 24571
+        }
+      ]
+    }
+  },
+  "producer": "computations/verification/cayley_resultant_fibonacci.py",
+  "rational_almost_sidon_audits": [
+    {
+      "N": 3,
+      "distinct_nonzero_differences": 12,
+      "energy": 86,
+      "excess": 32,
+      "forced_baseline": 54,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 6
+    },
+    {
+      "N": 4,
+      "distinct_nonzero_differences": 26,
+      "energy": 136,
+      "excess": 32,
+      "forced_baseline": 104,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 4,
+        "2": 16,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 8
+    },
+    {
+      "N": 5,
+      "distinct_nonzero_differences": 44,
+      "energy": 202,
+      "excess": 32,
+      "forced_baseline": 170,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 6,
+        "2": 32,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 10
+    },
+    {
+      "N": 6,
+      "distinct_nonzero_differences": 66,
+      "energy": 284,
+      "excess": 32,
+      "forced_baseline": 252,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 8,
+        "2": 52,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 12
+    },
+    {
+      "N": 7,
+      "distinct_nonzero_differences": 92,
+      "energy": 382,
+      "excess": 32,
+      "forced_baseline": 350,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 10,
+        "2": 76,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 14
+    },
+    {
+      "N": 8,
+      "distinct_nonzero_differences": 122,
+      "energy": 496,
+      "excess": 32,
+      "forced_baseline": 464,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 12,
+        "2": 104,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 16
+    },
+    {
+      "N": 9,
+      "distinct_nonzero_differences": 156,
+      "energy": 626,
+      "excess": 32,
+      "forced_baseline": 594,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 14,
+        "2": 136,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 18
+    },
+    {
+      "N": 10,
+      "distinct_nonzero_differences": 194,
+      "energy": 772,
+      "excess": 32,
+      "forced_baseline": 740,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 16,
+        "2": 172,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 20
+    },
+    {
+      "N": 11,
+      "distinct_nonzero_differences": 236,
+      "energy": 934,
+      "excess": 32,
+      "forced_baseline": 902,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 18,
+        "2": 212,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 22
+    },
+    {
+      "N": 12,
+      "distinct_nonzero_differences": 282,
+      "energy": 1112,
+      "excess": 32,
+      "forced_baseline": 1080,
+      "max_multiplicity": 4,
+      "multiplicity_histogram": {
+        "1": 20,
+        "2": 256,
+        "3": 4,
+        "4": 2
+      },
+      "set_size": 24
+    }
+  ],
+  "scope": "Finite exact regressions for the general K^3-square theorem, Fibonacci resultant identity, rational almost-Sidon energy, and the explicit K=131 exceptional-prime witness. General proofs live in mathematics/cayley_resultant_structure.md.",
+  "square_resultant_finite_audits": [
+    {
+      "K": 3,
+      "distinct_square_factors_M": 1,
+      "max_M": 2,
+      "normalized_nonforced_quadruples": 1
+    },
+    {
+      "K": 5,
+      "distinct_square_factors_M": 3,
+      "max_M": 5,
+      "normalized_nonforced_quadruples": 31
+    },
+    {
+      "K": 7,
+      "distinct_square_factors_M": 4,
+      "max_M": 13,
+      "normalized_nonforced_quadruples": 141
+    },
+    {
+      "K": 11,
+      "distinct_square_factors_M": 8,
+      "max_M": 109,
+      "normalized_nonforced_quadruples": 793
+    }
+  ],
+  "verdict": "PASS"
+}

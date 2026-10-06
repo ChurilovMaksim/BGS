@@ -190,3 +190,7 @@ It runs in the whole-workspace suite and by `--only frozen_arithmetic_traces`.
 It does not evaluate the kicked traces or validate the asymptotic BGS target.
 
 The 4 October `verification/expansion_wavepacket_audit.py --output <path>` checks exact arithmetic, finite Weil characters, channels and odd coherent frames. `verification/expansion_wavepacket_checks.wl` is an exact algebra replay source; its execution status is recorded separately. Neither certifies a uniform Heisenberg estimate.
+
+### Numerical preprocessing correction, 6 October 2026
+
+The old polynomial unfolding could reverse level order, and a zero spread could hide a nonzero mean difference. Historical outputs are preserved, not endorsed. [The correction record](../record/audits/spectral_diagnostics_correction_20261006.md) specifies the new order-preserving smoothing, explicit undefined-value handling, negative tests and nine-setting sensitivity. These remain finite descriptive diagnostics; q-values are not assumed IID and no BGS conclusion follows.

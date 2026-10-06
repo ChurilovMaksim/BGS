@@ -1,0 +1,4486 @@
+{
+  "producer": "general_hyperbolic_prime_spectra.py",
+  "source_sha256": "0fd4e26410028182b11b672fa86c0bede94302d665df33b2383509c2ba1e1602",
+  "python": "3.12.14",
+  "scope": "Exact finite arithmetic and optional floating-point Weyl/spectral controls; not an asymptotic or external priority certificate.",
+  "exact": {
+    "case_count": 215,
+    "cases": [
+      {
+        "trace": 3,
+        "K": 5,
+        "N": "11",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "5",
+        "root_multiplicity": "1"
+      },
+      {
+        "trace": 3,
+        "K": 5,
+        "N": "11",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "5",
+        "root_multiplicity": "1"
+      },
+      {
+        "trace": 3,
+        "K": 5,
+        "N": "11",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "5",
+        "root_multiplicity": "1"
+      },
+      {
+        "trace": 3,
+        "K": 7,
+        "N": "29",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "14",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 3,
+        "K": 7,
+        "N": "29",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "14",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 3,
+        "K": 7,
+        "N": "29",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "14",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 3,
+        "K": 11,
+        "N": "199",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "99",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 3,
+        "K": 11,
+        "N": "199",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "99",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 3,
+        "K": 11,
+        "N": "199",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "99",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 3,
+        "K": 13,
+        "N": "521",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "260",
+        "root_multiplicity": "20"
+      },
+      {
+        "trace": 3,
+        "K": 13,
+        "N": "521",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "260",
+        "root_multiplicity": "20"
+      },
+      {
+        "trace": 3,
+        "K": 13,
+        "N": "521",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "260",
+        "root_multiplicity": "20"
+      },
+      {
+        "trace": 3,
+        "K": 17,
+        "N": "3571",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1785",
+        "root_multiplicity": "105"
+      },
+      {
+        "trace": 3,
+        "K": 17,
+        "N": "3571",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1785",
+        "root_multiplicity": "105"
+      },
+      {
+        "trace": 3,
+        "K": 17,
+        "N": "3571",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1785",
+        "root_multiplicity": "105"
+      },
+      {
+        "trace": 3,
+        "K": 23,
+        "N": "64079",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "32039",
+        "root_multiplicity": "1393"
+      },
+      {
+        "trace": 3,
+        "K": 23,
+        "N": "64079",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "32039",
+        "root_multiplicity": "1393"
+      },
+      {
+        "trace": 3,
+        "K": 23,
+        "N": "64079",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "32039",
+        "root_multiplicity": "1393"
+      },
+      {
+        "trace": 3,
+        "K": 31,
+        "N": "3010349",
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1505174",
+        "root_multiplicity": "48554"
+      },
+      {
+        "trace": 3,
+        "K": 31,
+        "N": "3010349",
+        "matrix": [
+          [
+            3,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1505174",
+        "root_multiplicity": "48554"
+      },
+      {
+        "trace": 3,
+        "K": 31,
+        "N": "3010349",
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1505174",
+        "root_multiplicity": "48554"
+      },
+      {
+        "trace": 4,
+        "K": 5,
+        "N": "19",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 4,
+        "K": 5,
+        "N": "19",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 4,
+        "K": 5,
+        "N": "19",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10",
+        "root_multiplicity": "2"
+      },
+      {
+        "trace": 4,
+        "K": 7,
+        "N": "71",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "5"
+      },
+      {
+        "trace": 4,
+        "K": 7,
+        "N": "71",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "5"
+      },
+      {
+        "trace": 4,
+        "K": 7,
+        "N": "71",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "5"
+      },
+      {
+        "trace": 4,
+        "K": 11,
+        "N": "989",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "495",
+        "root_multiplicity": "45"
+      },
+      {
+        "trace": 4,
+        "K": 11,
+        "N": "989",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "495",
+        "root_multiplicity": "45"
+      },
+      {
+        "trace": 4,
+        "K": 11,
+        "N": "989",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "495",
+        "root_multiplicity": "45"
+      },
+      {
+        "trace": 4,
+        "K": 13,
+        "N": "3691",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "1846",
+        "root_multiplicity": "142"
+      },
+      {
+        "trace": 4,
+        "K": 13,
+        "N": "3691",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "1846",
+        "root_multiplicity": "142"
+      },
+      {
+        "trace": 4,
+        "K": 13,
+        "N": "3691",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "1846",
+        "root_multiplicity": "142"
+      },
+      {
+        "trace": 4,
+        "K": 17,
+        "N": "51409",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "25704",
+        "root_multiplicity": "1512"
+      },
+      {
+        "trace": 4,
+        "K": 17,
+        "N": "51409",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "25704",
+        "root_multiplicity": "1512"
+      },
+      {
+        "trace": 4,
+        "K": 17,
+        "N": "51409",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "25704",
+        "root_multiplicity": "1512"
+      },
+      {
+        "trace": 4,
+        "K": 23,
+        "N": "2672279",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1336139",
+        "root_multiplicity": "58093"
+      },
+      {
+        "trace": 4,
+        "K": 23,
+        "N": "2672279",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1336139",
+        "root_multiplicity": "58093"
+      },
+      {
+        "trace": 4,
+        "K": 23,
+        "N": "2672279",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1336139",
+        "root_multiplicity": "58093"
+      },
+      {
+        "trace": 4,
+        "K": 31,
+        "N": "518408351",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "259204175",
+        "root_multiplicity": "8361425"
+      },
+      {
+        "trace": 4,
+        "K": 31,
+        "N": "518408351",
+        "matrix": [
+          [
+            4,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "259204175",
+        "root_multiplicity": "8361425"
+      },
+      {
+        "trace": 4,
+        "K": 31,
+        "N": "518408351",
+        "matrix": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            5
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "259204175",
+        "root_multiplicity": "8361425"
+      },
+      {
+        "trace": 5,
+        "K": 5,
+        "N": "29",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15",
+        "root_multiplicity": "3"
+      },
+      {
+        "trace": 5,
+        "K": 5,
+        "N": "29",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15",
+        "root_multiplicity": "3"
+      },
+      {
+        "trace": 5,
+        "K": 5,
+        "N": "29",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15",
+        "root_multiplicity": "3"
+      },
+      {
+        "trace": 5,
+        "K": 7,
+        "N": "139",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "70",
+        "root_multiplicity": "10"
+      },
+      {
+        "trace": 5,
+        "K": 7,
+        "N": "139",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "70",
+        "root_multiplicity": "10"
+      },
+      {
+        "trace": 5,
+        "K": 7,
+        "N": "139",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "70",
+        "root_multiplicity": "10"
+      },
+      {
+        "trace": 5,
+        "K": 11,
+        "N": "3191",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1595",
+        "root_multiplicity": "145"
+      },
+      {
+        "trace": 5,
+        "K": 11,
+        "N": "3191",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1595",
+        "root_multiplicity": "145"
+      },
+      {
+        "trace": 5,
+        "K": 11,
+        "N": "3191",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1595",
+        "root_multiplicity": "145"
+      },
+      {
+        "trace": 5,
+        "K": 13,
+        "N": "15289",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7644",
+        "root_multiplicity": "588"
+      },
+      {
+        "trace": 5,
+        "K": 13,
+        "N": "15289",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7644",
+        "root_multiplicity": "588"
+      },
+      {
+        "trace": 5,
+        "K": 13,
+        "N": "15289",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7644",
+        "root_multiplicity": "588"
+      },
+      {
+        "trace": 5,
+        "K": 17,
+        "N": "350981",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "175491",
+        "root_multiplicity": "10323"
+      },
+      {
+        "trace": 5,
+        "K": 17,
+        "N": "350981",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "175491",
+        "root_multiplicity": "10323"
+      },
+      {
+        "trace": 5,
+        "K": 17,
+        "N": "350981",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "175491",
+        "root_multiplicity": "10323"
+      },
+      {
+        "trace": 5,
+        "K": 23,
+        "N": "38604719",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "19302359",
+        "root_multiplicity": "839233"
+      },
+      {
+        "trace": 5,
+        "K": 23,
+        "N": "38604719",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "19302359",
+        "root_multiplicity": "839233"
+      },
+      {
+        "trace": 5,
+        "K": 23,
+        "N": "38604719",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "19302359",
+        "root_multiplicity": "839233"
+      },
+      {
+        "trace": 5,
+        "K": 31,
+        "N": "20344613659",
+        "matrix": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10172306830",
+        "root_multiplicity": "328138930"
+      },
+      {
+        "trace": 5,
+        "K": 31,
+        "N": "20344613659",
+        "matrix": [
+          [
+            5,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10172306830",
+        "root_multiplicity": "328138930"
+      },
+      {
+        "trace": 5,
+        "K": 31,
+        "N": "20344613659",
+        "matrix": [
+          [
+            -2,
+            3
+          ],
+          [
+            -5,
+            7
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "10172306830",
+        "root_multiplicity": "328138930"
+      },
+      {
+        "trace": 6,
+        "K": 5,
+        "N": "41",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "20",
+        "root_multiplicity": "4"
+      },
+      {
+        "trace": 6,
+        "K": 5,
+        "N": "41",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "20",
+        "root_multiplicity": "4"
+      },
+      {
+        "trace": 6,
+        "K": 5,
+        "N": "41",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "20",
+        "root_multiplicity": "4"
+      },
+      {
+        "trace": 6,
+        "K": 5,
+        "N": "41",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "20",
+        "root_multiplicity": "4"
+      },
+      {
+        "trace": 6,
+        "K": 5,
+        "N": "41",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "20",
+        "root_multiplicity": "4"
+      },
+      {
+        "trace": 6,
+        "K": 7,
+        "N": "239",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "119",
+        "root_multiplicity": "17"
+      },
+      {
+        "trace": 6,
+        "K": 7,
+        "N": "239",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "119",
+        "root_multiplicity": "17"
+      },
+      {
+        "trace": 6,
+        "K": 7,
+        "N": "239",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "119",
+        "root_multiplicity": "17"
+      },
+      {
+        "trace": 6,
+        "K": 7,
+        "N": "239",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "119",
+        "root_multiplicity": "17"
+      },
+      {
+        "trace": 6,
+        "K": 7,
+        "N": "239",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "119",
+        "root_multiplicity": "17"
+      },
+      {
+        "trace": 6,
+        "K": 11,
+        "N": "8119",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4059",
+        "root_multiplicity": "369"
+      },
+      {
+        "trace": 6,
+        "K": 11,
+        "N": "8119",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4059",
+        "root_multiplicity": "369"
+      },
+      {
+        "trace": 6,
+        "K": 11,
+        "N": "8119",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4059",
+        "root_multiplicity": "369"
+      },
+      {
+        "trace": 6,
+        "K": 11,
+        "N": "8119",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4059",
+        "root_multiplicity": "369"
+      },
+      {
+        "trace": 6,
+        "K": 11,
+        "N": "8119",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4059",
+        "root_multiplicity": "369"
+      },
+      {
+        "trace": 6,
+        "K": 13,
+        "N": "47321",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "23660",
+        "root_multiplicity": "1820"
+      },
+      {
+        "trace": 6,
+        "K": 13,
+        "N": "47321",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "23660",
+        "root_multiplicity": "1820"
+      },
+      {
+        "trace": 6,
+        "K": 13,
+        "N": "47321",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "23660",
+        "root_multiplicity": "1820"
+      },
+      {
+        "trace": 6,
+        "K": 13,
+        "N": "47321",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "23660",
+        "root_multiplicity": "1820"
+      },
+      {
+        "trace": 6,
+        "K": 13,
+        "N": "47321",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "23660",
+        "root_multiplicity": "1820"
+      },
+      {
+        "trace": 6,
+        "K": 17,
+        "N": "1607521",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "803760",
+        "root_multiplicity": "47280"
+      },
+      {
+        "trace": 6,
+        "K": 17,
+        "N": "1607521",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "803760",
+        "root_multiplicity": "47280"
+      },
+      {
+        "trace": 6,
+        "K": 17,
+        "N": "1607521",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "803760",
+        "root_multiplicity": "47280"
+      },
+      {
+        "trace": 6,
+        "K": 17,
+        "N": "1607521",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "803760",
+        "root_multiplicity": "47280"
+      },
+      {
+        "trace": 6,
+        "K": 17,
+        "N": "1607521",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "803760",
+        "root_multiplicity": "47280"
+      },
+      {
+        "trace": 6,
+        "K": 23,
+        "N": "318281039",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "159140519",
+        "root_multiplicity": "6919153"
+      },
+      {
+        "trace": 6,
+        "K": 23,
+        "N": "318281039",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "159140519",
+        "root_multiplicity": "6919153"
+      },
+      {
+        "trace": 6,
+        "K": 23,
+        "N": "318281039",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "159140519",
+        "root_multiplicity": "6919153"
+      },
+      {
+        "trace": 6,
+        "K": 23,
+        "N": "318281039",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "159140519",
+        "root_multiplicity": "6919153"
+      },
+      {
+        "trace": 6,
+        "K": 23,
+        "N": "318281039",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "159140519",
+        "root_multiplicity": "6919153"
+      },
+      {
+        "trace": 6,
+        "K": 31,
+        "N": "367296043199",
+        "matrix": [
+          [
+            5,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "183648021599",
+        "root_multiplicity": "5924129729"
+      },
+      {
+        "trace": 6,
+        "K": 31,
+        "N": "367296043199",
+        "matrix": [
+          [
+            6,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "183648021599",
+        "root_multiplicity": "5924129729"
+      },
+      {
+        "trace": 6,
+        "K": 31,
+        "N": "367296043199",
+        "matrix": [
+          [
+            -3,
+            4
+          ],
+          [
+            -7,
+            9
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "183648021599",
+        "root_multiplicity": "5924129729"
+      },
+      {
+        "trace": 6,
+        "K": 31,
+        "N": "367296043199",
+        "matrix": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "183648021599",
+        "root_multiplicity": "5924129729"
+      },
+      {
+        "trace": 6,
+        "K": 31,
+        "N": "367296043199",
+        "matrix": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "183648021599",
+        "root_multiplicity": "5924129729"
+      },
+      {
+        "trace": 7,
+        "K": 7,
+        "N": "377",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "189",
+        "root_multiplicity": "27"
+      },
+      {
+        "trace": 7,
+        "K": 7,
+        "N": "377",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "189",
+        "root_multiplicity": "27"
+      },
+      {
+        "trace": 7,
+        "K": 7,
+        "N": "377",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "189",
+        "root_multiplicity": "27"
+      },
+      {
+        "trace": 7,
+        "K": 11,
+        "N": "17711",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "8855",
+        "root_multiplicity": "805"
+      },
+      {
+        "trace": 7,
+        "K": 11,
+        "N": "17711",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "8855",
+        "root_multiplicity": "805"
+      },
+      {
+        "trace": 7,
+        "K": 11,
+        "N": "17711",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "8855",
+        "root_multiplicity": "805"
+      },
+      {
+        "trace": 7,
+        "K": 13,
+        "N": "121393",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "60697",
+        "root_multiplicity": "4669"
+      },
+      {
+        "trace": 7,
+        "K": 13,
+        "N": "121393",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "60697",
+        "root_multiplicity": "4669"
+      },
+      {
+        "trace": 7,
+        "K": 13,
+        "N": "121393",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "60697",
+        "root_multiplicity": "4669"
+      },
+      {
+        "trace": 7,
+        "K": 17,
+        "N": "5702887",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "2851444",
+        "root_multiplicity": "167732"
+      },
+      {
+        "trace": 7,
+        "K": 17,
+        "N": "5702887",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "2851444",
+        "root_multiplicity": "167732"
+      },
+      {
+        "trace": 7,
+        "K": 17,
+        "N": "5702887",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "2851444",
+        "root_multiplicity": "167732"
+      },
+      {
+        "trace": 7,
+        "K": 23,
+        "N": "1836311903",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "918155952",
+        "root_multiplicity": "39919824"
+      },
+      {
+        "trace": 7,
+        "K": 23,
+        "N": "1836311903",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "918155952",
+        "root_multiplicity": "39919824"
+      },
+      {
+        "trace": 7,
+        "K": 23,
+        "N": "1836311903",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "918155952",
+        "root_multiplicity": "39919824"
+      },
+      {
+        "trace": 7,
+        "K": 31,
+        "N": "4052739537881",
+        "matrix": [
+          [
+            6,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2026369768940",
+        "root_multiplicity": "65366766740"
+      },
+      {
+        "trace": 7,
+        "K": 31,
+        "N": "4052739537881",
+        "matrix": [
+          [
+            7,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2026369768940",
+        "root_multiplicity": "65366766740"
+      },
+      {
+        "trace": 7,
+        "K": 31,
+        "N": "4052739537881",
+        "matrix": [
+          [
+            -4,
+            5
+          ],
+          [
+            -9,
+            11
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2026369768940",
+        "root_multiplicity": "65366766740"
+      },
+      {
+        "trace": 8,
+        "K": 5,
+        "N": "71",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "7"
+      },
+      {
+        "trace": 8,
+        "K": 5,
+        "N": "71",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "7"
+      },
+      {
+        "trace": 8,
+        "K": 5,
+        "N": "71",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "35",
+        "root_multiplicity": "7"
+      },
+      {
+        "trace": 8,
+        "K": 7,
+        "N": "559",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "280",
+        "root_multiplicity": "40"
+      },
+      {
+        "trace": 8,
+        "K": 7,
+        "N": "559",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "280",
+        "root_multiplicity": "40"
+      },
+      {
+        "trace": 8,
+        "K": 7,
+        "N": "559",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "280",
+        "root_multiplicity": "40"
+      },
+      {
+        "trace": 8,
+        "K": 11,
+        "N": "34649",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "17325",
+        "root_multiplicity": "1575"
+      },
+      {
+        "trace": 8,
+        "K": 11,
+        "N": "34649",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "17325",
+        "root_multiplicity": "1575"
+      },
+      {
+        "trace": 8,
+        "K": 11,
+        "N": "34649",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "17325",
+        "root_multiplicity": "1575"
+      },
+      {
+        "trace": 8,
+        "K": 13,
+        "N": "272791",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "136396",
+        "root_multiplicity": "10492"
+      },
+      {
+        "trace": 8,
+        "K": 13,
+        "N": "272791",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "136396",
+        "root_multiplicity": "10492"
+      },
+      {
+        "trace": 8,
+        "K": 13,
+        "N": "272791",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "136396",
+        "root_multiplicity": "10492"
+      },
+      {
+        "trace": 8,
+        "K": 17,
+        "N": "16908641",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "8454321",
+        "root_multiplicity": "497313"
+      },
+      {
+        "trace": 8,
+        "K": 17,
+        "N": "16908641",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "8454321",
+        "root_multiplicity": "497313"
+      },
+      {
+        "trace": 8,
+        "K": 17,
+        "N": "16908641",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "8454321",
+        "root_multiplicity": "497313"
+      },
+      {
+        "trace": 8,
+        "K": 23,
+        "N": "8251382159",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4125691079",
+        "root_multiplicity": "179377873"
+      },
+      {
+        "trace": 8,
+        "K": 23,
+        "N": "8251382159",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4125691079",
+        "root_multiplicity": "179377873"
+      },
+      {
+        "trace": 8,
+        "K": 23,
+        "N": "8251382159",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "4125691079",
+        "root_multiplicity": "179377873"
+      },
+      {
+        "trace": 8,
+        "K": 31,
+        "N": "31701808107199",
+        "matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15850904053600",
+        "root_multiplicity": "511319485600"
+      },
+      {
+        "trace": 8,
+        "K": 31,
+        "N": "31701808107199",
+        "matrix": [
+          [
+            8,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15850904053600",
+        "root_multiplicity": "511319485600"
+      },
+      {
+        "trace": 8,
+        "K": 31,
+        "N": "31701808107199",
+        "matrix": [
+          [
+            -5,
+            6
+          ],
+          [
+            -11,
+            13
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15850904053600",
+        "root_multiplicity": "511319485600"
+      },
+      {
+        "trace": 9,
+        "K": 5,
+        "N": "89",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "45",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 9,
+        "K": 5,
+        "N": "89",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "45",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 9,
+        "K": 5,
+        "N": "89",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "45",
+        "root_multiplicity": "9"
+      },
+      {
+        "trace": 9,
+        "K": 11,
+        "N": "62479",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "31240",
+        "root_multiplicity": "2840"
+      },
+      {
+        "trace": 9,
+        "K": 11,
+        "N": "62479",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "31240",
+        "root_multiplicity": "2840"
+      },
+      {
+        "trace": 9,
+        "K": 11,
+        "N": "62479",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "31240",
+        "root_multiplicity": "2840"
+      },
+      {
+        "trace": 9,
+        "K": 13,
+        "N": "555281",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "277641",
+        "root_multiplicity": "21357"
+      },
+      {
+        "trace": 9,
+        "K": 13,
+        "N": "555281",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "277641",
+        "root_multiplicity": "21357"
+      },
+      {
+        "trace": 9,
+        "K": 13,
+        "N": "555281",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "277641",
+        "root_multiplicity": "21357"
+      },
+      {
+        "trace": 9,
+        "K": 17,
+        "N": "43860169",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "21930085",
+        "root_multiplicity": "1290005"
+      },
+      {
+        "trace": 9,
+        "K": 17,
+        "N": "43860169",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "21930085",
+        "root_multiplicity": "1290005"
+      },
+      {
+        "trace": 9,
+        "K": 17,
+        "N": "43860169",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "21930085",
+        "root_multiplicity": "1290005"
+      },
+      {
+        "trace": 9,
+        "K": 23,
+        "N": "30789776159",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15394888080",
+        "root_multiplicity": "669342960"
+      },
+      {
+        "trace": 9,
+        "K": 23,
+        "N": "30789776159",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15394888080",
+        "root_multiplicity": "669342960"
+      },
+      {
+        "trace": 9,
+        "K": 23,
+        "N": "30789776159",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "15394888080",
+        "root_multiplicity": "669342960"
+      },
+      {
+        "trace": 9,
+        "K": 31,
+        "N": "192097408520951",
+        "matrix": [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "96048704260475",
+        "root_multiplicity": "3098345298725"
+      },
+      {
+        "trace": 9,
+        "K": 31,
+        "N": "192097408520951",
+        "matrix": [
+          [
+            9,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "96048704260475",
+        "root_multiplicity": "3098345298725"
+      },
+      {
+        "trace": 9,
+        "K": 31,
+        "N": "192097408520951",
+        "matrix": [
+          [
+            -6,
+            7
+          ],
+          [
+            -13,
+            15
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "96048704260475",
+        "root_multiplicity": "3098345298725"
+      },
+      {
+        "trace": 10,
+        "K": 5,
+        "N": "109",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "55",
+        "root_multiplicity": "11"
+      },
+      {
+        "trace": 10,
+        "K": 5,
+        "N": "109",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "55",
+        "root_multiplicity": "11"
+      },
+      {
+        "trace": 10,
+        "K": 5,
+        "N": "109",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "55",
+        "root_multiplicity": "11"
+      },
+      {
+        "trace": 10,
+        "K": 7,
+        "N": "1079",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "539",
+        "root_multiplicity": "77"
+      },
+      {
+        "trace": 10,
+        "K": 7,
+        "N": "1079",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "539",
+        "root_multiplicity": "77"
+      },
+      {
+        "trace": 10,
+        "K": 7,
+        "N": "1079",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "539",
+        "root_multiplicity": "77"
+      },
+      {
+        "trace": 10,
+        "K": 11,
+        "N": "105731",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "52866",
+        "root_multiplicity": "4806"
+      },
+      {
+        "trace": 10,
+        "K": 11,
+        "N": "105731",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "52866",
+        "root_multiplicity": "4806"
+      },
+      {
+        "trace": 10,
+        "K": 11,
+        "N": "105731",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "52866",
+        "root_multiplicity": "4806"
+      },
+      {
+        "trace": 10,
+        "K": 13,
+        "N": "1046629",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "523315",
+        "root_multiplicity": "40255"
+      },
+      {
+        "trace": 10,
+        "K": 13,
+        "N": "1046629",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "523315",
+        "root_multiplicity": "40255"
+      },
+      {
+        "trace": 10,
+        "K": 13,
+        "N": "1046629",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "523315",
+        "root_multiplicity": "40255"
+      },
+      {
+        "trace": 10,
+        "K": 17,
+        "N": "102558961",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "51279480",
+        "root_multiplicity": "3016440"
+      },
+      {
+        "trace": 10,
+        "K": 17,
+        "N": "102558961",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "51279480",
+        "root_multiplicity": "3016440"
+      },
+      {
+        "trace": 10,
+        "K": 17,
+        "N": "102558961",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "51279480",
+        "root_multiplicity": "3016440"
+      },
+      {
+        "trace": 10,
+        "K": 23,
+        "N": "99482086439",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "49741043219",
+        "root_multiplicity": "2162654053"
+      },
+      {
+        "trace": 10,
+        "K": 23,
+        "N": "99482086439",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "49741043219",
+        "root_multiplicity": "2162654053"
+      },
+      {
+        "trace": 10,
+        "K": 23,
+        "N": "99482086439",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "49741043219",
+        "root_multiplicity": "2162654053"
+      },
+      {
+        "trace": 10,
+        "K": 31,
+        "N": "955226983626719",
+        "matrix": [
+          [
+            9,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "477613491813359",
+        "root_multiplicity": "15406886832689"
+      },
+      {
+        "trace": 10,
+        "K": 31,
+        "N": "955226983626719",
+        "matrix": [
+          [
+            10,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "477613491813359",
+        "root_multiplicity": "15406886832689"
+      },
+      {
+        "trace": 10,
+        "K": 31,
+        "N": "955226983626719",
+        "matrix": [
+          [
+            -7,
+            8
+          ],
+          [
+            -15,
+            17
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "477613491813359",
+        "root_multiplicity": "15406886832689"
+      },
+      {
+        "trace": 11,
+        "K": 5,
+        "N": "131",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "65",
+        "root_multiplicity": "13"
+      },
+      {
+        "trace": 11,
+        "K": 5,
+        "N": "131",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "65",
+        "root_multiplicity": "13"
+      },
+      {
+        "trace": 11,
+        "K": 5,
+        "N": "131",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "65",
+        "root_multiplicity": "13"
+      },
+      {
+        "trace": 11,
+        "K": 7,
+        "N": "1429",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "714",
+        "root_multiplicity": "102"
+      },
+      {
+        "trace": 11,
+        "K": 7,
+        "N": "1429",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "714",
+        "root_multiplicity": "102"
+      },
+      {
+        "trace": 11,
+        "K": 7,
+        "N": "1429",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "714",
+        "root_multiplicity": "102"
+      },
+      {
+        "trace": 11,
+        "K": 11,
+        "N": "170039",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "85019",
+        "root_multiplicity": "7729"
+      },
+      {
+        "trace": 11,
+        "K": 11,
+        "N": "170039",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "85019",
+        "root_multiplicity": "7729"
+      },
+      {
+        "trace": 11,
+        "K": 11,
+        "N": "170039",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "85019",
+        "root_multiplicity": "7729"
+      },
+      {
+        "trace": 11,
+        "K": 13,
+        "N": "1854841",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "927420",
+        "root_multiplicity": "71340"
+      },
+      {
+        "trace": 11,
+        "K": 13,
+        "N": "1854841",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "927420",
+        "root_multiplicity": "71340"
+      },
+      {
+        "trace": 11,
+        "K": 13,
+        "N": "1854841",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "927420",
+        "root_multiplicity": "71340"
+      },
+      {
+        "trace": 11,
+        "K": 17,
+        "N": "220710491",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "110355245",
+        "root_multiplicity": "6491485"
+      },
+      {
+        "trace": 11,
+        "K": 17,
+        "N": "220710491",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "110355245",
+        "root_multiplicity": "6491485"
+      },
+      {
+        "trace": 11,
+        "K": 17,
+        "N": "220710491",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "110355245",
+        "root_multiplicity": "6491485"
+      },
+      {
+        "trace": 11,
+        "K": 23,
+        "N": "286482047279",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "143241023639",
+        "root_multiplicity": "6227870593"
+      },
+      {
+        "trace": 11,
+        "K": 23,
+        "N": "286482047279",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "143241023639",
+        "root_multiplicity": "6227870593"
+      },
+      {
+        "trace": 11,
+        "K": 23,
+        "N": "286482047279",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "143241023639",
+        "root_multiplicity": "6227870593"
+      },
+      {
+        "trace": 11,
+        "K": 31,
+        "N": "4056299287190149",
+        "matrix": [
+          [
+            10,
+            9
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2028149643595074",
+        "root_multiplicity": "65424182051454"
+      },
+      {
+        "trace": 11,
+        "K": 31,
+        "N": "4056299287190149",
+        "matrix": [
+          [
+            11,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2028149643595074",
+        "root_multiplicity": "65424182051454"
+      },
+      {
+        "trace": 11,
+        "K": 31,
+        "N": "4056299287190149",
+        "matrix": [
+          [
+            -8,
+            9
+          ],
+          [
+            -17,
+            19
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "2028149643595074",
+        "root_multiplicity": "65424182051454"
+      },
+      {
+        "trace": 12,
+        "K": 7,
+        "N": "1847",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "924",
+        "root_multiplicity": "132"
+      },
+      {
+        "trace": 12,
+        "K": 7,
+        "N": "1847",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "924",
+        "root_multiplicity": "132"
+      },
+      {
+        "trace": 12,
+        "K": 7,
+        "N": "1847",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "924",
+        "root_multiplicity": "132"
+      },
+      {
+        "trace": 12,
+        "K": 11,
+        "N": "262261",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "131131",
+        "root_multiplicity": "11921"
+      },
+      {
+        "trace": 12,
+        "K": 11,
+        "N": "262261",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "131131",
+        "root_multiplicity": "11921"
+      },
+      {
+        "trace": 12,
+        "K": 11,
+        "N": "262261",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "131131",
+        "root_multiplicity": "11921"
+      },
+      {
+        "trace": 12,
+        "K": 13,
+        "N": "3125123",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1562561",
+        "root_multiplicity": "120197"
+      },
+      {
+        "trace": 12,
+        "K": 13,
+        "N": "3125123",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1562561",
+        "root_multiplicity": "120197"
+      },
+      {
+        "trace": 12,
+        "K": 13,
+        "N": "3125123",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "1562561",
+        "root_multiplicity": "120197"
+      },
+      {
+        "trace": 12,
+        "K": 17,
+        "N": "443745457",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "221872729",
+        "root_multiplicity": "13051337"
+      },
+      {
+        "trace": 12,
+        "K": 17,
+        "N": "443745457",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "221872729",
+        "root_multiplicity": "13051337"
+      },
+      {
+        "trace": 12,
+        "K": 17,
+        "N": "443745457",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "221872729",
+        "root_multiplicity": "13051337"
+      },
+      {
+        "trace": 12,
+        "K": 23,
+        "N": "750817050983",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "375408525492",
+        "root_multiplicity": "16322109804"
+      },
+      {
+        "trace": 12,
+        "K": 23,
+        "N": "750817050983",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "375408525492",
+        "root_multiplicity": "16322109804"
+      },
+      {
+        "trace": 12,
+        "K": 23,
+        "N": "750817050983",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": -1,
+        "uniform_parity": "even",
+        "dimension": "375408525492",
+        "root_multiplicity": "16322109804"
+      },
+      {
+        "trace": 12,
+        "K": 31,
+        "N": "15137973344680031",
+        "matrix": [
+          [
+            11,
+            10
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7568986672340015",
+        "root_multiplicity": "244160860398065"
+      },
+      {
+        "trace": 12,
+        "K": 31,
+        "N": "15137973344680031",
+        "matrix": [
+          [
+            12,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7568986672340015",
+        "root_multiplicity": "244160860398065"
+      },
+      {
+        "trace": 12,
+        "K": 31,
+        "N": "15137973344680031",
+        "matrix": [
+          [
+            -9,
+            10
+          ],
+          [
+            -19,
+            21
+          ]
+        ],
+        "sign": 1,
+        "uniform_parity": "odd",
+        "dimension": "7568986672340015",
+        "root_multiplicity": "244160860398065"
+      }
+    ],
+    "mixed_CRT_example": {
+      "N": 989,
+      "factors": [
+        23,
+        43
+      ],
+      "discriminant": 12,
+      "quadratic_characters": [
+        1,
+        -1
+      ]
+    },
+    "excluded_design_negative_control": {
+      "trace": 7,
+      "K": 5,
+      "N": 55,
+      "gcd_det_A_minus_I": 5
+    }
+  },
+  "numpy": "2.3.5",
+  "quantum_checks": [
+    {
+      "trace": 3,
+      "K": 5,
+      "N": 11,
+      "sign": 1,
+      "unitarity_entry_error": 2.2206817243018947e-16,
+      "covariance_entry_errors": [
+        2.9893669801409083e-16,
+        4.0412728104402656e-16,
+        3.510833468576701e-16,
+        5.23691153334427e-16
+      ],
+      "old_refinement_negative_control": 2.0000000000000004,
+      "power_scalar_entry_error": 2.4171719245428307e-16,
+      "largest_trace_identity_error": 1.4918621893400541e-15,
+      "full_root_multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "full_eigenvalue_root_residual": 1.7989943932088618e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 5,
+          "root_multiplicities": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "eigenvalue_root_residual": 1.2658490090568385e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 6,
+          "root_multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "eigenvalue_root_residual": 6.473657049138937e-16
+        }
+      ]
+    },
+    {
+      "trace": 4,
+      "K": 5,
+      "N": 19,
+      "sign": -1,
+      "unitarity_entry_error": 3.3306690738754696e-16,
+      "covariance_entry_errors": [
+        8.200821523359857e-16,
+        1.159106867033638e-15,
+        8.711006819470244e-16,
+        9.226380847435024e-16
+      ],
+      "old_refinement_negative_control": null,
+      "power_scalar_entry_error": 4.442775332900926e-16,
+      "largest_trace_identity_error": 2.4126604949548913e-15,
+      "full_root_multiplicities": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "full_eigenvalue_root_residual": 1.7342238036525468e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 9,
+          "root_multiplicities": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "eigenvalue_root_residual": 1.9389211565826713e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 10,
+          "root_multiplicities": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "eigenvalue_root_residual": 1.0934428697813141e-15
+        }
+      ]
+    },
+    {
+      "trace": 5,
+      "K": 5,
+      "N": 29,
+      "sign": -1,
+      "unitarity_entry_error": 4.440892098500626e-16,
+      "covariance_entry_errors": [
+        6.106226635438361e-16,
+        9.43689570931383e-16,
+        7.28550816809042e-16,
+        7.021666937153402e-16
+      ],
+      "old_refinement_negative_control": null,
+      "power_scalar_entry_error": 4.516534151334411e-16,
+      "largest_trace_identity_error": 2.5468671054250572e-15,
+      "full_root_multiplicities": [
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "full_eigenvalue_root_residual": 3.624839920960301e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 14,
+          "root_multiplicities": [
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "eigenvalue_root_residual": 1.4602703977091184e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 15,
+          "root_multiplicities": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "eigenvalue_root_residual": 2.260094122591535e-15
+        }
+      ]
+    },
+    {
+      "trace": 6,
+      "K": 5,
+      "N": 41,
+      "sign": 1,
+      "unitarity_entry_error": 4.440892098500626e-16,
+      "covariance_entry_errors": [
+        7.447602459741819e-16,
+        6.280369834735101e-16,
+        7.108895957933346e-16,
+        7.108895957933346e-16
+      ],
+      "old_refinement_negative_control": null,
+      "power_scalar_entry_error": 3.357857890469388e-16,
+      "largest_trace_identity_error": 2.2315206618374916e-15,
+      "full_root_multiplicities": [
+        9,
+        8,
+        8,
+        8,
+        8
+      ],
+      "full_eigenvalue_root_residual": 3.7763906117083025e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 20,
+          "root_multiplicities": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "eigenvalue_root_residual": 1.7554167342883505e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 21,
+          "root_multiplicities": [
+            5,
+            4,
+            4,
+            4,
+            4
+          ],
+          "eigenvalue_root_residual": 1.807312143953211e-15
+        }
+      ]
+    },
+    {
+      "trace": 3,
+      "K": 7,
+      "N": 29,
+      "sign": 1,
+      "unitarity_entry_error": 2.221235660161377e-16,
+      "covariance_entry_errors": [
+        7.550332863779066e-16,
+        8.252325904466731e-16,
+        7.575797802392804e-16,
+        7.077671781985373e-16
+      ],
+      "old_refinement_negative_control": 2.0,
+      "power_scalar_entry_error": 4.740275208175037e-16,
+      "largest_trace_identity_error": 4.709546449477887e-15,
+      "full_root_multiplicities": [
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "full_eigenvalue_root_residual": 2.38374992562561e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 14,
+          "root_multiplicities": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "eigenvalue_root_residual": 1.5553031891404223e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 15,
+          "root_multiplicities": [
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "eigenvalue_root_residual": 1.8629347169951496e-15
+        }
+      ]
+    },
+    {
+      "trace": 4,
+      "K": 7,
+      "N": 71,
+      "sign": 1,
+      "unitarity_entry_error": 6.661338147750939e-16,
+      "covariance_entry_errors": [
+        6.753223014464258e-16,
+        1.0235750533041806e-15,
+        7.447602459741819e-16,
+        8.005932084973443e-16
+      ],
+      "old_refinement_negative_control": null,
+      "power_scalar_entry_error": 4.454699675187509e-16,
+      "largest_trace_identity_error": 2.561344912845726e-15,
+      "full_root_multiplicities": [
+        11,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "full_eigenvalue_root_residual": 6.71019383891539e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 35,
+          "root_multiplicities": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "eigenvalue_root_residual": 4.930190325141862e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 36,
+          "root_multiplicities": [
+            6,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "eigenvalue_root_residual": 3.059163085840056e-15
+        }
+      ]
+    },
+    {
+      "trace": 6,
+      "K": 7,
+      "N": 239,
+      "sign": 1,
+      "unitarity_entry_error": 6.661338147750939e-16,
+      "covariance_entry_errors": [
+        1.1060518526157679e-15,
+        1.5100665727558131e-15,
+        1.1322097734007353e-15,
+        1.0934428697813141e-15
+      ],
+      "old_refinement_negative_control": null,
+      "power_scalar_entry_error": 6.676305007160165e-16,
+      "largest_trace_identity_error": 3.433175098891678e-15,
+      "full_root_multiplicities": [
+        35,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "full_eigenvalue_root_residual": 4.2276033262255756e-15,
+      "parity_spectra": [
+        {
+          "parity": "odd",
+          "dimension": 119,
+          "root_multiplicities": [
+            17,
+            17,
+            17,
+            17,
+            17,
+            17,
+            17
+          ],
+          "eigenvalue_root_residual": 9.483800353594514e-15
+        },
+        {
+          "parity": "even",
+          "dimension": 120,
+          "root_multiplicities": [
+            18,
+            17,
+            17,
+            17,
+            17,
+            17,
+            17
+          ],
+          "eigenvalue_root_residual": 7.781863557487803e-15
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

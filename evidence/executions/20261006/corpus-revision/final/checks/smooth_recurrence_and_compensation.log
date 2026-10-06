@@ -1,0 +1,941 @@
+{
+  "producer": "computations/verification/smooth_recurrence_and_compensation.py",
+  "source_sha256": "09d0af7d0f9b94e83d5a4005314a91bdb63b756b3d11b950fcfec8ce6025e4a8",
+  "status": "PASS",
+  "scope": "Exact rational finite Fourier tails and integer pair classes; numerical phases and matrix exponentials are separate finite falsifiers, not interval or asymptotic proofs.",
+  "rational_tail_checks": [
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 2,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "2738650241/164025000000",
+      "exact_orbit_variance": "2764570241/164025000000",
+      "alias_difference": "-8/50625",
+      "exact_equality": false
+    },
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 2,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "2746244/2562890625",
+      "exact_orbit_variance": "3151244/2562890625",
+      "alias_difference": "-8/50625",
+      "exact_equality": false
+    },
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 4,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "77538480988913707953184596698380804231/4638389991681536448804290696518012500000",
+      "exact_orbit_variance": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "alias_difference": "-446508819511773430367/2820326347440598529610000",
+      "exact_equality": false
+    },
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 4,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "10006533640536546392667733800072936587/9276779983363072897608581393036025000000",
+      "exact_orbit_variance": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "alias_difference": "-446508819511773430367/2820326347440598529610000",
+      "exact_equality": false
+    },
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 8,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "94298742350900656752376020428633384397509123940593513795200328226289378011685079029947983868399085911780034090660211036371545826799300704032787/5640620613245314043559175472221960024766008179067741673465034471819716343699008283948539181158272756102515443582188339295000702960947265625000000",
+      "exact_orbit_variance": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "alias_difference": "-71923551606887929954913971969981784394839278841849265573225637978577687871722175980795131258829194595565170285570322150523/454343078861569185187389477679942999374291375022413460384879558954110512697637617889642331434098775366880613602607421875000000",
+      "exact_equality": false
+    },
+    {
+      "K": 3,
+      "N": "7",
+      "radius": 8,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "3041596143437360185874143952776511017888003349824095552781172499135478089517063376686417933696321088378105039330163160118295305920682456508581/2820310306622657021779587736110980012383004089533870836732517235909858171849504141974269590579136378051257721791094169647500351480473632812500000",
+      "exact_orbit_variance": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "alias_difference": "-72025550819293332237826278555115958537503070149019615032815401605818686579315535780575579696933231593584943953065439338023/454343078861569185187389477679942999374291375022413460384879558954110512697637617889642331434098775366880613602607421875000000",
+      "exact_equality": false
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 2,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "2764570241/164025000000",
+      "exact_orbit_variance": "2764570241/164025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 2,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "3151244/2562890625",
+      "exact_orbit_variance": "3151244/2562890625",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 4,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "exact_orbit_variance": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 4,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "exact_orbit_variance": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 8,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "1830608938716056770055586888561681722397120212816285548423528861891918795728401127044955607240125391197835882800890932237296558947101114147213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "exact_orbit_variance": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "alias_difference": "-12000771436958213988420919/94038524718531156199735911330468750",
+      "exact_equality": false
+    },
+    {
+      "K": 5,
+      "N": "41",
+      "radius": 8,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": false,
+      "exact_quantum_second": "536721619884272008812635513035958256468471478214227116024039821464525781463741141908514020379046399014495122683768432830925194231855384323227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "exact_orbit_variance": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "alias_difference": "-12000771436958213988420919/94038524718531156199735911330468750",
+      "exact_equality": false
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 2,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "2764570241/164025000000",
+      "exact_orbit_variance": "2764570241/164025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 2,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "3151244/2562890625",
+      "exact_orbit_variance": "3151244/2562890625",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 4,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "exact_orbit_variance": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 4,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "exact_orbit_variance": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 8,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "exact_orbit_variance": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "radius": 8,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "exact_orbit_variance": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 2,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "2764570241/164025000000",
+      "exact_orbit_variance": "2764570241/164025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 2,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "3151244/2562890625",
+      "exact_orbit_variance": "3151244/2562890625",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 4,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "exact_orbit_variance": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 4,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "exact_orbit_variance": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 8,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "exact_orbit_variance": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "radius": 8,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "exact_orbit_variance": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 2,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "2764570241/164025000000",
+      "exact_orbit_variance": "2764570241/164025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 2,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "3151244/2562890625",
+      "exact_orbit_variance": "3151244/2562890625",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 4,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "exact_orbit_variance": "78272822261688903474296108419961962981/4638389991681536448804290696518012500000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 4,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "exact_orbit_variance": "11475216186086937434890757243235254087/9276779983363072897608581393036025000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 8,
+      "low_cutoff": 0,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "exact_orbit_variance": "1830608952558951097910529153719459506408487647715388505227116579839013376783532302468108767538138275030560530333400157763541991616406179772213/108473473331640654683830297542730000476269388058995032182019893688840698917288620845164215022274476078894527761195929601826936595402832031250000",
+      "alias_difference": "0",
+      "exact_equality": true
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "radius": 8,
+      "low_cutoff": 1,
+      "sufficient_lifting_cutoff": true,
+      "exact_quantum_second": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "exact_orbit_variance": "536721675255849320232404573667069392513941217810638943238390693252904105684265843601126661571097934345393712813805334935906924909075646823227/433893893326562618735321190170920001905077552235980128728079574755362795669154483380656860089097904315578111044783718407307746381611328125000000",
+      "alias_difference": "0",
+      "exact_equality": true
+    }
+  ],
+  "pair_and_third_checks": [
+    {
+      "K": 3,
+      "N": "7",
+      "pair_count": 108,
+      "distinct_keys": 37,
+      "multiplicity_histogram": {
+        "1": 12,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "6": 7
+      },
+      "mixed_third_moments": [
+        {
+          "species": 1,
+          "real": -0.181687581760175,
+          "imaginary": 0.0,
+          "reference": -0.181687581760175,
+          "scaled_real": -0.3146921227129475
+        },
+        {
+          "species": 2,
+          "real": -0.181687581760175,
+          "imaginary": 0.0,
+          "reference": -0.181687581760175,
+          "scaled_real": -0.3146921227129475
+        }
+      ]
+    },
+    {
+      "K": 11,
+      "N": "8119",
+      "pair_count": 1980,
+      "distinct_keys": 1782,
+      "multiplicity_histogram": {
+        "1": 1628,
+        "2": 110,
+        "3": 44
+      },
+      "mixed_third_moments": [
+        {
+          "species": 1,
+          "real": 0.4264009219672861,
+          "imaginary": 0.0,
+          "reference": 0.42640092196728596,
+          "scaled_real": 1.4142118684270994
+        },
+        {
+          "species": 2,
+          "real": 0.4264009219672861,
+          "imaginary": 0.0,
+          "reference": 0.42640092196728596,
+          "scaled_real": 1.4142118684270994
+        }
+      ]
+    },
+    {
+      "K": 23,
+      "N": "318281039",
+      "pair_count": 9108,
+      "distinct_keys": 8694,
+      "multiplicity_histogram": {
+        "1": 8372,
+        "2": 230,
+        "3": 92
+      },
+      "mixed_third_moments": [
+        {
+          "species": 1,
+          "real": 0.2948839123097941,
+          "imaginary": 0.0,
+          "reference": 0.29488391230979405,
+          "scaled_real": 1.4142135623730943
+        },
+        {
+          "species": 2,
+          "real": 0.2948839123097941,
+          "imaginary": 0.0,
+          "reference": 0.29488391230979405,
+          "scaled_real": 1.4142135623730943
+        }
+      ]
+    },
+    {
+      "K": 47,
+      "N": "489133282872437279",
+      "pair_count": 38916,
+      "distinct_keys": 38070,
+      "multiplicity_histogram": {
+        "1": 37412,
+        "2": 470,
+        "3": 188
+      },
+      "mixed_third_moments": [
+        {
+          "species": 1,
+          "real": 0.20628424925175862,
+          "imaginary": 0.0,
+          "reference": 0.20628424925175867,
+          "scaled_real": 1.4142135623730945
+        },
+        {
+          "species": 2,
+          "real": 0.20628424925175862,
+          "imaginary": 0.0,
+          "reference": 0.20628424925175867,
+          "scaled_real": 1.4142135623730945
+        }
+      ]
+    }
+  ],
+  "matrix_checks": [
+    {
+      "K": 3,
+      "N": 7,
+      "dimension": 3,
+      "bracket_error": 4.880058930546103,
+      "bracket_bound": 61.327966061815914,
+      "operator_checks": [
+        {
+          "a": 0.0,
+          "t": 0.25,
+          "epsilon": 1.0051681307531817,
+          "operator_error": 1.9093293582375128,
+          "analytic_bound": 1216.0944726788805,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.7124469411063838,
+          "actual_recurrence_imaginary": 0.041203464854511415
+        },
+        {
+          "a": 0.4,
+          "t": 0.25,
+          "epsilon": 1.0051681307531817,
+          "operator_error": 1.8972914731824124,
+          "analytic_bound": 2778.023510497777,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.8664012201716976,
+          "actual_recurrence_imaginary": -0.016546885809863965
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": 1.0051681307531817,
+          "operator_error": 1.9314599344846417,
+          "analytic_bound": 2192.300121315691,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.7230906383518438,
+          "actual_recurrence_imaginary": -0.039003151276829864
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": -1.0051681307531817,
+          "operator_error": 1.860577131364402,
+          "analytic_bound": 2192.300121315691,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.4766081532395574,
+          "actual_recurrence_imaginary": -0.05988352011552349
+        },
+        {
+          "a": 0.0,
+          "t": 1.0,
+          "epsilon": 2.0103362615063634,
+          "operator_error": 1.89643701858607,
+          "analytic_bound": 9604.828769429798,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.8218614922855677,
+          "actual_recurrence_imaginary": -0.015338500656451906
+        },
+        {
+          "a": 0.0,
+          "t": 0.0001546473935329355,
+          "epsilon": 0.025,
+          "operator_error": 0.0015068056038163174,
+          "analytic_bound": 0.03739821700407961,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999997331272146,
+          "actual_recurrence_imaginary": 3.757080695726064e-11
+        },
+        {
+          "a": -0.0001546473935329355,
+          "t": 0.0001546473935329355,
+          "epsilon": 0.025,
+          "operator_error": 0.001534319099319224,
+          "analytic_bound": 0.05241736201026777,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999975851583437,
+          "actual_recurrence_imaginary": -1.2176520694924487e-09
+        },
+        {
+          "a": -0.0001546473935329355,
+          "t": 0.0001546473935329355,
+          "epsilon": -0.025,
+          "operator_error": 0.0015149441974125527,
+          "analytic_bound": 0.05241736201026777,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999975043526447,
+          "actual_recurrence_imaginary": -1.2564449686200089e-09
+        },
+        {
+          "a": 0.0,
+          "t": 0.000618589574131742,
+          "epsilon": 0.05,
+          "operator_error": 0.005963936655823682,
+          "analytic_bound": 0.22252577845536697,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999957360230304,
+          "actual_recurrence_imaginary": 2.3984291595965587e-09
+        },
+        {
+          "a": -0.000618589574131742,
+          "t": 0.000618589574131742,
+          "epsilon": 0.05,
+          "operator_error": 0.006171598152549939,
+          "analytic_bound": 0.34267893850487224,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999621303315653,
+          "actual_recurrence_imaginary": -7.626682598423547e-08
+        },
+        {
+          "a": -0.000618589574131742,
+          "t": 0.000618589574131742,
+          "epsilon": -0.05,
+          "operator_error": 0.006016211167095675,
+          "analytic_bound": 0.34267893850487224,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999595434774157,
+          "actual_recurrence_imaginary": -8.129537999774308e-08
+        },
+        {
+          "a": 0.0,
+          "t": 0.002474358296526968,
+          "epsilon": 0.1,
+          "operator_error": 0.02347140113831851,
+          "analytic_bound": 1.4735663973338562,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999321588468568,
+          "actual_recurrence_imaginary": 1.519522315696654e-07
+        },
+        {
+          "a": -0.002474358296526968,
+          "t": 0.002474358296526968,
+          "epsilon": 0.1,
+          "operator_error": 0.024930418024074735,
+          "analytic_bound": 2.4347916777298986,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9994226929490646,
+          "actual_recurrence_imaginary": -4.602317233483079e-06
+        },
+        {
+          "a": -0.002474358296526968,
+          "t": 0.002474358296526968,
+          "epsilon": -0.1,
+          "operator_error": 0.023675229119176088,
+          "analytic_bound": 2.4347916777298986,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9993398352462945,
+          "actual_recurrence_imaginary": -5.277243104696676e-06
+        }
+      ]
+    },
+    {
+      "K": 5,
+      "N": 41,
+      "dimension": 20,
+      "bracket_error": 0.05685030504275568,
+      "bracket_bound": 0.3052116533306664,
+      "operator_checks": [
+        {
+          "a": 0.0,
+          "t": 0.25,
+          "epsilon": 2.1410136276713816,
+          "operator_error": 1.9996628661335074,
+          "analytic_bound": 334.533245768812,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.0768660390480288,
+          "actual_recurrence_imaginary": -0.08092477011461136
+        },
+        {
+          "a": 0.4,
+          "t": 0.25,
+          "epsilon": 2.1410136276713816,
+          "operator_error": 1.9993833243460986,
+          "analytic_bound": 774.5121242837815,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.11244043725282474,
+          "actual_recurrence_imaginary": -0.019191948565029062
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": 2.1410136276713816,
+          "operator_error": 1.9887464591011754,
+          "analytic_bound": 609.520044840668,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": -0.0165499292537474,
+          "actual_recurrence_imaginary": 0.07583691162754164
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": -2.1410136276713816,
+          "operator_error": 1.9906360591933456,
+          "analytic_bound": 609.520044840668,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.08417896745825759,
+          "actual_recurrence_imaginary": -0.11134547115548284
+        },
+        {
+          "a": 0.0,
+          "t": 1.0,
+          "epsilon": 4.282027255342763,
+          "operator_error": 1.9999831048780585,
+          "analytic_bound": 2673.467822732569,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": -0.007612258023327673,
+          "actual_recurrence_imaginary": 0.020447133144194808
+        },
+        {
+          "a": 0.0,
+          "t": 3.408640209603339e-05,
+          "epsilon": 0.025,
+          "operator_error": 2.433307576570671e-05,
+          "analytic_bound": 0.0006268647528367701,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999995537290882,
+          "actual_recurrence_imaginary": 1.4412913325659566e-11
+        },
+        {
+          "a": -3.408640209603339e-05,
+          "t": 3.408640209603339e-05,
+          "epsilon": 0.025,
+          "operator_error": 2.0077242206970952e-05,
+          "analytic_bound": 0.0010646625549207795,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999997989338,
+          "actual_recurrence_imaginary": -2.3744671322472463e-16
+        },
+        {
+          "a": -3.408640209603339e-05,
+          "t": 3.408640209603339e-05,
+          "epsilon": -0.025,
+          "operator_error": 1.9490167908147867e-05,
+          "analytic_bound": 0.0010646625549207795,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999997916771,
+          "actual_recurrence_imaginary": -5.818946941047592e-17
+        },
+        {
+          "a": 0.0,
+          "t": 0.00013634560838413355,
+          "epsilon": 0.05,
+          "operator_error": 0.00014628032222945917,
+          "analytic_bound": 0.004633403456030827,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999928581514061,
+          "actual_recurrence_imaginary": 9.75731976823619e-10
+        },
+        {
+          "a": -0.00013634560838413355,
+          "t": 0.00013634560838413355,
+          "epsilon": 0.05,
+          "operator_error": 9.757975653288223e-05,
+          "analytic_bound": 0.008135785872702903,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999962531899,
+          "actual_recurrence_imaginary": -1.3623443464918368e-14
+        },
+        {
+          "a": -0.00013634560838413355,
+          "t": 0.00013634560838413355,
+          "epsilon": -0.05,
+          "operator_error": 9.660508217434429e-05,
+          "analytic_bound": 0.008135785872702903,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999960268596,
+          "actual_recurrence_imaginary": 6.217519988443999e-16
+        },
+        {
+          "a": 0.0,
+          "t": 0.0005453824335365342,
+          "epsilon": 0.1,
+          "operator_error": 0.0010357092326958243,
+          "analytic_bound": 0.03554116938159329,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9998857086803892,
+          "actual_recurrence_imaginary": 6.893612805468265e-08
+        },
+        {
+          "a": -0.0005453824335365342,
+          "t": 0.0005453824335365342,
+          "epsilon": 0.1,
+          "operator_error": 0.0005757506964830875,
+          "analytic_bound": 0.06356022871496989,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999037132759,
+          "actual_recurrence_imaginary": 1.7193551378642815e-12
+        },
+        {
+          "a": -0.0005453824335365342,
+          "t": 0.0005453824335365342,
+          "epsilon": -0.1,
+          "operator_error": 0.0005772009938677526,
+          "analytic_bound": 0.06356022871496989,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999998972245665,
+          "actual_recurrence_imaginary": -5.724806587982523e-13
+        }
+      ]
+    },
+    {
+      "K": 7,
+      "N": 239,
+      "dimension": 119,
+      "bracket_error": 0.00041096066766371076,
+      "bracket_bound": 0.00154084508992493,
+      "operator_checks": [
+        {
+          "a": 0.0,
+          "t": 0.25,
+          "epsilon": 4.7521970984273505,
+          "operator_error": 1.9998106552095147,
+          "analytic_bound": 107.44778567754348,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.01564273737146675,
+          "actual_recurrence_imaginary": 0.026596252613776978
+        },
+        {
+          "a": 0.4,
+          "t": 0.25,
+          "epsilon": 4.7521970984273505,
+          "operator_error": 1.9997391928942412,
+          "analytic_bound": 249.03654606374442,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.005913037488087282,
+          "actual_recurrence_imaginary": -0.003918348910067431
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": 4.7521970984273505,
+          "operator_error": 1.7482880215706245,
+          "analytic_bound": 195.94076091891907,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.30738944419580827,
+          "actual_recurrence_imaginary": 0.03621161542096819
+        },
+        {
+          "a": -0.25,
+          "t": 0.25,
+          "epsilon": -4.7521970984273505,
+          "operator_error": 1.7768450800078865,
+          "analytic_bound": 195.94076091891907,
+          "bound_below_one_tenth": false,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.30534467450658626,
+          "actual_recurrence_imaginary": 0.00488583752350499
+        },
+        {
+          "a": 0.0,
+          "t": 1.0,
+          "epsilon": 9.504394196854701,
+          "operator_error": 1.9999303266263893,
+          "analytic_bound": 859.5126904484107,
+          "bound_below_one_tenth": false,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.015809665524432068,
+          "actual_recurrence_imaginary": -0.007974008483196142
+        },
+        {
+          "a": 0.0,
+          "t": 6.9188057297714205e-06,
+          "epsilon": 0.025,
+          "operator_error": 6.200687924391966e-07,
+          "analytic_bound": 1.612248943904335e-05,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999999793836536,
+          "actual_recurrence_imaginary": 2.2717254295714275e-14
+        },
+        {
+          "a": -6.9188057297714205e-06,
+          "t": 6.9188057297714205e-06,
+          "epsilon": 0.025,
+          "operator_error": 3.3591216727469026e-07,
+          "analytic_bound": 2.9006334352529102e-05,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999999747,
+          "actual_recurrence_imaginary": -7.395793663184817e-18
+        },
+        {
+          "a": -6.9188057297714205e-06,
+          "t": 6.9188057297714205e-06,
+          "epsilon": -0.025,
+          "operator_error": 3.3739326167960466e-07,
+          "analytic_bound": 2.9006334352529102e-05,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999999735,
+          "actual_recurrence_imaginary": 1.302554100908838e-17
+        },
+        {
+          "a": 0.0,
+          "t": 2.7675222919085682e-05,
+          "epsilon": 0.05,
+          "operator_error": 4.836709598190834e-06,
+          "analytic_bound": 0.00012705385914994064,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999996701392052,
+          "actual_recurrence_imaginary": 1.4847368839556054e-12
+        },
+        {
+          "a": -2.7675222919085682e-05,
+          "t": 2.7675222919085682e-05,
+          "epsilon": 0.05,
+          "operator_error": 2.4646825303007694e-06,
+          "analytic_bound": 0.00023012461845782668,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999987671,
+          "actual_recurrence_imaginary": -4.851007069522618e-18
+        },
+        {
+          "a": -2.7675222919085682e-05,
+          "t": 2.7675222919085682e-05,
+          "epsilon": -0.05,
+          "operator_error": 2.478307823960194e-06,
+          "analytic_bound": 0.00023012461845782668,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999987399,
+          "actual_recurrence_imaginary": -2.916156934168639e-17
+        },
+        {
+          "a": 0.0,
+          "t": 0.00011070089167634273,
+          "epsilon": 0.1,
+          "operator_error": 3.842204813076799e-05,
+          "analytic_bound": 0.0010087266477499003,
+          "bound_below_one_tenth": true,
+          "is_compensated": false,
+          "actual_recurrence_real": 0.9999947223969382,
+          "actual_recurrence_imaginary": 9.879130009872689e-11
+        },
+        {
+          "a": -0.00011070089167634273,
+          "t": 0.00011070089167634273,
+          "epsilon": 0.1,
+          "operator_error": 1.9265415074874536e-05,
+          "analytic_bound": 0.0018332927222129885,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999262345,
+          "actual_recurrence_imaginary": -3.969810667668509e-17
+        },
+        {
+          "a": -0.00011070089167634273,
+          "t": 0.00011070089167634273,
+          "epsilon": -0.1,
+          "operator_error": 1.9332022403493493e-05,
+          "analytic_bound": 0.0018332927222129885,
+          "bound_below_one_tenth": true,
+          "is_compensated": true,
+          "actual_recurrence_real": 0.9999999999254398,
+          "actual_recurrence_imaginary": -4.7859333184795607e-17
+        }
+      ]
+    }
+  ]
+}

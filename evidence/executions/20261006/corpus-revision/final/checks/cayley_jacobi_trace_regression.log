@@ -1,0 +1,50 @@
+{
+  "arithmetic": "finite-field exact set construction + complex128 Jacobi/Fourier evaluation",
+  "audits": [
+    {
+      "K": 13,
+      "additive_energy": 604,
+      "annihilator_dimension": 4,
+      "expected_q0_trace": 0.9230769230769231,
+      "expected_sum_abs_trace_fourth": 1.1208291026224573,
+      "expected_sum_abs_trace_squared": 3.7633136094674557,
+      "frequencies_checked": 53,
+      "max_fourier_trace_error": 6.747535135465923e-14,
+      "max_scaled_trace_imaginary_part": 4.6129766673175254e-14,
+      "p": 53,
+      "q0_trace": 0.9230769230769236,
+      "sum_abs_trace_fourth": 1.1208291026224595,
+      "sum_abs_trace_squared": 3.7633136094674566
+    },
+    {
+      "K": 11,
+      "additive_energy": 270,
+      "annihilator_dimension": 18,
+      "expected_q0_trace": 0.9090909090909091,
+      "expected_sum_abs_trace_fourth": 3.669831295676525,
+      "expected_sum_abs_trace_squared": 16.446280991735538,
+      "frequencies_checked": 199,
+      "max_fourier_trace_error": 3.3422575178386174e-13,
+      "max_scaled_trace_imaginary_part": 3.0010561936756456e-13,
+      "p": 199,
+      "q0_trace": 0.9090909090909097,
+      "sum_abs_trace_fourth": 3.6698312956765218,
+      "sum_abs_trace_squared": 16.44628099173554
+    },
+    {
+      "K": 23,
+      "annihilator_dimension": 20,
+      "frequencies_checked": 8,
+      "max_fourier_trace_error": 5.423134379971317e-13,
+      "max_scaled_trace_imaginary_part": 4.390265928577719e-13,
+      "p": 461
+    }
+  ],
+  "producer": "computations/verification/cayley_jacobi_trace_regression.py",
+  "scope": "Finite regression of the exact full-annihilator Cayley/Jacobi trace identity. All frequencies are checked at (53,13) and (199,11); a distinct larger collision-rich design (461,23) is checked on deterministic frequencies. No asymptotic theorem is inferred from these floating-point checks.",
+  "tolerances": {
+    "identity_absolute": 5e-10,
+    "moment_relative": 5e-09
+  },
+  "verdict": "PASS"
+}

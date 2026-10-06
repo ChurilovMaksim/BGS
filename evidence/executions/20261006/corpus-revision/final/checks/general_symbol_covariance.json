@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "scope": "exact finite multi-orbit Fourier covariance and common-divisor tests",
+  "configurations": 6,
+  "exact_gram_entries": 96,
+  "gcd_examples": 4,
+  "bilinear_symbol_identity": true,
+  "records": [
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 12,
+      "starting_lag": 45,
+      "exact_gram_entries": 16
+    },
+    {
+      "A": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 12,
+      "starting_lag": 45,
+      "exact_gram_entries": 16
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 12,
+      "starting_lag": 45,
+      "exact_gram_entries": 16
+    },
+    {
+      "A": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 12,
+      "starting_lag": 45,
+      "exact_gram_entries": 16
+    },
+    {
+      "A": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 20,
+      "starting_lag": 69,
+      "exact_gram_entries": 16
+    },
+    {
+      "A": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "fourier_support": 10,
+      "oriented_orbits": 4,
+      "integer_gap_bound": 20,
+      "starting_lag": 69,
+      "exact_gram_entries": 16
+    }
+  ],
+  "source_sha256": "39d5f82d26588790ab28a0c9e5936eda81d6dd8b602b2b8969808195bdb28518"
+}

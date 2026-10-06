@@ -330,6 +330,8 @@ The figures below are scientific outputs of the project, not decorative README a
 ---
 
 
+**Spectral diagnostic correction (6 October 2026).** The historical [spacing output](../evidence/numerical/goe_spacing.json) and [forward-window output](../evidence/numerical/matched_window_count_variance.json) used a polynomial unfolding that can reverse level order. These archived numbers are not validated statistical evidence. The [correction and method contract](../record/audits/spectral_diagnostics_correction_20261006.md), [corrected spacing output](../evidence/numerical/goe_spacing_monotone_v2.json), [corrected window output](../evidence/numerical/matched_window_count_variance_monotone_v2.json), and [smoothing/edge sensitivity](../evidence/numerical/spectral_smoothing_sensitivity_v2.json) use order-preserving integrated Gaussian smoothing and explicitly mark undefined standardized differences. These are finite descriptive diagnostics, not a BGS theorem; using the same flawed transformation for cat-map and GOE never guaranteed cancellation of its error.
+
 ## 16. Glossary
 
 | Term | Meaning in this repository |

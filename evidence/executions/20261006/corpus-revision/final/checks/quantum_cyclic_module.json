@@ -1,0 +1,1102 @@
+{
+  "status": "PASS",
+  "scope": "exact modular orbit and Gaussian-integer identities; dense checks numerical",
+  "configurations": 67,
+  "lag_modules": 1332,
+  "all_time_count_checks": 9324,
+  "dense_checks": 16,
+  "max_dense_relative_error": 6.672149336016527e-16,
+  "even_order_negative_control": {
+    "p": 7,
+    "K": 8,
+    "measured_normalized_squared_norm": 64,
+    "inapplicable_odd_order_value": 32
+  },
+  "source_sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04",
+  "configurations_detail": [
+    {
+      "p": 5,
+      "A": [
+        4,
+        4,
+        1,
+        0
+      ],
+      "K": 3,
+      "lags": 1,
+      "disjoint_label_orbits": 4,
+      "time_checks": 7,
+      "nonzero_determinants": 1
+    },
+    {
+      "p": 7,
+      "A": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "K": 3,
+      "lags": 1,
+      "disjoint_label_orbits": 4,
+      "time_checks": 7,
+      "nonzero_determinants": 1
+    },
+    {
+      "p": 11,
+      "A": [
+        3,
+        10,
+        1,
+        0
+      ],
+      "K": 5,
+      "lags": 2,
+      "disjoint_label_orbits": 8,
+      "time_checks": 14,
+      "nonzero_determinants": 2
+    },
+    {
+      "p": 13,
+      "A": [
+        10,
+        12,
+        1,
+        0
+      ],
+      "K": 7,
+      "lags": 3,
+      "disjoint_label_orbits": 12,
+      "time_checks": 21,
+      "nonzero_determinants": 3
+    },
+    {
+      "p": 17,
+      "A": [
+        14,
+        16,
+        1,
+        0
+      ],
+      "K": 9,
+      "lags": 4,
+      "disjoint_label_orbits": 16,
+      "time_checks": 28,
+      "nonzero_determinants": 4
+    },
+    {
+      "p": 19,
+      "A": [
+        3,
+        18,
+        1,
+        0
+      ],
+      "K": 9,
+      "lags": 4,
+      "disjoint_label_orbits": 16,
+      "time_checks": 28,
+      "nonzero_determinants": 4
+    },
+    {
+      "p": 19,
+      "A": [
+        4,
+        18,
+        1,
+        0
+      ],
+      "K": 5,
+      "lags": 2,
+      "disjoint_label_orbits": 8,
+      "time_checks": 14,
+      "nonzero_determinants": 2
+    },
+    {
+      "p": 23,
+      "A": [
+        4,
+        22,
+        1,
+        0
+      ],
+      "K": 11,
+      "lags": 5,
+      "disjoint_label_orbits": 20,
+      "time_checks": 35,
+      "nonzero_determinants": 5
+    },
+    {
+      "p": 23,
+      "A": [
+        6,
+        22,
+        1,
+        0
+      ],
+      "K": 11,
+      "lags": 5,
+      "disjoint_label_orbits": 20,
+      "time_checks": 35,
+      "nonzero_determinants": 5
+    },
+    {
+      "p": 29,
+      "A": [
+        3,
+        28,
+        1,
+        0
+      ],
+      "K": 7,
+      "lags": 3,
+      "disjoint_label_orbits": 12,
+      "time_checks": 21,
+      "nonzero_determinants": 3
+    },
+    {
+      "p": 29,
+      "A": [
+        4,
+        28,
+        1,
+        0
+      ],
+      "K": 15,
+      "lags": 7,
+      "disjoint_label_orbits": 28,
+      "time_checks": 49,
+      "nonzero_determinants": 7
+    },
+    {
+      "p": 31,
+      "A": [
+        3,
+        30,
+        1,
+        0
+      ],
+      "K": 15,
+      "lags": 7,
+      "disjoint_label_orbits": 28,
+      "time_checks": 49,
+      "nonzero_determinants": 7
+    },
+    {
+      "p": 31,
+      "A": [
+        6,
+        30,
+        1,
+        0
+      ],
+      "K": 15,
+      "lags": 7,
+      "disjoint_label_orbits": 28,
+      "time_checks": 49,
+      "nonzero_determinants": 7
+    },
+    {
+      "p": 37,
+      "A": [
+        34,
+        36,
+        1,
+        0
+      ],
+      "K": 19,
+      "lags": 9,
+      "disjoint_label_orbits": 36,
+      "time_checks": 63,
+      "nonzero_determinants": 9
+    },
+    {
+      "p": 41,
+      "A": [
+        6,
+        40,
+        1,
+        0
+      ],
+      "K": 5,
+      "lags": 2,
+      "disjoint_label_orbits": 8,
+      "time_checks": 14,
+      "nonzero_determinants": 2
+    },
+    {
+      "p": 43,
+      "A": [
+        4,
+        42,
+        1,
+        0
+      ],
+      "K": 11,
+      "lags": 5,
+      "disjoint_label_orbits": 20,
+      "time_checks": 35,
+      "nonzero_determinants": 5
+    },
+    {
+      "p": 47,
+      "A": [
+        4,
+        46,
+        1,
+        0
+      ],
+      "K": 23,
+      "lags": 11,
+      "disjoint_label_orbits": 44,
+      "time_checks": 77,
+      "nonzero_determinants": 11
+    },
+    {
+      "p": 47,
+      "A": [
+        6,
+        46,
+        1,
+        0
+      ],
+      "K": 23,
+      "lags": 11,
+      "disjoint_label_orbits": 44,
+      "time_checks": 77,
+      "nonzero_determinants": 11
+    },
+    {
+      "p": 53,
+      "A": [
+        4,
+        52,
+        1,
+        0
+      ],
+      "K": 9,
+      "lags": 4,
+      "disjoint_label_orbits": 16,
+      "time_checks": 28,
+      "nonzero_determinants": 4
+    },
+    {
+      "p": 53,
+      "A": [
+        50,
+        52,
+        1,
+        0
+      ],
+      "K": 27,
+      "lags": 13,
+      "disjoint_label_orbits": 52,
+      "time_checks": 91,
+      "nonzero_determinants": 13
+    },
+    {
+      "p": 59,
+      "A": [
+        3,
+        58,
+        1,
+        0
+      ],
+      "K": 29,
+      "lags": 14,
+      "disjoint_label_orbits": 56,
+      "time_checks": 98,
+      "nonzero_determinants": 14
+    },
+    {
+      "p": 61,
+      "A": [
+        58,
+        60,
+        1,
+        0
+      ],
+      "K": 15,
+      "lags": 7,
+      "disjoint_label_orbits": 28,
+      "time_checks": 49,
+      "nonzero_determinants": 7
+    },
+    {
+      "p": 71,
+      "A": [
+        3,
+        70,
+        1,
+        0
+      ],
+      "K": 35,
+      "lags": 17,
+      "disjoint_label_orbits": 68,
+      "time_checks": 119,
+      "nonzero_determinants": 17
+    },
+    {
+      "p": 71,
+      "A": [
+        4,
+        70,
+        1,
+        0
+      ],
+      "K": 7,
+      "lags": 3,
+      "disjoint_label_orbits": 12,
+      "time_checks": 21,
+      "nonzero_determinants": 3
+    },
+    {
+      "p": 71,
+      "A": [
+        6,
+        70,
+        1,
+        0
+      ],
+      "K": 35,
+      "lags": 17,
+      "disjoint_label_orbits": 68,
+      "time_checks": 119,
+      "nonzero_determinants": 17
+    },
+    {
+      "p": 73,
+      "A": [
+        70,
+        72,
+        1,
+        0
+      ],
+      "K": 37,
+      "lags": 18,
+      "disjoint_label_orbits": 72,
+      "time_checks": 126,
+      "nonzero_determinants": 18
+    },
+    {
+      "p": 79,
+      "A": [
+        3,
+        78,
+        1,
+        0
+      ],
+      "K": 39,
+      "lags": 19,
+      "disjoint_label_orbits": 76,
+      "time_checks": 133,
+      "nonzero_determinants": 19
+    },
+    {
+      "p": 79,
+      "A": [
+        6,
+        78,
+        1,
+        0
+      ],
+      "K": 13,
+      "lags": 6,
+      "disjoint_label_orbits": 24,
+      "time_checks": 42,
+      "nonzero_determinants": 6
+    },
+    {
+      "p": 89,
+      "A": [
+        86,
+        88,
+        1,
+        0
+      ],
+      "K": 11,
+      "lags": 5,
+      "disjoint_label_orbits": 20,
+      "time_checks": 35,
+      "nonzero_determinants": 5
+    },
+    {
+      "p": 97,
+      "A": [
+        94,
+        96,
+        1,
+        0
+      ],
+      "K": 49,
+      "lags": 24,
+      "disjoint_label_orbits": 96,
+      "time_checks": 168,
+      "nonzero_determinants": 24
+    },
+    {
+      "p": 101,
+      "A": [
+        3,
+        100,
+        1,
+        0
+      ],
+      "K": 25,
+      "lags": 12,
+      "disjoint_label_orbits": 48,
+      "time_checks": 84,
+      "nonzero_determinants": 12
+    },
+    {
+      "p": 101,
+      "A": [
+        4,
+        100,
+        1,
+        0
+      ],
+      "K": 17,
+      "lags": 8,
+      "disjoint_label_orbits": 32,
+      "time_checks": 56,
+      "nonzero_determinants": 8
+    },
+    {
+      "p": 103,
+      "A": [
+        6,
+        102,
+        1,
+        0
+      ],
+      "K": 17,
+      "lags": 8,
+      "disjoint_label_orbits": 32,
+      "time_checks": 56,
+      "nonzero_determinants": 8
+    },
+    {
+      "p": 109,
+      "A": [
+        106,
+        108,
+        1,
+        0
+      ],
+      "K": 27,
+      "lags": 13,
+      "disjoint_label_orbits": 52,
+      "time_checks": 91,
+      "nonzero_determinants": 13
+    },
+    {
+      "p": 113,
+      "A": [
+        110,
+        112,
+        1,
+        0
+      ],
+      "K": 19,
+      "lags": 9,
+      "disjoint_label_orbits": 36,
+      "time_checks": 63,
+      "nonzero_determinants": 9
+    },
+    {
+      "p": 127,
+      "A": [
+        6,
+        126,
+        1,
+        0
+      ],
+      "K": 63,
+      "lags": 31,
+      "disjoint_label_orbits": 124,
+      "time_checks": 217,
+      "nonzero_determinants": 31
+    },
+    {
+      "p": 131,
+      "A": [
+        3,
+        130,
+        1,
+        0
+      ],
+      "K": 65,
+      "lags": 32,
+      "disjoint_label_orbits": 128,
+      "time_checks": 224,
+      "nonzero_determinants": 32
+    },
+    {
+      "p": 137,
+      "A": [
+        134,
+        136,
+        1,
+        0
+      ],
+      "K": 69,
+      "lags": 34,
+      "disjoint_label_orbits": 136,
+      "time_checks": 238,
+      "nonzero_determinants": 34
+    },
+    {
+      "p": 139,
+      "A": [
+        3,
+        138,
+        1,
+        0
+      ],
+      "K": 23,
+      "lags": 11,
+      "disjoint_label_orbits": 44,
+      "time_checks": 77,
+      "nonzero_determinants": 11
+    },
+    {
+      "p": 149,
+      "A": [
+        4,
+        148,
+        1,
+        0
+      ],
+      "K": 75,
+      "lags": 37,
+      "disjoint_label_orbits": 148,
+      "time_checks": 259,
+      "nonzero_determinants": 37
+    },
+    {
+      "p": 149,
+      "A": [
+        146,
+        148,
+        1,
+        0
+      ],
+      "K": 37,
+      "lags": 18,
+      "disjoint_label_orbits": 72,
+      "time_checks": 126,
+      "nonzero_determinants": 18
+    },
+    {
+      "p": 151,
+      "A": [
+        3,
+        150,
+        1,
+        0
+      ],
+      "K": 25,
+      "lags": 12,
+      "disjoint_label_orbits": 48,
+      "time_checks": 84,
+      "nonzero_determinants": 12
+    },
+    {
+      "p": 151,
+      "A": [
+        6,
+        150,
+        1,
+        0
+      ],
+      "K": 75,
+      "lags": 37,
+      "disjoint_label_orbits": 148,
+      "time_checks": 259,
+      "nonzero_determinants": 37
+    },
+    {
+      "p": 157,
+      "A": [
+        154,
+        156,
+        1,
+        0
+      ],
+      "K": 79,
+      "lags": 39,
+      "disjoint_label_orbits": 156,
+      "time_checks": 273,
+      "nonzero_determinants": 39
+    },
+    {
+      "p": 163,
+      "A": [
+        4,
+        162,
+        1,
+        0
+      ],
+      "K": 41,
+      "lags": 20,
+      "disjoint_label_orbits": 80,
+      "time_checks": 140,
+      "nonzero_determinants": 20
+    },
+    {
+      "p": 167,
+      "A": [
+        4,
+        166,
+        1,
+        0
+      ],
+      "K": 83,
+      "lags": 41,
+      "disjoint_label_orbits": 164,
+      "time_checks": 287,
+      "nonzero_determinants": 41
+    },
+    {
+      "p": 167,
+      "A": [
+        6,
+        166,
+        1,
+        0
+      ],
+      "K": 83,
+      "lags": 41,
+      "disjoint_label_orbits": 164,
+      "time_checks": 287,
+      "nonzero_determinants": 41
+    },
+    {
+      "p": 173,
+      "A": [
+        4,
+        172,
+        1,
+        0
+      ],
+      "K": 87,
+      "lags": 43,
+      "disjoint_label_orbits": 172,
+      "time_checks": 301,
+      "nonzero_determinants": 43
+    },
+    {
+      "p": 173,
+      "A": [
+        170,
+        172,
+        1,
+        0
+      ],
+      "K": 87,
+      "lags": 43,
+      "disjoint_label_orbits": 172,
+      "time_checks": 301,
+      "nonzero_determinants": 43
+    },
+    {
+      "p": 179,
+      "A": [
+        3,
+        178,
+        1,
+        0
+      ],
+      "K": 89,
+      "lags": 44,
+      "disjoint_label_orbits": 176,
+      "time_checks": 308,
+      "nonzero_determinants": 44
+    },
+    {
+      "p": 181,
+      "A": [
+        3,
+        180,
+        1,
+        0
+      ],
+      "K": 45,
+      "lags": 22,
+      "disjoint_label_orbits": 88,
+      "time_checks": 154,
+      "nonzero_determinants": 22
+    },
+    {
+      "p": 191,
+      "A": [
+        3,
+        190,
+        1,
+        0
+      ],
+      "K": 95,
+      "lags": 47,
+      "disjoint_label_orbits": 188,
+      "time_checks": 329,
+      "nonzero_determinants": 47
+    },
+    {
+      "p": 191,
+      "A": [
+        4,
+        190,
+        1,
+        0
+      ],
+      "K": 95,
+      "lags": 47,
+      "disjoint_label_orbits": 188,
+      "time_checks": 329,
+      "nonzero_determinants": 47
+    },
+    {
+      "p": 191,
+      "A": [
+        6,
+        190,
+        1,
+        0
+      ],
+      "K": 95,
+      "lags": 47,
+      "disjoint_label_orbits": 188,
+      "time_checks": 329,
+      "nonzero_determinants": 47
+    },
+    {
+      "p": 193,
+      "A": [
+        190,
+        192,
+        1,
+        0
+      ],
+      "K": 97,
+      "lags": 48,
+      "disjoint_label_orbits": 192,
+      "time_checks": 336,
+      "nonzero_determinants": 48
+    },
+    {
+      "p": 197,
+      "A": [
+        4,
+        196,
+        1,
+        0
+      ],
+      "K": 99,
+      "lags": 49,
+      "disjoint_label_orbits": 196,
+      "time_checks": 343,
+      "nonzero_determinants": 49
+    },
+    {
+      "p": 197,
+      "A": [
+        194,
+        196,
+        1,
+        0
+      ],
+      "K": 99,
+      "lags": 49,
+      "disjoint_label_orbits": 196,
+      "time_checks": 343,
+      "nonzero_determinants": 49
+    },
+    {
+      "p": 199,
+      "A": [
+        3,
+        198,
+        1,
+        0
+      ],
+      "K": 11,
+      "lags": 5,
+      "disjoint_label_orbits": 20,
+      "time_checks": 35,
+      "nonzero_determinants": 5
+    },
+    {
+      "p": 199,
+      "A": [
+        6,
+        198,
+        1,
+        0
+      ],
+      "K": 9,
+      "lags": 4,
+      "disjoint_label_orbits": 16,
+      "time_checks": 28,
+      "nonzero_determinants": 4
+    },
+    {
+      "p": 211,
+      "A": [
+        3,
+        210,
+        1,
+        0
+      ],
+      "K": 21,
+      "lags": 10,
+      "disjoint_label_orbits": 40,
+      "time_checks": 70,
+      "nonzero_determinants": 10
+    },
+    {
+      "p": 223,
+      "A": [
+        6,
+        222,
+        1,
+        0
+      ],
+      "K": 37,
+      "lags": 18,
+      "disjoint_label_orbits": 72,
+      "time_checks": 126,
+      "nonzero_determinants": 18
+    },
+    {
+      "p": 229,
+      "A": [
+        3,
+        228,
+        1,
+        0
+      ],
+      "K": 57,
+      "lags": 28,
+      "disjoint_label_orbits": 112,
+      "time_checks": 196,
+      "nonzero_determinants": 28
+    },
+    {
+      "p": 233,
+      "A": [
+        230,
+        232,
+        1,
+        0
+      ],
+      "K": 13,
+      "lags": 6,
+      "disjoint_label_orbits": 24,
+      "time_checks": 42,
+      "nonzero_determinants": 6
+    },
+    {
+      "p": 239,
+      "A": [
+        3,
+        238,
+        1,
+        0
+      ],
+      "K": 119,
+      "lags": 59,
+      "disjoint_label_orbits": 236,
+      "time_checks": 413,
+      "nonzero_determinants": 59
+    },
+    {
+      "p": 239,
+      "A": [
+        4,
+        238,
+        1,
+        0
+      ],
+      "K": 119,
+      "lags": 59,
+      "disjoint_label_orbits": 236,
+      "time_checks": 413,
+      "nonzero_determinants": 59
+    },
+    {
+      "p": 239,
+      "A": [
+        6,
+        238,
+        1,
+        0
+      ],
+      "K": 7,
+      "lags": 3,
+      "disjoint_label_orbits": 12,
+      "time_checks": 21,
+      "nonzero_determinants": 3
+    },
+    {
+      "p": 251,
+      "A": [
+        3,
+        250,
+        1,
+        0
+      ],
+      "K": 125,
+      "lags": 62,
+      "disjoint_label_orbits": 248,
+      "time_checks": 434,
+      "nonzero_determinants": 62
+    }
+  ],
+  "dense_detail": [
+    {
+      "p": 5,
+      "K": 3,
+      "r": 1,
+      "n": 1,
+      "variance": 5838.806397531694,
+      "formula": 5838.806397531693,
+      "relative_error": 1.55767230466386e-16
+    },
+    {
+      "p": 5,
+      "K": 3,
+      "r": 1,
+      "n": 4,
+      "variance": 35032.83838519016,
+      "formula": 35032.83838519016,
+      "relative_error": 0.0
+    },
+    {
+      "p": 5,
+      "K": 3,
+      "r": 1,
+      "n": 5,
+      "variance": 52549.25757778525,
+      "formula": 52549.25757778523,
+      "relative_error": 2.769195208291307e-16
+    },
+    {
+      "p": 5,
+      "K": 3,
+      "r": 1,
+      "n": 11,
+      "variance": 239391.06229879946,
+      "formula": 239391.0622987994,
+      "relative_error": 2.431488475572855e-16
+    },
+    {
+      "p": 7,
+      "K": 3,
+      "r": 1,
+      "n": 1,
+      "variance": 6235.761901615655,
+      "formula": 6235.761901615654,
+      "relative_error": 1.4585141577283168e-16
+    },
+    {
+      "p": 7,
+      "K": 3,
+      "r": 1,
+      "n": 4,
+      "variance": 37414.571409693934,
+      "formula": 37414.57140969393,
+      "relative_error": 1.9446855436377557e-16
+    },
+    {
+      "p": 7,
+      "K": 3,
+      "r": 1,
+      "n": 7,
+      "variance": 106007.95232746613,
+      "formula": 106007.95232746612,
+      "relative_error": 1.3727192072737098e-16
+    },
+    {
+      "p": 7,
+      "K": 3,
+      "r": 1,
+      "n": 15,
+      "variance": 467682.14262117416,
+      "formula": 467682.14262117405,
+      "relative_error": 2.489197495856327e-16
+    },
+    {
+      "p": 11,
+      "K": 5,
+      "r": 1,
+      "n": 1,
+      "variance": 6492.413014270352,
+      "formula": 6492.41301427035,
+      "relative_error": 2.8017154785866374e-16
+    },
+    {
+      "p": 11,
+      "K": 5,
+      "r": 1,
+      "n": 6,
+      "variance": 51939.30411416281,
+      "formula": 51939.3041141628,
+      "relative_error": 2.8017154785866374e-16
+    },
+    {
+      "p": 11,
+      "K": 5,
+      "r": 1,
+      "n": 11,
+      "variance": 162310.32535675878,
+      "formula": 162310.32535675875,
+      "relative_error": 1.7930979062954476e-16
+    },
+    {
+      "p": 11,
+      "K": 5,
+      "r": 1,
+      "n": 23,
+      "variance": 694688.1925269276,
+      "formula": 694688.1925269275,
+      "relative_error": 1.675792435790138e-16
+    },
+    {
+      "p": 13,
+      "K": 7,
+      "r": 1,
+      "n": 1,
+      "variance": 6542.980902637345,
+      "formula": 6542.980902637342,
+      "relative_error": 4.170093335010329e-16
+    },
+    {
+      "p": 13,
+      "K": 7,
+      "r": 1,
+      "n": 8,
+      "variance": 65429.80902637346,
+      "formula": 65429.80902637342,
+      "relative_error": 6.672149336016527e-16
+    },
+    {
+      "p": 13,
+      "K": 7,
+      "r": 1,
+      "n": 13,
+      "variance": 163574.5225659336,
+      "formula": 163574.52256593356,
+      "relative_error": 3.558479645875481e-16
+    },
+    {
+      "p": 13,
+      "K": 7,
+      "r": 1,
+      "n": 27,
+      "variance": 687012.9947769212,
+      "formula": 687012.994776921,
+      "relative_error": 3.389028234167124e-16
+    }
+  ]
+}

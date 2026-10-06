@@ -433,8 +433,16 @@ $$
 C_{W,k}\sqrt{E_N M_{2(k-1)}(N)}.                        \tag{18}
 $$
 
-Here E includes all active positive/negative frequency windows, and
-each projected factor has the Parseval bound (10). Use L2 for it and
+Here let $\mathcal A_N$ be the union of the integer frequency windows
+supporting the smooth one-variable cutoffs used to factor the weight,
+and define
+$E_N=N^{-2}\sum_{j\in\mathcal A_N,\ d\mid j}|T_j|^2$.
+This includes positive and negative frequencies and also $j=0$ whenever
+it is active. Since $T_0=N$, an active zero mode gives $E_N\ge1$;
+this bound then supplies no vanishing-energy deletion conclusion.
+Weights supported away from every zero-frequency hyperplane admit
+cutoffs using only nonzero windows, as in the positive-cone theorem above.
+Each projected factor has the Parseval bound (10). Use L2 for it and
 $L^{2(k-1)}$ for the others; inclusion--exclusion has finitely many
 terms depending only on k. Fourier inversion in k-1 variables handles
 general weights. This is a raw-product bound, not an automatic
