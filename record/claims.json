@@ -1740,6 +1740,85 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Every odd N>=3,u>=0 and every unitary U: original m=1 common-noise two-copy singular gap at least (1-exp(-2u lambda_N))/50, lambda_N=(1024(1+log N))^-2; displayed lower bound dominates N^-1 at u=N^-alpha,0<alpha<1. Low-positive-eigenvalue count and partial-Fourier projection angle use FM019 D5-D8,D17-D19, not its summed-generator gap. No regulator change, actual-gap upper bound, higher-copy quantitative control, quenched-power comparison, nonlinear determinant bound, signed noise removal or deterministic BGS."
+    },
+    {
+      "id": "BGS-TRACE-014",
+      "title": "All-order Haar moment-channel proximity with a rigid isospectral clock spectrum",
+      "dependencies": [],
+      "external_dependencies": [],
+      "source": "mathematics/isospectral_clock_moment_control.md",
+      "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
+      "evidence": [
+        "evidence/executions/20261006/clock-control/exact_checks.json",
+        "evidence/executions/20261006/clock-control/exact_checks_optimized.json",
+        "evidence/executions/20261006/clock-control/mutation_checks.json",
+        "record/clock_control_review_20261006.md"
+      ],
+      "verifiers": [
+        "computations/verification/isospectral_clock_control.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/isospectral_clock_control.tex"
+      ]
+    },
+    {
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/path_theorems_review_20261006.md",
+        "record/marked_path_independent_review_20261006.md",
+        "evidence/executions/20261006/path-theorems/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/actual_path_theorems.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_path_theorems.tex"
+      ],
+      "id": "BGS-FM-021",
+      "title": "Fixed-map position-chain singular mixing, cyclic ramp and marked three-link cancellation",
+      "source": "mathematics/position_chain_mixing.md",
+      "boundary": "Unchanged fixed tau=10^-80, all sufficiently large odd N: limsup ||P-J||<=10^-64 and ||P^L-J||<=2^-L simultaneously for every integer L>=0. Cyclic-identical path contribution D_m/m tends to one uniformly on positive compact Heisenberg bands. The explicitly defined distinct-port marked three-link expression is exponentially suppressed including zero link lengths. This is not a once-counted unmarked trace-pair theorem: representation multiplicities vary and canonical masks can destroy free-endpoint cancellation. Startup not effective; general signed noncyclic remainder, all higher factorial orders, TRACE-005 and BGS remain open. No world priority or external referee certificate.",
+      "proof_dependencies": [
+        "mathematics/fixed_map_path_model.md",
+        "mathematics/four_branch_parametrix.md"
+      ]
+    },
+    {
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/path_theorems_review_20261006.md",
+        "record/marked_path_independent_review_20261006.md",
+        "evidence/executions/20261006/path-theorems/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/actual_path_theorems.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_path_theorems.tex"
+      ],
+      "id": "BGS-FM-022",
+      "title": "Fixed-map reversed-coordinate-path norm decay and reverse-cyclic suppression",
+      "source": "mathematics/reversed_path_decay.md",
+      "boundary": "Unchanged fixed tau=10^-80 through odd N: Q_xy=U_xy conjugate(U_yx) has operator norm tending to zero. The exact ordered reverse-cyclic family, excluding cyclic pairs, is negligible after division by m uniformly on every fixed positive Heisenberg band. Direct four-branch finite-difference parametrix and alias-safe discrete TT* are essential; no rate or effective startup is supplied. Other noncyclic pairs and higher factorial comparison remain open. No deterministic BGS, world priority, external referee or analytic formalization claim.",
+      "proof_dependencies": [
+        "mathematics/fixed_map_path_model.md",
+        "mathematics/four_branch_parametrix.md"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

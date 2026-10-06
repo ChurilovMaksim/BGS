@@ -34,6 +34,16 @@ def _validate_inherited_core(name: str, text: str, source: str) -> None:
         if token not in text:
             raise ValueError(f'Missing restored mathematical token {token}: {source}')
 
+def page_count_from_log(text: str) -> int | None:
+    # TeX wraps its fixed-width log even inside the page-count digits.
+    match = re.search(
+        r'Output written on .*?\(\s*(\d(?:\s*\d)*)\s+p\s*a\s*g\s*e\s*s?',
+        text, re.S)
+    if not match:
+        return None
+    count = int(re.sub(r'\s+', '', match[1]))
+    return count if count > 0 else None
+
 def inputs() -> dict[str,str]:
     master=MANUSCRIPT/'BGS_unified.tex'
     found:set[Path]=set()
@@ -107,12 +117,12 @@ def main()->None:
         record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
         raise SystemExit('Build failed its warning/source-hash gate.')
     pdf=out/'BGS_unified.pdf'
-    match=re.search(r'Output written on .*?\(\s*(\d+)\s+p\s*a\s*g\s*e\s*s?',text,re.S)
-    if not match:
+    page_count=page_count_from_log(text)
+    if page_count is None:
         record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
         raise SystemExit('Build succeeded but PDF page count could not be parsed from the LaTeX log.')
     record.update(status='PASS',runtime_seconds=time.monotonic()-start,
-                  page_count=int(match[1]),pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
+                  page_count=page_count,pdf_sha256=digest(pdf),pdf_bytes=pdf.stat().st_size,
                   latex_log_sha256=digest(out/'BGS_unified.log'))
     if args.publish:
         target=MANUSCRIPT/pdf.name;shutil.copy2(pdf,target)

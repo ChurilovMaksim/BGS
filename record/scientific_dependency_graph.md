@@ -6,6 +6,9 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F1 --> F21[BGS-FM-021 position-chain mixing and cyclic path ramp]
+  F1 --> F22[BGS-FM-022 reverse-cyclic path suppression]
+  T14[BGS-TRACE-014 all-copy clock channel obstruction]
   C1[BGS-CAYLEY-001 pair-key reduction] --> C2[BGS-CAYLEY-002 additive energy]
   C2 --> C3[BGS-CAYLEY-003 direct energy]
   C2 --> C4[BGS-CAYLEY-004 uniform curve]

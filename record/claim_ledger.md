@@ -9,9 +9,12 @@ This is the current scientific-status authority. A project proof is not an exter
 - **FLOW-017:** all fixed factorial orders and one-chain L2 averages on a different, superpolynomial schedule; this supersedes a blanket statement that every unbounded-correlation transfer remains open.
 - **FM-020:** the original m=1 two-copy microscopic-rate obligation is closed by the reviewed project proof. FM-018/019 historical statements that this rate is open describe their earlier checkpoints.
 - **Higher-copy rates, nonlinear quenched determinants and deterministic noise removal remain OPEN.**
-- The present task is corpus revision and verification, before new solution attempts. [Review coverage](corpus_revision_20261006.md) records exactly what has been checked.
+- The scoped corpus revision and its known standalone-verifier repair passed remote acceptance at `0ffb20cc152d0ddd2620887e46d21d1120b95fd8`. Research has resumed; [review coverage](corpus_revision_20261006.md) records its limits.
+- **TRACE-014:** all-copy induced-HS channel proximity can coexist with an exact clock spectrum in the same ensemble. This is a negative control on unqualified universality criteria, not a counterexample to the frozen map.
 
 Exact statements: [FLOW-014](../mathematics/circular_dyson_actual_start.md), [FLOW-017](../mathematics/coboundary_all_order_limit.md), [FM-020](../mathematics/original_channel_gap.md), and [the obligation board](../mathematics/open_questions.md). The [registered dependency view](claim_registry.md) does not replace canonical proofs.
+
+- **FM-021/FM-022:** actual position-chain mixing, the cyclic ramp, a specified marked three-link estimate, and reverse-cyclic suppression are established in their project proofs. General once-counted noncyclic sums and the spectral plateau correction remain open.
 
 ## Status vocabulary
 
@@ -53,6 +56,7 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
+| all-order moment-channel proximity with a rigid clock spectrum (TRACE-014) | **EXACT + EXACT FINITE CONTROLS** | [Canonical proof](../mathematics/isospectral_clock_moment_control.md); every N>=3 and k>=1, error≤1/N, exact two-copy error1/(N²−1); no frozen-map or diamond-norm claim |
 | actual kicked Pell propagator at $\epsilon=\tau/\sqrt{2K}$: all fixed return traces converge in $L^2$ over harmonic windows to the cycle-pair diagram series | **EXACT** | `mathematics/pell_harmonic_returns.md`, Theorem 1; fixed $m,\tau$, full odd space, global law |
 | return-law endpoints are wrapped normal and free unitary Brownian; second-return closed formula for $\beta\ge1/6$ | **EXACT + EXTERNAL-THEOREM** | same note (R4)--(R5); moments derived internally, conventional free Brownian identification uses Demni (1) |
 | full nonzero lifted-aggregate Bessel weight is $O_{m,\tau}(K^{-1})$ | **EXACT** | same note Lemma 2, cyclic integer image and $\ell^1$ dominance; no growing-$m$ phase theorem |

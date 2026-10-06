@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "normal",
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/shared/BGS/computations/verification/actual_path_theorems.py\", line 176, in <module>\n    if '--inject-failure' in sys.argv: require(False,'intentional fault injection')\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/shared/BGS/computations/verification/actual_path_theorems.py\", line 12, in require\n    raise RuntimeError(label)\nRuntimeError: intentional fault injection\n"
+  },
+  {
+    "mode": "optimized",
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/shared/BGS/computations/verification/actual_path_theorems.py\", line 176, in <module>\n    if '--inject-failure' in sys.argv: require(False,'intentional fault injection')\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/shared/BGS/computations/verification/actual_path_theorems.py\", line 12, in require\n    raise RuntimeError(label)\nRuntimeError: intentional fault injection\n"
+  }
+]

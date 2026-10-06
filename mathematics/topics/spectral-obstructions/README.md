@@ -4,6 +4,8 @@ Negative controls reject specific invalid implications. An abstract spectrum is 
 
 ## Current theorem capsules
 
+- **[All-copy channel control with a clock spectrum](../../isospectral_clock_moment_control.md)** — Induced-HS moment-channel proximity in every order does not alone imply microscopic universality.
+
 - **[Read the witness assumptions](../../two_clock_gram_falsifier.md)** — Simple spectra and a Gram milestone do not force CUE pairs.
 - **[Window and tail restrictions](../../clustered_abel_window_boundary.md)** — Cluster containment and a positive-time Heisenberg estimate are different claims.
 
@@ -27,3 +29,5 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [magnetic_quotient_semicircle](../../magnetic_quotient_semicircle.md)
 - [cue_singular_energy](../../cue_singular_energy.md)
 - [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
+
+- [isospectral_clock_moment_control](../../isospectral_clock_moment_control.md) — Same-ensemble all-order negative control, TRACE-014.

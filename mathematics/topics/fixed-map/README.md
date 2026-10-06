@@ -4,6 +4,9 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 
 ## Current theorem capsules
 
+- **[Position mixing and cyclic ramp](../../position_chain_mixing.md)** — Actual fixed-coupling position chain has an eventual constant singular gap; cyclic contributions and a specified marked three-link contraction are controlled.
+- **[Reverse-cyclic suppression](../../reversed_path_decay.md)** — The actual reversed-entry kernel has vanishing operator norm; general signed noncyclic pairs remain open.
+
 - **[Structure and exact transfer](../../fixed_model_symmetry_theorem.md)** — Classical symmetry, seven-cut full-propagator comparison, and algebraic nondegeneracy have distinct hypotheses.
 - **[Actual-start noisy law](../../circular_dyson_actual_start.md)** — FLOW-014 uses logarithmic noise time and a polynomial step schedule. FLOW-017 adds all fixed factorial orders on a different superpolynomial schedule.
 - **[Original common-noise rate](../../original_channel_gap.md)** — FM-020 gives a reviewed two-copy lower bound of order u/(log N)^2 for m=1; higher-copy and quenched-functional control are separate.
@@ -70,3 +73,8 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [egorov_overlap_rigidity](../../egorov_overlap_rigidity.md) — 4 October proof and exact scope.
 - [microscopic_noise_removal](../../microscopic_noise_removal.md) — Exact signed defect, all-order flat heat jets, actual full-stationarity boundary, global inverse cost and finite-field entropy.
 - [original_channel_gap](../../original_channel_gap.md) — Original m=1 two-copy microscopic singular mass with logarithmic loss; deterministic noise removal remains open.
+
+- [fixed_map_path_model](../../fixed_map_path_model.md) — Shared exact path conventions
+- [four_branch_parametrix](../../four_branch_parametrix.md) — Shared finite-difference WKB and sampling proof
+- [position_chain_mixing](../../position_chain_mixing.md) — FM-021
+- [reversed_path_decay](../../reversed_path_decay.md) — FM-022

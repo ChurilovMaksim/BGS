@@ -1,0 +1,23 @@
+{
+  "mutation": "increment residue-sign prediction by one",
+  "results": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/tmp/bgs_clock_control_corrupted.py"
+      ],
+      "exit_code": 1,
+      "stderr_last_line": "RuntimeError: character determinant: 3,(3, 0, -3)"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/tmp/bgs_clock_control_corrupted.py"
+      ],
+      "exit_code": 1,
+      "stderr_last_line": "RuntimeError: character determinant: 3,(3, 0, -3)"
+    }
+  ],
+  "source_sha256": "65a6b3f44cf17a4f493ec33041070d4dd07305d790198c940c845313aedb8aba"
+}

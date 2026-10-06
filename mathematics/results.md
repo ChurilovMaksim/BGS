@@ -2,11 +2,11 @@
 
 This is the current reading index, not a second status authority. [The claim ledger](../record/claim_ledger.md) controls scientific status; [exact proof topics](topics/README.md) retain every canonical source path. The [corpus revision](../record/corpus_revision_20261006.md) distinguishes inventory, internal proof review, source checks and finite execution.
 
-**Deterministic BGS and TRACE-005 remain open.** New solution attempts are paused during the corpus revision.
+**Deterministic BGS and TRACE-005 remain open.** The scoped corpus revision passed remote acceptance; research proceeds with its named conditional boundaries preserved.
 
 ## Fixed deterministic map
 
-The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the corrected ordinary Weyl symbol, and explicit exceptional dimensions. Structural and algebraic results do not themselves control Heisenberg traces.
+The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the corrected ordinary Weyl symbol, and explicit exceptional dimensions. Structural and algebraic results do not themselves control Heisenberg traces. [Position mixing](position_chain_mixing.md) now controls the cyclic path contribution and a specified marked three-link contraction; [reversal decay](reversed_path_decay.md) controls the reverse-cyclic family. These do not bound the complete signed noncyclic remainder.
 
 [Theorems, reading path and complete sources](topics/fixed-map/README.md).
 
@@ -62,7 +62,7 @@ Locality estimates specify the symbol class, approximation budget, coupling and 
 
 ## Spectral obstruction tests
 
-Negative controls reject specific invalid implications. An abstract spectrum is not automatically a quantization of the actual chaotic map.
+Negative controls reject specific invalid implications. [TRACE-014](isospectral_clock_moment_control.md) gives a same-ensemble clock spectrum whose induced-HS moment channels approach Haar uniformly in all orders. An abstract spectrum is not automatically a quantization of the actual chaotic map.
 
 [Theorems, reading path and complete sources](topics/spectral-obstructions/README.md).
 

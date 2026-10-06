@@ -1,5 +1,8 @@
 # Open mathematical obligations
 
+[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. Variable representations and endpoint-dependent masks prevent automatic unmarking. Higher factorial orders remain open.
+
+
 [FM-019](collective_diffusion_gap.md) closes a universal two-copy
 summed-generator gap on the full identity/swap complement for every odd
 N>=3. Its refined shared-noise law at m=N^3, u=N^-alpha, 0<alpha<1 has

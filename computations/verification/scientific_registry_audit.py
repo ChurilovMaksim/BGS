@@ -124,6 +124,10 @@ def audit_graph(claims: dict[str, dict]) -> None:
             graph[dep].append(cid)
 
     data = load(DEPS)
+    nodes = data.get("nodes")
+    if (not isinstance(nodes, list) or not all(isinstance(n, str) for n in nodes)
+            or len(nodes) != len(set(nodes)) or set(nodes) != ids):
+        fail("scientific_dependencies.json nodes do not match registered claims exactly")
     actual = {
         (edge.get("from"), edge.get("to"), edge.get("type"))
         for edge in data.get("edges", [])

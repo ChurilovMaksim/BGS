@@ -1,0 +1,138 @@
+{
+  "artifact_sha256": {
+    "actual_path_theorems.log": "f595e52f8aac1be8520893c5639b7ed78cb790351a01aedaa59ad00d1b76485b",
+    "archive-source-manifest.json": "34ca1bacaf0b28c6c115085542eb085d8ac3c4cce3f27aa22ae166237f6b4306",
+    "isospectral_clock_control.log": "92d87e4bd75d4ad4f57905a5f1ca55e8cbe92b4a0543653080040bc1ac0949ba",
+    "maintenance-normal.log": "ff190b1ad4ed73b6e62abaec2dcfb1fb863a693f3b08820dcf2086bbc58b83ea",
+    "maintenance-optimized.log": "6b745f32be0b93414f4b6e916d5d65bcc3caae0686bb24a261af52793e6924d0",
+    "manuscript-build-manifest.json": "8beb083fb5213b2035f626ff6bb95a5a5b3df604da23bd1246279af87495ad7b",
+    "raw-check-artifact-index.json": "a3b281d940064afb6e0e4a43af66d59ab3350deb140f99704e9853b23d8167be",
+    "reused-cpp-build-provenance.json": "75db49939a7780a551dcb808e97c440d27d5d60c4094deb898785ff42230dd06",
+    "workspace-receipt.json": "8a94dc586ad0edbb08c1e7b2a566101b72f5b4e6934dc3dd25457f806889dc86"
+  },
+  "cpp": {
+    "all_source_and_executed_binary_hashes_match_prior_build_record": true,
+    "executions_in_workspace": 22,
+    "prior_build_records": 21,
+    "scope": "Existing build artifacts reused and independently hash-matched. No fresh compilation claimed for this batch.",
+    "unique_sources": 21
+  },
+  "curated_utc": "2026-10-06T15:50:01.288459+00:00",
+  "maintenance": {
+    "normal_tests": 20,
+    "optimized_tests": 20,
+    "repairs": [
+      "Wrapped page-count digit parsing with regression coverage.",
+      "Dependency graph node completeness with regression coverage."
+    ],
+    "result": "PASS"
+  },
+  "manuscript": {
+    "build_status": "PASS",
+    "pages": 259,
+    "pdf_and_all_build_log_hashes_verified": true,
+    "tex_source_hashes_match_capture_and_live": true,
+    "visual_review": {
+      "pages": [
+        254,
+        255,
+        256
+      ],
+      "result": "No clipping or overlap reported by integrating reviewer.",
+      "scope": "New-section pages only; not all 259 pages."
+    }
+  },
+  "new_claims": [
+    "TRACE014",
+    "FM021",
+    "FM022"
+  ],
+  "non_claims": [
+    "No BGS universality claim.",
+    "No claim about later unmarked-path or growing-divisor results.",
+    "No Lean compilation was performed by this batch.",
+    "No full-manuscript visual review."
+  ],
+  "normalization": {
+    "certificate_subdirectory": "Ephemeral certificate directory normalized to $CHECK_LOGS/certificates.",
+    "policy": "Only declared absolute-path prefixes are tokenized. Hash strings and null provenance are preserved. JSON may be reserialized. The workspace source-manifest object is stored once in archive-source-manifest.json. Raw/public artifact hashes below distinguish curated bytes from executed bytes.",
+    "tokens": {
+      "$BOOST_INCLUDE": "Boost 1.90.0 include root",
+      "$CHECK_LOGS": "External run output directory",
+      "$CPP_BIN": "Previously built C++ executable directory",
+      "$PYTHON": "Python executable recorded by hash in the workspace receipt",
+      "$SOURCE_ROOT": "Captured repository source root",
+      "$TEX_BUILD": "External manuscript build output directory"
+    }
+  },
+  "raw_public_hash_mapping": [
+    {
+      "artifact": "archive-source-manifest.json",
+      "public_sha256": "34ca1bacaf0b28c6c115085542eb085d8ac3c4cce3f27aa22ae166237f6b4306",
+      "raw_sha256": "34ca1bacaf0b28c6c115085542eb085d8ac3c4cce3f27aa22ae166237f6b4306",
+      "transformation": "JSON serialization only"
+    },
+    {
+      "artifact": "workspace-receipt.json",
+      "public_sha256": "8a94dc586ad0edbb08c1e7b2a566101b72f5b4e6934dc3dd25457f806889dc86",
+      "raw_sha256": "1fd6f79b2c73a5cc6938ee979750829dfe991bb4da0fc445c491acf030a3a69b",
+      "transformation": "Declared path token substitutions; source_manifest replaced with reference; publication_note added; JSON serialization"
+    },
+    {
+      "artifact": "manuscript-build-manifest.json",
+      "public_sha256": "8beb083fb5213b2035f626ff6bb95a5a5b3df604da23bd1246279af87495ad7b",
+      "raw_sha256": "a7634473045c722ef0ab03436d17356e05bcbc436f59facf0a94ead1abd0031d",
+      "transformation": "Declared path token substitutions; JSON serialization"
+    },
+    {
+      "artifact": "reused-cpp-build-provenance.json",
+      "public_sha256": "75db49939a7780a551dcb808e97c440d27d5d60c4094deb898785ff42230dd06",
+      "raw_sha256": "6e1a105fd48a0c98bf6637f1c82681a6523c1542b7ce78a5153cc698b52031c3",
+      "transformation": "Declared path token substitutions; JSON serialization"
+    },
+    {
+      "artifact": "maintenance-normal.log",
+      "public_sha256": "ff190b1ad4ed73b6e62abaec2dcfb1fb863a693f3b08820dcf2086bbc58b83ea",
+      "raw_sha256": "ff190b1ad4ed73b6e62abaec2dcfb1fb863a693f3b08820dcf2086bbc58b83ea",
+      "transformation": "Declared absolute-path token substitutions only"
+    },
+    {
+      "artifact": "maintenance-optimized.log",
+      "public_sha256": "6b745f32be0b93414f4b6e916d5d65bcc3caae0686bb24a261af52793e6924d0",
+      "raw_sha256": "6b745f32be0b93414f4b6e916d5d65bcc3caae0686bb24a261af52793e6924d0",
+      "transformation": "Declared absolute-path token substitutions only"
+    },
+    {
+      "artifact": "actual_path_theorems.log",
+      "public_sha256": "f595e52f8aac1be8520893c5639b7ed78cb790351a01aedaa59ad00d1b76485b",
+      "raw_sha256": "f595e52f8aac1be8520893c5639b7ed78cb790351a01aedaa59ad00d1b76485b",
+      "transformation": "Declared absolute-path token substitutions only"
+    },
+    {
+      "artifact": "isospectral_clock_control.log",
+      "public_sha256": "92d87e4bd75d4ad4f57905a5f1ca55e8cbe92b4a0543653080040bc1ac0949ba",
+      "raw_sha256": "92d87e4bd75d4ad4f57905a5f1ca55e8cbe92b4a0543653080040bc1ac0949ba",
+      "transformation": "Declared absolute-path token substitutions only"
+    }
+  ],
+  "schema": "bgs-path-clock-batch-publication-v1",
+  "scope": "Post-run evidence curation and independent hash validation; not a new execution of the workspace suite or a mathematical proof audit.",
+  "source_provenance": {
+    "archive_file_count": 1316,
+    "input_commit": null,
+    "mode": "archive",
+    "no_code_or_mathematics_changes_since_capture": true,
+    "post_run_changes": "This evidence directory is curated after execution and was not included in the captured source tree. Any subsequent integration or release metadata changes require separate attribution.",
+    "snapshot_and_live_files_match": true,
+    "upstream_commit": null
+  },
+  "status": "PASS",
+  "workspace": {
+    "all_163_raw_check_log_hashes_matched": true,
+    "discovery_repair": "The previous 162-check run omitted actual_path_theorems from automatic discovery. The v2 capture includes its __main__ wrapper and the terminal v2 result contains its successful execution.",
+    "passed": 163,
+    "raw_receipt_sha256": "1fd6f79b2c73a5cc6938ee979750829dfe991bb4da0fc445c491acf030a3a69b",
+    "source_tree_unchanged": true,
+    "total": 163
+  }
+}

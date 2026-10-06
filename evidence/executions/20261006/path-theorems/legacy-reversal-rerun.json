@@ -1,0 +1,80 @@
+{
+  "counts": [
+    {
+      "m": 2,
+      "words": 9,
+      "reverse_family_real": 0.0,
+      "imaginary_error": 0.0,
+      "assembly_error": 4.440892098500626e-16,
+      "trace_error": 3.6083704840914035e-16,
+      "bound": 12.855958169353094
+    },
+    {
+      "m": 3,
+      "words": 27,
+      "reverse_family_real": 1.2829598505904385,
+      "imaginary_error": 0.0,
+      "assembly_error": 4.442797513861861e-16,
+      "trace_error": 3.370970161798551e-16,
+      "bound": 28.925905881044464
+    },
+    {
+      "m": 4,
+      "words": 81,
+      "reverse_family_real": 1.0138530012201261,
+      "imaginary_error": 2.168404344971009e-19,
+      "assembly_error": 8.881784792571274e-16,
+      "trace_error": 1.7774773087125935e-15,
+      "bound": 27.545943408692764
+    },
+    {
+      "m": 5,
+      "words": 243,
+      "reverse_family_real": 3.0536839942506324,
+      "imaginary_error": 3.2526065174565133e-19,
+      "assembly_error": 3.996803326229084e-15,
+      "trace_error": 2.8861160918800488e-15,
+      "bound": 43.040536576082445
+    },
+    {
+      "m": 6,
+      "words": 729,
+      "reverse_family_real": 2.753497160170819,
+      "imaginary_error": 7.318364664277155e-19,
+      "assembly_error": 1.3766790160690458e-14,
+      "trace_error": 1.726450199489931e-14,
+      "bound": 33.19964026851767
+    },
+    {
+      "m": 7,
+      "words": 2187,
+      "reverse_family_real": 5.499717194953814,
+      "imaginary_error": 9.317362419797304e-20,
+      "assembly_error": 1.4210856602677407e-14,
+      "trace_error": 2.2732848784829337e-14,
+      "bound": 45.18839925437127
+    }
+  ],
+  "triangle_derivatives": [
+    {
+      "N": 19,
+      "max_triangle_derivative_residual": 0.05385321033658887
+    },
+    {
+      "N": 21,
+      "max_triangle_derivative_residual": 0.06921598285604114
+    },
+    {
+      "N": 23,
+      "max_triangle_derivative_residual": 0.08048966245059054
+    },
+    {
+      "N": 29,
+      "max_triangle_derivative_residual": 0.05849529685350452
+    },
+    {
+      "N": 35,
+      "max_triangle_derivative_residual": 0.08347525951262866
+    }
+  ]
+}

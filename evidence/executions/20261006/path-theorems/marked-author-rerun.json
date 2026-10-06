@@ -1,0 +1,69 @@
+{
+  "3": {
+    "unitary": "rational Householder v=(1,...,N)",
+    "lengths": [
+      1,
+      2,
+      3
+    ],
+    "all_checks": true,
+    "distinct": "0"
+  },
+  "4": {
+    "unitary": "rational Householder v=(1,...,N)",
+    "lengths": [
+      1,
+      2,
+      3
+    ],
+    "all_checks": true,
+    "distinct": "274277260078592/675762176513671875"
+  },
+  "multiplicity": {
+    "N": 3,
+    "m": 6,
+    "exclude_cyclic_pairs": true,
+    "histogram": {
+      "3": 17568,
+      "6": 936
+    },
+    "examples": {
+      "3": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ]
+      ],
+      "6": [
+        [
+          0,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          1,
+          2,
+          1
+        ]
+      ]
+    }
+  }
+}

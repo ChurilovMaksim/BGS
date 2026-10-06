@@ -1,0 +1,510 @@
+{
+  "arithmetic": "Python arbitrary-precision integers and Fraction; no floating arithmetic",
+  "boundary": "Finite identities only; no asymptotic or BGS certificate",
+  "python": "3.12.14",
+  "optimized": false,
+  "overlap": {
+    "odd_N": [
+      15,
+      251
+    ],
+    "dimensions": 119,
+    "all_displacements": 15827
+  },
+  "gauss_identity": {
+    "arithmetic": "exact cyclotomic basis 1,z,z\u00b2,z\u00b3 with z^4=-1",
+    "N_mod_8": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "t_mod_8": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "instances": 32,
+    "coverage": "all odd N and integer t via proved dependence only on residues modulo 8"
+  },
+  "covariance": {
+    "odd_N": [
+      3,
+      81
+    ],
+    "x_b_pairs": 91880,
+    "boundary": "finite modular check; analytic algebra is in the proof"
+  },
+  "mixed_coefficient": {
+    "all_16_pairs": [
+      {
+        "r": 0,
+        "s": 0,
+        "mixed_coefficient_divided_by_pi": [
+          "3/640",
+          "1/160"
+        ]
+      },
+      {
+        "r": 0,
+        "s": 1,
+        "mixed_coefficient_divided_by_pi": [
+          "3/640",
+          "1/160"
+        ]
+      },
+      {
+        "r": 0,
+        "s": 2,
+        "mixed_coefficient_divided_by_pi": [
+          "3/640",
+          "1/160"
+        ]
+      },
+      {
+        "r": 0,
+        "s": 3,
+        "mixed_coefficient_divided_by_pi": [
+          "3/640",
+          "1/160"
+        ]
+      },
+      {
+        "r": 1,
+        "s": 0,
+        "mixed_coefficient_divided_by_pi": [
+          "-1/160",
+          "3/640"
+        ]
+      },
+      {
+        "r": 1,
+        "s": 1,
+        "mixed_coefficient_divided_by_pi": [
+          "-1/160",
+          "3/640"
+        ]
+      },
+      {
+        "r": 1,
+        "s": 2,
+        "mixed_coefficient_divided_by_pi": [
+          "-1/160",
+          "3/640"
+        ]
+      },
+      {
+        "r": 1,
+        "s": 3,
+        "mixed_coefficient_divided_by_pi": [
+          "-1/160",
+          "3/640"
+        ]
+      },
+      {
+        "r": 2,
+        "s": 0,
+        "mixed_coefficient_divided_by_pi": [
+          "-3/640",
+          "-1/160"
+        ]
+      },
+      {
+        "r": 2,
+        "s": 1,
+        "mixed_coefficient_divided_by_pi": [
+          "-3/640",
+          "-1/160"
+        ]
+      },
+      {
+        "r": 2,
+        "s": 2,
+        "mixed_coefficient_divided_by_pi": [
+          "-3/640",
+          "-1/160"
+        ]
+      },
+      {
+        "r": 2,
+        "s": 3,
+        "mixed_coefficient_divided_by_pi": [
+          "-3/640",
+          "-1/160"
+        ]
+      },
+      {
+        "r": 3,
+        "s": 0,
+        "mixed_coefficient_divided_by_pi": [
+          "1/160",
+          "-3/640"
+        ]
+      },
+      {
+        "r": 3,
+        "s": 1,
+        "mixed_coefficient_divided_by_pi": [
+          "1/160",
+          "-3/640"
+        ]
+      },
+      {
+        "r": 3,
+        "s": 2,
+        "mixed_coefficient_divided_by_pi": [
+          "1/160",
+          "-3/640"
+        ]
+      },
+      {
+        "r": 3,
+        "s": 3,
+        "mixed_coefficient_divided_by_pi": [
+          "1/160",
+          "-3/640"
+        ]
+      }
+    ],
+    "remainder_comparison": "exact rational, using pi>3",
+    "boundary": "verifies finite coefficient and comparison, not the analytic bound 10^50 itself"
+  },
+  "rational_word_checks": {
+    "U_numerator": [
+      [
+        23,
+        -16,
+        -76
+      ],
+      [
+        64,
+        -41,
+        28
+      ],
+      [
+        -44,
+        -68,
+        1
+      ]
+    ],
+    "U_denominator": 81,
+    "dimension": 3,
+    "m": [
+      1,
+      7
+    ],
+    "all_words": [
+      {
+        "m": 1,
+        "words": 3,
+        "cyclic_orbits": 3,
+        "reflection_fixed_word_counts": [
+          3
+        ]
+      },
+      {
+        "m": 2,
+        "words": 9,
+        "cyclic_orbits": 6,
+        "reflection_fixed_word_counts": [
+          9,
+          3
+        ]
+      },
+      {
+        "m": 3,
+        "words": 27,
+        "cyclic_orbits": 11,
+        "reflection_fixed_word_counts": [
+          9,
+          9,
+          9
+        ]
+      },
+      {
+        "m": 4,
+        "words": 81,
+        "cyclic_orbits": 24,
+        "reflection_fixed_word_counts": [
+          27,
+          9,
+          27,
+          9
+        ]
+      },
+      {
+        "m": 5,
+        "words": 243,
+        "cyclic_orbits": 51,
+        "reflection_fixed_word_counts": [
+          27,
+          27,
+          27,
+          27,
+          27
+        ]
+      },
+      {
+        "m": 6,
+        "words": 729,
+        "cyclic_orbits": 130,
+        "reflection_fixed_word_counts": [
+          81,
+          27,
+          81,
+          27,
+          81,
+          27
+        ]
+      },
+      {
+        "m": 7,
+        "words": 2187,
+        "cyclic_orbits": 315,
+        "reflection_fixed_word_counts": [
+          81,
+          81,
+          81,
+          81,
+          81,
+          81,
+          81
+        ]
+      }
+    ],
+    "boundary": "one exact rational unitary, not all unitaries"
+  },
+  "position_chain_coefficients": {
+    "all_12_pairs": [
+      {
+        "r": 0,
+        "s": 1,
+        "coefficient_divided_by_pi": [
+          "7/640",
+          "1/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 0,
+        "s": 2,
+        "coefficient_divided_by_pi": [
+          "3/320",
+          "1/80"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/4096"
+      },
+      {
+        "r": 0,
+        "s": 3,
+        "coefficient_divided_by_pi": [
+          "-1/640",
+          "7/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 1,
+        "s": 0,
+        "coefficient_divided_by_pi": [
+          "-7/640",
+          "-1/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 1,
+        "s": 2,
+        "coefficient_divided_by_pi": [
+          "-1/640",
+          "7/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 1,
+        "s": 3,
+        "coefficient_divided_by_pi": [
+          "-1/80",
+          "3/320"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/4096"
+      },
+      {
+        "r": 2,
+        "s": 0,
+        "coefficient_divided_by_pi": [
+          "-3/320",
+          "-1/80"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/4096"
+      },
+      {
+        "r": 2,
+        "s": 1,
+        "coefficient_divided_by_pi": [
+          "1/640",
+          "-7/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 2,
+        "s": 3,
+        "coefficient_divided_by_pi": [
+          "-7/640",
+          "-1/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 3,
+        "s": 0,
+        "coefficient_divided_by_pi": [
+          "1/640",
+          "-7/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      },
+      {
+        "r": 3,
+        "s": 1,
+        "coefficient_divided_by_pi": [
+          "1/80",
+          "-3/320"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/4096"
+      },
+      {
+        "r": 3,
+        "s": 2,
+        "coefficient_divided_by_pi": [
+          "7/640",
+          "1/640"
+        ],
+        "squared_magnitude_divided_by_pi_squared": "1/8192"
+      }
+    ],
+    "amplitude_comparison": "exact rational; transport exponential bound is analytic"
+  },
+  "marked_complex_contraction": {
+    "dimension": 3,
+    "unitary": "H diag(1,i,-1) H, H=I-vv^T/7, v=(1,2,3)",
+    "checks": [
+      {
+        "lengths": [
+          0,
+          0,
+          0
+        ],
+        "uniform_link": 0,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          0,
+          0,
+          0
+        ],
+        "uniform_link": 1,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          0,
+          0,
+          0
+        ],
+        "uniform_link": 2,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          0,
+          1,
+          2
+        ],
+        "uniform_link": 0,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          0,
+          1,
+          2
+        ],
+        "uniform_link": 1,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          0,
+          1,
+          2
+        ],
+        "uniform_link": 2,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "uniform_link": 0,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "uniform_link": 1,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "uniform_link": 2,
+        "exact_value": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "boundary": "finite exact marked contraction, including zero lengths; not an unmarked family"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "base_commit": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "scope": "Current maintained exact finite checks and separately identified earlier bounded replays. No analytic asymptotic, full BGS or Lean certificate.",
+  "commands": [
+    "python3 computations/verification/actual_path_theorems.py",
+    "python3 -O computations/verification/actual_path_theorems.py",
+    "same commands with --inject-failure must fail"
+  ],
+  "source_sha256": {
+    "mathematics/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "mathematics/reversed_path_decay.md": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+    "mathematics/four_branch_parametrix.md": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+    "mathematics/position_chain_mixing.md": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+    "computations/verification/actual_path_theorems.py": "86dc3865ada1aa40853ed9284945e1858726f012803ebde0d8ff579d8fb57a80"
+  },
+  "results": {
+    "normal": "PASS",
+    "optimized": "PASS",
+    "fault_injection": "Both modes failed as required"
+  },
+  "integration_changes": "Stable-ID metadata added or promoted for FM-021/FM-022; mathematical proof bodies copied from the reconciled overlay. Earlier weaker cyclic proof is not a competing canonical source. The formerly top-level portable check body is wrapped in main() with an explicit __main__ entry so the aggregate runner discovers it. Normal and optimized JSON outputs are byte-identical before/after this wrapper; fault checks rerun.",
+  "supplementary_historical_replays": [
+    {
+      "source_basename": "verify_diagonal_ramp.py",
+      "source_sha256": "db6add2dfa701fb30077869df7eeb74d7e2c895e3f996054fe3a9615d07adfcf",
+      "exit_code": 0,
+      "output": "legacy-diagonal-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    },
+    {
+      "source_basename": "verify_reversal_count.py",
+      "source_sha256": "6c0dd98a29a08a19529be1f450a0dd9e565be80bd3c3deef1b68c0c1f501a1ac",
+      "exit_code": 0,
+      "output": "legacy-reversal-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    },
+    {
+      "source_basename": "check.py",
+      "source_sha256": "4829f3e6adc4bf70f3024bde2ee57e0e4b94c4d4d52393f1e07f827396c09f0b",
+      "exit_code": 0,
+      "output": "legacy-independent-diagonal-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    },
+    {
+      "source_basename": "independent_checks.py",
+      "source_sha256": "de7975d90bfd7c8f6fbe53a563b832b6fce3d52609516ddf446cc4404c74bd72",
+      "exit_code": 0,
+      "output": "marked-independent-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    },
+    {
+      "source_basename": "check_exact.py",
+      "source_sha256": "04af2085e3844b5ab90f6c800699ecdfa0476cf1e06b8862c2f104772281f615",
+      "exit_code": 0,
+      "output": "marked-author-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    },
+    {
+      "source_basename": "check_complex.py",
+      "source_sha256": "0f350b09794f01e9a8ab5825806d5582d1baac28b53d988d2ee7255759850672",
+      "exit_code": 0,
+      "output": "marked-complex-rerun.json",
+      "boundary": "Supplementary historical bounded replay; canonical reproduction uses the maintained portable verifier. These source bytes are identified by hash, not relabelled as the maintained verifier."
+    }
+  ],
+  "output_sha256": {
+    "marked-complex-rerun.json": "253e53c1d21c0134dc4e91dd321aec17416625703c85b98f7358acbabcdc9235",
+    "marked-author-rerun.json": "f166dcaa4718e8662a7541935282b4d6b6d6cc0631ed1f0bacd541602be4d00a",
+    "negative_controls.json": "78c76805b2da761ed81d17c239dd1e95b22938bb8e1ebfc71f86de960c5cef87",
+    "marked-independent-rerun.json": "9aceb64ffe5b3ede406ba9168b0256638998d8de5945f56013bfff27791be91e",
+    "legacy-diagonal-rerun.json": "755a8da80f69c0e99e544634b0970c004d69a8318c5abad433b6c253922379d8",
+    "exact-normal.json": "f595e52f8aac1be8520893c5639b7ed78cb790351a01aedaa59ad00d1b76485b",
+    "exact-optimized.json": "8dbcdcb7a93ed98377689a5781edb45c6e7e53b3e3a665007a9a804fd56a45ca",
+    "legacy-reversal-rerun.json": "d4294812a6f886614e64dda02d09f3a41592d427dc17ec1e4e46e3ac18294e93",
+    "legacy-independent-diagonal-rerun.json": "f8ea83634bdd29e9efe785786a35bb48855a929e88d2b5710cc2b7179713a92f"
+  },
+  "original_overlay_receipt_sha256": "9488a738303873aad5501fe95555f27d594c3e95aad5ca7227a3cb4d81b8ef9c",
+  "not_included": "Original overlay workspace paths, coordination status, and standalone build attempts are not part of this portable receipt. The full combined manuscript build is recorded separately."
+}

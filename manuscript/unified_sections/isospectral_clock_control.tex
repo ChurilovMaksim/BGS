@@ -1,0 +1,79 @@
+\section{All-order moment-channel proximity with a clock spectrum}
+\label{sec:isospectral-clock-control}
+The following negative control concerns the same ensemble on both sides:
+its balanced moment channels approach Haar in induced Hilbert--Schmidt
+operator norm, while every realization has a rigid clock spectrum. It does
+not impose the Egorov or frozen-map hypotheses of the deterministic problem.
+
+\begin{theorem}[Clock moment-channel obstruction]
+Let $N\ge3$, $D_N=\operatorname{diag}(1,\zeta,\ldots,\zeta^{N-1})$,
+$\zeta=e^{2\pi i/N}$, and $V_N=e^{i\Theta}QD_NQ^*$, with $Q$ Haar on
+$U(N)$ and $\Theta$ independent uniform. Let $\mathcal M_{N,k}$ be
+$\mathbb E\operatorname{Ad}(V_N^{\otimes k})$ and $\mathcal P_{N,k}$ the
+Haar moment projector. Then, for every integer $k\ge1$,
+\[
+ \|\mathcal M_{N,k}-\mathcal P_{N,k}\|_{2\to2}\le N^{-1}.
+\]
+At $k=2$ the error is exactly $(N^2-1)^{-1}$. The channel eigenvalues and
+their multiplicities are
+\[
+\begin{array}{c|c}
+1&2\\
+-1/(N^2-1)&4(N^2-1)\\
+0&N^2(N^2-3)/2\\
+4/((N^2-1)(N^2-4))&(N^2-1)(N^2-4)/2.
+\end{array}
+\]
+Every unfolded consecutive spacing equals one. In particular this ensemble
+does not have the Sine$_2$ local spectral limit.
+\end{theorem}
+\begin{proof}
+Vectorize the channel using $R_k(U)=U^{\otimes k}\otimes\overline U^{\otimes k}$.
+On each irreducible isotypic summand, Haar conjugacy averaging is the scalar
+$\chi_\lambda(D_N)/d_\lambda$, with identity on the multiplicity factor.
+The Haar moment projector retains exactly the trivial summands.
+The Weyl alternant formula at all $N$th roots gives
+$\chi_\lambda(D_N)\in\{0,1,-1\}$: repeated numerator exponent residues
+annihilate the determinant; otherwise its rows permute the denominator rows.
+Every summand is centrally balanced. A nontrivial summand cannot therefore
+be a determinant character. Its differential injects the simple Lie algebra
+$\mathfrak{su}(N)$ into $\mathfrak u(d_\lambda)$, implying
+$d_\lambda^2\ge N^2-1$ and hence $d_\lambda\ge N$. This proves the uniform
+all-order bound.
+
+For the exact two-copy calculation split $\mathbb C^N\otimes\mathbb C^N$
+into $S=\operatorname{Sym}^2\mathbb C^N$ and $A=\Lambda^2\mathbb C^N$.
+Each endomorphism block contains one trivial and one adjoint summand; each
+cross block contains one adjoint summand. The remaining irreducible
+summands have highest weights $(2,0,\ldots,0,-2)$,
+$(1,1,0,\ldots,0,-1,-1)$, and $(2,0,\ldots,0,-1,-1)$ and its dual.
+Their dimensions are respectively
+\[
+\frac{N^2(N-1)(N+3)}4,\qquad
+\frac{N^2(N+1)(N-3)}4,\qquad
+\frac{(N^2-1)(N^2-4)}4.
+\]
+The second residual is absent at $N=3$. These constituents exhaust the
+blocks by dimension. Explicit highest-weight vectors and adjoint embeddings
+are supplied in the canonical proof.
+Since $\operatorname{Tr}D_N=\operatorname{Tr}D_N^2=0$, the characters of
+$S,A$ vanish, the adjoint character is $-1$, the two endomorphism residual
+characters vanish, and the cross residual characters equal $1$. Dividing by
+dimensions yields the displayed spectrum. The invariant space is spanned by
+identity and swap. On its complement the maximum absolute eigenvalue is
+$(N^2-1)^{-1}$, including $N=3$.
+
+Finally conjugation preserves the regular $N$-gon spectrum and the scalar
+phase only rotates it. Its local unfolded limit is a uniformly translated
+integer lattice; an integer-length half-open interval has deterministic
+point count. The Sine$_2$ count variance on a nonempty finite interval is
+strictly positive, so the two local laws differ.
+\end{proof}
+
+This is an induced $2\to2$ estimate, not diamond-norm control or an exact
+design. A growing-order spectral test requires its own quantitative
+extraction bound. For example $N^{-2}|\operatorname{Tr}V_N^N|^2=1$, whereas
+the corresponding Haar expectation is $N^{-1}$. No deterministic BGS or
+noise-removal conclusion follows. Coxeter character rigidity and isospectral
+twirling are prior; the accompanying source note limits attribution and
+makes no global novelty claim.
