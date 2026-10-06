@@ -1,8 +1,13 @@
 # Fixed-map BGS frontier
 
+FM-019 adds a uniform two-copy collective generator gap and a quantitative
+refined shared-noise ensemble retaining the exact one-copy channel.
+Original signed spectral comparison, full nonlinear control and all
+higher-copy rates remain open; this is a regulator theorem, not BGS.
+
 FM-018 adds growing-band actual Weyl coercivity, a specified regularized
 singular gap and exact finite common-noise two-copy invariant classification.
-The reduced asymptotic gap and original signed spectral comparison are
+For the original two-kick law, the microscopic gap and original signed spectral comparison are
 open. Its canonical proof and internal review remain linked from the
 claim registry; inclusion does not promote BGS to a proved claim.
 

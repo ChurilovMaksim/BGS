@@ -1,6 +1,8 @@
 # Fixed Map
 
-- [frozen_operator_transfer_coercivity](../../frozen_operator_transfer_coercivity.md) — Actual Weyl frequency exclusion, regularized singular gap and exact finite common-noise identity/swap classification; uniform two-copy rate and original signed spectrum remain open.
+- [collective_diffusion_gap](../../collective_diffusion_gap.md) — Universal two-copy collective diffusion gap and refined common-noise microscopic mass; exact original two-pair rate remains insufficient for original spectral transfer.
+
+- [frozen_operator_transfer_coercivity](../../frozen_operator_transfer_coercivity.md) — Actual Weyl frequency exclusion, regularized singular gap and exact finite common-noise identity/swap classification; original two-kick microscopic rate and signed spectrum remain open.
 
 - [heisenberg_pair_heat_formula](../../heisenberg_pair_heat_formula.md) — Exact compensated pair heat, actual smoothed stable-band form factor and the open deterministic signed defect.
 - [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.

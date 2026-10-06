@@ -1,11 +1,19 @@
 # Research record
 
+The [collective-diffusion programme](collective_diffusion_program_20261006.md)
+proves a uniform two-copy summed-generator gap in every odd dimension,
+and a Heisenberg-dominating mass for an explicitly refined common-noise
+regulator. Its [review](collective_diffusion_review_20261006.md) separates
+analytic acceptance, corrected exact finite controls and floating diagnostics.
+Full nonlinear spectral control and original deterministic BGS remain open.
+
 The [operator-transfer programme](frozen_operator_transfer_program_20261006.md)
 records actual growing-band coercivity, the regularized singular gap,
 the Gaussian realization and the exact finite common-noise invariant
 space. Its [review](frozen_operator_transfer_review_20261006.md) records
 three analytic passes by one reviewer and bounded exact author execution.
-Uniform reduced two-copy control and deterministic BGS remain open.
+Uniform reduced two-copy control for the original two-pair law and
+deterministic BGS remain open.
 
 The [pair-heat programme](heisenberg_pair_program_20261005.md) records
 the exact compensated heat formula, actual-start smoothed form factor,

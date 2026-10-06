@@ -19,5 +19,11 @@ positive universality theorem until the excluded open claims are closed.
 FM-018 extension: actual growing-band Weyl exclusion and regularized
 singular gap; exact Gaussian realization and the microscopic quadratic
 block; common-noise higher-copy factors and finite identity/swap
-classification. Preserve the open quantitative two-copy, nonlinear
+classification. Preserve the original two-pair microscopic-rate, nonlinear
 functional and original signed noise-removal boundaries.
+
+FM-019 extension: exact total-Weyl blocks, all-parity annular coercivity,
+original pair-kernel angle and explicit weak rate; a refined common law
+at m=N^3 supplies Heisenberg mass with unchanged one-copy averaging.
+Preserve the changed higher-copy law, precise mean-square classical
+limit and open nonlinear/original signed-spectrum obligations.

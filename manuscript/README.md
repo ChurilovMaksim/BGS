@@ -1,9 +1,15 @@
 # Manuscript
 
+The generated fixed-map chapter now also summarizes FM-019's universal
+collective diffusion gap and refined shared-noise microscopic mass.
+The [full proof](../mathematics/collective_diffusion_gap.md) is canonical;
+the original two-kick rate, nonlinear functional, higher-copy estimates
+and deterministic signed comparison retain their stated open boundaries.
+
 The generated fixed-map chapter now summarizes FM-018's actual Weyl
 coercivity, regularized gap and finite common-noise invariant space.
 The [canonical full proof](../mathematics/frozen_operator_transfer_coercivity.md)
-remains separate; the chapter preserves the open uniform two-copy rate,
+remains separate; the parent summary preserves the original two-kick microscopic-rate boundary,
 nonlinear functional and original deterministic noise removal.
 
 `BGS_unified.tex` is the single maintained publication entry point on `main`.

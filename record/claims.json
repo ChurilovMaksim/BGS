@@ -565,7 +565,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
+      "boundary": "Any unitary N\u00d7N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
     },
     {
       "id": "BGS-RES-007",
@@ -736,7 +736,7 @@
       "id": "BGS-TRACE-007",
       "title": "Universal sharp Abel lower bound attained by the clock spectrum",
       "state": "proved",
-      "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
+      "ledger_status": "EXACT + CHECKED COHN\u2013KUMAR THEOREM 1.2",
       "source": "mathematics/fixed_map_resolvent_frontier.md",
       "dependencies": [],
       "external_dependencies": [
@@ -772,7 +772,7 @@
       "id": "BGS-CUE-001",
       "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS\u2013BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
       "source": "mathematics/cue_singular_energy.md",
       "dependencies": [],
       "external_dependencies": [
@@ -889,7 +889,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
+      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|\u00b2+|p2|\u00b2) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
     },
     {
       "id": "BGS-FLOW-005",
@@ -1676,6 +1676,35 @@
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "boundary": "Unchanged actual odd-N map and fixed tau=10^-80. Whole growing Weyl-band twisted averages at T=floor(c log N), R=floor(N^gamma), complete traceless adjoint arcs, commutant frequency energy >=6R^2 and all-u singular gap min(1/(128T^2),(1-exp(-16uR^2))/8); constants/startup noneffective. Exact two-pair Gaussian realization gives massive quadratic block at microscopic source for u=N^-alpha, 0<alpha<1+2gamma. Fresh-step channel trace is not fixed-ensemble spectral ramp; equal mean adjoint channels need not determine nonlinear functionals or fourth spectral moments. Exact common-noise higher-copy channel retains noncommuting pair factors; at k=2 its entire peripheral sector is precisely identity/swap for each finite odd N>=3 and u>0, including composite N. No uniform reduced two-copy rate or full nonlinear integral control. Original signed Heisenberg statistic, higher factorial cancellation, deterministic noise removal, TRACE-005 and BGS remain OPEN. No world priority, external referee or analytic Lean certificate."
+    },
+    {
+      "id": "BGS-FM-019",
+      "title": "Uniform two-copy collective diffusion gap and refined common-noise Heisenberg mass",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INHERITED WEYL/GAUSSIAN AND ONE-STEP EGOROV INPUT + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; FLOATING DIAGNOSTICS SEPARATE",
+      "source": "mathematics/collective_diffusion_gap.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/collective_diffusion_review_20261006.md",
+        "evidence/20261006/collective_diffusion_contract_v2.json",
+        "evidence/executions/20261006/collective-diffusion-exact-v2/manifest.json",
+        "evidence/executions/20261006/collective-diffusion-exact-v2/checks.json",
+        "evidence/20261006/collective_diffusion_spectrum_contract.json",
+        "evidence/executions/20261006/collective-diffusion-spectrum/manifest.json",
+        "evidence/executions/20261006/collective-diffusion-spectrum/values.json",
+        "evidence/executions/20261006-collective-diffusion-integration.json"
+      ],
+      "verifiers": [
+        "computations/verification/collective_diffusion_gap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every odd N>=3: exact total-Weyl blocks and a self-contained all-parity annular proof give universal L_N>=c0 Q_N on the whole two-copy identity/swap complement. Exact original ordered two-pair bound uses q_N=16 sin^2(pi/(2N)) sin^2(pi/N) and kernel angle N^-1/2; stronger m=1 Heisenberg rate is OPEN, not excluded. Explicit refined law shares all 4m Gaussian parameters across copies; its one-copy channel is exactly unchanged, while its higher-copy law changes. At m=N^3,u=N^-alpha,0<alpha<1 contraction Trotter error <=64 pi u^2 N^3/m gives reduced microscopic singular mass >=c0u/4 eventually, for any U including actual U_N. Fixed smooth observables retain actual G in normalized HS mean square <=C_a(u+N^-4), with no long-product Egorov, operator-norm or microscopic spectral continuity. Gap proof imports no external theorem; actual-map retention inherits FM018 O8. No full nonlinear functional, higher-copy quantitative control, original signed cancellation, deterministic BGS, world priority, external referee or analytic Lean certification."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

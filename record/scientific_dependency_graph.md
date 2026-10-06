@@ -81,6 +81,7 @@ graph TD
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
   F1 --> F18[BGS-FM-018 Weyl coercivity and regularized gap]
   F6 --> F18
+  F18 --> F19[BGS-FM-019 uniform collective diffusion and refined mass]
   F1 --> F7[BGS-FM-007 seven-cut transfer]
   F5[BGS-FM-005 exact kick-rank boundary] --> F7
   T1 --> F7
@@ -189,6 +190,13 @@ test on an abstract clock, not a counterexample to the maintained map.
 
 FM-018 uses FM-001 and FM-006 with the checked EXT-PP-1990 classical
 mixing leaf. Its common-noise two-copy invariant space is exactly
-identity/swap at finite N,u>0; its reduced asymptotic rate and full
+identity/swap at finite N,u>0; the original two-pair microscopic rate and full
 nonlinear functional remain open. There is no closure edge from FM-018
 to deterministic TRACE-005 or BGS-BGS-001.
+
+FM-019 records FM-018 conventions/Gaussian averaging and one-step actual
+Egorov as its prerequisite. Its uniform diffusion gap is self-contained;
+no new external leaf is imported. The explicitly refined law has
+Heisenberg-dominating two-copy mass, but no closure edge to deterministic
+TRACE-005 or BGS-BGS-001. The original m=1 rate, nonlinear functional
+and higher-copy quantitative estimates remain open.

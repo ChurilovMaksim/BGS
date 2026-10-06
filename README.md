@@ -1,11 +1,20 @@
 # Bohigas–Giannoni–Schmit programme
 
+The [collective-diffusion continuation](record/collective_diffusion_program_20261006.md)
+proves a universal two-copy generator gap for every odd dimension and
+Heisenberg-dominating mass for an explicitly refined shared-noise ensemble.
+Its one-copy channel is exactly unchanged; the actual classical map is
+retained on fixed smooth observables in mean square. The
+[proof](mathematics/collective_diffusion_gap.md) passed independent internal
+review. This closes an auxiliary quantitative obligation; the full nonlinear
+functional and original signed spectrum remain unestimated. BGS is OPEN.
+
 The [6 October continuation](record/frozen_operator_transfer_program_20261006.md)
 proves growing-band Weyl coercivity and a regularized singular gap for
 the unchanged actual map. Its explicit Gaussian ensemble has exactly
 the identity/swap peripheral sector in two copies at every finite odd
 dimension. The [proof](mathematics/frozen_operator_transfer_coercivity.md)
-passed independent internal review. A uniform reduced two-copy rate,
+passed independent internal review. A uniform reduced rate for the original two-kick law,
 the full nonlinear correlation functional and original-spectrum noise
 removal remain open; full BGS is OPEN.
 

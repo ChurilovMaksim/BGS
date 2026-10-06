@@ -1,5 +1,16 @@
 # Evidence
 
+The [collective exact run](executions/20261006/collective-diffusion-exact-v2/manifest.json)
+and [checks](executions/20261006/collective-diffusion-exact-v2/checks.json)
+record FM-019's finite sign/projection controls under its
+[contract](20261006/collective_diffusion_contract_v2.json). The separate
+[spectrum run](executions/20261006/collective-diffusion-spectrum/manifest.json)
+records descriptive float64 values and selected-block exclusions under
+its [contract](20261006/collective_diffusion_spectrum_contract.json).
+Neither run proves the universal analytic gap or original BGS.
+The [arithmetic correction](../record/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
+identifies the superseded initial run and preserves its original inputs.
+
 The [6 October operator-transfer run](executions/20261006/operator-transfer/manifest.json)
 and [results](executions/20261006/operator-transfer/checks.json) record
 FM-018's exact modular, cyclotomic and rational controls. The

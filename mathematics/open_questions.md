@@ -1,17 +1,23 @@
 # Open mathematical obligations
 
-[FM-018](frozen_operator_transfer_coercivity.md) now proves the actual
-growing-band Weyl exclusion and regularized one-copy singular gap.
-Its common-noise two-copy peripheral space is exactly
-$\operatorname{span}\{I,\mathsf S_N\}$ for each finite odd N>=3,u>0.
-The next question is quantitative: bound the singular gap on the
-orthogonal complement uniformly on a vanishing-noise scale so that its
-mass dominates N^-1. O29 supplies only finite-N positivity, and O27
-prevents combining its pair generators into one commuting exponential.
-Even a quantitative answer must retain the full nonlinear determinant
-functional and justify the ensemble-to-original signed comparison.
-Neither the new channel gap nor finite uniqueness estimates
-$J_{N,w}(U_N)$. The all-order original BGS target remains unchanged.
+[FM-019](collective_diffusion_gap.md) closes a universal two-copy
+summed-generator gap on the full identity/swap complement for every odd
+N>=3. Its refined shared-noise law at m=N^3, u=N^-alpha, 0<alpha<1 has
+singular mass at least c_0u/4, dominating N^-1. Its one-copy channel is
+exactly that of FM-018; its higher-copy law is explicitly changed.
+
+The original m=1 two-pair law now has the explicit D3 rate, of order
+u/N^2 at vanishing u. A stronger microscopic rate for it remains OPEN;
+noncommutation prevents identifying it with the summed exponential.
+A plausible continuation is quantitative uncertainty for its low
+spectral projections, beyond the now exact kernel angle N^-1/2.
+
+For the refined law, the next obligation is the full nonlinear quenched
+determinant functional at a microscopic source, retaining permutation
+sectors and quantitative higher-copy moments. Its fixed-smooth-observable
+HS mean-square classical limit supplies no microscopic spectral comparison.
+The original signed noise defect and J_(N,w)(U_N) are still unestimated.
+All deterministic bands/orders and full BGS remain unchanged and OPEN.
 
 The [exact pair heat formula](heisenberg_pair_heat_formula.md) now gives
 every signed contraction and a superpolynomial **smoothed** stable-band

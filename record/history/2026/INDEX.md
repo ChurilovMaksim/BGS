@@ -35,6 +35,7 @@ This index is navigational; status authority remains
 - [publication transport note](../../session_publication_transport_20260907.md)
 
 ## Corrections and referee passes
+- [6 October collective checker arithmetic correction and immutable initial source](collective_diffusion_arithmetic_correction_20261006.md)
 - [referee audit 2026-09-05](../../referee_audit_20260905.md)
 - [referee audit 2026-09-08](../../referee_audit_20260908.md)
 - [rigidity review](../../rigidity_review_20260905.md)

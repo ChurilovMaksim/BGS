@@ -1,5 +1,25 @@
 # Current results and exact scope
 
+## Uniform two-copy collective diffusion, 6 October 2026
+
+[FM-019](collective_diffusion_gap.md) proves a universal gap on the
+whole complement of identity/swap for the summed four-Hamiltonian
+common-noise generator, for every odd N>=3, including composite N.
+Its exact block reduction and all-parity annular proof are independently
+internally checked. No numerical spectrum proves the analytic gap.
+
+The original ordered two-pair law receives an explicit finite-N rate,
+insufficient to prove Heisenberg dominance at vanishing u. The refined
+law with m=N^3 shared Gaussian sub-kicks, u=N^-alpha, 0<alpha<1 has
+singular mass at least c_0u/4, dominating N^-1. Its one-copy channel is
+exactly unchanged; higher-copy laws are explicitly changed. It retains
+the actual classical map on fixed smooth observables in normalized HS
+mean square, without a microscopic spectral comparison.
+
+The original m=1 improvement, full nonlinear functional, quantitative
+higher moments and actual signed deterministic transfer remain OPEN.
+This theorem is an auxiliary regulator result for any U, not BGS.
+
 ## Actual Weyl transfer and common-noise invariants, 6 October 2026
 
 [FM-018](frozen_operator_transfer_coercivity.md) proves a whole-growing-band
@@ -15,13 +35,13 @@ $u_N=N^{-\alpha}$, $0<\alpha<1+2\gamma$. Constants are noneffective.
 The exact common-noise two-copy channel has only identity/swap peripheral
 invariants for every finite odd N>=3, including composite N. Its pair
 generators do not commute; the reduced finite-N gap is positive but
-has no proved asymptotic rate. Finite ensembles with the same averaged
+has no proved microscopic asymptotic rate for that original law. Finite ensembles with the same averaged
 one-copy channel have different nonlinear functionals and fourth moments,
 so a quadratic gap alone supplies no spectral universality.
 
 Independent internal review checked O1--O29 relative to the pinned
 classical and inherited prerequisites. Exact controls are finite evidence.
-Quantitative common-noise control, the full nonlinear integral and
+The original two-kick microscopic rate, the full nonlinear integral and
 actual deterministic signed cancellation remain OPEN.
 
 ## Exact pair heat and actual-start smoothing, 5 October 2026

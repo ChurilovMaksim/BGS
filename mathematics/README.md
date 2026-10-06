@@ -1,10 +1,17 @@
 # Mathematics
 
+[collective_diffusion_gap.md](collective_diffusion_gap.md) proves a
+universal two-copy summed-generator gap and Heisenberg-dominating mass
+for an explicitly refined common-noise law with m=N^3. It gives a
+weaker quantitative rate for the original two-pair law. Fixed smooth
+observables retain the actual classical map; original spectral transfer,
+the nonlinear functional and higher-copy rates remain open.
+
 [frozen_operator_transfer_coercivity.md](frozen_operator_transfer_coercivity.md)
 proves actual growing-band Weyl coercivity, the all-noise regularized
 singular gap, its exact Gaussian realization and the common-noise
 two-copy identity/swap peripheral classification. Quantitative reduced
-two-copy control, the nonlinear functional and original noise removal
+two-copy control for that original law, the nonlinear functional and original noise removal
 remain open.
 
 [heisenberg_pair_heat_formula.md](heisenberg_pair_heat_formula.md)

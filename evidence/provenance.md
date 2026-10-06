@@ -1,5 +1,16 @@
 # Evidence provenance
 
+The 6 October [collective exact packet](executions/20261006/collective-diffusion-exact-v2/manifest.json)
+uses cyclotomic and rational arithmetic under a source-pinned contract.
+The [separate diagnostic packet](executions/20261006/collective-diffusion-spectrum/manifest.json)
+uses float64 and an explicit deterministic start; larger N cover selected
+blocks only. The [review](../record/collective_diffusion_review_20261006.md)
+distinguishes these runs from the analytic uniform proof. The
+[integration record](executions/20261006-collective-diffusion-integration.json)
+records actual local checks and manuscript build, not a BGS certificate.
+The [initial domain mismatch](../record/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
+is preserved explicitly; the initial run is superseded rather than relabelled.
+
 The 4 October [polynomial coboundary packet](executions/20261004/polynomial-coboundary/manifest.json)
 pins final source, run limits, seed and 40 finite matrix-direction controls.
 Its [checks](executions/20261004/polynomial-coboundary/checks.json) distinguish

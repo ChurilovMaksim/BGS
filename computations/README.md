@@ -1,5 +1,14 @@
 # Computations
 
+[collective_diffusion_gap.py](verification/collective_diffusion_gap.py)
+compares coordinate commutators with exact cyclotomic Weyl blocks,
+checks every parity/wrap gauge at odd N=3..33, complete rational
+projection eigenbases, kernel compression and finite Hardy matrices.
+The separate [spectrum script](experiments/collective_diffusion_spectrum.py)
+uses float64 and a declared deterministic sparse start. Its full/selected
+block coverage is stated in its contract; neither computation certifies
+the analytic uniform gap or BGS.
+
 [frozen_operator_transfer_coercivity.py](verification/frozen_operator_transfer_coercivity.py)
 checks integer Weyl/metaplectic phases, cyclotomic twirls, rational
 nonlinear-functional discriminators, common-noise commutators and swap

@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FM-019",
+  "repository": {
+    "commit": "a3d73edf6fd26485325405d4d24197730c76e9f7",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/collective_diffusion_gap.py",
+    "--output",
+    "evidence/executions/20261006/collective-diffusion-exact/checks.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14",
+        "role": "Standard library; imported exact cyclotomic helper and its transitive frequency-map import"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact coordinate collective commutators versus total-Weyl blocks, signs on half-grid gauges including wraps, projection-angle eigenvectors, kernel compression and finite weighted Hardy matrices",
+    "coefficient_domain": "Z and Fraction rationals in cyclotomic fields Q(zeta_N), Q(zeta_2N)",
+    "conventions": "Odd N; raw residue Weyl T; collective same-noise two copies; normalized HS basis; positive row and column kernels; parity-dependent cross antiperiodicity",
+    "inputs": [
+      "mathematics/collective_diffusion_gap.md",
+      "mathematics/frozen_operator_transfer_coercivity.md",
+      "computations/verification/collective_diffusion_gap.py",
+      "computations/verification/frozen_operator_transfer_coercivity.py",
+      "computations/verification/nonlinear_pressure_variance.py",
+      "literature/collective_diffusion_sources_20261006.md"
+    ],
+    "bounds": {
+      "q_coordinate_N": [
+        3,
+        5,
+        7
+      ],
+      "q_coverage": "Every a,c,row pair; b,d coverage follows multiplication by the unchanged nonzero Weyl entry, counted explicitly",
+      "p_coordinate_N": [
+        3,
+        5
+      ],
+      "p_coverage": "Every Weyl pair and all resulting nonzero coordinate entries; X shifts ket by -1",
+      "gauge_N": "all odd 3..33",
+      "gauge_coverage": "Every centered total coordinate, every residue first coordinate, all b=0,1,N-1 and both steps; transpose gives p signs",
+      "projection_N": "all odd 3..33, complete 2N-2 eigenbasis of the punctured row range",
+      "compression_N": "all odd 3..33, four rational coefficient pairs; exact cosine sum",
+      "hardy_sizes": "all 1..20, exact positive LDL and reconstruction"
+    },
+    "non_claims": [
+      "No finite calculation proves the uniform annular lemma, the asymptotic generator gap, Trotter schedule, classical limit, original spectral moment or BGS",
+      "No Gaussian sampling, interval eigenvalue computation or analytic Lean certification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T07:09:55.219005+00:00",
+    "runtime_seconds": 8.294796,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 45.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 35,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "mathematics/collective_diffusion_gap.md",
+    "mathematics/frozen_operator_transfer_coercivity.md",
+    "computations/verification/collective_diffusion_gap.py",
+    "computations/verification/frozen_operator_transfer_coercivity.py",
+    "computations/verification/nonlinear_pressure_variance.py",
+    "literature/collective_diffusion_sources_20261006.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "mathematics/collective_diffusion_gap.md",
+      "sha256": "601a0acb28d07d940b5f3479954dcc560191f2c96a2bfbd22d4bbf0f56e2afbf",
+      "sha256_after": "601a0acb28d07d940b5f3479954dcc560191f2c96a2bfbd22d4bbf0f56e2afbf"
+    },
+    {
+      "path": "mathematics/frozen_operator_transfer_coercivity.md",
+      "sha256": "ea668cded8831626a15462285ff915cc9e29139dac5a326d104e6e850742ff4c",
+      "sha256_after": "ea668cded8831626a15462285ff915cc9e29139dac5a326d104e6e850742ff4c"
+    },
+    {
+      "path": "computations/verification/collective_diffusion_gap.py",
+      "sha256": "386d6082f39bce9244748bb779740667431da9eab851634529cb5db0999f743a",
+      "sha256_after": "386d6082f39bce9244748bb779740667431da9eab851634529cb5db0999f743a"
+    },
+    {
+      "path": "computations/verification/frozen_operator_transfer_coercivity.py",
+      "sha256": "b5550851b52e9785e707cb418b4c51cffd9c464336d10ed09d5ad6a530c783bd",
+      "sha256_after": "b5550851b52e9785e707cb418b4c51cffd9c464336d10ed09d5ad6a530c783bd"
+    },
+    {
+      "path": "computations/verification/nonlinear_pressure_variance.py",
+      "sha256": "cba8fb106e372d9758b555be5f7ec05c779ce47eac78a83238016cee06b40e48",
+      "sha256_after": "cba8fb106e372d9758b555be5f7ec05c779ce47eac78a83238016cee06b40e48"
+    },
+    {
+      "path": "literature/collective_diffusion_sources_20261006.md",
+      "sha256": "afe4c8239434ba9d40fa7b424581a788c7d8e45319d6f020b41597045d848725",
+      "sha256_after": "afe4c8239434ba9d40fa7b424581a788c7d8e45319d6f020b41597045d848725"
+    }
+  ],
+  "output_directory": "evidence/executions/20261006/collective-diffusion-exact",
+  "declared_results": [
+    "evidence/executions/20261006/collective-diffusion-exact/checks.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261006/collective-diffusion-exact/stdout.txt",
+      "sha256": "77893de7a5be2078075fc87cb40a975b8f85a9619033328a1ced51277f3b39a6",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261006/collective-diffusion-exact/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261006/collective-diffusion-exact/checks.json",
+      "sha256": "56a8b38e1ad1e12e7e8353f79e148670d80d2018a791ebd8f425ca6244e46c2c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

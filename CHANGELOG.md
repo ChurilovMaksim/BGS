@@ -1,5 +1,22 @@
 # Scientific changelog
 
+## 2026-10-06 — quantitative collective diffusion continuation
+
+- FM-019: exact N^2 total-Weyl blocks and a universal two-copy diffusion
+  gap on the whole identity/swap complement at every odd N>=3.
+- All parity cases closed by shifted-grid annuli, geometric Hardy
+  summation, cross twists and exact kernel compression; no external
+  gap theorem or computed spectrum is imported.
+- Exact pair-dephasing angle and explicit original m=1 rate; the stronger
+  vanishing-noise Heisenberg estimate for that law stays open.
+- Explicit refined shared-noise law at m=N^3 gives mass c_0u/4 for
+  u=N^-alpha, 0<alpha<1. One-copy channel is exactly unchanged;
+  higher-copy law is explicitly changed. Fixed-observable classical
+  retention is mean-square HS, not microscopic spectral continuity.
+- Two internal analytic passes by one fresh reviewer; bounded exact
+  arithmetic and separate deterministic-start float64 diagnostics.
+  Nonlinear functional, original signed comparison and BGS remain OPEN.
+
 ## 2026-10-06 — actual Weyl transfer and common-noise invariant classification
 
 - FM-018: whole-growing-band twisted average, complete adjoint-arc

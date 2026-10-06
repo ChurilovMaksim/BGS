@@ -1,5 +1,7 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
+**Collective-diffusion continuation claim:** `BGS-FM-019`.
+
 **Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FLOW-021`, `BGS-FM-018`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
 **Status, 6 October 2026.** The fixed-map BGS target is open. This chapter
@@ -1403,9 +1405,107 @@ credits prior noisy-relaxation methods and checks the exact classical
 mixing leaf. The [internal audit](../record/frozen_operator_transfer_review_20261006.md)
 reconstructed O1--O29 relative to the inherited Anosov/Gibbs inputs.
 Exact finite controls do not prove the analytic asymptotics or priority.
-Quantitative reduced two-copy control, the full nonlinear functional and
+For the original two-kick law, a microscopic reduced rate, the full nonlinear functional and
 the original signed Heisenberg noise defect remain OPEN. No deterministic
 BGS conclusion follows from the regularized gap or finite uniqueness.
+
+## Uniform collective diffusion and a refined common-noise microscopic mass
+
+**Claim ID:** `BGS-FM-019`. The
+[full proof](collective_diffusion_gap.md) keeps both physical copies under
+the same noise. For the collective sums of the real/imaginary parts
+of $Z=T_N(0,1)$ and $X=T_N(1,0)$, put
+
+$$
+A_N^{\mathrm{diff}}=\frac{N^2}{2}\sum_{\ell=1}^2
+ (\operatorname{ad}H_\ell^{[2]})^2,\quad
+B_N^{\mathrm{diff}}=\frac{N^2}{2}\sum_{\ell=3}^4
+ (\operatorname{ad}H_\ell^{[2]})^2,\quad
+L_N=A_N^{\mathrm{diff}}+B_N^{\mathrm{diff}}.
+$$
+
+These are diffusion superoperators, distinct from the physical kick
+Hamiltonian. Let $Q_N$ project onto the whole normalized-HS orthogonal
+complement of $\operatorname{span}\{I,\mathsf S_N\}$. There is a
+universal $c_0>0$ such that, for every odd $N\ge3$,
+
+$$
+\ker L_N=\operatorname{span}\{I,\mathsf S_N\},\qquad
+L_N\ge c_0Q_N.
+$$
+
+This follows analytically from $N^2$ exact total-Weyl blocks of dimension
+$N^2$, including composite N. Translation and a sign gauge give weighted
+integral or half-integral lattices with cross antiperiodic holonomy.
+A dyadic annular Poincare inequality has no logarithmic loss. Nonzero
+even total labels have an additional positive form whose compression
+on the two otherwise invariant directions gives a uniform bound.
+The sole zero block represents identity/swap.
+
+The original ordered two-pair law is still not the exponential of the
+sum. Exact pair-kernel angle $N^{-1/2}$ gives the explicit bound
+
+$$
+\begin{aligned}
+C_{N,u,1}&=e^{-uA_N^{\mathrm{diff}}}e^{-uB_N^{\mathrm{diff}}}
+       \operatorname{Ad}(U^{\otimes2}),\\
+\inf_{|\zeta|=1}\sigma_{\min}
+ [(C_{N,u,1}-\zeta I)|_{\operatorname{ran}Q_N}]
+&\ge\frac{(1-N^{-1/2})(1-e^{-uN^2q_N})}{10},\\
+q_N&=16\sin^2\frac{\pi}{2N}\sin^2\frac{\pi}{N}.
+\end{aligned}
+$$
+
+Its small-u lower bound has order $u/N^2$; a stronger microscopic m=1
+rate remains open, not ruled out. The proof instead closes a quantitative
+obligation for an explicitly **refined** ensemble:
+sample m independent Gaussian four-vectors, keep their complete sequence
+common to the copies, and multiply their sub-kicks before the single U.
+The higher-copy law changes, while its one-copy channel remains exactly
+$D_{u,N}\operatorname{Ad}U$ at every m. Its two-copy channel is
+
+$$
+C_{N,u,m}=
+ (e^{-(u/m)A_N^{\mathrm{diff}}}e^{-(u/m)B_N^{\mathrm{diff}}})^m
+       \operatorname{Ad}(U^{\otimes2}),\qquad
+\|C_{N,u,m}Q_N\|\le e^{-c_0u}+64\pi u^2N^3/m.
+$$
+
+The error uses a direct collective-Weyl commutator bound and contraction
+Duhamel, not a formal interchange of N and the product limit. At
+$u_N=N^{-\alpha}$, $0<\alpha<1$, $m_N=N^3$, the error is $o(u_N)$.
+For fixed $s\ge0$, real $\omega$, $z_N=e^{-s/N+i\omega/N}$,
+
+$$
+\sigma_{\min}[(I-z_NC_{N,u_N,m_N})|_{\operatorname{ran}Q_N}]
+\ge c_0u_N/4,
+$$
+
+eventually, so its mass dominates $N^{-1}$. This holds for any U,
+and in particular for the unchanged actual fixed-coupling $U_N$.
+No normality or simple-spectrum assumption is used.
+
+For each fixed smooth symbol a the refined actual-map ensemble satisfies
+
+$$
+\mathbb E\|\operatorname{Ad}(\widetilde V_{N,u,m})\operatorname{Op}_N(a)
+       -\operatorname{Op}_N(a\circ G)\|_{HS}^2
+\le C_a(u+N^{-4}),
+$$
+
+uniformly in m. This precise retention of the classical map follows
+from exact one-copy averaging and inherited one-step Egorov. It is
+normalized-HS mean square on fixed smooth observables, without a
+long-product Egorov or microscopic operator-norm statement.
+
+The [internal review](../record/collective_diffusion_review_20261006.md)
+reconstructed D1--D25; the [source check](../literature/collective_diffusion_sources_20261006.md)
+credits prior moment-semigroup/design and shear-mixing methods without
+importing an external gap theorem. Exact finite controls and float64
+diagnostics are separate. The full nonlinear quenched functional,
+higher-copy quantitative rates and actual original signed noise defect
+remain open. The universal regulator gap does not estimate the original
+$J_{N,w}(U_N)$; TRACE-005 and BGS-BGS-001 retain their OPEN status.
 
 ## The exact deterministic noise-removal obligation
 

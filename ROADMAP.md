@@ -4,12 +4,14 @@ This roadmap describes scientific milestones, not promises or deadlines.
 
 ## Programme I — fixed-map microscopic universality
 
-FM-018 now supplies actual growing-band Weyl coercivity and an explicit
-regularized one-copy singular gap. Its common-noise two-copy peripheral
-space is exactly identity/swap at each finite odd N,u>0. The next
-auxiliary estimate is a quantitative gap after removing that sector on
-a vanishing-noise scale; full nonlinear functional and original signed
-comparison must follow. These inputs do not close the milestones below.
+FM-018 supplies actual growing-band Weyl coercivity and a one-copy
+regularized singular gap. FM-019 now closes a universal common-noise
+summed-generator gap and Heisenberg-dominating reduced mass for an
+explicitly refined Gaussian law at m=N^3. The original m=1 law has an
+explicit weaker rate; its stronger microscopic rate stays open. Full
+nonlinear quenched control, higher-copy bounds and the original signed
+comparison must still be proved. Smooth-observable classical retention
+supplies no spectral transfer and does not close the milestones below.
 
 **Milestone 1. Heisenberg pair comparison.** Prove the weighted
 Heisenberg-scale pair-trace/mixed-resolvent estimate for the correctly

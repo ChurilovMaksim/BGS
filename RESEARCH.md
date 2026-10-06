@@ -1,11 +1,20 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [collective-diffusion checkpoint](record/collective_diffusion_program_20261006.md)
+proves a universal two-copy generator gap for every odd dimension and
+Heisenberg-dominating mass for an explicitly refined shared-noise ensemble.
+Its one-copy channel is exactly unchanged; the actual classical map is
+retained on fixed smooth observables in mean square. The
+[proof](mathematics/collective_diffusion_gap.md) passed independent internal
+review. This closes an auxiliary quantitative obligation; the full nonlinear
+functional and original signed spectrum remain unestimated. BGS is OPEN.
+
 The [6 October operator-transfer checkpoint](record/frozen_operator_transfer_program_20261006.md)
 proves actual growing-band Weyl coercivity and an explicit regularized
 singular gap. An exact Gaussian product ensemble gives the microscopic
 massive quadratic block. Its common-noise two-copy peripheral sector
 is precisely identity/swap at each finite odd dimension, with no proved
-uniform reduced gap. The [proof](mathematics/frozen_operator_transfer_coercivity.md)
+uniform reduced gap for the original two-kick law. The [proof](mathematics/frozen_operator_transfer_coercivity.md)
 and [review](record/frozen_operator_transfer_review_20261006.md) distinguish
 these conclusions from the unestimated nonlinear functional and original
 signed noise defect. Actual deterministic BGS remains OPEN.

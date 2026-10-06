@@ -24,7 +24,8 @@
     "BGS-TRACE-006",
     "BGS-TRACE-010",
     "BGS-TRACE-011",
-    "BGS-FM-018"
+    "BGS-FM-018",
+    "BGS-FM-019"
   ],
   "authoritative_sources": [
     "mathematics/fixed_model_symmetry_theorem.md",
@@ -44,7 +45,8 @@
     "mathematics/frozen_effective_gap_floor.md",
     "mathematics/signed_heisenberg_comparison.md",
     "mathematics/resonant_cubic_density_control.md",
-    "mathematics/frozen_operator_transfer_coercivity.md"
+    "mathematics/frozen_operator_transfer_coercivity.md",
+    "mathematics/collective_diffusion_gap.md"
   ],
   "external_dependencies": [
     "EXT-BH-2026",
@@ -61,5 +63,5 @@
     "BGS-BGS-001"
   ],
   "verification_commit": null,
-  "note": "Frontier paper: exact/conditional reductions, regularized operator-transfer results and method boundaries; not a positive BGS theorem. Verification commit remains unset until a submission-specific audit."
+  "note": "Frontier paper: exact/conditional reductions, regularized transfer and quantitative collective-diffusion results, with original spectral-transfer boundaries; not a positive BGS theorem. Verification commit remains unset until a submission-specific audit."
 }

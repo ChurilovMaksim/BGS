@@ -1,5 +1,45 @@
 # Claim ledger
 
+## 6 October 2026 — uniform collective diffusion and refined shared-noise mass
+
+**BGS-FM-019 — PROJECT PROOF + INHERITED WEYL/GAUSSIAN AND ONE-STEP
+EGOROV INPUT + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS;
+FLOATING DIAGNOSTICS SEPARATE.** The
+[proof](../mathematics/collective_diffusion_gap.md) gives a universal
+two-copy collective diffusion gap $L_N\ge c_0Q_N$, for every odd
+$N\ge3$, on the entire complement of identity/swap. The proof uses
+exact total-Weyl blocks, translated integral/half-integral grids,
+cross antiperiodic holonomies and a dyadic annular Poincare estimate
+without a logarithmic loss. Even nonzero total labels are handled by
+an exact two-dimensional compression. No external gap theorem or
+finite numerical spectrum supplies the uniform bound.
+
+The original ordered two-pair ensemble has the explicit D3 rate with
+$q_N=16\sin^2(\pi/(2N))\sin^2(\pi/N)$ and exact kernel angle $N^{-1/2}$.
+That bound has order $u/N^2$ at vanishing u; a stronger m=1
+Heisenberg rate remains OPEN, not disproved.
+
+For an explicitly **refined** ensemble sharing all 4m Gaussian variables
+between the physical copies, the one-copy channel remains exactly that
+of FM-018. Its higher-copy law changes. At $m=N^3$, $u=N^{-\alpha}$,
+$0<\alpha<1$, the collective commutator estimate and contraction
+Trotter bound give a two-copy singular mass at least $c_0u/4$ eventually,
+so it dominates $N^{-1}$. This holds for any U, including the unchanged
+actual U_N. Fixed smooth observables retain the actual classical map
+in normalized HS mean square at error $C_a(u+N^{-4})$.
+No operator-norm or microscopic spectral continuity is inferred.
+
+The [programme](collective_diffusion_program_20261006.md),
+[review](collective_diffusion_review_20261006.md) and
+[source check](../literature/collective_diffusion_sources_20261006.md)
+record scope, two passes by one fresh read-only reviewer, prior
+moment-semigroup methods and unestablished priority. Exact finite sign,
+projection and Hardy controls are separate from float64 spectra.
+**The full nonlinear quenched functional, higher-copy quantitative
+rates, actual original signed noise defect, TRACE-005 and full
+deterministic BGS remain OPEN.** No external referee, prize-level
+significance, world priority or analytic Lean certificate is claimed.
+
 ## 6 October 2026 — actual Weyl coercivity, regularized gap and common-noise invariants
 
 **BGS-FM-018 — PROJECT PROOF + CHECKED EXTERNAL CLASSICAL MIXING +
@@ -39,7 +79,7 @@ separate the new implications, inherited area Gibbs input and prior
 noisy-relaxation methods. Three passes by one fresh reviewer are internal
 analytic review; exact finite and six symbolic controls certify only
 their recorded identities. The Wolfram response preserves its diagnostics.
-The next quantitative reduced two-copy estimate, full nonlinear
+The original two-kick microscopic reduced estimate, full nonlinear
 functional and original signed noise defect are unproved.
 **Actual unregularized Heisenberg cancellation, higher factorial
 counterterms, TRACE-005 and full deterministic BGS remain OPEN.**
