@@ -1,0 +1,83 @@
+{
+  "base": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "date": "2026-10-06",
+  "scope": "publication overlay checks only; not full repository/manuscript/Lean/remote CI",
+  "runs": [
+    {
+      "command": "python3 computations/verification/heisenberg_wkb/check_independent.py",
+      "exit_code": 0,
+      "stdout_sha256": "85402eea36ee6867cb99624e6eb01435141a91a90341df814318113dd7990823",
+      "source_sha256": "06e12ed6b3487097ba35ed96cbebc6d6e28bd7213621c3950d29d409df66b993"
+    },
+    {
+      "command": "python3 computations/verification/heisenberg_wkb/check_raw_gauss.py",
+      "exit_code": 0,
+      "stdout_sha256": "eaf1c317cd944f384ce0b39dd778c7e0135f4c7d63ec9d0e74b61877bf583ce2",
+      "source_sha256": "1e26bbcca1231fb07c16d65f1021485cb6b1fb1ed8b43f830cacad5386947306"
+    },
+    {
+      "command": "python3 computations/verification/heisenberg_wkb/cluster_checks.py",
+      "exit_code": 0,
+      "stdout_sha256": "ec2c618abbeaa0b5d7ce0b18a430511f48c21bcef9af092fb327b6a269762ea1",
+      "source_sha256": "9df0cfdafdfc5f753a2e18259c56dbae0b575a4a54e3963569ed40266beecfc8"
+    },
+    {
+      "command": "python3 computations/verification/heisenberg_wkb/exact_branch_modes.py",
+      "exit_code": 0,
+      "stdout_sha256": "43a8c2f0f67202cae0ed3ba315f7aefd0c46392adddaef546aab29d0498cd95a",
+      "source_sha256": "b3aacc32ba0f05cef017b4efbc556cc8b230884c6be1854b04500eae3996fde4"
+    },
+    {
+      "command": "python3 computations/verification/heisenberg_wkb/exact_controls.py",
+      "exit_code": 0,
+      "stdout_sha256": "0e3fbbaee0b085fbd7d2969bacc7e99ce10651e86ce90f451d4393a3d37cfdc5",
+      "source_sha256": "e88493bf633cf8b2030c959d84f10b24bb36104cfaf74cc7539b5c3b41da7496"
+    },
+    {
+      "command": "python3  -O computations/verification/heisenberg_wkb/check_independent.py",
+      "exit_code": 0,
+      "stdout_sha256": "85402eea36ee6867cb99624e6eb01435141a91a90341df814318113dd7990823",
+      "source_sha256": "06e12ed6b3487097ba35ed96cbebc6d6e28bd7213621c3950d29d409df66b993"
+    },
+    {
+      "command": "python3  -O computations/verification/heisenberg_wkb/check_raw_gauss.py",
+      "exit_code": 0,
+      "stdout_sha256": "eaf1c317cd944f384ce0b39dd778c7e0135f4c7d63ec9d0e74b61877bf583ce2",
+      "source_sha256": "1e26bbcca1231fb07c16d65f1021485cb6b1fb1ed8b43f830cacad5386947306"
+    },
+    {
+      "command": "python3  -O computations/verification/heisenberg_wkb/cluster_checks.py",
+      "exit_code": 0,
+      "stdout_sha256": "ec2c618abbeaa0b5d7ce0b18a430511f48c21bcef9af092fb327b6a269762ea1",
+      "source_sha256": "9df0cfdafdfc5f753a2e18259c56dbae0b575a4a54e3963569ed40266beecfc8"
+    },
+    {
+      "command": "python3  -O computations/verification/heisenberg_wkb/exact_branch_modes.py",
+      "exit_code": 0,
+      "stdout_sha256": "43a8c2f0f67202cae0ed3ba315f7aefd0c46392adddaef546aab29d0498cd95a",
+      "source_sha256": "b3aacc32ba0f05cef017b4efbc556cc8b230884c6be1854b04500eae3996fde4"
+    },
+    {
+      "command": "python3  -O computations/verification/heisenberg_wkb/exact_controls.py",
+      "exit_code": 0,
+      "stdout_sha256": "0e3fbbaee0b085fbd7d2969bacc7e99ce10651e86ce90f451d4393a3d37cfdc5",
+      "source_sha256": "e88493bf633cf8b2030c959d84f10b24bb36104cfaf74cc7539b5c3b41da7496"
+    }
+  ],
+  "silent_import_normal_and_optimized": true,
+  "import_file_mutation": false,
+  "explicit_input_rejection_normal_and_optimized": true,
+  "no_assert_checks": true,
+  "private_path_scan": "passed",
+  "canonical_source_hashes": {
+    "mathematics/four_branch_parametrix.md": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+    "mathematics/trace_to_local_statistics_bridge.md": "8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd",
+    "mathematics/signed_heisenberg_comparison.md": "450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313",
+    "mathematics/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+  },
+  "nonclaims": [
+    "No proof of analytic limits by finite tests",
+    "No global contour or summed-error theorem",
+    "TRACE-005 and BGS remain OPEN"
+  ]
+}

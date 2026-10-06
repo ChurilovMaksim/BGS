@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-06",
+  "scope": "finite exact controls only; no full repository/manuscript build or analytic formalization",
+  "runs": [
+    {
+      "optimized": false,
+      "result": {
+        "exact_corner_certificates": 5334,
+        "h_normalization_checks": 28,
+        "literal_constant_groups": 9,
+        "parameter_convention": "h=(2*pi*N)^-1; N^-ell=(2*pi*h)^ell",
+        "perturbed_schur_subset_checks": 494,
+        "scope": "finite exact arithmetic only; analytic inequalities reconstructed separately",
+        "unrestricted_three_cycle_minimum": "-4201/40",
+        "unrestricted_three_cycle_optimizer": "{y: 101/10, z: 101/10}"
+      }
+    },
+    {
+      "optimized": true,
+      "result": {
+        "exact_corner_certificates": 5334,
+        "h_normalization_checks": 28,
+        "literal_constant_groups": 9,
+        "parameter_convention": "h=(2*pi*N)^-1; N^-ell=(2*pi*h)^ell",
+        "perturbed_schur_subset_checks": 494,
+        "scope": "finite exact arithmetic only; analytic inequalities reconstructed separately",
+        "unrestricted_three_cycle_minimum": "-4201/40",
+        "unrestricted_three_cycle_optimizer": "{y: 101/10, z: 101/10}"
+      }
+    }
+  ],
+  "silent_imports": true,
+  "explicit_input_rejection": true,
+  "assert_statements": 0,
+  "arbitrary_cwd": true,
+  "source_sha256": "f197ced60bbf3758942675122de93fa65db092ae42b7e73d5d7c89182612803c",
+  "canonical_proof_sha256": "cfae6dd38a6c408ace97ebad6b60146c7db5ef06ed48d282e6a315fcc664fac0",
+  "review_scope_sha256": "ab70f63e20fefb479e2644bf866577d033405a221d5d23a90227f194775ff0dc",
+  "nonclaims": [
+    "Finite checks do not prove analytic limits.",
+    "No signed CUE evaluation or full BGS result.",
+    "No uniform unrestricted Heisenberg-band or optimally truncated local remainder claim."
+  ]
+}

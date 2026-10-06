@@ -25,6 +25,7 @@ This index is navigational; status authority remains
 - [fixed-strength locality audit](../../fixed_strength_locality_audit.md)
 
 ## Publication and integrity
+- [6 October constructive integration and execution scope](../../constructive_batch_integration_20261006.md)
 - [4 October numerical trace-input completion and successful Wolfram replay](completion_review_20261004.md)
 - [4 October inherited-inventory repair and full supplement replay](ci_integrity_20261004.md)
 - [23 September repository-wide editorial and verification pass](repository_hygiene_20260923.md)
@@ -46,3 +47,9 @@ Additional dated records remain searchable in `record/` and Git history.
 - [4 October expansion and packet research audit](../../expansion_wavepacket_review_20261004.md)
 
 - [Next bounded proofs: immutable preparation provenance](next_proofs_20261006/README.md).
+
+- [Actual commutant provenance](actual_commutant_20261006/unramified_actual_commutant_reviewed_v1.md): reviewed original and superseded route records, with unchanged source hashes. Current theorem owner is mathematics/actual_seven_primary_commutant.md.
+
+- [WKB original review provenance](heisenberg_wkb_20261006/original_hashes.json): exact reviewed originals and publication text before prior-ownership correction. Historical coordination paths are retained only in these immutable originals.
+
+- [Rotated-contour accepted originals](rotated_contour_20261006/source_hashes.json): frozen contour/tail candidates and separate fresh review; current owner is mathematics/global_rotated_box_trace.md.

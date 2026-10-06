@@ -481,3 +481,11 @@ The active Lean tree contains finite certificates and algebraic lemmas, not form
 
 Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build succeeded for the earlier 16-module revision; the full 17-module build including the newer module is now recorded in `formalization/README.md`. This changes execution status, not the scope of the
 formalized mathematics. Full analytic formalization remains open.
+
+### Equivalent WKB target
+
+[TRACE-017](factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
+
+### Remaining arithmetic common-commutant branches
+
+[FM-024](actual_seven_primary_commutant.md) closes exactly the actual odd 49|N, 5∤N family. The branches 49|N with 5|N and 7∥N remain unresolved by this result; N=7 is exceptional. FM-008 retains its separate 7∤N simplicity theorem. Seven-divisible spectral simplicity, the unrestricted all-odd-N obligation and deterministic BGS remain open.

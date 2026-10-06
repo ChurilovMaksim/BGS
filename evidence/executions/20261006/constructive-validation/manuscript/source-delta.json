@@ -1,0 +1,41 @@
+{
+  "scope": "Formatting-only discretionary line breaks inside five source filenames; no visible textual or mathematical change. Three overfull boxes in prior build.",
+  "failed_build_manifest_sha256": "7774c3a1c3d59b13667d23973f2269b34de70a02e2670e3296313218b68ca544",
+  "failed_build_preserved": true,
+  "edits": [
+    {
+      "path": "manuscript/unified_sections/heisenberg_wkb_reductions.tex",
+      "before_sha256": "472520cbad0f45cfc422182a0761b2131a5735eaeb8068da5bfd68e0b910f387",
+      "after_sha256": "d817156603ce33c0516462ab48d72962dcbd3a560a575c4ee1881f5d220a8287",
+      "edits": [
+        {
+          "before": "\\texttt{factorial\\_wkb\\_reduction.md}",
+          "after": "\\texttt{factorial\\_\\allowbreak{}wkb\\_\\allowbreak{}reduction.md}"
+        },
+        {
+          "before": "\\texttt{exact\\_gaussian\\_reciprocity.md}",
+          "after": "\\texttt{exact\\_\\allowbreak{}gaussian\\_\\allowbreak{}reciprocity.md}"
+        },
+        {
+          "before": "\\texttt{uniform\\_cluster\\_lemma.md}",
+          "after": "\\texttt{uniform\\_\\allowbreak{}cluster\\_\\allowbreak{}lemma.md}"
+        },
+        {
+          "before": "\\texttt{rotated\\_local\\_first\\_loop.md}",
+          "after": "\\texttt{rotated\\_\\allowbreak{}local\\_\\allowbreak{}first\\_\\allowbreak{}loop.md}"
+        }
+      ]
+    },
+    {
+      "path": "manuscript/unified_sections/global_rotated_box_trace.tex",
+      "before_sha256": "864008084e6b9f969f5dd3c482ab68833f37f1da61997b5f628f29a5b4520719",
+      "after_sha256": "3c28b94c5f54faba11672c2c9a887460e8ec967a6319f105ca3b20c621dc56a5",
+      "edits": [
+        {
+          "before": "\\texttt{mathematics/global\\_rotated\\_box\\_trace.md}",
+          "after": "\\texttt{mathematics/\\allowbreak{}global\\_\\allowbreak{}rotated\\_\\allowbreak{}box\\_\\allowbreak{}trace.md}"
+        }
+      ]
+    }
+  ]
+}

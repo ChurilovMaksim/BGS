@@ -1,0 +1,205 @@
+[
+  {
+    "artifact": "initial/archive-manifest.json",
+    "raw_source_role": "$INITIAL_VALIDATION/archive-manifest.json",
+    "raw_sha256": "4a3589fd877dc0e8cf98c2314d01657707b35dd7a8f4ebb322f68d27477c7e57",
+    "public_sha256": "4a3589fd877dc0e8cf98c2314d01657707b35dd7a8f4ebb322f68d27477c7e57",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "initial/workspace.json",
+    "raw_source_role": "$INITIAL_VALIDATION/workspace.json",
+    "raw_sha256": "ce6c5034756bce01ed66c47cca432a838f2adec734096f87e5959d7d7b349354",
+    "public_sha256": "cb8044170baf4bb8bc505fc6221874e7c8cb03622ca3779d20a1d3f88b747b1d",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable; source manifest factored once"
+  },
+  {
+    "artifact": "initial/workspace.log",
+    "raw_source_role": "$INITIAL_VALIDATION/logs/full-workspace.log",
+    "raw_sha256": "4e585a48abca2fa66a25f09f368cabf0d4acf28b3004fef6923d64460714025b",
+    "public_sha256": "4e585a48abca2fa66a25f09f368cabf0d4acf28b3004fef6923d64460714025b",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "supplement.json",
+    "raw_source_role": "$SUPPLEMENT_REPLAY/verification.json",
+    "raw_sha256": "d67fa45e9a34036d0f0b81b5ef99f15dcc4e4e67ddfa444653b04a3a3e2ee6bd",
+    "public_sha256": "d67fa45e9a34036d0f0b81b5ef99f15dcc4e4e67ddfa444653b04a3a3e2ee6bd",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "lean-build.json",
+    "raw_source_role": "$INITIAL_VALIDATION/lean-build.json",
+    "raw_sha256": "8c5460a10dc79d641b755e6093d8530ef85e8c84e25b74943f03370f7f088aee",
+    "public_sha256": "8c5460a10dc79d641b755e6093d8530ef85e8c84e25b74943f03370f7f088aee",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "lean-build.log",
+    "raw_source_role": "$INITIAL_VALIDATION/logs/lean-build.log",
+    "raw_sha256": "e80d7b5bc790b28cf056a28a952439c87e592e179fecd3b7163e0a83e77902c0",
+    "public_sha256": "e80d7b5bc790b28cf056a28a952439c87e592e179fecd3b7163e0a83e77902c0",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "maintenance-normal.log",
+    "raw_source_role": "$INITIAL_VALIDATION/logs/maintenance-normal.log",
+    "raw_sha256": "fc5cb2334db038237329964e1bd8eb0b3e606c577a65f37af03da25f8f018bd6",
+    "public_sha256": "fc5cb2334db038237329964e1bd8eb0b3e606c577a65f37af03da25f8f018bd6",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "maintenance-optimized.log",
+    "raw_source_role": "$INITIAL_VALIDATION/logs/maintenance-optimized.log",
+    "raw_sha256": "920b6009c610719161df296ee9cdfabbb97433c0d03651efebd95dd38ce4799d",
+    "public_sha256": "920b6009c610719161df296ee9cdfabbb97433c0d03651efebd95dd38ce4799d",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/actual_algebra_check.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/actual_algebra_check.log",
+    "raw_sha256": "0c2e6815796c87fe036e3718cf1d821080a39e3da68adeb93b56f1fad89fe62f",
+    "public_sha256": "0c2e6815796c87fe036e3718cf1d821080a39e3da68adeb93b56f1fad89fe62f",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/actual_casoratian_check.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/actual_casoratian_check.log",
+    "raw_sha256": "a0edc1be04378999348ab62427940a57179dd50a9229c652c9af73800b754267",
+    "public_sha256": "a0edc1be04378999348ab62427940a57179dd50a9229c652c9af73800b754267",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/actual_factor_check.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/actual_factor_check.log",
+    "raw_sha256": "58d24b383fee777358920d0ab7a9f4f70bfbdd53c18a17cc9745f5cc2763e0b8",
+    "public_sha256": "58d24b383fee777358920d0ab7a9f4f70bfbdd53c18a17cc9745f5cc2763e0b8",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/actual_field_check.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/actual_field_check.log",
+    "raw_sha256": "673e86f17944f18963331aad0acdefdf9859e7dad0c3e630980c942dbda8fe9b",
+    "public_sha256": "673e86f17944f18963331aad0acdefdf9859e7dad0c3e630980c942dbda8fe9b",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/global_rotated_box_trace.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/global_rotated_box_trace.log",
+    "raw_sha256": "a88492f6b945db884ccdf76b22ca07de364f06e66ec6ace95e3431ef8c618a18",
+    "public_sha256": "a88492f6b945db884ccdf76b22ca07de364f06e66ec6ace95e3431ef8c618a18",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/heisenberg_wkb_controls.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/heisenberg_wkb_controls.log",
+    "raw_sha256": "1c4adfa94a99b2139aa7737dfe8fbf5a0855a8800cc32a08160e07dae9c258f0",
+    "public_sha256": "1c4adfa94a99b2139aa7737dfe8fbf5a0855a8800cc32a08160e07dae9c258f0",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "check-logs/seven_primary_certificate.log",
+    "raw_source_role": "$INITIAL_CHECK_LOGS/seven_primary_certificate.log",
+    "raw_sha256": "81db280813764d95ba3153da2b88fbe5bec5557d2d12da2ab74c8adc531a9b59",
+    "public_sha256": "81db280813764d95ba3153da2b88fbe5bec5557d2d12da2ab74c8adc531a9b59",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/initial-overflow/manifest.json",
+    "raw_source_role": "$INITIAL_TEX_BUILD/build_manifest.json",
+    "raw_sha256": "7774c3a1c3d59b13667d23973f2269b34de70a02e2670e3296313218b68ca544",
+    "public_sha256": "e60680a50d2633967fde1ab0d77d5449878de92458617fde36572cc3f8e0e5f5",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/initial-overflow/pass-1.log",
+    "raw_source_role": "$INITIAL_TEX_BUILD/pass-1.log",
+    "raw_sha256": "118a38d005fbe14dc041e4aba8a66763dd6c99c6ecef15eab55b34f7bfa11f2b",
+    "public_sha256": "c460c993be4f2015cfaf0640bae5758cc864706735181741772bbf1199f610b7",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/initial-overflow/pass-2.log",
+    "raw_source_role": "$INITIAL_TEX_BUILD/pass-2.log",
+    "raw_sha256": "5b321797b4120f9f9ee43d9715d079a138cd6dba8e8caa9d22b9541d1f19fd61",
+    "public_sha256": "7194bd8c411a56a211b654c9bc44f3b1b27dcb2df73eaa2007cca87bf979582c",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/initial-overflow/pass-3.log",
+    "raw_source_role": "$INITIAL_TEX_BUILD/pass-3.log",
+    "raw_sha256": "0d3a9f6e3319dc3ece823e5b419dfc94154f6d67964e94c16c03c56cd091d0d1",
+    "public_sha256": "5a77bbf31e6d106fa9dc314a562e1967f5b510dd26c5641b52c5b6c5c5ddb4c8",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/initial-overflow/latex.log",
+    "raw_source_role": "$INITIAL_TEX_BUILD/BGS_unified.log",
+    "raw_sha256": "ce0da939fa7cb0f5d4f7703dff0cc656fa5d1244b7f3a4f25a68d9ff768a360d",
+    "public_sha256": "541a6c7b43db35fe350d88f2a9422ccde1d4165de0a4d8f7874e12a028e69a2b",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/setup-failure-1/manifest.json",
+    "raw_source_role": "$TEX_SETUP_ATTEMPT_1/build_manifest.json",
+    "raw_sha256": "2966e05ab9ce3f0b6b751072778c66c23cef85b3d35b74f0cb3db43f1fa26f1b",
+    "public_sha256": "ba1e43cb78eeb0a68eb54c163f6e9dadab51272ebd9af286f3d286a9069d24d0",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/setup-failure-1/pass-1.log",
+    "raw_source_role": "$TEX_SETUP_ATTEMPT_1/pass-1.log",
+    "raw_sha256": "13b4e196819e65056fbcfd159fd8cf218e1c1b9d79c4354bfc209e6e444bae14",
+    "public_sha256": "f1639a639504063c70fe33ca174ac69f7ac858a6e6e67c99e89a2469d373fcdf",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/setup-failure-2/manifest.json",
+    "raw_source_role": "$TEX_SETUP_ATTEMPT_2/build_manifest.json",
+    "raw_sha256": "36071b357cf986d82f6df84d6b04fdc98b56bc753665576ce741a884d4fd3423",
+    "public_sha256": "7cc7bbdb7fd13ec732cd7b965811f19875944832436f46792efc76ef48efbbd3",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/setup-failure-2/pass-1.log",
+    "raw_source_role": "$TEX_SETUP_ATTEMPT_2/pass-1.log",
+    "raw_sha256": "c0f27e49f9fc5c565cd4429e2b92f7ad469b20840d8a988ebb0160265868a503",
+    "public_sha256": "d2bc7af370c726074ab1d1d4945ee077f8c699bd8a25382cc5aba376a263a213",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/setup-failure-2/latex.log",
+    "raw_source_role": "$TEX_SETUP_ATTEMPT_2/BGS_unified.log",
+    "raw_sha256": "f0c07dd02bb706b290e943053c6897f8657bb5b4225f8c6cb42a5c976558f7ed",
+    "public_sha256": "f0c07dd02bb706b290e943053c6897f8657bb5b4225f8c6cb42a5c976558f7ed",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/repaired/manifest.json",
+    "raw_source_role": "$REPAIRED_TEX_BUILD/build_manifest.json",
+    "raw_sha256": "844a1a6afe088cd0d2f9b09ea487f496cc4d091cf68aff7fac08fb4dc67f3f9a",
+    "public_sha256": "c74173fc7c2c7473761be33e9d5bd9a0c588667e800f6e865975a3d2da67a1f4",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/repaired/latex.log",
+    "raw_source_role": "$REPAIRED_TEX_BUILD/BGS_unified.log",
+    "raw_sha256": "81e0ed67f9acaa77dee58e77dd4bdd5bf7143ef599420171f49b59bb52e7a054",
+    "public_sha256": "835d2af3bab14153f1eb8546f16925715d7b943a5f5fb1c49c78550182e5a488",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/source-delta.json",
+    "raw_source_role": "$LIVE_SOURCE_ROOT/record/constructive_manuscript_typesetting_delta_20261006.json",
+    "raw_sha256": "5ac164257809eba66946eb3bfbdfbee6c424101f2dc02885144fd327b695bc96",
+    "public_sha256": "5ac164257809eba66946eb3bfbdfbee6c424101f2dc02885144fd327b695bc96",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript/visual-inspection.json",
+    "raw_source_role": "$REPAIRED_TEX_BUILD/visual_review.json",
+    "raw_sha256": "451b5c28c783e67b724138f728ed521449abdb0172b4beb05a45bdfc78fc4c11",
+    "public_sha256": "c1cc6f44f24fc6012e8ca374b8a7175d9c3bc48a75e36276e2ed80bb7c103b51",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  }
+]

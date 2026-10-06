@@ -1,0 +1,28 @@
+{
+  "base": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "scope": "Bounded exact controls after output-only portability change. No analytic proof or full workspace/manuscript/Lean/remote CI claim.",
+  "prior_receipt": "evidence/executions/20261006/heisenberg-wkb/receipt.json",
+  "integration_delta": "record/heisenberg_wkb_integration_delta.json",
+  "sources": {
+    "computations/verification/heisenberg_wkb/check_independent.py": "06e12ed6b3487097ba35ed96cbebc6d6e28bd7213621c3950d29d409df66b993",
+    "computations/verification/heisenberg_wkb/check_raw_gauss.py": "1e26bbcca1231fb07c16d65f1021485cb6b1fb1ed8b43f830cacad5386947306",
+    "computations/verification/heisenberg_wkb/cluster_checks.py": "9df0cfdafdfc5f753a2e18259c56dbae0b575a4a54e3963569ed40266beecfc8",
+    "computations/verification/heisenberg_wkb/exact_branch_modes.py": "5e211164c442d6ad9df92e645b3b5e2bf04b1c28550bafb8fb6d03769bc043db",
+    "computations/verification/heisenberg_wkb/exact_controls.py": "c2322a6251e14556ce2f11e47381aea0a6e0c8373198e470a610cb30b9f0768e",
+    "computations/verification/heisenberg_wkb_controls.py": "b1fb42afccca80ca6bef7bfe7519db6139d7f158c8ac92e1cb98b32927d96abd"
+  },
+  "runs": [
+    {
+      "command": "python3 computations/verification/heisenberg_wkb_controls.py",
+      "exit_code": 0,
+      "log": "wkb_normal.log",
+      "log_sha256": "969d4f25fc3378eb1f27d818627f1a297a721f578b1b58275602caf79ebefa9c"
+    },
+    {
+      "command": "python3 -O computations/verification/heisenberg_wkb_controls.py",
+      "exit_code": 0,
+      "log": "wkb_optimized.log",
+      "log_sha256": "5a4324d5f5edca682b53376731cda0e1982ffe0c9ad1018f30594da1fb95e8a2"
+    }
+  ]
+}

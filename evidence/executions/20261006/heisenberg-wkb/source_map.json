@@ -1,0 +1,67 @@
+[
+  {
+    "source_name": "factorial_wkb_reduction.md",
+    "original_sha256": "6487183ba4359319fa3def390025e75f33655be4876eca7cea2eced3b56eabcd",
+    "destination": "mathematics/factorial_wkb_reduction.md",
+    "destination_sha256": "ad6920eff1f8172ba5a088b2b8ee488a79e3a854406e2974835e3a736a684707"
+  },
+  {
+    "source_name": "exact_gaussian_reciprocity.md",
+    "original_sha256": "6cbbc685bfa5956736ee980180b1dc74f5afb5ea43a5e4a753a047bdb357f4f0",
+    "destination": "mathematics/exact_gaussian_reciprocity.md",
+    "destination_sha256": "b42702f5610b341b5dba39b3c74d6bd8d36a30b1fabed44b99039361d09b229f"
+  },
+  {
+    "source_name": "uniform_cluster_lemma.md",
+    "original_sha256": "c027ac2df67f3c25a46cdd4970f984a1d50fbd5f3aa74432ebee433ba52e4c67",
+    "destination": "mathematics/uniform_cluster_lemma.md",
+    "destination_sha256": "68aa5ffb9991488f4725a3121904325797b6ca6443fc52132b94598c96a5b09a"
+  },
+  {
+    "source_name": "rotated_local_first_loop_v2.md",
+    "original_sha256": "fe41ac7dc34660f2adedb82f741903be482e2b8eaef35d84feba6341bfcc32f1",
+    "destination": "mathematics/rotated_local_first_loop.md",
+    "destination_sha256": "d997baf315b3c19f8c9c19eee3d5b39071ca53735f09414105d9afa25cc418d2"
+  },
+  {
+    "source_name": "convex_box_poincare_check.md",
+    "original_sha256": "f3068ce4bb3bac06151224ffe1f59535aa2504a7411aecc5c6a8797b315a95a4",
+    "destination": "literature/convex_box_poincare_check.md",
+    "destination_sha256": "5adf2d333f24e4778e5c18e50f8764028f60e3b9529899dc04363c29e9e40a1f"
+  },
+  {
+    "source_name": "check_independent.py",
+    "original_sha256": "e0d4c3f4c0e603458fdfcc43ac05c555c23c036ee16a2a23759b965d4a97137e",
+    "destination": "computations/verification/heisenberg_wkb/check_independent.py",
+    "destination_sha256": "06e12ed6b3487097ba35ed96cbebc6d6e28bd7213621c3950d29d409df66b993",
+    "adaptation": "AST: assertions become explicit RuntimeError; executable module body moved to main; mathematical expressions unchanged"
+  },
+  {
+    "source_name": "check_raw_gauss.py",
+    "original_sha256": "75f8f26345b4ae3491a20731644b2b2dec9f70c51095f488d0a540e568542dde",
+    "destination": "computations/verification/heisenberg_wkb/check_raw_gauss.py",
+    "destination_sha256": "1e26bbcca1231fb07c16d65f1021485cb6b1fb1ed8b43f830cacad5386947306",
+    "adaptation": "AST: assertions become explicit RuntimeError; executable module body moved to main; mathematical expressions unchanged"
+  },
+  {
+    "source_name": "cluster_checks.py",
+    "original_sha256": "b2b75d6f4f604777bff81686406ed8763a810f18577d5e147bb34e70b36a5777",
+    "destination": "computations/verification/heisenberg_wkb/cluster_checks.py",
+    "destination_sha256": "9df0cfdafdfc5f753a2e18259c56dbae0b575a4a54e3963569ed40266beecfc8",
+    "adaptation": "AST: assertions become explicit RuntimeError; executable module body moved to main; mathematical expressions unchanged"
+  },
+  {
+    "source_name": "exact_controls.py",
+    "original_sha256": "c30ac03af23782e7788f4bcb9b6d8701591242c2fd010bdebaa77a3fc56aeb8b",
+    "destination": "computations/verification/heisenberg_wkb/exact_controls.py",
+    "destination_sha256": "e88493bf633cf8b2030c959d84f10b24bb36104cfaf74cc7539b5c3b41da7496",
+    "adaptation": "Guarded executable suite factored into named main; exact guards retained; reject inputs outside the documented int64-safe fixture before arithmetic"
+  },
+  {
+    "source_name": "exact_branch_modes.py",
+    "original_sha256": "1a94a858fb5712f9a2048ecf2dad88784f16a4bc7bc5aaabed61728615ed2177",
+    "destination": "computations/verification/heisenberg_wkb/exact_branch_modes.py",
+    "destination_sha256": "b3aacc32ba0f05cef017b4efbc556cc8b230884c6be1854b04500eae3996fde4",
+    "adaptation": "Guarded executable suite factored into named main; exact guards retained; reject inputs outside the documented int64-safe fixture before arithmetic"
+  }
+]

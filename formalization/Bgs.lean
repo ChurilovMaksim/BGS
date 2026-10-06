@@ -17,3 +17,5 @@ import Bgs.TorusLevelSets
 import Bgs.TorusScaleLaw
 
 import Bgs.FourCutKernel
+
+import Bgs.SevenPrimary

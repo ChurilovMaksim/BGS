@@ -6,6 +6,10 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F1 --> F24[BGS-FM-024 actual common commutant for odd 49-divisible N, 5 not dividing N]
+  F1 --> T17[BGS-TRACE-017 fixed-order complete WKB reduction]
+  T1 --> T17
+  T2 --> T17
   F21 --> T15[BGS-TRACE-015 once-counted three-block cancellation]
   F21 --> T16[BGS-TRACE-016 once-counted four-block cancellation]
   FK2[BGS-FORMAL-002 bounded four-cut predicate only] --> T16
@@ -215,3 +219,9 @@ TRACE-016 additionally uses the reviewed universal compression/lifting proof in 
 
 FM-007 feeds only the new normalized short-leg deletion sub-result of LOOP-001.
 The abstract testing reduction and external characterization do not depend on it.
+
+FM-024 proof route: actual matrix formula → reduction at 5 with unit gauges → exact two-row system → Casoratian/dictionary/norm and complete Rabin factors → minimal tails and actual N=49 residue → characteristic-zero rank lift. The separate algebraic-entry U corollary uses FM-024 plus EXT-POPESCU-2023. No spectral-simplicity or TRACE-005 consequence is asserted.
+
+FORMAL-003 certifies only the finite executable predicates used as supporting evidence for FM-024. It is a separate node without a claimed abstract/formal implication to the complete commutant theorem.
+
+TRACE-017 supporting (not prerequisite) route: exact Gaussian reciprocity plus the actual complex-strip/local-box inputs → finite-band global rotated-box representation and summed tail. Signed box evaluation and unrestricted-band TRACE-005 comparison remain open.

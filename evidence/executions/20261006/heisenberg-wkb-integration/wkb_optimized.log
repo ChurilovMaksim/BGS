@@ -1,0 +1,541 @@
+{
+  "passed": true,
+  "arithmetic": "exact rational SymPy",
+  "counts": {
+    "trace_bounds": 50,
+    "inverse_telescope": 12,
+    "partition_products": 9336,
+    "zero_blocks": 5604,
+    "laurent_distinct": 120,
+    "defective_trace_powers": 17
+  }
+}
+{
+  "passed": true,
+  "counts": {
+    "raw_midpoint_phase": 912,
+    "initial_gauss_sum": 32,
+    "modular_phase_closure": 5456
+  },
+  "arithmetic": "exact rational/cyclotomic"
+}
+{
+  "arithmetic": "exact rational/SymPy; no fixed-tau spectrum simulation",
+  "matrix_dimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "homogeneous_one_loop_density_limit": "13/84",
+  "factorial_bound_checks": 23075,
+  "rows": [
+    {
+      "m": 1,
+      "one_loop_density": "1/3",
+      "quartic_second_cumulant_per_site": "96"
+    },
+    {
+      "m": 2,
+      "one_loop_density": "17/96",
+      "quartic_second_cumulant_per_site": "33"
+    },
+    {
+      "m": 3,
+      "one_loop_density": "163/1029",
+      "quartic_second_cumulant_per_site": "63648/2401"
+    },
+    {
+      "m": 4,
+      "one_loop_density": "179/1152",
+      "quartic_second_cumulant_per_site": "685/27"
+    },
+    {
+      "m": 5,
+      "one_loop_density": "781/5043",
+      "quartic_second_cumulant_per_site": "71077728/2825761"
+    },
+    {
+      "m": 6,
+      "one_loop_density": "25483/164640",
+      "quartic_second_cumulant_per_site": "1507347/60025"
+    },
+    {
+      "m": 7,
+      "one_loop_density": "26521/171363",
+      "quartic_second_cumulant_per_site": "81909912480/3262808641"
+    },
+    {
+      "m": 8,
+      "one_loop_density": "206099/1331712",
+      "quartic_second_cumulant_per_site": "905729807/36081072"
+    },
+    {
+      "m": 9,
+      "one_loop_density": "6306463/40749429",
+      "quartic_second_cumulant_per_site": "94518954421344/3765342321601"
+    },
+    {
+      "m": 10,
+      "one_loop_density": "21003857/135717216",
+      "quartic_second_cumulant_per_site": "50169638777853/1998607065841"
+    },
+    {
+      "m": 11,
+      "one_loop_density": "30604861/197754483",
+      "quartic_second_cumulant_per_site": "109074582063122592/4345203949621921"
+    },
+    {
+      "m": 12,
+      "one_loop_density": "332972641/2151515520",
+      "quartic_second_cumulant_per_site": "16082138561329/640664172225"
+    },
+    {
+      "m": 13,
+      "one_loop_density": "1039664341/6717831123",
+      "quartic_second_cumulant_per_site": "125871964738553565024/5014361666349715681"
+    },
+    {
+      "m": 14,
+      "one_loop_density": "24238431377/156617556576",
+      "quartic_second_cumulant_per_site": "66811585440107465079/2661573245207960161"
+    },
+    {
+      "m": 15,
+      "one_loop_density": "247225879063/1597459526229",
+      "quartic_second_cumulant_per_site": "145256137901740070670240/5786569020271612560001"
+    },
+    {
+      "m": 16,
+      "one_loop_density": "274464384659/1773462177792",
+      "quartic_second_cumulant_per_site": "803130329894765365091/31994304362576735616"
+    },
+    {
+      "m": 17,
+      "one_loop_density": "1199771748241/7752371296323",
+      "quartic_second_cumulant_per_site": "167625457253832578975232096/6677695635116972385924481"
+    },
+    {
+      "m": 18,
+      "one_loop_density": "39159580325323/253031134409760",
+      "quartic_second_cumulant_per_site": "3558956946169590158900769/141778174117528590702025"
+    }
+  ]
+}
+{'m': 1, 'N': 3, 'frequency': [1], 'det': 4, 'gcd': 1, 'conductor': 96, 'quotient_count': 4, 'cyclotomic_remainder_zero': True}
+{'m': 1, 'N': 3, 'frequency': [3], 'det': 4, 'gcd': 1, 'conductor': 96, 'quotient_count': 4, 'cyclotomic_remainder_zero': True}
+{'m': 2, 'N': 3, 'frequency': [1, 2], 'det': 32, 'gcd': 1, 'conductor': 768, 'quotient_count': 32, 'cyclotomic_remainder_zero': True}
+{'m': 2, 'N': 3, 'frequency': [3, -5], 'det': 32, 'gcd': 1, 'conductor': 768, 'quotient_count': 32, 'cyclotomic_remainder_zero': True}
+{'m': 3, 'N': 7, 'frequency': [1, 2, 3], 'det': 196, 'gcd': 7, 'conductor': 10976, 'quotient_count': 196, 'cyclotomic_remainder_zero': True}
+{'m': 3, 'N': 7, 'frequency': [3, -5, 7], 'det': 196, 'gcd': 7, 'conductor': 10976, 'quotient_count': 196, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 3, 'frequency': [1, 2, 3, 4], 'det': 1152, 'gcd': 3, 'conductor': 27648, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 3, 'frequency': [3, -5, 7, -9], 'det': 1152, 'gcd': 3, 'conductor': 27648, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 9, 'frequency': [1, 2, 3, 4], 'det': 1152, 'gcd': 9, 'conductor': 82944, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 9, 'frequency': [3, -5, 7, -9], 'det': 1152, 'gcd': 9, 'conductor': 82944, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{
+  "results": [
+    {
+      "m": 1,
+      "N": 3,
+      "frequency": [
+        1
+      ],
+      "det": 4,
+      "gcd": 1,
+      "conductor": 96,
+      "quotient_count": 4,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 1,
+      "N": 3,
+      "frequency": [
+        3
+      ],
+      "det": 4,
+      "gcd": 1,
+      "conductor": 96,
+      "quotient_count": 4,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 2,
+      "N": 3,
+      "frequency": [
+        1,
+        2
+      ],
+      "det": 32,
+      "gcd": 1,
+      "conductor": 768,
+      "quotient_count": 32,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 2,
+      "N": 3,
+      "frequency": [
+        3,
+        -5
+      ],
+      "det": 32,
+      "gcd": 1,
+      "conductor": 768,
+      "quotient_count": 32,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 3,
+      "N": 7,
+      "frequency": [
+        1,
+        2,
+        3
+      ],
+      "det": 196,
+      "gcd": 7,
+      "conductor": 10976,
+      "quotient_count": 196,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 3,
+      "N": 7,
+      "frequency": [
+        3,
+        -5,
+        7
+      ],
+      "det": 196,
+      "gcd": 7,
+      "conductor": 10976,
+      "quotient_count": 196,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 4,
+      "N": 3,
+      "frequency": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "det": 1152,
+      "gcd": 3,
+      "conductor": 27648,
+      "quotient_count": 1152,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 4,
+      "N": 3,
+      "frequency": [
+        3,
+        -5,
+        7,
+        -9
+      ],
+      "det": 1152,
+      "gcd": 3,
+      "conductor": 27648,
+      "quotient_count": 1152,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 4,
+      "N": 9,
+      "frequency": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "det": 1152,
+      "gcd": 9,
+      "conductor": 82944,
+      "quotient_count": 1152,
+      "cyclotomic_remainder_zero": true
+    },
+    {
+      "m": 4,
+      "N": 9,
+      "frequency": [
+        3,
+        -5,
+        7,
+        -9
+      ],
+      "det": 1152,
+      "gcd": 9,
+      "conductor": 82944,
+      "quotient_count": 1152,
+      "cyclotomic_remainder_zero": true
+    }
+  ],
+  "seconds": 0.3152151107788086,
+  "arithmetic": "integer histogram plus exact cyclotomic polynomial division; no floating point"
+}
+
+{'m': 1, 'N': 3, 'r': [0], 'ell': [1], 'a': [1], 'det': 4, 'gcd': 1, 'extended_lattice_count': 12, 'quotient_count': 4, 'cyclotomic_remainder_zero': True}
+{'m': 1, 'N': 3, 'r': [0], 'ell': [3], 'a': [3], 'det': 4, 'gcd': 1, 'extended_lattice_count': 12, 'quotient_count': 4, 'cyclotomic_remainder_zero': True}
+{'m': 2, 'N': 3, 'r': [0, 1], 'ell': [1, -2], 'a': [-8, 1], 'det': 32, 'gcd': 1, 'extended_lattice_count': 144, 'quotient_count': 32, 'cyclotomic_remainder_zero': True}
+{'m': 2, 'N': 3, 'r': [0, 1], 'ell': [3, 1], 'a': [-6, 4], 'det': 32, 'gcd': 1, 'extended_lattice_count': 144, 'quotient_count': 32, 'cyclotomic_remainder_zero': True}
+{'m': 3, 'N': 7, 'r': [0, 1, 2], 'ell': [1, -2, 3], 'a': [-41, 5, -4], 'det': 196, 'gcd': 7, 'extended_lattice_count': 21952, 'quotient_count': 196, 'cyclotomic_remainder_zero': True}
+{'m': 3, 'N': 7, 'r': [0, 1, 2], 'ell': [3, 1, -1], 'a': [-39, 8, -8], 'det': 196, 'gcd': 7, 'extended_lattice_count': 21952, 'quotient_count': 196, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 3, 'r': [0, 1, 2, 3], 'ell': [1, -2, 3, -4], 'a': [-26, 1, 0, -13], 'det': 1152, 'gcd': 3, 'extended_lattice_count': 20736, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 3, 'r': [0, 1, 2, 3], 'ell': [3, 1, -1, -3], 'a': [-24, 4, -4, -12], 'det': 1152, 'gcd': 3, 'extended_lattice_count': 20736, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 9, 'r': [0, 1, 2, 3], 'ell': [1, -2, 3, -4], 'a': [-80, 7, -6, -31], 'det': 1152, 'gcd': 9, 'extended_lattice_count': 1679616, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+{'m': 4, 'N': 9, 'r': [0, 1, 2, 3], 'ell': [3, 1, -1, -3], 'a': [-78, 10, -10, -30], 'det': 1152, 'gcd': 9, 'extended_lattice_count': 1679616, 'quotient_count': 1152, 'cyclotomic_remainder_zero': True}
+[
+  {
+    "m": 1,
+    "N": 3,
+    "r": [
+      0
+    ],
+    "ell": [
+      1
+    ],
+    "a": [
+      1
+    ],
+    "det": 4,
+    "gcd": 1,
+    "extended_lattice_count": 12,
+    "quotient_count": 4,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 1,
+    "N": 3,
+    "r": [
+      0
+    ],
+    "ell": [
+      3
+    ],
+    "a": [
+      3
+    ],
+    "det": 4,
+    "gcd": 1,
+    "extended_lattice_count": 12,
+    "quotient_count": 4,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 2,
+    "N": 3,
+    "r": [
+      0,
+      1
+    ],
+    "ell": [
+      1,
+      -2
+    ],
+    "a": [
+      -8,
+      1
+    ],
+    "det": 32,
+    "gcd": 1,
+    "extended_lattice_count": 144,
+    "quotient_count": 32,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 2,
+    "N": 3,
+    "r": [
+      0,
+      1
+    ],
+    "ell": [
+      3,
+      1
+    ],
+    "a": [
+      -6,
+      4
+    ],
+    "det": 32,
+    "gcd": 1,
+    "extended_lattice_count": 144,
+    "quotient_count": 32,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 3,
+    "N": 7,
+    "r": [
+      0,
+      1,
+      2
+    ],
+    "ell": [
+      1,
+      -2,
+      3
+    ],
+    "a": [
+      -41,
+      5,
+      -4
+    ],
+    "det": 196,
+    "gcd": 7,
+    "extended_lattice_count": 21952,
+    "quotient_count": 196,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 3,
+    "N": 7,
+    "r": [
+      0,
+      1,
+      2
+    ],
+    "ell": [
+      3,
+      1,
+      -1
+    ],
+    "a": [
+      -39,
+      8,
+      -8
+    ],
+    "det": 196,
+    "gcd": 7,
+    "extended_lattice_count": 21952,
+    "quotient_count": 196,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 4,
+    "N": 3,
+    "r": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ell": [
+      1,
+      -2,
+      3,
+      -4
+    ],
+    "a": [
+      -26,
+      1,
+      0,
+      -13
+    ],
+    "det": 1152,
+    "gcd": 3,
+    "extended_lattice_count": 20736,
+    "quotient_count": 1152,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 4,
+    "N": 3,
+    "r": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ell": [
+      3,
+      1,
+      -1,
+      -3
+    ],
+    "a": [
+      -24,
+      4,
+      -4,
+      -12
+    ],
+    "det": 1152,
+    "gcd": 3,
+    "extended_lattice_count": 20736,
+    "quotient_count": 1152,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 4,
+    "N": 9,
+    "r": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ell": [
+      1,
+      -2,
+      3,
+      -4
+    ],
+    "a": [
+      -80,
+      7,
+      -6,
+      -31
+    ],
+    "det": 1152,
+    "gcd": 9,
+    "extended_lattice_count": 1679616,
+    "quotient_count": 1152,
+    "cyclotomic_remainder_zero": true
+  },
+  {
+    "m": 4,
+    "N": 9,
+    "r": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "ell": [
+      3,
+      1,
+      -1,
+      -3
+    ],
+    "a": [
+      -78,
+      10,
+      -10,
+      -30
+    ],
+    "det": 1152,
+    "gcd": 9,
+    "extended_lattice_count": 1679616,
+    "quotient_count": 1152,
+    "cyclotomic_remainder_zero": true
+  }
+]
+
+heisenberg-wkb-controls: bounded exact fixtures passed; analytic claims unformalized

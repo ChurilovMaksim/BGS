@@ -254,6 +254,8 @@ def main() -> None:
         cmd=[sys.executable,str(p)]
         if p.stem=='pell_floquet_regression':
             cmd+=['--cpp',str(args.build/'pell_pair_orthogonality')]
+        elif p.stem in {'actual_algebra_check', 'actual_factor_check', 'actual_field_check', 'actual_casoratian_check'}:
+            cmd+=['--output',str(args.logs/'actual_commutant')]
         elif p.stem=='pell_pair_obstruction':
             cmd+=['--output',str(args.logs/'pell_pair_obstruction.json')]
         elif p.stem=='resonance_nondegeneracy_certificate':

@@ -1,0 +1,151 @@
+{
+  "prior_public_receipt": "../next-proof-validation/fresh-cpp-build.json",
+  "prior_raw_receipt_sha256": "44231e02bedb4c66ddf9c53cde6305c43f4e61e5b118699a0ea3c7dd8d85d864",
+  "prior_public_receipt_sha256": "62ecd04a097a10114c35521e0ec4b6b788bc7723a344ded6f04b71695e7f8af4",
+  "unique_sources": 22,
+  "unique_binaries": 22,
+  "workspace_executions": 23,
+  "all_source_binary_hashes_matched": true,
+  "new_compilation": false,
+  "verification": "Independently matched every current source and actually executed binary to the previous 22-build receipt. The 23 checks include repeated use of one built source.",
+  "matches": [
+    {
+      "check": "cpp_cat_map_order",
+      "source": "computations/cpp/cat_map_order.cpp",
+      "source_sha256": "e96056c00e36439218fd17930389391e8616f04b81f426d78021e553e0e7c48b",
+      "binary_sha256": "4a3578aabc499ab3a90ccac309646e0de2d9724295b32ca0b25b005760228cd7"
+    },
+    {
+      "check": "cpp_cayley_direct_energy_verifier",
+      "source": "computations/cpp/cayley_direct_energy_verifier.cpp",
+      "source_sha256": "ee3a665af1ab0f8d86344e6971b2494b73be8cbb4bd83bb5973141a0a80b65ab",
+      "binary_sha256": "f4d1b32c4538fa884f68c577a967dd04b9e37479c21bae10b2f2b3c476c9b23f"
+    },
+    {
+      "check": "cpp_cayley_energy_verifier",
+      "source": "computations/cpp/cayley_energy_verifier.cpp",
+      "source_sha256": "a9dc7ca1ebf5e1a7e2edadbbeb9e2bf3a84562cb8217bd0be871eed750b7623a",
+      "binary_sha256": "d2c1819ccb1824e32b09a144f5ca0ef4dc196a1b818dba13f01db2a1e8b6ebe2"
+    },
+    {
+      "check": "cpp_cayley_fibonacci_verifier",
+      "source": "computations/cpp/cayley_fibonacci_verifier.cpp",
+      "source_sha256": "c28243ae41f643f614457b5e9b96a27c0a9a5014dd2cce2eebc3428da301ddd2",
+      "binary_sha256": "6cc08f667154d4a57e169ae310076d8138f93d51a3c317315f23c9ef21fa0acf"
+    },
+    {
+      "check": "cpp_cayley_fourier_hybrid",
+      "source": "computations/cpp/cayley_fourier_hybrid.cpp",
+      "source_sha256": "18fd11442666a8227038247f1ca87bb38ffe6b4d5e7240bdbe92543d05ab8b83",
+      "binary_sha256": "e65ea57e7eee4198fbd4ef9d80ddcaeef0e8f0f20f4e9987ed6c04e034047c47"
+    },
+    {
+      "check": "cpp_cayley_trace_intercept_rigidity",
+      "source": "computations/cpp/cayley_trace_intercept_rigidity.cpp",
+      "source_sha256": "5109a8f3c65b7cbb36a3d81cc5ee4f9e7dea157c050b1db8de6e55cc6217592b",
+      "binary_sha256": "7be724c5213833269e1ed0fe5ce0036f3e90ea8d8a89156f7f21e0c9494e0c4d"
+    },
+    {
+      "check": "cpp_coherent_aperture_bounds",
+      "source": "computations/cpp/coherent_aperture_bounds.cpp",
+      "source_sha256": "5e1f2041f7d53dd790a5e0753fb031cfdc20f7cbed80cb851e89ba008d480d8f",
+      "binary_sha256": "d01e511248fffbaf2e2e5f6a2f9b9dd558622b4b95f799b960458a505d8101d2"
+    },
+    {
+      "check": "cpp_extremal_resonance_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "source_sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "binary_sha256": "5fe40645e279666e160a436f67f10c994acd705bc3d58eb212d8f3d8af410747"
+    },
+    {
+      "check": "cpp_fixed_strength_locality_exact",
+      "source": "computations/cpp/fixed_strength_locality_exact.cpp",
+      "source_sha256": "52517e97704f33e41b7a3753acc905ee779dc906e75effcef826c02fc9867c7a",
+      "binary_sha256": "f4a30ae1e4c313799d62686cff183fc09fa2076c89710248096ccca504b31f3c"
+    },
+    {
+      "check": "cpp_four_cut_rank_two_kernel",
+      "source": "computations/cpp/four_cut_rank_two_kernel.cpp",
+      "source_sha256": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+      "binary_sha256": "d939960721a4834ddb480f0da9e396985889ec4b6225b6c92bccd818eb8ad2a6"
+    },
+    {
+      "check": "cpp_fourth_moment_pair_key_verifier",
+      "source": "computations/cpp/fourth_moment_pair_key_verifier.cpp",
+      "source_sha256": "e7a2d8f064ae6d027f69756c81feaef8adf5beb73e536918ac058636b139527e",
+      "binary_sha256": "dc53a26ff264e335d696e4c0215377c08450ec7b8c4255382cfac6d680126907"
+    },
+    {
+      "check": "cpp_general_hyperbolic_periods",
+      "source": "computations/cpp/general_hyperbolic_periods.cpp",
+      "source_sha256": "2e06f8b25ec62c930a7b6aa758b320de588e11e84432c1ff4c55ff30108270e9",
+      "binary_sha256": "6017f0e3cd01808316227cdbc7b1af4c557baf96a7cd50b37913ce380252c814"
+    },
+    {
+      "check": "cpp_magnetic_word_verifier",
+      "source": "computations/cpp/magnetic_word_verifier.cpp",
+      "source_sha256": "99f9331927db49a7b04c072a253f9ed1b53693b1238955d09e733f0adee70a8f",
+      "binary_sha256": "6c73591418b5ed7e1b5cacaa3f18ba43cab449d32f42073ff9a0b9713abbca63"
+    },
+    {
+      "check": "cpp_pell_coboundary_pairs",
+      "source": "computations/cpp/pell_coboundary_pairs.cpp",
+      "source_sha256": "5ba6fa536a427fc85905d3a71b3d5f6b21f7e9ca3f1f229d18d9735cb18d38e4",
+      "binary_sha256": "3e290dd28db73169eac4dbde3411f89abd7c1b34670b4ff1d601c248d430a278"
+    },
+    {
+      "check": "cpp_pell_floquet_pair_verifier",
+      "source": "computations/cpp/pell_floquet_pair_verifier.cpp",
+      "source_sha256": "7878b211c4996fe8cfdb6a29c39e62fc17a417fef50bf9e30df5f893bd4a15cc",
+      "binary_sha256": "f9f887cff16304fd633f6f2fdb270e8c5d702978c03c4fb11d822782081eea7a"
+    },
+    {
+      "check": "cpp_pell_minimal_relation_verifier",
+      "source": "computations/cpp/pell_minimal_relation_verifier.cpp",
+      "source_sha256": "7baef19a7775ee16634dafca867492ff151a2bacf005428f64ece81c041651cf",
+      "binary_sha256": "178f07db2c0d84020fe1c08ffcf5b42cdf6b477ef1bcdfe8ed908c3896a9717a"
+    },
+    {
+      "check": "cpp_pell_pair_orthogonality",
+      "source": "computations/cpp/pell_pair_orthogonality.cpp",
+      "source_sha256": "961239c85e184da5175a7097b1b3bf7cf60d2a504e89ecdd48fb6fb9ee4a1d39",
+      "binary_sha256": "a5ee196b3712bae9038829d44dbea343c9dabcfee1929805a67a07a0034f6c5f"
+    },
+    {
+      "check": "cpp_pell_sharp_orbit_verifier",
+      "source": "computations/cpp/pell_sharp_orbit_verifier.cpp",
+      "source_sha256": "bbcbbf308c80b8e32e0d304cd125160b70a437f24ce8a1195a5343c2c4d36661",
+      "binary_sha256": "7fd1f989d7454a48e724b5b32bb342e5d812f13cf5a8cb1a8afd753f6a074877"
+    },
+    {
+      "check": "cpp_pure_loss_discrimination_bounds",
+      "source": "computations/cpp/pure_loss_discrimination_bounds.cpp",
+      "source_sha256": "fb7f495a8c232df2195e6e5b1ecfaead36c99d40965271c6b32c01fb344f546f",
+      "binary_sha256": "e4b33baeecc7ecf14ceba2715b71382791bd71ad1efa67e2862ecb8a6773edb3"
+    },
+    {
+      "check": "cpp_rare_phase_certificate",
+      "source": "computations/cpp/rare_phase_certificate.cpp",
+      "source_sha256": "66c21fdc769ab1620e68a06a85109c11f77dcfc7ab912ce45f60bc25867ee5fd",
+      "binary_sha256": "11d8f4e12b769e15ad585f185b9416d1aa4f4ffca4e7d5099b61cebabcdb09ea"
+    },
+    {
+      "check": "cpp_return_word_certificate",
+      "source": "computations/cpp/return_word_certificate.cpp",
+      "source_sha256": "707012e699e4ab6717ee67f6a86e10623007110b9b66efded31ac98e7cfe053a",
+      "binary_sha256": "c8775dd770a8841b28d78545f74cfc5c49fd27de63d8c43defa19f4e1bae6941"
+    },
+    {
+      "check": "cpp_spectral_lattice_clustering",
+      "source": "computations/cpp/spectral_lattice_clustering.cpp",
+      "source_sha256": "83b052be5c9ce134a178d7a33251d63e18b5900da706a56343c5295694295f42",
+      "binary_sha256": "c3cc6939489783bfcbaa5aefb963f5064e2bf869f13b8376c62e10eb431951ca"
+    },
+    {
+      "check": "extremal_independent_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "source_sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "binary_sha256": "5fe40645e279666e160a436f67f10c994acd705bc3d58eb212d8f3d8af410747"
+    }
+  ]
+}

@@ -212,12 +212,13 @@
       "pinned_version": "Published 1990 SMF PDF",
       "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
       "checked_on": "2026-09-23",
-      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project.",
+      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf.",
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
         "record/nonlinear_pressure_review_20260923.md",
         "mathematics/frozen_operator_transfer_coercivity.md",
-        "literature/frozen_operator_transfer_sources_20261006.md"
+        "literature/frozen_operator_transfer_sources_20261006.md",
+        "mathematics/polar_wkb_quantization_stability.md"
       ],
       "additional_checks": [
         {
@@ -239,14 +240,15 @@
       "pinned_version": "v2, 17 September 2023",
       "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
       "checked_on": "2026-10-04",
-      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation.",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input.",
       "project_sources": [
         "mathematics/frozen_algebraic_spectral_simplicity.md",
         "mathematics/frozen_common_antireversor_certificate.md",
         "record/frozen_algebraic_review_20260924.md",
         "mathematics/arithmetic_word_expansion_obstruction.md",
         "literature/expansion_wavepacket_sources_20261004.md",
-        "mathematics/dyson_relaxation_obstruction.md"
+        "mathematics/dyson_relaxation_obstruction.md",
+        "mathematics/actual_seven_primary_commutant.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-POPESCU-2023"
     },
@@ -654,6 +656,27 @@
       ],
       "dependency_role": "attribution_not_arithmetic_proof_input",
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-COSY-2024"
+    },
+    {
+      "id": "EXT-KM-2017-BOX",
+      "authors": [
+        "A. V. Kolesnikov",
+        "E. Milman"
+      ],
+      "title": "Brascamp-Lieb type inequalities on weighted Riemannian manifolds with boundary",
+      "identifier": "arXiv:1310.2526v7; DOI:10.1007/s12220-016-9736-5",
+      "pinned_version": "arXiv v7, 23 November 2017",
+      "locator": "Theorem 3.1(1), printed p. 13; equation (3.2), printed p. 14",
+      "checked_on": "2026-10-06",
+      "mapping": "Euclidean metric and generalized dimension infinity give inverse-Hessian variance; Hess V>=lambda I on a convex box gives constant lambda^-1 by smooth convex exhaustion. No Neumann condition on tested f. Real tilted curvature and raw moments are established separately in the local proof. The separate finite-band contour theorem reuses this local-box inequality after its own explicit radius-sqrt(2) curvature checks; the inequality is not a global-contour theorem or a premise of the elementary TRACE-017 perturbation reduction.",
+      "project_sources": [
+        "mathematics/rotated_local_first_loop.md",
+        "literature/convex_box_poincare_check.md",
+        "mathematics/global_rotated_box_trace.md"
+      ],
+      "source_sha256": "f86893b5051a150a6827fd0523aa3733c5970a3cccc44b17a794f58cc4601727",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KM-2017-BOX",
+      "dependency_role": "external inequality for the supporting conditioned local-box theorem only"
     }
   ]
 }

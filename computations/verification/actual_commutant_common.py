@@ -1,0 +1,16 @@
+"""Shared fail-closed source identity checks; no import-time execution."""
+import hashlib
+import json
+
+def require(condition, message="exact certificate failed"):
+    if not condition:
+        raise RuntimeError(str(message))
+
+EXPECTED = {'bounded_factor_certificates_fast.json': '7fa1b44d6ec4d79caf5c96eeea679c7a7ef8c744881fe83f229858cb3d293100', 'casoratian_results.json': '9ecb26e1677fc6cf932b43e0189762dae782ffb3943e50a9db021d0eb4eed034', 'bounded_boundary_polynomials.json': '413544b41f643668ea590e402c91531bfce59d3cbaa093cc13bf009fb3f6d8af', 'bounded_boundary_norm_input.json': 'c76144bf18d81d4bda4d9fea6fe4d478c61ef3a663bbea9aacc9c3313fcee474', 'bounded_boundary_norm.json': 'cc12e67c13c17f14702f0e95d0318a48ea803a520573f1ea133bd280d02d61c8'}
+
+def verify_data(data):
+    manifest = json.loads((data / 'identity.json').read_text())
+    require(manifest == EXPECTED, 'source identity manifest changed')
+    for name, expected in EXPECTED.items():
+        require(hashlib.sha256((data / name).read_bytes()).hexdigest() == expected,
+                'source data identity mismatch: ' + name)

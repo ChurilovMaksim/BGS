@@ -1,0 +1,30 @@
+{
+  "scope": "Path-role placeholders are not literal executable paths. Raw hashes remain original; curation is disclosed separately.",
+  "roles": {
+    "$INITIAL_SOURCE_ROOT": "Frozen 1,786-file source archive used for the first complete workspace run.",
+    "$INITIAL_CHECK_LOGS": "Raw logs and generated outputs of that first workspace run.",
+    "$INITIAL_VALIDATION": "Initial validation receipt directory.",
+    "$INITIAL_TEX_BUILD": "Original rejected manuscript build.",
+    "$REPAIRED_TEX_BUILD": "Accepted warning-free three-pass manuscript build after the declared two-file formatting delta.",
+    "$SUPPLEMENT_REPLAY": "Isolated supplement execution output directory.",
+    "$PRIOR_CPP_BUILD": "Previous C++ compilation directory; the current batch reused these binaries.",
+    "$LIVE_SOURCE_ROOT": "Integration working tree.",
+    "$TEX_SETUP_ATTEMPT_1": "First post-repair setup attempt, failed for missing pdflatex format.",
+    "$TEX_SETUP_ATTEMPT_2": "Second post-repair setup attempt, failed at kpathsea database lookup.",
+    "$BOOST_INCLUDE": "Boost 1.90 header root.",
+    "$PYTHON": "Python 3.12.14 executable.",
+    "$PDFLATEX": "pdfTeX 1.40.26 executable.",
+    "$TEXLIVE_ROOT": "System TeX Live installation.",
+    "$TEXMF_ROOT": "System TeX package root.",
+    "$TEXMF_VAR": "System-generated TeX files.",
+    "$TEXMF_CONFIG": "System TeX configuration.",
+    "$LOCAL_TEXLIVE": "Local TeX support root.",
+    "$FOUR_CUT_TEMP": "Ephemeral bounded four-cut kernel execution directory.",
+    "$ELAN_BIN": "Lean executable directory used by the build driver.",
+    "$ELAN_HOME": "Lean toolchain installation home.",
+    "$LOG": "Lean build output log.",
+    "$LOCAL_TEXMF_VAR": "Local generated TeX format and font-map root.",
+    "$LOCAL_TEXMF_CONFIG": "Local TeX configuration root.",
+    "$PANDOC_BIN": "Pandoc 2.17.1.1 executable directory."
+  }
+}

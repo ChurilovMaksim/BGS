@@ -1,0 +1,12 @@
+{
+  "roles": {
+    "$FINAL_SOURCE_ROOT": "Final frozen byte snapshot.",
+    "$FINAL_CHECK_LOGS": "Raw final-run logs and generated check outputs.",
+    "$FINAL_VALIDATION": "Final-run receipt and driver output directory.",
+    "$PRIOR_CPP_BUILD": "Previous 22-binary compilation directory.",
+    "$LIVE_SOURCE_ROOT": "Canonical integration working tree.",
+    "$BOOST_INCLUDE": "Boost 1.90 include directory.",
+    "$PYTHON": "Python 3.12.14 interpreter.",
+    "$FOUR_CUT_TEMP": "Ephemeral bounded four-cut execution directory."
+  }
+}

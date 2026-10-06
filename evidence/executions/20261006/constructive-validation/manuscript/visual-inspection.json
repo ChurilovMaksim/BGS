@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Visual inspection of PDF pages 258-263, including both repaired paragraphs and all new WKB/contour/commutant sections. Not a full-page-by-page review of all 266 pages.",
+  "observations": "Filename paragraphs now wrap within margins. No clipped text, overlap, broken glyphs or equation/page-footer collisions observed. Headings, equations, bibliography citation numbers and continued sections legible.",
+  "pdf_sha256": "bcd08c089fb0759dd3a1b3efae10252100ec96ec654ae3cfb6e412a6699980d2",
+  "manifest_sha256": "844a1a6afe088cd0d2f9b09ea487f496cc4d091cf68aff7fac08fb4dc67f3f9a",
+  "page_count": 266,
+  "render_command": "pdftoppm -f 257 -l 263 -scale-to 1400 -png BGS_unified.pdf visual/page",
+  "inspected_pages": [
+    258,
+    259,
+    260,
+    261,
+    262,
+    263
+  ],
+  "page_image_sha256": {
+    "visual/page-258.png": "48167f90233a409780c7100ad43b92381566b1b6b4023f8d029a24379a98e66a",
+    "visual/page-259.png": "061cdcf9352c871a071306648d5997209043c12c1b59eb81f29c0f09ed9b05e4",
+    "visual/page-260.png": "aa34e386f64fc649d25f486f6efa3217b09649fda1d118398f671fcd916b6902",
+    "visual/page-261.png": "c7719bbed77ef935abe04aa6215cacaa3730cdcbc5695973c6a0b87de763d878",
+    "visual/page-262.png": "7a1156716d6faf8761e33e1234007b9a591af2b1e90cea46ccb72d56e1490d4b",
+    "visual/page-263.png": "75c67a6e18876efcf022e4086cf84a5c372538b3a51b3c387e12282d21b9a780"
+  },
+  "exact_formatting_delta": "record/constructive_manuscript_typesetting_delta_20261006.json",
+  "formatting_only_verified_by_removing_allowbreak": true,
+  "original_failure_unchanged": true,
+  "maintenance_tests": "Both root normal and optimized logs show 43 tests, OK.",
+  "environment": {
+    "PATH_prefix": "$PANDOC_BIN",
+    "TEXMF": "{$LOCAL_TEXMF_VAR,$LOCAL_TEXMF_CONFIG,$TEXMF_ROOT,$TEXLIVE_ROOT/texmf-dist}",
+    "TEXFORMATS": "$LOCAL_TEXMF_VAR/web2c/pdftex",
+    "TEXMFVAR": "$LOCAL_TEXMF_VAR",
+    "TEXMFCONFIG": "$LOCAL_TEXMF_CONFIG"
+  }
+}

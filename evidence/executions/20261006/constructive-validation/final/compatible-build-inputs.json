@@ -1,0 +1,26 @@
+{
+  "scope": "Builds were not repeated for this final workspace run. Their exact inputs were matched to the final frozen inventory. The existing Lean compilation and repaired TeX build remain separate from this executable workspace check.",
+  "cpp": {
+    "prior_receipt_ref": "../../next-proof-validation/fresh-cpp-build.json",
+    "prior_raw_receipt_sha256": "44231e02bedb4c66ddf9c53cde6305c43f4e61e5b118699a0ea3c7dd8d85d864",
+    "unique_source_binary_pairs_verified": 22,
+    "workspace_executions_verified": 23,
+    "new_compilation": false
+  },
+  "lean": {
+    "receipt_ref": "../lean-build.json",
+    "raw_receipt_sha256": "8c5460a10dc79d641b755e6093d8530ef85e8c84e25b74943f03370f7f088aee",
+    "input_hashes_verified": 21,
+    "active_modules": 19,
+    "lake_jobs": 22,
+    "recompiled_for_final_workspace_run": false
+  },
+  "manuscript": {
+    "receipt_ref": "../manuscript/repaired/manifest.json",
+    "raw_receipt_sha256": "844a1a6afe088cd0d2f9b09ea487f496cc4d091cf68aff7fac08fb4dc67f3f9a",
+    "input_hashes_verified": 88,
+    "pages": 266,
+    "pdf_sha256": "bcd08c089fb0759dd3a1b3efae10252100ec96ec654ae3cfb6e412a6699980d2",
+    "rebuilt_for_final_workspace_run": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "Incremental full active build: 19 modules, 22 Lake jobs. Existing modules replayed; SevenPrimary freshly compiled. Finite predicates only, not analytic BGS.",
+  "base_commit": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "exit_code": 0,
+  "command": "PATH=$ELAN_BIN:$PATH ELAN_HOME=$ELAN_HOME bash computations/maintenance/build_lean_verified.sh $LOG",
+  "source_hashes_after_build": {
+    "formalization/Bgs.lean": "953a63a391d2fb58206cd08f4b002db89474d622043189477fed97f8426a4980",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "formalization/Bgs/AnalyticOrbitKernels.lean": "2d4b292a7b9c0835229a88c61555bf20a092250cb94233086cbadaf97ce3a047",
+    "formalization/Bgs/CayleyCurveEnergy.lean": "17dc42731c8f21c36ffc0ad0a3d5fc377791984a68106a730e1a37d69281d46d",
+    "formalization/Bgs/CayleyEnergy.lean": "671eedaa80a988e9e45c0b35581e21c3a2601885fe80ce4320d1a959cb1964f8",
+    "formalization/Bgs/CueLoopKernels.lean": "1cabb630b5e2f30b915db1cc6716afedf05b08fc2697b074af80c8abda9f3986",
+    "formalization/Bgs/FibonacciRatioSmall.lean": "8323d25465cccf8d3bf3e0058db414676c8679f4408ab2ea1fbde7f644854995",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/Bgs/GeneralHyperbolicParity.lean": "fcc2bf9026063b473717a26e0e3e1c677aea9a8173110fb9eba412c603a3a0f0",
+    "formalization/Bgs/HistoricalMobiusDegenerateFiber.lean": "21a2a0446b99a7c21153341334d2b23eff61a4140b5fc6acb53eab298b6a973b",
+    "formalization/Bgs/LocalityKernels.lean": "294118d057b36b84da28230bbde31851cef9b89a8bf5ba2a6966a0d4f62665be",
+    "formalization/Bgs/MagneticTraceSmall.lean": "eec1a5a7d508d901719cb6157fd1ca2f9ff8f216a0634cae1b8ec6178df5245b",
+    "formalization/Bgs/PairKeyFourthMoment.lean": "016e71c8ef8162c91d6623a92150f6968d649d95fd7f09c1586d91b481914df3",
+    "formalization/Bgs/PairKeySecondMoment.lean": "e998ce56fefa5aff7f10e435e0dafa2ca3ba1565a3d790ce2c9f285e008a4cfe",
+    "formalization/Bgs/PellCoboundary.lean": "2e41c078e1186c1ba2094c06d69c1c4960697c2616c4698c99511bd833d1690e",
+    "formalization/Bgs/PellCohomology.lean": "f1d31e87ef6a62a4883ef8770348c5b519b04f4aa841d80be1bd6ef1d0ea1082",
+    "formalization/Bgs/PellEchoWeights.lean": "6c62bf3af29431b73d42e74ecd5fd002412066ad63d18a6d655157fed7b61e0f",
+    "formalization/Bgs/PellFourierKernel.lean": "235628888ca32dfd8873ebcb42986f7e180b139dda1efafcf03edca52610fbd8",
+    "formalization/Bgs/SevenPrimary.lean": "431e5d111238a962ec2bb994f21d4cb1ac17df250379651aa4e8fcd065604cb4",
+    "formalization/Bgs/TorusLevelSets.lean": "3e842439ea6a954b3ec8a074ce67fdd366404c53b23ee1bc3bf07861812beacb",
+    "formalization/Bgs/TorusScaleLaw.lean": "b15d352ede01c1dd726a481e202aa87d81ef9384216f693508cbbc84e20e6a4c"
+  },
+  "log_sha256": "e80d7b5bc790b28cf056a28a952439c87e592e179fecd3b7163e0a83e77902c0",
+  "trust_boundary": "Native-decision evaluation axioms are explicit; generic polynomial/Rabin semantics, rank lift and actual commutant theorem are not Lean-formalized."
+}

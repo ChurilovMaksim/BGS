@@ -1,0 +1,8 @@
+{
+  "scope": "Explicit safe range J>=1 for the actual-trace C3 corollary. The pure finite-J contour formula C2 is unchanged.",
+  "reason": "The cited norm error is O(N^(-J-1/2)); uniform m=O(N) power telescoping uses N times that error=o(1), valid for J>=1. TRACE-017 applications already choose J>=k>=2. No J=0 polar estimate is imported implicitly.",
+  "accepted_curated_proof_sha256": "cfae6dd38a6c408ace97ebad6b60146c7db5ef06ed48d282e6a315fcc664fac0",
+  "clarified_proof_sha256": "0468be632207b88ce5b24e190187662ad1be91dd709621a20f4adf5adfa48a94",
+  "accepted_curated_manuscript_sha256": "33df49bc2820f4eb69bda2db2ff6a81a7062022a33cc82e3ac54679ee41c6160",
+  "clarified_manuscript_sha256": "864008084e6b9f969f5dd3c482ab68833f37f1da61997b5f628f29a5b4520719"
+}

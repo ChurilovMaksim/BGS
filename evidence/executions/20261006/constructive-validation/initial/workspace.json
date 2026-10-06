@@ -1,0 +1,2857 @@
+{
+  "producer": "computations/maintenance/verify_workspace.py",
+  "scope": "Executable Python/C++ coverage with sequential certificate replays and environment/source fingerprints; not a complete proof audit. Lean and TeX are separate.",
+  "input_commit": null,
+  "upstream_commit": null,
+  "source_mode": "archive",
+  "archive_manifest_sha256": "4a3589fd877dc0e8cf98c2314d01657707b35dd7a8f4ebb322f68d27477c7e57",
+  "source_validation_error": null,
+  "git_status_before": null,
+  "git_status_after": null,
+  "allow_dirty": false,
+  "toolchain": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "python_parent_optimization_level": 0,
+    "python_executable": "$PYTHON",
+    "packages": {
+      "numpy": "2.3.5",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "matplotlib": "3.10.8",
+      "scipy": "1.17.0"
+    },
+    "git": "git version 2.52.0",
+    "cmake": "cmake version 3.31.10",
+    "cxx": "c++ (Debian 14.2.0-19) 14.2.0",
+    "boost_lib_version": "1_90",
+    "boost_probe": {
+      "command": [
+        "c++",
+        "-I",
+        "$BOOST_INCLUDE",
+        "-dM",
+        "-E",
+        "-x",
+        "c++",
+        "-"
+      ],
+      "include": "$BOOST_INCLUDE",
+      "environment": {
+        "CPATH": null,
+        "CPLUS_INCLUDE_PATH": null,
+        "C_INCLUDE_PATH": null
+      },
+      "version": "1_90",
+      "error": null
+    },
+    "requirements_sha256": "921ce31d490adf67593d00a6e92df271c9ebedd5bc26a3bf5aa6697dc8ff4ba0",
+    "cmake_lists_sha256": "10ee58f21a70b438efe50b3bd8a510689eeb9c849c4d308e72d9fe039d28030f",
+    "verify_workspace_sha256": "99274288f1cc58cd090bfdca2d5776938f5965c516f108ec355dc825ec0662b8"
+  },
+  "source_tree_sha256_before": "08f3c92483f69155c9712e824c2a14f5790abffac3c5c64e1bef11c90abcd171",
+  "source_tree_sha256_after": "08f3c92483f69155c9712e824c2a14f5790abffac3c5c64e1bef11c90abcd171",
+  "source_tree_unchanged": true,
+  "python": "3.12.14",
+  "python_parent_optimization_level": 0,
+  "checks": [
+    {
+      "name": "actual_algebra_check",
+      "source": "computations/verification/actual_algebra_check.py",
+      "sha256": "fbcdf95494aa42a1a63607bd4b5a7eac2c2157aa1467ac01b6c534656b758abc",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/actual_algebra_check.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/actual_commutant"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 24.55,
+      "log_sha256": "0c2e6815796c87fe036e3718cf1d821080a39e3da68adeb93b56f1fad89fe62f"
+    },
+    {
+      "name": "actual_casoratian_check",
+      "source": "computations/verification/actual_casoratian_check.py",
+      "sha256": "cc9b69e3e6f68997fb8c2eb89f07fd2a11de50cc8bf43a2c1fcb10d969b80c23",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/actual_casoratian_check.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/actual_commutant"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 12.757,
+      "log_sha256": "a0edc1be04378999348ab62427940a57179dd50a9229c652c9af73800b754267"
+    },
+    {
+      "name": "actual_factor_check",
+      "source": "computations/verification/actual_factor_check.py",
+      "sha256": "f4df403aa2d2c3015585843a577a0d2d7cb2d16585cf2747e591a0886ba5a89a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/actual_factor_check.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/actual_commutant"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 4.938,
+      "log_sha256": "58d24b383fee777358920d0ab7a9f4f70bfbdd53c18a17cc9745f5cc2763e0b8"
+    },
+    {
+      "name": "actual_field_check",
+      "source": "computations/verification/actual_field_check.py",
+      "sha256": "8978935b9186fbf2708e721cd16a9b12a11da2c595dba81e71d429ab5e3b48a2",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/actual_field_check.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/actual_commutant"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 8.368,
+      "log_sha256": "673e86f17944f18963331aad0acdefdf9859e7dad0c3e630980c942dbda8fe9b"
+    },
+    {
+      "name": "actual_path_theorems",
+      "source": "computations/verification/actual_path_theorems.py",
+      "sha256": "86dc3865ada1aa40853ed9284945e1858726f012803ebde0d8ff579d8fb57a80",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/actual_path_theorems.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.394,
+      "log_sha256": "f595e52f8aac1be8520893c5639b7ed78cb790351a01aedaa59ad00d1b76485b"
+    },
+    {
+      "name": "analytic_coboundary",
+      "source": "computations/verification/analytic_coboundary.py",
+      "sha256": "36bbfafc0ef8780294c49392dc5a26a7618d7cfddc0dd6bd8410000de0bc0615",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/analytic_coboundary.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.136,
+      "log_sha256": "68e4534edea315dcf384a0b2e3f7f09ebf11a0c4a17eb1db8cce486e548f13fa"
+    },
+    {
+      "name": "analytic_kick_return_gas",
+      "source": "computations/verification/analytic_kick_return_gas.py",
+      "sha256": "a9b0e4d1150fa377bb43fce59e24296d743b8bb5a1531bd6f9fac8bb7adeec1d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/analytic_kick_return_gas.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/analytic_kick_return_gas.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 4.71,
+      "log_sha256": "7a274ff4baeb844374a961b1211dd14f2a931d10e8871ce2e2c1d9cdc9d6f9cc"
+    },
+    {
+      "name": "arithmetic_translation_exclusion",
+      "source": "computations/verification/arithmetic_translation_exclusion.py",
+      "sha256": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.19,
+      "log_sha256": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374"
+    },
+    {
+      "name": "balanced_weyl_gaps",
+      "source": "computations/verification/balanced_weyl_gaps.py",
+      "sha256": "8ba49d7afafed26186cb0f3603f63c31a4fe265da4566c0f0c79f3a0c094867a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/balanced_weyl_gaps.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.441,
+      "log_sha256": "05549fea17c2fa97cf7e5f4c99ae8f23e4f26c0a174ba12749f20278bcd99d5f"
+    },
+    {
+      "name": "bgs_20260921_regression",
+      "source": "computations/verification/bgs_20260921_regression.py",
+      "sha256": "c70bff51b3439a26bcbd4c0e7ec5e10b0492cb5225d6946d9bd520fafa0c66cd",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/bgs_20260921_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.792,
+      "log_sha256": "7e92a9a463a1dd6757599c205676201cb54db23acc4efb6adefff663b37cbc3a"
+    },
+    {
+      "name": "bibliographic_metadata_audit",
+      "source": "computations/verification/bibliographic_metadata_audit.py",
+      "sha256": "89d1937f7db6cefbf6477910384f6287d7548d8425c3a22c2b88a22ccfadee5a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/bibliographic_metadata_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.091,
+      "log_sha256": "91047892a9a0dede8c29454f5108cfd1b8b1b5ebeba0fcee811f93497b5b6f21"
+    },
+    {
+      "name": "cayley_curve_uniform",
+      "source": "computations/verification/cayley_curve_uniform.py",
+      "sha256": "9c627baae4b5268a05d800b16f79e4c412d00e14cdfa7cf576a4c259e6c0fdae",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_curve_uniform.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.637,
+      "log_sha256": "6ef5c1976dc1d07f1fa9422905971066fb8f03cc9c150c22d236ede898605eb1"
+    },
+    {
+      "name": "cayley_difference_discriminant",
+      "source": "computations/verification/cayley_difference_discriminant.py",
+      "sha256": "dfaa0d708664b0bc98c0d084e846a2e1ab85c947127eca0dd9e01b0a1f311983",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_difference_discriminant.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.843,
+      "log_sha256": "fcc5f856444ce0c36b1b97bad18e0581b19920d141c97b33e95c0e56c7ba0c67"
+    },
+    {
+      "name": "cayley_energy_curve_regression",
+      "source": "computations/verification/cayley_energy_curve_regression.py",
+      "sha256": "dae45156ca620a3edbc4bbecfece78c9dedcf8d19ce0a48e07cd71c3d86de97b",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_energy_curve_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.04,
+      "log_sha256": "d1d69c63a5b928ba06535c87aed305b34b90f27a363b60e06def5bc27ae2c35d"
+    },
+    {
+      "name": "cayley_fourier_hybrid",
+      "source": "computations/verification/cayley_fourier_hybrid.py",
+      "sha256": "cac741b1405dbdb15c268c4402ad21f357403b39d4e04ad36b293d7c23d35d8f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_fourier_hybrid.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.238,
+      "log_sha256": "32e7b22f2a4d80d316896e1ea843f59d96399133011185b7624b56a7f53278e4"
+    },
+    {
+      "name": "cayley_frobenius_extension",
+      "source": "computations/verification/cayley_frobenius_extension.py",
+      "sha256": "fd6235af81f19d241ad174c2b2757c789417f26e6376d0069e95b84d74bfe547",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_frobenius_extension.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.638,
+      "log_sha256": "2140c78b610554667f64c0946ac59192d07ac2c2f55c8f47cbda72b56276e259"
+    },
+    {
+      "name": "cayley_higher_moments",
+      "source": "computations/verification/cayley_higher_moments.py",
+      "sha256": "83bac8b5d4125ab8109d9a9dd249ff819ab05eefa081605aa75f8f2806429ce7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_higher_moments.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.847,
+      "log_sha256": "1e1a36b39970f2a2a496340ac00a054fb26988ac4045133c2f3bc12ae687b3e2"
+    },
+    {
+      "name": "cayley_inverse_pair_sum_factorization",
+      "source": "computations/verification/cayley_inverse_pair_sum_factorization.py",
+      "sha256": "b22e86124d57a731237a3bfdfaed8d7f882b540419944eb7736bd67120536a9e",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_inverse_pair_sum_factorization.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 31.023,
+      "log_sha256": "ed2284a5a3d682ab121718cbd585cefdb7985e5c4d30b27e8461ffb762a533b5"
+    },
+    {
+      "name": "cayley_inverse_resultant_transversality",
+      "source": "computations/verification/cayley_inverse_resultant_transversality.py",
+      "sha256": "4177708bce71df1ab3913acae88c93883b3a5e02a3d1ca752e361ce98e98466d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_inverse_resultant_transversality.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.343,
+      "log_sha256": "7d98971ae1c07c36962c323aeb481310cd11340b4f9f275312c722d094a523b0"
+    },
+    {
+      "name": "cayley_jacobi_trace_regression",
+      "source": "computations/verification/cayley_jacobi_trace_regression.py",
+      "sha256": "6488d6b7a56c0214ebd05779c218dbd41a180efea247a989df963023cb2d531f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_jacobi_trace_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.488,
+      "log_sha256": "cf9086579ba63292b92b96d128005944e9e7230d0fadedaec66549dfba2d4279"
+    },
+    {
+      "name": "cayley_principal_subresultant_support",
+      "source": "computations/verification/cayley_principal_subresultant_support.py",
+      "sha256": "b2460f7211162179484e7a2c7ea879baf47bfa6bd0c1cb75a5d56a75488ba812",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_principal_subresultant_support.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 5.013,
+      "log_sha256": "ffc6fd1ec8f74aeb1ba8161d1132df65a26e92798bff65671f83463b6147b53f"
+    },
+    {
+      "name": "cayley_product_discriminant",
+      "source": "computations/verification/cayley_product_discriminant.py",
+      "sha256": "7a0e103cf00e2521aa498aeb1603f32c7ab6e94f41c9559c88f3926afbe61062",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_discriminant.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.506,
+      "log_sha256": "ccd09471fc90e761c262d6645b610a3b418f0fd3acdc70f0592f97fb1453bbdf"
+    },
+    {
+      "name": "cayley_product_row_coefficient_ideal",
+      "source": "computations/verification/cayley_product_row_coefficient_ideal.py",
+      "sha256": "fba6a3d4aa4a193cd7aa7fbf162fd14955ce7e94c9d89c99359f442a306441c0",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_coefficient_ideal.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 14.223,
+      "log_sha256": "e142d1d9c87e4813977950fbbe35d977b328f7cf73b9012c29b19d746e678844"
+    },
+    {
+      "name": "cayley_product_row_intersections",
+      "source": "computations/verification/cayley_product_row_intersections.py",
+      "sha256": "752087fff15ba0eef67a4141a3420a97b8617c6fded034f4ab3c5284a99d71ce",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_intersections.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.079,
+      "log_sha256": "b659b6792cb91a2532ce419284e63530afb4aecc376919e623d920118d0f24e9"
+    },
+    {
+      "name": "cayley_product_row_projective_bezout",
+      "source": "computations/verification/cayley_product_row_projective_bezout.py",
+      "sha256": "7b120c2a77503b5bb1b4fbd1faae3a0e0a159709dc41d683e20f9492d0465a75",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_projective_bezout.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.289,
+      "log_sha256": "1977883c6a143b47e0e8f145a47861eb2304ffc629f7c39e58eabbc95b14f1d0"
+    },
+    {
+      "name": "cayley_product_row_real_trace_ideal",
+      "source": "computations/verification/cayley_product_row_real_trace_ideal.py",
+      "sha256": "ba13ab1c5d0a0bfb0ff49b65a7a2aa395b16a69dd45b55c0c515b624eb3491ed",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_real_trace_ideal.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 5.442,
+      "log_sha256": "b1ca7cea4a31289aac578d84555d13e69db84f4783a54c95d261c5657a98afff"
+    },
+    {
+      "name": "cayley_product_row_reflection",
+      "source": "computations/verification/cayley_product_row_reflection.py",
+      "sha256": "b39177f7370c272485518f18d98cb2322f505b018dbc9081f420d07a3ff5b865",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_reflection.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.574,
+      "log_sha256": "3e1d6ce42a31876ba9a8f8f2cf7f545ebef491852bca9172de8c1fe5ae89a447"
+    },
+    {
+      "name": "cayley_product_row_subresultants",
+      "source": "computations/verification/cayley_product_row_subresultants.py",
+      "sha256": "5be6e6a2e2ae7936f99df218420960113d9b6254bc3ad93088920243ab37c520",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_row_subresultants.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 18.023,
+      "log_sha256": "534d03a858725e8b8fe603eddcc021175cd307a138968719e0585c2178c690b2"
+    },
+    {
+      "name": "cayley_product_rows",
+      "source": "computations/verification/cayley_product_rows.py",
+      "sha256": "3aa719460d076e044c25640f55259d68e2469abc26e34aa57581122e1fb47693",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_product_rows.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.173,
+      "log_sha256": "2ce8dc45ed95e3ef6bd927d03defd017bffb4c0c40463a59bd650e47eaf3676f"
+    },
+    {
+      "name": "cayley_ratio_orbit_factorization",
+      "source": "computations/verification/cayley_ratio_orbit_factorization.py",
+      "sha256": "32b5d846264639ac1cd4bf94b5d12a1185db56d746a8bbef4205b5a763c143d8",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_ratio_orbit_factorization.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.753,
+      "log_sha256": "585e25ae6c05bea7cadd83e6faf0b9144c01d8e832f862c38360fdbdc186ebcc"
+    },
+    {
+      "name": "cayley_resultant_fibonacci",
+      "source": "computations/verification/cayley_resultant_fibonacci.py",
+      "sha256": "70666d43f37616c4aa4c6e5e05b14505f030ec7eb6d375ffc243f47c1b81627a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_resultant_fibonacci.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.421,
+      "log_sha256": "c46bcb1705d9281f88cf3bbfcfd3a7f0ef8adba2e402e3aaecce41f3e058a6c4"
+    },
+    {
+      "name": "cayley_resultant_mass_budget",
+      "source": "computations/verification/cayley_resultant_mass_budget.py",
+      "sha256": "4e30c356e16fda6ea52a7ac9ac5a74ff5585c7141b42f2b919e06a1a47c0612d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_resultant_mass_budget.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.205,
+      "log_sha256": "2a1d95bb63c7528487395611fb408bfda39648ec2f49b06f549d3d0e6c1ab7d8"
+    },
+    {
+      "name": "cayley_scaling_rigidity",
+      "source": "computations/verification/cayley_scaling_rigidity.py",
+      "sha256": "7963a62f68d31de6ef1a8a18ddfe0f6437149166a599729b2b7333221d4fcf17",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_scaling_rigidity.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/cayley_scaling_rigidity.json",
+        "--prime-limit",
+        "251"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 5.02,
+      "log_sha256": "1e818fcd16f570ce8f9515ddc60c995ca48b6e331ef7edd6766802afe16fdae5"
+    },
+    {
+      "name": "cayley_shift_psc_transversality",
+      "source": "computations/verification/cayley_shift_psc_transversality.py",
+      "sha256": "b53d8932130f9f53fc09b68d2f2beda5d012c9e4d856f96168f4a8e65ce970db",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_shift_psc_transversality.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.088,
+      "log_sha256": "55d89b16a970639ffe7b087a9614d085760eac59df3db4d6d7881c89f0fa3620"
+    },
+    {
+      "name": "cayley_shifted_energy_orbits",
+      "source": "computations/verification/cayley_shifted_energy_orbits.py",
+      "sha256": "e625f183d5f532b746e38f4a432987513339cda104d23c9d3ae60a632ed382c0",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_shifted_energy_orbits.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.138,
+      "log_sha256": "b238849f61dbde2ec0535e936af2edb1b3a11d564541b619c194530fb64f909b"
+    },
+    {
+      "name": "cayley_sylvester_fitting_support",
+      "source": "computations/verification/cayley_sylvester_fitting_support.py",
+      "sha256": "ead1d4920fb2fb91550dd20b4fa0909e4d542f0c58c9e5cd0fd553a67d96f595",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_sylvester_fitting_support.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.642,
+      "log_sha256": "1f8f11e44f78e650c7575a2613e2fffb3bf3ec7b266edb2e968f232847a262bb"
+    },
+    {
+      "name": "cayley_trace_intercept_shift_resultant",
+      "source": "computations/verification/cayley_trace_intercept_shift_resultant.py",
+      "sha256": "7147192098c21eaf1e59d5fe17f16dd269c82a02af078e32eadf09b6cfc19911",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_trace_intercept_shift_resultant.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 19.768,
+      "log_sha256": "b85514cf96a11c89c2781eb1495243bc34d335c14098cb9270b8ace3de0b9b72"
+    },
+    {
+      "name": "cayley_uniform_cutoff_regression",
+      "source": "computations/verification/cayley_uniform_cutoff_regression.py",
+      "sha256": "94456b54382ff18d8fcd72c18c0881cb5d8255253a0c3e9dee37eac982fe355d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cayley_uniform_cutoff_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.74,
+      "log_sha256": "e21cd0a78c0d83dc59f780e0c6a848b0d84d02f5f97d9ab5bba2962436ca8192"
+    },
+    {
+      "name": "cdf_sup_regression",
+      "source": "computations/verification/cdf_sup_regression.py",
+      "sha256": "f8260fec10684c6c5ff56cb73b80907e88b950cc48f113b6d48ac78d52fd8e46",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cdf_sup_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.349,
+      "log_sha256": "0b721d245b915e40cb157c08f3d110a1432a5c3e9e8273e1fc3a036298fd861a"
+    },
+    {
+      "name": "circular_dyson_relaxation",
+      "source": "computations/verification/circular_dyson_relaxation.py",
+      "sha256": "b49126356bd47e51cd6c955e7e3a61517b54c123c8f953819bcf23d2686b9ab2",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/circular_dyson_relaxation.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/circular_dyson_relaxation.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.639,
+      "log_sha256": "a9415c766e211f2357c2ee1a3b310aef868f0084cdcd7de0cd799f23d0ed72fb"
+    },
+    {
+      "name": "clock_structure_and_heat_projection",
+      "source": "computations/verification/clock_structure_and_heat_projection.py",
+      "sha256": "aabfcedbe68743e0343b4070567f2ef638e78507201870e204429dabb74547b1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/clock_structure_and_heat_projection.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/clock_structure_and_heat_projection.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.689,
+      "log_sha256": "90f3c1e2069aa4112a86b722da944e2ac6c25d9b96f397478263a5af48a87b4c"
+    },
+    {
+      "name": "coboundary_flow",
+      "source": "computations/verification/coboundary_flow.py",
+      "sha256": "6b63892a18393aea84b1460f0887f93574e365db611bcd707cb008d8409bd20e",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coboundary_flow.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.44,
+      "log_sha256": "383c62d96bc0fadaed7c8966f93a05e6145e49468f30a6c8285f75b241f1c3ab"
+    },
+    {
+      "name": "coboundary_general_start",
+      "source": "computations/verification/coboundary_general_start.py",
+      "sha256": "29aaa274728c77c972fbe24589ad382a4c9395d7ac43189049d908b3bb6dfe97",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coboundary_general_start.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/coboundary_general_start.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.239,
+      "log_sha256": "ef99f826e6950ae47841975d8aa29526dd609bca7ce49cb3b481c0755c0eed50"
+    },
+    {
+      "name": "coboundary_joint_limit",
+      "source": "computations/verification/coboundary_joint_limit.py",
+      "sha256": "9876b4e3e089d749a51bd304a67f228ce25060d11da3403b4ccf1fa6c2c35d3d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coboundary_joint_limit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/coboundary_joint_limit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.439,
+      "log_sha256": "7832074f3081185e32711c1a1cbaba63d3247b1373b521bf53a315114b063161"
+    },
+    {
+      "name": "coboundary_mobius_diffusion",
+      "source": "computations/verification/coboundary_mobius_diffusion.py",
+      "sha256": "64c7635570fa3a51dc6511ae161d220f7896f9375f57b7de443e8d8f67495efe",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coboundary_mobius_diffusion.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/coboundary_mobius_diffusion.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.939,
+      "log_sha256": "da6597405d432594084cd0e70b3bdf7503b545292f442c6e7ee2108c842e0763"
+    },
+    {
+      "name": "coboundary_polynomial_limit",
+      "source": "computations/verification/coboundary_polynomial_limit.py",
+      "sha256": "683d5429bd94fa74a5c8167ea737da9efcf227e8c33de1efb7073c2416d8d75d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coboundary_polynomial_limit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/coboundary_polynomial_limit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.545,
+      "log_sha256": "1a7847fe9d9cac893415b6407094c109d8ba4c16230a8a87afbecee638aa1b53"
+    },
+    {
+      "name": "coherent_aperture_minimax",
+      "source": "computations/verification/coherent_aperture_minimax.py",
+      "sha256": "b89af730ed8051d77bd7ea1b70cdc82492b55c164a706168a675ebae87beae42",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/coherent_aperture_minimax.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.997,
+      "log_sha256": "c2a208505f47d0575763de0009122ae5e28176cfa8af156c78a9d313361d5002"
+    },
+    {
+      "name": "collective_diffusion_gap",
+      "source": "computations/verification/collective_diffusion_gap.py",
+      "sha256": "9901ae063687a592eb56b5bd2daa54f08c4e74f80a09b84d0d7f651f3bc91822",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/collective_diffusion_gap.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/collective_diffusion_gap.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 7.756,
+      "log_sha256": "77893de7a5be2078075fc87cb40a975b8f85a9619033328a1ced51277f3b39a6"
+    },
+    {
+      "name": "compensated_trace_window",
+      "source": "computations/verification/compensated_trace_window.py",
+      "sha256": "1e4459cedcabc7b8acdcdde67f9837b5a6d2e84bbf369c036afba289cb7bf8f1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/compensated_trace_window.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.187,
+      "log_sha256": "208e4035a056afc35606a93c028cca27e45706bbc0d8b8aa58603e4982f91fad"
+    },
+    {
+      "name": "correlation_extension",
+      "source": "computations/verification/correlation_extension.py",
+      "sha256": "147c6d59ae97b81d426cb49bd9536703cdd7398187d317784af6f5d3e5e13beb",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/correlation_extension.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.591,
+      "log_sha256": "47eb7954d5284c5057511fccf76d93b1a452996d8637ffbe07e008a1569e2da5"
+    },
+    {
+      "name": "cue_singular_energy",
+      "source": "computations/verification/cue_singular_energy.py",
+      "sha256": "925c79f0c4ad81a1d9967adc1348d51af3e7c2989e4eebd9c44e928523e9d432",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cue_singular_energy.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.738,
+      "log_sha256": "1d9d13d3405c5a52a057538f7b86f7dace3a2941b9a8eefc2cffca34cb963d3b"
+    },
+    {
+      "name": "cue_upload_audit",
+      "source": "computations/verification/cue_upload_audit.py",
+      "sha256": "c89cb5128321a08a5c606cad5c4e484a794f87972048fe127e38759549ebd338",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/cue_upload_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.537,
+      "log_sha256": "a253f570384bbfd26deba6638ba9dbb4de0a0e117c5645ae2489018b22275ee2"
+    },
+    {
+      "name": "current_regression",
+      "source": "computations/verification/current_regression.py",
+      "sha256": "bd28f77eaa0fb911dc3110807485583c36874f13b3d3d1fd4f55575884a0f6d8",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/current_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.139,
+      "log_sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
+    },
+    {
+      "name": "even_period_spin_resonance",
+      "source": "computations/verification/even_period_spin_resonance.py",
+      "sha256": "b05fbddbb250c2430b36821293cc4fba57275c64fad115150b566ec020bf0007",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/even_period_spin_resonance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/even_period_spin_resonance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 6.668,
+      "log_sha256": "a6c05b6d945a247b4a78c1025650e14c58c256e90fc4c8b9b46486df6d70f823"
+    },
+    {
+      "name": "expansion_wavepacket_audit",
+      "source": "computations/verification/expansion_wavepacket_audit.py",
+      "sha256": "1a5b51f3110d0ff5286b9dce9706ba68b367819752f811fb67109c72a1ef1f56",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/expansion_wavepacket_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/expansion_wavepacket_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.251,
+      "log_sha256": "fb465dee9d22f452e0ddb146a87400fa5869a78b57596280d7e9273ff4eead3b"
+    },
+    {
+      "name": "extremal_resonance",
+      "source": "computations/verification/extremal_resonance.py",
+      "sha256": "f3af91bbbbf7a4bdbadb197e7bd3843e4ba982c41c3d12d1cd8dae47a78c4f4a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/extremal_resonance.py",
+        "--cases",
+        "1000",
+        "--max-lag",
+        "10",
+        "--algebra-cases",
+        "20",
+        "--output",
+        "$INITIAL_CHECK_LOGS/extremal.json",
+        "--replay",
+        "$INITIAL_CHECK_LOGS/certificates-i08jphcm/extremal.replay"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 10.787,
+      "log_sha256": "29c44668138e57329a441fba8d4b3c4f6a901f01ab740c8ab257b556e4d680d0"
+    },
+    {
+      "name": "finite_orbit_resonance",
+      "source": "computations/verification/finite_orbit_resonance.py",
+      "sha256": "9fc93784306014bec089f6fb0d084f485048b35fe61d9fde8fa7cd7791b8f082",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/finite_orbit_resonance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/finite_orbit_resonance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.098,
+      "log_sha256": "f0be16807e6703da1b999f92f4379a5a4220f382d1816d1875ff6e205260fddf"
+    },
+    {
+      "name": "fixed_harmonic_return_gas",
+      "source": "computations/verification/fixed_harmonic_return_gas.py",
+      "sha256": "3e90449d4453dfaf0b40590403c71908185daaed56661836c0706aad1c12b64f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/fixed_harmonic_return_gas.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/fixed_harmonic_return_gas.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 9.173,
+      "log_sha256": "1b08a3286aabb26f953bcfd80be593e7b1c501555f239d0c626999f45aef8ba9"
+    },
+    {
+      "name": "fixed_map_convention_audit",
+      "source": "computations/verification/fixed_map_convention_audit.py",
+      "sha256": "1a708f07ed8cf7f2d658aa38c698e744ad23e3863a272c3d07a93bf576ed9884",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/fixed_map_convention_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.539,
+      "log_sha256": "9e7c511facbe1857bbba5643f2fccc6fc6daa074817f0dcc0d3f03f8fd2d14e0"
+    },
+    {
+      "name": "fixed_model_period_three",
+      "source": "computations/verification/fixed_model_period_three.py",
+      "sha256": "459ff0d78b6ccd287e7520d48146dcf5b34fe094e45a9615c8ab5b5f6e2328a6",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/fixed_model_period_three.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.364,
+      "log_sha256": "34e85a8779e3a4ce8c75d8ccdda3d95a7b13c519aeec423d9c8d7e6939cdebd7"
+    },
+    {
+      "name": "fixed_strength_classical",
+      "source": "computations/verification/fixed_strength_classical.py",
+      "sha256": "ddbddf2a97148801adb905d26f293534f3a038f3bee5eab4ba9314380a55d1b0",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/fixed_strength_classical.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.297,
+      "log_sha256": "279d841f427519a266885eb54db335635f92072baed301b3a53d5ee19efadc4f"
+    },
+    {
+      "name": "fixed_strength_locality",
+      "source": "computations/verification/fixed_strength_locality.py",
+      "sha256": "f9d29e46da3c458c51dcf029a0b8eabaac3915b870e9d6c4e59dfaa76b28cd09",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/fixed_strength_locality.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 15.141,
+      "log_sha256": "f5befaed383a97ba48eda9a6c9484047c254170800848d01b7ca6c081de9f26c"
+    },
+    {
+      "name": "folded_quadratic_audit",
+      "source": "computations/verification/folded_quadratic_audit.py",
+      "sha256": "7105d862769db0de415cd7f0e1492fc3a1aca8c478ce96125b18f8f16ea0c698",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/folded_quadratic_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/folded_quadratic_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.291,
+      "log_sha256": "3ca51577d752aad79d6d7f0dbfc14eec810c57bb62572c0b9a82cb4c732d4f82"
+    },
+    {
+      "name": "four_block_unmarking",
+      "source": "computations/verification/four_block_unmarking.py",
+      "sha256": "d867b8c85c9431c5d6bd19abf026ae379eb0eaedc6d7c4cae876c4adb68e1839",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/four_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.238,
+      "log_sha256": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc"
+    },
+    {
+      "name": "four_cut_rank_two_kernel",
+      "source": "computations/verification/four_cut_rank_two_kernel.py",
+      "sha256": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/four_cut_rank_two_kernel.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.293,
+      "log_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db"
+    },
+    {
+      "name": "frozen_antireversor",
+      "source": "computations/verification/frozen_antireversor.py",
+      "sha256": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_antireversor.py",
+        "--output-dir",
+        "$INITIAL_CHECK_LOGS/frozen_antireversor"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.34,
+      "log_sha256": "ff72489ad1f31c401067379096b5e817f23403555205e01a4945b2e98e7230df"
+    },
+    {
+      "name": "frozen_arithmetic_traces",
+      "source": "computations/verification/frozen_arithmetic_traces.py",
+      "sha256": "1965a3af81129c1d81b242511e133f71bc953089fa376b5a00499ba2431cf8d7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_arithmetic_traces.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_arithmetic_traces.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.888,
+      "log_sha256": "bc01e4b160be4b99233493006d97486af45ec99515932681f76ac8027b52c55a"
+    },
+    {
+      "name": "frozen_full_lag_gap",
+      "source": "computations/verification/frozen_full_lag_gap.py",
+      "sha256": "b7e32401c5e265fe5a2a58ad035b110452c0f87bfb2ab21f8e64b1dc8b8c46c3",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_full_lag_gap.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_full_lag_gap.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.091,
+      "log_sha256": "3fc68bc7aa703545676f406e9581000cac536ce01946576c6e38c1c91a668e56"
+    },
+    {
+      "name": "frozen_kick_rank",
+      "source": "computations/verification/frozen_kick_rank.py",
+      "sha256": "d3e5383313efabeb2eec0de17606b2703c83e493067135163e94d66b6b597a50",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_kick_rank.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_kick_rank.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.387,
+      "log_sha256": "7d079c47eafe65da3b19a48b1df93c06c1bc5b8082b6d7f0ec4a2350314c8cc0"
+    },
+    {
+      "name": "frozen_operator_transfer_coercivity",
+      "source": "computations/verification/frozen_operator_transfer_coercivity.py",
+      "sha256": "d4a4fa9707f72579449138d97d407926db89df83dcccd0ef848e35daf7d58efb",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_operator_transfer_coercivity.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_operator_transfer_coercivity.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.939,
+      "log_sha256": "045130065d7c074ddac11a059784cd61bff13bb51bdec89e88e198a40b8dc44f"
+    },
+    {
+      "name": "frozen_seven_cut",
+      "source": "computations/verification/frozen_seven_cut.py",
+      "sha256": "b7b61c8982776fceae57e8136f7b90545a03c1c6f20258ff8cd56b6870ae1562",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_seven_cut.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_seven_cut.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.438,
+      "log_sha256": "325e2e322a279fc76956c9f6964269ef1ea9ac62882fe2d1e9697483f7f6df49"
+    },
+    {
+      "name": "frozen_total_minors",
+      "source": "computations/verification/frozen_total_minors.py",
+      "sha256": "db4ff906e9bf811713370aca9becf03b3d4625df388b31704ba365aa2fb2ec3f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/frozen_total_minors.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/frozen_total_minors.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.348,
+      "log_sha256": "531979d0e6c6582a725ece09b20d5aea4ceaf1ba3ea98a613ffda60ad3dd40ff"
+    },
+    {
+      "name": "gaussian_channel_minimax",
+      "source": "computations/verification/gaussian_channel_minimax.py",
+      "sha256": "cce9b67c1f9f657f89553c4cdbf14bb2e0c91bd42e4df9a299fafdf9a60b35f7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/gaussian_channel_minimax.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.69,
+      "log_sha256": "87bc1cc65d42a0823d5f5af91ecdea03d503bc9a7b61c3fab65d3449151f9b3b"
+    },
+    {
+      "name": "general_cat_return_laws",
+      "source": "computations/verification/general_cat_return_laws.py",
+      "sha256": "c52f2aa5b2c72260889506e76afea6e46e1199d9da3936ff133afe3565d8311c",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/general_cat_return_laws.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/general_cat_return_laws.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.991,
+      "log_sha256": "988c94c836868c06b2973040a586ea40324471e458bd503fe249bb7fd0bfedff"
+    },
+    {
+      "name": "general_character_recheck",
+      "source": "computations/verification/general_character_recheck.py",
+      "sha256": "a48ccbbffc0aab5eac73c1bd80215120a0b59b3a1f4358a02e651e40434e2013",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/general_character_recheck.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.237,
+      "log_sha256": "deb272b75cf0c84217476d6dac358f8d442be4ca475242ba0efba7f6420745c4"
+    },
+    {
+      "name": "general_hyperbolic_prime_spectra",
+      "source": "computations/verification/general_hyperbolic_prime_spectra.py",
+      "sha256": "914c356548209c78bf132953a18676d84159026970c3222d0a6362f8c46225e6",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/general_hyperbolic_prime_spectra.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.342,
+      "log_sha256": "9ba976564ba258a21aa9e457bba6326904bec1018429f9299fc6e0b9743463ac"
+    },
+    {
+      "name": "general_symbol_covariance",
+      "source": "computations/verification/general_symbol_covariance.py",
+      "sha256": "5ab88ac873c05fdb2e0f3f89d6fe12fe1ab95de496fd7f88723eef7a4db70d51",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/general_symbol_covariance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/general_symbol_covariance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.949,
+      "log_sha256": "384e3b53fa32f515a9f02cece9d7a591a4095894f310c2a2418ab5c069fbf5d5"
+    },
+    {
+      "name": "global_rotated_box_trace",
+      "source": "computations/verification/global_rotated_box_trace.py",
+      "sha256": "f197ced60bbf3758942675122de93fa65db092ae42b7e73d5d7c89182612803c",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/global_rotated_box_trace.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.688,
+      "log_sha256": "a88492f6b945db884ccdf76b22ca07de364f06e66ec6ace95e3431ef8c618a18"
+    },
+    {
+      "name": "gram_resolvent_normalization",
+      "source": "computations/verification/gram_resolvent_normalization.py",
+      "sha256": "9950863aec9fe87a38db72acb4f46e96998ba2fc7a25d5457763b0a709f9d225",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/gram_resolvent_normalization.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.058,
+      "log_sha256": "35bad355786557e7d3df7ae5d3f3950a0d2220e58e4b9eaed2017e8aa804102a"
+    },
+    {
+      "name": "growing_degree_trace_projection",
+      "source": "computations/verification/growing_degree_trace_projection.py",
+      "sha256": "8867f7a49f16e748c2e21d3c6f687e3280813f1d6bc6928fabe6247085735182",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/growing_degree_trace_projection.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/growing_degree_trace_projection.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.989,
+      "log_sha256": "8167b6d143c7e2dc190d00dca7e3766dd286d9601c044711f7af8bc10ec6852f"
+    },
+    {
+      "name": "heisenberg_note_audit",
+      "source": "computations/verification/heisenberg_note_audit.py",
+      "sha256": "2777cc2e254b371716371ed49bd671d3dcbe23a9fc292ce80d1d380f17afcf49",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/heisenberg_note_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/heisenberg_note_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.044,
+      "log_sha256": "f19d244e9d93c15fb8eadf57a308c0e7f317cffbb97879fddaa1f1947161b00c"
+    },
+    {
+      "name": "heisenberg_pair_heat_formula",
+      "source": "computations/verification/heisenberg_pair_heat_formula.py",
+      "sha256": "91fe49f8ebf4083e2aac25ac074a62d0f4828049758c8d0c9a23b3a3eeec6593",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/heisenberg_pair_heat_formula.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/heisenberg_pair_heat_formula.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.845,
+      "log_sha256": "bd495e49f103051c0588723b61196f9d11e06f85c4c722f2371e9c9842403b57"
+    },
+    {
+      "name": "heisenberg_time_insertion",
+      "source": "computations/verification/heisenberg_time_insertion.py",
+      "sha256": "585887e13a48a4ce4509ca0e515b6ae63a5c4391677b62df2df504653e09c2ca",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/heisenberg_time_insertion.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.143,
+      "log_sha256": "e497e1f97ea13ebf3f5a24bc564b881f3f8e305b2fbc783685175358decda0c4"
+    },
+    {
+      "name": "heisenberg_wkb_controls",
+      "source": "computations/verification/heisenberg_wkb_controls.py",
+      "sha256": "b1fb42afccca80ca6bef7bfe7519db6139d7f158c8ac92e1cb98b32927d96abd",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/heisenberg_wkb_controls.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.296,
+      "log_sha256": "1c4adfa94a99b2139aa7737dfe8fbf5a0855a8800cc32a08160e07dae9c258f0"
+    },
+    {
+      "name": "holomorphic_shell_rigidity",
+      "source": "computations/verification/holomorphic_shell_rigidity.py",
+      "sha256": "a4b21496c8e14df7b56abe67d09fda30c5fe6b6196c26457f8ed73704ab7eac5",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/holomorphic_shell_rigidity.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 12.585,
+      "log_sha256": "7d344030dea07e72d49805e8c6fc5e9d8df570c6ae97d9c37b44021cd89faa01"
+    },
+    {
+      "name": "husimi_shell_tomography",
+      "source": "computations/verification/husimi_shell_tomography.py",
+      "sha256": "beb89c1bfde99536fef75a0660e0a6b0d338e0b1fa82870fecf5232e731de281",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/husimi_shell_tomography.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.688,
+      "log_sha256": "c1abed818c5db2575027d98c76479ce6b44a5430058901456a6c70e08ddc2cf0"
+    },
+    {
+      "name": "hyperbolic_return_pressure",
+      "source": "computations/verification/hyperbolic_return_pressure.py",
+      "sha256": "8da271ced33465d434cb967d3b41801a4e317b8fbabbbeb0e44ab93705c88493",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/hyperbolic_return_pressure.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/hyperbolic_return_pressure.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.792,
+      "log_sha256": "2c3c8c8193c02290b754bd8ec43b56b30878be8b35a24ef2dd9763f0fdf53905"
+    },
+    {
+      "name": "isospectral_clock_control",
+      "source": "computations/verification/isospectral_clock_control.py",
+      "sha256": "65a6b3f44cf17a4f493ec33041070d4dd07305d790198c940c845313aedb8aba",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/isospectral_clock_control.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.587,
+      "log_sha256": "92d87e4bd75d4ad4f57905a5f1ca55e8cbe92b4a0543653080040bc1ac0949ba"
+    },
+    {
+      "name": "local_moment_transport",
+      "source": "computations/verification/local_moment_transport.py",
+      "sha256": "e50a0243b54abb6e26ffd81b1d1def8e60236828355aee14b9d08d78b71075ac",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/local_moment_transport.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/local_moment_transport.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 20.24,
+      "log_sha256": "986cece9098424b87e406c62176041eebbbc15535eb8594595f61578f2b275df"
+    },
+    {
+      "name": "locality_robustness",
+      "source": "computations/verification/locality_robustness.py",
+      "sha256": "dfe4549068dcca97c4ba62d0b73c45d2b3dd1c5778ab83910cc5c9694ac94073",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/locality_robustness.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.502,
+      "log_sha256": "f9e2a8ff4393730ce9fe7ad0e5803b901727b3de0ca4b478234604a70f328b12"
+    },
+    {
+      "name": "loop_test_reductions",
+      "source": "computations/verification/loop_test_reductions.py",
+      "sha256": "577614cbcd5e83856aa7840a6f8dfb401f9fca8dd99809fd55fbaca1a1fe16a3",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/loop_test_reductions.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.141,
+      "log_sha256": "1bc46ea0323d07795cce970c53320dc62bbf326f7ebeb2aef93bb63c79f48084"
+    },
+    {
+      "name": "magnetic_quotient_regression",
+      "source": "computations/verification/magnetic_quotient_regression.py",
+      "sha256": "211832cdd5039d12da27d728043524298f31a2312ff54dd55b4b0182401aa6d2",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/magnetic_quotient_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.297,
+      "log_sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
+    },
+    {
+      "name": "magnetic_scalar_certificate",
+      "source": "computations/verification/magnetic_scalar_certificate.py",
+      "sha256": "51a437fe9c0b668664732e604b195d58de5a7b7342908e1ec1dc4e5cf9ba46f5",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/magnetic_scalar_certificate.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.187,
+      "log_sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
+    },
+    {
+      "name": "microscopic_noise_removal",
+      "source": "computations/verification/microscopic_noise_removal.py",
+      "sha256": "059816f5b80c27d0237060ab9646a2e1b0a49cc5ff7630e355916fa2e11554c1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/microscopic_noise_removal.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/microscopic_noise_removal.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.771,
+      "log_sha256": "6ebe2302336cb9f2b452c06c9c78a4a6b1b218992db7d9f510e4c9fd52da0126"
+    },
+    {
+      "name": "mixed_cayley_energy",
+      "source": "computations/verification/mixed_cayley_energy.py",
+      "sha256": "e68b34e615cfedec351a64dc9d8b21091769d54bcc4b10c1d8c4f5e1d3dc6fdd",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/mixed_cayley_energy.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.651,
+      "log_sha256": "fd940082761c2e48c67cbb4b7f806227877fc9cda256e81963ccf0c1465162f1"
+    },
+    {
+      "name": "multiradius_rigidity",
+      "source": "computations/verification/multiradius_rigidity.py",
+      "sha256": "7bc3ef3c8534fe3224ef686fa3a8c43ed15f38b9bfb766f67fc2350bd93f903d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/multiradius_rigidity.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.69,
+      "log_sha256": "6937ba1105e1fff10bc220d05499dc68a5617caba4b5e9dd43a6ef3c901dbb3e"
+    },
+    {
+      "name": "noncommuting_tower",
+      "source": "computations/verification/noncommuting_tower.py",
+      "sha256": "8d4f31a4443c6f142e4f52d0e3095c4a207d17114dd8e0cc83f179d4a40504a2",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/noncommuting_tower.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 12.872,
+      "log_sha256": "a2ba9a5238320aa01668e9f06697edb204741b7688fa2f8c933b4e94dee7ce5a"
+    },
+    {
+      "name": "nonlinear_pressure_variance",
+      "source": "computations/verification/nonlinear_pressure_variance.py",
+      "sha256": "c1b1d1375137394a818dcbb49595707cd0a2ecd748d0b6cc2591e31fdbda0ccb",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/nonlinear_pressure_variance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/nonlinear_pressure_variance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.088,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offoff_elliptic_spike_regression",
+      "source": "computations/verification/offoff_elliptic_spike_regression.py",
+      "sha256": "277f40bd74d396fce12ccedeb6396a36e3a502af66081c7bf3e54639f86d5953",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/offoff_elliptic_spike_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.189,
+      "log_sha256": "651f3be6fe205af2477c7f1be5c0e5ff137a542b5abe8ce1ae1524f1f209fe73"
+    },
+    {
+      "name": "pell_coboundary_fourth_moment",
+      "source": "computations/verification/pell_coboundary_fourth_moment.py",
+      "sha256": "782a3a49177c23af41883b7449f049c600c0da066c55ec5359b583b404c58deb",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_coboundary_fourth_moment.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.845,
+      "log_sha256": "c777f8accea395c4be53e680ae1595e97026f0b02f8aaccb865f87f08dd0da27"
+    },
+    {
+      "name": "pell_coboundary_regression",
+      "source": "computations/verification/pell_coboundary_regression.py",
+      "sha256": "ed4688334301f46ce37e790ade270ba797845fee0393330ce2979ffd90670831",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_coboundary_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.547,
+      "log_sha256": "cfa873b995d9eea2b36ee0a2696170377cccf4be601c133cb700d4dff165083e"
+    },
+    {
+      "name": "pell_flat_quantum_check",
+      "source": "computations/verification/pell_flat_quantum_check.py",
+      "sha256": "decc8d14689d380cda632a0bf04b393cc0076ef5ff46d3640b8b844db6322f71",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_flat_quantum_check.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 6.56,
+      "log_sha256": "5ed3ffa42b084c5b06571412007b198efcea56d38333164e21dd8503e4139986"
+    },
+    {
+      "name": "pell_floquet_regression",
+      "source": "computations/verification/pell_floquet_regression.py",
+      "sha256": "cb159888439eb4772019a43a86f88e93c9200007ab18820213ba44c7933970d1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_floquet_regression.py",
+        "--cpp",
+        "$PRIOR_CPP_BUILD/cpp/pell_pair_orthogonality"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.93,
+      "log_sha256": "74772307fc3f8ec829d11fc53bebcc05354ec953c465433ac01b56eb03d922f6"
+    },
+    {
+      "name": "pell_four_mode_coercivity",
+      "source": "computations/verification/pell_four_mode_coercivity.py",
+      "sha256": "47b9877ff64a089957c6b661565942b3412d8fad0538d25bb521178523de545f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_four_mode_coercivity.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.746,
+      "log_sha256": "376bb2dd8b8080beeb3758172089b9875edf4c29bca8f5e5f7d6ce39843c0ee3"
+    },
+    {
+      "name": "pell_gamma_interval",
+      "source": "computations/verification/pell_gamma_interval.py",
+      "sha256": "062751a0c4f015ce034b11f4ed0f529e5d2f2a45fc5b10a042bdbcba3aa07998",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_gamma_interval.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.217,
+      "log_sha256": "81e5dbaed7b03af10a6731ba1cf311ec477878770d160ee0e61aabd606275c51"
+    },
+    {
+      "name": "pell_gaussian_regression",
+      "source": "computations/verification/pell_gaussian_regression.py",
+      "sha256": "dcdf337b121e855b7a5df89498f918ad92d2956f138c0d649639ea2e3dfdc991",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_gaussian_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.841,
+      "log_sha256": "147828ab02ea03824fe505a99e77d5a7a68ef63c9fa508bcb6f0fb4c59bdb0fd"
+    },
+    {
+      "name": "pell_harmonic_returns",
+      "source": "computations/verification/pell_harmonic_returns.py",
+      "sha256": "65d33120ab644e5397a0375eae1a8c224a66ed1892c5b8a5a4a0fa212155f4c0",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_harmonic_returns.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/pell_harmonic_returns.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.262,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pell_harmonic_transition",
+      "source": "computations/verification/pell_harmonic_transition.py",
+      "sha256": "b5bc3a45185d4b585f2b91f19106d75fc84bb568d19795467e0a6d9cf2adee5e",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_harmonic_transition.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.069,
+      "log_sha256": "1b2d31ff7523922cf568b9ee970429f0dd1f6a1897a26f3a55802801d74a899e"
+    },
+    {
+      "name": "pell_pair_obstruction",
+      "source": "computations/verification/pell_pair_obstruction.py",
+      "sha256": "cf15ba1dbc83f96caa56fbd3405311d8ad9389ccb1317e47a1a57c8ca557d7c5",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_pair_obstruction.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/pell_pair_obstruction.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.544,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pell_resonance_lattice",
+      "source": "computations/verification/pell_resonance_lattice.py",
+      "sha256": "c05f08d2ef8070319c9a7abcee9d128ee96288656d2f0107dad6cbae83bc1333",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_resonance_lattice.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/pell_resonance_lattice.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.411,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pell_sharp_coercivity_check",
+      "source": "computations/verification/pell_sharp_coercivity_check.py",
+      "sha256": "f8fa88821034c8f2770d3415a3b60ff1abdb1b78be0ab78634c47f386e74e43b",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_sharp_coercivity_check.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.476,
+      "log_sha256": "939c7aa1f3bc233fc0a1d6aff0f144911244752bef6d1b52793bcae8c89effa0"
+    },
+    {
+      "name": "pell_single_orbit_sharp_constant",
+      "source": "computations/verification/pell_single_orbit_sharp_constant.py",
+      "sha256": "9e268b9936b7bebd0dc53675aaa2912f8e2e68b70437af5d905cc9aae75f76cf",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_single_orbit_sharp_constant.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.249,
+      "log_sha256": "827018ed396f1679d374a0636ba9f0ad9480bedea720e2886fcce06bd8283919"
+    },
+    {
+      "name": "pell_smooth_cohomology",
+      "source": "computations/verification/pell_smooth_cohomology.py",
+      "sha256": "5310afb3eb7afb7cd787c4f551cf1d9193b6da4c9185b5891c7c82cac66c85f2",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_smooth_cohomology.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 4.175,
+      "log_sha256": "49a0dcc2cc5b51fe9ba141e3e0e9961ea3945b0eb922043a89aec01352b5c971"
+    },
+    {
+      "name": "pell_weighted_echo_regression",
+      "source": "computations/verification/pell_weighted_echo_regression.py",
+      "sha256": "3646aa47a556c6e833b1fdbd8a123e9860f4e593dd48b01ce5049a14dd5f5d99",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pell_weighted_echo_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.985,
+      "log_sha256": "6a398de00a8f2220e50c347d0e9739c2b3a472c3bdbd7db21bc55469fe1d2d50"
+    },
+    {
+      "name": "periodic_point_trace_comparison",
+      "source": "computations/verification/periodic_point_trace_comparison.py",
+      "sha256": "8f77baf6fdfff732b8578ca480a11d9c6672fd0b42ec9578881eaff913d7839b",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/periodic_point_trace_comparison.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/periodic_point_trace_comparison.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.339,
+      "log_sha256": "e1e9e9a594e4f5e57212f337d99747aedd04cf940a52601104af4f807dc9ef30"
+    },
+    {
+      "name": "phase_space_return_gas",
+      "source": "computations/verification/phase_space_return_gas.py",
+      "sha256": "15b8b52e96f221f311d2d475d8e76ed86695a537a408c022358dda591ecf0b9b",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/phase_space_return_gas.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/phase_space_return_gas.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.051,
+      "log_sha256": "d463dc775dfd6554bc50be4a5425bbc275d3f20ebebbfb33b3de549281e1425e"
+    },
+    {
+      "name": "prime_resonant_audit",
+      "source": "computations/verification/prime_resonant_audit.py",
+      "sha256": "43673a0f9dd432fb6f77cc69349fb54ad26d3656d14aee6daf647608a2375fe7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/prime_resonant_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/prime_resonant_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.165,
+      "log_sha256": "4547076ac39a51c9275c66a972b64db819606b8e197489e26cbdbca73ae0ccbc"
+    },
+    {
+      "name": "pure_loss_discrimination",
+      "source": "computations/verification/pure_loss_discrimination.py",
+      "sha256": "f698f42d92ff51be7e462fbc29429b47f4b7589658c72c2f220001cfbf8f4928",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/pure_loss_discrimination.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.904,
+      "log_sha256": "394a596a90fb3729a6eeadbd9805ee2126a74a974837d85f3368a7dba3494ac5"
+    },
+    {
+      "name": "quadratic_coboundary_noise",
+      "source": "computations/verification/quadratic_coboundary_noise.py",
+      "sha256": "71f9bf583f20481644efabb075b2b38306898ba3c812a51483f449e92c7cb928",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/quadratic_coboundary_noise.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.581,
+      "log_sha256": "6804e28a27e57cc0b9478309af963d6fb760f2e3954163c1f35ac85f6afe20d6"
+    },
+    {
+      "name": "quadratic_noise_clock",
+      "source": "computations/verification/quadratic_noise_clock.py",
+      "sha256": "6a8e2daf50bf3a80cf4c1a4c7b6ddb339d84d03c8087e544e384753ff580ad9a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/quadratic_noise_clock.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/quadratic_noise_clock.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.369,
+      "log_sha256": "71227faa151d6712e8a85cbc60429c3feae920a0d765708285badf8585a4fead"
+    },
+    {
+      "name": "quadratic_noise_dynamics",
+      "source": "computations/verification/quadratic_noise_dynamics.py",
+      "sha256": "05143c9ce0e8c3fbd5fad38607cd48ca3d196f4b644a390fdc814e5dd64c9f59",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/quadratic_noise_dynamics.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/quadratic_noise_dynamics.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.598,
+      "log_sha256": "dbbfb7cf4b770c3f5c0c74fe1c2c8bfd8381ae836d7aa76bd3ab56db479aef95"
+    },
+    {
+      "name": "quantum_cyclic_module",
+      "source": "computations/verification/quantum_cyclic_module.py",
+      "sha256": "3cd36eced2b45f896ae90de918929140904b31df635f83b0f04afddfefe45c39",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/quantum_cyclic_module.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/quantum_cyclic_module.json",
+        "--prime-limit",
+        "251"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.866,
+      "log_sha256": "938c03e958607203c156cd5aae930c66b41db6ec45e5612c6983b9ea1c348ae3"
+    },
+    {
+      "name": "quantum_phase_completion",
+      "source": "computations/verification/quantum_phase_completion.py",
+      "sha256": "c28582fd61eb0a5efd5baff6e31391d5e280e9e8e2644b276e6d71cf6b9afaa7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/quantum_phase_completion.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/quantum_phase_completion.json",
+        "--prime-limit",
+        "131"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 5.131,
+      "log_sha256": "9438acf746ab094d013c12924aa748f9b263e680db7aec2241a3f17156129db3"
+    },
+    {
+      "name": "rare_phase_limit",
+      "source": "computations/verification/rare_phase_limit.py",
+      "sha256": "906a7845d39a6b7698dd62e757f42b09820c6d443eb8da66810516bc9c0a6ad8",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/rare_phase_limit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.792,
+      "log_sha256": "44fceec8c7eb3c7fde7a671cf0095c8ad8d55833444c16b3a30355582232c43e"
+    },
+    {
+      "name": "rare_phase_testing",
+      "source": "computations/verification/rare_phase_testing.py",
+      "sha256": "86870c68ed5a608c03e593b59466021b05cf8e7cfcc2f058bb27a3419b65411c",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/rare_phase_testing.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 4.967,
+      "log_sha256": "bdd8fe5845f68c343f794a4b1625b50d4d7828cc895ff6fae7e9337642dd5473"
+    },
+    {
+      "name": "repository_audit",
+      "source": "computations/verification/repository_audit.py",
+      "sha256": "208f12377e027218c7b0d67791c6bfe2c3b66d16456d872d6ec1982bc48341af",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/repository_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.272,
+      "log_sha256": "197d1403b25a79462793357cd5700c87217b146eb72d193c7bf74f810018461c"
+    },
+    {
+      "name": "resonance_hessian_obstruction",
+      "source": "computations/verification/resonance_hessian_obstruction.py",
+      "sha256": "e7a775c90a25f5737a5172dfdcf40dc1ce2fbc20a000de0e96f26c8c468cfe7a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonance_hessian_obstruction.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/resonance_hessian_obstruction.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.819,
+      "log_sha256": "a05a32e8c8b309a8cfa46384fdffa8a9c64c9af01a8cc8d8a89f3e02e62511d5"
+    },
+    {
+      "name": "resonance_nondegeneracy_certificate",
+      "source": "computations/verification/resonance_nondegeneracy_certificate.py",
+      "sha256": "2919661b2c6ebacc381bce42d77031ccfb28727aa3d13466f7a5335286b2fd3a",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonance_nondegeneracy_certificate.py",
+        "--radius",
+        "8",
+        "--output",
+        "$INITIAL_CHECK_LOGS/certificates-i08jphcm/resonance_nondegeneracy_radius8.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 7.827,
+      "log_sha256": "0320c18a8eb12ace304eacfe8d047499b96950d65140e55d5186bf01b4768e27"
+    },
+    {
+      "name": "resonance_pair_variance_regression",
+      "source": "computations/verification/resonance_pair_variance_regression.py",
+      "sha256": "56da939251efa3b92849aa5b609e6be835e56f123f2b5509da4adb9f9cc7ceaf",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonance_pair_variance_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.337,
+      "log_sha256": "8a34098c9bfc44d34d64c46a1b3f0338ed07340a26abddd5273de79416e5f9cc"
+    },
+    {
+      "name": "resonance_quantum_variance",
+      "source": "computations/verification/resonance_quantum_variance.py",
+      "sha256": "0d6b2e50cc7ed2767814390de1b61e8f157703e05f5b43ae79ef559fe54b8f37",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonance_quantum_variance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/resonance_quantum_variance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.487,
+      "log_sha256": "25146b901ab59dbd39d6fb9f5d302caa2e70c1108de7f2b3c84ba6123219fbc3"
+    },
+    {
+      "name": "resonance_wiener_stability",
+      "source": "computations/verification/resonance_wiener_stability.py",
+      "sha256": "531a43659adb7faaf870f567eb2e2f9e63fdd16d298710a7295e1316f3d349f3",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonance_wiener_stability.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.188,
+      "log_sha256": "3f0cd2fcc6b2a20cb0fe0ed2ddff67ef1500afdabec4457963c91546ff7621b6"
+    },
+    {
+      "name": "resonant_density_audit",
+      "source": "computations/verification/resonant_density_audit.py",
+      "sha256": "0972b017a2cd27e8c12d51e3fe0a74ec54f80f1b63ae8275819c00d374b7ab37",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/resonant_density_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/resonant_density_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.941,
+      "log_sha256": "afddb7e3263f1614d9e74005a6f99c55f19d79adf174840d6b52ccfe47d73d26"
+    },
+    {
+      "name": "return_local_limits",
+      "source": "computations/verification/return_local_limits.py",
+      "sha256": "473421067ee8287a90c13ac40842ba224d4eb77112c01c44aca5ce9691cb1c18",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/return_local_limits.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/return_local_limits.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.187,
+      "log_sha256": "cf1d9049d58f5b0e7ee5fd1b408dcd36da7219b03e0bb075a7c951d8d41a1282"
+    },
+    {
+      "name": "return_trace_obstruction",
+      "source": "computations/verification/return_trace_obstruction.py",
+      "sha256": "b7519eedfe23ad79511ed5fcb1c1849557700ce5ae3a1625f6d6713aafaa2b08",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/return_trace_obstruction.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/return_trace_obstruction.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.637,
+      "log_sha256": "f325f9bc8380977dc326a9b119bb1a4771f42c521200316b9cecaee906823ab2"
+    },
+    {
+      "name": "run_four_cut_kernel",
+      "source": "computations/verification/run_four_cut_kernel.py",
+      "sha256": "ce46321fb8c8f50553e8e18722a4b4f876cdf69b7e5fddec35e2b66b8d8bab77",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/run_four_cut_kernel.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 5.365,
+      "log_sha256": "b78b80055051e0e00d4f004d77d8c53a9a80c37b299c8e1689ce4c96091639d6"
+    },
+    {
+      "name": "scientific_registry_audit",
+      "source": "computations/verification/scientific_registry_audit.py",
+      "sha256": "67ef067136b35d51aa3085a930497a780e84f209f0b1000f421a6a3256db56a6",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/scientific_registry_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.085,
+      "log_sha256": "f759a8eaf994e747da293888c6b13b7b580fca5d81a56174b3c52af0735fbfae"
+    },
+    {
+      "name": "seven_primary_certificate",
+      "source": "computations/verification/seven_primary_certificate.py",
+      "sha256": "b30176fbeb86b919848210bb9da329032ebfaf0d0a32ea2583d75ef6de83ccc8",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/seven_primary_certificate.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.937,
+      "log_sha256": "81db280813764d95ba3153da2b88fbe5bec5557d2d12da2ab74c8adc531a9b59"
+    },
+    {
+      "name": "shell_instability",
+      "source": "computations/verification/shell_instability.py",
+      "sha256": "6bfbc1f822031958778ca9a41af54a7727e89e9b334ed47f11db244183e55fc7",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/shell_instability.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.14,
+      "log_sha256": "f45f96c893756929e9988a6a0af9242e2cc9ed5aa05bb7a76d9719b9d68fc5a5"
+    },
+    {
+      "name": "signed_heisenberg_audit",
+      "source": "computations/verification/signed_heisenberg_audit.py",
+      "sha256": "6a5eeed18d05c74c7d22e56c877e74d024e6dea54e71b215247da40f517b29ca",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/signed_heisenberg_audit.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/signed_heisenberg_audit.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.195,
+      "log_sha256": "c27b01c54528a0dfdd423d995f6e65e06ed2cd8d70109198d7c7fb22e2664fda"
+    },
+    {
+      "name": "smooth_recurrence_and_compensation",
+      "source": "computations/verification/smooth_recurrence_and_compensation.py",
+      "sha256": "59a093622345cb2b069148f096c72f3096d2479cd6cfbc3e3a5d6a02a0c8d2b8",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/smooth_recurrence_and_compensation.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.538,
+      "log_sha256": "838b0f645293895889c938e9187fd57fbbaed625b3a4543872577bc9b44d7c40"
+    },
+    {
+      "name": "spectral_diagnostics_contracts",
+      "source": "computations/verification/spectral_diagnostics_contracts.py",
+      "sha256": "188ee2077edcac01ecc529b3ef58164d41b0013f5f5ad41e1206422524c7cec1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_diagnostics_contracts.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.488,
+      "log_sha256": "4a8b64ea1a5640a62c3afc5d4e7e220755ab0d2d18c4c850e2b277c4a056bc26"
+    },
+    {
+      "name": "spectral_integer_window_regressions",
+      "source": "computations/verification/spectral_integer_window_regressions.py",
+      "sha256": "2a8e30f6ca66fa69a01d38df699005902de8179fd078558e69db6e28dac3735f",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.438,
+      "log_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46"
+    },
+    {
+      "name": "spectral_lattice_clustering",
+      "source": "computations/verification/spectral_lattice_clustering.py",
+      "sha256": "e19afcd295e287df6a8e673ff75685dbee42b64bea05233a5d2f0fb186aa31ec",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_lattice_clustering.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 3.854,
+      "log_sha256": "d8ce05330fc4c35782a9601bb053b0c62d8f385069f771642cea887d64ceaded"
+    },
+    {
+      "name": "spectral_module_regression",
+      "source": "computations/verification/spectral_module_regression.py",
+      "sha256": "5a86e5b2c4ac5ab86ebfbd22a1de5499ddfd2ccc23c4c8a908d3e6467c093de9",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_module_regression.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/spectral_module_regression.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.687,
+      "log_sha256": "e4b4bdbb747707db3d459cade5f4e44cc3f3ec0879a0078b3f810e7b0eb9aeda"
+    },
+    {
+      "name": "spectral_resolution",
+      "source": "computations/verification/spectral_resolution.py",
+      "sha256": "d118a349d255ce71be034d21c2141e3d6754197bade7467fc075d1c050d292fb",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_resolution.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.64,
+      "log_sha256": "2dd91ae4586ec44775b60000ad04f40d65609cc4fecabea44c2373d2d23e09b2"
+    },
+    {
+      "name": "spectral_smoothing_sensitivity",
+      "source": "computations/verification/spectral_smoothing_sensitivity.py",
+      "sha256": "f14b2923c581d6c23b97c58831545afd59d033fd15ef0f8bd5b4271f2f01f17d",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/spectral_smoothing_sensitivity.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 35.362,
+      "log_sha256": "82c2e40d473c8957ac47b553f40a5c291619f58ad6ab8c057998d4bcecb77702"
+    },
+    {
+      "name": "temporal_quantum_variance",
+      "source": "computations/verification/temporal_quantum_variance.py",
+      "sha256": "5bb33447d6b154500b8de574566151035f6717aa145c5989773fa509302689c1",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/temporal_quantum_variance.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/temporal_quantum_variance.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.238,
+      "log_sha256": "3aa180b16fffbdc2dbd431f424b37c7f5f9d2a6618093087115ae3b57a12a3df"
+    },
+    {
+      "name": "temporal_soft_modes",
+      "source": "computations/verification/temporal_soft_modes.py",
+      "sha256": "4989a46427f9ad16089c22441e752ec3551b3478b877db7fbd5174008d888c88",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/temporal_soft_modes.py",
+        "--output",
+        "$INITIAL_CHECK_LOGS/temporal_soft_modes.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.59,
+      "log_sha256": "a86f7ebe7efe1a723eb75c0e21771d89bb727444d0d33de96bc254132d196fad"
+    },
+    {
+      "name": "text_control_audit",
+      "source": "computations/verification/text_control_audit.py",
+      "sha256": "e403f19901a94608360a95fe336c3edd4ea827f7e77281c26db574a655df5a34",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/text_control_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.439,
+      "log_sha256": "1a42505db00fd87b236024ac4a4552838336183bf3a8474b65c43ce47017b0d0"
+    },
+    {
+      "name": "three_block_unmarking",
+      "source": "computations/verification/three_block_unmarking.py",
+      "sha256": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/three_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 2.057,
+      "log_sha256": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362"
+    },
+    {
+      "name": "twisted_jacobi_regression",
+      "source": "computations/verification/twisted_jacobi_regression.py",
+      "sha256": "3b37a4968b91344b3ed9ab8152d326c9003b22c59e6e4a9e1c228bd29392ce5e",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/twisted_jacobi_regression.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.593,
+      "log_sha256": "abfa49c982c1a471a3ed7177968e599f2dfb977a5eb3a07aa9662e62f6c43a8c"
+    },
+    {
+      "name": "two_radius_rigidity",
+      "source": "computations/verification/two_radius_rigidity.py",
+      "sha256": "3fbb580bdc19ab8abca4b2e1f88d704464d924caa2082e44c7e042afc268b79e",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/two_radius_rigidity.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.644,
+      "log_sha256": "34d7f758d54f8d3e4d74bd5b4d04eb0950b8fc5a9236f548689b83e95863019f"
+    },
+    {
+      "name": "wiener_resonance_audit",
+      "source": "computations/verification/wiener_resonance_audit.py",
+      "sha256": "6fd7ca4da0a78316be8ceab3af91b680cdb1074b6a3d577d9abdde8ad29b899c",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/wiener_resonance_audit.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.636,
+      "log_sha256": "16641669f56782f64e46722321ba7140231d9a0995df9e837e7f9635ea0851ce"
+    },
+    {
+      "name": "spectral_diagnostics_verify",
+      "source": "computations/analysis/spectral_diagnostics.py",
+      "sha256": "607e935f93e58b2cd956374137901f8ca5900e79627f65ca9ca3f9af29d22177",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/analysis/spectral_diagnostics.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 33.121,
+      "log_sha256": "ffc8f8ff9c5a6d363bebe13b5aaae4783ee17ddc57ed04a588633b879ea053f8"
+    },
+    {
+      "name": "cpp_cat_map_order",
+      "source": "computations/cpp/cat_map_order.cpp",
+      "sha256": "e96056c00e36439218fd17930389391e8616f04b81f426d78021e553e0e7c48b",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cat_map_order",
+        "verify"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "4a3578aabc499ab3a90ccac309646e0de2d9724295b32ca0b25b005760228cd7",
+      "seconds": 0.008,
+      "log_sha256": "2d059d14d14256c2a219a2dcf410421ba7bc15d42eeba7c993340199ba7b29dd"
+    },
+    {
+      "name": "cpp_cayley_direct_energy_verifier",
+      "source": "computations/cpp/cayley_direct_energy_verifier.cpp",
+      "sha256": "ee3a665af1ab0f8d86344e6971b2494b73be8cbb4bd83bb5973141a0a80b65ab",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cayley_direct_energy_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "f4d1b32c4538fa884f68c577a967dd04b9e37479c21bae10b2f2b3c476c9b23f",
+      "seconds": 0.064,
+      "log_sha256": "869970209396d2c7d14a148d0ffc4ff63d51e16b92d92460bc56fc39be07fe1d"
+    },
+    {
+      "name": "cpp_cayley_energy_verifier",
+      "source": "computations/cpp/cayley_energy_verifier.cpp",
+      "sha256": "a9dc7ca1ebf5e1a7e2edadbbeb9e2bf3a84562cb8217bd0be871eed750b7623a",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cayley_energy_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "d2c1819ccb1824e32b09a144f5ca0ef4dc196a1b818dba13f01db2a1e8b6ebe2",
+      "seconds": 0.004,
+      "log_sha256": "ee25b390bf6817738773491dad1d301a63fa9d8e5d494dd2c83afb3f19dc3af4"
+    },
+    {
+      "name": "cpp_cayley_fibonacci_verifier",
+      "source": "computations/cpp/cayley_fibonacci_verifier.cpp",
+      "sha256": "c28243ae41f643f614457b5e9b96a27c0a9a5014dd2cce2eebc3428da301ddd2",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cayley_fibonacci_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "6cc08f667154d4a57e169ae310076d8138f93d51a3c317315f23c9ef21fa0acf",
+      "seconds": 0.016,
+      "log_sha256": "2f7ea9a1c8a8a9216fd102ddb99b47c4e4ab736ca37e9f0eca1d6fd147d62260"
+    },
+    {
+      "name": "cpp_cayley_fourier_hybrid",
+      "source": "computations/cpp/cayley_fourier_hybrid.cpp",
+      "sha256": "18fd11442666a8227038247f1ca87bb38ffe6b4d5e7240bdbe92543d05ab8b83",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cayley_fourier_hybrid"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "e65ea57e7eee4198fbd4ef9d80ddcaeef0e8f0f20f4e9987ed6c04e034047c47",
+      "seconds": 0.016,
+      "log_sha256": "00aa73294db4436b7062a371651d3a51c1bc15af54c075f05a456aa3e135976a"
+    },
+    {
+      "name": "cpp_cayley_trace_intercept_rigidity",
+      "source": "computations/cpp/cayley_trace_intercept_rigidity.cpp",
+      "sha256": "5109a8f3c65b7cbb36a3d81cc5ee4f9e7dea157c050b1db8de6e55cc6217592b",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/cayley_trace_intercept_rigidity"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "7be724c5213833269e1ed0fe5ce0036f3e90ea8d8a89156f7f21e0c9494e0c4d",
+      "seconds": 0.466,
+      "log_sha256": "049567ceb65871a4bcdd199cae2c56390eafe8988d74402354732ff800dd3aa6"
+    },
+    {
+      "name": "cpp_coherent_aperture_bounds",
+      "source": "computations/cpp/coherent_aperture_bounds.cpp",
+      "sha256": "5e1f2041f7d53dd790a5e0753fb031cfdc20f7cbed80cb851e89ba008d480d8f",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/coherent_aperture_bounds"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "d01e511248fffbaf2e2e5f6a2f9b9dd558622b4b95f799b960458a505d8101d2",
+      "seconds": 0.064,
+      "log_sha256": "e44db063626434679ae369a4acc77f240378588c6eab26b44679d281b20e9688"
+    },
+    {
+      "name": "cpp_extremal_resonance_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/extremal_resonance_replay"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "5fe40645e279666e160a436f67f10c994acd705bc3d58eb212d8f3d8af410747",
+      "seconds": 0.004,
+      "log_sha256": "b07c0cb6982fb9dbd2e50c7c5d00924a07fa402a1b13773bf8d1d7688d98180c"
+    },
+    {
+      "name": "cpp_fixed_strength_locality_exact",
+      "source": "computations/cpp/fixed_strength_locality_exact.cpp",
+      "sha256": "52517e97704f33e41b7a3753acc905ee779dc906e75effcef826c02fc9867c7a",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/fixed_strength_locality_exact"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "f4a30ae1e4c313799d62686cff183fc09fa2076c89710248096ccca504b31f3c",
+      "seconds": 0.008,
+      "log_sha256": "0f3729589eb300a86c3f63e098d9e6d94fbf08fca6b078fe32052ae2ec3b9e17"
+    },
+    {
+      "name": "cpp_four_cut_rank_two_kernel",
+      "source": "computations/cpp/four_cut_rank_two_kernel.cpp",
+      "sha256": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/four_cut_rank_two_kernel"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "d939960721a4834ddb480f0da9e396985889ec4b6225b6c92bccd818eb8ad2a6",
+      "seconds": 0.315,
+      "log_sha256": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326"
+    },
+    {
+      "name": "cpp_fourth_moment_pair_key_verifier",
+      "source": "computations/cpp/fourth_moment_pair_key_verifier.cpp",
+      "sha256": "e7a2d8f064ae6d027f69756c81feaef8adf5beb73e536918ac058636b139527e",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/fourth_moment_pair_key_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "dc53a26ff264e335d696e4c0215377c08450ec7b8c4255382cfac6d680126907",
+      "seconds": 0.817,
+      "log_sha256": "2f3a4bd7a455e647f3eb15019c54775d1ce6202f9c5f14cec0f397360dd3f5ab"
+    },
+    {
+      "name": "cpp_general_hyperbolic_periods",
+      "source": "computations/cpp/general_hyperbolic_periods.cpp",
+      "sha256": "2e06f8b25ec62c930a7b6aa758b320de588e11e84432c1ff4c55ff30108270e9",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/general_hyperbolic_periods"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "6017f0e3cd01808316227cdbc7b1af4c557baf96a7cd50b37913ce380252c814",
+      "seconds": 0.004,
+      "log_sha256": "ca84b31ff8bceef80f16f4b03e2226a582d2cdf30b7383800e944347eed6a547"
+    },
+    {
+      "name": "cpp_magnetic_word_verifier",
+      "source": "computations/cpp/magnetic_word_verifier.cpp",
+      "sha256": "99f9331927db49a7b04c072a253f9ed1b53693b1238955d09e733f0adee70a8f",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/magnetic_word_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "6c73591418b5ed7e1b5cacaa3f18ba43cab449d32f42073ff9a0b9713abbca63",
+      "seconds": 0.008,
+      "log_sha256": "38bdd95c65f4061dcaad737e1ac58d9549f9aa760ab89845952eae4c51e23eef"
+    },
+    {
+      "name": "cpp_pell_coboundary_pairs",
+      "source": "computations/cpp/pell_coboundary_pairs.cpp",
+      "sha256": "5ba6fa536a427fc85905d3a71b3d5f6b21f7e9ca3f1f229d18d9735cb18d38e4",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pell_coboundary_pairs"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "3e290dd28db73169eac4dbde3411f89abd7c1b34670b4ff1d601c248d430a278",
+      "seconds": 0.065,
+      "log_sha256": "7cc0f38bca889b6f496a86a3d8678e7b287f983d03dbc5dbc4a119d68833c9ac"
+    },
+    {
+      "name": "cpp_pell_floquet_pair_verifier",
+      "source": "computations/cpp/pell_floquet_pair_verifier.cpp",
+      "sha256": "7878b211c4996fe8cfdb6a29c39e62fc17a417fef50bf9e30df5f893bd4a15cc",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pell_floquet_pair_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "f9f887cff16304fd633f6f2fdb270e8c5d702978c03c4fb11d822782081eea7a",
+      "seconds": 0.017,
+      "log_sha256": "9e74cc230b1f6e4bf9ec104f3823144d50da52bd197baf5d0c50d2e9dfd40e88"
+    },
+    {
+      "name": "cpp_pell_minimal_relation_verifier",
+      "source": "computations/cpp/pell_minimal_relation_verifier.cpp",
+      "sha256": "7baef19a7775ee16634dafca867492ff151a2bacf005428f64ece81c041651cf",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pell_minimal_relation_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "178f07db2c0d84020fe1c08ffcf5b42cdf6b477ef1bcdfe8ed908c3896a9717a",
+      "seconds": 0.004,
+      "log_sha256": "bc30dcb93d5f01522bcb4fca75f71a3b1b83149dfa7b72e434de369e38c2d79c"
+    },
+    {
+      "name": "cpp_pell_pair_orthogonality",
+      "source": "computations/cpp/pell_pair_orthogonality.cpp",
+      "sha256": "961239c85e184da5175a7097b1b3bf7cf60d2a504e89ecdd48fb6fb9ee4a1d39",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pell_pair_orthogonality"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "a5ee196b3712bae9038829d44dbea343c9dabcfee1929805a67a07a0034f6c5f",
+      "seconds": 0.016,
+      "log_sha256": "42af2b1c993c9ce2ed9592ba1b9a2e2542505e4587f666b5825c800485400a45"
+    },
+    {
+      "name": "cpp_pell_sharp_orbit_verifier",
+      "source": "computations/cpp/pell_sharp_orbit_verifier.cpp",
+      "sha256": "bbcbbf308c80b8e32e0d304cd125160b70a437f24ce8a1195a5343c2c4d36661",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pell_sharp_orbit_verifier"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "7fd1f989d7454a48e724b5b32bb342e5d812f13cf5a8cb1a8afd753f6a074877",
+      "seconds": 0.115,
+      "log_sha256": "75850e16a3b97b7e9027bcb927b8f40b110a72b38691509844d2180e76c736c9"
+    },
+    {
+      "name": "cpp_pure_loss_discrimination_bounds",
+      "source": "computations/cpp/pure_loss_discrimination_bounds.cpp",
+      "sha256": "fb7f495a8c232df2195e6e5b1ecfaead36c99d40965271c6b32c01fb344f546f",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/pure_loss_discrimination_bounds"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "e4b33baeecc7ecf14ceba2715b71382791bd71ad1efa67e2862ecb8a6773edb3",
+      "seconds": 0.033,
+      "log_sha256": "3719c7dd9110428b407b8dd084de15ff09093f73321ff1b046f5a6796d4d31fb"
+    },
+    {
+      "name": "cpp_rare_phase_certificate",
+      "source": "computations/cpp/rare_phase_certificate.cpp",
+      "sha256": "66c21fdc769ab1620e68a06a85109c11f77dcfc7ab912ce45f60bc25867ee5fd",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/rare_phase_certificate"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "11d8f4e12b769e15ad585f185b9416d1aa4f4ffca4e7d5099b61cebabcdb09ea",
+      "seconds": 0.115,
+      "log_sha256": "0dbac965b5198e58b97f42eb1dff02d329c0c9df5eca198535cb7cbf375cf8b2"
+    },
+    {
+      "name": "cpp_return_word_certificate",
+      "source": "computations/cpp/return_word_certificate.cpp",
+      "sha256": "707012e699e4ab6717ee67f6a86e10623007110b9b66efded31ac98e7cfe053a",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/return_word_certificate"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "c8775dd770a8841b28d78545f74cfc5c49fd27de63d8c43defa19f4e1bae6941",
+      "seconds": 0.004,
+      "log_sha256": "9b437739a6749f4125ce1f01b48c98841a214bda6a02a6a90aa16ea18bb934ea"
+    },
+    {
+      "name": "cpp_spectral_lattice_clustering",
+      "source": "computations/cpp/spectral_lattice_clustering.cpp",
+      "sha256": "83b052be5c9ce134a178d7a33251d63e18b5900da706a56343c5295694295f42",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/spectral_lattice_clustering"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "c3cc6939489783bfcbaa5aefb963f5064e2bf869f13b8376c62e10eb431951ca",
+      "seconds": 0.016,
+      "log_sha256": "7d11e0cdbd864ef9160c7351d5bdc47a29ecafb9fb34569e31750abcb5e0b31b"
+    },
+    {
+      "name": "check_resonance_certificate",
+      "source": "computations/verification/check_resonance_certificate.py",
+      "sha256": "e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5",
+      "source_unchanged": true,
+      "command": [
+        "$PYTHON",
+        "$INITIAL_SOURCE_ROOT/computations/verification/check_resonance_certificate.py",
+        "$INITIAL_CHECK_LOGS/certificates-i08jphcm/resonance_nondegeneracy_radius8.json",
+        "--output",
+        "$INITIAL_CHECK_LOGS/certificates-i08jphcm/resonance_certificate_replay.json"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.395,
+      "log_sha256": "30f3b099724de37f786a245f1cfcbbdec6f545febc1dea9d9e54ac76d4e45aac",
+      "producer": "resonance_nondegeneracy_certificate",
+      "input_artifact": "$INITIAL_CHECK_LOGS/certificates-i08jphcm/resonance_nondegeneracy_radius8.json",
+      "input_artifact_sha256": "bc24b63b713e13b1cfdeadf62eea6d40117c4bc6fe6511974c733f66e3c29b44",
+      "input_artifact_unchanged": true
+    },
+    {
+      "name": "extremal_independent_replay",
+      "source": "computations/cpp/extremal_resonance_replay.cpp",
+      "sha256": "f408513fb5609071bb7d088e209dcb4b152ccba291b1b58411cf8d9a816dc5da",
+      "source_unchanged": true,
+      "command": [
+        "$PRIOR_CPP_BUILD/cpp/extremal_resonance_replay",
+        "$INITIAL_CHECK_LOGS/certificates-i08jphcm/extremal.replay"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "5fe40645e279666e160a436f67f10c994acd705bc3d58eb212d8f3d8af410747",
+      "seconds": 0.567,
+      "log_sha256": "852b94c1dd1125b3e83e13d97f582db3a7e64460fc7aa4f0126de3251daff376",
+      "producer": "extremal_resonance",
+      "input_artifact": "$INITIAL_CHECK_LOGS/certificates-i08jphcm/extremal.replay",
+      "input_artifact_sha256": "b76ed68256f039f56113aaa568ce48334513f5cbb7862e5c0d21df3d119f34b3",
+      "input_artifact_unchanged": true
+    }
+  ],
+  "certificate_directory": "$INITIAL_CHECK_LOGS/certificates-i08jphcm",
+  "selection": "complete Python/C++ surface",
+  "python_assertions": "Child PYTHONOPTIMIZE=0; verifier assert statements enabled.",
+  "cpp_build_provenance": "Prebuilt executable hashes are recorded; this runner does not establish source-to-binary correspondence.",
+  "passed": 178,
+  "total": 178,
+  "repository_mutation_policy": "Generated verifier outputs stay below --logs; committed evidence is not rewritten.",
+  "source_manifest_ref": "archive-manifest.json",
+  "publication_note": "Machine paths tokenized; raw/public mapping retained. Null provenance unchanged. This is the initial pre-typesetting-repair snapshot."
+}

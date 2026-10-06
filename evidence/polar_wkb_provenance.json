@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-06",
+  "research_base_revision": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "canonical_head_observed": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "scope": "Prepared publication overlay only. Canonical files were not edited; final acceptance and integration remain with the parent.",
+  "claim_scope": "Supporting proof under BGS-TRACE-017; no new stable claim ID.",
+  "source_hash_comparisons": [
+    {
+      "path": "mathematics/four_branch_parametrix.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "before_curation_sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "after_curation_sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "mathematics/fixed_map_path_model.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "before_curation_sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "after_curation_sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "mathematics/frozen_operator_transfer_coercivity.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+      "before_curation_sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+      "after_curation_sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "supplement/fixed_map/ergodic-transfer/ergodic_spectral_transfer.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8",
+      "before_curation_sha256": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8",
+      "after_curation_sha256": "28b76d0fb3a64d7875aaa568ef3817dadfd9b478d965561bb11edc587bf62cf8",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "mathematics/trace_to_local_statistics_bridge.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd",
+      "before_curation_sha256": "8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd",
+      "after_curation_sha256": "8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "mathematics/microscopic_rounding_control.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+      "before_curation_sha256": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+      "after_curation_sha256": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "record/microscopic_rounding_review.md",
+      "role": "canonical dependency",
+      "reviewed_baseline_sha256": "a9781392ea71395d8f634677e1638e6aa9ea13696ee56c7ea98387e8e964e895",
+      "before_curation_sha256": "a9781392ea71395d8f634677e1638e6aa9ea13696ee56c7ea98387e8e964e895",
+      "after_curation_sha256": "a9781392ea71395d8f634677e1638e6aa9ea13696ee56c7ea98387e8e964e895",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "source overlay/polar_wkb_stability.md",
+      "role": "reviewed research artifact",
+      "reviewed_baseline_sha256": "f7a913be02158f53feac875417ad22456620cc33559afc6648c42e567d443234",
+      "before_curation_sha256": "f7a913be02158f53feac875417ad22456620cc33559afc6648c42e567d443234",
+      "after_curation_sha256": "f7a913be02158f53feac875417ad22456620cc33559afc6648c42e567d443234",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    },
+    {
+      "path": "source overlay/independent_review.md",
+      "role": "reviewed research artifact",
+      "reviewed_baseline_sha256": "de557ddc103ea63db28c58f8164776734a498ab67f0063c630acc9c567a0bbc4",
+      "before_curation_sha256": "de557ddc103ea63db28c58f8164776734a498ab67f0063c630acc9c567a0bbc4",
+      "after_curation_sha256": "de557ddc103ea63db28c58f8164776734a498ab67f0063c630acc9c567a0bbc4",
+      "baseline_equals_before": true,
+      "before_equals_after": true
+    }
+  ],
+  "source_comparison_result": {
+    "entries_checked": 9,
+    "reviewed_baseline_matches_before": 9,
+    "before_matches_after": 9
+  },
+  "publication_mapping": [
+    {
+      "source_artifact": "source overlay/polar_wkb_stability.md",
+      "destination": "mathematics/polar_wkb_quantization_stability.md",
+      "transformation": "Title/status and publication links curated; section 4A renumbered 5 and dependency section renumbered 6. Mathematical proof retained."
+    },
+    {
+      "source_artifact": "source overlay/independent_review.md",
+      "destination": "record/polar_wkb_review.md",
+      "transformation": "Publication title, scope and relative links curated; source section numbers mapped to maintained proof. Audit scope unchanged."
+    }
+  ],
+  "review_scope": "Independent internal review of smooth ratio symbols, exact shift composition, first-correction reality, added amplitude, polar defect and smooth unitary bridge. It did not independently audit the inherited marked transport, actual mixing source leaves, or complete spectral consequence.",
+  "proof_boundary": "Elementary source-bound analytic proof. No auxiliary numerical experiment or formal compilation is claimed.",
+  "mathematical_boundary": "All-order compact law at either unitary endpoint remains a hypothesis. No CUE law is evaluated, no W0 eigenvalue matching is asserted, and no principal WKB raw trace-table J=0 replacement is inferred.",
+  "artifacts": [
+    {
+      "path": "mathematics/polar_wkb_quantization_stability.md",
+      "sha256": "73442f0d0cb2cea9b102655440ad971ea672eb55d48800ecd8673f47221ddebb"
+    },
+    {
+      "path": "record/polar_wkb_review.md",
+      "sha256": "3d68bf7c32ef76dbc62959f03427b2aac89cfa3700761428a271402c8188d1f9"
+    },
+    {
+      "path": "INTEGRATION.md",
+      "sha256": "4b85e6f4ac799a364e81ddf44025c80592cb449045e9c86a7d1000f7930e4996"
+    },
+    {
+      "path": "manuscript_paragraph.tex",
+      "sha256": "a91e03507b9fd6d3b5003da3b380177c655691c7a3852f67c75b6b9b3d1d679b"
+    },
+    {
+      "path": "prepare_overlay.py",
+      "sha256": "da63383b87ca7502bcbdedcdebc53c9c5812eb2dd1bfda25fb22b45432d7d1ff"
+    }
+  ]
+}

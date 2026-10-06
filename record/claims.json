@@ -1937,6 +1937,109 @@
         "manuscript/unified_sections/four_cut_rank_two_kernel.tex"
       ],
       "boundary": "Exact executable predicates only: pairs 5..12, 3858 configurations and 560 directed local matches; oriented triples 5..10, 650 configurations and no matches; m=4 exclusions. Full ranges use native_decide with its generated native-evaluation axioms; m=4 uses ordinary decide with propext. Abstract compression/lifting, enumeration-to-abstract-word correspondence, analytic cancellation and full unmarking are not formalized. No deterministic BGS conclusion."
+    },
+    {
+      "id": "BGS-TRACE-017",
+      "title": "Actual fixed-order WKB instantiation of the complete factorial trace reduction",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; ANALYTIC CHAIN UNFORMALIZED",
+      "source": "mathematics/factorial_wkb_reduction.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-001",
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/trace_to_local_statistics_bridge.md",
+        "mathematics/heisenberg_trace_support.md"
+      ],
+      "evidence": [
+        "record/heisenberg_wkb_review_scope.md",
+        "record/heisenberg_wkb_review_provenance.json",
+        "evidence/executions/20261006/heisenberg-wkb/receipt.json",
+        "record/heisenberg_wkb_integration_delta.json",
+        "evidence/executions/20261006/heisenberg-wkb-integration/receipt.json",
+        "record/heisenberg_wkb_prior_attribution.json",
+        "record/global_rotated_box_review_scope.md",
+        "record/global_rotated_box_integration_delta.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_wkb/check_independent.py",
+        "computations/verification/heisenberg_wkb/check_raw_gauss.py",
+        "computations/verification/heisenberg_wkb_controls.py",
+        "computations/verification/global_rotated_box_trace.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/heisenberg_wkb_reductions.tex",
+        "manuscript/unified_sections/global_rotated_box_trace.tex"
+      ],
+      "boundary": "For each fixed k>=2 and compact smooth Fourier weight choose fixed J>=k; full partition transform changes by O(N^(k-J-1/2)). Laurent and adjoint signed tables are distinct. No positive spectral process for nonunitary V; no growing k,J,bandwidth or effective startup. Ensemble comparison is equivalent but remains open. Exact reciprocity and local resummation are separate supporting results. The separately reviewed global rotated-box theorem controls a finite-band contour representation and summed tail, conservatively m<=2N; signed box evaluation, entropy-compatible local remainders and unrestricted bands remain open. TRACE-005 and BGS-BGS-001 remain OPEN.",
+      "supporting_results": [
+        "mathematics/exact_gaussian_reciprocity.md",
+        "mathematics/uniform_cluster_lemma.md",
+        "mathematics/rotated_local_first_loop.md",
+        "mathematics/polar_wkb_quantization_stability.md",
+        "mathematics/global_rotated_box_trace.md"
+      ]
+    },
+    {
+      "id": "BGS-FM-024",
+      "title": "Actual scalar common commutant on the unramified higher-seven-primary family",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-CERTIFICATE + INDEPENDENT CONSOLIDATION REVIEW",
+      "source": "mathematics/actual_seven_primary_commutant.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/actual_commutant_20261006/actual_family_review.md",
+        "evidence/actual_commutant_20261006/promotion_receipt.json",
+        "record/actual_commutant_integration_map.json",
+        "record/actual_commutant_consolidation_review.md",
+        "evidence/executions/20261006/actual-commutant-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/actual_algebra_check.py",
+        "computations/verification/actual_factor_check.py",
+        "computations/verification/actual_field_check.py",
+        "computations/verification/actual_casoratian_check.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex"
+      ],
+      "boundary": "Every odd N with 49|N and 5 not dividing N. Actual complex common commutant of A_N and M_N is scalar. External LW input is used only for the algebraic-entry commuter corollary for literal U_N. Excludes 5|N, 7||N, spectral simplicity, quantitative gaps and BGS."
+    },
+    {
+      "id": "BGS-FORMAL-003",
+      "title": "Compiled seven-primary finite GF(5) array certificate",
+      "state": "proved",
+      "ledger_status": "COMPILED LEAN NATIVE-EVALUATION CERTIFICATE + INDEPENDENT SEMANTIC REVIEW",
+      "source": "formalization/seven_primary_certificate.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "record/seven_primary_semantic_review.md",
+        "evidence/formalization/seven_primary_20261006/build_receipt.json",
+        "evidence/formalization/seven_primary_20261006/independent_controls_receipt.json",
+        "evidence/formalization/seven_primary_20261006/aggregate-build.json"
+      ],
+      "verifiers": [
+        "computations/verification/seven_primary_certificate.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/SevenPrimary.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex"
+      ],
+      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent 19-module aggregate build completed."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

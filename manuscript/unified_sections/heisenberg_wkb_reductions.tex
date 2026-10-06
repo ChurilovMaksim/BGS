@@ -1,0 +1,72 @@
+% Publication fragment; maintained proof sources remain authoritative.
+\section{Finite-order WKB reduction and its local analytic boundary}
+The general near-unitary integer-power and complete partition perturbation
+estimate is already proved in the maintained Heisenberg trace-support source,
+Section 3. The present contribution instantiates it through the actual
+arbitrary-fixed-order WKB construction and explicit signed-table conventions.
+For each fixed factorial order $k\geq2$ and fixed compact smooth Fourier
+weight, choose a fixed transport order $J\geq k$. The direct finite-shift
+transport construction gives $\|U_N-V_{N,J}\|\leq C_JN^{-J-1/2}$.
+For either the genuine-inverse Laurent table or the signed-adjoint table,
+the complete partition--M\"obius Fourier transform changes by
+$O_{k,W,J}(N^{k-J-1/2})$. The estimate retains every partition and zero block.
+The proof uses the exact rising-factorial identity
+$\sum_\pi|\mu(\pi)|N^{|\pi|}=N(N+1)\cdots(N+k-1)$ and finite-time power
+telescoping. The signed comparison to the same ensemble reference is
+therefore equivalent at this fixed order. It remains open.
+
+The two tables must not be conflated: negative Laurent powers are inverses,
+whereas the adjoint table uses conjugated positive traces after forming each
+block sum. Neither table is assigned a positive circle spectral process.
+The every-bandwidth positive-measure extension belongs to the actual unitary
+spectra only. No fixed finite $J$ covers all orders by this estimate.
+
+Separately, exact finite Gaussian reciprocity represents every finite
+$\operatorname{Tr}V_{N,J}^m$, including all branches and winding classes,
+without coprimality restrictions. It uses rational matrix inverses and
+center-based Abel regularization on a periodic Wiener class. Its unitary
+$L^2$ extension is not a point-evaluation or cancellation bound.
+
+The massive local cyclic covariance yields formal connected coefficients
+$|\ell_{q,m}|\leq mC^q q!$. For the explicitly defined conditioned rotated
+Gaussian box, $h=(2\pi N)^{-1}$ and $mh\leq b$, the actual local theorem is
+$Z_{m,h}=\exp(h\ell_{1,m})(1+O_b(\sqrt h))$.
+The unconditioned box integral additionally carries its Gaussian box
+probability. The separate global rotated-box theorem now controls the
+original-trace contour and its summed tail in a specified finite band.
+It does not justify absolute summation of local first-loop errors over
+exponentially many classes. Signed evaluation, unrestricted bands, TRACE-005
+and deterministic BGS remain open.
+
+\paragraph{Sources and verification boundary.}
+The maintained proofs are \texttt{factorial\_\allowbreak{}wkb\_\allowbreak{}reduction.md},
+\texttt{exact\_\allowbreak{}gaussian\_\allowbreak{}reciprocity.md}, \texttt{uniform\_\allowbreak{}cluster\_\allowbreak{}lemma.md},
+and \texttt{rotated\_\allowbreak{}local\_\allowbreak{}first\_\allowbreak{}loop.md} in \texttt{mathematics/}.
+The sole external local inequality is Kolesnikov--Milman~\cite{KolesnikovMilman2017},
+arXiv:1310.2526v7, Theorem 3.1(1), p.~13 and (3.2), p.~14, with convex
+exhaustion. Independent internal review and exact finite controls are
+separate from external referee review and analytic formalization.
+
+\paragraph{The unitary polar factor of the principal WKB matrix.}
+Let $h=N^{-1}$ and retain the actual fixed coupling and ordinary Weyl
+convention.  For the explicitly glued principal four-branch WKB matrix
+$W_{0,N}$, the additional amplitude transport and direct discrete Weyl
+composition give
+\[
+ \|W_{0,N}^{*}W_{0,N}-I\|_{\mathrm{op}}=O(h^2),\qquad
+ V_N:=W_{0,N}(W_{0,N}^{*}W_{0,N})^{-1/2}
+     =\exp\!\bigl(ih\operatorname{Op}_N(b)\bigr)U_N+O_{\mathrm{op}}(h^2),
+\]
+for a fixed smooth real symbol $b=-\operatorname{Im}(a_1/a_0)$ expressed on
+the final canonical graph.  In particular $\|V_N-W_{0,N}\|_{\mathrm{op}}=O(h^2)$.
+The smooth symbol is obtained from the exact branch gluing, rather than
+inferred from an operator-norm estimate.  The preexisting ergodic
+spectral-transport theorem, with the actual logarithmic Egorov and mixing
+inputs, supplies a bounded unfolded matching of $V_N$ and $U_N$ with
+mean-square displacement $O(1/\log N)$ after a common rotation.  Consequently,
+if either unitary endpoint has all compact factorial correlation limits, the
+other has the same limits; the all-order reference bounds supply the needed
+local occupation moments.  No such limit is evaluated here.  The principal
+matrix $W_{0,N}$ may be nonnormal, and its small polar correction is not an
+eigenvalue-matching theorem for that matrix or a replacement of the
+order-$J$ trace-table reduction by $J=0$.

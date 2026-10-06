@@ -12,7 +12,7 @@ cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 18 modules; `formalization/drafts/` is deliberately outside it.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 19 modules; `formalization/drafts/` is deliberately outside it.
 
 | Module | Maintained scope |
 |---|---|
@@ -20,6 +20,7 @@ lake build
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
 | `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
 | `CueLoopKernels.lean` | integer positive-part cubic identity and cleared-denominator elimination; analytic hypotheses and limits are not formalized |
+| `SevenPrimary.lean` | FORMAL-003: 22 executable GF(5) array predicates, 7 products and 46 factor occurrences; native-evaluation trust, generic Rabin/array interpretation and actual commutant theorem unformalized |
 | `FourCutKernel.lean` | bounded rank-two four-cut predicates: 3858/560 pair cases, 650/0 oriented triples; m=4 exclusions; native-evaluation trust for full ranges, no abstract or analytic reduction formalized |
 | `FibonacciRatioSmall.lean` | exact residual Lucas/Fibonacci ratio range `1..12`; not a formalization of Carmichael's theorem |
 | `GeneralHyperbolicParity.lean` | finite Boolean/parity and explicit hyperbolic-period kernels; not the full character-theoretic spectral theorem |
@@ -78,3 +79,7 @@ refinement proof remains the finite modulo-two invariance check. These
 statements certify the parity algebra used in the general return-law
 construction, not its operator realization, cluster estimates, or limits.
 See `record/publication_review_20260912.md` for this revision's checks.
+
+[Seven-primary certificate scope and actual isolated compilation](seven_primary_certificate.md), including the independent semantic audit.
+
+The 6 October constructive aggregate build passed all 19 active modules (22 Lake jobs), replaying existing modules and freshly compiling SevenPrimary and Bgs. [Receipt and source hashes](../evidence/formalization/seven_primary_20261006/aggregate-build.json); native-evaluation trust and all unformalized bridges remain explicit.

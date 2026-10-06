@@ -1,0 +1,101 @@
+% Publication fragment; the maintained Markdown proof is authoritative.
+\section{Global rotated-box representation at finite Heisenberg bandwidth}
+\label{sec:global-rotated-box-trace}
+Keep the prescribed odd-dimensional quantization and $\tau=10^{-80}$.
+For each fixed transport order $J$, let $V_{N,J}$ be the explicit finite
+four-branch kernel. Write $h=(2\pi N)^{-1}$; its amplitude polynomial is
+$\sum_{\ell=0}^{J}N^{-\ell}a_{r,\ell}
+=\sum_{\ell=0}^{J}(2\pi h)^\ell a_{r,\ell}$.
+The two expansion parameters must not be conflated.
+
+Put $B_m=6I-P_m-P_m^{\mathsf T}$, where $P_m$ is the cyclic shift,
+and $D_m=\det B_m$. In particular $B_1=4$, while $B_2$ has diagonal
+entries $6$ and off-diagonal entries $-2$.
+For each branch vector $r\in\{0,1,2,3\}^m$ and winding representative
+$\nu\in\mathbb Z^m/B_m\mathbb Z^m$, let $x^*_{r,\nu}$ be the unique
+real stationary point of the exact lifted phase
+$\Psi_{r,\nu}(x)=\sum_j S_{r_j}(\tau,x_j,x_{j+1})+\nu\cdot x$.
+Let $A_{r,J}$ be the product of the finite one-step amplitudes and set
+\[
+ \mathcal B_{N,m,J}=
+ \frac{e(3mN/8)N^{m/2}}{8^m}
+ \sum_r\sum_{\nu\bmod B_m}
+ \int_{x^*_{r,\nu}+(1-i)[-1,1]^m}
+ e\!\left(N\Psi_{r,\nu}(x)\right) A_{r,J}(x)\,dx.
+\]
+The integrals retain the full nonlinear phase and their product orientation.
+The class list is not asserted to consist of distinct physical orbits.
+
+\paragraph{Conservative finite-band theorem.}
+For every fixed $J\geq1$, uniformly for $1\le m\le2N$,
+\[
+ \operatorname{Tr}U_N^m
+ =\mathcal B_{N,m,J}
+ +O_J(N^{3/2-J})+O_J\!\left(\sqrt N e^{-4N/5}\right).
+\]
+The first error is the separate operator-telescoping error; the second is
+an absolutely summed contour-tail error. Negative traces use conjugation.
+More generally, the latter error is
+$O_{J,\beta}(\sqrt N\exp[-(8\pi/5-\beta\log7)N])$ for
+$m\le\beta N$ and $\beta<8\pi/(5\log7)$, with a strict endpoint.
+No coprimality condition is imposed on $N$ and $D_m$.
+
+\paragraph{Contour mechanism and normalization.}
+Exact Gaussian reciprocity first gives global, center-based Abel/Fresnel
+integrals. The literal symbol bounds certify a holomorphic endpoint strip
+of width $2$, with cyclic nonlinear Hessian row bound below $1/10$.
+After centering at $x^*_{r,\nu}$, deform to
+$z=u-i\operatorname{clip}(u,-1,1)$.
+Since $K_0=B_m/4=I+L_{\mathrm{cycle}}/4$, monotonicity of clipping gives
+\[
+ u^{\mathsf T}K_0\operatorname{clip}(u)
+ \ge\sum_j\min(u_j^2,|u_j|).
+\]
+The nonlinear correction leaves imaginary-phase damping at least
+$(4/5)\sum_j\min(u_j^2,|u_j|)$.
+Cauchy deformation is performed with positive Gaussian regularization;
+dominated convergence removes it on the saturated contour.
+The proof retains the full $4^mD_m$ class count, $D_m\le6^m$, amplitude
+bound $2^m$, Jacobian bound $2^{m/2}$, and the factor $N^{m/2}/8^m$.
+Their scalar integral estimate produces the displayed summed error.
+
+\paragraph{Conditional tail without an artificial volume factor.}
+For one integral normalize by its actual leading amplitude times
+$(2\pi h)^{m/2}/\sqrt{\det K}$, where $K=-\Psi''(x^*)$.
+Partition the saturated contour by its actual large-coordinate set $S$.
+The retained core uses the exact principal Gaussian $K_{TT}^{-1}$,
+$T=S^c$, on its box. Incident interactions cost only $C^{|S|}$;
+convex-box moment and Poincar\'e estimates bound the core by $e^{Cmh}$.
+The Schur determinant ratio also costs only $C^{|S|}$. Consequently the
+normalized outside-box integral is at most
+\[
+ e^{Cmh}\left[\left(1+C\sqrt h\,e^{-2/(5h)}\right)^m-1\right].
+\]
+For each fixed $b_h$ with $mh\le b_h$, this is
+$O_{b_h}(m\sqrt h\,e^{-2/(5h)})$.
+The conditional Gaussian normalization is retained: a local box integral
+divided by the full Gaussian factor is $\mathbb P_G(B_h)Z_{m,h}$.
+Completing the core Gaussian on all of Euclidean space before bounding
+its cross terms is not permitted.
+
+\paragraph{Separate sharper corollary.}
+With $\eta=10^{-4}$, $\gamma=10^{-7}$ and
+\[
+ \kappa=\log(1+\sqrt2)+\gamma-\tfrac12\log(1-4\eta),
+\]
+the conditional bound gives total tail
+$O_{J,\beta}(\sqrt N\exp[-(4\pi/5-\beta\kappa)N])$
+for $\beta<(4\pi/5)/\kappa$.
+Indeed $a_*\le e^{\gamma m}$ and
+$\det K\ge(1-4\eta)^mD_m/4^m$; summing the leading Gaussian weights
+therefore costs at most $e^{\kappa m}$. This is a separate corollary,
+not a replacement for the stronger conservative rate at $\beta=2$.
+
+\paragraph{Scope and verification.}
+The canonical proof is \texttt{mathematics/\allowbreak{}global\_\allowbreak{}rotated\_\allowbreak{}box\_\allowbreak{}trace.md}.
+The analytic chain has fresh independent internal review and portable exact
+controls; it is not analytically formalized or externally refereed.
+This finite-band contour step is closed. Signed evaluation of the exact
+box sum, optimal local remainders compatible with exponential class mass,
+unrestricted bands, TRACE-005 and full BGS remain open. In particular, the
+local $O(N^{-1/2})$ first-loop errors are not summed absolutely here.

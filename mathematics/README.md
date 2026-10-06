@@ -17,3 +17,7 @@ The [current revision report](../record/corpus_revision_20261006.md) records fin
 ## Other scientific families
 
 Cayley arithmetic, Pell/return laws, resonance/cohomology, locality, and information-theory results retain their own hypotheses and open problems. Their inclusion in a single repository does not make them automatic dependencies of BGS. See each topic’s scope and reading sequence.
+
+[Fixed-order complete WKB reduction](factorial_wkb_reduction.md) (TRACE-017) and its exact reciprocity, formal cluster and conditioned local-saddle companions are indexed in the trace topic. Global signed cancellation remains open; the separate global rotated-box theorem controls the finite-band contour/tail step.
+
+[Actual higher-seven-primary common commutant](actual_seven_primary_commutant.md) (FM-024) closes the stated unramified 49-divisible family, with remaining arithmetic branches explicit.

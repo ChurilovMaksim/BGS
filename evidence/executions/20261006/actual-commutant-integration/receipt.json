@@ -1,0 +1,65 @@
+{
+  "base": "300d99270d11c87d0aa84e9d8f624491788629ba",
+  "scope": "Final integrated actual-certificate sources; explicit output directory and preserved prior overlay execution. Bounded exact computations only; no full-repository, aggregate Lean, manuscript or remote CI claim.",
+  "runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 computations/verification/actual_algebra_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024",
+      "exit_code": 0,
+      "source_sha256": "fbcdf95494aa42a1a63607bd4b5a7eac2c2157aa1467ac01b6c534656b758abc",
+      "log": "normal_actual_algebra_check.log",
+      "log_sha256": "41c716cbfeaaec569d9eeb20067d8f97543cac43c31376d5dc8ff5965a55a7be"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 computations/verification/actual_factor_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024",
+      "exit_code": 0,
+      "source_sha256": "f4df403aa2d2c3015585843a577a0d2d7cb2d16585cf2747e591a0886ba5a89a",
+      "log": "normal_actual_factor_check.log",
+      "log_sha256": "7425d1699eb684419b4e75ce5e7db6bca75af7dec73d07d0aed13cce5c3a9545"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 computations/verification/actual_field_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024",
+      "exit_code": 0,
+      "source_sha256": "8978935b9186fbf2708e721cd16a9b12a11da2c595dba81e71d429ab5e3b48a2",
+      "log": "normal_actual_field_check.log",
+      "log_sha256": "c80e5b089246233c30924db305a8ec99b9e0ca0b01c72d3764f1993161a090b5"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 computations/verification/actual_casoratian_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024",
+      "exit_code": 0,
+      "source_sha256": "cc9b69e3e6f68997fb8c2eb89f07fd2a11de50cc8bf43a2c1fcb10d969b80c23",
+      "log": "normal_actual_casoratian_check.log",
+      "log_sha256": "a0edc1be04378999348ab62427940a57179dd50a9229c652c9af73800b754267"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -O computations/verification/actual_algebra_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024_optimized",
+      "exit_code": 0,
+      "source_sha256": "fbcdf95494aa42a1a63607bd4b5a7eac2c2157aa1467ac01b6c534656b758abc",
+      "log": "optimized_actual_algebra_check.log",
+      "log_sha256": "f760eb7496fa08fb80e9bdca6f5c9002b3096b4ef778f0c2efb9265dd8a25649"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -O computations/verification/actual_factor_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024_optimized",
+      "exit_code": 0,
+      "source_sha256": "f4df403aa2d2c3015585843a577a0d2d7cb2d16585cf2747e591a0886ba5a89a",
+      "log": "optimized_actual_factor_check.log",
+      "log_sha256": "ca399cb50b407db777320e84105c9147d3110eb89df2d71868e8af039e359c41"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -O computations/verification/actual_field_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024_optimized",
+      "exit_code": 0,
+      "source_sha256": "8978935b9186fbf2708e721cd16a9b12a11da2c595dba81e71d429ab5e3b48a2",
+      "log": "optimized_actual_field_check.log",
+      "log_sha256": "bc4d8b111e30a8be32a617f0210faf8e35d515c80a4bd1b9159c56a26805c799"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -O computations/verification/actual_casoratian_check.py --output /workspace/shared/bgs_constructive_integration_runs/fm024_optimized",
+      "exit_code": 0,
+      "source_sha256": "cc9b69e3e6f68997fb8c2eb89f07fd2a11de50cc8bf43a2c1fcb10d969b80c23",
+      "log": "optimized_actual_casoratian_check.log",
+      "log_sha256": "a0edc1be04378999348ab62427940a57179dd50a9229c652c9af73800b754267"
+    }
+  ],
+  "common_source_sha256": "73fde494a6b5852e4a6133e49cbb633cbdde7db49462a2c2468cdee9f32e4e71",
+  "portability": "Silent normal/optimized imports and explicit-check/default-output regression tests passed; logs included.",
+  "working_directory": "/workspace/shared/BGS"
+}

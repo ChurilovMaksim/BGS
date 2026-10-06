@@ -727,3 +727,27 @@ Earlier acceptance narratives are preserved with their original scientific scope
 ## Recovered amendments, 20 September 2026
 
 [Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#recovered-amendments-20-september-2026).
+
+## Fixed-order complete WKB reduction (6 October 2026)
+
+**BGS-TRACE-017: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; analytic chain unformalized.** For each fixed k and compact smooth Fourier weight, choose fixed J>=k. The complete partition transform of either named WKB trace table differs from the actual unitary transform by O(N^(k-J-1/2)). [The proof](../mathematics/factorial_wkb_reduction.md) distinguishes Laurent and adjoint tables. Exact finite-power reciprocity, formal connected coefficients and the actual conditioned rotated-box first-loop theorem are supporting, separately scoped results. No growing-order claim is made. The separate [global rotated-box theorem](../mathematics/global_rotated_box_trace.md) now supplies a finite-band contour representation and summed tail, conservatively through m<=2N; signed box evaluation and unrestricted bands remain open. The full signed comparison is equivalent and remains OPEN, as do TRACE-005 and BGS-BGS-001. See [review scope](../record/heisenberg_wkb_review_scope.md).
+
+## Actual higher-seven-primary common commutant (6 October 2026)
+
+**BGS-FM-024: EXACT + FINITE-CERTIFICATE; independent internal review of the original theorem.** For every odd N with 49|N and 5∤N, the actual pair (A_N,M_N) has scalar complex common commutant. [The maintained proof](../mathematics/actual_seven_primary_commutant.md) gives exact reduction, two-row equations, full finite-polynomial certificates and rank lifting. With the checked Lindemann–Weierstrass input, the literal U_N has only scalar algebraic-entry commuters; the added coefficient-separation argument has a scoped internal check, distinct from independent review of the entire expanded exposition. The cases 5|N with 49|N and 7∥N remain outside this theorem; N=7 remains exceptional. Neither spectral simplicity nor BGS/TRACE-005 follows. The analytic/algebraic proof is not fully formalized.
+
+## Seven-primary finite formal certificate (6 October 2026)
+
+**BGS-FORMAL-003: COMPILED LEAN NATIVE-EVALUATION CERTIFICATE + INDEPENDENT SEMANTIC REVIEW.** The unchanged isolated source compiled and proves 22 executable GF(5) array predicates: seven product identities, all-factor Rabin computational conditions on 46 factor occurrences, seven degree exclusions and the finite order-49 predicate. An independent semantic audit and 1,896 fresh compiled controls passed. This does not formalize generic polynomial correctness, Rabin's theorem, the finite-field bridges or FM-024's actual commutant proof. The aggregate import rebuild remains a distinct gate. See [exact scope](../formalization/seven_primary_certificate.md).
+
+The independent FM-024 consolidation audit accepted the expanded proof and the algebraic-entry literal-U corollary at overlay SHA-256 `812c3610ef28290c3e5c6e1b702807ab8b01d93eae1c48e87cfe79efccf9c86e`. The integration map records subsequent locator/spacing changes only. [Consolidation review](../record/actual_commutant_consolidation_review.md). No spectral-simplicity conclusion was added.
+
+Prior ownership clarification for TRACE-017: heisenberg_trace_support.md Section 3 already proves the general nonunitary integer-power and full partition perturbation estimate without a microscopic correlation assumption. TRACE-017 supplies the actual arbitrary-fixed-order WKB construction/instantiation and explicit adjoint-table convention, rather than inventing that perturbation lemma. See record/heisenberg_wkb_prior_attribution.json for source-bound hashes.
+
+Supporting quantization equivalence: [principal WKB polar comparison](../mathematics/polar_wkb_quantization_stability.md) gives a fixed smooth order-1/N unitary correction from the actual operator and an O(N^-2) polar defect. The smooth-symbol/polar bridge has independent internal review; the RMS transfer theorem and its inherited external mixing leaf are credited, not newly independently audited. An assumed all-order compact law transfers between the two unitary endpoints. No such law is evaluated; no nonnormal W0 eigenvalue matching or J=0 replacement of TRACE-017 follows.
+
+Aggregate Lean update: all 19 active modules passed in 22 Lake jobs; SevenPrimary was freshly compiled and Bgs rebuilt. The previously separate aggregate-build gate is closed by evidence/formalization/seven_primary_20261006/aggregate-build.json. This does not extend FORMAL-003 beyond its executable-array predicates.
+
+## Finite-band global rotated-box trace representation (6 October 2026)
+
+**Supporting project analytic theorem, fresh independent internal review; TRACE-017 core unchanged.** For the actual fixed-coupling odd-dimensional operator and every fixed finite J>=1, uniformly through 1<=m<=2N, the actual trace equals the exact rotated-box sum with error O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). [The global contour proof](../mathematics/global_rotated_box_trace.md) establishes a saturated-contour deformation and sums its tails; additional strictly bounded bandwidth ranges are stated there. It does not evaluate the exact box sum, make first-loop algebraic errors absolutely summable, cover unrestricted bands, or prove CUE/BGS/TRACE-005. This separately accepted result supersedes earlier contour-pending descriptions only within its stated finite band.

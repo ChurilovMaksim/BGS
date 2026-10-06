@@ -1,0 +1,23 @@
+[
+  {
+    "artifact": "archive-manifest.json",
+    "raw_source_role": "$FINAL_VALIDATION/archive-manifest.json",
+    "raw_sha256": "6b32d70835b9c96ea2976ce8e4420d2289d723997be037703ffb88cf0b3eca79",
+    "public_sha256": "6b32d70835b9c96ea2976ce8e4420d2289d723997be037703ffb88cf0b3eca79",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "workspace.json",
+    "raw_source_role": "$FINAL_VALIDATION/workspace.json",
+    "raw_sha256": "255eca290dc84626408c5ee368d58b1d79e1d37b91e7fcc8f3cb03e4b7724e85",
+    "public_sha256": "1dfd8a6e8fad277b28d634f5d5dad5a773462f75d34a19ffd092db63d0ddf779",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable; source manifest factored once"
+  },
+  {
+    "artifact": "workspace.log",
+    "raw_source_role": "$FINAL_VALIDATION/driver.log",
+    "raw_sha256": "730c233d3e649433fd41f1c9a69cf92808363b6b9c7485eb2a810a2a483d3256",
+    "public_sha256": "730c233d3e649433fd41f1c9a69cf92808363b6b9c7485eb2a810a2a483d3256",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  }
+]

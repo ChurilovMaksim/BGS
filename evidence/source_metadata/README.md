@@ -2,7 +2,7 @@
 
 ## Scope and findings
 
-Current coverage: 34/34 registered external references. Initial pass covered 28; six returns/Pell sources were added after an independent corpus review. The registry includes role-qualified attribution and internally reproved inputs as well as load-bearing external theorems. Metadata agreement is not theorem applicability.
+Initial consolidated coverage: 34/34 registered external references; current coverage after the constructive extension below is 35/35. Initial pass covered 28; six returns/Pell sources were added after an independent corpus review. The registry includes role-qualified attribution and internally reproved inputs as well as load-bearing external theorems. Metadata agreement is not theorem applicability.
 
 The additional internal edge is RET-002 -> RET-001 (prerequisite -> dependent). Other claims, including the current FORMAL-001 build status, were preserved.
 
@@ -357,3 +357,7 @@ Primary PDF hashes identify acquired bytes; full articles are not redistributed.
 The KLZF, Soshnikov, Popescu and Roy coverage changes are supported by the independent noise/frozen/core-repair reviews identified by hashes in the JSON. The current evidence records their exact hypotheses and translation, rather than treating a metadata fetch as an application proof.
 
 IK Theorem17.1 and Pesin Theorem5.1 remain unverified exact-source leaves after additional bounded Library/author-source attempts. Other unchanged unverified-application entries remain visible; no corpus-wide external proof certification or exhaustive priority search is claimed.
+
+## Constructive extension
+
+Current registry coverage is 35/35 after adding EXT-KM-2017-BOX. Exact source and hard-box hypothesis mapping: [local Poincare check](../../literature/convex_box_poincare_check.md). Its local supporting theorem is outside the narrow claim registry; TRACE-017 does not use this inequality. Existing source observations/hashes and application boundaries are retained. See [explicit impact delta](../../record/constructive_bibliographic_impact_20261006.json).

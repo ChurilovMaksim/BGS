@@ -1,7 +1,7 @@
 {
   "schema": "bgs-bibliographic-metadata-audit-v1",
   "checked_on": "2026-10-06",
-  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit.",
+  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit. Constructive extension: one scoped Kolesnikov–Milman box inequality; 35 registered references.",
   "non_claim": "Offline PASS certifies agreement with reviewed cached metadata and coverage accounting; it is not theorem applicability, independent source authentication, or an asymptotic proof.",
   "records": [
     {
@@ -1306,12 +1306,13 @@
         "pinned_version": "Published 1990 SMF PDF",
         "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
         "dependency_role": null,
-        "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project.",
+        "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf.",
         "project_sources": [
           "mathematics/nonlinear_bracket_pressure.md",
           "record/nonlinear_pressure_review_20260923.md",
           "mathematics/frozen_operator_transfer_coercivity.md",
-          "literature/frozen_operator_transfer_sources_20261006.md"
+          "literature/frozen_operator_transfer_sources_20261006.md",
+          "mathematics/polar_wkb_quantization_stability.md"
         ],
         "additional_uses": null
       },
@@ -1415,14 +1416,15 @@
         "pinned_version": "v2, 17 September 2023",
         "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
         "dependency_role": null,
-        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation.",
+        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input.",
         "project_sources": [
           "mathematics/frozen_algebraic_spectral_simplicity.md",
           "mathematics/frozen_common_antireversor_certificate.md",
           "record/frozen_algebraic_review_20260924.md",
           "mathematics/arithmetic_word_expansion_obstruction.md",
           "literature/expansion_wavepacket_sources_20261004.md",
-          "mathematics/dyson_relaxation_obstruction.md"
+          "mathematics/dyson_relaxation_obstruction.md",
+          "mathematics/actual_seven_primary_commutant.md"
         ],
         "additional_uses": null
       },
@@ -1495,6 +1497,7 @@
         "BGS-FM-008",
         "BGS-FM-009",
         "BGS-FM-010",
+        "BGS-FM-024",
         "BGS-TRACE-013"
       ],
       "transitive_claim_dependencies": [
@@ -1544,7 +1547,13 @@
           "source": "mathematics/dyson_relaxation_obstruction.md",
           "role": "existing_registered_use"
         }
-      ]
+      ],
+      "constructive_application_extension": {
+        "checked_on": "2026-10-06",
+        "scope": "Scoped internal coefficient-separation check of the FM-024 corollary, using existing source theorem; original source review/application status retained.",
+        "proof": "mathematics/actual_seven_primary_commutant.md#6-algebraic-entry-commuters-of-the-literal-propagator",
+        "non_claim": "No spectral simplicity or quantitative cancellation."
+      }
     },
     {
       "id": "EXT-ROY-2016",
@@ -3745,6 +3754,48 @@
           "role": "attribution_not_arithmetic_proof_input"
         }
       ]
+    },
+    {
+      "id": "EXT-KM-2017-BOX",
+      "checked_on": "2026-10-06",
+      "accepted_registry_fields": {
+        "title": "Brascamp-Lieb type inequalities on weighted Riemannian manifolds with boundary",
+        "authors": [
+          "A. V. Kolesnikov",
+          "E. Milman"
+        ],
+        "identifier": "arXiv:1310.2526v7; DOI:10.1007/s12220-016-9736-5",
+        "pinned_version": "arXiv v7, 23 November 2017",
+        "locator": "Theorem 3.1(1), printed p. 13; equation (3.2), printed p. 14",
+        "dependency_role": "external inequality for the supporting conditioned local-box theorem only",
+        "mapping": "Euclidean metric and generalized dimension infinity give inverse-Hessian variance; Hess V>=lambda I on a convex box gives constant lambda^-1 by smooth convex exhaustion. No Neumann condition on tested f. Real tilted curvature and raw moments are established separately in the local proof. The separate finite-band contour theorem reuses this local-box inequality after its own explicit radius-sqrt(2) curvature checks; the inequality is not a global-contour theorem or a premise of the elementary TRACE-017 perturbation reduction.",
+        "project_sources": [
+          "mathematics/rotated_local_first_loop.md",
+          "literature/convex_box_poincare_check.md",
+          "mathematics/global_rotated_box_trace.md"
+        ],
+        "additional_uses": null
+      },
+      "identity_status": "verified_by_retained_source_review",
+      "field_coverage": {
+        "title": "reviewed in retained exact-source check",
+        "authors": "reviewed in retained exact-source check",
+        "identifier": "reviewed in retained exact-source check",
+        "version_date": "reviewed in retained exact-source check",
+        "theorem_locator": "reviewed in retained exact-source check"
+      },
+      "source_observations": {
+        "url": "https://arxiv.org/pdf/1310.2526v7",
+        "pdf_sha256": "f86893b5051a150a6827fd0523aa3733c5970a3cccc44b17a794f58cc4601727",
+        "review": "literature/convex_box_poincare_check.md",
+        "review_provenance": "record/heisenberg_wkb_review_provenance.json",
+        "retrieval_note": "Retained reviewed source; no fresh retrieval or PDF redistribution by integration."
+      },
+      "application_status": "verified_application_scoped_local_box",
+      "application_review": "Euclidean N=infinity specialization and smooth convex exhaustion are explicit. Local cubic-tilt curvature and moments are separately proved; no global contour implication.",
+      "direct_claim_dependencies": [],
+      "transitive_claim_dependencies": [],
+      "dependency_coverage_note": "Supporting local-box theorem is not a registered claim; TRACE-017 elementary perturbation proof does not depend on this inequality."
     }
   ],
   "supplemental_review_provenance": {

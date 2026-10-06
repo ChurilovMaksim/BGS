@@ -47,3 +47,11 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [four_block_unmarking](../../four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
 - [four_cut_rank_two_classification](../../four_cut_rank_two_classification.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+## Fixed-order WKB and local saddle route
+
+Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaussian reciprocity](../../exact_gaussian_reciprocity.md) → [uniform cluster lemma](../../uniform_cluster_lemma.md) → [rotated local first loop](../../rotated_local_first_loop.md). The global rotated-box theorem controls the contour/tail step in its stated finite band. Complete signed comparison and unrestricted bands remain open; local/formal results do not establish BGS.
+
+- [Principal WKB polar comparison](../../polar_wkb_quantization_stability.md): fixed smooth order-1/N correction and O(N^-2) polar defect; inherited ergodic RMS transport transfers an assumed all-order compact law between unitary endpoints. No nonnormal principal-matrix eigenvalue matching is claimed.
+
+- [Global rotated-box trace representation](../../global_rotated_box_trace.md): actual traces through m<=2N equal the exact box sum up to O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). The signed box sum is not evaluated.
