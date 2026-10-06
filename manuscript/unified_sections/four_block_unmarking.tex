@@ -1,0 +1,78 @@
+\section{Once-counted reduced four-block cancellation}
+\label{sec:four-block-unmarking}
+Let $U_N$ be unitary, $P_{xy}=|U_{xy}|^2$, and $J_{xy}=N^{-1}$.
+Assume, eventually, $\max P_{xy}\leq C/N$ and
+$\|P^L-J\|\leq2^{-L}$ for every integer $L\geq0$.
+BGS-FM-021 supplies these bounds for the unchanged frozen map.
+Let $T_m^{(4)}$ be the set of rooted ordered coordinate-word pairs obtained
+by cutting the first cyclic word into four nonempty blocks $A,B,C,D$,
+whose initial vertex values are pairwise distinct, and taking a cyclic
+rotation of $ADCB$ for the second word. Each pair is counted once,
+regardless of its witnesses. This is the unique reduced four-block ordering:
+all four original successor boundaries change.
+Put $\mathcal A(x)=\prod_{j\bmod m}U_{x_jx_{j+1}}$.
+
+\paragraph{Theorem (BGS-TRACE-016).}
+For every smooth $w$ compactly supported in $(0,\infty)$,
+\[
+ \frac1{N^2}\sum_m w(m/N)
+ \sum_{(x,y)\in T_m^{(4)}}
+ \mathcal A(x)\overline{\mathcal A(y)}\longrightarrow0.
+\]
+For $K=\lceil\log N\rceil$ and support in $[a,b]\subset(0,\infty)$,
+the absolute value of this complete signed band sum is bounded by
+\[
+ O_w(K^{10}/N)+O_w\!\left(N^{10}(C/N)^{K/2}\right)
+ +O_w\!\left(N^5 2^{-(aN-4)/4}\right).
+\]
+The startup inherited from the mixing theorem is not effective.
+
+\paragraph{Marked cancellation and exact correction.}
+The marked four-link sum $M_m$ has two independent trace-root factors.
+Replacing any one link by $J$ gives zero by column orthogonality and
+distinct ports, so its longest link makes $M_m$ exponentially small.
+The local overlap $O_m$ restricts the first two blocks to
+$A=(a)$ and $B=(b,a,b)$, with arbitrary nonempty $C,D$.
+It retains a free long endpoint: uniform $C$ gives $\delta_{db}/N=0$,
+and uniform $D$ gives $\delta_{ac}/N=0$.
+Its normalized sum is likewise exponentially small.
+The once-counted correction is $M_m/4-O_m$, up to the stated exceptional
+error; a uniform multiplicity division is not imposed on all pairs.
+
+\paragraph{Combinatorial control.}
+A word with distinct length-$K$ cyclic substrings localizes every competing
+cut within $O(K)$ of an original cut. Indeed a common refinement interval
+of length at least $(r+1)K$ fixes its translation offset. Each mismatch
+component begins at a common genuine cut, since otherwise two cut heads
+would have equal vertex values. A longest common interval fixes cyclic
+alignment, without an extra factor $m$.
+Three fixed anchors in different original four-block pieces force cut
+uniqueness by prefix cancellation. The corrected argument handles all
+three locations of the unanchored block, including empty prefixes and
+equal lengths. Thus ambiguity requires two short original blocks.
+There are $O(K^2m)$ original length choices and $O(K^4)$ competing cut sets.
+Exposing all four starts first pays every equality-rank constraint by a
+transition bounded by $C/N$, giving $O(K^6/N)$ for rank at least three.
+
+The separately proved computer-assisted classification identifies every
+rank-two relation with the local flip
+$(s\ s+2)(s+1\ s+3)$ on an alternating four-vertex cluster.
+Its finite kernel is certified separately by
+\texttt{Bgs/FourCutKernel.lean}; the universal compression and the
+analytic argument here are not formalized by that bounded certificate.
+Two distinct local flips compose to rank four, except neighboring flips,
+whose product is the forbidden three-cycle case. The representation graph
+is therefore triangle-free. A pair without a higher-rank relation has one
+or two cut sets; subtracting its single local edge counts it once.
+Higher multiplicities cost at most another $O(K^4)$, yielding
+$O(K^{10}/N)$. Repeated length-$K$ substrings, including periodic words,
+have superpolynomially small exceptional marked absolute mass.
+
+\paragraph{Boundary.}
+This is a fixed-family theorem under generic unitarity, flatness and
+position-chain mixing hypotheses. It is compatible with nonuniversal
+spectra satisfying those bounds. Repeated ports, non-permutation pairs,
+overlaps among families, higher or growing reconnection complexity,
+plateau restoration and the full signed hierarchy remain open.
+The rounding obstruction precludes inferring the exact spectral target
+from these coarse controls alone. No deterministic BGS conclusion follows.

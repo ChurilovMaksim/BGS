@@ -62,6 +62,8 @@ Locality estimates specify the symbol class, approximation budget, coupling and 
 
 ## Spectral obstruction tests
 
+[Microscopic rounding](microscopic_rounding_control.md) preserves the whole unnormalized trace vector through each specified K_N=o(N^(1/3)) and coarse position/reversal/Egorov controls, yet violates a fixed stable-band pair target. It refines prior project rounding by changing the operator; exact quantization and subprincipal data are outside its scope.
+
 Negative controls reject specific invalid implications. [TRACE-014](isospectral_clock_moment_control.md) gives a same-ensemble clock spectrum whose induced-HS moment channels approach Haar uniformly in all orders. An abstract spectrum is not automatically a quantization of the actual chaotic map.
 
 [Theorems, reading path and complete sources](topics/spectral-obstructions/README.md).
@@ -149,3 +151,9 @@ The previous catalogue is retained byte-for-byte in [the dated snapshot](../reco
 <a id="magnetic-quotient-restricted-global-law-2026-09-05"></a>
 <a id="pell-floquet-normal-form-and-recurrence-spectrum-2026-09-05"></a>
 <a id="compact-test-microscopic-obstruction-in-the-pell-family"></a>
+
+## Bounded subsidiary advances, 6 October 2026
+
+[Three-block cancellation](three_block_unmarking.md) and [four-block cancellation](four_block_unmarking.md) control their once-counted distinct-port families, including short links, with errors O_w((log N)^5/N) and O_w((log N)^10/N). They do not control the complete signed remainder or overlaps between families. The [four-cut classification](four_cut_rank_two_classification.md) combines a reviewed mathematical reduction with a bounded native Lean certificate, not analytic formalization.
+
+[Arithmetic translation exclusion](arithmetic_translation_exclusion.md) covers odd d|N with d<=N^delta for each fixed delta<1/262, with a fixed-tau constant and a nonzero-centered-part qualification for projectors. Arbitrary projectors and the full commutant remain outside its scope. TRACE-005 and BGS remain OPEN.

@@ -1,0 +1,22 @@
+{
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "inputs": {
+    "quantitative_source": {
+      "filename": "growing_divisor_exclusion.md",
+      "sha256": "96a0edb7ac319710c9a8b008c528471749fa9f502943ca50eb5e8d7572990d69"
+    },
+    "fixed_divisor_source": {
+      "filename": "fixed_seven_mode_exclusion.md",
+      "sha256": "cbb681adf9dd38ee2d54a5431d46da18579e51dcfafb26a643607d94429ebf62"
+    },
+    "quantitative_review": {
+      "filename": "review.md",
+      "sha256": "9f140e04b6e474b79a6c7d716329b983a19f33e6edb60b38a6bf5fc6ab46c96a"
+    },
+    "fixed_divisor_review": {
+      "filename": "review.md",
+      "sha256": "60a8f799b9c55eaf1ec132fcb9c0e3ff5d3102c38fbcbecf18488ede6ee9c81e"
+    }
+  },
+  "preservation": "Original sources and reviews were not edited. The quantitative source is copied byte-for-byte; curated review path edits do not replace its original hash."
+}

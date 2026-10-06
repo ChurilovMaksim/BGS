@@ -1,0 +1,41 @@
+{
+  "proposal_only": true,
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "ID_verified_free_in_base_and_local_registry": true,
+  "claims": [
+    {
+      "id": "BGS-FM-023",
+      "title": "Quantitative exclusion of bounded-power arithmetic translation algebras",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + PORTABLE EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "source": "mathematics/arithmetic_translation_exclusion.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-016",
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/arithmetic_translation_review_20261006.md",
+        "evidence/executions/20261006/divisor-exclusion/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_translation_exclusion.tex"
+      ],
+      "boundary": "Unchanged odd-dimensional U_N and literal fixed tau=10^-80. For every odd d>=3 dividing N, compression of Ad(U_N) to the d^2-1 nonzero d-grid Weyl modes is <=min(1,C_tau(d^262/N)^(1/129)), with C_tau independent of N,d and labels. Every fixed delta<1/262 gives decay for d<=N^delta; d<=N^(1/524) gives N^(-1/258). Uniform residual tends to sqrt(2); fixed d is a corollary. Projection interpretation requires a nonzero centered part and membership in the indicated algebra. No exponent optimality, endpoint decay, unrestricted growing divisor, arbitrary projector/full commutant classification, practical startup, shrinking-tau uniformity or microscopic BGS claim."
+    }
+  ],
+  "unchanged_open_claims": [
+    "BGS-TRACE-005",
+    "BGS-BGS-001"
+  ],
+  "preserve_other_local_integrations": [
+    "BGS-FM-021",
+    "BGS-FM-022"
+  ],
+  "dependency_note": "FM-001 supplies the exact model; FM-016 supplies the overlap architecture and FM-018 the quantitative actual-kick estimate, whose needed derivations are reconstructed in the canonical proof. Their channel mixing/gap statements are not imported."
+}

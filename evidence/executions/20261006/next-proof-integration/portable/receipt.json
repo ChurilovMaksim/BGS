@@ -1,0 +1,306 @@
+{
+  "scope": "Portable exact finite controls, expected fault failures, silent imports and repository guards; not an analytic certificate",
+  "completed_utc": "2026-10-06T17:19:07.552408+00:00",
+  "runs": [
+    {
+      "name": "three_block_unmarking_normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/three_block_unmarking.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362"
+    },
+    {
+      "name": "three_block_unmarking_normal_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-c",
+        "import runpy; m=runpy.run_path('computations/verification/three_block_unmarking.py'); m[\"check\"](False,\"injected failure\")"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "three_block_unmarking_normal_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/three_block_unmarking.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "three_block_unmarking_optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "computations/verification/three_block_unmarking.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362"
+    },
+    {
+      "name": "three_block_unmarking_optimized_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "-c",
+        "import runpy; m=runpy.run_path('computations/verification/three_block_unmarking.py'); m[\"check\"](False,\"injected failure\")"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "three_block_unmarking_optimized_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/three_block_unmarking.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_normal_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/arithmetic_translation_exclusion.py",
+        "--inject-failure"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_normal_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/arithmetic_translation_exclusion.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_optimized_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "computations/verification/arithmetic_translation_exclusion.py",
+        "--inject-failure"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "arithmetic_translation_exclusion_optimized_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/arithmetic_translation_exclusion.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "four_block_unmarking_normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/four_block_unmarking.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc"
+    },
+    {
+      "name": "four_block_unmarking_normal_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/four_block_unmarking.py",
+        "--fault-injection"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "four_block_unmarking_normal_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/four_block_unmarking.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "four_block_unmarking_optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "computations/verification/four_block_unmarking.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc"
+    },
+    {
+      "name": "four_block_unmarking_optimized_fault",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "computations/verification/four_block_unmarking.py",
+        "--fault-injection"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "four_block_unmarking_optimized_import",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "-c",
+        "import runpy;runpy.run_path('computations/verification/four_block_unmarking.py')"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "output_policy_normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_four_cut_output_policy.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "output_policy_optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_four_cut_output_policy.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "registry",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/scientific_registry_audit.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "20eec395ca6e5eddd9c8dcd24d7bcfdf52a97f3bfe86802df21cef69dbcc4e01"
+    },
+    {
+      "name": "registry_render",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/render_claim_registry.py",
+        "--check"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "ca57b079e313b85e314f167b8b2784cc10aadcdf7ec672b35a78d9065ad3dc5a"
+    },
+    {
+      "name": "assertions",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/assertion_policy.py",
+        "--check"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "86b7692d1575dc81f05107ac7d8c7b56e4edfb0d17e13e9ffe00cb3de3c9cc2c"
+    },
+    {
+      "name": "text",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/text_control_audit.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout_sha256": "1a42505db00fd87b236024ac4a4552838336183bf3a8474b65c43ce47017b0d0"
+    }
+  ]
+}

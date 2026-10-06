@@ -1,0 +1,58 @@
+{
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "started_utc": "2026-10-06T16:56:30.312440+00:00",
+  "runtime_seconds": 0.6047007150009449,
+  "execution_cwd": "/workspace/shared/bgs_four_block_promotion",
+  "python": "3.12.14",
+  "verifier_sha256_before": "d867b8c85c9431c5d6bd19abf026ae379eb0eaedc6d7c4cae876c4adb68e1839",
+  "verifier_sha256_after": "d867b8c85c9431c5d6bd19abf026ae379eb0eaedc6d7c4cae876c4adb68e1839",
+  "runs": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/shared/bgs_four_block_promotion/computations/verification/four_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "output": "results.json"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/shared/bgs_four_block_promotion/computations/verification/four_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "output": "optimized_results.json"
+    }
+  ],
+  "normal_and_optimized_identical": true,
+  "silent_import_guard": true,
+  "fault_injection": "fault_injection.json",
+  "corrected_uv_text_identical_to_accepted_source": true,
+  "arithmetic": "exact rational and exact combinatorial/token comparisons",
+  "scope": "finite analytic-proof controls; separately owned rank-two/Lean kernel is not duplicated",
+  "typesetting": {
+    "scope": "standalone two-page fragment, not full repository manuscript",
+    "source_sha256": "1d606609b2ffbcfdfb9cba50944b90b89a043d65bb0ae3bba244c4d82f2f08f9",
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "four_block_fragment.tex"
+    ],
+    "cwd": "/tmp",
+    "exit_code": 0,
+    "pages": 2,
+    "warnings": false,
+    "environment": {
+      "TEXMFVAR": "/workspace/shared/texmf-var",
+      "TEXMFCONFIG": "/workspace/shared/texmf-config",
+      "TEXINPUTS": ".:/usr/share/texlive/texmf-dist/tex//:",
+      "TFMFONTS": "/usr/share/texlive/texmf-dist/fonts/tfm//:",
+      "VFFONTS": "/usr/share/texlive/texmf-dist/fonts/vf//:",
+      "T1FONTS": "/usr/share/texlive/texmf-dist/fonts/type1//:"
+    }
+  },
+  "repository_mutation_by_worker": false,
+  "repository_note": "The shared repository has concurrent edits by other workers; no claim of a clean worktree is made."
+}

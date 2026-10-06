@@ -1,0 +1,104 @@
+{
+  "schema": "bgs-microscopic-rounding-provenance-v1",
+  "date": "2026-10-06",
+  "status": "publication overlay; not integrated",
+  "preparation_base_commit": "d4132ccee82849b644520d88c953cb9b33382a59",
+  "accepted_review_base_commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+  "accepted_originals": {
+    "candidate_sha256": "865722f64c0ed379bcf59773d68e7a13ef4188e529cf689ce24331c68dd19db2",
+    "review_sha256": "a12f99d8b8345bd77f2678a1c9cf122afbcbe42414833363b53bbf6162049158",
+    "hash_manifest_sha256": "56f0cbcbd722362ae06b25077d9a16f1e350c3079a28bc21f2b7de79eb619f7d"
+  },
+  "accepted_originals_preserved": true,
+  "originals_policy": "Accepted originals remain unchanged; this public manifest preserves their digests without publishing private working locations. The public proof and review are curated derivatives, not byte-identical original replacements.",
+  "sources": {
+    "AGENTS.md": {
+      "accepted_review_sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "preparation_base_sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "unchanged": true
+    },
+    "SOURCE_OF_TRUTH.md": {
+      "accepted_review_sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "preparation_base_sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "unchanged": true
+    },
+    "record/repository_conventions.md": {
+      "accepted_review_sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "preparation_base_sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "unchanged": true
+    },
+    "RESEARCH.md": {
+      "accepted_review_sha256": "38cafe50faa5fd158248041fb0c7204c83048362811c2f89227409e21ae58b13",
+      "preparation_base_sha256": "38cafe50faa5fd158248041fb0c7204c83048362811c2f89227409e21ae58b13",
+      "unchanged": true
+    },
+    "record/claim_ledger.md": {
+      "accepted_review_sha256": "067ffead76037df1f901d76d2e66c8fa4770de050727593104de4f8902a2945b",
+      "preparation_base_sha256": "067ffead76037df1f901d76d2e66c8fa4770de050727593104de4f8902a2945b",
+      "unchanged": true
+    },
+    "record/claims.json": {
+      "accepted_review_sha256": "7f5f75d1b3b99f275ec000d76a19cd4d9d4302d2428fe6c497dc8f1b29d5f5b1",
+      "preparation_base_sha256": "7f5f75d1b3b99f275ec000d76a19cd4d9d4302d2428fe6c497dc8f1b29d5f5b1",
+      "unchanged": true
+    },
+    "mathematics/results.md": {
+      "accepted_review_sha256": "fa88e6954e2c89a3538c6d6abc2d4372d6c7fff8293a6b144d2d5c9e0795ac1f",
+      "preparation_base_sha256": "fa88e6954e2c89a3538c6d6abc2d4372d6c7fff8293a6b144d2d5c9e0795ac1f",
+      "unchanged": true
+    },
+    "mathematics/open_questions.md": {
+      "accepted_review_sha256": "32b4a2f419582877f9dbb0ee950304af0650404825f810faf333a4790b64101d",
+      "preparation_base_sha256": "32b4a2f419582877f9dbb0ee950304af0650404825f810faf333a4790b64101d",
+      "unchanged": true
+    },
+    "manuscript/unified_sections/spectral_resolution.tex": {
+      "accepted_review_sha256": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+      "preparation_base_sha256": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+      "unchanged": true
+    },
+    "mathematics/frozen_seven_cut_reduction.md": {
+      "accepted_review_sha256": "af615f74c88d475267207b2404d6b0674e6aa7f5b9cc32346bf412d2de3feb39",
+      "preparation_base_sha256": "af615f74c88d475267207b2404d6b0674e6aa7f5b9cc32346bf412d2de3feb39",
+      "unchanged": true
+    },
+    "mathematics/fixed_time_wavepacket_trace_bound.md": {
+      "accepted_review_sha256": "dea4b671554a5726756e4d1871b427469b4a3ff960fed52ac4a425a0f481a4b4",
+      "preparation_base_sha256": "dea4b671554a5726756e4d1871b427469b4a3ff960fed52ac4a425a0f481a4b4",
+      "unchanged": true
+    },
+    "mathematics/position_chain_mixing.md": {
+      "accepted_review_sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "preparation_base_sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "unchanged": true
+    },
+    "mathematics/reversed_path_decay.md": {
+      "accepted_review_sha256": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+      "preparation_base_sha256": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+      "unchanged": true
+    },
+    "mathematics/heisenberg_pair_heat_formula.md": {
+      "accepted_review_sha256": "abd5c0ab8c132667a0b7a91390ce4da3072f779a1440d72f33b35da5726d8cb2",
+      "preparation_base_sha256": "abd5c0ab8c132667a0b7a91390ce4da3072f779a1440d72f33b35da5726d8cb2",
+      "unchanged": true
+    }
+  },
+  "changed_source_paths_since_accepted_review": [],
+  "artifacts_sha256": {
+    "INTEGRATION.md": "e80a3a35c0bb75e3eb0cf577367ffa27de6abde2f678f2595760ae111353649c",
+    "README.md": "f1047918fcded01180c8256d7494a5c516a109248e06de0dca070aaee8d2d237",
+    "mathematics/microscopic_rounding_control.md": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+    "record/microscopic_rounding_review.md": "b46e282ed1ae0178364c1370e56c917f07880837a9b448393210ed79156ff9b9"
+  },
+  "checks": {
+    "candidate_hash_matches_accepted_manifest": true,
+    "public_artifacts_private_path_scan": "passed",
+    "new_executable_code": false,
+    "finite_verifier": "not added; no material proof benefit",
+    "analytic_scope": "elementary proof and inherited project inputs; no analytic conclusion inferred from computation",
+    "canonical_checkout_modified_by_preparation": false,
+    "full_repository_tests": "not run",
+    "manuscript_build": "not run",
+    "external_referee_certification": false
+  }
+}

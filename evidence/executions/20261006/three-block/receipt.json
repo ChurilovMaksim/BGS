@@ -1,0 +1,66 @@
+{
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "execution_cwd": "/workspace/shared/bgs_three_block_promotion",
+  "completed_utc": "2026-10-06T17:09:54.268856+00:00",
+  "verifier": "computations/verification/three_block_unmarking.py",
+  "verifier_sha256": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+  "runs": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/shared/bgs_three_block_promotion/computations/verification/three_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "output_identical_to_previous_results": true
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/shared/bgs_three_block_promotion/computations/verification/three_block_unmarking.py"
+      ],
+      "exit_code": 0,
+      "output_identical_to_previous_results": true
+    }
+  ],
+  "normal_and_optimized_outputs_identical": true,
+  "fault_injection": "fault_injection.json",
+  "arithmetic": "exact rationals and discrete word equality; deterministic random seed for finite sample generation",
+  "scope": "finite algebra/combinatorics only; no asymptotic numerical certification",
+  "typesetting": {
+    "scope": "standalone two-page fragment, not full repository build",
+    "exit_code": 0,
+    "source": "manuscript/unified_sections/three_block_unmarking.tex",
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error three_block_fragment.tex",
+    "cwd": "/tmp",
+    "environment": {
+      "TEXMFVAR": "/workspace/shared/texmf-var",
+      "TEXMFCONFIG": "/workspace/shared/texmf-config",
+      "TEXINPUTS": ".:/usr/share/texlive/texmf-dist/tex//:",
+      "TFMFONTS": "/usr/share/texlive/texmf-dist/fonts/tfm//:",
+      "VFFONTS": "/usr/share/texlive/texmf-dist/fonts/vf//:",
+      "T1FONTS": "/usr/share/texlive/texmf-dist/fonts/type1//:"
+    },
+    "prior_setup_failures": "Default format search and isolated font-map configuration failed; existing shared TeX configuration succeeded.",
+    "source_sha256": "99e6870995ffc80aaaad29252f4bdd357f24c55ab07fd35a7b83765b2f8f278e",
+    "final_compile_warnings": false
+  },
+  "repository_mutation": false,
+  "verifier_sha256_before_execution": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+  "verifier_sha256_after_execution": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+  "silent_import_guard": true,
+  "proper_main_entrypoint": true,
+  "output_byte_identical_to_pre_repair": true,
+  "integration_repair": {
+    "scope": "Only wrap executable verifier body in main and add __main__; check/mm/power helpers remain exposed",
+    "prior_verifier_sha256": "8c5e984ba7529bc2456a9063512ab77bd587e0b2b4364d650af01dad93352131",
+    "current_verifier_sha256": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+    "prior_receipt": "provenance/20261006_entrypoint_repair/receipt.before.json",
+    "prior_receipt_sha256": "6cb00b65be9b76be4490bfa3ab39de4a8c3e06aab5a1eed888aaa64834d5a0c5",
+    "patch": "provenance/20261006_entrypoint_repair/entrypoint.patch",
+    "patch_sha256": "bb7f1241626a29484034bcde7fabe46bc7f9f3a9d4b22c020fa8485d3fbeec52",
+    "started_utc": "2026-10-06T17:09:49.971190+00:00",
+    "runtime_seconds": 4.297771051002201,
+    "typesetting": "Prior unchanged typesetting result retained; no new compile claimed by this verifier-only repair"
+  }
+}

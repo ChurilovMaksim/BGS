@@ -1,0 +1,116 @@
+import Std
+
+/- Bounded, executable finite classification only. No assertion here proves the
+   contraction reduction, word/permutation correspondence, or BGS universality. -/
+namespace Bgs.FourCutKernel
+
+def choose : Nat → List Nat → List (List Nat)
+  | 0, _ => [[]]
+  | _ + 1, [] => []
+  | k + 1, x :: xs => (choose k xs).map (x :: ·) ++ choose (k + 1) xs
+
+def swap (a b x : Nat) : Nat := if x == a then b else if x == b then a else x
+
+def label (classes : List (List Nat)) (x : Nat) : Nat :=
+  classes.foldl (fun out cl => if cl.contains x then cl.headD x else out) x
+
+def cycleMap (cl : List Nat) (x : Nat) : Nat :=
+  let pairs := cl.zip (cl.drop 1 ++ cl.take 1)
+  (pairs.find? (fun p => p.1 == x)).map (·.2) |>.getD x
+
+def tau (classes : List (List Nat)) (x : Nat) : Nat :=
+  classes.foldl (fun out cl => cycleMap cl out) x
+
+def tauInv (classes : List (List Nat)) (x : Nat) : Nat :=
+  tau (classes.map List.reverse) x
+
+def crossing (heads : List Nat) (x : Nat) : Nat :=
+  match heads with
+  | [a,b,c,d] => swap a c (swap b d x)
+  | _ => x
+
+def distinct : List Nat → Bool
+  | [] => true
+  | x :: xs => !(xs.contains x) && distinct xs
+
+def sameSet (xs ys : List Nat) : Bool :=
+  xs.all ys.contains && ys.all xs.contains
+
+/-- Both cut sets and the alternating support must have the exact local form.
+    All modular arithmetic uses source positions 0,...,m-1. -/
+def localForm (m : Nat) (classes : List (List Nat)) (h hp : List Nat) : Bool :=
+  (List.range m).any fun a =>
+    let pos := fun j => (a + j) % m
+    sameSet classes.flatten [pos 0, pos 1, pos 2, pos 3] &&
+    label classes (pos 0) == label classes (pos 2) &&
+    label classes (pos 1) == label classes (pos 3) &&
+    label classes (pos 0) != label classes (pos 1) &&
+    (List.range m).any fun z =>
+      let h1 := [pos 0, pos 1, pos 4, z]
+      let h2 := [pos 0, pos 3, pos 4, z]
+      distinct h1 && distinct h2 &&
+      ((sameSet h h1 && sameSet hp h2) || (sameSet h h2 && sameSet hp h1))
+
+structure Stats where
+  configurations : Nat := 0
+  matchCount : Nat := 0
+  valid : Bool := true
+  deriving Repr, BEq, DecidableEq
+
+def Stats.add (x y : Stats) : Stats :=
+  ⟨x.configurations + y.configurations, x.matchCount + y.matchCount, x.valid && y.valid⟩
+
+/-- Conjugate r=c∘crossing(H) by tau. Recover H' as the actual
+    changed-predecessor set, not as a guessed or supplied head set. -/
+def testHeads (m : Nat) (classes : List (List Nat)) (triple : Bool)
+    (h : List Nat) : Stats := Id.run do
+  if !distinct (h.map (label classes)) then return {}
+  let pred := fun x => (x + m - 1) % m
+  let rp := fun x => tau classes (pred (crossing h (tauInv classes x)))
+  let hp := (List.range m).filter (fun x => rp x != pred x)
+  if hp.length != 4 || !distinct (hp.map (label classes)) then return {}
+  if !(List.range m).all (fun x => rp x == pred (crossing hp x)) then return {}
+  return ⟨0, 1, h != hp && !triple && localForm m classes h hp⟩
+
+def testClasses (m : Nat) (classes : List (List Nat)) (triple : Bool) : Stats :=
+  (choose 4 (List.range m)).foldl
+    (fun st h => st.add (testHeads m classes triple h)) ⟨1,0,true⟩
+
+def pairClasses : List Nat → List (List (List Nat))
+  | [a,b,c,d] => [[[a,b],[c,d]], [[a,c],[b,d]], [[a,d],[b,c]]]
+  | _ => []
+
+def tripleClasses : List Nat → List (List (List Nat))
+  | [a,b,c] => [[[a,b,c]], [[a,c,b]]]
+  | _ => []
+
+def atSize (m : Nat) (triple : Bool) : Stats :=
+  let supports := choose (if triple then 3 else 4) (List.range m)
+  supports.foldl (fun st support =>
+    let cases := if triple then tripleClasses support else pairClasses support
+    cases.foldl (fun out cl => out.add (testClasses m cl triple)) st) {}
+
+def through (maxSize : Nat) (triple : Bool) : Stats :=
+  ((List.range (maxSize + 1)).filter (· ≥ 5)).foldl
+    (fun st m => st.add (atSize m triple)) {}
+
+
+
+/-- Exhaustive compressed two-transposition domain: 5 ≤ m ≤ 12. -/
+theorem pairs_through_12 : through 12 false = ⟨3858, 560, true⟩ := by native_decide
+
+/-- Exhaustive compressed oriented 3-cycle domain: 5 ≤ m ≤ 10. -/
+theorem triples_through_10 : through 10 true = ⟨650, 0, true⟩ := by native_decide
+
+#print axioms pairs_through_12
+#print axioms triples_through_10
+#print pairs_through_12
+#print triples_through_10
+
+/-- Rank-two forced equalities on four positions prevent four distinct ports. -/
+theorem pair_m4_excluded : atSize 4 false = ⟨3, 0, true⟩ := by decide
+theorem triple_m4_excluded : atSize 4 true = ⟨8, 0, true⟩ := by decide
+#print axioms pair_m4_excluded
+#print axioms triple_m4_excluded
+
+end Bgs.FourCutKernel

@@ -1,0 +1,47 @@
+{
+  "base": "d4132ccee82849b644520d88c953cb9b33382a59",
+  "created_utc": "2026-10-06T17:20:49.964273+00:00",
+  "execution_cwd": "/workspace/shared/BGS",
+  "scope": "Destination portable checks and integration; independent from full coordinator-owned builds; not an analytic certificate",
+  "source_sha256_at_receipt_creation": {
+    "mathematics/three_block_unmarking.md": "7fd5b03f4cbc28e8daa30518e223b35f8962d9cae9a8309f9c43704f31390893",
+    "mathematics/arithmetic_translation_exclusion.md": "4aa4da166331c02d0e527b68b1354827ef7011b67ec7d178ed1c3d71703f9881",
+    "mathematics/four_block_unmarking.md": "2dca5b084377b22cdabe074678113bd133fef35b0a8d9795ce8714c5b6004c37",
+    "mathematics/four_cut_rank_two_classification.md": "40009264cf8306ebe4c1d1c3340802805f70c5c55e0e5d7597f96fc8e03bee7a",
+    "computations/verification/three_block_unmarking.py": "19e5959e1719c57b4c1729008b099f154204118300300aabc34fb057c26de870",
+    "computations/verification/arithmetic_translation_exclusion.py": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545",
+    "computations/verification/four_block_unmarking.py": "d867b8c85c9431c5d6bd19abf026ae379eb0eaedc6d7c4cae876c4adb68e1839",
+    "computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "computations/verification/run_four_cut_kernel.py": "ce46321fb8c8f50553e8e18722a4b4f876cdf69b7e5fddec35e2b66b8d8bab77",
+    "computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "computations/maintenance/tests/test_four_cut_output_policy.py": "5429d11ed4d467bca91bb82f669c86dcdd336f8df754d2628201c4845b8375f4"
+  },
+  "portable_receipt": "portable/receipt.json",
+  "four_cut_receipt": "four-cut-current/receipt.json",
+  "four_cut_lean_requested": false,
+  "guards": [
+    "scientific_registry_audit",
+    "render_claim_registry --check",
+    "assertion_policy --check",
+    "text_control_audit",
+    "repository_audit",
+    "sync_finite_orbit_section --check (Pandoc 2.17.1.1)",
+    "sync_fixed_map_section --check (Pandoc 2.17.1.1)",
+    "sync_return_sections --check (Pandoc 2.17.1.1)"
+  ],
+  "preserved_open_claims": [
+    "BGS-TRACE-005",
+    "BGS-BGS-001"
+  ],
+  "rounding_extension": {
+    "ownership": "Existing spectral-resolution ledger owner; no new registry ID",
+    "preparation_manifest": "evidence/microscopic_rounding_provenance.json",
+    "historical_status_and_paths": "Preparation overlay status and artifact paths are historical; README/INTEGRATION hashes are not current missing-path claims. Original accepted bytes remain external; maintained proof/review are curated derivatives.",
+    "source_sha256_at_receipt_creation": {
+      "mathematics/microscopic_rounding_control.md": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+      "record/microscopic_rounding_review.md": "a9781392ea71395d8f634677e1638e6aa9ea13696ee56c7ea98387e8e964e895",
+      "evidence/microscopic_rounding_provenance.json": "4c402fe11d9e5d7c4be01a4b32e94d3559cf09ee1227b8d496bb8410c888e20e"
+    }
+  }
+}

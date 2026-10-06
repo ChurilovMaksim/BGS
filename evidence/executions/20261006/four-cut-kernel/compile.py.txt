@@ -1,0 +1,9 @@
+import os,subprocess,resource,time,json,hashlib,pathlib
+p=pathlib.Path(__file__).resolve().parent; source=p.parent/'overlay/formalization/Bgs/FourCutKernel.lean'
+def limits(): resource.setrlimit(resource.RLIMIT_CPU,(180,180))
+a=['${ELAN_HOME}/bin/lean','-j1','-M4096','-o',str(p/'FourCutKernel.olean'),str(source)]
+t=time.monotonic()
+with (p/'lean.log').open('w') as f:
+ r=subprocess.run(a,cwd=source.parent,env=os.environ|{'ELAN_HOME':'${ELAN_HOME}'},stdout=f,stderr=subprocess.STDOUT,timeout=210,preexec_fn=limits)
+v={'argv':a,'exit_code':r.returncode,'elapsed_seconds':time.monotonic()-t,'maxrss_kib':resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,'caps':{'cpu_seconds':180,'wall_seconds':210,'lean_memory_mb':4096,'threads':1},'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'lean_version':subprocess.check_output(a[:1]+['--version'],cwd=source.parent,env=os.environ|{'ELAN_HOME':'${ELAN_HOME}'},text=True).strip()}
+(p/'lean_manifest.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v));raise SystemExit(r.returncode)

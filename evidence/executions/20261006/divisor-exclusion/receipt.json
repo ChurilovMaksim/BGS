@@ -1,0 +1,93 @@
+{
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "recorded_at_utc": "2026-10-06T15:58:34.826898+00:00",
+  "kind": "external overlay execution; not canonical repository execution",
+  "python": "3.12.14",
+  "arithmetic": "standard-library exact Fraction Gaussian polynomials; no floating point or randomness",
+  "coverage": "32 physical modes; 45 frequency points per filter; derivative orders 0..16 and 0..17; exponent algebra; no analytic formal verification",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "cwd": "external overlay root",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "seconds": 0.18123836899758317,
+      "stdout": "evidence/executions/20261006/divisor-exclusion/normal.stdout",
+      "stderr": "evidence/executions/20261006/divisor-exclusion/normal.stderr",
+      "source_sha256": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545"
+    },
+    {
+      "command": [
+        "python",
+        "computations/verification/arithmetic_translation_exclusion.py",
+        "--inject-failure"
+      ],
+      "cwd": "external overlay root",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "seconds": 0.19866055600141408,
+      "stdout": "evidence/executions/20261006/divisor-exclusion/normal-fault.stdout",
+      "stderr": "evidence/executions/20261006/divisor-exclusion/normal-fault.stderr",
+      "source_sha256": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "cwd": "external overlay root",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "seconds": 0.2824819670022407,
+      "stdout": "evidence/executions/20261006/divisor-exclusion/optimized.stdout",
+      "stderr": "evidence/executions/20261006/divisor-exclusion/optimized.stderr",
+      "source_sha256": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "computations/verification/arithmetic_translation_exclusion.py",
+        "--inject-failure"
+      ],
+      "cwd": "external overlay root",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "seconds": 0.2602972550012055,
+      "stdout": "evidence/executions/20261006/divisor-exclusion/optimized-fault.stdout",
+      "stderr": "evidence/executions/20261006/divisor-exclusion/optimized-fault.stderr",
+      "source_sha256": "c813ba4f701b34f983498752287ac025c76cffdc41c3f807c4537fada241a545"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=evidence/executions/20261006/divisor-exclusion",
+        "evidence/executions/20261006/divisor-exclusion/standalone.tex"
+      ],
+      "cwd": "external overlay root",
+      "exit_code": 0,
+      "seconds": 0.2878026239995961,
+      "stdout": "evidence/executions/20261006/divisor-exclusion/latex.stdout",
+      "stderr": "evidence/executions/20261006/divisor-exclusion/latex.stderr",
+      "scope": "standalone manuscript section only, not full unified build",
+      "environment": {
+        "TEXMFVAR": "/workspace/shared/texmf-var",
+        "TEXMFCONFIG": "/workspace/shared/texmf-config",
+        "TEXINPUTS": ".:/usr/share/texlive/texmf-dist/tex//:",
+        "TFMFONTS": "/usr/share/texlive/texmf-dist/fonts/tfm//:",
+        "VFFONTS": "/usr/share/texlive/texmf-dist/fonts/vf//:",
+        "T1FONTS": "/usr/share/texlive/texmf-dist/fonts/type1//:"
+      },
+      "prior_failed_setup": "Default format search failed; existing shared TeX format and explicit search paths used on retry; initial logs preserved",
+      "source_sha256": "a1d6dabc20e262b3494750d31f890a635b62afb446c5efbc85bd6ff479f1d6b6"
+    }
+  ],
+  "source_accepted_sha256": "96a0edb7ac319710c9a8b008c528471749fa9f502943ca50eb5e8d7572990d69",
+  "canonical_sha256": "4aa4da166331c02d0e527b68b1354827ef7011b67ec7d178ed1c3d71703f9881"
+}

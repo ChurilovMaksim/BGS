@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational Gaussian coefficients; standard library",
+  "physical_modes": 32,
+  "Fourier_moment": "51451/1000",
+  "filters": [
+    {
+      "degree": 16,
+      "l1": "6409325/1143072",
+      "hits": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "multiplier": [
+        "-4/3",
+        "0"
+      ]
+    },
+    {
+      "degree": 16,
+      "l1": "6409325/1143072",
+      "hits": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "multiplier": [
+        "-2",
+        "0"
+      ]
+    }
+  ],
+  "translated_remainder_orders": [
+    16,
+    17
+  ],
+  "max_filtered_remainder_prefactor": "12790305233305600000000000000000000000000000000000000000000/19683",
+  "max_ordinary_remainder_prefactor": "2199838854629767029719040000000000000000000000000000000000000000000000",
+  "compression_bound": "C_tau (d^262/N)^(1/129)",
+  "delta_range": "delta < 1/262",
+  "example_delta": "1/524",
+  "scope": "finite coefficients/filter/constants/exponents only; no analytic formal certification"
+}

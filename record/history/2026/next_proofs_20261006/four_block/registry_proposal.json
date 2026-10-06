@@ -1,0 +1,48 @@
+{
+  "proposal_only": true,
+  "base": "0ffb20cc152d0ddd2620887e46d21d1120b95fd8",
+  "TRACE016_verified_free_at_preparation": true,
+  "reserved_elsewhere_not_used": [
+    "BGS-TRACE-015",
+    "BGS-FORMAL-002"
+  ],
+  "claims": [
+    {
+      "id": "BGS-TRACE-016",
+      "title": "Once-counted reduced distinct-port four-block signed cancellation",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + COMPUTER-ASSISTED CLASSIFICATION INPUT; ANALYTIC CHAIN UNFORMALIZED",
+      "source": "mathematics/four_block_unmarking.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/four_block_independent_review_20261006.md",
+        "record/four_cut_rank_two_review_20261006.md",
+        "record/four_cut_lean_review_20261006.md",
+        "evidence/executions/20261006/four-block/receipt.json",
+        "evidence/executions/20261006/four-cut-kernel/"
+      ],
+      "verifiers": [
+        "computations/verification/four_block_unmarking.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/FourCutKernel.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/four_block_unmarking.tex"
+      ],
+      "boundary": "Unitary family with q<=C/N and eventual all-length ||P^L-J||<=2^-L; actual fixed tau=10^-80 through FM-021. Once-counted ordered pairs admitting nonempty reduced four-block reversal with pairwise distinct initial values, all link lengths, smooth compact positive Heisenberg bands. Error O_w((log N)^10/N) plus superpolynomial/exponential terms. Universal rank-two classification uses an audited mathematical reduction and a bounded kernel; FORMAL-002 certifies only that kernel, not compression or this analytic theorem. Repeated ports, general or growing reconnections, overlaps between families and full signed statistics remain open. Coarse hypotheses are not a universality criterion by the rounding obstruction. No effective startup, world priority or external referee claim."
+    }
+  ],
+  "dependency_roles": {
+    "BGS-FM-021": "Actual-model unitary flatness and position-chain mixing inputs",
+    "mathematics/four_cut_rank_two_classification.md": "Universal computer-assisted rank-two classification via independently audited mathematical compression/lifting plus bounded exact kernel",
+    "BGS-FORMAL-002": "Separately owned bounded native Lean predicate certificate only; universal classification reduction and analytic TRACE-016 proof remain unformalized"
+  },
+  "unchanged_open_claims": [
+    "BGS-TRACE-005",
+    "BGS-BGS-001"
+  ]
+}

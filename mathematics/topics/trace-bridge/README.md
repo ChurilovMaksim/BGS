@@ -41,3 +41,9 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
 - [resonant_cubic_density_control](../../resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.
 - [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
+
+- [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [four_block_unmarking](../../four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [four_cut_rank_two_classification](../../four_cut_rank_two_classification.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.

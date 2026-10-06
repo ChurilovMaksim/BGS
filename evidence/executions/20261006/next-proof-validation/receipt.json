@@ -1,0 +1,144 @@
+{
+  "schema": "bgs-next-proof-validation-v1",
+  "status": "PASS",
+  "curated_utc": "2026-10-06T17:32:03.547541+00:00",
+  "scope": "Public execution evidence and independent hash validation; not an external proof audit or a proof of BGS.",
+  "integration_base": "d4132ccee82849b644520d88c953cb9b33382a59",
+  "source_provenance": {
+    "mode": "archive",
+    "input_commit": null,
+    "upstream_commit": null,
+    "archive_file_count": 1550,
+    "source_tree_unchanged": true,
+    "all_frozen_file_hashes_verified": true,
+    "post_run_note": "This evidence package and integration-record addendum were created after execution and were not part of the frozen snapshot."
+  },
+  "workspace": {
+    "passed": 170,
+    "total": 170,
+    "all_raw_check_log_hashes_verified": true,
+    "initial_attempt": {
+      "passed": 169,
+      "total": 170,
+      "failed_check": "bibliographic_metadata_audit",
+      "receipt": "initial-failed/workspace.json",
+      "disposition": "Preserved failure before explicit cached external-dependency impact-closure review and update."
+    }
+  },
+  "cpp": {
+    "fresh_builds": 22,
+    "workspace_executions": 23,
+    "all_fresh_source_and_executed_binary_hashes_match": true,
+    "build_method": "Standalone g++ C++20 compilation; not a successful CMake build.",
+    "cmake_status": "Local configure failed: Boost package configuration unavailable with CMake 3.31/CMP0167 NEW. Remote CI remains separate."
+  },
+  "lean": {
+    "active_modules": 18,
+    "lake_jobs": 21,
+    "exit_code": 0,
+    "all_recorded_input_hashes_match_final_snapshot": true,
+    "scope": "Incremental full active Lean project build; prior modules replayed, FourCutKernel freshly compiled, all 21 Lake jobs succeeded. Compiles 18 active modules, not all analytic proofs.",
+    "trust_boundary": "FourCutKernel main finite equalities use native_decide generated native-evaluation axioms; m=4 ordinary decide. Compression/lifting and analytic arguments not formalized."
+  },
+  "maintenance": {
+    "normal": 35,
+    "optimized_parent": 35,
+    "status": "PASS"
+  },
+  "manuscript": {
+    "status": "PASS",
+    "pages": 263,
+    "tex_input_count": 85,
+    "all_input_and_output_hashes_verified": true,
+    "pdf_sha256": "905767e24a718100d2d0a18bdd8de4513dc64ceba55f82ddfad0653659b3882f",
+    "visual_review": {
+      "physical_pages": [
+        226,
+        256,
+        257,
+        258,
+        259
+      ],
+      "result": "No clipping or overlap reported by integrating reviewer.",
+      "scope": "New-section pages only; not the entire 263-page manuscript."
+    }
+  },
+  "normalization": {
+    "policy": "Declared local path prefixes are replaced by role placeholders. Hash strings and null provenance are retained. Full source manifests appear once per snapshot. Raw/public hash mapping records transformations.",
+    "roles": [
+      "$BOOST_INCLUDE",
+      "$BUILD_SOURCE_ROOT",
+      "$CHECK_LOGS",
+      "$FOUR_CUT_TEMP",
+      "$INITIAL_CHECK_LOGS",
+      "$INITIAL_SOURCE_ROOT",
+      "$LEAN_LOG",
+      "$PYTHON",
+      "$SOURCE_ROOT",
+      "$TEX_BUILD",
+      "$TEX_CACHE",
+      "$VALIDATION"
+    ]
+  },
+  "non_claims": [
+    "No BGS universality or general signed-remainder theorem.",
+    "No formalization of compression/lifting or analytic arguments.",
+    "No successful local CMake configure/build.",
+    "No full-manuscript visual review.",
+    "No independent external referee or priority certification."
+  ],
+  "artifact_sha256": {
+    "README.md": "8cbfbefdbfe75e97fb66e12c0cad9ab5864ba8a52ddb749024d68156281b41da",
+    "archive-manifest.json": "5a1c924fa4471ea1bc5538e0e6c3dcb8ad36a7f0e091100b31abba288bc616c6",
+    "check-logs/arithmetic_translation_exclusion.log": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374",
+    "check-logs/bibliographic_metadata_audit.log": "165c0b9f886b08ae68d0f812b8b38e8ae281697a14073a766649ca47d34264cc",
+    "check-logs/cpp_four_cut_rank_two_kernel.log": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326",
+    "check-logs/four_block_unmarking.log": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc",
+    "check-logs/four_cut_rank_two_kernel.log": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "check-logs/microscopic_noise_removal.log": "4338b6579c6272eaf68af4943f52cb9867e1f11949197c8b2614eced4618dd99",
+    "check-logs/run_four_cut_kernel.log": "466d821f51b9b9e4b60e7872a3f156a70d1cd6b3b0edd9f3c11c3bf6cc56747a",
+    "check-logs/three_block_unmarking.log": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362",
+    "cmake-configure.log": "8a7be100e695405473bb72cbc62c8efafd64c4075803a471007f1d90c0371789",
+    "cpp-build-logs/cat_map_order.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/cayley_direct_energy_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/cayley_energy_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/cayley_fibonacci_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/cayley_fourier_hybrid.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/cayley_trace_intercept_rigidity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/coherent_aperture_bounds.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/extremal_resonance_replay.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/fixed_strength_locality_exact.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/four_cut_rank_two_kernel.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/fourth_moment_pair_key_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/general_hyperbolic_periods.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/magnetic_word_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pell_coboundary_pairs.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pell_floquet_pair_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pell_minimal_relation_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pell_pair_orthogonality.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pell_sharp_orbit_verifier.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/pure_loss_discrimination_bounds.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/rare_phase_certificate.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/return_word_certificate.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-build-logs/spectral_lattice_clustering.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fresh-cpp-build.json": "62ecd04a097a10114c35521e0ec4b6b788bc7723a344ded6f04b71695e7f8af4",
+    "initial-failed/archive-manifest.json": "2466b138e4d39fbaf040d8c69d0721fd5d382ed4658492d2fad12cf263b96999",
+    "initial-failed/bibliographic-metadata-audit.log": "202e2c3ade0d2a69899e4244a2b60b3be7a7e0633d61356af1c331848c9ccdc2",
+    "initial-failed/full-workspace.log": "f02cea9822c9a85396759f7778ec339be816029422d108f7ac79f18acb7895a4",
+    "initial-failed/raw-check-log-index.json": "cbd23cf582863b7005c6f05c5ba902038102e086e43b8a2a76d0f94375227dd7",
+    "initial-failed/workspace.json": "a942984bcc0aa11c4f0f5e3ba469ef01ef3687a20241b4981f1bf873660580a8",
+    "lean-build.json": "f86ab8e4ea876a1378cfa84a22fb619922d42cabe74f27a0b340b2efe97404f9",
+    "lean-build.log": "1deea98a026c5d089010288847f9fcbdde53d44a8aded67abedd0ead958bbff8",
+    "maintenance-normal.log": "c24167a450e7be09ce50a3defe06ace19a7939506f80be1470a38b2189d45815",
+    "maintenance-optimized.log": "28c65a420fa2c58977635d5afec3cee98abce9937630dd891bcf387c4f16bb9e",
+    "manuscript-build-manifest.json": "7e0762bcc96fd3edf55b1ace97536f3f2fd50626d6c19aa151f9e09cd391e36a",
+    "manuscript-logs/latex.log": "cc692801fa23b4fd0246368ed84dd53acf894bf44bebda9939a00f7981aa62ac",
+    "manuscript-logs/pass-1.log": "ad690371be10a8a742ab30b0a75d03132d667855f280b23053a23bac2dc232a3",
+    "manuscript-logs/pass-2.log": "c0468daff749d9e57b3db59b2da187c92aa9925b6e5951eaeb77149815e0477b",
+    "manuscript-logs/pass-3.log": "08a230f03b656c6d6efd1f41f42f6b772d40efdccf28836d03f9437836a95986",
+    "raw-check-log-index.json": "d6549d6061d43078295f1d2f5d0ad1e620f111171ba390364255cb9ee6e8bbb2",
+    "raw-public-hashes.json": "98fea2e0c7302e5a87a7d015ba11a6164e6942a3f35ec6146a602aa7054edef7",
+    "snapshot-delta.json": "cdccb7cbdc78f5c85bbece0c16fad2aebe152d3fac43920bf0aa57a6e6074223",
+    "workspace.json": "10764e49a739bd773f2aca8d8a8a16702f3fb2555fe8da162278adee30db39c3"
+  }
+}

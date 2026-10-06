@@ -1,0 +1,8 @@
+'Bgs.FourCutKernel.pairs_through_12' depends on axioms: [propext, pairs_through_12._native.native_decide.ax_1_1]
+'Bgs.FourCutKernel.triples_through_10' depends on axioms: [propext, triples_through_10._native.native_decide.ax_1_1]
+theorem Bgs.FourCutKernel.pairs_through_12 : through 12 false = { configurations := 3858, matchCount := 560 } :=
+of_decide_eq_true pairs_through_12._native.native_decide.ax_1_1
+theorem Bgs.FourCutKernel.triples_through_10 : through 10 true = { configurations := 650 } :=
+of_decide_eq_true triples_through_10._native.native_decide.ax_1_1
+'Bgs.FourCutKernel.pair_m4_excluded' depends on axioms: [propext]
+'Bgs.FourCutKernel.triple_m4_excluded' depends on axioms: [propext]

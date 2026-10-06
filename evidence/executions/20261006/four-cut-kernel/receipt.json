@@ -1,0 +1,32 @@
+{
+  "base": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+  "scope": "Partial overlay only; compiled exact bounded Lean certificate and independent exact controls. No shared repository mutation or full repository build.",
+  "lean_definitions_byte_identical_inside_renamed_namespace": true,
+  "all_python_sources_assert_free": true,
+  "lean_source_sha256": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+  "lean_olean_sha256": "9072fbfa664e6852d8d14712b0364a802537352fa3ed4834258baf0192d5946f",
+  "initial_bounded_build": {
+    "argv": [
+      "${ELAN_HOME}/bin/lean",
+      "-j1",
+      "-M4096",
+      "-o",
+      "${INITIAL_BUILD}/FourCutKernel.olean",
+      "${SOURCE_ROOT}/formalization/Bgs/FourCutKernel.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 62.75310132999948,
+    "maxrss_kib": 798352,
+    "caps": {
+      "cpu_seconds": 180,
+      "wall_seconds": 210,
+      "lean_memory_mb": 4096,
+      "threads": 1
+    },
+    "source_sha256": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "portable_runner_receipt": "portable/receipt.json",
+  "fault_controls_receipt": "fault-controls/receipt.json",
+  "native_trust": "The two full certificates use named native_decide axioms plus propext; m=4 exclusions use propext only. Abstract compression/word correspondence/analytic estimates unformalized."
+}

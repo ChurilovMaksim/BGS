@@ -1,0 +1,241 @@
+{
+  "policy": "Publication-facing editorial curation only. Raw bytes remain outside this overlay. Raw hashes identify the actual original records; public hashes identify their curated representations. Placeholders describe execution roles, not the literal paths used in the original runs. No command was rerun or represented as having executed in a renamed location. Hash fields inherited inside raw-derived receipts remain hashes of original artifacts unless explicitly labeled public.",
+  "placeholder_roles": {
+    "${SOURCE_ROOT}": "root of the exact compiled partial source overlay",
+    "${PORTABLE_RUN}": "portable runner output directory",
+    "${FAULT_RUN}": "temporary fault-injection output directory",
+    "${INITIAL_BUILD}": "isolated initial Lean build directory",
+    "${ACCEPTED_SOURCE}": "original accepted mathematical/Python/C++ inputs",
+    "${MATHEMATICAL_REVIEW}": "independent rank-two review working directory",
+    "${SEMANTIC_REVIEW}": "independent Lean semantic review working directory",
+    "${ORIGINAL_LEAN}": "original split Lean certificate input directory",
+    "${ELAN_HOME}": "installed pinned Lean toolchain directory",
+    "${PYTHON}": "Python executable used in the actual run",
+    "${CXX}": "C++ executable used in the actual run"
+  },
+  "raw_location_sha256": {
+    "${SOURCE_ROOT}": "d12ff0afd1ac406f567f17326a0e138510a98e2ea660451b77ef139de399ad28",
+    "${PORTABLE_RUN}": "d61eaf1ed317a2d3a4e99fc80e4cdbcc0b20c7f96964e57a5f6c6bb347cb8dc4",
+    "${FAULT_RUN}": "2a5fa51eedce5afa3319832750419bde629c44c274c850fa868f68980701b772",
+    "${INITIAL_BUILD}": "c6c3fec7815abdf07d635912f9c8222c57ead9740eef4708245a2c0373062abe",
+    "${ACCEPTED_SOURCE}": "57756d399406b7bb1bf30dd0dd0f12e1027bc744fa1abbe1811836c98d2d882e",
+    "${MATHEMATICAL_REVIEW}": "5e8daa8b7fa83d7800f975a621713af9b33b757af05a96e31fd7a2b4b53a521b",
+    "${SEMANTIC_REVIEW}": "9ae7d61f4addbf62c15e013893b9e4cb4d255ae2b9dd09f873c844aa732214dc",
+    "${ORIGINAL_LEAN}": "099f3cfcfc4a31c747e1dd5122fd8a7b771dbe6282f796a08c4b562f44a1f357",
+    "${ELAN_HOME}": "17a89c49c89a07debe7ccb83861eda5a33331c8806bb41f54cf28c967f7205b6",
+    "${PYTHON}": "3f99dacf3fe1173f4083a3592804a3f0194569f6f6cf30c3f75b1b9e425c8f7d",
+    "${CXX}": "a7b85a70c601c614370f89fbbd04653f55009e78399f8495efa43e88a38094d7"
+  },
+  "files": [
+    {
+      "public_path": "computations/cpp/four_cut_rank_two_kernel.cpp",
+      "raw_sha256": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+      "public_sha256": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+      "curated": false
+    },
+    {
+      "public_path": "computations/verification/four_cut_rank_two_kernel.py",
+      "raw_sha256": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+      "public_sha256": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+      "curated": false
+    },
+    {
+      "public_path": "computations/verification/run_four_cut_kernel.py",
+      "raw_sha256": "00e764d13ecd029a2614229b90743807f3ff8f0646a871bd8b7e766bff6c2541",
+      "public_sha256": "00e764d13ecd029a2614229b90743807f3ff8f0646a871bd8b7e766bff6c2541",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/compile.py.txt",
+      "raw_sha256": "08dff4c718d74534926bad5fc0b7962f867922bdf50fdde22f25931ee8ae86f1",
+      "public_sha256": "22c16e035c9c4b95a024b2ce7273f49c0e8d9bbf8b4767d38a6c24691968eefd",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/failed_root.log",
+      "raw_sha256": "e4542bb3820a53c8c6e946a58ee7d9cd866b03b93bf72e4cb706a4ca73f1e1fe",
+      "public_sha256": "6a52df04fe6558a7920c5dfc22f91ac74b861550e50c29ae47dba5d4fdcc74de",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/failed_root_manifest.json",
+      "raw_sha256": "5c0583c2b59873552e41ae2417e2221678fba643c384da22b6571745e95413e5",
+      "public_sha256": "ff528cf1c563722950c47fa17e5d17a0fdb6b64cde74b340de2d0c6dab4b8d68",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/fault-controls/corrupted_expected_total.cpp",
+      "raw_sha256": "96797cf7af269056a427cb59cf54be713a4208e36a0f73e92f004db049f12413",
+      "public_sha256": "96797cf7af269056a427cb59cf54be713a4208e36a0f73e92f004db049f12413",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/fault-controls/fault_controls.py.txt",
+      "raw_sha256": "2889f3bb4252cb9497d0409610b9acc30dbbe28403406b2ed65beacee03a4801",
+      "public_sha256": "2889f3bb4252cb9497d0409610b9acc30dbbe28403406b2ed65beacee03a4801",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/fault-controls/receipt.json",
+      "raw_sha256": "5ec9730f6c9a9eaf228b940b52445accdb01337cb2ac71c339a6024c564925e9",
+      "public_sha256": "d189640d3a8b751f3f0603b163be06caa933b7bc85907eef4735372ab91826a4",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/lean.log",
+      "raw_sha256": "ddf41c75ad33d97a5516664f3db4a47c7a5040c34e49fde4cbfc46aed527db4a",
+      "public_sha256": "ddf41c75ad33d97a5516664f3db4a47c7a5040c34e49fde4cbfc46aed527db4a",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/lean_manifest.json",
+      "raw_sha256": "0e17921e8cef8074e5ddb0340d129d542ec432426e82c65c54a4707b81b65524",
+      "public_sha256": "64d7b591097eaef49f0f51d2a55ed7eaed9edbf8cf84f191c5e31246fabfca3f",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/cpp.log",
+      "raw_sha256": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326",
+      "public_sha256": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/cpp_compile.log",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/lean.log",
+      "raw_sha256": "ddf41c75ad33d97a5516664f3db4a47c7a5040c34e49fde4cbfc46aed527db4a",
+      "public_sha256": "ddf41c75ad33d97a5516664f3db4a47c7a5040c34e49fde4cbfc46aed527db4a",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/lean_version.log",
+      "raw_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "public_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/python.log",
+      "raw_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+      "public_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/python_optimized.log",
+      "raw_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+      "public_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/portable/receipt.json",
+      "raw_sha256": "eee784a3c87f1c06c7b10b914fc1db7b7e179adec048d0b6709dff52e5f673df",
+      "public_sha256": "3990659d5f40b2b2590549d370e06afe403c220af58cb380cc401d7eaf9cae70",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/accepted_rank_two_source.md.txt",
+      "raw_sha256": "186ed316e53053d310ed21af49fd05c845fd0b10bb4def309af33bac0ac80aac",
+      "public_sha256": "186ed316e53053d310ed21af49fd05c845fd0b10bb4def309af33bac0ac80aac",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/independent_word_results.json",
+      "raw_sha256": "5e66e10e47bacb3df5d97d8ec1b22863a748de0676a378e0475cbeed2e90a133",
+      "public_sha256": "5e66e10e47bacb3df5d97d8ec1b22863a748de0676a378e0475cbeed2e90a133",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/lean_review_hashes.txt",
+      "raw_sha256": "a30b398fbfec498bfa50f4d9e7fc28dec4aebcb6e92878f1b39bb45f5b6bb0b7",
+      "public_sha256": "a30b398fbfec498bfa50f4d9e7fc28dec4aebcb6e92878f1b39bb45f5b6bb0b7",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/lean_review_source_hashes.txt",
+      "raw_sha256": "fd138802748352758b0d1bb4b3559e590ad63e60d0ed189713f06d3c797ab21c",
+      "public_sha256": "8a3e794440eb77dff45b63bc6f53400d010bd2b610c13cebcfbf4923aa1fc555",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/original_Certificate.lean.txt",
+      "raw_sha256": "52672875514929c87ba65d919682b715642c1055b96b53eeb5de18cbb4ffc20d",
+      "public_sha256": "52672875514929c87ba65d919682b715642c1055b96b53eeb5de18cbb4ffc20d",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/original_Endpoint.lean.txt",
+      "raw_sha256": "2483bb34b71f3a442b65e9a76a0b438a0dac10ea341c9de163e805ed76b4bef1",
+      "public_sha256": "2483bb34b71f3a442b65e9a76a0b438a0dac10ea341c9de163e805ed76b4bef1",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/original_FourCut.lean.txt",
+      "raw_sha256": "3e2df625a8e2cb54f6a130081a3b879c2cdf5732900f188bfbbbee9dcff4fafd",
+      "public_sha256": "3e2df625a8e2cb54f6a130081a3b879c2cdf5732900f188bfbbbee9dcff4fafd",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/rank_two_kernel.cpp.txt",
+      "raw_sha256": "437295452cfa40d56bee2f5549bc03c73b50b996ac38ffe7dcace8c819c21d68",
+      "public_sha256": "437295452cfa40d56bee2f5549bc03c73b50b996ac38ffe7dcace8c819c21d68",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/rank_two_permutation_kernel.py.txt",
+      "raw_sha256": "23c9633114e38e94b005d5f35199776697e2acdcca3017ec24e75bf2100f9069",
+      "public_sha256": "23c9633114e38e94b005d5f35199776697e2acdcca3017ec24e75bf2100f9069",
+      "curated": false
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/provenance/rank_two_source_hashes.txt",
+      "raw_sha256": "8b81b7386a5f97533e96792137d83d602f34a89cf86ac5b5ae97fe58daa7e9d7",
+      "public_sha256": "6087505f32f4cfb242809addf70c0ecb20bf0e44deb391ccf819405f119e9b26",
+      "curated": true
+    },
+    {
+      "public_path": "evidence/executions/20261006/four-cut-kernel/receipt.json",
+      "raw_sha256": "40529cff2f8fd6c9431e3e900019811bd62b6c4fcd12504e261130a507489b60",
+      "public_sha256": "96aa3ea8fb6446effa5f2b5f50365eaf20547f1a6dace44010a88ca94b1ecbea",
+      "curated": true
+    },
+    {
+      "public_path": "formalization/Bgs/FourCutKernel.lean",
+      "raw_sha256": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+      "public_sha256": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+      "curated": false
+    },
+    {
+      "public_path": "formalization/lean-toolchain",
+      "raw_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "public_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "curated": false
+    },
+    {
+      "public_path": "manuscript/unified_sections/four_cut_rank_two_kernel.tex",
+      "raw_sha256": "0c74b56eb4b1ffd8588e40030d706f2210bb63051bfca4351cdf0d219779fc61",
+      "public_sha256": "0c74b56eb4b1ffd8588e40030d706f2210bb63051bfca4351cdf0d219779fc61",
+      "curated": false
+    },
+    {
+      "public_path": "mathematics/four_cut_rank_two_classification.md",
+      "raw_sha256": "eaf320908a6229eaf2206598c122cd64b73e8ee42e0cc971febcbed885a2597d",
+      "public_sha256": "40f995c113f76b966090fa0b469e80b564b6b53dea58efddc1faacd5f528c159",
+      "curated": true
+    },
+    {
+      "public_path": "record/four_cut_lean_review_20261006.md",
+      "raw_sha256": "f1f37a6798374a3c91a54f04f7e4287d621fc553798a839bfa0d709e75f143c4",
+      "public_sha256": "42875ff95d05bba0a7a6e9e45f24964b3b8c3f1dcc964b1434804dd0189c3894",
+      "curated": true
+    },
+    {
+      "public_path": "record/four_cut_rank_two_review_20261006.md",
+      "raw_sha256": "e5882116544f44789ceeec83b9fafea3b9c43fe05b53bdef79d296c072887ec5",
+      "public_sha256": "429914647f5b3d9c99da3fb48fec7ce3004bcaa3e4507177649e6e65d57fe056",
+      "curated": true
+    }
+  ]
+}

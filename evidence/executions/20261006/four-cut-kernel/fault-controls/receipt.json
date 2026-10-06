@@ -1,0 +1,35 @@
+{
+  "scope": "temporary fault-injected copies only; canonical predicates unmodified",
+  "results": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "import silent; corrupted totals rejected\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "import silent; corrupted totals rejected\n",
+      "stderr": ""
+    },
+    {
+      "cpp_fault_argv": [
+        "c++",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "${FAULT_RUN}/corrupted_expected_total.cpp",
+        "-o",
+        "${FAULT_RUN}/bad"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "unexpected exhaustive totals\n"
+    }
+  ],
+  "source_hashes": {
+    "${SOURCE_ROOT}/computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "${SOURCE_ROOT}/computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671"
+  }
+}

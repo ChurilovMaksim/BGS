@@ -1,0 +1,93 @@
+{
+  "scope": "Exact bounded rank-two kernel only; no abstract reduction or analytic formalization.",
+  "input_hashes_before": {
+    "computations/verification/run_four_cut_kernel.py": "ce46321fb8c8f50553e8e18722a4b4f876cdf69b7e5fddec35e2b66b8d8bab77",
+    "computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "commands": [
+    {
+      "name": "python",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/shared/BGS/computations/verification/four_cut_rank_two_kernel.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0199605919988244
+    },
+    {
+      "name": "python_optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/BGS/computations/verification/four_cut_rank_two_kernel.py"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "elapsed_seconds": 2.069790004999959
+    },
+    {
+      "name": "cpp_compile",
+      "argv": [
+        "/usr/bin/c++",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/workspace/shared/BGS/computations/cpp/four_cut_rank_two_kernel.cpp",
+        "-o",
+        "/workspace/shared/bgs_next_proofs_validation/four-cut-current/four_cut_rank_two_kernel"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.8671416459983448
+    },
+    {
+      "name": "cpp",
+      "argv": [
+        "/workspace/shared/bgs_next_proofs_validation/four-cut-current/four_cut_rank_two_kernel"
+      ],
+      "cwd": "/workspace/shared/BGS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.31487717300115037
+    }
+  ],
+  "lean_requested": false,
+  "results": {
+    "pairs": {
+      "m_range": [
+        5,
+        12
+      ],
+      "partitions": 3858,
+      "directed_matches": 560,
+      "local_alternating_matches": 560
+    },
+    "triple": {
+      "m_range": [
+        5,
+        10
+      ],
+      "oriented_cycles": 650
+    }
+  },
+  "status": "passed",
+  "input_hashes_after": {
+    "computations/verification/run_four_cut_kernel.py": "ce46321fb8c8f50553e8e18722a4b4f876cdf69b7e5fddec35e2b66b8d8bab77",
+    "computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "log_hashes": {
+    "python.log": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "cpp_compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "python_optimized.log": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "cpp.log": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326"
+  }
+}

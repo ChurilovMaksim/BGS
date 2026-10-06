@@ -1,0 +1,77 @@
+# Rank-two four-cut ambiguity: finite-kernel reduction and local masks
+
+Checkpoint RECONNECT-20261006-E. New computer-assisted candidate; mathematical reduction and compiled finite kernel both require independent audit before universal promotion. Base0ffb20cc152d0ddd2620887e46d21d1120b95fd8.
+
+## Exact candidate classification
+
+For m>4, consider two DIFFERENT reduced four-block decompositions of the same cyclic coordinate-word pair, each with four pairwise distinct port values. Lift their equal output strings to source-position labels, after the actual cyclic alignment. Suppose the resulting relative permutation tau has equality rank2.
+
+Then tau is a product of two transpositions, not a3-cycle. Its support is four CONSECUTIVE source vertices carrying alternating values a,b,a,b with a!=b. If the first position is s, the two cut sets are precisely
+
+{s,s+1,s+4,z} and {s,s+3,s+4,z}
+
+modulo m, for a fourth cut z outside that four-vertex cluster and its end. Thus the ambiguity is exactly the two splittings (a)|(b a b) and(a b a)|(b), with the same remaining C,D blocks. This is a statement about a specified rank2 relation between representations, not yet a complete unmarking theorem at r=4.
+
+## 1. Cycle conventions and all alignments
+
+Let c(j)=j-1 modm be the original predecessor m-cycle on source positions. For four cut heads H={h0,h1,h2,h3} in cyclic order, the unique reduced one-trace ordering is A D C B. Its predecessor cycle is r=c h where h=(h0 h2)(h1 h3). Every head in H genuinely changes predecessor, including singleton blocks; every other head retains its predecessor.
+
+An equality of the two output label words under ANY cyclic alignment gives a relative source-position bijection tau and r'=tau r tau^-1. Equality rank2 means either tau is a3-cycle or it is two disjoint transpositions. These are all possibilities since rank=m-number_of_cycles. Root positions do not appear in the predecessor-cycle relation, so this formulation includes all cyclic alignments rather than fixing an arbitrary root.
+
+The label equality classes are the cycles of tau. Other incidental label equalities may be removed by assigning fresh labels outside these classes. This cannot spoil either distinct-port condition. Thus finite enumeration may use exactly these forced identifications, with every other source position given its own label.
+
+## 2. Bounded reduction preserving GENUINE cuts
+
+Put S=support(tau), and let succ=c^-1 be the original source successor. Since h'=c^-1 r'=c^-1 tau c h tau^-1, its support H' is contained in S union succ(S) union H. Preserve the vertex set
+
+T=S union succ(S) union H.
+
+Its size is at most12 for two transpositions and at most10 for a3-cycle. In particular T contains BOTH cut-head sets H,H'. Contract all other vertices in the source and the two output cycles.
+
+Why genuine cut status survives, rather than only abstract conjugacy: for the first decomposition, each maximal shared block has its initial cut head in H retained. Deleting interior vertices shortens that block but never erases it. Its last retained vertex is consequently distinct from the last retained vertex of every other block. At a cut head, the source and reordered output use predecessor tails belonging to different blocks; these remain different after contraction. At a non-cut retained head, source and output traverse the same retained portion of one block, so no new predecessor change is introduced. Therefore the contracted first decomposition has EXACTLY H as genuine cuts. Apply the identical argument with H' to the second decomposition; T contains H' as proved above. Both retain their cyclic order and the crossing double-transposition predecessor formula.
+
+The set T is tau-invariant, since it contains S and tau fixes its complement. Deleting the same tau-fixed vertices from conjugate cycles commutes with conjugation, so the contracted cycles still satisfy r'_T=tau r_T tau^-1. Both remain single cycles. Labels at the retained cut heads and both distinct-port conditions are unchanged.
+
+Preserving succ(S) is also important for lifting the conclusion. If two successive supported positions had a nonempty source gap, the immediate successor of its first supported position is outside S and is retained. Thus a nonconsecutive support cannot become four consecutive positions after contraction. Likewise the preserved immediate successor of the final supported position ensures the endpoint s+4 in the kernel lifts to the ACTUAL immediate endpoint of the four-vertex cluster. The fourth cut z is retained. Therefore both the consecutive-support conclusion and the displayed exact cut form lift without expanding a short cluster into a long word.
+
+Any counterexample to the classification consequently has a reduced counterexample with m<=12 or m<=10, respectively. Four distinct port classes imply m>=5 (indeed>=6 in the nonempty rank2 cases), so the finite ranges below cover all reduced cases. This reduction, not the raw success count, is what would make the kernel universally decisive.
+
+## 3. Executed exhaustive kernel and independent representations
+
+rank_two_permutation_kernel.py enumerates:
+
+- every size-four support and all three pairings, for m=5,...,12;
+- every size-three support and BOTH3-cycle orientations, for m=5,...,10;
+- every four-head set H with distinct forced labels;
+- r=c h, r'=tau r tau^-1, and its actual changed-head set H';
+- only cases with exactly four changed heads, distinct forced labels at H', and the crossing double-transposition formula on H'.
+
+Every surviving pair is checked against the full local alternating classification and exact two cut sets, not merely a locality score. Results:3858 pair partitions,560 directed matches, all of the prescribed local form;650 oriented3-cycles, no matches. Failures raise explicit exceptions, independent of Python optimization mode.
+
+rank_two_kernel.cpp independently implements this permutation enumeration using exact integers. It compiles under g++ -std=c++17 -O2 -Wall -Wextra -pedantic with no warnings after indentation cleanup. Its outputs agree:3858/560 and650/0. No floating point, randomized sampling or external algebra library is used.
+
+As an orthogonal representation check, classify_rank_two_kernel.py directly constructs cyclic label WORDS and groups their reordered outputs, without predecessor-conjugacy formulas. It exhausts3843 pair partitions for m=6,...,12 and finds280 unordered ambiguous outputs, all with consecutive support. This matches560 directed permutation matches; the missing15 partitions at m=5 have too few distinct labels for four distinct ports and produce no matches. Earlier direct word checks of triple equality through m=12 also found no ambiguity.
+
+These executions are exact finite certificates only until the reduction above and kernel semantics receive fresh independent review. They are not Lean certification or a result about arbitrary higher-r ambiguity.
+
+## 4. Exact consequence for one local ambiguity indicator
+
+For the classified pattern write x=a b a b C D and y=a D C b a b. The equality constraints concern only the four-vertex short cluster. They leave the final endpoints of C,D unrestricted, except through their ordinary shared link propagators. The four genuine starting ports are a,b,c,d and are pairwise distinct.
+
+If C has at least one internal edge, replacing its P^L by J and summing its final endpoint gives the inner product of the distinct columns indexed by its two successor ports, hence zero. The same holds for D. Thus the local overlap indicator preserves exact uniform-link cancellation, unlike a general lexicographic mask. Since one of C,D has length at least(m-4)/2, replacing that long link by its mixing error gives exponential decay up to polynomial factors. Short C or D does not affect the other longest-link choice.
+
+This controls the signed overlap sum for THIS specified local event. To obtain the full once-counted four-block family still requires: localization/rank control for all other ambiguity events, summation of intersections or multiplicity corrections, and correct accounting of diagrams with three or more short blocks. The local classification alone does not authorize truncating that hierarchy.
+
+### Explicit local-overlap contraction
+
+For singleton A=(a), B=(b,a,b), and remaining links C,D of internal lengths L_C,L_D, the signed overlap is exactly
+
+sum_(a,b,c,d distinct; u,v) P_(b,a)P_(a,b)(P^LC)_(c,u)(P^LD)_(d,v)
+  U_(a,b)conj(U_(a,d)) U_(b,c)conj(U_(b,a))
+  U_(u,d)conj(U_(u,b)) U_(v,a)conj(U_(v,c)).
+
+Replacing C by J gives delta_(d,b)/N=0; replacing D gives delta_(a,c)/N=0. With the longer link's difference from J, the two internal short-edge probabilities cost q² and the eight connectors cost q^4. The remaining sums cost at most N^5 after one stochastic row is summed. Thus the local overlap is bounded by
+
+N^5 q^6 2^-max(LC,LD) <= C^6 N^-1 2^(-(m-6)/2).
+
+This bound is for the full local-pattern constraint and all distinct genuine ports, with no K-uniqueness restriction. It therefore supplies an exponentially small signed term that can be inserted in a correctly justified overlap expansion; absolute conversion is unnecessary for this critical event.

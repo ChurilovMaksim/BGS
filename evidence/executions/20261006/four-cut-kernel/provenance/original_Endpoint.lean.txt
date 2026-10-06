@@ -1,0 +1,7 @@
+import FourCut
+open FourCut
+/-- Rank-two forced equalities on four positions prevent four distinct ports. -/
+theorem pair_m4_excluded : atSize 4 false = ⟨3, 0, true⟩ := by decide
+theorem triple_m4_excluded : atSize 4 true = ⟨8, 0, true⟩ := by decide
+#print axioms pair_m4_excluded
+#print axioms triple_m4_excluded

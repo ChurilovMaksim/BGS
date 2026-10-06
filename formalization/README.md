@@ -12,7 +12,7 @@ cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 17 modules; `formalization/drafts/` is deliberately outside it.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 18 modules; `formalization/drafts/` is deliberately outside it.
 
 | Module | Maintained scope |
 |---|---|
@@ -20,6 +20,7 @@ lake build
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
 | `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
 | `CueLoopKernels.lean` | integer positive-part cubic identity and cleared-denominator elimination; analytic hypotheses and limits are not formalized |
+| `FourCutKernel.lean` | bounded rank-two four-cut predicates: 3858/560 pair cases, 650/0 oriented triples; m=4 exclusions; native-evaluation trust for full ranges, no abstract or analytic reduction formalized |
 | `FibonacciRatioSmall.lean` | exact residual Lucas/Fibonacci ratio range `1..12`; not a formalization of Carmichael's theorem |
 | `GeneralHyperbolicParity.lean` | finite Boolean/parity and explicit hyperbolic-period kernels; not the full character-theoretic spectral theorem |
 | `HistoricalMobiusDegenerateFiber.lean` | concrete finite falsifier for the retracted Möbius route |

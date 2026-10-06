@@ -1,0 +1,37 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:9 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable BOOST_ROOT is set to:
+
+    $BOOST_INCLUDE
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Error at CMakeLists.txt:9 (find_package):
+  By not providing "FindBoost.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Boost", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Boost" with any of
+  the following names:
+
+    BoostConfig.cmake
+    boost-config.cmake
+
+  Add the installation prefix of "Boost" to CMAKE_PREFIX_PATH or set
+  "Boost_DIR" to a directory containing one of the above files.  If "Boost"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!

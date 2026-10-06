@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_divisor_promotion/computations/verification/arithmetic_translation_exclusion.py", line 113, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/shared/bgs_divisor_promotion/computations/verification/arithmetic_translation_exclusion.py", line 110, in main
+    if args.inject_failure:require(False,'deliberate fault injection')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_divisor_promotion/computations/verification/arithmetic_translation_exclusion.py", line 18, in require
+    raise CheckFailure(label)
+CheckFailure: deliberate fault injection

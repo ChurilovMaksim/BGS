@@ -1,0 +1,13 @@
+import FourCut
+open FourCut
+
+/-- Exhaustive compressed two-transposition domain: 5 ≤ m ≤ 12. -/
+theorem pairs_through_12 : through 12 false = ⟨3858, 560, true⟩ := by native_decide
+
+/-- Exhaustive compressed oriented 3-cycle domain: 5 ≤ m ≤ 10. -/
+theorem triples_through_10 : through 10 true = ⟨650, 0, true⟩ := by native_decide
+
+#print axioms pairs_through_12
+#print axioms triples_through_10
+#print pairs_through_12
+#print triples_through_10

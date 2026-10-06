@@ -1,0 +1,91 @@
+% Canonical source: mathematics/arithmetic_translation_exclusion.md.
+% Proposed BGS-FM-023. Fixed tau; no microscopic universality conclusion.
+\section{Quantitative exclusion of arithmetic translation algebras}
+\label{sec:arithmetic-translation-exclusion}
+Keep the unchanged odd-dimensional operator
+$U_N=\exp(i\tau N A_N)M_N$, with $\tau=10^{-80}$, and the physical
+midpoint symbol, including its shifted momentum coefficient. Put
+$\kappa=\tau/(2\pi)$ and equip matrices with
+$\langle X,Y\rangle_N=N^{-1}\operatorname{Tr}(X^*Y)$.
+For an odd divisor $d\ge3$ of $N$, let
+\[
+ E^0_{d,N}=\operatorname{span}\{T_N((N/d)v):
+ v\in(\mathbb Z/d\mathbb Z)^2\setminus\{0\}\},
+ \qquad \Pi^0_{d,N}:\mathcal H_N\longrightarrow E^0_{d,N}.
+\]
+The $d^2-1$ displayed raw Weyl modes are exactly orthonormal. No
+coprimality of $d$ and $N/d$ or CRT factorization is assumed.
+
+\begin{theorem}[Arithmetic translation-algebra exclusion]
+There is $C_\tau$, independent of $N,d$ and the grid labels, such that
+\[
+ \bigl\|\Pi^0_{d,N}\operatorname{Ad}(U_N)\Pi^0_{d,N}\bigr\|
+ \le\min\left\{1,C_\tau\left(\frac{d^{262}}N\right)^{1/129}\right\}.
+\]
+For every fixed $\delta<1/262$, uniformly when $d\mid N$ and
+$d\le N^\delta$, the compression is
+\[ O_\tau\bigl(N^{-(1-262\delta)/129}\bigr). \]
+In particular, for $d\le N^{1/524}$,
+\[
+ \sup_{\substack{X\in E^0_{d,N}\\\|X\|_N=1}}
+ \left|\|U_N XU_N^*-X\|_N^2-2\right|
+ \le 2C_\tau N^{-1/258}.
+\]
+\end{theorem}
+The fixed-$d$ statement follows immediately. Since the cat propagator
+permutes these labels, the conclusion applies to normalized arithmetic
+cat orbit sums. If a projection $P_N$ lies in
+$\mathbb CI\oplus E^0_{d,N}$ and
+$0<\alpha_N=\operatorname{rank}(P_N)/N<1$, its nonzero centered part
+$X_N=(P_N-\alpha_N I)/\sqrt{\alpha_N(1-\alpha_N)}$ satisfies the same
+unit-vector estimate. The projections $0,I$ are excluded from this
+normalization. Arbitrary spectral projections are not covered.
+
+\paragraph{Uniform finite type at fixed coupling.}
+Write the kick flow as $\Psi=\Phi_g^{-\kappa}=\mathrm{Id}+u$.
+Complex-strip bounds give $u=-\kappa X_g+R$. Crucially, for a translation
+$\xi$ and $r=\|\xi\|_\infty$ in its centered representative,
+\[
+ \|D^\alpha(R(\cdot+\xi)-R)\|_\infty
+ \le C\kappa^2 r \qquad (|\alpha|\le16),
+\]
+using one extra derivative. Degree-16 differential filters isolate the
+primitive $(\!-1,0)$ and $(0,\!-1)$ Fourier modes of the actual symbol.
+Their coefficient norms are $6409325/1143072<6$, and their surviving
+multipliers have moduli $4/3$ and $2$. Explicit Cauchy estimates bound the
+filtered remainder by $10^{55}\kappa^2r$, smaller than the leading
+$|\kappa|r$ signal at the literal coupling. A selected real component of
+$\xi-\eta+u(x+\xi)-u(x)$ has finite type at most 16, uniformly in the
+translations. Directional slicing and the one-dimensional sublevel lemma
+therefore give coincidence-sublevel area
+$O_\tau((d\varepsilon)^{1/16})$ for a nonzero $d$-grid translation.
+
+\paragraph{Quantum overlap and dimension loss.}
+Exact Weyl multiplication gives the actual kick Egorov error
+$O_\tau(N^{-2}\|a\|_{H^5})$. It remains uniform after inserting a
+translation, since translations preserve Sobolev norms. In the trace
+intertwining argument, division by squared map separation costs
+$\varepsilon^{-4}$ in $C^3$. Hilbert--Schmidt Cauchy--Schwarz on the bad
+set retains the \emph{square root} of its area, while the aliased Fourier
+tail costs $N^{-2}\varepsilon^{-3}$. Thus every matrix overlap is bounded
+by
+\[
+ C_\tau\left((d\varepsilon)^{1/32}
+       +N^{-1}\varepsilon^{-4}+N^{-2}\varepsilon^{-3}\right).
+\]
+Choosing $\varepsilon=N^{-32/129}d^{-1/129}$ gives
+$C_\tau(d^4/N)^{1/129}$ per entry. Passing to the entire
+$(d^2-1)$-dimensional span costs a further factor $d^2$, yielding the
+stated $262/129$ exponent. The residual estimate follows from unitarity
+and $\|\operatorname{Ad}(U_N)X-X\|_N^2
+=2-2\operatorname{Re}\langle X,\operatorname{Ad}(U_N)X\rangle_N$.
+
+\paragraph{Scope.}
+This is a project proof with independent internal review and exact finite
+controls, not an external referee certificate or analytic formalization.
+The exponents are not claimed optimal; the endpoint $\delta=1/262$ is not
+a decay statement. Constants depend on the fixed coupling, with no useful
+numerical startup or uniform shrinking-coupling estimate supplied.
+Faster-growing divisors, general quantum commutants, coherent returns and
+the signed Heisenberg joint-trace comparison remain open. The theorem
+does not establish microscopic BGS universality.

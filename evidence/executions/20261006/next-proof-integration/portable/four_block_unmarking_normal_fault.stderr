@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/shared/BGS/computations/verification/four_block_unmarking.py", line 184, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/shared/BGS/computations/verification/four_block_unmarking.py", line 170, in main
+    check(False, 'INJECTED_FAILURE')
+  File "/workspace/shared/BGS/computations/verification/four_block_unmarking.py", line 14, in check
+    raise RuntimeError(message)
+RuntimeError: INJECTED_FAILURE

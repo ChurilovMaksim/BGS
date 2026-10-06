@@ -1,0 +1,18 @@
+[
+  {
+    "flags": [],
+    "exit_code": 1,
+    "expected_exception": "RuntimeError: INJECTED_FAILURE",
+    "invocation": "import current complete module, then invoke exposed check(False, ...)",
+    "passed": true
+  },
+  {
+    "flags": [
+      "-O"
+    ],
+    "exit_code": 1,
+    "expected_exception": "RuntimeError: INJECTED_FAILURE",
+    "invocation": "import current complete module, then invoke exposed check(False, ...)",
+    "passed": true
+  }
+]

@@ -1819,6 +1819,117 @@
         "mathematics/fixed_map_path_model.md",
         "mathematics/four_branch_parametrix.md"
       ]
+    },
+    {
+      "id": "BGS-TRACE-015",
+      "title": "Once-counted distinct-port three-block signed Heisenberg cancellation",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "source": "mathematics/three_block_unmarking.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/three_block_independent_review_20261006.md",
+        "evidence/executions/20261006/three-block/receipt.json",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/three_block_unmarking.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/three_block_unmarking.tex"
+      ],
+      "boundary": "Unchanged fixed tau=10^-80, odd N; once-counted ordered coordinate-word pairs admitting distinct-port nonempty three-block reversal, all link lengths, smooth compact positive Heisenberg band. Normalized error O_w((log N)^5/N) plus superpolynomial and exponential terms. Repeated ports, general and growing reconnection complexity, plateau restoration and higher factorial comparison remain open. TRACE-005 and BGS-BGS-001 remain OPEN. No effective startup, global priority, external referee or analytic formalization claim. Combinatorial proof requires only unitarity, flat entries and P mixing; actual-model input is FM-021, and these hypotheses are not a spectral-universality criterion."
+    },
+    {
+      "id": "BGS-FM-023",
+      "title": "Quantitative exclusion of bounded-power arithmetic translation algebras",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + PORTABLE EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "source": "mathematics/arithmetic_translation_exclusion.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-016",
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/arithmetic_translation_review_20261006.md",
+        "evidence/executions/20261006/divisor-exclusion/receipt.json",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_translation_exclusion.tex"
+      ],
+      "boundary": "Unchanged odd-dimensional U_N and literal fixed tau=10^-80. For every odd d>=3 dividing N, compression of Ad(U_N) to the d^2-1 nonzero d-grid Weyl modes is <=min(1,C_tau(d^262/N)^(1/129)), with C_tau independent of N,d and labels. Every fixed delta<1/262 gives decay for d<=N^delta; d<=N^(1/524) gives N^(-1/258). Uniform residual tends to sqrt(2); fixed d is a corollary. Projection interpretation requires a nonzero centered part and membership in the indicated algebra. No exponent optimality, endpoint decay, unrestricted growing divisor, arbitrary projector/full commutant classification, practical startup, shrinking-tau uniformity or microscopic BGS claim."
+    },
+    {
+      "id": "BGS-TRACE-016",
+      "title": "Once-counted reduced distinct-port four-block signed cancellation",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + COMPUTER-ASSISTED CLASSIFICATION INPUT; ANALYTIC CHAIN UNFORMALIZED",
+      "source": "mathematics/four_block_unmarking.md",
+      "dependencies": [
+        "BGS-FM-021",
+        "BGS-FORMAL-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/four_block_independent_review_20261006.md",
+        "record/four_cut_rank_two_review_20261006.md",
+        "record/four_cut_lean_review_20261006.md",
+        "evidence/executions/20261006/four-block/receipt.json",
+        "evidence/executions/20261006/four-cut-kernel/",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/four_block_unmarking.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/four_block_unmarking.tex"
+      ],
+      "boundary": "Unitary family with q<=C/N and eventual all-length ||P^L-J||<=2^-L; actual fixed tau=10^-80 through FM-021. Once-counted ordered pairs admitting nonempty reduced four-block reversal with pairwise distinct initial values, all link lengths, smooth compact positive Heisenberg bands. Error O_w((log N)^10/N) plus superpolynomial/exponential terms. Universal rank-two classification uses an audited mathematical reduction and a bounded kernel; FORMAL-002 certifies only that kernel, not compression or this analytic theorem. Repeated ports, general or growing reconnections, overlaps between families and full signed statistics remain open. Coarse hypotheses are not a universality criterion by the rounding obstruction. No effective startup, world priority or external referee claim.",
+      "proof_dependencies": [
+        "mathematics/four_cut_rank_two_classification.md"
+      ]
+    },
+    {
+      "id": "BGS-FORMAL-002",
+      "title": "Bounded rank-two four-cut executable certificate",
+      "state": "proved",
+      "ledger_status": "FINITE-CERTIFICATE",
+      "source": "mathematics/four_cut_rank_two_classification.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "record/four_cut_rank_two_review_20261006.md",
+        "record/four_cut_lean_review_20261006.md",
+        "evidence/executions/20261006/four-cut-kernel/lean_manifest.json",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/four_cut_rank_two_kernel.py",
+        "computations/cpp/four_cut_rank_two_kernel.cpp",
+        "computations/verification/run_four_cut_kernel.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/FourCutKernel.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/four_cut_rank_two_kernel.tex"
+      ],
+      "boundary": "Exact executable predicates only: pairs 5..12, 3858 configurations and 560 directed local matches; oriented triples 5..10, 650 configurations and no matches; m=4 exclusions. Full ranges use native_decide with its generated native-evaluation axioms; m=4 uses ordinary decide with propext. Abstract compression/lifting, enumeration-to-abstract-word correspondence, analytic cancellation and full unmarking are not formalized. No deterministic BGS conclusion."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

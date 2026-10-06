@@ -1,0 +1,290 @@
+[
+  {
+    "artifact": "archive-manifest.json",
+    "raw_sha256": "5a1c924fa4471ea1bc5538e0e6c3dcb8ad36a7f0e091100b31abba288bc616c6",
+    "public_sha256": "5a1c924fa4471ea1bc5538e0e6c3dcb8ad36a7f0e091100b31abba288bc616c6",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "workspace.json",
+    "raw_sha256": "9efcd67a27ec363eef136e0322da853d59cda09a966a15693be8384edd425ba9",
+    "public_sha256": "10764e49a739bd773f2aca8d8a8a16702f3fb2555fe8da162278adee30db39c3",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable; source_manifest factored into separate archive manifest"
+  },
+  {
+    "artifact": "initial-failed/archive-manifest.json",
+    "raw_sha256": "2466b138e4d39fbaf040d8c69d0721fd5d382ed4658492d2fad12cf263b96999",
+    "public_sha256": "2466b138e4d39fbaf040d8c69d0721fd5d382ed4658492d2fad12cf263b96999",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "initial-failed/workspace.json",
+    "raw_sha256": "650f38e935cfa3d56090516541a0e98b5c1bed3db9285bb97f306ac3618b8592",
+    "public_sha256": "a942984bcc0aa11c4f0f5e3ba469ef01ef3687a20241b4981f1bf873660580a8",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable; source_manifest factored into separate archive manifest"
+  },
+  {
+    "artifact": "initial-failed/bibliographic-metadata-audit.log",
+    "raw_sha256": "202e2c3ade0d2a69899e4244a2b60b3be7a7e0633d61356af1c331848c9ccdc2",
+    "public_sha256": "202e2c3ade0d2a69899e4244a2b60b3be7a7e0633d61356af1c331848c9ccdc2",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "initial-failed/full-workspace.log",
+    "raw_sha256": "f02cea9822c9a85396759f7778ec339be816029422d108f7ac79f18acb7895a4",
+    "public_sha256": "f02cea9822c9a85396759f7778ec339be816029422d108f7ac79f18acb7895a4",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "initial-failed/raw-check-log-index.json",
+    "raw_sha256": "cbd23cf582863b7005c6f05c5ba902038102e086e43b8a2a76d0f94375227dd7",
+    "public_sha256": "cbd23cf582863b7005c6f05c5ba902038102e086e43b8a2a76d0f94375227dd7",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "fresh-cpp-build.json",
+    "raw_sha256": "44231e02bedb4c66ddf9c53cde6305c43f4e61e5b118699a0ea3c7dd8d85d864",
+    "public_sha256": "62ecd04a097a10114c35521e0ec4b6b788bc7723a344ded6f04b71695e7f8af4",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "lean-build.json",
+    "raw_sha256": "f86ab8e4ea876a1378cfa84a22fb619922d42cabe74f27a0b340b2efe97404f9",
+    "public_sha256": "f86ab8e4ea876a1378cfa84a22fb619922d42cabe74f27a0b340b2efe97404f9",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "lean-build.log",
+    "raw_sha256": "1deea98a026c5d089010288847f9fcbdde53d44a8aded67abedd0ead958bbff8",
+    "public_sha256": "1deea98a026c5d089010288847f9fcbdde53d44a8aded67abedd0ead958bbff8",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "manuscript-build-manifest.json",
+    "raw_sha256": "77e52f8e4efe7afef508b03b73f645fcbaa015c849cb876351498616ba73e602",
+    "public_sha256": "7e0762bcc96fd3edf55b1ace97536f3f2fd50626d6c19aa151f9e09cd391e36a",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "maintenance-normal.log",
+    "raw_sha256": "c24167a450e7be09ce50a3defe06ace19a7939506f80be1470a38b2189d45815",
+    "public_sha256": "c24167a450e7be09ce50a3defe06ace19a7939506f80be1470a38b2189d45815",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "maintenance-optimized.log",
+    "raw_sha256": "28c65a420fa2c58977635d5afec3cee98abce9937630dd891bcf387c4f16bb9e",
+    "public_sha256": "28c65a420fa2c58977635d5afec3cee98abce9937630dd891bcf387c4f16bb9e",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cmake-configure.log",
+    "raw_sha256": "01f31c7e0054c8bfa7722fcd67c0170d70447b98a20c571c59512508e3afbc62",
+    "public_sha256": "8a7be100e695405473bb72cbc62c8efafd64c4075803a471007f1d90c0371789",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cat_map_order.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cayley_direct_energy_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cayley_energy_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cayley_fibonacci_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cayley_fourier_hybrid.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/cayley_trace_intercept_rigidity.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/coherent_aperture_bounds.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/extremal_resonance_replay.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/fixed_strength_locality_exact.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/four_cut_rank_two_kernel.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/fourth_moment_pair_key_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/general_hyperbolic_periods.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/magnetic_word_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pell_coboundary_pairs.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pell_floquet_pair_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pell_minimal_relation_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pell_pair_orthogonality.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pell_sharp_orbit_verifier.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/pure_loss_discrimination_bounds.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/rare_phase_certificate.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/return_word_certificate.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "cpp-build-logs/spectral_lattice_clustering.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/arithmetic_translation_exclusion.log",
+    "raw_sha256": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374",
+    "public_sha256": "5dfd2eb4f6d1ee47d8706adee7cf15fd2c538e3fd7e26f619b78e758b4b73374",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/bibliographic_metadata_audit.log",
+    "raw_sha256": "165c0b9f886b08ae68d0f812b8b38e8ae281697a14073a766649ca47d34264cc",
+    "public_sha256": "165c0b9f886b08ae68d0f812b8b38e8ae281697a14073a766649ca47d34264cc",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/four_block_unmarking.log",
+    "raw_sha256": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc",
+    "public_sha256": "ce73c037f2594e2713a65b5d0eee876e5a5ac9099b55edc8f5f8b89687f1c0dc",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/four_cut_rank_two_kernel.log",
+    "raw_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "public_sha256": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/microscopic_noise_removal.log",
+    "raw_sha256": "8230cf483d13c3266624e78e0e3cb7b9dc1db851e7024dc915f9f193c2feff1d",
+    "public_sha256": "4338b6579c6272eaf68af4943f52cb9867e1f11949197c8b2614eced4618dd99",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/run_four_cut_kernel.log",
+    "raw_sha256": "212702f272faa25725eb2463b9651c944c6b1d6b996f58cde773a1489b2d58dd",
+    "public_sha256": "466d821f51b9b9e4b60e7872a3f156a70d1cd6b3b0edd9f3c11c3bf6cc56747a",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/three_block_unmarking.log",
+    "raw_sha256": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362",
+    "public_sha256": "0f2f2a2f6557156b72dbb8f056c71a43c30f7c8f8c05fb8aec1470c217114362",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "check-logs/cpp_four_cut_rank_two_kernel.log",
+    "raw_sha256": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326",
+    "public_sha256": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "manuscript-logs/pass-1.log",
+    "raw_sha256": "de9afea68b07d18be37e1d731c09a8dc30ebf47d9a5a80c2eeb0d67bc9a44466",
+    "public_sha256": "ad690371be10a8a742ab30b0a75d03132d667855f280b23053a23bac2dc232a3",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "manuscript-logs/pass-2.log",
+    "raw_sha256": "71bceacf2e02c03cbc1b238c6f8435bc1dafafe3e1fc18d141bba103b786bf88",
+    "public_sha256": "c0468daff749d9e57b3db59b2da187c92aa9925b6e5951eaeb77149815e0477b",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "manuscript-logs/pass-3.log",
+    "raw_sha256": "165068ec01cf09a36877134ec05f3382cdd01e2ce3b7578089143e8c4aafb6c2",
+    "public_sha256": "08a230f03b656c6d6efd1f41f42f6b772d40efdccf28836d03f9437836a95986",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  },
+  {
+    "artifact": "manuscript-logs/latex.log",
+    "raw_sha256": "5fe9db5451d9d0c27fdd3da7e0cc7c69695fe8e6f9779188cb201769e8f6067d",
+    "public_sha256": "cc692801fa23b4fd0246368ed84dd53acf894bf44bebda9939a00f7981aa62ac",
+    "transformation": "Declared absolute-path substitutions; JSON serialization where applicable"
+  }
+]

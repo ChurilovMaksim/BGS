@@ -1,6 +1,6 @@
 # Open mathematical obligations
 
-[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. Variable representations and endpoint-dependent masks prevent automatic unmarking. Higher factorial orders remain open.
+[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](three_block_unmarking.md) and [TRACE-016](four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
 
 
 [FM-019](collective_diffusion_gap.md) closes a universal two-copy

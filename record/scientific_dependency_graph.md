@@ -6,6 +6,12 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F21 --> T15[BGS-TRACE-015 once-counted three-block cancellation]
+  F21 --> T16[BGS-TRACE-016 once-counted four-block cancellation]
+  FK2[BGS-FORMAL-002 bounded four-cut predicate only] --> T16
+  F1 --> F23[BGS-FM-023 bounded-power arithmetic translation exclusion]
+  F16 --> F23
+  F18 --> F23
   F1 --> F21[BGS-FM-021 position-chain mixing and cyclic path ramp]
   F1 --> F22[BGS-FM-022 reverse-cyclic path suppression]
   T14[BGS-TRACE-014 all-copy clock channel obstruction]
@@ -203,3 +209,5 @@ no new external leaf is imported. The explicitly refined law has
 Heisenberg-dominating two-copy mass, but no closure edge to deterministic
 TRACE-005 or BGS-BGS-001. The original m=1 rate, nonlinear functional
 and higher-copy quantitative estimates remain open.
+
+TRACE-016 additionally uses the reviewed universal compression/lifting proof in `mathematics/four_cut_rank_two_classification.md`. FORMAL-002 certifies only its bounded predicate, not that reduction or the analytic theorem.

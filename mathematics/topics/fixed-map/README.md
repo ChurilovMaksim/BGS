@@ -78,3 +78,11 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [four_branch_parametrix](../../four_branch_parametrix.md) — Shared finite-difference WKB and sampling proof
 - [position_chain_mixing](../../position_chain_mixing.md) — FM-021
 - [reversed_path_decay](../../reversed_path_decay.md) — FM-022
+
+- [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [arithmetic_translation_exclusion](../../arithmetic_translation_exclusion.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [four_block_unmarking](../../four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [four_cut_rank_two_classification](../../four_cut_rank_two_classification.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.

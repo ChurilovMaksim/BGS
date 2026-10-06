@@ -1,0 +1,120 @@
+{
+  "scope": "Exact bounded rank-two kernel only; no abstract reduction or analytic formalization.",
+  "input_hashes_before": {
+    "computations/verification/run_four_cut_kernel.py": "00e764d13ecd029a2614229b90743807f3ff8f0646a871bd8b7e766bff6c2541",
+    "computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "commands": [
+    {
+      "name": "python",
+      "argv": [
+        "${PYTHON}",
+        "${SOURCE_ROOT}/computations/verification/four_cut_rank_two_kernel.py"
+      ],
+      "cwd": "${SOURCE_ROOT}",
+      "exit_code": 0,
+      "elapsed_seconds": 1.9704875999996148
+    },
+    {
+      "name": "python_optimized",
+      "argv": [
+        "${PYTHON}",
+        "-O",
+        "${SOURCE_ROOT}/computations/verification/four_cut_rank_two_kernel.py"
+      ],
+      "cwd": "${SOURCE_ROOT}",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0201639289989544
+    },
+    {
+      "name": "cpp_compile",
+      "argv": [
+        "${CXX}",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "${SOURCE_ROOT}/computations/cpp/four_cut_rank_two_kernel.cpp",
+        "-o",
+        "${PORTABLE_RUN}/four_cut_rank_two_kernel"
+      ],
+      "cwd": "${SOURCE_ROOT}",
+      "exit_code": 0,
+      "elapsed_seconds": 0.8665912640026363
+    },
+    {
+      "name": "cpp",
+      "argv": [
+        "${PORTABLE_RUN}/four_cut_rank_two_kernel"
+      ],
+      "cwd": "${SOURCE_ROOT}",
+      "exit_code": 0,
+      "elapsed_seconds": 0.3151127099990845
+    },
+    {
+      "name": "lean_version",
+      "argv": [
+        "${ELAN_HOME}/bin/lean",
+        "--version"
+      ],
+      "cwd": "${SOURCE_ROOT}/formalization",
+      "exit_code": 0,
+      "elapsed_seconds": 0.06463002400050755
+    },
+    {
+      "name": "lean",
+      "argv": [
+        "${ELAN_HOME}/bin/lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        "${PORTABLE_RUN}/FourCutKernel.olean",
+        "Bgs/FourCutKernel.lean"
+      ],
+      "cwd": "${SOURCE_ROOT}/formalization",
+      "exit_code": 0,
+      "elapsed_seconds": 63.60960593500204
+    }
+  ],
+  "lean_requested": true,
+  "results": {
+    "pairs": {
+      "m_range": [
+        5,
+        12
+      ],
+      "partitions": 3858,
+      "directed_matches": 560,
+      "local_alternating_matches": 560
+    },
+    "triple": {
+      "m_range": [
+        5,
+        10
+      ],
+      "oriented_cycles": 650
+    }
+  },
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)\n",
+  "status": "passed",
+  "input_hashes_after": {
+    "computations/verification/run_four_cut_kernel.py": "00e764d13ecd029a2614229b90743807f3ff8f0646a871bd8b7e766bff6c2541",
+    "computations/verification/four_cut_rank_two_kernel.py": "9cca30db421b503b5996b9a30a4907649b48c17c9015ac165844522c085e1ac5",
+    "computations/cpp/four_cut_rank_two_kernel.cpp": "82d144a30d93f36e2af13900fd2a225f92851d3ce9a58b1c32a5cc64545df671",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "log_hashes": {
+    "python.log": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "cpp_compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "python_optimized.log": "21e4eaa8bab39bb83c56869309990bce7147a75c7d8c82b8ba47878b689163db",
+    "lean_version.log": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+    "lean.log": "ddf41c75ad33d97a5516664f3db4a47c7a5040c34e49fde4cbfc46aed527db4a",
+    "cpp.log": "df6a378f06263618e4dbab4da22752914198ccd24df3fe1451af2b416ccac326"
+  }
+}

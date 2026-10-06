@@ -1,0 +1,60 @@
+\section{Once-counted distinct-port three-block cancellation}
+\label{sec:three-block-unmarking}
+For the unchanged frozen propagator, put $P_{xy}=|U_{xy}|^2$ and
+$J_{xy}=N^{-1}$. The position-chain theorem supplies, for all sufficiently
+large odd $N$, $\max P_{xy}\leq C/N$ and
+$\|P^L-J\|\leq 2^{-L}$ for every integer $L\geq0$.
+Let $T_m$ be the set of rooted ordered coordinate-word pairs obtained by
+cutting the first cyclic word into three nonempty blocks $A,B,C$ with
+pairwise distinct initial vertex values, then taking a cyclic rotation of
+$ACB$ for the second word. This is a set: each ordered pair is counted once,
+even if several cuts produce it. Write
+$\mathcal A(x)=\prod_{j\bmod m}U_{x_jx_{j+1}}$.
+
+\paragraph{Theorem (BGS-TRACE-015).}
+For every smooth $w$ compactly supported in $(0,\infty)$,
+\[
+ \frac1{N^2}\sum_m w(m/N)
+ \sum_{(x,y)\in T_m}\mathcal A(x)\overline{\mathcal A(y)}\longrightarrow0.
+\]
+For $K=\lceil\log N\rceil$ and support in $[a,b]\subset(0,\infty)$,
+the error is bounded by
+\[
+ O_w(K^5/N)+O_w\!\left(N^8(C/N)^{K/2}\right)
+ +O_w\!\left(N^5 2^{-(aN-3)/3}\right).
+\]
+The startup threshold inherited from the position-chain theorem is not
+made effective.
+
+\paragraph{Proof mechanism.}
+In the marked three-link contraction, replacing any link by $J$ gives
+zero by column orthogonality and distinct ports. Using the longest link
+therefore suppresses the full marked sum exponentially, including zero
+internal link lengths. Passing to a once-counted family is a separate
+combinatorial step. Words with repeated length-$K$ substrings impose
+at least $K/2$ equality constraints and have superpolynomially small
+exceptional absolute weight. For the remaining words, two blocks of
+length at least $4K$ force a unique cut triple, using uniquely located
+common substring anchors. Ambiguity is consequently confined to two
+short blocks. Competing cuts lie in an $O(K)$ neighborhood, giving
+$O(K^3)$ alternatives and $O(K^2)$ original length choices.
+A rank-one relative positional permutation would be a transposition;
+conjugating predecessor cycles then forces equal-valued positions to be
+two cut heads, contradicting distinct ports. Thus every competing
+representation imposes at least two equalities. Exposing the three starts
+first pays each equality through a transition bounded by $C/N$. After the
+two trace roots and band normalization, the exceptional mass is
+$O(K^5/N)$. Every nonexceptional pair has exactly three marked
+representations, corresponding to cyclic block labels. The canonical
+proof gives all equality, cyclic-root and overlap counts explicitly.
+
+\paragraph{Boundary.}
+This is a deterministic, once-counted, fixed-complexity family estimate.
+The combinatorial theorem uses only unitarity, flat entries and the stated
+position-chain mixing bound; actual-model input enters through BGS-FM-021.
+It is compatible with spectrally nonuniversal families satisfying those
+matrix estimates.
+It does not cover repeated ports, arbitrary reconnections, growing
+encounter complexity or higher joint traces. The complete signed remainder,
+including restoration of the super-Heisenberg plateau, remains open;
+no BGS or local-statistics theorem follows from this family alone.

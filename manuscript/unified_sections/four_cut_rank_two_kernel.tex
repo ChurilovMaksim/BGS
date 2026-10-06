@@ -1,0 +1,20 @@
+\section{Rank-two four-cut classification and its bounded certificate}
+For two distinct reduced four-block decompositions with pairwise distinct
+port values, a specified rank-two relative position permutation between
+cyclically aligned equal outputs is a product of two transpositions on four
+consecutive alternating source vertices. Its cut sets are exactly
+$\{s,s+1,s+4,z\}$ and $\{s,s+3,s+4,z\}$, where $z$ lies outside the cluster
+and its endpoint. A three-cycle cannot occur. The canonical mathematical
+proof in \texttt{mathematics/four\_cut\_rank\_two\_classification.md}
+retains the support, its immediate successors, and the first cut set,
+reducing to at most twelve or ten vertices and preserving genuine cuts.
+This contraction and the endpoint-preserving lift were independently reviewed.
+
+The compiled \texttt{Bgs.FourCutKernel} module certifies only the executable
+finite predicates: 3858 pair configurations with 560 directed local matches
+for sizes five through twelve, and 650 oriented triple configurations with
+no matches for sizes five through ten. These use \texttt{native\_decide}
+and its declared native-evaluation trust. The size-four exclusions use
+ordinary \texttt{decide}. The abstract compression, cyclic-word correspondence,
+and analytic cancellation are not Lean theorems here. This bounded certificate
+alone asserts neither complete four-block unmarking nor BGS universality.

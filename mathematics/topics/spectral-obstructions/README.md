@@ -4,6 +4,8 @@ Negative controls reject specific invalid implications. An abstract spectrum is 
 
 ## Current theorem capsules
 
+- **[Microscopic rounding with low-trace preservation](../../microscopic_rounding_control.md)** — Each specified K_N=o(N^(1/3)) window and coarse position/reversal/Egorov controls survive an O(N^-1) simple-spectrum perturbation, while a fixed pair test has liminf>1/2. This extends prior project spectral rounding and changes the operator; exact quantization is not retained.
+
 - **[All-copy channel control with a clock spectrum](../../isospectral_clock_moment_control.md)** — Induced-HS moment-channel proximity in every order does not alone imply microscopic universality.
 
 - **[Read the witness assumptions](../../two_clock_gram_falsifier.md)** — Simple spectra and a Gram milestone do not force CUE pairs.
@@ -31,3 +33,7 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 - [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
 
 - [isospectral_clock_moment_control](../../isospectral_clock_moment_control.md) — Same-ensemble all-order negative control, TRACE-014.
+
+- [arithmetic_translation_exclusion](../../arithmetic_translation_exclusion.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+
+- [microscopic_rounding_control](../../microscopic_rounding_control.md) — Canonical reviewed extension of prior spectral rounding, not an actual-map counterexample.

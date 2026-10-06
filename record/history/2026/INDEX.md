@@ -44,3 +44,5 @@ This index is navigational; status authority remains
 Additional dated records remain searchable in `record/` and Git history.
 
 - [4 October expansion and packet research audit](../../expansion_wavepacket_review_20261004.md)
+
+- [Next bounded proofs: immutable preparation provenance](next_proofs_20261006/README.md).

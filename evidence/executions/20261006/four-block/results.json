@@ -1,0 +1,57 @@
+{
+  "corrected_placement": {
+    "U": {
+      "cases": 2187,
+      "old_error_rejected": 2187,
+      "empty_pieces": true
+    },
+    "V": {
+      "cases": 2187,
+      "old_error_rejected": 2187,
+      "empty_pieces": true
+    }
+  },
+  "local_contraction": {
+    "arithmetic": "exact rational",
+    "N": 4,
+    "uniform_link_checks": 10,
+    "lengths": [
+      0,
+      4
+    ]
+  },
+  "flip_algebra": {
+    "m_range": [
+      9,
+      30
+    ],
+    "flip_pairs": 4411
+  },
+  "graph_budget": {
+    "vertices_range": [
+      1,
+      6
+    ],
+    "triangle_free_graphs": 6228
+  },
+  "concrete_overlap": {
+    "m": 10,
+    "cut_sets": [
+      [
+        0,
+        1,
+        4,
+        7
+      ],
+      [
+        0,
+        3,
+        4,
+        7
+      ]
+    ],
+    "unordered_local_edges": 1,
+    "r_minus_e": 1
+  },
+  "scope": "finite exact controls only; rank-two classification kernel is separately owned"
+}

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "${ELAN_HOME}/bin/lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    "${INITIAL_BUILD}/FourCutKernel.olean",
+    "${SOURCE_ROOT}/formalization/Bgs/FourCutKernel.lean"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.06532237999999779,
+  "maxrss_kib": 90436,
+  "caps": {
+    "cpu_seconds": 180,
+    "wall_seconds": 210,
+    "lean_memory_mb": 4096,
+    "threads": 1
+  },
+  "source_sha256": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+}

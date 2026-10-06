@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "computations/verification/three_block_unmarking.py", line 13, in check
+    raise RuntimeError(message)
+RuntimeError: injected failure

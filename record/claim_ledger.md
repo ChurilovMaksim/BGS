@@ -16,6 +16,15 @@ Exact statements: [FLOW-014](../mathematics/circular_dyson_actual_start.md), [FL
 
 - **FM-021/FM-022:** actual position-chain mixing, the cyclic ramp, a specified marked three-link estimate, and reverse-cyclic suppression are established in their project proofs. General once-counted noncyclic sums and the spectral plateau correction remain open.
 
+## Reviewed bounded proof batch, 6 October 2026
+
+- **BGS-TRACE-015 — project analytic proof, independent internal review, exact finite controls.** [Once-counted three-block cancellation](../mathematics/three_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band ambiguity error O_w((log N)^5/N), plus superpolynomial and exponential terms. FM-021 supplies actual fixed-coupling inputs. Repeated ports, general reconnections and the full signed remainder remain open.
+- **BGS-FM-023 — project analytic proof, independent internal review, portable exact finite controls.** [Arithmetic translation exclusion](../mathematics/arithmetic_translation_exclusion.md): for odd d>=3 dividing N, compression is at most min(1,C_tau(d^262/N)^(1/129)). C_tau is independent of N,d and labels; every fixed delta<1/262 gives uniform residual sqrt(2)+o(1) for d<=N^delta. All fixed d follow. The projector corollary requires a nonzero centered part in this algebra. No arbitrary-projector exclusion, endpoint decay or optimality claim.
+- **BGS-TRACE-016 — project analytic proof, independent internal review, computer-assisted classification input.** [Once-counted reduced four-block cancellation](../mathematics/four_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band error O_w((log N)^10/N), plus superpolynomial and exponential terms. The [universal rank-two classification](../mathematics/four_cut_rank_two_classification.md) has a separately reviewed mathematical compression/lifting proof and bounded kernel. Repeated ports, growing/general reconnections, inter-family overlaps and full signed statistics remain open.
+- **BGS-FORMAL-002 — FINITE-CERTIFICATE.** The bounded executable predicate checks pairs 5..12 (3858 configurations, 560 directed local matches) and oriented triples 5..10 (650 configurations, zero matches) with native-evaluation trust; m=4 exclusions use ordinary decide. Compilation is separate from mathematical compression/lifting, abstract-word correspondence, and the analytic TRACE-016 chain: those are not formalized.
+
+All analytic claims retain odd N and literal fixed tau=10^-80 where applied to the actual model. No practical startup, external-referee acceptance or global-priority claim is made. **TRACE-005 and BGS-BGS-001 remain OPEN.** Original preparation receipts and accepted-source provenance retain their execution identities; destination checks are recorded separately.
+
 ## Status vocabulary
 
 - **EXACT** — current project derivation with explicit hypotheses.
@@ -370,6 +379,7 @@ Proofs are included in the single canonical manuscript.
 | Any uniform modulus is at least c exp(-C sqrt(log(1/delta))) | EXACT | Lower bound only; a matching upper rate is OPEN |
 | Simple clock spectra agree on all traces below N/2 but have different microscopic spacing laws | EXACT + FINITE-REGRESSION | Abstract unitary negative control, not chaotic dynamics |
 | Spectral rounding preserves O(1/N) Egorov while producing collapsed spacings, including a simple-spectrum variant | EXACT | Weak quantization axioms only; no fixed microlocal symbol-class assertion |
+| Unbiased rounding preserves simultaneous unnormalized low traces for each specified K_N=o(N^(1/3)), simple spectrum, O(N^-1) norm distance and coarse P/Q/Egorov control, while a fixed stable-band pair test has liminf>1/2 | EXACT; independently internally reviewed | [Canonical refinement](../mathematics/microscopic_rounding_control.md); extends prior project spectral rounding. Changed operator; no exact-quantization, subprincipal-data or all-order microlocal preservation, and no counterexample to actual BGS |
 
 Fresh execution coverage, exact source hashes, literature attribution and the
 limited PDF build scope are in `holomorphic_shell_review.md` and
