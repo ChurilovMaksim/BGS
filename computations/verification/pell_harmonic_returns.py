@@ -6,6 +6,10 @@ Run with OPENBLAS_NUM_THREADS=1; output JSON separates exact and floating checks
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 from collections import defaultdict
 from fractions import Fraction

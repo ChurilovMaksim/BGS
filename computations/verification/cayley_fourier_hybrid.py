@@ -6,6 +6,10 @@ This script verifies the exact finite-field identities and the simplified intege
 consequence p E_+(A)-|A|^4 <= 4 p |A|(p-|A|) on all tested subgroups.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse, hashlib, json
 from pathlib import Path
 

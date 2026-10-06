@@ -2,6 +2,10 @@
 """Exact finite symbol/constant audit for BGS-RES-005; not its infinite-lag proof."""
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 from collections import defaultdict
 from fractions import Fraction as F

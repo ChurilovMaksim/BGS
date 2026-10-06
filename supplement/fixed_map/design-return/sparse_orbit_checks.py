@@ -4,6 +4,10 @@ The all-K theorem is proved in sparse_orbit_theorem.md. These checks
 independently verify its integer identities and try to falsify its
 two-frequency consequence, including composite moduli and periods.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 from math import gcd
 from random import Random

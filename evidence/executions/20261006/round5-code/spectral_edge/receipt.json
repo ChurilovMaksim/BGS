@@ -1,0 +1,77 @@
+{
+  "base_commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+  "scope": "external computation/evidence overlay, not a full repository checkout; original shared repository untouched",
+  "sources": [
+    {
+      "path": "computations/python/bgs/finite_field.py",
+      "original_sha256": "29e42517e3a0221b5420aafc3d3fd0bb32f5d7974226ea0ce9bc6d14523f2a5e",
+      "patched_sha256": "74e185cc2290058e746f91903775db389f777685b7057b7d75978f309fd22c2e"
+    },
+    {
+      "path": "computations/python/bgs/jacobi.py",
+      "original_sha256": "f82a0a55ac824108efff4d32901e618d874bd7de174c09ec42f5dd469ca510d1",
+      "patched_sha256": "5eee5c927901b680f3b4e7af91e29fcd0d7af6036bd7a9bde7a51ecdbf8e46c0"
+    },
+    {
+      "path": "computations/analysis/spectral_diagnostics.py",
+      "original_sha256": "023236824868db007223a9b38fbbba785f98bc66e4845cb856885fec97174000",
+      "patched_sha256": "607e935f93e58b2cd956374137901f8ca5900e79627f65ca9ca3f9af29d22177"
+    },
+    {
+      "path": "computations/verification/spectral_integer_window_regressions.py",
+      "original_sha256": null,
+      "patched_sha256": "2a8e30f6ca66fa69a01d38df699005902de8179fd078558e69db6e28dac3735f"
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "python",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "returncode": 0,
+      "log": "test_0.log"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "returncode": 0,
+      "log": "test_1.log"
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "returncode": 0,
+      "log": "test_2.log"
+    },
+    {
+      "command": [
+        "python",
+        "computations/verification/spectral_diagnostics_contracts.py"
+      ],
+      "returncode": 0,
+      "log": "test_3.log"
+    },
+    {
+      "command": [
+        "python",
+        "computations/verification/current_regression.py"
+      ],
+      "returncode": 0,
+      "log": "test_4.log"
+    }
+  ],
+  "impact": "evidence_impact.json",
+  "additional_successful_logs": [
+    "twisted_jacobi_regression.log",
+    "cayley_jacobi_trace_regression.log",
+    "magnetic_quotient_regression.log"
+  ],
+  "limits": "Finite floating arithmetic and input-contract regression only; magnetic quotient run excluded C++ comparison."
+}

@@ -7,6 +7,10 @@ elliptic and radial quadrature at fixed n. Neither replaces the asymptotic
 proof. Optional plots require matplotlib and are not a core test dependency.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse,hashlib,json
 from fractions import Fraction
 from math import comb,factorial

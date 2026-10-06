@@ -1,4 +1,8 @@
 """FFT check in the large quantum-exponent regime; not a BGS simulation."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 from scipy.special import jv

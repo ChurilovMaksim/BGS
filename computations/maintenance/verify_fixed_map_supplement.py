@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Audit and replay recovered research in isolation, preserving source evidence."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import hashlib

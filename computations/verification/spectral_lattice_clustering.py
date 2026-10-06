@@ -6,6 +6,10 @@ verifier uses independently cleared integer inequalities on a different grid.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 from fractions import Fraction as Q
 from itertools import combinations_with_replacement

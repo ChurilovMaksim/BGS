@@ -1,4 +1,8 @@
 """Rebuild and run the independent verifier, including a rejected mutation."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import hashlib
 import json
 from pathlib import Path

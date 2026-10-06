@@ -6,6 +6,10 @@ covariance, Sylvester derivative, projected-noise and drift diagnostics.
 No simulation of the polynomial step count; no Heisenberg/BGS estimate.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction
 import hashlib

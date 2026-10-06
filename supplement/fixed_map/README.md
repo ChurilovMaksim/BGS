@@ -73,3 +73,7 @@ redistributed. Its exact version, URL and hash are recorded in
 `resolvent-flow/checkpoint.json`. No compiled executable, LaTeX temporary
 file or third-party package is included here. Internal reviews are not
 external peer review; finite tests are not proofs of asymptotic claims.
+
+### Standalone assertion guards, 6 October 2026
+
+The current edition adds early optimization refusal to assertion-dependent source scripts. Inventory rows retain the prior edition commit, hashes and sizes in `previous_editions`, and identify the guard-only transition. Removing that new guard leaves each previous source AST unchanged. Historical JSON, certificates, logs and dated checkpoint bytes are not rewritten. The inventory/syntax gate and isolated replay cover the updated edition separately.

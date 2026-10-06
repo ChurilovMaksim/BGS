@@ -5,6 +5,10 @@ Analytic Anosov/mixing assertions are proved in the companion note, not by
 finite trajectories. ODE tolerances below are not interval enclosures.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

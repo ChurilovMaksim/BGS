@@ -6,6 +6,10 @@ mpmath diagnostic checks the punctured-domain theta example numerically.
 No files are changed unless --output is given. Do not execute with python -O.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as F
 from itertools import permutations

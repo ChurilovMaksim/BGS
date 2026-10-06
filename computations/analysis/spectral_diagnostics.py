@@ -31,8 +31,8 @@ from scipy.special import ndtr
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "computations" / "python"))
 
-from bgs.finite_field import primitive_root  # noqa: E402
-from bgs.jacobi import annihilator_indices, dlog_table  # noqa: E402
+from bgs.finite_field import primitive_root, require_integer  # noqa: E402
+from bgs.jacobi import annihilator_indices, dlog_table, require_supported_prime  # noqa: E402
 
 FLOAT_TOLERANCE = 1e-9
 
@@ -130,7 +130,11 @@ def empirical_cdf_sup_distance(gaps: np.ndarray) -> float:
 def forward_window_count_variance(
     unfolded: np.ndarray, widths: list[int]
 ) -> dict[int, float]:
-    """Historical edge-truncated forward-window statistic, named literally."""
+    """Variance of counts in [x_i, x_i + width), including multiplicities.
+
+    Every supplied level is an anchor, including repeated anchors; windows
+    are truncated at the observed spectrum edge. Both boundaries use values.
+    """
     ordered = np.asarray(unfolded, dtype=float)
     if (ordered.ndim != 1 or len(ordered) < 2 or not np.all(np.isfinite(ordered))
             or np.any(np.diff(ordered) < 0)):
@@ -142,11 +146,14 @@ def forward_window_count_variance(
     for width in widths:
         occupations: list[int] = []
         right = 0
+        first_equal = 0
         for left in range(count):
-            right = max(right, left)
+            if left == 0 or ordered[left] != ordered[left - 1]:
+                first_equal = left
+            right = max(right, first_equal)
             while right < count and ordered[right] < ordered[left] + width:
                 right += 1
-            occupations.append(right - left)
+            occupations.append(right - first_equal)
         output[width] = float(np.var(occupations))
     return output
 
@@ -157,6 +164,9 @@ def build_sector_context(
     eigenvalue: int,
 ) -> SectorContext:
     """Precompute the odd annihilator sector for repeated q-values."""
+    prime = require_supported_prime(prime)
+    subgroup_order = require_integer(subgroup_order, "subgroup_order")
+    eigenvalue = require_integer(eigenvalue, "eigenvalue") % prime
     generator = primitive_root(prime)
     dlog = dlog_table(prime, generator)
     character_indices = annihilator_indices(
@@ -189,7 +199,8 @@ def build_sector_context(
 
 def hermitian_matrix(context: SectorContext, q: int) -> np.ndarray:
     """Return the full complex Hermitian sector matrix at q."""
-    prime = context.prime
+    prime = require_supported_prime(context.prime)
+    q = require_integer(q, "q") % prime
     additive_phase = np.exp(
         2j * np.pi * (q * context.x_values % prime) / prime
     )

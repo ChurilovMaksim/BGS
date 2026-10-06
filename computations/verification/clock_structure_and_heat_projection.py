@@ -5,6 +5,10 @@ Fractions control Fourier selection, clock heat jets and stable Gram matrices.
 Complex128 kernels and binary64 quadratures are finite diagnostics.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from collections import defaultdict
 from fractions import Fraction as Q

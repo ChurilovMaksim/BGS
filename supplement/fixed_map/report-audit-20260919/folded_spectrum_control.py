@@ -3,6 +3,10 @@
 This constructs abstract spectra, not quantizations of the fixed smooth map.
 The proof and its exact scope are in folded_spectrum_control.md.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import math
 from pathlib import Path

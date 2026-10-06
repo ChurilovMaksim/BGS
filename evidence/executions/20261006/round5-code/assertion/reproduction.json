@@ -1,0 +1,110 @@
+[
+  {
+    "mode": "normal",
+    "command": [
+      "<PYTHON_BIN>/python",
+      "-B",
+      "<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py",
+      "--output",
+      "<ASSERTION_REPAIR_ROOT>/normal.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py\", line 128, in <module>\n    main()\n  File \"<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py\", line 83, in main\n    assert moment == F(51452, 1000), moment\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 51451/1000\n",
+    "certificate": null
+  },
+  {
+    "mode": "-O",
+    "command": [
+      "<PYTHON_BIN>/python",
+      "-B",
+      "-O",
+      "<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py",
+      "--output",
+      "<ASSERTION_REPAIR_ROOT>/-O.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\"status\": \"passed\", \"arithmetic\": \"fractions and exact integer lattice\", \"frequencies\": 32, \"ordered_frequency_pairs\": 1024, \"sampled_lags_per_pair\": 12, \"M2_real_imag\": \"51451/1000\", \"perturbation_bound_over_pi\": \"2506051491/250000000\", \"nonclaim\": \"Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof.\"}\n",
+    "stderr": "",
+    "certificate": {
+      "status": "passed",
+      "arithmetic": "fractions and exact integer lattice",
+      "frequencies": 32,
+      "ordered_frequency_pairs": 1024,
+      "sampled_lags_per_pair": 12,
+      "M2_real_imag": "51451/1000",
+      "perturbation_bound_over_pi": "2506051491/250000000",
+      "nonclaim": "Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof."
+    }
+  },
+  {
+    "mode": "-OO",
+    "command": [
+      "<PYTHON_BIN>/python",
+      "-B",
+      "-OO",
+      "<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py",
+      "--output",
+      "<ASSERTION_REPAIR_ROOT>/-OO.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\"status\": \"passed\", \"arithmetic\": \"fractions and exact integer lattice\", \"frequencies\": 32, \"ordered_frequency_pairs\": 1024, \"sampled_lags_per_pair\": 12, \"M2_real_imag\": \"51451/1000\", \"perturbation_bound_over_pi\": \"2506051491/250000000\", \"nonclaim\": \"Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof.\"}\n",
+    "stderr": "",
+    "certificate": {
+      "status": "passed",
+      "arithmetic": "fractions and exact integer lattice",
+      "frequencies": 32,
+      "ordered_frequency_pairs": 1024,
+      "sampled_lags_per_pair": 12,
+      "M2_real_imag": "51451/1000",
+      "perturbation_bound_over_pi": "2506051491/250000000",
+      "nonclaim": "Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof."
+    }
+  },
+  {
+    "mode": "env1",
+    "command": [
+      "<PYTHON_BIN>/python",
+      "-B",
+      "<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py",
+      "--output",
+      "<ASSERTION_REPAIR_ROOT>/env1.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\"status\": \"passed\", \"arithmetic\": \"fractions and exact integer lattice\", \"frequencies\": 32, \"ordered_frequency_pairs\": 1024, \"sampled_lags_per_pair\": 12, \"M2_real_imag\": \"51451/1000\", \"perturbation_bound_over_pi\": \"2506051491/250000000\", \"nonclaim\": \"Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof.\"}\n",
+    "stderr": "",
+    "certificate": {
+      "status": "passed",
+      "arithmetic": "fractions and exact integer lattice",
+      "frequencies": 32,
+      "ordered_frequency_pairs": 1024,
+      "sampled_lags_per_pair": 12,
+      "M2_real_imag": "51451/1000",
+      "perturbation_bound_over_pi": "2506051491/250000000",
+      "nonclaim": "Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof."
+    }
+  },
+  {
+    "mode": "env2",
+    "command": [
+      "<PYTHON_BIN>/python",
+      "-B",
+      "<ASSERTION_REPAIR_ROOT>/mutated_frozen_full_lag_gap.py",
+      "--output",
+      "<ASSERTION_REPAIR_ROOT>/env2.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\"status\": \"passed\", \"arithmetic\": \"fractions and exact integer lattice\", \"frequencies\": 32, \"ordered_frequency_pairs\": 1024, \"sampled_lags_per_pair\": 12, \"M2_real_imag\": \"51451/1000\", \"perturbation_bound_over_pi\": \"2506051491/250000000\", \"nonclaim\": \"Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof.\"}\n",
+    "stderr": "",
+    "certificate": {
+      "status": "passed",
+      "arithmetic": "fractions and exact integer lattice",
+      "frequencies": 32,
+      "ordered_frequency_pairs": 1024,
+      "sampled_lags_per_pair": 12,
+      "M2_real_imag": "51451/1000",
+      "perturbation_bound_over_pi": "2506051491/250000000",
+      "nonclaim": "Finite orbit sampling does not prove the infinite-lag theorem; see the maintained proof."
+    }
+  }
+]

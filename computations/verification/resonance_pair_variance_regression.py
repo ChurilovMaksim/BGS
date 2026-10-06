@@ -12,6 +12,10 @@ Only the report emitted by a successful invocation is execution evidence.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 import cmath
 from fractions import Fraction

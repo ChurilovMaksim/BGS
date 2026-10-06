@@ -7,6 +7,10 @@ finite-field bookkeeping on many odd/even subgroup designs. Enumeration is
 finite evidence, not the proof of the theorem.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse, hashlib, json
 from collections import Counter
 from math import gcd

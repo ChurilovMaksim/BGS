@@ -4,6 +4,10 @@ Positive cat kernel; physical symbol e(aq+bp) -> W(b,a);
 hbar=1/(2*pi*N), U=exp(-2*pi*i*kappa*N*Op(f_star))*M_plus.
 No ensemble average or asymptotic conclusion is taken from these dimensions.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import math
 from pathlib import Path

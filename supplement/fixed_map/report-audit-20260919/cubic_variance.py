@@ -3,6 +3,10 @@
 The chamber coverage proof is in cubic_variance.md. The coefficients below
 are computed symbolically over Q, not inferred by fitting sample values.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction as F
 from itertools import permutations, product
 import json

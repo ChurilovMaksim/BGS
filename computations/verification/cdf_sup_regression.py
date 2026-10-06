@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Regression for both one-sided limits of the empirical CDF."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import importlib.util
 import math
 from pathlib import Path

@@ -4,6 +4,10 @@ Double precision can lose the answer after subtracting two large terms.
 Generate the unitary via a Cayley transform at working precision instead
 of promoting an approximately unitary double-precision input.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import random
 import mpmath as mp

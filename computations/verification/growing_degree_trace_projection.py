@@ -6,6 +6,10 @@ identity and balanced-sign trace designs, and independent tensor Casimirs.
 The integer composition budget checks bookkeeping, not packet propagation.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from collections import Counter, defaultdict
 from fractions import Fraction as R

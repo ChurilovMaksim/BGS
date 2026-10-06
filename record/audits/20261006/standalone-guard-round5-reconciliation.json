@@ -1,0 +1,21 @@
+{
+  "historical_receipt": "evidence/executions/20261006/standalone-guard/receipt.json",
+  "historical_receipt_sha256": "15e5cb680e6f835704305fe120946679d6a7d768119ea0a1c8f2e4cd54cb1714",
+  "scope": "Historical 18-test receipt unchanged; round5 adds the earlier module-entry guard. Old hashes are not silently replaced.",
+  "sources": [
+    {
+      "path": "computations/verification/collective_diffusion_gap.py",
+      "historical_sha256": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+      "current_sha256": "9901ae063687a592eb56b5bd2daa54f08c4e74f80a09b84d0d7f651f3bc91822",
+      "matches_historical_source": false
+    },
+    {
+      "path": "computations/maintenance/tests/test_collective_assertion_guard.py",
+      "historical_sha256": "99edb47af01fd3f1062ee9202ec5047e872747b23a439161c958a9e0fbfcb6ed",
+      "current_sha256": "99edb47af01fd3f1062ee9202ec5047e872747b23a439161c958a9e0fbfcb6ed",
+      "matches_historical_source": true
+    }
+  ],
+  "latest_receipt": "evidence/executions/20261006/round5-code/workspace.json",
+  "normal_ast_equivalence": "evidence/executions/20261006/round5-code/guard-normal-ast-equivalence.json"
+}

@@ -13,6 +13,10 @@ Finite regression is not a proof of the growing-K split-divisor bound.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 
 import sympy as sp

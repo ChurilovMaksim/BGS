@@ -5,6 +5,10 @@ characteristic polynomial of G+E modulo p. The theorem in the accompanying
 note then proves simplicity at EVERY nonzero algebraic real exponent
 epsilon, including tau*N for the frozen tau=10^-80, at the certified N.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

@@ -8,6 +8,10 @@ This does not assert that the spectra of the two quantizations agree.
 All certificate inequalities use integers/Fraction, including bounds on
 square roots and sines. Decimal conversion is only for display.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction as F
 from math import isqrt, lcm
 from decimal import Decimal, localcontext

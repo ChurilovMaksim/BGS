@@ -11,13 +11,51 @@ import math
 
 import numpy as np
 
-from .finite_field import multiplicative_order, require_odd_prime
+from .finite_field import multiplicative_order, require_integer, require_odd_prime
+
+
+# Every vectorized integer product below has factors in [0, prime-1].
+# Check before primality testing/allocation, not after an overflowing product.
+MAX_VECTORIZED_PRIME = math.isqrt(np.iinfo(np.int64).max) + 1
+
+
+def require_supported_prime(prime: int) -> int:
+    prime = require_integer(prime, "prime")
+    if prime > MAX_VECTORIZED_PRIME:
+        raise ValueError("prime exceeds the safe int64 product bound")
+    require_odd_prime(prime)
+    return prime
+
+
+def _integer_array(values: np.ndarray, name: str) -> np.ndarray:
+    raw = np.asarray(values)
+    if raw.ndim != 1:
+        raise ValueError(f"{name} must be one-dimensional")
+    # Validate before conversion: astype(int64) silently truncates floats and
+    # wraps uint64 values. Python ints also support arbitrarily large inputs.
+    exact = [require_integer(value, name) for value in raw.tolist()]
+    if any(value < np.iinfo(np.int64).min or value > np.iinfo(np.int64).max
+           for value in exact):
+        raise ValueError(f"{name} entries exceed int64")
+    return np.asarray(exact, dtype=np.int64)
+
+
+def _checked_dlog(dlog: np.ndarray, prime: int) -> np.ndarray:
+    """Check array shape/type/range for safe arithmetic, not log identities.
+
+    Callers must supply a genuine discrete-log table, e.g. from dlog_table.
+    A range-valid arbitrary array is not certified as such a table here.
+    """
+    table = _integer_array(dlog, "dlog")
+    if len(table) != prime or np.any(table[1:] < 0) or np.any(table[1:] >= prime - 1):
+        raise ValueError("discrete-log table has invalid length or exponents")
+    return table
 
 
 def dlog_table(prime: int, generator: int) -> np.ndarray:
     """Return the discrete-log table for a primitive root modulo ``prime``."""
-    require_odd_prime(prime)
-    generator %= prime
+    prime = require_supported_prime(prime)
+    generator = require_integer(generator, "generator") % prime
     if generator == 0:
         raise ValueError("discrete-log generator must be nonzero")
 
@@ -46,7 +84,10 @@ def annihilator_indices(
     This turns the design metadata into a checked contract instead of an
     ignored annotation.
     """
-    require_odd_prime(prime)
+    prime = require_supported_prime(prime)
+    subgroup_order = require_integer(subgroup_order, "subgroup_order")
+    eigenvalue = require_integer(eigenvalue, "eigenvalue")
+    dlog = _checked_dlog(dlog, prime)
     if subgroup_order <= 0 or (prime - 1) % subgroup_order:
         raise ValueError("subgroup_order must be a positive divisor of prime-1")
     if len(dlog) != prime:
@@ -92,8 +133,11 @@ def jacobi_matrix(
     annihilator.  That incorrectly rejected the legitimate odd/even sector
     matrices used by the finite spectral diagnostics.
     """
+    prime = require_supported_prime(prime)
+    q = require_integer(q, "q") % prime
+    dlog = _checked_dlog(dlog, prime)
     expected = annihilator_indices(prime, subgroup_order, eigenvalue, dlog)
-    supplied = np.asarray(character_indices, dtype=np.int64)
+    supplied = _integer_array(character_indices, "character_indices")
     if supplied.ndim != 1 or len(supplied) == 0:
         raise ValueError("character_indices must be a nonempty one-dimensional array")
     if len(np.unique(supplied)) != len(supplied):

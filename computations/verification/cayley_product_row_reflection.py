@@ -11,6 +11,10 @@ check of I_{-1}(31,1303)=4.  No finite run proves a growing-K prime bound.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 from collections import Counter
 

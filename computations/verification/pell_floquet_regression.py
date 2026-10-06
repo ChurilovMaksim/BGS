@@ -6,6 +6,10 @@ checks and seeded trace estimates are diagnostics, not a proof of the limit.
 No SciPy dependency is needed: Hermitian exponentials use numpy.linalg.eigh.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

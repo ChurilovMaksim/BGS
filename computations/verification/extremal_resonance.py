@@ -6,6 +6,10 @@ bracket() returns {f,h}/(4*pi**2), so stored Gram matrices equal G/pi**2.
 No files are written unless --output or --replay is supplied.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from dataclasses import dataclass
 from functools import total_ordering, lru_cache

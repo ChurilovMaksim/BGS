@@ -8,6 +8,10 @@ or cumulant evaluator. Only the separately labeled existing moment checks are
 imported. Output is written beside this script.
 """
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 from collections import Counter
 from fractions import Fraction as F
 from itertools import combinations, permutations, product

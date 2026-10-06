@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Finite renderer-compatibility regression; no mathematical proof claim."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import importlib.util
 from pathlib import Path
 

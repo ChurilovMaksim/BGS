@@ -1,0 +1,1189 @@
+[
+  {
+    "path": "computations/analysis/cayley_trace_limit_figure.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e8d0783cbbb10a3ab62469cf8ea101303e169998c532d585ef78d57f2012f6b1",
+    "after_sha256": "5f64a31a1da603e5e1c2446857bb01dedf41b360c4487c930978a76f93311910"
+  },
+  {
+    "path": "computations/analysis/magnetic_spectrum_figure.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "569904b247e4b729556c5cc1df5b5fe1d1fd56fac1f10d295d28582eb17cd430",
+    "after_sha256": "6ce5b362bb6a5c6b8ce7c5b5e9d17e225175e9cfa3375047cb243e154f7b4861"
+  },
+  {
+    "path": "computations/analysis/pell_harmonic_transition_figure.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "fc8278fecee32509f0b5d2ac4ab2ad0339489e134b92e32da65b59f28c944574",
+    "after_sha256": "a60972388ada05887492b9da08046bcf6a22476c0fe984c73c513d27401e4dcf"
+  },
+  {
+    "path": "computations/analysis/return_obstruction_figure.py",
+    "assertions": 0,
+    "reason": "static import dependency on an assertion-dependent module",
+    "before_sha256": "6c5cb47744d66021a79f3c9473842cd8d1b279087988000547b6a5819204bc9d",
+    "after_sha256": "c34398c8fbc4a18ef7ccf5de0347e0477ff882c7fc23508680253e67b1dc57b0"
+  },
+  {
+    "path": "computations/experiments/collective_diffusion_spectrum.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "be4f4eac7350d978c18e931a4419ab895c8e35122ee32d39d93d3f0d3bfa2601",
+    "after_sha256": "5396778c1f217d2034a6ce3131dab9a9fd6fab79b76c323437baf26cd837a46e"
+  },
+  {
+    "path": "computations/experiments/fixed_model_period_three_independent.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "b89e3be0b9693c796c446e8ec3ae0306e0159d9840fb8bc0e71eb23f8dd851de",
+    "after_sha256": "10784b7e306b0007d24bb426a98a03a17b9f91e8c95a0a3a03f0d23e0de44112"
+  },
+  {
+    "path": "computations/experiments/original_channel_gap_independent.py",
+    "assertions": 2,
+    "reason": "assertion-dependent module",
+    "before_sha256": "67386f8b3d741fafc9b4536062dda68734d403aa90aa51336e5956495ebebe4e",
+    "after_sha256": "a120979bd0468697a0efeea350ffc6a994e40f292e3f3168f6744bb952429759"
+  },
+  {
+    "path": "computations/maintenance/summarize_rigidity_checks.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e953a74c1a6a381b236b49ef027c1791a9fae62c6f4d937cd7d2557993fbc88f",
+    "after_sha256": "21280138db9a826e0288c7158180592619772b5e923d14596f08c05bebc3d838"
+  },
+  {
+    "path": "computations/maintenance/verify_fixed_map_supplement.py",
+    "assertions": 2,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d1f98edebb11596fc66cc94b53081fe168ee29a0947ad035c666082cf6812ac5",
+    "after_sha256": "3d9d7b595945ff439452b7dbfd287a89c0a1e60cc833702b9a50cf8e13ff9d14"
+  },
+  {
+    "path": "computations/verification/analytic_coboundary.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d8ca959730c21b52c7380635772be365fc14517f1f83fc6c5505d6e34628e94f",
+    "after_sha256": "36bbfafc0ef8780294c49392dc5a26a7618d7cfddc0dd6bd8410000de0bc0615"
+  },
+  {
+    "path": "computations/verification/analytic_kick_return_gas.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "9864c2ae144b8628bd78f530ee2b164443d29b8dae9275f39fb5936e9f262a27",
+    "after_sha256": "a9b0e4d1150fa377bb43fce59e24296d743b8bb5a1531bd6f9fac8bb7adeec1d"
+  },
+  {
+    "path": "computations/verification/balanced_weyl_gaps.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e0931db6a9b6f096a05edb7985c2dd05cefa5beed51787ded08f9b005853c8b9",
+    "after_sha256": "8ba49d7afafed26186cb0f3603f63c31a4fe265da4566c0f0c79f3a0c094867a"
+  },
+  {
+    "path": "computations/verification/bgs_20260921_regression.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "97920e6234596667767f56de4d84e32ccc3801eed9db510689360738a1ecc611",
+    "after_sha256": "c70bff51b3439a26bcbd4c0e7ec5e10b0492cb5225d6946d9bd520fafa0c66cd"
+  },
+  {
+    "path": "computations/verification/bibliographic_metadata_audit.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "55ba180abbbf17b3c60742a0d9937f172d659b7d0a40a6fb84681c0d1371a0a9",
+    "after_sha256": "89d1937f7db6cefbf6477910384f6287d7548d8425c3a22c2b88a22ccfadee5a"
+  },
+  {
+    "path": "computations/verification/cayley_curve_uniform.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d9799af9d770d769b3d1e716ea465e1fdac995093d6435df14d4d80be3b3bf1c",
+    "after_sha256": "9c627baae4b5268a05d800b16f79e4c412d00e14cdfa7cf576a4c259e6c0fdae"
+  },
+  {
+    "path": "computations/verification/cayley_difference_discriminant.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e98dc59fca58677c0a642bccfdc373c1dce9c5fda0204e2ba4a148ec0520e43e",
+    "after_sha256": "dfaa0d708664b0bc98c0d084e846a2e1ab85c947127eca0dd9e01b0a1f311983"
+  },
+  {
+    "path": "computations/verification/cayley_fourier_hybrid.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "1316f125c8a55dca1c265c33f19d84d6e93bbee1be35a2e3953689da164c6999",
+    "after_sha256": "cac741b1405dbdb15c268c4402ad21f357403b39d4e04ad36b293d7c23d35d8f"
+  },
+  {
+    "path": "computations/verification/cayley_frobenius_extension.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "bdc2a450f11620a6835e46992ec85616441278e8740affe6c07e52e6e3244dd6",
+    "after_sha256": "fd6235af81f19d241ad174c2b2757c789417f26e6376d0069e95b84d74bfe547"
+  },
+  {
+    "path": "computations/verification/cayley_higher_moments.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8495ace32bc4141b5dbb07658561230e9ea0ba7360dbcdd069bfbfbfff85386e",
+    "after_sha256": "83bac8b5d4125ab8109d9a9dd249ff819ab05eefa081605aa75f8f2806429ce7"
+  },
+  {
+    "path": "computations/verification/cayley_inverse_pair_sum_factorization.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "edd62ada680376459ae449cfe9031c3cafd5f63bc10f4640f6ef2e92de1355c7",
+    "after_sha256": "b22e86124d57a731237a3bfdfaed8d7f882b540419944eb7736bd67120536a9e"
+  },
+  {
+    "path": "computations/verification/cayley_inverse_resultant_transversality.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a85b4ab66e83fcfd8554e5cdec47d76c29da21524066961d768cdc0e2ffad04b",
+    "after_sha256": "4177708bce71df1ab3913acae88c93883b3a5e02a3d1ca752e361ce98e98466d"
+  },
+  {
+    "path": "computations/verification/cayley_principal_subresultant_support.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "cf40930302280d7af454472fc2e8dd0f77ceb0e1394b7fa6593e6ce988152f6d",
+    "after_sha256": "b2460f7211162179484e7a2c7ea879baf47bfa6bd0c1cb75a5d56a75488ba812"
+  },
+  {
+    "path": "computations/verification/cayley_product_discriminant.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "76d24c8189052a920807d7d389803dd5658f919de9543d3750e5e9db47f0a863",
+    "after_sha256": "7a0e103cf00e2521aa498aeb1603f32c7ab6e94f41c9559c88f3926afbe61062"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_coefficient_ideal.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8df5b6c0e2a80e3ccf6e65adee835b585a796eb35fca46e8bc79e917f8c9796b",
+    "after_sha256": "fba6a3d4aa4a193cd7aa7fbf162fd14955ce7e94c9d89c99359f442a306441c0"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_intersections.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d921be96c194bfea2bec08d55c70ce1bc28537d397c4c0ba2513dc7d9efcfe75",
+    "after_sha256": "752087fff15ba0eef67a4141a3420a97b8617c6fded034f4ab3c5284a99d71ce"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_projective_bezout.py",
+    "assertions": 24,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e5acf1bfcb7b798748eb60c5967f887ef3622b327a216e02bad53ee1897cef3f",
+    "after_sha256": "7b120c2a77503b5bb1b4fbd1faae3a0e0a159709dc41d683e20f9492d0465a75"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_real_trace_ideal.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8dfff4a2a53b9025da50daf4ded3dbcd08e64862a8e413699b8084e61a0e2872",
+    "after_sha256": "ba13ab1c5d0a0bfb0ff49b65a7a2aa395b16a69dd45b55c0c515b624eb3491ed"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_reflection.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7a476b013d45f5a301c7fa1e897c6ead699ce2cae4b9dfcfc8f8a77bcce5ee3f",
+    "after_sha256": "b39177f7370c272485518f18d98cb2322f505b018dbc9081f420d07a3ff5b865"
+  },
+  {
+    "path": "computations/verification/cayley_product_row_subresultants.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4c6fc27d7e16fef017ef57c7462b22ca179d2cd70d880052eefa4ced557c26e9",
+    "after_sha256": "5be6e6a2e2ae7936f99df218420960113d9b6254bc3ad93088920243ab37c520"
+  },
+  {
+    "path": "computations/verification/cayley_product_rows.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e88604d32b2061d8a96748705e050e032ebca6ceb3efdce12f135d19645a3d3c",
+    "after_sha256": "3aa719460d076e044c25640f55259d68e2469abc26e34aa57581122e1fb47693"
+  },
+  {
+    "path": "computations/verification/cayley_ratio_orbit_factorization.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3c0fe6b0e4a36679017cc11f646a4c246b562af0135b384f4e67f5963810f469",
+    "after_sha256": "32b5d846264639ac1cd4bf94b5d12a1185db56d746a8bbef4205b5a763c143d8"
+  },
+  {
+    "path": "computations/verification/cayley_scaling_rigidity.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "39d4456c81bb35c0dcbfbae6b9623c8f0a7819eb247d07573c1301ec8d62d687",
+    "after_sha256": "7963a62f68d31de6ef1a8a18ddfe0f6437149166a599729b2b7333221d4fcf17"
+  },
+  {
+    "path": "computations/verification/cayley_shift_psc_transversality.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "107aff0534f04f05dbe23e6560e8bcfe31657ec9b756a08c1fae286fa53e5293",
+    "after_sha256": "b53d8932130f9f53fc09b68d2f2beda5d012c9e4d856f96168f4a8e65ce970db"
+  },
+  {
+    "path": "computations/verification/cayley_shifted_energy_orbits.py",
+    "assertions": 18,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3a1fe1b8838209eeeaed57e9732e8bbf493a746cea3e8f917a57162de46e881f",
+    "after_sha256": "e625f183d5f532b746e38f4a432987513339cda104d23c9d3ae60a632ed382c0"
+  },
+  {
+    "path": "computations/verification/cayley_sylvester_fitting_support.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4ec2df3d0ad79d8b38fa7e0b9d644dc3284630d46db169473ca2996d88c557bd",
+    "after_sha256": "ead1d4920fb2fb91550dd20b4fa0909e4d542f0c58c9e5cd0fd553a67d96f595"
+  },
+  {
+    "path": "computations/verification/cayley_trace_intercept_shift_resultant.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d28628d32e0bda6a176f743789c08863037a1dcf29a858017c18946300f06d18",
+    "after_sha256": "7147192098c21eaf1e59d5fe17f16dd269c82a02af078e32eadf09b6cfc19911"
+  },
+  {
+    "path": "computations/verification/cdf_sup_regression.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4bc83efb6381d68b02bfbf774d7f97cecc453a3b8ab98089f217dd457e6eb6b0",
+    "after_sha256": "f8260fec10684c6c5ff56cb73b80907e88b950cc48f113b6d48ac78d52fd8e46"
+  },
+  {
+    "path": "computations/verification/circular_dyson_relaxation.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "78a1f03f4c763cfaeb577951866104b620896f3c3913ccb8b865f3ac471abab9",
+    "after_sha256": "b49126356bd47e51cd6c955e7e3a61517b54c123c8f953819bcf23d2686b9ab2"
+  },
+  {
+    "path": "computations/verification/clock_structure_and_heat_projection.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+    "after_sha256": "aabfcedbe68743e0343b4070567f2ef638e78507201870e204429dabb74547b1"
+  },
+  {
+    "path": "computations/verification/coboundary_flow.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3bd3ff9bbe02c0d4959e110f0eed3f6fccb62181b8118168d1c2f89a41897e33",
+    "after_sha256": "6b63892a18393aea84b1460f0887f93574e365db611bcd707cb008d8409bd20e"
+  },
+  {
+    "path": "computations/verification/coboundary_general_start.py",
+    "assertions": 25,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8cc0d85907388d8c5f35a8e2fd2783b3ccc98fa6c39c33c9050c41bcaa99a4a7",
+    "after_sha256": "29aaa274728c77c972fbe24589ad382a4c9395d7ac43189049d908b3bb6dfe97"
+  },
+  {
+    "path": "computations/verification/coboundary_joint_limit.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "682cac6863baee3c68bffb50fe4c03086bd3fd434eb9406065dd68f478aec355",
+    "after_sha256": "9876b4e3e089d749a51bd304a67f228ce25060d11da3403b4ccf1fa6c2c35d3d"
+  },
+  {
+    "path": "computations/verification/coboundary_mobius_diffusion.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "369a25d7cf7a5fa1a73cfa81e4e9bb96e746fba963c1005444e9f24d3f0801a6",
+    "after_sha256": "64c7635570fa3a51dc6511ae161d220f7896f9375f57b7de443e8d8f67495efe"
+  },
+  {
+    "path": "computations/verification/coboundary_polynomial_limit.py",
+    "assertions": 21,
+    "reason": "assertion-dependent module",
+    "before_sha256": "2f32cf50259ec7f4b8469df39fb128664fb992538353862f357ce1894ca23ff7",
+    "after_sha256": "683d5429bd94fa74a5c8167ea737da9efcf227e8c33de1efb7073c2416d8d75d"
+  },
+  {
+    "path": "computations/verification/coherent_aperture_minimax.py",
+    "assertions": 19,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+    "after_sha256": "b89af730ed8051d77bd7ea1b70cdc82492b55c164a706168a675ebae87beae42"
+  },
+  {
+    "path": "computations/verification/collective_diffusion_gap.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+    "after_sha256": "9901ae063687a592eb56b5bd2daa54f08c4e74f80a09b84d0d7f651f3bc91822"
+  },
+  {
+    "path": "computations/verification/compensated_trace_window.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "918313d23f6bb33574e3c54e0641159f1cef90deda4ec0114bf327dc4351d380",
+    "after_sha256": "1e4459cedcabc7b8acdcdde67f9837b5a6d2e84bbf369c036afba289cb7bf8f1"
+  },
+  {
+    "path": "computations/verification/correlation_extension.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "cd4a76a303f3ff2877e2b944393185d37053c110add7c6ba8c4cd29e4605b6db",
+    "after_sha256": "147c6d59ae97b81d426cb49bd9536703cdd7398187d317784af6f5d3e5e13beb"
+  },
+  {
+    "path": "computations/verification/cue_singular_energy.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "08925399407d452a0926f5cbfb00ea7453279f7ecc8e4e7ce5b00c76b6cb5414",
+    "after_sha256": "925c79f0c4ad81a1d9967adc1348d51af3e7c2989e4eebd9c44e928523e9d432"
+  },
+  {
+    "path": "computations/verification/cue_upload_audit.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "74127c3c852d848942fcedac13afb5ac0713f812a910e132d7fa68c2e7710292",
+    "after_sha256": "c89cb5128321a08a5c606cad5c4e484a794f87972048fe127e38759549ebd338"
+  },
+  {
+    "path": "computations/verification/current_regression.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "ab3764892cf068a08b8c4c5a13c228027b98e434f3eb85ff1e5938d8fc443398",
+    "after_sha256": "bd28f77eaa0fb911dc3110807485583c36874f13b3d3d1fd4f55575884a0f6d8"
+  },
+  {
+    "path": "computations/verification/even_period_spin_resonance.py",
+    "assertions": 30,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d9296cdc1abd14fea773d849a1992ea11d763b1fd21f648d62588dff509e68b5",
+    "after_sha256": "b05fbddbb250c2430b36821293cc4fba57275c64fad115150b566ec020bf0007"
+  },
+  {
+    "path": "computations/verification/expansion_wavepacket_audit.py",
+    "assertions": 42,
+    "reason": "assertion-dependent module",
+    "before_sha256": "bc3faf4cfb9cafe1e4c39f9ca1a701ba9c5fe550ad4d201b667e00f8641aa9d7",
+    "after_sha256": "1a5b51f3110d0ff5286b9dce9706ba68b367819752f811fb67109c72a1ef1f56"
+  },
+  {
+    "path": "computations/verification/extremal_resonance.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "c89d7b6aedc7146810172ec3fbff3c9e8d678caa3c3830838dd9ab1c76e63c41",
+    "after_sha256": "f3af91bbbbf7a4bdbadb197e7bd3843e4ba982c41c3d12d1cd8dae47a78c4f4a"
+  },
+  {
+    "path": "computations/verification/finite_orbit_resonance.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "089ff5bfff883ba7e146b0b2f89b4e1fef63fbcd27934ab94a9525ee392395d9",
+    "after_sha256": "9fc93784306014bec089f6fb0d084f485048b35fe61d9fde8fa7cd7791b8f082"
+  },
+  {
+    "path": "computations/verification/fixed_harmonic_return_gas.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "783cd67b2aed5417c5f2a076839f2b417c54c62c7e55f4cc78c1052aaf29849e",
+    "after_sha256": "3e90449d4453dfaf0b40590403c71908185daaed56661836c0706aad1c12b64f"
+  },
+  {
+    "path": "computations/verification/fixed_map_convention_audit.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7835d7376e8116ffe6cd2ddc422532cb6a46cc1d3eb2c62adcb37e5be40b5ee1",
+    "after_sha256": "1a708f07ed8cf7f2d658aa38c698e744ad23e3863a272c3d07a93bf576ed9884"
+  },
+  {
+    "path": "computations/verification/fixed_model_period_three.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "1ebfaf139ba6829e318588580f78a8f1e375cd622046e16bda124fa684b41433",
+    "after_sha256": "459ff0d78b6ccd287e7520d48146dcf5b34fe094e45a9615c8ab5b5f6e2328a6"
+  },
+  {
+    "path": "computations/verification/fixed_strength_classical.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "430b3631be71e44560c9b99e90eb73ef8a491e2e3a7e843447c0203e9204d0c8",
+    "after_sha256": "ddbddf2a97148801adb905d26f293534f3a038f3bee5eab4ba9314380a55d1b0"
+  },
+  {
+    "path": "computations/verification/fixed_strength_locality.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "360b2b24dc41fe4a0d8709cd4f7a87a53f8b7b179ed4c84783504efa830acf12",
+    "after_sha256": "f9d29e46da3c458c51dcf029a0b8eabaac3915b870e9d6c4e59dfaa76b28cd09"
+  },
+  {
+    "path": "computations/verification/folded_quadratic_audit.py",
+    "assertions": 36,
+    "reason": "assertion-dependent module",
+    "before_sha256": "18af2caa7752588884e2b5d29baf0a9f249a97f27407531922a87428fca058b8",
+    "after_sha256": "7105d862769db0de415cd7f0e1492fc3a1aca8c478ce96125b18f8f16ea0c698"
+  },
+  {
+    "path": "computations/verification/frozen_antireversor.py",
+    "assertions": 23,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7e7a2a5684e15d900518f673856860bb401d6e9726b7fd2f5b2f728b29bebdad",
+    "after_sha256": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f"
+  },
+  {
+    "path": "computations/verification/frozen_arithmetic_traces.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4316a19fabe1cf491a676fd5da7a326f5fd58721bca4efca0c6150a56565f343",
+    "after_sha256": "1965a3af81129c1d81b242511e133f71bc953089fa376b5a00499ba2431cf8d7"
+  },
+  {
+    "path": "computations/verification/frozen_full_lag_gap.py",
+    "assertions": 19,
+    "reason": "assertion-dependent module",
+    "before_sha256": "ba50dcdd1364d372bd3f08092ccaf4265a5fa3b18fb8309cc735832bbd4e49f8",
+    "after_sha256": "b7e32401c5e265fe5a2a58ad035b110452c0f87bfb2ab21f8e64b1dc8b8c46c3"
+  },
+  {
+    "path": "computations/verification/frozen_kick_rank.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e6a9910d70072879a9776de4366253df0a0f3846dbf18c3ea649b3e704b587c7",
+    "after_sha256": "d3e5383313efabeb2eec0de17606b2703c83e493067135163e94d66b6b597a50"
+  },
+  {
+    "path": "computations/verification/frozen_operator_transfer_coercivity.py",
+    "assertions": 38,
+    "reason": "assertion-dependent module",
+    "before_sha256": "b5550851b52e9785e707cb418b4c51cffd9c464336d10ed09d5ad6a530c783bd",
+    "after_sha256": "d4a4fa9707f72579449138d97d407926db89df83dcccd0ef848e35daf7d58efb"
+  },
+  {
+    "path": "computations/verification/frozen_seven_cut.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d74da0076753fc672892bd29528eaac66c52d157090df5d5a7a9062665b9a79d",
+    "after_sha256": "b7b61c8982776fceae57e8136f7b90545a03c1c6f20258ff8cd56b6870ae1562"
+  },
+  {
+    "path": "computations/verification/frozen_total_minors.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f0426ec99db037b5b28dc9abf54489124cc2a45a0939b47e1aa1be3900cb793e",
+    "after_sha256": "db4ff906e9bf811713370aca9becf03b3d4625df388b31704ba365aa2fb2ec3f"
+  },
+  {
+    "path": "computations/verification/gaussian_channel_minimax.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+    "after_sha256": "cce9b67c1f9f657f89553c4cdbf14bb2e0c91bd42e4df9a299fafdf9a60b35f7"
+  },
+  {
+    "path": "computations/verification/general_cat_return_laws.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "c9683699c0857778427f3a5aca548e59173904fee32ff1effd653a7c4f5c9e6c",
+    "after_sha256": "c52f2aa5b2c72260889506e76afea6e46e1199d9da3936ff133afe3565d8311c"
+  },
+  {
+    "path": "computations/verification/general_character_recheck.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "0925eb6ab8ec01057abc66782f6c7de237a64048963f03108096cce71ac8802b",
+    "after_sha256": "a48ccbbffc0aab5eac73c1bd80215120a0b59b3a1f4358a02e651e40434e2013"
+  },
+  {
+    "path": "computations/verification/general_hyperbolic_prime_spectra.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "0fd4e26410028182b11b672fa86c0bede94302d665df33b2383509c2ba1e1602",
+    "after_sha256": "914c356548209c78bf132953a18676d84159026970c3222d0a6362f8c46225e6"
+  },
+  {
+    "path": "computations/verification/general_symbol_covariance.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "39d5f82d26588790ab28a0c9e5936eda81d6dd8b602b2b8969808195bdb28518",
+    "after_sha256": "5ab88ac873c05fdb2e0f3f89d6fe12fe1ab95de496fd7f88723eef7a4db70d51"
+  },
+  {
+    "path": "computations/verification/gram_resolvent_normalization.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a3179420530d56592e94c71f3c8f9cbab5fa7309567509d176132279d105f613",
+    "after_sha256": "9950863aec9fe87a38db72acb4f46e96998ba2fc7a25d5457763b0a709f9d225"
+  },
+  {
+    "path": "computations/verification/growing_degree_trace_projection.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d",
+    "after_sha256": "8867f7a49f16e748c2e21d3c6f687e3280813f1d6bc6928fabe6247085735182"
+  },
+  {
+    "path": "computations/verification/heisenberg_note_audit.py",
+    "assertions": 40,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f558321389eaec4e6216068f11862c683e530d684f31c94a4cd864b890f12410",
+    "after_sha256": "2777cc2e254b371716371ed49bd671d3dcbe23a9fc292ce80d1d380f17afcf49"
+  },
+  {
+    "path": "computations/verification/heisenberg_pair_heat_formula.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0",
+    "after_sha256": "91fe49f8ebf4083e2aac25ac074a62d0f4828049758c8d0c9a23b3a3eeec6593"
+  },
+  {
+    "path": "computations/verification/heisenberg_time_insertion.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "2f5e63ee31b24ee32da4535998e57df699b519c16ca75d661fd38cb56ca6078b",
+    "after_sha256": "585887e13a48a4ce4509ca0e515b6ae63a5c4391677b62df2df504653e09c2ca"
+  },
+  {
+    "path": "computations/verification/holomorphic_shell_rigidity.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028",
+    "after_sha256": "a4b21496c8e14df7b56abe67d09fda30c5fe6b6196c26457f8ed73704ab7eac5"
+  },
+  {
+    "path": "computations/verification/husimi_shell_tomography.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe",
+    "after_sha256": "beb89c1bfde99536fef75a0660e0a6b0d338e0b1fa82870fecf5232e731de281"
+  },
+  {
+    "path": "computations/verification/hyperbolic_return_pressure.py",
+    "assertions": 18,
+    "reason": "assertion-dependent module",
+    "before_sha256": "deb55ebaa89fb1825432ba46dabb9bff3dca1f5ae43ac36c6dee7f6972d22411",
+    "after_sha256": "8da271ced33465d434cb967d3b41801a4e317b8fbabbbeb0e44ab93705c88493"
+  },
+  {
+    "path": "computations/verification/local_moment_transport.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "6ede9eec4d85dfe2fbc96952805fea44361287acecfff81a2cf91a4d7e6e203d",
+    "after_sha256": "e50a0243b54abb6e26ffd81b1d1def8e60236828355aee14b9d08d78b71075ac"
+  },
+  {
+    "path": "computations/verification/locality_robustness.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a0c8473c6fbbb5a60ea90deabf41c6154265cc929cce8b92c76283ba2314b9a4",
+    "after_sha256": "dfe4549068dcca97c4ba62d0b73c45d2b3dd1c5778ab83910cc5c9694ac94073"
+  },
+  {
+    "path": "computations/verification/magnetic_quotient_regression.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "342424a1f94a5b7c9501226da33319ac67973d80bb1d0d6dc91e0ef5ba3f1fa7",
+    "after_sha256": "211832cdd5039d12da27d728043524298f31a2312ff54dd55b4b0182401aa6d2"
+  },
+  {
+    "path": "computations/verification/magnetic_scalar_certificate.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "b25582cf25bac7aef42cf364918f425723931a4b9f7c82475e12bc218a026d50",
+    "after_sha256": "51a437fe9c0b668664732e604b195d58de5a7b7342908e1ec1dc4e5cf9ba46f5"
+  },
+  {
+    "path": "computations/verification/manuscript_table_normalization.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "5ed30014f4d25b3da265e83bc7ac0fbb16171d4b7c3f379988f652839575c978",
+    "after_sha256": "e6cc8f67502d5492919f74aa0f333aa1ed099ac4039c647ea6d7185cc8d638d3"
+  },
+  {
+    "path": "computations/verification/microscopic_noise_removal.py",
+    "assertions": 25,
+    "reason": "assertion-dependent module",
+    "before_sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+    "after_sha256": "059816f5b80c27d0237060ab9646a2e1b0a49cc5ff7630e355916fa2e11554c1"
+  },
+  {
+    "path": "computations/verification/multiradius_rigidity.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "72117bc46ed4662e4fd5d0d82458b60e905e529d70ad952b44899bb48856eadd",
+    "after_sha256": "7bc3ef3c8534fe3224ef686fa3a8c43ed15f38b9bfb766f67fc2350bd93f903d"
+  },
+  {
+    "path": "computations/verification/noncommuting_tower.py",
+    "assertions": 18,
+    "reason": "assertion-dependent module",
+    "before_sha256": "26f932d0914d9bfbb0b34b7dcc5f8e038ac2b2c139793275843b339b4d7654ef",
+    "after_sha256": "8d4f31a4443c6f142e4f52d0e3095c4a207d17114dd8e0cc83f179d4a40504a2"
+  },
+  {
+    "path": "computations/verification/nonlinear_pressure_variance.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "cba8fb106e372d9758b555be5f7ec05c779ce47eac78a83238016cee06b40e48",
+    "after_sha256": "c1b1d1375137394a818dcbb49595707cd0a2ecd748d0b6cc2591e31fdbda0ccb"
+  },
+  {
+    "path": "computations/verification/offoff_elliptic_spike_regression.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "07057ac2b7a754d576e378feabce7c6a9bc9a45b0d47613391a3d9073e738716",
+    "after_sha256": "277f40bd74d396fce12ccedeb6396a36e3a502af66081c7bf3e54639f86d5953"
+  },
+  {
+    "path": "computations/verification/original_channel_gap.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "af6f9fc189777ac50414690650c70b865badb97a9d82c0eeefb16c8db24f7af3",
+    "after_sha256": "00b02b10c07385fa6a9c0a41f92f76c43347a917f3f59c275ee1f84e3df7e2b6"
+  },
+  {
+    "path": "computations/verification/pell_coboundary_fourth_moment.py",
+    "assertions": 2,
+    "reason": "assertion-dependent module",
+    "before_sha256": "212e1e993b09565600c226e99cfc56f210932c075f32488cd38a3799cc370258",
+    "after_sha256": "782a3a49177c23af41883b7449f049c600c0da066c55ec5359b583b404c58deb"
+  },
+  {
+    "path": "computations/verification/pell_coboundary_regression.py",
+    "assertions": 21,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7599d5f23b04c09438f6bed22db508709756ee92fb94c1c59a2bef525a82bdb6",
+    "after_sha256": "ed4688334301f46ce37e790ade270ba797845fee0393330ce2979ffd90670831"
+  },
+  {
+    "path": "computations/verification/pell_flat_quantum_check.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3f788062b86601e12acf04bad4e945de449af57a763037d6da89eeee1bfd6179",
+    "after_sha256": "decc8d14689d380cda632a0bf04b393cc0076ef5ff46d3640b8b844db6322f71"
+  },
+  {
+    "path": "computations/verification/pell_floquet_regression.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f6319ae40ae71d84322d36e0c500b6529cddf6627fb4dfc62cb1790c6abe3639",
+    "after_sha256": "cb159888439eb4772019a43a86f88e93c9200007ab18820213ba44c7933970d1"
+  },
+  {
+    "path": "computations/verification/pell_four_mode_coercivity.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "0db6bb8fe2ec758a9cafe29f00b15042b1f0879af633d09b54127e8389496722",
+    "after_sha256": "47b9877ff64a089957c6b661565942b3412d8fad0538d25bb521178523de545f"
+  },
+  {
+    "path": "computations/verification/pell_gamma_interval.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "11b0b6501aa705fb1b37b266207d522591cd58cea640d5a313b61ec022040a66",
+    "after_sha256": "062751a0c4f015ce034b11f4ed0f529e5d2f2a45fc5b10a042bdbcba3aa07998"
+  },
+  {
+    "path": "computations/verification/pell_gaussian_regression.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e2301078a730b71f8047f9ae55e110e2fd28d9fcae82d6d604ca46f0bf816d1c",
+    "after_sha256": "dcdf337b121e855b7a5df89498f918ad92d2956f138c0d649639ea2e3dfdc991"
+  },
+  {
+    "path": "computations/verification/pell_harmonic_returns.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "592c74f6b650508380fd5409750c77a5e7a019f1b4a8497e209fc158cf44d767",
+    "after_sha256": "65d33120ab644e5397a0375eae1a8c224a66ed1892c5b8a5a4a0fa212155f4c0"
+  },
+  {
+    "path": "computations/verification/pell_harmonic_transition.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85",
+    "after_sha256": "b5bc3a45185d4b585f2b91f19106d75fc84bb568d19795467e0a6d9cf2adee5e"
+  },
+  {
+    "path": "computations/verification/pell_pair_obstruction.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3323986145033e7358c84c0343f7fba19638599aae7c17e45794db33bbf69122",
+    "after_sha256": "cf15ba1dbc83f96caa56fbd3405311d8ad9389ccb1317e47a1a57c8ca557d7c5"
+  },
+  {
+    "path": "computations/verification/pell_resonance_lattice.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "ff3ddd3447cb57366555b81d86a57c8d9990a8d7ea1e32332c104c5f229e6554",
+    "after_sha256": "c05f08d2ef8070319c9a7abcee9d128ee96288656d2f0107dad6cbae83bc1333"
+  },
+  {
+    "path": "computations/verification/pell_sharp_coercivity_check.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d2b06036d938a258f7fecadcc286bc911f86e377066a50b4a519a53c83c05931",
+    "after_sha256": "f8fa88821034c8f2770d3415a3b60ff1abdb1b78be0ab78634c47f386e74e43b"
+  },
+  {
+    "path": "computations/verification/pell_single_orbit_sharp_constant.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "0ceca4cfbf25861b5088f3691f07737a3bcfda0b47e20f18d106610a46f3abb2",
+    "after_sha256": "9e268b9936b7bebd0dc53675aaa2912f8e2e68b70437af5d905cc9aae75f76cf"
+  },
+  {
+    "path": "computations/verification/pell_smooth_cohomology.py",
+    "assertions": 19,
+    "reason": "assertion-dependent module",
+    "before_sha256": "efeec62f344a7ca2ac2a1a7693f857daf608f4df482ef0b0cf50233e3702ebd0",
+    "after_sha256": "5310afb3eb7afb7cd787c4f551cf1d9193b6da4c9185b5891c7c82cac66c85f2"
+  },
+  {
+    "path": "computations/verification/pell_weighted_echo_regression.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "b0b636e9643a5abc2b854bf5bab7d00bfa795dd6ca2bb1ab09897ea4d6990485",
+    "after_sha256": "3646aa47a556c6e833b1fdbd8a123e9860f4e593dd48b01ce5049a14dd5f5d99"
+  },
+  {
+    "path": "computations/verification/periodic_point_trace_comparison.py",
+    "assertions": 44,
+    "reason": "assertion-dependent module",
+    "before_sha256": "ea3662c3a89c991cd608f1b929cfdcb06280f4d25437dc9bd1f21a66c4b9b807",
+    "after_sha256": "8f77baf6fdfff732b8578ca480a11d9c6672fd0b42ec9578881eaff913d7839b"
+  },
+  {
+    "path": "computations/verification/phase_space_return_gas.py",
+    "assertions": 44,
+    "reason": "assertion-dependent module",
+    "before_sha256": "c7fd044539aa16bf5b01fc961bc32fff10626959f570d3ca516d890fd034bf7f",
+    "after_sha256": "15b8b52e96f221f311d2d475d8e76ed86695a537a408c022358dda591ecf0b9b"
+  },
+  {
+    "path": "computations/verification/prime_resonant_audit.py",
+    "assertions": 31,
+    "reason": "assertion-dependent module",
+    "before_sha256": "91ec0a9c7f383f0324538bbf889be96f18719f04e1533ff2a665ec6b9b7e7c53",
+    "after_sha256": "43673a0f9dd432fb6f77cc69349fb54ad26d3656d14aee6daf647608a2375fe7"
+  },
+  {
+    "path": "computations/verification/pure_loss_discrimination.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "43265337ad27ec73e4e63ce80c8c6e2260da549f1eaf08c0be6e715b5f5e809f",
+    "after_sha256": "f698f42d92ff51be7e462fbc29429b47f4b7589658c72c2f220001cfbf8f4928"
+  },
+  {
+    "path": "computations/verification/quadratic_coboundary_noise.py",
+    "assertions": 20,
+    "reason": "assertion-dependent module",
+    "before_sha256": "afa23ebdf942791780d2b7b14cf09d83aa30017f8b6bb4692b6c8711d64e86ec",
+    "after_sha256": "71f9bf583f20481644efabb075b2b38306898ba3c812a51483f449e92c7cb928"
+  },
+  {
+    "path": "computations/verification/quadratic_noise_clock.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07",
+    "after_sha256": "6a8e2daf50bf3a80cf4c1a4c7b6ddb339d84d03c8087e544e384753ff580ad9a"
+  },
+  {
+    "path": "computations/verification/quadratic_noise_dynamics.py",
+    "assertions": 14,
+    "reason": "assertion-dependent module",
+    "before_sha256": "7dcb306694e52976ea4b67c4104a10f8848d934dac0ab75383745b4ec9ff96a7",
+    "after_sha256": "05143c9ce0e8c3fbd5fad38607cd48ca3d196f4b644a390fdc814e5dd64c9f59"
+  },
+  {
+    "path": "computations/verification/quantum_cyclic_module.py",
+    "assertions": 12,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04",
+    "after_sha256": "3cd36eced2b45f896ae90de918929140904b31df635f83b0f04afddfefe45c39"
+  },
+  {
+    "path": "computations/verification/quantum_phase_completion.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "26f2e951f5b77a55942ec24c2e6178a5b4a1b53806108dec2209aaecae6c28bc",
+    "after_sha256": "c28582fd61eb0a5efd5baff6e31391d5e280e9e8e2644b276e6d71cf6b9afaa7"
+  },
+  {
+    "path": "computations/verification/rare_phase_limit.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8d229515e82e50f8696c8743d0e5227b098b7197df46abe7eeb77f2988c85548",
+    "after_sha256": "906a7845d39a6b7698dd62e757f42b09820c6d443eb8da66810516bc9c0a6ad8"
+  },
+  {
+    "path": "computations/verification/rare_phase_testing.py",
+    "assertions": 19,
+    "reason": "assertion-dependent module",
+    "before_sha256": "703ec58e6465b97c2c291ca6b537473839a25c30babbc281ec998161d6bbcf00",
+    "after_sha256": "86870c68ed5a608c03e593b59466021b05cf8e7cfcc2f058bb27a3419b65411c"
+  },
+  {
+    "path": "computations/verification/resonance_hessian_obstruction.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "114c36402ddb1a5d75929990a4ff4491522e1f0418e665c1279bfc351b352c8c",
+    "after_sha256": "e7a775c90a25f5737a5172dfdcf40dc1ce2fbc20a000de0e96f26c8c468cfe7a"
+  },
+  {
+    "path": "computations/verification/resonance_pair_variance_regression.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "9dda92f0e78ec4a201d97a48462761b25b73221bc0a8716478d8084fe39f0678",
+    "after_sha256": "56da939251efa3b92849aa5b609e6be835e56f123f2b5509da4adb9f9cc7ceaf"
+  },
+  {
+    "path": "computations/verification/resonance_quantum_variance.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8152e6987d077b6ba0db3f230bc6eef961ccf9ed286f270e2aa43a7211f5b94c",
+    "after_sha256": "0d6b2e50cc7ed2767814390de1b61e8f157703e05f5b43ae79ef559fe54b8f37"
+  },
+  {
+    "path": "computations/verification/resonance_wiener_stability.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "72acd7ba8e3975863f62a876bba50edf30b75c4bbd309db58f1162d5c0a2f910",
+    "after_sha256": "531a43659adb7faaf870f567eb2e2f9e63fdd16d298710a7295e1316f3d349f3"
+  },
+  {
+    "path": "computations/verification/resonant_density_audit.py",
+    "assertions": 29,
+    "reason": "assertion-dependent module",
+    "before_sha256": "622d1c1b9e57f635dd41fed350815af1bcfca33a2ebdf17e8a016e6a9257570e",
+    "after_sha256": "0972b017a2cd27e8c12d51e3fe0a74ec54f80f1b63ae8275819c00d374b7ab37"
+  },
+  {
+    "path": "computations/verification/return_local_limits.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f8d0a8162f39658a3570efbc3970d804255dc2e2b0820463d1223810e53eafbb",
+    "after_sha256": "473421067ee8287a90c13ac40842ba224d4eb77112c01c44aca5ce9691cb1c18"
+  },
+  {
+    "path": "computations/verification/return_trace_obstruction.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "122fb17a191b8c7536251bf203df84728018ae909c57d4a70ecf703b571e5602",
+    "after_sha256": "b7519eedfe23ad79511ed5fcb1c1849557700ce5ae3a1625f6d6713aafaa2b08"
+  },
+  {
+    "path": "computations/verification/shell_instability.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3",
+    "after_sha256": "6bfbc1f822031958778ca9a41af54a7727e89e9b334ed47f11db244183e55fc7"
+  },
+  {
+    "path": "computations/verification/signed_heisenberg_audit.py",
+    "assertions": 22,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4734cca7713e3e8ebccc3e11c58b1e38b349796245a46902e6541e2f05988854",
+    "after_sha256": "6a5eeed18d05c74c7d22e56c877e74d024e6dea54e71b215247da40f517b29ca"
+  },
+  {
+    "path": "computations/verification/smooth_recurrence_and_compensation.py",
+    "assertions": 17,
+    "reason": "assertion-dependent module",
+    "before_sha256": "09d0af7d0f9b94e83d5a4005314a91bdb63b756b3d11b950fcfec8ce6025e4a8",
+    "after_sha256": "59a093622345cb2b069148f096c72f3096d2479cd6cfbc3e3a5d6a02a0c8d2b8"
+  },
+  {
+    "path": "computations/verification/spectral_diagnostics_contracts.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4ef53ac816648e2eb4a3c6fe0a34dfcf8e9e27ff34541bb42645f4cba0f4842d",
+    "after_sha256": "188ee2077edcac01ecc529b3ef58164d41b0013f5f5ad41e1206422524c7cec1"
+  },
+  {
+    "path": "computations/verification/spectral_lattice_clustering.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d088c49316825709bf67852ba1ec27d76286f1963fe402e04b63c3f535a7a930",
+    "after_sha256": "e19afcd295e287df6a8e673ff75685dbee42b64bea05233a5d2f0fb186aa31ec"
+  },
+  {
+    "path": "computations/verification/spectral_module_regression.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a5ff2f67b7d3a69b4115cc74fcda3838955de6ae00db31fd7c9cd4dff0385d72",
+    "after_sha256": "5a86e5b2c4ac5ab86ebfbd22a1de5499ddfd2ccc23c4c8a908d3e6467c093de9"
+  },
+  {
+    "path": "computations/verification/spectral_resolution.py",
+    "assertions": 13,
+    "reason": "assertion-dependent module",
+    "before_sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52",
+    "after_sha256": "d118a349d255ce71be034d21c2141e3d6754197bade7467fc075d1c050d292fb"
+  },
+  {
+    "path": "computations/verification/temporal_quantum_variance.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "946edc710c960c1a73fe5c0c4e8586c1948505b498dd60f148c160dff78e801a",
+    "after_sha256": "5bb33447d6b154500b8de574566151035f6717aa145c5989773fa509302689c1"
+  },
+  {
+    "path": "computations/verification/temporal_soft_modes.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "ce0fb05ed4416d0b98a9dde3380b1a98b57c823bba5029ed9914d62cadaf61fe",
+    "after_sha256": "4989a46427f9ad16089c22441e752ec3551b3478b877db7fbd5174008d888c88"
+  },
+  {
+    "path": "computations/verification/two_radius_rigidity.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a218a65eb5e4eb5508babfe323d44e08b94af8551cd35dd94f8ea443ea86826b",
+    "after_sha256": "3fbb580bdc19ab8abca4b2e1f88d704464d924caa2082e44c7e042afc268b79e"
+  },
+  {
+    "path": "computations/verification/wiener_resonance_audit.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "365376ef4c28780eaa69452061684330f0ada27f474390d3f931442e8a457678",
+    "after_sha256": "6fd7ca4da0a78316be8ceab3af91b680cdb1074b6a3d577d9abdde8ad29b899c"
+  },
+  {
+    "path": "supplement/fixed_map/algebraic-return/exact_coefficients.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
+    "after_sha256": "d57f6fe39118eb7fb95e3de70301c1bbcdf74ab7968a80d0595bcc5af1df2421"
+  },
+  {
+    "path": "supplement/fixed_map/algebraic-return/export_certificates.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "00fc3124c26c96444c856176d69da3e882c2e649de234505e05710cb92266c7f",
+    "after_sha256": "12499c280b46bb51cab922e4474368901a31215ef16a8e9f2b60d28fa0d74ee9"
+  },
+  {
+    "path": "supplement/fixed_map/algebraic-return/quantitative_bounds.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f4e0ad40cc8c1bf63e53f2580460598902746ba1ad1828ba45743b71f3a3e95e",
+    "after_sha256": "b25f354b1041eea3da6f62d7b857ae6c687c46467160b7539fc4874bf3a30ac1"
+  },
+  {
+    "path": "supplement/fixed_map/algebraic-return/simple_spectrum.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "224307655a9ca4de5a2fe0df23809c7cf9cc1792430f514a90cf28097bd3078b",
+    "after_sha256": "f0cb465a8d7b32a3d09d8f578b57ecc21498e48caf286c6b6b94b232244096c6"
+  },
+  {
+    "path": "supplement/fixed_map/algebraic-return/verify_cpp.py",
+    "assertions": 5,
+    "reason": "assertion-dependent module",
+    "before_sha256": "acd9b6ab646117b9d49c082e4874682d2e4b3c01b7328e146060cf6da3f28ebd",
+    "after_sha256": "90b01115e01f1f2951dad3255fb15a20793f0f2f7e811c6529014b2c3f0ed72d"
+  },
+  {
+    "path": "supplement/fixed_map/block-memory/verify.py",
+    "assertions": 44,
+    "reason": "assertion-dependent module",
+    "before_sha256": "3cd46442e4eaf12844d3aedcd7b9d898ba7b4a7f9e41322aa7e9ed7122136f80",
+    "after_sha256": "b2bf42d6aa66386a575d902cb4f527880c3d8010cef9f205c09598f336264fc2"
+  },
+  {
+    "path": "supplement/fixed_map/coherent-return/gap_identity.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "b5ce46d597e27f56bfbd5829a4f30e515e2816fe6d8ae87e1941b295b4ea5a67",
+    "after_sha256": "dde7b79b5a70f7476e1e007285ff369aeda6009dc67fea4b881637a52a38de6d"
+  },
+  {
+    "path": "supplement/fixed_map/coherent-return/return_memory.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8386e5bbee06699e9edf4543dfdbcc4d4a358798cf0554a0fce2dd0108aa91d5",
+    "after_sha256": "4116c89d81705a1b4693247b706c639727f3529c5af08aef12971aade6344fe4"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/all_dimensions.py",
+    "assertions": 2,
+    "reason": "assertion-dependent module",
+    "before_sha256": "5f7f0fb4ea841e137f3d76ac50d6ba289f3b4c98ec9c7d39121ded25dc7b14f5",
+    "after_sha256": "9ab2fd200bb053f9615b57ef767dc67d91edde737feb68913adf5777ef895d7f"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/design_return.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "cfebefbf4cfa557f0e3afe367cce0dcdcf29be844441254bebca9a5edddee98b",
+    "after_sha256": "c527f9238971f884f970255fdd7c0cc7940da428b768f9b06ee3e2c668f1432f"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/finite_symbol_normal_form.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "157903a4c943d8262444b2a1c56bcbaea89e322954316590bd4f0ea7509f666d",
+    "after_sha256": "a72b76653dc01d1faf42eded199c95b1e99dd2755e595b8d11c93235d04041a7"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/fixed_kick_bandwidth.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "779259081f57d36b3538f7099f32438d0747caa7c8280a14c28dc201c3177447",
+    "after_sha256": "e602fa675065f3221219f35f0deb0ca6f516a96d8471370d06639943d46f9191"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/frozen_crossover.py",
+    "assertions": 15,
+    "reason": "assertion-dependent module",
+    "before_sha256": "bccaf31e881f29e0ef2bff13fda73bab814f24473bf6b0c94836c2e3971cd99a",
+    "after_sha256": "b0148a221f6020a0ddfec15599aeb151261b0757f015254219198fe4b35d8aa2"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/frozen_matrix_check.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d17436d7d954e40e52f3ec475e0f8f2c204f37ee4f99bd1614450ddb93efcc8f",
+    "after_sha256": "7aaa5534e827c249d0b59361f2b1fe94209b2dba20d9a2df8264829a33c63e9f"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/frozen_sharp_return.py",
+    "assertions": 12,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
+    "after_sha256": "50a9cd0610505b383f6f685455ebf55f9519a1ff853f2a275045380ee471bc19"
+  },
+  {
+    "path": "supplement/fixed_map/design-return/sparse_orbit_checks.py",
+    "assertions": 11,
+    "reason": "assertion-dependent module",
+    "before_sha256": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
+    "after_sha256": "587356d1d1a89a33de96ab0ae484c582cc00190e2ade3a5c06dbe8ee6523b95a"
+  },
+  {
+    "path": "supplement/fixed_map/echo-research/probe.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "694391afc4f68f79032fa872221d17ee41a70abe6a582caba7edb129eddad0bd",
+    "after_sha256": "0b86e8f728c144a69bc657b5f8d3fd16b9440e0508404dcf32fe987a2c9cc0ba"
+  },
+  {
+    "path": "supplement/fixed_map/ergodic-transfer/finite_checks.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "f19739d9715140afe68f591fcf2c78e08573393817c66a94728a77e456bf003c",
+    "after_sha256": "9eb38f495c348bba2bc4c09e468c8215d973534454e0a943c5472d347c4f81ba"
+  },
+  {
+    "path": "supplement/fixed_map/fixed-map-audit/classical.py",
+    "assertions": 1,
+    "reason": "assertion-dependent module",
+    "before_sha256": "670a26a79259b515448a4620db025771fd41fa35fd38fb1741c13499783190fc",
+    "after_sha256": "fdac48da96adbaa3511a611c8a5d9a8494d7b9a5789974947fa83ee07bb64de2"
+  },
+  {
+    "path": "supplement/fixed_map/report-audit-20260919/cubic_variance.py",
+    "assertions": 10,
+    "reason": "assertion-dependent module",
+    "before_sha256": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
+    "after_sha256": "00184f15a2c5fcb6d9383869e5925b271efb12b55b88f464054f718a0bbeac6d"
+  },
+  {
+    "path": "supplement/fixed_map/report-audit-20260919/folded_spectrum_control.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "6a8e574c09f0df9c164be5661b129125108d3e04e5f1d70774bb9d2f60c26e10",
+    "after_sha256": "6db1a30b58fa6305d547f744adfe99038069175271657d899ed3834a89c7149d"
+  },
+  {
+    "path": "supplement/fixed_map/report-audit-20260919/independent_variance_review.py",
+    "assertions": 18,
+    "reason": "assertion-dependent module",
+    "before_sha256": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
+    "after_sha256": "6f4df515f36c8e69e34b174bcaf23905a4300a416aea79b48c4a4d5486ed44b3"
+  },
+  {
+    "path": "supplement/fixed_map/report-audit-20260919/monodromy_experiment.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "e2c7a0881c5f780b6770e99368e60b462fd3a69ae5f0ce89a073d21443fb0f06",
+    "after_sha256": "f175a6cc14118b9bd8ba635ad281035a9493d0a22921522e57c30051446b80ed"
+  },
+  {
+    "path": "supplement/fixed_map/report-audit-20260919/verify.py",
+    "assertions": 16,
+    "reason": "assertion-dependent module",
+    "before_sha256": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
+    "after_sha256": "a1ec10124f85fc2345ec7fb4f46302195209c128b2dd421a653d219e75b0ef95"
+  },
+  {
+    "path": "supplement/fixed_map/resolvent-flow/checks.py",
+    "assertions": 9,
+    "reason": "assertion-dependent module",
+    "before_sha256": "9c80a6021a1b36d4a72a853e0cd4f8fa648af00459f1b295b53267384f9a61c3",
+    "after_sha256": "d691eee9166517076d800defc61cfecec6eb5d4ebd058a199a03f34179d9621c"
+  },
+  {
+    "path": "supplement/fixed_map/resolvent-flow/low_order.py",
+    "assertions": 3,
+    "reason": "assertion-dependent module",
+    "before_sha256": "a84f30bd6aee32bb4fb4402c39446d26cdf5b173a28282071627acdb73285ab2",
+    "after_sha256": "0d0f912a1b4fae490b36671dbe7681b84e3a7c571852dd75f922167c6256c0f2"
+  },
+  {
+    "path": "supplement/fixed_map/secular-route/exact_structure_checks.py",
+    "assertions": 4,
+    "reason": "assertion-dependent module",
+    "before_sha256": "da38c8235b6c743a7f635c40e00cff36ffa85f5df48c61820b14ee346413b7c3",
+    "after_sha256": "62d09ef2b941803ce9f7621e9563c9b7286a040036f067b8881dc2997d97161d"
+  },
+  {
+    "path": "supplement/fixed_map/weighted-secular/center_checks.py",
+    "assertions": 7,
+    "reason": "assertion-dependent module",
+    "before_sha256": "560ef16e99ec9094b39448fb2938ad8120afe8ff48dbc0adfdf2172df3184ac9",
+    "after_sha256": "72ed4b524f412d97fb5e3613e773579d01acad291aeaf41ac6a372347d08a410"
+  },
+  {
+    "path": "supplement/fixed_map/weighted-secular/determinant_control.py",
+    "assertions": 6,
+    "reason": "assertion-dependent module",
+    "before_sha256": "84589d025d9e93f8eb890b1b31286ac30cc63f6a017d489e8ad1ed0a030c6eee",
+    "after_sha256": "562814551de137cf01db676a11245f3e375cba914f6b92b6412745db092713f8"
+  },
+  {
+    "path": "supplement/fixed_map/weighted-secular/jacobi_audit.py",
+    "assertions": 8,
+    "reason": "assertion-dependent module",
+    "before_sha256": "efb3240b4e26ff8a0484ba3fb388bec2e4a5f997279e273d4bd82cdb800f06bb",
+    "after_sha256": "41e1c8fd078607b3394819b7793fd3b95ae01811f65f687c1c7f512fb2e47de6"
+  },
+  {
+    "path": "supplement/fixed_map/weighted-secular/weighted_probe.py",
+    "assertions": 2,
+    "reason": "assertion-dependent module",
+    "before_sha256": "d88a1d86345148de4a4c594d18d321c2774da55e445f9075700197fd287eeea9",
+    "after_sha256": "c29d28128b5f0d4f5a1e5e57943378dad5711d6b0fc56b80be7f2fc08abf6e7a"
+  },
+  {
+    "path": "computations/maintenance/assertion_policy.py",
+    "reason": "maintained policy, regressions or documentation",
+    "before_sha256": null,
+    "after_sha256": "7c51195538b6e29cb7b781cc86ac15abf9f170946f5a3dc1e98d4ce60a7d4627"
+  },
+  {
+    "path": "computations/maintenance/tests/test_assertion_entry_policy.py",
+    "reason": "maintained policy, regressions or documentation",
+    "before_sha256": null,
+    "after_sha256": "83bfd2351a9d67e654588338eaf038387735ff2fa63ebdbfe31b1950630db300"
+  },
+  {
+    "path": "computations/maintenance/ASSERTION_POLICY.md",
+    "reason": "maintained policy, regressions or documentation",
+    "before_sha256": null,
+    "after_sha256": "f1bffd13f8ecdd18e5e78f26f417da24e01216feb3738d81eeb57d29d4039b10"
+  }
+]

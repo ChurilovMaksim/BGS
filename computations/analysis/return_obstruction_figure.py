@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Analytic pair and empty-component bounds, not simulated cat-map spectra."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'verification'))

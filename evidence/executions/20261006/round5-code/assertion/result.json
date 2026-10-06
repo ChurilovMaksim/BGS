@@ -1,0 +1,42 @@
+{
+  "protected_modules": 167,
+  "assertion_bearing_modules": 166,
+  "static_import_dependents": [
+    "computations/analysis/return_obstruction_figure.py"
+  ],
+  "changed_files": 170,
+  "categories": {
+    "computations/analysis": 4,
+    "computations/experiments": 3,
+    "computations/maintenance": 2,
+    "computations/verification": 127,
+    "supplement/fixed_map": 31
+  },
+  "normal_maintenance_tests": 27,
+  "optimized_maintenance_tests": 27,
+  "optimized_cli_and_runpy_checks": 1336,
+  "synthetic_false_predicate_checks": 835,
+  "actual_importlib_checks": 668,
+  "optimized_parent_focused_passed": 3,
+  "optimized_parent_focused_total": 3,
+  "manifest_sha256": "4630e7354b57aa617955b4a4ad02750351e2356459b563fc4983d58be8f39956",
+  "patch_sha256": "689cef6386d5a32dcb3fcc13d5f9199943ad93e8076846ec4f4105c60d34ea16",
+  "historical_evidence_unchanged": true,
+  "remote_writes": false,
+  "pre_review_full_aggregate": {
+    "receipt": "final-aggregate.json",
+    "passed": 163,
+    "total": 163,
+    "source_tree_unchanged": true
+  },
+  "pre_review_double_optimized_policy_tests": 6,
+  "review_fixes": [
+    "Repository-relative inventory exclusions",
+    "Package initializer and dotted-prefix conservative import closure"
+  ],
+  "review_receipts": [
+    "review-tests-normal.log",
+    "review-tests-optimized.log",
+    "review-focused.json"
+  ]
+}

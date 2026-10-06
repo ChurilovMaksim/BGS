@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Finite diagnostics for the time-insertion criterion, not asymptotic evidence."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 

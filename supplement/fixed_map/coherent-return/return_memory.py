@@ -2,6 +2,10 @@
 
 All computations live in ignored build/ until the main barrier is closed.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 from scipy.linalg import solve_discrete_lyapunov

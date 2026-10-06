@@ -4,6 +4,10 @@
 Floating-point regression only. The mathematical proof is in the canonical
 manuscript; no Heisenberg-scale or eigenphase-universality claim is made.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

@@ -3,6 +3,10 @@
 The periodic test matrices are NOT quantizations of the fixed Anosov map.
 No asymptotic gap claim is inferred from the finite data.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 

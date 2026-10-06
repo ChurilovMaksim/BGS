@@ -4,6 +4,10 @@ For odd N coprime to 7 the off-diagonal r factor has exactly one zero,
 so reordering and a phase gauge give an irreducible real Jacobi matrix.
 This certifies neither simplicity nor statistics of exp(i epsilon A) M.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 from math import gcd
 from pathlib import Path

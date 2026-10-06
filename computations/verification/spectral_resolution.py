@@ -6,6 +6,10 @@ negative control for insufficient abstract spectral assumptions, not a
 chaotic-map universality test. No files are written without --output.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as F
 from pathlib import Path

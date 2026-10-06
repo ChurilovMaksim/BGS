@@ -4,6 +4,10 @@ Random unitaries are algebraic test fixtures, not a proof about a fixed map.
 Cat fixtures deliberately include large eigenspace degeneracies. Exact
 counterexamples distinguish needed assumptions from purely numerical fit.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 from pathlib import Path
 import sys

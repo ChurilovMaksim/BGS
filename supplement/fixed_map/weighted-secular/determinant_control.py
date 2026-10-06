@@ -3,6 +3,10 @@
 The counterexample is an abstract deleted clock, not the frozen Anosov
 quantization. Polynomial identities use integer/rational arithmetic.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction
 from itertools import combinations
 import json

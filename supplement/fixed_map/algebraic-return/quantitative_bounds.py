@@ -1,4 +1,8 @@
 """Exact conservative gap exponents; no evaluation of tiny floating gaps."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction as F
 import json
 from math import isqrt

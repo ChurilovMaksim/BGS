@@ -3,6 +3,10 @@
 No giant quantum matrix is constructed. The certificate checks the
 arithmetic period and inequalities used in the accompanying proof.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction as F
 from decimal import Decimal, localcontext
 import json

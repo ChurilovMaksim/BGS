@@ -12,6 +12,10 @@ The finite checks are regression only; the theorem is proved in the note.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import sympy as sp
 
 from cayley_product_row_real_trace_ideal import TAU, T, trace_cofactor_pair

@@ -6,6 +6,10 @@ The large fixed-tau example is checked with Fraction, without a large matrix.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 from decimal import Decimal, localcontext
 from fractions import Fraction as Q

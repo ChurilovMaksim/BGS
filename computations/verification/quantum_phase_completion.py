@@ -6,6 +6,10 @@ commutator by its nonzero real sine factor. No floating-point phase is used in
 these structural tests. Dense Weyl matrix checks are reported separately.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from collections import defaultdict
 import hashlib

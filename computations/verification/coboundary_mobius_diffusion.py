@@ -6,6 +6,10 @@ contractions at N=2..5; independent nonlinear-projection Hessians at N=4,5,7,9.
 No stochastic-limit simulation, BGS experiment or asymptotic certificate.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from collections import defaultdict
 from fractions import Fraction as F

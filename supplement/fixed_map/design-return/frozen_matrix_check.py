@@ -3,6 +3,10 @@
 Epsilon here is a test parameter, not 10^-80*N. The actual giant-N results
 are rational certificates in frozen_sharp_return.py, not matrix simulations.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 from frozen_sharp_return import coefficients

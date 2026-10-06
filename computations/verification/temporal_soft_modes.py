@@ -4,6 +4,10 @@
 The rate is proved analytically in temporal_resonance.tex. Plotted Rayleigh
 quotients are upper bounds on the smallest eigenvalue, not fitted eigenvalues.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction
 import hashlib

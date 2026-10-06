@@ -1,0 +1,173 @@
+{
+  "normalization": "Local machine paths replaced with role placeholders. Raw hashes identify originals; public hashes identify delivered receipts. Null archive provenance preserved.",
+  "files": [
+    {
+      "raw_name": "bgs_round5_merged_archive.json",
+      "public_path": "archive-manifest.json",
+      "raw_sha256": "90087cac832eef3a6e521b1e79b9600958d850f1c973e26ae4611c04a580b5d2",
+      "public_sha256": "90087cac832eef3a6e521b1e79b9600958d850f1c973e26ae4611c04a580b5d2",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "changed_files.json",
+      "public_path": "assertion/changed_files.json",
+      "raw_sha256": "4630e7354b57aa617955b4a4ad02750351e2356459b563fc4983d58be8f39956",
+      "public_sha256": "4630e7354b57aa617955b4a4ad02750351e2356459b563fc4983d58be8f39956",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "policy-tests-double-optimized.log",
+      "public_path": "assertion/policy-tests-double-optimized.log",
+      "raw_sha256": "e0e678931b5d6eddb7e7cd9613df51ed57aff1eba8c43e552c515d25ef89e5f6",
+      "public_sha256": "e0e678931b5d6eddb7e7cd9613df51ed57aff1eba8c43e552c515d25ef89e5f6",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "reproduction.json",
+      "public_path": "assertion/reproduction.json",
+      "raw_sha256": "051cc3b399f9c2ae7d916d8e266715cf504a5931c37ef38515ceb48d1fabbbec",
+      "public_sha256": "b577902e81b30b3f9b496cd2a98847d321eefcf0371654ad5b8fc077ec8fdf23",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "result.json",
+      "public_path": "assertion/result.json",
+      "raw_sha256": "2f15937e1d664d6f7ad3ada311279a72bab33e3d3c1e0acbce8aeda00fffe966",
+      "public_sha256": "2f15937e1d664d6f7ad3ada311279a72bab33e3d3c1e0acbce8aeda00fffe966",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "review-tests-normal.log",
+      "public_path": "assertion/review-tests-normal.log",
+      "raw_sha256": "663d4501728c9d9813ade88d92323cf766620c43a18b0c8090e06db1a2ddc135",
+      "public_sha256": "663d4501728c9d9813ade88d92323cf766620c43a18b0c8090e06db1a2ddc135",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "review-tests-optimized.log",
+      "public_path": "assertion/review-tests-optimized.log",
+      "raw_sha256": "af8f7e2d651bab1d759c01dbb8d33d883184d8b469ec3449cf6f010e83b93d96",
+      "public_sha256": "af8f7e2d651bab1d759c01dbb8d33d883184d8b469ec3449cf6f010e83b93d96",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "before.json",
+      "public_path": "spectral_edge/before.json",
+      "raw_sha256": "5ce9a56342786002c5d4bf45d11f60fe0241525c01cb78c91c0f9f94c86aa8b6",
+      "public_sha256": "5e3954a0163a7669c62f2d6a562ff014ced638306e5db508d385712d242cf18c",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "evidence_impact.json",
+      "public_path": "spectral_edge/evidence_impact.json",
+      "raw_sha256": "b84014e4baedf050184ef79cc444ab390424458e1c5de27a1141762f41a8b456",
+      "public_sha256": "968e5ff43bf2266652eaf7f5937e2f5cf4d7692b9ff75a3f4d6c7179106f80c6",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "mutation_controls.json",
+      "public_path": "spectral_edge/mutation_controls.json",
+      "raw_sha256": "9515f9e513c991f611b57c61f7baa08429b8dbbe3a78b3adb8c03e174e3ba18c",
+      "public_sha256": "9f8835e89c254bfeb9e6cadc6ecf72e885e8efc35e1e8b4f57e7f5136ed04427",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "receipt.json",
+      "public_path": "spectral_edge/receipt.json",
+      "raw_sha256": "18f58c94b049cda8e0bff1f31de77b566da70ec917911cb451f23672385395cd",
+      "public_sha256": "03d2745a2ec142558cf81e8f749b1a1d3ccccfe793f2925b5cec05cf151034ae",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "test_0.log",
+      "public_path": "spectral_edge/test_0.log",
+      "raw_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "public_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "test_1.log",
+      "public_path": "spectral_edge/test_1.log",
+      "raw_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "public_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "test_2.log",
+      "public_path": "spectral_edge/test_2.log",
+      "raw_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "public_sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "baseline.txt",
+      "public_path": "subgroup/baseline.txt",
+      "raw_sha256": "2524ca0da75578bc7aaa3ecfd32e40d5ddb2453648f2f3a49e31dd531c1f90ec",
+      "public_sha256": "2524ca0da75578bc7aaa3ecfd32e40d5ddb2453648f2f3a49e31dd531c1f90ec",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "existing_regression.log",
+      "public_path": "subgroup/existing_regression.log",
+      "raw_sha256": "b49fdb3c3718b6bd6a008552cc2f676c54b40a6ee7466c146ee687a06c9e5892",
+      "public_sha256": "b49fdb3c3718b6bd6a008552cc2f676c54b40a6ee7466c146ee687a06c9e5892",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "tests_O.log",
+      "public_path": "subgroup/tests_O.log",
+      "raw_sha256": "ee5224f29f529ff220bd8352c94aa552ea61b50e7e3bbe5af08e14b301359a17",
+      "public_sha256": "ee5224f29f529ff220bd8352c94aa552ea61b50e7e3bbe5af08e14b301359a17",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "tests_OO.log",
+      "public_path": "subgroup/tests_OO.log",
+      "raw_sha256": "a31139d26225ba550abfd8f7f8aa577c29cba4af3f372b00c8f12389d0271686",
+      "public_sha256": "a31139d26225ba550abfd8f7f8aa577c29cba4af3f372b00c8f12389d0271686",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "tests_normal.log",
+      "public_path": "subgroup/tests_normal.log",
+      "raw_sha256": "b1827c20997e7d586eb5833cfc0ce660ece9e65820f19f6cacef58171f624a3d",
+      "public_sha256": "b1827c20997e7d586eb5833cfc0ce660ece9e65820f19f6cacef58171f624a3d",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "bgs_round5_integrated_units.log",
+      "public_path": "units-normal.log",
+      "raw_sha256": "e5ac24afb4f3b3ec6e538bd72b96ebbf5bef98fa785ebf59bad52e00bbeccbe9",
+      "public_sha256": "e5ac24afb4f3b3ec6e538bd72b96ebbf5bef98fa785ebf59bad52e00bbeccbe9",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "bgs_round5_integrated_units_optimized.log",
+      "public_path": "units-optimized.log",
+      "raw_sha256": "83bad9c3b015b855f023aad0a21113461a6f82b93941645bf3aa86a23d4e44b7",
+      "public_sha256": "83bad9c3b015b855f023aad0a21113461a6f82b93941645bf3aa86a23d4e44b7",
+      "transformation": "Local path placeholders; JSON reserialized where applicable"
+    },
+    {
+      "raw_name": "bgs_round5_merged_workspace.json",
+      "public_path": "workspace.json",
+      "raw_sha256": "03c17e3d65915e402c3cb995d6b7d6a18ed894add1c5ddb40c4e54be6116ac1d",
+      "public_sha256": "b214e3fca78ac09277a56311b1e06dcdd1c96d055fbcf79052e286aae6b69794",
+      "transformation": "Local path placeholders and JSON serialization; workspace source_manifest replaced by archive-manifest.json reference"
+    },
+    {
+      "raw_name": "supplement-audit/verification.json",
+      "public_path": "supplement-audit.json",
+      "raw_sha256": "26d7395b6221ae1b4a00b76aa4c552c11896a1a36ea233c0c5b370742672a911",
+      "public_sha256": "26d7395b6221ae1b4a00b76aa4c552c11896a1a36ea233c0c5b370742672a911",
+      "transformation": "JSON serialization; source and raw execution-log hashes retained; raw logs are not duplicated in this compact package"
+    },
+    {
+      "raw_name": "supplement-replay/verification.json",
+      "public_path": "supplement-replay.json",
+      "raw_sha256": "a128973dd31771f91e566c0eea4cb24014b47764f1601a4cd59589c3ab2dd48f",
+      "public_sha256": "a128973dd31771f91e566c0eea4cb24014b47764f1601a4cd59589c3ab2dd48f",
+      "transformation": "JSON serialization; source and raw execution-log hashes retained; raw logs are not duplicated in this compact package"
+    }
+  ]
+}

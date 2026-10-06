@@ -5,6 +5,10 @@ PYTHONPATH=../dependencies/python OPENBLAS_NUM_THREADS=1 python build/report-aud
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 from collections import defaultdict
 from fractions import Fraction
 from functools import lru_cache

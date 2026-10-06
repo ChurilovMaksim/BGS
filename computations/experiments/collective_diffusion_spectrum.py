@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Bounded float64 diagnostics for FM-019, not certified spectral bounds."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse, json, time
 from pathlib import Path
 import numpy as np

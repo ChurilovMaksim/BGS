@@ -1,0 +1,1175 @@
+{
+  "base_commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+  "method": "Remove the single added module-level if not __debug__: raise guard and compare Python ASTs with attributes excluded. Comments and formatting are outside AST equivalence. Normal execution only; optimized entry intentionally changes.",
+  "files": [
+    {
+      "path": "computations/analysis/cayley_trace_limit_figure.py",
+      "base_sha256": "e8d0783cbbb10a3ab62469cf8ea101303e169998c532d585ef78d57f2012f6b1",
+      "current_sha256": "5f64a31a1da603e5e1c2446857bb01dedf41b360c4487c930978a76f93311910",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "4779daad22e6648575bcf3cc98515215de9c8e4b1acb5fd12c49c53646fc7436"
+    },
+    {
+      "path": "computations/analysis/magnetic_spectrum_figure.py",
+      "base_sha256": "569904b247e4b729556c5cc1df5b5fe1d1fd56fac1f10d295d28582eb17cd430",
+      "current_sha256": "6ce5b362bb6a5c6b8ce7c5b5e9d17e225175e9cfa3375047cb243e154f7b4861",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "1bedffabc51364e294e96e70c7c7de9b0b2d025c2e050419f5149b0e35a9155c"
+    },
+    {
+      "path": "computations/analysis/pell_harmonic_transition_figure.py",
+      "base_sha256": "fc8278fecee32509f0b5d2ac4ab2ad0339489e134b92e32da65b59f28c944574",
+      "current_sha256": "a60972388ada05887492b9da08046bcf6a22476c0fe984c73c513d27401e4dcf",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ea75516047ca3dd3e0a0159d26e00506cf3c427c77c97d3cdfb9f8e87f881abd"
+    },
+    {
+      "path": "computations/analysis/return_obstruction_figure.py",
+      "base_sha256": "6c5cb47744d66021a79f3c9473842cd8d1b279087988000547b6a5819204bc9d",
+      "current_sha256": "c34398c8fbc4a18ef7ccf5de0347e0477ff882c7fc23508680253e67b1dc57b0",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e1af3948a017eea314c4b35bba18572c69975c5cfffbee6926f0a98c35edc7f4"
+    },
+    {
+      "path": "computations/experiments/collective_diffusion_spectrum.py",
+      "base_sha256": "be4f4eac7350d978c18e931a4419ab895c8e35122ee32d39d93d3f0d3bfa2601",
+      "current_sha256": "5396778c1f217d2034a6ce3131dab9a9fd6fab79b76c323437baf26cd837a46e",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6f495f83ff8dc5a8581ad1c08453c76d205187396d84c8628e061401d0e4ee73"
+    },
+    {
+      "path": "computations/experiments/fixed_model_period_three_independent.py",
+      "base_sha256": "b89e3be0b9693c796c446e8ec3ae0306e0159d9840fb8bc0e71eb23f8dd851de",
+      "current_sha256": "10784b7e306b0007d24bb426a98a03a17b9f91e8c95a0a3a03f0d23e0de44112",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "dd609b9a503a55d5773db30e0cfb0992268f459cdd0624851db7c5731662d619"
+    },
+    {
+      "path": "computations/experiments/original_channel_gap_independent.py",
+      "base_sha256": "67386f8b3d741fafc9b4536062dda68734d403aa90aa51336e5956495ebebe4e",
+      "current_sha256": "a120979bd0468697a0efeea350ffc6a994e40f292e3f3168f6744bb952429759",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "b6337217ecabc9a8475717b0685dc85e1feda3395e7f9a14097352b16064fc35"
+    },
+    {
+      "path": "computations/maintenance/summarize_rigidity_checks.py",
+      "base_sha256": "e953a74c1a6a381b236b49ef027c1791a9fae62c6f4d937cd7d2557993fbc88f",
+      "current_sha256": "21280138db9a826e0288c7158180592619772b5e923d14596f08c05bebc3d838",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a38e9994eff0f61acf00ce8484452b2df28d2ec1bcd13a331a7d9ec17494b38a"
+    },
+    {
+      "path": "computations/maintenance/verify_fixed_map_supplement.py",
+      "base_sha256": "d1f98edebb11596fc66cc94b53081fe168ee29a0947ad035c666082cf6812ac5",
+      "current_sha256": "3d9d7b595945ff439452b7dbfd287a89c0a1e60cc833702b9a50cf8e13ff9d14",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "f711e75c5a151d9185db7702b48611a1542dea03b740de73885e618e41b52a58"
+    },
+    {
+      "path": "computations/verification/analytic_coboundary.py",
+      "base_sha256": "d8ca959730c21b52c7380635772be365fc14517f1f83fc6c5505d6e34628e94f",
+      "current_sha256": "36bbfafc0ef8780294c49392dc5a26a7618d7cfddc0dd6bd8410000de0bc0615",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6978d103c966e07819cc768dc1e919c5316feaca96c966595171cfe6931cfe94"
+    },
+    {
+      "path": "computations/verification/analytic_kick_return_gas.py",
+      "base_sha256": "9864c2ae144b8628bd78f530ee2b164443d29b8dae9275f39fb5936e9f262a27",
+      "current_sha256": "a9b0e4d1150fa377bb43fce59e24296d743b8bb5a1531bd6f9fac8bb7adeec1d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "55ab0067bb087080933fea5cbc3215358946e8891a6a679b353c549fb2d0b818"
+    },
+    {
+      "path": "computations/verification/balanced_weyl_gaps.py",
+      "base_sha256": "e0931db6a9b6f096a05edb7985c2dd05cefa5beed51787ded08f9b005853c8b9",
+      "current_sha256": "8ba49d7afafed26186cb0f3603f63c31a4fe265da4566c0f0c79f3a0c094867a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "972a5b699b7c7e65fe268b4e86a1fb8c5cb991ef9a9b35135c06c1e695f15efa"
+    },
+    {
+      "path": "computations/verification/bgs_20260921_regression.py",
+      "base_sha256": "97920e6234596667767f56de4d84e32ccc3801eed9db510689360738a1ecc611",
+      "current_sha256": "c70bff51b3439a26bcbd4c0e7ec5e10b0492cb5225d6946d9bd520fafa0c66cd",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3e3dba8c021515107dc3ad23a3d51f81a195336a89bf72596da18c99bd0fd30a"
+    },
+    {
+      "path": "computations/verification/bibliographic_metadata_audit.py",
+      "base_sha256": "55ba180abbbf17b3c60742a0d9937f172d659b7d0a40a6fb84681c0d1371a0a9",
+      "current_sha256": "89d1937f7db6cefbf6477910384f6287d7548d8425c3a22c2b88a22ccfadee5a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ccb6ff33ad908c49e602549a2ba53362d80db5807e4da57ee9c7f62997dedddc"
+    },
+    {
+      "path": "computations/verification/cayley_curve_uniform.py",
+      "base_sha256": "d9799af9d770d769b3d1e716ea465e1fdac995093d6435df14d4d80be3b3bf1c",
+      "current_sha256": "9c627baae4b5268a05d800b16f79e4c412d00e14cdfa7cf576a4c259e6c0fdae",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ee64e5662d08bdbfe182fbdcb3114246485c0c05e152a290e20120237e1f965b"
+    },
+    {
+      "path": "computations/verification/cayley_difference_discriminant.py",
+      "base_sha256": "e98dc59fca58677c0a642bccfdc373c1dce9c5fda0204e2ba4a148ec0520e43e",
+      "current_sha256": "dfaa0d708664b0bc98c0d084e846a2e1ab85c947127eca0dd9e01b0a1f311983",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "b91cc46c62d09761a62fc4c08846b966151e8afa17cf2d969d584586979e7e08"
+    },
+    {
+      "path": "computations/verification/cayley_fourier_hybrid.py",
+      "base_sha256": "1316f125c8a55dca1c265c33f19d84d6e93bbee1be35a2e3953689da164c6999",
+      "current_sha256": "cac741b1405dbdb15c268c4402ad21f357403b39d4e04ad36b293d7c23d35d8f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e0d4ae681e5ee94411756d4112cb1a628f17b28663b6c14a52fce5285d71c51e"
+    },
+    {
+      "path": "computations/verification/cayley_frobenius_extension.py",
+      "base_sha256": "bdc2a450f11620a6835e46992ec85616441278e8740affe6c07e52e6e3244dd6",
+      "current_sha256": "fd6235af81f19d241ad174c2b2757c789417f26e6376d0069e95b84d74bfe547",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "16388cb1ed79a792582a93d409a90f20c90c6f3eaa9f9e078e518cb2fb951785"
+    },
+    {
+      "path": "computations/verification/cayley_higher_moments.py",
+      "base_sha256": "8495ace32bc4141b5dbb07658561230e9ea0ba7360dbcdd069bfbfbfff85386e",
+      "current_sha256": "83bac8b5d4125ab8109d9a9dd249ff819ab05eefa081605aa75f8f2806429ce7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ce44a6c480beea2a68e54c79eed379f49618469097995565e73881ebd7ca3f9a"
+    },
+    {
+      "path": "computations/verification/cayley_inverse_pair_sum_factorization.py",
+      "base_sha256": "edd62ada680376459ae449cfe9031c3cafd5f63bc10f4640f6ef2e92de1355c7",
+      "current_sha256": "b22e86124d57a731237a3bfdfaed8d7f882b540419944eb7736bd67120536a9e",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6dd43ce4609d6520f828905ec51fb15f15e63fc2a2444be4516341f676e6f0b8"
+    },
+    {
+      "path": "computations/verification/cayley_inverse_resultant_transversality.py",
+      "base_sha256": "a85b4ab66e83fcfd8554e5cdec47d76c29da21524066961d768cdc0e2ffad04b",
+      "current_sha256": "4177708bce71df1ab3913acae88c93883b3a5e02a3d1ca752e361ce98e98466d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "94473bf95bc399a81109cfffaf023cd4107f290e3f9809cab34b4340d2bb947a"
+    },
+    {
+      "path": "computations/verification/cayley_principal_subresultant_support.py",
+      "base_sha256": "cf40930302280d7af454472fc2e8dd0f77ceb0e1394b7fa6593e6ce988152f6d",
+      "current_sha256": "b2460f7211162179484e7a2c7ea879baf47bfa6bd0c1cb75a5d56a75488ba812",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "701c7d4a41fcc8f31b7f07ea3a0784b042ff57af9f1515b45cf1df80cf5321ee"
+    },
+    {
+      "path": "computations/verification/cayley_product_discriminant.py",
+      "base_sha256": "76d24c8189052a920807d7d389803dd5658f919de9543d3750e5e9db47f0a863",
+      "current_sha256": "7a0e103cf00e2521aa498aeb1603f32c7ab6e94f41c9559c88f3926afbe61062",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3665488857c345d60ab1c8270d4b429e83f8d74df890da032c6acee000a19db9"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_coefficient_ideal.py",
+      "base_sha256": "8df5b6c0e2a80e3ccf6e65adee835b585a796eb35fca46e8bc79e917f8c9796b",
+      "current_sha256": "fba6a3d4aa4a193cd7aa7fbf162fd14955ce7e94c9d89c99359f442a306441c0",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "8c935ccdc2943ea9e2b4fa1b3174ab6e8a7ea9bed1ec8f53bc8e2db78a83d526"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_intersections.py",
+      "base_sha256": "d921be96c194bfea2bec08d55c70ce1bc28537d397c4c0ba2513dc7d9efcfe75",
+      "current_sha256": "752087fff15ba0eef67a4141a3420a97b8617c6fded034f4ab3c5284a99d71ce",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9df10bd4a9710bf8333e1cf59453fb87153de70f48a6b00862bdd7f8afbae01e"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_projective_bezout.py",
+      "base_sha256": "e5acf1bfcb7b798748eb60c5967f887ef3622b327a216e02bad53ee1897cef3f",
+      "current_sha256": "7b120c2a77503b5bb1b4fbd1faae3a0e0a159709dc41d683e20f9492d0465a75",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "fde42c78481e824c6126e6f2a52b60e28fda03ae252aa4b3cdb805ad85888ceb"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_real_trace_ideal.py",
+      "base_sha256": "8dfff4a2a53b9025da50daf4ded3dbcd08e64862a8e413699b8084e61a0e2872",
+      "current_sha256": "ba13ab1c5d0a0bfb0ff49b65a7a2aa395b16a69dd45b55c0c515b624eb3491ed",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "c65090b7c67a43e1956cfdcf749ed758bf475e3e3d793a4aceae09e9c777e84b"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_reflection.py",
+      "base_sha256": "7a476b013d45f5a301c7fa1e897c6ead699ce2cae4b9dfcfc8f8a77bcce5ee3f",
+      "current_sha256": "b39177f7370c272485518f18d98cb2322f505b018dbc9081f420d07a3ff5b865",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "48e9e727ddd181f015575c0da169d4a043c763d8668233c131753bdd764770c8"
+    },
+    {
+      "path": "computations/verification/cayley_product_row_subresultants.py",
+      "base_sha256": "4c6fc27d7e16fef017ef57c7462b22ca179d2cd70d880052eefa4ced557c26e9",
+      "current_sha256": "5be6e6a2e2ae7936f99df218420960113d9b6254bc3ad93088920243ab37c520",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "dab4737a762967090c480141a2105df6818f3a39cab35639a5a28451879b9295"
+    },
+    {
+      "path": "computations/verification/cayley_product_rows.py",
+      "base_sha256": "e88604d32b2061d8a96748705e050e032ebca6ceb3efdce12f135d19645a3d3c",
+      "current_sha256": "3aa719460d076e044c25640f55259d68e2469abc26e34aa57581122e1fb47693",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5cea4634077c304d3af117d8ab4c246a756a3557821abba5fb055720785f849b"
+    },
+    {
+      "path": "computations/verification/cayley_ratio_orbit_factorization.py",
+      "base_sha256": "3c0fe6b0e4a36679017cc11f646a4c246b562af0135b384f4e67f5963810f469",
+      "current_sha256": "32b5d846264639ac1cd4bf94b5d12a1185db56d746a8bbef4205b5a763c143d8",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3c4a92b936513e5234cbca6ab30edacac359cd329c9c11b88e8d05bd38b738c0"
+    },
+    {
+      "path": "computations/verification/cayley_scaling_rigidity.py",
+      "base_sha256": "39d4456c81bb35c0dcbfbae6b9623c8f0a7819eb247d07573c1301ec8d62d687",
+      "current_sha256": "7963a62f68d31de6ef1a8a18ddfe0f6437149166a599729b2b7333221d4fcf17",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "8b4ca59831396279d7b1b8aa43c21d9677f394fef5680e1b5a12504d9ca42d20"
+    },
+    {
+      "path": "computations/verification/cayley_shift_psc_transversality.py",
+      "base_sha256": "107aff0534f04f05dbe23e6560e8bcfe31657ec9b756a08c1fae286fa53e5293",
+      "current_sha256": "b53d8932130f9f53fc09b68d2f2beda5d012c9e4d856f96168f4a8e65ce970db",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6c0793f0d4ce2e6439fd6ee2b7c7ca45635cc2fcd1da0a610ef901f6d2a4fec8"
+    },
+    {
+      "path": "computations/verification/cayley_shifted_energy_orbits.py",
+      "base_sha256": "3a1fe1b8838209eeeaed57e9732e8bbf493a746cea3e8f917a57162de46e881f",
+      "current_sha256": "e625f183d5f532b746e38f4a432987513339cda104d23c9d3ae60a632ed382c0",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9d8601deee17468ed1f2300e4fad3259a1d6ad357e344515b6e10dc97243b6f4"
+    },
+    {
+      "path": "computations/verification/cayley_sylvester_fitting_support.py",
+      "base_sha256": "4ec2df3d0ad79d8b38fa7e0b9d644dc3284630d46db169473ca2996d88c557bd",
+      "current_sha256": "ead1d4920fb2fb91550dd20b4fa0909e4d542f0c58c9e5cd0fd553a67d96f595",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "80ba094445eb061c0edf58052999f7d31da25e68bfc56277b608984102997ab6"
+    },
+    {
+      "path": "computations/verification/cayley_trace_intercept_shift_resultant.py",
+      "base_sha256": "d28628d32e0bda6a176f743789c08863037a1dcf29a858017c18946300f06d18",
+      "current_sha256": "7147192098c21eaf1e59d5fe17f16dd269c82a02af078e32eadf09b6cfc19911",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "c9f6636d88f744df967c3c664012c70b4cf5fbf037b8c8b3eed68cec2570c34f"
+    },
+    {
+      "path": "computations/verification/cdf_sup_regression.py",
+      "base_sha256": "4bc83efb6381d68b02bfbf774d7f97cecc453a3b8ab98089f217dd457e6eb6b0",
+      "current_sha256": "f8260fec10684c6c5ff56cb73b80907e88b950cc48f113b6d48ac78d52fd8e46",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "72d59c993bffec328b6c9ad86be28319a0bfeb633c02dfe5b89e43876c8d11b1"
+    },
+    {
+      "path": "computations/verification/circular_dyson_relaxation.py",
+      "base_sha256": "78a1f03f4c763cfaeb577951866104b620896f3c3913ccb8b865f3ac471abab9",
+      "current_sha256": "b49126356bd47e51cd6c955e7e3a61517b54c123c8f953819bcf23d2686b9ab2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "1cf8131a18acbfb1a847fd4194350b0eba58d55ecd29a41a1cb493698dedee6c"
+    },
+    {
+      "path": "computations/verification/clock_structure_and_heat_projection.py",
+      "base_sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+      "current_sha256": "aabfcedbe68743e0343b4070567f2ef638e78507201870e204429dabb74547b1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "747cade66a4c93103ea4df94f5a689b3f2aa1d138e37ae27081c10adb8eaeb73"
+    },
+    {
+      "path": "computations/verification/coboundary_flow.py",
+      "base_sha256": "3bd3ff9bbe02c0d4959e110f0eed3f6fccb62181b8118168d1c2f89a41897e33",
+      "current_sha256": "6b63892a18393aea84b1460f0887f93574e365db611bcd707cb008d8409bd20e",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0640e2a1fc921b552d6da74ca00262505b583ec4e2bf81e78ab722722e27030c"
+    },
+    {
+      "path": "computations/verification/coboundary_general_start.py",
+      "base_sha256": "8cc0d85907388d8c5f35a8e2fd2783b3ccc98fa6c39c33c9050c41bcaa99a4a7",
+      "current_sha256": "29aaa274728c77c972fbe24589ad382a4c9395d7ac43189049d908b3bb6dfe97",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "05931966acb5ef999ea010d49e79d04d9573585edf6c846286b1532d373fda71"
+    },
+    {
+      "path": "computations/verification/coboundary_joint_limit.py",
+      "base_sha256": "682cac6863baee3c68bffb50fe4c03086bd3fd434eb9406065dd68f478aec355",
+      "current_sha256": "9876b4e3e089d749a51bd304a67f228ce25060d11da3403b4ccf1fa6c2c35d3d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "01258ddcff61f3b3abe4dddbe5d2cb5f5107a6827f4fbe0bf389a221732081d2"
+    },
+    {
+      "path": "computations/verification/coboundary_mobius_diffusion.py",
+      "base_sha256": "369a25d7cf7a5fa1a73cfa81e4e9bb96e746fba963c1005444e9f24d3f0801a6",
+      "current_sha256": "64c7635570fa3a51dc6511ae161d220f7896f9375f57b7de443e8d8f67495efe",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d3fe56bf2843064607ef5492512787611003d35125f45aa1bff8e32e83b85aba"
+    },
+    {
+      "path": "computations/verification/coboundary_polynomial_limit.py",
+      "base_sha256": "2f32cf50259ec7f4b8469df39fb128664fb992538353862f357ce1894ca23ff7",
+      "current_sha256": "683d5429bd94fa74a5c8167ea737da9efcf227e8c33de1efb7073c2416d8d75d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a0daf5c025e58e77e828abaa41475d51ba4e302970d9fe26c1b7c41a0c4dad12"
+    },
+    {
+      "path": "computations/verification/coherent_aperture_minimax.py",
+      "base_sha256": "7ff32deadfc75119056b264222dd2675ad227bcfc9e9e113e9f13acb72896a66",
+      "current_sha256": "b89af730ed8051d77bd7ea1b70cdc82492b55c164a706168a675ebae87beae42",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "1dde7e86e9cc6063d22fb7033d8c3e5db4984c8f4a39b9516feb700682a3b14a"
+    },
+    {
+      "path": "computations/verification/collective_diffusion_gap.py",
+      "base_sha256": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+      "current_sha256": "9901ae063687a592eb56b5bd2daa54f08c4e74f80a09b84d0d7f651f3bc91822",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "fc7acfbe5b3e6cf45e83a1c2a603b4ae59b3c529ddc09199562002975c269bf6"
+    },
+    {
+      "path": "computations/verification/compensated_trace_window.py",
+      "base_sha256": "918313d23f6bb33574e3c54e0641159f1cef90deda4ec0114bf327dc4351d380",
+      "current_sha256": "1e4459cedcabc7b8acdcdde67f9837b5a6d2e84bbf369c036afba289cb7bf8f1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "67a60dadd9de648afd8c3ea4d8737f7e3f25f63825b58e5aa2efc073996c159f"
+    },
+    {
+      "path": "computations/verification/correlation_extension.py",
+      "base_sha256": "cd4a76a303f3ff2877e2b944393185d37053c110add7c6ba8c4cd29e4605b6db",
+      "current_sha256": "147c6d59ae97b81d426cb49bd9536703cdd7398187d317784af6f5d3e5e13beb",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9c124f12645b7dc2760705edfe0148ea57d3383c7426669bc1d883c6fb92b66f"
+    },
+    {
+      "path": "computations/verification/cue_singular_energy.py",
+      "base_sha256": "08925399407d452a0926f5cbfb00ea7453279f7ecc8e4e7ce5b00c76b6cb5414",
+      "current_sha256": "925c79f0c4ad81a1d9967adc1348d51af3e7c2989e4eebd9c44e928523e9d432",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "703927cfe3d429ae08455266a4551a328c70e8c1eac725508e5dd924b49f95b0"
+    },
+    {
+      "path": "computations/verification/cue_upload_audit.py",
+      "base_sha256": "74127c3c852d848942fcedac13afb5ac0713f812a910e132d7fa68c2e7710292",
+      "current_sha256": "c89cb5128321a08a5c606cad5c4e484a794f87972048fe127e38759549ebd338",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e533b88a473b8b1e1044011fba6ad739022bf303fac764ec2076b5ae8f905fd5"
+    },
+    {
+      "path": "computations/verification/current_regression.py",
+      "base_sha256": "ab3764892cf068a08b8c4c5a13c228027b98e434f3eb85ff1e5938d8fc443398",
+      "current_sha256": "bd28f77eaa0fb911dc3110807485583c36874f13b3d3d1fd4f55575884a0f6d8",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a80d0e81ec6bfe785b08ac9ee755790c25f7764aa0139ebe2b29d6f469592968"
+    },
+    {
+      "path": "computations/verification/even_period_spin_resonance.py",
+      "base_sha256": "d9296cdc1abd14fea773d849a1992ea11d763b1fd21f648d62588dff509e68b5",
+      "current_sha256": "b05fbddbb250c2430b36821293cc4fba57275c64fad115150b566ec020bf0007",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0ccefc363d96b93c13ef029816754441fd3d9fe7676454dd83959449835e5f01"
+    },
+    {
+      "path": "computations/verification/expansion_wavepacket_audit.py",
+      "base_sha256": "bc3faf4cfb9cafe1e4c39f9ca1a701ba9c5fe550ad4d201b667e00f8641aa9d7",
+      "current_sha256": "1a5b51f3110d0ff5286b9dce9706ba68b367819752f811fb67109c72a1ef1f56",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "38561ec7898911077affe5b382cdcc8b9ff597b07dcbeb5b26ee270f7a6fe7de"
+    },
+    {
+      "path": "computations/verification/extremal_resonance.py",
+      "base_sha256": "c89d7b6aedc7146810172ec3fbff3c9e8d678caa3c3830838dd9ab1c76e63c41",
+      "current_sha256": "f3af91bbbbf7a4bdbadb197e7bd3843e4ba982c41c3d12d1cd8dae47a78c4f4a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "f60c8c74fa22db0a0c0b181b2a2b702c3675c09b76b2c348f1d30f5ef4b65b7d"
+    },
+    {
+      "path": "computations/verification/finite_orbit_resonance.py",
+      "base_sha256": "089ff5bfff883ba7e146b0b2f89b4e1fef63fbcd27934ab94a9525ee392395d9",
+      "current_sha256": "9fc93784306014bec089f6fb0d084f485048b35fe61d9fde8fa7cd7791b8f082",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3e2c7ff7765f13e72bc95c34b4919282133d303a7c1f9c9b5859354243b996b1"
+    },
+    {
+      "path": "computations/verification/fixed_harmonic_return_gas.py",
+      "base_sha256": "783cd67b2aed5417c5f2a076839f2b417c54c62c7e55f4cc78c1052aaf29849e",
+      "current_sha256": "3e90449d4453dfaf0b40590403c71908185daaed56661836c0706aad1c12b64f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "47974e486c07c68c1c3d6456e235c48b00a5fd2ae6e9293fe9c6fc5e51069bb2"
+    },
+    {
+      "path": "computations/verification/fixed_map_convention_audit.py",
+      "base_sha256": "7835d7376e8116ffe6cd2ddc422532cb6a46cc1d3eb2c62adcb37e5be40b5ee1",
+      "current_sha256": "1a708f07ed8cf7f2d658aa38c698e744ad23e3863a272c3d07a93bf576ed9884",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "7f600ea94870285925383d58ea3560f58350d2e2fb0c3daac20249aab4369aaf"
+    },
+    {
+      "path": "computations/verification/fixed_model_period_three.py",
+      "base_sha256": "1ebfaf139ba6829e318588580f78a8f1e375cd622046e16bda124fa684b41433",
+      "current_sha256": "459ff0d78b6ccd287e7520d48146dcf5b34fe094e45a9615c8ab5b5f6e2328a6",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a50a74b4418a9fde19dabdd0d11db07e5631ca7d6e60ec230509822dbfaadbf2"
+    },
+    {
+      "path": "computations/verification/fixed_strength_classical.py",
+      "base_sha256": "430b3631be71e44560c9b99e90eb73ef8a491e2e3a7e843447c0203e9204d0c8",
+      "current_sha256": "ddbddf2a97148801adb905d26f293534f3a038f3bee5eab4ba9314380a55d1b0",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "01cefb264a229c7498f4fed109730525a30179a050c3f88a54e33ef0a32f728e"
+    },
+    {
+      "path": "computations/verification/fixed_strength_locality.py",
+      "base_sha256": "360b2b24dc41fe4a0d8709cd4f7a87a53f8b7b179ed4c84783504efa830acf12",
+      "current_sha256": "f9d29e46da3c458c51dcf029a0b8eabaac3915b870e9d6c4e59dfaa76b28cd09",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0f519cf322fa37357798cdc5cb0ad2ffd3e032c3aac5e75263d959672e2df823"
+    },
+    {
+      "path": "computations/verification/folded_quadratic_audit.py",
+      "base_sha256": "18af2caa7752588884e2b5d29baf0a9f249a97f27407531922a87428fca058b8",
+      "current_sha256": "7105d862769db0de415cd7f0e1492fc3a1aca8c478ce96125b18f8f16ea0c698",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d670a02d31901b155285254f788212a882194b4d3f884f45320ef0a4bf688691"
+    },
+    {
+      "path": "computations/verification/frozen_antireversor.py",
+      "base_sha256": "7e7a2a5684e15d900518f673856860bb401d6e9726b7fd2f5b2f728b29bebdad",
+      "current_sha256": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "cf0fbc72fef478f641728b871fc5e1d6c07e2b7f1657a3b7d8751d393eb9fc3b"
+    },
+    {
+      "path": "computations/verification/frozen_arithmetic_traces.py",
+      "base_sha256": "4316a19fabe1cf491a676fd5da7a326f5fd58721bca4efca0c6150a56565f343",
+      "current_sha256": "1965a3af81129c1d81b242511e133f71bc953089fa376b5a00499ba2431cf8d7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "120f8e9c69d95533f7745ccd4c153d37838d698737a6c632f78942a181996c08"
+    },
+    {
+      "path": "computations/verification/frozen_full_lag_gap.py",
+      "base_sha256": "ba50dcdd1364d372bd3f08092ccaf4265a5fa3b18fb8309cc735832bbd4e49f8",
+      "current_sha256": "b7e32401c5e265fe5a2a58ad035b110452c0f87bfb2ab21f8e64b1dc8b8c46c3",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2938430f77549e99cea6ac1991072266993801334f4724f9a725ed3ee20542a6"
+    },
+    {
+      "path": "computations/verification/frozen_kick_rank.py",
+      "base_sha256": "e6a9910d70072879a9776de4366253df0a0f3846dbf18c3ea649b3e704b587c7",
+      "current_sha256": "d3e5383313efabeb2eec0de17606b2703c83e493067135163e94d66b6b597a50",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6c5f5e81b22ae8586c2ab5e94898940039b0fe97dc6270dac53402623989a1af"
+    },
+    {
+      "path": "computations/verification/frozen_operator_transfer_coercivity.py",
+      "base_sha256": "b5550851b52e9785e707cb418b4c51cffd9c464336d10ed09d5ad6a530c783bd",
+      "current_sha256": "d4a4fa9707f72579449138d97d407926db89df83dcccd0ef848e35daf7d58efb",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d992d129ea70e9cdc66ea82821d5fb4505dae0082e25bba5c4a2ee3d7146b06e"
+    },
+    {
+      "path": "computations/verification/frozen_seven_cut.py",
+      "base_sha256": "d74da0076753fc672892bd29528eaac66c52d157090df5d5a7a9062665b9a79d",
+      "current_sha256": "b7b61c8982776fceae57e8136f7b90545a03c1c6f20258ff8cd56b6870ae1562",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "08d70ac17fc6613972ce77b09a2219efe24f92a29be20918f099a164a624516d"
+    },
+    {
+      "path": "computations/verification/frozen_total_minors.py",
+      "base_sha256": "f0426ec99db037b5b28dc9abf54489124cc2a45a0939b47e1aa1be3900cb793e",
+      "current_sha256": "db4ff906e9bf811713370aca9becf03b3d4625df388b31704ba365aa2fb2ec3f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5e0c5a9bcc2ffc769012c1c61d6fda1595a28f587f87824ff9fdab3bc7823c7f"
+    },
+    {
+      "path": "computations/verification/gaussian_channel_minimax.py",
+      "base_sha256": "c7087a717fb8b5b9e018d07410398869dd6c44df03b87254cdd78b2ef81db761",
+      "current_sha256": "cce9b67c1f9f657f89553c4cdbf14bb2e0c91bd42e4df9a299fafdf9a60b35f7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2db6fb1021a4682ceb64e34f7eda8bf366d0593126520a0f33f123e9beb47d84"
+    },
+    {
+      "path": "computations/verification/general_cat_return_laws.py",
+      "base_sha256": "c9683699c0857778427f3a5aca548e59173904fee32ff1effd653a7c4f5c9e6c",
+      "current_sha256": "c52f2aa5b2c72260889506e76afea6e46e1199d9da3936ff133afe3565d8311c",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e8257a06ca26d3d73e32603e0c8334963bc96d6dc5c4501a64b19476d67d2835"
+    },
+    {
+      "path": "computations/verification/general_character_recheck.py",
+      "base_sha256": "0925eb6ab8ec01057abc66782f6c7de237a64048963f03108096cce71ac8802b",
+      "current_sha256": "a48ccbbffc0aab5eac73c1bd80215120a0b59b3a1f4358a02e651e40434e2013",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0e3dbab940c4d0c90e2cbba38e1c3e3faea88c885183477bd053bda530893675"
+    },
+    {
+      "path": "computations/verification/general_hyperbolic_prime_spectra.py",
+      "base_sha256": "0fd4e26410028182b11b672fa86c0bede94302d665df33b2383509c2ba1e1602",
+      "current_sha256": "914c356548209c78bf132953a18676d84159026970c3222d0a6362f8c46225e6",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "abba09a1591f6ac6b6e6ffcfefb91a61bbf0b8f1f2cea295a44eb7b3ce928c4d"
+    },
+    {
+      "path": "computations/verification/general_symbol_covariance.py",
+      "base_sha256": "39d5f82d26588790ab28a0c9e5936eda81d6dd8b602b2b8969808195bdb28518",
+      "current_sha256": "5ab88ac873c05fdb2e0f3f89d6fe12fe1ab95de496fd7f88723eef7a4db70d51",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9e82ca1d33fd2c31717833586c8e8e133968df41d027c608e8f2a993e2ff2b5a"
+    },
+    {
+      "path": "computations/verification/gram_resolvent_normalization.py",
+      "base_sha256": "a3179420530d56592e94c71f3c8f9cbab5fa7309567509d176132279d105f613",
+      "current_sha256": "9950863aec9fe87a38db72acb4f46e96998ba2fc7a25d5457763b0a709f9d225",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "fd53b8612cecc08c14e7c8172406a3d929edd7bc9b3b557a7d86dc7289613f62"
+    },
+    {
+      "path": "computations/verification/growing_degree_trace_projection.py",
+      "base_sha256": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d",
+      "current_sha256": "8867f7a49f16e748c2e21d3c6f687e3280813f1d6bc6928fabe6247085735182",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "dea8d53314fc675ecd50129707af52c220cbd8c3fa0a55dcbb8a78005b6903d5"
+    },
+    {
+      "path": "computations/verification/heisenberg_note_audit.py",
+      "base_sha256": "f558321389eaec4e6216068f11862c683e530d684f31c94a4cd864b890f12410",
+      "current_sha256": "2777cc2e254b371716371ed49bd671d3dcbe23a9fc292ce80d1d380f17afcf49",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "803ec24e243d02ac871a794d6ec80ba8fa3caa96f09c1983f802a4f050f9bcc4"
+    },
+    {
+      "path": "computations/verification/heisenberg_pair_heat_formula.py",
+      "base_sha256": "2462b8a34c3292b26b1476b7cacb5ed59ab735b9e24b8e4e2dd526b3470b3bc0",
+      "current_sha256": "91fe49f8ebf4083e2aac25ac074a62d0f4828049758c8d0c9a23b3a3eeec6593",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "03faa53b26b2215ca9b8150ca7ac5241fb5a9af2298a48a6a7adbe6fb31bcfc7"
+    },
+    {
+      "path": "computations/verification/heisenberg_time_insertion.py",
+      "base_sha256": "2f5e63ee31b24ee32da4535998e57df699b519c16ca75d661fd38cb56ca6078b",
+      "current_sha256": "585887e13a48a4ce4509ca0e515b6ae63a5c4391677b62df2df504653e09c2ca",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "7e250388d0702647df384d6d3d32294f8c79c54800f76a4162096c9a11a53833"
+    },
+    {
+      "path": "computations/verification/holomorphic_shell_rigidity.py",
+      "base_sha256": "2678e63d0cc700eb0672fc588437f8ecf3171f9ff9059484c593b90a1fb9f028",
+      "current_sha256": "a4b21496c8e14df7b56abe67d09fda30c5fe6b6196c26457f8ed73704ab7eac5",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "838239da420d32c65518a3e885622581041c0d022ca0809fed22bcd5ae2761fe"
+    },
+    {
+      "path": "computations/verification/husimi_shell_tomography.py",
+      "base_sha256": "98edae9b43263559e65c8644f419a1a6ba423dd4017f071c1a0b8f77943a0cbe",
+      "current_sha256": "beb89c1bfde99536fef75a0660e0a6b0d338e0b1fa82870fecf5232e731de281",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "55cdb6840e28c26f31fa83ba304e1a4d4049c5c4e387096067439b93bed0462e"
+    },
+    {
+      "path": "computations/verification/hyperbolic_return_pressure.py",
+      "base_sha256": "deb55ebaa89fb1825432ba46dabb9bff3dca1f5ae43ac36c6dee7f6972d22411",
+      "current_sha256": "8da271ced33465d434cb967d3b41801a4e317b8fbabbbeb0e44ab93705c88493",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "f7f2031cb3078f653ab84fa4218ea383de74a5eb65cc303f525ecceebe15d2ef"
+    },
+    {
+      "path": "computations/verification/local_moment_transport.py",
+      "base_sha256": "6ede9eec4d85dfe2fbc96952805fea44361287acecfff81a2cf91a4d7e6e203d",
+      "current_sha256": "e50a0243b54abb6e26ffd81b1d1def8e60236828355aee14b9d08d78b71075ac",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "13398242841c4d4447987752f83e0983f6ed8511f491449a1e9399c3600211d4"
+    },
+    {
+      "path": "computations/verification/locality_robustness.py",
+      "base_sha256": "a0c8473c6fbbb5a60ea90deabf41c6154265cc929cce8b92c76283ba2314b9a4",
+      "current_sha256": "dfe4549068dcca97c4ba62d0b73c45d2b3dd1c5778ab83910cc5c9694ac94073",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e30f2849174a1fa75d83f21ec303ad2d2571ec3850df08fe7e0f81afa086cf41"
+    },
+    {
+      "path": "computations/verification/magnetic_quotient_regression.py",
+      "base_sha256": "342424a1f94a5b7c9501226da33319ac67973d80bb1d0d6dc91e0ef5ba3f1fa7",
+      "current_sha256": "211832cdd5039d12da27d728043524298f31a2312ff54dd55b4b0182401aa6d2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2d1a232b9bf45e35236796b0a5c534899c40d02f84345e7ecb2e7daeb740e157"
+    },
+    {
+      "path": "computations/verification/magnetic_scalar_certificate.py",
+      "base_sha256": "b25582cf25bac7aef42cf364918f425723931a4b9f7c82475e12bc218a026d50",
+      "current_sha256": "51a437fe9c0b668664732e604b195d58de5a7b7342908e1ec1dc4e5cf9ba46f5",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "69db873c010920b6856d88fc65006809fd1c341528ea7a4b687862921eef00e9"
+    },
+    {
+      "path": "computations/verification/manuscript_table_normalization.py",
+      "base_sha256": "5ed30014f4d25b3da265e83bc7ac0fbb16171d4b7c3f379988f652839575c978",
+      "current_sha256": "e6cc8f67502d5492919f74aa0f333aa1ed099ac4039c647ea6d7185cc8d638d3",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "be2e1b23f43f72ca213cedd88ce53a24e7ebef74204a558711b0b5afff11e295"
+    },
+    {
+      "path": "computations/verification/microscopic_noise_removal.py",
+      "base_sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+      "current_sha256": "059816f5b80c27d0237060ab9646a2e1b0a49cc5ff7630e355916fa2e11554c1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "b27660c08d3ff09bf309580308b5a958f26fad9c96b8fba76fa317d9c95ce15d"
+    },
+    {
+      "path": "computations/verification/multiradius_rigidity.py",
+      "base_sha256": "72117bc46ed4662e4fd5d0d82458b60e905e529d70ad952b44899bb48856eadd",
+      "current_sha256": "7bc3ef3c8534fe3224ef686fa3a8c43ed15f38b9bfb766f67fc2350bd93f903d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ebe5ef765615db88cd8f95d4d38f375e2de79988d204cca713759c00f16af312"
+    },
+    {
+      "path": "computations/verification/noncommuting_tower.py",
+      "base_sha256": "26f932d0914d9bfbb0b34b7dcc5f8e038ac2b2c139793275843b339b4d7654ef",
+      "current_sha256": "8d4f31a4443c6f142e4f52d0e3095c4a207d17114dd8e0cc83f179d4a40504a2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ac18a4ac62230de39b63217b61756906752a2e31d64a025de078480b2becb721"
+    },
+    {
+      "path": "computations/verification/nonlinear_pressure_variance.py",
+      "base_sha256": "cba8fb106e372d9758b555be5f7ec05c779ce47eac78a83238016cee06b40e48",
+      "current_sha256": "c1b1d1375137394a818dcbb49595707cd0a2ecd748d0b6cc2591e31fdbda0ccb",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d65558f3612cf478441faa87027e731469b1d75c1ac281a4a84241c183a77437"
+    },
+    {
+      "path": "computations/verification/offoff_elliptic_spike_regression.py",
+      "base_sha256": "07057ac2b7a754d576e378feabce7c6a9bc9a45b0d47613391a3d9073e738716",
+      "current_sha256": "277f40bd74d396fce12ccedeb6396a36e3a502af66081c7bf3e54639f86d5953",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5944fcba647ed78e2f8e795847b955f8be14faee24ca332fcd728a7906fddb86"
+    },
+    {
+      "path": "computations/verification/original_channel_gap.py",
+      "base_sha256": "af6f9fc189777ac50414690650c70b865badb97a9d82c0eeefb16c8db24f7af3",
+      "current_sha256": "00b02b10c07385fa6a9c0a41f92f76c43347a917f3f59c275ee1f84e3df7e2b6",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "1ebbc2a98eaf9ab8bb4c8b0de2d27f6b477fec202d36abb16a272e9a870ce7dc"
+    },
+    {
+      "path": "computations/verification/pell_coboundary_fourth_moment.py",
+      "base_sha256": "212e1e993b09565600c226e99cfc56f210932c075f32488cd38a3799cc370258",
+      "current_sha256": "782a3a49177c23af41883b7449f049c600c0da066c55ec5359b583b404c58deb",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6d00fe68550d9533fc201a6363ab5f04633ce4b94f44ffab44b0edef00829d03"
+    },
+    {
+      "path": "computations/verification/pell_coboundary_regression.py",
+      "base_sha256": "7599d5f23b04c09438f6bed22db508709756ee92fb94c1c59a2bef525a82bdb6",
+      "current_sha256": "ed4688334301f46ce37e790ade270ba797845fee0393330ce2979ffd90670831",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "6f568685575f419ce830ab5f9b328432fd585bb2cb5bd73d4ac1a984549d65a6"
+    },
+    {
+      "path": "computations/verification/pell_flat_quantum_check.py",
+      "base_sha256": "3f788062b86601e12acf04bad4e945de449af57a763037d6da89eeee1bfd6179",
+      "current_sha256": "decc8d14689d380cda632a0bf04b393cc0076ef5ff46d3640b8b844db6322f71",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "94d2932f644dde5197458e9f0b50eb1487dfc728c79e8d3fe65c597cafe7ef09"
+    },
+    {
+      "path": "computations/verification/pell_floquet_regression.py",
+      "base_sha256": "f6319ae40ae71d84322d36e0c500b6529cddf6627fb4dfc62cb1790c6abe3639",
+      "current_sha256": "cb159888439eb4772019a43a86f88e93c9200007ab18820213ba44c7933970d1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0f04ee06d2e123fc6c6eab5ca81f481d55fb009271294de38c3b1bc854c3c94f"
+    },
+    {
+      "path": "computations/verification/pell_four_mode_coercivity.py",
+      "base_sha256": "0db6bb8fe2ec758a9cafe29f00b15042b1f0879af633d09b54127e8389496722",
+      "current_sha256": "47b9877ff64a089957c6b661565942b3412d8fad0538d25bb521178523de545f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "7db8a665c66e8ee055368d84cef6ae3294a828dfc41ad49ade67dfa91dba6971"
+    },
+    {
+      "path": "computations/verification/pell_gamma_interval.py",
+      "base_sha256": "11b0b6501aa705fb1b37b266207d522591cd58cea640d5a313b61ec022040a66",
+      "current_sha256": "062751a0c4f015ce034b11f4ed0f529e5d2f2a45fc5b10a042bdbcba3aa07998",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "8122cd59c4d400dbbe8d27ceaaea3d22984732c9b06bf18cc91e182ce6ca32f2"
+    },
+    {
+      "path": "computations/verification/pell_gaussian_regression.py",
+      "base_sha256": "e2301078a730b71f8047f9ae55e110e2fd28d9fcae82d6d604ca46f0bf816d1c",
+      "current_sha256": "dcdf337b121e855b7a5df89498f918ad92d2956f138c0d649639ea2e3dfdc991",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "b155c331c5a7a04ddce5c44358e1b6bf36936938d9b3dc14b4626a0830551e4f"
+    },
+    {
+      "path": "computations/verification/pell_harmonic_returns.py",
+      "base_sha256": "592c74f6b650508380fd5409750c77a5e7a019f1b4a8497e209fc158cf44d767",
+      "current_sha256": "65d33120ab644e5397a0375eae1a8c224a66ed1892c5b8a5a4a0fa212155f4c0",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "483b72bccc8aa46983bbcf25b575861b4e64b2c9eb058760cf4d4532f1b5eb15"
+    },
+    {
+      "path": "computations/verification/pell_harmonic_transition.py",
+      "base_sha256": "548870034d1441475b06b40a6131b729e94eeb70dce9b83b343a2c0addf7bb85",
+      "current_sha256": "b5bc3a45185d4b585f2b91f19106d75fc84bb568d19795467e0a6d9cf2adee5e",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ea8240ffee7eaf48b7fa6bcdc74f4a1a2b59035b57a253036101dca3ee182cc8"
+    },
+    {
+      "path": "computations/verification/pell_pair_obstruction.py",
+      "base_sha256": "3323986145033e7358c84c0343f7fba19638599aae7c17e45794db33bbf69122",
+      "current_sha256": "cf15ba1dbc83f96caa56fbd3405311d8ad9389ccb1317e47a1a57c8ca557d7c5",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ae5a7d5ef55b2237f45213bd97b1e4828c566987e498347ecd884d7658d0db11"
+    },
+    {
+      "path": "computations/verification/pell_resonance_lattice.py",
+      "base_sha256": "ff3ddd3447cb57366555b81d86a57c8d9990a8d7ea1e32332c104c5f229e6554",
+      "current_sha256": "c05f08d2ef8070319c9a7abcee9d128ee96288656d2f0107dad6cbae83bc1333",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "c49e395275fec200387143630c74d5eb7a953ec25e3ea1c364ad07185c3ba271"
+    },
+    {
+      "path": "computations/verification/pell_sharp_coercivity_check.py",
+      "base_sha256": "d2b06036d938a258f7fecadcc286bc911f86e377066a50b4a519a53c83c05931",
+      "current_sha256": "f8fa88821034c8f2770d3415a3b60ff1abdb1b78be0ab78634c47f386e74e43b",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "812cdda2587640ddbec71d081fa54d2da5a5cf91bd71566a5d3a5442009ed05d"
+    },
+    {
+      "path": "computations/verification/pell_single_orbit_sharp_constant.py",
+      "base_sha256": "0ceca4cfbf25861b5088f3691f07737a3bcfda0b47e20f18d106610a46f3abb2",
+      "current_sha256": "9e268b9936b7bebd0dc53675aaa2912f8e2e68b70437af5d905cc9aae75f76cf",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2362cf676b02ee9e07d2141da661e02495322133c9a0cde97d67f0bcb74f09a1"
+    },
+    {
+      "path": "computations/verification/pell_smooth_cohomology.py",
+      "base_sha256": "efeec62f344a7ca2ac2a1a7693f857daf608f4df482ef0b0cf50233e3702ebd0",
+      "current_sha256": "5310afb3eb7afb7cd787c4f551cf1d9193b6da4c9185b5891c7c82cac66c85f2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "1725e2d7146c38d5d854f215d7a2535db82f9e7fb5c9e63f87a89c70da6cf009"
+    },
+    {
+      "path": "computations/verification/pell_weighted_echo_regression.py",
+      "base_sha256": "b0b636e9643a5abc2b854bf5bab7d00bfa795dd6ca2bb1ab09897ea4d6990485",
+      "current_sha256": "3646aa47a556c6e833b1fdbd8a123e9860f4e593dd48b01ce5049a14dd5f5d99",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "94cfbc9a26018b3ab317c18c5b1438c012302f3dc044a4e46bb087fbcf5cc94c"
+    },
+    {
+      "path": "computations/verification/periodic_point_trace_comparison.py",
+      "base_sha256": "ea3662c3a89c991cd608f1b929cfdcb06280f4d25437dc9bd1f21a66c4b9b807",
+      "current_sha256": "8f77baf6fdfff732b8578ca480a11d9c6672fd0b42ec9578881eaff913d7839b",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "8d3e11eea682bba0c1a05b5c39439367e4606d43d6355e6b73fc42de1d242a6b"
+    },
+    {
+      "path": "computations/verification/phase_space_return_gas.py",
+      "base_sha256": "c7fd044539aa16bf5b01fc961bc32fff10626959f570d3ca516d890fd034bf7f",
+      "current_sha256": "15b8b52e96f221f311d2d475d8e76ed86695a537a408c022358dda591ecf0b9b",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "4630f770cc66ce073d2541e0b9a068f43477e409ff5c2e0d864c1344f1332017"
+    },
+    {
+      "path": "computations/verification/prime_resonant_audit.py",
+      "base_sha256": "91ec0a9c7f383f0324538bbf889be96f18719f04e1533ff2a665ec6b9b7e7c53",
+      "current_sha256": "43673a0f9dd432fb6f77cc69349fb54ad26d3656d14aee6daf647608a2375fe7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "f4e9448a8cdc637224fc616b9cd3f0539ad4053b7197c1cf8ce2402c7ecfb34d"
+    },
+    {
+      "path": "computations/verification/pure_loss_discrimination.py",
+      "base_sha256": "43265337ad27ec73e4e63ce80c8c6e2260da549f1eaf08c0be6e715b5f5e809f",
+      "current_sha256": "f698f42d92ff51be7e462fbc29429b47f4b7589658c72c2f220001cfbf8f4928",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5d9697f6687680fab1d61685320bed5c0a9d102f374bf091ba0ecd49554eca70"
+    },
+    {
+      "path": "computations/verification/quadratic_coboundary_noise.py",
+      "base_sha256": "afa23ebdf942791780d2b7b14cf09d83aa30017f8b6bb4692b6c8711d64e86ec",
+      "current_sha256": "71f9bf583f20481644efabb075b2b38306898ba3c812a51483f449e92c7cb928",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "4f54160b1949c697ea939df8c04f5cddcadf131f41353ce5d17248303ec41af9"
+    },
+    {
+      "path": "computations/verification/quadratic_noise_clock.py",
+      "base_sha256": "eb6879234d5fb396590eb0d390eee08d3cf035c3eba3373cfde83fcd13246d07",
+      "current_sha256": "6a8e2daf50bf3a80cf4c1a4c7b6ddb339d84d03c8087e544e384753ff580ad9a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "aa452fa01cc43eca63b0ba5bd4b995c894d1213e7738bc83822536916d8e8b9d"
+    },
+    {
+      "path": "computations/verification/quadratic_noise_dynamics.py",
+      "base_sha256": "7dcb306694e52976ea4b67c4104a10f8848d934dac0ab75383745b4ec9ff96a7",
+      "current_sha256": "05143c9ce0e8c3fbd5fad38607cd48ca3d196f4b644a390fdc814e5dd64c9f59",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e1948cca1afecb5c926e8421735126f3d38778ce5f914b47f6d0754b72d205dd"
+    },
+    {
+      "path": "computations/verification/quantum_cyclic_module.py",
+      "base_sha256": "f0a6e7f80b30d112865bd09c4be41346955ae438ea0c00b7a8006836d21f4f04",
+      "current_sha256": "3cd36eced2b45f896ae90de918929140904b31df635f83b0f04afddfefe45c39",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5d08a6180fade8d3157c0f28a2de320f17baf2b1615daeb593fb452c82dbef17"
+    },
+    {
+      "path": "computations/verification/quantum_phase_completion.py",
+      "base_sha256": "26f2e951f5b77a55942ec24c2e6178a5b4a1b53806108dec2209aaecae6c28bc",
+      "current_sha256": "c28582fd61eb0a5efd5baff6e31391d5e280e9e8e2644b276e6d71cf6b9afaa7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "58cd552bd75a5b9529ebbee303c09754869088daea4882f43cd0d98fd9274922"
+    },
+    {
+      "path": "computations/verification/rare_phase_limit.py",
+      "base_sha256": "8d229515e82e50f8696c8743d0e5227b098b7197df46abe7eeb77f2988c85548",
+      "current_sha256": "906a7845d39a6b7698dd62e757f42b09820c6d443eb8da66810516bc9c0a6ad8",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d08868924d76e488ed6dd32dbee339112f185e6d24e5b8a788ba690a4448cab1"
+    },
+    {
+      "path": "computations/verification/rare_phase_testing.py",
+      "base_sha256": "703ec58e6465b97c2c291ca6b537473839a25c30babbc281ec998161d6bbcf00",
+      "current_sha256": "86870c68ed5a608c03e593b59466021b05cf8e7cfcc2f058bb27a3419b65411c",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "aa3ec26731d8db6e3dbb03a0ca4ecfe23abc3c6e60bd2a4c35c874bf787a9361"
+    },
+    {
+      "path": "computations/verification/resonance_hessian_obstruction.py",
+      "base_sha256": "114c36402ddb1a5d75929990a4ff4491522e1f0418e665c1279bfc351b352c8c",
+      "current_sha256": "e7a775c90a25f5737a5172dfdcf40dc1ce2fbc20a000de0e96f26c8c468cfe7a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9dab0d5bc08c393c05b82b7e52c3cacef614c2bc5cd0a307c6c8b1676c5be1cc"
+    },
+    {
+      "path": "computations/verification/resonance_pair_variance_regression.py",
+      "base_sha256": "9dda92f0e78ec4a201d97a48462761b25b73221bc0a8716478d8084fe39f0678",
+      "current_sha256": "56da939251efa3b92849aa5b609e6be835e56f123f2b5509da4adb9f9cc7ceaf",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2087084e39f0cfa3e5ceaabb8b81858a282279efd18fc5870e521256d7102ac5"
+    },
+    {
+      "path": "computations/verification/resonance_quantum_variance.py",
+      "base_sha256": "8152e6987d077b6ba0db3f230bc6eef961ccf9ed286f270e2aa43a7211f5b94c",
+      "current_sha256": "0d6b2e50cc7ed2767814390de1b61e8f157703e05f5b43ae79ef559fe54b8f37",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d45da3d7ec7d9a34be7ce88f02ebad12effc895e225501fcd805d22b695373ff"
+    },
+    {
+      "path": "computations/verification/resonance_wiener_stability.py",
+      "base_sha256": "72acd7ba8e3975863f62a876bba50edf30b75c4bbd309db58f1162d5c0a2f910",
+      "current_sha256": "531a43659adb7faaf870f567eb2e2f9e63fdd16d298710a7295e1316f3d349f3",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "99579332c6be4f97c5f70de9a50f0ab993f7e209accf813d716ae8a5b1d9c8e9"
+    },
+    {
+      "path": "computations/verification/resonant_density_audit.py",
+      "base_sha256": "622d1c1b9e57f635dd41fed350815af1bcfca33a2ebdf17e8a016e6a9257570e",
+      "current_sha256": "0972b017a2cd27e8c12d51e3fe0a74ec54f80f1b63ae8275819c00d374b7ab37",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "841dfbff09a304e0741bf7652132e1462b482244599b342fd56db99bfb867d57"
+    },
+    {
+      "path": "computations/verification/return_local_limits.py",
+      "base_sha256": "f8d0a8162f39658a3570efbc3970d804255dc2e2b0820463d1223810e53eafbb",
+      "current_sha256": "473421067ee8287a90c13ac40842ba224d4eb77112c01c44aca5ce9691cb1c18",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "15881b9d98cad2e233eb1a9ca9d4b39b42a5c3ce90de6250807fb07f43b3688b"
+    },
+    {
+      "path": "computations/verification/return_trace_obstruction.py",
+      "base_sha256": "122fb17a191b8c7536251bf203df84728018ae909c57d4a70ecf703b571e5602",
+      "current_sha256": "b7519eedfe23ad79511ed5fcb1c1849557700ce5ae3a1625f6d6713aafaa2b08",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e1a8c064416d19ba0bd1e991c171ca02f368841b1dc245da0d16f597d7a1d93f"
+    },
+    {
+      "path": "computations/verification/shell_instability.py",
+      "base_sha256": "a11a6a7d5b78d134e28a482efc3c258ab09b71e8a25d265f6faea9b171d632a3",
+      "current_sha256": "6bfbc1f822031958778ca9a41af54a7727e89e9b334ed47f11db244183e55fc7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2e16d38cd6d86ab5f035b50ef02b30f76de41da7cd9b3a4357b7d928a4380df6"
+    },
+    {
+      "path": "computations/verification/signed_heisenberg_audit.py",
+      "base_sha256": "4734cca7713e3e8ebccc3e11c58b1e38b349796245a46902e6541e2f05988854",
+      "current_sha256": "6a5eeed18d05c74c7d22e56c877e74d024e6dea54e71b215247da40f517b29ca",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "23e6f60a62ee4658953e7f48c806860c8c1947dc3060f274598390117309bf0e"
+    },
+    {
+      "path": "computations/verification/smooth_recurrence_and_compensation.py",
+      "base_sha256": "09d0af7d0f9b94e83d5a4005314a91bdb63b756b3d11b950fcfec8ce6025e4a8",
+      "current_sha256": "59a093622345cb2b069148f096c72f3096d2479cd6cfbc3e3a5d6a02a0c8d2b8",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5359fe615e64b42faf3dcfcbc085ea03a6d54ba10e63e9446e3d58c013d438d8"
+    },
+    {
+      "path": "computations/verification/spectral_diagnostics_contracts.py",
+      "base_sha256": "4ef53ac816648e2eb4a3c6fe0a34dfcf8e9e27ff34541bb42645f4cba0f4842d",
+      "current_sha256": "188ee2077edcac01ecc529b3ef58164d41b0013f5f5ad41e1206422524c7cec1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ec5a1a8c1911a1e2924933db8c8fd9fd91588c608febc04f2c7174f9e3d6cda3"
+    },
+    {
+      "path": "computations/verification/spectral_lattice_clustering.py",
+      "base_sha256": "d088c49316825709bf67852ba1ec27d76286f1963fe402e04b63c3f535a7a930",
+      "current_sha256": "e19afcd295e287df6a8e673ff75685dbee42b64bea05233a5d2f0fb186aa31ec",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0692aaf1549b2349a0a4b3483e4812d30223e345164c4610eb1566838915d643"
+    },
+    {
+      "path": "computations/verification/spectral_module_regression.py",
+      "base_sha256": "a5ff2f67b7d3a69b4115cc74fcda3838955de6ae00db31fd7c9cd4dff0385d72",
+      "current_sha256": "5a86e5b2c4ac5ab86ebfbd22a1de5499ddfd2ccc23c4c8a908d3e6467c093de9",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5213437e4b819d1c3c5d7756e28bf77a1369225e0cd2add0c79b1c9c9c831dcc"
+    },
+    {
+      "path": "computations/verification/spectral_resolution.py",
+      "base_sha256": "73274a8b3d04bc949e32b650ea015e4b8aae5511bfdd392903259f99c1eb1f52",
+      "current_sha256": "d118a349d255ce71be034d21c2141e3d6754197bade7467fc075d1c050d292fb",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "62396370e7291cc90dd995f8d0f972cc7368d932ba2832c5684d5b80180ab87d"
+    },
+    {
+      "path": "computations/verification/temporal_quantum_variance.py",
+      "base_sha256": "946edc710c960c1a73fe5c0c4e8586c1948505b498dd60f148c160dff78e801a",
+      "current_sha256": "5bb33447d6b154500b8de574566151035f6717aa145c5989773fa509302689c1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5e0fbb7dff598c953fd1192940c32cee847036f137cc991961700ece11e0646e"
+    },
+    {
+      "path": "computations/verification/temporal_soft_modes.py",
+      "base_sha256": "ce0fb05ed4416d0b98a9dde3380b1a98b57c823bba5029ed9914d62cadaf61fe",
+      "current_sha256": "4989a46427f9ad16089c22441e752ec3551b3478b877db7fbd5174008d888c88",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a65c806e6b91fa6c0226b1b751b60d2f3dc6eaa1d367d22a5942e4b83868ceea"
+    },
+    {
+      "path": "computations/verification/two_radius_rigidity.py",
+      "base_sha256": "a218a65eb5e4eb5508babfe323d44e08b94af8551cd35dd94f8ea443ea86826b",
+      "current_sha256": "3fbb580bdc19ab8abca4b2e1f88d704464d924caa2082e44c7e042afc268b79e",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3c2da2301f9ac61fb186cde1f68aa4090448f312731c84b8c2a2b1cd59869d50"
+    },
+    {
+      "path": "computations/verification/wiener_resonance_audit.py",
+      "base_sha256": "365376ef4c28780eaa69452061684330f0ada27f474390d3f931442e8a457678",
+      "current_sha256": "6fd7ca4da0a78316be8ceab3af91b680cdb1074b6a3d577d9abdde8ad29b899c",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "145cf47da2ba11d33ad79947a99cdab3e48334c0f4ce2c05e29e9609c5453035"
+    },
+    {
+      "path": "supplement/fixed_map/algebraic-return/exact_coefficients.py",
+      "base_sha256": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
+      "current_sha256": "d57f6fe39118eb7fb95e3de70301c1bbcdf74ab7968a80d0595bcc5af1df2421",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "709b5a133a48ff5d0a90a2e00d4a2f2ec66e1defb8164a7ca22d161d9c1e15ad"
+    },
+    {
+      "path": "supplement/fixed_map/algebraic-return/export_certificates.py",
+      "base_sha256": "00fc3124c26c96444c856176d69da3e882c2e649de234505e05710cb92266c7f",
+      "current_sha256": "12499c280b46bb51cab922e4474368901a31215ef16a8e9f2b60d28fa0d74ee9",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "3a99554dc9173b439e641aef0db6925c675669320ea1a3bc9a16f066f95062f9"
+    },
+    {
+      "path": "supplement/fixed_map/algebraic-return/quantitative_bounds.py",
+      "base_sha256": "f4e0ad40cc8c1bf63e53f2580460598902746ba1ad1828ba45743b71f3a3e95e",
+      "current_sha256": "b25f354b1041eea3da6f62d7b857ae6c687c46467160b7539fc4874bf3a30ac1",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "b429ad47e054c8f0fee2be0b092e59eb644f8f2beedba4972d083f5cf07b24be"
+    },
+    {
+      "path": "supplement/fixed_map/algebraic-return/simple_spectrum.py",
+      "base_sha256": "224307655a9ca4de5a2fe0df23809c7cf9cc1792430f514a90cf28097bd3078b",
+      "current_sha256": "f0cb465a8d7b32a3d09d8f578b57ecc21498e48caf286c6b6b94b232244096c6",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "177f3e32b61ec88185b7181e939e6932fce2b2226724b8514bf6c7f1c8cd5c63"
+    },
+    {
+      "path": "supplement/fixed_map/algebraic-return/verify_cpp.py",
+      "base_sha256": "acd9b6ab646117b9d49c082e4874682d2e4b3c01b7328e146060cf6da3f28ebd",
+      "current_sha256": "90b01115e01f1f2951dad3255fb15a20793f0f2f7e811c6529014b2c3f0ed72d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d71c832f441c8b98f4b29520b66aad54bee19fb5d868d4297e0792b7403fe00a"
+    },
+    {
+      "path": "supplement/fixed_map/block-memory/verify.py",
+      "base_sha256": "3cd46442e4eaf12844d3aedcd7b9d898ba7b4a7f9e41322aa7e9ed7122136f80",
+      "current_sha256": "b2bf42d6aa66386a575d902cb4f527880c3d8010cef9f205c09598f336264fc2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "919294bfb68a14d754bfb035c309716801a57af4c321ae7e6d95f9a938b81ef2"
+    },
+    {
+      "path": "supplement/fixed_map/coherent-return/gap_identity.py",
+      "base_sha256": "b5ce46d597e27f56bfbd5829a4f30e515e2816fe6d8ae87e1941b295b4ea5a67",
+      "current_sha256": "dde7b79b5a70f7476e1e007285ff369aeda6009dc67fea4b881637a52a38de6d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5a4fa843e57cc86101b13f0cc3552a306588a31909eb801925b9aa4b7b5a26d2"
+    },
+    {
+      "path": "supplement/fixed_map/coherent-return/return_memory.py",
+      "base_sha256": "8386e5bbee06699e9edf4543dfdbcc4d4a358798cf0554a0fce2dd0108aa91d5",
+      "current_sha256": "4116c89d81705a1b4693247b706c639727f3529c5af08aef12971aade6344fe4",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "69c83c469a2e8f9af6758d3af1384674903e00356e5eb78854f821fe5e0cc33f"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/all_dimensions.py",
+      "base_sha256": "5f7f0fb4ea841e137f3d76ac50d6ba289f3b4c98ec9c7d39121ded25dc7b14f5",
+      "current_sha256": "9ab2fd200bb053f9615b57ef767dc67d91edde737feb68913adf5777ef895d7f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "cf2a36c46d8051363de1eb541d8abf39a2dbf5885e3540773a0f22aa3e83d431"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/design_return.py",
+      "base_sha256": "cfebefbf4cfa557f0e3afe367cce0dcdcf29be844441254bebca9a5edddee98b",
+      "current_sha256": "c527f9238971f884f970255fdd7c0cc7940da428b768f9b06ee3e2c668f1432f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "5ae02186cd0c39305608b194465e60e1b246139cf692860ababddef95b6c9ba9"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/finite_symbol_normal_form.py",
+      "base_sha256": "157903a4c943d8262444b2a1c56bcbaea89e322954316590bd4f0ea7509f666d",
+      "current_sha256": "a72b76653dc01d1faf42eded199c95b1e99dd2755e595b8d11c93235d04041a7",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d8fb61390a8e03215f21054541aa6d036222c162562bd345f9894a3ba9dcd986"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/fixed_kick_bandwidth.py",
+      "base_sha256": "779259081f57d36b3538f7099f32438d0747caa7c8280a14c28dc201c3177447",
+      "current_sha256": "e602fa675065f3221219f35f0deb0ca6f516a96d8471370d06639943d46f9191",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "20f4f18e5014ba1a15e6e3c35a9fc25ad76c42a678b07a867e7f0e23d88965f0"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/frozen_crossover.py",
+      "base_sha256": "bccaf31e881f29e0ef2bff13fda73bab814f24473bf6b0c94836c2e3971cd99a",
+      "current_sha256": "b0148a221f6020a0ddfec15599aeb151261b0757f015254219198fe4b35d8aa2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "ec72077ce5d335858f5813d1c0ffa8eb32150b65ab228462d60b4028ba0221f8"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/frozen_matrix_check.py",
+      "base_sha256": "d17436d7d954e40e52f3ec475e0f8f2c204f37ee4f99bd1614450ddb93efcc8f",
+      "current_sha256": "7aaa5534e827c249d0b59361f2b1fe94209b2dba20d9a2df8264829a33c63e9f",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "23ed5adb15302efe102820596fb6d8ea83931f7f81b4d46d251ba3c2e4fd1b31"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/frozen_sharp_return.py",
+      "base_sha256": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
+      "current_sha256": "50a9cd0610505b383f6f685455ebf55f9519a1ff853f2a275045380ee471bc19",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "bbd0859fa69bf2d4ffb79d907933f0f56ab50e64abf7e0b4c0a6bcd2d36812f1"
+    },
+    {
+      "path": "supplement/fixed_map/design-return/sparse_orbit_checks.py",
+      "base_sha256": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
+      "current_sha256": "587356d1d1a89a33de96ab0ae484c582cc00190e2ade3a5c06dbe8ee6523b95a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "08be7ba6ad7ea46883da4d417b7c640f44bc0dd421ab2a8a59c2e698a8187ebb"
+    },
+    {
+      "path": "supplement/fixed_map/echo-research/probe.py",
+      "base_sha256": "694391afc4f68f79032fa872221d17ee41a70abe6a582caba7edb129eddad0bd",
+      "current_sha256": "0b86e8f728c144a69bc657b5f8d3fd16b9440e0508404dcf32fe987a2c9cc0ba",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "120671572eeacbaa727e1d555a2724d7588a7c4dc3caaac64993eae7ebfeddaa"
+    },
+    {
+      "path": "supplement/fixed_map/ergodic-transfer/finite_checks.py",
+      "base_sha256": "f19739d9715140afe68f591fcf2c78e08573393817c66a94728a77e456bf003c",
+      "current_sha256": "9eb38f495c348bba2bc4c09e468c8215d973534454e0a943c5472d347c4f81ba",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "4f8b18fe747d1b32325166a78945ae6dcd678636c65be499dc7b8c8a22f31f0a"
+    },
+    {
+      "path": "supplement/fixed_map/fixed-map-audit/classical.py",
+      "base_sha256": "670a26a79259b515448a4620db025771fd41fa35fd38fb1741c13499783190fc",
+      "current_sha256": "fdac48da96adbaa3511a611c8a5d9a8494d7b9a5789974947fa83ee07bb64de2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "0982be92d16be5a5c0b92bd90dc064313fb974cf8b7cd159c789a52581555102"
+    },
+    {
+      "path": "supplement/fixed_map/report-audit-20260919/cubic_variance.py",
+      "base_sha256": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
+      "current_sha256": "00184f15a2c5fcb6d9383869e5925b271efb12b55b88f464054f718a0bbeac6d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "8cd60cbb1cc0be65f7829824b67ed83837531dc79ef6581cfb0574b47a64d996"
+    },
+    {
+      "path": "supplement/fixed_map/report-audit-20260919/folded_spectrum_control.py",
+      "base_sha256": "6a8e574c09f0df9c164be5661b129125108d3e04e5f1d70774bb9d2f60c26e10",
+      "current_sha256": "6db1a30b58fa6305d547f744adfe99038069175271657d899ed3834a89c7149d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "df89534bf5c7c45b02bbb4a87c8ec8e2b217757594f941d48c4be154057b6a25"
+    },
+    {
+      "path": "supplement/fixed_map/report-audit-20260919/independent_variance_review.py",
+      "base_sha256": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
+      "current_sha256": "6f4df515f36c8e69e34b174bcaf23905a4300a416aea79b48c4a4d5486ed44b3",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2be7dc1f33e227d49c46741de15419c7ef8242d823290a532a0154142965d0c6"
+    },
+    {
+      "path": "supplement/fixed_map/report-audit-20260919/monodromy_experiment.py",
+      "base_sha256": "e2c7a0881c5f780b6770e99368e60b462fd3a69ae5f0ce89a073d21443fb0f06",
+      "current_sha256": "f175a6cc14118b9bd8ba635ad281035a9493d0a22921522e57c30051446b80ed",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "60e8456fac3b69abe12c8e0b17e5cbf98b55a6369e3cefa25433688beda52479"
+    },
+    {
+      "path": "supplement/fixed_map/report-audit-20260919/verify.py",
+      "base_sha256": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
+      "current_sha256": "a1ec10124f85fc2345ec7fb4f46302195209c128b2dd421a653d219e75b0ef95",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "d6ced46e3819067dda54f2609355652a0c023a015188ad0ae9dfa2cd60f31e0d"
+    },
+    {
+      "path": "supplement/fixed_map/resolvent-flow/checks.py",
+      "base_sha256": "9c80a6021a1b36d4a72a853e0cd4f8fa648af00459f1b295b53267384f9a61c3",
+      "current_sha256": "d691eee9166517076d800defc61cfecec6eb5d4ebd058a199a03f34179d9621c",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "be5858a6b0d79387cdd24d10d9dcff9ed1f1896f9664a5f2d65817ec9dcd6e58"
+    },
+    {
+      "path": "supplement/fixed_map/resolvent-flow/low_order.py",
+      "base_sha256": "a84f30bd6aee32bb4fb4402c39446d26cdf5b173a28282071627acdb73285ab2",
+      "current_sha256": "0d0f912a1b4fae490b36671dbe7681b84e3a7c571852dd75f922167c6256c0f2",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "2d3562f4af7d8ccd5fd01944bcf129134e897bdb1881c554c31e2d759218c517"
+    },
+    {
+      "path": "supplement/fixed_map/secular-route/exact_structure_checks.py",
+      "base_sha256": "da38c8235b6c743a7f635c40e00cff36ffa85f5df48c61820b14ee346413b7c3",
+      "current_sha256": "62d09ef2b941803ce9f7621e9563c9b7286a040036f067b8881dc2997d97161d",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "f5dcca5fd3a824ad33c9e06998e3c2c7e8343dc9b206f0ce469341fa9449d264"
+    },
+    {
+      "path": "supplement/fixed_map/weighted-secular/center_checks.py",
+      "base_sha256": "560ef16e99ec9094b39448fb2938ad8120afe8ff48dbc0adfdf2172df3184ac9",
+      "current_sha256": "72ed4b524f412d97fb5e3613e773579d01acad291aeaf41ac6a372347d08a410",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "03d0af486e5a01c8bd4d844fafea4c98fe26545341db0da841eb2287566fe321"
+    },
+    {
+      "path": "supplement/fixed_map/weighted-secular/determinant_control.py",
+      "base_sha256": "84589d025d9e93f8eb890b1b31286ac30cc63f6a017d489e8ad1ed0a030c6eee",
+      "current_sha256": "562814551de137cf01db676a11245f3e375cba914f6b92b6412745db092713f8",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "a7a580225601af5b8ec2c7b82fd85d66bae0f538ddacb36663c2c198f6e5a89a"
+    },
+    {
+      "path": "supplement/fixed_map/weighted-secular/jacobi_audit.py",
+      "base_sha256": "efb3240b4e26ff8a0484ba3fb388bec2e4a5f997279e273d4bd82cdb800f06bb",
+      "current_sha256": "41e1c8fd078607b3394819b7793fd3b95ae01811f65f687c1c7f512fb2e47de6",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "9be95e403626ed0350d898cce8206177981fa3efcf7f0503f1a1d7fc84636ba4"
+    },
+    {
+      "path": "supplement/fixed_map/weighted-secular/weighted_probe.py",
+      "base_sha256": "d88a1d86345148de4a4c594d18d321c2774da55e445f9075700197fd287eeea9",
+      "current_sha256": "c29d28128b5f0d4f5a1e5e57943378dad5711d6b0fc56b80be7f2fc08abf6e7a",
+      "guard_stripped_normal_ast_equal": true,
+      "normal_ast_sha256": "e9cc18dfa063fe15194919fbbcc4848d23798f63b216e274a384bcefe713aa25"
+    }
+  ]
+}

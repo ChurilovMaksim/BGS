@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Exact finite regression for bandlimited_correlation_extension.md."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction as F
 from itertools import permutations, product
 from math import prod, factorial

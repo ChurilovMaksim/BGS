@@ -3,6 +3,10 @@
 All phase centres below are auxiliary finite experiments. The original
 tau=10^-80 is not resolved at these small dimensions.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 from pathlib import Path
 import numpy as np

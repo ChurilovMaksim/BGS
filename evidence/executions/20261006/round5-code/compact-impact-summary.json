@@ -1,0 +1,29 @@
+{
+  "actual_importlib": {
+    "snapshot": "pre-review; 167 guarded modules unchanged by scanner review",
+    "passed": 668,
+    "total": 668,
+    "raw_sha256": "23a2caac9256ff45c9e62a65373b83a4cd722128d1a1bb9539470d028fbd9e53"
+  },
+  "numeric_tables": [
+    {
+      "artifact": "evidence/numerical/goe_spacing_monotone_v2.json",
+      "reproduced_raw_sha256": "93b1893c11b01a0d59c2953418802e7417a5e63997315afe8471121622731c3e",
+      "maximum_numeric_difference": 0.0,
+      "nonnumeric_fields_equal": true
+    },
+    {
+      "artifact": "evidence/numerical/matched_window_count_variance_monotone_v2.json",
+      "reproduced_raw_sha256": "e76d70f45446f909372f893c5bceb26f5781af68330f03aa4a9ebf4ed5c00003",
+      "maximum_numeric_difference": 0.0,
+      "nonnumeric_fields_equal": true
+    }
+  ],
+  "spectral_impact": {
+    "spectra_checked": 168,
+    "exact_ties_raw": 0,
+    "exact_ties_unfolded": 0,
+    "q_overflow_cases": 0,
+    "max_q_product": 5748960
+  }
+}

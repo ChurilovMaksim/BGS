@@ -5,6 +5,10 @@ The growth-classification proof is analytic; finite floating-point eigenvalues
 are not certificates of its asymptotic exponent.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

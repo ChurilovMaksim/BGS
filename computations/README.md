@@ -194,3 +194,7 @@ The 4 October `verification/expansion_wavepacket_audit.py --output <path>` check
 ### Numerical preprocessing correction, 6 October 2026
 
 The old polynomial unfolding could reverse level order, and a zero spread could hide a nonzero mean difference. Historical outputs are preserved, not endorsed. [The correction record](../record/audits/spectral_diagnostics_correction_20261006.md) specifies the new order-preserving smoothing, explicit undefined-value handling, negative tests and nine-setting sensitivity. These remain finite descriptive diagnostics; q-values are not assumed IID and no BGS conclusion follows.
+
+## Standalone certificate and input contracts
+
+Assertion-dependent maintained scripts reject optimized Python before imports or output. Explicit-check-only controls retain their stated optimized-mode contract. See [the assertion policy](maintenance/ASSERTION_POLICY.md) and [the fifth-review repair record](../record/round5_code_review_20261006.md) for coverage, domain tests and numerical evidence impact.

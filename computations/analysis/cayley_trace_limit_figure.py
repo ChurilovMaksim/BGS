@@ -2,6 +2,10 @@
 """Illustrate complete finite Cayley-trace laws; not a theorem certificate."""
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 import hashlib
 import json

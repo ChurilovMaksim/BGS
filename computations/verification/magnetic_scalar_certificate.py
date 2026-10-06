@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Independent one-dimensional polynomial certificate, not a BGS proof."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from pathlib import Path
 import json
 import sys

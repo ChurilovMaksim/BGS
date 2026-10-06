@@ -1,4 +1,8 @@
 """Independent exact symbolic/rational coefficient check. Float strings in output are display only; every acceptance assertion is exact."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sympy as s
 from fractions import Fraction as F
 from math import factorial

@@ -7,6 +7,10 @@ No finite enumeration establishes the infinite-dimensional injectivity theorem.
 No output files are written unless --output is explicitly supplied.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as F
 from math import comb, factorial

@@ -4,6 +4,10 @@
 Run from the repository root with numpy and sympy installed.
 The modular Weyl law and classical identities are also derived in the report.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 import sympy as s

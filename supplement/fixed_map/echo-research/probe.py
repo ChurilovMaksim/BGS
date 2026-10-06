@@ -1,4 +1,8 @@
 """Exploratory echo traces of actual odd Pell propagators, not a proof."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json, math, sys, time
 from pathlib import Path
 import numpy as np

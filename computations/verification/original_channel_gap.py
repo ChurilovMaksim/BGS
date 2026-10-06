@@ -4,6 +4,10 @@ Base BGS fa007c498fe116a814a90aa3215cfd65b1f2a154, D6 versus derived D8.
 All odd N=3..65 for spectral multiset comparison; N below for full k count.
 Exact rational arithmetic checks the counting combinatorics separately.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json, math, platform, time
 from fractions import Fraction
 import numpy as np

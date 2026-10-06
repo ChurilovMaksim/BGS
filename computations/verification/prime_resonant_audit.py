@@ -8,6 +8,10 @@ Spectral comb controls use abstract powers d=3,7,10, not cat orders.
 Exact Gaussian rationals and numerical diagnostics are kept separate.
 No asymptotic block cancellation, priority or BGS certification.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Exact symbolic and finite-field checks; not an asymptotic energy proof."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from collections import defaultdict
 import hashlib

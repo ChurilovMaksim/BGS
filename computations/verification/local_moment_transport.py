@@ -7,6 +7,10 @@ by the maintained direct radial Laurent generator. Floating unitary
 matching is a diagnostic with an explicit tolerance, not a certificate.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as Q
 import hashlib

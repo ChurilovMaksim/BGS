@@ -6,6 +6,10 @@ central term has the stated finite remainder; the sixth pairing sum is only
 an asymptotic proxy, explicitly labeled as such.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

@@ -3,6 +3,10 @@
 The exponent epsilon is an independent test parameter here; these
 moderate-size experiments do NOT simulate the frozen 10^-80 coupling.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 import numpy as np
 

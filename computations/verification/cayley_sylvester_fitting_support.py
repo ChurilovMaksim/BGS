@@ -10,6 +10,10 @@ and therefore order-three support is precisely the corank>=3/Fitting locus.
 """
 from __future__ import annotations
 
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import math
 import sympy as sp
 

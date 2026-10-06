@@ -3,6 +3,10 @@
 No independence of the actual phases is assumed. Auxiliary exponents test
 identities away from zero; the original tau is also checked at tiny N.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction
 from decimal import Decimal, localcontext
 from itertools import combinations, product

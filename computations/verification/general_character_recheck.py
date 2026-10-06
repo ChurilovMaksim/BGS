@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Independent exact signed-trace arithmetic and finite character controls."""
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse,hashlib,json,math
 from pathlib import Path
 import numpy as np

@@ -1,3 +1,7 @@
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sympy as s
 q,p=s.symbols('q p',real=True)
 r=(1-s.cos(14*s.pi*q))*(1+s.cos(2*s.pi*q))

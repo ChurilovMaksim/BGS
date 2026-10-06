@@ -2,6 +2,10 @@
 """Exact finite Fourier/mark controls and separate Gaussian diagnostics.
 No finite check proves ergodicity, weak limits, or cat-map asymptotics.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as F
 import hashlib

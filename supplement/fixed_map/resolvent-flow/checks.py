@@ -2,6 +2,10 @@
 
 Run: OPENBLAS_NUM_THREADS=1 python3 build/resolvent-flow/checks.py
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from fractions import Fraction
 from pathlib import Path
 import importlib.util

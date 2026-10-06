@@ -1,3 +1,7 @@
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np,json,math
 maxerr=0.; checks=0; maxratio=0.; worst=None
 for N in range(3,66,2):

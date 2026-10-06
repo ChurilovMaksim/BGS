@@ -3,6 +3,10 @@
 complex128; deterministic Fourier/biorthogonal comparisons.
 This does not prove an asymptotic statement and does not simulate BGS.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import json

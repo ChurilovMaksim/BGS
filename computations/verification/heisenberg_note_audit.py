@@ -7,6 +7,10 @@ Planck-scale FUP, CUE universality, or priority claim is certified by this run.
 Resource caps: matrices N<=32, factorial cycles k<=5, integer digit side
 length <=4096; no Monte Carlo.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import hashlib
 import importlib.util

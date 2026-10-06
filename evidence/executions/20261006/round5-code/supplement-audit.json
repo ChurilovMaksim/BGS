@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "inventory_files": 115,
+  "scope": "Source integrity, Python syntax and selected finite replays; not a proof of asymptotic claims.",
+  "checks": [],
+  "source_manifest_sha256": "00ec584ded81f7e4f375ebcbe7f8bbb1a5607aff52316c4b0459b489fb04f667",
+  "not_rerun": [
+    "Wolfram scripts",
+    "echo Monte Carlo exploration",
+    "redesigned-symbol monodromy experiment"
+  ],
+  "python": "3.12.14",
+  "audit_only": true
+}

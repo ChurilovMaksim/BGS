@@ -7,6 +7,10 @@ finite n=128 half-loss certificate, Kraus/characteristic-function consistency,
 and amplifier cross-operator decay. Numerical checks are diagnostics only.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse, hashlib, importlib.util, json, random, sys
 from fractions import Fraction as F
 from math import comb, factorial

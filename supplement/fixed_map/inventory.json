@@ -36,8 +36,16 @@
     {
       "path": "algebraic-return/exact_coefficients.py",
       "original_path": "build/algebraic-return/exact_coefficients.py",
-      "sha256": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
-      "bytes": 4781
+      "sha256": "d57f6fe39118eb7fb95e3de70301c1bbcdf74ab7968a80d0595bcc5af1df2421",
+      "bytes": 4982,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "1a34c8e545d59931f581621243c7364f115185df57224274f6cb3961a9c11c3c",
+          "bytes": 4781,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "algebraic-return/exact_return_theorem.md",
@@ -48,8 +56,16 @@
     {
       "path": "algebraic-return/export_certificates.py",
       "original_path": "build/algebraic-return/export_certificates.py",
-      "sha256": "00fc3124c26c96444c856176d69da3e882c2e649de234505e05710cb92266c7f",
-      "bytes": 954
+      "sha256": "12499c280b46bb51cab922e4474368901a31215ef16a8e9f2b60d28fa0d74ee9",
+      "bytes": 1155,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "00fc3124c26c96444c856176d69da3e882c2e649de234505e05710cb92266c7f",
+          "bytes": 954,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "algebraic-return/quantitative_bounds.json",
@@ -60,8 +76,16 @@
     {
       "path": "algebraic-return/quantitative_bounds.py",
       "original_path": "build/algebraic-return/quantitative_bounds.py",
-      "sha256": "f4e0ad40cc8c1bf63e53f2580460598902746ba1ad1828ba45743b71f3a3e95e",
-      "bytes": 2054
+      "sha256": "b25f354b1041eea3da6f62d7b857ae6c687c46467160b7539fc4874bf3a30ac1",
+      "bytes": 2255,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "f4e0ad40cc8c1bf63e53f2580460598902746ba1ad1828ba45743b71f3a3e95e",
+          "bytes": 2054,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "algebraic-return/quantitative_split.md",
@@ -84,14 +108,30 @@
     {
       "path": "algebraic-return/simple_spectrum.py",
       "original_path": "build/algebraic-return/simple_spectrum.py",
-      "sha256": "224307655a9ca4de5a2fe0df23809c7cf9cc1792430f514a90cf28097bd3078b",
-      "bytes": 9375
+      "sha256": "f0cb465a8d7b32a3d09d8f578b57ecc21498e48caf286c6b6b94b232244096c6",
+      "bytes": 9576,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "224307655a9ca4de5a2fe0df23809c7cf9cc1792430f514a90cf28097bd3078b",
+          "bytes": 9375,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "algebraic-return/verify_cpp.py",
       "original_path": "build/algebraic-return/verify_cpp.py",
-      "sha256": "acd9b6ab646117b9d49c082e4874682d2e4b3c01b7328e146060cf6da3f28ebd",
-      "bytes": 2615
+      "sha256": "90b01115e01f1f2951dad3255fb15a20793f0f2f7e811c6529014b2c3f0ed72d",
+      "bytes": 2816,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "acd9b6ab646117b9d49c082e4874682d2e4b3c01b7328e146060cf6da3f28ebd",
+          "bytes": 2615,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "ergodic-transfer/audit.md",
@@ -126,8 +166,16 @@
     {
       "path": "ergodic-transfer/finite_checks.py",
       "original_path": "build/ergodic-transfer/finite_checks.py",
-      "sha256": "f19739d9715140afe68f591fcf2c78e08573393817c66a94728a77e456bf003c",
-      "bytes": 6364
+      "sha256": "9eb38f495c348bba2bc4c09e468c8215d973534454e0a943c5472d347c4f81ba",
+      "bytes": 6565,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "f19739d9715140afe68f591fcf2c78e08573393817c66a94728a77e456bf003c",
+          "bytes": 6364,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "coherent-return/gap_identity.json",
@@ -138,8 +186,16 @@
     {
       "path": "coherent-return/gap_identity.py",
       "original_path": "build/coherent-return/gap_identity.py",
-      "sha256": "b5ce46d597e27f56bfbd5829a4f30e515e2816fe6d8ae87e1941b295b4ea5a67",
-      "bytes": 2439
+      "sha256": "dde7b79b5a70f7476e1e007285ff369aeda6009dc67fea4b881637a52a38de6d",
+      "bytes": 2640,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "b5ce46d597e27f56bfbd5829a4f30e515e2816fe6d8ae87e1941b295b4ea5a67",
+          "bytes": 2439,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "coherent-return/research_checkpoint.md",
@@ -156,8 +212,16 @@
     {
       "path": "coherent-return/return_memory.py",
       "original_path": "build/coherent-return/return_memory.py",
-      "sha256": "8386e5bbee06699e9edf4543dfdbcc4d4a358798cf0554a0fce2dd0108aa91d5",
-      "bytes": 4302
+      "sha256": "4116c89d81705a1b4693247b706c639727f3529c5af08aef12971aade6344fe4",
+      "bytes": 4503,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "8386e5bbee06699e9edf4543dfdbcc4d4a358798cf0554a0fce2dd0108aa91d5",
+          "bytes": 4302,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "coherent-return/two_level.wl",
@@ -174,8 +238,16 @@
     {
       "path": "design-return/all_dimensions.py",
       "original_path": "build/design-return/all_dimensions.py",
-      "sha256": "5f7f0fb4ea841e137f3d76ac50d6ba289f3b4c98ec9c7d39121ded25dc7b14f5",
-      "bytes": 2090
+      "sha256": "9ab2fd200bb053f9615b57ef767dc67d91edde737feb68913adf5777ef895d7f",
+      "bytes": 2291,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "5f7f0fb4ea841e137f3d76ac50d6ba289f3b4c98ec9c7d39121ded25dc7b14f5",
+          "bytes": 2090,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/checkpoint_20260918.json",
@@ -192,8 +264,16 @@
     {
       "path": "design-return/design_return.py",
       "original_path": "build/design-return/design_return.py",
-      "sha256": "cfebefbf4cfa557f0e3afe367cce0dcdcf29be844441254bebca9a5edddee98b",
-      "bytes": 3394
+      "sha256": "c527f9238971f884f970255fdd7c0cc7940da428b768f9b06ee3e2c668f1432f",
+      "bytes": 3595,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "cfebefbf4cfa557f0e3afe367cce0dcdcf29be844441254bebca9a5edddee98b",
+          "bytes": 3394,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/exact_checks.wl",
@@ -216,8 +296,16 @@
     {
       "path": "design-return/finite_symbol_normal_form.py",
       "original_path": "build/design-return/finite_symbol_normal_form.py",
-      "sha256": "157903a4c943d8262444b2a1c56bcbaea89e322954316590bd4f0ea7509f666d",
-      "bytes": 2125
+      "sha256": "a72b76653dc01d1faf42eded199c95b1e99dd2755e595b8d11c93235d04041a7",
+      "bytes": 2326,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "157903a4c943d8262444b2a1c56bcbaea89e322954316590bd4f0ea7509f666d",
+          "bytes": 2125,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/fixed_coupling_barrier.md",
@@ -234,8 +322,16 @@
     {
       "path": "design-return/fixed_kick_bandwidth.py",
       "original_path": "build/design-return/fixed_kick_bandwidth.py",
-      "sha256": "779259081f57d36b3538f7099f32438d0747caa7c8280a14c28dc201c3177447",
-      "bytes": 1153
+      "sha256": "e602fa675065f3221219f35f0deb0ca6f516a96d8471370d06639943d46f9191",
+      "bytes": 1354,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "779259081f57d36b3538f7099f32438d0747caa7c8280a14c28dc201c3177447",
+          "bytes": 1153,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/frozen_crossover.json",
@@ -246,8 +342,16 @@
     {
       "path": "design-return/frozen_crossover.py",
       "original_path": "build/design-return/frozen_crossover.py",
-      "sha256": "bccaf31e881f29e0ef2bff13fda73bab814f24473bf6b0c94836c2e3971cd99a",
-      "bytes": 3834
+      "sha256": "b0148a221f6020a0ddfec15599aeb151261b0757f015254219198fe4b35d8aa2",
+      "bytes": 4035,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "bccaf31e881f29e0ef2bff13fda73bab814f24473bf6b0c94836c2e3971cd99a",
+          "bytes": 3834,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/frozen_matrix_check.json",
@@ -258,8 +362,16 @@
     {
       "path": "design-return/frozen_matrix_check.py",
       "original_path": "build/design-return/frozen_matrix_check.py",
-      "sha256": "d17436d7d954e40e52f3ec475e0f8f2c204f37ee4f99bd1614450ddb93efcc8f",
-      "bytes": 2555
+      "sha256": "7aaa5534e827c249d0b59361f2b1fe94209b2dba20d9a2df8264829a33c63e9f",
+      "bytes": 2756,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "d17436d7d954e40e52f3ec475e0f8f2c204f37ee4f99bd1614450ddb93efcc8f",
+          "bytes": 2555,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/frozen_sharp_return.json",
@@ -270,8 +382,16 @@
     {
       "path": "design-return/frozen_sharp_return.py",
       "original_path": "build/design-return/frozen_sharp_return.py",
-      "sha256": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
-      "bytes": 4635
+      "sha256": "50a9cd0610505b383f6f685455ebf55f9519a1ff853f2a275045380ee471bc19",
+      "bytes": 4836,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "d5092a24a06e65a5b8c1b219f428167f55476e5839d5d297d36c8ccec9c52583",
+          "bytes": 4635,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/research_checkpoint.md",
@@ -288,8 +408,16 @@
     {
       "path": "design-return/sparse_orbit_checks.py",
       "original_path": "build/design-return/sparse_orbit_checks.py",
-      "sha256": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
-      "bytes": 4134
+      "sha256": "587356d1d1a89a33de96ab0ae484c582cc00190e2ade3a5c06dbe8ee6523b95a",
+      "bytes": 4335,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "4c84ac17fa0fa3d8cf7118089a7c84d2ff05b33e0a7b851920dccf02e78ef06b",
+          "bytes": 4134,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "design-return/sparse_orbit_checks.wl",
@@ -348,8 +476,16 @@
     {
       "path": "block-memory/verify.py",
       "original_path": "build/block-memory/verify.py",
-      "sha256": "3cd46442e4eaf12844d3aedcd7b9d898ba7b4a7f9e41322aa7e9ed7122136f80",
-      "bytes": 15014
+      "sha256": "b2bf42d6aa66386a575d902cb4f527880c3d8010cef9f205c09598f336264fc2",
+      "bytes": 15215,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "3cd46442e4eaf12844d3aedcd7b9d898ba7b4a7f9e41322aa7e9ed7122136f80",
+          "bytes": 15014,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "report-audit-20260919/audit.md",
@@ -378,8 +514,16 @@
     {
       "path": "report-audit-20260919/cubic_variance.py",
       "original_path": "build/report-audit-20260919/cubic_variance.py",
-      "sha256": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
-      "bytes": 5739
+      "sha256": "00184f15a2c5fcb6d9383869e5925b271efb12b55b88f464054f718a0bbeac6d",
+      "bytes": 5940,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "8aac89667b421758de80bf35e914afadaa4ce308fb11d8a04a459ffabd74f0b1",
+          "bytes": 5739,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "report-audit-20260919/cue_reference.md",
@@ -420,8 +564,16 @@
     {
       "path": "report-audit-20260919/folded_spectrum_control.py",
       "original_path": "build/report-audit-20260919/folded_spectrum_control.py",
-      "sha256": "6a8e574c09f0df9c164be5661b129125108d3e04e5f1d70774bb9d2f60c26e10",
-      "bytes": 1938
+      "sha256": "6db1a30b58fa6305d547f744adfe99038069175271657d899ed3834a89c7149d",
+      "bytes": 2139,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "6a8e574c09f0df9c164be5661b129125108d3e04e5f1d70774bb9d2f60c26e10",
+          "bytes": 1938,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "report-audit-20260919/independent_variance_review.json",
@@ -432,8 +584,16 @@
     {
       "path": "report-audit-20260919/independent_variance_review.py",
       "original_path": "build/report-audit-20260919/independent_variance_review.py",
-      "sha256": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
-      "bytes": 7208
+      "sha256": "6f4df515f36c8e69e34b174bcaf23905a4300a416aea79b48c4a4d5486ed44b3",
+      "bytes": 7409,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "dd596c7c10113ca058a5efbf7b59c558689a739d9f2438167fb68ea275410654",
+          "bytes": 7208,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "report-audit-20260919/monodromy_eigenangles.npz",
@@ -450,8 +610,16 @@
     {
       "path": "report-audit-20260919/monodromy_experiment.py",
       "original_path": "build/report-audit-20260919/monodromy_experiment.py",
-      "sha256": "e2c7a0881c5f780b6770e99368e60b462fd3a69ae5f0ce89a073d21443fb0f06",
-      "bytes": 5215
+      "sha256": "f175a6cc14118b9bd8ba635ad281035a9493d0a22921522e57c30051446b80ed",
+      "bytes": 5416,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "e2c7a0881c5f780b6770e99368e60b462fd3a69ae5f0ce89a073d21443fb0f06",
+          "bytes": 5215,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "report-audit-20260919/plot_reference.py",
@@ -480,8 +648,16 @@
     {
       "path": "report-audit-20260919/verify.py",
       "original_path": "build/report-audit-20260919/verify.py",
-      "sha256": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
-      "bytes": 10525
+      "sha256": "a1ec10124f85fc2345ec7fb4f46302195209c128b2dd421a653d219e75b0ef95",
+      "bytes": 10726,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
+          "bytes": 10525,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "secular-route/attempt.md",
@@ -504,8 +680,16 @@
     {
       "path": "secular-route/exact_structure_checks.py",
       "original_path": "build/secular-route/exact_structure_checks.py",
-      "sha256": "da38c8235b6c743a7f635c40e00cff36ffa85f5df48c61820b14ee346413b7c3",
-      "bytes": 5763
+      "sha256": "62d09ef2b941803ce9f7621e9563c9b7286a040036f067b8881dc2997d97161d",
+      "bytes": 5964,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "da38c8235b6c743a7f635c40e00cff36ffa85f5df48c61820b14ee346413b7c3",
+          "bytes": 5763,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "weighted-secular/attempt.md",
@@ -522,8 +706,16 @@
     {
       "path": "weighted-secular/center_checks.py",
       "original_path": "build/weighted-secular/center_checks.py",
-      "sha256": "560ef16e99ec9094b39448fb2938ad8120afe8ff48dbc0adfdf2172df3184ac9",
-      "bytes": 3491
+      "sha256": "72ed4b524f412d97fb5e3613e773579d01acad291aeaf41ac6a372347d08a410",
+      "bytes": 3692,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "560ef16e99ec9094b39448fb2938ad8120afe8ff48dbc0adfdf2172df3184ac9",
+          "bytes": 3491,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "weighted-secular/checkpoint.json",
@@ -546,8 +738,16 @@
     {
       "path": "weighted-secular/determinant_control.py",
       "original_path": "build/weighted-secular/determinant_control.py",
-      "sha256": "84589d025d9e93f8eb890b1b31286ac30cc63f6a017d489e8ad1ed0a030c6eee",
-      "bytes": 4684
+      "sha256": "562814551de137cf01db676a11245f3e375cba914f6b92b6412745db092713f8",
+      "bytes": 4885,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "84589d025d9e93f8eb890b1b31286ac30cc63f6a017d489e8ad1ed0a030c6eee",
+          "bytes": 4684,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "weighted-secular/jacobi_N15.json",
@@ -570,8 +770,16 @@
     {
       "path": "weighted-secular/jacobi_audit.py",
       "original_path": "build/weighted-secular/jacobi_audit.py",
-      "sha256": "efb3240b4e26ff8a0484ba3fb388bec2e4a5f997279e273d4bd82cdb800f06bb",
-      "bytes": 3181
+      "sha256": "41e1c8fd078607b3394819b7793fd3b95ae01811f65f687c1c7f512fb2e47de6",
+      "bytes": 3382,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "efb3240b4e26ff8a0484ba3fb388bec2e4a5f997279e273d4bd82cdb800f06bb",
+          "bytes": 3181,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "weighted-secular/probe_N15.json",
@@ -600,8 +808,16 @@
     {
       "path": "weighted-secular/weighted_probe.py",
       "original_path": "build/weighted-secular/weighted_probe.py",
-      "sha256": "d88a1d86345148de4a4c594d18d321c2774da55e445f9075700197fd287eeea9",
-      "bytes": 5712
+      "sha256": "c29d28128b5f0d4f5a1e5e57943378dad5711d6b0fc56b80be7f2fc08abf6e7a",
+      "bytes": 5913,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "d88a1d86345148de4a4c594d18d321c2774da55e445f9075700197fd287eeea9",
+          "bytes": 5712,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "resolvent-flow/checkpoint.json",
@@ -618,8 +834,16 @@
     {
       "path": "resolvent-flow/checks.py",
       "original_path": "build/resolvent-flow/checks.py",
-      "sha256": "9c80a6021a1b36d4a72a853e0cd4f8fa648af00459f1b295b53267384f9a61c3",
-      "bytes": 8138
+      "sha256": "d691eee9166517076d800defc61cfecec6eb5d4ebd058a199a03f34179d9621c",
+      "bytes": 8339,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "9c80a6021a1b36d4a72a853e0cd4f8fa648af00459f1b295b53267384f9a61c3",
+          "bytes": 8138,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "resolvent-flow/entropy_obstruction.md",
@@ -642,8 +866,16 @@
     {
       "path": "resolvent-flow/low_order.py",
       "original_path": "build/resolvent-flow/low_order.py",
-      "sha256": "a84f30bd6aee32bb4fb4402c39446d26cdf5b173a28282071627acdb73285ab2",
-      "bytes": 2060
+      "sha256": "0d0f912a1b4fae490b36671dbe7681b84e3a7c571852dd75f922167c6256c0f2",
+      "bytes": 2261,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "a84f30bd6aee32bb4fb4402c39446d26cdf5b173a28282071627acdb73285ab2",
+          "bytes": 2060,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "resolvent-flow/low_order_bounds.md",
@@ -660,8 +892,16 @@
     {
       "path": "echo-research/probe.py",
       "original_path": "build/echo-research/probe.py",
-      "sha256": "694391afc4f68f79032fa872221d17ee41a70abe6a582caba7edb129eddad0bd",
-      "bytes": 3478
+      "sha256": "0b86e8f728c144a69bc657b5f8d3fd16b9440e0508404dcf32fe987a2c9cc0ba",
+      "bytes": 3679,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "694391afc4f68f79032fa872221d17ee41a70abe6a582caba7edb129eddad0bd",
+          "bytes": 3478,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "echo-research/results.json",
@@ -672,8 +912,16 @@
     {
       "path": "fixed-map-audit/classical.py",
       "original_path": "build/fixed-map-audit/classical.py",
-      "sha256": "670a26a79259b515448a4620db025771fd41fa35fd38fb1741c13499783190fc",
-      "bytes": 727
+      "sha256": "fdac48da96adbaa3511a611c8a5d9a8494d7b9a5789974947fa83ee07bb64de2",
+      "bytes": 928,
+      "previous_editions": [
+        {
+          "commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+          "sha256": "670a26a79259b515448a4620db025771fd41fa35fd38fb1741c13499783190fc",
+          "bytes": 727,
+          "transition": "Explicit early assertion guard; remaining AST unchanged."
+        }
+      ]
     },
     {
       "path": "fixed-map-audit/conventions.py",
@@ -692,6 +940,46 @@
       "original_path": "build/time-insertion/results.json",
       "sha256": "e497e1f97ea13ebf3f5a24bc564b881f3f8e305b2fbc783685175358decda0c4",
       "bytes": 3872
+    }
+  ],
+  "edition_updates": [
+    {
+      "date": "2026-10-06",
+      "previous_commit": "f285ba510732edd9ee3679b12316df9b12e0dfcb",
+      "reason": "Standalone optimized-execution refusal, verified guard-only AST change. Current edition hashes updated; previous edition hashes and all historical evidence bytes retained.",
+      "paths": [
+        "algebraic-return/exact_coefficients.py",
+        "algebraic-return/export_certificates.py",
+        "algebraic-return/quantitative_bounds.py",
+        "algebraic-return/simple_spectrum.py",
+        "algebraic-return/verify_cpp.py",
+        "ergodic-transfer/finite_checks.py",
+        "coherent-return/gap_identity.py",
+        "coherent-return/return_memory.py",
+        "design-return/all_dimensions.py",
+        "design-return/design_return.py",
+        "design-return/finite_symbol_normal_form.py",
+        "design-return/fixed_kick_bandwidth.py",
+        "design-return/frozen_crossover.py",
+        "design-return/frozen_matrix_check.py",
+        "design-return/frozen_sharp_return.py",
+        "design-return/sparse_orbit_checks.py",
+        "block-memory/verify.py",
+        "report-audit-20260919/cubic_variance.py",
+        "report-audit-20260919/folded_spectrum_control.py",
+        "report-audit-20260919/independent_variance_review.py",
+        "report-audit-20260919/monodromy_experiment.py",
+        "report-audit-20260919/verify.py",
+        "secular-route/exact_structure_checks.py",
+        "weighted-secular/center_checks.py",
+        "weighted-secular/determinant_control.py",
+        "weighted-secular/jacobi_audit.py",
+        "weighted-secular/weighted_probe.py",
+        "resolvent-flow/checks.py",
+        "resolvent-flow/low_order.py",
+        "echo-research/probe.py",
+        "fixed-map-audit/classical.py"
+      ]
     }
   ]
 }

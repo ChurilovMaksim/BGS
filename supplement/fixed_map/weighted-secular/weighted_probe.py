@@ -3,6 +3,10 @@
 No phase average replaces the fixed map. Artificial phase controls are
 explicit comparisons, never evidence of CUE universality.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from itertools import combinations, islice
 import importlib.util

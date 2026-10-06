@@ -6,6 +6,10 @@ Integer square root bounds sqrt(2). Taylor's remainder bounds each cosine.
 The omitted positive tail is bounded geometrically. No floating-point
 arithmetic or external special-function implementation is used.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 from dataclasses import dataclass
 from fractions import Fraction
 from math import factorial, isqrt

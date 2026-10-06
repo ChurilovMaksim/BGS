@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Finite global illustration; not a microscopic-law test or proof."""
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import json
 from pathlib import Path

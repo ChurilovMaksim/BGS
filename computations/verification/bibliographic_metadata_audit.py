@@ -6,6 +6,10 @@ lookup or automatic cache refresh. --self-test checks rejection of mutations.
 An observed source hash identifies bytes seen during review; original publisher
 PDFs are not redistributed and cannot be rehashed by this offline command.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import copy
 import hashlib

@@ -3,6 +3,10 @@
 No floating-point eigenvalues, parameter averaging or asymptotic inference.
 The unrestricted-N proofs are in mathematics/frozen_seven_cut_reduction.md.
 """
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 import json
 from fractions import Fraction as F

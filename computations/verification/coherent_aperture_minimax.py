@@ -8,6 +8,10 @@ category is a proof of a growing-parameter minimax theorem; that proof is TeX.
 No output file is created unless --output or --replay is supplied.
 """
 from __future__ import annotations
+
+# Fail before imports or output when Python removes verification assertions.
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import argparse
 from fractions import Fraction as F
 from math import comb, factorial
