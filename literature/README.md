@@ -1,5 +1,11 @@
 # Literature and external theorem dependencies
 
+[frozen_operator_transfer_sources_20261006.md](frozen_operator_transfer_sources_20261006.md)
+checks the exact product-norm classical mixing leaf and Hölder coding,
+credits prior toral noisy-relaxation/Egorov methods, and separates the
+color-flavor quadratic block from its nonlinear determinant functional.
+Inherited Gibbs inputs and unverified priority remain explicit.
+
 [heisenberg_pair_heat_sources_20261005.md](heisenberg_pair_heat_sources_20261005.md)
 pins the inherited stable Haar input, credits prior unitary cut-and-join
 heat calculus, and separates exact Riemann--Siegel algebra from the

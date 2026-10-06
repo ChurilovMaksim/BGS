@@ -1,5 +1,12 @@
 # Research record
 
+The [operator-transfer programme](frozen_operator_transfer_program_20261006.md)
+records actual growing-band coercivity, the regularized singular gap,
+the Gaussian realization and the exact finite common-noise invariant
+space. Its [review](frozen_operator_transfer_review_20261006.md) records
+three analytic passes by one reviewer and bounded exact author execution.
+Uniform reduced two-copy control and deterministic BGS remain open.
+
 The [pair-heat programme](heisenberg_pair_program_20261005.md) records
 the exact compensated heat formula, actual-start smoothed form factor,
 short-trace information limitation and unresolved deterministic signed

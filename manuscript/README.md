@@ -1,5 +1,11 @@
 # Manuscript
 
+The generated fixed-map chapter now summarizes FM-018's actual Weyl
+coercivity, regularized gap and finite common-noise invariant space.
+The [canonical full proof](../mathematics/frozen_operator_transfer_coercivity.md)
+remains separate; the chapter preserves the open uniform two-copy rate,
+nonlinear functional and original deterministic noise removal.
+
 `BGS_unified.tex` is the single maintained publication entry point on `main`.
 
 The files in `unified_sections/` are source segments of that one manuscript. Some long sections are split into sequential `*_partN.tex` files solely to preserve exact recovered bytes while retaining later corrections already present in `main`; the parts are non-overlapping and are included in order by `BGS_unified.tex`.

@@ -1,5 +1,14 @@
 # Bohigas–Giannoni–Schmit programme
 
+The [6 October continuation](record/frozen_operator_transfer_program_20261006.md)
+proves growing-band Weyl coercivity and a regularized singular gap for
+the unchanged actual map. Its explicit Gaussian ensemble has exactly
+the identity/swap peripheral sector in two copies at every finite odd
+dimension. The [proof](mathematics/frozen_operator_transfer_coercivity.md)
+passed independent internal review. A uniform reduced two-copy rate,
+the full nonlinear correlation functional and original-spectrum noise
+removal remain open; full BGS is OPEN.
+
 The [Heisenberg pair continuation](record/heisenberg_pair_program_20261005.md)
 gives an exact determinant formula for the full stable pair heat
 compensation. For the unchanged frozen operator, its logarithmic trace
@@ -26,7 +35,7 @@ deterministic noise-removal condition remains unestimated; full BGS is OPEN.
   <strong>English</strong> · <a href="README.ru.md">Русский</a>
 </p>
 
-> **Scientific status — 5 October 2026.**
+> **Scientific status — 6 October 2026.**
 > The fixed-strength microscopic BGS statement for the maintained frozen quantum map is **OPEN**. The repository contains project proofs, exact reductions, applications of external theorems with hypothesis maps, formal finite kernels, reproducible computations, and explicit counterexamples to insufficient proof strategies. The sole authority for current claim status is the [claim ledger](record/claim_ledger.md).
 
 The [noise-removal continuation](record/noise_removal_program_20261005.md)

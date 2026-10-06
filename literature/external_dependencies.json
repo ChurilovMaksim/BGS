@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -199,12 +199,22 @@
       "title": "Zeta functions and the periodic orbit structure of hyperbolic dynamics",
       "identifier": "Asterisque 187-188 (1990); https://smf.emath.fr/system/files/filepdf/AST_1990__187-188__1_0.pdf",
       "pinned_version": "Published 1990 SMF PDF",
-      "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66)",
+      "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
       "checked_on": "2026-09-23",
-      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems.",
+      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project.",
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
-        "record/nonlinear_pressure_review_20260923.md"
+        "record/nonlinear_pressure_review_20260923.md",
+        "mathematics/frozen_operator_transfer_coercivity.md",
+        "literature/frozen_operator_transfer_sources_20261006.md"
+      ],
+      "additional_checks": [
+        {
+          "checked_on": "2026-10-06",
+          "locator": "Proposition 2.4 and its complete proof; Theorem 2.2(ii); Appendix III.3",
+          "scope": "New FM-018 classical mixing leaf only; the earlier 2026-09-23 pressure audit remains historical and its date is preserved.",
+          "record": "literature/frozen_operator_transfer_sources_20261006.md"
+        }
       ]
     },
     {

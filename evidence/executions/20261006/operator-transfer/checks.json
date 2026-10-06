@@ -1,0 +1,32 @@
+{
+  "claim_id": "BGS-FM-018",
+  "status": "passed",
+  "arithmetic": "exact Z/(2N) phases, Z cyclotomic polynomials and Fraction/Q(i)",
+  "checks": {
+    "weyl_products": 630576,
+    "metaplectic_entries": 54686,
+    "fourier_rotation_entries": 54686,
+    "twirl_characters": 454,
+    "determinant_functionals": 128,
+    "fourier_fourth_powers": 6544,
+    "fourth_moment_pairs": 16,
+    "rank_one_moment_pairs": 16,
+    "fresh_fixed_discriminators": 3,
+    "symbol_modes": 32,
+    "full_band_generator_cases": 24,
+    "gap_constant_cases": 200,
+    "independent_cyclic_case": 1,
+    "common_noise_noncommutation": 16,
+    "collective_shift_swap_entries": 6544,
+    "swap_partial_traces": 32,
+    "swap_norms": 16,
+    "finite_lie_generation_dimensions": 16,
+    "nonzero_weyl_generation_brackets": 6528,
+    "squared_commutator_laurent_terms": 3
+  },
+  "non_claims": [
+    "No asymptotic operator gap or effective exponent certified by finite checks",
+    "No actual large-N eigenphase statistic, randomness removal or BGS theorem",
+    "No numerical tolerance, Gaussian sample or analytic Lean certificate"
+  ]
+}

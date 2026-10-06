@@ -1,5 +1,12 @@
 # Mathematics
 
+[frozen_operator_transfer_coercivity.md](frozen_operator_transfer_coercivity.md)
+proves actual growing-band Weyl coercivity, the all-noise regularized
+singular gap, its exact Gaussian realization and the common-noise
+two-copy identity/swap peripheral classification. Quantitative reduced
+two-copy control, the nonlinear functional and original noise removal
+remain open.
+
 [heisenberg_pair_heat_formula.md](heisenberg_pair_heat_formula.md)
 gives the exact stable-band heat formula and every signed contraction,
 its Haar spectral profile, and a superpolynomial smoothed form-factor

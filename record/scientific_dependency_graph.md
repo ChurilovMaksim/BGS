@@ -79,6 +79,8 @@ graph TD
   F1 --> F13[BGS-FM-013 bounded fixed-time packet traces]
   F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
   F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
+  F1 --> F18[BGS-FM-018 Weyl coercivity and regularized gap]
+  F6 --> F18
   F1 --> F7[BGS-FM-007 seven-cut transfer]
   F5[BGS-FM-005 exact kick-rank boundary] --> F7
   T1 --> F7
@@ -184,3 +186,9 @@ EXT-KT-2009 credits the prior lattice kernel; EXT-DE-2001 is used only at
 2Q<=N. Neither node has a deterministic closure edge to TRACE-005 or
 BGS-BGS-001. The small-Haar-norm complement obstruction is for a local
 test on an abstract clock, not a counterexample to the maintained map.
+
+FM-018 uses FM-001 and FM-006 with the checked EXT-PP-1990 classical
+mixing leaf. Its common-noise two-copy invariant space is exactly
+identity/swap at finite N,u>0; its reduced asymptotic rate and full
+nonlinear functional remain open. There is no closure edge from FM-018
+to deterministic TRACE-005 or BGS-BGS-001.

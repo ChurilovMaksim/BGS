@@ -1,5 +1,14 @@
 # Evidence
 
+The [6 October operator-transfer run](executions/20261006/operator-transfer/manifest.json)
+and [results](executions/20261006/operator-transfer/checks.json) record
+FM-018's exact modular, cyclotomic and rational controls. The
+[contract](20261006/frozen_operator_transfer_contract.json) states the
+ranges and resources. The [Wolfram response](20261006/frozen_operator_transfer_wolfram.json)
+preserves six True identities and all printed diagnostics. The
+[integration record](executions/20261006-operator-transfer-integration.json)
+separates local checks and manuscript build from the analytic theorem.
+
 The [5 October noise-removal run](executions/20261005/noise-removal/manifest.json)
 and [results](executions/20261005/noise-removal/checks.json) record FLOW-015's
 independent rational generator/character/gap controls and separately labelled

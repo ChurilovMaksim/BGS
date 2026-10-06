@@ -1,5 +1,13 @@
 # Computations
 
+[frozen_operator_transfer_coercivity.py](verification/frozen_operator_transfer_coercivity.py)
+checks integer Weyl/metaplectic phases, cyclotomic twirls, rational
+nonlinear-functional discriminators, common-noise commutators and swap
+identities, and constructive traceless Weyl Lie generation, including
+composite dimensions. The [Wolfram source](verification/frozen_operator_transfer_checks.wl)
+returned six symbolic identity checks with preserved diagnostics.
+These finite controls do not certify analytic gaps or BGS.
+
 [heisenberg_pair_heat_formula.py](verification/heisenberg_pair_heat_formula.py)
 checks exact hook Gram matrices, cut-and-join and two mixed generators,
 complete Wick compensation on genuine diagonal unitaries, triangular

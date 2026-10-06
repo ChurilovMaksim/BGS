@@ -15,3 +15,9 @@
 
 The paper should be framed as a rigorous frontier/obstruction paper, not as a
 positive universality theorem until the excluded open claims are closed.
+
+FM-018 extension: actual growing-band Weyl exclusion and regularized
+singular gap; exact Gaussian realization and the microscopic quadratic
+block; common-noise higher-copy factors and finite identity/swap
+classification. Preserve the open quantitative two-copy, nonlinear
+functional and original signed noise-removal boundaries.

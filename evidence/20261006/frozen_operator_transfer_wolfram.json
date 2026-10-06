@@ -1,0 +1,35 @@
+{
+  "claim_id": "BGS-FM-018",
+  "captured_at_utc": "2026-10-06T06:06:57.516Z",
+  "execution_status": "Evaluated: all six displayed identity checks returned True; diagnostic messages were also printed.",
+  "code_path": "computations/verification/frozen_operator_transfer_checks.wl",
+  "code_sha256": "755d5d86475eea846dc61bee1a341e8a4c7513ef5ca03f9531fef46510cdf920",
+  "requested_time_constraint_seconds": 40,
+  "effective_time_constraint_seconds": null,
+  "kernel_version": null,
+  "checks": {
+    "squaredCommutatorPair": true,
+    "gaussianCharacteristic": true,
+    "sameQuadraticCoefficient": true,
+    "differentQuarticCoefficient": true,
+    "commonNoiseCommutatorEntry": true,
+    "swapNorm": true
+  },
+  "diagnostic_messages": [
+    "MinValue::lpsub: -- Message text not found --",
+    "MaxValue::lpsub: -- Message text not found --",
+    "MinValue::lpsub: -- Message text not found --",
+    "MaxValue::lpsub: -- Message text not found --",
+    "General::messages: Messages were generated which may indicate errors."
+  ],
+  "raw_tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "MinValue::lpsub: -- Message text not found -- \nMaxValue::lpsub: -- Message text not found -- \nMinValue::lpsub: -- Message text not found -- \nMaxValue::lpsub: -- Message text not found -- \nGeneral::messages: Messages were generated which may indicate errors.\n\nOut[1]= <|\"claim\" -> \"BGS-FM-018\", \"checks\" -> <|\"squaredCommutatorPair\" -> True, \"gaussianCharacteristic\" -> True, \"sameQuadraticCoefficient\" -> True, \"differentQuarticCoefficient\" -> True, \"commonNoiseCommutatorEntry\" -> True, \"swapNorm\" -> True|>, \"allPassed\" -> True, \"scope\" -> \"Six symbolic identities; no analytic gap, large-N spectral computation or BGS certificate\"|>"
+      }
+    ],
+    "isError": false
+  },
+  "scope": "Six symbolic identities only. Kernel version, effective cap and kernel runtime were not returned. Diagnostic messages are preserved; the separately recorded exact Python controls do not depend on this evaluation. No analytic gap, nonlinear integral, original spectrum, deterministic noise-removal or BGS certificate."
+}

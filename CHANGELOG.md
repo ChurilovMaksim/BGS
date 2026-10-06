@@ -1,5 +1,20 @@
 # Scientific changelog
 
+## 2026-10-06 — actual Weyl transfer and common-noise invariant classification
+
+- FM-018: whole-growing-band twisted average, complete adjoint-arc
+  frequency coercivity and explicit all-noise regularized singular gap
+  for the unchanged actual fixed-coupling map; constants noneffective.
+- Exact two-pair Gaussian realization and a microscopic massive quadratic
+  block; finite nonlinear and fourth-moment discriminators retain the
+  distinction between channel data and spectral statistics.
+- Exact ordered common-noise higher-copy channel; identity/swap is the
+  entire peripheral space in two copies at every finite odd dimension,
+  including composite N. Uniform reduced shrinking-noise gap is open.
+- Three analytic passes by one fresh reviewer, bounded exact arithmetic
+  and six supplementary symbolic identities with preserved diagnostics.
+  Full nonlinear control, original signed cancellation and BGS remain OPEN.
+
 ## 2026-10-04 — actual-start comparison and circular relaxation
 
 - FLOW-012: original-chain comparison retaining the bounded-trace starting

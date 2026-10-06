@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -1646,6 +1646,36 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ]
+    },
+    {
+      "id": "BGS-FM-018",
+      "title": "Actual Weyl-frequency coercivity, regularized singular gap and exact common-noise two-copy invariant space",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED EXTERNAL CLASSICAL MIXING + INHERITED FM-001/FM-006 + INDEPENDENT INTERNAL REVIEW + EXACT FINITE AND WOLFRAM CONTROLS",
+      "source": "mathematics/frozen_operator_transfer_coercivity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-006"
+      ],
+      "external_dependencies": [
+        "EXT-PP-1990"
+      ],
+      "evidence": [
+        "record/frozen_operator_transfer_review_20261006.md",
+        "evidence/20261006/frozen_operator_transfer_contract.json",
+        "evidence/executions/20261006/operator-transfer/manifest.json",
+        "evidence/executions/20261006/operator-transfer/checks.json",
+        "evidence/20261006/frozen_operator_transfer_wolfram.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_operator_transfer_coercivity.py",
+        "computations/verification/frozen_operator_transfer_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Unchanged actual odd-N map and fixed tau=10^-80. Whole growing Weyl-band twisted averages at T=floor(c log N), R=floor(N^gamma), complete traceless adjoint arcs, commutant frequency energy >=6R^2 and all-u singular gap min(1/(128T^2),(1-exp(-16uR^2))/8); constants/startup noneffective. Exact two-pair Gaussian realization gives massive quadratic block at microscopic source for u=N^-alpha, 0<alpha<1+2gamma. Fresh-step channel trace is not fixed-ensemble spectral ramp; equal mean adjoint channels need not determine nonlinear functionals or fourth spectral moments. Exact common-noise higher-copy channel retains noncommuting pair factors; at k=2 its entire peripheral sector is precisely identity/swap for each finite odd N>=3 and u>0, including composite N. No uniform reduced two-copy rate or full nonlinear integral control. Original signed Heisenberg statistic, higher factorial cancellation, deterministic noise removal, TRACE-005 and BGS remain OPEN. No world priority, external referee or analytic Lean certificate."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

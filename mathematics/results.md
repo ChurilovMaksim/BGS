@@ -1,5 +1,29 @@
 # Current results and exact scope
 
+## Actual Weyl transfer and common-noise invariants, 6 October 2026
+
+[FM-018](frozen_operator_transfer_coercivity.md) proves a whole-growing-band
+twisted average for the unchanged actual map at logarithmic time.
+Complete adjoint spectral arcs, including every traceless commuting
+operator, have diffusion energy at least $6R_N^2$. The explicit regularized
+channel has singular gap
+$\min\{(128T_N^2)^{-1},(1-e^{-16uR_N^2})/8\}$ for every u>0,
+without normality. Its two-pair Gaussian realization supplies the
+massive quadratic block at a microscopic source, for
+$u_N=N^{-\alpha}$, $0<\alpha<1+2\gamma$. Constants are noneffective.
+
+The exact common-noise two-copy channel has only identity/swap peripheral
+invariants for every finite odd N>=3, including composite N. Its pair
+generators do not commute; the reduced finite-N gap is positive but
+has no proved asymptotic rate. Finite ensembles with the same averaged
+one-copy channel have different nonlinear functionals and fourth moments,
+so a quadratic gap alone supplies no spectral universality.
+
+Independent internal review checked O1--O29 relative to the pinned
+classical and inherited prerequisites. Exact controls are finite evidence.
+Quantitative common-noise control, the full nonlinear integral and
+actual deterministic signed cancellation remain OPEN.
+
 ## Exact pair heat and actual-start smoothing, 5 October 2026
 
 [FLOW-021](heisenberg_pair_heat_formula.md) diagonalizes the stable

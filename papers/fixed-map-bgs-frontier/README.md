@@ -1,5 +1,11 @@
 # Fixed-map BGS frontier
 
+FM-018 adds growing-band actual Weyl coercivity, a specified regularized
+singular gap and exact finite common-noise two-copy invariant classification.
+The reduced asymptotic gap and original signed spectral comparison are
+open. Its canonical proof and internal review remain linked from the
+claim registry; inclusion does not promote BGS to a proved claim.
+
 **Status:** publication candidate scope; not a submission or acceptance record.
 
 This directory deliberately does not duplicate theorem proofs. Its

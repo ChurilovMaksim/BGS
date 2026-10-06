@@ -1,8 +1,8 @@
 # Fixed-map spectral statistics: exact reductions and the remaining estimate
 
-**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FLOW-021`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
+**Claim IDs:** `BGS-FM-005`, `BGS-FM-006`, `BGS-FM-007`, `BGS-FM-008`, `BGS-FM-009`, `BGS-FM-010`, `BGS-FM-011`, `BGS-FM-012`, `BGS-RES-005`, `BGS-RES-006`, `BGS-RES-007`, `BGS-LOOP-001`, `BGS-TRACE-005`, `BGS-TRACE-007`, `BGS-TRACE-008`, `BGS-CUE-001`, `BGS-FLOW-001`, `BGS-FLOW-002`, `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-005`, `BGS-FLOW-006`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FLOW-014`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-FLOW-018`, `BGS-FLOW-019`, `BGS-FLOW-020`, `BGS-FLOW-021`, `BGS-FM-018`, `BGS-FM-017`, `BGS-FM-013`, `BGS-FM-016`, `BGS-TRACE-013`, `BGS-TRACE-010`, `BGS-TRACE-011`, `BGS-BGS-001`
 
-**Status, 5 October 2026.** The fixed-map BGS target is open. This chapter
+**Status, 6 October 2026.** The fixed-map BGS target is open. This chapter
 consolidates the recovered research, states the deterministic all-order
 criterion and proves its auxiliary original-chain version. The
 [supplement](../supplement/fixed_map/README.md) contains full derivations,
@@ -1318,6 +1318,94 @@ $N^{-2}\sum_mw(m/N)(|p_m(U_N)|^2-m)$, other Fourier bands and all
 higher factorial counterterms remain open. Exact determinant
 self-inversiveness supplies no missing uniform quantum remainder.
 The complete deterministic BGS target remains OPEN.
+
+## Actual Weyl coercivity, regularized transfer and common-noise invariants
+
+**Claim ID:** `BGS-FM-018`. The
+[full proof](frozen_operator_transfer_coercivity.md) keeps the actual
+$U_N=e^{i\tau NA_N}M_N$, $\tau=10^{-80}$, and its ordinary Weyl dictionary.
+Use normalized Hilbert--Schmidt norm on the traceless space,
+$\mathcal P_N=\operatorname{Ad}U_N$, and let $\Pi_R^0$ project onto
+$0<|\nu|\le R$ in the centered integer-label Weyl basis. Set
+
+$$
+\mathscr L_N=\frac{N^2}{2}\sum_{j=1}^2
+ (2I-\operatorname{Ad}T_N(e_j)-\operatorname{Ad}T_N(e_j)^*),\quad
+\mathcal T_{u,N}=e^{-u\mathscr L_N}\mathcal P_N.
+$$
+
+There are fixed $c,\gamma>0$ and an eventual odd-dimensional threshold
+such that, at $T_N=\lfloor c\log N\rfloor$,
+$R_N=\lfloor N^\gamma\rfloor<N/4$,
+
+$$
+\sup_{|\zeta|=1}
+ \left\|\frac1{T_N}\sum_{j=0}^{T_N-1}
+        \zeta^{-j}\mathcal P_N^j\Pi_{R_N}^0\right\|^2\le\frac1{16}.
+$$
+
+The proof controls every linear combination in the growing band,
+using the exact sin commutator, uniform Egorov and product-Sobolev-norm
+classical correlations. It introduces no independent-eigenphase input.
+For every complete traceless adjoint spectral arc of angular width
+$2/T_N$, its low-frequency mass is at most one quarter. Consequently
+its diffusion energy is at least $6R_N^2$ times its squared norm,
+including every traceless commuting operator. Arbitrary degeneracies
+are allowed; the positive exponent and startup are noneffective.
+
+For every $u>0$, the elementary dissipation argument gives
+
+$$
+\inf_{|\zeta|=1}\sigma_{\min}
+ (\mathcal T_{u,N}|_{\mathcal H_N^0}-\zeta I)
+ \ge d_{u,N}:=\min\{(128T_N^2)^{-1},(1-e^{-16uR_N^2})/8\}.
+$$
+
+No normality is assumed. Two ordered Gaussian Hamiltonian kicks built
+from the real and imaginary parts of $T_N(0,1)$ and $T_N(1,0)$ realize
+$\mathbb E\operatorname{Ad}V_{u,\xi}=\mathcal T_{u,N}$ exactly.
+For $u_N=N^{-\alpha}$, $0<\alpha<1+2\gamma$, one has
+$Nd_{u_N,N}/\log N\to\infty$. Thus the traceless quadratic block
+$I-e^{-s/N+i\omega/N}\mathcal T_{u_N,N}$ has minimum singular value
+at least $d_{u_N,N}/2$ eventually, for fixed $s\ge0$ and real $\omega$.
+This is phase-space diffusion, distinct from FLOW-021 matrix heat.
+
+The full-band classical generator comparison has an actual linear-in-N
+discrepancy. The channel trace at Heisenberg time tends to $1$ in the
+stated noise regime, rather than the spectral ramp, because fresh-step
+noise and fixed-matrix spectral statistics are different. O25 gives an
+exact finite discriminator: uniform Weyl and Weyl-Fourier ensembles
+have the same averaged adjoint, while their fourth-power trace moments
+are respectively $1$ and $N^2$. Their rank-one nonlinear determinant factors
+also differ. These controls are not perturbations of the actual map.
+A gapped Hessian alone does not determine the nonlinear integral.
+
+Retaining the same Gaussian parameters in $k$ copies instead yields
+the ordered common-noise channel
+
+$$
+\mathbb E\operatorname{Ad}(V_{u,\xi}^{\otimes k})
+ =e^{-uN^2Q_{q,k}/2}e^{-uN^2Q_{p,k}/2}
+       \operatorname{Ad}(U_N^{\otimes k}),
+$$
+
+where $Q_{q,k},Q_{p,k}$ are sums of squares of collective commutator generators.
+For $k=2$ the pair factors do not commute. Full Gaussian support and
+explicit Weyl Lie generation prove, for every finite odd $N\ge3$, $u>0$,
+that its whole peripheral space is exactly
+$\operatorname{span}\{I,\mathsf S_N\}$, with eigenvalue $1$. This also
+covers composite $N$. On the orthogonal complement there is a positive
+finite-N singular gap, but **no uniform shrinking-noise rate** is proved.
+Independent-copy tensorization would erase these common-ensemble moments.
+
+The [source review](../literature/frozen_operator_transfer_sources_20261006.md)
+credits prior noisy-relaxation methods and checks the exact classical
+mixing leaf. The [internal audit](../record/frozen_operator_transfer_review_20261006.md)
+reconstructed O1--O29 relative to the inherited Anosov/Gibbs inputs.
+Exact finite controls do not prove the analytic asymptotics or priority.
+Quantitative reduced two-copy control, the full nonlinear functional and
+the original signed Heisenberg noise defect remain OPEN. No deterministic
+BGS conclusion follows from the regularized gap or finite uniqueness.
 
 ## The exact deterministic noise-removal obligation
 

@@ -1,0 +1,65 @@
+{
+  "claim_id": "BGS-FM-018",
+  "mathematics": {
+    "assertion_tested": "Exact finite Weyl/metaplectic/Fourier phases and twirl characters; actual-symbol support and full-band alias isolation; rational gap constants and an independent cyclic resolvent control; two ensembles with identical quadratic channel and different nonlinear rank-one functional/fourth-power moments; common-noise commutator and swap identities; constructive traceless Weyl Lie generation.",
+    "coefficient_domain": "Z/(2N) integer phases, exact Z cyclotomic polynomial arithmetic, Fraction rational numbers and rational real/imaginary pairs Q(i); no floating arithmetic",
+    "conventions": "Odd N>=3; integer-label ordinary W_N(a,b)=(-1)^(ab) T_N(a,b) with alias phases retained; S=[[3,4],[2,3]], F_xy=exp(2pi i xy/N)/sqrt(N); normalized one-copy and two-copy Hilbert-Schmidt norms; actual raw-symbol coordinates (k,ell) correspond to ordinary labels (ell,k).",
+    "inputs": [
+      "mathematics/frozen_operator_transfer_coercivity.md",
+      "mathematics/fixed_model_symmetry_theorem.md",
+      "mathematics/nonlinear_bracket_pressure.md",
+      "literature/frozen_operator_transfer_sources_20261006.md",
+      "computations/verification/frozen_operator_transfer_coercivity.py",
+      "computations/verification/nonlinear_pressure_variance.py"
+    ],
+    "bounds": {
+      "weyl_metaplectic_fourier_N": "all odd 3..13",
+      "weyl_labels": "Every pair of centered labels, with four additional adversarial wrapped first labels, and every coordinate entry",
+      "twirl_labels": "All centered labels at all odd N=3..13, including composite N=9",
+      "functional_fourth_moment_common_noise_swap_lie_N": "all odd 3..33",
+      "functional_r": [
+        "0",
+        "1/2",
+        "3/4",
+        "15/16"
+      ],
+      "fourier_fourth_powers": "Every residue label at all odd N=3..33",
+      "fresh_versus_fixed_N": [
+        3,
+        5,
+        7
+      ],
+      "actual_symbol_modes": 32,
+      "generator_alias_N": "all odd 19..65",
+      "gap_constant_T": "1..200",
+      "independent_cyclic_control_T": 40,
+      "lie_generation": "Every nonzero residue label at each stated dimension; nonzero modular commutator coefficient and constructive reachability",
+      "squared_commutator_laurent_terms": 3
+    },
+    "non_claims": [
+      "No finite check proves the asymptotic growing-band estimate, the singular gap, effective constants or a uniform two-copy rate",
+      "No full nonlinear determinant integral, actual large-N spectrum, Gaussian sample, stochastic path, original-map noise removal or BGS limit is computed",
+      "Finite residue-generation controls do not replace the general O29 Lie and commutant proof; no analytic Lean or world-priority certificate"
+    ]
+  },
+  "execution_artifacts": [
+    "mathematics/frozen_operator_transfer_coercivity.md",
+    "mathematics/fixed_model_symmetry_theorem.md",
+    "mathematics/nonlinear_bracket_pressure.md",
+    "literature/frozen_operator_transfer_sources_20261006.md",
+    "computations/verification/frozen_operator_transfer_coercivity.py",
+    "computations/verification/nonlinear_pressure_variance.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14",
+      "role": "Standard library only; one inherited exact frequency-map helper is imported"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

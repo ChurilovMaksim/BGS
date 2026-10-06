@@ -1,5 +1,15 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+The [6 October operator-transfer checkpoint](record/frozen_operator_transfer_program_20261006.md)
+proves actual growing-band Weyl coercivity and an explicit regularized
+singular gap. An exact Gaussian product ensemble gives the microscopic
+massive quadratic block. Its common-noise two-copy peripheral sector
+is precisely identity/swap at each finite odd dimension, with no proved
+uniform reduced gap. The [proof](mathematics/frozen_operator_transfer_coercivity.md)
+and [review](record/frozen_operator_transfer_review_20261006.md) distinguish
+these conclusions from the unestimated nonlinear functional and original
+signed noise defect. Actual deterministic BGS remains OPEN.
+
 The [Heisenberg pair checkpoint](record/heisenberg_pair_program_20261005.md)
 resolves the full stable pair heat vector into explicit determinant
 coefficients and signed contractions. A reflection/Cauchy estimate using

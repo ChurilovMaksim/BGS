@@ -4,6 +4,13 @@ This roadmap describes scientific milestones, not promises or deadlines.
 
 ## Programme I — fixed-map microscopic universality
 
+FM-018 now supplies actual growing-band Weyl coercivity and an explicit
+regularized one-copy singular gap. Its common-noise two-copy peripheral
+space is exactly identity/swap at each finite odd N,u>0. The next
+auxiliary estimate is a quantitative gap after removing that sector on
+a vanishing-noise scale; full nonlinear functional and original signed
+comparison must follow. These inputs do not close the milestones below.
+
 **Milestone 1. Heisenberg pair comparison.** Prove the weighted
 Heisenberg-scale pair-trace/mixed-resolvent estimate for the correctly
 desymmetrized frozen propagator on every compact Fourier support.

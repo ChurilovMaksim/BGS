@@ -1,5 +1,18 @@
 # Open mathematical obligations
 
+[FM-018](frozen_operator_transfer_coercivity.md) now proves the actual
+growing-band Weyl exclusion and regularized one-copy singular gap.
+Its common-noise two-copy peripheral space is exactly
+$\operatorname{span}\{I,\mathsf S_N\}$ for each finite odd N>=3,u>0.
+The next question is quantitative: bound the singular gap on the
+orthogonal complement uniformly on a vanishing-noise scale so that its
+mass dominates N^-1. O29 supplies only finite-N positivity, and O27
+prevents combining its pair generators into one commuting exponential.
+Even a quantitative answer must retain the full nonlinear determinant
+functional and justify the ensemble-to-original signed comparison.
+Neither the new channel gap nor finite uniqueness estimates
+$J_{N,w}(U_N)$. The all-order original BGS target remains unchanged.
+
 The [exact pair heat formula](heisenberg_pair_heat_formula.md) now gives
 every signed contraction and a superpolynomial **smoothed** stable-band
 form factor for the actual map at a vanishing logarithmic time.

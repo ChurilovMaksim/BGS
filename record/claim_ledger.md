@@ -1,5 +1,50 @@
 # Claim ledger
 
+## 6 October 2026 — actual Weyl coercivity, regularized gap and common-noise invariants
+
+**BGS-FM-018 — PROJECT PROOF + CHECKED EXTERNAL CLASSICAL MIXING +
+INHERITED FM-001/FM-006 + INDEPENDENT INTERNAL REVIEW + EXACT FINITE
+AND WOLFRAM CONTROLS.** The [proof](../mathematics/frozen_operator_transfer_coercivity.md)
+controls twisted time averages on the whole growing Weyl band
+$R_N=\lfloor N^\gamma\rfloor$ at $T_N=\lfloor c\log N\rfloor$ for the
+unchanged actual fixed-coupling map. Every complete traceless adjoint arc
+of width $1/T_N$, including the commutant, has at least three quarters
+of its mass above that band and diffusion energy at least $6R_N^2$.
+No simplicity or prime-dimension assumption is used; the positive
+exponent and eventual dimension threshold are noneffective.
+
+For the specified phase-space heat channel, O4 gives an all-noise
+singular gap $\min\{(128T_N^2)^{-1},(1-e^{-16uR_N^2})/8\}$ without
+normality. Two ordered Gaussian Hamiltonian kicks realize this channel
+exactly and give a massive quadratic source block at $u=N^{-\alpha}$,
+$0<\alpha<1+2\gamma$. This is distinct from FLOW-021 spectral heat.
+
+The proof also isolates the actual full-band generator discrepancy and
+microscopic perturbation boundaries. An exact pair of finite ensembles
+has identical mean adjoint channels but different nonlinear determinant
+factors and fourth spectral moments. Annealed fresh-step trace powers
+therefore cannot be substituted for quenched spectral statistics.
+
+O26 retains the common Gaussian variables in all copies. Its two-copy
+pair generators do not commute. O29 proves that, for every finite odd
+$N\ge3$, $u>0$, its entire unit-circle sector is exactly
+$\operatorname{span}\{I,\mathsf S_N\}$, using explicit Lie generation
+also at composite N. The reduced finite-N singular gap is positive;
+**no uniform rate as N grows and u shrinks is proved**.
+
+The [programme](frozen_operator_transfer_program_20261006.md),
+[review](frozen_operator_transfer_review_20261006.md) and
+[source audit](../literature/frozen_operator_transfer_sources_20261006.md)
+separate the new implications, inherited area Gibbs input and prior
+noisy-relaxation methods. Three passes by one fresh reviewer are internal
+analytic review; exact finite and six symbolic controls certify only
+their recorded identities. The Wolfram response preserves its diagnostics.
+The next quantitative reduced two-copy estimate, full nonlinear
+functional and original signed noise defect are unproved.
+**Actual unregularized Heisenberg cancellation, higher factorial
+counterterms, TRACE-005 and full deterministic BGS remain OPEN.**
+No external referee, world priority or analytic Lean certificate is claimed.
+
 ## 5 October 2026 — exact Heisenberg pair compensation and actual smoothed form factor
 
 **BGS-FLOW-021 — PROJECT PROOF + PRIOR STABLE HAAR INPUT + INHERITED

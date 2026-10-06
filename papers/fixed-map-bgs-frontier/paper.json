@@ -23,7 +23,8 @@
     "BGS-TRACE-004",
     "BGS-TRACE-006",
     "BGS-TRACE-010",
-    "BGS-TRACE-011"
+    "BGS-TRACE-011",
+    "BGS-FM-018"
   ],
   "authoritative_sources": [
     "mathematics/fixed_model_symmetry_theorem.md",
@@ -42,7 +43,8 @@
     "mathematics/frozen_arithmetic_trace_rigidity.md",
     "mathematics/frozen_effective_gap_floor.md",
     "mathematics/signed_heisenberg_comparison.md",
-    "mathematics/resonant_cubic_density_control.md"
+    "mathematics/resonant_cubic_density_control.md",
+    "mathematics/frozen_operator_transfer_coercivity.md"
   ],
   "external_dependencies": [
     "EXT-BH-2026",
@@ -59,5 +61,5 @@
     "BGS-BGS-001"
   ],
   "verification_commit": null,
-  "note": "Frontier paper: exact/conditional reductions and obstructions; not a positive BGS theorem."
+  "note": "Frontier paper: exact/conditional reductions, regularized operator-transfer results and method boundaries; not a positive BGS theorem. Verification commit remains unset until a submission-specific audit."
 }
