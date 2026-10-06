@@ -106,7 +106,9 @@ Superseded heuristic error-bound subrecords remain only in Git history.
 
 ## What this does not prove
 
-The reduction isolates the fluctuation problem but does not yet bound the
-centered off/off energy uniformly. That is the theorem-draft elliptic route in
-[`elliptic_pencil.md`](elliptic_pencil.md), and even its completion would still
-leave the microscopic BGS bridge open.
+The reduction isolates the fluctuation problem. The corrected bound in
+[`offoff_elliptic_spike_theorem.md`](offoff_elliptic_spike_theorem.md) retains
+the coherent reducible-fiber contribution through Cayley additive energy;
+[`elliptic_pencil.md`](elliptic_pencil.md) records the superseded draft.
+The sharp centered Cayley-energy target and the microscopic BGS conclusion
+remain open.

@@ -179,7 +179,7 @@ joint-trace argument to reach the all-order target.
 | `BGS-CAYLEY-005` | arithmetic fourth-moment frontier | Prove centered Cayley energy `(K-1)^4/p + O(K^(2+o(1)))`, or a genuinely equivalent support/divisor theorem in the intended pointwise regime. |
 | `BGS-RES-003` | analytic resonance frontier | Resolve the nonlinear analytic coboundary equation for arbitrary nonconstant real-analytic observables. |
 | `BGS-INFO-001` | information-theory application frontier | Determine matching minimax upper/lower transitions for the full moment class when physical Gaussian-channel noise vanishes with copy budget. |
-| `BGS-FORMAL-001` | verification-depth task | Rebuild the current 17-module Lean source graph and deepen formalization only where it materially reduces proof risk. |
+| `BGS-FORMAL-001` | verification-depth task | The current 17-module build is verified; deepen formalization only where it materially reduces proof risk, without relabelling analytic results as formalized. |
 
 The principal BGS route is therefore not “prove everything above first”.
 `BGS-TRACE-005` is the direct model-specific obligation. The Cayley,
@@ -470,11 +470,11 @@ For every fixed strictly noisy phase-insensitive Gaussian product channel, momen
 
 ## G. Formalization depth
 
-The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. The historical 16-module build passed on 8 September 2026; the subsequently added `CueLoopKernels` module has source-level status pending a fresh full build.
+The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. The complete 17-module Lean 4.33.1 build, including `CueLoopKernels`, passed on 6 October 2026 (20 Lake jobs); printed axiom lists are preserved in the linked formalization record.
 
 **Open engineering/mathematical task:** formalize load-bearing algebraic pieces when doing so reduces proof risk, especially exact finite-support/cohomological identities and finite Cayley bookkeeping. Do not label source presence as compilation or analytic formalization.
 
 ## Engineering boundary
 
-Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build succeeded for the earlier 16-module revision; a full build including the newer module remains to be recorded. This changes execution status, not the scope of the
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build succeeded for the earlier 16-module revision; the full 17-module build including the newer module is now recorded in `formalization/README.md`. This changes execution status, not the scope of the
 formalized mathematics. Full analytic formalization remains open.

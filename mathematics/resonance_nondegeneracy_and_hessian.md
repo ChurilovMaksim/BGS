@@ -576,10 +576,13 @@ odd parity sector used in earlier project spectral statements. Theorem 1
 must not be inserted into an odd-sector theorem without checking its parity
 hypotheses. The present analytic results concern the variance itself.
 
-The remaining deterministic target is to classify all finite mixed-sign,
-multiorbit zeros at arbitrary radius, or produce an exact nonzero example.
-The remaining BGS target is a positive local-statistics theorem for fixed
-nonarithmetic chaotic dynamics. Neither target is declared solved here.
+The arbitrary-radius finite mixed-sign problem was subsequently closed by
+`extremal_resonance_nondegeneracy.md`; the radius-eight certificate here remains
+a separate finite proof. `finite_orbit_resonance_rigidity.md` further covers
+smooth symbols supported on finitely many signed Fourier orbits. Positivity
+for every nonconstant real-analytic symbol with infinitely many such orbits
+remains open. The separate BGS target is a positive local-statistics theorem
+for fixed nonarithmetic chaotic dynamics; it is not solved by these results.
 
 # Primary references
 

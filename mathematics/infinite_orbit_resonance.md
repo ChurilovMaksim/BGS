@@ -8,7 +8,7 @@ Let A in SL(2,Z) be hyperbolic, C f=f composed with A^T, and v!=0 an integer vec
 
     g=sum_(j in Z)[c_j e_(A^j v)+conjugate(c_j)e_(-A^j v)]
 
-be real, with M1(g)<infinity. Constants may be added without effect. The two signed A-orbits are distinct. In particular (c_j) is absolutely summable. Put
+be real, with M1(g)<infinity. Constants may be added without effect. The two oriented A-orbits are distinct. In particular (c_j) is absolutely summable. Put
 
     S_n=sum_j c_j c_(j+n),
     C_n=sum_j c_j conjugate(c_(j+n)),

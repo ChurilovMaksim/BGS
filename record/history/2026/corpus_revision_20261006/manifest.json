@@ -1,0 +1,36 @@
+{
+  "base_commit": "131e8aac5684f72cc993a54a46237a812a577ae9",
+  "purpose": "Exact pre-revision living-document snapshots. Historical content does not override current status.",
+  "files": [
+    {
+      "source": "README.md",
+      "snapshot": "README.md.txt",
+      "sha256": "03cc50f8bae1308e8856b714df3f337da68915138535c58fa28f26f8a9053fbc"
+    },
+    {
+      "source": "README.ru.md",
+      "snapshot": "README.ru.md.txt",
+      "sha256": "43102c7266cb74e62951024b11a18d825bc4e25089a9dc98c4a9353101f0cbc9"
+    },
+    {
+      "source": "RESEARCH.md",
+      "snapshot": "RESEARCH.md.txt",
+      "sha256": "c4a468896fc47bdc246610947958b58bdec4490eab94699a434a992f71aa4858"
+    },
+    {
+      "source": "record/claim_ledger.md",
+      "snapshot": "record__claim_ledger.md.txt",
+      "sha256": "b78c77a9114f06257a6528c0bf55caf2478abf1b44576bf6c4495c3771586fb5"
+    },
+    {
+      "source": "mathematics/results.md",
+      "snapshot": "mathematics__results.md.txt",
+      "sha256": "9fb18c47917ff5a54949bc4025a8a3e4b229969b08ff8041d81b4a8e39b92e7a"
+    },
+    {
+      "source": "mathematics/README.md",
+      "snapshot": "mathematics__README.md.txt",
+      "sha256": "ba019f5fbb0e89ab43b889ef6fd75ea694197d05128d90d78a9684c339ae2d41"
+    }
+  ]
+}

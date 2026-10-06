@@ -8,9 +8,10 @@ difference polynomial does not behave as a generic polynomial of degree
 discriminant has an exact universal `2`/`K` part times a **fourth power**.
 
 This structure explains the repeated prime exponents seen in every maintained
-exceptional-prime computation.  It also identifies a precise obstruction to a
-naive improvement of the `O(K^4)` global resultant budget: cross-resultants
-between distinct ratio orbits retain genuine `K^4`-scale total mass.
+exceptional-prime computation. The finite cross-resultant data below suggest
+`K^4`-scale total mass on the tested orders. They motivate deprioritizing a
+naive archimedean improvement, but do not establish an asymptotic obstruction
+to improving the `O(K^4)` global resultant budget.
 
 ## 1. Ratio classes
 
@@ -215,6 +216,9 @@ H_r(Y)=1+K P_r(Y).                                       (24)
 
 ## 4. Dedekind sums distinguish the ratio factors
 
+In this section assume `K>=5`, so `m>=2`.  The constant term of `H_r`
+then does not contribute to the coefficient of `Y^(m-1)`.
+
 Write
 
 ```text
@@ -287,6 +291,18 @@ deg(P_s-P_r)=m-1.                                       (33)
 
 This one-degree drop is the source of the exact extra factor of `K` in the
 cross-resultants below.
+
+For `K=3` there is just one ratio class, represented by `r=2`, and directly
+
+```text
+H_2(Y)=1+3Y,  P_2(Y)=Y,  F_2(T)=S_3(T)=3T^2+4.
+```
+
+The coefficient of `Y^0` in `P_2` is `0`, whereas the right-hand side of
+(26) is `1/3`; hence (26) is not asserted at `K=3`.  There are no distinct
+ratio classes to separate or cross-resultants to consider.  The one-factor
+and global discriminant formulas below still hold, with `I_2=J_3=1` and
+`|Disc(S_3)|=48`.
 
 ## 5. Exact cross-resultant square theorem
 
@@ -475,8 +491,9 @@ prime discriminant exponents is structural, not accidental.
 ## 8. Adversarial scaling test: why this does not yet beat `O(K^4)`
 
 The fourth-power theorem initially suggested that the prime-to-`2K` part of
-the discriminant might have only `O(K^3 log K)` logarithmic size.  That
-hypothesis **does not survive larger exact computations**.
+the discriminant might have only `O(K^3 log K)` logarithmic size. The larger
+finite computations below weaken the motivation for that heuristic, but
+cannot refute an asymptotic `O(K^3 log K)` bound.
 
 Using the direct ratio resultants (5), without constructing the enormous full
 difference discriminant, exact computations give the following average
@@ -508,22 +525,24 @@ The corresponding full prime-to-`2K` fourth-power contribution satisfies
 where `J_K^(2K)` denotes removal of the `2`- and `K`-parts before taking the
 logarithm.
 
-These finite exact data are consistent with genuine `Theta(K^4)` total
-cross-resultant mass, not with a useful `O(K^3 log K)` improvement.  Therefore
-the earlier small-`K` heuristic is **REJECTED** and is not used in any theorem.
+These exact integer data, whose logarithms are displayed numerically, suggest
+`K^4`-scale total cross-resultant mass on the tested orders. The earlier
+small-`K` heuristic is therefore deprioritized and is not used in any theorem.
+Finite data do not prove `Theta(K^4)` growth or disprove `O(K^3 log K)`.
 
-This negative result is informative: the discriminant compression is a major
-structural simplification, but a BGS-scale improvement must obtain cancellation
-or sparsity **among the split prime divisors of the cross-resultants**, rather
-than merely bound their total archimedean size.
+The discriminant compression is a structural simplification. Cancellation or
+sparsity **among the split prime divisors of the cross-resultants** remains
+a promising target; these data do not prove that an improvement through total
+archimedean size is impossible.
 
 ## 9. Evidence boundary and next closure target
 
 - Sections 1--7 are exact algebraic consequences of the maintained
   characteristic-zero collision classification, classical cyclotomic field
   discriminants, and the prime-modulus Dedekind-sum equality criterion.
-- The numerical values in Section 8 are exact integer resultant/discriminant
-  computations and are used only to reject an overoptimistic asymptotic route.
+- The numerical values in Section 8 come from exact integer resultant/discriminant
+  computations and are used only to reassess a heuristic, not to settle an
+  asymptotic growth bound.
 - No `O(K^3 log K)` discriminant bound is claimed.
 - No theorem here proves local BGS/GOE universality.
 

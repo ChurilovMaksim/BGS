@@ -1,0 +1,43 @@
+{
+  "arithmetic": "exact rational interval Taylor bounds; Machin formula for pi",
+  "coefficients_over_pi_squared": {
+    "I": [
+      "18799153890287/250000000",
+      "75196615561149/1000000000"
+    ],
+    "-I": [
+      "75716664438851/1000000000",
+      "18929166109713/250000000"
+    ],
+    "R0": [
+      "74627673199217/1000000000",
+      "37313836599609/500000000"
+    ],
+    "-R0": [
+      "38142803400391/500000000",
+      "76285606800783/1000000000"
+    ]
+  },
+  "differences": {
+    "-I": {
+      "signed_difference_over_pi_squared": [
+        "-520048877703/1000000000",
+        "-260024438851/500000000"
+      ]
+    },
+    "R0": {
+      "signed_difference_over_pi_squared": [
+        "568942361931/1000000000",
+        "142235590483/250000000"
+      ]
+    },
+    "-R0": {
+      "signed_difference_over_pi_squared": [
+        "-217798247927/200000000",
+        "-544495619817/500000000"
+      ]
+    }
+  },
+  "pair_remainder_constant_upper": "232682626390308043828726250235250047/31250000000000000000000",
+  "nonclaim": "This certificate checks finite coefficients and constants; the maintained proof supplies all-kappa and centralizer implications."
+}

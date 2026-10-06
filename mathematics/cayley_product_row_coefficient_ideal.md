@@ -18,7 +18,7 @@ The exact two-sided geometric support is now given by the fixed-degree maximal-r
 
 ## 1. The full-cyclotomic coefficient ideal
 
-Let `K` be an odd prime, `L=Q(zeta)`, `O_L=Z[zeta]`, and let `R_1,R_r` be the Galois-normalized dehomogenized product-row polynomials of degree `m=(K-1)/2` in characteristic zero.  Let
+Let `K>=7` be an odd prime, `L=Q(zeta)`, `O_L=Z[zeta]`, and let `R_1,R_r` be the Galois-normalized dehomogenized product-row polynomials of degree `m=(K-1)/2` in characteristic zero.  Let
 
 ```text
 S_0^(r), S_1^(r), S_2^(r)
@@ -32,6 +32,11 @@ J_(K,r)^(3) intersect Z = D_(K,r)^(3) Z,                 (3)
 ```
 
 with positive generator `D_(K,r)^(3)`.
+
+For `K=3,5`, define only the prime-to-`2K` support integers
+`D'_(K,r)^(3)=D'_K^(3)=1`: each row has at most two parameters.
+This is a trivial support convention, not a definition or computation
+of a three-subresultant integral ideal in those small degrees.
 
 Since `J` is a nonzero ideal,
 

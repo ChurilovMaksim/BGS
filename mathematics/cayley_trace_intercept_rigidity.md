@@ -457,7 +457,14 @@ as an exact sparse coefficient vector in `Z[C_K]`.  For prime `K`, equality of t
 - inverse-row double fibres are swaps;
 - every non-inverse double fibre has step-two source classes and the target classes predicted by (9).
 
-The maintained quick regression covers primes through `199`; an explicitly recorded extended run also checked
+The maintained quick regression checks the selected prime orders
+
+```text
+K=7,11,13,17,23,31,47,79,101,127,151,181,199.
+```
+
+It exhausts every normalized ratio and the full trace-class square at each
+listed order, not every prime below `199`. An explicitly recorded extended run also checked
 
 ```text
 K=251,307,401,503,601,701,809.

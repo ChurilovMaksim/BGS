@@ -28,8 +28,7 @@ Let $\Phi_{N,f}$ be the uniform-origin unfolded Laplace functional of
 If $t_N\to0$ and $Nt_N\to\infty$, then
 
 $$
-\lim_{N\to\infty,\ N\ {
-m odd}}\limsup_{\varepsilon\downarrow0}
+\lim_{N\to\infty,\ N\ \mathrm{odd}}\limsup_{\varepsilon\downarrow0}
 \left|\mathbb E\Phi_{N,f}
  (U_{\lfloor2t_N/\varepsilon^4\rfloor}^{\varepsilon})
 -\Phi_{\rm Sine}(f)\right|=0. \tag{2}

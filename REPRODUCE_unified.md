@@ -75,6 +75,87 @@ are in `mathematics/two_clock_gram_falsifier.md` and
 
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 
+## Git checkout and ZIP/archive execution
+
+The runner supports two explicit source modes. In a Git checkout, it requires
+an initially clean worktree unless `--allow-dirty` is deliberately supplied.
+It hashes tracked and nonignored untracked files, checks content again after
+execution, and records the initial local `HEAD` as `input_commit`. That local
+commit is not a verified upstream identity: `upstream_commit` remains null.
+Do not initialize a synthetic Git repository to make an archive look upstream.
+
+A ZIP without `.git` must use an explicit file SHA-256 manifest. The archive
+publisher should generate a manifest for the exact bytes being distributed,
+ship it alongside the archive, and publish its SHA-256 through the delivery
+channel. If no publisher manifest exists, the recipient can create a local
+baseline before running checks:
+
+```sh
+python computations/maintenance/workspace_sources.py --root . \
+  --output build/archive-source-manifest.json
+python computations/maintenance/verify_workspace.py \
+  --archive-manifest build/archive-source-manifest.json \
+  --build build/cmake --logs build/verification-logs \
+  --output build/workspace-verification.json
+```
+
+The manifest schema is `bgs-archive-source-manifest-v1`, with an explicit
+`files` map from relative POSIX paths to SHA-256 and `upstream_commit: null`.
+A recipient-created manifest only establishes a baseline for those local
+bytes; it does not authenticate the publisher, original ZIP, or upstream
+revision. Keep the original manifest rather than regenerating it after a
+failed comparison. For archives, both commit fields and Git status fields
+are null. Neither a hash match nor a successful check is a proof certificate.
+
+Archive inventory includes historical evidence and binary inputs. It excludes
+only the generated/developer directory names listed in
+`computations/maintenance/workspace_sources.py` (notably `build`, `.git`,
+virtual environments, Python caches, `.lake`, and scratch directories).
+Manifest files must live outside the inventoried tree, for example in `build/`.
+Missing, modified, added, unsafe-path, and symlink inputs fail closed; input
+changes during execution fail after saving the execution report. Archive mode
+cannot be combined with `--allow-dirty`, and cannot replace Git mode inside a
+Git checkout. Outputs and build artifacts must stay in `build/` or outside the
+source root. An archive nested inside another repository does not inherit its
+parent's commit identity.
+
+The cheap provenance and byte-hygiene controls are:
+
+```sh
+python -m unittest discover -s computations/maintenance/tests -v
+python computations/verification/text_control_audit.py
+```
+
+These tests exercise temporary Git and non-Git fixtures, unknown/missing
+versions, changed/missing/added source files, unsafe paths, and mutation during
+execution. Temporary test commits have no relation to project provenance.
+The byte audit rejects every C0 byte except TAB and LF in maintained UTF-8
+text; binary formats and immutable `archive/`, `evidence/`, and `papers/`
+history are explicitly outside its editing policy.
+
+## Dependencies and execution limits
+
+Use Python with the exact package versions in `requirements.txt` (CI targets
+Python 3.13), CMake >= 3.20, a C++20 compiler, and Boost development headers.
+The workspace runner rejects missing, unknown, or mismatched pinned Python
+package versions before running checks. Selected C++ checks also require
+identifiable CMake/compiler/Boost versions. The Boost header probe currently
+uses `/usr/include/boost/version.hpp`; a nonstandard Boost installation must
+be supported explicitly rather than reported as a verified unknown version.
+Python-only focused runs do not require CMake, C++, or Boost; direct
+standard-library scripts may still run without the pinned scientific packages,
+but the workspace runner requires the complete pinned Python environment.
+Missing executables and timeouts are recorded as failed checks, never passes.
+
+Build C++ executables afresh from this source tree before a complete replay.
+The runner fingerprints executed binaries/interpreters, sources and logs, but
+does not prove that a preexisting binary was built from a given source. Python
+package artifact hashes and the OS toolchain are not a hermetic lock. Actual
+versions are recorded; Lean/TeX builds are separate and are not inferred from
+a Python/C++ pass. Source fingerprints detect before/after changes, not a
+transient modification restored during execution. Do not edit inputs while
+verification is running.
+
 Run the cheap fail-closed metadata and structural gates first:
 
 ```sh

@@ -61,12 +61,11 @@ for the reproduction commands and evidence boundary.
 Historical drafts remain outside the active import graph. No general analytic
 asymptotic theorem is claimed to have been formalized by this build.
 
-The 20 September `CueLoopKernels` addition is source-level formalization
-pending a successful current Lean build. This session has no local Lean
-executable; earlier 16-module build records do not certify the new module.
-The CI job is configured to run the pinned full project. The publication
-run failed before any job steps executed, so it did not compile this module.
-See `record/fixed_map_publication_20260920.md` for the observed status.
+## Current verified build, 6 October 2026
+
+The pinned Lean 4.33.1 build now passes for all **17 active modules**, including `CueLoopKernels` (20 Lake jobs). The [complete log](../evidence/executions/20261006/original-channel-gap/lean.log) retains printed axiom lists and the [integration receipt](../evidence/executions/20261006/original-channel-gap/integration.json) records the execution scope. Remote formalization CI also passed at `131e8aac5684f72cc993a54a46237a812a577ae9`.
+
+This supersedes the earlier source-only/pending-build status. It certifies the maintained finite/algebraic propositions with the trust boundaries above; it does not formalize the analytic limits, the channel-gap proof, or BGS. The historical September records remain unchanged.
 
 ## Publication revision, 12 September 2026
 

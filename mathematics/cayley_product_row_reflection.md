@@ -83,6 +83,11 @@ If `z` is common, (5) and `z!=0` give `E(z^2)=O(z^2)=0`. Conversely, a common ro
 
 ## 3. Exact order-three support with a smaller fixed-degree problem
 
+For the integral subresultant construction in this section assume `K>=7`.
+At `K=7`, both parity components have degree one; use the top-index
+convention `S_1(E,O)=O`, which is monic, and `S_0(E,O)=Res(E,O)`.
+Thus the coefficient ideal is the unit ideal and `Xi_7=1`.
+
 Let `A` denote the parity component with unit leading coefficient and `B` the other component. Use their characteristic-zero degrees as fixed degree bounds. Brown--Traub's determinantal subresultant criterion, applied to these fixed coefficient arrays, gives
 
 ```text
@@ -118,6 +123,11 @@ some inverse-ratio row pair has at least three common parameters. (11)
 ```
 
 Thus, after removing factors `2,K`, `Xi'_K` has exactly the same **split prime support** as the `r=-1` factor `Lambda'_(K,-1)^(3)` of the full real-trace invariant.
+
+For `K=3,5`, extend only the prime-to-`2K` support by defining
+`Xi'_K=1`, since a row has `m<=2` parameters. The halving identity in
+Theorem 1 still holds, but no degree-1/degree-0 subresultant ideal or full
+integer `Xi_K` is assigned by this small-degree convention.
 
 This formulation is smaller than the full `P,Q` problem: the polynomial degrees are about `m/2` instead of `m`, and only a corank-two condition remains.
 

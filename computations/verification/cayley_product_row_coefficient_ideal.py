@@ -33,6 +33,8 @@ def coefficient_vector(K: int, expr: sp.Expr) -> list[int]:
 
 def selected_coefficients(K: int, r: int) -> list[sp.Expr]:
     """Return all nonzero coefficients of the degree 2,1,0 subresultants."""
+    if K < 7:
+        raise ValueError("three-subresultant integral construction requires K>=7")
     subs = subresultants_in_cyclotomic_ring(K, r)
     selected = subs[-3:]
     assert [poly.degree() for poly in selected] == [2, 1, 0], (K, r)
@@ -72,6 +74,15 @@ def coefficient_ideal_exponent(K: int, r: int) -> tuple[int, int, list[int]]:
     return strip_2K(full_D, K), full_D, invariants
 
 
+def prime_to_2K_order_three_support(K: int, r: int) -> int:
+    """Coarse support including trivial small orders, without fictitious ideals."""
+    if not sp.isprime(K) or K == 2 or not 2 <= r < K:
+        raise ValueError("require odd prime K and normalized 2<=r<K")
+    if K in (3, 5):
+        return 1
+    return coefficient_ideal_exponent(K, r)[0]
+
+
 def check_anchor(K: int, r: int, expected_stripped: int, expected_full: int) -> None:
     stripped, full_D, invariants = coefficient_ideal_exponent(K, r)
     assert stripped == expected_stripped, (K, r, stripped, expected_stripped)
@@ -86,6 +97,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--extended", action="store_true")
     args = parser.parse_args()
+
+    for K in (3, 5):
+        for r in range(2, K):
+            assert prime_to_2K_order_three_support(K, r) == 1
 
     for K, r, stripped, full_D in (
         (7, 2, 1, 2 * 7**2),

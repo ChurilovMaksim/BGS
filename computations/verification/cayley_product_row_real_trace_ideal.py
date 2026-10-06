@@ -100,6 +100,8 @@ def trace_cofactor_pair(K: int, r: int) -> tuple[sp.Poly, sp.Poly, sp.Poly]:
 
 
 def selected_subresultant_coefficients(K: int, r: int) -> tuple[sp.Poly, list[sp.Expr]]:
+    if K < 7:
+        raise ValueError("three-subresultant integral construction requires K>=7")
     modulus, P, Q = trace_cofactor_pair(K, r)
     raw = sp.subresultants(P.as_expr(), Q.as_expr(), T)
     reduced: list[sp.Poly] = []
@@ -164,6 +166,18 @@ def real_trace_ideal_exponent(K: int, r: int) -> tuple[int, int, list[int]]:
     return strip_2K(full, K), full, invariants
 
 
+def prime_to_2K_order_three_support(K: int, r: int) -> int:
+    """Split order-three support, including the trivial small-degree cases.
+
+    No full integral ideal or Smith invariants are assigned at K=3,5.
+    """
+    if not sp.isprime(K) or K == 2 or not 2 <= r < K:
+        raise ValueError("require odd prime K and normalized 2<=r<K")
+    if K in (3, 5):
+        return 1
+    return real_trace_ideal_exponent(K, r)[0]
+
+
 def check_anchor(K: int, r: int, stripped: int, full: int) -> None:
     observed, observed_full, invariants = real_trace_ideal_exponent(K, r)
     assert observed == stripped, (K, r, observed, stripped)
@@ -178,6 +192,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--extended", action="store_true")
     args = parser.parse_args()
+
+    for K in (3, 5):
+        for r in range(2, K):
+            assert prime_to_2K_order_three_support(K, r) == 1
 
     for K, r, stripped, full in (
         (7, 2, 1, 7),

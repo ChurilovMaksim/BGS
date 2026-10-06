@@ -94,10 +94,8 @@ The period-one and period-two fixed-point counts are $4$ and $32$;
 the leading trace amplitudes then imply
 
 $$
-\limsup_{N\ {
-m odd}}|p_1|\le4/\sqrt3,\qquad
-\limsup_{N\ {
-m odd}}|p_2|\le32/\sqrt{21}. \tag{3}
+\limsup_{N\ \mathrm{odd}}|p_1|\le4/\sqrt3,\qquad
+\limsup_{N\ \mathrm{odd}}|p_2|\le32/\sqrt{21}. \tag{3}
 $$
 
 In particular $|p_1|<3$, $|p_2|<8$ eventually, so $K=20$ would be

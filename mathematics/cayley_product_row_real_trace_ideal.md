@@ -120,6 +120,10 @@ Simultaneous inversion sends row pair `(i,j)` to `(-i,-j)` and negates every Cay
 
 ## 4. The canonical order-three real-trace ideal
 
+For the subresultant construction in this section assume `K>=7`, so
+`m>=3` and all three subresultant indices below are defined. The exact
+gcd/intersection identity in Section 3 still holds at `K=3,5`.
+
 Let
 
 ```text
@@ -192,7 +196,12 @@ Lambda'_(K,r)^(3)=prime-to-2K part,
 Lambda'_K^(3)=product_[r] Lambda'_(K,r)^(3),              (21)
 ```
 
-where `[r]` runs over distinct row-ratio classes modulo inversion.
+where `[r]` runs over distinct row-ratio classes modulo inversion. For
+`K=3,5`, define the prime-to-`2K` support `Lambda'_(K,r)^(3)=1`
+and `Lambda'_K^(3)=1` directly: a row has only `m<=2` distinct
+parameters, so an order-three intersection is impossible. This is a
+small-degree support convention, not a claim that the undefined three-
+subresultant integral ideal has been computed.
 
 Theorem 3 gives the exact equivalence
 

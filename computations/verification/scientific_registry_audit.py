@@ -72,7 +72,7 @@ def audit_claims() -> tuple[dict[str, dict], set[str]]:
         source_text = (ROOT / source).read_text(encoding="utf-8", errors="replace")
         if cid not in source_text:
             fail(f"{cid}: stable claim id is not anchored in source {source}")
-        for field in ("evidence", "verifiers", "formalization", "manuscript"):
+        for field in ("evidence", "verifiers", "formalization", "manuscript", "proof_dependencies"):
             values = row.get(field, [])
             if not isinstance(values, list):
                 fail(f"{cid}: {field} must be a list")

@@ -1,4 +1,5 @@
-// Independent exact certificate via affine monomial operators and fixed points.
+// Exact histogram generator via affine monomial operators and fixed points.
+// Default execution generates histograms; it does not independently validate them.
 // No Weyl-state formula is used: O f(x)=e_p(q(l*x+d)) f(u*x+v).
 #include <cstdint>
 #include <iostream>
@@ -38,7 +39,8 @@ int main(int argc,char**argv){try{
   auto c=a.run();for(std::size_t i=0;i<c.size();++i)std::cout<<(i?" ":"")<<c[i];std::cout<<"\n";return 0;
  }
  if(argc!=1)throw std::invalid_argument("usage: magnetic_word_verifier [--histogram p K h m]");
- for(I m=1;m<=6;++m){Audit a(7,3,2,m);auto c=a.run();if(c.back()!=0)throw std::runtime_error("canonicalization");
+ std::cout<<"GENERATED exact affine-word histograms; no independent expected-value check\n";
+ for(I m=1;m<=6;++m){Audit a(7,3,2,m);auto c=a.run();
   std::cout<<"p=7 K=3 m="<<m<<" canonical=";for(I x:c)std::cout<<x<<",";std::cout<<"\n";}
  return 0;
 }catch(const std::exception&e){std::cerr<<e.what()<<"\n";return 1;}}

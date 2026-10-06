@@ -459,16 +459,21 @@ much larger than $N^{-1}$. This is a statement about singular values;
 it does not turn nonnormal pseudospectral modes into eigenvalue counts.
 
 For a continuous compactly supported $w$ in $[a,b]$, the same bound gives
+the following CUE-centered test. For every positive integer $m$, the exact
+Haar-CUE moment is $\mathbb E|\operatorname{Tr}V^m|^2=\min(m,N)$:
+the CUE projection kernel gives $N-(N-m)_+$ by counting the overlap
+of its occupied Fourier modes $0,\ldots,N-1$ with their translate by $m$.
 
 $$
 \frac1{N^2}\sum_m w(m/N)
-  (\operatorname{Tr}_{HS}\mathcal T_{u_N,N}^m-m)
-\longrightarrow-\int_a^b \xi w(\xi)\,d\xi.                  \tag{O24}
+  (\operatorname{Tr}_{HS}\mathcal T_{u_N,N}^m-\min(m,N))
+\longrightarrow-\int_a^b \min(\xi,1)w(\xi)\,d\xi.          \tag{O24}
 $$
 
 Thus a comparison equating this annealed trace test to the actual signed
 CUE test with an error tending to zero would give the wrong limit for
-nonzero nonnegative $w$. A coherent correction must restore the ramp.
+nonzero nonnegative $w$. A coherent correction must restore the CUE
+ramp and plateau; on a band $b<1$ the displayed centering reduces to $m$.
 This diagnoses that proposed comparison, not the BGS conjecture.
 
 ## 10. The nonlinear functional is not determined by its gapped Hessian

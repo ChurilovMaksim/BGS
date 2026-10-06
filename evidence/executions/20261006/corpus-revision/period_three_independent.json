@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "independence": "Direct symbolic Laurent expansion, independent power-sum rational interval implementation; no author helper imports",
+  "coefficients_over_pi_squared": {
+    "I": [
+      "75196.61556114857",
+      "75196.61556114857"
+    ],
+    "-I": [
+      "75716.66443885143",
+      "75716.66443885143"
+    ],
+    "R0": [
+      "74627.67319921724",
+      "74627.67319921724"
+    ],
+    "-R0": [
+      "76285.60680078276",
+      "76285.60680078276"
+    ]
+  },
+  "exact_pair_remainder_upper": "232682626390308043828726250235250047/31250000000000000000000",
+  "assertions": "Fourier moment, radius, all fixed-point derivatives, all three decimal difference intervals, uniform remainder constant"
+}

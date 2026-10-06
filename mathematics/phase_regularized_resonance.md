@@ -25,7 +25,7 @@ These functions are continuous; X_g,Y_g are even. For example,
     sum_(a,j)|xi(v_a)| lambda^j |c_(a,j)|
       =sum_(v!=0)|xi(v)||ghat(v)| <= ||xi|| M1(g).
 
-The stable-coordinate counterpart proves uniform convergence at the other circle. A change of representative multiplies its boundary function by a modulus-one factor. Reciprocal rescaling of xi,eta leaves F_g unchanged.
+The stable-coordinate counterpart proves uniform convergence at the other circle. Under a representative change v_a -> A^t v_a, the filter becomes z^(-t) P_a(z). The weighted boundary functions xi(v_a) P_a(lambda exp(i theta)) and eta(v_a) P_a(lambda^(-1) exp(i theta)) each change by the modulus-one factor sign(tr A)^t exp(-i t theta). Reciprocal rescaling of xi,eta leaves F_g unchanged.
 
 ## 2. Exact finite-polynomial normal form
 

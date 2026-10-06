@@ -10,6 +10,9 @@ import math
 from pathlib import Path
 import platform
 import subprocess
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'maintenance'))
+from workspace_sources import provenance
 import numpy as np
 
 COS, SIN = (1, 0, -1, 0), (0, 1, 0, -1)
@@ -130,7 +133,7 @@ def main():
     args = p.parse_args()
     result = {'producer': 'computations/verification/return_trace_obstruction.py',
               'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-              'input_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+              **provenance(Path(__file__).resolve().parents[2]),
               'python': platform.python_version(), 'numpy': np.__version__,
               'exact': exact_controls(), 'numerical': numerical_controls()}
     args.output.parent.mkdir(parents=True, exist_ok=True)

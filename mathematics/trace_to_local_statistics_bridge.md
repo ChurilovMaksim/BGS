@@ -314,8 +314,13 @@ weighted joint trace comparison for |n|=Theta(N).
 The local-statistics gap can now be stated as an explicit theorem target:
 
 > **Heisenberg trace comparison problem.**  For each fixed `k` and each compact
-> Fourier support, prove (15) for the desymmetrized quantum-map spectrum against
-> the correct COE/CUE/CSE symmetry class. For positive normalized averages and
+> smooth Fourier weight, prove the signed comparison (15S) for the
+> desymmetrized quantum-map spectrum against the correct COE/CUE/CSE
+> symmetry class. Any modulus is outside the complete frequency sum.
+> For unaveraged deterministic CUE comparison, do not replace this target
+> by the all-order absolute criterion (15), which TRACE-010 excludes.
+> Comparisons averaged before taking a modulus have a different scope.
+> For positive normalized averages and
 > a reference Schwartz limit, comparison on every compact Fourier support
 > automatically extends to all Schwartz tests. Hamiltonian energy-window
 > formulations require their own unfolding and boundary treatment.

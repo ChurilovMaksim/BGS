@@ -53,9 +53,29 @@ def exact_replacement_distance(B, s, gamma):
         return mp.sqrt(1-gamma**B)
     ratio=s/(1-s)
     for m in range(1,B+1):
-        prob *= (B-m+1)/m*ratio
+        prob *= mp.mpf(B-m+1)/m*ratio
         total += prob*mp.sqrt(1-gamma**m)
     return total
+
+
+def replacement_precision_regression():
+    """Compare with a direct binomial sum without binary64 intermediates."""
+    with mp.workdps(110):
+        cases = [(20, mp.mpf('0.9375'), mp.mpf('0.9')),
+                 (37, mp.mpf('0.81'), mp.mpf('0.73')),
+                 (100, mp.mpf('0.99'), mp.mpf('0.997'))]
+        worst = mp.mpf(0)
+        for B, s, gamma in cases:
+            reference = mp.fsum(
+                mp.binomial(B, m)*s**m*(1-s)**(B-m)*mp.sqrt(1-gamma**m)
+                for m in range(B+1))
+            error = abs(exact_replacement_distance(B, s, gamma)-reference)
+            assert error < mp.mpf('1e-95'), (B, error)
+            worst = max(worst, error)
+        return {'cases': len(cases), 'decimal_precision': 110,
+                'absolute_tolerance': '1e-95',
+                'maximum_absolute_error': mp.nstr(worst, 20),
+                'reference': 'direct mpmath binomial sum; no Python float division'}
 
 
 def theorem_rhs(u,t):
@@ -76,6 +96,7 @@ def finite_check(u,eta,n,B):
 
 
 def main():
+    precision_regression = replacement_precision_regression()
     max_delta=0.; max_L=0.; points=0
     us=[mp.mpf(1)/16, mp.mpf(1)/32, mp.mpf(1)/100,
         mp.mpf(1)/1000, mp.mpf('1e-6')]
@@ -99,6 +120,7 @@ def main():
       'status':'PASS',
       'scalar_grid_points':points,
       'finite_B_cases':finite,
+      'replacement_precision_regression':precision_regression,
       'max_delta_over_q':max_delta,
       'max_abs_L_minus_4q_over_uq':max_L,
       'max_proved_lhs_over_theorem_rhs':worst_ratio,

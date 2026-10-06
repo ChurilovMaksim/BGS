@@ -99,6 +99,8 @@ def strip_2K(n: int, K: int) -> int:
 
 
 def higher_intersection_integer(K: int, r: int) -> tuple[int, list[int]]:
+    if K < 7:
+        raise ValueError("three-subresultant integral construction requires K>=7")
     subs = subresultants_in_cyclotomic_ring(K, r)
     degrees = [poly.degree() for poly in subs]
     m = (K - 1) // 2
@@ -122,6 +124,15 @@ def higher_intersection_integer(K: int, r: int) -> tuple[int, list[int]]:
     return strip_2K(g, K), degrees
 
 
+def prime_to_2K_order_three_support(K: int, r: int) -> int:
+    """Coarse support including trivial small orders, without fictitious ideals."""
+    if not sp.isprime(K) or K == 2 or not 2 <= r < K:
+        raise ValueError("require odd prime K and normalized 2<=r<K")
+    if K in (3, 5):
+        return 1
+    return higher_intersection_integer(K, r)[0]
+
+
 def check_anchor(K: int, r: int, expected: int) -> None:
     observed, degrees = higher_intersection_integer(K, r)
     assert observed == expected, (K, r, observed, expected)
@@ -132,6 +143,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--extended", action="store_true")
     args = parser.parse_args()
+
+    for K in (3, 5):
+        for r in range(2, K):
+            assert prime_to_2K_order_three_support(K, r) == 1
 
     # Independently recomputed exact anchors from the proof-development pass.
     for K, r, expected in (

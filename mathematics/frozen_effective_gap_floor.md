@@ -26,7 +26,7 @@ q_*=800Q_*10^{80},\qquad
 S_*=6d_*N(N!)D_*,\\
 \mathcal B_N=
 3d_*S_*^N\log H_*+(2Nq_*S_*)^{18S_*^N}
-Jd_*\log(2K_*).
++Jd_*\log(2K_*).
 \end{gathered}                                                \tag{1}
 \]
 Then for \(i\ne j\),
@@ -120,23 +120,37 @@ at most \(C_*\).
 
 Put \(b_j=4000a_j\) and
 \(\Delta=\prod_{i<j}(b_i-b_j)^2\ne0\).
-The \(b_j\), and \(\Delta P_j\), are algebraic integers
-entry by entry, using the explicit spectral-projector
-product and cancelling its denominators against \(\Delta\).
+The entries of \(4000A_N\) and the numbers \(b_j\) are algebraic
+integers. The projector formula
+\(P_j=\prod_{k\ne j}(4000A_N-b_kI)/(b_j-b_k)\) shows that
+\(\Delta P_j\) is integral entry by entry: every denominator factor
+occurs among the squared differences in \(\Delta\).
 Also \(NM_N=\sqrt N\) times roots of unity is integral.
 Therefore \(K=N|\operatorname{Norm}_{E/\mathbb Q}\Delta|\)
-is a positive integer and \(KP_jM_N\) is integral.
+is a positive integer and \(KP_jM_N\) is integral. Here
+\(\operatorname{Norm}_{E/\mathbb Q}(\Delta)/\Delta\) is an
+algebraic integer, being the product of the remaining conjugates in a
+normal closure; it lies in \(E\).
 All conjugate differences \(|\sigma(b_i-b_j)|<2^{14}\),
 so \(K\le K_*\). It follows that all coefficients of
-\(K^J\mathscr P\) are algebraic integers.
+\(\widetilde{\mathscr P}:=K^J\mathscr P\) are algebraic integers.
 
-Substitute \(X_j=\prod_{\ell=1}^rZ_\ell^{n_{\ell j}}\).
+In \(\widetilde{\mathscr P}\), substitute \(X_j=\prod_{\ell=1}^rZ_\ell^{n_{\ell j}}\).
 The resulting Laurent polynomial is nonzero: substitution
-along \(Z_\ell=e^{\alpha_\ell t/t_*}\) recovers the
+along \(Z_\ell=e^{\alpha_\ell t/t_*}\), with \(t_*=\tau N\), recovers \(K^J\) times the
 discriminant of \(e^{itA_N}M_N\), which is not identically
 zero by the imaginary-time witness in `BGS-FM-008`.
-Take its product over all field embeddings. This is a
-nonzero **integer Laurent polynomial**. Multiplication by
+Write this scaled Laurent polynomial as \(Q(Z)\), and put
+\(d_E=[E:\mathbb Q]\). Its coefficient norm is at most
+\(K_*^JC_*\) under every embedding. Take the coefficient-field norm
+\[
+\mathcal NQ(Z)=\prod_{\sigma:E\hookrightarrow\mathbb C}\sigma(Q)(Z).
+\]
+It is nonzero because each factor is nonzero and the Laurent polynomial
+ring is an integral domain. Its coefficients are rational (the product
+is invariant under every embedding of a normal closure) and algebraic
+integers, hence integers. Crucially this is the norm of the **scaled**
+polynomial: its scalar factor is \(K^{Jd_E}\), not one. Multiplication by
 \(\prod_\ell Z_\ell^{d_*JQ_*}\) clears all negative powers.
 The resulting integer polynomial \(R\) satisfies
 \[
@@ -149,16 +163,31 @@ the coefficient \(\ell^1\)-norm is submultiplicative.
 
 ## Application and conversion to phases
 
-Apply (3) to \(R\) and (5). With all its parameters enlarged
-monotonically to the displayed integers in (1),
+Apply (3) with the actual denominator \(q=800g10^{80}\),
+exponent-field degree \(d_\alpha=[\mathbb Q(\alpha_1,\ldots,\alpha_r):\mathbb Q]\le d_*\),
+and \(D=D_*\), \(H=H_*\). In the resulting numerical lower bound,
+use \(q\le q_*\), \(r\le N\), and
+\(6d_\alpha r(r!)D_*\le S_*\), monotonically. This does not
+assert that \(q_*\alpha_\ell\) is integral. It gives
 \[
 |R(e^\alpha)|\ge
 \exp\left[-3d_*S_*^N\log H_*
 -(2Nq_*S_*)^{18S_*^N}\right].
 \]
-The clearing monomial has modulus one, and each conjugate
-factor other than the original is at most
-\((2K_*)^J\). Hence
+The clearing monomial has modulus one because all \(\alpha_\ell\)
+are purely imaginary in the chosen embedding. The identity-embedding
+factor is exactly \(Q(e^\alpha)=K^J\operatorname{Disc}U_N\).
+Every other factor has modulus at most \(K^J2^J\): its substituted
+\(X_j\) have modulus one, so the embedded unitary bound applies even
+though the exponent variables themselves are not conjugated. Thus
+\[
+|R(e^\alpha)|\le K^{Jd_E}2^{J(d_E-1)}
+ |\operatorname{Disc}U_N|
+\le (2K_*)^{Jd_*}|\operatorname{Disc}U_N|.
+\]
+Combining this with Roy's bound gives the **sum** of the three terms
+in \(\mathcal B_N\), including the denominator cost
+\(Jd_*\log(2K_*)\). Hence
 \[
 |\operatorname{Disc}U_N|\ge e^{-\mathcal B_N}.           \tag{8}
 \]

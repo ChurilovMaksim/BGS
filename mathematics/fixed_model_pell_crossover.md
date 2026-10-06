@@ -103,14 +103,16 @@ At the frozen coupling \(\epsilon_K=\tau N_K\), condition (5) eventually holds. 
 
 ## 4. Proof architecture
 
-For a general fixed finite Hermitian Weyl symbol
+For a general fixed finite **mean-zero** Hermitian Weyl symbol
 
 \[
 A_N=\sum_{v\in\Lambda}a_vT_N(v),\qquad
-a_{-v}=\overline{a_v},
+a_{-v}=\overline{a_v},\qquad a_0=0,
 \]
 
-group the finite support into oriented \(S\)-orbits and replace each orbit by its summed representative coefficient. The variance is exactly
+the zero-mode hypothesis is essential. If $a_0\ne0$, apply the centered statement to $A_N-a_0I$ and retain the scalar factor $\exp(i mK\epsilon_K a_0)$ in the return trace; $\sqrt K\,\overline A_K$ itself is not centered Gaussian (the example $A_N=I$ already excludes that reading). The maintained frozen generator is centered.
+
+Group the nonzero finite support into oriented \(S\)-orbits and replace each orbit by its summed representative coefficient. The variance is exactly
 
 \[
 \sigma_A^2
@@ -121,6 +123,8 @@ group the finite support into oriented \(S\)-orbits and replace each orbit by it
 \]
 
 For each fixed moment length, a modular zero word can be cyclically rotated across its largest time gap so that its integer representative has norm below \(N_K\); the congruence therefore lifts to an integer zero relation. Hyperbolic separation then decomposes every zero word into bounded-diameter time components. Pair components give Wick contractions; components of size at least three cost one free time variable and produce the errors in (2). Weyl phases across separated components are controlled before summation rather than discarded.
+
+The detailed moment lifting, bounded-cluster counting and crossing-phase estimates are in [smooth recurrence, Section 1.1](smooth_recurrence_and_compensation.md). The passage from the averaged exponential to the actual $K$-step product uses the [finite-symbol normal form](../supplement/fixed_map/design-return/finite_symbol_normal_form.md) and its [all-odd sparse-orbit input](../supplement/fixed_map/design-return/sparse_orbit_theorem.md). For the present frequency support, the sparse-orbit condition holds for all odd $K\ge39$; the normal-form error at $\epsilon_K\sqrt K=O(1)$ is $O(K^{-1/2})$. These are proof dependencies, not deductions from a finite numerical scan.
 
 For the frozen finite symbol, independent sparse and dense assemblies reproduce (1). A zero-variance coboundary control collapses exactly, which guards against treating the Gaussian law as automatic.
 

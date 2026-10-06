@@ -17,6 +17,7 @@ import subprocess
 import sys
 import threading
 import time
+from workspace_sources import provenance
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -76,7 +77,7 @@ def main() -> None:
                 else 'INCOMPLETE' if remaining else 'FAIL')
         data={'producer':'computations/maintenance/verify_locality_packet.py','status':status,
               'scope':'Targeted locality/echo/clustering dependencies, structural audit, spectral diagnostics, and all C++ binaries in this worktree. Not all historical symbolic Python verifiers; Lean and TeX are separate.',
-              'input_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+              **provenance(ROOT),
               'python':platform.python_version(),'source_fingerprint':fingerprint,'source_sha256':sources,
               'checks':current,'pending':remaining,'passed':sum(r['exit_code']==0 for r in current),
               'total':len(plan)}

@@ -262,5 +262,13 @@ from (M11), closed in FLOW-014. Deterministic noise removal remains open.
 
 The elementary Poisson transform and phase estimates are project
 corollaries; FM-007 owns the logarithmic trace input. Priority is not asserted.
-Actual-start circular relaxation, deterministic noise removal,
+For the actual centered frozen start $\Pi U_N$, FLOW-014 proves the
+Dyson-reference local Sine$_2$ Laplace limit at $t_N=8g_N$ with $g_N$
+as in (M2), and transfers a weak uniform-origin local limit to the original
+uncentered chain started at $U_N$ on its stated polynomial step schedule.
+FLOW-017 obtains all fixed factorial orders and one-chain origin averages
+in $L^2$ on a different, superpolynomial step schedule at the same time.
+These are maintained project proofs with their recorded internal-review
+boundaries, not consequences of (M11) alone. Actual-start relaxation at
+the faster clock time $N^{-2/3}$, deterministic noise removal,
 BGS-TRACE-005 and BGS-BGS-001 remain open.

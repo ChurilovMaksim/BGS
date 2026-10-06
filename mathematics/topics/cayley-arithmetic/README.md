@@ -1,6 +1,28 @@
-# Cayley Arithmetic
+# Cayley arithmetic and finite-field geometry
 
-This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
+Finite-field pair keys, energy reductions, curve bounds, resultant support and arithmetic trace laws form a separate programme. Each proof retains its prime, subgroup-size and noncentral-row restrictions.
+
+## Current theorem capsules
+
+- **[Energy reduction](../../cayley_additive_energy.md)** — Pair-key multiplicities reduce to additive energy of the Cayley image.
+- **[Uniform and dense bounds](../../cayley_curve_uniform.md)** — The curve theorem gives K^(8/3)+K^4/p; the mixed-Weil branch controls the centered error by O(pK). External theorem hypotheses are load-bearing.
+- **[Coherent elliptic spikes](../../offoff_elliptic_spike_theorem.md)** — The reducible-fiber contribution must be retained; removing it from a variance target is invalid.
+
+## Suggested reading sequence
+
+[1. fourth moment reduction](../../fourth_moment_reduction.md) → [2. cayley additive energy](../../cayley_additive_energy.md) → [3. cayley curve uniform](../../cayley_curve_uniform.md) → [4. cayley fourier hybrid](../../cayley_fourier_hybrid.md) → [5. offoff elliptic spike theorem](../../offoff_elliptic_spike_theorem.md)
+
+This is a reading sequence, not a replacement for the exact dependency graph.
+
+## Remaining boundary
+
+The sparse centered K^(2+o(1)) energy target remains open. Arithmetic averaging is not a fixed-matrix microscopic law.
+
+## Review coverage
+
+See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+
+## Complete source membership
 
 - [cayley_additive_energy](../../cayley_additive_energy.md)
 - [cayley_centered_energy](../../cayley_centered_energy.md)

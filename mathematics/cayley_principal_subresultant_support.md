@@ -85,7 +85,7 @@ repository; no new external theorem is introduced.
 ### Lemma 1 (principal coefficients detect gcd degree)
 
 Let `k` be a field and let `P,Q in k[T]` specialize with their maintained
-fixed degrees.  For every integer `d>=1`,
+fixed degrees. For every integer `1<=d<=min(deg P,deg Q)`,
 
 ```text
 deg gcd(P,Q)>=d

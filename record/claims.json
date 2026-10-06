@@ -191,7 +191,12 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Frozen epsilon_K=tau N_K lies outside the proved bounded crossover window."
+      "boundary": "Frozen epsilon_K=tau N_K lies outside the proved bounded crossover window. The general finite-symbol extension assumes mean zero; otherwise the scalar phase must be split off. The centered-model theorem and its range are unchanged.",
+      "proof_dependencies": [
+        "mathematics/smooth_recurrence_and_compensation.md",
+        "supplement/fixed_map/design-return/finite_symbol_normal_form.md",
+        "supplement/fixed_map/design-return/sparse_orbit_theorem.md"
+      ]
     },
     {
       "id": "BGS-FM-003",
@@ -401,18 +406,21 @@
     {
       "id": "BGS-FORMAL-001",
       "title": "Active Lean algebraic/finite kernel graph",
-      "state": "verification-pending",
-      "ledger_status": "SOURCE FORMALIZATION PENDING CURRENT BUILD",
+      "state": "proved",
+      "ledger_status": "CURRENT PINNED BUILD VERIFIED; FINITE/ALGEBRAIC SCOPE",
       "source": "formalization/README.md",
       "dependencies": [],
       "external_dependencies": [],
-      "evidence": [],
+      "evidence": [
+        "evidence/executions/20261006/original-channel-gap/lean.log",
+        "evidence/executions/20261006/original-channel-gap/integration.json"
+      ],
       "verifiers": [],
       "formalization": [
         "formalization/Bgs.lean"
       ],
       "manuscript": [],
-      "boundary": "Source presence does not establish compilation; analytic BGS theorems are not formalized."
+      "boundary": "Pinned Lean 4.33.1 build of all 17 active modules completed successfully (20 Lake jobs), with printed axiom lists. native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
     },
     {
       "id": "BGS-INFO-001",
@@ -565,7 +573,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Any unitary N\u00d7N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
+      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
     },
     {
       "id": "BGS-RES-007",
@@ -592,7 +600,9 @@
       "state": "proved",
       "ledger_status": "EXACT",
       "source": "mathematics/pell_harmonic_returns.md",
-      "dependencies": [],
+      "dependencies": [
+        "BGS-RET-002"
+      ],
       "external_dependencies": [],
       "evidence": [
         "evidence/certificates/pell_harmonic_returns_20260910/manifest.json",
@@ -736,7 +746,7 @@
       "id": "BGS-TRACE-007",
       "title": "Universal sharp Abel lower bound attained by the clock spectrum",
       "state": "proved",
-      "ledger_status": "EXACT + CHECKED COHN\u2013KUMAR THEOREM 1.2",
+      "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
       "source": "mathematics/fixed_map_resolvent_frontier.md",
       "dependencies": [],
       "external_dependencies": [
@@ -772,7 +782,7 @@
       "id": "BGS-CUE-001",
       "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS\u2013BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
       "source": "mathematics/cue_singular_energy.md",
       "dependencies": [],
       "external_dependencies": [
@@ -889,7 +899,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|\u00b2+|p2|\u00b2) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
+      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
     },
     {
       "id": "BGS-FLOW-005",

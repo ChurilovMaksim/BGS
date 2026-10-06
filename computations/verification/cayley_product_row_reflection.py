@@ -67,12 +67,15 @@ def even_odd_pair(K: int) -> tuple[sp.Poly, sp.Poly, sp.Poly]:
 
 
 def reflection_ideal_exponent(K: int) -> tuple[int, int, list[int]]:
+    if K < 7:
+        raise ValueError("reflection subresultant integral construction requires K>=7")
     modulus, E, O = even_odd_pair(K)
     raw = sp.subresultants(E.as_expr(), O.as_expr(), Y)
     reduced = [reduce_var_polynomial(expr, Y, modulus) for expr in raw]
 
     # Corank >=2 / gcd degree >=2 is detected by the final degree-1 and
-    # degree-0 fixed-degree subresultants.
+    # degree-0 fixed-degree subresultants. At K=7 these are the monic
+    # input O=S_1 (top-index convention) and the resultant S_0.
     selected = reduced[-2:]
     assert [poly.degree() for poly in selected] == [1, 0], (
         K,
@@ -112,6 +115,15 @@ def reflection_ideal_exponent(K: int) -> tuple[int, int, list[int]]:
     )
     full = invariants[-1]
     return strip_2K(full, K), full, invariants
+
+
+def prime_to_2K_reflection_support(K: int) -> int:
+    """Split support including trivial small orders, without fictitious ideals."""
+    if not sp.isprime(K) or K == 2:
+        raise ValueError("require odd prime K")
+    if K in (3, 5):
+        return 1
+    return reflection_ideal_exponent(K)[0]
 
 
 def check_chebyshev_fibre(K: int) -> None:
@@ -165,6 +177,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--extended", action="store_true")
     args = parser.parse_args()
+
+    for K in (3, 5):
+        assert prime_to_2K_reflection_support(K) == 1
+    check_anchor(7, 1, 1)
 
     for K, stripped, full in (
         (13, 5, 5 * 13),

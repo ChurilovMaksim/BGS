@@ -363,7 +363,15 @@ This corollary has no asserted rate for interval indicators and does not
 establish uniform integrability of higher factorial moments.
 
 The initial clock has rigid spacings and (P1) changes them to Sine$_2$.
-No deterministic noise-removal implication follows. The actual frozen-map
-relaxation input and its Heisenberg-scale signed joint traces remain open,
-as do **BGS-TRACE-005 and BGS-BGS-001**. A statement for every classically
-chaotic quantum system is not obtained here.
+No deterministic noise-removal implication follows. For the actual frozen
+start, [FLOW-014](circular_dyson_actual_start.md) separately supplies the
+Dyson-reference Laplace limit at $t_N=8g_N$,
+$g_N=4\log J_N/J_N$, $J_N=\lfloor c\log N\rfloor$, and a weak local
+limit for the original uncentered chain on its stated polynomial schedule.
+[FLOW-017](coboundary_all_order_limit.md) supplies all fixed factorial
+orders and one-chain origin averages in $L^2$ on a superpolynomial schedule
+at that time; it does not strengthen the polynomial schedule (P3) here.
+Relaxation of the actual start at the faster clock time $N^{-2/3}$,
+deterministic noise removal and its Heisenberg-scale signed joint traces
+remain open, as do **BGS-TRACE-005 and BGS-BGS-001**. A statement for every
+classically chaotic quantum system is not obtained here.

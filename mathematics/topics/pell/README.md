@@ -1,6 +1,28 @@
-# Pell
+# Pell, echoes and harmonic transitions
 
-This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
+Pell arithmetic produces exact recurrence structures and controlled perturbative models. Quantum kick amplitude and classical coupling must be distinguished in every theorem.
+
+## Current theorem capsules
+
+- **[Cohomological normal forms](../../pell_floquet_normal_form.md)** — Normal forms have specified norms, time windows and perturbation scales.
+- **[Harmonic return law](../../pell_harmonic_returns.md)** — A law for powers of a return operator at fixed replica order does not extend automatically to Heisenberg replicas.
+- **[Microscopic obstruction](../../pell_microscopic_clustering.md)** — Use each counterexample only within its stated arithmetic and scaling regime.
+
+## Suggested reading sequence
+
+[1. pell coboundary resonance](../../pell_coboundary_resonance.md) → [2. pell floquet normal form](../../pell_floquet_normal_form.md) → [3. pell harmonic returns](../../pell_harmonic_returns.md)
+
+This is a reading sequence, not a replacement for the exact dependency graph.
+
+## Remaining boundary
+
+Fixed classical strength, growing replicas and complete local-law transfer remain separate obligations.
+
+## Review coverage
+
+See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+
+## Complete source membership
 
 - [pell_all_orders_conjugacy](../../pell_all_orders_conjugacy.md)
 - [pell_cat_map_gaussian_blocks](../../pell_cat_map_gaussian_blocks.md)

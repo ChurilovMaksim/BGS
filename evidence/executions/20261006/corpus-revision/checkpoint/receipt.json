@@ -1,0 +1,31 @@
+{
+  "status": "checked_checkpoint_of_in_progress_revision",
+  "base_commit": "131e8aac5684f72cc993a54a46237a812a577ae9",
+  "capture": "2026-10-06T13:56:29Z",
+  "selected_change_count_before_generated_artifacts": 91,
+  "scope": "Existing-corpus corrections, source metadata, reproduction infrastructure, and current/history navigation. Later research and the separately pending spectral-diagnostics repair are excluded.",
+  "checks": {
+    "workspace": {
+      "passed": 159,
+      "total": 159,
+      "source_tree_unchanged_during_run": true,
+      "source_mode": "git_checkout_with_recorded_dirty_snapshot",
+      "upstream_identity": "Base commit is explicit; dirty source bytes are pinned in workspace.json."
+    },
+    "infrastructure_unit_tests": 17,
+    "bibliography_mutation_tests": 308,
+    "bibliography_cached_identities": 34,
+    "registry_claims": 74,
+    "cpp_changed_sources": "Both cat_map_order and magnetic_word_verifier compiled and executed under UndefinedBehaviorSanitizer. The latter generates exact histograms without an independent expected-value oracle.",
+    "manuscript": "PASS: regenerated affected source views, three-pass 256-page build; exact input hashes in manuscript.json.",
+    "targeted": "Period-three rational and independent certificates, pure-loss high-precision check, return-local and return-obstruction checks passed.",
+    "static": "Repository and maintained-text audits, compileall with SyntaxWarning-as-error, and registry render checks passed."
+  },
+  "post_run_changes": "Only reader-guide trailing whitespace normalization and this execution receipt/artifacts were added after the full source-stable run. No mathematical proof or verifier changed.",
+  "historical_whitespace": "Original archived Markdown bytes intentionally retain their trailing spaces and original endings so their provenance hashes remain valid. All nonhistorical selected changes pass git diff --check.",
+  "remaining": "Corpus review remains explicitly IN PROGRESS. Listed conditional/unreviewed source applications and remaining audit families are not certified by these tests. Remote publication and CI are verified separately.",
+  "artifact_sha256": {
+    "workspace.json": "9097277f8f0eacc44f85a58aa49c1ec3b5651f7b9d4a72cd74ac6f2d89ac82f9",
+    "manuscript.json": "337f635a1536207fc3425dbb57b2a72c59321408173f1b59a659e4a435f20698"
+  }
+}

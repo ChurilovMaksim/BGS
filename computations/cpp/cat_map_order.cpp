@@ -29,11 +29,11 @@ static Mat2 mul(Mat2 x, Mat2 y, i64 p) {
             (x.c*y.a+x.d*y.c)%p,(x.c*y.b+x.d*y.d)%p};
 }
 
-static int matrix_order(Mat2 A, int p, int max_iter=-1) {
+static i64 matrix_order(Mat2 A, int p, i64 max_iter=-1) {
     if (!is_prime(p)) throw std::invalid_argument("modulus must be prime");
-    if (max_iter < 0) max_iter = p*p;
+    if (max_iter < 0) max_iter = i64(p)*p;
     Mat2 m{A.a%p,A.b%p,A.c%p,A.d%p};
-    for (int k=1;k<=max_iter;++k) {
+    for (i64 k=1;k<=max_iter;++k) {
         if (m.a==1 && m.b==0 && m.c==0 && m.d==1) return k;
         m=mul(A,m,p);
     }

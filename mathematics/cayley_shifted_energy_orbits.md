@@ -189,10 +189,11 @@ K^2<p,                                                    (17)
 ```
 
 ```text
-E_x(H+lambda)<<K^2 log K                                 (18)
+E_x(H+lambda)<<K^2 log(2K)                               (18)
 ```
 
-uniformly in every `lambda!=0`.  Theorem 1 therefore yields:
+uniformly in every `lambda!=0`.  For `K>=2`, this is also `O(K^2 log K)`;
+for `K=1`, the Cayley set is empty.  Theorem 1 therefore yields:
 
 ### Corollary 2 (local near-quadratic Cayley `L^2` mass)
 
@@ -308,20 +309,23 @@ The finite checks are not part of the proof of Theorems 1 and 3.
 ## 6. Next closure target
 
 The most promising refinement exposed by this reduction is to group ordered
-subgroup pairs by their product `u=xy`.  Since `K` is odd, write `u=w^2` with
-`w in H`, and parametrize
+subgroup pairs by their product `u=xy`.  For this final parametrization assume
+`K` is odd.  Write `u=w^2` with `w in H`, and parametrize
 
 ```text
 x=wz,
 y=wz^(-1).
 ```
 
-For two product rows `u=w^2` and `v=q^2`, a common shifted/Cayley parameter is
-equivalent to an affine intersection between cyclotomic trace values
+For two nonzero-sum product rows `u=w^2` and `v=q^2`, assume
+`w^2!=1` and `q^2!=1`.  Take the admissible pairs `(wz,wz^(-1))` and
+`(qs,qs^(-1))`, with `z notin {w,w^(-1)}` and `s notin {q,q^(-1)}`.
+Equality of their nonzero Cayley sums is equivalent to an affine intersection
+between cyclotomic trace values
 
 ```text
 X=z+z^(-1),
-Y=y+y^(-1),
+Y=s+s^(-1),
 Y=alpha X+beta,                                          (26)
 ```
 

@@ -280,7 +280,7 @@ Delta_11(67)=48  =4*12,
 Delta_11(89)=32  <=4*12.                                (29)
 ```
 
-## 7. Audit correction: the small-K `K^3 log K` heuristic is rejected
+## 7. Audit correction: the small-K `K^3 log K` heuristic is not used
 
 An earlier version of this note observed the prime-to-`2K` discriminant only
 through `K=23` and proposed
@@ -289,8 +289,9 @@ through `K=23` and proposed
 log |Disc_K^(2K)|=O(K^3 log K)
 ```
 
-as a possible research target.  That was explicitly marked conjectural, but a
-larger exact computation shows that it is not a credible scaling law.
+as a possible research target. That was explicitly marked conjectural. The
+larger finite computations below weaken its motivation, but cannot refute an
+asymptotic `O(K^3 log K)` bound.
 
 The structural refinement in `cayley_ratio_orbit_factorization.md` proves
 
@@ -307,11 +308,12 @@ of order `c K^2`, with the normalized prime-to-`2K` fourth-power mass
 `4 log J_K^(2K)/K^4` increasing from about `0.0837` at `K=23` to about `0.1182`
 at `K=47`.
 
-Accordingly the former `O(K^3 log K)` heuristic is **REJECTED**.  No theorem or
-claimed threshold improvement depends on it.  The correct next target is to
-control only the **split-prime part** of the exact factors `I_r` and
-`M_(r,s)` from the ratio-orbit theorem; their total archimedean size genuinely
-need not beat the existing `K^4` scale.
+Accordingly the former `O(K^3 log K)` heuristic is deprioritized. No theorem or
+claimed threshold improvement depends on it. Controlling the **split-prime
+part** of the exact factors `I_r` and `M_(r,s)` from the ratio-orbit theorem
+remains a promising target. These finite data neither prove `Theta(K^4)`
+growth nor show that an improvement through total archimedean size is
+impossible.
 
 ## Evidence boundary
 
@@ -319,6 +321,6 @@ need not beat the existing `K^4` scale.
   collision classification and the standard root formula for discriminants.
 - The small-`K` factorizations are finite exact regressions, not proofs of the
   general theorem.
-- The discarded `K^3 log K` scaling was never promoted to theorem status and is
-  now explicitly rejected after the larger adversarial computation.
+- The `K^3 log K` scaling was never promoted to theorem status; the finite
+  computations reassess its motivation without settling an asymptotic bound.
 - No statement here proves microscopic BGS/GOE universality.

@@ -95,10 +95,16 @@ def check_K(K: int, global_check: bool) -> None:
         assert P.LC() == 1
         assert P.eval(0) == 0
 
-        expected_b = Fraction((K - 1) * (K - 2), 12) - K * dedekind_sum(r, K)
-        assert expected_b.denominator == 1
-        actual_b = int(P.nth(m - 1))
-        assert actual_b == expected_b.numerator, (K, r, actual_b, expected_b)
+        if K >= 5:
+            expected_b = Fraction((K - 1) * (K - 2), 12) - K * dedekind_sum(r, K)
+            assert expected_b.denominator == 1
+            actual_b = int(P.nth(m - 1))
+            assert actual_b == expected_b.numerator, (K, r, actual_b, expected_b)
+        else:
+            # At K=3 the constant 1 in H=1+K*P contributes to H's
+            # Y^(m-1) coefficient; the Dedekind formula is not for P.
+            assert K == 3 and r == 2
+            assert H.as_expr() == 1 + 3 * Y and P.as_expr() == Y
 
         DH = abs(int(discriminant(H.as_expr(), Y)))
         assert DH % (K ** (m - 1)) == 0
@@ -170,9 +176,9 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.extended:
-        Ks = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+        Ks = [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
     else:
-        Ks = [7, 11, 13]
+        Ks = [3, 7, 11, 13]
 
     for K in Ks:
         check_K(K, global_check=(K <= 13))

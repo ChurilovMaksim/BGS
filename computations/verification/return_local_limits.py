@@ -13,6 +13,9 @@ import math
 from pathlib import Path
 import platform
 import subprocess
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'maintenance'))
+from workspace_sources import provenance
 
 import numpy as np
 import sympy as sp
@@ -175,8 +178,7 @@ def main():
     args = parser.parse_args()
     result = {'producer': 'computations/verification/return_local_limits.py',
               'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-              'input_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
-              'dirty': bool(subprocess.check_output(['git', 'status', '--porcelain'], text=True)),
+              **provenance(Path(__file__).resolve().parents[2]),
               'versions': {'python': platform.python_version(), 'numpy': np.__version__, 'sympy': sp.__version__},
               'exact': exact_cloud_controls(), 'unfolding': unfolding_controls(),
               'free_brownian_gap': gap_controls()}

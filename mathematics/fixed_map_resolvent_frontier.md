@@ -1396,8 +1396,9 @@ For $k=2$ the pair factors do not commute. Full Gaussian support and
 explicit Weyl Lie generation prove, for every finite odd $N\ge3$, $u>0$,
 that its whole peripheral space is exactly
 $\operatorname{span}\{I,\mathsf S_N\}$, with eigenvalue $1$. This also
-covers composite $N$. On the orthogonal complement there is a positive
-finite-N singular gap, but **no uniform shrinking-noise rate** is proved.
+covers composite $N$. On the orthogonal complement this argument gives a positive
+finite-N singular gap. The uniform shrinking-noise rate left open at this
+checkpoint is subsequently proved for the original two-kick law in FM-020.
 Independent-copy tensorization would erase these common-ensemble moments.
 
 The [source review](../literature/frozen_operator_transfer_sources_20261006.md)
@@ -1405,8 +1406,10 @@ credits prior noisy-relaxation methods and checks the exact classical
 mixing leaf. The [internal audit](../record/frozen_operator_transfer_review_20261006.md)
 reconstructed O1--O29 relative to the inherited Anosov/Gibbs inputs.
 Exact finite controls do not prove the analytic asymptotics or priority.
-For the original two-kick law, a microscopic reduced rate, the full nonlinear functional and
-the original signed Heisenberg noise defect remain OPEN. No deterministic
+The microscopic reduced rate for the original two-kick law was open at this
+checkpoint and is subsequently closed in FM-020. Higher-copy quantitative
+rates, the full nonlinear functional and the original signed Heisenberg
+noise defect remain OPEN. No deterministic
 BGS conclusion follows from the regularized gap or finite uniqueness.
 
 ## Uniform collective diffusion and a refined common-noise microscopic mass

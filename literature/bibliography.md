@@ -6,7 +6,7 @@ been verified for this project.
 
 ## Exponential independence for the frozen algebraic-time claims
 
-A. Popescu, [*A simple and self-contained proof for the
+S. A. Popescu, [*A simple and self-contained proof for the
 Lindemann–Weierstrass theorem*, arXiv:2306.14352v2,
 Theorem 3.2](https://arxiv.org/pdf/2306.14352). For **distinct algebraic**
 numbers $\alpha_j$, the exponentials $e^{\alpha_j}$ are linearly
@@ -200,7 +200,7 @@ that `deg(P_s-P_r)=m-1` for distinct classes.
 
 ## Trace functions and quantitative sheaf theory
 
-23. É. Fouvry, E. Kowalski and P. Michel, **Counting sheaves using spherical codes**, *Mathematical Research Letters* **20** (2013), 305--323, DOI `10.4310/MRL.2013.V20.N2.A8` (arXiv:1210.0851). Lemma 3.5 is the source-exact quasi-orthogonality statement used by the corrected off/off theorem: for geometrically irreducible, pointwise weight-zero sheaves of bounded conductor on a common lisse open and not geometrically isomorphic, the normalized complete trace correlation is `O(|k|^(-1/2))`. Its proof is Grothendieck--Lefschetz + Schur + Deligne RH + a Grothendieck--Ogg--Shafarevich cohomology bound.
+23. É. Fouvry, E. Kowalski and P. Michel, **Counting sheaves using spherical codes**, *Mathematical Research Letters* **20** (2013), 305--323, DOI `10.4310/MRL.2013.V20.N2.A8` (arXiv:1210.0851v5, 17 August 2013). Lemma 3.5 is the source-exact quasi-orthogonality statement used by the corrected off/off theorem: for geometrically irreducible, pointwise weight-zero sheaves of bounded conductor on a common lisse open and not geometrically isomorphic, the normalized complete trace correlation is `O(|k|^(-1/2))`. Its proof is Grothendieck--Lefschetz + Schur + Deligne RH + a Grothendieck--Ogg--Shafarevich cohomology bound.
 24. É. Fouvry, E. Kowalski and P. Michel, **A study in sums of products**, *Philosophical Transactions of the Royal Society A* **373** (2015), DOI `10.1098/rsta.2014.0309`.
 25. É. Fouvry, E. Kowalski, P. Michel, C. S. Raju, J. Rivat and K. Soundararajan, **On short sums of trace functions**, *Annales de l'Institut Fourier* **67** (2017), DOI `10.5802/aif.3087`.
 26. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653--726, DOI `10.1090/jams/1008`.
@@ -273,7 +273,7 @@ Lemma 3.5 in the corrected off/off theorem.
 
 ## Source checks — 8 September 2026
 
-**Corvaja–Zannier, JEMS 15 (2013), 1927–1942**,
+**Pietro Corvaja and Umberto Zannier, *Greatest common divisors of u−1, v−1 in positive characteristic and rational points on curves over finite fields*, JEMS 15 (2013), 1927–1942**,
 [DOI 10.4171/JEMS/409, publisher PDF](https://ems.press/doi/pdf/10.4171/JEMS/409).
 Theorem 2 (p. 1929) and Corollary 2 (p. 1930) were read directly.
 For the smooth Cayley curve, the coordinate degrees are two, the four boundary
@@ -352,3 +352,87 @@ Berkeley PDF printed pp. 3--4. EXT-DE-2001 is used only within its
 corrected weighted-degree bound for the low-band CUE cubic variance.
 The [source audit](signed_heisenberg_sources.md) also credits Prange's
 prior non-self-averaging warning. No source gives actual-map cancellation.
+
+
+## Registered-dependency metadata audit, 6 October 2026
+
+All 28 registered load-bearing references were covered by a fresh metadata
+pass. The [cached observations and exact dependency impact sets](../evidence/source_metadata/registry_metadata_20261006.json)
+separate identity, version/date, locator and application coverage. Source
+identifiers and hashes are retained; copyrighted article texts are not
+redistributed. Historical theorem-check dates above are preserved.
+
+The registry previously attached the wrong title to Corvaja–Zannier DOI
+10.4171/JEMS/409 and to Fouvry–Kowalski–Michel arXiv:1210.0851v5. The
+identifiers and mathematical locators were correct and are retained. FKM's
+v5 is dated 17 August **2013**; the stable key `EXT-FKM-2014` is an opaque
+legacy identifier, not a publication-year claim. Its Lemma 3.5 is on PDF
+p. 9 and requires the common-open qualification described above.
+
+Additional distinctions found in this pass:
+
+- Cohen's arXiv v3 title uses **2D**, whereas the publisher-deposited DOI
+  title uses **two-dimensional**. These are authenticated title variants.
+- Exact version PDFs for Lemoine v3 and Erbar–Huesmann–Leblé v1 were now
+  retrieved and hashed; earlier reports of unavailable version URLs remain
+  historical, not current access limitations.
+- The Parry–Pollicott publisher scan retrieved in this pass has a digitization
+  cover. Its physical PDF page numbers are one higher than the older
+  cover-excluding offsets. Printed pages and result numbers take precedence.
+- Iwaniec–Kowalski's title/authors/DOI were checked against publisher-deposited
+  registration metadata. The primary Theorem 17.1 text was not available
+  in this pass, so the exact theorem check remains unverified here.
+- Pesin's primary Math-Net landing page verifies bibliographic identity,
+  but the PDF was inaccessible in this pass; Theorem 5.1 was not reread.
+- The Diaconis–Evans author PDF and weighted-degree hypothesis were read.
+  Its Berkeley landing page has a conflicting journal citation, while the
+  DOI resolver was blocked and registration lookup rate-limited. This pass
+  does not certify that publication crosswalk.
+
+Run `python3 computations/verification/bibliographic_metadata_audit.py --self-test`.
+This offline check detects changes to the reviewed title, authors, identifier,
+version or locator and verifies complete registered-reference coverage.
+A PASS certifies agreement with cached review data, **not** theorem applicability.
+An altered cache must receive explicit source review; automatic regeneration
+from the registry would destroy the independence of this check. The wider
+context bibliography is not exhaustively recertified by this 28-reference pass.
+
+
+## Returns/Pell registration and application-review integration, 6 October 2026
+
+The initial 28-reference pass was not an exhaustive external-dependency audit
+of the return corpus. Six previously omitted sources are now registered,
+bringing the role-qualified registry to **34** entries. Roles are explicit:
+a proof input, an internally reproved standard identity, and attribution
+are different kinds of support. No attribution is silently promoted to a
+black-box proof dependency.
+
+- Guy Cohen, Jean-Pierre Conze, *Central limit theorem for commutative semigroups of toral endomorphisms*, [arXiv:1304.4556v2](https://arxiv.org/abs/1304.4556v2). arXiv:1304.4556v2 (2013-05-16). Theorem 2.18, printed pp.23–24; AC0 definition p.16; degenerate-limit footnote 3. Role: `proof_input`. Hyperbolic A transpose on the two-torus is totally ergodic; real mean-zero F4-finite symbol belongs to AC0; intervals form a Folner sequence. Gives qualitative Haar CLT, no periodic-point comparison or rate.
+- Michael A. Dritschel, James Rovnyak, *The operator Fejer-Riesz theorem*, [arXiv:0903.3639v1](https://arxiv.org/abs/0903.3639v1). arXiv:0903.3639v1 (2009-03-21). Section 1 scalar Fejer–Riesz theorem, printed p.2. Role: `proof_input_with_internal_reproof`. Strictly positive scalar finite Laurent polynomial factors as modulus square of polynomial of the same degree. Real coefficient choice follows from the project conjugate root argument.
+- Aldo Procacci, Sergio A. Yuhjtman, *Convergence of Mayer and Virial expansions and the Penrose tree-graph identity*, [arXiv:1508.07379v1](https://arxiv.org/abs/1508.07379v1). arXiv:1508.07379v1 (2015-08-28). Proposition 1 (Penrose tree-graph identity), printed pp.5–6. Role: `attribution_with_internal_reproof`. Arbitrary complex h(edge); take h=1+f, with |h|<=1. Source identity is algebraic; project tree majorant separately supplies convergence/nonvanishing and countable-species passage.
+- Nizar Demni, *Lagrange inversion formula, Laguerre polynomials and the free unitary Brownian motion*, [arXiv:1606.03755v3](https://arxiv.org/abs/1606.03755v3). arXiv:1606.03755v3 (2016-06-21). Equation (1), printed p.1. Role: `law_identification`. Set source k=m and source t=tau^2; Fourier moments e^(-mt/2)L_(m-1)^(1)(mt)/m identify the free unitary Brownian marginal. Arithmetic computation R18–R19 is internal.
+- Nizar Demni, Taoufik Hmidi, *Spectral distribution of the free unitary Brownian motion: another approach*, [arXiv:1103.4693v1](https://arxiv.org/abs/1103.4693v1). arXiv:1103.4693v1 (2011-03-24). Section 1 printed pp.1–2; Sections 4–5, endpoint computation pp.9–10. Role: `proof_input_for_comparison_application`. For 0<t<4 convert radian support |theta|<=sqrt(t(4-t))/2+arccos(1-t/2) to normalized circle. Complement Haar measure is 1-b(t)/pi. Local intensity theorem is internal.
+- Guillaume Cébron, Patrick Oliveira Santos, Pierre Youssef, *Graphon-Theoretic Approach to Central Limit Theorems for epsilon-Independence*, [arXiv:2411.13062v2](https://arxiv.org/abs/2411.13062v2). arXiv:2411.13062v2 (2024-11-29). Theorem 1.1, Section 2; Proposition 2.6; Sections 4–5. Role: `attribution_not_arithmetic_proof_input`. Graphon crossing-pair moments are prior. No finite epsilon-independence hypothesis is claimed for Weyl arrays. Proposition 2.6 requires sup|w|<1 and does not establish a density for indicator w_beta at beta<1/2.
+
+Soshnikov's existing `EXT-SOSH-2000` entry now also records the sine-process
+ergodicity use in `return_trace_obstruction.md`; no duplicate source ID was
+created. The documented internal prerequisite of RET-001 is RET-002.
+
+Independent corpus reviews expand four application checks in the cached
+ledger: the KLZF finite full-Brownian kernel normalization and distinct-start
+hypotheses; Soshnikov's spatial sine-process ergodicity; Popescu's algebraic-time
+independence application; and Roy's repaired scaled-norm/effective-gap
+application. Each record pins the review provenance and its limitations.
+These checks neither import the downstream analytic limit from a finite
+kernel formula nor assert deterministic noise removal.
+
+Exact-title and simpler-author Library searches did not locate the missing
+Iwaniec–Kowalski or Pesin primary text. Kowalski's accessible 61-page
+exponential-sums excerpt does not contain Theorem 17.1, and Pesin's selected
+publications/surveys pages did not yield the exact 1977 article. Those two
+exact-theorem leaves remain explicitly unverified in this pass.
+
+The expanded offline guard now also pins dependency roles, mappings,
+project-source lists and supplemental uses. It passes **308 mutation tests**
+for the 34-entry cache. This validates metadata/role consistency, not the
+truth of every mathematical dependency.

@@ -82,6 +82,8 @@ rank S_(P,Q)=2m-g.                                       (6)
 
 ## 2. Order-three support as a Fitting ideal
 
+Throughout this section assume `m>=2`.
+
 For a square `N x N` matrix `M` over a commutative ring, write
 
 ```text
@@ -105,7 +107,7 @@ Equivalently, every `(2m-2)x(2m-2)` minor vanishes.
 
 ### Theorem 2 (compound-matrix criterion)
 
-Let
+Assume `m>=2`. Let
 
 ```text
 C_2(S)
@@ -135,9 +137,14 @@ rank wedge^j(S)=binomial(rank S,j),                       (9)
 
 so at rank `2m-2` the exterior power `wedge^(2m-2)S` has rank one. `□`
 
+The restriction `m>=2` is needed for the larger-rank assertion: when
+`m=1`, `P=T` and `Q=T+1` have gcd degree zero, but `wedge^0 S`
+is the identity on the one-dimensional scalar space and has rank one.
+The kernel theorem above remains valid in this small degree.
+
 ## 3. Application to the maximal-real row cofactors
 
-For odd prime `K=2m+1`, fix a normalized row ratio `r!=1`.  Let
+For odd prime `K=2m+1>=7`, fix a normalized row ratio `r!=1`. Let
 
 ```text
 P_(K,r),Q_(K,r) in O^+[T],
@@ -242,8 +249,11 @@ c_0 = det S_0,
 c_1 = trace(adj(S_0) S_1),                               (21)
 ```
 
-and `c_2` is the corresponding bilinear contraction of the second adjugate
-(the `(2m-2)` compound of `S_0`) with the first two variation matrices.
+and `c_2` is the sum of `trace(adj(S_0) S_2)` and the quadratic
+contraction of the second adjugate (the `(2m-2)` compound of `S_0`)
+with two copies of `S_1`. At corank at least two, `adj(S_0)=0`, so
+only the second-adjugate term remains. The first term cannot be omitted
+in general: when `S_1=0`, it can still be nonzero.
 
 At corank one, `adj(S_0)` has rank one and the shift transversality theorem
 shows that the contraction in `c_1` is nonzero.  At corank two, the second

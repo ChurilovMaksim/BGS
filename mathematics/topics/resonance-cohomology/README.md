@@ -1,6 +1,28 @@
-# Resonance Cohomology
+# Resonance, cohomology and regularity
 
-This is a thematic navigation view. Authoritative proofs remain at their stable paths in `mathematics/`; files are not duplicated here.
+The corpus separates oriented and signed frequency orbits, finite support from infinite orbit families, and linear transport from the nonlinear frozen dynamics.
+
+## Current theorem capsules
+
+- **[Finite-orbit rigidity](../../finite_orbit_resonance_rigidity.md)** — The quantified finite-orbit support condition cannot be removed by a bare truncation argument.
+- **[Analytic transfer](../../analytic_coboundary_regularization.md)** — Analytic cohomological regularity is a distinct theorem from positivity for every analytic observable.
+- **[Stable generic regimes](../../resonance_wiener_stability.md)** — Open/generic positivity and norm-dependent stability do not settle all-member nondegeneracy.
+
+## Suggested reading sequence
+
+[1. finite orbit resonance rigidity](../../finite_orbit_resonance_rigidity.md) → [2. analytic coboundary regularization](../../analytic_coboundary_regularization.md) → [3. resonance wiener stability](../../resonance_wiener_stability.md) → [4. generic wiener resonance](../../generic_wiener_resonance.md)
+
+This is a reading sequence, not a replacement for the exact dependency graph.
+
+## Remaining boundary
+
+The all-members analytic nonlinear resonance question remains open; finite certificates do not prove unrestricted analytic limits.
+
+## Review coverage
+
+See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+
+## Complete source membership
 
 - [analytic_coboundary_regularization](../../analytic_coboundary_regularization.md)
 - [analytic_poisson_flatness_rigidity](../../analytic_poisson_flatness_rigidity.md)

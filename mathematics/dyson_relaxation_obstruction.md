@@ -170,6 +170,15 @@ for suitable $f$. This distinguishes the limits.
 The fixed map is not realized by this construction. What fails is using
 its known fixed-time trace bounds, global equidistribution, simplicity,
 or nonzero traces **alone** to import the clock's relaxation time.
-The maintained deterministic BGS and actual-start Dyson relaxation
-obligations remain open; prior intensity-loss obstructions are recorded
-in [the return note](return_trace_obstruction.md).
+This does not contradict [FLOW-014](circular_dyson_actual_start.md): that
+result uses the actual frozen spectrum's growing logarithmic trace window,
+not only the fixed-power bounds above, and proves the Dyson-reference
+local Sine$_2$ Laplace limit from $\Pi U_N$ at $t_N=8g_N$,
+$g_N=4\log J_N/J_N$, $J_N=\lfloor c\log N\rfloor$. Its comparison
+also gives the original uncentered chain a weak uniform-origin local limit
+on the stated polynomial schedule. [FLOW-017](coboundary_all_order_limit.md)
+adds all fixed factorial orders and one-chain $L^2$ origin averages on a
+superpolynomial schedule at the same time. Faster actual-start relaxation
+at $N^{-2/3}$ and deterministic noise removal remain open, as do
+BGS-TRACE-005 and BGS-BGS-001. Prior intensity-loss obstructions are
+recorded in [the return note](return_trace_obstruction.md).

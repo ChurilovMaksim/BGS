@@ -112,6 +112,10 @@ There are `(K-1)/2` such ratio classes.
 
 ## 3. The order-three subresultant integer
 
+For this construction assume `K>=7`, so `m>=3` and indices `0,1,2`
+are below the row degree. The projective row construction above still
+applies at `K=3,5`.
+
 Fix `r!=1`.  Dehomogenize at `V=1` in characteristic zero and let
 
 ```text
@@ -144,6 +148,11 @@ Finally, over one representative from each unordered ratio class, put
 ```text
 G'_K^(3)=prod_[r] G'_(K,r)^(3).                           (10)
 ```
+
+For `K=3,5`, define `G'_(K,r)^(3)=G'_K^(3)=1` directly as a
+small-degree support convention: each row has `m<=2` parameters, so
+three common parameters are impossible. No full low-subresultant ideal
+or unstripped integer is assigned by this convention.
 
 No growing-`K` bound on (10) is asserted.
 

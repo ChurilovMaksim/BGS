@@ -129,7 +129,7 @@ Positive smooth Laplace tests determine the locally finite point-field
 law (approximation on each compact set then tightness), proving weak transfer.
 
 For $\psi\in C_c(\mathbb R^k)$ define
-$Z_\psi(\xi)=\sum_{i_1,\ldots,i_k\ {m distinct}}
+$Z_\psi(\xi)=\sum_{i_1,\ldots,i_k\ {\mathrm{distinct}}}
 \psi(x_{i_1},\ldots,x_{i_k})$, using atom labels even at coincident positions.
 The partition inclusion-exclusion formula writes it as a finite polynomial
 in product measures and diagonal restrictions. It is continuous under vague
