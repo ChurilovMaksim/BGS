@@ -795,3 +795,31 @@ The full signed complement, plateau mechanism, remaining torsion, higher
 orders, TRACE-005 and BGS remain open. No new Lean theorem is claimed.
 [Prior component-status history](history/2026/cohesive_frontier_20261006/prior_ledger_tail.md)
 preserves the superseded arithmetic checkpoints and their references.
+
+## Current collective hierarchy and literal-time spectral bounds
+
+**TRACE-020:** [entire centered collective hierarchy](../mathematics/collective_occupation_hierarchy.md)
+has O(1) actual-U cyclic trace through fixed m<=bN bands and O_w(N^-1) pair
+aggregate, with true Gram inverse and inherited FM-021 analytic inputs.
+The [exact Q residual](../mathematics/collective_projector_residual.md) includes
+remaining balanced, off-charge and cycle-fixed vectors. Supporting quadratic
+and slow-source obstructions retain sector/vector scope and diagnostic limits.
+
+**FM-026:** [literal-time bounds](../mathematics/literal_time_multiplicity_bounds.md)
+for N=7*5^e,e>=1 give multiplicity<=7 at nonzero real algebraic time. At least
+24N/25+7 eigenvalues are simple for evene>=4 and at least35 for odde>=5;
+finite35/175 simplicity is a bounded companion. Component/rank reviews and
+registered LW remain explicit. Full uniform simplicity/gaps/BGS are open.
+
+**FM-008 review update:** [fresh independent audit](fm008_fresh_independent_review.md)
+accepts the unchanged7∤N theorem with two mapped exposition corrections and
+a fresh primary LW statement/application check. Historical author review is
+retained. Its r1 pair-commutant leaf used by FM-024 is independently reviewed
+and LW-free; the literal-U algebraic-entry corollary still uses LW.
+
+TRACE-020's independently reviewed [ordered-diagonal companion](../mathematics/ordered_diagonal_cyclic_trace.md)
+uses a distinct projector of rank N^m-1. For each fixed a>0 its cyclic trace
+is bounded by12N³exp(-c_aN), uniformly for every m>=aN and sufficiently large
+odd N. It uses only inherited FM-021 singular mixing. This is exponential
+in N, not m at fixed N, and does not imply the collective bound because
+cycle cancellations differ. The complete Q_ord residual remains unestimated.

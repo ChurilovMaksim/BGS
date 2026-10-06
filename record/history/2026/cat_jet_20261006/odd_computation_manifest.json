@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "claim_id": "BGS-AUDIT-ODD-CORE-SECOND-JET",
+  "repository": {
+    "commit": "801de3ab760cab4349e68b9843dcd67955314e62",
+    "dirty": false,
+    "note": "Canonical read-only; source-bound audit outside repository. Status is an observation, not whole-tree immutability."
+  },
+  "command": "python3 run_checks.py",
+  "environment": {
+    "software": [
+      "Python 3.12.14 standard library"
+    ],
+    "hardware": "x86_64"
+  },
+  "mathematics": {
+    "assertion_tested": "Fresh pairwise coprimality/resultants for accepted K7 polynomials; all dimension-five small-translation and cat phase/covariance identities; exhaustive actual-mode operator-return identities, cyclotomic weighted sums, and coefficient classes at odd depths r=2,3. Uniform inference is separately proved in REPORT.md.",
+    "coefficient_domain": "F5[W]/Phi7; Q[rho]/(rho^8+5rho^6+10rho^4+10rho^2+5); Gaussian integers; integer modular and cyclotomic quotient arithmetic",
+    "conventions": "Raw Weyl T(a,b), omega=ad-bc, modular halves, i reducing to 2; actual Gaussian coefficients scaled by 4000",
+    "inputs": [
+      "inputs/accepted_even_REPORT.md",
+      "inputs/accepted_tower_REPORT.md",
+      "inputs/exact_projector_certificate.py",
+      "inputs/field15625.py",
+      "inputs/fixed_model_symmetry_theorem.md",
+      "inputs/frozen_antireversor.py",
+      "inputs/odd_core_second_jet_extension.md",
+      "inputs/odd_core_second_jet_manifest.json",
+      "inputs/odd_core_second_order_control.json",
+      "inputs/odd_core_second_order_control.py",
+      "inputs/oldform_second_jet_pairwise.json",
+      "inputs/oldform_second_jet_pairwise.py",
+      "inputs/oldform_second_jet_residue.json",
+      "inputs/oldform_tower_compression.md",
+      "inputs/reduced_chain_charpolys.py",
+      "inputs/uniform_oldform_second_jet.md",
+      "check_pairwise.py",
+      "check_lattice.py",
+      "check_operator_returns.py",
+      "run_checks.py"
+    ],
+    "bounds": {
+      "pairwise_blocks": [
+        3,
+        2,
+        2
+      ],
+      "all_five_factor_weyls": 25,
+      "return_r": [
+        2,
+        3
+      ],
+      "actual_modes": 32,
+      "ordered_pairs_per_depth": 1024,
+      "all_times_R": [
+        3750,
+        93750
+      ],
+      "mode_time_steps": [
+        120000,
+        3000000
+      ],
+      "wall_timeout_seconds_per_checker": 60,
+      "cpu_seconds_per_checker": 30,
+      "address_space_bytes_per_checker": 536870912
+    },
+    "non_claims": [
+      "Finite r controls alone do not prove uniformity.",
+      "No other oldform layers, full/literal U simplicity, full commutant, or BGS conclusion.",
+      "Accepted dependency reviews and author F525001 control were not rerun."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T22:43:36.438152+00:00",
+    "runtime_seconds": 1.8507905006408691,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "pairwise_checks.json",
+      "sha256": "5a91f46c98e673c180c6ec20aef1fbae2e6729aacef15d4917283574c9929f93"
+    },
+    {
+      "path": "lattice_checks.json",
+      "sha256": "8b7195022c90004475364bd4d0cba1bdd382d70a371cc79a25cd880ffb5d9037"
+    },
+    {
+      "path": "operator_return_checks.json",
+      "sha256": "f6d96a5e4e67ea124c52f7ed21d154ff170416f8aac2ee41237e8c4c30bac8b2"
+    },
+    {
+      "path": "combined_run.log",
+      "sha256": "67c22eab1d24119b27555fbc3b87845b1bc63f593a8bdf22a7f16acf1797f56d"
+    }
+  ],
+  "checks": [
+    "All eight candidate source hashes match.",
+    "Accepted dependency report hashes match parent binding.",
+    "Fresh pairwise gcds are 1 and independent Sylvester resultants are nonzero.",
+    "Full degree-seven product is squarefree.",
+    "All 24 nontrivial Weyl differences have exact minimum valuation 1/8.",
+    "Exact M5 sixth power, Gauss square, trace and all 25 covariances pass.",
+    "Exhaustive r=2,3 operator-valued return and weighted cyclotomic identities pass, including inner cocycle.",
+    "All coefficient classes, root orders, k=0 corrections, and exactly 17 survivors pass.",
+    "Input hashes identical before and after bounded rerun."
+  ],
+  "result": "Implementation and finite assertions independently verified in their stated finite ranges. Accompanying uniform proof audit finds the scoped all-r theorem proved as written.",
+  "residual_risks": [
+    "Standard Python exact arithmetic and interpreter trusted; no formal proof assistant certificate.",
+    "Version 1 manifest lacks version 2 runner cross-check fields; explicit input hashes and actual per-process resource limits are separately recorded here.",
+    "Canonical source may change concurrently; individual frozen source hashes delimit the verdict."
+  ],
+  "input_hashes_before": {
+    "inputs/accepted_even_REPORT.md": "c3a98ad153737e4cdac381bf6318eff2d3c44e073a81a7387dbee785ab6a172c",
+    "inputs/accepted_tower_REPORT.md": "f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5",
+    "inputs/exact_projector_certificate.py": "55b782e9b9fd295017b75428d94cd4992f964d77209cbcb914188ea78f94b0b8",
+    "inputs/field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+    "inputs/odd_core_second_jet_extension.md": "38b1e1b442f942a81a3ea7f89c9bd6a91f4a6ed39f12beb644d0c44064d0b46e",
+    "inputs/odd_core_second_jet_manifest.json": "2ece5336f9e3a4efa3c5aa65484a159b8274f31d427d3356d48ff1ba1931027c",
+    "inputs/odd_core_second_order_control.json": "6bf5c2cd6a5c94451421aac135f0f85b68fdeccea786be842dc6586bdf13e4c2",
+    "inputs/odd_core_second_order_control.py": "1d05ea5ca12bdfe603cbb8bec025a1c161612c25bb19f73a4c7385f43c0e3764",
+    "inputs/oldform_second_jet_pairwise.json": "ac28b4465515de33446a8c8e01dcca16f35b5d6bc04edb0df3735f76631bacac",
+    "inputs/oldform_second_jet_pairwise.py": "3c2372511a83d49dc87be218b75f05e0809613bb6105a27542e95a45c2ef48a2",
+    "inputs/oldform_second_jet_residue.json": "43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459",
+    "inputs/oldform_tower_compression.md": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae",
+    "inputs/reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "inputs/uniform_oldform_second_jet.md": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+    "check_pairwise.py": "c167e4dfdb1398fb3b879a26c5dc08c46c9fc2b3c1d38d75a712338866416fb2",
+    "check_lattice.py": "43433c39435c1f777f37b323639051e5c46d0774ef975931f36011ae14c58d98",
+    "check_operator_returns.py": "bbdb5fad23769a888cff1fe35d754b6c8ab89faeb039c1bc9479a4fc183b0da7",
+    "run_checks.py": "befe9c796fd7a1f5023e10adb0651e36423ca4811c9c800a2f26f9a2c69b09c3"
+  },
+  "input_hashes_after": {
+    "inputs/accepted_even_REPORT.md": "c3a98ad153737e4cdac381bf6318eff2d3c44e073a81a7387dbee785ab6a172c",
+    "inputs/accepted_tower_REPORT.md": "f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5",
+    "inputs/exact_projector_certificate.py": "55b782e9b9fd295017b75428d94cd4992f964d77209cbcb914188ea78f94b0b8",
+    "inputs/field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+    "inputs/odd_core_second_jet_extension.md": "38b1e1b442f942a81a3ea7f89c9bd6a91f4a6ed39f12beb644d0c44064d0b46e",
+    "inputs/odd_core_second_jet_manifest.json": "2ece5336f9e3a4efa3c5aa65484a159b8274f31d427d3356d48ff1ba1931027c",
+    "inputs/odd_core_second_order_control.json": "6bf5c2cd6a5c94451421aac135f0f85b68fdeccea786be842dc6586bdf13e4c2",
+    "inputs/odd_core_second_order_control.py": "1d05ea5ca12bdfe603cbb8bec025a1c161612c25bb19f73a4c7385f43c0e3764",
+    "inputs/oldform_second_jet_pairwise.json": "ac28b4465515de33446a8c8e01dcca16f35b5d6bc04edb0df3735f76631bacac",
+    "inputs/oldform_second_jet_pairwise.py": "3c2372511a83d49dc87be218b75f05e0809613bb6105a27542e95a45c2ef48a2",
+    "inputs/oldform_second_jet_residue.json": "43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459",
+    "inputs/oldform_tower_compression.md": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae",
+    "inputs/reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "inputs/uniform_oldform_second_jet.md": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+    "check_pairwise.py": "c167e4dfdb1398fb3b879a26c5dc08c46c9fc2b3c1d38d75a712338866416fb2",
+    "check_lattice.py": "43433c39435c1f777f37b323639051e5c46d0774ef975931f36011ae14c58d98",
+    "check_operator_returns.py": "bbdb5fad23769a888cff1fe35d754b6c8ab89faeb039c1bc9479a4fc183b0da7",
+    "run_checks.py": "befe9c796fd7a1f5023e10adb0651e36423ca4811c9c800a2f26f9a2c69b09c3"
+  }
+}

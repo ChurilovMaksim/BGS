@@ -152,7 +152,7 @@ $$
 e_r(s)=b_r e^{s(a_1+\cdots+a_r)}(1+o(1)).     \tag{5}
 $$
 
-This follows by comparing the finitely many distinct exponent sums.
+This follows because the maximal fixed-r subset sum is unique; lower subset sums may coincide.
 Rescale the characteristic polynomial near $z=e^{sa_j}w$. Its two
 leading terms are the adjacent coefficients $r=j-1,j$; Rouché's
 theorem gives one simple eigenvalue
@@ -183,7 +183,7 @@ the power statement.
 
 Finally, for $m\ne0$, $|\operatorname{Tr}U_N(t)^m|^2$
 is an exponential polynomial in $t$ with algebraic coefficients
-(for real $t$, use $U_N(t)^{-m}=M_N^{-1}e^{-itA_N}$ as appropriate in
+(for real $t$, use $U_N(t)^{-m}=(M_N^{-1}e^{-itA_N})^m$ as appropriate in
 the trace product). The same large imaginary-time witness shows it is
 nonconstant: the leading exponent of the product of the largest and
 smallest eigenvalue contributions is positive. Lindemann–Weierstrass

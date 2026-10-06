@@ -1,0 +1,238 @@
+{
+  "status": "all finite assertions passed",
+  "exact_literal_rows": [
+    {
+      "N": 2,
+      "m": 1,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 4,
+      "ordered_centered_dimension": 1,
+      "Haar_rank": 1,
+      "balanced_rank": 2,
+      "remaining_balanced_rank": 0,
+      "off_charge_rank": 2,
+      "proper_supports_checked": 0,
+      "trace": "527/625",
+      "H_spectrum": {
+        "0": 1
+      },
+      "full_support_H_rank": 0,
+      "nonnormal_P": false,
+      "H_B_noncommuting": false,
+      "invariant_trace": "1"
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 16,
+      "ordered_centered_dimension": 3,
+      "Haar_rank": 2,
+      "balanced_rank": 6,
+      "remaining_balanced_rank": 1,
+      "off_charge_rank": 10,
+      "proper_supports_checked": 2,
+      "trace": "221281/390625",
+      "H_spectrum": {
+        "0": 2,
+        "1/3": 1
+      },
+      "full_support_H_rank": 1,
+      "nonnormal_P": false,
+      "H_B_noncommuting": false,
+      "invariant_trace": "2"
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 64,
+      "ordered_centered_dimension": 7,
+      "Haar_rank": 5,
+      "balanced_rank": 20,
+      "remaining_balanced_rank": 8,
+      "off_charge_rank": 44,
+      "proper_supports_checked": 6,
+      "trace": "146363183/244140625",
+      "H_spectrum": {
+        "0": 4,
+        "1/3": 3
+      },
+      "full_support_H_rank": 0,
+      "nonnormal_P": false,
+      "H_B_noncommuting": false,
+      "invariant_trace": "2"
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 256,
+      "ordered_centered_dimension": 15,
+      "Haar_rank": 14,
+      "balanced_rank": 70,
+      "remaining_balanced_rank": 41,
+      "off_charge_rank": 186,
+      "proper_supports_checked": 14,
+      "trace": "11653954829/30517578125",
+      "H_spectrum": {
+        "0": 8,
+        "1/3": 6,
+        "1/5": 1
+      },
+      "full_support_H_rank": 1,
+      "nonnormal_P": false,
+      "H_B_noncommuting": false,
+      "invariant_trace": "2"
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 9,
+      "ordered_centered_dimension": 2,
+      "Haar_rank": 1,
+      "balanced_rank": 3,
+      "remaining_balanced_rank": 0,
+      "off_charge_rank": 6,
+      "proper_supports_checked": 0,
+      "trace": "532656/405769",
+      "H_spectrum": {
+        "0": 2
+      },
+      "full_support_H_rank": 0,
+      "nonnormal_P": true,
+      "H_B_noncommuting": false,
+      "invariant_trace": "1"
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 81,
+      "ordered_centered_dimension": 8,
+      "Haar_rank": 2,
+      "balanced_rank": 15,
+      "remaining_balanced_rank": 5,
+      "off_charge_rank": 66,
+      "proper_supports_checked": 2,
+      "trace": "124723898114/164648481361",
+      "H_spectrum": {
+        "0": 7,
+        "1/4": 1
+      },
+      "full_support_H_rank": 1,
+      "nonnormal_P": true,
+      "H_B_noncommuting": true,
+      "invariant_trace": "2"
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 729,
+      "ordered_centered_dimension": 26,
+      "Haar_rank": 6,
+      "balanced_rank": 93,
+      "remaining_balanced_rank": 61,
+      "off_charge_rank": 636,
+      "proper_supports_checked": 6,
+      "trace": "42107290927433568/66809249633371609",
+      "H_spectrum": {
+        "0": 22,
+        "1/4": 3,
+        "1/10": 1
+      },
+      "full_support_H_rank": 1,
+      "nonnormal_P": true,
+      "H_B_noncommuting": true,
+      "invariant_trace": "3"
+    },
+    {
+      "N": 4,
+      "m": 2,
+      "literal_full_End": true,
+      "arithmetic": "exact rational",
+      "End_dimension": 256,
+      "ordered_centered_dimension": 15,
+      "Haar_rank": 2,
+      "balanced_rank": 28,
+      "remaining_balanced_rank": 11,
+      "off_charge_rank": 228,
+      "proper_supports_checked": 2,
+      "trace": "17476338070397/11005696867500",
+      "H_spectrum": {
+        "0": 14,
+        "1/5": 1
+      },
+      "full_support_H_rank": 1,
+      "nonnormal_P": true,
+      "H_B_noncommuting": true,
+      "invariant_trace": "2"
+    }
+  ],
+  "complex_rational_rows": [
+    {
+      "N": 2,
+      "m": 3,
+      "arithmetic": "exact Q(i)",
+      "trace": "3261545587/30517578125",
+      "genuinely_complex": true,
+      "nonnormal_P": false
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "arithmetic": "exact Q(i)",
+      "trace": "1620706461362/4116212034025",
+      "genuinely_complex": true,
+      "nonnormal_P": true
+    }
+  ],
+  "non_claims": [
+    "No finite range proves the asymptotic bound.",
+    "No actual fixed-tau numerical approximation.",
+    "No full balanced or decorated extension."
+  ],
+  "full_ordered_fourth_moment": {
+    "N": 3,
+    "m": 4,
+    "arithmetic": "exact rational physical-permutation Gram contractions",
+    "Haar_rank": 23,
+    "full_support_dimension": 16,
+    "H4_rank": 3,
+    "symmetric_H4_rank": 1,
+    "H4_spectrum": {
+      "1/10": 1,
+      "1/20": 2,
+      "0": 13
+    },
+    "full_End_dimension": 6561
+  },
+  "product_trace_controls": [
+    {
+      "m": 1,
+      "trace": "-3"
+    },
+    {
+      "m": 2,
+      "trace": "-19"
+    },
+    {
+      "m": 3,
+      "trace": "99"
+    },
+    {
+      "m": 4,
+      "trace": "-31"
+    }
+  ],
+  "elapsed_seconds": 15.11506520799594
+}

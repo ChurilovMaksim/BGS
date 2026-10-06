@@ -121,3 +121,13 @@ links are in the theorem; full signed BGS remains open.
 simplicity; its [four finite U cases](../../finite_seven_spectral_pivots.md)
 remain bounded. [FM-010 one-step companion](../../uniform_trace_square_transcendence.md)
 extends squared-trace transcendence without claiming higher powers at7|N.
+
+## Collective operator sector
+
+[TRACE-020](../../collective_occupation_hierarchy.md) and its
+[exact Q residual](../../collective_projector_residual.md) use actual-U
+ordered operator projectors, distinct from WKB path masks. Full balanced
+and off-charge complements remain open.
+
+[FM-026](../../literal_time_multiplicity_bounds.md) gives scoped literal-time
+multiplicity and simple-count bounds; full uniform simplicity remains open.

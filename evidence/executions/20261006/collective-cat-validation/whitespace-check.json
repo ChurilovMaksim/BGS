@@ -1,0 +1,905 @@
+{
+  "checks": [
+    {
+      "path": "CANONICAL_ROOT/.github/workflows/ci.yml",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/README.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/RESEARCH.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/maintenance/tests/test_collective_cat_portability.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/even_check_residue.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/even_check_returns.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/finite_independent_projector_audit.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/multiplicity_check_arithmetic.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/newest_check_packets.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/newest_replay.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/odd_check_lattice.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/odd_check_operator_returns.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/odd_check_pairwise.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet/tower_check_tower.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/cat_jet_certificates.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective/kostka.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective/ordered.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective/quadratic_diagnostic.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective/slow_diagnostic.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective/trace.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/collective_hierarchy.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/fm008_independent.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/ordered_diagonal/bounded.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/ordered_diagonal/exact.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/computations/verification/ordered_diagonal_companion.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/input_map.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/09273f1624ec92e1e35f53be37b3b24e6e2f487350b259ccf6cb92ae6a534d4b.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/1d05ea5ca12bdfe603cbb8bec025a1c161612c25bb19f73a4c7385f43c0e3764.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/2ece5336f9e3a4efa3c5aa65484a159b8274f31d427d3356d48ff1ba1931027c.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/3484539f4787624378c7f80eb6abcec110f3f9a9f302247c9bc097095330411c.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/37482d57477777ac40bc6a6375bcbf53667f16070e1bcf7e33db04fb9737f654.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/38b1e1b442f942a81a3ea7f89c9bd6a91f4a6ed39f12beb644d0c44064d0b46e.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/3c2372511a83d49dc87be218b75f05e0809613bb6105a27542e95a45c2ef48a2.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/45e2e693ceeb69b10ba9d67b45b14811d79a6589aed57be1d8456d79acddb514.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/55b782e9b9fd295017b75428d94cd4992f964d77209cbcb914188ea78f94b0b8.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/6bf5c2cd6a5c94451421aac135f0f85b68fdeccea786be842dc6586bdf13e4c2.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/7e043149e73445cdd0f413f8ce9460b4c1de9690355c83d992e88ad3fbb2ad39.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/85c1e35376cabc031521329a5bb146372dd39568be3d9be343683e60888f3113.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/88f6973f11c76016f7fb32f4237f02e5725f2098c71ffc9f54b3f43be7d9f337.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/96034f4a3912131ff57ee2cc11745339a2ec5690c32ece772ca5838d8b3a5ee8.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/ac28b4465515de33446a8c8e01dcca16f35b5d6bc04edb0df3735f76631bacac.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/afdb9f47bc1d5823b922d8caaa1fc45d71d0b951c4adb6da7b07ca83bd1b2e17.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/bd72b81e2d602c035fe6ba55ad2c9a1e1bff307d81993a6ff0bff9fe853fcb74.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/c393f42cfc767e77456a16598f492a9bf47ea713f8af3def0df2c3257ae93001.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/c3a98ad153737e4cdac381bf6318eff2d3c44e073a81a7387dbee785ab6a172c.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/c9ea460328b7e5aca3bd12378bc46e93edd0b9e5fc379ae114900409779ece5a.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/d1fbca99a5dd6bab0b2f62cce0470adf47cfa67c34a0cfdca5aaa8858f70758e.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/dbe6d39858060fa0540dc551cb2ecf227bf476821ddff306dcb673a86f6ec2be.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/f208aecb761c8bf7da960da994dc3dcbc08b8e88269aad040232b87573758224.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/inputs/f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/even_residue_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/even_return_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/finite_independent_results.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/multiplicity_arithmetic_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/newest_finite_results.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/newest_packet_results.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/odd_lattice_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/odd_operator_return_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/odd_pairwise_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/original_results/tower_checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/cat_jet_20261006/promotion_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/original_results/kostka.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/original_results/ordered.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/original_results/quadratic_diagnostic.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/original_results/slow_diagnostic.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/original_results/trace.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/promotion_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/collective_20261006/source_binding.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/fm008_fresh_audit_20261006/independent_original.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/fm008_fresh_audit_20261006/promotion_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/ordered_diagonal_20261006/independent_original.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/ordered_diagonal_20261006/original_floating_diagnostic.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/ordered_diagonal_20261006/promotion_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/source_metadata/registry_metadata_20261006.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/evidence/source_metadata/registry_metadata_20261006.sha256",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/literature/cat_multiplicity_prior_source.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/literature/external_dependencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/manuscript/BGS_unified.tex",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/manuscript/unified_bibliography.tex",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/manuscript/unified_sections/collective_occupation_hierarchy.tex",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/manuscript/unified_sections/literal_time_multiplicity_bounds.tex",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/manuscript/unified_sections/ordered_diagonal_companion.tex",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/actual_seven_primary_commutant.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/algebraic_time_rank_transfer.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/collective_occupation_hierarchy.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/collective_projector_residual.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/even_new_sector_first_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/even_oldform_first_order_obstruction.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/even_oldform_second_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/finite_cat_first_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/frozen_algebraic_spectral_simplicity.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/literal_time_multiplicity_bounds.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/odd_oldform_second_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/oldform_tower_compression.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/open_questions.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/ordered_diagonal_cyclic_trace.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/quadratic_cycle_interface.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/quadratic_occupation_sector.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/quadratic_slow_source.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/quadratic_slow_source_signed.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/results.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/topics/fixed-map/README.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/topics/trace-bridge/README.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/mathematics/uniform_cat_multiplicity.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_even_obstruction_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_even_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_finite_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_multiplicity_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_newest_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_odd_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_promotion_mapping.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_rank_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/cat_jet_tower_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/claim_ledger.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/claim_registry.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/claims.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/collective_cat_bibliographic_impact.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/collective_cat_integration_20261006.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/collective_cat_integration_delta.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/collective_hierarchy_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/collective_promotion_mapping.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/fm008_fresh_audit_mapping.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/fm008_fresh_independent_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/INDEX.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/CAT_JET_HANDOFF_v2.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/algebraic_time_rank_transfer_v2.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_audit_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_check_residue.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_check_returns.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_computation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_first_order_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_first_order_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_new_sector_first_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/even_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/finite_computation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/finite_independent_projector_audit.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/finite_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/finite_source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/first_order_cat_split.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/handoff_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/kelmer_prior_source_lead.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_V2_BINDING.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_check_arithmetic.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_manifest_v2.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_uniform_cat_multiplicity.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/multiplicity_uniform_cat_multiplicity_v2.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/newest_audit_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/newest_check_packets.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/newest_computation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/newest_replay.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/newest_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_audit_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_check_lattice.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_check_operator_returns.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_check_pairwise.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_computation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_core_second_jet_extension.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/odd_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/oldform_tower_compression.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/rank_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/rank_source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/tower_audit_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/tower_check_tower.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/tower_computation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/tower_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/uniform_cat_multiplicity_v2.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/cat_jet_20261006/uniform_oldform_second_jet.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/exact_contract.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/exact_execution_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_delta.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_final_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_sources.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_v2.diff.raw.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/hierarchy_v2.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/kostka_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/ordered_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/quadratic_checks_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/quadratic_cycle_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/quadratic_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/quadratic_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/quadratic_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/residual_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/signed_source_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/slow_checks_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/slow_source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/slow_source_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/slow_source_review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/trace_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/v2_confirmation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/collective_20261006/v2_confirmation.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/fm008_fresh_audit_20261006/checker_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/fm008_fresh_audit_20261006/proof_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/fm008_fresh_audit_20261006/review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/fm008_fresh_audit_20261006/verdict_original.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/bounded_suite_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/cap_failure_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/cap_failure_stderr.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/cap_failure_stdout.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/completed_contract.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/completed_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/exact_checker_original.py",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/proof_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/review_original.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/history/2026/ordered_diagonal_20261006/review_summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/mathematics_topics.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/ordered_diagonal_mapping.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/ordered_diagonal_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/quadratic_occupation_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/quadratic_slow_source_review.md",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/scientific_dependencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "CANONICAL_ROOT/record/scientific_dependency_graph.md",
+      "status": "PASS"
+    }
+  ],
+  "blank_EOF_included": true
+}

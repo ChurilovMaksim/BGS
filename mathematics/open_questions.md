@@ -498,3 +498,11 @@ removes disjoint cyclic and homoclinic ordered pairs once; only unremoved
 torsion portions remain. The complete signed residual and plateau correction,
 other displacements and higher factorial orders are open. The phase-only
 TRACE-018 averaged Fourier-square bound is not fixed-N time averaging.
+
+### Exact operator residual after collective removal
+
+[TRACE-020](collective_projector_residual.md) leaves
+Q=(Pi-P_H-P_coll)+(I-Pi), including some cycle-fixed vectors. Its complete
+signed cyclic trace is unestimated. This is distinct from the stationary-label
+WKB residual. [FM-026](literal_time_multiplicity_bounds.md) leaves intermediate
+old-layer U simplicity and quantitative gaps open.

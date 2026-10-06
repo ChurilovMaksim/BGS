@@ -73,3 +73,7 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Cohesive spectral and weighted-family integration](../../cohesive_integration_20261006.md): scoped theorem owners, source corrections and execution boundary.
 
 - [Cohesive spectral/selected-family final validation](../../../evidence/executions/20261006/cohesive-validation/README.md): post-run receipts for the 2,205-file snapshot; 186/186 workspace, 28/28 supplement, 58/58 maintenance in both modes, 270-page manuscript.
+
+- [Collective/cat/audit integration](../../collective_cat_integration_20261006.md): scoped TRACE-020/FM-026 and fresh FM-008 review, with source-bound corrections.
+
+- [Collective/cat/audit final validation](../../../evidence/executions/20261006/collective-cat-validation/README.md): post-run receipts for the 2,430-file snapshot; 190/190 workspace, 28/28 supplement, 61/61 maintenance in both modes, 271-page manuscript.

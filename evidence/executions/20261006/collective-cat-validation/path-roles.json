@@ -1,0 +1,14 @@
+{
+  "scope": "Portable role names replace execution-machine paths in public JSON. Exact raw receipts and local helper remain in the external validation workspace. No command is relabeled as having run on another machine.",
+  "roles": {
+    "SNAPSHOT_ROOT": "snapshot root",
+    "VALIDATION_ROOT": "validation root",
+    "CPP_BUILD": "cpp build",
+    "BOOST_ROOT": "boost root",
+    "CANONICAL_ROOT": "canonical root",
+    "LEAN_ROOT": "lean root",
+    "PANDOC_ROOT": "pandoc root",
+    "CMAKE_ROOT": "cmake root",
+    "TEMP_ROOT/": "temp root/"
+  }
+}

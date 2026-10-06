@@ -6,6 +6,8 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F21 --> T20[BGS-TRACE-020 collective occupation hierarchy and exact Q residual]
+  F1 --> F26[BGS-FM-026 literal-time multiplicity bounds]
   F1 --> F25[BGS-FM-025 pure-five kick simplicity; bounded U companion]
   F8 --> F25
   F1 --> T19[BGS-TRACE-019 selected full-weight family]

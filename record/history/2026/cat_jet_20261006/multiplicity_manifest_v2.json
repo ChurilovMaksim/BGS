@@ -1,0 +1,20 @@
+{
+  "review_kind": "Final source-bound acceptance after exact wording-only correction",
+  "primary_verdict": "proved as written",
+  "target": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/uniform_cat_multiplicity_v2.md",
+  "target_sha256": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e",
+  "original_target": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/uniform_cat_multiplicity.md",
+  "original_target_sha256": "f9d4ead9e1916f62bafd8e8db660957b5c315bb6f1eecf7dcbd2b9626d002a9c",
+  "delta_verified": "Exactly one replacement; matrix-factor valuation clarification only",
+  "arithmetic_controls_rerun": false,
+  "arithmetic_controls_inherited_from": "arithmetic_checks.json",
+  "files": {
+    "REPORT.md": "c9ea460328b7e5aca3bd12378bc46e93edd0b9e5fc379ae114900409779ece5a",
+    "V2_BINDING.md": "dbe6d39858060fa0540dc551cb2ecf227bf476821ddff306dcb673a86f6ec2be",
+    "check_arithmetic.py": "8bb7037425a8cc5daec2403aa2d58ddf1c73433e12754f9cfb7676aa94ab3aab",
+    "arithmetic_checks.json": "9c5537ff26f727fdf7b57fb0101e9335771a02b3a703287b1dde83dea33c76e2",
+    "manifest.json": "77cc9e925370c777518f2da777d11416daa66af930980762936297d1bf7d2146"
+  },
+  "canonical_modified": false,
+  "scope": "Uniform cat multiplicities for every e>=1; no kick compression or kicked-U conclusion"
+}

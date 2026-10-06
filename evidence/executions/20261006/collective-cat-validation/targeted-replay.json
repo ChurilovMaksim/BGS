@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Final canonical copied-byte entry points in both modes. Collective default exact suite only; separately preserved floating diagnostics are not reclassified.",
+  "excluded_metadata_fields": [
+    "canonical_head_after",
+    "canonical_head_before",
+    "canonical_status_after",
+    "canonical_status_before",
+    "duration_seconds",
+    "elapsed_seconds",
+    "run_started",
+    "runtime_seconds",
+    "script_sha256",
+    "seconds",
+    "source_sha256_after",
+    "source_sha256_before",
+    "started_at"
+  ],
+  "checks": [
+    {
+      "name": "collective_hierarchy",
+      "normal_sha256": "08d7cae3d3bda12ec035d3b20b9dd9ca67efdd45e1e2118898f1d2c63864393f",
+      "optimized_sha256": "0125dde9c8cc4e2bb4dec4a703262508e9009f3612cfc0cdb34d89dc244b47be",
+      "mathematical_outputs_identical": true
+    },
+    {
+      "name": "cat_jet_certificates",
+      "normal_sha256": "4e0b718af0e563a06ad0dfb7a2bfab2d8414f080d662837ee6cc6d32a90d55bc",
+      "optimized_sha256": "b89fc50bec7049196727632bdcd00be8f256e576ab6485831a6f5c48fe2ffdb9",
+      "mathematical_outputs_identical": true
+    },
+    {
+      "name": "fm008_independent",
+      "normal_sha256": "52a85146190986c98d195555ee5dd6bb0dd8de32851020ee40b79007df5b4fe4",
+      "optimized_sha256": "52a85146190986c98d195555ee5dd6bb0dd8de32851020ee40b79007df5b4fe4",
+      "mathematical_outputs_identical": true
+    },
+    {
+      "name": "ordered_diagonal_companion",
+      "normal_sha256": "c4018c7ebe5fd8d90a79a727859f0eb209530dd18bfae1f829e85b9b67c1731b",
+      "optimized_sha256": "0f2045c3ad11aca38335164f451934b8b12b242f12f5d78cc03ce0e7c1623032",
+      "mathematical_outputs_identical": true
+    }
+  ]
+}

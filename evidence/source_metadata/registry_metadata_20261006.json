@@ -1,7 +1,7 @@
 {
   "schema": "bgs-bibliographic-metadata-audit-v1",
   "checked_on": "2026-10-06",
-  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit. Constructive extension: one scoped Kolesnikov–Milman box inequality; 35 registered references. Cohesive extension adds the verified Mane1981+mandatory1983errata bundle: 36 references; existing source observations remain intact.",
+  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit. Constructive extension: one scoped Kolesnikov–Milman box inequality; 35 registered references. Cohesive extension adds the verified Mane1981+mandatory1983errata bundle: 36 references; existing source observations remain intact. Collective/cat extension:37 references, including Kelmer prior-attribution-only; no new Kelmer proof dependency.",
   "non_claim": "Offline PASS certifies agreement with reviewed cached metadata and coverage accounting; it is not theorem applicability, independent source authentication, or an asymptotic proof.",
   "records": [
     {
@@ -1448,7 +1448,7 @@
         "pinned_version": "v2, 17 September 2023",
         "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
         "dependency_role": null,
-        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion.",
+        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW.",
         "project_sources": [
           "mathematics/frozen_algebraic_spectral_simplicity.md",
           "mathematics/frozen_common_antireversor_certificate.md",
@@ -1460,7 +1460,12 @@
           "mathematics/finite_seven_spectral_pivots.md",
           "mathematics/uniform_trace_square_transcendence.md",
           "record/finite_seven_pivots_review.md",
-          "record/trace_variance_review.md"
+          "record/trace_variance_review.md",
+          "mathematics/algebraic_time_rank_transfer.md",
+          "mathematics/literal_time_multiplicity_bounds.md",
+          "mathematics/finite_cat_first_jet.md",
+          "record/cat_jet_rank_review.md",
+          "record/fm008_fresh_independent_review.md"
         ],
         "additional_uses": null
       },
@@ -1531,7 +1536,12 @@
         "mathematics/finite_seven_spectral_pivots.md",
         "mathematics/uniform_trace_square_transcendence.md",
         "record/finite_seven_pivots_review.md",
-        "record/trace_variance_review.md"
+        "record/trace_variance_review.md",
+        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/literal_time_multiplicity_bounds.md",
+        "mathematics/finite_cat_first_jet.md",
+        "record/cat_jet_rank_review.md",
+        "record/fm008_fresh_independent_review.md"
       ],
       "direct_claim_dependencies": [
         "BGS-FLOW-013",
@@ -1540,6 +1550,7 @@
         "BGS-FM-010",
         "BGS-FM-024",
         "BGS-FM-025",
+        "BGS-FM-026",
         "BGS-TRACE-013"
       ],
       "transitive_claim_dependencies": [
@@ -1605,7 +1616,22 @@
           "record/trace_variance_review.md"
         ],
         "boundary": "New scoped application review; all previous source observations, hashes and application statuses retained."
-      }
+      },
+      "fresh_fm008_application_review_20261006": {
+        "identifier": "arXiv:2306.14352v2",
+        "author": "Sever Angel Popescu",
+        "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
+        "version_date": "2023-09-17",
+        "checked_on": "2026-10-06",
+        "source_url": "https://arxiv.org/pdf/2306.14352v2",
+        "pdf_sha256": "0c158636ef68a2ac4586f0fff09b7429780f815d513799f1e794e9c554bae0f1",
+        "text_sha256": "dc4fe0d0f4a34aed228ead916464ff7f36de835ad8c5cf598d77d17308ef4d4c",
+        "locator": "Theorem 3.2, printed page 14; proof pages 15-16",
+        "extraction": "pdftotext -layout; printed page 14 separately rendered and visually checked",
+        "retention_basis": "Public primary arXiv source downloaded solely for the authorized independent audit; no canonical repository cache or external upload.",
+        "scope": "Source identity, exact theorem hypothesis, and project application checked. Full classical LW proof not independently re-proved."
+      },
+      "rank_transfer_application_review": "record/cat_jet_rank_review.md: exact minor/derivative-stack mapping; existing LW input inherited, no new external proof."
     },
     {
       "id": "EXT-ROY-2016",
@@ -3910,6 +3936,54 @@
       ],
       "transitive_claim_dependencies": [],
       "dependency_coverage_note": "Proposed direct use by TRACE-019 through weighted periodic EQ. Recompute exact graph impact at integration; do not overwrite the separate EXT-PESIN-1977 observations."
+    },
+    {
+      "id": "EXT-KELMER-2008",
+      "checked_on": "2026-10-06",
+      "accepted_registry_fields": {
+        "title": "On matrix elements for the quantized cat map modulo prime powers",
+        "authors": [
+          "Dubi Kelmer"
+        ],
+        "identifier": "arXiv:0802.3237v2; https://arxiv.org/pdf/0802.3237v2",
+        "pinned_version": "arXiv v2 header18September2008; body first-page datelineNovember8,2018 retained as an observed discrepancy",
+        "locator": "Lemma3.2, printedp10; inert case Section3.2",
+        "dependency_role": "prior-attribution-only",
+        "mapping": "Prior inert-torus multiplicity-free mechanism. Actual cyclic-generator/CRT distributions and jet reductions are independently proved in the project. The cited diagonal matrix-element result does not supply off-diagonal cubic-related character compressions. No new external theorem is imported into FM026.",
+        "project_sources": [
+          "literature/cat_multiplicity_prior_source.md",
+          "mathematics/uniform_cat_multiplicity.md",
+          "mathematics/even_new_sector_first_jet.md"
+        ],
+        "additional_uses": null
+      },
+      "identity_status": "verified",
+      "field_coverage": {
+        "title": "verified",
+        "authors": "verified",
+        "identifier": "verified",
+        "version_date": "arxiv_version_header_verified_body_dateline_distinguished",
+        "theorem_locator": "verified"
+      },
+      "source_observations": {
+        "url": "https://arxiv.org/pdf/0802.3237v2",
+        "retrieval": "Official arXiv PDF opened through web tool on6October2026; printedp10 Lemma3.2 inspected. No locally downloaded PDF byte hash claimed.",
+        "pdf_pages": 26,
+        "version_header": "arXiv0802.3237v2,18Sep2008",
+        "first_page_body_dateline": "November8,2018",
+        "raw_pdf_sha256": null
+      },
+      "application_status": "verified_attribution_or_law_identification",
+      "application_review": "Bounded primary-source attribution check only. Lemma3.2 states one-dimensional-or-zero inert-torus joint eigenspaces. No off-diagonal jet formula or new proof dependency inferred.",
+      "project_sources": [
+        "literature/cat_multiplicity_prior_source.md",
+        "mathematics/uniform_cat_multiplicity.md",
+        "mathematics/even_new_sector_first_jet.md"
+      ],
+      "inherited_project_mapping": "Prior inert-torus multiplicity-free mechanism. Actual cyclic-generator/CRT distributions and jet reductions are independently proved in the project. The cited diagonal matrix-element result does not supply off-diagonal cubic-related character compressions. No new external theorem is imported into FM026.",
+      "direct_claim_dependencies": [],
+      "transitive_claim_dependencies": [],
+      "dependency_coverage_note": "Attribution-only record, absent from load-bearing claim external_dependencies. Keep this explicit role; recompute if integration adds any dependency edge."
     }
   ],
   "supplemental_review_provenance": {

@@ -10,8 +10,9 @@ N>=3 except N=7. This is an explicit combination of separately scoped proofs:
 
 - For 7∤N, prior [FM-008](frozen_algebraic_spectral_simplicity.md) gives simple
   A_N and nonzero entries of M_N in its eigenbasis. A joint commuter is
-  diagonal there, and every diagonal value agrees. Its prior review boundary
-  is retained; it is not re-audited by the later seven-primary work.
+  diagonal there, and every diagonal value agrees. This r=1 leaf now has a [fresh independent audit](../record/fm008_fresh_independent_review.md)
+  and uses no Lindemann–Weierstrass input. The separate literal-U
+  algebraic-entry corollary below still requires that external theorem.
 - For 49|N,5∤N, the higher-seven proof below applies.
 - For 7|N,49∤N,N>7, the [chain-trace proof](ramified_first_seven_commutant.md)
   includes arbitrary five-adic ramification.

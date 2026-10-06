@@ -36,7 +36,7 @@ jobs:
   computation:
     needs: [scientific-registry, repository-structure]
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     env:
       OPENBLAS_NUM_THREADS: '1'
       OMP_NUM_THREADS: '1'

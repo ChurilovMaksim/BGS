@@ -1,0 +1,54 @@
+{
+  "primary_verdict": "proved as written",
+  "target": {
+    "path": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/oldform_tower_compression.md",
+    "sha256": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae"
+  },
+  "report": {
+    "path": "REPORT.md",
+    "sha256": "f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5"
+  },
+  "deliverables": [
+    {
+      "path": "check_tower.py",
+      "sha256": "e52071942005a2839502b392a29fac86ec8876c38bf3a5712d0af3f1a8a20e4e"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "5a92b17b19f26c36b4a3eceded03b008d41617ed1031c84f4babf0fd51f655fc"
+    },
+    {
+      "path": "computation_manifest.json",
+      "sha256": "e5e25147c61557a653c11d8dbcdcebbe86314077553d01243525a80a509c8969"
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "inputs/REPORT.md",
+      "sha256": "c9ea460328b7e5aca3bd12378bc46e93edd0b9e5fc379ae114900409779ece5a"
+    },
+    {
+      "path": "inputs/V2_BINDING.md",
+      "sha256": "dbe6d39858060fa0540dc551cb2ecf227bf476821ddff306dcb673a86f6ec2be"
+    },
+    {
+      "path": "inputs/fixed_model_symmetry_theorem.md",
+      "sha256": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2"
+    },
+    {
+      "path": "inputs/oldform_tower_compression.md",
+      "sha256": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae"
+    },
+    {
+      "path": "inputs/uniform_cat_multiplicity_v2.md",
+      "sha256": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e"
+    }
+  ],
+  "canonical_read_only": true,
+  "canonical_head_at_audit": "a4d59bf91b1aeff88719e3b1eaa0ba3b8dafe8d8",
+  "non_claims": [
+    "Finite checks are not a proof of all-depth quantifiers; the report supplies the separate uniform argument.",
+    "No new reproduction of accepted prime-power simplicity or full cat multiplicity certificates.",
+    "No effective eigenjet order bound, kicked-U degeneracy or simplicity, full U-commutant claim, or BGS conclusion."
+  ]
+}

@@ -6,16 +6,21 @@
 
 ## Current work
 
-The actual pair commutant is classified for every odd N, with the exact
-N=7 exception ([FM-024](mathematics/actual_seven_primary_commutant.md)).
-[FM-025](mathematics/uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
-e>=1, with only four bounded literal-U simplicity cases; the
-[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) gives
-one-step squared-trace transcendence for odd N except7.
-[TRACE-019](mathematics/selected_weighted_coefficient.md) controls one full-weight
-homoclinic family in the fixed-J WKB representation and its normalized time
-sum. The complete signed complement, plateau/torsion mechanism and higher
-factorial hierarchy remain open; no BGS conclusion follows.
+The actual pair commutant is classified for odd N>=3 with the exact N=7
+exception ([FM-024](mathematics/actual_seven_primary_commutant.md)); its7∤N leaf
+now has fresh independent review. [FM-025](mathematics/uniform_five_cluster_simplicity.md)
+gives the pure-five kick family, while [FM-026](mathematics/literal_time_multiplicity_bounds.md)
+gives literal-time multiplicity<=7 and precise simple-eigenvalue counts on
+N=7*5^e. Finite U-simplicity cases remain explicitly bounded. The
+[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) concerns
+one-step squared traces for odd N>=3,N!=7.
+
+[TRACE-019](mathematics/selected_weighted_coefficient.md) controls a selected
+full-weight WKB family. Separately, [TRACE-020](mathematics/collective_occupation_hierarchy.md)
+controls collective and, separately, full ordered-diagonal sectors in actual-U
+operator space. Their cancellation bounds differ; neither is identified with WKB path masks.
+The exact signed complement, plateau/torsion mechanism and higher factorial
+hierarchy remain open; no BGS conclusion follows.
 
 The central fixed-model obligation is the **signed** Heisenberg-scale joint-trace comparison, for every fixed correlation order and every smooth compact Fourier weight. An absolute all-order deterministic comparison is not the target. The [research brief](RESEARCH.md) states the model, current subsidiary conclusions and exact remaining gap.
 

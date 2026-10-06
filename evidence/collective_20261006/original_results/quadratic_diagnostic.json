@@ -1,0 +1,617 @@
+{
+  "arithmetic": "float64/complex128; diagnostic controls, not asymptotic proof",
+  "randomness": "NumPy default_rng seed 621407; two independent complex QR controls per pair",
+  "construction": "All slot permutations for full Haar projection; direct SVD for sector orthonormalization",
+  "runs": [
+    {
+      "N": 3,
+      "m": 2,
+      "ordered_hilbert_dimension": 9,
+      "full_replica_dimension": 81,
+      "permutation_count": 2,
+      "full_haar_span_rank": 2,
+      "sector_dimension": 3,
+      "true_gram_residual": 1.055751530755269e-15,
+      "same_cycle_fixed_residual": 5.1925927263190236e-17,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            3.0,
+            0.0
+          ],
+          "formula": 2.9999999999999982,
+          "trace_residual": 1.7763568394002505e-15,
+          "additive_trace_residual": 4.440892098500626e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            2.220446049250313e-16,
+            0.0
+          ],
+          "formula": -1.1102230246251565e-16,
+          "trace_residual": 3.3306690738754696e-16,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 2.449489742783178,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            0.02076964309688986,
+            -2.0971642765067765e-19
+          ],
+          "formula": 0.02076964309688989,
+          "trace_residual": 2.7756367895222186e-17,
+          "additive_trace_residual": 1.1175149803700391e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 1.0982807795195078,
+          "stochastic_nonnormality": 0.780827869813558
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            0.07805934354660488,
+            2.880613979838745e-17
+          ],
+          "formula": 0.0780593435466046,
+          "trace_residual": 2.7904657579976444e-16,
+          "additive_trace_residual": 3.33333830186944e-16,
+          "full_replica_trace_residual": 6.206335383118183e-17,
+          "stochastic_nonsymmetry": 0.18980700100138212,
+          "stochastic_nonnormality": 0.05851205858377184
+        }
+      ],
+      "source_squared_singular_values": [
+        -3.469446951953614e-17,
+        4.860003601870542e-32,
+        0.11111111111111124
+      ],
+      "source_spectrum_residual": 1.3877787807814457e-16,
+      "additive_metaplectic_source_norm": 1.506574911172486e-16
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "ordered_hilbert_dimension": 27,
+      "full_replica_dimension": 729,
+      "permutation_count": 6,
+      "full_haar_span_rank": 6,
+      "sector_dimension": 3,
+      "true_gram_residual": 1.356052326018776e-15,
+      "same_cycle_fixed_residual": 5.837557119224248e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            2.9999999999999996,
+            0.0
+          ],
+          "formula": 2.9999999999999982,
+          "trace_residual": 1.3322676295501878e-15,
+          "additive_trace_residual": 0.0,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            -3.3306690738754696e-16,
+            0.0
+          ],
+          "formula": -1.1102230246251565e-16,
+          "trace_residual": 2.220446049250313e-16,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 2.449489742783178,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            0.3843197324258828,
+            -9.574170536087018e-18
+          ],
+          "formula": 0.3843197324258831,
+          "trace_residual": 2.7772083558304286e-16,
+          "additive_trace_residual": 1.892687528611904e-18,
+          "full_replica_trace_residual": 5.551115123125783e-17,
+          "stochastic_nonsymmetry": 0.24392360415218753,
+          "stochastic_nonnormality": 0.35703378043714834
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            0.016343985602845765,
+            -1.6049334799631545e-17
+          ],
+          "formula": 0.016343985602845335,
+          "trace_residual": 4.3051068372704064e-16,
+          "additive_trace_residual": 1.1111236109457132e-16,
+          "full_replica_trace_residual": 1.5700924586837752e-16,
+          "stochastic_nonsymmetry": 0.23570281940629706,
+          "stochastic_nonnormality": 0.23848520704297468
+        }
+      ],
+      "source_squared_singular_values": [
+        5.710672126829839e-32,
+        1.734723475976807e-17,
+        0.11111111111111124
+      ],
+      "source_spectrum_residual": 1.3877787807814457e-16,
+      "additive_metaplectic_source_norm": 2.2403853126324735e-16
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "ordered_hilbert_dimension": 81,
+      "full_replica_dimension": 6561,
+      "permutation_count": 24,
+      "full_haar_span_rank": 23,
+      "sector_dimension": 3,
+      "true_gram_residual": 9.258159221732683e-16,
+      "same_cycle_fixed_residual": 4.4266153435965266e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            2.999999999999999,
+            0.0
+          ],
+          "formula": 2.9999999999999982,
+          "trace_residual": 8.881784197001252e-16,
+          "additive_trace_residual": 2.220446049250313e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            0.0,
+            0.0
+          ],
+          "formula": -1.1102230246251565e-16,
+          "trace_residual": 1.1102230246251565e-16,
+          "additive_trace_residual": 0.0,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 2.449489742783178,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            -0.14103316648975978,
+            -1.2924141552381246e-17
+          ],
+          "formula": -0.14103316648975983,
+          "trace_residual": 5.699580112504398e-17,
+          "additive_trace_residual": 1.39073133566868e-16,
+          "full_replica_trace_residual": 4.440892098500626e-16,
+          "stochastic_nonsymmetry": 0.7869415191751259,
+          "stochastic_nonnormality": 0.6721579993664423
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            -0.25987260629136205,
+            -2.3661185761583095e-17
+          ],
+          "formula": -0.2598726062913621,
+          "trace_residual": 6.034351350943795e-17,
+          "additive_trace_residual": 3.3306827338840783e-16,
+          "full_replica_trace_residual": 3.553147333202946e-15,
+          "stochastic_nonsymmetry": 1.5788001121952182,
+          "stochastic_nonnormality": 0.424137355391262
+        }
+      ],
+      "source_squared_singular_values": [
+        4.010051115967772e-32,
+        1.9569849213363355e-17,
+        0.11111111111111124
+      ],
+      "source_spectrum_residual": 1.3877787807814457e-16,
+      "additive_metaplectic_source_norm": 2.9082689906961035e-16
+    },
+    {
+      "N": 4,
+      "m": 2,
+      "ordered_hilbert_dimension": 16,
+      "full_replica_dimension": 256,
+      "permutation_count": 2,
+      "full_haar_span_rank": 2,
+      "sector_dimension": 6,
+      "true_gram_residual": 1.6819370140875021e-15,
+      "same_cycle_fixed_residual": 1.3470148057546163e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            6.0,
+            0.0
+          ],
+          "formula": 5.999999999999998,
+          "trace_residual": 1.7763568394002505e-15,
+          "additive_trace_residual": 4.440892098500626e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            0.0,
+            0.0
+          ],
+          "formula": -3.3306690738754696e-16,
+          "trace_residual": 3.3306690738754696e-16,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 2.8284271247461903,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            -0.2298806382229285,
+            -1.1352374587494141e-18
+          ],
+          "formula": -0.22988063822292856,
+          "trace_residual": 5.552275817272882e-17,
+          "additive_trace_residual": 5.565622724885865e-17,
+          "full_replica_trace_residual": 2.2301825219878386e-16,
+          "stochastic_nonsymmetry": 1.0581909163782746,
+          "stochastic_nonnormality": 0.5813920371100761
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            0.09611746901446187,
+            2.3589677633946497e-17
+          ],
+          "formula": 0.09611746901446183,
+          "trace_residual": 4.7851957544305623e-17,
+          "additive_trace_residual": 1.6654603271275314e-16,
+          "full_replica_trace_residual": 4.440892098500626e-16,
+          "stochastic_nonsymmetry": 0.8866088019199103,
+          "stochastic_nonnormality": 0.34583000175118805
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "m": 3,
+      "ordered_hilbert_dimension": 64,
+      "full_replica_dimension": 4096,
+      "permutation_count": 6,
+      "full_haar_span_rank": 6,
+      "sector_dimension": 6,
+      "true_gram_residual": 1.320597625717025e-15,
+      "same_cycle_fixed_residual": 3.2654028341806377e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            6.0,
+            0.0
+          ],
+          "formula": 5.999999999999998,
+          "trace_residual": 1.7763568394002505e-15,
+          "additive_trace_residual": 4.440892098500626e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            2.220446049250313e-16,
+            0.0
+          ],
+          "formula": -3.3306690738754696e-16,
+          "trace_residual": 5.551115123125783e-16,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 2.8284271247461903,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            0.029348001521967662,
+            1.8552254631078938e-17
+          ],
+          "formula": 0.029348001521967537,
+          "trace_residual": 1.2627041894851303e-16,
+          "additive_trace_residual": 1.6851367572273531e-18,
+          "full_replica_trace_residual": 4.449557262054371e-16,
+          "stochastic_nonsymmetry": 0.6742378212418441,
+          "stochastic_nonnormality": 0.3932272256577656
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            -0.1137577547224656,
+            1.3579110115114258e-17
+          ],
+          "formula": -0.11375775472246563,
+          "trace_residual": 3.089925904084583e-17,
+          "additive_trace_residual": 8.240923910981089e-19,
+          "full_replica_trace_residual": 1.1102230246251565e-16,
+          "stochastic_nonsymmetry": 0.8876121751552116,
+          "stochastic_nonnormality": 0.23038724511208494
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "m": 2,
+      "ordered_hilbert_dimension": 25,
+      "full_replica_dimension": 625,
+      "permutation_count": 2,
+      "full_haar_span_rank": 2,
+      "sector_dimension": 10,
+      "true_gram_residual": 2.0834890301916013e-15,
+      "same_cycle_fixed_residual": 2.1542818257326537e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            10.0,
+            0.0
+          ],
+          "formula": 9.999999999999996,
+          "trace_residual": 3.552713678800501e-15,
+          "additive_trace_residual": 4.440892098500626e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            2.220446049250313e-16,
+            0.0
+          ],
+          "formula": -2.220446049250313e-16,
+          "trace_residual": 4.440892098500626e-16,
+          "additive_trace_residual": 3.3306690738754696e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 3.1622776601683795,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            0.0615110259609846,
+            5.561563309296894e-18
+          ],
+          "formula": 0.06151102596098473,
+          "trace_residual": 1.3195623795235344e-16,
+          "additive_trace_residual": 5.670978100714734e-17,
+          "full_replica_trace_residual": 4.518280359883027e-16,
+          "stochastic_nonsymmetry": 0.8404194996344383,
+          "stochastic_nonnormality": 0.4453212956359024
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            -0.14326952557661327,
+            7.081538631172965e-18
+          ],
+          "formula": -0.1432695255766133,
+          "trace_residual": 2.864472319886665e-17,
+          "additive_trace_residual": 2.777515342529155e-17,
+          "full_replica_trace_residual": 4.577566798522237e-16,
+          "stochastic_nonsymmetry": 0.9266834882790433,
+          "stochastic_nonnormality": 0.3033981922136876
+        }
+      ],
+      "source_squared_singular_values": [
+        -1.7020386194673196e-17,
+        -1.4874314668831882e-17,
+        -6.7786538594087666e-18,
+        -2.2569971193104163e-18,
+        -1.158063486504144e-18,
+        1.709624617286746e-18,
+        3.5335237914179185e-18,
+        1.432843687921896e-17,
+        0.03999999999999997,
+        0.19999999999999987
+      ],
+      "source_spectrum_residual": 1.3877787807814457e-16,
+      "additive_metaplectic_source_norm": 1.8304957648889643e-16
+    },
+    {
+      "N": 5,
+      "m": 3,
+      "ordered_hilbert_dimension": 125,
+      "full_replica_dimension": 15625,
+      "permutation_count": 6,
+      "full_haar_span_rank": 6,
+      "sector_dimension": 10,
+      "true_gram_residual": 2.437010748978526e-15,
+      "same_cycle_fixed_residual": 3.402544598778723e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            10.000000000000002,
+            0.0
+          ],
+          "formula": 9.999999999999996,
+          "trace_residual": 5.329070518200751e-15,
+          "additive_trace_residual": 8.881784197001252e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            4.440892098500626e-16,
+            0.0
+          ],
+          "formula": -2.220446049250313e-16,
+          "trace_residual": 6.661338147750939e-16,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 3.1622776601683795,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            -0.10950350911632525,
+            -3.1304013063136898e-18
+          ],
+          "formula": -0.10950350911632553,
+          "trace_residual": 2.775734086468443e-16,
+          "additive_trace_residual": 3.330872463265527e-16,
+          "full_replica_trace_residual": 8.95090418262362e-16,
+          "stochastic_nonsymmetry": 1.26285072561962,
+          "stochastic_nonnormality": 0.3157175162390664
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            -0.0924634282932473,
+            1.3434343724801954e-18
+          ],
+          "formula": -0.09246342829324732,
+          "trace_residual": 1.3942661523248882e-17,
+          "additive_trace_residual": 5.204579007174288e-17,
+          "full_replica_trace_residual": 1.1102230246251565e-16,
+          "stochastic_nonsymmetry": 0.7823258993426422,
+          "stochastic_nonnormality": 0.49093450356740326
+        }
+      ],
+      "source_squared_singular_values": [
+        -1.7786033372031712e-16,
+        -4.796014364351213e-17,
+        -7.666290045570505e-18,
+        1.920838996768425e-21,
+        1.5393027716145159e-18,
+        3.920010507278577e-18,
+        1.5262212460793326e-17,
+        2.7523408602970817e-17,
+        0.039999999999999945,
+        0.19999999999999962
+      ],
+      "source_spectrum_residual": 3.885780586188048e-16,
+      "additive_metaplectic_source_norm": 1.7563973662059838e-16
+    },
+    {
+      "N": 9,
+      "m": 2,
+      "ordered_hilbert_dimension": 81,
+      "full_replica_dimension": 6561,
+      "permutation_count": 2,
+      "full_haar_span_rank": 2,
+      "sector_dimension": 36,
+      "true_gram_residual": 3.620759284463817e-15,
+      "same_cycle_fixed_residual": 2.1808765485527414e-16,
+      "unitary_controls": [
+        {
+          "name": "identity",
+          "direct_quadratic_trace": [
+            36.00000000000001,
+            0.0
+          ],
+          "formula": 35.99999999999999,
+          "trace_residual": 1.4210854715202004e-14,
+          "additive_trace_residual": 8.881784197001252e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 0.0,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "cyclic_permutation",
+          "direct_quadratic_trace": [
+            1.2212453270876722e-15,
+            0.0
+          ],
+          "formula": -2.914335439641036e-16,
+          "trace_residual": 1.5126788710517758e-15,
+          "additive_trace_residual": 1.1102230246251565e-16,
+          "full_replica_trace_residual": 0.0,
+          "stochastic_nonsymmetry": 4.242640687119285,
+          "stochastic_nonnormality": 0.0
+        },
+        {
+          "name": "complex_QR_0",
+          "direct_quadratic_trace": [
+            0.08168111666068519,
+            1.775197374012663e-17
+          ],
+          "formula": 0.08168111666068514,
+          "trace_residual": 4.526002122865894e-17,
+          "additive_trace_residual": 3.053148842677749e-16,
+          "full_replica_trace_residual": 5.0895734351719815e-16,
+          "stochastic_nonsymmetry": 1.1253025273882447,
+          "stochastic_nonnormality": 0.4042264912365788
+        },
+        {
+          "name": "complex_QR_1",
+          "direct_quadratic_trace": [
+            -0.10651268320109505,
+            2.1322990523308503e-18
+          ],
+          "formula": -0.10651268320109505,
+          "trace_residual": 2.1322990523308503e-18,
+          "additive_trace_residual": 1.1116704794334538e-16,
+          "full_replica_trace_residual": 1.5700924586837752e-16,
+          "stochastic_nonsymmetry": 1.318457747433765,
+          "stochastic_nonnormality": 0.3674300550445073
+        }
+      ],
+      "source_squared_singular_values": [
+        -4.0927480650369444e-17,
+        -3.861475467092284e-17,
+        -3.3747430421776396e-17,
+        -2.509991490990132e-17,
+        -2.1290481759499953e-17,
+        -1.5932729569321918e-17,
+        -1.4591756737803106e-17,
+        -1.3609522687892754e-17,
+        -1.1568106400697986e-17,
+        -8.857811996823465e-18,
+        -8.471174237924474e-18,
+        -7.277552568731458e-18,
+        -5.213519048100161e-18,
+        -3.812997575047717e-18,
+        -1.737679966696443e-18,
+        -2.4133786310203056e-20,
+        1.963093264486443e-18,
+        2.585788599622226e-18,
+        4.242137445785835e-18,
+        5.776276977139326e-18,
+        7.915693927733152e-18,
+        8.70387110877996e-18,
+        1.095175264163193e-17,
+        1.2348648916633189e-17,
+        1.5155158995058188e-17,
+        1.7252192809322702e-17,
+        1.9045866917873525e-17,
+        2.3286979485961603e-17,
+        2.667226848107189e-17,
+        2.9631198612571975e-17,
+        3.9090179443054324e-17,
+        4.4236771802437056e-17,
+        0.012345679012345663,
+        0.11111111111111102,
+        0.11111111111111105,
+        0.11111111111111109
+      ],
+      "source_spectrum_residual": 8.326672684688674e-17,
+      "additive_metaplectic_source_norm": 1.8605846060713993e-16
+    }
+  ],
+  "runtime_seconds": 0.19450706699717557
+}

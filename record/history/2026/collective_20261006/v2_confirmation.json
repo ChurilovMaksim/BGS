@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-06T22:59:59.776155+00:00",
+  "conclusion": "proved as written for the domain-only corrected v2, with inherited FM-021 estimates at the scope in the original audit",
+  "original_sha256": "8c68dacb6a9480c0805d8caf0d7b0af427be7bc7f767eaf1ab9c746e3aa7a8e0",
+  "v2_sha256": "cb09192dac743bd78fd21b76f6bd9d32c79050e4f616c7a04644e3f8c4c9c037",
+  "exact_single_replacement": true,
+  "replacement_before": "For m>=2 the lower bound A_(m,N)>=1/N follows from the exact q=2 term.",
+  "replacement_after": "For N>=2 and m>=2 the lower bound A_(m,N)>=1/N follows from the exact q=2 term.",
+  "original_review_sha256": "3801a9aaa707704337ee63d2b45ec384150736e27d533d61152075805d800636",
+  "all_original_input_hashes_unchanged": true,
+  "input_count": 30,
+  "current_worktree_status": " M .github/workflows/ci.yml\n",
+  "current_worktree_change": "Only .github/workflows/ci.yml, computation timeout 20 -> 40; no proof-source change",
+  "canonical_head": "801de3ab760cab4349e68b9843dcd67955314e62",
+  "frozen_v2_files": [
+    {
+      "path": "v2_frozen/collective_hierarchy_v2.md",
+      "sha256": "cb09192dac743bd78fd21b76f6bd9d32c79050e4f616c7a04644e3f8c4c9c037"
+    },
+    {
+      "path": "v2_frozen/collective_hierarchy_v2.diff",
+      "sha256": "22ba1cc0553fdf4bc8a6e072c3ed56b509c5583c253f51f1e6767fa090ee9167"
+    },
+    {
+      "path": "v2_frozen/collective_hierarchy_v2_delta.json",
+      "sha256": "614fab8413828b5ada966c9bc1ece6a5b1803ab2adccd1ab11ae0eb65b8a749c"
+    }
+  ]
+}

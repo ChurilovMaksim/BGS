@@ -1,0 +1,128 @@
+{
+  "scope": "Independent audit of full pair-quadratic sector; no source or canonical edits",
+  "verdict": "proved as written",
+  "arithmetic": "Analytic reconstruction; float64/complex128 finite controls",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "thread_caps": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1"
+  },
+  "inputs": [
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/report.md",
+      "sha256": "ff310670a6ccc467ca2f910b68279ae1e5f099559a5c1ecef5009a4d62cc20f7"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/cycle_interface.md",
+      "sha256": "dcd43142cc2bd284b699d591fcdfd36a6b5d9bfa5069b5036ec3f54fe50d3666"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/manifest.json",
+      "sha256": "1f9d8ef4d8366050dc99399810d62599e7ddb70c6c6d68413f69d1bc6a433ae2"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/review_hashes.json",
+      "sha256": "79b67953962768ca66d3b2fa7d97b04dd79b32c301d130b6b417648597281994"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/check_sector.py",
+      "sha256": "fe25048d3c7f04fbd7d1fc52249ee0cac47993747883d113e689386bb9203278"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/checks.json",
+      "sha256": "eee9d743cb4bc752ac74c9b85860490eac33b4233ca012870ee6f5d34c6a36c2"
+    },
+    {
+      "path": "/workspace/shared/bgs_weighted_plateau_independent/quadratic_sector/cycle_checks.json",
+      "sha256": "44ae942f7b5c421eb59d92f939e7086efef3b7521b760aa3ead26516a24d1ca6"
+    },
+    {
+      "path": "/workspace/shared/BGS/mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "path": "/workspace/shared/BGS/mathematics/four_branch_parametrix.md",
+      "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7"
+    },
+    {
+      "path": "/workspace/shared/BGS/record/marked_path_independent_review_20261006.md",
+      "sha256": "050bf2c61043377eafa2052db661ab6f9ed185046076a67f943dec9c122a2a52"
+    }
+  ],
+  "source_hash_checks": {
+    "count": 39,
+    "passed": 39
+  },
+  "candidate_replay_matches_frozen_except_runtime": true,
+  "independent_scope": {
+    "tensor_pairs": [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        9,
+        2
+      ]
+    ],
+    "unitaries": "identity, cyclic permutation, two complex QR per pair",
+    "random_seed": 621407,
+    "full_haar_removal": "all slot permutation operators, SVD; dependencies retained",
+    "normalization": "independent sector SVD",
+    "source": "literal odd-N metaplectic chirp",
+    "non_claims": [
+      "No interval certification",
+      "No asymptotic inference from numerical tests",
+      "No whole-balanced-space or K-invariant-spectral-sector result",
+      "No full signed plateau or BGS closure"
+    ]
+  },
+  "outputs": [
+    {
+      "path": "candidate_replay.json",
+      "sha256": "e2bd8d7e2c1bc1f8c4c5415c8136ba58b4adc30c430c35ce62760eff69dfba84"
+    },
+    {
+      "path": "hash_checks.json",
+      "sha256": "27f3730afba5aba10676631c3c53913a661bcd1262261134b8b20db52e0887e8"
+    },
+    {
+      "path": "independent_check.py",
+      "sha256": "0cf405c8b8a90d4dc8c819569c4fa7e8cfc7efb8bd0a0302985f34443c18db89"
+    },
+    {
+      "path": "independent_checks.json",
+      "sha256": "0b88fc10d8cb26126179fc2e23888dcb8e9fe2c69e97efde7167e3db673b59a0"
+    },
+    {
+      "path": "review.md",
+      "sha256": "3d2a04175b5be09ca21744e98763050c7910c4721a43d375872d3ab570566038"
+    }
+  ]
+}

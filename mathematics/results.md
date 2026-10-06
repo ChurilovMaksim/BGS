@@ -156,16 +156,21 @@ The previous catalogue is retained byte-for-byte in [the dated snapshot](../reco
 
 ## Current algebraic and selected-family frontier
 
-The actual pair commutant is classified for every odd N, with the exact
-N=7 exception ([FM-024](actual_seven_primary_commutant.md)).
-[FM-025](uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
-e>=1, with only four bounded literal-U simplicity cases; the
-[FM-010 companion](uniform_trace_square_transcendence.md) gives
-one-step squared-trace transcendence for odd N except7.
-[TRACE-019](selected_weighted_coefficient.md) controls one full-weight
-homoclinic family in the fixed-J WKB representation and its normalized time
-sum. The complete signed complement, plateau/torsion mechanism and higher
-factorial hierarchy remain open; no BGS conclusion follows.
+The actual pair commutant is classified for odd N>=3 with the exact N=7
+exception ([FM-024](actual_seven_primary_commutant.md)); its7∤N leaf
+now has fresh independent review. [FM-025](uniform_five_cluster_simplicity.md)
+gives the pure-five kick family, while [FM-026](literal_time_multiplicity_bounds.md)
+gives literal-time multiplicity<=7 and precise simple-eigenvalue counts on
+N=7*5^e. Finite U-simplicity cases remain explicitly bounded. The
+[FM-010 companion](uniform_trace_square_transcendence.md) concerns
+one-step squared traces for odd N>=3,N!=7.
+
+[TRACE-019](selected_weighted_coefficient.md) controls a selected
+full-weight WKB family. Separately, [TRACE-020](collective_occupation_hierarchy.md)
+controls collective and, separately, full ordered-diagonal sectors in actual-U
+operator space. Their cancellation bounds differ; neither is identified with WKB path masks.
+The exact signed complement, plateau/torsion mechanism and higher factorial
+hierarchy remain open; no BGS conclusion follows.
 
 [Earlier detailed checkpoints](../record/history/2026/cohesive_frontier_20261006/prior_results_tail.txt)
 retain component provenance; current statements are the linked theorem owners.

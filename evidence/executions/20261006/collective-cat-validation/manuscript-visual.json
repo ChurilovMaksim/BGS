@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Physical pages263,264,267,268,271 only: collective/ordered diagonal, literal-time multiplicity, neighboring transitions and new attribution reference. No full-document visual review claimed.",
+  "pdf_sha256": "f9f19850efb10c5bc3ef07c1f090eef2c6df64ab1152e7a20fb130cad88cb9de",
+  "pages": [
+    {
+      "page": 263,
+      "image_sha256": "df4c4388f769a5992c6661095af5e75b7606c7f7cec138538796ba1f7a622d55"
+    },
+    {
+      "page": 264,
+      "image_sha256": "cfb4153d4594dd67bcec4b938242e13cd3d9f5b0a5a307b550ed8ef0ee897866"
+    },
+    {
+      "page": 267,
+      "image_sha256": "509d748dea5eeab33da4770184a40f8c072e3da715fb1b963573f462ab8b3493"
+    },
+    {
+      "page": 268,
+      "image_sha256": "4369dda59c33cd35e52b37ef628777a3a24c7ef0440f660ec086b5505b811c11"
+    },
+    {
+      "page": 271,
+      "image_sha256": "d3bdca707f59d80b4e911784cb04d68d2c00d43edaa63b483c61d4eed84b98f2"
+    }
+  ],
+  "observations": "Readable formulas, margins, transitions and citations; no visible clipping, overlap or missing glyphs. Full machine warning/reference gate separately passes."
+}

@@ -312,7 +312,7 @@
       "id": "BGS-FM-008",
       "title": "Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + CHECKED LINDEMANN-WEIERSTRASS INPUT + FINITE REGRESSION + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS",
       "source": "mathematics/frozen_algebraic_spectral_simplicity.md",
       "dependencies": [
         "BGS-FM-005"
@@ -321,16 +321,21 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/20260924/frozen_total_minors.json"
+        "evidence/20260924/frozen_total_minors.json",
+        "record/fm008_fresh_independent_review.md",
+        "record/fm008_fresh_audit_mapping.json",
+        "evidence/fm008_fresh_audit_20261006/promotion_receipt.json"
       ],
       "verifiers": [
-        "computations/verification/frozen_total_minors.py"
+        "computations/verification/frozen_total_minors.py",
+        "computations/verification/fm008_independent.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions."
+      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions.",
+      "review_scope": "Fresh independent full internal audit at existing odd N>=3,7∤N scope; primary LW statement/application checked. The simple-A/nonzero-entry r1 pair-commutant leaf uses no LW. Historical author review retained."
     },
     {
       "id": "BGS-FM-009",
@@ -1999,7 +2004,7 @@
       "id": "BGS-FM-024",
       "title": "Actual scalar joint commutant in every odd dimension except seven",
       "state": "proved",
-      "ledger_status": "EXACT + FINITE-CERTIFICATE + INDEPENDENT REVIEWS OF SEVEN-DIVISIBLE COMPONENTS; COMBINED COROLLARY INHERITS FM-008 REVIEW BOUNDARY",
+      "ledger_status": "EXACT COMBINED PROJECT PROOF + INDEPENDENT INTERNAL COMPONENT REVIEWS; FRESH FM-008 r1 LEAF AUDIT; LITERAL-U COROLLARY RETAINS LW",
       "source": "mathematics/actual_seven_primary_commutant.md",
       "dependencies": [
         "BGS-FM-001",
@@ -2024,7 +2029,8 @@
         "record/ramified_higher_promotion_mapping.json",
         "evidence/ramified_higher_20261006/promotion_receipt.json",
         "record/exceptional_seven_review.md",
-        "record/exceptional_seven_mapping.json"
+        "record/exceptional_seven_mapping.json",
+        "record/fm008_fresh_independent_review.md"
       ],
       "verifiers": [
         "computations/verification/actual_algebra_check.py",
@@ -2041,13 +2047,13 @@
         "manuscript/unified_sections/actual_seven_primary_commutant.tex",
         "manuscript/unified_sections/ramified_higher_extension.tex"
       ],
-      "boundary": "Actual scalar complex joint commutant of (A_N,M_N) for every odd N>=3 except genuine N=7. Explicit combination of the separately reviewed seven-primary families with prior FM-008, whose review/source boundary is retained. At N=7, A7=(9/10)I and the separately reviewed characteristic-zero raw identities give multiplicities (3,2,2) and complex commutant dimension 17; no residue lifting. Literal-U corollary remains algebraic-entry-only via existing LW input. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new formalization.",
+      "boundary": "Actual scalar complex joint commutant of (A_N,M_N) for every odd N>=3 except genuine N=7. Explicit combination of the separately reviewed seven-primary families with prior FM-008, whose r1 pair-commutant leaf now has fresh independent internal review and uses no LW. At N=7, A7=(9/10)I and the separately reviewed characteristic-zero raw identities give multiplicities (3,2,2) and complex commutant dimension 17; no residue lifting. Literal-U corollary remains algebraic-entry-only via existing LW input. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new formalization.",
       "proof_dependencies": [
         "mathematics/actual_first_seven_commutant.md",
         "mathematics/ramified_first_seven_commutant.md",
         "mathematics/ramified_higher_seven_commutant.md"
       ],
-      "dependency_scope": "FM-008 is used only for the separately attributed 7∤N family; the seven-divisible components rely on FM-001 and their exact arguments. The N7 exception has separate characteristic-zero review."
+      "dependency_scope": "FM-008 r1 supplies only the7∤N pair-commutant family, now independently reviewed without LW. Seven-divisible components retain their separate reviews. Literal-U algebraic-entry corollary separately uses registered LW; N7 remains characteristic-zero dimension17."
     },
     {
       "id": "BGS-FORMAL-003",
@@ -2181,6 +2187,90 @@
       ],
       "boundary": "Odd N, literal tau=10^-80, any fixed finite J>=0, fixed positive band a0<=m/N<=b0<=2: selected full-weight fixed-J V coefficient is O(N^-1/2). Its once-counted cyclic/negative family has at most2m members and contributes O(N^-1/2) at originalN^-2 compact-time normalization. U transfer is aggregate only, fixedJ>=2. No intrinsic orbitwise U observable. Complete complement, torsion/plateau mechanism, higher orders, TRACE-005 and BGS remain open. Supporting stationary-label decomposition removes disjoint cyclic and selected homoclinic ordered pairs exactly once; only unremoved torsion portions remain. Prior FM-021 position-path ramp is separately credited, with no family-identification claim.",
       "dependency_scope": "W physical area/half-density, Q paired quantum factor and positive mass, EQ norm-uniform changing test, summed absolute contour tails and cyclic bookkeeping are separately scoped. H1–H10 are supporting exact stationary/homoclinic structure with inherited Fourier-method attribution; no multiplicative-gauge consequence."
+    },
+    {
+      "id": "BGS-TRACE-020",
+      "title": "Collective and ordered-diagonal cyclic trace reductions",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT OF V2 + EXACT FINITE RECONSTRUCTIONS; FM-021 ANALYTIC INPUTS INHERITED",
+      "source": "mathematics/collective_occupation_hierarchy.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/collective_projector_residual.md",
+        "mathematics/quadratic_occupation_sector.md",
+        "mathematics/quadratic_cycle_interface.md",
+        "mathematics/quadratic_slow_source.md",
+        "mathematics/quadratic_slow_source_signed.md",
+        "mathematics/ordered_diagonal_cyclic_trace.md"
+      ],
+      "evidence": [
+        "record/collective_hierarchy_review.md",
+        "record/quadratic_occupation_review.md",
+        "record/quadratic_slow_source_review.md",
+        "record/collective_promotion_mapping.json",
+        "evidence/collective_20261006/promotion_receipt.json",
+        "record/ordered_diagonal_review.md",
+        "record/ordered_diagonal_mapping.json",
+        "evidence/ordered_diagonal_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/collective_hierarchy.py",
+        "computations/verification/ordered_diagonal_companion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/collective_occupation_hierarchy.tex",
+        "manuscript/unified_sections/ordered_diagonal_companion.tex"
+      ],
+      "boundary": "Actual odd N>=3; every fixed b>0,2<=m<=bN. Entire full-Haar-removed diagonal collective occupation sector in full ordered End-space has O(1) cyclic trace and O_w(N^-1) original pair aggregate. Finite Gram formulas require N>=2 where stated; N2 infinite-degree failure retained. No full balanced-space, residual-Q, plateau or BGS estimate. Q includes cycle-fixed vectors. Distinct from fixed-J WKB masks and prior Haar spectral-test projections. Distinct ordered-diagonal companion: for each fixed a>0 and all m>=aN, its actual-U cyclic trace is bounded by12N³exp(-c_aN) for sufficiently large odd N. This is exponential in N, not in m at fixed N. Different cycle cancellations mean the ordered result does not imply the collective bound; Q_ord full residual remains open.",
+      "dependency_scope": "Only FM-021 eventual ||P-J||<=1/2 and entrywise |Uab|²<=C/N are analytic inputs. Its proof is not re-audited here. FLOW-019/020 and TRACE-014 receive prior-method/normalization attribution, not a new implication. Ordered companion inherits only FM-021 singular mixing; its independent audit reconstructs the full ordered two-leg and Haar-tail arguments."
+    },
+    {
+      "id": "BGS-FM-026",
+      "title": "Literal-time multiplicity and simple-eigenvalue counts on N=7*5^e",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT COMPONENT/RANK AUDITS + BOUNDED EXACT REPLAYS + INHERITED REGISTERED LW",
+      "source": "mathematics/literal_time_multiplicity_bounds.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "proof_dependencies": [
+        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/uniform_cat_multiplicity.md",
+        "mathematics/oldform_tower_compression.md",
+        "mathematics/even_oldform_second_jet.md",
+        "mathematics/odd_oldform_second_jet.md",
+        "mathematics/even_new_sector_first_jet.md",
+        "mathematics/finite_cat_first_jet.md",
+        "mathematics/even_oldform_first_order_obstruction.md"
+      ],
+      "evidence": [
+        "record/cat_jet_rank_review.md",
+        "record/cat_jet_multiplicity_review.md",
+        "record/cat_jet_tower_review.md",
+        "record/cat_jet_even_review.md",
+        "record/cat_jet_odd_review.md",
+        "record/cat_jet_newest_review.md",
+        "record/cat_jet_finite_review.md",
+        "record/cat_jet_promotion_mapping.json",
+        "evidence/cat_jet_20261006/promotion_receipt.json",
+        "record/cat_jet_even_obstruction_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/cat_jet_certificates.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/literal_time_multiplicity_bounds.tex"
+      ],
+      "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including10^-80N: multiplicity<=7. At least24N/25+7 simple eigenvalues for evene>=4, at least35 for odde>=5. Finite companion simple U at35,175 only. No full uniform U simplicity, quantitative gap, full complex scalar U commutant, trace-statistical or BGS conclusion. Repeated-space dimension count does not assert persistence of an invariant oldform U subspace.",
+      "dependency_scope": "Rank transfer uses algebraic exponential-polynomial minors and registered LW. Cat/tower/core/newest-sector premises separately reviewed; no simple-A or pair-commutant inference. Kelmer inert multiplicity mechanism cited only for prior attribution."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

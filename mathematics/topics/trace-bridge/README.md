@@ -67,3 +67,10 @@ homoclinic coefficient and its once-counted cyclic/negative family. The
 [stationary residual](../../stationary_cyclic_residual.md) retains the signed
 complement and only unremoved torsion portions. Detailed W/Q/EQ and review
 links are in the theorem; full signed BGS remains open.
+
+## Collective operator sector
+
+[TRACE-020](../../collective_occupation_hierarchy.md) and its
+[exact Q residual](../../collective_projector_residual.md) use actual-U
+ordered operator projectors, distinct from WKB path masks. Full balanced
+and off-charge complements remain open.

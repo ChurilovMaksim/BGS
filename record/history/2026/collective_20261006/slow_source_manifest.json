@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "claim_id": "INDEPENDENT-AUDIT-QUADRATIC-SLOW-SOURCE-SIGNED",
+  "repository": {
+    "commit": "a4d59bf91b1aeff88719e3b1eaa0ba3b8dafe8d8",
+    "dirty": true,
+    "note": "Read-only canonical reference. Frozen source hashes are authoritative; review output is an isolated directory."
+  },
+  "command": "Three subprocess argv arrays and actual timings are recorded in run_metadata.json. See audit.md for standalone regeneration commands.",
+  "environment": {
+    "software": [
+      {
+        "name": "python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "numpy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.0"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41; cooperative BLAS/OpenMP one-thread limits"
+  },
+  "mathematics": {
+    "assertion_tested": "Reproduce frozen controls and independently construct actual Fourier/Weyl A; verify quadratic Haar complement, source and energy ratios, all pair multiplicities, signed cyclic identity, Duhamel inequality, and two-frame contraction.",
+    "coefficient_domain": "Exact rational/complex-rational symbol and Fraction scalar checks; complex128 full tensor diagnostics",
+    "conventions": "Full ordered tensor space, ordinary unnormalized Hilbert-Schmidt norm, diagonal-torus occupation projection, full Haar subtraction, actual fixed symbol and chirp",
+    "inputs": [
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/report.md",
+        "sha256": "edf5b7e0c1d25202f9984e344bd360942436fd3d26210156972aec855afa8177"
+      },
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/check_compressed_kernel.py",
+        "sha256": "fc71162460911a5bdcc03aab5c3e415a57381c7afa87fe0ca3b15df2f94bdb22"
+      },
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/nonlinear_source/report.md",
+        "sha256": "4fa3415ce156c563f4d63a180914acdf7c22b8ffb7e3935ad34506258c2b1083"
+      },
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/nonlinear_source/signed_pairing.md",
+        "sha256": "093cabf412c6e5eff4a3584b954d130be1cd16900ae41324834caad4185ebc37"
+      },
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/nonlinear_source/check_nonlinear.py",
+        "sha256": "8161ad94215cf2b4d0627d57a07189fe71b05d47a16c0417c7d85073ace50b81"
+      },
+      {
+        "path": "/workspace/shared/bgs_weighted_plateau_independent/nonlinear_source/check_signed.py",
+        "sha256": "796e9a49737ef8bccdfc3236212d726823040e1d673dc2e2f983468e104bebd4"
+      },
+      {
+        "path": "/workspace/shared/BGS/mathematics/fixed_map_path_model.md",
+        "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+      },
+      {
+        "path": "/workspace/shared/bgs_slow_source_review/independent_checks.py",
+        "sha256": "696ab8e3d17fabf8d5012aa2cafe6f62b6ef140cb7be91b048573ba90aba8301"
+      }
+    ],
+    "bounds": {
+      "independent_tensor_pairs": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          19,
+          2
+        ],
+        [
+          21,
+          2
+        ]
+      ],
+      "exact_fraction_odd_N": [
+        3,
+        201
+      ],
+      "correlation_N": [
+        3,
+        5,
+        7,
+        19,
+        21,
+        35,
+        49,
+        101,
+        1001
+      ],
+      "auxiliary_times": [
+        0,
+        0.137
+      ],
+      "source_control_ranges": "Unchanged, as listed in the two frozen reports",
+      "tolerances": "1e-12 tensor/scalar identities; 1e-9 total norm; 1e-11 invariant contractions"
+    },
+    "non_claims": [
+      "Finite controls do not prove universal estimates",
+      "No numerical resolution of tau=10^-80",
+      "No full signed trace bound, all-mode two-frame gap, or Haar relaxation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T22:34:55.527474+00:00",
+    "runtime_seconds": 1.8151841209983104,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "audit.md",
+      "sha256": "52872b29a351b4f636ecc799a446e0d4e8cbbac26bf2aa7966d9b613ba50dcdb"
+    },
+    {
+      "path": "independent_checks.py",
+      "sha256": "696ab8e3d17fabf8d5012aa2cafe6f62b6ef140cb7be91b048573ba90aba8301"
+    },
+    {
+      "path": "independent_checks.json",
+      "sha256": "2af64700ee342d6fdfdfcf52c84c0988b51383571bb74206b36821fdaada019e"
+    },
+    {
+      "path": "reproduced_nonlinear_checks.json",
+      "sha256": "d0adc8f42a64b7d2574b5848d3ca14efb23c4011a6dda33d69d53efcbafa6ff6"
+    },
+    {
+      "path": "reproduced_signed_checks.json",
+      "sha256": "7fe347e5cc5666908f22a5ae5c814f0ba7eb4205d7e26df89a23dbcfdfb5ebd4"
+    },
+    {
+      "path": "run_metadata.json",
+      "sha256": "805fa7c30955a145de0bbdca099b9e747b929be8b6a71b33961494729d13992d"
+    }
+  ],
+  "checks": [
+    "All frozen controls reproduced",
+    "All independent controls passed",
+    "Input hashes unchanged during run",
+    "Both requested frozen report hashes match"
+  ],
+  "result": "Implementation and finite assertion verified in the stated ranges; the independent analytic audit proves all five scoped vector claims.",
+  "residual_risks": [
+    "Complex128 checks are diagnostic, not interval certificates",
+    "Version 1 manifest is an aggregate record; run_metadata.json additionally records actual argv, per-process timings and input hashes before and after",
+    "Source identification beyond the exact frozen model definition is not a new trace-transfer proof"
+  ]
+}
