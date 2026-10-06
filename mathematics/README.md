@@ -22,6 +22,8 @@ Cayley arithmetic, Pell/return laws, resonance/cohomology, locality, and informa
 
 [Actual higher-seven-primary common commutant](actual_seven_primary_commutant.md) (FM-024) closes the stated unramified 49-divisible family, with remaining arithmetic branches explicit.
 
-[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The later chain-trace extension below leaves only odd multiples of 245 open; no seven-divisible simplicity or BGS conclusion is added.
+[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The later chain-trace extension below leaves the formerly open odd multiples of 245 for the subsequent lattice proof; no seven-divisible simplicity or BGS conclusion is added.
 
-[Ramified first-seven chain trace](ramified_first_seven_commutant.md) removes the five-adic restriction at 7∥N. The combined remaining common-commutant family is odd multiples of 245, besides the known N=7 exception.
+[Ramified first-seven chain trace](ramified_first_seven_commutant.md) removes the five-adic restriction at 7∥N. The subsequent corrected lattice proof closes the odd multiples of 245; N=7 remains the genuine exception.
+
+Current combined [FM-024](actual_seven_primary_commutant.md) classifies the actual scalar pair commutant for every odd N>=3 except N=7. [TRACE-018](winding_defect_locality.md) adds phase-only locality and the [reviewed Frostman average](phase_map_frostman.md); full quantum-weight and BGS comparisons remain open.

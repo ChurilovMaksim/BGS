@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "N": 7,
+  "field": "complex numbers, characteristic zero",
+  "raw_kernel": "G_xy=zeta_7^(-(3x^2-2xy+3y^2))",
+  "identity_verification": {
+    "N": 7,
+    "cube_entry_identities": 49,
+    "trace_square_identity": true,
+    "raw_trace_histogram": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      2,
+      2
+    ],
+    "method": "Exact integer phase histograms; a degree <=6 polynomial vanishes at primitive z7 iff all seven coefficients equal."
+  },
+  "normalization": "T=trace(G), H=G/T",
+  "identities": [
+    "T^2=-7",
+    "T!=0",
+    "G^3=T^3 I",
+    "H^3=I",
+    "trace(H)=1"
+  ],
+  "square_free_annihilator": "X^3-1",
+  "multiplicity_labels": [
+    "1",
+    "omega",
+    "omega^2"
+  ],
+  "multiplicity_constraints": [
+    "m0+m1+m2=7",
+    "m0-m2=1",
+    "m1-m2=0"
+  ],
+  "unique_multiplicities": [
+    3,
+    2,
+    2
+  ],
+  "complex_commutant_dimension": 17,
+  "same_commutant_for": [
+    "G",
+    "M_7=G/sqrt(7)",
+    "U_7(t)=exp(9it/10)G/sqrt(7), every real t"
+  ],
+  "boundary": "Exact characteristic-zero consequence of independently verified raw identities. No residue-to-characteristic-zero commutant transfer; no sign choice for T/sqrt(7)."
+}

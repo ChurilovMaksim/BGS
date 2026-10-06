@@ -486,6 +486,10 @@ formalized mathematics. Full analytic formalization remains open.
 
 [TRACE-017](factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
 
-### Remaining arithmetic common-commutant branches
+### Closed actual pair-commutant classification
 
-[FM-024](actual_seven_primary_commutant.md), with its [chain-trace extension](ramified_first_seven_commutant.md), now covers every odd N>7 with 7|N and 245∤N. Combining with prior FM-008 covers odd N>=3 with 245∤N except the genuine N=7 exception. The remaining arithmetic family is odd multiples of 245. Seven-divisible spectral simplicity, unrestricted all-odd-N conclusions and deterministic BGS remain open.
+[FM-024](actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. Seven-divisible spectral simplicity, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
+
+### Remaining weighted paired-character estimate
+
+[TRACE-018](winding_defect_locality.md) and its [Frostman refinement](phase_map_frostman.md) control one actual action component and an averaged Fourier-square bound. Pointwise Fourier decay of the phase measure, its complete quantum-weight extension, other displacements and torsion sectors, and the full signed displacement/time sum remain unproved. Averaging over dimensions cannot replace fixed-dimension time averaging or every-odd-dimension TRACE-005.

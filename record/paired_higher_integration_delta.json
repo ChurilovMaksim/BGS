@@ -1,0 +1,68 @@
+{
+  "base": "41a2788ef21e787e983e88a8b58470d104013740",
+  "overlay_manifests": [
+    {
+      "package": "bgs_higher_ramified_promotion",
+      "sha256": "79fb2c1f9283e38617f0ddd88b91999cf6d45d5433abe29b3d8d1bf4dd99bae9"
+    },
+    {
+      "package": "bgs_phase_reduction_promotion",
+      "sha256": "461111c4bd9a02b0eac90f76518184ecedede75215ca4efd69de3150b25f277b"
+    }
+  ],
+  "edits": [
+    {
+      "path": "mathematics/ramified_higher_seven_commutant.md",
+      "before_sha256": "ca7f9604167ed61d37d2096b47a113d8b658b9f6050d531b3cb013135557be7d",
+      "after_sha256": "bfdcce694fbd2955296cec34d4752b40e0589dc3214d4b8741720d90d90a0947"
+    },
+    {
+      "path": "mathematics/winding_defect_locality.md",
+      "before_sha256": "5375b857f032c30600b943aa5d4af984aac90508d9cdbc4ac7636c2c268e9e1a",
+      "after_sha256": "83560cdfe25dd4b2fda8dbe364912033c056dde4b8a32d018c34375b02039bc9"
+    },
+    {
+      "path": "mathematics/actual_seven_primary_commutant.md",
+      "before_sha256": "f7d24dce5343827935b2b6cd02146592c7676f697d4b745449c230ce27b55b45",
+      "after_sha256": "838e0c370c66966f64edaa645fa00b11b8910c09af2b2b27a8ce3aed0d2fb928"
+    },
+    {
+      "path": "mathematics/actual_first_seven_commutant.md",
+      "before_sha256": "e77f594e4910ec60ceabdeab3317cf8309015b54e583a4fa008e3e35e2686a55",
+      "after_sha256": "2961216a2740e0ea893de9b7d1b3a213009ca9da62959ef8980266b68527ef00"
+    },
+    {
+      "path": "mathematics/ramified_first_seven_commutant.md",
+      "before_sha256": "f45c5451b391fcf486f9e44da26872258193f4db6c033a17bdaeffb4627c2ae1",
+      "after_sha256": "1bcf92f75cb1a0c8f1d6e67c6a137915d7fc5a93cf8630ddb3ffd52d5ae50f36"
+    },
+    {
+      "path": "record/scientific_dependency_graph.md",
+      "before_sha256": "73904479159e9d3a6f5bc22889eade8cfd432bbf7fded4b18f5bfbeee6603605",
+      "after_sha256": "0da7cd44612a7d8706d69ada20bc5a205f2ca2b861bcb1fdc77135141b86c708"
+    },
+    {
+      "path": "mathematics/open_questions.md",
+      "before_sha256": "a93c2ad15ff2df150a23c9ef15dbb64d49abb69bef11b7842a9f7c576a132ecd",
+      "after_sha256": "c69f40f14b5dbefd2625add26391e50625a95ee5f18fc4809269fcc243f0c5fa"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "3211dcc11ab4627dc87ed44259e90c091b8a713ea1b4216c70450a6f6d474d2a",
+      "after_sha256": "7f9e8d36a52e8085157f8ea1374d270de68d622b4b9b6b33814b72145023f544"
+    },
+    {
+      "path": "manuscript/BGS_unified.tex",
+      "before_sha256": "57ec0d011749bf79f0ffbb4f31f8069f7fb0598d076c871cc8ec9458c153f041",
+      "after_sha256": "5c1975c6026eebb23a1b5127e9882f9764db18e0ce885ac63f17630bffc810f7"
+    },
+    {
+      "path": "manuscript/unified_sections/actual_seven_primary_commutant.tex",
+      "before_sha256": "3f552601cc5fb681c86dd9610db4729e3fea88353fea8f1eb23a7f94ae27fbec",
+      "after_sha256": "460d03f87b024e11ed9634b0846a3a107afb34e694a8116da160dd4d51a53592"
+    }
+  ],
+  "scope": "All-odd actual pair commutant from explicitly combined families, plus one phase-only TRACE-018. Paired quotient is supporting; Frostman Sections1-3 only. N7 complex dimension 17 is independently established by the separate characteristic-zero raw identities, bound by record/exceptional_seven_mapping.json. No residue lifting. No new unreviewed research included.",
+  "bibliography": "No external record, source hash, locator, mapping, applicability status or graph-impact set changed; new TRACE-018 dependencies FM-001/FM-012 have no external leaves.",
+  "formalization": "No Lean source or FORMAL scope changed."
+}

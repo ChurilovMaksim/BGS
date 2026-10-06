@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "base_commit": "41a2788ef21e787e983e88a8b58470d104013740",
+  "source_scope": "Frozen local pending paired-phase/higher-seven integration snapshot, not an authenticated upstream commit.",
+  "source_files": 2038,
+  "source_manifest_sha256": "47d4c6db5f68a72f249b6ddb3d7e73891328537d094174a2ea761561bc3f2be1",
+  "workspace": {
+    "passed": 183,
+    "total": 183,
+    "source_tree_unchanged": true,
+    "raw_receipt_sha256": "bf438a5979435d976e1557a5f36cbade689b5213aa31bcf26ec8f6e6fe05fd9f"
+  },
+  "supplement": "28 maintained executable entries; see supplement.json for exact execution and coverage.",
+  "manuscript": {
+    "status": "PASS",
+    "pages": 268,
+    "pdf_sha256": "bc27fa712d8aa4d95877f0eef16d6c5e14baaf1616f4e462aed441d93c29838c",
+    "visual_scope": "Pages261-265 only; full machine warning/reference gate covers the document."
+  },
+  "lean": "No new build; exact unchanged input/log binding to previous 19-module successful build.",
+  "cpp": "22 prebuilt corpus executables matched by source/binary hashes, covering 23 executions; inherited first-seven helper binaries freshly compiled inside its verifier.",
+  "failures": "No failure or source repair during this gate run; verified reusable local toolchain helper used from the start.",
+  "post_snapshot_boundary": "This staged evidence package is not part of its own source snapshot. Later evidence-only append must be recorded without pretending those new receipt files were themselves exercised in this run.",
+  "no_publication": true,
+  "maintenance": {
+    "normal": 55,
+    "optimized": 55,
+    "earlier_pre_N7_test_runs": 54
+  }
+}

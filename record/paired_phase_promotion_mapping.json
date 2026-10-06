@@ -1,0 +1,148 @@
+{
+  "scope": "Outside-canonical preparation only. Paired/locality proofs accepted; Frostman limited to original Sections1-3. No aggregation, later conditional/literature result or full-weight comparison included.",
+  "P10_correction": {
+    "before": "the selected derivative is",
+    "after": "the normalized selected first derivative, divided by iN, is",
+    "meaning": "Displayed average is derivative divided by iN; actual derivative has factor iN. Resonant vanishing unchanged."
+  },
+  "P8_clarification": "Arbitrary-alpha finite-group identity refers to normalized quadratic sum; physical trace uses actual P7 alpha and odd N.",
+  "Frostman_change": "Sections1-3 extracted; reviewer Fejer constant112 made explicit, with dimension-average and full-weight boundaries.",
+  "original_status_drift_preserved": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "observed_sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "matches": true
+    },
+    {
+      "path": "SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "observed_sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "matches": true
+    },
+    {
+      "path": "record/repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "observed_sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "matches": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "ac3b01e73a01377543676d238041ab76bd407dd30faeceb7f758016981e15f3d",
+      "observed_sha256": "3211dcc11ab4627dc87ed44259e90c091b8a713ea1b4216c70450a6f6d474d2a",
+      "matches": false
+    },
+    {
+      "path": "record/claim_ledger.md",
+      "sha256": "311fa687da61454d561be42134666ce085c18808b691739d7a9bc4ae76c4ff2a",
+      "observed_sha256": "bf393c99e3a50b86adfc03cbd72ebce47d559fdceb5d342bea55145b5326eb55",
+      "matches": false
+    },
+    {
+      "path": "record/claims.json",
+      "sha256": "a5b70365dfa3823f99861751c3e4d4f26acf7d9821de314ba84f9fc7c680f3db",
+      "observed_sha256": "186da103c2963b0c4d0644b8fa0fa0cf6eed83867d6b61717d106af17654af0f",
+      "matches": false
+    },
+    {
+      "path": "mathematics/results.md",
+      "sha256": "ec8c49852e4e83b9b185472d684f514c198d181eeda931565f26f63eb9e75bd9",
+      "observed_sha256": "7be1623bd27e98103cd16efa13a6b476846f112375ae966d4234057f21350e32",
+      "matches": false
+    },
+    {
+      "path": "mathematics/open_questions.md",
+      "sha256": "0e38b0a6bfa9aa4a6667acac62ad285a07fa7812e7f788fe88aa95ee6634bd0f",
+      "observed_sha256": "a93c2ad15ff2df150a23c9ef15dbb64d49abb69bef11b7842a9f7c576a132ecd",
+      "matches": false
+    },
+    {
+      "path": "mathematics/exact_gaussian_reciprocity.md",
+      "sha256": "38f43f3c4e0b2d2c0a0928a8440ef906ef78d374f23d1cfa0d0a115b38f5be31",
+      "observed_sha256": "38f43f3c4e0b2d2c0a0928a8440ef906ef78d374f23d1cfa0d0a115b38f5be31",
+      "matches": true
+    },
+    {
+      "path": "mathematics/global_rotated_box_trace.md",
+      "sha256": "0468be632207b88ce5b24e190187662ad1be91dd709621a20f4adf5adfa48a94",
+      "observed_sha256": "0468be632207b88ce5b24e190187662ad1be91dd709621a20f4adf5adfa48a94",
+      "matches": true
+    },
+    {
+      "path": "mathematics/rotated_local_first_loop.md",
+      "sha256": "2923a5f4b5946005e28ef77925f26e380ab945fc1682db24dcec3f9ed2f8bc98",
+      "observed_sha256": "2923a5f4b5946005e28ef77925f26e380ab945fc1682db24dcec3f9ed2f8bc98",
+      "matches": true
+    },
+    {
+      "path": "mathematics/four_branch_parametrix.md",
+      "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "observed_sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "matches": true
+    },
+    {
+      "path": "mathematics/fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "observed_sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "matches": true
+    },
+    {
+      "path": "mathematics/signed_heisenberg_comparison.md",
+      "sha256": "450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313",
+      "observed_sha256": "450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313",
+      "matches": true
+    },
+    {
+      "path": "record/noise_removal_program_20261005.md",
+      "sha256": "c05a3396b29d2e26046fac3202929009c2c4baca955bd26dbbed14aa5503dff8",
+      "observed_sha256": "c05a3396b29d2e26046fac3202929009c2c4baca955bd26dbbed14aa5503dff8",
+      "matches": true
+    },
+    {
+      "path": "mathematics/frozen_periodic_point_annihilator.md",
+      "sha256": "81f405538c702fbd41dedea82b55617004065065f6fc12513ef2b2df67527522",
+      "observed_sha256": "81f405538c702fbd41dedea82b55617004065065f6fc12513ef2b2df67527522",
+      "matches": true
+    }
+  ],
+  "files": [
+    {
+      "original_name": "paired_character_identity.md",
+      "original_sha256": "ff4c7af878c1964a8fb135bc7b50385204f65c2ba8c129cca6b43015f27b9a7e",
+      "destination": "mathematics/paired_character_identity.md",
+      "destination_sha256": "f89c42ad4cc705543e6c897aadd9d113d970937da208014241c6ddf27c1f4a35"
+    },
+    {
+      "original_name": "winding_defect_locality.md",
+      "original_sha256": "bdbe3917626ae75e77c0d55299200ea381b2e6f09a421649fc04741a59045a1f",
+      "destination": "mathematics/winding_defect_locality.md",
+      "destination_sha256": "5375b857f032c30600b943aa5d4af984aac90508d9cdbc4ac7636c2c268e9e1a",
+      "initial_curated_sha256": "5fe83f62023418c6491c86ed82f492dcde88b92a324e6f87009f96f11944b551"
+    },
+    {
+      "original_name": "transversality_and_measure.md",
+      "original_sha256": "2bddd915330543828c5637ea966f8b2081ce79208655c4632342b3f351391ee9",
+      "destination": "mathematics/phase_map_frostman.md",
+      "destination_sha256": "11cffc496abab244cc392ab9973ae0ef1b66798361f085617399201c81ccdf5b"
+    },
+    {
+      "original_name": "check_branch_quotient.py",
+      "original_sha256": "a4c87f330938c7d5817954517a634114df5a23b71555d8c9fc97bde7b67dee3d",
+      "destination": "computations/verification/paired_phase/branch_quotient.py",
+      "destination_sha256": "3b1520303e9333bee5f60de3c8e5581820acca401663dd4e01386c539b70d8aa"
+    },
+    {
+      "original_name": "check_locality_constants.py",
+      "original_sha256": "eef926e6f99d8a144715e18875d9f2f235e76a85c6187da31984677d2e0beedb",
+      "destination": "computations/verification/paired_phase/locality_constants.py",
+      "destination_sha256": "40f4f14109adc8b85ecceb6e324d68f7aa5cacaad683d0a8d99df9150d4ee910"
+    },
+    {
+      "original_name": "check_constants.py",
+      "original_sha256": "858d6283cf5eee05ee96edd4f036424648950e34900bcd7e6bfec8b4174b42ce",
+      "destination": "computations/verification/paired_phase/frostman_constants.py",
+      "destination_sha256": "9f5fd5d6cc5e58f4fe597043c030bf1513ba0166dbb2dc8db0488fdebba6ffaf"
+    }
+  ],
+  "registry_scope": "One proposed BGS-TRACE-018; exact paired quotient supporting, not a second core entry."
+}

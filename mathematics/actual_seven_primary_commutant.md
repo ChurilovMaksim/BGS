@@ -1,32 +1,62 @@
-# Actual scalar commutant outside the higher-seven ramified family
+# Actual scalar joint commutant in every odd dimension except seven
 
 Claim ID: BGS-FM-024. Original higher-seven publication base: 300d99270d11c87d0aa84e9d8f624491788629ba; first-seven integration base: 66724291b2ec77c22823f52ecc5ee56278fed096.
 Status: exact project proof with independent internal review and computer-assisted finite polynomial inputs. This is the sole current theorem owner for this family; historical raw/weighted surrogate and failed-endpoint routes are provenance only. The literal-U corollary additionally uses the already registered external Lindemann–Weierstrass theorem. No external-referee acceptance or global-priority claim.
 
 ## Current combined scope
 
-The retained higher-seven theorem and the separately reviewed
-[ramified first-seven theorem](ramified_first_seven_commutant.md) give scalar
-complex joint commutant of (A_N,M_N) for every odd N>7 with 7|N and 245∤N.
-The new chain-trace argument covers 7|N,49∤N with arbitrary v5(N).
-The earlier [unramified first-seven proof](actual_first_seven_commutant.md)
-is retained as an independent alternative on its smaller range; its
-17,046 determinant checks are not repurposed as ramified evidence.
+The actual pair (A_N,M_N) has scalar complex joint commutant for every odd
+N>=3 except N=7. This is an explicit combination of separately scoped proofs:
 
-For odd 7∤N, prior [FM-008](frozen_algebraic_spectral_simplicity.md) gives
-simple A_N and nonzero entries of M_N in its eigenbasis. A joint commuter
-is diagonal there, and nonzero entries force all diagonal values equal.
-Thus the combined range is every odd N>=3 with 245∤N, except N=7,
-retaining FM-008's own review boundary. Odd multiples of 245 remain
-unresolved here. Neither scalar full complex commutant of U_N nor
-seven-divisible spectral simplicity follows.
+- For 7∤N, prior [FM-008](frozen_algebraic_spectral_simplicity.md) gives simple
+  A_N and nonzero entries of M_N in its eigenbasis. A joint commuter is
+  diagonal there, and every diagonal value agrees. Its prior review boundary
+  is retained; it is not re-audited by the later seven-primary work.
+- For 49|N,5∤N, the higher-seven proof below applies.
+- For 7|N,49∤N,N>7, the [chain-trace proof](ramified_first_seven_commutant.md)
+  includes arbitrary five-adic ramification.
+- For 245|N, the [corrected v2 normalized-lattice proof](ramified_higher_seven_commutant.md)
+  closes the last family. Its finite-base gauge correction and independent
+  effective/unit-upper witnesses are preserved explicitly.
+
+The [unramified first-seven proof](actual_first_seven_commutant.md) remains
+an independent alternative on its smaller range; its determinant checks
+are not repurposed as proof of the ramified cases. At N=7, A_7=(9/10)I
+and its complex joint commutant has dimension 17 by the separately reviewed
+characteristic-zero argument below; no residue nullity is lifted. There is no remaining unknown odd-dimensional
+family for this pair-commutant statement. Neither scalar full complex
+commutant of a single U_N, seven-divisible spectral simplicity, quantitative
+gaps nor BGS follows.
+
+## Exact exceptional dimension seven
+
+In the prescribed raw convention put zeta=exp(2 pi i/7),
+G(x,y)=zeta^(-(3x²-2xy+3y²)), M_7=G/sqrt(7), and T=tr(G).
+The independently reviewed integer phase-histogram identities are
+T²=-7 and G³=-7 T I=T³ I. In particular T is nonzero.
+Thus H=G/T satisfies H³=I and tr(H)=1. Since X³-1 is square-free,
+H is diagonalizable with eigenvalues 1,omega,omega². Their multiplicities
+(a,b,c) satisfy a+b+c=7 and a+b omega+c omega²=1. The rational
+independence of 1 and omega gives a-c=1 and b-c=0, hence (a,b,c)=(3,2,2).
+Its complex commutant is the direct sum of three full matrix algebras,
+of dimension 3²+2²+2²=17. Nonzero scalar normalization preserves the
+commutant. Since A_7=(9/10)I, this is also the pair commutant and,
+for every real t, the commutant of U_7(t)=exp(9it/10)M_7.
+No choice of Gauss-sum sign and no reduction-mod-prime lifting is used.
+
+The [scoped independent review](../record/exceptional_seven_review.md)
+and its frozen originals establish this separate characteristic-zero
+consequence. The [exact replay](../computations/verification/exceptional_seven_commutant.py)
+checks 49 cube entries, the trace-square identity and all 512 candidate
+multiplicity triples. These bounded checks do not claim any other dimension's
+spectral simplicity.
 
 ## Higher-seven theorem and boundary
 
 
 For every odd N with 49|N and 5∤N, the actual prescribed pair A_N,M_N has complex common commutant C I.
 
-This is an infinite actual-model family, not a theorem merely about an upper-bond surrogate. This higher-seven component does not cover 5|N or 7|N with 49∤N. The separate chain-trace first-seven component above now covers the latter for every N>7, including 5|N. FM-008 separately covers 7∤N. N=7 remains genuinely exceptional. The full all-odd-N claim, seven-divisible spectral simplicity, quantitative gaps, signed Heisenberg comparison and microscopic BGS are not asserted.
+This is an infinite actual-model family, not a theorem merely about an upper-bond surrogate. This higher-seven component does not cover 5|N or 7|N with 49∤N. The separate chain-trace first-seven component above now covers the latter for every N>7, including 5|N. FM-008 separately covers 7∤N. N=7 remains genuinely exceptional. The combined pair-commutant theorem above closes the odd-dimensional classification except N=7. Seven-divisible spectral simplicity, quantitative gaps, signed Heisenberg comparison and microscopic BGS are not asserted.
 
 ## 1. Actual model, coordinates, and direct reduction
 
@@ -204,7 +234,7 @@ scalars does not affect common commutants.
 
 ## 5. Unresolved branches and review status
 
-The proof relies on direct reduction at 5 with all internal bonds units and the Fourier kernel retaining rank. It does not apply when 5|N. Its rank-one endpoint formula does not apply when 7|N but 49∤N; that branch is now covered by the separate chain-trace proof for every N>7. The endpoint-free unramified proof remains an alternative when 5∤N. Odd multiples of 245 remain outside the combined scope.
+The proof relies on direct reduction at 5 with all internal bonds units and the Fourier kernel retaining rank. It does not apply when 5|N. Its rank-one endpoint formula does not apply when 7|N but 49∤N; that branch is now covered by the separate chain-trace proof for every N>7. The endpoint-free unramified proof remains an alternative when 5∤N. The separate corrected normalized-lattice proof now covers odd multiples of 245; this higher-seven component retains its own unramified hypotheses.
 
 The accepted source was independently reviewed at SHA-256
 47b2692f034a23888d4223e73120a685609a6ca58c2a983293310bc735e42d4f.
@@ -216,7 +246,7 @@ completed. The slower development log is not a proof dependency.
 ## 6. Algebraic-entry commuters of the literal propagator
 
 Corollary (additional external input EXT-POPESCU-2023, Theorem 3.2).
-For every odd N>=3 with 245∤N and N≠7, and every nonzero algebraic real t, the only
+For every odd N>=3 with N≠7, and every nonzero algebraic real t, the only
 matrices X with algebraic entries commuting with exp(itA)M are scalar
 matrices with algebraic scalar. In particular this holds for t=10^(-80)N
 and the literal prescribed U_N.

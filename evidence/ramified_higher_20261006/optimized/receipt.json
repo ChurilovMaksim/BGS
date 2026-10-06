@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "python_optimized": true,
+  "source_hashes": {
+    "checks.py": "2371529c5d0201e347622f1f2960abe75aecf3ad86f933e21c0dc304e9e71fb9",
+    "data/pole_dictionary.json": "c76144bf18d81d4bda4d9fea6fe4d478c61ef3a663bbea9aacc9c3313fcee474"
+  },
+  "sources_unchanged": true,
+  "runs": [
+    {
+      "mode": "bases",
+      "exit_status": 0,
+      "seconds": 6.471280255005695,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_higher_ramified_promotion/overlay/computations/verification/ramified_higher/checks.py",
+        "bases",
+        "--output",
+        "/workspace/shared/bgs_higher_ramified_promotion/runs/optimized/bases_results.json"
+      ],
+      "result_sha256": "a5b36c6bc212cfdac57cde131cfb9d64178f80d9ab178fd8af55a6c10a97c9ea",
+      "stdout_sha256": "57264499de145365e277498bb0ae80565aa5098b682252bef80d125cc544aa24"
+    },
+    {
+      "mode": "unit_bases",
+      "exit_status": 0,
+      "seconds": 6.391349738005374,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_higher_ramified_promotion/overlay/computations/verification/ramified_higher/checks.py",
+        "unit_bases",
+        "--output",
+        "/workspace/shared/bgs_higher_ramified_promotion/runs/optimized/unit_bases_results.json"
+      ],
+      "result_sha256": "5a9b41752834eeecc854fb0249d2bdf537069c7e935c407a8a1e31965c6c1197",
+      "stdout_sha256": "7a3cd5c2fec92cc684e38d808aa3ce9027ca7f87e7a8dce0495d7c98a9fc5dae"
+    },
+    {
+      "mode": "dictionary",
+      "exit_status": 0,
+      "seconds": 36.07870739699865,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_higher_ramified_promotion/overlay/computations/verification/ramified_higher/checks.py",
+        "dictionary",
+        "--output",
+        "/workspace/shared/bgs_higher_ramified_promotion/runs/optimized/dictionary_results.json"
+      ],
+      "result_sha256": "47a60e3b09b12da4c727bb9827a01f1109a1261aec526049ff0c71c4aeac3577",
+      "stdout_sha256": "64bd698f2f36e4b9b2f92104f898d777c142c3f820339ccba0796792d809379e"
+    },
+    {
+      "mode": "poles",
+      "exit_status": 0,
+      "seconds": 2.577623331002542,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_higher_ramified_promotion/overlay/computations/verification/ramified_higher/checks.py",
+        "poles",
+        "--output",
+        "/workspace/shared/bgs_higher_ramified_promotion/runs/optimized/poles_results.json"
+      ],
+      "result_sha256": "6f36adf2cc292d205e01e4884f715645dc8acc5dbd3d32b9532eef0e081e6b3f",
+      "stdout_sha256": "6f36adf2cc292d205e01e4884f715645dc8acc5dbd3d32b9532eef0e081e6b3f"
+    },
+    {
+      "mode": "grades",
+      "exit_status": 0,
+      "seconds": 14.511476184998173,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_higher_ramified_promotion/overlay/computations/verification/ramified_higher/checks.py",
+        "grades",
+        "--output",
+        "/workspace/shared/bgs_higher_ramified_promotion/runs/optimized/grades_results.json"
+      ],
+      "result_sha256": "c49592537022ce58d514c33152abde486dd5aa03513917c70759642c53612d75",
+      "stdout_sha256": "c49592537022ce58d514c33152abde486dd5aa03513917c70759642c53612d75"
+    }
+  ],
+  "limits": {
+    "per_child_memory_bytes": 2147483648,
+    "per_child_cpu_seconds": 180,
+    "per_child_wall_seconds": 240,
+    "cooperative_threads": 1
+  },
+  "scope": "Exact finite bases, dictionaries, pole separation and recurrence controls. Uniform normalized-lattice proof and inherited polynomial theorem remain separately reviewed mathematics, not finite sampling or Lean formalization."
+}

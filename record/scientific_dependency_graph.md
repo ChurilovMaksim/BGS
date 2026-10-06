@@ -6,6 +6,8 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F1 --> T18[BGS-TRACE-018 phase-only locality and Frostman averages]
+  F12 --> T18
   F1 --> F24[BGS-FM-024 actual common commutant for odd 49-divisible N, 5 not dividing N]
   F1 --> T17[BGS-TRACE-017 fixed-order complete WKB reduction]
   T1 --> T17
@@ -229,3 +231,5 @@ TRACE-017 supporting (not prerequisite) route: exact Gaussian reciprocity plus t
 FM-024 first-seven extension: four actual boundary blocks → endpoint-free 63-by-48 system → three degree<=936 minors in each residue class → exact interpolation and odd-root exclusion → scalar leading coefficient and tail elimination → characteristic-zero lift. The FM-008 → FM-024 edge records only the combined 35∤N corollary via simple A and nonzero M entries; it is not used by the new seven-divisible proof. Odd multiples of 35 remain open.
 
 Ramified first-seven supporting route: actual valuation gauge → rank-seven endpoint block → integral partial-trace commutator consequence → normalized two-harmonic trace and exact gcd → nine partitions/small Fourier minors → augmented-rank lift. No full reduced Fourier invertibility or additional external theorem is assumed. Combined remaining family: odd multiples of 245, with N=7 separately exceptional.
+
+FM-024 now combines all odd-dimensional pair-commutant families except the genuine N=7 exception. Higher ramification is closed by the separately reviewed normalized-lattice/q-Lucas proof, not by extrapolating finite bases. TRACE-018 uses the actual HJ phase and prior FM-012 grid; the paired-character identity is a supporting representation lemma, not full quantum-weight cancellation.

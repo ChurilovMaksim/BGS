@@ -55,3 +55,7 @@ Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaus
 - [Principal WKB polar comparison](../../polar_wkb_quantization_stability.md): fixed smooth order-1/N correction and O(N^-2) polar defect; inherited ergodic RMS transport transfers an assumed all-order compact law between unitary endpoints. No nonnormal principal-matrix eigenvalue matching is claimed.
 
 - [Global rotated-box trace representation](../../global_rotated_box_trace.md): actual traces through m<=2N equal the exact box sum up to O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). The signed box sum is not evaluated.
+
+## Actual paired-phase route
+
+[Exact physical label quotient](../../paired_character_identity.md) → [fixed-tau winding-defect locality](../../winding_defect_locality.md) → [phase-map monotonicity/Frostman averages](../../phase_map_frostman.md), TRACE-018. Only the action component and the stated Fourier-index square average are controlled; complete quantum weights and signed BGS comparison remain open.

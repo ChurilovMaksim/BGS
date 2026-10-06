@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "canonical_writes": false,
+  "target_base": "41a2788ef21e787e983e88a8b58470d104013740",
+  "accepted_v2_sha256": "da6e802bb121912948c6e34c96aede4f4046c7a1ffe9feb841907a45199dc61c",
+  "review_sha256": "052371c8cc191ce5a88aff65a57987b4611bf126e5b7dc88ef376a581a210736",
+  "all_five_modes_normal_and_optimized_pass": true,
+  "mathematical_results_match_original_independent_review": true,
+  "portable_child_sha256": "2371529c5d0201e347622f1f2960abe75aecf3ad86f933e21c0dc304e9e71fb9",
+  "portable_wrapper_sha256": "b640251b9ebb26cb38c8233305892bae2834527bc2b8d741c4d8d00ecdf3d629",
+  "portability_tests": "3 tests pass normally and under -O; no assertions, silent imports, zero-inverse rejection and source-output rejection.",
+  "scope": "Uniform all-odd245|N theorem is separately reviewed. Finite modes support it, not dimensional extrapolation. Inherited degree828 nonvanishing keeps its old completed proof/evidence. No spectral simplicity, full complex U-commutant or BGS claim."
+}

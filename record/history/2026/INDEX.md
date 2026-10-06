@@ -61,3 +61,11 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Ramified first-seven accepted original](ramified_first_seven_20261006/accepted_proof.md): independent chain-trace proof/review and compact exact certificate; higher-seven ramification remains excluded.
 
 - [Ramified first-seven final validation](../../../evidence/executions/20261006/ramified-first-seven-validation/receipt.json): post-run receipts for the 1,931-file archive, 180 workspace and 28 supplement checks, and 267-page manuscript; unchanged Lean and reused C++ provenance are explicit.
+
+- [Higher-ramified v1/v2 history](ramified_higher_20261006/accepted_v2.md): corrected gauge naming, independent two-gauge bases and uniform lattice proof.
+- [Paired-phase original sources](paired_phase_20261006/paired_character_original.md): exact quotient/locality and separately scoped Frostman review; P10 normalization correction retained.
+
+- [Paired phase and higher-seven integration](../../paired_higher_integration_20261006.md): exact component scopes and review boundaries.
+- [Exceptional-seven original review](exceptional_seven_20261006/REPORT.md): only the characteristic-zero N7 consequence is promoted; other spectral pivots remain outside this batch.
+
+- [Paired-phase/higher-seven final validation](../../../evidence/executions/20261006/paired-higher-validation/README.md): post-run receipts for the 2,038-file snapshot; 183/183 workspace, 28/28 supplement, 55/55 maintenance in both modes, 268-page manuscript.

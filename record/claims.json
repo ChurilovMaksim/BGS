@@ -1982,12 +1982,13 @@
         "mathematics/uniform_cluster_lemma.md",
         "mathematics/rotated_local_first_loop.md",
         "mathematics/polar_wkb_quantization_stability.md",
-        "mathematics/global_rotated_box_trace.md"
+        "mathematics/global_rotated_box_trace.md",
+        "mathematics/paired_character_identity.md"
       ]
     },
     {
       "id": "BGS-FM-024",
-      "title": "Actual scalar common commutant outside the higher-seven ramified family",
+      "title": "Actual scalar joint commutant in every odd dimension except seven",
       "state": "proved",
       "ledger_status": "EXACT + FINITE-CERTIFICATE + INDEPENDENT REVIEWS OF SEVEN-DIVISIBLE COMPONENTS; COMBINED COROLLARY INHERITS FM-008 REVIEW BOUNDARY",
       "source": "mathematics/actual_seven_primary_commutant.md",
@@ -2009,7 +2010,12 @@
         "evidence/first_seven_20261006/promotion_receipt.json",
         "record/ramified_first_seven_review.md",
         "record/ramified_first_seven_promotion_mapping.json",
-        "evidence/ramified_first_seven_20261006/promotion_receipt.json"
+        "evidence/ramified_first_seven_20261006/promotion_receipt.json",
+        "record/ramified_higher_review.md",
+        "record/ramified_higher_promotion_mapping.json",
+        "evidence/ramified_higher_20261006/promotion_receipt.json",
+        "record/exceptional_seven_review.md",
+        "record/exceptional_seven_mapping.json"
       ],
       "verifiers": [
         "computations/verification/actual_algebra_check.py",
@@ -2017,18 +2023,22 @@
         "computations/verification/actual_field_check.py",
         "computations/verification/actual_casoratian_check.py",
         "computations/verification/first_seven_commutant.py",
-        "computations/verification/ramified_first_seven_trace.py"
+        "computations/verification/ramified_first_seven_trace.py",
+        "computations/verification/ramified_higher_commutant.py",
+        "computations/verification/exceptional_seven_commutant.py"
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/actual_seven_primary_commutant.tex"
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex",
+        "manuscript/unified_sections/ramified_higher_extension.tex"
       ],
-      "boundary": "Scalar complex joint commutant of actual A_N,M_N for odd N>7 with 7|N and 245 not dividing N: higher-seven unramified and arbitrary-5-ramified first-seven components. The separately attributed FM-008 corollary extends combined coverage to odd N>=3 with 245 not dividing N,N!=7, preserving its prior review boundary. Literal-U consequence is only for algebraic-entry commuters via the existing LW argument. Odd multiples of 245 remain unresolved. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new Lean formalization.",
+      "boundary": "Actual scalar complex joint commutant of (A_N,M_N) for every odd N>=3 except genuine N=7. Explicit combination of the separately reviewed seven-primary families with prior FM-008, whose review/source boundary is retained. At N=7, A7=(9/10)I and the separately reviewed characteristic-zero raw identities give multiplicities (3,2,2) and complex commutant dimension 17; no residue lifting. Literal-U corollary remains algebraic-entry-only via existing LW input. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new formalization.",
       "proof_dependencies": [
         "mathematics/actual_first_seven_commutant.md",
-        "mathematics/ramified_first_seven_commutant.md"
+        "mathematics/ramified_first_seven_commutant.md",
+        "mathematics/ramified_higher_seven_commutant.md"
       ],
-      "dependency_scope": "FM-008 is used only for the separately attributed combined 35∤N corollary; both seven-divisible components rely on FM-001 and their elementary exact arguments."
+      "dependency_scope": "FM-008 is used only for the separately attributed 7∤N family; the seven-divisible components rely on FM-001 and their exact arguments. The N7 exception has separate characteristic-zero review."
     },
     {
       "id": "BGS-FORMAL-003",
@@ -2054,6 +2064,37 @@
         "manuscript/unified_sections/actual_seven_primary_commutant.tex"
       ],
       "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent 19-module aggregate build completed."
+    },
+    {
+      "id": "BGS-TRACE-018",
+      "title": "Actual winding-defect localization and phase-only Frostman averages",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEWS; FULL QUANTUM WEIGHTS OPEN",
+      "source": "mathematics/winding_defect_locality.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-012"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/paired_character_identity.md",
+        "mathematics/phase_map_frostman.md"
+      ],
+      "evidence": [
+        "record/paired_phase_review.md",
+        "record/phase_frostman_review.md",
+        "record/paired_phase_promotion_mapping.json",
+        "evidence/paired_phase_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/paired_phase_reductions.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/paired_phase_reductions.tex"
+      ],
+      "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

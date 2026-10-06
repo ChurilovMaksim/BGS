@@ -1,0 +1,51 @@
+{
+  "mode": "dictionary",
+  "arithmetic": "Exact F5[x]/Phi49 int64 operations and rational/integer grade controls",
+  "result": [
+    {
+      "n": 49,
+      "e": 1,
+      "N": 245,
+      "lucas_entries": 630,
+      "carry_zeros": 210,
+      "simultaneous_gauge_checks": 420,
+      "endpoint_entries": 2401,
+      "shift": 4
+    },
+    {
+      "n": 49,
+      "e": 2,
+      "N": 1225,
+      "lucas_entries": 15400,
+      "carry_zeros": 9100,
+      "simultaneous_gauge_checks": 0,
+      "endpoint_entries": 2401,
+      "shift": 3
+    },
+    {
+      "n": 49,
+      "e": 3,
+      "N": 6125,
+      "lucas_entries": 383250,
+      "carry_zeros": 288750,
+      "simultaneous_gauge_checks": 0,
+      "endpoint_entries": 2401,
+      "shift": 5
+    },
+    {
+      "n": 147,
+      "e": 1,
+      "N": 735,
+      "lucas_entries": 5565,
+      "carry_zeros": 2100,
+      "simultaneous_gauge_checks": 0,
+      "endpoint_entries": 21609,
+      "shift": 4
+    }
+  ],
+  "seconds": 35.498033294999914,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "2371529c5d0201e347622f1f2960abe75aecf3ad86f933e21c0dc304e9e71fb9",
+  "pole_dictionary_sha256": "c76144bf18d81d4bda4d9fea6fe4d478c61ef3a663bbea9aacc9c3313fcee474"
+}

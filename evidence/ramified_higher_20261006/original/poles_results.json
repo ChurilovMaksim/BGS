@@ -1,0 +1,44 @@
+{
+  "mode": "poles",
+  "arithmetic": "F5[x]/Phi49; exact int64 polynomial operations",
+  "result": {
+    "n147_shifted_penultimate": [
+      {
+        "shift": 0,
+        "pole_power": 1,
+        "block_entries": 49
+      },
+      {
+        "shift": 1,
+        "pole_power": 2,
+        "block_entries": 49
+      },
+      {
+        "shift": 2,
+        "pole_power": 3,
+        "block_entries": 49
+      },
+      {
+        "shift": 3,
+        "pole_power": 4,
+        "block_entries": 49
+      },
+      {
+        "shift": 4,
+        "pole_power": 5,
+        "block_entries": 49
+      },
+      {
+        "shift": 5,
+        "pole_power": 6,
+        "block_entries": 49
+      }
+    ],
+    "independent_grid_pole_pairs": 36,
+    "accepted_polynomial_dictionary_identity": true
+  },
+  "seconds": 0.728879451751709,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "4cfa5f5e8312478fbcaca5b9738d5aea6be9cacee8656150e19fb2281fa4a00b"
+}

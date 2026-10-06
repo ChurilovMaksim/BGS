@@ -1,0 +1,60 @@
+\section{Exact paired characters and phase-only winding localization}
+For the physical odd-dimensional quantization, let
+$G_m=\operatorname{Fix}(S^m\!:\mathbb T^2\to\mathbb T^2)$ and
+$D_m=|G_m|$, with $S=\left(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\right)$.
+Integer Hamilton--Jacobi gluing quotients the original branch/winding list
+by exactly $4^m$ identical copies per physical label. This is an exact
+quotient, not cancellation and not a repair of the earlier normalization.
+The physical group cannot generally be replaced by the winding group alone.
+Let $Q_m$ be the cat quadratic action and $B_m$ its perfect polarization.
+For the actual full weight $\alpha$ from the exact global representation,
+\[
+ \begin{aligned}
+ \operatorname{Tr}V_{N,J}^m
+ &=\zeta_{N,m}D_m^{-1/2}\sum_{z\in G_m}e(NQ_m(z))\alpha(z),\\
+ |\operatorname{Tr}V_{N,J}^m|^2
+ &=\sum_{d\in G_m}e(NQ_m(d))\widehat C_d(-Nd).
+ \end{aligned}
+\]
+where $C_d(z)=\alpha(z+d)\overline{\alpha(z)}$ and
+$\widehat C_d(\xi)=D_m^{-1}\sum_zC_d(z)e(-B_m(z,\xi))$.
+For arbitrary weights the same identity concerns the normalized quadratic
+sum; physical trace notation requires the actual weight and odd $N$.
+At zero coupling global Fresnel weights equal one, retaining the exact
+arithmetic torsion contribution. The separate first-response identity uses
+the derivative divided by $iN$; no torsion suppression follows from that jet.
+
+\paragraph{Actual action defect.}
+For the unit-winding displacement $d_m=(S^m-I)^{-1}(0,1)$, the exact nonlinear
+stationary-action defect has a periodic infinite-chain limit $\mathcal D_\infty$.
+Put $\lambda=3+2\sqrt2$, $\beta=29/5$ and
+$\eta=10^{-70}+10^{-110}$. The reviewed refinement gives
+\[
+ \begin{aligned}
+ \|\mathcal D_\infty\|_\infty&\le2\eta,\\
+ |\mathcal D_m-\mathcal D_\infty|&\le4\cdot10^6\eta\beta^{-m},\\
+ [\mathcal D_\infty]_{C^{\log\beta/\log\lambda}}&\le2\cdot10^7\eta.
+ \end{aligned}
+\]
+The phase-only selected coefficient satisfies
+$K_{m,N}=\widehat\mu_\tau(-N)+O(N\beta^{-m/2})$, where
+$\mu_\tau=(q+\mathcal D_\infty(q,p)\bmod1)_*(dq\,dp)$.
+Exact finite-grid aliases are retained. The Pell/grid input is prior project
+work, not a new identity supplied by this checkpoint.
+
+\paragraph{Monotonicity and averaged squares.}
+The actual phase map is strictly increasing along each $q$ fibre and has
+inverse bound $H_\tau(q+\delta,p)-H_\tau(q,p)\ge\delta^{p_*}/28$,
+$p_*=\log7/\log\lambda$. Thus, for circle arcs $I$ and
+$\gamma=\log\lambda/\log7$,
+\[
+ \mu_\tau(I)\le(28|I|)^\gamma,\qquad
+ \sum_{n=1}^M|\widehat\mu_\tau(n)|^2\le112M^{1-\gamma}.
+\]
+The measure is non-atomic; a density and pointwise Fourier decay are not
+proved. The average runs over Fourier index/dimension, not over time at a
+fixed dimension. Only Sections 1--3 of the source transversality note are
+promoted. Complete determinant, transport and quantum-box weights, other
+displacements and torsion sectors, the full signed hierarchy, TRACE-005 and
+BGS remain open. These are reviewed analytic results with bounded exact
+controls, not analytic formalization.

@@ -99,6 +99,12 @@ Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaus
 
 - [Global rotated-box trace representation](../../global_rotated_box_trace.md): actual traces through m<=2N equal the exact box sum up to O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). The signed box sum is not evaluated.
 
-- [Actual first-seven commutant](../../actual_first_seven_commutant.md): closes 7∥N,5∤N,N>7. Together with the higher-seven component FM-024 covers odd 7|N,5∤N,N>7; prior FM-008 yields the separately attributed all-35∤N combination except N=7. The later chain-trace extension below closes first-seven ramification; odd multiples of 245 remain open.
+- [Actual first-seven commutant](../../actual_first_seven_commutant.md): closes 7∥N,5∤N,N>7. Together with the higher-seven component FM-024 covers odd 7|N,5∤N,N>7; prior FM-008 yields the separately attributed all-35∤N combination except N=7. The later chain-trace extension below closes first-seven ramification; the later corrected lattice proof closes odd multiples of 245.
 
 - [First-seven chain-trace theorem with arbitrary five-adic ramification](../../ramified_first_seven_commutant.md): all odd N>7 with 7|N,49∤N. The combined current FM-024/008 range excludes only N=7 and odd multiples of 245; former first-seven proofs and review scopes are retained.
+
+## Actual paired-phase route
+
+[Exact physical label quotient](../../paired_character_identity.md) → [fixed-tau winding-defect locality](../../winding_defect_locality.md) → [phase-map monotonicity/Frostman averages](../../phase_map_frostman.md), TRACE-018. Only the action component and the stated Fourier-index square average are controlled; complete quantum weights and signed BGS comparison remain open.
+
+[Corrected higher-ramified lattice proof](../../ramified_higher_seven_commutant.md) closes the last pair-commutant family. Combined FM-024 covers every odd N>=3 except N=7; this is not a spectral-simplicity theorem.

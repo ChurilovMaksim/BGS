@@ -10,7 +10,7 @@ No external peer review or Lean formalization is asserted.
 
 For every odd N>7 with 7|N and 49∤N, including arbitrarily large powers of 5 dividing N, the actual pair (A_N,M_N) has scalar complex common commutant.
 
-Combined with the separately reviewed higher-seven-primary theorem for 49|N,5∤N and FM-008 for 7∤N, this leaves only odd multiples of 245 in the uniform algebraic question. N=7 is the genuine known exception. No spectral-simplicity, quantitative spectral gap, Heisenberg comparison or BGS conclusion is made.
+Combined with the separately reviewed higher-seven-primary theorem for 49|N,5∤N and FM-008 for 7∤N, this formerly left odd multiples of 245; the separate [corrected normalized-lattice proof](ramified_higher_seven_commutant.md) now covers that family. N=7 is the genuine known exception. No spectral-simplicity, quantitative spectral gap, Heisenberg comparison or BGS conclusion is made.
 
 Unlike the unramified direct-reduction proof, this argument does not require the reduced full Fourier matrix to be invertible. It retains a rank-seven endpoint block and an additional integral linear consequence of the actual commutator equation.
 
@@ -171,7 +171,7 @@ Finally, ranks of the algebraic linear equations are unchanged under extension f
 
 ## Remaining scope
 
-When 49|N, the endpoint transfer block has rank one rather than seven, so Step 2 no longer kills all higher Toeplitz coefficients. The separately accepted unramified higher-seven proof still applies when 5∤N, but the ramified family245|N remains open. N=7 has eta=0 and a scalar kick, and is excluded throughout.
+When 49|N, the endpoint transfer block has rank one rather than seven, so Step 2 no longer kills all higher Toeplitz coefficients. The separately accepted unramified higher-seven proof still applies when 5∤N, but the separate [corrected normalized-lattice proof](ramified_higher_seven_commutant.md) now covers the ramified family 245|N. N=7 has eta=0 and a scalar kick, and is excluded throughout.
 
 ## Portable verification and trust boundary
 
