@@ -1,6 +1,6 @@
 # Scientific audit dossier — 6 October 2026
 
-**Scoped reading complete; local acceptance passed; remote final publication pending. Deterministic BGS remains open.** This dossier separates checked proof implications, conditional applications, finite verification and remaining conditional source/application boundaries. It concerns revision of the existing corpus; new solution attempts remain paused.
+**Scoped reading complete; local acceptance passed; remote publication and subsequent checks recorded separately. Deterministic BGS remains open.** This dossier separates checked proof implications, conditional applications, finite verification and remaining conditional source/application boundaries. It concerns revision of the existing corpus; new solution work requires successful remote acceptance of the corrected revision.
 
 The [revision record](../../corpus_revision_20261006.md) explains the supplied review and repository changes. [Machine-readable coverage](coverage.json) pins the exact reviewed and current source hashes, records the scope of each reading, and identifies dependencies that are not yet covered. The [claim ledger](../../claim_ledger.md) remains the scientific-status authority. A review finding is not an external referee certificate, a formal analytic proof, or a novelty determination.
 
@@ -40,6 +40,10 @@ Thirteen spectral-bridge notes received semantic review of their finite identiti
 
 Nine channel/classical-boundary sources were reconstructed. The original ordered two-pair singular-gap lower bound and the universal collective gap pass their reviewed arguments, including odd composite dimensions. The fresh-step channel trace remains distinct from a quenched spectrum. FM-006 and mixing-dependent FM-018 applications retain a specific source-verification gap: the exact Pesin primary theorem text was not retrieved in this review. Its mathematical application is conditional on the named smooth-volume entropy formula. This does not affect the universal algebraic FM-019/FM-020 channel claims or refute the cited entropy theorem.
 
+### Subsequent entropy-source supplement
+
+After the final local validated snapshot, a [separate primary-source check](../../../literature/smooth_area_entropy_supplement_20261006.md) verified the exact entropy formula through Mañé (1981), p.95 equation (2), together with all of his 1983 errata, pp.159–160. This resolves the mathematical entropy-input retrieval gap for FM-006 and its FM-018 application through an alternate published proof. The preceding paragraph records the original audit finding: Pesin's 1977 text and exact theorem locator remain unretrieved/unverified. This supplement checks the external statement, corrections and project applicability, not the entire external proof or downstream dependency closure. Historical audit findings, snapshot hashes and execution provenance are unchanged; no canonical mathematics or executable source changes.
+
 ## Factual correction register
 
 | Correction | Mathematical effect | Disposition |
@@ -68,6 +72,10 @@ A signed-integer overflow in the cat-map order CLI was repaired with a 64-bit bo
 
 The separate inventory of 138 Python verification sources and 21 C++ sources is a structural arithmetic/precision/sampling scan. It does not certify every algorithm, numerical tolerance or fixed-width operation. Detailed runner and selected-tool reviews are supplemented by the final repaired-source execution recorded below. Source hashes identify bytes; they do not establish upstream authenticity, source-to-binary correspondence, or protection against an adversarial edit-and-restore race.
 
+### Subsequent standalone-verifier guard
+
+The fourth supplied review exposed a standalone `collective_diffusion_gap.py` invocation hazard: optimized Python discarded assertions while permitting a PASS certificate. The aggregate runner was already protected by explicit child `PYTHONOPTIMIZE=0`. The standalone entry now rejects disabled assertions before certificate creation. [Post-snapshot evidence](../../../evidence/executions/20261006/standalone-guard/receipt.json) records 18 maintenance tests passing both normally and under an optimized parent, with ten CLI mutation/optimization subcases in each run. The earlier validated verifier hash is retained in coverage, its current-source match is set false, and the subsequent guard-only repair is recorded separately. Exact identity bodies and mathematical sources are unchanged.
+
 ## Coverage and unresolved review work
 
 The baseline root mathematics inventory has 162 Markdown files excluding its README; three are current or historical status indexes rather than independent proof notes. Coverage is recorded per file, not inferred from a topic name. A partial target/status check does not count as a complete mathematical reading. If a reviewed hash differs from the current source, acceptance requires explicit reconciliation of the difference.
@@ -86,10 +94,14 @@ The [final execution evidence](../../../evidence/executions/20261006/corpus-revi
 
 All 162 mathematics-file hashes match both the current sources and the immutable validated snapshot. The earlier structural scan hashes are preserved. The two repaired C++ sources that differ from that scan now have explicit repair/build/executed-binary reconciliation rather than silently refreshed provenance.
 
-This final dossier update reports those executions after they finished; its own updated bytes are not claimed to have been included in the earlier immutable test snapshot. It changes no mathematical or executable source. Remote final publication remains pending, and the conditional proof/source boundaries above are unchanged.
+This final dossier update reports those executions after they finished; its own updated bytes are not claimed to have been included in the earlier immutable test snapshot. It changes no mathematical or executable source. Remote final publication remains pending. The subsequent entropy-source supplement above resolves only its stated alternate-source input; other conditional proof/source boundaries are unchanged.
 
 ## Repository migration integrity
 
 All six preserved pre-revision document snapshots match both their declared SHA-256 hashes and the declared source commit. The complete former ledger tail beginning with its status vocabulary survives in the current ledger, retaining the broader theorem tables outside the core registry. Active local Markdown fragment links were checked without a detected broken target. Compatibility anchors for removed entry-page headings have been restored, including headings now represented in reader guides and historical snapshots. These checks protect provenance and navigation; they do not establish that all summary wording is mathematically complete.
 
 Canonical proof paths, previous evidence and historical conclusions are preserved. Superseded rates and conditional routes remain readable as history and cannot override current status. No material was deleted merely for duplication.
+
+## Published revision acceptance
+
+The final correction batch [98a22bef](https://github.com/ChurilovMaksim/BGS/commit/98a22bef5385ebc5c3bcf132c994a6e514cfc59c) passed both [scientific CI](https://github.com/ChurilovMaksim/BGS/actions/runs/37480746956) and [manuscript CI](https://github.com/ChurilovMaksim/BGS/actions/runs/37480746943). Earlier pending-publication wording records the local acceptance observation. The subsequent entropy-source and standalone-guard supplements are separately identified above and require their own revision checks.

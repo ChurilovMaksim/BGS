@@ -1,0 +1,39 @@
+{
+  "base_commit": "98a22bef5385ebc5c3bcf132c994a6e514cfc59c",
+  "scope": "Post-snapshot standalone CLI assertion guard; no mathematical identity changed. Earlier 161-check receipt remains attached to its original source bytes.",
+  "source_sha256": {
+    "computations/verification/collective_diffusion_gap.py": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+    "computations/maintenance/tests/test_collective_assertion_guard.py": "99edb47af01fd3f1062ee9202ec5047e872747b23a439161c958a9e0fbfcb6ed"
+  },
+  "commands": [
+    "python3 -m unittest discover -s computations/maintenance/tests -v",
+    "python3 -O -m unittest discover -s computations/maintenance/tests -v"
+  ],
+  "results": {
+    "normal": {
+      "passed": 18,
+      "total": 18
+    },
+    "optimized_parent": {
+      "passed": 18,
+      "total": 18
+    },
+    "new_guard_subcases_per_run": 10
+  },
+  "negative_controls": "Temporary +1 mutation fails normally; both valid and mutated sources refuse -O, -OO and PYTHONOPTIMIZE=1/2 before any certificate is created. Each harness invocation runs one complete valid verifier.",
+  "valid_coordinate_counts": {
+    "q": 3107,
+    "p": 49062
+  },
+  "global_runner_boundary": "verify_workspace already forces PYTHONOPTIMIZE=0 for child checks; this repair protects standalone invocation. Arbitrary imported helper calls are not covered.",
+  "log_sha256": {
+    "normal.log": "52de73603fd68f24f4f8c6da5b8403c9f0df93335b3de4e655dbcc5ac433ab95",
+    "optimized.log": "b0f9249b2ae08f8b2835fea54486cdd527bfa5d3e5dc969a6aaca76fc167bb86"
+  },
+  "not_run_for_this_supplement": [
+    "full 161-check workspace suite",
+    "Lean rebuild",
+    "PDF rebuild"
+  ],
+  "remote_ci": "Pending on the supplement commit; prior commit workflows tracked separately."
+}

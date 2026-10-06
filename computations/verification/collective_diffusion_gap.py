@@ -223,6 +223,12 @@ def hardy_checks(counts: Counter) -> None:
 
 
 def main() -> None:
+    # These exact finite controls rely on assertions; never certify a run
+    # in which Python has removed them (including PYTHONOPTIMIZE).
+    if not __debug__:
+        raise RuntimeError(
+            "Verification requires assertions; disable -O and PYTHONOPTIMIZE"
+        )
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path)
     args=parser.parse_args(); counts=Counter()

@@ -1,7 +1,7 @@
 {
   "schema": "bgs-corpus-review-coverage-v1",
   "date": "2026-10-06",
-  "status": "scoped_reading_complete_local_acceptance_passed_remote_publication_pending",
+  "status": "scoped_reading_complete_published_revision_accepted_subsequent_supplement_tracked",
   "source_baseline": "131e8aac5684f72cc993a54a46237a812a577ae9",
   "scope": "Current root mathematics Markdown files excluding README; includes three status/historical indexes. Working-tree hashes, not a claim of a published immutable revision.",
   "coverage_meaning": "Review of stated implications does not certify every external proof, historical execution, or whole file independently. Hash mismatch requires explicit reconciliation, never automatic hash refresh.",
@@ -2251,7 +2251,8 @@
           "disposition": "conditional_on_named_inputs",
           "conditions": [
             "FM-001",
-            "FM-006 area Gibbs identification; Pesin exact-source retrieval gap"
+            "FM-006 area Gibbs identification; Pesin exact-source retrieval gap",
+            "Subsequent-to-final-local-snapshot source supplement: literature/smooth_area_entropy_supplement_20261006.md verifies the entropy statement, errata and applicability via Mane 1981 p.95 equation (2) plus 1983 pp.159-160. The preceding Pesin retrieval condition records the original audit; original 1977 text/locator remain unverified. No independent full external-proof review or change to source hashes, original disposition, counts or execution provenance."
           ],
           "matches_current_source": true,
           "accepted_repair_matches_current_source": false
@@ -2979,7 +2980,8 @@
           "disposition": "conditional_on_named_inputs",
           "conditions": [
             "FM-001",
-            "Pesin smooth-volume entropy formula: current exact-source retrieval unverified"
+            "Pesin smooth-volume entropy formula: current exact-source retrieval unverified",
+            "Subsequent-to-final-local-snapshot source supplement: literature/smooth_area_entropy_supplement_20261006.md verifies the entropy statement, errata and applicability via Mane 1981 p.95 equation (2) plus 1983 pp.159-160. The preceding Pesin retrieval condition records the original audit; original 1977 text/locator remain unverified. No independent full external-proof review or change to source hashes, original disposition, counts or execution provenance."
           ],
           "matches_current_source": true,
           "accepted_repair_matches_current_source": false
@@ -7225,8 +7227,8 @@
     {
       "path": "computations/verification/collective_diffusion_gap.py",
       "audit_snapshot_sha256": "d15e84bf7efa556e1627efb7badd23fa87fba5f8843d8b7a4f73ebe01fe3f3d6",
-      "current_sha256": "d15e84bf7efa556e1627efb7badd23fa87fba5f8843d8b7a4f73ebe01fe3f3d6",
-      "matches_audit_snapshot": true,
+      "current_sha256": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+      "matches_audit_snapshot": false,
       "coverage": "Structural arithmetic/precision/sampling scan; not full algorithm verification or execution.",
       "excluded_claims": [
         "universal theorem proof",
@@ -7235,7 +7237,7 @@
       ],
       "final_execution": {
         "validated_source_sha256": "d15e84bf7efa556e1627efb7badd23fa87fba5f8843d8b7a4f73ebe01fe3f3d6",
-        "matches_current_source": true,
+        "matches_current_source": false,
         "source_tree_unchanged": true,
         "scope": "Passed direct finite checks as listed; not complete algorithm validation.",
         "direct_checks": [
@@ -7245,6 +7247,12 @@
             "execution_status": "passed"
           }
         ]
+      },
+      "subsequent_guard_repair": {
+        "source_sha256": "8aa1f3c935a1ea0725ea7c34682108e5bdb8ebe24fd40c8d48b30005f8e4ad34",
+        "effect": "Explicit refusal when __debug__ is false; exact identity bodies unchanged.",
+        "evidence": "evidence/executions/20261006/standalone-guard/receipt.json",
+        "checks": "18 maintenance tests normal and optimized, including 10 direct-CLI mutation/optimization subcases each."
       }
     },
     {
@@ -10508,5 +10516,12 @@
     "all_mathematics_hashes_match_current_and_validated_snapshot": true,
     "post_validation_documentation": "This dossier is a reporting-only update after execution. Its updated bytes are not claimed to be the bytes included in the immutable tested snapshot. No mathematics or executable source is changed by this update.",
     "remote_publication": "pending"
+  },
+  "subsequent_publication": {
+    "commit": "98a22bef5385ebc5c3bcf132c994a6e514cfc59c",
+    "scientific_ci": "https://github.com/ChurilovMaksim/BGS/actions/runs/37480746956",
+    "manuscript_ci": "https://github.com/ChurilovMaksim/BGS/actions/runs/37480746943",
+    "both_terminal_status": "success",
+    "boundary": "Earlier pending-publication fields belong to the preserved final-local-acceptance observation. The subsequent entropy-source note and standalone guard are separate changes; their final remote checks are not claimed here."
   }
 }

@@ -6,7 +6,7 @@
 
 ## Current work
 
-The present gate is a complete corpus revision: reconcile the independent review, repair proof exposition and source metadata, separate current status from historical records, and verify reproducibility. New solution attempts are paused until that revision is completed. See the [revision report and coverage](record/corpus_revision_20261006.md).
+The scoped corpus revision has reconciled the supplied reviews, repaired proof exposition and source metadata, separated current status from historical records, and rerun reproducibility checks. All 159 root proof/exposition notes have scoped semantic readings; named conditional inputs remain explicit. New solution work resumes only after the corrected revision passes remote acceptance checks. See the [revision report and coverage](record/corpus_revision_20261006.md).
 
 The central fixed-model obligation is the **signed** Heisenberg-scale joint-trace comparison, for every fixed correlation order and every smooth compact Fourier weight. An absolute all-order deterministic comparison is not the target. The [research brief](RESEARCH.md) states the model, current subsidiary conclusions and exact remaining gap.
 

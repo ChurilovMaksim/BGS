@@ -1,6 +1,6 @@
 # Corpus revision and independent-review response — 6 October 2026
 
-**Status: scoped corpus review and local acceptance complete; final publication/remote acceptance pending. New solution attempts are paused.** This revision repairs the existing corpus before further BGS research. It is not a claim of complete theorem certification.
+**Status: scoped corpus review and local acceptance complete; corrected batches published with subsequent supplements tracked below. Research resumption requires successful remote acceptance of the corrected revision.** This revision repairs the existing corpus before further BGS research. It is not a claim of complete theorem certification.
 
 ## Revision base and publication boundary
 
@@ -70,3 +70,15 @@ The [final execution receipt](../evidence/executions/20261006/corpus-revision/fi
 The archive run includes the corrected spectral diagnostics and TRACE-011 repair. Subsequent documentation/evidence changes are recorded separately; no later source is silently assigned the archive run's identity. Both workflows for the first published checkpoint `25cde6388a41d31c9d64bfbc889086e27103f42c` succeeded: [scientific checks](https://github.com/ChurilovMaksim/BGS/actions/runs/37476525838) and [manuscript](https://github.com/ChurilovMaksim/BGS/actions/runs/37476525812). The final correction batch still requires its own remote acceptance.
 
 The scoped overhaul leaves named external-source and application conditions visible. In particular, the unretrieved original Pesin theorem text and identified arithmetic reference leaves are not reported as newly verified primary-source applications. The deterministic signed BGS obligation remains open.
+
+## Published final correction batch and subsequent source supplement
+
+The corrected diagnostics, completed scoped coverage and final local execution artifacts are published as [98a22bef5385ebc5c3bcf132c994a6e514cfc59c](https://github.com/ChurilovMaksim/BGS/commit/98a22bef5385ebc5c3bcf132c994a6e514cfc59c), parent `25cde6388a41d31c9d64bfbc889086e27103f42c`, exact tree `309db7e68a67fcfb43a02d1c4f8a113719943751`. Both remote workflows succeeded: [scientific checks](https://github.com/ChurilovMaksim/BGS/actions/runs/37480746956) and [manuscript](https://github.com/ChurilovMaksim/BGS/actions/runs/37480746943). The subsequent standalone guard and source-note supplement require their own checks.
+
+A subsequent [entropy-source supplement](../literature/smooth_area_entropy_supplement_20261006.md) verifies the needed formula through Mañé (1981), p.95 equation (2), and the complete 1983 errata. This closes the mathematical entropy-input retrieval gap through an alternate primary source while preserving the original Pesin-text locator limitation and original snapshot records.
+
+## Fourth supplied review: standalone certificate safety
+
+A fresh negative control confirms that direct optimized execution of `collective_diffusion_gap.py` could print PASS after Python removed its assertions. The aggregate runner already explicitly enables child assertions, so this finding does not invalidate the recorded normal runs or the unchanged mathematical identities. The standalone entry now rejects disabled assertions before verification or certificate output. A maintained regression checks valid and temporarily mutated sources across ordinary Python, `-O`, `-OO`, and both optimization environment settings. [The narrow receipt](../evidence/executions/20261006/standalone-guard/receipt.json) records 18 maintenance tests passing normally and under an optimized parent, including ten new CLI subcases per run. Earlier execution hashes are preserved and the changed verifier is explicitly reconciled in coverage.
+
+The other supplied proposals are mathematical additions, not discovered errors in the maintained FM-019 theorem. Their submitted numerical attachments were not supplied here and their reported counts are not promoted as independently reproduced evidence. The phase-helper precision observation does not establish an incorrect returned Hermitian reconstruction.
