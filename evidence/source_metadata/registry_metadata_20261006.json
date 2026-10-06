@@ -1096,13 +1096,14 @@
         "BGS-FM-010",
         "BGS-FM-011",
         "BGS-FM-017",
+        "BGS-FM-024",
         "BGS-LOOP-001",
         "BGS-RES-007",
         "BGS-TRACE-009",
         "BGS-TRACE-011",
         "BGS-TRACE-012"
       ],
-      "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use.",
+      "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use. First-seven integration: FM-024 is conservatively reachable through FM-005→FM-008 for its combined non-seven-divisible corollary. That corollary uses simple A/nonzero M entries, not the external fixed-time injectivity leaf; whole-claim graph reachability does not upgrade theorem applicability.",
       "file_level_claim_matches": [
         {
           "claim": "BGS-FM-005",

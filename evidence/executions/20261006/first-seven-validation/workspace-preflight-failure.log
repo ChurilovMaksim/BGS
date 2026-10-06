@@ -1,0 +1,5 @@
+usage: verify_workspace.py [-h] --build BUILD --logs LOGS --output OUTPUT
+                           [--workers WORKERS] [--boost-include BOOST_INCLUDE]
+                           [--archive-manifest ARCHIVE_MANIFEST]
+                           [--allow-dirty] [--only ONLY]
+verify_workspace.py: error: Dependency/version preflight failed: cmake: missing or unknown version

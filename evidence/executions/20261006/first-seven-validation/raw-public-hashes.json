@@ -1,0 +1,93 @@
+[
+  {
+    "source_role": "archive-manifest.json",
+    "original_sha256": "795fdfd66fcedc0b0d8d5bd94f97a48376c192924f04b16c1f86718bd8a651ae",
+    "public_file": "archive-manifest.json",
+    "public_sha256": "795fdfd66fcedc0b0d8d5bd94f97a48376c192924f04b16c1f86718bd8a651ae",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "workspace-v2.json",
+    "original_sha256": "e519d615578629d3c969141bc6c6fdb1058a16f14c8016ad342d3c6388e874a6",
+    "public_file": "workspace.json",
+    "public_sha256": "fb4ba1dc061d2c28c0684ba7761726d2d902c113b9abb333630e666ddebb887d",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "supplement/verification.json",
+    "original_sha256": "b4ee4908ec6da5ff17f241bb973be891b5c23edd84d04f49fbcaa0ea14169dce",
+    "public_file": "supplement.json",
+    "public_sha256": "b4ee4908ec6da5ff17f241bb973be891b5c23edd84d04f49fbcaa0ea14169dce",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "manuscript/build_manifest.json",
+    "original_sha256": "fe1191bc8a64841bbf73a4c216fc1dfb11b5337f2a479a2273b4f2d36b083c92",
+    "public_file": "manuscript.json",
+    "public_sha256": "ab4f1913cd08275d167810c70d98ad96a50a2fd7f848113cb10cfafca7a784ce",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "manuscript/visual_review.json",
+    "original_sha256": "4ef1a85f58f50efc9ba6c7b77bfb149b7e8ef4ed53e40b21ee74f30d1e34d11d",
+    "public_file": "manuscript-visual.json",
+    "public_sha256": "4ef1a85f58f50efc9ba6c7b77bfb149b7e8ef4ed53e40b21ee74f30d1e34d11d",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "workspace-preflight-failure.json",
+    "original_sha256": "fa6a9596184ad969de357acd6cccb5edc935d2f76ab67c8ba9985505a7b9e23c",
+    "public_file": "workspace-preflight-failure.json",
+    "public_sha256": "1d8ed009190f1fa4078cf63af1cee906bd4da76f66664a3f2b731e58e50a3e18",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "workspace-driver.log",
+    "original_sha256": "44eb06dbfcc3cc1b415ce1b14790419a9441c1a2cf3eb8f3dfceca3169086fa0",
+    "public_file": "workspace-preflight-failure.log",
+    "public_sha256": "44eb06dbfcc3cc1b415ce1b14790419a9441c1a2cf3eb8f3dfceca3169086fa0",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "cpp_reuse_binding.json",
+    "original_sha256": "02a2d7bd011ffb78329d928f3497ff772c28e6af2449b14a9a0624c06097d859",
+    "public_file": "cpp-reuse-binding.json",
+    "public_sha256": "26cae55286d1cfa106a1eeeedf70037631740470be8a6b76b3247977ff2f16ed",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "lean_unchanged_binding.json",
+    "original_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "public_file": "lean-unchanged-binding.json",
+    "public_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "maintenance-normal.log",
+    "original_sha256": "cbea0bf5defbf449c95d8041991b98e1274208d5695ea9afa848ebd2d695ad1d",
+    "public_file": "maintenance-normal.log",
+    "public_sha256": "cbea0bf5defbf449c95d8041991b98e1274208d5695ea9afa848ebd2d695ad1d",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "maintenance-optimized.log",
+    "original_sha256": "eecd2a9c8f90b20910796e31eda839c8e51363a648a79fa39550436b2aab6061",
+    "public_file": "maintenance-optimized.log",
+    "public_sha256": "eecd2a9c8f90b20910796e31eda839c8e51363a648a79fa39550436b2aab6061",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "whitespace_check.json",
+    "original_sha256": "b9208aa7f8858333e3034a0c2e6be523f2e1f002604c1ed2b0374184a685fbae",
+    "public_file": "whitespace-check.json",
+    "public_sha256": "b9208aa7f8858333e3034a0c2e6be523f2e1f002604c1ed2b0374184a685fbae",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "workspace-checks-v2/first_seven_commutant.log",
+    "original_sha256": "d578715d092da2677a1f7b068c6a70282b8344eb29d518734bd2a9010e578074",
+    "public_file": "new-checks/first_seven_commutant.log",
+    "public_sha256": "d578715d092da2677a1f7b068c6a70282b8344eb29d518734bd2a9010e578074",
+    "transformation": "Byte-identical copy."
+  }
+]

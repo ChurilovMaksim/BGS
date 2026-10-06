@@ -21,3 +21,5 @@ Cayley arithmetic, Pell/return laws, resonance/cohomology, locality, and informa
 [Fixed-order complete WKB reduction](factorial_wkb_reduction.md) (TRACE-017) and its exact reciprocity, formal cluster and conditioned local-saddle companions are indexed in the trace topic. Global signed cancellation remains open; the separate global rotated-box theorem controls the finite-band contour/tail step.
 
 [Actual higher-seven-primary common commutant](actual_seven_primary_commutant.md) (FM-024) closes the stated unramified 49-divisible family, with remaining arithmetic branches explicit.
+
+[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The ramified odd multiples of 35 remain open; no seven-divisible simplicity or BGS conclusion is added.

@@ -93,8 +93,10 @@ See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). 
 
 Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaussian reciprocity](../../exact_gaussian_reciprocity.md) → [uniform cluster lemma](../../uniform_cluster_lemma.md) → [rotated local first loop](../../rotated_local_first_loop.md). The global rotated-box theorem controls the contour/tail step in its stated finite band. Complete signed comparison and unrestricted bands remain open; local/formal results do not establish BGS.
 
-- [Actual higher-seven-primary scalar commutant](../../actual_seven_primary_commutant.md), FM-024: odd 49|N and 5∤N only; literal-U algebraic-entry corollary is separate. No spectral-simplicity or universality claim.
+- [Actual higher-seven-primary scalar commutant](../../actual_seven_primary_commutant.md), FM-024 higher-seven component: odd 49|N and 5∤N; see the first-seven extension below; literal-U algebraic-entry corollary is separate. No spectral-simplicity or universality claim.
 
 - [Principal WKB polar comparison](../../polar_wkb_quantization_stability.md): fixed smooth order-1/N correction and O(N^-2) polar defect; inherited ergodic RMS transport transfers an assumed all-order compact law between unitary endpoints. No nonnormal principal-matrix eigenvalue matching is claimed.
 
 - [Global rotated-box trace representation](../../global_rotated_box_trace.md): actual traces through m<=2N equal the exact box sum up to O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). The signed box sum is not evaluated.
+
+- [Actual first-seven commutant](../../actual_first_seven_commutant.md): closes 7∥N,5∤N,N>7. Together with the higher-seven component FM-024 covers odd 7|N,5∤N,N>7; prior FM-008 yields the separately attributed all-35∤N combination except N=7. Odd multiples of 35 remain open.

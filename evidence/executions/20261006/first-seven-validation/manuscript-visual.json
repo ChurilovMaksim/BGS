@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "page_count": 266,
+  "pdf_sha256": "2428800ca0df7f3988f068f39f7634e31a56621649b836ce012f9addc084e972",
+  "manifest_sha256": "fe1191bc8a64841bbf73a4c216fc1dfb11b5337f2a479a2273b4f2d36b083c92",
+  "scope": "Visual inspection of pages262-264, including the new first-seven extension, its paragraph continuation, neighboring existing theorem and bibliography transition. Not a full-page inspection of all266 pages.",
+  "observations": "New paragraph and all equations are legible and inside margins; no clipping, overlap, missing glyphs or footer collisions observed. The finite/formal and BGS boundaries are visible.",
+  "inspected_pages": [
+    262,
+    263,
+    264
+  ],
+  "images": {
+    "visual/page-262.png": "0d589169cb71738368600bbf4b600cdbec1804a16945ea8b990122048c1ca702",
+    "visual/page-263.png": "00cf0113f64e99865e9346e679d156621e1ea510b7d00fca6c353b18788cf791",
+    "visual/page-264.png": "cd6bf64666524ef42faf4e2de4839910ff3fa3003ca395796f8991e3c41f292e"
+  },
+  "source_edits_during_gate": false
+}

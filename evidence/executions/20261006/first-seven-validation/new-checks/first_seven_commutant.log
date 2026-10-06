@@ -1,0 +1,75 @@
+FIELD PASS: full multiplicative orbit, 156250 direct-product controls; t order63,w=1208
+CLASS 1 2841 independent determinant evaluations PASS
+CLASS 1 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+CLASS 2 2841 independent determinant evaluations PASS
+CLASS 2 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+CLASS 3 2841 independent determinant evaluations PASS
+CLASS 3 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+CLASS 4 2841 independent determinant evaluations PASS
+CLASS 4 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+CLASS 5 2841 independent determinant evaluations PASS
+CLASS 5 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+CLASS 6 2841 independent determinant evaluations PASS
+CLASS 6 exact gcd, Bezout, quotients, factor reconstruction, Frobenius and odd-order exclusions PASS
+ALL INDEPENDENT CHECKS PASS
+FIELD PASS: full multiplicative orbit, 156250 direct-product controls; t order63,w=1208
+ACTUAL characteristic5 N=7 chain depth=1 restricted equations=49 by 48 rank=32 full common commutant dimension=17
+ACTUAL characteristic5 N=21 chain depth=3 restricted equations=441 by 146 rank=146 full common commutant dimension=1
+ACTUAL characteristic5 N=63 chain depth=9 restricted equations=3969 by 440 rank=440 full common commutant dimension=1
+{'N': 21, 'L_mod7': 3, 'prime': 337, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+{'N': 63, 'L_mod7': 2, 'prime': 757, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+{'N': 77, 'L_mod7': 4, 'prime': 617, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+{'N': 91, 'L_mod7': 6, 'prime': 1093, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+{'N': 133, 'L_mod7': 5, 'prime': 1597, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+{'N': 203, 'L_mod7': 1, 'prime': 2437, 'raw_fourier_dictionary': True, 'raw_and_gauged_cross_ratio': True, 'normalized_JK_common_scalar': True}
+[
+  {
+    "N": 21,
+    "L_mod7": 3,
+    "prime": 337,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  },
+  {
+    "N": 63,
+    "L_mod7": 2,
+    "prime": 757,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  },
+  {
+    "N": 77,
+    "L_mod7": 4,
+    "prime": 617,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  },
+  {
+    "N": 91,
+    "L_mod7": 6,
+    "prime": 1093,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  },
+  {
+    "N": 133,
+    "L_mod7": 5,
+    "prime": 1597,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  },
+  {
+    "N": 203,
+    "L_mod7": 1,
+    "prime": 2437,
+    "raw_fourier_dictionary": true,
+    "raw_and_gauged_cross_ratio": true,
+    "normalized_JK_common_scalar": true
+  }
+]
+first-seven-commutant: all exact certificate replays passed

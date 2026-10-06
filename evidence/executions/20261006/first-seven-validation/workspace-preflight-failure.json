@@ -1,0 +1,9 @@
+{
+  "status": "FAIL_PRECHECK",
+  "exit_code": 2,
+  "reason": "CMake missing from task PATH. Existing installation later found at CMAKE_ROOT/cmake/data/bin.",
+  "mathematical_checks_executed": 0,
+  "source_snapshot_unchanged": true,
+  "log_sha256": "44eb06dbfcc3cc1b415ce1b14790419a9441c1a2cf3eb8f3dfceca3169086fa0",
+  "rerun": "workspace-v2.json with same snapshot and explicit installed CMake path; no source repair."
+}

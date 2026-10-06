@@ -1,0 +1,45 @@
+{
+  "scope": "Evidence-only post-run append. All 1888 tested files remain byte-identical except the two exact index/record suffix additions listed here. No substantive proof, verifier, metadata registry, manuscript or formal source changed.",
+  "tested_source_files": 1888,
+  "tested_archive_manifest_sha256": "795fdfd66fcedc0b0d8d5bd94f97a48376c192924f04b16c1f86718bd8a651ae",
+  "modified_tested_files": [
+    {
+      "path": "record/first_seven_integration_20261006.md",
+      "tested_sha256": "f201232ef82cf98ba2b30725a63c6a0828a7bc2c94ebbe9b6aa1f8dfe6f8fbd2",
+      "postrun_sha256": "f34595c29fcdd732858312a4d59f044694756896ecee280fab49caed5f85af29",
+      "exact_appended_text": "\n## Subsequent execution acceptance\n\nThe frozen 1,888-file archive passed all 179 workspace checks and 28\nsupplement entries. The manuscript passed its three-pass warning/reference\ngate at 266 pages; pages 262\u2013264 were visually inspected. Existing 22 corpus\nC++ binaries were source/hash-bound for 23 actual executions. No new Lean\nbuild was run: unchanged inputs and the prior successful build log were\nverified. The new first-seven verifier separately compiles its own helpers.\n\n[Compact validation evidence](../evidence/executions/20261006/first-seven-validation/receipt.json)\nis an explicitly post-run, evidence-only append, not part of its own tested\nsnapshot. The original CMake-PATH preflight failure is preserved; the rerun\nused the same source snapshot with verified local tools and no source repair.\nThe exact index/record append delta is in first_seven_postrun_evidence_delta.json.\nNo ramified candidate, noise identity, commit or publication is included here.\n"
+    },
+    {
+      "path": "record/history/2026/INDEX.md",
+      "tested_sha256": "164cbdf4d94cea7a88f44592546ca03ee0ef62eb25684c3c87adb74160b06328",
+      "postrun_sha256": "81be7971822677055cae4b0a2bf9330037b1675ebdacaae3dcf9e1abb15515d9",
+      "exact_appended_text": "\n- [First-seven final validation](../../../evidence/executions/20261006/first-seven-validation/receipt.json): post-run receipts for the 1,888-file archive, 179 workspace and 28 supplement checks, and the 266-page manuscript; unchanged Lean and reused C++ provenance are explicit.\n"
+    }
+  ],
+  "added_evidence_files": {
+    "evidence/executions/20261006/first-seven-validation/supplement.json": "b4ee4908ec6da5ff17f241bb973be891b5c23edd84d04f49fbcaa0ea14169dce",
+    "evidence/executions/20261006/first-seven-validation/workspace.json": "fb4ba1dc061d2c28c0684ba7761726d2d902c113b9abb333630e666ddebb887d",
+    "evidence/executions/20261006/first-seven-validation/SHA256SUMS": "f466032c0b05f2a6c723f94f7de6e971ecc469c4864bc3760c763f35fbf5a07f",
+    "evidence/executions/20261006/first-seven-validation/workspace-preflight-failure.log": "44eb06dbfcc3cc1b415ce1b14790419a9441c1a2cf3eb8f3dfceca3169086fa0",
+    "evidence/executions/20261006/first-seven-validation/whitespace-check.json": "b9208aa7f8858333e3034a0c2e6be523f2e1f002604c1ed2b0374184a685fbae",
+    "evidence/executions/20261006/first-seven-validation/workspace-preflight-failure.json": "1d8ed009190f1fa4078cf63af1cee906bd4da76f66664a3f2b731e58e50a3e18",
+    "evidence/executions/20261006/first-seven-validation/receipt.json": "f9fe92451017e0512e7a518944c821175cd41618cb14bb199e096e3eeaf407f7",
+    "evidence/executions/20261006/first-seven-validation/maintenance-optimized.log": "eecd2a9c8f90b20910796e31eda839c8e51363a648a79fa39550436b2aab6061",
+    "evidence/executions/20261006/first-seven-validation/manuscript-visual.json": "4ef1a85f58f50efc9ba6c7b77bfb149b7e8ef4ed53e40b21ee74f30d1e34d11d",
+    "evidence/executions/20261006/first-seven-validation/archive-manifest.json": "795fdfd66fcedc0b0d8d5bd94f97a48376c192924f04b16c1f86718bd8a651ae",
+    "evidence/executions/20261006/first-seven-validation/maintenance-normal.log": "cbea0bf5defbf449c95d8041991b98e1274208d5695ea9afa848ebd2d695ad1d",
+    "evidence/executions/20261006/first-seven-validation/lean-unchanged-binding.json": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "evidence/executions/20261006/first-seven-validation/execution-log-hashes.json": "13d7d58ac5e80bbc033a4cf1a14ee7ff5278f3cfde1526feaa9bc3b6f98962a1",
+    "evidence/executions/20261006/first-seven-validation/manuscript.json": "ab4f1913cd08275d167810c70d98ad96a50a2fd7f848113cb10cfafca7a784ce",
+    "evidence/executions/20261006/first-seven-validation/path-roles.json": "dd497d12825689b9058ee152e665846832221404ed3b57103f879cd7896293e1",
+    "evidence/executions/20261006/first-seven-validation/cpp-reuse-binding.json": "26cae55286d1cfa106a1eeeedf70037631740470be8a6b76b3247977ff2f16ed",
+    "evidence/executions/20261006/first-seven-validation/README.md": "e24e8f1ba623f43f74fc129b10a1dce538d299641de217704cfa8ca474643348",
+    "evidence/executions/20261006/first-seven-validation/raw-public-hashes.json": "076155d1a836812d1a114a6a016c612dd887804d625e9f055740caf51cab5cf4",
+    "evidence/executions/20261006/first-seven-validation/new-checks/first_seven_commutant.log": "d578715d092da2677a1f7b068c6a70282b8344eb29d518734bd2a9010e578074"
+  },
+  "self_file": "record/first_seven_postrun_evidence_delta.json",
+  "self_hash_policy": "This delta is an additional post-run file and cannot contain its own SHA; the final publication manifest may hash it.",
+  "no_new_lean_build": true,
+  "cpp_provenance": "22 previously built corpus binaries,23 actual bound executions; first-seven helper compilation is separate.",
+  "exclusions": "No ramified candidate or noise identity."
+}

@@ -53,3 +53,7 @@ Additional dated records remain searchable in `record/` and Git history.
 - [WKB original review provenance](heisenberg_wkb_20261006/original_hashes.json): exact reviewed originals and publication text before prior-ownership correction. Historical coordination paths are retained only in these immutable originals.
 
 - [Rotated-contour accepted originals](rotated_contour_20261006/source_hashes.json): frozen contour/tail candidates and separate fresh review; current owner is mathematics/global_rotated_box_trace.md.
+
+- [First-seven accepted proof and original review](first_seven_20261006/accepted_proof.md): exact reviewed originals, with portable promotion mapping and compact serialized certificate.
+
+- [First-seven final validation](../../../evidence/executions/20261006/first-seven-validation/receipt.json): post-run receipts for the 1,888-file archive, 179 workspace and 28 supplement checks, and the 266-page manuscript; unchanged Lean and reused C++ provenance are explicit.

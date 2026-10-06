@@ -1,0 +1,27 @@
+[
+  {
+    "case": "empty",
+    "exit_code": 1,
+    "stderr": "FAIL six classes required"
+  },
+  {
+    "case": "zero_classes",
+    "exit_code": 1,
+    "stderr": "FAIL six classes required"
+  },
+  {
+    "case": "seven_classes",
+    "exit_code": 1,
+    "stderr": "FAIL six classes required"
+  },
+  {
+    "case": "truncated",
+    "exit_code": 1,
+    "stderr": "FAIL short input"
+  },
+  {
+    "case": "trailing",
+    "exit_code": 1,
+    "stderr": "FAIL trailing certificate data"
+  }
+]

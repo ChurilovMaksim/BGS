@@ -225,3 +225,5 @@ FM-024 proof route: actual matrix formula → reduction at 5 with unit gauges �
 FORMAL-003 certifies only the finite executable predicates used as supporting evidence for FM-024. It is a separate node without a claimed abstract/formal implication to the complete commutant theorem.
 
 TRACE-017 supporting (not prerequisite) route: exact Gaussian reciprocity plus the actual complex-strip/local-box inputs → finite-band global rotated-box representation and summed tail. Signed box evaluation and unrestricted-band TRACE-005 comparison remain open.
+
+FM-024 first-seven extension: four actual boundary blocks → endpoint-free 63-by-48 system → three degree<=936 minors in each residue class → exact interpolation and odd-root exclusion → scalar leading coefficient and tail elimination → characteristic-zero lift. The FM-008 → FM-024 edge records only the combined 35∤N corollary via simple A and nonzero M entries; it is not used by the new seven-divisible proof. Odd multiples of 35 remain open.

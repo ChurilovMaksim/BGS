@@ -1,13 +1,31 @@
-# Actual scalar commutant on the unramified higher-seven-primary family
+# Actual scalar commutant on the unramified seven-divisible family
 
-Claim ID: BGS-FM-024. Publication base: 300d99270d11c87d0aa84e9d8f624491788629ba.
+Claim ID: BGS-FM-024. Original higher-seven publication base: 300d99270d11c87d0aa84e9d8f624491788629ba; first-seven integration base: 66724291b2ec77c22823f52ecc5ee56278fed096.
 Status: exact project proof with independent internal review and computer-assisted finite polynomial inputs. This is the sole current theorem owner for this family; historical raw/weighted surrogate and failed-endpoint routes are provenance only. The literal-U corollary additionally uses the already registered external Lindemann–Weierstrass theorem. No external-referee acceptance or global-priority claim.
 
-## Theorem and boundary
+## Current combined scope
+
+The two independently reviewed components give scalar complex joint
+commutant of (A_N,M_N) for every odd N>7 with 7|N and 5∤N.
+The higher-seven proof below is retained. The new [first-seven proof](actual_first_seven_commutant.md)
+covers exactly 7|N,49∤N,5∤N,N>7 by a different endpoint-free system.
+Its independent determinant identities and finite-field root exclusions
+are exact computer-assisted proof inputs, not sampling of dimensions.
+
+For odd 7∤N, prior [FM-008](frozen_algebraic_spectral_simplicity.md) gives
+simple A_N and nonzero entries of M_N in its eigenbasis. A joint commuter
+is diagonal in that basis; nonzero entries force all its diagonal values
+equal. Thus the combined coverage is all odd N>=3 with 35∤N, except N=7,
+retaining FM-008's own review boundary. The odd multiples of 35 remain
+unresolved here. No statement that the full complex commutant of U_N is
+scalar, or that seven-divisible U_N has simple spectrum, follows.
+
+## Higher-seven theorem and boundary
+
 
 For every odd N with 49|N and 5∤N, the actual prescribed pair A_N,M_N has complex common commutant C I.
 
-This is an infinite actual-model family, not a theorem merely about an upper-bond surrogate. It does not cover 5|N or 7|N with 49∤N. FM-008 separately covers7∤N. N=7 remains genuinely exceptional. The full all-odd-N claim, seven-divisible spectral simplicity, quantitative gaps, signed Heisenberg comparison and microscopic BGS are not asserted.
+This is an infinite actual-model family, not a theorem merely about an upper-bond surrogate. This higher-seven component does not cover 5|N or 7|N with 49∤N. The separate first-seven component above now covers the latter when 5∤N and N>7. FM-008 separately covers 7∤N. N=7 remains genuinely exceptional. The full all-odd-N claim, seven-divisible spectral simplicity, quantitative gaps, signed Heisenberg comparison and microscopic BGS are not asserted.
 
 ## 1. Actual model, coordinates, and direct reduction
 
@@ -185,7 +203,7 @@ scalars does not affect common commutants.
 
 ## 5. Unresolved branches and review status
 
-The proof relies on direct reduction at 5 with all internal bonds units and the Fourier kernel retaining rank. It does not apply when 5|N. Nor does its rank-one endpoint formula apply when 7|N but 49∤N. These remain separate algebraic branches.
+The proof relies on direct reduction at 5 with all internal bonds units and the Fourier kernel retaining rank. It does not apply when 5|N. Its rank-one endpoint formula does not apply when 7|N but 49∤N; that branch is now covered by the separate endpoint-free first-seven proof when 5∤N and N>7. The odd multiples of 35 remain outside these unramified proofs.
 
 The accepted source was independently reviewed at SHA-256
 47b2692f034a23888d4223e73120a685609a6ca58c2a983293310bc735e42d4f.
@@ -197,7 +215,7 @@ completed. The slower development log is not a proof dependency.
 ## 6. Algebraic-entry commuters of the literal propagator
 
 Corollary (additional external input EXT-POPESCU-2023, Theorem 3.2).
-For every N in the theorem and every nonzero algebraic real t, the only
+For every odd N>=3 with 35∤N and N≠7, and every nonzero algebraic real t, the only
 matrices X with algebraic entries commuting with exp(itA)M are scalar
 matrices with algebraic scalar. In particular this holds for t=10^(-80)N
 and the literal prescribed U_N.
