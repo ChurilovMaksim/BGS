@@ -11,6 +11,8 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 - **[Actual-start noisy law](../../circular_dyson_actual_start.md)** — FLOW-014 uses logarithmic noise time and a polynomial step schedule. FLOW-017 adds all fixed factorial orders on a different superpolynomial schedule.
 - **[Original common-noise rate](../../original_channel_gap.md)** — FM-020 gives a reviewed two-copy lower bound of order u/(log N)^2 for m=1; higher-copy and quenched-functional control are separate.
 
+- **[Conditional loop testing and short-leg deletion](../../../supplement/fixed_map/resolvent-flow/loop_test_reductions.md)** — Fixed-order anchor/dense-test sufficiency and actual normalized logarithmic excision; signed mixed hierarchy remains open.
+
 ## Suggested reading sequence
 
 [1. fixed model symmetry theorem](../../fixed_model_symmetry_theorem.md) → [2. frozen seven cut reduction](../../frozen_seven_cut_reduction.md) → [3. fixed time wavepacket trace bound](../../fixed_time_wavepacket_trace_bound.md) → [4. circular dyson actual start](../../circular_dyson_actual_start.md) → [5. coboundary all order limit](../../coboundary_all_order_limit.md) → [6. microscopic noise removal](../../microscopic_noise_removal.md)

@@ -1,0 +1,17 @@
+{
+  "cpp": {
+    "prior_receipt": "../next-proof-validation/fresh-cpp-build.json",
+    "raw_receipt_sha256": "44231e02bedb4c66ddf9c53cde6305c43f4e61e5b118699a0ea3c7dd8d85d864",
+    "unique_sources": 22,
+    "workspace_executions": 23,
+    "all_source_binary_hashes_matched": true,
+    "new_compilation": false
+  },
+  "lean": {
+    "prior_receipt": "../next-proof-validation/lean-build.json",
+    "raw_receipt_sha256": "f86ab8e4ea876a1378cfa84a22fb619922d42cabe74f27a0b340b2efe97404f9",
+    "all_recorded_inputs_match": true,
+    "new_compilation": false,
+    "boundary": "Prior18-active-module21-job build retained native-evaluation trust; no analytic formalization."
+  }
+}

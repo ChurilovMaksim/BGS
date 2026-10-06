@@ -1,6 +1,6 @@
 {
   "schema": "bgs-generated-sources-v1",
-  "updated": "2026-09-22",
+  "updated": "2026-10-06",
   "rules": [
     {
       "generated": [
@@ -46,7 +46,8 @@
       "mode": "fail-closed check available",
       "authoritative_sources": [
         "mathematics/fixed_map_resolvent_frontier.md",
-        "supplement/fixed_map/"
+        "supplement/fixed_map/",
+        "supplement/fixed_map/resolvent-flow/loop_test_reductions.md"
       ]
     },
     {

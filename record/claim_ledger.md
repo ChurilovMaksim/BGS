@@ -25,6 +25,20 @@ Exact statements: [FLOW-014](../mathematics/circular_dyson_actual_start.md), [FL
 
 All analytic claims retain odd N and literal fixed tau=10^-80 where applied to the actual model. No practical startup, external-referee acceptance or global-priority claim is made. **TRACE-005 and BGS-BGS-001 remain OPEN.** Original preparation receipts and accepted-source provenance retain their execution identities; destination checks are recorded separately.
 
+## Reviewed extension of the conditional loop owner, 6 October 2026
+
+**BGS-LOOP-001 — EXACT + EXTERNAL-THEOREM; conditional.** The
+[single-anchor/dense-test reduction and logarithmic deletion](../supplement/fixed_map/resolvent-flow/loop_test_reductions.md)
+extend the existing owner, without a new claim ID. Every fixed anchor order
+and pointwise countably dense mixed tests imply the whole-space compact-uniform
+hypothesis. FM-007 supplies only the actual short-leg excision input, yielding
+O(N^(-1/40) log N) relative error on fixed compact positive height intervals
+with the original denominator. The unnormalized tensor partial trace gives an
+exact long-long signed target. Actual anchors, that target, and the full mixed
+hierarchy remain unproved; TRACE-005 and BGS-BGS-001 remain OPEN. The named
+external characterization is inherited, not reproved. See the
+[scoped review](loop_test_reductions_review_20261006.md).
+
 ## Status vocabulary
 
 - **EXACT** — current project derivation with explicit hypotheses.

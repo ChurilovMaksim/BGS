@@ -1082,6 +1082,7 @@
         "BGS-FM-005"
       ],
       "transitive_claim_dependencies": [
+        "BGS-BGS-001",
         "BGS-FLOW-014",
         "BGS-FLOW-015",
         "BGS-FLOW-016",
@@ -1095,6 +1096,7 @@
         "BGS-FM-010",
         "BGS-FM-011",
         "BGS-FM-017",
+        "BGS-LOOP-001",
         "BGS-RES-007",
         "BGS-TRACE-009",
         "BGS-TRACE-011",
@@ -1106,6 +1108,37 @@
           "claim": "BGS-FM-005",
           "source": "mathematics/frozen_kick_rank_boundary.md",
           "role": "existing_registered_use"
+        }
+      ],
+      "impact_reviews": [
+        {
+          "date": "2026-10-06",
+          "record": "record/loop_test_reductions_review_20261006.md",
+          "reason": "FM-007 -> LOOP-001 edge covers the new logarithmic short-leg deletion only. This propagates inherited EXT-EV-2015 dependence to LOOP-001 and its programme descendant BGS-BGS-001; it does not make the external characterization or abstract testing reduction depend on FM-007.",
+          "previous_transitive_claim_dependencies": [
+            "BGS-FLOW-014",
+            "BGS-FLOW-015",
+            "BGS-FLOW-016",
+            "BGS-FLOW-017",
+            "BGS-FLOW-018",
+            "BGS-FLOW-019",
+            "BGS-FLOW-020",
+            "BGS-FLOW-021",
+            "BGS-FM-007",
+            "BGS-FM-008",
+            "BGS-FM-010",
+            "BGS-FM-011",
+            "BGS-FM-017",
+            "BGS-RES-007",
+            "BGS-TRACE-009",
+            "BGS-TRACE-011",
+            "BGS-TRACE-012"
+          ],
+          "added_transitive_claim_dependencies": [
+            "BGS-BGS-001",
+            "BGS-LOOP-001"
+          ],
+          "metadata_or_source_contract_changed": false
         }
       ]
     },

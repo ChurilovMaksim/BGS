@@ -332,6 +332,16 @@ The [detailed bridge](../supplement/fixed_map/resolvent-flow/loop_bridge.md)
 checks these steps. This is a conditional implication; the model hypothesis
 is unproved. It does not assert pointwise correlation densities.
 
+The [single-anchor and dense-test reduction](../supplement/fixed_map/resolvent-flow/loop_test_reductions.md)
+shows that all fixed anchor orders and pointwise tests on countably dense mixed
+tuples suffice for this whole-space compact-uniform hypothesis. FM-007 further
+permits normalized first-mixed short-leg deletion with error
+$O(N^{-1/40}\log N)$ on fixed positive compact height intervals, keeping the
+original full-resolvent denominator and leaving an exact long-long
+tensor-resolvent target; the actual anchors, signed target and full hierarchy
+remain open. FM-007 is needed only for this deletion, not for the external
+characterization or the abstract testing reduction.
+
 ## The first two mixed equations
 
 For arguments in the same half-plane every loop residual vanishes for

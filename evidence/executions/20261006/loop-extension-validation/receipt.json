@@ -1,0 +1,59 @@
+{
+  "schema": "bgs-loop-extension-validation-v1",
+  "status": "PASS",
+  "curated_utc": "2026-10-06T17:57:43.905070+00:00",
+  "base_commit": "12d2e66dc76cc11cebe988fdc8f6d9caefc4c735",
+  "archive": {
+    "files": 1623,
+    "upstream_commit": null,
+    "unchanged": true
+  },
+  "workspace": {
+    "passed": 171,
+    "total": 171
+  },
+  "maintenance": {
+    "normal": 39,
+    "optimized": 39
+  },
+  "supplement": {
+    "passed": 28,
+    "inventory_files": 116
+  },
+  "manuscript": {
+    "pages": 263,
+    "input_files": 85,
+    "pdf_sha256": "72e114e18c78f58294470d83237b1f91f0e45f780e8a99baafb2aefcb9a8c529",
+    "visual_pages": [
+      230
+    ],
+    "visual_scope": "New paragraph only; no clipping/overlap observed."
+  },
+  "new_cpp_build": false,
+  "new_lean_build": false,
+  "path_roles": [
+    "$BOOST_INCLUDE",
+    "$CHECK_LOGS",
+    "$LIVE_SOURCE_ROOT",
+    "$PRIOR_CPP_BUILD",
+    "$PYTHON",
+    "$SOURCE_ROOT",
+    "$SUPPLEMENT_REPLAY",
+    "$TEX_BUILD",
+    "$VALIDATION"
+  ],
+  "non_claim": "No new mathematical proof audit, actual mixed residual estimate, full analytic formalization or BGS theorem.",
+  "artifact_sha256": {
+    "README.md": "868e70f216e1b83e140307c17da720086cbc45bb66a6727990f6acb0f432c927",
+    "archive-manifest.json": "0dfbad58654eb68f87aed75f3585d147d7b5add721d1026cabcdc487b300692d",
+    "execution-log-hashes.json": "2e1a2a8b594534a43a63389d50a0ccfce43c4d486fc00601c51b926c91c6dadc",
+    "loop-test-reductions.log": "1bc46ea0323d07795cce970c53320dc62bbf326f7ebeb2aef93bb63c79f48084",
+    "maintenance-normal.log": "f14958ec7a515f2b8e97d6c086ff5cabb7ed656e2636f48a0bc2863925f0593a",
+    "maintenance-optimized.log": "814b84a265f48891b81b2c6fbcf2cb8e9014e88ee64ce4067471b4adf59a1b2d",
+    "manuscript.json": "88fe908a9764be4d6340beb7e972f15077bab862956e7ad63e4aeccbf764ae6e",
+    "raw-public-hashes.json": "8d4f16f3eb35f8e322028a4129a38d8ea2d3dd8c8d9efa4d790981c576cd4386",
+    "reused-build-provenance.json": "0d27ced52d56a71555502c20353d29070940df83c87daf8c8ff3c832e856df16",
+    "supplement.json": "11fee3bc8a421f6ea991030abff7b5add9efea40bafa5d94d48d8457e1ba85d2",
+    "workspace.json": "a2d99f6fcae17ef752a7fb7cf12ceb9ca788cccb072a4789e22f7da95f9ab769"
+  }
+}

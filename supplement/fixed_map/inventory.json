@@ -854,8 +854,16 @@
     {
       "path": "resolvent-flow/loop_bridge.md",
       "original_path": "build/resolvent-flow/loop_bridge.md",
-      "sha256": "a85aec3d223ea8d0c85ae8e5062b03c458eb633679873432428c85012255c448",
-      "bytes": 13394
+      "sha256": "6b39a41725859ceb751a834cb139c1d54fadb297525e6abfa959e14d700b2a2f",
+      "bytes": 14269,
+      "previous_editions": [
+        {
+          "commit": "12d2e66dc76cc11cebe988fdc8f6d9caefc4c735",
+          "sha256": "a85aec3d223ea8d0c85ae8e5062b03c458eb633679873432428c85012255c448",
+          "bytes": 13394,
+          "transition": "Reviewed LOOP-001 testing/deletion companion cross-reference; original proof retained."
+        }
+      ]
     },
     {
       "path": "resolvent-flow/low_order.json",
@@ -940,6 +948,13 @@
       "original_path": "build/time-insertion/results.json",
       "sha256": "e497e1f97ea13ebf3f5a24bc564b881f3f8e305b2fbc783685175358decda0c4",
       "bytes": 3872
+    },
+    {
+      "path": "resolvent-flow/loop_test_reductions.md",
+      "original_path": "resolvent-flow/loop_test_reductions.md",
+      "sha256": "85b7a1c22b8c877698787a8e5932b9829e721e3b3c145345bfc7cd0e6e0571ce",
+      "bytes": 16120,
+      "provenance": "evidence/loop_reductions_20261006/provenance.json"
     }
   ],
   "edition_updates": [

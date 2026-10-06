@@ -444,22 +444,29 @@
       "ledger_status": "EXACT + EXTERNAL-THEOREM",
       "source": "mathematics/fixed_map_resolvent_frontier.md",
       "dependencies": [
-        "BGS-TRACE-002"
+        "BGS-TRACE-002",
+        "BGS-FM-007"
       ],
       "external_dependencies": [
         "EXT-BH-2026"
       ],
       "evidence": [
-        "supplement/fixed_map/README.md"
+        "supplement/fixed_map/README.md",
+        "supplement/fixed_map/resolvent-flow/loop_test_reductions.md",
+        "record/loop_test_reductions_review_20261006.md",
+        "evidence/loop_reductions_20261006/provenance.json"
       ],
-      "verifiers": [],
+      "verifiers": [
+        "computations/verification/loop_test_reductions.py",
+        "computations/maintenance/tests/test_loop_test_reductions.py"
+      ],
       "formalization": [
         "formalization/Bgs/CueLoopKernels.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "The external characterization is available; the model-specific approximate mixed hierarchy remains open."
+      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open."
     },
     {
       "id": "BGS-RES-001",

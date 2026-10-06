@@ -109,6 +109,7 @@ graph TD
 
   F3[BGS-FM-003 moment controls] --> F4[BGS-FM-004 three-orientation barrier]
   T2 --> L1[BGS-LOOP-001 mixed loop hierarchy]
+  F7 -->|short-leg deletion only| L1
 
   R4[BGS-RES-004 finite-orbit rigidity]
   R5[BGS-RES-005 full-lag linear gap]
@@ -211,3 +212,6 @@ TRACE-005 or BGS-BGS-001. The original m=1 rate, nonlinear functional
 and higher-copy quantitative estimates remain open.
 
 TRACE-016 additionally uses the reviewed universal compression/lifting proof in `mathematics/four_cut_rank_two_classification.md`. FORMAL-002 certifies only its bounded predicate, not that reduction or the analytic theorem.
+
+FM-007 feeds only the new normalized short-leg deletion sub-result of LOOP-001.
+The abstract testing reduction and external characterization do not depend on it.

@@ -308,3 +308,18 @@ scripts, retain their dated evidence and are not counted as fresh runs.
 The new Lean kernel is included in the pinned `lake build`; its current
 execution status must be read separately from earlier 16-module reports.
 See [the publication review](record/fixed_map_publication_20260920.md).
+
+## Scoped loop-reduction controls
+
+The algebra checker is dispatched once by the maintained verifier aggregate.
+The regression suite lives under maintenance/tests and separately exercises
+normal/optimized success, injected failure, portable output and silent import:
+
+```sh
+python3 computations/verification/loop_test_reductions.py
+python3 -O computations/verification/loop_test_reductions.py
+python3 -m unittest discover -s computations/maintenance/tests -p test_loop_test_reductions.py -v
+python3 -O -m unittest discover -s computations/maintenance/tests -p test_loop_test_reductions.py -v
+```
+
+These are exact finite algebra controls, not asymptotic mixed-loop proofs.

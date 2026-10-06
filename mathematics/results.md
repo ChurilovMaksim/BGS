@@ -10,6 +10,8 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 
 [Theorems, reading path and complete sources](topics/fixed-map/README.md).
 
+[Conditional loop tests and normalized logarithmic deletion](../supplement/fixed_map/resolvent-flow/loop_test_reductions.md) reduce the required tests and remove short legs at relative error O(N^(-1/40) log N). The actual signed long-long target and all-order mixed hierarchy remain open.
+
 **Boundary:** Actual signed deterministic noise removal and all-order Heisenberg comparison remain open.
 
 ## Trace identities and microscopic limits

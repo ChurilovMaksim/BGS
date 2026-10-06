@@ -1,0 +1,44 @@
+[
+  {
+    "artifact": "archive-manifest.json",
+    "raw_sha256": "0dfbad58654eb68f87aed75f3585d147d7b5add721d1026cabcdc487b300692d",
+    "public_sha256": "0dfbad58654eb68f87aed75f3585d147d7b5add721d1026cabcdc487b300692d",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "workspace.json",
+    "raw_sha256": "6391da2142e9c904c2abb50615f64dd1d119a09633164aeb351e48b9ced27d13",
+    "public_sha256": "a2d99f6fcae17ef752a7fb7cf12ceb9ca788cccb072a4789e22f7da95f9ab769",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable; source manifest factored once"
+  },
+  {
+    "artifact": "supplement.json",
+    "raw_sha256": "11fee3bc8a421f6ea991030abff7b5add9efea40bafa5d94d48d8457e1ba85d2",
+    "public_sha256": "11fee3bc8a421f6ea991030abff7b5add9efea40bafa5d94d48d8457e1ba85d2",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "manuscript.json",
+    "raw_sha256": "def71cc4f0b232ee8c8a92e0a71f0a1f2fdeeafffb5522ad44cd126ef1c9770e",
+    "public_sha256": "88fe908a9764be4d6340beb7e972f15077bab862956e7ad63e4aeccbf764ae6e",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "maintenance-normal.log",
+    "raw_sha256": "f14958ec7a515f2b8e97d6c086ff5cabb7ed656e2636f48a0bc2863925f0593a",
+    "public_sha256": "f14958ec7a515f2b8e97d6c086ff5cabb7ed656e2636f48a0bc2863925f0593a",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "maintenance-optimized.log",
+    "raw_sha256": "814b84a265f48891b81b2c6fbcf2cb8e9014e88ee64ce4067471b4adf59a1b2d",
+    "public_sha256": "814b84a265f48891b81b2c6fbcf2cb8e9014e88ee64ce4067471b4adf59a1b2d",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  },
+  {
+    "artifact": "loop-test-reductions.log",
+    "raw_sha256": "1bc46ea0323d07795cce970c53320dc62bbf326f7ebeb2aef93bb63c79f48084",
+    "public_sha256": "1bc46ea0323d07795cce970c53320dc62bbf326f7ebeb2aef93bb63c79f48084",
+    "transformation": "Declared path tokenization; JSON reserialization where applicable"
+  }
+]

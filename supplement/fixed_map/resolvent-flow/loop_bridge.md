@@ -79,6 +79,12 @@ The event Omega_N in the source is taken to be the entire probability
 space. There is no discarded exceptional set. Under (H), the source
 theorem applies to (1). **Condition (H) is not established for our U_N.**
 
+The [companion testing reduction](loop_test_reductions.md), Theorem A, shows
+that all fixed single-anchor conjugate-diagonal orders together with pointwise
+conditions on countably dense mixed tuples suffice for (H). All moments and
+expectations remain on the whole origin space; these actual conditions remain
+unproved.
+
 ## 2. Why this gives all compactly tested anchored correlations
 
 Here the whole-space version of (H) is essential. Take p=2q-1, w_1=w,
@@ -331,3 +337,13 @@ fixed order, for the original fixed family. Even its first mixed test
 requires a Heisenberg-scale cubic estimate not obtained here. The
 alternative pair target L_N(s)->(1-e^-2s)/(4s^2) from the parent checkpoint
 also remains open. No commit or push is justified by this checkpoint.
+
+## 8. Reviewed logarithmic deletion extension
+
+[Theorem B and Identity C](loop_test_reductions.md) use FM-007 only for the
+actual short-leg deletion, with normalized error O(N^(-1/40) log N) at fixed
+positive compact heights and with the original full-resolvent denominator.
+The remaining pair/cubic expression is exactly Tr(F_K)/N^2+Tr(F_K^2)/N^3,
+using unnormalized partial trace and an algebraic square. Its signed residual
+and the full actual mixed hierarchy remain open. This does not strengthen the
+external characterization theorem or prove BGS.
