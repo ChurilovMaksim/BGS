@@ -1,0 +1,29 @@
+{
+  "base_commit": "fa007c498fe116a814a90aa3215cfd65b1f2a154",
+  "claim_id": "BGS-FM-020",
+  "acquisition": "All 999 baseline files verified against Git blob SHA; original commit/tree reconstructed exactly, shallow history; baseline git fsck and status clean.",
+  "checks": {
+    "python_cpp": {
+      "passed": 156,
+      "total": 156,
+      "source_tree_unchanged_during_execution": true,
+      "record": "workspace.json",
+      "followup_changes": "After the full run: publication sentence explicitly identified the gap expression, review promotion scope and its hash were clarified. No verifier or analytic argument changed; manuscript regenerated and synchronization rechecked."
+    },
+    "cpp_compile": "All 21 maintained executables built using GCC 14.2, C++20, -O2 -Wall -Wextra -Wpedantic and official Boost 1.90 headers. CMake configure failed because this header-only installation lacked BoostConfig; direct compilation succeeded.",
+    "lean": "Official pinned Lean4 4.33.1; fail-closed wrapper; all 20 jobs passed. Existing finite/algebraic modules, including recorded native_decide trust boundaries; no analytic gap formalization.",
+    "supplement": "PASS: all 115 inventory-file hashes/syntax and selected finite replays; see supplement.json for exclusions.",
+    "manuscript": "PASS: 256-page canonical PDF, three passes and immutable input hashes. Pandoc 2.17.1.1 matches all source-sync checks. Container TeX format/font-map setup repaired in external workspace only.",
+    "static": "Scientific registry74 claims/28 external dependencies, repository audit, all three manuscript synchronization gates, compileall SyntaxWarning-as-error, git diff --check passed."
+  },
+  "remote_publication": "Not part of this pre-publication receipt; verify actual remote commit and CI separately.",
+  "files_sha256": {
+    "supplement.json": "15c8b12767602a67e0dd9691fbf16970405eb3621fe260bdb8b021ee920bca5c",
+    "workspace.json": "11abfdc35ebded3f8f49ebba5c169858b3b8e54297d12bc204634ca9d531b814",
+    "independent_checks.json": "54744e09cf684bc50efee2fcccd9b41c50f2f0c16994303676f16687575f67af",
+    "manifest.json": "b872ee0884a7311681c15cc1952c24bc5e1cc668d711ac8ce52c65d9942ca36e",
+    "manuscript_build.json": "e54ecdbb432ddcf5779b627f321404e6050738465fabf2586715e34c64ea2b32",
+    "checks.json": "ce3cce65c1dccbbfc79739709dea659ad3584ea6cf90a08f51fee19b80dc4718",
+    "lean.log": "3e40640f4393938b6110c13a7e2dda79f1643556ffcb52a91e8a61d80f19bf53"
+  }
+}

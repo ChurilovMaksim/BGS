@@ -74,7 +74,8 @@
     "BGS-FLOW-020",
     "BGS-FLOW-021",
     "BGS-FM-018",
-    "BGS-FM-019"
+    "BGS-FM-019",
+    "BGS-FM-020"
   ],
   "edges": [
     {
@@ -655,6 +656,11 @@
     {
       "from": "BGS-FM-018",
       "to": "BGS-FM-019",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-019",
+      "to": "BGS-FM-020",
       "type": "scientific-prerequisite"
     }
   ],

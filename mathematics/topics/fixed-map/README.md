@@ -57,3 +57,5 @@ This is a thematic navigation view. Authoritative proofs remain at their stable 
 - [egorov_overlap_rigidity](../../egorov_overlap_rigidity.md) — 4 October proof and exact scope.
 
 - [microscopic_noise_removal](../../microscopic_noise_removal.md) — Exact signed defect, all-order flat heat jets, actual full-stationarity boundary, global inverse cost and finite-field entropy.
+
+- [original_channel_gap](../../original_channel_gap.md) — Original m=1 two-copy microscopic singular mass with logarithmic loss; deterministic noise removal remains open.

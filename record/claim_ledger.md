@@ -1,5 +1,11 @@
 # Claim ledger
 
+## 6 October 2026 — original ordered two-pair microscopic mass
+
+**BGS-FM-020 — PROJECT PROOF + INHERITED EXACT WEYL BLOCKS/KERNEL ANGLE + INDEPENDENT INTERNAL REVIEW; FINITE DIAGNOSTICS SEPARATE.** The [proof](../mathematics/original_channel_gap.md) retains the exact m=1 law. For every odd N>=3, every u>=0 and every unitary U, its two-copy contraction on the identity/swap complement has singular gap at least (1-exp(-2u lambda_N))/50, lambda_N=(1024(1+log N))^-2. Its displayed lower bound dominates N^-1 for u=N^-alpha, 0<alpha<1; no asymptotic equality for the actual gap is claimed. The decisive new bound counts positive-low eigenvalues uniformly in every total Weyl label, then combines partial-Fourier basis overlap with D19. It does not use the annular gap or change the regulator.
+
+The [programme](original_channel_gap_program_20261006.md), [independent audit](original_channel_gap_review_20261006.md), and [finite contract](../evidence/20261006/original_channel_gap_contract.json) specify the proof and execution scope. This closes the original m=1 rate left open at FM-019; its other conclusions are unchanged. Quantitative higher-copy control, nonlinear quenched determinants, actual signed Heisenberg traces, TRACE-005 and BGS-BGS-001 remain OPEN. No world priority, external referee or analytic Lean certificate is claimed.
+
 ## 6 October 2026 — uniform collective diffusion and refined shared-noise mass
 
 **BGS-FM-019 — PROJECT PROOF + INHERITED WEYL/GAUSSIAN AND ONE-STEP

@@ -1,5 +1,9 @@
 # Research brief: arithmetic return laws and the BGS frontier
 
+## Original ordered two-pair microscopic mass, 6 October 2026
+
+[FM-020](mathematics/original_channel_gap.md) proves a two-copy singular gap for the original m=1 shared-noise law, with lower bound (1-exp(-2u lambda_N))/50 and lambda_N=(1024(1+log N))^-2. At u=N^-alpha, 0<alpha<1, this dominates N^-1 without changing the regulator. A uniform low-positive-eigenvalue count and the exact partial-Fourier overlap close the previously open projection-angle route. Independent internal review found no remaining gap after correcting the scope of an asymptotic sentence. Higher-copy rates, the nonlinear quenched functional and the original signed spectrum remain open; BGS is not established.
+
 The [collective-diffusion checkpoint](record/collective_diffusion_program_20261006.md)
 proves a universal two-copy generator gap for every odd dimension and
 Heisenberg-dominating mass for an explicitly refined shared-noise ensemble.

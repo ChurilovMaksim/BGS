@@ -1,0 +1,18 @@
+{
+  "claim_id": "BGS-FM-020",
+  "base_commit": "fa007c498fe116a814a90aa3215cfd65b1f2a154",
+  "command": "python3 computations/verification/original_channel_gap.py > evidence/executions/20261006/original-channel-gap/checks.json",
+  "exit_code": 0,
+  "python": "3.12.14",
+  "source_and_output_sha256": {
+    "mathematics/original_channel_gap.md": "c6f4a42a22402fd8f94d1e842e28d70c42597233e10f80e6778513b2d655c526",
+    "mathematics/collective_diffusion_gap.md": "601a0acb28d07d940b5f3479954dcc560191f2c96a2bfbd22d4bbf0f56e2afbf",
+    "computations/verification/original_channel_gap.py": "af6f9fc189777ac50414690650c70b865badb97a9d82c0eeefb16c8db24f7af3",
+    "computations/experiments/original_channel_gap_independent.py": "67386f8b3d741fafc9b4536062dda68734d403aa90aa51336e5956495ebebe4e",
+    "record/original_channel_gap_review_20261006.md": "c2e264095983c7b7a04b1afe0f3257c929b3807523366469141502b97d3a3b2b",
+    "evidence/20261006/original_channel_gap_contract.json": "681de227c869e1a2d109a6afd7c23f4bf2213e30b8344791ab16a2d080fcf141",
+    "evidence/executions/20261006/original-channel-gap/checks.json": "ce3cce65c1dccbbfc79739709dea659ad3584ea6cf90a08f51fee19b80dc4718",
+    "evidence/executions/20261006/original-channel-gap/independent_checks.json": "54744e09cf684bc50efee2fcccd9b41c50f2f0c16994303676f16687575f67af"
+  },
+  "scope": "Finite diagnostic replay and exact rational combinatorics. Analytic proof and independent audit are separate; no BGS certification."
+}

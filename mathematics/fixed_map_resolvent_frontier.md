@@ -1456,8 +1456,8 @@ q_N&=16\sin^2\frac{\pi}{2N}\sin^2\frac{\pi}{N}.
 \end{aligned}
 $$
 
-Its small-u lower bound has order $u/N^2$; a stronger microscopic m=1
-rate remains open, not ruled out. The proof instead closes a quantitative
+Its small-u lower bound has order $u/N^2$. The subsequent FM-020 result below
+closes a stronger microscopic m=1 rate. FM-019 also closes a quantitative
 obligation for an explicitly **refined** ensemble:
 sample m independent Gaussian four-vectors, keep their complete sequence
 common to the copies, and multiply their sub-kicks before the single U.
@@ -1506,6 +1506,23 @@ diagnostics are separate. The full nonlinear quenched functional,
 higher-copy quantitative rates and actual original signed noise defect
 remain open. The universal regulator gap does not estimate the original
 $J_{N,w}(U_N)$; TRACE-005 and BGS-BGS-001 retain their OPEN status.
+
+## Original ordered two-pair microscopic mass
+
+**Claim:** `BGS-FM-020`. The [canonical proof](original_channel_gap.md) keeps the original ordered common-noise law with m=1. Put
+$$
+\ell_N=1+\log N,\qquad \lambda_N=(1024\ell_N)^{-2}.
+$$
+For every odd $N\ge3$, $u\ge0$ and unitary U,
+$$
+\|e^{-uA_N^{\mathrm{diff}}}e^{-uB_N^{\mathrm{diff}}}Q_N\|
+\le 1-\frac{1-e^{-2u\lambda_N}}{50}.
+$$
+The quantity $(1-e^{-2u\lambda_N})/50$ is a lower bound for the unit-circle singular gap after right multiplication by $\operatorname{Ad}(U^{\otimes2})$, and for $I-zC_{N,u,1}$ when $|z|\le1$. At $u=N^{-\alpha}$, $0<\alpha<1$, this displayed lower bound is asymptotic to $u/(25\cdot1024^2\ell_N^2)$ and dominates $N^{-1}$. This is not an asymptotic formula for the actual gap.
+
+In every total-label block, the number of positive eigenvalues of either pair generator below $\lambda$ is at most $4N\sqrt\lambda(1+\log N)$. The shifted integral/half-integral lattice count treats nonzero axes separately. The explicit eigenbases $\delta_a\otimes\mathrm{Fourier}_j$ and $\mathrm{Fourier}_i\otimes\delta_b$ have every overlap of modulus $1/N$. Their low-positive ranks and the existing exact kernel angle therefore give a low-spectral projection angle below $4/5$ on Q. The two-contraction loss estimate yields the stated ordered-product bound without a Trotter approximation.
+
+The [independent internal review](../record/original_channel_gap_review_20261006.md) reconstructs all parity sectors, projection reduction and loss constants. Exact rational counting checks and float64 spectral diagnostics have distinct scopes. Neither the summed-generator gap nor the refined noise law is used. The bound holds for every U and supplies no model-specific signed spectral estimate. Higher-copy quantitative control, the nonlinear quenched functional, original noise removal and deterministic BGS remain open.
 
 ## The exact deterministic noise-removal obligation
 

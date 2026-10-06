@@ -6,11 +6,7 @@ N>=3. Its refined shared-noise law at m=N^3, u=N^-alpha, 0<alpha<1 has
 singular mass at least c_0u/4, dominating N^-1. Its one-copy channel is
 exactly that of FM-018; its higher-copy law is explicitly changed.
 
-The original m=1 two-pair law now has the explicit D3 rate, of order
-u/N^2 at vanishing u. A stronger microscopic rate for it remains OPEN;
-noncommutation prevents identifying it with the summed exponential.
-A plausible continuation is quantitative uncertainty for its low
-spectral projections, beyond the now exact kernel angle N^-1/2.
+[FM-020](original_channel_gap.md) now closes the original m=1 microscopic-rate obligation: its explicit lower bound is asymptotic to u/[25*1024^2*(1+log N)^2] when u=N^-alpha, 0<alpha<1, and dominates N^-1. The noise law is unchanged. This follows from a uniform low-eigenvalue count and a low-spectral projection angle, not from identifying the ordered product with the summed exponential.
 
 For the refined law, the next obligation is the full nonlinear quenched
 determinant functional at a microscopic source, retaining permutation

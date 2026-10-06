@@ -1,5 +1,7 @@
 # Bohigas–Giannoni–Schmit programme
 
+The [original two-pair continuation](record/original_channel_gap_program_20261006.md) proves Heisenberg-dominating two-copy mass for the unchanged m=1 noise law. Higher-copy control, deterministic noise removal and BGS remain open.
+
 The [collective-diffusion continuation](record/collective_diffusion_program_20261006.md)
 proves a universal two-copy generator gap for every odd dimension and
 Heisenberg-dominating mass for an explicitly refined shared-noise ensemble.
