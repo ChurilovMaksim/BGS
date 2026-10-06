@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "tested_snapshot_files": 2205,
+  "unchanged_tested_files": 2203,
+  "append_only_changes": [
+    {
+      "path": "record/cohesive_integration_20261006.md",
+      "before_sha256": "1ea0b8167806062098cb98379ccb46cd239ffaca6659ec0f25e55ea15527d8b4",
+      "after_sha256": "a4eb2db23899a1a8a8ac4823f1899072605803713bd466ea040144215482c757",
+      "exact_suffix": "\n## Post-run execution evidence\n\nThe [compact validation receipts](../evidence/executions/20261006/cohesive-validation/README.md)\nwere appended after the frozen 2,205-file execution snapshot. Workspace 186/186,\nsupplement 28/28 and maintenance 58/58 normally and under optimization passed.\nThe unchanged-source manuscript passed at 270 pages, with scoped visual review\nof pages 262,263,265,266,267,270. No new Lean build is claimed; 22 prebuilt corpus C++ binaries\nwere hash-bound to their unchanged sources for 23 executions. No gate failure\nor scientific source repair occurred. This receipt package and these record\nsuffixes were not themselves part of the executed snapshot; the exact append\nboundary is recorded in cohesive_postrun_evidence_delta.json.\n"
+    },
+    {
+      "path": "record/history/2026/INDEX.md",
+      "before_sha256": "bcc6a1de252faf653091a9c3256fe2301beb762ee773991f519a4a2674d0d8d0",
+      "after_sha256": "27a273258d29bc92e6cdf3aab1bbc7f0005659054a3bd1f3b0986b8e8b15c251",
+      "exact_suffix": "\n- [Cohesive spectral/selected-family final validation](../../../evidence/executions/20261006/cohesive-validation/README.md): post-run receipts for the 2,205-file snapshot; 186/186 workspace, 28/28 supplement, 58/58 maintenance in both modes, 270-page manuscript.\n"
+    }
+  ],
+  "new_evidence_files": {
+    "evidence/executions/20261006/cohesive-validation/README.md": "f79d838f7ba6c975520dd7242918ad7f088e670410adb18d25af55a81ff3db48",
+    "evidence/executions/20261006/cohesive-validation/SHA256SUMS": "f6bde65653c942a3da7f98fdf4869350f8c4bcdab8f0f95ae01501b5386b32d6",
+    "evidence/executions/20261006/cohesive-validation/archive-manifest.json": "fd16d00c424ae8654ea37e7cc4d16133be26bb483533de208616bce2693ce0f1",
+    "evidence/executions/20261006/cohesive-validation/cpp-reuse-binding.json": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "evidence/executions/20261006/cohesive-validation/execution-log-hashes.json": "187e69de678442e4766a38d0729a5bc5d6c2f8af7a88fd59948634e03df8391f",
+    "evidence/executions/20261006/cohesive-validation/lean-unchanged-binding.json": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "evidence/executions/20261006/cohesive-validation/maintenance-normal.log": "ab3ad62d12983ed38d31fd777b35d461004144b40bf57f0fb2c17ad14a51c1bb",
+    "evidence/executions/20261006/cohesive-validation/maintenance-optimized.log": "5a0d303d0214778f75c7fa14be892eeed285db25839770bd567752c39367a218",
+    "evidence/executions/20261006/cohesive-validation/manuscript-visual.json": "49308d69c91ec72ab14671c701fe2d45b9d7309e19ade8c5cd16e72ac0de4ab6",
+    "evidence/executions/20261006/cohesive-validation/manuscript.json": "5b262d190faf216d489a82836ab477d56fc7437fb0a82b00876a8f25635a1f08",
+    "evidence/executions/20261006/cohesive-validation/new-checks/exact_homoclinic.log": "50143d1cce568f6b6bae701a4e7ab71ed5d15e3321fde9509549873ab0a267f5",
+    "evidence/executions/20261006/cohesive-validation/new-checks/spectral_extensions.log": "7cae8eeb2ddc79611a0ec0fe7bcb3b98ee706cf816e1df9741e2669d5e55ae27",
+    "evidence/executions/20261006/cohesive-validation/new-checks/weighted_periodic_support.log": "2bd8f7b7c265c42cbc7340cc86585cb7bb2d2cb6a0b4ba06eda3dbd2f90930a7",
+    "evidence/executions/20261006/cohesive-validation/path-roles.json": "dd497d12825689b9058ee152e665846832221404ed3b57103f879cd7896293e1",
+    "evidence/executions/20261006/cohesive-validation/raw-public-hashes.json": "cf00ea965cfa3b514cc16669ad8f2acda4bae38fa68ca9191623aad2f69d0b18",
+    "evidence/executions/20261006/cohesive-validation/receipt.json": "1c64ece393bb3b99ca75cee051447802c38269e0d512e31c8f235ecf745dd0d2",
+    "evidence/executions/20261006/cohesive-validation/supplement.json": "b8ff746f1a24502049a8c68b4f5394c7eea768f51f9352a47e7875127f77d48e",
+    "evidence/executions/20261006/cohesive-validation/targeted-replay.json": "6890b7cbef35c954326d096bb47bedb87fede8e6afa014e236d89b29a7f2385f",
+    "evidence/executions/20261006/cohesive-validation/whitespace-check.json": "357bed029ef2d3969587aabf831ef588b818beec9c678ae73db3c5dd1970b9b1",
+    "evidence/executions/20261006/cohesive-validation/workspace.json": "7a6f81c48d968300c2d8d01169001c50c6c6670bfebd21441ee716f9bca2c4d2"
+  },
+  "scope": "Exact post-run evidence append; this delta record is itself an additional post-snapshot reporting file, not a tested scientific source."
+}

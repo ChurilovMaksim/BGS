@@ -1,0 +1,45 @@
+{
+  "scope": "Only exact homoclinic H1\u2013H10, inherited method attribution, distributional derivative boundary. No later W/Q/EQ results.",
+  "originals": [
+    {
+      "original_role": "bgs_paired_box_cancellation/exact_homoclinic_potential.md",
+      "public_path": "record/history/2026/homoclinic_20261006/proof_original.md",
+      "sha256": "0efc497da35a1ca67ae7998d274179e632aea4d99a49a3942e875284aea4dac7"
+    },
+    {
+      "original_role": "bgs_exact_homoclinic_review/review.md",
+      "public_path": "record/history/2026/homoclinic_20261006/review_original.md",
+      "sha256": "b562b9b7162b8b35631d4dc376eda3c0ba7718c5eea9376e13b4fb7af479eb25"
+    },
+    {
+      "original_role": "bgs_exact_homoclinic_review/check_exact.py",
+      "public_path": "record/history/2026/homoclinic_20261006/checker_original.py",
+      "sha256": "19b5dbd658d729f1ec6756be2563653e0d6865ce7c7564474ffd20fb97351243"
+    },
+    {
+      "original_role": "bgs_exact_homoclinic_review/check_results.json",
+      "public_path": "record/history/2026/homoclinic_20261006/checks_original.json",
+      "sha256": "f6085a5fa849beaa14f5ae882d06da9947e8e74c1ca892a89c4f846893d98857"
+    },
+    {
+      "original_role": "bgs_paired_box_cancellation/exact_homoclinic_sources.json",
+      "public_path": "record/history/2026/homoclinic_20261006/sources_original.json",
+      "sha256": "3fde628a72d4d1bbda392cfdc31c14a409ffeaf8d546f6eae94c13591a1d4e07"
+    },
+    {
+      "original_role": "bgs_paired_box_cancellation/action_response/homoclinic/result.md",
+      "public_path": "record/history/2026/homoclinic_20261006/first_response_support_original.md",
+      "sha256": "7715f4bafa109780a2957b6af1e9b85b099c0dcb2429024b3ef2719de7c93aa3"
+    }
+  ],
+  "editorial_edits": [
+    "Proof status and relative locators; original bytes retained.",
+    "Curated review replaces execution-machine paths and maps original command honestly.",
+    "Portable checker wraps identical arithmetic in run(), uses explicit failures, stdout output and mapped source checks."
+  ],
+  "curated": {
+    "mathematics/exact_homoclinic_potential.md": "be313de4245d2edd7cdcc2d2142644a09d7b5354469b6fe326cc4226d5e9317d",
+    "record/homoclinic_review.md": "9cc66c87e2193fd832692f00734a2efa7e936c9500a5937ad7520a23d6e30a85",
+    "computations/verification/exact_homoclinic.py": "83f720e5f93ef099c456964732c1a6126f16dc7dd04d1b3bda1b261e50d9c7af"
+  }
+}

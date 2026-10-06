@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "claim_id": "CANDIDATE-A175-FIRST-RAMIFIED-SPECTRAL-CLUSTER",
+  "repository": {
+    "commit": "41a2788ef21e787e983e88a8b58470d104013740",
+    "dirty": true
+  },
+  "command": "python3 independent_cluster_certificate.py",
+  "environment": {
+    "software": [
+      "Python 3.12.14 (independent script: standard library only)"
+    ],
+    "hardware": "x86_64 Linux"
+  },
+  "mathematics": {
+    "assertion_tested": "Seven residue determinants and both derivatives; all 35 Bezout identities; all 35 actual A175 characteristic pi^5 jets; all 35 interblock pi^9 coefficients.",
+    "coefficient_domain": "F5[z]/Phi7(z), then pi^5 and pi^9 truncated polynomial rings",
+    "conventions": "Low-to-high base-5 field encoding; actual q=z*(1+pi)^18, Q=1+pi, h=88, i=2 modulo 5.",
+    "inputs": [
+      "source_snapshot/first_ramified_cluster_split.md",
+      "source_snapshot/pure_five_normalized_spectrum.py",
+      "source_snapshot/reduced_chain_charpolys.py",
+      "source_snapshot/pure_five_normalized_spectrum.json",
+      "source_snapshot/first_spectral_cluster_manifest.json",
+      "source_snapshot/field15625.py",
+      "source_snapshot/ramified_cluster_derivative.json",
+      "source_snapshot/ramified_cluster_derivative.py",
+      "/workspace/shared/BGS/AGENTS.md",
+      "/workspace/shared/BGS/mathematics/frozen_kick_rank_boundary.md",
+      "/workspace/shared/BGS/mathematics/fixed_map_resolvent_frontier.md"
+    ],
+    "bounds": {
+      "base_Leibniz_determinants": 7,
+      "permutations_per_determinant": 120,
+      "self_gcd": 7,
+      "offset_gcd": 7,
+      "pair_gcd": 21,
+      "independent_Bezout_identities": 35,
+      "actual_block_characteristic_pi5_identities": 35,
+      "coefficient_identities": 665,
+      "reconstructed_N175_residue_chain_polynomials": 7,
+      "source_json_matches": true,
+      "interblock_pi9_jets": 35,
+      "internal_interblock_exact_pi_valuation8": 28,
+      "actual_zero_boundary_bonds": 7
+    },
+    "non_claims": [
+      "No uniform 5-adic depth theorem",
+      "No U simplicity",
+      "No BGS",
+      "No formal proof-assistant certificate"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T21:16:29.686239+00:00",
+    "runtime_seconds": 0.45647495300363516,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "independent_cluster_certificate.py",
+      "sha256": "56628ae11e27b44344267b8282a75d6124e77b5333849133f439f9e4c4fa2715"
+    },
+    {
+      "path": "independent_cluster_certificate.json",
+      "sha256": "74d8a4bd5cb78567beffa2ca8c1fa5c57173ab0bc2b739ced8a4a6ac95f2d574"
+    },
+    {
+      "path": "independent_cluster_certificate.log",
+      "sha256": "2b80ed72eccfa31173bdd8322bfa4fb8d11646614dc190a53d48917d874183ce"
+    },
+    {
+      "path": "frozen_audit.md",
+      "sha256": "7d9853493c291e92ea9d2e4e058593523ef9d2f957d93c6f2b0d8e55c97db1c9"
+    }
+  ],
+  "checks": [
+    "base_Leibniz_determinants",
+    "permutations_per_determinant",
+    "self_gcd",
+    "offset_gcd",
+    "pair_gcd",
+    "independent_Bezout_identities",
+    "actual_block_characteristic_pi5_identities",
+    "coefficient_identities",
+    "reconstructed_N175_residue_chain_polynomials",
+    "source_json_matches",
+    "interblock_pi9_jets",
+    "internal_interblock_exact_pi_valuation8",
+    "actual_zero_boundary_bonds"
+  ],
+  "result": "Implementation and finite assertion independently verified in the stated bounded range; analytic completion supplied in frozen_audit.md.",
+  "residual_risks": [
+    "No proof-assistant formalization or external referee review.",
+    "The finite checks do not establish any statement for e>=3."
+  ],
+  "input_sha256": {
+    "source_snapshot/first_ramified_cluster_split.md": "811dd1b7ef91ecddf46d203e81860c813e4aca020a22697a337e5a96071b9fc7",
+    "source_snapshot/pure_five_normalized_spectrum.py": "a23c59070f523d45d98c79cc7d97615824e7f0e22ce626c3712c8d176957a515",
+    "source_snapshot/reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "source_snapshot/pure_five_normalized_spectrum.json": "4545112d191927b93bdce10abc7f33c9b8fe60693fdf8d5e8202d0744703c5b8",
+    "source_snapshot/first_spectral_cluster_manifest.json": "b89be14d9011cd0e41a2dcc55535d44e195d16100ea79266ffc68813a1979685",
+    "source_snapshot/field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "source_snapshot/ramified_cluster_derivative.json": "0f43d4f7e0eb665bc97cae0f44a170f7ea954f56fa72729892523e71d7f77744",
+    "source_snapshot/ramified_cluster_derivative.py": "06f06d5981dd2aca9661c8fc45b1a00f9afc170781c6609ed1c526ef59222c7c",
+    "/workspace/shared/BGS/AGENTS.md": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+    "/workspace/shared/BGS/mathematics/frozen_kick_rank_boundary.md": "fcbc96473a964bd5272dab7676a2da5dcffd4f3afe1e8df5768b8e2356770e17",
+    "/workspace/shared/BGS/mathematics/fixed_map_resolvent_frontier.md": "5c705dca2499f432630faf863e6649e30f742fca2c5de096f23cb46654b78e62"
+  },
+  "resource_scope": "Deterministic bounded standard-library run, no random sampling; no OS resource caps were installed."
+}

@@ -6,9 +6,14 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  F1 --> F25[BGS-FM-025 pure-five kick simplicity; bounded U companion]
+  F8 --> F25
+  F1 --> T19[BGS-TRACE-019 selected full-weight family]
+  T17 --> T19
+  T18 --> T19
   F1 --> T18[BGS-TRACE-018 phase-only locality and Frostman averages]
   F12 --> T18
-  F1 --> F24[BGS-FM-024 actual common commutant for odd 49-divisible N, 5 not dividing N]
+  F1 --> F24[BGS-FM-024 actual pair commutant for odd N except7]
   F1 --> T17[BGS-TRACE-017 fixed-order complete WKB reduction]
   T1 --> T17
   T2 --> T17

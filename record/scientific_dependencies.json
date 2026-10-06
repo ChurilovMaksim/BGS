@@ -54,6 +54,7 @@
     "BGS-FM-022",
     "BGS-FM-023",
     "BGS-FM-024",
+    "BGS-FM-025",
     "BGS-FORMAL-001",
     "BGS-FORMAL-002",
     "BGS-FORMAL-003",
@@ -86,7 +87,8 @@
     "BGS-TRACE-015",
     "BGS-TRACE-016",
     "BGS-TRACE-017",
-    "BGS-TRACE-018"
+    "BGS-TRACE-018",
+    "BGS-TRACE-019"
   ],
   "edges": [
     {
@@ -757,6 +759,31 @@
     {
       "from": "BGS-FM-012",
       "to": "BGS-TRACE-018",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-FM-025",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-008",
+      "to": "BGS-FM-025",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-FM-001",
+      "to": "BGS-TRACE-019",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-017",
+      "to": "BGS-TRACE-019",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-018",
+      "to": "BGS-TRACE-019",
       "type": "scientific-prerequisite"
     }
   ],

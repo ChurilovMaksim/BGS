@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-06",
+  "verdict": "proved as written",
+  "claim": "Actual A_(7*5^e) has simple complex spectrum for every integer e>=1.",
+  "source": "/workspace/shared/bgs_seven_adic_resume/spectral_extension/pure_five_uniform_cluster_candidate_v2.md",
+  "source_sha256": "b3177dc35cf63a0ee49fd462a2a85c80333ea9c313c93084d7b23840c4631199",
+  "snapshot_sha256": "b3177dc35cf63a0ee49fd462a2a85c80333ea9c313c93084d7b23840c4631199",
+  "audit": "frozen_audit_v2.md",
+  "audit_sha256": "3d2587a7124da0a1b7eddf60a167b4926070f92841609cc3f2948935d63dfdec",
+  "previous_v1_audit_sha256": "b69cd1a849ccbd052c29b7db4e425778b6a0bd4a8eb6962245514c670949c8ed",
+  "inherited_bounded_input": {
+    "candidate_sha256": "811dd1b7ef91ecddf46d203e81860c813e4aca020a22697a337e5a96071b9fc7",
+    "independent_audit_sha256": "7d9853493c291e92ea9d2e4e058593523ef9d2f957d93c6f2b0d8e55c97db1c9"
+  },
+  "canonical_files_modified": false,
+  "finite_certificates_independently_recomputed_in_this_audit": false,
+  "new_load_bearing_external_sources": [],
+  "out_of_scope": [
+    "U simplicity",
+    "other N families",
+    "quantitative complex gaps",
+    "BGS",
+    "full formalization"
+  ]
+}

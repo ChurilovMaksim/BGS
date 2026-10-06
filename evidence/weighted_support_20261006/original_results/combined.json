@@ -1,0 +1,523 @@
+{
+  "arithmetic": "exact integer/Fraction; independent implementation",
+  "scope": "m=1..64; 49 lifted label samples per m; all cyclic/negative pulse orbit points; odd-N test list is finite",
+  "identities_checked": 18816,
+  "manifest_entries_verified": 20,
+  "mismatches": [],
+  "rows": [
+    {
+      "m": 1,
+      "D": 4,
+      "positive_count": 1,
+      "negative_overlap": 1,
+      "union_count": 1,
+      "pulse_q": "1"
+    },
+    {
+      "m": 2,
+      "D": 32,
+      "positive_count": 2,
+      "negative_overlap": 0,
+      "union_count": 4,
+      "pulse_q": "3/4"
+    },
+    {
+      "m": 3,
+      "D": 196,
+      "positive_count": 3,
+      "negative_overlap": 0,
+      "union_count": 6,
+      "pulse_q": "5/7"
+    },
+    {
+      "m": 4,
+      "D": 1152,
+      "positive_count": 4,
+      "negative_overlap": 0,
+      "union_count": 8,
+      "pulse_q": "17/24"
+    },
+    {
+      "m": 5,
+      "D": 6724,
+      "positive_count": 5,
+      "negative_overlap": 0,
+      "union_count": 10,
+      "pulse_q": "29/41"
+    },
+    {
+      "m": 6,
+      "D": 39200,
+      "positive_count": 6,
+      "negative_overlap": 0,
+      "union_count": 12,
+      "pulse_q": "99/140"
+    },
+    {
+      "m": 7,
+      "D": 228484,
+      "positive_count": 7,
+      "negative_overlap": 0,
+      "union_count": 14,
+      "pulse_q": "169/239"
+    },
+    {
+      "m": 8,
+      "D": 1331712,
+      "positive_count": 8,
+      "negative_overlap": 0,
+      "union_count": 16,
+      "pulse_q": "577/816"
+    },
+    {
+      "m": 9,
+      "D": 7761796,
+      "positive_count": 9,
+      "negative_overlap": 0,
+      "union_count": 18,
+      "pulse_q": "985/1393"
+    },
+    {
+      "m": 10,
+      "D": 45239072,
+      "positive_count": 10,
+      "negative_overlap": 0,
+      "union_count": 20,
+      "pulse_q": "3363/4756"
+    },
+    {
+      "m": 11,
+      "D": 263672644,
+      "positive_count": 11,
+      "negative_overlap": 0,
+      "union_count": 22,
+      "pulse_q": "5741/8119"
+    },
+    {
+      "m": 12,
+      "D": 1536796800,
+      "positive_count": 12,
+      "negative_overlap": 0,
+      "union_count": 24,
+      "pulse_q": "19601/27720"
+    },
+    {
+      "m": 13,
+      "D": 8957108164,
+      "positive_count": 13,
+      "negative_overlap": 0,
+      "union_count": 26,
+      "pulse_q": "33461/47321"
+    },
+    {
+      "m": 14,
+      "D": 52205852192,
+      "positive_count": 14,
+      "negative_overlap": 0,
+      "union_count": 28,
+      "pulse_q": "114243/161564"
+    },
+    {
+      "m": 15,
+      "D": 304278004996,
+      "positive_count": 15,
+      "negative_overlap": 0,
+      "union_count": 30,
+      "pulse_q": "195025/275807"
+    },
+    {
+      "m": 16,
+      "D": 1773462177792,
+      "positive_count": 16,
+      "negative_overlap": 0,
+      "union_count": 32,
+      "pulse_q": "665857/941664"
+    },
+    {
+      "m": 17,
+      "D": 10336495061764,
+      "positive_count": 17,
+      "negative_overlap": 0,
+      "union_count": 34,
+      "pulse_q": "1136689/1607521"
+    },
+    {
+      "m": 18,
+      "D": 60245508192800,
+      "positive_count": 18,
+      "negative_overlap": 0,
+      "union_count": 36,
+      "pulse_q": "3880899/5488420"
+    },
+    {
+      "m": 19,
+      "D": 351136554095044,
+      "positive_count": 19,
+      "negative_overlap": 0,
+      "union_count": 38,
+      "pulse_q": "6625109/9369319"
+    },
+    {
+      "m": 20,
+      "D": 2046573816377472,
+      "positive_count": 20,
+      "negative_overlap": 0,
+      "union_count": 40,
+      "pulse_q": "22619537/31988856"
+    },
+    {
+      "m": 21,
+      "D": 11928306344169796,
+      "positive_count": 21,
+      "negative_overlap": 0,
+      "union_count": 42,
+      "pulse_q": "38613965/54608393"
+    },
+    {
+      "m": 22,
+      "D": 69523264248641312,
+      "positive_count": 22,
+      "negative_overlap": 0,
+      "union_count": 44,
+      "pulse_q": "131836323/186444716"
+    },
+    {
+      "m": 23,
+      "D": 405211279147678084,
+      "positive_count": 23,
+      "negative_overlap": 0,
+      "union_count": 46,
+      "pulse_q": "225058681/318281039"
+    },
+    {
+      "m": 24,
+      "D": 2361744410637427200,
+      "positive_count": 24,
+      "negative_overlap": 0,
+      "union_count": 48,
+      "pulse_q": "768398401/1086679440"
+    },
+    {
+      "m": 25,
+      "D": 13765255184676885124,
+      "positive_count": 25,
+      "negative_overlap": 0,
+      "union_count": 50,
+      "pulse_q": "1311738121/1855077841"
+    },
+    {
+      "m": 26,
+      "D": 80229786697423883552,
+      "positive_count": 26,
+      "negative_overlap": 0,
+      "union_count": 52,
+      "pulse_q": "4478554083/6333631924"
+    },
+    {
+      "m": 27,
+      "D": 467613464999866416196,
+      "positive_count": 27,
+      "negative_overlap": 0,
+      "union_count": 54,
+      "pulse_q": "7645370045/10812186007"
+    },
+    {
+      "m": 28,
+      "D": 2725451003301774613632,
+      "positive_count": 28,
+      "negative_overlap": 0,
+      "union_count": 56,
+      "pulse_q": "26102926097/36915112104"
+    },
+    {
+      "m": 29,
+      "D": 15885092554810781265604,
+      "positive_count": 29,
+      "negative_overlap": 0,
+      "union_count": 58,
+      "pulse_q": "44560482149/63018038201"
+    },
+    {
+      "m": 30,
+      "D": 92585104325562912980000,
+      "positive_count": 30,
+      "negative_overlap": 0,
+      "union_count": 60,
+      "pulse_q": "152139002499/215157040700"
+    },
+    {
+      "m": 31,
+      "D": 539625533398566696614404,
+      "positive_count": 31,
+      "negative_overlap": 0,
+      "union_count": 62,
+      "pulse_q": "259717522849/367296043199"
+    },
+    {
+      "m": 32,
+      "D": 3145168096065837266706432,
+      "positive_count": 32,
+      "negative_overlap": 0,
+      "union_count": 64,
+      "pulse_q": "886731088897/1254027132096"
+    },
+    {
+      "m": 33,
+      "D": 18331383042996456903624196,
+      "positive_count": 33,
+      "negative_overlap": 0,
+      "union_count": 66,
+      "pulse_q": "1513744654945/2140758220993"
+    },
+    {
+      "m": 34,
+      "D": 106843130161912904155038752,
+      "positive_count": 34,
+      "negative_overlap": 0,
+      "union_count": 68,
+      "pulse_q": "5168247530883/7309005751876"
+    },
+    {
+      "m": 35,
+      "D": 622727397928480968026608324,
+      "positive_count": 35,
+      "negative_overlap": 0,
+      "union_count": 70,
+      "pulse_q": "8822750406821/12477253282759"
+    },
+    {
+      "m": 36,
+      "D": 3629521257408972904004611200,
+      "positive_count": 36,
+      "negative_overlap": 0,
+      "union_count": 72,
+      "pulse_q": "30122754096401/42600007379160"
+    },
+    {
+      "m": 37,
+      "D": 21154400146525356456001058884,
+      "positive_count": 37,
+      "negative_overlap": 0,
+      "union_count": 74,
+      "pulse_q": "51422757785981/72722761475561"
+    },
+    {
+      "m": 38,
+      "D": 123296879621743165832001742112,
+      "positive_count": 38,
+      "negative_overlap": 0,
+      "union_count": 76,
+      "pulse_q": "175568277047523/248291038523084"
+    },
+    {
+      "m": 39,
+      "D": 718626877583933638536009393796,
+      "positive_count": 39,
+      "negative_overlap": 0,
+      "union_count": 78,
+      "pulse_q": "299713796309065/423859315570607"
+    },
+    {
+      "m": 40,
+      "D": 4188464385881858665384054620672,
+      "positive_count": 40,
+      "negative_overlap": 0,
+      "union_count": 80,
+      "pulse_q": "1023286908188737/1447146223759344"
+    },
+    {
+      "m": 41,
+      "D": 24412159437707218353768318330244,
+      "positive_count": 41,
+      "negative_overlap": 0,
+      "union_count": 82,
+      "pulse_q": "1746860020068409/2470433131948081"
+    },
+    {
+      "m": 42,
+      "D": 142284492240361451457225855360800,
+      "positive_count": 42,
+      "negative_overlap": 0,
+      "union_count": 84,
+      "pulse_q": "5964153172084899/8434586304032980"
+    },
+    {
+      "m": 43,
+      "D": 829294794004461490389586813834564,
+      "positive_count": 43,
+      "negative_overlap": 0,
+      "union_count": 86,
+      "pulse_q": "10181446324101389/14398739476117879"
+    },
+    {
+      "m": 44,
+      "D": 4833484271786407490880295027646592,
+      "positive_count": 44,
+      "negative_overlap": 0,
+      "union_count": 88,
+      "pulse_q": "34761632124320657/49160371600438536"
+    },
+    {
+      "m": 45,
+      "D": 28171610836713983454892183352044996,
+      "positive_count": 45,
+      "negative_overlap": 0,
+      "union_count": 90,
+      "pulse_q": "59341817924539925/83922003724759193"
+    },
+    {
+      "m": 46,
+      "D": 164196180748497493238472805084623392,
+      "positive_count": 46,
+      "negative_overlap": 0,
+      "union_count": 92,
+      "pulse_q": "202605639573839043/286527643298598236"
+    },
+    {
+      "m": 47,
+      "D": 957005473654270975975944647155695364,
+      "positive_count": 47,
+      "negative_overlap": 0,
+      "union_count": 94,
+      "pulse_q": "345869461223138161/489133282872437279"
+    },
+    {
+      "m": 48,
+      "D": 5577836661177128362617195077849548800,
+      "positive_count": 48,
+      "negative_overlap": 0,
+      "union_count": 96,
+      "pulse_q": "1180872205318713601/1670005488191150880"
+    },
+    {
+      "m": 49,
+      "D": 32510014493408499199727225819941597444,
+      "positive_count": 49,
+      "negative_overlap": 0,
+      "union_count": 98,
+      "pulse_q": "2015874949414289041/2850877693509864481"
+    },
+    {
+      "m": 50,
+      "D": 189482250299273866835746159841800035872,
+      "positive_count": 50,
+      "negative_overlap": 0,
+      "union_count": 100,
+      "pulse_q": "6882627592338442563/9733505285848307044"
+    },
+    {
+      "m": 51,
+      "D": 1104383487302234701814749733230858617796,
+      "positive_count": 51,
+      "negative_overlap": 0,
+      "union_count": 102,
+      "pulse_q": "11749380235262596085/16616132878186749607"
+    },
+    {
+      "m": 52,
+      "D": 6436818673514134344052752239543351670912,
+      "positive_count": 52,
+      "negative_overlap": 0,
+      "union_count": 104,
+      "pulse_q": "40114893348711941777/56731026226898691384"
+    },
+    {
+      "m": 53,
+      "D": 37516528553782571362501763704029251407684,
+      "positive_count": 53,
+      "negative_overlap": 0,
+      "union_count": 106,
+      "pulse_q": "68480406462161287469/96845919575610633161"
+    },
+    {
+      "m": 54,
+      "D": 218662352649181293830957829984632156775200,
+      "positive_count": 54,
+      "negative_overlap": 0,
+      "union_count": 108,
+      "pulse_q": "233806732499933208099/330652652075543841260"
+    },
+    {
+      "m": 55,
+      "D": 1274457587341305191623245216203763689243524,
+      "positive_count": 55,
+      "negative_overlap": 0,
+      "union_count": 110,
+      "pulse_q": "399133058537705128729/564459384575477049359"
+    },
+    {
+      "m": 56,
+      "D": 7428083171398649855908513467237949978685952,
+      "positive_count": 56,
+      "negative_overlap": 0,
+      "union_count": 112,
+      "pulse_q": "1362725501650887306817/1927184886226364356176"
+    },
+    {
+      "m": 57,
+      "D": 43294041441050593943827835587223936182872196,
+      "positive_count": 57,
+      "negative_overlap": 0,
+      "union_count": 114,
+      "pulse_q": "2326317944764069484905/3289910387877251662993"
+    },
+    {
+      "m": 58,
+      "D": 252336165474904913807058500056105667118547232,
+      "positive_count": 58,
+      "negative_overlap": 0,
+      "union_count": 116,
+      "pulse_q": "7942546277405390632803/11232456665282642295796"
+    },
+    {
+      "m": 59,
+      "D": 1470722951408378888898523164749410066528411204,
+      "positive_count": 59,
+      "negative_overlap": 0,
+      "union_count": 118,
+      "pulse_q": "13558774610046711780701/19175002942688032928599"
+    },
+    {
+      "m": 60,
+      "D": 8572001542975368419584080488440354732051920000,
+      "positive_count": 60,
+      "negative_overlap": 0,
+      "union_count": 120,
+      "pulse_q": "46292552162781456490001/65467555105469489418600"
+    },
+    {
+      "m": 61,
+      "D": 49961286306443831628605959765892718325783108804,
+      "positive_count": 61,
+      "negative_overlap": 0,
+      "union_count": 122,
+      "pulse_q": "79026329715516201199301/111760107268250945908601"
+    },
+    {
+      "m": 62,
+      "D": 291195716295687621352051678106915955222646732832,
+      "positive_count": 62,
+      "negative_overlap": 0,
+      "union_count": 124,
+      "pulse_q": "269812766699283348307203/381572873967534294215804"
+    },
+    {
+      "m": 63,
+      "D": 1697213011467681896483704108875603013010097288196,
+      "positive_count": 63,
+      "negative_overlap": 0,
+      "union_count": 126,
+      "pulse_q": "460599203683050495415105/651385640666817642523007"
+    },
+    {
+      "m": 64,
+      "D": 9892082352510403757550172975146702122837936996352,
+      "positive_count": 64,
+      "negative_overlap": 0,
+      "union_count": 128,
+      "pulse_q": "1572584048032918633353217/2223969688699736275876224"
+    }
+  ],
+  "editorial_note": "Real-lift Q(Sz)-Q(z) has mixed coefficient -8; candidate -10 remains congruent modulo integers.",
+  "nonclaims": "Not exhaustive over all label pairs, not analytic or asymptotic verification."
+}

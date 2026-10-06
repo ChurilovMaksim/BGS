@@ -69,3 +69,7 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Exceptional-seven original review](exceptional_seven_20261006/REPORT.md): only the characteristic-zero N7 consequence is promoted; other spectral pivots remain outside this batch.
 
 - [Paired-phase/higher-seven final validation](../../../evidence/executions/20261006/paired-higher-validation/README.md): post-run receipts for the 2,038-file snapshot; 183/183 workspace, 28/28 supplement, 55/55 maintenance in both modes, 268-page manuscript.
+
+- [Cohesive spectral and weighted-family integration](../../cohesive_integration_20261006.md): scoped theorem owners, source corrections and execution boundary.
+
+- [Cohesive spectral/selected-family final validation](../../../evidence/executions/20261006/cohesive-validation/README.md): post-run receipts for the 2,205-file snapshot; 186/186 workspace, 28/28 supplement, 58/58 maintenance in both modes, 270-page manuscript.

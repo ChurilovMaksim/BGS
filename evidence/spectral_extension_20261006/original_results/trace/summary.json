@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "independence": "No author code imported or called. Rational trig expansion; integer divisor-product cyclotomics; characteristic-zero direct Jacobi matrices.",
+  "modes": 32,
+  "pairs": 1024,
+  "support": [
+    -36,
+    648
+  ],
+  "degree": 684,
+  "terms": 143,
+  "content": 2,
+  "coefficient_l1": 40256624,
+  "root_bound": 1894,
+  "eligible_orders": 446,
+  "eligible_orders_divisible_by_7": 73,
+  "surviving_orders": [
+    1,
+    7
+  ],
+  "multiplicities": {
+    "1": 2,
+    "7": 2
+  },
+  "matrix_dimensions": [
+    3,
+    5,
+    7,
+    9,
+    21,
+    25,
+    27,
+    35,
+    45,
+    49,
+    63,
+    77,
+    105,
+    121,
+    125
+  ],
+  "runtime_seconds": 6.746447324752808,
+  "non_claims": [
+    "No higher-power trace result",
+    "No spectral simplicity",
+    "No quantitative lower bound",
+    "No BGS result",
+    "No formalization"
+  ]
+}

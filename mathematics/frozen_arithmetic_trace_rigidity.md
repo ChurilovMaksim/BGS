@@ -167,3 +167,10 @@ This corollary concerns the **finite Weyl normalizer only** at
 \(7\mid N\); it does not classify the entire complex commutant.
 No part of this theorem controls a Heisenberg-scale trace sum or the
 microscopic CUE law.
+
+## Separately reviewed one-step companion
+
+[Uniform squared-trace transcendence](uniform_trace_square_transcendence.md)
+now covers every odd N>=3 except7 for one-step U(t) at nonzero real algebraic
+t. This companion leaves the all-power theorem above and its review boundary
+unchanged; no higher-power seven-divisible transcendence is inferred.

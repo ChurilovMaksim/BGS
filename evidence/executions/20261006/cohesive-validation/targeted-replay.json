@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Final canonical copied-byte sources in normal and optimized Python; only spectral timing/version metadata excluded from comparison.",
+  "checks": [
+    {
+      "name": "exact_homoclinic",
+      "normal_optimized_mathematics_identical": true,
+      "normal_sha256": "50143d1cce568f6b6bae701a4e7ab71ed5d15e3321fde9509549873ab0a267f5",
+      "optimized_sha256": "50143d1cce568f6b6bae701a4e7ab71ed5d15e3321fde9509549873ab0a267f5"
+    },
+    {
+      "name": "spectral_extensions",
+      "normal_optimized_mathematics_identical": true,
+      "normal_sha256": "c6edc982c67a9d13678272e8fbc60176a372549744c431118bed42b496361961",
+      "optimized_sha256": "0b0be722faad03aded487875a47259954ccb26b25177467654c6e0d7af0bbfb2"
+    },
+    {
+      "name": "weighted_periodic_support",
+      "normal_optimized_mathematics_identical": true,
+      "normal_sha256": "2bd8f7b7c265c42cbc7340cc86585cb7bb2d2cb6a0b4ba06eda3dbd2f90930a7",
+      "optimized_sha256": "2bd8f7b7c265c42cbc7340cc86585cb7bb2d2cb6a0b4ba06eda3dbd2f90930a7"
+    }
+  ]
+}

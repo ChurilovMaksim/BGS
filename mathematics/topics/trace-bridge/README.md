@@ -59,3 +59,11 @@ Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaus
 ## Actual paired-phase route
 
 [Exact physical label quotient](../../paired_character_identity.md) → [fixed-tau winding-defect locality](../../winding_defect_locality.md) → [phase-map monotonicity/Frostman averages](../../phase_map_frostman.md), TRACE-018. Only the action component and the stated Fourier-index square average are controlled; complete quantum weights and signed BGS comparison remain open.
+
+## Selected full-weight family
+
+[TRACE-019](../../selected_weighted_coefficient.md) controls a fixed-J selected
+homoclinic coefficient and its once-counted cyclic/negative family. The
+[stationary residual](../../stationary_cyclic_residual.md) retains the signed
+complement and only unremoved torsion portions. Detailed W/Q/EQ and review
+links are in the theorem; full signed BGS remains open.

@@ -488,8 +488,13 @@ formalized mathematics. Full analytic formalization remains open.
 
 ### Closed actual pair-commutant classification
 
-[FM-024](actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. Seven-divisible spectral simplicity, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
+[FM-024](actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. General seven-divisible U simplicity beyond the four certified cases, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
 
-### Remaining weighted paired-character estimate
+### Remaining signed complement
 
-[TRACE-018](winding_defect_locality.md) and its [Frostman refinement](phase_map_frostman.md) control one actual action component and an averaged Fourier-square bound. Pointwise Fourier decay of the phase measure, its complete quantum-weight extension, other displacements and torsion sectors, and the full signed displacement/time sum remain unproved. Averaging over dimensions cannot replace fixed-dimension time averaging or every-odd-dimension TRACE-005.
+[TRACE-019](selected_weighted_coefficient.md) now controls the selected full-weight
+fixed-J family. Its [exact stationary residual](stationary_cyclic_residual.md)
+removes disjoint cyclic and homoclinic ordered pairs once; only unremoved
+torsion portions remain. The complete signed residual and plateau correction,
+other displacements and higher factorial orders are open. The phase-only
+TRACE-018 averaged Fourier-square bound is not fixed-N time averaging.

@@ -1,7 +1,7 @@
 {
   "schema": "bgs-bibliographic-metadata-audit-v1",
   "checked_on": "2026-10-06",
-  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit. Constructive extension: one scoped Kolesnikov–Milman box inequality; 35 registered references.",
+  "scope": "34 registered external references: initial 28 plus six role-qualified returns/Pell sources. Original and supplemental reviews distinguish proof input, internal reproof, law identification and attribution. Not a corpus-wide novelty or full external-proof audit. Constructive extension: one scoped Kolesnikov–Milman box inequality; 35 registered references. Cohesive extension adds the verified Mane1981+mandatory1983errata bundle: 36 references; existing source observations remain intact.",
   "non_claim": "Offline PASS certifies agreement with reviewed cached metadata and coverage accounting; it is not theorem applicability, independent source authentication, or an asymptotic proof.",
   "records": [
     {
@@ -1097,6 +1097,7 @@
         "BGS-FM-011",
         "BGS-FM-017",
         "BGS-FM-024",
+        "BGS-FM-025",
         "BGS-LOOP-001",
         "BGS-RES-007",
         "BGS-TRACE-009",
@@ -1233,10 +1234,12 @@
         "pinned_version": "Author-hosted scan of 1978 publication",
         "locator": "Theorem 2, printed pp. 84-85, PDF pp. 2-3",
         "dependency_role": null,
-        "mapping": "For every invariant probability on the smooth area-preserving Anosov two-torus, entropy is at most the integral of the one-dimensional unstable potential; hence P(-phi)<=0.",
+        "mapping": "For every invariant probability on the smooth area-preserving Anosov two-torus, entropy is at most the integral of the one-dimensional unstable potential; hence P(-phi)<=0. Entropy upper bound for every invariant measure of the actual smooth area-preserving Anosov map; combined with verified Mane1981+1983errata and Gibbs uniqueness to identify pressure-zero area, not a quantum trace theorem.",
         "project_sources": [
           "mathematics/nonlinear_bracket_pressure.md",
-          "record/nonlinear_pressure_review_20260923.md"
+          "record/nonlinear_pressure_review_20260923.md",
+          "mathematics/weighted_periodic_equidistribution.md",
+          "record/weighted_periodic_review.md"
         ],
         "additional_uses": null
       },
@@ -1274,10 +1277,13 @@
       "inherited_project_mapping": "For every invariant probability on the smooth area-preserving Anosov two-torus, entropy is at most the integral of the one-dimensional unstable potential; hence P(-phi)<=0.",
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
-        "record/nonlinear_pressure_review_20260923.md"
+        "record/nonlinear_pressure_review_20260923.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "record/weighted_periodic_review.md"
       ],
       "direct_claim_dependencies": [
-        "BGS-FM-006"
+        "BGS-FM-006",
+        "BGS-TRACE-019"
       ],
       "transitive_claim_dependencies": [
         "BGS-FM-018",
@@ -1292,7 +1298,15 @@
           "source": "mathematics/nonlinear_bracket_pressure.md",
           "role": "existing_registered_use"
         }
-      ]
+      ],
+      "cohesive_application_review_20261006": {
+        "description": "Entropy upper bound for every invariant measure of the actual smooth area-preserving Anosov map; combined with verified Mane1981+1983errata and Gibbs uniqueness to identify pressure-zero area, not a quantum trace theorem.",
+        "review_paths": [
+          "mathematics/weighted_periodic_equidistribution.md",
+          "record/weighted_periodic_review.md"
+        ],
+        "boundary": "New scoped application review; all previous source observations, hashes and application statuses retained."
+      }
     },
     {
       "id": "EXT-PP-1990",
@@ -1307,13 +1321,16 @@
         "pinned_version": "Published 1990 SMF PDF",
         "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
         "dependency_role": null,
-        "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf.",
+        "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf. Norm-uniform weighted periodic transfer: Proposition1.2 printed14–16, Lemma5.3/Corollary5.3.1 printed78–80, proof of Theorem5.5(ii) printed81–84, Proposition4.10 printed59–60, AppendixIII.3 printed227–230 and III.9–III.11 printed239–240. Complex-potential ball and Cauchy differentiation plus direct geometric boundary removal apply to N-dependent half-Holder tests; fixed points counted once, no primitive-orbit normalization.",
         "project_sources": [
           "mathematics/nonlinear_bracket_pressure.md",
           "record/nonlinear_pressure_review_20260923.md",
           "mathematics/frozen_operator_transfer_coercivity.md",
           "literature/frozen_operator_transfer_sources_20261006.md",
-          "mathematics/polar_wkb_quantization_stability.md"
+          "mathematics/polar_wkb_quantization_stability.md",
+          "mathematics/weighted_periodic_equidistribution.md",
+          "mathematics/selected_weighted_coefficient.md",
+          "record/weighted_periodic_review.md"
         ],
         "additional_uses": null
       },
@@ -1379,11 +1396,16 @@
         "mathematics/nonlinear_bracket_pressure.md",
         "record/nonlinear_pressure_review_20260923.md",
         "mathematics/frozen_operator_transfer_coercivity.md",
-        "literature/frozen_operator_transfer_sources_20261006.md"
+        "literature/frozen_operator_transfer_sources_20261006.md",
+        "mathematics/polar_wkb_quantization_stability.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/selected_weighted_coefficient.md",
+        "record/weighted_periodic_review.md"
       ],
       "direct_claim_dependencies": [
         "BGS-FM-006",
-        "BGS-FM-018"
+        "BGS-FM-018",
+        "BGS-TRACE-019"
       ],
       "transitive_claim_dependencies": [
         "BGS-FM-019",
@@ -1403,7 +1425,16 @@
           "source": "mathematics/frozen_operator_transfer_coercivity.md",
           "role": "existing_registered_use"
         }
-      ]
+      ],
+      "cohesive_application_review_20261006": {
+        "description": "Norm-uniform weighted periodic transfer: Proposition1.2 printed14–16, Lemma5.3/Corollary5.3.1 printed78–80, proof of Theorem5.5(ii) printed81–84, Proposition4.10 printed59–60, AppendixIII.3 printed227–230 and III.9–III.11 printed239–240. Complex-potential ball and Cauchy differentiation plus direct geometric boundary removal apply to N-dependent half-Holder tests; fixed points counted once, no primitive-orbit normalization.",
+        "review_paths": [
+          "mathematics/weighted_periodic_equidistribution.md",
+          "mathematics/selected_weighted_coefficient.md",
+          "record/weighted_periodic_review.md"
+        ],
+        "boundary": "New scoped application review; all previous source observations, hashes and application statuses retained."
+      }
     },
     {
       "id": "EXT-POPESCU-2023",
@@ -1417,7 +1448,7 @@
         "pinned_version": "v2, 17 September 2023",
         "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
         "dependency_role": null,
-        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input.",
+        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion.",
         "project_sources": [
           "mathematics/frozen_algebraic_spectral_simplicity.md",
           "mathematics/frozen_common_antireversor_certificate.md",
@@ -1425,7 +1456,11 @@
           "mathematics/arithmetic_word_expansion_obstruction.md",
           "literature/expansion_wavepacket_sources_20261004.md",
           "mathematics/dyson_relaxation_obstruction.md",
-          "mathematics/actual_seven_primary_commutant.md"
+          "mathematics/actual_seven_primary_commutant.md",
+          "mathematics/finite_seven_spectral_pivots.md",
+          "mathematics/uniform_trace_square_transcendence.md",
+          "record/finite_seven_pivots_review.md",
+          "record/trace_variance_review.md"
         ],
         "additional_uses": null
       },
@@ -1491,7 +1526,12 @@
         "record/frozen_algebraic_review_20260924.md",
         "mathematics/arithmetic_word_expansion_obstruction.md",
         "literature/expansion_wavepacket_sources_20261004.md",
-        "mathematics/dyson_relaxation_obstruction.md"
+        "mathematics/dyson_relaxation_obstruction.md",
+        "mathematics/actual_seven_primary_commutant.md",
+        "mathematics/finite_seven_spectral_pivots.md",
+        "mathematics/uniform_trace_square_transcendence.md",
+        "record/finite_seven_pivots_review.md",
+        "record/trace_variance_review.md"
       ],
       "direct_claim_dependencies": [
         "BGS-FLOW-013",
@@ -1499,6 +1539,7 @@
         "BGS-FM-009",
         "BGS-FM-010",
         "BGS-FM-024",
+        "BGS-FM-025",
         "BGS-TRACE-013"
       ],
       "transitive_claim_dependencies": [
@@ -1554,6 +1595,16 @@
         "scope": "Scoped internal coefficient-separation check of the FM-024 corollary, using existing source theorem; original source review/application status retained.",
         "proof": "mathematics/actual_seven_primary_commutant.md#6-algebraic-entry-commuters-of-the-literal-propagator",
         "non_claim": "No spectral simplicity or quantitative cancellation."
+      },
+      "cohesive_application_review_20261006": {
+        "description": "Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion.",
+        "review_paths": [
+          "mathematics/finite_seven_spectral_pivots.md",
+          "mathematics/uniform_trace_square_transcendence.md",
+          "record/finite_seven_pivots_review.md",
+          "record/trace_variance_review.md"
+        ],
+        "boundary": "New scoped application review; all previous source observations, hashes and application statuses retained."
       }
     },
     {
@@ -3797,6 +3848,68 @@
       "direct_claim_dependencies": [],
       "transitive_claim_dependencies": [],
       "dependency_coverage_note": "Supporting local-box theorem is not a registered claim; TRACE-017 elementary perturbation proof does not depend on this inequality."
+    },
+    {
+      "id": "EXT-MANE-1981",
+      "checked_on": "2026-10-06",
+      "accepted_registry_fields": {
+        "title": "A proof of Pesin's formula, with mandatory 1983 errata",
+        "authors": [
+          "Ricardo Mañé"
+        ],
+        "identifier": "ETDS1(1981),95–102, DOI10.1017/S0143385700001188; Errata ETDS3(1983),159–160, DOI10.1017/S0143385700001863",
+        "pinned_version": "Published Cambridge 1981 PDF together with complete published1983errata",
+        "locator": "1981 printedp95 equation(2); mandatory1983errata printedpp159–160, all three items",
+        "dependency_role": null,
+        "mapping": "For actual smooth area-preserving Anosov G on the compact boundaryless torus, normalized area is absolutely continuous and invariant; smooth DG is Holder. The entropy formula gives h_area(G)=integral log JuG, without ergodicity. With Ruelle and mixing Gibbs uniqueness this identifies the pressure-zero area measure used for norm-uniform weighted periodic EQ. Errata correct intermediate estimates and add no hypothesis to equation(2).",
+        "project_sources": [
+          "mathematics/weighted_periodic_equidistribution.md",
+          "mathematics/selected_weighted_coefficient.md",
+          "literature/smooth_area_entropy_supplement_20261006.md",
+          "record/weighted_periodic_review.md"
+        ],
+        "additional_uses": null
+      },
+      "identity_status": "verified",
+      "field_coverage": {
+        "title": "verified",
+        "authors": "verified",
+        "identifier": "verified",
+        "version_date": "publication_identity_or_undated_scan_only",
+        "theorem_locator": "verified"
+      },
+      "source_observations": {
+        "primary_sources": [
+          {
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99FF7E606E946F18BE42244090483E70/S0143385700001188a.pdf/a-proof-of-pesins-formula.pdf",
+            "sha256": "4746cc83428da9b1a3effab8f392ec6a5af0cb14d2f6cb0f36a124ac63397a7b",
+            "scope": "Primary theorem/errata read in earlier audited source check; current preparation reverified exact cached bytes."
+          },
+          {
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C51073A9D0F762D8884597FA5EC831CC/S0143385700001863a.pdf/errata_to_a_proof_of_pesins_formula.pdf",
+            "sha256": "06fe4e930bb0777916b3067eec2fabd68212e8a7d9cb418c1011cfc4db3613c3",
+            "scope": "Primary theorem/errata read in earlier audited source check; current preparation reverified exact cached bytes."
+          }
+        ],
+        "reused_source_audit": {
+          "path": "literature/smooth_area_entropy_supplement_20261006.md",
+          "sha256": "7de3c3c9b7e58cced6e5937536f66337486734d58e8b931b7f09449de15e0e8b"
+        }
+      },
+      "application_status": "verified_application",
+      "application_review": "Prior independent primary-source formula plus complete errata audit, and fresh weighted-periodic proof/source audit verify the actual area-entropy mapping. Not a line-by-line reproof of the entropy theorem. Original Pesin1977 locator remains unverified.",
+      "inherited_project_mapping": "For actual smooth area-preserving Anosov G on the compact boundaryless torus, normalized area is absolutely continuous and invariant; smooth DG is Holder. The entropy formula gives h_area(G)=integral log JuG, without ergodicity. With Ruelle and mixing Gibbs uniqueness this identifies the pressure-zero area measure used for norm-uniform weighted periodic EQ. Errata correct intermediate estimates and add no hypothesis to equation(2).",
+      "project_sources": [
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/selected_weighted_coefficient.md",
+        "literature/smooth_area_entropy_supplement_20261006.md",
+        "record/weighted_periodic_review.md"
+      ],
+      "direct_claim_dependencies": [
+        "BGS-TRACE-019"
+      ],
+      "transitive_claim_dependencies": [],
+      "dependency_coverage_note": "Proposed direct use by TRACE-019 through weighted periodic EQ. Recompute exact graph impact at integration; do not overwrite the separate EXT-PESIN-1977 observations."
     }
   ],
   "supplemental_review_provenance": {

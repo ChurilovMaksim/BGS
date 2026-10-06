@@ -372,16 +372,25 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/20260924/frozen_arithmetic_traces.json"
+        "evidence/20260924/frozen_arithmetic_traces.json",
+        "record/trace_variance_review.md",
+        "record/spectral_extension_promotion_mapping.json",
+        "evidence/spectral_extension_20261006/promotion_receipt.json"
       ],
       "verifiers": [
-        "computations/verification/frozen_arithmetic_traces.py"
+        "computations/verification/frozen_arithmetic_traces.py",
+        "computations/verification/spectral_extensions.py"
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/fixed_map_frontier.tex"
+        "manuscript/unified_sections/fixed_map_frontier.tex",
+        "manuscript/unified_sections/spectral_extensions.tex"
       ],
-      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality."
+      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact.",
+      "proof_dependencies": [
+        "mathematics/uniform_trace_square_transcendence.md"
+      ],
+      "companion_review_scope": "New one-step squared-trace companion has independent internal review; original all-power nonvanishing theorem retains its prior author/source review status."
     },
     {
       "id": "BGS-FM-011",
@@ -2095,6 +2104,83 @@
         "manuscript/unified_sections/paired_phase_reductions.tex"
       ],
       "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion."
+    },
+    {
+      "id": "BGS-FM-025",
+      "title": "Uniform actual kick simplicity on the pure five-primary seven family",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOF + INDEPENDENT V2 ANALYTIC AUDIT + INDEPENDENT FINITE INPUT; FOUR FINITE U CASES ARE A SCOPED COMPANION",
+      "source": "mathematics/uniform_five_cluster_simplicity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "proof_dependencies": [
+        "mathematics/finite_seven_spectral_pivots.md"
+      ],
+      "evidence": [
+        "record/uniform_five_cluster_review.md",
+        "record/five_cluster_input_review.md",
+        "record/finite_seven_pivots_review.md",
+        "record/spectral_extension_promotion_mapping.json",
+        "evidence/spectral_extension_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_extensions.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_extensions.tex"
+      ],
+      "boundary": "A_(7*5^e) has simple complex spectrum for e>=1. Separately bounded companion: U_N(t) simple only for N21,35,49,63 at nonzero real algebraic t. Uniform A does not imply uniform U simplicity. V1 remains incomplete; v2 accepted. No quantitative gap, general seven-divisible U simplicity or BGS.",
+      "dependency_scope": "FM-008 Section4 general leading-minor/imaginary-time implication and its registered LW source are used only for the four finite U cases; its universal theorem remains restricted to 7∤N. Uniform A theorem uses actual FM-001 model and separately reviewed finite cluster input without new external theorem."
+    },
+    {
+      "id": "BGS-TRACE-019",
+      "title": "Full-weight selected homoclinic coefficient and cyclic-family bound",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + SEPARATE W/Q/EQ REVIEWS + INDEPENDENT INTERFACE AUDIT + EXACT FINITE CONTROLS; EXTERNAL CLASSICAL INPUTS EXPLICIT",
+      "source": "mathematics/selected_weighted_coefficient.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-017",
+        "BGS-TRACE-018"
+      ],
+      "external_dependencies": [
+        "EXT-PP-1990",
+        "EXT-RUELLE-1978",
+        "EXT-MANE-1981"
+      ],
+      "proof_dependencies": [
+        "mathematics/physical_homoclinic_weights.md",
+        "mathematics/quantum_homoclinic_first_loop.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/exact_homoclinic_potential.md",
+        "mathematics/stationary_cyclic_residual.md"
+      ],
+      "evidence": [
+        "record/selected_weighted_interface_review.md",
+        "record/physical_homoclinic_weights_review.md",
+        "record/quantum_homoclinic_first_loop_review.md",
+        "record/weighted_periodic_review.md",
+        "record/weighted_support_promotion_mapping.json",
+        "evidence/weighted_support_20261006/promotion_receipt.json",
+        "record/stationary_cyclic_residual_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/weighted_periodic_support.py",
+        "computations/verification/exact_homoclinic.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/selected_weighted_coefficient.tex",
+        "manuscript/unified_sections/exact_homoclinic_potential.tex"
+      ],
+      "boundary": "Odd N, literal tau=10^-80, any fixed finite J>=0, fixed positive band a0<=m/N<=b0<=2: selected full-weight fixed-J V coefficient is O(N^-1/2). Its once-counted cyclic/negative family has at most2m members and contributes O(N^-1/2) at originalN^-2 compact-time normalization. U transfer is aggregate only, fixedJ>=2. No intrinsic orbitwise U observable. Complete complement, torsion/plateau mechanism, higher orders, TRACE-005 and BGS remain open. Supporting stationary-label decomposition removes disjoint cyclic and selected homoclinic ordered pairs exactly once; only unremoved torsion portions remain. Prior FM-021 position-path ramp is separately credited, with no family-identification claim.",
+      "dependency_scope": "W physical area/half-density, Q paired quantum factor and positive mass, EQ norm-uniform changing test, summed absolute contour tails and cyclic bookkeeping are separately scoped. H1–H10 are supporting exact stationary/homoclinic structure with inherited Fourier-method attribution; no multiplicative-gauge consequence."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

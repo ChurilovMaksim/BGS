@@ -15,7 +15,6 @@ The remaining TRACE-005 target is signed weighted factorial joint-trace comparis
 - **Auxiliary channel gaps.** [FM-020](mathematics/original_channel_gap.md) gives a two-copy singular-gap lower bound for the original ordered common-noise law that dominates N^(-1) at u=N^(-alpha), 0<alpha<1. It supersedes the original-rate gap left by FM-018/019. It does not control the nonlinear quenched functional, higher-copy rates or the deterministic spectrum.
 - **Actual coordinate-path controls.** [FM-021](mathematics/position_chain_mixing.md) gives an eventual constant singular gap for P=|U|², the cyclic path ramp and a specified marked three-link cancellation. [FM-022](mathematics/reversed_path_decay.md) suppresses reverse-cyclic paths. [TRACE-015](mathematics/three_block_unmarking.md) and [TRACE-016](mathematics/four_block_unmarking.md) now control once-counted distinct-port three- and four-block families, with errors O_w((log N)^5/N) and O_w((log N)^10/N). Their bounded classification certificate does not formalize the analytic chain. Repeated ports, inter-family overlaps, general noncyclic interference, the plateau correction and higher trace orders remain open.
 - **Fixed-order WKB reduction.** [TRACE-017](mathematics/factorial_wkb_reduction.md) reduces each complete fixed-k signed partition target to either named finite-J trace table, J>=k, with error O(N^(k-J-1/2)). Exact reciprocity, formal connected coefficients and a conditioned rotated-box theorem are supporting results. The finite-band contour/tail step is now controlled by the global rotated-box theorem; signed comparison and unrestricted bands remain open.
-- **Actual arithmetic common commutant.** [FM-024](mathematics/actual_seven_primary_commutant.md), including the [corrected higher-ramified lattice proof](mathematics/ramified_higher_seven_commutant.md), now proves scalar actual pair commutant for every odd N>=3 except N=7, by explicit combination with prior FM-008. Its literal-U corollary concerns algebraic-entry commuters only. Seven-divisible spectral simplicity and BGS remain open.
 - **Arithmetic translation exclusion.** [FM-023](mathematics/arithmetic_translation_exclusion.md) excludes the indicated odd d-grid algebras for d|N and d<=N^delta, each fixed delta<1/262, with a fixed-tau constant. Projector normalization requires a nonzero centered part in that algebra; arbitrary projectors and the full commutant remain outside its scope.
 - **Arithmetic, resonance and return laws.** The Cayley, Pell, locality and cohomology programmes give exact identities, scoped asymptotic laws and sharp obstructions under their own assumptions. Their proof families and limitations are indexed in [the topic views](mathematics/topics/README.md); fixed return moments alone cannot identify microscopic statistics.
 
@@ -43,6 +42,15 @@ The earlier cumulative brief is preserved byte-for-byte in [the pre-revision arc
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
 
-## Phase-only route checkpoint
+## Current spectral and selected-family frontier
 
-[TRACE-018](mathematics/winding_defect_locality.md) combines the exact [paired-character quotient](mathematics/paired_character_identity.md), actual winding-defect localization and [phase-map Frostman averages](mathematics/phase_map_frostman.md). The Fourier-square bound averages dimension/frequency, not time at fixed N. Pointwise decay, complete quantum weights and the signed BGS target remain open.
+The actual pair commutant is classified for every odd N, with the exact
+N=7 exception ([FM-024](mathematics/actual_seven_primary_commutant.md)).
+[FM-025](mathematics/uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
+e>=1, with only four bounded literal-U simplicity cases; the
+[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) gives
+one-step squared-trace transcendence for odd N except7.
+[TRACE-019](mathematics/selected_weighted_coefficient.md) controls one full-weight
+homoclinic family in the fixed-J WKB representation and its normalized time
+sum. The complete signed complement, plateau/torsion mechanism and higher
+factorial hierarchy remain open; no BGS conclusion follows.

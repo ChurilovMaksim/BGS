@@ -6,7 +6,16 @@
 
 ## Current work
 
-The scoped corpus revision has reconciled the supplied reviews, repaired proof exposition and source metadata, separated current status from historical records, and rerun reproducibility checks. All 159 root proof/exposition notes have scoped semantic readings; named conditional inputs remain explicit. New solution work resumes only after the corrected revision passes remote acceptance checks. See the [revision report and coverage](record/corpus_revision_20261006.md).
+The actual pair commutant is classified for every odd N, with the exact
+N=7 exception ([FM-024](mathematics/actual_seven_primary_commutant.md)).
+[FM-025](mathematics/uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
+e>=1, with only four bounded literal-U simplicity cases; the
+[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) gives
+one-step squared-trace transcendence for odd N except7.
+[TRACE-019](mathematics/selected_weighted_coefficient.md) controls one full-weight
+homoclinic family in the fixed-J WKB representation and its normalized time
+sum. The complete signed complement, plateau/torsion mechanism and higher
+factorial hierarchy remain open; no BGS conclusion follows.
 
 The central fixed-model obligation is the **signed** Heisenberg-scale joint-trace comparison, for every fixed correlation order and every smooth compact Fourier weight. An absolute all-order deterministic comparison is not the target. The [research brief](RESEARCH.md) states the model, current subsidiary conclusions and exact remaining gap.
 

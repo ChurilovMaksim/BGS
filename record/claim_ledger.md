@@ -752,30 +752,46 @@ Aggregate Lean update: all 19 active modules passed in 22 Lake jobs; SevenPrimar
 
 **Supporting project analytic theorem, fresh independent internal review; TRACE-017 core unchanged.** For the actual fixed-coupling odd-dimensional operator and every fixed finite J>=1, uniformly through 1<=m<=2N, the actual trace equals the exact rotated-box sum with error O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). [The global contour proof](../mathematics/global_rotated_box_trace.md) establishes a saturated-contour deformation and sums its tails; additional strictly bounded bandwidth ranges are stated there. It does not evaluate the exact box sum, make first-loop algebraic errors absolutely summable, cover unrestricted bands, or prove CUE/BGS/TRACE-005. This separately accepted result supersedes earlier contour-pending descriptions only within its stated finite band.
 
-## First-seven extension of FM-024 (6 October 2026)
+## Current actual pair commutant and scoped spectral extensions
 
-**EXACT COMPUTER-ASSISTED PROJECT PROOF + FRESH INDEPENDENT INTERNAL REVIEW.** The [first-seven component](../mathematics/actual_first_seven_commutant.md) proves scalar complex joint commutant of the actual (A_N,M_N) for odd N>7, 7|N,49∤N,5∤N. All 17,046 independent determinant evaluations and the exact field/gcd/Bezout/odd-root certificates were completed. Together with the retained higher-seven proof, FM-024 now covers all odd N>7 with 7|N and 5∤N. The old statements leaving the unramified first-seven branch open are superseded within exactly this scope.
+**FM-024:** [actual pair commutant](../mathematics/actual_seven_primary_commutant.md)
+is scalar for every odd N>=3 except7 by explicit combination of reviewed
+families and prior FM-008. At7 its characteristic-zero dimension is17 with
+multiplicities(3,2,2). The literal-U corollary is algebraic-entry-only.
+Component proofs, finite certificates and prior review boundaries are retained.
 
-The separate prior FM-008 theorem gives simple A and nonzero M entries in that eigenbasis, hence scalar pair commutant for 7∤N. Combining the components covers odd N>=3 with 35∤N except N=7, while preserving FM-008's prior review boundary. The existing LW coefficient-separation proof consequently gives only the algebraic-entry literal-U commuter corollary in the combined range. It never makes the full complex commutant of U scalar. Odd multiples of 35, seven-divisible spectral simplicity, quantitative gaps, TRACE-005 and BGS remain unresolved here. No ramified route is included, and FORMAL-003's earlier scope is unchanged.
+**FM-025:** [uniform pure-five kick simplicity](../mathematics/uniform_five_cluster_simplicity.md)
+holds for A_(7*5^e), e>=1, by reviewed v2 analytic induction and separately
+reviewed finite inputs. V1 remains incomplete. The [finite companion](../mathematics/finite_seven_spectral_pivots.md)
+gives simple literal U only at N=21,35,49,63, using prior FM-008 Section4 and
+registered LW. FM-008's universal7∤N statement is unchanged.
 
-## First-seven chain-trace closure with arbitrary five-adic ramification
+**FM-010 companion:** [one-step squared-trace transcendence](../mathematics/uniform_trace_square_transcendence.md)
+holds for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1.
+Repeated eigenvalues are allowed. Original all-power nonvanishing and its
+inherited review status remain unchanged; higher-power squared-trace
+transcendence at7|N is not claimed.
 
-**PROJECT PROOF + FRESH INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS.** The [chain-trace theorem](../mathematics/ramified_first_seven_commutant.md) proves scalar actual pair commutant for every odd N>7 with 7|N,49∤N, without restricting v5(N). An integral partial-trace consequence is added before reduction; an augmented rank minor, rather than the naive reduced Fourier matrix, is lifted. Exact polynomial normalization, all nine partitions, small Fourier minors and six direct chain sums support the separately reviewed uniform argument. The six dimensions are not an extrapolation proof.
+## Current paired-phase and selected full-weight frontier
 
-Together with the retained higher-seven result, FM-024 covers odd N>7,7|N,245∤N. With the separately attributed FM-008 result and its inherited review scope, the combined range is odd N>=3,245∤N,N≠7. The literal-U consequence remains algebraic-entry-only. Prior statements leaving all odd multiples of 35 open are superseded only in the first-seven branch; odd multiples of 245 remain open. No separate 245|N candidate, seven-divisible simplicity, full complex scalar U commutant, quantitative gap, noise identity, BGS result or formalization is included.
+**TRACE-018:** [actual phase locality](../mathematics/winding_defect_locality.md)
+and [Frostman averages](../mathematics/phase_map_frostman.md) remain phase-only,
+with the exact [paired quotient](../mathematics/paired_character_identity.md)
+as support. Averaging dimension does not replace fixed-N time averaging.
 
-## Completion of the actual odd-dimensional pair commutant
+**TRACE-019:** [selected full-weight coefficient](../mathematics/selected_weighted_coefficient.md)
+and its once-counted cyclic/negative family are O(N^-1/2) in every fixed
+positive global band m/N<=2, for fixed finite J>=0 in the V representation.
+Aggregate U pair transfer requires fixed J>=2. Separate W/Q/EQ and interface
+reviews retain exact probabilities, half-density, norm-uniform tests and
+source hypotheses. The [stationary residual](../mathematics/stationary_cyclic_residual.md)
+credits FM-021 and removes two disjoint pair families once, retaining only
+unremoved torsion portions. The [exact homoclinic structure](../mathematics/exact_homoclinic_potential.md)
+uses inherited Fourier methods; its additive/distributional obstruction gives
+no multiplicative-gauge conclusion. Mane1981 with mandatory1983errata supplies
+the verified entropy formula; the original Pesin locator remains unverified.
 
-**BGS-FM-024: separately scoped reviewed components, explicitly combined.** The [corrected higher-ramified v2 proof](../mathematics/ramified_higher_seven_commutant.md) covers every odd 245|N using a normalized integral commuter lattice, q-Lucas leading algebra and shifted base theorem. Together with the retained first-seven/higher-seven results and prior FM-008, it proves scalar complex joint commutant of the actual pair for every odd N>=3 except N=7. The prior FM-008 review/source boundary is preserved. At N=7, A7=(9/10)I and M7 is a nonscalar joint commuter; no complex dimension is inferred from reduction. Older arithmetic-gap entries are superseded by this exact combination. The literal-U corollary remains restricted to algebraic-entry commuters. Seven-divisible spectral simplicity, quantitative gaps, signed traces and BGS are not established. No new Lean theorem is claimed.
-
-## Exact paired phases and actual action-measure regularity
-
-**BGS-TRACE-018: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEWS.** The [paired quotient](../mathematics/paired_character_identity.md) removes exactly 4^m identical branch copies, yielding the perfect-pairing autocorrelation identity; this is not cancellation or a prior normalization repair. Physical trace notation uses actual weights and odd N. P10 is corrected to the first derivative divided by iN.
-
-For the actual fixed tau=10^-80 action and one unit-winding displacement, [locality](../mathematics/winding_defect_locality.md) yields a periodic infinite bounded correction and phase-only Fourier-measure reduction. The accepted [Frostman Sections1–3](../mathematics/phase_map_frostman.md) sharpen beta to29/5, prove q-fibre monotonicity and mu(I)<=(28|I|)^gamma, and give sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). This averages Fourier index/dimension, not time at fixed N. It does not prove pointwise decay, a density, complete determinant/transport/quantum-integral weights, all displacements/torsion sectors, TRACE-005 or BGS. Later conditional/literature and aggregation material is not promoted.
-
-The N=7 exception in FM-024 has a separately reviewed characteristic-zero
-classification: raw identities T²=-7 and G³=-7TI yield cube-root multiplicities
-(3,2,2) and complex joint-commutant dimension 17. This does not lift the older
-residue-field dimension control. See the exact exceptional-seven subsection
-of the canonical FM-024 proof and record/exceptional_seven_review.md.
+The full signed complement, plateau mechanism, remaining torsion, higher
+orders, TRACE-005 and BGS remain open. No new Lean theorem is claimed.
+[Prior component-status history](history/2026/cohesive_frontier_20261006/prior_ledger_tail.md)
+preserves the superseded arithmetic checkpoints and their references.
