@@ -1987,7 +1987,7 @@
     },
     {
       "id": "BGS-FM-024",
-      "title": "Actual scalar common commutant on the unramified seven-divisible family",
+      "title": "Actual scalar common commutant outside the higher-seven ramified family",
       "state": "proved",
       "ledger_status": "EXACT + FINITE-CERTIFICATE + INDEPENDENT REVIEWS OF SEVEN-DIVISIBLE COMPONENTS; COMBINED COROLLARY INHERITS FM-008 REVIEW BOUNDARY",
       "source": "mathematics/actual_seven_primary_commutant.md",
@@ -2006,22 +2006,27 @@
         "evidence/executions/20261006/actual-commutant-integration/receipt.json",
         "record/first_seven_independent_review.md",
         "record/first_seven_promotion_mapping.json",
-        "evidence/first_seven_20261006/promotion_receipt.json"
+        "evidence/first_seven_20261006/promotion_receipt.json",
+        "record/ramified_first_seven_review.md",
+        "record/ramified_first_seven_promotion_mapping.json",
+        "evidence/ramified_first_seven_20261006/promotion_receipt.json"
       ],
       "verifiers": [
         "computations/verification/actual_algebra_check.py",
         "computations/verification/actual_factor_check.py",
         "computations/verification/actual_field_check.py",
         "computations/verification/actual_casoratian_check.py",
-        "computations/verification/first_seven_commutant.py"
+        "computations/verification/first_seven_commutant.py",
+        "computations/verification/ramified_first_seven_trace.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/actual_seven_primary_commutant.tex"
       ],
-      "boundary": "Every odd N>7 with 7 dividing N and 5 not dividing N: scalar complex common commutant of the actual A_N and M_N. Includes both first-seven and higher-seven-primary cases by separate reviewed proofs. The existing LW coefficient-separation argument extends the algebraic-entry literal-U commuter corollary only. The combined all-odd N>=3,35 not dividing N,N!=7 coverage additionally invokes prior FM-008 with its own review boundary. No full complex scalar commutant for U, seven-divisible spectral simplicity, quantitative gap or BGS conclusion. Odd multiples of35 remain outside this batch; no new formalization claimed.",
+      "boundary": "Scalar complex joint commutant of actual A_N,M_N for odd N>7 with 7|N and 245 not dividing N: higher-seven unramified and arbitrary-5-ramified first-seven components. The separately attributed FM-008 corollary extends combined coverage to odd N>=3 with 245 not dividing N,N!=7, preserving its prior review boundary. Literal-U consequence is only for algebraic-entry commuters via the existing LW argument. Odd multiples of 245 remain unresolved. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new Lean formalization.",
       "proof_dependencies": [
-        "mathematics/actual_first_seven_commutant.md"
+        "mathematics/actual_first_seven_commutant.md",
+        "mathematics/ramified_first_seven_commutant.md"
       ],
       "dependency_scope": "FM-008 is used only for the separately attributed combined 35∤N corollary; both seven-divisible components rely on FM-001 and their elementary exact arguments."
     },

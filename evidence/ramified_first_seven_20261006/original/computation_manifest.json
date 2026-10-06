@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "claim_id": "BGS ramified first-seven candidate: finite algebra certificate",
+  "repository": {
+    "commit": "66724291b2ec77c22823f52ecc5ee56278fed096",
+    "dirty": true
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 /workspace/shared/bgs_ramified_first_seven_review/independent_check.py",
+  "environment": {
+    "software": [
+      "Python 3.12.14",
+      "SymPy 1.14.0"
+    ],
+    "hardware": "x86_64; hardware details immaterial to exact bounded arithmetic"
+  },
+  "mathematics": {
+    "assertion_tested": "Actual raw-diagonal Laurent coefficients, Phi7-square normalized rational functions, saved Bezout identity, all nine pair-collision partitions, all Fourier minors of sizes one through three, all normalized 3x3 exponent configurations, and direct local-expansion chain traces in six pure-ramified dimensions.",
+    "coefficient_domain": "SymPy F5 polynomials; independent tuple arithmetic in F5[w]/Phi7(w)",
+    "conventions": "Raw modular Weyl model; i reduces to 2; independent field is F5[w]/Phi7, stored low coefficient first.",
+    "inputs": [
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/ramified_first_seven_trace.md",
+        "sha256": "b9aab9a0edbf91ef2e6ab477e52f24ec3a5ff0b9cf661bcb98e613cfb8ab3d17"
+      },
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/ramified_trace_certificate.py",
+        "sha256": "2cc40679caf585baa75f7c72c55b7bbc9c38d507039cc033156470665dc4d13a"
+      },
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/ramified_trace_certificate.json",
+        "sha256": "e902fdcbf042d53b5df4d8be1f9f44bc5e4866a333e85af5f60cbedfa4419f93"
+      },
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/check_pure_ramified_trace.py",
+        "sha256": "72d85a2a820389a46c19340a6ce060c1a17605e0034deff3bfc62e9bdce73f2a"
+      },
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/pure_ramified_trace_results.json",
+        "sha256": "c4ae067b2fdd57cfbc9ee7a572e7e88dd57cf0cbef90712734395dabccfa3ef7"
+      },
+      {
+        "path": "/workspace/shared/bgs_seven_adic_resume/field15625.py",
+        "sha256": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80"
+      }
+    ],
+    "bounds": {
+      "collision_pairs": 21,
+      "distinct_collision_ratios": 9,
+      "minor_sizes": [
+        1,
+        2,
+        3
+      ],
+      "minor_counts": [
+        49,
+        441,
+        1225
+      ],
+      "normalized_exponent_configurations": 900,
+      "pure_ramified_e": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pure_ramified_N": [
+        35,
+        175,
+        875,
+        4375,
+        21875,
+        109375
+      ]
+    },
+    "non_claims": [
+      "The finite computation is not alone an infinite-N proof.",
+      "No formal proof-assistant certification.",
+      "No spectral simplicity, quantitative gap, BGS, or 245-divisible ramified theorem."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06 approximately 20:06:26 UTC by tool-context clock; exact execution start timestamp was not captured",
+    "runtime_seconds": 55.017420669002604,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "independent_results.json",
+      "sha256": "1f9386892ac994fa9d9347936bb8f83c67d985b7397f9c6b1608da751aa73a12"
+    }
+  ],
+  "checks": [
+    "Candidate input hashes matched before finite computation and after audit.",
+    "Fresh raw-model construction did not import candidate or canonical verifier code.",
+    "Different finite-field representation from candidate.",
+    "All exact checks passed."
+  ],
+  "result": "Implementation and finite assertion verified in the explicitly stated range.",
+  "residual_risks": [
+    "Ordinary Python/SymPy execution, not a formally verified kernel.",
+    "Legacy version 1 manifest; input hashes are supplied but resource limits were not instrumented.",
+    "Exact wall-clock start was not captured; approximate tool-context time is explicitly recorded."
+  ]
+}

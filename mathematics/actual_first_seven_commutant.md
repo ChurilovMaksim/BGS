@@ -10,7 +10,7 @@ proof is unchanged. This is the maintained first-seven component of the integrat
 
 For every odd N with 7|N,49∤N,5∤N and N>7, the actual pair (A_N,M_N) has complex common commutant C I.
 
-Together with the separately reviewed 49|N,5∤N theorem and existing FM-008 for 7∤N, this establishes scalar common commutant at every odd N>=3 with 35∤N, except the genuine exception N=7. The remaining uniform family is the odd multiples of 35. No seven-divisible spectral-simplicity, quantitative gap, Heisenberg comparison or BGS theorem follows.
+Together with the separately reviewed 49|N,5∤N theorem and existing FM-008 for 7∤N, this establishes scalar common commutant at every odd N>=3 with 35∤N, except the genuine exception N=7. The separate [chain-trace theorem](ramified_first_seven_commutant.md) now covers the ramified first-seven branch. Together with the higher-seven component, the remaining uniform family is odd multiples of 245. No seven-divisible spectral-simplicity, quantitative gap, Heisenberg comparison or BGS theorem follows.
 
 ## 1. Actual reduction and four small boundary blocks
 
@@ -181,4 +181,4 @@ There is no additional L>=21 restriction: L>=3 is sufficient for the four small 
 
 ## 6. Scope still open
 
-At5|N the primitive root order drops, some internal bonds cease to be units, and the direct Jordan normalization used here cannot simply be reduced. Odd multiples of 35 remain a separate ramified family; the current certificate does not remove that obstacle. This exact symmetry result supplies no quantitative spectral separation or microscopic universality.
+At5|N the primitive root order drops, some internal bonds cease to be units, and the direct Jordan normalization used here cannot simply be reduced. This direct-reduction certificate does not remove that obstacle. The separate [chain-trace theorem](ramified_first_seven_commutant.md) covers 7∥N with arbitrary v5(N); odd multiples of 245 remain outside the combined results. This exact symmetry result supplies no quantitative spectral separation or microscopic universality.

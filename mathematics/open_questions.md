@@ -488,4 +488,4 @@ formalized mathematics. Full analytic formalization remains open.
 
 ### Remaining arithmetic common-commutant branches
 
-[FM-024](actual_seven_primary_commutant.md), with its [first-seven extension](actual_first_seven_commutant.md), now covers every odd N>7 with 7|N and 5∤N. Combining with prior FM-008 covers odd N>=3 with 35∤N except the genuine N=7 exception. The remaining arithmetic family is odd multiples of 35. Seven-divisible spectral simplicity, unrestricted all-odd-N conclusions and deterministic BGS remain open.
+[FM-024](actual_seven_primary_commutant.md), with its [chain-trace extension](ramified_first_seven_commutant.md), now covers every odd N>7 with 7|N and 245∤N. Combining with prior FM-008 covers odd N>=3 with 245∤N except the genuine N=7 exception. The remaining arithmetic family is odd multiples of 245. Seven-divisible spectral simplicity, unrestricted all-odd-N conclusions and deterministic BGS remain open.

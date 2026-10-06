@@ -99,4 +99,6 @@ Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaus
 
 - [Global rotated-box trace representation](../../global_rotated_box_trace.md): actual traces through m<=2N equal the exact box sum up to O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). The signed box sum is not evaluated.
 
-- [Actual first-seven commutant](../../actual_first_seven_commutant.md): closes 7∥N,5∤N,N>7. Together with the higher-seven component FM-024 covers odd 7|N,5∤N,N>7; prior FM-008 yields the separately attributed all-35∤N combination except N=7. Odd multiples of 35 remain open.
+- [Actual first-seven commutant](../../actual_first_seven_commutant.md): closes 7∥N,5∤N,N>7. Together with the higher-seven component FM-024 covers odd 7|N,5∤N,N>7; prior FM-008 yields the separately attributed all-35∤N combination except N=7. The later chain-trace extension below closes first-seven ramification; odd multiples of 245 remain open.
+
+- [First-seven chain-trace theorem with arbitrary five-adic ramification](../../ramified_first_seven_commutant.md): all odd N>7 with 7|N,49∤N. The combined current FM-024/008 range excludes only N=7 and odd multiples of 245; former first-seven proofs and review scopes are retained.

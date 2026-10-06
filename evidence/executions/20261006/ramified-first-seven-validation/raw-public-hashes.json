@@ -1,0 +1,79 @@
+[
+  {
+    "source_role": "archive-manifest.json",
+    "original_sha256": "5e860fc4ce6bcffe35a319c4b221a4bb8aab713642b20835f6309879bbe74b0f",
+    "public_file": "archive-manifest.json",
+    "public_sha256": "5e860fc4ce6bcffe35a319c4b221a4bb8aab713642b20835f6309879bbe74b0f",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "workspace.json",
+    "original_sha256": "c0eb616a3d5550afe8fe7c62933eecf9848907c15b197d64438793bd40a61be9",
+    "public_file": "workspace.json",
+    "public_sha256": "1869dfd7a429b146246650a12983da5a49ffca3b2c93470b89831dfb967b0fce",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "supplement/verification.json",
+    "original_sha256": "0bf8aee35ad8e758f494d9f31c00fb290d48b054cc704f5b57ebc1c9c027069b",
+    "public_file": "supplement.json",
+    "public_sha256": "0bf8aee35ad8e758f494d9f31c00fb290d48b054cc704f5b57ebc1c9c027069b",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "manuscript/build_manifest.json",
+    "original_sha256": "ec02ebe7dccf7ebc1491e4cecf362367db007f4b94b39c6b344334add22cb20c",
+    "public_file": "manuscript.json",
+    "public_sha256": "57cd8be5457559c18b27d5a436ba1693f70dd8edb0ec14cd9dc2ac9078e6e5b0",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "manuscript/visual_review.json",
+    "original_sha256": "42a8e7f10f5d5de0df8c370e1dab5061858776effb5947cbec1ca451a62737e9",
+    "public_file": "manuscript-visual.json",
+    "public_sha256": "42a8e7f10f5d5de0df8c370e1dab5061858776effb5947cbec1ca451a62737e9",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "cpp_reuse_binding.json",
+    "original_sha256": "ecf40b0cafaca0d2f8d38d95cbead0ae7b619b102f5fcb6dbabd98d268735ba7",
+    "public_file": "cpp-reuse-binding.json",
+    "public_sha256": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "lean_unchanged_binding.json",
+    "original_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "public_file": "lean-unchanged-binding.json",
+    "public_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "maintenance-normal.log",
+    "original_sha256": "21650dd377311b9679c5d71ea1aa458e75caa214dfc449507371d3a13bec0759",
+    "public_file": "maintenance-normal.log",
+    "public_sha256": "21650dd377311b9679c5d71ea1aa458e75caa214dfc449507371d3a13bec0759",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "maintenance-optimized.log",
+    "original_sha256": "871ffd7666a6b77954d1afcf4084e1744d7e114c824a3e2b5a836f2e6ed8b5cc",
+    "public_file": "maintenance-optimized.log",
+    "public_sha256": "871ffd7666a6b77954d1afcf4084e1744d7e114c824a3e2b5a836f2e6ed8b5cc",
+    "transformation": "Byte-identical copy."
+  },
+  {
+    "source_role": "whitespace_check.json",
+    "original_sha256": "f21d06ce2b3ebc2ecbcad3cb2f748afe783d9bdbf54c19a5250744d8e57d0211",
+    "public_file": "whitespace-check.json",
+    "public_sha256": "f21d06ce2b3ebc2ecbcad3cb2f748afe783d9bdbf54c19a5250744d8e57d0211",
+    "transformation": "Path-role normalization; any factoring documented in receipt."
+  },
+  {
+    "source_role": "workspace-checks/ramified_first_seven_trace.log",
+    "original_sha256": "6177f527ab6beb2dbe14801c2c29baece762014e1e15d94a61209fb1bc5f8baf",
+    "public_file": "new-checks/ramified_first_seven_trace.log",
+    "public_sha256": "6177f527ab6beb2dbe14801c2c29baece762014e1e15d94a61209fb1bc5f8baf",
+    "transformation": "Byte-identical copy."
+  }
+]

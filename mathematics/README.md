@@ -22,4 +22,6 @@ Cayley arithmetic, Pell/return laws, resonance/cohomology, locality, and informa
 
 [Actual higher-seven-primary common commutant](actual_seven_primary_commutant.md) (FM-024) closes the stated unramified 49-divisible family, with remaining arithmetic branches explicit.
 
-[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The ramified odd multiples of 35 remain open; no seven-divisible simplicity or BGS conclusion is added.
+[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The later chain-trace extension below leaves only odd multiples of 245 open; no seven-divisible simplicity or BGS conclusion is added.
+
+[Ramified first-seven chain trace](ramified_first_seven_commutant.md) removes the five-adic restriction at 7∥N. The combined remaining common-commutant family is odd multiples of 245, besides the known N=7 exception.

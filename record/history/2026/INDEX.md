@@ -57,3 +57,7 @@ Additional dated records remain searchable in `record/` and Git history.
 - [First-seven accepted proof and original review](first_seven_20261006/accepted_proof.md): exact reviewed originals, with portable promotion mapping and compact serialized certificate.
 
 - [First-seven final validation](../../../evidence/executions/20261006/first-seven-validation/receipt.json): post-run receipts for the 1,888-file archive, 179 workspace and 28 supplement checks, and the 266-page manuscript; unchanged Lean and reused C++ provenance are explicit.
+
+- [Ramified first-seven accepted original](ramified_first_seven_20261006/accepted_proof.md): independent chain-trace proof/review and compact exact certificate; higher-seven ramification remains excluded.
+
+- [Ramified first-seven final validation](../../../evidence/executions/20261006/ramified-first-seven-validation/receipt.json): post-run receipts for the 1,931-file archive, 180 workspace and 28 supplement checks, and 267-page manuscript; unchanged Lean and reused C++ provenance are explicit.
