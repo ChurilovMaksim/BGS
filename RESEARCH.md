@@ -8,6 +8,19 @@ The target is the prescribed odd-dimensional quantization with fixed coupling ta
 
 The remaining TRACE-005 target is signed weighted factorial joint-trace comparison at Heisenberg powers: for every fixed order and every smooth compact Fourier weight, the normalized complete Fourier sum must converge to the matching ensemble value. Any modulus belongs outside the entire sum. [The exact bridge](mathematics/trace_to_local_statistics_bridge.md) converts this to local correlations and supplies the every-bandwidth extension under its positivity assumptions. [TRACE-010](mathematics/signed_heisenberg_comparison.md) excludes simultaneous all-order **absolute**, unaveraged deterministic CUE comparison; it does not exclude the signed target.
 
+## Current spectral and selected-family frontier
+
+The actual pair commutant is classified for every odd N>=3, with the exact
+N=7 exception ([FM-024](mathematics/actual_seven_primary_commutant.md)).
+[FM-025](mathematics/uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
+e>=1, with only four bounded literal-U simplicity cases; the
+[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) gives
+one-step squared-trace transcendence for odd N>=3, N!=7.
+[TRACE-019](mathematics/selected_weighted_coefficient.md) controls one full-weight
+homoclinic family in the fixed-J WKB representation and its normalized time
+sum. The complete signed complement, plateau/torsion mechanism and higher
+factorial hierarchy remain open; no BGS conclusion follows.
+
 ## Strongest current subsidiary conclusions
 
 - **Frozen-map structure.** Symmetry exclusions, algebraic nondegeneracy, logarithmic trace information and exact transfer identities constrain the actual model. Their constants, exceptional dimensions and external inputs belong to their proof statements; they do not estimate the Heisenberg-scale signed hierarchy.
@@ -41,16 +54,3 @@ The earlier cumulative brief is preserved byte-for-byte in [the pre-revision arc
 <a id="current-contributions-and-their-boundaries"></a>
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
-
-## Current spectral and selected-family frontier
-
-The actual pair commutant is classified for every odd N, with the exact
-N=7 exception ([FM-024](mathematics/actual_seven_primary_commutant.md)).
-[FM-025](mathematics/uniform_five_cluster_simplicity.md) gives simple A_(7*5^e),
-e>=1, with only four bounded literal-U simplicity cases; the
-[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) gives
-one-step squared-trace transcendence for odd N except7.
-[TRACE-019](mathematics/selected_weighted_coefficient.md) controls one full-weight
-homoclinic family in the fixed-J WKB representation and its normalized time
-sum. The complete signed complement, plateau/torsion mechanism and higher
-factorial hierarchy remain open; no BGS conclusion follows.
