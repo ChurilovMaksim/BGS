@@ -1,0 +1,80 @@
+{
+  "arithmetic": "exact signed integer residues and root-of-unity histograms",
+  "runs": [
+    {
+      "p": 5,
+      "N": 25,
+      "unipotent_power_cases": 10,
+      "odd_trace_cases": 10,
+      "even_trace_cases": 10,
+      "carry_cases": 600,
+      "gram_entries_each_kind": 625,
+      "classification_triples": 15000,
+      "branch_cases": 27500,
+      "exact_gram_factorizations": 15000,
+      "max_formal_exceptional": 5,
+      "max_p_divisible_exceptional": 2,
+      "max_c1_zero_exceptional": 5,
+      "max_c1_minus_one_exceptional": 5,
+      "max_restricted_constant_partners": 11,
+      "p5_c21_j4_restricted_constant_partners": 11,
+      "wrong_row_ket_orientation_disagreements": 40
+    },
+    {
+      "p": 11,
+      "N": 121,
+      "unipotent_power_cases": 22,
+      "odd_trace_cases": 22,
+      "even_trace_cases": 22,
+      "carry_cases": 14520,
+      "gram_entries_each_kind": 14641,
+      "classification_triples": 1756920,
+      "branch_cases": 3367430,
+      "exact_gram_factorizations": 1756920,
+      "max_formal_exceptional": 11,
+      "max_p_divisible_exceptional": 2,
+      "max_c1_zero_exceptional": 11,
+      "max_c1_minus_one_exceptional": 11,
+      "max_restricted_constant_partners": 23,
+      "p5_c21_j4_restricted_constant_partners": -1,
+      "wrong_row_ket_orientation_disagreements": 220
+    },
+    {
+      "p": 17,
+      "N": 289,
+      "unipotent_power_cases": 34,
+      "odd_trace_cases": 34,
+      "even_trace_cases": 34,
+      "carry_cases": 83232,
+      "gram_entries_each_kind": 83521,
+      "classification_triples": 24054048,
+      "branch_cases": 46771760,
+      "exact_gram_factorizations": 0,
+      "max_formal_exceptional": 17,
+      "max_p_divisible_exceptional": 2,
+      "max_c1_zero_exceptional": 17,
+      "max_c1_minus_one_exceptional": 17,
+      "max_restricted_constant_partners": 33,
+      "p5_c21_j4_restricted_constant_partners": -1,
+      "wrong_row_ket_orientation_disagreements": 544
+    }
+  ],
+  "status": "passed",
+  "runtime_seconds": 10.8591,
+  "negative_control": {
+    "fault": "omit low-digit carry into high digit",
+    "returncode": 2,
+    "diagnostic": "literal cyclic carry identity"
+  },
+  "compiler_command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-pedantic",
+    "carry_review/growing_review/check_growing.cpp",
+    "-o",
+    "carry_review/growing_review/sealed_execution/check_growing"
+  ]
+}

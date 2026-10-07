@@ -1,0 +1,65 @@
+[
+  {
+    "original_role": "frozen/residual125_uniform_candidate.md",
+    "original_sha256": "9efdd0257feae0d20c583e8ee94c0d8e1cee36c45d275cd4a5347a269c6b095a",
+    "public_path": "mathematics/residual125_uniform_splitting.md",
+    "public_sha256": "9efdd0257feae0d20c583e8ee94c0d8e1cee36c45d275cd4a5347a269c6b095a",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "independent_review.md",
+    "original_sha256": "2adfb22893df719fa8e650c34a70bd0e277148e10ae7bdc8df2d3ad37446172e",
+    "public_path": "record/residual125_uniform_review.md",
+    "public_sha256": "2adfb22893df719fa8e650c34a70bd0e277148e10ae7bdc8df2d3ad37446172e",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "review_manifest.json",
+    "original_sha256": "421550655307c0361f35b50c73daf029dceac1874a8e5a076fe88d4a7ff0df7d",
+    "public_path": "evidence/residual125_20261007/review_manifest.json",
+    "public_sha256": "421550655307c0361f35b50c73daf029dceac1874a8e5a076fe88d4a7ff0df7d",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "computation_manifest.json",
+    "original_sha256": "00604ad4b44e1da228327945b557c9015b5e4c428785cce88fa625da7eb70943",
+    "public_path": "evidence/residual125_20261007/computation_manifest.json",
+    "public_sha256": "00604ad4b44e1da228327945b557c9015b5e4c428785cce88fa625da7eb70943",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "source_manifest.json",
+    "original_sha256": "6614810584254911b269ba90df15481b9d0c96ef818f6cdbce3dd3c6a2cbdaea",
+    "public_path": "evidence/residual125_20261007/source_manifest.json",
+    "public_sha256": "54dba9eb3034054c092e2457d6c0ff6d382e65261d1ff4c7a39b0ae46f4486f8",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "raw_rebuild.json",
+    "original_sha256": "3361c027d0660d355570e5fcfa2b546601bd8a6c78b3fc5fb0ad8d7398fc4600",
+    "public_path": "evidence/residual125_20261007/raw_expected.json",
+    "public_sha256": "3361c027d0660d355570e5fcfa2b546601bd8a6c78b3fc5fb0ad8d7398fc4600",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "residue_rebuild.json",
+    "original_sha256": "8b492729c39a02b4f20b2904f80f69a77294e272f1b2c2bf525e7f7b6f21b64d",
+    "public_path": "evidence/residual125_20261007/residue_expected.json",
+    "public_sha256": "8b492729c39a02b4f20b2904f80f69a77294e272f1b2c2bf525e7f7b6f21b64d",
+    "edits": "Private-path role normalization and whitespace; original retained losslessly."
+  },
+  {
+    "original_role": "rebuild_raw.py",
+    "original_sha256": "df800f59f77b798f200f69135154f8dbf5cd8e0d0a3824e94711a311a6233433",
+    "public_path": "computations/verification/residual125/raw.py",
+    "public_sha256": "75c1c803733e68d9642e40cfaf2a9f637ba37833aa3a96a8dd59cf9de690b277",
+    "edits": "Assertions become explicit exceptions; required scratch output directory; repository-relative frozen certificate; silent main wrapper. Exact results compared excluding runtime and self-source hash only."
+  },
+  {
+    "original_role": "rebuild_residue.py",
+    "original_sha256": "222414919f8bb6d6e8bf6f724addda075d64eaef2581d97e700d73b500aae1d6",
+    "public_path": "computations/verification/residual125/residue.py",
+    "public_sha256": "f7d5b1ac0259ce67ce9594f5f291e8daf127894744621131682e00035cf8f829",
+    "edits": "Assertions become explicit exceptions; required scratch output directory; repository-relative frozen certificate; silent main wrapper. Exact results compared excluding runtime and self-source hash only."
+  }
+]

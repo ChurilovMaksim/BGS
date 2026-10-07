@@ -1,0 +1,37 @@
+[
+  {
+    "role": "odd-newest-proof",
+    "original_sha256": "a75bd91a452d5285ec447d9ca1be623e8eda3218835ce2ed9af71f741e8872c0",
+    "public_path": "mathematics/odd_newest_sector_first_jet.md",
+    "public_sha256": "82b11cc4cd4fe2aebbfe49d5ef881fd1d58e73d968d16faa6ffe00185f0a6209",
+    "edits": "Explicit accepted status and conditional transfer paragraph updates; mathematical construction unchanged; whitespace normalized."
+  },
+  {
+    "role": "odd-newest-review",
+    "original_sha256": "43d7e05efefb0905742b28f82b93c29e3de3eccc40e1189b1894e32912889dd9",
+    "public_path": "record/odd_newest_sector_review.md",
+    "public_sha256": "4837c34ab61a441114b7451e1843a7d10092f6265eb7fdb4f6922cb4064e0645",
+    "edits": "Added promotion and portable-replay note; preserved mathematical review and historical instructions; whitespace normalized."
+  },
+  {
+    "source_role": "odd-review/check_gauss_packets.py",
+    "source_sha256": "8cc148ea5e817f91fc5ab51e79d453fb6f9d94e9d55d77c3b61e596a192ddcbc",
+    "portable_path": "computations/verification/odd_newest/check_gauss_packets.py",
+    "explicit_assertion_count": 16,
+    "edits": "AST assert-to-explicit-AssertionError conversion; removed optimization prohibition; all execution under main(argv); required scratch output directory; local coefficient helper and repository-relative expected data. Arithmetic statements and tested ranges unchanged."
+  },
+  {
+    "source_role": "odd-review/check_intersections.py",
+    "source_sha256": "bec37e2b02ee6efd29558c399fa30abd3ac1049b95ed44f6bb8a00c9ca1a4fc8",
+    "portable_path": "computations/verification/odd_newest/check_intersections.py",
+    "explicit_assertion_count": 6,
+    "edits": "AST assert-to-explicit-AssertionError conversion; removed optimization prohibition; all execution under main(argv); required scratch output directory; local coefficient helper and repository-relative expected data. Arithmetic statements and tested ranges unchanged."
+  },
+  {
+    "source_role": "odd-review/check_finite_matrices.py",
+    "source_sha256": "613e1a85567fb26f5de13e38c310c1cf7c8e6b282de43f3e367fb7260c64e178",
+    "portable_path": "computations/verification/odd_newest/check_finite_matrices.py",
+    "explicit_assertion_count": 20,
+    "edits": "AST assert-to-explicit-AssertionError conversion; removed optimization prohibition; all execution under main(argv); required scratch output directory; local coefficient helper and repository-relative expected data. Arithmetic statements and tested ranges unchanged."
+  }
+]

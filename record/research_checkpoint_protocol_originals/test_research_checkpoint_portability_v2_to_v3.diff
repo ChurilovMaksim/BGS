@@ -1,0 +1,48 @@
+--- protocol_v2_test.py
++++ durable_protocol_v3_test.py
+@@ -146,6 +146,45 @@
+                 source.write_text("from pathlib import Path\nPath(__file__).with_name('checks.json').write_text('{\"answer\":7}')\n")
+                 M.compare(expected, M.final_json(M.execute_task(root, task, dict(os.environ), mode)), [])
+ 
++    def test_durable_output_rejects_stale_source_overlap_and_symlinks(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            base = Path(tmp)
++            root = base / 'repo'
++            root.mkdir()
++            output = base / 'durable'
++            self.assertEqual(M.output_directory(root, output), output)
++            self.assertEqual(M.output_directory(root, root / 'build' / 'certificates' / 'fresh'), root / 'build' / 'certificates' / 'fresh')
++            (output / 'stale').write_bytes(b'old')
++            with self.assertRaisesRegex(RuntimeError, 'must be empty'):
++                M.output_directory(root, output)
++            with self.assertRaisesRegex(RuntimeError, 'separate'):
++                M.output_directory(root, root / 'source_output')
++            link = base / 'link'
++            link.symlink_to(output)
++            with self.assertRaisesRegex(RuntimeError, 'symlink'):
++                M.output_directory(root, link)
++
++    def test_durable_raw_artifact_bytes_and_hash_are_retained(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            raw = b'progress\n{\"answer\":7}\n'
++            record = M.save_artifact(Path(tmp), 'observed.raw', raw)
++            self.assertEqual((Path(tmp) / 'observed.raw').read_bytes(), raw)
++            self.assertEqual(record['sha256'], hashlib.sha256(raw).hexdigest())
++            self.assertEqual(record['bytes'], len(raw))
++
++    def test_durable_failed_source_check_has_terminal_receipt(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            base = Path(tmp)
++            root = base / 'repo'
++            root.mkdir()
++            output = base / 'output'
++            with self.assertRaises(FileNotFoundError):
++                M.run(root, output)
++            receipt = json.loads((output / 'replay_manifest.json').read_text())
++            self.assertEqual(receipt['status'], 'failed')
++            self.assertTrue(receipt['failure'])
++            self.assertEqual(receipt['tasks'], [])
++
+     def make_root(self, root, rel='packet/check.py'):
+         p = root / rel
+         p.parent.mkdir(parents=True, exist_ok=True)

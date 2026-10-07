@@ -1,5 +1,11 @@
 # Frontier check — 4 September 2026
 
+**7 October source qualification:** older descriptions of quantum-graph
+all-correlation results as a rigorous BGS template are not imported as such.
+The [exact color-one boundary audit](color_one_boundary_qualification_20261007.md)
+requires completion of the specified bulk-only formula and leaves graph
+universality itself undecided. No registered direct matrix theorem is retracted.
+
 The literature was rechecked during reconstruction and again during the
 prime-order Cayley/resultant work. The purpose is to keep five different
 questions separate: eigenfunction delocalization, quantum ergodicity,

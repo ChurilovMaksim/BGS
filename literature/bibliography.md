@@ -1,5 +1,11 @@
 # Bibliography and theorem-technology map
 
+**7 October source qualification:** older descriptions of quantum-graph
+all-correlation results as a rigorous BGS template are not imported as such.
+The [exact color-one boundary audit](color_one_boundary_qualification_20261007.md)
+requires completion of the specified bulk-only formula and leaves graph
+universality itself undecided. No registered direct matrix theorem is retracted.
+
 Only sources that constrain the active argument or its interpretation are
 listed here. A citation is **not** a claim that its hypotheses have already
 been verified for this project.

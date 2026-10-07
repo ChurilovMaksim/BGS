@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "claim_id": "CHANGED-BILINEAR-CARRY-V2-EXACT-CONTROLS",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "carry_review/run_controls.py",
+    "carry_review/sealed_execution"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "g++ (Debian 14.2.0-19) 14.2.0"
+      },
+      {
+        "name": "Python",
+        "version": "Python 3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact matrix orthogonality, order-six row permutation, literal cyclic carry Gram factorization, and algebraic exceptional row counts for the specified changed family.",
+    "coefficient_domain": "F_p exact signed integer residues; integer exponent histograms in Q(zeta_p); no floating-point mathematics.",
+    "conventions": "j=x+p*y, f(j)=(x^3,y^3), exponent xj*xk+xj*yk+yj*yk, all shifts modulo p^2. Formal constant means constant on all of F_p.",
+    "inputs": [
+      "carry_review/check_carry.cpp",
+      "carry_review/run_controls.py",
+      "bilinear_carry_counterexample_v2.md",
+      "inputs/11_fractional_hamming_cancellation.md",
+      "inputs/13_global_switch_transfer.md"
+    ],
+    "bounds": {
+      "primes": [
+        5,
+        11,
+        17
+      ],
+      "all_nonzero_charges": true,
+      "all_ordered_row_pairs": true,
+      "phase_histogram_Gram_factorization_primes": [
+        5,
+        11
+      ],
+      "omitted_at_17": "Full Gram phase histogram comparison only; carry and exceptional classification remain exhaustive.",
+      "time_seconds": 120,
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 90,
+      "max_cores": 1
+    },
+    "non_claims": [
+      "No asymptotic theorem from finite success.",
+      "No actual BGS map or growing-period A matrix is tested.",
+      "No transcendental numerical norm calculations are performed.",
+      "No full Gram histogram factorization at p=17."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T03:06:52.513191+00:00",
+    "runtime_seconds": 11.500662,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 90,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "carry_review/check_carry.cpp",
+    "carry_review/run_controls.py",
+    "bilinear_carry_counterexample_v2.md",
+    "inputs/11_fractional_hamming_cancellation.md",
+    "inputs/13_global_switch_transfer.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "carry_review/check_carry.cpp",
+      "sha256": "fa3e7d2c96874a24106a72447cc9fbc247bd5302c4a8f7a96359d85f35c33e01",
+      "sha256_after": "fa3e7d2c96874a24106a72447cc9fbc247bd5302c4a8f7a96359d85f35c33e01"
+    },
+    {
+      "path": "carry_review/run_controls.py",
+      "sha256": "1a552f6c05999773bfafabb23a40e77d89caa50b48a3b9487ffa34b25b862060",
+      "sha256_after": "1a552f6c05999773bfafabb23a40e77d89caa50b48a3b9487ffa34b25b862060"
+    },
+    {
+      "path": "bilinear_carry_counterexample_v2.md",
+      "sha256": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab",
+      "sha256_after": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab"
+    },
+    {
+      "path": "inputs/11_fractional_hamming_cancellation.md",
+      "sha256": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5",
+      "sha256_after": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5"
+    },
+    {
+      "path": "inputs/13_global_switch_transfer.md",
+      "sha256": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be",
+      "sha256_after": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be"
+    }
+  ],
+  "output_directory": "carry_review/sealed_execution",
+  "declared_results": [
+    "carry_review/sealed_execution/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "carry_review/sealed_execution/stdout.txt",
+      "sha256": "f5c1291fbf40e9f32a57b2b4e87b0b7754aee40682ec256428a434f0a76c7721",
+      "kind": "log"
+    },
+    {
+      "path": "carry_review/sealed_execution/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "carry_review/sealed_execution/result.json",
+      "sha256": "531bcb6e14b9dd90b328a243a47c921e14c959aa7c56d508d6909ad38c4f92e4",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

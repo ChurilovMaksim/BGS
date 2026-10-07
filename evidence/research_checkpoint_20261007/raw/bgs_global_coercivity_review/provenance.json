@@ -1,0 +1,87 @@
+{
+  "checked_at_utc": "2026-10-07T01:41:18.527068+00:00",
+  "target": "scalar coercivity and separately scoped ordinary scalar gauge claims",
+  "canonical_base": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "canonical_dirty_preexisting": true,
+  "canonical_edits": false,
+  "inputs": [
+    {
+      "path": "/workspace/shared/bgs_global_phase_coercivity/report.md",
+      "sha256": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_phase_coercivity/sources/bhatia_emi_2002.pdf",
+      "sha256": "dbd04403787b5ff2854d48b4ad83d14b0f46f76e96e7b790006e8843976d5f13"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_phase_coercivity/sources/bhatia_emi_2002.txt",
+      "sha256": "74766139b2bc460582e5ce5223a0beed1fac68cf2494ba370b21f58120c99837"
+    },
+    {
+      "path": "/workspace/shared/bgs_balanced_phase_bridge/sources/w18v1.pdf",
+      "sha256": "51d115ced63d8e673c377b2886681dd5d7dcabdb5eca0566157c9b7499492f0d"
+    },
+    {
+      "path": "/workspace/shared/bgs_balanced_phase_bridge/report.md",
+      "sha256": "bcf38361e2a1be8af065fa559011366e3126e578bc2aa94556c8bae4f9c594b8"
+    },
+    {
+      "path": "/workspace/shared/bgs_balanced_phase_bridge/domain_addendum.md",
+      "sha256": "2b03f68b7dfec1df332d106d372b37be7e49b77cf26f1988ba869f0ea83ce23c"
+    }
+  ],
+  "source_locator": {
+    "Bhatia": "Theorem 4, equations (15)\u2013(16), printed p.5 / PDF page 6, ISI 2002 preprint",
+    "Weidenmueller": "arXiv:1812.00655v1, equations (7)\u2013(10), pp.3\u20134"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/audit.md",
+      "sha256": "1247da77c991a84235ad7aae2a8cc5adb1a74a910c86060e2ce0e7dbb30db236"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/checks.json",
+      "sha256": "1ee912ffd318294b517ae850c0a423fc039f8ceab9c03c6a8c3c5130f21e6ce0"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/checks.py",
+      "sha256": "7a8d8deb615f1cb8234ee118da16980ff9527152dcd0c7a970568f87e38e4fdc"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/checks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/checks_manifest.json",
+      "sha256": "c0f2f813e1af8fb0669cea0e6e0a18fd203fb30d3dc88a38372561a3d7b2332e"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/emi_p5.png",
+      "sha256": "4eb3af9a6d68ba10d6dbcd4e7323a7e86f7e2b484da2fe990c2c2812c7c2b23b"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/gauge_checks.json",
+      "sha256": "5193a73c3cb05047a9cbf81fa64c05657e7ba2435235964a1ca8f7006183949f"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/gauge_checks.py",
+      "sha256": "b3a0b2e141efd7d78fca1d9973ff9d2a0a55ba5bb097a5bef3528a4549f93e50"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/gauge_checks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/gauge_checks_manifest.json",
+      "sha256": "72ad424dd88e4bf1f5d694740050ee4c107cb7f1f1ebc61e10df2a9a0fda580c"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/manifest_validation.json",
+      "sha256": "f089c5ae0788a2994cee95db2f0508c9401216b3786e345cc1cd3e734d498961"
+    },
+    {
+      "path": "/workspace/shared/bgs_global_coercivity_review/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    }
+  ]
+}

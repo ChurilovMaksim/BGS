@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_balanced_delay_ward_review/checks/independent_exact_controls.py", line 32, in <module>
+    check('cyclotomic_positive_root_branch_squared',x*x==2*one-2/rt)
+                                                               ~^~~
+TypeError: unsupported operand type(s) for /: 'int' and 'ANP'

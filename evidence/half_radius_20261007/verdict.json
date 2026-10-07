@@ -1,0 +1,29 @@
+{
+  "primary_verdict": "proved as written",
+  "scope": "Both auxiliary half-radius witness claims; no actual quantizer/BGS conclusion",
+  "targets": [
+    {
+      "path": "inputs/half_radius_obstruction.md",
+      "sha256": "ab8fadd21110f11be5713489ae8b61c890ad242657e422afa7a6af21d7d566bb"
+    },
+    {
+      "path": "inputs/symplectic_half_radius_obstruction.md",
+      "sha256": "9da9dc1f548f1bb716942a8d15bccbbf1f105bf02b8bc786c87177d2cdd3255d"
+    }
+  ],
+  "review": {
+    "path": "review.md",
+    "sha256": "aff11c43342a27c87dbf9d2250c1fa30eb7157d99c97e524ab202d9320fad10e"
+  },
+  "finite_evidence": {
+    "manifest": "run_final/manifest.json",
+    "validated": true,
+    "result": "implementation and finite assertion verified in the stated range"
+  },
+  "exact_target_sources_unchanged": true,
+  "canonical_overview_drift_recorded": true,
+  "no_canonical_edits_by_this_auditor": true,
+  "review_type": "independent internal derivation and implementation; author verification outputs inspected; not information-blind or external referee certification",
+  "prior_credit": "microscopic_rounding_control.md already gives broader coarse-data insufficiency; no novelty priority claimed",
+  "remaining_gap_in_pinned_claims": null
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "control": "raw",
+      "exact_scientific_output_agreement": true,
+      "provenance": {
+        "original_python": "3.12.14",
+        "replay_python": "3.12.14",
+        "original_script_sha256": "df800f59f77b798f200f69135154f8dbf5cd8e0d0a3824e94711a311a6233433",
+        "replay_script_sha256": "75c1c803733e68d9642e40cfaf2a9f637ba37833aa3a96a8dd59cf9de690b277"
+      }
+    },
+    {
+      "control": "residue",
+      "exact_scientific_output_agreement": true,
+      "provenance": {
+        "original_python": "3.12.14",
+        "replay_python": "3.12.14",
+        "original_script_sha256": "222414919f8bb6d6e8bf6f724addda075d64eaef2581d97e700d73b500aae1d6",
+        "replay_script_sha256": "f7d5b1ac0259ce67ce9594f5f291e8daf127894744621131682e00035cf8f829"
+      }
+    }
+  ],
+  "scope": "288 exact residue matrices and bounded raw identities; uniform depth and literal-time conclusions require the separately reviewed proofs."
+}

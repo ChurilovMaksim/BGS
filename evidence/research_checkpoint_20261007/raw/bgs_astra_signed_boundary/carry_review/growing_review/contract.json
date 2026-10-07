@@ -1,0 +1,67 @@
+{
+  "claim_id": "CHANGED-GROWING-PERIOD-EXACT-CONTROLS",
+  "mathematics": {
+    "assertion_tested": "Exact matrix orthogonality, order-2p recurrence, unipotent powers, odd-trace quadratic histograms, all cyclic carry Gram factorization and algebraic exceptional row counts.",
+    "coefficient_domain": "F_p exact signed integer residues; integer exponent histograms in Q(zeta_p); no floating-point mathematics.",
+    "conventions": "j=x+p*y, f(j)=(x^3,y^3), exponent xj*xk+2*xj*yk+yj*yk, all shifts modulo p^2. Formal constant means constant on all of F_p.",
+    "inputs": [
+      "carry_review/growing_review/check_growing.cpp",
+      "carry_review/growing_review/run_controls.py",
+      "growing_period_counterexample.md",
+      "inputs/18_uniform_abel_bound.md",
+      "bilinear_carry_counterexample_v2.md",
+      "inputs/11_fractional_hamming_cancellation.md",
+      "inputs/13_global_switch_transfer.md"
+    ],
+    "bounds": {
+      "primes": [
+        5,
+        11,
+        17
+      ],
+      "all_nonzero_charges": true,
+      "all_ordered_row_pairs": true,
+      "phase_histogram_Gram_factorization_primes": [
+        5,
+        11
+      ],
+      "powers": "C^k for 0<=k<2p; even traces m=2k and odd traces m=2k+1",
+      "omitted_at_17": "Full Gram phase histogram comparison only; carry and exceptional classification remain exhaustive.",
+      "time_seconds": 120,
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 90,
+      "max_cores": 1
+    },
+    "non_claims": [
+      "No asymptotic theorem from finite success.",
+      "No actual BGS map is tested.",
+      "No transcendental numerical norm calculations.",
+      "No full Gram histogram factorization at p=17.",
+      "The imported Abel theorem is not numerically tested or re-proved."
+    ]
+  },
+  "execution_artifacts": [
+    "carry_review/growing_review/check_growing.cpp",
+    "carry_review/growing_review/run_controls.py",
+    "growing_period_counterexample.md",
+    "inputs/18_uniform_abel_bound.md",
+    "bilinear_carry_counterexample_v2.md",
+    "inputs/11_fractional_hamming_cancellation.md",
+    "inputs/13_global_switch_transfer.md"
+  ],
+  "software": [
+    {
+      "name": "g++",
+      "version": "g++ (Debian 14.2.0-19) 14.2.0"
+    },
+    {
+      "name": "Python",
+      "version": "Python 3.12.14"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  }
+}

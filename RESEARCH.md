@@ -1,5 +1,17 @@
 # BGS research brief
 
+## Reviewed phase checkpoint, 7 October 2026
+
+[The checked checkpoint](record/checked_research_checkpoint_20261007.md)
+strengthens the current pair residual to checksum-free low-switch removal and
+adds independently reviewed Schur/source reductions, literal fixed-word laws,
+actual radial/resolvent control and ordinary-body coercivity. The exact
+remaining pair tasks are the complete balanced microscopic law and signed
+undamped high-switch offcharge endpoint; higher factorial TRACE-005 and BGS
+remain open. [Exact scopes](mathematics/phase_trace_checkpoint.md) distinguish
+accepted proofs, source corrections, changed-family obstructions and deferred
+candidates. Main publication follows aggregate checks and fresh review.
+
 The fixed-strength microscopic BGS claim for the maintained frozen quantum map is **open**. This repository establishes subsidiary structural, arithmetic and noisy comparison results; it does not yet establish the deterministic local spectral law. Current status is controlled by [the claim ledger](record/claim_ledger.md), with exact statements in [mathematics](mathematics/README.md).
 
 ## Model and target
@@ -25,6 +37,10 @@ removes the specified ordered-diagonal sector from every fixed-order factorial
 Fourier expression at O_k(log^(2k)N/N), using actual entrywise flatness alone.
 Its collective and exponential long-cycle companions have distinct bounds;
 none is identified with WKB path masks.
+[TRACE-021](mathematics/hamming_low_switch_residual.md) removes disjoint balanced
+and off-charge Hamming sectors plus a high-Hamming low-switch family from the
+actual pair trace, with exponentially small error. One explicit signed
+residual projector remains unestimated; this does not settle higher orders.
 The exact signed complement, plateau/torsion mechanism and higher factorial
 hierarchy remain open; no BGS conclusion follows.
 

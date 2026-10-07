@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "scope": "Exact finite algebra regression only; analytic verdict is separate.",
+  "candidate_sha256": {
+    "growing_word_window.md": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+    "strong_freeness_obstruction.md": "8eab771234f702cdf840497e49d7bf43c9fc1ab673818a75f31661bc99273729"
+  },
+  "fourier_terms": 32,
+  "second_moment_re_im": "51451/1000",
+  "hessian_over_pi_squared": "Matrix([[-19606/125, 0], [0, 0]])",
+  "midpoint_phase_cases": 648,
+  "cat_residual_constants": [
+    312,
+    15288,
+    749112
+  ],
+  "outlier_loss": "146137680000 / 10^160",
+  "gaussian_fourth_moment": "3/(16*pi^2)",
+  "tree_shell_regression": "R=1,...,19"
+}

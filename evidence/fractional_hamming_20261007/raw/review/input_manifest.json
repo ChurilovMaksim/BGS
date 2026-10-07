@@ -1,0 +1,101 @@
+{
+  "observed_at": "2026-10-07T00:42:48.865510+00:00",
+  "canonical_head": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "canonical_status": " M README.md\n M RESEARCH.md\n M evidence/source_metadata/registry_metadata_20261006.json\n M evidence/source_metadata/registry_metadata_20261006.sha256\n M literature/external_dependencies.json\n M manuscript/BGS_unified.tex\n M manuscript/unified_sections/literal_time_multiplicity_bounds.tex\n M mathematics/literal_time_multiplicity_bounds.md\n M mathematics/open_questions.md\n M mathematics/results.md\n M mathematics/topics/fixed-map/README.md\n M mathematics/topics/trace-bridge/README.md\n M record/claim_ledger.md\n M record/claim_registry.md\n M record/claims.json\n M record/history/2026/INDEX.md\n M record/mathematics_topics.json\n M record/scientific_dependencies.json\n M record/scientific_dependency_graph.md\n?? computations/maintenance/tests/test_factorial_diagonal_portability.py\n?? computations/maintenance/tests/test_intermediate_layer_portability.py\n?? computations/verification/factorial_diagonal/\n?? computations/verification/factorial_diagonal_extension.py\n?? computations/verification/intermediate_old_layers/\n?? computations/verification/intermediate_old_layers_certificates.py\n?? evidence/executions/20261007/\n?? evidence/factorial_diagonal_20261007/\n?? evidence/intermediate_old_layers_20261007/\n?? manuscript/unified_sections/factorial_ordered_diagonal.tex\n?? manuscript/unified_sections/intermediate_old_layers.tex\n?? mathematics/factorial_ordered_diagonal.md\n?? mathematics/first_old_layer_classification.md\n?? mathematics/intermediate_return_operator.md\n?? mathematics/mixed_ordered_diagonal.md\n?? mathematics/residual25_affine_dictionary.md\n?? record/factorial_diagonal_promotion_mapping.json\n?? record/factorial_diagonal_review.md\n?? record/factorial_intermediate_bibliographic_impact.json\n?? record/factorial_intermediate_integration_20261007.md\n?? record/factorial_intermediate_integration_delta.json\n?? record/factorial_intermediate_postrun_evidence_delta.json\n?? record/first_old_layer_review.md\n?? record/history/2026/factorial_diagonal_20261007/\n?? record/intermediate_old_layers_promotion.md\n?? record/intermediate_old_layers_promotion_mapping.json\n?? record/intermediate_return_review.md\n?? record/mixed_ordered_diagonal_review.md\n?? record/residual25_affine_review.md\n",
+  "inputs": [
+    {
+      "source": "/workspace/shared/BGS/AGENTS.md",
+      "snapshot": "inputs/00_AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "review_snapshot": "inputs/00_AGENTS.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/SOURCE_OF_TRUTH.md",
+      "snapshot": "inputs/01_SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "review_snapshot": "inputs/01_SOURCE_OF_TRUTH.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/repository_conventions.md",
+      "snapshot": "inputs/02_repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "review_snapshot": "inputs/02_repository_conventions.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/RESEARCH.md",
+      "snapshot": "inputs/03_RESEARCH.md",
+      "sha256": "c7590bcbdd37f2feba7f57c741b8842efe1a9778a1a6a8e3803b5d7164ea5f87",
+      "review_snapshot": "inputs/03_RESEARCH.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/claim_ledger.md",
+      "snapshot": "inputs/04_claim_ledger.md",
+      "sha256": "2d679f811abc85794b5f57b1ced4654389e0c7e1e78ff62ec2ecc447d5c97e05",
+      "review_snapshot": "inputs/04_claim_ledger.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/claims.json",
+      "snapshot": "inputs/05_claims.json",
+      "sha256": "2906c039df14308432b9f90ba12039e45fab4f16e1c9e2d1e76b5d9f6718b8b7",
+      "review_snapshot": "inputs/05_claims.json"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/results.md",
+      "snapshot": "inputs/06_results.md",
+      "sha256": "f8fffa48fe4ab85251f13e6ae3752c37016432c84d37aafd7e0ee56488b01d3f",
+      "review_snapshot": "inputs/06_results.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/open_questions.md",
+      "snapshot": "inputs/07_open_questions.md",
+      "sha256": "ac98fa4ebea4b38c1611f6704cd9a543c4f8159b11abc37cf2fe9bcf24b025ab",
+      "review_snapshot": "inputs/07_open_questions.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/position_chain_mixing.md",
+      "snapshot": "inputs/08_position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "review_snapshot": "inputs/08_position_chain_mixing.md"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/ordered_diagonal_cyclic_trace.md",
+      "snapshot": "inputs/09_ordered_diagonal_cyclic_trace.md",
+      "sha256": "54d6e6873b620a34523b96767e8229721800486a687016a48af08c06f2e16faf",
+      "review_snapshot": "inputs/09_ordered_diagonal_cyclic_trace.md"
+    },
+    {
+      "source": "/workspace/shared/bgs_balanced_complement_attack/candidate_v1.md",
+      "snapshot": "inputs/10_candidate_v1.md",
+      "sha256": "2ce67b8d33b574e5b245affd49f6592a9636b6075e4c288af8e718cc27c9404f",
+      "review_snapshot": "inputs/10_candidate_v1.md"
+    },
+    {
+      "source": "/workspace/shared/bgs_balanced_complement_attack/growth_addendum.md",
+      "snapshot": "inputs/11_growth_addendum.md",
+      "sha256": "966c31db09a3f50134d52ab63bba37b0d6d4e57a7fef521de5ab6d0deb111ae5",
+      "review_snapshot": "inputs/11_growth_addendum.md"
+    },
+    {
+      "source": "/workspace/shared/bgs_balanced_hamming_review/review.md",
+      "snapshot": "inputs/12_review.md",
+      "sha256": "5b5fefbc8b92a0e389d71892d6601de404b8facfafb8798999b136afae565964",
+      "review_snapshot": "inputs/12_review.md"
+    },
+    {
+      "source": "/workspace/shared/bgs_balanced_marker_extension/candidate_v1.md",
+      "review_snapshot": "inputs/candidate_v1.md",
+      "sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/collective_occupation_hierarchy.md",
+      "review_snapshot": "inputs/collective_occupation_hierarchy.md",
+      "sha256": "e1a7590ac0f572e3effd68ce0d783ced38f33e2c0c8bbc5939a2d40914fc373f"
+    },
+    {
+      "source": "/workspace/shared/bgs_balanced_marker_extension/input_manifest.json",
+      "review_snapshot": "inputs/author_input_manifest.json",
+      "sha256": "b683574f8fa9bf88c2fab2f66d3a95d228af6ea49b89fa7920f8a8220ef25a7c"
+    }
+  ],
+  "scope": "Independent read-only audit; immutable target and source snapshots. No canonical edits."
+}

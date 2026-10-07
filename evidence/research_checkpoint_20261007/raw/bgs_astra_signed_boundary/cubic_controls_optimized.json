@@ -1,0 +1,163 @@
+{
+  "arithmetic": "integers and rational fractions; no floating tolerance",
+  "asymptotic_claim": "not numerically tested; see proof",
+  "modular": [
+    {
+      "cubic_phases": 64,
+      "fourier_square_histograms": 25,
+      "p": 5,
+      "quadratic_phases": 16,
+      "row_pairs": 80
+    },
+    {
+      "cubic_phases": 1000,
+      "fourier_square_histograms": 121,
+      "p": 11,
+      "quadratic_phases": 100,
+      "row_pairs": 1100
+    },
+    {
+      "cubic_phases": 4096,
+      "fourier_square_histograms": 289,
+      "p": 17,
+      "quadratic_phases": 256,
+      "row_pairs": 4352
+    },
+    {
+      "cubic_phases": 10648,
+      "fourier_square_histograms": 529,
+      "p": 23,
+      "quadratic_phases": 484,
+      "row_pairs": 11132
+    },
+    {
+      "cubic_phases": 21952,
+      "fourier_square_histograms": 841,
+      "p": 29,
+      "quadratic_phases": 784,
+      "row_pairs": 22736
+    }
+  ],
+  "occupation": {
+    "cycle_N3": [
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 1,
+        "monomials": 0
+      },
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 2,
+        "monomials": 0
+      },
+      {
+        "B": "9",
+        "diagonal_energy": "3",
+        "gradient_energy": "27",
+        "m": 3,
+        "monomials": 1
+      },
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 4,
+        "monomials": 0
+      },
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 5,
+        "monomials": 0
+      },
+      {
+        "B": "9",
+        "diagonal_energy": "3",
+        "gradient_energy": "108",
+        "m": 6,
+        "monomials": 1
+      }
+    ],
+    "rational_dense_N3": [
+      {
+        "B": "17/27",
+        "diagonal_energy": "17/27",
+        "gradient_energy": "17/27",
+        "m": 1,
+        "monomials": 3
+      },
+      {
+        "B": "2315/729",
+        "diagonal_energy": "1291/729",
+        "gradient_energy": "5164/729",
+        "m": 2,
+        "monomials": 6
+      },
+      {
+        "B": "337201/177147",
+        "diagonal_energy": "17897/19683",
+        "gradient_energy": "17897/2187",
+        "m": 3,
+        "monomials": 10
+      },
+      {
+        "B": "17267563/4782969",
+        "diagonal_energy": "8442731/4782969",
+        "gradient_energy": "135083696/4782969",
+        "m": 4,
+        "monomials": 15
+      },
+      {
+        "B": "392635913/129140163",
+        "diagonal_energy": "179451401/129140163",
+        "gradient_energy": "4486285025/129140163",
+        "m": 5,
+        "monomials": 21
+      },
+      {
+        "B": "264338580833/94143178827",
+        "diagonal_energy": "552593755/387420489",
+        "gradient_energy": "2210375020/43046721",
+        "m": 6,
+        "monomials": 28
+      }
+    ],
+    "two_cycles_N4": [
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 1,
+        "monomials": 0
+      },
+      {
+        "B": "8",
+        "diagonal_energy": "4",
+        "gradient_energy": "16",
+        "m": 2,
+        "monomials": 2
+      },
+      {
+        "B": "0",
+        "diagonal_energy": "0",
+        "gradient_energy": "0",
+        "m": 3,
+        "monomials": 0
+      },
+      {
+        "B": "8",
+        "diagonal_energy": "4",
+        "gradient_energy": "64",
+        "m": 4,
+        "monomials": 2
+      }
+    ]
+  },
+  "python": "3.12.14",
+  "status": "passed"
+}

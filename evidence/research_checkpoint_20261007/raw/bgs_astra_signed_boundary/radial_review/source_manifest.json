@@ -1,0 +1,61 @@
+{
+  "review_type": "independent internal mathematical audit",
+  "canonical_access": "read only",
+  "candidate_sha256": "43319ca5c799fd6e10479fca71e8c8fa5d7783dcd38b7493e48bba11218de37a",
+  "sources": [
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/actual_radial_shell.md",
+      "sha256": "43319ca5c799fd6e10479fca71e8c8fa5d7783dcd38b7493e48bba11218de37a"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/source_manifest.json",
+      "sha256": "b51532cd0d828bb699306251dd494694a23c5892e655d6dcdd6f2e3c1e5a8445"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/inputs/14_11_all_translation_proof.md",
+      "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/inputs/12_onestep_charge_gap.md",
+      "sha256": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md",
+      "sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/inputs/13_global_switch_transfer.md",
+      "sha256": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be"
+    },
+    {
+      "path": "/workspace/shared/BGS/mathematics/fixed_model_symmetry_theorem.md",
+      "sha256": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2"
+    },
+    {
+      "path": "/workspace/shared/BGS/literature/frozen_operator_transfer_sources_20261006.md",
+      "sha256": "4877589990a69b8c9caafd59a00548fea4451e35c45adb69da236dcab5292523"
+    },
+    {
+      "path": "/workspace/shared/bgs_all_translation_review/review.md",
+      "sha256": "7b046dd79bdb000a0d84c150a1949d517fdb2043c3a3c81d6929e8c5e2ae17b4"
+    },
+    {
+      "path": "/workspace/shared/bgs_onestep_charge_review/review.md",
+      "sha256": "3c352025086e239d0dec874855f604940ed6f87ed5b5e1a3767db07f3c572499"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/actual_radial_resolvent.md",
+      "sha256": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/radial_review/review.md",
+      "sha256": "86cd97b00ce3bbaf9b281632159db1eb7d933f45207838cb3cc07ad5eefd2341"
+    },
+    {
+      "path": "/workspace/shared/bgs_astra_signed_boundary/radial_review/resolvent_review.md",
+      "sha256": "689f1084730ba670671f4a7cceeb628c02741eb7c4d92500108930e8e2d9db4c"
+    }
+  ]
+}

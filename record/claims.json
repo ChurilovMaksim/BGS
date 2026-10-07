@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -2260,7 +2260,10 @@
         "mathematics/even_oldform_first_order_obstruction.md",
         "mathematics/first_old_layer_classification.md",
         "mathematics/intermediate_return_operator.md",
-        "mathematics/residual25_affine_dictionary.md"
+        "mathematics/residual25_affine_dictionary.md",
+        "mathematics/odd_newest_sector_first_jet.md",
+        "mathematics/residual125_uniform_splitting.md",
+        "mathematics/odd_sector_count_combination.md"
       ],
       "evidence": [
         "record/cat_jet_rank_review.md",
@@ -2278,19 +2281,272 @@
         "record/residual25_affine_review.md",
         "record/intermediate_old_layers_promotion.md",
         "record/intermediate_old_layers_promotion_mapping.json",
-        "evidence/intermediate_old_layers_20261007/promotion_receipt.json"
+        "evidence/intermediate_old_layers_20261007/promotion_receipt.json",
+        "record/residual125_uniform_review.md",
+        "record/residual125_promotion_map.json",
+        "record/odd_newest_sector_review.md",
+        "record/odd_sector_count_combination_review.md"
       ],
       "verifiers": [
         "computations/verification/cat_jet_certificates.py",
-        "computations/verification/intermediate_old_layers_certificates.py"
+        "computations/verification/intermediate_old_layers_certificates.py",
+        "computations/verification/residual125_certificates.py",
+        "computations/verification/odd_newest_certificates.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/literal_time_multiplicity_bounds.tex",
         "manuscript/unified_sections/intermediate_old_layers.tex"
       ],
-      "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including 10^-80N: multiplicity<=7. At least 612N/625+7 simple eigenvalues for even e>=4 and 612N/625+175 for even e>=6. Exact special lower bounds 4333 at N=4375 and 107443 at N=109375. Retain at least 35 for odd e>=5 and bounded simple U at 35,175. No full uniform U simplicity, gap, invariant oldform U subspace, complex scalar commutant, trace-statistical or BGS conclusion.",
-      "dependency_scope": "Rank transfer uses algebraic exponential-polynomial minors and registered LW. Cat/tower/core/newest-sector premises separately reviewed; no simple-A or pair-commutant inference. Kelmer inert multiplicity mechanism cited only for prior attribution. First-old classification, exact matrix-return/lattice obstruction, and residual25 bridge independently accepted; local branch counts add over disjoint complete cat eigenspaces and inherit the existing exponential-rank transfer. Residual25 uses circlewise unit denominator6; nonprimitive j2 term retains residual cat and valuation>=49/25. No new external input."
+      "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including 10^-80N: multiplicity<=7. At least 612N/625+7 simple eigenvalues for even e>=4 and 612N/625+175 for even e>=6. Exact special lower bounds 4333 at N=4375 and 107443 at N=109375. Odd e>=3 gives at least 24N/25 simple eigenvalues; odd e>=5 gives 24N/25+35; odd e>=7 gives 24N/25+875 (875=840+35, counted once) and bounded simple U at 35,175. No full uniform U simplicity, gap, invariant oldform U subspace, complex scalar commutant, trace-statistical or BGS conclusion.",
+      "dependency_scope": "Rank transfer uses algebraic exponential-polynomial minors and registered LW. Cat/tower/core/newest-sector premises separately reviewed; no simple-A or pair-commutant inference. Kelmer inert multiplicity mechanism cited only for prior attribution. First-old classification, exact matrix-return/lattice obstruction, and residual25 bridge independently accepted; local branch counts add over disjoint complete cat eigenspaces and inherit the existing exponential-rank transfer. Residual25 uses circlewise unit denominator6; nonprimitive j2 term retains residual cat and valuation>=49/25. No new external input. Odd newest first-order and residual125 second-order bridges are separately independently accepted; the 875-dimensional W_j is contained in W1 and disjoint from the newest complete cat groups. Existing rank transfer and registered LW give literal-time counts. The odd first-old follow-on is excluded."
+    },
+    {
+      "id": "BGS-TRACE-021",
+      "title": "Disjoint Hamming and low-switch pair residual reduction",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT HAMMING/TRANSLATION/RUN/SYNTHESIS AUDITS + BOUNDED EXACT CONTROLS; INHERITED ACTUAL ANALYTIC INPUTS",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-TRACE-020",
+        "BGS-FM-021",
+        "BGS-FM-027",
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/balanced_hamming_hierarchy.md",
+        "mathematics/balanced_hamming_growth.md",
+        "mathematics/fractional_hamming_cancellation.md",
+        "mathematics/macroscopic_coordinate_translation.md",
+        "mathematics/all_coordinate_translation.md",
+        "mathematics/low_switch_offcharge_family.md",
+        "mathematics/fourier_half_radius_obstruction.md",
+        "mathematics/symplectic_half_radius_obstruction.md",
+        "mathematics/checksum_free_residual.md",
+        "mathematics/global_switch_transfer.md",
+        "mathematics/rounding_gap_obstruction.md"
+      ],
+      "evidence": [
+        "record/balanced_hamming_review.md",
+        "record/coordinate_translation_review.md",
+        "record/all_coordinate_translation_review.md",
+        "record/low_switch_offcharge_review.md",
+        "record/central_residual_promotion_map.json",
+        "record/fractional_hamming_review.md",
+        "record/fractional_hamming_raw_mapping.json",
+        "record/fractional_hamming_adapter_mapping.json",
+        "evidence/fractional_hamming_20261007/replay/comparison.json",
+        "record/half_radius_obstruction_review.md",
+        "record/half_radius_promotion_map.json",
+        "record/charge_strengthening_dependency_contract.json",
+        "record/charge_strengthening_promotion.md"
+      ],
+      "verifiers": [
+        "computations/verification/central_residual_extension.py",
+        "computations/verification/fractional_hamming_replay.py",
+        "computations/verification/half_radius_obstructions.py",
+        "computations/verification/fractional_hamming_full_end_2_1.py",
+        "computations/verification/fractional_hamming_full_end_2_2.py",
+        "computations/verification/fractional_hamming_full_end_2_3.py",
+        "computations/verification/fractional_hamming_full_end_3_2.py",
+        "computations/verification/fractional_hamming_top_gram.py",
+        "computations/verification/fractional_hamming_torus.py",
+        "computations/verification/fractional_hamming_network.py",
+        "computations/verification/fractional_hamming_offcharge_bound.py",
+        "computations/verification/charge_strengthening_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/hamming_low_switch_residual.tex",
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Actual odd N fixed literal tau and each fixed positive compact pair band. Current Q_new=I-P_H-P_bal-O_low-L_all removes all occupation-mismatched high-Hamming low-switch masks, including checksum zero, with cap floor(gamma a N/(8log N)); balanced part remains Pi-P_H-P_bal. Full high-switch damped control requires kappa a N(1-z_N)-2log N->+infinity. Signed undamped T16, full Q_new trace, balanced identification, plateau, higher factorial law and BGS remain OPEN. Existing entropy/radius hypotheses and no raw balanced-mask identification are unchanged.",
+      "dependency_scope": "Current checksum-free core uses FM027 actual phase/parametrix A2--A5 and scoped FM021; old all-translation Egorov/mixing proof survives independently, not as an unnecessary prerequisite of the strengthened synthesis. Existing Hamming/Haar and separate altered-operator rounding bounds retain their own inputs."
+    },
+    {
+      "id": "BGS-FM-027",
+      "title": "Uniform actual one-step cyclic-charge gap",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/onestep_charge_gap.md",
+        "mathematics/global_switch_transfer.md",
+        "mathematics/four_branch_parametrix.md"
+      ],
+      "evidence": [
+        "record/charge_strengthening_dependency_contract.json",
+        "evidence/charge_strengthening_20261007/raw/review/review.md",
+        "evidence/charge_strengthening_20261007/raw/review/companion_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/charge_strengthening_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Actual odd-N fixed tau=10^-80, existential rho<1 and N0 for all nonzero cyclic charge blocks; centered charge-pinched ordinary-HS gap. Occupation twists and damped switch controls retain exact masks. No effective startup, full adjoint contraction, z=1 boundary comparison or BGS conclusion.",
+      "dependency_scope": "Actual parametrix/nonlinear phase A2--A5 and scoped FM-021 amplitude/zero-charge inputs only. FM-018, Egorov, A6--A7 and classical mixing are excluded as core prerequisites."
+    },
+    {
+      "id": "BGS-TRACE-022",
+      "title": "Exact full balanced-pair Schur energy and three-radius equivalence",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/balanced_pair_schur_reduction.md"
+      ],
+      "evidence": [
+        "record/schur_reduction_integration_proposal.json",
+        "evidence/schur_reduction_20261007/raw/review/review.md"
+      ],
+      "verifiers": [
+        "computations/verification/balanced_pair_schur.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Arbitrary finite unitary: exact Schur-energy identity and expected three-radius criterion. Positivity after phase expectation; reverse compact-to-Abel needs near-zero majorant/Fejer tail. Actual microscopic radial limit, deterministic offcharge and higher factorial identification stay OPEN.",
+      "dependency_scope": "Core is elementary finite-N algebra/phase integration. FM-021 only supports actual boundary-density flatness. No eliminated-minor propagation or FM-022 prerequisite."
+    },
+    {
+      "id": "BGS-TRACE-023",
+      "title": "Completed compact pair source and uniform complex microscopic source bounds",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-ZIRN-2021"
+      ],
+      "proof_dependencies": [
+        "mathematics/compact_phase_pair_identity.md",
+        "mathematics/uniform_phase_pair_abel_bound.md",
+        "mathematics/complex_microscopic_phase_source_bounds.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_microscopic_source_bounds.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Arbitrary finite unitary, |a|,|b|<1 and complex numerator sources: complete compact color-one pair projector identity. Universal F_N(s)<=coth(s/N)/(2N). Fixed-flavor complex source regularity and full-product uniform integrability concern original phase ensemble, not a higher-flavor CFT. Complete signed hook-covariance limit and balanced identification remain OPEN.",
+      "dependency_scope": "Zirnbauer exact coherent sections/projector domain is mapped; generalized Minami resampling is credited but the unitary source-bound adaptation is proved directly. No actual P/Q-gap input identifies the limit."
+    },
+    {
+      "id": "BGS-FM-028",
+      "title": "Actual q1 theta0 charge-pinching radial shell and resolvent",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/actual_charge_radial_shell.md",
+        "mathematics/actual_charge_radial_resolvent.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/review.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/resolvent_review.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ACCEPTANCE_AND_PROVENANCE.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Unchanged odd-N fixed tau, q=1 theta=0 only. Whole charge pinching is collectively compact and annihilates centered near-unitary quasimodes. Every delta_N->0 has radius 1-delta_N+o(delta_N); exterior relative resolvent comparison and worst unit-circle singular-resolvent scale delta_N^-1(1+o(1)). No occupation-uniform extension, power/Schatten estimate or signed T16 conclusion.",
+      "dependency_scope": "Unlike FM027, uses inherited ordinary-Weyl embedding, one-step Egorov and actual classical mixing. Frozen author citation is resolved by exact-diff acceptance seal. Replay checks packet preservation, not this analytic theorem."
+    },
+    {
+      "id": "BGS-FM-029",
+      "title": "Literal kick/cat moment laws, triple-log word window and strong-freeness obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [
+        "EXT-ROY-2016"
+      ],
+      "proof_dependencies": [
+        "mathematics/literal_kick_phase_law.md",
+        "mathematics/literal_fixed_word_freeness.md",
+        "mathematics/literal_growing_word_window.md",
+        "mathematics/literal_strong_freeness_obstruction.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_literal_kick_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_fixed_word_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Literal odd-N fixed tau: fixed free-group normalized *-moments are two free Haar unitaries, with relative-word chord/rank laws. Separately reviewed uniform nonidentity trace decay holds only through floor(log log log N/(4log8)). A fixed commutator polynomial has liminf lambda_max>=1-10^-148 versus free radius sqrt(3)/2, refuting strong freeness. Neither triple-log windows nor the derived-polynomial outlier identifies U_N microscopic statistics or Heisenberg words.",
+      "dependency_scope": "Exact actual midpoint symbol and faithful equilibrium derivative representation; inherited one-step Egorov/fixed canonical-transformation trace input retains its stated review boundary. Seven-divisible subsequences included. Growing quantitative separation uses separately checked EXT-ROY-2016. Strong obstruction uses exact raw Gaussian/Weyl conventions and fixed-symbol coherent-state bounds, not a growing-symbol theorem."
+    },
+    {
+      "id": "BGS-FM-030",
+      "title": "Global scalar and block body coercivity with real absorption",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [
+        "EXT-BHATIA-2002"
+      ],
+      "proof_dependencies": [
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "mathematics/actual_body_coercivity_constants.md",
+        "mathematics/bosonic_body_radial_translation.md",
+        "mathematics/real_absorption_body_coercivity.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/audit.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "All positive N,k, max P<=C/N, singular ||P-J||<=rho<1 and centered strict possibly nonnormal blocks: S>=H/(2K^2), K=1+sqrt(C-1)/(1-rho). Actual eventual c=1/50. Sharp real-alpha absorption gives S_alpha>=cH-ks/2. Scalar ordinary gauge/radial slice does not give block/super gauge. No full superintegral positivity, normalized large-N tail, complex-alpha substitution or BGS identification.",
+      "dependency_scope": "Bhatia generalized EMI exact primary leaf; ordinary finite matrix proof and centered block extension separately reviewed. FM021 only supports eventual actual C/rho constants. Bare-body source interpretation is separately qualified, not a full CFT prerequisite."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

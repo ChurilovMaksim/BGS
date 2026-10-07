@@ -1,0 +1,315 @@
+{
+  "arithmetic": "exact integer cyclotomic coefficient vectors",
+  "finite_fields": [
+    {
+      "charge_phase_degree_counts": {
+        "2": 16,
+        "3": 64
+      },
+      "p": 5,
+      "v_square_reflection": true
+    },
+    {
+      "charge_phase_degree_counts": {
+        "2": 100,
+        "3": 1000
+      },
+      "p": 11,
+      "v_square_reflection": true
+    },
+    {
+      "charge_phase_degree_counts": {
+        "2": 256,
+        "3": 4096
+      },
+      "p": 17,
+      "v_square_reflection": true
+    },
+    {
+      "charge_phase_degree_counts": {
+        "2": 484,
+        "3": 10648
+      },
+      "p": 23,
+      "v_square_reflection": true
+    },
+    {
+      "charge_phase_degree_counts": {
+        "2": 784,
+        "3": 21952
+      },
+      "p": 29,
+      "v_square_reflection": true
+    }
+  ],
+  "nonclaims": [
+    "No numerical test establishes the universal gradient inequality, charge decay, or asymptotic divergence.",
+    "The family is not the fixed quantization and fails reverse-kernel decay."
+  ],
+  "path_cases": [
+    {
+      "balanced_numerator_cyclotomic": [
+        5,
+        0,
+        0,
+        0
+      ],
+      "denominator": 5,
+      "low_h_cutoff": 0,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 1,
+      "occupation_classes": 5,
+      "p": 5,
+      "rooted_words": 5,
+      "total_numerator_cyclotomic": [
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        45,
+        0,
+        0,
+        0
+      ],
+      "denominator": 25,
+      "low_h_cutoff": 0,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 2,
+      "occupation_classes": 15,
+      "p": 5,
+      "rooted_words": 25,
+      "total_numerator_cyclotomic": [
+        25,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        545,
+        0,
+        0,
+        0
+      ],
+      "denominator": 125,
+      "low_h_cutoff": 1,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 3,
+      "occupation_classes": 35,
+      "p": 5,
+      "rooted_words": 125,
+      "total_numerator_cyclotomic": [
+        125,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        2845,
+        0,
+        -80,
+        -80
+      ],
+      "denominator": 625,
+      "exact_mask_partition": true,
+      "low_h_cutoff": 1,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 4,
+      "mask_pair_enumeration": 390625,
+      "occupation_classes": 70,
+      "p": 5,
+      "rooted_words": 625,
+      "switch_cutoff": 1,
+      "total_numerator_cyclotomic": [
+        15625,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "denominator": 11,
+      "low_h_cutoff": 0,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 1,
+      "occupation_classes": 11,
+      "p": 11,
+      "rooted_words": 11,
+      "total_numerator_cyclotomic": [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        231,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "denominator": 121,
+      "low_h_cutoff": 0,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 2,
+      "occupation_classes": 66,
+      "p": 11,
+      "rooted_words": 121,
+      "total_numerator_cyclotomic": [
+        121,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        6941,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "denominator": 1331,
+      "low_h_cutoff": 1,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 3,
+      "occupation_classes": 286,
+      "p": 11,
+      "rooted_words": 1331,
+      "total_numerator_cyclotomic": [
+        1331,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "balanced_numerator_cyclotomic": [
+        1968179,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "denominator": 279841,
+      "low_h_cutoff": 1,
+      "low_h_offcharge_exactly_zero": true,
+      "m": 4,
+      "occupation_classes": 14950,
+      "p": 23,
+      "rooted_words": 279841,
+      "total_numerator_cyclotomic": [
+        148035889,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "source_hashes_verified": [
+    "inputs/00_AGENTS.md",
+    "inputs/01_SOURCE_OF_TRUTH.md",
+    "inputs/02_repository_conventions.md",
+    "inputs/03_RESEARCH.md",
+    "inputs/04_claim_ledger.md",
+    "inputs/05_claims.json",
+    "inputs/06_results.md",
+    "inputs/07_open_questions.md",
+    "inputs/08_fixed_map_path_model.md",
+    "inputs/09_frozen_operator_transfer_coercivity.md",
+    "inputs/10_heisenberg_time_insertion.md",
+    "inputs/11_fractional_hamming_cancellation.md",
+    "inputs/12_onestep_charge_gap.md",
+    "inputs/13_global_switch_transfer.md",
+    "inputs/14_11_all_translation_proof.md",
+    "inputs/15_HANDOFF.md",
+    "inputs/16_report.md",
+    "inputs/17_report.md"
+  ],
+  "status": "passed"
+}

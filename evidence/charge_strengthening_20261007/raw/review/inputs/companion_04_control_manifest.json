@@ -1,0 +1,62 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "arithmetic": "exact Python integers for Gaussian numerators; no numerical libraries",
+  "caps": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 60,
+    "subprocess_wall_seconds": 70
+  },
+  "source_hashes_before": {
+    "check_exact.py": "ba7530e3cc11135658821b301635bdc74da276bf9a0fd5886a89db918e9475b5",
+    "onestep_charge_gap.md": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a",
+    "global_switch_transfer.md": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be",
+    "rounding_gap_obstruction.md": "9194eac0959c18b7c865eaeef1e00925c32deac1fa0ab680c43af8164b5d7f57"
+  },
+  "source_hashes_after": {
+    "check_exact.py": "ba7530e3cc11135658821b301635bdc74da276bf9a0fd5886a89db918e9475b5",
+    "onestep_charge_gap.md": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a",
+    "global_switch_transfer.md": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be",
+    "rounding_gap_obstruction.md": "9194eac0959c18b7c865eaeef1e00925c32deac1fa0ab680c43af8164b5d7f57"
+  },
+  "jobs": [
+    {
+      "tag": "normal",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/shared/bgs_dense_offcharge_attack/check_exact.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.2574083490035264,
+      "stdout_sha256": "d6a02c4b1a205040e182964126b19402e53bc518aad92b60a79ade1123006d98",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "optimized",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_dense_offcharge_attack/check_exact.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.3307643670050311,
+      "stdout_sha256": "d6a02c4b1a205040e182964126b19402e53bc518aad92b60a79ade1123006d98",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "injected",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/shared/bgs_dense_offcharge_attack/check_exact.py",
+        "--inject-failure"
+      ],
+      "returncode": 1,
+      "elapsed_seconds": 0.112375439995958,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "13f81a3a983f69f352b5df6e805b508811daf5cf83e29b03b0bb8b82805d6487"
+    }
+  ],
+  "result_sha256": "d6a02c4b1a205040e182964126b19402e53bc518aad92b60a79ade1123006d98",
+  "analytic_nonclaim": "These are bounded auxiliary-matrix identities, not asymptotic or literal-tau computation."
+}

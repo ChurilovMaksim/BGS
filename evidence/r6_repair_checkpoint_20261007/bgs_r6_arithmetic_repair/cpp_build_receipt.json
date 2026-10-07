@@ -1,0 +1,15 @@
+{
+  "cwd": "/workspace/shared/bgs_r6_repair_checkout",
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "computations/cpp/magnetic_word_verifier.cpp",
+    "-o",
+    "/workspace/shared/bgs_r6_arithmetic_repair/magnetic_word_verifier"
+  ],
+  "exit_code": 0,
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "source_sha256": "99f9331927db49a7b04c072a253f9ed1b53693b1238955d09e733f0adee70a8f",
+  "binary_sha256": "6c73591418b5ed7e1b5cacaa3f18ba43cab449d32f42073ff9a0b9713abbca63"
+}

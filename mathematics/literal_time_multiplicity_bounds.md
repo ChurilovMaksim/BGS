@@ -12,7 +12,9 @@ literal t=10^-80 N:
 - at least 612N/625+175 eigenvalues are simple for even e>=6;
 - at N=4375, at least 4333 eigenvalues are simple;
 - at N=109375, at least 107443 eigenvalues are simple;
-- at least 35 eigenvalues are simple for odd e>=5.
+- at least 24N/25 eigenvalues are simple for odd e>=3;
+- at least 24N/25+35 eigenvalues are simple for odd e>=5;
+- at least 24N/25+875 eigenvalues are simple for odd e>=7.
 
 The even bounds sharpen the earlier 24N/25+7 count. They are additive counts
 on disjoint complete unperturbed cat eigenspaces, followed by the already
@@ -75,6 +77,22 @@ At N=4375 (l=1), exactly 18 first-old blocks split at first order. Hence
 and residual-25 splitting supplies the disjoint 175-dimensional old group.
 Hence 105000 + 324*7 + 175 = 107443. These are lower bounds, not full simplicity.
 
+## Odd newest sector and residual 125
+
+The [odd newest-sector theorem](odd_newest_sector_first_jet.md) gives simple
+first-order compression on every complete seven-dimensional cat group in
+W1-perpendicular, accounting for 24N/25 branches for odd e>=3. Its five-fiber
+holonomy, full 5L dual denominator, Gauss signs and all wild labels are retained.
+The inherited deepest odd core contributes 35 disjoint branches for odd e>=5.
+
+The [residual-125 theorem](residual125_uniform_splitting.md) splits all 120
+new seven-dimensional groups in W_j minus W_(j+1), e=2j+3, j>=2, at second
+order. Together with the deepest core, W_j contains 840+35=875 branches.
+The [separately checked combination](odd_sector_count_combination.md) proves
+W_j is contained in W1, so these complete groups are disjoint from the newest
+sector. It gives 24N/25+875 for odd e>=7, counting the 35 only once. Existing
+algebraic-time rank transfer applies to the resulting local branch count.
+
 ## Exact rank-transfer attribution and boundary
 
 Within a complete cat block, distinct first nonconstant phase coefficients
@@ -101,7 +119,8 @@ No full uniform U simplicity, quantitative gap, full complex scalar U
 commutant, higher trace estimate, plateau or BGS follows. Larger even
 intermediate residuals (especially 625 and above) still require character
 compression with 5-primary cycle denominators and possible phase cancellation.
-Odd intermediate layers require their own compatible basis. The shorter
+Larger odd intermediate residuals beyond the accepted 125 case still require
+their own compatible basis. The separate odd first-old follow-on is excluded. The shorter
 all-depth digit rule for singular sums is optional and unproved; the separate
 Cayley/Morse continuation is unchecked and not a dependency.
 

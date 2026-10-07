@@ -1,0 +1,18 @@
+[
+  {
+    "command": [
+      "python3",
+      "checks.py"
+    ],
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "reviewer/verify_one_site.py"
+    ],
+    "exit": 0,
+    "stderr": ""
+  }
+]

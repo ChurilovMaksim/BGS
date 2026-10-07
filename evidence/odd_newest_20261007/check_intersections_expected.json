@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "l": 1,
+      "h": 5,
+      "root_cases": 36,
+      "direct_orbit_cases": 36,
+      "two_root": 18,
+      "no_root": 9,
+      "singular": 9,
+      "singular_points": 9
+    },
+    {
+      "l": 2,
+      "h": 25,
+      "root_cases": 180,
+      "direct_orbit_cases": 180,
+      "two_root": 90,
+      "no_root": 45,
+      "singular": 45,
+      "singular_points": 45
+    },
+    {
+      "l": 3,
+      "h": 125,
+      "root_cases": 900,
+      "direct_orbit_cases": 900,
+      "two_root": 450,
+      "no_root": 225,
+      "singular": 225,
+      "singular_points": 225
+    },
+    {
+      "l": 4,
+      "h": 625,
+      "root_cases": 4500,
+      "direct_orbit_cases": 0,
+      "two_root": 2250,
+      "no_root": 1125,
+      "singular": 1125,
+      "singular_points": 1125
+    }
+  ],
+  "elapsed_seconds": 0.1917179199954262
+}

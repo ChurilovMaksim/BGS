@@ -25,6 +25,21 @@ from workspace_sources import git_root, read_manifest, validate
 
 ROOT=Path(__file__).resolve().parents[2]
 
+# These replays expose durable evidence modes. Keep their fresh outputs under
+# --logs so the CI artifact upload preserves new results even after failure.
+REPLAY_ARTIFACT_OPTIONS = {
+    'intermediate_old_layers_certificates': '--replay-output-dir',
+    'charge_strengthening_replay': '--output-dir',
+    'balanced_pair_schur': '--output-dir',
+    'research_checkpoint_replay': '--output-dir',
+}
+
+
+def replay_artifact_args(name: str, certificate_directory: Path) -> list[str]:
+    option = REPLAY_ARTIFACT_OPTIONS.get(name)
+    return [option, str(certificate_directory / name)] if option else []
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -252,6 +267,7 @@ def main() -> None:
             deferred_checker=p
             continue
         cmd=[sys.executable,str(p)]
+        cmd += replay_artifact_args(p.stem, certificate_directory)
         if p.stem=='pell_floquet_regression':
             cmd+=['--cpp',str(args.build/'pell_pair_orthogonality')]
         elif p.stem in {'actual_algebra_check', 'actual_factor_check', 'actual_field_check', 'actual_casoratian_check'}:

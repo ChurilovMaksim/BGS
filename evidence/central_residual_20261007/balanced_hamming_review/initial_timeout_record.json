@@ -1,0 +1,14 @@
+{
+  "status": "timeout",
+  "exit_status": 124,
+  "observed_completion_at": "2026-10-07T00:31:30.908576+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 timeout 240 python independent_controls.py > results/independent_controls.log 2>&1",
+  "source_snapshot": "inputs/independent_controls_initial.py",
+  "source_sha256": "9a7fa187aaeaf86fa0c4ad98333eb03c511f04e21970a6edc35cefda104ddf99",
+  "log": "results/independent_controls.log",
+  "log_sha256": "7c10209c4137e5d28349a2e1f6b6a148e0bc5c9d6453a08caeb86685f1650ba5",
+  "effective_wall_limit_seconds": 240,
+  "separate_cpu_or_memory_limits": "not set by initial command",
+  "result": "No complete result; symbolic-expression growth in last test, corrected by exact intermediate expansion.",
+  "nonclaim": "Not a counterexample to any mathematical claim."
+}

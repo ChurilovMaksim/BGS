@@ -1,0 +1,96 @@
+{
+  "base": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "canonical_access": "read_only",
+  "sources": [
+    {
+      "source": "/workspace/shared/BGS/AGENTS.md",
+      "copy": "inputs/00_AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "source": "/workspace/shared/BGS/SOURCE_OF_TRUTH.md",
+      "copy": "inputs/01_SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/repository_conventions.md",
+      "copy": "inputs/02_repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "source": "/workspace/shared/BGS/RESEARCH.md",
+      "copy": "inputs/03_RESEARCH.md",
+      "sha256": "bbdc992f6648222cc4bf84f602e8c41bb0adca688befbfa824cc872b9dc8da49"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/claim_ledger.md",
+      "copy": "inputs/04_claim_ledger.md",
+      "sha256": "9f069a8ed1e48c285f49a381a197cdb1db6240c4f088270bae9aae7d9d588f9f"
+    },
+    {
+      "source": "/workspace/shared/BGS/record/claims.json",
+      "copy": "inputs/05_claims.json",
+      "sha256": "8b0cefde265c20e1bab261157fb35cbaeb7f593e483441c5766f3e4ace2e983c"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/results.md",
+      "copy": "inputs/06_results.md",
+      "sha256": "2e01f7f59e183e7933faf8d21ac402995a12830027d4fe2ac7175c388df6a71f"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/open_questions.md",
+      "copy": "inputs/07_open_questions.md",
+      "sha256": "854d2f5937d215f7b44021bf1b9321c8d1e1238a253591a4f86d8874b8b226cd"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/fixed_map_path_model.md",
+      "copy": "inputs/08_fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/frozen_operator_transfer_coercivity.md",
+      "copy": "inputs/09_frozen_operator_transfer_coercivity.md",
+      "sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/heisenberg_time_insertion.md",
+      "copy": "inputs/10_heisenberg_time_insertion.md",
+      "sha256": "f1937a140fb6bd27846856b17bb21f862f22c88c4452a7ede7b3b4562e7a08ed"
+    },
+    {
+      "source": "/workspace/shared/BGS/mathematics/fractional_hamming_cancellation.md",
+      "copy": "inputs/11_fractional_hamming_cancellation.md",
+      "sha256": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5"
+    },
+    {
+      "source": "/workspace/shared/bgs_dense_offcharge_attack/onestep_charge_gap.md",
+      "copy": "inputs/12_onestep_charge_gap.md",
+      "sha256": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a"
+    },
+    {
+      "source": "/workspace/shared/bgs_dense_offcharge_attack/global_switch_transfer.md",
+      "copy": "inputs/13_global_switch_transfer.md",
+      "sha256": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be"
+    },
+    {
+      "source": "/workspace/shared/bgs_dense_offcharge_attack/inputs/11_all_translation_proof.md",
+      "copy": "inputs/14_11_all_translation_proof.md",
+      "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
+    },
+    {
+      "source": "/workspace/shared/bgs_dense_offcharge_attack/HANDOFF.md",
+      "copy": "inputs/15_HANDOFF.md",
+      "sha256": "18a8d1d00387fd261f17d112c4cf6c152feee99f0a2c98fd6f5574a9918d39ea"
+    },
+    {
+      "source": "/workspace/shared/bgs_signed_resummation_route/report.md",
+      "copy": "inputs/16_report.md",
+      "sha256": "97fcd1e055cc221dfe120dff9c76c9f7560736d7504cbe8e3637720b6dab7bbc"
+    },
+    {
+      "source": "/workspace/shared/bgs_exact_method_search/report.md",
+      "copy": "inputs/17_report.md",
+      "sha256": "619e9708b270aef0e8b71101741ae383f76c7e957c7ba620bbf36768f29c0645"
+    }
+  ]
+}

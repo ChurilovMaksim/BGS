@@ -1,0 +1,310 @@
+{
+  "schema": "bgs-schur-replay-freshness-repair-receipt-v1",
+  "date": "2026-10-07",
+  "status": "passed",
+  "source_root_commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "source_root_state": "d37 baseline plus isolated reviewed integration/repair overlay; not clean published main",
+  "repair_map": {
+    "path": "record/schur_replay_freshness_repair_map.json",
+    "sha256": "9b6d29ad80c8fae151d2774880eca56b7eddbf723ce5c3968f4aadffd2fb6c6b"
+  },
+  "historical_seals_preserved": true,
+  "original_source_binding_sha256": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14",
+  "original_bound_file_count": 66,
+  "scientific_checker_comparator_proof_and_expected_bytes_unchanged": true,
+  "new_expected_scientific_outputs_generated": false,
+  "executed_replays": [
+    {
+      "execution_environment": {
+        "software": [
+          {
+            "name": "Python",
+            "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+          },
+          {
+            "name": "SymPy",
+            "version": "1.14.0"
+          }
+        ],
+        "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/full_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_schur_freshness_repair/final_python312",
+        "--modes",
+        "normal",
+        "optimized"
+      ],
+      "executed_source_root": "/workspace/shared/bgs_r6_repair_checkout",
+      "curated_raw_directory": "evidence/schur_replay_freshness_20261007/raw/final_python312",
+      "comparison_sha256": "1174ba45350c632c98155da3c8bfdfde1c229b3f15385bf99e52047764d4e290",
+      "execution_manifest_sha256": "a0741d7b432a00ce810cd2d3761b7f1975722d6c50b55da3c0247e6beaf70a13",
+      "inputs_unchanged": true,
+      "all_children_inputs_authenticated": true,
+      "mathematical_runs": 4,
+      "control_runs": 12,
+      "scientific_outputs": [
+        {
+          "family": "author",
+          "mode": "normal",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+        },
+        {
+          "family": "author",
+          "mode": "optimized",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+        },
+        {
+          "family": "independent",
+          "mode": "normal",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+        },
+        {
+          "family": "independent",
+          "mode": "optimized",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+        }
+      ],
+      "raw_files": {
+        "author_normal.json": "f8fc57932130f81093aab7375acef9155adeb4b6a56a2f87b894742d377402e9",
+        "author_normal_scientific.json": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+        "author_optimized.json": "1a4aec3a04ed3232af2beb76d62c5e00f798f7e5fe3d274824d26c1683e64b70",
+        "author_optimized_scientific.json": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+        "comparison.json": "1174ba45350c632c98155da3c8bfdfde1c229b3f15385bf99e52047764d4e290",
+        "execution_manifest.json": "a0741d7b432a00ce810cd2d3761b7f1975722d6c50b55da3c0247e6beaf70a13",
+        "independent_normal.json": "f6cf03e4d6e1ca297100473966702871306a4ba354729b011ae4508a170c4af4",
+        "independent_normal_scientific.json": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9",
+        "independent_optimized.json": "d62adbc648e6879fe11bd3ecd3656552b18c1de6123b56fd9fa7386a3281f58a",
+        "independent_optimized_scientific.json": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+      },
+      "manifest_validator": {
+        "path": "evidence/schur_reduction_20261007/raw/author/validate_manifest.py",
+        "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+        "status": "valid evidence record; mathematical interpretation requires review"
+      }
+    },
+    {
+      "execution_environment": {
+        "software": [
+          {
+            "name": "Python",
+            "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]"
+          },
+          {
+            "name": "SymPy",
+            "version": "1.13.3"
+          }
+        ],
+        "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+      },
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/full_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_schur_freshness_repair/final_python313",
+        "--modes",
+        "normal",
+        "optimized"
+      ],
+      "executed_source_root": "/workspace/shared/bgs_r6_repair_checkout",
+      "curated_raw_directory": "evidence/schur_replay_freshness_20261007/raw/final_python313",
+      "comparison_sha256": "f95f8a11f0deb01bd1ec156d1b14ecd034c7ec82640f828204acbfd64bc0dee0",
+      "execution_manifest_sha256": "9de3eb7a692de7627aee22057a3707d58c9eb344341c227e0e3c22ceeace2586",
+      "inputs_unchanged": true,
+      "all_children_inputs_authenticated": true,
+      "mathematical_runs": 4,
+      "control_runs": 12,
+      "scientific_outputs": [
+        {
+          "family": "author",
+          "mode": "normal",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+        },
+        {
+          "family": "author",
+          "mode": "optimized",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+        },
+        {
+          "family": "independent",
+          "mode": "normal",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+        },
+        {
+          "family": "independent",
+          "mode": "optimized",
+          "fresh_result_created": true,
+          "scientific_equality": true,
+          "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+        }
+      ],
+      "raw_files": {
+        "author_normal.json": "db170e6a7f92c0a800bacf7c778229b9439519218acf71f6c5d01b8af1d658a7",
+        "author_normal_scientific.json": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+        "author_optimized.json": "0e7952f2d23c0d22ed21b59eb48187cdb72521602e9d9e97ea406caeaaa8fd73",
+        "author_optimized_scientific.json": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+        "comparison.json": "f95f8a11f0deb01bd1ec156d1b14ecd034c7ec82640f828204acbfd64bc0dee0",
+        "execution_manifest.json": "9de3eb7a692de7627aee22057a3707d58c9eb344341c227e0e3c22ceeace2586",
+        "independent_normal.json": "60cd23b0a6ffd8fd78132e0ff40f53114143fc058a559e901375df5b85376fe9",
+        "independent_normal_scientific.json": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9",
+        "independent_optimized.json": "9b20cf40ccdd3224e9319a1ae67ca1fa2ca4ff4d68e1490cae7a7773bd0192ef",
+        "independent_optimized_scientific.json": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+      },
+      "manifest_validator": {
+        "path": "evidence/schur_reduction_20261007/raw/author/validate_manifest.py",
+        "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+        "status": "valid evidence record; mathematical interpretation requires review"
+      }
+    }
+  ],
+  "adversarial_and_existing_test_suites": [
+    {
+      "log": "tests_normal.log",
+      "sha256": "f8608472089f7d01c24183dea21e505b52fa01685a32d3d35413d1afc8618bb3",
+      "test_methods": 12,
+      "status": "passed",
+      "python": "3.12.14 / SymPy 1.14.0",
+      "optimization": "normal",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/tests_normal.log"
+    },
+    {
+      "log": "tests_optimized.log",
+      "sha256": "b175d1293d9abe8cfef6a6e11f066a031f644bec1e79e97a4a7c61cce14cb1a2",
+      "test_methods": 12,
+      "status": "passed",
+      "python": "3.12.14 / SymPy 1.14.0",
+      "optimization": "optimized",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/tests_optimized.log"
+    },
+    {
+      "log": "tests_python313_normal.log",
+      "sha256": "0c6e9330d317e98112bf4fa02600665fb3769ff246e5175f08421dccebf82b38",
+      "test_methods": 12,
+      "status": "passed",
+      "python": "3.13.5 / SymPy 1.13.3",
+      "optimization": "normal",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/tests_python313_normal.log"
+    },
+    {
+      "log": "tests_python313_optimized.log",
+      "sha256": "7e59433c18bfa411872c4417ea54f92698b2f02429118ef5fe47b9611f422787",
+      "test_methods": 12,
+      "status": "passed",
+      "python": "3.13.5 / SymPy 1.13.3",
+      "optimization": "optimized",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/tests_python313_optimized.log"
+    },
+    {
+      "log": "portability_normal.log",
+      "sha256": "d3d2c7b91d66474071444740312105c3dddfb65f2ba869f2de5d4dcc9aa198d2",
+      "test_methods": 10,
+      "status": "passed",
+      "python": "3.12.14 / SymPy 1.14.0",
+      "optimization": "normal",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/portability_normal.log"
+    },
+    {
+      "log": "portability_optimized.log",
+      "sha256": "dba7f5b962006881648f5dc7a5e5a7faf53b27409ec825cf5edb07c5e0ba2cf0",
+      "test_methods": 10,
+      "status": "passed",
+      "python": "3.12.14 / SymPy 1.14.0",
+      "optimization": "optimized",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/portability_optimized.log"
+    },
+    {
+      "log": "portability_python313_normal.log",
+      "sha256": "bcead06e93e1d044f9cffdbb65c31af5cbef4ad49ec7b071a21aa4d9537a6e6c",
+      "test_methods": 10,
+      "status": "passed",
+      "python": "3.13.5 / SymPy 1.13.3",
+      "optimization": "normal",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/portability_python313_normal.log"
+    },
+    {
+      "log": "portability_python313_optimized.log",
+      "sha256": "abe134bbd395bc284b20be3d09b41bd3630625b0ed62a7092aa1682d14c27cde",
+      "test_methods": 10,
+      "status": "passed",
+      "python": "3.13.5 / SymPy 1.13.3",
+      "optimization": "optimized",
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/portability_python313_optimized.log"
+    }
+  ],
+  "total_test_methods_across_versions_and_optimizer_modes": 88,
+  "adversarial_coverage": [
+    "Successful no-op, early return and missing output, with absent or historical prefilled final results, each family and optimizer mode",
+    "Fresh correct and fresh wrong scientific results; wrong actual bytes, mismatch paths and child diagnostics retained",
+    "Leaf and ancestor symlink escapes; directory, FIFO and hardlink result aliases; protected destination checks",
+    "Reference, proof, comparison, producer, replay, entry and binding byte mutation after a child; stop before next child including import controls",
+    "Input identity replacement and same-byte symlink replacement",
+    "Nonzero and timed-out child outputs preserved without passing",
+    "Timestamp/size-valid poisoned pyc is proved loadable by historical loader and ignored by maintained authenticated-byte execution",
+    "Existing recursive structure/type/science/provenance, source-corruption, entry corruption, immutable-reference overwrite and historical-output collision tests unchanged",
+    "Empty or invalid internal optimizer plans rejected before source/output mutation or child execution; zero-child runs cannot report passed"
+  ],
+  "module_imports_silent_in_both_optimizer_modes": true,
+  "maintained_python_AST_and_whitespace_checks": "passed",
+  "input_role_analysis": "No shared generated dependencies. Both bound mathematical producers are self-contained, read no own declared output, and need no generated input from another family or mode. Original expected bytes remain immutable in parent memory, outside each child workspace.",
+  "artifact_import_contract": "Integrator copies final raw file bytes and named check logs losslessly into listed curated paths, preserving original absolute execution provenance. No historical seal is rewritten to describe the maintained runner.",
+  "external_evidence_directory": "/workspace/shared/bgs_schur_freshness_repair",
+  "publication": "No canonical checkout edits, staging, commit or publication by Schur repair worker.",
+  "non_claims": [
+    "No changes to theorem sources, finite test cases, result schema or scientific provenance exemptions.",
+    "Finite exact replay and freshness verification do not prove any open asymptotic/analytic claim, TRACE-005 or BGS."
+  ],
+  "manifest_validation_logs": [
+    {
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/manifest312_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "curated_log": "evidence/schur_replay_freshness_20261007/checks/manifest313_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    }
+  ],
+  "relocation_and_cwd_independence_check": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/shared/bgs_schur_freshness_repair/relocation_fixture/root/computations/verification/balanced_pair_schur.py",
+      "--output-dir",
+      "/workspace/shared/bgs_schur_freshness_repair/relocated_python312",
+      "--modes",
+      "normal",
+      "optimized"
+    ],
+    "cwd": "/",
+    "exit_status": 0,
+    "stdout": "",
+    "stderr": "",
+    "source_wrapper_sha256": "ad8ad5a9d406ffae60618ceed1c20ccd03a518aae92b627542d02d4882876e8c",
+    "clone_was_temporary": false,
+    "source_clone": "/workspace/shared/bgs_schur_freshness_repair/relocation_fixture/root",
+    "receipt_sha256": "2f1f98ab4a251c28b5e02f0db1477e243f5ec86171cc55816d443b2682aace14",
+    "status": "passed",
+    "mathematical_runs": 4,
+    "control_runs": 12,
+    "all_inputs_authenticated_after_each_child_and_at_close": true,
+    "scientific_outputs_equal_to_original": true,
+    "limitation": "Relocation source fixture is retained outside the canonical checkout; no theorem-source changes or additional scientific cases."
+  }
+}

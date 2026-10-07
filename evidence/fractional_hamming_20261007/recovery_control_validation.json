@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "check": "Targeted fix validation; full source-stable replay is separately recorded.",
+  "checks": [
+    {
+      "optimized": false,
+      "actual_mathematical_failure_control": "passed",
+      "scientific_result": "matches frozen synthesis result",
+      "radius_pairs": 108,
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591"
+    },
+    {
+      "optimized": true,
+      "actual_mathematical_failure_control": "passed",
+      "scientific_result": "matches frozen synthesis result",
+      "radius_pairs": 108,
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "name": "first_position",
+    "differences": []
+  },
+  {
+    "name": "first_cancellation",
+    "differences": [
+      {
+        "path": [
+          "elapsed_seconds"
+        ],
+        "expected": 1.6419422269973438,
+        "observed": 1.8123737429996254
+      }
+    ]
+  },
+  {
+    "name": "return_operator",
+    "differences": [
+      {
+        "path": [
+          "python"
+        ],
+        "expected": "3.12.14",
+        "observed": "3.13.5"
+      },
+      {
+        "path": [
+          "numpy"
+        ],
+        "expected": "2.3.5",
+        "observed": "2.2.4"
+      },
+      {
+        "path": [
+          "sympy"
+        ],
+        "expected": "1.14.0",
+        "observed": "1.13.3"
+      },
+      {
+        "path": [
+          "seconds"
+        ],
+        "expected": 161.93048574800196,
+        "observed": 77.26182602600602
+      }
+    ]
+  },
+  {
+    "name": "return_nonprimitive",
+    "differences": [
+      {
+        "path": [
+          "seconds"
+        ],
+        "expected": 7.043587807005679,
+        "observed": 17.543903382997087
+      }
+    ]
+  },
+  {
+    "name": "residual25_projectors",
+    "differences": [
+      {
+        "path": [
+          "python"
+        ],
+        "expected": "3.12.14",
+        "observed": "3.13.5"
+      },
+      {
+        "path": [
+          "numpy"
+        ],
+        "expected": "2.3.5",
+        "observed": "2.2.4"
+      },
+      {
+        "path": [
+          "sympy"
+        ],
+        "expected": "1.14.0",
+        "observed": "1.13.3"
+      },
+      {
+        "path": [
+          "seconds"
+        ],
+        "expected": 3.947938466000778,
+        "observed": 21.305120900993643
+      }
+    ]
+  },
+  {
+    "name": "residual25_coherent",
+    "differences": [
+      {
+        "path": [
+          "seconds"
+        ],
+        "expected": 0.45366587200260255,
+        "observed": 1.8165118789984263
+      },
+      {
+        "path": [
+          "python"
+        ],
+        "expected": "3.12.14",
+        "observed": "3.13.5"
+      }
+    ]
+  }
+]

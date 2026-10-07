@@ -1,0 +1,15 @@
+test_bounded_mismatch_paths (__main__.SchurPortability.test_bounded_mismatch_paths) ... ok
+test_duplicate_keys_and_nonfinite_tokens_rejected (__main__.SchurPortability.test_duplicate_keys_and_nonfinite_tokens_rejected) ... ok
+test_entrypoint_replay_corruption_rejected (__main__.SchurPortability.test_entrypoint_replay_corruption_rejected) ... ok
+test_expected_bytes_are_cached_before_child_execution (__main__.SchurPortability.test_expected_bytes_are_cached_before_child_execution) ... ok
+test_finite_runtime_and_environment_validation (__main__.SchurPortability.test_finite_runtime_and_environment_validation) ... ok
+test_known_provenance_paths_only (__main__.SchurPortability.test_known_provenance_paths_only) ... ok
+test_nested_environment_key_injection_rejected (__main__.SchurPortability.test_nested_environment_key_injection_rejected) ... ok
+test_output_cannot_overwrite_historical_inputs (__main__.SchurPortability.test_output_cannot_overwrite_historical_inputs) ... ok
+test_scientific_values_and_structure_rejected (__main__.SchurPortability.test_scientific_values_and_structure_rejected) ... ok
+test_source_corruption_rejected_before_execution (__main__.SchurPortability.test_source_corruption_rejected_before_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.175s
+
+OK

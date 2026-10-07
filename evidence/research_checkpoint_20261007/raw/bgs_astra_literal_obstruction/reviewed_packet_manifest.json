@@ -1,0 +1,74 @@
+{
+  "schema": "bgs.research_packet.v1",
+  "checkpoint": "literal-fixed-word-v1",
+  "base_commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "canonical_edits": false,
+  "publication_authorized": false,
+  "proof_status": "independent internal audit PASS; no external referee or analytic formalization",
+  "reviewer_task": "/root/test_literal_bgs_obstruction/audit_literal_kick_law",
+  "claims": {
+    "kick_phase_law": {
+      "source": "literal_kick_phase_law.md",
+      "review": "review/independent_literal_kick_audit.md",
+      "scope": "all fixed nonzero kick moments; all odd N at fixed tau=10^-80"
+    },
+    "fixed_word_freeness": {
+      "source": "fixed_word_freeness.md",
+      "review": "review/independent_fixed_word_audit.md",
+      "scope": "each fixed noncommutative word; pair of free Haar unitaries only as normalized moment limit"
+    },
+    "chord_and_rank_laws": {
+      "source": [
+        "literal_kick_phase_law.md",
+        "fixed_word_freeness.md"
+      ],
+      "scope": "distinct fixed relative words, scalar phase uniform, rank fraction rho in [0,1)"
+    }
+  },
+  "dependencies": {
+    "actual_raw_symbol_Hessian": "inputs/fixed_model_symmetry_theorem.md",
+    "fixed_time_Egorov": "inputs/frozen_operator_transfer_coercivity.md",
+    "trace_overlap": "inputs/egorov_overlap_rigidity.md",
+    "prior_rank_boundary": "inputs/frozen_kick_rank_boundary.md",
+    "transcendence": {
+      "registered_id": "EXT-POPESCU-2023",
+      "source_record": "source_check.md",
+      "primary_pdf_sha256": "0c158636ef68a2ac4586f0fff09b7429780f815d513799f1e794e9c554bae0f1",
+      "application": "pi transcendental, hence nonconstant integer derivative-trace polynomial at x=(9803/125)tau*pi not algebraic"
+    }
+  },
+  "quantitative_limitations": [
+    "No rate uniform in word length, exponents or Fourier moment index",
+    "No effective startup dimension",
+    "No uniformity as tau tends to zero",
+    "No strong or operator-norm freeness",
+    "No growing Pell or Heisenberg powers",
+    "No microscopic CUE or signed factorial TRACE-005 conclusion"
+  ],
+  "validation": {
+    "author_controls": "13,120 freely reduced words through length8; 4,368 cyclic signed block cases;12 fixed echo polynomials; exact physical32-mode Hessians; normal and -O runs; fault injection rejected",
+    "independent_controls": "exact Hessians and isolated N7;6,561 alias-aware Weyl phase checks; sampled alternating-word and echo polynomials",
+    "meaning": "finite algebra regression only; asymptotic theorem certified by written analytic argument and scoped internal review"
+  },
+  "files": {
+    "literal_kick_phase_law.md": "64dddeceeaee9c8ef639f0d143572e50ed430596d73b9b4a5c311951a7c73230",
+    "fixed_word_freeness.md": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0",
+    "source_check.md": "23a28f6683dc1ab63879a49d138920b0e39762c738df0583586f5a1d8016c6b4",
+    "verify_fixed_word_freeness.py": "8c582a51f55b5ad9848f5577eb94a26213cdee17ac60f445a81a43fdd171764b",
+    "exact_controls.json": "72faa9d9f9fd4c2bac2fb74d53ac1f1095fe07dae439abf6735dc8df2ef53d68",
+    "exact_controls.log": "72faa9d9f9fd4c2bac2fb74d53ac1f1095fe07dae439abf6735dc8df2ef53d68",
+    "optimized_controls.log": "72faa9d9f9fd4c2bac2fb74d53ac1f1095fe07dae439abf6735dc8df2ef53d68",
+    "fault_control.log": "7a81c49df2b28954d8c7ec226495b60f82acd102dd3d73ccef05c3f4bbf86517",
+    "review/audit_exact_verifier.py": "effdeac957b5f2c34ae5f12fccc504c676e299f987b9e3149498da3ad1ac4044",
+    "review/audit_exact_verifier_output.json": "f0f9f34fadb0b64a9389b9a9160c457655940055f7e2ae8a5b3e93ed757b515a",
+    "review/audit_word_verifier.py": "2abd6c83124246f02dbcb7e64cf0c9c8afaef8b1a64d75d9b71f0b0a70402d70",
+    "review/audit_word_verifier_output.json": "9ba42c10f378c1352e10782740b72c5e7bd74a052bfdd61feeeb204ad0d6e013",
+    "review/independent_fixed_word_audit.md": "7abeb7515b734b503a7ad586d8f41f77366e3c4b58c96cd130f66b49ebc8220d",
+    "review/independent_literal_kick_audit.md": "0feefabbe2a8bb21a9e211b5ceab3eb0fb0485df9679df2c1974596ab918de35",
+    "inputs/egorov_overlap_rigidity.md": "b0e735aa6f7352b6dc8a8ebf72b7ed2172b535ffbf328d9dbdfc3c25de4832fb",
+    "inputs/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_kick_rank_boundary.md": "fcbc96473a964bd5272dab7676a2da5dcffd4f3afe1e8df5768b8e2356770e17",
+    "inputs/frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26"
+  }
+}

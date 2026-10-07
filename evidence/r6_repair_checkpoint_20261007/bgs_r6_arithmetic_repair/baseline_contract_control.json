@@ -1,0 +1,21 @@
+{
+  "baseline": "HEAD d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "cwd": "/workspace/shared/bgs_r6_arithmetic_repair/baseline_contract_controls",
+  "command": [
+    "python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "computations/maintenance/tests",
+    "-p",
+    "test_twisted_magnetic_integer_contracts.py",
+    "-v"
+  ],
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "log": "baseline_new_contract_tests.log",
+  "log_sha256": "0b858f7addbebdf69e0ac70b7d88a27093fea48eff609737d01175ab110323d1",
+  "test_sha256": "fb35751966faba4c3e50854caa4655f9a4be343f3c6053c536139c801499b7b0",
+  "purpose": "Actual old-source failures exposed by new type/representative tests; not synthetic mathematical mutations."
+}

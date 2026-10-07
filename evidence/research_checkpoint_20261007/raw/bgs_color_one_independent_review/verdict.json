@@ -1,0 +1,23 @@
+{
+  "sealed_utc": "2026-10-07T02:42:30Z",
+  "canonical_base": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "primary_verdict": "refuted, with the smallest valid counterexample",
+  "normalized_target": "Ordinary disk/plane flat bulk N_color=1 type-A CFT equals the U(1) determinant ratio average, with one boson and fermion in each advanced/retarded sector.",
+  "counterexample": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "haar_average": 1,
+    "ordinary_flat_bulk": 0,
+    "boundary_completed_value": 1
+  },
+  "corrected_result": "For all complex a,b,c,d with |a|,|b|<1, the common-cutoff bulk plus source (4.29) surface tends to (1+cd-ad-bc)/(1-ab).",
+  "source_proof_caveat": "Zirnbauer 2109.10272v1 Table 1 is consistent; (4.43)-(4.45) misprint the second-row dual odd index as 01 rather than 10. The corrected table pairing was independently checked.",
+  "graph_scope": "Literal flat coordinate reading fails; a globally completed invariant-integral convention may have been intended, but an explicit operative color-one prescription/control was not verified in the graph source.",
+  "impact": "No BGS counterexample; no invalidation of standalone scalar/block matrix coercivity or inspected FM-018/019/020 channel proofs. Background rigorous-graph wording needs qualification.",
+  "canonical_edits": false,
+  "publication": false,
+  "checks": "checks.json",
+  "report": "review.md"
+}

@@ -1,0 +1,43 @@
+{
+  "claim_id": "BGS-BOSONIC-ADDENDA-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Exact polynomial, determinant, radial Jacobian, gauge, measure and rational constant controls for three separately pinned bosonic addenda.",
+    "coefficient_domain": "Rational, Gaussian rational, real algebraic and symbolic expressions; no floating-point theorem tests.",
+    "conventions": "A=UZU*Z*, real alpha in [0,1], eigenvalues counted with algebraic multiplicity; ordinary coordinate Lebesgue measure.",
+    "inputs": [
+      "checks.py",
+      "inputs/author/actual_constants_addendum.md",
+      "inputs/author/radial_translation.md",
+      "inputs/author/real_absorption_addendum.md"
+    ],
+    "bounds": {
+      "scalar_grid": "lambda=(i+ij)/8, i,j=-8..8, i^2+j^2<=64; alpha=0..16 / 16",
+      "matrices": "28 Jordan-similarity fixtures d=1..4, seven eigenvalues and five alpha values; 24 sharpness cases; one nonnormal 4x4 body at five alpha values",
+      "symbolic": "One exact polynomial identity, one AM-GM identity, one 2D Jacobian, one disk integral, finite constants and domain/gauge controls",
+      "resources": "120 seconds wall; 90 seconds per-process CPU; 2 GiB virtual memory; one core; cooperative one thread"
+    },
+    "non_claims": [
+      "Does not prove universal or asymptotic statements by enumeration",
+      "Does not instantiate actual U_N",
+      "No SUSY integral or source conclusions"
+    ]
+  },
+  "execution_artifacts": [
+    "checks.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

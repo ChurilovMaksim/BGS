@@ -1,0 +1,22 @@
+{
+  "result": "PASS: exact finite algebra only; no numerical asymptotic inference",
+  "candidate_sha256": "64dddeceeaee9c8ef639f0d143572e50ed430596d73b9b4a5c311951a7c73230",
+  "input_sha256": {
+    "inputs/egorov_overlap_rigidity.md": "b0e735aa6f7352b6dc8a8ebf72b7ed2172b535ffbf328d9dbdfc3c25de4832fb",
+    "inputs/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_kick_rank_boundary.md": "fcbc96473a964bd5272dab7676a2da5dcffd4f3afe1e8df5768b8e2356770e17",
+    "inputs/frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26"
+  },
+  "fourier_terms": 32,
+  "hessians_over_pi_squared": [
+    "Matrix([[-19606/125, 0], [0, 0]])",
+    "Matrix([[-19594/125, 0], [0, 0]])",
+    "Matrix([[24306/125, 0], [0, 0]])",
+    "Matrix([[24894/125, 0], [0, 0]])"
+  ],
+  "integer_weyl_phase_checks": 6561,
+  "exceptional_dimension_7": "A_7 = (9/10) I exactly",
+  "uniform_rank_hs_formula": "-2*rho - 2*sin(pi*rho)/pi + 2",
+  "caveat": "Finite algebra checks support the separate analytic proof audit; they do not prove K1-K5 by extrapolation."
+}

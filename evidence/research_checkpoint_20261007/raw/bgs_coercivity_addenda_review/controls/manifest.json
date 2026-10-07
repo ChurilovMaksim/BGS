@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-BOSONIC-ADDENDA-AUDIT",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "checks.py",
+    "controls/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact polynomial, determinant, radial Jacobian, gauge, measure and rational constant controls for three separately pinned bosonic addenda.",
+    "coefficient_domain": "Rational, Gaussian rational, real algebraic and symbolic expressions; no floating-point theorem tests.",
+    "conventions": "A=UZU*Z*, real alpha in [0,1], eigenvalues counted with algebraic multiplicity; ordinary coordinate Lebesgue measure.",
+    "inputs": [
+      "checks.py",
+      "inputs/author/actual_constants_addendum.md",
+      "inputs/author/radial_translation.md",
+      "inputs/author/real_absorption_addendum.md"
+    ],
+    "bounds": {
+      "scalar_grid": "lambda=(i+ij)/8, i,j=-8..8, i^2+j^2<=64; alpha=0..16 / 16",
+      "matrices": "28 Jordan-similarity fixtures d=1..4, seven eigenvalues and five alpha values; 24 sharpness cases; one nonnormal 4x4 body at five alpha values",
+      "symbolic": "One exact polynomial identity, one AM-GM identity, one 2D Jacobian, one disk integral, finite constants and domain/gauge controls",
+      "resources": "120 seconds wall; 90 seconds per-process CPU; 2 GiB virtual memory; one core; cooperative one thread"
+    },
+    "non_claims": [
+      "Does not prove universal or asymptotic statements by enumeration",
+      "Does not instantiate actual U_N",
+      "No SUSY integral or source conclusions"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T02:30:50.293553+00:00",
+    "runtime_seconds": 1.419609,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 90,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "checks.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "checks.py",
+      "sha256": "b19281158f1aac037687b09034a9a6ea8b3eda936f4d28dc77c94d13f240a312",
+      "sha256_after": "b19281158f1aac037687b09034a9a6ea8b3eda936f4d28dc77c94d13f240a312"
+    }
+  ],
+  "output_directory": "controls",
+  "declared_results": [
+    "controls/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "controls/stdout.txt",
+      "sha256": "7b8039c6ad7d70d765b5cd16209d88caf498f9da5717d2c105b0e5e4caf2d4d2",
+      "kind": "log"
+    },
+    {
+      "path": "controls/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "controls/results.json",
+      "sha256": "b9f0545a439ca2e4d825104cae8538259369126ef7324e45c148828a8c5ee8ec",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

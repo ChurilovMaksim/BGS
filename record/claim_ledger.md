@@ -816,7 +816,8 @@ and slow-source obstructions retain sector/vector scope and diagnostic limits.
 for N=7*5^e,e>=1 give multiplicity<=7 at nonzero real algebraic time. At least
 612N/625+7 eigenvalues are simple for even e>=4, and at least 612N/625+175
 for even e>=6; exact special lower bounds are 4333 at N=4375 and 107443 at
-N=109375. At least 35 remain simple for odd e>=5;
+N=109375. The odd counts are 24N/25 for e>=3, 24N/25+35 for e>=5,
+and 24N/25+875 for e>=7. The 875 includes the deepest 35 exactly once;
 finite 35/175 simplicity is a bounded companion. Component/rank reviews and
 registered LW remain explicit. Full uniform simplicity/gaps/BGS are open.
 
@@ -832,3 +833,37 @@ is bounded by12N³exp(-c_aN), uniformly for every m>=aN and sufficiently large
 odd N. It uses only inherited FM-021 singular mixing. This is exponential
 in N, not m at fixed N, and does not imply the collective bound because
 cycle cancellations differ. The complete Q_ord residual remains unestimated.
+
+## Current checksum-free pair residual and reviewed phase checkpoint
+
+**TRACE-021:** [the current claim card](../mathematics/phase_trace_checkpoint.md)
+and [exact checksum-free synthesis](../mathematics/checksum_free_residual.md)
+remove all low-switch occupation-mismatched partial fibers, including checksum
+zero. The orthogonal Q_new=I-P_H-P_bal-O_low-L_all has balanced complement
+Pi-P_H-P_bal and the literal high-Hamming/high-switch offcharge mask. Full
+switch transfer makes the damped endpoint negligible under
+kappa a N(1-z_N)-2 log N→+infinity. **The signed undamped T16, complete Q_new
+trace, balanced law, plateau, higher factorial comparison and BGS remain OPEN.**
+The older checksum-restricted proof remains valid at its original scope;
+constant translations are not counted twice. FM-027 core uses scoped actual
+phase/parametrix A2--A5 and FM-021, without FM-018/Egorov/classical mixing.
+
+The independently accepted current checkpoint adds **FM-027** uniform actual
+one-step nonzero-charge contraction; **TRACE-022** positive Schur-energy and
+three-radius equivalence; **TRACE-023** completed compact pair source identity,
+universal Abel bound and full complex source regularity/uniform integrability;
+**FM-028** actual q=1,theta=0 radial shell/resolvent; **FM-029** literal fixed-word
+moment laws with the separately reviewed triple-log window and fixed-polynomial
+strong-freeness obstruction; and **FM-030** scalar/block ordinary-body coercivity and real
+absorption. Exact restrictions and independent source/review pins are in
+[the maintained claim card](../mathematics/phase_trace_checkpoint.md) and
+[checkpoint record](checked_research_checkpoint_20261007.md).
+
+Separately reviewed changed-family growing-period offcharge failure and
+infinite unregularized one-channel boundary-delay variance constrain proposed
+proof steps. Accepted phase Ward v2 leaves its actual signed overlap estimate
+(13) OPEN. Candidate centering, simple-spectrum/rounding companions and
+Schatten sketches are not promoted. The color-one ordinary bulk-only source
+correction is [qualified narrowly](../literature/color_one_boundary_qualification_20261007.md):
+FM-018 direct matrix results survive and invariant prescriptions/graph
+universality are not declared false. All BGS/CUE identification remains OPEN.

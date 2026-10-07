@@ -1,0 +1,233 @@
+[
+  {
+    "source_role": "archive-manifest.json",
+    "original_sha256": "c6df374f3d8086744ed188d4e187e8cca9e87ee2977e46b0cf0d9b359a21e19e",
+    "public_file": "scientific-archive-manifest.json",
+    "public_sha256": "c6df374f3d8086744ed188d4e187e8cca9e87ee2977e46b0cf0d9b359a21e19e",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "workspace.json",
+    "original_sha256": "83cbc52e3ac0fa601d7d6baae0e5e29bc04e465965df5f24e83cda02570fc7d1",
+    "public_file": "workspace.json",
+    "public_sha256": "c189d4eceaa8290884219068c81f5d3a9116a02eb976677116a37fe5915090ca",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "archive-v2-manifest.json",
+    "original_sha256": "e6fb5ea9f8ed62e3f8afa3c7be9c5cb01ad04d7dc77d980e09888fc70b504483",
+    "public_file": "corrected-archive-metadata.json",
+    "public_sha256": "27a9e45ab2ecef34ee91f2331cc0d2a54e7319b0b7b3a93e8b9a45a9bd4f3d1a",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "supplement/verification.json",
+    "original_sha256": "c1c607f2c1016b02fd395a18914044c06e247227d73051aa1bad4ede29ce375f",
+    "public_file": "supplement.json",
+    "public_sha256": "c1c607f2c1016b02fd395a18914044c06e247227d73051aa1bad4ede29ce375f",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "manuscript-v2/build_manifest.json",
+    "original_sha256": "e160aebccfd89e6ca0e6963e93373cff0d114aa360eb72e51cc87ed032452121",
+    "public_file": "manuscript.json",
+    "public_sha256": "aede826c94319c3753ffed327270f0b3e352ffa43b3b1a650210b370650104c7",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "manuscript-v2/visual_review.json",
+    "original_sha256": "938e5290421d4ff5204568e66d4e105b671285f02cb6ccd11e9420ef60a7fa45",
+    "public_file": "manuscript-visual.json",
+    "public_sha256": "938e5290421d4ff5204568e66d4e105b671285f02cb6ccd11e9420ef60a7fa45",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "manuscript-format-delta.json",
+    "original_sha256": "bdbabca8e4183bcb8e054580b7d4c715001447110244a8b08b51a0bfe8b25265",
+    "public_file": "manuscript-format-delta.json",
+    "public_sha256": "bdbabca8e4183bcb8e054580b7d4c715001447110244a8b08b51a0bfe8b25265",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "manuscript/build_manifest.json",
+    "original_sha256": "903d1c87b0b4721ff9865c8a405d476317a8d4d6a8ddb4c23a7469aa420bdd83",
+    "public_file": "failed-manuscript-first.json",
+    "public_sha256": "1ee74f83a2dbb9f53f5b7fadeb1c4b83f76c8413648b2493693f5a9a49558542",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "manuscript-accepted/build_manifest.json",
+    "original_sha256": "86f2d6a99f7cf9e1b78d303e52f0ab11e28f384c266e87de6e95e7fd33a458bb",
+    "public_file": "failed-manuscript-second.json",
+    "public_sha256": "29bea0186359e58b50e67268c7e020983874b9fee30b6c1926a2d8730b84d720",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "post_format_guards.json",
+    "original_sha256": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "public_file": "post-format-guards.json",
+    "public_sha256": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "post_routing_guards.json",
+    "original_sha256": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "public_file": "post-routing-guards.json",
+    "public_sha256": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "whitespace_check.json",
+    "original_sha256": "3c9162a81a01b22a0349b4de30ad97a89d54daefd9c08d811d3c8ca51d6cfcdf",
+    "public_file": "whitespace-check.json",
+    "public_sha256": "2a00d4e06446720b5200ca74fdf9bc9545b5ba2693d4ebd0b533aacbf5a973a7",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "targeted_replay.json",
+    "original_sha256": "f4192a7f46bd20071f7b758a940a3ae1bf2fd862f6e850e10662a2b350b1ffc0",
+    "public_file": "targeted-replay.json",
+    "public_sha256": "f4192a7f46bd20071f7b758a940a3ae1bf2fd862f6e850e10662a2b350b1ffc0",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "cpp_reuse_binding.json",
+    "original_sha256": "ecf40b0cafaca0d2f8d38d95cbead0ae7b619b102f5fcb6dbabd98d268735ba7",
+    "public_file": "cpp-reuse-binding.json",
+    "public_sha256": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "lean_unchanged_binding.json",
+    "original_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "public_file": "lean-unchanged-binding.json",
+    "public_sha256": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "fractional_split_profile/receipt.json",
+    "original_sha256": "c9f3d587a559ef009d58b068c2e8dcd50fd694fb991172245ba704ae78b931d1",
+    "public_file": "fractional-resource-profile.json",
+    "public_sha256": "c9f3d587a559ef009d58b068c2e8dcd50fd694fb991172245ba704ae78b931d1",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "current_cross_runtime_comparison.json",
+    "original_sha256": "651479089eb25f0e40e5ac99ec417ce907d834c402f50077138b506e44931d7f",
+    "public_file": "cross-runtime-comparison.json",
+    "public_sha256": "651479089eb25f0e40e5ac99ec417ce907d834c402f50077138b506e44931d7f",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "maintenance-post-routing-v2-normal.log",
+    "original_sha256": "4f4e53ab156be5ffed237319adb8154e25e8a5979341c8256210e9348d52d4d4",
+    "public_file": "maintenance-normal.log",
+    "public_sha256": "4f4e53ab156be5ffed237319adb8154e25e8a5979341c8256210e9348d52d4d4",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "maintenance-post-routing-v2-optimized.log",
+    "original_sha256": "afd6ae4029cfab933dfbfba9895ebd98e97df01060c14d4338800de7272044dc",
+    "public_file": "maintenance-optimized.log",
+    "public_sha256": "afd6ae4029cfab933dfbfba9895ebd98e97df01060c14d4338800de7272044dc",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "routing-source-delta.json",
+    "original_sha256": "16b25a3f727e1287e6aacd66e373d035c9e414c62badcc4a7c11905d7e694c50",
+    "public_file": "routing-source-delta.json",
+    "public_sha256": "16b25a3f727e1287e6aacd66e373d035c9e414c62badcc4a7c11905d7e694c50",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "post-scientific-source-deltas.json",
+    "original_sha256": "d426f5019b7747405102ac099e1c49020a8606cefc15433a763d0115ecdb1e4d",
+    "public_file": "post-scientific-source-deltas.json",
+    "public_sha256": "d426f5019b7747405102ac099e1c49020a8606cefc15433a763d0115ecdb1e4d",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "routing-normal.json",
+    "original_sha256": "b5d99df8a47bc475018b071e22cf0fa5d0483064058f7bc27a9116bad6e637fd",
+    "public_file": "routing-normal.json",
+    "public_sha256": "9cfc263ebd2db41e6e489fc18c68cbe38803d7ffa79b053823414705d4d7a7c7",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "routing-optimized.json",
+    "original_sha256": "368a184eacf6ef75fa20dd504d50eb7be61cbbf8d64fcee97b74e904a094b84c",
+    "public_file": "routing-optimized.json",
+    "public_sha256": "e71fac6f3eaea5bcfb728fd2f97c2ec11ea66521f2de83813ea425e6cedafa47",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "interrupted-maintenance.json",
+    "original_sha256": "b92441265f781318d3184804d22be4be1cf573b8b2784dd3adf41b83224586f3",
+    "public_file": "interrupted-maintenance.json",
+    "public_sha256": "b92441265f781318d3184804d22be4be1cf573b8b2784dd3adf41b83224586f3",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "routing-before.py",
+    "original_sha256": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+    "public_file": "routing-before.txt",
+    "public_sha256": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "maintenance-post-routing-normal.log",
+    "original_sha256": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "public_file": "interrupted-maintenance-normal.log",
+    "public_sha256": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "maintenance-post-routing-optimized.log",
+    "original_sha256": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "public_file": "interrupted-maintenance-optimized.log",
+    "public_sha256": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "archive-v3-manifest.json",
+    "original_sha256": "870f78c8a60660c6af68ee442ef87544e611cdd0c37d95a06c8aca280499365e",
+    "public_file": "final-source-archive-metadata.json",
+    "public_sha256": "a051c0a63b7a6b3bc101d97ef5b272621b11171213b828522fedf7849e4163e1",
+    "transformation": "Explicit machine-path roles; additional factoring described in receipt."
+  },
+  {
+    "source_role": "workspace-checks/central_residual_extension.log",
+    "original_sha256": "0da7d6af5c612d3b06ed87380e9790ea3d469d9b99c6e5432cf0333c3057a8be",
+    "public_file": "new-checks/central_residual_extension.log",
+    "public_sha256": "0da7d6af5c612d3b06ed87380e9790ea3d469d9b99c6e5432cf0333c3057a8be",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "workspace-checks/half_radius_obstructions.log",
+    "original_sha256": "5d52245edae278138b13b0b24d1ad5798813a476e23e61fe3ff0e4f02f59af87",
+    "public_file": "new-checks/half_radius_obstructions.log",
+    "public_sha256": "5d52245edae278138b13b0b24d1ad5798813a476e23e61fe3ff0e4f02f59af87",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "workspace-checks/intermediate_old_layers_certificates.log",
+    "original_sha256": "d411c4ae994d7eb8894cb00c7a250683ce3e71c494ead2adfd35c14f79104810",
+    "public_file": "new-checks/intermediate_old_layers_certificates.log",
+    "public_sha256": "d411c4ae994d7eb8894cb00c7a250683ce3e71c494ead2adfd35c14f79104810",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "workspace-checks/odd_newest_certificates.log",
+    "original_sha256": "79d1ae72a9bcaba4f63e0493585597a385d615c5d209247bceea0b4616e4f228",
+    "public_file": "new-checks/odd_newest_certificates.log",
+    "public_sha256": "79d1ae72a9bcaba4f63e0493585597a385d615c5d209247bceea0b4616e4f228",
+    "transformation": "Byte-identical."
+  },
+  {
+    "source_role": "workspace-checks/residual125_certificates.log",
+    "original_sha256": "194aa9881eb3f4f852a0385e8c01b8002303040c980b8b3eb8c717d5ffe00788",
+    "public_file": "new-checks/residual125_certificates.log",
+    "public_sha256": "194aa9881eb3f4f852a0385e8c01b8002303040c980b8b3eb8c717d5ffe00788",
+    "transformation": "Byte-identical."
+  }
+]

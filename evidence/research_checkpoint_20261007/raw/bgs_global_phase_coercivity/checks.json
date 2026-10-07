@@ -1,0 +1,74 @@
+{
+  "exact": {
+    "0": {
+      "N": 3,
+      "centered": true,
+      "block_identity": true,
+      "determinant_identity": true,
+      "mobius_invariance": true
+    },
+    "1": {
+      "N": 4,
+      "centered": true,
+      "block_identity": true,
+      "determinant_identity": true,
+      "mobius_invariance": true
+    },
+    "boundary": {
+      "F4_Q_eigenvalues": {
+        "-1": 2,
+        "1": 2
+      },
+      "rank_one_identity": true
+    },
+    "jacobian_1": {
+      "actual_equals_formula": true,
+      "positive": true
+    },
+    "jacobian_2": {
+      "actual_equals_formula": true,
+      "positive": true
+    },
+    "jacobian_3": {
+      "actual_equals_formula": true,
+      "positive": true
+    },
+    "jacobian_4": {
+      "actual_equals_formula": true,
+      "positive": true
+    }
+  },
+  "floating": {
+    "arithmetic": "IEEE754 float64; scipy/numpy, no interval certification",
+    "seed": 732104,
+    "dimensions": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      12
+    ],
+    "unitaries": [
+      "Fourier",
+      "one seeded Haar sample per dimension"
+    ],
+    "trials_per_family": 60,
+    "accepted_centered_samples": 821,
+    "minimum_coercivity_margin": 0.01591776173167802,
+    "minimum_S_over_H": 0.3164334068986115,
+    "minimum_Ky_Fan_margin": 0.0008742054105293495,
+    "maximum_block_or_logcosh_residual": 6.561111843278217e-13,
+    "interpretation": "bounded diagnostics only"
+  },
+  "runtime_seconds": 3.748563766479492,
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "non_claims": [
+    "No actual U_N sampled",
+    "No growing-dimension theorem inferred from computation",
+    "No supersymmetric measure/source/tail verification"
+  ]
+}

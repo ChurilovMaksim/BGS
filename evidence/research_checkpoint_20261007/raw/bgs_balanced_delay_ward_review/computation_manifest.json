@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-CANDIDATE-BALANCED-DELAY-WARD-INDEPENDENT-CONTROLS",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+    "dirty": true,
+    "note": "Canonical base read-only with pre-existing integration overlay; this run is isolated."
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "checks/independent_exact_controls.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "x86_64"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact seed, determinant convention, direct second-order phase derivatives, Haar generator scaling, and finite Abel controls",
+    "coefficient_domain": "Exact Q[t]/Phi_20 and Q(i)(z); deterministic rational Cayley fixtures",
+    "conventions": "F_5 times stated column permutation; left coordinate-phase Brownian variance dt; normalized heat E B_t=e^(-t/2)I",
+    "inputs": [
+      "checks/independent_exact_controls.py",
+      "checks/run_controls.py"
+    ],
+    "bounds": {
+      "seed_dimension": 5,
+      "colligation_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "generator_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "pair_powers": [
+        1,
+        2,
+        4
+      ],
+      "extra_tests": [
+        "|Tr V|^4",
+        "Re((Tr V)^2 conjugate(Tr V^2))"
+      ],
+      "abel_sum_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "non_claims": [
+      "No tensor-uniform conclusion from finite computations",
+      "No numerical integration of the divergent delay moment",
+      "No actual-model overlap estimate",
+      "No compact-heat regularity theorem certified by code",
+      "No boundary or large-N limit taken"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T03:25:33.104659+00:00",
+    "runtime_seconds": 7.641206025000429,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 180,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "limits_note": "Address-space and CPU rlimits plus one-core affinity inside child; thread limits cooperative; wall timeout 220 seconds."
+  },
+  "input_artifacts": [
+    {
+      "path": "checks/independent_exact_controls.py",
+      "sha256": "4bff5684f8baca6a23c0fad1a665b22823b26fc081bc477ff581df9f46ebfdf1",
+      "sha256_after": "4bff5684f8baca6a23c0fad1a665b22823b26fc081bc477ff581df9f46ebfdf1"
+    },
+    {
+      "path": "checks/run_controls.py",
+      "sha256": "e2548585364b293553b34b3ac825d00dffa099d479a663614c872973dc290bda",
+      "sha256_after": "e2548585364b293553b34b3ac825d00dffa099d479a663614c872973dc290bda"
+    }
+  ],
+  "execution_artifacts": [
+    "checks/independent_exact_controls.py",
+    "checks/run_controls.py"
+  ],
+  "declared_results": [
+    "results/independent_exact_controls.json"
+  ],
+  "output_directory": "results",
+  "outputs": [
+    {
+      "path": "results/independent_exact_controls.json",
+      "sha256": "9e20e1af8fcbd037a995f02aaa3da565bbd16b7bd2e2ccb833576e53b02b06f0",
+      "kind": "result"
+    },
+    {
+      "path": "results/independent_exact_controls.stdout",
+      "sha256": "9e20e1af8fcbd037a995f02aaa3da565bbd16b7bd2e2ccb833576e53b02b06f0",
+      "kind": "log"
+    },
+    {
+      "path": "results/independent_exact_controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "cyclotomic_sqrt5",
+    "cyclotomic_seed_unitary",
+    "cyclotomic_seed_eigenvector",
+    "cyclotomic_lambda_modulus",
+    "cyclotomic_noninteger_minpoly",
+    "cyclotomic_positive_root_branch_squared",
+    "rational_minpoly_irreducible",
+    "cyclotomic_full_characteristic_polynomial",
+    "cyclotomic_reverse_kernel_entry",
+    "cyclotomic_compression_normal",
+    "cyclotomic_compression_eigenvector",
+    "cyclotomic_compression_left_identity",
+    "cyclotomic_leakage_rank2",
+    "rational_colligation_unitary",
+    "rational_colligation_polynomial_identity",
+    "rational_phase_generator_pair1",
+    "rational_haar_reference_normalization",
+    "rational_signed_defect_decomposition",
+    "rational_phase_generator_pair2",
+    "rational_phase_generator_pair4",
+    "rational_phase_generator_quartic",
+    "rational_phase_generator_mixed",
+    "abel_cue_sum",
+    "diagonal_noncue_control"
+  ],
+  "result": "implementation and finite assertion verified in the stated range",
+  "residual_risks": [
+    "SymPy is part of the trusted finite exact-computation stack; no formal proof assistant was used.",
+    "Analytic and universal conclusions are audited in the separate review, not inferred from these checks."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "claim_id": "MATRIX-BLOCK-COERCIVITY-AUDIT",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "controls/write_result.py",
+    "controls/block_controls.py",
+    "runs/replay/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Five exact flat centered nonnormal determinant inequalities, missing-centering counterexample, symbolic F4 sharpness, seven 120-digit diagnostics, 312 complex128 chain controls, nine gradient finite differences.",
+    "coefficient_domain": "Exact rational/algebraic SymPy; separately complex128 and mpmath 120-digit unvalidated floating arithmetic.",
+    "conventions": "Right polar Z=V tanh(R); W=VR; U tensor I_k; ReTr real HS pairing; action orientation U Z U* Z*.",
+    "inputs": [
+      "controls/block_controls.py",
+      "controls/write_result.py",
+      "inputs/matrix_block_extension.md",
+      "inputs/scalar_report.md",
+      "inputs/scalar_audit.md"
+    ],
+    "bounds": {
+      "N": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "k": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "float_radii": [
+        0,
+        0.01,
+        0.5,
+        0.95,
+        0.9999
+      ],
+      "exact_near_boundary": "1-10^-20",
+      "high_precision_near_boundary": "1-10^-60",
+      "gradient_step": 1e-05,
+      "float_tolerance": 1e-07,
+      "high_precision_tolerance": 1e-50,
+      "random_seed": 202610070142
+    },
+    "non_claims": [
+      "No universal theorem from sampling or numerical tolerance.",
+      "No matrix centering gauge, Jacobian, fermionic body, Grassmann or source integration, large-N tail or BGS conclusion.",
+      "No certified interval enclosures; floating inputs satisfy unitary and centering hypotheses only up to roundoff."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64",
+    "seed": 202610070142
+  },
+  "run": {
+    "started_at": "2026-10-07T02:24:13.998971+00:00",
+    "runtime_seconds": 1.26971,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 4294967296,
+      "cpu_seconds": 60,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "controls/block_controls.py",
+    "controls/write_result.py",
+    "inputs/matrix_block_extension.md",
+    "inputs/scalar_report.md",
+    "inputs/scalar_audit.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "controls/block_controls.py",
+      "sha256": "791abba1fe99221334e924be87aaf941d9a6142af952fd474350499864b70b33",
+      "sha256_after": "791abba1fe99221334e924be87aaf941d9a6142af952fd474350499864b70b33"
+    },
+    {
+      "path": "controls/write_result.py",
+      "sha256": "093c86460ef9b6374b623aa309e4efd1405d66ba0ec743c88d26050f8327f9d9",
+      "sha256_after": "093c86460ef9b6374b623aa309e4efd1405d66ba0ec743c88d26050f8327f9d9"
+    },
+    {
+      "path": "inputs/matrix_block_extension.md",
+      "sha256": "8ff788d6194598606f1c88debe84fffc1571f6de1dfe090b1a7d95170b85eded",
+      "sha256_after": "8ff788d6194598606f1c88debe84fffc1571f6de1dfe090b1a7d95170b85eded"
+    },
+    {
+      "path": "inputs/scalar_report.md",
+      "sha256": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e",
+      "sha256_after": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e"
+    },
+    {
+      "path": "inputs/scalar_audit.md",
+      "sha256": "1247da77c991a84235ad7aae2a8cc5adb1a74a910c86060e2ce0e7dbb30db236",
+      "sha256_after": "1247da77c991a84235ad7aae2a8cc5adb1a74a910c86060e2ce0e7dbb30db236"
+    }
+  ],
+  "output_directory": "runs/replay",
+  "declared_results": [
+    "runs/replay/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/replay/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/replay/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/replay/results.json",
+      "sha256": "b7af272540ccf0b7eda3c2e125ae9281a59341b85fb8a6f3d90fbb4eaaf1aed9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

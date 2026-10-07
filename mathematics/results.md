@@ -1,5 +1,17 @@
 # Theorem families and their limits
 
+## Reviewed phase checkpoint, 7 October 2026
+
+[The checked checkpoint](../record/checked_research_checkpoint_20261007.md)
+strengthens the current pair residual to checksum-free low-switch removal and
+adds independently reviewed Schur/source reductions, literal fixed-word laws,
+actual radial/resolvent control and ordinary-body coercivity. The exact
+remaining pair tasks are the complete balanced microscopic law and signed
+undamped high-switch offcharge endpoint; higher factorial TRACE-005 and BGS
+remain open. [Exact scopes](phase_trace_checkpoint.md) distinguish
+accepted proofs, source corrections, changed-family obstructions and deferred
+candidates. Main publication follows aggregate checks and fresh review.
+
 This is the current reading index, not a second status authority. [The claim ledger](../record/claim_ledger.md) controls scientific status; [exact proof topics](topics/README.md) retain every canonical source path. The [corpus revision](../record/corpus_revision_20261006.md) distinguishes inventory, internal proof review, source checks and finite execution.
 
 **Deterministic BGS and TRACE-005 remain open.** The scoped corpus revision passed remote acceptance; research proceeds with its named conditional boundaries preserved.
@@ -171,6 +183,10 @@ removes the specified ordered-diagonal sector from every fixed-order factorial
 Fourier expression at O_k(log^(2k)N/N), using actual entrywise flatness alone.
 Its collective and exponential long-cycle companions have distinct bounds;
 none is identified with WKB path masks.
+[TRACE-021](hamming_low_switch_residual.md) removes disjoint balanced
+and off-charge Hamming sectors plus a high-Hamming low-switch family from the
+actual pair trace, with exponentially small error. One explicit signed
+residual projector remains unestimated; this does not settle higher orders.
 The exact signed complement, plateau/torsion mechanism and higher factorial
 hierarchy remain open; no BGS conclusion follows.
 

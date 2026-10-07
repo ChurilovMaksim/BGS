@@ -1,0 +1,76 @@
+Fixture passed: untwisted
+Fixture passed: negative_twist
+Fixture passed: complex_twist
+{
+  "status": "PASS",
+  "arithmetic": "Q(i,sqrt(3)), exact SymPy expressions; no tolerances or randomness",
+  "checks": [
+    "untwisted: unitary, twisted pinching/twirl, double commutator, trace formula, both Ward identities m=1..6, commutant and rotated Dirichlet forms",
+    "negative_twist: unitary, twisted pinching/twirl, double commutator, trace formula, both Ward identities m=1..6, commutant and rotated Dirichlet forms",
+    "complex_twist: unitary, twisted pinching/twirl, double commutator, trace formula, both Ward identities m=1..6, commutant and rotated Dirichlet forms",
+    "Exact charge-block characteristic polynomials prove centered norm 7/9",
+    "All 81 ordered N=3,m=2 path pairs enumerated exactly; literal occupation and switch masks",
+    "Direct trace-polynomial equality and simultaneous-diagonal gauge invariance at z=0,2/3,1; m=1..4"
+  ],
+  "results": {
+    "untwisted": {
+      "endpoint_sources_m1_to_m6": [
+        "0",
+        "2816/243",
+        "0",
+        "5632/243",
+        "0",
+        "2816/81"
+      ],
+      "commutant_dirichlet_form": "256/243"
+    },
+    "negative_twist": {
+      "endpoint_sources_m1_to_m6": [
+        "0",
+        "-9728/6561",
+        "970112/177147",
+        "887387648/43046721",
+        "-16023998720/3486784401",
+        "-372200576000/94143178827"
+      ],
+      "commutant_dirichlet_form": "4480/2187"
+    },
+    "complex_twist": {
+      "endpoint_sources_m1_to_m6": [
+        "0",
+        "3968/6561",
+        "967360/177147",
+        "461174272/43046721",
+        "30848038400/3486784401",
+        "885485536640/94143178827"
+      ],
+      "commutant_dirichlet_form": "5056/2187"
+    },
+    "charge_block_characteristic_polynomials": [
+      "(lambda - 1)*(9*lambda + 7)*(27*lambda - 11)/243",
+      "(9*lambda + 1)*(81*lambda**2 - 24*lambda - 25)/729",
+      "(9*lambda + 1)*(81*lambda**2 - 24*lambda - 25)/729"
+    ],
+    "centered_D_norm": "7/9",
+    "commutant_source_matrix": "Matrix([[64/243, 8/243, 8/243], [8/243, -32/243, -128/243], [8/243, -128/243, -32/243]])",
+    "m2_total_switch_polynomial_coefficients": [
+      "779/243",
+      "0",
+      "1408/243"
+    ],
+    "m2_offcharge_switch_polynomial_coefficients": [
+      "1046/729",
+      "0",
+      "3200/729"
+    ],
+    "m2_offcharge_endpoint_source": "6400/729"
+  },
+  "runtime_seconds": 9.229138612747192,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "non_claims": [
+    "No test of the literal BGS fixed-coupling map",
+    "No asymptotic endpoint estimate",
+    "No extrapolation from N=3; universal statements use the accompanying algebraic proof"
+  ]
+}

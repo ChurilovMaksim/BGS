@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "wrapper_sha256": "a2a97db6b5b7af82895c79eec7d6406be7b5a9f84581674ff23725323541eb0b",
+  "scope": "Current strict comparator applied to publisher-retained actual Python3.13.5 execution outputs; not a new execution or hosted CI success.",
+  "rows": [
+    {
+      "step": "first_position",
+      "strict_scientific_equal": true,
+      "original_environment": {},
+      "replay_environment": {},
+      "scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be"
+    },
+    {
+      "step": "first_cancellation",
+      "strict_scientific_equal": true,
+      "original_environment": {},
+      "replay_environment": {},
+      "scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a"
+    },
+    {
+      "step": "return_operator",
+      "strict_scientific_equal": true,
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "replay_environment": {
+        "python": "3.13.5",
+        "numpy": "2.2.4",
+        "sympy": "1.13.3"
+      },
+      "scientific_sha256": "dd71cc839e87a4341b8451582c62fef076e690786666774d463afb0f541027c4"
+    },
+    {
+      "step": "return_nonprimitive",
+      "strict_scientific_equal": true,
+      "original_environment": {},
+      "replay_environment": {},
+      "scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502"
+    },
+    {
+      "step": "residual25_projectors",
+      "strict_scientific_equal": true,
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "replay_environment": {
+        "python": "3.13.5",
+        "numpy": "2.2.4",
+        "sympy": "1.13.3"
+      },
+      "scientific_sha256": "7b716cbae496a0d9ec0eea0dc729c824975b3b4feab58552b602bc5478d04382"
+    },
+    {
+      "step": "residual25_coherent",
+      "strict_scientific_equal": true,
+      "original_environment": {
+        "python": "3.12.14"
+      },
+      "replay_environment": {
+        "python": "3.13.5"
+      },
+      "scientific_sha256": "eddeeed9b98a0654a2f57633d20ddd613700112bbee8b8bcf2e673788339373b"
+    }
+  ]
+}

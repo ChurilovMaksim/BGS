@@ -1,0 +1,32 @@
+{
+  "arithmetic": "Exact SymPy rational/complex polynomial arithmetic",
+  "symbolic_factorization": true,
+  "scalar_rational_disk_points": 49,
+  "alpha_values": [
+    "0",
+    "1/8",
+    "1/4",
+    "3/8",
+    "1/2",
+    "5/8",
+    "3/4",
+    "7/8",
+    "1"
+  ],
+  "scalar_cases": 441,
+  "matrix_fixtures": 3,
+  "matrix_cases": 27,
+  "body_shaped_matrix_cases": 9,
+  "contains_nondiagonalizable_fixture": true,
+  "contains_noncontractive_spectral_radius_fixture": true,
+  "complex_alpha_counterexample": true,
+  "runtime_seconds": 3.220240354537964,
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "non_claims": [
+    "No actual U_N instantiated",
+    "No complex-source or derivative theorem",
+    "No supersymmetric measure or tail theorem",
+    "Finite checks do not replace the universal algebraic proof"
+  ]
+}

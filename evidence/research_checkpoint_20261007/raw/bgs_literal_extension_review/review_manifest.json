@@ -1,0 +1,29 @@
+{
+  "schema": "bgs.literal_extension_review.v1",
+  "base_commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "review_date": "2026-10-07",
+  "primary_verdict": "proved as written",
+  "reviewer": "/root/audit_literal_growing_window",
+  "files": {
+    "CHECKPOINT.md": "43bc529f3222a5ebbb3762a476e4bdcf74391bbde58750a604b2c684e9fc250c",
+    "check_extension_algebra.py": "33fbe5b640e8c6863e82e3df119a8c5cda79cd82df10cb0522c70df958e3a221",
+    "exact_checks.json": "1a6798132a4e8c9267d1a7dfd03334b1b78f8a380193137ddc2872bf7982ec69",
+    "exact_checks_optimized.json": "1a6798132a4e8c9267d1a7dfd03334b1b78f8a380193137ddc2872bf7982ec69",
+    "freeze_manifest.json": "a4d0821b909e5e10c6e475647736b68a172b2ce1ea9806e46f1e85c9d51390e8",
+    "frozen/growing_word_window.md": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+    "frozen/roy_source_check.md": "1f9f3c09d54f9bececeb7f7f3c0034f8f185b1736902f480d2500e8ed5ddce1e",
+    "frozen/strong_freeness_obstruction.md": "8eab771234f702cdf840497e49d7bf43c9fc1ab673818a75f31661bc99273729",
+    "independent_extension_audit.md": "0ec05e56f56403f0665c68d75a76145da0c8b7dfb0f9e3d4d85621b09eddc683",
+    "sources/roy_exact_source_check.md": "01b80dcd157551b8232084ff02653b834e5211e3a39f12bc8ca565360c9b5c44"
+  },
+  "inherited_fixed_word_packet": {
+    "path": "/workspace/shared/bgs_astra_literal_obstruction/frozen_literal_fixed_word_v1",
+    "manifest_sha256": "07e49a2d4ac49c88880b103e18daa4f2e9af9cd2013c72b22eff8a4ae70003d4",
+    "file_count_verified": 19,
+    "fixed_word_source_sha256": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0"
+  },
+  "required_corrections": [],
+  "original_microscopic_target": "open",
+  "canonical_edits": false,
+  "publication": false
+}

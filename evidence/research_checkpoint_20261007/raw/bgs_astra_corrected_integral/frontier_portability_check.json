@@ -1,0 +1,25 @@
+{
+  "arithmetic": "exact cyclotomic integer coefficients",
+  "checks": [
+    {
+      "m": 2,
+      "rooted_words": 25,
+      "occupation_classes": 15,
+      "passed": true
+    },
+    {
+      "m": 3,
+      "rooted_words": 125,
+      "occupation_classes": 35,
+      "passed": true
+    },
+    {
+      "m": 4,
+      "rooted_words": 625,
+      "occupation_classes": 70,
+      "passed": true
+    }
+  ],
+  "Re_M_4_0_1": "3*sqrt(5)/625",
+  "finite_diagnostic_only": true
+}

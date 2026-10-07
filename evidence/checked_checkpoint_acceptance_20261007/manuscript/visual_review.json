@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Visual inspection of title/updated contents, changed checkpoint and adjacent transitions; not a page-by-page audit of all 274 pages or mathematical proof audit.",
+  "pdf_sha256": "0012dd741bee683a11ecc85ad88ee0c60c7eb5cc577a0cd3290f622fccee04da",
+  "inspected_pages": [
+    1,
+    3,
+    264,
+    265,
+    266,
+    267,
+    268
+  ],
+  "findings": "Legible equations/text, consistent margins/headers/footers; no clipping/overlap in inspected pages. Whole-log build gate passed separately. Inherited major-revision masthead date retained; new section identifies 7 October checkpoint.",
+  "renders": [
+    {
+      "path": "png/front-001.png",
+      "sha256": "822ed54757431489518cf5c9f13fd13c78dd406c356f3e377252daa0961344a1"
+    },
+    {
+      "path": "png/front-003.png",
+      "sha256": "5400f0a0e224b4e131b6100b8f6daa076c7f469c445cabaa32e825c755bc462b"
+    },
+    {
+      "path": "png/review-264.png",
+      "sha256": "aa4f5c1926609d5d6afc769237bdbcae9ba78e994363650e568239d229b00859"
+    },
+    {
+      "path": "png/review-265.png",
+      "sha256": "6e160c8bab72a6e26f6f7a56afaa94b17ccfad4b564e72042fb9fa502fb1ddbc"
+    },
+    {
+      "path": "png/review-266.png",
+      "sha256": "d3f59c3a2470d6b1ebfb1009f492f1f64d27c8b93f9e4ebd44f241c1250a43f2"
+    },
+    {
+      "path": "png/review-267.png",
+      "sha256": "f35d8d36ab1288dad2a59c96fb34a1b952ced742660d9c97f8e199e514d2c85d"
+    },
+    {
+      "path": "png/review-268.png",
+      "sha256": "58c1a449c01b2d4e2569ef33ae0cefe99c0023744cdcf3e86b2f8d944a2173a5"
+    }
+  ]
+}

@@ -6,6 +6,10 @@ The machine-readable authority for this graph is
 
 ```mermaid
 graph TD
+  T20 --> T21[BGS-TRACE-021 disjoint pair residual]
+  F21 --> T21
+  F18 --> T21
+  T1 --> T21
   F21 --> T20[BGS-TRACE-020 ordered-diagonal factorial sector and scoped companions]
   T2 --> T20
   F1 --> F26[BGS-FM-026 literal-time multiplicity bounds]
@@ -241,3 +245,17 @@ FM-024 first-seven extension: four actual boundary blocks → endpoint-free 63-b
 Ramified first-seven supporting route: actual valuation gauge → rank-seven endpoint block → integral partial-trace commutator consequence → normalized two-harmonic trace and exact gcd → nine partitions/small Fourier minors → augmented-rank lift. No full reduced Fourier invertibility or additional external theorem is assumed. Combined remaining family: odd multiples of 245, with N=7 separately exceptional.
 
 FM-024 now combines all odd-dimensional pair-commutant families except the genuine N=7 exception. Higher ramification is closed by the separately reviewed normalized-lattice/q-Lucas proof, not by extrapolating finite bases. TRACE-018 uses the actual HJ phase and prior FM-012 grid; the paired-character identity is a supporting representation lemma, not full quantum-weight cancellation.
+
+## Reviewed phase checkpoint dependency boundary
+
+FM-027 depends on scoped FM-021 amplitude/zero-charge inputs and actual
+parametrix/nonlinear-phase A2--A5 only. It has no FM-018, Egorov or classical
+mixing edge. TRACE-021 now adds FM-027 and removes the unnecessary old
+whole-file FM-018 prerequisite while retaining separate historical
+all-translation provenance. TRACE-022 uses FM-021 only for its inherited
+actual boundary-density consequence; its core Schur identity is universal.
+TRACE-023 has no actual-model prerequisite identifying a limit. FM-028 and
+FM-029 really use inherited FM-018 ordinary-Weyl/Egorov/model inputs at their
+precise scopes. FM-030 uses FM-021 only for its eventual actual constants,
+plus checked EXT-BHATIA-2002. None closes TRACE-005/BGS or connects a
+changed-family obstruction to a false claim about the literal operator.

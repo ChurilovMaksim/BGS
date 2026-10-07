@@ -1,0 +1,4582 @@
+{
+  "schema": "bgs-release-durable-replay-validation-v1",
+  "checked_at_utc": "2026-10-07T03:59:23.340034+00:00",
+  "replays": [
+    {
+      "directory": "/workspace/shared/bgs_checked_checkpoint_integration/frozen_durable_python312",
+      "manifest_sha256": "28e22881486b4faa76a2b9d041d0c0a9d4fe7733cd2331dfab545870371a36ee",
+      "status": "passed",
+      "tasks": 11,
+      "artifacts": 50,
+      "checks": [
+        {
+          "check": "completed replay",
+          "passed": true
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "computations/maintenance/tests/test_research_checkpoint_portability.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "computations/verification/research_checkpoint_replay.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_frontier_direct.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_hook_covariance.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n1_order4.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n2_order4.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n3_order3.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n4_order3.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/frontier_direct_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/hook_covariance_p5.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/compact_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/centering_candidate.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/color_one_boundary_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/compact_projector.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/microscopic_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/uniform_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/manifest_first_pair.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/manifest_source_bounds.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_microscopic_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/source_lemma_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/validate_checkpoint.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/exact_controls.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/fault_control.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/fixed_word_freeness.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/egorov_overlap_rigidity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/fixed_map_path_model.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/fixed_model_symmetry_theorem.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/frozen_kick_rank_boundary.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/literal_kick_phase_law.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/optimized_controls.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_exact_verifier.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_exact_verifier_output.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_word_verifier.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_word_verifier_output.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_fixed_word_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_literal_kick_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/reviewed_packet_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ACCEPTANCE_AND_PROVENANCE.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/CHECKPOINT.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/TARGET.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_resolvent.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_shell.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_shell_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/check_carry.cpp"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/check_growing.cpp"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review_conditional_draft.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/result.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/review_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/result.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/check_cubic_witness.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/checkpoint_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_controls_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_offcharge_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/check_independent.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/independent_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/independent_controls_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/injected_failure.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/injected_failure.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/00_AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/01_SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/02_repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/03_RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/04_claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/05_claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/06_results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/07_open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/10_heisenberg_time_insertion.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/11_fractional_hamming_cancellation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/12_onestep_charge_gap.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/13_global_switch_transfer.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/14_11_all_translation_proof.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/15_HANDOFF.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/16_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/17_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/resolvent_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/source_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/source_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/check_ward.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/exact_results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/run.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/SHA256SUMS"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/independent_exact_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/correction_mapping.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/inputs/boundary_delay_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/inputs/phase_ward_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_v1_to_v2.diff"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/attempt1.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.stdout"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/manifest_validation.stdout"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/source_checks.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/algebra_contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/block_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/exact_algebra.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/exact_algebra_initial.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/stderr.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/write_result.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/emi_page6.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/literature_external_dependencies.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/mathematics_open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/mathematics_results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_audit_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/manifest_validation.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/replay_contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/reproduce.sh"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/run_experiment.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/canonical_status_after.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/canonical_status_before.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/input_freshness.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/input_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_block_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_block_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_scalar_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/absorption_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/absorption_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/actual_constants_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/addenda_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/real_absorption_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/position_chain_mixing.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/prior_radial_scope/domain_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/reproduce.sh"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/run_experiment.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/execution_receipt.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/all_order_sources_20261005.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/bibliography.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/external_dependencies.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/frontier_2026.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/frozen_operator_transfer_sources_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/all_order_program_20261005.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/frozen_operator_transfer_program_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/frozen_operator_transfer_review_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical_impact.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical_snapshot.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/page32.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/page33.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/source_hash_verification.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/emi_p5.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/manifest_validation.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/actual_constants_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/addenda_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/block_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/block_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/diagnostic.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/diagnostic.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/real_absorption_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/CHECKPOINT.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/check_extension_algebra.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/exact_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/exact_checks_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/freeze_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/growing_word_window.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/roy_source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/strong_freeness_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/review_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/canonical_impact.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/canonical_matches.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/one_site_boundary_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/reproduced.out.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/source_page30.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/verify_one_site.out.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/verify_one_site.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/run_records.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources/z21_boundary_page.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "literature/color_one_boundary_qualification_20261007.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_body_coercivity_constants.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_charge_radial_resolvent.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_charge_radial_shell.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/balanced_boundary_delay_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/bosonic_body_radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/compact_phase_pair_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/complex_microscopic_phase_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/global_bosonic_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/growing_period_switch_boundary_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_fixed_word_freeness.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_growing_word_window.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_kick_phase_law.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_strong_freeness_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/matrix_block_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/phase_trace_checkpoint.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/phase_ward_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/real_absorption_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/uniform_phase_pair_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_balanced_audit_import.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_import.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_proof_mapping.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_replay_contract.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bindings.original.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "replay_contract.original.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.compile.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.compile.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.negative.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.negative.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.actual.raw"
+        },
+        {
+          "check": "retained current source manifest",
+          "passed": true
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n1",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n2",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n3",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n4",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_author_n2",
+          "fields": [
+            "seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "source_bound_lemmas",
+          "fields": [
+            "python",
+            "runtime_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "literal_fixed_word",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "color_one_completion",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "real_absorption",
+          "fields": [
+            "python",
+            "sympy",
+            "runtime_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "literal_extension_algebra",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "growing_period",
+          "fields": [
+            "runtime_seconds",
+            "compiler_command"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "growing_period"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "directory": "/workspace/shared/bgs_checked_checkpoint_integration/frozen_durable_python313",
+      "manifest_sha256": "e4cfda86bf9ff83c9d14bfcb560f56a80db0a6ffa9c2a4c97538724a158ff23d",
+      "status": "passed",
+      "tasks": 11,
+      "artifacts": 50,
+      "checks": [
+        {
+          "check": "completed replay",
+          "passed": true
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "computations/maintenance/tests/test_research_checkpoint_portability.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "computations/verification/research_checkpoint_replay.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_frontier_direct.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_hook_covariance.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n1_order4.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n2_order4.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n3_order3.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n4_order3.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/frontier_direct_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/hook_covariance_p5.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/compact_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/centering_candidate.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/color_one_boundary_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/inputs/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/compact_projector.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/microscopic_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/uniform_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/manifest_first_pair.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/manifest_source_bounds.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_microscopic_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/source_lemma_portability_check.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/validate_checkpoint.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/exact_controls.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/fault_control.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/fixed_word_freeness.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/egorov_overlap_rigidity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/fixed_map_path_model.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/fixed_model_symmetry_theorem.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/frozen_kick_rank_boundary.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/inputs/frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/literal_kick_phase_law.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/optimized_controls.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_exact_verifier.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_exact_verifier_output.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_word_verifier.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/audit_word_verifier_output.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_fixed_word_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_literal_kick_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/reviewed_packet_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ACCEPTANCE_AND_PROVENANCE.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/CHECKPOINT.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/TARGET.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_resolvent.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_shell.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/actual_radial_shell_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/check_carry.cpp"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/check_growing.cpp"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review_conditional_draft.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/result.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/review_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/result.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/sealed_execution/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/check_cubic_witness.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/checkpoint_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_controls_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_offcharge_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/check_independent.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/independent_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/independent_controls_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/injected_failure.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/cubic_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/injected_failure.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/00_AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/01_SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/02_repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/03_RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/04_claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/05_claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/06_results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/07_open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/10_heisenberg_time_insertion.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/11_fractional_hamming_cancellation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/12_onestep_charge_gap.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/13_global_switch_transfer.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/14_11_all_translation_proof.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/15_HANDOFF.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/16_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/17_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/resolvent_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/source_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/source_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/check_ward.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/exact_results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/run.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/SHA256SUMS"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/independent_exact_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/run_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/checks/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/correction_mapping.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/inputs/boundary_delay_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/inputs/phase_ward_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_v1_to_v2.diff"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/attempt1.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/independent_exact_controls.stdout"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/results/manifest_validation.stdout"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/source_checks.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/algebra_contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/block_controls.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/exact_algebra.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/exact_algebra_initial.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/stderr.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/controls/write_result.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/emi_page6.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/literature_external_dependencies.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/mathematics_open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/mathematics_results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/record_repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_audit_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/inputs/scalar_report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/manifest_validation.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/replay_contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/reproduce.sh"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/run_experiment.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/algebra/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/runs/replay/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/canonical_status_after.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/canonical_status_before.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/contract.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/results.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/stderr.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/controls/stdout.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/input_freshness.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/input_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_block_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_block_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/accepted_scalar_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/absorption_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/absorption_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/actual_constants_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/addenda_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/real_absorption_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/author/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/position_chain_mixing.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/mathematics/results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/canonical/record/repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/inputs/prior_radial_scope/domain_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/reproduce.sh"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/run_experiment.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/README.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.log"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/execution_receipt.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/AGENTS.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/RESEARCH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/SOURCE_OF_TRUTH.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/all_order_sources_20261005.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/bibliography.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/external_dependencies.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/frontier_2026.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/literature/frozen_operator_transfer_sources_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/frozen_operator_transfer_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/open_questions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/mathematics/results.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/all_order_program_20261005.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/claim_ledger.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/claims.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/frozen_operator_transfer_program_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/frozen_operator_transfer_review_20261006.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical/record/repository_conventions.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical_impact.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/canonical_snapshot.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/inputs/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/page32.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/page33.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/review.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/source_hash_verification.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verdict.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/checks_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/emi_p5.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks.stderr"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/gauge_checks_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/manifest_validation.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/actual_constants_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/addenda_seal.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/block_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/block_checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/computation_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/diagnostic.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/diagnostic.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/manifest_validation.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/matrix_block_extension.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/provenance.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/real_absorption_addendum.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/CHECKPOINT.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/check_extension_algebra.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/exact_checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/exact_checks_optimized.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/freeze_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/growing_word_window.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/roy_source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/frozen/strong_freeness_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/review_manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/canonical_impact.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/canonical_matches.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/checks.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/checks.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/manifest.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/report.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/one_site_boundary_audit.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/reproduced.out.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/source_page30.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/verify_one_site.out.txt"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/verify_one_site.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/run_records.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/source_packet.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources/z21_boundary_page.png"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/validate_manifest.py"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "literature/color_one_boundary_qualification_20261007.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_body_coercivity_constants.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_charge_radial_resolvent.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/actual_charge_radial_shell.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/balanced_boundary_delay_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/bosonic_body_radial_translation.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/compact_phase_pair_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/complex_microscopic_phase_source_bounds.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/global_bosonic_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/growing_period_switch_boundary_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_fixed_word_freeness.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_growing_word_window.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_kick_phase_law.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/literal_strong_freeness_obstruction.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/matrix_block_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/phase_trace_checkpoint.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/phase_ward_identity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/real_absorption_body_coercivity.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "mathematics/uniform_phase_pair_abel_bound.md"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_balanced_audit_import.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_import.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_proof_mapping.json"
+        },
+        {
+          "check": "current source byte binding",
+          "passed": true,
+          "path": "record/research_checkpoint_replay_contract.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bindings.original.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "replay_contract.original.json"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n1.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n2.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n3.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_independent_n4.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "compact_author_n2.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "source_bound_lemmas.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_fixed_word.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "color_one_completion.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "real_absorption.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "literal_extension_algebra.actual.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.compile.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.compile.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.expected.raw"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.negative.stdout"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.negative.stderr"
+        },
+        {
+          "check": "retained artifact byte binding",
+          "passed": true,
+          "path": "growing_period.actual.raw"
+        },
+        {
+          "check": "retained current source manifest",
+          "passed": true
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n1",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n1"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n2",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n2"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n3",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n3"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_independent_n4",
+          "fields": [
+            "python",
+            "sympy",
+            "elapsed_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_independent_n4"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "compact_author_n2",
+          "fields": [
+            "seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "compact_author_n2"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "source_bound_lemmas",
+          "fields": [
+            "python",
+            "runtime_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "source_bound_lemmas"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "literal_fixed_word",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "literal_fixed_word"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "color_one_completion",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "color_one_completion"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "real_absorption",
+          "fields": [
+            "python",
+            "sympy",
+            "runtime_seconds"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "real_absorption"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "literal_extension_algebra",
+          "fields": []
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "literal_extension_algebra"
+        },
+        {
+          "check": "immutable expected byte identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "retained observed byte identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "task executable source identity",
+          "passed": true,
+          "task": "growing_period"
+        },
+        {
+          "check": "narrowly typed declared provenance",
+          "passed": true,
+          "task": "growing_period",
+          "fields": [
+            "runtime_seconds",
+            "compiler_command"
+          ]
+        },
+        {
+          "check": "exact recursively typed scientific equality",
+          "passed": true,
+          "task": "growing_period"
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "scope": "Actual retained byte identity and typed scientific comparison only; no analytic theorem conclusion.",
+  "status": "passed"
+}

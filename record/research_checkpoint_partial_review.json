@@ -1,0 +1,68 @@
+{
+  "schema": "bgs-checkpoint-partial-review-v1",
+  "status": "partial; no final whole-snapshot acceptance",
+  "scope": "Existing read-only source/proof identity observations and completed ordinary protocol controls. Review session ended before final acceptance. These artifacts are not a final checkpoint certificate.",
+  "artifacts": [
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/cft_actual_freshness.json",
+      "sha256": "5d915cb42937b401ef5c1e76861dbdc54c8b6afcafa1a0de8dcb8ecdb41d397a",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/charge_pyc_normal.json",
+      "sha256": "c66193d36d8fd17b59018da1fe2928ff54c1866a3065d31d770bc2e10581252d",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/charge_pyc_optimized.json",
+      "sha256": "130a2ae39dcdfad2927a11034f0dd1262277fd8bd0795ecdd6b9a00f26396246",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/checkpoint_gaps_normal.json",
+      "sha256": "d8b5ad895412289be27bc15cc341ca8363e6a6b607d52475dd1ba1cf8868ded1",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/checkpoint_gaps_optimized.json",
+      "sha256": "011595083e0ed11e03588056a830453e3756a3215dfd15289f15502fbf1343e9",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/checkpoint_repair_regression_normal.json",
+      "sha256": "7a6a197a0ab849b3fee286121c35b91197893280678114c79e85e0fdf7d192f7",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/checkpoint_repair_regression_optimized.json",
+      "sha256": "a9456f32eaf5267180bc2b3dc4c52d2d8473917f9f2d9f00af81fdd9f474bf1c",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/schur_repair_regression_normal.json",
+      "sha256": "9923141a253e0be91eb89fe75fec97f56ca425195dfd54eb4808630deffa6af8",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/schur_repair_regression_optimized.json",
+      "sha256": "8e68fb7e73753e38c8da5411d9092f7b22f5d836a5c4de4f88ccb3186ea2d5b5",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/schur_stale_normal.json",
+      "sha256": "1aaa50610cfa1fe200fdc89ab8479ff2f8e8b02e412edba6177cade817549f1e",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/schur_stale_optimized.json",
+      "sha256": "2c72c082f2e30cc9efdfda69b8b7cf10cda45c63600022f8778c4ad37afdcfb6",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    },
+    {
+      "artifact": "evidence/research_checkpoint_protocol_20261007/partial_source_review/source_identity_pre_freeze.json",
+      "sha256": "70259eaecd6699fc19ff6c4f6a2cc49a146e24eec4523fd1568f8c81efceb7d0",
+      "role": "Partial source/protocol review observation; generation/status retained as recorded"
+    }
+  ],
+  "final_gate": "Root-owned post-freeze aggregate validation and fresh final snapshot review remain pending."
+}

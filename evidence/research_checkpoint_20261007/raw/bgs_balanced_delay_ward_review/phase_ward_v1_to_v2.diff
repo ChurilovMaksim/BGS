@@ -1,0 +1,20 @@
+--- phase_ward_identity.md
++++ phase_ward_identity_v2.md
+@@ -88,7 +88,7 @@
+ 
+ A_N Psi_(N,s)=F_(N,s)−c_(N,s).                            (11)
+ 
+-Here A_N is restricted to class functions. Existence and smoothness follow either from the positive spectral gap of the compact unitary heat generator on mean-zero smooth functions or by its finite-dimensional Peter-Weyl spectral expansion and smoothing. Equation (10) is a definition of a universal test depending on N,s, not on the specific U. It does not insert extra Brownian noise into the phase-ensemble target.
++Here A_N is restricted to class functions. Existence and smoothness follow either from the positive spectral gap of the compact unitary heat generator on mean-zero smooth functions or by its Peter-Weyl spectral expansion, positive fixed-N gap, and smoothing. Equation (10) is a definition of a universal test depending on N,s, not on the specific U. It does not insert extra Brownian noise into the phase-ensemble target.
+ 
+ Combining (8) and (11) gives the exact finite-N identity
+ 
+@@ -123,7 +123,7 @@
+ 
+ - N=1: G=G^H=1, every translation-invariant F is constant, and both sides of (12) vanish.
+ - Diagonal U: eigenvectors are coordinate vectors, G=I. The phase ensemble is Poisson at microscopic scale, and the overlap error does not vanish. This catches any attempted use of phase stationarity alone.
+-- Complex Haar eigenvectors independent of their eigenvalues: conditional mean E[G | theta]=G^H, so the signed defect (12) is exactly zero for every smooth class test. This is a normalization check, not an actual-model premise.
++- Complex Haar eigenvectors independent of their eigenvalues: conditional mean E[G | theta]=G^H, so the overlap contraction on the right-hand side of (12) is exactly zero for every smooth class test. Equating it to the spectral defect on the left-hand side additionally requires the phase stationarity of Section 1. Haar eigenvectors alone impose no restriction on the eigenvalue law. This is a normalization check, not an actual-model premise.
+ - Symmetric-unitary representatives have real eigenvectors in an appropriate phase gauge. Their Haar-real reference is (1+2delta_jk)/(N+2), yielding the orthogonal rather than unitary radial generator. This catches the missing factor in the diffusion term.
+ - The explicit dark-resonance control in boundary_delay_obstruction.md has infinite boundary-delay second moment, but (9)–(12) remain well-defined at every fixed N and positive s.
+ 

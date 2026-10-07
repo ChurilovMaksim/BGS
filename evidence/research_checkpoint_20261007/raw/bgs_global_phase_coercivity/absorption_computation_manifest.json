@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "claim_id": "scratch-real-absorption-exact-controls",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773 (inherited read-only scalar-proof base)",
+    "dirty": true
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 timeout 60 python3 absorption_checks.py > absorption_checks.json",
+  "environment": {
+    "software": [
+      "Python 3.12.14",
+      "SymPy 1.14.0"
+    ],
+    "hardware": "x86_64 Linux; specific CPU model not recorded"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact scalar factorization and bounded rational determinant inequalities, including nonnormal/nondiagonalizable and spectral-radius-only fixtures; exact complex-alpha failure.",
+    "coefficient_domain": "Q(i) and polynomial ring Q[a,x,y] in exact SymPy arithmetic",
+    "conventions": "A complex d by d, spectral radius(A)<=1; 0<=alpha<=1 real; squared determinant inequality avoids irrational absolute values",
+    "inputs": [
+      "absorption_checks.py"
+    ],
+    "bounds": {
+      "scalar_points": 49,
+      "alpha_values": 9,
+      "scalar_cases": 441,
+      "matrix_cases": 27,
+      "body_shaped_cases": 9,
+      "wall_seconds": 60,
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "non_claims": [
+      "No actual U_N instantiated",
+      "No complex-source or derivative theorem",
+      "No supersymmetric measure or tail theorem",
+      "Finite checks do not replace the universal algebraic proof"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T02:24:30Z (approximate wall-clock start; exact script runtime below)",
+    "runtime_seconds": 3.220240354537964,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "absorption_checks.json",
+      "sha256": "00b74781b5aba10606e5a547817bcf1032b77edb3c88f41d402e14d7f66dc30a"
+    }
+  ],
+  "checks": [
+    "Exact universal scalar difference factorization",
+    "441 rational disk checks",
+    "Non-normal Jordan determinant check",
+    "Spectral radius-only noncontractive check",
+    "Body-shaped matrix controls",
+    "Complex-alpha counterexample"
+  ],
+  "result": "All exact assertions passed; universal matrix proof remains analytic in real_absorption_addendum.md.",
+  "residual_risks": [
+    "Legacy manifest does not give machine-enforced memory/CPU limits or before/after source hashes.",
+    "Approximate wall start was reconstructed from tool turn; runtime is measured inside script.",
+    "Finite controls alone do not prove asymptotic or full-integral statements."
+  ]
+}

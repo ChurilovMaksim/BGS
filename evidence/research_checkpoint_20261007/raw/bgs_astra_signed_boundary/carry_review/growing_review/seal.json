@@ -1,0 +1,38 @@
+{
+  "status": "proved as written",
+  "scope": "Growing-period changed family only; A=[[1,2],[0,1]]; canonical BGS untouched.",
+  "audited_source": {
+    "path": "growing_period_counterexample.md",
+    "sha256": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5"
+  },
+  "review": {
+    "path": "carry_review/growing_review/review.md",
+    "sha256": "fd9118f5f7bb97b0daa1383448275c3f36f6031a68b22dc54b189563698d4979"
+  },
+  "imported_abel_source": {
+    "path": "inputs/18_uniform_abel_bound.md",
+    "sha256": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f"
+  },
+  "imported_abel_review": {
+    "original_path": "/workspace/shared/bgs_compact_phase_bound_review/review_first_pair.md",
+    "frozen_path": "carry_review/growing_review/imported_abel_review.md",
+    "sha256": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1",
+    "verdict": "proved as written"
+  },
+  "imported_abel_manifest": {
+    "path": "carry_review/growing_review/imported_abel_manifest.json",
+    "sha256": "841a73da6f49d5d4ef25a932ae3f8a3a1a15e5cb21d0a1c0570172f6808316dc",
+    "validation": "Passed against original source directory; version-1 limitations retained."
+  },
+  "finite_execution_manifest": {
+    "path": "carry_review/growing_review/sealed_execution/manifest.json",
+    "sha256": "aaddcb4fc4395cd034934403f45518eb8dc8de55b2d449de9213a3f03482245d",
+    "validation": "Passed with --root /workspace/shared/bgs_astra_signed_boundary"
+  },
+  "prior_carry_seal": {
+    "path": "carry_review/review_v2.md",
+    "sha256": "5d0cbaf1b444073c8b19f24e3024a9cc4670d450eb995e45e6f304f084b39c4a",
+    "status": "unchanged"
+  },
+  "remaining_gap": "None for the changed-family claim. Actual BGS signed comparison remains open."
+}

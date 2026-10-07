@@ -1,0 +1,189 @@
+{
+  "schema": "bgs-corrected-phase-checkpoint-v1",
+  "canonical_base": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "sealed_utc": "2026-10-07T03:20:00Z",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6685,
+      "sha256": "9ed7fb3dd8d4bf95ae8470ce34a3c3270e20e053fe9b77077fd5a72f10e854f3"
+    },
+    {
+      "path": "checks/check_compact_n2.py",
+      "bytes": 4028,
+      "sha256": "8972fe7d88dc3c730ffcd9e341c4a982460a29701c4ea43ef8cc9a064d998a60"
+    },
+    {
+      "path": "checks/check_compact_n2_order6.log",
+      "bytes": 3805,
+      "sha256": "f62ae7cd1482cc62769dac830748eb402855041b6720d43d0287bc99b5089e48"
+    },
+    {
+      "path": "checks/check_frontier_direct.py",
+      "bytes": 1565,
+      "sha256": "0bc8214faf7f38bd241ff0ca61ef448c0fd99be3f0ffdf245fc1aa65685a3dad"
+    },
+    {
+      "path": "checks/check_hook_covariance.py",
+      "bytes": 3020,
+      "sha256": "f3e0a78b8ee4172e0d9787329a1897ceba31ed611472e2dd676618b4c85839d2"
+    },
+    {
+      "path": "checks/check_n1_order4.log",
+      "bytes": 6299,
+      "sha256": "88d98ae57c04e7f18799cd06d9cd1317ab8dc8cf6fb71874847ee2deb77255c8"
+    },
+    {
+      "path": "checks/check_n2_order4.log",
+      "bytes": 6912,
+      "sha256": "8da7698d5145f1da1cb68b7d098adb174e7c46ab814939cdc0168a834afb1bbe"
+    },
+    {
+      "path": "checks/check_n3_order3.log",
+      "bytes": 7611,
+      "sha256": "2dfab194a99dcf79f610b6e0133278a0bf84cd36580410d9fc272bdd4eee5e47"
+    },
+    {
+      "path": "checks/check_n4_order3.log",
+      "bytes": 8071,
+      "sha256": "dc633e7e696e528441dafab59c0b194fccbba5886ac5599d8516d04343d2e3a3"
+    },
+    {
+      "path": "checks/check_source_bound_lemmas.json",
+      "bytes": 983,
+      "sha256": "8de69ec0136e0f4e0e62c4d2432402e69fac5db19707cfa82378054f0cfe1e24"
+    },
+    {
+      "path": "checks/check_source_bound_lemmas.py",
+      "bytes": 3220,
+      "sha256": "1ed6f532cdc13e11a198ec55a6e9497ae165939f488a53b954a36e86b957d842"
+    },
+    {
+      "path": "checks/frontier_direct_checks.json",
+      "bytes": 465,
+      "sha256": "7219a91cb375139549ae5844517c808697613f8868af10558d372a859fbc06ed"
+    },
+    {
+      "path": "checks/hook_covariance_p5.json",
+      "bytes": 2432,
+      "sha256": "c30fa5bb27234e960098d88907322e79d1cf2f0dbab4c0b833b18075871b77a0"
+    },
+    {
+      "path": "checks/independent_checks.py",
+      "bytes": 10281,
+      "sha256": "d4475676de3e07286b6d46bc6e8140d0021b76fa64ff23e7d0f08130c88ffc37"
+    },
+    {
+      "path": "compact_portability_check.json",
+      "bytes": 6414,
+      "sha256": "b8b8932a073a9809507353a247020d1edcaa741a3ffccc7e5eeac232f3661cbd"
+    },
+    {
+      "path": "frontier/centering_candidate.md",
+      "bytes": 3258,
+      "sha256": "c19ecf74f9bff041524758ebe124c3fdffd42be8f5ec6ed627fe8056091b13d2"
+    },
+    {
+      "path": "frontier/exact_identification_target.md",
+      "bytes": 5339,
+      "sha256": "79e41bd931e8a96d988b44b3b7a9143fc74628b75ce64ad452d727c8ce45d380"
+    },
+    {
+      "path": "frontier_portability_check.json",
+      "bytes": 465,
+      "sha256": "7219a91cb375139549ae5844517c808697613f8868af10558d372a859fbc06ed"
+    },
+    {
+      "path": "inputs/AGENTS.md",
+      "bytes": 2801,
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "path": "inputs/RESEARCH.md",
+      "bytes": 9162,
+      "sha256": "bbdc992f6648222cc4bf84f602e8c41bb0adca688befbfa824cc872b9dc8da49"
+    },
+    {
+      "path": "inputs/SOURCE_OF_TRUTH.md",
+      "bytes": 1146,
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "path": "inputs/color_one_boundary_review.md",
+      "bytes": 20821,
+      "sha256": "f758ada072d615a8050dee3013d2064d04ae1eb73ef6fcde63552bc59005036a"
+    },
+    {
+      "path": "inputs/source_packet.md",
+      "bytes": 5027,
+      "sha256": "cd7c0aa17d2796f7bb3734d8f09c0d06026acc1f0351b5d489fc469a5a56d123"
+    },
+    {
+      "path": "inputs/sources.json",
+      "bytes": 1294,
+      "sha256": "eeb37d14d03741edeff6326beba8329ed9b55b69f920c108c21d6d35d30d0101"
+    },
+    {
+      "path": "inputs/z21v1.pdf",
+      "bytes": 485038,
+      "sha256": "a275027f5b760a31a8c26b645fb0e73e97d9d7e15b2b23772691c7bdd771ba59"
+    },
+    {
+      "path": "proofs/compact_projector.md",
+      "bytes": 9520,
+      "sha256": "4b821bd3c4d67e0f07b32982be8ec06a5e7592d8574aa34c99f67b382b2060f3"
+    },
+    {
+      "path": "proofs/microscopic_source_bounds.md",
+      "bytes": 9856,
+      "sha256": "9fcf9168a6ff39c8df8e4c1f106e969ce3e1cb3cfac963b7d81d2e9990b52b76"
+    },
+    {
+      "path": "proofs/uniform_abel_bound.md",
+      "bytes": 7362,
+      "sha256": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f"
+    },
+    {
+      "path": "reviews/manifest_first_pair.json",
+      "bytes": 3982,
+      "sha256": "841a73da6f49d5d4ef25a932ae3f8a3a1a15e5cb21d0a1c0570172f6808316dc"
+    },
+    {
+      "path": "reviews/manifest_source_bounds.json",
+      "bytes": 2850,
+      "sha256": "8ef58ea3a4fe2cacbfc583abcd487af005d2cc04adbd44144034795f3c7ce6ec"
+    },
+    {
+      "path": "reviews/review_first_pair.md",
+      "bytes": 18816,
+      "sha256": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1"
+    },
+    {
+      "path": "reviews/review_microscopic_source_bounds.md",
+      "bytes": 15899,
+      "sha256": "0631f08703f39be984ada6e8cdc83d484877830ae54a7f9921bcdaee7e7e2d1a"
+    },
+    {
+      "path": "source_lemma_portability_check.json",
+      "bytes": 984,
+      "sha256": "d8477259e675926265faf03bad5841c7cac348119b06e09fcbfedad94b45f005"
+    },
+    {
+      "path": "validate_checkpoint.py",
+      "bytes": 427,
+      "sha256": "0d48ca790d340cd34ae11f02412f4024f0a32fd5deadab2bac747ff2bd750175"
+    }
+  ],
+  "accepted_proofs": [
+    "proofs/compact_projector.md",
+    "proofs/uniform_abel_bound.md",
+    "proofs/microscopic_source_bounds.md"
+  ],
+  "deferred": [
+    "frontier/centering_candidate.md",
+    "signed identification in frontier/exact_identification_target.md"
+  ],
+  "python": "3.12.14",
+  "canonical_mutations": false,
+  "publication": false
+}

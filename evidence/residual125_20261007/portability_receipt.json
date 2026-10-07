@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "control": "raw",
+      "normal_and_optimized_exact_output_agreement": true,
+      "excluded_fields": [
+        "seconds",
+        "script_sha256"
+      ],
+      "silent_import": true,
+      "script_sha256": "75c1c803733e68d9642e40cfaf2a9f637ba37833aa3a96a8dd59cf9de690b277"
+    },
+    {
+      "control": "residue",
+      "normal_and_optimized_exact_output_agreement": true,
+      "excluded_fields": [
+        "seconds",
+        "script_sha256"
+      ],
+      "silent_import": true,
+      "script_sha256": "f7d5b1ac0259ce67ce9594f5f291e8daf127894744621131682e00035cf8f829"
+    }
+  ],
+  "scope": "All scientific fields including all288 matrices/characteristic polynomials and180000 raw fiber checks equal independently reviewed outputs. Runtime and executed source identity are provenance, recorded separately; not scientific-output substitutions."
+}

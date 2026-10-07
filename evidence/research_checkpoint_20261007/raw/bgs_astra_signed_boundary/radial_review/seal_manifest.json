@@ -1,0 +1,51 @@
+{
+  "status": "accepted",
+  "verdict": "proved as written, relative to explicitly inherited analytic inputs",
+  "review_type": "independent internal mathematical review",
+  "accepted_artifacts": [
+    {
+      "path": "actual_radial_shell_v2.md",
+      "sha256": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b"
+    },
+    {
+      "path": "actual_radial_resolvent.md",
+      "sha256": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6"
+    }
+  ],
+  "preserved_original": {
+    "path": "actual_radial_shell.md",
+    "sha256": "43319ca5c799fd6e10479fca71e8c8fa5d7783dcd38b7493e48bba11218de37a"
+  },
+  "correction_check": "Byte-exact equality after exactly three reviewed text replacements; no other differences.",
+  "corrections": [
+    "Squared normalized Hilbert–Schmidt norm",
+    "Excluded arbitrary-twist uniformity is not asserted",
+    "Negative-charge comparison is antiunitary"
+  ],
+  "scope": [
+    "C1–C3: full charge compactness, centered quasimode annihilation, uniform radial shell and one-sided proximity",
+    "R1–R4: uniform exterior resolvent equivalence and sharp unit-circle singular scale",
+    "Literal fixed tau=10^-80, every odd N asymptotically, every positive vanishing delta_N sequence",
+    "Untwisted transfer only: q=1 and theta=0"
+  ],
+  "dependency_note": "The unchanged resolvent addendum cites the preserved original radial-shell pin. The three verified editorial changes leave its C1/C6 dependency unchanged.",
+  "exclusions": [
+    "No arbitrary occupation or Hamming twist uniformity",
+    "No power-norm bound from spectral radius",
+    "No signed marked-switch boundary estimate",
+    "No Schatten extension",
+    "No BGS or microscopic-statistics conclusion"
+  ],
+  "reports": [
+    {
+      "path": "radial_review/review.md",
+      "sha256": "86cd97b00ce3bbaf9b281632159db1eb7d933f45207838cb3cc07ad5eefd2341"
+    },
+    {
+      "path": "radial_review/resolvent_review.md",
+      "sha256": "689f1084730ba670671f4a7cceeb628c02741eb7c4d92500108930e8e2d9db4c"
+    }
+  ],
+  "canonical_access": "read only",
+  "publication_or_status_changes": "none"
+}

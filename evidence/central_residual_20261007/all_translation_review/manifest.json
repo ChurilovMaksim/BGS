@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "audit": "Independent all-translation finite-power contraction review",
+  "created_utc": "2026-10-07T00:41:52.636640+00:00",
+  "primary_verdict": "proved as written",
+  "candidate_sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7",
+  "canonical_head": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "all_candidate_pins_match": true,
+  "canonical_writes": false,
+  "publication_or_remote_writes": false,
+  "macro_review_unchanged": true,
+  "inherited_scope": "FM-018 O8 at one step, O9 and actual normalized-area mixing O11; existing FM-001/FM-006 and checked classical-source review boundaries preserved. No new full audit of their entire dependency closure claimed.",
+  "independent_checks": {
+    "arithmetic": "exact integers, Fractions, Gaussian rational matrix arithmetic and exact polynomial integration",
+    "scope": {
+      "raw_odd_N_max": 43,
+      "midpoint_c_abs_max": 8,
+      "midpoint_b_abs_max": 6,
+      "rational_unitary_N": [
+        3,
+        5,
+        7
+      ],
+      "negative_power_max": 4,
+      "Schur_N": "all odd 3..101, plus129,257,509; every 1<=ell<=N/2",
+      "cat_c_max": 99,
+      "occupation_N": [
+        3,
+        5,
+        9
+      ],
+      "occupation_mass_max": 9
+    },
+    "counts": {
+      "fail_closed_guard": 1,
+      "raw_midpoint_all_parities": 106743,
+      "raw_metaplectic_forward_G_intertwining": 42525,
+      "exact_unitarity": 3,
+      "normalized_HS_midpoint_sector_pairing": 12,
+      "sector_norm_normalization": 12,
+      "negative_translation_power_conjugacy": 48,
+      "scaled_TTstar_harmonic_envelope": 1721,
+      "near_diagonal_cutoff_floor": 1721,
+      "cat_diagonal_branch_average": 99,
+      "classical_cat_selected_momentum": 99,
+      "quantum_cat_rank_one_mode": 297,
+      "fixed_odd_c_escaping_alias": 150,
+      "classical_cat_square_zero": 49,
+      "fixed_even_c_low_mode": 147,
+      "scaled_nonzero_derivative_multiplier": 2,
+      "embedded_matrix_kernel_factor_N": 405,
+      "piecewise_kernel_exact_HS_error": 5,
+      "J_isometry_normalization": 5,
+      "uniform_power_remainder_arithmetic": 16384,
+      "all_word_offcharge_mask": 397394,
+      "mask_empty_at_multiple_N": 5
+    },
+    "normal_optimized_results_identical": true,
+    "runs": [
+      {
+        "name": "normal",
+        "command": [
+          "python3",
+          "RESEARCH_ROOT/bgs_all_translation_review/independent_checks.py",
+          "--output",
+          "RESEARCH_ROOT/bgs_all_translation_review/check_results.json"
+        ],
+        "started_utc": "2026-10-07T00:41:01.289135+00:00",
+        "seconds": 1.5129966500026057,
+        "returncode": 0,
+        "expected_returncode": 0,
+        "passed": true
+      },
+      {
+        "name": "optimized",
+        "command": [
+          "python3",
+          "-O",
+          "RESEARCH_ROOT/bgs_all_translation_review/independent_checks.py",
+          "--output",
+          "RESEARCH_ROOT/bgs_all_translation_review/check_results_optimized.json"
+        ],
+        "started_utc": "2026-10-07T00:41:02.802152+00:00",
+        "seconds": 1.607326331002696,
+        "returncode": 0,
+        "expected_returncode": 0,
+        "passed": true
+      },
+      {
+        "name": "injected_failure",
+        "command": [
+          "python3",
+          "-O",
+          "RESEARCH_ROOT/bgs_all_translation_review/independent_checks.py",
+          "--inject-failure"
+        ],
+        "started_utc": "2026-10-07T00:41:04.409500+00:00",
+        "seconds": 0.1316632189991651,
+        "returncode": 1,
+        "expected_returncode": "nonzero",
+        "passed": true
+      }
+    ]
+  },
+  "boundary": "One common finite power for each fixed offset matrix, all nonzero residues; no arbitrary changing-offset product theorem. Off-charge family requires ord(c) not dividing m. Full defect, plateau, stationary-label identification and higher factorial comparison remain open. Separate low-switch corollary not included.",
+  "artifacts": [
+    {
+      "path": "check_results.json",
+      "bytes": 2774,
+      "sha256": "5a0f65353a3e9ebfd9c1494c7962f0e1a19d132583ef9719586eb7c5ebaf74ef"
+    },
+    {
+      "path": "check_results_optimized.json",
+      "bytes": 2774,
+      "sha256": "5a0f65353a3e9ebfd9c1494c7962f0e1a19d132583ef9719586eb7c5ebaf74ef"
+    },
+    {
+      "path": "execution_receipt.json",
+      "bytes": 1457,
+      "sha256": "3371ae5e4e1f1392b661ebc725703f7b7287249172b731ce44cd8facf19dd630"
+    },
+    {
+      "path": "independent_checks.py",
+      "bytes": 8434,
+      "sha256": "e2a7404ae06b0f80dad5d667ef5ef70f0364cdee97b5bce03b524dc0b062aff7"
+    },
+    {
+      "path": "injected_failure_run.stderr",
+      "bytes": 402,
+      "sha256": "e98ba4cb99692a416d6e689039e4f2d701853d65adab8e27192e483cca808142"
+    },
+    {
+      "path": "injected_failure_run.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal_run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal_run.stdout",
+      "bytes": 2774,
+      "sha256": "5a0f65353a3e9ebfd9c1494c7962f0e1a19d132583ef9719586eb7c5ebaf74ef"
+    },
+    {
+      "path": "obligations.json",
+      "bytes": 4421,
+      "sha256": "65ecffbf17816ddf34624023f0a5657511d71330c3a1dd4629853f04aec3b3af"
+    },
+    {
+      "path": "optimized_run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimized_run.stdout",
+      "bytes": 2774,
+      "sha256": "5a0f65353a3e9ebfd9c1494c7962f0e1a19d132583ef9719586eb7c5ebaf74ef"
+    },
+    {
+      "path": "review.md",
+      "bytes": 18071,
+      "sha256": "7b046dd79bdb000a0d84c150a1949d517fdb2043c3a3c81d6929e8c5e2ae17b4"
+    },
+    {
+      "path": "run_receipt.py",
+      "bytes": 1494,
+      "sha256": "4a1fcebb92d646539aee7aa0cdd5549cfb996c66cdd426e01ab18294a0837381"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 8776,
+      "sha256": "a7257d96462d424b80736a17f10fa8ddfbe39a200bbc6dc8de6fff0d8b19f64d"
+    },
+    {
+      "path": "source_snapshots/additional_candidate_manifest.json",
+      "bytes": 2575,
+      "sha256": "9f7bce422f51c248a7affb7cb78d9148b00d47d7f658da1fa919e1867de34006"
+    },
+    {
+      "path": "source_snapshots/additional_claims.json",
+      "bytes": 116454,
+      "sha256": "2906c039df14308432b9f90ba12039e45fab4f16e1c9e2d1e76b5d9f6718b8b7"
+    },
+    {
+      "path": "source_snapshots/additional_frozen_operator_transfer_review_20261006.md",
+      "bytes": 6829,
+      "sha256": "fadf042bdd1320e29e5721d70f9e2c64d949e8b1b8a1f5556e14b02017b67bc1"
+    },
+    {
+      "path": "source_snapshots/additional_nonlinear_bracket_pressure.md",
+      "bytes": 12648,
+      "sha256": "311ec9ba6d0fc8dc942103971d191db4364d7b21b9d616911312320fdc8ba3c1"
+    },
+    {
+      "path": "source_snapshots/all_translation_proof.md",
+      "bytes": 17970,
+      "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
+    },
+    {
+      "path": "source_snapshots/check_extension.py",
+      "bytes": 4333,
+      "sha256": "cbdc415e7512b7d0783717c620683113dc69898cee23ddc4c8ab51718faacfc6"
+    },
+    {
+      "path": "source_snapshots/check_results.json",
+      "bytes": 1511,
+      "sha256": "e9ea34f0ef4ea0449a25bfc6e240d11fec1e7f61ae0e998121b4150d805404d4"
+    },
+    {
+      "path": "source_snapshots/external_dependencies.json",
+      "bytes": 44437,
+      "sha256": "e1ac59459511f47aaa59e26e913a084b1fa9a596a6f7e19f4d8c95271a6cebf7"
+    },
+    {
+      "path": "source_snapshots/fixed_map_path_model.md",
+      "bytes": 2269,
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+    },
+    {
+      "path": "source_snapshots/fixed_model_symmetry_theorem.md",
+      "bytes": 12589,
+      "sha256": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2"
+    },
+    {
+      "path": "source_snapshots/four_branch_parametrix.md",
+      "bytes": 11799,
+      "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7"
+    },
+    {
+      "path": "source_snapshots/frozen_operator_transfer_coercivity.md",
+      "bytes": 28417,
+      "sha256": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26"
+    },
+    {
+      "path": "source_snapshots/frozen_operator_transfer_sources_20261006.md",
+      "bytes": 4148,
+      "sha256": "4877589990a69b8c9caafd59a00548fea4451e35c45adb69da236dcab5292523"
+    },
+    {
+      "path": "source_snapshots/macro_manifest.json",
+      "bytes": 13809,
+      "sha256": "2601436333abb1261a0f6f73733cf02060fc2253563843c11c1c54c4ea479c0a"
+    },
+    {
+      "path": "source_snapshots/macro_review.md",
+      "bytes": 20611,
+      "sha256": "fb5154b374d4f522d1abe3f9da0f814d613bcada237a567d584206e9936d3f52"
+    },
+    {
+      "path": "source_snapshots/target_contract.md",
+      "bytes": 1786,
+      "sha256": "54c45fea561ae9fce3f57e49848ecf40ff5aa67c77346979c854df49cc795c59"
+    },
+    {
+      "path": "source_snapshots/translation_family_proof.md",
+      "bytes": 10586,
+      "sha256": "49a24af2ca9e9628681ce08fcd023528f9b3bc5fbc578c7ec8cdfa11918b4f23"
+    }
+  ]
+}

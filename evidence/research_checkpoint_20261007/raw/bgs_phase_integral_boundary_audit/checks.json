@@ -1,0 +1,81 @@
+{
+  "result": "all bounded exact controls passed",
+  "arithmetic": "SymPy exact rational and symbolic integration/residues/limits",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "one_site_ratio": "(a*d + b*c - c*d - 1)/(a*b - 1)",
+  "bulk_y_cutoff": "T/(T + 1)**2",
+  "surface_normalization_cutoff": "1 - 1/(T + 1)",
+  "standard_color_normalizations": {
+    "1": "0",
+    "2": "1",
+    "3": "1",
+    "4": "1",
+    "5": "1",
+    "6": "1"
+  },
+  "boundary_concentration_moments": [
+    {
+      "power": 0,
+      "exact_moment": "1",
+      "limit": 1
+    },
+    {
+      "power": 1,
+      "exact_moment": "1/(eps + 1)",
+      "limit": 1
+    },
+    {
+      "power": 2,
+      "exact_moment": "2/((eps + 1)*(eps + 2))",
+      "limit": 1
+    },
+    {
+      "power": 3,
+      "exact_moment": "6/((eps + 1)*(eps + 2)*(eps + 3))",
+      "limit": 1
+    },
+    {
+      "power": 4,
+      "exact_moment": "24/((eps + 1)*(eps + 2)*(eps + 3)*(eps + 4))",
+      "limit": 1
+    },
+    {
+      "power": 5,
+      "exact_moment": "120/((eps + 1)*(eps + 2)*(eps + 3)*(eps + 4)*(eps + 5))",
+      "limit": 1
+    },
+    {
+      "power": 6,
+      "exact_moment": "720/((eps + 1)*(eps + 2)*(eps + 3)*(eps + 4)*(eps + 5)*(eps + 6))",
+      "limit": 1
+    }
+  ],
+  "higher_flavor_cancellation_controls": [
+    {
+      "flavors": 1,
+      "exact_phase_ratio": "436/441"
+    },
+    {
+      "flavors": 2,
+      "exact_phase_ratio": "436/441"
+    },
+    {
+      "flavors": 3,
+      "exact_phase_ratio": "436/441"
+    },
+    {
+      "flavors": 4,
+      "exact_phase_ratio": "436/441"
+    }
+  ],
+  "opposite_BF_source_curvature": "-4*q0/(q0 - 1)",
+  "surface_logarithmic_source_curvature": "-q0*(4*q0**2 - 3*q0 + 1)/(q0 - 1)**3",
+  "non_claims": [
+    "No asymptotic spectral assertion",
+    "No test of actual extremely-small-coupling U_N",
+    "No general higher-flavor boundary supermeasure constructed",
+    "No numerical quadrature or Monte Carlo evidence"
+  ],
+  "script_sha256": "d3a90de7a0a9489407fc0b93d9ca083b6d647b61fb4a3ad5bc1142df0c693424"
+}

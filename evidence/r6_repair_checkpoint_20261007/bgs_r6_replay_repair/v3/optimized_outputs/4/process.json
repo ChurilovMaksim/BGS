@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/shared/bgs_r6_repair_checkout/computations/verification/intermediate_old_layers_certificates.py",
+    "--worker",
+    "/workspace/shared/bgs_r6_repair_checkout/computations/verification/intermediate_old_layers/residual25_projectors.py",
+    "/tmp/bgs-intermediate-replay-9_mchkzq/_executions/4"
+  ],
+  "exit_status": 0,
+  "elapsed_seconds": 6.356220277004468
+}

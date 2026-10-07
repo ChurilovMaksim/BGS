@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "arithmetic": "Exact Q(i), Q(sqrt(3)), and rational symbolic residues; no floating tests",
+  "inputs": {
+    "N": 3,
+    "maximum_power": 6,
+    "U": "Matrix([[6*I/7, -6/35 - 8*I/35, 3/7], [-2*I/7, 9/35 + 12*I/35, 6/7], [-3*I/7, -18/35 - 24*I/35, 2/7]])"
+  },
+  "counts": {
+    "log_increment_coefficients": 18,
+    "energy_increment_coefficients": 18,
+    "schur_determinants": 6,
+    "contraction_losses": 6,
+    "boundary_inner": 1,
+    "scalar_second_and_fourth_pairs": 3,
+    "principal_minor_pairs": 8,
+    "cycle_powers": 38
+  },
+  "full_B_through_6": {
+    "1": "1",
+    "2": "995/343",
+    "3": "281377/117649",
+    "4": "306293/117649",
+    "5": "134522407/40353607",
+    "6": "6263091587/1977326743"
+  },
+  "scalar_moments": [
+    {
+      "r": "1/2",
+      "second": "377/6125",
+      "fourth": "1043789/187578125"
+    },
+    {
+      "r": "2/3",
+      "second": "14069/67473",
+      "fourth": "4495561817/77394297393"
+    },
+    {
+      "r": "1",
+      "second": "1041/3200",
+      "fourth": "2647987/20480000"
+    }
+  ],
+  "same_minors_distinct_B2": [
+    "17/27",
+    "65/27"
+  ],
+  "caps": {
+    "cpu_seconds": 60,
+    "address_space_bytes": 2147483648,
+    "maximum_dimension": 7,
+    "max_word_dimension": 3,
+    "max_word_length": 6,
+    "max_cycle_power": 15
+  },
+  "runtime_seconds": 3.6341432679982972,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "nonclaims": [
+    "No numerical evaluation of actual fixed-tau quantum matrices",
+    "No large-N universality estimate",
+    "No independent proof review"
+  ]
+}

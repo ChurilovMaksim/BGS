@@ -1,0 +1,135 @@
+{
+  "schema": "bgs-addenda-exact-controls-v1",
+  "arithmetic": "Python Fraction and SymPy exact rational, complex rational and symbolic algebra",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "universal_scalar_polynomial_identity",
+      "passed": true
+    },
+    {
+      "name": "rational_scalar_grid",
+      "passed": true,
+      "points": 197,
+      "alphas": 17,
+      "cases": 3349,
+      "lambda_one_cases": 17,
+      "boundary_cases": 68
+    },
+    {
+      "name": "spectral_radius_only_jordan_similarity_cases",
+      "passed": true,
+      "cases": 140,
+      "nonnormal_fixtures": 21,
+      "operator_noncontractive_fixtures": 21,
+      "max_dimension": 4
+    },
+    {
+      "name": "minus_identity_sharp_constant",
+      "passed": true,
+      "cases": 24
+    },
+    {
+      "name": "spectral_radius_hypothesis_is_essential",
+      "passed": true,
+      "witness": "dimension 1: A=2, alpha=1/2 makes left side zero and right side 3/4"
+    },
+    {
+      "name": "microscopic_absorption_amgm_identity",
+      "passed": true,
+      "interpretation": "q=exp(-s/(2N)); each eigenvalue cost at most s/(2N)"
+    },
+    {
+      "name": "generic_complex_absorption_counterexample",
+      "passed": true,
+      "lhs": "5/8",
+      "rhs": "15/16"
+    },
+    {
+      "name": "strict_nonnormal_block_domain",
+      "passed": true
+    },
+    {
+      "name": "strict_centered_nonnormal_body_absorption",
+      "passed": true,
+      "cases": 5,
+      "sites": 2,
+      "block_size": 2
+    },
+    {
+      "name": "mobius_domain_and_center",
+      "passed": true
+    },
+    {
+      "name": "bare_action_mobius_invariance_exact_complex_fixture",
+      "passed": true
+    },
+    {
+      "name": "absorbed_action_not_mobius_invariant",
+      "passed": true,
+      "uncentered_exp_action": "7/6",
+      "centered_exp_action": "1"
+    },
+    {
+      "name": "radial_real_two_dimensional_jacobian",
+      "passed": true
+    },
+    {
+      "name": "radial_defect_identity",
+      "passed": true
+    },
+    {
+      "name": "radial_constraint_is_nonlinear",
+      "passed": true,
+      "sum_z": "0",
+      "sum_psi": "3/4 - 6/sqrt(91) > 0"
+    },
+    {
+      "name": "constrained_measure_no_N_coordinate_product",
+      "passed": true,
+      "witness": "N=2, |psi_1|=1: actual coordinate factor 1/4 versus false N-product 1/16"
+    },
+    {
+      "name": "unit_disk_weight_integral",
+      "passed": true,
+      "interpretation": "d^2z gives pi dt; beta=c/2, hence pi/(1+c/2)"
+    },
+    {
+      "name": "N_one_tail_endpoint",
+      "passed": true,
+      "detail": "N=1: centered point z=0, H=S=0; zero-dimensional integral 1 at L=0 and 0 for L>0"
+    },
+    {
+      "name": "eventual_actual_flatness_margin",
+      "passed": true,
+      "limsup_upper": "250000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000001/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "uniform_remainder_buffer_margin",
+      "passed": true,
+      "buffer": "M/N <= 1/10 suffices after the inherited expansion startup; M is not numerically supplied"
+    },
+    {
+      "name": "eventual_gap_margin",
+      "passed": true
+    },
+    {
+      "name": "actual_K_and_c_exact",
+      "passed": true,
+      "K": "5",
+      "c": "1/50",
+      "tail_half_exponent": "1/100",
+      "tail_volume_ratio": "100/101"
+    }
+  ],
+  "all_passed": true,
+  "non_claims": [
+    "Not universal proof by sampling",
+    "No actual fixed-tau U_N instantiated",
+    "No numerical startup threshold",
+    "No block-coercivity theorem tested",
+    "No external theorem authenticated by these computations",
+    "No supermeasure, sources, derivative bounds, normalized large-N tail or BGS conclusion"
+  ]
+}

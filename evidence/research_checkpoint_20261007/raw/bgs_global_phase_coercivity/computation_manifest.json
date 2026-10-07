@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "claim_id": "scratch-global-bosonic-coercivity-controls",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+    "dirty": true
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 timeout 90 python3 checks.py > checks.json; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 timeout 90 python3 block_checks.py > block_checks.json",
+  "environment": {
+    "software": [
+      "Python 3.12.14",
+      "SymPy 1.14.0",
+      "NumPy 2.3.5",
+      "SciPy 1.17.0"
+    ],
+    "hardware": "x86_64 Linux; exact CPU model not recorded"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact determinant, Mobius cocycle and ordinary Jacobian identities at explicit rational fixtures; bounded float EMI, modular and final coercivity diagnostics; nonnormal ordinary matrix-block controls.",
+    "coefficient_domain": "Q(i), algebraic square roots via SymPy for exact checks; IEEE754 float64 for explicitly separate diagnostics",
+    "conventions": "U* is conjugate transpose, P_ij=|U_ij|^2, S=log|det(I-UZU*Z*)|-logdet(I-ZZ*)",
+    "inputs": [
+      "report.md",
+      "matrix_block_extension.md",
+      "checks.py",
+      "checks.json",
+      "block_checks.py",
+      "block_checks.json",
+      "diagnostic.py",
+      "diagnostic.json"
+    ],
+    "bounds": {
+      "scalar_exact_N": [
+        3,
+        4
+      ],
+      "jacobian_exact_N": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scalar_float_N": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        12
+      ],
+      "scalar_float_accepted": 821,
+      "block_exact_N": 3,
+      "block_exact_k": 2,
+      "block_float_N": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "block_float_k": [
+        1,
+        2,
+        3
+      ],
+      "block_float_samples": 300,
+      "each_process_wall_seconds": 90,
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "non_claims": [
+      "No actual U_N tested",
+      "No theorem inferred solely from finite checks",
+      "No supermeasure, source or integrated-tail verification"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng (PCG64)",
+    "seed": [
+      732104,
+      2847
+    ]
+  },
+  "run": {
+    "started_at": "2026-10-07T01:37:00Z",
+    "runtime_seconds": 5.749415636062622,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "checks.json",
+      "sha256": "b6f98d918ba0e5a135f6eba9c962441c39cf82a45914ea8a13f060af8e7440fc"
+    },
+    {
+      "path": "block_checks.json",
+      "sha256": "f2e9b0584ed50be522f00334acfa92d2e7d55bf5cb6c264b0cad480aff5e1358"
+    }
+  ],
+  "checks": [
+    "Exact block/determinant identities",
+    "Exact Mobius action invariance",
+    "Exact Jacobian N=1..4",
+    "F4 sharpness",
+    "Bounded float all-Ky-Fan and modular diagnostics",
+    "Nonnormal matrix-block controls"
+  ],
+  "result": "All programmed exact assertions passed; all accepted floating diagnostics passed within their stated tolerances.",
+  "residual_risks": [
+    "Author checks are not independent analytic review.",
+    "Root solver exclusions in scalar diagnostics are explicitly not evidence about global center existence.",
+    "Legacy manifest captures approximate start time and aggregate runtime, not individual pre/post input immutability.",
+    "Floating checks are not interval-certified."
+  ]
+}

@@ -81,3 +81,11 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Factorial/intermediate-layer integration](../../factorial_intermediate_integration_20261007.md): scoped extensions of TRACE-020 and FM-026; original failed runs and fixture corrections preserved.
 
 - [Factorial/intermediate-layer final validation](../../../evidence/executions/20261007/factorial-intermediate-validation/README.md): post-run receipts for the 2,588-file snapshot; 192/192 workspace, 28/28 supplement, 65/65 maintenance in both modes, 271-page manuscript.
+
+- [Disjoint pair residual and odd arithmetic integration](../../residual_batch_integration_20261007.md): TRACE-021 and scoped FM-026 odd counts, with independent reviews and exact preserved provenance.
+
+- [Disjoint pair residual and odd arithmetic validation](../../../evidence/executions/20261007/residual-batch-validation/README.md): 205/205 original scientific checks, 28/28 supplement, fresh 70/70 maintenance in both modes, 273-page manuscript; separately reviewed TeX and routing-source deltas precede this post-run receipt append.
+
+- [Checked phase/signed research checkpoint, 7 October](../../checked_research_checkpoint_20261007.md): accepted exact sources, remaining TRACE-005 gap and five next research prompts; publication held pending aggregate gates.
+
+- [Final checked checkpoint acceptance, 7 October 2026](../../checked_checkpoint_acceptance_20261007.md): exact local source gates and explicit post-run evidence delta; hosted CI remains separate.

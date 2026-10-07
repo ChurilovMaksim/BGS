@@ -1,0 +1,81 @@
+{
+  "proofs": [
+    {
+      "appended_section": "Review and reproduction record",
+      "maintained": "mathematics/onestep_charge_gap.md",
+      "maintained_sha256": "15d713759394c52cf16665719e970189ef6dab9044e08e5b54bbb29243cfa747",
+      "mathematical_scope_change": false,
+      "original": "evidence/charge_strengthening_20261007/raw/author/onestep_charge_gap.md",
+      "original_sha256": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a",
+      "replacements": [
+        {
+          "after": "Maintained proof prepared 7 October 2026. Independent internal review: proved as written, relative to the scoped inherited inputs below. Literal odd-dimensional U_N=exp(i tau N A_N)M_N, tau=10^-80. This strengthens the finite-power theorem; constants and startup are existential. It is not a spectral-statistics theorem.",
+          "before": "Author candidate, 7 October 2026. Literal odd-dimensional U_N=exp(i tau N A_N)M_N, tau=10^-80. This proof is outside the canonical repository. Independent review is pending. It strengthens the accepted finite-power theorem and is not a spectral-statistics theorem."
+        },
+        {
+          "after": "Exact input snapshots and section-level scopes are mapped in [the dependency contract](../record/charge_strengthening_dependency_contract.json); original source_manifest.json is retained in [historical evidence](../evidence/charge_strengthening_20261007/raw/author/source_manifest.json). In particular:",
+          "before": "Pins appear in source_manifest.json, in particular:"
+        },
+        {
+          "after": "Every named input is frozen under [historical author inputs](../evidence/charge_strengthening_20261007/raw/author/inputs/).",
+          "before": "Every named input is frozen under inputs/."
+        }
+      ]
+    },
+    {
+      "appended_section": "Review and reproduction record",
+      "maintained": "mathematics/global_switch_transfer.md",
+      "maintained_sha256": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90",
+      "mathematical_scope_change": false,
+      "original": "evidence/charge_strengthening_20261007/raw/author/global_switch_transfer.md",
+      "original_sha256": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be",
+      "replacements": [
+        {
+          "after": "Maintained companion prepared 7 October 2026. Independent internal review: proved as written, using the independently accepted one-step gap in [onestep_charge_gap.md](onestep_charge_gap.md). The literal actual-parametrix dependencies remain unchanged. The global switch-damped theorem and checksum-free undamped low-switch theorem have separate scopes; the undamped marked-switch boundary is OPEN.",
+          "before": "Author candidate, 7 October 2026. This note depends on the separate one-step candidate onestep_charge_gap.md, SHA256 d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a. Neither candidate is promoted here. All conclusions about the literal actual map are conditional on acceptance of that new lemma and inherit its pinned actual-parametrix inputs. No canonical edit or publication."
+        },
+        {
+          "after": "The one-step lemma and T4 have separate independent internal acceptance; their exact original source pins and review scopes are retained.",
+          "before": "This is conditional on review of the new one-step lemma and T4."
+        },
+        {
+          "after": "They are incompatible with the exact sufficient damping condition kappa a N(1-z_N)-2 log N -> +infinity, which includes A log N/N with sufficiently large fixed A.",
+          "before": "They are incompatible with the proven global damping regime N(1-z_N)>>log N."
+        },
+        {
+          "after": "The accepted fractional-Hamming and disjoint-synthesis results are frozen in [historical author inputs](../evidence/charge_strengthening_20261007/raw/author/inputs/).",
+          "before": "The accepted fractional-Hamming and disjoint-synthesis results are frozen in inputs/."
+        }
+      ]
+    },
+    {
+      "appended_section": "Review and reproduction record",
+      "maintained": "mathematics/checksum_free_residual.md",
+      "maintained_sha256": "9bcbb30ffb6786d240ad89fa6502163186e57e408a52a90a23cd82356d6787e9",
+      "mathematical_scope_change": false,
+      "original": "evidence/charge_strengthening_20261007/raw/author/checksum_free_residual.md",
+      "original_sha256": "ccf686f7504fec5c0de4152f6e20df4cff7d004ba3b0cf7c08c37eb5b9805e9f",
+      "replacements": [
+        {
+          "after": "Maintained synthesis prepared 7 October 2026. Separately accepted by independent internal review, under the fractional-Hamming theorem/synthesis and the new occupation-twisted low-switch bound. This is the exact Q_new residual decomposition; its complete signed trace remains OPEN.",
+          "before": "Author corollary, 7 October 2026. This uses the separately accepted fractional-Hamming theorem and synthesis pinned in inputs/16_review.md and inputs/17_synthesis_addendum.md, and the NEW one-step/occupation-twisted low-switch argument in onestep_charge_gap.md and global_switch_transfer.md T4. The new analytic input remains under independent review. This note does not change the accepted frontier before that review."
+        }
+      ]
+    },
+    {
+      "appended_section": "Review and reproduction record",
+      "maintained": "mathematics/rounding_gap_obstruction.md",
+      "maintained_sha256": "5dcf2756516c96263f133644c9d56733ce9d504444cbf2c69019919828c38cf4",
+      "mathematical_scope_change": false,
+      "original": "evidence/charge_strengthening_20261007/raw/author/rounding_gap_obstruction.md",
+      "original_sha256": "9194eac0959c18b7c865eaeef1e00925c32deac1fa0ab680c43af8164b5d7f57",
+      "replacements": [
+        {
+          "after": "Maintained corollary prepared 7 October 2026. Separately accepted by independent internal review, under the new one-step charge gap and the existing microscopic spectral-rounding theorem. This credits that construction and changes the operator. It is an obstruction to abstract full-pair closure, not an actual-map or offcharge-only counterexample.",
+          "before": "Author corollary, 7 October 2026. Conditional on the separate new one-step charge-gap lemma. This reuses the already accepted BGS/mathematics/microscopic_rounding_control.md; it does not introduce a new rounding construction. This is an obstruction to a proposed abstract closure, not a counterexample to the unchanged actual quantizer."
+        }
+      ]
+    }
+  ],
+  "schema": "bgs-charge-editorial-mapping-v1"
+}

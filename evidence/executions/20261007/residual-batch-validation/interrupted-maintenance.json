@@ -1,0 +1,10 @@
+{
+  "status": "INTERRUPTED_UNVERIFIED",
+  "logs": {
+    "maintenance-post-routing-normal.log": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "maintenance-post-routing-optimized.log": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063"
+  },
+  "observed_content": "Each log stops after44 dots without a terminal unittest summary.",
+  "live_state_check": "No matching unittest process visible; original sessions45545/76686 return Unknown process id.",
+  "action": "Retain original logs and rerun to new v2-normal/v2-optimized output files. No partial log counted as a pass."
+}

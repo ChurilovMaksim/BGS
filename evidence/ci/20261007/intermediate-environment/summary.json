@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "Actual cross-runtime original-worker replay, not exact remote environment recreation",
+  "python": "3.13.5",
+  "numpy": "2.2.4",
+  "sympy": "1.13.3",
+  "workers": 6,
+  "all_remaining_fields_equal": true,
+  "difference_manifest_sha256": "2a50e707163d24cd15a919943b2c7a33fa572ea1b6239b3f8c98886d06984244",
+  "remote_failure": {
+    "run": 37553863591,
+    "passed": 191,
+    "total": 192,
+    "source_tree_unchanged": true,
+    "check_exit_code": 1,
+    "check_seconds": 160.457,
+    "remote_python": "3.13.15",
+    "actual_failed_result_not_retained": true
+  },
+  "wrapper_scan": "Same version-equality defect found in unpublished residual125; integrator repairing. Inspected odd_newest, central_residual, half_radius and fractional_hamming output comparisons have no environment-version payload fields. Cat_jet wrapper runs exact internal assertions and returns provenance without full frozen-output equality."
+}

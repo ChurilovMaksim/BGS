@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational cyclotomic Q(eta_5), modular integers; no floating-point decisions",
+  "gauss_overlap_counts": {
+    "coordinate_nonparallel": 500,
+    "coordinate_parallel": 250,
+    "plane_nonparallel": 500,
+    "plane_parallel": 250
+  },
+  "total_gauss_overlaps": 1500,
+  "raw_covariance_entries": 391250,
+  "packet_carry_entries": 393750,
+  "raw_oldform_intertwining_entries": 16250,
+  "holonomy_valuation_depths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "packet_records": [
+    {
+      "l": 1,
+      "h": 5,
+      "circles": 4,
+      "L": 6,
+      "new_dimension": 120
+    },
+    {
+      "l": 2,
+      "h": 25,
+      "circles": 20,
+      "L": 30,
+      "new_dimension": 3000
+    },
+    {
+      "l": 3,
+      "h": 125,
+      "circles": 100,
+      "L": 150,
+      "new_dimension": 75000
+    }
+  ],
+  "elapsed_seconds": 2.960760195994226
+}

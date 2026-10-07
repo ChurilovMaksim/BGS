@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "claim_id": "BGS-FM-026",
+  "optimized": true,
+  "replay_evidence_directory": "/workspace/shared/bgs_r6_replay_repair/v3/optimized_outputs",
+  "scope": "Six exact finite reviewer replays; all-depth statements require separately accepted proof bridges.",
+  "resource_caps_per_worker": {
+    "wall_seconds": 360,
+    "cpu_seconds": 300,
+    "address_space_bytes": 2147483648,
+    "cpu_affinity_cores": null,
+    "library_threads_cooperative": 1,
+    "log_bytes_after_capture": 1048576
+  },
+  "top_level_runtime_fields_excluded": {
+    "first_cancellation": [
+      "elapsed_seconds"
+    ],
+    "return_operator": [
+      "seconds"
+    ],
+    "return_nonprimitive": [
+      "seconds"
+    ],
+    "residual25_projectors": [
+      "seconds"
+    ],
+    "residual25_coherent": [
+      "seconds"
+    ]
+  },
+  "top_level_environment_fields_excluded": {
+    "return_operator": [
+      "python",
+      "numpy",
+      "sympy"
+    ],
+    "residual25_projectors": [
+      "python",
+      "numpy",
+      "sympy"
+    ],
+    "residual25_coherent": [
+      "python"
+    ]
+  },
+  "runs": [
+    {
+      "name": "first_position",
+      "exit_status": 0,
+      "elapsed_seconds": 1.2060596649971558,
+      "module_sha256": "21829faa937685eb2a4b9c0f58716a5371b405c5b532d494b23c1535dad2eec5",
+      "original_source_sha256": "140381d0b10d86b6da8fb4c2870b1626f39147eadaf8ef0c6eb194d73f7c99d0",
+      "original_scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be",
+      "replay_scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "762a8e18965b74b3061cce919c747c720ae4c7b093aa36c26ff14083030968d7",
+      "replay_result_sha256": "762a8e18965b74b3061cce919c747c720ae4c7b093aa36c26ff14083030968d7",
+      "original_environment": {},
+      "replay_environment": {},
+      "stdout_sha256": "7ffaf42053b822a782726436b27b71973c962b96a39a7ef531542fbfe044a1ef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "first_cancellation",
+      "exit_status": 0,
+      "elapsed_seconds": 1.8819048500008648,
+      "module_sha256": "f83d6f92b06f6f8407abb66afd40d649be5b2a0533ffad248775f4113a599632",
+      "original_source_sha256": "31d14252dec7bf70e91f3ee3dbaaa239d8dd6845a493dec33644a9020e939009",
+      "original_scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a",
+      "replay_scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "704cec5a3549ddd220e61cca5c1465e960fc0512a4bec4bf9b7aa3c3f9e3efca",
+      "replay_result_sha256": "273bd928e83005301a054af63b0c9383bcbed1ee42506d49deb2f7a7d8ca740d",
+      "original_environment": {},
+      "replay_environment": {},
+      "stdout_sha256": "62d275783827857cea58419641569d86062731af10806a6f0864d5a5d37f60a6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "return_operator",
+      "exit_status": 0,
+      "elapsed_seconds": 51.15255764500034,
+      "module_sha256": "a9c61f64ed0db67a0da9b0c229a83ec1c0199ccc85629010806f042bbc3d4fd2",
+      "original_source_sha256": "bbb2246a0251d5c0734be0f417940d24ebe654524056b8794db44cbe9cf991f5",
+      "original_scientific_sha256": "dd71cc839e87a4341b8451582c62fef076e690786666774d463afb0f541027c4",
+      "replay_scientific_sha256": "dd71cc839e87a4341b8451582c62fef076e690786666774d463afb0f541027c4",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "a74c4ae496bc8ab91bad8108800417f9ed9d8f58212b0a2ed6dbd2bc0ce9eeb7",
+      "replay_result_sha256": "7a3d0f57cd88b7d9d1989092d5bac304d2db5cefb4f9b873adb97336b5686de2",
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "replay_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "stdout_sha256": "f4bce39b3d52af9d989f5c2c5fb21fa424a70cce4c2df0aa48383b0c476a3834",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "return_nonprimitive",
+      "exit_status": 0,
+      "elapsed_seconds": 5.411201476003043,
+      "module_sha256": "74dd2a97176152fb2aee189203abe5db007b3ea272d36bce3d9dbc1ee14e7a75",
+      "original_source_sha256": "585179db03eac3683120ead741a0ddff1f0f89156b294a15abb8355292dc22ca",
+      "original_scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502",
+      "replay_scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "aaddb8c475aca7887462fb150023e240887994a2ba9c028a542ff70b33e64eec",
+      "replay_result_sha256": "39111b6d897df75c3f5b3242f834b28584e7f6da2edc1f5726a23dab8347c586",
+      "original_environment": {},
+      "replay_environment": {},
+      "stdout_sha256": "5bc946abcf5e711e0e680bf5d5a5e06a514f54d2d4cff518809f8fee9c1ab435",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "residual25_projectors",
+      "exit_status": 0,
+      "elapsed_seconds": 6.356220277004468,
+      "module_sha256": "2ef30fa5dc78ce056c5c763e9b57ea6fb09cb9481cd5a1bb4d55aecab443f2b0",
+      "original_source_sha256": "5ce9058898710636edc3004c97c651f5b31c0680b22fa86532c2c7fb726ce09b",
+      "original_scientific_sha256": "7b716cbae496a0d9ec0eea0dc729c824975b3b4feab58552b602bc5478d04382",
+      "replay_scientific_sha256": "7b716cbae496a0d9ec0eea0dc729c824975b3b4feab58552b602bc5478d04382",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "0cea62754d26bf5059487991e88c2ac83fe8e65618fd0d0a02dbaa07e6eff869",
+      "replay_result_sha256": "b5fe52a01d6a8b8b4355a57a4addae221041e7333dd1a1c7a4e4652e6ab22061",
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "replay_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "stdout_sha256": "6ff21b4322a79c63fc052a20432d5d7cb75d40d7693322c25d15fc8dea8c349f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "residual25_coherent",
+      "exit_status": 0,
+      "elapsed_seconds": 0.7150286979958764,
+      "module_sha256": "635d2a4d018366e09dc902f2cfb1a98f7b11fcb6350cb62c7ced8fe12c523c7a",
+      "original_source_sha256": "39f9be4db62def1182dde27e0118e615ca67e650be5954dc7290d1e6a3a1ea45",
+      "original_scientific_sha256": "eddeeed9b98a0654a2f57633d20ddd613700112bbee8b8bcf2e673788339373b",
+      "replay_scientific_sha256": "eddeeed9b98a0654a2f57633d20ddd613700112bbee8b8bcf2e673788339373b",
+      "all_scientific_fields_equal": true,
+      "silent_import": true,
+      "fresh_result_created": true,
+      "private_step_workspace": true,
+      "copied_original_inputs_unchanged": true,
+      "original_result_sha256": "e228f771eed9a761c32a450b18a5f61deb97cd48faf5dbd13915a131ec9d6a64",
+      "replay_result_sha256": "79e558965b1ddc9b028d90b84c86ebe12ea559a10011ca2c6b631fb68ebc8bcd",
+      "original_environment": {
+        "python": "3.12.14"
+      },
+      "replay_environment": {
+        "python": "3.12.14"
+      },
+      "stdout_sha256": "f27e5fced69890e6481f70916e948c58457cd26112d0be42200e2f1bf7ecb5bc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "nonclaims": [
+    "No full U simplicity, gap estimate, or BGS result.",
+    "No rerun of the original author full rotated-return generator.",
+    "The frozen author matrices are independently checked by reviewed raw identities, phases, and characteristic algorithms."
+  ]
+}

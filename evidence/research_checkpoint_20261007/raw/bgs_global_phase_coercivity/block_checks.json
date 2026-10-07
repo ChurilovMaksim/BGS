@@ -1,0 +1,36 @@
+{
+  "exact": {
+    "N": 3,
+    "block_size": 2,
+    "rational_complex_nonnormal": true,
+    "strict_contractions": true,
+    "normalized_J_unitary_identity": true,
+    "determinant_identity": true
+  },
+  "floating": {
+    "N": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "k": [
+      1,
+      2,
+      3
+    ],
+    "trials_per_pair": 25,
+    "samples": 300,
+    "seed": 2847,
+    "unitaries": "Fourier only, hence P=J and K=1",
+    "min_coercivity_margin": 0.011606296962486039,
+    "min_intermediate_margin": 0.011606293981642125,
+    "arithmetic": "float64; diagnostic only"
+  },
+  "runtime_seconds": 2.00085186958313,
+  "non_claims": [
+    "No block Mobius gauge or Jacobian",
+    "No supersymmetry",
+    "No asymptotic theorem inferred from samples"
+  ]
+}

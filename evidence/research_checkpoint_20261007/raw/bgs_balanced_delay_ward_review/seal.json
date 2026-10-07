@@ -1,0 +1,62 @@
+{
+  "schema": "bgs-independent-proof-review-seal-v1",
+  "sealed_at": "2026-10-07T03:28:14.196946+00:00",
+  "primary_verdict": "proved as written for accepted finite-N statements; actual-model limiting obligation remains open",
+  "canonical_base": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "accepted_proof_sources": [
+    {
+      "path": "inputs/boundary_delay_obstruction.md",
+      "sha256": "ce752ed7f8ed8780bf32c449a040b0776b0ec755d4c9d9ed8c42cd2871e91232"
+    },
+    {
+      "path": "phase_ward_identity_v2.md",
+      "sha256": "1fccba816add7065c611edf21164bbef36fa4bad9edf6e30bb39ff9b8d737479"
+    }
+  ],
+  "superseded_ward_source": {
+    "path": "inputs/phase_ward_identity.md",
+    "sha256": "d439dccbb6511d0d1bcd0439bd28df2f0d76849bdf17727c9dccd0c96a58c2bf",
+    "reason": "Two prose-only precision/scope corrections; equations unchanged."
+  },
+  "supporting_evidence": [
+    {
+      "path": "review.md",
+      "sha256": "c05ec6d925c9fdfdf7d8cd498b72de663fdc51882ce3c1a461566d62a58fee9c"
+    },
+    {
+      "path": "source_checks.md",
+      "sha256": "760b0e4cf323bdccb27e96ef0db33cd5be34aa7263e360fa8aeb8bb9301cab8f"
+    },
+    {
+      "path": "correction_mapping.json",
+      "sha256": "c04b7fae7f2050554535c9e56e6a7dc4340286c741ede0a01fbab53d9849684e"
+    },
+    {
+      "path": "phase_ward_v1_to_v2.diff",
+      "sha256": "afa1e0adfb24de71b82479c3b605f2f65f9d8b1e7d781b755ca8cf5ee3e457db"
+    },
+    {
+      "path": "computation_manifest.json",
+      "sha256": "a2b7abac6f4f240cb278abe5077453903ebc2c8289a478f88a8889becbe1dbd2"
+    },
+    {
+      "path": "results/independent_exact_controls.json",
+      "sha256": "9e20e1af8fcbd037a995f02aaa3da565bbd16b7bd2e2ccb833576e53b02b06f0"
+    },
+    {
+      "path": "results/manifest_validation.stdout",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    }
+  ],
+  "exact_assertions_passed": 79,
+  "manifest_validation": "passed, version 2, input/output hashes verified",
+  "first_surviving_missing_target": "For literal actual U_N and every fixed s>0, prove E_D R_(G-G^H) Psi_(N,s) -> 0 with the entire signed contraction retained.",
+  "conditional_scope": "Fixed-N smooth Poisson solution exists; no uniform-N test bound or actual overlap estimate is claimed.",
+  "non_claims": [
+    "No actual-model counterexample",
+    "No balanced Abel limit proved",
+    "No deterministic BGS or higher-order closure",
+    "No new route started",
+    "No canonical writes or publication"
+  ]
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_onestep_charge_review/switch_checks.py", line 223, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/shared/bgs_onestep_charge_review/switch_checks.py", line 100, in main
+    if args.inject_failure:require(False,'injected switch failure under optimization')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_onestep_charge_review/independent_checks.py", line 16, in require
+    raise RuntimeError(message)
+RuntimeError: injected switch failure under optimization

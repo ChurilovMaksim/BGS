@@ -1,0 +1,113 @@
+{
+  "canonical_state": "Proposal only; no registry, ledger or manuscript edited. Independent internal acceptance applies to the pinned originals.",
+  "companion": {
+    "damping_condition": "kappa a N(1-z_N)-2 log N -> +infinity; includes z_N=1-A log N/N for A>2/(kappa a).",
+    "dependencies": [
+      "Core one-step bound including centered zero charge",
+      "Exact finite-dimensional unitarity, charge decomposition, occupation-torus identity, Hamming coefficient extraction and trace cyclicity"
+    ],
+    "open": "Signed undamped boundary integral T16 remains OPEN.",
+    "proof": "mathematics/global_switch_transfer.md",
+    "results": [
+      "Checksum-free actual partial offcharge fibers with arbitrary occupation twists and arbitrary modulus-one-or-less difference-word weights, low-switch cap floor(gamma a N/(8 log N))",
+      "Full all-switch high-Hamming damped bound O(N^2 exp(-kappa a N(1-z))) for normalized positive compact Heisenberg bands",
+      "Exact marked-switch boundary equivalence T15\u2013T17 with known negligible damped endpoint"
+    ]
+  },
+  "core": {
+    "accepted_original_sha256": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a",
+    "conclusion": "Uniform eventual one-step sup_(c!=0)||B_(N,c)||<=rho<1, plus charge-pinched ordinary-HS traceless gap, for the unchanged odd-N U_N at fixed tau=10^-80.",
+    "constants": "Existential map-dependent rho and N0; no effective startup or tau-uniformity.",
+    "dependencies": [
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/09_four_branch_parametrix.md",
+        "role": "analytic input",
+        "scope": "Sections 1\u20132 actual raw branch identity, HJ/transport, gluing and fixed-time remainder; Sections 4\u20136 literal two-mode certificate, derivative bounds and alias-safe discrete TT*. No classical mixing input.",
+        "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7"
+      },
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/10_translation_family_proof.md",
+        "role": "analytic input",
+        "scope": "Sections 3\u20135 actual translated phases, literal two-mode Fourier certificate and uniform translated TT* only; provenance for A2\u2013A5, not a blanket use of its family theorem.",
+        "sha256": "49a24af2ca9e9628681ce08fcd023528f9b3bc5fbc578c7ec8cdfa11918b4f23"
+      },
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/11_all_translation_proof.md",
+        "role": "analytic input",
+        "scope": "A2\u2013A5 only: exact actual phases, scaled alias-safe TT*, growing-charge smallness (equation A11), fixed-c operator-norm convergence with both cutoffs. A6\u2013A8 and conclusions requiring Egorov/mixing are excluded.",
+        "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
+      },
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/08_position_chain_mixing.md",
+        "role": "analytic input",
+        "scope": "Sections 1\u20132 only: explicit leading-amplitude positivity estimate, zero-charge norm decomposition and eventual ||P-J||<=1/2. No marked/cyclic theorem is required.",
+        "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+      }
+    ],
+    "explicitly_excluded": [
+      "FM-018",
+      "A6\u2013A7 Koopman identification and classical mixing",
+      "A8 finite-power theorem as a load-bearing input",
+      "Egorov",
+      "Parry\u2013Pollicott or other unused mixing source",
+      "Any full Ad(U) contraction"
+    ],
+    "proof": "mathematics/onestep_charge_gap.md"
+  },
+  "external_sources": "No new specialized external theorem is used. Inherited parametrix/phase review boundaries remain unchanged; unused classical mixing is not imported.",
+  "formalization": "No analytic Lean or other proof-assistant certificate is added.",
+  "review_artifacts": {
+    "addenda_review.md": "evidence/charge_strengthening_20261007/raw/review/addenda_review.md",
+    "companion_review.md": "evidence/charge_strengthening_20261007/raw/review/companion_review.md",
+    "manifest.json": "evidence/charge_strengthening_20261007/raw/review/manifest.json",
+    "review.md": "evidence/charge_strengthening_20261007/raw/review/review.md"
+  },
+  "rounding": {
+    "dependencies": [
+      "Core one-step gap",
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/18_microscopic_rounding_control.md",
+        "role": "analytic input",
+        "scope": "Existing altered simple-spectrum W_N with ||W_N-U_N||=O(N^-1), specified low-trace/coarse controls and stable-band full pair discrepancy.",
+        "sha256": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889"
+      }
+    ],
+    "new_step": "Uniform charge compression Lipschitz bound <=2||W_N-U_N||, preserving the one-step and damped gap controls.",
+    "proof": "mathematics/rounding_gap_obstruction.md",
+    "scope": "Abstract full-pair closure obstruction for an altered operator; no offcharge-only counterexample and no counterexample to literal U_N/BGS."
+  },
+  "schema": "bgs-charge-dependency-contract-v1",
+  "synthesis": {
+    "L_all": "occupation mismatch, h>floor(.49m), s<=floor(gamma a N/(8 log N)); no checksum restriction",
+    "dependencies": [
+      "Companion T4 checksum-free partial-fiber bound",
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/15_candidate_v1.md",
+        "role": "analytic input",
+        "scope": "Accepted fractional-Hamming theorem: balanced radius satisfies BOTH strict entropy conditions; offcharge raw radius floor(.49m).",
+        "sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041"
+      },
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/16_review.md",
+        "role": "review provenance",
+        "scope": "Independent fractional-Hamming acceptance and its unchanged inherited inputs.",
+        "sha256": "c1436234c24fa95f9a7f4c66e2866b64a276a4973224eb11b1be59937bcde725"
+      },
+      {
+        "path": "evidence/charge_strengthening_20261007/raw/author/inputs/17_synthesis_addendum.md",
+        "role": "scoped exact synthesis input",
+        "scope": "Exact Haar and centered-range orthogonal projector facts and min(m,N) cycle trace; old checksum-restricted low-switch estimate is replaced, not used as an analytic prerequisite.",
+        "sha256": "69ac748eb3d6dcfdccfa144845d75384533e0024e3b3c709518f1fb317ea4f7a"
+      }
+    ],
+    "exact_projector": "Q_new=I-P_H-P_bal-O_low-L_all",
+    "proof": "mathematics/checksum_free_residual.md",
+    "unchanged_open": [
+      "Balanced complement Pi-P_H-P_bal",
+      "Complete Q_new signed trace",
+      "Plateau compensation",
+      "Higher factorial hierarchy",
+      "TRACE-005 and BGS"
+    ]
+  }
+}

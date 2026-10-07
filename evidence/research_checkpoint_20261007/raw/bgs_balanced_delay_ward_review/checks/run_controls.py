@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,subprocess,sys,time,datetime,hashlib,os,platform
+root=Path(__file__).resolve().parents[1]
+hashfile=lambda p:hashlib.sha256((root/p).read_bytes()).hexdigest()
+inputs=['checks/independent_exact_controls.py','checks/run_controls.py'];before={p:hashfile(p) for p in inputs}
+results=['results/independent_exact_controls.json']; start=datetime.datetime.now(datetime.timezone.utc).isoformat();t=time.monotonic()
+env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1')
+with (root/'results/independent_exact_controls.stdout').open('w') as out,(root/'results/independent_exact_controls.stderr').open('w') as err:
+ r=subprocess.run([sys.executable,str(root/inputs[0])],cwd=root,env=env,stdout=out,stderr=err,timeout=220)
+runtime=time.monotonic()-t;after={p:hashfile(p) for p in inputs};assert before==after
+assert r.returncode==0
+res=json.loads((root/results[0]).read_text());assert res['status']=='passed'
+m={'schema_version':2,'claim_id':'BGS-CANDIDATE-BALANCED-DELAY-WARD-INDEPENDENT-CONTROLS','repository':{'commit':'d37c92e563d10d25bb1d6ab85bedffc1f160f773','dirty':True,'note':'Canonical base read-only with pre-existing integration overlay; this run is isolated.'},'command':[sys.executable,'checks/independent_exact_controls.py'],'environment':{'software':[{'name':'Python','version':res['python']},{'name':'SymPy','version':res['sympy']}],'hardware':platform.machine()},'mathematics':{'assertion_tested':'Exact seed, determinant convention, direct second-order phase derivatives, Haar generator scaling, and finite Abel controls','coefficient_domain':res['arithmetic'],'conventions':'F_5 times stated column permutation; left coordinate-phase Brownian variance dt; normalized heat E B_t=e^(-t/2)I','inputs':inputs,'bounds':res['bounds'],'non_claims':res['non_claims']},'randomness':{'used':False,'generator':'none','seed':None},'run':{'started_at':start,'runtime_seconds':runtime,'exit_status':r.returncode,'status':'completed','resource_limits':{'memory_bytes':2*1024**3,'cpu_seconds':180,'max_cores':1,'max_threads':1},'limits_note':'Address-space and CPU rlimits plus one-core affinity inside child; thread limits cooperative; wall timeout 220 seconds.'},'input_artifacts':[{'path':p,'sha256':before[p],'sha256_after':after[p]} for p in inputs],'execution_artifacts':inputs,'declared_results':results,'output_directory':'results','outputs':[{'path':p,'sha256':hashfile(p),'kind':'result' if p in results else 'log'} for p in results+['results/independent_exact_controls.stdout','results/independent_exact_controls.stderr']],'checks':list(res['counts']),'result':'implementation and finite assertion verified in the stated range','residual_risks':['SymPy is part of the trusted finite exact-computation stack; no formal proof assistant was used.','Analytic and universal conclusions are audited in the separate review, not inferred from these checks.']}
+(root/'computation_manifest.json').write_text(json.dumps(m,indent=2)+'\n')
+print(json.dumps({'status':'passed','runtime_seconds':runtime,'assertions':sum(res['counts'].values())}))

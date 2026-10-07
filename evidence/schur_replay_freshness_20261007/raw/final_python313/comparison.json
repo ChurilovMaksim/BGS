@@ -1,0 +1,489 @@
+{
+  "status": "passed",
+  "runs": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "resource_caps": {
+        "script": "computations/verification/schur/author_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+        "cpu_seconds": 60,
+        "wall_seconds": 70,
+        "memory_bytes": 2147483648,
+        "cpu_affinity": "inherited, not pinned",
+        "library_thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py",
+        "--output",
+        "/tmp/bgs-schur-result-6r0qi515/child/result.json"
+      ],
+      "runtime_seconds": 3.3396559180037,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false,
+      "output_absent_before_execution": true,
+      "fresh_result_created": true,
+      "scientific_equality": true,
+      "separated_paths": [
+        "/runtime_seconds",
+        "/python",
+        "/sympy"
+      ],
+      "expected_provenance": {
+        "runtime_seconds": 5.671619600005215,
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "sympy": "1.14.0"
+      },
+      "observed_provenance": {
+        "runtime_seconds": 3.025407285000256,
+        "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+        "sympy": "1.13.3"
+      },
+      "expected_raw_sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "observed_raw_sha256": "db170e6a7f92c0a800bacf7c778229b9439519218acf71f6c5d01b8af1d658a7",
+      "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "resource_caps": {
+        "script": "computations/verification/schur/author_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+        "cpu_seconds": 60,
+        "wall_seconds": 70,
+        "memory_bytes": 2147483648,
+        "cpu_affinity": "inherited, not pinned",
+        "library_thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py",
+        "--output",
+        "/tmp/bgs-schur-result-zz4ui50o/child/result.json"
+      ],
+      "runtime_seconds": 5.162013249995653,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false,
+      "output_absent_before_execution": true,
+      "fresh_result_created": true,
+      "scientific_equality": true,
+      "separated_paths": [
+        "/runtime_seconds",
+        "/python",
+        "/sympy"
+      ],
+      "expected_provenance": {
+        "runtime_seconds": 5.671619600005215,
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "sympy": "1.14.0"
+      },
+      "observed_provenance": {
+        "runtime_seconds": 3.3065230660067755,
+        "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+        "sympy": "1.13.3"
+      },
+      "expected_raw_sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "observed_raw_sha256": "0e7952f2d23c0d22ed21b59eb48187cdb72521602e9d9e97ea406caeaaa8fd73",
+      "scientific_sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f"
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "resource_caps": {
+        "script": "computations/verification/schur/independent_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/review/checks.json",
+        "cpu_seconds": 160,
+        "wall_seconds": 180,
+        "memory_bytes": 2147483648,
+        "cpu_affinity": "inherited, not pinned",
+        "library_thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py",
+        "--output",
+        "/tmp/bgs-schur-result-lqxmg2v8/child/result.json"
+      ],
+      "runtime_seconds": 4.323368898003537,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false,
+      "output_absent_before_execution": true,
+      "fresh_result_created": true,
+      "scientific_equality": true,
+      "separated_paths": [
+        "/runtime_seconds",
+        "/python",
+        "/sympy"
+      ],
+      "expected_provenance": {
+        "runtime_seconds": 3.765887458001089,
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "sympy": "1.14.0"
+      },
+      "observed_provenance": {
+        "runtime_seconds": 3.9892751340012182,
+        "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+        "sympy": "1.13.3"
+      },
+      "expected_raw_sha256": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+      "observed_raw_sha256": "60cd23b0a6ffd8fd78132e0ff40f53114143fc058a559e901375df5b85376fe9",
+      "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "resource_caps": {
+        "script": "computations/verification/schur/independent_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/review/checks.json",
+        "cpu_seconds": 160,
+        "wall_seconds": 180,
+        "memory_bytes": 2147483648,
+        "cpu_affinity": "inherited, not pinned",
+        "library_thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py",
+        "--output",
+        "/tmp/bgs-schur-result-qbq3kj2e/child/result.json"
+      ],
+      "runtime_seconds": 6.813300572997832,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false,
+      "output_absent_before_execution": true,
+      "fresh_result_created": true,
+      "scientific_equality": true,
+      "separated_paths": [
+        "/runtime_seconds",
+        "/python",
+        "/sympy"
+      ],
+      "expected_provenance": {
+        "runtime_seconds": 3.765887458001089,
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "sympy": "1.14.0"
+      },
+      "observed_provenance": {
+        "runtime_seconds": 5.109041326002625,
+        "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+        "sympy": "1.13.3"
+      },
+      "expected_raw_sha256": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+      "observed_raw_sha256": "9b20cf40ccdd3224e9319a1ae67ca1fa2ca4ff4d68e1490cae7a7773bd0192ef",
+      "scientific_sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9"
+    }
+  ],
+  "controls": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-c",
+        "import importlib.util,pathlib; p='/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py'; s=importlib.util.spec_from_file_location(\"port\",p); m=importlib.util.module_from_spec(s); exec(compile(pathlib.Path(p).read_bytes(),p,\"exec\"),m.__dict__)"
+      ],
+      "runtime_seconds": 0.26073239899415057,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent no-argument port",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py"
+      ],
+      "runtime_seconds": 0.27778808499715524,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "active explicit mathematical failure",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-c",
+        "import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 0.3052432510012295,
+      "exit_status": 1,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~~~^^\n  File \"negative_control\", line 20, in run_checks\nRuntimeError: unitarity\n",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util,pathlib; p='/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py'; s=importlib.util.spec_from_file_location(\"port\",p); m=importlib.util.module_from_spec(s); exec(compile(pathlib.Path(p).read_bytes(),p,\"exec\"),m.__dict__)"
+      ],
+      "runtime_seconds": 1.3825368100006017,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent no-argument port",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py"
+      ],
+      "runtime_seconds": 1.648811924002075,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "active explicit mathematical failure",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "-c",
+        "import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 1.8484973469967372,
+      "exit_status": 1,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/author_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~~~^^\n  File \"negative_control\", line 20, in run_checks\nRuntimeError: unitarity\n",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-c",
+        "import importlib.util,pathlib; p='/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py'; s=importlib.util.spec_from_file_location(\"port\",p); m=importlib.util.module_from_spec(s); exec(compile(pathlib.Path(p).read_bytes(),p,\"exec\"),m.__dict__)"
+      ],
+      "runtime_seconds": 0.2549979620016529,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent no-argument port",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py"
+      ],
+      "runtime_seconds": 0.2716518730012467,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "active explicit mathematical failure",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-c",
+        "import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 4.544328083997243,
+      "exit_status": 1,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~^^\n  File \"negative_control\", line 260, in run_checks\nAssertionError: exact finite control failed\n",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util,pathlib; p='/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py'; s=importlib.util.spec_from_file_location(\"port\",p); m=importlib.util.module_from_spec(s); exec(compile(pathlib.Path(p).read_bytes(),p,\"exec\"),m.__dict__)"
+      ],
+      "runtime_seconds": 1.645095810003113,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent no-argument port",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py"
+      ],
+      "runtime_seconds": 1.706272324998281,
+      "exit_status": 0,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "active explicit mathematical failure",
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "-c",
+        "import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 5.722311593002814,
+      "exit_status": 1,
+      "status": "completed",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import ast,pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_r6_repair_checkout/computations/verification/schur/independent_checks.py').read_text()); f=next(n for n in t.body if isinstance(n,ast.FunctionDef) and n.name==\"run_checks\"); n=next(n for n in ast.walk(f) if isinstance(n,ast.If) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~^^\n  File \"negative_control\", line 260, in run_checks\nAssertionError: exact finite control failed\n",
+      "inputs_authenticated_after_child": true,
+      "changed_inputs": [],
+      "private_step_workspace": true,
+      "original_expected_bytes_staged": false
+    }
+  ],
+  "mathematical_scope": "exact finite controls only; actual radial limit, off-charge, higher factorial, TRACE-005 and BGS remain OPEN",
+  "failure": null,
+  "inputs_unchanged": true,
+  "separated_paths": [
+    "/runtime_seconds",
+    "/python",
+    "/sympy"
+  ],
+  "expected_bytes_cached_before_execution": true,
+  "comparison_is_recursive_key_filter": false,
+  "producer_outputs_absent_before_execution": true,
+  "input_authentication_after_each_child": true,
+  "shared_generated_dependencies": "none: each exact family is self-contained",
+  "expected_bytes_outside_child_workspaces": true
+}

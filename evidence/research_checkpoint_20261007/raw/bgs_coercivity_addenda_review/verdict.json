@@ -1,0 +1,48 @@
+{
+  "schema": "bgs-coercivity-addenda-verdict-v1",
+  "primary_verdict": "proved as written",
+  "created_at_utc": "2026-10-07T02:35:28.125831+00:00",
+  "audit_sha256": "b0c47a55e04ae0f8ca6921039ec6e28c1e9bf71dad9c68265332aa36629a6f1b",
+  "reviewed_packet_sha256": "ba9e7aea1b4d1db92cf0e0c30a76a559129d1c60c99ff4a48286765b3205ec81",
+  "claims": [
+    {
+      "source": "actual_constants_addendum.md",
+      "sha256": "23566b86660c089b6005f0165d4a4dee2d0528e7c7e99ee34a831ff475182ae8",
+      "verdict": "proved as written",
+      "scope": "Unchanged actual scalar family; eventual odd N; C=5, rho=1/2, K=5, c=1/50; no effective startup."
+    },
+    {
+      "source": "radial_translation.md",
+      "sha256": "9a061d64c39cc947e0060d20c96864a301b2fb88b53360cf1e5a44c9434bdcfb",
+      "verdict": "proved as written",
+      "scope": "Exact nonlinear radial slice, individual real Jacobian and stated auxiliary coordinate-Lebesgue tail only."
+    },
+    {
+      "source": "real_absorption_addendum.md",
+      "sha256": "267761a7e1e1f0ba649c976987a2166bf898f72515d000cdc8f1e27a37a2fd4e",
+      "verdict": "proved as written",
+      "scope": "Sharp spectral-radius determinant inequality for real alpha in [0,1]; strict body loss -ks/2 at alpha=exp(-s/N); ordinary centered scalar/block and bare-invariance scalar uncentered consequences."
+    }
+  ],
+  "inherited_acceptances": {
+    "scalar_audit_sha256": "1247da77c991a84235ad7aae2a8cc5adb1a74a910c86060e2ce0e7dbb30db236",
+    "block_audit_sha256": "96556a4d38ac60ef1ebc1fb90fc952db2e60d8d87f13aef96bc884a18d71bcf5",
+    "block_seal_sha256": "b6bad3a8492b9bda06ffb9e463b1259f72aa92bfcb5eb9e26b67e29f1d6d37a9",
+    "fm021_source_sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+  },
+  "new_external_inputs": [],
+  "failed_obligations": [],
+  "unresolved_in_scope": [],
+  "out_of_scope_open": [
+    "Effective startup",
+    "Block centering gauge/Jacobian",
+    "Generic complex or nonuniform source matrices",
+    "Source derivatives and Grassmann inverse factors",
+    "Full supermeasure/Berezinian/boundary terms",
+    "Normalized large-N tails",
+    "All-order signed cancellation and deterministic off-charge comparison",
+    "TRACE-005 and BGS"
+  ],
+  "canonical_edits": false,
+  "publication": false
+}

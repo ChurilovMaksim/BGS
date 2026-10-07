@@ -1,0 +1,136 @@
+{
+  "schema": "bgs-checkpoint-replay-contract-v1",
+  "scope": "Exact finite controls, not analytic verification; complete reviewed mathematical scopes are in phase_trace_checkpoint.md",
+  "tasks": [
+    {
+      "name": "compact_independent_n1",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py",
+      "arguments": [
+        "1",
+        "4"
+      ],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n1_order4.log",
+      "provenance_root_fields": [
+        "python",
+        "sympy",
+        "elapsed_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "compact_independent_n2",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py",
+      "arguments": [
+        "2",
+        "4"
+      ],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n2_order4.log",
+      "provenance_root_fields": [
+        "python",
+        "sympy",
+        "elapsed_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "compact_independent_n3",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py",
+      "arguments": [
+        "3",
+        "3"
+      ],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n3_order3.log",
+      "provenance_root_fields": [
+        "python",
+        "sympy",
+        "elapsed_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "compact_independent_n4",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py",
+      "arguments": [
+        "4",
+        "3"
+      ],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_n4_order3.log",
+      "provenance_root_fields": [
+        "python",
+        "sympy",
+        "elapsed_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "compact_author_n2",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py",
+      "arguments": [
+        "6"
+      ],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log",
+      "provenance_root_fields": [
+        "seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "source_bound_lemmas",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.py",
+      "arguments": [],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_source_bound_lemmas.json",
+      "provenance_root_fields": [
+        "python",
+        "runtime_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "literal_fixed_word",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py",
+      "arguments": [],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/exact_controls.json",
+      "provenance_root_fields": [],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "color_one_completion",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py",
+      "arguments": [],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.json",
+      "provenance_root_fields": [],
+      "timeout_seconds": 180,
+      "generated_result": "evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/checks.json"
+    },
+    {
+      "name": "real_absorption",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.py",
+      "arguments": [],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/absorption_checks.json",
+      "provenance_root_fields": [
+        "python",
+        "sympy",
+        "runtime_seconds"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "literal_extension_algebra",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/check_extension_algebra.py",
+      "arguments": [],
+      "expected": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/exact_checks.json",
+      "provenance_root_fields": [],
+      "timeout_seconds": 120
+    }
+  ],
+  "cpp": {
+    "source": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/check_growing.cpp",
+    "expected": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/sealed_execution/result.json",
+    "provenance_root_fields": [
+      "runtime_seconds",
+      "compiler_command"
+    ],
+    "timeout_seconds": 120
+  },
+  "assertion_port": "AST Assert nodes are replaced by explicit if/raise with identical lazy message evaluation; source files remain unchanged. This preserves all tests under normal and optimized wrapper modes."
+}

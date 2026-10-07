@@ -1,0 +1,121 @@
+{
+  "schema": "bgs-independent-charge-review-bundle-v1",
+  "generated_utc": "2026-10-07T01:15:24.884446+00:00",
+  "scope": "Independent core, companion and two separate addendum audits; canonical read-only",
+  "verdicts": [
+    {
+      "target": "onestep_charge_gap.md",
+      "sha256": "d51de5e8287495514fc431ed9b05e44f3407e46ed923a6e1664df2cca667e97a",
+      "primary_verdict": "proved as written",
+      "review": "review.md"
+    },
+    {
+      "target": "global_switch_transfer.md",
+      "sha256": "4a333b1847eb466ef66326e26562ee63770f6e09ed7f47d7b517e5fbf5e6d0be",
+      "primary_verdict": "proved as written",
+      "review": "companion_review.md"
+    },
+    {
+      "target": "checksum_free_residual.md",
+      "sha256": "ccf686f7504fec5c0de4152f6e20df4cff7d004ba3b0cf7c08c37eb5b9805e9f",
+      "primary_verdict": "proved as written",
+      "review": "addenda_review.md"
+    },
+    {
+      "target": "rounding_gap_obstruction.md",
+      "sha256": "9194eac0959c18b7c865eaeef1e00925c32deac1fa0ab680c43af8164b5d7f57",
+      "primary_verdict": "proved as written",
+      "review": "addenda_review.md"
+    }
+  ],
+  "reviewed_source_pins_unchanged": true,
+  "frozen_input_integrity": true,
+  "execution_manifests": [
+    {
+      "name": "normal",
+      "manifest": "normal/manifest.json",
+      "manifest_sha256": "cb47b1fa6a020b9b4a8c9c11bb42ec5459d0d21e677e86d24358a063eda6fee3",
+      "expected_outcome": "completed"
+    },
+    {
+      "name": "optimized",
+      "manifest": "optimized/manifest.json",
+      "manifest_sha256": "2570af7425ce33257b53f426e3bc1f345212aa254f39e43b37f9b283505f07e2",
+      "expected_outcome": "completed"
+    },
+    {
+      "name": "injected",
+      "manifest": "injected/manifest.json",
+      "manifest_sha256": "af44d59fd901323c93ed597d0944b5640b600f2afaef0b3314730f3c9bbff216",
+      "expected_outcome": "failed by explicit injection"
+    },
+    {
+      "name": "switch_normal",
+      "manifest": "switch_normal/manifest.json",
+      "manifest_sha256": "17fa6d994ad83c5c1131331f3b79064019a061345a718b5e6e45654106d7fd42",
+      "expected_outcome": "completed"
+    },
+    {
+      "name": "switch_optimized",
+      "manifest": "switch_optimized/manifest.json",
+      "manifest_sha256": "b6fe2e5bdad4920454f648c43663c75ef4733854eb0e288d9db8b1922904bab4",
+      "expected_outcome": "completed"
+    },
+    {
+      "name": "switch_injected",
+      "manifest": "switch_injected/manifest.json",
+      "manifest_sha256": "64bb05e777c17a6139633b8b3aab84e8724aabdb2aa3f155eb6cf39de53dee77",
+      "expected_outcome": "failed by explicit injection"
+    }
+  ],
+  "normal_optimized_outputs_identical": true,
+  "switch_normal_optimized_outputs_identical": true,
+  "artifacts": [
+    {
+      "path": "review.md",
+      "sha256": "3c352025086e239d0dec874855f604940ed6f87ed5b5e1a3767db07f3c572499"
+    },
+    {
+      "path": "companion_review.md",
+      "sha256": "180ea0676d0bc66dac9df4192a6070579930d8795767b4a06019c9ef6f4f24cc"
+    },
+    {
+      "path": "addenda_review.md",
+      "sha256": "56cfa5bf81c5fe56adc2ebe06ab2cece78ed03f4c9c1ef09fd6502086ef8a0b1"
+    },
+    {
+      "path": "obligations.json",
+      "sha256": "90dd8866b8f89146e56202a3b87a033e74025796e2ba513d3ddc7d52d268426c"
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "94703e5c487a54cd961354c61d73df84a1d6f190c0339484397114e606f30850"
+    },
+    {
+      "path": "companion_source_manifest.json",
+      "sha256": "f5f84fa7085d4cf6210dbeb45b118d3c27301655c55a94e742851a0a2b39e678"
+    },
+    {
+      "path": "independent_checks.py",
+      "sha256": "e5cf9aa348089df2597415bfd813116c4aab91a3c44be890efc796441704104f"
+    },
+    {
+      "path": "switch_checks.py",
+      "sha256": "60573499a93b0bd1e9abca8ff23e71ae37498241f4567e7ab7af94d21e27330f"
+    },
+    {
+      "path": "contract.json",
+      "sha256": "04d37f65523bba7d58d6683ba8f126b6c8ae98ae73290952d457ff2b2c912735"
+    },
+    {
+      "path": "switch_contract.json",
+      "sha256": "685d6cc203d7751f20b30eacddaee8da7b7057a77bc707153490a478c188fa35"
+    }
+  ],
+  "non_claims": [
+    "Inherited analytic inputs retain existing review scope.",
+    "No effective rho or N0; no tau-uniform bound.",
+    "No canonical or author source writes.",
+    "No full undamped offcharge, balanced-complement, higher factorial or BGS estimate."
+  ]
+}

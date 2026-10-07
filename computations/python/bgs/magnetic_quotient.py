@@ -9,11 +9,48 @@ from fractions import Fraction
 from itertools import product
 import math
 import numpy as np
-from .finite_field import require_odd_prime, multiplicative_order
+from .finite_field import require_integer, require_odd_prime, multiplicative_order
+from .jacobi import _checked_dlog, require_supported_prime
+
+
+# Scalar parameters and residue sequences require exact integers. Convert
+# NumPy scalars to Python ints
+# before scalar modular arithmetic; reduce residues before vectorized products.
+def _prime(p: int) -> int:
+    p = require_integer(p, "p")
+    require_odd_prime(p)
+    return p
+
+
+def _positive_integer(value: int, name: str) -> int:
+    value = require_integer(value, name)
+    if value < 1:
+        raise ValueError(f"{name} must be positive")
+    return value
+
+
+def _residues(values, modulus: int, name: str) -> tuple[int, ...]:
+    try:
+        entries = tuple(values)
+    except TypeError as exc:
+        raise ValueError(f"{name} must be a one-dimensional integer sequence") from exc
+    # Inspect original entries, not np.asarray(values): mixed booleans/integers
+    # would otherwise be coerced to integers before validation.
+    return tuple(require_integer(value, f"{name} entry") % modulus
+                 for value in entries)
+
+
+def _subgroup_residues(p: int, H) -> tuple[int, ...]:
+    H = _residues(H, p, "H")
+    if not H or 0 in H or p - 1 in H:
+        raise ValueError("H must be nonempty and exclude zero and -1")
+    return H
 
 
 def subgroup(p: int, K: int, h: int) -> tuple[int, ...]:
-    require_odd_prime(p)
+    p = _prime(p)
+    K = require_integer(K, "K")
+    h = require_integer(h, "h") % p
     if K < 1 or K % 2 == 0 or (p-1) % K:
         raise ValueError("K must be a positive odd divisor of p-1")
     if multiplicative_order(h % p, p) != K:
@@ -22,9 +59,9 @@ def subgroup(p: int, K: int, h: int) -> tuple[int, ...]:
 
 
 def orbit_coordinates(p: int, H: tuple[int, ...]):
-    """Signed H-orbits; callers supply a validated subgroup."""
-    if (p-1) in H:
-        raise ValueError("-1 must not belong to H")
+    """Signed H-orbits; callers supply a subgroup with exact integer entries."""
+    p = require_supported_prime(p)
+    H = _subgroup_residues(p, H)
     index = np.full(p, -1, dtype=np.int64)
     sign = np.zeros(p, dtype=np.int64)
     reps = []
@@ -46,7 +83,9 @@ def orbit_coordinates(p: int, H: tuple[int, ...]):
 
 def orbit_matrix(p: int, H: tuple[int, ...], q: int) -> np.ndarray:
     """O(p) contributions, but a dense n-by-n return array (O(n^2) storage)."""
-    q %= p
+    p = require_supported_prime(p)
+    H = _subgroup_residues(p, H)
+    q = require_integer(q, "q") % p
     if q == 0:
         raise ValueError("q must be nonzero")
     index, sign, reps = orbit_coordinates(p, H)
@@ -58,6 +97,8 @@ def orbit_matrix(p: int, H: tuple[int, ...], q: int) -> np.ndarray:
 
 
 def orbit_basis(p: int, H: tuple[int, ...]) -> np.ndarray:
+    p = require_supported_prime(p)
+    H = _subgroup_residues(p, H)
     index, sign, reps = orbit_coordinates(p, H)
     V = np.zeros((p, len(reps)))
     V[np.arange(1, p), index[1:]] = sign[1:]/math.sqrt(2*len(H))
@@ -66,8 +107,11 @@ def orbit_basis(p: int, H: tuple[int, ...]) -> np.ndarray:
 
 def gauss_real_gauge(p: int, dlog: np.ndarray, indices: np.ndarray, q: int):
     """D* A D is real; this is not the non-isospectral operation A.real."""
-    q %= p
-    if q == 0 or np.any(np.asarray(indices) % (p-1) == 0):
+    p = require_supported_prime(p)
+    q = require_integer(q, "q") % p
+    dlog = _checked_dlog(dlog, p)
+    indices = np.asarray(_residues(indices, p-1, "indices"), dtype=np.int64)
+    if q == 0 or np.any(indices == 0):
         raise ValueError("nonzero q and nontrivial characters are required")
     chars = np.exp(2j*np.pi*np.outer(indices, dlog[1:])/(p-1))
     additive = np.exp(2j*np.pi*(np.arange(1, p)*q % p)/p)
@@ -80,7 +124,10 @@ def word_histogram(p: int, H: tuple[int, ...], m: int) -> Counter:
 
     Reference enumeration costs (2K)^m. Restricted to q!=0; m>=1.
     """
-    if m < 1 or (2*len(H))**m > 10_000_000:
+    p = _prime(p)
+    H = _subgroup_residues(p, H)
+    m = _positive_integer(m, "m")
+    if (2*len(H))**m > 10_000_000:
         raise ValueError("positive m and at most ten million reference words required")
     inv2 = pow(2, -1, p)
     choices = tuple(product((-1, 1), H))
@@ -104,14 +151,29 @@ def word_histogram(p: int, H: tuple[int, ...], m: int) -> Counter:
 
 
 def canonical_histogram(p: int, C: Counter) -> list[int]:
+    """Canonicalize coefficients; C must have canonical integer residue keys.
+
+    C is a caller-supplied exact signed-integer histogram, e.g. word_histogram
+    output. Its keys/counts are assumed, not validated, by histogram helpers.
+    """
+    p = _prime(p)
     return [C.get(t, 0)-C.get(p-1, 0) for t in range(p)]
 
 
 def histogram_trace(p: int, K: int, m: int, q: int, C: Counter) -> complex:
-    if q % p == 0:
+    """Evaluate the trace from caller-supplied canonical exact histogram C."""
+    p = _prime(p)
+    K = _positive_integer(K, "K")
+    m = _positive_integer(m, "m")
+    q = require_integer(q, "q") % p
+    if q == 0:
         raise ValueError("this trace formula excludes q=0")
     return sum(v*np.exp(2j*np.pi*(q*t % p)/p) for t,v in C.items())/(2*K**m)
 
 
 def mean_trace(p: int, K: int, m: int, C: Counter) -> Fraction:
+    """Mean nonzero-q trace; C has the canonical exact histogram contract."""
+    p = _prime(p)
+    K = _positive_integer(K, "K")
+    m = _positive_integer(m, "m")
     return Fraction(p*C.get(0, 0)-sum(C.values()), 2*K**m*(p-1))

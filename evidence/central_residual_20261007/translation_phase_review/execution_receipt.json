@@ -1,0 +1,50 @@
+{
+  "python": "3.12.14",
+  "independent_checker_sha256": "84a3d991bed9dc996d5c6ebe6c17aed4188b00afcc5cc81c4eca9ca4242fb93d",
+  "normal_optimized_results_identical": true,
+  "runs": [
+    {
+      "name": "normal",
+      "command": [
+        "python3",
+        "RESEARCH_ROOT/bgs_translation_phase_review/independent_checks.py",
+        "--output",
+        "RESEARCH_ROOT/bgs_translation_phase_review/check_results.json"
+      ],
+      "started_utc": "2026-10-07T00:32:35.813772+00:00",
+      "seconds": 3.07397790899995,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "optimized",
+      "command": [
+        "python3",
+        "-O",
+        "RESEARCH_ROOT/bgs_translation_phase_review/independent_checks.py",
+        "--output",
+        "RESEARCH_ROOT/bgs_translation_phase_review/check_results_optimized.json"
+      ],
+      "started_utc": "2026-10-07T00:32:38.887770+00:00",
+      "seconds": 3.391856975002156,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "injected_failure",
+      "command": [
+        "python3",
+        "-O",
+        "RESEARCH_ROOT/bgs_translation_phase_review/independent_checks.py",
+        "--inject-failure"
+      ],
+      "started_utc": "2026-10-07T00:32:42.279648+00:00",
+      "seconds": 0.14553827000054298,
+      "returncode": 1,
+      "expected_returncode": "nonzero",
+      "passed": true
+    }
+  ]
+}

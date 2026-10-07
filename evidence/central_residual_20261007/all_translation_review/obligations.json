@@ -1,0 +1,149 @@
+{
+  "primary_verdict": "proved as written",
+  "candidate_sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7",
+  "inherited_review_boundary": "Actual normalized-area mixing is the accepted FM-018 O11 result with its existing FM-001/FM-006 and checked Parry-Pollicott/Ruelle/Pesin dependencies. Their exact scope is inspected, not relabeled as a complete new external-source audit.",
+  "obligations": [
+    {
+      "id": "macro_input",
+      "status": "passed",
+      "claim": "Previously reviewed raw gluing and exact literal-time Fourier certificates"
+    },
+    {
+      "id": "negative_offsets",
+      "status": "passed",
+      "claim": "Exact conjugation/permutation relation and all powers"
+    },
+    {
+      "id": "scaled_TTstar",
+      "status": "passed",
+      "claim": "Discrete increment and reciprocal-variation bounds with ell/N retained"
+    },
+    {
+      "id": "near_diagonal",
+      "status": "passed",
+      "claim": "Minimum bound and cutoff at N/ell remove log N"
+    },
+    {
+      "id": "scaled_zero_set",
+      "status": "passed",
+      "claim": "Ordinary-HS limiting zero-set cutoff"
+    },
+    {
+      "id": "growing_offsets",
+      "status": "passed",
+      "claim": "All subsequences c->infinity, including c/N->0"
+    },
+    {
+      "id": "two_cutoffs",
+      "status": "passed",
+      "claim": "One simultaneous large-c and large-N threshold"
+    },
+    {
+      "id": "fixed_c_norm",
+      "status": "passed",
+      "claim": "Operator-norm, not merely weak, convergence including escaping aliases"
+    },
+    {
+      "id": "embedding",
+      "status": "passed",
+      "claim": "Normalized l2 isometry, adjoint, factor N and powers"
+    },
+    {
+      "id": "compact_limit",
+      "status": "passed",
+      "claim": "Smooth bounded integral kernel and circle gluing"
+    },
+    {
+      "id": "midpoint",
+      "status": "passed",
+      "claim": "Ordinary/raw sign dictionary, odd c included"
+    },
+    {
+      "id": "Egorov_orientation",
+      "status": "passed",
+      "claim": "Exact forward G and fixed-observable O8/O9 use"
+    },
+    {
+      "id": "Koopman",
+      "status": "passed",
+      "claim": "Exact compression identification by dense pairings"
+    },
+    {
+      "id": "mixing_scope",
+      "status": "passed",
+      "claim": "Actual normalized-area O11; inherited FM-001/FM-006 and checked external mapping retained"
+    },
+    {
+      "id": "peripheral",
+      "status": "passed",
+      "claim": "Projection norm equality plus L2 mixing exclude unit-circle eigenvalues"
+    },
+    {
+      "id": "spectral_radius",
+      "status": "passed",
+      "claim": "Compact contraction has spectral radius below one and a contracting finite power"
+    },
+    {
+      "id": "common_L",
+      "status": "passed",
+      "claim": "One finite L and rho=3/4 across all offsets"
+    },
+    {
+      "id": "aggregate",
+      "status": "passed",
+      "claim": "Uniform exponential trace bound and original N^-2 pair count"
+    },
+    {
+      "id": "mask",
+      "status": "passed",
+      "claim": "Order-not-dividing-m admissibility with divisible-time balanced cases retained"
+    },
+    {
+      "id": "arbitrary_products",
+      "status": "out of scope",
+      "claim": "Products with arbitrary changing offsets"
+    },
+    {
+      "id": "low_switch",
+      "status": "out of scope",
+      "claim": "Separate low-switch corollary not part of this verdict"
+    },
+    {
+      "id": "full_defect",
+      "status": "out of scope",
+      "claim": "Complete off-charge signed defect"
+    },
+    {
+      "id": "occupation_mask",
+      "status": "out of scope",
+      "claim": "Mask inside ord(c)|m contractions"
+    },
+    {
+      "id": "plateau",
+      "status": "out of scope",
+      "claim": "Full plateau correction"
+    },
+    {
+      "id": "higher_orders",
+      "status": "out of scope",
+      "claim": "Higher factorial comparison"
+    },
+    {
+      "id": "effective_constants",
+      "status": "out of scope",
+      "claim": "Effective numerical L,N0,gamma or tau-uniform rate"
+    },
+    {
+      "id": "new_external_audit",
+      "status": "out of scope",
+      "claim": "Full new independent proof-source audit of all inherited FM-001/FM-006 and thermodynamic leaves"
+    },
+    {
+      "id": "canonical_promotion",
+      "status": "out of scope",
+      "claim": "Canonical integration/publication"
+    }
+  ],
+  "remaining_gap_inside_scope": null,
+  "failed": []
+}

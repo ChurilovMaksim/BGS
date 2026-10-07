@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -214,7 +214,7 @@
       "pinned_version": "Published 1990 SMF PDF",
       "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
       "checked_on": "2026-09-23",
-      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf. Norm-uniform weighted periodic transfer: Proposition1.2 printed14–16, Lemma5.3/Corollary5.3.1 printed78–80, proof of Theorem5.5(ii) printed81–84, Proposition4.10 printed59–60, AppendixIII.3 printed227–230 and III.9–III.11 printed239–240. Complex-potential ball and Cauchy differentiation plus direct geometric boundary removal apply to N-dependent half-Holder tests; fixed points counted once, no primitive-orbit normalization.",
+      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf. Norm-uniform weighted periodic transfer: Proposition1.2 printed14–16, Lemma5.3/Corollary5.3.1 printed78–80, proof of Theorem5.5(ii) printed81–84, Proposition4.10 printed59–60, AppendixIII.3 printed227–230 and III.9–III.11 printed239–240. Complex-potential ball and Cauchy differentiation plus direct geometric boundary removal apply to N-dependent half-Holder tests; fixed points counted once, no primitive-orbit normalization. TRACE021 inherits FM018 O11 only for actual normalized-area mixing, alongside fixed-observable one-step Egorov; this excludes peripheral eigenvalues of fixed-offset compact Koopman compressions. No new independent audit of inherited FM001/FM006 or their external leaves.",
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
         "record/nonlinear_pressure_review_20260923.md",
@@ -223,7 +223,9 @@
         "mathematics/polar_wkb_quantization_stability.md",
         "mathematics/weighted_periodic_equidistribution.md",
         "mathematics/selected_weighted_coefficient.md",
-        "record/weighted_periodic_review.md"
+        "record/weighted_periodic_review.md",
+        "mathematics/all_coordinate_translation.md",
+        "mathematics/hamming_low_switch_residual.md"
       ],
       "additional_checks": [
         {
@@ -245,7 +247,7 @@
       "pinned_version": "v2, 17 September 2023",
       "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
       "checked_on": "2026-10-04",
-      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW. Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion.",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW. Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion. Odd newest/residual125 application: disjoint complete cat groups give 24N/25, +35, and +875 total at odd depths e>=3,5,7 respectively; the existing exponential-rank theorem transfers these local branch counts to nonzero real algebraic time. No full simplicity or invariant target-time oldform space.",
       "project_sources": [
         "mathematics/frozen_algebraic_spectral_simplicity.md",
         "mathematics/frozen_common_antireversor_certificate.md",
@@ -263,7 +265,8 @@
         "mathematics/finite_cat_first_jet.md",
         "record/cat_jet_rank_review.md",
         "record/fm008_fresh_independent_review.md",
-        "record/intermediate_old_layers_promotion.md"
+        "record/intermediate_old_layers_promotion.md",
+        "mathematics/odd_sector_count_combination.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-POPESCU-2023"
     },
@@ -281,9 +284,18 @@
       "project_sources": [
         "mathematics/frozen_effective_gap_floor.md",
         "record/two_continuations_review_20260924.md",
-        "literature/bibliography.md"
+        "literature/bibliography.md",
+        "mathematics/literal_growing_word_window.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
       ],
-      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-ROY-2016"
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-ROY-2016",
+      "additional_uses": [
+        {
+          "claim": "BGS-FM-029",
+          "source": "mathematics/literal_growing_word_window.md",
+          "scope": "One-exponent degree/height/conjugate/integrality dictionary in the independently accepted triple-log word-window proof; theorem 1.1 freshly checked from exact v1 primary text by extension reviewer."
+        }
+      ]
     },
     {
       "id": "EXT-FORRESTER-1996",
@@ -730,6 +742,41 @@
       ],
       "checked_on": "2026-10-06",
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KELMER-2008"
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "authors": [
+        "Martin R. Zirnbauer"
+      ],
+      "title": "Color-Flavor Transformation Revisited",
+      "identifier": "arXiv:2109.10272",
+      "pinned_version": "v1",
+      "locator": "Table 1 and (4.36)--(4.40), printed pp.31--32; surface operator (4.29); stable range (2.55)--(2.58)",
+      "checked_on": "2026-10-07",
+      "mapping": "Imported independent exact-source reviews reconstruct the color-one coherent projector and boundary completion; actual dual pairing avoids the source index typo. Used only for completed finite-pair compact identity on its stated coherent-section domain, not positive supermeasure or universality. Full PDF remains external without established redistribution license.",
+      "project_sources": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/compact_phase_pair_identity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ]
+    },
+    {
+      "id": "EXT-BHATIA-2002",
+      "authors": [
+        "Rajendra Bhatia"
+      ],
+      "title": "On the exponential metric increasing property",
+      "identifier": "ISI preprint isid/ms/2002/14",
+      "pinned_version": "10 May 2002 primary institutional preprint; SHA256 dbd04403787b5ff2854d48b4ad83d14b0f46f76e96e7b790006e8843976d5f13",
+      "locator": "Theorem 4, equations (15)--(16), printed p.5",
+      "checked_on": "2026-10-07",
+      "mapping": "Imported separately accepted scalar/block audits check generalized EMI for complex Hermitian A,B and every unitarily invariant norm. Gives all-Ky-Fan displacement majorization in ordinary-body coercivity; no supersymmetric positivity or BGS consequence. Cache omitted without redistribution license.",
+      "project_sources": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ]
     }
   ]
 }

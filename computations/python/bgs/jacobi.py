@@ -28,7 +28,8 @@ def require_supported_prime(prime: int) -> int:
 
 
 def _integer_array(values: np.ndarray, name: str) -> np.ndarray:
-    raw = np.asarray(values)
+    # Preserve original entry types, including booleans in mixed sequences.
+    raw = np.asarray(values, dtype=object)
     if raw.ndim != 1:
         raise ValueError(f"{name} must be one-dimensional")
     # Validate before conversion: astype(int64) silently truncates floats and

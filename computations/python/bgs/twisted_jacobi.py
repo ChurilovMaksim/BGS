@@ -3,14 +3,17 @@ from __future__ import annotations
 
 import numpy as np
 
-from .finite_field import multiplicative_order, primitive_root, require_odd_prime
-from .jacobi import dlog_table
+from .finite_field import (multiplicative_order, primitive_root, require_integer,
+                           require_odd_prime)
+from .jacobi import dlog_table, require_supported_prime
 
 TRACE = 3
 
 
 def square_roots_mod_prime(value: int, prime: int) -> list[int]:
     """Return all square roots of ``value`` modulo an odd prime."""
+    prime = require_integer(prime, "prime")
+    value = require_integer(value, "value")
     require_odd_prime(prime)
     value %= prime
     if value == 0:
@@ -59,6 +62,9 @@ def find_design_eigenvalue(
     trace: int = TRACE,
 ) -> int:
     """Find a root of ``x^2-trace*x+1`` of exactly the requested order."""
+    prime = require_integer(prime, "prime")
+    subgroup_order = require_integer(subgroup_order, "subgroup_order")
+    trace = require_integer(trace, "trace")
     require_odd_prime(prime)
     if subgroup_order <= 0 or (prime - 1) % subgroup_order:
         raise ValueError("subgroup_order must divide prime-1")
@@ -89,9 +95,18 @@ def build_closed_form(
 
     ``eigenvalue`` is a checked design parameter: it must have exact order
     ``subgroup_order``.  This routine is a numerical/finite-regression helper,
-    not a theorem about an asymptotic ensemble.
+    not a theorem about an asymptotic ensemble. All discrete inputs must be
+    exact integers (NumPy integer scalars are accepted); booleans are valid
+    for ``odd_parity`` only. Residue representatives are reduced before
+    vectorized arithmetic.
     """
-    require_odd_prime(prime)
+    prime = require_supported_prime(prime)
+    subgroup_order = require_integer(subgroup_order, "subgroup_order")
+    eigenvalue = require_integer(eigenvalue, "eigenvalue") % prime
+    residue_class = require_integer(residue_class, "residue_class")
+    if not isinstance(odd_parity, (bool, np.bool_)):
+        raise ValueError("odd_parity must be a boolean")
+    odd_parity = bool(odd_parity)
     if subgroup_order <= 0 or (prime - 1) % subgroup_order:
         raise ValueError("subgroup_order must divide prime-1")
     actual_order = multiplicative_order(eigenvalue, prime)
@@ -129,7 +144,7 @@ def build_closed_form(
     inverse_two = pow(2, prime - 2, prime)
     output: dict[int, dict[str, float | int]] = {}
     for q_value in q_values:
-        q = int(q_value) % prime
+        q = require_integer(q_value, "q") % prime
         additive_phase = np.exp(2j * np.pi * (q * x_values % prime) / prime)
         jacobi = (left * additive_phase) @ right.T
         normalized = (

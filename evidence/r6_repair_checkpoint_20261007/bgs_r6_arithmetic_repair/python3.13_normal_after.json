@@ -1,0 +1,87 @@
+{
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "numpy": "2.2.4",
+  "optimized": false,
+  "q": 224054081461682177,
+  "histogram_q_representative_delta": 0.0,
+  "matrix_q_representative_delta": 0.0,
+  "dense_histogram_m2_delta": 8.882997389767053e-16,
+  "warnings": [],
+  "invalid_q_rejections": [
+    {
+      "api": "closed",
+      "input": "1.9",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "matrix",
+      "input": "1.9",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "histogram",
+      "input": "1.9",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "closed",
+      "input": "True",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "matrix",
+      "input": "True",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "histogram",
+      "input": "True",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "closed",
+      "input": "'1'",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "matrix",
+      "input": "'1'",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "histogram",
+      "input": "'1'",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "closed",
+      "input": "np.float64(1.9)",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "matrix",
+      "input": "np.float64(1.9)",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "histogram",
+      "input": "np.float64(1.9)",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "closed",
+      "input": "1.5",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "matrix",
+      "input": "1.5",
+      "error": "q must be an integer (not a boolean)"
+    },
+    {
+      "api": "histogram",
+      "input": "1.5",
+      "error": "q must be an integer (not a boolean)"
+    }
+  ]
+}

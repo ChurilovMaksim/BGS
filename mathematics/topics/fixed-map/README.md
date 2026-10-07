@@ -1,5 +1,13 @@
 # Fixed deterministic map
 
+## Reviewed 7 October phase checkpoint
+
+[Current claim card](../../phase_trace_checkpoint.md) and
+[accepted results / next estimates](../../../record/checked_research_checkpoint_20261007.md)
+separate uniform charge gap, fixed-word laws, source/Schur reductions,
+ordinary-body bounds and actual q=1,theta=0 radial control from the still-open
+balanced limit, signed offcharge endpoint and higher factorial comparison.
+
 The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the corrected ordinary Weyl symbol, and explicit exceptional dimensions. Structural and algebraic results do not themselves control Heisenberg traces.
 
 ## Current theorem capsules
@@ -141,3 +149,7 @@ remains the target.
 [Intermediate old layers](../../literal_time_multiplicity_bounds.md) sharpen the
 existing FM-026 even counts; see the canonical owner for the classifier,
 return operator and residual-25 proof/review paths.
+
+[TRACE-021: one disjoint pair residual](../../hamming_low_switch_residual.md)
+collects separately reviewed Hamming and whole-fiber low-switch estimates.
+It leaves one unestimated signed Q trace and preserves the fixed-order boundary.

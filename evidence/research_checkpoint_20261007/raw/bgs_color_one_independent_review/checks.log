@@ -1,0 +1,23 @@
+{
+  "status": "all exact assertions passed",
+  "arithmetic": "SymPy rational function identities over Q(a,b,c,d,x,y), plus left exterior derivatives and symbolic radial primitives",
+  "symbolic_checks": [
+    "source Berezin orientation",
+    "matrix-derived S agrees with (4.16)",
+    "two-pivot Berezinian inverse",
+    "general-source bulk coefficient",
+    "normal-derivative surface coefficient",
+    "radial primitives",
+    "finite common-cutoff formulas",
+    "all four kernel norm families (k>=1 where applicable,l>=0)",
+    "literal (4.43)-(4.45) misprinted-index product has zero pairing",
+    "phase constant terms through total bosonic degree 9"
+  ],
+  "numeric_scope": "5 parameter examples; 45-digit phase quadrature and cutoff evaluations",
+  "nonclaims": [
+    "No uniform-in-sitecount microscopic bound",
+    "No graph spectral counterexample",
+    "No convergence audit for arbitrary test-function spaces",
+    "No general higher-flavor boundary functional"
+  ]
+}

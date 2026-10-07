@@ -1,0 +1,62 @@
+{
+  "wrapper_sha256": "a2a97db6b5b7af82895c79eec7d6406be7b5a9f84581674ff23725323541eb0b",
+  "all_six_pass": true,
+  "runs": [
+    {
+      "name": "first_position",
+      "scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be",
+      "original_environment": {},
+      "actual_environment": {}
+    },
+    {
+      "name": "first_cancellation",
+      "scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a",
+      "original_environment": {},
+      "actual_environment": {}
+    },
+    {
+      "name": "return_operator",
+      "scientific_sha256": "dd71cc839e87a4341b8451582c62fef076e690786666774d463afb0f541027c4",
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "actual_environment": {
+        "python": "3.13.5",
+        "numpy": "2.2.4",
+        "sympy": "1.13.3"
+      }
+    },
+    {
+      "name": "return_nonprimitive",
+      "scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502",
+      "original_environment": {},
+      "actual_environment": {}
+    },
+    {
+      "name": "residual25_projectors",
+      "scientific_sha256": "7b716cbae496a0d9ec0eea0dc729c824975b3b4feab58552b602bc5478d04382",
+      "original_environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "sympy": "1.14.0"
+      },
+      "actual_environment": {
+        "python": "3.13.5",
+        "numpy": "2.2.4",
+        "sympy": "1.13.3"
+      }
+    },
+    {
+      "name": "residual25_coherent",
+      "scientific_sha256": "eddeeed9b98a0654a2f57633d20ddd613700112bbee8b8bcf2e673788339373b",
+      "original_environment": {
+        "python": "3.12.14"
+      },
+      "actual_environment": {
+        "python": "3.13.5"
+      }
+    }
+  ]
+}

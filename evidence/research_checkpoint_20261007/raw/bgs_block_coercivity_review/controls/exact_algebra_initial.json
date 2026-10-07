@@ -1,0 +1,25 @@
+{
+  "arithmetic": "exact SymPy rational complex arithmetic",
+  "orientation": {
+    "N": 3,
+    "k": 2,
+    "det_action": "37303377230062449681229/36596018845836450000000 - 176347320423646129*I/7261114850364375000",
+    "imaginary_part_nonzero": true,
+    "conjugate_opposite_orientation": true
+  },
+  "nonnormal_boost": {
+    "N": 2,
+    "k": 2,
+    "left_right_factors_distinct": true,
+    "rational_singular_values": [
+      "3/5",
+      "5/13"
+    ],
+    "positive_defect": true,
+    "J_unitarity": true,
+    "F_G_blocks": true,
+    "FFstar_minus_GGstar_identity": true,
+    "determinant_action_identity": true
+  },
+  "result": "All exact identities passed; no universal numerical inference."
+}

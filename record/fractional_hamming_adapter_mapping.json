@@ -1,0 +1,57 @@
+{
+  "ports": [
+    {
+      "port": "computations/verification/fractional_hamming/author_checks.py",
+      "frozen_source": "evidence/fractional_hamming_20261007/raw/author/checks.py",
+      "source_sha256": "d8e6aaa9bf3f4bd47af06a65dbafb1fd4f5718c8ac2d12613fdddca790db7ee1",
+      "asserts_converted": 18,
+      "changes": [
+        "Guarded silent main; no import-time computation or filesystem writes",
+        "Explicit conditional AssertionError replaces each assert",
+        "Removed progress prints and directed output via --output",
+        "Scientific output unchanged; timing omission documented below"
+      ],
+      "port_sha256": "be62995fdaa5e57db83752fbc49497ab51b985b7a97b44e5666e34b661c2d8b7"
+    },
+    {
+      "port": "computations/verification/fractional_hamming/independent_checks.py",
+      "frozen_source": "evidence/fractional_hamming_20261007/raw/review/independent_controls.py",
+      "source_sha256": "77ca299f86ff5439cc6671da76e96a94a292ae90580ec73f982a818a6ec4f5b7",
+      "asserts_converted": 14,
+      "changes": [
+        "Guarded silent main; no import-time computation or filesystem writes",
+        "Explicit conditional AssertionError replaces each assert",
+        "Removed progress prints and directed output via --output",
+        "Scientific output unchanged; timing omission documented below"
+      ],
+      "port_sha256": "3c2df5e4ee8fd955b27c23fca5bfe3c7bb6719d82a09ea7caeaaac274b610d52",
+      "prior_executed_port_sha256": "1199a41dd9d199fe1a42de154debc78f0b1f88502176f1dc80aca95bbc355ebc",
+      "prior_executed_port": "evidence/fractional_hamming_20261007/replay/executed_sources/independent_checks_before_split.py",
+      "dispatcher_edit": "Optional full-End case selection; default still executes all four original cases with unchanged arithmetic/assertions."
+    },
+    {
+      "port": "computations/verification/fractional_hamming/synthesis_checks.py",
+      "frozen_source": "evidence/fractional_hamming_20261007/raw/review/check_synthesis.py",
+      "source_sha256": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275",
+      "asserts_converted": 8,
+      "changes": [
+        "Guarded silent main; no import-time computation or filesystem writes",
+        "Explicit conditional AssertionError replaces each assert",
+        "Removed progress prints and directed output via --output",
+        "Scientific output unchanged; timing omission documented below"
+      ],
+      "port_sha256": "3530a3b6ef1287234a9ef289c70eeabecd8bab42501ef1d1f9593414ee7b7751"
+    }
+  ],
+  "omitted_output_fields": {
+    "author": [
+      "elapsed_seconds"
+    ],
+    "independent": [
+      "runtime_seconds"
+    ],
+    "synthesis": []
+  },
+  "no_scientific_field_omitted": true,
+  "self_hash_omissions": []
+}

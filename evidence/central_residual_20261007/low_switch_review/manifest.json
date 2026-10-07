@@ -1,0 +1,355 @@
+{
+  "schema": 1,
+  "audit": "Independent low-switch off-charge finite-algebra and entropy audit",
+  "created_utc": "2026-10-07T00:49:34.866942+00:00",
+  "primary_verdict": "proved as written, relative to expressly inherited and independently accepted analytic inputs",
+  "repository_verdict": "verified in stated scope",
+  "candidate_proof_sha256": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95",
+  "candidate_manifest_sha256": "e55fe9d397368090258c40380f532b778a7b2b47c1ba37fb21dfd887da399e45",
+  "all_translation_proof_sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7",
+  "all_translation_acceptance_sha256": "7b046dd79bdb000a0d84c150a1949d517fdb2043c3a3c81d6929e8c5e2ae17b4",
+  "all_translation_acceptance_manifest_sha256": "78568d92065e9dcfe314053b42b185999f36a83c05afcaae4be0e95ecdf0a93c",
+  "FM021_sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+  "canonical_head": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "canonical_dirty_at_start": true,
+  "canonical_writes": false,
+  "publication_or_remote_writes": false,
+  "all_candidate_pins_match": true,
+  "independent_results": {
+    "pair_controls": 82704,
+    "full_difference_contractions": 518,
+    "long_zero_charge_runs": 132,
+    "singleton_zero_charge_runs": 300,
+    "nonreal_full_contractions": 494,
+    "detected_missing_conjugations": 67,
+    "separate_counting_cases": [
+      {
+        "N": 2,
+        "m": 1,
+        "words": 2
+      },
+      {
+        "N": 2,
+        "m": 2,
+        "words": 4
+      },
+      {
+        "N": 2,
+        "m": 3,
+        "words": 8
+      },
+      {
+        "N": 2,
+        "m": 4,
+        "words": 16
+      },
+      {
+        "N": 2,
+        "m": 5,
+        "words": 32
+      },
+      {
+        "N": 2,
+        "m": 6,
+        "words": 64
+      },
+      {
+        "N": 2,
+        "m": 7,
+        "words": 128
+      },
+      {
+        "N": 2,
+        "m": 8,
+        "words": 256
+      },
+      {
+        "N": 3,
+        "m": 1,
+        "words": 3
+      },
+      {
+        "N": 3,
+        "m": 2,
+        "words": 9
+      },
+      {
+        "N": 3,
+        "m": 3,
+        "words": 27
+      },
+      {
+        "N": 3,
+        "m": 4,
+        "words": 81
+      },
+      {
+        "N": 3,
+        "m": 5,
+        "words": 243
+      },
+      {
+        "N": 3,
+        "m": 6,
+        "words": 729
+      },
+      {
+        "N": 3,
+        "m": 7,
+        "words": 2187
+      },
+      {
+        "N": 4,
+        "m": 1,
+        "words": 4
+      },
+      {
+        "N": 4,
+        "m": 2,
+        "words": 16
+      },
+      {
+        "N": 4,
+        "m": 3,
+        "words": 64
+      },
+      {
+        "N": 4,
+        "m": 4,
+        "words": 256
+      },
+      {
+        "N": 4,
+        "m": 5,
+        "words": 1024
+      },
+      {
+        "N": 4,
+        "m": 6,
+        "words": 4096
+      },
+      {
+        "N": 5,
+        "m": 1,
+        "words": 5
+      },
+      {
+        "N": 5,
+        "m": 2,
+        "words": 25
+      },
+      {
+        "N": 5,
+        "m": 3,
+        "words": 125
+      },
+      {
+        "N": 5,
+        "m": 4,
+        "words": 625
+      },
+      {
+        "N": 5,
+        "m": 5,
+        "words": 3125
+      },
+      {
+        "N": 6,
+        "m": 1,
+        "words": 6
+      },
+      {
+        "N": 6,
+        "m": 2,
+        "words": 36
+      },
+      {
+        "N": 6,
+        "m": 3,
+        "words": 216
+      },
+      {
+        "N": 6,
+        "m": 4,
+        "words": 1296
+      },
+      {
+        "N": 9,
+        "m": 1,
+        "words": 9
+      },
+      {
+        "N": 9,
+        "m": 2,
+        "words": 81
+      },
+      {
+        "N": 9,
+        "m": 3,
+        "words": 729
+      }
+    ]
+  },
+  "computation_manifest_validated": true,
+  "inherited_scope": "Uniform powers of each charge block from separately accepted all-translation proof; FM-018 actual normalized-area mixing/Egorov and FM-001/FM-006/source boundaries inherited through that input; FM-021 P-J gap inherited. No duplicate analytic audit claimed.",
+  "exact_count": "r=0: N; 1<=r<=m: binom(m,r)*((N-1)^r+(-1)^r*(N-1))",
+  "boundary": "Whole-fiber checksum-nonzero low-switch ordered-pair subset only; contains safe constant translations, is not disjoint; full off-charge, plateau and higher factorial hierarchy remain open.",
+  "artifacts": [
+    {
+      "path": "author_replay/check_low_switch.py",
+      "sha256": "b3edf8886659ef89ad6740d86ab94ceea82ceec8d0b507faf45725ac859ccff8"
+    },
+    {
+      "path": "author_replay/check_results.json",
+      "sha256": "1d80e3b4bb6a6fc76f75df4844827fe90036cff34a9ce3f1956eb6168c10dac6"
+    },
+    {
+      "path": "author_replay.log",
+      "sha256": "1d80e3b4bb6a6fc76f75df4844827fe90036cff34a9ce3f1956eb6168c10dac6"
+    },
+    {
+      "path": "check_independent.py",
+      "sha256": "36941c59c5bda499a58eb57b4e9eace7f47af9dbbc32a379b2a5c8d598abaade"
+    },
+    {
+      "path": "computation_manifest.json",
+      "sha256": "1f3c083c888ad3de21dd273fc8f6401333b6bca34eacd90d798bcfe4d9a8ecfb"
+    },
+    {
+      "path": "fail_closed.log",
+      "sha256": "72c15aacc30f4b4fcfbccd0dc35bb2d420972bb70648307b02544240203cabcb"
+    },
+    {
+      "path": "frozen/BGS/AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "path": "frozen/BGS/RESEARCH.md",
+      "sha256": "c7590bcbdd37f2feba7f57c741b8842efe1a9778a1a6a8e3803b5d7164ea5f87"
+    },
+    {
+      "path": "frozen/BGS/REVIEWING.md",
+      "sha256": "4f3d465abecb821e061f84231ede578a62fffcebff10e26742f825650f78a6ee"
+    },
+    {
+      "path": "frozen/BGS/SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "path": "frozen/BGS/mathematics/fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+    },
+    {
+      "path": "frozen/BGS/mathematics/open_questions.md",
+      "sha256": "ac98fa4ebea4b38c1611f6704cd9a543c4f8159b11abc37cf2fe9bcf24b025ab"
+    },
+    {
+      "path": "frozen/BGS/mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "path": "frozen/BGS/mathematics/results.md",
+      "sha256": "f8fffa48fe4ab85251f13e6ae3752c37016432c84d37aafd7e0ee56488b01d3f"
+    },
+    {
+      "path": "frozen/BGS/record/claim_ledger.md",
+      "sha256": "2d679f811abc85794b5f57b1ced4654389e0c7e1e78ff62ec2ecc447d5c97e05"
+    },
+    {
+      "path": "frozen/BGS/record/claims.json",
+      "sha256": "2906c039df14308432b9f90ba12039e45fab4f16e1c9e2d1e76b5d9f6718b8b7"
+    },
+    {
+      "path": "frozen/BGS/record/repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "path": "frozen/accepted_all_translation_review/review.md",
+      "sha256": "7b046dd79bdb000a0d84c150a1949d517fdb2043c3a3c81d6929e8c5e2ae17b4"
+    },
+    {
+      "path": "frozen/all_translation_extension/all_translation_proof.md",
+      "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
+    },
+    {
+      "path": "frozen/all_translation_extension/candidate_manifest.json",
+      "sha256": "9f7bce422f51c248a7affb7cb78d9148b00d47d7f658da1fa919e1867de34006"
+    },
+    {
+      "path": "frozen/all_translation_extension/check_extension.py",
+      "sha256": "cbdc415e7512b7d0783717c620683113dc69898cee23ddc4c8ab51718faacfc6"
+    },
+    {
+      "path": "frozen/all_translation_extension/check_results.json",
+      "sha256": "e9ea34f0ef4ea0449a25bfc6e240d11fec1e7f61ae0e998121b4150d805404d4"
+    },
+    {
+      "path": "frozen/all_translation_extension/target_contract.md",
+      "sha256": "54c45fea561ae9fce3f57e49848ecf40ff5aa67c77346979c854df49cc795c59"
+    },
+    {
+      "path": "frozen/low_switch_extension/candidate_manifest.json",
+      "sha256": "e55fe9d397368090258c40380f532b778a7b2b47c1ba37fb21dfd887da399e45"
+    },
+    {
+      "path": "frozen/low_switch_extension/check_low_switch.py",
+      "sha256": "b3edf8886659ef89ad6740d86ab94ceea82ceec8d0b507faf45725ac859ccff8"
+    },
+    {
+      "path": "frozen/low_switch_extension/check_results.json",
+      "sha256": "8847a3be2cd6a6fe5e70d2b02122b8759cae40cd2b3873fb8d3c1b24af87d872"
+    },
+    {
+      "path": "frozen/low_switch_extension/low_switch_proof.md",
+      "sha256": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95"
+    },
+    {
+      "path": "independent_results.json",
+      "sha256": "31ff401b4ce8a95d426d1b7efee0275893fd2d42a9e3df4183f4cc1e7db33a3c"
+    },
+    {
+      "path": "independent_results_normal.json",
+      "sha256": "31ff401b4ce8a95d426d1b7efee0275893fd2d42a9e3df4183f4cc1e7db33a3c"
+    },
+    {
+      "path": "input_pins.json",
+      "sha256": "f679acf3b40a321edf52109b82640e83915cb33023efd3989b30f726cf7d2137"
+    },
+    {
+      "path": "manifest_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "path": "normal.log",
+      "sha256": "4efdc6dfa7dbc76f75080613ec08195214c1946b6e2a6a065a2f085606cca390"
+    },
+    {
+      "path": "optimized.log",
+      "sha256": "4efdc6dfa7dbc76f75080613ec08195214c1946b6e2a6a065a2f085606cca390"
+    },
+    {
+      "path": "review.md",
+      "sha256": "eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81"
+    },
+    {
+      "path": "run_checks.py",
+      "sha256": "11b04798365da5d337a9b559000944b9a4fa8a0ca034dfb483dedcc27f829888"
+    },
+    {
+      "path": "run_records.json",
+      "sha256": "71d0c25db95fac234ad20bebd0a2a07389249edbf213ede02bad84d1ebd717bd"
+    },
+    {
+      "path": "source_recheck.json",
+      "sha256": "8d28bfff3c9975e1ffd7d29e75f9016ee2fef98fcef77517a3a92276f882a1ff"
+    },
+    {
+      "path": "validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    },
+    {
+      "path": "frozen/accepted_all_translation_review/manifest.json",
+      "sha256": "78568d92065e9dcfe314053b42b185999f36a83c05afcaae4be0e95ecdf0a93c"
+    }
+  ]
+}

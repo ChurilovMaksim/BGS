@@ -1,0 +1,161 @@
+{
+  "scope": "Exact integral raw packet/fiber checks plus bounded conductor controls, not uniform proof",
+  "fiber_arithmetic": "Integer cyclic convolution modulo sum eta^r; transported raw cat vectors remain integral",
+  "fiber_identity_count": 180000,
+  "fiber_cases": [
+    {
+      "root_choice": 1,
+      "kind": "delta",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 1,
+      "kind": "fourier",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 2,
+      "kind": "delta",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 2,
+      "kind": "fourier",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 3,
+      "kind": "delta",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 3,
+      "kind": "fourier",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 4,
+      "kind": "delta",
+      "exact_identities": 22500
+    },
+    {
+      "root_choice": 4,
+      "kind": "fourier",
+      "exact_identities": 22500
+    }
+  ],
+  "all_four_primitive_fifth_roots": true,
+  "all_relative_and_absolute_cat_powers": true,
+  "epsilon_minus_one": "Multiplying raw cat by -1 multiplies checked overlaps by (-1)^(s-r), exactly the declared tame shift",
+  "raw_cat_packet_entries": 15625,
+  "gram_entries": 15625,
+  "raw_weyl_entries": 390625,
+  "all_primitive_packet_holonomies": 24,
+  "wild_character_classes": {
+    "2": [
+      2,
+      7,
+      12,
+      17,
+      22
+    ],
+    "3": [
+      3,
+      8,
+      13,
+      18,
+      23
+    ],
+    "4": [
+      4,
+      9,
+      14,
+      19,
+      24
+    ],
+    "1": [
+      1,
+      6,
+      11,
+      16,
+      21
+    ]
+  },
+  "new_character_count": 120,
+  "j2_character_factor_retained": true,
+  "conductor_controls": [
+    {
+      "j": 2,
+      "content": 1,
+      "conductor": 4
+    },
+    {
+      "j": 2,
+      "content": 5,
+      "conductor": 3
+    },
+    {
+      "j": 3,
+      "content": 1,
+      "conductor": 5
+    },
+    {
+      "j": 3,
+      "content": 5,
+      "conductor": 4
+    },
+    {
+      "j": 4,
+      "content": 1,
+      "conductor": 6
+    },
+    {
+      "j": 4,
+      "content": 5,
+      "conductor": 5
+    },
+    {
+      "j": 5,
+      "content": 1,
+      "conductor": 7
+    },
+    {
+      "j": 5,
+      "content": 5,
+      "conductor": 6
+    },
+    {
+      "j": 6,
+      "content": 1,
+      "conductor": 8
+    },
+    {
+      "j": 6,
+      "content": 5,
+      "conductor": 7
+    },
+    {
+      "j": 7,
+      "content": 1,
+      "conductor": 9
+    },
+    {
+      "j": 7,
+      "content": 5,
+      "conductor": 8
+    },
+    {
+      "j": 8,
+      "content": 1,
+      "conductor": 10
+    },
+    {
+      "j": 8,
+      "content": 5,
+      "conductor": 9
+    }
+  ],
+  "seconds": 5.278641990000324,
+  "python": "3.12.14",
+  "script_sha256": "df800f59f77b798f200f69135154f8dbf5cd8e0d0a3824e94711a311a6233433"
+}

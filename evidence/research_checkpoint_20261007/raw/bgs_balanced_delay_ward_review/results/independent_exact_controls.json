@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "counts": {
+    "cyclotomic_sqrt5": 1,
+    "cyclotomic_seed_unitary": 1,
+    "cyclotomic_seed_eigenvector": 1,
+    "cyclotomic_lambda_modulus": 1,
+    "cyclotomic_noninteger_minpoly": 1,
+    "cyclotomic_positive_root_branch_squared": 1,
+    "rational_minpoly_irreducible": 1,
+    "cyclotomic_full_characteristic_polynomial": 1,
+    "cyclotomic_reverse_kernel_entry": 1,
+    "cyclotomic_compression_normal": 1,
+    "cyclotomic_compression_eigenvector": 1,
+    "cyclotomic_compression_left_identity": 1,
+    "cyclotomic_leakage_rank2": 1,
+    "rational_colligation_unitary": 3,
+    "rational_colligation_polynomial_identity": 3,
+    "rational_phase_generator_pair1": 3,
+    "rational_haar_reference_normalization": 15,
+    "rational_signed_defect_decomposition": 15,
+    "rational_phase_generator_pair2": 3,
+    "rational_phase_generator_pair4": 3,
+    "rational_phase_generator_quartic": 3,
+    "rational_phase_generator_mixed": 3,
+    "abel_cue_sum": 8,
+    "diagonal_noncue_control": 7
+  },
+  "runtime_seconds": 7.153744153998559,
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "Exact Q[t]/Phi_20 and Q(i)(z); deterministic rational Cayley fixtures",
+  "bounds": {
+    "seed_dimension": 5,
+    "colligation_dimensions": [
+      2,
+      3,
+      4
+    ],
+    "generator_dimensions": [
+      2,
+      3,
+      4
+    ],
+    "pair_powers": [
+      1,
+      2,
+      4
+    ],
+    "extra_tests": [
+      "|Tr V|^4",
+      "Re((Tr V)^2 conjugate(Tr V^2))"
+    ],
+    "abel_sum_dimensions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "non_claims": [
+    "No tensor-uniform conclusion from finite computations",
+    "No numerical integration of the divergent delay moment",
+    "No actual-model overlap estimate",
+    "No compact-heat regularity theorem certified by code",
+    "No boundary or large-N limit taken"
+  ]
+}

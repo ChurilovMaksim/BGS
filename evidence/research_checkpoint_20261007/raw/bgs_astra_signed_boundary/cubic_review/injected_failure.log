@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_astra_signed_boundary/cubic_review/check_independent.py", line 108, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/shared/bgs_astra_signed_boundary/cubic_review/check_independent.py", line 98, in main
+    if a.inject_failure:require(False,'injected failure proves fail-closed execution')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_astra_signed_boundary/cubic_review/check_independent.py", line 14, in require
+    if not condition: raise RuntimeError(message)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: injected failure proves fail-closed execution

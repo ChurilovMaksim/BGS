@@ -1,0 +1,29 @@
+{
+  "audited_wrapper_sha256": "4dd35155a64f926b3807ab2559de4403aad6b677e67f1aab0f89f568999e8688",
+  "optimization": 0,
+  "fixtures": [
+    {
+      "test": "invalid_exempt_python",
+      "accepted": true
+    },
+    {
+      "test": "invalid_exempt_sympy",
+      "accepted": true
+    },
+    {
+      "test": "invalid_exempt_compiler_command",
+      "accepted": true
+    },
+    {
+      "test": "generated_output_ancestor_escape",
+      "accepted": true,
+      "outside_result_written": true
+    },
+    {
+      "test": "copied_future_executable_replaced",
+      "accepted": true,
+      "original_second_source_unchanged": true
+    }
+  ],
+  "scope": "Actual Python task subprocesses; C++ subprocesses simulated only to avoid irrelevant compilation."
+}

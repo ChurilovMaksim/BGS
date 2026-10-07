@@ -1,0 +1,30 @@
+{
+  "schema": "bgs-review-correction-mapping-v1",
+  "original": {
+    "path": "inputs/phase_ward_identity.md",
+    "sha256": "d439dccbb6511d0d1bcd0439bd28df2f0d76849bdf17727c9dccd0c96a58c2bf"
+  },
+  "accepted": {
+    "path": "phase_ward_identity_v2.md",
+    "sha256": "1fccba816add7065c611edf21164bbef36fa4bad9edf6e30bb39ff9b8d737479"
+  },
+  "diff": {
+    "path": "phase_ward_v1_to_v2.diff",
+    "sha256": "afa1e0adfb24de71b82479c3b605f2f65f9d8b1e7d781b755ca8cf5ee3e457db"
+  },
+  "changes": [
+    {
+      "old_line_start": 91,
+      "new_line_start": 91,
+      "old": "Here A_N is restricted to class functions. Existence and smoothness follow either from the positive spectral gap of the compact unitary heat generator on mean-zero smooth functions or by its finite-dimensional Peter-Weyl spectral expansion and smoothing. Equation (10) is a definition of a universal test depending on N,s, not on the specific U. It does not insert extra Brownian noise into the phase-ensemble target.",
+      "new": "Here A_N is restricted to class functions. Existence and smoothness follow either from the positive spectral gap of the compact unitary heat generator on mean-zero smooth functions or by its Peter-Weyl spectral expansion, positive fixed-N gap, and smoothing. Equation (10) is a definition of a universal test depending on N,s, not on the specific U. It does not insert extra Brownian noise into the phase-ensemble target."
+    },
+    {
+      "old_line_start": 126,
+      "new_line_start": 126,
+      "old": "- Complex Haar eigenvectors independent of their eigenvalues: conditional mean E[G | theta]=G^H, so the signed defect (12) is exactly zero for every smooth class test. This is a normalization check, not an actual-model premise.",
+      "new": "- Complex Haar eigenvectors independent of their eigenvalues: conditional mean E[G | theta]=G^H, so the overlap contraction on the right-hand side of (12) is exactly zero for every smooth class test. Equating it to the spectral defect on the left-hand side additionally requires the phase stationarity of Section 1. Haar eigenvectors alone impose no restriction on the eigenvalue law. This is a normalization check, not an actual-model premise."
+    }
+  ],
+  "verification": "Exactly two single-line prose replacements; every other line unchanged. All equations and mathematical targets unchanged. Corrected scope independently checked in review.md."
+}

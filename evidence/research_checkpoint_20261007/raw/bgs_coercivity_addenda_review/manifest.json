@@ -1,0 +1,205 @@
+{
+  "schema": "bgs-coercivity-addenda-review-manifest-v1",
+  "created_at_utc": "2026-10-07T02:35:28.126037+00:00",
+  "canonical_commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "canonical_dirty_at_start": true,
+  "canonical_status_list_unchanged": true,
+  "all_pinned_sources_unchanged": true,
+  "input_manifest_sha256": "13b30e11ba841d4a359ce61a040a149788f85c1f119d46eb4bb1d774193227fd",
+  "execution_manifest": "controls/manifest.json",
+  "execution_manifest_sha256": "ec4d1a7fb45d268db41c3ceb3e43a25bc181a8ed2fa0ee5b9fe7d729dcfda7cb",
+  "verdict": "proved as written",
+  "independence": "Fresh analytic reconstruction and exact implementation; author diagnostic source inspected only after independent run; inherited accepted scalar/block proofs explicitly imported.",
+  "files": [
+    {
+      "path": "audit.md",
+      "sha256": "b0c47a55e04ae0f8ca6921039ec6e28c1e9bf71dad9c68265332aa36629a6f1b",
+      "bytes": 19160
+    },
+    {
+      "path": "canonical_status_after.txt",
+      "sha256": "ae793cc70b3770fe42daeaca2d436bc44c2dacbc1814d365486d62c0955d02bd",
+      "bytes": 4180
+    },
+    {
+      "path": "canonical_status_before.txt",
+      "sha256": "ae793cc70b3770fe42daeaca2d436bc44c2dacbc1814d365486d62c0955d02bd",
+      "bytes": 4180
+    },
+    {
+      "path": "checks.py",
+      "sha256": "b19281158f1aac037687b09034a9a6ea8b3eda936f4d28dc77c94d13f240a312",
+      "bytes": 7470
+    },
+    {
+      "path": "contract.json",
+      "sha256": "345e0b432509eb0eb5b3f9a7f96f3ca642c8a36547163c3fba28454989ecb1d7",
+      "bytes": 1701
+    },
+    {
+      "path": "controls/manifest.json",
+      "sha256": "ec4d1a7fb45d268db41c3ceb3e43a25bc181a8ed2fa0ee5b9fe7d729dcfda7cb",
+      "bytes": 4029
+    },
+    {
+      "path": "controls/results.json",
+      "sha256": "b9f0545a439ca2e4d825104cae8538259369126ef7324e45c148828a8c5ee8ec",
+      "bytes": 3857
+    },
+    {
+      "path": "controls/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "controls/stdout.txt",
+      "sha256": "7b8039c6ad7d70d765b5cd16209d88caf498f9da5717d2c105b0e5e4caf2d4d2",
+      "bytes": 113
+    },
+    {
+      "path": "input_freshness.json",
+      "sha256": "395a949d6a205e223948d014cf9952f27a101f0c389539e75043da576a0838d4",
+      "bytes": 7918
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "13b30e11ba841d4a359ce61a040a149788f85c1f119d46eb4bb1d774193227fd",
+      "bytes": 6337
+    },
+    {
+      "path": "inputs/accepted_block_review/audit.md",
+      "sha256": "96556a4d38ac60ef1ebc1fb90fc952db2e60d8d87f13aef96bc884a18d71bcf5",
+      "bytes": 17116
+    },
+    {
+      "path": "inputs/accepted_block_review/seal.json",
+      "sha256": "b6bad3a8492b9bda06ffb9e463b1259f72aa92bfcb5eb9e26b67e29f1d6d37a9",
+      "bytes": 5939
+    },
+    {
+      "path": "inputs/accepted_scalar_audit.md",
+      "sha256": "1247da77c991a84235ad7aae2a8cc5adb1a74a910c86060e2ce0e7dbb30db236",
+      "bytes": 12297
+    },
+    {
+      "path": "inputs/author/absorption_checks.json",
+      "sha256": "00b74781b5aba10606e5a547817bcf1032b77edb3c88f41d402e14d7f66dc30a",
+      "bytes": 812
+    },
+    {
+      "path": "inputs/author/absorption_checks.py",
+      "sha256": "7dc46fecb94649576dcbc0d6acec3f848861451559bc2a429e82674521746c43",
+      "bytes": 2294
+    },
+    {
+      "path": "inputs/author/actual_constants_addendum.md",
+      "sha256": "23566b86660c089b6005f0165d4a4dee2d0528e7c7e99ee34a831ff475182ae8",
+      "bytes": 1216
+    },
+    {
+      "path": "inputs/author/addenda_seal.json",
+      "sha256": "ba9e7aea1b4d1db92cf0e0c30a76a559129d1c60c99ff4a48286765b3205ec81",
+      "bytes": 2855
+    },
+    {
+      "path": "inputs/author/matrix_block_extension.md",
+      "sha256": "8ff788d6194598606f1c88debe84fffc1571f6de1dfe090b1a7d95170b85eded",
+      "bytes": 3741
+    },
+    {
+      "path": "inputs/author/radial_translation.md",
+      "sha256": "9a061d64c39cc947e0060d20c96864a301b2fb88b53360cf1e5a44c9434bdcfb",
+      "bytes": 1929
+    },
+    {
+      "path": "inputs/author/real_absorption_addendum.md",
+      "sha256": "267761a7e1e1f0ba649c976987a2166bf898f72515d000cdc8f1e27a37a2fd4e",
+      "bytes": 5012
+    },
+    {
+      "path": "inputs/author/report.md",
+      "sha256": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e",
+      "bytes": 13528
+    },
+    {
+      "path": "inputs/author/sources/bhatia_emi_2002.pdf",
+      "sha256": "dbd04403787b5ff2854d48b4ad83d14b0f46f76e96e7b790006e8843976d5f13",
+      "bytes": 148274
+    },
+    {
+      "path": "inputs/canonical/AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "bytes": 2801
+    },
+    {
+      "path": "inputs/canonical/RESEARCH.md",
+      "sha256": "bbdc992f6648222cc4bf84f602e8c41bb0adca688befbfa824cc872b9dc8da49",
+      "bytes": 9162
+    },
+    {
+      "path": "inputs/canonical/SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "bytes": 1146
+    },
+    {
+      "path": "inputs/canonical/mathematics/open_questions.md",
+      "sha256": "854d2f5937d215f7b44021bf1b9321c8d1e1238a253591a4f86d8874b8b226cd",
+      "bytes": 34207
+    },
+    {
+      "path": "inputs/canonical/mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "bytes": 9217
+    },
+    {
+      "path": "inputs/canonical/mathematics/results.md",
+      "sha256": "2e01f7f59e183e7933faf8d21ac402995a12830027d4fe2ac7175c388df6a71f",
+      "bytes": 12042
+    },
+    {
+      "path": "inputs/canonical/record/claim_ledger.md",
+      "sha256": "9f069a8ed1e48c285f49a381a197cdb1db6240c4f088270bae9aae7d9d588f9f",
+      "bytes": 69031
+    },
+    {
+      "path": "inputs/canonical/record/claims.json",
+      "sha256": "8b0cefde265c20e1bab261157fb35cbaeb7f593e483441c5766f3e4ace2e983c",
+      "bytes": 121301
+    },
+    {
+      "path": "inputs/canonical/record/repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "bytes": 5808
+    },
+    {
+      "path": "inputs/prior_radial_scope/domain_addendum.md",
+      "sha256": "2b03f68b7dfec1df332d106d372b37be7e49b77cf26f1988ba869f0ea83ce23c",
+      "bytes": 4353
+    },
+    {
+      "path": "manifest_validation.txt",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6",
+      "bytes": 67
+    },
+    {
+      "path": "reproduce.sh",
+      "sha256": "531a188fc05c6e216e2c2512bcfca5666b390afbd12a8ab66039812d93fa6728",
+      "bytes": 470
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "9f405b1ee477758197218b0e6580d5c1ba4893e90309ca442c57f090dc4514aa",
+      "bytes": 20696
+    },
+    {
+      "path": "validate_manifest.py",
+      "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+      "bytes": 19897
+    },
+    {
+      "path": "verdict.json",
+      "sha256": "ff3d5a2842fb179c1985f9d9ec327a6cff3a1b0df732c6e0b50df580d0e61790",
+      "bytes": 2276
+    }
+  ]
+}

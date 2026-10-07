@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "claim_id": "BGS-PROVISIONAL-GLOBAL-SCALAR-COERCIVITY-AUDIT",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+    "dirty": true
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 gauge_checks.py > gauge_checks.json",
+  "environment": {
+    "software": [
+      "Python 3.12.14",
+      "NumPy 2.3.5",
+      "SciPy 1.17.0",
+      "SymPy 1.14.0",
+      "mpmath 1.3.0"
+    ],
+    "hardware": "x86_64 managed workspace"
+  },
+  "mathematics": {
+    "assertion_tested": "Ordinary real scalar gauge Jacobian at rational points and bounded Mobius identities",
+    "coefficient_domain": "exact rational SymPy and complex128 / float64",
+    "conventions": "P_ij=|U_ij|^2; sum z=0 for coercivity; ordinary real constrained-volume coordinates for gauge",
+    "inputs": [
+      "Deterministic generated unitary and disk-vector families"
+    ],
+    "bounds": {
+      "dimensions": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "count": 100
+    },
+    "non_claims": [
+      "Finite roots do not prove global uniqueness",
+      "Ordinary bosonic real Jacobian only, not a super-Berezinian",
+      "No block-matrix field theorem or asymptotic conclusion"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64",
+    "seed": 194861
+  },
+  "run": {
+    "started_at": "2026-10-07T01:41:35.566222+00:00",
+    "runtime_seconds": 3.2753621239971835,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "gauge_checks.json",
+      "sha256": "5193a73c3cb05047a9cbf81fa64c05657e7ba2435235964a1ca8f7006183949f"
+    }
+  ],
+  "checks": [
+    "All assertions in the referenced script passed"
+  ],
+  "result": "implementation and finite assertion verified in the stated range; floating portions conditional on declared tolerance and sampling",
+  "residual_risks": [
+    "Bounded sampling is not proof",
+    "Floating tests not interval certified",
+    "No superintegral or asymptotic claim"
+  ]
+}

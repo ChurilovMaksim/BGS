@@ -1,5 +1,17 @@
 # Open mathematical obligations
 
+## Current phase/signed frontier
+
+The [current checkpoint](../record/checked_research_checkpoint_20261007.md)
+separates the phase Ward v2 signed overlap estimate (13), literal
+occupation/Hamming/high-switch marked endpoint T16, completed compact source
+signed growing-degree hook covariance, possible literal infinite-subsequence
+obstructions and full boundary/gauge/body synthesis. The higher factorial
+and bandwidth hierarchy remains an additional obligation after pair closure. The actual q=1,
+theta=0 radial theorem has no occupation-uniform or trace conclusion; body
+coercivity and complex source bounds do not identify a limit. The original
+BGS-TRACE-005 complete signed comparison remains OPEN.
+
 [FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](three_block_unmarking.md) and [TRACE-016](four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
 
 
@@ -520,8 +532,18 @@ with the projector; no conclusion for the full balanced sector or BGS follows.
 [FM-026](literal_time_multiplicity_bounds.md) now includes the exact
 [first-old classifier](first_old_layer_classification.md) and uniform
 [residual-25 splitting](residual25_affine_dictionary.md). Larger even residuals
-(at least 625) and odd intermediate layers still require compatible bases
+(at least 625) and odd intermediate residuals beyond 125 still require compatible bases
 and their actual wild-character affine sums. The
 [return obstruction](intermediate_return_operator.md) defeats one scalar
 normalization, not every possible lattice or later cancellation. Full U
 simplicity, quantitative gaps and BGS remain open.
+
+### The current single pair residual
+
+[TRACE-021](hamming_low_switch_residual.md) supplies one exact orthogonal Q
+after disjoint Hamming and low-switch removal, with exponentially small pair-band
+error. The task is to estimate its complete signed trace; no bound is known here.
+Its centered balanced part is not a path mask, and safe translations cannot be
+added again to the low-switch family. All higher fixed-order comparison remains
+open. The odd arithmetic owner now includes the newest and residual-125 bridges;
+the first-old odd follow-on, full simplicity and quantitative gaps remain open.

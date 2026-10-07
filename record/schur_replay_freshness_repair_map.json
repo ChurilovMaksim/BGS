@@ -1,0 +1,47 @@
+{
+  "schema": "bgs-schur-replay-freshness-repair-map-v1",
+  "date": "2026-10-07",
+  "defect": "Original source-bound replay accepted prefilled historical raw results after successful no-op producers, under normal and optimized Python. The internal run_replay helper also accepted an empty optimizer plan and claimed a zero-child pass; the documented CLI already rejected it.",
+  "historical_source_binding": {
+    "path": "record/schur_reduction_source_bindings.json",
+    "sha256": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14",
+    "preserved_byte_for_byte": true
+  },
+  "maintained_wrapper_deltas": [
+    {
+      "maintained_path": "computations/verification/schur/full_replay.py",
+      "historical_copy": "record/schur_replay_freshness_originals/full_replay.py",
+      "historical_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "maintained_sha256": "ad8ad5a9d406ffae60618ceed1c20ccd03a518aae92b627542d02d4882876e8c"
+    },
+    {
+      "maintained_path": "computations/verification/balanced_pair_schur.py",
+      "historical_copy": "record/schur_replay_freshness_originals/balanced_pair_schur.py",
+      "historical_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "maintained_sha256": "4e6ee9f7663f10a7c149f65d21360ea3a7d1d0a9328194c45d8cb4b0fec36c32"
+    }
+  ],
+  "scientific_inputs_unchanged": true,
+  "unchanged_scientific_bindings": {
+    "evidence/schur_reduction_20261007/raw/author/verified_checks.json": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+    "evidence/schur_reduction_20261007/raw/review/checks.json": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+    "mathematics/balanced_pair_schur_reduction.md": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+    "computations/verification/schur/author_checks.py": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980",
+    "computations/verification/schur/independent_checks.py": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff",
+    "computations/verification/schur/comparison.py": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95"
+  },
+  "repair_contract": [
+    "Each control and mathematical producer uses a newly created private child workspace; historical expected output is never staged there.",
+    "Declared producer result is absent immediately before execution; only fresh contained regular non-symlink unaliased output is accepted.",
+    "All authenticated source/reference bytes and file identities are checked after each child before any next child is allowed.",
+    "No shared generated dependencies: author and independent producers are self-contained and need no generated inputs from another run.",
+    "Preserve fresh actual raw output and subprocess failure diagnostics even when comparison or input authentication fails.",
+    "Reject output/input symlinks, ancestor symlinks, source aliases, nonregular results and protected overwrite destinations.",
+    "Preserve the exact original scientific schema and top-level runtime_seconds/python/sympy provenance-only separation.",
+    "Entry point and comparison execute the authenticated source bytes directly; timestamp-valid precompiled caches cannot replace sealed source execution.",
+    "Reject empty or invalid optimizer plans at the internal run_replay entry as well as the CLI; zero-child runs cannot claim a verification pass."
+  ],
+  "tests": "computations/maintenance/tests/test_schur_replay_freshness.py",
+  "receipt": "record/schur_replay_freshness_repair_receipt.json",
+  "scope": "Finite exact algebra and replay execution provenance only; no theorem-source changes, analytic recertification, BGS closure, commit or publication by this repair worker."
+}

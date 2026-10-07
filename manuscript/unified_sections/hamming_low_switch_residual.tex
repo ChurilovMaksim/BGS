@@ -1,0 +1,91 @@
+\section{A disjoint Hamming and low-switch pair residual}
+
+For the actual odd-dimensional map at fixed $\tau=10^{-80}$, work in
+$E=\operatorname{End}((\mathbb C^N)^{\otimes m})$ with ordinary
+Hilbert--Schmidt structure. Let $R$ be the two-sided full slot cycle,
+$\mathcal C_U=\operatorname{Ad}(U^{\otimes m})$, $P_H$ the full Haar invariant
+projector, $\Pi$ the occupation-balanced projector, and $F_r$ the raw
+coordinate-Hamming-at-most-$r$ mask. Define the genuine centered range
+projectors and the raw off-charge mask by
+\[
+ P_r=\operatorname{Proj}((I-P_H)\operatorname{ran}(\Pi F_r)),\qquad
+ \widetilde P_r=\operatorname{Proj}((I-P_H)\operatorname{ran}F_r),\qquad
+ O_r=(I-\Pi)F_r.
+\]
+Exactly $\widetilde P_r=P_r+O_r$. The centered balanced projector is not a
+raw path mask. The earlier sparse-marker theorem already covers
+$r\le\kappa N/\log N$; the independently reviewed position-block refinement
+reaches a fixed positive fraction of the cycle length.
+
+Put $D=N^2-1$, $n=m-2r$, $M=\sum_{s=0}^r\binom ms$,
+$t=\|P_U-J\|$, and $a_n=\mathbb E_{V\,{\rm Haar}}\|P_V-J\|^n$.
+For $n\ge1$ and $Ma_n<1$, both centered projectors satisfy
+\[
+ |\operatorname{Tr}(RP\mathcal C_U)|
+ \le DM\frac{t^n+a_n}{1-Ma_n}.
+\]
+The separate denominator-free estimate is
+$|\operatorname{Tr}(RO_r\mathcal C_U)|\le2DMt^n$ for $n\ge0$,
+with $0^0=1$. These bounds retain the exact Gram inverse, repeated labels,
+whole offdiagonal local spaces, and shifted cyclic seam.
+
+Fix $0<a<b<\infty$, let $h(\delta)$ be binary entropy, and put
+$\lambda=\frac12\log(160/159)$. The balanced radius
+$r_{\rm bal}=\lfloor\delta m\rfloor$ requires both
+\[
+ h(\delta)<(1-2\delta)\lambda,\qquad b h(\delta)<1/160.
+\]
+The inherited actual singular bound and explicit Haar tail then give
+exponential decay on $aN\le m\le bN$, with strict exponent slack.
+Separately $r_{\rm off}=\lfloor0.49m\rfloor$ is valid for $O_r$, using the
+eventual bound $t_N\le10^{-63}$. The inherited statement is
+$\limsup t_N\le10^{-64}$; no eventual $10^{-64}$ bound is inferred.
+The larger radius is not asserted for the whole balanced or centered ball.
+
+\paragraph{Actual coordinate translations and low-switch fibers.}
+Define
+\[
+ B_c(j,k)=U(j,k)\overline{U(j+c,k+c)}.
+\]
+A separately reviewed proof gives
+one existential finite $L$ with $\|B_c^L\|\le3/4$ for every nonzero $c$ and
+all sufficiently large odd $N$. Growing offsets have one-step norm $o(1)$;
+fixed offsets use a genuine compact norm limit, fixed-observable Egorov,
+and mixing for the actual invariant normalized area. These are inherited
+FM-018 inputs with their original source-review boundaries, not consequences
+of topological conjugacy alone. No quantitative startup threshold is given.
+
+For rooted words put $c_j=y_j-x_j$ modulo $N$, with cyclic switch count
+$s(c)$ and checksum $t(c)=\sum_jc_j$ modulo $N$. The exact block contraction
+for each difference word, together with FM-021 for zero-charge runs, bounds
+the entire family $s(c)\le R_N=\lfloor\kappa N/\log N\rfloor$,
+$t(c)\ne0$ by $O(e^{-\eta N})$. Its original $N^{-2}$ time aggregate is
+$O_w(N^{-1}e^{-\eta N})$. The checksum selects whole fibers and implies
+off-charge membership; checksum zero does not imply occupation balance.
+Safe constant translations are included and must not be added again.
+
+\paragraph{One exact residual, still unestimated.}
+Let $L_{\rm high}$ select the low-switch, nonzero-checksum fibers with the
+additional condition $\#\{j:c_j\ne0\}>r_{\rm off}$. This cuts no fiber
+internally and is disjoint from $O_{r_{\rm off}}$. The four removed projectors
+are pairwise orthogonal and commute with $R$, so
+\[
+ Q=I-P_H-P_{r_{\rm bal}}-O_{r_{\rm off}}-L_{\rm high}
+\]
+is an orthogonal projector. No commutation with $\mathcal C_U$ is asserted.
+Using the exact Haar-cycle trace gives uniformly on the fixed positive band
+\[
+ |\operatorname{Tr}U_N^m|^2-\min(m,N)
+   =\operatorname{Tr}(RQ\mathcal C_{U_N})+O(e^{-cN}).
+\]
+TRACE-021 is this pair residual reduction. It leaves the signed $Q$ trace,
+plateau compensation and higher factorial comparison open; it does not
+strengthen TRACE-020 into a full fixed-order theorem or prove BGS.
+
+\paragraph{Auxiliary half-radius limitation.}
+Separate Fourier and symplectic witnesses have an order-$N$ off-charge trace
+at radius $m/2$ despite exact flatness and $\|P_U-J\|=0$. The
+symplectic witness also has reverse-kernel norm $N^{-1/2}$. These change the
+operator and credit the prior broad rounding obstruction; they are not
+counterexamples for the actual quantizer. They show that the listed coarse
+data alone do not justify a uniform half-radius extension.

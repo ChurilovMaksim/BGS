@@ -1,0 +1,7 @@
+PASS direct inverse Berezinian exterior algebra -> bulk integrand
+PASS inverse Berezinian quartic coefficient
+PASS source surface operator including normal derivative
+PASS exact cutoff antiderivatives and combined expression
+bulk(T) = -T*(1 - r)*log(1 - q)/(q*(T + 1)**2) + (T*(2*r - u - v)/(T + 1) - r*log(T + 1))/(1 - q)
+surface(T) = (T*(1 - r)/(T + 1) + r*log(T + 1))/(1 - q)
+combined limit = (1+cd-bc-ad)/(1-ab)

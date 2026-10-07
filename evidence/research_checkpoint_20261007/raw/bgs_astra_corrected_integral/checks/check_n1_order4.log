@@ -1,0 +1,336 @@
+compact finished 1 4 seconds 0.002
+{
+  "status": "passed",
+  "N": 1,
+  "order_p": 4,
+  "degree_t": 8,
+  "U": [
+    [
+      "(0)+(1)i"
+    ]
+  ],
+  "arithmetic": "exact Gaussian rationals Q(i); SymPy rational complex principal minors",
+  "compact_method": "BB Schur inverse Berezinian in C-annihilated quotient",
+  "local_pairing_count": 676,
+  "trace_source_checks": [
+    {
+      "m": 1,
+      "B_N_m": "1",
+      "phase_monomials": 1,
+      "source_derivative_passed": true
+    },
+    {
+      "m": 2,
+      "B_N_m": "1",
+      "phase_monomials": 1,
+      "source_derivative_passed": true
+    },
+    {
+      "m": 3,
+      "B_N_m": "1",
+      "phase_monomials": 1,
+      "source_derivative_passed": true
+    },
+    {
+      "m": 4,
+      "B_N_m": "1",
+      "phase_monomials": 1,
+      "source_derivative_passed": true
+    }
+  ],
+  "compact_checks": [
+    {
+      "degree_t": 0,
+      "coefficient_count": 1,
+      "passed": true
+    },
+    {
+      "degree_t": 2,
+      "coefficient_count": 4,
+      "passed": true
+    },
+    {
+      "degree_t": 4,
+      "coefficient_count": 4,
+      "passed": true
+    },
+    {
+      "degree_t": 6,
+      "coefficient_count": 4,
+      "passed": true
+    },
+    {
+      "degree_t": 8,
+      "coefficient_count": 4,
+      "passed": true
+    }
+  ],
+  "exact_coefficients": {
+    "(0, 0, 0)": "1",
+    "(1, 0, 0)": "1",
+    "(1, 0, 1)": "-1",
+    "(1, 1, 0)": "-1",
+    "(1, 1, 1)": "1",
+    "(2, 0, 0)": "1",
+    "(2, 0, 1)": "-1",
+    "(2, 1, 0)": "-1",
+    "(2, 1, 1)": "1",
+    "(3, 0, 0)": "1",
+    "(3, 0, 1)": "-1",
+    "(3, 1, 0)": "-1",
+    "(3, 1, 1)": "1",
+    "(4, 0, 0)": "1",
+    "(4, 0, 1)": "-1",
+    "(4, 1, 0)": "-1",
+    "(4, 1, 1)": "1"
+  },
+  "abel_controls": [
+    {
+      "N": 1,
+      "q": "1/10",
+      "diagonal_slack": "1/2",
+      "clock_slack": "1/2"
+    },
+    {
+      "N": 1,
+      "q": "1/3",
+      "diagonal_slack": "1/2",
+      "clock_slack": "1/2"
+    },
+    {
+      "N": 1,
+      "q": "1/2",
+      "diagonal_slack": "1/2",
+      "clock_slack": "1/2"
+    },
+    {
+      "N": 1,
+      "q": "4/5",
+      "diagonal_slack": "1/2",
+      "clock_slack": "1/2"
+    },
+    {
+      "N": 1,
+      "q": "99/100",
+      "diagonal_slack": "1/2",
+      "clock_slack": "1/2"
+    },
+    {
+      "N": 2,
+      "q": "1/10",
+      "diagonal_slack": "1",
+      "clock_slack": "13/11"
+    },
+    {
+      "N": 2,
+      "q": "1/3",
+      "diagonal_slack": "1",
+      "clock_slack": "3/2"
+    },
+    {
+      "N": 2,
+      "q": "1/2",
+      "diagonal_slack": "1",
+      "clock_slack": "5/3"
+    },
+    {
+      "N": 2,
+      "q": "4/5",
+      "diagonal_slack": "1",
+      "clock_slack": "17/9"
+    },
+    {
+      "N": 2,
+      "q": "99/100",
+      "diagonal_slack": "1",
+      "clock_slack": "397/199"
+    },
+    {
+      "N": 3,
+      "q": "1/10",
+      "diagonal_slack": "3/2",
+      "clock_slack": "135/74"
+    },
+    {
+      "N": 3,
+      "q": "1/3",
+      "diagonal_slack": "3/2",
+      "clock_slack": "69/26"
+    },
+    {
+      "N": 3,
+      "q": "1/2",
+      "diagonal_slack": "3/2",
+      "clock_slack": "45/14"
+    },
+    {
+      "N": 3,
+      "q": "4/5",
+      "diagonal_slack": "3/2",
+      "clock_slack": "495/122"
+    },
+    {
+      "N": 3,
+      "q": "99/100",
+      "diagonal_slack": "3/2",
+      "clock_slack": "266115/59402"
+    },
+    {
+      "N": 4,
+      "q": "1/10",
+      "diagonal_slack": "2",
+      "clock_slack": "2714/1111"
+    },
+    {
+      "N": 4,
+      "q": "1/3",
+      "diagonal_slack": "2",
+      "clock_slack": "19/5"
+    },
+    {
+      "N": 4,
+      "q": "1/2",
+      "diagonal_slack": "2",
+      "clock_slack": "74/15"
+    },
+    {
+      "N": 4,
+      "q": "4/5",
+      "diagonal_slack": "2",
+      "clock_slack": "2546/369"
+    },
+    {
+      "N": 4,
+      "q": "99/100",
+      "diagonal_slack": "2",
+      "clock_slack": "31325186/3940399"
+    },
+    {
+      "N": 5,
+      "q": "1/10",
+      "diagonal_slack": "5/2",
+      "clock_slack": "67895/22222"
+    },
+    {
+      "N": 5,
+      "q": "1/3",
+      "diagonal_slack": "5/2",
+      "clock_slack": "1185/242"
+    },
+    {
+      "N": 5,
+      "q": "1/2",
+      "diagonal_slack": "5/2",
+      "clock_slack": "415/62"
+    },
+    {
+      "N": 5,
+      "q": "4/5",
+      "diagonal_slack": "5/2",
+      "clock_slack": "43345/4202"
+    },
+    {
+      "N": 5,
+      "q": "99/100",
+      "diagonal_slack": "5/2",
+      "clock_slack": "12153978545/980199002"
+    },
+    {
+      "N": 6,
+      "q": "1/10",
+      "diagonal_slack": "3",
+      "clock_slack": "135801/37037"
+    },
+    {
+      "N": 6,
+      "q": "1/3",
+      "diagonal_slack": "3",
+      "clock_slack": "1083/182"
+    },
+    {
+      "N": 6,
+      "q": "1/2",
+      "diagonal_slack": "3",
+      "clock_slack": "59/7"
+    },
+    {
+      "N": 6,
+      "q": "4/5",
+      "diagonal_slack": "3",
+      "clock_slack": "18203/1281"
+    },
+    {
+      "N": 6,
+      "q": "99/100",
+      "diagonal_slack": "3",
+      "clock_slack": "1043065429167/58519850599"
+    },
+    {
+      "N": 7,
+      "q": "1/10",
+      "diagonal_slack": "7/2",
+      "clock_slack": "9506161/2222222"
+    },
+    {
+      "N": 7,
+      "q": "1/3",
+      "diagonal_slack": "7/2",
+      "clock_slack": "15253/2186"
+    },
+    {
+      "N": 7,
+      "q": "1/2",
+      "diagonal_slack": "7/2",
+      "clock_slack": "2569/254"
+    },
+    {
+      "N": 7,
+      "q": "4/5",
+      "diagonal_slack": "7/2",
+      "clock_slack": "2284051/123482"
+    },
+    {
+      "N": 7,
+      "q": "99/100",
+      "diagonal_slack": "7/2",
+      "clock_slack": "329056627067791/13586930418602"
+    },
+    {
+      "N": 8,
+      "q": "1/10",
+      "diagonal_slack": "4",
+      "clock_slack": "54320980/11111111"
+    },
+    {
+      "N": 8,
+      "q": "1/3",
+      "diagonal_slack": "4",
+      "clock_slack": "1638/205"
+    },
+    {
+      "N": 8,
+      "q": "1/2",
+      "diagonal_slack": "4",
+      "clock_slack": "2996/255"
+    },
+    {
+      "N": 8,
+      "q": "4/5",
+      "diagonal_slack": "4",
+      "clock_slack": "7508900/325089"
+    },
+    {
+      "N": 8,
+      "q": "99/100",
+      "diagonal_slack": "4",
+      "clock_slack": "24395627919887140/772553055720799"
+    }
+  ],
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.20017513899801997,
+  "nonclaims": [
+    "No finite check proves arbitrary N identity or bound.",
+    "No universality conclusion."
+  ]
+}

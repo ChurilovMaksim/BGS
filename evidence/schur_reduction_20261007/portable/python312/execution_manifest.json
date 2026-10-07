@@ -1,0 +1,636 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-SCHUR-REDUCTION-PORTABLE-REPLAY",
+  "artifact_root": "/workspace/shared/bgs_schur_reduction_promotion",
+  "repository": {
+    "commit": "none: outside-canonical portable overlay; pinned bytes authoritative",
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/shared/bgs_schur_reduction_promotion/computations/verification/schur/full_replay.py",
+    "--output-dir",
+    "/workspace/shared/bgs_schur_reduction_promotion/evidence/schur_reduction_20261007/portable/python312",
+    "--modes",
+    "normal",
+    "optimized"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Author and independently reconstructed finite exact Schur controls match pinned scientific outputs; expected/observed environment retained separately.",
+    "coefficient_domain": "Q(i), Q(sqrt(3)), exact rational and symbolic arithmetic",
+    "conventions": "Ordinary traces, independent normalized left coordinate phases, analytic logarithm zero at origin; no changes to tested cases.",
+    "inputs": [
+      "computations/verification/balanced_pair_schur.py",
+      "computations/verification/schur/author_checks.py",
+      "computations/verification/schur/comparison.py",
+      "computations/verification/schur/full_replay.py",
+      "computations/verification/schur/independent_checks.py",
+      "evidence/schur_reduction_20261007/raw/author/SHA256SUMS",
+      "evidence/schur_reduction_20261007/raw/author/candidate_v1.md",
+      "evidence/schur_reduction_20261007/raw/author/checks.json",
+      "evidence/schur_reduction_20261007/raw/author/checks.py",
+      "evidence/schur_reduction_20261007/raw/author/execution_manifest.json",
+      "evidence/schur_reduction_20261007/raw/author/manifest_validation.log",
+      "evidence/schur_reduction_20261007/raw/author/run_checks.py",
+      "evidence/schur_reduction_20261007/raw/author/source_manifest.json",
+      "evidence/schur_reduction_20261007/raw/author/validate_manifest.py",
+      "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+      "evidence/schur_reduction_20261007/raw/author/verified_checks.stderr",
+      "evidence/schur_reduction_20261007/raw/review/README.md",
+      "evidence/schur_reduction_20261007/raw/review/SHA256SUMS",
+      "evidence/schur_reduction_20261007/raw/review/artifact_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/candidate_manifest_validation.log",
+      "evidence/schur_reduction_20261007/raw/review/check_independent.py",
+      "evidence/schur_reduction_20261007/raw/review/checks.json",
+      "evidence/schur_reduction_20261007/raw/review/checks.stderr",
+      "evidence/schur_reduction_20261007/raw/review/closing_source_check.json",
+      "evidence/schur_reduction_20261007/raw/review/execution_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/README.md",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/check_independent.py",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.json",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.stderr",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/execution_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/run_bounded.py",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/check_independent.py",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.json",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.stderr",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/execution_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/run_bounded.py",
+      "evidence/schur_reduction_20261007/raw/review/manifest_validation.log",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/AGENTS.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/RESEARCH.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/SOURCE_OF_TRUTH.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/fixed_map_path_model.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/open_questions.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/position_chain_mixing.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/results.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/reversed_path_decay.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claim_ledger.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claims.json",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/repository_conventions.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/BGS/supplement/fixed_map/weighted-secular/determinant_boundary.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/domain_addendum.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/report.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/SHA256SUMS",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/candidate_v1.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/checks.py",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/execution_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/manifest_validation.log",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/run_checks.py",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/source_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/validate_manifest.py",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/verified_checks.json",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/review.md",
+      "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/synthesis_addendum.md",
+      "evidence/schur_reduction_20261007/raw/review/review.md",
+      "evidence/schur_reduction_20261007/raw/review/run_bounded.py",
+      "evidence/schur_reduction_20261007/raw/review/source_manifest.json",
+      "evidence/schur_reduction_20261007/raw/review/validate_manifest.py",
+      "evidence/schur_reduction_20261007/raw/review/verdict.json",
+      "mathematics/balanced_pair_schur_reduction.md",
+      "record/schur_reduction_source_bindings.json"
+    ],
+    "bounds": {
+      "author": "N=3, powers 1..6; cycles N=2,3,5,7 through 2N+1",
+      "independent": "N=1,2,3,4 powers 5,5,4,4; all N=2,3 orders, two N=4 orders; moments through degree 12; cycles N=1,2,3,4,7 through 3N+1"
+    },
+    "non_claims": [
+      "exact finite controls only; actual radial limit, off-charge, higher factorial, TRACE-005 and BGS remain OPEN",
+      "No analytic recertification or formal proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T01:36:13.287175+00:00",
+    "runtime_seconds": 41.443287748006696,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 160,
+      "max_cores": 9,
+      "max_threads": 1
+    },
+    "limits_apply_to": "each child: author 60 CPU/70 wall seconds; independent 160 CPU/180 wall seconds; library thread variables are cooperative; max_cores records inherited allowed CPUs, no affinity override",
+    "wall_timeout_seconds": 180,
+    "per_family_caps": {
+      "author": {
+        "script": "computations/verification/schur/author_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+        "cpu_seconds": 60,
+        "wall_seconds": 70
+      },
+      "independent": {
+        "script": "computations/verification/schur/independent_checks.py",
+        "expected": "evidence/schur_reduction_20261007/raw/review/checks.json",
+        "cpu_seconds": 160,
+        "wall_seconds": 180
+      }
+    }
+  },
+  "input_artifacts": [
+    {
+      "path": "computations/verification/balanced_pair_schur.py",
+      "sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "sha256_after": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e"
+    },
+    {
+      "path": "computations/verification/schur/author_checks.py",
+      "sha256": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980",
+      "sha256_after": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980"
+    },
+    {
+      "path": "computations/verification/schur/comparison.py",
+      "sha256": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95",
+      "sha256_after": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95"
+    },
+    {
+      "path": "computations/verification/schur/full_replay.py",
+      "sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "sha256_after": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee"
+    },
+    {
+      "path": "computations/verification/schur/independent_checks.py",
+      "sha256": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff",
+      "sha256_after": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/SHA256SUMS",
+      "sha256": "fa47bb169b5c02ebfefd914c0902a8b611f46ee5e5d32bc5420b9bf89dc53fee",
+      "sha256_after": "fa47bb169b5c02ebfefd914c0902a8b611f46ee5e5d32bc5420b9bf89dc53fee"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/candidate_v1.md",
+      "sha256": "736cce3e0129c8252edba22d6abeb201528f5cc0d3780ac9efa6d70ecb9330fe",
+      "sha256_after": "736cce3e0129c8252edba22d6abeb201528f5cc0d3780ac9efa6d70ecb9330fe"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/checks.json",
+      "sha256": "94a0ccdafd2f518c17e21f37b09a51eb715e74e94a0149e1199d4fa80fb0b3a1",
+      "sha256_after": "94a0ccdafd2f518c17e21f37b09a51eb715e74e94a0149e1199d4fa80fb0b3a1"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/checks.py",
+      "sha256": "288d1f236a3c75bd125e05775691eb760a96056d8a460536a0714e5236e517ec",
+      "sha256_after": "288d1f236a3c75bd125e05775691eb760a96056d8a460536a0714e5236e517ec"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/execution_manifest.json",
+      "sha256": "900be86e82220a5287fad0035b307383946fb5f380226b2223860da62d55cee4",
+      "sha256_after": "900be86e82220a5287fad0035b307383946fb5f380226b2223860da62d55cee4"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/manifest_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6",
+      "sha256_after": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/run_checks.py",
+      "sha256": "c2cc70fe33c758342aa0d254e5e277cd5fd88fda227a07ae1aba8980128d1d8d",
+      "sha256_after": "c2cc70fe33c758342aa0d254e5e277cd5fd88fda227a07ae1aba8980128d1d8d"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/source_manifest.json",
+      "sha256": "6161e1d4d6eaa686470408d062b9e8c8f2711b49d26be5f4372464fb90dd60f4",
+      "sha256_after": "6161e1d4d6eaa686470408d062b9e8c8f2711b49d26be5f4372464fb90dd60f4"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/validate_manifest.py",
+      "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+      "sha256_after": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+      "sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "sha256_after": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/verified_checks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/README.md",
+      "sha256": "474cd50a159217f2614ecea2eade2135b30aeada983897efc25beb017c6e577d",
+      "sha256_after": "474cd50a159217f2614ecea2eade2135b30aeada983897efc25beb017c6e577d"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/SHA256SUMS",
+      "sha256": "47a335db54356ca0764d991b32c4342db2eb428dbc60970358e93d2f6903d8a9",
+      "sha256_after": "47a335db54356ca0764d991b32c4342db2eb428dbc60970358e93d2f6903d8a9"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/artifact_manifest.json",
+      "sha256": "1eb751ef9754c4027adf273130405718e9d1cde511ea0dd38232a848c6ab0709",
+      "sha256_after": "1eb751ef9754c4027adf273130405718e9d1cde511ea0dd38232a848c6ab0709"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/candidate_manifest_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6",
+      "sha256_after": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/check_independent.py",
+      "sha256": "8d3e9472f227fbec094a3b192e1014969aed9b42b84f35ae69e78be933aee373",
+      "sha256_after": "8d3e9472f227fbec094a3b192e1014969aed9b42b84f35ae69e78be933aee373"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/checks.json",
+      "sha256": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+      "sha256_after": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/checks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/closing_source_check.json",
+      "sha256": "c664a7e6b907c260611b261d098a74735da3374c6dce59b986ed741537c41c4d",
+      "sha256_after": "c664a7e6b907c260611b261d098a74735da3374c6dce59b986ed741537c41c4d"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/execution_manifest.json",
+      "sha256": "2b5b9f593c3df4d0d06b9e64f3ef41b3206f1d35674a93e2521a7f4989ca42ca",
+      "sha256_after": "2b5b9f593c3df4d0d06b9e64f3ef41b3206f1d35674a93e2521a7f4989ca42ca"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/README.md",
+      "sha256": "65776cf560b55f0c9e9a5c442bf8eb1bc0f472ffd28ab3bc4d379fc7eb1c622f",
+      "sha256_after": "65776cf560b55f0c9e9a5c442bf8eb1bc0f472ffd28ab3bc4d379fc7eb1c622f"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/check_independent.py",
+      "sha256": "0a4595f31afcf1e08d9361a38854401f0f0b44d6d8e788e3bab30836ed1008a6",
+      "sha256_after": "0a4595f31afcf1e08d9361a38854401f0f0b44d6d8e788e3bab30836ed1008a6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.stderr",
+      "sha256": "c67980467fe0b64aed035c722d49700bad7d0be3273c6e408f610bd705c6befc",
+      "sha256_after": "c67980467fe0b64aed035c722d49700bad7d0be3273c6e408f610bd705c6befc"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/execution_manifest.json",
+      "sha256": "e39dd0f67ebc1f4383a0968dbb2085fd4124686ae885f4e63edad44c680053a4",
+      "sha256_after": "e39dd0f67ebc1f4383a0968dbb2085fd4124686ae885f4e63edad44c680053a4"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/run_bounded.py",
+      "sha256": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348",
+      "sha256_after": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/check_independent.py",
+      "sha256": "fb79186e71b9ba7cfda60a941fe9da17ca8639c0d6e36e2bf84c015e0b9af239",
+      "sha256_after": "fb79186e71b9ba7cfda60a941fe9da17ca8639c0d6e36e2bf84c015e0b9af239"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.stderr",
+      "sha256": "8b076497b4a7e6e24fd1ca643a0a4738bc1755c7c8b1ebfccc697535c2ea5293",
+      "sha256_after": "8b076497b4a7e6e24fd1ca643a0a4738bc1755c7c8b1ebfccc697535c2ea5293"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/execution_manifest.json",
+      "sha256": "4c7596447c297ab9470a7585953614af468382aa9c5bfa18d5718b59a57ac307",
+      "sha256_after": "4c7596447c297ab9470a7585953614af468382aa9c5bfa18d5718b59a57ac307"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/run_bounded.py",
+      "sha256": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348",
+      "sha256_after": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/manifest_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6",
+      "sha256_after": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+      "sha256_after": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/RESEARCH.md",
+      "sha256": "bbdc992f6648222cc4bf84f602e8c41bb0adca688befbfa824cc872b9dc8da49",
+      "sha256_after": "bbdc992f6648222cc4bf84f602e8c41bb0adca688befbfa824cc872b9dc8da49"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+      "sha256_after": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "sha256_after": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/open_questions.md",
+      "sha256": "854d2f5937d215f7b44021bf1b9321c8d1e1238a253591a4f86d8874b8b226cd",
+      "sha256_after": "854d2f5937d215f7b44021bf1b9321c8d1e1238a253591a4f86d8874b8b226cd"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "sha256_after": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/results.md",
+      "sha256": "2e01f7f59e183e7933faf8d21ac402995a12830027d4fe2ac7175c388df6a71f",
+      "sha256_after": "2e01f7f59e183e7933faf8d21ac402995a12830027d4fe2ac7175c388df6a71f"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/reversed_path_decay.md",
+      "sha256": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+      "sha256_after": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claim_ledger.md",
+      "sha256": "9f069a8ed1e48c285f49a381a197cdb1db6240c4f088270bae9aae7d9d588f9f",
+      "sha256_after": "9f069a8ed1e48c285f49a381a197cdb1db6240c4f088270bae9aae7d9d588f9f"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claims.json",
+      "sha256": "ce3abbde03be5ddde1681c144076d4e5ea07debb59793445ab0c393417b3b8d0",
+      "sha256_after": "ce3abbde03be5ddde1681c144076d4e5ea07debb59793445ab0c393417b3b8d0"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+      "sha256_after": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/supplement/fixed_map/weighted-secular/determinant_boundary.md",
+      "sha256": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c",
+      "sha256_after": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/domain_addendum.md",
+      "sha256": "2b03f68b7dfec1df332d106d372b37be7e49b77cf26f1988ba869f0ea83ce23c",
+      "sha256_after": "2b03f68b7dfec1df332d106d372b37be7e49b77cf26f1988ba869f0ea83ce23c"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/report.md",
+      "sha256": "bcf38361e2a1be8af065fa559011366e3126e578bc2aa94556c8bae4f9c594b8",
+      "sha256_after": "bcf38361e2a1be8af065fa559011366e3126e578bc2aa94556c8bae4f9c594b8"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/SHA256SUMS",
+      "sha256": "fa47bb169b5c02ebfefd914c0902a8b611f46ee5e5d32bc5420b9bf89dc53fee",
+      "sha256_after": "fa47bb169b5c02ebfefd914c0902a8b611f46ee5e5d32bc5420b9bf89dc53fee"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/candidate_v1.md",
+      "sha256": "736cce3e0129c8252edba22d6abeb201528f5cc0d3780ac9efa6d70ecb9330fe",
+      "sha256_after": "736cce3e0129c8252edba22d6abeb201528f5cc0d3780ac9efa6d70ecb9330fe"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/checks.py",
+      "sha256": "288d1f236a3c75bd125e05775691eb760a96056d8a460536a0714e5236e517ec",
+      "sha256_after": "288d1f236a3c75bd125e05775691eb760a96056d8a460536a0714e5236e517ec"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/execution_manifest.json",
+      "sha256": "900be86e82220a5287fad0035b307383946fb5f380226b2223860da62d55cee4",
+      "sha256_after": "900be86e82220a5287fad0035b307383946fb5f380226b2223860da62d55cee4"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/manifest_validation.log",
+      "sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6",
+      "sha256_after": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/run_checks.py",
+      "sha256": "c2cc70fe33c758342aa0d254e5e277cd5fd88fda227a07ae1aba8980128d1d8d",
+      "sha256_after": "c2cc70fe33c758342aa0d254e5e277cd5fd88fda227a07ae1aba8980128d1d8d"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/source_manifest.json",
+      "sha256": "6161e1d4d6eaa686470408d062b9e8c8f2711b49d26be5f4372464fb90dd60f4",
+      "sha256_after": "6161e1d4d6eaa686470408d062b9e8c8f2711b49d26be5f4372464fb90dd60f4"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/validate_manifest.py",
+      "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+      "sha256_after": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/verified_checks.json",
+      "sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "sha256_after": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/review.md",
+      "sha256": "c1436234c24fa95f9a7f4c66e2866b64a276a4973224eb11b1be59937bcde725",
+      "sha256_after": "c1436234c24fa95f9a7f4c66e2866b64a276a4973224eb11b1be59937bcde725"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/synthesis_addendum.md",
+      "sha256": "69ac748eb3d6dcfdccfa144845d75384533e0024e3b3c709518f1fb317ea4f7a",
+      "sha256_after": "69ac748eb3d6dcfdccfa144845d75384533e0024e3b3c709518f1fb317ea4f7a"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/review.md",
+      "sha256": "f7d59a7a3c821afce10ed2a594a9a1769d7618393fa4ba35ae8f16368a610c90",
+      "sha256_after": "f7d59a7a3c821afce10ed2a594a9a1769d7618393fa4ba35ae8f16368a610c90"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/run_bounded.py",
+      "sha256": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348",
+      "sha256_after": "f8cb732cb2069e7d38f3cdc1218c8d30e5d9c9d9d9b83241d343dc1aae1e3348"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/source_manifest.json",
+      "sha256": "da8092506f8a3d44540dee23dc36a6d6825bed541ad399bffe07ad6d5f5bca26",
+      "sha256_after": "da8092506f8a3d44540dee23dc36a6d6825bed541ad399bffe07ad6d5f5bca26"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "sha256_after": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/verdict.json",
+      "sha256": "1155f8bfa2d183a79eb5cf7b24d783eee1ab6e45b05ffd08ff4fadc2d8b7528d",
+      "sha256_after": "1155f8bfa2d183a79eb5cf7b24d783eee1ab6e45b05ffd08ff4fadc2d8b7528d"
+    },
+    {
+      "path": "mathematics/balanced_pair_schur_reduction.md",
+      "sha256": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+      "sha256_after": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752"
+    },
+    {
+      "path": "record/schur_reduction_source_bindings.json",
+      "sha256": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14",
+      "sha256_after": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/balanced_pair_schur.py",
+    "computations/verification/schur/author_checks.py",
+    "computations/verification/schur/comparison.py",
+    "computations/verification/schur/full_replay.py",
+    "computations/verification/schur/independent_checks.py",
+    "evidence/schur_reduction_20261007/raw/author/SHA256SUMS",
+    "evidence/schur_reduction_20261007/raw/author/candidate_v1.md",
+    "evidence/schur_reduction_20261007/raw/author/checks.json",
+    "evidence/schur_reduction_20261007/raw/author/checks.py",
+    "evidence/schur_reduction_20261007/raw/author/execution_manifest.json",
+    "evidence/schur_reduction_20261007/raw/author/manifest_validation.log",
+    "evidence/schur_reduction_20261007/raw/author/run_checks.py",
+    "evidence/schur_reduction_20261007/raw/author/source_manifest.json",
+    "evidence/schur_reduction_20261007/raw/author/validate_manifest.py",
+    "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+    "evidence/schur_reduction_20261007/raw/author/verified_checks.stderr",
+    "evidence/schur_reduction_20261007/raw/review/README.md",
+    "evidence/schur_reduction_20261007/raw/review/SHA256SUMS",
+    "evidence/schur_reduction_20261007/raw/review/artifact_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/candidate_manifest_validation.log",
+    "evidence/schur_reduction_20261007/raw/review/check_independent.py",
+    "evidence/schur_reduction_20261007/raw/review/checks.json",
+    "evidence/schur_reduction_20261007/raw/review/checks.stderr",
+    "evidence/schur_reduction_20261007/raw/review/closing_source_check.json",
+    "evidence/schur_reduction_20261007/raw/review/execution_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/README.md",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/check_independent.py",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.json",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.stderr",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/execution_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/run_bounded.py",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/check_independent.py",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.json",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.stderr",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/execution_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/run_bounded.py",
+    "evidence/schur_reduction_20261007/raw/review/manifest_validation.log",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/AGENTS.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/RESEARCH.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/SOURCE_OF_TRUTH.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/fixed_map_path_model.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/open_questions.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/position_chain_mixing.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/results.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/reversed_path_decay.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claim_ledger.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/claims.json",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/repository_conventions.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/BGS/supplement/fixed_map/weighted-secular/determinant_boundary.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/domain_addendum.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_bridge/report.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/SHA256SUMS",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/candidate_v1.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/checks.py",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/execution_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/manifest_validation.log",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/run_checks.py",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/source_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/validate_manifest.py",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_balanced_phase_closure/verified_checks.json",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/review.md",
+    "evidence/schur_reduction_20261007/raw/review/pinned/bgs_fractional_hamming_review/synthesis_addendum.md",
+    "evidence/schur_reduction_20261007/raw/review/review.md",
+    "evidence/schur_reduction_20261007/raw/review/run_bounded.py",
+    "evidence/schur_reduction_20261007/raw/review/source_manifest.json",
+    "evidence/schur_reduction_20261007/raw/review/validate_manifest.py",
+    "evidence/schur_reduction_20261007/raw/review/verdict.json",
+    "mathematics/balanced_pair_schur_reduction.md",
+    "record/schur_reduction_source_bindings.json"
+  ],
+  "declared_results": [
+    "evidence/schur_reduction_20261007/portable/python312/author_normal.json",
+    "evidence/schur_reduction_20261007/portable/python312/author_normal_scientific.json",
+    "evidence/schur_reduction_20261007/portable/python312/author_optimized.json",
+    "evidence/schur_reduction_20261007/portable/python312/author_optimized_scientific.json",
+    "evidence/schur_reduction_20261007/portable/python312/comparison.json",
+    "evidence/schur_reduction_20261007/portable/python312/independent_normal.json",
+    "evidence/schur_reduction_20261007/portable/python312/independent_normal_scientific.json",
+    "evidence/schur_reduction_20261007/portable/python312/independent_optimized.json",
+    "evidence/schur_reduction_20261007/portable/python312/independent_optimized_scientific.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/author_normal.json",
+      "sha256": "d3c9edecb1f4856285cecf326f780c4b975ffc6b2b89b28f972e45ad956f8965",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/author_normal_scientific.json",
+      "sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/author_optimized.json",
+      "sha256": "22e4482e225aa8e1b628536d05e8773ec589f119ca1a677e80a14c64cab92c82",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/author_optimized_scientific.json",
+      "sha256": "46dd47277cc42f06a9d864401e3a172d2cc8c5c3095593ec0c6d65dd84d7b21f",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/comparison.json",
+      "sha256": "6980303e3a906ca2112befdd78fd01c2581779ec361becf919c50591c6a42940",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/independent_normal.json",
+      "sha256": "df4b5ffd25a772553d9219a48fcf1380be560ed67ef08c3287f75cd2a964207c",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/independent_normal_scientific.json",
+      "sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/independent_optimized.json",
+      "sha256": "b40c44e93fd6139a3b979188aee564831f40bdbd3714856441f2d4a86731cce7",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/portable/python312/independent_optimized_scientific.json",
+      "sha256": "310efba24a5d299d86c84eb25919e7e8f6c56c906023a54566aef6fdd548eae9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "source-bound exact finite replay",
+      "passed": true
+    }
+  ],
+  "result": "implementation and finite assertion verified in the stated range",
+  "residual_risks": [
+    "Symbolic-library trust; finite controls are not universal analytic proof.",
+    "No external-referee, priority, or Lean certification."
+  ]
+}

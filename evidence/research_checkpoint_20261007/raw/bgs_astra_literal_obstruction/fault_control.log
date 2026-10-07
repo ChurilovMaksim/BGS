@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py", line 222, in <module>
+    main()
+  File "/workspace/shared/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py", line 206, in main
+    require(False,'deliberate fault injection')
+  File "/workspace/shared/bgs_astra_literal_obstruction/verify_fixed_word_freeness.py", line 18, in require
+    raise RuntimeError(label)
+RuntimeError: deliberate fault injection

@@ -1,0 +1,246 @@
+{
+  "utc": "2026-10-07T03:22:35.808130+00:00",
+  "cwd": "/workspace/shared/bgs_r6_repair_checkout",
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONOPTIMIZE": "0"
+  },
+  "source_sha256": {
+    "computations/python/bgs/finite_field.py": "74e185cc2290058e746f91903775db389f777685b7057b7d75978f309fd22c2e",
+    "computations/python/bgs/magnetic_quotient.py": "a1ac5f2b025a20141ade087f5c31b2973ac3a8dd70ba3f03506e23c582bdf7dc",
+    "computations/python/bgs/twisted_jacobi.py": "4f48218acc5c2fab9d6689e553d3dd1e8ce9f815ae00943c4fd08b825f146b04",
+    "computations/python/bgs/jacobi.py": "5179856965d5bceff13d3e48b3d57400e485f04cfea1d264be685015835bd851",
+    "computations/maintenance/tests/test_twisted_magnetic_integer_contracts.py": "fb35751966faba4c3e50854caa4655f9a4be343f3c6053c536139c801499b7b0",
+    "computations/cpp/magnetic_word_verifier.cpp": "99f9331927db49a7b04c072a253f9ed1b53693b1238955d09e733f0adee70a8f"
+  },
+  "runs": [
+    {
+      "label": "python3.12_normal_final_integer_contracts",
+      "command": [
+        "python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.20846656700450694,
+      "log": "python3.12_normal_final_integer_contracts.log",
+      "sha256": "03b4ff0f312ed48130d3808e3fa2cd3f47e59366e6155647afcb353928bc89f3"
+    },
+    {
+      "label": "python3.12_optimized_final_integer_contracts",
+      "command": [
+        "python3.12",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.656167455999821,
+      "log": "python3.12_optimized_final_integer_contracts.log",
+      "sha256": "d096b843352317b280a1c2b41a074d28381202694f1e2910d62377d4d46217ca"
+    },
+    {
+      "label": "python3.12_cpp_magnetic_regression",
+      "command": [
+        "python3.12",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--cpp",
+        "/workspace/shared/bgs_r6_arithmetic_repair/magnetic_word_verifier",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.12_cpp_magnetic_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.8760445739972056,
+      "log": "python3.12_cpp_magnetic_regression.log",
+      "sha256": "9d33c4a650e913f9f2972eaafff91b6669da5322308e8e6e32fb3e80f8de0247"
+    },
+    {
+      "label": "python3.12_magnetic_optimized_guard",
+      "command": [
+        "python3.12",
+        "-O",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.12_magnetic_optimized_should_not_exist.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "elapsed_seconds": 0.01896462600416271,
+      "log": "python3.12_magnetic_optimized_guard.log",
+      "sha256": "c513fafdbf5ced5926231558bc324727c1d2a8c4439eb4afe1e08c0b877f67c1",
+      "output_absent": true
+    },
+    {
+      "label": "python3.12_static_assertion_policy",
+      "command": [
+        "python3.12",
+        "computations/maintenance/assertion_policy.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.3186242729934747,
+      "log": "python3.12_static_assertion_policy.log",
+      "sha256": "86b7692d1575dc81f05107ac7d8c7b56e4edfb0d17e13e9ffe00cb3de3c9cc2c"
+    },
+    {
+      "label": "python3.12_syntax_check",
+      "command": [
+        "python3.12",
+        "-W",
+        "error::SyntaxWarning",
+        "-m",
+        "py_compile",
+        "computations/python/bgs/finite_field.py",
+        "computations/python/bgs/magnetic_quotient.py",
+        "computations/python/bgs/twisted_jacobi.py",
+        "computations/python/bgs/jacobi.py",
+        "computations/maintenance/tests/test_twisted_magnetic_integer_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.03457596200314583,
+      "log": "python3.12_syntax_check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python3.13_normal_final_integer_contracts",
+      "command": [
+        "python3.13",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.17653932499524672,
+      "log": "python3.13_normal_final_integer_contracts.log",
+      "sha256": "6110ea9cf3f0b0404e8041b8feb30613010b547794f1a6a53399f1f2d66254cf"
+    },
+    {
+      "label": "python3.13_optimized_final_integer_contracts",
+      "command": [
+        "python3.13",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.6432637730031274,
+      "log": "python3.13_optimized_final_integer_contracts.log",
+      "sha256": "ac84f2bb220c12ba0487e3a03017211c5c9bd0fa06ab3778ec215ba0d0ae8096"
+    },
+    {
+      "label": "python3.13_cpp_magnetic_regression",
+      "command": [
+        "python3.13",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--cpp",
+        "/workspace/shared/bgs_r6_arithmetic_repair/magnetic_word_verifier",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.13_cpp_magnetic_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 2.079481686996587,
+      "log": "python3.13_cpp_magnetic_regression.log",
+      "sha256": "9d33c4a650e913f9f2972eaafff91b6669da5322308e8e6e32fb3e80f8de0247"
+    },
+    {
+      "label": "python3.13_magnetic_optimized_guard",
+      "command": [
+        "python3.13",
+        "-O",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.13_magnetic_optimized_should_not_exist.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "elapsed_seconds": 0.09792016999563202,
+      "log": "python3.13_magnetic_optimized_guard.log",
+      "sha256": "c513fafdbf5ced5926231558bc324727c1d2a8c4439eb4afe1e08c0b877f67c1",
+      "output_absent": true
+    },
+    {
+      "label": "python3.13_static_assertion_policy",
+      "command": [
+        "python3.13",
+        "computations/maintenance/assertion_policy.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 2.9197438530027284,
+      "log": "python3.13_static_assertion_policy.log",
+      "sha256": "86b7692d1575dc81f05107ac7d8c7b56e4edfb0d17e13e9ffe00cb3de3c9cc2c"
+    },
+    {
+      "label": "python3.13_syntax_check",
+      "command": [
+        "python3.13",
+        "-W",
+        "error::SyntaxWarning",
+        "-m",
+        "py_compile",
+        "computations/python/bgs/finite_field.py",
+        "computations/python/bgs/magnetic_quotient.py",
+        "computations/python/bgs/twisted_jacobi.py",
+        "computations/python/bgs/jacobi.py",
+        "computations/maintenance/tests/test_twisted_magnetic_integer_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.03648418599914294,
+      "log": "python3.13_syntax_check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "arithmetic_diff_whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "computations/python/bgs/magnetic_quotient.py",
+        "computations/python/bgs/twisted_jacobi.py",
+        "computations/python/bgs/jacobi.py",
+        "computations/maintenance/tests/test_twisted_magnetic_integer_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.0034196540000266396,
+      "log": "arithmetic_diff_whitespace.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "unexpected_exits": 0,
+  "sources_unchanged_after_runs": true
+}

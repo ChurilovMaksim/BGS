@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "claim_id": "TASK-ONE-COLOR-CFT-BOUNDARY-AUDIT",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+    "dirty": true
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 checks.py > checks.json; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 reviewer/verify_one_site.py > reviewer/reproduced.out.txt",
+  "environment": {
+    "software": [
+      "Python 3.12.14",
+      "SymPy 1.14.0"
+    ],
+    "hardware": "x86_64; hardware identity not used; local CPU symbolic checks"
+  },
+  "mathematics": {
+    "assertion_tested": "One-site U(1) ratio, literal bulk defect, explicit corrected surface, full common-cutoff identity and bounded normalization/continuation/source tests",
+    "coefficient_domain": "Exact rational and symbolic complex polynomial/rational expressions with analytic logarithm for |ab|<1",
+    "conventions": "Z=[[z,alpha],[beta,w]], tilde Z=[[bar z,gamma],[delta,-bar w]]; odd orientation gamma beta alpha delta; source AZB; shared |w|^2 cutoff T",
+    "inputs": [
+      "checks.py",
+      "reviewer/verify_one_site.py",
+      "sources/z21v1.pdf"
+    ],
+    "bounds": {
+      "colors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_monomial_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cancellation_flavors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Grassmann_generators": 4,
+      "timeout_seconds_per_process": 60,
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "non_claims": [
+      "No uniform M-site source-tail estimate",
+      "No higher-flavor superboundary functional",
+      "No actual-map numerical evaluation",
+      "No universality or BGS counterexample"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "not applicable",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T02:36:00.576636+00:00",
+    "runtime_seconds": 5.877245077004773,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "checks.json",
+      "sha256": "bb71b330394d6203058bc63d00f2aed61e81f5833094f26b4ee1f189f71f0ba2"
+    },
+    {
+      "path": "reviewer/reproduced.out.txt",
+      "sha256": "9b04e318170f66257f5cc78b4e059a6eb48fe322664e6bd0e916fbdb8d91e267"
+    }
+  ],
+  "checks": [
+    "Symbolic residue equals Haar-ratio formula",
+    "Color-one normalization zero; colors two through six normalization one",
+    "Boundary cutoff formula and concentration moments",
+    "Independent exterior-algebra Berezinian coefficients",
+    "Surface radial derivative acts before restriction",
+    "Full bulk-plus-surface cutoff antiderivatives",
+    "Opposite boson/fermion source curvature"
+  ],
+  "result": "All stated exact symbolic controls passed",
+  "residual_risks": [
+    "Version 1 manifest lacks automatic input-before/input-after enforcement",
+    "No analytic formalization; elementary derivations remain mathematical arguments",
+    "Source theorem validity and signs are pinned to cited PDF and visually inspected page",
+    "Canonical working tree contains pre-existing changes; audit only wrote outside canonical"
+  ]
+}

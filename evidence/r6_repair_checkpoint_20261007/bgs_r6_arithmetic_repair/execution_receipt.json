@@ -1,0 +1,324 @@
+{
+  "utc": "2026-10-07T03:22:23.704009+00:00",
+  "cwd": "/workspace/shared/bgs_r6_repair_checkout",
+  "source_sha256": {
+    "computations/python/bgs/magnetic_quotient.py": "a1ac5f2b025a20141ade087f5c31b2973ac3a8dd70ba3f03506e23c582bdf7dc",
+    "computations/python/bgs/twisted_jacobi.py": "4f48218acc5c2fab9d6689e553d3dd1e8ce9f815ae00943c4fd08b825f146b04",
+    "computations/python/bgs/jacobi.py": "5179856965d5bceff13d3e48b3d57400e485f04cfea1d264be685015835bd851",
+    "computations/maintenance/tests/test_twisted_magnetic_integer_contracts.py": "fb35751966faba4c3e50854caa4655f9a4be343f3c6053c536139c801499b7b0"
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONOPTIMIZE": "0"
+  },
+  "runs": [
+    {
+      "label": "python3.12_normal_integer_contracts",
+      "command": [
+        "python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.23041903500416083,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_integer_contracts.log",
+      "sha256": "0789c5ed065b44258a0ef37a4f07ed8b587a03f72e446c94a11de1a9302de903"
+    },
+    {
+      "label": "python3.12_optimized_integer_contracts",
+      "command": [
+        "python3.12",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.697026203997666,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_optimized_integer_contracts.log",
+      "sha256": "5813b47cb0a011da4c166c629367ddc57d205d74c8d7c2f52b98683f01bec4a4"
+    },
+    {
+      "label": "python3.12_normal_magnetic_quotient_regression",
+      "command": [
+        "python3.12",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.12_normal_magnetic_quotient_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 2.032851870993909,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_magnetic_quotient_regression.log",
+      "sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
+    },
+    {
+      "label": "python3.12_normal_magnetic_scalar_certificate",
+      "command": [
+        "python3.12",
+        "computations/verification/magnetic_scalar_certificate.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.11073685999872396,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_magnetic_scalar_certificate.log",
+      "sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
+    },
+    {
+      "label": "python3.12_normal_twisted_jacobi_regression",
+      "command": [
+        "python3.12",
+        "computations/verification/twisted_jacobi_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.12_normal_twisted_jacobi_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.5939368770050351,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_twisted_jacobi_regression.log",
+      "sha256": "abfa49c982c1a471a3ed7177968e599f2dfb977a5eb3a07aa9662e62f6c43a8c"
+    },
+    {
+      "label": "python3.12_optimized_twisted_jacobi_regression",
+      "command": [
+        "python3.12",
+        "-O",
+        "computations/verification/twisted_jacobi_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.12_optimized_twisted_jacobi_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.9184636770005454,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_optimized_twisted_jacobi_regression.log",
+      "sha256": "abfa49c982c1a471a3ed7177968e599f2dfb977a5eb3a07aa9662e62f6c43a8c"
+    },
+    {
+      "label": "python3.12_normal_spectral_integer_window_regressions",
+      "command": [
+        "python3.12",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.4080527739934041,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_spectral_integer_window_regressions.log",
+      "sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46"
+    },
+    {
+      "label": "python3.12_optimized_spectral_integer_window_regressions",
+      "command": [
+        "python3.12",
+        "-O",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.0506943029977265,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_optimized_spectral_integer_window_regressions.log",
+      "sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46"
+    },
+    {
+      "label": "python3.12_normal_current_regression",
+      "command": [
+        "python3.12",
+        "computations/verification/current_regression.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.1138554990029661,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_current_regression.log",
+      "sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
+    },
+    {
+      "label": "python3.12_normal_cayley_jacobi_trace_regression",
+      "command": [
+        "python3.12",
+        "computations/verification/cayley_jacobi_trace_regression.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.3237903249973897,
+      "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\nnumpy 2.3.5\nsympy 1.14.0",
+      "log": "python3.12_normal_cayley_jacobi_trace_regression.log",
+      "sha256": "cf9086579ba63292b92b96d128005944e9e7230d0fadedaec66549dfba2d4279"
+    },
+    {
+      "label": "python3.13_normal_integer_contracts",
+      "command": [
+        "python3.13",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.17304101099580294,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_integer_contracts.log",
+      "sha256": "840ff73eaf99ca3f3acaeca44cb7b3c68ef28a6288734dc6f9cf65db1038b6ca"
+    },
+    {
+      "label": "python3.13_optimized_integer_contracts",
+      "command": [
+        "python3.13",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_twisted_magnetic_integer_contracts.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.5776598689990351,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_optimized_integer_contracts.log",
+      "sha256": "7e3e909fd7b037c63da072ebe3903eb5ff219e19b8541c706eab3f2842fecaa0"
+    },
+    {
+      "label": "python3.13_normal_magnetic_quotient_regression",
+      "command": [
+        "python3.13",
+        "computations/verification/magnetic_quotient_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.13_normal_magnetic_quotient_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.9571516279975185,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_magnetic_quotient_regression.log",
+      "sha256": "bde9ba68107b3a54d3a6390d5106fedb5852ed20cab62b2d7d10a23914165649"
+    },
+    {
+      "label": "python3.13_normal_magnetic_scalar_certificate",
+      "command": [
+        "python3.13",
+        "computations/verification/magnetic_scalar_certificate.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.12177956100640586,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_magnetic_scalar_certificate.log",
+      "sha256": "f2b6da72e9593b2c732611c0a6b8318d3c59d64aad31c01c27ec63d070168269"
+    },
+    {
+      "label": "python3.13_normal_twisted_jacobi_regression",
+      "command": [
+        "python3.13",
+        "computations/verification/twisted_jacobi_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.13_normal_twisted_jacobi_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.1278844289990957,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_twisted_jacobi_regression.log",
+      "sha256": "62ca4785cce9003f82fdf5ef54d30e617b9ef713bf088a5bcb1b26805b5d168c"
+    },
+    {
+      "label": "python3.13_optimized_twisted_jacobi_regression",
+      "command": [
+        "python3.13",
+        "-O",
+        "computations/verification/twisted_jacobi_regression.py",
+        "--output",
+        "/workspace/shared/bgs_r6_arithmetic_repair/python3.13_optimized_twisted_jacobi_regression.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.3855944250026369,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_optimized_twisted_jacobi_regression.log",
+      "sha256": "62ca4785cce9003f82fdf5ef54d30e617b9ef713bf088a5bcb1b26805b5d168c"
+    },
+    {
+      "label": "python3.13_normal_spectral_integer_window_regressions",
+      "command": [
+        "python3.13",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.3406278409966035,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_spectral_integer_window_regressions.log",
+      "sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46"
+    },
+    {
+      "label": "python3.13_optimized_spectral_integer_window_regressions",
+      "command": [
+        "python3.13",
+        "-O",
+        "computations/verification/spectral_integer_window_regressions.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 1.0219873009991716,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_optimized_spectral_integer_window_regressions.log",
+      "sha256": "60782d9f1fb9344059598799b83847da3ace1df757ea8bbf176bc65796807f46"
+    },
+    {
+      "label": "python3.13_normal_current_regression",
+      "command": [
+        "python3.13",
+        "computations/verification/current_regression.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.09924112600128865,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_current_regression.log",
+      "sha256": "4159986102c5f32f66c9c8cdc6be4e3de8127945915df64acfc9e935055f8828"
+    },
+    {
+      "label": "python3.13_normal_cayley_jacobi_trace_regression",
+      "command": [
+        "python3.13",
+        "computations/verification/cayley_jacobi_trace_regression.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.29651377799746115,
+      "version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]\nnumpy 2.2.4\nsympy 1.13.3",
+      "log": "python3.13_normal_cayley_jacobi_trace_regression.log",
+      "sha256": "dc3a868f4d9acd43296c410ca8c54f3c55696ed4f68196aef096bca0340af66f"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "sealed_at": "2026-10-07T00:54:20.838155+00:00",
+  "primary_verdict": "proved as written",
+  "candidate_sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041",
+  "scope": "Finite inequalities 1-3; exact identities 4 and16; fixed-fraction actual-family consequences under named accepted inputs. Separate synthesis addendum has separately pinned low-switch dependencies.",
+  "canonical_edits": false,
+  "author_edits": false,
+  "status": "Completed independent internal review; no formal or external certificate",
+  "editorial_correction": "Section6 prior-range comparison should say accepted kappa N/logN rather than only o(N/logN).",
+  "computation_verdict": "implementation and finite assertion verified in the stated range",
+  "manifest_validation": {
+    "core_schema2": "passed with root hash check",
+    "synthesis_schema2": "passed with root hash check"
+  },
+  "analytical_boundary": "FM-021 parametrix and Haar tail inherited, not independently re-proved. Low-switch synthesis additionally inherits its named accepted analytic chain.",
+  "artifacts": [
+    {
+      "path": "review.md",
+      "sha256": "c1436234c24fa95f9a7f4c66e2866b64a276a4973224eb11b1be59937bcde725"
+    },
+    {
+      "path": "synthesis_addendum.md",
+      "sha256": "69ac748eb3d6dcfdccfa144845d75384533e0024e3b3c709518f1fb317ea4f7a"
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "926c50fa286ab936667b52aacdc36512d4f689d64d9c53214d0f10d57e7e752c"
+    },
+    {
+      "path": "final_source_check.json",
+      "sha256": "b949e6a03df297d3e30c796989a45f2508791e41c70d63b4606e54a83846174f"
+    },
+    {
+      "path": "execution_manifest.json",
+      "sha256": "38dc8e412f53b4ce025a28e1aa2f7fefb4bff2d59d8ecadcf7fca323b56fcfa6"
+    },
+    {
+      "path": "synthesis_input_manifest.json",
+      "sha256": "33c5fe0db5806c04b018db4ac263929fae805564a423a3487dd6ebd05850c9ad"
+    },
+    {
+      "path": "synthesis_execution_manifest.json",
+      "sha256": "cee5e29f69a5dc4045f68ae2ce8d428e0079f14931c35bbad30194ab36a95bf0"
+    },
+    {
+      "path": "independent_controls.py",
+      "sha256": "77ca299f86ff5439cc6671da76e96a94a292ae90580ec73f982a818a6ec4f5b7"
+    },
+    {
+      "path": "run_review.py",
+      "sha256": "c97701d6ab90e15fc2755a28aa5d350cc6758e9c8718b0ce4a47eda381e70d34"
+    },
+    {
+      "path": "check_synthesis.py",
+      "sha256": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275"
+    },
+    {
+      "path": "synthesis_results.json",
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591"
+    },
+    {
+      "path": "synthesis_checks.log",
+      "sha256": "e194c23265568ee82167759cd57b1963ba7938e335355c36711036e78d577372"
+    },
+    {
+      "path": "oracle_comparison.json",
+      "sha256": "87c08117b7158501411d27d7fe52eb91c74a1375d4bbec8d8c0c51fefbe5bdc2"
+    },
+    {
+      "path": "results/verified_run.log",
+      "sha256": "95ae95e218893d74e0e2394e93627f7137018f79283a5f8c28ae59678b4ba5c5"
+    },
+    {
+      "path": "results/verified/all_results.json",
+      "sha256": "ad855640cff7af4c32444f6e8a65a0d847c3f782b49db4160e14cd6a6475cff3"
+    },
+    {
+      "path": "results/verified/full_end.json",
+      "sha256": "d675ae739d27dcf9e9a9f0c902bca3de90b5fe7f3686e7a6000000922bc5347d"
+    },
+    {
+      "path": "results/verified/network.json",
+      "sha256": "83b1e6e20ef737a118306181a9d320f2c84ef52a34c2c3540e7b36c105c4469e"
+    },
+    {
+      "path": "results/verified/offcharge_bound.json",
+      "sha256": "ef86a73557aa268d21eb44bcbf22a9f1011e93858a01736023e91340fa1abf18"
+    },
+    {
+      "path": "results/verified/top_gram.json",
+      "sha256": "2d1d031f05542f3be300709069436dc3d83b5188e3f8c8c5253bb10b2450b382"
+    },
+    {
+      "path": "results/verified/torus.json",
+      "sha256": "e2d6cd1c15dcea2f112a198e400e53c86917b8bf99c35648d73f35b339233d97"
+    }
+  ],
+  "retained_non_authoritative_runs": [
+    "initial_controls.py and results/*.json: development run completed, but source path revised during execution; excluded from source-stable evidence.",
+    "failed_domain_conversion/: capped run failed from exact-expression coercion, not a mathematical assertion."
+  ],
+  "out_of_scope": [
+    "Full high-Hamming balanced/offcharge residual",
+    "Plateau correction",
+    "Higher factorial comparison",
+    "BGS universality"
+  ]
+}
