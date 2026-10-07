@@ -1,0 +1,120 @@
+{
+  "base_commit": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "source_archive_map": "evidence/intermediate_old_layers_20261007/input_map.json",
+  "portable_transformations": [
+    {
+      "module": "computations/verification/intermediate_old_layers/first_position.py",
+      "original_path": "/workspace/shared/bgs_intermediate_first_layer_review/replay_position_residues.py",
+      "original_sha256": "140381d0b10d86b6da8fb4c2870b1626f39147eadaf8ef0c6eb194d73f7c99d0",
+      "converted_assertions": 10,
+      "removed_obsolete_debug_guards": 0,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    },
+    {
+      "module": "computations/verification/intermediate_old_layers/first_cancellation.py",
+      "original_path": "/workspace/shared/bgs_intermediate_first_layer_review/replay_coordinate_cancellation.py",
+      "original_sha256": "31d14252dec7bf70e91f3ee3dbaaa239d8dd6845a493dec33644a9020e939009",
+      "converted_assertions": 10,
+      "removed_obsolete_debug_guards": 0,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    },
+    {
+      "module": "computations/verification/intermediate_old_layers/return_operator.py",
+      "original_path": "/workspace/shared/bgs_intermediate_return_independent_review/independent_checks.py",
+      "original_sha256": "bbb2246a0251d5c0734be0f417940d24ebe654524056b8794db44cbe9cf991f5",
+      "converted_assertions": 0,
+      "removed_obsolete_debug_guards": 0,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    },
+    {
+      "module": "computations/verification/intermediate_old_layers/return_nonprimitive.py",
+      "original_path": "/workspace/shared/bgs_intermediate_return_independent_review/nonprimitive_minimal_period_checks.py",
+      "original_sha256": "585179db03eac3683120ead741a0ddff1f0f89156b294a15abb8355292dc22ca",
+      "converted_assertions": 0,
+      "removed_obsolete_debug_guards": 0,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    },
+    {
+      "module": "computations/verification/intermediate_old_layers/residual25_projectors.py",
+      "original_path": "/workspace/shared/bgs_residual25_affine_review/independent_residue.py",
+      "original_sha256": "5ce9058898710636edc3004c97c651f5b31c0680b22fa86532c2c7fb726ce09b",
+      "converted_assertions": 19,
+      "removed_obsolete_debug_guards": 1,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    },
+    {
+      "module": "computations/verification/intermediate_old_layers/residual25_coherent.py",
+      "original_path": "/workspace/shared/bgs_residual25_affine_review/raw_coherent_check.py",
+      "original_sha256": "39f9be4db62def1182dde27e0118e615ca67e650be5954dc7290d1e6a3a1ea45",
+      "converted_assertions": 10,
+      "removed_obsolete_debug_guards": 1,
+      "changes": [
+        "All top-level code wrapped in run(root), including imports and finite-field table construction.",
+        "Original source installed as scratch __file__ for original source identity metadata.",
+        "Absolute comparison inputs mapped into scratch author/; other relative paths preserved.",
+        "Assertions converted to explicit RuntimeError checks; main guards executed only inside run."
+      ]
+    }
+  ],
+  "excluded": "Unchecked nonzero_d_continuation is not promoted or depended on; previous FM-008 and cat packet proofs are inherited.",
+  "maintained_proofs": [
+    {
+      "path": "mathematics/first_old_layer_classification.md",
+      "sha256": "275c458dd13e2252220be2b03c1fed73b0b87d0270d1a3df293a25c7fd328a70"
+    },
+    {
+      "path": "mathematics/intermediate_return_operator.md",
+      "sha256": "baa3c6cbaceb4d7919b646be6ae88a188dec04f4a24f0af0b827152bb06d3e70"
+    },
+    {
+      "path": "mathematics/residual25_affine_dictionary.md",
+      "sha256": "38a049a9b4733c8b84ab37092f8b77a00bead7c5df5dc249744a3aecd2ed8cef"
+    }
+  ],
+  "maintained_review_notes": [
+    {
+      "path": "record/first_old_layer_review.md",
+      "sha256": "89863ee1caf35a90275d83e26a4e3332cd057dfcf877e884096c6dc0693b4d23"
+    },
+    {
+      "path": "record/intermediate_return_review.md",
+      "sha256": "001720006b1bf6a94afbfd57cd46dd64eff5086fadd4b15953ba1cabb2c2defe"
+    },
+    {
+      "path": "record/residual25_affine_review.md",
+      "sha256": "52d32d48428eb89edd2dd2f3a004b0713d224e89f4b2f896916a8c3ed3a98a70"
+    }
+  ],
+  "prose_changes": [
+    "Update pre-review statuses to the accepted verdicts and connect canonical relative navigation.",
+    "Return m=1 primitivity refers to the divided lift; modular-H valuations are explicitly truncated.",
+    "Retain original absolute execution paths as historical records in review reports.",
+    "Residual25 A-F bridge now refers to its independent ACCEPT; original candidate condition is retained in source archive.",
+    "Replace literal-time theorem with additive-count derivation under the existing rank-transfer theorem."
+  ]
+}

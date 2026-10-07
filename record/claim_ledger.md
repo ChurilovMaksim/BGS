@@ -798,7 +798,14 @@ preserves the superseded arithmetic checkpoints and their references.
 
 ## Current collective hierarchy and literal-time spectral bounds
 
-**TRACE-020:** [entire centered collective hierarchy](../mathematics/collective_occupation_hierarchy.md)
+**TRACE-020:** [general factorial ordered-sector removal](../mathematics/factorial_ordered_diagonal.md)
+gives O_k(log^(2k)N/N) for every fixed k>=2 and compact Fourier weight under
+entrywise flatness alone, including zero-power strata and exact constant
+terms. Mixed permutations need not preserve the ordered range. Its
+[mixed/matched long-cycle companion](../mathematics/mixed_ordered_diagonal.md)
+uses separate singular mixing and shared Haar draws; neither bounds the
+complete signed complement. The separately retained
+[centered collective hierarchy](../mathematics/collective_occupation_hierarchy.md)
 has O(1) actual-U cyclic trace through fixed m<=bN bands and O_w(N^-1) pair
 aggregate, with true Gram inverse and inherited FM-021 analytic inputs.
 The [exact Q residual](../mathematics/collective_projector_residual.md) includes
@@ -807,8 +814,10 @@ and slow-source obstructions retain sector/vector scope and diagnostic limits.
 
 **FM-026:** [literal-time bounds](../mathematics/literal_time_multiplicity_bounds.md)
 for N=7*5^e,e>=1 give multiplicity<=7 at nonzero real algebraic time. At least
-24N/25+7 eigenvalues are simple for evene>=4 and at least35 for odde>=5;
-finite35/175 simplicity is a bounded companion. Component/rank reviews and
+612N/625+7 eigenvalues are simple for even e>=4, and at least 612N/625+175
+for even e>=6; exact special lower bounds are 4333 at N=4375 and 107443 at
+N=109375. At least 35 remain simple for odd e>=5;
+finite 35/175 simplicity is a bounded companion. Component/rank reviews and
 registered LW remain explicit. Full uniform simplicity/gaps/BGS are open.
 
 **FM-008 review update:** [fresh independent audit](fm008_fresh_independent_review.md)

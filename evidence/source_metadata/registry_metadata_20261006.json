@@ -1448,7 +1448,7 @@
         "pinned_version": "v2, 17 September 2023",
         "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
         "dependency_role": null,
-        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW.",
+        "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW. Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion.",
         "project_sources": [
           "mathematics/frozen_algebraic_spectral_simplicity.md",
           "mathematics/frozen_common_antireversor_certificate.md",
@@ -1465,7 +1465,8 @@
           "mathematics/literal_time_multiplicity_bounds.md",
           "mathematics/finite_cat_first_jet.md",
           "record/cat_jet_rank_review.md",
-          "record/fm008_fresh_independent_review.md"
+          "record/fm008_fresh_independent_review.md",
+          "record/intermediate_old_layers_promotion.md"
         ],
         "additional_uses": null
       },
@@ -1541,7 +1542,8 @@
         "mathematics/literal_time_multiplicity_bounds.md",
         "mathematics/finite_cat_first_jet.md",
         "record/cat_jet_rank_review.md",
-        "record/fm008_fresh_independent_review.md"
+        "record/fm008_fresh_independent_review.md",
+        "record/intermediate_old_layers_promotion.md"
       ],
       "direct_claim_dependencies": [
         "BGS-FLOW-013",
@@ -1631,7 +1633,12 @@
         "retention_basis": "Public primary arXiv source downloaded solely for the authorized independent audit; no canonical repository cache or external upload.",
         "scope": "Source identity, exact theorem hypothesis, and project application checked. Full classical LW proof not independently re-proved."
       },
-      "rank_transfer_application_review": "record/cat_jet_rank_review.md: exact minor/derivative-stack mapping; existing LW input inherited, no new external proof."
+      "rank_transfer_application_review": "record/cat_jet_rank_review.md: exact minor/derivative-stack mapping; existing LW input inherited, no new external proof.",
+      "intermediate_application_review_20261007": {
+        "scope": "Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion.",
+        "source": "record/intermediate_old_layers_promotion.md",
+        "external_theorem_status": "Inherited registered LW; no new primary-source verification or theorem reproof."
+      }
     },
     {
       "id": "EXT-ROY-2016",

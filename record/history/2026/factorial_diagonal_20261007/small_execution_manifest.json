@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "claim_id": "MIXED-EXACT-SMALL-END-CONTROLS",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "checks/small_physical.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Literal exact rational/Q(i) full-End compression, matched support cancellation and noninvariance in small finite dimensions.",
+    "coefficient_domain": "Q and Q(i), exact rational and Gaussian rational arithmetic",
+    "conventions": "Ordinary unnormalized Hilbert-Schmidt trace. C_sigma sends word x to x composed sigma inverse. Ket and bra cycles independent.",
+    "inputs": [
+      "Frozen M1-M11",
+      "Literal slot permutations",
+      "Explicit rational unitary fixtures"
+    ],
+    "bounds": {
+      "physical_cases": [
+        "N=2 mixed [1,1]/[2], [1,2]/[3], complex",
+        "N=2 matched [1,1], [1,2], real"
+      ]
+    },
+    "non_claims": [
+      "No asymptotic theorem follows from finite tests",
+      "No full mixed factorial observable or BGS conclusion",
+      "No re-audit of inherited FM-021 proof"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T23:55:48.521783+00:00",
+    "runtime_seconds": 2.736852,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 110,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "checks/small_physical.py",
+    "checks/exact_mixed_fast.py",
+    "frozen/bgs_mixed_ordered_interface/higher_cycle_interface.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "checks/small_physical.py",
+      "sha256": "621f5b0d4180b6330fd0194048d73d82a630e5b7271fc35acbf9aea4b8d67a70",
+      "sha256_after": "621f5b0d4180b6330fd0194048d73d82a630e5b7271fc35acbf9aea4b8d67a70"
+    },
+    {
+      "path": "checks/exact_mixed_fast.py",
+      "sha256": "e6a3a6930eebd9b88cef49e192be824d5378ce188453e7fb013b928374b52183",
+      "sha256_after": "e6a3a6930eebd9b88cef49e192be824d5378ce188453e7fb013b928374b52183"
+    },
+    {
+      "path": "frozen/bgs_mixed_ordered_interface/higher_cycle_interface.md",
+      "sha256": "f9c7d5ace01782ff37f360e4e9d76afc117e2dca9f24fbe0e0b5f32276740304",
+      "sha256_after": "f9c7d5ace01782ff37f360e4e9d76afc117e2dca9f24fbe0e0b5f32276740304"
+    }
+  ],
+  "output_directory": "checks/small_physical_run",
+  "declared_results": [
+    "checks/small_physical_run/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "checks/small_physical_run/stdout.txt",
+      "sha256": "93cf4c3f665e12e1ce5ea4edf8653a571512ed4d6e3d1a40caa60fa4ccbe67db",
+      "kind": "log"
+    },
+    {
+      "path": "checks/small_physical_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "checks/small_physical_run/results.json",
+      "sha256": "ad059ff046699519972c918e465d745e5c344983f6af7086da41b84f336066a2",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

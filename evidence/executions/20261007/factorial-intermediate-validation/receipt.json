@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "base_commit": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "source_scope": "Frozen local pending factorial/intermediate-layer integration snapshot, not an authenticated upstream commit.",
+  "source_files": 2588,
+  "source_manifest_sha256": "4903d1b319f995ea3233139d12a7b5a818a4c918a9e607943dab5659ab98bce0",
+  "workspace": {
+    "passed": 192,
+    "total": 192,
+    "source_tree_unchanged": true,
+    "raw_receipt_sha256": "4b829a40692da2cbbf1c1e1b5eca8ec689873494effcece342a4a88844d5cd22"
+  },
+  "supplement": "28 maintained executable entries; see supplement.json for exact execution and coverage.",
+  "manuscript": {
+    "status": "PASS",
+    "pages": 271,
+    "pdf_sha256": "ea84f18fae1d5418d374cba410946a360f719cdbd45246982d215399d2d9bbc3",
+    "visual_scope": "Pages 263,264,267,268 only; full machine warning/reference gate covers the document."
+  },
+  "lean": "No new build; exact unchanged input/log binding to previous 19-module successful build.",
+  "cpp": "22 prebuilt corpus executables matched by source/binary hashes, covering23 executions; first-seven helper binaries freshly compiled inside its verifier.",
+  "failures": "No failure or source repair during the frozen gate run. Before freezing, an integration driver used the wrong overlay-manifest shape and failed before copying arithmetic files; two missing-entry-point attempts followed. The preserved pre-freeze receipt discloses that corrected orchestration failure. No proof/checker changes resulted.",
+  "post_snapshot_boundary": "This staged evidence package is not part of its own source snapshot. Later evidence-only append must be recorded without pretending those new receipt files were themselves exercised in this run.",
+  "no_publication": true
+}

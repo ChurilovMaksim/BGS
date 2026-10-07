@@ -1,0 +1,266 @@
+{
+  "scope": "General fixed-k ordered-diagonal sector removal and separately scoped mixed/matched long-cycle strengthening. No complete signed complement theorem.",
+  "originals": [
+    {
+      "original_role": "bgs_mixed_ordered_interface/general_fixed_order.md",
+      "original_sha256": "df94ed1b369895820b2200ccb04b04a82c320eccaa1d01098c2eda7e94efa9a7",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_original.md",
+      "public_sha256": "df94ed1b369895820b2200ccb04b04a82c320eccaa1d01098c2eda7e94efa9a7",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/general_fixed_order_v2.md",
+      "original_sha256": "5995e81f5a89f6f1ec28cfaa5eaa341c3f6fc9493d02a6b7aa0787da5872defb",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_v2.md",
+      "public_sha256": "5995e81f5a89f6f1ec28cfaa5eaa341c3f6fc9493d02a6b7aa0787da5872defb",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/general_v2.diff",
+      "original_sha256": "32c74a691c9e04ad93df63a433d13a49f929747738f7013fe11e13cb8c8302da",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_v2.diff.raw.json",
+      "public_sha256": "60e9798b01935360a6340c78ea8bedc7cbd3ad793a25902f20ca8fc0897f38c9",
+      "transformation": "Lossless envelope preserves original whitespace bytes."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/general_v2_manifest.json",
+      "original_sha256": "38e4c3ac6a533ce8d263fde473fa0c1ca85c6ebf6d5b73bdb984d0140e3cd023",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_v2_manifest.json",
+      "public_sha256": "38e4c3ac6a533ce8d263fde473fa0c1ca85c6ebf6d5b73bdb984d0140e3cd023",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/higher_cycle_interface.md",
+      "original_sha256": "f9c7d5ace01782ff37f360e4e9d76afc117e2dca9f24fbe0e0b5f32276740304",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_original.md",
+      "public_sha256": "f9c7d5ace01782ff37f360e4e9d76afc117e2dca9f24fbe0e0b5f32276740304",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/manifest.json",
+      "original_sha256": "9eba1cd3e3eac9e0ee5e2eae093163c79874c0509cc9a43805a1d62501d32846",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_author_manifest.json",
+      "public_sha256": "9eba1cd3e3eac9e0ee5e2eae093163c79874c0509cc9a43805a1d62501d32846",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/check_mixed.py",
+      "original_sha256": "1bf538e9e919c537c4addbd99685b46caf8c9e3933d9ae17783fb6c3a9a10421",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/author_mixed_fixture.py",
+      "public_sha256": "1bf538e9e919c537c4addbd99685b46caf8c9e3933d9ae17783fb6c3a9a10421",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/check_matched.py",
+      "original_sha256": "da3df32a70a8f8b2f34db88d30cc165a21d2d2643f2ad32bd1476205920bf319",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/author_matched.py",
+      "public_sha256": "da3df32a70a8f8b2f34db88d30cc165a21d2d2643f2ad32bd1476205920bf319",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_ordered_interface/matched_checks.json",
+      "original_sha256": "89f738b601037f63e34b0022fedc7a0276821b6e92bb3783cc2d401d27133cab",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/author_matched_results.json",
+      "public_sha256": "89f738b601037f63e34b0022fedc7a0276821b6e92bb3783cc2d401d27133cab",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/review.md",
+      "original_sha256": "ad26c29742687f0fc42104755853bbfbc9f90d28336c35b7621f1b45fdae3dbc",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_review_original.md",
+      "public_sha256": "ad26c29742687f0fc42104755853bbfbc9f90d28336c35b7621f1b45fdae3dbc",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/review_manifest.json",
+      "original_sha256": "b2d11f4c070ec7888928b1b5224e69d532d84103aca63bc3f8d42fbca0504896",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_review_manifest.json",
+      "public_sha256": "b2d11f4c070ec7888928b1b5224e69d532d84103aca63bc3f8d42fbca0504896",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/checks.py",
+      "original_sha256": "df8564c8969e15e2860eb665dffb29a3caf3b07eeef9fc4e533ee6a19d0ad102",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_checker_original.py",
+      "public_sha256": "df8564c8969e15e2860eb665dffb29a3caf3b07eeef9fc4e533ee6a19d0ad102",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/contract.json",
+      "original_sha256": "3662eeb097825c28650919500762a9353d416ab1eef2f7d97df5b95a815dd375",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_contract.json",
+      "public_sha256": "3662eeb097825c28650919500762a9353d416ab1eef2f7d97df5b95a815dd375",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/run/manifest.json",
+      "original_sha256": "39982357e3142f31369b52388254c6828a0bcafc67a6cb489012cb704f71d311",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_execution_manifest.json",
+      "public_sha256": "39982357e3142f31369b52388254c6828a0bcafc67a6cb489012cb704f71d311",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/author_replay.json",
+      "original_sha256": "8878e50cc0bd648d698273b377619e58f38d3d89796741cf3d4b5aa004c1a0eb",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/general_author_replay.json",
+      "public_sha256": "8878e50cc0bd648d698273b377619e58f38d3d89796741cf3d4b5aa004c1a0eb",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_general_factorial_diagonal_review/run/results.json",
+      "original_sha256": "e6f5a72495109a4034206373528a52d6d79e6ac99318122d99aee3456cd89f66",
+      "public_path": "evidence/factorial_diagonal_20261007/original_results/general.json",
+      "public_sha256": "e6f5a72495109a4034206373528a52d6d79e6ac99318122d99aee3456cd89f66",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/review.md",
+      "original_sha256": "3b87b16d7d8d4a0e641d6dda67cdb3e1a64349f4f52078e91884395540eaf419",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_review_original.md",
+      "public_sha256": "3b87b16d7d8d4a0e641d6dda67cdb3e1a64349f4f52078e91884395540eaf419",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/input_manifest.json",
+      "original_sha256": "1c21e01d0f190f85cfcf9201d24b9da72f3b9832070cac44802dd7e462d9edcd",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_input_manifest.json",
+      "public_sha256": "1c21e01d0f190f85cfcf9201d24b9da72f3b9832070cac44802dd7e462d9edcd",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/final_manifest.json",
+      "original_sha256": "41d709903c883d188db5a770f7cb7da7272ee45aa635f71240aa9176113326e5",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_final_manifest.json",
+      "public_sha256": "41d709903c883d188db5a770f7cb7da7272ee45aa635f71240aa9176113326e5",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/exact_mixed.py",
+      "original_sha256": "4d7125c6cfb472c52e7718c64e061e5a0a67e6e0f7ff5798d64e231fd778c858",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_first_checker.py",
+      "public_sha256": "4d7125c6cfb472c52e7718c64e061e5a0a67e6e0f7ff5798d64e231fd778c858",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/exact_mixed_fast.py",
+      "original_sha256": "e6a3a6930eebd9b88cef49e192be824d5378ce188453e7fb013b928374b52183",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_fast_checker.py",
+      "public_sha256": "e6a3a6930eebd9b88cef49e192be824d5378ce188453e7fb013b928374b52183",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/completed_run/manifest.json",
+      "original_sha256": "0f4977a2c1613ca47d4a1c81b17cef71fded9e861240b4283df5fa42e211300a",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_timeout480_manifest.json",
+      "public_sha256": "0f4977a2c1613ca47d4a1c81b17cef71fded9e861240b4283df5fa42e211300a",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/completed_run/stdout.txt",
+      "original_sha256": "6d72958513f4b8f175c177b2257d30a01112e2cddb63e5176a67fcb307fd5f69",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_timeout480_stdout.txt",
+      "public_sha256": "6d72958513f4b8f175c177b2257d30a01112e2cddb63e5176a67fcb307fd5f69",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/fast_run/manifest.json",
+      "original_sha256": "e53be491030bc580729d616211f8ae92d14ae78d66c7a42780083fae4a29743a",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_timeout360_manifest.json",
+      "public_sha256": "e53be491030bc580729d616211f8ae92d14ae78d66c7a42780083fae4a29743a",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/fast_run/stdout.txt",
+      "original_sha256": "6d72958513f4b8f175c177b2257d30a01112e2cddb63e5176a67fcb307fd5f69",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_timeout360_stdout.txt",
+      "public_sha256": "6d72958513f4b8f175c177b2257d30a01112e2cddb63e5176a67fcb307fd5f69",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/author_replay/manifest.json",
+      "original_sha256": "409d2533ed3a18825139c143b18b38f5e046781bdf4b60458dae2a66fb89a6b8",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/mixed_author_replay_manifest.json",
+      "public_sha256": "409d2533ed3a18825139c143b18b38f5e046781bdf4b60458dae2a66fb89a6b8",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/small_physical.py",
+      "original_sha256": "621f5b0d4180b6330fd0194048d73d82a630e5b7271fc35acbf9aea4b8d67a70",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/small_runner_original.py",
+      "public_sha256": "621f5b0d4180b6330fd0194048d73d82a630e5b7271fc35acbf9aea4b8d67a70",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/small_physical_run/results.json",
+      "original_sha256": "ad059ff046699519972c918e465d745e5c344983f6af7086da41b84f336066a2",
+      "public_path": "evidence/factorial_diagonal_20261007/original_results/small.json",
+      "public_sha256": "ad059ff046699519972c918e465d745e5c344983f6af7086da41b84f336066a2",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/small_physical_run/manifest.json",
+      "original_sha256": "7e113803be2623d4c7edd585b88f9fb875c6d4ce006a93192cc6dc6e869913cc",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/small_execution_manifest.json",
+      "public_sha256": "7e113803be2623d4c7edd585b88f9fb875c6d4ce006a93192cc6dc6e869913cc",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/ports_shared.py",
+      "original_sha256": "a385efdfa75661beec41dd52cec1c3d15052b92e050dd6f3ac10e829b781879c",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/ports_runner_original.py",
+      "public_sha256": "a385efdfa75661beec41dd52cec1c3d15052b92e050dd6f3ac10e829b781879c",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/ports_run/results.json",
+      "original_sha256": "0a1f03a841058d7b7e9413aaca14229f8e10ad6fa2adcfde2379039069559f2c",
+      "public_path": "evidence/factorial_diagonal_20261007/original_results/ports.json",
+      "public_sha256": "0a1f03a841058d7b7e9413aaca14229f8e10ad6fa2adcfde2379039069559f2c",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/ports_run/manifest.json",
+      "original_sha256": "3d168af7effac75ee5fcfcd8096b05cc5396bd3c829e78eca7689467beafa8d0",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/ports_execution_manifest.json",
+      "public_sha256": "3d168af7effac75ee5fcfcd8096b05cc5396bd3c829e78eca7689467beafa8d0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/n2_m4.py",
+      "original_sha256": "e909eff8a646cd3986096dd6b1a360a5830edc41cec71b9b2ebf7941a9c5f392",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/n2_m4_runner_original.py",
+      "public_sha256": "e909eff8a646cd3986096dd6b1a360a5830edc41cec71b9b2ebf7941a9c5f392",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/n2_m4_run/results.json",
+      "original_sha256": "a8ec48f56d836e10542c2dca75f83d0cc962b8790acbd6cb1e9a3f08e158f082",
+      "public_path": "evidence/factorial_diagonal_20261007/original_results/n2_m4.json",
+      "public_sha256": "a8ec48f56d836e10542c2dca75f83d0cc962b8790acbd6cb1e9a3f08e158f082",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_mixed_cycle_independent_review/checks/n2_m4_run/manifest.json",
+      "original_sha256": "97a3b6f8fbf99ab2279b2acb663e3652da8a817c176b7a150c11ba3254b12507",
+      "public_path": "record/history/2026/factorial_diagonal_20261007/n2_m4_execution_manifest.json",
+      "public_sha256": "97a3b6f8fbf99ab2279b2acb663e3652da8a817c176b7a150c11ba3254b12507",
+      "transformation": "Byte-identical copy."
+    }
+  ],
+  "editorial_changes": [
+    "Candidate status updated after pinned independent review; original bytes preserved.",
+    "General v2 only clarifies cut set meets each common closed cycle.",
+    "Old author circulant fixture is normal; exact independent nonnormal fixtures supply the relevant controls."
+  ],
+  "portable_changes": "Exact arithmetic unchanged; explicit RuntimeError checks, silent imports, proper main and stdout output. Failed broad mixed runs and floating author replays are historical, not silently replaced.",
+  "curated_final_hashes": {
+    "record/mixed_ordered_diagonal_review.md": "23f7b3a13b7a6797526a436f041b0a7bdfff6a82d4cbeea3784e638d02b766ce",
+    "record/factorial_diagonal_review.md": "867090b5db62096d08380c84421e5aef212a4027bfa2ade6636f3ec45c403b32",
+    "mathematics/factorial_ordered_diagonal.md": "7f85d805f89f44330ddf3040ba55b85c90cbad521de450985587554e3a677724",
+    "mathematics/mixed_ordered_diagonal.md": "046cc9e1402a5242ca556472826bc8e38321783ce417221d13390af0f5d32afa",
+    "computations/verification/factorial_diagonal_extension.py": "13f3c8b573cfc17e020b039c6df1bc7a48b9a3bf6a45d3c56e9e2be02d9d226a",
+    "computations/verification/factorial_diagonal/mixed.py": "be641f546d4df21ad5d3a560ec1c46f30af4607f62d9cf28ab559d75661878f6",
+    "computations/verification/factorial_diagonal/general.py": "05f3d55c7fbc08471eb78f467bc6113c5c24baf941f3ba33b2874d5fb426378b",
+    "manuscript/unified_sections/factorial_ordered_diagonal.tex": "2cbd3abd92854c38db90d8e618591c5ab361e7ec8495c27ae7c59337683e5b8c"
+  }
+}

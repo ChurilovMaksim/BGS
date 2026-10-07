@@ -131,3 +131,13 @@ and off-charge complements remain open.
 
 [FM-026](../../literal_time_multiplicity_bounds.md) gives scoped literal-time
 multiplicity and simple-count bounds; full uniform simplicity remains open.
+
+[General factorial ordered-sector removal](../../factorial_ordered_diagonal.md)
+extends TRACE-020 under entrywise flatness alone. The
+[mixed long-cycle companion](../../mixed_ordered_diagonal.md) retains separate
+singular-gap assumptions and stronger band estimates. The signed complement
+remains the target.
+
+[Intermediate old layers](../../literal_time_multiplicity_bounds.md) sharpen the
+existing FM-026 even counts; see the canonical owner for the classifier,
+return operator and residual-25 proof/review paths.

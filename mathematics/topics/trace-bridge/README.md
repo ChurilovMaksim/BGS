@@ -74,3 +74,9 @@ links are in the theorem; full signed BGS remains open.
 [exact Q residual](../../collective_projector_residual.md) use actual-U
 ordered operator projectors, distinct from WKB path masks. Full balanced
 and off-charge complements remain open.
+
+[General factorial ordered-sector removal](../../factorial_ordered_diagonal.md)
+extends TRACE-020 under entrywise flatness alone. The
+[mixed long-cycle companion](../../mixed_ordered_diagonal.md) retains separate
+singular-gap assumptions and stronger band estimates. The signed complement
+remains the target.

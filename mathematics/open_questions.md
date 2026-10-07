@@ -506,3 +506,22 @@ Q=(Pi-P_H-P_coll)+(I-Pi), including some cycle-fixed vectors. Its complete
 signed cyclic trace is unestimated. This is distinct from the stationary-label
 WKB residual. [FM-026](literal_time_multiplicity_bounds.md) leaves intermediate
 old-layer U simplicity and quantitative gaps open.
+
+### Remaining fixed-order mixed projector trace
+
+The [general TRACE-020 theorem](factorial_ordered_diagonal.md) handles the
+ordered sector for all canonical cycle lengths, zero powers and compact
+fixed-order Fourier weights under flatness alone. The complete signed
+Tr[R(I-P_H-P_ord)C_U] aggregation remains open. Mixed R need not commute
+with the projector; no conclusion for the full balanced sector or BGS follows.
+
+### Intermediate arithmetic layers after residual 25
+
+[FM-026](literal_time_multiplicity_bounds.md) now includes the exact
+[first-old classifier](first_old_layer_classification.md) and uniform
+[residual-25 splitting](residual25_affine_dictionary.md). Larger even residuals
+(at least 625) and odd intermediate layers still require compatible bases
+and their actual wild-character affine sums. The
+[return obstruction](intermediate_return_operator.md) defeats one scalar
+normalization, not every possible lattice or later cancellation. Full U
+simplicity, quantitative gaps and BGS remain open.

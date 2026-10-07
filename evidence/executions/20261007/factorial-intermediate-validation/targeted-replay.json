@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "factorial_nontiming_output_identical": true,
+  "arithmetic_same_reviewed_scientific_results": [
+    {
+      "name": "first_position",
+      "module_sha256": "21829faa937685eb2a4b9c0f58716a5371b405c5b532d494b23c1535dad2eec5",
+      "original_source_sha256": "140381d0b10d86b6da8fb4c2870b1626f39147eadaf8ef0c6eb194d73f7c99d0",
+      "original_scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be",
+      "replay_scientific_sha256": "ecda7c1810618093fdaf3aa33cb8b30d4d188b8cfac51dd16d5c8fb1e34ad9be",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    },
+    {
+      "name": "first_cancellation",
+      "module_sha256": "f83d6f92b06f6f8407abb66afd40d649be5b2a0533ffad248775f4113a599632",
+      "original_source_sha256": "31d14252dec7bf70e91f3ee3dbaaa239d8dd6845a493dec33644a9020e939009",
+      "original_scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a",
+      "replay_scientific_sha256": "1dde44ddf9e2f92684ce970dda42300cd550950974c7ef1051fff5e3e2d1f37a",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    },
+    {
+      "name": "return_operator",
+      "module_sha256": "a9c61f64ed0db67a0da9b0c229a83ec1c0199ccc85629010806f042bbc3d4fd2",
+      "original_source_sha256": "bbb2246a0251d5c0734be0f417940d24ebe654524056b8794db44cbe9cf991f5",
+      "original_scientific_sha256": "216b590a5af9e23c99387471f8ef4d3c784f52dbccb499b5defb8adf4a7c64fb",
+      "replay_scientific_sha256": "216b590a5af9e23c99387471f8ef4d3c784f52dbccb499b5defb8adf4a7c64fb",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    },
+    {
+      "name": "return_nonprimitive",
+      "module_sha256": "74dd2a97176152fb2aee189203abe5db007b3ea272d36bce3d9dbc1ee14e7a75",
+      "original_source_sha256": "585179db03eac3683120ead741a0ddff1f0f89156b294a15abb8355292dc22ca",
+      "original_scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502",
+      "replay_scientific_sha256": "136894b16c409e2db773f8f5cba511ea0b9f2d7d8bafd998d5004e4ad5d34502",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    },
+    {
+      "name": "residual25_projectors",
+      "module_sha256": "2ef30fa5dc78ce056c5c763e9b57ea6fb09cb9481cd5a1bb4d55aecab443f2b0",
+      "original_source_sha256": "5ce9058898710636edc3004c97c651f5b31c0680b22fa86532c2c7fb726ce09b",
+      "original_scientific_sha256": "c8db32419fb3a0b8497bb97734efc1220caa2b612d3b5f520eaf4983ab2b5ab1",
+      "replay_scientific_sha256": "c8db32419fb3a0b8497bb97734efc1220caa2b612d3b5f520eaf4983ab2b5ab1",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    },
+    {
+      "name": "residual25_coherent",
+      "module_sha256": "635d2a4d018366e09dc902f2cfb1a98f7b11fcb6350cb62c7ced8fe12c523c7a",
+      "original_source_sha256": "39f9be4db62def1182dde27e0118e615ca67e650be5954dc7290d1e6a3a1ea45",
+      "original_scientific_sha256": "93a6356ce7c40f17705391392cd7a5d2762d7714333cca0fdfd5e8f7c65a7cca",
+      "replay_scientific_sha256": "93a6356ce7c40f17705391392cd7a5d2762d7714333cca0fdfd5e8f7c65a7cca",
+      "all_fields_except_runtime_equal": true,
+      "silent_import": true,
+      "exit_status": 0
+    }
+  ],
+  "metadata_exclusions": "Factorial seconds; arithmetic optimized flag, worker elapsed time and raw-stdout hashes that include it. Each scientific-result hash and all reviewed field comparisons pass.",
+  "raw_outputs": {
+    "factorial-normal.json": "ca45b63458410745d1bcfd1ae650bd50968c93fbd3f7b78cca3229833462bab3",
+    "factorial-optimized.json": "3e109a742f1e5c2d3c2c7465c90ddf8e4b880ff956058f2ccffd0c05e1e502dc",
+    "intermediate-normal.json": "b6279b00d9fc211f4881bc4d45c56f24b7db620ffc01c03a9fdb94637d93dfc9",
+    "intermediate-optimized.json": "589d05d59bec542d4399e07b8172efa922cf975599aa4d3c81e76da9141d2f73"
+  }
+}

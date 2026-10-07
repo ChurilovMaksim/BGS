@@ -77,3 +77,7 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Collective/cat/audit integration](../../collective_cat_integration_20261006.md): scoped TRACE-020/FM-026 and fresh FM-008 review, with source-bound corrections.
 
 - [Collective/cat/audit final validation](../../../evidence/executions/20261006/collective-cat-validation/README.md): post-run receipts for the 2,430-file snapshot; 190/190 workspace, 28/28 supplement, 61/61 maintenance in both modes, 271-page manuscript.
+
+- [Factorial/intermediate-layer integration](../../factorial_intermediate_integration_20261007.md): scoped extensions of TRACE-020 and FM-026; original failed runs and fixture corrections preserved.
+
+- [Factorial/intermediate-layer final validation](../../../evidence/executions/20261007/factorial-intermediate-validation/README.md): post-run receipts for the 2,588-file snapshot; 192/192 workspace, 28/28 supplement, 65/65 maintenance in both modes, 271-page manuscript.
