@@ -84,7 +84,7 @@ sectorwise absolute control is not supplied. The growing-degree signed hook
 covariance identification is open. The hook and top-fermion calculations in
 [the identification target](../evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md)
 are author-level finite diagnostics, not additional independently accepted
-asymptotic statements. Ordinary stratum centering remains a candidate.
+asymptotic statements. The subsequently reviewed ordinary stratum centering is linked below with fixed-N scope.
 
 ## BGS-FM-028: actual q=1, theta=0 radial boundary theorem
 
@@ -163,8 +163,7 @@ high-switch occupation-mismatched residual diverges on positive compact bands;
 the damped part is negligible and its signed boundary integral diverges.
 Its imported universal Abel bound is independently accepted. This is an
 actual offcharge obstruction for a changed family, not a literal-BGS
-counterexample. The simple-spectrum and rounding-offcharge companions remain
-unreviewed candidates.
+counterexample. The subsequently reviewed simple-spectrum and rounding-offcharge companions are linked below with changed-family and strategy restrictions.
 
 The [color-one source qualification](../literature/color_one_boundary_qualification_20261007.md)
 refutes the specified ordinary bulk-only disk/plane formula at zero source
@@ -192,3 +191,24 @@ actual signed overlap estimate (13) remains open. Neither obstruction,
 conditional Ward equation, nor a first elimination drift closes the balanced
 limit. The sealed independent review and 79 exact controls are preserved in
 [its review packet](../evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/).
+
+
+## Reviewed Wave2 continuation
+
+[BGS-TRACE-024](actual_one_pinch_disappearance.md) closes the actual unmasked q=1 smooth signed occupation-subtracted one-pinch aggregate, combining actual fixed-lag displacement overlap and annealed deletion. Bounded weights apply only to the positive aggregate; the annealed consecutive-block extension does not assert positive block-hierarchy closure. FM-028 C4 and TRACE-023 Abel (A) enter only the annealed leaf. There is no aggregate rate, growing-lag estimate or arbitrary masked/separated-insertion extension.
+
+[BGS-FM-031](ordinary_compact_stratum_centering.md) gives ordinary stable-stratum centering and complete signed-source cutoff/derivative bounds at fixed odd N>=3, a.e., with original normalized measures. [BGS-TRACE-025](rounding_simple_spectrum_endpoint_barriers.md) supplies qualified changed-family rounding/splitting barriers, requiring a separating property or estimate rather than a prescribed proof method.
+
+[BGS-TRACE-026](hook_tree_phase_current_reduction.md) gives corrected exact finite hook/tree/current identities and a conditional controlled-sector Abel reduction. The negative plateau-current limit remains unproved. [The bounded phase-source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no graph universality leaf or priority claim.
+
+Literal masked T16, the masked insertion/source-extraction/deconvolution hierarchy, actual phase-Ward overlap (13), balanced microscopic identification, higher factorial TRACE-005 and deterministic BGS remain OPEN. The separately sealed bounded Ward covariance continuation is recorded below.
+
+
+## Reviewed weighted coherence continuation
+
+[BGS-TRACE-027](weighted_phase_coherence_covariance.md) gives finite weighted covariance and classical Green–Kubo structure, complete signed Ward action on the upper half of a slow growing window, plus the actual unconjugated transpose-product/degree-two corollary. Original ZIP receipts and checker remain unavailable; newly generated independent exact controls and exact proof export are sealed. Actual absorbed Ward (13), balanced microscopic law, signed masked T16, TRACE-005 and BGS remain OPEN.
+
+
+## Reviewed Wave3 unmasked closure
+
+[TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes the complete unmasked separated/convex hierarchy via actual RIGHT-frame control and a new centered three-pinch Schatten tail. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) gives complete signed bounded-u stability and exact deconvolution bounds, while the actual full unsigned deconvolved correction diverges in the required large-log window. The identity cancels in signed occupation subtraction; masks/extraction, signed boundary deconvolution, undamped zero insertion, T16, balanced identification, Ward(13), TRACE005 and BGS remain OPEN.

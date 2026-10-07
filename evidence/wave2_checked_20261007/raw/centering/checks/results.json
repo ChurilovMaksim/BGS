@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "N3_k0_jacobian_at_(0, 0)",
+      "passed": true,
+      "detail": {
+        "jacobian": "69975931679/7779240000",
+        "gauge_delta": "69975931679/7779240000",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k0_jacobian_at_(1/5, 1/7)",
+      "passed": true,
+      "detail": {
+        "jacobian": "17700042648405606043121904731975000000/2548563245698889688757572240997551649",
+        "gauge_delta": "69975931679/7779240000",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k1_jacobian_at_(0, 0)",
+      "passed": true,
+      "detail": {
+        "jacobian": "2387/324",
+        "gauge_delta": "2387/324",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k1_jacobian_at_(1/5, 1/7)",
+      "passed": true,
+      "detail": {
+        "jacobian": "1769683401503201992500/187756438984747146109",
+        "gauge_delta": "2387/324",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k2_jacobian_at_(0, 0)",
+      "passed": true,
+      "detail": {
+        "jacobian": "221/25",
+        "gauge_delta": "221/25",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k2_jacobian_at_(1/5, 1/7)",
+      "passed": true,
+      "detail": {
+        "jacobian": "87870903927625/7507946422413",
+        "gauge_delta": "221/25",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k3_jacobian_at_(0, 0)",
+      "passed": true,
+      "detail": {
+        "jacobian": "6*sqrt(3)",
+        "gauge_delta": "9",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N3_k3_jacobian_at_(1/5, 1/7)",
+      "passed": true,
+      "detail": {
+        "jacobian": "10363316250*sqrt(3)/1823064349",
+        "gauge_delta": "9",
+        "comparison": "exact rational/algebraic"
+      }
+    },
+    {
+      "name": "N1_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "1500625/1324801"
+      }
+    },
+    {
+      "name": "N2_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "381519375/84787264"
+      }
+    },
+    {
+      "name": "N3_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "88502495081/8692019361"
+      }
+    },
+    {
+      "name": "N5_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "1068513515625/37837641361"
+      }
+    },
+    {
+      "name": "N7_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "40132344599230625/725966149050081"
+      }
+    },
+    {
+      "name": "N9_gauge_derivative",
+      "passed": true,
+      "detail": {
+        "determinant": "15937643305625/174567702969"
+      }
+    },
+    {
+      "name": "N1_disk_normalization",
+      "passed": true,
+      "detail": {
+        "result": "d^2p/pi; delta(w) d^2w/pi has mass 1/pi"
+      }
+    },
+    {
+      "name": "N2_disk_total_mass",
+      "passed": true,
+      "detail": {
+        "series_term": "8*(n + 1)/((2*n + 1)**2*(2*n + 3)**2)",
+        "telescope": "-1/(2*n + 3)**2 + (2*n + 1)**(-2)",
+        "mass": "1"
+      }
+    },
+    {
+      "name": "N3_all_circle_total_mass",
+      "passed": true,
+      "detail": {
+        "density_d2p": "3*sqrt(3)/(pi^2*(1+|p|^2+|p|^4))",
+        "mass": "1"
+      }
+    },
+    {
+      "name": "N3_zero_source_tail",
+      "passed": true,
+      "detail": {
+        "tail_formula": "6*(-atan(sqrt(3)*(2*(1 - e)**2 + 1)/3) + pi/3)/pi",
+        "first_order": "2*sqrt(3)/pi"
+      }
+    },
+    {
+      "name": "odd_N_box_slice_vertex_check",
+      "passed": true,
+      "detail": {
+        "N": "1,3,...,31",
+        "scope": "finite check of the general elementary vertex proof; not an exhaustive complex-tuple enumeration"
+      }
+    },
+    {
+      "name": "N3_diagonal_completed_source",
+      "passed": true,
+      "detail": {
+        "source_a": "1/2",
+        "source_b": "1/2",
+        "source_c": "1/3",
+        "source_d": "1/4",
+        "exact_value": "6859/5832",
+        "scope": "factorized complete signed source; no numerical sector cancellation"
+      }
+    }
+  ],
+  "claims_not_tested": [
+    "No all-N proof by sampling",
+    "No super-Berezinian",
+    "No large-N normalized tail",
+    "No BGS or microscopic CUE law"
+  ]
+}

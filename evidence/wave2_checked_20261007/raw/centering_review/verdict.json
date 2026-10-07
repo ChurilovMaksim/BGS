@@ -1,0 +1,21 @@
+{
+  "primary_verdict": "proved as written",
+  "scope": "Odd N>=3, stable a.e. mixed labelled circle/open-disk strata; effective fixed-N completed signed-source cutoff and fixed source derivatives",
+  "source_identity": "Inherited accepted compact four-family projector/source theorem, not re-audited here",
+  "target_sha256": "e7ce0e1cfb780732481eb92d773339046c9ac481a29729f7904709e6cd62f205",
+  "packet_manifest_sha256": "22e8254203473334b8dec4ff7eb5c6a227435ecaaf51e7c734a30c6ce321dffc",
+  "decisive_defect": null,
+  "exact_controls_reproduced": 20,
+  "exact_controls_exit_code": 0,
+  "independent_implementation": false,
+  "independent_mathematical_audit": true,
+  "restrictions": [
+    "Original raw phase identity requires |a|,|b|<1; compact continuation uses |ab|<1",
+    "0<epsilon<=1/(N+3)",
+    "Cauchy source neighborhood remains in source domain",
+    "Fixed N, compact source set, fixed derivative order; no uniform normalized microscopic tail",
+    "N1/N2 non-centerable sectors remain in original compact representation"
+  ],
+  "remaining_gap": "N-uniform source-differentiated signed-coefficient/cancellation estimate including circle boundary strata at ab=exp(-2s/N), sufficient after N^-2 normalization",
+  "BGS": "open"
+}

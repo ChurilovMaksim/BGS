@@ -1,0 +1,2553 @@
+{
+  "schema": "bgs-claims-v1",
+  "updated": "2026-10-07",
+  "status_authority": "record/claim_ledger.md",
+  "id_policy": {
+    "format": "BGS-<AREA>-<NNN>",
+    "immutable_after_publication": true,
+    "areas": [
+      "BGS",
+      "FM",
+      "TRACE",
+      "LOOP",
+      "CAYLEY",
+      "RET",
+      "RES",
+      "FORMAL",
+      "INFO",
+      "CUE",
+      "FLOW"
+    ]
+  },
+  "claims": [
+    {
+      "id": "BGS-BGS-001",
+      "title": "Fixed-strength microscopic BGS universality for the maintained frozen map",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-002",
+        "BGS-FM-003",
+        "BGS-FM-004",
+        "BGS-LOOP-001",
+        "BGS-TRACE-004",
+        "BGS-TRACE-005"
+      ],
+      "external_dependencies": [
+        "EXT-BH-2026"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "No current theorem supplies the model-specific Heisenberg-scale mixed cancellation/joint-trace estimate for the correctly desymmetrized fixed propagator.",
+      "closure_condition": "Prove the model-specific signed weighted factorial joint-trace comparison for every fixed k and compact smooth Fourier weight, or an equivalent mixed-resolvent hierarchy, then verify the stated unfolding and symmetry-class hypotheses."
+    },
+    {
+      "id": "BGS-CAYLEY-001",
+      "title": "Pair-key and fourth-moment reduction",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-CERTIFICATE",
+      "source": "mathematics/fourth_moment_reduction.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/fourth_moment_factorization.json"
+      ],
+      "verifiers": [
+        "computations/verification/current_regression.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/PairKeyFourthMoment.lean",
+        "formalization/Bgs/PairKeySecondMoment.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Finite-field reduction; not a microscopic spectral theorem."
+    },
+    {
+      "id": "BGS-CAYLEY-002",
+      "title": "Cayley additive-energy reduction",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/cayley_additive_energy.md",
+      "dependencies": [
+        "BGS-CAYLEY-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/CayleyEnergy.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target."
+    },
+    {
+      "id": "BGS-CAYLEY-003",
+      "title": "Direct K^(8/3) Cayley energy bound in the explicit subgroup-size range",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "source": "mathematics/cayley_direct_energy.md",
+      "dependencies": [
+        "BGS-CAYLEY-002"
+      ],
+      "external_dependencies": [
+        "EXT-VM-2015"
+      ],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/cayley_energy_curve_regression.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Applies in the stated range; it does not reach the centered K^(2+o(1)) target."
+    },
+    {
+      "id": "BGS-CAYLEY-004",
+      "title": "Uniform subgroup-curve Cayley energy bound",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
+      "source": "mathematics/cayley_curve_uniform.md",
+      "dependencies": [
+        "BGS-CAYLEY-002"
+      ],
+      "external_dependencies": [
+        "EXT-CZ-2013"
+      ],
+      "evidence": [
+        "evidence/certificates/cayley_curve_uniform_20260907.json"
+      ],
+      "verifiers": [
+        "computations/verification/cayley_curve_uniform.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/CayleyCurveEnergy.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_core_part1.tex"
+      ],
+      "boundary": "Uniform K^(8/3)+K^4/p scale; does not prove centered quadratic pointwise energy."
+    },
+    {
+      "id": "BGS-CAYLEY-005",
+      "title": "Sharp centered pointwise Cayley energy target",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-CAYLEY-002",
+        "BGS-CAYLEY-003",
+        "BGS-CAYLEY-004"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Existing pointwise, support, and averaged estimates do not give E_+(A)=(K-1)^4/p+O(K^(2+o(1))) in the intended sparse/intermediate regime.",
+      "closure_condition": "Prove the centered K^(2+o(1)) estimate, or an equivalent common-split-divisor theorem strong enough to imply it."
+    },
+    {
+      "id": "BGS-FM-001",
+      "title": "Frozen-model classical symmetry theorem",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
+      "source": "mathematics/fixed_model_symmetry_theorem.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Excludes ordinary C1 centralizers/reversors and relevant affine C1 conjugacies in the stated small-coupling range; does not exclude N-dependent quantum symmetries or prove BGS."
+    },
+    {
+      "id": "BGS-FM-002",
+      "title": "Odd-Pell full-symbol Gaussian crossover",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
+      "source": "mathematics/fixed_model_pell_crossover.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Frozen epsilon_K=tau N_K lies outside the proved bounded crossover window. The general finite-symbol extension assumes mean zero; otherwise the scalar phase must be split off. The centered-model theorem and its range are unchanged.",
+      "proof_dependencies": [
+        "mathematics/smooth_recurrence_and_compensation.md",
+        "supplement/fixed_map/design-return/finite_symbol_normal_form.md",
+        "supplement/fixed_map/design-return/sparse_orbit_theorem.md"
+      ]
+    },
+    {
+      "id": "BGS-FM-003",
+      "title": "Fixed-map moment controls, falsifier, and perturbation transfer",
+      "state": "proved",
+      "ledger_status": "EXACT IDENTITIES / PROJECT ASYMPTOTIC CONSEQUENCES + FRESH REGRESSION",
+      "source": "mathematics/fixed_map_moment_control_and_transfer.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Low-order and one-orientation loop information does not identify CUE."
+    },
+    {
+      "id": "BGS-FM-004",
+      "title": "Three-orientation mixed-resolvent lower barrier",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL PROJECT THEOREM + FRESH FINITE-REGRESSION",
+      "source": "mathematics/three_orientation_resolvent_barrier.md",
+      "dependencies": [
+        "BGS-FM-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Normalized mixed-residual decay hypotheses remain unproved for the frozen propagator."
+    },
+    {
+      "id": "BGS-FM-005",
+      "title": "Actual frozen-kick Jacobi decomposition and exact low-rank obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE DIAGNOSTICS",
+      "source": "mathematics/frozen_kick_rank_boundary.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-EV-2015"
+      ],
+      "evidence": [
+        "evidence/20260923/frozen_kick_rank.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_kick_rank.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT."
+    },
+    {
+      "id": "BGS-FM-006",
+      "title": "Nonlinear bracket pressure growth and frozen-map linear-normalization boundary",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/nonlinear_bracket_pressure.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-PESIN-1977",
+        "EXT-RUELLE-1978",
+        "EXT-PP-1990"
+      ],
+      "evidence": [
+        "evidence/20260923/nonlinear_pressure_variance.json"
+      ],
+      "verifiers": [
+        "computations/verification/nonlinear_pressure_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Classical Anosov bracket norms for the exact nonlinear map and a perturbative coefficient; no effective remainder at fixed tau, nonlinear Riesz lower theorem, quantum joint traces, BGS law or external referee/priority determination."
+    },
+    {
+      "id": "BGS-FM-007",
+      "title": "Exact seven-cut frozen-generator reduction and microscopic trace-norm stability",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + RAW-WEYL INDEPENDENT MATRIX CHECK + EXACT FINITE REGRESSION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_seven_cut_reduction.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-005",
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260924/frozen_seven_cut.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_seven_cut.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Generator, not full propagator, splits into seven paths. Entire odd-sequence local-law equivalence; unconditional pair and Abel differences O(tau/log N). Does not establish any CUE limit or independent quantum sectors."
+    },
+    {
+      "id": "BGS-FM-008",
+      "title": "Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS",
+      "source": "mathematics/frozen_algebraic_spectral_simplicity.md",
+      "dependencies": [
+        "BGS-FM-005"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/frozen_total_minors.json",
+        "record/fm008_fresh_independent_review.md",
+        "record/fm008_fresh_audit_mapping.json",
+        "evidence/fm008_fresh_audit_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_total_minors.py",
+        "computations/verification/fm008_independent.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions.",
+      "review_scope": "Fresh independent full internal audit at existing odd N>=3,7∤N scope; primary LW statement/application checked. The simple-A/nonzero-entry r1 pair-commutant leaf uses no LW. Historical author review retained."
+    },
+    {
+      "id": "BGS-FM-009",
+      "title": "Exact commutator-cube obstruction to common antiunitary reversal",
+      "state": "proved",
+      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_common_antireversor_certificate.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/antireversor/certificate_result.json",
+        "evidence/20260924/antireversor/certificate_polynomial.csv",
+        "evidence/20260924/antireversor/certificate_polynomial_7.csv"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_antireversor.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "For odd N>=3 except N=7, no arbitrary common antiunitary reversing the pair (A_N,M_N). For U_N alone excludes only algebraic-entry antiunitaries; arbitrary finite-dimensional antiunitary reversors always exist."
+    },
+    {
+      "id": "BGS-FM-010",
+      "title": "Nonvanishing of every fixed-model power trace and classification of scalar returns",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXACT INTEGER REGRESSION + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_arithmetic_trace_rigidity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/20260924/frozen_arithmetic_traces.json",
+        "record/trace_variance_review.md",
+        "record/spectral_extension_promotion_mapping.json",
+        "evidence/spectral_extension_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_arithmetic_traces.py",
+        "computations/verification/spectral_extensions.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex",
+        "manuscript/unified_sections/spectral_extensions.tex"
+      ],
+      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact.",
+      "proof_dependencies": [
+        "mathematics/uniform_trace_square_transcendence.md"
+      ],
+      "companion_review_scope": "New one-step squared-trace companion has independent internal review; original all-power nonvanishing theorem retains its prior author/source review status."
+    },
+    {
+      "id": "BGS-FM-011",
+      "title": "Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR SELF-REVIEW",
+      "source": "mathematics/frozen_effective_gap_floor.md",
+      "dependencies": [
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-ROY-2016"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd 7-not-dividing-N only. Explicit enormous N-dependent lower gap from Roy Theorem 1.1 and discriminant height; vastly below 1/N, giving no local occupation, Abel, or CUE estimate."
+    },
+    {
+      "id": "BGS-FORMAL-001",
+      "title": "Active Lean algebraic/finite kernel graph",
+      "state": "proved",
+      "ledger_status": "CURRENT PINNED BUILD VERIFIED; FINITE/ALGEBRAIC SCOPE",
+      "source": "formalization/README.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/original-channel-gap/lean.log",
+        "evidence/executions/20261006/original-channel-gap/integration.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs.lean"
+      ],
+      "manuscript": [],
+      "boundary": "Pinned Lean 4.33.1 build of all 17 active modules completed successfully (20 Lake jobs), with printed axiom lists. native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
+    },
+    {
+      "id": "BGS-INFO-001",
+      "title": "Full vanishing-noise tomography transition",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Existing fixed-noise and binary-pair results do not characterize the full moment-class minimax transition when channel noise vanishes with copy budget.",
+      "closure_condition": "Determine matching minimax upper and lower transitions for the full moment class in the varying-noise regime."
+    },
+    {
+      "id": "BGS-LOOP-001",
+      "title": "Full mixed loop hierarchy implies target compact anchored correlations",
+      "state": "conditional",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-TRACE-002",
+        "BGS-FM-007"
+      ],
+      "external_dependencies": [
+        "EXT-BH-2026"
+      ],
+      "evidence": [
+        "supplement/fixed_map/README.md",
+        "supplement/fixed_map/resolvent-flow/loop_test_reductions.md",
+        "record/loop_test_reductions_review_20261006.md",
+        "evidence/loop_reductions_20261006/provenance.json"
+      ],
+      "verifiers": [
+        "computations/verification/loop_test_reductions.py",
+        "computations/maintenance/tests/test_loop_test_reductions.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/CueLoopKernels.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open."
+    },
+    {
+      "id": "BGS-RES-001",
+      "title": "Sharp Fourier-line resonance coercivity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH EXACT REGRESSION",
+      "source": "mathematics/fourier_line_resonance_coercivity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Closes Fourier-line classes in the stated coercive range; arbitrary two-dimensional analytic symbols remain open."
+    },
+    {
+      "id": "BGS-RES-002",
+      "title": "Local-jet resonance obstruction",
+      "state": "proved",
+      "ledger_status": "EXACT LOCAL CONSTRUCTION + FRESH SYMBOLIC REGRESSION",
+      "source": "mathematics/local_jet_resonance_obstruction.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "supplement/fixed_map/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Local polynomial counterexample; not a periodic torus counterexample."
+    },
+    {
+      "id": "BGS-RES-003",
+      "title": "All-members analytic resonance nondegeneracy",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-RES-001",
+        "BGS-RES-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Generic positivity and Fourier-line classes are closed, but the nonlinear analytic coboundary equation is unresolved for arbitrary nonconstant real-analytic observables.",
+      "closure_condition": "Prove impossibility of a nonconstant real-analytic solution to the stated nonlinear coboundary equation, or construct one."
+    },
+    {
+      "id": "BGS-RES-004",
+      "title": "Smooth finite-orbit Poisson-bracket lag independence",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INTERNAL AUDIT + EXACT FINITE REGRESSION",
+      "source": "mathematics/finite_orbit_resonance_rigidity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260922/finite_orbit_exact.json",
+        "evidence/20260922/finite_orbit_cpp.json"
+      ],
+      "verifiers": [
+        "computations/verification/finite_orbit_resonance.py",
+        "computations/verification/finite_orbit_degeneracy.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/finite_orbit_resonance.tex"
+      ],
+      "boundary": "A fixed finite number of signed A-frequency orbits, smooth observables and finite lag combinations. The analytic infinite-orbit and quantum BGS targets remain open."
+    },
+    {
+      "id": "BGS-RES-005",
+      "title": "Full-lag uniform classical Riesz gap for the frozen physical symbol under linear transport",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + SEPARATE INTERNAL REVIEW + EXACT SYMBOL CERTIFICATE",
+      "source": "mathematics/frozen_full_lag_resonance.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260923/frozen_full_lag_gap.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_full_lag_gap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "All positive lags and all linear-map translates; stable for arbitrary M1 perturbations of radius 1/100. Does not cover nonlinear transport, quantum Heisenberg traces, or BGS."
+    },
+    {
+      "id": "BGS-RES-006",
+      "title": "Exact adjoint-resolvent representation and pair-Abel equivalence",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N IDENTITY + PROJECT DERIVATION",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/gram_resolvent_normalization.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
+    },
+    {
+      "id": "BGS-RES-007",
+      "title": "Smooth scalar-resolvent transfer between the original and seven-cut full propagators",
+      "state": "proved",
+      "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR SELF-REVIEW",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [
+        "BGS-FM-007",
+        "BGS-RES-006"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "C-infinity local equivalence of scalar resolvents for the two full propagators; does not establish the value or existence of either limit, or a mixed hierarchy."
+    },
+    {
+      "id": "BGS-RET-001",
+      "title": "Harmonic return law for the actual kicked Pell propagator",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/pell_harmonic_returns.md",
+      "dependencies": [
+        "BGS-RET-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_harmonic_returns_20260910/manifest.json",
+        "evidence/certificates/pell_harmonic_returns_20260910/result.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_harmonic_returns.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/pell_harmonic_returns.tex"
+      ],
+      "boundary": "Fixed multiplicity and logarithmic return time; not Heisenberg-scale microscopic BGS."
+    },
+    {
+      "id": "BGS-RET-002",
+      "title": "Harmonic-scale global transition in the fixed Pell cat map",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/pell_harmonic_transition.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_harmonic_transition_20260909/manifest.json",
+        "evidence/certificates/pell_harmonic_transition_20260909/result.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_harmonic_transition.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/pell_harmonic_transition.tex"
+      ],
+      "boundary": "Global compressed-observable law; not local eigenphase statistics of a fixed propagator."
+    },
+    {
+      "id": "BGS-TRACE-001",
+      "title": "Partition-Mobius formula for distinct-index spectral sums",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Deterministic finite-N identity."
+    },
+    {
+      "id": "BGS-TRACE-002",
+      "title": "Exact Fourier trace representation of microscopic factorial statistics",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Compact Fourier support probes trace powers of order N."
+    },
+    {
+      "id": "BGS-TRACE-003",
+      "title": "Weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Triangle-inequality sufficiency only; averaging is before modulus. TRACE-010 excludes simultaneous unaveraged all-order absolute CUE premises under pair absolute comparison. The exact signed bridge is viable but its actual-map estimate is open."
+    },
+    {
+      "id": "BGS-TRACE-004",
+      "title": "Every-compact-bandwidth comparison extends to Schwartz correlation tests",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/bandlimited_correlation_extension.md",
+      "dependencies": [
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/audit_and_frontier.tex"
+      ],
+      "boundary": "Requires positive normalized spectral averages and a reference Schwartz limit; a single fixed bandwidth is insufficient."
+    },
+    {
+      "id": "BGS-TRACE-005",
+      "title": "Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "source": "mathematics/open_questions.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "No current theorem proves the signed weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N. The modulus is outside the complete sum; the simultaneous unaveraged all-order absolute strengthening is excluded by TRACE-010.",
+      "closure_condition": "For every fixed k and every compact smooth Fourier weight, prove the CUE/RMT-subtracted factorial joint-trace sum tends to zero, with the modulus outside the complete sum, after correct symmetry reduction and unfolding; or establish an equivalent mixed-resolvent hierarchy."
+    },
+    {
+      "id": "BGS-TRACE-006",
+      "title": "Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier",
+      "state": "proved",
+      "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL SELF-REVIEW",
+      "source": "mathematics/clustered_abel_window_boundary.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted."
+    },
+    {
+      "id": "BGS-TRACE-007",
+      "title": "Universal sharp Abel lower bound attained by the clock spectrum",
+      "state": "proved",
+      "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
+      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-CK-2006"
+      ],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved."
+    },
+    {
+      "id": "BGS-TRACE-008",
+      "title": "Two-clock falsifier for sufficiency of the CUE Gram second moment",
+      "state": "proved",
+      "ledger_status": "EXACT ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW",
+      "source": "mathematics/two_clock_gram_falsifier.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/gram_resolvent_normalization.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Abstract simple odd unitary spectra, weakly Haar with unit-interval occupancy at most three, all power traces nonzero, and Gram second moment tending to 4/3, yet pair Abel limit differs from CUE. Not the maintained frozen propagator."
+    },
+    {
+      "id": "BGS-CUE-001",
+      "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
+      "source": "mathematics/cue_singular_energy.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-BAB-2013"
+      ],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/cue_singular_energy.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Haar U(N) only: stable limit for inverse chord powers 3/2<p<3 and exact p=2 mean. Weak local limits do not control unregularized pair energy. No transfer to the maintained deterministic map, and novelty/priority is unestablished."
+    },
+    {
+      "id": "BGS-FLOW-001",
+      "title": "Uniform finite coboundary eigenphase-flow bound and sharpness sequence",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR SELF-REVIEW",
+      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/coboundary_flow.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Any finite unitary U and Hermitian G; optimal leading coefficient on an abstract clock sequence. Small-displacement limit requires unproved quantitative Birkhoff and nested-commutator hypotheses for the maintained map. Second-order normal form is earlier project work."
+    },
+    {
+      "id": "BGS-FLOW-002",
+      "title": "Coboundary kicks have sine curvature but no infinitesimal Dyson diffusion",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR SELF-REVIEW",
+      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/coboundary_flow.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Simple-spectrum phase curvature and Gaussian expansion at second order in kick time only; fourth-order centered covariance is treated in BGS-FLOW-003. Neither calculation proves CUE for the fixed map."
+    },
+    {
+      "id": "BGS-FM-012",
+      "title": "Exact all-time periodic-point grids and physical-symbol averages for the fixed linear cat",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + EXACT FINITE REGRESSION + AUTHOR-LEVEL AUDIT",
+      "source": "mathematics/frozen_periodic_point_annihilator.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260927/cue_upload_audit.json",
+        "evidence/20260927/cue_upload_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/cue_upload_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every positive classical linear-cat time. Exact unweighted Fourier averages only; no oscillatory Birkhoff weight, nonlinear fixed-point sum, quantum Heisenberg trace estimate or BGS limit. Prior Pell arithmetic credited; novelty unverified."
+    },
+    {
+      "id": "BGS-FLOW-003",
+      "title": "Quadratic coboundary covariance, ellipticity, corrected Dyson generator and transfer boundaries",
+      "state": "proved",
+      "ledger_status": "EXACT FINITE-N PROJECT DERIVATION + BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR SELF-REVIEW",
+      "source": "mathematics/quadratic_coboundary_noise.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260928/quadratic_coboundary_noise.json",
+        "evidence/20260928/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_coboundary_noise.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "External Gaussian noise at a fixed unitary. Pair-generator comparison needs microscopic occupancy. No uniform diffusion limit, deterministic noise removal, all-order trace estimate, or novelty claim; original coboundary only has a fixed-N fourth-order covariance statement."
+    },
+    {
+      "id": "BGS-FLOW-004",
+      "title": "Quantitative raw-noise/Dyson coupling and phase-averaged local transfer",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_coupling.md",
+      "dependencies": [
+        "BGS-FLOW-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments."
+    },
+    {
+      "id": "BGS-FLOW-005",
+      "title": "Haar-reversible drift, gradient identity and short-time path total variation",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_reversibility.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Path total variation compares raw and corrected processes with the same covariance, N>=4K and bounded initial traces. No path-TV comparison to Dyson, finite-N ergodicity, or raw Gibbs-density claim."
+    },
+    {
+      "id": "BGS-FLOW-006",
+      "title": "Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_trace_fluctuations.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-005"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "All fixed initial traces uniformly bounded; selected initial traces converge; fixed K and T only. Raw second-trace variance 6(1-exp(-t)), reversible 2(1-exp(-3t)); no growing-index/time or finite-N stationary claim."
+    },
+    {
+      "id": "BGS-FLOW-007",
+      "title": "Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/quadratic_noise_clock_limit.md",
+      "dependencies": [
+        "BGS-FLOW-004",
+        "BGS-FLOW-005"
+      ],
+      "external_dependencies": [
+        "EXT-FORRESTER-1996"
+      ],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json",
+        "evidence/20260929/quadratic_noise_clock.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py",
+        "computations/verification/quadratic_noise_clock.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd-dimensional clock start; phase-averaged weak local law at t->0, Nt->infinity. Dyson clock kernel is established prior work. No original-map universality or unbounded correlation-moment transfer."
+    },
+    {
+      "id": "BGS-FM-013",
+      "title": "Bounded fixed-time traces for the unchanged odd-dimensional frozen map",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT FRAME AND FINITE CONVENTION CONTROLS",
+      "source": "mathematics/fixed_time_wavepacket_trace_bound.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/quadratic_noise_dynamics.json",
+        "evidence/20260929/quadratic_noise_manifest.json",
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json",
+        "evidence/20261004/expansion_wavepacket_completion_checks.json",
+        "evidence/20261004/expansion_wavepacket_wolfram_completion.json",
+        "evidence/executions/20261004-completion.json"
+      ],
+      "verifiers": [
+        "computations/verification/quadratic_noise_dynamics.py",
+        "computations/verification/expansion_wavepacket_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "For every fixed nonzero integer j, Tr(U_N^j)=O_j(1) along sufficiently large odd N, by an exact Gaussian frame and finite-order packet construction. A leading-Gaussian limsup bound gives eventual first-two trace bounds below 4 and 9, closing K=20. No effective dimension threshold, j~N estimate, all-N trace convergence or complete action-phase trace formula. The sharper historical Faure adaptation remains conditional."
+    },
+    {
+      "id": "BGS-FLOW-008",
+      "title": "Exact fourth-order drift of Gaussian coboundary steps",
+      "source": "mathematics/coboundary_fourth_order_drift.md",
+      "dependencies": [
+        "BGS-FLOW-003"
+      ],
+      "boundary": "Fixed dimension first. Distinguishes the original step, frozen mean compensation and raw quadratic diffusion; no uniform joint epsilon/N limit or deterministic noise removal.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/coboundary_mobius_diffusion.json",
+        "evidence/20260929/coboundary_mobius_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_mobius_diffusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-009",
+      "title": "Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks",
+      "source": "mathematics/coboundary_mobius_diffusion.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004",
+        "BGS-FLOW-007",
+        "BGS-FLOW-008"
+      ],
+      "boundary": "Independent normalized GUE steps, odd clock start; epsilon -> 0 at fixed N precedes N -> infinity, t_N -> 0, N t_N -> infinity. Local stopped spectral quotient diffusion only; no original matrix-path convergence, explicit simultaneous epsilon_N rate, actual-map relaxation or deterministic BGS.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260929/coboundary_mobius_diffusion.json",
+        "evidence/20260929/coboundary_mobius_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_mobius_diffusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-010",
+      "title": "Dimension-quantitative simultaneous clock-to-Sine limit for uncentered Gaussian coboundary kicks",
+      "source": "mathematics/coboundary_joint_limit.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-004",
+        "BGS-FLOW-007",
+        "BGS-FLOW-008",
+        "BGS-FLOW-009"
+      ],
+      "boundary": "Independent normalized GUE kicks, odd clock start. Previous exponential example has smooth-test rate O_f(N^(-1/3)); the same bound also implies polynomial epsilon=N^(-a), a>20, at t=L_N/N with L_N->infinity and L_N=o(log N). Stronger polynomial rate in FLOW-011. No actual-map relaxation, original matrix-path convergence or deterministic noise removal.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/coboundary_joint_limit.json",
+        "evidence/20260930/coboundary_joint_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_joint_limit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-011",
+      "title": "Polynomial-step original Gaussian coboundary joint limit with dimension-uniform derivatives",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW ESTIMATES + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/coboundary_polynomial_limit.md",
+      "dependencies": [
+        "BGS-FLOW-003",
+        "BGS-FLOW-007",
+        "BGS-FLOW-009",
+        "BGS-FLOW-010"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261004/polynomial-coboundary/manifest.json",
+        "evidence/executions/20261004/polynomial-coboundary/checks.json",
+        "evidence/20261004/polynomial_coboundary_wolfram.json",
+        "evidence/executions/20261004-polynomial-integration.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_polynomial_limit.py",
+        "computations/wolfram/polynomial_coboundary_controls.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd clock start and independent normalized GUE kicks; phase-averaged weak local Sine_2 limit. Exactly 2 N^34 original steps at epsilon=N^(-26/3), t=N^(-2/3) give smooth Laplace error O_f(N^(-1/3)). New derivative estimates internally independently checked; inherited inputs not externally refereed. No practical complexity claim, priority, analytic Lean certificate, unbounded-correlation uniform integrability, actual-map relaxation or deterministic noise removal."
+    },
+    {
+      "id": "BGS-FM-014",
+      "title": "Uniform finite type and scalar cancellation for translated physical-symbol differences",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/frozen_phase_finite_type.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Actual q-circle separation at least 1/7. Order 14 for the plain scalar phase; order 15 uniform under linear additions. Local half-shift Morse-Bott controls only; no quantum FIO or operator norm gap."
+    },
+    {
+      "id": "BGS-FM-015",
+      "title": "Explicit classical commutator generating action at the maintained fixed coupling",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/frozen_commutator_action.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-014"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Local mixed-coordinate generating function, analytic flow time |t|<=1e-8 and finite-type time |t|<=1e-52; actual t=tau/(2pi) qualifies. C15 remainder is explicit. No global quantum phase, torus FIO or Planck-scale compression gap."
+    },
+    {
+      "id": "BGS-FUP-001",
+      "title": "Parity classification of Fourier FUP for ideal off-diagonal digit alphabets",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/offdiagonal_digit_fup.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-COHEN-2025"
+      ],
+      "evidence": [
+        "evidence/20260930/heisenberg_note_checks.json",
+        "evidence/20260930/heisenberg_note_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_note_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Ideal isotropic digit sets only: odd bases and M=2 pass; even M>=4 have exact norm 1 at every scale by a supported discrete unit vector. Binary norm sqrt(2/N). Prior Cohen criterion; no exponent extracted for base 7, nonlinear distortion theorem or actual-map coding."
+    },
+    {
+      "id": "BGS-TRACE-009",
+      "title": "Prime-resonant sector mass criterion, exact spectral comb and coherent-mode obstruction",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL REFERENCE LAW + FINITE CONTROLS",
+      "source": "mathematics/prime_resonant_sector.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-010",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [
+        "EXT-RAINS-2003"
+      ],
+      "evidence": [
+        "evidence/20260930/prime_resonant_checks.json",
+        "evidence/20260930/prime_resonant_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/prime_resonant_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Exact block orientation, prime order/parity and sparse-sector criterion; actual frozen-map trace mass o(1) is OPEN. Fejer baseline 1+o(1) is a sufficient unproved model hypothesis. Coherent-mode obstruction is conditional on an infinite prime subsequence. Scalar exclusions are prior FM-010; Rains describes only the Haar reference. No nonresonant/composite/all-order BGS closure or priority claim."
+    },
+    {
+      "id": "BGS-TRACE-010",
+      "title": "Universal deterministic absolute-norm obstruction against CUE and signed cancellation controls",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "source": "mathematics/signed_heisenberg_comparison.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-002",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/20260930/signed_heisenberg_checks.json",
+        "evidence/20260930/signed_heisenberg_manifest.json",
+        "evidence/20260930/signed_heisenberg_wolfram.json"
+      ],
+      "verifiers": [
+        "computations/verification/signed_heisenberg_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Unaveraged pair absolute comparison forces cubic absolute error >=(1/1024+o(1)) sqrt(N) on the specified box, and N^(k/2-1) at every fixed higher order. The signed CUE variance is a prior-law calibration in the stable band; the quadratic-phase trace table fails positivity at N=3 and is only an algebra control. Actual frozen-map signed comparison, BGS and external priority remain unproved."
+    },
+    {
+      "id": "BGS-TRACE-011",
+      "title": "Resonant cubic deletion by local density and a pair-compatible critical cluster obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "source": "mathematics/resonant_cubic_density_control.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-009",
+        "BGS-TRACE-010"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/20261001/resonant_density_checks.json",
+        "evidence/20261001/resonant_density_wolfram.json",
+        "evidence/executions/20261001-resonant-density.json"
+      ],
+      "verifiers": [
+        "computations/verification/resonant_density_audit.py",
+        "computations/verification/resonant_density_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Universal signed three-strip bound under explicit local density control. A deterministic simple spectrum can satisfy every signed CUE pair test, have vanishing resonant pair mass and bounded third occupancy moment, yet fail cubic comparison. This is not the frozen spectrum, a prime-order theorem, a weak-process counterexample or BGS; actual block mass and density tails remain open."
+    },
+    {
+      "id": "BGS-TRACE-012",
+      "title": "Folded-square signed resonant cubic control, explicit root allocation and factorial block-crowding obstruction",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "source": "mathematics/folded_quadratic_resonance_control.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-001",
+        "BGS-TRACE-009",
+        "BGS-TRACE-011"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/20261001/folded_quadratic_checks.json",
+        "evidence/20261001/folded_quadratic_wolfram.json",
+        "evidence/executions/20261001-folded-quadratic.json",
+        "evidence/20261004/folded_quadratic_manifest.json",
+        "evidence/20261004/folded_quadratic_checks_corrected.json",
+        "evidence/20261004/folded_quadratic_manifest_corrected.json",
+        "evidence/executions/20261004-folded-quadratic-format-correction.json"
+      ],
+      "verifiers": [
+        "computations/verification/folded_quadratic_audit.py",
+        "computations/verification/folded_quadratic_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Universal signed three-strip bound sqrt(E G_d), G_d=||P_d rho^2||_2^2, with exact factorial budget. Root allocation is explicit and cannot be inferred from block density. Balanced crowding at (N d^(r-1))^(1/r) obstructs factorial correlations on a shrinking-arc sublinear-d subsequence, not weak-process convergence alone. Actual-map E/G asymptotics and such an infinite subsequence are open; p=239 is finite coherence. No BGS solution, priority, external referee or Lean analytic certificate."
+    },
+    {
+      "id": "BGS-FM-016",
+      "title": "Egorov overlap rigidity and actual fixed-power separation from affine quantizations",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FLOW-003"
+      ],
+      "external_dependencies": [],
+      "source": "mathematics/egorov_overlap_rigidity.md",
+      "boundary": "Normalized overlap vanishes when fixed Egorov maps coincide on area zero; operator separation >=sqrt(2) if maps differ at one point. Fixed actual powers exclude affine conjugacy, giving separation after fixed smooth/analytic classical conjugators. Fixed-time trace vanishing and initial noise ellipticity already followed from FM-007; no arbitrary N-dependent basis change or Heisenberg cancellation.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "evidence": [
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json"
+      ],
+      "verifiers": [
+        "computations/verification/expansion_wavepacket_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-013",
+      "title": "Arithmetic coherent words despite uniform auxiliary quantum expansion and exact spectral exclusions",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-BG-2008",
+        "EXT-GAE-2007",
+        "EXT-POPESCU-2023",
+        "EXT-DIRICHLET-1837"
+      ],
+      "source": "mathematics/arithmetic_word_expansion_obstruction.md",
+      "boundary": "A different fixed primitive irreversible arithmetic map; odd parity sectors have uniform one-copy gap and exact extensive tensor memory, and an enlarged full-space channel has a uniform two-copy gap. Flat perturbations retain bounded fixed traces and coherent Heisenberg returns while removing exact spectral markers. Full-space channel mixes parity, and no translation enters the selected word. Not the frozen map, sector-preserving two-copy falsifier, BGS solution or priority claim.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "evidence": [
+        "evidence/20261004/expansion_wavepacket_checks.json",
+        "evidence/executions/20261004-expansion-wavepacket.json"
+      ],
+      "verifiers": [
+        "computations/verification/expansion_wavepacket_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-012",
+      "title": "Polynomial original-coboundary comparison preserving bounded-trace initial data",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT ALGEBRA AND FINITE CONTROLS",
+      "source": "mathematics/coboundary_general_start.md",
+      "dependencies": [
+        "BGS-FLOW-009",
+        "BGS-FLOW-010",
+        "BGS-FLOW-011",
+        "BGS-FM-013"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261004/general-start/manifest.json",
+        "evidence/executions/20261004/general-start/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_general_start.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd N, independent normalized GUE, bounded first two unnormalized starting traces. Reference Dyson starts at exactly Pi(A_N), not a clock. Initial transient costs N^9 epsilon^2; original-chain comparison is O_f,K(N^(-1/3)) at exactly 2N^34 steps. Applies eventually to actual map by FM-013, with ineffective startup threshold. Comparison alone does not identify the reference law; separate FLOW-014 gives Sine_2 at a slower logarithmic time. No faster actual-start relaxation, deterministic noise removal, analytic Lean certificate or priority claim."
+    },
+    {
+      "id": "BGS-FLOW-013",
+      "title": "Prescribed-time empty Dyson limits from globally uniform bounded-trace simple spectra",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/dyson_relaxation_obstruction.md",
+      "dependencies": [
+        "BGS-FLOW-012"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/executions/20261004/general-start/manifest.json",
+        "evidence/executions/20261004/general-start/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_general_start.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "For every prescribed t_N->0 there exists a schedule-dependent initial family. Unit finite mean intensity is not uniformly integrable. Every fixed trace bounded, every positive power trace nonzero. Original chain empty when Nt_N->infinity and epsilon=N^(-10). Does not refute BGS for the actual map, a family-dependent slower schedule or natural quantum chaos; no novelty claim."
+    },
+    {
+      "id": "BGS-FM-017",
+      "title": "Logarithmic initial Poisson regularity, local heat-phase saddles and unweighted vertical tails",
+      "state": "proved",
+      "ledger_status": "PROJECT COROLLARY OF FM-007 + INDEPENDENT INTERNAL CHECK OF NEW ESTIMATES + FINITE CONTROLS",
+      "source": "mathematics/frozen_mesoscopic_regularity.md",
+      "dependencies": [
+        "BGS-FM-007",
+        "BGS-FM-013",
+        "BGS-FLOW-009",
+        "BGS-FLOW-012",
+        "BGS-FLOW-013"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261004/general-start/manifest.json",
+        "evidence/executions/20261004/general-start/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/coboundary_general_start.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "FM-007 owns the existing logarithmic-time trace input. Initial Poisson density uniform for eta>=4 log J/J, J=floor(c log N), including exact Mobius centering. Every fixed angular derivative controlled at J^(-1/2). At t=sqrt(4 log J/J), two local phase stationary points and Hessians controlled; unweighted vertical phase tails suppressed as exp(-c N t); chain-to-Dyson comparison vanishes. This input claim alone has no global contour/Fredholm conclusion; separate FLOW-014 supplies that argument. No deterministic initial local law, BGS or priority claim."
+    },
+    {
+      "id": "BGS-FLOW-014",
+      "title": "Gap-independent circular Dyson relaxation and original-chain Sine_2 from the actual frozen start",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL FINITE-KERNEL INPUT + INDEPENDENT INTERNAL CHECK OF NEW ANALYTIC IMPLICATIONS + FINITE IDENTITY CONTROLS",
+      "source": "mathematics/circular_dyson_actual_start.md",
+      "dependencies": [
+        "BGS-FM-017",
+        "BGS-FLOW-012"
+      ],
+      "external_dependencies": [
+        "EXT-KLZF-2022"
+      ],
+      "evidence": [
+        "evidence/executions/20261004/circular-dyson/manifest.json",
+        "evidence/executions/20261004/circular-dyson/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/circular_dyson_relaxation.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Odd dimensions and stated strip/potential hypotheses, no minimum initial gap. Full Brownian fixed-origin Laplace law uniformly Sine_2; traceless equality only for uniform-origin observable. Repeated initial levels handled by continuity. Actual-map original uncentered GUE-coboundary chain at t=8g, g=4logJ/J, epsilon=N^-9/sqrt(t), floor(2t^3N^36) steps has smooth Laplace error O_f(sqrt(g)); ineffective threshold. Prior finite kernel imported, asymptotics project-proved and internally checked. No faster actual-start relaxation, deterministic noise removal, chain unbounded-correlation UI, full BGS, external referee or priority claim. All-order extension at a different superpolynomial step sequence is supplied separately by FLOW-016/017."
+    },
+    {
+      "id": "BGS-FLOW-015",
+      "title": "Exact microscopic noise defect, flat heat jets and scoped stationarity, inversion and entropy boundaries",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + STANDARD EXTERNAL INPUTS + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT AND FINITE CONTROLS",
+      "source": "mathematics/microscopic_noise_removal.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-FLOW-007",
+        "BGS-FLOW-014",
+        "BGS-FM-013"
+      ],
+      "external_dependencies": [
+        "EXT-LEMOINE-2025",
+        "EXT-EHL-2018"
+      ],
+      "evidence": [
+        "evidence/executions/20261005/noise-removal/manifest.json",
+        "evidence/executions/20261005/noise-removal/checks.json"
+      ],
+      "verifiers": [
+        "computations/verification/microscopic_noise_removal.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Actual weak local Sine_2 equivalent to signed integrated noise-defect vanishing given prior FLOW-014; this vanishing remains OPEN. Narrow separated-window tests have all initial heat derivatives zero but perturbed-clock positive limiting defect, with every positive trace nonzero. Bounded actual starting traces exclude unscaled full-class stationarity, not normalized microscopic loops. Standard character modes obstruct uniform global heat inversion, not inversion for one local test. Every raw finite periodic deterministic spectral field has infinite Poisson specific entropy, but weak limits may have finite entropy. No unbounded factorial-moment transfer, actual Heisenberg cancellation, full BGS, external referee, analytic Lean or priority certification."
+    },
+    {
+      "id": "BGS-FLOW-016",
+      "title": "Local moment transport and all-order projected diffusion comparison at t^2 log N -> 0",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INHERITED EXTERNAL FINITE-KERNEL INPUT + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/local_moment_transport.md",
+      "dependencies": [
+        "BGS-FLOW-004",
+        "BGS-FLOW-009",
+        "BGS-FLOW-014"
+      ],
+      "external_dependencies": [
+        "EXT-KLZF-2022"
+      ],
+      "boundary": "Period-N counting fields with multiplicities and all fixed reference unit-window moments: bounded pth displacement cost controls count moments 1<s<p+1; vanishing costs transfer fixed factorial orders k<p+1. All fixed costs give all orders; a collapsed clock refutes k>p+1 from one cost, no critical-endpoint claim. Fixed high Schatten moments give projected-to-Dyson costs O_r((t+t^2 log N)^r)+O_r(N^-2r-4), with reference hypotheses and bounded initial traces. Includes actual logarithmic time and repeated starts by fixed-N majorants; no maximum displacement, deterministic noise removal, growing order, full BGS or priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/all-order/manifest.json",
+        "evidence/executions/20261005/all-order/checks.json",
+        "record/all_order_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/local_moment_transport.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-017",
+      "title": "All fixed factorial orders and one-chain L2 signed CUE comparison for the actual-start original coboundary chain",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXTERNAL SPATIAL ERGODICITY + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/coboundary_all_order_limit.md",
+      "dependencies": [
+        "BGS-FLOW-016",
+        "BGS-FLOW-010",
+        "BGS-FLOW-011",
+        "BGS-FLOW-012",
+        "BGS-FLOW-014",
+        "BGS-TRACE-001",
+        "BGS-FM-013"
+      ],
+      "external_dependencies": [
+        "EXT-SOSH-2000"
+      ],
+      "boundary": "Original uncentered normalized-GUE chain, exact initial A_N, bounded p1,p2, 1/N<=t->0, t^2 log N->0, reference FLOW-014 from Pi A_N, and N^b epsilon->0 for every fixed b. All fixed compact-continuous/Schwartz factorial orders and bounded-window moments; conditional uniform-origin statistics and complete signed Fourier/CUE counterterm sums converge in L2. Actual t=8g, epsilon=N^-loglogN, floor(2t N^(4loglogN)) steps. C16-C17 exactly reduce deterministic signed target to signed chain-defect vanishing; that actual estimate is OPEN. No all-order polynomial schedule, growing-order uniformity, effective threshold, full-sequence almost sure, deterministic BGS, external refereeing, analytic Lean or priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/all-order/manifest.json",
+        "evidence/executions/20261005/all-order/checks.json",
+        "record/all_order_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/local_moment_transport.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-018",
+      "title": "Exact clock covariance, sharp signed pair relaxation and all-order critical noise law",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + PRIOR CLOCK KERNEL + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/clock_structure_and_noise_scale.md",
+      "dependencies": [
+        "BGS-FLOW-007",
+        "BGS-FLOW-015",
+        "BGS-FLOW-016",
+        "BGS-FLOW-017",
+        "BGS-TRACE-007"
+      ],
+      "external_dependencies": [
+        "EXT-FORRESTER-1996",
+        "EXT-KT-2009"
+      ],
+      "boundary": "Odd-N Brownian clock start. Exact Fourier second moment, equal positive/negative mesh masses, uniform signed pair CUE bound 8/(Nt)^2 for Nt>=1; sharp joint leading measure delta_1+delta_-1-2delta_0 when Nt->infty,t->0. All fixed critical factorial/moment limits, synchronous ordered-lift matching robustness and small-noise clock preservation iff Nt->0. Original uncentered-chain annealed critical corollary retains 1/N<=t->0,t^2 log N->0 and one superpolynomial step sequence; no critical quenched or sub-1/N chain theorem. Exact noisy-clock Abel sign and coefficient, no time monotonicity. No actual frozen-map clock matching, actual signed-defect estimate, full BGS or priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/critical-noise/manifest.json",
+        "evidence/executions/20261005/critical-noise/checks.json",
+        "record/critical_noise_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/clock_structure_and_heat_projection.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-019",
+      "title": "Actual fixed-degree neutral projections: vanishing heat defects and projected compact CUE rate",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + PRIOR STABLE HAAR TRACE MOMENTS + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
+      "source": "mathematics/fixed_degree_heat_projection.md",
+      "dependencies": [
+        "BGS-FLOW-015",
+        "BGS-FM-013",
+        "BGS-FLOW-017"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "boundary": "Every fixed neutral positive/negative weighted trace degree Q, N>=max(3,2Q), bounded starting p_1,...,p_Q. Haar projection commutes with heat and has defect <=C_Q,K t for smooth Haar-L2-bounded tests. Finite CUE covariance gives variance <=C_F/N for compact factorial/Laplace origin averages; their actual-map fixed-Q projections agree with CUE at O_Q,F(N^-1/2), uniformly at all heat times. Schwartz variants qualitative only. A particular positive local Laplace complement has Haar norm O(N^-1/2) but nonzero clock evaluation, hence point amplification >=c sqrt(N); not a heat inverse bound. FLOW-020 separately controls a logarithmic degree; actual unprojected complementary point evaluation remains OPEN. No deterministic BGS, external referee, analytic Lean or world-priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/critical-noise/manifest.json",
+        "evidence/executions/20261005/critical-noise/checks.json",
+        "record/critical_noise_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/clock_structure_and_heat_projection.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-020",
+      "title": "Growing neutral degree, actual logarithmic projection rate and fixed local pair heat-inverse obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + PRIOR STABLE HAAR MOMENTS AND MEHLER IDENTITY + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT FINITE CONTROLS",
+      "source": "mathematics/growing_degree_trace_projection.md",
+      "dependencies": [
+        "BGS-FLOW-019",
+        "BGS-FLOW-015",
+        "BGS-FM-013",
+        "BGS-FM-007"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001",
+        "EXT-GHANMI-2017"
+      ],
+      "boundary": "Exact neutral Wick basis and evaluation kernel, stable 2Q<=N. G8 newly derives |p_j(U_N)|<=C exp(alpha |j|) for the unchanged odd-N family by fixed-order packet uniformity; no effective constants. Actual Q=floor(gamma log N) compact local projections have O(N^-1/4) CUE error uniformly at all heat times; no quantitative Schwartz rate. A separate uniform trace K through Q gives a log-squared range, not established for the actual map. Universal evaluation cost >=exp(c sqrt(Q)) and exact blindness of every sublinear projection to one fixed Schwartz pair test. Top-degree decay interval q+-q(q-1)/N, with attained endpoints, yields inverse cost >=exp[a(1-b)Nt] for that particular local test in Haar L2 only. Actual J_N,w(U_N), complete complementary evaluation, Heisenberg signed cancellation and deterministic BGS remain OPEN. No external referee, analytic Lean or world-priority certificate.",
+      "evidence": [
+        "evidence/executions/20261005/degree-growth/manifest.json",
+        "evidence/executions/20261005/degree-growth/checks.json",
+        "record/growing_degree_review_20261005.md"
+      ],
+      "verifiers": [
+        "computations/verification/growing_degree_trace_projection.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FLOW-021",
+      "title": "Exact stable Heisenberg pair heat compensation and actual-start superpolynomial smoothed form factor",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + PRIOR STABLE HAAR INPUT + INHERITED WICK GENERATOR AND ACTUAL TRACE BOUND + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT FINITE AND WOLFRAM CONTROLS",
+      "source": "mathematics/heisenberg_pair_heat_formula.md",
+      "dependencies": [
+        "BGS-FLOW-020"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "boundary": "For every unitary A and 2m<=N, exact heat evolution of |p_m|^2-m through determinant-ratio hook coefficients with every Wick contraction. Exact Haar-L2 norm/autocorrelation and triangular local-band spectral measure, not point evaluation. Short traces |p_j(A)|<=Nd through J give an explicit stable-band point heat bound under the stated Delta<=a(1-b)t/16 hypothesis. Actual U_N satisfies it eventually at t_N=max(32,8/a) log J_N/J_N with J_N=floor[log N/(2(alpha+1))], yielding superpolynomial accuracy of smoothed form-factor means at each m in aN<=m<=bN<N/2. No concentration, growing bandwidth, effective startup, original-chain schedule at this new time, or unperturbed cancellation is inferred. Simple globally uniform spectra with identical first Q_N=o(N) traces and common exponential bounds have separated original pair values and signed defects. Actual J_N,w(U_N), all other bands/orders, TRACE-005 and deterministic BGS remain OPEN. No world priority, external referee or analytic Lean certificate.",
+      "evidence": [
+        "evidence/executions/20261005/pair-heat/manifest.json",
+        "evidence/executions/20261005/pair-heat/checks.json",
+        "evidence/20261005/heisenberg_pair_heat_wolfram.json",
+        "record/heisenberg_pair_review_20261005.md",
+        "evidence/executions/20261005-pair-heat-integration.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_pair_heat_formula.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ]
+    },
+    {
+      "id": "BGS-FM-018",
+      "title": "Actual Weyl-frequency coercivity, regularized singular gap and exact common-noise two-copy invariant space",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + CHECKED EXTERNAL CLASSICAL MIXING + INHERITED FM-001/FM-006 + INDEPENDENT INTERNAL REVIEW + EXACT FINITE AND WOLFRAM CONTROLS",
+      "source": "mathematics/frozen_operator_transfer_coercivity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-006"
+      ],
+      "external_dependencies": [
+        "EXT-PP-1990"
+      ],
+      "evidence": [
+        "record/frozen_operator_transfer_review_20261006.md",
+        "evidence/20261006/frozen_operator_transfer_contract.json",
+        "evidence/executions/20261006/operator-transfer/manifest.json",
+        "evidence/executions/20261006/operator-transfer/checks.json",
+        "evidence/20261006/frozen_operator_transfer_wolfram.json"
+      ],
+      "verifiers": [
+        "computations/verification/frozen_operator_transfer_coercivity.py",
+        "computations/verification/frozen_operator_transfer_checks.wl"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Unchanged actual odd-N map and fixed tau=10^-80. Whole growing Weyl-band twisted averages at T=floor(c log N), R=floor(N^gamma), complete traceless adjoint arcs, commutant frequency energy >=6R^2 and all-u singular gap min(1/(128T^2),(1-exp(-16uR^2))/8); constants/startup noneffective. Exact two-pair Gaussian realization gives massive quadratic block at microscopic source for u=N^-alpha, 0<alpha<1+2gamma. Fresh-step channel trace is not fixed-ensemble spectral ramp; equal mean adjoint channels need not determine nonlinear functionals or fourth spectral moments. Exact common-noise higher-copy channel retains noncommuting pair factors; at k=2 its entire peripheral sector is precisely identity/swap for each finite odd N>=3 and u>0, including composite N. No uniform reduced two-copy rate or full nonlinear integral control. Original signed Heisenberg statistic, higher factorial cancellation, deterministic noise removal, TRACE-005 and BGS remain OPEN. No world priority, external referee or analytic Lean certificate."
+    },
+    {
+      "id": "BGS-FM-019",
+      "title": "Uniform two-copy collective diffusion gap and refined common-noise Heisenberg mass",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INHERITED WEYL/GAUSSIAN AND ONE-STEP EGOROV INPUT + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; FLOATING DIAGNOSTICS SEPARATE",
+      "source": "mathematics/collective_diffusion_gap.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/collective_diffusion_review_20261006.md",
+        "evidence/20261006/collective_diffusion_contract_v2.json",
+        "evidence/executions/20261006/collective-diffusion-exact-v2/manifest.json",
+        "evidence/executions/20261006/collective-diffusion-exact-v2/checks.json",
+        "evidence/20261006/collective_diffusion_spectrum_contract.json",
+        "evidence/executions/20261006/collective-diffusion-spectrum/manifest.json",
+        "evidence/executions/20261006/collective-diffusion-spectrum/values.json",
+        "evidence/executions/20261006-collective-diffusion-integration.json"
+      ],
+      "verifiers": [
+        "computations/verification/collective_diffusion_gap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every odd N>=3: exact total-Weyl blocks and a self-contained all-parity annular proof give universal L_N>=c0 Q_N on the whole two-copy identity/swap complement. Exact original ordered two-pair bound uses q_N=16 sin^2(pi/(2N)) sin^2(pi/N) and kernel angle N^-1/2; the stronger m=1 Heisenberg rate left open at this checkpoint is subsequently proved in BGS-FM-020. Explicit refined law shares all 4m Gaussian parameters across copies; its one-copy channel is exactly unchanged, while its higher-copy law changes. At m=N^3,u=N^-alpha,0<alpha<1 contraction Trotter error <=64 pi u^2 N^3/m gives reduced microscopic singular mass >=c0u/4 eventually, for any U including actual U_N. Fixed smooth observables retain actual G in normalized HS mean square <=C_a(u+N^-4), with no long-product Egorov, operator-norm or microscopic spectral continuity. Gap proof imports no external theorem; actual-map retention inherits FM018 O8. No full nonlinear functional, higher-copy quantitative control, original signed cancellation, deterministic BGS, world priority, external referee or analytic Lean certification."
+    },
+    {
+      "id": "BGS-FM-020",
+      "title": "Original ordered two-pair Heisenberg-dominating singular mass",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INHERITED EXACT WEYL BLOCKS/KERNEL ANGLE + INDEPENDENT INTERNAL REVIEW; FINITE DIAGNOSTICS SEPARATE",
+      "source": "mathematics/original_channel_gap.md",
+      "dependencies": [
+        "BGS-FM-019"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/original_channel_gap_review_20261006.md",
+        "evidence/20261006/original_channel_gap_contract.json",
+        "evidence/executions/20261006/original-channel-gap/checks.json",
+        "evidence/executions/20261006/original-channel-gap/manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/original_channel_gap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/fixed_map_frontier.tex"
+      ],
+      "boundary": "Every odd N>=3,u>=0 and every unitary U: original m=1 common-noise two-copy singular gap at least (1-exp(-2u lambda_N))/50, lambda_N=(1024(1+log N))^-2; displayed lower bound dominates N^-1 at u=N^-alpha,0<alpha<1. Low-positive-eigenvalue count and partial-Fourier projection angle use FM019 D5-D8,D17-D19, not its summed-generator gap. No regulator change, actual-gap upper bound, higher-copy quantitative control, quenched-power comparison, nonlinear determinant bound, signed noise removal or deterministic BGS."
+    },
+    {
+      "id": "BGS-TRACE-014",
+      "title": "All-order Haar moment-channel proximity with a rigid isospectral clock spectrum",
+      "dependencies": [],
+      "external_dependencies": [],
+      "source": "mathematics/isospectral_clock_moment_control.md",
+      "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
+      "evidence": [
+        "evidence/executions/20261006/clock-control/exact_checks.json",
+        "evidence/executions/20261006/clock-control/exact_checks_optimized.json",
+        "evidence/executions/20261006/clock-control/mutation_checks.json",
+        "record/clock_control_review_20261006.md"
+      ],
+      "verifiers": [
+        "computations/verification/isospectral_clock_control.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/isospectral_clock_control.tex"
+      ]
+    },
+    {
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/path_theorems_review_20261006.md",
+        "record/marked_path_independent_review_20261006.md",
+        "evidence/executions/20261006/path-theorems/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/actual_path_theorems.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_path_theorems.tex"
+      ],
+      "id": "BGS-FM-021",
+      "title": "Fixed-map position-chain singular mixing, cyclic ramp and marked three-link cancellation",
+      "source": "mathematics/position_chain_mixing.md",
+      "boundary": "Unchanged fixed tau=10^-80, all sufficiently large odd N: limsup ||P-J||<=10^-64 and ||P^L-J||<=2^-L simultaneously for every integer L>=0. Cyclic-identical path contribution D_m/m tends to one uniformly on positive compact Heisenberg bands. The explicitly defined distinct-port marked three-link expression is exponentially suppressed including zero link lengths. This is not a once-counted unmarked trace-pair theorem: representation multiplicities vary and canonical masks can destroy free-endpoint cancellation. Startup not effective; general signed noncyclic remainder, all higher factorial orders, TRACE-005 and BGS remain open. No world priority or external referee certificate.",
+      "proof_dependencies": [
+        "mathematics/fixed_map_path_model.md",
+        "mathematics/four_branch_parametrix.md"
+      ]
+    },
+    {
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/path_theorems_review_20261006.md",
+        "record/marked_path_independent_review_20261006.md",
+        "evidence/executions/20261006/path-theorems/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/actual_path_theorems.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_path_theorems.tex"
+      ],
+      "id": "BGS-FM-022",
+      "title": "Fixed-map reversed-coordinate-path norm decay and reverse-cyclic suppression",
+      "source": "mathematics/reversed_path_decay.md",
+      "boundary": "Unchanged fixed tau=10^-80 through odd N: Q_xy=U_xy conjugate(U_yx) has operator norm tending to zero. The exact ordered reverse-cyclic family, excluding cyclic pairs, is negligible after division by m uniformly on every fixed positive Heisenberg band. Direct four-branch finite-difference parametrix and alias-safe discrete TT* are essential; no rate or effective startup is supplied. Other noncyclic pairs and higher factorial comparison remain open. No deterministic BGS, world priority, external referee or analytic formalization claim.",
+      "proof_dependencies": [
+        "mathematics/fixed_map_path_model.md",
+        "mathematics/four_branch_parametrix.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-015",
+      "title": "Once-counted distinct-port three-block signed Heisenberg cancellation",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "source": "mathematics/three_block_unmarking.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/three_block_independent_review_20261006.md",
+        "evidence/executions/20261006/three-block/receipt.json",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/three_block_unmarking.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/three_block_unmarking.tex"
+      ],
+      "boundary": "Unchanged fixed tau=10^-80, odd N; once-counted ordered coordinate-word pairs admitting distinct-port nonempty three-block reversal, all link lengths, smooth compact positive Heisenberg band. Normalized error O_w((log N)^5/N) plus superpolynomial and exponential terms. Repeated ports, general and growing reconnection complexity, plateau restoration and higher factorial comparison remain open. TRACE-005 and BGS-BGS-001 remain OPEN. No effective startup, global priority, external referee or analytic formalization claim. Combinatorial proof requires only unitarity, flat entries and P mixing; actual-model input is FM-021, and these hypotheses are not a spectral-universality criterion."
+    },
+    {
+      "id": "BGS-FM-023",
+      "title": "Quantitative exclusion of bounded-power arithmetic translation algebras",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + PORTABLE EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
+      "source": "mathematics/arithmetic_translation_exclusion.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-016",
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/arithmetic_translation_review_20261006.md",
+        "evidence/executions/20261006/divisor-exclusion/receipt.json",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/arithmetic_translation_exclusion.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/arithmetic_translation_exclusion.tex"
+      ],
+      "boundary": "Unchanged odd-dimensional U_N and literal fixed tau=10^-80. For every odd d>=3 dividing N, compression of Ad(U_N) to the d^2-1 nonzero d-grid Weyl modes is <=min(1,C_tau(d^262/N)^(1/129)), with C_tau independent of N,d and labels. Every fixed delta<1/262 gives decay for d<=N^delta; d<=N^(1/524) gives N^(-1/258). Uniform residual tends to sqrt(2); fixed d is a corollary. Projection interpretation requires a nonzero centered part and membership in the indicated algebra. No exponent optimality, endpoint decay, unrestricted growing divisor, arbitrary projector/full commutant classification, practical startup, shrinking-tau uniformity or microscopic BGS claim."
+    },
+    {
+      "id": "BGS-TRACE-016",
+      "title": "Once-counted reduced distinct-port four-block signed cancellation",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + COMPUTER-ASSISTED CLASSIFICATION INPUT; ANALYTIC CHAIN UNFORMALIZED",
+      "source": "mathematics/four_block_unmarking.md",
+      "dependencies": [
+        "BGS-FM-021",
+        "BGS-FORMAL-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "record/four_block_independent_review_20261006.md",
+        "record/four_cut_rank_two_review_20261006.md",
+        "record/four_cut_lean_review_20261006.md",
+        "evidence/executions/20261006/four-block/receipt.json",
+        "evidence/executions/20261006/four-cut-kernel/",
+        "record/next_proofs_consolidation_review_20261006.md",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/four_block_unmarking.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/four_block_unmarking.tex"
+      ],
+      "boundary": "Unitary family with q<=C/N and eventual all-length ||P^L-J||<=2^-L; actual fixed tau=10^-80 through FM-021. Once-counted ordered pairs admitting nonempty reduced four-block reversal with pairwise distinct initial values, all link lengths, smooth compact positive Heisenberg bands. Error O_w((log N)^10/N) plus superpolynomial/exponential terms. Universal rank-two classification uses an audited mathematical reduction and a bounded kernel; FORMAL-002 certifies only that kernel, not compression or this analytic theorem. Repeated ports, general or growing reconnections, overlaps between families and full signed statistics remain open. Coarse hypotheses are not a universality criterion by the rounding obstruction. No effective startup, world priority or external referee claim.",
+      "proof_dependencies": [
+        "mathematics/four_cut_rank_two_classification.md"
+      ]
+    },
+    {
+      "id": "BGS-FORMAL-002",
+      "title": "Bounded rank-two four-cut executable certificate",
+      "state": "proved",
+      "ledger_status": "FINITE-CERTIFICATE",
+      "source": "mathematics/four_cut_rank_two_classification.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "record/four_cut_rank_two_review_20261006.md",
+        "record/four_cut_lean_review_20261006.md",
+        "evidence/executions/20261006/four-cut-kernel/lean_manifest.json",
+        "evidence/executions/20261006/next-proof-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/four_cut_rank_two_kernel.py",
+        "computations/cpp/four_cut_rank_two_kernel.cpp",
+        "computations/verification/run_four_cut_kernel.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/FourCutKernel.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/four_cut_rank_two_kernel.tex"
+      ],
+      "boundary": "Exact executable predicates only: pairs 5..12, 3858 configurations and 560 directed local matches; oriented triples 5..10, 650 configurations and no matches; m=4 exclusions. Full ranges use native_decide with its generated native-evaluation axioms; m=4 uses ordinary decide with propext. Abstract compression/lifting, enumeration-to-abstract-word correspondence, analytic cancellation and full unmarking are not formalized. No deterministic BGS conclusion."
+    },
+    {
+      "id": "BGS-TRACE-017",
+      "title": "Actual fixed-order WKB instantiation of the complete factorial trace reduction",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; ANALYTIC CHAIN UNFORMALIZED",
+      "source": "mathematics/factorial_wkb_reduction.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-001",
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/trace_to_local_statistics_bridge.md",
+        "mathematics/heisenberg_trace_support.md"
+      ],
+      "evidence": [
+        "record/heisenberg_wkb_review_scope.md",
+        "record/heisenberg_wkb_review_provenance.json",
+        "evidence/executions/20261006/heisenberg-wkb/receipt.json",
+        "record/heisenberg_wkb_integration_delta.json",
+        "evidence/executions/20261006/heisenberg-wkb-integration/receipt.json",
+        "record/heisenberg_wkb_prior_attribution.json",
+        "record/global_rotated_box_review_scope.md",
+        "record/global_rotated_box_integration_delta.json"
+      ],
+      "verifiers": [
+        "computations/verification/heisenberg_wkb/check_independent.py",
+        "computations/verification/heisenberg_wkb/check_raw_gauss.py",
+        "computations/verification/heisenberg_wkb_controls.py",
+        "computations/verification/global_rotated_box_trace.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/heisenberg_wkb_reductions.tex",
+        "manuscript/unified_sections/global_rotated_box_trace.tex"
+      ],
+      "boundary": "For each fixed k>=2 and compact smooth Fourier weight choose fixed J>=k; full partition transform changes by O(N^(k-J-1/2)). Laurent and adjoint signed tables are distinct. No positive spectral process for nonunitary V; no growing k,J,bandwidth or effective startup. Ensemble comparison is equivalent but remains open. Exact reciprocity and local resummation are separate supporting results. The separately reviewed global rotated-box theorem controls a finite-band contour representation and summed tail, conservatively m<=2N; signed box evaluation, entropy-compatible local remainders and unrestricted bands remain open. TRACE-005 and BGS-BGS-001 remain OPEN.",
+      "supporting_results": [
+        "mathematics/exact_gaussian_reciprocity.md",
+        "mathematics/uniform_cluster_lemma.md",
+        "mathematics/rotated_local_first_loop.md",
+        "mathematics/polar_wkb_quantization_stability.md",
+        "mathematics/global_rotated_box_trace.md",
+        "mathematics/paired_character_identity.md"
+      ]
+    },
+    {
+      "id": "BGS-FM-024",
+      "title": "Actual scalar joint commutant in every odd dimension except seven",
+      "state": "proved",
+      "ledger_status": "EXACT COMBINED PROJECT PROOF + INDEPENDENT INTERNAL COMPONENT REVIEWS; FRESH FM-008 r1 LEAF AUDIT; LITERAL-U COROLLARY RETAINS LW",
+      "source": "mathematics/actual_seven_primary_commutant.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "evidence": [
+        "evidence/actual_commutant_20261006/actual_family_review.md",
+        "evidence/actual_commutant_20261006/promotion_receipt.json",
+        "record/actual_commutant_integration_map.json",
+        "record/actual_commutant_consolidation_review.md",
+        "evidence/executions/20261006/actual-commutant-integration/receipt.json",
+        "record/first_seven_independent_review.md",
+        "record/first_seven_promotion_mapping.json",
+        "evidence/first_seven_20261006/promotion_receipt.json",
+        "record/ramified_first_seven_review.md",
+        "record/ramified_first_seven_promotion_mapping.json",
+        "evidence/ramified_first_seven_20261006/promotion_receipt.json",
+        "record/ramified_higher_review.md",
+        "record/ramified_higher_promotion_mapping.json",
+        "evidence/ramified_higher_20261006/promotion_receipt.json",
+        "record/exceptional_seven_review.md",
+        "record/exceptional_seven_mapping.json",
+        "record/fm008_fresh_independent_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/actual_algebra_check.py",
+        "computations/verification/actual_factor_check.py",
+        "computations/verification/actual_field_check.py",
+        "computations/verification/actual_casoratian_check.py",
+        "computations/verification/first_seven_commutant.py",
+        "computations/verification/ramified_first_seven_trace.py",
+        "computations/verification/ramified_higher_commutant.py",
+        "computations/verification/exceptional_seven_commutant.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex",
+        "manuscript/unified_sections/ramified_higher_extension.tex"
+      ],
+      "boundary": "Actual scalar complex joint commutant of (A_N,M_N) for every odd N>=3 except genuine N=7. Explicit combination of the separately reviewed seven-primary families with prior FM-008, whose r1 pair-commutant leaf now has fresh independent internal review and uses no LW. At N=7, A7=(9/10)I and the separately reviewed characteristic-zero raw identities give multiplicities (3,2,2) and complex commutant dimension 17; no residue lifting. Literal-U corollary remains algebraic-entry-only via existing LW input. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new formalization.",
+      "proof_dependencies": [
+        "mathematics/actual_first_seven_commutant.md",
+        "mathematics/ramified_first_seven_commutant.md",
+        "mathematics/ramified_higher_seven_commutant.md"
+      ],
+      "dependency_scope": "FM-008 r1 supplies only the7∤N pair-commutant family, now independently reviewed without LW. Seven-divisible components retain their separate reviews. Literal-U algebraic-entry corollary separately uses registered LW; N7 remains characteristic-zero dimension17."
+    },
+    {
+      "id": "BGS-FORMAL-003",
+      "title": "Compiled seven-primary finite GF(5) array certificate",
+      "state": "proved",
+      "ledger_status": "COMPILED LEAN NATIVE-EVALUATION CERTIFICATE + INDEPENDENT SEMANTIC REVIEW",
+      "source": "formalization/seven_primary_certificate.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "record/seven_primary_semantic_review.md",
+        "evidence/formalization/seven_primary_20261006/build_receipt.json",
+        "evidence/formalization/seven_primary_20261006/independent_controls_receipt.json",
+        "evidence/formalization/seven_primary_20261006/aggregate-build.json"
+      ],
+      "verifiers": [
+        "computations/verification/seven_primary_certificate.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/SevenPrimary.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex"
+      ],
+      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent 19-module aggregate build completed."
+    },
+    {
+      "id": "BGS-TRACE-018",
+      "title": "Actual winding-defect localization and phase-only Frostman averages",
+      "state": "proved",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEWS; FULL QUANTUM WEIGHTS OPEN",
+      "source": "mathematics/winding_defect_locality.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-012"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/paired_character_identity.md",
+        "mathematics/phase_map_frostman.md"
+      ],
+      "evidence": [
+        "record/paired_phase_review.md",
+        "record/phase_frostman_review.md",
+        "record/paired_phase_promotion_mapping.json",
+        "evidence/paired_phase_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/paired_phase_reductions.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/paired_phase_reductions.tex"
+      ],
+      "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion."
+    },
+    {
+      "id": "BGS-FM-025",
+      "title": "Uniform actual kick simplicity on the pure five-primary seven family",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOF + INDEPENDENT V2 ANALYTIC AUDIT + INDEPENDENT FINITE INPUT; FOUR FINITE U CASES ARE A SCOPED COMPANION",
+      "source": "mathematics/uniform_five_cluster_simplicity.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-FM-008"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "proof_dependencies": [
+        "mathematics/finite_seven_spectral_pivots.md"
+      ],
+      "evidence": [
+        "record/uniform_five_cluster_review.md",
+        "record/five_cluster_input_review.md",
+        "record/finite_seven_pivots_review.md",
+        "record/spectral_extension_promotion_mapping.json",
+        "evidence/spectral_extension_20261006/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_extensions.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_extensions.tex"
+      ],
+      "boundary": "A_(7*5^e) has simple complex spectrum for e>=1. Separately bounded companion: U_N(t) simple only for N21,35,49,63 at nonzero real algebraic t. Uniform A does not imply uniform U simplicity. V1 remains incomplete; v2 accepted. No quantitative gap, general seven-divisible U simplicity or BGS.",
+      "dependency_scope": "FM-008 Section4 general leading-minor/imaginary-time implication and its registered LW source are used only for the four finite U cases; its universal theorem remains restricted to 7∤N. Uniform A theorem uses actual FM-001 model and separately reviewed finite cluster input without new external theorem."
+    },
+    {
+      "id": "BGS-TRACE-019",
+      "title": "Full-weight selected homoclinic coefficient and cyclic-family bound",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + SEPARATE W/Q/EQ REVIEWS + INDEPENDENT INTERFACE AUDIT + EXACT FINITE CONTROLS; EXTERNAL CLASSICAL INPUTS EXPLICIT",
+      "source": "mathematics/selected_weighted_coefficient.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-017",
+        "BGS-TRACE-018"
+      ],
+      "external_dependencies": [
+        "EXT-PP-1990",
+        "EXT-RUELLE-1978",
+        "EXT-MANE-1981"
+      ],
+      "proof_dependencies": [
+        "mathematics/physical_homoclinic_weights.md",
+        "mathematics/quantum_homoclinic_first_loop.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/exact_homoclinic_potential.md",
+        "mathematics/stationary_cyclic_residual.md"
+      ],
+      "evidence": [
+        "record/selected_weighted_interface_review.md",
+        "record/physical_homoclinic_weights_review.md",
+        "record/quantum_homoclinic_first_loop_review.md",
+        "record/weighted_periodic_review.md",
+        "record/weighted_support_promotion_mapping.json",
+        "evidence/weighted_support_20261006/promotion_receipt.json",
+        "record/stationary_cyclic_residual_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/weighted_periodic_support.py",
+        "computations/verification/exact_homoclinic.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/selected_weighted_coefficient.tex",
+        "manuscript/unified_sections/exact_homoclinic_potential.tex"
+      ],
+      "boundary": "Odd N, literal tau=10^-80, any fixed finite J>=0, fixed positive band a0<=m/N<=b0<=2: selected full-weight fixed-J V coefficient is O(N^-1/2). Its once-counted cyclic/negative family has at most2m members and contributes O(N^-1/2) at originalN^-2 compact-time normalization. U transfer is aggregate only, fixedJ>=2. No intrinsic orbitwise U observable. Complete complement, torsion/plateau mechanism, higher orders, TRACE-005 and BGS remain open. Supporting stationary-label decomposition removes disjoint cyclic and selected homoclinic ordered pairs exactly once; only unremoved torsion portions remain. Prior FM-021 position-path ramp is separately credited, with no family-identification claim.",
+      "dependency_scope": "W physical area/half-density, Q paired quantum factor and positive mass, EQ norm-uniform changing test, summed absolute contour tails and cyclic bookkeeping are separately scoped. H1–H10 are supporting exact stationary/homoclinic structure with inherited Fourier-method attribution; no multiplicative-gauge consequence."
+    },
+    {
+      "id": "BGS-TRACE-020",
+      "title": "Ordered-diagonal factorial sector and scoped collective trace reductions",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOFS + INDEPENDENT GENERAL/MIXED/ORDERED/COLLECTIVE REVIEWS + EXACT FINITE CONTROLS; NAMED ACTUAL FM-021 INPUTS INHERITED",
+      "source": "mathematics/factorial_ordered_diagonal.md",
+      "dependencies": [
+        "BGS-FM-021",
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/collective_occupation_hierarchy.md",
+        "mathematics/mixed_ordered_diagonal.md",
+        "mathematics/collective_projector_residual.md",
+        "mathematics/quadratic_occupation_sector.md",
+        "mathematics/quadratic_cycle_interface.md",
+        "mathematics/quadratic_slow_source.md",
+        "mathematics/quadratic_slow_source_signed.md",
+        "mathematics/ordered_diagonal_cyclic_trace.md"
+      ],
+      "evidence": [
+        "record/collective_hierarchy_review.md",
+        "record/quadratic_occupation_review.md",
+        "record/quadratic_slow_source_review.md",
+        "record/collective_promotion_mapping.json",
+        "evidence/collective_20261006/promotion_receipt.json",
+        "record/ordered_diagonal_review.md",
+        "record/ordered_diagonal_mapping.json",
+        "evidence/ordered_diagonal_20261006/promotion_receipt.json",
+        "record/factorial_diagonal_review.md",
+        "record/mixed_ordered_diagonal_review.md",
+        "record/factorial_diagonal_promotion_mapping.json",
+        "evidence/factorial_diagonal_20261007/promotion_receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/collective_hierarchy.py",
+        "computations/verification/ordered_diagonal_companion.py",
+        "computations/verification/factorial_diagonal_extension.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/collective_occupation_hierarchy.tex",
+        "manuscript/unified_sections/ordered_diagonal_companion.tex",
+        "manuscript/unified_sections/factorial_ordered_diagonal.tex"
+      ],
+      "boundary": "For N>=2, entrywise-flat unitary U and canonical positive/negative consecutive-cycle presentations, the ordered-diagonal sector trace is O_h((1+log N)^(2h)) uniformly in all positive lengths. For fixed k>=2 its complete compact-weight factorial contribution is O_k((1+log N)^(2k)/N), including zero-power strata; all-zero products remain exact constants. Actual application: fixed tau, odd N>=3, inherited flatness only. Separate mixed/matched long-cycle and single-cycle companions give exponential-in-N estimates with inherited singular mixing; collective O(1) through m<=bN remains a distinct cancellation result. Full signed complement, balanced/off-charge ranges, plateau and BGS remain open; no WKB projector identification.",
+      "dependency_scope": "General factorial result uses FM-021 entrywise flatness and exact TRACE-001/002 normalization, not singular mixing. Mixed/matched exponential companions use inherited FM-021 singular gap and accepted Haar tail. Collective result uses its separately scoped gap/flatness inputs. No new proof of the inherited analytic parametrix; all projector and cycle distinctions retained."
+    },
+    {
+      "id": "BGS-FM-026",
+      "title": "Literal-time multiplicity and simple-eigenvalue counts on N=7*5^e",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT COMPONENT/RANK AUDITS + BOUNDED EXACT REPLAYS + INHERITED REGISTERED LW",
+      "source": "mathematics/literal_time_multiplicity_bounds.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-POPESCU-2023"
+      ],
+      "proof_dependencies": [
+        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/uniform_cat_multiplicity.md",
+        "mathematics/oldform_tower_compression.md",
+        "mathematics/even_oldform_second_jet.md",
+        "mathematics/odd_oldform_second_jet.md",
+        "mathematics/even_new_sector_first_jet.md",
+        "mathematics/finite_cat_first_jet.md",
+        "mathematics/even_oldform_first_order_obstruction.md",
+        "mathematics/first_old_layer_classification.md",
+        "mathematics/intermediate_return_operator.md",
+        "mathematics/residual25_affine_dictionary.md",
+        "mathematics/odd_newest_sector_first_jet.md",
+        "mathematics/residual125_uniform_splitting.md",
+        "mathematics/odd_sector_count_combination.md"
+      ],
+      "evidence": [
+        "record/cat_jet_rank_review.md",
+        "record/cat_jet_multiplicity_review.md",
+        "record/cat_jet_tower_review.md",
+        "record/cat_jet_even_review.md",
+        "record/cat_jet_odd_review.md",
+        "record/cat_jet_newest_review.md",
+        "record/cat_jet_finite_review.md",
+        "record/cat_jet_promotion_mapping.json",
+        "evidence/cat_jet_20261006/promotion_receipt.json",
+        "record/cat_jet_even_obstruction_review.md",
+        "record/first_old_layer_review.md",
+        "record/intermediate_return_review.md",
+        "record/residual25_affine_review.md",
+        "record/intermediate_old_layers_promotion.md",
+        "record/intermediate_old_layers_promotion_mapping.json",
+        "evidence/intermediate_old_layers_20261007/promotion_receipt.json",
+        "record/residual125_uniform_review.md",
+        "record/residual125_promotion_map.json",
+        "record/odd_newest_sector_review.md",
+        "record/odd_sector_count_combination_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/cat_jet_certificates.py",
+        "computations/verification/intermediate_old_layers_certificates.py",
+        "computations/verification/residual125_certificates.py",
+        "computations/verification/odd_newest_certificates.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/literal_time_multiplicity_bounds.tex",
+        "manuscript/unified_sections/intermediate_old_layers.tex"
+      ],
+      "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including 10^-80N: multiplicity<=7. At least 612N/625+7 simple eigenvalues for even e>=4 and 612N/625+175 for even e>=6. Exact special lower bounds 4333 at N=4375 and 107443 at N=109375. Odd e>=3 gives at least 24N/25 simple eigenvalues; odd e>=5 gives 24N/25+35; odd e>=7 gives 24N/25+875 (875=840+35, counted once) and bounded simple U at 35,175. No full uniform U simplicity, gap, invariant oldform U subspace, complex scalar commutant, trace-statistical or BGS conclusion.",
+      "dependency_scope": "Rank transfer uses algebraic exponential-polynomial minors and registered LW. Cat/tower/core/newest-sector premises separately reviewed; no simple-A or pair-commutant inference. Kelmer inert multiplicity mechanism cited only for prior attribution. First-old classification, exact matrix-return/lattice obstruction, and residual25 bridge independently accepted; local branch counts add over disjoint complete cat eigenspaces and inherit the existing exponential-rank transfer. Residual25 uses circlewise unit denominator6; nonprimitive j2 term retains residual cat and valuation>=49/25. No new external input. Odd newest first-order and residual125 second-order bridges are separately independently accepted; the 875-dimensional W_j is contained in W1 and disjoint from the newest complete cat groups. Existing rank transfer and registered LW give literal-time counts. The odd first-old follow-on is excluded."
+    },
+    {
+      "id": "BGS-TRACE-021",
+      "title": "Disjoint Hamming and low-switch pair residual reduction",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT HAMMING/TRANSLATION/RUN/SYNTHESIS AUDITS + BOUNDED EXACT CONTROLS; INHERITED ACTUAL ANALYTIC INPUTS",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-TRACE-020",
+        "BGS-FM-021",
+        "BGS-FM-027",
+        "BGS-TRACE-001"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/balanced_hamming_hierarchy.md",
+        "mathematics/balanced_hamming_growth.md",
+        "mathematics/fractional_hamming_cancellation.md",
+        "mathematics/macroscopic_coordinate_translation.md",
+        "mathematics/all_coordinate_translation.md",
+        "mathematics/low_switch_offcharge_family.md",
+        "mathematics/fourier_half_radius_obstruction.md",
+        "mathematics/symplectic_half_radius_obstruction.md",
+        "mathematics/checksum_free_residual.md",
+        "mathematics/global_switch_transfer.md",
+        "mathematics/rounding_gap_obstruction.md"
+      ],
+      "evidence": [
+        "record/balanced_hamming_review.md",
+        "record/coordinate_translation_review.md",
+        "record/all_coordinate_translation_review.md",
+        "record/low_switch_offcharge_review.md",
+        "record/central_residual_promotion_map.json",
+        "record/fractional_hamming_review.md",
+        "record/fractional_hamming_raw_mapping.json",
+        "record/fractional_hamming_adapter_mapping.json",
+        "evidence/fractional_hamming_20261007/replay/comparison.json",
+        "record/half_radius_obstruction_review.md",
+        "record/half_radius_promotion_map.json",
+        "record/charge_strengthening_dependency_contract.json",
+        "record/charge_strengthening_promotion.md"
+      ],
+      "verifiers": [
+        "computations/verification/central_residual_extension.py",
+        "computations/verification/fractional_hamming_replay.py",
+        "computations/verification/half_radius_obstructions.py",
+        "computations/verification/fractional_hamming_full_end_2_1.py",
+        "computations/verification/fractional_hamming_full_end_2_2.py",
+        "computations/verification/fractional_hamming_full_end_2_3.py",
+        "computations/verification/fractional_hamming_full_end_3_2.py",
+        "computations/verification/fractional_hamming_top_gram.py",
+        "computations/verification/fractional_hamming_torus.py",
+        "computations/verification/fractional_hamming_network.py",
+        "computations/verification/fractional_hamming_offcharge_bound.py",
+        "computations/verification/charge_strengthening_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/hamming_low_switch_residual.tex",
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Actual odd N fixed literal tau and each fixed positive compact pair band. Current Q_new=I-P_H-P_bal-O_low-L_all removes all occupation-mismatched high-Hamming low-switch masks, including checksum zero, with cap floor(gamma a N/(8log N)); balanced part remains Pi-P_H-P_bal. Full high-switch damped control requires kappa a N(1-z_N)-2log N->+infinity. Signed undamped T16, full Q_new trace, balanced identification, plateau, higher factorial law and BGS remain OPEN. Existing entropy/radius hypotheses and no raw balanced-mask identification are unchanged.",
+      "dependency_scope": "Current checksum-free core uses FM027 actual phase/parametrix A2--A5 and scoped FM021; old all-translation Egorov/mixing proof survives independently, not as an unnecessary prerequisite of the strengthened synthesis. Existing Hamming/Haar and separate altered-operator rounding bounds retain their own inputs."
+    },
+    {
+      "id": "BGS-FM-027",
+      "title": "Uniform actual one-step cyclic-charge gap",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/onestep_charge_gap.md",
+        "mathematics/global_switch_transfer.md",
+        "mathematics/four_branch_parametrix.md"
+      ],
+      "evidence": [
+        "record/charge_strengthening_dependency_contract.json",
+        "evidence/charge_strengthening_20261007/raw/review/review.md",
+        "evidence/charge_strengthening_20261007/raw/review/companion_review.md"
+      ],
+      "verifiers": [
+        "computations/verification/charge_strengthening_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Actual odd-N fixed tau=10^-80, existential rho<1 and N0 for all nonzero cyclic charge blocks; centered charge-pinched ordinary-HS gap. Occupation twists and damped switch controls retain exact masks. No effective startup, full adjoint contraction, z=1 boundary comparison or BGS conclusion.",
+      "dependency_scope": "Actual parametrix/nonlinear phase A2--A5 and scoped FM-021 amplitude/zero-charge inputs only. FM-018, Egorov, A6--A7 and classical mixing are excluded as core prerequisites."
+    },
+    {
+      "id": "BGS-TRACE-022",
+      "title": "Exact full balanced-pair Schur energy and three-radius equivalence",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/balanced_pair_schur_reduction.md"
+      ],
+      "evidence": [
+        "record/schur_reduction_integration_proposal.json",
+        "evidence/schur_reduction_20261007/raw/review/review.md"
+      ],
+      "verifiers": [
+        "computations/verification/balanced_pair_schur.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Arbitrary finite unitary: exact Schur-energy identity and expected three-radius criterion. Positivity after phase expectation; reverse compact-to-Abel needs near-zero majorant/Fejer tail. Actual microscopic radial limit, deterministic offcharge and higher factorial identification stay OPEN.",
+      "dependency_scope": "Core is elementary finite-N algebra/phase integration. FM-021 only supports actual boundary-density flatness. No eliminated-minor propagation or FM-022 prerequisite."
+    },
+    {
+      "id": "BGS-TRACE-023",
+      "title": "Completed compact pair source and uniform complex microscopic source bounds",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-ZIRN-2021"
+      ],
+      "proof_dependencies": [
+        "mathematics/compact_phase_pair_identity.md",
+        "mathematics/uniform_phase_pair_abel_bound.md",
+        "mathematics/complex_microscopic_phase_source_bounds.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_microscopic_source_bounds.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Arbitrary finite unitary, |a|,|b|<1 and complex numerator sources: complete compact color-one pair projector identity. Universal F_N(s)<=coth(s/N)/(2N). Fixed-flavor complex source regularity and full-product uniform integrability concern original phase ensemble, not a higher-flavor CFT. Complete signed hook-covariance limit and balanced identification remain OPEN.",
+      "dependency_scope": "Zirnbauer exact coherent sections/projector domain is mapped; generalized Minami resampling is credited but the unitary source-bound adaptation is proved directly. No actual P/Q-gap input identifies the limit."
+    },
+    {
+      "id": "BGS-FM-028",
+      "title": "Actual q1 theta0 charge-pinching radial shell and resolvent",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/actual_charge_radial_shell.md",
+        "mathematics/actual_charge_radial_resolvent.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/review.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/resolvent_review.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ACCEPTANCE_AND_PROVENANCE.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Unchanged odd-N fixed tau, q=1 theta=0 only. Whole charge pinching is collectively compact and annihilates centered near-unitary quasimodes. Every delta_N->0 has radius 1-delta_N+o(delta_N); exterior relative resolvent comparison and worst unit-circle singular-resolvent scale delta_N^-1(1+o(1)). No occupation-uniform extension, power/Schatten estimate or signed T16 conclusion.",
+      "dependency_scope": "Unlike FM027, uses inherited ordinary-Weyl embedding, one-step Egorov and actual classical mixing. Frozen author citation is resolved by exact-diff acceptance seal. Replay checks packet preservation, not this analytic theorem."
+    },
+    {
+      "id": "BGS-FM-029",
+      "title": "Literal kick/cat moment laws, triple-log word window and strong-freeness obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [
+        "EXT-ROY-2016"
+      ],
+      "proof_dependencies": [
+        "mathematics/literal_kick_phase_law.md",
+        "mathematics/literal_fixed_word_freeness.md",
+        "mathematics/literal_growing_word_window.md",
+        "mathematics/literal_strong_freeness_obstruction.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_literal_kick_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_astra_literal_obstruction/review/independent_fixed_word_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Literal odd-N fixed tau: fixed free-group normalized *-moments are two free Haar unitaries, with relative-word chord/rank laws. Separately reviewed uniform nonidentity trace decay holds only through floor(log log log N/(4log8)). A fixed commutator polynomial has liminf lambda_max>=1-10^-148 versus free radius sqrt(3)/2, refuting strong freeness. Neither triple-log windows nor the derived-polynomial outlier identifies U_N microscopic statistics or Heisenberg words.",
+      "dependency_scope": "Exact actual midpoint symbol and faithful equilibrium derivative representation; inherited one-step Egorov/fixed canonical-transformation trace input retains its stated review boundary. Seven-divisible subsequences included. Growing quantitative separation uses separately checked EXT-ROY-2016. Strong obstruction uses exact raw Gaussian/Weyl conventions and fixed-symbol coherent-state bounds, not a growing-symbol theorem."
+    },
+    {
+      "id": "BGS-FM-030",
+      "title": "Global scalar and block body coercivity with real absorption",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
+      "source": "mathematics/phase_trace_checkpoint.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [
+        "EXT-BHATIA-2002"
+      ],
+      "proof_dependencies": [
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "mathematics/actual_body_coercivity_constants.md",
+        "mathematics/bosonic_body_radial_translation.md",
+        "mathematics/real_absorption_body_coercivity.md"
+      ],
+      "evidence": [
+        "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/audit.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/audit.md"
+      ],
+      "verifiers": [
+        "computations/verification/research_checkpoint_replay.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "All positive N,k, max P<=C/N, singular ||P-J||<=rho<1 and centered strict possibly nonnormal blocks: S>=H/(2K^2), K=1+sqrt(C-1)/(1-rho). Actual eventual c=1/50. Sharp real-alpha absorption gives S_alpha>=cH-ks/2. Scalar ordinary gauge/radial slice does not give block/super gauge. No full superintegral positivity, normalized large-N tail, complex-alpha substitution or BGS identification.",
+      "dependency_scope": "Bhatia generalized EMI exact primary leaf; ordinary finite matrix proof and centered block extension separately reviewed. FM021 only supports eventual actual C/rho constants. Bare-body source interpretation is separately qualified, not a full CFT prerequisite."
+    }
+  ],
+  "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."
+}

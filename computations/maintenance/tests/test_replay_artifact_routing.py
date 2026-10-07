@@ -15,6 +15,8 @@ class ReplayArtifactRouting(unittest.TestCase):
             'charge_strengthening_replay': '--output-dir',
             'balanced_pair_schur': '--output-dir',
             'research_checkpoint_replay': '--output-dir',
+            'wave2_checked_replay': '--output-dir',
+            'wave3_checked_replay': '--output-dir',
             'fractional_hamming_replay': '--output-dir',
             'fractional_hamming_full_end_2_1': '--output-dir',
             'fractional_hamming_full_end_2_2': '--output-dir',
@@ -41,7 +43,7 @@ class ReplayArtifactRouting(unittest.TestCase):
                     self.assertEqual(path.name, name)
                     self.assertFalse(path.exists())
                     outputs.append(path)
-            self.assertEqual(len(set(outputs)), 26)
+            self.assertEqual(len(set(outputs)), 2 * len(expected))
 
     def test_other_checks_keep_existing_command_contract(self):
         for name in ('ordinary_check', 'resonance_nondegeneracy_certificate', '', '../escape'):

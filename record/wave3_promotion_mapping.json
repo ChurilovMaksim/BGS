@@ -1,0 +1,339 @@
+{
+  "schema": "bgs-wave3-promotion-mapping-v1",
+  "base_commit": "129c676b8e6457e7e5f1bd6f786b3939cbd84653",
+  "v1_candidate_snapshot_sha256": "8f16d97d6b4db441b3f9cee3adfa5daff2aa062ae86976fdff1d9b46339a15a3",
+  "v1_claims_artifact": "evidence/wave3_checked_20261007/raw/provenance/wave2_claims_v1.json",
+  "v1_claims_sha256": "c6bd871451ca118e16f4f800422f8d9ffb0ae9ab69ec94177f6c0cfc6942cfe0",
+  "cards": [
+    {
+      "id": "BGS-TRACE-028",
+      "title": "Actual right frame, separated compositions and complete unmasked convex pinch hierarchy",
+      "source": "mathematics/right_frame_unmasked_pinch_hierarchy.md",
+      "dependencies": [
+        "BGS-TRACE-024",
+        "BGS-FM-021",
+        "BGS-FM-028",
+        "BGS-TRACE-023"
+      ],
+      "proof_dependencies": [
+        "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/right_overlap_and_unmasked_insertions.md",
+        "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/transpose_reduction.md",
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/actual_charge_radial_shell.md"
+      ],
+      "evidence": [
+        "evidence/wave3_checked_20261007/raw/right_overlap/independent_review.md",
+        "evidence/wave3_checked_20261007/raw/right_overlap/review_receipt.json"
+      ],
+      "boundary": "Every complete unmasked convex insertion mixture closes at its stated normalized band, uniformly all z_N in [0,1]. Arbitrary B is fixed within the averaged run; no uncontrolled B_n. S3 tail is three-insertion centered control uniform theta/gaps/j, not j=1,2 pointwise control. No raw coefficient N^-2 bound, Hamming/high-switch extraction, source derivatives/rates, deconvolution or undamped zero-insertion identification. T16, Ward(13), balanced law, TRACE005 and BGS OPEN. Author222 suite inaccessible and unreplayed; no formalization.",
+      "dependency_scope": "Actual RIGHT transpose/phase argument uses separately accepted left frame at its exact analytic scope plus raw parametrix/flatness. FM028 C4 compactness and TRACE023 Abel(A) support the separated annealed extension; S3 uses compactness plus S2 flatness only. No growing-r constants or rate.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOFS + FRESH INDEPENDENT RECONSTRUCTION + BOUNDED CONTROLS; EXACT SCOPE RESTRICTIONS",
+      "external_dependencies": [],
+      "verifiers": [
+        "computations/verification/wave3_checked_replay.py",
+        "computations/verification/wave3_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-029",
+      "title": "Complete convex weak-noise stability and actual unsigned logarithmic deconvolution obstruction",
+      "source": "mathematics/convex_pinch_weak_noise_and_deconvolution.md",
+      "dependencies": [
+        "BGS-TRACE-028",
+        "BGS-FM-021",
+        "BGS-FM-028",
+        "BGS-TRACE-023",
+        "BGS-FM-027"
+      ],
+      "proof_dependencies": [
+        "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/conditional_convex_pinch_resummation.md",
+        "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/annealed_compact_pinch_stability.md",
+        "mathematics/global_switch_transfer.md"
+      ],
+      "evidence": [
+        "evidence/wave3_checked_20261007/raw/convex_review/audit.md",
+        "evidence/wave3_checked_20261007/raw/convex_review/review_manifest.json"
+      ],
+      "boundary": "Exact finite-N conditional bounds; actual RIGHT input discharged by TRACE028. Complete signed bounded-u stability only, no masks or source derivatives. Actual complete UNSIGNED deconvolved interval correction diverges in required large-log window; common identity cancels in signed occupation/projection, so this does not refute T16. No large-log signed bound, undamped zero-insertion law, practical rate, formalization, balanced or BGS conclusion.",
+      "dependency_scope": "First-pinch/convex combinatorics universal under stated frame hypotheses. TRACE028 supplies actual RIGHT input; FM028 C4/TRACE023 Abel only for annealed companion. FM027 plus scoped FM021 whole-centered D gap supplies actual unsigned obstruction, not merely nonzero-charge contraction.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOFS + FRESH INDEPENDENT RECONSTRUCTION + BOUNDED CONTROLS; EXACT SCOPE RESTRICTIONS",
+      "external_dependencies": [],
+      "verifiers": [
+        "computations/verification/wave3_checked_replay.py",
+        "computations/verification/wave3_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+      ]
+    }
+  ],
+  "accepted_proof_hashes": {
+    "right": "4c149ab775835c42f4bdb537c558252bf8e129c4b359ef30f6fe1a8578ed8f3e",
+    "core": "1a324c8ef0963dded61b84dfde27736e96cd85f55271d2a3d6dcb97ef7a1a0b0",
+    "annealed": "e28c5dec22270066ff2069c5568bb4ba19040bd20f97873bc11c0140f13507e6"
+  },
+  "immutable_copies": [
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/check_separated_independent.py",
+      "sha256": "bd1afc7b262d22edc22cdfc2ab89378ae0a50fad29b0c232d628aa865ed85a39",
+      "bytes": 4821,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/check_separated_independent.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_normal.log",
+      "sha256": "f11f35076419d33a38c82cbf8b2e2bde91ba0796fe2871c651b9cc77a7fd242f",
+      "bytes": 342,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_normal.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks.json",
+      "sha256": "72e86c793201c8b3d307442421f3d5a5f4140bd73138c6bafa910ce723b13a34",
+      "bytes": 7261,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_checks.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_pre_export_review.md",
+      "sha256": "dc2f909feb296eb8d2b1099536848e2c821779e67185e51ab1be5e41135318e9",
+      "bytes": 13620,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_pre_export_review.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks.rerun.log",
+      "sha256": "cbf6a35e28a529d689f45b4e178a65851027aade85421af2885dfbdcc9a49c4c",
+      "bytes": 341,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_checks.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/check_transpose.py",
+      "sha256": "ccb43714478a9183410692da53154805992a4dd06322159ecac4183f28f6f358",
+      "bytes": 4860,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/check_transpose.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_checks_optimized.json",
+      "sha256": "8fd747d24e9ee40d1f7bb145c27cb1abf3a10e2fc4e8e0bfb19150f24ac8473c",
+      "bytes": 10123,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_checks_optimized.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_optimized.log",
+      "sha256": "a2f90973c2a87d0d44fcfdba4f42b033e196c031de7a924f5864c9d70576eda0",
+      "bytes": 341,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_optimized.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/independent_review.md",
+      "sha256": "69f5dca32dc46b93bd021e73f072234e05a53f363f726b11c425c7079d626e66",
+      "bytes": 30694,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/independent_review.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/broad_scope_review.md",
+      "sha256": "3e5827718a02e66fbd17ce67fd2c5dbc63002e57cf0429360683038cedf7b83e",
+      "bytes": 17040,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/broad_scope_review.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_checks.json",
+      "sha256": "1f6422b91f3532f084cab0567a1f4f2a752ecfe646244f6237078a8c156c39fd",
+      "bytes": 10123,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_checks.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks_optimized.json",
+      "sha256": "0c969345deacdfb7b006504dae1b04e91b4c426dbeb0377709a97aedf1ebf384",
+      "bytes": 7261,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_checks_optimized.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_checks_optimized.rerun.log",
+      "sha256": "13db05fa1d2a7b97767234804b391d7b37baa389b2661c20f1cd3c5cf33a07cf",
+      "bytes": 310,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_checks_optimized.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/run_controls.py",
+      "sha256": "e7f08a5b1621149c8cc3b7f2be2f535871e8788909d080cb04ad7f3812ee0404",
+      "bytes": 4504,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/run_controls.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_normal.log",
+      "sha256": "3fd12faccb5d54d957649e0367685c49ffe4072b6d2d31a8a364e83e0314aecf",
+      "bytes": 310,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_normal.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/computation_manifest.json",
+      "sha256": "96082889a9dbc1cadabd6aa8321c2c7d8fe10b7c8f44e153b26f061f14f5eefc",
+      "bytes": 7492,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/computation_manifest.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks_optimized.rerun.log",
+      "sha256": "b18081a58d384dfc91fdc360baf867f538638968d7ca9edb9b6c28797e4a4ed2",
+      "bytes": 341,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/transpose_checks_optimized.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_optimized.log",
+      "sha256": "e8fd35d663dece00cbc068dab82c4b7a0dd3d14f2f536e68f9e718c0a3fc0b00",
+      "bytes": 310,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_optimized.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/separated_checks.rerun.log",
+      "sha256": "40882f804e11ef00dd3fdf115114f8cf3ed93bab867ce8216027bb7773ddd8c6",
+      "bytes": 310,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/separated_checks.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/checks_optimized.json",
+      "sha256": "e8eabaa8965d4249ed578c44b6b9827ef66e76eda778e4f1884c82b85935644c",
+      "bytes": 5905,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/checks_optimized.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/checks_optimized.rerun.log",
+      "sha256": "b85bda067e2e50efeb22c944f3aa16bba3f1ffa4d27964c44e50d4e81bb63b44",
+      "bytes": 326,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/checks_optimized.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/normal.log",
+      "sha256": "3040f2237735b0591df78a8af37e010ddfd392557fb3e82b3f54d224f8d5fa39",
+      "bytes": 326,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/normal.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/check_overlap.py",
+      "sha256": "da8cc8f11f955e26c7c7996e7dca34bf5d5c7ed148866e81b315a3d48e5c313c",
+      "bytes": 4858,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/check_overlap.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/checks.json",
+      "sha256": "46d9b3899a2fda44e079e953eb4fb2c5f19dc1a0539471bcbaa48bcc832b6da7",
+      "bytes": 5905,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/checks.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/optimized.log",
+      "sha256": "e91a888cf8a68498c7411f7737c44f9169039786aee39d979208899c7e785f69",
+      "bytes": 326,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/optimized.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/accepted_left_controls/checks.rerun.log",
+      "sha256": "0f9783b79a79b56fc9304df544c127843072c7d29d13457ec46b4bc6cc212c04",
+      "bytes": 326,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/accepted_left_controls/checks.rerun.log"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/right_overlap_and_unmasked_insertions.md",
+      "sha256": "4c149ab775835c42f4bdb537c558252bf8e129c4b359ef30f6fe1a8578ed8f3e",
+      "bytes": 18848,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/authorized_exports/right_overlap_and_unmasked_insertions.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/self_audit.md",
+      "sha256": "e15de2140749e3d33639b425dcae18332746c29f29feb9c8c15478a5a12cd0b0",
+      "bytes": 5469,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/authorized_exports/self_audit.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/transpose_reduction.md",
+      "sha256": "83425306c15e3b7b69626ccd53c46c8c077bfa13078d6314961fe6f95b61ee30",
+      "bytes": 5187,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/authorized_exports/transpose_reduction.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/RIGHT_FRAME_HANDOFF.md",
+      "sha256": "416d7e114ad7319b35effddad0a42d27ab5e0abbe16b8a58d3f350035c09358f",
+      "bytes": 4697,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/authorized_exports/RIGHT_FRAME_HANDOFF.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/audit.md",
+      "sha256": "1b0940b69fa8dceda6405b4dd8194ab0cb7fdbb8d89777eb2d6f69a8a9819aff",
+      "bytes": 18096,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/audit.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls_result.json",
+      "sha256": "3db91588656b681318d0b6f489a3c7d7efd8d27d68280a51b7829b6df2b84df4",
+      "bytes": 434,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/independent_bounded_controls_result.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/reproduced_exact_controls_stdout.json",
+      "sha256": "13c635af35d07502abf4153ca59ef20ef8f5ea2dc659562906f99ef33becfafa",
+      "bytes": 705,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/reproduced_exact_controls_stdout.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls.py",
+      "sha256": "17978210ab3ec005a2b0a4654a1b79f54d3320d996a9c830367e86311aa0acc1",
+      "bytes": 3444,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/independent_bounded_controls.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/review_manifest.json",
+      "sha256": "fa9461f344c0a3ad95dae11ae6401569ced634ed6dc36c55ed4d66990143a0a0",
+      "bytes": 1209,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/review_manifest.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls_result.json",
+      "sha256": "13c635af35d07502abf4153ca59ef20ef8f5ea2dc659562906f99ef33becfafa",
+      "bytes": 705,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/author_snapshot/exact_controls_result.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/source_bindings.json",
+      "sha256": "ea3cf235498dbb3febcc707b54aee8d3378e81ce423e38bd2e30a021d79096d0",
+      "bytes": 1795,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/author_snapshot/source_bindings.json"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/annealed_compact_pinch_stability.md",
+      "sha256": "e28c5dec22270066ff2069c5568bb4ba19040bd20f97873bc11c0140f13507e6",
+      "bytes": 10148,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/author_snapshot/annealed_compact_pinch_stability.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls.py",
+      "sha256": "4cd6dbfe585b61e33fb15a37c672ecf3eb9a87598dcbcdd828e14a90b65add0a",
+      "bytes": 8111,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/author_snapshot/exact_controls.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/conditional_convex_pinch_resummation.md",
+      "sha256": "1a324c8ef0963dded61b84dfde27736e96cd85f55271d2a3d6dcb97ef7a1a0b0",
+      "bytes": 16404,
+      "origin": "/workspace/shared/bgs_wave3_convex_resummation_review/author_snapshot/conditional_convex_pinch_resummation.md"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "bytes": 19898,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/validate_manifest.py"
+    },
+    {
+      "path": "evidence/wave3_checked_20261007/raw/right_overlap/review_receipt.json",
+      "sha256": "d42c276b517d1d8523a25e04476bdd73af593bc6959c6a40cb156033d6d608c8",
+      "bytes": 6341,
+      "origin": "/workspace/shared/bgs_wave3_right_overlap_review/review_receipt.json"
+    }
+  ],
+  "right_final_receipt_status": "passed final sealed closure",
+  "scope": "Parent-approved separately independently audited scopes; no unavailable author archive/222-control replay claim.",
+  "right_receipt_sha256": "d42c276b517d1d8523a25e04476bdd73af593bc6959c6a40cb156033d6d608c8"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "frozen",
+  "date": "2026-10-07",
+  "source_snapshot_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+  "primary_verdict": "proved as written",
+  "candidate_review": "independent internal reconstruction",
+  "new_consequences_review": "author proof/self-review; fresh independent review requested",
+  "execution": {
+    "command": "python checks/verify_centering.py",
+    "exit_code": 0,
+    "controls": 20,
+    "arithmetic": "exact rational/algebraic and symbolic",
+    "coverage": "N=3 k=0..3 at two centers; N=1,2,3,5,7,9 fixed-z derivatives; N=1/2/3 normalization controls; odd real-slice vertices through N=31; diagonal completed N=3 source"
+  },
+  "artifacts": {
+    "README.md": "8aeb36fc2d15e151daa3c4dbc4d706eb0624f09d8dfa712673e5209126ed3ab7",
+    "audit.md": "0ed24826498a1aeb53f87aa2abeb968f3a1063bf1c1806dad3b79703056d7dd8",
+    "checks/results.json": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+    "checks/run.log": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+    "checks/verify_centering.py": "44b0afc0181d2090dda2cc6b9b007b0bcb16b869948ebe47b32979057a7c8f1d",
+    "compact_stratum_centering.md": "e7ce0e1cfb780732481eb92d773339046c9ac481a29729f7904709e6cd62f205",
+    "input_manifest.json": "e4250173ceb0e0ae32b30ea7626fbb608c8b3475166549f1c79dd7123358f23b",
+    "inputs/centering_candidate.md": "c19ecf74f9bff041524758ebe124c3fdffd42be8f5ec6ed627fe8056091b13d2",
+    "source_binding_check.json": "b80445fcb326c480ed9b1d21fff58e6a13569cd6dc8e4abb68c39ea331c64a29",
+    "validate_packet.py": "b705209ea0e1dc006a30418e8662366f0a96d07b969eff0850e79634234294b5"
+  },
+  "nonclaims": [
+    "super-Berezinian",
+    "positive full supermeasure",
+    "dimension-uniform normalized tail",
+    "microscopic CUE identification",
+    "BGS",
+    "external referee",
+    "formal certification"
+  ]
+}

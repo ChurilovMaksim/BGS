@@ -1207,7 +1207,11 @@
         "BGS-FM-020",
         "BGS-FM-023",
         "BGS-FM-028",
-        "BGS-FM-029"
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
       ],
       "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use. Reviewed FM-023 extension: conservative whole-claim reachability through FM-018, not a new direct entropy/pressure/mixing application; exact role review in record/bibliographic_impact_review_20261006.md.",
       "additional_retrieval_attempt": {
@@ -1293,7 +1297,11 @@
         "BGS-FM-020",
         "BGS-FM-023",
         "BGS-FM-028",
-        "BGS-FM-029"
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
       ],
       "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use. Reviewed FM-023 extension: conservative whole-claim reachability through FM-018, not a new direct entropy/pressure/mixing application; exact role review in record/bibliographic_impact_review_20261006.md.",
       "file_level_claim_matches": [
@@ -1420,7 +1428,11 @@
         "BGS-FM-020",
         "BGS-FM-023",
         "BGS-FM-028",
-        "BGS-FM-029"
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
       ],
       "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use. Reviewed FM-023 extension: conservative whole-claim reachability through FM-018, not a new direct entropy/pressure/mixing application; exact role review in record/bibliographic_impact_review_20261006.md.",
       "locator_caution": "Retrieved publisher scan has an extra digitization cover: Theorem2.2 occurs PDF p.26 and Proposition2.4 p.34. Historical PDF offsets refer to a cover-excluding convention; printed pages and numbered results control.",
@@ -1738,7 +1750,9 @@
         "BGS-FM-011",
         "BGS-FM-029"
       ],
-      "transitive_claim_dependencies": [],
+      "transitive_claim_dependencies": [
+        "BGS-TRACE-025"
+      ],
       "dependency_coverage_note": "Computed from record/claims.json; absence of an edge is not proof of no mathematical use.",
       "prior_application_review": {
         "status": "unverified_application",
@@ -4084,9 +4098,16 @@
       ],
       "inherited_project_mapping": "Imported independent exact-source reviews reconstruct the color-one coherent projector and boundary completion; actual dual pairing avoids the source index typo. Used only for completed finite-pair compact identity on its stated coherent-section domain, not positive supermeasure or universality. Full PDF remains external without established redistribution license.",
       "direct_claim_dependencies": [
+        "BGS-FM-031",
         "BGS-TRACE-023"
       ],
-      "transitive_claim_dependencies": [],
+      "transitive_claim_dependencies": [
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-026",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
+      ],
       "dependency_coverage_note": "Explicit checkpoint registered use; source identity/source application reviewed separately from graph recomputation."
     },
     {

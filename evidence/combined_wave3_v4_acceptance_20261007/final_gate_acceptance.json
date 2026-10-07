@@ -1,0 +1,234 @@
+{
+  "status": "PASS_EXACT_FINAL_COMBINED_V4_LOCAL_ACCEPTANCE",
+  "verified_utc": "2026-10-07T07:50:31.619270+00:00",
+  "base_commit": "f9680ac163ab5b1cedf126ac7ee14037036c64db",
+  "final_source_manifest_sha256": "0b36c73bf7796f1e5dbf71a7cfeb68f8e868b65a433d5e1809afa3168898f001",
+  "source_files": 4211,
+  "source_bytes_and_modes_unchanged_before_after": true,
+  "scientific": {
+    "python": "3.13.5",
+    "passed": 212,
+    "total": 212,
+    "all_source_executable_and_log_bindings_checked": true,
+    "one_fresh_final_scientific_run": true
+  },
+  "maintenance": {
+    "312_normal": {
+      "tests": 220,
+      "seconds": 155.96,
+      "log_sha256": "3808267a14e9eafa7bdd6c580bdec69721df96ffdf20aac477e73703c5b82f47"
+    },
+    "312_optimized": {
+      "tests": 220,
+      "seconds": 154.076,
+      "log_sha256": "a41cd625fe4c396eab327819b85b5b713d59c13bef64ec31a0d439c4c3df99a1"
+    },
+    "313_normal": {
+      "tests": 220,
+      "seconds": 171.512,
+      "log_sha256": "e7137c3c9d853c6f60099dfd9a1929015b1cf701e6b5a49de800fb97afb3ed79"
+    },
+    "313_optimized": {
+      "tests": 220,
+      "seconds": 169.679,
+      "log_sha256": "b3b7b36a8a2d757fa887dc9fc27dd3b8a31069fe2e1091f21e40562115a61418"
+    }
+  },
+  "focused_tests": {
+    "focused_312_normal_test_wave2_replay_protocol": 43,
+    "focused_312_normal_test_wave3_replay_protocol": 8,
+    "focused_312_normal_test_research_checkpoint_portability": 23,
+    "focused_312_normal_test_replay_artifact_routing": 2,
+    "focused_312_optimized_test_wave2_replay_protocol": 43,
+    "focused_312_optimized_test_wave3_replay_protocol": 8,
+    "focused_312_optimized_test_research_checkpoint_portability": 23,
+    "focused_312_optimized_test_replay_artifact_routing": 2,
+    "focused_313_normal_test_wave2_replay_protocol": 43,
+    "focused_313_normal_test_wave3_replay_protocol": 8,
+    "focused_313_normal_test_research_checkpoint_portability": 23,
+    "focused_313_normal_test_replay_artifact_routing": 2,
+    "focused_313_optimized_test_wave2_replay_protocol": 43,
+    "focused_313_optimized_test_wave3_replay_protocol": 8,
+    "focused_313_optimized_test_research_checkpoint_portability": 23,
+    "focused_313_optimized_test_replay_artifact_routing": 2
+  },
+  "static_source_registry_bibliography_acceptance": "passed",
+  "hamming_durable_receipts": [
+    {
+      "name": "fractional_hamming_replay",
+      "receipt_sha256": "b3706e10e3176138315a07de03cb021e5802111b5f51d5c7fa361a4389a9eaf2",
+      "durable_artifacts": 16
+    },
+    {
+      "name": "fractional_hamming_full_end_2_1",
+      "receipt_sha256": "25b45c8324e13c23cb33d0082154038201034fad6d47643741c98a4133fb031e",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_2_2",
+      "receipt_sha256": "1b19f955e17e48d5e5e1bbaaa9535f6ec6b7fd490e56255f13ac88514a858c88",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_2_3",
+      "receipt_sha256": "19273a20c17a4d2bb46b1abbce1dcbdf7dda13009909a1c417607cb4b6de791b",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_3_2",
+      "receipt_sha256": "67c90e6833647e38ba17a47b6ebe3f5042fc5f3d9d28a8262241e9c931964371",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_network",
+      "receipt_sha256": "5bf2784f73b96228b748556fa16d295f4e64f3382e6283b1f7d6d45530a520bb",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_offcharge_bound",
+      "receipt_sha256": "3dc27247e365c10ebdc0748bdfb4b024d35d20c16d2ee40b107c35ee0e352c7c",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_top_gram",
+      "receipt_sha256": "28e20c13bc0a96b16d0e5240f3583cb729f61d809544dfaa9ed789587a48d333",
+      "durable_artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_torus",
+      "receipt_sha256": "bfb4c5025b2b4657e1375d7548fb11dbe9c6a9215840c9a26ddb1de9ef8f1aef",
+      "durable_artifacts": 8
+    }
+  ],
+  "new_packet_durable_receipts": [
+    {
+      "name": "research_checkpoint_replay",
+      "tasks": 11,
+      "receipt_sha256": "72e8de41139ebe0391eac70d1040cc3f49e36e47f60fab8a9e23b3a71d8607c1",
+      "durable_artifacts": 50
+    },
+    {
+      "name": "wave2_checked_replay",
+      "tasks": 8,
+      "receipt_sha256": "39fa60ed4d2afe7a71b54876e560bdce3f1da5140ec83e00713ed8420fb5b66f",
+      "durable_artifacts": 44
+    },
+    {
+      "name": "wave3_checked_replay",
+      "tasks": 4,
+      "receipt_sha256": "012595ba6c4b0ea3bf619c7a090db98fe01cae3517ca878bc262b0b2f8a52f78",
+      "durable_artifacts": 22
+    }
+  ],
+  "numeric_portability": {
+    "diagnostics": 46,
+    "raw_values_and_bounds_checked": true,
+    "comparison_normalized_digest_explicit": true,
+    "acceptance_sha256": "9326034f37a140ad51a7d367cb3f7fccce425d742370e0b10a86ed10b5034eab"
+  },
+  "additional_legacy_durable_routes": [
+    {
+      "name": "charge_strengthening_replay",
+      "jobs": 3,
+      "receipt_sha256": "3f0b5f915c19f8c8c8fd7babbf060d2fba52cfb9d6cb3af91d6591cbafcbff73",
+      "source_pins": 119
+    },
+    {
+      "name": "balanced_pair_schur",
+      "runs": 2,
+      "controls": 6,
+      "receipt_sha256": "28138a114af064c2d6825c093ae77668c04ac47054d9603d9b7048dd3d0feeca",
+      "execution_manifest_sha256": "0a498dbec4f20292571ad598d24fe3e1da1a1e9822b6b12de67ad737134f8f97"
+    },
+    {
+      "name": "intermediate_old_layers_certificates",
+      "steps": 6,
+      "actual_expected_pairs": 6
+    }
+  ],
+  "additional_legacy_durable_artifacts": 58,
+  "compact_n4_actual_elapsed_seconds": 121.35270602500532,
+  "resource_budget": "N4-only 600 CPU/660 wall; containing replay900; unrelated limits/memory unchanged",
+  "source_equivalent_prior_fresh_executions": {
+    "cpp_builds": 22,
+    "fixed_map_replays": 28,
+    "active_lean_modules": 19,
+    "lake_jobs": 22,
+    "strict_manuscript_passes": 3,
+    "manuscript_pages": 277,
+    "pdf_sha256": "58c8658b0167a52698533c40b6b214aef0c0ba28c8dfcac710ecd7e97d7416eb",
+    "visual_pages_inspected": [
+      265,
+      266,
+      267,
+      268,
+      269
+    ],
+    "new_reruns_claimed": false,
+    "closures": {
+      "cpp": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/cpp_source_equivalent_closure.json",
+        "closure_sha256": "f8ce02fe43fa3199c31c966c058767c7ce2039ffe1fb44108193403b714da019",
+        "original_execution_version": "v1",
+        "new_execution_claimed": false,
+        "source_files": 22
+      },
+      "lean": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/lean_source_equivalent_closure.json",
+        "closure_sha256": "d689acef50bd8cd892e3a605cacc1382dcaec087f717d4daf8d3b9133fd0c708",
+        "original_execution_version": "v1",
+        "new_execution_claimed": false,
+        "source_files": 29
+      },
+      "manuscript": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/manuscript_source_equivalent_closure.json",
+        "closure_sha256": "45abba03aa1247a7a90e47746ba75cb3b261294956080c3fb5551b38e29478e9",
+        "original_execution_version": "v1",
+        "new_execution_claimed": false,
+        "source_files": 102
+      },
+      "fixed_map_supplement": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/fixed_map_supplement_source_equivalent_closure.json",
+        "closure_sha256": "d9f8feb8cbd87978c57d1d3b5b941d6ad9dad3d729c5d4add744d137bad6edf0",
+        "original_execution_version": "v1",
+        "new_execution_claimed": false,
+        "source_files": 120
+      }
+    }
+  },
+  "lean_olean_sha256": {
+    "AnalyticOrbitKernels.lean": "79a9f77ff2a59ed0a95cba6596c59fa4ad437a7792c74685a03deeab9aacb539",
+    "CayleyCurveEnergy.lean": "beaa88a1407b921daad7e8d0d19498536531cd830ff6f3fcb278f2c2c9a17f5c",
+    "CayleyEnergy.lean": "fb1c15bc388a3c9ff5d7beac63847e672655d6cf8ab923407d917dfc5c51132e",
+    "CueLoopKernels.lean": "d4b1650eef36714c15eb1cb75a37a5b554d3c94a105476a767786d7dd27d66ed",
+    "FibonacciRatioSmall.lean": "d1d210f2cc707fbd737d6ded31328172cf6e5cb7570b2fcee82a3ae0eacfd8e0",
+    "FourCutKernel.lean": "9a9bd9a0d967704cf38759d5d06a017776fb3c5d7076784e5be8dc2115603b5a",
+    "GeneralHyperbolicParity.lean": "d351e20b9b7a175360636d9b60391f36ddc250f0d6c5921855df520a19700171",
+    "HistoricalMobiusDegenerateFiber.lean": "bc662bc2eb8b6f32667f17edc6534749c3bf132e91bd0f607355e4c0cf2e08fc",
+    "LocalityKernels.lean": "c119a8ff46b7e865d3abe4775377bdd830d72d6299612b138a704e04af65e081",
+    "MagneticTraceSmall.lean": "4004d55b1b7739a10aa4f52096631b3e245da9415d1e53b1bece7e24637b1843",
+    "PairKeyFourthMoment.lean": "e2e87fa7ac30165d4e9c558282f4fa3764ebf6b8fb3a9438a3cf4cb57dfd5226",
+    "PairKeySecondMoment.lean": "e25d4829e6c2b86f1d849cffa1856e62e767d8666eed00278e05752e2da8cdcf",
+    "PellCoboundary.lean": "fa9d60146b6f8340e37f454b31556704cdaba1b113620ceddb1b7423d750da42",
+    "PellCohomology.lean": "649f0bd2c3ec190b8da85ebd5986bfabdb3d0159e2ef636fde621f3e63f81361",
+    "PellEchoWeights.lean": "09412980bf2281047cf392bc6cc7e27a238f5db4e01c2bffcbe5881cae54b4ed",
+    "PellFourierKernel.lean": "f3e9148744c0579001883a1e45548ece47f6df64a202a0f267cd9d3fcaf8267e",
+    "SevenPrimary.lean": "2b54a91f25458c273f7bad15767e6d29637d0bd09c15e188a6627ce0e89e4a3e",
+    "TorusLevelSets.lean": "22b16e5bff68fe37748f2b2c487694a215afc09ff9b2efbbbc5ec3fe4360a03c",
+    "TorusScaleLaw.lean": "46f34e8889e6f9890326f5e63e03ecb8e5ce9fb7a88cca6c47238916d476e226"
+  },
+  "computational_budget": {
+    "final_command_elapsed_seconds_sum": 1258.2911289550684,
+    "final_user_cpu_seconds_sum": 2200.085283,
+    "final_system_cpu_seconds_sum": 107.99069,
+    "largest_final_top_level_max_rss_kib": 388848,
+    "heavy_python_max_concurrency": 2,
+    "scope": "Linux wait4 actual accounting. Command elapsed sums include concurrency; they are not end-to-end wall time. Earlier source-equivalent fresh build resources are separately preserved in v1_partial_gate_acceptance.json. No pricing/Pro/quota claim."
+  },
+  "old_failure_success_receipts_and_v1_v2_v3_sources_preserved": true,
+  "v3_artifact_seal_sha256_verified_unchanged": "1f0b9ba58983ce8fc90f404db0fef175e87aafe5c0e33f6fadf7f0469ac4d940",
+  "no_source_proof_expected_tex_regeneration_or_edits": true,
+  "no_project_git_stage_commit_push_publication": true,
+  "new_remote_CI": "NOT_RUN_FOR_COMBINED_V4",
+  "scope": "Complete local scientific and final-maintenance execution with explicit exact-source closure of genuinely fresh unchanged C++/Lean/TeX/fixed-map gates. Software pass is not an asymptotic theorem or BGS proof; existing mathematical OPEN scopes remain unchanged."
+}

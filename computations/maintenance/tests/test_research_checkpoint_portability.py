@@ -1,6 +1,8 @@
 """Finite packet replay contracts; these tests do not audit analytic theorems."""
 from __future__ import annotations
 import hashlib
+import os
+from unittest.mock import patch
 import importlib.util
 import json
 from pathlib import Path
@@ -221,6 +223,66 @@ class CheckpointPortability(unittest.TestCase):
                 m.write_text(json.dumps({'schema':'bgs-checkpoint-source-bindings-v1', 'files':{rel:'0'*64}}))
                 with self.subTest(rel=rel), self.assertRaises(RuntimeError):
                     M.source_bytes(root)
+
+
+class BudgetProposal(unittest.TestCase):
+ def n4(self):
+  return {'name':'compact_independent_n4','source':'evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/independent_checks.py','arguments':['4','3'],'timeout_seconds':660,'cpu_seconds':600}
+ def test_only_exact_n4_has_larger_budget(self):
+  self.assertEqual(M.task_budget(self.n4()),{'wall_seconds':660,'cpu_seconds':600,'memory_bytes':3*2**30})
+  for field,value in [('name','other'),('source','other.py'),('arguments',['3','3'])]:
+   d=self.n4();d[field]=value
+   with self.subTest(field=field),self.assertRaises(RuntimeError):M.task_budget(d)
+ def test_budget_types_and_bounds_fail_closed(self):
+  for field,vals in [('timeout_seconds',(True,0,-1,661,660.0,'660')),('cpu_seconds',(True,0,-1,601,600.0,'600'))]:
+   for value in vals:
+    d=self.n4();d[field]=value
+    with self.subTest(field=field,value=value),self.assertRaises(RuntimeError):M.task_budget(d)
+  self.assertEqual(M.task_budget({'name':'other','timeout_seconds':180})['cpu_seconds'],180)
+  with self.assertRaises(RuntimeError):M.task_budget({'name':'other','timeout_seconds':181})
+ def test_elapsed_is_typed_bounded_provenance_only(self):
+  M.compare({'v':7,'elapsed_seconds':155.0},{'v':7,'elapsed_seconds':660},['elapsed_seconds'],elapsed_budget_seconds=660)
+  for value in (True,-1,661,float('inf'),float('nan'),'12'):
+   with self.subTest(value=value),self.assertRaises(RuntimeError):M.compare({'elapsed_seconds':155},{'elapsed_seconds':value},['elapsed_seconds'],elapsed_budget_seconds=660)
+  for budget in (True,0,661,'660',660.0):
+   with self.subTest(budget=budget),self.assertRaises(RuntimeError):M.compare({'v':1},{'v':1},[],elapsed_budget_seconds=budget)
+  with self.assertRaises(RuntimeError):M.compare({'elapsed_seconds':1},{'elapsed_seconds':181},['elapsed_seconds'])
+  with self.assertRaisesRegex(RuntimeError,'scientific mismatch'):M.compare({'v':7,'elapsed_seconds':1},{'v':8,'elapsed_seconds':600},['elapsed_seconds'],elapsed_budget_seconds=660)
+  with self.assertRaisesRegex(RuntimeError,'scientific mismatch'):M.compare({'v':7},{'v':7.0},[],elapsed_budget_seconds=660)
+ def test_memory_unchanged_and_cpu_bound_exact(self):
+  with patch.object(M.resource,'setrlimit') as setlimit:
+   M.child_limits(600)
+   self.assertEqual(setlimit.call_args_list[0].args,(M.resource.RLIMIT_AS,(3*2**30,3*2**30)))
+   self.assertEqual(setlimit.call_args_list[1].args,(M.resource.RLIMIT_CPU,(600,600)))
+ def test_outer_watchdog_only_named_wrapper_changes(self):
+  runner_path = SOURCE.parents[1] / 'maintenance/verify_workspace.py'
+  sys.path.insert(0, str(runner_path.parent))
+  spec = importlib.util.spec_from_file_location('checkpoint_budget_runner', runner_path)
+  R = importlib.util.module_from_spec(spec)
+  spec.loader.exec_module(R)
+  self.assertEqual(R.check_timeout_seconds('research_checkpoint_replay'),900)
+  for name in ('ordinary','compact_independent_n4','wave2_checked_replay','wave3_checked_replay',''):
+   self.assertEqual(R.check_timeout_seconds(name),360)
+ def make_root(self,root):
+  raw=root/'evidence/research_checkpoint_20261007/raw';raw.mkdir(parents=True)
+  source=raw/'producer.py';source.write_text('pass\n');expected=raw/'expected.log';expected.write_bytes(b'{"answer":7}\n');cpp=raw/'control.cpp';cpp.write_text('int main(){}\n');cpp_expected=raw/'cpp.expected';cpp_expected.write_bytes(b'{"answer":7}\n');generated=raw/'result.json'
+  task={'name':'timeout_fixture','source':source.relative_to(root).as_posix(),'arguments':[],'expected':expected.relative_to(root).as_posix(),'provenance_root_fields':[],'timeout_seconds':10,'generated_result':generated.relative_to(root).as_posix()}
+  contract={'schema':'bgs-checkpoint-replay-contract-v1','tasks':[task],'cpp':{'source':cpp.relative_to(root).as_posix(),'expected':cpp_expected.relative_to(root).as_posix(),'provenance_root_fields':[],'timeout_seconds':10}}
+  (root/M.CONTRACT).parent.mkdir(parents=True);(root/M.CONTRACT).write_text(json.dumps(contract))
+  files=[source,expected,cpp,cpp_expected,root/M.CONTRACT];pins={p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files};(root/M.BINDINGS).write_text(json.dumps({'schema':'bgs-checkpoint-source-bindings-v1','files':pins}))
+  return task,generated
+ def test_timeout_partial_capture_and_failure_receipt(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp)/'repo';root.mkdir();task,generated=self.make_root(root);output=Path(tmp)/'durable'
+   def timed(command,**kwargs):
+    work=Path(kwargs['cwd']).parents[2]
+    actual=work/task['generated_result'];actual.write_bytes(b'{"answer":7}\n')
+    self.assertEqual(kwargs['timeout'],10)
+    raise subprocess.TimeoutExpired(command,10,output=b'partial stdout',stderr=b'partial stderr')
+   with patch.object(M.subprocess,'run',side_effect=timed),self.assertRaises(subprocess.TimeoutExpired):M.run(root,output)
+   r=json.loads((output/'replay_manifest.json').read_bytes());self.assertEqual(r['status'],'failed');self.assertTrue(r['failed_task']['timed_out']);self.assertIsNone(r['failed_task']['exit_status']);self.assertEqual(r['failed_task']['resource_budget']['wall_seconds'],10)
+   self.assertEqual((output/'timeout_fixture.stdout').read_bytes(),b'partial stdout');self.assertEqual((output/'timeout_fixture.stderr').read_bytes(),b'partial stderr');self.assertEqual((output/'timeout_fixture.partial.actual.raw').read_bytes(),b'{"answer":7}\n');self.assertEqual((output/'timeout_fixture.expected.raw').read_bytes(),b'{"answer":7}\n')
+   for a in r['artifacts']:self.assertEqual(hashlib.sha256((output/a['path']).read_bytes()).hexdigest(),a['sha256'])
 
 
 if __name__ == '__main__':

@@ -1,0 +1,70 @@
+--- preserved_v1
++++ corrected_v2
+@@ -1,11 +1,11 @@
+ # Hook cancellation, Eulerian types, and the exact phase-current remainder
+ 
+-Date: 7 October 2026. Status: **exact finite-dimensional lemma, self-reviewed; independent exact implementations agree in the bounded ranges below. The balanced microscopic identification remains open.**
++Date: 7 October 2026. Status: **corrected v2 exact finite-dimensional lemma; bounded independent proof review and exact implementation checks passed within their stated scope. The balanced microscopic identification remains open.**
+ 
+ Read-only input: `/workspace/shared/bgs_checked_checkpoint_validation/source_snapshot`.
+ Its external source manifest SHA-256 is
+ `d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba`.
+-All new files are confined to `/workspace/shared/bgs_wave2_hook_identity`.
++The original derivation and computation files remain unchanged in `/workspace/shared/bgs_wave2_hook_identity`. This corrected v2 and its review evidence are confined to `/workspace/shared/bgs_wave2_hook_review`.
+ 
+ ## Result and scope
+ 
+@@ -69,14 +69,20 @@
+ 
+ Exactness alone only proves the *unweighted* alternating trace is zero. It does not make (K1) zero, small, or governed by a one-particle gap: the exterior-number insertion `j` does not commute with the differential. This is the first missing implication in a bare “Koszul localization gives universality” argument.
+ 
+-There is nevertheless a useful explicit cancellation. Expand the right side of (K1) using the symmetric/exterior cycle indices. For any permutation of the `m` abstract slots with cycle lengths `ell_1,...,ell_c`, choose which cycles are assigned to the exterior factor. Its marked signed weight is
++There is nevertheless a useful explicit cancellation. First make the dimension truncation explicit. For an endomorphism of `C^N`, the exterior characters satisfy `e_j(A)=0` for every `j>N`. Therefore (K1) also equals the full degree-`m` expression
++
++`sum_(j=1)^m (-1)^(j-1) j e_j(A)h_(m-j)(A)`.               (K1a)
++
++The additional zero characters have nonzero individual cycle-index terms. They must be retained when doing slot-permutation bookkeeping: when `m>N`, unrestricted cycle selection is not the literal termwise expansion of the original truncated Koszul complex. We apply the symmetric/exterior cycle indices to the zero-extended expression (K1a), then specialize their characters to dimension `N`. No new representation contribution is being added to (K1), since every appended character is identically zero.
++
++Expand (K1a) using those full cycle indices. For any permutation of the `m` abstract slots with cycle lengths `ell_1,...,ell_c`, choose which cycles are assigned to the exterior factor. Its marked signed weight is
+ 
+ `sum_(F subset {1,...,c}) (-1)^(|F|+1) sum_(a in F) ell_a`
+ ` = m` if `c=1`, and `=0` if `c>=2`.                       (K2)
+ 
+ Indeed, mark a particular cycle `a` and sum over the other cycles: its contribution is `ell_a (1-1)^(c-1)`. Thus all configurations with two or more permutation cycles cancel exactly. Only single cycles remain, and (K1) equals `Tr(A^m)`.
+ 
+-This argument is on abstract slots, **before assigning site labels**. Equal site labels therefore do not spoil it. It may be applied independently to the retarded and advanced copies before their phase pairing. Consequently
++This zero-extended cycle-index argument is on abstract slots, **before assigning site labels**. Equal site labels therefore do not spoil it. It may be applied independently to the retarded and advanced copies before their phase pairing. Consequently
+ 
+ `S_m(U)=sum_(n:sum n_i=m) |sum_(E in E_m, row E=n) c(E) U^E|^2`,          (K3)
+ 
+@@ -88,7 +94,7 @@
+ 
+ `N^2 E |e_N(DU) h_(m-N)(DU)|^2=N^2 E |h_(m-N)(DU)|^2`.
+ 
+-Its Abel sum is exactly `N^2 q^N Z_B,U(q)`, the top compact sector in the pinned frontier note. Equation (K2) cancels its disconnected-cycle configurations together with the other exterior choices at each finite degree. No bound on that sector is used. The result is (K3), not a sum of absolute exterior-sector estimates.
++Its Abel sum is exactly `N^2 q^N Z_B,U(q)`, the top compact sector in the pinned frontier note. Equation (K2), applied to the explicitly zero-extended expansion (K1a), cancels its disconnected-cycle configurations together with the other exterior choices at each finite degree. This is not a claim of literal permutation-by-permutation cancellation inside the unextended `j<=N` complex. No bound on that sector is used. The result is (K3), not a sum of absolute exterior-sector estimates.
+ 
+ For illustration, the exact check for `U=I_3`, `m=5` has top-sector value `54` and completed value `3`. This is a finite cancellation control, not a replacement for the Haar `N^3` comparison in the source note.
+ 
+@@ -204,7 +210,7 @@
+ 
+ `H_m(U)=sum_Gamma W_(m,Gamma)(P) exp(i sum_ij Gamma_ij phi_ij)`.         (F2)
+ 
+-Equivalently pair `Gamma` and `-Gamma` into cosines, keeping `Gamma=0` once. This is a concrete Fourier sum over the integer cycle lattice of the bipartite row/column graph. Its phases are invariant under separate left and right diagonal rephasing of `U`. Every integer matrix with zero row and column sums is generated by rectangular four-entry currents, so only gauge-invariant rectangular entry-phase combinations are needed.
++Equivalently pair `Gamma` and `-Gamma` into cosines, keeping `Gamma=0` once. This is a concrete Fourier sum over the integer cycle lattice of the bipartite row/column graph. Its phases are invariant under separate left and right diagonal rephasing of `U`. Every integer matrix with zero row and column sums is generated by rectangular four-entry currents, so only gauge-invariant rectangular entry-phase combinations are needed on the formal full matrix lattice. For sparse support, such a decomposition may use zero entries: extend their undefined phases arbitrarily, and the extension cancels from the final supported current. Equivalently retain supported bipartite cycle phases.
+ 
+ The zero-current part must remain. Distinct Euler tours with identical transition counts already make `t(E,E)>0` at small sizes. It is a genuine coherent contribution, not an error due to repeated occupations. The exact `N=2,m=6` test has
+ 
+@@ -324,3 +330,12 @@
+ Load-bearing inputs from the checked snapshot are the definitions and target in `mathematics/compact_phase_pair_identity.md`, `mathematics/complex_microscopic_phase_source_bounds.md`, and `evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md`. The existing Schur route and its boundary are credited above. No new external analytic theorem is invoked.
+ 
+ The enumeration mechanism is classical. A narrow bibliographic check located P. Whittle, *Some Distribution and Moment Formulae for the Markov Chain*, JRSS B 17 (1955), 235–242, DOI `10.1111/j.2517-6161.1955.tb00197.x`, whose original-paper record identifies its transition-total formula (8): <https://academic.oup.com/jrsssb/article/17/2/235/7026736>. The full theorem is not imported from that abstract; the specific closed-word normalization, loop conventions and periodic-word factors used here were proved directly above. No broad novelty search was performed.
++
++
++### Corrected-v2 review provenance and boundary
++
++The original v1 is preserved without changes. Its SHA-256 is `d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4`; its original computation manifest SHA-256 is `bf2c54bcfc23b0c62844614a008d4dd012b0e3f32ec22bc925ff149b8c367530`. The sole load-bearing proof correction is the explicit zero-character extension (K1a), before full cycle marking. The sparse-support sentence clarifies phase conventions without changing (F1) or (F2).
++
++The bounded bridge regression checks `N=1,m=2` explicitly, plus higher `m>N` cases using exact cycle-index exterior polynomials; it verifies that the appended characters vanish, that the extended and truncated marked characters agree, and that both equal the direct rooted-word trace polynomial. The full original 35-case exact-Q(i) downstream checker and its 873 unrestricted permutation markings are replayed normally and with optimized Python, with scientific outputs unchanged. Detailed coverage, commands, source hashes, and results are recorded in the adjacent corrected-v2 acceptance receipt.
++
++Acceptance concerns the exact finite equalities and the conditional reduction under (B3). No new estimate of the phase-current sum, asymptotic universality statement, actual BGS operator computation, repository modification, or publication is supplied. The required residual remains (B5), including all degrees and the negative plateau correction.

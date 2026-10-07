@@ -1,0 +1,100 @@
+{
+  "base_main_commit": "f9680ac163ab5b1cedf126ac7ee14037036c64db",
+  "historical_failures_retained": {
+    "129c676": "207/208 hosted Hamming failure remains in prior committed evidence.",
+    "f9680ac": "207/208 hosted compact_independent_n4 timeout remains separately preserved.",
+    "v1": "Provenance omissions/swapped-role review HOLD preserved; never relabelled as acceptance.",
+    "v3": "Earlier passing local source frozen separately; v4 only final accepted source."
+  },
+  "maintenance": {
+    "312_normal": {
+      "log_sha256": "3808267a14e9eafa7bdd6c580bdec69721df96ffdf20aac477e73703c5b82f47",
+      "seconds": 155.96,
+      "tests": 220
+    },
+    "312_optimized": {
+      "log_sha256": "a41cd625fe4c396eab327819b85b5b713d59c13bef64ec31a0d439c4c3df99a1",
+      "seconds": 154.076,
+      "tests": 220
+    },
+    "313_normal": {
+      "log_sha256": "e7137c3c9d853c6f60099dfd9a1929015b1cf701e6b5a49de800fb97afb3ed79",
+      "seconds": 171.512,
+      "tests": 220
+    },
+    "313_optimized": {
+      "log_sha256": "b3b7b36a8a2d757fa887dc9fc27dd3b8a31069fe2e1091f21e40562115a61418",
+      "seconds": 169.679,
+      "tests": 220
+    }
+  },
+  "nonclaims": [
+    "No Wave4/5 or later lightcone/arithmetic work included.",
+    "Local software acceptance is separate from new hosted CI.",
+    "Source-equivalent C++/Lean/TeX/fixed-map closures refer to actual prior v1 fresh executions; no new rerun is claimed.",
+    "BGS, microscopic Ward, TRACE-005, masks/source extraction/quantitative rates and zero-insertion comparison remain OPEN.",
+    "Raw numeric values and proofs/expected scientific outputs remain unchanged by the isolated portability repairs."
+  ],
+  "omitted_complete_raw_artifact_scope": "All 642 final validation artifacts and earlier failed/successful source-version receipts remain intact in the validation archive. This bounded packet copies the seal, aggregate/log receipts, durable route manifests, and original fresh-build receipts rather than every scratch/raw output.",
+  "publication_delta": "Only additive nonexecuting receipt files and a new navigation record; no tested source byte or mode changed.",
+  "schema": "bgs-combined-wave3-v4-publication-acceptance-v1",
+  "scientific": {
+    "all_source_executable_and_log_bindings_checked": true,
+    "one_fresh_final_scientific_run": true,
+    "passed": 212,
+    "python": "3.13.5",
+    "total": 212
+  },
+  "sealed_validation_artifacts": 642,
+  "source_equivalent_prior_fresh_executions": {
+    "active_lean_modules": 19,
+    "closures": {
+      "cpp": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/cpp_source_equivalent_closure.json",
+        "closure_sha256": "f8ce02fe43fa3199c31c966c058767c7ce2039ffe1fb44108193403b714da019",
+        "new_execution_claimed": false,
+        "original_execution_version": "v1",
+        "source_files": 22
+      },
+      "fixed_map_supplement": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/fixed_map_supplement_source_equivalent_closure.json",
+        "closure_sha256": "d9f8feb8cbd87978c57d1d3b5b941d6ad9dad3d729c5d4add744d137bad6edf0",
+        "new_execution_claimed": false,
+        "original_execution_version": "v1",
+        "source_files": 120
+      },
+      "lean": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/lean_source_equivalent_closure.json",
+        "closure_sha256": "d689acef50bd8cd892e3a605cacc1382dcaec087f717d4daf8d3b9133fd0c708",
+        "new_execution_claimed": false,
+        "original_execution_version": "v1",
+        "source_files": 29
+      },
+      "manuscript": {
+        "closure_file": "/workspace/shared/bgs_combined_math_validation/v4/manuscript_source_equivalent_closure.json",
+        "closure_sha256": "45abba03aa1247a7a90e47746ba75cb3b261294956080c3fb5551b38e29478e9",
+        "new_execution_claimed": false,
+        "original_execution_version": "v1",
+        "source_files": 102
+      }
+    },
+    "cpp_builds": 22,
+    "fixed_map_replays": 28,
+    "lake_jobs": 22,
+    "manuscript_pages": 277,
+    "new_reruns_claimed": false,
+    "pdf_sha256": "58c8658b0167a52698533c40b6b214aef0c0ba28c8dfcac710ecd7e97d7416eb",
+    "strict_manuscript_passes": 3,
+    "visual_pages_inspected": [
+      265,
+      266,
+      267,
+      268,
+      269
+    ]
+  },
+  "status": "LOCAL_FINAL_ACCEPTANCE_PASS_NEW_HOSTED_CI_PENDING",
+  "tested_source_files": 4211,
+  "tested_source_manifest_sha256": "0b36c73bf7796f1e5dbf71a7cfeb68f8e868b65a433d5e1809afa3168898f001",
+  "validation_artifact_seal_sha256": "90507115f5e72e427164883a84799042d4a1c109c2fb0656c4bb96c734a3d7b9"
+}

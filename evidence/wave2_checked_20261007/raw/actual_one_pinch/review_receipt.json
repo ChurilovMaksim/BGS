@@ -1,0 +1,59 @@
+{
+  "review": "independent_review.md",
+  "review_sha256": "74c5ffc2b30f22767bf27a35c8ff070dfa7ab093442ad9d45104c0a3c8846eb9",
+  "packet_library_file_id": "libfile_6f84eea055f08191869065d582c6e52c",
+  "packet_file_id": "file_000000003ee881f5817080e205dc7aa0",
+  "packet_sha256": "e946093acf988c637f57459884e1ede0099badedf7b682f58396441a9396bda4",
+  "packet_size_bytes": 44596,
+  "canonical_revision": "129c676b8e6457e7e5f1bd6f786b3939cbd84653",
+  "primary_verdict": "proved as written",
+  "scope": "Actual fixed-r displacement overlap, positive compact-band one-pinch, and signed smooth compact-band one-pinch with accepted annealed deletion; excludes separated insertions/masks/T16/BGS",
+  "source_copy_checks": [
+    {
+      "file": "mathematics/four_branch_parametrix.md",
+      "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+      "packet_matches": true,
+      "canonical_matches": true
+    },
+    {
+      "file": "mathematics/fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+      "packet_matches": true,
+      "canonical_matches": true
+    },
+    {
+      "file": "mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+      "packet_matches": true,
+      "canonical_matches": true
+    },
+    {
+      "file": "mathematics/global_switch_transfer.md",
+      "sha256": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90",
+      "packet_matches": true,
+      "canonical_matches": true
+    },
+    {
+      "file": "mathematics/phase_trace_checkpoint.md",
+      "sha256": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+      "packet_matches": true,
+      "canonical_matches": true
+    },
+    {
+      "file": "mathematics/actual_charge_radial_shell.md",
+      "sha256": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+      "packet_matches": true,
+      "canonical_matches": true
+    }
+  ],
+  "internal_packet_manifest_checks": {
+    "entries": 13,
+    "mismatches": []
+  },
+  "finite_control_reports": {
+    "normal_count": 129,
+    "optimized_count": 129,
+    "script_hash_matches_both": true,
+    "rerun_by_reviewer": false
+  }
+}

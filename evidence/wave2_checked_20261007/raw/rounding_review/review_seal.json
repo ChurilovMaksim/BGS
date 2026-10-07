@@ -1,0 +1,61 @@
+{
+  "status": "accepted with explicit scope restriction",
+  "rounding_verdict": "Construction and displayed bounds proved; restrict last strategy sentence to the necessity of some additional discriminating hypothesis or estimate, not a mandated raw-Weyl/all-order method.",
+  "simple_spectrum_verdict": "proved as written, relative to exact reviewed inherited inputs",
+  "review_type": "independent internal mathematical audit",
+  "source_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+  "extensions": [
+    "Reviewed triple-log normalized word window survives with error at most word_length times norm perturbation.",
+    "Combined rounded-and-split control preserves the rounding lower bound, has simple spectrum and no root-of-unity eigenvalue ratios."
+  ],
+  "exclusions": [
+    "No actual-model counterexample",
+    "No actual Schatten theorem",
+    "No arbitrary occupation-twist compactness",
+    "No divergence claimed for the fixed-L rounding family",
+    "No unnormalized o(1) low-trace preservation for nearest rounding",
+    "No repository edit or publication"
+  ],
+  "files": [
+    {
+      "path": "audit.md",
+      "sha256": "b1bf015f17de60e67e4547734a145cf8e06c857cfc6e85ccb5637318d5da5453"
+    },
+    {
+      "path": "must_discriminate.md",
+      "sha256": "32a93dc0b9076319c78768f7bf4a7767df89a8b923b82e85f91d9b98c414aa40"
+    },
+    {
+      "path": "source_pins.json",
+      "sha256": "5ee952555f42c07d20aa9c84fe7220b9e26307173ce25801a9e352d287dac17d"
+    },
+    {
+      "path": "check_companions.py",
+      "sha256": "61e0cded2dd304dd876b4c72033db0c922e344e145ce45b2ec311dfbde86f6c5"
+    },
+    {
+      "path": "run_controls.py",
+      "sha256": "8efd6aad81f58012144e166b975d15ba16032f785436a28379bb685d6ca67945"
+    },
+    {
+      "path": "controls.json",
+      "sha256": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63"
+    },
+    {
+      "path": "computation_manifest.json",
+      "sha256": "cd20a19faec8c2798ef15df0822c6ebcc50dcf97a58dac3d7ca925f16abfe534"
+    },
+    {
+      "path": "stdout.txt",
+      "sha256": "07f720095ed57976d1f5e9e82375760fcabd69d1f1d49d8aeb7180f0670534dd"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    }
+  ]
+}

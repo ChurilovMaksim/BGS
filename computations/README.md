@@ -198,3 +198,13 @@ The old polynomial unfolding could reverse level order, and a zero spread could 
 ## Standalone certificate and input contracts
 
 Assertion-dependent maintained scripts reject optimized Python before imports or output. Explicit-check-only controls retain their stated optimized-mode contract. See [the assertion policy](maintenance/ASSERTION_POLICY.md) and [the fifth-review repair record](../record/round5_code_review_20261006.md) for coverage, domain tests and numerical evidence impact.
+
+## Reviewed complete unmasked insertion controls
+
+`python3 computations/verification/wave3_checked_replay.py --output-dir build/wave3-controls-normal`
+
+`python3 -O computations/verification/wave3_checked_replay.py --output-dir build/wave3-controls-optimized`
+
+Each output directory must be fresh and empty. Four tasks reproduce 72 exact right-frame, 227 exact separated/S2, 1,486 exact convex and 8,708 independent floating controls. Expected/actual bytes, stdout/stderr, source hashes, exit status and explicit-assertion adapter records remain available on failure. Execution metadata is validated separately and never compared as mathematical output. Numeric floating diagnostics retain their original disclosed finite tolerances and are not interval/asymptotic certificates. The unavailable author's 222-control suite is not replayed.
+
+`python3 computations/verification/wave3_integration_audit.py` checks byte/lineage/scope/link consistency only. Exact accepted bounds and the unsigned logarithmic deconvolution obstruction are in [the integration record](../record/wave3_checked_integration_20261007.md). Full suite, manuscript compilation and formal checking remain separate gates.

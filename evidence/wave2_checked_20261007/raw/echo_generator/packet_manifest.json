@@ -1,0 +1,83 @@
+{
+  "base_snapshot_manifest": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+  "scope": "independent echo-generator research only; no source edits or promotion",
+  "status": "analytic theorem independently reviewed; exact bounded controls passed",
+  "source_pins": {
+    "record/checked_research_checkpoint_20261007.md": "9e486b215d1a2bd0818f0871f0dca23c3ecefbc532b25b393d2ee0bbaa527850",
+    "mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+    "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+    "mathematics/uniform_phase_pair_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md": "26649c8a4bf22b21564e1d79b64282fad75e38fd0f10a729cf9ebbae693d1cea",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md": "4cddbeb00477a472cf81c012627de139f70242c905453a9ec72648de1432a8be",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab"
+  },
+  "normal_optimized_result_bytes_identical": true,
+  "payload": {
+    "README.md": {
+      "sha256": "0e5e40ff76ab882654ae67283b169b334aed342be06cd265bed17d1054469d82",
+      "bytes": 3543
+    },
+    "check_exact_controls.py": {
+      "sha256": "b7377f0c368c7d9fea7c41eeea78b5815fd2e1fe2b2a5e0f6d4597d1b460a4fd",
+      "bytes": 13592
+    },
+    "computation_audit.md": {
+      "sha256": "ba6a30c43d7c55e1a5160643e98a9a96320f48a3fa762aaa588d2c58c0696f65",
+      "bytes": 5042
+    },
+    "exact_generator_and_echo.md": {
+      "sha256": "e3979fbb6a4814be575bedd2e020096b8d242a8f52dc501a2efd443d7195c862",
+      "bytes": 5807
+    },
+    "exact_results.json": {
+      "sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "bytes": 7591
+    },
+    "exact_results_optimized.json": {
+      "sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "bytes": 7591
+    },
+    "exact_run.log": {
+      "sha256": "4891187e0f751685077755a434e249d1f4dc7574f666003c0d77c5faec13cb32",
+      "bytes": 216
+    },
+    "exact_run_optimized.log": {
+      "sha256": "be82912d1a6b0c64628a4a0d0009739244e4fa7c05d2536d410394e072fb048c",
+      "bytes": 226
+    },
+    "failed_run_01_embedding.log": {
+      "sha256": "1df44a781639cfa8e9484148696c2689a3cffb6f25601f71177e225f38adee36",
+      "bytes": 927
+    },
+    "failed_run_02_field_inverse.log": {
+      "sha256": "0594c6cb57b70cf3b5225dccbe4a9bcec6d1ac2c2d0e7bba17225f057b0e26d8",
+      "bytes": 798
+    },
+    "failed_run_03_m1_expectation.log": {
+      "sha256": "ac1233395d412b7121673f1966f01f1ae3c09785dbe2dab6f8240124d5b49311",
+      "bytes": 922
+    },
+    "generic_counterexample.md": {
+      "sha256": "bccafdfa6300d04e45e89bd9fb0cdfdbdcfc2b491f84390d030d3c66be89c9a5",
+      "bytes": 3265
+    },
+    "independent_review.md": {
+      "sha256": "f06845c5bf1fbb1810743b6b0ddc0991885fea568748a9f014e04eea791ab7af",
+      "bytes": 19251
+    },
+    "one_pinch_averaged_lemma.md": {
+      "sha256": "8f4fa7f6988a78ed7a1d576e184761efd6674e8275806ce51918ab41ff92b6f8",
+      "bytes": 7954
+    },
+    "positive_overlap_obligation.md": {
+      "sha256": "4e0538c8f0532087b2c9af356aa4aa69f7a7d2414f4be8cd470c7066477cad8a",
+      "bytes": 3436
+    }
+  },
+  "excluded_generated_directories": [
+    "__pycache__"
+  ],
+  "proof_boundary": "annealed one-pinch and consecutive single-block deletion; full T16 and untwisted positive echo remain open"
+}

@@ -1,0 +1,15 @@
+PASS exact generator N=3
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 219, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 212, in main
+    mechanisms.append(mechanism(N));print(f'PASS exact generator N={N}',flush=True)
+                      ^^^^^^^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 101, in mechanism
+    C=Cyclo(N); A=C.A_fourier(); check(A==C.A_midpoint(),f'midpoint N{N}');check(A==C.adj(A),f'hermitian N{N}')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 23, in check
+    if not v: raise RuntimeError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: midpoint N5

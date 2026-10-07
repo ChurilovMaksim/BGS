@@ -547,3 +547,18 @@ Its centered balanced part is not a path mask, and safe translations cannot be
 added again to the low-switch family. All higher fixed-order comparison remains
 open. The odd arithmetic owner now includes the newest and residual-125 bridges;
 the first-old odd follow-on, full simplicity and quantitative gaps remain open.
+
+
+## Wave2: exact remaining signed targets
+
+The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](actual_one_pinch_disappearance.md). Complete unmasked separated and growing convex insertions are now closed at TRACE-028's exact normalizations. Masked/source-weighted insertions, occupation/Hamming/high-switch extraction and signed boundary deconvolution remain unestimated. The annealed consecutive-block leaf does not close the positive block hierarchy. [Fixed-N centering](ordinary_compact_stratum_centering.md) leaves N-uniform source-differentiated signed cancellation, including circle-boundary strata at ab=exp(-2s/N), open. [The corrected hook/current reduction](hook_tree_phase_current_reduction.md) requires N^-2 sum_m exp(-2sm/N) H_m(U_N) -> -exp(-2s)/(4s^2) for each s>0, including Heisenberg degrees, repeated occupations and the Abel tail. The required negative plateau correction is not a small-error target. Literal signed marked T16, completed-source growing-degree covariance, actual Ward overlap (13), full balanced microscopic law, higher factorial comparison, TRACE-005 and BGS remain OPEN.
+
+
+## Weighted coherence boundary
+
+[TRACE-027](weighted_phase_coherence_covariance.md) leaves the absorbed infinite Poisson contractions at degrees Theta(N) and above, including all mixed terms, unestimated. Its factorial bound cannot be summed termwise over that solution. Upper-half slow-window Ward convergence is not convergence at every fixed m or on the full prefix. The precise degree-two mixed-moment exception is removed for the actual operator; all fixed-degree CUE moment identification remains open.
+
+
+## Wave3 current insertion frontier
+
+The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.

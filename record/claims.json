@@ -2547,6 +2547,259 @@
       ],
       "boundary": "All positive N,k, max P<=C/N, singular ||P-J||<=rho<1 and centered strict possibly nonnormal blocks: S>=H/(2K^2), K=1+sqrt(C-1)/(1-rho). Actual eventual c=1/50. Sharp real-alpha absorption gives S_alpha>=cH-ks/2. Scalar ordinary gauge/radial slice does not give block/super gauge. No full superintegral positivity, normalized large-N tail, complex-alpha substitution or BGS identification.",
       "dependency_scope": "Bhatia generalized EMI exact primary leaf; ordinary finite matrix proof and centered block extension separately reviewed. FM021 only supports eventual actual C/rho constants. Bare-body source interpretation is separately qualified, not a full CFT prerequisite."
+    },
+    {
+      "id": "BGS-TRACE-024",
+      "title": "Actual unmasked occupation-subtracted q1 one-pinch disappearance",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL MATHEMATICAL REVIEW",
+      "source": "mathematics/actual_one_pinch_disappearance.md",
+      "dependencies": [
+        "BGS-FM-027",
+        "BGS-FM-021",
+        "BGS-FM-028",
+        "BGS-TRACE-023"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "evidence/wave2_checked_20261007/raw/actual_one_pinch/packet/actual_fixed_lag_overlap.md",
+        "evidence/wave2_checked_20261007/raw/echo_generator/one_pinch_averaged_lemma.md"
+      ],
+      "evidence": [
+        "evidence/wave2_checked_20261007/raw/actual_one_pinch/independent_review.md",
+        "evidence/wave2_checked_20261007/raw/actual_one_pinch/review_receipt.json",
+        "evidence/wave2_checked_20261007/raw/echo_generator/independent_review.md",
+        "evidence/wave2_checked_20261007/raw/echo_generator/packet_manifest.json",
+        "record/wave2_promotion_mapping.json"
+      ],
+      "verifiers": [
+        "computations/verification/wave2_checked_replay.py",
+        "computations/verification/wave2_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; Unmasked q=1 one-pinch only; the annealed leaf separately extends to one consecutive block; No claim that actual positive closure extends to the whole consecutive-block hierarchy; No Hamming/switch mask conclusion; No arbitrary inserted-B corollary; No aggregate rate or practical startup; No growing-r uniformity; No finite-N positivity of the signed subtraction; Generic period-six witness is a changed family, not an actual-model counterexample",
+      "statement": "For the unchanged literal odd-N family, every complex smooth w supported in a fixed positive Heisenberg band obeys N^-2 sum_m w(m/N)[E_N,m(0)-integral E_N,m(theta)dtheta] -> 0. The actual untwisted positive aggregate N^-2 sum_m |w(m/N)| E_N,m(0) -> 0 also holds for bounded compact-band weights. The new actual fixed-lag displacement overlap estimate and the accepted annealed deletion are the two independently reviewed leaves of this ONE scoped claim.",
+      "dependency_scope": "BGS-FM-027 exact setup and inherited literal four-branch parametrix, Sections 1-2 and 4; BGS-FM-021 actual flatness; BGS-FM-028 C4 only for the annealed leaf; BGS-TRACE-023 Abel theorem (A) only for the annealed leaf",
+      "quantifiers": "Fixed 0<a<b<infinity; w in C_c^infinity((a,b)); m=Theta(N); all independent coordinate phases and all cyclic modulation labels retained.",
+      "remaining_obligation": "Masked/source-weighted separated insertions, Hamming/high-switch coefficient extraction, quantitative source derivatives/rates and signed boundary deconvolution remain open. Complete unmasked separated/convex mixtures are subsequently closed by BGS-TRACE-028.",
+      "fixed_lag_input": "For each fixed integer r>=1, ||C_N* H_N^r C_N||<=C_r sqrt(log(2N)/N), where C_N is the displacement-slice frame, not D_N; r-dependent constants have no growing-r bound.",
+      "historical_gram_note_dependencies_not_new_fixed_lag_inputs": [
+        "BGS-FM-021 actual flatness",
+        "BGS-FM-028 C1/C6 centered quasimode annihilation"
+      ],
+      "follow_on_result": "BGS-TRACE-028 closes complete unmasked separated/convex hierarchy; the older one-pinch scope and exclusions remain unchanged. Mask/source/extraction/deconvolution targets remain open."
+    },
+    {
+      "id": "BGS-FM-031",
+      "title": "Ordinary compact-stratum centering and effective fixed-N source cutoff",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL MATHEMATICAL REVIEW + REPRODUCED EXACT CONTROLS",
+      "source": "mathematics/ordinary_compact_stratum_centering.md",
+      "dependencies": [
+        "BGS-TRACE-023"
+      ],
+      "external_dependencies": [
+        "EXT-ZIRN-2021"
+      ],
+      "proof_dependencies": [
+        "evidence/wave2_checked_20261007/raw/centering/compact_stratum_centering.md"
+      ],
+      "evidence": [
+        "evidence/wave2_checked_20261007/raw/centering_review/audit.md",
+        "evidence/wave2_checked_20261007/raw/centering_review/verdict.json",
+        "record/wave2_promotion_mapping.json"
+      ],
+      "verifiers": [
+        "computations/verification/wave2_checked_replay.py",
+        "computations/verification/wave2_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; N1/N2 non-centerable sectors remain in original compact form; No positive full signed-source measure; No super-Berezinian; No dimension-uniform normalized microscopic tail; No body-only substitute for the full signed source",
+      "statement": "For every odd N>=3, labelled stable mixed circle/open-disk strata obey the exact ordinary centering formula (9)-(10), with gauge determinant Delta>=2N-1 and the distinct coarea Jacobian (5). The completed signed source and fixed holomorphic source derivatives obey the fixed-N cutoff bounds (13),(17) for 0<epsilon<=1/(N+3).",
+      "dependency_scope": "BGS-TRACE-023 accepted four-family compact identity only; inherited EXT-ZIRN-2021 completion remains mandatory",
+      "quantifiers": "Almost everywhere for the normalized product measures; fixed N, compact source set, fixed derivative order and Cauchy neighborhood inside the source domain.",
+      "remaining_obligation": "N-uniform source-differentiated signed coefficient/cancellation control including circle-boundary strata at ab=exp(-2s/N), sufficient after N^-2 normalization.",
+      "source_domain": "Original phase identity |a|,|b|<1, arbitrary complex c,d; compact continuation |ab|<1 does not extend the raw phase identity."
+    },
+    {
+      "id": "BGS-TRACE-025",
+      "title": "Changed-family rounded and simple-spectrum signed endpoint barriers",
+      "state": "proved",
+      "ledger_status": "EXACT PROJECT CONSTRUCTIONS + INDEPENDENT INTERNAL REVIEW WITH STRATEGY RESTRICTION",
+      "source": "mathematics/rounding_simple_spectrum_endpoint_barriers.md",
+      "dependencies": [
+        "BGS-TRACE-021",
+        "BGS-FM-027",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-023"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "evidence/wave2_checked_20261007/raw/rounding_sources/rounding_offcharge_upgrade.md",
+        "evidence/wave2_checked_20261007/raw/rounding_sources/simple_spectrum_companion.md",
+        "evidence/wave2_checked_20261007/raw/rounding_review/audit.md"
+      ],
+      "evidence": [
+        "evidence/wave2_checked_20261007/raw/rounding_review/review_seal.json",
+        "record/wave2_promotion_mapping.json"
+      ],
+      "verifiers": [
+        "computations/verification/wave2_checked_replay.py",
+        "computations/verification/wave2_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; Changed quantizer only; no actual-model counterexample; Schatten preservation is conditional on a separately supplied fixed p>2 bound; no actual Schatten theorem; No arbitrary occupation-twist compactness; No divergence for the fixed-L rounded family; No unnormalized o(1) low-trace preservation from nearest rounding; No exact kick/subprincipal/all-order smooth-symbol preservation",
+      "statement": "For each fixed nonzero nonnegative smooth positive-band weight, microscopic spectral rounding gives a changed family at O_w(N^-1) norm distance preserving the specified coarse data but with positive signed high-Hamming/high-switch offcharge liminf and negligible damped endpoint. The separate growing-period N=p^2 witness has an O(N^-3) split with simple spectrum, no root-of-unity eigenvalue ratios or positive scalar power, and residual growth at least (sqrt(N)/2) integral w-O_w(1). A combined rounded-and-split variant preserves the positive rounding lower bound without exact recurrence.",
+      "dependency_scope": "Reviewed universal phase-Abel input; BGS-TRACE-021 exact occupation/Hamming/switch masks; BGS-FM-027 scoped centered charge gap; BGS-FM-028 theta0 compact limit; BGS-FM-029 fixed-word/triple-log scopes; Accepted growing-period witness; Prior microscopic rounding proof",
+      "quantifiers": "Fixed weight and fixed sufficiently large L before N->infinity; eventual N>=L. Split growing-period subsequence p prime, p=2 mod 3; distinct from the fixed-L rounded family.",
+      "mandatory_qualification": "Raw rounding source line 34 is not accepted literally. Every successful endpoint proof must add a property or estimate excluding these witnesses, and identify where it enters. The audit does not require a particular raw-Weyl/all-order proof method."
+    },
+    {
+      "id": "BGS-TRACE-026",
+      "title": "Corrected hook-cycle cancellation, Eulerian trees and phase-current reduction",
+      "state": "proved",
+      "ledger_status": "CORRECTED V2 EXACT FINITE IDENTITIES + BOUNDED INDEPENDENT REVIEW + EXACT REGRESSIONS; CONDITIONAL ABEL REDUCTION",
+      "source": "mathematics/hook_tree_phase_current_reduction.md",
+      "dependencies": [
+        "BGS-TRACE-023",
+        "BGS-FM-021",
+        "BGS-FM-022"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "evidence/wave2_checked_20261007/raw/hook_review/hook_tree_current_identity_v2.md"
+      ],
+      "evidence": [
+        "evidence/wave2_checked_20261007/raw/hook_review/corrected_v2_acceptance.md",
+        "evidence/wave2_checked_20261007/raw/hook_review/corrected_v2_acceptance_receipt.json",
+        "record/wave2_promotion_mapping.json"
+      ],
+      "verifiers": [
+        "computations/verification/wave2_checked_replay.py",
+        "computations/verification/wave2_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; No absolute current-weight bound from theta(E)<=support size; No claim that residual is small; its required limit is negative; No new phase-current asymptotic estimate; Finite equal-P/Q Hadamard discriminator has ||Q||=1 and is not an asymptotic actual-gap counterexample; Classical Koszul/BEST/Markov enumeration credited; no priority claim",
+      "statement": "For every finite N,m, zero-extension by e_j(A)=0 for j>N precedes full marked cycle selection; disconnected slot-cycle configurations cancel before absolute values or phase expectation. Eulerian edge occupations give exact directed-tree counts with repeated coordinates/edges/periodic words. Once-counted cyclic/reverse/overlap subtraction yields the exact signed residual current expression. Under eventual eta_N<=C/N, ||P_N-J_N||<=gamma<1 and ||Q_N||<=rho<1, the removed Abel contribution tends to 1/(4s^2), and balanced identification is equivalent to residual limit -exp(-2s)/(4s^2) for every s>0.",
+      "dependency_scope": "BGS-TRACE-023 completed source/complex bounds; Inherited flatness/P/reverse assumptions for (B3) only; Exact identification target and weighted secular definitions; FM-021/FM-022 are used only for the conditional controlled-sector Abel application, not the all-N,m finite identities.",
+      "quantifiers": "All N,m for finite identities; fixed s>0 and eventual fixed constants for the conditional Abel reduction. Complete each finite-degree signed current sum before summing in degree.",
+      "remaining_obligation": "Actual full oscillatory phase-current limit -exp(-2s)/(4s^2), including Heisenberg degrees, all repeated occupations, Abel tail and negative plateau correction, remains OPEN.",
+      "history": "Original v1 and original audit preserved without changes; v2 correction (K1a) resolves the all-degree cycle-index bridge and supersedes the uncorrected proof, not its historical record.",
+      "context_not_proof_dependency": "BGS-TRACE-022 prior Schur route is credited and not claimed as new."
+    },
+    {
+      "id": "BGS-TRACE-027",
+      "title": "Weighted phase coherence, classical covariance and upper-half slow-window signed Ward law",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT FOCUSED REVIEW + NEW INDEPENDENT EXACT/FINITE CONTROLS; ORIGINAL ARCHIVE REPLAY UNAVAILABLE",
+      "source": "mathematics/weighted_phase_coherence_covariance.md",
+      "dependencies": [
+        "BGS-FM-021",
+        "BGS-FM-022"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/phase_ward_identity.md",
+        "mathematics/actual_body_coercivity_constants.md",
+        "mathematics/four_branch_parametrix.md",
+        "evidence/wave2_checked_20261007/raw/ward_covariance/input/weighted_coherence.md"
+      ],
+      "evidence": [
+        "evidence/wave2_checked_20261007/raw/ward_covariance/review.md",
+        "evidence/wave2_checked_20261007/raw/ward_covariance/SHA256SUMS",
+        "record/wave2_promotion_mapping.json"
+      ],
+      "verifiers": [
+        "computations/verification/wave2_checked_replay.py",
+        "computations/verification/wave2_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+      ],
+      "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green–Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
+      "dependency_scope": "Finite covariance/permutation/centering/signed Ward algebra freshly audited. FM-021 flatness/P mixing and FM-022 reverse decay yield the upper-half slow growing window. Actual transpose-product uses raw four-branch parametrix Sections1,2,4-6 with literal-time curvature and sampling aliases, not coarse gaps alone. Accepted phase Ward v2 normalization is inherited; Ward(13) is not an input or conclusion."
+    },
+    {
+      "id": "BGS-TRACE-028",
+      "title": "Actual right frame, separated compositions and complete unmasked convex pinch hierarchy",
+      "source": "mathematics/right_frame_unmasked_pinch_hierarchy.md",
+      "dependencies": [
+        "BGS-TRACE-024",
+        "BGS-FM-021",
+        "BGS-FM-028",
+        "BGS-TRACE-023"
+      ],
+      "proof_dependencies": [
+        "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/right_overlap_and_unmasked_insertions.md",
+        "evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/transpose_reduction.md",
+        "mathematics/four_branch_parametrix.md",
+        "mathematics/actual_charge_radial_shell.md"
+      ],
+      "evidence": [
+        "evidence/wave3_checked_20261007/raw/right_overlap/independent_review.md",
+        "evidence/wave3_checked_20261007/raw/right_overlap/review_receipt.json"
+      ],
+      "boundary": "Every complete unmasked convex insertion mixture closes at its stated normalized band, uniformly all z_N in [0,1]. Arbitrary B is fixed within the averaged run; no uncontrolled B_n. S3 tail is three-insertion centered control uniform theta/gaps/j, not j=1,2 pointwise control. No raw coefficient N^-2 bound, Hamming/high-switch extraction, source derivatives/rates, deconvolution or undamped zero-insertion identification. T16, Ward(13), balanced law, TRACE005 and BGS OPEN. Author222 suite inaccessible and unreplayed; no formalization.",
+      "dependency_scope": "Actual RIGHT transpose/phase argument uses separately accepted left frame at its exact analytic scope plus raw parametrix/flatness. FM028 C4 compactness and TRACE023 Abel(A) support the separated annealed extension; S3 uses compactness plus S2 flatness only. No growing-r constants or rate.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOFS + FRESH INDEPENDENT RECONSTRUCTION + BOUNDED CONTROLS; EXACT SCOPE RESTRICTIONS",
+      "external_dependencies": [],
+      "verifiers": [
+        "computations/verification/wave3_checked_replay.py",
+        "computations/verification/wave3_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-029",
+      "title": "Complete convex weak-noise stability and actual unsigned logarithmic deconvolution obstruction",
+      "source": "mathematics/convex_pinch_weak_noise_and_deconvolution.md",
+      "dependencies": [
+        "BGS-TRACE-028",
+        "BGS-FM-021",
+        "BGS-FM-028",
+        "BGS-TRACE-023",
+        "BGS-FM-027"
+      ],
+      "proof_dependencies": [
+        "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/conditional_convex_pinch_resummation.md",
+        "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/annealed_compact_pinch_stability.md",
+        "mathematics/global_switch_transfer.md"
+      ],
+      "evidence": [
+        "evidence/wave3_checked_20261007/raw/convex_review/audit.md",
+        "evidence/wave3_checked_20261007/raw/convex_review/review_manifest.json"
+      ],
+      "boundary": "Exact finite-N conditional bounds; actual RIGHT input discharged by TRACE028. Complete signed bounded-u stability only, no masks or source derivatives. Actual complete UNSIGNED deconvolved interval correction diverges in required large-log window; common identity cancels in signed occupation/projection, so this does not refute T16. No large-log signed bound, undamped zero-insertion law, practical rate, formalization, balanced or BGS conclusion.",
+      "dependency_scope": "First-pinch/convex combinatorics universal under stated frame hypotheses. TRACE028 supplies actual RIGHT input; FM028 C4/TRACE023 Abel only for annealed companion. FM027 plus scoped FM021 whole-centered D gap supplies actual unsigned obstruction, not merely nonzero-charge contraction.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOFS + FRESH INDEPENDENT RECONSTRUCTION + BOUNDED CONTROLS; EXACT SCOPE RESTRICTIONS",
+      "external_dependencies": [],
+      "verifiers": [
+        "computations/verification/wave3_checked_replay.py",
+        "computations/verification/wave3_integration_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

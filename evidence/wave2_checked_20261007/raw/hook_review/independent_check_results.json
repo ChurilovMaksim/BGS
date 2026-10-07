@@ -1,0 +1,69 @@
+{
+  "status": "all bounded independent review checks passed",
+  "arithmetic": "exact fractions.Fraction / explicit rational Gaussian pairs",
+  "direct_word_ranges": {
+    "N2": "m=1..6",
+    "N3": "m=1..4"
+  },
+  "rooted_words": 246,
+  "balanced_integer_edge_types": 127,
+  "disconnected_zero_types": 49,
+  "ordered_equal_occupation_word_pairs": 2024,
+  "direct_Hadamard_S4": [
+    "295/64",
+    "279/64"
+  ],
+  "truncation_bridge_witness": {
+    "N": 1,
+    "m": 2,
+    "cycle_lengths": [
+      [
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "literal_j_le_N_marked_weights": [
+      2,
+      0
+    ],
+    "unrestricted_zero_extended_marked_weights": [
+      0,
+      2
+    ],
+    "correction": "Append zero characters e_j(A)=0 for j>N before cycle marking"
+  },
+  "authored_checker_replay_cases": 35,
+  "authored_checker_replay_permutations": 873,
+  "normal_optimized_scientific_output_equal": true,
+  "verified_authored_output_hashes": {
+    "check_grouping.py": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+    "run_checks.py": "38cfb288d5e656dba48a0504d5eb7bcd66c001c563f49d13e519993db8dcb00c",
+    "check_results.json": "136955aef984536ab5a9fe0ce3fabd303917f83fa9c141a7d819a0a20242e501",
+    "check_results_normal.json": "bb71384b21f310f00a06c704ae3f807afa95474b5fdfccd5721a39953d14fae5",
+    "check_run.log": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d",
+    "check_optimized.log": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d",
+    "hook_tree_current_identity.md": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4",
+    "README.md": "f72511ce6cc8f42db35e1f37b3676666c05677fdb56159aae25c06925c3460f1"
+  },
+  "verified_pinned_input_hashes": {
+    "mathematics/compact_phase_pair_identity.md": "4b821bd3c4d67e0f07b32982be8ec06a5e7592d8574aa34c99f67b382b2060f3",
+    "mathematics/complex_microscopic_phase_source_bounds.md": "9fcf9168a6ff39c8df8e4c1f106e969ce3e1cb3cfac963b7d81d2e9990b52b76",
+    "mathematics/balanced_pair_schur_reduction.md": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md": "79e41bd931e8a96d988b44b3b7a9143fc74628b75ce64ad452d727c8ce45d380",
+    "AGENTS.md": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+    "SOURCE_OF_TRUTH.md": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+    "record/repository_conventions.md": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+  },
+  "proof_sha256": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4",
+  "manifest_sha256": "bf2c54bcfc23b0c62844614a008d4dd012b0e3f32ec22bc925ff149b8c367530",
+  "independent_script_sha256": "881eeaf2935ce727d44ad2e4786ba0ab20982ec94ed02387a29c9a217e4167d9",
+  "nonclaims": [
+    "No finite-check extrapolation",
+    "No actual BGS operator evaluation",
+    "No asymptotic identification",
+    "No source or repository edits"
+  ]
+}

@@ -1,5 +1,10 @@
 # BGS research brief
 
+## Reviewed Wave3 unmasked closure
+
+The complete unmasked separated/convex insertion hierarchy is closed by [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md), uniformly for all switch parameters and insertion counts at the stated normalization. [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds bounded-u complete signed stability and a sharp actual unsigned logarithmic deconvolution obstruction. The remaining route retains masks/source extraction and cancellation before absolute bounds; undamped zero-insertion, signed T16, balanced law, Ward(13), TRACE005 and BGS remain OPEN.
+
+
 ## Reviewed phase checkpoint, 7 October 2026
 
 [The checked checkpoint](record/checked_research_checkpoint_20261007.md)
@@ -77,3 +82,13 @@ The earlier cumulative brief is preserved byte-for-byte in [the pre-revision arc
 <a id="current-contributions-and-their-boundaries"></a>
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
+
+
+## Reviewed Wave2 continuation
+
+The accepted [Wave2 scopes](record/wave2_checked_integration_20261007.md) add actual unmasked one-pinch disappearance, fixed-N ordinary signed-source centering, qualified changed-family rounded/split barriers and corrected finite hook/tree/current identities with a conditional Abel reduction. [The phase-source audit](literature/wave2_phase_orbit_source_qualification_20261007.md) retains exact applicability/priority limits. The masked T16 and insertion hierarchy, negative plateau-current estimate, actual Ward overlap, balanced microscopic law, higher factorial comparison and BGS remain OPEN.
+
+
+## Reviewed coherence continuation
+
+[TRACE-027](mathematics/weighted_phase_coherence_covariance.md) adds finite weighted covariance, classical Green–Kubo structure, the complete signed Ward law only on the upper half of a slow growing window and an actual degree-two mixed-moment corollary. The absorbed microscopic Ward (13), balanced law, signed masked T16 and BGS remain OPEN.

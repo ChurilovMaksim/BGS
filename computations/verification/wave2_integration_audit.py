@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""Fail-closed mapping/status/link check, not an independent proof audit."""
+from pathlib import Path
+import hashlib
+import json
+import re
+from wave2_checked_replay import require, safe_path, strict_json, source_bytes
+
+ROOT=Path(__file__).resolve().parents[2]
+
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def run(root=ROOT):
+    mapping=strict_json((root/'record/wave2_promotion_mapping.json').read_bytes())
+    require(mapping['base_commit']=='129c676b8e6457e7e5f1bd6f786b3939cbd84653','base changed')
+    require(mapping['preparation_seal']=='342a585d20134a12100053d16af767d03a07dc18e50cabbe8ff5105330b4f7e8','preparation seal changed')
+    require(len(mapping['cards'])==6,'missing/extra scoped cards')
+    require(len(mapping['immutable_copies'])==85,'prepared immutable closure changed')
+    immutable=[]
+    for row in mapping['immutable_copies']:
+        immutable.append((row['proposed_repository_path'],row['sha256'],row['bytes']))
+    ward=next(c for c in mapping['cards'] if c['claim_id']=='BGS-TRACE-027')
+    for row in ward['immutable_copies']:immutable.append((row['path'],row['sha256'],row['bytes']))
+    require(len(ward['immutable_copies'])==7,'Ward copied closure changed')
+    for rel,digest,size in immutable:
+        p=safe_path(root,rel);require(sha(p)==digest and p.stat().st_size==size,'immutable copy changed: '+rel)
+    require(not list((root/'evidence/wave2_checked_20261007').rglob('*.xml')),'private source extracts copied')
+    registry=strict_json((root/'record/claims.json').read_bytes())
+    current={c['id']:c for c in registry['claims']}
+    previous=strict_json((root/'evidence/wave2_checked_20261007/raw/provenance/base_navigation/record/claims.json').read_bytes())
+    for c in previous['claims']:require(current.get(c['id'])==c,'old claim contract changed: '+c['id'])
+    ids={'BGS-TRACE-024','BGS-FM-031','BGS-TRACE-025','BGS-TRACE-026','BGS-TRACE-027'}
+    later=set()
+    continuation=root/'record/wave3_promotion_mapping.json'
+    if continuation.is_file():
+        later={c['id'] for c in strict_json(continuation.read_bytes())['cards']}
+        require(later=={'BGS-TRACE-028','BGS-TRACE-029'},'undeclared later ID set')
+    require(set(current)-{c['id'] for c in previous['claims']}==ids|later,'new stable ID set differs')
+    require(current['BGS-BGS-001']['state']=='open' and current['BGS-TRACE-005']['state']=='open','BGS/TRACE005 strengthened')
+    require({c['claim_id'] for c in mapping['cards']}==ids|{None},'card mapping duplicate or theorem/audit confused')
+    for c in mapping['cards']:
+        path=safe_path(root,c['source'])
+        if c['claim_id']:
+            require(c['claim_id'] in path.read_text(),'ID missing from wrapper')
+            require(sha(path)==c['integrated_wrapper_sha256'],'integrated wrapper mapping changed')
+            require(current[c['claim_id']]['formalization']==[],'uncompiled formalization claimed')
+    words={cid:(root/current[cid]['source']).read_text() for cid in ids}
+    require('no aggregate rate' in words['BGS-TRACE-024'].lower(),'one-pinch rate exclusion lost')
+    require('smooth' in words['BGS-TRACE-024'] and 'bounded' in words['BGS-TRACE-024'],'weight distinction lost')
+    require('fixed-N' in words['BGS-FM-031'] and 'N>=3' in words['BGS-FM-031'],'centering fixed-N boundary lost')
+    require('no particular proof method' in words['BGS-TRACE-025'],'rounding strategy strengthened')
+    require('e_j(A)=0 for j>N' in words['BGS-TRACE-026'] and '-exp(-2s)/(4s^2)' in words['BGS-TRACE-026'],'hook extension/plateau sign lost')
+    require('ceil(T_N/2)<=m<=T_N' in words['BGS-TRACE-027'] and 'full-prefix' in words['BGS-TRACE-027'] and '403' in words['BGS-TRACE-027'],'Ward window/export scope lost')
+    # Source pins are historical inputs, not silently refreshed current statuses.
+    scoped=strict_json((root/'record/wave2_scoped_input_bindings.json').read_bytes());require(len(scoped['files'])==50,'targeted closure changed')
+    for rel,row in scoped['files'].items():require(sha(safe_path(root,row['source']))==row['sha256'],'reviewed pin changed: '+rel)
+    inputs=source_bytes(root)
+    contract=strict_json(inputs['record/wave2_replay_contract.json']);require(len(contract['tasks'])==8 and len({t['domain'] for t in contract['tasks']})==6,'replay domain closure differs')
+    links=0
+    for rel in [c['source'] for c in mapping['cards']]+['record/wave2_checked_integration_20261007.md']:
+        p=root/rel
+        for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
+            if '://' not in link:
+                require((p.parent/link.split('#')[0]).resolve().is_file(),'broken wrapper/integration link: '+rel+' -> '+link);links+=1
+    manuscript=root/'manuscript/unified_sections/checked_phase_trace_checkpoint.tex';text=manuscript.read_text()
+    mm=strict_json((root/'record/wave2_manuscript_mapping.json').read_bytes())
+    require(sha(root/mm['section'])==mm['section_sha256'],'manuscript mapping changed')
+    require(set(mm['authoritative_wrappers'])=={c['source'] for c in mapping['cards']},'manuscript source closure differs')
+    for rel,digest in mm['authoritative_wrappers'].items():require(sha(root/rel)==digest,'manuscript source binding changed')
+    for cid in ids:require(cid.removeprefix('BGS-') in text,'missing manuscript scope '+cid)
+    require('upper-half' in text and 'negative plateau' in text and 'remain open' in text,'manuscript scope exclusions lost')
+    require(sha(root/'literature/external_dependencies.json')=='e55207391ff6df4870e53d81a875b267f5e848a2be38bee058843df5e350bcbb','external leaf changed')
+    return {'status':'passed','immutable_copies':len(immutable),'prepared_copies':85,'ward_sealed_files':7,'reviewed_input_pins':50,'scoped_cards':6,'new_theorem_ids':5,'unchanged_prior_claims':len(previous['claims']),'wrapper_links':links,'replay_tasks':8,'bounded_domains':6,'private_XML_extracts':0,'unavailable_Ward_archive_replayed':False,'scope':'Mapping, bytes, status and links; not proof audit or aggregate suite.'}
+
+if __name__=='__main__':print(json.dumps(run(),indent=2))

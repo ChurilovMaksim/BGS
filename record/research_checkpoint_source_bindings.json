@@ -1,9 +1,7 @@
 {
-  "schema": "bgs-checkpoint-source-bindings-v1",
-  "scope": "Explicit portable retained-file closure; original packet seals retain separately documented third-party PDF/executable omissions. Hash validation is not proof verification.",
   "files": {
-    "computations/maintenance/tests/test_research_checkpoint_portability.py": "7768bae3cba5cfbb52cf2cfdbab3a01989c89071bef625c24fe1c8496527300d",
-    "computations/verification/research_checkpoint_replay.py": "8ad2070b7bb12456238ade81867720a499afdda74acdb6332ea36ecf59e6dce8",
+    "computations/maintenance/tests/test_research_checkpoint_portability.py": "87001621ef911448a446170ea6377cad1ee555b19d70e765de7f613620eaa4eb",
+    "computations/verification/research_checkpoint_replay.py": "4c0148cc8f2d1ec10800fe975179e4d54d110ce244fd0a1855545a90b199af95",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/README.md": "9ed7fb3dd8d4bf95ae8470ce34a3c3270e20e053fe9b77077fd5a72f10e854f3",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py": "8972fe7d88dc3c730ffcd9e341c4a982460a29701c4ea43ef8cc9a064d998a60",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log": "f62ae7cd1482cc62769dac830748eb402855041b6720d43d0287bc99b5089e48",
@@ -320,6 +318,8 @@
     "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources.json": "eeb37d14d03741edeff6326beba8329ed9b55b69f920c108c21d6d35d30d0101",
     "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/sources/z21_boundary_page.png": "6b09ae0b248519dc7a06319378a05393e608664132057736f5c927725548f5ad",
     "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/validate_manifest.py": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+    "evidence/wave2_checked_20261007/raw/provenance/prior_replay/research_checkpoint_replay.py": "8ad2070b7bb12456238ade81867720a499afdda74acdb6332ea36ecf59e6dce8",
+    "evidence/wave2_checked_20261007/raw/provenance/prior_replay/research_checkpoint_source_bindings.json": "9719c69c6b396c145e2e6d0292f11a4bd001ddb90eaa7d66cb931ee85286989a",
     "literature/color_one_boundary_qualification_20261007.md": "e0538a3445d5a4aa8a7bcd6c213d8ec9c57cbf56e6b6123f740d06d7be746c47",
     "mathematics/actual_body_coercivity_constants.md": "23566b86660c089b6005f0165d4a4dee2d0528e7c7e99ee34a831ff475182ae8",
     "mathematics/actual_charge_radial_resolvent.md": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6",
@@ -342,6 +342,15 @@
     "record/research_checkpoint_balanced_audit_import.json": "7c8a039620fb937d47d6c756f30a0b3616abf4a65e2abbbdb2ecc3cc70a1f7f0",
     "record/research_checkpoint_import.json": "6d95975e8324665c393d24a8ac9c4076664d585fed404b7e149897e141bef6fb",
     "record/research_checkpoint_proof_mapping.json": "e90a13816745c805f88a930f50f178b54ef124a3a107cfc6a0d611bc585c6ceb",
-    "record/research_checkpoint_replay_contract.json": "3d233777f94eea2399766e922309c673184da3eaec3462615e0f01a552da927d"
-  }
+    "record/research_checkpoint_replay_contract.json": "c9406761d9d6d46a3b17fc5f49ff8c5ff3990887a74f71b6b196e33324c59f78"
+  },
+  "historical_inputs": {
+    "mathematics/phase_trace_checkpoint.md": {
+      "reason": "Exact old reviewed wrapper bytes retained after qualified Wave2 navigation addition; no mathematical pin refresh.",
+      "sha256": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+      "source": "evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md"
+    }
+  },
+  "schema": "bgs-checkpoint-source-bindings-v1",
+  "scope": "Explicit portable retained-file closure; original packet seals retain separately documented third-party PDF/executable omissions. Hash validation is not proof verification."
 }

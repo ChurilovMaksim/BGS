@@ -1,0 +1,19 @@
+PASS exact generator N=3
+PASS exact generator N=5
+PASS exact generator N=7
+PASS exact generator N=9
+PASS rational twirl
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 221, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 216, in main
+    jets=actual_jets();print('PASS actual symbolic jets',flush=True)
+         ^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 172, in actual_jets
+    if m==1:check(all(x==0 for x in off),'m1 balanced')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/bgs_wave2_echo_generator/check_exact_controls.py", line 23, in check
+    if not v: raise RuntimeError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: m1 balanced

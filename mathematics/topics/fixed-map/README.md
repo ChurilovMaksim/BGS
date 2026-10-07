@@ -153,3 +153,23 @@ return operator and residual-25 proof/review paths.
 [TRACE-021: one disjoint pair residual](../../hamming_low_switch_residual.md)
 collects separately reviewed Hamming and whole-fiber low-switch estimates.
 It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
+
+
+## Reviewed Wave2 subsidiary scopes
+
+- [TRACE-024 actual unmasked q1 one-pinch](../../actual_one_pinch_disappearance.md): bounded positive/smooth signed weights; no aggregate rate or masked extension.
+- [FM-031 ordinary centering](../../ordinary_compact_stratum_centering.md): odd N>=3, a.e., completed signed source, fixed-N cutoff only.
+- [TRACE-025 rounded/split endpoint barriers](../../rounding_simple_spectrum_endpoint_barriers.md): changed families and a required separating property/estimate.
+- [TRACE-026 corrected hook/tree/current reduction](../../hook_tree_phase_current_reduction.md): exact finite identities and conditional Abel reduction; negative plateau-current limit OPEN.
+- [Bounded phase-source qualification](../../../literature/wave2_phase_orbit_source_qualification_20261007.md): no graph universality or priority claim.
+
+
+## Weighted coherence
+
+- [TRACE-027](../../weighted_phase_coherence_covariance.md): finite covariance and nontrivial Green–Kubo structure; complete signed Ward convergence only on the slow window upper half. Actual degree-two exception removal is a separate precise family.
+
+
+## Complete unmasked pinch hierarchy
+
+- [TRACE-028](../../right_frame_unmasked_pinch_hierarchy.md): actual right-frame/fixed-B, separated actual/annealed averages and all-z complete convex hierarchy; no masks/rates/deconvolution.
+- [TRACE-029](../../convex_pinch_weak_noise_and_deconvolution.md): exact finite-N resummation and bounded-u signed stability; actual full unsigned large-log divergence retains identity cancellation, without a T16 refutation.

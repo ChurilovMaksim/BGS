@@ -1,0 +1,11 @@
+# Qualified Wave2 phase-orbit source audit
+
+This is a bounded source-applicability record, not a new universality theorem or a priority certificate. This qualification accompanies BGS-TRACE-023 and EXT-BH-2026, without allocating a theorem ID. The unchanged completed compact source, registered matrix/coercivity results and EXT-BH-2026 conditional leaf retain their current status.
+
+The checked sources do not provide a verified transfer from the actual P-gap, reverse decay and scoped charge gaps to the full signed Heisenberg hook covariance or the phase-Ward overlap contraction. Tanner's matching torus ensemble has a conjectural universal step. The quantum-graph sources have graph-specific hypotheses and incomplete termwise/nonlinear transfer; they are not arbitrary dense odd-N DU theorems. Bourgade-Huang applies only after the missing full approximate mixed-loop hierarchy is proved. Neither the pair law nor the full hierarchy is downgraded from OPEN.
+
+The report's P1-P3 entry estimates are explicitly its author's elementary inferences from flatness and a singular P-gap. Their fixed-order bounds do not control a signed nonlinear remainder, boundary completion or all Heisenberg degrees. They are not separately independently reviewed theorem promotion in this package. Generalized-Minami resampling is credited as known machinery; priority of the precise full source-bound package remains unverified.
+
+The byte-exact [report](../evidence/wave2_checked_20261007/raw/phase_literature/report.md) and [dictionary](../evidence/wave2_checked_20261007/raw/phase_literature/source_dictionary.md) contain exact versions, locators, source-to-model translations and failed candidates. Search horizon is 7 October 2026, without exhaustive forward-citation or multilingual closure. Their [extraction manifest](../evidence/wave2_checked_20261007/raw/phase_literature/extraction_manifest.json) is provenance metadata only: private filtered XML page extracts are deliberately not included, and those hashes are not PDF-byte hashes. Do not publish raw primary-source extracts.
+
+Literal masked T16, BGS-TRACE-005, the balanced microscopic law, higher factorial comparison and deterministic BGS remain OPEN.

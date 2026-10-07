@@ -862,8 +862,32 @@ absorption. Exact restrictions and independent source/review pins are in
 Separately reviewed changed-family growing-period offcharge failure and
 infinite unregularized one-channel boundary-delay variance constrain proposed
 proof steps. Accepted phase Ward v2 leaves its actual signed overlap estimate
-(13) OPEN. Candidate centering, simple-spectrum/rounding companions and
-Schatten sketches are not promoted. The color-one ordinary bulk-only source
+(13) OPEN. Qualified fixed-N centering and changed-family simple-spectrum/rounding companions are integrated below; actual Schatten sketches remain unpromoted. The color-one ordinary bulk-only source
 correction is [qualified narrowly](../literature/color_one_boundary_qualification_20261007.md):
 FM-018 direct matrix results survive and invariant prescriptions/graph
 universality are not declared false. All BGS/CUE identification remains OPEN.
+
+
+## Reviewed Wave2 subsidiary results, 7 October 2026
+
+- **BGS-TRACE-024:** [actual unmasked q=1 one-pinch disappearance](../mathematics/actual_one_pinch_disappearance.md) combines the independently accepted actual fixed-lag displacement-frame estimate with annealed deletion in ONE theorem. The positive aggregate holds for bounded compact-band weights; signed occupation-subtracted disappearance retains smooth weights. Constants are fixed-lag; there is no aggregate rate or practical startup. The annealed leaf separately extends to one consecutive block, without an actual positive block-hierarchy claim.
+- **BGS-FM-031:** [ordinary centering](../mathematics/ordinary_compact_stratum_centering.md) is a.e. on labelled stable strata for odd N>=3, preserving the original measures, gauge determinant and distinct coarea factor. Completed signed-source and fixed-derivative cutoff bounds are fixed-N only. No positive signed-source measure, super-Berezinian or normalized dimension-uniform microscopic tail.
+- **BGS-TRACE-025:** [rounded/split endpoint barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) are changed-quantizer constructions. A successful endpoint proof needs a property or estimate excluding these witnesses and an identified use of it. The stronger strategy sentence in raw rounding line 34 is superseded by this restriction; no particular raw-Weyl/all-order proof method is required. Actual Schatten preservation is not proved.
+- **BGS-TRACE-026:** [corrected hook/tree/current reduction](../mathematics/hook_tree_phase_current_reduction.md) gives exact all-N,m identities only after exterior-character zero extension before marked-cycle selection. Its controlled-sector Abel theorem is conditional on the stated eventual flatness/P/reverse constants. Balanced identification requires the residual limit -exp(-2s)/(4s^2), not a small residual. Original v1/audit and corrected v2 acceptance remain separately traceable.
+- [Phase-orbit literature qualification](../literature/wave2_phase_orbit_source_qualification_20261007.md) records exact bounded applicability/priority limits. No new graph universality or external load-bearing leaf is added; author P1-P3 inferences are not promoted to independently reviewed asymptotic claims.
+
+The [integration mapping](wave2_promotion_mapping.json) and [review record](wave2_checked_integration_20261007.md) retain byte-exact source/review evidence. **Literal signed masked T16, masked insertion/source-extraction/deconvolution hierarchy, actual signed Ward overlap (13), complete balanced microscopic law, TRACE-005, higher factorial comparison and deterministic BGS remain OPEN.** No formalization or external referee certification is asserted.
+
+
+## BGS-TRACE-027: separately reviewed coherence covariance
+
+[Weighted coherence](../mathematics/weighted_phase_coherence_covariance.md) proves exact finite covariance/error bounds and the nontrivial classical Green–Kubo leading term. Complete signed Ward convergence is only on the upper half ceil(T_N/2)<=m<=T_N of the specified slowly growing window, without all-fixed-m/full-prefix convergence. The actual unconjugated transpose-product bound removes the stated degree-two mixed-moment exception only. Original ZIP controls were inaccessible/unreplayed; exact exported proof and NEW independent controls are sealed. Absorbed Ward (13), microscopic balanced law, literal masked T16, TRACE-005 and BGS remain OPEN.
+
+
+## Reviewed Wave3 complete unmasked hierarchy
+
+**TRACE-028:** [right-frame and complete insertion theorem](../mathematics/right_frame_unmasked_pinch_hierarchy.md) closes complete unmasked fixed-j separated sums (actual and annealed) and every complete convex insertion mixture, uniformly z_N in [0,1]. The NEW centered S3 tail ||D0||S3³=o(N) controls every j>=3 word uniformly in theta/gaps/j. Arbitrary fixed-B averaging keeps B fixed during coherent time summation. Older statements that the complete unmasked separated hierarchy was unestimated are superseded at precisely these normalizations.
+
+**TRACE-029:** [convex weak-noise/deconvolution theorem](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds exact finite-N bounds, complete signed bounded-u stability and an actual UNSIGNED large-log obstruction: F_m=1+o(1) and normalized unweighted deconvolved interval sum ~N^(bA0-1)/(A0 log N). The common identity contribution cancels only after signed occupation subtraction (or relevant projection); this does not refute T16.
+
+**Current OPEN frontier:** masked/source-weighted separated sums, Hamming/high-switch extraction, source derivatives and quantitative rates, signed centered boundary deconvolution and undamped zero-insertion comparison, actual absorbed Ward (13), complete balanced microscopic law, TRACE-005, higher factorial comparison and deterministic BGS. No formalization or unavailable author222-suite certification.

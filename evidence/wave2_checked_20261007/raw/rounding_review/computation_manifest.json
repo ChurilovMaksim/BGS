@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "claim_id": "BGS-WAVE2-ROUNDING-COMPANIONS-BOUNDED-CONTROLS",
+  "repository": {
+    "commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+    "dirty": true,
+    "note": "Read-only non-Git source snapshot includes checked staged additions; authoritative snapshot manifest SHA256 d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba. No repository edit."
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/shared/bgs_wave2_rounding_barriers/check_companions.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "numpy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "limits": "60-second subprocess timeout; BLAS/OpenMP requested one thread (cooperative); no hard memory or CPU-affinity limit."
+  },
+  "mathematics": {
+    "assertion_tested": "Exact complete-pair/balanced/offcharge decomposition and disjoint literal Hamming/switch masks; finite perturbation norm and normalized word inequalities; finite growing-period phase-split diagnostics.",
+    "coefficient_domain": "Gaussian integers with explicit common denominators for masks; IEEE complex128 floating linear algebra and scalar bump values otherwise.",
+    "conventions": "Ordinary traces, N^-2 time aggregation, charges y-x modulo N, rooted cyclic paths, ordinary matrix/HS operator norms.",
+    "inputs": [
+      {
+        "path": "/workspace/shared/bgs_wave2_rounding_barriers/check_companions.py",
+        "sha256_before": "61e0cded2dd304dd876b4c72033db0c922e344e145ce45b2ec311dfbde86f6c5",
+        "sha256_after": "61e0cded2dd304dd876b4c72033db0c922e344e145ce45b2ec311dfbde86f6c5"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md",
+        "sha256": "d4bae7595a4a0787105c429384d82af70ef7f7968e4cda2f0c9e78635d637a92"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md",
+        "sha256": "6f163c8e3c9acf0a01818443763986cc85aea2ababd44fbe701b646d7a28ce58"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md",
+        "sha256": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md",
+        "sha256": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md",
+        "sha256": "fd9118f5f7bb97b0daa1383448275c3f36f6031a68b22dc54b189563698d4979"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json",
+        "sha256": "20e899a18455033537964c0c425041ec1851618a00cc831ad7f7eedaca603807"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md",
+        "sha256": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json",
+        "sha256": "9aed22fcf246e66a6f6480bb7201304351dce54e888d1e4add02743438110912"
+      },
+      {
+        "snapshot_relative_path": "mathematics/microscopic_rounding_control.md",
+        "sha256": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889"
+      },
+      {
+        "snapshot_relative_path": "mathematics/fractional_hamming_cancellation.md",
+        "sha256": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5"
+      },
+      {
+        "snapshot_relative_path": "mathematics/global_switch_transfer.md",
+        "sha256": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90"
+      },
+      {
+        "snapshot_relative_path": "mathematics/onestep_charge_gap.md",
+        "sha256": "15d713759394c52cf16665719e970189ef6dab9044e08e5b54bbb29243cfa747"
+      },
+      {
+        "snapshot_relative_path": "mathematics/actual_charge_radial_shell.md",
+        "sha256": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b"
+      },
+      {
+        "snapshot_relative_path": "mathematics/actual_charge_radial_resolvent.md",
+        "sha256": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6"
+      },
+      {
+        "snapshot_relative_path": "mathematics/literal_fixed_word_freeness.md",
+        "sha256": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0"
+      },
+      {
+        "snapshot_relative_path": "mathematics/literal_growing_word_window.md",
+        "sha256": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a"
+      },
+      {
+        "snapshot_relative_path": "mathematics/fixed_map_path_model.md",
+        "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+      },
+      {
+        "snapshot_relative_path": "mathematics/four_branch_parametrix.md",
+        "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7"
+      },
+      {
+        "snapshot_relative_path": "mathematics/position_chain_mixing.md",
+        "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+      },
+      {
+        "snapshot_relative_path": "mathematics/reversed_path_decay.md",
+        "sha256": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47"
+      },
+      {
+        "snapshot_relative_path": "mathematics/phase_trace_checkpoint.md",
+        "sha256": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208"
+      },
+      {
+        "snapshot_relative_path": "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md",
+        "sha256": "0ec05e56f56403f0665c68d75a76145da0c8b7dfb0f9e3d4d85621b09eddc683"
+      },
+      {
+        "snapshot_relative_path": "record/claim_ledger.md",
+        "sha256": "6e282d41a3e059c93c92b57dfa6107df420a5f651f24df681cf9dcc3463d0f7b"
+      },
+      {
+        "snapshot_relative_path": "record/claims.json",
+        "sha256": "8cf4ba7581487310f3417f46f44c5ba4c29fb34331f45e7d749b126b361178c8"
+      }
+    ],
+    "bounds": {
+      "masks": {
+        "N": 3,
+        "m": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ordered_pairs": 66429,
+        "switch_cutoffs": [
+          0,
+          1,
+          2
+        ]
+      },
+      "norm_N": [
+        3,
+        5,
+        9
+      ],
+      "word_lengths": [
+        1,
+        2,
+        3,
+        7,
+        17
+      ],
+      "split_primes": [
+        5,
+        11
+      ],
+      "split_trace_powers": "1 through 2N",
+      "smooth_band": "(1,2), L=256; finite N=1025,4097,16385"
+    },
+    "non_claims": [
+      "No numerical proof of asymptotic divergence, spectral irrationality, compactness, or actual-model identities.",
+      "No rounding of actual U_N at enormous fixed-tau startup was performed.",
+      "No analytic source theorem is inferred from bounded execution."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy default_rng PCG64",
+    "seed": 20261007
+  },
+  "run": {
+    "started_at": "2026-10-07T04:27:43.522249+00:00",
+    "runtime_seconds": 0.42913176999718416,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "controls.json",
+      "sha256": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63"
+    },
+    {
+      "path": "stdout.txt",
+      "sha256": "07f720095ed57976d1f5e9e82375760fcabd69d1f1d49d8aeb7180f0670534dd"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "checks": [
+    "All 24 consumed source pins match the supplied checked snapshot manifest.",
+    "Source manifest SHA256 matches exact parent pin.",
+    "Gaussian-rational input unitarity checked exactly.",
+    "All 66429 path-pair classifications enumerated without symmetry reductions.",
+    "Continuity and split inequalities passed with disclosed floating tolerances.",
+    "Smooth-band return sum exceeds the fixed Abel constant by more than one."
+  ],
+  "result": "Implementation and finite exact assertions verified in stated ranges; floating diagnostics conditional on stated tolerances. Universal conclusions are established by the separate proof audit.",
+  "residual_risks": [
+    "Version-1 manifest has legacy provenance limits. Explicit execution-input hashes are nevertheless recorded.",
+    "Floating bounds are diagnostics without interval certificates.",
+    "Source dependency acceptance is imported with exact bytes and scopes; no full re-audit of all earlier analytic theorems."
+  ]
+}

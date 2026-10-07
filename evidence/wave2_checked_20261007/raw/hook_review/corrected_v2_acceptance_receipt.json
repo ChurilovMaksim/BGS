@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "revision": "corrected-v2",
+  "primary_verdict": "proved as written",
+  "accepted_scope": "Exact finite identities for all N,m after explicit zero-character extension, and controlled-sector Abel reduction under (B3); phase-current asymptotic remains open",
+  "created_at": "2026-10-07T05:09:38.213437+00:00",
+  "original_proof_sha256": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4",
+  "original_computation_manifest_sha256": "bf2c54bcfc23b0c62844614a008d4dd012b0e3f32ec22bc925ff149b8c367530",
+  "corrected_proof_sha256": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59",
+  "pinned_source_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+  "source_inputs_sha256": {
+    "mathematics/compact_phase_pair_identity.md": "4b821bd3c4d67e0f07b32982be8ec06a5e7592d8574aa34c99f67b382b2060f3",
+    "mathematics/complex_microscopic_phase_source_bounds.md": "9fcf9168a6ff39c8df8e4c1f106e969ce3e1cb3cfac963b7d81d2e9990b52b76",
+    "mathematics/balanced_pair_schur_reduction.md": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md": "79e41bd931e8a96d988b44b3b7a9143fc74628b75ce64ad452d727c8ce45d380",
+    "AGENTS.md": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+    "SOURCE_OF_TRUTH.md": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+    "record/repository_conventions.md": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+    "mathematics/position_chain_mixing.md": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+    "mathematics/reversed_path_decay.md": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+    "supplement/fixed_map/weighted-secular/determinant_boundary.md": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/uniform_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f"
+  },
+  "original_outputs_reverified_sha256": {
+    "check_grouping.py": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+    "run_checks.py": "38cfb288d5e656dba48a0504d5eb7bcd66c001c563f49d13e519993db8dcb00c",
+    "check_results.json": "136955aef984536ab5a9fe0ce3fabd303917f83fa9c141a7d819a0a20242e501",
+    "check_results_normal.json": "bb71384b21f310f00a06c704ae3f807afa95474b5fdfccd5721a39953d14fae5",
+    "check_run.log": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d",
+    "check_optimized.log": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d",
+    "hook_tree_current_identity.md": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4",
+    "README.md": "f72511ce6cc8f42db35e1f37b3676666c05677fdb56159aae25c06925c3460f1"
+  },
+  "python": "3.12.14",
+  "bridge": {
+    "cases": 16,
+    "zero_exterior_character_checks": 36,
+    "N1_m2_witness": {
+      "truncated_cycle_weights": [
+        2,
+        0
+      ],
+      "extended_cycle_weights": [
+        0,
+        2
+      ]
+    },
+    "elapsed_seconds": 0.35315651899873046,
+    "scope": "Exact Q(i); shared checked arithmetic/fixtures, independent cycle-index and power-sum constructions"
+  },
+  "downstream": {
+    "cases": 35,
+    "permutation_checks": 873,
+    "normal_optimized_scientific_output_identical": true,
+    "all_rows_identical_to_original": true
+  },
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 python3 check_zero_extension_bridge.py",
+    "PYTHONDONTWRITEBYTECODE=1 python3 check_grouping_review_copy.py",
+    "PYTHONDONTWRITEBYTECODE=1 python3 -O check_grouping_review_copy.py"
+  ],
+  "outputs": [
+    {
+      "path": "hook_tree_current_identity_v1_preserved.md",
+      "sha256": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4"
+    },
+    {
+      "path": "hook_tree_current_identity_v2.md",
+      "sha256": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59"
+    },
+    {
+      "path": "hook_tree_current_identity_v2.diff",
+      "sha256": "5da672d14dcc0d2a31a7fe56a4683ec1b43afb7d375e32653826071c23d94631"
+    },
+    {
+      "path": "corrected_v2_acceptance.md",
+      "sha256": "b9b20bdeb565df9baf4a4b4aef12b793a0acf45eeabf5788e23b4720bb0834a2"
+    },
+    {
+      "path": "check_zero_extension_bridge.py",
+      "sha256": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863"
+    },
+    {
+      "path": "zero_extension_bridge_results.json",
+      "sha256": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb"
+    },
+    {
+      "path": "zero_extension_bridge.log",
+      "sha256": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb"
+    },
+    {
+      "path": "check_grouping_review_copy.py",
+      "sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb"
+    },
+    {
+      "path": "v2_downstream_normal.json",
+      "sha256": "10d96c5dff633d03a1f3984db9bd896ce0c62b3ef7e45b081971ecea7eb849e3"
+    },
+    {
+      "path": "v2_downstream_optimized.json",
+      "sha256": "4925342935c4f6d2963d4981eba96ec5eb75e3e857a67c2e6b4990f7f42d1f21"
+    },
+    {
+      "path": "v2_downstream_normal.log",
+      "sha256": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d"
+    },
+    {
+      "path": "v2_downstream_optimized.log",
+      "sha256": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d"
+    },
+    {
+      "path": "independent_boundary_checks.py",
+      "sha256": "881eeaf2935ce727d44ad2e4786ba0ab20982ec94ed02387a29c9a217e4167d9"
+    },
+    {
+      "path": "independent_check_results.json",
+      "sha256": "84f09b07f1dfeda7d5898399ecc43db84502d06bd3615f86ff826ef6eef35a16"
+    },
+    {
+      "path": "independent_checks.log",
+      "sha256": "12d42c2c339cad1c538205f80da80d941833350802899100926e52c1e37442ab"
+    },
+    {
+      "path": "proof_audit.md",
+      "sha256": "f2d5596784d467dc8164231b07085d15425a875c528bcaa8b72ff4ec77751d7c"
+    }
+  ],
+  "no_claims": [
+    "No extrapolation from finite checks",
+    "No new phase-current asymptotic estimate",
+    "No BGS operator evaluation",
+    "No repository edits or publication",
+    "No new source-snapshot writes",
+    "No external schema-validation claim",
+    "No application of historical resource caps to copied replay"
+  ]
+}

@@ -192,3 +192,18 @@ hierarchy remain open; no BGS conclusion follows.
 
 [Earlier detailed checkpoints](../record/history/2026/cohesive_frontier_20261006/prior_results_tail.txt)
 retain component provenance; current statements are the linked theorem owners.
+
+
+## Reviewed Wave2 bounded theorem family
+
+[TRACE-024](actual_one_pinch_disappearance.md): actual unmasked one-pinch disappearance (bounded positive/smooth signed weights, no rate). [FM-031](ordinary_compact_stratum_centering.md): a.e. ordinary centering and fixed-N complete signed-source cutoff. [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md): changed-family endpoint barriers with a separating-estimate restriction. [TRACE-026](hook_tree_phase_current_reduction.md): corrected exact finite hook/tree/current identities and conditional Abel reduction. [Phase source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no universality/priority theorem. Masked T16, balanced law, TRACE-005 and BGS remain OPEN.
+
+
+## Reviewed weighted coherence covariance
+
+[TRACE-027](weighted_phase_coherence_covariance.md): exact finite covariance, nontrivial Green–Kubo term, complete signed Ward upper-half slow-window law, and actual degree-two mixed-moment exception removal. No microscopic Ward (13) or all-fixed-degree CUE identification.
+
+
+## Reviewed complete unmasked pinch continuation
+
+[TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.

@@ -1,0 +1,50 @@
+{
+  "status": "all bounded independent review checks passed",
+  "arithmetic": "exact fractions.Fraction / explicit rational Gaussian pairs",
+  "direct_word_ranges": {
+    "N2": "m=1..6",
+    "N3": "m=1..4"
+  },
+  "rooted_words": 246,
+  "balanced_integer_edge_types": 127,
+  "disconnected_zero_types": 49,
+  "ordered_equal_occupation_word_pairs": 2024,
+  "direct_Hadamard_S4": [
+    "295/64",
+    "279/64"
+  ],
+  "truncation_bridge_witness": {
+    "N": 1,
+    "m": 2,
+    "cycle_lengths": [
+      [
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "literal_j_le_N_marked_weights": [
+      2,
+      0
+    ],
+    "unrestricted_zero_extended_marked_weights": [
+      0,
+      2
+    ],
+    "correction": "Append zero characters e_j(A)=0 for j>N before cycle marking"
+  },
+  "authored_checker_replay_cases": 35,
+  "authored_checker_replay_permutations": 873,
+  "normal_optimized_scientific_output_equal": true,
+  "proof_sha256": "d5e2a1fe38d4e384387063bb86c99cd2f5b1f56ab4599dc3a4bdecf78fdb30e4",
+  "manifest_sha256": "bf2c54bcfc23b0c62844614a008d4dd012b0e3f32ec22bc925ff149b8c367530",
+  "independent_script_sha256": "881eeaf2935ce727d44ad2e4786ba0ab20982ec94ed02387a29c9a217e4167d9",
+  "nonclaims": [
+    "No finite-check extrapolation",
+    "No actual BGS operator evaluation",
+    "No asymptotic identification",
+    "No source or repository edits"
+  ]
+}

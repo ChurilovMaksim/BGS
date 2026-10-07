@@ -1,0 +1,48 @@
+{
+  "manifest_sha256": "22e8254203473334b8dec4ff7eb5c6a227435ecaaf51e7c734a30c6ce321dffc",
+  "artifacts": {
+    "README.md": {
+      "sha256": "8aeb36fc2d15e151daa3c4dbc4d706eb0624f09d8dfa712673e5209126ed3ab7",
+      "matches_manifest": true
+    },
+    "audit.md": {
+      "sha256": "0ed24826498a1aeb53f87aa2abeb968f3a1063bf1c1806dad3b79703056d7dd8",
+      "matches_manifest": true
+    },
+    "checks/results.json": {
+      "sha256": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+      "matches_manifest": true
+    },
+    "checks/run.log": {
+      "sha256": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+      "matches_manifest": true
+    },
+    "checks/verify_centering.py": {
+      "sha256": "44b0afc0181d2090dda2cc6b9b007b0bcb16b869948ebe47b32979057a7c8f1d",
+      "matches_manifest": true
+    },
+    "compact_stratum_centering.md": {
+      "sha256": "e7ce0e1cfb780732481eb92d773339046c9ac481a29729f7904709e6cd62f205",
+      "matches_manifest": true
+    },
+    "input_manifest.json": {
+      "sha256": "e4250173ceb0e0ae32b30ea7626fbb608c8b3475166549f1c79dd7123358f23b",
+      "matches_manifest": true
+    },
+    "inputs/centering_candidate.md": {
+      "sha256": "c19ecf74f9bff041524758ebe124c3fdffd42be8f5ec6ed627fe8056091b13d2",
+      "matches_manifest": true
+    },
+    "source_binding_check.json": {
+      "sha256": "b80445fcb326c480ed9b1d21fff58e6a13569cd6dc8e4abb68c39ea331c64a29",
+      "matches_manifest": true
+    },
+    "validate_packet.py": {
+      "sha256": "b705209ea0e1dc006a30418e8662366f0a96d07b969eff0850e79634234294b5",
+      "matches_manifest": true
+    }
+  },
+  "reproduced_control_count": 20,
+  "reproduced_output_matches_frozen_output": true,
+  "independence_note": "Checker reproduced unchanged in review directory; independent mathematical audit is in audit.md, not an independently written second implementation."
+}

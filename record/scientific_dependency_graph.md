@@ -259,3 +259,15 @@ FM-029 really use inherited FM-018 ordinary-Weyl/Egorov/model inputs at their
 precise scopes. FM-030 uses FM-021 only for its eventual actual constants,
 plus checked EXT-BHATIA-2002. None closes TRACE-005/BGS or connects a
 changed-family obstruction to a false claim about the literal operator.
+
+
+## Reviewed Wave2 dependency scopes
+
+TRACE-024 uses FM-027 exact setup/parametrix and FM-021 actual flatness for the new fixed-lag leaf; FM-028 C4 and TRACE-023 Abel (A) are only annealed-leaf inputs. The prior C1/C6 Gram note is history, not a new fixed-lag prerequisite. FM-031 uses the completed TRACE-023 source and mandatory EXT-ZIRN-2021 completion. TRACE-025 preserves its stated actual coarse-data inputs only to construct changed families; it has no actual-model counterexample implication. TRACE-026 finite identities are universal; FM-021/FM-022 enter only the conditional controlled-sector Abel application. The phase literature audit adds no new dependency leaf or universality node.
+
+TRACE-027 finite algebra and signed Ward normalization inherit accepted phase Ward v2; actual upper-half slow-window use is FM-021/FM-022. Actual degree-two exception removal separately uses literal branch curvature and alias-safe transpose-product control, not coarse P/Q inputs alone. No edge to a proved Ward(13), microscopic law or TRACE-005 is added.
+
+
+## Wave3 complete unmasked continuation
+
+TRACE-028 uses the separately accepted actual right-frame/transpose extension of TRACE-024, FM-021 flatness, FM-028 C4 compactness and TRACE-023 Abel(A). The new S3 tail is compactness plus S2 flatness, with no rate. TRACE-029 finite resummation is conditional in general; TRACE-028 discharges the actual RIGHT input. FM-028 C4/TRACE-023 control its annealed companion; scoped whole-centered FM-027/FM-021 gives the unsigned actual logarithmic obstruction. No edge identifies masks, signed T16, microscopic Ward(13), balanced law or TRACE005.

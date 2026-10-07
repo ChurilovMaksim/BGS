@@ -32,6 +32,8 @@ REPLAY_ARTIFACT_OPTIONS = {
     'charge_strengthening_replay': '--output-dir',
     'balanced_pair_schur': '--output-dir',
     'research_checkpoint_replay': '--output-dir',
+    'wave2_checked_replay': '--output-dir',
+    'wave3_checked_replay': '--output-dir',
     'fractional_hamming_replay': '--output-dir',
     'fractional_hamming_full_end_2_1': '--output-dir',
     'fractional_hamming_full_end_2_2': '--output-dir',
@@ -42,6 +44,15 @@ REPLAY_ARTIFACT_OPTIONS = {
     'fractional_hamming_network': '--output-dir',
     'fractional_hamming_offcharge_bound': '--output-dir',
 }
+
+
+# One unchanged exact N4 packet now has a declared 600 CPU / 660 wall budget.
+# Keep its aggregate watchdog finite with room for the other packet controls.
+CHECK_TIMEOUT_SECONDS = {'research_checkpoint_replay': 900}
+
+
+def check_timeout_seconds(name):
+    return CHECK_TIMEOUT_SECONDS.get(name, 360)
 
 
 def replay_artifact_args(name: str, certificate_directory: Path) -> list[str]:
@@ -350,7 +361,7 @@ def main() -> None:
         with log.open('w') as stream:
             try:
                 code=subprocess.run(cmd,cwd=ROOT,env=env,stdout=stream,
-                                    stderr=subprocess.STDOUT,timeout=360).returncode
+                                    stderr=subprocess.STDOUT,timeout=check_timeout_seconds(name)).returncode
             except subprocess.TimeoutExpired:code=124
             except OSError as exc:
                 stream.write(str(exc)+'\n');code=127
@@ -361,6 +372,7 @@ def main() -> None:
              'execution_status':'passed' if code==0 else 'failed',
              'executable_sha256':executable_hash,
              'seconds':round(time.monotonic()-start,3),
+             'declared_wall_timeout_seconds':check_timeout_seconds(name),
              'log_sha256':sha256(log)}
         print(name,code,flush=True)
         if code:print(log.read_text(errors='replace')[-4000:],flush=True)
