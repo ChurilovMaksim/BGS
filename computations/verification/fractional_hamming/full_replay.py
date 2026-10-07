@@ -2,10 +2,11 @@
 """Bounded portable author/reviewer/synthesis replay, silent unless a check fails.
 
 Run from any directory with python3 -B PATH --output-dir DIR. Default results
-must be explicitly placed under the supplied repository root for a portable
-manifest. This archival generator is not the no-argument workspace verifier. Scientific comparisons
-omit only author elapsed_seconds and reviewer runtime_seconds. No source hash,
-Python version, arithmetic record, mathematical value or case is omitted.
+are retained in a fresh supplied directory; external paths are recorded explicitly.
+This archival generator is not the no-argument workspace verifier. Scientific comparisons
+separate only declared top-level author Python/SymPy and timing provenance.
+The exact typed scientific payload and every case remain fully compared.
+Raw actual/expected results and bounded mismatch paths survive failed checks.
 """
 from pathlib import Path
 import argparse
@@ -34,12 +35,15 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def comparison_api():
+    path = PORTS / 'comparison.py'
+    namespace = {'__name__': 'bgs_fractional_hamming_comparison', '__file__': str(path)}
+    exec(compile(path.read_bytes(), str(path), 'exec'), namespace)
+    return namespace
+
+
 def normalized(data, family):
-    result = dict(data)
-    for key in {'author': ['elapsed_seconds'],
-                'independent': ['runtime_seconds'], 'synthesis': []}[family]:
-        result.pop(key, None)
-    return result
+    return comparison_api()['separate'](data, family)[0]
 
 
 def main(argv=None):
@@ -47,7 +51,9 @@ def main(argv=None):
     parser.add_argument('--output-dir', type=Path, required=True)
     args = parser.parse_args(argv)
     output = args.output_dir.resolve()
-    output.mkdir(parents=True, exist_ok=True)
+    require(not output.exists(), 'Output directory must be fresh and absent')
+    output.mkdir(parents=True)
+    api = comparison_api()
     env = os.environ.copy()
     env.update(PYTHONDONTWRITEBYTECODE='1', OPENBLAS_NUM_THREADS='1',
                OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
@@ -60,23 +66,42 @@ def main(argv=None):
 
     def execute(command, timeout=360):
         start = time.monotonic()
-        run = subprocess.run(command, cwd=output, env=env, preexec_fn=limits,
-                             timeout=timeout, capture_output=True, text=True)
+        try:
+            run = subprocess.run(command, cwd=output, env=env, preexec_fn=limits,
+                                 timeout=timeout, capture_output=True, text=True)
+        except subprocess.TimeoutExpired as error:
+            label = (Path(command[command.index('--output') + 1]).stem
+                     if '--output' in command else 'control_timeout_' + str(len(controls)))
+            for name, value in [('stdout', error.stdout), ('stderr', error.stderr)]:
+                data = value if isinstance(value, bytes) else (value or '').encode()
+                path = output / (label + '.' + name)
+                path.write_bytes(data)
+                output_files.append(path)
+            if '--output' in command:
+                path = Path(command[command.index('--output') + 1])
+                if path.is_file() and not path.is_symlink() and path.resolve() == path:
+                    output_files.append(path)
+            failure_attempts.append({'command': command, 'timed_out': True,
+                                     'timeout_seconds': timeout,
+                                     'runtime_seconds': time.monotonic() - start})
+            raise
         return run, {'command': command, 'runtime_seconds': time.monotonic() - start,
                      'exit_status': run.returncode,
                      'stdout': run.stdout, 'stderr': run.stderr}
 
     files = sorted(p for p in RAW.rglob('*') if p.is_file())
-    files += [PORTS / (name + '_checks.py') for name in ['author', 'independent', 'synthesis']] + [Path(__file__).resolve()]
+    files += [PORTS / (name + '_checks.py') for name in ['author', 'independent', 'synthesis']] + [Path(__file__).resolve(), PORTS / 'comparison.py']
     before = {str(p.relative_to(ROOT)): sha(p) for p in files}
     started = datetime.datetime.now(datetime.timezone.utc).isoformat()
     overall_start = time.monotonic()
     expected_paths = {'author': RAW / 'author/results.json',
                       'independent': RAW / 'review/results/verified/all_results.json',
                       'synthesis': RAW / 'review/synthesis_results.json'}
+    cached_expected = {family: path.read_bytes() for family, path in expected_paths.items()}
     records = []
     controls = []
     output_files = []
+    failure_attempts = []
     failure = None
     try:
         for family in ['author', 'independent', 'synthesis']:
@@ -84,7 +109,10 @@ def main(argv=None):
             tree = ast.parse(port.read_text())
             require(not any(isinstance(n, ast.Assert) for n in ast.walk(tree)),
                     'Port retains an optimization-sensitive assert: ' + family)
-            expected = normalized(json.loads(expected_paths[family].read_text()), family)
+            expected, _ = api['separate'](api['parse_json'](cached_expected[family]), family, expected=True)
+            expected_copy = output / (family + '.expected.raw')
+            expected_copy.write_bytes(cached_expected[family])
+            output_files.append(expected_copy)
             normal_bytes = None
             for optimized in [False, True]:
                 mode = 'optimized' if optimized else 'normal'
@@ -126,26 +154,43 @@ def main(argv=None):
                 controls.append({'family': family, 'mode': mode,
                                  'check': 'actual explicit mathematical failure remains active', **info})
                 result_path = output / (family + '_' + mode + '.json')
+                require(not result_path.exists() and not result_path.is_symlink(),
+                        'Producer result must be fresh and absent: ' + family)
                 run, info = execute(prefix + [str(port), '--output', str(result_path)])
+                for stream in ['stdout', 'stderr']:
+                    log_path = output / (family + '_' + mode + '.' + stream)
+                    log_path.write_text(getattr(run, stream))
+                    output_files.append(log_path)
+                if result_path.is_file() and not result_path.is_symlink():
+                    output_files.append(result_path)
                 require(run.returncode == 0, family + ' replay failed: ' + run.stderr)
                 require(not run.stdout and not run.stderr, 'Replay main is not silent: ' + family)
-                actual = json.loads(result_path.read_text())
-                require(actual == expected, family + ' differs from frozen scientific output')
+                require(result_path.is_file() and not result_path.is_symlink()
+                        and result_path.resolve() == result_path,
+                        'Producer result missing, nonregular or symlink: ' + family)
+                expected, actual, comparison = api['compare'](cached_expected[family], result_path.read_bytes(), family)
+                comparison_path = output / (family + '_' + mode + '.comparison.json')
+                comparison_path.write_text(json.dumps(comparison, indent=2) + '\n')
+                output_files.append(comparison_path)
+                scientific_path = output / (family + '_' + mode + '.scientific.json')
+                scientific_path.write_bytes(api['scientific_bytes'](actual))
+                output_files.append(scientific_path)
+                require(comparison['scientific_comparison']['equal'], family + ' differs from frozen scientific output: ' + json.dumps(comparison['scientific_comparison']['mismatches']))
                 if family == 'independent':
                     for name in ['full_end', 'top_gram', 'torus', 'network', 'offcharge_bound']:
                         for version in ['results/verified', 'results']:
                             reference = json.loads((RAW / 'review' / version / (name + '.json')).read_text())
-                            require(actual[name] == reference, 'Subresult differs from ' + version + '/' + name)
+                            require(api['differences'](actual[name], reference)['equal'], 'Subresult differs from ' + version + '/' + name)
                 if family == 'synthesis':
                     require(len(actual['mask_cases']) == 108, 'Missing synthesis radius pair')
                     require(len(actual['pair_families']) == 8, 'Missing synthesis coordinate family')
                 if normal_bytes is None:
-                    normal_bytes = result_path.read_bytes()
+                    normal_bytes = scientific_path.read_bytes()
                 else:
-                    require(normal_bytes == result_path.read_bytes(), family + ' normal/-O bytes differ')
+                    require(normal_bytes == scientific_path.read_bytes(), family + ' normal/-O bytes differ')
                 records.append({'family': family, 'mode': mode,
                                 'scientific_output_matches_frozen': True,
-                                'scientific_sha256': sha(result_path), **info})
+                                'scientific_sha256': sha(scientific_path), 'comparison': comparison, **info})
                 output_files.append(result_path)
     except Exception as error:
         failure = repr(error)
@@ -154,11 +199,12 @@ def main(argv=None):
     if not stable:
         failure = (failure or '') + ' Input bytes changed during replay.'
     report = {'status': 'passed' if failure is None else 'failed',
-              'failure': failure, 'runs': records, 'portability_controls': controls,
+              'failure': failure, 'runs': records, 'failed_attempts': failure_attempts,
+              'portability_controls': controls,
               'input_bytes_unchanged': stable,
               'normal_optimized_scientific_bytes_identical': failure is None,
-              'omitted_fields': {'author': ['elapsed_seconds'],
-                                 'independent': ['runtime_seconds'], 'synthesis': []},
+              'separated_top_level_provenance_paths': {'author': ['/python', '/sympy', '/elapsed_seconds'],
+                                 'independent': ['/runtime_seconds'], 'synthesis': []},
               'bounds': {'author_position_tuples_N2_m5_r2': 256,
                          'author_N3_m5_r2_selected_tuples': 6,
                          'full_End_N_m': [[2, 1], [2, 2], [2, 3], [3, 2]],
@@ -177,7 +223,7 @@ def main(argv=None):
     import sympy
     manifest = {
         'schema_version': 2, 'claim_id': 'BGS-FRACTIONAL-HAMMING-PORTABLE-REPLAY',
-        'repository': {'commit': 'none: partial staging overlay; source hashes are authoritative', 'dirty': True},
+        'repository': {'commit': 'local source snapshot; source hashes are authoritative', 'dirty': True},
         'command': [sys.executable, '-B', str(Path(__file__).resolve()), '--output-dir', str(output)],
         'environment': {'software': [{'name': 'Python', 'version': sys.version},
                                      {'name': 'SymPy', 'version': sympy.__version__}],
@@ -197,8 +243,8 @@ def main(argv=None):
                 'cpu_affinity': cpu},
         'input_artifacts': [{'path': p, 'sha256': h, 'sha256_after': after[p]} for p, h in before.items()],
         'execution_artifacts': sorted(before),
-        'declared_results': [str(p.relative_to(ROOT)) for p in output_files],
-        'outputs': [{'path': str(p.relative_to(ROOT)), 'sha256': sha(p), 'kind': 'result'} for p in output_files],
+        'declared_results': [str(p.relative_to(ROOT)) if p.is_relative_to(ROOT) else str(p) for p in dict.fromkeys(output_files)],
+        'outputs': [{'path': str(p.relative_to(ROOT)) if p.is_relative_to(ROOT) else str(p), 'sha256': sha(p), 'kind': 'result'} for p in dict.fromkeys(output_files)],
         'checks': [{'check': 'normal/-O frozen-output agreement and active failure controls', 'passed': failure is None}],
         'result': 'implementation and finite assertion verified in the stated range' if failure is None else 'failed; inspect comparison.json',
         'residual_risks': ['No analytic recertification; exact symbolic computation is not proof-assistant verification.']}

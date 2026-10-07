@@ -32,6 +32,15 @@ REPLAY_ARTIFACT_OPTIONS = {
     'charge_strengthening_replay': '--output-dir',
     'balanced_pair_schur': '--output-dir',
     'research_checkpoint_replay': '--output-dir',
+    'fractional_hamming_replay': '--output-dir',
+    'fractional_hamming_full_end_2_1': '--output-dir',
+    'fractional_hamming_full_end_2_2': '--output-dir',
+    'fractional_hamming_full_end_2_3': '--output-dir',
+    'fractional_hamming_full_end_3_2': '--output-dir',
+    'fractional_hamming_top_gram': '--output-dir',
+    'fractional_hamming_torus': '--output-dir',
+    'fractional_hamming_network': '--output-dir',
+    'fractional_hamming_offcharge_bound': '--output-dir',
 }
 
 

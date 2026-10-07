@@ -1,0 +1,592 @@
+{
+  "status": "passed",
+  "failure": null,
+  "runs": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "c443a97f318f232d7d690fd38d821038333a7cac3c143d989cb8d380ae0ab758",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "author",
+        "case": null,
+        "expected_provenance": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "sympy": "1.14.0",
+          "elapsed_seconds": 0.7861833572387695
+        },
+        "observed_provenance": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "sympy": "1.14.0"
+        },
+        "separated_top_level_paths": [
+          "/python",
+          "/sympy",
+          "/elapsed_seconds"
+        ],
+        "expected_raw_sha256": "d4253718c3adc00b268dbc319d6d9ab96c6310c4a8f6dc32418fa070cd47a16a",
+        "observed_raw_sha256": "0298cb533576c844244b7c80a0e250e7c6b9b419acc0863c88627a7b393a0831",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/author_normal.json"
+      ],
+      "runtime_seconds": 0.9713204510044307,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "c443a97f318f232d7d690fd38d821038333a7cac3c143d989cb8d380ae0ab758",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "author",
+        "case": null,
+        "expected_provenance": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "sympy": "1.14.0",
+          "elapsed_seconds": 0.7861833572387695
+        },
+        "observed_provenance": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "sympy": "1.14.0"
+        },
+        "separated_top_level_paths": [
+          "/python",
+          "/sympy",
+          "/elapsed_seconds"
+        ],
+        "expected_raw_sha256": "d4253718c3adc00b268dbc319d6d9ab96c6310c4a8f6dc32418fa070cd47a16a",
+        "observed_raw_sha256": "0298cb533576c844244b7c80a0e250e7c6b9b419acc0863c88627a7b393a0831",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/author_optimized.json"
+      ],
+      "runtime_seconds": 2.495145349006634,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "124f9e7cf5457f6ab62ba78d477ffa084d380c30942cdbf70cf8d9ff2fe5f0bf",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "independent",
+        "case": null,
+        "expected_provenance": {
+          "runtime_seconds": 149.5640317530051
+        },
+        "observed_provenance": {},
+        "separated_top_level_paths": [
+          "/runtime_seconds"
+        ],
+        "expected_raw_sha256": "ad855640cff7af4c32444f6e8a65a0d847c3f782b49db4160e14cd6a6475cff3",
+        "observed_raw_sha256": "787f2510dafbab299d998a64b0462b1d1b609e83dfcff942a0ae8763196a35fe",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/independent_normal.json"
+      ],
+      "runtime_seconds": 229.02523903800466,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "124f9e7cf5457f6ab62ba78d477ffa084d380c30942cdbf70cf8d9ff2fe5f0bf",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "independent",
+        "case": null,
+        "expected_provenance": {
+          "runtime_seconds": 149.5640317530051
+        },
+        "observed_provenance": {},
+        "separated_top_level_paths": [
+          "/runtime_seconds"
+        ],
+        "expected_raw_sha256": "ad855640cff7af4c32444f6e8a65a0d847c3f782b49db4160e14cd6a6475cff3",
+        "observed_raw_sha256": "787f2510dafbab299d998a64b0462b1d1b609e83dfcff942a0ae8763196a35fe",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/independent_optimized.json"
+      ],
+      "runtime_seconds": 194.33668497600593,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "54ca195ecb1f641a46f2d2f627d2242641afb722b653a33103a45ae0801b9bb8",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "synthesis",
+        "case": null,
+        "expected_provenance": {},
+        "observed_provenance": {},
+        "separated_top_level_paths": [],
+        "expected_raw_sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591",
+        "observed_raw_sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/synthesis_normal.json"
+      ],
+      "runtime_seconds": 0.11125671899935696,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "optimized",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "54ca195ecb1f641a46f2d2f627d2242641afb722b653a33103a45ae0801b9bb8",
+      "comparison": {
+        "schema": "bgs-fractional-hamming-exact-provenance-v1",
+        "family": "synthesis",
+        "case": null,
+        "expected_provenance": {},
+        "observed_provenance": {},
+        "separated_top_level_paths": [],
+        "expected_raw_sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591",
+        "observed_raw_sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591",
+        "scientific_comparison": {
+          "equal": true,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "truncated": false
+        }
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py",
+        "--output",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/full_hamming_python312/synthesis_optimized.json"
+      ],
+      "runtime_seconds": 0.19326043300679885,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "failed_attempts": [],
+  "portability_controls": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.29373820101318415,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py"
+      ],
+      "runtime_seconds": 0.28380172699689865,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.direct_trace([(0,)], [])"
+      ],
+      "runtime_seconds": 0.26818898700003047,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py\", line 64, in direct_trace\n    raise AssertionError('Exact check failed at original line 46')\nAssertionError: Exact check failed at original line 46\n"
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 1.8346262409904739,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py"
+      ],
+      "runtime_seconds": 2.0252806390053593,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.direct_trace([(0,)], [])"
+      ],
+      "runtime_seconds": 1.7323149540025042,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/author_checks.py\", line 64, in direct_trace\n    raise AssertionError('Exact check failed at original line 46')\nAssertionError: Exact check failed at original line 46\n"
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.2840726020076545,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py"
+      ],
+      "runtime_seconds": 0.2827283369988436,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.zero(m.s.ones(1,1))"
+      ],
+      "runtime_seconds": 0.29023127000255045,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py\", line 24, in zero\n    raise AssertionError('Exact check failed at original line 20')\nAssertionError: Exact check failed at original line 20\n"
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 1.662630935999914,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py"
+      ],
+      "runtime_seconds": 1.6797662129974924,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.zero(m.s.ones(1,1))"
+      ],
+      "runtime_seconds": 2.018205273998319,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/independent_checks.py\", line 24, in zero\n    raise AssertionError('Exact check failed at original line 20')\nAssertionError: Exact check failed at original line 20\n"
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.025905734990374185,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py"
+      ],
+      "runtime_seconds": 0.030770507000852376,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import ast, pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py').read_text()); n=next(n for n in ast.walk(t) if isinstance(n,ast.If) and any(isinstance(x,ast.Name) and x.id==\"ham\" for x in ast.walk(n.test)) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 0.03328871200210415,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"negative_control\", line 23, in run_checks\nAssertionError: Exact check failed at original line 14\n"
+    },
+    {
+      "family": "synthesis",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.09480641700793058,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "optimized",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py"
+      ],
+      "runtime_seconds": 0.1222908700001426,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "optimized",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import ast, pathlib; t=ast.parse(pathlib.Path('/workspace/shared/bgs_hamming_ci_repair_validation_v2/source_snapshot/computations/verification/fractional_hamming/synthesis_checks.py').read_text()); n=next(n for n in ast.walk(t) if isinstance(n,ast.If) and any(isinstance(x,ast.Name) and x.id==\"ham\" for x in ast.walk(n.test)) and any(isinstance(x,ast.Raise) for x in n.body)); n.test=ast.Constant(value=True); ast.fix_missing_locations(t); g={\"__name__\":\"negative_control\"}; exec(compile(t,\"negative_control\",\"exec\"),g); g[\"run_checks\"]()"
+      ],
+      "runtime_seconds": 0.10054705799848307,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"negative_control\", line 23, in run_checks\nAssertionError: Exact check failed at original line 14\n"
+    }
+  ],
+  "input_bytes_unchanged": true,
+  "normal_optimized_scientific_bytes_identical": true,
+  "separated_top_level_provenance_paths": {
+    "author": [
+      "/python",
+      "/sympy",
+      "/elapsed_seconds"
+    ],
+    "independent": [
+      "/runtime_seconds"
+    ],
+    "synthesis": []
+  },
+  "bounds": {
+    "author_position_tuples_N2_m5_r2": 256,
+    "author_N3_m5_r2_selected_tuples": 6,
+    "full_End_N_m": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "top_Gram_N_m_r": [
+      2,
+      4,
+      2
+    ],
+    "torus_N_m": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "network_stages": [
+      1,
+      2,
+      3
+    ],
+    "offcharge_N2_m": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "synthesis_N": [
+      2,
+      3
+    ],
+    "synthesis_m": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "synthesis_radius_pairs": 108
+  },
+  "non_claims": [
+    "Bounded replay is not a universal proof.",
+    "Inherited actual-map analysis and Haar tail are not re-audited.",
+    "No bound on the final residual, plateau, factorial hierarchy or BGS."
+  ]
+}

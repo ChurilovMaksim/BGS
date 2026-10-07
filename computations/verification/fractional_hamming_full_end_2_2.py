@@ -5,4 +5,4 @@ import runpy
 
 if __name__ == '__main__':
     context = runpy.run_path(str(Path(__file__).with_name('fractional_hamming_replay.py')))
-    context['main']('full_end_2_2')
+    context['cli']('full_end_2_2')

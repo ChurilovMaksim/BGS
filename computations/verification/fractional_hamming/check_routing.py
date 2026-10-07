@@ -57,6 +57,9 @@ def test_routing():
         for key in {'author': ['elapsed_seconds'], 'independent': ['runtime_seconds'],
                     'synthesis': []}[family]:
             value.pop(key, None)
+        if family == 'author':
+            value['python'] = 'Different Python runtime fixture'
+            value['sympy'] = 'Different SymPy runtime fixture'
         if case is not None:
             value = value['full_end' if case.startswith('full_end_') else case]
             if case.startswith('full_end_'):
@@ -75,6 +78,14 @@ def test_routing():
         workdirs.append(work)
         return SimpleNamespace(returncode=0, stdout='', stderr='')
 
+    def invoke_split(script):
+        previous = sys.argv
+        try:
+            sys.argv = [str(script)]
+            return runpy.run_path(str(script), run_name='__main__')
+        finally:
+            sys.argv = previous
+
     try:
         module.subprocess.run = fake_run
         with contextlib.redirect_stdout(stream), contextlib.redirect_stderr(stream):
@@ -87,7 +98,7 @@ def test_routing():
         for case in cases:
             script = ROOT / 'computations/verification' / ('fractional_hamming_' + case + '.py')
             with contextlib.redirect_stdout(stream), contextlib.redirect_stderr(stream):
-                runpy.run_path(str(script), run_name='__main__')
+                invoke_split(script)
         require(not stream.getvalue(), 'Split wrapper produced output')
         require([c['case'] for c in calls[2:]] == cases,
                 'Eight split entries do not cover exactly the original independent cases')
@@ -101,7 +112,7 @@ def test_routing():
                     module.main()
                 else:
                     script = ROOT / 'computations/verification' / ('fractional_hamming_' + case + '.py')
-                    runpy.run_path(str(script), run_name='__main__')
+                    invoke_split(script)
             except AssertionError as error:
                 caught = 'differs from frozen scientific output' in str(error)
             require(caught, 'Scientific corruption was accepted for ' + str(case))

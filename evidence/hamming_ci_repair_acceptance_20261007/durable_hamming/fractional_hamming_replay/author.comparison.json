@@ -1,0 +1,27 @@
+{
+  "schema": "bgs-fractional-hamming-exact-provenance-v1",
+  "family": "author",
+  "case": null,
+  "expected_provenance": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0",
+    "elapsed_seconds": 0.7861833572387695
+  },
+  "observed_provenance": {
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "sympy": "1.14.0"
+  },
+  "separated_top_level_paths": [
+    "/python",
+    "/sympy",
+    "/elapsed_seconds"
+  ],
+  "expected_raw_sha256": "d4253718c3adc00b268dbc319d6d9ab96c6310c4a8f6dc32418fa070cd47a16a",
+  "observed_raw_sha256": "7e51f340dc739fde15d6e5b7f51c1a25023b96f6de9b3a3da9dabf3153654acf",
+  "scientific_comparison": {
+    "equal": true,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "truncated": false
+  }
+}

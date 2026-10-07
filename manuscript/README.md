@@ -63,3 +63,10 @@ The fixed-map frontier chapter is generated from
 drift. Its detailed proofs and computational evidence are indexed in
 `../supplement/fixed_map/README.md`; the conditional loop criterion is not
 an established BGS limit for the frozen map.
+
+## Hamming replay acceptance, 7 October 2026
+
+[The reviewed runtime-provenance repair](../record/fractional_hamming_provenance_repair_20261007.md)
+retains exact scientific comparison and failure evidence across Python versions.
+Its complete local acceptance is source-bound; new hosted CI is separate.
+TeX inputs, mathematical proofs and expected scientific results are unchanged.
