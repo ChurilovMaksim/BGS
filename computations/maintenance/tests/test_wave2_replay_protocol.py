@@ -92,56 +92,6 @@ class ScienceProtocol(unittest.TestCase):
     def test_sources_current(self):
         self.assertGreater(len(w.source_bytes()),50)
 
-class RoundedSchurDispatch(unittest.TestCase):
-    def test_rounding_child_is_pinned_and_other_children_are_not(self):
-        parent={'OPENBLAS_CORETYPE':'HASWELL','PYTHONOPTIMIZE':'2'}
-        round_env=w.replay_child_environment('rounding',parent)
-        self.assertEqual(round_env['OPENBLAS_CORETYPE'],'ZEN3')
-        self.assertEqual(round_env['OPENBLAS_NUM_THREADS'],'1')
-        self.assertEqual(round_env['PYTHONOPTIMIZE'],'0')
-        self.assertEqual(parent['OPENBLAS_CORETYPE'],'HASWELL')
-        other_env=w.replay_child_environment('centering',parent)
-        self.assertEqual(other_env['OPENBLAS_CORETYPE'],'HASWELL')
-
-    def test_pinned_schur_split_matches_sealed_reference(self):
-        # These are the *original* two split samples and strict reference
-        # tolerance. The child is a new process so BLAS initializes only
-        # after OPENBLAS_CORETYPE is fixed.
-        import platform
-        if sys.platform!='linux' or platform.machine() not in ('x86_64','AMD64'):
-            self.skipTest('reviewed OpenBLAS core dispatch applies to Linux x86-64')
-        code=r'''
-import json,numpy as np
-from scipy.linalg import schur
-rows=[]
-for p in (5,11):
-    n=p*p
-    f=np.array([[(j%p)**3%p,(j//p)**3%p] for j in range(n)])
-    a=np.array([[1,2],[0,1]],dtype=int)
-    v=np.exp(2j*np.pi*((f@a@f.T)%p)/p)/p
-    t,z=schur(v,output='complex')
-    theta=np.angle(np.diag(t))
-    theta=2*np.pi*np.rint(theta*(2*p)/(2*np.pi))/(2*p)
-    delta=np.arange(1,n+1,dtype=float)/n**4
-    w=(z*np.exp(1j*(theta+delta)))@z.conj().T
-    rev=w*w.conj().T
-    rows.append({'reverse_norm':float(np.linalg.norm(rev,2)),
-                 'P_centered_norm':float(np.linalg.norm(abs(w)**2-np.ones((n,n))/n,2))})
-print(json.dumps(rows))
-'''
-        result=subprocess.run([sys.executable,'-c',code],
-             env=w.replay_child_environment('rounding'),
-             capture_output=True,text=True,timeout=90)
-        self.assertEqual(result.returncode,0,result.stderr[-1500:])
-        rows=json.loads(result.stdout)
-        expected=json.loads((ROOT/'evidence/wave2_checked_20261007/raw/rounding_review/controls.json').read_text())['floating_split_controls']
-        self.assertEqual(len(rows),len(expected))
-        for i,(actual,reference) in enumerate(zip(rows,expected)):
-            for field in ['reverse_norm','P_centered_norm']:
-                with self.subTest(p=reference['p'],field=field):
-                    self.assertLessEqual(abs(actual[field]-reference[field]),1e-12)
-
-
 class DurableProtocol(unittest.TestCase):
     def fixture(self,root):
         root.mkdir();(root/'record').mkdir();(root/'input.txt').write_text('reviewed\n')

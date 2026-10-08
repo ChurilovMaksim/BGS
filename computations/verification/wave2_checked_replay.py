@@ -269,26 +269,6 @@ def child_limits():
     resource.setrlimit(resource.RLIMIT_AS,(3*2**30,3*2**30))
     resource.setrlimit(resource.RLIMIT_CPU,(180,180))
 
-def replay_child_environment(task_name, parent_env=None):
-    """Pin only the historical rounding Schur numerical dispatcher.
-
-    The authenticated rounding source diagonalizes matrices with degenerate
-    roots; its prescribed non-scalar perturbation depends on which orthonormal
-    Schur basis OpenBLAS selects. Historical diagnostics were generated with
-    the OpenBLAS ZEN3 path. Other CPU-dispatched kernels produce different
-    valid numerical realizations and fail the unmodified 1e-12 reference
-    check. Fix execution dispatch rather than changing the sealed source,
-    numerical outputs, original inequalities, or reference tolerance.
-    """
-    env=dict(os.environ if parent_env is None else parent_env)
-    env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',
-               MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1',
-               PYTHONDONTWRITEBYTECODE='1',PYTHONOPTIMIZE='0')
-    if task_name=='rounding':
-        env['OPENBLAS_CORETYPE']='ZEN3'
-    return env
-
-
 def output_directory(root,output):
     if output is None:return None
     output=Path(output).absolute()
@@ -320,6 +300,8 @@ def run(root=ROOT,output=None):
         retain('replay_contract.original.json',cached[CONTRACT]);retain('source_bindings.original.json',safe_path(root,BINDINGS).read_bytes());retain('scoped_input_bindings.original.json',cached[INPUTS])
         scoped=(json.dumps({'schema':'bgs-wave2-runtime-scoped-snapshot-v1','files':snapshot_pins},indent=2)+'\n').encode()
         retain('runtime_scoped_snapshot_manifest.json',scoped)
+        env=dict(os.environ);env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+        env['PYTHONOPTIMIZE']='0'
         mode=['-'+'O'*sys.flags.optimize] if sys.flags.optimize else []
         for task in contract['tasks']:
             name=task['name'];capture={};task_receipt={'name':name,'domain':task['domain'],'status':'running'};receipt['tasks'].append(task_receipt);publish()
@@ -343,10 +325,7 @@ def run(root=ROOT,output=None):
                 task_receipt['command']=[sys.executable,*mode,'-c','authenticated declared AST adapter',json.dumps(config)]
                 authenticate();start=time.monotonic()
                 try:
-                    # Keep CPU-kernel control scoped to the historical rounding
-                    # child and never rewrite its source or scientific outputs.
-                    child_env=replay_child_environment(name)
-                    result=subprocess.run(cmd,cwd=source.parent,env=child_env,capture_output=True,timeout=task['timeout_seconds'],preexec_fn=child_limits)
+                    result=subprocess.run(cmd,cwd=source.parent,env=env,capture_output=True,timeout=task['timeout_seconds'],preexec_fn=child_limits)
                     task_receipt.update(exit_status=result.returncode,seconds=time.monotonic()-start)
                     for stream in ['stdout','stderr']:retain(name+'.'+stream,getattr(result,stream))
                 except subprocess.TimeoutExpired as error:
