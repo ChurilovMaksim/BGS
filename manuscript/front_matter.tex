@@ -1,56 +1,40 @@
 \maketitle
 \begin{abstract}
-We consolidate the BGS research programme on arithmetic quantum toral maps,
-separating exact finite-field reductions, global laws of compressed
-observables, recurrence-scale laws of propagators, and genuinely microscopic
-spectral conclusions. The finite-field part reduces fourth-moment
-fluctuations to Cayley additive energy, cyclotomic row intersections and
-specialization-safe scalar supports. The quantum part proves short-period
-multiplicity formulas over composite rings, quantitative Pell normal forms,
-Gaussian weighted echoes, and smooth cohomological resonance laws. Sharp
-single-orbit and finite-box inequalities, a local Hessian obstruction,
-quantitative transversality, and an independently replayed certificate treat
-nondegeneracy of the second resonance, including arbitrary Fourier phases in
-288 real dimensions.
+The Bohigas--Giannoni--Schmit (BGS) conjecture relates the microscopic
+spectra of appropriately desymmetrized quantum chaotic systems to
+random-matrix universality. The original chaotic-billiard evidence concerned
+the orthogonal symmetry class \cite{BGS1984}; the specified unitary-class
+benchmark in this programme is the $\mathrm{Sine}_2$ process. This
+\emph{continuing research monograph} collects distinct, rigorously
+qualified project results and their proof boundaries. It does not establish
+BGS for the fixed deterministic map, let alone for all chaotic systems.
 
-For every fixed hyperbolic matrix in $SL(2,\mathbb Z)$, explicit arithmetic
-subsequences support Gaussian return laws for kicks of every fixed finite
-Gevrey order. A saturated Weyl-phase estimate controls the full return gas.
-For period-averaged observables we prove a joint Gaussian limit under a
-square-root logarithmic Fourier weight and construct fixed continuous
-counterexamples below that threshold, including after quantum centering.
-These are global laws at logarithmic arithmetic times and vanishing
-classical perturbation. A marked local-process argument shows that a
-nonuniform sublinear-time return law obstructs an ergodic local limit of
-intensity one, and yields a necessary critical-kick threshold. Without
-intensity preservation, the return density bounds conditional local
-intensities and forces an empty component when it has a support gap.
-We give sharp abstract-spectrum constructions and an exact local
-density-transport formula. These do not establish positive local BGS statistics.
+The arithmetic programme develops finite-field pair-key and Cayley-energy
+reductions, cyclotomic rigidity, exact quantum-map multiplicities,
+arithmetic-subsequence return laws, and smooth/Gevrey cohomological and
+resonance results. Some statements concern compressed observables or
+vanishing classical kicks; others concern fixed-strength but specially
+conjugate quantum systems. Related chapters address locality, harmonic
+analysis, spectral obstructions and quantum-information estimation.
+Their hypotheses, symmetry classes, time scales and spectral objects
+remain separate, rather than being combined into a universality claim.
 
-A separate fixed-strength construction gives smooth noncommuting return
-words whose quantum kicks retain all-orders spectral conjugacy to an
-arithmetic map. The manuscript keeps the assumptions and verification
-scope of these distinct regimes explicit. The positive microscopic BGS
-problem remains open; external priority has not been established.
-
-For the prescribed fixed nonlinear family, a supplementary analysis gives
-exact mixed-resolvent identities, conditional all-order correlation criteria,
-and quantitative bounds from the first two mixed loop levels. It records
-the remaining Heisenberg-scale cancellation estimate and limitations of
-linear noise and global-entropy comparisons. These reductions do not
-establish the required deterministic spectral limit.
-A reviewed continuation proves max-entry phase-memory bounds and averaged
-eigenbasis pinching with an explicit rate, directly transports normally
-absorbed scalar sources along real unitary flows, and proves the optimal
-$4/3$ right-weighted second-jet inequality for rational matrix inner
-functions, including its smooth-localization correction. These results
-do not identify the microscopic cavity law or close deterministic BGS.
+The central deterministic problem uses the odd-dimensional family
+$U_N=\exp(i\tau N A_N)M_N$ with $\tau=10^{-80}$ \emph{fixed as $N\to\infty$}.
+The manuscript establishes exact trace/resolvent identities, conditional
+correlation bridges, quantitative intensity and selected interference
+estimates, and auxiliary noisy comparisons. An internally reconstructed
+continuation gives phase-memory bounds, an absorbed scalar real-flow
+comparison, and the sharp rational matrix-inner second-jet constant
+$4/3$. The actual all-order, signed Heisenberg-scale trace comparison,
+including the pair plateau correction and deterministic removal of
+auxiliary noise, remains \textbf{open}. The reported proofs have not
+received a blanket independent external referee or novelty certification.
 \end{abstract}
 \vspace{1ex}
-\noindent\textbf{Keywords.} Quantum cat maps; Weyl quantization; cyclotomic
-resultants; Green--Kubo variance; noncommutative coboundaries; spectral
-clustering; exact certificates.\\
+\noindent\textbf{Keywords.} BGS conjecture; quantum cat maps; Sine$_2$;
+signed joint traces; Weyl quantization; arithmetic return laws;
+cohomological resonance; exact certificates.\\
 \textbf{Mathematics Subject Classification.} 81Q50, 37D20, 11T23, 11R18.
 {\small\tableofcontents}
 \clearpage
@@ -64,6 +48,43 @@ asymptotic regimes have not been identified. In particular, a global Gaussian
 law of an averaged observable and a sine-kernel law for local propagator
 levels are different assertions. The former supplies neither the latter
 nor Heisenberg-scale joint trace control.
+
+\subsection{The deterministic microscopic target}
+\label{subsec:unresolved-deterministic-target}
+In this manuscript the positive unitary-class benchmark is an
+explicitly prescribed quantum torus family, rather than the original
+GOE-class Sinai-billiard calculation \cite{BGS1984}. The maintained
+frozen propagator is
+\[
+ S=\begin{pmatrix}3&4\\2&3\end{pmatrix},\qquad
+ U_N=\exp(i\tau N A_N)M_N,\qquad
+ \tau=10^{-80},\quad N\ge3\text{ odd},
+ \tag{BGS.1}\label{eq:frozen-target-introduction}
+\]
+where $M_N$ is the specified torus quantization and $A_N$ is the
+specified Weyl-quantized kick. The coupling $\tau$ is \emph{independent}
+of $N$; letting it tend to zero, averaging independent diagonal phases,
+or adding stochastic noise studies a different family.
+
+A necessary CUE pair-reference target in the maintained normalization is
+\[
+ L_N(s)=N^{-2}\sum_{m\ge1}e^{-2sm/N}
+       |\operatorname{Tr}U_N^m|^2
+ \longrightarrow \frac{1-e^{-2s}}{4s^2},
+ \qquad s>0.
+ \tag{BGS.2}\label{eq:frozen-pair-abel-introduction}
+\]
+It has \emph{not} been proved for this deterministic map. Even proving
+this pair identity would not suffice for convergence of every fixed
+factorial order: the missing assertion is the fully
+\emph{signed, symmetry-resolved Heisenberg-scale joint-trace
+comparison}, with the modulus taken outside each complete Fourier
+sum, together with the necessary local-process tightness conditions.
+For the ordinary unitary bulk, characterization through complete
+loop-equation hierarchies is another possible conditional route
+\cite{BH2026}; the required model-specific approximate equations
+and source bounds have not been established here. No conclusion about
+the unchanged $U_N$ is imported from that external characterization.
 
 \subsection{The three spectral objects}
 We distinguish a quantum propagator $U_N$, a compressed observable

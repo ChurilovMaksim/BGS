@@ -1,4 +1,4 @@
-# Consolidated manuscript
+# BGS consolidated research manuscript
 
 [BGS_unified.tex](BGS_unified.tex) is the single maintained publication root
 on `main`. It presents the research corpus; the scientific-status authority
@@ -64,6 +64,17 @@ not a second maintained publication root.
 
 
 ## Editorial architecture for a continuing research manuscript
+
+The current LaTeX title, PDF metadata, and abstract explicitly identify
+the programme's central **open** deterministic spectral target and distinguish
+the BGS 1984 GOE motivation from this unitary-class Sine$_2$ model.
+The structure and order of all incorporated scientific sections are preserved
+to maintain the research record; readers should not infer theorem
+dependencies from chapter adjacency. The PDF bibliography now includes both
+the original BGS paper and the cited loop-equation characterization, and
+uses published metadata for the Lounici–Meziani–Peyré tomography article.
+
+
 
 The full manuscript is deliberately retained and maintained as an **ongoing
 research monograph**. It is not a completed BGS proof, a journal-ready

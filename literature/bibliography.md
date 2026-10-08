@@ -10,6 +10,12 @@ Only sources that constrain the active argument or its interpretation are
 listed here. A citation is **not** a claim that its hypotheses have already
 been verified for this project.
 
+## Historical conjecture and conditional universality technology
+
+O. Bohigas, M. J. Giannoni and C. Schmit, [*Characterization of Chaotic Quantum Spectra and Universality of Level Fluctuation Laws*](https://doi.org/10.1103/PhysRevLett.52.1), *Physical Review Letters* **52** (1984), 1–4. The original numerical spectral evidence concerns Sinai's billiard and the **orthogonal** random-matrix class. The specified frozen-map question in BGS is formulated with a **unitary** $\mathrm{Sine}_2$ benchmark after its own symmetry analysis. The historical paper is not a theorem asserting convergence for arbitrary chaotic systems.
+
+P. Bourgade and J. Huang, [*Loop Equations Characterize Random Matrix Statistics*](https://arxiv.org/abs/2607.07617), arXiv:2607.07617 (2026). Their loop-hierarchy characterization supplies a possible conditional technology; it **does not** verify the approximate loop hierarchy, source estimates or unfolding for the unchanged deterministic propagator. The exact imported statement is separately pinned at `EXT-BH-2026` in [the dependency registry](external_dependencies.json). Neither a characterization theorem nor correct numerics closes the fixed-map trace obligation.
+
 ## Exponential independence for the frozen algebraic-time claims
 
 S. A. Popescu, [*A simple and self-contained proof for the
