@@ -89,11 +89,11 @@ policy live in [repository conventions](../record/repository_conventions.md).
 
 ## How far this editorial audit reaches
 
-A read-only manuscript audit on an earlier revision of this PR reported
-**52 bibliography keys, 36 distinct cited keys, 497 distinct labels and no
-unresolved or duplicate labels** within the scanned include closure. The
-current CI reruns the check on the latest sources; these structural facts
-are not a theorem-proof verdict.
+The 8 October 2026 editorial build's read-only manuscript audit reported
+**52 bibliography keys, 36 distinct cited keys, 505 distinct labels and no
+unresolved or duplicate labels** within the 101-file include closure.
+These structural facts are not a theorem-proof verdict; later revisions
+must re-run the audit.
 
 The current stage examines the **whole Git tree structure** and registry
 architecture, selected canonical proofs and manuscript section openings,
