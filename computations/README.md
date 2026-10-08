@@ -120,7 +120,7 @@ It retains *strict typed exact comparison* for all other scientific fields
 and the original strict split and reconstruction inequalities. For exactly
 four basis-dependent numbers it instead checks the stronger, mathematically
 well-defined **basis-independent structural constraints** described in
-[the derivation](../mathematics/wave2_schur_basis_portability.md).
+[the derivation](../docs/wave2_schur_basis_portability.md).
 A v2 receipt separately records the actual values, original v1 policy,
 new mathematical bound, and whether v1's exact reference equality happened
 to hold. It must not label a failed v1 equality as a v1 pass.
