@@ -51,10 +51,13 @@ class ManuscriptReferenceAudit(unittest.TestCase):
                 r'\cite{Key} % \cite{NotUsed}'+'\n'
                 r'\begin{verbatim}'+'\n'
                 r'\input{not-a-file.tex} \cite{Other}'+'\n'
-                r'\end{verbatim}')
+                r'\end{verbatim}'+'\n'
+                r'\label{after}\ref{after}')
             report=ref.audit(root)
             self.assertEqual(report['errors'],[])
             self.assertEqual(report['cited_keys'],1)
+            self.assertEqual(report['labels'],1)
+            self.assertEqual(report['unresolved_labels'],[])
 
     def test_include_cycle_and_duplicate_labels_reported(self):
         with TemporaryDirectory() as tmp:

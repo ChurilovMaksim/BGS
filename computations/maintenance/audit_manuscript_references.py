@@ -21,7 +21,7 @@ CITE = re.compile(
 LABEL = re.compile(r'\\label\s*\{([^{}]+)\}')
 REF = re.compile(r'\\(?:eqref|ref|autoref|cref|Cref|pageref)\s*\{([^{}]+)\}')
 VERBATIM_BEGIN = re.compile(r'\\begin\s*\{(verbatim\*?|Verbatim|lstlisting|minted)\}')
-VERBATIM_END = r'\\end{{{}}}'
+VERBATIM_END = r'\end{{{}}}'
 
 
 def active_tex(text: str) -> str:
