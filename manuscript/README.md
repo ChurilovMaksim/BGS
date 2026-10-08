@@ -12,6 +12,10 @@ horizontal overflow. Its visual inspection covers the revised title, four
 new continuation pages and a bibliography page; it does not re-certify every
 historical page or proof.
 
+The [scientific corpus atlas](../docs/corpus_atlas.md) maps the seven
+principal subject areas to their canonical proofs, bibliography and evidence
+and records why retained historical copies must not be deleted in bulk.
+
 ## Mathematical content and submission coverage
 
 The [phase-channel/jet section](unified_sections/phase_channel_jet_20261008.tex)

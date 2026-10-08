@@ -25,3 +25,21 @@ Keep stable proof paths and claim IDs. Prefer link-based topic maps to mass move
 ## Integration epochs and scientific CI
 
 The Wave2 and Wave3 replays bind historical source bytes, exact theorem contracts and scoped integrations. The [explicit later-ID manifest](../record/claim_integration_epochs.json) permits separately reviewed new claims without broadening those historical review statements. It rejects undeclared IDs and checks each listed current status and source. Scientific CI is a maintained consistency audit and cannot replace mathematical refereeing.
+
+## Corpus-scale editing and scientific provenance
+
+Use the [scientific corpus atlas](corpus_atlas.md) to distinguish maintained
+proofs from historical snapshots and to navigate the entire manuscript by
+mathematical regime. Repeated Git blob hashes inside `evidence/` are
+**not** sufficient grounds for deletion: old manifests often identify an
+exact historical path, and a copied proof may document which text was
+reviewed at a particular moment. Change a canonical proof path only when
+every dependency, literal source pin and manuscript input has been checked.
+
+A bibliography entry should be metadata, not a miniature proof verdict.
+Record which theorem is imported, its locator, and the model-specific
+hypothesis bridge separately. The original 1984 BGS observation concerned
+GOE-class Sinai-billiard evidence, whereas the maintained unitary-class
+target asks for `Sine_2` after symmetry resolution; never conflate their
+symmetry classifications.
+

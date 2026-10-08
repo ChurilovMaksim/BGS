@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="435" viewBox="0 0 1170 435" role="img" aria-labelledby="title desc">
+<title id="title">BGS scientific record: sources, dependencies, checks and publication</title>
+<desc id="desc">A status ledger governs the reading of canonical proofs. External theorem dependencies and finite verification add specific support, while the living manuscript and candidate papers summarize claims without strengthening them. Historical evidence stays immutable.</desc>
+<rect width="1170" height="435" rx="8" fill="#fbfcfd"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="36" y="43" font-size="24" font-weight="700" fill="#172a3a">How scientific authority flows through BGS</text>
+<text x="36" y="71" font-size="14" fill="#52677a">These are different sources of information, not interchangeable certificates</text>
+<rect x="37" y="113" width="329" height="102" rx="7" fill="#fff" stroke="#9baebc" stroke-width="1.5"/>
+<rect x="38" y="114" width="327" height="6" fill="#245d7a"/>
+<text x="55" y="145" font-size="18" font-weight="700" fill="#19374d">Scientific status</text>
+<text x="55" y="172" font-size="14" fill="#284054">Claim ledger · registered IDs</text>
+<text x="55" y="194" font-size="13" fill="#62788c">Proved / conditional / open / pending</text>
+<rect x="422" y="113" width="327" height="102" rx="7" fill="#fff" stroke="#9baebc" stroke-width="1.5"/>
+<rect x="423" y="114" width="325" height="6" fill="#2d735f"/>
+<text x="440" y="145" font-size="18" font-weight="700" fill="#19374d">Canonical mathematics</text>
+<text x="440" y="172" font-size="14" fill="#284054">Definitions · statements · proofs</text>
+<text x="440" y="194" font-size="13" fill="#62788c">Named hypotheses and exact scope</text>
+<rect x="805" y="113" width="327" height="102" rx="7" fill="#fff" stroke="#aeba9f" stroke-width="1.5"/>
+<rect x="806" y="114" width="325" height="6" fill="#b17c39"/>
+<text x="822" y="145" font-size="18" font-weight="700" fill="#19374d">Manuscript and papers</text>
+<text x="822" y="172" font-size="14" fill="#284054">Long-form and focused exposition</text>
+<text x="822" y="194" font-size="13" fill="#62788c">Cannot strengthen upstream proofs</text>
+<path d="M366 164 H412" stroke="#71899a" stroke-width="2" fill="none"/>
+<path d="M403 157 L413 164 L403 171" stroke="#71899a" stroke-width="2" fill="none"/>
+<path d="M749 164 H795" stroke="#71899a" stroke-width="2" fill="none"/>
+<path d="M786 157 L796 164 L786 171" stroke="#71899a" stroke-width="2" fill="none"/>
+<rect x="215" y="273" width="325" height="96" rx="7" fill="#fff" stroke="#a3b6c5"/>
+<text x="231" y="302" font-size="17" font-weight="700" fill="#19374d">External theorem dependencies</text>
+<text x="231" y="330" font-size="14" fill="#284054">Exact locator · hypothesis mapping</text>
+<text x="231" y="350" font-size="13" fill="#62788c">Not imported beyond the checked scope</text>
+<rect x="610" y="273" width="325" height="96" rx="7" fill="#fff" stroke="#a3b6c5"/>
+<text x="626" y="302" font-size="17" font-weight="700" fill="#19374d">Finite verification and evidence</text>
+<text x="626" y="330" font-size="14" fill="#284054">Lean · Python · C++ · source pins</text>
+<text x="626" y="350" font-size="13" fill="#62788c">Supports named tests, not missing limits</text>
+<path d="M380 273 V247 H556 V215" stroke="#8c9fae" stroke-dasharray="6 5" stroke-width="2" fill="none"/>
+<path d="M549 225 L556 215 L563 225" stroke="#8c9fae" stroke-width="2" fill="none"/>
+<path d="M772 273 V247 H618 V215" stroke="#8c9fae" stroke-dasharray="6 5" stroke-width="2" fill="none"/>
+<path d="M611 225 L618 215 L625 225" stroke="#8c9fae" stroke-width="2" fill="none"/>
+<text x="38" y="413" font-size="13" fill="#52677a">Historical evidence is immutable. The fixed-strength deterministic BGS joint-trace limit remains open.</text>
+</g></svg>
