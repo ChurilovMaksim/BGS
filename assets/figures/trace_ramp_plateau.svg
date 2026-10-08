@@ -16,10 +16,10 @@
   <circle cx="512.5" cy="228.7" r="4.5" fill="#176b6e"/>
   <text x="600" y="405" font-size="15" text-anchor="middle" fill="#263946">x = m / N (Heisenberg-time ratio)</text>
   <text transform="translate(28 239) rotate(-90)" font-size="15" text-anchor="middle" fill="#263946">normalized pair power</text>
-  <rect x="635" y="89" width="460" height="74" fill="#ffffff" stroke="#d9dfe5"/>
-  <line x1="652" y1="112" x2="694" y2="112" stroke="#176b6e" stroke-width="4"/>
-  <text x="708" y="117" font-size="15" fill="#243643">CUE reference: min(x, 1)</text>
-  <line x1="652" y1="141" x2="694" y2="141" stroke="#667a92" stroke-width="3" stroke-dasharray="9 6"/>
-  <text x="708" y="146" font-size="15" fill="#243643">Cyclic linear contribution: x</text>
-  <text x="809" y="295" font-size="14" text-anchor="middle" fill="#8a551c">Required signed difference: 1 - x</text>
+  <rect x="118" y="88" width="460" height="74" fill="#ffffff" stroke="#d9dfe5"/>
+  <line x1="135" y1="112" x2="177" y2="112" stroke="#176b6e" stroke-width="4"/>
+  <text x="191" y="117" font-size="15" fill="#243643">CUE reference: min(x, 1)</text>
+  <line x1="135" y1="141" x2="177" y2="141" stroke="#667a92" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="191" y="146" font-size="15" fill="#243643">Cyclic linear contribution: x</text>
+  <text x="805" y="211" font-size="14" text-anchor="middle" fill="#8a551c">Required signed difference: 1 - x</text>
 </g></svg>
