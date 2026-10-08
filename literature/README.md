@@ -38,3 +38,19 @@ checks dependency-ID resolution and required external-input declarations.
 It does not perform a mathematical literature review. Current normalized
 load-bearing dependencies live in the machine registry; specialized notes
 retain their actual search/review coverage and earlier corrections.
+
+
+## Quantum-graph claims and the color-one source qualification
+
+The [2014 publisher abstract](https://doi.org/10.1103/PhysRevLett.112.144102)
+and [2015 arXiv abstract](https://arxiv.org/abs/1407.1148) explicitly claim
+all-correlation random-matrix limits for their specified graph classes.
+Those are **published author claims**, not this repository's own proof
+certificates. The [color-one boundary audit](color_one_boundary_qualification_20261007.md)
+identifies an unresolved bulk/surface completion for a particular ordinary
+coordinate prescription. It does not refute the graph results, and this
+project does not independently certify the full graph proof. The
+[bibliographic summary](bibliography.md#spectral-spacing-evidence-and-rigorous-model-class-bgs-results)
+has been reconciled to this distinction. The original
+[BGS 1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) is historically
+motivating numerical evidence, not a theorem for the present family.

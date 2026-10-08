@@ -1,17 +1,27 @@
 # Resonance and cohomological obstructions
 
-**Status:** publication candidate scope; not a submission or acceptance record.
+**Status: publication candidate scope — not submitted, accepted, or externally refereed.**
 
-This directory deliberately does not duplicate theorem proofs. Its
-`paper.json` manifest selects stable claim IDs and authoritative sources from
-the repository. The consolidated programme manuscript remains
-`manuscript/BGS_unified.tex`.
+This paper scope collects four distinct project theorems:
+[BGS-RES-001](../../mathematics/fourier_line_resonance_coercivity.md)
+(sharp Fourier-line coercivity),
+[BGS-RES-002](../../mathematics/local_jet_resonance_obstruction.md)
+(the local-jet obstruction),
+[BGS-RES-004](../../mathematics/finite_orbit_resonance_rigidity.md)
+(smooth finite-orbit lag rigidity), and
+[BGS-RES-005](../../mathematics/frozen_full_lag_resonance.md)
+(the all-lag classical Riesz gap for the **specific physical observable
+under linear cat-map transport**). Their exact assumptions are different;
+none should be worded as a free upgrade to nonlinear transport.
 
-Before submission, fill `verification_commit` with the exact audited commit,
-run the referee protocol in `../../REVIEWING.md`, and ensure every external
-dependency is pinned in `../../literature/external_dependencies.json`.
+The every-analytic-observable nonlinear resonance question
+[BGS-RES-003](../../mathematics/open_questions.md) remains **open**.
+Results in smooth classes, or for one prescribed symbol, do not imply
+that universal statement or the fixed-map microscopic BGS law.
 
-Scope note: Fourier-line coercivity, smooth finite-orbit rigidity, the
-all-lag bound for one physical symbol under linear cat-map transport, and
-the limits of local-jet proof strategies. The all-members analytic question
-and nonlinear-transport extension stay open.
+Use the [manifest](paper.json) as the claim-membership authority and the
+[outline](OUTLINE.md) only as a suggested exposition. The
+[full living manuscript](../../manuscript/README.md) retains the
+broader development. Before a submission, perform the
+[theorem-by-theorem review](../../REVIEWING.md), check priority, and
+fill `verification_commit` only after the audited final text is fixed.

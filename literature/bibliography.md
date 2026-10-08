@@ -107,14 +107,19 @@ close BGS for the present family.
 ## Spectral-spacing evidence and rigorous model-class BGS results
 
 9. A. Gamburd, J. Lafferty and D. Rockmore, **Eigenvalue spacings for quantized cat maps**, *Journal of Physics A* **36** (2003), 3487--3499, DOI `10.1088/0305-4470/36/12/336`.
-10. Z. Pluhař and H. A. Weidenmüller, **Universal Quantum Graphs**, *Physical Review Letters* **112** (2014), 144102, DOI `10.1103/PhysRevLett.112.144102`. For time-reversal-invariant quantum graphs mixing in the classical limit, the paper proves agreement of all spectral correlation functions with GOE in the graph limit under its stated setup.
-11. Z. Pluhař and H. A. Weidenmüller, **Quantum graphs and random-matrix theory**, *Journal of Physics A* **48** (2015), 275102, DOI `10.1088/1751-8113/48/27/275102`. Gives the corresponding all-correlation generating-function result for a class of mixing graphs, with explicit graph assumptions.
+10. Z. Pluhař and H. A. Weidenmüller, **Universal Quantum Graphs**, *Physical Review Letters* **112** (2014), 144102, DOI `10.1103/PhysRevLett.112.144102`. The published [abstract](https://doi.org/10.1103/PhysRevLett.112.144102) **claims a proof** of all-correlation GOE universality for time-reversal-invariant mixing quantum graphs. That is the **authors' claim**, not an independently certified conclusion of this repository.
+11. Z. Pluhař and H. A. Weidenmüller, **Quantum graphs and random-matrix theory**, *Journal of Physics A* **48** (2015), 275102, DOI `10.1088/1751-8113/48/27/275102`. The [authors' abstract](https://arxiv.org/abs/1407.1148) describes an all-$(P,Q)$ generating-function comparison for connected graphs with incommensurate lengths, a classical Perron--Frobenius gap and exclusions for special bound states.
 
-Item 9 is numerical spectral-spacing context, not a general local-law theorem.
-Items 10--11 are important counterweights to any claim that BGS has no rigorous
-model-class realizations: quantum graphs do admit proofs under precise mixing,
-large-graph and structural hypotheses. They do **not** prove BGS for smooth
-Hamiltonian systems or for the arithmetic cat-map family in this repository.
+Item 9 reports spectral-spacing evidence, not a general local-law theorem.
+Items 10--11 demonstrate that **claimed rigorous model-class routes exist**
+in the literature; they neither imply a theorem for all chaotic systems nor
+settle the fixed torus-map problem here. The [7 October primary-source
+qualification](color_one_boundary_qualification_20261007.md) identifies a
+specific color-one bulk-versus-boundary completion defect that this project
+has not resolved in the complete supersymmetric graph derivation. It does
+**not** establish that the published graph conclusions are false. For
+review purposes distinguish the publications' asserted results, their
+hypotheses and the narrower level of proof independently checked here.
 
 ## Cyclotomic/cotangent rigidity used by the mixed term
 
