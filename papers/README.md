@@ -1,19 +1,21 @@
-# Publication candidates
+# Focused publication candidates
 
-The consolidated `manuscript/BGS_unified.tex` is the programme record. The
-directories here define focused publication candidates without duplicating
-authoritative proofs.
+The [full consolidated manuscript](../manuscript/README.md) remains an
+**ongoing research monograph and programme record**. It should not be treated
+as a single completed BGS paper. The directories below are **potential,
+narrowly scoped articles** linked to canonical mathematical proofs, not
+automatic independent proof validations or accepted submissions.
 
-Each candidate has a `paper.json` manifest containing claim IDs, source
-files, external dependencies, and excluded open obligations. A journal
-manuscript should be generated/extracted from those sources only after the
-listed claims have passed the intended referee gate.
+| Potential paper | Central material | Publication boundary |
+|---|---|---|
+| [Fixed-map BGS frontier](fixed-map-bgs-frontier/README.md) | Finite and conditional deterministic reductions and spectral obstructions | Does **not** assert the signed Heisenberg comparison or Sine₂ limit |
+| [Cayley arithmetic](arithmetic-cayley/README.md) | Finite-field arithmetic and exact Cayley reductions | No automatic local spectral universality |
+| [Return laws](return-laws/README.md) | Return-time and related limit theorems | Do not extrapolate logarithmic/arithmetic subsequences to fixed-strength local laws |
+| [Resonance and cohomology](resonance-cohomology/README.md) | Resonance, normal forms and coboundary analysis | Hypotheses and dynamical regimes remain distinct |
 
-Current candidates:
-
-- `fixed-map-bgs-frontier/`
-- `arithmetic-cayley/`
-- `return-laws/`
-- `resonance-cohomology/`
-
-These are scopes, not assertions of submission, acceptance, or novelty.
+Each candidate retains its `paper.json` scope manifest with included claims,
+external dependencies, canonical sources and excluded open questions.
+Before making a submission, independently review every quoted theorem,
+resolve priority and source applicability, verify the actual submission
+artifact, and set the verification commit. The [review protocol](../REVIEWING.md)
+governs that release step. No publication status is implied by the table.

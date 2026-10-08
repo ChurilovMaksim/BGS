@@ -1,14 +1,30 @@
 # Arithmetic and Cayley energy
 
-**Status:** publication candidate scope; not a submission or acceptance record.
+**Status: publication candidate scope — not submitted, accepted, or externally refereed.**
 
-This directory deliberately does not duplicate theorem proofs. Its
-`paper.json` manifest selects stable claim IDs and authoritative sources from
-the repository. The consolidated programme manuscript remains
-`manuscript/BGS_unified.tex`.
+This proposed article isolates the finite-field arithmetic chain from the
+larger BGS programme. Its currently included claims are
+[BGS-CAYLEY-001](../../mathematics/fourth_moment_reduction.md)
+(pair-key and fourth-moment reduction),
+[BGS-CAYLEY-002](../../mathematics/cayley_additive_energy.md)
+(Cayley-energy identity),
+[BGS-CAYLEY-003](../../mathematics/cayley_direct_energy.md)
+(the explicit subgroup-size-range estimate), and
+[BGS-CAYLEY-004](../../mathematics/cayley_curve_uniform.md)
+(the uniform subgroup-curve bound).
 
-Before submission, fill `verification_commit` with the exact audited commit,
-run the referee protocol in `../../REVIEWING.md`, and ensure every external
-dependency is pinned in `../../literature/external_dependencies.json`.
+The dependence on the Vyugin–Makarychev and Corvaja–Zannier statements must
+be checked at the **exact theorem-locator and hypothesis** level; see the
+[external source registry](../../literature/external_dependencies.json).
+Pointwise and averaged energy regimes must remain distinct.
+The sharp centered quadratic target
+[BGS-CAYLEY-005](../../mathematics/open_questions.md) is **open**;
+neither this candidate nor its finite certificates establish the original
+fixed-strength microscopic BGS conjecture.
 
-Scope note: Focused arithmetic reduction/bounds paper; microscopic BGS is outside scope.
+The [scope manifest](paper.json) is the authoritative included-claim list;
+the [editorial outline](OUTLINE.md) is a proposed exposition order, not a
+proof. The [living consolidated manuscript](../../manuscript/README.md)
+preserves the broader research record. Before submission, carry out
+[the referee gate](../../REVIEWING.md), verify cited sources and current
+proofs, and populate `verification_commit` with an actual audited SHA.

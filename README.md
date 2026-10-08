@@ -1,65 +1,93 @@
-# BGS: quantum chaos and microscopic spectral statistics
+# BGS — quantum chaos and spectral universality
 
-[Русская версия](README.ru.md) · [Research brief](RESEARCH.md) ·
-[Theorem index](mathematics/results.md) · [Claim ledger](record/claim_ledger.md)
+[Русский](README.ru.md) · [Research overview](RESEARCH.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Complete manuscript](manuscript/README.md)
 
-**The deterministic microscopic BGS problem remains open.** This repository
-contains maintained proofs, exact finite controls and a consolidated research
-manuscript. It studies how classical chaos can produce random-matrix spectral
-statistics, with an explicit nonlinear quantum map as the principal test case.
+The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
+
+**Scientific status (8 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+
+![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
+
+*Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
 ## What the conjecture asks
 
-The [Bohigas–Giannoni–Schmit paper of 1984](https://doi.org/10.1103/PhysRevLett.52.1)
-identified random-matrix level fluctuations in a chaotic billiard. The general
-problem is to prove the appropriate local law for a specified semiclassical
-family, after resolving symmetries and normalizing the mean level spacing.
-Classical chaos alone is not a complete set of hypotheses: arithmetic
-structure and the choice of quantization matter.
+Bohigas, Giannoni and Schmit's [1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) connected chaotic quantum spectra with universal random-matrix fluctuations. A rigorous theorem needs a specified quantum family, the correct symmetry sector, a justified unfolding, and a local correlation limit. Classical hyperbolicity alone does not automatically guarantee a particular symmetry class or a universal spectrum.
 
-For the unitary symmetry class, the density-one reference is the Sine$_2$
-process. Its kernel and pair correlation are
+For unitary-class spectra, the reference point process is $\mathrm{Sine}_2$, whose determinantal kernel and distinct-point two-point correlation are
 
-$$K(x,y)=\frac{\sin\pi(x-y)}{\pi(x-y)},\qquad
-\rho_2(x,y)=1-|K(x,y)|^2.$$
+```math
+K(x,y)=\frac{\sin\pi(x-y)}{\pi(x-y)},
+\qquad
+\rho_2(x,y)=1-|K(x,y)|^2.
+```
 
-![Analytic Sine2 pair correlation and Poisson reference](assets/figures/microscopic_pair_reference.svg)
+![Analytic Sine2 two-point function and Poisson reference](assets/figures/microscopic_pair_reference.svg)
 
-*Analytic reference curves, not measured spectra of the maintained map.
-The horizontal coordinate is separation in units of the mean spacing;
-the pair correlation is not the nearest-neighbour spacing density.*
-
-A complete local law requires every fixed correlation order. A few trace
-moments or a spacing plot do not determine that law.
+*Analytic benchmark curves, **not measured data** from the deterministic map. The figure depicts pair correlation, not the nearest-neighbour spacing distribution.*
 
 ## The exact model and target
 
-The principal family uses odd $N\ge3$, the ordinary Weyl convention, and
+For odd $N\ge3$, the maintained family is
 
-$$S=\begin{pmatrix}3&4\\2&3\end{pmatrix},\qquad
-U_N=e^{i\tau N A_N}M_N,\qquad \tau=10^{-80}.$$
+```math
+S=\begin{pmatrix}3&4\\2&3\end{pmatrix},
+\qquad
+U_N=\exp(i\tau N A_N)M_N,
+\qquad
+\tau=10^{-80}.
+```
 
-The [canonical model statement](mathematics/fixed_map_resolvent_frontier.md)
-specifies the symbol, metaplectic kernel and exceptional dimensions. The
-coupling stays fixed as $N\to\infty$. A necessary pair reference is
+Here $M_N$ is the specified quantization of the hyperbolic cat map, and $A_N$ the specified Weyl-quantized nonlinear kick. [The canonical model source](mathematics/fixed_map_resolvent_frontier.md) fixes conventions, exceptional dimensions, and symmetry questions. **The coupling remains fixed as $N\to\infty$**; replacing it with vanishing coupling, independent random phases, or noise changes the problem.
 
-$$L_N(s)=\frac1{N^2}\sum_{n\ge1}e^{-2sn/N}
-|\operatorname{Tr}U_N^n|^2
-\longrightarrow\frac{1-e^{-2s}}{4s^2},\qquad s>0.$$
+Even a necessary two-point reference remains unproved for this family:
 
-The full target, [BGS-TRACE-005](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates),
-is the correctly desymmetrized, density-unfolded **signed factorial joint-trace
-comparison at Heisenberg powers** for every fixed order and compact smooth
-Fourier test. The modulus is outside the complete sum. The
-[trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md)
-states the exact hypotheses converting these trace estimates to local laws.
+```math
+L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
+\left|\mathrm{Tr}\,U_N^m\right|^2
+\;\longrightarrow\;
+\frac{1-e^{-2s}}{4s^2},
+\qquad s>0.
+```
+
+The full [BGS-TRACE-005 obligation](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates) is stronger: correctly desymmetrized **signed factorial joint-trace comparison** for every fixed order and every compactly supported smooth Fourier test, at powers $m\asymp N$. The absolute value is taken **after the complete Fourier sum**, rather than term by term. The [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) explains the further tightness/extension conditions.
+
+## What else is established, and what is missing
+
+The programme contains independently distinguishable lines of work:
+
+| Mathematical layer | Established in its stated scope | Not yet established |
+|---|---|---|
+| Spectral-to-trace bridge | Exact finite-dimensional combinatorics and conditional correlation criteria | Required model-specific signed joint-trace estimates |
+| Actual map: intensity and paths | [FM-021](mathematics/position_chain_mixing.md) intensity mixing and cyclic ramp; [FM-022](mathematics/reversed_path_decay.md) reverse-path decay | All remaining coherent interference, including the negative plateau correction |
+| Balanced microscopic analysis | [Phase Ward](mathematics/phase_ward_identity.md) and [Schur-energy](mathematics/balanced_pair_schur_reduction.md) exact identities | Their requisite absorbed overlap / microscopic radial limits |
+| Traces and insertion calculus | Selected [WKB](mathematics/factorial_wkb_reduction.md), [ordered-diagonal](mathematics/factorial_ordered_diagonal.md), and [unmasked](mathematics/right_frame_unmasked_pinch_hierarchy.md) sectors | Complete high-switch signed remainder, masks and endpoints |
+| Stochastic comparison | [FLOW-014](mathematics/circular_dyson_actual_start.md) and [FLOW-017](mathematics/coboundary_all_order_limit.md) noisy local laws on explicitly stated schedules | Removal of the noise for the original deterministic family |
+| Other mathematics | [Cayley](mathematics/topics/cayley-arithmetic/README.md), [Pell](mathematics/topics/pell/README.md), [return](mathematics/topics/returns/README.md), resonance, locality and information results | A proved implication from their separate regimes to deterministic BGS |
+
+The decisive obstacle is not a shortage of finite-dimensional identities: it is **controlled cancellation of signed Heisenberg-scale contributions** for the unchanged propagator. Neither a numerical spacing plot nor a result for a randomized auxiliary model closes that gap. Consult the [research brief](RESEARCH.md) for precise scope and [obligation board](mathematics/open_questions.md) for the remaining work.
+
+### Why the signed plateau matters
+
+For a Haar-distributed $V_N$ in the circular unitary ensemble, the exact positive-power reference is
+
+```math
+\mathbb E_{\mathrm{CUE}}\left|\mathrm{Tr}\,V_N^m\right|^2
+=\min(m,N),\qquad m\ge1.
+```
+
+The cyclic linear term has normalized shape $x=m/N$, whereas the CUE reference is $\min(x,1)$. Above $x=1$, their difference is **$1-x<0$**. Thus reproducing a cyclic ramp alone cannot establish the required plateau: the remaining coherent, signed path contributions must supply a negative correction in aggregate. This is a necessary target, **not** a result already proved for the deterministic family.
+
+![Exact CUE reference: ramp, plateau and the negative residual required above Heisenberg time](assets/figures/trace_ramp_plateau.svg)
+
+*Analytic comparison (no simulation). The shaded region is the magnitude of the negative correction required relative to the cyclic linear contribution.*
 
 ## Three reconstructed analytic results
 
 **Phase memory with reused coordinate phases — [BGS-TRACE-053](mathematics/max_entry_phase_channel.md).**
 For $S\in U(m)$, set $P_{ij}=|S_{ij}|^2$, $\delta=\max P_{ij}$,
-$A=\Pi\operatorname{Ad}(S)$, and
-$T_n=\mathbb E_D\operatorname{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
+$A=\Pi\mathrm{Ad}(S)$, and
+$T_n=\mathbb E_D\mathrm{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
 and the same independent uniform diagonal phases $D$ are reused in every power.
 $J_m$ has every entry $1/m$.
 On the full complex Frobenius space, for $n\ge2$,
@@ -77,25 +105,30 @@ Let $F=zG$ be a square finite rational inner matrix function and set
 $T=F^*zF'\ge I$ on the circle, with $d\mu=d\theta/(2\pi)$. Without a
 commutativity assumption, with $\dot T=dT/d\theta$,
 
-$$\int\operatorname{Tr}(\dot T T^{-1}\dot T)\,d\mu
-\le\frac13\int\operatorname{Tr}(T^3-T)\,d\mu,$$
+$$\int\mathrm{Tr}(\dot T T^{-1}\dot T)\,d\mu
+\le\frac13\int\mathrm{Tr}(T^3-T)\,d\mu,$$
 
 $$\int\|F''T^{-1/2}\|_F^2\,d\mu
-\le\frac43\int\operatorname{Tr}T^3\,d\mu
--2\int\operatorname{Tr}T^2\,d\mu
-+\frac23\int\operatorname{Tr}T\,d\mu.$$
+\le\frac43\int\mathrm{Tr}T^3\,d\mu
+-2\int\mathrm{Tr}T^2\,d\mu
++\frac23\int\mathrm{Tr}T\,d\mu.$$
 
 The leading coefficient $4/3$ is optimal in every matrix dimension; the
 submission had $13/3$. Smooth localization has an explicit derivative penalty.
 The proof does not supply a random-cavity cubic-delay moment.
 
 **Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
-For deterministic phase-independent Hermitian $H$ with
-$\operatorname{Tr}H=m$ and $\operatorname{Tr}H^2\le C_Hm$, eigenphase matching
-along $DS e^{ixH/m}$ gives a locally uniform $L^1$ comparison with
-$e^{ix/m}DS$ for the normalized normally absorbed scalar resolvent, including
-each fixed source derivative. Repeated eigenvalues are included. The
-anisotropic physical source and mixed source products require further inputs.
+For deterministic unitary matrices $S_m$ with
+$\delta_m=\max_{ij}|(S_m)_{ij}|^2\to0$ and
+$\||S_m|^2-J_m\|\le\rho<1$, and a deterministic Hermitian $H_m$
+independent of the reused random phases with
+$\mathrm{Tr}H_m=m$ and $\mathrm{Tr}H_m^2\le C_Hm$, eigenphase
+matching along $DS_m e^{ixH_m/m}$ compares the normalized scalar resolvent
+in $L^1$ with that of $e^{ix/m}DS_m$. Convergence is locally uniform
+for $\mathrm{Re}\,s>0$ and bounded real $x$, including each fixed derivative
+in the absorbed scalar parameter $s$. Repeated eigenvalues are included.
+The anisotropic physical source and mixed-source products require
+additional inputs; no deterministic $D=I$ limit is proved.
 
 These are self-contained project proofs with independent internal
 reconstruction. External priority is not established. The
@@ -104,40 +137,12 @@ attached article to maintained results and explicitly pending candidates.
 In particular, BGS-TRACE-055's polylogarithmic deep-source hierarchy remains
 **verification-pending**.
 
-## What else is established, and what is missing
-
-| Family | Maintained conclusion | Remaining boundary |
-|---|---|---|
-| Fixed-map structure | Actual intensity mixing, cyclic ramp and reverse-cyclic suppression; common pair commutant classified for odd $N\ne7$ | Common commutant is not simplicity of $U_N$ or microscopic universality |
-| Signed trace sectors | Selected weighted WKB, fixed-order ordered-diagonal and specified low-switch families | Complete balanced law, high-switch interference and plateau |
-| Unmasked insertion calculus | Complete separated/convex hierarchy; bounded-parameter signed weak-noise stability | Masks, undamped endpoint and signed noise removal |
-| Noisy local laws | Actual-start weak local law; all fixed factorial orders on a separately stated schedule | Transfer back to the unchanged deterministic propagator |
-| Arithmetic and return laws | Cayley, Pell, Floquet, resonance, locality and information-theory theorems in their own regimes | Their hypotheses do not by themselves identify the frozen-map local law |
-
-Exact statements and dependencies are in the [research brief](RESEARCH.md)
-and [thematic reading paths](mathematics/topics/README.md). The central
-unresolved estimates are the absorbed Ward overlap defect, the complete
-balanced microscopic law, and the signed deterministic all-order comparison.
-The [obligation board](mathematics/open_questions.md) states them precisely.
-
 ## Read, reproduce, and cite
 
-Start with the [reader background](docs/reader_guide.en.md), then the theorem
-source appropriate to your question. The [claim ledger](record/claim_ledger.md)
-controls scientific status; [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) resolves
-conflicting surfaces. The single publication root is
-[manuscript/BGS_unified.tex](manuscript/BGS_unified.tex).
+For an accessible beginning, read the [mathematical background](docs/reader_guide.en.md). Then use the [theorem index](mathematics/results.md) or [topic map](mathematics/topics/README.md) to reach canonical proofs. The [claim ledger](record/claim_ledger.md) is authoritative for status, and [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) defines how to resolve conflicting surfaces.
 
-The [computation guide](computations/README.md),
-[formalization scope](formalization/README.md), and
-[reproduction guide](REPRODUCE_unified.md) give commands and coverage.
-The [8 October execution packet](evidence/executions/20261008/phase-channel-jet/README.md)
-records Python quadrature, exact independent C++ occupation counts, Wolfram
-identities, a 20-module Lean 4.33.1 build and the 280-page manuscript build.
-Lean certifies stated finite/algebraic kernels; the analytic theorems and BGS
-are not formalized by that build.
+The [consolidated research manuscript](manuscript/README.md) is a **living, full-length scientific account**, intentionally retained while the research continues; it is neither a completed proof of BGS nor a replacement for proof sources. [Focused paper scopes](papers/README.md) are separate, potential publication units rather than asserted submissions.
 
-Historical records retain their original provenance. A scoped review does
-not certify every earlier proof. [Citation metadata](CITATION.cff),
-[review policy](REVIEWING.md), and [publication scopes](papers/README.md)
-complete the research-facing entry points.
+[Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [How to cite](CITATION.cff)
+
+The [8 October 2026 execution packet](evidence/executions/20261008/phase-channel-jet/README.md) records bounded internal checks, an active Lean 4 build, and a 280-page manuscript build. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.

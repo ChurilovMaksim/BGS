@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 378" width="1140" height="378" role="img" aria-labelledby="title desc">
+<title id="title">Research frontier: exact model, proved reductions, open spectral step</title>
+<desc id="desc">Three cards show the frozen quantum model, exact reductions, and the still open all-order signed Heisenberg comparison. Dotted connection denotes an unresolved mathematical implication.</desc>
+<rect width="1140" height="378" rx="9" fill="#f8fafc"/>
+<text x="46" y="53" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#172333">The BGS frontier</text>
+<text x="47" y="79" font-family="Arial, sans-serif" font-size="14" fill="#526174">A map of distinct claims and the missing proof, not a completed implication chain</text>
+<g font-family="Arial, sans-serif">
+ <rect x="45" y="125" width="298" height="154" rx="8" fill="#ffffff" stroke="#9bafc2"/>
+ <rect x="46" y="126" width="296" height="7" rx="3" fill="#24658a"/>
+ <text x="65" y="163" font-weight="700" font-size="17" fill="#153347">Exact quantum model</text>
+ <text x="65" y="192" font-size="16" fill="#293c50">U_N = exp(i τ N A_N) M_N</text>
+ <text x="65" y="219" font-size="15" fill="#293c50">τ = 10^-80 (fixed)</text>
+ <text x="65" y="245" font-size="13" fill="#617286">Odd N, exact Weyl convention</text>
+ <rect x="419" y="125" width="305" height="154" rx="8" fill="#ffffff" stroke="#9bafc2"/>
+ <rect x="420" y="126" width="303" height="7" rx="3" fill="#387a63"/>
+ <text x="439" y="163" font-weight="700" font-size="17" fill="#153347">Established reductions</text>
+ <text x="439" y="193" font-size="14" fill="#293c50">Trace identities and conditional bridge</text>
+ <text x="439" y="218" font-size="14" fill="#293c50">Intensity / selected path controls</text>
+ <text x="439" y="243" font-size="14" fill="#293c50">Noisy laws in separate regimes</text>
+ <rect x="803" y="125" width="291" height="154" rx="8" fill="#fffefa" stroke="#b88743" stroke-width="2"/>
+ <rect x="804" y="126" width="289" height="7" rx="3" fill="#b88743"/>
+ <text x="823" y="163" font-weight="700" font-size="17" fill="#5b451d">OPEN: spectral universality</text>
+ <text x="823" y="193" font-size="14" fill="#293c50">Signed Heisenberg-scale traces</text>
+ <text x="823" y="218" font-size="14" fill="#293c50">Every fixed factorial order</text>
+ <text x="823" y="243" font-size="14" fill="#293c50">Deterministic local Sine_2 limit</text>
+ <path d="M343 202 H411" stroke="#73879a" stroke-width="2.5" fill="none"/>
+ <path d="M405 196 L413 202 L405 208" fill="none" stroke="#73879a" stroke-width="2.5"/>
+ <path d="M724 202 H793" stroke="#b88743" stroke-width="3" stroke-dasharray="7 6" fill="none"/>
+ <path d="M786 196 L794 202 L786 208" fill="none" stroke="#b88743" stroke-width="2.5"/>
+ <text x="763" y="185" font-size="12" fill="#935f25" text-anchor="middle">?</text>
+ <text x="47" y="321" font-size="14" fill="#526174">Solid = existing reductions. Dotted = missing signed cancellation and deterministic transfer.</text>
+ <text x="47" y="343" font-size="13" fill="#526174">Scope and exact dependencies: record/claim_ledger.md and mathematics/open_questions.md</text>
+</g></svg>

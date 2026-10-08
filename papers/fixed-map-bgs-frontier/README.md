@@ -1,15 +1,22 @@
 # Fixed-map BGS frontier
 
-FM-019 adds a uniform two-copy collective generator gap and a quantitative
-refined shared-noise ensemble retaining the exact one-copy channel.
-Original signed spectral comparison, full nonlinear control and all
-higher-copy rates remain open; this is a regulator theorem, not BGS.
+This is a **focused publication scope**, not the full current fixed-map
+results catalogue. The [living manuscript](../../manuscript/README.md) and
+[research brief](../../RESEARCH.md) remain the broader research views.
 
-FM-018 adds growing-band actual Weyl coercivity, a specified regularized
-singular gap and exact finite common-noise two-copy invariant classification.
-For the original two-kick law, the microscopic gap and original signed spectral comparison are
-open. Its canonical proof and internal review remain linked from the
-claim registry; inclusion does not promote BGS to a proved claim.
+The candidate manifest includes FM-018 and FM-019, their stated growing-band
+coercivity, regularized/shared-noise two-copy conclusions and exact finite
+invariant classification. The subsequent
+[FM-020 theorem](../../mathematics/original_channel_gap.md) closes the
+**original common-noise two-copy microscopic-rate question** that was open
+in an earlier FM-018 draft. This README records that chronological
+supersession; FM-020 is **not included in the present paper.json candidate
+manifest**, and no implied extension of that publication scope is made.
+
+The original signed spectral comparison, full nonlinear/quenched control,
+higher-copy estimates and deterministic noise removal remain open. Closing
+the two-copy rate is not a proof of microscopic BGS. The registered theorem
+sources and internal review determine the actual scope of each statement.
 
 **Status:** publication candidate scope; not a submission or acceptance record.
 

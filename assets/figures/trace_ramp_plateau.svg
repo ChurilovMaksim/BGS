@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="431" viewBox="0 0 1160 431" role="img" aria-labelledby="title desc">
+<title id="title">CUE form factor: linear ramp, plateau and required signed correction</title>
+<desc id="desc">Reference lines for positive time ratio x = m/N. CUE second moment divided by N is min(x,1), while the cyclic linear sector is x. Above x equals one, the signed remaining contribution needs 1-x to create the plateau. These are analytic references and not deterministic-map measurements.</desc>
+<rect width="1160" height="431" rx="8" fill="#ffffff"/>
+<text x="45" y="39" font-family="Arial, sans-serif" font-weight="700" font-size="23" fill="#182b39">Heisenberg scale: ramp and plateau</text>
+<text x="45" y="61" font-family="Arial, sans-serif" font-size="14" fill="#4a5a69">Exact CUE reference versus the cyclic linear sector — not data from the fixed map</text>
+<g font-family="Arial, sans-serif">
+  <line x1="100" y1="342" x2="1100" y2="342" stroke="#394957" stroke-width="1.5"/>
+  <line x1="100" y1="342" x2="100" y2="70" stroke="#394957" stroke-width="1.5"/>
+  <line x1="100" y1="342" x2="100" y2="349" stroke="#70808c"/><text x="100" y="370" font-size="14" text-anchor="middle" fill="#344054">0</text><line x1="306.3" y1="342" x2="306.3" y2="349" stroke="#70808c"/><text x="306.3" y="370" font-size="14" text-anchor="middle" fill="#344054">0.5</text><line x1="512.5" y1="342" x2="512.5" y2="349" stroke="#70808c"/><text x="512.5" y="370" font-size="14" text-anchor="middle" fill="#344054">1</text><line x1="718.8" y1="342" x2="718.8" y2="349" stroke="#70808c"/><text x="718.8" y="370" font-size="14" text-anchor="middle" fill="#344054">1.5</text><line x1="925" y1="342" x2="925" y2="349" stroke="#70808c"/><text x="925" y="370" font-size="14" text-anchor="middle" fill="#344054">2</text><line x1="1090" y1="342" x2="1090" y2="349" stroke="#70808c"/><text x="1090" y="370" font-size="14" text-anchor="middle" fill="#344054">2.4</text>
+  <line x1="93" y1="342" x2="100" y2="342" stroke="#70808c"/><text x="84" y="347" font-size="14" text-anchor="end" fill="#344054">0</text><line x1="93" y1="285.3" x2="100" y2="285.3" stroke="#70808c"/><text x="84" y="290.3" font-size="14" text-anchor="end" fill="#344054">0.5</text><line x1="93" y1="228.7" x2="100" y2="228.7" stroke="#70808c"/><text x="84" y="233.7" font-size="14" text-anchor="end" fill="#344054">1</text><line x1="93" y1="172" x2="100" y2="172" stroke="#70808c"/><text x="84" y="177" font-size="14" text-anchor="end" fill="#344054">1.5</text><line x1="93" y1="115.3" x2="100" y2="115.3" stroke="#70808c"/><text x="84" y="120.3" font-size="14" text-anchor="end" fill="#344054">2</text>
+  <line x1="512.5" y1="342" x2="512.5" y2="228.7" stroke="#adb6c0" stroke-dasharray="5 5"/>
+  <polygon points="512.5,228.7 1090,70 1090,228.7" fill="#f6e7d3" opacity="0.95"/>
+  <polyline points="100,342 1090,70" fill="none" stroke="#667a92" stroke-width="3" stroke-dasharray="9 6"/>
+  <polyline points="100,342 512.5,228.7 1090,228.7" fill="none" stroke="#176b6e" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="512.5" cy="228.7" r="4.5" fill="#176b6e"/>
+  <text x="600" y="405" font-size="15" text-anchor="middle" fill="#263946">x = m / N (Heisenberg-time ratio)</text>
+  <text transform="translate(28 239) rotate(-90)" font-size="15" text-anchor="middle" fill="#263946">normalized pair power</text>
+  <rect x="118" y="88" width="460" height="74" fill="#ffffff" stroke="#d9dfe5"/>
+  <line x1="135" y1="112" x2="177" y2="112" stroke="#176b6e" stroke-width="4"/>
+  <text x="191" y="117" font-size="15" fill="#243643">CUE reference: min(x, 1)</text>
+  <line x1="135" y1="141" x2="177" y2="141" stroke="#667a92" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="191" y="146" font-size="15" fill="#243643">Cyclic linear contribution: x</text>
+  <text x="805" y="211" font-size="14" text-anchor="middle" fill="#8a551c">Required signed difference: 1 - x</text>
+</g></svg>

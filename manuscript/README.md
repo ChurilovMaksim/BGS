@@ -61,3 +61,31 @@ without duplicating proof authority. Old standalone articles are recoverable
 from Git history. The retained `finite_orbit_note.tex` is an immutable
 execution input named by the [22 September manifest](../evidence/20260922/run_manifest.json),
 not a second maintained publication root.
+
+
+## Editorial architecture for a continuing research manuscript
+
+The full manuscript is deliberately retained and maintained as an **ongoing
+research monograph**. It is not a completed BGS proof, a journal-ready
+single-result paper, or a disposable log. The long chronological development
+remains useful, but later sections must be read subject to the current
+[claim ledger](../record/claim_ledger.md) and explicit corrections.
+
+For readers interested in the original central question, use this route:
+[exact model and fixed-map frontier](../mathematics/fixed_map_resolvent_frontier.md)
+→ [joint-trace bridge](../mathematics/trace_to_local_statistics_bridge.md)
+→ [actual-map intensity/path theorems](../mathematics/position_chain_mixing.md)
+→ [balanced pair frontiers](../mathematics/phase_ward_identity.md)
+→ [still-open obligations](../mathematics/open_questions.md).
+For the broader mathematical programme, follow the
+[topic navigator](../mathematics/topics/README.md) and the manuscript
+table of contents. The research programme has multiple related but
+noninterchangeable asymptotic regimes.
+
+**Editorial guardrails:** preserve the existing TeX root, section input order,
+stable labels, theorem statements and protected generated sections unless
+their authoritative mathematics is deliberately re-reviewed. Improve the
+reader-facing entry points and supplement them with explicit source links
+rather than repeatedly reworking the manuscript or silently changing old
+proofs. The [editorial reading map](../docs/editorial_guide.md) states the
+protocol. A successful LaTeX build is typesetting evidence, not proof evidence.

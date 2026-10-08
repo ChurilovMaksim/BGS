@@ -1,5 +1,29 @@
 # Open mathematical obligations
 
+## Current priorities at a glance (8 October 2026)
+
+The table distinguishes the **terminal fixed-model problem**, possible
+intermediate proof routes, and mathematically independent directions.
+It does **not** assert that completing one auxiliary estimate would
+automatically prove BGS. Full mathematical statements and later
+qualifications follow below.
+
+| Role | Precise task | Status / caution |
+|---|---|---|
+| **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
+| Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
+| Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
+| Pending physical source hierarchy | Reconstruct the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) delay/covariance/source arguments | **Verification-pending**, not an established theorem and not known false |
+| Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
+
+The [claim ledger](../record/claim_ledger.md) determines status.
+The [full manuscript](../manuscript/README.md) is a developing research
+account, while older dated observations below remain accessible for
+scientific provenance. The current Lean scope is **20 active modules /
+23 Lake jobs** at the [8 October execution](../formalization/README.md);
+older registered receipts mentioning 17 modules describe an earlier build.
+No analytic BGS conclusion is formalized.
+
 ## Frontier after the 8 October continuation
 
 TRACE-053 closes the stated max-entry phase-channel/pinching theorem and
@@ -191,8 +215,10 @@ Optimizing the step exponent, actual-start relaxation at faster than the
 proved logarithmic time, and deterministic noise removal remain open. No convergence
 of the rapidly changing original matrix paths is asserted.
 
-Only unresolved obligations belong here. Stable IDs are assigned in
-`../record/claims.json`; current status authority remains
+This board primarily tracks unresolved mathematical obligations, but also
+identifies a continuing **formalization-depth** task whose earlier finite
+build is already established. Stable IDs are assigned in
+`../record/claims.json`; the current status authority remains
 `../record/claim_ledger.md`. Closed routes and finite controls are indexed in
 `results.md`; false or superseded statements belong in
 `../record/retractions.md`.
@@ -212,7 +238,7 @@ joint-trace argument to reach the all-order target.
 | `BGS-CAYLEY-005` | arithmetic fourth-moment frontier | Prove centered Cayley energy `(K-1)^4/p + O(K^(2+o(1)))`, or a genuinely equivalent support/divisor theorem in the intended pointwise regime. |
 | `BGS-RES-003` | analytic resonance frontier | Resolve the nonlinear analytic coboundary equation for arbitrary nonconstant real-analytic observables. |
 | `BGS-INFO-001` | information-theory application frontier | Determine matching minimax upper/lower transitions for the full moment class when physical Gaussian-channel noise vanishes with copy budget. |
-| `BGS-FORMAL-001` | verification-depth task | The current 17-module build is verified; deepen formalization only where it materially reduces proof risk, without relabelling analytic results as formalized. |
+| `BGS-FORMAL-001` | continuing formalization-depth work, distinct from open BGS theorems | The earlier 17-module receipt is historical; the 8 October **20-module / 23-job** build verifies only its stated finite/algebraic kernels. Expand formal coverage selectively; do not relabel analytic results as formally checked. |
 
 The principal BGS route is therefore not “prove everything above first”.
 `BGS-TRACE-005` is the direct model-specific obligation. The Cayley,
