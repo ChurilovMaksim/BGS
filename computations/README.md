@@ -93,6 +93,21 @@ respect fresh/empty output-directory requirements and preserve failures.
 Exact output comparison excludes execution metadata only where the registered
 contract says so.
 
+Historical [Wave2 rounding replay](verification/wave2_checked_replay.py)
+uses the unchanged archived source and its sealed strict `1e-12` numeric
+reference contract. The rounding control perturbs a basis of degenerate Schur
+eigenspaces; OpenBLAS dynamic kernel selection can change that basis and
+therefore two **basis-dependent diagnostics**, despite all original analytic
+inequalities passing. The replay now fixes `OPENBLAS_CORETYPE=ZEN3` **only
+for that isolated child process**, preserving source hashes, tolerances,
+assertions and the byte-exact historical reference. A
+[dedicated regression](maintenance/tests/test_wave2_replay_protocol.py)
+runs both frozen split dimensions against that reference, while other
+replay tasks retain their environment. A CPU unable to execute this
+dispatch must report an explicit failure, not receive an automatically
+loosened scientific tolerance. This pins one finite numerical
+representation; it is not an extra quantum theorem.
+
 [The spectral correction record](../record/audits/spectral_diagnostics_correction_20261006.md)
 replaces nonmonotone polynomial unfolding with an order-preserving procedure
 and explicit sensitivity/undefined-value handling. Historical outputs remain
