@@ -32,7 +32,7 @@ connections and historical development.
 ## Reading the full manuscript
 
 The [single maintained TeX root](../manuscript/BGS_unified.tex) includes
-90 subordinate TeX sources. They are **not** 90 independent referee-approved
+91 subordinate TeX sources. They are **not** 90 independent referee-approved
 papers. Read its parts in this orientation:
 
 1. **Opening and finite-field chapters:** scope, conventions, pair-key/Cayley

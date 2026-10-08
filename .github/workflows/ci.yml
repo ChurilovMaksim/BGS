@@ -99,6 +99,7 @@ jobs:
           python computations/maintenance/sync_return_sections.py --check
           python computations/maintenance/sync_finite_orbit_section.py --check
           python computations/maintenance/sync_fixed_map_section.py --check
+          python computations/maintenance/audit_manuscript_references.py --check
           python computations/maintenance/build_unified_manuscript.py --output-dir "$RUNNER_TEMP/unified-paper"
           test -s "$RUNNER_TEMP/unified-paper/BGS_unified.pdf"
 

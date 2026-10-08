@@ -48,6 +48,12 @@ Sequential `*_partN.tex` files are non-overlapping source segments, included
 in order to preserve recovered text bytes. They are not competing manuscripts.
 Return-law equation tags use the `Ret.` prefix.
 
+A read-only [TeX source/citation audit](../computations/maintenance/audit_manuscript_references.py)
+checks the complete included source closure, citation keys and bibliography
+uniqueness before both CI manuscript builds. It reports unresolved or
+duplicate cross-reference labels separately, without pretending that a
+well-formed reference establishes mathematical validity.
+
 ## Build
 
 From the repository root:
