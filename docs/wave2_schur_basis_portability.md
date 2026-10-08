@@ -9,13 +9,13 @@ asymptotic estimate for the frozen quantum map or a proof of BGS.
 The immutable Wave2 `rounding` verifier forms, for `p=5` and `p=11`,
 the matrix indexed by $x,y\in\mathbb F_p^2$,
 
-$
+$$
 V_{x,y}=p^{-1}\exp\left(
   \frac{2\pi i}{p} f(x)^{\mathsf T}A f(y)\right),
 \qquad
 f(x_1,x_2)=(x_1^3,x_2^3),\quad
 A=\begin{pmatrix}1&2\\0&1\end{pmatrix}.
-$
+$$
 
 For these primes, $\gcd(3,p-1)=1$, so $f$ permutes the
 $p^2$ coordinates. Hence $V$ is an exactly unitary finite
@@ -40,58 +40,62 @@ having generated identical data.
 
 Define the entrywise reverse product
 
-$
+$$
 \mathcal R(X)_{x,y}=X_{x,y}\,\overline{X_{y,x}},
-$
+$$
 
 not the matrix product $XX^*$. Since
 
-$
+$$
 A-A^{\mathsf T}=\begin{pmatrix}0&2\\-2&0\end{pmatrix}
-$
+$$
 
 is nonsingular modulo either prime, one has the exact expression
 
-$
+$$
 \mathcal R(V)_{x,y}
 =p^{-2}\exp\left(\frac{2\pi i}{p}
 f(x)^{\mathsf T}(A-A^{\mathsf T})f(y)\right).
-$
+$$
 
 By orthogonality of additive characters, the rows of this matrix
 are orthogonal, with squared row norm $p^2\cdot p^{-4}=p^{-2}$.
 Therefore **exactly**, without a floating Schur basis,
 
-$
+$$
 \boxed{\|\mathcal R(V)\|_{\mathrm{op}}=\frac1p.}
-$
+$$
 
 For matrices $X,Y$, the spectral operator norm obeys
-$\|X\circ Y\|_{\mathrm{op}}\le
-\|X\|_{\mathrm{op}}\|Y\|_{\mathrm{op}}$: the Hadamard product is a
-compression of the tensor product. For unitary $W,V$, expanding
+
+$$
+\|X\circ Y\|_{\mathrm{op}}\le
+\|X\|_{\mathrm{op}}\|Y\|_{\mathrm{op}}.
+$$
+
+This Schur-product inequality follows by compressing the tensor product. For unitary $W,V$, expanding
 $\mathcal R(W)-\mathcal R(V)$ into two Hadamard differences gives
 
-$
+$$
 \|\mathcal R(W)-\mathcal R(V)\|_{\mathrm{op}}
 \le 2\|W-V\|_{\mathrm{op}}.
-$
+$$
 
 The same argument for $P(X)_{x,y}=|X_{x,y}|^2$ yields
 $\|P(W)-P(V)\|_{\mathrm{op}}\le2\|W-V\|_{\mathrm{op}}$.
 Since $P(V)=J_{p^2}$ and $V_{\rm ref}$ is the original numerical
 root reconstruction, write
 
-$
+$$
 \varepsilon=\|W-V_{\rm ref}\|_{\mathrm{op}},
 \qquad
 \eta=\|V_{\rm ref}-V\|_{\mathrm{op}}.
-$
+$$
 
 Consequently the following finite, **Schur-basis-invariant bounds**
 hold for *every* such valid $W$:
 
-$
+$$
 \boxed{
 \bigl|\|\mathcal R(W)\|_{\mathrm{op}}-p^{-1}\bigr|
 \le2(\varepsilon+\eta),
@@ -99,7 +103,7 @@ $
 \|P(W)-J_{p^2}\|_{\mathrm{op}}
 \le2(\varepsilon+\eta).
 }
-$
+$$
 
 These are bounds independent of the chosen degenerate Schur basis;
 they are not statements that the *values* of the perturbed norms
@@ -114,8 +118,9 @@ reference tolerances, raw outputs, hash closures or original numerical
 assertions. The new acceptance policy supplements the original strict
 inequalities and uses an explicit $2\cdot10^{-12}$ floating arithmetic
 margin on the two boxed structural bounds; the archived
-$\eta<2\cdot10^{-12}$ and $\|P(W)-J\|\le2\,\text{bound}
-+4\cdot10^{-12}$ conditions remain checked verbatim. The other
+$\eta<2\cdot10^{-12}$ and
+$\|P(W)-J\|\le2\,\mathrm{bound}+4\cdot10^{-12}$
+conditions remain checked verbatim. The other
 declared numeric fields still use their exact original 1e-12 reference
 tolerance, and nonnumeric fields remain strict typed exact.
 
