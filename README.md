@@ -52,7 +52,7 @@ L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
 
 The full [BGS-TRACE-005 obligation](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates) is stronger: correctly desymmetrized **signed factorial joint-trace comparison** for every fixed order and every compactly supported smooth Fourier test, at powers $m\asymp N$. The absolute value is taken **after the complete Fourier sum**, rather than term by term. The [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) explains the further tightness/extension conditions.
 
-## Established results and remaining frontier
+## What else is established, and what is missing
 
 The programme contains independently distinguishable lines of work:
 
@@ -71,8 +71,8 @@ The decisive obstacle is not a shortage of finite-dimensional identities: it is 
 
 **Phase memory with reused coordinate phases — [BGS-TRACE-053](mathematics/max_entry_phase_channel.md).**
 For $S\in U(m)$, set $P_{ij}=|S_{ij}|^2$, $\delta=\max P_{ij}$,
-$A=\Pi\operatorname{Ad}(S)$, and
-$T_n=\mathbb E_D\operatorname{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
+$A=\Pi\mathrm{Ad}(S)$, and
+$T_n=\mathbb E_D\mathrm{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
 and the same independent uniform diagonal phases $D$ are reused in every power.
 $J_m$ has every entry $1/m$.
 On the full complex Frobenius space, for $n\ge2$,
@@ -90,13 +90,13 @@ Let $F=zG$ be a square finite rational inner matrix function and set
 $T=F^*zF'\ge I$ on the circle, with $d\mu=d\theta/(2\pi)$. Without a
 commutativity assumption, with $\dot T=dT/d\theta$,
 
-$$\int\operatorname{Tr}(\dot T T^{-1}\dot T)\,d\mu
-\le\frac13\int\operatorname{Tr}(T^3-T)\,d\mu,$$
+$$\int\mathrm{Tr}(\dot T T^{-1}\dot T)\,d\mu
+\le\frac13\int\mathrm{Tr}(T^3-T)\,d\mu,$$
 
 $$\int\|F''T^{-1/2}\|_F^2\,d\mu
-\le\frac43\int\operatorname{Tr}T^3\,d\mu
--2\int\operatorname{Tr}T^2\,d\mu
-+\frac23\int\operatorname{Tr}T\,d\mu.$$
+\le\frac43\int\mathrm{Tr}T^3\,d\mu
+-2\int\mathrm{Tr}T^2\,d\mu
++\frac23\int\mathrm{Tr}T\,d\mu.$$
 
 The leading coefficient $4/3$ is optimal in every matrix dimension; the
 submission had $13/3$. Smooth localization has an explicit derivative penalty.
@@ -104,7 +104,7 @@ The proof does not supply a random-cavity cubic-delay moment.
 
 **Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
 For deterministic phase-independent Hermitian $H$ with
-$\operatorname{Tr}H=m$ and $\operatorname{Tr}H^2\le C_Hm$, eigenphase matching
+$\mathrm{Tr}H=m$ and $\mathrm{Tr}H^2\le C_Hm$, eigenphase matching
 along $DS e^{ixH/m}$ gives a locally uniform $L^1$ comparison with
 $e^{ix/m}DS$ for the normalized normally absorbed scalar resolvent, including
 each fixed source derivative. Repeated eigenvalues are included. The

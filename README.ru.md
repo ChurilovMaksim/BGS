@@ -71,8 +71,8 @@ L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
 
 **Фазовая память при повторном использовании тех же фаз — [BGS-TRACE-053](mathematics/max_entry_phase_channel.md).**
 Для $S\in U(m)$ положим $P_{ij}=|S_{ij}|^2$, $\delta=\max P_{ij}$,
-$A=\Pi\operatorname{Ad}(S)$ и
-$T_n=\mathbb E_D\operatorname{Ad}((DS)^n)$. Здесь $\Pi$ — диагональное
+$A=\Pi\mathrm{Ad}(S)$ и
+$T_n=\mathbb E_D\mathrm{Ad}((DS)^n)$. Здесь $\Pi$ — диагональное
 пинчирование, а независимые равномерные диагональные фазы $D$ остаются теми
 же во всех степенях; все элементы $J_m$ равны $1/m$.
 На всём комплексном пространстве Фробениуса при $n\ge2$
@@ -91,13 +91,13 @@ $O_\rho(\log\log(1/\delta)/\log(1/\delta))$ при $\delta\to0$.
 $T=F^*zF'\ge I$ на окружности и $d\mu=d\theta/(2\pi)$.
 При $\dot T=dT/d\theta$, без предположения коммутативности
 
-$$\int\operatorname{Tr}(\dot T T^{-1}\dot T)\,d\mu
-\le\frac13\int\operatorname{Tr}(T^3-T)\,d\mu,$$
+$$\int\mathrm{Tr}(\dot T T^{-1}\dot T)\,d\mu
+\le\frac13\int\mathrm{Tr}(T^3-T)\,d\mu,$$
 
 $$\int\|F''T^{-1/2}\|_F^2\,d\mu
-\le\frac43\int\operatorname{Tr}T^3\,d\mu
--2\int\operatorname{Tr}T^2\,d\mu
-+\frac23\int\operatorname{Tr}T\,d\mu.$$
+\le\frac43\int\mathrm{Tr}T^3\,d\mu
+-2\int\mathrm{Tr}T^2\,d\mu
++\frac23\int\mathrm{Tr}T\,d\mu.$$
 
 Главный коэффициент $4/3$ оптимален в каждой матричной размерности; во
 вложении стояло $13/3$. Гладкая локализация сохраняет явную поправку с
@@ -106,7 +106,7 @@ $$\int\|F''T^{-1/2}\|_F^2\,d\mu
 
 **Перенос скалярного источника при обычном поглощении — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
 Для детерминистической эрмитовой $H$, независимой от фаз, с
-$\operatorname{Tr}H=m$ и $\operatorname{Tr}H^2\le C_Hm$ сопоставление
+$\mathrm{Tr}H=m$ и $\mathrm{Tr}H^2\le C_Hm$ сопоставление
 собственных фаз вдоль $DS e^{ixH/m}$ даёт локально равномерное $L^1$-сравнение
 с $e^{ix/m}DS$ для нормированного скалярного резольвентного источника с обычным
 поглощением, включая каждую фиксированную производную по источнику.
