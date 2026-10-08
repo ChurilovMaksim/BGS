@@ -118,12 +118,17 @@ submission had $13/3$. Smooth localization has an explicit derivative penalty.
 The proof does not supply a random-cavity cubic-delay moment.
 
 **Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
-For deterministic phase-independent Hermitian $H$ with
-$\mathrm{Tr}H=m$ and $\mathrm{Tr}H^2\le C_Hm$, eigenphase matching
-along $DS e^{ixH/m}$ gives a locally uniform $L^1$ comparison with
-$e^{ix/m}DS$ for the normalized normally absorbed scalar resolvent, including
-each fixed source derivative. Repeated eigenvalues are included. The
-anisotropic physical source and mixed source products require further inputs.
+For deterministic unitary matrices $S_m$ with
+$\delta_m=\max_{ij}|(S_m)_{ij}|^2\to0$ and
+$\||S_m|^2-J_m\|\le\rho<1$, and a deterministic Hermitian $H_m$
+independent of the reused random phases with
+$\mathrm{Tr}H_m=m$ and $\mathrm{Tr}H_m^2\le C_Hm$, eigenphase
+matching along $DS_m e^{ixH_m/m}$ compares the normalized scalar resolvent
+in $L^1$ with that of $e^{ix/m}DS_m$. Convergence is locally uniform
+for $\mathrm{Re}\,s>0$ and bounded real $x$, including each fixed derivative
+in the absorbed scalar parameter $s$. Repeated eigenvalues are included.
+The anisotropic physical source and mixed-source products require
+additional inputs; no deterministic $D=I$ limit is proved.
 
 These are self-contained project proofs with independent internal
 reconstruction. External priority is not established. The
