@@ -15,7 +15,7 @@ class ReplayArtifactRouting(unittest.TestCase):
             'charge_strengthening_replay': '--output-dir',
             'balanced_pair_schur': '--output-dir',
             'research_checkpoint_replay': '--output-dir',
-            'wave2_checked_replay': '--output-dir',
+            'wave2_portable_replay': '--output-dir',
             'wave3_checked_replay': '--output-dir',
             'fractional_hamming_replay': '--output-dir',
             'fractional_hamming_full_end_2_1': '--output-dir',

@@ -32,7 +32,7 @@ REPLAY_ARTIFACT_OPTIONS = {
     'charge_strengthening_replay': '--output-dir',
     'balanced_pair_schur': '--output-dir',
     'research_checkpoint_replay': '--output-dir',
-    'wave2_checked_replay': '--output-dir',
+    'wave2_portable_replay': '--output-dir',
     'wave3_checked_replay': '--output-dir',
     'fractional_hamming_replay': '--output-dir',
     'fractional_hamming_full_end_2_1': '--output-dir',
@@ -288,6 +288,14 @@ def main() -> None:
             continue
         cmd=[sys.executable,str(p)]
         cmd += replay_artifact_args(p.stem, certificate_directory)
+        if p.stem=='wave2_checked_replay':
+            # The archived v1 wrapper is SHA-sealed by BOTH Wave2 and Wave3.
+            # Recheck its original source closure; the portable v2 entry
+            # below independently executes ALL eight old tasks with the same
+            # authenticated adapter and a four-field basis-invariant policy.
+            # v1's historical exact-reference replay remains runnable
+            # manually, but cannot be a cross-CPU scientific release gate.
+            cmd=[sys.executable,str(p),'--check-sources']
         if p.stem=='pell_floquet_regression':
             cmd+=['--cpp',str(args.build/'pell_pair_orthogonality')]
         elif p.stem in {'actual_algebra_check', 'actual_factor_check', 'actual_field_check', 'actual_casoratian_check'}:

@@ -99,3 +99,39 @@ and explicit sensitivity/undefined-value handling. Historical outputs remain
 traceable; corrected finite diagnostics are still not an asymptotic law.
 Finite surrogate parameters and changed operators must never be labelled as
 spectra of the literal fixed-strength target.
+
+
+## Portable successor to the sealed Wave2 floating split diagnostic
+
+[Wave2 original v1](verification/wave2_checked_replay.py) remains SHA-sealed
+by both historical Wave2 and Wave3 registries. Do **not** change its code,
+source-binding hashes, archived inputs, numeric reference, or the original
+`1e-12` reference-equality policy. Its `rounding` child chooses a Schur
+basis within a repeated-eigenvalue subspace; a subsequent non-scalar diagonal
+perturbation depends on that basis. This makes four printed numbers
+(`reverse_norm` and `P_centered_norm` at both p=5 and p=11) legitimately
+different across BLAS dispatchers. It is **not** evidence of a false
+analytic bound.
+
+The separate [portable v2 replay](verification/wave2_portable_replay.py)
+authenticates every original source and executes **all eight** unchanged
+historical programs and assertions, keeping raw observed/expected artifacts.
+It retains *strict typed exact comparison* for all other scientific fields
+and the original strict split and reconstruction inequalities. For exactly
+four basis-dependent numbers it instead checks the mathematically
+proved **basis-independent structural constraints** described in
+[the derivation](../docs/wave2_schur_basis_portability.md).
+A v2 receipt separately records the actual values, original v1 policy,
+new mathematical bound, and whether v1's exact reference equality happened
+to hold. It must not label a failed v1 equality as a v1 pass.
+
+The complete workspace runs v1's `--check-sources` authenticator and v2's
+full replay as **two separate named checks**. The historical v1 full replay remains executable but its
+exact-reference behavior is machine-dependent. To run either version from
+the repository root, supply a separate fresh output directory:
+
+```sh
+python computations/verification/wave2_checked_replay.py --output-dir build/wave2-v1
+python computations/verification/wave2_portable_replay.py --output-dir build/wave2-v2
+``` All established source protection stays active.
+This is a numerical reproducibility correction, not a new BGS theorem.
