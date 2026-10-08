@@ -98,6 +98,23 @@ class PortableSchurNorms(unittest.TestCase):
                     pass
         self.assertIs(v1.compare_numeric_diagnostics,v2.ORIGINAL_NUMERIC_COMPARE)
 
+    def test_exact_symplectic_fourier_row_orthogonality_counts(self):
+        # No floating point or Schur decomposition: the reverse-kernel
+        # character matrix has exactly orthogonal rows for both primes.
+        for p, n in v2.SPLIT_SAMPLES:
+            values=[(pow(j % p, 3, p), pow(j // p, 3, p))
+                    for j in range(n)]
+            self.assertEqual(len(set(values)),n)
+            for a in range(p):
+                for b in range(p):
+                    if a==b==0:
+                        continue
+                    residue_counts=[0]*p
+                    for x,y in values:
+                        residue_counts[(2*(a*y-b*x)) % p]+=1
+                    self.assertEqual(residue_counts,[p]*p,
+                                     (p,a,b,residue_counts))
+
     def test_analytical_symplectic_fourier_hypotheses(self):
         for p,n in v2.SPLIT_SAMPLES:
             self.assertEqual(n,p*p)
