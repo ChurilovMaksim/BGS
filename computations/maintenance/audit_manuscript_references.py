@@ -28,7 +28,7 @@ def active_tex(text: str) -> str:
     """Ignore whole-line TeX comments and supported literal environments.
 
     A percent sign begins a comment only when the immediately preceding
-    backslash run is even; \% is retained. Whitespace/line numbers are
+    backslash run is even; escaped percent signs are retained. Whitespace/line numbers are
     preserved only to the extent required by source-index scanning.
     """
     output = []
