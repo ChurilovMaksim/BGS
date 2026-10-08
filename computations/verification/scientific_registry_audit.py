@@ -263,7 +263,7 @@ def audit_topics() -> None:
 def audit_governance_surface() -> None:
     required = [
         "CITATION.cff", "CONTRIBUTING.md", "REVIEWING.md", "SOURCE_OF_TRUTH.md",
-        "ROADMAP.md", "RELEASES.md", "CHANGELOG.md", "ERRATA.md",
+        "RESEARCH.md", "RELEASES.md", "CHANGELOG.md", "ERRATA.md",
         "LICENSE_POLICY.md", ".zenodo.json", ".github/CODEOWNERS",
         ".github/pull_request_template.md", ".github/main-branch-policy.json",
         "record/branch_protection_policy.md", "record/scientific_dependency_graph.md",

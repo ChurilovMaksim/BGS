@@ -1,220 +1,101 @@
-# Computations
+# Reproducible computations
 
-## Phase-memory and sharp-jet controls, 8 October
+The maintained programs check exact finite identities, enumerate bounded
+cases, run numerical controls and build publication/formalization artifacts.
+Every output must state its arithmetic and coverage. Passing a computation
+cannot supply a missing analytic limit.
 
-[Python](verification/phase_channel_jet.py) checks phase-character quadrature,
-noncommuting cascade identities and finite rational-inner jet quadratures.
-[C++](cpp/phase_occupation_jet_verifier.cpp) independently enumerates exact
-occupation multiplicities at degrees two and three.
-[Wolfram](wolfram/phase_channel_jet.wl) checks the Poisson differential and
-count polynomial identities. [Commands, arithmetic and coverage](../evidence/executions/20261008/phase-channel-jet/README.md)
-are recorded. These controls do not certify analytic limits or BGS.
+[The reproduction guide](../REPRODUCE_unified.md) gives environment pins,
+whole-workspace commands and Git/archive source modes. Commands below run
+from the repository root. Generated results belong under `build/` or a
+specified temporary output directory; committed historical evidence is not
+an output target for a replay.
 
-[collective_diffusion_gap.py](verification/collective_diffusion_gap.py)
-compares coordinate commutators with exact cyclotomic Weyl blocks,
-checks every parity/wrap gauge at odd N=3..33, complete rational
-projection eigenbases, kernel compression and finite Hardy matrices.
-The separate [spectrum script](experiments/collective_diffusion_spectrum.py)
-uses float64 and a declared deterministic sparse start. Its full/selected
-block coverage is stated in its contract; neither computation certifies
-the analytic uniform gap or BGS.
+## Languages and scientific roles
 
-[frozen_operator_transfer_coercivity.py](verification/frozen_operator_transfer_coercivity.py)
-checks integer Weyl/metaplectic phases, cyclotomic twirls, rational
-nonlinear-functional discriminators, common-noise commutators and swap
-identities, and constructive traceless Weyl Lie generation, including
-composite dimensions. The [Wolfram source](verification/frozen_operator_transfer_checks.wl)
-returned six symbolic identity checks with preserved diagnostics.
-These finite controls do not certify analytic gaps or BGS.
+| Surface | Role |
+|---|---|
+| [verification/](verification/) | Scientific gates, exact finite regressions and explicitly labelled quadrature controls |
+| [python/bgs/](python/bgs/) | Validated finite-field, discrete-log, pair-key and twisted-Jacobi primitives |
+| [cpp/](cpp/) | Independent C++20 exact/exhaustive verifiers; every tracked `.cpp` is registered in the root CMake target set |
+| [wolfram/](wolfram/) and registered `.wl` checks | Symbolic identity sources; an execution claim requires an actual preserved evaluator response |
+| [analysis/](analysis/) and [experiments/](experiments/) | Descriptive finite diagnostics and reproducible figures |
+| [maintenance/](maintenance/) | Fail-closed source synchronization, evidence-aware orchestration and manuscript building |
+| [formalization/](../formalization/README.md) | Lean finite/algebraic certificates, with explicit trust dependencies |
 
-[heisenberg_pair_heat_formula.py](verification/heisenberg_pair_heat_formula.py)
-checks exact hook Gram matrices, cut-and-join and two mixed generators,
-complete Wick compensation on genuine diagonal unitaries, triangular
-mode multiplicities and finite contour exponents. Arithmetic is rational.
-The separate [Wolfram source](verification/heisenberg_pair_heat_checks.wl)
-was evaluated. These checks do not certify analytic asymptotics, the
-actual unperturbed Heisenberg traces or deterministic BGS.
+One maintained implementation per scientific role is preferred. Independent
+representations are retained when they materially improve verification.
 
-[growing_degree_trace_projection.py](verification/growing_degree_trace_projection.py)
-checks exact Wick/Gram and Mehler coefficients, actual unitary trace
-designs, full tensor Casimirs, high-band blindness/covariance and
-independently enumerated permutation cut-and-join versus the top-Wick
-generator. Arithmetic is rational; composition counts are bookkeeping,
-not an analytic packet or BGS certificate.
+## Phase-channel and matrix-jet controls
 
-[clock_structure_and_heat_projection.py](verification/clock_structure_and_heat_projection.py)
-checks rational Fourier selection, clock generator jets, compensated
-mesh masses, Abel signs, stable Gram matrices and cross-block determinant
-surrogates. Complex128 kernel and variance comparisons are diagnostics;
-no stochastic trajectory or asymptotic theorem is computationally certified.
+| Source | Actual finite check |
+|---|---|
+| [phase_channel_jet.py](verification/phase_channel_jet.py) | Complex phase-character quadrature, noncommuting cascade identities, inner-function jet and scalar real-flow quadrature |
+| [phase_occupation_jet_verifier.cpp](cpp/phase_occupation_jet_verifier.cpp) | Exact independent occupation multiplicities at degrees two and three |
+| [phase_channel_jet.wl](wolfram/phase_channel_jet.wl) | Poisson differential and count-polynomial identities |
+| [microscopic_pair_reference.py](analysis/microscopic_pair_reference.py) | Analytic Sine2/Poisson reference figure for the README; no sampled map spectra |
 
-[local_moment_transport.py](verification/local_moment_transport.py)
-integrates rational periodic windows exactly, checks packing witnesses
-and collapsed-clock high-order failures, and differentiates low-degree
-characters with the direct radial Laurent generator. The bounded packet
-separates these controls from numerical unitary matching. It does not
-simulate the enormous chain, certify asymptotic transfer or solve BGS.
+The [8 October packet](../evidence/executions/20261008/phase-channel-jet/README.md)
+records commands, source hashes, tolerances and actual execution. Replay to a
+fresh output location:
 
-[microscopic_noise_removal.py](verification/microscopic_noise_removal.py)
-compares the mixed-trace generator with an independent direct radial Laurent
-implementation in Fraction arithmetic, checks finite character/gap geometry
-and records quadrature resolution for the local Laplace and Fredholm tests.
-The [bounded packet](../evidence/executions/20261005/noise-removal/manifest.json)
-contains 348 exact generator equalities and 630 charge-closure checks.
-It does not certify all-order flatness, entropy, actual noise removal or BGS.
+```sh
+python computations/verification/phase_channel_jet.py --output build/phase-channel-jet.json
+c++ -std=c++20 -O2 -Wall -Wextra -Werror computations/cpp/phase_occupation_jet_verifier.cpp -o /tmp/bgs-phase-occupation
+/tmp/bgs-phase-occupation
+python computations/analysis/microscopic_pair_reference.py
+```
 
-[coboundary_general_start.py](verification/coboundary_general_start.py)
-checks exact exponents and Brownian normalization, 120-digit balanced
-cluster traces, independent spectral matching and uniform-origin geometry,
-Poisson/Möbius and clock-potential bounds, and the prior arbitrary-start kernel's finite
-normalization. It does not sample Brownian endpoints, run enormous step
-counts, prove global kernel asymptotics or establish deterministic BGS.
+These controls accompany TRACE-053/054/056. They do not certify the submitted
+deep-source barriers, anisotropic source hierarchy or BGS.
 
-[circular_dyson_relaxation.py](verification/circular_dyson_relaxation.py)
-independently calibrates sine interpolation, shifted backward heat,
-rectangle orientation and the crossing residue against Fourier formulas.
-Exact rational exponents check the balanced comparison rule. The bounded
-packet records 144 residue cases and 32 heat cases; finite quadrature
-does not certify the analytic contour/Fredholm proof.
+## Selected verification families
 
-[resonant_density_audit.py](verification/resonant_density_audit.py)
-checks signed Fourier/Holder identities and all counterterms, exact
-realizable clusters, all-band CUE covariance and independent density
-moments. The [Wolfram checks](verification/resonant_density_checks.wl)
-were executed. No frozen-map density or BGS estimate is inferred.
+| Family | Entry points and boundary |
+|---|---|
+| Frozen-map arithmetic | [frozen_arithmetic_traces.py](verification/frozen_arithmetic_traces.py), [prime_resonant_audit.py](verification/prime_resonant_audit.py): exact bounded modular/character controls; tiny fixed coupling and Heisenberg cancellation are not simulated |
+| Actual transfer and common-noise gaps | [operator transfer](verification/frozen_operator_transfer_coercivity.py), [collective diffusion](verification/collective_diffusion_gap.py): exact cyclotomic/rational controls; the [spectrum experiment](experiments/collective_diffusion_spectrum.py) is separately float64 |
+| Joint traces and heat | [signed Heisenberg](verification/signed_heisenberg_audit.py), [pair heat](verification/heisenberg_pair_heat_formula.py), [growing-degree projection](verification/growing_degree_trace_projection.py): finite generators, characters and normalizations; not actual asymptotic trace estimates |
+| Noisy local laws and removal | [general start](verification/coboundary_general_start.py), [circular relaxation](verification/circular_dyson_relaxation.py), [moment transport](verification/local_moment_transport.py), [noise removal](verification/microscopic_noise_removal.py): bounded exact/quadrature controls, not enormous stochastic-chain simulation |
+| Unmasked insertions | [wave3_checked_replay.py](verification/wave3_checked_replay.py), [wave3_integration_audit.py](verification/wave3_integration_audit.py): source-bound exact/floating replay and separate lineage/scope checks |
+| Return/local laws | [return_local_limits.py](verification/return_local_limits.py), [return_gap.wl](verification/return_gap.wl): finite window, normalization and calculus checks; weak process limits require the analytic proof |
+| Frozen-map supplement | [supplement guide](../supplement/fixed_map/README.md), [verify_fixed_map_supplement.py](maintenance/verify_fixed_map_supplement.py): preserved inputs and isolated bounded replays |
 
-[signed_heisenberg_audit.py](verification/signed_heisenberg_audit.py)
-checks exact CUE cycles/covariances against independent representations,
-finite absolute-norm bounds and a negative spectral-moment determinant.
-[Wolfram algebra](verification/signed_heisenberg_checks.wl) was actually
-evaluated. Neither certifies an asymptotic estimate for the frozen map.
+Other maintained verifiers remain at their stable paths and are indexed by
+the corresponding theorem, topic and evidence manifest.
 
-[prime_resonant_audit.py](verification/prime_resonant_audit.py) checks
-exact prime orders, split/nonsplit parity, -98/29/97 orbit arithmetic,
-control matrix orientation and Fejer combs. Tiny frozen coupling and
-asymptotic cancellation are not numerically certified.
+## Repository and publication gates
 
-[heisenberg_note_audit.py](verification/heisenberg_note_audit.py)
-checks exact symbol/annihilator and analytic-constant arithmetic, finite
-CUE factorial cycles against two existing references, rational digit
-geometry and independent matrix conventions. Finite checks do not certify
-the analytic action proof, external FUP theorem or deterministic CUE.
+[scientific_registry_audit.py](verification/scientific_registry_audit.py)
+checks claims, dependencies, paper scopes, evidence, environment and topics.
+[repository_audit.py](verification/repository_audit.py) checks structural
+contracts and active-source navigation. These are consistency gates, not
+mathematical proof audits.
 
-The maintained computational surface is deliberately compact and independently cross-checked. Historical language ports, one-shot publication migrators, and exploratory branch source trees are not kept as parallel implementations on `main`.
+```sh
+python computations/maintenance/render_claim_registry.py --check
+python computations/maintenance/sync_return_sections.py --check
+python computations/maintenance/sync_fixed_map_section.py --check
+python computations/maintenance/sync_finite_orbit_section.py --check
+python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper
+```
 
-## C++20 — exact/exhaustive kernels
+The [workspace runner](maintenance/verify_workspace.py) supports repeated
+`--only NAME` selections. Focused execution is recorded as focused; a full
+run must use the actual complete source inventory. Do not synthesize a Git
+checkout identity for a partial overlay or ZIP.
 
-`cpp/` contains the independent exact finite verifiers, including the Cayley energy/resultant kernels, Pell relation/orthogonality checks, fixed-strength locality checks, hyperbolic-period checks, and the noncommuting return-word certificate. Every tracked `.cpp` file must occur in `CMakeLists.txt`; `repository_audit.py` enforces that invariant.
+## Input and diagnostic contracts
 
-## Python — checked arithmetic and orchestration
+[The assertion policy](maintenance/ASSERTION_POLICY.md) distinguishes scripts
+that reject optimized Python from explicit-check-only controls. Replays must
+respect fresh/empty output-directory requirements and preserve failures.
+Exact output comparison excludes execution metadata only where the registered
+contract says so.
 
-`python/bgs/` contains the maintained finite-field, discrete-log, pair-key and twisted-Jacobi primitives with fail-fast validation.
-
-`verification/` contains the scientific gates and exact/finite regressions.
-[`nonlinear_pressure_variance.py`](verification/nonlinear_pressure_variance.py)
-independently assembles the physical symbol and checks the exact rational
-Fourier variance for `BGS-FM-006`; its finite arithmetic does not prove
-the pressure theorem.
-[`gram_resolvent_normalization.py`](verification/gram_resolvent_normalization.py)
-cross-checks finite Toeplitz Gram norms, two-clock Abel sums, the pair
-Poisson kernel and adjoint resolvent for `BGS-TRACE-008`/`BGS-RES-006`.
-It verifies normalizations, not a limiting spectral theorem.
-`verification/scientific_registry_audit.py` checks the machine-readable claim,
-dependency, paper, evidence, environment, and topic contracts before expensive
-science runs. `maintenance/render_claim_registry.py --check` prevents the
-human claim index from drifting from `record/claims.json`.
-`maintenance/verify_workspace.py` orchestrates scientific Python/C++
-execution without mutating committed evidence. `maintenance/build_unified_manuscript.py`
-is the sole maintained consolidated-manuscript builder.
-
-`maintenance/sync_return_sections.py` is the maintained Markdown-to-TeX
-synchronizer for the six return-law chapters. It transforms document links
-through the Pandoc syntax tree so mathematical brackets are not rewritten as
-links. `--check` detects stale generated source.
-
-For focused execution, repeat `verify_workspace.py --only NAME`; the
-[reproduction guide](../REPRODUCE_unified.md) gives the return-law selection.
-Focused execution is recorded in the manifest and does not claim full coverage.
-
-The return-local-limits verifier checks exact rational window probabilities
-for simple spectral clouds, including an independent brute-force enumerator.
-Separate floating and symbolic controls check density transport, its origin
-Jacobian, and free Brownian support-gap calculus. The Wolfram cross-check is
-retained in [return_gap.wl](verification/return_gap.wl); the full Python
-entry point is [return_local_limits.py](verification/return_local_limits.py).
-Neither program proves weak process convergence or the analytic return law.
-
-One-shot scripts that used to integrate research branches into older standalone papers have been retired from `main`; their history remains in Git. New scientific work should change the canonical source/verifier directly rather than regenerate superseded article copies.
-
-`analysis/spectral_diagnostics.py` and the figure scripts retain useful finite numerical experiments with corrected semantics. Their outputs are descriptive/regression evidence and are not promoted to asymptotic or microscopic BGS theorems.
-
-## Language policy
-
-- **C++20:** expensive exact enumeration and independent finite verifiers.
-- **Python:** symbolic/exact orchestration, transparent reference implementations and finite numerical analysis.
-- **Lean 4:** formal finite certificates and falsifiers.
-- **TeX:** the single consolidated manuscript source.
-- **Fortran:** introduce only if profiling identifies a genuine dense numerical hot path that materially benefits from it.
-- **Julia:** retired; zero tracked `.jl` sources and no tracked Julia project environment.
-
-The goal is not a language percentage. It is one maintained implementation per scientific role, with independent checks where they materially increase confidence.
-## Recovered fixed-map computations
-
-The source and historical finite evidence for the fixed-map continuation
-are indexed in [the supplement](../supplement/fixed_map/README.md).
-Run `python computations/maintenance/verify_fixed_map_supplement.py` from
-the root for inventory/syntax checks and 28 isolated replays. The runner
-keeps generated outputs under `build/` and does not overwrite evidence.
-This complements the existing whole-workspace runner.
-
-The late 20--21 September continuation also has a compact exact regression
-gate at `verification/bgs_20260921_regression.py`.  It checks the
-three-orientation algebra, Fourier-line recurrence identities, the frozen
-full-symbol variance, and the local-jet negative control.  It is included
-automatically in a complete `verify_workspace.py` run.  Its scope is exact
-finite/symbolic regression only, not proof of the analytic asymptotic
-theorems or fixed-`tau` BGS.
-
-The 23 September verifiers `frozen_full_lag_gap.py` and
-`frozen_kick_rank.py` check the exact physical-symbol expansion and finite
-Jacobi/rank diagnostics, respectively. Both are discovered by the whole-
-workspace runner and write scoped JSON outputs under its log directory.
-Their finite runs are not proofs of the infinite-lag or all-dimension claims.
-
-The submitted article's three retained 24 September checks are
-[`frozen_seven_cut.py`](verification/frozen_seven_cut.py),
-[`frozen_total_minors.py`](verification/frozen_total_minors.py), and
-[`frozen_antireversor.py`](verification/frozen_antireversor.py).
-They replay finite geometry, 5-adic/Fourier subset arithmetic, and an
-exhaustive integer cyclotomic certificate, respectively. All are included
-in the full verification runner, have dated immutable reference outputs
-under `evidence/20260924/`, and are available as focused selections.
-The analytic and all-dimension steps are documented separately in
-[`record/submitted_article_review_20260924.md`](../record/submitted_article_review_20260924.md).
-
-The later [`frozen_arithmetic_traces.py`](verification/frozen_arithmetic_traces.py)
-checks 1248 exact finite Weyl fixed-point cases and the rational
-\(169/500\) orbit margin in `BGS-FM-010`; its dated reference is
-[`frozen_arithmetic_traces.json`](../evidence/20260924/frozen_arithmetic_traces.json).
-It runs in the whole-workspace suite and by `--only frozen_arithmetic_traces`.
-It does not evaluate the kicked traces or validate the asymptotic BGS target.
-
-The 4 October `verification/expansion_wavepacket_audit.py --output <path>` checks exact arithmetic, finite Weil characters, channels and odd coherent frames. `verification/expansion_wavepacket_checks.wl` is an exact algebra replay source; its execution status is recorded separately. Neither certifies a uniform Heisenberg estimate.
-
-### Numerical preprocessing correction, 6 October 2026
-
-The old polynomial unfolding could reverse level order, and a zero spread could hide a nonzero mean difference. Historical outputs are preserved, not endorsed. [The correction record](../record/audits/spectral_diagnostics_correction_20261006.md) specifies the new order-preserving smoothing, explicit undefined-value handling, negative tests and nine-setting sensitivity. These remain finite descriptive diagnostics; q-values are not assumed IID and no BGS conclusion follows.
-
-## Standalone certificate and input contracts
-
-Assertion-dependent maintained scripts reject optimized Python before imports or output. Explicit-check-only controls retain their stated optimized-mode contract. See [the assertion policy](maintenance/ASSERTION_POLICY.md) and [the fifth-review repair record](../record/round5_code_review_20261006.md) for coverage, domain tests and numerical evidence impact.
-
-## Reviewed complete unmasked insertion controls
-
-`python3 computations/verification/wave3_checked_replay.py --output-dir build/wave3-controls-normal`
-
-`python3 -O computations/verification/wave3_checked_replay.py --output-dir build/wave3-controls-optimized`
-
-Each output directory must be fresh and empty. Four tasks reproduce 72 exact right-frame, 227 exact separated/S2, 1,486 exact convex and 8,708 independent floating controls. Expected/actual bytes, stdout/stderr, source hashes, exit status and explicit-assertion adapter records remain available on failure. Execution metadata is validated separately and never compared as mathematical output. Numeric floating diagnostics retain their original disclosed finite tolerances and are not interval/asymptotic certificates. The unavailable author's 222-control suite is not replayed.
-
-`python3 computations/verification/wave3_integration_audit.py` checks byte/lineage/scope/link consistency only. Exact accepted bounds and the unsigned logarithmic deconvolution obstruction are in [the integration record](../record/wave3_checked_integration_20261007.md). Full suite, manuscript compilation and formal checking remain separate gates.
+[The spectral correction record](../record/audits/spectral_diagnostics_correction_20261006.md)
+replaces nonmonotone polynomial unfolding with an order-preserving procedure
+and explicit sensitivity/undefined-value handling. Historical outputs remain
+traceable; corrected finite diagnostics are still not an asymptotic law.
+Finite surrogate parameters and changed operators must never be labelled as
+spectra of the literal fixed-strength target.

@@ -2,7 +2,9 @@
 
 This guide preserves the programme’s mathematical background and notation. The [current research brief](../RESEARCH.md), [claim ledger](../record/claim_ledger.md), and exact proof sources control current theorem status. This is exposition, not an independent proof certificate. The pre-revision entry pages are preserved with hashes in [the revision archive](../record/history/2026/corpus_revision_20261006/manifest.json).
 
-## 2. Background: classical chaos, quantization, and BGS
+<a id="2-background-classical-chaos-quantization-and-bgs"></a>
+
+## Background: classical chaos, quantization, and BGS
 
 ### Classical chaos
 
@@ -46,7 +48,9 @@ The modern mathematical question is stronger than “does a histogram look GOE/G
 ---
 
 
-## 3. Mathematical formulation of microscopic universality
+<a id="3-mathematical-formulation-of-microscopic-universality"></a>
+
+## Mathematical formulation of microscopic universality
 
 ### Mean-spacing scale
 
@@ -100,7 +104,9 @@ Spacing distributions are downstream objects. They are not automatically determi
 ---
 
 
-## 4. Why Heisenberg time is unavoidable
+<a id="4-why-heisenberg-time-is-unavoidable"></a>
+
+## Why Heisenberg time is unavoidable
 
 The central structural fact is Fourier duality.
 
@@ -151,7 +157,7 @@ This provides the exact second-moment benchmark in the unitary class.
 The problem is therefore a long-time quantum problem even though it is phrased as a small-scale spectral problem.
 
 <p align="center">
-  <img src="assets/figures/correlation_bandwidth.svg" alt="Exact correlation-bandwidth counterexample." width="72%">
+  <img src="../assets/figures/correlation_bandwidth.svg" alt="Exact correlation-bandwidth counterexample." width="72%">
 </p>
 
 **Exact negative control.** One fixed Fourier bandwidth does not determine the microscopic pair law. This is why the maintained extension theorem requires convergence on **every** compact bandwidth.
@@ -159,7 +165,9 @@ The problem is therefore a long-time quantum problem even though it is phrased a
 ---
 
 
-## 5. The maintained frozen quantum map
+<a id="5-the-maintained-frozen-quantum-map"></a>
+
+## The maintained frozen quantum map
 
 The principal family is
 
@@ -216,7 +224,9 @@ The same arithmetic structure that makes the model tractable also creates nontri
 ---
 
 
-## 6. Notation and scales
+<a id="6-notation-and-scales"></a>
+
+## Notation and scales
 
 | Symbol | Meaning |
 |---|---|
@@ -246,7 +256,9 @@ The same arithmetic structure that makes the model tractable also creates nontri
 ---
 
 
-## 7. The exact trace-to-local-statistics bridge
+<a id="7-the-exact-trace-to-local-statistics-bridge"></a>
+
+## The exact trace-to-local-statistics bridge
 
 The deterministic spectral reduction is one of the most mature layers of the programme.
 
@@ -305,24 +317,26 @@ The first box is exactly the current model-specific gap.
 ---
 
 
-## 14. Selected project figures
+<a id="14-selected-project-figures"></a>
+
+## Selected project figures
 
 The figures below are scientific outputs of the project, not decorative README artwork.
 
 <p align="center">
-  <img src="assets/figures/return_obstruction.svg" alt="Return-law obstruction figure." width="82%">
+  <img src="../assets/figures/return_obstruction.svg" alt="Return-law obstruction figure." width="82%">
 </p>
 
 **Return-law obstruction.** Global or arithmetic return information constrains the spectrum but does not determine the microscopic point process.
 
 <p align="center">
-  <img src="assets/figures/pell_harmonic_transition.svg" alt="Pell harmonic transition figure." width="82%">
+  <img src="../assets/figures/pell_harmonic_transition.svg" alt="Pell harmonic transition figure." width="82%">
 </p>
 
 **Harmonic Pell transition.** A rigorous project result in its stated arithmetic regime. The observable and time scale are global, not microscopic.
 
 <p align="center">
-  <img src="assets/figures/cayley_trace_gaussian.svg" alt="Finite Cayley trace distributions and Gaussian reference." width="82%">
+  <img src="../assets/figures/cayley_trace_gaussian.svg" alt="Finite Cayley trace distributions and Gaussian reference." width="82%">
 </p>
 
 **Finite Cayley trace diagnostics.** Numerical evidence for the arithmetic branch. Neither the finite plot nor the global Gaussian law implies local universality.
@@ -332,7 +346,9 @@ The figures below are scientific outputs of the project, not decorative README a
 
 **Spectral diagnostic correction (6 October 2026).** The historical [spacing output](../evidence/numerical/goe_spacing.json) and [forward-window output](../evidence/numerical/matched_window_count_variance.json) used a polynomial unfolding that can reverse level order. These archived numbers are not validated statistical evidence. The [correction and method contract](../record/audits/spectral_diagnostics_correction_20261006.md), [corrected spacing output](../evidence/numerical/goe_spacing_monotone_v2.json), [corrected window output](../evidence/numerical/matched_window_count_variance_monotone_v2.json), and [smoothing/edge sensitivity](../evidence/numerical/spectral_smoothing_sensitivity_v2.json) use order-preserving integrated Gaussian smoothing and explicitly mark undefined standardized differences. These are finite descriptive diagnostics, not a BGS theorem; using the same flawed transformation for cat-map and GOE never guaranteed cancellation of its error.
 
-## 16. Glossary
+<a id="16-glossary"></a>
+
+## Glossary
 
 | Term | Meaning in this repository |
 |---|---|
@@ -354,7 +370,9 @@ The figures below are scientific outputs of the project, not decorative README a
 ---
 
 
-## 17. Frequently asked questions
+<a id="17-frequently-asked-questions"></a>
+
+## Frequently asked questions
 
 ### Is BGS solved in this repository?
 
@@ -395,7 +413,9 @@ A proof that closes **BGS-TRACE-005** for the actual frozen map, with the correc
 ---
 
 
-## 18. Literature and relation to the broader BGS landscape
+<a id="18-literature-and-relation-to-the-broader-bgs-landscape"></a>
+
+## Literature and relation to the broader BGS landscape
 
 The maintained [bibliography](../literature/bibliography.md) separates several roles:
 

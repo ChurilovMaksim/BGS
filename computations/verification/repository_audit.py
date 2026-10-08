@@ -270,32 +270,18 @@ def check_bilingual_readmes() -> None:
 
     required_sections = {
         english: (
-            "## 1. Overview",
-            "## 4. Why Heisenberg time is unavoidable",
-            "## 6. Notation and scales",
-            "## 7. The exact trace-to-local-statistics bridge",
-            "## 8. Research architecture",
-            "## 10. Negative results and ruled-out shortcuts",
-            "## 11. The central open frontier",
-            "## 13. Evidence, proof, formalization, and trust boundaries",
-            "## 15. Historical development of the programme",
-            "## 16. Glossary",
-            "## 17. Frequently asked questions",
-            "## 19. Repository and reproducibility",
+            "## What the conjecture asks",
+            "## The exact model and target",
+            "## Three reconstructed analytic results",
+            "## What else is established, and what is missing",
+            "## Read, reproduce, and cite",
         ),
         russian: (
-            "## 1. Обзор",
-            "## 4. Почему неизбежно время Гейзенберга",
-            "## 6. Обозначения и масштабы",
-            "## 7. Точный переход от следов к локальной статистике",
-            "## 8. Архитектура исследовательской программы",
-            "## 10. Отрицательные результаты и исключённые сокращения",
-            "## 11. Главный открытый фронтир",
-            "## 13. Доказательства, вычисления, формализация и границы доверия",
-            "## 15. История развития программы",
-            "## 16. Глоссарий",
-            "## 17. Часто задаваемые вопросы",
-            "## 19. Репозиторий и воспроизводимость",
+            "## О чём гипотеза",
+            "## Точная модель и цель",
+            "## Три восстановленных аналитических результата",
+            "## Другие результаты и оставшийся разрыв",
+            "## Чтение, воспроизведение и цитирование",
         ),
     }
 
@@ -331,12 +317,14 @@ def check_bilingual_readmes() -> None:
 
         for heading in required_sections[path]:
             if heading not in text:
-                fail(f"missing wiki section in {path.name}: {heading}")
+                fail(f"missing reader section in {path.name}: {heading}")
 
-        for raw in re.findall(r'<img[^>]+src="([^"]+)"', text):
+        image_refs = re.findall(r'<img[^>]+src="([^"]+)"', text)
+        image_refs += re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text)
+        for raw in image_refs:
             if "://" in raw:
                 continue
-            target = (ROOT / raw).resolve()
+            target = (path.parent / raw).resolve()
             try:
                 target.relative_to(ROOT.resolve())
             except ValueError:
@@ -369,7 +357,7 @@ def check_active_markdown_links() -> None:
         ROOT / "SOURCE_OF_TRUTH.md",
         ROOT / "CONTRIBUTING.md",
         ROOT / "REVIEWING.md",
-        ROOT / "ROADMAP.md",
+        ROOT / "RESEARCH.md",
         ROOT / "RELEASES.md",
         ROOT / "ERRATA.md",
         ROOT / "record" / "README.md",

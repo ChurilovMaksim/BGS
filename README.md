@@ -1,108 +1,143 @@
-# Bohigas–Giannoni–Schmit research programme
-
-**The fixed-strength deterministic microscopic BGS problem remains open.**
-This repository develops exact arithmetic structure, signed trace reductions,
-quantum return laws, controlled noisy comparisons, analytic inequalities and
-finite certificates. Each result states its model and its remaining boundary.
+# BGS: quantum chaos and microscopic spectral statistics
 
 [Русская версия](README.ru.md) · [Research brief](RESEARCH.md) ·
 [Theorem index](mathematics/results.md) · [Claim ledger](record/claim_ledger.md)
 
-## The problem and the maintained model
+**The deterministic microscopic BGS problem remains open.** This repository
+contains maintained proofs, exact finite controls and a consolidated research
+manuscript. It studies how classical chaos can produce random-matrix spectral
+statistics, with an explicit nonlinear quantum map as the principal test case.
 
-BGS asks when the local spectral statistics of a classically chaotic quantum
-system follow the random-matrix law appropriate to its symmetries. A precise
-claim needs a semiclassical family, symmetry reduction, unfolding, and tests
-at every fixed correlation order. Arithmetic and conjugacy exceptions must
-be addressed in that formulation.
+## What the conjecture asks
 
-The maintained nonlinear toral map uses odd N≥3, the ordinary Weyl convention,
-S=[[3,4],[2,3]], and the fixed propagator
+The [Bohigas–Giannoni–Schmit paper of 1984](https://doi.org/10.1103/PhysRevLett.52.1)
+identified random-matrix level fluctuations in a chaotic billiard. The general
+problem is to prove the appropriate local law for a specified semiclassical
+family, after resolving symmetries and normalizing the mean level spacing.
+Classical chaos alone is not a complete set of hypotheses: arithmetic
+structure and the choice of quantization matter.
 
-$$U_N=e^{i\tau N A_N}M_N,\qquad \tau=10^{-80}.$$
+For the unitary symmetry class, the density-one reference is the Sine$_2$
+process. Its kernel and pair correlation are
 
-The exact symbol, metaplectic matrix, exceptional dimensions and symmetry
-conventions are specified in [the frozen-model proof](mathematics/fixed_map_resolvent_frontier.md).
-The coupling stays fixed in this target. A necessary/reference pair test is
+$$K(x,y)=\frac{\sin\pi(x-y)}{\pi(x-y)},\qquad
+\rho_2(x,y)=1-|K(x,y)|^2.$$
 
-$$N^{-2}\sum_{n\ge1}e^{-2sn/N}|\operatorname{Tr}U_N^n|^2
+![Analytic Sine2 pair correlation and Poisson reference](assets/figures/microscopic_pair_reference.svg)
+
+*Analytic reference curves, not measured spectra of the maintained map.
+The horizontal coordinate is separation in units of the mean spacing;
+the pair correlation is not the nearest-neighbour spacing density.*
+
+A complete local law requires every fixed correlation order. A few trace
+moments or a spacing plot do not determine that law.
+
+## The exact model and target
+
+The principal family uses odd $N\ge3$, the ordinary Weyl convention, and
+
+$$S=\begin{pmatrix}3&4\\2&3\end{pmatrix},\qquad
+U_N=e^{i\tau N A_N}M_N,\qquad \tau=10^{-80}.$$
+
+The [canonical model statement](mathematics/fixed_map_resolvent_frontier.md)
+specifies the symbol, metaplectic kernel and exceptional dimensions. The
+coupling stays fixed as $N\to\infty$. A necessary pair reference is
+
+$$L_N(s)=\frac1{N^2}\sum_{n\ge1}e^{-2sn/N}
+|\operatorname{Tr}U_N^n|^2
 \longrightarrow\frac{1-e^{-2s}}{4s^2},\qquad s>0.$$
 
-The complete target is the **signed Heisenberg-scale factorial joint-trace
-comparison** for every fixed order and compact smooth Fourier weight
-([TRACE-005](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates)). Its modulus is
-outside the complete sum. Pair control, short-time traces, phase averages,
-noise limits and global observable laws have their own scopes.
+The full target, [BGS-TRACE-005](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates),
+is the correctly desymmetrized, density-unfolded **signed factorial joint-trace
+comparison at Heisenberg powers** for every fixed order and compact smooth
+Fourier test. The modulus is outside the complete sum. The
+[trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md)
+states the exact hypotheses converting these trace estimates to local laws.
 
-## Latest proved continuation: 8 October 2026
+## Three reconstructed analytic results
 
-[The research checkpoint](record/research_checkpoint_20261008.md) audits the
-latest attached manuscript, supplies complete proofs and records unresolved
-inputs. Three results are integrated:
+**Phase memory with reused coordinate phases — [BGS-TRACE-053](mathematics/max_entry_phase_channel.md).**
+For $S\in U(m)$, set $P_{ij}=|S_{ij}|^2$, $\delta=\max P_{ij}$,
+$A=\Pi\operatorname{Ad}(S)$, and
+$T_n=\mathbb E_D\operatorname{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
+and the same independent uniform diagonal phases $D$ are reused in every power.
+$J_m$ has every entry $1/m$.
+On the full complex Frobenius space, for $n\ge2$,
 
-| Result | Exact conclusion | Boundary |
+$$\|T_n-A^n\|_{2\to2}
+\le(n!-1)\sqrt\delta+n!n(n-1)\delta.$$
+
+The degree-two norm is exactly $\max_{i\ne j}|S_{ij}S_{ji}|\le\delta$.
+If $\|P-J_m\|\le\rho<1$, averaged eigenspace pinching on traceless matrices
+has norm $O_\rho(\log\log(1/\delta)/\log(1/\delta))$ as $\delta\to0$.
+This operator-norm conclusion does not evaluate a microscopic spectral trace.
+
+**Optimal matrix inner-function jets — [BGS-TRACE-054](mathematics/sharp_inner_jet.md).**
+Let $F=zG$ be a square finite rational inner matrix function and set
+$T=F^*zF'\ge I$ on the circle, with $d\mu=d\theta/(2\pi)$. Without a
+commutativity assumption, with $\dot T=dT/d\theta$,
+
+$$\int\operatorname{Tr}(\dot T T^{-1}\dot T)\,d\mu
+\le\frac13\int\operatorname{Tr}(T^3-T)\,d\mu,$$
+
+$$\int\|F''T^{-1/2}\|_F^2\,d\mu
+\le\frac43\int\operatorname{Tr}T^3\,d\mu
+-2\int\operatorname{Tr}T^2\,d\mu
++\frac23\int\operatorname{Tr}T\,d\mu.$$
+
+The leading coefficient $4/3$ is optimal in every matrix dimension; the
+submission had $13/3$. Smooth localization has an explicit derivative penalty.
+The proof does not supply a random-cavity cubic-delay moment.
+
+**Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
+For deterministic phase-independent Hermitian $H$ with
+$\operatorname{Tr}H=m$ and $\operatorname{Tr}H^2\le C_Hm$, eigenphase matching
+along $DS e^{ixH/m}$ gives a locally uniform $L^1$ comparison with
+$e^{ix/m}DS$ for the normalized normally absorbed scalar resolvent, including
+each fixed source derivative. Repeated eigenvalues are included. The
+anisotropic physical source and mixed source products require further inputs.
+
+These are self-contained project proofs with independent internal
+reconstruction. External priority is not established. The
+[submission review](literature/phase_channel_jet_sources_20261008.md) maps the
+attached article to maintained results and explicitly pending candidates.
+In particular, BGS-TRACE-055's polylogarithmic deep-source hierarchy remains
+**verification-pending**.
+
+## What else is established, and what is missing
+
+| Family | Maintained conclusion | Remaining boundary |
 |---|---|---|
-| [TRACE-053: max-entry phase memory](mathematics/max_entry_phase_channel.md) | For uniform coordinate phases reused at every return, channel error ≤(n!−1)√δ+n!n(n−1)δ; averaged traceless eigenbasis pinching is O(log log(1/δ)/log(1/δ)) under an intensity singular gap | Channel operator norm does not evaluate the microscopic superoperator trace |
-| [TRACE-054: sharp matrix inner jets](mathematics/sharp_inner_jet.md) | For rational matrix inner F=zG, the right-weighted second-jet energy has optimal universal leading coefficient 4/3, improving the submitted 13/3; smooth localization includes its exact derivative penalty | A physical cubic-delay moment and stochastic covariance still need separate proofs |
-| [TRACE-056: direct real-flow scalar transport](mathematics/phase_channel_real_flow.md) | Eigenphase matching and normally absorbed scalar-source L1 comparison along a real unitary flow, including each fixed source derivative | The anisotropic physical source, mixed products and scalar endpoint law are separate obligations |
+| Fixed-map structure | Actual intensity mixing, cyclic ramp and reverse-cyclic suppression; common pair commutant classified for odd $N\ne7$ | Common commutant is not simplicity of $U_N$ or microscopic universality |
+| Signed trace sectors | Selected weighted WKB, fixed-order ordered-diagonal and specified low-switch families | Complete balanced law, high-switch interference and plateau |
+| Unmasked insertion calculus | Complete separated/convex hierarchy; bounded-parameter signed weak-noise stability | Masks, undamped endpoint and signed noise removal |
+| Noisy local laws | Actual-start weak local law; all fixed factorial orders on a separately stated schedule | Transfer back to the unchanged deterministic propagator |
+| Arithmetic and return laws | Cayley, Pell, Floquet, resonance, locality and information-theory theorems in their own regimes | Their hypotheses do not by themselves identify the frozen-map local law |
 
-The submitted TRACE-055 polylogarithmic deep-source hierarchy is
-**verification-pending**. Its joint delay barriers, killed moment and
-physical-source covariance/continuation have not been reconstructed. Even
-that hierarchy would require identification of its actual scalar cavity law.
-The [source review](literature/phase_channel_jet_sources_20261008.md) makes no
-external-priority or prize-level claim.
+Exact statements and dependencies are in the [research brief](RESEARCH.md)
+and [thematic reading paths](mathematics/topics/README.md). The central
+unresolved estimates are the absorbed Ward overlap defect, the complete
+balanced microscopic law, and the signed deterministic all-order comparison.
+The [obligation board](mathematics/open_questions.md) states them precisely.
 
-## Established families and the remaining spectral gap
+## Read, reproduce, and cite
 
-The fixed-model programme includes actual position-chain mixing and cyclic
-path control (FM-021), reverse-cyclic suppression (FM-022), the odd-dimensional
-common-commutant classification with the N=7 exception (FM-024), selected
-weighted and ordered-diagonal factorial sectors (TRACE-019/020), and scoped
-balanced/offcharge low-switch removal (TRACE-021).
-The complete unmasked convex insertion hierarchy is proved in
-[TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md);
-[TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) gives
-bounded-u signed stability and an actual unsigned logarithmic obstruction.
-
-The unresolved work is the actual complete balanced microscopic law,
-signed marked/high-switch and undamped comparison, the absorbed Ward overlap,
-and every-fixed-order TRACE-005 hierarchy. New subsidiary proofs change these
-obligations only where an explicit theorem supplies the needed input.
-[The obligation board](mathematics/open_questions.md) keeps exact statements.
-
-Parallel families cover Cayley finite-field geometry, Pell/Floquet dynamics,
-return laws, resonance and cohomology, locality, spectral obstructions, and
-information-theory applications. [Thematic reading paths](mathematics/topics/README.md)
-state their hypotheses and dependencies.
-
-## Reading and reproduction
-
-The scientific authority is [the claim ledger](record/claim_ledger.md), followed
-by [stable claim metadata](record/claims.json) and the canonical mathematical
-proof files. [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) resolves disagreements.
-The single maintained publication root is
+Start with the [reader background](docs/reader_guide.en.md), then the theorem
+source appropriate to your question. The [claim ledger](record/claim_ledger.md)
+controls scientific status; [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) resolves
+conflicting surfaces. The single publication root is
 [manuscript/BGS_unified.tex](manuscript/BGS_unified.tex).
 
-The new continuation has independent internal proof reconstruction, a compact
-[execution packet](evidence/executions/20261008/phase-channel-jet/README.md),
-Python orientation/quadrature controls, exact C++ occupation counts, Wolfram
-identity checks, and an aggregate Lean 4.33.1 build of all 20 active modules.
-The new Lean lemmas certify coefficient arithmetic; the analytic proofs and
-BGS are not formalized. Older native-evaluation certificates retain their
-explicit trust boundary.
+The [computation guide](computations/README.md),
+[formalization scope](formalization/README.md), and
+[reproduction guide](REPRODUCE_unified.md) give commands and coverage.
+The [8 October execution packet](evidence/executions/20261008/phase-channel-jet/README.md)
+records Python quadrature, exact independent C++ occupation counts, Wolfram
+identities, a 20-module Lean 4.33.1 build and the 280-page manuscript build.
+Lean certifies stated finite/algebraic kernels; the analytic theorems and BGS
+are not formalized by that build.
 
-```sh
-python computations/verification/phase_channel_jet.py
-c++ -std=c++20 -O2 -Wall -Wextra -Werror computations/cpp/phase_occupation_jet_verifier.cpp -o /tmp/bgs-occupation
-/tmp/bgs-occupation
-(cd formalization && lake build)
-python computations/maintenance/build_unified_manuscript.py --output-dir build/unified-paper
-```
-
-[Computation guide](computations/README.md) · [Formalization scope](formalization/README.md) ·
-[Manuscript build](manuscript/README.md) · [Reader background](docs/reader_guide.en.md)
-
-Historical evidence is indexed and retained with its original provenance.
-The 8 October review is scoped; it does not certify every earlier proof or
-report a full rerun of all historical verifiers.
+Historical records retain their original provenance. A scoped review does
+not certify every earlier proof. [Citation metadata](CITATION.cff),
+[review policy](REVIEWING.md), and [publication scopes](papers/README.md)
+complete the research-facing entry points.

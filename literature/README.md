@@ -1,81 +1,40 @@
 # Literature and external theorem dependencies
 
-[frozen_operator_transfer_sources_20261006.md](frozen_operator_transfer_sources_20261006.md)
-checks the exact product-norm classical mixing leaf and Hölder coding,
-credits prior toral noisy-relaxation/Egorov methods, and separates the
-color-flavor quadratic block from its nonlinear determinant functional.
-Inherited Gibbs inputs and unverified priority remain explicit.
+This directory records exact external inputs, related prior results and
+limits of source/priority checks. A matching title or abstract is a lead;
+it is not the theorem needed by a proof.
 
-[heisenberg_pair_heat_sources_20261005.md](heisenberg_pair_heat_sources_20261005.md)
-pins the inherited stable Haar input, credits prior unitary cut-and-join
-heat calculus, and separates exact Riemann--Siegel algebra from the
-unproved actual-map quantum remainder. No world priority is claimed.
+Start with the [bibliography](bibliography.md) for the mathematical landscape
+and [external_dependencies.json](external_dependencies.json) for registered
+load-bearing theorem locators and hypothesis mappings.
 
-[periodic_orbit_clt_scope_20261005.md](periodic_orbit_clt_scope_20261005.md)
-checks a recent primary periodic-orbit route and gives an exact
-growing-frequency falsifier for the weak-CLT shortcut. Its actual-map
-oscillatory estimate remains open.
+## Source checks by role
 
-[growing_degree_sources_20261005.md](growing_degree_sources_20261005.md)
-pins the prior complex Hermite/Mehler normalization and stable Haar
-input, and distinguishes the internally reconstructed permutation
-spectrum from an external highest-weight theorem. No priority is claimed.
+| Question | Maintained source note |
+|---|---|
+| What has the attached article actually established here? | [Phase-channel/jet source and submission disposition](phase_channel_jet_sources_20261008.md) |
+| What is the precise BGS scope? | [BGS scope and polynomial flow](bgs_scope_and_polynomial_flow_20261004.md), [all-order sources](all_order_sources_20261005.md) |
+| Which classical/noisy mixing results apply to the frozen map? | [Operator transfer](frozen_operator_transfer_sources_20261006.md), [collective diffusion](collective_diffusion_sources_20261006.md), [original channel](original_channel_gap_sources_20261006.md) |
+| Which Haar and heat-calculus inputs are used? | [Signed Heisenberg](signed_heisenberg_sources.md), [pair heat](heisenberg_pair_heat_sources_20261005.md), [growing-degree projection](growing_degree_sources_20261005.md) |
+| What is imported into the local noisy comparison? | [Actual-start Dyson](actual_start_dyson_sources_20261004.md), [critical noise](critical_noise_sources_20261005.md), [noise removal](noise_removal_sources_20261005.md) |
+| Which phase-source reductions retain additional qualifications? | [Wave2 phase/source audit](wave2_phase_orbit_source_qualification_20261007.md), [color-one boundary](color_one_boundary_qualification_20261007.md) |
+| Where are the other theorem families sourced? | [Return/local-limit](return_local_limits_sources.md), [Pell/Floquet](pell_floquet_sources.md), [temporal resonance](temporal_resonance_sources.md), [finite orbit](finite_orbit_20260922.md) |
 
-[critical_noise_sources_20261005.md](critical_noise_sources_20261005.md)
-pins prior lattice relaxation kernels and the stable-range Haar input,
-with explicit time conversion and a source-formula incompatibility that
-is excluded from the proof. No priority claim is made.
-
-[all_order_sources_20261005.md](all_order_sources_20261005.md) checks
-Soshnikov's spatial ergodicity for Sine$_2$, explains why the inspected
-quantum-graph averaging setup supplies no fixed-map arrow, and states
-the bounded overlap search. Transport and chain priority remain unverified.
-
-The [5 October transfer source audit](noise_removal_sources_20261005.md)
-pins the standard character heat calculus and specific-entropy definition,
-records canonical-PDF version headers and unavailable versioned URLs,
-and distinguishes the published variational characterization from its
-unproved actual-map input. No priority or local PDF hash is claimed.
-
-[actual_start_dyson_sources_20261004.md](actual_start_dyson_sources_20261004.md)
-checks real-line scale restrictions, circular local-law initial conditions
-and the prior arbitrary-start determinantal kernel. No microscopic
-circular relaxation theorem is silently imported. FLOW-014 derives its
-global contour and Fredholm estimates separately from the prior finite kernel.
-
-[resonant_density_sources.md](resonant_density_sources.md) records the
-reused Diaconis--Evans degree gate, independently derived determinant
-bounds, related prior work and the absence of a priority claim.
-
-[signed_heisenberg_sources.md](signed_heisenberg_sources.md) pins the
-corrected Diaconis--Evans stable moment range and credits prior
-non-self-averaging and project cubic calibrations.
-
-`literature/` records the external mathematical boundary of the BGS research
-programme. A citation is not treated as a proof merely because its title or
-abstract resembles the needed statement.
-
-Start with:
-
-- [bibliography.md](bibliography.md) — curated theorem-level bibliography and source checks;
-- [external_dependencies.json](external_dependencies.json) — machine-readable
-  load-bearing theorem locators, pinned versions/editions, dates checked,
-  hypothesis mappings, and project sources;
-- the specialized source notes in this directory for return laws, local
-  limits, temporal resonance, and other theorem families.
+The phase-channel and sharp matrix-jet proofs are self-contained at their
+stated scopes. Their external priority is unresolved. The submission review
+also preserves the difference between an unpromoted candidate and a proved
+counterexample; “verification-pending” does not mean false.
 
 ## Load-bearing citation rule
 
-A publication-grade external dependency records authors, title, persistent
-identifier, pinned version/edition, exact theorem/lemma locator, date checked,
-project-specific hypothesis mapping, and affected claims. Search snippets and
-abstract-level similarity are not sufficient.
+A publication-grade dependency records authors, title, persistent identifier,
+pinned version/edition, exact theorem or lemma locator, date checked,
+project-specific hypothesis mapping and affected claims. Abstract-level
+similarity and search snippets are insufficient. If a needed theorem has
+not been inspected, its use retains that explicit boundary.
 
-The scientific registry audit verifies that registered external dependency IDs
-resolve and that claims marked with an external-theorem status actually name
-their dependencies.
-
-Historical literature notes remain useful audit records, but the current
-machine registry is the normalization layer for load-bearing dependencies.
-
-[Expansion and packet source checks](expansion_wavepacket_sources_20261004.md) separate published gap/transcendence inputs, prior coherent-state methods and the historical conditional trace formula.
+The [scientific registry audit](../computations/verification/scientific_registry_audit.py)
+checks dependency-ID resolution and required external-input declarations.
+It does not perform a mathematical literature review. Current normalized
+load-bearing dependencies live in the machine registry; specialized notes
+retain their actual search/review coverage and earlier corrections.

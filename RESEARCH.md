@@ -1,105 +1,117 @@
 # BGS research brief
 
-## Reviewed phase-memory and sharp-jet continuation, 8 October 2026
+**Current scientific status, 8 October 2026:** the unchanged fixed-strength
+microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
+This page summarizes established conclusions and exact missing implications.
+The [claim ledger](record/claim_ledger.md) is the status authority; a dated
+review or an attached manuscript cannot override it.
 
-[The research checkpoint](record/research_checkpoint_20261008.md) reconstructs
-TRACE-053's max-entry channel and explicit averaged-pinching rate, proves
-TRACE-054's optimal 4/3 matrix inner jet bound with localization correction,
-and proves TRACE-056's direct real-flow absorbed scalar L1 comparison.
-TRACE-055's submitted polylogarithmic deep-source hierarchy remains
-verification-pending. Scalar cavity identification, signed undamped/high-switch
-comparison, every-fixed-order TRACE-005 and deterministic BGS remain OPEN.
+## Model and complete target
 
+The maintained odd-dimensional family is
+$U_N=e^{i\tau N A_N}M_N$, $\tau=10^{-80}$, with ordinary Weyl convention and
+cat matrix $\bigl(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\bigr)$.
+[The model proof](mathematics/fixed_map_resolvent_frontier.md) fixes the symbol,
+normalizations, symmetry qualifications and exceptional dimensions.
 
-## Reviewed Wave3 unmasked closure
+TRACE-005 asks for signed weighted factorial joint-trace comparison at
+Heisenberg powers, for every fixed order and every smooth compact Fourier
+weight. The modulus is taken outside the complete normalized sum. The
+[exact bridge](mathematics/trace_to_local_statistics_bridge.md) states the
+additional positivity and extension hypotheses needed for local correlations.
+The necessary pair reference is
 
-The complete unmasked separated/convex insertion hierarchy is closed by [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md), uniformly for all switch parameters and insertion counts at the stated normalization. [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds bounded-u complete signed stability and a sharp actual unsigned logarithmic deconvolution obstruction. The remaining route retains masks/source extraction and cancellation before absolute bounds; undamped zero-insertion, signed T16, balanced law, Ward(13), TRACE005 and BGS remain OPEN.
+$$\frac1{N^2}\sum_{n\ge1}e^{-2sn/N}|\operatorname{Tr}U_N^n|^2
+\longrightarrow\frac{1-e^{-2s}}{4s^2},\qquad s>0.$$
 
+Shrinking-coupling returns, arithmetic averages, coordinate-phase ensembles
+and noisy dynamics have their own conclusions. Their comparison with this
+particular frozen propagator must itself be proved.
 
-## Reviewed phase checkpoint, 7 October 2026
+## Established conclusions by mathematical role
 
-[The checked checkpoint](record/checked_research_checkpoint_20261007.md)
-strengthens the current pair residual to checksum-free low-switch removal and
-adds independently reviewed Schur/source reductions, literal fixed-word laws,
-actual radial/resolvent control and ordinary-body coercivity. The exact
-remaining pair tasks are the complete balanced microscopic law and signed
-undamped high-switch offcharge endpoint; higher factorial TRACE-005 and BGS
-remain open. [Exact scopes](mathematics/phase_trace_checkpoint.md) distinguish
-accepted proofs, source corrections, changed-family obstructions and deferred
-candidates. Main publication follows aggregate checks and fresh review.
+| Role | Maintained theorem sources | Exact scope |
+|---|---|---|
+| Actual quantum structure | [FM-024 common commutant](mathematics/actual_seven_primary_commutant.md); [FM-025 pure-five family](mathematics/uniform_five_cluster_simplicity.md); [FM-026 multiplicities](mathematics/literal_time_multiplicity_bounds.md) | Pair commutant classified for every odd $N\ge3$ except $N=7$; separate kick-simplicity and literal-time multiplicity bounds. Full $U_N$ simplicity is not inferred from pair irreducibility |
+| Intensity and paths | [FM-021](mathematics/position_chain_mixing.md); [FM-022](mathematics/reversed_path_decay.md); [three-block](mathematics/three_block_unmarking.md) and [four-block](mathematics/four_block_unmarking.md) controls | Eventual constant intensity singular gap, cyclic ramp, reverse-cycle suppression and specified distinct-port reconnections; not all noncyclic interference |
+| Fixed-order Fourier sectors | [TRACE-017 WKB reduction](mathematics/factorial_wkb_reduction.md); [TRACE-019](mathematics/selected_weighted_coefficient.md); [TRACE-020](mathematics/factorial_ordered_diagonal.md); [TRACE-021](mathematics/hamming_low_switch_residual.md) | Complete reduction to named finite-order tables, selected full-weight WKB and ordered-diagonal removal, checksum-free specified low-switch removal; the signed complementary sectors remain |
+| Source and insertion calculus | [TRACE-027](mathematics/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
+| Original common-noise rate | [FM-020](mathematics/original_channel_gap.md) | Two-copy singular gap dominates $N^{-1}$ at $u=N^{-\alpha}$, $0<\alpha<1$. This closes the original-rate question left by FM-018/019, but not nonlinear quenched control, higher-copy rates or deterministic transfer |
+| Noisy local statistics | [FLOW-014](mathematics/circular_dyson_actual_start.md); [FLOW-017](mathematics/coboundary_all_order_limit.md) | Actual-start weak local law on a polynomial schedule; all fixed factorial orders and one-chain origin averages on a different superpolynomial schedule |
+| Reused phase channel | [TRACE-053](mathematics/max_entry_phase_channel.md) | Full complex endpoint marks, both collision corrections, exact second-degree norm and an explicit max-entry averaged-pinching rate |
+| Rational matrix inner functions | [TRACE-054](mathematics/sharp_inner_jet.md) | Self-contained noncommuting right-weighted second-jet inequality with optimal leading coefficient $4/3$ and the exact smooth-localization penalty |
+| Real unitary source flow | [TRACE-056](mathematics/phase_channel_real_flow.md) | Normally absorbed unweighted scalar $L^1$ source transport, including fixed derivatives and repeated eigenvalues; anisotropic sources and mixed products are outside the conclusion |
 
-The fixed-strength microscopic BGS claim for the maintained frozen quantum map is **open**. This repository establishes subsidiary structural, arithmetic and noisy comparison results; it does not yet establish the deterministic local spectral law. Current status is controlled by [the claim ledger](record/claim_ledger.md), with exact statements in [mathematics](mathematics/README.md).
+Other maintained arithmetic, Pell/Floquet, return-law, resonance, locality and
+information-theory results are indexed by [topic](mathematics/topics/README.md).
+They retain their own regimes and are not automatic BGS inputs.
 
-## Model and target
+## Submitted article: accepted overlap and pending assertions
 
-The target is the prescribed odd-dimensional quantization with fixed coupling tau=10^(-80), with its stated symmetry reduction and unfolding. Shrinking-coupling Pell return theorems, averaged arithmetic designs and auxiliary noisy dynamics have different hypotheses and must not be silently substituted for this operator.
+The [source-disposition review](literature/phase_channel_jet_sources_20261008.md)
+identifies the attached 293-page PDF by hash, maps its final sections to the
+maintained corpus and separates proved overlap from unreconstructed inputs.
+The [8 October checkpoint](record/research_checkpoint_20261008.md) supplies
+full proofs for TRACE-053/054/056 and an explicit disposition of TRACE-055.
+TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 
-The remaining TRACE-005 target is signed weighted factorial joint-trace comparison at Heisenberg powers: for every fixed order and every smooth compact Fourier weight, the normalized complete Fourier sum must converge to the matching ensemble value. Any modulus belongs outside the entire sum. [The exact bridge](mathematics/trace_to_local_statistics_bridge.md) converts this to local correlations and supplies the every-bandwidth extension under its positivity assumptions. [TRACE-010](mathematics/signed_heisenberg_comparison.md) excludes simultaneous all-order **absolute**, unaveraged deterministic CUE comparison; it does not exclude the signed target.
+The asserted complete five-primary simplicity, near-full cavity moment laws,
+physical-source equivalence and deep polylogarithmic hierarchy are not
+promoted on the strength of a summary or the word “verified”. TRACE-055 is
+verification-pending: joint input/output delay barriers, the killed second
+clock moment, stopped prefix covariance and physical-source continuation
+still need complete proofs. Even that hierarchy would compare with the
+actual remaining scalar cavity; its microscopic law is a further question.
 
-## Current spectral and selected-family frontier
+## Exact unresolved spectral estimates
 
-The actual pair commutant is classified for odd N>=3 with the exact N=7
-exception ([FM-024](mathematics/actual_seven_primary_commutant.md)); its 7∤N leaf
-now has fresh independent review. [FM-025](mathematics/uniform_five_cluster_simplicity.md)
-gives the pure-five kick family, while [FM-026](mathematics/literal_time_multiplicity_bounds.md)
-gives literal-time multiplicity<=7 and precise simple-eigenvalue counts on
-N=7*5^e. Finite U-simplicity cases remain explicitly bounded. The
-[FM-010 companion](mathematics/uniform_trace_square_transcendence.md) concerns
-one-step squared traces for odd N>=3,N!=7.
+The complete balanced coordinate-phase microscopic law remains open.
+[The phase Ward identity](mathematics/phase_ward_identity.md) isolates a signed
+absorbed overlap defect; [the Schur-energy reduction](mathematics/balanced_pair_schur_reduction.md)
+is an independent exact description of the same pair frontier. Neither
+ordinary intensity mixing nor averaged eigenbasis pinching evaluates it.
 
-[TRACE-019](mathematics/selected_weighted_coefficient.md) controls a selected
-full-weight WKB family. Separately, [TRACE-020](mathematics/factorial_ordered_diagonal.md)
-removes the specified ordered-diagonal sector from every fixed-order factorial
-Fourier expression at O_k(log^(2k)N/N), using actual entrywise flatness alone.
-Its collective and exponential long-cycle companions have distinct bounds;
-none is identified with WKB path masks.
-[TRACE-021](mathematics/hamming_low_switch_residual.md) removes disjoint balanced
-and off-charge Hamming sectors plus a high-Hamming low-switch family from the
-actual pair trace, with exponentially small error. One explicit signed
-residual projector remains unestimated; this does not settle higher orders.
-The exact signed complement, plateau/torsion mechanism and higher factorial
-hierarchy remain open; no BGS conclusion follows.
+[The global switch transfer](mathematics/global_switch_transfer.md) controls
+its stated damped interior. The signed marked/high-switch and undamped
+endpoint, including the plateau contribution, remain unproved. Masks/source
+extraction are not consequences of the unmasked insertion theorem.
+[FLOW-015](mathematics/microscopic_noise_removal.md) records the deterministic
+noise-removal defect without proving its vanishing. Higher factorial orders
+remain part of the full target.
 
-## Strongest current subsidiary conclusions
+Known controls explain why weaker criteria do not close the problem:
+[absolute all-order comparison](mathematics/signed_heisenberg_comparison.md),
+[same-ensemble clock norms](mathematics/isospectral_clock_moment_control.md),
+and [microscopic rounding](mathematics/microscopic_rounding_control.md).
+The rounding example changes the operator and does not preserve exact
+quantization; it is not a counterexample to the maintained literal family.
+Exact open statements are in [open_questions.md](mathematics/open_questions.md).
 
-- **Frozen-map structure.** Symmetry exclusions, algebraic nondegeneracy, logarithmic trace information and exact transfer identities constrain the actual model. Their constants, exceptional dimensions and external inputs belong to their proof statements; they do not estimate the Heisenberg-scale signed hierarchy.
-- **Actual-start noisy local law.** [FLOW-014](mathematics/circular_dyson_actual_start.md) gives the Dyson reference from the centered actual start at t=8g_N, g_N=4 log(J_N)/J_N, J_N=floor(c log N), and a weak local law for the original uncentered random chain on a polynomial step schedule. [FLOW-017](mathematics/coboundary_all_order_limit.md) gives all fixed factorial orders and one-chain origin averages in L2 on a different, superpolynomial schedule. These are noisy conclusions, with recorded internal-review boundaries.
-- **Auxiliary channel gaps.** [FM-020](mathematics/original_channel_gap.md) gives a two-copy singular-gap lower bound for the original ordered common-noise law that dominates N^(-1) at u=N^(-alpha), 0<alpha<1. It supersedes the original-rate gap left by FM-018/019. It does not control the nonlinear quenched functional, higher-copy rates or the deterministic spectrum.
-- **Actual coordinate-path controls.** [FM-021](mathematics/position_chain_mixing.md) gives an eventual constant singular gap for P=|U|², the cyclic path ramp and a specified marked three-link cancellation. [FM-022](mathematics/reversed_path_decay.md) suppresses reverse-cyclic paths. [TRACE-015](mathematics/three_block_unmarking.md) and [TRACE-016](mathematics/four_block_unmarking.md) now control once-counted distinct-port three- and four-block families, with errors O_w((log N)^5/N) and O_w((log N)^10/N). Their bounded classification certificate does not formalize the analytic chain. Repeated ports, inter-family overlaps, general noncyclic interference, the plateau correction and higher trace orders remain open.
-- **Fixed-order WKB reduction.** [TRACE-017](mathematics/factorial_wkb_reduction.md) reduces each complete fixed-k signed partition target to either named finite-J trace table, J>=k, with error O(N^(k-J-1/2)). Exact reciprocity, formal connected coefficients and a conditioned rotated-box theorem are supporting results. The finite-band contour/tail step is now controlled by the global rotated-box theorem; signed comparison and unrestricted bands remain open.
-- **Arithmetic translation exclusion.** [FM-023](mathematics/arithmetic_translation_exclusion.md) excludes the indicated odd d-grid algebras for d|N and d<=N^delta, each fixed delta<1/262, with a fixed-tau constant. Projector normalization requires a nonzero centered part in that algebra; arbitrary projectors and the full commutant remain outside its scope.
-- **Arithmetic, resonance and return laws.** The Cayley, Pell, locality and cohomology programmes give exact identities, scoped asymptotic laws and sharp obstructions under their own assumptions. Their proof families and limitations are indexed in [the topic views](mathematics/topics/README.md); fixed return moments alone cannot identify microscopic statistics.
+## Proof, computation, and review scope
 
-## What remains unresolved
+Analytic project proof, an external theorem with an exact locator, finite
+arithmetic, floating diagnostics and formal kernels are distinct evidence.
+The core registry is narrower than the full theorem corpus. A file inventory
+is not a complete proof review; inherited analytic chains retain their
+recorded review boundaries. Priority for the reconstructed inequalities is
+not established.
 
-The decisive missing estimate is the actual deterministic signed comparison. [FLOW-015](mathematics/microscopic_noise_removal.md) and FLOW-017 express corresponding noise-removal defects but do not prove their vanishing. The [pair-heat formula](mathematics/heisenberg_pair_heat_formula.md) controls a smoothed pair band; the unperturbed band and higher signed hierarchy remain unknown.
+The [current execution packet](evidence/executions/20261008/phase-channel-jet/README.md)
+records independent internal reconstruction, bounded Python/C++/Wolfram
+controls, all 20 active Lean modules and the 280-page manuscript build.
+The [7 October integration](record/checked_research_checkpoint_20261007.md),
+[Wave2 review](record/wave2_checked_integration_20261007.md), and
+[Wave3 review](record/wave3_checked_integration_20261007.md) retain their own
+actual execution and applicability scopes. This page does not report a new
+full-workspace rerun or external journal refereeing.
 
-Known boundaries rule out replacing this task with fixed/sublinear trace information, absolute all-order comparison, initial heat derivatives alone, or microscopic continuity inferred from a fixed-smooth-observable norm. [The same-ensemble clock control](mathematics/isospectral_clock_moment_control.md) additionally rules out unqualified all-copy induced-HS channel proximity as a spectral-universality criterion. The [microscopic-rounding refinement](mathematics/microscopic_rounding_control.md) preserves a specified sub-cubic-root unnormalized low-trace window and coarse path/Egorov controls while violating a fixed pair target; it changes the operator and does not preserve exact quantization. Faster actual-start relaxation at the clock time N^(-2/3), one polynomial schedule for all factorial orders, effective startup thresholds and growing-order control are separate open questions. See [the current obligation board](mathematics/open_questions.md).
+[Reproduction](REPRODUCE_unified.md) · [Review policy](REVIEWING.md) ·
+[Publication scopes](papers/README.md) · [Historical index](record/history/2026/INDEX.md)
 
-## Evidence and current revision gate
-
-The repository separates project proof, exact-source input, finite arithmetic, floating diagnostics and formal kernels. Passing software checks does not certify analytic limits. The core registry is intentionally narrower than the complete theorem corpus. An exhaustive file inventory is not a line-by-line proof review; inherited heavy analytic chains need their own exact review coverage.
-
-The scoped repository/corpus revision and cross-surface reconciliation passed remote acceptance at `0ffb20cc152d0ddd2620887e46d21d1120b95fd8`. Research has resumed with the recorded proof and source boundaries retained. [Reproduction instructions](REPRODUCE_unified.md), [review policy](REVIEWING.md), [publication scopes](papers/README.md) and [historical records](record/history/2026/INDEX.md) provide the corresponding entry points. Publication candidates are scopes, not acceptance or priority claims.
-
-## Revision record
-
-The earlier cumulative brief is preserved byte-for-byte in [the pre-revision archive](record/history/2026/corpus_revision_20261006/RESEARCH.md.txt). The current corpus audit is documented in [the revision report](record/corpus_revision_20261006.md); unresolved review obligations are distinct from open research problems.
-
-<!-- Stable fragment targets retained from the pre-revision reader entry. -->
+<!-- Stable fragment targets retained for earlier linked research views. -->
 <a id="research-brief-arithmetic-return-laws-and-the-bgs-frontier"></a>
 <a id="original-ordered-two-pair-microscopic-mass-6-october-2026"></a>
 <a id="question-and-choice-of-model"></a>
 <a id="current-contributions-and-their-boundaries"></a>
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
-
-
-## Reviewed Wave2 continuation
-
-The accepted [Wave2 scopes](record/wave2_checked_integration_20261007.md) add actual unmasked one-pinch disappearance, fixed-N ordinary signed-source centering, qualified changed-family rounded/split barriers and corrected finite hook/tree/current identities with a conditional Abel reduction. [The phase-source audit](literature/wave2_phase_orbit_source_qualification_20261007.md) retains exact applicability/priority limits. The masked T16 and insertion hierarchy, negative plateau-current estimate, actual Ward overlap, balanced microscopic law, higher factorial comparison and BGS remain OPEN.
-
-
-## Reviewed coherence continuation
-
-[TRACE-027](mathematics/weighted_phase_coherence_covariance.md) adds finite weighted covariance, classical Green–Kubo structure, the complete signed Ward law only on the upper half of a slow growing window and an actual degree-two mixed-moment corollary. The absorbed microscopic Ward (13), balanced law, signed masked T16 and BGS remain OPEN.

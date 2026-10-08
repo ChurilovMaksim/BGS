@@ -1,18 +1,29 @@
 # Lean 4 formalization
 
-**Claim ID:** `BGS-FORMAL-001`
+**Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
+and falsifier layer. A Lean theorem certifies the proposition in its source;
+the informal analytic corpus is substantially larger.
 
+## Build and current receipt
 
-`formalization/` is the active finite-certificate, algebraic-kernel and falsifier layer. It is intentionally smaller than the informal mathematics: a Lean theorem certifies only the proposition and scope stated in its source. The repository does not treat speculative `sorry` files as progress.
+From the repository root:
 
-Build every active module with
-
-```bash
-cd formalization
-lake build
+```sh
+(cd formalization && lake build)
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 20 modules; `formalization/drafts/` is deliberately outside it.
+The pinned release is **Lean 4.33.1**. The
+[8 October log](../evidence/executions/20261008/phase-channel-jet/lean.log)
+and [source-bound manifest](../evidence/executions/20261008/phase-channel-jet/run_manifest.json)
+record a successful aggregate build of **20 active modules**, 23 Lake jobs.
+This is the current build scope; earlier 16-, 17- and 19-module receipts are
+historical. It is not a new execution reported by this documentation revision.
+
+`Bgs.lean` imports every module directly under `Bgs/`. Historical `drafts/`
+remain outside the active graph; speculative `sorry` files do not count as
+formal progress.
+
+## Active modules
 
 | Module | Maintained scope |
 |---|---|
@@ -37,60 +48,34 @@ lake build
 | `TorusLevelSets.lean` | finite torus level-set cardinalities, orbit counts and freeness |
 | `TorusScaleLaw.lean` | finite branch-scale identities |
 
-The former isolated `CayleyExceptionalK23.lean` was folded into `CayleyEnergy.lean` so generic and exceptional controls share one implementation.
+The former isolated `CayleyExceptionalK23.lean` was folded into
+`CayleyEnergy.lean`; generic and exceptional controls share one implementation.
 
 ## Trust boundary
 
-Many large finite propositions use `native_decide`. A successful build accepts
-these certificates with additional trust in native compilation/evaluation;
-`#print axioms` exposes generated `native_decide` axioms. They are not
-independent small-kernel recomputations of the finite search. Ordinary
-symbolic proofs have their separately printed dependencies. None of these
-finite propositions becomes a uniform analytic or BGS theorem.
+Large finite propositions in several modules use `native_decide`. Their
+acceptance includes trust in native compilation/evaluation; printed axiom
+lists expose those dependencies. They are not independent small-kernel
+recomputations of the finite search. Ordinary symbolic proofs retain their
+separately printed dependencies.
 
-On 8 September 2026 the pinned Lean 4.33.1 archive was downloaded and its
-release SHA-256 verified. The full project, including all 16 active modules,
-built successfully (19 Lake jobs). `AnalyticOrbitKernels` uses no
-`native_decide`: its growth lemma depends on `propext` and `Quot.sound`, and
-its three concrete signed-action checks have no axioms.
+The four new `PhaseChannelJetKernels` implications use `omega`, no `sorry`
+and no `native_decide`; printed axioms are `propext` and `Quot.sound`.
+They certify coefficient arithmetic, not rational-inner matrix analysis.
+[The seven-primary certificate note](seven_primary_certificate.md) states
+its exact finite semantics and unformalized bridges. No active module proves
+the general analytic limits, eigenvector-overlap estimate or BGS.
 
-This runtime exposes `/proc/self/exe` but not the per-process executable link
-used by Lean. The optional Linux shim
-`computations/maintenance/lean_proc_self_compat.c` redirects only that exact
-self lookup. The official Lean executable and proof-checking code are unchanged.
-Ordinary environments do not need this shim. See `record/referee_audit_20260908.md`
-for the reproduction commands and evidence boundary.
+## Runtime and historical evidence
 
-Historical drafts remain outside the active import graph. No general analytic
-asymptotic theorem is claimed to have been formalized by this build.
+Ordinary environments use `lake build` directly. The optional Linux shim
+`computations/maintenance/lean_proc_self_compat.c` redirects only a missing
+exact self-executable lookup in the hosted runtime; it does not change the
+Lean executable or proof checker. The
+[execution packet](../evidence/executions/20261008/phase-channel-jet/README.md)
+records the actual command and verified release-archive digest.
 
-## Current verified build, 6 October 2026
-
-The pinned Lean 4.33.1 build now passes for all **17 active modules**, including `CueLoopKernels` (20 Lake jobs). The [complete log](../evidence/executions/20261006/original-channel-gap/lean.log) retains printed axiom lists and the [integration receipt](../evidence/executions/20261006/original-channel-gap/integration.json) records the execution scope. Remote formalization CI also passed at `131e8aac5684f72cc993a54a46237a812a577ae9`.
-
-This supersedes the earlier source-only/pending-build status. It certifies the maintained finite/algebraic propositions with the trust boundaries above; it does not formalize the analytic limits, the channel-gap proof, or BGS. The historical September records remain unchanged.
-
-## Publication revision, 12 September 2026
-
-The full pinned Lean 4.33.1 project was rebuilt successfully: 16 active
-modules, 19 Lake jobs. `GeneralHyperbolicParity` now also proves
-`refinement_polarization` and `nontrivial_central_parity`. Both use ordinary
-`decide`; their printed axiom lists are empty. The existing invariant
-refinement proof remains the finite modulo-two invariance check. These
-statements certify the parity algebra used in the general return-law
-construction, not its operator realization, cluster estimates, or limits.
-See `record/publication_review_20260912.md` for this revision's checks.
-
-[Seven-primary certificate scope and actual isolated compilation](seven_primary_certificate.md), including the independent semantic audit.
-
-The 6 October constructive aggregate build passed all 19 active modules (22 Lake jobs), replaying existing modules and freshly compiling SevenPrimary and Bgs. [Receipt and source hashes](../evidence/formalization/seven_primary_20261006/aggregate-build.json); native-evaluation trust and all unformalized bridges remain explicit.
-
-## Current verified build, 8 October 2026
-
-All **20 active modules** build with the pinned Lean 4.33.1 release: 23 Lake
-jobs. [Complete log](../evidence/executions/20261008/phase-channel-jet/lean.log)
-and [source-bound receipt](../evidence/executions/20261008/phase-channel-jet/run_manifest.json).
-The four new PhaseChannelJetKernels implications use omega, no sorry and no
-native_decide; their printed axioms are propext and Quot.sound. They check
-coefficient elimination, not rational-inner matrix analysis or BGS. Earlier
-native-evaluation modules retain their printed trust dependencies.
+Earlier receipts, including the [seven-primary aggregate build](../evidence/formalization/seven_primary_20261006/aggregate-build.json)
+and [September review](../record/referee_audit_20260908.md), retain their
+original scope and provenance. A later aggregate build does not strengthen
+the mathematical proposition certified by an older module.

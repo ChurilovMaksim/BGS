@@ -1,35 +1,53 @@
-# Mathematical corpus
+# Mathematical proofs
 
-The [8 October continuation](../record/research_checkpoint_20261008.md) adds
-three canonical proofs: [phase memory](max_entry_phase_channel.md),
-[optimal matrix jets](sharp_inner_jet.md), and
-[direct scalar real-flow transport](phase_channel_real_flow.md). Their source
-and spectral boundaries are explicit; deterministic BGS remains open.
+The canonical theorem sources live at stable paths in this directory.
+[The theorem index](results.md) lists result families;
+[the topic views](topics/README.md) provide reading sequences and dependencies.
+[The claim ledger](../record/claim_ledger.md) controls current status, and
+[open_questions.md](open_questions.md) states unresolved obligations.
 
-The authoritative proof files remain at stable paths. Read [the theorem-family index](results.md), then [the thematic reading paths](topics/README.md) and the exact theorem source. The [claim ledger](../record/claim_ledger.md) controls status and the [open-obligation board](open_questions.md) lists unresolved statements.
+## Principal reading paths
+
+| Question | Start here | Scope |
+|---|---|---|
+| What is the exact BGS target? | [Frozen model](fixed_map_resolvent_frontier.md), [trace bridge](trace_to_local_statistics_bridge.md) | Unchanged fixed coupling, correct symmetries/unfolding, every fixed factorial order |
+| What does actual classical/intensity mixing establish? | [Position-chain mixing](position_chain_mixing.md), [reverse paths](reversed_path_decay.md) | Intensity singular gap and specified path families, not full quantum interference |
+| Which arithmetic symmetry questions are closed? | [Combined pair commutant](actual_seven_primary_commutant.md), [literal multiplicities](literal_time_multiplicity_bounds.md) | Current combined classification includes every odd $N\ne7$; full propagator simplicity has a separate boundary |
+| Where is the signed trace residual? | [WKB reduction](factorial_wkb_reduction.md), [ordered diagonal](factorial_ordered_diagonal.md), [low-switch removal](hamming_low_switch_residual.md), [switch transfer](global_switch_transfer.md) | Specified removed sectors and damped interior; signed high-switch/undamped endpoint remains |
+| What is the balanced microscopic bottleneck? | [Phase Ward identity](phase_ward_identity.md), [Schur-energy reduction](balanced_pair_schur_reduction.md) | Exact absorbed pair reductions; their actual overlap/radial-energy limits are not evaluated |
+| What survives noise or insertion averaging? | [Unmasked hierarchy](right_frame_unmasked_pinch_hierarchy.md), [signed stability](convex_pinch_weak_noise_and_deconvolution.md), [noise removal](microscopic_noise_removal.md) | Masks, source extraction and deterministic transfer retain explicit obligations |
+| What are the reconstructed analytic inequalities? | [Max-entry phase channel](max_entry_phase_channel.md), [sharp inner jets](sharp_inner_jet.md), [real-flow transport](phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
+| What is proved in the other regimes? | [Arithmetic/return/resonance topics](topics/README.md) | Each family retains its own hypotheses and scales |
 
 ## Essential distinctions
 
-- The target is signed deterministic Heisenberg-scale comparison, not an all-order absolute criterion.
-- Fixed-strength dynamics, shrinking perturbations, arithmetic averaging and noise ensembles are different models.
-- FLOW-014 proves its actual-start noisy weak law; FLOW-017 uses a different schedule for all fixed factorial orders.
-- FM-020 closes the original m=1 two-copy noise-rate question; higher-copy, nonlinear quenched and deterministic transfer remain open.
-- Internal analytic proof, external-source input, exact finite arithmetic, floating diagnostics and formal kernels are separate evidence.
+The deterministic target is signed Heisenberg-scale comparison. Moduli inside
+individual summands change that target. Fixed coupling, shrinking coupling,
+arithmetic averages, reused coordinate phases and noisy chains define
+different mathematical families.
 
-## Corpus revision
+FM-020 closes the original two-copy common-noise rate left by FM-018/019;
+higher-copy rates, nonlinear quenched control and deterministic transfer
+remain separate. FLOW-014 and FLOW-017 use different step schedules.
+The combined FM-024 pair-commutant theorem supersedes the older partial
+arithmetic branches without turning pair irreducibility into simplicity of
+$U_N$.
 
-The [current revision report](../record/corpus_revision_20261006.md) records findings and actual coverage. A complete list of files is not a complete proof review. The earlier cumulative directory introduction is preserved in [the revision archive](../record/history/2026/corpus_revision_20261006/mathematics__README.md.txt).
+The [attached-article disposition](../literature/phase_channel_jet_sources_20261008.md)
+identifies unpromoted cavity/simplicity candidates as well as accepted overlap.
+TRACE-055 remains verification-pending. No theorem in this directory is
+strengthened by a summary, a finite computation or a manuscript heading.
 
-## Other scientific families
+## Source and review boundaries
 
-Cayley arithmetic, Pell/return laws, resonance/cohomology, locality, and information-theory results retain their own hypotheses and open problems. Their inclusion in a single repository does not make them automatic dependencies of BGS. See each topic’s scope and reading sequence.
+Maintain proofs at their canonical paths. Generated TeX is a publication
+view; edit its Markdown authority and run the appropriate synchronizer.
+[The source contracts](../record/generated_sources.json) identify generated
+sections. Finite certificates, numerical diagnostics and formal kernels
+certify their stated propositions only.
 
-[Fixed-order complete WKB reduction](factorial_wkb_reduction.md) (TRACE-017) and its exact reciprocity, formal cluster and conditioned local-saddle companions are indexed in the trace topic. Global signed cancellation remains open; the separate global rotated-box theorem controls the finite-band contour/tail step.
-
-[Actual higher-seven-primary common commutant](actual_seven_primary_commutant.md) (FM-024) closes the stated unramified 49-divisible family, with remaining arithmetic branches explicit.
-
-[First-seven extension](actual_first_seven_commutant.md) completes the unramified seven-divisible common-commutant family of FM-024. The later chain-trace extension below leaves the formerly open odd multiples of 245 for the subsequent lattice proof; no seven-divisible simplicity or BGS conclusion is added.
-
-[Ramified first-seven chain trace](ramified_first_seven_commutant.md) removes the five-adic restriction at 7∥N. The subsequent corrected lattice proof closes the odd multiples of 245; N=7 remains the genuine exception.
-
-Current combined [FM-024](actual_seven_primary_commutant.md) classifies the actual scalar pair commutant for every odd N>=3 except N=7. [TRACE-018](winding_defect_locality.md) adds phase-only locality and the [reviewed Frostman average](phase_map_frostman.md); full quantum-weight and BGS comparisons remain open.
+[The current checkpoint](../record/research_checkpoint_20261008.md) and
+[the corpus review](../record/corpus_revision_20261006.md) state actual review
+coverage. Historical branch arguments remain traceable through the
+[record index](../record/history/2026/INDEX.md); an inventory is not a complete
+proof certification.
