@@ -26,7 +26,24 @@ def run(root=ROOT):
         if c['id']=='BGS-TRACE-024':
             v.pop('follow_on_result',None);v.pop('remaining_obligation',None);old.pop('remaining_obligation',None)
         require(v==old,'earlier theorem contract changed: '+c['id'])
-    require(set(current)-{c['id'] for c in prior}=={'BGS-TRACE-028','BGS-TRACE-029'},'Wave3 stable IDs differ')
+    # The Wave3 promoted delta is immutable. Later claims belong to an
+    # explicitly recorded follow-on epoch, never to the original Wave3 review.
+    wave3_ids={'BGS-TRACE-028','BGS-TRACE-029'}
+    epoch=strict_json((root/'record/claim_integration_epochs.json').read_bytes())
+    require(epoch['schema']=='bgs-follow-on-claim-epoch-v1' and
+            epoch['base_epoch']=='2026-10-07-wave3','claim epoch schema/base changed')
+    rows=epoch['after_wave3']
+    follow_on={row['id'] for row in rows}
+    require(len(follow_on)==len(rows) and follow_on and
+            not follow_on.intersection(wave3_ids|{c['id'] for c in prior}),
+            'duplicate, empty or historically overlapping follow-on epoch')
+    for row in rows:
+        active=current.get(row['id'],{})
+        require(active.get('state')==row['state'] and
+                active.get('source')==row['source'] and row.get('disposition'),
+                'follow-on ID/state/source requires explicit epoch review: '+row['id'])
+    require(set(current)-{c['id'] for c in prior}==wave3_ids|follow_on,
+            'Wave3/follow-on stable IDs differ from explicitly reviewed epochs')
     require(current['BGS-BGS-001']['state']==current['BGS-TRACE-005']['state']=='open','BGS target strengthened')
     links=0
     for c in m['cards']:

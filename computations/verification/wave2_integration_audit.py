@@ -35,7 +35,23 @@ def run(root=ROOT):
     if continuation.is_file():
         later={c['id'] for c in strict_json(continuation.read_bytes())['cards']}
         require(later=={'BGS-TRACE-028','BGS-TRACE-029'},'undeclared later ID set')
-    require(set(current)-{c['id'] for c in previous['claims']}==ids|later,'new stable ID set differs')
+    # Future registrations are explicitly reviewed as a separate epoch. This
+    # preserves the historical Wave2 delta and rejects undeclared new IDs.
+    epoch=strict_json((root/'record/claim_integration_epochs.json').read_bytes())
+    require(epoch['schema']=='bgs-follow-on-claim-epoch-v1' and
+            epoch['base_epoch']=='2026-10-07-wave3','claim epoch schema/base changed')
+    rows=epoch['after_wave3']
+    follow_on={row['id'] for row in rows}
+    require(len(follow_on)==len(rows) and follow_on and
+            not follow_on.intersection(ids|later|{c['id'] for c in previous['claims']}),
+            'duplicate, empty or historically overlapping follow-on epoch')
+    for row in rows:
+        active=current.get(row['id'],{})
+        require(active.get('state')==row['state'] and
+                active.get('source')==row['source'] and row.get('disposition'),
+                'follow-on ID/state/source requires explicit epoch review: '+row['id'])
+    require(set(current)-{c['id'] for c in previous['claims']}==ids|later|follow_on,
+            'new stable ID set differs from explicitly reviewed epochs')
     require(current['BGS-BGS-001']['state']=='open' and current['BGS-TRACE-005']['state']=='open','BGS/TRACE005 strengthened')
     require({c['claim_id'] for c in mapping['cards']}==ids|{None},'card mapping duplicate or theorem/audit confused')
     for c in mapping['cards']:

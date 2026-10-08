@@ -1,0 +1,37 @@
+{
+  "schema": "bgs-follow-on-claim-epoch-v1",
+  "base_epoch": "2026-10-07-wave3",
+  "reviewed_on": "2026-10-08",
+  "purpose": "Fail-closed registry lineage across historical sealed Wave2/Wave3 snapshots and the later 8 October claims. Updating this record is an explicit scientific-governance change, not an automatic registry rescan.",
+  "after_wave3": [
+    {
+      "id": "BGS-TRACE-053",
+      "state": "proved",
+      "source": "mathematics/max_entry_phase_channel.md",
+      "disposition": "Reused-coordinate-phase memory theorem"
+    },
+    {
+      "id": "BGS-TRACE-054",
+      "state": "proved",
+      "source": "mathematics/sharp_inner_jet.md",
+      "disposition": "Sharp rational matrix inner second jet"
+    },
+    {
+      "id": "BGS-TRACE-055",
+      "state": "verification-pending",
+      "source": "record/research_checkpoint_20261008.md",
+      "disposition": "Unreconstructed deep-source hierarchy: verification pending"
+    },
+    {
+      "id": "BGS-TRACE-056",
+      "state": "proved",
+      "source": "mathematics/phase_channel_real_flow.md",
+      "disposition": "Normally absorbed scalar real-flow transport"
+    }
+  ],
+  "invariants": [
+    "Historical Wave2/3 claims and immutable evidence remain byte- and field-pinned by their original audits.",
+    "Every newly added core ID must be explicitly reviewed, appended here with exact state and source, and matched to record/claims.json.",
+    "New entries are not automatically classified as theorems and do not imply a BGS local law."
+  ]
+}
