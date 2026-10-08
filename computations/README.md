@@ -1,5 +1,15 @@
 # Computations
 
+## Phase-memory and sharp-jet controls, 8 October
+
+[Python](verification/phase_channel_jet.py) checks phase-character quadrature,
+noncommuting cascade identities and finite rational-inner jet quadratures.
+[C++](cpp/phase_occupation_jet_verifier.cpp) independently enumerates exact
+occupation multiplicities at degrees two and three.
+[Wolfram](wolfram/phase_channel_jet.wl) checks the Poisson differential and
+count polynomial identities. [Commands, arithmetic and coverage](../evidence/executions/20261008/phase-channel-jet/README.md)
+are recorded. These controls do not certify analytic limits or BGS.
+
 [collective_diffusion_gap.py](verification/collective_diffusion_gap.py)
 compares coordinate commutators with exact cyclotomic Weyl blocks,
 checks every parity/wrap gauge at odd N=3..33, complete rational

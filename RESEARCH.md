@@ -1,5 +1,16 @@
 # BGS research brief
 
+## Reviewed phase-memory and sharp-jet continuation, 8 October 2026
+
+[The research checkpoint](record/research_checkpoint_20261008.md) reconstructs
+TRACE-053's max-entry channel and explicit averaged-pinching rate, proves
+TRACE-054's optimal 4/3 matrix inner jet bound with localization correction,
+and proves TRACE-056's direct real-flow absorbed scalar L1 comparison.
+TRACE-055's submitted polylogarithmic deep-source hierarchy remains
+verification-pending. Scalar cavity identification, signed undamped/high-switch
+comparison, every-fixed-order TRACE-005 and deterministic BGS remain OPEN.
+
+
 ## Reviewed Wave3 unmasked closure
 
 The complete unmasked separated/convex insertion hierarchy is closed by [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md), uniformly for all switch parameters and insertion counts at the stated normalization. [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds bounded-u complete signed stability and a sharp actual unsigned logarithmic deconvolution obstruction. The remaining route retains masks/source extraction and cancellation before absolute bounds; undamped zero-insertion, signed T16, balanced law, Ward(13), TRACE005 and BGS remain OPEN.

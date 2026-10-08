@@ -1,5 +1,11 @@
 # Mathematical corpus
 
+The [8 October continuation](../record/research_checkpoint_20261008.md) adds
+three canonical proofs: [phase memory](max_entry_phase_channel.md),
+[optimal matrix jets](sharp_inner_jet.md), and
+[direct scalar real-flow transport](phase_channel_real_flow.md). Their source
+and spectral boundaries are explicit; deterministic BGS remains open.
+
 The authoritative proof files remain at stable paths. Read [the theorem-family index](results.md), then [the thematic reading paths](topics/README.md) and the exact theorem source. The [claim ledger](../record/claim_ledger.md) controls status and the [open-obligation board](open_questions.md) lists unresolved statements.
 
 ## Essential distinctions

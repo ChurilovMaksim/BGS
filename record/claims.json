@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -2800,6 +2800,101 @@
       "manuscript": [
         "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-053",
+      "title": "Max-entry phase memory and averaged eigenbasis pinching",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION + BOUNDED CONTROLS",
+      "source": "mathematics/max_entry_phase_channel.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261008/phase-channel-jet/channel_review.md",
+        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/phase_channel_jet.py",
+        "computations/cpp/phase_occupation_jet_verifier.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/PhaseChannelJetKernels.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+      ],
+      "boundary": "Uniform coordinate phases reused at every return; Frobenius channel norm and norm of averaged full eigenspace pinching. No microscopic form factor, mixed-source law, deterministic phase limit or BGS.",
+      "priority_status": "not-established",
+      "formalization_scope": "Integer coefficient elimination / Fourier trace-defect arithmetic only; no analytic identity, integration, matrix inequality or limit formalized."
+    },
+    {
+      "id": "BGS-TRACE-054",
+      "title": "Optimal right-weighted second jets of rational matrix inner functions",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION + BOUNDED CONTROLS",
+      "source": "mathematics/sharp_inner_jet.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261008/phase-channel-jet/matrix_review.md",
+        "evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
+        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/phase_channel_jet.py",
+        "computations/wolfram/phase_channel_jet.wl"
+      ],
+      "formalization": [
+        "formalization/Bgs/PhaseChannelJetKernels.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+      ],
+      "boundary": "Square finite rational inner F=zG, boundary right weight T^-1/2. Optimal leading 4/3 with lower-order terms; smooth nonnegative C2 localization retains omega-second-derivative penalty. No actual cubic-delay moment, arbitrary event localization or microscopic cavity law.",
+      "priority_status": "not-established",
+      "formalization_scope": "Integer coefficient elimination / Fourier trace-defect arithmetic only; no analytic identity, integration, matrix inequality or limit formalized."
+    },
+    {
+      "id": "BGS-TRACE-055",
+      "title": "Submitted actual polylogarithmic deep-source hierarchy",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION-PENDING SUBMISSION; RAW BARRIER/COVARIANCE PROOFS REQUIRED",
+      "source": "record/research_checkpoint_20261008.md",
+      "dependencies": [
+        "BGS-TRACE-053"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "boundary": "Submission under verification: the joint delay barriers, killed second-clock expectation <=12, ordinary-prefix covariance and physical-source continuation are not reconstructed. Neither the scalar cavity CUE law nor deterministic BGS follows even from the asserted comparison.",
+      "priority_status": "not-established",
+      "dependency_scope": "TRACE-053 is the reconstructed channel sub-input only; this edge does not discharge the remaining submitted inputs."
+    },
+    {
+      "id": "BGS-TRACE-056",
+      "title": "Direct normally absorbed scalar-source transport along a real unitary flow",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION + BOUNDED CONTROLS",
+      "source": "mathematics/phase_channel_real_flow.md",
+      "dependencies": [
+        "BGS-TRACE-053"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
+        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/phase_channel_jet.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+      ],
+      "boundary": "Deterministic phase-independent Hermitian H with Tr H=m and Tr H^2<=C_H m; bounded real flow and normal scalar absorption. L1 unweighted scalar source and each fixed derivative only; no anisotropic physical absorption, mixed products, scalar endpoint identification or deterministic phase removal.",
+      "priority_status": "not-established"
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

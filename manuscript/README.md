@@ -1,5 +1,13 @@
 # Manuscript
 
+The 8 October revision adds [one directly maintained section](unified_sections/phase_channel_jet_20261008.tex)
+with TRACE-053/054/056 proofs and the pending TRACE-055 boundary. The unified
+manuscript builds in three passes to **280 pages**, with no horizontal
+overflow or unresolved references/citations.
+[Build and visual-review receipts](../evidence/executions/20261008/phase-channel-jet/README.md)
+cover the revised title page and all four new section pages, not every old
+page or mathematical claim.
+
 The generated fixed-map chapter now also summarizes FM-019's universal
 collective diffusion gap and refined shared-noise microscopic mass.
 The [full proof](../mathematics/collective_diffusion_gap.md) is canonical;

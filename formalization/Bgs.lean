@@ -19,3 +19,6 @@ import Bgs.TorusScaleLaw
 import Bgs.FourCutKernel
 
 import Bgs.SevenPrimary
+
+
+import Bgs.PhaseChannelJetKernels

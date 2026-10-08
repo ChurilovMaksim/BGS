@@ -1,5 +1,23 @@
 # Open mathematical obligations
 
+## Frontier after the 8 October continuation
+
+TRACE-053 closes the stated max-entry phase-channel/pinching theorem and
+TRACE-054 closes the sharp noncommuting 4/3 inner-jet inequality, including its
+smooth localization correction. TRACE-056 closes direct normally absorbed
+scalar L1 transport along bounded real unitary flows. These three subsidiary
+obligations are no longer open.
+
+The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
+verification-pending: reconstruct its joint input/output delay barriers,
+killed second-clock moment, stopped ordinary-prefix covariance and original
+phase physical-source continuation. Then identify the actual retained scalar
+cavity law, control source products and the signed undamped/high-switch
+comparison, and close every-fixed-order TRACE-005 for the unchanged frozen
+map. Channel-norm decay cannot replace spectral trace extraction.
+[Exact disposition](../record/research_checkpoint_20261008.md).
+
+
 ## Current phase/signed frontier
 
 The [current checkpoint](../record/checked_research_checkpoint_20261007.md)

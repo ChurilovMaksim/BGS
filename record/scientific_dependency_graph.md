@@ -271,3 +271,18 @@ TRACE-027 finite algebra and signed Ward normalization inherit accepted phase Wa
 ## Wave3 complete unmasked continuation
 
 TRACE-028 uses the separately accepted actual right-frame/transpose extension of TRACE-024, FM-021 flatness, FM-028 C4 compactness and TRACE-023 Abel(A). The new S3 tail is compactness plus S2 flatness, with no rate. TRACE-029 finite resummation is conditional in general; TRACE-028 discharges the actual RIGHT input. FM-028 C4/TRACE-023 control its annealed companion; scoped whole-centered FM-027/FM-021 gives the unsigned actual logarithmic obstruction. No edge identifies masks, signed T16, microscopic Ward(13), balanced law or TRACE005.
+
+## Phase-memory and sharp-jet continuation, 8 October
+
+TRACE-053 is a self-contained abstract phase-channel theorem. TRACE-056 uses
+it to control eigenphase transport along a bounded real flow. TRACE-054 is
+self-contained finite rational-inner matrix analysis and has no actual-map
+or TRACE-005 prerequisite or conclusion. TRACE-055 is verification-pending;
+its TRACE-053 edge records only the reconstructed channel input. No edge
+from these nodes closes the scalar cavity law, deterministic transfer or BGS.
+
+| Input | Output | Scope |
+|---|---|---|
+| TRACE-053 | TRACE-056 | Uniform averaged pinching along the real flow |
+| TRACE-053 | TRACE-055 (pending) | One accepted sub-input; raw barriers/covariance remain unproved here |
+| Self-contained finite factorization and cascade | TRACE-054 | Sharp general matrix inner jet; no stochastic input |

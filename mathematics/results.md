@@ -1,5 +1,16 @@
 # Theorem families and their limits
 
+## Reviewed phase-memory and sharp-jet continuation, 8 October 2026
+
+[The research checkpoint](../record/research_checkpoint_20261008.md) reconstructs
+TRACE-053's max-entry channel and explicit averaged-pinching rate, proves
+TRACE-054's optimal 4/3 matrix inner jet bound with localization correction,
+and proves TRACE-056's direct real-flow absorbed scalar L1 comparison.
+TRACE-055's submitted polylogarithmic deep-source hierarchy remains
+verification-pending. Scalar cavity identification, signed undamped/high-switch
+comparison, every-fixed-order TRACE-005 and deterministic BGS remain OPEN.
+
+
 ## Reviewed phase checkpoint, 7 October 2026
 
 [The checked checkpoint](../record/checked_research_checkpoint_20261007.md)

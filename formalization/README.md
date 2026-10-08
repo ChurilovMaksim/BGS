@@ -12,10 +12,11 @@ cd formalization
 lake build
 ```
 
-`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 19 modules; `formalization/drafts/` is deliberately outside it.
+`Bgs.lean` imports every `.lean` file directly under `formalization/Bgs/`. The current active import graph contains the following 20 modules; `formalization/drafts/` is deliberately outside it.
 
 | Module | Maintained scope |
 |---|---|
+| `PhaseChannelJetKernels.lean` | TRACE-053/054 integer coefficient and Fourier trace-defect implications only; no matrix/analytic identities or limits |
 | `AnalyticOrbitKernels.lean` | symbolic discrete-increment growth and exact signed-action counterexample; no analytic estimates |
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |
 | `CayleyEnergy.lean` | generic/exceptional finite mixed Cayley energies, including the `K=23` non-uniformity witness |
@@ -83,3 +84,13 @@ See `record/publication_review_20260912.md` for this revision's checks.
 [Seven-primary certificate scope and actual isolated compilation](seven_primary_certificate.md), including the independent semantic audit.
 
 The 6 October constructive aggregate build passed all 19 active modules (22 Lake jobs), replaying existing modules and freshly compiling SevenPrimary and Bgs. [Receipt and source hashes](../evidence/formalization/seven_primary_20261006/aggregate-build.json); native-evaluation trust and all unformalized bridges remain explicit.
+
+## Current verified build, 8 October 2026
+
+All **20 active modules** build with the pinned Lean 4.33.1 release: 23 Lake
+jobs. [Complete log](../evidence/executions/20261008/phase-channel-jet/lean.log)
+and [source-bound receipt](../evidence/executions/20261008/phase-channel-jet/run_manifest.json).
+The four new PhaseChannelJetKernels implications use omega, no sorry and no
+native_decide; their printed axioms are propext and Quot.sound. They check
+coefficient elimination, not rational-inner matrix analysis or BGS. Earlier
+native-evaluation modules retain their printed trust dependencies.

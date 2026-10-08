@@ -2,6 +2,23 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Reviewed 8 October continuation
+
+| Claim | Current status | Exact authority |
+|---|---|---|
+| BGS-TRACE-053 | PROJECT PROOF + independent internal reconstruction | [Max-entry phase memory](../mathematics/max_entry_phase_channel.md): complete collision corrections, degree-two norm, explicit averaged-pinching rate; no microscopic spectral law |
+| BGS-TRACE-054 | STRENGTHENED PROJECT PROOF + independent internal reconstruction | [Sharp matrix inner jets](../mathematics/sharp_inner_jet.md): optimal leading 4/3 for general noncommuting rational inner F=zG; localization penalty retained |
+| BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](research_checkpoint_20261008.md): raw joint delay barriers, killed moment, prefix covariance and physical-source continuation remain to be reconstructed |
+| BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
+
+[Proof review and bounded executions](../evidence/executions/20261008/phase-channel-jet/README.md)
+are separate evidence tiers. The 4/3 matrix theorem improves the submitted
+13/3 inequality; no world-priority verdict is made. TRACE-053 operator norm
+cannot be promoted to a microscopic superoperator-trace law. TRACE-055 is a
+submitted claim, not a proved dependency for another accepted result.
+**BGS-BGS-001, TRACE-005, actual balanced law and signed deterministic transfer
+remain OPEN.** Earlier dated checkpoints retain their historical scope.
+
 ## Current decision and scope
 
 - **BGS-BGS-001 and TRACE-005 remain OPEN:** signed Heisenberg-scale joint traces of the unchanged deterministic map.
