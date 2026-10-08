@@ -8,6 +8,38 @@ Start with the [bibliography](bibliography.md) for the mathematical landscape
 and [external_dependencies.json](external_dependencies.json) for registered
 load-bearing theorem locators and hypothesis mappings.
 
+## Bibliographic metadata screen (8 October 2026)
+
+An independent identifier–title audit reviewed all **39** rows of the
+[external-dependency registry](external_dependencies.json). Of those,
+**33** contain a DOI or arXiv identifier in a form accepted by the
+bibliographic resolver. The batch check matched **32** of these
+identifier–title pairs directly. The remaining combined
+[`EXT-MANE-1981`](external_dependencies.json) row names **both** a 1981
+paper and its mandatory 1983 erratum: a one-record comparison flagged
+the combined record, but separate checks of
+[the original](https://doi.org/10.1017/S0143385700001188) and
+[the erratum](https://doi.org/10.1017/S0143385700001863)
+each matched the corresponding title and year. This is a
+**compound-record formatting issue**, not evidence of a retracted or
+fabricated source. The six non-DOI/arXiv registry rows
+(`EXT-EV-2015`, `EXT-PESIN-1977`, `EXT-RUELLE-1978`,
+`EXT-PP-1990`, `EXT-BG-2008` and `EXT-BHATIA-2002`)
+retain their separately recorded source locators; they were **not**
+resolved by this automated identifier screen.
+
+The TeX manuscript's newly added
+[original BGS publication](https://doi.org/10.1103/PhysRevLett.52.1),
+[Bourgade–Huang loop-equation paper](https://arxiv.org/abs/2607.07617),
+and [published Lounici–Meziani–Peyré tomography paper](https://doi.org/10.1214/17-AOS1586)
+were also matched to their cited identifiers. The original BGS abstract
+explicitly concerns **GOE** statistics in Sinai's billiard.
+These checks validate bibliographic **identity**, *not* theorem 1.9's
+hypothesis mapping in every application, complete mathematical novelty,
+author priority, proof correctness or absence of every possible erratum.
+All load-bearing theorem locators and project hypotheses still require
+the specific proof-level audits prescribed below.
+
 ## Source checks by role
 
 | Question | Maintained source note |

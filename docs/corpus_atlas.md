@@ -97,7 +97,7 @@ are not a theorem-proof verdict.
 
 The current stage examines the **whole Git tree structure** and registry
 architecture, selected canonical proofs and manuscript section openings,
-a targeted BGS/loop/tomography bibliography reconciliation, and the main
+a [targeted metadata audit](../literature/README.md#bibliographic-metadata-screen-8-october-2026) of 39 dependency records (33 with DOI/arXiv identifiers), a BGS/loop/tomography bibliography reconciliation, and the main
 manuscript's title, scope and front matter. This does **not** mean all
 4,290 files or every line of the 280-page monograph has been independently
 read. The distinction matters: a CI pass establishes source integrity
