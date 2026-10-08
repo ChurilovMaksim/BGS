@@ -14,12 +14,12 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 Bohigas, Giannoni and Schmit's [1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) connected chaotic quantum spectra with universal random-matrix fluctuations. A rigorous theorem needs a specified quantum family, the correct symmetry sector, a justified unfolding, and a local correlation limit. Classical hyperbolicity alone does not automatically guarantee a particular symmetry class or a universal spectrum.
 
-For unitary-class spectra, the reference point process is $\\mathrm{Sine}_2$, whose determinantal kernel and distinct-point two-point correlation are
+For unitary-class spectra, the reference point process is $\mathrm{Sine}_2$, whose determinantal kernel and distinct-point two-point correlation are
 
 ```math
-K(x,y)=\\frac{\\sin\\pi(x-y)}{\\pi(x-y)},
-\\qquad
-\\rho_2(x,y)=1-|K(x,y)|^2.
+K(x,y)=\frac{\sin\pi(x-y)}{\pi(x-y)},
+\qquad
+\rho_2(x,y)=1-|K(x,y)|^2.
 ```
 
 ![Analytic Sine2 two-point function and Poisson reference](assets/figures/microscopic_pair_reference.svg)
@@ -28,29 +28,29 @@ K(x,y)=\\frac{\\sin\\pi(x-y)}{\\pi(x-y)},
 
 ## The exact model and target
 
-For odd $N\\ge3$, the maintained family is
+For odd $N\ge3$, the maintained family is
 
 ```math
-S=\\begin{pmatrix}3&4\\\\2&3\\end{pmatrix},
-\\qquad
-U_N=\\exp(i\\tau N A_N)M_N,
-\\qquad
-\\tau=10^{-80}.
+S=\begin{pmatrix}3&4\\2&3\end{pmatrix},
+\qquad
+U_N=\exp(i\tau N A_N)M_N,
+\qquad
+\tau=10^{-80}.
 ```
 
-Here $M_N$ is the specified quantization of the hyperbolic cat map, and $A_N$ the specified Weyl-quantized nonlinear kick. [The canonical model source](mathematics/fixed_map_resolvent_frontier.md) fixes conventions, exceptional dimensions, and symmetry questions. **The coupling remains fixed as $N\\to\\infty$**; replacing it with vanishing coupling, independent random phases, or noise changes the problem.
+Here $M_N$ is the specified quantization of the hyperbolic cat map, and $A_N$ the specified Weyl-quantized nonlinear kick. [The canonical model source](mathematics/fixed_map_resolvent_frontier.md) fixes conventions, exceptional dimensions, and symmetry questions. **The coupling remains fixed as $N\to\infty$**; replacing it with vanishing coupling, independent random phases, or noise changes the problem.
 
 Even a necessary two-point reference remains unproved for this family:
 
 ```math
-L_N(s)=\\frac{1}{N^2}\\sum_{m\\ge1}e^{-2sm/N}
-\\left|\\mathrm{Tr}\\,U_N^m\\right|^2
-\\;\\longrightarrow\\;
-\\frac{1-e^{-2s}}{4s^2},
-\\qquad s>0.
+L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
+\left|\mathrm{Tr}\,U_N^m\right|^2
+\;\longrightarrow\;
+\frac{1-e^{-2s}}{4s^2},
+\qquad s>0.
 ```
 
-The full [BGS-TRACE-005 obligation](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates) is stronger: correctly desymmetrized **signed factorial joint-trace comparison** for every fixed order and every compactly supported smooth Fourier test, at powers $m\\asymp N$. The absolute value is taken **after the complete Fourier sum**, rather than term by term. The [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) explains the further tightness/extension conditions.
+The full [BGS-TRACE-005 obligation](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates) is stronger: correctly desymmetrized **signed factorial joint-trace comparison** for every fixed order and every compactly supported smooth Fourier test, at powers $m\asymp N$. The absolute value is taken **after the complete Fourier sum**, rather than term by term. The [trace-to-local-statistics bridge](mathematics/trace_to_local_statistics_bridge.md) explains the further tightness/extension conditions.
 
 ## Established results and remaining frontier
 
