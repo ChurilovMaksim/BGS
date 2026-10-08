@@ -31,9 +31,10 @@ connections and historical development.
 
 ## Reading the full manuscript
 
-The [single maintained TeX root](../manuscript/BGS_unified.tex) includes
-91 subordinate TeX sources. They are **not** 90 independent referee-approved
-papers. Read its parts in this orientation:
+The [single maintained TeX root](../manuscript/BGS_unified.tex) has
+91 direct `\input` references, with **101 subordinate TeX files** in its
+recursive include closure (102 files counting the root). They are **not**
+101 independent referee-approved papers. Read its parts in this orientation:
 
 1. **Opening and finite-field chapters:** scope, conventions, pair-key/Cayley
    arithmetic, Gaussian Cayley traces, magnetic quotients
@@ -87,6 +88,12 @@ recoverable mapping of the old path. The source hierarchy and exception
 policy live in [repository conventions](../record/repository_conventions.md).
 
 ## How far this editorial audit reaches
+
+A read-only manuscript audit on an earlier revision of this PR reported
+**52 bibliography keys, 36 distinct cited keys, 497 distinct labels and no
+unresolved or duplicate labels** within the scanned include closure. The
+current CI reruns the check on the latest sources; these structural facts
+are not a theorem-proof verdict.
 
 The current stage examines the **whole Git tree structure** and registry
 architecture, selected canonical proofs and manuscript section openings,
