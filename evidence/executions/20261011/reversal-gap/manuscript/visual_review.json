@@ -1,0 +1,15 @@
+{
+  "schema": "bgs-selected-pdf-visual-review-v1",
+  "reviewed_on": "2026-10-11",
+  "pdf_sha256": "78165b765f42bbb3b9b0371b00ba1d130efa23527581aa988fd5bc5c0abab600",
+  "page_count": 285,
+  "pages_inspected": [
+    282
+  ],
+  "rendering": "pdftoppm -f 282 -l 282 -scale-to 1600 -png",
+  "result": "No clipping, overlap or unreadable equations observed in section 87.7 and the bibliography transition.",
+  "scope": "Only page 282 inspected for this extension; not blanket visual or mathematical certification.",
+  "page_images": {
+    "282": "caf65662c6403e98d87e7d1df5140477ad0a60bdc4e605c51463c7363826ed3f"
+  }
+}

@@ -70,7 +70,7 @@ promoted from a summary. TRACE-057/059 now reconstruct source covariance and
 physical L2 continuation. The [reviewed cavity continuation](record/cavity_continuation_20261011.md)
 strengthens TRACE-060 to all fixed killed upper moments and uniform second/third
 equality laws at the log^(1+kappa) cutoff. TRACE-073 supplies conditional
-position-chain gap propagation at log^(3+kappa). Both require all-time entry
+position-chain and [reversal-gap propagation](record/reversal_channel_continuation_20261011.md) at log^(3+kappa). Both require all-time entry
 flatness. Fourth and all-order equality inductions remain
 [retained candidates](record/research_candidates/20261011/README.md).
 TRACE-055 remains verification-pending. The flatness probability, actual cavity
@@ -114,6 +114,10 @@ records the complete 217-check workspace snapshot, 236 maintenance tests,
 23 active Lean modules / 26 Lake jobs and its 284-page manuscript build.
 The [subsequent cavity packet](evidence/executions/20261011/cavity-continuation/README.md)
 records the new controls and manuscript continuation at their own scope.
+The [reversal extension](evidence/executions/20261011/reversal-gap/README.md)
+records the current analytic review and manuscript build, and the completed
+219-check/25-target CI of its preceding commit. New source acceptance is
+checked on its own final commit; historical receipts retain their original scope.
 The [7 October integration](record/checked_research_checkpoint_20261007.md),
 [Wave2 review](record/wave2_checked_integration_20261007.md), and
 [Wave3 review](record/wave3_checked_integration_20261007.md) retain their own

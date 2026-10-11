@@ -219,3 +219,42 @@ an asymptotic counterexample to the maintained map. Complete proofs and
 review inputs are in the dated Schur continuation. Finite Python, C++ and
 Wolfram controls check algebra only. These results leave the scalar cavity
 law, signed TRACE-005 and deterministic BGS open.
+
+\subsection{General contractions and a reversal gap (TRACE-073)}
+A separate independent reconstruction extends the harmonic lift to every
+complex contraction $C$, with no positivity, normality or Perron mode.
+If $I-C_{DD}$ is invertible, its algebraic Schur complement obeys
+$\sigma_j(C^c)\le\sigma_j(C)$ for $1\le j\le|A|$. For arbitrary $x$, set
+$t=(I-C_{DD})^{-1}C_{DA}x$, $z=(x,t)$. The exact identity
+\[
+ \|Cz\|^2-s^2\|z\|^2
+ =\|C^cx\|^2-s^2\|x\|^2+(1-s^2)\|t\|^2
+\]
+first proves contraction of $C^c$ at $s=1$, then proves the entire ordered
+singular-value bound by positive inertia and the injective lift.
+
+For unitary $S$, the Hermitian reversal matrix
+$R(S)_{ij}=S_{ij}\overline{S_{ji}}$ is a contraction by Cauchy--Schwarz
+on absolute row and column sums. Write $S=\left[\begin{smallmatrix}A&c\\b&a\end{smallmatrix}\right]$,
+$q=w/(1-aw)$, $d=1-|a|^2$, $C_0=\operatorname{diag}(c)A^*\operatorname{diag}(b)$
+and $v_i=c_i\overline{b_i}$. Exact fresh-phase expansion gives
+\[
+ R(S')=R_{AA}+qC_0+\bar qC_0^*+|q|^2vv^*,
+ \qquad \mathbb E_wR(S')=R_{AA}+vv^*/d=R^c.
+\]
+The centered noise has norm at most $8\delta_u$. Applying the same stopped
+Schatten potential directly to $R_u$, with zero padding and \emph{no}
+$J$ subtraction, gives
+\[
+ \Pr\!\left(\mathcal A_m\cap
+        \left\{\max_{N\ge u\ge m}\|R_u\|_{\rm op}\ge g\right\}\right)
+ \le\frac{64N^{2/p}(p-1)K^2\ell^2}
+              {m(g-N^{1/p}\rho_R)^2},
+ \qquad g>N^{1/p}\rho_R,
+\]
+when $\|R_N\|_{\rm op}\le\rho_R$. FM-022 proves precisely this initial
+matrix norm tends to zero for the maintained odd-dimensional family.
+Thus both intensity and reversal gaps are controlled, in intersection
+probability, down to $\lceil\ell^{3+\kappa}\rceil$. This is neither a
+complete symmetry classification nor a microscopic local-law theorem;
+all-time flatness probability and deterministic BGS remain open.

@@ -123,7 +123,7 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 ## Independently reviewed Schur continuation
 
 - [All fixed killed clock moments and uniform second/third equality laws](../../all_moment_delay_bootstrap_20261011.md) — Conditional all-time-flatness theorem at log^(1+kappa).
-- [Stochastic-complement singular spectrum and quantum gap](../../schur_censoring_gap_20261011.md) — Universal classical contraction and conditional quantum gap propagation at log^(3+kappa).
+- [Stochastic-complement singular spectrum and quantum gap](../../schur_censoring_gap_20261011.md) — Classical and arbitrary-complex-contraction singular bounds; conditional intensity/reversal gap propagation at log^(3+kappa).
 
 The [review record](../../../record/cavity_continuation_20261011.md) preserves
 exact input lineage. Fourth/all-order equality laws and flatness probability

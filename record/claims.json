@@ -3326,20 +3326,22 @@
     },
     {
       "id": "BGS-TRACE-073",
-      "title": "Stochastic-complement singular-spectrum contraction and stopped quantum gap propagation",
+      "title": "Singular-spectrum censoring and stopped intensity/reversal gap propagation",
       "state": "conditional",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL STOCHASTIC CONCLUSION; FINITE CONTROLS SEPARATE",
       "source": "mathematics/schur_censoring_gap_20261011.md",
       "dependencies": [
-        "BGS-FM-021"
+        "BGS-FM-021",
+        "BGS-FM-022"
       ],
-      "dependency_scope": "FM-021 is used only for the actual-map initial singular-gap corollary. The universal censoring, noise, Schatten-potential and stopped-gap theorems are self-contained and do not assume a clock-moment law.",
+      "dependency_scope": "FM-021 and FM-022 supply only the actual-map initial intensity and reversal gaps. The universal censoring, coherent-noise and stopped Schatten-p gap theorems are self-contained.",
       "external_dependencies": [],
       "proof_dependencies": [
         "mathematics/delay_bootstrap_20261011.md"
       ],
       "evidence": [
-        "evidence/executions/20261011/cavity-continuation/README.md"
+        "evidence/executions/20261011/cavity-continuation/README.md",
+        "evidence/executions/20261011/reversal-gap/README.md"
       ],
       "verifiers": [
         "computations/verification/schur_censoring_and_clock.py",
@@ -3349,7 +3351,7 @@
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
-      "boundary": "Every ordered centered singular value contracts under classical stochastic complementation, with no reversibility hypothesis and with invertible deleted block resolvent. For quantum fresh-phase elimination, the classical complement is only the conditional mean; individual realizations need not contract. Under all-time flatness down to m, an explicit Schatten-p stopped-potential bound propagates a sufficiently small initial gap to m=ceil(log(2N)^(3+kappa)) with intersection failure O(log(2N)^(-kappa)). FM-021 supplies the actual-map initial gap only. Flatness probability, scalar microscopic law and BGS remain open.",
+      "boundary": "Every ordered centered singular value contracts under classical stochastic complementation; independently, every ordered singular value contracts under algebraic Schur complementation of an arbitrary complex contraction with invertible deleted-block resolvent. Quantum intensity and reversal matrices have these complements as conditional means only. Under all-time flatness, explicit stopped-potential bounds propagate small initial intensity and reversal gaps to ceil(log(2N)^(3+kappa)) with intersection failure O(log(2N)^(-kappa)). FM-021/022 supply the respective actual-map initial gaps. Flatness probability, complete symmetry classification, scalar microscopic law and BGS remain open.",
       "priority_status": "not-established"
     }
   ],

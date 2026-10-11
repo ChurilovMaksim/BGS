@@ -59,3 +59,5 @@ The [evidence guide](../evidence/README.md) and
 and [cavity continuation](../evidence/executions/20261011/cavity-continuation/README.md)
 provide those boundaries. Earlier executions remain preserved. A successful build cannot promote an unproved
 asymptotic implication, and internal reconstruction is not external refereeing.
+
+[Separate reversal-channel continuation](reversal_channel_continuation_20261011.md) extends TRACE-073 without adding a BGS closure claim.

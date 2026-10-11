@@ -1,9 +1,11 @@
-# Singular-value contraction under censoring and a stopped quantum gap
+# Singular-value contraction under Schur feedback and stopped quantum gaps
 
 **Stable claim:** BGS-TRACE-073. **State:** CONDITIONAL for the stopped gap;
 the deterministic singular-value contraction is unconditional under its
 displayed invertibility hypothesis. All (C1)--(C7) were independently
 reconstructed internally; this is not external refereeing.
+The general complex-contraction and reversal extension (C8)--(C9) had a
+separate internal reconstruction recorded in Section 7.
 **Base:** main `4c2afe539ff6b84be907899b38c8e80f94f547e8`.
 The stochastic-complement construction is standard. Priority for the
 singular-value comparison is not established. No BGS theorem is asserted.
@@ -171,3 +173,78 @@ The preceding review input and the exact internal review scope are retained
 in the [cavity continuation](../record/cavity_continuation_20261011.md).
 The all-fixed-moment delay improvement has cutoff ell^(1+kappa); this gap
 estimate has cutoff ell^(3+kappa). They are not the same scale.
+
+## 7. General contractions and the reversal channel
+
+The lift argument has a second application that does not remove a Perron
+mode. Let C be any complex square matrix with ||C||op<=1, and suppose
+I-C_DD is invertible. For its algebraic Schur complement
+Cc=C_AA+C_AD(I-C_DD)^(-1)C_DA, every ordered singular value satisfies
+
+$$\sigma_j(C^c)\le\sigma_j(C),\qquad 1\le j\le|A|.\tag{C8}$$
+
+No positivity, stochasticity, normality or reversibility is required.
+For arbitrary x on A put t=(I-C_DD)^(-1)C_DA x and z=(x,t). The exact identity
+
+$$\|Cz\|^2-s^2\|z\|^2
+ =\|C^c x\|^2-s^2\|x\|^2+(1-s^2)\|t\|^2$$
+
+first proves ||Cc||op<=1 at s=1. For 0<=s<=1 its final term is nonnegative;
+the injective lift transfers every strictly positive singular subspace of
+Cc above s to C. Positive inertia and varying s prove (C8). Thus every
+Schatten-p norm also contracts after zero padding. This argument is distinct
+from the centering needed for P-J in Section 1.
+
+For a unitary S define the Hermitian reversal matrix
+R(S)_ij=S_ij conjugate(S_ji). Its absolute row sums are at most one:
+
+sum_j |R_ij|=sum_j sqrt(P_ij P_ji)<=sqrt(sum_j P_ij sum_j P_ji)=1.
+
+The same holds for columns, so ||R||op<=1. The pointwise inequality
+|R_ij|<=P_ij is generally false and is not used.
+
+Write S=[[A,c],[b,a]], d=1-|a|², q=w/(1-aw),
+C0=diag(c) A* diag(b), and v_i=c_i conjugate(b_i). Expanding the reverse
+product of S'=A+c q b gives exactly
+
+R(S')=R_AA+q C0+conjugate(q) C0*+|q|² v v*.
+
+Since R_Ae=v, R_eA=v*, R_ee=|a|², the fresh-phase mean is
+R_AA+v v*/d=Rc. It therefore contracts the full singular spectrum by (C8).
+If delta=max_ij |S_ij|²<=1/4, then ||C0||op<=delta and
+||v||²=sum_i |c_i|²|b_i|²<=delta d. The centered Hermitian noise has
+mean zero and the same bound as (C5):
+
+||q C0+conjugate(q)C0*+(|q|²-1/d)vv*||op
+ <=4delta/(1-sqrt(delta))<=8delta.
+
+Consequently, with the event A_m and other conditions of Section 4, an initial
+||R_N||op<=rho_R, even p>=2 and g>N^(1/p)rho_R imply
+
+$$\mathbb P\left(\mathcal A_m\cap
+ \{\max_{N\ge u\ge m}\|R_u\|_{op}\ge g\}\right)
+ \le\frac{64N^{2/p}(p-1)K^2\ell^2}
+ {m\,(g-N^{1/p}\rho_R)^2}.\tag{C9}$$
+
+To prove this, apply the already proved F_r potential with
+r=N^(1/p)rho_R to R_u itself, padded with zeros. Do not subtract J.
+The conditional mean complement contracts F_r by (C8), the linear fresh
+noise has zero mean, and its Schatten-p square is bounded by
+64 N^(2/p) delta_u². Sum the same stopped drift, retaining the full first
+flatness/reversal-gap crossing, including simultaneous exits. This gives
+(C9) by the same nonnegative crossing-potential estimate used in (C7).
+Coordinate selection may be adapted to the past; no phase-conditioned future
+event is inserted into the martingale argument.
+
+For the maintained fixed-coupling odd-dimensional map,
+[FM-022](reversed_path_decay.md) has precisely this R_N and proves
+||R_N||op->0, without an effective startup. Thus p=2ceil(ell),
+m=ceil(ell^(3+kappa)) and any fixed g in (0,1), with a fixed sufficiently
+small rho_R, give O(ell^(-kappa)) intersection failure. A finite union bound
+joins intensity and reversal gap control on the same all-time flatness event.
+This is not a complete symmetry classification or a proof of the scalar
+cavity law. It does not establish the probability of A_m or deterministic BGS.
+
+The [separate reversal review](../record/reversal_channel_continuation_20261011.md)
+records its analytic reconstruction and finite symbolic execution. No world
+priority or analytic Lean formalization is asserted.

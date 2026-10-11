@@ -47,3 +47,5 @@ proofs. Finite symbolic and rational executions support finite algebra only.
 Internal independent review is distinct from external peer review, formal
 verification and a literature novelty search. Flatness probability, the
 scalar cavity law and deterministic BGS remain open.
+
+The [separate reversal continuation](../record/reversal_channel_continuation_20261011.md) imports no new external theorem. Its initial FM-022 leaf is a maintained project statement; world priority of the general contraction observation has not been searched exhaustively or certified.

@@ -4,8 +4,8 @@ The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
 killed clock upper bounds and uniform second/third equality laws at the
 log^(1+kappa) cutoff. [TRACE-073](schur_censoring_gap_20261011.md) proves
-ordered classical singular-value contraction and conditional quantum gap
-propagation at log^(3+kappa). All-time flatness probability and the scalar
+ordered classical/general-contraction singular-value bounds and conditional
+intensity/reversal gap propagation at log^(3+kappa). All-time flatness probability and the scalar
 microscopic law remain open.
 
 ## Maximal paths and source continuation, 11 October 2026

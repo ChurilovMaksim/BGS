@@ -947,7 +947,7 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 | Claim | Status | Scope and unresolved boundary |
 |---|---|---|
 | BGS-TRACE-060, strengthened | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [All fixed killed upper moments and joint first-delay concentration](../mathematics/all_moment_delay_bootstrap_20261011.md) at ceil(log(2N)^(1+kappa)); uniform second/third equality laws. Probability of all-time flatness, fourth/all-order equality laws and unrestricted exceptional-event moments remain open. |
-| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021 supplies only the actual-map initial gap. Quantum realization contraction and flatness probability are not inferred from the classical mean. |
+| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021/022 supply only the actual-map initial intensity/reversal gaps. The [separate reversal reconstruction](reversal_channel_continuation_20261011.md) also proves singular-spectrum contraction for arbitrary complex contractions. Quantum realization contraction and flatness probability are not inferred from the mean. |
 
 [The review and exact input lineage](cavity_continuation_20261011.md) separate
 analytic arguments from finite Python/C++/Wolfram controls. No new analytic

@@ -1,0 +1,24 @@
+{
+  "schema": "bgs-pdf-post-build-integrity-v1",
+  "checked_on": "2026-10-11",
+  "initial_build": {
+    "expected_pdf_sha256": "292a866ad87eaedf899920544f4f08f7ea7c625ba7409849ce27b627038ab2d9",
+    "expected_bytes": 2099872,
+    "observed_pdf_sha256": "f87bff309911a0ca09f34f5e518a7b7f02077b2f9c92e193cf233736b833fd2e",
+    "observed_bytes": 1429810,
+    "accepted": false,
+    "disposition": "Post-build PDF file differed from the builder receipt and could not be parsed. Cause not established; no accepted artifact from this directory."
+  },
+  "fresh_rebuild": {
+    "directory": "build/reversal-final-20261011",
+    "pdf_sha256": "78165b765f42bbb3b9b0371b00ba1d130efa23527581aa988fd5bc5c0abab600",
+    "bytes": 2099872,
+    "manifest_matches_actual_pdf": true,
+    "pdfinfo_returncode": 0,
+    "pdftotext_returncode": 0,
+    "eof_marker_present": true,
+    "source_hashes_match": true,
+    "accepted": true
+  },
+  "scope": "Artifact integrity and parseability, not proof validity or whole-document visual review."
+}

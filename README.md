@@ -26,7 +26,7 @@ proves conditional concentration of incoming/outgoing delays and all fixed
 killed clock upper moments down to $\lceil\log(2N)^{1+\kappa}\rceil$,
 with uniform second/third equality laws. A separate harmonic-lift theorem
 contracts every classical centered singular value and controls the quantum
-position-chain gap down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
+position-chain and [reversal gaps](record/reversal_channel_continuation_20261011.md) down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
 conclusions still assume all-time entry flatness; its probability and the
 initial microscopic spectral law remain open.
 
