@@ -13,11 +13,11 @@ From the repository root:
 ```
 
 The pinned release is **Lean 4.33.1**. The
-[8 October log](../evidence/executions/20261008/phase-channel-jet/lean.log)
-and [source-bound manifest](../evidence/executions/20261008/phase-channel-jet/run_manifest.json)
-record a successful aggregate build of **20 active modules**, 23 Lake jobs.
-This is the current build scope; earlier 16-, 17- and 19-module receipts are
-historical. It is not a new execution reported by this documentation revision.
+[11 October execution](../evidence/executions/20261011/chat-research/fresh/lean_execution.json)
+and its preserved Lake logs record **23 active modules / 26 Lake jobs**.
+The hosted formalization job on main 4c2afe5 also completed the same aggregate
+build without the local application-path adapter. Earlier 16-, 17-, 19- and
+20-module receipts remain historical. The new cavity analysis is not formalized.
 
 `Bgs.lean` imports every module directly under `Bgs/`. Historical `drafts/`
 remain outside the active graph; speculative `sorry` files do not count as
@@ -27,6 +27,9 @@ formal progress.
 
 | Module | Maintained scope |
 |---|---|
+| `PhaseFrameWitness.lean` | integer determinant-one witness only |
+| `TorusDimensionBound.lean` | natural-number dimension inequality only |
+| `ActiveRankDefect.lean` | two natural-number rank/dimension inequalities only |
 | `PhaseChannelJetKernels.lean` | TRACE-053/054 integer coefficient and Fourier trace-defect implications only; no matrix/analytic identities or limits |
 | `AnalyticOrbitKernels.lean` | symbolic discrete-increment growth and exact signed-action counterexample; no analytic estimates |
 | `CayleyCurveEnergy.lean` | finite ratio-curve/energy certificate for explicit `(p,K,a)=(53,13,10)`; not the general external curve theorem |

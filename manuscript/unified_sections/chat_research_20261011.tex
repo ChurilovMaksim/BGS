@@ -120,3 +120,102 @@ in other constructed families, not counterexamples to the literal map.
 The complete balanced phase law, the scalar cavity microscopic law, signed
 Heisenberg TRACE-005 and deterministic BGS remain open. None of the preceding
 path comparisons evaluates the initial microscopic process.
+
+\subsection{All fixed killed clock moments and equality laws (TRACE-060)}
+Consider the fresh-phase Schur process with uniformly selected remaining
+coordinate, $T_N=Q_N=I$, and $\ell=\log(2N)$. Fix $K,\kappa>0$ and set
+$m=\lceil\ell^{1+\kappa}\rceil<N$. Write
+\[
+ \mathcal A_m=\{\max_{ij}|(S_u)_{ij}|^2\le K\ell/u
+                      \text{ for every }N\ge u\ge m\}.
+\]
+The independently reconstructed extension of TRACE-060 supplies joint
+incoming/outgoing first-delay concentration, with error
+$\epsilon=\ell^{-\kappa/16}$, in intersection probability at most
+$C_{K,\kappa}\ell^{-\kappa/16}$. Every fixed killed normalized moment
+\[
+ M_k(u)=\mathbf1_{\{\text{alive at }u\}}
+                 \frac{u^{k-1}\operatorname{Tr}T_u^k}{N^k}
+\]
+has a dimension-independent expected upper bound. Order $k$ is fixed;
+no growing-order bound or unrestricted exceptional-event moment estimate
+is claimed.
+
+The rank-two trace expansion and positive spectral-moment interpolation
+close the killed upper recurrence. Convex raw trace powers give a frozen
+submartingale, including the complete crossing state. The near-flatness
+cutoff follows from its scale-dependent cap and a dyadic scalar maximal
+Freedman argument. All-time flatness probability is a separate obligation.
+
+For the original un-killed $Y_k(u)=u^{k-1}\operatorname{Tr}T_u^k/N^k$,
+a separately reconstructed extension proves
+\[
+ \Pr\!\left(\mathcal A_m\cap
+ \left\{\max_{N\ge u\ge m,\ k=2,3}|Y_k(u)-f_k(u/N)|
+                    >C_{K,\kappa}\ell^{-\kappa/32}\right\}\right)
+ \le C_{K,\kappa}\ell^{-\kappa/16},
+\]
+where $f_2(x)=2-x$ and $f_3(x)=6-6x+x^2$. Squared cyclic words give
+\[
+ \mathbb E[(\Delta Y_k)^2\mid\mathcal F_u]
+           \le C_k(1+Y_{2k-1}(u))/u^2.
+\]
+The already bounded killed moments therefore control the expected stopped
+bracket by $C_k/m$. Scalar Doob concentration and the exact contractive
+second/third drifts yield the uniform comparison. The normalized crossing
+value is frozen without subsequent renormalization. If
+$\Pr(\mathcal A_m^c)\to0$ is separately proved, this also gives convergence
+in probability and convergence of \emph{killed} second/third expectations.
+Fourth and all-order equality laws remain verification-pending.
+
+\subsection{Classical singular-spectrum censoring and a quantum gap (TRACE-073)}
+Let $P$ be doubly stochastic, $A$ a retained set of size $a$, and $D$ its
+complement. Suppose $I-P_{DD}$ is invertible. Its stochastic complement is
+\[
+ P^c=P_{AA}+P_{AD}(I-P_{DD})^{-1}P_{DA}.
+\]
+Every ordered centered singular value contracts:
+\[
+ \sigma_j(P^c-J_a)\le\sigma_j(P-J_N),\qquad 1\le j<a.
+\]
+This requires no reversibility. For $x\perp\mathbf1_A$ put
+$t=(I-P_{DD})^{-1}P_{DA}x$, $z=(x,t)$ and
+$z_0=z-N^{-1}(\mathbf1^*z)\mathbf1$. The exact lift identity is
+\[
+ \|(P-J_N)z_0\|^2-s^2\|z_0\|^2
+ =\|(P^c-J_a)x\|^2-s^2\|x\|^2
+ +(1-s^2)\bigl(\|t\|^2-|\mathbf1^*t|^2/N\bigr).
+\]
+For $0\le s\le1$, its last term is nonnegative. The lift is injective,
+and positive inertia proves the entire ordered singular-value inequality.
+
+In a quantum fresh-phase elimination, the classical complement is the
+conditional mean of the new intensity matrix, rather than a realization
+bound. The centered coherent increment has operator norm at most
+$8\delta_u$ when $\delta_u=\max_{ij}|(S_u)_{ij}|^2\le1/4$.
+For even $p\ge2$, the self-contained Schatten potential
+$F_r(X)=(\|X\|_p-r)_+^2$ satisfies
+\[
+ F_r(X+H)\le F_r(X)+DF_r(X)[H]+(p-1)\|H\|_p^2.
+\]
+Pad the \emph{centered} matrices with zeros to the original dimension.
+If $\|P_N-J_N\|_{\rm op}\le\rho_0$, $m\ge4K\ell$, and
+$g>N^{1/p}\rho_0$, the stopped convex potential yields
+\[
+ \Pr\!\left(\mathcal A_m\cap
+       \left\{\max_{N\ge u\ge m}\|P_u-J_u\|_{\rm op}\ge g\right\}\right)
+ \le\frac{64N^{2/p}(p-1)K^2\ell^2}
+               {m(g-N^{1/p}\rho_0)^2}.
+\]
+With $p=2\lceil\ell\rceil$, $m=\lceil\ell^{3+\kappa}\rceil$ and a fixed
+$g>\sqrt e\,\rho_0$, the bound is $O_{K,\kappa,g,\rho_0}(\ell^{-\kappa})$.
+FM-021 supplies a sufficiently small initial gap for the maintained map;
+it does not supply $\Pr(\mathcal A_m^c)\to0$.
+
+The exact Walsh four-port example has $P=J_4$ but one feedback realization
+is a permutation on three ports, with centered gap one. It separates
+conditional-mean contraction from sample contraction, without constituting
+an asymptotic counterexample to the maintained map. Complete proofs and
+review inputs are in the dated Schur continuation. Finite Python, C++ and
+Wolfram controls check algebra only. These results leave the scalar cavity
+law, signed TRACE-005 and deterministic BGS open.

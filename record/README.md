@@ -25,6 +25,8 @@ not override this living surface.
 
 | Record | Exact role |
 |---|---|
+| [11 October integrated research](chat_integration_20261011.md) | Preserved 199 inputs, maximal local paths, circular phase laws and exact claim boundaries |
+| [11 October cavity continuation](cavity_continuation_20261011.md) | Independently reviewed conditional fixed-moment bootstrap and stochastic-complement gap mechanism |
 | [8 October checkpoint](research_checkpoint_20261008.md) | Reconstructed phase-channel, sharp matrix-jet and real-flow proofs; pending deep-source inputs |
 | [7 October checkpoint](checked_research_checkpoint_20261007.md) | Accepted phase/Schur/source and low-switch scopes; explicit deferred candidates |
 | [Wave2 integration](wave2_checked_integration_20261007.md) | Qualified ordinary-source, finite compact and conditional current results |
@@ -53,6 +55,7 @@ history, including the removed root roadmap.
 A proof review, a finite arithmetic run, a floating diagnostic, a formal build
 and hosted CI are different events. Each receipt states what actually ran.
 The [evidence guide](../evidence/README.md) and
-[8 October packet](../evidence/executions/20261008/phase-channel-jet/README.md)
-provide those boundaries. A successful build cannot promote an unproved
+[11 October packets](../evidence/executions/20261011/chat-research/README.md)
+and [cavity continuation](../evidence/executions/20261011/cavity-continuation/README.md)
+provide those boundaries. Earlier executions remain preserved. A successful build cannot promote an unproved
 asymptotic implication, and internal reconstruction is not external refereeing.

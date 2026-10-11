@@ -1,0 +1,20 @@
+........F...................................................................................................................................................................................................................................
+======================================================================
+FAIL: test_static_coverage_and_guard_removal_mutations (test_assertion_entry_policy.AssertionEntryPolicyTests.test_static_coverage_and_guard_removal_mutations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/06745ba532e4/BGS/computations/maintenance/tests/test_assertion_entry_policy.py", line 39, in test_static_coverage_and_guard_removal_mutations
+    self.assertEqual(policy.violations(ROOT), [])
+AssertionError: Lists differ: ['computations/verification/schur_censoring_and_clock.py'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'computations/verification/schur_censoring_and_clock.py'
+
+- ['computations/verification/schur_censoring_and_clock.py']
++ []
+
+----------------------------------------------------------------------
+Ran 236 tests in 92.672s
+
+FAILED (failures=1)

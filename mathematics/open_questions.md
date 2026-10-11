@@ -24,7 +24,7 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved; delay barriers and killed second/third upper bounds require all-time flatness. The flatness probability and stronger clock laws remain unproved |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. All fixed killed upper moments, second/third equality laws and gap propagation require all-time flatness. Its probability and fourth/all-order equality laws remain open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.
@@ -45,9 +45,10 @@ obligations are no longer open.
 
 The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
 verification-pending. The 11 October results reconstruct source covariance,
-physical-source L2 continuation and conditional joint delay barriers with
-killed second/third upper bounds. Establish their actual cavity hypotheses,
-the flatness probability and the stronger clock-law induction. Then identify the retained scalar
+physical-source L2 continuation. The [cavity continuation](../record/cavity_continuation_20261011.md)
+adds conditional all-fixed killed upper bounds, uniform second/third equality
+laws and gap propagation. Establish all-time flatness probability, fourth/all-order
+equality laws and the remaining actual cavity hypotheses. Then identify the retained scalar
 cavity law, control source products and the signed undamped/high-switch
 comparison, and close every-fixed-order TRACE-005 for the unchanged frozen
 map. Channel-norm decay cannot replace spectral trace extraction.
@@ -250,7 +251,7 @@ joint-trace argument to reach the all-order target.
 | `BGS-CAYLEY-005` | arithmetic fourth-moment frontier | Prove centered Cayley energy `(K-1)^4/p + O(K^(2+o(1)))`, or a genuinely equivalent support/divisor theorem in the intended pointwise regime. |
 | `BGS-RES-003` | analytic resonance frontier | Resolve the nonlinear analytic coboundary equation for arbitrary nonconstant real-analytic observables. |
 | `BGS-INFO-001` | information-theory application frontier | Determine matching minimax upper/lower transitions for the full moment class when physical Gaussian-channel noise vanishes with copy budget. |
-| `BGS-FORMAL-001` | continuing formalization-depth work, distinct from open BGS theorems | The earlier 17-module receipt is historical; the 8 October **20-module / 23-job** build verifies only its stated finite/algebraic kernels. Expand formal coverage selectively; do not relabel analytic results as formally checked. |
+| `BGS-FORMAL-001` | continuing formalization-depth work, distinct from open BGS theorems | The earlier receipts are historical; the 11 October **23-module / 26-job** build verifies only its stated finite/algebraic kernels. Expand formal coverage selectively; do not relabel analytic results as formally checked. |
 
 The principal BGS route is therefore not “prove everything above first”.
 `BGS-TRACE-005` is the direct model-specific obligation. The Cayley,
@@ -541,13 +542,13 @@ For every fixed strictly noisy phase-insensitive Gaussian product channel, momen
 
 ## G. Formalization depth
 
-The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. The complete 17-module Lean 4.33.1 build, including `CueLoopKernels`, passed on 6 October 2026 (20 Lake jobs); printed axiom lists are preserved in the linked formalization record.
+The active Lean tree contains finite certificates and algebraic lemmas, not formalizations of the full analytic asymptotic theorems. Native certificates have the trust boundary described in `../formalization/README.md`. The current 11 October Lean 4.33.1 receipt covers 23 active modules / 26 Lake jobs; printed axiom lists and earlier receipts remain preserved. The cavity continuation adds no analytic formalization.
 
 **Open engineering/mathematical task:** formalize load-bearing algebraic pieces when doing so reduces proof risk, especially exact finite-support/cohomological identities and finite Cayley bookkeeping. Do not label source presence as compilation or analytic formalization.
 
 ## Engineering boundary
 
-Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build succeeded for the earlier 16-module revision; the full 17-module build including the newer module is now recorded in `formalization/README.md`. This changes execution status, not the scope of the
+Julia migration is complete and is not an open mathematical task. The current computational roles are Python/SymPy for transparent exact/CAS orchestration, C++20 for independent exact/exhaustive kernels, Lean for kernel-checked finite residues, and TeX for the publication-facing proof record. GitHub-hosted workflow attempts that terminate with `steps=[]` provide no execution evidence. The pinned Lean 4.33.1 build now covers 23 active modules / 26 Lake jobs, as recorded in `formalization/README.md`; earlier smaller builds retain their own historical scope. This changes execution status, not the scope of the
 formalized mathematics. Full analytic formalization remains open.
 
 ### Equivalent WKB target

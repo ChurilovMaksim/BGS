@@ -1,7 +1,7 @@
 # Random Schur elimination: a joint-delay bootstrap from entry flatness
 
 **Stable claim:** BGS-TRACE-060. **State:** CONDITIONAL.
-**Boundary:** Conditional on all-time entry flatness down to log(2N)^20 (or stated log(2N)^(5+kappa) scale). Joint delay barriers and killed second/third upper bounds; probability of flatness and equality moment laws are not proved.
+**Boundary:** This preceding proof gives the conditional joint barriers and killed second/third upper bounds at its displayed cutoffs. The [reviewed all-fixed-moment extension](all_moment_delay_bootstrap_20261011.md) improves the cutoff to ceil(log(2N)^(1+kappa)), bounds all fixed killed moments, and proves uniform second/third equality laws. The probability of all-time flatness, fourth and all-order equality laws, unrestricted exceptional-event moments and BGS remain open.
 **Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/delay_bootstrap.md).
 

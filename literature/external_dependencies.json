@@ -887,10 +887,11 @@
       "locator": "Theorem 1.1, printed p.263",
       "checked_on": "2026-10-11",
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
-      "mapping": "Block matrix Freedman controls jointly stopped delay barriers using predictable variation and bounded increments; the all-time entry-flatness event is still an assumption.",
+      "mapping": "Scalar maximal Freedman, Theorem 1.1, applied to both signs of each stopped diagonal martingale; predictable variation and bounded increments are verified before each crossing. No matrix Freedman or all-time flatness probability is used.",
       "project_sources": [
         "mathematics/delay_bootstrap_20261011.md",
-        "literature/circular_phase_sources_20261011.md"
+        "literature/circular_phase_sources_20261011.md",
+        "mathematics/all_moment_delay_bootstrap_20261011.md"
       ],
       "source_url": "https://tropp.caltech.edu/papers/Tro11-Freedmans-Inequality.pdf"
     },

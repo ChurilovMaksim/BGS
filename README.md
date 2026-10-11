@@ -21,6 +21,15 @@ and an all-order critical CSE Gaussian limit. Their hypotheses are explicit;
 the initial deterministic spectral law and signed TRACE-005 remain open.
 
 
+The [Schur continuation](record/cavity_continuation_20261011.md) additionally
+proves conditional concentration of incoming/outgoing delays and all fixed
+killed clock upper moments down to $\lceil\log(2N)^{1+\kappa}\rceil$,
+with uniform second/third equality laws. A separate harmonic-lift theorem
+contracts every classical centered singular value and controls the quantum
+position-chain gap down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
+conclusions still assume all-time entry flatness; its probability and the
+initial microscopic spectral law remain open.
+
 ## What the conjecture asks
 
 Bohigas, Giannoni and Schmit's [1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) connected chaotic quantum spectra with universal random-matrix fluctuations. A rigorous theorem needs a specified quantum family, the correct symmetry sector, a justified unfolding, and a local correlation limit. Classical hyperbolicity alone does not automatically guarantee a particular symmetry class or a universal spectrum.

@@ -67,9 +67,12 @@ TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 
 The full five-primary simplicity and deep all-order cavity hierarchy are not
 promoted from a summary. TRACE-057/059 now reconstruct source covariance and
-physical L2 continuation; TRACE-060 proves the joint barrier and killed second
-and third upper bounds under all-time entry flatness. The stronger moment-law
-inductions are [retained candidates](record/research_candidates/20261011/README.md).
+physical L2 continuation. The [reviewed cavity continuation](record/cavity_continuation_20261011.md)
+strengthens TRACE-060 to all fixed killed upper moments and uniform second/third
+equality laws at the log^(1+kappa) cutoff. TRACE-073 supplies conditional
+position-chain gap propagation at log^(3+kappa). Both require all-time entry
+flatness. Fourth and all-order equality inductions remain
+[retained candidates](record/research_candidates/20261011/README.md).
 TRACE-055 remains verification-pending. The flatness probability, actual cavity
 hypotheses and scalar microscopic law are further missing implications.
 
@@ -106,14 +109,16 @@ is not a complete proof review; inherited analytic chains retain their
 recorded review boundaries. Priority for the reconstructed inequalities is
 not established.
 
-The [current execution packet](evidence/executions/20261008/phase-channel-jet/README.md)
-records independent internal reconstruction, bounded Python/C++/Wolfram
-controls, all 20 active Lean modules and the 280-page manuscript build.
+The [11 October execution packet](evidence/executions/20261011/chat-research/fresh/README.md)
+records the complete 217-check workspace snapshot, 236 maintenance tests,
+23 active Lean modules / 26 Lake jobs and its 284-page manuscript build.
+The [subsequent cavity packet](evidence/executions/20261011/cavity-continuation/README.md)
+records the new controls and manuscript continuation at their own scope.
 The [7 October integration](record/checked_research_checkpoint_20261007.md),
 [Wave2 review](record/wave2_checked_integration_20261007.md), and
 [Wave3 review](record/wave3_checked_integration_20261007.md) retain their own
-actual execution and applicability scopes. This page does not report a new
-full-workspace rerun or external journal refereeing.
+actual execution and applicability scopes. The dated receipts distinguish
+those executions from later source changes and external journal refereeing.
 
 [Reproduction](REPRODUCE_unified.md) · [Review policy](REVIEWING.md) ·
 [Publication scopes](papers/README.md) · [Historical index](record/history/2026/INDEX.md)

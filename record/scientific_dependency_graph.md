@@ -284,7 +284,7 @@ from these nodes closes the scalar cavity law, deterministic transfer or BGS.
 | Input | Output | Scope |
 |---|---|---|
 | TRACE-053 | TRACE-056 | Uniform averaged pinching along the real flow |
-| TRACE-053 | TRACE-055 (pending) | One accepted sub-input; raw barriers/covariance remain unproved here |
+| TRACE-053 | TRACE-055 (pending) | One accepted channel sub-input; the complete hierarchy remains pending; separately accepted covariance and conditional delay/gap inputs are tracked below |
 | Self-contained finite factorization and cascade | TRACE-054 | Sharp general matrix inner jet; no stochastic input |
 
 ## Checked 11 October extensions
@@ -298,3 +298,15 @@ bound (067) supports compatible circular phase laws (068), then critical CSE
 traces (069) and whole form-factor curves (070). No edge from these theorems
 closes BGS-BGS-001 or TRACE-005. Conditional joint delays (060) do not establish
 TRACE-055's full hierarchy or its flatness hypothesis.
+
+## Schur continuation dependency scope, 11 October 2026
+
+TRACE-060 now has a separately reviewed all-fixed killed upper-moment and
+second/third equality extension. Its external concentration input is scalar
+Tropp Theorem 1.1, and all-time flatness remains a premise.
+
+The universal classical censoring and stopped quantum gap proof of TRACE-073
+is self-contained. The machine edge FM-021 -> TRACE-073 supplies only the
+actual-map initial-gap corollary. It is not a proof of all-time entry flatness,
+an all-order clock law or the scalar cavity law. No new edge closes TRACE-005
+or BGS-BGS-001. [Proof and review](cavity_continuation_20261011.md).

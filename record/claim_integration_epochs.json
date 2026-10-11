@@ -2,7 +2,7 @@
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
   "reviewed_on": "2026-10-11",
-  "purpose": "Fail-closed registry lineage across sealed Wave2/Wave3 snapshots, the 8 October claims and the independently reviewed 11 October scoped results. This record is an explicit review of state and source; later IDs are not covered by historical proof reviews.",
+  "purpose": "Explicit reviewed state/source lineage across historical epochs and the two scoped 11 October continuations; historical reviews do not cover later IDs or stronger statements.",
   "after_wave3": [
     {
       "id": "BGS-TRACE-053",
@@ -20,7 +20,7 @@
       "id": "BGS-TRACE-055",
       "state": "verification-pending",
       "source": "record/research_checkpoint_20261008.md",
-      "disposition": "Unreconstructed deep-source hierarchy: verification pending"
+      "disposition": "Complete submitted hierarchy remains pending; accepted covariance, physical comparison, conditional delay and gap sub-inputs are tracked independently."
     },
     {
       "id": "BGS-TRACE-056",
@@ -50,7 +50,7 @@
       "id": "BGS-TRACE-060",
       "state": "conditional",
       "source": "mathematics/delay_bootstrap_20261011.md",
-      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+      "disposition": "Independently reconstructed conditional all-fixed killed-moment bootstrap at log^(1+kappa) cutoff and separately reviewed uniform second/third equality extension; see record/cavity_continuation_20261011.md."
     },
     {
       "id": "BGS-TRACE-061",
@@ -123,6 +123,12 @@
       "state": "proved",
       "source": "mathematics/deterministic_path_transport_20261011.md",
       "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-073",
+      "state": "conditional",
+      "source": "mathematics/schur_censoring_gap_20261011.md",
+      "disposition": "Independent analytic reconstruction of ordered singular-value censoring and stopped fresh-phase gap propagation; actual-map initial-gap leaf only is FM-021. Flatness probability remains open."
     }
   ],
   "invariants": [

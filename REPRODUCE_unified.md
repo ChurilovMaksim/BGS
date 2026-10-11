@@ -368,3 +368,38 @@ kernels do not formalize the analytic path or universality proofs. The Mathlib
 Jack arithmetic remains an uncompiled draft. The local execution packet
 documents an IO.appPath adapter, which changes application-location lookup
 only and does not alter Lean's kernel.
+
+## Reviewed Schur continuation
+
+The current status is [the cavity continuation](record/cavity_continuation_20261011.md).
+The prior integration and its receipts retain their earlier source scope.
+The new finite controls are reproduced by:
+
+```sh
+python3 computations/verification/schur_censoring_and_clock.py
+cmake --build build --target schur_censoring_energy_verifier
+./build/schur_censoring_energy_verifier
+```
+
+For a fresh bounded receipt, use a new output directory and all four declared
+inputs:
+
+```sh
+python3 computations/verification/chat_20261011/audit_tools/run_experiment.py \
+  --root . --contract computations/verification/schur_censoring_contract.json \
+  --input computations/verification/schur_censoring_and_clock.py \
+  --input computations/verification/chat_20261011/audit_tools/run_experiment.py \
+  --input computations/verification/chat_20261011/audit_tools/validate_manifest.py \
+  --input computations/verification/schur_censoring_contract.json \
+  --output build/cavity-reproduction \
+  --result build/cavity-reproduction/results.json \
+  --timeout 90 --max-cpu-seconds 80 --max-memory-bytes 1073741824 \
+  --max-output-bytes 1048576 --max-cores 1 --max-threads 1 \
+  -- python3 computations/verification/schur_censoring_and_clock.py \
+  --output build/cavity-reproduction/results.json
+python3 computations/verification/chat_20261011/audit_tools/validate_manifest.py \
+  build/cavity-reproduction/manifest.json --root .
+```
+
+The Wolfram source is `computations/wolfram/schur_censoring_20261011.wl`.
+These controls do not execute an asymptotic proof or an analytic Lean check.

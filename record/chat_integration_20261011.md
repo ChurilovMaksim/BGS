@@ -30,7 +30,7 @@ random-past conditioning, topology, constants and growing-interval errors.
 | BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/source_covariance_20261011.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
 | BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/integrable_phase_absorption_20261011.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
 | BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/physical_source_transport_20261011.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
-| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Conditional on all-time entry flatness down to log(2N)^20 (or stated log(2N)^(5+kappa) scale). Joint delay barriers and killed second/third upper bounds; probability of flatness and equality moment laws are not proved. |
+| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Preceding checkpoint: conditional joint delay barriers and killed second/third upper bounds at its displayed cutoffs. The later [reviewed continuation](cavity_continuation_20261011.md) proves all-fixed killed upper bounds and uniform second/third equality laws at log^(1+kappa). Flatness probability remains open. |
 | BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/fresh_phase_average_20261011.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
 | BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/flat_completion_20261011.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
 | BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/nonlinear_coercivity_20261011.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
@@ -44,11 +44,13 @@ random-past conditioning, topology, constants and growing-interval errors.
 | BGS-TRACE-071 | PROVED | [Maximal phase point-process paths and all fixed normal-source products](../mathematics/laplace_path_transport_20261011.md) | Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion. |
 | BGS-TRACE-072 | PROVED | [Deterministic maximal microscopic observable flow](../mathematics/deterministic_path_transport_20261011.md) | Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open. |
 
-The stronger all-moment bootstrap, fourth-delay law and Schröder clock-law
-induction are retained under [research_candidates/20261011](research_candidates/20261011/README.md).
-Exact phase-feedback words were checked; the full asymptotic induction is not
-promoted. The killed second/third moments are upper bounds, not equality laws.
-No probability for the all-time entry-flatness event has been established.
+At this preceding checkpoint the stronger all-moment bootstrap, fourth-delay
+law and Schröder induction had not been promoted. The later
+[cavity continuation](cavity_continuation_20261011.md) independently reconstructs
+the all-fixed-order upper bootstrap and uniform second/third equality laws,
+and adds conditional gap propagation. Fourth and all-order equality laws remain
+[verification-pending](research_candidates/20261011/README.md). No probability
+for the all-time entry-flatness event has been established.
 
 ## Corrections and prior overlap
 

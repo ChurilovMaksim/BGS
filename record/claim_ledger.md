@@ -14,7 +14,7 @@ Priority and a solution of global BGS are not claimed.
 | BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/source_covariance_20261011.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
 | BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/integrable_phase_absorption_20261011.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
 | BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/physical_source_transport_20261011.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
-| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Conditional on all-time entry flatness down to log(2N)^20 (or stated log(2N)^(5+kappa) scale). Joint delay barriers and killed second/third upper bounds; probability of flatness and equality moment laws are not proved. |
+| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Strengthened [conditional proof](../mathematics/all_moment_delay_bootstrap_20261011.md): joint first-delay concentration, all fixed killed upper moments and uniform second/third equality laws down to ceil(log(2N)^(1+kappa)). All-time flatness probability, fourth/all-order equality laws and unrestricted exceptional-event moments remain open. |
 | BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/fresh_phase_average_20261011.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
 | BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/flat_completion_20261011.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
 | BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/nonlinear_coercivity_20261011.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
@@ -41,7 +41,7 @@ flatness probability and the scalar microscopic law remain unresolved.
 |---|---|---|
 | BGS-TRACE-053 | PROJECT PROOF + independent internal reconstruction | [Max-entry phase memory](../mathematics/max_entry_phase_channel.md): complete collision corrections, degree-two norm, explicit averaged-pinching rate; no microscopic spectral law |
 | BGS-TRACE-054 | STRENGTHENED PROJECT PROOF + independent internal reconstruction | [Sharp matrix inner jets](../mathematics/sharp_inner_jet.md): optimal leading 4/3 for general noncommuting rational inner F=zG; localization penalty retained |
-| BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](research_checkpoint_20261008.md): raw joint delay barriers, killed moment, prefix covariance and physical-source continuation remain to be reconstructed |
+| BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](research_checkpoint_20261008.md): the complete submitted hierarchy remains pending; covariance and physical L2 transport are reconstructed, while delay and gap results retain all-time-flatness hypotheses |
 | BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
 
 [Proof review and bounded executions](../evidence/executions/20261008/phase-channel-jet/README.md)
@@ -941,3 +941,15 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 **TRACE-029:** [convex weak-noise/deconvolution theorem](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds exact finite-N bounds, complete signed bounded-u stability and an actual UNSIGNED large-log obstruction: F_m=1+o(1) and normalized unweighted deconvolved interval sum ~N^(bA0-1)/(A0 log N). The common identity contribution cancels only after signed occupation subtraction (or relevant projection); this does not refute T16.
 
 **Current OPEN frontier:** masked/source-weighted separated sums, Hamming/high-switch extraction, source derivatives and quantitative rates, signed centered boundary deconvolution and undamped zero-insertion comparison, actual absorbed Ward (13), complete balanced microscopic law, TRACE-005, higher factorial comparison and deterministic BGS. No formalization or unavailable author222-suite certification.
+
+## Independently reconstructed Schur continuation, 11 October 2026
+
+| Claim | Status | Scope and unresolved boundary |
+|---|---|---|
+| BGS-TRACE-060, strengthened | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [All fixed killed upper moments and joint first-delay concentration](../mathematics/all_moment_delay_bootstrap_20261011.md) at ceil(log(2N)^(1+kappa)); uniform second/third equality laws. Probability of all-time flatness, fourth/all-order equality laws and unrestricted exceptional-event moments remain open. |
+| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021 supplies only the actual-map initial gap. Quantum realization contraction and flatness probability are not inferred from the classical mean. |
+
+[The review and exact input lineage](cavity_continuation_20261011.md) separate
+analytic arguments from finite Python/C++/Wolfram controls. No new analytic
+Lean formalization or world-priority claim is made. TRACE-055's complete
+hierarchy, TRACE-005 and BGS remain open.

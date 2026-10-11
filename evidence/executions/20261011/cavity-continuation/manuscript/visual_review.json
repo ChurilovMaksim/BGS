@@ -1,0 +1,17 @@
+{
+  "schema": "bgs-selected-pdf-visual-review-v1",
+  "reviewed_on": "2026-10-11",
+  "pdf_sha256": "5f08aff0f3738712e6d7080533f2b2690ea8a5d4491cf934b07a3b0f52686a8b",
+  "page_count": 285,
+  "pages_inspected": [
+    280,
+    281
+  ],
+  "rendering": "pdftoppm -f 280 -l 281 -scale-to 1600 -png",
+  "result": "No clipping, overlap or unreadable equations observed on the selected pages.",
+  "scope": "Only the new Schur sections and their transition were inspected; not blanket visual or mathematical certification.",
+  "page_images": {
+    "280": "04b93fec52b56a16714513a57e181fc4c8d7385c15a4bf4b642a2f0a34db6971",
+    "281": "9c026c105a98fa55ab908bbc6a484269c58197055acec155b777992d11d2028b"
+  }
+}

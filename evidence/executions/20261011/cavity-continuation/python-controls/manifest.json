@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-TRACE-060-073-finite-controls-20261011",
+  "repository": {
+    "commit": "4c2afe539ff6b84be907899b38c8e80f94f547e8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/schur_censoring_and_clock.py",
+    "--output",
+    "evidence/executions/20261011/cavity-continuation/python-controls/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact harmonic-lift energies and all enumerated noncommuting clock words; separate floating feedback controls.",
+    "coefficient_domain": "SymPy arbitrary rational arithmetic and Fraction; float64 diagnostics explicitly separated.",
+    "conventions": "Unnormalized Schatten norms; incoming T and outgoing Q=STS*; full cyclic words.",
+    "inputs": [
+      "computations/verification/schur_censoring_and_clock.py",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "computations/verification/schur_censoring_contract.json"
+    ],
+    "bounds": {
+      "exact_censoring_dimensions": [
+        2,
+        8
+      ],
+      "clock_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "clock_orders": [
+        2,
+        7
+      ],
+      "unitary_diagnostics": [
+        3,
+        5,
+        8,
+        12
+      ],
+      "seed": 20261011
+    },
+    "non_claims": [
+      "No asymptotic theorem is certified by this run.",
+      "No flatness probability, equality clock law or BGS theorem.",
+      "Singular-value numerics and QR/quadrature examples are diagnostics."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator PCG64; diagnostic examples only, exact cases deterministic",
+    "seed": 20261011
+  },
+  "run": {
+    "started_at": "2026-10-11T13:39:20.886803+00:00",
+    "runtime_seconds": 1.370748,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 80,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/schur_censoring_and_clock.py",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/schur_censoring_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/schur_censoring_and_clock.py",
+      "sha256": "21f3f9b6f8fd028823cd063d8f3f4808e150098197ab8bcbc2ac86d00fbd04ae",
+      "sha256_after": "21f3f9b6f8fd028823cd063d8f3f4808e150098197ab8bcbc2ac86d00fbd04ae"
+    },
+    {
+      "path": "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "sha256": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d",
+      "sha256_after": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d"
+    },
+    {
+      "path": "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "sha256_after": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    },
+    {
+      "path": "computations/verification/schur_censoring_contract.json",
+      "sha256": "218d5a1407d96d6ef8b4aa3ade82613242d419b7ef86bf4541bc593bf607bb37",
+      "sha256_after": "218d5a1407d96d6ef8b4aa3ade82613242d419b7ef86bf4541bc593bf607bb37"
+    }
+  ],
+  "output_directory": "evidence/executions/20261011/cavity-continuation/python-controls",
+  "declared_results": [
+    "evidence/executions/20261011/cavity-continuation/python-controls/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261011/cavity-continuation/python-controls/stdout.txt",
+      "sha256": "f22881962b755b98c7571d1389dd273271ea945c7b2c33c259cacbc7aa46c7a8",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261011/cavity-continuation/python-controls/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261011/cavity-continuation/python-controls/results.json",
+      "sha256": "f22881962b755b98c7571d1389dd273271ea945c7b2c33c259cacbc7aa46c7a8",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

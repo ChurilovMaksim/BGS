@@ -5,16 +5,19 @@ on `main`. It presents the research corpus; the scientific-status authority
 is [the claim ledger](../record/claim_ledger.md), followed by canonical
 mathematical sources under [mathematics/](../mathematics/README.md).
 
-**Editorial checkpoint, 8 October 2026:** the re-edited monograph now
-builds to **281 pages**, as recorded in the
-[independent manuscript CI run](https://github.com/ChurilovMaksim/BGS/actions/runs/37795578273).
-The read-only source audit reports 101 included TeX files, 52 bibliography
-entries and no missing citations or duplicate/unresolved cross-reference
-labels. The older
-[8 October 280-page build and visual-review packet](../evidence/executions/20261008/phase-channel-jet/README.md)
-belongs to the **earlier source version**: it documents selected inspected
-pages and must not be treated as visual certification of the present newly
-edited opening or of every historical page and proof.
+**Current scientific continuation, 11 October 2026:** the
+[Schur section](unified_sections/chat_research_20261011.tex) now includes
+conditional all-fixed killed clock upper bounds, uniform second/third equality
+laws and conditional quantum gap propagation. The
+[review record](../record/cavity_continuation_20261011.md) gives their exact
+hypotheses and separate finite-control scope. The preceding 284-page build
+is retained in [its source-bound packet](../evidence/executions/20261011/chat-research/fresh/README.md);
+the 8 October 280/281-page builds belong to earlier source versions.
+The fresh three-pass build has **285 pages**. Its source audit checks 102
+subordinate TeX files, 59 bibliography keys and no missing or duplicate
+references. Selected-page inspection of this continuation is recorded
+in [the new packet](../evidence/executions/20261011/cavity-continuation/README.md).
+No build or selected visual inspection certifies every mathematical proof.
 
 The [scientific corpus atlas](../docs/corpus_atlas.md) maps the seven
 principal subject areas to their canonical proofs, bibliography and evidence

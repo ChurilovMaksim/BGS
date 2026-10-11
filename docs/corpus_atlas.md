@@ -32,9 +32,9 @@ connections and historical development.
 ## Reading the full manuscript
 
 The [single maintained TeX root](../manuscript/BGS_unified.tex) has
-91 direct `\input` references, with **101 subordinate TeX files** in its
-recursive include closure (102 files counting the root). They are **not**
-101 independent referee-approved papers. Read its parts in this orientation:
+92 direct `\input` references, with **102 subordinate TeX files** in its
+recursive include closure (103 files counting the root). These source segments
+are not independent referee-approved papers. Read its parts in this orientation:
 
 1. **Opening and finite-field chapters:** scope, conventions, pair-key/Cayley
    arithmetic, Gaussian Cayley traces, magnetic quotients
@@ -99,7 +99,7 @@ The current stage examines the **whole Git tree structure** and registry
 architecture, selected canonical proofs and manuscript section openings,
 a [targeted metadata audit](../literature/README.md#bibliographic-metadata-screen-8-october-2026) of 39 dependency records (33 with DOI/arXiv identifiers), a BGS/loop/tomography bibliography reconciliation, and the main
 manuscript's title, scope and front matter. This does **not** mean all
-4,290 files or every line of the 280-page monograph has been independently
+4,290 files or every line of the earlier 280-page monograph has been independently
 read. The distinction matters: a CI pass establishes source integrity
 and finite-test execution, not mathematical correctness, external novelty,
 or the missing signed spectral estimates.
@@ -113,3 +113,8 @@ remains active during that process.
 ## Checked 11 October research
 
 The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+
+The subsequent [Schur continuation](../record/cavity_continuation_20261011.md)
+adds two maintained proof sources in the trace topic and a separate execution
+packet. Its all-time-flatness premises are explicit; the original 199 source
+files and earlier acceptance receipts remain preserved.
