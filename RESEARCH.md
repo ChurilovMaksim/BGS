@@ -1,10 +1,20 @@
 # BGS research brief
 
-**Current scientific status, 8 October 2026:** the unchanged fixed-strength
+**Current scientific status, 11 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
 review or an attached manuscript cannot override it.
+
+## Maximal paths and source continuation, 11 October 2026
+
+[TRACE-071](mathematics/laplace_path_transport_20261011.md) transports the entire centered
+phase-ensemble local point-process path and every fixed normal-source product.
+[TRACE-072](mathematics/deterministic_path_transport_20261011.md) gives the deterministic
+maximal time-average bound and the actual-map growing interval. The initial
+local law remains unidentified. [The complete disposition](record/chat_integration_20261011.md)
+also indexes reconstructed physical-source covariance, conditional joint delays,
+clock obstructions, signed finite-field collisions and frozen circular laws.
 
 ## Model and complete target
 
@@ -55,13 +65,13 @@ The [8 October checkpoint](record/research_checkpoint_20261008.md) supplies
 full proofs for TRACE-053/054/056 and an explicit disposition of TRACE-055.
 TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 
-The asserted complete five-primary simplicity, near-full cavity moment laws,
-physical-source equivalence and deep polylogarithmic hierarchy are not
-promoted on the strength of a summary or the word “verified”. TRACE-055 is
-verification-pending: joint input/output delay barriers, the killed second
-clock moment, stopped prefix covariance and physical-source continuation
-still need complete proofs. Even that hierarchy would compare with the
-actual remaining scalar cavity; its microscopic law is a further question.
+The full five-primary simplicity and deep all-order cavity hierarchy are not
+promoted from a summary. TRACE-057/059 now reconstruct source covariance and
+physical L2 continuation; TRACE-060 proves the joint barrier and killed second
+and third upper bounds under all-time entry flatness. The stronger moment-law
+inductions are [retained candidates](record/research_candidates/20261011/README.md).
+TRACE-055 remains verification-pending. The flatness probability, actual cavity
+hypotheses and scalar microscopic law are further missing implications.
 
 ## Exact unresolved spectral estimates
 

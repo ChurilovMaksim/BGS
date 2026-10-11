@@ -109,3 +109,7 @@ completed theorem-by-theorem check under [REVIEWING.md](../REVIEWING.md),
 including all external assumptions, negative controls, known retractions
 and a reproducible build. The [single canonical manuscript](../manuscript/README.md)
 remains active during that process.
+
+## Checked 11 October research
+
+The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.

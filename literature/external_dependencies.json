@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-07",
+  "updated": "2026-10-11",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -777,6 +777,142 @@
         "mathematics/matrix_block_body_coercivity.md",
         "literature/color_one_boundary_qualification_20261007.md"
       ]
+    },
+    {
+      "id": "EXT-OO-1997",
+      "authors": [
+        "Andrei Okounkov",
+        "Grigori Olshanski"
+      ],
+      "title": "Asymptotics of Jack polynomials as the number of variables goes to infinity",
+      "identifier": "arXiv:q-alg/9709011",
+      "pinned_version": "v1, 5 September 1997",
+      "locator": "Section 1.1, equations (1.2)--(1.3); positive branching in Section 2.3",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Spherical-function identification and parameter theta=1/alpha; COE doubled and CSE duplicated weights. The sharp coefficient bound is proved internally.",
+      "project_sources": [
+        "mathematics/phase_contraction_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://arxiv.org/pdf/q-alg/9709011v1"
+    },
+    {
+      "id": "EXT-MATSUMOTO-2007",
+      "authors": [
+        "Sho Matsumoto"
+      ],
+      "title": "Moments of characteristic polynomials for compact symmetric spaces and Jack polynomials",
+      "identifier": "arXiv:math/0608751",
+      "pinned_version": "v3, 26 July 2007",
+      "locator": "Sections 6.2 and 6.3",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Circular orthogonal and symplectic densities, with N distinct CSE pairs and beta=4. No phase-randomization or deterministic-background theorem is imported.",
+      "project_sources": [
+        "mathematics/exact_cumulants_20261011.md",
+        "mathematics/phase_contraction_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://arxiv.org/pdf/math/0608751v3"
+    },
+    {
+      "id": "EXT-VV-2017",
+      "authors": [
+        "Benedek Valkó",
+        "Bálint Virág"
+      ],
+      "title": "Operator limit of the circular beta ensemble",
+      "identifier": "arXiv:1710.06988",
+      "pinned_version": "v1, 19 October 2017",
+      "locator": "Theorems 6 and 8",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Annealed circular-beta process converges to Sine-beta; periodization and additional 1/(2*pi) scaling give intensity one. Conditional frozen-phase transfer is proved internally; no quantitative Sine metric rate is imported.",
+      "project_sources": [
+        "mathematics/phase_contraction_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://arxiv.org/pdf/1710.06988v1"
+    },
+    {
+      "id": "EXT-JM-2015",
+      "authors": [
+        "Tiefeng Jiang",
+        "Sho Matsumoto"
+      ],
+      "title": "Moments of traces of circular beta-ensembles",
+      "identifier": "arXiv:1102.4123; DOI:10.1214/14-AOP960",
+      "pinned_version": "arXiv v2, 22 December 2015; Annals of Probability 43(6), 3279--3336",
+      "locator": "Lemma 4.2",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Finite circular Jack norm product; the one-sided alpha>=1 estimate is valid in every degree. Fixed-degree limiting trace results are not used for growing Heisenberg powers.",
+      "project_sources": [
+        "mathematics/phase_contraction_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://arxiv.org/pdf/1102.4123v2"
+    },
+    {
+      "id": "EXT-HSW-1999",
+      "authors": [
+        "Fritz Haake",
+        "Hans-Jürgen Sommers",
+        "Joachim Weber"
+      ],
+      "title": "Fluctuations and Ergodicity of the Form Factor of Quantum Propagators and Random Unitary Matrices",
+      "identifier": "arXiv:chao-dyn/9906024",
+      "pinned_version": "v1, 14 June 1999",
+      "locator": "Equations (14), (21), (22), (25), (27), (29)",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Prior exact CUE variance, CSE second/fourth cumulants and limiting curves. These formulas are rederived internally. Time-averaged ergodicity in this source is distinct from averaging compatible coordinate phases of a frozen background.",
+      "project_sources": [
+        "mathematics/form_factor_curve_20261011.md",
+        "mathematics/exact_cumulants_20261011.md",
+        "mathematics/critical_cse_gaussian_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://arxiv.org/pdf/chao-dyn/9906024v1"
+    },
+    {
+      "id": "EXT-TROPP-2011",
+      "authors": [
+        "Joel A. Tropp"
+      ],
+      "title": "Freedman’s inequality for matrix martingales",
+      "identifier": "DOI:10.1214/11-ECP375; Electronic Communications in Probability 16 (2011), 262--270",
+      "pinned_version": "Author-hosted published 2011 PDF",
+      "locator": "Theorem 1.1, printed p.263",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Block matrix Freedman controls jointly stopped delay barriers using predictable variation and bounded increments; the all-time entry-flatness event is still an assumption.",
+      "project_sources": [
+        "mathematics/delay_bootstrap_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://tropp.caltech.edu/papers/Tro11-Freedmans-Inequality.pdf"
+    },
+    {
+      "id": "EXT-AGG-1989",
+      "authors": [
+        "Richard Arratia",
+        "Larry Goldstein",
+        "Louis Gordon"
+      ],
+      "title": "Two Moments Suffice for Poisson Approximations: The Chen-Stein Method",
+      "identifier": "Annals of Probability 17(1) (1989), 9--25; DOI:10.1214/aop/1176991491",
+      "pinned_version": "Author-hosted published 1989 PDF",
+      "locator": "Theorem 1",
+      "checked_on": "2026-10-11",
+      "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
+      "mapping": "Dependency-neighborhood Poisson TV bound for the thinned birthday coupling. Their TV convention is twice the supremum-over-events convention here; the full-TV bound uses (b1+b2)/mu, without adding the zero-event (1-exp(-mu)) factor.",
+      "project_sources": [
+        "mathematics/previous_rank_results_20261011.md",
+        "literature/circular_phase_sources_20261011.md"
+      ],
+      "source_url": "https://dornsife.usc.edu/larry-goldstein/wp-content/uploads/sites/221/2023/06/AGG.pdf"
     }
   ]
 }

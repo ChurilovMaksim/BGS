@@ -10,6 +10,29 @@ ROOT=Path(__file__).resolve().parents[2]
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def check_external_epoch(root, epoch):
+    """Preserve the sealed 39-row leaf while admitting seven reviewed sources."""
+    extension=epoch.get('external_dependency_extension',{})
+    snapshot=safe_path(root,extension.get('historical_registry',''))
+    require(snapshot.is_file() and
+            sha(snapshot)=='e55207391ff6df4870e53d81a875b267f5e848a2be38bee058843df5e350bcbb',
+            'historical external leaf changed')
+    previous=strict_json(snapshot.read_bytes())
+    current=strict_json((root/'literature/external_dependencies.json').read_bytes())
+    require(current['schema']==previous['schema'],'external registry schema changed')
+    rows=current['dependencies']; active={row['id']:row for row in rows}
+    old={row['id']:row for row in previous['dependencies']}
+    allowed={'EXT-OO-1997','EXT-MATSUMOTO-2007','EXT-VV-2017','EXT-JM-2015',
+             'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989'}
+    declared=extension.get('added_ids',[])
+    require(len(declared)==len(allowed) and set(declared)==allowed,
+            'external extension requires explicit epoch review')
+    require(len(active)==len(rows) and set(active)==set(old)|allowed,
+            'duplicate or undeclared external dependency')
+    for identifier,row in old.items():
+        require(active[identifier]==row,'historical external contract changed: '+identifier)
+    return len(old),len(allowed)
+
 def run(root=ROOT):
     mapping=strict_json((root/'record/wave2_promotion_mapping.json').read_bytes())
     require(mapping['base_commit']=='129c676b8e6457e7e5f1bd6f786b3939cbd84653','base changed')
@@ -85,7 +108,7 @@ def run(root=ROOT):
     for rel,digest in mm['authoritative_wrappers'].items():require(sha(root/rel)==digest,'manuscript source binding changed')
     for cid in ids:require(cid.removeprefix('BGS-') in text,'missing manuscript scope '+cid)
     require('upper-half' in text and 'negative plateau' in text and 'remain open' in text,'manuscript scope exclusions lost')
-    require(sha(root/'literature/external_dependencies.json')=='e55207391ff6df4870e53d81a875b267f5e848a2be38bee058843df5e350bcbb','external leaf changed')
+    check_external_epoch(root,epoch)
     return {'status':'passed','immutable_copies':len(immutable),'prepared_copies':85,'ward_sealed_files':7,'reviewed_input_pins':50,'scoped_cards':6,'new_theorem_ids':5,'unchanged_prior_claims':len(previous['claims']),'wrapper_links':links,'replay_tasks':8,'bounded_domains':6,'private_XML_extracts':0,'unavailable_Ward_archive_replayed':False,'scope':'Mapping, bytes, status and links; not proof audit or aggregate suite.'}
 
 if __name__=='__main__':print(json.dumps(run(),indent=2))

@@ -1,0 +1,190 @@
+{
+  "all_passed": true,
+  "arithmetic": "Exact rational and independent C++ integer SSYT",
+  "controls": {
+    "jack": {
+      "all_passed": true,
+      "arithmetic": "Python Fraction and C++ exact integer SSYT",
+      "jack_cases": 190,
+      "cleared_pair_identities": 1180,
+      "independent_cpp_cases": 13,
+      "dimension_variance_cases": 87,
+      "tested_N": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "signature_bounds": {
+        "N<=4": [
+          -3,
+          3
+        ],
+        "N=5": [
+          -2,
+          2
+        ]
+      },
+      "alphas": [
+        "1/2",
+        "1",
+        "2",
+        "3",
+        "7/3"
+      ]
+    },
+    "pfaffian": {
+      "all_passed": true,
+      "arithmetic": "exact integer density; rational trace-log",
+      "independent_density_cases": 27,
+      "larger_shift_cases": 48,
+      "density_N": [
+        2,
+        3,
+        4
+      ],
+      "density_trace_bound": "1<=n<=3N",
+      "larger_N": [
+        5,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "larger_times": "1,floor(N/2),N-1,N,N+1,2N-1,2N,3N",
+      "absolute_log_coefficient_mass": "13/4",
+      "max_tested_cumulant_ratio": "2362167296/3652293645"
+    },
+    "cumulant": {
+      "all_passed": true,
+      "arithmetic": "exact Fraction; finite formal coefficients",
+      "cse_fourth_formula_cases": 1581,
+      "cue_fourth_formula_cases": 1581,
+      "range": "N=2..32, n=1..3N",
+      "critical_block_coefficient_cases": 45,
+      "critical_block_range": "N=2..16, balanced orders r=1,2,3",
+      "sixth_moment_direct_density_cases": 9,
+      "sixth_moment_density_range": "N=2,3,4; n=N-1,N,N+1",
+      "nonzero_closed_words_checked": {
+        "2": 24,
+        "3": 248
+      }
+    }
+  },
+  "alternating_clock_cases": 80,
+  "walsh_clock_controls": [
+    {
+      "N": 2,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 4,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 8,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 16,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 32,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 64,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    },
+    {
+      "N": 128,
+      "cleared_orthogonality": true,
+      "zero_trace": true,
+      "equal_cyclic_difference_weights": true
+    }
+  ],
+  "resource_caps_per_child": {
+    "wall_seconds": 60,
+    "cpu_seconds": 50,
+    "address_space_bytes": 1073741824,
+    "output_bytes": 1048576,
+    "threads": 1
+  },
+  "commands": [
+    {
+      "name": "compile",
+      "argv": [
+        "g++",
+        "-O2",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "/workspace/scratch/06745ba532e4/BGS/computations/cpp/circular_phase_ssyt_verifier.cpp",
+        "-o",
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/circular_phase_ssyt_verifier"
+      ],
+      "returncode": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "cpp",
+      "argv": [
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/circular_phase_ssyt_verifier"
+      ],
+      "returncode": 0,
+      "log_sha256": "c29314e5764d8a346b67a609c27eb3000e369cf6d29fa663f43b0a3c4e1822de"
+    },
+    {
+      "name": "jack",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/chat_20261011/scripts/exact_checks.py",
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/cpp_results.json",
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/jack_results.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "60d7eaa8322ee0b45b0d55d0b71c8aafb3cc89811fbee2f485a7822cf54d585c"
+    },
+    {
+      "name": "pfaffian",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/chat_20261011/scripts/pfaffian_controls.py",
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/pfaffian_results.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "6074f9107fb6d060b35d8939650ce99e5b2830efe31a77fabb46db54f545d3d7"
+    },
+    {
+      "name": "cumulant",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/chat_20261011/scripts/cumulant_formula_controls.py",
+        "/workspace/scratch/06745ba532e4/BGS/evidence/executions/20261011/chat-research/fresh/circular-controls/cumulant_results.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "e8403b209cc629813763535f9c95d28f34b664de11d1b1fd1f8b06d3ce7e6fc1"
+    }
+  ],
+  "non_claims": [
+    "Finite controls do not prove the unbounded-signature, all-order or asymptotic theorems.",
+    "Indicator-window clock control is a mechanism diagnostic; the smooth-test statement is proved analytically.",
+    "The changed-clock family is not the maintained literal BGS map.",
+    "This script does not compile Lean or run Wolfram."
+  ]
+}

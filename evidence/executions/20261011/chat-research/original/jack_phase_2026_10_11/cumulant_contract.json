@@ -1,0 +1,25 @@
+{
+  "claim_id": "CSE-critical-blocks-and-exact-fourth-cumulants-2026-10-11",
+  "software": [{"name": "Python", "version": "3.12.14"}],
+  "execution_artifacts": [
+    "scripts/cumulant_formula_controls.py",
+    "scripts/pfaffian_controls.py",
+    "audit_tools/run_experiment.py",
+    "audit_tools/validate_manifest.py"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact CUE/CSE fourth cumulants, CSE critical block logarithm and direct sixth moments; finite cyclic-word multiplicity controls.",
+    "coefficient_domain": "Exact rational Fraction arithmetic and integer Fourier exponents.",
+    "conventions": "N distinct eigenvalues, N paired phases and half matrix trace in CSE; unweighted N-dimensional shifts for CUE.",
+    "inputs": ["scripts/cumulant_formula_controls.py", "scripts/pfaffian_controls.py"],
+    "bounds": {
+      "fourth_N": "2..32", "fourth_n": "1..3N",
+      "critical_block_N": "2..16", "critical_block_r": [1, 2, 3],
+      "direct_sixth_N": [2, 3, 4], "direct_sixth_n": "N-1,N,N+1",
+      "cyclic_word_r": [2, 3],
+      "execution": "wall 60s, CPU 50s, process memory 1 GiB, one core and cooperative thread caps"
+    },
+    "non_claims": ["No arbitrary-order proof by computation.", "No CLT, novelty or full BGS certificate from finite controls."]
+  },
+  "randomness": {"used": false, "generator": "none", "seed": null}
+}

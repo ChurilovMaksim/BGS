@@ -1,0 +1,923 @@
+{
+  "all_passed": true,
+  "active_identity_cases": 45,
+  "rank_defect_diagrams_checked": 201632,
+  "polynomials": [
+    {
+      "p": 3,
+      "n": 3,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 3,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 3,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 3,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 4,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 4,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 4,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "-8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 4,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 5,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "185",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 5,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "165",
+        "6": "-400",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 5,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "185",
+        "6": "-400",
+        "7": "200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 5,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "165",
+        "6": "-400",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 6,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-72",
+        "6": "-1938",
+        "7": "-240",
+        "8": "6089",
+        "9": "5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 6,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "6": "-1794",
+        "8": "6233",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 6,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "72",
+        "6": "-1938",
+        "7": "240",
+        "8": "6089",
+        "9": "-5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 6,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "6": "-1794",
+        "8": "6233",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 3,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 3,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 3,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 3,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 4,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 4,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 4,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 4,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 5,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "3": "10",
+        "4": "175",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 5,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "3": "10",
+        "4": "175",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 5,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "3": "10",
+        "4": "175",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 5,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "3": "10",
+        "4": "175",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 6,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-144",
+        "6": "-1938",
+        "7": "-144",
+        "8": "6065",
+        "9": "5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 6,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-144",
+        "6": "-1938",
+        "7": "-432",
+        "8": "6257",
+        "9": "4908",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 6,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-144",
+        "6": "-1938",
+        "7": "-144",
+        "8": "6065",
+        "9": "5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 5,
+      "n": 6,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-144",
+        "6": "-1938",
+        "7": "-432",
+        "8": "6257",
+        "9": "4908",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 3,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 3,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 3,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 3,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "6",
+        "2": "-9",
+        "4": "4"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 10,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 4,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 4,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 4,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "5": "-8",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 4,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "8",
+        "2": "-24",
+        "4": "42",
+        "6": "-33"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 90,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 5,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "185",
+        "6": "-400",
+        "7": "-200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 5,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "165",
+        "6": "-400",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 5,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "185",
+        "6": "-400",
+        "7": "200",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 5,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "10",
+        "2": "-50",
+        "4": "165",
+        "6": "-400",
+        "8": "456"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 1248,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 6,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "-72",
+        "6": "-2010",
+        "7": "-72",
+        "8": "5993",
+        "9": "5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 6,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "6": "-1866",
+        "8": "6137",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 6,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "5": "72",
+        "6": "-2010",
+        "7": "72",
+        "8": "5993",
+        "9": "-5292",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 7,
+      "n": 6,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "12",
+        "2": "-72",
+        "4": "390",
+        "6": "-1866",
+        "8": "6137",
+        "10": "-9460"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24360,
+      "exponent_cutoff": null
+    },
+    {
+      "p": 3,
+      "n": 7,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "14",
+        "2": "-98",
+        "4": "686"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 5392,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 7,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "14",
+        "2": "-98",
+        "4": "686"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 5392,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 7,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "14",
+        "2": "-98",
+        "4": "686"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 5392,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 7,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "14",
+        "2": "-98",
+        "4": "686"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 5392,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 8,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "16",
+        "2": "-128",
+        "4": "1008"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 12384,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 8,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "16",
+        "2": "-128",
+        "4": "1008"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 12384,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 8,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "16",
+        "2": "-128",
+        "4": "1008"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 12384,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 8,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "16",
+        "2": "-128",
+        "4": "1008"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 12384,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 9,
+      "d_mod_4": 0,
+      "coefficients": {
+        "0": "18",
+        "2": "-162",
+        "4": "1512"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24548,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 9,
+      "d_mod_4": 1,
+      "coefficients": {
+        "0": "18",
+        "2": "-162",
+        "4": "1512"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24548,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 9,
+      "d_mod_4": 2,
+      "coefficients": {
+        "0": "18",
+        "2": "-162",
+        "4": "1512"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24548,
+      "exponent_cutoff": 4
+    },
+    {
+      "p": 3,
+      "n": 9,
+      "d_mod_4": 3,
+      "coefficients": {
+        "0": "18",
+        "2": "-162",
+        "4": "1512"
+      },
+      "variable": "x=N^(-1/2)",
+      "diagrams": 24548,
+      "exponent_cutoff": 4
+    }
+  ],
+  "rank_three_control": {
+    "p": 5,
+    "n": 5,
+    "rank": 3,
+    "determinant_character": 1,
+    "pair_restriction_ranks": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "gaussian_phase": "positive"
+  },
+  "scope": "Exact finite checks. General results rely on the separate proof, not these computations."
+}

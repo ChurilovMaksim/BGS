@@ -1,8 +1,8 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-08",
-  "purpose": "Fail-closed registry lineage across historical sealed Wave2/Wave3 snapshots and the later 8 October claims. Updating this record is an explicit scientific-governance change, not an automatic registry rescan.",
+  "reviewed_on": "2026-10-11",
+  "purpose": "Fail-closed registry lineage across sealed Wave2/Wave3 snapshots, the 8 October claims and the independently reviewed 11 October scoped results. This record is an explicit review of state and source; later IDs are not covered by historical proof reviews.",
   "after_wave3": [
     {
       "id": "BGS-TRACE-053",
@@ -27,11 +27,121 @@
       "state": "proved",
       "source": "mathematics/phase_channel_real_flow.md",
       "disposition": "Normally absorbed scalar real-flow transport"
+    },
+    {
+      "id": "BGS-TRACE-057",
+      "state": "proved",
+      "source": "mathematics/source_covariance_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-058",
+      "state": "proved",
+      "source": "mathematics/integrable_phase_absorption_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-059",
+      "state": "proved",
+      "source": "mathematics/physical_source_transport_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-060",
+      "state": "conditional",
+      "source": "mathematics/delay_bootstrap_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-061",
+      "state": "proved",
+      "source": "mathematics/fresh_phase_average_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-062",
+      "state": "proved",
+      "source": "mathematics/flat_completion_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-063",
+      "state": "proved",
+      "source": "mathematics/nonlinear_coercivity_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-064",
+      "state": "proved",
+      "source": "mathematics/torus_contraction_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-065",
+      "state": "proved",
+      "source": "mathematics/coherence_form_factor_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-066",
+      "state": "proved",
+      "source": "mathematics/previous_rank_results_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-067",
+      "state": "proved",
+      "source": "mathematics/jack_coefficient_theorem_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-068",
+      "state": "proved",
+      "source": "mathematics/phase_contraction_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-069",
+      "state": "proved",
+      "source": "mathematics/exact_cumulants_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-070",
+      "state": "proved",
+      "source": "mathematics/form_factor_curve_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-071",
+      "state": "proved",
+      "source": "mathematics/laplace_path_transport_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
+    },
+    {
+      "id": "BGS-TRACE-072",
+      "state": "proved",
+      "source": "mathematics/deterministic_path_transport_20261011.md",
+      "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
     }
   ],
   "invariants": [
     "Historical Wave2/3 claims and immutable evidence remain byte- and field-pinned by their original audits.",
     "Every newly added core ID must be explicitly reviewed, appended here with exact state and source, and matched to record/claims.json.",
     "New entries are not automatically classified as theorems and do not imply a BGS local law."
-  ]
+  ],
+  "external_dependency_extension": {
+    "reviewed_on": "2026-10-11",
+    "historical_registry": "evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json",
+    "added_ids": [
+      "EXT-OO-1997",
+      "EXT-MATSUMOTO-2007",
+      "EXT-VV-2017",
+      "EXT-JM-2015",
+      "EXT-HSW-1999",
+      "EXT-TROPP-2011",
+      "EXT-AGG-1989"
+    ],
+    "scope": "All 39 historical theorem contracts remain field-identical; seven primary-source dependencies are reviewed separately in literature/circular_phase_sources_20261011.md."
+  }
 }

@@ -1,0 +1,25 @@
+{
+  "submitted_code": "Module[{n, b, t, u, v, k, l, root, dim, coe, cse, mean, variance,\n  expected, rows, gapControls, fourthControls, mass, checks},\n dim[w_List] := Product[(w[[k]] - w[[l]] + l - k)/(l-k),\n   {k,1,Length[w]-1},{l,k+1,Length[w]}];\n rows = Table[\n   root = Join[{1},ConstantArray[0,n-2],{-1}];\n   coe = dim[2 root]; cse = dim[Flatten[Transpose[{root,root}]]];\n   {n,coe,cse,coe == n^2(n-1)(n+3)/4,\n    cse == n^2(2n-3)(2n+1)}, {n,2,8}];\n gapControls = Table[\n   mean = Integrate[(2+2 Cos[t]) Sin[t/2]^b,{t,0,2 Pi}]/\n      Integrate[Sin[t/2]^b,{t,0,2 Pi}];\n   variance = Integrate[(2+2 Cos[t]-mean)^2 Sin[t/2]^b,\n      {t,0,2 Pi}]/Integrate[Sin[t/2]^b,{t,0,2 Pi}];\n   {b,mean,variance,mean==4/(b+2),\n      variance==32(b+1)/((b+2)^2(b+4))}, {b,{1,2,4}}];\n fourthControls = Table[\n   mean = Integrate[(2+2 Cos[n t]) (6-8 Cos[t]+2 Cos[2 t]),\n       {t,0,2 Pi}]/(12 Pi);\n   variance = Integrate[(2+2 Cos[n t])^2 (6-8 Cos[t]+2 Cos[2 t]),\n       {t,0,2 Pi}]/(12 Pi);\n   {n,mean,variance}, {n,1,6}];\n mass = Sum[Coefficient[Coefficient[Normal[Series[\n       (Exp[u+v]-1)^n,{u,0,2},{v,0,2}]],u,2],v,2]/(2 n),{n,1,4}];\n checks = {And@@Flatten[rows[[All,{4,5}]]],\n   And@@Flatten[gapControls[[All,{4,5}]]],mass==13/4,\n   fourthControls=={{1,2/3,1},{2,7/3,22/3},{3,2,6},{4,2,6},{5,2,6},{6,2,6}}};\n ExportString[<|\"all_passed\"->And@@checks,\"checks\"->checks,\n   \"dimension_controls\"->rows,\"N2_gap_controls\"->gapControls,\n   \"N2_CSE_trace_controls\"->fourthControls,\"coefficient_mass\"->ToString[mass,InputForm]|>,\n \"RawJSON\"]\n]\n",
+  "requested_time_constraint_seconds": 45,
+  "started_at": "2026-10-11T06:06:28.654Z",
+  "returned_at": "2026-10-11T06:06:36.607Z",
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= \"{\\n\\t\\\"all_passed\\\":true,\\n\\t\\\"checks\\\":[\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue,\\n\\t\\ttrue\\n\\t],\\n\\t\\\"dimension_controls\\\":[\\n\\t\\t[\\n\\t\\t\\t2,\\n\\t\\t\\t5,\\n\\t\\t\\t20,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t3,\\n\\t\\t\\t27,\\n\\t\\t\\t189,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t4,\\n\\t\\t\\t84,\\n\\t\\t\\t720,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t5,\\n\\t\\t\\t200,\\n\\t\\t\\t1925,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t6,\\n\\t\\t\\t405,\\n\\t\\t\\t4212,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t7,\\n\\t\\t\\t735,\\n\\t\\t\\t8085,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t8,\\n\\t\\t\\t1232,\\n\\t\\t\\t14144,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t]\\n\\t],\\n\\t\\\"N2_gap_controls\\\":[\\n\\t\\t[\\n\\t\\t\\t1,\\n\\t\\t\\t1.3333333333333333,\\n\\t\\t\\t1.4222222222222223,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t2,\\n\\t\\t\\t1,\\n\\t\\t\\t1,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t4,\\n\\t\\t\\t0.6666666666666666,\\n\\t\\t\\t0.5555555555555556,\\n\\t\\t\\ttrue,\\n\\t\\t\\ttrue\\n\\t\\t]\\n\\t],\\n\\t\\\"N2_CSE_trace_controls\\\":[\\n\\t\\t[\\n\\t\\t\\t1,\\n\\t\\t\\t0.6666666666666666,\\n\\t\\t\\t1\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t2,\\n\\t\\t\\t2.3333333333333335,\\n\\t\\t\\t7.333333333333333\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t3,\\n\\t\\t\\t2,\\n\\t\\t\\t6\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t4,\\n\\t\\t\\t2,\\n\\t\\t\\t6\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t5,\\n\\t\\t\\t2,\\n\\t\\t\\t6\\n\\t\\t],\\n\\t\\t[\\n\\t\\t\\t6,\\n\\t\\t\\t2,\\n\\t\\t\\t6\\n\\t\\t]\\n\\t],\\n\\t\\\"coefficient_mass\\\":\\\"13\\\\/4\\\"\\n}\""
+      }
+    ],
+    "isError": false
+  },
+  "version_query_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= \"15.0.1 for Linux x86 (64-bit) (July 2, 2026)\""
+      }
+    ],
+    "isError": false
+  },
+  "interpretation": "Four symbolic Boolean groups passed. The kernel evaluated exact rational integrals; RawJSON renders some rational answers as decimal numbers. Exact rational values are separately preserved in the local Fraction results."
+}

@@ -1,0 +1,782 @@
+{
+  "schema": "bgs-external-dependencies-v1",
+  "updated": "2026-10-07",
+  "dependencies": [
+    {
+      "id": "EXT-BAB-2013",
+      "authors": [
+        "Gérard Ben Arous",
+        "Paul Bourgade"
+      ],
+      "title": "Extreme gaps between eigenvalues of random matrices",
+      "identifier": "DOI:10.1214/11-AOP710; arXiv:1010.1294",
+      "pinned_version": "Annals of Probability 41 (2013), 2648–2681; author-hosted published PDF",
+      "locator": "Theorem 1.1, printed pp. 2650–2651",
+      "checked_on": "2026-09-25",
+      "mapping": "For Haar CUE(N), consecutive circular eigenangle gaps scaled by N^(4/3), with angular location in an interior arc, converge to a marked Poisson process. Integrating over angle gives gap intensity u^2 du/(24 pi). Seam and all-pair singular-tail reductions are proved separately in the project; no theorem about the fixed deterministic map is supplied by this source.",
+      "project_sources": [
+        "mathematics/cue_singular_energy.md",
+        "literature/cue_singular_energy_sources.md",
+        "record/claim_ledger.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-BAB-2013"
+    },
+    {
+      "id": "EXT-BH-2026",
+      "authors": [
+        "Paul Bourgade",
+        "Jiaoyang Huang"
+      ],
+      "title": "Loop Equations Characterize Random Matrix Statistics",
+      "identifier": "arXiv:2607.07617",
+      "pinned_version": "v2",
+      "locator": "Theorem 1.9",
+      "checked_on": "2026-09-22",
+      "mapping": "Used only for the loop-hierarchy characterization/convergence implication. The approximate mixed loop equations for the maintained deterministic model remain a project hypothesis.",
+      "project_sources": [
+        "mathematics/fixed_map_resolvent_frontier.md",
+        "record/claim_ledger.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-BH-2026"
+    },
+    {
+      "id": "EXT-CK-2006",
+      "authors": [
+        "Henry Cohn",
+        "Abhinav Kumar"
+      ],
+      "title": "Universally optimal distribution of points on spheres",
+      "identifier": "arXiv:math/0607446v2",
+      "pinned_version": "v2 (19 October 2006); JAMS 20 (2007), 99-148",
+      "locator": "Theorem 1.2",
+      "checked_on": "2026-09-25",
+      "mapping": "For N>=2 the regular N-gon on S^1 is a sharp configuration (N=1 is immediate). Theorem 1.2 minimizes pair energy for completely monotone functions of squared chord distance; the project potential f_q(r)=(1-q^2)/((1-q)^2+qr) meets this hypothesis. Continuity extends the inequality to spectral multisets with repeated phases.",
+      "project_sources": [
+        "mathematics/fixed_map_resolvent_frontier.md",
+        "record/claim_ledger.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-CK-2006"
+    },
+    {
+      "id": "EXT-VM-2015",
+      "authors": [
+        "I. Vyugin",
+        "S. Makarychev"
+      ],
+      "title": "Solutions of polynomial equation over F_p and new bounds of additive energy",
+      "identifier": "arXiv:1504.01354v2",
+      "pinned_version": "v2 (24 Sep 2015)",
+      "locator": "Theorem 2",
+      "checked_on": "2026-09-04",
+      "mapping": "Applied to the displayed absolutely irreducible subgroup curve after the project's degree and size-range checks.",
+      "project_sources": [
+        "mathematics/cayley_direct_energy.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-VM-2015"
+    },
+    {
+      "id": "EXT-CZ-2013",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "title": "Greatest common divisors of u−1, v−1 in positive characteristic and rational points on curves over finite fields",
+      "identifier": "DOI:10.4171/JEMS/409",
+      "pinned_version": "JEMS 15 (2013), 1927-1942",
+      "locator": "Theorem 2 and Corollary 2",
+      "checked_on": "2026-09-08",
+      "mapping": "Applied to the smooth Cayley curve after explicit degree, boundary, separability, and translated-subtorus checks.",
+      "project_sources": [
+        "mathematics/cayley_curve_uniform.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-CZ-2013"
+    },
+    {
+      "id": "EXT-FKM-2014",
+      "authors": [
+        "Étienne Fouvry",
+        "Emmanuel Kowalski",
+        "Philippe Michel"
+      ],
+      "title": "Counting sheaves using spherical codes",
+      "identifier": "arXiv:1210.0851v5",
+      "pinned_version": "arXiv:1210.0851v5 (17 August 2013); Mathematical Research Letters 20 (2013), 305–323; legacy registry ID retained",
+      "locator": "Lemma 3.5 and its proof",
+      "checked_on": "2026-09-20",
+      "mapping": "The project reproduces the proof on the common good open to handle moving bad points; no stronger black-box statement is assumed.",
+      "project_sources": [
+        "mathematics/offoff_elliptic_spike_theorem.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-FKM-2014"
+    },
+    {
+      "id": "EXT-BLV-2009",
+      "authors": [
+        "Andrea Bandini",
+        "Ignazio Longhi",
+        "Stefano Vigni"
+      ],
+      "title": "Torsion points on elliptic curves over function fields and a theorem of Igusa",
+      "identifier": "DOI:10.1016/j.exmath.2008.06.001; arXiv:0804.1425v2",
+      "pinned_version": "arXiv v2 / Expositiones Mathematicae 27 (2009)",
+      "locator": "Theorems 1.3-1.4 and Lemma 4.1",
+      "checked_on": "2026-09-20",
+      "mapping": "Supplies arithmetic openness/irreducibility input in the corrected elliptic off/off route after project-specific non-isotriviality and singular-support checks.",
+      "project_sources": [
+        "mathematics/offoff_elliptic_spike_theorem.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-BLV-2009"
+    },
+    {
+      "id": "EXT-IK-2004",
+      "authors": [
+        "Henryk Iwaniec",
+        "Emmanuel Kowalski"
+      ],
+      "title": "Analytic Number Theory",
+      "identifier": "DOI:10.1090/coll/053",
+      "pinned_version": "AMS Colloquium Publications 53 (2004)",
+      "locator": "Theorem 17.1 (Bombieri-Vinogradov)",
+      "checked_on": "2026-09-04",
+      "mapping": "Used only for the stated dyadic averaged split-design prime-counting arguments; no pointwise PNT for a varying modulus is assumed.",
+      "project_sources": [
+        "mathematics/cayley_jacobi_trace_average.md",
+        "literature/bibliography.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-IK-2004"
+    },
+    {
+      "id": "EXT-EV-2015",
+      "authors": [
+        "Jan-Hendrik Evertse"
+      ],
+      "title": "Chapter 4: Transcendence results",
+      "identifier": "https://pub.math.leidenuniv.nl/~evertsejh/dio15-4.pdf",
+      "pinned_version": "author-hosted PDF, Chapter 4 (2015)",
+      "locator": "Theorem 4.8 and Corollary 4.9(i), printed page 48, PDF page 4",
+      "checked_on": "2026-09-23",
+      "mapping": "For two distinct algebraic exponents 0 and i tau N(lambda-mu), coefficients -1 and 1, exponentials cannot coincide. This gives qualitative injectivity only, no spectral gap. The underlying single-chain representation was already recorded in supplement/fixed_map/weighted-secular/attempt.md.",
+      "project_sources": [
+        "mathematics/frozen_kick_rank_boundary.md",
+        "record/frozen_rank_review_20260923.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-EV-2015"
+    },
+    {
+      "id": "EXT-PESIN-1977",
+      "authors": [
+        "Yakov B. Pesin"
+      ],
+      "title": "Characteristic Lyapunov exponents and smooth ergodic theory",
+      "identifier": "Russian Mathematical Surveys 32:4 (1977), 55-114; https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&paperid=3219&what=fullteng",
+      "pinned_version": "1977 English translation, Math-Net full PDF",
+      "locator": "Theorem 5.1, printed p. 81, PDF p. 26",
+      "checked_on": "2026-09-23",
+      "mapping": "Smooth normalized area invariant under analytic G_kappa has entropy equal to its positive Lyapunov exponent, the integral of log unstable expansion; together with the Ruelle inequality this identifies P(-phi)=0.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-PESIN-1977"
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "authors": [
+        "David Ruelle"
+      ],
+      "title": "An inequality for the entropy of differentiable maps",
+      "identifier": "Boletim da Sociedade Brasileira de Matematica 9 (1978), 83-87; https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B51%5D.pdf",
+      "pinned_version": "Author-hosted scan of 1978 publication",
+      "locator": "Theorem 2, printed pp. 84-85, PDF pp. 2-3",
+      "checked_on": "2026-09-23",
+      "mapping": "For every invariant probability on the smooth area-preserving Anosov two-torus, entropy is at most the integral of the one-dimensional unstable potential; hence P(-phi)<=0. Entropy upper bound for every invariant measure of the actual smooth area-preserving Anosov map; combined with verified Mane1981+1983errata and Gibbs uniqueness to identify pressure-zero area, not a quantum trace theorem.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "record/weighted_periodic_review.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-RUELLE-1978"
+    },
+    {
+      "id": "EXT-PP-1990",
+      "authors": [
+        "William Parry",
+        "Mark Pollicott"
+      ],
+      "title": "Zeta functions and the periodic orbit structure of hyperbolic dynamics",
+      "identifier": "Asterisque 187-188 (1990); https://smf.emath.fr/system/files/filepdf/AST_1990__187-188__1_0.pdf",
+      "pinned_version": "Published 1990 SMF PDF",
+      "locator": "Appendix III Markov partitions, Theorem 2.2 (PDF p. 25), Proposition 3.2 and Theorem 3.5 (pp. 41, 46), Propositions 4.7, 4.11, 4.12 (pp. 61, 65-66); Proposition 2.4 and proof (printed pp.29-31 / PDF pp.33-35), Theorem 2.2(ii) (printed p.21 / PDF p.25), Appendix III.3 (printed pp.227-230 / PDF pp.231-234)",
+      "checked_on": "2026-09-23",
+      "mapping": "Markov coding and Gibbs cylinder estimates yield the weighted two-endpoint pressure exponent; uniqueness and mixing identify equilibrium measures, strict convexity from nonconstant periodic unstable multipliers gives P(phi)>2h_top, analyticity and Hessian identify the perturbative variance. Endpoint comparison and kick coefficient are derived in the project rather than quoted as standalone external theorems. Additional FM-018 use: product-Hölder-norm exponential correlation bound from Proposition 2.4, pulled back through the Hölder Markov coding; FM-001 supplies mixing Anosov dynamics and FM-006 supplies the normalized-area Gibbs identification. Sobolev embedding yields O11. The quantum Egorov and singular-gap steps are derived in the project. The supporting principal-WKB polar comparison reuses the FM-018 logarithmic Egorov/mixing input for the prior RMS spectral-transport theorem; its new independent review covers the smooth-symbol/polar bridge only and does not re-audit this external mixing leaf. Norm-uniform weighted periodic transfer: Proposition1.2 printed14–16, Lemma5.3/Corollary5.3.1 printed78–80, proof of Theorem5.5(ii) printed81–84, Proposition4.10 printed59–60, AppendixIII.3 printed227–230 and III.9–III.11 printed239–240. Complex-potential ball and Cauchy differentiation plus direct geometric boundary removal apply to N-dependent half-Holder tests; fixed points counted once, no primitive-orbit normalization. TRACE021 inherits FM018 O11 only for actual normalized-area mixing, alongside fixed-observable one-step Egorov; this excludes peripheral eigenvalues of fixed-offset compact Koopman compressions. No new independent audit of inherited FM001/FM006 or their external leaves.",
+      "project_sources": [
+        "mathematics/nonlinear_bracket_pressure.md",
+        "record/nonlinear_pressure_review_20260923.md",
+        "mathematics/frozen_operator_transfer_coercivity.md",
+        "literature/frozen_operator_transfer_sources_20261006.md",
+        "mathematics/polar_wkb_quantization_stability.md",
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/selected_weighted_coefficient.md",
+        "record/weighted_periodic_review.md",
+        "mathematics/all_coordinate_translation.md",
+        "mathematics/hamming_low_switch_residual.md"
+      ],
+      "additional_checks": [
+        {
+          "checked_on": "2026-10-06",
+          "locator": "Proposition 2.4 and its complete proof; Theorem 2.2(ii); Appendix III.3",
+          "scope": "New FM-018 classical mixing leaf only; the earlier 2026-09-23 pressure audit remains historical and its date is preserved.",
+          "record": "literature/frozen_operator_transfer_sources_20261006.md"
+        }
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-PP-1990"
+    },
+    {
+      "id": "EXT-POPESCU-2023",
+      "authors": [
+        "Sever Angel Popescu"
+      ],
+      "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
+      "identifier": "arXiv:2306.14352v2; https://arxiv.org/pdf/2306.14352",
+      "pinned_version": "v2, 17 September 2023",
+      "locator": "Theorem 3.2 (the linear independence of exponentials of distinct algebraic exponents over all algebraic coefficients); Corollary 3.2, printed p.16 (nonzero complex algebraic exponent has transcendental exponential)",
+      "checked_on": "2026-10-04",
+      "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW. Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion. Odd newest/residual125 application: disjoint complete cat groups give 24N/25, +35, and +875 total at odd depths e>=3,5,7 respectively; the existing exponential-rank theorem transfers these local branch counts to nonzero real algebraic time. No full simplicity or invariant target-time oldform space.",
+      "project_sources": [
+        "mathematics/frozen_algebraic_spectral_simplicity.md",
+        "mathematics/frozen_common_antireversor_certificate.md",
+        "record/frozen_algebraic_review_20260924.md",
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md",
+        "mathematics/dyson_relaxation_obstruction.md",
+        "mathematics/actual_seven_primary_commutant.md",
+        "mathematics/finite_seven_spectral_pivots.md",
+        "mathematics/uniform_trace_square_transcendence.md",
+        "record/finite_seven_pivots_review.md",
+        "record/trace_variance_review.md",
+        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/literal_time_multiplicity_bounds.md",
+        "mathematics/finite_cat_first_jet.md",
+        "record/cat_jet_rank_review.md",
+        "record/fm008_fresh_independent_review.md",
+        "record/intermediate_old_layers_promotion.md",
+        "mathematics/odd_sector_count_combination.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-POPESCU-2023"
+    },
+    {
+      "id": "EXT-ROY-2016",
+      "authors": [
+        "Damien Roy"
+      ],
+      "title": "Une version effective du théorème de Lindemann-Weierstrass par des méthodes d'indépendance algébrique",
+      "identifier": "arXiv:1607.00579v1",
+      "pinned_version": "v1 (author-posted 2016; published in L’Enseignement Mathématique 59, 2013)",
+      "locator": "Theorem 1.1, printed PDF p. 2",
+      "checked_on": "2026-09-24",
+      "mapping": "Applied to a Q-independent integral-trace basis of exponent frequencies and the explicit integer norm of a frozen spectral discriminant. It gives an astronomically small gap bound only at odd 7-not-dividing-N and no trace cancellation.",
+      "project_sources": [
+        "mathematics/frozen_effective_gap_floor.md",
+        "record/two_continuations_review_20260924.md",
+        "literature/bibliography.md",
+        "mathematics/literal_growing_word_window.md",
+        "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/sources/roy_exact_source_check.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-ROY-2016",
+      "additional_uses": [
+        {
+          "claim": "BGS-FM-029",
+          "source": "mathematics/literal_growing_word_window.md",
+          "scope": "One-exponent degree/height/conjugate/integrality dictionary in the independently accepted triple-log word-window proof; theorem 1.1 freshly checked from exact v1 primary text by extension reviewer."
+        }
+      ]
+    },
+    {
+      "id": "EXT-FORRESTER-1996",
+      "authors": [
+        "P. J. Forrester"
+      ],
+      "title": "Some exact correlations in the Dyson Brownian motion model for transitions to the CUE",
+      "identifier": "arXiv:chao-dyn/9603010",
+      "pinned_version": "v1; Physica A 223 (1996), 365–390",
+      "locator": "Sections 3.1 and 5.2; (3.5)–(3.9), (5.5)–(5.8)",
+      "checked_on": "2026-09-29",
+      "mapping": "Prior circular Dyson clock kernel. Project rederives odd-N normalization and an explicit uniform bound, then applies its quadratic-noise comparison. No novelty for Dyson clock relaxation.",
+      "project_sources": [
+        "mathematics/quadratic_noise_clock_limit.md",
+        "literature/quadratic_noise_sources_20260929.md",
+        "mathematics/clock_structure_and_noise_scale.md",
+        "literature/critical_noise_sources_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-FORRESTER-1996"
+    },
+    {
+      "id": "EXT-FAURE-2007",
+      "authors": [
+        "Frédéric Faure"
+      ],
+      "title": "Semi-classical formula beyond the Ehrenfest time in quantum chaos. (I) Trace formula",
+      "identifier": "arXiv:nlin/0610004",
+      "pinned_version": "v2; Ann. Inst. Fourier 57 (2007), 2525–2599",
+      "locator": "Section 2.2.2; Section 3.2 / Proposition 4; Proposition 11, (68)–(69); Theorem 12",
+      "checked_on": "2026-09-29",
+      "mapping": "Conditional plane fixed-time input. Even-N torus theorem is not directly applicable to odd project dimensions. Exact parity repair is recorded; full source-to-model identification remains conditional. As of 4 October, bounded fixed-time traces are proved independently by the odd-N packet/frame argument; the sharper action-phase adaptation here remains conditional.",
+      "project_sources": [
+        "mathematics/quadratic_noise_fixed_time_input.md",
+        "literature/quadratic_noise_sources_20260929.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-FAURE-2007"
+    },
+    {
+      "id": "EXT-COHEN-2025",
+      "authors": [
+        "Alex Cohen"
+      ],
+      "title": "Fractal uncertainty for discrete two-dimensional Cantor sets",
+      "identifier": "DOI:10.2140/apde.2025.18.743; arXiv:2206.14131v3",
+      "pinned_version": "v3 (5 October 2024); Analysis & PDE 18 (2025), 743-772",
+      "locator": "Theorem 2, printed p. 3; sharpness in Section 5.2 inspected, even-base failure derived internally",
+      "checked_on": "2026-09-30",
+      "mapping": "Both alphabets equal A_M={(r,s):r!=s}; both iterates have side N=M^k and unitary 2D Fourier normalization 1/N. Project geometry excludes orthogonal full affine torus lines for odd M, and derives exact norm 1 at every scale internally for even M>=4 by an explicit supported unit vector. Binary norm is derived internally. Ideal digit model only; no actual doubled-map FUP or nonlinear coordinate-distortion hypothesis is supplied.",
+      "project_sources": [
+        "mathematics/offdiagonal_digit_fup.md",
+        "literature/heisenberg_note_sources.md",
+        "record/heisenberg_note_review_20260930.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-COHEN-2025"
+    },
+    {
+      "id": "EXT-RAINS-2003",
+      "authors": [
+        "Eric M. Rains"
+      ],
+      "title": "Images of eigenvalue distributions under power maps",
+      "identifier": "arXiv:math/0008079; Probability Theory and Related Fields 125 (2003), 522–538",
+      "pinned_version": "arXiv:math/0008079v1 (10 August 2000), full primary PDF",
+      "locator": "Theorem 1.3, equation (8), PDF pp. 2–3",
+      "checked_on": "2026-09-30",
+      "mapping": "For Haar V in U(n), eigenvalues of V^d are the union of d independent Haar spectra of sizes ceil((n-i)/d), 0<=i<d. Project n=p and power d=d_p. Used only for the correct reference block law; not needed for the elementary sector criterion and gives no deterministic block independence or cancellation.",
+      "project_sources": [
+        "mathematics/prime_resonant_sector.md",
+        "literature/prime_resonant_sources.md",
+        "record/claim_ledger.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-RAINS-2003"
+    },
+    {
+      "id": "EXT-DE-2001",
+      "authors": [
+        "Persi Diaconis",
+        "Steven N. Evans"
+      ],
+      "title": "Linear functionals of eigenvalues of random matrices",
+      "identifier": "DOI:10.1090/S0002-9947-01-02800-8",
+      "pinned_version": "Author-hosted Berkeley tech-report 577, 19-page PDF; retrieved 30 September 2026",
+      "locator": "Theorem 2.1(a), printed pp. 3-4",
+      "checked_on": "2026-10-01",
+      "mapping": "Exact Haar-CUE joint trace moments equal Gaussian moments when both weighted degrees are <=N. All sixth, cubic/pair cross and pair/pair moments in the low-band arbitrary-weight variance have degree <=4 max I<=N. No arbitrary-Heisenberg Gaussian independence or deterministic-map theorem follows. TRACE-011 uses background dimension H=N-K and verifies 4bN<=H for the mixed-cluster second/fourth/sixth moments. Its all-band pair covariance and occupancy controls are separately derived by finite determinants, without Gaussian matching beyond the stable range.",
+      "project_sources": [
+        "mathematics/signed_heisenberg_comparison.md",
+        "literature/signed_heisenberg_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/resonant_cubic_density_control.md",
+        "literature/resonant_density_sources.md",
+        "mathematics/fixed_degree_heat_projection.md",
+        "literature/critical_noise_sources_20261005.md",
+        "mathematics/growing_degree_trace_projection.md",
+        "literature/growing_degree_sources_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-DE-2001"
+    },
+    {
+      "id": "EXT-BG-2008",
+      "authors": [
+        "Jean Bourgain",
+        "Alex Gamburd"
+      ],
+      "title": "Uniform expansion bounds for Cayley graphs of SL2(Fp)",
+      "identifier": "Annals of Mathematics 167 (2008), 625–642; https://annals.math.princeton.edu/wp-content/uploads/annals-v167-n2-p07.pdf",
+      "pinned_version": "Published 2008 primary PDF",
+      "locator": "Theorem 1, printed p.626",
+      "checked_on": "2026-10-04",
+      "mapping": "Fixed S,V in SL2(Z) generate a non-elementary subgroup, as witnessed by hyperbolic S,R with disjoint quadratic eigenline fields. Uniform Cayley gap transfers to nontrivial finite-group unitary irreducible representations. Laziness gives the auxiliary HS channel gap; no prescribed-word universality follows.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-BG-2008"
+    },
+    {
+      "id": "EXT-GAE-2007",
+      "authors": [
+        "David Gross",
+        "Koenraad Audenaert",
+        "Jens Eisert"
+      ],
+      "title": "Evenly distributed unitaries: on the structure of unitary designs",
+      "identifier": "arXiv:quant-ph/0611002v2; https://arxiv.org/pdf/quant-ph/0611002",
+      "pinned_version": "v2, 13 May 2007",
+      "locator": "Theorem 2; Section III.B, equation (20), Theorem 6; Section IV.C",
+      "checked_on": "2026-10-04",
+      "mapping": "Prior frame-potential/character identity and Clifford two-design mechanism. Exact even-sector ranks and a full-space orbit-compression gap proof are reconstructed in the project. No quantum-design average is treated as a deterministic word spectral theorem.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-GAE-2007"
+    },
+    {
+      "id": "EXT-DIRICHLET-1837",
+      "authors": [
+        "Peter Gustav Lejeune Dirichlet"
+      ],
+      "title": "There are infinitely many prime numbers in all arithmetic progressions with first term and difference coprime",
+      "identifier": "Original 1837 paper; English translation arXiv:0808.1408v2; https://arxiv.org/pdf/0808.1408",
+      "pinned_version": "v2 translation, 24 November 2014",
+      "locator": "The theorem stated in the opening paragraph, p.1, proved in the original article",
+      "checked_on": "2026-10-04",
+      "mapping": "Use only infinitely many primes p=1 mod20, since gcd(1,20)=1. Fourth-power order divisibility is proved separately. No maximal-order assertion.",
+      "project_sources": [
+        "mathematics/arithmetic_word_expansion_obstruction.md",
+        "literature/expansion_wavepacket_sources_20261004.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-DIRICHLET-1837"
+    },
+    {
+      "id": "EXT-KLZF-2022",
+      "authors": [
+        "Mario Kieburg",
+        "Shi-Hao Li",
+        "Jiyuan Zhang",
+        "Peter J. Forrester"
+      ],
+      "title": "Cyclic Polya Ensembles on the Unitary Matrices and their Spectral Statistics",
+      "identifier": "arXiv:2012.11993v2; DOI:10.1007/s00365-023-09630-8",
+      "pinned_version": "v2, 24 May 2022 (PDF dated 25 May)",
+      "locator": "Proposition 12, (2.4.10), printed p.18; Theorem 7(3), p.13; Proposition 21, (3.2.2)-(3.2.3), pp.33-34",
+      "checked_on": "2026-10-04",
+      "mapping": "Prior finite arbitrary-start circular Brownian biorthogonal kernel used in FLOW-014 and finite identity calibration. Source heat time is project time/(2N), verified by the fundamental-character decay. Prop.21 distinct-spectrum condition retained; project uses gap-independent bounds and finite-N Laplace continuity for confluence. Heat Laurent series analytic on every annulus. No microscopic asymptotic theorem or BGS implication imported; the global contour/Fredholm analysis is a separate project proof.",
+      "project_sources": [
+        "literature/actual_start_dyson_sources_20261004.md",
+        "record/circular_kernel_route_20261004.md",
+        "computations/verification/coboundary_general_start.py",
+        "mathematics/circular_dyson_actual_start.md",
+        "computations/verification/circular_dyson_relaxation.py",
+        "mathematics/local_moment_transport.md",
+        "mathematics/coboundary_all_order_limit.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KLZF-2022"
+    },
+    {
+      "id": "EXT-LEMOINE-2025",
+      "authors": [
+        "Thibaut Lemoine"
+      ],
+      "title": "Almost flat highest weights and application to Wilson loops on compact surfaces",
+      "identifier": "arXiv:2303.11286; https://arxiv.org/pdf/2303.11286",
+      "pinned_version": "arXiv:2303.11286v3 (26 May 2025); exact version PDF retrieved and hashed 6 October 2026; historical title-page date 27 May",
+      "locator": "Section 1.2, printed p.3; Section 2, equations (17)--(18), printed p.10",
+      "checked_on": "2026-10-05",
+      "mapping": "Prior normalized unitary Casimir and character heat multiplier. Project generator is half the normalized Laplacian; highest weight (r,0,...,-r) decays at r(r+N-1)/N. Full Brownian fundamental and determinant rate 1/2; traceless determinant rate zero, fundamental (1-N^-2)/2. Charge-zero characters unchanged. Re-derived analytically in D18--D19; no Yang--Mills asymptotic or deterministic BGS import.",
+      "project_sources": [
+        "mathematics/microscopic_noise_removal.md",
+        "literature/noise_removal_sources_20261005.md",
+        "record/noise_removal_program_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-LEMOINE-2025"
+    },
+    {
+      "id": "EXT-EHL-2018",
+      "authors": [
+        "Matthias Erbar",
+        "Martin Huesmann",
+        "Thomas Leblé"
+      ],
+      "title": "The one-dimensional log-gas free energy has a unique minimiser",
+      "identifier": "arXiv:1812.06929; https://arxiv.org/pdf/1812.06929",
+      "pinned_version": "arXiv:1812.06929v1 (17 December 2018); exact version PDF retrieved and hashed 6 October 2026; historical title-page date 18 December",
+      "locator": "Theorem 1 and Corollary 1.1, printed p.2; Definition 2.9, equation (2.17), and Definition 2.10, equation (2.18), printed p.7",
+      "checked_on": "2026-10-05",
+      "mapping": "Source definition of specific relative entropy to unit-intensity Poisson and prior uniqueness of Sine_beta as the free-energy minimizer at intensity one. The project separately proves infinite entropy of every raw finite deterministic periodic spectral field. The source does not supply minimizing property for the actual map, finite-entropy near-minimality of those raw fields or an entropy upper bound for a weak limit.",
+      "project_sources": [
+        "mathematics/microscopic_noise_removal.md",
+        "literature/noise_removal_sources_20261005.md",
+        "record/noise_removal_program_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-EHL-2018"
+    },
+    {
+      "id": "EXT-SOSH-2000",
+      "authors": [
+        "Alexander Soshnikov"
+      ],
+      "title": "Determinantal random point fields",
+      "identifier": "arXiv:math/0002099v4",
+      "pinned_version": "v4, 28 November 2000",
+      "locator": "Section 3, Theorem 7, printed pp.38-42; statement p.40",
+      "checked_on": "2026-10-05",
+      "mapping": "The intensity-one sine Fourier projection on [-1/2,1/2] is Hermitian, a positive contraction and locally trace class. Theorem 7 supplies spatial translation ergodicity of its determinantal probability law. Mean ergodic averaging for L2 local factorial observables is used after the internally proved chain moments. The periodic conditional-law Jensen step and order of limits are project proofs; no temporal Dyson ergodicity or deterministic BGS identification is imported.",
+      "project_sources": [
+        "mathematics/coboundary_all_order_limit.md",
+        "literature/all_order_sources_20261005.md",
+        "literature/return_local_limits_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/return_trace_obstruction.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-SOSH-2000",
+      "additional_uses": [
+        {
+          "role": "proof_input_for_sine_ergodicity_example",
+          "project_sources": [
+            "mathematics/return_trace_obstruction.md"
+          ],
+          "mapping": "Sine projection kernel is translation invariant and a locally trace-class Hermitian positive contraction. Theorem 7 supplies ergodicity/mixing, not convergence for the deterministic map.",
+          "checked_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": "EXT-KT-2009",
+      "authors": [
+        "Makoto Katori",
+        "Hideki Tanemura"
+      ],
+      "title": "Non-Equilibrium Dynamics of Dyson's Model with an Infinite Number of Particles",
+      "identifier": "arXiv:0812.4108v3; DOI:10.1007/s00220-009-0912-3",
+      "pinned_version": "v3, 19 June 2009",
+      "locator": "(1.1), (1.5)-(1.7), pp.1,4; Theorem 2.2, p.7; Section 4.3, pp.20-21",
+      "checked_on": "2026-10-05",
+      "mapping": "Prior integer-lattice Dyson relaxation kernel and sine attraction, credited as known. Source Brownian spatial time is project Nt/(4 pi^2); transpose the equal-time kernel and shift the uniform lattice phase. FLOW-018 independently derives the finite circular limit, without importing line truncation topology or a new infinite SDE construction.",
+      "project_sources": [
+        "mathematics/clock_structure_and_noise_scale.md",
+        "literature/critical_noise_sources_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KT-2009"
+    },
+    {
+      "id": "EXT-GHANMI-2017",
+      "authors": [
+        "Allal Ghanmi"
+      ],
+      "title": "Mehler's formulas for the univariate complex Hermite polynomials and applications",
+      "identifier": "arXiv:1707.06969v1; DOI:10.1002/mma.4545",
+      "pinned_version": "arXiv v1, 21 July 2017, five-page primary PDF; inspected 5 October 2026",
+      "locator": "Generating function (2.4), printed p.2; Theorem 4.1 and (4.5), printed p.4",
+      "checked_on": "2026-10-05",
+      "mapping": "Prior complex Hermite/Mehler identity, credited without world-priority claim. H^[m]_(a,b)=m^(a+b)H^(1/m)_(a,b); substitute source nu=1/m and u=v=rm, 0<r<1, giving factor (1-r^2)^-1 and exponent 2r|z|^2/[m(1+r)]. FLOW-020 also reconstructs this positive-real specialization via a Gaussian kernel and Parseval. No larger complex parameter range, growing Haar CLT or deterministic universality imported. Journal metadata only corroborated; no uninspected PDF byte hash.",
+      "project_sources": [
+        "mathematics/growing_degree_trace_projection.md",
+        "literature/growing_degree_sources_20261005.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-GHANMI-2017"
+    },
+    {
+      "id": "EXT-CC-2013",
+      "authors": [
+        "Guy Cohen",
+        "Jean-Pierre Conze"
+      ],
+      "title": "Central limit theorem for commutative semigroups of toral endomorphisms",
+      "identifier": "arXiv:1304.4556v2",
+      "pinned_version": "arXiv:1304.4556v2 (2013-05-16)",
+      "locator": "Theorem 2.18, printed pp.23–24; AC0 definition p.16; degenerate-limit footnote 3",
+      "checked_on": "2026-10-06",
+      "mapping": "Hyperbolic A transpose on the two-torus is totally ergodic; real mean-zero F4-finite symbol belongs to AC0; intervals form a Folner sequence. Gives qualitative Haar CLT, no periodic-point comparison or rate.",
+      "project_sources": [
+        "mathematics/periodic_point_trace_comparison.md"
+      ],
+      "dependency_role": "proof_input",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-CC-2013"
+    },
+    {
+      "id": "EXT-DR-2009",
+      "authors": [
+        "Michael A. Dritschel",
+        "James Rovnyak"
+      ],
+      "title": "The operator Fejer-Riesz theorem",
+      "identifier": "arXiv:0903.3639v1",
+      "pinned_version": "arXiv:0903.3639v1 (2009-03-21)",
+      "locator": "Section 1 scalar Fejer–Riesz theorem, printed p.2",
+      "checked_on": "2026-10-06",
+      "mapping": "Strictly positive scalar finite Laurent polynomial factors as modulus square of polynomial of the same degree. Real coefficient choice follows from the project conjugate root argument.",
+      "project_sources": [
+        "mathematics/pell_sharp_orbit_coercivity.md"
+      ],
+      "dependency_role": "proof_input_with_internal_reproof",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-DR-2009"
+    },
+    {
+      "id": "EXT-PY-2015",
+      "authors": [
+        "Aldo Procacci",
+        "Sergio A. Yuhjtman"
+      ],
+      "title": "Convergence of Mayer and Virial expansions and the Penrose tree-graph identity",
+      "identifier": "arXiv:1508.07379v1",
+      "pinned_version": "arXiv:1508.07379v1 (2015-08-28)",
+      "locator": "Proposition 1 (Penrose tree-graph identity), printed pp.5–6",
+      "checked_on": "2026-10-06",
+      "mapping": "Arbitrary complex h(edge); take h=1+f, with |h|<=1. Source identity is algebraic; project tree majorant separately supplies convergence/nonvanishing and countable-species passage.",
+      "project_sources": [
+        "mathematics/fixed_harmonic_return_gas.md"
+      ],
+      "dependency_role": "attribution_with_internal_reproof",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-PY-2015"
+    },
+    {
+      "id": "EXT-DEMNI-2016",
+      "authors": [
+        "Nizar Demni"
+      ],
+      "title": "Lagrange inversion formula, Laguerre polynomials and the free unitary Brownian motion",
+      "identifier": "arXiv:1606.03755v3",
+      "pinned_version": "arXiv:1606.03755v3 (2016-06-21)",
+      "locator": "Equation (1), printed p.1",
+      "checked_on": "2026-10-06",
+      "mapping": "Set source k=m and source t=tau^2; Fourier moments e^(-mt/2)L_(m-1)^(1)(mt)/m identify the free unitary Brownian marginal. Arithmetic computation R18–R19 is internal.",
+      "project_sources": [
+        "mathematics/pell_harmonic_returns.md"
+      ],
+      "dependency_role": "law_identification",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-DEMNI-2016"
+    },
+    {
+      "id": "EXT-DH-2011",
+      "authors": [
+        "Nizar Demni",
+        "Taoufik Hmidi"
+      ],
+      "title": "Spectral distribution of the free unitary Brownian motion: another approach",
+      "identifier": "arXiv:1103.4693v1",
+      "pinned_version": "arXiv:1103.4693v1 (2011-03-24)",
+      "locator": "Section 1 printed pp.1–2; Sections 4–5, endpoint computation pp.9–10",
+      "checked_on": "2026-10-06",
+      "mapping": "For 0<t<4 convert radian support |theta|<=sqrt(t(4-t))/2+arccos(1-t/2) to normalized circle. Complement Haar measure is 1-b(t)/pi. Local intensity theorem is internal.",
+      "project_sources": [
+        "mathematics/return_trace_obstruction.md"
+      ],
+      "dependency_role": "proof_input_for_comparison_application",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-DH-2011"
+    },
+    {
+      "id": "EXT-COSY-2024",
+      "authors": [
+        "Guillaume Cébron",
+        "Patrick Oliveira Santos",
+        "Pierre Youssef"
+      ],
+      "title": "Graphon-Theoretic Approach to Central Limit Theorems for epsilon-Independence",
+      "identifier": "arXiv:2411.13062v2",
+      "pinned_version": "arXiv:2411.13062v2 (2024-11-29)",
+      "locator": "Theorem 1.1, Section 2; Proposition 2.6; Sections 4–5",
+      "checked_on": "2026-10-06",
+      "mapping": "Graphon crossing-pair moments are prior. No finite epsilon-independence hypothesis is claimed for Weyl arrays. Proposition 2.6 requires sup|w|<1 and does not establish a density for indicator w_beta at beta<1/2.",
+      "project_sources": [
+        "mathematics/pell_harmonic_transition.md"
+      ],
+      "dependency_role": "attribution_not_arithmetic_proof_input",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-COSY-2024"
+    },
+    {
+      "id": "EXT-KM-2017-BOX",
+      "authors": [
+        "A. V. Kolesnikov",
+        "E. Milman"
+      ],
+      "title": "Brascamp-Lieb type inequalities on weighted Riemannian manifolds with boundary",
+      "identifier": "arXiv:1310.2526v7; DOI:10.1007/s12220-016-9736-5",
+      "pinned_version": "arXiv v7, 23 November 2017",
+      "locator": "Theorem 3.1(1), printed p. 13; equation (3.2), printed p. 14",
+      "checked_on": "2026-10-06",
+      "mapping": "Euclidean metric and generalized dimension infinity give inverse-Hessian variance; Hess V>=lambda I on a convex box gives constant lambda^-1 by smooth convex exhaustion. No Neumann condition on tested f. Real tilted curvature and raw moments are established separately in the local proof. The separate finite-band contour theorem reuses this local-box inequality after its own explicit radius-sqrt(2) curvature checks; the inequality is not a global-contour theorem or a premise of the elementary TRACE-017 perturbation reduction.",
+      "project_sources": [
+        "mathematics/rotated_local_first_loop.md",
+        "literature/convex_box_poincare_check.md",
+        "mathematics/global_rotated_box_trace.md"
+      ],
+      "source_sha256": "f86893b5051a150a6827fd0523aa3733c5970a3cccc44b17a794f58cc4601727",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KM-2017-BOX",
+      "dependency_role": "external inequality for the supporting conditioned local-box theorem only"
+    },
+    {
+      "id": "EXT-MANE-1981",
+      "authors": [
+        "Ricardo Mañé"
+      ],
+      "title": "A proof of Pesin's formula, with mandatory 1983 errata",
+      "identifier": "ETDS1(1981),95–102, DOI10.1017/S0143385700001188; Errata ETDS3(1983),159–160, DOI10.1017/S0143385700001863",
+      "pinned_version": "Published Cambridge 1981 PDF together with complete published1983errata",
+      "locator": "1981 printedp95 equation(2); mandatory1983errata printedpp159–160, all three items",
+      "checked_on": "2026-10-06",
+      "mapping": "For actual smooth area-preserving Anosov G on the compact boundaryless torus, normalized area is absolutely continuous and invariant; smooth DG is Holder. The entropy formula gives h_area(G)=integral log JuG, without ergodicity. With Ruelle and mixing Gibbs uniqueness this identifies the pressure-zero area measure used for norm-uniform weighted periodic EQ. Errata correct intermediate estimates and add no hypothesis to equation(2).",
+      "project_sources": [
+        "mathematics/weighted_periodic_equidistribution.md",
+        "mathematics/selected_weighted_coefficient.md",
+        "literature/smooth_area_entropy_supplement_20261006.md",
+        "record/weighted_periodic_review.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-MANE-1981"
+    },
+    {
+      "id": "EXT-KELMER-2008",
+      "authors": [
+        "Dubi Kelmer"
+      ],
+      "title": "On matrix elements for the quantized cat map modulo prime powers",
+      "identifier": "arXiv:0802.3237v2; https://arxiv.org/pdf/0802.3237v2",
+      "pinned_version": "arXiv v2 header18September2008; body first-page datelineNovember8,2018 retained as an observed discrepancy",
+      "locator": "Lemma3.2, printedp10; inert case Section3.2",
+      "dependency_role": "prior-attribution-only",
+      "mapping": "Prior inert-torus multiplicity-free mechanism. Actual cyclic-generator/CRT distributions and jet reductions are independently proved in the project. The cited diagonal matrix-element result does not supply off-diagonal cubic-related character compressions. No new external theorem is imported into FM026.",
+      "project_sources": [
+        "literature/cat_multiplicity_prior_source.md",
+        "mathematics/uniform_cat_multiplicity.md",
+        "mathematics/even_new_sector_first_jet.md"
+      ],
+      "checked_on": "2026-10-06",
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KELMER-2008"
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "authors": [
+        "Martin R. Zirnbauer"
+      ],
+      "title": "Color-Flavor Transformation Revisited",
+      "identifier": "arXiv:2109.10272",
+      "pinned_version": "v1",
+      "locator": "Table 1 and (4.36)--(4.40), printed pp.31--32; surface operator (4.29); stable range (2.55)--(2.58)",
+      "checked_on": "2026-10-07",
+      "mapping": "Imported independent exact-source reviews reconstruct the color-one coherent projector and boundary completion; actual dual pairing avoids the source index typo. Used only for completed finite-pair compact identity on its stated coherent-section domain, not positive supermeasure or universality. Full PDF remains external without established redistribution license.",
+      "project_sources": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/compact_phase_pair_identity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ]
+    },
+    {
+      "id": "EXT-BHATIA-2002",
+      "authors": [
+        "Rajendra Bhatia"
+      ],
+      "title": "On the exponential metric increasing property",
+      "identifier": "ISI preprint isid/ms/2002/14",
+      "pinned_version": "10 May 2002 primary institutional preprint; SHA256 dbd04403787b5ff2854d48b4ad83d14b0f46f76e96e7b790006e8843976d5f13",
+      "locator": "Theorem 4, equations (15)--(16), printed p.5",
+      "checked_on": "2026-10-07",
+      "mapping": "Imported separately accepted scalar/block audits check generalized EMI for complex Hermitian A,B and every unitarily invariant norm. Gives all-Ky-Fan displacement majorization in ordinary-body coercivity; no supersymmetric positivity or BGS consequence. Cache omitted without redistribution license.",
+      "project_sources": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ]
+    }
+  ]
+}

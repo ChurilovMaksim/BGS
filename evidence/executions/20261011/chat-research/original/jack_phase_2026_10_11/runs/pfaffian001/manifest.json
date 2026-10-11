@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "claim_id": "CSE-fourth-cumulant-and-Heisenberg-form-factor-controls-2026-10-11",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "scripts/pfaffian_controls.py",
+    "runs/pfaffian001/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "CSE second and fourth power-trace moments: independent Vandermonde^4 Fourier constant coefficients equal rational Pfaffian trace-log; exact harmonic mean, coefficient mass, critical denominator clipping and cumulant bound.",
+    "coefficient_domain": "Python arbitrary integers and Fraction rational arithmetic.",
+    "conventions": "N distinct CSE pairs; p_n=half trace; doubled half-integer q=2k odd; B_s sends q to q-2s with coefficient(q-s)/q; mixed cumulant=4[u^2 v^2] logZ.",
+    "inputs": [
+      "scripts/pfaffian_controls.py"
+    ],
+    "bounds": {
+      "direct_N": [
+        2,
+        3,
+        4
+      ],
+      "direct_n": "1..3N",
+      "larger_N": [
+        5,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "larger_n": "1,floor(N/2),N-1,N,N+1,2N-1,2N,3N",
+      "coefficient_targets": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "non_claims": [
+      "Finite checks do not establish all N and n.",
+      "No deterministic BGS system tested.",
+      "Concentration is pointwise in time; not a maximum over O(N) times."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none: exhaustive rational enumeration",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-11T06:05:06.145985+00:00",
+    "runtime_seconds": 0.31811,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/pfaffian_controls.py",
+    "audit_tools/run_experiment.py",
+    "audit_tools/validate_manifest.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/pfaffian_controls.py",
+      "sha256": "93502572ae0c65aeb26ec13abe79bdfb13a6d339d4205101ea6ad1c95d3017da",
+      "sha256_after": "93502572ae0c65aeb26ec13abe79bdfb13a6d339d4205101ea6ad1c95d3017da"
+    },
+    {
+      "path": "audit_tools/run_experiment.py",
+      "sha256": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d",
+      "sha256_after": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d"
+    },
+    {
+      "path": "audit_tools/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "sha256_after": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    }
+  ],
+  "output_directory": "runs/pfaffian001",
+  "declared_results": [
+    "runs/pfaffian001/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/pfaffian001/stdout.txt",
+      "sha256": "6074f9107fb6d060b35d8939650ce99e5b2830efe31a77fabb46db54f545d3d7",
+      "kind": "log"
+    },
+    {
+      "path": "runs/pfaffian001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/pfaffian001/results.json",
+      "sha256": "7f394d49c8e254536d49ce8c380962382f164c057b419005b88af27d55c99c8d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

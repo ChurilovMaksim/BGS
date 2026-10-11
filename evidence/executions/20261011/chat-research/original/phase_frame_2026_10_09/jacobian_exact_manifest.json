@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "claim_id": "jacobian_exact_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/tmp/bgs_jacobian_exact"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "10 exact graph-reflection witnesses; 120 phase derivatives; unitary input, identity cavity, rank m\u00b2 minor with determinant one.",
+    "coefficient_domain": "Gaussian rationals with checked 128-bit arithmetic",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "jacobian_exact.cpp",
+        "sha256": "b1d7d44e9b1760e662e29abc228b92e3f2eaa687f6414607c787c772cf7a867a"
+      }
+    ],
+    "bounds": {
+      "m_min": 1,
+      "m_max": 5,
+      "N": "m\u00b2 or m\u00b2+2",
+      "cases": 10,
+      "phase_channels": 120
+    },
+    "non_claims": [
+      "Finite witness control is not the analytic null-set or submersion proof.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-09T08:34:23.493385+00:00",
+    "runtime_seconds": 0.2529103599999871,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "jacobian_exact_execution.log",
+      "sha256": "d9fc08aa287906e33593d84da70035dda31110a6cb705259192f091d687daf98"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs."
+  ]
+}

@@ -69,7 +69,7 @@ def main():
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument('--self-test', action='store_true')
     args = parser.parse_args()
-    path = args.root / 'evidence/source_metadata/registry_metadata_20261006.json'
+    path = args.root / 'evidence/source_metadata/registry_metadata_20261011.json'
     digest_path = path.with_suffix('.sha256')
     expected = digest_path.read_text().split()[0]
     if hashlib.sha256(path.read_bytes()).hexdigest() != expected:

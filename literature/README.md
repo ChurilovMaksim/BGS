@@ -86,3 +86,9 @@ project does not independently certify the full graph proof. The
 has been reconciled to this distinction. The original
 [BGS 1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) is historically
 motivating numerical evidence, not a theorem for the present family.
+
+## Checked 11 October research
+
+The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+
+[Primary circular-phase and stopping sources](circular_phase_sources_20261011.md) pin seven additional references. The current offline metadata cache is registry_metadata_20261011.json; the 6 October cache remains immutable.

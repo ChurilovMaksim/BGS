@@ -4,11 +4,22 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (8 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (11 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
+
+## Checked continuation, 11 October
+
+[The new checkpoint](record/chat_integration_20261011.md) proves maximal
+full local-process transport for the maintained deterministic map on an
+observable-flow interval $o(\sqrt{\log N})$, physical-source comparison in $L^2$,
+and every fixed mixed product of normally absorbed sources. Separate theorems
+give frozen compatible-phase Sine-beta laws for Haar circular backgrounds
+and an all-order critical CSE Gaussian limit. Their hypotheses are explicit;
+the initial deterministic spectral law and signed TRACE-005 remain open.
+
 
 ## What the conjecture asks
 
@@ -127,8 +138,10 @@ matching along $DS_m e^{ixH_m/m}$ compares the normalized scalar resolvent
 in $L^1$ with that of $e^{ix/m}DS_m$. Convergence is locally uniform
 for $\mathrm{Re}\,s>0$ and bounded real $x$, including each fixed derivative
 in the absorbed scalar parameter $s$. Repeated eigenvalues are included.
-The anisotropic physical source and mixed-source products require
-additional inputs; no deterministic $D=I$ limit is proved.
+The 11 October continuation proves physical-source comparison in $L^2$ and
+every fixed normally absorbed source product under its stated hypotheses.
+Higher physical-source products and the actual cavity hypotheses remain open;
+no deterministic $D=I$ limit is proved.
 
 These are self-contained project proofs with independent internal
 reconstruction. External priority is not established. The
@@ -145,4 +158,4 @@ The [consolidated research manuscript](manuscript/README.md) is a **living, full
 
 [Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [How to cite](CITATION.cff)
 
-The [8 October 2026 execution packet](evidence/executions/20261008/phase-channel-jet/README.md) records bounded internal checks, an active Lean 4 build, and a 280-page manuscript build. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
+The [11 October 2026 execution packet](evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the current manuscript build. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.

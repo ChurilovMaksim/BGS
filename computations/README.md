@@ -135,3 +135,7 @@ python computations/verification/wave2_checked_replay.py --output-dir build/wave
 python computations/verification/wave2_portable_replay.py --output-dir build/wave2-v2
 ``` All established source protection stays active.
 This is a numerical reproducibility correction, not a new BGS theorem.
+
+## Checked 11 October research
+
+The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.

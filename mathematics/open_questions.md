@@ -1,6 +1,17 @@
 # Open mathematical obligations
 
-## Current priorities at a glance (8 October 2026)
+## Frontier after the checked 11 October integration
+
+Maximal microscopic path stability does not evaluate the initial process.
+The balanced phase law still needs the signed overlap defect to vanish;
+the deterministic problem still needs complete signed TRACE-005 comparison
+and noise removal at the local-relaxation scale. The scalar cavity law is not
+supplied by the covariance, clock moment or source-continuation theorems.
+The all-time cavity entry-flatness probability and stronger clock-law induction
+remain unproved. [Exact new boundaries](../record/chat_integration_20261011.md).
+
+
+## Current priorities at a glance (11 October 2026)
 
 The table distinguishes the **terminal fixed-model problem**, possible
 intermediate proof routes, and mathematically independent directions.
@@ -13,15 +24,15 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Reconstruct the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) delay/covariance/source arguments | **Verification-pending**, not an established theorem and not known false |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved; delay barriers and killed second/third upper bounds require all-time flatness. The flatness probability and stronger clock laws remain unproved |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.
 The [full manuscript](../manuscript/README.md) is a developing research
 account, while older dated observations below remain accessible for
-scientific provenance. The current Lean scope is **20 active modules /
-23 Lake jobs** at the [8 October execution](../formalization/README.md);
-older registered receipts mentioning 17 modules describe an earlier build.
+scientific provenance. The current Lean scope is **23 active modules /
+26 Lake jobs** at the [11 October execution](../evidence/executions/20261011/chat-research/fresh/lean_execution.json);
+older receipts retain the smaller scope of their original builds.
 No analytic BGS conclusion is formalized.
 
 ## Frontier after the 8 October continuation
@@ -33,9 +44,10 @@ scalar L1 transport along bounded real unitary flows. These three subsidiary
 obligations are no longer open.
 
 The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
-verification-pending: reconstruct its joint input/output delay barriers,
-killed second-clock moment, stopped ordinary-prefix covariance and original
-phase physical-source continuation. Then identify the actual retained scalar
+verification-pending. The 11 October results reconstruct source covariance,
+physical-source L2 continuation and conditional joint delay barriers with
+killed second/third upper bounds. Establish their actual cavity hypotheses,
+the flatness probability and the stronger clock-law induction. Then identify the retained scalar
 cavity law, control source products and the signed undamped/high-switch
 comparison, and close every-fixed-order TRACE-005 for the unchanged frozen
 map. Channel-norm decay cannot replace spectral trace extraction.

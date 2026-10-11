@@ -1,0 +1,122 @@
+\section{Maximal microscopic paths and compatible circular phase laws}
+\label{sec:chat-research-20261011}
+This checkpoint records the checked 8--11 October continuation. Complete
+proofs and exact boundaries are in the mathematical corpus and the
+11 October integration record. Internal review and finite
+controls do not establish external priority or deterministic BGS universality.
+
+\subsection{A deterministic maximal path bound (TRACE-072)}
+Let $U_N$ be unitary, $B_N=B_N^*$, $\operatorname{Tr}B_N=0$ and
+$\|B_N\|_{\rm op}\le C$. Put $U_N(x)=U_Ne^{ixB_N/N}$ and
+\[
+ A_{N,T}=T^{-1}\sum_{k=0}^{T-1}U_N^{-k}B_NU_N^k,
+ \qquad v_{N,T}=\|A_{N,T}\|_F/\sqrt N.
+\]
+For the periodically unfolded point process with one shared uniform circle
+origin, use the bounded vague-topology Laplace metric $d_L$ specified in
+\texttt{deterministic\_path\_transport\_20261011.md}. Then
+\[
+ \mathbb E_\phi\sup_{|x|\le R}
+ d_L(\Xi_N(x;\phi),\Xi_N(0;\phi))
+ \le \frac{R v_{N,T}}\pi+
+ \frac{C^2R^2(T-1)}{2\pi N}.
+\]
+At multiplicities, the eigenangle velocities are the eigenvalues of the
+compression of $B_N/N$. Full eigenspace pinching fixes the time average;
+unitary-power telescoping gives
+\[
+ \sum_j|\theta_j'(x)|\le v_{N,T}+C^2|x|(T-1)/N.
+\]
+Common-origin averaging of a periodized test derivative contributes
+$\|f'\|_1/(2\pi)$; integrating on $[-R,R]$ proves the bound. No level-spacing
+denominator or simple-spectrum assumption occurs.
+
+For a fixed smooth exactly centered observable of the maintained map,
+FM-018 and the polar-WKB trace pairing give
+$v_{N,T}=O((\log N)^{-1/2})$ for sufficiently small $T=c\log N$.
+Thus every $R_N=o(\sqrt{\log N})$ is permitted. The time-average endpoint
+transfer is already in the maintained ergodic-transfer supplement. The added
+conclusion is the maximal path and growing interval, not identification of
+the initial local spectral law.
+
+The estimate also survives the prior microscopic rounding construction.
+For the same observable and $\epsilon=\|V_N-U_N\|_{\rm op}$,
+power telescoping gives
+\[
+ |v_{N,T}(V_N,B_N)-v_{N,T}(U_N,B_N)|\le C(T-1)\epsilon.
+\]
+Thus $O(N^{-1})$ rounding preserves the logarithmic maximal-path conclusions
+for every fixed smooth observable. The prior construction can preserve its
+coarse controls and prescribed low-trace window while violating a fixed
+signed CUE pair target. These combined abstract controls still leave that
+target undetermined; the rounded operator changes the exact quantization.
+
+\subsection{Phase paths and physical sources (TRACE-057--060,071)}
+For $W_x=DS_me^{ixH_m/m}$, $\operatorname{Tr}H_m=m$ and
+$\operatorname{Tr}H_m^2\le C_Hm$, the averaged full pinching norm
+$\beta_{m,R}$ on traceless matrices gives the centered bound
+\[
+ \mathbb E_D\sup_{|x|\le R}d_L(\Xi_m(x),\Xi_m(0))
+ \le (R/\pi)\sqrt{(C_H-1)\beta_{m,R}}.
+\]
+Endpoint flatness $\delta_m\to0$ and a fixed intensity singular gap imply
+vanishing on intervals with
+$R_m^2\log\log(1/\delta_m)/\log(1/\delta_m)\to0$.
+Every fixed normally absorbed source product and derivative transfers by
+the all-order source bounds and interpolation. The physical anisotropic
+source theorem is only asserted in $L^2$.
+
+For a strict contraction $F$, $K=(D^*-F)^{-1}$ and arbitrary complex $B$,
+the exact covariance satisfies
+\[
+ \mathbb E|\operatorname{Tr}BK|^2
+ \le\min\{\operatorname{Tr}[B(I-F^*F)^{-1}B^*],
+          \operatorname{Tr}[B^*(I-FF^*)^{-1}B]\}.
+\]
+The joint Schur delay barrier uses stopped matrix Freedman
+\cite{Tropp2011Chat} conditional on all-time entry flatness. Its killed
+second and third moments are upper bounds, not equality laws. Stronger
+Schroeder moment inductions remain verification-pending.
+
+\subsection{Frozen circular backgrounds (TRACE-064,067--070)}
+For a nonzero balanced Laurent Jack signature, $\alpha>0$ and
+$K=\min(\lambda_1,-\lambda_N)\ge1$, the constant-coefficient ratio obeys
+\[
+ \frac{c_0}{P_\lambda(1^N)}\le
+ \left(1+\frac{\alpha E_\lambda}{2K}\right)^{-1}
+ \le\frac1{N+\alpha K}\le\frac1{N+\alpha}.
+\]
+The highest-root signature is the unique final equality mode. Spherical
+identification \cite{OO1997Chat,Matsumoto2007Chat} gives, for spectral
+$f\in L^2$ and $\beta=1,2,4$, $\alpha=2/\beta$,
+\[
+ \operatorname{Var}_Q\mathbb E_D f(DQ)
+ \le \operatorname{Var}_{\mathrm{circ},\beta}(f)/(N+\alpha).
+\]
+CSE uses $N$ paired phases and half traces. Circular local convergence
+\cite{VV2017Chat} then yields the full conditional weak Sine-$\beta$ law
+in probability over the once-sampled background $Q$. This is not a theorem
+for a prescribed deterministic scattering matrix. The all-degree one-sided
+Jack norm bound uses \cite{JM2015Chat} at its stated scope.
+
+The exact CUE variance, CSE second/fourth cumulants and limiting curves
+are prior formulas of \cite{HSW1999Chat}. The written all-order critical
+calculation proves $p_n/\sqrt{\mathbb E|p_n|^2}$ converges to a standard
+complex Gaussian whenever $n/N\to1$, $d=|n-N|=o(N)$ and
+$\log[N/(d+1)]\to\infty$, with compatible frozen-phase convergence.
+The complete CUE/CSE form-factor curves converge in mean $L^2(0,T)$ using
+$n=\lceil N\tau\rceil$. This does not assert a temporal supremum estimate;
+the logarithmic CSE critical peak is integrable in $L^2$.
+
+\subsection{Finite-field coherence and exact boundaries (TRACE-061--066)}
+The signed finite-field Fourier calculus gives a leading growing ramp for
+$n=o(N^{1/8})$ and the symmetric first correction on $n=o(N^{1/9})$.
+A proposed $N^{1/7}$ window is unconfirmed. Birthday-rank Poisson control
+uses \cite{AGG1989Chat} with its TV convention converted explicitly.
+Flat clock completions can preserve intensity mixing and exact frame designs
+while changing clock--eigenbasis coupling. These are qualified obstructions
+in other constructed families, not counterexamples to the literal map.
+
+The complete balanced phase law, the scalar cavity microscopic law, signed
+Heisenberg TRACE-005 and deterministic BGS remain open. None of the preceding
+path comparisons evaluates the initial microscopic process.

@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/schur_ssyt_control.cpp",
+      "-o",
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact002/schur_ssyt_control"
+    ],
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact002/schur_ssyt_control"
+    ],
+    "stdout": "{\"all_passed\":true,\"cases\":[{\"N\":2,\"lambda\":[2,-2],\"dimension\":5,\"zero_weight\":1},{\"N\":2,\"lambda\":[1,-1],\"dimension\":3,\"zero_weight\":1},{\"N\":3,\"lambda\":[2,0,-2],\"dimension\":27,\"zero_weight\":3},{\"N\":3,\"lambda\":[2,-1,-1],\"dimension\":10,\"zero_weight\":1},{\"N\":3,\"lambda\":[1,1,-2],\"dimension\":10,\"zero_weight\":1},{\"N\":3,\"lambda\":[1,0,-1],\"dimension\":8,\"zero_weight\":2},{\"N\":4,\"lambda\":[2,2,-2,-2],\"dimension\":105,\"zero_weight\":3},{\"N\":4,\"lambda\":[2,1,-1,-2],\"dimension\":175,\"zero_weight\":7},{\"N\":4,\"lambda\":[2,0,0,-2],\"dimension\":84,\"zero_weight\":6},{\"N\":4,\"lambda\":[2,0,-1,-1],\"dimension\":45,\"zero_weight\":3},{\"N\":4,\"lambda\":[1,1,0,-2],\"dimension\":45,\"zero_weight\":3},{\"N\":4,\"lambda\":[1,1,-1,-1],\"dimension\":20,\"zero_weight\":2},{\"N\":4,\"lambda\":[1,0,0,-1],\"dimension\":15,\"zero_weight\":3}]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/exact_checks.py",
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact002/cpp_results.json",
+      "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact002/results.json"
+    ],
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/exact_checks.py\", line 196, in <module>\n    main(*sys.argv[1:])\n  File \"/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/exact_checks.py\", line 172, in main\n    assert var==expected\n           ^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]

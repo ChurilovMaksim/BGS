@@ -100,3 +100,22 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [Direct real-flow scalar transport](../../phase_channel_real_flow.md) (TRACE-056): normal scalar absorption and L1 comparison, including each fixed derivative.
 
 [The submitted deep-source hierarchy disposition](../../../record/research_checkpoint_20261008.md) leaves TRACE-055 verification-pending. Channel operator norm does not identify the scalar cavity law or TRACE-005.
+
+## Checked 11 October continuations
+
+- [Arbitrary-source phase covariance](../../source_covariance_20261011.md) (BGS-TRACE-057).
+- [Integrable all-order phase absorption](../../integrable_phase_absorption_20261011.md) (BGS-TRACE-058).
+- [Anisotropic physical-source transport](../../physical_source_transport_20261011.md) (BGS-TRACE-059).
+- [Joint incoming and outgoing delay bootstrap](../../delay_bootstrap_20261011.md) (BGS-TRACE-060).
+- [Finite frame identities, Stiefel threshold and clock-basis obstruction](../../fresh_phase_average_20261011.md) (BGS-TRACE-061).
+- [Flat completion with arbitrary clock law](../../flat_completion_20261011.md) (BGS-TRACE-062).
+- [Global noncommuting ordinary-body coercivity](../../nonlinear_coercivity_20261011.md) (BGS-TRACE-063).
+- [Sharp maximal-torus contraction for compact simple groups](../../torus_contraction_20261011.md) (BGS-TRACE-064).
+- [Signed finite-field cycle and collision calculus](../../coherence_form_factor_20261011.md) (BGS-TRACE-065).
+- [Birthday rank law and thinned collision limit](../../previous_rank_results_20261011.md) (BGS-TRACE-066).
+- [Sharp balanced Laurent Jack coefficient bound](../../jack_coefficient_theorem_20261011.md) (BGS-TRACE-067).
+- [Frozen circular phase laws in the three symmetry classes](../../phase_contraction_20261011.md) (BGS-TRACE-068).
+- [All-order critical CSE trace limit](../../exact_cumulants_20261011.md) (BGS-TRACE-069).
+- [Complete CUE and CSE form-factor curves](../../form_factor_curve_20261011.md) (BGS-TRACE-070).
+- [Maximal phase point-process paths and all fixed normal-source products](../../laplace_path_transport_20261011.md) (BGS-TRACE-071).
+- [Deterministic maximal microscopic observable flow](../../deterministic_path_transport_20261011.md) (BGS-TRACE-072).

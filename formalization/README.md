@@ -79,3 +79,9 @@ Earlier receipts, including the [seven-primary aggregate build](../evidence/form
 and [September review](../record/referee_audit_20260908.md), retain their
 original scope and provenance. A later aggregate build does not strengthen
 the mathematical proposition certified by an older module.
+
+## Checked 11 October research
+
+The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+
+The three new Std kernels PhaseFrameWitness, TorusDimensionBound and ActiveRankDefect were successfully compiled with Lean 4.33.1. They cover an integer determinant and two natural-number inequality fragments only. JackArithmeticCore remains an uncompiled Mathlib draft. The local compiler required an application-path portability adapter; its source and exact scope are in the 11 October execution packet. No kernel function is replaced.

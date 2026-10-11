@@ -1,6 +1,6 @@
 {
   "schema": "bgs-evidence-index-v1",
-  "updated": "2026-10-06",
+  "updated": "2026-10-11",
   "classes": {
     "finite-certificates": {
       "canonical_prefix": "evidence/certificates/",
@@ -21,7 +21,10 @@
         "evidence/recovery_20260920/",
         "evidence/recovery_20260921/"
       ],
-      "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance."
+      "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance.",
+      "current_paths": [
+        "evidence/executions/20261011/chat-research/"
+      ]
     },
     "dated-research-packets": {
       "canonical_prefix": "evidence/20260923/",

@@ -1,0 +1,137 @@
+{
+  "seed": 86742091,
+  "cases": [
+    {
+      "m": 3,
+      "N": 396,
+      "r": 30,
+      "a": 0.4,
+      "mixture_mass": 0.09740259740259741,
+      "residuals": {
+        "initial_c_stiefel": 1.9878936516732357e-15,
+        "initial_z_stiefel": 1.2738838254398617e-15,
+        "orthonormal_patch": 1.411047368226119e-15,
+        "julia_unitarity": 2.285163577161637e-15,
+        "interpolation": 1.3118043513623578e-13,
+        "unitarity_random_probes": 2.3433234002211626e-13,
+        "fft_dense_agreement": 1.3118564548010351e-13,
+        "bottom_identity": 2.2335144651573155e-16,
+        "bottom_spectrum": 5.833611011731474e-16,
+        "full_interpolation": 1.5211085914257384e-12,
+        "covariance_preserved": 1.5700924586837752e-16,
+        "white_design": 2.28330848311961e-15,
+        "clock_conjugacy": 7.408879914877011e-16,
+        "direct_schur_spectrum": 1.630792446968692e-12,
+        "direct_schur_extension": 4.2956077799369196e-10,
+        "dense_unitarity": 1.6610095117238814e-12
+      },
+      "mixing": {
+        "cross_overlap_op": 0.1174350817041393,
+        "row_coherence_constant": 1.035098339013532,
+        "maximum_relative_entry_error": 0.6786845787259888,
+        "classical_second_singular_value": 0.02675593087393708,
+        "classical_bound_from_entry_error": 1.8179819148524503,
+        "classical_diagonal_mean": 0.0025531819437359937,
+        "phase_draws": 1,
+        "permuted_fourier": true
+      },
+      "scaled_covariance_error_op": 0.04131151198955366,
+      "base_scaled_error_op": 0.040000000000000015,
+      "neighbor_scaled_error": 0.013770503996518135
+    },
+    {
+      "m": 5,
+      "N": 900,
+      "r": 25,
+      "a": 0.4,
+      "mixture_mass": 0.18170426065162912,
+      "residuals": {
+        "initial_c_stiefel": 4.588615482070351e-15,
+        "initial_z_stiefel": 2.422193604382124e-15,
+        "orthonormal_patch": 5.275542619762402e-15,
+        "julia_unitarity": 4.198572817385476e-15,
+        "interpolation": 3.84407521788813e-13,
+        "unitarity_random_probes": 5.513196481162474e-13,
+        "fft_dense_agreement": 3.843679820025756e-13,
+        "bottom_identity": 1.1348572579379378e-16,
+        "bottom_spectrum": 2.027009494834442e-15,
+        "full_interpolation": 5.179087572268147e-12,
+        "covariance_preserved": 3.835896867111847e-16,
+        "white_design": 3.732790963411555e-15,
+        "clock_conjugacy": 3.00452380047333e-15,
+        "direct_schur_spectrum": 5.624073175420072e-12,
+        "direct_schur_extension": 2.171968722245657e-10,
+        "dense_unitarity": 5.774739767379036e-12
+      },
+      "mixing": {
+        "cross_overlap_op": 0.10747335215827318,
+        "row_coherence_constant": 1.0441386708238412,
+        "maximum_relative_entry_error": 0.6101984294670244,
+        "classical_second_singular_value": 0.014558901400331926,
+        "classical_bound_from_entry_error": 1.592738982258072,
+        "classical_diagonal_mean": 0.0011368771438382734,
+        "phase_draws": 1,
+        "permuted_fourier": true
+      },
+      "scaled_covariance_error_op": 0.06443917837639322,
+      "base_scaled_error_op": 0.0647213595499958,
+      "neighbor_scaled_error": 0.02373243671410541
+    },
+    {
+      "m": 7,
+      "N": 3136,
+      "r": 49,
+      "a": 0.4,
+      "mixture_mass": 0.13638147566719,
+      "residuals": {
+        "initial_c_stiefel": 6.510179230363718e-15,
+        "initial_z_stiefel": 4.232429319009107e-15,
+        "orthonormal_patch": 9.063602004241231e-15,
+        "julia_unitarity": 7.958074405941359e-15,
+        "interpolation": 2.5288365244898808e-12,
+        "unitarity_random_probes": 1.8964872581444346e-12,
+        "fft_dense_agreement": 2.5288136026574147e-12,
+        "bottom_identity": 2.7674741669873887e-17,
+        "bottom_spectrum": 2.5653043070630343e-15,
+        "full_interpolation": 5.349495012018023e-11,
+        "covariance_preserved": 1.545365047825326e-16,
+        "white_design": 9.466921660520397e-15,
+        "clock_conjugacy": 4.700624868235321e-15
+      },
+      "mixing": {
+        "cross_overlap_op": 0.07783175584854592,
+        "row_coherence_constant": 1.044534252831147,
+        "maximum_relative_entry_error": 0.4361328020737503,
+        "classical_second_singular_value": 0.00513494034578414,
+        "classical_bound_from_entry_error": 1.0624774251922018,
+        "classical_diagonal_mean": 0.0003239284751832328,
+        "phase_draws": 1,
+        "permuted_fourier": true
+      },
+      "scaled_covariance_error_op": 0.07193988713718454,
+      "base_scaled_error_op": 0.07207750943219354,
+      "neighbor_scaled_error": 0.028452218933259887
+    }
+  ],
+  "second_moment_control": {
+    "N": 32,
+    "m": 3,
+    "phase_samples": 12000,
+    "exact_second_moment": 0.27829129452013196,
+    "sample_second_moment": 0.2791781212498439,
+    "standard_error": 0.0007604134444910573,
+    "discrepancy_standard_errors": 1.1662428329440118,
+    "universal_upper_bound": 0.375
+  },
+  "elapsed_seconds": 1.691760778427124,
+  "scope": [
+    "Finite complex128 controls of a separately written proof.",
+    "No uniform phase average or BGS conclusion is inferred.",
+    "m=7 uses interpolation and probe controls, no dense Schur inverse."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

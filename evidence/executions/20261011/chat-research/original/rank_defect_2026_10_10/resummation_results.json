@@ -1,0 +1,1078 @@
+{
+  "all_passed": true,
+  "P_polynomial_cases": 36,
+  "W_cases": [
+    {
+      "N": 1,
+      "n": 0,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 0,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 0,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 0,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 1,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 1,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 1,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 1,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 1,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 1,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 1,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 1,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 2,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 2,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 2,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 2,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 2,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 2,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 2,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 2,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 2,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 2,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 2,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 2,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 3,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 3,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 3,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 3,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 3,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 3,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 3,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 3,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 3,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 3,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 3,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 3,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 3,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 3,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 3,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 3,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 4,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 4,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 4,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 4,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 4,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 4,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 4,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 4,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 4,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 4,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 5,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 5,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 6,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 6,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 8,
+      "n": 6,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 1,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 2,
+      "active_partitions": 2,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 3,
+      "active_partitions": 5,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 5,
+      "active_partitions": 52,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 6,
+      "active_partitions": 203,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 7,
+      "active_vertices": 7,
+      "active_partitions": 877,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 2,
+      "n": 7,
+      "active_vertices": 7,
+      "active_partitions": 877,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 5,
+      "n": 7,
+      "active_vertices": 7,
+      "active_partitions": 877,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 8,
+      "n": 7,
+      "active_vertices": 7,
+      "active_partitions": 877,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 8,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 3,
+      "n": 8,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 8,
+      "n": 8,
+      "active_vertices": 0,
+      "active_partitions": 1,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 8,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 3,
+      "n": 8,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 8,
+      "n": 8,
+      "active_vertices": 4,
+      "active_partitions": 15,
+      "entire_expression_checked": true
+    },
+    {
+      "N": 1,
+      "n": 8,
+      "active_vertices": 8,
+      "active_partitions": 4140,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 3,
+      "n": 8,
+      "active_vertices": 8,
+      "active_partitions": 4140,
+      "entire_expression_checked": false
+    },
+    {
+      "N": 8,
+      "n": 8,
+      "active_vertices": 8,
+      "active_partitions": 4140,
+      "entire_expression_checked": true
+    }
+  ],
+  "scope": "Exact formal identities on finite rational cases; the general proof is in inactive_resummation.md."
+}

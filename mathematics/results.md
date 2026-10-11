@@ -1,5 +1,16 @@
 # Theorem families and their limits
 
+## Maximal paths and source continuation, 11 October 2026
+
+[TRACE-071](laplace_path_transport_20261011.md) transports the entire centered
+phase-ensemble local point-process path and every fixed normal-source product.
+[TRACE-072](deterministic_path_transport_20261011.md) gives the deterministic
+maximal time-average bound and the actual-map growing interval. The initial
+local law remains unidentified. [The complete disposition](../record/chat_integration_20261011.md)
+also indexes reconstructed physical-source covariance, conditional joint delays,
+clock obstructions, signed finite-field collisions and frozen circular laws.
+
+
 ## Reviewed phase-memory and sharp-jet continuation, 8 October 2026
 
 [The research checkpoint](../record/research_checkpoint_20261008.md) reconstructs

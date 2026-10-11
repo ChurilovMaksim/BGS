@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "claim_id": "phase_wolfram_exact_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": "Wolfram.wolframlanguageevaluator: exact_phase_controls.wl",
+  "environment": {
+    "software": [
+      {
+        "name": "Wolfram Language",
+        "version": "15.0.1 for Linux x86 (64-bit) (July 2, 2026)"
+      }
+    ],
+    "hardware": "Remote Wolfram kernel; hardware details not exposed",
+    "submitted_code_file": "exact_phase_controls.wl",
+    "recorded_time_constraint_seconds": null
+  },
+  "mathematics": {
+    "assertion_tested": "Exact unitary, third occupation moment, adjoint variance and finite-field coherence identities",
+    "coefficient_domain": "Exact Wolfram symbolic/rational arithmetic",
+    "conventions": "No numerical sampling; full submitted code saved unchanged.",
+    "inputs": [
+      {
+        "path": "exact_phase_controls.wl",
+        "sha256": "d03271bbe516fbdbfb7537e6ccd0808868a4267a0ac50c966d3d18a169220109"
+      }
+    ],
+    "bounds": {
+      "finite_controls": true
+    },
+    "non_claims": [
+      "Not a proof of general asymptotic statements or BGS."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-10T04:48:50.759Z",
+    "runtime_seconds": 6.32,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "phase_wolfram_results.json",
+      "sha256": "4b4feb45402380a4f4a4b948c863380e981cac1e18a0b2e4747c9ac84e12991a"
+    }
+  ],
+  "checks": [
+    "all exact Boolean flags true",
+    "saved source matches submitted code",
+    "raw kernel result retained"
+  ],
+  "result": "All finite exact checks passed.",
+  "residual_risks": [
+    "Remote evaluator, not a local CPU/memory certificate."
+  ]
+}

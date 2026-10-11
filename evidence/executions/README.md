@@ -28,3 +28,5 @@ instead of being moved, because path identity is part of their provenance.
 
 Do not infer theorem status from execution success. See
 `../provenance.md` and `../index.json`.
+
+- [11 October checked chat integration](20261011/chat-research/README.md): canonical proof disposition, immutable original packets and separately recorded fresh executions.

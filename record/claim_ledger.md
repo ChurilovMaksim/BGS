@@ -2,6 +2,39 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Checked research integration, 11 October 2026
+
+This checkpoint integrates the complete retained 8--11 October chat research
+against main 9e3c90fb18fbdca8b0fd7d192aab0b76dd2d757d. It distinguishes
+internal proof reconstruction, finite execution and external law inputs.
+Priority and a solution of global BGS are not claimed.
+
+| Claim | State | Canonical source | Exact boundary |
+|---|---|---|---|
+| BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/source_covariance_20261011.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
+| BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/integrable_phase_absorption_20261011.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
+| BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/physical_source_transport_20261011.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
+| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Conditional on all-time entry flatness down to log(2N)^20 (or stated log(2N)^(5+kappa) scale). Joint delay barriers and killed second/third upper bounds; probability of flatness and equality moment laws are not proved. |
+| BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/fresh_phase_average_20261011.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
+| BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/flat_completion_20261011.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
+| BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/nonlinear_coercivity_20261011.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
+| BGS-TRACE-064 | PROVED | [Sharp maximal-torus contraction for compact simple groups](../mathematics/torus_contraction_20261011.md) | Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements. |
+| BGS-TRACE-065 | PROVED | [Signed finite-field cycle and collision calculus](../mathematics/coherence_form_factor_20261011.md) | Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau. |
+| BGS-TRACE-066 | PROVED | [Birthday rank law and thinned collision limit](../mathematics/previous_rank_results_20261011.md) | Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling. |
+| BGS-TRACE-067 | PROVED | [Sharp balanced Laurent Jack coefficient bound](../mathematics/jack_coefficient_theorem_20261011.md) | All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established. |
+| BGS-TRACE-068 | PROVED | [Frozen circular phase laws in the three symmetry classes](../mathematics/phase_contraction_20261011.md) | Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate. |
+| BGS-TRACE-069 | PROVED | [All-order critical CSE trace limit](../mathematics/exact_cumulants_20261011.md) | Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate. |
+| BGS-TRACE-070 | PROVED | [Complete CUE and CSE form-factor curves](../mathematics/form_factor_curve_20261011.md) | Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work. |
+| BGS-TRACE-071 | PROVED | [Maximal phase point-process paths and all fixed normal-source products](../mathematics/laplace_path_transport_20261011.md) | Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion. |
+| BGS-TRACE-072 | PROVED | [Deterministic maximal microscopic observable flow](../mathematics/deterministic_path_transport_20261011.md) | Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open. |
+
+The [integration disposition](chat_integration_20261011.md) records every
+research branch, prior overlap, corrected guesses and unclosed candidates.
+TRACE-055 remains verification-pending after its covariance, physical-source
+and conditional barrier components were reconstructed. The all-time cavity
+flatness probability and the scalar microscopic law remain unresolved.
+**BGS-BGS-001 and the every-fixed-order signed TRACE-005 remain OPEN.**
+
 ## Reviewed 8 October continuation
 
 | Claim | Current status | Exact authority |

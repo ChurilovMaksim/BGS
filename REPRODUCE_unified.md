@@ -323,3 +323,48 @@ python3 -O -m unittest discover -s computations/maintenance/tests -p test_loop_t
 ```
 
 These are exact finite algebra controls, not asymptotic mixed-loop proofs.
+
+## 11 October checked continuation
+
+The canonical mathematical status is in record/chat_integration_20261011.md.
+The curated exact controls use the pinned Python environment and a C++ compiler:
+
+```bash
+python3 computations/verification/chat_research_20261011.py
+python3 computations/verification/bibliographic_metadata_audit.py --self-test
+python3 computations/verification/scientific_registry_audit.py
+python3 computations/maintenance/audit_manuscript_references.py
+```
+
+For a fresh version-2 bounded manifest, run from the repository root with a
+new output directory and all inputs listed in the integration contract:
+
+```bash
+python3 computations/verification/chat_20261011/audit_tools/run_experiment.py \
+  --root . --contract computations/verification/chat_20261011/integration_contract.json \
+  --input computations/verification/chat_research_20261011.py \
+  --input computations/cpp/circular_phase_ssyt_verifier.cpp \
+  --input computations/verification/chat_20261011/scripts/exact_checks.py \
+  --input computations/verification/chat_20261011/scripts/pfaffian_controls.py \
+  --input computations/verification/chat_20261011/scripts/cumulant_formula_controls.py \
+  --input computations/verification/chat_20261011/scripts/run_controls.py \
+  --input computations/verification/chat_20261011/audit_tools/run_experiment.py \
+  --input computations/verification/chat_20261011/audit_tools/validate_manifest.py \
+  --input computations/verification/chat_20261011/integration_contract.json \
+  --output build/chat-research-reproduction \
+  --result build/chat-research-reproduction/summary.json \
+  --timeout 60 --max-output-bytes 1048576 --max-memory-bytes 1073741824 \
+  --max-cpu-seconds 50 --max-cores 1 --max-threads 1 \
+  -- python3 computations/verification/chat_research_20261011.py \
+  --output build/chat-research-reproduction
+```
+
+Validate its manifest with the same directory's validate_manifest.py and --root .
+The Wolfram sources are computations/wolfram/circular_phase_20261011.wl and
+computations/wolfram/walsh_clock_20261011.wl. The circular source's prior
+remote exact Boolean receipt is preserved; local full-workspace verification
+does not execute Wolfram. Lean 4.33.1 builds 23 active finite kernels; the new
+kernels do not formalize the analytic path or universality proofs. The Mathlib
+Jack arithmetic remains an uncompiled draft. The local execution packet
+documents an IO.appPath adapter, which changes application-location lookup
+only and does not alter Lean's kernel.

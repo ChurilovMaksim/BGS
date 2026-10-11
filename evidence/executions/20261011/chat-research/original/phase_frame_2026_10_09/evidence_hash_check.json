@@ -1,0 +1,148 @@
+{
+  "manifests": 8,
+  "checked_hashes": 28,
+  "all_match": true,
+  "files": [
+    {
+      "manifest": "finite_stiefel_check_manifest.json",
+      "path": "finite_stiefel_check.py",
+      "sha256": "cad1b4151e1ddd0300cb44df3ad1781efcd75a539a79fbb7418f4b299b1cc414"
+    },
+    {
+      "manifest": "finite_stiefel_check_manifest.json",
+      "path": "finite_stiefel_check_results.json",
+      "sha256": "71f8b370decbf5c8257ae6da7f90a4e88b623b5ccdfb6f301ef840ec65be4cd9"
+    },
+    {
+      "manifest": "finite_stiefel_check_manifest.json",
+      "path": "finite_stiefel_check_execution.log",
+      "sha256": "481c75aeb8d20d7ec5f9bd18216b89f5467f804e820b3d988514f479917d198c"
+    },
+    {
+      "manifest": "frame_probe_manifest.json",
+      "path": "frame_probe.py",
+      "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+    },
+    {
+      "manifest": "frame_probe_manifest.json",
+      "path": "frame_probe_results.json",
+      "sha256": "40ab809e8197263b556134968b7ff329a96774e5abbf77ebef85a73ab10815f3"
+    },
+    {
+      "manifest": "frame_probe_manifest.json",
+      "path": "frame_probe_execution.log",
+      "sha256": "7ce15ae2ae0cedaa69361faea291ea819c2b8edbbc85cfc2d81aeffb6756b850"
+    },
+    {
+      "manifest": "fresh_phase_check_manifest.json",
+      "path": "fresh_phase_check.py",
+      "sha256": "0d564d9b5a9447c8a0b2c7c6e32819483797f62c18cf2347fcd703a70c6f8d36"
+    },
+    {
+      "manifest": "fresh_phase_check_manifest.json",
+      "path": "fresh_phase_check_results.json",
+      "sha256": "8a0278e7d328c65660dbe26887486dc74cba64aa931510f716187e42c41ca5f7"
+    },
+    {
+      "manifest": "fresh_phase_check_manifest.json",
+      "path": "fresh_phase_check_execution.log",
+      "sha256": "2fee827ea74f82c528a59d8c4c9c639c9979c3d0035b807f7d14efd935e1509e"
+    },
+    {
+      "manifest": "jacobian_exact_manifest.json",
+      "path": "jacobian_exact.cpp",
+      "sha256": "b1d7d44e9b1760e662e29abc228b92e3f2eaa687f6414607c787c772cf7a867a"
+    },
+    {
+      "manifest": "jacobian_exact_manifest.json",
+      "path": "jacobian_exact_execution.log",
+      "sha256": "d9fc08aa287906e33593d84da70035dda31110a6cb705259192f091d687daf98"
+    },
+    {
+      "manifest": "mub_clock_check_manifest.json",
+      "path": "mub_clock_check.py",
+      "sha256": "fcaeab0d816a70a525d352e563c7cbf913333ba7454b0b3dd65c55bc5a05d3f5"
+    },
+    {
+      "manifest": "mub_clock_check_manifest.json",
+      "path": "frame_probe.py",
+      "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+    },
+    {
+      "manifest": "mub_clock_check_manifest.json",
+      "path": "mub_clock_check_results.json",
+      "sha256": "8f5cbb33ffd19d29671599d051f04132f2f9ec3e298c6cd2f88c4ccb44c6be8c"
+    },
+    {
+      "manifest": "mub_clock_check_manifest.json",
+      "path": "mub_clock_check_execution.log",
+      "sha256": "8f5cbb33ffd19d29671599d051f04132f2f9ec3e298c6cd2f88c4ccb44c6be8c"
+    },
+    {
+      "manifest": "projection_evolution_manifest.json",
+      "path": "projection_evolution.py",
+      "sha256": "8e782d2a7a6a520c3f4f9fdc1f46cb1985d069dcdc3c5b9a0e5e02b8595ddd33"
+    },
+    {
+      "manifest": "projection_evolution_manifest.json",
+      "path": "frame_probe.py",
+      "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+    },
+    {
+      "manifest": "projection_evolution_manifest.json",
+      "path": "projection_evolution_results.json",
+      "sha256": "5736fd48b5c8cc712b012f518d348ef8f934c17510ea82465fb13d3ae90245b1"
+    },
+    {
+      "manifest": "projection_evolution_manifest.json",
+      "path": "projection_evolution_execution.log",
+      "sha256": "5d8db6eb72e0269ad65bcb0b3b1c79ab9efebdb694383672a71b2685cf955168"
+    },
+    {
+      "manifest": "stiefel_probe_manifest.json",
+      "path": "stiefel_probe.py",
+      "sha256": "f25ba71c53023ddb48e84bd66fe1e25f3942ca46d75e00681c14ebba9f2371b2"
+    },
+    {
+      "manifest": "stiefel_probe_manifest.json",
+      "path": "frame_probe.py",
+      "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+    },
+    {
+      "manifest": "stiefel_probe_manifest.json",
+      "path": "stiefel_probe_results.json",
+      "sha256": "37859f3e0978dc9ebbff11662c830784403d70c73d54781c67d84358a5c71697"
+    },
+    {
+      "manifest": "stiefel_probe_manifest.json",
+      "path": "stiefel_probe_execution.log",
+      "sha256": "fd62750ce2a090f747ec67ae5a376edaead2bcc0ec53ac827e051a9de4e0066d"
+    },
+    {
+      "manifest": "wolfram_checks_manifest.json",
+      "path": "wolfram_all_checks.wl",
+      "sha256": "f4c148b75a637abdec4e03d68d992cf559140845d372cf6b7c7d3a3fcc77aae5"
+    },
+    {
+      "manifest": "wolfram_checks_manifest.json",
+      "path": "jacobian_frame_exact.wl",
+      "sha256": "253c590184334fac579f4434fec75f1640b6e36e6207c8425ef0780327f66d55"
+    },
+    {
+      "manifest": "wolfram_checks_manifest.json",
+      "path": "finite_stiefel_algebra.wl",
+      "sha256": "5824238d928accfdfd25fec9d01d8c96559a110bbfc263a3b67cb591953c8157"
+    },
+    {
+      "manifest": "wolfram_checks_manifest.json",
+      "path": "wolfram_checks_results.json",
+      "sha256": "99cea3af131c575e657a3876819f6a8a2c9914ccc46857158b76430ecf281475"
+    },
+    {
+      "manifest": "wolfram_checks_manifest.json",
+      "path": "wolfram_checks_execution.log",
+      "sha256": "a096fbef69635c2d4a918cadd65bf03459ec91dd722a5f50c1498734b56fd15f"
+    }
+  ],
+  "non_claim": "Matching bytes and finite checks do not certify the mathematical proofs."
+}

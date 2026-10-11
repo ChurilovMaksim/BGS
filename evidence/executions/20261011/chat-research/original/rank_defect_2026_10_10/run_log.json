@@ -1,0 +1,74 @@
+{
+  "subcommands": [
+    {
+      "argv": [
+        "/usr/bin/g++",
+        "-O2",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "/workspace/scratch/06745ba532e4/research_session/rank_defect_2026_10_10/next_order.cpp",
+        "-o",
+        "/tmp/bgs_rank_defect_i2t8sfqm/next_order"
+      ],
+      "runtime_seconds": 1.1980665270002646,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/tmp/bgs_rank_defect_i2t8sfqm/next_order",
+        "10"
+      ],
+      "runtime_seconds": 3.627767113000118,
+      "exit_status": 0,
+      "stdout": "{\"scope\":\"Exact finite coefficients; d divisible by 4; no extrapolation in n\",\"cases\":[{\"n\":3,\"p\":3,\"cycles\":1,\"collision_restrictions\":4,\"coefficient_denominator\":12,\"coefficient_numerators\":[72,0,-108,0,48],\"by_h_numerators\":[[72,0,0,0,0],[0,0,-108,0,0],[0,0,0,0,48]],\"rank_counts\":[[0,1]]},{\"n\":3,\"p\":5,\"cycles\":1,\"collision_restrictions\":4,\"coefficient_denominator\":12,\"coefficient_numerators\":[72,0,-108,0,48],\"by_h_numerators\":[[72,0,0,0,0],[0,0,-108,0,0],[0,0,0,0,48]],\"rank_counts\":[[0,1]]},{\"n\":3,\"p\":7,\"cycles\":1,\"collision_restrictions\":4,\"coefficient_denominator\":12,\"coefficient_numerators\":[72,0,-108,0,48],\"by_h_numerators\":[[72,0,0,0,0],[0,0,-108,0,0],[0,0,0,0,48]],\"rank_counts\":[[0,1]]},{\"n\":4,\"p\":3,\"cycles\":3,\"collision_restrictions\":39,\"coefficient_denominator\":12,\"coefficient_numerators\":[96,0,-288,0,504],\"by_h_numerators\":[[96,0,192,0,0],[0,0,-480,0,-384],[0,0,0,0,888]],\"rank_counts\":[[0,1],[2,2]]},{\"n\":4,\"p\":5,\"cycles\":3,\"collision_restrictions\":39,\"coefficient_denominator\":12,\"coefficient_numerators\":[96,0,-288,0,504],\"by_h_numerators\":[[96,0,192,0,0],[0,0,-480,0,-384],[0,0,0,0,888]],\"rank_counts\":[[0,1],[2,2]]},{\"n\":4,\"p\":7,\"cycles\":3,\"collision_restrictions\":39,\"coefficient_denominator\":12,\"coefficient_numerators\":[96,0,-288,0,504],\"by_h_numerators\":[[96,0,192,0,0],[0,0,-480,0,-384],[0,0,0,0,888]],\"rank_counts\":[[0,1],[2,2]]},{\"n\":5,\"p\":3,\"cycles\":12,\"collision_restrictions\":420,\"coefficient_denominator\":12,\"coefficient_numerators\":[120,0,-600,0,2220],\"by_h_numerators\":[[120,0,600,0,720],[0,0,-1200,0,-4800],[0,0,0,0,6300]],\"rank_counts\":[[0,1],[2,5],[4,6]]},{\"n\":5,\"p\":5,\"cycles\":12,\"collision_restrictions\":420,\"coefficient_denominator\":12,\"coefficient_numerators\":[120,0,-600,120,2100],\"by_h_numerators\":[[120,0,600,120,600],[0,0,-1200,0,-4800],[0,0,0,0,6300]],\"rank_counts\":[[0,1],[2,5],[3,1],[4,5]]},{\"n\":5,\"p\":7,\"cycles\":12,\"collision_restrictions\":420,\"coefficient_denominator\":12,\"coefficient_numerators\":[120,0,-600,0,2220],\"by_h_numerators\":[[120,0,600,0,720],[0,0,-1200,0,-4800],[0,0,0,0,6300]],\"rank_counts\":[[0,1],[2,5],[4,6]]},{\"n\":6,\"p\":3,\"cycles\":60,\"collision_restrictions\":3840,\"coefficient_denominator\":12,\"coefficient_numerators\":[144,0,-864,0,4680],\"by_h_numerators\":[[144,0,1728,0,5040],[0,0,-2592,0,-27648],[0,0,0,0,27288]],\"rank_counts\":[[0,1],[2,12],[4,35],[5,12]]},{\"n\":6,\"p\":5,\"cycles\":60,\"collision_restrictions\":3840,\"coefficient_denominator\":12,\"coefficient_numerators\":[144,0,-864,0,4680],\"by_h_numerators\":[[144,0,1728,0,5040],[0,0,-2592,0,-27648],[0,0,0,0,27288]],\"rank_counts\":[[0,1],[2,12],[4,35],[5,12]]},{\"n\":6,\"p\":7,\"cycles\":60,\"collision_restrictions\":3840,\"coefficient_denominator\":12,\"coefficient_numerators\":[144,0,-864,0,4680],\"by_h_numerators\":[[144,0,1728,0,5040],[0,0,-2592,0,-27648],[0,0,0,0,27288]],\"rank_counts\":[[0,1],[2,12],[4,35],[5,12]]},{\"n\":7,\"p\":3,\"cycles\":360,\"collision_restrictions\":28336,\"coefficient_denominator\":12,\"coefficient_numerators\":[168,0,-1176,0,8232],\"by_h_numerators\":[[168,0,3528,0,25872],[0,0,-4704,0,-102312],[0,0,0,0,84672]],\"rank_counts\":[[0,1],[2,21],[4,154],[5,42],[6,142]]},{\"n\":7,\"p\":5,\"cycles\":360,\"collision_restrictions\":28336,\"coefficient_denominator\":12,\"coefficient_numerators\":[168,0,-1176,0,8232],\"by_h_numerators\":[[168,0,3528,0,25872],[0,0,-4704,0,-102312],[0,0,0,0,84672]],\"rank_counts\":[[0,1],[2,21],[4,154],[5,42],[6,142]]},{\"n\":7,\"p\":7,\"cycles\":360,\"collision_restrictions\":28336,\"coefficient_denominator\":12,\"coefficient_numerators\":[168,0,-1176,0,8232],\"by_h_numerators\":[[168,0,3528,0,25872],[0,0,-4704,0,-102312],[0,0,0,0,84672]],\"rank_counts\":[[0,1],[2,21],[4,154],[5,44],[6,140]]},{\"n\":8,\"p\":3,\"cycles\":2520,\"collision_restrictions\":131712,\"coefficient_denominator\":12,\"coefficient_numerators\":[192,0,-1536,0,12096],\"by_h_numerators\":[[192,0,6144,0,79680],[0,0,-7680,0,-274944],[0,0,0,0,207360]],\"rank_counts\":[[0,1],[2,32],[4,415],[5,80],[6,1464],[7,528]]},{\"n\":8,\"p\":5,\"cycles\":2520,\"collision_restrictions\":131712,\"coefficient_denominator\":12,\"coefficient_numerators\":[192,0,-1536,0,12096],\"by_h_numerators\":[[192,0,6144,0,79680],[0,0,-7680,0,-274944],[0,0,0,0,207360]],\"rank_counts\":[[0,1],[2,32],[4,415],[5,96],[6,1416],[7,560]]},{\"n\":8,\"p\":7,\"cycles\":2520,\"collision_restrictions\":131712,\"coefficient_denominator\":12,\"coefficient_numerators\":[192,0,-1536,0,12096],\"by_h_numerators\":[[192,0,6144,0,79680],[0,0,-7680,0,-274944],[0,0,0,0,207360]],\"rank_counts\":[[0,1],[2,32],[4,415],[5,80],[6,1432],[7,560]]},{\"n\":9,\"p\":3,\"cycles\":20160,\"collision_restrictions\":483060,\"coefficient_denominator\":12,\"coefficient_numerators\":[216,0,-1944,0,18144],\"by_h_numerators\":[[216,0,9720,0,199584],[0,0,-11664,0,-620136],[0,0,0,0,438696]],\"rank_counts\":[[0,1],[2,45],[4,924],[5,110],[6,6993],[7,3222],[8,8865]]},{\"n\":9,\"p\":5,\"cycles\":20160,\"collision_restrictions\":483060,\"coefficient_denominator\":12,\"coefficient_numerators\":[216,0,-1944,0,18144],\"by_h_numerators\":[[216,0,9720,0,199584],[0,0,-11664,0,-620136],[0,0,0,0,438696]],\"rank_counts\":[[0,1],[2,45],[4,924],[5,135],[6,6941],[7,3447],[8,8667]]},{\"n\":9,\"p\":7,\"cycles\":20160,\"collision_restrictions\":483060,\"coefficient_denominator\":12,\"coefficient_numerators\":[216,0,-1944,0,18144],\"by_h_numerators\":[[216,0,9720,0,199584],[0,0,-11664,0,-620136],[0,0,0,0,438696]],\"rank_counts\":[[0,1],[2,45],[4,924],[5,108],[6,6950],[7,2862],[8,9270]]},{\"n\":10,\"p\":3,\"cycles\":181440,\"collision_restrictions\":1451670,\"coefficient_denominator\":12,\"coefficient_numerators\":[240,0,-2400,0,24000],\"by_h_numerators\":[[240,0,14400,0,423600],[0,0,-16800,0,-1233600],[0,0,0,0,834000]],\"rank_counts\":[[0,1],[2,60],[4,1765],[5,160],[6,23710],[7,9000],[8,98864],[9,47880]]},{\"n\":10,\"p\":5,\"cycles\":181440,\"collision_restrictions\":1451670,\"coefficient_denominator\":12,\"coefficient_numerators\":[240,0,-2400,0,24000],\"by_h_numerators\":[[240,0,14400,0,423600],[0,0,-16800,0,-1233600],[0,0,0,0,834000]],\"rank_counts\":[[0,1],[2,60],[4,1765],[5,180],[6,23446],[7,9600],[8,94568],[9,51820]]},{\"n\":10,\"p\":7,\"cycles\":181440,\"collision_restrictions\":1451670,\"coefficient_denominator\":12,\"coefficient_numerators\":[240,0,-2400,0,24000],\"by_h_numerators\":[[240,0,14400,0,423600],[0,0,-16800,0,-1233600],[0,0,0,0,834000]],\"rank_counts\":[[0,1],[2,60],[4,1765],[5,160],[6,23460],[7,8240],[8,95314],[9,52440]]}],\"all_passed\":true}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/research_session/rank_defect_2026_10_10/independent_checks.py"
+      ],
+      "runtime_seconds": 20.4322029620007,
+      "exit_status": 0,
+      "stdout": "{\"all_passed\": true, \"active_identity_cases\": 45, \"rank_defect_diagrams_checked\": 201632, \"polynomials\": 60}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/research_session/rank_defect_2026_10_10/orbit_checks.py"
+      ],
+      "runtime_seconds": 0.21718710200002533,
+      "exit_status": 0,
+      "stdout": "{\"all_passed\": true, \"exact_word_cases\": 16, \"exact_words\": 26140, \"saddle_illustrations\": 12}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/research_session/rank_defect_2026_10_10/resummation_checks.py"
+      ],
+      "runtime_seconds": 0.8851827580001554,
+      "exit_status": 0,
+      "stdout": "{\"all_passed\": true, \"P_polynomial_cases\": 36, \"W_parameter_cases\": 153, \"W_coefficients\": 18672}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/research_session/rank_defect_2026_10_10/occupation_rank_checks.py"
+      ],
+      "runtime_seconds": 1.9081934949999777,
+      "exit_status": 0,
+      "stdout": "{\"all_passed\": true, \"exact_cases\": 12, \"exact_stabilizer_permutations\": 97164, \"unique_permutations_rank_checked\": 870, \"large_N_cases\": 9, \"seed\": 20261010}\n",
+      "stderr": ""
+    }
+  ],
+  "selected_cpu": 0,
+  "cpu_seconds_observed": 28.273218000000004,
+  "budget_note": "Wall time limits and Linux child CPU/address-space/affinity limits were used; aggregate CPU checked between commands. Output limit checked after each command. This is not a hard process-tree memory sum."
+}

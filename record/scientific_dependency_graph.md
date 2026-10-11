@@ -286,3 +286,15 @@ from these nodes closes the scalar cavity law, deterministic transfer or BGS.
 | TRACE-053 | TRACE-056 | Uniform averaged pinching along the real flow |
 | TRACE-053 | TRACE-055 (pending) | One accepted sub-input; raw barriers/covariance remain unproved here |
 | Self-contained finite factorization and cascade | TRACE-054 | Sharp general matrix inner jet; no stochastic input |
+
+## Checked 11 October extensions
+
+The exact machine-readable edges are in scientific_dependencies.json.
+TRACE-057 and TRACE-053/056 support physical L2 transport (059).
+TRACE-053/056/058 support maximal phase paths and fixed normal products (071).
+TRACE-071's common-origin calculus and FM-018's fixed-symbol input support the
+actual-map maximal observable-flow corollary (072). The sharp Jack coefficient
+bound (067) supports compatible circular phase laws (068), then critical CSE
+traces (069) and whole form-factor curves (070). No edge from these theorems
+closes BGS-BGS-001 or TRACE-005. Conditional joint delays (060) do not establish
+TRACE-055's full hierarchy or its flatness hypothesis.

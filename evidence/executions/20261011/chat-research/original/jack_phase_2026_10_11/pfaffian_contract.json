@@ -1,0 +1,59 @@
+{
+  "claim_id": "CSE-fourth-cumulant-and-Heisenberg-form-factor-controls-2026-10-11",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    }
+  ],
+  "execution_artifacts": [
+    "scripts/pfaffian_controls.py",
+    "audit_tools/run_experiment.py",
+    "audit_tools/validate_manifest.py"
+  ],
+  "mathematics": {
+    "assertion_tested": "CSE second and fourth power-trace moments: independent Vandermonde^4 Fourier constant coefficients equal rational Pfaffian trace-log; exact harmonic mean, coefficient mass, critical denominator clipping and cumulant bound.",
+    "coefficient_domain": "Python arbitrary integers and Fraction rational arithmetic.",
+    "conventions": "N distinct CSE pairs; p_n=half trace; doubled half-integer q=2k odd; B_s sends q to q-2s with coefficient(q-s)/q; mixed cumulant=4[u^2 v^2] logZ.",
+    "inputs": [
+      "scripts/pfaffian_controls.py"
+    ],
+    "bounds": {
+      "direct_N": [
+        2,
+        3,
+        4
+      ],
+      "direct_n": "1..3N",
+      "larger_N": [
+        5,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "larger_n": "1,floor(N/2),N-1,N,N+1,2N-1,2N,3N",
+      "coefficient_targets": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "non_claims": [
+      "Finite checks do not establish all N and n.",
+      "No deterministic BGS system tested.",
+      "Concentration is pointwise in time; not a maximum over O(N) times."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none: exhaustive rational enumeration",
+    "seed": null
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "claim_id": "cycle_rank_finite_controls",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/tmp/bgs_cycle_rank_check"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "g++",
+        "version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+      }
+    ],
+    "hardware": "x86_64",
+    "wall_timeout_seconds": 45,
+    "subprocess_commands": [
+      [
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "research_session/torus_universality_2026_10_10/cycle_rank_check.cpp",
+        "-o",
+        "/tmp/bgs_cycle_rank_check"
+      ],
+      [
+        "/tmp/bgs_cycle_rank_check"
+      ]
+    ]
+  },
+  "mathematics": {
+    "assertion_tested": "Ranks of cycle adjacency differences over F_3,F_5; restrictions x_a=x_b; stronger conjectural rank inequality reported separately.",
+    "coefficient_domain": "Exact modular integer arithmetic",
+    "conventions": "Unoriented cycles; vertex 0 first; second vertex less than last; adjacency differences have no factor 1/2, which leaves rank unchanged.",
+    "inputs": [
+      {
+        "path": "cycle_rank_check.cpp",
+        "sha256": "e7171241cd30df0633f27e281d30ac160a9b2b2d600045304815b4d40c9b57db"
+      }
+    ],
+    "bounds": {
+      "n": [
+        3,
+        10
+      ],
+      "p": [
+        3,
+        5
+      ],
+      "collision_restrictions_n_max": 7
+    },
+    "non_claims": [
+      "Finite rank enumeration is not a general rank theorem or a BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-10T04:59:28.660929+00:00",
+    "runtime_seconds": 0.5577169349999167,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "cycle_rank_results.json",
+      "sha256": "cdcc0318ceec7e7cbbd0eff1673074bb42f3e96aae4872d08464636deb00f013"
+    }
+  ],
+  "checks": [
+    "rank bounds hold in all enumerated cycles",
+    "codimension-one rank loss at most 2",
+    "input hash unchanged"
+  ],
+  "result": "All tested theorem inequalities passed. Stronger inequality is a finite observation, not a proved universal theorem.",
+  "residual_risks": [
+    "Finite n and only two characteristics.",
+    "No aggregate CPU or memory certificate.",
+    "No formal proof or BGS claim."
+  ]
+}

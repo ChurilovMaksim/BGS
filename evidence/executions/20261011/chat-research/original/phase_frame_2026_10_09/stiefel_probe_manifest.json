@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "claim_id": "stiefel_probe_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "stiefel_probe.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "576 direct Gaussian/Stiefel frames: tight normalization, trace, and measured HS defect compared with the separately derived fixed-m coefficients.",
+    "coefficient_domain": "complex128",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "stiefel_probe.py",
+        "sha256": "f25ba71c53023ddb48e84bd66fe1e25f3942ca46d75e00681c14ebba9f2371b2"
+      },
+      {
+        "path": "frame_probe.py",
+        "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+      }
+    ],
+    "bounds": {
+      "N": [
+        512,
+        2048
+      ],
+      "m": [
+        2,
+        4,
+        8
+      ],
+      "samples": 576,
+      "normalization_residual_threshold": 1e-10
+    },
+    "non_claims": [
+      "Finite-N sample means are not exact asymptotic values.",
+      "No transfer to phase cavities.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610092
+  },
+  "run": {
+    "started_at": "2026-10-09T08:26:17.699747+00:00",
+    "runtime_seconds": 0.9712614810000559,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "stiefel_probe_results.json",
+      "sha256": "37859f3e0978dc9ebbff11662c830784403d70c73d54781c67d84358a5c71697"
+    },
+    {
+      "path": "stiefel_probe_execution.log",
+      "sha256": "fd62750ce2a090f747ec67ae5a376edaead2bcc0ec53ac827e051a9de4e0066d"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs.",
+    "Floating tolerance and finite random sampling."
+  ]
+}

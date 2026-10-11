@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-08",
+  "updated": "2026-10-11",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -2868,9 +2868,12 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [],
-      "boundary": "Submission under verification: the joint delay barriers, killed second-clock expectation <=12, ordinary-prefix covariance and physical-source continuation are not reconstructed. Neither the scalar cavity CUE law nor deterministic BGS follows even from the asserted comparison.",
+      "boundary": "Verification-pending complete deep-source hierarchy. TRACE-057/059 reconstruct covariance and physical-source comparison; TRACE-060 reconstructs the conditional joint barrier and killed moments. They do not establish all-time flatness, the stronger all-order clock laws, typical cavity hypotheses, or the scalar microscopic reference. TRACE-005 and BGS remain open.",
       "priority_status": "not-established",
-      "dependency_scope": "TRACE-053 is the reconstructed channel sub-input only; this edge does not discharge the remaining submitted inputs."
+      "dependency_scope": "TRACE-053 is the reconstructed channel sub-input only; this edge does not discharge the remaining submitted inputs.",
+      "proof_dependencies": [
+        "record/research_candidates/20261011/README.md"
+      ]
     },
     {
       "id": "BGS-TRACE-056",
@@ -2894,6 +2897,427 @@
         "manuscript/unified_sections/phase_channel_jet_20261008.tex"
       ],
       "boundary": "Deterministic phase-independent Hermitian H with Tr H=m and Tr H^2<=C_H m; bounded real flow and normal scalar absorption. L1 unweighted scalar source and each fixed derivative only; no anisotropic physical absorption, mixed products, scalar endpoint identification or deterministic phase removal.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-057",
+      "title": "Arbitrary-source phase covariance",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/source_covariance_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-058",
+      "title": "Integrable all-order phase absorption",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/integrable_phase_absorption_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-059",
+      "title": "Anisotropic physical-source transport",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/physical_source_transport_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-053",
+        "BGS-TRACE-056",
+        "BGS-TRACE-057"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-060",
+      "title": "Joint incoming and outgoing delay bootstrap",
+      "state": "conditional",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/delay_bootstrap_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-TROPP-2011"
+      ],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Conditional on all-time entry flatness down to log(2N)^20 (or stated log(2N)^(5+kappa) scale). Joint delay barriers and killed second/third upper bounds; probability of flatness and equality moment laws are not proved.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-061",
+      "title": "Finite frame identities, Stiefel threshold and clock-basis obstruction",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/fresh_phase_average_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/finite_stiefel_bounds_20261011.md",
+        "mathematics/stiefel_fluctuation_20261011.md",
+        "mathematics/clock_basis_obstruction_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/PhaseFrameWitness.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample.",
+      "priority_status": "not-established",
+      "formalization_scope": "Successfully compiled finite arithmetic statement only. The analytic proof, representation theory, finite-field rank classification and asymptotic limit are not formalized."
+    },
+    {
+      "id": "BGS-TRACE-062",
+      "title": "Flat completion with arbitrary clock law",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/flat_completion_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-061"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/arbitrary_clock_law_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-063",
+      "title": "Global noncommuting ordinary-body coercivity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/nonlinear_coercivity_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-064",
+      "title": "Sharp maximal-torus contraction for compact simple groups",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/torus_contraction_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/compact_groups_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/TorusDimensionBound.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements.",
+      "priority_status": "not-established",
+      "formalization_scope": "Successfully compiled finite arithmetic statement only. The analytic proof, representation theory, finite-field rank classification and asymptotic limit are not formalized."
+    },
+    {
+      "id": "BGS-TRACE-065",
+      "title": "Signed finite-field cycle and collision calculus",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/coherence_form_factor_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/deterministic_ramp_20261011.md",
+        "mathematics/collision_resummation_20261011.md",
+        "mathematics/rank_defect_theorem_20261011.md",
+        "mathematics/active_intervals_20261011.md",
+        "mathematics/inactive_resummation_20261011.md",
+        "mathematics/orbit_reorganization_20261011.md",
+        "mathematics/occupation_rank_law_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/ActiveRankDefect.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau.",
+      "priority_status": "not-established",
+      "formalization_scope": "Successfully compiled finite arithmetic statement only. The analytic proof, representation theory, finite-field rank classification and asymptotic limit are not formalized."
+    },
+    {
+      "id": "BGS-TRACE-066",
+      "title": "Birthday rank law and thinned collision limit",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/previous_rank_results_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-065"
+      ],
+      "external_dependencies": [
+        "EXT-AGG-1989"
+      ],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-067",
+      "title": "Sharp balanced Laurent Jack coefficient bound",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/jack_coefficient_theorem_20261011.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-068",
+      "title": "Frozen circular phase laws in the three symmetry classes",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/phase_contraction_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-067"
+      ],
+      "external_dependencies": [
+        "EXT-OO-1997",
+        "EXT-MATSUMOTO-2007",
+        "EXT-VV-2017",
+        "EXT-JM-2015"
+      ],
+      "proof_dependencies": [
+        "mathematics/quenched_local_law_20261011.md",
+        "mathematics/heisenberg_form_factor_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-069",
+      "title": "All-order critical CSE trace limit",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/exact_cumulants_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-068"
+      ],
+      "external_dependencies": [
+        "EXT-MATSUMOTO-2007"
+      ],
+      "proof_dependencies": [
+        "mathematics/critical_cse_gaussian_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-070",
+      "title": "Complete CUE and CSE form-factor curves",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/form_factor_curve_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-068",
+        "BGS-TRACE-069"
+      ],
+      "external_dependencies": [
+        "EXT-HSW-1999"
+      ],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-071",
+      "title": "Maximal phase point-process paths and all fixed normal-source products",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/laplace_path_transport_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-053",
+        "BGS-TRACE-056",
+        "BGS-TRACE-058"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-072",
+      "title": "Deterministic maximal microscopic observable flow",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "source": "mathematics/deterministic_path_transport_20261011.md",
+      "dependencies": [
+        "BGS-TRACE-071",
+        "BGS-FM-018"
+      ],
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/polar_wkb_quantization_stability.md",
+        "supplement/fixed_map/ergodic-transfer/ergodic_spectral_transfer.md",
+        "mathematics/microscopic_rounding_control.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261011/chat-research/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/chat_research_20261011.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open.",
       "priority_status": "not-established"
     }
   ],
