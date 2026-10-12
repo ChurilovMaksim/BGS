@@ -1,0 +1,74 @@
+{
+  "claim_id": "BGS-TRACE-075-finite-controls-20261012",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/two_step_restoring_drift.py",
+    "computations/verification/two_step_drift_contract.json",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact complex rational circle product average from independent residues at a=0 and two nonzero complex a; exact weighted swap, cubic, quartic and total drift bounds at four ordered pairs of an explicit 64-dimensional real unitary.",
+    "coefficient_domain": "SymPy Gaussian-rational residues, exact Python integers and Fraction. NumPy int64 matrix products have explicit fixture bounds below 2^63.",
+    "conventions": "K=P^2, P=|S|^2; coordinate picked uniformly among all u and K frozen if an endpoint is selected.",
+    "inputs": [
+      "computations/verification/two_step_restoring_drift.py",
+      "computations/verification/two_step_drift_contract.json",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+    ],
+    "bounds": {
+      "phase_diagonals": [
+        "0",
+        "1/3+i/4",
+        "2/7-i/5"
+      ],
+      "unitary_dimension": 64,
+      "unitary_entries": "integer coefficient times sqrt(2)/40",
+      "max_intensity": "1/50",
+      "ordered_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          7,
+          40
+        ],
+        [
+          31,
+          63
+        ]
+      ],
+      "integer_matrix_entry_max": 4,
+      "integer_cube_kernel_entry_upper_bound": 16777216
+    },
+    "non_claims": [
+      "No finite check proves the general drift theorem.",
+      "No higher moments, trajectory concentration, all-time flatness or BGS theorem.",
+      "No world priority or analytic Lean claim."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; fixed exact fixtures",
+    "seed": null
+  }
+}

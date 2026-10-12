@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "candidate_date": "2026-10-11",
+  "base_commit": "b126cfb18f445b82358fc156632873082ac22503",
+  "reviewer": "/root/fixed_moment_delay_review",
+  "kind": "independent internal mathematical reconstruction, not external peer review",
+  "input": "inputs/unitary_obstruction_review_input.md",
+  "input_sha256": "c0b024469d84b91ae92e74b4d04b15cf259c9f11d55b2071d5422562da45a5f1",
+  "verdict": "proved within the static unistochastic scope",
+  "reconstructed_obligations": [
+    "complex rank-one correction and rank-two perturbation",
+    "compatible forced row and column with exact two-step peak",
+    "conditional Haar completion from subgroup invariance, without independent-event assumptions",
+    "entry tails and simultaneous flatness",
+    "exact centered fourth-Schatten Haar intensity identity from conditional row moments",
+    "Markov and perturbation estimates proving witnesses for each sufficiently large dimension",
+    "failure of the additional singular-norm factor in the two-step bound"
+  ],
+  "editorial_clarification": "Use alpha for the random first-row vector and a for the fixed prescribed vector.",
+  "boundary": "No computation was run by the reviewer. No actual Schur trajectory, flatness probability, chaotic quantizer, BGS, priority or external referee claim."
+}

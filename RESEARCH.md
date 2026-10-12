@@ -1,12 +1,24 @@
 # BGS research brief
 
-**Current scientific status, 11 October 2026:** the unchanged fixed-strength
+**Current scientific status, 12 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
 review or an attached manuscript cannot override it.
 
 ## Maximal paths and source continuation, 11 October 2026
+
+[TRACE-074](mathematics/unitary_two_step_obstruction_20261012.md) closes the
+static unitary shortcut: flat entries and vanishing intensity singular
+norm do not bound the two-step kernel by O(1/n). Its three-step positive
+bound does not replace the exact entry bracket.
+[The outcome](record/unitary_two_step_continuation_20261012.md) separates
+this obstruction from the open dynamic flatness problem.
+[TRACE-075](mathematics/two_step_restoring_drift_20261012.md) controls the
+complete coherent term by a three-step path-swap pairing and proves a
+restoring one-step mean for the constructed peaks. Higher moments and
+stopped concentration remain open.
+
 
 [TRACE-071](mathematics/laplace_path_transport_20261011.md) transports the entire centered
 phase-ensemble local point-process path and every fixed normal-source product.
@@ -120,6 +132,13 @@ The [reversal extension](evidence/executions/20261011/reversal-gap/README.md)
 records the current analytic review and manuscript build, and the completed
 219-check/25-target CI of its preceding commit. New source acceptance is
 checked on its own final commit; historical receipts retain their original scope.
+The [12 October packet](evidence/executions/20261012/two-step-drift/README.md)
+records the new exact controls and 291-page manuscript. Its preceding
+clock commit passed all seven scientific CI jobs, 220 workspace checks,
+236 maintenance tests, 25 C++ builds and the 26-job Lake build, plus the
+independent manuscript workflow. These preceding receipts are explicitly
+not final-source acceptance for TRACE-074/075.
+
 The [7 October integration](record/checked_research_checkpoint_20261007.md),
 [Wave2 review](record/wave2_checked_integration_20261007.md), and
 [Wave3 review](record/wave3_checked_integration_20261007.md) retain their own

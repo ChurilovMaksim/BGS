@@ -312,3 +312,14 @@ uses the independently reconstructed general complex-contraction theorem. It is 
 the scalar microscopic cavity law. The separate [all-fixed-order clock proof](clock_universality_continuation_20261011.md)
 uses TRACE-060, not these initial-gap edges, and still assumes entry flatness. No new edge closes TRACE-005
 or BGS-BGS-001. [Proof and review](cavity_continuation_20261011.md).
+
+## Two-step obstruction and restoring drift, 12 October
+
+TRACE-074 is self-contained and has no incoming scientific prerequisite.
+It does not prove or contradict the maintained trajectory's flatness event.
+The edge TRACE-074 -> TRACE-075 supplies only the positive higher-step
+comparison and the constructed-witness mean corollary. TRACE-075's exact
+phase product, complete path-swap bound and general one-step drift inequality
+are self-contained. No edge closes TRACE-060's flatness premise, TRACE-055,
+TRACE-005 or BGS-BGS-001. Finite controls are distinct from analytic proof
+and probability conclusions.

@@ -12,6 +12,9 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
+- **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
+- **[Unitary two-step obstruction](../../unitary_two_step_obstruction_20261012.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
+
 - **[Signed target](../../trace_to_local_statistics_bridge.md)** — Every fixed order and every smooth compact Fourier support must be covered; a modulus is outside the complete signed sum.
 - **[Absolute obstruction](../../signed_heisenberg_comparison.md)** — The all-order unaveraged deterministic absolute CUE comparison is excluded by the project obstruction.
 - **[Smoothing boundary](../../heisenberg_pair_heat_formula.md)** — Pointwise heat algebra, stable Haar norms and actual unsmoothed values have separate ranges and evidence.
@@ -31,6 +34,9 @@ The actual TRACE-005 estimate is open. Pair control alone does not imply every h
 See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
 
 ## Complete source membership
+
+- [two_step_restoring_drift_20261012](../../two_step_restoring_drift_20261012.md) — Exact nonzero-diagonal phase formula, frozen-label average, coherent swap bound and restoring mean drift.
+- [unitary_two_step_obstruction_20261012](../../unitary_two_step_obstruction_20261012.md) — Rank-two unitary construction, exact Haar moment, two-step failure and correct higher-step factor.
 
 - [heisenberg_pair_heat_formula](../../heisenberg_pair_heat_formula.md) — Exact pair modes, Haar heat profile and matching short-trace families with different signed defects.
 - [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.

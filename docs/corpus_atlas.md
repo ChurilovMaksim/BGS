@@ -118,3 +118,13 @@ The subsequent [Schur continuation](../record/cavity_continuation_20261011.md)
 adds two maintained proof sources in the trace topic and a separate execution
 packet. Its all-time-flatness premises are explicit; the original 199 source
 files and earlier acceptance receipts remain preserved.
+
+
+## Two-step kernel continuation, 12 October
+
+The [unitary obstruction](../mathematics/unitary_two_step_obstruction_20261012.md)
+and [restoring mean drift](../mathematics/two_step_restoring_drift_20261012.md)
+are new maintained sources in the trace topic. The negative static result
+and positive one-step mechanism have different conclusions. Their exact
+review hashes and finite-control scope are in the dated packets;
+all-time flatness and deterministic BGS remain open.

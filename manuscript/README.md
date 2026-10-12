@@ -5,22 +5,26 @@ on `main`. It presents the research corpus; the scientific-status authority
 is [the claim ledger](../record/claim_ledger.md), followed by canonical
 mathematical sources under [mathematics/](../mathematics/README.md).
 
-**Current scientific continuation, 11 October 2026:** the
-[Schur section](unified_sections/chat_research_20261011.tex) now includes
-conditional all-fixed killed clock upper bounds, uniform second/third equality
-laws and conditional intensity/reversal gap propagation. The
-[cavity review](../record/cavity_continuation_20261011.md) and
-[reversal extension](../record/reversal_channel_continuation_20261011.md)
-give their exact hypotheses and separate finite-control scopes. The preceding 284-page build
-is retained in [its source-bound packet](../evidence/executions/20261011/chat-research/fresh/README.md);
-the 8 October 280/281-page builds belong to earlier source versions.
-The fresh three-pass build has **285 pages**. Its source audit checks 102
-subordinate TeX files, 59 bibliography keys and no missing or duplicate
-references. Selected-page inspection of this continuation is recorded
-in [the current packet](../evidence/executions/20261011/reversal-gap/README.md).
-The [preceding cavity build](../evidence/executions/20261011/cavity-continuation/README.md)
-also has 285 pages but different source and PDF hashes.
-No build or selected visual inspection certifies every mathematical proof.
+**Current scientific continuation, 12 October 2026:** the
+[Schur section](unified_sections/chat_research_20261011.tex) contains
+conditional equality laws at every fixed clock order, the explicit
+full-depth reference measure and rank atom, conditional intensity/reversal
+gap propagation, and the new unitary two-step obstruction with its
+fresh-phase restoring mean drift. All-time flatness probability and the
+microscopic BGS law remain open.
+[Clock scope](../record/clock_universality_continuation_20261011.md) ·
+[Unitary obstruction](../record/unitary_two_step_continuation_20261012.md) ·
+[Dynamic companion](../record/two_step_drift_continuation_20261012.md).
+
+The fresh three-pass build has **291 pages**. Its source audit checks 102
+subordinate TeX files, 62 bibliography keys and no missing or duplicate
+references. The actual PDF was parsed, its hash rechecked after completion,
+and the three new pages inspected visually. The
+[current packet](../evidence/executions/20261012/two-step-drift/README.md)
+distinguishes these accepted checks from superseded overflow and artifact
+failures. The preceding 288-page clock build and older 285/284-page builds
+retain their original source and PDF hashes. No build or selected visual
+inspection certifies every mathematical proof.
 
 The [scientific corpus atlas](../docs/corpus_atlas.md) maps the seven
 principal subject areas to their canonical proofs, bibliography and evidence

@@ -454,3 +454,190 @@ Thus both intensity and reversal gaps are controlled, in intersection
 probability, down to $\lceil\ell^{3+\kappa}\rceil$. This is neither a
 complete symmetry classification nor a microscopic local-law theorem;
 all-time flatness probability and deterministic BGS remain open.
+
+\subsection{A two-step obstruction inside unitary intensities (TRACE-074)}
+For every sufficiently large $n$ there is $S_n\in U(n)$, with
+$P_{ij}=|(S_n)_{ij}|^2$ and $J_{ij}=1/n$, such that
+\[
+ \delta_n:=\max P_{ij}\le\frac{8\log(2n)}n,\qquad
+ \rho_n:=\|P-J\|_{\rm op}\le n^{-1/8}
+             +16\sqrt{\frac{\log(2n)}n}\longrightarrow0,
+\]
+but, for two fixed distinct labels $i,j$,
+\[
+ (P^2)_{ij}=\frac1{b_n},\qquad
+ b_n=\left\lfloor\frac n{\log(2n)}\right\rfloor,\qquad
+ n(P^2)_{ij}\sim\log(2n).
+\]
+The norm is a singular operator norm. The construction is genuinely
+unistochastic and refutes a universal estimate
+$|((P-J)^2)_{ij}|\le C\rho_n\delta_n$.
+
+For unit vectors $c,d$ use the rank-one unitary correction
+\[
+ H(c,d)=I-\frac{(c-d)(c-d)^*}{1-d^*c}\quad(c\ne d),\qquad H(c,c)=I.
+\]
+Indeed $v=c-d$ satisfies $v^*c=1-d^*c$ and
+$\|v\|^2=(1-d^*c)+(1-c^*d)$, proving $Hc=d$ and $H^*H=I$.
+Choose $a=\beta=b_n^{-1/2}\mathbf1_B$, with $B$ disjoint from $i,j$,
+and a Haar unitary $Z$. Put
+\[
+ L=H(Ze_j,\beta),\quad W=LZ,\quad r=W^*e_i,\quad
+ R=H(a,r),\quad S=WR.
+\]
+Then $r\perp e_j$, $Re_j=e_j$, $Se_j=\beta$ and $e_i^*S=a^*$.
+Thus $(P^2)_{ij}=1/b_n$ exactly, while
+$\operatorname{rank}(S-Z)\le2$ and $\|S-Z\|_{\rm HS}\le2\sqrt2$.
+
+The remaining completion is Haar from $\{e_j,a\}^\perp$ to
+$\{\beta,e_i\}^\perp$. To justify this dependent construction, let
+$\mathcal G$ fix both $\beta,e_i$. Under $Z\mapsto GZ$,
+$L\mapsto GLG^*$, $W\mapsto GW$, $r,R$ stay fixed, and $S\mapsto GS$.
+The joint law of $(r,S)$ is invariant. The group acts freely and
+transitively on the completions, so the conditional completion law is
+the unique Haar law. The residual dimension is $n-2$; each bulk entry
+is a Haar entry multiplied by projection norms at most one. Consequently,
+with $t_n=8\log(2n)/n$,
+\[
+ \Pr(\max|S_{kl}|^2>t_n)\le n^2e^{-(n-3)t_n},\qquad
+ \Pr(\max|Z_{kl}|^2>t_n)\le n^2e^{-(n-1)t_n}.
+\]
+
+The necessary Haar singular bound is derived internally. For
+$p_l=|Z_{1l}|^2$ and $s_q=\sum_l p_l^q$, Dirichlet moments give
+\[
+ \mathbb Es_2=\frac2{n+1},\quad
+ \mathbb Es_3=\frac6{(n+1)(n+2)},\quad
+ \mathbb Es_2^2=\frac{4(n+5)}{(n+1)(n+2)(n+3)}.
+\]
+Conditional on the first row vector $\alpha=Z^*e_1$, the second is uniform
+on the complex sphere with projector $\Pi=I-\alpha\alpha^*$.
+For $D=\operatorname{diag}(p)$, its quadratic-form second moment is
+$[(\operatorname{Tr}D\Pi)^2+\operatorname{Tr}(D\Pi D\Pi)]/[n(n-1)]$,
+namely $(1-s_2-2s_3+2s_2^2)/[n(n-1)]$.
+Summing equal and distinct rows and removing the Perron mode gives
+\[
+ \mathbb E\bigl\||Z|^2-J\bigr\|_{S_4}^4
+ =\frac{2(n-1)(n+4)}{(n+1)(n+2)(n+3)}\le2/n.
+\]
+Markov gives $\Pr(\||Z|^2-J\|_{\rm op}>n^{-1/8})\le2n^{-1/2}$.
+On the two flatness events,
+$\|P-|Z|^2\|_{\rm op}\le2\sqrt{t_n}\|S-Z\|_{\rm HS}\le4\sqrt{2t_n}$.
+A union bound, without independence assumptions, proves simultaneous
+witnesses for every sufficiently large $n$.
+
+The positive higher-step statement, valid for every doubly stochastic $P$, is
+\[
+ |(P^h)_{ij}-1/n|
+ \le\rho^{h-2}
+ \sqrt{\left(\sum_kP_{ik}^2-\frac1n\right)
+       \left(\sum_kP_{kj}^2-\frac1n\right)}
+ \le\rho^{h-2}(\delta-1/n),\qquad h\ge2.
+\]
+It follows from $E^h=P^h-J$ and
+$(E^h)_{ij}=(e_i^*E)E^{h-2}(Ee_j)$. At $h=2$, the factor is one,
+including $\rho=0$; the prescribed row and column attain the first bound
+exactly. Our witnesses satisfy $\max_{ij}n|(P^3)_{ij}-1/n|\to0$.
+Nevertheless their frozen-entry one-step Schur bracket is
+\[
+ \mathbb E|\Delta S_{ij}|^2
+ =\frac1n\sum_{e\notin\{i,j\}}\frac{P_{ie}P_{ej}}{1-P_{ee}}
+ \sim\frac{\log(2n)}{n^2}.
+\]
+Here $\Delta S_{ij}=0$ if an endpoint is chosen. Thus three-step mixing
+does not replace the two-step kernel in the exact bracket.
+
+The Haar unistochastic ensemble is prior work~\cite{ZKSS2003Unitary}.
+Its numerical singular statistics are not imported as a theorem.
+The canonical proof is
+\path{mathematics/unitary_two_step_obstruction_20261012.md}.
+No maintained trajectory, chaotic quantizer, BGS counterexample,
+analytic Lean or world-priority claim is supplied.
+
+\subsection{Fresh-phase restoring drift of a two-step peak (TRACE-075)}
+Let $S\in U(u)$, $P=|S|^2$, $K=P^2$, $\delta=\max P<1$, and $i\ne j$.
+Pick $e$ uniformly among all $u$ labels, independently of a fresh uniform
+phase $w$. Freeze $K_{ij}$ if $e=i$ or $j$; otherwise use
+$S'_{kl}=S_{kl}+qS_{ke}S_{el}$, $q=w/(1-S_{ee}w)$, on survivors.
+With $a=S_{ee}$, $\eta_e=1-|a|^2$, define
+\[
+ A=S_{ie}S_{ek}\overline{S_{ik}},\quad B=P_{ie}P_{ek},\qquad
+ C=S_{ke}S_{ej}\overline{S_{kj}},\quad D=P_{ke}P_{ej}.
+\]
+The circle moments are
+$\mathbb Eq=\mathbb Eq^2=0$,
+$\mathbb E|q|^2=1/\eta_e$,
+$\mathbb E(q|q|^2)=\bar a/\eta_e^2$ and
+$\mathbb E|q|^4=(1+|a|^2)/\eta_e^3$. Hence
+\[
+ \begin{split}
+ F_{e,k}:=\mathbb E_w(P'_{ik}P'_{kj})
+ ={}&P_{ik}P_{kj}
+ +\frac{P_{ik}D+P_{kj}B+2\operatorname{Re}(A\bar C)}{\eta_e}\\
+ &+\frac{2\operatorname{Re}\{\bar a(AD+CB)\}}{\eta_e^2}
+ +\frac{(1+|a|^2)BD}{\eta_e^3}.
+ \end{split}
+\]
+The frozen-label average is exactly
+\[
+ u\,\mathbb E(\Delta K_{ij}\mid S)
+ =\sum_{e\notin\{i,j\}}\left[\sum_{k\ne e}F_{e,k}-K_{ij}\right].
+\]
+The subtraction lies inside the sum; survival conditioning would instead
+have denominator $u-2$.
+
+The coherent term is a swap pairing of three-step path amplitudes:
+\[
+ T_{e,k}=S_{ie}S_{ek}S_{kj},\qquad A\bar C=T_{e,k}\overline{T_{k,e}}.
+\]
+On $\mathcal D=\{(e,k):e\notin\{i,j\},\,k\ne e\}$, both square sums
+are bounded by $(P^3)_{ij}$, even though $\mathcal D$ is not swap invariant.
+Weighted Cauchy--Schwarz therefore gives
+\[
+ \left|\sum_{\mathcal D}\frac{A\bar C}{\eta_e}\right|
+ \le\frac{(P^3)_{ij}}{1-\delta}.
+\]
+The base loss is $-K_{ij}+P_{ij}(P_{ii}+P_{jj})$; the two positive
+quadratic terms total at most $2(P^3)_{ij}/(1-\delta)$.
+For the nonzero-diagonal cubic terms, AM--GM yields
+\[
+ |aAD|\le\frac\delta2 P_{ej}(P_{ie}P_{ek}+P_{ik}P_{ke}),\qquad
+ |aCB|\le\frac\delta2 P_{ie}(P_{ke}P_{ej}+P_{kj}P_{ek}).
+\]
+Each sum is at most $\delta[K_{ij}+(P^3)_{ij}]/2$.
+The quartic term totals at most
+$\delta(1+\delta)K_{ij}/(1-\delta)^3$ since $(P^2)_{ee}\le\delta$.
+Thus
+\[
+ u\,\mathbb E(\Delta K_{ij}\mid S)
+ \le-(1-c(\delta))K_{ij}+2\delta P_{ij}+d(\delta)(P^3)_{ij},
+\]
+where
+\[
+ c(\delta)=\frac{2\delta}{(1-\delta)^2}
+             +\frac{\delta(1+\delta)}{(1-\delta)^3},\qquad
+ d(\delta)=\frac4{1-\delta}+\frac{2\delta}{(1-\delta)^2}.
+\]
+The increasing functions satisfy
+$c(1/16)=752/3375<1/2$, $d(1/16)=992/225<5$. Therefore
+\[
+ \mathbb E(\Delta K_{ij}\mid S)
+ \le\frac{-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}}u
+ \qquad(\delta\le1/16).
+\]
+The preceding higher-step theorem gives
+$(P^3)_{ij}\le1/u+\rho(\delta-1/u)$.
+At the TRACE-074 witnesses, $P_{ij}=0$, $K_{ij}\sim\log(2u)/u$ and
+$(P^3)_{ij}=(1+o(1))/u$. All nonbase terms have absolute sum
+$o(K_{ij})$, and hence
+\[
+ \mathbb E(\Delta K_{ij}\mid S)=-(1+o(1))K_{ij}/u.
+\]
+This proves a restoring mean mechanism for each constructed input.
+It does not establish high-probability or sustained decay, preservation
+of its hypotheses, higher moments, or control of other peaks.
+The canonical proof is
+\path{mathematics/two_step_restoring_drift_20261012.md}.
+Independent exact residue and 64-dimensional unitary controls are finite
+checks. All-time flatness probability, scalar microscopic identification,
+full TRACE-055, signed TRACE-005 and deterministic BGS remain open.

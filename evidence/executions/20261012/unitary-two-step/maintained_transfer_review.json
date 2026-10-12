@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "reviewer": "/root/fixed_moment_delay_review",
+  "kind": "read-only fidelity check and direct reconstruction of the companions",
+  "verdict": "passed within stated mathematical scope",
+  "proofs": {
+    "mathematics/unitary_two_step_obstruction_20261012.md": "bf5b45c2f0edff65efae5c4beeef7be4588dd642cab092fa90a04f5b16fe0ca1"
+  },
+  "clarifications": [
+    "Frozen entry has Delta=0 if an endpoint is selected; total coordinate denominator is n, not survival-conditioned n-2.",
+    "Three-step mixing uses the stated quantitative epsilon_n log(2n) rate."
+  ],
+  "boundary": "Maintained proof and higher-step/one-step variance companions only; no upstream TRACE-060/073 or manuscript audit."
+}

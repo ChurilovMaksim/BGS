@@ -1,5 +1,18 @@
 # Theorem families and their limits
 
+The [12 October unistochastic obstruction](unitary_two_step_obstruction_20261012.md)
+(TRACE-074) constructs genuine unitary intensities with logarithmic
+two-step peaks despite logarithmic flatness and a vanishing centered
+singular norm. Its correct higher-step estimate explains why three-step
+mixing does not supply the entry bracket's two-step kernel.
+No maintained trajectory or BGS counterexample is asserted.
+
+[TRACE-075](two_step_restoring_drift_20261012.md) supplies a positive
+companion: the exact one-step phase average has a restoring drift
+controlled by a complete three-step path-swap bound. At the constructed
+peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration,
+persistence of hypotheses and all-time flatness remain open.
+
 The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
 killed clock upper bounds and [uniform equality laws at every fixed order](conditional_clock_universality_20261011.md)

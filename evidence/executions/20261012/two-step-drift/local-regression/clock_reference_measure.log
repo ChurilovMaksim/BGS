@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "exact_arithmetic": "SymPy rational polynomial arithmetic",
+  "exact_reference_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "polynomials": [
+    "1",
+    "2 - x",
+    "x**2 - 6*x + 6",
+    "-x**3 + 12*x**2 - 32*x + 22",
+    "x**4 - 20*x**3 + 100*x**2 - 170*x + 90",
+    "-x**5 + 30*x**4 - 240*x**3 + 730*x**2 - 912*x + 394",
+    "x**6 - 42*x**5 + 490*x**4 - 2310*x**3 + 4998*x**2 - 4942*x + 1806",
+    "-x**7 + 56*x**6 - 896*x**5 + 6020*x**4 - 19712*x**3 + 32984*x**2 - 27008*x + 8558"
+  ],
+  "density_diagnostics": {
+    "arithmetic": "60-digit mpmath quadrature, diagnostic only",
+    "retained_fractions": [
+      "0",
+      "1/5",
+      "49/100",
+      "1/2",
+      "51/100",
+      "4/5",
+      "99/100",
+      "1"
+    ],
+    "orders": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "density_and_atom_moment_checks": 40,
+    "maximum_absolute_error": "2.48920611114e-60"
+  },
+  "non_claims": [
+    "Numerical quadrature is not a certified integral bound",
+    "No stochastic Schur asymptotic theorem is tested",
+    "No flatness probability, freeness of actual matrices, or BGS law"
+  ]
+}

@@ -53,3 +53,10 @@ cavity hypotheses, scalar microscopic identification, signed TRACE-005
 and global deterministic BGS remain open. The accepted clock result removes
 the fixed-order equality induction from that list; it does not remove the
 remaining probability or microscopic implications.
+
+
+The later [12 October unitary theorem](unitary_two_step_continuation_20261012.md)
+extends the static two-step obstruction to genuine unitary intensities.
+Its [dynamic companion](two_step_drift_continuation_20261012.md) proves a
+restoring one-step mean for the constructed peaks, without closing the
+all-time flatness premise used by the clock theorem above.

@@ -1,0 +1,68 @@
+{
+  "claim_id": "BGS-TRACE-074-finite-controls-20261012",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/unitary_two_step_obstruction.py",
+    "computations/verification/unitary_two_step_contract.json",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+  ],
+  "mathematics": {
+    "assertion_tested": "Four exact rational orthogonal two-correction fixtures, one complex rank-one primitive, exact centered fourth-moment combination and row-column Cauchy equality; six floating QR construction diagnostics and third-step bound checks.",
+    "coefficient_domain": "Exact SymPy rational and Gaussian-rational arithmetic; separate NumPy float64 diagnostics.",
+    "conventions": "P=|S|^2 entrywise; J has every entry 1/n; singular operator norm; fixed i=0,j=1 in zero-based code.",
+    "inputs": [
+      "computations/verification/unitary_two_step_obstruction.py",
+      "computations/verification/unitary_two_step_contract.json",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+    ],
+    "bounds": {
+      "exact_dimensions": [
+        8,
+        12
+      ],
+      "exact_seeds": [
+        0,
+        1
+      ],
+      "exact_support": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complex_primitive_dimension": 2,
+      "floating_dimensions": [
+        32,
+        64,
+        128
+      ],
+      "floating_trials_per_dimension": 2,
+      "floating_tolerance": "1e-11"
+    },
+    "non_claims": [
+      "No finite computation establishes Haar probabilities or asymptotic existence.",
+      "No random Schur trajectory, all-time flatness probability, chaotic quantizer or BGS counterexample.",
+      "No analytic Lean certification or world-priority claim."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64; complex Gaussian QR with diagonal phase normalization",
+    "seed": 20261011
+  }
+}

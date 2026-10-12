@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-12",
+  "status": "PASS",
+  "pdf_sha256": "491ad9d04406809985856a22acbcfc9c7be21e75c18cd188b451714c167094c9",
+  "page_count": 291,
+  "parsed_by": "pypdf",
+  "reviewed_pages": [
+    285,
+    286,
+    287
+  ],
+  "rendering": "pdftoppm PNG at 110 dpi",
+  "observations": [
+    "Both new theorem statements, correction denominators, square roots, projection notation and higher-step factors render correctly.",
+    "Frozen-label averaging keeps subtraction inside the survivor-coordinate sum.",
+    "The constructed-witness one-step mean asymptotic and its probability boundary are visible.",
+    "No cropped formula, missing math command, horizontal overflow or unresolved citation on reviewed pages."
+  ],
+  "scope": "Visual inspection of the three affected new pages only; the build and full parser checks are recorded separately.",
+  "supersession": [
+    "Two earlier builds failed the long-path horizontal overflow gate.",
+    "A subsequent gate-passing PDF was observed truncated after completion and is superseded by this sequentially rebuilt, parsed and hash-rechecked artifact."
+  ]
+}

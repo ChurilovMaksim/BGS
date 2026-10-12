@@ -1,5 +1,12 @@
 # Entry-flatness route: the exact variance and a classical obstruction
 
+**Later result, 12 October:** the
+[unitary two-step obstruction](../mathematics/unitary_two_step_obstruction_20261012.md)
+proves the same failure inside the genuine unistochastic class. The
+classical example below retains its original scope; its suggested static
+unitary repair is now ruled out. Evolution from the maintained initial
+map and all-time flatness probability remain open.
+
 Research outcome from main `b126cfb18f445b82358fc156632873082ac22503`,
 11 October 2026. This route concerns the missing probability of all-time
 entry flatness in TRACE-060/073. It has not proved that probability.
@@ -64,7 +71,8 @@ universal bound |(P-J)²_ij|<=C ||P-J|| max(P_kl).
 
 This construction is **doubly stochastic only**. It is not asserted to
 be unistochastic, to arise in the random Schur process, or to refute BGS.
-Any proof for genuine unitary intensities must use an additional property
-of those matrices or of their evolution. A random-phase correlation
+The later unitary theorem shows that unitarity alone does not remove this
+obstruction. A proof for the maintained process must use additional
+information about its states or their evolution. A random-phase correlation
 argument remains unexecuted at this missing step. The route is open at
 that narrower implication; the elementary gap-only shortcut is ruled out.

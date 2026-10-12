@@ -2,6 +2,36 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Unitary two-step obstruction, 12 October 2026
+
+**BGS-TRACE-075 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[The exact fresh-phase drift](../mathematics/two_step_restoring_drift_20261012.md)
+bounds the complete two-step coherence by a three-step path-swap pairing.
+For max intensity \(\delta\le1/16\), it gives
+\(\mathbb E\Delta K_{ij}\le[-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}]/u\),
+with endpoint freezing and uniform selection among all \(u\) labels.
+At the TRACE-074 constructed peaks,
+\(\mathbb E\Delta K_{ij}=-(1+o(1))K_{ij}/u\).
+The core theorem is self-contained; TRACE-074 supports only its comparison
+and witness corollary. High-probability or sustained decay, higher moments,
+all-time flatness, microscopic identification and BGS remain unproved.
+The original averaging sentence was corrected before promotion.
+[Review and exact finite scope](../evidence/executions/20261012/two-step-drift/README.md).
+
+**BGS-TRACE-074 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[Two rank-one unitary corrections](../mathematics/unitary_two_step_obstruction_20261012.md)
+give genuine unistochastic matrices with max-entry bound
+\(8\log(2n)/n\), vanishing centered intensity singular norm and an exact
+two-step peak \(1/\lfloor n/\log(2n)\rfloor\). A universal extra
+singular-norm factor in the two-step estimate is false. The correct
+higher-step factor is \(\rho^{h-2}\); this sequence is uniformly mixed
+at the third step and has a one-step Schur variance
+\(\sim\log(2n)/n^2\) at the exceptional pair. The constructed states are
+not asserted to occur along the maintained trajectory. This is neither
+a BGS counterexample nor a flatness-probability theorem. Priority and
+analytic Lean certification are not claimed.
+[Exact review and execution scope](../evidence/executions/20261012/unitary-two-step/README.md).
+
 ## Checked research integration, 11 October 2026
 
 This checkpoint integrates the complete retained 8--11 October chat research

@@ -7,8 +7,22 @@ The balanced phase law still needs the signed overlap defect to vanish;
 the deterministic problem still needs complete signed TRACE-005 comparison
 and noise removal at the local-relaxation scale. The scalar cavity law is not
 supplied by the covariance, clock moment or source-continuation theorems.
-The all-time cavity entry-flatness probability and stronger clock-law induction
+The repaired induction now proves every fixed clock order conditional on
+all-time entry flatness. Its probability, growing-order and edge laws
 remain unproved. [Exact new boundaries](../record/chat_integration_20261011.md).
+
+The [unitary two-step obstruction](unitary_two_step_obstruction_20261012.md)
+rules out deriving the required two-step kernel from unitarity, logarithmic
+entry flatness and a vanishing intensity singular norm alone. Three-step
+mixing can coexist with a logarithmic two-step peak. A dynamic estimate
+of the row--column correlation or its accumulated effect is still needed.
+
+The [exact two-step drift](two_step_restoring_drift_20261012.md) now provides
+a restoring conditional mean bounded by the three-step kernel. It does
+not provide the higher moments or stopped concentration needed for all
+entries and times. The additional term
+\(\rho(\delta-1/u)/u\) is not \(O(u^{-2})\) from logarithmic flatness alone;
+the required evolving correlation or forcing estimate remains open.
 
 
 ## Current priorities at a glance (11 October 2026)

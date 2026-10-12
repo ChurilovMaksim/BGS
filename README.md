@@ -4,13 +4,22 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (11 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (12 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
 ## Checked continuation, 11 October
+
+[The 12 October unitary obstruction](mathematics/unitary_two_step_obstruction_20261012.md)
+shows that logarithmic entry flatness and a vanishing intensity singular
+norm can coexist with a logarithmic two-step peak, even for genuine
+unitary matrices. Three-step mixing does not supply the two-step Schur
+variance estimate. The [fresh-phase drift theorem](mathematics/two_step_restoring_drift_20261012.md)
+proves a restoring one-step mean for the constructed peaks; concentration
+and all-time flatness probability remain open.
+
 
 [The new checkpoint](record/chat_integration_20261011.md) proves maximal
 full local-process transport for the maintained deterministic map on an

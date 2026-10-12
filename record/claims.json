@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -3358,6 +3358,53 @@
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
       "boundary": "Every ordered centered singular value contracts under classical stochastic complementation; independently, every ordered singular value contracts under algebraic Schur complementation of an arbitrary complex contraction with invertible deleted-block resolvent. Quantum intensity and reversal matrices have these complements as conditional means only. Under all-time flatness, explicit stopped-potential bounds propagate small initial intensity and reversal gaps to ceil(log(2N)^(3+kappa)) with intersection failure O(log(2N)^(-kappa)). FM-021/022 supply the respective actual-map initial gaps. Flatness probability, complete symmetry classification, scalar microscopic law and BGS remain open.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-074",
+      "title": "Unistochastic two-step obstruction and the correct higher-step singular bound",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
+      "source": "mathematics/unitary_two_step_obstruction_20261012.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261012/unitary-two-step/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/unitary_two_step_obstruction.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "For each sufficiently large n, genuine unitary intensities have logarithmic flatness, vanishing centered singular norm and an exact logarithmic two-step peak. Correct rho^(h-2) bound, uniform three-step mixing and one-step frozen-entry Schur variance consequence. No maintained trajectory, all-time flatness probability, chaotic quantizer, BGS counterexample or world-priority claim.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-075",
+      "title": "Fresh-phase two-step restoring drift from a complete three-step path-swap bound",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION AFTER FROZEN-LABEL CORRECTION; FINITE CONTROLS SEPARATE",
+      "source": "mathematics/two_step_restoring_drift_20261012.md",
+      "dependencies": [
+        "BGS-TRACE-074"
+      ],
+      "dependency_scope": "The exact phase product, full path-swap estimate and general one-step drift theorem are self-contained. TRACE-074 is used only for the higher-step comparison and constructed-witness asymptotic restoring-drift corollary.",
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261012/two-step-drift/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/two_step_restoring_drift.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "One-step frozen-label Schur feedback with a fresh uniform phase. General nonzero deleted diagonal, exact complete coherence estimate by P^3, and delta<=1/16 drift bound. At TRACE-074 witnesses E Delta K=-(1+o(1))K/u. No higher moments, high-probability or sustained decay, all-time flatness, physical microscopic identification, BGS or priority claim.",
       "priority_status": "not-established"
     }
   ],
