@@ -1,8 +1,8 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-11",
-  "purpose": "Explicit reviewed state/source lineage across historical epochs and the two scoped 11 October continuations; historical reviews do not cover later IDs or stronger statements.",
+  "reviewed_on": "2026-10-12",
+  "purpose": "Explicit reviewed state/source lineage across historical epochs and the scoped 11-12 October continuations; historical reviews do not cover later IDs or stronger statements.",
   "after_wave3": [
     {
       "id": "BGS-TRACE-053",
@@ -129,6 +129,24 @@
       "state": "conditional",
       "source": "mathematics/schur_censoring_gap_20261011.md",
       "disposition": "Independent reconstructions of centered stochastic and arbitrary complex-contraction singular-spectrum censoring, plus stopped intensity/reversal gap propagation. FM-021/022 provide initial actual-map leaves only; see both 11 October continuation records. Flatness probability remains open."
+    },
+    {
+      "id": "BGS-TRACE-074",
+      "state": "proved",
+      "source": "mathematics/unitary_two_step_obstruction_20261012.md",
+      "disposition": "Independent internal reconstruction of the genuine-unitary two-step obstruction and exact higher-step companion; finite controls separate."
+    },
+    {
+      "id": "BGS-TRACE-075",
+      "state": "proved",
+      "source": "mathematics/two_step_restoring_drift_20261012.md",
+      "disposition": "Independent reconstruction after frozen-label averaging correction; restoring one-step mean only, no sustained concentration."
+    },
+    {
+      "id": "BGS-TRACE-076",
+      "state": "proved",
+      "source": "mathematics/haar_feedback_clock_law_20261012.md",
+      "disposition": "Independent reconstruction and maintained-transfer audit of exact Haar feedback and entropy-stable clocks; deterministic flatness and BGS remain open."
     }
   ],
   "invariants": [

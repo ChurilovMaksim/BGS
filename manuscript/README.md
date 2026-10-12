@@ -9,20 +9,23 @@ mathematical sources under [mathematics/](../mathematics/README.md).
 [Schur section](unified_sections/chat_research_20261011.tex) contains
 conditional equality laws at every fixed clock order, the explicit
 full-depth reference measure and rank atom, conditional intensity/reversal
-gap propagation, and the new unitary two-step obstruction with its
-fresh-phase restoring mean drift. All-time flatness probability and the
-microscopic BGS law remain open.
+gap propagation, the new unitary two-step obstruction with its
+fresh-phase restoring mean drift, and TRACE-076's exact Haar feedback
+law and unconditional entropy-stable clocks. The maintained deterministic
+initial family's all-time flatness probability and microscopic BGS law
+remain open.
 [Clock scope](../record/clock_universality_continuation_20261011.md) ·
 [Unitary obstruction](../record/unitary_two_step_continuation_20261012.md) ·
-[Dynamic companion](../record/two_step_drift_continuation_20261012.md).
+[Dynamic companion](../record/two_step_drift_continuation_20261012.md) ·
+[Unconditional clock class](../record/haar_feedback_continuation_20261012.md).
 
-The fresh three-pass build has **291 pages**. Its source audit checks 102
-subordinate TeX files, 62 bibliography keys and no missing or duplicate
+The fresh three-pass build has **294 pages**. Its source audit checks 102
+subordinate TeX files, 64 bibliography keys and no missing or duplicate
 references. The actual PDF was parsed, its hash rechecked after completion,
-and the three new pages inspected visually. The
-[current packet](../evidence/executions/20261012/two-step-drift/README.md)
-distinguishes these accepted checks from superseded overflow and artifact
-failures. The preceding 288-page clock build and older 285/284-page builds
+and selected new pages inspected visually. The
+[current packet](../evidence/executions/20261012/haar-feedback/README.md)
+distinguishes the accepted build from its initial long-display overflow.
+The preceding 291-page drift build, 288-page clock build and older 285/284-page builds
 retain their original source and PDF hashes. No build or selected visual
 inspection certifies every mathematical proof.
 

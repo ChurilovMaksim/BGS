@@ -8,8 +8,14 @@ the deterministic problem still needs complete signed TRACE-005 comparison
 and noise removal at the local-relaxation scale. The scalar cavity law is not
 supplied by the covariance, clock moment or source-continuation theorems.
 The repaired induction now proves every fixed clock order conditional on
-all-time entry flatness. Its probability, growing-order and edge laws
-remain unproved. [Exact new boundaries](../record/chat_integration_20261011.md).
+all-time entry flatness. [TRACE-076](haar_feedback_clock_law_20261012.md)
+now closes that probability premise for a Haar start and gives
+unconditional clock laws for independent initial distributions with
+relative entropy O(log N) relative to Haar. The probability for the
+maintained deterministic initial family, growing-order and edge laws
+remain unproved. A bounded-entropy gap example rules out a
+prescribed-origin microscopic implication from these clock laws alone.
+[Exact new boundaries](../record/haar_feedback_continuation_20261012.md).
 
 The [unitary two-step obstruction](unitary_two_step_obstruction_20261012.md)
 rules out deriving the required two-step kernel from unitarity, logarithmic
@@ -38,7 +44,7 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. All fixed killed upper moments, equality laws at every fixed order, the full-depth clock measure and intensity/reversal gap propagation require all-time flatness. Its probability and the physical microscopic cavity identification remain open |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; the maintained deterministic family's probability and physical microscopic cavity identification remain open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.

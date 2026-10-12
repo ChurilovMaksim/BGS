@@ -1,5 +1,15 @@
 # Theorem families and their limits
 
+[TRACE-076](haar_feedback_clock_law_20261012.md) supplies the exact Haar
+feedback scattering/delay joint law, inverse-Jacobi spectrum, finite
+moment threshold and exact first moment. Haar all-time flatness closes
+the conditional clock premise in that ensemble. The full-depth laws at
+every fixed order and empirical weak law hold unconditionally for
+independent initial distributions of relative entropy O(log N) relative
+to Haar. A bounded-entropy prescribed-gap example excludes the associated
+fixed-origin Sine₂ implication. The deterministic initial family and BGS
+remain open.
+
 The [12 October unistochastic obstruction](unitary_two_step_obstruction_20261012.md)
 (TRACE-074) constructs genuine unitary intensities with logarithmic
 two-step peaks despite logarithmic flatness and a vanishing centered
@@ -11,7 +21,7 @@ No maintained trajectory or BGS counterexample is asserted.
 companion: the exact one-step phase average has a restoring drift
 controlled by a complete three-step path-swap bound. At the constructed
 peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration,
-persistence of hypotheses and all-time flatness remain open.
+persistence of hypotheses and deterministic all-time flatness remain open.
 
 The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
@@ -19,7 +29,8 @@ killed clock upper bounds and [uniform equality laws at every fixed order](condi
 at the log^(1+kappa) cutoff. The [full-depth clock measure](full_depth_clock_measure_20261011.md)
 includes its exact reference atom, matched by a pathwise finite-rank lower bound. [TRACE-073](schur_censoring_gap_20261011.md) proves
 ordered classical/general-contraction singular-value bounds and conditional
-intensity/reversal gap propagation at log^(3+kappa). All-time flatness probability and the scalar
+intensity/reversal gap propagation at log^(3+kappa). The maintained deterministic
+initial family's all-time flatness probability and the scalar
 microscopic law remain open.
 
 ## Maximal paths and source continuation, 11 October 2026

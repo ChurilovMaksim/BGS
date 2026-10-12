@@ -127,4 +127,14 @@ and [restoring mean drift](../mathematics/two_step_restoring_drift_20261012.md)
 are new maintained sources in the trace topic. The negative static result
 and positive one-step mechanism have different conclusions. Their exact
 review hashes and finite-control scope are in the dated packets;
-all-time flatness and deterministic BGS remain open.
+the maintained deterministic initial family's all-time flatness and BGS
+remain open.
+
+The [exact Haar feedback proof](../mathematics/haar_feedback_clock_law_20261012.md)
+is a further maintained source in the trace topic. It identifies the
+finite delay spectrum and proves unconditional clock laws for independent
+initial distributions with relative entropy O(log N) relative to Haar.
+The [review packet](../evidence/executions/20261012/haar-feedback/README.md)
+retains original and maintained review inputs, exact bounded controls,
+source comparison and the preceding CI mapping failure with its repair.
+It provides no deterministic or prescribed-origin microscopic implication.

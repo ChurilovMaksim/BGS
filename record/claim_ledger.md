@@ -2,6 +2,29 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## An unconditional clock class, 12 October 2026
+
+**BGS-TRACE-076 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[The exact Haar feedback law](../mathematics/haar_feedback_clock_law_20261012.md)
+couples a Haar effective scattering matrix, independent of its incoming
+delay, to \(T=I+X^*X\) with density
+\(\det(I+X^*X)^{-(N+u)}\). It gives the inverse-Jacobi spectrum,
+the exact rectangular atom, threshold \(k<u+1\) for trace moments when
+\(N>u\), and \(\mathbb ET=(N/u)I\).
+Haar marginals yield a simultaneous flatness failure bound
+\(N^3(2N)^{-K(1-1/m)}\), \(m=\lceil\log(2N)^{1+\kappa}\rceil\).
+TRACE-060 then supplies unconditional full-depth laws at every fixed clock
+order and the empirical weak law. These extend to independent initial
+distributions with relative entropy \(O(\log N)\) by taking \(K\) after
+\(\limsup_N\). Only the \(o(\log N)\) class receives high-probability
+flatness for each specified \(K>3\).
+A bounded-entropy microscopic-gap ensemble disproves the corresponding
+prescribed-origin Sine₂ implication, without an origin-averaged claim.
+The maintained deterministic initial matrix is outside this entropy class;
+its all-time probability, physical TRACE-055, signed TRACE-005 and BGS
+remain open. Prior Cauchy/Haar projection/beta objects are credited.
+[Exact review and execution scope](../evidence/executions/20261012/haar-feedback/README.md).
+
 ## Unitary two-step obstruction, 12 October 2026
 
 **BGS-TRACE-075 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**

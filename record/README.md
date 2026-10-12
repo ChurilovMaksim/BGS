@@ -25,6 +25,9 @@ not override this living surface.
 
 | Record | Exact role |
 |---|---|
+| [12 October Haar feedback](haar_feedback_continuation_20261012.md) | Exact scattering/delay joint law and unconditional entropy-stable clocks; deterministic and prescribed-origin boundaries |
+| [12 October restoring drift](two_step_drift_continuation_20261012.md) | Exact one-step mean mechanism beyond the static obstruction |
+| [12 October unitary obstruction](unitary_two_step_continuation_20261012.md) | Genuine-unitary counterexample to an extra two-step singular factor |
 | [11 October integrated research](chat_integration_20261011.md) | Preserved 199 inputs, maximal local paths, circular phase laws and exact claim boundaries |
 | [11 October cavity continuation](cavity_continuation_20261011.md) | Independently reviewed conditional fixed-moment bootstrap and stochastic-complement gap mechanism |
 | [8 October checkpoint](research_checkpoint_20261008.md) | Reconstructed phase-channel, sharp matrix-jet and real-flow proofs; pending deep-source inputs |

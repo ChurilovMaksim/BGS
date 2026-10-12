@@ -1,0 +1,133 @@
+{
+  "schema": "bgs-haar-static-checks-v1",
+  "started_utc": "2026-10-12T11:28:02.074495+00:00",
+  "status": "FAIL",
+  "scope": "11 static/source/bibliography/synchronization/manifest gates; not proof or full-workspace acceptance.",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/repository_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.32071,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/01.log",
+      "log_sha256": "197d1403b25a79462793357cd5700c87217b146eb72d193c7bf74f810018461c"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/scientific_registry_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.081032,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/02.log",
+      "log_sha256": "3e7922491d521bc82ed897b6868f1898977946a2da88be3d66fc4991779ae9f3"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/bibliographic_metadata_audit.py",
+        "--self-test"
+      ],
+      "exit_code": 1,
+      "seconds": 0.058812,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/03.log",
+      "log_sha256": "f8dc620e3f91255fe0fcf917ddbe7240cf94f13366d26abe29c56e34b2326d5e"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/render_claim_registry.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.029352,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/04.log",
+      "log_sha256": "ca57b079e313b85e314f167b8b2784cc10aadcdf7ec672b35a78d9065ad3dc5a"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/render_errata.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.034211,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/05.log",
+      "log_sha256": "4c0cee0495ac114569d0dc29c4b2d2ffec590d0b532696fa296de85e50e96efc"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/sync_return_sections.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 1.217674,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/06.log",
+      "log_sha256": "510e138fd96540afbb7dcaca2b463e0490b0757a525d36a49838e0868273f776"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/sync_fixed_map_section.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.409829,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/07.log",
+      "log_sha256": "539493b621d37764da4373e4ce51f17f00bc1c365d1e6eee2c560c2a35fe4f25"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/sync_finite_orbit_section.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.113501,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/08.log",
+      "log_sha256": "8681480c083c449f330b3b20bf3bf2ee681cc806b313c474dd583c1f888529d0"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/maintenance/audit_manuscript_references.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.131466,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/09.log",
+      "log_sha256": "e0a66be66204a1d284f72c05401bef6974ded06e82cfdae997b5786dec39ffa9"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+        "evidence/executions/20261012/haar-feedback/finite-controls/manifest.json",
+        "--root",
+        "/workspace/scratch/06745ba532e4/BGS"
+      ],
+      "exit_code": 0,
+      "seconds": 0.042983,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/10.log",
+      "log_sha256": "7dff7e6b1c5539ccc5797b5eb3a0ae844ca66753e8eef40a208024fbc6f688f6"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-W",
+        "error::SyntaxWarning",
+        "-m",
+        "compileall",
+        "-q",
+        "computations"
+      ],
+      "exit_code": 0,
+      "seconds": 0.041805,
+      "log": "evidence/executions/20261012/haar-feedback/static-checks/11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

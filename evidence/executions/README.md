@@ -30,3 +30,6 @@ Do not infer theorem status from execution success. See
 `../provenance.md` and `../index.json`.
 
 - [11 October checked chat integration](20261011/chat-research/README.md): canonical proof disposition, immutable original packets and separately recorded fresh executions.
+- [12 October Haar feedback](20261012/haar-feedback/README.md): independent analytic reconstruction, exact finite controls, entropy-class boundary and failed preceding CI mapping provenance.
+- [12 October restoring drift](20261012/two-step-drift/README.md): exact one-step mean mechanism and its bounded controls.
+- [12 October unitary obstruction](20261012/unitary-two-step/README.md): static genuine-unitary obstruction, higher-step companion and finite evidence.

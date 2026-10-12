@@ -1,0 +1,75 @@
+{
+  "claim_id": "BGS-TRACE-076-finite-controls-20261012",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/haar_feedback_law.py",
+    "computations/verification/haar_feedback_contract.json",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact noncommuting Cayley graph and feedback derivative identities at five Gaussian-rational colligations; independent real Jacobians and scalar determinant factorization; twelve one-port Haar diagonal moments from circle residues followed by exact radial integration.",
+    "coefficient_domain": "SymPy exact Gaussian rationals, real symbolic polynomials and exact elementary integrals.",
+    "conventions": "F_N(z)=zU_N; incoming T=S*F_u'(1); q=N-u; arbitrary fixed feedback phases absorbed in eliminated rows.",
+    "inputs": [
+      "computations/verification/haar_feedback_law.py",
+      "computations/verification/haar_feedback_contract.json",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+    ],
+    "bounds": {
+      "colligation_dimensions_u_q": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "one_port_power_orders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "one_port_u": "k,k+1,k+2 for each k",
+      "jacobian_cases": [
+        "scalar u=q=1 block change",
+        "2x2 non-diagonal complex Hermitian congruence",
+        "one-row two-column right multiplication by A+iI"
+      ]
+    },
+    "non_claims": [
+      "No finite computation establishes a Haar law, all-time flatness probability, entropy transfer or clock limit.",
+      "No deterministic-map flatness, prescribed-origin microscopic universality, BGS, priority or analytic Lean claim."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; fixed exact fixtures",
+    "seed": null
+  }
+}

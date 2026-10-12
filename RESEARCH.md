@@ -6,7 +6,17 @@ This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
 review or an attached manuscript cannot override it.
 
-## Maximal paths and source continuation, 11 October 2026
+## Full-depth clocks and microscopic paths
+
+[TRACE-076](mathematics/haar_feedback_clock_law_20261012.md) gives an exact
+finite Haar scattering/delay factorization and inverse-Jacobi spectrum.
+Its Haar trajectory bound closes the all-time probability premise for
+that initial ensemble. Every fixed full-depth clock law and the empirical
+weak law extend unconditionally to independent initial distributions
+with relative entropy O(log N) relative to Haar. The
+[outcome](record/haar_feedback_continuation_20261012.md) distinguishes
+this extension from the unresolved deterministic initial family and from
+prescribed-origin microscopic universality.
 
 [TRACE-074](mathematics/unitary_two_step_obstruction_20261012.md) closes the
 static unitary shortcut: flat entries and vanishing intensity singular
@@ -87,7 +97,8 @@ an atom explained by an exact pathwise rank bound. TRACE-073 supplies conditiona
 position-chain and [reversal-gap propagation](record/reversal_channel_continuation_20261011.md) at log^(3+kappa). Both require all-time entry
 flatness. The all-fixed-order clock induction is now accepted after
 two substantive word repairs; its uncorrected input remains preserved.
-TRACE-055 remains verification-pending. The flatness probability, actual cavity
+TRACE-055 remains verification-pending. The maintained deterministic model's
+flatness probability, actual cavity
 hypotheses and scalar microscopic law are further missing implications.
 
 ## Exact unresolved spectral estimates
@@ -138,6 +149,15 @@ clock commit passed all seven scientific CI jobs, 220 workspace checks,
 236 maintenance tests, 25 C++ builds and the 26-job Lake build, plus the
 independent manuscript workflow. These preceding receipts are explicitly
 not final-source acceptance for TRACE-074/075.
+
+The [Haar packet](evidence/executions/20261012/haar-feedback/README.md)
+adds independent proof reconstruction, exact noncommuting and Jacobian
+controls, twelve one-port moment integrals and an actual Wolfram result.
+It preserves the failed preceding source CI: 236 maintenance tests and
+six scientific jobs passed, but the workspace suite rejected omitted
+TRACE-074/075 epoch rows. The explicit epoch repair includes 076 while
+leaving historical wrapper bytes unchanged. Final-head acceptance is a
+separate execution receipt.
 
 The [7 October integration](record/checked_research_checkpoint_20261007.md),
 [Wave2 review](record/wave2_checked_integration_20261007.md), and

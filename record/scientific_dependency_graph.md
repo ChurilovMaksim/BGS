@@ -323,3 +323,18 @@ phase product, complete path-swap bound and general one-step drift inequality
 are self-contained. No edge closes TRACE-060's flatness premise, TRACE-055,
 TRACE-005 or BGS-BGS-001. Finite controls are distinct from analytic proof
 and probability conclusions.
+
+## Haar feedback and entropy-stable clocks, 12 October
+
+TRACE-076 has a self-contained finite Haar feedback factorization,
+inverse-Jacobi spectrum and Haar trajectory flatness probability bound.
+The edge TRACE-060 -> TRACE-076 supplies only the unconditional
+every-fixed-order clock and empirical weak-law corollaries.
+The old conditional theorem remains conditional for arbitrary deterministic
+initial sequences. TRACE-076 discharges that premise for Haar starts and
+transfers the clock laws to independent initial distributions with relative
+entropy O(log N), using a fixed K after limsup. It does not establish one
+prescribed-K high-probability flatness event throughout that entropy class.
+No edge to TRACE-073's actual-map initial gaps, TRACE-055, TRACE-005 or
+BGS-BGS-001 is added. The prescribed-origin gap example is a limitation of
+the entropy class, not an origin-averaged or deterministic BGS counterexample.

@@ -10,7 +10,16 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
-## Checked continuation, 11 October
+## Checked continuation, 12 October
+
+[The exact Haar feedback law](mathematics/haar_feedback_clock_law_20261012.md)
+identifies the scattering/delay joint law and proves high-probability
+entry flatness throughout the retained trajectory for Haar initial data.
+The full-depth clock laws now hold unconditionally for independent initial
+distributions with relative entropy O(log N) relative to Haar.
+A prescribed microscopic-gap example shows why this class alone cannot
+identify a fixed-origin spectral law. The deterministic model remains
+outside this initial-law class.
 
 [The 12 October unitary obstruction](mathematics/unitary_two_step_obstruction_20261012.md)
 shows that logarithmic entry flatness and a vanishing intensity singular
@@ -18,7 +27,7 @@ norm can coexist with a logarithmic two-step peak, even for genuine
 unitary matrices. Three-step mixing does not supply the two-step Schur
 variance estimate. The [fresh-phase drift theorem](mathematics/two_step_restoring_drift_20261012.md)
 proves a restoring one-step mean for the constructed peaks; concentration
-and all-time flatness probability remain open.
+and the deterministic model's all-time flatness probability remain open.
 
 
 [The new checkpoint](record/chat_integration_20261011.md) proves maximal
@@ -38,8 +47,10 @@ and an [explicit clock measure at every retained fraction](mathematics/full_dept
 including the atom forced by a finite rank bound. A separate harmonic-lift theorem
 contracts every classical centered singular value and controls the quantum
 position-chain and [reversal gaps](record/reversal_channel_continuation_20261011.md) down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
-conclusions still assume all-time entry flatness; its probability and the
-initial microscopic spectral law remain open.
+theorems assume all-time entry flatness. TRACE-076 discharges the clock
+premise for Haar starts and extends the clock laws by relative entropy;
+the maintained deterministic model's probability and initial microscopic
+spectral law remain open.
 
 ## What the conjecture asks
 

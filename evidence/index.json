@@ -1,6 +1,6 @@
 {
   "schema": "bgs-evidence-index-v1",
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "classes": {
     "finite-certificates": {
       "canonical_prefix": "evidence/certificates/",
@@ -25,7 +25,12 @@
       "current_paths": [
         "evidence/executions/20261011/chat-research/",
         "evidence/executions/20261011/cavity-continuation/",
-        "evidence/executions/20261011/reversal-gap/"
+        "evidence/executions/20261011/reversal-gap/",
+        "evidence/executions/20261011/fourth-delay/",
+        "evidence/executions/20261011/clock-universality/",
+        "evidence/executions/20261012/unitary-two-step/",
+        "evidence/executions/20261012/two-step-drift/",
+        "evidence/executions/20261012/haar-feedback/"
       ]
     },
     "dated-research-packets": {

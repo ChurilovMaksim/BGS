@@ -641,3 +641,242 @@ The canonical proof is
 Independent exact residue and 64-dimensional unitary controls are finite
 checks. All-time flatness probability, scalar microscopic identification,
 full TRACE-055, signed TRACE-005 and deterministic BGS remain open.
+
+\subsection{Exact Haar feedback and entropy-stable clocks (TRACE-076)}
+\label{sec:haar-feedback-20261012}
+Take an initial Haar unitary $U_N$ independent of the fresh feedback
+phases and uniform coordinate order, with $F_N(z)=zU_N$ and initial
+incoming and outgoing delays equal to the identity. Retain a
+predetermined set of $u$ coordinates and put $q=N-u$. Absorb any fixed
+feedback phases in the eliminated rows:
+$\widehat U=\operatorname{diag}(I_u,W_E)U_N$. Conditional on the independent
+phases and order, this matrix is still Haar. Define
+\[
+ X(z)=(I_q-z\widehat U_{EE})^{-1}z\widehat U_{ER},\qquad
+ F_u(z)=z\widehat U_{RR}+z\widehat U_{RE}X(z).
+\]
+Sequential and block feedback solve the same linear system in the
+unit disk and agree at regular boundary points. All required inverses
+exist almost surely at $z=1$: a fixed vector of the eliminated principal
+block would, by unitarity and the norm identity, extend to a fixed
+vector of $\widehat U$, an event of Haar measure zero.
+
+Set $S=F_u(1)$, $T=S^*F_u'(1)$ and $Q=STS^*$.
+The exact joint law is
+\[
+ \begin{aligned}
+ S&\sim\mathsf H_u,\qquad S\ \hbox{independent of }T,\qquad
+ T=I_u+X^*X,\\
+ d\mathbb P(X)&\propto\det(I_u+X^*X)^{-(N+u)}\,dX,\qquad
+ X\in\mathbb C^{q\times u}.
+ \end{aligned}                                           \tag{HF.1}
+\]
+The $X$ law is invariant under right unitaries, so $Q$ has the same law
+as $T$ and is separately independent of $S$. The pair $(T,Q)$ need not
+be independent of $S$, and no independence across sizes is asserted.
+At $q=0$, $T=Q=I_u$.
+
+\paragraph{Derivative and complete block factorization.}
+On $z=e^{i\theta}$, the unitary colligation identity is
+\[
+ z\widehat U\begin{pmatrix}I_u\\X(z)\end{pmatrix}
+       =\begin{pmatrix}F_u(z)\\X(z)\end{pmatrix}.
+\]
+Differentiate in $\theta$ and left multiply by $(F_u(z)^*,X(z)^*)$.
+The terms $X(z)^*\dot X(z)$ cancel, giving
+$-iF_u(z)^*\dot F_u(z)=I_u+X(z)^*X(z)$. At $\theta=0$ this is the
+delay identity in (HF.1).
+
+For the distribution, use the Hermitian Cayley variable
+\[
+ C=i(I+\widehat U)(I-\widehat U)^{-1}
+      =\begin{pmatrix}A&B^*\\B&D\end{pmatrix},\qquad
+ \widehat U=(C-iI)(C+iI)^{-1}.
+\]
+The differential
+$-i\widehat U^*d\widehat U=2(C-iI)^{-1}dC(C+iI)^{-1}$ gives Haar
+density proportional to $\det(I+C^2)^{-N}dC$. Here Hermitian
+congruence in dimension $n$ by $L$ has real Jacobian
+$|\det L|^{2n}$: singular values $s_j$ scale the real diagonal
+coordinates by $s_j^2$ and each complex off-diagonal coordinate by
+$s_js_k$, whose real two-dimensional contribution is $s_j^2s_k^2$.
+
+The block colligation gives $S=(A-iI)(A+iI)^{-1}$ and
+$X=B(A+iI)^{-1}$. With $G=I_q+XX^*$ make the change
+\[
+ B=X(A+iI),\qquad D=XAX^*+G^{1/2}YG^{1/2},\qquad Y=Y^* .
+\]
+Its real Jacobian is $\det(I_u+A^2)^q\det(G)^q$.
+The full derivative is block triangular in the order $(A,X,Y)$;
+the derivatives of the square root contribute no extra factor.
+Since
+$B(I+iA)^{-1}B^*=X(I-iA)X^*$, the Schur determinant gives
+\[
+ \det(I+iC)=\det(I+iA)\det G\det(I+iY).
+\]
+Consequently the transformed density is proportional to
+\[
+ \det(I_u+A^2)^{-u}\,
+ \det(G)^{-(N+u)}\,
+ \det(I_q+Y^2)^{-N}\,dA\,dX\,dY.                     \tag{HF.2}
+\]
+The original mass is finite and positive; Tonelli therefore makes
+each independent factor finite and positive. The $A$ factor is the
+Cayley image of Haar in dimension $u$, proving (HF.1).
+Haar-compatible Schur projections and Cauchy ensembles are prior
+objects; see \cite{BNN2011Haar}. Rectangular matrix-beta integrals and
+their singular-value reductions are prior as well
+\cite{Neretin2015Beta}. The displayed factorization and its delay
+coupling are derived here; no world-priority claim is made.
+
+\paragraph{Inverse-Jacobi spectrum, atom and moments.}
+Let $G_0$ and $Y_0$ be independent standard complex Gaussian matrices
+of sizes $q\times u$ and $2u\times u$, respectively. Put $W=Y_0^*Y_0$.
+Then
+\[
+ X\stackrel{d}{=}G_0W^{-1/2}.
+\]
+Indeed, the Wishart density of $W$ is proportional to
+$e^{-\operatorname{Tr}W}\det(W)^u$, and $G_0=XW^{1/2}$ has real
+Jacobian $\det(W)^q$. Integrating $W$ gives exponent $-(N+u)$.
+For $B_0=G_0^*G_0$, the eigenvalues of $T^{-1}$ are those of
+\[
+ J=(W+B_0)^{-1/2}W(W+B_0)^{-1/2}.                    \tag{HF.3}
+\]
+This is a spectral identity, not an equality of differently ordered
+noncommuting matrices.
+
+Writing $r=\min(q,u)$, the squared-singular-value volume of a complex
+$q\times u$ matrix is
+$\prod_{\ell=1}^r t_\ell^{|q-u|}
+ \prod_{\ell<j}(t_\ell-t_j)^2\,dt$ up to angular volume.
+The angular tangent between each two singular directions contributes
+$(\sigma_\ell^2-\sigma_j^2)^2$; the unmatched directions contribute
+$\sigma_\ell^{2|q-u|}$, and the diagonal polar coordinate contributes
+$\sigma_\ell\,d\sigma_\ell$.
+The substitution $y_\ell=(1+t_\ell)^{-1}$ in (HF.1) gives
+\[
+ d\mathbb P(y)\propto
+ \prod_{\ell=1}^r y_\ell^u(1-y_\ell)^{|q-u|}
+ \prod_{\ell<j}(y_\ell-y_j)^2\,dy,\quad 0<y_\ell<1.    \tag{HF.4}
+\]
+The power of $y_\ell$ is $N+u-|q-u|-2r=u$.
+If $q<u$, the remaining $u-q$ eigenvalues of $T^{-1}$ equal one.
+Thus $H=uT/N$ has exactly the atom $\max(0,2-N/u)$ at $u/N$.
+For $q>0$ and $k>0$,
+\[
+ \mathbb E\operatorname{Tr}T^k<\infty
+       \quad\Longleftrightarrow\quad k<u+1 .
+\]
+The necessity and sufficiency follow from the density near $y=0$;
+restricting the other eigenvalues to separated interior intervals
+establishes necessity. Finite-size spectra remain unbounded.
+
+Projecting one Gaussian column of $Y_0$ orthogonally to the other
+$u-1$ columns leaves $u+1$ complex Gaussian directions. The Schur
+complement is gamma of shape $u+1$, with inverse mean $1/u$.
+Unitary invariance gives $\mathbb EW^{-1}=I_u/u$; independence and
+$\mathbb EG_0^*G_0=qI_u$ then yield the exact normalization
+\[
+ \mathbb ET=(N/u)I_u,\qquad \mathbb EH=I_u.            \tag{HF.5}
+\]
+
+\paragraph{Whole-trajectory Haar probability and unconditional clocks.}
+Let $\ell=\log(2N)$, $m=\lceil\ell^{1+\kappa}\rceil$, $\kappa>0$,
+and let $A_m(K)$ require max entry intensity at most $K\ell/u$
+simultaneously for every size $u\ge m$.
+Every scattering marginal is Haar. The Haar entry tail
+$(1-t)^{u-1}$ follows from a normalized complex Gaussian column,
+and a union bound gives
+\[
+ \mathbb P_{\mathsf H_N}(A_m(K)^c)
+ \le\sum_{u=m}^N u^2e^{-K\ell(u-1)/u}
+ \le N^3(2N)^{-K(1-1/m)}=:b_N(K).                    \tag{HF.6}
+\]
+The entry failure probability is zero if the threshold is at least one.
+For each fixed $K>3$,
+$b_N(K)=2^{-K}N^{3-K}(1+o(1))$, because $\ell/m\to0$.
+Independent depths were not used.
+
+Write $\mathcal E_{L,N}$ for the maximum error in all conditional
+TRACE-060 clock conclusions through a fixed power $L$, at all $u\ge m$.
+The theorem for every deterministic initial sequence supplies a common
+$\varepsilon_N(L,K,\kappa)\to0$ with
+\[
+ \sup_{U\in U(N)}
+ \mathbb P_U\bigl(A_m(K)\cap
+       \{\mathcal E_{L,N}>\varepsilon_N\}\bigr)\longrightarrow0.  \tag{HF.7}
+\]
+If uniformity failed, a violating initial matrix could be chosen at
+infinitely many dimensions, contradicting that deterministic-sequence
+quantifier. Integrate (HF.7) over the initial Haar law and add (HF.6).
+Incoming/outgoing diagonal power laws, off-diagonal decay, mixed-entry
+decay and all fixed empirical moments are now unconditional in
+probability, uniformly over the full retained depth.
+
+The empirical probability measure of $H$ converges uniformly to the
+maintained family $\mu_{u/N}$ in the bounded-Lipschitz metric.
+For clarity, the finite-moment criterion is uniform over $x\in[0,1]$
+and probability measures on $[0,\infty)$. If no finite number of
+moments forced a given positive weak-metric tolerance, choose
+counterexamples with the number of controlled moments tending to infinity
+and tolerances to zero. Pass to $x\to x_0$. First moments give
+tightness; each next higher fixed moment gives uniform integrability.
+Every weak limit has all moments of $\mu_{x_0}$. Common compact
+reference support and moment determinacy identify that limit,
+contradicting the chosen tolerance. This applies a finite fixed $L$
+to (HF.7), rather than inserting a growing order into TRACE-060.
+
+\paragraph{Relative entropy and its microscopic limitation.}
+Let an independent initial law $\nu_N$ have finite
+$D_N=D(\nu_N\Vert\mathsf H_N)$. The joint entropy including fresh
+phase/order randomness is still $D_N$. If $p_N$ and $q_N$ are the
+respective failure probabilities of $A_m(K)$, binary Jensen gives
+\[
+ D_N\ge p_N\log(p_N/q_N)
+       +(1-p_N)\log((1-p_N)/(1-q_N))
+       \ge p_N\log(1/q_N)-\log2.
+\]
+For $q_N=0$, absolute continuity gives $p_N=0$.
+Otherwise (HF.6) yields, for all large $N$,
+\[
+ p_N\le\frac{D_N+\log2}{\log(1/b_N(K))}.               \tag{HF.8}
+\]
+Hence $D_N=o(\log N)$ proves high-probability flatness for each
+fixed $K>3$. More generally, if
+$C=\limsup_N D_N/\log N<\infty$, integrating (HF.7) gives
+for every fixed error tolerance $\eta>0$
+\[
+ \limsup_N\mathbb P_{\nu_N}(\mathcal E_{L,N}>\eta)
+       \le C/(K-3).
+\]
+Let $K$ tend to infinity \emph{after} this limsup. Every fixed clock
+conclusion and the full-depth empirical weak law therefore hold
+unconditionally when $D_N=O(\log N)$. This argument gives no
+high-probability flatness statement for one prescribed finite $K$
+throughout that larger entropy class.
+
+The entropy condition alone cannot identify a prescribed-origin
+microscopic spectral law. For $0<c<1$, a fixed arc of angular length
+$2\pi c/N$ has Haar expected count $c$, so its void event $E_N$ has
+probability at least $1-c$. Conditioning Haar on $E_N$ costs
+$-\log\mathbb P(E_N)\le-\log(1-c)$ entropy and preserves the clock
+conclusions above. Its initial rescaled point process has a forbidden
+interval of length $c$. A nonzero nonnegative continuous test function
+compactly supported inside that interval integrates to zero for every $N$.
+The intensity-one Sine$_2$ process gives a positive expected integral
+and hence a positive probability of a nonzero integral. Local
+point-process convergence to Sine$_2$ at that origin is impossible.
+This is not an origin-averaged counterexample. A deterministic initial
+matrix has infinite relative entropy to Haar. Classical dynamical
+entropy is a different quantity. The maintained deterministic
+trajectory probability, full physical TRACE-055, signed TRACE-005 and
+global BGS remain open.
+
+The canonical source is
+\path{mathematics/haar_feedback_clock_law_20261012.md}.
+Independent reconstruction and maintained-transfer review are separate
+from five exact colligation controls, symbolic Jacobians, twelve
+one-port moment integrals and two actually executed Wolfram identities.
+None of those finite controls proves the probability limits,
+entropy transfer, mathematical priority or deterministic BGS.

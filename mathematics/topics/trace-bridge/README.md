@@ -12,6 +12,8 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
+- **[Exact Haar feedback and entropy-stable clocks](../../haar_feedback_clock_law_20261012.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
+
 - **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
 - **[Unitary two-step obstruction](../../unitary_two_step_obstruction_20261012.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
 
@@ -132,8 +134,10 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [Stochastic-complement singular spectrum and quantum gap](../../schur_censoring_gap_20261011.md) — Classical and arbitrary-complex-contraction singular bounds; conditional intensity/reversal gap propagation at log^(3+kappa).
 
 The [review record](../../../record/cavity_continuation_20261011.md) preserves
-exact input lineage. Fourth/all-order equality laws and flatness probability
-remain open.
+exact input lineage. Equality laws at every fixed order are accepted
+under all-time entry flatness. TRACE-076 discharges this premise for
+Haar starts and extends the clock laws to its independent entropy class.
+The maintained deterministic initial family's probability remains open.
 
 - [Fourth delay law and diagonal-square concentration](../../fourth_delay_law_20261011.md) — Independently reconstructed conditional TRACE-060 extension.
 

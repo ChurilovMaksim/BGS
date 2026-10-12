@@ -3406,6 +3406,34 @@
       ],
       "boundary": "One-step frozen-label Schur feedback with a fresh uniform phase. General nonzero deleted diagonal, exact complete coherence estimate by P^3, and delta<=1/16 drift bound. At TRACE-074 witnesses E Delta K=-(1+o(1))K/u. No higher moments, high-probability or sustained decay, all-time flatness, physical microscopic identification, BGS or priority claim.",
       "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-076",
+      "title": "Exact Haar feedback delay law and unconditional entropy-stable full-depth clocks",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL CLOCK INPUT EXPLICIT; FINITE CONTROLS SEPARATE",
+      "source": "mathematics/haar_feedback_clock_law_20261012.md",
+      "dependencies": [
+        "BGS-TRACE-060"
+      ],
+      "dependency_scope": "The finite Haar feedback/Cauchy/matrix-beta factorization, inverse-Jacobi eigenvalue law, finite-moment threshold, exact first moment and Haar flatness probability are self-contained. TRACE-060 with its full-depth reference measure is used only for the unconditional clock conclusions and entropy-stable extension.",
+      "external_dependencies": [],
+      "proof_dependencies": [
+        "mathematics/conditional_clock_universality_20261011.md",
+        "mathematics/full_depth_clock_measure_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261012/haar-feedback/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/haar_feedback_law.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Independent Haar initial unitary, fresh independent feedback phases and uniform independent coordinate order, F_N(z)=zU_N and T_N=I. Exact S/T independence, matrix-beta graph law, inverse-Jacobi spectrum with the rectangular atom, and trace-moment threshold k<u+1 when q>0. Unconditional every-fixed-order full-depth clock conclusions extend to independent initial laws with relative entropy O(log N); o(log N) gives high-probability flatness for each fixed K>3, whereas O(log N) uses K after limsup and gives no such flatness conclusion for one prescribed finite K. A bounded-entropy prescribed-gap ensemble rules out the corresponding fixed-origin Sine2 implication. No deterministic-map transfer, origin-averaged counterexample, BGS, priority or analytic Lean claim.",
+      "priority_status": "not-established"
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

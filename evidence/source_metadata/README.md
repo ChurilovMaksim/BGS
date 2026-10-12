@@ -2,7 +2,7 @@
 
 ## Scope and findings
 
-Current coverage is 46/46 registered references in [the reviewed Schur cache](registry_metadata_20261011_cavity.json), checked by the maintained bibliographic audit. The Tropp mapping now names the scalar maximal theorem actually used. Earlier caches and review observations are retained unchanged. Historical initial coverage was 34/34, followed by a 35/35 constructive extension. Initial pass covered 28; six returns/Pell sources were added after an independent corpus review. The registry includes role-qualified attribution and internally reproved inputs as well as load-bearing external theorems. Metadata agreement is not theorem applicability.
+Current coverage is 46/46 registered references in [the reviewed Haar-impact cache](registry_metadata_20261012_haar.json), checked by the maintained bibliographic audit. The [explicit impact review](../../record/bibliographic_impact_haar_20261012.json) adds only TRACE-076 as a transitive user of the scalar Tropp input through TRACE-060. Every primary-source observation and accepted source field is preserved from [the Schur cache](registry_metadata_20261011_cavity.json), whose bytes remain unchanged. Historical initial coverage was 34/34, followed by a 35/35 constructive extension. Initial pass covered 28; six returns/Pell sources were added after an independent corpus review. The registry includes role-qualified attribution and internally reproved inputs as well as load-bearing external theorems. Metadata agreement is not theorem applicability.
 
 The additional internal edge is RET-002 -> RET-001 (prerequisite -> dependent). Other claims, including the current FORMAL-001 build status, were preserved.
 
