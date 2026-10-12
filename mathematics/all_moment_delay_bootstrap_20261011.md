@@ -4,11 +4,14 @@
 **State:** CONDITIONAL on the displayed all-time entry-flatness event.
 **Review:** the near-flatness bootstrap was independently reconstructed on
 11 October 2026 from its preserved 8 October candidate. No flatness
-probability, growing-order uniformity, unrestricted high moments, equality
-law above order three, scalar microscopic law or BGS conclusion is asserted.
+probability, growing-order uniformity, unrestricted high moments, scalar
+microscopic law or BGS conclusion is asserted by this upper-moment proof.
 The second/third equality extension in Section 7 was independently reconstructed
-separately on the same date. Both reviews cover analytic arguments; the
+separately on the same date. The [further fourth-delay proof](fourth_delay_law_20261011.md)
+then reconstructs the uniform diagonal-square and fourth trace laws. Both reviews cover analytic arguments; the
 finite computations have narrower scope.
+The later [all-fixed-order equality theorem](conditional_clock_universality_20261011.md)
+closes that induction under the same premise and identifies the full-depth measure.
 
 The original candidate and its exact review input are preserved in the dated
 [cavity packet](../evidence/executions/20261011/cavity-continuation/README.md).
@@ -159,8 +162,8 @@ Exact finite words are supplementary controls, not the universal proof.
 
 ## 7. Uniform second and third equality laws
 
-This continuation does not use the unproved diagonal-square or fourth-law
-induction. Its separate independent internal reconstruction passed; the
+This continuation does not use the diagonal-square or fourth-law
+induction, which was checked independently in the later extension. Its separate independent internal reconstruction passed; the
 exact reviewed input is retained in the dated evidence packet.
 Write Y_k(u)=u^(k-1)Tr(T_u^k)/N^k for the un-killed quantity and
 f_2(x)=2-x, f_3(x)=6-6x+x^2. At m=ceil(ell^(1+kappa)), the separately reviewed stronger

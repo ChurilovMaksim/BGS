@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-11",
+  "base_commit": "b126cfb18f445b82358fc156632873082ac22503",
+  "reviewer": "/root/fixed_moment_delay_review",
+  "kind": "independent internal mathematical reconstruction",
+  "input": "inputs/full_depth_review_input.md",
+  "input_sha256": "bfa8f7e7a621fd7f13718183593092af755bc60ddbfd76af4d681277b097fe1f",
+  "verdict": "proved as an algebraic reference proposition, exact pathwise rank bound and comparison with the prior inverse-Jacobi family",
+  "reconstructed_obligations": [
+    "formal root and Lagrange inversion",
+    "moment PDE and triangular evolution",
+    "branch sign and support endpoints",
+    "removability at zero including x=0 double denominator",
+    "atom test including the x=1/2 merging endpoint",
+    "mass, moments and compact determinacy by Cauchy reconstruction",
+    "recursive embedding product and rank bound on every defined trajectory",
+    "full-trace to normalized-corner convention",
+    "inverse-Jacobi support, density Jacobian and atom mapping"
+  ],
+  "editorial_repairs": [
+    "Use the atom limit at the branch endpoint x=1/2; ordinary residue applies only away from it.",
+    "Include primary equation (3.1) and the explicit full-trace to normalized-corner formula."
+  ],
+  "non_claims": [
+    "No actual Schur matrix freeness",
+    "No flatness probability",
+    "No rank equality for arbitrary finite trajectories",
+    "No global or microscopic BGS",
+    "No world priority claim for the known reference family"
+  ]
+}

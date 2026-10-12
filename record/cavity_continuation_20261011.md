@@ -124,3 +124,15 @@ alone into microscopic universality for all chaotic systems.
 Fresh final verification and source-bound build evidence are recorded in the
 [packet](../evidence/executions/20261011/cavity-continuation/README.md), with
 older receipts kept at their original source scope.
+
+## Subsequent fourth-order reconstruction
+
+[The later fourth-delay continuation](fourth_delay_continuation_20261011.md)
+independently reconstructs diagonal-square concentration and the fourth trace
+equality law. Its separate packet fixes the later base and exact review input.
+The earlier execution receipts above retain their original scope.
+
+
+The subsequent [all-fixed-order continuation](clock_universality_continuation_20261011.md)
+now closes the conditional clock equality induction and identifies the full-depth
+reference measure. Earlier execution receipts remain scoped to their recorded inputs.

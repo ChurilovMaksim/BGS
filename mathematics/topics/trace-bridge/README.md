@@ -128,3 +128,8 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 The [review record](../../../record/cavity_continuation_20261011.md) preserves
 exact input lineage. Fourth/all-order equality laws and flatness probability
 remain open.
+
+- [Fourth delay law and diagonal-square concentration](../../fourth_delay_law_20261011.md) — Independently reconstructed conditional TRACE-060 extension.
+
+- [Every fixed clock power under entry flatness](../../conditional_clock_universality_20261011.md)
+- [Full-depth clock measure and exact rank atom](../../full_depth_clock_measure_20261011.md)

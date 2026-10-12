@@ -1,0 +1,7 @@
+{
+  "initial_manifest": "reference-controls/manifest.json",
+  "initial_verifier_sha256": "848aa88148e364bbcda26767b7cd1e93d3f13870a28e5e5d65df6f47f4d9034d",
+  "preserved_initial_verifier": "inputs/reference_verifier_before_guard_alignment.py",
+  "disposition": "Superseded finite execution: the assertion guard did reject optimized Python, but its error message did not match the repository entry-policy contract. Align the guard, repeat the bounded run, and accept only reference-controls-final. The original receipt is retained unchanged and is no longer a current-source receipt.",
+  "mathematical_change": "none; only the fail-closed guard diagnostic was aligned"
+}

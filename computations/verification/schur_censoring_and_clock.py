@@ -11,6 +11,7 @@ if not __debug__:
 
 from fractions import Fraction
 from itertools import product
+from math import comb, factorial
 import argparse
 import json
 from pathlib import Path
@@ -128,6 +129,125 @@ def exact_clock_words() -> tuple[int, int]:
     return cases, words
 
 
+def canonical(matrix):
+    return matrix.applyfunc(sp.expand)
+
+
+def polynomial_multiply(left, right):
+    result = {}
+    for (r, s), a in left.items():
+        for (t, v), b in right.items():
+            key = (r + t, s + v)
+            value = canonical(a * b)
+            result[key] = canonical(result[key] + value) if key in result else value
+    return result
+
+
+def phase_moment(r, s, a):
+    """Exact residue of w^(r-1)/((1-aw)^r(w-conj(a))^s)."""
+    if r == s == 0:
+        return sp.Integer(1)
+    if not r or not s:
+        return sp.Integer(0)
+    abar = sp.conjugate(a)
+    d = sp.expand(1 - a * abar)
+    value = 0
+    for j in range(min(r - 1, s - 1) + 1):
+        degree = s - 1 - j
+        rising = factorial(r + degree - 1) // factorial(r - 1)
+        value += (sp.Rational(comb(r - 1, j) * rising, factorial(degree))
+                  * abar ** (r - 1 - j) * a ** degree / d ** (r + degree))
+    return sp.expand(value)
+
+
+def phase_mean(polynomial, a):
+    first = next(iter(polynomial.values()))
+    result = sp.zeros(first.rows, first.cols)
+    for (r, s), matrix in polynomial.items():
+        result += matrix * phase_moment(r, s, a)
+    return canonical(result)
+
+
+def unitary_fixture(n, seed):
+    s = sp.eye(n)
+    for start in [range(n - 1), reversed(range(n - 1))]:
+        for j in start:
+            rotation = sp.eye(n)
+            rotation[j, j] = rotation[j + 1, j + 1] = sp.Rational(3, 5)
+            if (j + seed) % 2:
+                rotation[j, j + 1] = rotation[j + 1, j] = 4 * sp.I / 5
+            else:
+                rotation[j, j + 1] = sp.Rational(4, 5)
+                rotation[j + 1, j] = -sp.Rational(4, 5)
+            s = canonical(rotation * s)
+    phases = sp.diag(*[sp.I ** ((j + seed) % 4) for j in range(n)])
+    return canonical(phases * s)
+
+
+def exact_feedback_power_controls():
+    cases = nonzero = gamma_checks = square_checks = quartic_checks = 0
+    for n in [2, 3, 4]:
+        for seed in [0, 1]:
+            s = unitary_fixture(n, seed)
+            assert canonical(s * s.H) == sp.eye(n)
+            x = sp.Matrix(n, n, lambda i, j:
+                          ((i + 2 * j + seed) % 5 - 2)
+                          + sp.I * ((2 * i + j + seed) % 3 - 1))
+            t = canonical(sp.eye(n) + x.H * x)
+            assert canonical(s * t - t * s) != sp.zeros(n)
+            for e in range(n):
+                indices = [j for j in range(n) if j != e]
+                b, c = s.extract([e], indices), s.extract(indices, [e])
+                a, d = s[e, e], sp.expand(1 - abs(s[e, e]) ** 2)
+                assert d > 0
+                # K has retained coordinate columns; both factors are rectangular.
+                selection = sp.eye(n).extract(range(n), indices)
+                coordinate = sp.eye(n)[:, e]
+                k = {(0, 0): selection, (1, 0): canonical(coordinate * b)}
+                kh = {(v, r): matrix.H for (r, v), matrix in k.items()}
+                tp = polynomial_multiply(polynomial_multiply(kh, {(0, 0): t}), k)
+                powers = [None, tp]
+                for _ in range(3):
+                    powers.append(polynomial_multiply(powers[-1], tp))
+                qmat = canonical(s * t * s.H)
+                t2, t3, t4 = [canonical(t ** degree) for degree in [2, 3, 4]]
+                q2, q3 = [canonical(qmat ** degree) for degree in [2, 3]]
+                gamma, beta = canonical(s * t), canonical(s * t2)
+                spoly = {(0, 0): s.extract(indices, indices),
+                         (1, 0): canonical(c * b)}
+                mean_gamma = phase_mean(polynomial_multiply(spoly, tp), a)
+                assert mean_gamma == gamma.extract(indices, indices)
+                gamma_checks += (n - 1) ** 2
+                mean_square = phase_mean(powers[2], a)
+                tt, ss, gg = t[e, e], qmat[e, e], gamma[e, e]
+                for retained, j in enumerate(indices):
+                    expected = (t2[j, j]
+                                + (abs(s[e, j]) ** 2 * t2[e, e]
+                                   + 2 * tt * sp.re(sp.conjugate(s[e, j]) * gamma[e, j])) / d
+                                + 2 * abs(s[e, j]) ** 2 * tt
+                                * sp.re(sp.conjugate(a) * gg) / d ** 2)
+                    assert sp.expand(mean_square[retained, retained] - expected) == 0
+                    square_checks += 1
+                expected4 = (sp.trace(t4)
+                             + 4 * (tt * q3[e, e] + t2[e, e] * q2[e, e]
+                                    + ss * t3[e, e]) / d
+                             + 8 * sp.re(sp.conjugate(a) *
+                                         (gg * (ss * t2[e, e] + tt * q2[e, e])
+                                          + tt * ss * beta[e, e])) / d ** 2
+                             + (1 + abs(a) ** 2) *
+                             (2 * tt ** 2 * ss ** 2 + 4 * tt * ss * abs(gg) ** 2) / d ** 3
+                             + 8 * tt * ss * sp.re(sp.conjugate(a) ** 2 * gg ** 2) / d ** 3)
+                assert sp.expand(sp.trace(phase_mean(powers[4], a)) - expected4) == 0
+                quartic_checks += 1
+                cases += 1
+                nonzero += int(a != 0)
+    return {"arithmetic": "exact Gaussian rationals via SymPy; phase integrals by residues",
+            "dimensions": [2, 3, 4], "fixture_seeds": [0, 1],
+            "cases": cases, "nonzero_deleted_diagonal_cases": nonzero,
+            "mixed_clock_entries": gamma_checks, "diagonal_square_identities": square_checks,
+            "fourth_trace_identities": quartic_checks}
+
+
 def feedback_controls() -> dict:
     rng = np.random.default_rng(20261011)
     samples = phase_points = 0
@@ -175,6 +295,7 @@ def main() -> None:
               'exact_censoring_cases': cases, 'exact_lift_energy_identities': identities,
               'exact_noncommuting_clock_examples': clock_cases,
               'exact_clock_words': words, 'clock_orders': [2, 3, 4, 5, 6, 7],
+              'exact_feedback_power_controls': exact_feedback_power_controls(),
               'diagnostics': feedback_controls(),
               'non_claims': ['asymptotic proof by finite computation', 'flatness probability',
                              'equality clock laws', 'BGS universality', 'worldwide priority']}

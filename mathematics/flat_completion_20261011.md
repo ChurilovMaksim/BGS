@@ -79,7 +79,7 @@ M=Z₀*diag((F_N)_{ii})C₀ и фазовых характеров d̄_i d_j, i�
 \[
  \mathbb E\|G\|_{HS}^2
  =\|M\|_{HS}^2+
-rac1N\sum_{i\ne j}\|z_i\|^2\|c_j\|^2
+\frac1N\sum_{i\ne j}\|z_i\|^2\|c_j\|^2
  \le\frac{m+m^2}{N}. \tag{5}
 \]
 

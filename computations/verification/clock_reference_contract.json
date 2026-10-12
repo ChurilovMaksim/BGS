@@ -1,0 +1,66 @@
+{
+  "claim_id": "BGS-TRACE-060-reference-finite-controls-20261011",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/clock_reference_measure.py",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/clock_reference_contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact Lagrange, quadratic recurrence, triangular ODE and repaired open-word merged-gap count through order eight; separate density-plus-atom quadrature at eight fixed fractions.",
+    "coefficient_domain": "SymPy rational polynomial arithmetic; separate 60-digit mpmath quadrature.",
+    "conventions": "H=uT/N; x=u/N; reference measure normalized to probability, including its atom at x.",
+    "inputs": [
+      "computations/verification/clock_reference_measure.py",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "computations/verification/clock_reference_contract.json"
+    ],
+    "bounds": {
+      "exact_orders": [
+        1,
+        8
+      ],
+      "quadrature_fractions": [
+        "0",
+        "1/5",
+        "49/100",
+        "1/2",
+        "51/100",
+        "4/5",
+        "99/100",
+        "1"
+      ],
+      "quadrature_orders": [
+        0,
+        4
+      ],
+      "quadrature_precision_digits": 60,
+      "quadrature_tolerance": "1e-35"
+    },
+    "non_claims": [
+      "No random Schur trajectory or asymptotic probability is tested.",
+      "Numerical quadrature is not an interval-certified integral.",
+      "No actual freeness, entry-flatness probability, edge or BGS law."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; fixed deterministic algebraic and quadrature fixtures",
+    "seed": null
+  }
+}

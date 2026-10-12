@@ -68,11 +68,13 @@ TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 The full five-primary simplicity and deep all-order cavity hierarchy are not
 promoted from a summary. TRACE-057/059 now reconstruct source covariance and
 physical L2 continuation. The [reviewed cavity continuation](record/cavity_continuation_20261011.md)
-strengthens TRACE-060 to all fixed killed upper moments and uniform second/third
-equality laws at the log^(1+kappa) cutoff. TRACE-073 supplies conditional
+strengthens TRACE-060 to all fixed killed upper moments and
+[uniform equality laws at every fixed order](record/clock_universality_continuation_20261011.md)
+at the log^(1+kappa) cutoff. The full-depth reference measure includes
+an atom explained by an exact pathwise rank bound. TRACE-073 supplies conditional
 position-chain and [reversal-gap propagation](record/reversal_channel_continuation_20261011.md) at log^(3+kappa). Both require all-time entry
-flatness. Fourth and all-order equality inductions remain
-[retained candidates](record/research_candidates/20261011/README.md).
+flatness. The all-fixed-order clock induction is now accepted after
+two substantive word repairs; its uncorrected input remains preserved.
 TRACE-055 remains verification-pending. The flatness probability, actual cavity
 hypotheses and scalar microscopic law are further missing implications.
 

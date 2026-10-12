@@ -2868,7 +2868,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [],
-      "boundary": "Verification-pending complete deep-source hierarchy. TRACE-057/059 prove covariance and physical-source comparison; strengthened TRACE-060 proves conditional joint barriers, all fixed killed upper moments and second/third equality laws. TRACE-073 conditionally propagates the initial position-chain gap. They do not prove all-time flatness probability, fourth/all-order equality laws, typical complete cavity hypotheses or the scalar microscopic reference. TRACE-005 and BGS remain open.",
+      "boundary": "Verification-pending complete physical deep-source hierarchy. TRACE-057/059 prove covariance and physical-source comparison; strengthened TRACE-060 proves conditional first-delay barriers, all fixed killed upper moments, uniform equality of every fixed clock power, mixed-entry control and the full-depth reference measure. TRACE-073 conditionally propagates initial intensity and reversal gaps. They do not prove all-time flatness probability, typical complete physical cavity hypotheses or the scalar microscopic eigenphase reference. TRACE-005 and BGS remain open.",
       "priority_status": "not-established",
       "dependency_scope": "TRACE-053 is the reconstructed channel sub-input only; this edge does not discharge the remaining submitted inputs.",
       "proof_dependencies": [
@@ -2971,7 +2971,7 @@
     },
     {
       "id": "BGS-TRACE-060",
-      "title": "Joint delay concentration, all fixed killed moments and second/third equality laws",
+      "title": "All fixed conditional clock powers, full-depth measure and exact rank atom",
       "state": "conditional",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL ON ALL-TIME FLATNESS; FINITE CONTROLS SEPARATE",
       "source": "mathematics/delay_bootstrap_20261011.md",
@@ -2980,21 +2980,27 @@
         "EXT-TROPP-2011"
       ],
       "proof_dependencies": [
-        "mathematics/all_moment_delay_bootstrap_20261011.md"
+        "mathematics/all_moment_delay_bootstrap_20261011.md",
+        "mathematics/fourth_delay_law_20261011.md",
+        "mathematics/conditional_clock_universality_20261011.md",
+        "mathematics/full_depth_clock_measure_20261011.md"
       ],
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md",
-        "evidence/executions/20261011/cavity-continuation/README.md"
+        "evidence/executions/20261011/cavity-continuation/README.md",
+        "evidence/executions/20261011/fourth-delay/README.md",
+        "evidence/executions/20261011/clock-universality/README.md"
       ],
       "verifiers": [
         "computations/verification/chat_research_20261011.py",
-        "computations/verification/schur_censoring_and_clock.py"
+        "computations/verification/schur_censoring_and_clock.py",
+        "computations/verification/clock_reference_measure.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
-      "boundary": "For fixed K,kappa>0 and m=ceil(log(2N)^(1+kappa)), intersection-probability joint incoming/outgoing first-delay concentration, uniformly bounded all fixed killed clock moments, and uniform second/third equality laws Y2=2-u/N+o(1), Y3=6-6u/N+(u/N)^2+o(1). Additional flatness probability tending to one yields probability convergence and killed-expectation convergence only. All-time flatness probability, growing-order bounds, fourth/all-order equality laws, unrestricted exceptional-event moments, scalar local-law identification and BGS remain open.",
+      "boundary": "For every fixed L, K,kappa>0 and m=ceil(log(2N)^(1+kappa)), intersection-probability uniform equality of all incoming/outgoing diagonal powers through L, vanishing off-diagonal powers and mixed entries S(uT/N)^r, and all fixed empirical clock moments. The explicit full-depth reference measure follows conditionally; its rank lower bound is exact pathwise. Additional flatness probability tending to one yields actual weak probability convergence and killed-expectation convergence only. Flatness probability, growing-order and edge bounds, unrestricted exceptional-event moments, actual freeness, scalar microscopic eigenphase identification and BGS remain open. Two false original finite-word assertions were repaired before promotion; finite controls and internal review are not formal or external certification.",
       "priority_status": "not-established"
     },
     {

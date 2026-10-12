@@ -1,0 +1,87 @@
+{
+  "commit": "b126cfb18f445b82358fc156632873082ac22503",
+  "tree": "7fd2e2a0ec0e9862cf1517d9c1fa6f80454cfcf9",
+  "scientific_run": 38148344486,
+  "manuscript_run": 38148344525,
+  "jobs": [
+    {
+      "id": 114496330908,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496330979,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496331070,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496331095,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496373645,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496373710,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114496373719,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "other_jobs": [
+    {
+      "id": 114496330993,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "execution_scopes": {
+    "computation": {
+      "job_id": 114496373645,
+      "log_characters": 108175,
+      "matching_summary_lines": [
+        "2026-10-11T15:17:14.2303449Z cpp_return_word_certificate 0",
+        "2026-10-11T15:17:14.2638043Z cpp_schur_censoring_energy_verifier 0",
+        "2026-10-11T15:17:14.2827702Z cpp_spectral_lattice_clustering 0",
+        "2026-10-11T15:17:20.8399552Z research_checkpoint_replay 0",
+        "2026-10-11T15:17:21.3059049Z check_resonance_certificate 0",
+        "2026-10-11T15:17:22.1733447Z extremal_independent_replay 0"
+      ],
+      "raw_log": "evidence/executions/20261011/fourth-delay/preceding-ci/computation.log",
+      "sha256": "11a713f0aeb0477b27862f97f532336c5d82e8688a15b558240bee560ba1c82e",
+      "zero_exit_named_checks": 219,
+      "maintenance_summary_lines": [
+        "2026-10-11T14:51:55.4618667Z Ran 236 tests in 395.588s"
+      ]
+    },
+    "formalization": {
+      "job_id": 114496373719,
+      "log_characters": 32492,
+      "matching_summary_lines": [
+        "2026-10-11T14:46:45.4621869Z Build completed successfully (26 jobs)."
+      ],
+      "raw_log": "evidence/executions/20261011/fourth-delay/preceding-ci/formalization.log",
+      "sha256": "b8bf66cf68e7eef2e92746b009b37c934d6d0cad36b3a786ea67c0c0e6a520b0"
+    }
+  }
+}

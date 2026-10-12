@@ -24,7 +24,9 @@ the initial deterministic spectral law and signed TRACE-005 remain open.
 The [Schur continuation](record/cavity_continuation_20261011.md) additionally
 proves conditional concentration of incoming/outgoing delays and all fixed
 killed clock upper moments down to $\lceil\log(2N)^{1+\kappa}\rceil$,
-with uniform second/third equality laws. A separate harmonic-lift theorem
+with [uniform equality laws at every fixed order](mathematics/conditional_clock_universality_20261011.md)
+and an [explicit clock measure at every retained fraction](mathematics/full_depth_clock_measure_20261011.md),
+including the atom forced by a finite rank bound. A separate harmonic-lift theorem
 contracts every classical centered singular value and controls the quantum
 position-chain and [reversal gaps](record/reversal_channel_continuation_20261011.md) down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
 conclusions still assume all-time entry flatness; its probability and the

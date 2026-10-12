@@ -302,12 +302,13 @@ TRACE-055's full hierarchy or its flatness hypothesis.
 ## Schur continuation dependency scope, 11 October 2026
 
 TRACE-060 now has a separately reviewed all-fixed killed upper-moment and
-second/third equality extension. Its external concentration input is scalar
+equality extension at every fixed order, with the explicit full-depth reference measure. Its external concentration input is scalar
 Tropp Theorem 1.1, and all-time flatness remains a premise.
 
 The universal classical censoring and stopped quantum gap proof of TRACE-073
 is self-contained. The machine edges FM-021/022 -> TRACE-073 supply only the
 actual-map initial intensity/reversal gaps. The [reversal extension](reversal_channel_continuation_20261011.md)
 uses the independently reconstructed general complex-contraction theorem. It is not a proof of all-time entry flatness,
-an all-order clock law or the scalar cavity law. No new edge closes TRACE-005
+the scalar microscopic cavity law. The separate [all-fixed-order clock proof](clock_universality_continuation_20261011.md)
+uses TRACE-060, not these initial-gap edges, and still assumes entry flatness. No new edge closes TRACE-005
 or BGS-BGS-001. [Proof and review](cavity_continuation_20261011.md).

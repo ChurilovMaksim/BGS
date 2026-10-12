@@ -4,6 +4,14 @@
     {
       "name": "Python",
       "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
     }
   ],
   "execution_artifacts": [
@@ -13,7 +21,7 @@
     "computations/verification/schur_censoring_contract.json"
   ],
   "mathematics": {
-    "assertion_tested": "Exact harmonic-lift energies and all enumerated noncommuting clock words; separate floating feedback controls.",
+    "assertion_tested": "Exact harmonic-lift energies, enumerated noncommuting clock bounds, and feedback mixed/square/fourth identities with all 18 deleted diagonals nonzero; separate floating feedback controls.",
     "coefficient_domain": "SymPy arbitrary rational arithmetic and Fraction; float64 diagnostics explicitly separated.",
     "conventions": "Unnormalized Schatten norms; incoming T and outgoing Q=STS*; full cyclic words.",
     "inputs": [
@@ -42,7 +50,18 @@
         8,
         12
       ],
-      "seed": 20261011
+      "seed": 20261011,
+      "feedback_power_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "feedback_power_fixture_seeds": [
+        0,
+        1
+      ],
+      "feedback_power_cases": 18,
+      "phase_integration": "Exact residues; phase monomial exponents at most four in each orientation."
     },
     "non_claims": [
       "No asymptotic theorem is certified by this run.",

@@ -24,7 +24,7 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. All fixed killed upper moments, second/third equality laws and intensity/reversal gap propagation require all-time flatness. Its probability and fourth/all-order equality laws remain open |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. All fixed killed upper moments, equality laws at every fixed order, the full-depth clock measure and intensity/reversal gap propagation require all-time flatness. Its probability and the physical microscopic cavity identification remain open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.
@@ -46,9 +46,10 @@ obligations are no longer open.
 The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
 verification-pending. The 11 October results reconstruct source covariance,
 physical-source L2 continuation. The [cavity continuation](../record/cavity_continuation_20261011.md)
-adds conditional all-fixed killed upper bounds, uniform second/third equality
-laws and gap propagation. Establish all-time flatness probability, fourth/all-order
-equality laws and the remaining actual cavity hypotheses. Then identify the retained scalar
+adds conditional all-fixed killed upper bounds and gap propagation. The
+[repaired fixed-order induction](conditional_clock_universality_20261011.md)
+now identifies every fixed clock power and its full-depth measure. Establish
+all-time flatness probability and the remaining actual physical cavity hypotheses. Then identify the retained scalar
 cavity law, control source products and the signed undamped/high-switch
 comparison, and close every-fixed-order TRACE-005 for the unchanged frozen
 map. Channel-norm decay cannot replace spectral trace extraction.

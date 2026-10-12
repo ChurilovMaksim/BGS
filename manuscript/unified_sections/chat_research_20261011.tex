@@ -73,10 +73,10 @@ the exact covariance satisfies
  \le\min\{\operatorname{Tr}[B(I-F^*F)^{-1}B^*],
           \operatorname{Tr}[B^*(I-FF^*)^{-1}B]\}.
 \]
-The joint Schur delay barrier uses stopped matrix Freedman
+The preceding joint Schur delay barrier uses stopped scalar Freedman
 \cite{Tropp2011Chat} conditional on all-time entry flatness. Its killed
-second and third moments are upper bounds, not equality laws. Stronger
-Schroeder moment inductions remain verification-pending.
+second and third moments are upper bounds. The later equality-law extensions
+are stated separately below; their all-time flatness premise remains unproved.
 
 \subsection{Frozen circular backgrounds (TRACE-064,067--070)}
 For a nonzero balanced Laurent Jack signature, $\alpha>0$ and
@@ -166,7 +166,203 @@ second/third drifts yield the uniform comparison. The normalized crossing
 value is frozen without subsequent renormalization. If
 $\Pr(\mathcal A_m^c)\to0$ is separately proved, this also gives convergence
 in probability and convergence of \emph{killed} second/third expectations.
-Fourth and all-order equality laws remain verification-pending.
+The subsequent fourth-order and repaired all-fixed-order extensions below
+are independently reconstructed under the same flatness premise.
+
+\subsection{Diagonal squares and the fourth delay law (TRACE-060)}
+Under the same $\mathcal A_m$ premise, a separate reconstruction proves
+uniform incoming/outgoing diagonal-square concentration about $f_2(u/N)$
+and the fourth normalized trace law
+\[
+ Y_4(u)=f_4(u/N)+o(1),\qquad
+ f_4(x)=22-32x+12x^2-x^3,
+\]
+where the probability of a uniform failure, intersected with $\mathcal A_m$,
+tends to zero. The proof neither bounds $\Pr(\mathcal A_m^c)$ nor controls
+unrestricted moments on its complement.
+
+The exact mixed clock $\Gamma=ST$ satisfies, on surviving labels,
+\[
+ \Gamma'_{jk}=\Gamma_{jk}
+ +q(S_{je}\Gamma_{ek}+S_{ek}\Gamma_{je})
+ +q^2 S_{je}S_{ek}\Gamma_{ee}.
+\]
+Both phase monomials have zero mean, including at nonzero $a=S_{ee}$.
+A live-pair scalar martingale estimate controls the coherent term in the
+diagonal-square variance. Its deterministic envelope violation is explicitly
+included in the joint stop; no future good event is used for conditioning.
+For a retained $j$, write $d=1-|a|^2$, $t=T_{ee}$, $\gamma=\Gamma_{ee}$.
+The exact phase average is
+\[
+ \mathbb E_w(T'^2)_{jj}=(T^2)_{jj}
+ +\frac{|S_{ej}|^2(T^2)_{ee}
+         +2t\Re(\overline{S_{ej}}\Gamma_{ej})}{d}
+ +\frac{2|S_{ej}|^2t\Re(\bar a\gamma)}{d^2}.
+\]
+The reference value freezes when its label is removed. Its conditional
+increment is $(u-1)/(uN)$; the ideal residual is $-2/u^2+2/u^3$.
+
+For $t_r=(T^r)_{ee}$, $s_r=(Q^r)_{ee}$, $s=s_1$ and
+$\beta=(ST^2)_{ee}$, the full nonzero-$a$ fourth identity is
+\begin{align*}
+ \mathbb E_w\operatorname{Tr}T'^4={}&\operatorname{Tr}T^4
+ +\frac4d(ts_3+t_2s_2+st_3)\\
+ &+\frac8{d^2}\Re\!\left[\bar a\{
+       \gamma(st_2+ts_2)+ts\beta\}\right]\\
+ &+\frac{1+|a|^2}{d^3}(2t^2s^2+4ts|\gamma|^2)
+ +\frac{8ts}{d^3}\Re(\bar a^2\gamma^2).
+\end{align*}
+The diagonal-square laws and vanishing mixed clock identify its normalized
+forcing as $8f_3+4f_2^2+2$. This gives
+$-xf_4'=-3f_4+8f_3+4f_2^2+2$, with $f_4(1)=1$.
+The expected stopped trace bracket is bounded using the killed seventh
+moment, and complete crossing values are retained. If separately
+$\Pr(\mathcal A_m^c)\to0$, actual probability convergence and convergence
+of killed fourth expectations follow. The known proper-delay value 22 is
+credited to Cunden, Mezzadri, Simm and Vivo \cite{CMSV2016Clock}; finite rational and
+Wolfram executions do not certify the asymptotic theorem. The proof source
+is \texttt{mathematics/fourth\_delay\_law\_20261011.md}.
+
+\subsection{Repaired all-fixed-order clock law and the rank atom (TRACE-060)}
+Put $H_u=uT_u/N$, $V_u=uQ_u/N$ and $\Gamma_{r,u}=S_uH_u^r$.
+For every fixed $L$, the probability, intersected with $\mathcal A_m$, of
+any uniform failure of the following entry limits tends to zero:
+\begin{gather*}
+ (H_u^r)_{jj},(V_u^r)_{jj}=f_r(u/N)+o(1),\\
+ (H_u^r)_{jk},(V_u^r)_{jk}=o(1)\quad(j\ne k),\\
+ (\Gamma_{r,u})_{jk}=o(1),\quad r\le L,\ u\ge m.
+\end{gather*}
+The references solve the triangular equation, with $\tau=-\log x$,
+\[
+ \partial_\tau f_k=-(k-1)f_k+\mathcal P_k,
+ \quad \mathcal P_k=k[z^k]\{-\log(1-M^2)\},\quad
+ M=\sum_{r\ge1}f_rz^r,\quad f_k(1)=1.
+\]
+This is a fixed-order conditional theorem, with no probability bound for
+$\mathcal A_m^c$. The original general-word proof required two substantive
+repairs before this promotion.
+
+With $v=S^*e$ and $\alpha_k=(1-1/u)^k$, exact open words come from
+\[
+ H'^k=\alpha_kK^*H(R_wH)^{k-1}K,\qquad
+ \Gamma'_k=\alpha_kJ^*SH(R_wH)^{k-1}K,\qquad
+ R_w=I+qev^*+\bar qve^*.
+\]
+Their interior gaps are positive integers summing to $k$. Alternating
+orientations supply diagonal clock factors; identical adjacent orientations
+supply a lower mixed factor. For the sum of both orientations of an even alternating word with $2q$
+interior insertions and no boundary insertion, excluding a retained endpoint
+has a leading diagonal contribution. After replacement of lower moments,
+the drift coefficient, with the common factor $\alpha_k/u$ outside, is
+\[
+ \left(\prod_{i=1}^{2q-1}f_{n_i}\right)
+ \left(2f_{n_0+n_{2q}}-f_{n_0}f_{n_{2q}}\right).
+\]
+The alternating two-boundary term compensates the negative product.
+This is compensation in the ideal drift polynomial, not a pathwise word
+identity. If $C_{2q}(k)$ denotes the positive $2q$-gap product sum,
+merged endpoint gaps contribute $2(k-2q)C_{2q}(k)/(2q)$ and the two
+one-boundary orientations contribute $2C_{2q}(k)$. Their total is
+$(k/q)C_{2q}(k)$, including the empty merged sum at $k=2q$.
+The surviving lower-matrix polynomial uses only powers at most $k-1$.
+The sole unknown top diagonal has coefficient
+$\alpha_k\overline{S_{ei}}S_{ej}/[u(1-|S_{ee}|^2)]$;
+its absolute transport row sum is at most $(1+O(\delta_u))/u$.
+The prospective mixed top transport has phase $q^2$ and exact zero mean.
+The own scaling thus gives absolute live-row contraction at least
+$(k-1)/(2u)$ for the input/output errors. Complex transport is controlled
+by absolute sums, without a positivity assumption.
+
+The second repair separates interior words with both boundary insertions.
+They need not contain a small lower clock endpoint. Their scattering
+endpoint products instead satisfy, for example,
+\[
+ \frac1u\sum_e|S_{ei}S_{ej}|^2\le\frac{\delta_u}{u},\qquad
+ \frac1u\sum_e|S_{ie}S_{ej}|^2\le\frac{\delta_u}{u}.
+\]
+Stopped top diagonals bound their internal scalar factors. The zero-interior
+two-boundary top term and its outgoing/mixed analogues obey the same raw
+second-moment estimate by the top-diagonal cap and $|q|\le2$. Other interior
+words use a lower-entry envelope. With $R_p=1+(uB_u)^{1/p}$, the resulting
+predictable bounds for each real component are
+\begin{align*}
+ \operatorname{Var}(\Delta)&\le C_{k,p}
+ \left[\frac{\ell R_p^{2k}}{u^2}
+       +\frac{E_{k-1}^2R_p^{2k}}u+\frac1{u^2}\right],\\
+ |\Delta|&\le C_{k,p}(\sqrt{\delta_u}+E_{k-1})R_p^k+C_{k,p}/u.
+\end{align*}
+The lower drift error is at most
+$C_k(E_{k-1}+\sqrt{\delta_u})R_p^{2k}/u+C_k/u^2$.
+Nonzero-$a$ phase remainders are included; pure phase powers average to
+zero exactly. Reference freezing contributes
+$(1-1/u)[f_k((u-1)/N)-f_k(u/N)]=-xf'_k(x)/u+O(u^{-2})$.
+
+Take $D_k=2k(k+3)$, $\zeta=1/4$, $B=\ell^b$ and fixed $p$ sufficiently
+large that $D_L(1+\zeta)/p<1/8$ and
+$2D_L(1+\kappa+b)/p<\kappa/4$. A closing local envelope is
+\[
+ E_k(u)=C_{k,p}R_p^{D_k}
+       \left[\sqrt{\ell/u}\log(2u)^{k+3}+\ell/u\right].
+\]
+Dyadic scalar Freedman controls only the pairs alive at the block start.
+Pathwise absolute-row stability propagates their raw noise without
+future-dependent martingale transforms. Spare powers
+$R_p^{-2k-4}$ in the drift and $R_p^{-3k-4}$ in the lower noise close
+the induction. Joint first-exit stops retain complete crossing states and
+all current envelopes. Deleted labels keep their previous-size reference;
+surviving labels receive the new-size reference before the complete value
+and reference are frozen at a global exit.
+The killed $p$-cap costs $O(C_p\ell^{-b})$;
+$E_L(m)\to0$. The maintained proof is
+\texttt{mathematics/conditional\_clock\_universality\_20261011.md}.
+
+The formal characteristics give
+\[
+ z=\frac{M(1-M)}{(1+M)(1-xM)},\qquad
+ (1-xz)M^2-[1-(1-x)z]M+z=0.
+\]
+Put $a_x=3-x-2\sqrt{2(1-x)}$ and
+$b_x=3-x+2\sqrt{2(1-x)}$. Cauchy inversion gives, for $0\le x<1$,
+\[
+ \mu_x=\omega_x\delta_x+
+ \frac{\sqrt{(b_x-h)(h-a_x)}}{2\pi h(h-x)}
+       \mathbf1_{[a_x,b_x]}(h)\,dh,\qquad
+ \omega_x=\begin{cases}0&x\le1/2,\\2-1/x&x>1/2.\end{cases}
+\]
+At $x=1$ set $\mu_1=\delta_1$. Its Cauchy transform is
+\[
+ G_x(w)=\frac{3w-1-x-\sqrt{w^2-(6-2x)w+(1+x)^2}}{2w(w-x)},
+ \qquad G_x(w)\sim w^{-1}.
+\]
+The square root is asymptotic to $w$ and negative below $a_x$.
+The apparent pole at zero is removable; $G_x(0)=-2/(1+x)$.
+At $x=1/2$ the lower branch endpoint gives an integrable inverse
+square-root density and no atom. The atom test, rather than an ordinary
+residue at that endpoint, handles the merging singularity.
+All fixed moments and compact moment determinacy identify this weak clock
+law on the same intersection with $\mathcal A_m$. Its endpoint moments
+are the prior Schr\"oder sequence \cite{CMSV2016Clock}.
+
+An independent pathwise observation explains the atom. The product of
+feedback embeddings has unchanged surviving-coordinate rows, hence
+$T_u=L_u^*L_u=I+X_u^*X_u$ with $X_u$ having $N-u$ rows. Thus
+\[
+ \operatorname{rank}(T_u-I)\le N-u,
+ \qquad \dim\ker(T_u-I)\ge(2u-N)_+.
+\]
+The empirical $uT_u/N$ measure has at least $(2-1/x)_+$ mass at $x$;
+finite-rank equality for arbitrary trajectories is not asserted.
+For comparison with the prior free-Jacobi family \cite{Hamdi2017Clock},
+set $p=x/(1+x)$, $q=2x/(1+x)$ and view $Y=PQP$ in the normalized
+$P$ corner for free reference projections of traces $p,q$.
+Subtract $(1-p)\delta_0$ from the full-trace law and divide by $p$.
+Then $x/Y$ has precisely $\mu_x$; this dictionary makes no claim of
+freeness of the actual matrices. Its $x=0$ limit is established directly
+by the Cauchy formula, since the corner with $p=0$ is undefined.
+The separate proposition is
+\texttt{mathematics/full\_depth\_clock\_measure\_20261011.md}.
+All-time flatness probability, growing-order/edge laws, the physical
+microscopic cavity law, signed TRACE-005 and global BGS remain open.
 
 \subsection{Classical singular-spectrum censoring and a quantum gap (TRACE-073)}
 Let $P$ be doubly stochastic, $A$ a retained set of size $a$, and $D$ its

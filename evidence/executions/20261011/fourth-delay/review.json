@@ -1,0 +1,24 @@
+{
+  "schema": "bgs-internal-proof-review-v1",
+  "reviewed_on": "2026-10-11",
+  "base_commit": "b126cfb18f445b82358fc156632873082ac22503",
+  "reviewer": "Read-only internal reconstruction agent fixed_moment_delay_review; distinct review task",
+  "input": "evidence/executions/20261011/fourth-delay/inputs/fourth_delay_review_input.md",
+  "sha256": "3449208ac78c54ce16a06a2dc3e9769183158ab793754eb6e68b1986a8ef83ff",
+  "verdict": "Proved as written in the stated conditional intersection-probability scope.",
+  "reconstructed": [
+    "Exact full mixed-clock compression at nonzero a",
+    "Exact full diagonal-square polynomial and phase mean",
+    "Drift and randomly frozen f2 reference, including residual -2/u^2+2/u^3",
+    "Variance including unsuppressed q T_je Gamma_ej; live-pair concentration and cap parameters",
+    "Exact nonzero-a fourth trace phase average",
+    "Expected stopped bracket from the killed seventh moment and full crossing caps",
+    "Uniform diagonal-square laws and fourth equality curve"
+  ],
+  "incorporated_clarification": "Include the first Gamma-envelope violation explicitly in the joint stop; deterministic conditional-on-past increment bounds then apply.",
+  "limitations": [
+    "Upstream killed-moment proof not fully reaudited in this task",
+    "Internal review is not external refereeing or formal verification",
+    "No flatness probability, unrestricted exceptional-event moments, fifth/all-order equality laws, microscopic cavity law, BGS or priority result"
+  ]
+}

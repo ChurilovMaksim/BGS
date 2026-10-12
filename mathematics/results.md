@@ -2,8 +2,9 @@
 
 The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
-killed clock upper bounds and uniform second/third equality laws at the
-log^(1+kappa) cutoff. [TRACE-073](schur_censoring_gap_20261011.md) proves
+killed clock upper bounds and [uniform equality laws at every fixed order](conditional_clock_universality_20261011.md)
+at the log^(1+kappa) cutoff. The [full-depth clock measure](full_depth_clock_measure_20261011.md)
+includes its exact reference atom, matched by a pathwise finite-rank lower bound. [TRACE-073](schur_censoring_gap_20261011.md) proves
 ordered classical/general-contraction singular-value bounds and conditional
 intensity/reversal gap propagation at log^(3+kappa). All-time flatness probability and the scalar
 microscopic law remain open.
