@@ -3461,6 +3461,29 @@
       ],
       "boundary": "Fresh independent uniform feedback phases; port chosen before its phase using the past. Deterministic unitary initial conditions max P<=C0/N and ||P-J||<=1/5. Unconditional high-probability shrinking Green/singular norm only on the entry-stopped prefix, including its full first crossing. Third-step forcing bound only before that crossing. Does not estimate early entry survival, sustained two-step concentration, deterministic microscopic universality, TRACE-005 or BGS. Actual-map application uses eventual odd-N fixed-coupling FM-021; no effective startup or priority claim.",
       "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-078",
+      "title": "Uniform-port second moment of the complete two-step feedback increment",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
+      "source": "mathematics/two_step_increment_variance_20261013.md",
+      "dependencies": [],
+      "dependency_scope": "Self-contained exact Schur expansion and unitary row/column Parseval. TRACE-075 is a companion drift theorem, not a required theorem input.",
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261013/two-step-variance/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/two_step_increment_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
+      "priority_status": "not-established"
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

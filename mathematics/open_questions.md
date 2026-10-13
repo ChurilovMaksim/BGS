@@ -36,6 +36,14 @@ this stopped theorem does not prove all-time flatness.
 [Exact boundary](green_compression_gap_20261013.md).
 
 
+[TRACE-078](two_step_increment_variance_20261013.md) now supplies the raw
+one-step fluctuation estimate `2600 delta²[(P²)ij+(P³)ij]/u` under the
+uniform-port frozen-endpoint convention. Earlier descriptions of the
+one-step second moment as entirely missing are superseded at this scope.
+The accumulated concentration proof, endpoint stopping, full exit control
+and early entry survival remain open.
+
+
 ## Current priorities at a glance (11 October 2026)
 
 The table distinguishes the **terminal fixed-model problem**, possible

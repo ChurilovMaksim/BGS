@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "phase_products": {
+    "complex_rational_phase_product_cases": [
+      "0",
+      "1/3 + I/4",
+      "2/7 - I/5"
+    ],
+    "independent_method": "Unit-circle constant term from residues at zero and conjugate(a); direct Laurent residue for a=0."
+  },
+  "drift": {
+    "arithmetic": "exact Python integers and Fraction; S has entries coefficient*sqrt(2)/40",
+    "dimension": 64,
+    "max_intensity": "1/50",
+    "ordered_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "u_times_exact_mean_drift": "81771923/6256810000",
+        "u_times_simplified_upper_bound": "13687/200000"
+      },
+      {
+        "i": 0,
+        "j": 33,
+        "u_times_exact_mean_drift": "748515286/44188720625",
+        "u_times_simplified_upper_bound": "459/6250"
+      },
+      {
+        "i": 7,
+        "j": 40,
+        "u_times_exact_mean_drift": "748515286/44188720625",
+        "u_times_simplified_upper_bound": "459/6250"
+      },
+      {
+        "i": 31,
+        "j": 63,
+        "u_times_exact_mean_drift": "79902686/8837744125",
+        "u_times_simplified_upper_bound": "459/6250"
+      }
+    ]
+  },
+  "non_claims": [
+    "Finite controls are not the general analytic theorem",
+    "No higher moments, trajectory concentration, all-time flatness or BGS theorem",
+    "No world-priority claim"
+  ]
+}

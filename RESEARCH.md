@@ -8,6 +8,12 @@ review or an attached manuscript cannot override it.
 
 ## Full-depth clocks and microscopic paths
 
+[TRACE-078](mathematics/two_step_increment_variance_20261013.md) adds
+an exact raw second-moment bound for the complete two-step feedback
+increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
+phases, with frozen endpoints. Concentration and early entry survival
+still require a separate dynamic proof.
+
 [TRACE-077](mathematics/green_compression_gap_20261013.md) linearizes
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular

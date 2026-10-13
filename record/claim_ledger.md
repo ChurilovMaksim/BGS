@@ -2,6 +2,22 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Two-step fluctuation control, 13 October 2026
+
+**BGS-TRACE-078 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[The complete second moment](../mathematics/two_step_increment_variance_20261013.md)
+is at most `2600 delta²[(P²)ij+(P³)ij]/u` for a conditionally uniform
+port among all labels, with frozen endpoint increments zero and
+`delta<=1/4`. The stronger deterministic sum over ports holds for any
+circle phases; phase independence is unnecessary for this bound.
+Complete row/column Parseval controls the linear coefficient before
+absolute values; all higher coherent feedback terms remain included.
+This is a raw second moment, not a concentration theorem or survival
+estimate. Together with TRACE-075 and TRACE-077 it supplies complementary
+one-step fluctuation, mean and deep-range forcing inputs. Sustained
+concentration, early entry survival, TRACE-005 and BGS remain open.
+[Independent review and finite scope](../evidence/executions/20261013/two-step-variance/README.md).
+
 ## Shrinking stopped gaps, 13 October 2026
 
 **BGS-TRACE-077 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**

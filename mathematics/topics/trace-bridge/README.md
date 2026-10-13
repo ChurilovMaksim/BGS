@@ -12,6 +12,8 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
+- **[Complete two-step second moment](../../two_step_increment_variance_20261013.md)** — Uniform-port raw fluctuation bound for arbitrary phases, with frozen endpoints; no concentration claim.
+
 - **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; early entry survival remains open.
 
 - **[Exact Haar feedback and entropy-stable clocks](../../haar_feedback_clock_law_20261012.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.

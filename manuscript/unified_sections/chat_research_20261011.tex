@@ -985,3 +985,74 @@ maintained-source transfer check are distinct from four exact rational
 nonnormal compression controls, two rejected algebraic mutations and
 four complex-double adaptive feedback steps. No new Lean certificate
 or C++ verification of the analytic theorem is asserted.
+
+\section{Second moment of the complete two-step feedback increment}
+\label{sec:two-step-variance-20261013}
+
+BGS-TRACE-078 complements the one-step drift with a fluctuation bound.
+For any unitary $S$ of size $u\ge3$, put $P=|S|^2$, $K=P^2$ and
+$\delta=\max P\le1/4$. Fix distinct labels $i,j$. Choose a port uniformly
+among all $u$ labels, freeze $K'_{ij}=K_{ij}$ if either endpoint is
+chosen, and otherwise apply exact Schur feedback. For arbitrary circle
+phases, even depending on the selected port,
+\[
+ \mathbb E[(K'_{ij}-K_{ij})^2\mid S]
+       \le\frac{2600\delta^2}{u}\{K_{ij}+(P^3)_{ij}\}.       \tag{SV.1}
+\]
+No phase independence is needed for this raw second moment. Uniform port
+selection is needed for its factor $1/u$.
+
+For $e\notin\{i,j\}$ and $k\ne e$, write $x=P_{ik}$, $y=P_{kj}$,
+$\alpha=S_{ie}S_{ek}\overline{S_{ik}}$,
+$\gamma=S_{ke}S_{ej}\overline{S_{kj}}$,
+$b=P_{ie}P_{ek}$, $d=P_{ke}P_{ej}$ and $r_e=P_{ie}P_{ej}$.
+With all following sums over $k\ne e$, define
+\[
+ \begin{aligned}
+ A_e&=\sum(y\alpha+x\gamma),&
+ B_e&=\sum(xd+yb+2\operatorname{Re}(\alpha\bar\gamma)),\\
+ C_e&=\sum\alpha\gamma,&
+ D_e&=\sum(\alpha d+\gamma b),\qquad F_e=\sum bd.
+ \end{aligned}
+\]
+The exact real increment, $q_e=w_e/(1-S_{ee}w_e)$, is
+\[
+ \Delta_e=-r_e+2\operatorname{Re}(q_eA_e)+|q_e|^2B_e
+ +2\operatorname{Re}(q_e^2C_e)
+ +2\operatorname{Re}(q_e|q_e|^2D_e)+|q_e|^4F_e.            \tag{SV.2}
+\]
+The subtraction $-r_e$ is the removed old $k=e$ term. Since $|q_e|\le2$,
+six-group Cauchy bounds its square. The key complete-coordinate bounds are
+\[
+ \begin{aligned}
+ \sum r_e^2&\le\delta^2K_{ij},&
+ \sum|A_e|^2&\le10\delta^2K_{ij},\\
+ \sum B_e^2&\le6\delta^2(P^3)_{ij}+12\delta^2K_{ij},&
+ \sum|C_e|^2&\le\delta^2K_{ij},\\
+ \sum|D_e|^2&\le4\delta^3(P^3)_{ij},&
+ \sum F_e^2&\le\delta^4K_{ij}.
+ \end{aligned}                                                   \tag{SV.3}
+\]
+For $A_e$, apply Parseval to the full unitary row and column sums first;
+each component's squared sum is at most $\delta^2K_{ij}$. The omitted
+term is $2S_{ee}r_e$, separately bounded by $4\delta^3K_{ij}$.
+For the coherent parts of $B_e,C_e$, Cauchy gives
+$r_e\delta K_{ij}$ per port. For $D_e$, weighted Cauchy gives
+$\delta P_{ie}P_{ej}^2K_{ie}$ and
+$\delta P_{ej}P_{ie}^2K_{ej}$ for the two components; coordinate sums
+are bounded using $P^3$. These yield (SV.3) without decorrelation.
+Consequently, for any simultaneous choice of phases,
+\[
+ \sum_{e\notin\{i,j\}}\Delta_e^2
+    \le\delta^2\{2598K_{ij}+2112(P^3)_{ij}\}.              \tag{SV.4}
+\]
+Uniform coordinate averaging proves (SV.1). This also bounds conditional
+variance, but does not prove its accumulated concentration. Combining it
+with the restoring mean and stopped three-step forcing requires a separate
+dynamic argument respecting endpoint deletion and full first exits.
+Early entry survival, deterministic microscopic identification and BGS
+remain open. The canonical proof is
+\path{mathematics/two_step_increment_variance_20261013.md}.
+Independent reconstruction is separate from exact Walsh expansion checks
+and finite complex-double port-sum diagnostics. No priority or new formal
+certificate is asserted.

@@ -8,7 +8,7 @@ thread; dimensions <=96 and four feedback steps, memory <1 GiB, timeout 90 s.
 from __future__ import annotations
 
 if not __debug__:
-    raise RuntimeError('Verification requires assertions; do not use -O/-OO.')
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 
 import argparse
 import json
