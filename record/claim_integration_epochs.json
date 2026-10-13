@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-12",
+  "reviewed_on": "2026-10-13",
   "purpose": "Explicit reviewed state/source lineage across historical epochs and the scoped 11-12 October continuations; historical reviews do not cover later IDs or stronger statements.",
   "after_wave3": [
     {
@@ -147,6 +147,12 @@
       "state": "proved",
       "source": "mathematics/haar_feedback_clock_law_20261012.md",
       "disposition": "Independent reconstruction and maintained-transfer audit of exact Haar feedback and entropy-stable clocks; deterministic flatness and BGS remain open."
+    },
+    {
+      "id": "BGS-TRACE-077",
+      "state": "proved",
+      "source": "mathematics/green_compression_gap_20261013.md",
+      "disposition": "Independent Green-coordinate reconstruction; corrected adapted-martingale wording. Stopped prefix only; early entry survival and BGS remain open."
     }
   ],
   "invariants": [

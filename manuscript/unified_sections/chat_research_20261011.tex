@@ -880,3 +880,108 @@ from five exact colligation controls, symbolic Jacobians, twelve
 one-port moment integrals and two actually executed Wolfram identities.
 None of those finite controls proves the probability limits,
 entropy transfer, mathematical priority or deterministic BGS.
+
+\section{Green compression and shrinking stopped intensity gaps}
+\label{sec:green-compression-20261013}
+
+The project proof BGS-TRACE-077 concerns an unconditional stopped prefix,
+not the probability of surviving to that prefix. Write
+$J_n=\mathbf1\mathbf1^*/n$, $Q_n=I-J_n$ and
+\[
+ G(P)=(I-P+J_n)^{-1}-J_n,\qquad M(P)=G(P)-Q_n.
+\]
+Here $P$ is nonnegative doubly stochastic and $I-P$ is invertible on
+$\mathbf1^\perp$; normality is not required. For a retained set $A$ and
+deleted set $D$, assume $I-P_{DD}$ is invertible and form the stochastic
+complement $P^c=P_{AA}+P_{AD}(I-P_{DD})^{-1}P_{DA}$. Then
+\[
+ G(P^c)=Q_uG(P)_{AA}Q_u,\qquad
+ M(P^c)=Q_uM(P)_{AA}Q_u.                         \tag{GC.1}
+\]
+Indeed, solve $(I-P)x=(b,0)$ with $\sum b=0$, eliminate $x_D$,
+and center $x_A$. A kernel vector of $I-P^c$ lifts to a kernel vector
+of $I-P$, hence is constant; the reduced centered inverse therefore
+exists. Block stochastic sums and the nonnegative geometric inverse of
+$I-P_{DD}$ give double stochasticity of $P^c$.
+On the original coordinate space the projections $Q_A$ onto supported
+zero-sum vectors are nested: $Q_AQ_B=Q_A$ when $A\subset B$.
+
+Let $S_N$ be deterministic unitary, $P_N=|S_N|^2$,
+$\max P_N\le C_0/N$, $C_0\ge1$, and
+$\rho_N=\|P_N-J_N\|_{\rm op}\le1/5$. Geometric expansion and the
+correct higher-step row--column estimate give
+\[
+ \|M_N\|\le1/4,\quad \max|(M_N)_{ij}|\le B/N,
+ \quad B=C_0+\frac{C_0-1}{1-\rho_N},\quad
+ \|Q_AM_NQ_A\|\le\min(1/4,Bu/N).                 \tag{GC.2}
+\]
+In particular the original contribution decays with retained depth.
+
+At each step choose the port using the past, then generate a fresh
+independent uniform circle phase. The exact one-step intensity is
+$P'=P^c+\Xi$, with conditional mean zero,
+$\Xi\mathbf1=\mathbf1^*\Xi=0$ and $\|\Xi\|\le8\delta_v$ when
+$\delta_v=\max P_v\le1/4$. Put $\ell=\log(2N)$, choose
+$m<N$ with $m\ge32K\ell$ and $C_0\le K\ell$, and stop at the first
+$\delta_u>K\ell/u$ or $\|M_u\|>1/2$, retaining the full crossing state.
+The old admissible state gives $\|G^c\|\le3/2$ and
+$\|G^c\Xi\|\le3/8$. Thus the new inverse exists even at the first
+crossing, with $\|G'\|\le3$, and the ordered resolvent expansion is
+\[
+ G'=G^c+L_v+D_v,\quad L_v=G^c\Xi G^c,\quad
+ D_v=G^c\Xi G^c\Xi G',\quad
+ \|L_v\|\le18\delta_v,\quad \|D_v\|\le432\delta_v^2.       \tag{GC.3}
+\]
+The $L_v$ are adapted martingale differences with predictable
+coefficients and stop mask. The $D_v$ are bounded adapted remainders,
+with no centering assumption. Embed both in the original $N$ coordinates,
+set them to zero after stopping, and put $Z_u=\sum_{v>u}L_v$,
+$E_u=\sum_{v>u}D_v$. Nested compression gives, pathwise,
+\[
+ M_u=Q_uM_NQ_u+Q_uZ_uQ_u+Q_uE_uQ_u.              \tag{GC.4}
+\]
+Future projections occur only outside the martingale sum. This is why
+adaptive port choices preserve centering without conditioning on future
+flatness.
+
+For even $p\ge2$, the internally reconstructed Schatten smoothness bound
+of TRACE-073 gives
+$\mathbb E\|Z_m\|_p^2\le324N^{2/p}(p-1)K^2\ell^2/m$.
+Conditional Jensen and scalar Doob $L^2$ then give
+\[
+ \mathbb P\{\max_u\|Z_u\|>\eta\}
+ \le\frac{1296N^{2/p}(p-1)K^2\ell^2}{m\eta^2},\qquad
+ \|E_u\|\le\beta:=432K^2\ell^2/m.               \tag{GC.5}
+\]
+If $\eta+\beta<1/4$, (GC.4) excludes a first Green exit before or
+simultaneously with the entry exit. Consequently, outside (GC.5),
+every state through the first entry exit satisfies
+$\|M_u\|\le\min(1/4,Bu/N)+\eta+\beta$.
+For $h_u=Bu/N+\eta+\beta<1$, the centered identity
+$P_u-J_u=M_u(I+M_u)^{-1}$ yields
+$\rho_u\le h_u/(1-h_u)$.
+
+Choose $p=2\lceil\ell\rceil$, $m=\lceil\ell^{7+\kappa}\rceil$,
+$\eta=\ell^{-2}$, $\kappa>0$. On all reached entry-admissible states
+$m\le u\le\lfloor N/\ell^2\rfloor$ simultaneously,
+\[
+ \rho_u=O_{C_0,K}(\ell^{-2}),\qquad
+ (P_u^3)_{ij}\le1/u+\rho_u(\delta_u-1/u)
+                \le[1+O_{C_0,K}(\ell^{-1})]/u,              \tag{GC.6}
+\]
+except with probability $O_K(\ell^{-\kappa})$. The second inequality
+is not asserted at an entry-crossing state whose entry bound fails.
+The interval can be empty because of early entry exit. Its survival
+probability and sustained two-step concentration remain open.
+FM-021 supplies only the named eventual initial inputs for the actual
+odd-$N$ fixed-coupling family; no effective startup is obtained.
+TRACE-005, physical microscopic identification and global BGS remain open.
+
+The canonical source is
+\path{mathematics/green_compression_gap_20261013.md}.
+Group inverses and stochastic complementation are prior structures;
+no world-priority claim is made. Independent reconstruction and its
+maintained-source transfer check are distinct from four exact rational
+nonnormal compression controls, two rejected algebraic mutations and
+four complex-double adaptive feedback steps. No new Lean certificate
+or C++ verification of the analytic theorem is asserted.

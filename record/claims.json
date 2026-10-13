@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -3433,6 +3433,33 @@
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
       "boundary": "Independent Haar initial unitary, fresh independent feedback phases and uniform independent coordinate order, F_N(z)=zU_N and T_N=I. Exact S/T independence, matrix-beta graph law, inverse-Jacobi spectrum with the rectangular atom, and trace-moment threshold k<u+1 when q>0. Unconditional every-fixed-order full-depth clock conclusions extend to independent initial laws with relative entropy O(log N); o(log N) gives high-probability flatness for each fixed K>3, whereas O(log N) uses K after limsup and gives no such flatness conclusion for one prescribed finite K. A bounded-entropy prescribed-gap ensemble rules out the corresponding fixed-origin Sine2 implication. No deterministic-map transfer, origin-averaged counterexample, BGS, priority or analytic Lean claim.",
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-077",
+      "title": "Green compression and shrinking intensity gaps on the entry-stopped prefix",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
+      "source": "mathematics/green_compression_gap_20261013.md",
+      "dependencies": [
+        "BGS-TRACE-073",
+        "BGS-TRACE-074",
+        "BGS-FM-021"
+      ],
+      "dependency_scope": "TRACE-073 C3--C6 only, not its conditional full-prefix conclusion or reversal corollary; TRACE-074 only for the correct higher-step entry bound; FM-021 only for actual-map initial conditions. The abstract centered stochastic-complement identity and stopped theorem have explicit unitary initial hypotheses.",
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261013/green-compression/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/green_compression.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Fresh independent uniform feedback phases; port chosen before its phase using the past. Deterministic unitary initial conditions max P<=C0/N and ||P-J||<=1/5. Unconditional high-probability shrinking Green/singular norm only on the entry-stopped prefix, including its full first crossing. Third-step forcing bound only before that crossing. Does not estimate early entry survival, sustained two-step concentration, deterministic microscopic universality, TRACE-005 or BGS. Actual-map application uses eventual odd-N fixed-coupling FM-021; no effective startup or priority claim.",
       "priority_status": "not-established"
     }
   ],

@@ -2,6 +2,26 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Shrinking stopped gaps, 13 October 2026
+
+**BGS-TRACE-077 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[Green-coordinate compression](../mathematics/green_compression_gap_20261013.md)
+turns classical stochastic complementation into orthogonal compression of
+`M=(I-P+J)^(-1)-I`. With deterministic unitary initial flatness `C0/N`
+and singular norm at most `1/5`, fresh independent feedback phases and
+port choices made before their phase, the original term is bounded by
+`min(1/4,Bu/N)`. An adapted matrix martingale and quadratic remainder give
+an unconditional quantitative bound through the first entry exit,
+including simultaneous exits. At reached, entry-admissible depths
+`log(2N)^(7+kappa) <= u <= N/log(2N)^2`, the singular norm is
+`O(log(2N)^(-2))` except with probability `O(log(2N)^(-kappa))`.
+The three-step kernel is then `(1+O(1/log(2N)))/u` before entry exit.
+The probability of reaching that range without entry exit is unestimated;
+all-time deterministic flatness, sustained two-step concentration,
+TRACE-005 and BGS remain open. Actual-map startup uses only named FM-021
+initial inputs. No new formal certificate or priority claim is asserted.
+[Review and finite scope](../evidence/executions/20261013/green-compression/README.md).
+
 ## An unconditional clock class, 12 October 2026
 
 **BGS-TRACE-076 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**

@@ -12,6 +12,8 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
+- **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; early entry survival remains open.
+
 - **[Exact Haar feedback and entropy-stable clocks](../../haar_feedback_clock_law_20261012.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
 
 - **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.

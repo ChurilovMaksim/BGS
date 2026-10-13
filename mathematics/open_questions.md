@@ -28,7 +28,12 @@ a restoring conditional mean bounded by the three-step kernel. It does
 not provide the higher moments or stopped concentration needed for all
 entries and times. The additional term
 \(\rho(\delta-1/u)/u\) is not \(O(u^{-2})\) from logarithmic flatness alone;
-the required evolving correlation or forcing estimate remains open.
+TRACE-077 now controls this forcing on reached entry-admissible depths
+`log(2N)^(7+kappa) <= u <= N/log(2N)^2`, by a shrinking Green-coordinate
+gap. Early entry survival, the remaining depth range and the evolving
+two-step concentration estimate remain open. The reached range may be empty;
+this stopped theorem does not prove all-time flatness.
+[Exact boundary](green_compression_gap_20261013.md).
 
 
 ## Current priorities at a glance (11 October 2026)

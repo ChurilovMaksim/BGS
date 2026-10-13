@@ -1,5 +1,13 @@
 # Theorem families and their limits
 
+[TRACE-077](green_compression_gap_20261013.md) linearizes
+classical elimination in centered Green coordinates. Its decaying initial
+compression and adapted martingale give a shrinking intensity singular
+norm on the entry-stopped prefix, with quantitative failure probability.
+This closes the deep-range three-step forcing estimate; the probability
+of reaching that range without entry exit remains unproved.
+[Exact outcome](../record/green_compression_continuation_20261013.md).
+
 [TRACE-076](haar_feedback_clock_law_20261012.md) supplies the exact Haar
 feedback scattering/delay joint law, inverse-Jacobi spectrum, finite
 moment threshold and exact first moment. Haar all-time flatness closes

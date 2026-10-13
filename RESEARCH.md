@@ -1,12 +1,20 @@
 # BGS research brief
 
-**Current scientific status, 12 October 2026:** the unchanged fixed-strength
+**Current scientific status, 13 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
 review or an attached manuscript cannot override it.
 
 ## Full-depth clocks and microscopic paths
+
+[TRACE-077](mathematics/green_compression_gap_20261013.md) linearizes
+classical elimination in centered Green coordinates. Its decaying initial
+compression and adapted martingale give a shrinking intensity singular
+norm on the entry-stopped prefix, with quantitative failure probability.
+This closes the deep-range three-step forcing estimate; the probability
+of reaching that range without entry exit remains unproved.
+[Exact outcome](record/green_compression_continuation_20261013.md).
 
 [TRACE-076](mathematics/haar_feedback_clock_law_20261012.md) gives an exact
 finite Haar scattering/delay factorization and inverse-Jacobi spectrum.

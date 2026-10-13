@@ -4,13 +4,21 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (12 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (13 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
 ## Checked continuation, 12 October
+
+[TRACE-077](mathematics/green_compression_gap_20261013.md) linearizes
+classical elimination in centered Green coordinates. Its decaying initial
+compression and adapted martingale give a shrinking intensity singular
+norm on the entry-stopped prefix, with quantitative failure probability.
+This closes the deep-range three-step forcing estimate; the probability
+of reaching that range without entry exit remains unproved.
+[Exact outcome](record/green_compression_continuation_20261013.md).
 
 [The exact Haar feedback law](mathematics/haar_feedback_clock_law_20261012.md)
 identifies the scattering/delay joint law and proves high-probability
