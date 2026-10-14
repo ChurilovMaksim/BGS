@@ -4,6 +4,10 @@ Negative controls reject specific invalid implications. An abstract spectrum is 
 
 ## Current theorem capsules
 
+- [Perfect intensity mixing and a non-BGS local spectrum](../../flat_spectrum_obstruction_20261014.md) — TRACE-081, simple-spectrum abstract family.
+- [Universal coherence singular-norm plateau](../../coherence_memory_plateau_20261014.md) — TRACE-082, with its observed-return boundary.
+- [Individual return pulse and cyclic memory](../../coherent_first_return_pulse_20261014.md) — TRACE-083; negligible monitored tail coexists with repeated coherent excursions.
+
 - **[Microscopic rounding with low-trace preservation](../../microscopic_rounding_control.md)** — Each specified K_N=o(N^(1/3)) window and coarse position/reversal/Egorov controls survive an O(N^-1) simple-spectrum perturbation, while a fixed pair test has liminf>1/2. This extends prior project spectral rounding and changes the operator; exact quantization is not retained.
 
 - **[All-copy channel control with a clock spectrum](../../isospectral_clock_moment_control.md)** — Induced-HS moment-channel proximity in every order does not alone imply microscopic universality.

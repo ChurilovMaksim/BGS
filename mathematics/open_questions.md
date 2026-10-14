@@ -1,5 +1,14 @@
 # Open mathematical obligations
 
+TRACE-083 closes the abstract-family question left by TRACE-082's
+full-return comparison: an individual observed memory coefficient
+can remain almost an isometry on nearly all centered diagonal
+directions, even with a negligible monitored energy tail.
+The exact cubic-composition resonance prevents replacing the
+full signed hierarchy by low unconjugated trace cancellations.
+It does not supply an estimate for the actual fixed-map source.
+[Exact scope](coherent_first_return_pulse_20261014.md).
+
 [TRACE-081](flat_spectrum_obstruction_20261014.md) rules out inferring an
 initial microscopic law from flat intensities, small reversal norm, simple
 spectrum and a uniform macroscopic measure alone. Its origin average can

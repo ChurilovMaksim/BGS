@@ -12,6 +12,13 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 ## Checked continuation, 14 October
 
+[TRACE-083](mathematics/coherent_first_return_pulse_20261014.md) strengthens
+the coherence obstruction: a single observed first-return coefficient is
+almost an isometry on nearly all centered diagonal directions even when
+the remaining monitored energy tail is negligible. First and second
+unconjugated pulse traces can vanish while cubic compositions survive.
+This is an abstract-family theorem; the original BGS target stays open.
+
 [TRACE-081](mathematics/flat_spectrum_obstruction_20261014.md) proves that
 perfect intensity mixing, a vanishing coordinate reversal norm, simple
 spectrum and a uniform macroscopic phase law can coexist with an empty

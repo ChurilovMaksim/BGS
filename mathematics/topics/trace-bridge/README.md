@@ -147,9 +147,13 @@ The [review record](../../../record/cavity_continuation_20261011.md) preserves
 exact input lineage. Equality laws at every fixed order are accepted
 under all-time entry flatness. TRACE-076 discharges this premise for
 Haar starts and extends the clock laws to its independent entropy class.
-The maintained deterministic initial family's probability remains open.
+The maintained deterministic startup's probability and cutoff-matched clock
+law are separately supplied by TRACE-080 at log^(4+kappa), under its stronger
+startup assumptions. Physical microscopic cavity identification remains open.
 
 - [Fourth delay law and diagonal-square concentration](../../fourth_delay_law_20261011.md) — Independently reconstructed conditional TRACE-060 extension.
 
 - [Every fixed clock power under entry flatness](../../conditional_clock_universality_20261011.md)
 - [Full-depth clock measure and exact rank atom](../../full_depth_clock_measure_20261011.md)
+
+- [Observed first-return pulses and cyclic memory](../../coherent_first_return_pulse_20261014.md) — TRACE-083; individual coefficient and all-source energy-tail theorem for the abstract family.

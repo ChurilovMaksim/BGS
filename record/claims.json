@@ -3596,6 +3596,30 @@
       ],
       "boundary": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim.",
       "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-083",
+      "title": "Observed first-return pulses and cyclic coherence survive perfect intensity mixing",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; ALL-SOURCE TAIL AND UNCONJUGATED TRACE SCOPES EXPLICIT",
+      "source": "mathematics/coherent_first_return_pulse_20261014.md",
+      "dependencies": [
+        "BGS-TRACE-081",
+        "BGS-TRACE-082"
+      ],
+      "dependency_scope": "R1 uses the explicit TRACE-081 tensor/chirp family and TRACE-082's exact block recurrence. R2--R5 use elementary contraction telescoping, sector projections and permutation traces. The prior recurrence literature provides credit and notation context, not an imported theorem premise.",
+      "external_dependencies": [],
+      "proof_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261014/first-return/README.md"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "boundary": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion.",
+      "priority_status": "not-established"
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

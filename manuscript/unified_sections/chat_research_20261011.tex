@@ -1472,3 +1472,136 @@ Python/C++ controls and from the active Lean arithmetic kernel.
 That kernel proves only positivity of \((N-1)(N-r)\) for natural
 \(N\ge2,r<N\); it does not formalize codimension, the operator theorem,
 the generic discriminant lemma or a limiting point process.
+
+\section{Observed first-return pulses and cyclic coherence}
+\label{sec:observed-first-return-20261014}
+
+This section records BGS-TRACE-083. Its authoritative proof is
+\texttt{mathematics/coherent\_first\_return\_pulse\_20261014.md}.
+It uses the abstract family of TRACE-081 and the exact block recurrence
+of TRACE-082. The unchanged fixed-map TRACE-005 and BGS limit remain open.
+The first-return mechanism itself is prior mathematics:
+Bourgain, Gr\"unbaum, Vel\'azquez and Wilkening
+\cite{BourgainGrunbaumVelazquezWilkening2013Returns}, equation (1) on
+printed page~4 and the renewal equations on printed page~6.
+Here the Hilbert space is a matrix Hilbert--Schmidt space; amplitude
+energies are not identified with literal measurements of density matrices.
+
+Let \(n=4^k\), \(N=np\), \(k\ge2\), \(p\) an odd prime,
+\(\epsilon=N^{-4}\), and use TRACE-081's
+\(A=H^{\otimes k}\otimes V_p\) and simple-spectrum \(U=AE\),
+with \(\|U-A\|\le\epsilon\).
+Put \(S=(H^2)^{\otimes k}\), so \(S^3=I\), and
+\(\Pi_n=I-J_n\), \(\Pi_p=I-J_p\).
+For diagonal projection \(\mathcal D\), \(\mathcal Q=I-\mathcal D\)
+and \(\mathcal T_U(X)=UXU^*\), define
+\[
+ F_t(U)=\mathcal D\mathcal T_U
+           (\mathcal Q\mathcal T_U)^{t-1}\mathcal D,\qquad t\ge1.
+\]
+For \(t\ge2\), this is the individual memory coefficient
+\(\mathcal L_U\mathcal E_U^{t-2}\mathcal C_U\), not the full
+unmeasured return \(\mathcal D\mathcal T_U^t\mathcal D\).
+
+\paragraph{Exact finite support.}
+The complete first-return amplitudes for \(A\) are
+\[
+\begin{aligned}
+ F_1(A)&=J_n\otimes J_p,&
+ F_2(A)&=(S-J_n)\otimes J_p,\\
+ F_p(A)&=J_n\otimes\Pi_p,&
+ F_{2p}(A)&=(S^p-J_n)\otimes\Pi_p,
+\end{aligned}
+\]
+with every other positive-time coefficient zero.
+Indeed \(R_m=\mathcal D\mathcal T_A^m\mathcal D\) equals
+\(S^{m/2}\) in the first factor for even \(m\), and \(J_n\) for
+odd \(m\); the second factor is \(I_p\) if \(p\mid m\), and \(J_p\)
+otherwise. This follows from the core periodicity and the same
+nonzero-coefficient Gauss identity as TRACE-081.
+The exact recurrence
+\[
+ R_m=\sum_{t=1}^m F_t R_{m-t},\qquad R_0=I,
+\]
+uniquely determines \(F_t\). In the four orthogonal diagonal sectors
+given by constants or their complements in each tensor factor,
+the first nonzero return times are respectively \(1,2,p,2p\).
+Later returns are powers of the respective isometry. Substitution
+proves both the four displayed coefficients and all the zero ones,
+including times beyond a period.
+
+\paragraph{Large observed pulse and small tail.}
+Let \(D_0\) be centered diagonal space, of dimension \(N-1\), and
+\(W=\operatorname{Ran}(\Pi_n\otimes\Pi_p)\), of dimension
+\(d_W=(n-1)(p-1)\). Write \(\delta=4p\epsilon\).
+The estimate
+\(\|\mathcal T_U-\mathcal T_A\|_{\mathrm{HS}\to\mathrm{HS}}
+\le2\epsilon\) and contraction telescoping give
+\[
+ \|F_t(U)-F_t(A)\|_{2\to2}\le2t\epsilon.
+\]
+Since \(F_{2p}(A)|_W=S^p\otimes I\) is an isometry,
+\[
+ \|F_{2p}(U)x\|_2\ge(1-\delta)\|x\|_2\quad(x\in W),
+ \qquad
+ 1\ge\frac{\|F_{2p}(U)|_{D_0}\|_{\mathrm{HS}}^2}{N-1}
+ \ge\frac{d_W}{N-1}(1-\delta)^2\longrightarrow1.
+\]
+The finite-dimensional min-max principle also gives at least \(d_W\)
+singular values at least \(1-\delta\).
+
+This large pulse coexists with the all-source bound
+\[
+ \sum_{t>2p}\|F_t(U)x\|_2^2\le\delta^2\|x\|_2^2,\qquad
+ \frac1{N-1}\sum_{t>2p}\|F_t(U)|_{D_0}\|_{\mathrm{HS}}^2
+       \le\delta^2\le16N^{-6}.
+\]
+For completeness set \(Y_s(U)=(\mathcal Q\mathcal T_U)^s\mathcal D\).
+Unitarity and orthogonal projection give
+\[
+ \|Y_{t-1}(U)x\|_{\mathrm{HS}}^2-\|Y_t(U)x\|_{\mathrm{HS}}^2
+       =\|F_t(U)x\|_2^2.
+\]
+The four \(F_t(A)^*F_t(A)\) are the four sector projections summing
+to \(I\), so \(Y_{2p}(A)=0\). Telescoping yields
+\(\|Y_{2p}(U)\|\le\delta\). Finite tail sums are bounded by that
+survival energy, and the increasing limit proves the infinite bound.
+No weighted-time bound or completeness theorem is imported.
+
+\paragraph{Cyclic compositions and the time scale.}
+For \(p\ne3\), let \(M_A=F_{2p}(A)|_{D_0}\) and
+\(M_U=F_{2p}(U)|_{D_0}\).
+The three-cycle permutation \(H^2\) and its square each fix precisely
+one coordinate, giving \(\operatorname{Tr}S=\operatorname{Tr}S^2=1\).
+Thus for every positive integer \(q\),
+\[
+ M_A^q=(S^{pq}-J_n)\otimes\Pi_p,\qquad
+ \left|\frac{\operatorname{Tr}_{D_0}M_U^q}{N-1}
+ -\frac{d_W}{N-1}\mathbf{1}_{3\mid q}\right|\le q\delta.
+\]
+For fixed \(q\), normalized traces converge to
+\(\mathbf{1}_{3\mid q}\): the first two vanish while the cubic one
+tends to one. These are unconjugated powers;
+\(\operatorname{Tr}(M_UM_U^*)/(N-1)\to1\), rather than zero.
+Nor is \(M_U^q\) a later first-return coefficient:
+\(F_{6p}(A)=0\), while \(R_{6p}(A)|_W=M_A^3|_W=I_W\).
+Completed short excursions can therefore recycle coherence despite
+a negligible monitored tail.
+
+Taking any odd primes \(p_k\ge4^{k^2}\), with \(t_k=2p_k\), gives
+\[
+ \frac{t_k}{N_k}=\frac2{4^k}=2\|B(U_k)\|^2\longrightarrow0,
+ \qquad
+ \frac{t_k}{N_k^\alpha}
+    =\frac{2p_k^{1-\alpha}}{4^{\alpha k}}\longrightarrow\infty
+       \quad(0<\alpha<1\text{ fixed}).
+\]
+Unboundedness of primes suffices. Exact flat intensities, vanishing
+coordinate reversal, simple spectrum and macroscopic uniformity
+cannot therefore supply a uniform norm-decay shortcut for these
+observed coefficients. The result concerns the abstract family,
+not the fixed smooth chaotic map, its specific physical cavity
+source, a conjugated covariance theorem, a phase-averaged ensemble
+or BGS universality. The proof has independent internal reconstruction;
+finite exact replays and unconfirmed compiler/build executions have
+separate scope.

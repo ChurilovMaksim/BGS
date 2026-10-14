@@ -98,3 +98,10 @@ The active entry point imports it; actual compiler execution and printed
 axioms are reported in the dated spectrum/coherence evidence packet and CI.
 It uses ordinary Std/omega proof terms, not native_decide or an admitted
 operator statement.
+
+The new main 57150ac formalization job was skipped after the prerequisite
+jobs failed without available code-step receipts; its rerun also skipped
+formalization. CoherenceBudget therefore remains without a confirmed
+compiler execution. This does not change the earlier actually compiled
+Std modules. See the [CI observation receipt](../evidence/executions/20261014/first-return/ci_observation.json).
+TRACE-083 adds no Lean operator formalization.

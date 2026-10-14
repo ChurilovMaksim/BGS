@@ -1,0 +1,165 @@
+{
+  "schema": "bgs-ci-observation-v1",
+  "base_main": "57150ac73b5140af744b62fe1653a199a7781a04",
+  "scope": "Actual GitHub connector status observations; not successful code-test execution evidence.",
+  "scientific_run_id": 38571532964,
+  "initial_jobs": [
+    {
+      "id": 115877707230,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877707467,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877707761,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877707988,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877740326,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877740712,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115877741295,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "initial_repository_job_steps": {
+    "steps": []
+  },
+  "rerun_requested": true,
+  "rerun_jobs": [
+    {
+      "id": 115881039712,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881039976,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881040103,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881040287,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881075208,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881075392,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115881076223,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38571532964,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "independent_manuscript_run_id": 38571533026,
+  "independent_manuscript_jobs": [
+    {
+      "id": 115877707839,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38571533026,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "known_failure_cause": null,
+  "limitations": [
+    "No executable step logs were available for these failed prerequisites.",
+    "Formalization and computation were skipped; no new Lean compiler result is certified.",
+    "The earlier head835 CI success and the local5/236 checks are different source revisions.",
+    "The local exec server subsequently reported409 environment_offline. New R1--R5 controls were run in functions V8 and Wolfram; no later local full CLI, Lean or LaTeX run is asserted."
+  ],
+  "last_successful_local_main": "57150ac73b5140af744b62fe1653a199a7781a04",
+  "verified_pdf_snapshot": {
+    "pages": 301,
+    "sha256": "8ed16a45ac08494bf0c4e9c7635f11d4180f37769586ebe6adcde7dcfac5a577",
+    "scope": "TRACE-081/082 manuscript before the TRACE-083 TeX addition."
+  }
+}

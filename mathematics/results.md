@@ -1,5 +1,15 @@
 # Theorem families and their limits
 
+[TRACE-083](coherent_first_return_pulse_20261014.md) evaluates
+a single observed memory coefficient for the TRACE-081 family.
+At time 2p it is almost an isometry on nearly all centered diagonal
+directions, although its remaining monitored energy tail is at most
+16 N^-6. Unconjugated first and second pulse traces can vanish while
+the cubic trace stays large. Repeated completed excursions and a
+later first-return coefficient are different operators. These are
+abstract-family conclusions; the original physical signed source
+and the BGS limit remain open.
+
 [TRACE-081](flat_spectrum_obstruction_20261014.md) proves that
 perfect intensity mixing, a vanishing coordinate reversal norm, simple
 spectrum and a uniform macroscopic phase law can coexist with an empty

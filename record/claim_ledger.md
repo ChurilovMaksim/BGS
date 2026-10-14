@@ -1,5 +1,27 @@
 # Claim ledger
 
+## Observed pulse and cyclic memory, 14 October 2026
+
+**BGS-TRACE-083 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[The first-return theorem](../mathematics/coherent_first_return_pulse_20261014.md)
+strengthens TRACE-082's full-return example to a specified individual
+coefficient L E^(2p-2) C. For the TRACE-081 abstract family this map is
+almost an isometry on (4^k-1)(p-1) centered diagonal directions.
+Exact finite-support amplitudes, uniform perturbation bounds and a
+total observed energy tail at most 16 N^-6 are proved.
+Despite that tail bound, low unconjugated pulse traces can vanish while
+cubic cyclic compositions survive. These powers are not later
+first-return coefficients and are not conjugated covariance moments.
+The example excludes source-uniform norm shortcuts; it estimates
+neither the actual physical cavity source nor TRACE-005.
+
+[Independent proof and actual execution scope](../evidence/executions/20261014/first-return/README.md).
+The new claim is analytically proved in the project; no full operator
+Lean certification is asserted. Main 57150ac's CI did not provide
+code-step receipts and skipped the new formalization job. Its earlier
+236 local tests and 5 focused checks precede this continuation;
+they are not a certificate of this later source revision.
+
 ## Spectral and coherence obstructions, 14 October 2026
 
 **BGS-TRACE-081 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
@@ -22,8 +44,9 @@ self-contained; TRACE-081 separately gives order-one observed return
 memory near Heisenberg time. Equality of norms is not a spectral-radius
 assertion or a nondecay assertion for every source. A precise prose error
 in the frozen draft was corrected: dephased and unmeasured operators need
-not agree, but can agree for special unitaries. Lean verifies only the
-arithmetic positivity budget, with actual compilation recorded separately.
+not agree, but can agree for special unitaries. Lean source covers only the
+arithmetic positivity budget. Compilation of the new CoherenceBudget module
+is currently unconfirmed; the new main 57150ac formalization job was skipped.
 [Independent reconstruction and actual finite scope](../evidence/executions/20261014/spectrum-coherence/README.md).
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
