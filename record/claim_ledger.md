@@ -1,5 +1,31 @@
 # Claim ledger
 
+## Spectral and coherence obstructions, 14 October 2026
+
+**BGS-TRACE-081 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[Perfect intensity mixing does not identify microscopic statistics](../mathematics/flat_spectrum_obstruction_20261014.md).
+For any odd-prime sequence p_k->infinity, the abstract dimensions N_k=4^k p_k
+support deterministic simple-spectrum unitaries with P=J, reversal norm2^-k
+and a uniform macroscopic eigenphase measure. Origin-averaged microscopic
+point processes converge vaguely in probability to the empty measure;
+unfolded spacing distributions converge weakly to delta0, with non-UI
+counts. Normalized form factors diverge at times asymptotic to N_k.
+A self-contained generic-column phase lemma applies to every invertible
+complex matrix. No unchanged fixed-map, smooth chaotic quantization,
+full phase-ensemble contradiction, BGS, priority or analytic formal claim.
+
+**BGS-TRACE-082 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[Exact return memory and singular-norm plateau](../mathematics/coherence_memory_plateau_20261014.md).
+Every unitary in dimension N>=2 has ||(Q Ad_U Q)^r||=1 in Hilbert--Schmidt
+operator norm for integers0<=r<N. Exact resolvent/return recurrence is
+self-contained; TRACE-081 separately gives order-one observed return
+memory near Heisenberg time. Equality of norms is not a spectral-radius
+assertion or a nondecay assertion for every source. A precise prose error
+in the frozen draft was corrected: dephased and unmeasured operators need
+not agree, but can agree for special unitaries. Lean verifies only the
+arithmetic positivity budget, with actual compilation recorded separately.
+[Independent reconstruction and actual finite scope](../evidence/executions/20261014/spectrum-coherence/README.md).
+
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
 ## Unconditional feedback trajectory, 13 October 2026

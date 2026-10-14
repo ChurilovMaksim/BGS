@@ -1,0 +1,866 @@
+{
+  "status": "pass",
+  "arithmetic": "bounded safe integers for core/prime controls; BigInt for tensor multiplicities",
+  "execution": "functions JavaScript V8; Node stdout wrapper not executed",
+  "scope": "Finite arithmetic controls only; no generic discriminant or asymptotic proof, Python, C++ or Lean certification",
+  "core": {
+    "W": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "R": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "powers": [
+      {
+        "q": 1,
+        "numerator": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "denominator": 2,
+        "trace": -1
+      },
+      {
+        "q": 2,
+        "numerator": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ]
+        ],
+        "denominator": 4,
+        "trace": 1
+      },
+      {
+        "q": 3,
+        "numerator": [
+          [
+            4,
+            4,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            -4,
+            -4
+          ],
+          [
+            4,
+            -4,
+            4,
+            -4
+          ],
+          [
+            4,
+            -4,
+            -4,
+            4
+          ]
+        ],
+        "denominator": 8,
+        "trace": 2
+      },
+      {
+        "q": 4,
+        "numerator": [
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0
+          ]
+        ],
+        "denominator": 16,
+        "trace": 1
+      },
+      {
+        "q": 5,
+        "numerator": [
+          [
+            16,
+            16,
+            16,
+            16
+          ],
+          [
+            16,
+            -16,
+            16,
+            -16
+          ],
+          [
+            16,
+            -16,
+            -16,
+            16
+          ],
+          [
+            16,
+            16,
+            -16,
+            -16
+          ]
+        ],
+        "denominator": 32,
+        "trace": -1
+      },
+      {
+        "q": 6,
+        "numerator": [
+          [
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            64,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            64,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            64
+          ]
+        ],
+        "denominator": 64,
+        "trace": 4
+      }
+    ]
+  },
+  "primeControls": [
+    {
+      "p": 3,
+      "substitutions_checked": 3,
+      "pair_count_per_substitution": 9,
+      "productCounts": [
+        5,
+        2,
+        2
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "p": 5,
+      "substitutions_checked": 5,
+      "pair_count_per_substitution": 25,
+      "productCounts": [
+        9,
+        4,
+        4,
+        4,
+        4
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "p": 7,
+      "substitutions_checked": 7,
+      "pair_count_per_substitution": 49,
+      "productCounts": [
+        13,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 11,
+      "substitutions_checked": 11,
+      "pair_count_per_substitution": 121,
+      "productCounts": [
+        21,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "substitutions_checked": 13,
+      "pair_count_per_substitution": 169,
+      "productCounts": [
+        25,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "p": 17,
+      "substitutions_checked": 17,
+      "pair_count_per_substitution": 289,
+      "productCounts": [
+        33,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "p": 19,
+      "substitutions_checked": 19,
+      "pair_count_per_substitution": 361,
+      "productCounts": [
+        37,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "p": 23,
+      "substitutions_checked": 23,
+      "pair_count_per_substitution": 529,
+      "productCounts": [
+        45,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 29,
+      "substitutions_checked": 29,
+      "pair_count_per_substitution": 841,
+      "productCounts": [
+        57,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "p": 31,
+      "substitutions_checked": 31,
+      "pair_count_per_substitution": 961,
+      "productCounts": [
+        61,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "squaredResidues": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    }
+  ],
+  "tensorControls": [
+    {
+      "k": 1,
+      "N": "4",
+      "multiplicities": [
+        "1",
+        "0",
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "nearest_periodic_time": "0"
+    },
+    {
+      "k": 2,
+      "N": "16",
+      "multiplicities": [
+        "4",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2"
+      ],
+      "nearest_periodic_time": "12"
+    },
+    {
+      "k": 3,
+      "N": "64",
+      "multiplicities": [
+        "12",
+        "9",
+        "12",
+        "10",
+        "12",
+        "9"
+      ],
+      "nearest_periodic_time": "60"
+    },
+    {
+      "k": 4,
+      "N": "256",
+      "multiplicities": [
+        "46",
+        "40",
+        "45",
+        "40",
+        "45",
+        "40"
+      ],
+      "nearest_periodic_time": "252"
+    },
+    {
+      "k": 5,
+      "N": "1024",
+      "multiplicities": [
+        "176",
+        "165",
+        "176",
+        "166",
+        "176",
+        "165"
+      ],
+      "nearest_periodic_time": "1020"
+    },
+    {
+      "k": 6,
+      "N": "4096",
+      "multiplicities": [
+        "694",
+        "672",
+        "693",
+        "672",
+        "693",
+        "672"
+      ],
+      "nearest_periodic_time": "4092"
+    },
+    {
+      "k": 7,
+      "N": "16384",
+      "multiplicities": [
+        "2752",
+        "2709",
+        "2752",
+        "2710",
+        "2752",
+        "2709"
+      ],
+      "nearest_periodic_time": "16380"
+    },
+    {
+      "k": 8,
+      "N": "65536",
+      "multiplicities": [
+        "10966",
+        "10880",
+        "10965",
+        "10880",
+        "10965",
+        "10880"
+      ],
+      "nearest_periodic_time": "65532"
+    },
+    {
+      "k": 9,
+      "N": "262144",
+      "multiplicities": [
+        "43776",
+        "43605",
+        "43776",
+        "43606",
+        "43776",
+        "43605"
+      ],
+      "nearest_periodic_time": "262140"
+    },
+    {
+      "k": 10,
+      "N": "1048576",
+      "multiplicities": [
+        "174934",
+        "174592",
+        "174933",
+        "174592",
+        "174933",
+        "174592"
+      ],
+      "nearest_periodic_time": "1048572"
+    },
+    {
+      "k": 11,
+      "N": "4194304",
+      "multiplicities": [
+        "699392",
+        "698709",
+        "699392",
+        "698710",
+        "699392",
+        "698709"
+      ],
+      "nearest_periodic_time": "4194300"
+    },
+    {
+      "k": 12,
+      "N": "16777216",
+      "multiplicities": [
+        "2796886",
+        "2795520",
+        "2796885",
+        "2795520",
+        "2796885",
+        "2795520"
+      ],
+      "nearest_periodic_time": "16777212"
+    },
+    {
+      "k": 13,
+      "N": "67108864",
+      "multiplicities": [
+        "11186176",
+        "11183445",
+        "11186176",
+        "11183446",
+        "11186176",
+        "11183445"
+      ],
+      "nearest_periodic_time": "67108860"
+    },
+    {
+      "k": 14,
+      "N": "268435456",
+      "multiplicities": [
+        "44741974",
+        "44736512",
+        "44741973",
+        "44736512",
+        "44741973",
+        "44736512"
+      ],
+      "nearest_periodic_time": "268435452"
+    },
+    {
+      "k": 15,
+      "N": "1073741824",
+      "multiplicities": [
+        "178962432",
+        "178951509",
+        "178962432",
+        "178951510",
+        "178962432",
+        "178951509"
+      ],
+      "nearest_periodic_time": "1073741820"
+    },
+    {
+      "k": 16,
+      "N": "4294967296",
+      "multiplicities": [
+        "715838806",
+        "715816960",
+        "715838805",
+        "715816960",
+        "715838805",
+        "715816960"
+      ],
+      "nearest_periodic_time": "4294967292"
+    }
+  ]
+}

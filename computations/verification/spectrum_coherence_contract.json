@@ -1,0 +1,77 @@
+{
+  "claim_id": "BGS-TRACE-081",
+  "companion_claim_id": "BGS-TRACE-082",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/spectrum_coherence_controls.py",
+    "mathematics/flat_spectrum_obstruction_20261014.md",
+    "mathematics/coherence_memory_plateau_20261014.md",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/spectrum_coherence_contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact finite core/chirp coefficient/discriminant/tensor identities, block resolvent at1/5, return recurrence, observability budgets and N=2 nilpotent endpoint.",
+    "coefficient_domain": "integers and SymPy rational/Gaussian-rational matrices",
+    "conventions": "Row-major vectorization of Ad_U; diagonal projection separates P(U^t) from P(U)^t.",
+    "inputs": [
+      "computations/verification/spectrum_coherence_controls.py",
+      "mathematics/flat_spectrum_obstruction_20261014.md",
+      "mathematics/coherence_memory_plateau_20261014.md"
+    ],
+    "bounds": {
+      "core_dimension": 4,
+      "complex_endpoint_dimension": 2,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "tensor_powers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "resolvent_parameter": "1/5",
+      "return_transitions_per_matrix": 8,
+      "discriminant_examples": 4
+    },
+    "non_claims": [
+      "No generic discriminant lemma, asymptotic point-process law, all-N operator theorem, smooth chaotic quantization, mathematical priority or BGS follows from this finite execution."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; exact deterministic fixtures",
+    "seed": null
+  }
+}

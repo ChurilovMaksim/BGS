@@ -12,12 +12,15 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
+- **[Perfect-mixing spectral obstruction](../../flat_spectrum_obstruction_20261014.md)** — Simple spectrum and macroscopic uniformity do not identify the origin-averaged microscopic law.
+- **[Exact coherence memory](../../coherence_memory_plateau_20261014.md)** — Universal norm plateau through time N-1; observed signed cancellation remains separate.
+
 - **[Unconditional deterministic-start feedback](../../unconditional_feedback_flatness_20261013.md)** — Joint all-depth flatness and cutoff-matched clocks; deterministic microscopic universality remains open.
 - **[All-pair stopped concentration](../../two_step_stopped_concentration_20261013.md)** — Diagonal pairs, endpoint deactivation and full first crossings.
 
 - **[Complete two-step second moment](../../two_step_increment_variance_20261013.md)** — Uniform-port raw fluctuation bound for arbitrary phases, with frozen endpoints; no concentration claim.
 
-- **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; early entry survival remains open.
+- **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; its broader startup-class survival is not supplied by that stopped theorem.
 
 - **[Exact Haar feedback and entropy-stable clocks](../../haar_feedback_clock_law_20261012.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
 

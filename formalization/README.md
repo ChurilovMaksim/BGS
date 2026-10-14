@@ -88,3 +88,13 @@ the mathematical proposition certified by an older module.
 The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
 
 The three new Std kernels PhaseFrameWitness, TorusDimensionBound and ActiveRankDefect were successfully compiled with Lean 4.33.1. They cover an integer determinant and two natural-number inequality fragments only. JackArithmeticCore remains an uncompiled Mathlib draft. The local compiler required an application-path portability adapter; its source and exact scope are in the 11 October execution packet. No kernel function is replaced.
+
+## Coherence budget kernel, 14 October
+
+Bgs/CoherenceBudget.lean proves only that (N-1)(N-r)>0 for natural
+N>=2 and r<N. It is the arithmetic leaf of TRACE-082, not a formalization
+of complex linear algebra, codimension or the Hilbert--Schmidt norm theorem.
+The active entry point imports it; actual compiler execution and printed
+axioms are reported in the dated spectrum/coherence evidence packet and CI.
+It uses ordinary Std/omega proof terms, not native_decide or an admitted
+operator statement.

@@ -1,0 +1,21 @@
+{
+  "scope": "Independent PdfReader and PyMuPDF parsed all301 pages; rendered pages294..298 with PyMuPDF and visually inspected295..298. System /usr/bin/pdfinfo independently reports301 pages.",
+  "pdf_sha256": "8ed16a45ac08494bf0c4e9c7635f11d4180f37769586ebe6adcde7dcfac5a577",
+  "pdf_bytes": 2197117,
+  "page_count": 301,
+  "rendered_pages": [
+    294,
+    295,
+    296,
+    297,
+    298
+  ],
+  "visually_inspected_pages": [
+    295,
+    296,
+    297,
+    298
+  ],
+  "typesetting_source_hashes_unchanged": true,
+  "artifact_boundary": "Two earlier generated PDFs changed/truncated after default runtime Poppler invocation despite successful build manifests. They were not delivered. Cause not established; fresh build plus independent parsers, direct system Poppler and cross-call byte checks established the saved artifact integrity."
+}

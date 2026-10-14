@@ -1,5 +1,14 @@
 # Open mathematical obligations
 
+[TRACE-081](flat_spectrum_obstruction_20261014.md) rules out inferring an
+initial microscopic law from flat intensities, small reversal norm, simple
+spectrum and a uniform macroscopic measure alone. Its origin average can
+still converge to the empty process. [TRACE-082](coherence_memory_plateau_20261014.md)
+rules out a general singular-norm decay for the full unaveraged coherence
+block before time N. Cancellation of specified observed/signed returns is
+a different obligation and remains open for the unchanged fixed map.
+These obstructions change neither the TRACE-005 target nor the BGS status.
+
 ## Frontier after unconditional feedback control, 13 October 2026
 
 [TRACE-080](unconditional_feedback_flatness_20261013.md) closes the

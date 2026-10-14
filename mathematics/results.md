@@ -1,5 +1,23 @@
 # Theorem families and their limits
 
+[TRACE-081](flat_spectrum_obstruction_20261014.md) proves that
+perfect intensity mixing, a vanishing coordinate reversal norm, simple
+spectrum and a uniform macroscopic phase law can coexist with an empty
+origin-averaged microscopic limit and clustered spacings. The construction
+is an abstract unitary family; it is not the fixed smooth chaotic model.
+[TRACE-082](coherence_memory_plateau_20261014.md) identifies
+exact coherent return memory and proves a universal obstruction:
+
+$$
+\mathcal E=\mathcal Q\operatorname{Ad}_U\mathcal Q,
+\qquad \|\mathcal E^r\|_{\mathrm{HS}\to\mathrm{HS}}=1
+\quad(0\le r<N).
+$$
+
+Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
+matrix space. A general early norm contraction cannot replace the missing
+source-specific signed cancellation. [Exact outcome](../record/spectral_coherence_continuation_20261014.md).
+
 [TRACE-080](unconditional_feedback_flatness_20261013.md) now
 proves unconditional entry flatness from any deterministic unitary startup
 with intensity bound C0/N and centered singular norm at most 1/100.
@@ -19,15 +37,16 @@ first crossings. [Exact outcome](../record/feedback_flatness_continuation_202610
 [TRACE-078](two_step_increment_variance_20261013.md) adds
 an exact raw second-moment bound for the complete two-step feedback
 increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
-phases, with frozen endpoints. Concentration and early entry survival
-still require a separate dynamic proof.
+phases, with frozen endpoints. Its one-step conclusion is complemented
+by the separate TRACE-079/080 concentration and trajectory proofs.
 
 [TRACE-077](green_compression_gap_20261013.md) linearizes
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular
 norm on the entry-stopped prefix, with quantitative failure probability.
-This closes the deep-range three-step forcing estimate; the probability
-of reaching that range without entry exit remains unproved.
+This proves the deep-range three-step forcing estimate on reached states.
+The stopped theorem alone supplies no entry-survival probability;
+TRACE-080 closes it under its smaller startup-gap hypothesis.
 [Exact outcome](../record/green_compression_continuation_20261013.md).
 
 [TRACE-076](haar_feedback_clock_law_20261012.md) supplies the exact Haar

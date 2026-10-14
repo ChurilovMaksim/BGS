@@ -1,10 +1,30 @@
 # BGS research brief
 
-**Current scientific status, 13 October 2026:** the unchanged fixed-strength
+**Current scientific status, 14 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
 review or an attached manuscript cannot override it.
+
+## Spectral information beyond intensity mixing
+
+[TRACE-081](mathematics/flat_spectrum_obstruction_20261014.md) proves that
+perfect intensity mixing, a vanishing coordinate reversal norm, simple
+spectrum and a uniform macroscopic phase law can coexist with an empty
+origin-averaged microscopic limit and clustered spacings. The construction
+is an abstract unitary family; it is not the fixed smooth chaotic model.
+[TRACE-082](mathematics/coherence_memory_plateau_20261014.md) identifies
+exact coherent return memory and proves a universal obstruction:
+
+$$
+\mathcal E=\mathcal Q\operatorname{Ad}_U\mathcal Q,
+\qquad \|\mathcal E^r\|_{\mathrm{HS}\to\mathrm{HS}}=1
+\quad(0\le r<N).
+$$
+
+Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
+matrix space. A general early norm contraction cannot replace the missing
+source-specific signed cancellation. [Exact outcome](record/spectral_coherence_continuation_20261014.md).
 
 ## Full-depth clocks and microscopic paths
 
@@ -34,8 +54,9 @@ TRACE-080 supply the separate stopped and global dynamic proofs.
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular
 norm on the entry-stopped prefix, with quantitative failure probability.
-This closes the deep-range three-step forcing estimate; the probability
-of reaching that range without entry exit remains unproved.
+This proves the deep-range three-step forcing estimate on reached states.
+The stopped theorem alone supplies no entry-survival probability;
+TRACE-080 closes it under its smaller startup-gap hypothesis.
 [Exact outcome](record/green_compression_continuation_20261013.md).
 
 [TRACE-076](mathematics/haar_feedback_clock_law_20261012.md) gives an exact

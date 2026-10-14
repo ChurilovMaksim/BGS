@@ -4,13 +4,32 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (13 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (14 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
-## Checked continuation, 12 October
+## Checked continuation, 14 October
+
+[TRACE-081](mathematics/flat_spectrum_obstruction_20261014.md) proves that
+perfect intensity mixing, a vanishing coordinate reversal norm, simple
+spectrum and a uniform macroscopic phase law can coexist with an empty
+origin-averaged microscopic limit and clustered spacings. The construction
+is an abstract unitary family; it is not the fixed smooth chaotic model.
+[TRACE-082](mathematics/coherence_memory_plateau_20261014.md) identifies
+exact coherent return memory and proves a universal obstruction:
+
+$$
+\mathcal E=\mathcal Q\operatorname{Ad}_U\mathcal Q,
+\qquad \|\mathcal E^r\|_{\mathrm{HS}\to\mathrm{HS}}=1
+\quad(0\le r<N).
+$$
+
+Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
+matrix space. A general early norm contraction cannot replace the missing
+source-specific signed cancellation. [Exact outcome](record/spectral_coherence_continuation_20261014.md).
+
 
 [TRACE-080](mathematics/unconditional_feedback_flatness_20261013.md) now
 proves unconditional entry flatness from any deterministic unitary startup
@@ -38,8 +57,9 @@ TRACE-080 supply the separate stopped and global dynamic proofs.
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular
 norm on the entry-stopped prefix, with quantitative failure probability.
-This closes the deep-range three-step forcing estimate; the probability
-of reaching that range without entry exit remains unproved.
+This proves the deep-range three-step forcing estimate on reached states.
+The stopped theorem alone supplies no entry-survival probability;
+TRACE-080 closes it under its smaller startup-gap hypothesis.
 [Exact outcome](record/green_compression_continuation_20261013.md).
 
 [The exact Haar feedback law](mathematics/haar_feedback_clock_law_20261012.md)

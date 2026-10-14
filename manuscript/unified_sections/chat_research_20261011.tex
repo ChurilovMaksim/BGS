@@ -1265,3 +1265,210 @@ remain open. The canonical source is
 Independent reconstruction and exact/floating finite controls have distinct
 roles; scalar Bernstein/Freedman is prior, and no new formal certificate
 or world-priority claim is made.
+\section{Perfect intensity mixing need not determine a microscopic law}
+\label{sec:flat-spectral-obstruction-20261014}
+
+The abstract result BGS-TRACE-081 distinguishes intensity mixing from
+the coherent information in an initial spectrum.  It does not concern
+the unchanged odd-dimensional smooth quantizer.  Let \(p_k\) be any
+sequence of odd primes tending to infinity, \(k\ge2\), and put
+\[
+n_k=4^k,\qquad N_k=n_kp_k,\qquad \epsilon_k=N_k^{-4}.
+\]
+There are deterministic \(U_k\in U(N_k)\) with simple spectrum such that
+\[
+P(U_k)=J_{N_k},\qquad
+\|P(U_k)-J_{N_k}\|=0,\qquad
+\|B(U_k)\|=2^{-k},\quad B(U)_{ij}=U_{ij}\overline{U_{ji}}.
+\]
+Their macroscopic eigenphase measure converges to uniform circle measure.
+However, the empirical unfolded spacing measure converges weakly to
+\(\delta_0\), and their microscopic point process about a uniform random
+origin converges vaguely in probability to the empty measure.  For times
+\[
+t_k=6p_k\lfloor 4^k/6\rfloor=N_k-4p_k,\qquad t_k/N_k\longrightarrow1,
+\]
+the normalized form factor satisfies
+\[
+N_k^{-1}|\operatorname{Tr}U_k^{t_k}|^2
+       \ge N_k(1-t_k\epsilon_k)^2\longrightarrow\infty.
+\]
+The vanishing reversal norm is a coordinate statement, not a full
+antiunitary symmetry classification.
+
+\paragraph{Exact construction.}
+Set
+\[
+H=\frac12\begin{pmatrix}
+1&1&1&1\\1&-1&-1&1\\1&1&-1&-1\\1&-1&1&-1
+\end{pmatrix}.
+\]
+Row orthogonality gives \(H^*H=I\); \(H^2\) permutes the last three
+coordinates cyclically, so \(H^6=I\).  The sign matrix \(4B(H)\) has
+Gram matrix \(4I\), whence \(\|B(H)\|=1/2\).
+For \(\omega=e^{2\pi i/p}\), define
+\[
+(F_p)_{ab}=p^{-1/2}\omega^{ab},\qquad
+D_p=\operatorname{diag}(\omega^{b^2}),\qquad V_p=F_p^*D_pF_p .
+\]
+Then \(V_p^p=I\), and
+\[
+(V_p)_{ij}=p^{-1}\sum_b\omega^{b^2+(j-i)b}.
+\]
+For each \(d\in\mathbb F_p\), the bijection
+\((b,c)\mapsto (b-c,b+c+d)\) proves
+\[
+\left|\sum_b\omega^{b^2+db}\right|^2
+   =\sum_{a,h}\omega^{ah}=p.
+\]
+Thus every entry of \(V_p\) has squared modulus \(1/p\).
+Replacing \(b\) by \(-b\) proves \(V_p^T=V_p\), so \(B(V_p)=J_p\).
+The matrix \(A_k=H^{\otimes k}\otimes V_{p_k}\) consequently has
+exactly flat intensities, reversal norm \(2^{-k}\), and
+\(A_k^{6p_k}=I\).  Its phases lie in at most \(6p_k\) root-of-unity
+centers.  For fixed \(q>0\), eventually \(p_k\nmid q\), and the same
+Gauss argument gives
+\[
+\frac{|\operatorname{Tr}A_k^q|}{N_k}
+ \le \frac{|\operatorname{Tr}V_{p_k}^q|}{p_k}=p_k^{-1/2}.
+\]
+
+\paragraph{Removing every exact degeneracy.}
+For every invertible complex matrix \(A\), the polynomial
+\(f(\lambda,z)=\det(\lambda I-A\operatorname{diag}z)\) is monic in
+\(\lambda\) and multi-affine in \(z\).  If an irreducible factor repeated,
+its degree in every \(z_j\) would be zero.  It would then divide
+\(f(\lambda,0)=\lambda^N\), but \(\lambda\) cannot divide \(f\) since
+its constant coefficient is
+\((-1)^N\det A\prod_jz_j\ne0\).
+Monicity and factorization over the fraction field show that the
+discriminant in \(\lambda\) is a nonzero polynomial.  Its zero set
+has measure zero on every product of circle arcs, by the univariate
+identity principle and Fubini.  Thus arbitrarily small generic column
+phases split the spectrum of every invertible \(A\).
+
+Choose \(E_k=\operatorname{diag}(e^{i\alpha_j})\), with
+\(|\alpha_j|<\epsilon_k\), giving simple spectrum, and put \(U_k=A_kE_k\).
+This choice can be deterministic.  Then
+\[
+\|U_k-A_k\|\le\epsilon_k,\quad P(U_k)=P(A_k),\quad
+B(U_k)=E_k^*B(A_k)E_k,\quad
+\|U_k^q-A_k^q\|\le q\epsilon_k .
+\]
+For every fixed positive \(q\),
+\(|\operatorname{Tr}U_k^q|/N_k\le p_k^{-1/2}+q\epsilon_k\).
+Conjugation gives the negative Fourier coefficients, and trigonometric
+approximation proves the uniform macroscopic limit.
+
+\paragraph{Local limits and rare counts.}
+Normality of \(A_k\) implies that each eigenvalue of \(U_k\) lies within
+chord distance \(\epsilon_k\) of an old center: apply
+\((\lambda I-A_k)x=(U_k-A_k)x\) to a unit eigenvector.
+All eigenphases therefore lie in at most \(6p_k\) disjoint arcs of
+radius \(2\epsilon_k\), for large \(k\).  At least \(N_k-6p_k\)
+cyclic consecutive gaps are internal to these arcs and at most
+\(4\epsilon_k\).  Their unfolded values are at most
+\(2N_k\epsilon_k/\pi\to0\), and the exceptional fraction is at most
+\(6/4^k\), proving the weak spacing limit.
+
+For an independent uniform origin \(\Theta\), let
+\[
+\Xi_k=\sum_j\delta_{\,N_k\operatorname{Arg}
+             (e^{i(\theta_j-\Theta)})/(2\pi)} .
+\]
+For each fixed \(R>0\), a union over old centers gives
+\[
+\mathbb P\{\Xi_k([-R,R])>0\}
+ \le \frac{12p_k\epsilon_k}{\pi}+\frac{12R}{4^k}\longrightarrow0 .
+\]
+Every compactly supported continuous test is consequently zero with
+probability tending to one.  This is vague convergence in probability
+to the empty measure.  Nonetheless the exact origin average is
+\(\mathbb E\Xi_k([-R,R])=2R\) for \(N_k>2R\);
+uniform integrability fails.  At \(t_k\), the norm bound and
+\(A_k^{t_k}=I\) give
+\(|\operatorname{Tr}U_k^{t_k}-N_k|\le N_kt_k\epsilon_k\),
+which proves the announced form-factor lower bound.
+
+The construction uses classical Fourier, tensor and discriminant
+mechanisms; no priority is claimed.  Full phase-averaged formulations
+\cite{Tanner2001USE,GnutzmannAltland2004Graphs} are different objects.
+The example meets the algebraic startup bounds of TRACE-080, so its
+random-feedback conclusions cannot alone identify this initial local
+law.  No fixed smooth chaotic quantization or BGS counterexample is
+asserted.
+
+\section{Exact coherence memory and the dimension-time norm barrier}
+\label{sec:coherence-memory-20261014}
+
+BGS-TRACE-082 concerns every unitary \(U\) of dimension \(N\ge2\).
+On Hilbert--Schmidt matrix space let
+\(\mathcal T(X)=UXU^*\), let \(\mathcal D\) be the orthogonal
+diagonal projection, and let \(\mathcal Q=I-\mathcal D\).  With
+diagonal/off-diagonal domains, write
+\[
+P=\mathcal D\mathcal T\mathcal D,\quad
+\mathcal L=\mathcal D\mathcal T\mathcal Q,\quad
+\mathcal C=\mathcal Q\mathcal T\mathcal D,\quad
+\mathcal E=\mathcal Q\mathcal T\mathcal Q .
+\]
+Here \(P_{ij}=|U_{ij}|^2\).  Block elimination, valid for \(|z|<1\),
+gives the exact identity on the diagonal space
+\[
+\mathcal D(I-z\mathcal T)^{-1}\mathcal D
+ =\bigl[I-zP-z^2\mathcal L
+      (I-z\mathcal E)^{-1}\mathcal C\bigr]^{-1}.
+\]
+For diagonal \(X_0\), putting \(a_n=\mathcal D\mathcal T^nX_0\)
+and \(c_n=\mathcal Q\mathcal T^nX_0\), one has \(c_0=0\) and
+\[
+a_{n+1}=Pa_n+
+ \sum_{s=0}^{n-1}\mathcal L\mathcal E^{n-1-s}\mathcal C a_s .
+\]
+The terms retain coherent return memory.  Repeated dephasing gives
+\(P^n\); unmeasured evolution gives
+\(\mathcal D\mathcal T^n\mathcal D\).  They need not agree, but do
+agree for special matrices, including diagonal and monomial unitaries.
+
+\paragraph{Universal norm plateau.}
+For every integer \(0\le r<N\),
+\[
+\|\mathcal E^r\|_{\mathrm{HS}\to\mathrm{HS}}=1 .
+\]
+Indeed work in the complex trace-zero space of dimension \(N^2-1\).
+Each constraint \(\mathcal D\mathcal T^jX=0\) has codimension at most
+\(N-1\), since trace is preserved.  The constraints for
+\(j=0,\ldots,r\) leave dimension at least
+\[
+N^2-1-(r+1)(N-1)=(N-1)(N-r)>0 .
+\]
+A nonzero witness stays off diagonal at all these times, so induction
+gives \(\mathcal E^jX=\mathcal T^jX\) for \(j\le r\).
+Hilbert--Schmidt unitarity yields norm preservation; contractivity
+gives the opposite bound.  The witness may depend on \(U\) and \(r\).
+This is a singular-norm statement, not a spectral-radius or
+every-source nondecay statement.  Exact finite controls include an
+\(N=2\) compression with norm one but square zero.
+
+\paragraph{An observed Heisenberg return.}
+For the family in the preceding section,
+\(\|U_k^{t_k}-I\|\le t_k\epsilon_k\) implies
+\(\|\mathcal T^{t_k}-I\|_{\mathrm{HS}\to\mathrm{HS}}
+ \le2t_k\epsilon_k\).
+Diagonal compression and \(\|I-J\|=1\) therefore give
+\[
+\bigl\||U_k^{t_k}|^{\circ2}-I\bigr\|\le2t_k\epsilon_k,\qquad
+\bigl\||U_k^{t_k}|^{\circ2}-P(U_k)^{t_k}\bigr\|
+       \ge1-2t_k\epsilon_k .
+\]
+This proves order-one complete observed return deviation.  It is not
+a lower bound for one individually selected
+\(\mathcal L\mathcal E^r\mathcal C\) kernel.  Neither the universal
+plateau nor this abstract example estimates the actual fixed-map
+signed source.
+
+The independent mathematical audits are distinct from exact finite
+Python/C++ controls and from the active Lean arithmetic kernel.
+That kernel proves only positivity of \((N-1)(N-r)\) for natural
+\(N\ge2,r<N\); it does not formalize codimension, the operator theorem,
+the generic discriminant lemma or a limiting point process.
