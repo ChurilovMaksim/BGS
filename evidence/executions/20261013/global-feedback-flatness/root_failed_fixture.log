@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/06745ba532e4/research_session/check_row_feedback_energy_20261013.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/06745ba532e4/research_session/check_row_feedback_energy_20261013.py", line 88, in main
+    result={'exact_rows':exact_rows(),'small_gap_rows':small_gap_rows(),'non_claim':'Finite controls do not prove all-time flatness or BGS.'}
+                         ^^^^^^^^^^^^
+  File "/workspace/scratch/06745ba532e4/research_session/check_row_feedback_energy_20261013.py", line 32, in exact_rows
+    s=s*rot;assert s*s.T==sp.eye(n) and s!=s.T
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

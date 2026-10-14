@@ -1,0 +1,56 @@
+{
+  "claim": "BGS-TRACE-079",
+  "exact_unitary": {
+    "dimension": 16,
+    "delta": "1/16",
+    "port_phase_integral_cases": [
+      {
+        "pair": [
+          0,
+          0
+        ],
+        "mean_increment": "43/3840",
+        "raw_second_moment": "7507/41472000"
+      },
+      {
+        "pair": [
+          3,
+          3
+        ],
+        "mean_increment": "43/3840",
+        "raw_second_moment": "7507/41472000"
+      },
+      {
+        "pair": [
+          0,
+          3
+        ],
+        "mean_increment": "91/28800",
+        "raw_second_moment": "3619/311040000"
+      }
+    ],
+    "distinct_cached_integrands": 11
+  },
+  "exact_weights": {
+    "recurrence_cases": [
+      {
+        "stopping_convention": "none",
+        "old_crossing_size": null,
+        "exact_telescoping_targets": 5
+      },
+      {
+        "stopping_convention": "endpoint",
+        "old_crossing_size": 19,
+        "exact_telescoping_targets": 5
+      },
+      {
+        "stopping_convention": "global_crossing",
+        "old_crossing_size": 18,
+        "exact_telescoping_targets": 5
+      }
+    ],
+    "factorial_controls_through": 50,
+    "non_claim": "The recurrence controls do not model unitary feedback or prove a tail bound."
+  },
+  "non_claim": "Finite algebra and phase integrals; no asymptotic probability proof."
+}

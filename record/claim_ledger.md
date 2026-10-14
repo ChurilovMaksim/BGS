@@ -2,6 +2,37 @@
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
+## Unconditional feedback trajectory, 13 October 2026
+
+**BGS-TRACE-080 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[The global feedback theorem](../mathematics/unconditional_feedback_flatness_20261013.md)
+starts from any deterministic unitary family with intensity bound C0/N and
+centered singular norm at most 1/100. Fresh independent uniform phases and
+uniform ports give simultaneous entry flatness, intensity gap, row/column
+fourth-power energies and two-step control at every retained depth
+u>=ceil(log(2N)^(4+kappa)), with failure O(log(2N)^(-1-kappa)). One common
+first-exit rule retains every full and simultaneous crossing; no future
+flatness event is conditioned upon. Row/column energy supplies the early
+three-step forcing that the maximum-entry estimate could not provide.
+TRACE-060 at exactly this cutoff then gives unconditional every-fixed-order
+clocks and the uniform empirical weak law. The reference atom and pathwise
+rank lower bound keep their original scope. TRACE-073 C9 additionally gives
+uniform reversal-norm convergence when its separate initial norm tends to
+zero; FM-021/FM-022 supply named eventual actual-map inputs only.
+No effective startup, smaller general cutoff, growing-order or edge law,
+physical microscopic reference, TRACE-005 or BGS is proved.
+[Review and actual finite scope](../evidence/executions/20261013/global-feedback-flatness/README.md).
+
+**BGS-TRACE-079 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[All-pair stopped concentration](../mathematics/two_step_stopped_concentration_20261013.md)
+includes diagonal pairs, endpoint freezing, deterministic scalar continuation,
+and the full first entry/three-step crossing. Its quantitative scalar tail
+and shrinking-Green corollary give 9/u on reached deep-range states. That
+stopped theorem alone makes no early-survival estimate; the separate
+TRACE-080 argument supplies the unconditional global trajectory result
+under stronger startup hypotheses.
+[Review and exact controls](../evidence/executions/20261013/stopped-concentration/README.md).
+
 ## Two-step fluctuation control, 13 October 2026
 
 **BGS-TRACE-078 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
@@ -14,8 +45,9 @@ Complete row/column Parseval controls the linear coefficient before
 absolute values; all higher coherent feedback terms remain included.
 This is a raw second moment, not a concentration theorem or survival
 estimate. Together with TRACE-075 and TRACE-077 it supplies complementary
-one-step fluctuation, mean and deep-range forcing inputs. Sustained
-concentration, early entry survival, TRACE-005 and BGS remain open.
+one-step fluctuation, mean and deep-range forcing inputs. These one-step inputs are completed by the separate TRACE-079/080
+concentration and trajectory results on their stated cutoff. TRACE-005
+and BGS remain open.
 [Independent review and finite scope](../evidence/executions/20261013/two-step-variance/README.md).
 
 ## Shrinking stopped gaps, 13 October 2026
@@ -32,9 +64,9 @@ including simultaneous exits. At reached, entry-admissible depths
 `log(2N)^(7+kappa) <= u <= N/log(2N)^2`, the singular norm is
 `O(log(2N)^(-2))` except with probability `O(log(2N)^(-kappa))`.
 The three-step kernel is then `(1+O(1/log(2N)))/u` before entry exit.
-The probability of reaching that range without entry exit is unestimated;
-all-time deterministic flatness, sustained two-step concentration,
-TRACE-005 and BGS remain open. Actual-map startup uses only named FM-021
+TRACE-077 alone does not estimate the probability of reaching that range;
+TRACE-079/080 supply the separate concentration and probability results
+for their stated initial class and cutoff. TRACE-005 and BGS remain open. Actual-map startup uses only named FM-021
 initial inputs. No new formal certificate or priority claim is asserted.
 [Review and finite scope](../evidence/executions/20261013/green-compression/README.md).
 
@@ -57,8 +89,8 @@ flatness for each specified \(K>3\).
 A bounded-entropy microscopic-gap ensemble disproves the corresponding
 prescribed-origin Sine₂ implication, without an origin-averaged claim.
 The maintained deterministic initial matrix is outside this entropy class;
-its all-time probability, physical TRACE-055, signed TRACE-005 and BGS
-remain open. Prior Cauchy/Haar projection/beta objects are credited.
+TRACE-080 now supplies its feedback probability on the larger stated
+cutoff. Physical microscopic TRACE-055, signed TRACE-005 and BGS remain open. Prior Cauchy/Haar projection/beta objects are credited.
 [Exact review and execution scope](../evidence/executions/20261012/haar-feedback/README.md).
 
 ## Unitary two-step obstruction, 12 October 2026
@@ -72,8 +104,9 @@ with endpoint freezing and uniform selection among all \(u\) labels.
 At the TRACE-074 constructed peaks,
 \(\mathbb E\Delta K_{ij}=-(1+o(1))K_{ij}/u\).
 The core theorem is self-contained; TRACE-074 supports only its comparison
-and witness corollary. High-probability or sustained decay, higher moments,
-all-time flatness, microscopic identification and BGS remain unproved.
+and witness corollary. TRACE-078/079/080 now provide the separate fluctuation, concentration and
+trajectory companions at their explicit scopes. Microscopic identification
+and BGS remain unproved.
 The original averaging sentence was corrected before promotion.
 [Review and exact finite scope](../evidence/executions/20261012/two-step-drift/README.md).
 
@@ -103,7 +136,7 @@ Priority and a solution of global BGS are not claimed.
 | BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/source_covariance_20261011.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
 | BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/integrable_phase_absorption_20261011.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
 | BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/physical_source_transport_20261011.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
-| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Strengthened [conditional proof](../mathematics/all_moment_delay_bootstrap_20261011.md): joint first-delay concentration, all fixed killed upper moments and [uniform equality laws at every fixed order](../mathematics/conditional_clock_universality_20261011.md), with the [full-depth measure and exact rank atom](../mathematics/full_depth_clock_measure_20261011.md) down to ceil(log(2N)^(1+kappa)). All-time flatness probability, growing-order/edge bounds, physical microscopic identification and unrestricted exceptional-event moments remain open. |
+| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Strengthened [conditional proof](../mathematics/all_moment_delay_bootstrap_20261011.md): joint first-delay concentration, all fixed killed upper moments and [uniform equality laws at every fixed order](../mathematics/conditional_clock_universality_20261011.md), with the [full-depth measure and exact rank atom](../mathematics/full_depth_clock_measure_20261011.md) down to ceil(log(2N)^(1+kappa)). For arbitrary startups the premise remains conditional; TRACE-080 closes it for the explicit entry-flat small-gap class at log^(4+kappa). Smaller cutoffs, growing-order/edge bounds, physical microscopic identification and unrestricted exceptional-event moments remain open. |
 | BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/fresh_phase_average_20261011.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
 | BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/flat_completion_20261011.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
 | BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/nonlinear_coercivity_20261011.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
@@ -120,8 +153,9 @@ Priority and a solution of global BGS are not claimed.
 The [integration disposition](chat_integration_20261011.md) records every
 research branch, prior overlap, corrected guesses and unclosed candidates.
 TRACE-055 remains verification-pending after its covariance, physical-source
-and conditional barrier components were reconstructed. The all-time cavity
-flatness probability and the scalar microscopic law remain unresolved.
+and conditional barrier components were reconstructed. TRACE-080 now supplies
+the maintained startup's probability and matching clock/channel applications
+at log^(4+kappa). The scalar microscopic law remains unresolved.
 **BGS-BGS-001 and the every-fixed-order signed TRACE-005 remain OPEN.**
 
 ## Reviewed 8 October continuation

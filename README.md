@@ -12,11 +12,27 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 ## Checked continuation, 12 October
 
+[TRACE-080](mathematics/unconditional_feedback_flatness_20261013.md) now
+proves unconditional entry flatness from any deterministic unitary startup
+with intensity bound C0/N and centered singular norm at most 1/100.
+Uniform ports and fresh uniform phases preserve flatness, a small intensity
+gap, bounded row/column fourth-power energies and a uniform two-step bound
+at every depth down to ceil(log(2N)^(4+kappa)), with failure
+O(log(2N)^(-1-kappa)). Fixed-order clocks and the empirical weak law are
+unconditional on that same cutoff; reversal convergence uses its separate
+initial-channel assumption. The actual odd-N fixed-coupling family has
+these named eventual startup inputs. The deterministic microscopic law
+and BGS remain open.
+
+[TRACE-079](mathematics/two_step_stopped_concentration_20261013.md) supplies
+the all-pair stopped concentration input, including the diagonal and full
+first crossings. [Exact outcome](record/feedback_flatness_continuation_20261013.md).
+
 [TRACE-078](mathematics/two_step_increment_variance_20261013.md) adds
 an exact raw second-moment bound for the complete two-step feedback
 increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
-phases, with frozen endpoints. Concentration and early entry survival
-still require a separate dynamic proof.
+phases, with frozen endpoints. Its one-step bound alone does not give concentration. TRACE-079 and
+TRACE-080 supply the separate stopped and global dynamic proofs.
 
 [TRACE-077](mathematics/green_compression_gap_20261013.md) linearizes
 classical elimination in centered Green coordinates. Its decaying initial
@@ -40,8 +56,9 @@ shows that logarithmic entry flatness and a vanishing intensity singular
 norm can coexist with a logarithmic two-step peak, even for genuine
 unitary matrices. Three-step mixing does not supply the two-step Schur
 variance estimate. The [fresh-phase drift theorem](mathematics/two_step_restoring_drift_20261012.md)
-proves a restoring one-step mean for the constructed peaks; concentration
-and the deterministic model's all-time flatness probability remain open.
+proves a restoring one-step mean for the constructed peaks. The separate
+TRACE-079/080 proofs now supply concentration and a trajectory probability
+for the specified startup class and cutoff.
 
 
 [The new checkpoint](record/chat_integration_20261011.md) proves maximal
@@ -63,8 +80,9 @@ contracts every classical centered singular value and controls the quantum
 position-chain and [reversal gaps](record/reversal_channel_continuation_20261011.md) down to $\lceil\log(2N)^{3+\kappa}\rceil$. Both stochastic
 theorems assume all-time entry flatness. TRACE-076 discharges the clock
 premise for Haar starts and extends the clock laws by relative entropy;
-the maintained deterministic model's probability and initial microscopic
-spectral law remain open.
+TRACE-080 now discharges the probability for the maintained deterministic
+startup on its log^(4+kappa) cutoff, with cutoff-matched clocks and the
+extra reversal corollary. Its initial microscopic spectral law remains open.
 
 ## What the conjecture asks
 

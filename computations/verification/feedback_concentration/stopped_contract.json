@@ -1,0 +1,64 @@
+{
+  "claim_id": "BGS-TRACE-079",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "SymPy",
+      "version": "1.14.0"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/stopped_two_step_concentration.py",
+    "mathematics/two_step_stopped_concentration_20261013.md",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/feedback_concentration/stopped_contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact uniform-circle pair mean/raw second moments including diagonals; direct phase increments and stopped deterministic affine telescoping, factorial majorants.",
+    "coefficient_domain": "SymPy exact rational complex residues and Python Fraction.",
+    "conventions": "Frozen endpoint/row removing increments are zero; original-label uniform ports; no survival conditioning. Scalar recurrences after stop are bookkeeping only.",
+    "inputs": [
+      "computations/verification/stopped_two_step_concentration.py",
+      "mathematics/two_step_stopped_concentration_20261013.md"
+    ],
+    "bounds": {
+      "unitary_dimension": 16,
+      "ordered_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "rational_phase_grid": [
+        "1",
+        "-1",
+        "i",
+        "-i"
+      ],
+      "recurrence_b": 20,
+      "recurrence_m": 16,
+      "stopping_cases": 3,
+      "factorial_max": 50
+    },
+    "non_claims": [
+      "Finite checks do not establish asymptotic probability bounds, effective startup, universal phase coverage, growing-order clocks or BGS."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; deterministic fixtures and phase grids",
+    "seed": null
+  }
+}

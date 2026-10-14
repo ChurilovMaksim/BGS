@@ -159,6 +159,18 @@
       "state": "proved",
       "source": "mathematics/two_step_increment_variance_20261013.md",
       "disposition": "Independent reconstruction of complete coordinate raw second moment; no concentration or survival promotion."
+    },
+    {
+      "id": "BGS-TRACE-079",
+      "state": "proved",
+      "source": "mathematics/two_step_stopped_concentration_20261013.md",
+      "disposition": "Any deterministic admissible unitary startup, uniform ports and fresh uniform phases, two global barriers and endpoint freezing. Quantitative all-pair bound through the full first crossing. Shrinking-Green corollary gives 9/u on reached depths log(2N)^(7+kappa)..N/log(2N)^3. Includes diagonal pairs. No early entry survival, post-crossing matrices or BGS claim."
+    },
+    {
+      "id": "BGS-TRACE-080",
+      "state": "proved",
+      "source": "mathematics/unconditional_feedback_flatness_20261013.md",
+      "disposition": "Any deterministic unitary initial family with max intensity<=C0/N and centered singular norm<=1/100, uniform retained ports and fresh independent uniform phases. Unconditional all-depth flatness, intensity gap, row/column fourth-power energies and two-step bound down to ceil(log(2N)^(4+kappa)); failure O(log(2N)^(-1-kappa)). Every fixed-order clock and uniform empirical weak law on that same cutoff are named-input consequences. Reversal convergence additionally assumes initial channel norm->0. Actual odd-N fixed-coupling inputs are eventual and have no effective startup. No smaller cutoff, growing orders, edge law, initial deterministic microscopic law, signed TRACE-005 or BGS conclusion."
     }
   ],
   "invariants": [

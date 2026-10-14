@@ -1,0 +1,79 @@
+{
+  "exact_rows": {
+    "n": 16,
+    "delta": "49/400",
+    "nonsymmetric_scattering": true,
+    "scope": "General drift and variance only; delta exceeds 1/16 and no small-gap drift is asserted here.",
+    "cases": [
+      {
+        "row": 0,
+        "mean": "3031738805821/288290340000000",
+        "raw_second": "336896012987465438448803633/1823254585512360975000000000000",
+        "energy": "697/10000",
+        "positive_scalar": "15841/250000",
+        "coefficient_bound_ratios": [
+          "702097/1673497",
+          "130867389/836748500",
+          "8612510121/34774163200",
+          "8612510121/34774163200",
+          "72409744191/1490942247200",
+          "65468937399597/642890607520000"
+        ]
+      },
+      {
+        "row": 3,
+        "mean": "3072482331197/288290340000000",
+        "raw_second": "356534320668779762546956081/1823254585512360975000000000000",
+        "energy": "697/10000",
+        "positive_scalar": "15841/250000",
+        "coefficient_bound_ratios": [
+          "702097/1673497",
+          "102352389/836748500",
+          "8612510121/34774163200",
+          "8612510121/34774163200",
+          "16950052941/1490942247200",
+          "65468937399597/642890607520000"
+        ]
+      }
+    ],
+    "cached_integrands": 15
+  },
+  "small_gap_rows": {
+    "n": 64,
+    "delta": 0.017184573361589666,
+    "rho": 0.017644558395807253,
+    "phase_grid": 128,
+    "cases": [
+      {
+        "transpose": false,
+        "label": 0,
+        "quadrature_mean": 0.0007238809377799976,
+        "quadrature_raw_second": 6.680590361107602e-07,
+        "range_ratio": 0.056170575110604457
+      },
+      {
+        "transpose": false,
+        "label": 7,
+        "quadrature_mean": 0.0007245871858925165,
+        "quadrature_raw_second": 6.695640300633949e-07,
+        "range_ratio": 0.059757262781266425
+      },
+      {
+        "transpose": true,
+        "label": 0,
+        "quadrature_mean": 0.0007212977869064186,
+        "quadrature_raw_second": 6.692964332160109e-07,
+        "range_ratio": 0.05887312585883191
+      },
+      {
+        "transpose": true,
+        "label": 7,
+        "quadrature_mean": 0.0007246713806719825,
+        "quadrature_raw_second": 6.694470836243531e-07,
+        "range_ratio": 0.055764851392085264
+      }
+    ],
+    "non_claim": "Finite double quadrature is not a proof of the circle integral or stochastic tails."
+  },
+  "non_claim": "Finite controls do not prove all-time flatness or BGS."
+}

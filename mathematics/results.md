@@ -1,5 +1,21 @@
 # Theorem families and their limits
 
+[TRACE-080](unconditional_feedback_flatness_20261013.md) now
+proves unconditional entry flatness from any deterministic unitary startup
+with intensity bound C0/N and centered singular norm at most 1/100.
+Uniform ports and fresh uniform phases preserve flatness, a small intensity
+gap, bounded row/column fourth-power energies and a uniform two-step bound
+at every depth down to ceil(log(2N)^(4+kappa)), with failure
+O(log(2N)^(-1-kappa)). Fixed-order clocks and the empirical weak law are
+unconditional on that same cutoff; reversal convergence uses its separate
+initial-channel assumption. The actual odd-N fixed-coupling family has
+these named eventual startup inputs. The deterministic microscopic law
+and BGS remain open.
+
+[TRACE-079](two_step_stopped_concentration_20261013.md) supplies
+the all-pair stopped concentration input, including the diagonal and full
+first crossings. [Exact outcome](../record/feedback_flatness_continuation_20261013.md).
+
 [TRACE-078](two_step_increment_variance_20261013.md) adds
 an exact raw second-moment bound for the complete two-step feedback
 increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
@@ -21,8 +37,9 @@ the conditional clock premise in that ensemble. The full-depth laws at
 every fixed order and empirical weak law hold unconditionally for
 independent initial distributions of relative entropy O(log N) relative
 to Haar. A bounded-entropy prescribed-gap example excludes the associated
-fixed-origin Sine₂ implication. The deterministic initial family and BGS
-remain open.
+fixed-origin Sine₂ implication. The deterministic microscopic law and BGS remain open; the separate
+TRACE-080 theorem now supplies the feedback probability and cutoff-matched
+unconditional clocks for its explicit deterministic startup class.
 
 The [12 October unistochastic obstruction](unitary_two_step_obstruction_20261012.md)
 (TRACE-074) constructs genuine unitary intensities with logarithmic
@@ -34,8 +51,9 @@ No maintained trajectory or BGS counterexample is asserted.
 [TRACE-075](two_step_restoring_drift_20261012.md) supplies a positive
 companion: the exact one-step phase average has a restoring drift
 controlled by a complete three-step path-swap bound. At the constructed
-peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration,
-persistence of hypotheses and deterministic all-time flatness remain open.
+peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration and joint persistence are supplied separately by TRACE-079/080
+on their explicit startup/cutoff regime; a deterministic microscopic
+identification is still not obtained.
 
 The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
@@ -44,8 +62,8 @@ at the log^(1+kappa) cutoff. The [full-depth clock measure](full_depth_clock_mea
 includes its exact reference atom, matched by a pathwise finite-rank lower bound. [TRACE-073](schur_censoring_gap_20261011.md) proves
 ordered classical/general-contraction singular-value bounds and conditional
 intensity/reversal gap propagation at log^(3+kappa). The maintained deterministic
-initial family's all-time flatness probability and the scalar
-microscopic law remain open.
+startup now receives the TRACE-080 probability and cutoff-matched
+applications at log^(4+kappa). The scalar microscopic law remains open.
 
 ## Maximal paths and source continuation, 11 October 2026
 

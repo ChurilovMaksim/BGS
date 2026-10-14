@@ -1056,3 +1056,212 @@ remain open. The canonical proof is
 Independent reconstruction is separate from exact Walsh expansion checks
 and finite complex-double port-sum diagnostics. No priority or new formal
 certificate is asserted.
+
+\section{Simultaneous stopped two-step concentration}
+\label{sec:stopped-two-step-20261013}
+
+BGS-TRACE-079 upgrades the restoring mean and raw second moment to a
+simultaneous stopped estimate. Start with any deterministic $S_b\in U(b)$,
+put $P=|S|^2$, and assume $\max P_b\le D/b$, $\max P_b^3\le C/b$.
+Choose uniform retained ports and fresh independent uniform phases.
+For integers $b>m\ge3$, $m\ge16D$, stop after the full first new state
+violating either bound $\max P_u\le D/u$, $\max P_u^3\le C/u$.
+For every ordered pair, including $i=j$, freeze the old unscaled
+$K_{ij}=(P^2)_{ij}$ on its endpoint-removing transition, then deactivate
+that scalar pair. This is a scalar convention, never an entry of an
+absent later matrix.
+
+The distinct-label one-step bounds extend to the diagonal: the mean base
+loss is $-K_{ii}+P_{ii}^2$, with the same positive majorants, and the
+omitted linear coefficient remains $2S_{ee}P_{ie}P_{ei}$. Thus
+\[
+ \mathbb E\Delta K_{ij}\le
+ \frac{-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}}v,
+ \qquad
+ \mathbb E(\Delta K_{ij})^2\le
+ \frac{2600\delta^2\{K_{ij}+(P^3)_{ij}\}}v.       \tag{SF.1}
+\]
+The complete six-group expansion also gives
+$|\Delta K_{ij}|\le32\delta^{3/2}$. These averages divide by all $v$
+ports, including the zero frozen increments.
+
+Put $a=4/3$, $F=5C+2D^2/m$, $\beta=F/a$,
+$V=2600D^2(D+C)$ and $R=64D^{3/2}$. For $Y_v=vK_{ij}$,
+\[
+ \mathbb E\Delta Y\le-aY_v/v+F/v,\quad
+ \operatorname{Var}(\Delta Y\mid\mathrm{past})\le V/v^2,
+ \quad |\Delta Y-\mathbb E\Delta Y|\le R/\sqrt v.       \tag{SF.2}
+\]
+After either scalar deactivation or the global stop continue only the
+bookkeeping recurrence $Y_{v-1}=(1-a/v)Y_v+F/v$. Its centered noise is
+zero. For each fixed final depth the positive deterministic integrating
+factors telescope with a nonnegative drift slack:
+\[
+ Y_u\le\beta+r_{b,u}(Y_b-\beta)+\sum_{v=u+1}^b w_{v,u}\xi_v,
+ \quad r_{b,u}=\prod_{v=u+1}^b(1-a/v),\quad 0<w_{v,u}\le1.       \tag{SF.3}
+\]
+The weights depend only on sizes. Endpoint survival is not conditioned
+upon, and the entire first crossing is retained.
+
+The conditional Taylor series for a centered $|X|\le c$ yields
+$\mathbb E(e^{\lambda X}\mid\mathcal F)
+\le\exp\{\lambda^2\mathbb E(X^2\mid\mathcal F)/[2(1-\lambda c/3)]\}$.
+A variance-compensated supermartingale and Markov give the usual scalar
+Bernstein tail. Here the fixed-depth variance is at most $V/u$ and the
+range at most $R/\sqrt u$. Union over all original ordered pairs and
+all depths proves
+\[
+ \mathbb P\{\exists u,i,j\text{ retained}:\ uK_{ij}>
+                       \beta+Dr_{b,u}+\eta\}
+ \le b^3\exp\!\left[-\frac{\eta^2}
+                  {2\{V/m+R\eta/(3\sqrt m)\}}\right].        \tag{SF.4}
+\]
+The event is restricted to the stopped prefix, through its full crossing.
+Also $r_{b,u}\le[(u+1)/(b+1)]^{4/3}$.
+
+Combined with TRACE-077, take $\ell=\log(2N)$,
+$m=\lceil\ell^{7+\kappa}\rceil$, $b=\lfloor N/\ell^2\rfloor$,
+$D=K_0\ell$, $C=2$ and $\eta=1$. At a revealed startup satisfying
+both barriers, the estimate is uniform in that starting matrix.
+The scalar martingale is proved before unioning its failure with the
+future Green failure; it is not conditioned on that future good event.
+On every reached depth $m\le u\le\lfloor b/\ell\rfloor$ through the
+entry crossing, simultaneously for all retained pairs,
+$(P_u^2)_{ij}\le9/u$ except with probability $O(\ell^{-\kappa})$.
+This corollary alone does not estimate early entry survival. Its canonical
+source is \path{mathematics/two_step_stopped_concentration_20261013.md}.
+
+\section{Unconditional feedback flatness from deterministic starts}
+\label{sec:unconditional-flatness-20261013}
+
+BGS-TRACE-080 closes the trajectory probability for a specified deterministic
+startup class. Fix $C_0\ge1$, $\kappa>0$ and any deterministic $S_N\in U(N)$
+with $\max|S_{N,ij}|^2\le C_0/N$ and
+$\|P_N-J_N\|\le1/100$. Ports are uniform and phases fresh independent
+uniform. Put
+\[
+ \begin{aligned}
+ \ell&=\log(2N),& L&=C_0+7,& g&=1/10,\\
+ C&=1+g(L-1),& T&=C_0+4C+3,& K_0&=32T,\\
+ D&=K_0\ell,& m&=\lceil\ell^{4+\kappa}\rceil,&
+ p&=2\lceil\ell\rceil.
+ \end{aligned}                                                   \tag{UF.1}
+\]
+For sufficiently large $N$, simultaneously at every $N\ge u\ge m$,
+\[
+ \begin{gathered}
+ \max P_u\le D/u,\qquad \|P_u-J_u\|\le g,\qquad
+ \max(P_u^2)_{ij}\le T/u,\\
+ \max_i\sum_jP_{u,ij}^2\le L/u,\qquad
+ \max_j\sum_iP_{u,ij}^2\le L/u,
+ \end{gathered}                                                   \tag{UF.2}
+\]
+with failure $O_{C_0,\kappa}(\ell^{-1-\kappa})$. All ordered pairs include
+the diagonal. No random initial ensemble or deterministic microscopic
+reference law is assumed.
+
+The additional mechanism controls fourth-power energies of entire rows
+and columns before estimating individual entries. Write
+$E_i=\sum_jP_{ij}^2$ and $A_i=\sum_jP_{ij}(P^2)_{ij}$. For a possibly
+nonnormal intensity matrix,
+\[
+ A_i\le1/v+\rho(E_i-1/v),\qquad \rho=\|P-J_v\|.           \tag{UF.3}
+\]
+This is the centered row inner product against its image under $P-J_v$.
+Exact feedback, with the removing row frozen, gives
+\[
+ v\mathbb E\Delta E_i\le-(1-c(\delta))E_i+d(\delta)A_i+P_{ii}^2.
+                                                                  \tag{UF.4}
+\]
+The functions $c,d$ are those of the exact two-step drift. At
+$\delta\le1/16$, $c+d/10\le448/675<2/3$. Hence when $\rho\le g$,
+$\mathbb E\Delta E_i\le-E_i/(3v)+5/v^2+\delta^2/v$.
+Unitary row Parseval before truncation, weighted Cauchy and the complete
+feedback expansion give
+\[
+ \mathbb E(\Delta E_i)^2\le3500\delta^2(E_i+A_i)/v,
+ \qquad |\Delta E_i|\le8\delta\sqrt{E_i}+34\delta^2.        \tag{UF.5}
+\]
+Transpose gives the same column estimates. The positive forcing in
+(UF.3) depends on row energy rather than the logarithmic entry maximum.
+
+Use one joint first-exit rule for the entry cap, the Green cap
+$\|M_u\|\le1/11$, the two energy caps, and the two-step cap.
+All estimates use the old admissible state and keep the complete new
+crossing, including simultaneous crossings. On the zero-sum space,
+$\|G^c\|\le12/11$, $\|\Xi\|\le1/2$, so
+$\|G^c\Xi\|\le6/11$ and $\|G'\|\le12/5<3$ even at a crossing.
+The same Green martingale constants $18,432$ remain valid. The initial
+$\|M_N\|\le1/99$ and $\eta_G=1/40$ provide a fixed positive margin.
+
+For the scaled row energy $Y_v=vE_i$ the drift may be weakened to
+$-Y_v/v+(5+D^2/m)/v$. Its initial value is at most $C_0$, and its old
+value is at most $L$ under the joint stop. Define
+\[
+ \begin{aligned}
+ V_E&=3500D^2[(1+g)L+1],&
+ c_E(u)&=16D\sqrt L/\sqrt u+68D^2/u,\\
+ V_K&=2600D^2(T+C),&
+ c_K(u)&=24D\sqrt T/\sqrt u+36D^2/u.
+ \end{aligned}                                                   \tag{UF.6}
+\]
+The variance per active row step is at most $V_E/v^2$ and the centered
+range at most $c_E(v)$. The scalar integrating factors give a row bound
+$uE_i\le\max(C_0,5+D^2/m)+1<L$ outside its exception.
+The old energy and Green caps imply
+$(P^3)_{ij}\le[1+g(L-1)]/v=C/v$. For the all-pair two-step scalar,
+(SF.1)--(SF.3) and the sharper range
+$|\Delta K_{ij}|\le12\delta\sqrt{K_{ij}}+18\delta^2$
+give $uK_{ij}\le\max(C_0,3(5C+2D^2/m)/4)+1<T$ outside its exception.
+There is no burn-in, since the initial scaled energies and two-step
+entries are already bounded by $C_0$.
+
+For each original amplitude, freeze on endpoint removal and continue only
+$W_{v-1}=\sqrt{(v-1)/v}\,W_v$ after deactivation, where
+$W_v=\sqrt v\,S_{ij}$. For fixed target $u$, its centered martingale
+increments are $\sqrt u\,q S_{ie}S_{ej}$ with the predictable old stop mask.
+Uniform coordinate choice and the two-step cap give total real/imaginary
+variation at most $\sigma^2=16T/15$ and range at most
+$c_A(u)=2D/\sqrt u$. The initial term has modulus at most $\sqrt{C_0}$.
+Put $t=\sqrt D-\sqrt{C_0}$. The four signed real/imaginary tails, plus
+ordered pairs and depths, exclude the entry crossing.
+
+The explicit exceptional probabilities are
+\[
+ \begin{aligned}
+ q_G&=\frac{1296N^{2/p}(p-1)D^2}{m\eta_G^2},\\
+ q_E&=2N^2\exp[-1/(2\{V_E/m+c_E(m)/3\})],\\
+ q_K&=N^3\exp[-1/(2\{V_K/m+c_K(m)/3\})],\\
+ q_A&=4N^3\exp[-t^2/(4\{\sigma^2+c_A(m)t/(3\sqrt2)\})].
+ \end{aligned}                                                   \tag{UF.7}
+\]
+Their ordinary union excludes every possible first joint exit. No proof
+is conditioned on any future good event. Here $q_G=O(\ell^{-1-\kappa})$,
+$q_E,q_K$ are superpolynomially small in $N$, and
+$q_A=N^{-9/2+o(1)}$. This proves (UF.2). The row/column energy mechanism
+removes the previous early-entry-survival premise for this cutoff and
+startup class.
+
+For $F_N(z)=zS_N$ and $T_N=I$, revealing an original unused independent
+phase at each uniformly selected port is the same process. TRACE-060 with
+$K=K_0$, $\kappa_{\rm clock}=3+\kappa$ has precisely this cutoff $m$.
+Its intersection estimate plus the flatness probability gives unconditional
+convergence in probability for every fixed clock order and the empirical
+weak law with reference $\mu_{u/N}$, uniformly for $u\ge m$.
+The reference atom and pathwise rank lower bound retain their source scope;
+no equality of actual finite-$N$ atom weight is asserted. The entire upstream
+clock induction is a named internal input, not newly certified here.
+
+Separately, if the initial Hermitian reversal channel
+$B_{N,ij}=S_{N,ij}\overline{S_{N,ji}}$ has $\|B_N\|\to0$,
+TRACE-073 (C9) and the same flatness probability imply
+$\max_{u\ge m}\|B_u\|\to0$ in probability. This extra assumption is confined
+to the reversal corollary. FM-021 and FM-022 supply only the named eventual
+initial hypotheses for the actual odd-$N$ fixed-coupling family, without
+an effective startup. Smaller logarithmic cutoffs, growing orders, edge
+laws, physical microscopic identification, signed TRACE-005 and BGS
+remain open. The canonical source is
+\path{mathematics/unconditional_feedback_flatness_20261013.md}.
+Independent reconstruction and exact/floating finite controls have distinct
+roles; scalar Bernstein/Freedman is prior, and no new formal certificate
+or world-priority claim is made.

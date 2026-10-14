@@ -1,5 +1,24 @@
 # Open mathematical obligations
 
+## Frontier after unconditional feedback control, 13 October 2026
+
+[TRACE-080](unconditional_feedback_flatness_20261013.md) closes the
+entry-flatness probability for deterministic entry-flat, small-gap starts
+on u>=ceil(log(2N)^(4+kappa)). It also closes the corresponding fixed-order
+clock and weak-law applications; the extra reversal corollary retains its
+separate initial condition. Named eventual FM-021/FM-022 inputs place the
+maintained odd-N fixed-coupling family in this auxiliary trajectory regime.
+[TRACE-079](two_step_stopped_concentration_20261013.md) supplies the complete
+stopped two-step concentration, including the diagonal. Earlier frontier
+sentences below concern those older theorems alone and are superseded for
+this explicit startup/cutoff class.
+
+The unresolved target is now the microscopic scattering/physical-source
+reference law, its signed Ward/balanced identification and deterministic
+TRACE-005 comparison/noise removal. The probability theorem and clock law
+do not identify the initial deterministic local process. Smaller logarithmic
+cutoffs, growing orders, edge laws and BGS remain open.
+
 ## Frontier after the checked 11 October integration
 
 Maximal microscopic path stability does not evaluate the initial process.
@@ -11,9 +30,9 @@ The repaired induction now proves every fixed clock order conditional on
 all-time entry flatness. [TRACE-076](haar_feedback_clock_law_20261012.md)
 now closes that probability premise for a Haar start and gives
 unconditional clock laws for independent initial distributions with
-relative entropy O(log N) relative to Haar. The probability for the
-maintained deterministic initial family, growing-order and edge laws
-remain unproved. A bounded-entropy gap example rules out a
+relative entropy O(log N) relative to Haar. TRACE-080 now supplies the probability and fixed-order applications for
+the maintained initial family on its stated larger cutoff. Smaller cutoffs,
+growing-order and edge laws remain unproved. A bounded-entropy gap example rules out a
 prescribed-origin microscopic implication from these clock laws alone.
 [Exact new boundaries](../record/haar_feedback_continuation_20261012.md).
 
@@ -30,8 +49,9 @@ entries and times. The additional term
 \(\rho(\delta-1/u)/u\) is not \(O(u^{-2})\) from logarithmic flatness alone;
 TRACE-077 now controls this forcing on reached entry-admissible depths
 `log(2N)^(7+kappa) <= u <= N/log(2N)^2`, by a shrinking Green-coordinate
-gap. Early entry survival, the remaining depth range and the evolving
-two-step concentration estimate remain open. The reached range may be empty;
+gap. That stopped theorem alone leaves early entry survival and accumulated
+concentration open; TRACE-079/080 supply separate proofs on their
+explicit startup/cutoff class. The reached range may be empty;
 this stopped theorem does not prove all-time flatness.
 [Exact boundary](green_compression_gap_20261013.md).
 
@@ -40,8 +60,9 @@ this stopped theorem does not prove all-time flatness.
 one-step fluctuation estimate `2600 delta²[(P²)ij+(P³)ij]/u` under the
 uniform-port frozen-endpoint convention. Earlier descriptions of the
 one-step second moment as entirely missing are superseded at this scope.
-The accumulated concentration proof, endpoint stopping, full exit control
-and early entry survival remain open.
+TRACE-079/080 now close these accumulated and first-exit obligations for
+the stated startup/cutoff class. Physical microscopic identification and
+BGS remain open.
 
 
 ## Current priorities at a glance (11 October 2026)
@@ -57,7 +78,7 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; the maintained deterministic family's probability and physical microscopic cavity identification remain open |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; TRACE-080 closes the maintained startup's probability and corresponding clocks at log^(4+kappa); physical microscopic cavity identification remains open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.
@@ -81,8 +102,9 @@ verification-pending. The 11 October results reconstruct source covariance,
 physical-source L2 continuation. The [cavity continuation](../record/cavity_continuation_20261011.md)
 adds conditional all-fixed killed upper bounds and gap propagation. The
 [repaired fixed-order induction](conditional_clock_universality_20261011.md)
-now identifies every fixed clock power and its full-depth measure. Establish
-all-time flatness probability and the remaining actual physical cavity hypotheses. Then identify the retained scalar
+identifies every fixed clock power and its full-depth measure. TRACE-080
+now supplies the probability on its matching larger cutoff. Establish
+the remaining physical cavity hypotheses, identify the retained scalar
 cavity law, control source products and the signed undamped/high-switch
 comparison, and close every-fixed-order TRACE-005 for the unchanged frozen
 map. Channel-norm decay cannot replace spectral trace extraction.

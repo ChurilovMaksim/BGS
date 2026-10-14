@@ -3484,6 +3484,66 @@
       ],
       "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
       "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-079",
+      "title": "Simultaneous all-pair stopped two-step concentration",
+      "source": "mathematics/two_step_stopped_concentration_20261013.md",
+      "dependencies": [
+        "BGS-TRACE-075",
+        "BGS-TRACE-077",
+        "BGS-TRACE-078",
+        "BGS-FM-021"
+      ],
+      "dependency_scope": "TRACE-075/078 exact one-step algebra extended explicitly to diagonal pairs; TRACE-077 only for the stopped deep-range three-step input; FM-021 only for actual-map initial conditions. Scalar Bernstein inequality is proved internally.",
+      "evidence": [
+        "evidence/executions/20261013/stopped-concentration/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/stopped_two_step_concentration.py"
+      ],
+      "boundary": "Any deterministic admissible unitary startup, uniform ports and fresh uniform phases, two global barriers and endpoint freezing. Quantitative all-pair bound through the full first crossing. Shrinking-Green corollary gives 9/u on reached depths log(2N)^(7+kappa)..N/log(2N)^3. Includes diagonal pairs. No early entry survival, post-crossing matrices or BGS claim.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; NAMED COROLLARY INPUTS EXPLICIT; FINITE CONTROLS SEPARATE",
+      "external_dependencies": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-TRACE-080",
+      "title": "Unconditional deterministic-start feedback flatness and fixed-order clock laws",
+      "source": "mathematics/unconditional_feedback_flatness_20261013.md",
+      "dependencies": [
+        "BGS-TRACE-077",
+        "BGS-TRACE-079",
+        "BGS-TRACE-060",
+        "BGS-TRACE-073",
+        "BGS-FM-021",
+        "BGS-FM-022"
+      ],
+      "dependency_scope": "The abstract flatness proof uses TRACE-077 Green identities/smoothness and TRACE-079 diagonal one-step/scalar concentration inputs, rederiving row/column energy estimates. TRACE-060 and its reference measure are used only for cutoff-matched unconditional clock corollaries. TRACE-073 C9 and FM-022 are used only for the extra initial-reversal-norm corollary; FM-021 only for eventual actual-map startup. No reversal hypothesis is added to the abstract theorem or clocks.",
+      "proof_dependencies": [
+        "mathematics/conditional_clock_universality_20261011.md",
+        "mathematics/full_depth_clock_measure_20261011.md"
+      ],
+      "evidence": [
+        "evidence/executions/20261013/global-feedback-flatness/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/feedback_row_energy.py"
+      ],
+      "boundary": "Any deterministic unitary initial family with max intensity<=C0/N and centered singular norm<=1/100, uniform retained ports and fresh independent uniform phases. Unconditional all-depth flatness, intensity gap, row/column fourth-power energies and two-step bound down to ceil(log(2N)^(4+kappa)); failure O(log(2N)^(-1-kappa)). Every fixed-order clock and uniform empirical weak law on that same cutoff are named-input consequences. Reversal convergence additionally assumes initial channel norm->0. Actual odd-N fixed-coupling inputs are eventual and have no effective startup. No smaller cutoff, growing orders, edge law, initial deterministic microscopic law, signed TRACE-005 or BGS conclusion.",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; NAMED COROLLARY INPUTS EXPLICIT; FINITE CONTROLS SEPARATE",
+      "external_dependencies": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_research_20261011.tex"
+      ],
+      "priority_status": "not-established"
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."
