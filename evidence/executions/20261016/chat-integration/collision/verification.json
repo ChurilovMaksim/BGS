@@ -1,0 +1,198 @@
+{
+  "scope": "Finite checks only. No numerical proof of BGS or of large-N limits.",
+  "word_checks": {
+    "words": 7867,
+    "edge_types": 951,
+    "chord_word_checks": 1710,
+    "records": [
+      {
+        "N": 2,
+        "m": 3,
+        "B_over_m": "5/6",
+        "chord_expression": "3/4"
+      },
+      {
+        "N": 2,
+        "m": 4,
+        "B_over_m": "27/32",
+        "chord_expression": "1/2"
+      },
+      {
+        "N": 2,
+        "m": 5,
+        "B_over_m": "19/20",
+        "chord_expression": "0"
+      },
+      {
+        "N": 2,
+        "m": 6,
+        "B_over_m": "41/32",
+        "chord_expression": "0"
+      },
+      {
+        "N": 2,
+        "m": 7,
+        "B_over_m": "417/224",
+        "chord_expression": "0"
+      },
+      {
+        "N": 2,
+        "m": 8,
+        "B_over_m": "2843/1024",
+        "chord_expression": "0"
+      },
+      {
+        "N": 3,
+        "m": 3,
+        "B_over_m": "25/27",
+        "chord_expression": "8/9"
+      },
+      {
+        "N": 3,
+        "m": 4,
+        "B_over_m": "101/108",
+        "chord_expression": "20/27"
+      },
+      {
+        "N": 3,
+        "m": 5,
+        "B_over_m": "451/405",
+        "chord_expression": "40/81"
+      },
+      {
+        "N": 3,
+        "m": 6,
+        "B_over_m": "2285/1458",
+        "chord_expression": "20/81"
+      },
+      {
+        "N": 3,
+        "m": 7,
+        "B_over_m": "12545/5103",
+        "chord_expression": "0"
+      },
+      {
+        "N": 4,
+        "m": 6,
+        "B_over_m": "4589/3072",
+        "chord_expression": "135/256"
+      }
+    ]
+  },
+  "chord_checks": [
+    {
+      "chords": 0,
+      "matchings": 1,
+      "single_cycles": 1,
+      "mean_reconnections": "1"
+    },
+    {
+      "chords": 1,
+      "matchings": 1,
+      "single_cycles": 0,
+      "mean_reconnections": "1"
+    },
+    {
+      "chords": 2,
+      "matchings": 3,
+      "single_cycles": 1,
+      "mean_reconnections": "4/3"
+    },
+    {
+      "chords": 3,
+      "matchings": 15,
+      "single_cycles": 0,
+      "mean_reconnections": "2"
+    },
+    {
+      "chords": 4,
+      "matchings": 105,
+      "single_cycles": 21,
+      "mean_reconnections": "16/5"
+    },
+    {
+      "chords": 5,
+      "matchings": 945,
+      "single_cycles": 0,
+      "mean_reconnections": "16/3"
+    },
+    {
+      "chords": 6,
+      "matchings": 10395,
+      "single_cycles": 1485,
+      "mean_reconnections": "64/7"
+    }
+  ],
+  "weighted_permutation_checks": {
+    "permutations": 5910,
+    "partition_inequalities": 16
+  },
+  "markov_checks": [
+    {
+      "N": 3,
+      "m": 5,
+      "loop_normalization": "287/288",
+      "equal_edge_mass": "4181/864",
+      "factorial_weight": "9275/432",
+      "triple_weight": "985/48",
+      "edge_repeat_weight": "2935/144"
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "loop_normalization": "863/864",
+      "equal_edge_mass": "28787/3888",
+      "factorial_weight": "132575/1944",
+      "triple_weight": "1217/18",
+      "edge_repeat_weight": "130529/1944"
+    },
+    {
+      "N": 3,
+      "m": 7,
+      "loop_normalization": "3455/3456",
+      "equal_edge_mass": "387731/31104",
+      "factorial_weight": "212863/864",
+      "triple_weight": "212863/864",
+      "edge_repeat_weight": "212303/864"
+    }
+  ],
+  "flat_finite_enclosures": [
+    {
+      "N": 101,
+      "m": 10,
+      "B_over_m_lower": 0.8437914737448187,
+      "chord_sum": 1.006901726329521,
+      "B_over_m_upper": 1.1156418947193227,
+      "sinh_lambda_over_lambda": 1.0413491098116059,
+      "bounds_exact_rational": true
+    },
+    {
+      "N": 1009,
+      "m": 31,
+      "B_over_m_lower": 1.0077099190504544,
+      "chord_sum": 1.0250097058825447,
+      "B_over_m_upper": 1.066817524060096,
+      "sinh_lambda_over_lambda": 1.0382275378277428,
+      "bounds_exact_rational": true
+    },
+    {
+      "N": 10007,
+      "m": 100,
+      "B_over_m_lower": 1.0351871391004819,
+      "chord_sum": 1.0371294804007167,
+      "B_over_m_upper": 1.0529919343526344,
+      "sinh_lambda_over_lambda": 1.0421308700129714,
+      "bounds_exact_rational": true
+    },
+    {
+      "N": 100003,
+      "m": 316,
+      "B_over_m_lower": 1.04023983286559,
+      "chord_sum": 1.0404361995286566,
+      "B_over_m_upper": 1.0455744605455661,
+      "sinh_lambda_over_lambda": 1.0420651216632069,
+      "bounds_exact_rational": true
+    }
+  ],
+  "elapsed_seconds": 3.075380325317383
+}

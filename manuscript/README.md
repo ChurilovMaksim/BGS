@@ -131,3 +131,12 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 ## Checked 11 October research
 
 The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+
+
+## 16 October integration
+
+The active TeX root includes `unified_sections/chat_integration_20261016.tex`,
+a reviewed capsule of the 15 October research record. Canonical statements
+and boundaries remain in `mathematics/` and `record/claim_ledger.md`.
+The integration receipt records source and static checks separately from any
+full PDF or Lean build; no such build is implied by source synchronization.

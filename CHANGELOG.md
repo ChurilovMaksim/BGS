@@ -1,5 +1,15 @@
 # Scientific changelog
 
+## 2026-10-16
+
+- Reconciled the 15 October 103-section record, 16 original notes and all 90
+  historical inventory entries against main e20825f. Preserved source hashes.
+- Integrated 11 scoped theorem/reduction families, corrected resonance
+  necessity, Hardy hypotheses and discrete Toeplitz grid requirements.
+- Added reproducible source checks and execution receipts; synchronized the
+  scientific registry, DAG, thematic navigation, RU/EN reading surfaces and
+  manuscript section. Physical TRACE-005 and BGS remain open.
+
 ## 2026-10-06 — quantitative collective diffusion continuation
 
 - FM-019: exact N^2 total-Weyl blocks and a universal two-copy diffusion
@@ -136,3 +146,4 @@ implementation-only commits need not appear here.
 
 The permanent correction/retraction record is `record/retractions.md`.
 `ERRATA.md` is the reader-facing index; it never replaces the full record.
+

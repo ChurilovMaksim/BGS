@@ -1,5 +1,13 @@
 # Open mathematical obligations
 
+## Research-record integration, 16 October 2026
+
+[Exact review and 90-entry inventory](../record/chat_integration_20261016.md).
+The all-order process implication no longer requires an independent UI premise.
+The actual signed hierarchy, physical parameter moment and positive Hardy
+excess limits remain unproved. Resonance deletion is sufficient only.
+
+
 TRACE-083 closes the abstract-family question left by TRACE-082's
 full-return comparison: an individual observed memory coefficient
 can remain almost an isometry on nearly all centered diagonal
@@ -693,3 +701,4 @@ The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](actual_one_
 ## Wave3 current insertion frontier
 
 The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
+

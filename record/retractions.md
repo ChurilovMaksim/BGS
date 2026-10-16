@@ -149,3 +149,25 @@ now retains the $O_f(N^{-1/3})$ smooth-test rate at exactly $2N^{34}$
 original random steps. Current status surfaces are corrected; the
 30 September quantitative theorem and dated evidence are not retracted.
 Neither result proves deterministic noise removal or BGS.
+
+
+
+## 16 October: imported research-record corrections
+
+1. Calling resonance-sector deletion (R) necessary for BGS is withdrawn.
+   Root lifting preserves the complete origin-averaged local process while
+   its positive collective trace energy can be concentrated on sparse times.
+   See `mathematics/root_lifting_sector_boundary_20261015.md`.
+2. The Hardy identity requires the characteristic polynomial of a unitary,
+   not just a self-inversive polynomial. The latter can have off-circle roots.
+3. A sampled Toeplitz matrix is a positive contraction by the discrete Fourier
+   isometry only when the angular grid has at least N points. M<N is excluded.
+4. The mesoscopic arc checker uses 0<phi<=ell at the initial right limit.
+   Its strict-endpoint predecessor can give negative mean counts.
+5. Under the complete every-order H_diag premise, local count UI is a
+   consequence. This does not remove UI under weaker pair-only premises.
+6. Strict finite Hardy positivity and vanishing fixed Taylor coefficients
+   determine neither its full norm nor the required positive CUE excess.
+
+Historical source bytes and original claimed execution scopes remain preserved
+in `record/history/2026/chat_20261015/`; current dispositions take precedence.

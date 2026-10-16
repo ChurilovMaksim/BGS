@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-16",
+  "base_commit": "e20825f15b62c403ddb52ef345aa48e339eda21d",
+  "review_type": "author self-review",
+  "imported_sources": [
+    {
+      "source_id": "S02",
+      "claim_id": "BGS-FM-032",
+      "source_sha256": "0876a479ab0a85398171f3a7998392c1835b616c8b96966a626cc89485924446",
+      "canonical_path": "mathematics/quantum_cyclic_cohomology_20261015.md",
+      "state": "proved",
+      "boundary": "Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit."
+    },
+    {
+      "source_id": "S04",
+      "claim_id": "BGS-TRACE-084",
+      "source_sha256": "e9c4b648b4f2f50b9c1c6ae8167e832807818a8ad9f2562f435bac3b1f75bb49",
+      "canonical_path": "mathematics/resonant_mesoscopic_criterion_20261015.md",
+      "state": "proved",
+      "boundary": "Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law."
+    },
+    {
+      "source_id": "S05",
+      "claim_id": "BGS-TRACE-085",
+      "source_sha256": "af048df81e36f5d42592f60e10a09f019a42b922b589e60ed1ed04504736a66e",
+      "canonical_path": "mathematics/root_lifting_sector_boundary_20261015.md",
+      "state": "proved",
+      "boundary": "Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator."
+    },
+    {
+      "source_id": "S08",
+      "claim_id": "BGS-TRACE-086",
+      "source_sha256": "0602b060c5b767df769f898fc49458ce5e752bab3c7d19b3be001ad16b99621a",
+      "canonical_path": "mathematics/all_order_process_closure_20261015.md",
+      "state": "proved",
+      "boundary": "The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required."
+    },
+    {
+      "source_id": "S09",
+      "claim_id": "BGS-FM-033",
+      "source_sha256": "bfa524bf8b2844767c99d57f65d5c53538497979f9bf50698c7e88daad10f503",
+      "canonical_path": "mathematics/scaled_weyl_overlap_20261015.md",
+      "state": "conditional",
+      "boundary": "Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound."
+    },
+    {
+      "source_id": "S10",
+      "claim_id": "BGS-CUE-002",
+      "source_sha256": "dc402324171212f7a00b48d67348f2b1ecc32669eabac404495a633ad3d61930",
+      "canonical_path": "mathematics/full_pair_cue_covariance_20261015.md",
+      "state": "proved",
+      "boundary": "Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value."
+    },
+    {
+      "source_id": "S11",
+      "claim_id": "BGS-TRACE-087",
+      "source_sha256": "278fe70d7213df8decbf0f11419dc0ec09ff0a4e3dd008d4c2e9a56ec3b84287",
+      "canonical_path": "mathematics/parameter_deaveraging_20261015.md",
+      "state": "proved",
+      "boundary": "Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it."
+    },
+    {
+      "source_id": "S12",
+      "claim_id": "BGS-TRACE-088",
+      "source_sha256": "ec61fd6455c55946fc8971da354abf25ecaa5cbb6826051e38e6cd254446e8b4",
+      "canonical_path": "mathematics/equal_edge_occupation_20261015.md",
+      "state": "proved",
+      "boundary": "Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector."
+    },
+    {
+      "source_id": "S13",
+      "claim_id": "BGS-TRACE-089",
+      "source_sha256": "ed79422d7794f6820bf4ead5541e06dede77dedf19aa2371eeef371d7aa45c68",
+      "canonical_path": "mathematics/collision_crossover_20261015.md",
+      "state": "proved",
+      "boundary": "m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input."
+    },
+    {
+      "source_id": "S14",
+      "claim_id": "BGS-TRACE-090",
+      "source_sha256": "2a39351fea19922a25a2ff449aeb3b7c07050767012866c79cbcfb1f2de5fc79",
+      "canonical_path": "mathematics/bounded_radial_ratios_20261015.md",
+      "state": "proved",
+      "boundary": "Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N."
+    },
+    {
+      "source_id": "S15",
+      "claim_id": "BGS-TRACE-091",
+      "source_sha256": "5690146ecf4f887f6c7647e9b05ff7131623d0df97dd6a703b57981fc9c04df5",
+      "canonical_path": "mathematics/hardy_spectral_remainder_20261015.md",
+      "state": "proved",
+      "boundary": "p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
+    }
+  ],
+  "historical_inventory": "record/chat_claim_inventory_20261016.json",
+  "historical_inventory_entries": 90,
+  "unavailable_post_export_result": {
+    "description": "Gaussian relative comparison for exactly flat equal-edge sums at m=o(N^(3/4))",
+    "disposition": "Not promoted: only an earlier assistant summary and alleged finite counts were retrieved, without the statement, error bound, proof or executable source."
+  },
+  "recovered_post_export_corrections": [
+    "Unitary characteristic polynomial required for Hardy statements",
+    "M>=N required for a discrete Fourier Toeplitz contraction",
+    "Exact full-symbol Green-Kubo constants and all-lag cone escape rechecked"
+  ]
+}

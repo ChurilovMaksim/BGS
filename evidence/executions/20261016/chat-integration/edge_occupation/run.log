@@ -1,0 +1,50 @@
+{
+  "status": "finite controls only; no BGS proof",
+  "total_words": 16284,
+  "total_edge_types": 1569,
+  "markov": {
+    "checks": 18,
+    "Z": "863/864",
+    "edge_collision_expectation": "7276/2589",
+    "edge_collision_bound": "4860/863"
+  },
+  "exponent_alpha_one": 0.07183661174191525,
+  "flat_explicit_lower": [
+    {
+      "N": 50,
+      "m": 50,
+      "log10_flat_sector_lower": 3.0557283683652523,
+      "log10_unitarity_bound": 3.3979400086720375
+    },
+    {
+      "N": 100,
+      "m": 100,
+      "log10_flat_sector_lower": 4.915304528873874,
+      "log10_unitarity_bound": 4.0
+    },
+    {
+      "N": 250,
+      "m": 250,
+      "log10_flat_sector_lower": 9.992161308873964,
+      "log10_unitarity_bound": 4.795880017344075
+    },
+    {
+      "N": 500,
+      "m": 500,
+      "log10_flat_sector_lower": 18.0924790073747,
+      "log10_unitarity_bound": 5.3979400086720375
+    },
+    {
+      "N": 1000,
+      "m": 1000,
+      "log10_flat_sector_lower": 33.992494376866176,
+      "log10_unitarity_bound": 6.0
+    },
+    {
+      "N": 2000,
+      "m": 2000,
+      "log10_flat_sector_lower": 65.49170011639576,
+      "log10_unitarity_bound": 6.6020599913279625
+    }
+  ]
+}

@@ -4,11 +4,25 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (14 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (16 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
+
+## Checked import from the 15 October research record
+
+The [integration review](record/chat_integration_20261016.md) maps the complete
+90-entry source inventory and preserves the 16 original notes. New canonical
+proofs include the [all-order process implication](mathematics/all_order_process_closure_20261015.md),
+[parameter de-averaging](mathematics/parameter_deaveraging_20261015.md),
+[equal-edge counting](mathematics/equal_edge_occupation_20261015.md), its
+[square-root-time crossover](mathematics/collision_crossover_20261015.md),
+[bounded radial ratios](mathematics/bounded_radial_ratios_20261015.md) and
+[exact Hardy remainders](mathematics/hardy_spectral_remainder_20261015.md).
+The all-order implication supplies local uniform integrability; its signed
+physical premise is still open. Separate resonance deletion is sufficient,
+not necessary. The positive Hardy excess required by CUE is not a zero target.
 
 ## Checked continuation, 14 October
 
@@ -249,3 +263,4 @@ The [consolidated research manuscript](manuscript/README.md) is a **living, full
 [Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [How to cite](CITATION.cff)
 
 The [11 October 2026 execution packet](evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the current manuscript build. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
+

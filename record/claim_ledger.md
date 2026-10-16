@@ -1,5 +1,32 @@
 # Claim ledger
 
+## Imported research record, 16 October 2026
+
+**Scope:** author self-review and fresh finite replay. The source inventory has
+90 entries; this is not a fresh independent certification of all 90 statements.
+The untouched historical text cannot override the dispositions below.
+[Review and correction map](chat_integration_20261016.md).
+
+| Stable ID | Status | Canonical source | Exact boundary |
+|---|---|---|---|
+| BGS-FM-032 | PROVED as scoped | [proof](../mathematics/quantum_cyclic_cohomology_20261015.md) | Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit. |
+| BGS-TRACE-084 | PROVED as scoped | [proof](../mathematics/resonant_mesoscopic_criterion_20261015.md) | Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law. |
+| BGS-TRACE-085 | PROVED as scoped | [proof](../mathematics/root_lifting_sector_boundary_20261015.md) | Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator. |
+| BGS-TRACE-086 | PROVED as scoped | [proof](../mathematics/all_order_process_closure_20261015.md) | The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required. |
+| BGS-FM-033 | CONDITIONAL as scoped | [proof](../mathematics/scaled_weyl_overlap_20261015.md) | Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound. |
+| BGS-CUE-002 | PROVED as scoped | [proof](../mathematics/full_pair_cue_covariance_20261015.md) | Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value. |
+| BGS-TRACE-087 | PROVED as scoped | [proof](../mathematics/parameter_deaveraging_20261015.md) | Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it. |
+| BGS-TRACE-088 | PROVED as scoped | [proof](../mathematics/equal_edge_occupation_20261015.md) | Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector. |
+| BGS-TRACE-089 | PROVED as scoped | [proof](../mathematics/collision_crossover_20261015.md) | m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input. |
+| BGS-TRACE-090 | PROVED as scoped | [proof](../mathematics/bounded_radial_ratios_20261015.md) | Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N. |
+| BGS-TRACE-091 | PROVED as scoped | [proof](../mathematics/hardy_spectral_remainder_20261015.md) | p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family. |
+
+**BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** The conditional implication
+H_diag => Sine2 supplies local UI at every fixed moment order. Pair-only or
+bounded-ratio convergence does not. The m=o(N^(3/4)) Gaussian comparison
+mentioned after the export is unverified and has not been promoted.
+
+
 ## Observed pulse and cyclic memory, 14 October 2026
 
 **BGS-TRACE-083 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
@@ -1125,3 +1152,4 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 analytic arguments from finite Python/C++/Wolfram controls. No new analytic
 Lean formalization or world-priority claim is made. TRACE-055's complete
 hierarchy, TRACE-005 and BGS remain open.
+

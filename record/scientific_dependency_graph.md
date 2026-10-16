@@ -338,3 +338,21 @@ prescribed-K high-probability flatness event throughout that entropy class.
 No edge to TRACE-073's actual-map initial gaps, TRACE-055, TRACE-005 or
 BGS-BGS-001 is added. The prescribed-origin gap example is a limitation of
 the entropy class, not an origin-averaged or deterministic BGS counterexample.
+
+## 16 October research-record additions
+
+The following scoped nodes extend the JSON DAG. Their premises do not assert the physical BGS estimate.
+
+| Claim | Direct registered prerequisites |
+|---|---|
+| BGS-FM-032 | BGS-FM-001, BGS-TRACE-009 |
+| BGS-TRACE-084 | BGS-TRACE-009 |
+| BGS-TRACE-085 | BGS-TRACE-001, BGS-TRACE-002 |
+| BGS-TRACE-086 | BGS-TRACE-001, BGS-TRACE-002, BGS-TRACE-004 |
+| BGS-FM-033 | BGS-FM-014, BGS-FM-023 |
+| BGS-CUE-002 | BGS-TRACE-002 |
+| BGS-TRACE-087 | BGS-TRACE-086 |
+| BGS-TRACE-088 | BGS-FM-021 |
+| BGS-TRACE-089 | BGS-TRACE-088 |
+| BGS-TRACE-090 | Finite unitary spectral algebra |
+| BGS-TRACE-091 | BGS-TRACE-007, BGS-TRACE-090 |

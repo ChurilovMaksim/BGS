@@ -173,3 +173,9 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 
 - [TRACE-028](../../right_frame_unmasked_pinch_hierarchy.md): actual right-frame/fixed-B, separated actual/annealed averages and all-z complete convex hierarchy; no masks/rates/deconvolution.
 - [TRACE-029](../../convex_pinch_weak_noise_and_deconvolution.md): exact finite-N resummation and bounded-u signed stability; actual full unsigned large-log divergence retains identity cancellation, without a T16 refutation.
+
+
+## Checked 15 October research-record imports
+
+- [BGS-FM-032: quantum_cyclic_cohomology_20261015](../../quantum_cyclic_cohomology_20261015.md) — proved within the source boundary.
+- [BGS-FM-033: scaled_weyl_overlap_20261015](../../scaled_weyl_overlap_20261015.md) — conditional within the source boundary.

@@ -157,3 +157,18 @@ startup assumptions. Physical microscopic cavity identification remains open.
 - [Full-depth clock measure and exact rank atom](../../full_depth_clock_measure_20261011.md)
 
 - [Observed first-return pulses and cyclic memory](../../coherent_first_return_pulse_20261014.md) — TRACE-083; individual coefficient and all-source energy-tail theorem for the abstract family.
+
+
+## Checked 15 October research-record imports
+
+- [BGS-TRACE-084: resonant_mesoscopic_criterion_20261015](../../resonant_mesoscopic_criterion_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-085: root_lifting_sector_boundary_20261015](../../root_lifting_sector_boundary_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-086: all_order_process_closure_20261015](../../all_order_process_closure_20261015.md) — proved within the source boundary.
+- [BGS-CUE-002: full_pair_cue_covariance_20261015](../../full_pair_cue_covariance_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-087: parameter_deaveraging_20261015](../../parameter_deaveraging_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-088: equal_edge_occupation_20261015](../../equal_edge_occupation_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-089: collision_crossover_20261015](../../collision_crossover_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-090: bounded_radial_ratios_20261015](../../bounded_radial_ratios_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-091: hardy_spectral_remainder_20261015](../../hardy_spectral_remainder_20261015.md) — proved within the source boundary.
+
+- [Deleted-clock Hardy boundary](../../deleted_clock_hardy_boundary_20261015.md) — Strict finite excess can vanish at order 1/N.

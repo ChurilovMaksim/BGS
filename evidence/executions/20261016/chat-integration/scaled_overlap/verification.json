@@ -1,0 +1,141 @@
+{
+  "exponent_checks": {
+    "beta": "1/65",
+    "cutoff_exponent": "16/65",
+    "grid_compression_power": 131
+  },
+  "fourier_fourth_power_error": 3.905636963790266e-14,
+  "max_metaplectic_covariance_error": 8.216381912627592e-16,
+  "max_otoc_characteristic_error": 7.934716631769552e-16,
+  "max_parseval_error": 8.881784197001252e-16,
+  "numpy": "2.3.5",
+  "physical_tau": "1e-80 (NOT simulated)",
+  "positive_quantizer": {
+    "reports": [
+      {
+        "N": 3,
+        "frame_error": 2.3310352355851455e-16,
+        "gradient_energy_times_N": 2.0282853528025595,
+        "max_multiplier_scaled_ratio": 1.2258560988380405,
+        "min_positive_eigenvalue": 0.7706297095490532,
+        "multiplier_error": 5.409346169589548e-16,
+        "variance_over_N": 0.0658727199222876
+      },
+      {
+        "N": 5,
+        "frame_error": 8.846746446565322e-16,
+        "gradient_energy_times_N": 2.669312370562972,
+        "max_multiplier_scaled_ratio": 1.3346561852814869,
+        "min_positive_eigenvalue": 0.6250898141029376,
+        "multiplier_error": 5.277638239106845e-16,
+        "variance_over_N": 0.07858104948531879
+      },
+      {
+        "N": 7,
+        "frame_error": 1.0941305566681442e-15,
+        "gradient_energy_times_N": 2.8126808887030963,
+        "max_multiplier_scaled_ratio": 1.406340444351549,
+        "min_positive_eigenvalue": 0.533780155164615,
+        "multiplier_error": 5.624173103015152e-16,
+        "variance_over_N": 0.07951739152828168
+      },
+      {
+        "N": 11,
+        "frame_error": 1.1721916501868596e-15,
+        "gradient_energy_times_N": 2.9275870015292065,
+        "max_multiplier_scaled_ratio": 1.4637935007646057,
+        "min_positive_eigenvalue": 0.4404179236020867,
+        "multiplier_error": 1.5893521333969231e-15,
+        "variance_over_N": 0.07957729604440328
+      },
+      {
+        "N": 31,
+        "frame_error": 2.2955994174308642e-14,
+        "gradient_energy_times_N": 3.063326569068279,
+        "max_multiplier_scaled_ratio": 1.531663284534146,
+        "min_positive_eigenvalue": 0.3216583033822569,
+        "multiplier_error": 7.202835078653625e-15,
+        "variance_over_N": 0.07957747154594767
+      }
+    ],
+    "status": "finite checks of positive quantizer, aliases and multipliers"
+  },
+  "proxy_tau": 0.03,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "records": [
+    {
+      "exact_integer_small_box_checks": 960,
+      "full_pair_diagnostic_triangle_weight": 0.0031192190920886955,
+      "max_absolute_orbit_average_otoc": 0.7882513827389992,
+      "max_orbit_average_absolute_otoc": 0.7882513833343228,
+      "max_weight_bound_ratio": 0.970350012102852,
+      "norm2_generator": 0.41270625000000016,
+      "orbit_count": 64,
+      "p": 31,
+      "period": 15,
+      "tau_proxy": 0.03
+    },
+    {
+      "exact_integer_small_box_checks": 1800,
+      "full_pair_diagnostic_triangle_weight": 0.02077645642890447,
+      "max_absolute_orbit_average_otoc": 0.3440306280725823,
+      "max_orbit_average_absolute_otoc": 0.5061103640871886,
+      "max_weight_bound_ratio": 0.9798251077736637,
+      "norm2_generator": 0.41270625000000005,
+      "orbit_count": 60,
+      "p": 61,
+      "period": 62,
+      "tau_proxy": 0.03
+    },
+    {
+      "exact_integer_small_box_checks": 16128,
+      "full_pair_diagnostic_triangle_weight": 0.014282321650364745,
+      "max_absolute_orbit_average_otoc": 0.22606536591217397,
+      "max_orbit_average_absolute_otoc": 0.34342819200304797,
+      "max_weight_bound_ratio": 0.9684344306782651,
+      "norm2_generator": 0.41270624999999983,
+      "orbit_count": 256,
+      "p": 127,
+      "period": 63,
+      "tau_proxy": 0.03
+    },
+    {
+      "exact_integer_small_box_checks": 435600,
+      "full_pair_diagnostic_triangle_weight": 0.01144111600457581,
+      "max_absolute_orbit_average_otoc": 0.5018665666932163,
+      "max_orbit_average_absolute_otoc": 0.5019203726897123,
+      "max_weight_bound_ratio": 0.9560778536798914,
+      "norm2_generator": 0.4127062499999999,
+      "orbit_count": 4400,
+      "p": 199,
+      "period": 9,
+      "tau_proxy": 0.03
+    },
+    {
+      "exact_integer_small_box_checks": 971040,
+      "full_pair_diagnostic_triangle_weight": 0.01029994406272005,
+      "max_absolute_orbit_average_otoc": 0.6405347993648187,
+      "max_orbit_average_absolute_otoc": 0.6405410400689692,
+      "max_weight_bound_ratio": 0.9540568013809012,
+      "norm2_generator": 0.41270625000000005,
+      "orbit_count": 8160,
+      "p": 239,
+      "period": 7,
+      "tau_proxy": 0.03
+    },
+    {
+      "exact_integer_small_box_checks": 129032,
+      "full_pair_diagnostic_triangle_weight": 0.002557587825528906,
+      "max_absolute_orbit_average_otoc": 0.021966666495495363,
+      "max_orbit_average_absolute_otoc": 0.06212306643677407,
+      "max_weight_bound_ratio": 0.9772906505645246,
+      "norm2_generator": 0.41270625,
+      "orbit_count": 508,
+      "p": 509,
+      "period": 510,
+      "tau_proxy": 0.03
+    }
+  ],
+  "script_sha256": "9eda3f11f2cf657f0582192e066880d1fdbcb7c9b857647ae2bec00a21649463",
+  "status": "finite algebra and arithmetic controls only; no analytic/BGS certification"
+}

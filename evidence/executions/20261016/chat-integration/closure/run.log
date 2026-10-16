@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Finite algebra and inequality checks; NOT a proof of the BGS hierarchy.",
+  "model_computations": "Exact BGS matrix formula at proxy tau=0.03 for finite identity checks only.",
+  "bonferroni_and_comparison_checks_exact": 24344,
+  "stirling_checks_exact": 972,
+  "illustrative_reference_tails": {
+    "1": {
+      "odd_order": 11,
+      "tail_upper_bound": 2.505210838544172e-08
+    },
+    "2": {
+      "odd_order": 15,
+      "tail_upper_bound": 2.5058226116427174e-08
+    },
+    "4": {
+      "odd_order": 21,
+      "tail_upper_bound": 8.608270515589216e-08
+    }
+  },
+  "source_sha256": "cf781904e544e9f9005f91c1319b2570f9f67e7ea3d59c8bebd93353ee5ad0d5"
+}
+{
+  "max_fourier_error": 1.2434497875802574e-14,
+  "max_cue_pair_error": 8.881784197001252e-16,
+  "max_certificate_violation": 0.0
+}

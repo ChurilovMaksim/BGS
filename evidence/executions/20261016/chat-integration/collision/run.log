@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "words": 7867,
+  "edge_types": 951,
+  "chord_word_checks": 1710,
+  "matchings": 11465,
+  "seconds": 3.075380325317383
+}
+[
+  {
+    "N": 101,
+    "m": 10,
+    "B_over_m_lower": 0.8437914737448187,
+    "chord_sum": 1.006901726329521,
+    "B_over_m_upper": 1.1156418947193227,
+    "sinh_lambda_over_lambda": 1.0413491098116059,
+    "bounds_exact_rational": true
+  },
+  {
+    "N": 1009,
+    "m": 31,
+    "B_over_m_lower": 1.0077099190504544,
+    "chord_sum": 1.0250097058825447,
+    "B_over_m_upper": 1.066817524060096,
+    "sinh_lambda_over_lambda": 1.0382275378277428,
+    "bounds_exact_rational": true
+  },
+  {
+    "N": 10007,
+    "m": 100,
+    "B_over_m_lower": 1.0351871391004819,
+    "chord_sum": 1.0371294804007167,
+    "B_over_m_upper": 1.0529919343526344,
+    "sinh_lambda_over_lambda": 1.0421308700129714,
+    "bounds_exact_rational": true
+  },
+  {
+    "N": 100003,
+    "m": 316,
+    "B_over_m_lower": 1.04023983286559,
+    "chord_sum": 1.0404361995286566,
+    "B_over_m_upper": 1.0455744605455661,
+    "sinh_lambda_over_lambda": 1.0420651216632069,
+    "bounds_exact_rational": true
+  }
+]

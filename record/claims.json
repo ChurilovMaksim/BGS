@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-14",
+  "updated": "2026-10-16",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -3620,6 +3620,258 @@
       ],
       "boundary": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion.",
       "priority_status": "not-established"
+    },
+    {
+      "id": "BGS-FM-032",
+      "title": "Prime cyclic cohomology and parity-resolved susceptibility",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/quantum_cyclic_cohomology_20261015.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-009"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/algebra/BGS_quantum_coboundary_verify.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit."
+    },
+    {
+      "id": "BGS-TRACE-084",
+      "title": "Mesoscopic block number-variance criterion and collective trace-energy boundary",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/resonant_mesoscopic_criterion_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-009"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/algebra/BGS_resonant_mesoscopic_verify.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law."
+    },
+    {
+      "id": "BGS-TRACE-085",
+      "title": "Exact root lifting and failure of necessity for resonance-sector deletion",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/root_lifting_sector_boundary_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/algebra/verify_root_lift.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator."
+    },
+    {
+      "id": "BGS-TRACE-086",
+      "title": "All-order signed diagonal hierarchy implies local Sine2 and local moment UI",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/all_order_process_closure_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-001",
+        "BGS-TRACE-002",
+        "BGS-TRACE-004"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/closure/verify_closure.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required."
+    },
+    {
+      "id": "BGS-FM-033",
+      "title": "All-label-scale one-step Weyl overlap and prime-orbit corollaries",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL ON NAMED QUANTITATIVE INPUTS",
+      "source": "mathematics/scaled_weyl_overlap_20261015.md",
+      "dependencies": [
+        "BGS-FM-014",
+        "BGS-FM-023"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/scaled_overlap/verify_scaled_overlap.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound."
+    },
+    {
+      "id": "BGS-CUE-002",
+      "title": "All-positive-frequency CUE trace-square covariance and exact coupling derivative",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/full_pair_cue_covariance_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-002"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/cue_covariance/cue_covariance_check.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value."
+    },
+    {
+      "id": "BGS-TRACE-087",
+      "title": "Exact parameter bandwidth and quantitative de-averaging to a fixed coupling",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/parameter_deaveraging_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-086"
+      ],
+      "external_dependencies": [
+        "EXT-DE-2001"
+      ],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/deaveraging/verify_deaveraging.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it."
+    },
+    {
+      "id": "BGS-TRACE-088",
+      "title": "Rooted BEST count, extensive equal-edge mass and unitary compensation",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/equal_edge_occupation_20261015.md",
+      "dependencies": [
+        "BGS-FM-021"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/edge_occupation/verify_edge_occupation.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector."
+    },
+    {
+      "id": "BGS-TRACE-089",
+      "title": "Factorially weighted square-root-time equal-edge collision crossover",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/collision_crossover_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-088"
+      ],
+      "external_dependencies": [
+        "EXT-PITTEL-2016"
+      ],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/collision/verify_collision_crossover.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input."
+    },
+    {
+      "id": "BGS-TRACE-090",
+      "title": "Contractive full-spectrum radial ratios and mixed-moment weak-process criterion",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/bounded_radial_ratios_20261015.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/bounded_secular/verify_bounded_secular.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N."
+    },
+    {
+      "id": "BGS-TRACE-091",
+      "title": "Sharp clock minimum and exact radial and Abel Hardy remainders",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "source": "mathematics/hardy_spectral_remainder_20261015.md",
+      "dependencies": [
+        "BGS-TRACE-007",
+        "BGS-TRACE-090"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/chat-integration/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261015/hardy/verify_hardy.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/chat_integration_20261016.tex"
+      ],
+      "boundary": "p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,0 +1,65 @@
+{
+  "status": "finite numerical verification; no physical BGS claim",
+  "seed": 20261015,
+  "trace_error": 1.8121625989757227e-12,
+  "point_process_error": 1.3128387266192476e-14,
+  "spacing_error": 1.0880185641326534e-14,
+  "window": [
+    0.25,
+    0.49
+  ],
+  "trials": [
+    {
+      "q": 31,
+      "d": 5,
+      "N": 155,
+      "trials": 24,
+      "mean_resonant_energy": 0.08537043791142417,
+      "exact_CUE_mean_base": 0.09573361082206035,
+      "exact_variance_single_base": 0.001191093651362557,
+      "standard_error_mean": 0.007044778359899376,
+      "CUE_mean_dimension_N": 0.08778355879292404,
+      "mean_total_signed_discrepancy": -0.002413120881499878,
+      "asymptotic_resonant_energy": 0.08879999999999999
+    },
+    {
+      "q": 63,
+      "d": 11,
+      "N": 693,
+      "trials": 24,
+      "mean_resonant_energy": 0.08448424366322903,
+      "exact_CUE_mean_base": 0.08692365835222977,
+      "exact_variance_single_base": 0.0005214892616061197,
+      "standard_error_mean": 0.004661407430550168,
+      "CUE_mean_dimension_N": 0.08866025749142632,
+      "mean_total_signed_discrepancy": -0.004176013828197295,
+      "asymptotic_resonant_energy": 0.08879999999999999
+    },
+    {
+      "q": 127,
+      "d": 23,
+      "N": 2921,
+      "trials": 24,
+      "mean_resonant_energy": 0.09092472455306448,
+      "exact_CUE_mean_base": 0.09033418066836134,
+      "exact_variance_single_base": 0.0002727674870688572,
+      "standard_error_mean": 0.003371247834437923,
+      "CUE_mean_dimension_N": 0.08881382980157265,
+      "mean_total_signed_discrepancy": 0.002110894751491829,
+      "asymptotic_resonant_energy": 0.08879999999999999
+    },
+    {
+      "q": 255,
+      "d": 47,
+      "N": 11985,
+      "trials": 24,
+      "mean_resonant_energy": 0.08495615539842112,
+      "exact_CUE_mean_base": 0.08818146866589772,
+      "exact_variance_single_base": 0.0001319472400007036,
+      "standard_error_mean": 0.0023447391468340317,
+      "CUE_mean_dimension_N": 0.08878865234303274,
+      "mean_total_signed_discrepancy": -0.003832496944611616,
+      "asymptotic_resonant_energy": 0.08879999999999999
+    }
+  ]
+}

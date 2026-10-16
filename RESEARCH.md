@@ -1,5 +1,25 @@
 # BGS research brief
 
+## Research-record integration, 16 October 2026
+
+[Exact review and 90-entry inventory](record/chat_integration_20261016.md).
+The all-order process implication no longer requires an independent UI premise.
+The actual signed hierarchy, physical parameter moment and positive Hardy
+excess limits remain unproved. Resonance deletion is sufficient only.
+
+- **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](mathematics/quantum_cyclic_cohomology_20261015.md); proved within its stated scope.
+- **BGS-TRACE-084** — [Mesoscopic block number-variance criterion and collective trace-energy boundary](mathematics/resonant_mesoscopic_criterion_20261015.md); proved within its stated scope.
+- **BGS-TRACE-085** — [Exact root lifting and failure of necessity for resonance-sector deletion](mathematics/root_lifting_sector_boundary_20261015.md); proved within its stated scope.
+- **BGS-TRACE-086** — [All-order signed diagonal hierarchy implies local Sine2 and local moment UI](mathematics/all_order_process_closure_20261015.md); proved within its stated scope.
+- **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](mathematics/scaled_weyl_overlap_20261015.md); conditional within its stated scope.
+- **BGS-CUE-002** — [All-positive-frequency CUE trace-square covariance and exact coupling derivative](mathematics/full_pair_cue_covariance_20261015.md); proved within its stated scope.
+- **BGS-TRACE-087** — [Exact parameter bandwidth and quantitative de-averaging to a fixed coupling](mathematics/parameter_deaveraging_20261015.md); proved within its stated scope.
+- **BGS-TRACE-088** — [Rooted BEST count, extensive equal-edge mass and unitary compensation](mathematics/equal_edge_occupation_20261015.md); proved within its stated scope.
+- **BGS-TRACE-089** — [Factorially weighted square-root-time equal-edge collision crossover](mathematics/collision_crossover_20261015.md); proved within its stated scope.
+- **BGS-TRACE-090** — [Contractive full-spectrum radial ratios and mixed-moment weak-process criterion](mathematics/bounded_radial_ratios_20261015.md); proved within its stated scope.
+- **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](mathematics/hardy_spectral_remainder_20261015.md); proved within its stated scope.
+
+
 **Current scientific status, 14 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
@@ -237,3 +257,4 @@ those executions from later source changes and external journal refereeing.
 <a id="current-contributions-and-their-boundaries"></a>
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
+

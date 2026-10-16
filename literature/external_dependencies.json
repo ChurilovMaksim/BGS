@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-11",
+  "updated": "2026-10-16",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -914,6 +914,22 @@
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://dornsife.usc.edu/larry-goldstein/wp-content/uploads/sites/221/2023/06/AGG.pdf"
+    },
+    {
+      "id": "EXT-PITTEL-2016",
+      "authors": [
+        "Boris Pittel"
+      ],
+      "title": "Another proof of the Harer-Zagier formula",
+      "identifier": "arXiv:1503.05598; Electronic Journal of Combinatorics 23(1), P1.21 (2016)",
+      "pinned_version": "Journal-hosted author PDF dated 20 January 2016",
+      "locator": "Equations (1.1)-(1.2), printed pages 1-2; permutation interpretation in Section 2",
+      "checked_on": "2026-10-16",
+      "mapping": "The number of cycles of a fixed long cycle times a uniform perfect matching has the stated Harer-Zagier generating function. Extracting the coefficient of y gives one-cycle probability 1/(j+1) for even j, zero for odd j. The m=0 case is treated separately. This is a combinatorial input, not BGS.",
+      "project_sources": [
+        "mathematics/collision_crossover_20261015.md",
+        "literature/chat_integration_sources_20261016.md"
+      ]
     }
   ]
 }

@@ -32,6 +32,10 @@ mechanisms and historical context remain authoritative in
 | `ERR-024` | Outside prime-resonant summary: inverse block orientation and pointwise CUE equivalence | corrected before promotion | exact whole-sector mass criterion; no model cancellation promoted; 29/97 scalar exclusions removed |
 | `ERR-025` | Absolute trace sufficiency versus a feasible unaveraged all-order criterion | scope strengthened; sufficient implication retained | Simultaneous unaveraged absolute pair/all-order hypotheses are impossible; TRACE-005 explicitly retains signed cancellation |
 | `ERR-026` | FLOW-010 denial of all polynomial-step regimes | scope corrected; previous theorem retained | Slow-time polynomial corollary already follows from FLOW-010; FLOW-011 retains the earlier N^(-1/3) rate with 2 N^34 original random steps. Deterministic BGS remains open. |
+| `ERR-027` | Resonance deletion (R) described as necessary | withdrawn as a necessity claim | Root lifting preserves Sine2 with nonzero selected-sector energy; sufficient-only route retained |
+| `ERR-028` | Hardy identities for self-inversive polynomials alone | hypotheses restricted to unitary characteristic polynomials | All polynomial roots must lie on the unit circle |
+| `ERR-029` | Sampled Toeplitz contraction without grid-size condition | require M>=N | Discrete Fourier compression proof corrected |
+| `ERR-030` | Mesoscopic initial arc endpoint and separate all-order UI premise | right endpoint included; every-order UI derived | Corrected checker retained; weaker premises still need their own UI |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.
