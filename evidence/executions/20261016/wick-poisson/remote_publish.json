@@ -1,0 +1,243 @@
+{
+  "schema": "bgs-wick-poisson-publish-v1",
+  "observed_at": "2026-10-16T14:26:37.481Z",
+  "repository": "ChurilovMaksim/BGS",
+  "base_commit": "f78ec82ffe8c6535c961abc969a719704bf3e942",
+  "scientific_commit": "84a06b0561b0e219fc52892e2639a5044da152d0",
+  "scientific_tree_sha": "b61fcfa6fe5dfe5a8fb3bf0593921793b06838a0",
+  "main_ref_verified": true,
+  "tree_verification": {
+    "tree_sha": "b61fcfa6fe5dfe5a8fb3bf0593921793b06838a0",
+    "entries": 5834,
+    "changed": 33,
+    "untouched": 5155
+  },
+  "changed_blob_sha1": [
+    {
+      "path": "README.md",
+      "sha": "4a9e090abbc1db493374e729ba041c491ebcace2"
+    },
+    {
+      "path": "README.ru.md",
+      "sha": "89e7cafc4cc87964553327432a0b1b88d2e43c93"
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha": "12af87948735580d8f3e4fcd8976984c66e8a818"
+    },
+    {
+      "path": "computations/verification/research_20261016/README.md",
+      "sha": "0a0ca5a870a884aad08e7b53b8c8a9547123379f"
+    },
+    {
+      "path": "computations/verification/research_20261016/verify_wick_integration.py",
+      "sha": "58c75a066e480cdb571101c5a15f90a2f87144a8"
+    },
+    {
+      "path": "computations/verification/research_20261016/verify_wick_poisson.py",
+      "sha": "2848d4db08a93581550da0882205237d4b922a1f"
+    },
+    {
+      "path": "computations/verification/research_20261016/wick_poisson_contract.json",
+      "sha": "cbbdb4949a9b96f78750603bf9e6627d3bf736e6"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/README.md",
+      "sha": "101ee9bcf9f91142e8b784a338d6b7527277bb36"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/manifest.json",
+      "sha": "7d7ed90444e721b5eca285cb1df997ad6dc839f4"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/result.json",
+      "sha": "52c6882897fffa249b5ab748ca9514ce7c760522"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/stderr.txt",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/stdout.txt",
+      "sha": "52c6882897fffa249b5ab748ca9514ce7c760522"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/integration_checks.json",
+      "sha": "578c538f6bd5b1fabec00cc1b3073e6aa230fdf5"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/manuscript_checks.json",
+      "sha": "54a54046146cf7b2b859ab4037c2cace072749f5"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/source_manifest.json",
+      "sha": "74d5322ea7f3753dd090a1bd79c0c47f0355e9f6"
+    },
+    {
+      "path": "evidence/index.json",
+      "sha": "0b90301f0861aa861094859203cf46e8a11ffac5"
+    },
+    {
+      "path": "literature/external_dependencies.json",
+      "sha": "ea8e2c2ea76e3905e79107434a65f9009c33286a"
+    },
+    {
+      "path": "literature/wick_poisson_sources_20261016.md",
+      "sha": "8fa8a47116e0476dc987b924116db9aac5e0edbb"
+    },
+    {
+      "path": "manuscript/unified_bibliography.tex",
+      "sha": "5f20bd03e1de26d37a12d925708ebddf88a8443e"
+    },
+    {
+      "path": "manuscript/unified_sections/abel_gaussian_20261016.tex",
+      "sha": "49cbb1a3d8d4e1c37874d00ecb7aff6a95a7ff60"
+    },
+    {
+      "path": "mathematics/gaussian_equal_edge_20261016.md",
+      "sha": "a583c396a13dab4cea6ceab6cd83a54b68dd375e"
+    },
+    {
+      "path": "mathematics/open_questions.md",
+      "sha": "70256ed67b7789487b20e7c9e9accbf4ed31ec00"
+    },
+    {
+      "path": "mathematics/results.md",
+      "sha": "ee7ee869db19aa1d0ffebdcbc13ce85ddd04bc69"
+    },
+    {
+      "path": "mathematics/topics/trace-bridge/README.md",
+      "sha": "18383e0b91cb8ee0d544aa334aa35ddac99e0d45"
+    },
+    {
+      "path": "mathematics/wick_collision_poisson_20261016.md",
+      "sha": "e72e1394aa4630c42f46e3420810d734b6a2394a"
+    },
+    {
+      "path": "record/claim_ledger.md",
+      "sha": "ddfd2ba32074d80df5ef3e064555ec0b8c013c88"
+    },
+    {
+      "path": "record/claim_registry.md",
+      "sha": "db6941088553130b0ee007df5a63155179693f64"
+    },
+    {
+      "path": "record/claims.json",
+      "sha": "051cab552217a22dbef13d3aa1cbc20c718110dc"
+    },
+    {
+      "path": "record/mathematics_topics.json",
+      "sha": "54fc14a27e5dba1a48a9bd0411eaa22b76e46894"
+    },
+    {
+      "path": "record/reviews/wick_poisson_20261016.md",
+      "sha": "e6cedcf239e0929c0fc7fb8f52714834a94b5206"
+    },
+    {
+      "path": "record/scientific_dependencies.json",
+      "sha": "382bf3ab3f319b80b793267cd26d0ca8dedd57d9"
+    },
+    {
+      "path": "record/scientific_dependency_graph.md",
+      "sha": "c02765d8783d456ae9458fa9e35aa0a9586c837b"
+    },
+    {
+      "path": "record/wick_poisson_continuation_20261016.md",
+      "sha": "583646598b46474cabe41515b4862f25691c8c2f"
+    }
+  ],
+  "ci": [
+    {
+      "run_id": 38915672488,
+      "name": "Independent manuscript build",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38915672488",
+      "jobs": [
+        {
+          "id": 117022369851,
+          "name": "manuscript",
+          "status": "completed",
+          "conclusion": "failure",
+          "runner_id": 0,
+          "runner_name": "",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "run_id": 38915672544,
+      "name": "Scientific verification",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38915672544",
+      "jobs": [
+        {
+          "id": 117022369533,
+          "name": "scientific-registry",
+          "status": "completed",
+          "conclusion": "failure",
+          "runner_id": 0,
+          "runner_name": "",
+          "steps": []
+        },
+        {
+          "id": 117022369933,
+          "name": "Wave2 portable (HASWELL)",
+          "status": "completed",
+          "conclusion": "failure",
+          "runner_id": 0,
+          "runner_name": "",
+          "steps": []
+        },
+        {
+          "id": 117022369963,
+          "name": "Wave2 portable (ZEN3)",
+          "status": "completed",
+          "conclusion": "failure",
+          "runner_id": 0,
+          "runner_name": "",
+          "steps": []
+        },
+        {
+          "id": 117022370033,
+          "name": "repository-structure",
+          "status": "completed",
+          "conclusion": "failure",
+          "runner_id": 0,
+          "runner_name": "",
+          "steps": []
+        },
+        {
+          "id": 117022397915,
+          "name": "computation",
+          "status": "completed",
+          "conclusion": "skipped",
+          "runner_id": null,
+          "runner_name": null,
+          "steps": []
+        },
+        {
+          "id": 117022398019,
+          "name": "formalization",
+          "status": "completed",
+          "conclusion": "skipped",
+          "runner_id": null,
+          "runner_name": null,
+          "steps": []
+        },
+        {
+          "id": 117022398375,
+          "name": "manuscript",
+          "status": "completed",
+          "conclusion": "skipped",
+          "runner_id": null,
+          "runner_name": null,
+          "steps": []
+        }
+      ]
+    }
+  ],
+  "interpretation": "Both scientific-source workflows failed without recorded code steps or assigned runners in failed jobs; later dependent jobs were skipped. Exact cause unknown. This is not successful full CI, PDF or Lean execution. Local exact and scoped source checks have separate receipts.",
+  "update_method": "Git tree and commit, expected-head lease, force=false. Existing unrelated blobs preserved. This receipt describes the scientific commit; its own later archival commit is separate."
+}
