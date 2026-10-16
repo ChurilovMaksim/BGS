@@ -1,5 +1,22 @@
 # Claim ledger
 
+## Complete flat collision law, 16 October 2026
+
+**BGS-TRACE-094 — PROJECT PROOF + INDEPENDENT INTERNAL CORE RECONSTRUCTION.**
+[The full high-derivative proof](../mathematics/wick_collision_poisson_20261016.md)
+proves C_edge => Poisson(2alpha^2) and B/G -> exp(-alpha^2) at m/N->alpha>0
+under the exact flat positive Wick measure. The previously missing bound for
+every fixed coordinate derivative and all partial contractions is proved.
+Collision locations have a uniform Poisson limit; fixed distinct vertex
+occupations have independent geometric mean-alpha limits. The iid radial
+corollary requires all even moments <=j!.
+
+[Review and current route checkpoint](wick_poisson_continuation_20261016.md)
+distinguish the independently reconstructed core, author-derived corollaries
+and exact finite evidence. The earlier open-law sentences for TRACE-093 are
+superseded ONLY for this flat auxiliary measure. The non-flat physical profile,
+full signed cancellation, TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Abel rigidity and flat equal-edge continuation, 16 October 2026
 
 **BGS-TRACE-092 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
@@ -14,7 +31,7 @@ The fixed physical Abel excess remains unestimated.
 B/G->1 for every m=o(N) in the exactly flat equal-edge sector. At m/N->alpha>0,
 log(B)/N tends to (1+alpha)log(1+alpha)-alpha and its Wick collision mean tends
 to 2alpha^2, with triple edges negligible. The limiting collision law and
-limiting ratio remain open. The Gaussian finite product and sinh crossover
+limiting ratio are subsequently evaluated by TRACE-094 for this same flat measure. The Gaussian finite product and sinh crossover
 are prior 2002 results. The physical non-flat profile and full signed trace
 are separate unresolved steps.
 

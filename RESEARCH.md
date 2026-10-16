@@ -5,10 +5,13 @@
 - **BGS-TRACE-092:** [Positive Abel decomposition and optimal square-root clock rigidity](mathematics/abel_clock_rigidity_20261016.md), including stationary processes and multiple eigenvalues.
 - **BGS-TRACE-093:** [Flat-sector Gaussian comparison for every m=o(N), exact Heisenberg exponential rate and collision mean](mathematics/gaussian_equal_edge_20261016.md).
 
-The Gaussian benchmark and its sinh crossover are prior results. The exact
-Heisenberg limiting ratio, the physical non-flat extension and the original
-signed BGS hierarchy remain open. [Outcome and next proof obligations](record/research_continuation_20261016.md).
-
+The Gaussian benchmark and its sinh crossover are prior results. The subsequent
+[TRACE-094 proof](mathematics/wick_collision_poisson_20261016.md) closes the flat
+Heisenberg collision law and exact ratio B/G->exp(-alpha^2). It also gives
+geometric vertex occupations and a bounded radial-entry comparison. The
+physical non-flat extension and original signed BGS hierarchy remain open.
+[Current proof outcome and next obligations](record/wick_poisson_continuation_20261016.md).
+The [earlier checkpoint](record/research_continuation_20261016.md) retains its original scope.
 
 ## Research-record integration, 16 October 2026
 

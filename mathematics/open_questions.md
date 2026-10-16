@@ -8,12 +8,14 @@ excess. The [flat equal-edge theorem](gaussian_equal_edge_20261016.md) closes
 Gaussian relative comparison for every m=o(N), exact exponential growth at
 m/N->alpha, the first collision moment and negligible triples.
 
-Still open are the full Wick collision law and exact Heisenberg ratio, extension
-to the actual non-flat profile, and above all the physical signed polynomial
-remainder and every-order hierarchy TRACE-005. A Poisson law of mean 2alpha^2
-and ratio exp(-alpha^2) are conjectural, not established by their first moment
-or by the C++ samples. The next precise technical discriminator is recorded in
-[the checkpoint](../record/research_continuation_20261016.md).
+The subsequent [TRACE-094 theorem](wick_collision_poisson_20261016.md) proves the
+full flat Wick collision law Poisson(2alpha^2), the exact ratio exp(-alpha^2),
+and the formerly missing all-fixed-order derivative bound. These are analytic
+conclusions beyond the earlier first moment and C++ samples. Still open are
+transfer to the actual non-flat profile, the full physical signed polynomial
+remainder and every-order hierarchy TRACE-005. The radial iid corollary does
+not cover fourth moment greater than two without an additional exponential-UI
+argument. [Current checkpoint](../record/wick_poisson_continuation_20261016.md).
 
 
 ## Research-record integration, 16 October 2026

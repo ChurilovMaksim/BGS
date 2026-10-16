@@ -1,6 +1,7 @@
 # Finite controls for the 16 October Abel/Gaussian continuation
 
-The mathematical authorities are TRACE-092 and TRACE-093 in `mathematics/`.
+The mathematical authorities are TRACE-092, TRACE-093 and the subsequent
+TRACE-094 in `mathematics/`.
 These programs test dangerous finite normalizations and tensor contractions;
 they do not prove universal quantifiers or a physical semiclassical limit.
 
@@ -23,6 +24,7 @@ output, stderr, elapsed time, commands and source/dependency hashes.
 | `verify_gaussian_hessian.py` | Exact coefficient polynomials and Gaussian factorial norms; degree energy, hook signs, partial swap, all 24 eighth-sphere pairings, all six sixth-sphere pairings and all-m bounds. |
 | `verify_generic_tensors.py` | Fresh independent integer-complex tensor controls, testing pair-symmetric tensors beyond the special trace-Hessian fixtures. |
 | `derive_collision_mean.py` | Exact SymPy rational simplification of the finite mean and its constant and inverse-dimension expansion coefficients. |
+| `verify_wick_poisson.py` | Integer monomial norms versus directed contraction graphs/hook overlaps for all partial matchings in the stated finite cases; exact rational Haar Gram inversion, higher swaps, indicator and vertex identities. The separate Wick packet records its actual run. |
 
 `abel_identity.wl` is the source actually evaluated by the Wolfram connector;
 its returned output is in the execution record. It is not a Lean proof.
@@ -42,7 +44,9 @@ standard errors. It provides neither certified tail probabilities nor a
 Poisson limit. Platform C++ random-distribution implementations can differ.
 The executable is temporary and is not committed.
 
-In a complete source checkout, the metadata audit is also portable:
+The preceding metadata audit was run against its recorded Abel/Gaussian source
+revision. Its source pins are historical; later theorem/status edits are not
+expected to retain those old hashes:
 
 ```bash
 python3 computations/verification/research_20261016/verify_integration.py \
@@ -54,3 +58,14 @@ supplies path existence, while mathematical sources and pinned data must still
 be actual local bytes. The local receipts do not certify remote CI: the
 scientific commit's workflows failed without recorded code steps; see
 `evidence/executions/20261016/abel-gaussian/remote_ci.json`.
+
+For the subsequent complete collision proof, run the bounded exact program:
+
+```bash
+python3 computations/verification/research_20261016/verify_wick_poisson.py
+```
+
+Its maintained contract is `wick_poisson_contract.json`; the executed version-2
+manifest records the actual runner, input hashes, integer arithmetic and caps.
+Use the new `verify_wick_integration.py` for the later scientific source state.
+The previous packet remains immutable provenance for its own revision.

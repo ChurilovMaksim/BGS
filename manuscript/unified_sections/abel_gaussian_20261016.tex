@@ -175,10 +175,120 @@ compact interval. Jensen then bounds $B/G$ away from zero, transferring
 the classical Gaussian exponential rate.
 \end{proof}
 
-The limiting collision distribution and exact limiting $B/G$ remain open;
-a proposed Poisson law of mean $2\alpha^2$ would imply $B/G\to e^{-\alpha^2}$.
-The proved first moment and negligible triples do not establish that law.
+The following continuation, \texttt{BGS-TRACE-094}, closes the limiting
+collision distribution and exact flat ratio. Its high-derivative argument
+is an additional input beyond the first-moment calculation above.
 For a flat unitary, unitarity forces the remaining signed sector to equal
 $-B_{N,m}+O(N^2)$. Obtaining its $O(N)$ CUE remainder, extending the sharp
 flat comparison to the actual non-flat profile, and proving the full
 every-order signed hierarchy remain distinct unresolved obligations.
+
+\subsection{Complete Wick collision law at Heisenberg powers}
+\label{subsec:wick-poisson-20261016}
+The canonical proof is
+\path{mathematics/wick_collision_poisson_20261016.md}.
+Let $\mathbb W(\nu)=c(\nu)^2\prod_e\nu_e!/h_m$ and put
+$C_N=\sum_e\binom{\nu_e}{2}$ and $D_N=\#\{e:\nu_e\ge2\}$.
+Directed loops are included.
+\begin{theorem}[Complete flat collision comparison]
+For every fixed $0<a<b<\infty$ and positive integer $r$, uniformly for
+$aN\le m\le bN$,
+\[
+ \mathbb E_{\mathbb W}(D_N)_r
+    =[2(m/N)^2]^r+O_{a,b,r}(N^{-1}),\qquad
+ \Pr_{\mathbb W}\{\max_e\nu_e\ge3\}=O_{a,b}(N^{-1}).
+\]
+Consequently, if $m/N\to\alpha>0$,
+\[
+ C_N\ \Longrightarrow\ \operatorname{Poisson}(2\alpha^2),
+ \qquad \frac{B_{N,m}}{G_{N,m}}\longrightarrow e^{-\alpha^2}.
+\]
+This is a collision law of an auxiliary positive measure, not an
+energy-level spacing law.
+\end{theorem}
+\begin{proof}
+For the $k$th derivative tensor
+$H^{(k)}=(\partial_{a_1b_1}\cdots\partial_{a_kb_k}p_m)$, every partial matching
+$P$ of upper and lower indices obeys
+\begin{equation}
+ \|C_PH^{(k)}\|_2^2\le C_km(N+m)^{k-1}h_m
+          \le C_{a,b,k}(m)_kh_m.
+ \label{eq:wick-contraction-20261016}
+\end{equation}
+Here $k$ is fixed and $N$ is sufficiently large. To prove the first bound,
+expand the marked trace into $(k-1)!$ cyclic orders and compositions
+$r_1+\cdots+r_k=m-k$. Move all $k$ derivatives in one factor of the
+squared norm to creation variables by Fock adjointness. The resulting
+index network consists of $k$ unit creation edges and $k$ segments of
+lengths $r_i$. Partial matches and the remaining cross-copy links form
+directed cycles. Each zero-length cycle consumes a distinct zero $r_i$.
+If exactly $q$ gaps are zero there are
+$\binom{k}{q}\binom{m-k-1}{k-q-1}$ compositions and at most $q$ factors
+$N$ from zero traces. A product of $\ell\le2k$ positive traces has overlap
+with $p_m$ at most $2^\ell h_m$: its hook coefficients are coefficients of
+$\prod_v(1-t^v)/(1-t)$ and hence have modulus at most $2^\ell$.
+Summing over $q\le k-1$ proves \eqref{eq:wick-contraction-20261016}.
+
+Conjugation invariance now permits the classical finite Haar formula
+\cite{CollinsSniady2006}. At degree $2k$ its Gram matrix is
+$G_{\sigma\tau}=N^{\#\operatorname{cycles}(\sigma^{-1}\tau)}$.
+For fixed $k$, $G^{-1}=N^{-2k}(I+O_k(N^{-1}))$ entrywise.
+Every input pairing is the inner product of two partial contractions
+in \eqref{eq:wick-contraction-20261016}. Therefore, uniformly over all
+coordinate choices, including coincidences,
+\[
+ \frac{\|\partial_{e_1}\cdots\partial_{e_k}p_m\|_2^2}{h_m}
+       \le C_{a,b,k}N^{-k}.
+\]
+If the prescribed upper and lower label sets are disjoint, the leading
+pairings are fully cross. Upper multiplicities $A_u$ and lower
+multiplicities $B_v$ give $\prod_u A_u!\prod_v B_v!$ such pairings.
+For $k\ge2$, mixed Fock homogeneity transfers the Hessian swap identity exactly:
+\[
+ K_k=(m-2)_{k-2}K_2,\qquad
+ K_k/\|H^{(k)}\|_2^2=1-2\bar j/(m-1),\qquad
+ \bar j\le(N-1)/m.
+\]
+A bounded number of upper transpositions makes each leading overlap
+$1+O_{a,b,k}(N^{-1})$ times the total energy. Thus the coordinate norm
+equals $(m)_kN^{-2k}[\prod A_u!\prod B_v!+O_{a,b,k}(N^{-1})]h_m$.
+
+The exact coefficient identity identifies these derivative norms with
+$\mathbb E_{\mathbb W}\prod_e(\nu_e)_{k_e}$.
+For $r$ distinct edges each used twice, with all $2r$ endpoints distinct,
+the multiplicity is $4^r$ and the number of tuples is $(N)_{2r}$.
+Dividing by $2^r$ gives the asserted leading factorial moment. All
+other tuples number $O_r(N^{2r-1})$ and the uniform coordinate bound
+makes their total $O(N^{-1})$. Replacing binomial counts by indicators
+costs a sum of derivative order $2r+1$, again $O(N^{-1})$.
+Order three bounds the probability of any triple edge by $O(N^{-1})$.
+Finite Bonferroni bounds, with truncation removed only after the limit
+in $N$, give $\mathbb E(1-q)^{D_N}\to e^{-2\alpha^2q}$ for $0\le q\le1$.
+Finally $C_N=D_N$ and $\prod\nu_e!=2^{C_N}$ outside the triple-edge
+event. These bounded transforms prove both conclusions.
+\end{proof}
+
+The same argument gives independent Poisson counts in arbitrary disjoint
+deterministic edge classes of limiting densities $\beta_j$, with means
+$2\alpha^2\beta_j$. For fixed distinct vertices, the outgoing counts
+$n_a=\sum_b\nu_{ab}$ instead have independent geometric limits of mean
+$\alpha$: their mixed factorial moments tend to
+$\prod_i k_i!\alpha^{\sum_i k_i}$. Sum the coordinate derivative formula
+over the lower labels; all distinct lower labels outside the fixed upper
+set give this main term, and the remaining $O(N^{K-1})$ choices are
+controlled uniformly. Exchangeability also gives convergence in probability
+of the empirical vertex-occupation distribution. Incoming and outgoing
+counts of one vertex remain equal exactly.
+
+As a separate corollary, let $Z_{ab}=\xi_{ab}/\sqrt N$ be iid circular
+complex entries with $\mathbb E|\xi|^2=1$ and
+$\mathbb E|\xi|^{2j}\le j!$ for every $j$. With
+$\kappa=\mathbb E|\xi|^4$,
+\[
+ \frac{\mathbb E|\operatorname{Tr}Z^m|^2}{G_{N,m}}
+       \longrightarrow e^{(\kappa-2)\alpha^2}.
+\]
+Indeed the exact ratio is $\mathbb E_{\mathbb W}\prod_e q_{\nu_e}$,
+$q_j=\mathbb E|\xi|^{2j}/j!\in[0,1]$. Away from triple edges this is
+$(\kappa/2)^{C_N}$. The bounded transform limit applies. This proof
+does not cover $\kappa>2$ or the non-flat deterministic physical profile.

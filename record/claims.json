@@ -3923,7 +3923,34 @@
       "proof_dependencies": [
         "record/reviews/gaussian_hessian_20261016.md"
       ],
-      "boundary": "Exactly flat intensities only. B/G->1 for every m=o(N); for m/N->alpha>0 the log(B)/N rate equals (1+alpha)log(1+alpha)-alpha, E_W C_edge->2alpha^2 and triple edges vanish. Exact limiting B/G and collision distribution remain open; no non-flat physical or signed BGS extension. Classical Gaussian formula and sinh crossover credited to 2002 work."
+      "boundary": "Exactly flat intensities only. B/G->1 for every m=o(N); for m/N->alpha>0 the log(B)/N rate equals (1+alpha)log(1+alpha)-alpha, E_W C_edge->2alpha^2 and triple edges vanish. The later BGS-TRACE-094 closes the exact flat limiting B/G and collision distribution; no non-flat physical or signed BGS extension. Classical Gaussian formula and sinh crossover credited to 2002 work."
+    },
+    {
+      "id": "BGS-TRACE-094",
+      "title": "Heisenberg Wick collision Poisson law, exact flat ratio and geometric vertex occupations",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION OF CORE; AUTHOR-REVIEWED COROLLARIES",
+      "source": "mathematics/wick_collision_poisson_20261016.md",
+      "dependencies": [
+        "BGS-TRACE-093"
+      ],
+      "external_dependencies": [
+        "EXT-CS-2006"
+      ],
+      "evidence": [
+        "evidence/executions/20261016/wick-poisson/exact/manifest.json"
+      ],
+      "verifiers": [
+        "computations/verification/research_20261016/verify_wick_poisson.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+      ],
+      "proof_dependencies": [
+        "record/reviews/wick_poisson_20261016.md"
+      ],
+      "boundary": "Exact positive flat Wick measure, each fixed order and m/N in a positive compact range. C_edge converges to Poisson(2alpha^2), B/G to exp(-alpha^2), collision locations to uniform Poisson measure; fixed distinct vertex occupations converge to independent geometric mean-alpha variables. Radial iid high-power trace corollary requires every even radial moment <=j!. No non-flat transfer, signed physical cancellation, BGS, growing-order or priority claim."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

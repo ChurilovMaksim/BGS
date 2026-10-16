@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-TRACE-094",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/research_20261016/verify_wick_poisson.py",
+    "--output",
+    "evidence/executions/20261016/wick-poisson/exact/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite high-derivative partial-contraction graph norms, hook overlaps, Haar dictionary, collision indicator and vertex-occupation identities agree with direct integer Gaussian polynomial norms.",
+    "coefficient_domain": "Z and exact Fraction rationals; no floating tolerances",
+    "conventions": "Directed edges including loops; Y standard independent complex Gaussian; p_m=Tr(Y^m); partial_ab is derivative in Y_ab.",
+    "inputs": [
+      "p_m for N=2,3,4 and the explicitly listed bounded (N,m,k) families",
+      "all partial index matchings and cyclic derivative orders through k=5"
+    ],
+    "bounds": {
+      "polynomial_N": [
+        2,
+        3
+      ],
+      "polynomial_m": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "max_polynomial_k": 4,
+      "abstract_graph_max_k": 5,
+      "haar_dictionary_N": [
+        3,
+        4
+      ],
+      "haar_dictionary_max_k": 2,
+      "max_indicator_r": 3,
+      "base_commit": "f78ec82ffe8c6535c961abc969a719704bf3e942",
+      "workspace": "partial pinned snapshot; no local .git; runner reports commit unavailable"
+    },
+    "non_claims": [
+      "Finite checks do not prove asymptotic Poisson convergence.",
+      "No signed physical, non-flat, full BGS, Lean or PDF certification."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-16T14:14:48.517061+00:00",
+    "runtime_seconds": 1.444997,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 100,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/research_20261016/verify_wick_poisson.py",
+    "computations/verification/research_20261016/verify_gaussian_hessian.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/research_20261016/verify_wick_poisson.py",
+      "sha256": "87f2727f3478b15b90e9d033d268f43c29723e3ebd5e10abc26262e6098c37ff",
+      "sha256_after": "87f2727f3478b15b90e9d033d268f43c29723e3ebd5e10abc26262e6098c37ff"
+    },
+    {
+      "path": "computations/verification/research_20261016/verify_gaussian_hessian.py",
+      "sha256": "87bd76d1bc2932b158b7e1c81bb38f328b1be4edd93cbe52df9f5389310cd64e",
+      "sha256_after": "87bd76d1bc2932b158b7e1c81bb38f328b1be4edd93cbe52df9f5389310cd64e"
+    }
+  ],
+  "output_directory": "evidence/executions/20261016/wick-poisson/exact",
+  "declared_results": [
+    "evidence/executions/20261016/wick-poisson/exact/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/stdout.txt",
+      "sha256": "3b987ebc09db7bb2022a2434f66b8ed38cf2d56c230f9771079b00b0c59bfa8d",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261016/wick-poisson/exact/result.json",
+      "sha256": "3b987ebc09db7bb2022a2434f66b8ed38cf2d56c230f9771079b00b0c59bfa8d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

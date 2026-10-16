@@ -1,5 +1,7 @@
 # Trace identities and microscopic limits
 
+- [Complete Heisenberg Wick collision law, exact flat ratio and geometric visits](../../wick_collision_poisson_20261016.md).
+
 ## Checked Abel/Gaussian continuation, 16 October
 
 - [Exact Abel decomposition and optimal square-root clock rigidity](../../abel_clock_rigidity_20261016.md).

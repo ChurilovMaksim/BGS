@@ -2,6 +2,10 @@
 
 **Claim ID:** `BGS-TRACE-093`. 16 October 2026.
 
+**Subsequent continuation:** [TRACE-094](wick_collision_poisson_20261016.md) proves
+the full flat collision law and exact Heisenberg ratio left open at this
+checkpoint. The earlier open-law wording below describes this proof alone.
+
 **Status:** complete project derivation; coordinator reconstruction and fresh
 internal audit scope are recorded in the dated review. This supersedes
 the safe exponent 3/4 as a sufficient range. No external priority, unchanged

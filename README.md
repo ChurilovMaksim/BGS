@@ -18,7 +18,10 @@ comparison](mathematics/gaussian_equal_edge_20261016.md) now holds for every
 $m=o(N)$, with an exact exponential rate and collision mean at $m/N\to\alpha>0$.
 The Gaussian benchmark is classical. These theorems concern specified auxiliary
 objects; the physical signed hierarchy remains open.
-[Proof reviews and exact next step](record/research_continuation_20261016.md).
+[The subsequent complete collision proof](mathematics/wick_collision_poisson_20261016.md)
+evaluates B/G -> exp(-alpha^2), proves Poisson collision locations and geometric
+vertex occupations under the auxiliary Wick measure.
+[Current proof review and remaining obligations](record/wick_poisson_continuation_20261016.md).
 
 ## Checked import from the 15 October research record
 

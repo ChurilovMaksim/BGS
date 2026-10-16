@@ -368,3 +368,10 @@ These two nodes have no inherited physical prerequisites. The machine-readable
 DAG adds no edge from them to the still-open BGS terminal claims. Earlier
 TRACE-089 retains its original proof and range; TRACE-093 supplies the stronger
 flat comparison without its Harer--Zagier dependency.
+
+## Complete flat collision law
+
+TRACE-093 -> TRACE-094 supplies the exact Fock/Schur/swap inputs. Classical
+fixed-degree Haar integration is recorded as EXT-CS-2006. TRACE-094 closes the
+flat collision law and limiting ratio; it adds no edge asserting an implication
+to the unchanged physical BGS terminal targets.

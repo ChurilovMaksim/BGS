@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact integers and Fraction rationals",
+  "partial_contraction_norm_checks": 928,
+  "higher_swap_checks": 17,
+  "trace_product_overlap_checks": 86,
+  "abstract_directed_graph_checks": {
+    "1": 2,
+    "2": 7,
+    "3": 68,
+    "4": 1254,
+    "5": 37104
+  },
+  "haar_dictionary_checks": 7,
+  "factorial_indicator_checks": 12,
+  "row_occupation_identity_checks": 20,
+  "bounded_radial_weight_checks": 12,
+  "cases": [
+    {
+      "N": 2,
+      "m": 4,
+      "k": 1,
+      "nonzero_tensor_coordinates": 4
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "k": 2,
+      "nonzero_tensor_coordinates": 16
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "k": 3,
+      "nonzero_tensor_coordinates": 44
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "k": 1,
+      "nonzero_tensor_coordinates": 4
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "k": 2,
+      "nonzero_tensor_coordinates": 16
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "k": 3,
+      "nonzero_tensor_coordinates": 62
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "k": 4,
+      "nonzero_tensor_coordinates": 168
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "k": 1,
+      "nonzero_tensor_coordinates": 4
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "k": 2,
+      "nonzero_tensor_coordinates": 16
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "k": 3,
+      "nonzero_tensor_coordinates": 64
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "k": 4,
+      "nonzero_tensor_coordinates": 238
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "k": 1,
+      "nonzero_tensor_coordinates": 4
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "k": 2,
+      "nonzero_tensor_coordinates": 16
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "k": 3,
+      "nonzero_tensor_coordinates": 64
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "k": 4,
+      "nonzero_tensor_coordinates": 254
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "k": 1,
+      "nonzero_tensor_coordinates": 9
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "k": 2,
+      "nonzero_tensor_coordinates": 81
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "k": 3,
+      "nonzero_tensor_coordinates": 321
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "k": 1,
+      "nonzero_tensor_coordinates": 9
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "k": 2,
+      "nonzero_tensor_coordinates": 81
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "k": 3,
+      "nonzero_tensor_coordinates": 663
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "k": 1,
+      "nonzero_tensor_coordinates": 9
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "k": 2,
+      "nonzero_tensor_coordinates": 81
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "k": 3,
+      "nonzero_tensor_coordinates": 729
+    }
+  ],
+  "source_sha256": "87f2727f3478b15b90e9d033d268f43c29723e3ebd5e10abc26262e6098c37ff",
+  "nonclaims": [
+    "No asymptotic conclusion follows from these finite cases.",
+    "No physical signed remainder, non-flat extension, or BGS verification."
+  ]
+}
