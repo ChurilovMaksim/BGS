@@ -41,3 +41,16 @@ The source reports the seed, rejection count, sample moments and empirical
 standard errors. It provides neither certified tail probabilities nor a
 Poisson limit. Platform C++ random-distribution implementations can differ.
 The executable is temporary and is not committed.
+
+In a complete source checkout, the metadata audit is also portable:
+
+```bash
+python3 computations/verification/research_20261016/verify_integration.py \
+  --output evidence/executions/20261016/abel-gaussian/integration_checks.json
+```
+
+The optional `--baseline-tree` is only for a disclosed partial snapshot. It
+supplies path existence, while mathematical sources and pinned data must still
+be actual local bytes. The local receipts do not certify remote CI: the
+scientific commit's workflows failed without recorded code steps; see
+`evidence/executions/20261016/abel-gaussian/remote_ci.json`.

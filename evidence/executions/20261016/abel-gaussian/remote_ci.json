@@ -1,0 +1,106 @@
+{
+  "schema": "bgs-remote-ci-observation-v1",
+  "checked_commit": "658a3ebbf6f9c61084f27ac7d7aa37976a362657",
+  "status": "REMOTE_FAILURE_WITHOUT_RECORDED_CODE_STEPS",
+  "runs": [
+    {
+      "id": 38910615991,
+      "name": "Scientific verification",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991"
+    },
+    {
+      "id": 38910615709,
+      "name": "Independent manuscript build",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615709"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 117005218609,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005218609"
+    },
+    {
+      "id": 117005219057,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005219057"
+    },
+    {
+      "id": 117005219193,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005219193"
+    },
+    {
+      "id": 117005219638,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005219638"
+    },
+    {
+      "id": 117005250338,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "runner_name": null,
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005250338"
+    },
+    {
+      "id": 117005250839,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "runner_name": null,
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005250839"
+    },
+    {
+      "id": 117005251140,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "runner_name": null,
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615991/job/117005251140"
+    },
+    {
+      "id": 117005218974,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": [],
+      "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38910615709/job/117005218974"
+    }
+  ],
+  "cause": "Unknown from the available connector. Failed jobs have runner_id 0 and no recorded steps; log retrieval returned NOT_FOUND and the annotation endpoint is not exposed by the fetch tool.",
+  "local_evidence": "evidence/executions/20261016/abel-gaussian/receipt.json",
+  "scope": "Remote workflow failure is not a passed check or a diagnosed source-code defect. Six bounded local controls, C++ replay and static TeX audit have separate receipts. No remote PDF or Lean build is certified."
+}

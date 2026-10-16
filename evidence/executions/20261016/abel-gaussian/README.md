@@ -27,3 +27,14 @@ No complete repository pytest, analytic Lean build, literal tau=10^-80
 semiclassical experiment, deterministic signed comparison or BGS solution was
 executed or certified in this checkpoint. The original TRACE-005 and BGS
 terminal claims remain open.
+
+## Remote CI observation
+
+On scientific commit `658a3ebbf6f9c61084f27ac7d7aa37976a362657`, both
+GitHub workflows concluded `failure`. The failed jobs had runner_id=0,
+no runner name and empty step arrays; the downstream jobs were skipped.
+The connector returned NOT_FOUND for the requested job log and did not expose
+the annotations endpoint. The underlying cause is unknown here, so no billing
+or source-code diagnosis is asserted. [Exact observation](remote_ci.json).
+The local PASS receipts are valid within their stated scope; no successful
+full remote CI, PDF build or Lean build follows from them.

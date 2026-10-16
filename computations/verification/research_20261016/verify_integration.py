@@ -34,10 +34,13 @@ def prose(text):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--baseline-tree',type=Path,required=True)
+    p.add_argument('--baseline-tree',type=Path,
+                   help='Optional pinned remote inventory for a disclosed partial snapshot')
     p.add_argument('--output',type=Path,required=True)
     args=p.parse_args()
-    tree=json.loads(args.baseline_tree.read_text())
+    tree=json.loads(args.baseline_tree.read_text()) if args.baseline_tree else {
+        'commit':'b425a36141cd81c7ef4e832984e7f7ff5074ddc7',
+        'sha':None,'tree':[]}
     need(tree['commit']=='b425a36141cd81c7ef4e832984e7f7ff5074ddc7',
          'Unexpected pinned inventory commit')
     remote={r['path'] for r in tree['tree']}
@@ -105,7 +108,8 @@ def main():
          'Historical recovered source bytes changed')
     report=dict(schema='bgs-abel-gaussian-integration-v1',status='PASS',
                 base_commit=tree['commit'],tree_sha=tree['sha'],
-                mode='Partial pinned source snapshot with remote path-existence inventory',
+                mode='Partial pinned source snapshot with remote path-existence inventory'
+                     if args.baseline_tree else 'Local source bytes; no remote path fallback',
                 claims=len(ids),external_dependencies=len(external),
                 executed_finite_tasks=len(receipt['tasks']),source_pins=len(manifest['sha256']),
                 changed_markdown_checked=len(manifest['changed_markdown']),
