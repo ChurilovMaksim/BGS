@@ -10,6 +10,16 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
+## Abel/Gaussian continuation, 16 October
+
+[Optimal clock rigidity](mathematics/abel_clock_rigidity_20261016.md) bounds local
+spectral distance by the square root of the Abel excess. [Flat equal-edge
+comparison](mathematics/gaussian_equal_edge_20261016.md) now holds for every
+$m=o(N)$, with an exact exponential rate and collision mean at $m/N\to\alpha>0$.
+The Gaussian benchmark is classical. These theorems concern specified auxiliary
+objects; the physical signed hierarchy remains open.
+[Proof reviews and exact next step](record/research_continuation_20261016.md).
+
 ## Checked import from the 15 October research record
 
 The [integration review](record/chat_integration_20261016.md) maps the complete

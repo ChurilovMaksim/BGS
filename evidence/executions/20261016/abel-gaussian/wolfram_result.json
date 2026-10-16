@@ -1,0 +1,14 @@
+{
+  "schema": "bgs-wolfram-check-v1",
+  "date": "2026-10-16",
+  "scope": "Three symbolic residuals and Taylor expansion; supplementary to analytic proof, no physical BGS calculation.",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"CUEIntegral\" -> (3*Coth[s] - s*(3 + 2*s^2)*Csch[s]^2)/(12*s^2), \"CUEIdentityResidual\" -> 0, \"InteriorFourierResidual\" -> 0, \"ExteriorFourierResidual\" -> 0, \"SmallS\" -> SeriesData[s, 0, {1/30, 0, -1/126, 0, 19/14175}, 1, 6, 1]|>"
+      }
+    ],
+    "isError": false
+  }
+}

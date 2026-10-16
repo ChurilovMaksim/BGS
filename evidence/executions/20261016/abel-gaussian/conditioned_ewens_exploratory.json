@@ -1,0 +1,79 @@
+{
+  "status": "exploratory finite Monte Carlo only",
+  "nonclaims": [
+    "These observations prove no asymptotic distribution or limiting ratio.",
+    "Reported standard errors are empirical standard errors, not certified error probabilities.",
+    "The exact conditional sampling model is the Gaussian Wick word measure, not a physical quantum map."
+  ],
+  "source": "sample_conditioned_ewens.cpp",
+  "compiler_command": "g++ -std=c++20 -O3 sample_conditioned_ewens.cpp -o /tmp/bgs_ewens_sample",
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "rng": "C++ std::mt19937_64 with std::uniform_int_distribution<int>",
+  "algorithm": "Sample the exact Ewens(N) permutation by integer-weight insertion; reject unless gamma sigma is a single cycle; assign iid uniform N-colours to permutation cycles; compute C_edge and inverse parallel-edge factorial.",
+  "runs": [
+    {
+      "command": "/tmp/bgs_ewens_sample 100 100 20000",
+      "N": 100,
+      "m": 100,
+      "accepted": 20000,
+      "trials": 1009602,
+      "seed": 20261016,
+      "mean_C": 1.9496,
+      "se_mean_C": 0.0113021233403,
+      "mean_inverse_factorial": 0.400165611979,
+      "se_mean_inverse_factorial": 0.002233047095,
+      "factorial_C_2": 4.4061,
+      "factorial_C_3": 12.1713,
+      "factorial_C_4": 42.4164,
+      "triple_edge_samples": 1047
+    },
+    {
+      "command": "/tmp/bgs_ewens_sample 100 50 20000",
+      "N": 100,
+      "m": 50,
+      "accepted": 20000,
+      "trials": 343158,
+      "seed": 20261016,
+      "mean_C": 0.47685,
+      "se_mean_C": 0.00522524677647,
+      "mean_inverse_factorial": 0.793349826389,
+      "se_mean_inverse_factorial": 0.0019921041373,
+      "factorial_C_2": 0.2966,
+      "factorial_C_3": 0.3243,
+      "factorial_C_4": 0.5928,
+      "triple_edge_samples": 142
+    },
+    {
+      "command": "/tmp/bgs_ewens_sample 200 200 20000",
+      "N": 200,
+      "m": 200,
+      "accepted": 20000,
+      "trials": 2017775,
+      "seed": 20261016,
+      "mean_C": 1.9873,
+      "se_mean_C": 0.0107280909532,
+      "mean_inverse_factorial": 0.381761069336,
+      "se_mean_inverse_factorial": 0.002155564984,
+      "factorial_C_2": 4.2639,
+      "factorial_C_3": 10.3812,
+      "factorial_C_4": 31.4832,
+      "triple_edge_samples": 604
+    },
+    {
+      "command": "/tmp/bgs_ewens_sample 100 200 20000",
+      "N": 100,
+      "m": 200,
+      "accepted": 20000,
+      "trials": 2671099,
+      "seed": 20261016,
+      "mean_C": 7.89245,
+      "se_mean_C": 0.0264661888052,
+      "mean_inverse_factorial": 0.0306313464441,
+      "se_mean_inverse_factorial": 0.000525657391679,
+      "factorial_C_2": 68.4075,
+      "factorial_C_3": 669.9393,
+      "factorial_C_4": 7742.4864,
+      "triple_edge_samples": 6028
+    }
+  ]
+}

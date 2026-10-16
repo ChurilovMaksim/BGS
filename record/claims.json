@@ -3872,6 +3872,58 @@
         "manuscript/unified_sections/chat_integration_20261016.tex"
       ],
       "boundary": "p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
+    },
+    {
+      "id": "BGS-TRACE-092",
+      "title": "Exact positive Abel decomposition and optimal square-root clock rigidity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + COORDINATOR RECONSTRUCTION + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/abel_clock_rigidity_20261016.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261016/abel-gaussian/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/research_20261016/verify_abel.py",
+        "computations/verification/research_20261016/verify_rigidity.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+      ],
+      "proof_dependencies": [
+        "record/reviews/abel_rigidity_20261016.md"
+      ],
+      "boundary": "Every unitary spectrum, N>=1 including multiplicities; stationary intensity-one processes with finite displayed q-energy. Local bounded-Lipschitz Wasserstein bound C sqrt(Abel excess), with exponent optimal. No estimate of physical Abel excess, CUE convergence or all-order signed hierarchy."
+    },
+    {
+      "id": "BGS-TRACE-093",
+      "title": "Flat equal-edge Gaussian comparison, exact Heisenberg exponential rate and Wick collision mean",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + COORDINATOR RECONSTRUCTION + INDEPENDENT FINITE-TENSOR AUDIT",
+      "source": "mathematics/gaussian_equal_edge_20261016.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-KPSS-2002",
+        "EXT-BF-2023"
+      ],
+      "evidence": [
+        "evidence/executions/20261016/abel-gaussian/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/research_20261016/verify_gaussian_factorial.py",
+        "computations/verification/research_20261016/verify_gaussian_hessian.py",
+        "computations/verification/research_20261016/verify_generic_tensors.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+      ],
+      "proof_dependencies": [
+        "record/reviews/gaussian_hessian_20261016.md"
+      ],
+      "boundary": "Exactly flat intensities only. B/G->1 for every m=o(N); for m/N->alpha>0 the log(B)/N rate equals (1+alpha)log(1+alpha)-alpha, E_W C_edge->2alpha^2 and triple edges vanish. Exact limiting B/G and collision distribution remain open; no non-flat physical or signed BGS extension. Classical Gaussian formula and sinh crossover credited to 2002 work."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,5 +1,15 @@
 # Theorem families and their limits
 
+## Checked continuation, 16 October 2026
+
+- **BGS-TRACE-092:** [Positive Abel decomposition and optimal square-root clock rigidity](../mathematics/abel_clock_rigidity_20261016.md), including stationary processes and multiple eigenvalues.
+- **BGS-TRACE-093:** [Flat-sector Gaussian comparison for every m=o(N), exact Heisenberg exponential rate and collision mean](../mathematics/gaussian_equal_edge_20261016.md).
+
+The Gaussian benchmark and its sinh crossover are prior results. The exact
+Heisenberg limiting ratio, the physical non-flat extension and the original
+signed BGS hierarchy remain open. [Outcome and next proof obligations](../record/research_continuation_20261016.md).
+
+
 ## Research-record integration, 16 October 2026
 
 [Exact review and 90-entry inventory](../record/chat_integration_20261016.md).

@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "arithmetic": "integer real/imaginary pairs",
+  "cases": [
+    {
+      "N": 2,
+      "seed": 0,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 380,
+      "partial_swap_inner_product": 340,
+      "T_norm_squared": 116,
+      "S_norm_squared": 184,
+      "pairing_group_sums": {
+        "0": 260,
+        "2": 2240,
+        "4": 1440
+      },
+      "sixth_pairing_sum": 1280
+    },
+    {
+      "N": 2,
+      "seed": 1,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 403,
+      "partial_swap_inner_product": 297,
+      "T_norm_squared": 119,
+      "S_norm_squared": 99,
+      "pairing_group_sums": {
+        "0": 32,
+        "2": 1320,
+        "4": 1400
+      },
+      "sixth_pairing_sum": 1030
+    },
+    {
+      "N": 2,
+      "seed": 2,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 348,
+      "partial_swap_inner_product": 74,
+      "T_norm_squared": 170,
+      "S_norm_squared": 72,
+      "pairing_group_sums": {
+        "0": 100,
+        "2": 840,
+        "4": 844
+      },
+      "sixth_pairing_sum": 632
+    },
+    {
+      "N": 3,
+      "seed": 0,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 2322,
+      "partial_swap_inner_product": 1246,
+      "T_norm_squared": 674,
+      "S_norm_squared": 840,
+      "pairing_group_sums": {
+        "0": 1224,
+        "2": 9376,
+        "4": 7136
+      },
+      "sixth_pairing_sum": 5912
+    },
+    {
+      "N": 3,
+      "seed": 1,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 1568,
+      "partial_swap_inner_product": 1310,
+      "T_norm_squared": 550,
+      "S_norm_squared": 426,
+      "pairing_group_sums": {
+        "0": 1808,
+        "2": 7176,
+        "4": 5756
+      },
+      "sixth_pairing_sum": 4672
+    },
+    {
+      "N": 3,
+      "seed": 2,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 1555,
+      "partial_swap_inner_product": 1187,
+      "T_norm_squared": 475,
+      "S_norm_squared": 389,
+      "pairing_group_sums": {
+        "0": 712,
+        "2": 6016,
+        "4": 5484
+      },
+      "sixth_pairing_sum": 4246
+    },
+    {
+      "N": 4,
+      "seed": 0,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 6393,
+      "partial_swap_inner_product": 3713,
+      "T_norm_squared": 1246,
+      "S_norm_squared": 1630,
+      "pairing_group_sums": {
+        "0": 1796,
+        "2": 17320,
+        "4": 20212
+      },
+      "sixth_pairing_sum": 14436
+    },
+    {
+      "N": 4,
+      "seed": 1,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 5818,
+      "partial_swap_inner_product": 3362,
+      "T_norm_squared": 1476,
+      "S_norm_squared": 1644,
+      "pairing_group_sums": {
+        "0": 32,
+        "2": 19472,
+        "4": 18360
+      },
+      "sixth_pairing_sum": 14048
+    },
+    {
+      "N": 4,
+      "seed": 2,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 5816,
+      "partial_swap_inner_product": 3100,
+      "T_norm_squared": 1502,
+      "S_norm_squared": 1549,
+      "pairing_group_sums": {
+        "0": 900,
+        "2": 19588,
+        "4": 17832
+      },
+      "sixth_pairing_sum": 13813
+    },
+    {
+      "N": 5,
+      "seed": 0,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 15890,
+      "partial_swap_inner_product": 5884,
+      "T_norm_squared": 3767,
+      "S_norm_squared": 2129,
+      "pairing_group_sums": {
+        "0": 1280,
+        "2": 28392,
+        "4": 43548
+      },
+      "sixth_pairing_sum": 28872
+    },
+    {
+      "N": 5,
+      "seed": 1,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 14053,
+      "partial_swap_inner_product": 3789,
+      "T_norm_squared": 2077,
+      "S_norm_squared": 2759,
+      "pairing_group_sums": {
+        "0": 1460,
+        "2": 23448,
+        "4": 35684
+      },
+      "sixth_pairing_sum": 23704
+    },
+    {
+      "N": 5,
+      "seed": 2,
+      "pairing_counts": {
+        "0": 4,
+        "2": 16,
+        "4": 4
+      },
+      "norm_squared": 13927,
+      "partial_swap_inner_product": 4917,
+      "T_norm_squared": 2268,
+      "S_norm_squared": 2149,
+      "pairing_group_sums": {
+        "0": 68,
+        "2": 23212,
+        "4": 37688
+      },
+      "sixth_pairing_sum": 24647
+    }
+  ],
+  "total_eighth_pairings": 288,
+  "total_sixth_pairings": 72,
+  "source_sha256": "35df4ab0035d0bd640c27fd6b07e7be9343e83d6962d7e7c254941a73ea03099",
+  "boundary": "Finite generic tensors; the written classification supplies the all-N proof."
+}

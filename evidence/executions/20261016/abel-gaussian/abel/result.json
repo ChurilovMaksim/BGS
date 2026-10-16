@@ -1,0 +1,24 @@
+{
+  "arithmetic": "mpmath 60 decimal digits; numerical checks only",
+  "finite_identity_cases": 144,
+  "max_finite_identity_absolute_error": "8.46330077789e-59",
+  "fourier_compact_convolution_quadratures": 18,
+  "max_fourier_absolute_error": "4.76449607211e-61",
+  "direct_periodization_checks": 12,
+  "periodization_cutoff": 1000,
+  "largest_observed_tail_to_analytic_upper_bound_ratio": "0.973042929788",
+  "includes": [
+    "N=1",
+    "even and odd N",
+    "repeated eigenvalues",
+    "clock",
+    "deleted clock",
+    "rational random phases"
+  ],
+  "nonclaims": [
+    "no asymptotic numerical proof",
+    "no proof of physical Abel limit",
+    "no BGS universality",
+    "no claim of optimal rate"
+  ]
+}

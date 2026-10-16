@@ -1,5 +1,11 @@
 # Trace identities and microscopic limits
 
+## Checked Abel/Gaussian continuation, 16 October
+
+- [Exact Abel decomposition and optimal square-root clock rigidity](../../abel_clock_rigidity_20261016.md).
+- [All sublinear-time flat Gaussian comparison, Heisenberg rate and collision mean](../../gaussian_equal_edge_20261016.md).
+
+
 ## Reviewed 7 October phase checkpoint
 
 [Current claim card](../../phase_trace_checkpoint.md) and

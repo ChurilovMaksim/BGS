@@ -1,5 +1,28 @@
 # Claim ledger
 
+## Abel rigidity and flat equal-edge continuation, 16 October 2026
+
+**BGS-TRACE-092 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
+[Exact decomposition and optimal rigidity](../mathematics/abel_clock_rigidity_20261016.md)
+split the Abel excess into a nonnegative low-mode term and a geometric pair
+energy. Stationary intensity-one processes obey a square-root local transport
+bound to the uniform clock; alternating gap spectra prove the exponent optimal.
+The fixed physical Abel excess remains unestimated.
+
+**BGS-TRACE-093 — PROJECT PROOF + CHECKED CLASSICAL INPUT + INTERNAL REVIEW.**
+[Gaussian comparison](../mathematics/gaussian_equal_edge_20261016.md) proves
+B/G->1 for every m=o(N) in the exactly flat equal-edge sector. At m/N->alpha>0,
+log(B)/N tends to (1+alpha)log(1+alpha)-alpha and its Wick collision mean tends
+to 2alpha^2, with triple edges negligible. The limiting collision law and
+limiting ratio remain open. The Gaussian finite product and sinh crossover
+are prior 2002 results. The physical non-flat profile and full signed trace
+are separate unresolved steps.
+
+[Research checkpoint](research_continuation_20261016.md) records the route tree,
+proof reviews, finite checks and exact next obligations. Neither result closes
+BGS-TRACE-005 or BGS-BGS-001. No award-level or world-priority assessment follows
+from an internal proof or the finite execution receipts.
+
 ## Imported research record, 16 October 2026
 
 **Scope:** author self-review and fresh finite replay. The source inventory has
@@ -23,8 +46,9 @@ The untouched historical text cannot override the dispositions below.
 
 **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** The conditional implication
 H_diag => Sine2 supplies local UI at every fixed moment order. Pair-only or
-bounded-ratio convergence does not. The m=o(N^(3/4)) Gaussian comparison
-mentioned after the export is unverified and has not been promoted.
+bounded-ratio convergence does not. The late-chat Gaussian comparison was unverified at import time. The subsequent
+BGS-TRACE-093 reconstruction proves it and strengthens its range to every
+m=o(N); it does not certify the unavailable original derivation.
 
 
 ## Observed pulse and cyclic memory, 14 October 2026

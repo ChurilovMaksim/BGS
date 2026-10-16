@@ -1,0 +1,184 @@
+\section{Abel rigidity and the flat equal-edge Gaussian comparison}
+\label{sec:abel-gaussian-20261016}
+\noindent\textbf{Scope.} Claims \texttt{BGS-TRACE-092} and
+\texttt{BGS-TRACE-093}. The canonical full proofs are
+\path{mathematics/abel_clock_rigidity_20261016.md} and
+\path{mathematics/gaussian_equal_edge_20261016.md}. This section records
+their statements and proof mechanisms. They do not establish the signed
+Heisenberg hierarchy of the maintained fixed propagator. The Gaussian
+benchmark and its double-scaling function are classical
+\cite{KPSS2002,ByunForrester2023}.
+
+\subsection{A positive decomposition with a geometric remainder}
+For eigenvalues $e^{2\pi i\theta_j}$ of $U\in U(N)$ put
+$x_j=N\theta_j$, $T_m=\operatorname{Tr}U^m$ and
+\[
+ L_N(s)=N^{-2}\sum_{m\ge1}e^{-2sm/N}|T_m|^2,\qquad
+ \delta_N(s)=L_N(s)-(e^{2s}-1)^{-1}.
+\]
+For $s>0$ define
+\[
+ f_s(x)=\frac{s}{s^2+\pi^2x^2},\qquad
+ q_s(x)=\frac{s^3}{\sinh^2s}
+      \frac{(\sin(\pi x)/(\pi x))^2}{s^2+\pi^2x^2},
+ \qquad H_s=f_s-q_s.
+\]
+Continuous values are used at zero. With Fourier convention
+$\widehat g(t)=\int g(x)e^{-2\pi itx}\,dx$,
+\[
+ \widehat H_s(t)=
+ \begin{cases}
+ [\sinh(2s(1-|t|))-2s(1-|t|)]/(2\sinh^2s),&|t|\le1,\\
+ 0,&|t|>1.
+ \end{cases}
+\]
+\begin{theorem}[Exact positive Abel decomposition]
+For every $N\ge1$, including repeated eigenvalues,
+\begin{equation}
+ \delta_N(s)=N^{-2}\sum_{m=1}^{N-1}\widehat H_s(m/N)|T_m|^2
+   +\frac1{2N}\sum_{j\ne k}\sum_{\ell\in\mathbb Z}
+                     q_s(x_j-x_k+\ell N).
+ \label{eq:abel-positive-20261016}
+\end{equation}
+Both terms are nonnegative. Equality holds precisely for a rotated clock.
+\end{theorem}
+\begin{proof}[Proof mechanism]
+The transform of $q_s$ is $(s^2/\sinh^2s)$ times the convolution of
+$(1-|t|)_+$ and $e^{-2s|t|}$. Elementary integration gives the displayed
+transform of $H_s$. Periodize all kernels at the integer period $N$.
+The Fourier series are absolutely convergent, and the $H_s$ series has
+finite support. The diagonal of the $q_s$ sum contributes exactly
+$q_s(0)/2$, since $q_s(\ell N)=0$ for nonzero integers $\ell$.
+Finally $(\widehat H_s(0)+q_s(0)-1)/2=(e^{2s}-1)^{-1}$.
+\end{proof}
+
+\subsection{An optimal square-root stability theorem}
+Let $d_R$ be the bounded local semimetric obtained by taking the supremum
+of $|\int\phi\,d(\mu-\nu)|$ over functions supported on $[-R,R]$ with
+supremum norm and Lipschitz constant at most one, and then truncating at one.
+\begin{theorem}[Stationary clock rigidity]
+Let $\Xi$ be a stationary counting process on $\mathbb R$ with intensity
+one, allowing multiplicities and an empty component. Suppose its ordered
+$q_s$ pair-energy density is $e<\infty$. For every fixed $R$,
+\[
+ W_{d_R}\bigl(\mathcal L(\Xi),\mathcal L(\mathbb Z+V)\bigr)
+       \le \min\{1,C_{s,R}\sqrt e\},
+ \qquad V\sim\operatorname{Unif}[0,1).
+\]
+For the uniform-origin unfolded spectrum, $e\le2\delta_N(s)$, so
+$W_{d_R}\le\min\{1,C'_{s,R}\sqrt{\delta_N(s)}\}$ uniformly in $N$.
+The exponent $1/2$ is optimal already at $R=2$ over these spectra.
+\end{theorem}
+\begin{proof}[Proof mechanism]
+Let $\nu$ be the intensity-normalized outgoing-gap law, retaining zero
+gaps between coincident particles. Coverage of the line by the positive
+gaps gives $\int g\,d\nu=1-p_0$, where $p_0$ is the empty-component
+probability. Consequently
+\[
+ A:=\int(1-g)_+\,d\nu
+   =\Pr\{\Xi([0,1))=0\},\qquad
+ \int|g-1|\,d\nu\le2A.
+\]
+The chord bound $q_s(g)\ge c_s(1-g)^2$ on $[0,1]$, where
+$c_s=4s^3/[\pi^2\sinh^2s(s^2+\pi^2)]$, yields $A\le\sqrt{e/c_s}$.
+On a fixed enlarged window, the expected sum of incoming and outgoing
+gap deviations is $O_R(A)$. Unless that sum exceeds $1/4$ or the anchor
+unit interval is empty, consecutive-index matching with the anchor clock
+has total local displacement $O_R(A)$ in expectation. The boundary gaps
+are included in the marks. Translating the matched configurations by an
+independent uniform variable preserves the stationary process law and
+makes the clock phase exactly uniform. This proves the estimate without
+a separate count-integrability premise.
+
+For optimality take even $N$ and $x_j=j+\epsilon(-1)^j$. Writing $z=e^{-s}$,
+\[
+ \delta_N(s)=\frac{z(1-z)(1-\cos(2\pi\epsilon))}
+ {2(1+z)(1+2z\cos(2\pi\epsilon)+z^2)}\asymp_s\epsilon^2.
+\]
+Every translate of this configuration is at $d_2$ distance at least
+$\epsilon$ from every clock: two consecutive points in $[-1,1)$ have
+fractional separation $2\epsilon$, detected by the nonnegative admissible
+test $\min\{\operatorname{dist}(x,\mathbb Z+t),(2-|x|)_+,1\}$.
+\end{proof}
+
+The CUE excess is positive. The limiting mean low-mode part of
+\eqref{eq:abel-positive-20261016} is
+\[
+ I_s=\frac{\sinh(2s)-2s-4s^3/3}{8s^2\sinh^2s},
+\]
+and the geometric part tends to
+$\tfrac12\int q_s(x)[1-(\sin(\pi x)/(\pi x))^2],dx$.
+Neither limit is established here for the physical fixed map. Vanishing
+excess would instead force its clock law.
+
+\subsection{All sublinear powers and the Heisenberg exponential rate}
+Let $c(\nu)$ count rooted cyclic words with directed-edge table $\nu$, and put
+\[
+ B_{N,m}=N^{-m}\sum_\nu c(\nu)^2,\qquad
+ G_{N,m}=N^{-m}\sum_\nu c(\nu)^2\prod_{a,b}\nu_{ab}!.
+\]
+For an exactly flat unitary, $B_{N,m}$ is its positive equal-edge sector.
+The classical Gaussian benchmark is
+\[
+ G_{N,m}=\frac{\prod_{j=0}^m(N+j)-\prod_{j=0}^m(N-j)}
+                     {(m+1)N^m},
+\]
+with falling product zero for $m\ge N$ \cite{KPSS2002}.
+\begin{theorem}[Flat equal-edge comparison and collision mean]
+For $N\ge3$ and $3\le m\le N$,
+\[
+ 0\le1-B_{N,m}/G_{N,m}
+       \le\frac{m(m-1)}{N(N+1)}+\frac{15m}{N^2}.
+\]
+At $m=1$ the deficit is zero and at $m=2$ it is $1/(2N)$. Thus
+$B_{N,m}/G_{N,m}\to1$ for every $m=o(N)$. For $m/N\to\alpha>0$,
+\[
+ \liminf B_{N,m}/G_{N,m}\ge2^{-2\alpha^2},\qquad
+ \frac{\log B_{N,m}}N\longrightarrow
+                 (1+\alpha)\log(1+\alpha)-\alpha.
+\]
+Under the exact Wick table law proportional to $c(\nu)^2\prod\nu_{ab}!$,
+\[
+ \mathbb E_W\sum_{a,b}\binom{\nu_{ab}}2\longrightarrow2\alpha^2,
+ \qquad \Pr_W\{\max_{a,b}\nu_{ab}\ge3\}\longrightarrow0.
+\]
+For $m\ge N+2$ the finite mean is exactly
+\[
+ F(N,m)=\frac{2m\{(N+5)m(m+1)-(N+2)(N+3)\}}
+                    {(N+1)(N+2)(N+3)(m+2)}.
+\]
+On every fixed positive compact range of $m/N$, the error from this rational
+expression is exponentially small in $N$. With $\alpha_N=m/N$ the mean is
+$2\alpha_N^2-2(\alpha_N^2+\alpha_N+1)/N+O(N^{-2})$.
+\end{theorem}
+\begin{proof}[Proof mechanism]
+For unscaled Ginibre $Y$, put $p_m=\operatorname{Tr}Y^m$ and
+$h_m=\mathbb E|p_m|^2$. Gaussian Fock adjointness makes the repeated-edge
+mean a self-coordinate Hessian norm divided by $2h_m$; the total Hessian
+norm is $m(m-1)h_m$. Two sphere fourth moments control off-diagonal
+coordinates. The 24 diagonal eighth-moment pairings reduce to four
+explicit contractions. The essential contracted matrix satisfies
+\[
+ \|S\|_{L^2}^2=\langle p_m,\operatorname{Tr}(Y^2D^2)p_m\rangle
+       \le m(N+m-1)h_m.
+\]
+Here $D_{ij}=\partial/\partial Y_{ji}$. The bound follows from hook Schur
+orthogonality and the finite identity
+$\sum_{a=1}^{m-1}p_ap_{m-a}
+=\sum_j(-1)^j(m-1-2j)s_{(m-j,1^j)}$.
+The exact partial upper-index swap of the Hessian gives the collision
+mean limit. Sixth sphere moments make triple edges negligible.
+Keeping the exact 24 and six pairing sums yields the finite hook formula;
+stars-and-bars sums of the untruncated hook weights give $F(N,m)$.
+The discarded hook tail is exponentially small at $m/N$ in a positive
+compact interval. Jensen then bounds $B/G$ away from zero, transferring
+the classical Gaussian exponential rate.
+\end{proof}
+
+The limiting collision distribution and exact limiting $B/G$ remain open;
+a proposed Poisson law of mean $2\alpha^2$ would imply $B/G\to e^{-\alpha^2}$.
+The proved first moment and negligible triples do not establish that law.
+For a flat unitary, unitarity forces the remaining signed sector to equal
+$-B_{N,m}+O(N^2)$. Obtaining its $O(N)$ CUE remainder, extending the sharp
+flat comparison to the actual non-flat profile, and proving the full
+every-order signed hierarchy remain distinct unresolved obligations.

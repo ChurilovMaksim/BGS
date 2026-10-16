@@ -1,5 +1,21 @@
 # Open mathematical obligations
 
+## After the 16 October Abel/Gaussian continuation
+
+The [Abel theorem](abel_clock_rigidity_20261016.md) closes quantitative stability
+of the clock floor, with optimal exponent 1/2; it does not estimate the physical
+excess. The [flat equal-edge theorem](gaussian_equal_edge_20261016.md) closes
+Gaussian relative comparison for every m=o(N), exact exponential growth at
+m/N->alpha, the first collision moment and negligible triples.
+
+Still open are the full Wick collision law and exact Heisenberg ratio, extension
+to the actual non-flat profile, and above all the physical signed polynomial
+remainder and every-order hierarchy TRACE-005. A Poisson law of mean 2alpha^2
+and ratio exp(-alpha^2) are conjectural, not established by their first moment
+or by the C++ samples. The next precise technical discriminator is recorded in
+[the checkpoint](../record/research_continuation_20261016.md).
+
+
 ## Research-record integration, 16 October 2026
 
 [Exact review and 90-entry inventory](../record/chat_integration_20261016.md).

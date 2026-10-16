@@ -356,3 +356,15 @@ The following scoped nodes extend the JSON DAG. Their premises do not assert the
 | BGS-TRACE-089 | BGS-TRACE-088 |
 | BGS-TRACE-090 | Finite unitary spectral algebra |
 | BGS-TRACE-091 | BGS-TRACE-007, BGS-TRACE-090 |
+
+## Abel/Gaussian continuation after the import
+
+| Claim | Mathematical inputs and scope |
+|---|---|
+| BGS-TRACE-092 | Self-contained Fourier minorant, stationary gap measure and coupling; the prior clock minimum is rederived. |
+| BGS-TRACE-093 | Classical finite Ginibre kernel and benchmark, self-contained Fock/hook/sphere argument; exactly flat positive sector. |
+
+These two nodes have no inherited physical prerequisites. The machine-readable
+DAG adds no edge from them to the still-open BGS terminal claims. Earlier
+TRACE-089 retains its original proof and range; TRACE-093 supplies the stronger
+flat comparison without its Harer--Zagier dependency.

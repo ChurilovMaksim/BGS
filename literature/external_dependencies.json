@@ -930,6 +930,42 @@
         "mathematics/collision_crossover_20261015.md",
         "literature/chat_integration_sources_20261016.md"
       ]
+    },
+    {
+      "id": "EXT-KPSS-2002",
+      "authors": [
+        "Charlotte Kristjansen",
+        "Jan Plefka",
+        "Gordon W. Semenoff",
+        "Matthias Staudacher"
+      ],
+      "title": "A New Double-Scaling Limit of N=4 Super Yang-Mills Theory and PP-Wave Strings",
+      "identifier": "arXiv:hep-th/0205033v2",
+      "pinned_version": "v2 (3 June 2002)",
+      "locator": "Equations (2.4), (2.8), Appendix A; PDF pp.5,7,20-22",
+      "checked_on": "2026-10-16",
+      "mapping": "Classical unscaled complex-Gaussian trace second moment with factor 1/(m+1), stated there for N>m, and the known sinh BMN crossover. Project independently specializes the exact Ginibre kernel and extends its finite formula to m>=N; no claimed priority for the Gaussian crossover or any deterministic spectral theorem.",
+      "project_sources": [
+        "mathematics/gaussian_equal_edge_20261016.md",
+        "literature/abel_gaussian_sources_20261016.md"
+      ]
+    },
+    {
+      "id": "EXT-BF-2023",
+      "authors": [
+        "Sung-Soo Byun",
+        "Peter J. Forrester"
+      ],
+      "title": "Progress on the study of the Ginibre ensembles I: GinUE",
+      "identifier": "arXiv:2211.16223v3",
+      "pinned_version": "v3 (12 January 2023)",
+      "locator": "Propositions 2.1-2.2, equations (2.3), (2.9)-(2.10)",
+      "checked_on": "2026-10-16",
+      "mapping": "Standard complex Ginibre eigenvalue PDF normalization and determinantal kernel. Project supplies the monomial integration, Schur norm specialization, finite trace benchmark and subsequent Fock/Haar bounds; this external source does not establish the flat-sector comparison or physical BGS.",
+      "project_sources": [
+        "mathematics/gaussian_equal_edge_20261016.md",
+        "literature/abel_gaussian_sources_20261016.md"
+      ]
     }
   ]
 }

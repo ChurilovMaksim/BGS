@@ -1,5 +1,12 @@
 # Exponentially large equal-edge contributions at Heisenberg times
 
+**Subsequent flat-class continuation:** [BGS-TRACE-093](gaussian_equal_edge_20261016.md)
+proves Gaussian comparison for every m=o(N), the exact exponential rate at
+m/N->alpha>0 and the Wick collision mean. The present proof and its non-flat
+hypotheses retain their original scope. The classical Gaussian crossover is
+credited to Kristjansen--Plefka--Semenoff--Staudacher (2002).
+
+
 **Stable claim:** `BGS-TRACE-088`. **Integration review:** 16 October 2026, author self-review.
 
 **Exact scope:** Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector.

@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact integers and rational fractions",
+  "rooted_words": 117268,
+  "edge_tables": 9250,
+  "word_enumeration_cases": 38,
+  "permutation_join_checks": 35442,
+  "one_circuit_word_checks": 430,
+  "samples": [
+    {
+      "N": 3,
+      "m": 4,
+      "B_over_G": "101/168"
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "B_over_G": "457/1728"
+    },
+    {
+      "N": 3,
+      "m": 8,
+      "B_over_G": "72613/739200"
+    },
+    {
+      "N": 5,
+      "m": 4,
+      "B_over_G": "163/200"
+    },
+    {
+      "N": 5,
+      "m": 6,
+      "B_over_G": "581/1056"
+    }
+  ],
+  "large_exact_upper_bounds": [
+    {
+      "N": 100003,
+      "m": 316,
+      "relative_deficit_upper_rational": "16658558415555/1672234143206210638",
+      "relative_deficit_upper_decimal": 9.961857604231898e-06
+    },
+    {
+      "N": 100003,
+      "m": 2000,
+      "relative_deficit_upper_rational": "6837218395299850/850152510040287003",
+      "relative_deficit_upper_decimal": 0.008042343361399766
+    },
+    {
+      "N": 1000000007,
+      "m": 100000,
+      "relative_deficit_upper_rational": "98215179812504822124996250/1785892917861965055400361453700009",
+      "relative_deficit_upper_decimal": 5.49949993250917e-08
+    },
+    {
+      "N": 1000000007,
+      "m": 1000000,
+      "relative_deficit_upper_rational": "6256256325118787462987499737500/12512500425337505390525030184000063",
+      "relative_deficit_upper_decimal": 0.0005000004885074787
+    }
+  ],
+  "source_sha256": "7b81608579c0a44df428b3c463fbdaa027ea19f145ad205b49ee64571289b4a6",
+  "nonclaims": [
+    "No finite check proves an asymptotic theorem.",
+    "No physical fixed-unitary signed statistic is evaluated.",
+    "No extension beyond m=o(N^(3/4)) is certified."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "bgs-cpp-replay-v1",
+  "status": "PASS",
+  "source_sha256": "bb0fe4f8fc03ac9be2665e271c03de5a5f0d3d2de116469dd02d7988409aa07a",
+  "compiler_command": "g++ -std=c++20 -O3 computations/verification/research_20261016/sample_conditioned_ewens.cpp -o /tmp/bgs-ewens-20261016",
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "run_command": "/tmp/bgs-ewens-20261016 100 100 20000 20261016",
+  "result_sha256": "747f2076f481f96a1c923d444e38482bc3a4ae06751c9d1a5644274d3377d6c4",
+  "matches_saved_N100_m100_run": true,
+  "scope": "Bounded exploratory conditional Wick model; empirical standard errors, no asymptotic law proof."
+}

@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "arithmetic": "integer Gaussian polynomial norms and rationals",
+  "covered_cases": [
+    {
+      "N": 2,
+      "m": 3,
+      "monomials": 4,
+      "S_norm_over_h_m": "42/5",
+      "collision_mean": "6/5"
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "monomials": 6,
+      "S_norm_over_h_m": "46/3",
+      "collision_mean": "8/3"
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "monomials": 8,
+      "S_norm_over_h_m": "170/7",
+      "collision_mean": "95/21"
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "monomials": 11,
+      "S_norm_over_h_m": "141/4",
+      "collision_mean": "137/20"
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "monomials": 14,
+      "S_norm_over_h_m": "434/9",
+      "collision_mean": "434/45"
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "monomials": 11,
+      "S_norm_over_h_m": "54/5",
+      "collision_mean": "3/5"
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "monomials": 24,
+      "S_norm_over_h_m": "388/21",
+      "collision_mean": "10/7"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "monomials": 48,
+      "S_norm_over_h_m": "795/28",
+      "collision_mean": "5/2"
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "monomials": 95,
+      "S_norm_over_h_m": "121/3",
+      "collision_mean": "153/40"
+    },
+    {
+      "N": 3,
+      "m": 7,
+      "monomials": 174,
+      "S_norm_over_h_m": "2443/45",
+      "collision_mean": "1463/270"
+    },
+    {
+      "N": 4,
+      "m": 3,
+      "monomials": 24,
+      "S_norm_over_h_m": "228/17",
+      "collision_mean": "6/17"
+    },
+    {
+      "N": 4,
+      "m": 4,
+      "monomials": 70,
+      "S_norm_over_h_m": "151/7",
+      "collision_mean": "6/7"
+    },
+    {
+      "N": 4,
+      "m": 5,
+      "monomials": 196,
+      "S_norm_over_h_m": "680/21",
+      "collision_mean": "65/42"
+    },
+    {
+      "N": 4,
+      "m": 6,
+      "monomials": 538,
+      "S_norm_over_h_m": "453/10",
+      "collision_mean": "12/5"
+    },
+    {
+      "N": 5,
+      "m": 3,
+      "monomials": 45,
+      "S_norm_over_h_m": "210/13",
+      "collision_mean": "3/13"
+    },
+    {
+      "N": 5,
+      "m": 4,
+      "monomials": 165,
+      "S_norm_over_h_m": "124/5",
+      "collision_mean": "14/25"
+    },
+    {
+      "N": 5,
+      "m": 5,
+      "monomials": 599,
+      "S_norm_over_h_m": "1525/42",
+      "collision_mean": "65/63"
+    },
+    {
+      "N": 6,
+      "m": 3,
+      "monomials": 76,
+      "S_norm_over_h_m": "702/37",
+      "collision_mean": "6/37"
+    },
+    {
+      "N": 6,
+      "m": 4,
+      "monomials": 336,
+      "S_norm_over_h_m": "3466/123",
+      "collision_mean": "16/41"
+    },
+    {
+      "N": 6,
+      "m": 5,
+      "monomials": 1500,
+      "S_norm_over_h_m": "18570/461",
+      "collision_mean": "335/461"
+    }
+  ],
+  "trace_monomials": 3944,
+  "explicit_eighth_sphere_pairings": 216,
+  "explicit_sixth_sphere_pairings": 54,
+  "hook_ratio_checks": 3160,
+  "larger_exact_collision_means": [
+    {
+      "N": 64,
+      "m": 32,
+      "mean_display": 0.44822045010793715,
+      "limiting_reference_display": 0.5,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 64,
+      "m": 64,
+      "mean_display": 1.9069256388116633,
+      "limiting_reference_display": 2.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 64,
+      "m": 128,
+      "mean_display": 7.77542989731279,
+      "limiting_reference_display": 8.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 128,
+      "m": 64,
+      "mean_display": 0.473400792946329,
+      "limiting_reference_display": 0.5,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 128,
+      "m": 128,
+      "mean_display": 1.9532716161559927,
+      "limiting_reference_display": 2.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 128,
+      "m": 256,
+      "mean_display": 7.889047557195803,
+      "limiting_reference_display": 8.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 256,
+      "m": 128,
+      "mean_display": 0.48651653320914023,
+      "limiting_reference_display": 0.5,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 256,
+      "m": 256,
+      "mean_display": 1.9765961597596322,
+      "limiting_reference_display": 2.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 256,
+      "m": 512,
+      "mean_display": 7.944901994305063,
+      "limiting_reference_display": 8.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 512,
+      "m": 256,
+      "mean_display": 0.4932114536611215,
+      "limiting_reference_display": 0.5,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 512,
+      "m": 512,
+      "mean_display": 1.9882892769063427,
+      "limiting_reference_display": 2.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    },
+    {
+      "N": 512,
+      "m": 1024,
+      "mean_display": 7.972551550043828,
+      "limiting_reference_display": 8.0,
+      "arithmetic": "exact Fraction evaluation; decimals are displays"
+    }
+  ],
+  "source_sha256": "87bd76d1bc2932b158b7e1c81bb38f328b1be4edd93cbe52df9f5389310cd64e",
+  "scope": "Finite algebra only; theorem proof is the accompanying Markdown."
+}
