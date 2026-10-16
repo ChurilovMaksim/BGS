@@ -20,7 +20,7 @@ excess limits remain unproved. Resonance deletion is sufficient only.
 - **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](mathematics/hardy_spectral_remainder_20261015.md); proved within its stated scope.
 
 
-**Current scientific status, 14 October 2026:** the unchanged fixed-strength
+**Current scientific status, 16 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
