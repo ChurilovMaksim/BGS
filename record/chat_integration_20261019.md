@@ -52,3 +52,18 @@ The new verifier checks every imported byte, all manifest dispositions, Python s
 ## Remaining research
 
 Compute the full (3,3,3) connected source without fitting its value to CUE. Establish a general open-channel cancellation starting with (4,3,5), control all remaining types in one summable remainder, establish the mixed trace hierarchy, and prove transfer to the unchanged frozen family. Fixed-channel identification under G/TC remains open as a distinct route. The positive-source result explains why one-sided Cauchy averaging does not supply that missing joint law.
+
+## Publication verification
+
+The reviewed source tree was published as
+[c49e351](https://github.com/ChurilovMaksim/BGS/commit/c49e351f3838d388829f1a7cd46a474b8820fc5f).
+Its Git tree hash exactly matched the locally reconstructed full tree; all
+707 changes and all unmodified remote paths are accounted for.
+[Publication and workflow receipt](../evidence/executions/20261019/repository-integration/publication_c49e351.json).
+
+Both remote workflows reported failure before any code step executed: five
+startup jobs have runner_id=0 and empty steps, and three dependent jobs are
+skipped. The connector did not expose the underlying annotation reason.
+These records supply no remote regression, formalization or manuscript result.
+The local scoped integrity check and three-pass 311-page manuscript build
+passed. The publication receipt is separate from proof validation.
