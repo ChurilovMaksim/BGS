@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-ALL-INDIVIDUAL-DEFECT-ONE-TWO-CLUSTERS-20261019",
+ "mathematics":{
+  "assertion_tested":"Verify full centrality and field independence of the four-port polynomials, exact character jets and L1 norms, direct mixed 7/8/6-port gluing, exact five-index limiting coefficients through h=48 versus certified exponential-quartic integrals, and the integer binomial bound used for the O(1/N) error",
+  "coefficient_domain":"Exact integers and fractions.Fraction; outward rational interval bounds, floats for display only",
+  "conventions":"Includes all neutral clusters and all positive connected clusters of individual defect 1 or 2 in arbitrary numbers; total defect is unbounded; correction is to V_m/m; closed clusters of individual defect 2 vanish exactly for m>8",
+  "inputs":["quartic_checks.py","kernel_run/result.json","two_port_v2_run/result.json","dependencies/three_port_reference.json"],
+  "bounds":{"h_max":48,"tau":["1/20","2/25"],"mixed_port_sizes":[[3,4],[4,4],[2,4]],"root_bisections":64,"exponential_taylor_order":32,"interval_cells":1024,"majorant_endpoint":"1/9","binomial_h_max":30,"binomial_m":"9..64"},
+  "non_claims":["Numerical comparisons do not replace the exact gluing and uniform majorant proof","Individual defects >=3 are not known negligible","No full BGS or frozen-propagator transfer is claimed"]
+ },
+ "execution_artifacts":["quartic_checks.py","kernel_run/result.json","two_port_v2_run/result.json","dependencies/three_port_reference.json","quartic_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],
+ "randomness":{"used":false}
+}

@@ -1,5 +1,14 @@
 # Mathematical proofs
 
+## Circular-phase research, 19 October
+
+[Current theorem account](phase_ensemble_continuation_20261019.md) adopts the
+feedback, trace, neutral-scheme and Cauchy proofs with exact scope.
+[Full second defect](phase_second_defect_20261019.md) and
+[joint quartic sum](phase_quartic_cluster_sum_20261019.md) have different time
+ranges. [The complete imported-source inventory](../record/chat_integration_20261019_inventory.json)
+preserves earlier derivations and unsuccessful runs. BGS remains open.
+
 The canonical theorem sources live at stable paths in this directory.
 [The theorem index](results.md) lists result families;
 [the topic views](topics/README.md) provide reading sequences and dependencies.

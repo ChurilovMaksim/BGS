@@ -1,0 +1,54 @@
+{
+  "claim_id": "BGS-CONNECTED-SECOND-DEFECT-TWO-PORT-KERNEL-20261019-V2",
+  "mathematics": {
+    "assertion_tested": "Compute both boundary channels for every connected order-two, defect-two cluster by exhaustive common-edge path-cover enumeration and compare the physical closed channel with the prior full P22 minus P11 squared over two",
+    "coefficient_domain": "Exact integers, ten prime fields, fractions.Fraction",
+    "conventions": "Connected means K support plus collision blocks is connected; no disconnected two-P11 primitive is included; boundary permutations are identity and transposition",
+    "inputs": [
+      "two_port_kernel_v2.cpp",
+      "dependencies/prior_open_second.cpp",
+      "run_two_port_v2.py"
+    ],
+    "bounds": {
+      "q": "3..12",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "common_edges": 2,
+      "codimension_max": 2
+    },
+    "non_claims": [
+      "Finite computations do not by themselves prove the support or characteristic-transfer lemmas",
+      "This does not control clusters of defect three or greater or prove BGS"
+    ],
+    "implementation_revision": "Same exact enumeration, original-rank gate before scanning collision partitions; previous failed/aborted run retained."
+  },
+  "execution_artifacts": [
+    "two_port_kernel_v2.cpp",
+    "dependencies/prior_open_second.cpp",
+    "run_two_port_v2.py",
+    "two_port_contract_v2.json"
+  ],
+  "software": [
+    {
+      "name": "Python standard library",
+      "version": "3.12.14"
+    },
+    {
+      "name": "g++",
+      "version": "13.3.0"
+    }
+  ],
+  "randomness": {
+    "used": false
+  }
+}

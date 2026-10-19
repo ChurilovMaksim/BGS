@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -984,6 +984,23 @@
         "literature/wick_poisson_sources_20261016.md"
       ],
       "source_url": "https://arxiv.org/html/math-ph/0402073v1"
+    },
+    {
+      "id": "EXT-STANLEY-1981",
+      "authors": [
+        "Richard P. Stanley"
+      ],
+      "title": "Factorization of permutations into n-cycles",
+      "identifier": "DOI:10.1016/0012-365X(81)90224-7",
+      "pinned_version": "Discrete Mathematics 37 (1981), 255-262, author-hosted published copy",
+      "locator": "Section 2, Lemmas 2.1-2.2 and Theorem 3.1, printed pages 256-257",
+      "checked_on": "2026-10-19",
+      "mapping": "Classical long-cycle character convolution and hook character data used in the all-count cluster gluing. Project supplies port weights, beta integration, original cumulants and convergence bounds; this source supplies no BGS universality result.",
+      "project_sources": [
+        "mathematics/phase_quartic_cluster_sum_20261019.md",
+        "literature/phase_ensemble_sources_20261019.md"
+      ],
+      "source_url": "https://math.mit.edu/~rstan/pubs/pubfiles/47.pdf"
     }
   ]
 }

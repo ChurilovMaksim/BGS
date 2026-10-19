@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-THREE-PORT-PRIMITIVE-KERNEL-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_port_kernel.py",
+    "port_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Split the complete h=2,e=3 primitive polynomial into the identity and oriented 3-cycle boundary-path permutation channels; determine whether each vanishes at z=1 before boundary closure",
+    "coefficient_domain": "Exact integers, F_3,F_5,F_13, fractions.Fraction",
+    "conventions": "Cut the three common oriented edges; label sigma paths by ascending starting vertices; pi maps a tau-path start label to its sigma-path end label; weights scaled by 12; P(z)=sum_q W(q)z^q/q",
+    "inputs": [
+      "port_kernel.cpp",
+      "dependencies/prior_open_second.cpp",
+      "dependencies/primitive_defect.cpp",
+      "dependencies/primitive_reference.json",
+      "run_port_kernel.py"
+    ],
+    "bounds": {
+      "q": "3..12",
+      "cycles": 43954712,
+      "fields": [
+        3,
+        5,
+        13
+      ],
+      "partition_codimension_max": 2
+    },
+    "non_claims": [
+      "Reuses the old rank, cycle-orbit and neutral-detection routines; not independent review",
+      "The all-q completeness is inherited from the separate rank-four support proof",
+      "A scalar closed-kernel zero does not imply a tensor zero",
+      "Does not prove the next defect or BGS"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T07:05:59.549301+00:00",
+    "runtime_seconds": 32.78202,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 18000,
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 140,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "port_kernel.cpp",
+    "dependencies/prior_open_second.cpp",
+    "dependencies/primitive_defect.cpp",
+    "dependencies/primitive_reference.json",
+    "run_port_kernel.py",
+    "port_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "port_kernel.cpp",
+      "sha256": "e89d47db3282297b7b21a3a2ed94dbc84659113a2dbe096e80b8ca4b5d7f5448",
+      "sha256_after": "e89d47db3282297b7b21a3a2ed94dbc84659113a2dbe096e80b8ca4b5d7f5448"
+    },
+    {
+      "path": "dependencies/prior_open_second.cpp",
+      "sha256": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8",
+      "sha256_after": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8"
+    },
+    {
+      "path": "dependencies/primitive_defect.cpp",
+      "sha256": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9",
+      "sha256_after": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9"
+    },
+    {
+      "path": "dependencies/primitive_reference.json",
+      "sha256": "d289488b4e173920b650d5211bb43ae415c6fefd919a5193dc9b8fe07414d6a2",
+      "sha256_after": "d289488b4e173920b650d5211bb43ae415c6fefd919a5193dc9b8fe07414d6a2"
+    },
+    {
+      "path": "run_port_kernel.py",
+      "sha256": "c48bdacf9df2205b04fe57641429144a8ab1e69f97a9e1a11058e74e8000315c",
+      "sha256_after": "c48bdacf9df2205b04fe57641429144a8ab1e69f97a9e1a11058e74e8000315c"
+    },
+    {
+      "path": "port_contract.json",
+      "sha256": "cf50799f72ce866a71e683a8baa5c03d1346ec38360ae69cbaff192b6db8ebd9",
+      "sha256_after": "cf50799f72ce866a71e683a8baa5c03d1346ec38360ae69cbaff192b6db8ebd9"
+    }
+  ],
+  "output_directory": "port_run",
+  "declared_results": [
+    "port_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "port_run/stdout.txt",
+      "sha256": "38605bfbe69f66c2b0cd0e358a6276965cbf2ea8409ac6fc5e278fa8eeb58ac1",
+      "kind": "log"
+    },
+    {
+      "path": "port_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "port_run/result.json",
+      "sha256": "6d8e557aa0f6c33812be2aa0782b99869ae121d403f00df50cb9017ee0ed7f0e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ATTEMPT-20261018-SECULAR",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_secular.py",
+    "run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite-field rank formula and the all-order limiting generating series for phase-averaged squared secular coefficients of symplectic Fourier unitaries",
+    "coefficient_domain": "Integers, rational numbers, finite fields F_3 and F_5, and exact cyclotomic arithmetic; no floating approximation",
+    "conventions": "P_sigma[i,sigma(i)]=1; A_sigma=P_sigma-P_sigma^T; symplectic Fourier S_xy=N^(-1/2) omega^Omega(x,y); c_N,k=E|e_k(DS)|^2",
+    "inputs": [
+      "verify_secular.py"
+    ],
+    "bounds": {
+      "rank_polynomials": "p=3,5; k=0..7; conjugacy classes for sigma, all tau",
+      "independent_phase_signature_enumeration": "k=0..8; all permutations",
+      "formal_series_recurrence": "k=0..40",
+      "physical_principal_minors": "(p,d)=(3,1), k=0..5; (5,1), k=0..3; (3,2), k=3",
+      "negative_control": "Replacing finite-field ranks by zero must fail at k=3"
+    },
+    "non_claims": [
+      "The finite run is not an asymptotic proof; the separate note supplies the proof",
+      "Global secular coefficients do not identify the two-channel transmission law",
+      "No BGS proof, admissible transmission counterexample, literature priority, or formal verification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T05:04:49.386680+00:00",
+    "runtime_seconds": 2.674567,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_secular.py",
+    "contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_secular.py",
+      "sha256": "9286fda5014b9291b5a7f8e90f8b864ecef2c36a1e289be76cb5a2fc6ffcc15f",
+      "sha256_after": "9286fda5014b9291b5a7f8e90f8b864ecef2c36a1e289be76cb5a2fc6ffcc15f"
+    },
+    {
+      "path": "contract.json",
+      "sha256": "c597e23ef19e6f0975f14bf82d40f54b41f044912775171fe0875d2e6b29a321",
+      "sha256_after": "c597e23ef19e6f0975f14bf82d40f54b41f044912775171fe0875d2e6b29a321"
+    }
+  ],
+  "output_directory": "run",
+  "declared_results": [
+    "run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "run/stdout.txt",
+      "sha256": "bcdcb274a4af88f1b9d8b846a559affe02667ca9f2b77f85cac687c704d55990",
+      "kind": "log"
+    },
+    {
+      "path": "run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "run/result.json",
+      "sha256": "c64db72e02c4166df08d3f6b2475e63871c0a9d6d77d12e0423975e6821cbe2c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

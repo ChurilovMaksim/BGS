@@ -36,6 +36,7 @@ mechanisms and historical context remain authoritative in
 | `ERR-028` | Hardy identities for self-inversive polynomials alone | hypotheses restricted to unitary characteristic polynomials | All polynomial roots must lie on the unit circle |
 | `ERR-029` | Sampled Toeplitz contraction without grid-size condition | require M>=N | Discrete Fourier compression proof corrected |
 | `ERR-030` | Mesoscopic initial arc endpoint and separate all-order UI premise | right endpoint included; every-order UI derived | Corrected checker retained; weaker premises still need their own UI |
+| `ERR-031` | Original failed transmission run has stale input provenance | historical failed run not reproducible as issued; successful v2 remains valid | No mathematical conclusion relies on the failed original; preserved manifest is marked stale, not recertified |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

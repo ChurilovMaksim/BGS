@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "green": [
+    {
+      "n": 2,
+      "three_label_frobenius_identities": 4,
+      "diagonal_projector_identity": 1,
+      "reversal_feedback_identities": 6,
+      "old_green_exists": false,
+      "green_compressions": 0,
+      "ordered_inverse_expansions": 0,
+      "excluded_inverse_cases": []
+    },
+    {
+      "n": 3,
+      "three_label_frobenius_identities": 4,
+      "diagonal_projector_identity": 1,
+      "reversal_feedback_identities": 9,
+      "old_green_exists": true,
+      "green_compressions": 3,
+      "ordered_inverse_expansions": 0,
+      "excluded_inverse_cases": [
+        {
+          "port": 0,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 0,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 0,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 1,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 1,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 1,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 2,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 2,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        },
+        {
+          "port": 2,
+          "reason": "I-Bprime singular; outside inverse-identity domain"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "three_label_frobenius_identities": 4,
+      "diagonal_projector_identity": 1,
+      "reversal_feedback_identities": 12,
+      "old_green_exists": true,
+      "green_compressions": 4,
+      "ordered_inverse_expansions": 12,
+      "excluded_inverse_cases": []
+    },
+    {
+      "n": 5,
+      "three_label_frobenius_identities": 4,
+      "diagonal_projector_identity": 1,
+      "reversal_feedback_identities": 15,
+      "old_green_exists": true,
+      "green_compressions": 5,
+      "ordered_inverse_expansions": 15,
+      "excluded_inverse_cases": []
+    }
+  ],
+  "cycles": {
+    "K_range": [
+      1,
+      6
+    ],
+    "partition_pair_cases": 209,
+    "advanced_label_permutations_checked": 93663,
+    "nonzero_matching_partition_cases": 29,
+    "coverage": "all integer partition pairs at each K, all K! advanced labelings"
+  },
+  "arithmetic": "exact Q(i) and integer enumeration",
+  "non_claims": [
+    "No asymptotic proof by computation.",
+    "Inverse identities tested only where exact inverses exist.",
+    "Trace-cycle count concerns leading Gaussian model, not Heisenberg powers."
+  ]
+}

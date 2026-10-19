@@ -1,0 +1,24 @@
+{
+  "claim_id": "BGS-ATTEMPT-20261018-SECULAR",
+  "mathematics": {
+    "assertion_tested": "Exact finite-field rank formula and the all-order limiting generating series for phase-averaged squared secular coefficients of symplectic Fourier unitaries",
+    "coefficient_domain": "Integers, rational numbers, finite fields F_3 and F_5, and exact cyclotomic arithmetic; no floating approximation",
+    "conventions": "P_sigma[i,sigma(i)]=1; A_sigma=P_sigma-P_sigma^T; symplectic Fourier S_xy=N^(-1/2) omega^Omega(x,y); c_N,k=E|e_k(DS)|^2",
+    "inputs": ["verify_secular.py"],
+    "bounds": {
+      "rank_polynomials": "p=3,5; k=0..7; conjugacy classes for sigma, all tau",
+      "independent_phase_signature_enumeration": "k=0..8; all permutations",
+      "formal_series_recurrence": "k=0..40",
+      "physical_principal_minors": "(p,d)=(3,1), k=0..5; (5,1), k=0..3; (3,2), k=3",
+      "negative_control": "Replacing finite-field ranks by zero must fail at k=3"
+    },
+    "non_claims": [
+      "The finite run is not an asymptotic proof; the separate note supplies the proof",
+      "Global secular coefficients do not identify the two-channel transmission law",
+      "No BGS proof, admissible transmission counterexample, literature priority, or formal verification"
+    ]
+  },
+  "execution_artifacts": ["verify_secular.py", "contract.json"],
+  "software": [{"name": "Python", "version": "3.12.14"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "claim_id": "REVIEW-PHASE-JACOBIAN-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_phase_jacobian.py",
+    "jacobian_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python-stdlib-only",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "A nonzero holomorphic phase minor at zero, full real boundary rank, the exact positive rank-one derivative identity and resolvent Gram identity; a scalar singular-rank negative control.",
+    "coefficient_domain": "Q(i), exact Fraction arithmetic and Gaussian elimination.",
+    "conventions": "N=6, external ports 0,1; four rational unit-circle phases; tangent coordinates H00,H11,Re H01,Im H01 (rank coordinates, not an orthonormal-volume normalization).",
+    "inputs": [
+      "One fixed rational unitary made from exact Givens rotations; rational phases listed in the source.",
+      "Poisson laws on U(1) versus their delta boundary limit."
+    ],
+    "bounds": {
+      "N": 6,
+      "m": 2,
+      "internal_variables": 4
+    },
+    "non_claims": [
+      "No finite computation certifies the abstract TV-continuity lemma.",
+      "No uniform density bound or Haar identification."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T12:25:35.823177+00:00",
+    "runtime_seconds": 0.117049,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_phase_jacobian.py",
+    "jacobian_contract.json",
+    "exact_unitaries.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_phase_jacobian.py",
+      "sha256": "af30fa9de77c0e8e9ed149c2c60bb12733d062869893f9c4e173219dcd47d7f6",
+      "sha256_after": "af30fa9de77c0e8e9ed149c2c60bb12733d062869893f9c4e173219dcd47d7f6"
+    },
+    {
+      "path": "jacobian_contract.json",
+      "sha256": "d6fd57e0cd7338041e9199a23465b8ef572730e265f4164d8bb21098cfee6df8",
+      "sha256_after": "d6fd57e0cd7338041e9199a23465b8ef572730e265f4164d8bb21098cfee6df8"
+    },
+    {
+      "path": "exact_unitaries.py",
+      "sha256": "32790c3928dba9aa0cbfef53378c4fb29ae44dc7dc3e717e5239996d77160de4",
+      "sha256_after": "32790c3928dba9aa0cbfef53378c4fb29ae44dc7dc3e717e5239996d77160de4"
+    }
+  ],
+  "output_directory": "jacobian_run",
+  "declared_results": [
+    "jacobian_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "jacobian_run/stdout.txt",
+      "sha256": "a506b2af3ff3f38dfe4faa5c1c8ed2605ba54e5830482ead49fa2f5606e43e56",
+      "kind": "log"
+    },
+    {
+      "path": "jacobian_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "jacobian_run/result.json",
+      "sha256": "7a3e041b00dc336a236a0ca20dbef1eab9dadff0109f80631d2432253dbb45bb",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "matrices": [
+    {
+      "n": 2,
+      "unitary_cases": 1,
+      "feedback_cases": 12,
+      "projector_rank": 2,
+      "arithmetic": "Q(i), exact Fractions",
+      "intensity_replacement_rejected": true
+    },
+    {
+      "n": 3,
+      "unitary_cases": 1,
+      "feedback_cases": 18,
+      "projector_rank": 3,
+      "arithmetic": "Q(i), exact Fractions",
+      "intensity_replacement_rejected": true
+    },
+    {
+      "n": 4,
+      "unitary_cases": 1,
+      "feedback_cases": 24,
+      "projector_rank": 4,
+      "arithmetic": "Q(i), exact Fractions",
+      "intensity_replacement_rejected": true
+    },
+    {
+      "n": 5,
+      "unitary_cases": 1,
+      "feedback_cases": 30,
+      "projector_rank": 5,
+      "arithmetic": "Q(i), exact Fractions",
+      "intensity_replacement_rejected": true
+    }
+  ],
+  "marks": {
+    "cases": 65,
+    "prefixes": 10081,
+    "compatible_ordered_mark_tuples": 57611,
+    "n_range": [
+      3,
+      7
+    ],
+    "mark_range": [
+      1,
+      4
+    ],
+    "u_range": "2..N, marks<=u",
+    "arithmetic": "Q, exact Fractions"
+  },
+  "non_claims": [
+    "Not an asymptotic Gaussian theorem certificate.",
+    "Not a check of upstream trajectory inequalities.",
+    "No fixed-operator BGS conclusion."
+  ]
+}

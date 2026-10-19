@@ -5,29 +5,23 @@ on `main`. It presents the research corpus; the scientific-status authority
 is [the claim ledger](../record/claim_ledger.md), followed by canonical
 mathematical sources under [mathematics/](../mathematics/README.md).
 
-**Current scientific continuation, 12 October 2026:** the
-[Schur section](unified_sections/chat_research_20261011.tex) contains
-conditional equality laws at every fixed clock order, the explicit
-full-depth reference measure and rank atom, conditional intensity/reversal
-gap propagation, the new unitary two-step obstruction with its
-fresh-phase restoring mean drift, and TRACE-076's exact Haar feedback
-law and unconditional entropy-stable clocks. The maintained deterministic
-initial family's all-time flatness probability and microscopic BGS law
-remain open.
-[Clock scope](../record/clock_universality_continuation_20261011.md) ·
-[Unitary obstruction](../record/unitary_two_step_continuation_20261012.md) ·
-[Dynamic companion](../record/two_step_drift_continuation_20261012.md) ·
-[Unconditional clock class](../record/haar_feedback_continuation_20261012.md).
+**Current continuation, 19 October 2026:** the new
+[phase-cluster section](unified_sections/phase_cluster_continuation_20261019.tex)
+records fixed-trace laws, the full four-port cancellation and second-defect sum,
+the joint quartic family for tau<1/9, and the exact positive Cauchy-source boundary.
+[Maintained mathematical sources](../mathematics/phase_ensemble_continuation_20261019.md)
+control its scope. The feedback and fixed-channel implications retain their
+explicit conditional inputs. The frozen-model signed hierarchy and BGS remain open.
 
-The fresh three-pass build has **294 pages**. Its source audit checks 102
-subordinate TeX files, 64 bibliography keys and no missing or duplicate
-references. The actual PDF was parsed, its hash rechecked after completion,
-and selected new pages inspected visually. The
-[current packet](../evidence/executions/20261012/haar-feedback/README.md)
-distinguishes the accepted build from its initial long-display overflow.
-The preceding 291-page drift build, 288-page clock build and older 285/284-page builds
-retain their original source and PDF hashes. No build or selected visual
-inspection certifies every mathematical proof.
+The accepted three-pass build has **311 pages**, with no horizontal overflow
+or unresolved references/citations and unchanged TeX input hashes.
+[Build receipt](../evidence/executions/20261019/repository-integration/manuscript_build_accepted.json)
+and the rejected first-build logs are retained. The rejected build exposed an
+inherited unbreakable source path; only its typesetting was corrected. Earlier page counts and visual checks refer to their original source
+revisions; they do not certify this later section. The 12 October manuscript
+summary's unresolved trajectory premise was subsequently addressed by TRACE-080
+in its explicit startup/cutoff regime. Microscopic reference identification
+and the fixed propagator remain separate open obligations.
 
 The [scientific corpus atlas](../docs/corpus_atlas.md) maps the seven
 principal subject areas to their canonical proofs, bibliography and evidence

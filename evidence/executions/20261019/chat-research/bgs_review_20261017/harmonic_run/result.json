@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "method": "Exact Weyl dimensions and the interlacing branching rule; no simulation.",
+  "cases": [
+    {
+      "m": 2,
+      "balanced_weights_tested": 6
+    },
+    {
+      "m": 3,
+      "balanced_weights_tested": 18
+    },
+    {
+      "m": 4,
+      "balanced_weights_tested": 45
+    },
+    {
+      "m": 5,
+      "balanced_weights_tested": 81
+    },
+    {
+      "m": 6,
+      "balanced_weights_tested": 118
+    }
+  ],
+  "total_weights": 268,
+  "counterexample": {
+    "lambda": [
+      2,
+      2,
+      -2,
+      -2
+    ],
+    "a_exact": "193/525",
+    "sphere_a_exact": "4/11",
+    "circle_probabilities_exact": {
+      "2": "1/7",
+      "1": "8/35",
+      "0": "9/35",
+      "-1": "8/35",
+      "-2": "1/7"
+    }
+  },
+  "non_claims": [
+    "Finite branching controls do not prove all highest-weight inequalities.",
+    "No bound on an unknown coherent density or its harmonic remainder."
+  ]
+}

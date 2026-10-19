@@ -1,0 +1,23 @@
+{
+  "claim_id": "BGS-ATTEMPT-20261018-TRACE-LAW",
+  "mathematics": {
+    "assertion_tested": "The rank-zero permutation count agrees with the proposed complete fixed-trace mixed-moment law; independent finite phase-polynomial controls check repeated-index bookkeeping",
+    "coefficient_domain": "Exact integers, fractions, cyclotomic roots, and finite-field ranks; no floating approximation",
+    "conventions": "Total retarded length L equals total advanced length; physical phase Fourier projection uses matching vertex occupation; complex Gaussian has E|Z|^2=1",
+    "inputs": ["verify_trace_hierarchy.py", "verify_secular.py"],
+    "bounds": {
+      "rank_zero_counts": "Every pair of integer partitions of L, L=0..8; all permutations in S_L",
+      "physical_phase_polynomials": "N=9, p=3,d=1, traces 1..4; N=25,p=5,d=1, traces 1..3",
+      "finite_moment_controls": "Explicit trace monomials of weighted degree at most four listed in code",
+      "negative_control": "A Gaussian independent trace-two coordinate must be rejected by E[t_1^2 conjugate(t_2)] != 0"
+    },
+    "non_claims": [
+      "Finite checks do not replace the uniform proof in secular_hierarchy_ru.md",
+      "No Heisenberg-power law or two-port transmission identification",
+      "No BGS solution or formal proof assistant certificate"
+    ]
+  },
+  "execution_artifacts": ["verify_trace_hierarchy.py", "verify_secular.py", "trace_contract.json"],
+  "software": [{"name": "Python", "version": "3.12.14"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

@@ -1,5 +1,16 @@
 # Trace identities and microscopic limits
 
+## Circular-phase continuation, 19 October
+
+[Adopted trace/feedback account](../../phase_ensemble_continuation_20261019.md),
+[neutral schemes](../../phase_neutral_primitives_20261019.md),
+[saturated support classification](../../phase_extremal_graphs_20261019.md),
+[complete second defect](../../phase_second_defect_20261019.md),
+[joint quartic sum](../../phase_quartic_cluster_sum_20261019.md),
+[Cayley correspondence](../../phase_cayley_cauchy_transfer_20261019.md) and
+[positive Cauchy-source boundary](../../cauchy_positive_source_boundary_20261019.md).
+All retain their auxiliary scope; fixed-model BGS remains open.
+
 - [Complete Heisenberg Wick collision law, exact flat ratio and geometric visits](../../wick_collision_poisson_20261016.md).
 
 ## Checked Abel/Gaussian continuation, 16 October

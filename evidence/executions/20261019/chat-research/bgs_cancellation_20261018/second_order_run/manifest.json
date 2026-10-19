@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-SIGNED-SECOND-COEFFICIENT-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_second_order.py",
+    "second_order_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact coefficients of N^(-1), N^(-2) in actual circular-phase trace variance; truncated collision expansion, discarding original rank above four only by the codimension rank-drop inequality",
+    "coefficient_domain": "Exact signed 64-bit integers and Python Fraction over F_3,F_5,F_13",
+    "conventions": "Coefficient of variance/m at order two is n4 - pair_rank2/2 + 2 triple_rank0/3 + disjoint_pair_rank0/4; cyclic orbit coverage is checked against (m-1)!",
+    "inputs": [
+      "second_order.cpp",
+      "verify_second_order.py",
+      "signed_run_v2/result.json"
+    ],
+    "bounds": {
+      "enumeration": "p=3,5,13 m=3..10, additionally p=13 m=11",
+      "overlap": "All available overlapping full-polynomial results"
+    },
+    "non_claims": [
+      "No all-orders or growing-m cancellation from a finite coefficient table",
+      "No asymptotic BGS inference"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T12:26:30.975562+00:00",
+    "runtime_seconds": 4.228518,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 16000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "second_order.cpp",
+    "verify_second_order.py",
+    "signed_run_v2/result.json",
+    "second_order_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "second_order.cpp",
+      "sha256": "3baf14620fa3a5dd8b6e0e070a7fc2556db8f7739d3fd28bc3fe4cc4300fa64e",
+      "sha256_after": "3baf14620fa3a5dd8b6e0e070a7fc2556db8f7739d3fd28bc3fe4cc4300fa64e"
+    },
+    {
+      "path": "verify_second_order.py",
+      "sha256": "bd08ed51fc79a1c69e3ca1a7e3c99443d8cb435139761ecc539505e00bb46314",
+      "sha256_after": "bd08ed51fc79a1c69e3ca1a7e3c99443d8cb435139761ecc539505e00bb46314"
+    },
+    {
+      "path": "signed_run_v2/result.json",
+      "sha256": "6d424e3e90d42202042cd13952a7cb73931f57e410c5c32cd5ae8e351bccfaf9",
+      "sha256_after": "6d424e3e90d42202042cd13952a7cb73931f57e410c5c32cd5ae8e351bccfaf9"
+    },
+    {
+      "path": "second_order_contract.json",
+      "sha256": "e5ef0180b1f5400bbbb0e5eca226ad65944a8907571dd55152c9f424ad631a18",
+      "sha256_after": "e5ef0180b1f5400bbbb0e5eca226ad65944a8907571dd55152c9f424ad631a18"
+    }
+  ],
+  "output_directory": "second_order_run",
+  "declared_results": [
+    "second_order_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "second_order_run/stdout.txt",
+      "sha256": "b82c1df7915191e65af229fbe5feb413673a89db036170b4b2e3bcc36cf32cf9",
+      "kind": "log"
+    },
+    {
+      "path": "second_order_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "second_order_run/result.json",
+      "sha256": "190d67ddb82a285c5feb849342b84b8a9760a8258213d6379e304ba18deb9f50",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

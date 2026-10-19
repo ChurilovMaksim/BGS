@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "original_sha256": "4440d3c931195cdd837192f97ad07501a290649d18c5d1f88a4afaac4d111ef4",
+  "original_unchanged": true,
+  "formula_tag_occurrences": 597,
+  "unique_original_formula_tags": 591,
+  "duplicate_original_tags": {
+    "CE1": 2,
+    "CE2": 2,
+    "CE3": 2,
+    "CE4": 2,
+    "CE5": 2,
+    "CE6": 2
+  },
+  "python_blocks": [
+    {
+      "start_line": 942,
+      "source_sha256": "5504ecc32e4d51f4c2e311b22db2d85908a8d44ff0bc751f56223fd560e259dc",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 2273,
+      "source_sha256": "e58fd943da5decf74681f32d0e60c5146186249e6655ba8fd2d35ebbcdae7f03",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 6246,
+      "source_sha256": "a982206a3017ef6f443230e270944ac6c6a9cd4866d8a33dd22e5cd9073c53c4",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 12881,
+      "source_sha256": "c491f89a52c66876fdb4006f079ea44f7916c3ddc87d169a073877ecdbf5b263",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13403,
+      "source_sha256": "3d95e4550d87a254d84ed5c7460d01ed2889edff680638a3f018b831fb89b058",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13465,
+      "source_sha256": "d2d6fc8214420451ec75f8e8ef4321b272ce422a751cfc42bab10fcd764abcb0",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13484,
+      "source_sha256": "1b9460d54c8b931d0122747b686e4b58487a0c0d56a4f0824c49ee2f4e47927d",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13499,
+      "source_sha256": "6512a8b972fac5e306b8ddb4ddecc53d8e483440d17d8dc813b45173676512ea",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13761,
+      "source_sha256": "5f58ecc26459796688faa0ddfd39f11bb9c8d3a2254ccaba1a16ccb8d719363b",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13922,
+      "source_sha256": "5d57eff5b13eb91de54fa1b8d39ad1f84e2329ad21be5f938c4aea158e483639",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 13954,
+      "source_sha256": "622694ef0826fa7f7eeeab4b25c571fa08b028cb9aba287a718971a6fc11204c",
+      "python_ast": "passed",
+      "executed": false
+    },
+    {
+      "start_line": 14497,
+      "source_sha256": "ce5668e4daeed2d4944117b109da99b95836f24046dbfd766b2ec96c815f297a",
+      "python_ast": "passed",
+      "executed": false
+    }
+  ],
+  "proposed_corrected_unique_tags": 597,
+  "patch_sha256": "8a73036fde66249c3550bb5d00a7c9843bf6710611fe34236b5799b8fa5a7259",
+  "proposed_corrected_file_sha256": "203b350ff4c4022db71677d21aa70a1938a7f65280a4e45574f12b8cf83221ef",
+  "patch_applied_and_compared_on_temporary_copy": true,
+  "latex_compilation_repeated": false,
+  "non_claims": [
+    "AST parsing does not certify the numerical outputs or mathematics.",
+    "The original attachment and BGS were not edited."
+  ]
+}

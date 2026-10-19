@@ -1,0 +1,42 @@
+{
+  "claim_id": "BGS-CAUCHY-POSITIVE-SOURCE-BOUNDARY-20261019-V2",
+  "mathematics": {
+    "assertion_tested": "Finite exact rational two-dimensional inverse, signed-source and density-antiderivative reductions; three PSD-source parameter cases and deterministic bounded Stieltjes quadrature diagnostic",
+    "coefficient_domain": "fractions.Fraction over Q; NumPy float64 quadrature explicitly diagnostic",
+    "conventions": "H=S-diag(t1,t2), S=sigma_x, independent standard Cauchy variables; Q=Tr(A H^-1); no undefined raw Cauchy moments are evaluated",
+    "inputs": [
+      "cauchy_source_checks_v2.py"
+    ],
+    "bounds": {
+      "dimension": 2,
+      "positive_sources": 3,
+      "quadrature_grids": [
+        256,
+        512
+      ],
+      "quadrature_absolute_tolerance": 0.005
+    },
+    "non_claims": [
+      "Quadrature does not prove the contour theorem or any asymptotic law",
+      "The two-dimensional surrogate is not a BGS counterexample",
+      "No independent review or novelty assertion"
+    ]
+  },
+  "execution_artifacts": [
+    "cauchy_source_checks_v2.py",
+    "cauchy_source_contract_v2.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    }
+  ],
+  "randomness": {
+    "used": false
+  }
+}

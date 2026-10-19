@@ -1,5 +1,17 @@
 # Open mathematical obligations
 
+## After the 19 October signed-cluster continuation
+
+The complete second defect and full four-port open zero are now established
+for the special symplectic circular-phase ensemble. Arbitrary counts of all
+individual defects one or two are controlled for tau<1/9. The missing connected
+(3,3,3) source is known only through size nine; no full value is assigned.
+The next saturated type is (4,3,5). A general graph Ward cancellation, a uniform
+sum of all remaining types, all mixed Heisenberg traces and frozen-model transfer
+are still required. [Exact current account](phase_ensemble_continuation_20261019.md).
+Positive Cauchy projections do not determine the needed joint matrix law.
+The fixed-channel route retains its separate G/TC/R hypotheses.
+
 ## After the 16 October Abel/Gaussian continuation
 
 The [Abel theorem](abel_clock_rigidity_20261016.md) closes quantitative stability

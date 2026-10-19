@@ -1,0 +1,19 @@
+{
+  "claim_id": "BGS-GENERIC-BILINEAR-POLYNOMIAL-WINDOW-20261018",
+  "mathematics": {
+    "assertion_tested": "Block-sparse quadratic signature rank, rank loss under vertex identification, and exact complex Gauss-sum formulas for Gaussian mixed moments and weighted collision moments",
+    "coefficient_domain": "Exact F_3,F_5, rational cyclotomic vectors; no floating point",
+    "conventions": "A=[[1,1],[0,1]], Q=(P_sigma-P_tau) tensor A+(P_sigma-P_tau)^T tensor A^T; quadratic phase x^T Q x/2",
+    "inputs": ["verify_generic_window.py", "verify_polynomial_window.py"],
+    "bounds": {
+      "rank_checks": "p=3,5; L=1..5; all sigma cycle types and all tau",
+      "identification_checks": "Every i<j for each tested Q",
+      "physical_controls": "p=3,b=2,d=1,N=9; all pairs of partitions with total L<=3, plus t4 second moment",
+      "negative_control": "Exact E[t1^2 conjugate(t2)] at N=9 is nonreal, so replacing Gauss sums by their positive moduli must fail"
+    },
+    "non_claims": ["Tests do not prove the universal result", "No symmetric-seed extension", "No Heisenberg scale, local BGS, or priority claim"]
+  },
+  "execution_artifacts": ["verify_generic_window.py", "verify_polynomial_window.py", "generic_contract.json"],
+  "software": [{"name":"Python","version":"3.12.14"}],
+  "randomness": {"used":false,"generator":"","seed":null}
+}

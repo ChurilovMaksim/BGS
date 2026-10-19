@@ -1,0 +1,30 @@
+{
+  "star": {
+    "status": "passed",
+    "cases": 25,
+    "rooted_words": 629171,
+    "signs_exact": {
+      "kappa32_alpha3": true,
+      "fourth_matched_alpha5": true
+    }
+  },
+  "current": {
+    "status": "passed",
+    "rational_cases": 12,
+    "rational_identities": 72,
+    "polynomial_cases": 200
+  },
+  "manifest_validation": "Both v2 records validated with current input/output hashes.",
+  "repo": {
+    "baseline_file": "../bgs_focus_20261016/repo_before.json",
+    "baseline_sha256": "178c13baa2cb1e9b408a7cb6de62e5086b56419f71c58e12a6e9254f76e93550",
+    "baseline_files": 716,
+    "current_files": 716,
+    "changed": [],
+    "missing": [],
+    "added": [],
+    "unchanged": true,
+    "git_metadata_present": false
+  },
+  "review": "Adversarial author self-review; no independent or formal certification."
+}

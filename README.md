@@ -4,11 +4,25 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (16 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (19 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
+
+## Signed phase research, 19 October
+
+[The integrated continuation](mathematics/phase_ensemble_continuation_20261019.md)
+records feedback limits, exact trace laws and the signed cluster expansion.
+The [complete second-defect sector](mathematics/phase_second_defect_20261019.md)
+is controlled for $0<\tau<1$. A different [joint cluster theorem](mathematics/phase_quartic_cluster_sum_20261019.md)
+sums arbitrary numbers of clusters of individual defects one or two for
+$0<\tau<1/9$, with uniform $O(N^{-1})$ error. Its correction to $V_m/m$
+starts with $-3\tau^3$; higher connected types remain uncomputed.
+[Exact Cauchy source laws](mathematics/cauchy_positive_source_boundary_20261019.md)
+include an explicit limit on positive-source closure. These are auxiliary
+ensemble results with author self-review. [Proof boundaries, original sources and failed runs](record/chat_integration_20261019.md)
+are preserved; the frozen-model signed hierarchy and BGS remain open.
 
 ## Abel/Gaussian continuation, 16 October
 

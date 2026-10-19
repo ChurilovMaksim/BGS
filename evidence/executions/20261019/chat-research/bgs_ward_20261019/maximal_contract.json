@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-MAXIMAL-PRIMITIVE-UNBOUNDED-DEFECT-20261019",
+ "mathematics":{
+  "assertion_tested":"Exhaustive connection coefficient normalization through n=6, direct nine-port gluing jet for delta=3, whole primitive polynomials for delta=1,2, exact L1 majorant constants, certified cubic integral versus all-defect limiting series through h=80, and untruncated finite-N maximal-family sums",
+  "coefficient_domain":"Integers and fractions.Fraction; every interval bound rational, floats for display only",
+  "conventions":"u identity, v each 3-cycle, t sum of all three transpositions; P_(2delta,delta)=Gamma(3delta)/(2^delta delta!)*integral(f^delta); neutral n unrestricted except exact coefficient support",
+  "inputs":["maximal_check.py","dependencies/full_port_reference.json","dependencies/gluing_reference.json"],
+  "bounds":{"connection_n_max":6,"direct_port_count":9,"limiting_h_max":80,"certified_tau":["1/20","1/10"],"finite_N_cases":[[16,169],[62,625],[96,961]],"finite_z_max":96,"root_bisections":64,"integral_subdivisions":1024},
+  "non_claims":["Finite checks do not replace structural gluing proof","This family overlaps previous P21 and P42 results and must not be added twice","Other primitive families, general tau, deterministic transfer and BGS are not proved"]
+ },
+ "execution_artifacts":["maximal_check.py","dependencies/full_port_reference.json","dependencies/gluing_reference.json","maximal_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],
+ "randomness":{"used":false}
+}

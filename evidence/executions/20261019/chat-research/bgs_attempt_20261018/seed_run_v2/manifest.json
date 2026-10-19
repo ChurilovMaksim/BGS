@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ATTEMPT-20261018-BILINEAR-SEEDS-V2",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_bilinear_seeds_v2.py",
+    "seed_run_v2/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "The exact quadratic-form signatures give the three proposed complete fixed-trace laws for symmetric, antisymmetric, and generic bilinear Fourier tensor seeds",
+    "coefficient_domain": "Exact integers, F_3 and complex cyclotomic rational moments, allowing nonreal finite-size mixed moments; no floating approximation",
+    "conventions": "Seed size b, N=p^(bd), S_xy=N^(-1/2) omega^(x^T (I_d tensor A)y); quadratic signature P_sigma tensor A+P_sigma^T tensor A^T",
+    "inputs": [
+      "verify_bilinear_seeds_v2.py",
+      "verify_secular.py",
+      "verify_trace_hierarchy.py"
+    ],
+    "bounds": {
+      "zero_signature_counts": "p=3, b=2; all three seed types; all partition pairs of L=0..6",
+      "physical_phase_moments": "p=3,d=1; symmetric/antisymmetric/generic b=2 seeds and one generic b=3 seed; trace powers at most three",
+      "negative_control": "The symmetric seed must have B norm one and must not be certified admissible"
+    },
+    "non_claims": [
+      "No local eigenvalue law",
+      "No two-channel transmission result",
+      "No universal theorem for arbitrary flat unitary matrices"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T05:17:08.858816+00:00",
+    "runtime_seconds": 0.216066,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_bilinear_seeds_v2.py",
+    "verify_secular.py",
+    "verify_trace_hierarchy.py",
+    "seed_contract_v2.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_bilinear_seeds_v2.py",
+      "sha256": "813c4bdd3e3bbb12e191cf5dea7eb2221f4d865afe248c50db23b0a52fa63701",
+      "sha256_after": "813c4bdd3e3bbb12e191cf5dea7eb2221f4d865afe248c50db23b0a52fa63701"
+    },
+    {
+      "path": "verify_secular.py",
+      "sha256": "9286fda5014b9291b5a7f8e90f8b864ecef2c36a1e289be76cb5a2fc6ffcc15f",
+      "sha256_after": "9286fda5014b9291b5a7f8e90f8b864ecef2c36a1e289be76cb5a2fc6ffcc15f"
+    },
+    {
+      "path": "verify_trace_hierarchy.py",
+      "sha256": "4d3edaca42e89af3f5f61bd9f66b530f52c69230b71fc4b8ecdd389544158702",
+      "sha256_after": "4d3edaca42e89af3f5f61bd9f66b530f52c69230b71fc4b8ecdd389544158702"
+    },
+    {
+      "path": "seed_contract_v2.json",
+      "sha256": "b09e12cbb44c19b32bbf03e62045cea66d1f84bf42b65faea69a52888bb9436b",
+      "sha256_after": "b09e12cbb44c19b32bbf03e62045cea66d1f84bf42b65faea69a52888bb9436b"
+    }
+  ],
+  "output_directory": "seed_run_v2",
+  "declared_results": [
+    "seed_run_v2/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "seed_run_v2/stdout.txt",
+      "sha256": "ba1d7b3fcd43f67d5eeff9188531611c7fe391892083c31eb4dc857ac6cec29a",
+      "kind": "log"
+    },
+    {
+      "path": "seed_run_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "seed_run_v2/result.json",
+      "sha256": "d0f3af344c36b3cd9d08343bf21e62f2e324d0408604559be05d4b095e9ce938",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

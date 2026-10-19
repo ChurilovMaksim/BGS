@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "claim_id": "WORKING-HIGH-POWER-MOMENT-BARRIER-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_high_power_barrier.py",
+    "high_power_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python-stdlib-only",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact Wick table partition, Gaussian normalization, balanced-table collision deficits, clique word counts, finite exponential-tilt remainder, bounded fourth-moment-matched radial law, and exploratory rate illustration.",
+    "coefficient_domain": "Z and Q; a separately labeled log-factorial illustration uses binary64.",
+    "conventions": "Rooted cyclic vertex words with ordered positions, directed edge counts including loops, h=sum c(nu)^2 product nu!, variance-1/N matrix entries.",
+    "inputs": [
+      "All N=2 vertex words m=1..10 and all N=3 words m=1..8.",
+      "Six complete directed clique tables, (q,L)=(1,1),(1,3),(2,1),(2,2),(2,3),(3,1).",
+      "Independent dynamic word counts at N=2, m=18,24,32.",
+      "Bounded radial law R=4096; Stirling illustrations q=3,9,21,51,101,301."
+    ],
+    "bounds": {
+      "exhaustive_word_N2_m": [
+        1,
+        10
+      ],
+      "exhaustive_word_N3_m": [
+        1,
+        8
+      ],
+      "dynamic_m": [
+        18,
+        24,
+        32
+      ],
+      "maximum_exhaustive_clique_words": 19683,
+      "R": 4096
+    },
+    "non_claims": [
+      "Not a proof certificate of the asymptotic limits or general moment construction.",
+      "No physical, unitary or BGS counterexample.",
+      "No novelty or independent review assertion."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T04:40:29.212037+00:00",
+    "runtime_seconds": 0.117882,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_high_power_barrier.py",
+    "high_power_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_high_power_barrier.py",
+      "sha256": "1780763ab461a32a940a400fe5d3f3f64e1166b70e0db48faccf20163b75f656",
+      "sha256_after": "1780763ab461a32a940a400fe5d3f3f64e1166b70e0db48faccf20163b75f656"
+    },
+    {
+      "path": "high_power_contract.json",
+      "sha256": "bf56e39cdde6e3554f4d3a6f948eef4bd037d63142873808bd56a907e7c1b950",
+      "sha256_after": "bf56e39cdde6e3554f4d3a6f948eef4bd037d63142873808bd56a907e7c1b950"
+    }
+  ],
+  "output_directory": "high_power_run",
+  "declared_results": [
+    "high_power_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "high_power_run/stdout.txt",
+      "sha256": "4d3303356f649081523d09b80d1648c82e41047eab67b11b85d246922fac5f95",
+      "kind": "log"
+    },
+    {
+      "path": "high_power_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "high_power_run/result.json",
+      "sha256": "13ccf3fb2447dbee20eb49cc2dbe3bb69aeec3cd0310ab76e713118957f25961",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

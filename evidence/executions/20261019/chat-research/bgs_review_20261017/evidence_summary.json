@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "exact_mathematical_runs": [
+    {
+      "run": "appendix_run",
+      "claim_id": "REVIEW-TRANSMISSION-APPENDIX-EXACT-20261017",
+      "status": "passed",
+      "manifest_sha256": "4c5c72cd60f3963fd2fc457ba42fe384361247b9d4c5fc7704b8106202678dda",
+      "runtime_seconds": 11.149244,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "bernstein_run",
+      "claim_id": "REVIEW-POSITIVE-BERNSTEIN-PATH-LAW-20261017",
+      "status": "passed",
+      "manifest_sha256": "ec42b95da28af2d7881d1a6c73cac3b5753ef05f994958778635d02d3fc54b7b",
+      "runtime_seconds": 7.847361,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "classical_run",
+      "claim_id": "REVIEW-CLASSICAL-COMPRESSION-ALL-SIZES-20261017",
+      "status": "passed",
+      "manifest_sha256": "81906283c8239bb4fa6cd162e053fdbd7b6170f643fb260c952bbf6329fd0360",
+      "runtime_seconds": 1.270839,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "covariance_run",
+      "claim_id": "REVIEW-HAAR-COVARIANCES-20261017",
+      "status": "passed",
+      "manifest_sha256": "e81d7037f0713d4cdd78edc294a6c8823088cf8e70c9ba29f3b685462fd2ba90",
+      "runtime_seconds": 0.166703,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "harmonic_run",
+      "claim_id": "REVIEW-HARMONIC-CONTRACTION-20261017",
+      "status": "passed",
+      "manifest_sha256": "fd358cd6892aafec0fd65ece1acc50772ccd8e6d05e64b9bd6c08cf8c5714f98",
+      "runtime_seconds": 0.167739,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "jacobian_run",
+      "claim_id": "REVIEW-PHASE-JACOBIAN-20261017",
+      "status": "passed",
+      "manifest_sha256": "47d6de433515c15ab62b94a076b037bb5a224ad9dedf498a31d0d2acc318babd",
+      "runtime_seconds": 0.117049,
+      "pinned_hashes_current": true
+    },
+    {
+      "run": "smoothing_run",
+      "claim_id": "REVIEW-BETA-SMOOTHED-PATH-LAW-20261017",
+      "status": "passed",
+      "manifest_sha256": "b997ce285b43f872ff3b39084d678bf7f3724ab9018d25f71d5ea6dc411a314a",
+      "runtime_seconds": 0.167266,
+      "pinned_hashes_current": true
+    }
+  ],
+  "structure_audit": "structure_audit.json",
+  "original_numeric_tables_rerun": false,
+  "boundary": "Finite controls are not a formal proof of the analytic all-N theorems."
+}

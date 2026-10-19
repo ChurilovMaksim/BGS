@@ -171,3 +171,11 @@ Neither result proves deterministic noise removal or BGS.
 
 Historical source bytes and original claimed execution scopes remain preserved
 in `record/history/2026/chat_20261015/`; current dispositions take precedence.
+
+## ERR-031: stale failed-run input, 19 October 2026
+
+The original failed transmission run from the imported 17 October packet no
+longer has its original source revision at its recorded path. Preserve the
+manifest and mark it stale; do not claim reproduction of that failed revision.
+The separate successful v2 record validates against its preserved inputs.
+[Exact disposition and downstream boundary](chat_integration_20261019.md).

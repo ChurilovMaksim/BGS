@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "claim_id": "WORKING-TRANSMISSION-SPECTRAL-BRIDGE-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_transmission_bridge.py",
+    "transmission_run_v2/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact circle residues for transmission moments, independent closed 2x2 eigenvector averages, uniform-transmission Beta mixture, rational unitary closure and scalar delay derivatives, and sampling normalization.",
+    "coefficient_domain": "Q(i), rational residues and exact symbolic algebra.",
+    "conventions": "Y=J/(1+J), J=T/|1-dw|^2; source eigenvector selection weighted by its squared source component; ordered distinct marked ports.",
+    "inputs": [
+      "Two rational rotation transmissions, powers 1..8, independent eigenvector and scattering residues.",
+      "Uniform-transmission mixture powers 1..16.",
+      "Prescribed rational unitaries of size 2,3,4 and every ordered source/target pair.",
+      "Three rational intensity vectors including one with a zero weight, three test functions."
+    ],
+    "bounds": {
+      "rotation_cases": 2,
+      "kernel_powers": [
+        1,
+        8
+      ],
+      "mixture_powers": [
+        1,
+        16
+      ],
+      "unitary_sizes": [
+        2,
+        3,
+        4
+      ],
+      "arithmetic": "exact, no numerical integration"
+    },
+    "non_claims": [
+      "No asymptotic Porter-Thomas input is proved.",
+      "Finite controls do not certify the complete analytic proof.",
+      "No BGS solution or novelty assertion."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T04:34:07.240263+00:00",
+    "runtime_seconds": 5.53183,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_transmission_bridge.py",
+    "transmission_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_transmission_bridge.py",
+      "sha256": "04ad2c5e9c15b6d2bdb35fb85950361000a96a02635061f6769ee4a9117b6088",
+      "sha256_after": "04ad2c5e9c15b6d2bdb35fb85950361000a96a02635061f6769ee4a9117b6088"
+    },
+    {
+      "path": "transmission_contract.json",
+      "sha256": "663e18098ce57a62b46efa93add2e58ca3305c94f942ef6d405a84d9fc8500f9",
+      "sha256_after": "663e18098ce57a62b46efa93add2e58ca3305c94f942ef6d405a84d9fc8500f9"
+    }
+  ],
+  "output_directory": "transmission_run_v2",
+  "declared_results": [
+    "transmission_run_v2/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "transmission_run_v2/stdout.txt",
+      "sha256": "f3b28a202002dd18e239cf46b13f0beb632e6b467c85f732cd6ed5323e2f5d74",
+      "kind": "log"
+    },
+    {
+      "path": "transmission_run_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "transmission_run_v2/result.json",
+      "sha256": "eed62c4971bba6c062f7e7b3b622348f074aa6d1246204ca9958e0d4f2dec04b",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

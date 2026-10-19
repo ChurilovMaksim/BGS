@@ -1,0 +1,18 @@
+{
+  "base_checkpoint":{"archive":"BGS_signed_cancellations_20261018.zip","sha256":"d5b0c6235688704e7be9d9de96dbb8cffc52f69f4eeb17496c8a97d2897415bc"},
+  "full_goal":"BGS for the stated frozen chaotic family and its signed hierarchy; auxiliary ensembles are not equivalent without transfer",
+  "active_goal":"Actual circular-phase symplectic Fourier form factor at m/N fixed, or an admissible two-channel transmission counterfamily",
+  "repository_policy":"BGS read only; no edits, commits, pushes or integration",
+  "portfolio":[
+    {"id":"A","mechanism":"Resum exact physical orbit/occupation classes before estimates","first_uncertain_implication":"A grouped expression admits a uniform bound through Heisenberg time","discriminator":"Find a grouping with a provably smaller absolute mass than the exact coefficient triangle bound","status":"active"},
+    {"id":"B","mechanism":"Positive Schur energy and microscopic radial clocks","first_uncertain_implication":"Joint scalar reflection/delay law in the 1/N boundary layer is determined by proved feedback controls","discriminator":"Compare exact previous Schur reduction and full-depth clock hypotheses; do not call the existing martingale identity new","status":"active"},
+    {"id":"C","mechanism":"Counterexample test via fixed external basis rotations","first_uncertain_implication":"A non-Haar scattering phase correlation survives in rotated transmission even if coordinate transmission is near uniform","discriminator":"Paired bounded moments of |F12|^2 and |(W F W*)12|^2 for actual phases; prove rotated seeds retain admissibility","status":"active"}
+  ],
+  "known_obstructions":[
+    "Absolute exact coefficients already grow exponentially at m=c sqrt(N), c>e sqrt(2)",
+    "The logdet martingale/dilogarithm identity is already in BGS/mathematics/balanced_pair_schur_reduction.md",
+    "Fixed-time dual-unitary limits do not include Heisenberg plateau and assume different gate ensembles",
+    "Fixed-channel Gaussian marks or boundary Poisson marginal alone do not determine the microscopic law"
+  ],
+  "independent_review":false
+}

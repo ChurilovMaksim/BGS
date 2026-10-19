@@ -1,0 +1,13 @@
+{
+ "claim_id":"BGS-DIRECT-ORDER-FOUR-DEFECT-TWO-CHECK-20261019",
+ "mathematics":{
+  "assertion_tested":"Direct cycle/partition definition of primitive h=4,e=6 cores with two order-two defect-one clusters, compared to the six-port gluing prediction P42 at q<=9",
+  "coefficient_domain":"Integer collision weights scaled by 720, F_3,F_5,F_13, fractions.Fraction",
+  "conventions":"Enumerate every q-cycle tau, every set partition of codimension <=4 by restricted-growth strings; require minimal support and exactly two clusters each j=2,e_i=3; no port gluing assumed in this enumeration",
+  "inputs":["direct_p42.cpp","dependencies/full_rank.cpp","dependencies/gluing_reference.json","run_direct_p42.py"],
+  "bounds":{"q":"6..9","cycles":46200,"fields":[3,5,13],"partition_codimension_max":4},
+  "non_claims":["Does not enumerate all predicted cores up to q=22","Reuses elementary modular-rank code, not independent review","Does not compute connected order-three primitives or the full defect-two sector"]
+ },
+ "execution_artifacts":["direct_p42.cpp","dependencies/full_rank.cpp","dependencies/gluing_reference.json","run_direct_p42.py","direct_p42_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],"randomness":{"used":false}
+}

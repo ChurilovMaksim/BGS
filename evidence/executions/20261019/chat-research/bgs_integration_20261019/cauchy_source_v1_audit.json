@@ -1,0 +1,6 @@
+{
+  "run": "cauchy_source_run/manifest.json",
+  "status": "failed",
+  "reason": "SymPy is not installed in the current runtime; program failed on import before any mathematical assertions.",
+  "correction": "Version 2 uses fractions.Fraction for finite exact algebra and the already installed NumPy for separately labelled quadrature diagnostics; no dependency installed and no historical input changed."
+}

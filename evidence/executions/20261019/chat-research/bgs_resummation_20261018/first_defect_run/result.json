@@ -1,0 +1,133 @@
+{
+  "status": "passed_exact_finite_checks",
+  "coefficient_domain": "integers and fractions.Fraction",
+  "identity_cases": 1638,
+  "Q2_l1": "19/4",
+  "primitive_P2": {
+    "3": "2/9",
+    "6": "1/36",
+    "7": "-17/12",
+    "9": "1/6",
+    "10": "1/2",
+    "11": "1/2"
+  },
+  "stable_polynomials": {
+    "1": [
+      "0",
+      "1"
+    ],
+    "2": [
+      "0",
+      "461/12",
+      "-59/12"
+    ],
+    "3": [
+      "0",
+      "16889/6",
+      "-518",
+      "47/2"
+    ],
+    "4": [
+      "0",
+      "1201485/4",
+      "-255745/4",
+      "9105/2",
+      "-215/2"
+    ],
+    "5": [
+      "0",
+      "126689500/3",
+      "-29167880/3",
+      "2537290/3",
+      "-98560/3",
+      "1435/3"
+    ],
+    "6": [
+      "0",
+      "29510712735/4",
+      "-7136129497/4",
+      "348023865/2",
+      "-17096905/2",
+      "422205/2",
+      "-4179/2"
+    ],
+    "7": [
+      "0",
+      "3083004543465/2",
+      "-385502024754",
+      "81006504117/2",
+      "-2287454400",
+      "73179645",
+      "-1255716",
+      "9009"
+    ],
+    "8": [
+      "0",
+      "1499928989183625/4",
+      "-384396146141293/4",
+      "10638344255539",
+      "-659337702023",
+      "49399825475/2",
+      "-1117907791/2",
+      "7068061",
+      "-38467"
+    ]
+  },
+  "heisenberg_values": [
+    {
+      "N": 100,
+      "m": 10,
+      "H": 5,
+      "partial_sum": 0.08873916583333333,
+      "certified_absolute_tail_upper": 0.0,
+      "limit_comparison": 0.06690804516600757,
+      "difference_from_limit": 0.02183112066732576
+    },
+    {
+      "N": 100,
+      "m": 20,
+      "H": 10,
+      "partial_sum": 0.11344674841037454,
+      "certified_absolute_tail_upper": 0.0,
+      "limit_comparison": 0.10076108787499052,
+      "difference_from_limit": 0.012685660535384016
+    },
+    {
+      "N": 1000,
+      "m": 100,
+      "H": 50,
+      "partial_sum": 0.06819161251855407,
+      "certified_absolute_tail_upper": 0.0,
+      "limit_comparison": 0.06690804516600757,
+      "difference_from_limit": 0.0012835673525465052
+    },
+    {
+      "N": 1000,
+      "m": 200,
+      "H": 100,
+      "partial_sum": 0.10185214445111787,
+      "certified_absolute_tail_upper": 0.0,
+      "limit_comparison": 0.10076108787499052,
+      "difference_from_limit": 0.0010910565761273472
+    },
+    {
+      "N": 10000,
+      "m": 1000,
+      "H": 150,
+      "partial_sum": 0.06703256626907958,
+      "certified_absolute_tail_upper": 1.2182606825133747e-58,
+      "limit_comparison": 0.06690804516600757,
+      "difference_from_limit": 0.0001245211030720117
+    },
+    {
+      "N": 10000,
+      "m": 2000,
+      "H": 150,
+      "partial_sum": 0.1008685465664047,
+      "certified_absolute_tail_upper": 1.0662724085416553e-12,
+      "limit_comparison": 0.10076108787499052,
+      "difference_from_limit": 0.00010745869141418063
+    }
+  ],
+  "scope": "Formulas checked, asymptotic theorem proved separately. Higher-order diagram prediction gets a separate direct cycle/partition check."
+}

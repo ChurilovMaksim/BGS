@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -3951,6 +3951,291 @@
         "record/reviews/wick_poisson_20261016.md"
       ],
       "boundary": "Exact positive flat Wick measure, each fixed order and m/N in a positive compact range. C_edge converges to Poisson(2alpha^2), B/G to exp(-alpha^2), collision locations to uniform Poisson measure; fixed distinct vertex occupations converge to independent geometric mean-alpha variables. Radial iid high-power trace corollary requires every even radial moment <=j!. No non-flat transfer, signed physical cancellation, BGS, growing-order or priority claim."
+    },
+    {
+      "id": "BGS-TRACE-095",
+      "title": "Dimension-uniform deep feedback Gaussian limit",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [
+        "BGS-TRACE-073",
+        "BGS-TRACE-077",
+        "BGS-TRACE-080"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Under the pinned feedback trajectory/moment inputs and reversal hypothesis, u tends to infinity with u/N tending to zero; no substitution u=2 and no fixed frozen spectrum law.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_focus_20261017/dimension_uniform_feedback.md",
+        "evidence/executions/20261019/chat-research/bgs_focus_20261016/deep_feedback_gaussian.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-096",
+      "title": "Exact transmission spectral averaging and bounded eigenvector ratio criterion",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-097",
+      "title": "Conditional full positive Heisenberg path-current limit",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Conditional on the stated fixed-level TV compactness TC; evaluates the specified normalized positive current, not Haar identification or all signed traces.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_continue_20261017/uniform_heisenberg_path_current.md",
+        "evidence/executions/20261019/chat-research/bgs_continue_20261017/tensor_path_current_limit.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-098",
+      "title": "Complete fixed-trace law and secular hierarchy for the symplectic phase ensemble",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_attempt_20261018/secular_hierarchy_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-099",
+      "title": "Polynomial trace windows in the auxiliary bilinear phase ensembles",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [
+        "BGS-TRACE-098"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_boundary_20261018/polynomial_trace_window_ru.md",
+        "evidence/executions/20261019/chat-research/bgs_boundary_20261018/generic_bilinear_window_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-100",
+      "title": "Exact signed phase expansion and first two stable coefficient cancellations",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_cancellation_20261018/signed_trace_formula_ru.md",
+        "evidence/executions/20261019/chat-research/bgs_cancellation_20261018/second_order_cancellation_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-101",
+      "title": "Neutral peeling and finite primitive schemes at every fixed defect",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_neutral_primitives_20261019.md",
+      "dependencies": [
+        "BGS-TRACE-100"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-102",
+      "title": "Complete second-defect sector and full four-port open zero",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_second_defect_20261019.md",
+      "dependencies": [
+        "BGS-TRACE-101"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md",
+        "evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-103",
+      "title": "All local-defect-one-or-two clusters: quartic exponential resummation",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + CHECKED CLASSICAL INPUT + SELF-REVIEW",
+      "source": "mathematics/phase_quartic_cluster_sum_20261019.md",
+      "dependencies": [
+        "BGS-TRACE-101",
+        "BGS-TRACE-102"
+      ],
+      "external_dependencies": [
+        "EXT-STANLEY-1981"
+      ],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-104",
+      "title": "Local Cayley comparison with diagonal Cauchy disorder for an involution",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/phase_cayley_cauchy_transfer_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_ward_20261019/cayley_cauchy_transfer_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-105",
+      "title": "Positive Cauchy projection self-duality with maximal matrix-law separation",
+      "state": "proved",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/cauchy_positive_source_boundary_20261019.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/chat_20261019/verify_integration.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+      ],
+      "boundary": "For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim.",
+      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "proof_dependencies": [
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md",
+        "evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_projection_self_duality_ru.md"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "claim_id": "REVIEW-TRANSMISSION-APPENDIX-EXACT-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_transmission_appendix.py",
+    "appendix_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact S4 transmission anomaly over all ordered pairs; signed occupation interference at length two; factorial low-degree bounds and k-independent Hardy projection contraction; sharp linear-k Dirichlet-energy bound.",
+    "coefficient_domain": "Q(i), exact symbolic residues and Fraction coefficients; exact algebraic disk-pole classification.",
+    "conventions": "Fresh independent phases; ordered external ports; internal degree counts visits; multivariate coefficients are coherently summed before squaring.",
+    "inputs": [
+      "Explicit column-permuted Fourier S4, all 12 ordered pairs.",
+      "All internal words on two labels of length 1..8; powers 1..6 truncated at total degree 8.",
+      "A degree-one Blaschke entry and its noninner affine transform, powers k=1..12."
+    ],
+    "bounds": {
+      "seed_N": 4,
+      "ordered_pairs": 12,
+      "internal_degrees": [
+        1,
+        8
+      ],
+      "polynomial_powers": [
+        1,
+        6
+      ],
+      "Dirichlet_powers": [
+        1,
+        12
+      ]
+    },
+    "non_claims": [
+      "No Haar limit or admissible asymptotic counterexample.",
+      "Exact finite algebra does not certify the abstract infinite-dimensional proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T12:21:23.365752+00:00",
+    "runtime_seconds": 11.149244,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_transmission_appendix.py",
+    "exact_unitaries.py",
+    "appendix_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_transmission_appendix.py",
+      "sha256": "5317a70a6896ecd5b50c7387199752ecff48bb395c009e5a8af4c17e0b8f43bb",
+      "sha256_after": "5317a70a6896ecd5b50c7387199752ecff48bb395c009e5a8af4c17e0b8f43bb"
+    },
+    {
+      "path": "exact_unitaries.py",
+      "sha256": "32790c3928dba9aa0cbfef53378c4fb29ae44dc7dc3e717e5239996d77160de4",
+      "sha256_after": "32790c3928dba9aa0cbfef53378c4fb29ae44dc7dc3e717e5239996d77160de4"
+    },
+    {
+      "path": "appendix_contract.json",
+      "sha256": "213c04afae19843eb12423a279cc4a05b2aae9a3463960e10129634235709d8e",
+      "sha256_after": "213c04afae19843eb12423a279cc4a05b2aae9a3463960e10129634235709d8e"
+    }
+  ],
+  "output_directory": "appendix_run",
+  "declared_results": [
+    "appendix_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "appendix_run/stdout.txt",
+      "sha256": "e91309202e1f51d6738e6e504a0ef7d70449cc701e6110c8a0ddd88511a10424",
+      "kind": "log"
+    },
+    {
+      "path": "appendix_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "appendix_run/result.json",
+      "sha256": "d26563284519a704db7fd778729c63bc6d71a5d531b190a1e052b1b0f4b1c034",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-ALL-DEFECT-ONE-CLUSTERS-TRIPLE-RESUMMATION-20261019",
+ "mathematics":{
+  "assertion_tested":"Direct mixed-port gluing jets, triple all-order limiting series through h=80 versus certified exponential-cubic integral, and exact finite-N sums over all allowed one-port, three-port and neutral cluster counts",
+  "coefficient_domain":"Integers and exact rational arithmetic; certified rational exponential and root intervals; floats only display",
+  "conventions":"Includes the empty-primitive neutral sector; local positive connected clusters all have defect one; r one-port, b three-port, n neutral decorations; h=r+2b+n",
+  "inputs":["unit_defect_check.py","maximal_check.py","dependencies/full_port_reference.json"],
+  "bounds":{"mixed_port_counts":[4,5,9],"limiting_h_max":80,"tau":["1/20","1/10"],"finite_N_cases":[[16,169],[62,625],[96,961]],"root_bisections":64,"exponential_taylor_order":32,"integral_subdivisions":1024},
+  "non_claims":["Connected clusters of defect at least two are omitted and are not known to be negligible","This formula contains previous neutral, maximal-primitive and disconnected P32 families and must not be added to them again","No full form factor, deterministic transfer, or BGS claim"]
+ },
+ "execution_artifacts":["unit_defect_check.py","maximal_check.py","dependencies/full_port_reference.json","unit_defect_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],
+ "randomness":{"used":false}
+}

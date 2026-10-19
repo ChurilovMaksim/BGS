@@ -1,0 +1,364 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "seed": {
+    "unitarity_exact": true,
+    "B_spectrum_exact": [
+      "1/2 - sqrt(2)/4",
+      "sqrt(2)/4 + 1/2",
+      "-sqrt(2)/4",
+      "sqrt(2)/4"
+    ],
+    "ordered_pairs": [
+      {
+        "a": 0,
+        "b": 1,
+        "mean_exact": "8/15",
+        "inside_poles_exact": [
+          "-1/2",
+          "0",
+          "-3/5 + I/5"
+        ]
+      },
+      {
+        "a": 0,
+        "b": 2,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "-I/2",
+          "-3*I/2 + sqrt(5)*I/2"
+        ]
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "-I/2",
+          "-3*I/2 + sqrt(5)*I/2"
+        ]
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "mean_exact": "8/15",
+        "inside_poles_exact": [
+          "-1/2",
+          "0",
+          "-3/5 + I/5"
+        ]
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/2 - sqrt(5)/2"
+        ]
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/2 - sqrt(5)/2"
+        ]
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "-I/2",
+          "-3*I/2 + sqrt(5)*I/2"
+        ]
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/2 - sqrt(5)/2"
+        ]
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "mean_exact": "8/15",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/5 + I/5"
+        ]
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "-I/2",
+          "-3*I/2 + sqrt(5)*I/2"
+        ]
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "mean_exact": "1/2",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/2 - sqrt(5)/2"
+        ]
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "mean_exact": "8/15",
+        "inside_poles_exact": [
+          "0",
+          "1/2",
+          "3/5 + I/5"
+        ]
+      }
+    ],
+    "uniform_pair_mean_exact": "23/45"
+  },
+  "paths": {
+    "internal_lengths": [
+      1,
+      8
+    ],
+    "power_k": [
+      1,
+      6
+    ],
+    "cooperon_L2_correction_exact": "1/32",
+    "powers": [
+      {
+        "k": 1,
+        "cumulative_low_degree_energies_exact": [
+          "1/4",
+          "3/8",
+          "15/32",
+          "1/2",
+          "131/256",
+          "531/1024",
+          "1071/2048",
+          "4307/8192",
+          "8645/16384"
+        ]
+      },
+      {
+        "k": 2,
+        "cumulative_low_degree_energies_exact": [
+          "1/16",
+          "3/16",
+          "33/128",
+          "39/128",
+          "677/2048",
+          "701/2048",
+          "5723/16384",
+          "5813/16384",
+          "188223/524288"
+        ]
+      },
+      {
+        "k": 3,
+        "cumulative_low_degree_energies_exact": [
+          "1/64",
+          "11/128",
+          "71/512",
+          "195/1024",
+          "1875/8192",
+          "4119/16384",
+          "17217/65536",
+          "35271/131072",
+          "574317/2097152"
+        ]
+      },
+      {
+        "k": 4,
+        "cumulative_low_degree_energies_exact": [
+          "1/256",
+          "9/256",
+          "39/512",
+          "59/512",
+          "5023/32768",
+          "6031/32768",
+          "3341/16384",
+          "881/4096",
+          "1858951/8388608"
+        ]
+      },
+      {
+        "k": 5,
+        "cumulative_low_degree_energies_exact": [
+          "1/1024",
+          "27/2048",
+          "333/8192",
+          "279/4096",
+          "3257/32768",
+          "17077/131072",
+          "10201/65536",
+          "45379/262144",
+          "6165437/33554432"
+        ]
+      },
+      {
+        "k": 6,
+        "cumulative_low_degree_energies_exact": [
+          "1/4096",
+          "19/4096",
+          "665/32768",
+          "1311/32768",
+          "16491/262144",
+          "23295/262144",
+          "120123/1048576",
+          "142677/1048576",
+          "20344635/134217728"
+        ]
+      }
+    ]
+  },
+  "clock": {
+    "degree_one_cavity": "Blaschke factor (z-3/5)/(1-3z/5)",
+    "cases": [
+      {
+        "k": 1,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "1"
+      },
+      {
+        "k": 1,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "1/4"
+      },
+      {
+        "k": 2,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "2"
+      },
+      {
+        "k": 2,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "3/8"
+      },
+      {
+        "k": 3,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "3"
+      },
+      {
+        "k": 3,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "15/32"
+      },
+      {
+        "k": 4,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "4"
+      },
+      {
+        "k": 4,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "35/64"
+      },
+      {
+        "k": 5,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "5"
+      },
+      {
+        "k": 5,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "315/512"
+      },
+      {
+        "k": 6,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "6"
+      },
+      {
+        "k": 6,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "693/1024"
+      },
+      {
+        "k": 7,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "7"
+      },
+      {
+        "k": 7,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "3003/4096"
+      },
+      {
+        "k": 8,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "8"
+      },
+      {
+        "k": 8,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "6435/8192"
+      },
+      {
+        "k": 9,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "9"
+      },
+      {
+        "k": 9,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "109395/131072"
+      },
+      {
+        "k": 10,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "10"
+      },
+      {
+        "k": 10,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "230945/262144"
+      },
+      {
+        "k": 11,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "11"
+      },
+      {
+        "k": 11,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "969969/1048576"
+      },
+      {
+        "k": 12,
+        "kind": "inner",
+        "Dirichlet_energy_exact": "12"
+      },
+      {
+        "k": 12,
+        "kind": "noninner",
+        "Dirichlet_energy_exact": "2028117/2097152"
+      }
+    ],
+    "sharp_linear_k_saturation": true
+  },
+  "non_claims": [
+    "No asymptotic transmission counterexample.",
+    "Finite checks do not certify the all-N analytic results."
+  ]
+}

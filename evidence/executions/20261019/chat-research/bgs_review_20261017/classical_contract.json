@@ -1,0 +1,14 @@
+{
+ "claim_id":"REVIEW-CLASSICAL-COMPRESSION-ALL-SIZES-20261017",
+ "software":[{"name":"python-stdlib-only","version":"3.12.14"}],
+ "execution_artifacts":["verify_classical_all_sizes.py","classical_contract.json"],
+ "mathematics":{
+  "assertion_tested":"Classical complements, exact centered Green compression and the sharpened entrywise bound 4B/N at every retained size; exact summed return clock and per-port 2B bound, including full and singleton sets.",
+  "coefficient_domain":"Q, exact Fractions and Gaussian elimination.",
+  "conventions":"P is row-walk nonnegative doubly stochastic; ||P-J||<=2/5 follows from a convex combination of two permutation matrices and J; no normality assumption.",
+  "inputs":["One prescribed generally nonnormal rational doubly stochastic matrix for every N=3..8; every nonempty retained subset at each N."],
+  "bounds":{"N":[3,8],"retained_sets":"all nonempty subsets, including all coordinates and singletons","arithmetic":"exact rational"},
+  "non_claims":["Does not certify all real matrix inputs by finite enumeration.","No quantum interference or BGS theorem."]
+ },
+ "randomness":{"used":false,"generator":"","seed":null}
+}

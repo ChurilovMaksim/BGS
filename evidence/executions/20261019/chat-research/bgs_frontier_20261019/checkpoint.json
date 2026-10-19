@@ -1,0 +1,69 @@
+{
+  "checkpoint_id": "BGS-FRONTIER-G3-QUARTIC-20261019",
+  "base": {
+    "archive": "BGS_resummation_20261019.zip",
+    "sha256": "e206248a66e8e42dc329d411149e60d56f59f33d64e7ced96ed6241774f31f5e",
+    "previous_unsaved_packet": "bgs_ward_20261019",
+    "inherited_proof_hashes": {
+      "cayley_cauchy_transfer_ru.md": "9a3469937b3502f5b1bd41cd4e18098455442fc1d13827942758b7106b2dfcd2",
+      "defect_two_branches_ru.md": "92fe74881d5b4bc058149e940dc3fc1172fd48baca4b00431d5dfc0a4061aa09",
+      "dependencies/companion_resummation_ru.md": "8af157d5dffd1cd9c4aacb1a6f6f682974191f508710747e4f3a9dc9c40e5ef1",
+      "dependencies/finite_core_expansion_ru.md": "489168bdabb757380e85d6b5167517dc6826e8c067c9de0402ec7405ba6d1ca2",
+      "dependencies/first_defect_resummation_ru.md": "84515e66abd5f1a564a3758025cab591c9adc1da8319f84b4766bc75670e53e1",
+      "dependencies/incidence_resummation_ru.md": "04bfe445a41b1fce6bcbee491eb703bd7965442d3a8f22d1589a6a48a9c29b8e",
+      "dependencies/neutral_peeling_ru.md": "9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12",
+      "dependencies/second_order_cancellation_ru.md": "bbd9b50db67662be245418bbca0e3b12d5ed0983fc79654e16e5319765698333",
+      "dependencies/signed_trace_formula_ru.md": "58c105eec3d8fc6a8948651005876d6d6fc0436e843fdcc2612f9972f7573f9f",
+      "maximal_primitive_resummation_ru.md": "80062b892f1d3171c0a252550698774d7bb4ba4fc461ca0398042b43d04a888e",
+      "open_kernel_and_gluing_ru.md": "12623adc17f1245f711279936677399c7207f8b393e8a281c5ae89c1d5f78410",
+      "p42_resummation_ru.md": "2a8746820347de7a81115aba8a91694abdb8323e62d2de604f7d07ea51e494dd",
+      "three_port_channels_ru.md": "9c37130c39ca534ce80084270cb5e2f1a0c004649179b15f32770a06af5f18f5",
+      "unit_defect_clusters_ru.md": "b13781a536fd52880ee0b472052bcf085b1d950f3aeaac72d359be65d9d395e5"
+    }
+  },
+  "new_proof_hashes": {
+    "extremal_graphs_ru.md": "cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08",
+    "second_defect_complete_ru.md": "6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24",
+    "defect_two_cluster_gas_ru.md": "c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac",
+    "self_review_ru.md": "bc14ed902a1897c18a4042a78e5b765ff476956b0df0b635cbff769227e71ba6"
+  },
+  "proof_scope_sha256": "bf1438e26c74b6f0ad40f66c5fd1c3e38ae170a5bcbac307959228cd5aa1875f",
+  "evidence_audit_sha256": "526a838e9e3c50d710c8223e2e0cf64a641ad24ef162f0b2afbb767cbd883094",
+  "target": "Full BGS for the unchanged requested target; auxiliary sector results do not replace it",
+  "full_goal_status": "open",
+  "repository_policy": "read-only, no integration/commit/push",
+  "live_handoff": "continuation_ru.md",
+  "routes": [
+    {
+      "id": "saturated_graphs_and_open_kernels",
+      "status": "open_with_new_partial_theorems",
+      "done": "All j<=3 saturated kernels; complete total defect 2",
+      "next": "Source (3,3,3), then first unknown saturated (4,3,5); general graph Ward identity remains unproved"
+    },
+    {
+      "id": "cluster_resummation",
+      "status": "open_with_new_partial_theorem",
+      "done": "All individual defects <=2 in arbitrary counts, uniform for tau<1/9",
+      "next": "Control all further connected types and a single summable remainder"
+    },
+    {
+      "id": "Cauchy_local_transfer",
+      "status": "open_deferred",
+      "done": "Local comparison for iid phases and a Hermitian involution",
+      "obstruction": "No matching microscopic universality theorem for the needed fixed dense S established here"
+    },
+    {
+      "id": "generic_cumulant_Ward",
+      "status": "open_deferred",
+      "done": "Exact phase-cumulant recursion and zeros of j=2,3 kernels",
+      "obstruction": "No all-order admissible graph surgery preserving ranks and actual weights has been derived"
+    }
+  ],
+  "counterevidence_to_overclaim": "Partial L_le2 has coefficient -3 tau^3; missing kernels cannot be assigned by CUE fitting",
+  "review": {
+    "self_review": true,
+    "independent": false,
+    "lean_compiled": false,
+    "novelty_established": false
+  }
+}

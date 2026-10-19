@@ -1,0 +1,76 @@
+{
+  "proof_revisions": {
+    "extremal_graphs_ru.md": "cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08",
+    "second_defect_complete_ru.md": "6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24",
+    "defect_two_cluster_gas_ru.md": "c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac",
+    "self_review_ru.md": "bc14ed902a1897c18a4042a78e5b765ff476956b0df0b635cbff769227e71ba6"
+  },
+  "reviewer": "author self-review, separate adversarial pass",
+  "independent_review": false,
+  "formal_compilation": false,
+  "priority_established": false,
+  "claims": [
+    {
+      "id": "BGS-SATURATED-GRAPHS-G3-20261019",
+      "status": "author_proof_self_review",
+      "claim": "Complete connected saturated support classification e=j+1 for j<=3 over all odd prime fields, with q<=16 for j=3",
+      "proof": "extremal_graphs_ru.md",
+      "finite_dependencies": [
+        "catalogue_run",
+        "kernel_run",
+        "direct_four_run"
+      ]
+    },
+    {
+      "id": "BGS-OPEN-FOUR-PORT-ZERO-20261019",
+      "status": "author_computer_assisted_proof_self_review",
+      "claim": "All 24 connected (j,delta,e)=(3,2,4) open polynomials are central and divisible by 1-z; the physical quotient at 1 is -191/12",
+      "proof": "second_defect_complete_ru.md",
+      "finite_dependencies": [
+        "kernel_run",
+        "direct_four_run",
+        "quartic_run"
+      ]
+    },
+    {
+      "id": "BGS-COMPLETE-DEFECT-TWO-20261019",
+      "status": "author_computer_assisted_proof_self_review",
+      "claim": "Full total-defect-two sector, all original orders and neutral decorations, has the stated limit for 0<tau<1",
+      "proof": "second_defect_complete_ru.md",
+      "inherited_dependencies": [
+        "../bgs_ward_20261019/defect_two_branches_ru.md",
+        "../bgs_ward_20261019/p42_resummation_ru.md",
+        "../bgs_ward_20261019/dependencies/companion_resummation_ru.md"
+      ]
+    },
+    {
+      "id": "BGS-LOCAL-DEFECT-LE2-GAS-20261019",
+      "status": "author_computer_assisted_proof_self_review",
+      "claim": "All neutral and arbitrarily many connected clusters of individual defect one or two: exact five-index sum, quartic-exponential limit for 0<tau<1/9, uniform tail and O(N^-1) rate",
+      "proof": "defect_two_cluster_gas_ru.md",
+      "finite_dependencies": [
+        "two_port_v2_run",
+        "quartic_run"
+      ],
+      "limits": [
+        "Does not include connected clusters of individual defect >=3",
+        "All corrections normalized to V_m/m",
+        "The range 1/9 is a sufficient majorant range, not a claimed singularity of the integral"
+      ]
+    },
+    {
+      "id": "BGS-STABLE-DEGREE-2H-MINUS3-20261019",
+      "status": "author_corollary_self_review",
+      "claim": "For each h>=3 and m>8h, the full stable coefficient polynomial has degree <=2h-3; vanishing is not claimed",
+      "proof": "second_defect_complete_ru.md"
+    }
+  ],
+  "full_goal": {
+    "status": "open",
+    "missing": [
+      "all higher individual defects and joint remainder",
+      "higher mixed trace hierarchy and local statistics",
+      "transfer to the unchanged frozen family"
+    ]
+  }
+}

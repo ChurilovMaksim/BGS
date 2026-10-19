@@ -1,0 +1,53 @@
+{
+  "proofs": [
+    {
+      "path": "uniform_heisenberg_path_current.md",
+      "sha256": "790bee316873e3d68adb6e124a60a964618e9ceb717c88404b3b63c0fab9882a"
+    },
+    {
+      "path": "tensor_path_current_limit.md",
+      "sha256": "8698f8e8f8dce122bde5fc7a1571d195b78dc92e1e44e338070241fc1e229667"
+    },
+    {
+      "path": "rare_star_heisenberg.md",
+      "sha256": "048d385e709c6edb70d326709281f0812902ae3646c3cbfa8bf5c2a618aae5fe"
+    },
+    {
+      "path": "self_review.md",
+      "sha256": "31189b1fd921060a414281690b77bb6a4b48675cfa982980a8fa6562daa691f7"
+    },
+    {
+      "path": "progress_ru.md",
+      "sha256": "1e9ab75e82b80ea4fdc8911e994c2d1781439412203228a77145e2e453fc7458"
+    },
+    {
+      "path": "remaining_task_ru.md",
+      "sha256": "a7bc74034b69ae0c14507396a3326b17b4d861de0cb0657fb38bd7c11d0f4f8b"
+    },
+    {
+      "path": "literature_scope.md",
+      "sha256": "8504c133b55fb91aaf898c8abfc2f4cb4493ab20acfe4abac59166318c67f554"
+    }
+  ],
+  "base": {
+    "artifact": "inputs/base_research_checkpoint.json",
+    "sha256": "6f6716b1ca12592a3a42f7967476e8fd8b4a65fe1b22f04470c704a2f88e6347",
+    "claim_ids": [
+      "REVIEW-FIXED-CHANNEL-TV-COMPACTNESS-20261017",
+      "REVIEW-POSITIVE-BERNSTEIN-PATH-LAW-20261017"
+    ]
+  },
+  "finite_runs": [
+    {
+      "path": "star_run/manifest.json",
+      "sha256": "260c5f43aa72d3c2d92165201c9b54e9a38b02c4280db4f251e40c862caa9b8d",
+      "scientific_result_sha256": "a4f92e8da31ed9bc9c0875404a04125ff68505c9d5969c35cba93a2e2e94ffa7"
+    },
+    {
+      "path": "current_run/manifest.json",
+      "sha256": "10b1cebad0f17ac2133577a7d4835a70b8e1f863b4b9318f09f14e4e6093c621",
+      "scientific_result_sha256": "07fc825baecb16fc13bcda88bfcb69e33857c738c76672df8b3ad03791448dd1"
+    }
+  ],
+  "interpretation": "Finite evidence supports the specified identities, not a BGS certificate."
+}

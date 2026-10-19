@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-TAU-PIVOT-DISCRIMINATOR-20261018",
+  "mathematics":{
+    "assertion_tested":"Search for counterexamples to a proposed low-rank encoding: a nonsingular principal rank-size minor whose vertices are disjoint tau edges; separately test common-edge count <= rank on full support",
+    "coefficient_domain":"Exact prime-field arithmetic with integer input matrices",
+    "conventions":"sigma=(0,...,m-1), tau an m-cycle, K=A_sigma-A_tau; enumerate all cycles for m=3,...,10; p=3,5,13",
+    "inputs":["pivot_search.cpp","run_pivot_search.py"],
+    "bounds":{"cycles":"sum_{m=3}^{10}(m-1)!=409112","fields":[3,5,13],"limits":"No inference beyond the tested range from absence of counterexamples"},
+    "non_claims":["No infinite-rank counting theorem or improved trace window follows from finite checks","A found counterexample refutes only the specified pivot or common-edge criterion"]
+  },
+  "execution_artifacts":["pivot_search.cpp","run_pivot_search.py","pivot_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"C++","version":"g++ recorded by wrapper"}],
+  "randomness":{"used":false}
+}

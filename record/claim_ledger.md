@@ -1,5 +1,33 @@
 # Claim ledger
 
+## Signed circular-phase continuation, 19 October 2026
+
+**BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** All following proofs are author
+proofs with self-review; exact finite computations are used only at their stated
+scope. No independent review, compiled Lean certificate or priority is asserted.
+[Full adopted statements and proof revisions](../mathematics/phase_ensemble_continuation_20261019.md).
+
+| Stable ID | Disposition | Exact boundary |
+|---|---|---|
+| BGS-TRACE-095 | CONDITIONAL author proof | Dimension-uniform feedback under pinned trajectory/moment and reversal inputs; no fixed two-channel substitution. |
+| BGS-TRACE-096 | Exact identities and criterion | Transmission versus bounded eigenvector ratio law; the required limiting law is not identified. |
+| BGS-TRACE-097 | CONDITIONAL author proof | Complete normalized positive Heisenberg path current under TC, not a signed trace law. |
+| BGS-TRACE-098 | Author proof | All fixed traces and secular hierarchy of the symplectic phase model; t2=t1 squared exactly. |
+| BGS-TRACE-099 | Author proof | Polynomial trace windows and fixed interior disk; no microscopic absorption limit. |
+| BGS-TRACE-100 | Author computer-assisted proof | Exact signed formula and first two stable cancellations for fixed m>=17, all odd primes. |
+| BGS-TRACE-101 | Author proof | Connected j<=delta+1; finite primitive schemes at each fixed defect, not all-defect summability. |
+| BGS-TRACE-102 | Author computer-assisted proof | Full four-port kernel and complete total defect two for tau<1; stable degree bound, not vanishing. |
+| BGS-TRACE-103 | Author computer-assisted proof | All individual defects <=2 in arbitrary counts for tau<1/9; normalization V_m/m; residual begins -3 tau^3. |
+| BGS-TRACE-104 | Author proof with classical averaging | Local iid-phase/Cauchy comparison for a Hermitian involution; universality remains a separate hypothesis. |
+| BGS-TRACE-105 | Author proof, classical mechanism | Exact positive Cauchy source law and genuine matrix-law counterexample; no BGS counterexample or novelty claim. |
+
+[Complete import and correction map](chat_integration_20261019.md) records the
+other adopted auxiliary results and preserves conditional G/TC/R assumptions.
+ERR-031 marks the stale original failed transmission run. The current invalid
+first prefix implementation and failed missing-dependency checker are retained
+and excluded from mathematical evidence. Finite run completion is not a theorem
+status. Historical unknown-four-port sentences are superseded only by TRACE-102.
+
 ## Complete flat collision law, 16 October 2026
 
 **BGS-TRACE-094 — PROJECT PROOF + INDEPENDENT INTERNAL CORE RECONSTRUCTION.**

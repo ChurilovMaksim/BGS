@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ACTUAL-PHASE-MICROSCOPIC-TEST-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "sample_actual_form_factor.py",
+    "microscopic_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite-sample form factors at m/N fixed for actual symplectic Fourier times iid circular phases; construction controls and an excluded symmetric seed plus Haar baseline",
+    "coefficient_domain": "Complex128 numerical eigensolvers and float64 empirical means/standard errors",
+    "conventions": "S_xy=N^(-1/2) omega^Omega(x,y); statistic |sum_j lambda_j^m|^2/N; a standard error describes sampling variation, not a universal bound",
+    "inputs": [
+      "sample_actual_form_factor.py"
+    ],
+    "bounds": {
+      "actual": "N=25 (1200 samples), N=81 (800), N=121 (400)",
+      "controls": "Symmetric bilinear N=25 (800) violates B gap; Haar U(25) (400)",
+      "powers": "1,2 and rounded 0.125N,0.25N,0.5N,0.75N,N,1.5N,2N,4N",
+      "tolerance": "Unitary Frobenius error <1e-10; max eigenvalue modulus error <1e-10; symplectic t2=t1^2 error <1e-7"
+    },
+    "non_claims": [
+      "No limit proved or refuted by finite sampling",
+      "No two-channel or frozen-map inference",
+      "Symmetric control is explicitly outside original admissibility"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610181650
+  },
+  "run": {
+    "started_at": "2026-10-18T12:11:00.748474+00:00",
+    "runtime_seconds": 8.544758,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 16000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "sample_actual_form_factor.py",
+    "microscopic_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "sample_actual_form_factor.py",
+      "sha256": "67b7249f92395368c8cbb9da31cfecf1589b276fd5044759174cef909a71020a",
+      "sha256_after": "67b7249f92395368c8cbb9da31cfecf1589b276fd5044759174cef909a71020a"
+    },
+    {
+      "path": "microscopic_contract.json",
+      "sha256": "75bd2a11c30a5f94a450f1013c47b13b1e6ecbacf771103fc2baec3af3fcc77f",
+      "sha256_after": "75bd2a11c30a5f94a450f1013c47b13b1e6ecbacf771103fc2baec3af3fcc77f"
+    }
+  ],
+  "output_directory": "microscopic_run",
+  "declared_results": [
+    "microscopic_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "microscopic_run/stdout.txt",
+      "sha256": "4d6f75f9181c173298ef8a863686f1d03a0d3fa8989130da7497b130eb9186b0",
+      "kind": "log"
+    },
+    {
+      "path": "microscopic_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "microscopic_run/result.json",
+      "sha256": "c21e97ee979014b123bda9544bd341fb6f802fc38138b9a1226d48817fa2b336",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

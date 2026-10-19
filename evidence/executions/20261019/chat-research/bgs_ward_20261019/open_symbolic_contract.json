@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-ALL-PRIME-THREE-PORT-WARD-POLYNOMIAL-20261019",
+ "mathematics":{
+  "assertion_tested":"Complete all four open boundary classes over the nine primes needed for characteristic transfer; separate connected-cluster primitive counts into 1,a2,a3,a2^2 to identify an actual local cumulant cancellation",
+  "coefficient_domain":"Exact integers, nine odd prime fields, rational polynomial coefficients",
+  "conventions":"Same open path-cover definition as open_port_contract.json; connected means the union of K-support edges and partition identifications is connected; symbolic counts record coefficient of each collision type before substituting weights",
+  "inputs":["open_port_symbolic.cpp","dependencies/neutral_test.hpp","dependencies/prior_open_second.cpp","dependencies/primitive_defect.cpp","dependencies/full_port_reference.json","run_open_symbolic.py"],
+  "bounds":{"q":"3..12","primes":[3,5,7,11,13,17,19,23,29],"collision_types":["discrete","one pair","one triple","two pairs"]},
+  "non_claims":["General Ward identity at higher primitive order is not asserted","Symbolic cumulant polynomials are derived from exact counts, not a formal proof of a surgery","Characteristic transfer and all-q support require the accompanying proofs"]
+ },
+ "execution_artifacts":["open_port_symbolic.cpp","dependencies/neutral_test.hpp","dependencies/prior_open_second.cpp","dependencies/primitive_defect.cpp","dependencies/full_port_reference.json","run_open_symbolic.py","open_symbolic_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+ "randomness":{"used":false}
+}

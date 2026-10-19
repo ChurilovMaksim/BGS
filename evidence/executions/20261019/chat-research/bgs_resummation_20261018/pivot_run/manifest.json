@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-TAU-PIVOT-DISCRIMINATOR-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_pivot_search.py",
+    "pivot_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "C++",
+        "version": "g++ recorded by wrapper"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Search for counterexamples to a proposed low-rank encoding: a nonsingular principal rank-size minor whose vertices are disjoint tau edges; separately test common-edge count <= rank on full support",
+    "coefficient_domain": "Exact prime-field arithmetic with integer input matrices",
+    "conventions": "sigma=(0,...,m-1), tau an m-cycle, K=A_sigma-A_tau; enumerate all cycles for m=3,...,10; p=3,5,13",
+    "inputs": [
+      "pivot_search.cpp",
+      "run_pivot_search.py"
+    ],
+    "bounds": {
+      "cycles": "sum_{m=3}^{10}(m-1)!=409112",
+      "fields": [
+        3,
+        5,
+        13
+      ],
+      "limits": "No inference beyond the tested range from absence of counterexamples"
+    },
+    "non_claims": [
+      "No infinite-rank counting theorem or improved trace window follows from finite checks",
+      "A found counterexample refutes only the specified pivot or common-edge criterion"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-18T13:50:09.393043+00:00",
+    "runtime_seconds": 5.433174,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 140.0,
+    "max_output_bytes": 18000,
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 130,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "pivot_search.cpp",
+    "run_pivot_search.py",
+    "pivot_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "pivot_search.cpp",
+      "sha256": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6",
+      "sha256_after": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6"
+    },
+    {
+      "path": "run_pivot_search.py",
+      "sha256": "20f82ab2ee832caba3aa73230f7ffa7fa3bb5cdc77cfab5a1085d5e70bc844ab",
+      "sha256_after": "20f82ab2ee832caba3aa73230f7ffa7fa3bb5cdc77cfab5a1085d5e70bc844ab"
+    },
+    {
+      "path": "pivot_contract.json",
+      "sha256": "ad5c6ead8de0cc4a3524974006a0c9b363dd1c4b5e4910fff8d5af9081c74041",
+      "sha256_after": "ad5c6ead8de0cc4a3524974006a0c9b363dd1c4b5e4910fff8d5af9081c74041"
+    }
+  ],
+  "output_directory": "pivot_run",
+  "declared_results": [
+    "pivot_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "pivot_run/stdout.txt",
+      "sha256": "3428f62474ac49afb1fa080f257942c836d43281324162fee991a51c89323fa7",
+      "kind": "log"
+    },
+    {
+      "path": "pivot_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "pivot_run/result.json",
+      "sha256": "e5fd0ea8f427b8e30b1274d620f2c1ef4996e4ce0badb6e632df3d83670c85ce",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

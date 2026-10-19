@@ -1,0 +1,14 @@
+{
+ "claim_id":"REVIEW-HARMONIC-CONTRACTION-20261017",
+ "software":[{"name":"python-stdlib-only","version":"3.12.14"}],
+ "execution_artifacts":["verify_harmonic_contraction.py","harmonic_contract.json"],
+ "mathematics":{
+  "assertion_tested":"Exact circle-weight second/fourth moments, zero-weight bound, global and small-degree contraction bounds, the spherical eigenvalue and its explicit nonmaximality example.",
+  "coefficient_domain":"Q, exact Fraction arithmetic and integer Weyl dimensions.",
+  "conventions":"Balanced highest weights of U(m); circle diag(exp(it),1,...,1); phi(j)=1/binomial(m+abs(j),abs(j)).",
+  "inputs":["Every balanced decreasing integer weight with m=2..6, coordinates in -5..5 and positive degree at most 6."],
+  "bounds":{"m":[2,6],"weight_coordinate":[-5,5],"positive_degree_max":6},
+  "non_claims":["No certification of arbitrary weights by finite enumeration.","No transfer of Haar norm estimates to an unknown ensemble."]
+ },
+ "randomness":{"used":false,"generator":"","seed":null}
+}

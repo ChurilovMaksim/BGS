@@ -1,5 +1,17 @@
 # Scientific changelog
 
+## 2026-10-19
+
+- Integrated eleven missing research packets and the reviewed two-channel
+  attachment with a 654-file SHA-256 inventory and preserved execution records.
+- Added TRACE-095 through TRACE-105 with explicit conditional and auxiliary
+  boundaries; synchronized source statements, ledger, registry/DAG, navigation
+  and the manuscript continuation. Fixed-model BGS remains open.
+- Completed the four-port and second-defect account, the joint quartic cluster
+  theorem, and exact positive Cauchy-source laws with a signed-source obstruction.
+- ERR-031 records stale source provenance of one historical failed run. New
+  invalid/failed attempts are retained separately from corrected runs.
+
 ## 2026-10-16
 
 - Reconciled the 15 October 103-section record, 16 original notes and all 90

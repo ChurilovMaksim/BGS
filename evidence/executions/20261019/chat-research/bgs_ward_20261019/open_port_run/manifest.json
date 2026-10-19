@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FULL-THREE-PORT-PRIMITIVE-KERNEL-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_open_port_kernel.py",
+    "open_port_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Compute all relative permutations of the h=2,e=3 open primitive kernel, permitting a cycle cover tau but excluding internal tau cycles after cutting common edges; test whether the previously unobserved inverse 3-cycle and transposition channels vanish at z=1",
+    "coefficient_domain": "Exact integers, F_3,F_5,F_13, fractions.Fraction",
+    "conventions": "Common-edge sets enumerated modulo cyclic sigma rotation with set-orbit weights; tau bijections extend each three-edge set and have exactly three common edges; after cutting, exactly three paths must cover all vertices; transpositions aggregated as one cyclic-label orbit",
+    "inputs": [
+      "open_port_kernel.cpp",
+      "dependencies/neutral_test.hpp",
+      "dependencies/prior_open_second.cpp",
+      "dependencies/primitive_defect.cpp",
+      "dependencies/closed_port_reference.json",
+      "run_open_port_kernel.py"
+    ],
+    "bounds": {
+      "q": "3..12",
+      "fields": [
+        3,
+        5,
+        13
+      ],
+      "partition_codimension_max": 2,
+      "candidate_coverage_per_q": "q!/6 before rejecting additional common edges or internal cycles"
+    },
+    "non_claims": [
+      "The rank-four support argument must be checked for cycle covers before asserting all-q completeness",
+      "Reuses rank and neutral routines, not an independent implementation",
+      "Open cycle covers are a diagnostic extension, not an added term in the original physical sum",
+      "No higher-defect or BGS conclusion"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T07:15:45.109402+00:00",
+    "runtime_seconds": 2.372356,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 210.0,
+    "max_output_bytes": 24000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 200,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "open_port_kernel.cpp",
+    "dependencies/neutral_test.hpp",
+    "dependencies/prior_open_second.cpp",
+    "dependencies/primitive_defect.cpp",
+    "dependencies/closed_port_reference.json",
+    "run_open_port_kernel.py",
+    "open_port_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "open_port_kernel.cpp",
+      "sha256": "19980f133871f8b195b56e42844bc384e9e93a473a3902ebc6902e4901f2f63e",
+      "sha256_after": "19980f133871f8b195b56e42844bc384e9e93a473a3902ebc6902e4901f2f63e"
+    },
+    {
+      "path": "dependencies/neutral_test.hpp",
+      "sha256": "609e69e946544b369ab3e9f29bba04abf63c6e0a2d8d9466a07779fe877c3940",
+      "sha256_after": "609e69e946544b369ab3e9f29bba04abf63c6e0a2d8d9466a07779fe877c3940"
+    },
+    {
+      "path": "dependencies/prior_open_second.cpp",
+      "sha256": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8",
+      "sha256_after": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8"
+    },
+    {
+      "path": "dependencies/primitive_defect.cpp",
+      "sha256": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9",
+      "sha256_after": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9"
+    },
+    {
+      "path": "dependencies/closed_port_reference.json",
+      "sha256": "6d8e557aa0f6c33812be2aa0782b99869ae121d403f00df50cb9017ee0ed7f0e",
+      "sha256_after": "6d8e557aa0f6c33812be2aa0782b99869ae121d403f00df50cb9017ee0ed7f0e"
+    },
+    {
+      "path": "run_open_port_kernel.py",
+      "sha256": "edfcd9c094d9155f8810c3ef927fd30c9c4ea231d83ca798f848385db3138b09",
+      "sha256_after": "edfcd9c094d9155f8810c3ef927fd30c9c4ea231d83ca798f848385db3138b09"
+    },
+    {
+      "path": "open_port_contract.json",
+      "sha256": "450b790bf9ed4bac029908cb37bdda34bebc825f9f646e9b28763988bd392b88",
+      "sha256_after": "450b790bf9ed4bac029908cb37bdda34bebc825f9f646e9b28763988bd392b88"
+    }
+  ],
+  "output_directory": "open_port_run",
+  "declared_results": [
+    "open_port_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "open_port_run/stdout.txt",
+      "sha256": "57e7767d6ebd6f05a26bd4ac7b8aa2ca62b08c06f4c27c9c8c08423fd67baeef",
+      "kind": "log"
+    },
+    {
+      "path": "open_port_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "open_port_run/result.json",
+      "sha256": "6d803b11e8e3e8e06da44347041b28daccd322697ecd28614adb5e8044b581a2",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

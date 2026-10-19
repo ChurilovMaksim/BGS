@@ -1,0 +1,281 @@
+--- a/two_channel_transmission(4).md
++++ b/two_channel_transmission(4).md
+@@ -4,7 +4,7 @@
+ 
+ Дата начала: 17 октября 2026 года. Текущая редакция: `TC-2026-10-17-10`; базовый checkpoint: `TC-2026-10-17-0`.
+ 
+-**Latest verified extension:** CE1 and QC1--QC7 at the end of this file: deterministic classical Markov absorption equipartition at entrywise error `O(1/N)`; the exact length-two cooperon interference contraction; all-moment analytic path-window bounds; and the exact four-dimensional non-Haar finite-size example with `P=J`, `||B||<1`. None settles the two-channel `N -> infinity` law, and no admissible asymptotic counterexample is known from this work.
++**Latest verified extension:** CL1 and QC1--QC7 at the end of this file: deterministic classical Markov absorption equipartition at entrywise error `O(1/N)`; the exact length-two cooperon interference contraction; all-moment analytic path-window bounds; and the exact four-dimensional non-Haar finite-size example with `P=J`, `||B||<1`. None settles the two-channel `N -> infinity` law, and no admissible asymptotic counterexample is known from this work.
+ 
+ Документ относится к самостоятельной постановке из сообщения пользователя; он не утверждает решения полной гипотезы BGS.
+ 
+@@ -12413,7 +12413,7 @@
+ 
+ Дополнительные независимые проверки этой редакции охватили все формулы второй степени при символической размерности, коэффициенты хааровской матрицы Грама, исходно-взвешенную условную G, знаки поперечного якобианного минора симплектической семьи, точные четырёхканальные интегралы, нормы моментных тензоров и заполнение последовательностей во всех размерах. В последнем продолжении отдельно проверены полярное переплетение оператора Березина, нормировка преобразования Мелера–Фока, полиномиальные спектральные множители, хвостовая оценка для ядра Кэли, сохранение замкнутого образа, полная формула Байеса при смене корня, обоснование предела через лемму Шеффе, точная компенсация квадратичных форм и конечномерный аргумент со случайным блужданием обратного оператора. Проверенные первичные статьи о случайных унитарных схемах используют независимые последовательные слои; их теоремы не подменяют повторное использование одной фазовой диагонали в исходном ансамбле.
+ 
+-Техническая проверка этой редакции охватила 5 779 математических фрагментов: 1 131 отдельную формулу и 4 648 внутристрочных фрагментов. Формулы проверены извлечением в XeLaTeX; компиляция завершилась без синтаксических ошибок и сообщений о недостающих символах. Проверены 431 уникальный формульный тег, все ссылки новых разделов на эти теги, парность математических разделителей и ограждений кода, а также синтаксис трёх включённых Python-блоков. Это проверка целостности и набора записи; доказательства оцениваются по приведённым аргументам и независимым математическим проверкам, а не по успешной компиляции.
++Числа математических фрагментов и сведения о XeLaTeX-компиляции в предыдущем checkpoint относятся к прежней редакции и здесь не считаются сертификатом обновлённого файла. В предоставленном файле текущая структурная проверка насчитала 597 вхождений формульных тегов, 591 различную метку и 12 Python-блоков; повторялись CE1–CE6. В этой исправленной версии классические метки переименованы в CL1–CL17, так что все 597 формульных тегов различны. Все 12 Python-блоков проверены синтаксическим разбором AST без исполнения. XeLaTeX-компиляция текущей версии не повторялась. Структурная проверка и компиляция не заменяют математических доказательств.
+ 
+ В документе нет утверждения, что эти препятствия неразрешимы или что исходная теорема ложна. Есть точная фиксация того, что доказано, что проверено лишь численно, какие предложенные конструкции не работают и какое следствие осталось недоказанным. **Полным решением поставленной задачи этот документ не является: не доказан даже предел первого момента в исходной общности и не предъявлен допустимый контрпример к закону $T_N$.**
+ 
+@@ -13981,20 +13981,20 @@
+ 
+ **Exact status.** This appendix proves three new results directly from the original hypotheses (some require fewer assumptions). It does not prove `T_N => Uniform[0,1]` and does not produce an admissible counterexample. The classical approximation below must **not** be substituted for the quantum phase-averaged Schur complement: their difference already need not vanish at fixed dimension. The result isolates the genuinely coherent obstruction.
+ 
+-## CE1. Classical absorption Schur complements are uniformly equidistributed
++## CL1. Classical absorption Schur complements are uniformly equidistributed
+ 
+ Let `P` be an `N x N` **doubly stochastic** matrix satisfying
+ 
+ $$
+ \max_{i,j}P_{ij}\le C/N,\qquad \|P-J_N\|_{\rm op}\le\varepsilon<1,
+-\tag{CE1}
++\tag{CL1}
+ $$
+ 
+ where `C>=1`, `epsilon<1` are constants. Choose **any** retained coordinate set `A` with `m=|A|`, and put `E=A^c`, `n=N-m`. Define the classical absorption matrix
+ 
+ $$
+ K_A^{\rm cl}=P_{AA}+P_{AE}(I-P_{EE})^{-1}P_{EA}.
+-\tag{CE2}
++\tag{CL2}
+ $$
+ 
+ The inverse exists: writing `R=P-J`, we have `||R||<=epsilon`, and if a vector supported on `E` were a unit-modulus eigenvector of `P_EE`, extension by zero to the full space would contradict the strict contraction `||P|_{1^perp}||<=epsilon`. More directly, `||P_EE||<1` because, for any nonzero vector `x` supported in the proper subset `E`, orthogonality of `Jx` and `Rx` gives `||Px||^2 <= ||Jx||^2+epsilon^2||x-Jx||^2 <||x||^2`.
+@@ -14005,14 +14005,14 @@
+ \beta=C+1,\qquad
+ \gamma=1+\frac{\beta}{1-\varepsilon},\qquad
+ \kappa=C+\frac{\sqrt C\,\beta}{1-\varepsilon}.
+-\tag{CE3}
++\tag{CL3}
+ $$
+ 
+ **Theorem CE (nonasymptotic, uniform in the chosen set).** Whenever
+ 
+ $$
+ 1\le m\le\frac{N}{2\beta\gamma},
+-\tag{CE4}
++\tag{CL4}
+ $$
+ 
+ we have the explicit estimate
+@@ -14024,7 +14024,7 @@
+ C+\frac{C}{1-\varepsilon}+4\kappa+2\beta\gamma
+ +\frac{\kappa^2}{\beta\gamma}
+ \right].\quad}
+-\tag{CE5}
++\tag{CL5}
+ $$
+ 
+ Consequently, with the constant in square brackets denoted by `K(C,epsilon)`,
+@@ -14034,7 +14034,7 @@
+ \|K_A^{\rm cl}-J_m\|_{\rm op}
+ \le K(C,\varepsilon)\frac{m}{N}.
+ \quad}
+-\tag{CE6}
++\tag{CL6}
+ $$
+ 
+ This holds *deterministically*, for **every** selected set, and for growing `m=o(N)` as well as fixed `m`. The matrix `K_A^{cl}` is itself nonnegative and doubly stochastic. In particular for `m=2` it has exactly the form
+@@ -14042,7 +14042,7 @@
+ $$
+ K_A^{\rm cl}=\begin{pmatrix}1-t_A&t_A\\t_A&1-t_A\end{pmatrix},\qquad
+ \boxed{|t_A-1/2|\le K(C,\varepsilon)/N.}
+-\tag{CE7}
++\tag{CL7}
+ $$
+ 
+ ### Proof of CE (all constants exposed)
+@@ -14052,7 +14052,7 @@
+ $$
+ A_0=P_{AA},\quad W=P_{AE},\quad V=P_{EA},\quad
+ R=P-J_N,\quad G=(I_E-R_{EE})^{-1},\quad e=\mathbf1_E.
+-\tag{CE8}
++\tag{CL8}
+ $$
+ 
+ Since `||R_EE||<=epsilon`, `||G||<=1/(1-epsilon)`. The rank-one Sherman--Morrison identity gives the **exact** representation
+@@ -14061,16 +14061,16 @@
+ K_A^{\rm cl}=A_0+WGV+
+ \frac{(WGe)(e^TGV)}{d},\qquad
+  d=N-e^TGe.
+-\tag{CE9}
+-$$
+-
+-For sufficient `N` as in (CE4), the estimates below show `d>=m/2`; thus the denominator is indeed nonzero. Every entry of `R` is bounded by `beta/N`. The zero row and column sums of `R` yield
++\tag{CL9}
++$$
++
++For sufficient `N` as in (CL4), the estimates below show `d>=m/2`; thus the denominator is indeed nonzero. Every entry of `R` is bounded by `beta/N`. The zero row and column sums of `R` yield
+ 
+ $$
+ R_{EE}e=-R_{EA}\mathbf1_A,\qquad
+ e^TR_{EE}=-\mathbf1_A^TR_{AE},\qquad
+ e^TR_{EE}e=\mathbf1_A^TR_{AA}\mathbf1_A.
+-\tag{CE10}
++\tag{CL10}
+ $$
+ 
+ It follows that
+@@ -14078,7 +14078,7 @@
+ $$
+ \|Ge-e\|_2,\ \|e^TG-e^T\|_2
+ \le\frac{\beta m}{(1-\varepsilon)\sqrt N}.
+-\tag{CE11}
++\tag{CL11}
+ $$
+ 
+ Also, since `G-I=R_EE G`,
+@@ -14092,10 +14092,10 @@
+ \left(1+\frac{\beta}{1-\varepsilon}\right)
+ =\frac{\beta\gamma m^2}{N}.
+ \end{aligned}
+-\tag{CE12}
+-$$
+-
+-Thus `|d-m|<=beta gamma m²/N`; (CE4) implies `d>=m/2`.
++\tag{CL12}
++$$
++
++Thus `|d-m|<=beta gamma m²/N`; (CL4) implies `d>=m/2`.
+ 
+ Every row of `W` and every column of `V` has Euclidean norm at most `sqrt(C/N)`: nonnegative entries are `<=C/N` and their sums are at most one. Since `We=1_A-A_0 1_A` and `e^TV=1_A^T-1_A^T A_0`, this implies, **entry by entry**,
+ 
+@@ -14104,7 +14104,7 @@
+ |(WGe)_a-1|\le\frac{\kappa m}{N},\qquad
+ |(e^TGV)_b-1|\le\frac{\kappa m}{N}.
+ }
+-\tag{CE13}
++\tag{CL13}
+ $$
+ 
+ Furthermore,
+@@ -14112,7 +14112,7 @@
+ $$
+ |(WGV)_{ab}|\le\frac{C}{(1-\varepsilon)N},
+ \qquad (A_0)_{ab}\le C/N.
+-\tag{CE14}
++\tag{CL14}
+ $$
+ 
+ Write `x_a=(WGe)_a`, `y_b=(e^TGV)_b`. The preceding estimates give
+@@ -14126,10 +14126,10 @@
+ +\frac{2\beta\gamma}{N}\\
+ &\le\frac1N\left(4\kappa+2\beta\gamma+\frac{\kappa^2}{\beta\gamma}\right),
+ \end{aligned}
+-\tag{CE15}
+-$$
+-
+-where the final bound uses (CE4). Combining this with (CE9) and (CE14) proves (CE5). The operator-norm bound (CE6) follows from `||M||op<=m max_ij |M_ij|`. Nonnegativity of (CE2) is immediate. To check stochasticity, use `(I-P_EE)1_E=P_EA 1_A` and its transpose, together with the full row and column sums of `P`; then `K_A^{cl} 1_A=1_A` and `1_A^TK_A^{cl}=1_A^T`. A two-by-two doubly stochastic matrix has form (CE7). QED.
++\tag{CL15}
++$$
++
++where the final bound uses (CL4). Combining this with (CL9) and (CL14) proves (CL5). The operator-norm bound (CL6) follows from `||M||op<=m max_ij |M_ij|`. Nonnegativity of (CL2) is immediate. To check stochasticity, use `(I-P_EE)1_E=P_EA 1_A` and its transpose, together with the full row and column sums of `P`; then `K_A^{cl} 1_A=1_A` and `1_A^TK_A^{cl}=1_A^T`. A two-by-two doubly stochastic matrix has form (CL7). QED.
+ 
+ ### Classical mean exit time has the same deterministic first-order scale
+ 
+@@ -14138,10 +14138,10 @@
+ $$
+ \mathbb E_a L_{\rm cl} = [W(I-P_{EE})^{-1}e]_a
+ =\frac{N}{d}(WGe)_a,
+-\tag{CE16}
+-$$
+-
+-by (CE9) and Sherman--Morrison. Therefore, under (CE4),
++\tag{CL16}
++$$
++
++by (CL9) and Sherman--Morrison. Therefore, under (CL4),
+ 
+ $$
+ \boxed{\qquad
+@@ -14149,7 +14149,7 @@
+ \le2(\kappa+\beta\gamma)\frac{m}{N},
+ \qquad a\in A.
+ \qquad}
+-\tag{CE17}
++\tag{CL17}
+ $$
+ 
+ In particular for fixed `m`, `E_a L_cl=N/m+O_{C,epsilon,m}(1)`, uniformly in `a,A`. This confirms *classical* escape on the Heisenberg scale, without claiming that the quantum process agrees with the Markov chain.
+@@ -14205,7 +14205,7 @@
+ 
+ The right-hand side is real but need not be positive. Crucially, only pairs having the **same occupation multiset** survive phase integration; equal *time-ordering* of visits is not required. Summing the squares of individual paths alone computes the classical object (QC4), not the quantum one (QC3).
+ 
+-The identity (QC5) is first interpreted degree by degree, so no uncontrolled infinite interchange is involved. The full boundary quantities are obtained by `L²` convergence: contractivity of the matrix-valued Schur function on the polydisk yields its square-summable Hardy coefficients, and the original irreducibility assumption ensures the unitary boundary value almost surely. The classical path series converges by `rho(P_EE)<1`, as established in CE1. Consequently
++The identity (QC5) is first interpreted degree by degree, so no uncontrolled infinite interchange is involved. The full boundary quantities are obtained by `L²` convergence: contractivity of the matrix-valued Schur function on the polydisk yields its square-summable Hardy coefficients, and the original irreducibility assumption ensures the unitary boundary value almost surely. The classical path series converges by `rho(P_EE)<1`, as established in CL1. Consequently
+ 
+ $$
+ \mathbb E_Z T_{ab}-(K_A^{\rm cl})_{ab}
+@@ -14348,7 +14348,7 @@
+ 
+ ## QC5. The exact remaining obstruction, checked against finite-dimensional examples
+ 
+-CE1 shows that
++CL1 shows that
+ 
+ $$
+ \mathbb E_A\,(K_A^{\rm cl})_{ab}=\frac12+O_{C_0}(N^{-1})
+@@ -14368,9 +14368,9 @@
+ 
+ The first crossed term `L=2` is `O(C_0 rho_*/N)`, and by (QC11) **all fixed degrees** are `O_{L,C_0}(N^{-1})`. However the complete signed series at degrees growing with `N` is still uncontrolled. The assumptions on `P` and `B` have not been shown to make its sum tend to zero. Even if this were established, it would prove only `E T_N->1/2`; the other moments needed for `Uniform[0,1]` would remain.
+ 
+-As an explicit warning: for the five-channel Fourier matrix, a numerical phase integral at the fixed retained pair `(0,1)` gives quantum `E T approximately 0.451` while the classical Markov Schur complement is exactly `0.5`. Thus quantum expectation is **not** equal to the classical hitting probability in general. This example has `||B||=1` and is *not* an asymptotic counterexample satisfying the original hypotheses. For the cubic-circulant admissible test families, classical `t_A` at `N=23,41,101,503` is respectively approximately `0.5092,0.5055,0.5051,0.5015`; these data check CE1, not the quantum conjecture.
+-
+-**Independent checks.** Scripts `tc_new_check.py`, `tc_sherman_check.py` and `tc_cl_markov_check.py` numerically verify the path-occupation expansion through `L=4`, the exact equality (QC8) for random complex unitaries and a real cubic circulant (errors `<=2e-17`), Sherman--Morrison (CE9) for `N=7,13,101` (relative errors at the floating-point level), double stochasticity of the classical output, and the predicted approach of classical two-channel probabilities to `1/2`. The checks are diagnostics for the algebra, not a proof of the desired universal quantum law.
++As an explicit warning: for the five-channel Fourier matrix, a numerical phase integral at the fixed retained pair `(0,1)` gives quantum `E T approximately 0.451` while the classical Markov Schur complement is exactly `0.5`. Thus quantum expectation is **not** equal to the classical hitting probability in general. This example has `||B||=1` and is *not* an asymptotic counterexample satisfying the original hypotheses. For the cubic-circulant admissible test families, classical `t_A` at `N=23,41,101,503` is respectively approximately `0.5092,0.5055,0.5051,0.5015`; these data check CL1, not the quantum conjecture.
++
++**Independent checks.** Scripts `tc_new_check.py`, `tc_sherman_check.py` and `tc_cl_markov_check.py` numerically verify the path-occupation expansion through `L=4`, the exact equality (QC8) for random complex unitaries and a real cubic circulant (errors `<=2e-17`), Sherman--Morrison (CL9) for `N=7,13,101` (relative errors at the floating-point level), double stochasticity of the classical output, and the predicted approach of classical two-channel probabilities to `1/2`. The checks are diagnostics for the algebra, not a proof of the desired universal quantum law.
+ 
+ **Research conclusion of this appendix.** Classical mixing under the original assumptions is sufficient for deterministic multichannel absorption equipartition at rate `O(1/N)` entrywise. It also yields a sharp `O(N)` classical mean escape time. Coherent quantum amplitudes agree with the classical path sum at first internal degree, acquire the first explicit `B`-controlled interference correction at degree two, and necessarily derive their nontrivial total transmission from paths much longer than `log N/loglog N`. The exact quantum degree sum restricts relevant lengths to `O(N log N)`. Deriving universal interference cancellations at those mesoscopic and Heisenberg lengths remains open; no claim of the original theorem or an admissible counterexample is made.
+ 
+@@ -14530,7 +14530,7 @@
+ print('uniform-pair mean:', s.simplify(sum(answers)/12))
+ ```
+ 
+-**Consolidated outstanding requirement.** To settle the original conjecture one must control, for all fixed `k>=1`, the full unregularized long-path phase interference in `E T_N^k`, or equivalently prove the fractional-overlap criterion (FM5). CE1, QC10, QC14, QC17 and the finite anomaly (QC27) are rigorous results that expose the mechanism and its scale, but leave this essential step unproved.
++**Consolidated outstanding requirement.** To settle the original conjecture one must control, for all fixed `k>=1`, the full unregularized long-path phase interference in `E T_N^k`, or equivalently prove the fractional-overlap criterion (FM5). CL1, QC10, QC14, QC17 and the finite anomaly (QC27) are rigorous results that expose the mechanism and its scale, but leave this essential step unproved.
+ 
+ ## QC7. New all-moment time-window theorem (not merely the first moment)
+ 
+@@ -14582,20 +14582,20 @@
+ \tag{QC34}
+ $$
+ 
+-Since `(g^k)'=k g^{k-1}g'`, its Dirichlet energy satisfies
++The sharper linear bound already established earlier in this document also applies here. The rational numerator and denominator of `g` have degree at most `N-2`, so the rational degree of `g^k` is at most `k(N-2)`. If it is nonconstant, the area formula with multiplicities and `|g^k|<=1` give
+ 
+ $$
+ \sum_{L\ge1}L|[t^L]g^k|^2
+-\le k^2\sum_{L\ge1}L|[t^L]g|^2
+-\le k^2(N-2).
++=\int_{|t|<1}|(g^k)'(t)|^2\frac{dA(t)}\pi
++\le k(N-2).
+ \tag{QC35}
+ $$
+ 
+-The last inequality follows from the **exact** matrix degree/quantum-Kac identity (AP30), by keeping just the entry `(a,b)`. Finally average over independent uniform relative phases, identifying squared coefficient norms at each total degree. This yields
++Indeed, almost every target value has at most `k(N-2)` preimages in the disk. For a constant function the integral is zero. Finally average over independent uniform relative phases, identifying squared coefficient norms at each total degree. This yields
+ 
+ $$
+ \boxed{\quad
+-\sum_{L>L_+}q_L^{(k)}\le\frac{k^2(N-2)}{L_+},
++\sum_{L>L_+}q_L^{(k)}\le\frac{k(N-2)}{L_+},
+ \qquad k\ge1.
+ \quad}
+ \tag{QC36}
+@@ -14610,7 +14610,7 @@
+ \sum_{L_-<L\le L_+}q_L^{(k)}
+ \le
+ \frac{C_0}{N}\sum_{l=0}^{L_-}l!
+-+\frac{k^2(N-2)}{L_+}.
+++\frac{k(N-2)}{L_+}.
+ }
+ \tag{QC37}
+ $$
+@@ -14626,4 +14626,4 @@
+ \tag{QC38}
+ $$
+ 
+-In fact the low-end bound is **independent of `k`**, and the upper-end estimate works simultaneously for any `k=o(\sqrt{\log N})`. This theorem encompasses the entire moment formulation of the requested limit, not just the first moment, but still does **not** evaluate the positive window mass. The essential remaining estimate is to show that this mass converges to `1/(k+1)` for each fixed `k`. No such evaluation or admissible asymptotic counterexample has been obtained.
++In fact the low-end bound is **independent of `k`**, and the upper-end estimate works simultaneously for any `k=o(\log N)`. This theorem encompasses the entire moment formulation of the requested limit, not just the first moment, but still does **not** evaluate the positive window mass. The essential remaining estimate is to show that this mass converges to `1/(k+1)` for each fixed `k`. No such evaluation or admissible asymptotic counterexample has been obtained.

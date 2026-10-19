@@ -1,0 +1,18 @@
+{
+  "review": "author visual review",
+  "pdf_sha256": "cc41bd57de0507dbb2e774256df56917fc74bfb14fa040203202520dd071041c",
+  "pages_rendered_and_viewed": [
+    305,
+    306,
+    307
+  ],
+  "total_pages": 311,
+  "rendering": "pdftoppm -scale-to 1300 -png",
+  "outcome": "New formulas, headers, page numbers and section transitions legible, no clipping or overlap observed on selected new pages. Full document passed three-pass typesetting gate; other pages were not visually rereviewed.",
+  "png_sha256": {
+    "page-307.png": "1c5bd9237b12c3756fd1769a32b7091b8e57af364a008f8a1b95de3bc69c0c3f",
+    "page-306.png": "8dc76fd1560ae362b8261c8deb0ce62f220828cadaed457eede3a19d49b3dc16",
+    "page-305.png": "e7745d140978f71a521e70d49468e81b70a843146cc04207b9d68ffd67398be8"
+  },
+  "non_claim": "No blanket mathematical or visual certificate for all 311 pages."
+}

@@ -1,0 +1,14 @@
+{
+ "claim_id":"REVIEW-PHASE-JACOBIAN-20261017",
+ "software":[{"name":"python-stdlib-only","version":"3.12.14"}],
+ "execution_artifacts":["verify_phase_jacobian.py","exact_unitaries.py","jacobian_contract.json"],
+ "mathematics":{
+  "assertion_tested":"A nonzero holomorphic phase minor at zero, full real boundary rank, the exact positive rank-one derivative identity and resolvent Gram identity; a scalar singular-rank negative control.",
+  "coefficient_domain":"Q(i), exact Fraction arithmetic and Gaussian elimination.",
+  "conventions":"N=6, external ports 0,1; four rational unit-circle phases; tangent coordinates H00,H11,Re H01,Im H01 (rank coordinates, not an orthonormal-volume normalization).",
+  "inputs":["One fixed rational unitary made from exact Givens rotations; rational phases listed in the source.","Poisson laws on U(1) versus their delta boundary limit."],
+  "bounds":{"N":6,"m":2,"internal_variables":4},
+  "non_claims":["No finite computation certifies the abstract TV-continuity lemma.","No uniform density bound or Haar identification."]
+ },
+ "randomness":{"used":false,"generator":"","seed":null}
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "WORKING-TRANSMISSION-SPECTRAL-BRIDGE-20261017",
+  "software": [{"name":"python","version":"3.12.14"},{"name":"sympy","version":"1.14.0"}],
+  "execution_artifacts": ["verify_transmission_bridge.py", "transmission_contract.json"],
+  "mathematics": {
+    "assertion_tested":"Exact circle residues for transmission moments, independent closed 2x2 eigenvector averages, uniform-transmission Beta mixture, rational unitary closure and scalar delay derivatives, and sampling normalization.",
+    "coefficient_domain":"Q(i), rational residues and exact symbolic algebra.",
+    "conventions":"Y=J/(1+J), J=T/|1-dw|^2; source eigenvector selection weighted by its squared source component; ordered distinct marked ports.",
+    "inputs":["Two rational rotation transmissions, powers 1..8, independent eigenvector and scattering residues.","Uniform-transmission mixture powers 1..16.","Prescribed rational unitaries of size 2,3,4 and every ordered source/target pair.","Three rational intensity vectors including one with a zero weight, three test functions."],
+    "bounds":{"rotation_cases":2,"kernel_powers":[1,8],"mixture_powers":[1,16],"unitary_sizes":[2,3,4],"arithmetic":"exact, no numerical integration"},
+    "non_claims":["No asymptotic Porter-Thomas input is proved.","Finite controls do not certify the complete analytic proof.","No BGS solution or novelty assertion."]
+  },
+  "randomness":{"used":false,"generator":"","seed":null}
+}

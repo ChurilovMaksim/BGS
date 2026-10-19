@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-EXTREMAL-CONNECTED-FOUR-PORT-KERNEL-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_extremal_kernel.py",
+    "kernel_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Reconstruct every order-one and order-two open extremal connected kernel from sparse graph types, verify the neutral polynomial and the complete prior three-port polynomial plus symbolic counts, and compute all 24 candidate order-three connected boundary channels",
+    "coefficient_domain": "Exact integers, ten prime fields, fractions.Fraction",
+    "conventions": "A positive edge is assigned either to sigma or to reverse tau; degree constraints become a binary cycle system; reject internal cycles before closing sigma paths; average cyclic choices of initial port; quotient by exact graph automorphism denominators",
+    "inputs": [
+      "extremal_kernel.cpp",
+      "run_extremal_kernel.py",
+      "catalogue_run/graph_catalogue.dat",
+      "dependencies/three_port_reference.json"
+    ],
+    "bounds": {
+      "connected_original_half_rank_max": 3,
+      "q_max": 16,
+      "ports_max": 4,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "collision_codimension_max": 3
+    },
+    "non_claims": [
+      "Four-port cancellation is an observed outcome, not a premise or asserted success condition",
+      "Catalogue completeness and all-prime transfer require separate proofs",
+      "This does not control unbounded higher connected defects or prove BGS"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T12:43:38.882848+00:00",
+    "runtime_seconds": 2.674961,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 175,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "extremal_kernel.cpp",
+    "run_extremal_kernel.py",
+    "catalogue_run/graph_catalogue.dat",
+    "dependencies/three_port_reference.json",
+    "kernel_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "extremal_kernel.cpp",
+      "sha256": "b9137ba075f26dbc5ab0522841ae7a4eb3058e3bace8f5bc557b13457e55e51c",
+      "sha256_after": "b9137ba075f26dbc5ab0522841ae7a4eb3058e3bace8f5bc557b13457e55e51c"
+    },
+    {
+      "path": "run_extremal_kernel.py",
+      "sha256": "510c987d59d024638afce7dd5af6a76bb888492a0a0efa9cb99fbc4068b7fea2",
+      "sha256_after": "510c987d59d024638afce7dd5af6a76bb888492a0a0efa9cb99fbc4068b7fea2"
+    },
+    {
+      "path": "catalogue_run/graph_catalogue.dat",
+      "sha256": "bec15cdcf948f081e1d0730ebb7836d9c9cfcc0b7ecf2b7b25d04137e2c59bde",
+      "sha256_after": "bec15cdcf948f081e1d0730ebb7836d9c9cfcc0b7ecf2b7b25d04137e2c59bde"
+    },
+    {
+      "path": "dependencies/three_port_reference.json",
+      "sha256": "90caa326c1be2fde4d6191127267230173c6b0c98a8a0143f2eb6dfa70e4a9e5",
+      "sha256_after": "90caa326c1be2fde4d6191127267230173c6b0c98a8a0143f2eb6dfa70e4a9e5"
+    },
+    {
+      "path": "kernel_contract.json",
+      "sha256": "8011d24546835edee726a91370c712930e9cb566805db9151498717e241a8ef7",
+      "sha256_after": "8011d24546835edee726a91370c712930e9cb566805db9151498717e241a8ef7"
+    }
+  ],
+  "output_directory": "kernel_run",
+  "declared_results": [
+    "kernel_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "kernel_run/stdout.txt",
+      "sha256": "49bc020b9485ace6e6690446d5d974fa29785e97e36366cdd149cfd5848b5c22",
+      "kind": "log"
+    },
+    {
+      "path": "kernel_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "kernel_run/result.json",
+      "sha256": "7e1925668801c1459423c03a290fa408716cdc9dd3cdd893081da9e12f3fcdbf",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

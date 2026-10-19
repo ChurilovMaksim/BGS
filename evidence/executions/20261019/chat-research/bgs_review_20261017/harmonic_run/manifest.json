@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "claim_id": "REVIEW-HARMONIC-CONTRACTION-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_harmonic_contraction.py",
+    "harmonic_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python-stdlib-only",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact circle-weight second/fourth moments, zero-weight bound, global and small-degree contraction bounds, the spherical eigenvalue and its explicit nonmaximality example.",
+    "coefficient_domain": "Q, exact Fraction arithmetic and integer Weyl dimensions.",
+    "conventions": "Balanced highest weights of U(m); circle diag(exp(it),1,...,1); phi(j)=1/binomial(m+abs(j),abs(j)).",
+    "inputs": [
+      "Every balanced decreasing integer weight with m=2..6, coordinates in -5..5 and positive degree at most 6."
+    ],
+    "bounds": {
+      "m": [
+        2,
+        6
+      ],
+      "weight_coordinate": [
+        -5,
+        5
+      ],
+      "positive_degree_max": 6
+    },
+    "non_claims": [
+      "No certification of arbitrary weights by finite enumeration.",
+      "No transfer of Haar norm estimates to an unknown ensemble."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T12:25:35.295183+00:00",
+    "runtime_seconds": 0.167739,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_harmonic_contraction.py",
+    "harmonic_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_harmonic_contraction.py",
+      "sha256": "fc89d171c4c57a4cb69ea8c35a406af45eda4701577a321aa6d06f73e2ec092f",
+      "sha256_after": "fc89d171c4c57a4cb69ea8c35a406af45eda4701577a321aa6d06f73e2ec092f"
+    },
+    {
+      "path": "harmonic_contract.json",
+      "sha256": "4e30ff49465a4ded50f1dcd1b0b5ea18f314265442d252fe2028b6fd30bb3259",
+      "sha256_after": "4e30ff49465a4ded50f1dcd1b0b5ea18f314265442d252fe2028b6fd30bb3259"
+    }
+  ],
+  "output_directory": "harmonic_run",
+  "declared_results": [
+    "harmonic_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "harmonic_run/stdout.txt",
+      "sha256": "453262c23413f1797286816573801b4775a0bf18ddea116a63207b9bd2a08224",
+      "kind": "log"
+    },
+    {
+      "path": "harmonic_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "harmonic_run/result.json",
+      "sha256": "18b89fa351d82665db148de96e9d20dccac06308f325d93f02c2df8a422b6199",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

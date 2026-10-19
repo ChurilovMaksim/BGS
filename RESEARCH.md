@@ -1,5 +1,16 @@
 # BGS research brief
 
+## Integrated continuation, 19 October 2026
+
+[TRACE-095 through TRACE-105](mathematics/phase_ensemble_continuation_20261019.md)
+cover the checked auxiliary phase research. The full four-port zero and total
+defect-two sum are complete at the stated scope. The joint local-defect-at-most-two
+sum has a quartic limit for tau<1/9 and uniform finite-size control; it retains
+a nonzero -3 tau^3 term. The exact positive Cauchy projection laws do not identify
+a matrix law, as shown by an explicit signed-source counterexample.
+[Integration, evidence audit and next obligations](record/chat_integration_20261019.md).
+BGS-TRACE-005 and BGS-BGS-001 remain OPEN. Conditional G/TC/R premises remain explicit.
+
 ## Checked continuation, 16 October 2026
 
 - **BGS-TRACE-092:** [Positive Abel decomposition and optimal square-root clock rigidity](mathematics/abel_clock_rigidity_20261016.md), including stationary processes and multiple eigenvalues.

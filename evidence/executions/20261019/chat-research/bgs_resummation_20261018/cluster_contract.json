@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-NEUTRAL-CLUSTER-BOUND-20261019",
+  "mathematics":{
+    "assertion_tested":"All set partitions and cycles in the finite range: cluster defect integrality/additivity, intercomponent rank penalty, classification of zero-defect clusters, primitive order <=2 delta and size <=16 delta",
+    "coefficient_domain":"Exact integer matrices, F_3,F_5,F_13",
+    "conventions":"sigma=(0 1 ... n-1); clusters join nonzero K edges and partition blocks; passive singleton vertices removed from the minimal core; no weights or cancellations assumed in local inequalities",
+    "inputs":["cluster_check.cpp","run_cluster_check.py"],
+    "bounds":{"n":"3..7","cycles":872,"cycle_partition_pairs":657148,"fields":[3,5,13],"all_set_partitions":true},
+    "non_claims":["A finite check is not a proof of the all-order theorem","Does not prove generating function reconstruction","No estimate on the sum over unbounded defect","Does not prove BGS"]
+  },
+  "execution_artifacts":["cluster_check.cpp","run_cluster_check.py","cluster_contract.json"],
+  "software":[{"name":"Python standard library","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+  "randomness":{"used":false}
+}

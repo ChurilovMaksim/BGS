@@ -1,0 +1,13 @@
+{
+ "claim_id":"BGS-FIRST-DEFECT-FORMULAS-20261019",
+ "mathematics":{
+  "assertion_tested":"Exact primitive numerator, reduced generating function, stable polynomial degree and leading coefficient, and certified finite-N truncations for the e=2h-1 sector",
+  "coefficient_domain":"Python standard library integers and fractions.Fraction; floating display only",
+  "conventions":"b_h is coefficient of N^-h in V_m/m, formal z series; Q2=P2/(1-z)",
+  "inputs":["first_defect_verification.py","dependencies/h1_core_table.json","dependencies/h2_core_table.json","primitive_run/result.json"],
+  "bounds":{"identities":"m=3..80, h<=floor((m+1)/2)","stable_polynomials":"h=1..8","finite_N":[100,1000,10000],"ratios":[0.1,0.2],"truncation_order":150},
+  "non_claims":["Formula checks do not prove unique diagram decomposition","Formal N values in this check need not equal p^(2d); this is not sampling the physical spectrum","This is not the full form factor"]
+ },
+ "execution_artifacts":["first_defect_verification.py","first_defect_contract.json","dependencies/h1_core_table.json","dependencies/h2_core_table.json","primitive_run/result.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],"randomness":{"used":false}
+}

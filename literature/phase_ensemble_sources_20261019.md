@@ -1,0 +1,9 @@
+# Source checks for the circular-phase continuation
+
+19 October 2026. This is a dependency-scope record, not a novelty certificate.
+
+**EXT-STANLEY-1981.** R. P. Stanley, *Factorization of permutations into n-cycles*, Discrete Mathematics 37 (1981), 255–262, DOI [10.1016/0012-365X(81)90224-7](https://doi.org/10.1016/0012-365X(81)90224-7). Checked [the author-hosted article](https://math.mit.edu/~rstan/pubs/pubfiles/47.pdf), §2, Lemmas 2.1–2.2 and Theorem 3.1, printed pp. 256–257. It supplies the classical long-cycle character convolution and hook data used by TRACE-103. The project separately proves the port orientation weights, cumulant kernels, beta integral, common-edge reconstruction and uniform majorant. No spectral universality follows from the combinatorial source.
+
+M. Aizenman and S. Warzel, [arXiv:1312.7769v2](https://arxiv.org/pdf/1312.7769), Theorem 2.3 and introduction, provide the established Herglotz/Cauchy context. TRACE-105 gives a separate finite-dimensional bounded-holomorphic proof for iid diagonal Cauchy variables, without the source's shift-amenability premise. The general Cauchy mechanism is not claimed as new; matrix-law identification is explicitly excluded.
+
+The other source checks and unsuccessful proposed transfers are preserved in the [frontier packet](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/sources_checked_ru.md), [Cauchy comparison](../evidence/executions/20261019/chat-research/bgs_ward_20261019/cayley_cauchy_transfer_ru.md) and [current source record](../evidence/executions/20261019/chat-research/bgs_integration_20261019/literature_scope_ru.md). Mesoscopic quantum-graph results, the mean Lloyd resolvent and small-rank unsigned graph classifications do not automatically supply the missing theorem for the deterministic Fourier seed.

@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-CONTINUE-20261017-STAR",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_star_sector.py",
+    "star_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exhaustive rooted-word Gaussian normalization and exact star-table counts; bounded radial moments and exact positive-exponent signs",
+    "coefficient_domain": "Exact integers and rational numbers; SymPy for current; descriptive floating logs in star only",
+    "conventions": "Rooted directed cyclic words including loops; D counts distinct edges of multiplicity at least 2; D_phi=-i partial_phi",
+    "inputs": [
+      "verify_star_sector.py"
+    ],
+    "bounds": {
+      "N_m": "N=2,3,4; m=1..8; N=3,m=12",
+      "stars": "(N,k,s)=(3,2,2),(4,2,2),(3,2,3)",
+      "radial": "R in {0,32} and {254/255,256}",
+      "rate_illustration_N": [
+        12,
+        24,
+        60,
+        120,
+        300,
+        600
+      ]
+    },
+    "non_claims": [
+      "Finite computations do not prove an asymptotic theorem",
+      "No proof of BGS or Haar two-port limit",
+      "No compiled formalization"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T13:23:03.588569+00:00",
+    "runtime_seconds": 1.720829,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_star_sector.py",
+    "star_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_star_sector.py",
+      "sha256": "bd89a92b4747c0ab6f824b10baee91f482f38d56b8effb9dea7e7630aa1aaa47",
+      "sha256_after": "bd89a92b4747c0ab6f824b10baee91f482f38d56b8effb9dea7e7630aa1aaa47"
+    },
+    {
+      "path": "star_contract.json",
+      "sha256": "288a77fa5affb8a11a0280167ee62e4a83750ce857fe57927efd1a47eeaecb41",
+      "sha256_after": "288a77fa5affb8a11a0280167ee62e4a83750ce857fe57927efd1a47eeaecb41"
+    }
+  ],
+  "output_directory": "star_run",
+  "declared_results": [
+    "star_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "star_run/stdout.txt",
+      "sha256": "2cf2c0751ed975ebb41446ca8aa590f004b4f2034c58a6fa391cd44a1f5c55cc",
+      "kind": "log"
+    },
+    {
+      "path": "star_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "star_run/result.json",
+      "sha256": "a4f92e8da31ed9bc9c0875404a04125ff68505c9d5969c35cba93a2e2e94ffa7",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-FOUR-PORT-ORIGINAL-CYCLE-PREFIX-20261019",
+ "mathematics":{
+  "assertion_tested":"Directly enumerate standard sigma cycles, every tau path cover with exactly four common edges, every minimal connected collision partition of codimension <=3, and compare all 24 boundary channels to graph reconstruction",
+  "coefficient_domain":"Exact integers, three prime fields, fractions.Fraction",
+  "conventions":"No graph classification, support-size lemma, eligible-root partition filter or graph automorphism weighting is used by the direct enumerator; average four cyclic port roots and divide canonical vertex roots by q",
+  "inputs":["direct_four_port.cpp","run_direct_four_port.py","kernel_run/result.json"],
+  "bounds":{"q":"4..9","primes":[3,5,31],"all_common_edge_set_candidates":"q!/24","collision_codimension_max":3,"boundary_channels":24},
+  "non_claims":["The direct finite prefix does not prove classification completeness at larger q","The two implementations are not independent scientific review","No full BGS claim"]
+ },
+ "execution_artifacts":["direct_four_port.cpp","run_direct_four_port.py","kernel_run/result.json","direct_four_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+ "randomness":{"used":false}
+}

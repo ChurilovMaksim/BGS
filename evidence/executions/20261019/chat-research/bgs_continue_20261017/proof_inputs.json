@@ -1,0 +1,66 @@
+{
+  "base_checkpoint": {
+    "artifact": "inputs/base_research_checkpoint.json",
+    "sha256": "6f6716b1ca12592a3a42f7967476e8fd8b4a65fe1b22f04470c704a2f88e6347",
+    "claim_ids": [
+      "REVIEW-FIXED-CHANNEL-TV-COMPACTNESS-20261017",
+      "REVIEW-POSITIVE-BERNSTEIN-PATH-LAW-20261017"
+    ]
+  },
+  "inputs": [
+    {
+      "original_path": "BGS/mathematics/wick_collision_poisson_20261016.md",
+      "copy_path": "inputs/wick_collision_poisson_20261016.md",
+      "sha256": "a4f330ffe029c8ac6ecd66b27c465732175c0d5ea12defb5675413785d15d784",
+      "bytes": 16089
+    },
+    {
+      "original_path": "BGS/mathematics/gaussian_equal_edge_20261016.md",
+      "copy_path": "inputs/gaussian_equal_edge_20261016.md",
+      "sha256": "b585943ebac20843198be1ffabeb2a1f59f7d028034a94529c5dd19c6ef984de",
+      "bytes": 25010
+    },
+    {
+      "original_path": "BGS/literature/abel_gaussian_sources_20261016.md",
+      "copy_path": "inputs/abel_gaussian_sources_20261016.md",
+      "sha256": "60b8035b54062370ad68284d0e07bfdb854fa25e06aaf061586c3133b19ae91e",
+      "bytes": 3642
+    },
+    {
+      "original_path": "bgs_review_20261017/positive_bernstein_path_law.md",
+      "copy_path": "inputs/positive_bernstein_path_law.md",
+      "sha256": "b1956fd48756af954191740f90faf3c42b19ef1d1f4c872f47fac3312435d95c",
+      "bytes": 13001
+    },
+    {
+      "original_path": "bgs_review_20261017/fixed_channel_total_variation_compactness.md",
+      "copy_path": "inputs/fixed_channel_total_variation_compactness.md",
+      "sha256": "8db023deac6049f0404b11d12157578921d493ee619e85d07d3b8ad44202aca4",
+      "bytes": 12351
+    },
+    {
+      "original_path": "bgs_focus_20261017/dimension_uniform_feedback.md",
+      "copy_path": "inputs/dimension_uniform_feedback.md",
+      "sha256": "56196db6eda04fba68f5e720e679ba74f1983eea55358304c60101a4c9ffda55",
+      "bytes": 17117
+    },
+    {
+      "original_path": "bgs_review_20261017/research_checkpoint.json",
+      "copy_path": "inputs/base_research_checkpoint.json",
+      "sha256": "6f6716b1ca12592a3a42f7967476e8fd8b4a65fe1b22f04470c704a2f88e6347",
+      "bytes": 4506
+    },
+    {
+      "original_path": "upload/two_channel_transmission(4).md",
+      "original_sha256": "4440d3c931195cdd837192f97ad07501a290649d18c5d1f88a4afaac4d111ef4",
+      "original_lines": [
+        7872,
+        8035
+      ],
+      "copy_path": "inputs/attachment_haar_cavity_excerpt.md",
+      "sha256": "c2d86d4e9541acf7d1ed83b19eec18afee1ac954bb5f44c535c90b4439f769f9",
+      "bytes": 6258,
+      "role": "Haar benchmark only; MC16--MC24, not used for general theorem (3)"
+    }
+  ]
+}

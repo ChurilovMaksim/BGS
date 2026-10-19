@@ -375,3 +375,21 @@ TRACE-093 -> TRACE-094 supplies the exact Fock/Schur/swap inputs. Classical
 fixed-degree Haar integration is recorded as EXT-CS-2006. TRACE-094 closes the
 flat collision law and limiting ratio; it adds no edge asserting an implication
 to the unchanged physical BGS terminal targets.
+
+## 19 October phase-ensemble additions
+
+The following registered nodes do not add a proved edge to either terminal BGS obligation.
+
+| Claim | Direct registered prerequisites |
+|---|---|
+| BGS-TRACE-095 | BGS-TRACE-073, BGS-TRACE-077, BGS-TRACE-080 |
+| BGS-TRACE-096 | Self-contained scoped proof; see exact assumptions in source |
+| BGS-TRACE-097 | Self-contained scoped proof; see exact assumptions in source |
+| BGS-TRACE-098 | Self-contained scoped proof; see exact assumptions in source |
+| BGS-TRACE-099 | BGS-TRACE-098 |
+| BGS-TRACE-100 | Self-contained scoped proof; see exact assumptions in source |
+| BGS-TRACE-101 | BGS-TRACE-100 |
+| BGS-TRACE-102 | BGS-TRACE-101 |
+| BGS-TRACE-103 | BGS-TRACE-101, BGS-TRACE-102 |
+| BGS-TRACE-104 | Self-contained scoped proof; see exact assumptions in source |
+| BGS-TRACE-105 | Self-contained scoped proof; see exact assumptions in source |

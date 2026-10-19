@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-17",
+  "user_request": "Critically review attachment, incorporate useful results and continue the breakthrough search without touching BGS.",
+  "repo_integrity": "repo_integrity.json",
+  "claims": [
+    {
+      "id": "REVIEW-CLASSICAL-COMPRESSION-ALL-SIZES-20261017",
+      "state": "working_proof_self_reviewed",
+      "source": "classical_compression_all_sizes.md",
+      "conditional_on_G": false,
+      "boundary": "Classical only; no equality with quantum phase average."
+    },
+    {
+      "id": "REVIEW-LINEAR-K-WINDOW-20261017",
+      "state": "existing_result_reconstructed_and_consolidated",
+      "source": "positive_clock_and_moment_window.md",
+      "conditional_on_G": false,
+      "boundary": "Already in attachment lines 1202--1266; no priority claim."
+    },
+    {
+      "id": "REVIEW-FIXED-CHANNEL-TV-COMPACTNESS-20261017",
+      "state": "conditional_working_proof_self_reviewed",
+      "source": "fixed_channel_total_variation_compactness.md",
+      "conditional_on_G": true,
+      "boundary": "Full G for arbitrary diverging u=o(N), or stated rank condition R; no Haar identification."
+    },
+    {
+      "id": "REVIEW-POSITIVE-BERNSTEIN-PATH-LAW-20261017",
+      "state": "working_proof_self_reviewed",
+      "source": "positive_bernstein_path_law.md",
+      "conditional_on_G": false,
+      "boundary": "W1 approximation of entire law with finite positive coefficients; their asymptotic masses uncomputed."
+    },
+    {
+      "id": "REVIEW-BETA-SMOOTHED-PATH-LAW-20261017",
+      "state": "conditional_working_proof_self_reviewed",
+      "source": "positive_bernstein_path_law.md",
+      "conditional_on_G": true,
+      "boundary": "TV approximation after specified beta smoothing; no quantitative TV rate and no proof that the density tends to one."
+    },
+    {
+      "id": "REVIEW-TRANSMISSION-APPENDIX-EXACT-20261017",
+      "state": "exact_finite_controls_passed",
+      "source": "appendix_run/result.json",
+      "conditional_on_G": false,
+      "boundary": "S4 mean 23/45 is finite-size only."
+    },
+    {
+      "id": "BGS-TWO-CHANNEL-ORIGINAL-THREE-CONDITIONS",
+      "state": "open",
+      "source": "review_and_progress.md",
+      "boundary": "Even the full-general mean limit is not established."
+    },
+    {
+      "id": "BGS-ALL-CHAOTIC-SYSTEMS",
+      "state": "open",
+      "source": "review_and_progress.md",
+      "boundary": "No reduction from every chaotic Hamiltonian system to the studied phase model has been proved."
+    }
+  ],
+  "accepted_attachment_tools": [
+    "AP complete escape and quantum Kac",
+    "SA source spectral averaging",
+    "FM bounded fractional criterion",
+    "UC/HS exact controllability and Hardy structure",
+    "L2/entropy sufficient transfer criteria",
+    "QC coherent occupation coefficients",
+    "CE classical complement",
+    "MC marked-column/Haar inverse-Wishart benchmark",
+    "MR/BG/SG necessary constraints with explicit nonuniqueness boundaries"
+  ],
+  "proposed_corrections": [
+    "CE1--CE6 collisions resolved by CL1--CL17 in late classical appendix",
+    "Historical structural counts separated from current 597 tags and 12 code blocks",
+    "QC7 tail strengthened from k^2 to existing linear k"
+  ],
+  "research_branches": [
+    {
+      "route": "Classical complement -> quantum equipartition",
+      "outcome": "blocked by exact finite interference; classical theorem strengthened independently"
+    },
+    {
+      "route": "Full G -> finite-channel regularity",
+      "outcome": "TV compactness and marked-clock UI proved conditionally"
+    },
+    {
+      "route": "Positive occupation coefficients -> full transmission law",
+      "outcome": "finite positive Bernstein approximation with an explicit W1 error"
+    },
+    {
+      "route": "TV compactness + beta smoothing",
+      "outcome": "conditional positive polynomial-density approximation in TV"
+    },
+    {
+      "route": "Regularity/normalization -> Haar identification",
+      "outcome": "open; compactness and total clock do not evaluate the positive path density"
+    }
+  ],
+  "remaining_obligation": "Control coherent occupation-class masses at O(N) internal lengths; under G prove integral_0^1 |h_N(t)-1| dt -> 0, or use the complete bounded fractional-overlap criterion.",
+  "unperformed": [
+    "No BGS modifications, commit or push.",
+    "No new subagents.",
+    "No claim of a full Lean formalization.",
+    "No rerun of the attachment’s large Monte Carlo tables.",
+    "No global priority or prize-level claim."
+  ]
+}
