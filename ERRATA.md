@@ -55,6 +55,8 @@ mechanisms and historical context remain authoritative in
 
 | `ERR-047` | general_spectra verbatim-transfer assertion | text corrected: conditional transfer with explicit hypotheses | The locality/return-word transfer is no longer asserted verbatim for arbitrary A; required finite support-tower and finite-order hypotheses are listed in manuscript/general_spectra.tex, and BGS-CAYLEY-010 excludes the transfer from its boundary. |
 | `ERR-048` | wiener_riesz gap-separation step and thm:full-riesz status | gap lemma stated explicitly; theorem conditional on it | thm:full-riesz in manuscript/unified_sections/wiener_riesz.tex is conditional on the explicitly stated four-atom gap-separation lemma; registered as BGS-RES-014 (CONDITIONAL). |
+| `ERR-049` | Faure-Tsujii Asterisque 375 (2015): page extent and published title | extent supplied (ix+222 pp.); title corrected to the published form; '1-237' rejected | bibitem FaureTsujii2013 in manuscript/unified_bibliography.tex cites the published title and ix+222 pp. (SMF volume record, ISBN 978-2-85629-823-7; corroborated by Library of Congress, K10plus, MathSciNet MR3461553). |
+| `ERR-050` | explicit return-word example: claim registration and RET-003 note | example registered as BGS-RET-004 (PROVED) on the named exact certificate; RET-003 boundary tail corrected | BGS-RET-003 state unchanged (CONDITIONAL); the section names computations/cpp/return_word_certificate.cpp, and the Python verifier's exact-geometry check was replayed on the current revision (37/528, 30 separations, 1/288). |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

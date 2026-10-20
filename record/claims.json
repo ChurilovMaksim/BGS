@@ -4805,7 +4805,29 @@
       "manuscript": [
         "manuscript/unified_sections/return_words.tex"
       ],
-      "boundary": "Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is not independently registered: its 30 separating normals are stated in the manuscript to be 'part of the certificate' without a named certificate file or hash in the section."
+      "boundary": "Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is registered separately as BGS-RET-004: its tower disjointness rests on the exact integer certificate named in the section (computations/cpp/return_word_certificate.cpp, with its deposited PASS log) and on the independent Python verifier computations/verification/noncommuting_tower.py."
+    },
+    {
+      "id": "BGS-RET-004",
+      "title": "Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + EXACT FINITE CERTIFICATE + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/noncommuting_return_words.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/noncommuting_tower.log",
+        "evidence/executions/20261006/corpus-revision/final/checks/cpp_return_word_certificate.log"
+      ],
+      "verifiers": [
+        "computations/verification/noncommuting_tower.py",
+        "computations/cpp/return_word_certificate.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/return_words.tex"
+      ],
+      "boundary": "The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

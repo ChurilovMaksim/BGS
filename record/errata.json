@@ -338,6 +338,20 @@
       "disposition": "gap-separation step stated as an explicit named lemma; theorem conditional on it",
       "downstream": "manuscript/unified_sections/wiener_riesz.tex states the four-atom gap-separation lemma with its constants as an explicit hypothesis; thm:full-riesz is conditional on that lemma, registered as BGS-RES-014 (CONDITIONAL).",
       "authority": "record/errata.json (scientific repair, 2026-10-20)"
+    },
+    {
+      "id": "ERR-049",
+      "title": "Faure-Tsujii Asterisque 375 (2015): page extent and published title",
+      "disposition": "page extent supplied from the publisher's record; title corrected to the published form; the '1-237' figure rejected as a secondary-source error",
+      "downstream": "manuscript/unified_bibliography.tex (bibitem FaureTsujii2013) now cites 'Prequantum transfer operator for symplectic Anosov diffeomorphism', Asterisque 375 (2015), ix+222 pp.; arXiv:1206.0282. The extent ix+222 is the Societe Mathematique de France volume record (ISBN 978-2-85629-823-7), corroborated by the Library of Congress and K10plus catalogue records and by MathSciNet MR3461553; '1-237' occurs only in a secondary journal bibliography and is incompatible with the volume's own bibliography ending on p. 222. This closes the page-extent item left open by the 2026-10-20 scientific repair.",
+      "authority": "record/errata.json (scientific repair follow-up, 2026-10-20)"
+    },
+    {
+      "id": "ERR-050",
+      "title": "Explicit return-word example registered as BGS-RET-004; BGS-RET-003 boundary note corrected",
+      "disposition": "example claim registered as proved on the named exact finite certificate; stale 'unnamed certificate' wording removed from BGS-RET-003",
+      "downstream": "record/claims.json and record/claim_registry.md gain BGS-RET-004 (PROVED) for the explicit example of manuscript/unified_sections/return_words.tex: tower disjointness rests on computations/cpp/return_word_certificate.cpp (named in the section, git blob ad80a3832555fac3a0afea2013a60a3de6522113; deposited PASS log) and on computations/verification/noncommuting_tower.py, whose exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced margin 37/528, 30 separations and the 1/288 area bound. BGS-RET-003 keeps its CONDITIONAL state; only its boundary tail is corrected, because the section does name the certificate.",
+      "authority": "record/errata.json (scientific repair follow-up, 2026-10-20)"
     }
   ]
 }
