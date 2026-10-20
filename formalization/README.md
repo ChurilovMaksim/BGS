@@ -25,6 +25,12 @@ build without the local application-path adapter. Earlier 16-, 17-, 19- and
 remain outside the active graph; speculative `sorry` files do not count as
 formal progress.
 
+The standalone `FiniteOrbitAlgebra20260922.lean` (22 September 2026) is
+retained as a draft at `drafts/FiniteOrbitAlgebra20260922.lean`, outside
+the active graph. It is source only and has not been typechecked; it
+imports Mathlib, which this project does not vendor (`lake-manifest.json`
+records no packages).
+
 ## Active modules
 
 | Module | Maintained scope |
