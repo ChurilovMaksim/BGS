@@ -1,5 +1,12 @@
 # Theorem families and their limits
 
+This file is a narrative index of theorem families and their limits,
+grouped by family and date; it is not a complete per-claim index.
+For the complete per-claim index use the generated
+[claim registry](../record/claim_registry.md) and the
+[scientific corpus atlas](../docs/corpus_atlas.md); claim status is
+controlled by [claims.json](../record/claims.json).
+
 ## Integrated continuation, 19 October 2026
 
 [TRACE-095 through TRACE-105](phase_ensemble_continuation_20261019.md)

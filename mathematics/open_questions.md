@@ -1,5 +1,21 @@
 # Open mathematical obligations
 
+## Current open obligations (20 October 2026)
+
+The five claims with `state: open` in
+[claims.json](../record/claims.json) on this date are:
+
+| Claim | Obligation |
+|---|---|
+| BGS-BGS-001 | Fixed-strength microscopic BGS universality for the maintained frozen map |
+| BGS-TRACE-005 | Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate |
+| BGS-CAYLEY-005 | Sharp centered pointwise Cayley energy target |
+| BGS-INFO-001 | Full vanishing-noise tomography transition |
+| BGS-RES-003 | All-members analytic resonance nondegeneracy |
+
+The dated sections below are historical snapshots in chronological
+layers; the table above is the current summary.
+
 ## After the 19 October signed-cluster continuation
 
 The complete second defect and full four-port open zero are now established
@@ -121,7 +137,7 @@ the stated startup/cutoff class. Physical microscopic identification and
 BGS remain open.
 
 
-## Current priorities at a glance (11 October 2026)
+## Priorities snapshot (11 October 2026)
 
 The table distinguishes the **terminal fixed-model problem**, possible
 intermediate proof routes, and mathematically independent directions.
