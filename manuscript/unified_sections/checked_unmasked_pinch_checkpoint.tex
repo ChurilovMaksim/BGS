@@ -24,23 +24,55 @@ The $N^{-2}$ normalization applies to the average; raw composition and
 rooted-slot sums instead use $N^{-(j+1)}$ and $N^{-(j+2)}$.
 
 \paragraph{Three pinches close the complete convex hierarchy.}
-On the ordinary HS traceless space, compactness and the flatness estimate
-$\|D\|_{S_2}^2\le C_{\rm flat}N$ give the new statement
+For a gap vector $\mathbf n=(n_1,\ldots,n_j)$ with $n_i\ge0$, define
 \[
- \|D_0\|_{S_3}^3=o(N).
+ G_{j,N}(\mathbf n;\theta)
+ =\operatorname{Tr}_H\!\bigl[D_\theta T_\theta^{n_1}\cdots
+ D_\theta T_\theta^{n_j}\bigr],
 \]
-Three $S_3$ factors and bounded remaining factors therefore give
+where $T_\theta=\operatorname{Ad}(Z_\theta U)$ and $D_\theta$ is the
+corresponding centered pinch superoperator, as in the canonical source
+\texttt{mathematics/right\_frame\_unmasked\_pinch\_hierarchy.md} and its
+exported proof (equations (18)--(23) of
+\texttt{evidence/wave3\_checked\_20261007/raw/right\_overlap/}
+\texttt{authorized\_exports/right\_overlap\_and\_unmasked\_insertions.md}).
+On the ordinary HS traceless space, collective compactness gives, for each
+$\varepsilon>0$, a fixed $R$ with $s_{R+1}(D_0)\le\varepsilon$ eventually,
+where $s_i$ are the singular values of $D_0$. Splitting the singular values
+and using $\|D_0\|\le1$ with the flatness estimate
+$\|D_0\|_{S_2}^2\le C_{\rm flat}N$ gives
 \[
- |G_{j,N}(\mathbf n;\theta)-1|\le\|D_0\|_{S_3}^3,
- \qquad j\ge3,
+ \|D_0\|_{S_3}^3
+ =\sum_i s_i^3
+ \le R+\varepsilon\,\|D_0\|_{S_2}^2
+ \le R+\varepsilon C_{\rm flat}N,
+ \qquad\text{hence}\qquad
+ \eta_N:=N^{-1}\|D_0\|_{S_3}^3\longrightarrow0.
+\]
+Thus $\|D_0\|_{S_3}^3=o(N)$, with no quantitative rate for $\eta_N$.
+Since $V_\theta$ is unitary, $D_\theta$ has the same singular values as
+$D_0$ on the traceless space. Schatten--H\"older with three $S_3$ factors
+and bounded remaining factors therefore gives, for every $j\ge3$,
+\[
+ |G_{j,N}(\mathbf n;\theta)-1|\le\|D_0\|_{S_3}^3=N\eta_N,
 \]
 uniformly in occupation phases, all gaps and insertion count. The identity
-contribution $1$ is retained exactly. This does not bound the first two
-orders pointwise by compactness alone. Their independently controlled
-complete averages, combined with the three-pinch tail, close every complete
-unmasked convex insertion mixture with mass at most one, uniformly for every
-$z_N\in[0,1]$. There is no quantitative decay rate, growing-$r$ stationary
-phase estimate or effective startup.
+contribution $1$ is retained exactly. No pointwise $o(1)$ bound on
+$G_{j,N}-1$ is asserted or needed: the closure below is at the normalized
+aggregate level. Averaging over the $\binom{m-1}{j-1}$ gap compositions
+gives $0\le A_{j,N,m}(\theta)\le1+N\eta_N$ for $j\ge3$. In the expansion of
+$\operatorname{Tr}[zT_\theta+(1-z)D_\theta]^m$ the order-$j$ coefficients
+are the binomial weights $\binom mj z^{m-j}(1-z)^j$, whose sum over
+$j\ge1$ is $1-z^m\le1$. Hence, with $O(N)$ band terms at the $N^{-2}$
+normalization, the $j\ge3$ tail contributes at most
+$N^{-2}\cdot O(N)\cdot(1+N\eta_N)=O(N^{-1})+O(\eta_N)=o(1)$.
+This does not bound the first two orders pointwise by compactness alone.
+Their independently controlled complete averages (the preceding paragraph),
+combined with the three-pinch tail, close every complete unmasked convex
+insertion mixture with mass at most one, uniformly for every
+$z_N\in[0,1]$, at the stated $N^{-2}$ band normalization. There is no
+quantitative decay rate, growing-$r$ stationary phase estimate or
+effective startup.
 
 \paragraph{Exact convex bounds and bounded-noise signed stability.}
 TRACE-029 derives exact finite-$N$ resummation and deconvolution estimates by

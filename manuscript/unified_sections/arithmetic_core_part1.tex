@@ -33,7 +33,12 @@ The diagonal collapses to $(u,v,d)=(1,1,0)$ with multiplicity $p-2$.
 
 \begin{proof}
 The equations $x=uy$ and $x-1=v(y-1)$ give $(u-v)y=1-v$, hence
-\eqref{eq:inverse}.  The diagonal statement is immediate.
+\eqref{eq:inverse}.  The diagonal statement is immediate.  Conversely, given
+$u,v\in\Fp^\times\setminus\{1\}$ with $u\ne v$, define $x,y$ by
+\eqref{eq:inverse}.  Then $y\ne0$ because $v\ne1$, and $y\ne1$ because $u\ne1$;
+$x\ne0$ because $u\ne0$ and $v\ne1$; and $x\ne1$, since $x=1$ would give
+$u(1-v)=u-v$, hence $uv=v$ and $u=1$.  Also $x=uy$ with $u\ne1$ and $y\ne0$
+gives $x\ne y$, and substituting into \eqref{eq:keydef} returns $(u,v)$.
 \end{proof}
 
 Under the subgroup constraints $u,v\in H$, there are exactly
@@ -59,9 +64,13 @@ Fourier orthogonality gives
 \qquad
 \Var_{q\ne0}\Sigma_4(q)=p\Var_{t\ne0}B(t).
 \end{equation}
+Here, and throughout, $\Var$ of a complex-valued quantity denotes
+$\mathbb E|\,\cdot\,-\mathbb E(\cdot)|^2$ over the indicated finite index
+set, with $\mathbb E$ the uniform average; for real-valued quantities this is
+the ordinary variance.
 No probabilistic independence assumption enters this reduction.
 
-\section{Cayley energy and the best uniform bound}
+\section{Cayley energy and a uniform bound}
 
 Put
 \[
@@ -88,7 +97,11 @@ For the unnormalized Fourier transform,
 E_+(A)=\frac{(K-1)^4}{p}
  +\frac1p\sum_{q\ne0}|\widehat{1_A}(q)|^4.
 \end{equation}
-The sharp pointwise target is therefore
+The centered identity \eqref{eq:centered} separates the unavoidable
+zero-mode term $(K-1)^4/p$.  In the regime where that term is $O(K^2)$ -- in
+particular in the intended range $K=o(p^{1/4})$ -- the forced baseline
+\eqref{eq:forced} sets the quadratic scale, and the sharp pointwise target
+(open, not a theorem) is
 \begin{equation}\label{eq:sharp-target}
 E_+(A)=\frac{(K-1)^4}{p}+O(K^{2+o(1)}).
 \end{equation}
@@ -115,9 +128,20 @@ E_+(A)<34K^{8/3}.
 \end{theorem}
 
 \begin{proof}
-For $t\ne0,-2$, the source form of Vyugin--Makarychev's subgroup-curve theorem
-\cite{VM2015,MV2019} gives $r_A(t)\le32K^{2/3}$ after its degree hypotheses are
-checked on the displayed bilinear polynomial.  The exceptional fibres satisfy
+The difference energy $E_+(A)$ of \eqref{eq:energyCH} equals the
+sum-representation energy: $\sum_xr_{A-A}(x)^2$ and $\sum_tr_A(t)^2$ both
+count $\{(a,b,c,d)\in A^4:a+b=c+d\}$, after relabelling the second and
+fourth variables.
+Theorem~2 of Vyugin--Makarychev \cite{VM2015,MV2019}, in the source form for
+bidegree $(m,n)=(1,1)$, applies to an absolutely irreducible $P$ with
+$P(0,0)\ne0$ and $\deg P(x,0)\ge1$ under the size condition
+$100(mn)^{3/2}<K<\frac13p^{3/4}$ -- for $m=n=1$ exactly the hypothesis above --
+and gives $r_A(t)\le16mn^2(m+n)K^{2/3}=32K^{2/3}$.  On the displayed
+polynomial, $P_t(0,0)=-(2+t)$ and $P_t(x,0)=tx-(2+t)$, so the two degree
+hypotheses fail only at $t=-2$ and at $t=0$ respectively.  The fibre $t=2$
+is not exceptional: $P_2(x,y)=2(x+y-2)$ is still absolutely irreducible of
+bidegree $(1,1)$, with $P_2(0,0)=-4$ and $\deg P_2(x,0)=1$, so the same
+bound $r_A(2)\le32K^{2/3}$ holds there.  The exceptional fibres satisfy
 $r_A(0)=K-1$ and $r_A(-2)\le K-1$.  Since
 $\sum_tr_A(t)=(K-1)^2$,
 \[
@@ -140,6 +164,25 @@ identifies the characteristic-zero Cayley set with a rational cross-polytope.
 Every characteristic-zero equal-difference collision among
 $\{c(\zeta^a):a\in\mathbf F_K^*\}$ is identity or central inversion-swap.
 \end{theorem}
+
+\begin{proof}
+Write $b_a=\cot(\pi a/K)$ for $1\le a\le m=(K-1)/2$.  By Chowla's theorem
+\cite{Chowla1970,Wang1982} the numbers $b_a$ are linearly independent over
+$\mathbf Q$.  Since $c(\zeta^a)=-i\cot(\pi a/K)$ and
+$\cot(\pi(K-a)/K)=-\cot(\pi a/K)$, every value $c(\zeta^a)$ is $-i$ times a
+signed vertex $\pm b_a$; under $b_a\leftrightarrow e_a$ the Cayley values are
+the vertices of the rational cross-polytope $\{\pm e_a\}$.  An
+equal-difference collision $c(\zeta^i)-c(\zeta^j)=c(\zeta^r)-c(\zeta^s)$,
+$i\ne j$, $r\ne s$, therefore gives an identity $x-y=u-v$ among signed
+vertices with $x\ne y$ and $u\ne v$, i.e. $x+v=u+y$.  If $x+v=0$, then
+$v=-x$ and $u=-y$: the central inversion-swap $(r,s)=(-j,-i)$.  Otherwise
+$x+v\ne0$ is a sum of two signed basis vectors, and such a sum determines
+its unordered pair of summands uniquely -- including the diagonal case
+$v=x$, where the sum is $\pm2e_a$ and both summands are forced.  Hence
+$\{x,v\}=\{u,y\}$; the alternative $u=y$, $v=x$ would give $x-y=y-x$,
+forcing $x=y$, a contradiction.  Thus $u=x$ and $v=y$: the identity
+collision.
+\end{proof}
 
 For every admissible cleared collision polynomial $P(X)$, direct algebra gives
 $P(X)=(X-1)^3Q(X)$ and a reciprocal relation for $Q$.  Passing to the maximal

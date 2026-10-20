@@ -12,8 +12,8 @@
 
 \subsection{Weighted phase control and a finite normal form for C}\label{coboundary:weighted-phase-control-and-a-finite-normal-form-for-c}
 
-Write \(C_j=U_0^jCU_0^{-j}\), \(\bar C=K^{-1}\sum_j C_j\), \(G_C=\sum_j c_jC_j\), where \(c_j=(K-1-2j)/(2K)\). Then \[
- G_C-U_0G_CU_0^*=C-\bar C,\qquad [\bar C,U_0]=0.                \tag{CB.10}
+Write \(C_j=\widetilde U_0^jC\widetilde U_0^{-j}\), \(\bar C=K^{-1}\sum_j C_j\), \(G_C=\sum_j c_jC_j\), where \(c_j=(K-1-2j)/(2K)\). Then \[
+ G_C-\widetilde U_0G_C\widetilde U_0^*=C-\bar C,\qquad [\bar C,\widetilde U_0]=0.                \tag{CB.10}
 \] Define a phase majorant, including both species, \[
  a_j=\max_{v,w\in\{u,z\}}
           |e_N(\omega(v,T^jw))-1|.
@@ -46,9 +46,9 @@ The commutator \([C_t,C_s]\) has sixteen Weyl terms, each of modulus at most \(a
 The triangle inequality in operator norm also gives \[
  \|[G_C,C]\|_{\rm op}\leq2048/K,\qquad
  \|[C,\bar C]\|_{\rm op}\leq2048/K.                           \tag{CB.13}
-\] The usual two-exponential Duhamel inequality is \(\|e^{ixA}e^{ixD}-e^{ix(A+D)}\|\leq x^2\|[A,D]\|/2\) in any unitarily invariant norm. Applying it first to -\(G_{C}\),C, then to C-\(G_{C}\) and \(U_0G_CU_0^*\), using (CB.10)--(CB.13), proves \[
- \left\|e^{-i\zeta G_C}(e^{i\zeta C}U_0)e^{i\zeta G_C}
-                        -e^{i\zeta\bar C}U_0\right\|_{2,-}
+\] The usual two-exponential Duhamel inequality is \(\|e^{ixA}e^{ixD}-e^{ix(A+D)}\|\leq x^2\|[A,D]\|/2\) in any unitarily invariant norm. Applying it first to -\(G_{C}\),C, then to C-\(G_{C}\) and \(\widetilde U_0G_C\widetilde U_0^*\), using (CB.10)--(CB.13), proves \[
+ \left\|e^{-i\zeta G_C}(e^{i\zeta C}\widetilde U_0)e^{i\zeta G_C}
+                        -e^{i\zeta\bar C}\widetilde U_0\right\|_{2,-}
  \leq\frac{1000\zeta^2}{\sqrt K}\quad(K\geq11).               \tag{CB.14}
 \] Indeed the less rounded bound is \(\zeta^2(2048/K+16\sqrt{2N/(N-1)}/\sqrt K)\), which is smaller than (CB.14) already using \(K\geq11\) and \(N\geq7\). This is another estimate valid for every real zeta, not a formal expansion requiring a small generator.
 

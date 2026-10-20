@@ -3,14 +3,14 @@ Set \[
  T=\begin{pmatrix}3&2\\4&3\end{pmatrix},\qquad
  \alpha=1+\sqrt2,\quad \lambda=3+2\sqrt2,\quad
  N+F\sqrt2=\alpha^K,
-\] where K tends to infinity through odd primes. Then N is odd, \(N^2-2F^2=-1\), and \(N\asymp\lambda^{K/2}\). The moduli need not be prime. Use the phase-normalized cat quantization \(U_0\) from the \hyperref[sec:floquet]{finite Floquet construction}, so that \(U_0W(v)U_0^*=W(Tv)\) and \(U_0^K=I\). Let \[
+\] where K tends to infinity through odd primes. Then N is odd, \(N^2-2F^2=-1\), and \(N\asymp\lambda^{K/2}\). The moduli need not be prime. Use the phase-normalized cat quantization \(\widetilde U_0\) from the \hyperref[sec:floquet]{finite Floquet construction}: \(\widetilde U_0\) is the operator denoted \(U_N=VU_0V^*\) there, not the auxiliary \(U_0=S_h^{-1}\) of (FN.1); the tilde distinguishes the two throughout this coboundary section. It satisfies \(\widetilde U_0W(v)\widetilde U_0^*=W(Tv)\) and \(\widetilde U_0^K=I\). Let \[
  W(a,b)f(x)=e_N(a(x-b/2))f(x-b),\qquad B_v=W(v)+W(-v).
-\] All symmetrized observables and \(U_0\) preserve odd parity. Write \(d=(N-1)/2\) and \(\tau_-(M)=d^{-1}\operatorname{Tr}_{-}M\).
+\] All symmetrized observables and \(\widetilde U_0\) preserve odd parity. Write \(d=(N-1)/2\) and \(\tau_-(M)=d^{-1}\operatorname{Tr}_{-}M\).
 
 The perturbation is now a different, fixed Fourier observable: \[
- A=B_{(1,0)},\quad D=U_0AU_0^*=B_{(3,4)},\quad
- H=A-D,\quad V_\varepsilon=e^{i\varepsilon H}U_0.                 \tag{CB.1}
-\] It is a coboundary: \(\sum_{j=0}^{K-1}U_0^jHU_0^{-j}=0\) exactly. The real classical Fourier symbol of H is independent of N. The products of the two coordinates of (1,0), (3,4), (2,4), and (4,4) are even, so the centered finite-Weyl convention introduces no N-dependent sign for these fixed Fourier modes. As throughout the project, the quantum exponent \(\varepsilon\) corresponds to a classical action amplitude proportional to \(\varepsilon\)/N, not \(\varepsilon\) itself.
+ A=B_{(1,0)},\quad D=\widetilde U_0A\widetilde U_0^*=B_{(3,4)},\quad
+ H=A-D,\quad V_\varepsilon=e^{i\varepsilon H}\widetilde U_0.                 \tag{CB.1}
+\] It is a coboundary: \(\sum_{j=0}^{K-1}\widetilde U_0^jH\widetilde U_0^{-j}=0\) exactly. The real classical Fourier symbol of H is independent of N. The products of the two coordinates of (1,0), (3,4), (2,4), and (4,4) are even, so the centered finite-Weyl convention introduces no N-dependent sign for these fixed Fourier modes. As throughout the project, the quantum exponent \(\varepsilon\) corresponds to a classical action amplitude proportional to \(\varepsilon\)/N, not \(\varepsilon\) itself.
 
 Put \[
  s_N=\sin(4\pi/N)>0,\quad \zeta=\varepsilon^2s_N,\quad
@@ -52,7 +52,7 @@ Let u=(2,4), z=(4,4) and C=\(B_{u}\)-\(B_{z}\). Since \(W(v)W(w)=e_N(\omega(v,w)
  [A,D]=-2i s_N C.                                             \tag{CB.6}
 \] Each double commutator in (CB.5) has at most eight Weyl terms of coefficient modulus \(4s_N^2\). Therefore both norms are at most \(32s_N^2\), and \[
  \left\|e^{-i\varepsilon A}V_\varepsilon e^{i\varepsilon A}
-                  -e^{i\zeta C}U_0\right\|_{\rm op}
+                  -e^{i\zeta C}\widetilde U_0\right\|_{\rm op}
  \leq R_N(\varepsilon):=\frac{64}{3}|\varepsilon|^3s_N^2.        \tag{CB.7}
 \] The same bound holds in normalized odd Hilbert--Schmidt norm. At the scale (CB.3), \(KR_N=O_t(K^{1/4}/\sqrt N)\); this tends to zero. The small quantity is controlled by nested commutators, not by the norm of \(\varepsilon\) A.
 

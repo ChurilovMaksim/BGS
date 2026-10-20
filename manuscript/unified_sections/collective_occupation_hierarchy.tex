@@ -11,9 +11,35 @@ The exact collective trace is
  \bigl(\operatorname{Sym}^q(T_U)-H_{q,N}\bigr)\right],
  \qquad T_U=(|U|^2-J)|_{\mathbf1^\perp}.
 \]
+The inverse is legitimate at every degree, by the following Gram bound
+(canonical source: \texttt{mathematics/collective\_occupation\_hierarchy.md},
+(C4)--(C5)). The exact Haar fourth moments
+$\mathbb E|V_{ia}|^4=2/[N(N+1)]$ and
+$\mathbb E|V_{ia}|^2|V_{ib}|^2=1/[N(N+1)]$ ($a\ne b$) give
+$\mathbb E_V(T_V^*T_V)=\mathbb E_V(T_VT_V^*)=I/(N+1)$ on the traceless
+diagonal space, where $T_V=(|V|^2-J)|_{\mathbf1^\perp}$.
+For $q\ge2$, factor two distinct tensor legs of
+$\langle v,\operatorname{Sym}^q(T_V)v\rangle$, bound the remaining legs
+by $\|T_V\|\le1$, and apply Cauchy--Schwarz in $V$; this gives
+$|\langle v,H_{q,N}v\rangle|\le\|v\|^2/(N+1)$. Since $H_{q,N}$ is
+self-adjoint, its spectrum lies in $[-(N+1)^{-1},(N+1)^{-1}]$, so
+$G_{q,N}=I-H_{q,N}$ is invertible with
+$\|G_{q,N}^{-1}\|\le(N+1)/N$ for every $q\ge2$; at $q=1$,
+$H_{1,N}=\mathbb E_VT_V=0$ and $G_{1,N}=I$. There is no conditioning
+singularity at $q=N$.
 An all-degree Gram bound and a finite $q\le bN$ Haar-tail argument,
 together with the explicitly inherited actual FM-021 gap and flatness
 estimates, give $S_{m,N}(U_N)=O_b(1)$ through fixed positive Heisenberg bands.
+In outline (source (C9)--(C14)): the Haar tail
+$\Pr(\|T_V\|>\sqrt{159/160})\le4N^2e^{-N/160}$ and the rank bound
+$\operatorname{rank}H_{q,N}\le p(q)\le e^{3\sqrt q}$ give
+$\sum_{q=2}^m\operatorname{Tr}[H_{q,N}(I-H_{q,N})^{-1}]
+=O_{b,\varepsilon}(N^{-1+\varepsilon})$ for $m\le bN$; the inherited
+FM-021 inputs $\|T_{U_N}\|\le1/2$ eventually and $P_{U_N}(a,b)\le C/N$ make
+$\log\det(I-zT_{U_N})^{-1}$ uniformly bounded on $|z|=3/2$, so Cauchy
+summation of the symmetric powers yields
+$S_{m,N}(U_N)=\det(I-T_{U_N})^{-1}-1
++O_{b,\varepsilon}(N^{-1+\varepsilon}+(2/3)^m)=O_b(1)$.
 The original $N^{-2}$ compact-time aggregate is therefore $O_w(N^{-1})$.
 The $N=2$ unbounded-degree failure control prevents replacing this finite
 band theorem by an infinite-degree determinant expectation.

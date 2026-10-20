@@ -1,4 +1,6 @@
-% Proposed new section; not yet included in the repository manuscript.
+% Included in the repository manuscript: this file is input by
+% manuscript/BGS_unified.tex, and record/claims.json registers it as the
+% manuscript source of BGS-FM-021 and BGS-FM-022.
 % Canonical sources: mathematics/position_chain_mixing.md,
 % mathematics/four_branch_parametrix.md, mathematics/reversed_path_decay.md.
 % Base: 0ffb20cc152d0ddd2620887e46d21d1120b95fd8.
@@ -21,6 +23,10 @@ integer $L\ge0$,
 \[
  \|P_N^L-J_N\|\le2^{-L}.
 \]
+Indeed, $P_N$ is doubly stochastic, so $P_NJ_N=J_NP_N=J_N$ and hence
+$(P_N-J_N)^L=P_N^L-J_N$; the displayed estimate
+$\limsup\|P_N-J_N\|\le10^{-64}<1/2$ then gives
+$\|P_N^L-J_N\|=\|(P_N-J_N)^L\|\le\|P_N-J_N\|^L\le2^{-L}$.
 The threshold is not effective. This is a singular-norm estimate and does
 not assume that $P_N$ is normal.
 

@@ -122,8 +122,17 @@ Additive orthogonality gives the exact mixed-moment identity
  {(p-1)n^{r/2}}.
  \label{eq:cayley-allorder-moment}
 \end{equation}
-The subtraction removes $q=0$; in particular the exact mean is
-$-\sqrt n/(p-1)$ and the second moment is $(p-n)/(p-1)$.
+The subtraction removes $q=0$. The two lowest cases have no excess at any
+split prime, by direct $\mathbf F_p$ computations. For the word $(1)$, a
+relation $c(h^a)=0$ forces $h^a=-1$, since $c(x)=(x+1)/(x-1)$ vanishes only
+at $x=-1$; but $-1\notin H$, as $H$ has odd order $K$ while $-1$ has order
+two. Hence $Z_{K,(1)}(p)=B_{K,(1)}=0$. For the word $(1,1)$,
+$c(x)+c(y)=0$ with $x,y\in H\setminus\{1\}$ becomes, after clearing
+denominators (legitimate since $x,y\ne1$ and $p$ is odd), the equation
+$2xy-2=0$, i.e.\ $xy=1$; these are exactly the balanced tuples. Hence
+$\Delta_{K,(1)}(p)=\Delta_{K,(1,1)}(p)=0$ for every split $p$, and
+\eqref{eq:cayley-allorder-moment} gives in particular the exact mean
+$-\sqrt n/(p-1)$ and the second moment $(p-n)/(p-1)$.
 
 For independent uniform phases $\Theta_1,\ldots,\Theta_d$ on $[0,2\pi]$, put
 \[
@@ -203,7 +212,8 @@ Thus the exact fourth-order baseline does not force the higher-order
 classification. The all-order budgets are needed.
 The maintained verifier checks 32 finite word/order designs, representing
 6440 ordered tuples and 1242 scaling orbits, with 13293 orbit-valuation
-checks. These are implementation regressions, not proofs of the external
+checks (run log
+\path{evidence/executions/20261006/corpus-revision/final/checks/cayley_higher_moments.log}). These are implementation regressions, not proofs of the external
 arithmetic inputs. The full statements, proof details, source locators,
 and limits of the BGS interpretation are in
 \path{mathematics/cayley_trace_gaussian_limit.md}.

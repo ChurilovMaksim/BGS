@@ -37,6 +37,36 @@ gives:
 \end{equation}
 \end{theorem}
 
+\begin{proof}
+Index the elements of $A$ by $\mathbf F_K^\ast$.  An admissible
+collision quadruple is $q=(i,j,r,s)$ with $i\ne j$, $r\ne s$;
+simultaneous multiplication by $a\in\mathbf F_K^\ast$ acts freely,
+every orbit has a unique representative with $i=1$, and the number
+of non-forced orbits is
+\[
+N_K=\frac{(K-1)^2(K-2)^2-(K-1)(2K-5)}{K-1}
+   =(K-1)(K-2)^2-(2K-5)=K^3-5K^2+6K+1.
+\]
+For a normalized representative let $P_q$ be the cleared Cayley
+collision polynomial and $R_q=\Res(\Phi_K,P_q)$.  By the
+square-resultant theorem $R_q=K^3M_q^2$ with $M_q\ne0$, and
+$|R_q|\le12^{K-1}$.  For a split prime $p$ and a generator $h$ of
+$H$, the equation $P_q(h^a)=0$ is exactly the collision attached to
+$a\cdot q$; writing $s_q(p)$ for the number of such $a$, one has
+$\Delta_K(p)=\sum_q s_q(p)$.  Since $\Phi_K$ is separable modulo
+$p$ and splits completely, every root counted by $s_q(p)$
+contributes a factor $p$ to $R_q$, hence
+$s_q(p)\le v_p(R_q)=2v_p(M_q)$, the last equality because $p\ne K$.
+Summing over split primes and using
+$\sum_p v_p(M_q)\log p\le\log|M_q|$ gives
+\[
+\sum_p\Delta_K(p)\log p
+\le\sum_q2\log|M_q|
+=\sum_q\log(|R_q|/K^3)
+\le N_K\bigl((K-1)\log12-3\log K\bigr).
+\]
+\end{proof}
+
 For prime $K\asymp X^\theta$ and split prime $p\asymp X$,
 Bombieri--Vinogradov and PNT \cite{Bombieri1965,IK2004} imply
 \[
@@ -51,12 +81,34 @@ density-one exact baseline for fixed $\theta<1/5$:
 E_+(A)=3(K-1)(K-2)
 \]
 for asymptotically almost every split pair.
+Indeed, the average is over the dyadic family $Q/2<K\le Q$,
+$X/2<p\le X$, $p\equiv1\pmod K$, whose cardinality has order
+$X/(\log X)^2$ by Bombieri--Vinogradov and the prime number
+theorem.  Since $\Delta_K(p)$ is a nonnegative integer and
+$K^2\le Q^2=X^{2\theta}$ on this family, Markov's inequality gives
+\[
+\frac{\#\{(K,p):\Delta_K(p)\ge1\}}{|\mathcal D_\theta(X)|}
+\le\operatorname{average}\Delta_K(p)
+\le Q^2\cdot\operatorname{average}\frac{\Delta_K(p)}{K^2}
+\ll_\theta X^{5\theta-1}\longrightarrow0
+\qquad(\theta<1/5),
+\]
+and on the complementary pairs $\Delta_K(p)=0$, whence
+$E_+(A)=(K-1)^2+(K-1)(2K-5)=3(K-1)(K-2)$.
 
 Now let $p\ne2,K$ be arbitrary and put
 \[
 f=\ord_K(p),\qquad q=p^f.
 \]
-In $\mathbf F_q$ the order-$K$ subgroup exists uniquely.
+In $\mathbf F_q$ the order-$K$ subgroup exists uniquely.  Put
+$A_{K,p}=c(H\setminus\{1\})\subset\mathbf F_q$ and
+\[
+\Delta_K^{\rm ext}(p)
+ =\sum_{d\ne0}r_{A_{K,p}}(d)^2-(K-1)(2K-5),
+\]
+the number of ordered non-forced collision quadruples in the
+minimal extension.  It is a nonnegative integer, and
+$\Delta_K^{\rm ext}(p)=0$ gives $E_+(A_{K,p})=3(K-1)(K-2)$.
 
 \begin{theorem}[Frobenius amplification]\label{thm:frob}
 Every non-forced collision orbit under the $p$-power Frobenius has size exactly
@@ -71,15 +123,52 @@ all such rational primes in the minimal extension.
 \begin{proof}
 Frobenius multiplies every exponent by $p$ modulo $K$.  If a positive power
 $d<f$ fixed a collision tuple, any nonzero coordinate would imply
-$p^d\equiv1\pmod K$, contradicting the definition of $f$.  The resultant
-argument is applied at one prime ideal over $p$; $p\ne K$ is unramified, so its
-valuation on rational integers is the ordinary $p$-valuation.
+$p^d\equiv1\pmod K$, contradicting the definition of $f$.  Hence every
+non-forced Frobenius orbit has size exactly $f$, proving
+$f\mid\Delta_K^{\rm ext}(p)$.
+
+It remains to extend the budget and the classification.  Retain the
+$N_K$ normalized scaling orbits and their resultants
+$R_Q=\Res(\Phi_K,P_Q)=K^3M_Q^2$ from the split budget.  For $p\ne K$
+choose a prime ideal $\mathfrak P$ of $\mathbf Z[\zeta_K]$ above
+$p$; its residue degree is $f$, and reduction sends $\zeta_K$ to a
+primitive $K$th root $h\in\mathbf F_q$.  With
+$s_Q(p)=\#\{a\in\mathbf F_K^\ast:P_Q(h^a)=0\}$ one has
+$\Delta_K^{\rm ext}(p)=\sum_Qs_Q(p)$, and the product formula
+$R_Q=\prod_aP_Q(\zeta_K^a)$ puts $R_Q\in\mathfrak P^{s_Q(p)}$.
+Since $p\ne K$ is unramified, $v_{\mathfrak P}$ of a rational
+integer is the ordinary $p$-valuation, so
+$s_Q(p)\le v_p(R_Q)=2v_p(M_Q)$.  Summing over $p$ exactly as in the
+split case gives
+$\sum_{p\ne2,K}\Delta_K^{\rm ext}(p)\log p
+ \le N_K\bigl((K-1)\log12-3\log K\bigr)$.
+For the classification, apply the maintained cluster argument to
+the squarefree difference polynomial $S_K$ at $\mathfrak P$: its
+roots are $\mathfrak P$-integral, distinct roots coalesce modulo
+$\mathfrak P$ exactly when collisions occur, and
+$v_{\mathfrak P}(\Disc S_K)=v_p(\Disc S_K)$; hence
+$\Delta_K^{\rm ext}(p)>0$ if and only if $p\mid\Disc(S_K)$, with
+$\Delta_K^{\rm ext}(p)\le4v_p(\Disc(S_K))$.
 \end{proof}
 
 PNT, Brun--Titchmarsh and the scarcity of small multiplicative orders then give
 a density-one exact baseline for unrestricted prime pairs
 $K\asymp X^\theta$, $p\asymp X$ for every fixed $\theta<1/3$.  This mechanism
-is absent on the split slice because there $f=1$.
+is absent on the split slice because there $f=1$.  In detail, split
+the pairs according as $f=\ord_K(p)\le K^\beta$ or $f>K^\beta$,
+where $\max(0,4-1/\theta)<\beta<1$; such a $\beta$ exists exactly
+when $\theta<1/3$.  The residue classes modulo $K$ of order at
+most $K^\beta$ number at most
+$\sum_{d\mid K-1,\,d\le K^\beta}\varphi(d)\le K^\beta\tau(K-1)
+ =K^{\beta+o(1)}$,
+and Brun--Titchmarsh bounds the primes in each such class in
+$(X/2,X]$ by $O_\theta(X/(K\log X))$; summing over prime
+$K\asymp Q$ makes the small-order pairs a fraction
+$O(Q^{\beta-1+o(1)})$ of all pairs.  If $f>K^\beta$ and the pair is
+bad, the orbit theorem gives
+$\Delta_K^{\rm ext}(p)\ge f>K^\beta$, so the extended budget bounds
+the bad primes for each $K$ by $O(K^{4-\beta}/\log X)$, a fraction
+$O(Q^{4-\beta}/X)$ of all pairs.  Both fractions tend to zero.
 
 \section{Full Cayley--Jacobi trace and corrected off/off geometry}
 
