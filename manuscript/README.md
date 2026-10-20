@@ -33,7 +33,11 @@ and records why retained historical copies must not be deleted in bulk.
 
 The [phase-channel/jet section](unified_sections/phase_channel_jet_20261008.tex)
 presents TRACE-053/054/056, including the optimal matrix coefficient $4/3$,
-and explicitly retains TRACE-055 as verification-pending. The
+and explicitly retains TRACE-055 as verification-pending. TRACE-055 is
+therefore not in the same status class as TRACE-053/054/056: it has no
+maintained proof source in `mathematics/` (its registry source is the
+dated research checkpoint `record/research_checkpoint_20261008.md`) and
+must not be cited as a reconstructed analytic result. The
 [attached-PDF review](../literature/phase_channel_jet_sources_20261008.md)
 states which final-section assertions have maintained proofs and which
 remain unpromoted. The consolidated build is not a blanket acceptance of
@@ -66,6 +70,25 @@ checks the complete included source closure, citation keys and bibliography
 uniqueness before both CI manuscript builds. It reports unresolved or
 duplicate cross-reference labels separately, without pretending that a
 well-formed reference establishes mathematical validity.
+
+## Sections retained outside the consolidated build
+
+Two files in `unified_sections/` are **not** part of the build rooted at
+[BGS_unified.tex](BGS_unified.tex):
+
+| File | Status |
+|---|---|
+| `unified_sections/cayley_curve_uniform.tex` | Excluded from the build; retained as historical material |
+| `unified_sections/intermediate_old_layers.tex` | Excluded from the build; retained as historical material |
+
+This exclusion is a recorded editorial fact; it is not a claim that their
+contents are superseded or lost. A decision on their final disposition
+(reactivation, archival or removal) is the author's.
+
+Eight further sections that do not appear as direct `\input` lines of
+`BGS_unified.tex` are included indirectly, through
+[final_delivery_note.tex](final_delivery_note.tex), which the root file
+inputs; they are part of the build.
 
 ## Build
 
