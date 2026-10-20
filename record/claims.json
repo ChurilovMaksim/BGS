@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -51,7 +51,7 @@
       "id": "BGS-CAYLEY-001",
       "title": "Pair-key and fourth-moment reduction",
       "state": "proved",
-      "ledger_status": "EXACT + FINITE-CERTIFICATE",
+      "ledger_status": "EXACT + FINITE-CERTIFICATE (PARTIAL AT LARGEST DESIGNS)",
       "source": "mathematics/fourth_moment_reduction.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -68,7 +68,7 @@
       "manuscript": [
         "manuscript/unified_sections/arithmetic_core_part1.tex"
       ],
-      "boundary": "Finite-field reduction; not a microscopic spectral theorem."
+      "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only."
     },
     {
       "id": "BGS-CAYLEY-002",
@@ -93,8 +93,8 @@
     {
       "id": "BGS-CAYLEY-003",
       "title": "Direct K^(8/3) Cayley energy bound in the explicit subgroup-size range",
-      "state": "proved",
-      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "state": "verification-pending",
+      "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND",
       "source": "mathematics/cayley_direct_energy.md",
       "dependencies": [
         "BGS-CAYLEY-002"
@@ -240,7 +240,7 @@
       "id": "BGS-FM-005",
       "title": "Actual frozen-kick Jacobi decomposition and exact low-rank obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE DIAGNOSTICS",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
       "source": "mathematics/frozen_kick_rank_boundary.md",
       "dependencies": [],
       "external_dependencies": [
@@ -256,7 +256,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT."
+      "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT. Finite diagnostics are floating-point SVD at kick parameter t=0.4 on dimensions [3, 5, 7, 9, 15, 19, 21, 23, 35, 49, 63, 77]; they are not numerics at the frozen model value tau=10^-80 and do not by themselves establish exact rank."
     },
     {
       "id": "BGS-FM-006",
@@ -312,7 +312,7 @@
       "id": "BGS-FM-008",
       "title": "Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS (FINITE RANGES ONLY; 7|N MODEL BRANCH NOT EXERCISED)",
       "source": "mathematics/frozen_algebraic_spectral_simplicity.md",
       "dependencies": [
         "BGS-FM-005"
@@ -334,7 +334,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions.",
+      "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions. Independent finite-control coverage: estimates for odd N<502; balance checks only for (N, r) scopes (3, r<4), (5, r<6), (9, r<10), (15, r<16), (25, r<6), (75, r<4), (125, r<4); dimension-rank cases (3, 5, 9, 15, 25, 35, 45). The model cross-factorization branch of fm008_independent.py is guarded by if n % 7 and is silently skipped at N=49, the sole 7-divisible test dimension.",
       "review_scope": "Fresh independent full internal audit at existing odd N>=3,7∤N scope; primary LW statement/application checked. The simple-A/nonzero-entry r1 pair-commutant leaf uses no LW. Historical author review retained."
     },
     {
@@ -367,7 +367,7 @@
       "id": "BGS-FM-010",
       "title": "Nonvanishing of every fixed-model power trace and classification of scalar returns",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + EXACT INTEGER REGRESSION + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
       "source": "mathematics/frozen_arithmetic_trace_rigidity.md",
       "dependencies": [
         "BGS-FM-001",
@@ -391,7 +391,7 @@
         "manuscript/unified_sections/fixed_map_frontier.tex",
         "manuscript/unified_sections/spectral_extensions.tex"
       ],
-      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact.",
+      "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
       "proof_dependencies": [
         "mathematics/uniform_trace_square_transcendence.md"
       ],
@@ -426,6 +426,7 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
+        "evidence/executions/20261020/toolchain-followup/receipt.json",
         "evidence/executions/20261006/original-channel-gap/lean.log",
         "evidence/executions/20261006/original-channel-gap/integration.json"
       ],
@@ -434,7 +435,7 @@
         "formalization/Bgs.lean"
       ],
       "manuscript": [],
-      "boundary": "Pinned Lean 4.33.1 build of all 17 active modules completed successfully (20 Lake jobs), with printed axiom lists. native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
+      "boundary": "Pinned Lean 4.33.1 build of all 24 active modules completed successfully (27 Lake jobs), including CoherenceBudget, per the toolchain follow-up receipt of 20 October 2026 recorded at source commit cfe74ab (partial build snapshot: 69 authenticated unchanged files; the Bgs sources are unchanged between cfe74ab and 78066c8). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
     },
     {
       "id": "BGS-INFO-001",
@@ -582,7 +583,7 @@
       "id": "BGS-RES-006",
       "title": "Exact adjoint-resolvent representation and pair-Abel equivalence",
       "state": "proved",
-      "ledger_status": "EXACT FINITE-N IDENTITY + PROJECT DERIVATION",
+      "ledger_status": "FINITE-N IDENTITY + PROJECT DERIVATION; COMPUTATIONAL CONTROL IS FLOAT64 FINITE-N REGRESSION, NOT EXACT",
       "source": "mathematics/fixed_map_resolvent_frontier.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -594,7 +595,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows."
+      "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries."
     },
     {
       "id": "BGS-RES-007",
@@ -619,12 +620,14 @@
       "id": "BGS-RET-001",
       "title": "Harmonic return law for the actual kicked Pell propagator",
       "state": "proved",
-      "ledger_status": "EXACT",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
       "source": "mathematics/pell_harmonic_returns.md",
       "dependencies": [
         "BGS-RET-002"
       ],
-      "external_dependencies": [],
+      "external_dependencies": [
+        "EXT-DEMNI-2016"
+      ],
       "evidence": [
         "evidence/certificates/pell_harmonic_returns_20260910/manifest.json",
         "evidence/certificates/pell_harmonic_returns_20260910/result.json"
@@ -636,7 +639,7 @@
       "manuscript": [
         "manuscript/unified_sections/pell_harmonic_returns.tex"
       ],
-      "boundary": "Fixed multiplicity and logarithmic return time; not Heisenberg-scale microscopic BGS."
+      "boundary": "Fixed multiplicity m and logarithmic return times mK at the vanishing kick epsilon=tau/sqrt(2K); harmonics are sampled; not Heisenberg-scale microscopic BGS. The free unitary Brownian endpoint identification uses Demni (EXT-DEMNI-2016). Computational controls: exact diagram/lattice checks plus complex128 matrix controls at K=3, 5 with the single value epsilon=0.23 only."
     },
     {
       "id": "BGS-RET-002",
@@ -785,7 +788,7 @@
       "id": "BGS-TRACE-008",
       "title": "Two-clock falsifier for sufficiency of the CUE Gram second moment",
       "state": "proved",
-      "ledger_status": "EXACT ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW",
+      "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
       "source": "mathematics/two_clock_gram_falsifier.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -2078,7 +2081,7 @@
       "manuscript": [
         "manuscript/unified_sections/actual_seven_primary_commutant.tex"
       ],
-      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent 19-module aggregate build completed."
+      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent aggregate build at the current 24-module graph completed (27 Lake jobs; toolchain follow-up receipt of 20 October 2026)."
     },
     {
       "id": "BGS-TRACE-018",
@@ -2823,7 +2826,7 @@
       "manuscript": [
         "manuscript/unified_sections/phase_channel_jet_20261008.tex"
       ],
-      "boundary": "Uniform coordinate phases reused at every return; Frobenius channel norm and norm of averaged full eigenspace pinching. No microscopic form factor, mixed-source law, deterministic phase limit or BGS.",
+      "boundary": "Uniform coordinate phases reused at every return; Frobenius channel norm and norm of averaged full eigenspace pinching. No microscopic form factor, mixed-source law, deterministic phase limit or BGS. Computational controls are finite float64/complex128 quadrature and random samples (channels m in (3, 4); cascade samples at m<=6; jets at m<=3); per the verifier's own scope they do not certify the general analytic theorems.",
       "priority_status": "not-established",
       "formalization_scope": "Integer coefficient elimination / Fourier trace-defect arithmetic only; no analytic identity, integration, matrix inequality or limit formalized."
     },
@@ -2850,7 +2853,7 @@
       "manuscript": [
         "manuscript/unified_sections/phase_channel_jet_20261008.tex"
       ],
-      "boundary": "Square finite rational inner F=zG, boundary right weight T^-1/2. Optimal leading 4/3 with lower-order terms; smooth nonnegative C2 localization retains omega-second-derivative penalty. No actual cubic-delay moment, arbitrary event localization or microscopic cavity law.",
+      "boundary": "Square finite rational inner F=zG, boundary right weight T^-1/2. Optimal leading 4/3 with lower-order terms; smooth nonnegative C2 localization retains omega-second-derivative penalty. No actual cubic-delay moment, arbitrary event localization or microscopic cavity law. Optimality of the leading coefficient 4/3 rests on the analytic proof only; the computational controls are finite float64 quadrature and random samples and, per the verifier's own scope ('no theorem or optimality certificate'), do not certify optimality.",
       "priority_status": "not-established",
       "formalization_scope": "Integer coefficient elimination / Fourier trace-defect arithmetic only; no analytic identity, integration, matrix inequality or limit formalized."
     },
@@ -2896,14 +2899,14 @@
       "manuscript": [
         "manuscript/unified_sections/phase_channel_jet_20261008.tex"
       ],
-      "boundary": "Deterministic phase-independent Hermitian H with Tr H=m and Tr H^2<=C_H m; bounded real flow and normal scalar absorption. L1 unweighted scalar source and each fixed derivative only; no anisotropic physical absorption, mixed products, scalar endpoint identification or deterministic phase removal.",
+      "boundary": "Deterministic phase-independent Hermitian H with Tr H=m and Tr H^2<=C_H m; bounded real flow and normal scalar absorption. L1 unweighted scalar source and each fixed derivative only; no anisotropic physical absorption, mixed products, scalar endpoint identification or deterministic phase removal. Computational controls are the finite float64 scalar_flow_controls of the shared phase_channel_jet.py run; per that script's own scope they do not certify the general analytic theorem.",
       "priority_status": "not-established"
     },
     {
       "id": "BGS-TRACE-057",
       "title": "Arbitrary-source phase covariance",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/source_covariance_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -2911,9 +2914,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -2925,7 +2926,7 @@
       "id": "BGS-TRACE-058",
       "title": "Integrable all-order phase absorption",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/integrable_phase_absorption_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -2933,9 +2934,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -2947,7 +2946,7 @@
       "id": "BGS-TRACE-059",
       "title": "Anisotropic physical-source transport",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/physical_source_transport_20261011.md",
       "dependencies": [
         "BGS-TRACE-053",
@@ -2959,9 +2958,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -2973,7 +2970,7 @@
       "id": "BGS-TRACE-060",
       "title": "All fixed conditional clock powers, full-depth measure and exact rank atom",
       "state": "conditional",
-      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL ON ALL-TIME FLATNESS; FINITE CONTROLS SEPARATE",
+      "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL ON ALL-TIME FLATNESS; FINITE CONTROLS SEPARATE; SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED FROM VERIFIERS (CONTAINS NONE OF THIS CLAIM'S OBJECTS); CLAIM-SPECIFIC VERIFIERS RETAINED",
       "source": "mathematics/delay_bootstrap_20261011.md",
       "dependencies": [],
       "external_dependencies": [
@@ -2992,7 +2989,6 @@
         "evidence/executions/20261011/clock-universality/README.md"
       ],
       "verifiers": [
-        "computations/verification/chat_research_20261011.py",
         "computations/verification/schur_censoring_and_clock.py",
         "computations/verification/clock_reference_measure.py"
       ],
@@ -3007,7 +3003,7 @@
       "id": "BGS-TRACE-061",
       "title": "Finite frame identities, Stiefel threshold and clock-basis obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/fresh_phase_average_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3019,9 +3015,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [
         "formalization/Bgs/PhaseFrameWitness.lean"
       ],
@@ -3036,7 +3030,7 @@
       "id": "BGS-TRACE-062",
       "title": "Flat completion with arbitrary clock law",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/flat_completion_20261011.md",
       "dependencies": [
         "BGS-TRACE-061"
@@ -3048,9 +3042,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -3062,7 +3054,7 @@
       "id": "BGS-TRACE-063",
       "title": "Global noncommuting ordinary-body coercivity",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/nonlinear_coercivity_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3070,9 +3062,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -3084,7 +3074,7 @@
       "id": "BGS-TRACE-064",
       "title": "Sharp maximal-torus contraction for compact simple groups",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/torus_contraction_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3094,9 +3084,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [
         "formalization/Bgs/TorusDimensionBound.lean"
       ],
@@ -3111,7 +3099,7 @@
       "id": "BGS-TRACE-065",
       "title": "Signed finite-field cycle and collision calculus",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/coherence_form_factor_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3127,9 +3115,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [
         "formalization/Bgs/ActiveRankDefect.lean"
       ],
@@ -3144,7 +3130,7 @@
       "id": "BGS-TRACE-066",
       "title": "Birthday rank law and thinned collision limit",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/previous_rank_results_20261011.md",
       "dependencies": [
         "BGS-TRACE-065"
@@ -3156,9 +3142,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -3170,7 +3154,7 @@
       "id": "BGS-TRACE-067",
       "title": "Sharp balanced Laurent Jack coefficient bound",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER) (THAT SCRIPT'S FRACTION JACK COEFFICIENTS REMAIN A CHECKPOINT-LEVEL CONTROL, NOT A CLAIM-SPECIFIC VERIFIER)",
       "source": "mathematics/jack_coefficient_theorem_20261011.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3178,9 +3162,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -3192,7 +3174,7 @@
       "id": "BGS-TRACE-068",
       "title": "Frozen circular phase laws in the three symmetry classes",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
+      "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
       "source": "mathematics/phase_contraction_20261011.md",
       "dependencies": [
         "BGS-TRACE-067"
@@ -3210,9 +3192,7 @@
       "evidence": [
         "evidence/executions/20261011/chat-research/README.md"
       ],
-      "verifiers": [
-        "computations/verification/chat_research_20261011.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
@@ -3433,7 +3413,8 @@
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
       "boundary": "Independent Haar initial unitary, fresh independent feedback phases and uniform independent coordinate order, F_N(z)=zU_N and T_N=I. Exact S/T independence, matrix-beta graph law, inverse-Jacobi spectrum with the rectangular atom, and trace-moment threshold k<u+1 when q>0. Unconditional every-fixed-order full-depth clock conclusions extend to independent initial laws with relative entropy O(log N); o(log N) gives high-probability flatness for each fixed K>3, whereas O(log N) uses K after limsup and gives no such flatness conclusion for one prescribed finite K. A bounded-entropy prescribed-gap ensemble rules out the corresponding fixed-origin Sine2 implication. No deterministic-map transfer, origin-averaged counterexample, BGS, priority or analytic Lean claim.",
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): the all-time flatness premise A_m of BGS-TRACE-060 is discharged for the Haar initial class in mathematics/haar_feedback_clock_law_20261012.md, Section 4 ('All-time Haar flatness discharges the clock premise'): P(A_m(K)^c) <= N^3 (2N)^(-K(1-1/m)) -> 0 for fixed K>3 (eq. 14), and the conditional clock estimate is integrated over the Haar initial law (eq. 15). Section 5 extends the clock conclusions to relative-entropy classes D_N=O(log N) via eqs. (16)-(17); high-probability flatness holds for D_N=o(log N). Sections 1-3 of the source require no flatness premise."
     },
     {
       "id": "BGS-TRACE-077",
@@ -3460,7 +3441,8 @@
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
       "boundary": "Fresh independent uniform feedback phases; port chosen before its phase using the past. Deterministic unitary initial conditions max P<=C0/N and ||P-J||<=1/5. Unconditional high-probability shrinking Green/singular norm only on the entry-stopped prefix, including its full first crossing. Third-step forcing bound only before that crossing. Does not estimate early entry survival, sustained two-step concentration, deterministic microscopic universality, TRACE-005 or BGS. Actual-map application uses eventual odd-N fixed-coupling FM-021; no effective startup or priority claim.",
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): no conditional conclusion of BGS-TRACE-073 is used. mathematics/green_compression_gap_20261013.md states: 'Dependencies: TRACE-073 C3--C6 only (fresh-phase noise and Schatten smoothness); ... No reversal conclusion from TRACE-073 is inherited.' (C3)-(C6) in mathematics/schur_censoring_gap_20261011.md are proved fresh-phase mean/fluctuation identities and a Schatten-smoothness bound; TRACE-073's CONDITIONAL state covers only its stopped-gap conclusion, and its deterministic singular-value contraction is stated unconditional under its displayed invertibility hypothesis."
     },
     {
       "id": "BGS-TRACE-078",
@@ -3510,7 +3492,8 @@
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): this claim has no direct dependency on BGS-TRACE-060 or BGS-TRACE-073 (dependencies: BGS-TRACE-075, BGS-TRACE-077, BGS-TRACE-078, BGS-FM-021). Its only route to TRACE-073 is through BGS-TRACE-077, whose use of TRACE-073 is restricted to the unconditional (C3)-(C6) lemmas (see the premise_discharge of BGS-TRACE-077)."
     },
     {
       "id": "BGS-TRACE-080",
@@ -3543,7 +3526,8 @@
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): the main flatness theorem (F1) of mathematics/unconditional_feedback_flatness_20261013.md is unconditional under its explicit initial hypotheses and supplies the flatness event itself. Its Section 10 discharges BGS-TRACE-060's premise for the clock corollaries by P(clock error > eps_N) <= P(A_m^c) + P(A_m and {clock error > eps_N}) -> 0, using F1 with matched cutoff (kappa_clock=3+kappa, K=K0). Its Section 11 applies BGS-TRACE-073 (C9) only to the reversal corollary, whose extra hypothesis ||B_N||_op -> 0 is stated explicitly there and is supplied for the actual odd-N fixed-coupling family by BGS-FM-022; the text of (C9) in mathematics/schur_censoring_gap_20261011.md records the same FM-022 discharge."
     },
     {
       "id": "BGS-TRACE-081",
@@ -3594,7 +3578,7 @@
       "manuscript": [
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
-      "boundary": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim.",
+      "boundary": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim. Computational controls cover only the N=4 Hadamard core and the N=2 rational-rotation endpoint witness at z=1/5 (returns j<9); per the control script's own scope this is a finite core, not generic or asymptotic coverage.",
       "priority_status": "not-established"
     },
     {
@@ -3956,7 +3940,7 @@
       "id": "BGS-TRACE-095",
       "title": "Dimension-uniform deep feedback Gaussian limit",
       "state": "conditional",
-      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [
         "BGS-TRACE-073",
@@ -3967,9 +3951,7 @@
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -3984,17 +3966,15 @@
     {
       "id": "BGS-TRACE-096",
       "title": "Exact transmission spectral averaging and bounded eigenvector ratio criterion",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4009,16 +3989,14 @@
       "id": "BGS-TRACE-097",
       "title": "Conditional full positive Heisenberg path-current limit",
       "state": "conditional",
-      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4033,17 +4011,15 @@
     {
       "id": "BGS-TRACE-098",
       "title": "Complete fixed-trace law and secular hierarchy for the symplectic phase ensemble",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4057,8 +4033,8 @@
     {
       "id": "BGS-TRACE-099",
       "title": "Polynomial trace windows in the auxiliary bilinear phase ensembles",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [
         "BGS-TRACE-098"
@@ -4067,9 +4043,7 @@
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4084,17 +4058,15 @@
     {
       "id": "BGS-TRACE-100",
       "title": "Exact signed phase expansion and first two stable coefficient cancellations",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4109,8 +4081,8 @@
     {
       "id": "BGS-TRACE-101",
       "title": "Neutral peeling and finite primitive schemes at every fixed defect",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_neutral_primitives_20261019.md",
       "dependencies": [
         "BGS-TRACE-100"
@@ -4119,9 +4091,7 @@
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4135,8 +4105,8 @@
     {
       "id": "BGS-TRACE-102",
       "title": "Complete second-defect sector and full four-port open zero",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_second_defect_20261019.md",
       "dependencies": [
         "BGS-TRACE-101"
@@ -4145,9 +4115,7 @@
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4162,8 +4130,8 @@
     {
       "id": "BGS-TRACE-103",
       "title": "All local-defect-one-or-two clusters: quartic exponential resummation",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + CHECKED CLASSICAL INPUT + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + CHECKED CLASSICAL INPUT + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_quartic_cluster_sum_20261019.md",
       "dependencies": [
         "BGS-TRACE-101",
@@ -4175,9 +4143,7 @@
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4191,17 +4157,15 @@
     {
       "id": "BGS-TRACE-104",
       "title": "Local Cayley comparison with diagonal Cauchy disorder for an involution",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/phase_cayley_cauchy_transfer_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4215,17 +4179,15 @@
     {
       "id": "BGS-TRACE-105",
       "title": "Positive Cauchy projection self-duality with maximal matrix-law separation",
-      "state": "proved",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW",
+      "state": "verification-pending",
+      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/cauchy_positive_source_boundary_20261019.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json"
       ],
-      "verifiers": [
-        "computations/verification/chat_20261019/verify_integration.py"
-      ],
+      "verifiers": [],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
@@ -4236,6 +4198,614 @@
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md",
         "evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_projection_self_duality_ru.md"
       ]
+    },
+    {
+      "id": "BGS-CAYLEY-006",
+      "title": "Pointwise sparse and density Gaussian limits of the full Cayley-Jacobi trace",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM",
+      "source": "mathematics/cayley_trace_gaussian_limit.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/cayley_higher_moments_20260909.json"
+      ],
+      "verifiers": [
+        "computations/verification/cayley_higher_moments.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/cayley_trace_gaussian.tex"
+      ],
+      "boundary": "Sparse regime only: K through odd primes, K=o(log p), split designs p=1 (mod K). Classical external inputs named in the source: Chowla cotangent independence (both theorems), Bombieri-Vinogradov and the prime number theorem (density theorem only), and the Esseen smoothing inequality as restated in B. Borda, arXiv:2005.04925v2, Theorem A (quantitative Kolmogorov bounds in the same section). Not a microscopic BGS theorem; the trace parameters are not powers of one matrix; priority not established."
+    },
+    {
+      "id": "BGS-CAYLEY-007",
+      "title": "Three-scalar exact split support for fixed-degree Cayley row intersections",
+      "state": "proved",
+      "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
+      "source": "mathematics/cayley_product_row_real_trace_ideal.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/cayley_trace_intercept_shift_resultant.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/row_frontier.tex"
+      ],
+      "boundary": "Equality of split rational-prime support only, not of integral valuations. Covers the fixed-degree product-row cofactors P_{K,r}, Q_{K,r} at split primes p=1 (mod K). Polynomial control of the largest supported split prime remains open. The shift-resultant transversality theorems of the same manuscript section are separate results, backed by mathematics/cayley_inverse_resultant_transversality.md and mathematics/cayley_product_row_subresultants.md."
+    },
+    {
+      "id": "BGS-CAYLEY-008",
+      "title": "Scaling rigidity of the Cayley collision family",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION",
+      "source": "mathematics/cayley_scaling_rigidity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/cayley_scaling_rigidity.json"
+      ],
+      "verifiers": [
+        "computations/verification/cayley_scaling_rigidity.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/cayley_scaling.tex"
+      ],
+      "boundary": "Characteristic different from two; rho, sigma outside {0,1,-1} and rho != sigma. Classification of scaling classes only; the pointwise additive-energy exponent remains 8/3 and no BGS conclusion follows."
+    },
+    {
+      "id": "BGS-CAYLEY-009",
+      "title": "Quantitative magnetic-quotient moment bound and global semicircle law",
+      "state": "proved",
+      "ledger_status": "COMPLETE PROJECT DERIVATION + FINITE CHECKS; NOT EXTERNALLY REFEREED",
+      "source": "mathematics/magnetic_quotient_semicircle.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/magnetic_quotient_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/magnetic_quotient_regression.py",
+        "computations/verification/magnetic_scalar_certificate.py",
+        "computations/cpp/magnetic_word_verifier.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/magnetic.tex"
+      ],
+      "boundary": "Global empirical spectral measure of a compressed observable only; not microscopic BGS statistics of a quantum propagator. Prime subgroup orders K=o(log p); the source's Section 9 proves this regime is incompatible with the orders of any one fixed hyperbolic integral cat map. Priority not established."
+    },
+    {
+      "id": "BGS-CAYLEY-010",
+      "title": "Uniform parity sector for exact finite spectra of arbitrary hyperbolic matrices",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "manuscript/general_spectra.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/general_spectra.tex"
+      ],
+      "boundary": "Finite exact spectra under the fixed-point-free hypothesis (eq:general-free) only. The section's final sentence asserting that the locality and return-word arguments later in the paper 'work verbatim' with the characteristic Q_N^* and any such A is NOT part of this claim: that transfer is asserted without proof in the section and was not found proved in the sources searched (mathematics/, record/, supplement/, papers/)."
+    },
+    {
+      "id": "BGS-FLOW-022",
+      "title": "Critical resonance law for the kicked Pell propagator",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
+      "source": "mathematics/pell_floquet_normal_form.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_floquet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_floquet_regression.py",
+        "computations/cpp/pell_floquet_pair_verifier.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/floquet_part1.tex",
+        "manuscript/unified_sections/floquet_part2.tex"
+      ],
+      "boundary": "K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality."
+    },
+    {
+      "id": "BGS-FLOW-023",
+      "title": "Second-order critical law for coboundary kicks of a fixed cat map",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
+      "source": "mathematics/pell_coboundary_resonance.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_coboundary_audit.json",
+        "evidence/certificates/pell_coboundary_validation.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_coboundary_regression.py",
+        "computations/cpp/pell_coboundary_pairs.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/coboundary_part1.tex",
+        "manuscript/unified_sections/coboundary_part2.tex",
+        "manuscript/unified_sections/coboundary_part3.tex"
+      ],
+      "boundary": "Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law."
+    },
+    {
+      "id": "BGS-FLOW-024",
+      "title": "Negative microscopic consequences at the second-order coboundary scale",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
+      "source": "mathematics/pell_coboundary_resonance.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_coboundary_audit.json",
+        "evidence/certificates/pell_coboundary_validation.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_coboundary_regression.py",
+        "computations/cpp/pell_coboundary_pairs.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/coboundary_part1.tex",
+        "manuscript/unified_sections/coboundary_part2.tex",
+        "manuscript/unified_sections/coboundary_part3.tex"
+      ],
+      "boundary": "Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result."
+    },
+    {
+      "id": "BGS-FLOW-025",
+      "title": "Obstruction and necessary kick scale for the kicked Pell family",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
+      "source": "mathematics/pell_floquet_normal_form.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/pell_floquet_audit.json"
+      ],
+      "verifiers": [
+        "computations/verification/pell_floquet_regression.py",
+        "computations/cpp/pell_floquet_pair_verifier.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/floquet_part3.tex",
+        "manuscript/unified_sections/floquet_part4.tex"
+      ],
+      "boundary": "Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture."
+    },
+    {
+      "id": "BGS-FM-034",
+      "title": "Fixed-strength all-orders comparison for the single-exponential coboundary kick",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/fixed_strength_locality.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/locality_execution_summary.json"
+      ],
+      "verifiers": [
+        "computations/verification/fixed_strength_locality.py",
+        "computations/cpp/fixed_strength_locality_exact.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/locality_part1.tex",
+        "manuscript/unified_sections/locality_part2.tex",
+        "manuscript/unified_sections/locality_part3.tex",
+        "manuscript/unified_sections/locality_part4.tex",
+        "manuscript/unified_sections/locality_part5.tex",
+        "manuscript/unified_sections/locality_part6.tex",
+        "manuscript/unified_sections/locality_part7.tex"
+      ],
+      "boundary": "Fixed classical strength kappa_0 (classical Hamiltonian time kappa_0/(2pi)); generators g with supp g disjoint from supp Cg, including the explicit Gevrey-2 bump for the quantitative bound (LC.4), whose exponent is not claimed optimal. Deliberately nongeneric family smoothly conjugate to an arithmetic cat map; not positive BGS universality."
+    },
+    {
+      "id": "BGS-FM-035",
+      "title": "Classical interpretation of the fixed-strength quantized map",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/fixed_strength_locality.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/locality_execution_summary.json"
+      ],
+      "verifiers": [
+        "computations/verification/fixed_strength_locality.py",
+        "computations/cpp/fixed_strength_locality_exact.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/locality_part1.tex",
+        "manuscript/unified_sections/locality_part2.tex",
+        "manuscript/unified_sections/locality_part3.tex",
+        "manuscript/unified_sections/locality_part4.tex",
+        "manuscript/unified_sections/locality_part5.tex",
+        "manuscript/unified_sections/locality_part6.tex",
+        "manuscript/unified_sections/locality_part7.tex"
+      ],
+      "boundary": "Same generator class and conventions as Theorem A of the locality section. The conjugacy to M is essential, not a symmetry that may be omitted when interpreting spectral statistics. Sign convention for the Hamiltonian flow Phi_g^t is the one stated in the theorem; return_words.tex uses the opposite flow convention under the same symbol (review finding, group 5)."
+    },
+    {
+      "id": "BGS-FM-036",
+      "title": "Microscopic stability along Pell moduli: K clusters and spacing collapse",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/fixed_strength_locality.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/locality_execution_summary.json"
+      ],
+      "verifiers": [
+        "computations/verification/fixed_strength_locality.py",
+        "computations/cpp/fixed_strength_locality_exact.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/locality_part1.tex",
+        "manuscript/unified_sections/locality_part2.tex",
+        "manuscript/unified_sections/locality_part3.tex",
+        "manuscript/unified_sections/locality_part4.tex",
+        "manuscript/unified_sections/locality_part5.tex",
+        "manuscript/unified_sections/locality_part6.tex",
+        "manuscript/unified_sections/locality_part7.tex"
+      ],
+      "boundary": "Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion."
+    },
+    {
+      "id": "BGS-RES-008",
+      "title": "Sharp resonance minimum on a hyperbolic Fourier orbit",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS",
+      "source": "mathematics/pell_sharp_orbit_coercivity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/pell_sharp_coercivity_check.py",
+        "computations/verification/pell_single_orbit_sharp_constant.py",
+        "computations/cpp/pell_sharp_orbit_verifier.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/sharp.tex"
+      ],
+      "boundary": "Every hyperbolic A in SL(2,Z) (tr A>2 after replacing A by -A); finite single-orbit trigonometric polynomials of diameter at most L. The infimum (SH.S3) is over all finite support lengths; no finite sequence attains it and no infinite-frequency minimizer is asserted. The spectral-factorization step is the classical Fejer-Riesz theorem; priority and external referee acceptance are not claimed.",
+      "proof_dependencies": [
+        "mathematics/pell_single_orbit_sharp_constant.md"
+      ]
+    },
+    {
+      "id": "BGS-RES-009",
+      "title": "Uniform spectral positivity and temporal Riesz bounds for the spectral module",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/temporal_integration_20260906.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/spectral_module_regression.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_module_regression.py",
+        "computations/verification/temporal_soft_modes.py",
+        "computations/verification/temporal_quantum_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_modules.tex"
+      ],
+      "boundary": "Constants D_m^*, L_m depend on the largest lag and the fixed symbol g. All-frequency spectral positivity and Riesz bounds uniform in the time window; classical covariance module, not quantum eigenphase correlations."
+    },
+    {
+      "id": "BGS-RES-010",
+      "title": "Root-circle classification of high-lag coercivity",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/temporal_integration_20260906.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/spectral_module_regression.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_module_regression.py",
+        "computations/verification/temporal_soft_modes.py",
+        "computations/verification/temporal_quantum_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_modules.tex"
+      ],
+      "boundary": "Constants depend on A, v, a_0, P, R but not on n. Lag-uniform coercivity holds if and only if P has no roots on |z|=lambda or |z|=lambda^{-1}. The general Toeplitz zero-order mechanism is prior theory (ledger note)."
+    },
+    {
+      "id": "BGS-RES-011",
+      "title": "Complete finite-symbol high-lag criterion",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/temporal_integration_20260906.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/spectral_module_regression.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_module_regression.py",
+        "computations/verification/temporal_soft_modes.py",
+        "computations/verification/temporal_quantum_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_modules.tex"
+      ],
+      "boundary": "Every finite real Fourier symbol, arbitrary phases and any number of frequency orbits; fixed R >= R_0(A,g). Uniform high-lag coercivity holds precisely when the common finite temporal divisor P_g has no root on the two hyperbolic circles."
+    },
+    {
+      "id": "BGS-RES-012",
+      "title": "Cyclic module and variance at every time in the finite quantum module",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION + NUMERICAL",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/temporal_integration_20260906.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/spectral_module_regression.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_module_regression.py",
+        "computations/verification/temporal_soft_modes.py",
+        "computations/verification/temporal_quantum_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_modules.tex"
+      ],
+      "boundary": "Regular semisimple finite quantum cyclic module of odd order with arbitrary nonzero c; every integer n>=1, without a no-alias time restriction. Observable commutators, not eigenphase correlations; does not furnish joint traces of a perturbed quantum propagator."
+    },
+    {
+      "id": "BGS-RES-013",
+      "title": "Balanced-phase completion and even-order phase-rank transition",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION + NUMERICAL",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/certificates/temporal_integration_20260906.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/spectral_module_regression.json"
+      ],
+      "verifiers": [
+        "computations/verification/spectral_module_regression.py",
+        "computations/verification/temporal_soft_modes.py",
+        "computations/verification/temporal_quantum_variance.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_modules.tex"
+      ],
+      "boundary": "Even order requires the balanced phase c=a+ib with a^2=b^2>0 for the unchanged formulas. The span dimension is K(K-2)/2 for ab != 0 and exactly K(K-2)/8 for a nonzero purely real or purely imaginary c. Finite commutator-observable module, not spectral universality."
+    },
+    {
+      "id": "BGS-RES-014",
+      "title": "Full Riesz criterion for the two-variable resonance lattice",
+      "state": "conditional",
+      "ledger_status": "PROJECT PROOF; CONDITIONAL ON THE FOUR-ATOM GAP SEPARATION LEMMA",
+      "source": "mathematics/resonance_riesz_regularization.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/wiener_resonance_audit.log"
+      ],
+      "verifiers": [
+        "computations/verification/wiener_resonance_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/wiener_riesz.tex"
+      ],
+      "boundary": "Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
+      "proof_dependencies": [
+        "mathematics/phase_regularized_resonance.md",
+        "mathematics/weighted_wiener_resonance.md"
+      ]
+    },
+    {
+      "id": "BGS-RES-015",
+      "title": "Two-window phase crossover: rectangular Gram lower edge",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF (COMPLETE FINITE-DIFFERENCE PROOF) + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/two_window_resonance_crossover.md",
+      "dependencies": [
+        "BGS-RES-014"
+      ],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/phase_crossover.tex"
+      ],
+      "boundary": "Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
+      "dependency_scope": "BGS-RES-014 is cited for the general two-variable tail symbol only; for this fixed-support family the symbol is computed directly in the section and in mathematics/two_window_resonance_crossover.md (complete finite-difference proof), so the conditional four-atom gap lemma of the general case is not used."
+    },
+    {
+      "id": "BGS-RES-016",
+      "title": "Sharp multiradius and concentric-sphere polynomial rigidity",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF (SELF-CONTAINED) + FINITE-REGRESSION",
+      "source": "mathematics/multiradius_polynomial_rigidity.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/multiradius_rigidity.log",
+        "evidence/executions/20261006/corpus-revision/final/checks/two_radius_rigidity.log"
+      ],
+      "verifiers": [
+        "computations/verification/multiradius_rigidity.py",
+        "computations/verification/two_radius_rigidity.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/polynomial_multisphere.tex"
+      ],
+      "boundary": "Self-contained algebraic statements, independent of the BGS conjecture; priority relative to polynomial sphere-map and filter-bank literature is not asserted. The flat-tail classification subsection of the manuscript section is covered via mathematics/two_radius_quadrature_rigidity.md (see fixlog).",
+      "proof_dependencies": [
+        "mathematics/multisphere_polynomial_rigidity.md",
+        "mathematics/two_radius_quadrature_rigidity.md"
+      ]
+    },
+    {
+      "id": "BGS-RES-017",
+      "title": "Balanced phase and quantum controllability for odd N",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF (SELF-CONTAINED) + FINITE-REGRESSION",
+      "source": "mathematics/balanced_phase_controllability.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/balanced_weyl_gaps.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/balanced_control.tex"
+      ],
+      "boundary": "Odd N>=3 (composite included) and det(v,w) a unit modulo N. Controllability allows varying controls; it is not a local-statistics theorem for one fixed kicked propagator, and no dimension-uniform synthesis-time bound is asserted. The Pell specialization applies to every odd N."
+    },
+    {
+      "id": "BGS-RES-018",
+      "title": "Infinite-orbit independence and entire temporal all-pass gauges",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF (SELF-CONTAINED)",
+      "source": "mathematics/entire_temporal_gauge.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/entire_gauge.tex"
+      ],
+      "boundary": "thm:infinite-orbit: nonzero observables with M_1(g)<infty supported on one signed orbit. All-pass classification: filters holomorphic on the punctured plane with real Laurent coefficients summable with every exponential weight. Preserved data are the complete zero-frequency hierarchy J(h_r) modulo actual smooth coboundaries, not all dynamical-frequency cross spectra; cubic moments can change.",
+      "proof_dependencies": [
+        "mathematics/infinite_orbit_resonance.md"
+      ]
+    },
+    {
+      "id": "BGS-RES-019",
+      "title": "Explicit weighted-Wiener stability of the isolated resonance mode",
+      "state": "proved",
+      "ledger_status": "EXACT + FINITE-REGRESSION",
+      "source": "mathematics/resonance_wiener_stability.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/resonance_wiener_stability.log"
+      ],
+      "verifiers": [
+        "computations/verification/resonance_wiener_stability.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/wiener_resonance_stability.tex"
+      ],
+      "boundary": "Explicit neighbourhood E<D of a nonconstant real trigonometric polynomial p, in the section's weighted-Wiener seminorms M_0, M_A (a first-moment topology, stronger than the l1 Wiener algebra; the index 0 refers to A^0). Uses the isolated finite-support witness u,v of lem:temporal-support from the temporal section. Does not prove positivity for every analytic or smooth observable."
+    },
+    {
+      "id": "BGS-RES-020",
+      "title": "Generic weighted-Wiener nondegeneracy",
+      "state": "proved",
+      "ledger_status": "EXACT",
+      "source": "mathematics/generic_wiener_resonance.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/wiener_resonance_audit.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/generic_wiener_resonance.tex"
+      ],
+      "boundary": "Weighted-Wiener Banach space X_A, every fixed analytic Wiener strip, every H^s(T^2) with s>2, and C^infty(T^2) with its Frechet topology, modulo constants. Does not prove that every nonconstant analytic observable is nondegenerate; that all-members question is BGS-RES-003 and remains open."
+    },
+    {
+      "id": "BGS-RES-021",
+      "title": "Analytic rigidity of zero resonance mechanisms",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW (RIGIDITY CORE)",
+      "source": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/analytic_resonance_rigidity.tex"
+      ],
+      "boundary": "Analytic category only. A zero-variance analytic counterexample is not excluded: by Corollary cor:analytic-resonance-frontier it would have to solve the nontrivial analytic nonlinear cohomological equation (eq:analytic-nonlinear-cohomology), with {g,Cg} not identically zero. The all-members analytic nondegeneracy question remains open (BGS-RES-003)."
+    },
+    {
+      "id": "BGS-RES-022",
+      "title": "Radius-eight resonance nondegeneracy (ND.3)",
+      "state": "verification-pending",
+      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF; INDEPENDENT REPLAY PENDING",
+      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.proof"
+      ],
+      "verifiers": [
+        "computations/verification/resonance_nondegeneracy_certificate.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/nondegeneracy_part2.tex",
+        "manuscript/unified_sections/nondegeneracy_part3.tex"
+      ],
+      "boundary": "Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables."
+    },
+    {
+      "id": "BGS-RET-003",
+      "title": "Noncommuting return words: all-orders quantum conjugacy under the exact return identity",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
+      "source": "mathematics/noncommuting_return_words.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [],
+      "verifiers": [
+        "computations/verification/noncommuting_tower.py",
+        "computations/cpp/return_word_certificate.cpp"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/return_words.tex"
+      ],
+      "boundary": "Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is not independently registered: its 30 separating normals are stated in the manuscript to be 'part of the certificate' without a named certificate file or hash in the section."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

@@ -605,6 +605,10 @@ change the unperturbed propagator's arithmetic spectrum.
 The harmonic return theorem subsequently perturbs the propagator and
 identifies its global recurrence law, but the quantum kick vanishes,
 harmonics are sampled, and microscopic universality remains unproved.
+The registry boundary of `BGS-RET-001` records the same limits, together with
+the control scope (exact diagram/lattice checks; complex128 matrix controls
+at $K=3,5$ with the single value $\epsilon=0.23$) and the external
+free-unitary-Brownian identification via Demni (`EXT-DEMNI-2016`).
 
 The project contains several strong negative and structural lessons:
 
