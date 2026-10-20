@@ -50,9 +50,32 @@ p\mid\Pi_{K,r}^{(3)}\iff
 \]
 \end{theorem}
 \begin{proof}
-Use \eqref{frontier:eq:gcd-count} and Lemma~\ref{frontier:lem:psc}.
-A rational prime divides the contraction precisely when the ideal is contained
-in some prime ideal above it.
+Use \eqref{frontier:eq:gcd-count} and Lemma~\ref{frontier:lem:psc}, applied
+over the residue field at $\mathfrak q$, where the leading coefficients remain
+nonzero by the fixed-degree setup. If some $\mathfrak q\mid p$ has
+$I_{1,r}(\mathfrak q)\ge3$, the lemma gives
+$\pi_0,\pi_1,\pi_2\in\mathfrak q$, hence
+$\Pi_{K,r}^{(3)}\in J^{\rm psc}_{K,r}\cap\mathbf Z\subseteq
+\mathfrak q\cap\mathbf Z=p\mathbf Z$.
+
+Conversely, suppose $p\mid\Pi_{K,r}^{(3)}$. If $J^{\rm psc}_{K,r}=(0)$ the
+$\pi_j$ vanish at every $\mathfrak q$ and there is nothing to prove. Otherwise,
+write $\mathcal O^+=\mathbf Z[\tau]$ and localize at the multiplicative set
+$S=\mathbf Z\setminus p\mathbf Z$. The localized ideal is proper in
+$\mathcal O^+_S$: an element of $J^{\rm psc}_{K,r}\cap S$ would lie in
+$J^{\rm psc}_{K,r}\cap\mathbf Z=\Pi_{K,r}^{(3)}\mathbf Z$ yet be prime to $p$,
+while $p\mid\Pi_{K,r}^{(3)}$. By Krull's theorem the proper localized ideal is
+contained in a maximal ideal of $\mathcal O^+_S$; its contraction
+$\mathfrak q$ to $\mathcal O^+$ is a prime ideal with
+$\mathfrak q\cap S=\varnothing$ and $J^{\rm psc}_{K,r}\subseteq\mathfrak q$.
+The contraction $\mathfrak q\cap\mathbf Z$ is a prime of $\mathbf Z$ contained
+in $p\mathbf Z$; it is not $(0)$: a prime of $\mathcal O^+$ contracting to
+$(0)$ is itself $(0)$, since $\mathcal O^+\otimes\mathbf Q$ is a field, and
+$(0)$ is not maximal in $\mathcal O^+_S$, as primes above the split prime
+$p$ localize to strictly larger proper ideals. Hence
+$\mathfrak q\cap\mathbf Z=p\mathbf Z$, i.e.\ $\mathfrak q\mid p$. Then
+$\pi_0,\pi_1,\pi_2$ vanish mod $\mathfrak q$, and the lemma gives
+$I_{1,r}(\mathfrak q)\ge3$.
 \end{proof}
 This is equality of split prime support, not of integral valuations.
 Exact finite Smith-normal-form controls are
@@ -120,7 +143,32 @@ $\gcd(A,G)=1$, and $\psi$ nonzero at every root of $G$, a fixed-$f$ shift gives
 \ord_{Z=0}\Res(f,g+Z\psi)=d,\qquad
 [Z^d]\Res(f,g+Z\psi)=\Res(A,B)\Res(A,G)\Res(G,\psi).
 \]
-Up to the fixed subresultant sign, $\Res(A,B)$ is the first nonzero PSC.
+Up to the fixed subresultant sign, $\Res(A,B)$ is the first nonzero PSC;
+this is the content of the following lemma, in the monic case used below.
+
+\begin{lemma}[First nonzero principal subresultant]\label{frontier:lem:psc-value}
+Let $f=GA$, $g=GB$ have the same degree $m$, with $G$ of degree $d$ and
+leading coefficient $\gamma$, and $\gcd(A,B)=1$. Then, with the determinant
+normalization of $\operatorname{psc}_j$,
+\[
+ \operatorname{psc}_d(f,g)=\pm\gamma^{2(m-d)}\Res(A,B),
+\]
+the sign depending only on $m$, $d$ and the subresultant convention.
+In particular the factor is $\pm1$ when $G$ is monic.
+\end{lemma}
+\begin{proof}
+Up to transposition and reordering of rows and columns, the principal minor
+defining $\operatorname{psc}_d$ is the determinant of the linear map sending
+$(U,V)$, with $\deg U,\deg V<m-d$, to the coefficients of $Uf+Vg$ at the
+powers $d,\ldots,2m-d-1$. Since $Uf+Vg=G(UA+VB)$, this map factors as the
+Sylvester map $(U,V)\mapsto UA+VB$ of the coprime pair $(A,B)$, whose
+determinant is $\pm\Res(A,B)$, followed by multiplication by $G$ read in the
+same coefficient window. The latter is triangular in the window basis: the
+coefficient of $T^{d+s}$ in $GW$ is $\gamma W_s$ plus a combination of
+$W_{s+1},\ldots,W_{s+d}$. Its determinant is therefore
+$\gamma^{2(m-d)}$.
+\end{proof}
+
 The condition $\gcd(A,G)=1$ says that the common roots are simple in $f$;
 squarefreeness of $f$ is a stronger sufficient condition. Without it the
 coefficient formula still holds but can vanish.
@@ -128,9 +176,21 @@ coefficient formula still holds but can vanish.
 For the row shift put
 $q_Z(T)=\alpha_r^{-m}R_r(\alpha_rT+\beta_r+Z)$, so
 $\psi(T)=\alpha_r^{-m}R_r'(\alpha_rT+\beta_r)$.
-On the maintained split locus both row cofactors are squarefree and
-$\alpha_r\ne0$. Hence $q_0'(y)=\alpha_r\psi(y)\ne0$ at common roots.
-Writing $P=GA,q_0=GB$ gives
+The \emph{maintained split locus} for $(K,r)$ is the set of split primes $p$
+such that, for one (equivalently every, the condition being Galois-invariant)
+embedding prime $\mathfrak q\mid p$, the reductions of $P_{K,r}$ and $Q_{K,r}$
+mod $\mathfrak q$ are squarefree and $\alpha_r\not\equiv0\pmod{\mathfrak q}$;
+equivalently $\mathfrak q\nmid\Disc_T(P_{K,r})\Disc_T(Q_{K,r})$ and
+$\mathfrak q\nmid\alpha_r$, since a polynomial over a field is squarefree
+exactly when its discriminant is nonzero.
+On this locus $q_0'(y)=\alpha_r\psi(y)\ne0$ at every common root $y$ of $P$
+and $q_0$ mod $\mathfrak q$: with $P=GA$, $q_0=GB$ and $G$ monic,
+$q_0'(y)=G'(y)B(y)$; $G\mid q_0$ and $q_0$ squarefree give $G$ squarefree,
+so $G'(y)\ne0$, and $B(y)=0$ would make $y$ a multiple root of $q_0$.
+The same argument gives $\Disc(G)\ne0$ and $\Res(G,B)\ne0$, and with the
+roles of the two cofactors exchanged $\Res(A,G)\ne0$ (a common root of $A$
+and $G$ is a multiple root of $P$); $\Res(A,B)\ne0$ since $\gcd(A,B)=1$
+by the choice of $G$ as the gcd. Writing $P=GA,q_0=GB$ with $G$ monic gives
 \begin{equation}\label{frontier:eq:explicit-local}
 [Z^d]\Res(P,q_Z)
  =\pm\alpha_r^{-d}\operatorname{psc}_d(P,q_0)

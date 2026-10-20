@@ -21,7 +21,7 @@ Define integers \(Q_{j}\),\(P_{j}\) by \[
 \] The identity \((1+s)^K=Q_K+P_Ks=1\) gives \(h^K=1\). Moreover, \(h-1=2(1+s)\) is a unit since \((1+s)(1-s)=-1\). Modulo each prime \(\ell\mid N\), the order of \(h\) is exactly \(K\): it divides the prime \(K\) and is not one. Hence \(\ell\equiv1\pmod K\). In particular, \[
  1-h^j\text{ is a unit for }1\leq j<K,
  \qquad 1+h^j\text{ is a unit for every }j. \tag{PB.1}
-\] The latter assertion uses odd \(K\). Thus \(H=\langle h\rangle\) has order \(K\) and acts freely on every nonzero residue, not just on the units. The signed orbits have size \(2K\), and \[
+\] The latter assertion uses odd \(K\). Thus \(H=\langle h\rangle\) has order \(K\) and acts freely on every nonzero residue, not just on the units. The signed orbits have size \(2K\): a stabilizer would give \(h^j=\pm1\) modulo some prime \(\ell\mid N\) at which the residue is nonzero, but modulo \(\ell\) the element \(h\) has order exactly the odd prime \(K\), while \(-1\ne1\) has order two. Hence \[
  n=\frac{N-1}{2K}
 \] is an integer. The moduli need not be prime: for example \(Q_{11}=8119=23\cdot353\).
 
@@ -88,6 +88,24 @@ For \(g=1\) write \(t_1=1\) and \(t_j=h_1\cdots h_{j-1}\). The remaining labels 
  |\mathcal R_{m,\eta}(q)|\leq
  \frac{2^{m/2+1}K^{m/2+1}}{N-1}. \tag{PB.9}
 \] This is an exact identity plus an elementary absolute bound. No field-only root-counting theorem or random-entry hypothesis is used.
+The bound is the following word count.  In
+$\frac1n\operatorname{Tr}X_{q,\eta}^m$ the expansion of
+$(B_qP_\eta)^m$ has $(2K)^m$ words, indexed by
+$\epsilon_j\in\{\pm1\}$ and $h_j\in H$; each word carries the
+projector weight $K^{-m}$, a sector weight of modulus one, and the
+single parity factor $1/2$ coming from the projection onto the odd
+subspace (the dimension $n=(N-1)/(2K)$ of $E_\eta$).  By the trace
+alternatives above, a word with $g\ne1$, or with the parity
+insertion replacing $g$ by $-g$, has trace of modulus one, and a
+word with $g=1$ and $(a,b)\ne(0,0)$ has trace zero; its trace over
+$E_\eta$ is an average of such full-space traces, hence also of
+modulus at most one.  The words with $g=1$ and $(a,b)=(0,0)$ are
+exactly the main sum in (PB.8).  Therefore
+\[
+|\mathcal R_{m,\eta}(q)|
+ \le\frac1n\Bigl(\frac K2\Bigr)^{m/2}K^{-m}(2K)^m
+ =\frac{2^{m/2+1}K^{m/2+1}}{N-1}.
+\]
 
 \subsection{Lifting reciprocal relations into a quadratic field}\label{pell_blocks:lifting-reciprocal-relations-into-a-quadratic-field}
 

@@ -144,6 +144,35 @@ The unit assumption on \(a\) is used here. The 32-class proof gives
  \le G_K(z):=e^{5Kz^8}-1+2(13/50)^K+31(3/5)^K
  \quad(0\le z\le3/10).                                    \tag{Ret.G9}
 \]
+Here is the 32-class argument.  On parity-constant vectors the
+operator \(L\) (symbol \(z+z^{-1}-6\)) is given by
+\(B=\bigl(\begin{smallmatrix}-6&2\\2&-6\end{smallmatrix}\bigr)\),
+and \(\mathbf Z^2/B\mathbf Z^2\) has order \(\det B=32\) and maps
+injectively to \(\mathcal C/L\mathbf Z^K\).  A Hermite basis of
+\(B\) is \(\bigl(\begin{smallmatrix}16&10\\0&2\end{smallmatrix}\bigr)\),
+so the classes are represented by \((r,s)\), \(0\le r<16\),
+\(0\le s<2\), with fractional preimages
+\(p_{\rm even}=-(3r+s)/16\), \(p_{\rm odd}=-(r+3s)/16\).
+The noninteger classes have numerator pairs among
+\((0,8),(1,3),(1,5),(2,2),(2,6),(3,7),(4,4),(5,7),(6,6),(8,8)\).
+With \(x=z^{1/4}\) and \(H_j(x)=(x^j+x^{16-j})/(1-x^{16})\), the
+Green-kernel bound \(\|Lp\|_1\ge4\|p\|_1\) (the inverse of \(L\)
+has kernel \(-\lambda^{-|n|}/(4\sqrt2)\), of \(\ell^1\) norm
+\(1/4\)) bounds the \((i,j)\) class by \([H_i(x)H_j(x)]^{K/2}\);
+at \(x=3/4\) the maximum is
+\(H_1H_3=\frac{10040323357589760}{28926125721773329}<\frac9{25}\),
+so the 31 noninteger classes contribute at most \(31(3/5)^K\).
+For the integer class, intervals starting at a fixed site have
+total activity, with \(v=2z^4/(1-z^4)\),
+\[
+B(z)=z^4\,\frac{2v+4v^2}{1-4v}
+    =\frac{4z^8(1+3z^4)}{(1-z^4)(1-9z^4)}\le5z^8
+\qquad(z\le3/10);
+\]
+disjoint intervals therefore contribute at most \(e^{KB(z)}\), and
+configurations with no adjacent zeros at most
+\(2(2\sqrt v)^K\le2(13/50)^K\), since \(2\sqrt v<13/50\).
+Subtracting the zero configuration gives (Ret.G9).
 The difference between the full and odd normalized traces is at most
 \(e^{2rK|\epsilon|}/(N-1)\). Individual Weyl words need not preserve parity;
 the correction uses the linear trace with the odd projector.

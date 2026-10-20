@@ -109,9 +109,24 @@ For a real observable on one signed $A$-orbit its tail symbol is
  N_\lambda(\theta)N_{\lambda^{-1}}(\theta),\quad
  N_\rho=|A_0(\rho e^{i\theta})|^2+|B_0(\rho e^{i\theta})|^2.
 \]
-A product of finite Laurent polynomials is a positive constant only if both
-factors are constant. Thus the symbol is flat exactly for one temporal tap,
-or two taps in phase quadrature.
+The two factors are in fact separately constant. Each $N_\rho$, as a
+function of $\zeta=e^{i\theta}$, is a Laurent polynomial satisfying
+$N_\rho(\zeta)=N_\rho(\zeta^{-1})$: for real-coefficient $A_0,B_0$,
+\[
+ N_\rho(\zeta)
+ =A_0(\rho\zeta)A_0(\rho\zeta^{-1})
+  +B_0(\rho\zeta)B_0(\rho\zeta^{-1}).
+\]
+If a product of two Laurent polynomials is a nonzero constant, each factor
+is a unit of $\mathbf C[\zeta,\zeta^{-1}]$, hence a monomial $c\zeta^n$:
+the exponent spans of the factors add under multiplication, and the
+product has span zero. Inversion invariance forces $n=0$. Thus
+$N_\lambda$ and $N_{\lambda^{-1}}$ are separately constant (for a nonzero
+filter the constant product is positive; the monomial pair
+$N_1=\zeta$, $N_2=\zeta^{-1}$ shows that inversion invariance is essential
+here). Flatness of the product symbol therefore gives flatness at the two
+radii $\lambda,\lambda^{-1}$, and the symbol is flat exactly for one
+temporal tap, or two taps in phase quadrature.
 
 For taps $c_0=ae^{i\phi}$ and $c_d=ibe^{i\phi}$, $a,b\in\mathbb R$, put
 $D_r=\det(v,A^rv)$. The unnormalized dynamical Gram matrix is exactly

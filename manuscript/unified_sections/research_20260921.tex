@@ -43,12 +43,19 @@ limit with exact variance
 \[
  \sigma^2=\frac{1650797}{4000000}.
 \]
+Here \(\eta_K\) is the scalar defined by \(M_{N_K}^K=\eta_KI\) on the
+Pell sequence, so \(|\eta_K|=1\) (canonical source:
+\texttt{mathematics/fixed\_model\_pell\_crossover.md}).
 If \(\epsilon_K\sqrt K\to t\) for
 \(U_{\epsilon,N}=\exp(i\epsilon A_N)M_N\), then, for each fixed \(m\),
 \[
  \eta_K^{-m}N_K^{-1}\operatorname{Tr}U_{\epsilon_K,N_K}^{mK}
  \longrightarrow e^{-m^2t^2\sigma^2/2}.
 \]
+Since \(|\eta_K^{-m}|=1\), the squared moduli satisfy
+\(N_K^{-2}|\operatorname{Tr}U_{\epsilon_K,N_K}^{mK}|^2
+\to e^{-m^2t^2\sigma^2}\); with \(K/N_K\to0\) the Abel factors
+\(e^{-2smK/N_K}\) in \(L_{N_K}(s)\) tend to \(1\) at each fixed \(m\).
 Consequently
 \[
  \liminf L_{N_K}(s)\ge\sum_{m\ge1}e^{-m^2t^2\sigma^2},

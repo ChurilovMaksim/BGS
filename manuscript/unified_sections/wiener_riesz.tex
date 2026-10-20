@@ -86,17 +86,51 @@ $\omega$. It is trace class for finite Fourier polynomials.
 \end{theorem}
 \begin{proof}
 For finite support, sufficiently large pair gaps have unique ordered orbit
-labels $(a,b,k)$ for $v_a+A^kv_b$. Here is a uniform gap argument. Identify
-integer vectors with a fixed fractional lattice in the real quadratic field
-of $\mu$. Bound both embeddings of the finite representative set by $M$ and
-the absolute norm of a nonzero lattice element below by $\delta>0$.
-A gap $B$ with $\lambda^B>16M^2/\delta$ in a vanishing four-atom relation
-splits it into two vanishing pieces: the high piece has conjugate embedding
-at most $4M$, and so a nonzero real embedding at least $\delta/(4M)$,
-which the low piece cannot cancel. Singleton pieces are impossible.
-Two internal pair gaps greater than $3B$ force two cross-cancellations;
-uniqueness of the chosen representatives then forces the ordered labels to
-agree. This excludes all integer translates.
+labels $(a,b,k)$ for $v_a+A^kv_b$. This rests on the following gap lemma.
+Identify integer vectors with a fixed fractional lattice $\mathcal L$ in
+the real quadratic field of $\mu$, preserved by the unit $\mu$; write
+$\sigma,\sigma'$ for the two embeddings, so $|\sigma(\mu)|=\lambda$ and
+$|\sigma'(\mu)|=\lambda^{-1}$. Bound both embeddings of the finite
+representative set by $M$ and the absolute norm of a nonzero element of
+$\mathcal L$ below by $\delta>0$. A \emph{four-atom relation} is a
+vanishing signed sum of four atoms $\mu^{e_i}\beta_i$, with $\beta_i$ from
+the representative set.
+
+\begin{lemma}[Gap splitting]\label{lem:four-atom-gap}
+Let $B$ satisfy $\lambda^B>16M^2/\delta$. If the sorted exponents of a
+four-atom relation have a consecutive gap of at least $B$, the relation
+splits into two separately vanishing pieces. No one-atom piece vanishes.
+Consequently, if both internal pair gaps in a relation
+$v_a+A^kv_b=A^t(v_{a'}+A^{k'}v_{b'})$ exceed $3B$, then
+$(a,b,k)=(a',b',k')$ and $t=0$.
+\end{lemma}
+\begin{proof}
+Split at the gap into a low piece $L$ and a high piece $H=\mu^sH_0$, where
+$s$ is the smallest high exponent and $H_0$ is a sum of at most four atoms
+with nonnegative relative exponents. Since $|\sigma'(\mu)|=\lambda^{-1}$,
+$|\sigma'(H_0)|\le4M$. If $H_0\ne0$, then $H_0$ is a nonzero element of
+$\mathcal L$, so
+$|\sigma(H_0)|=|N(H_0)|/|\sigma'(H_0)|\ge\delta/(4M)$ and
+$|\sigma(H)|\ge\lambda^s\delta/(4M)$. On the other hand
+$|\sigma(L)|\le4M\lambda^{s-B}$, and $H+L=0$ would force
+$\lambda^B\le16M^2/\delta$, contrary to the choice of $B$. Hence $H_0=0$
+and $L=0$. A single atom $\mu^e\beta$ is nonzero, since $\beta\ne0$ and
+$\mu$ is a unit, so no singleton piece vanishes.
+
+For the pair relation, the three consecutive gaps of the four sorted
+exponents sum to at least $\max(k,k')>3B$, so some gap exceeds $B$.
+Splitting at such a gap, an end gap would isolate a singleton, which
+cannot vanish; hence the pieces have two atoms each. (Within a pair the
+lower atom precedes the upper one, so a mixed low piece consists of the
+two lower atoms.) If one piece were a whole pair, its vanishing would
+identify two distinct oriented orbits, or one orbit at a positive
+self-shift; both are excluded, since each orbit has a unique
+representative and the hyperbolic $A$ has no periodic nonzero vector.
+Thus the low piece gives $\beta_a=\mu^t\beta_{a'}$, forcing $a=a'$ and
+$t=0$, and the high piece gives $\mu^k\beta_b=\mu^{k'}\beta_{b'}$,
+forcing $b=b'$ and $k=k'$ by the same argument.
+\end{proof}
+This excludes all integer translates.
 
 At such a label the exact output of $S_g(\omega)$ is
 \[
