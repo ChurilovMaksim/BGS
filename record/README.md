@@ -70,3 +70,7 @@ provide those boundaries. Earlier executions remain preserved. A successful buil
 asymptotic implication, and internal reconstruction is not external refereeing.
 
 [Separate reversal-channel continuation](reversal_channel_continuation_20261011.md) extends TRACE-073 without adding a BGS closure claim.
+
+## Toolchain follow-up, 20 October 2026
+
+[Compilation receipt and scope](toolchain_followup_20261020.md); [standalone open mathematical task](remaining_breakthrough_task_20261020.md).

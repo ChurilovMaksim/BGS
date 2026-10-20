@@ -1,6 +1,6 @@
 # Lean 4 formalization
 
-There are 24 active source modules. The last confirmed aggregate receipt below covers 23; CoherenceBudget has no confirmed compiler execution. Source presence is not a fresh Lean build.
+There are 24 active source modules. All 24 compiled with Lean 4.33.1 on 20 October (27 Lake jobs), including CoherenceBudget. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer. A Lean theorem certifies the proposition in its source;
@@ -52,7 +52,7 @@ formal progress.
 | `PellFourierKernel.lean` | finite/exact Fourier-kernel identities used by the Pell/Floquet branch |
 | `TorusLevelSets.lean` | finite torus level-set cardinalities, orbit counts and freeness |
 | `TorusScaleLaw.lean` | finite branch-scale identities |
-| `CoherenceBudget.lean` | natural-number budget positivity only; source present, no confirmed compilation; no matrix/codimension or BGS formalization |
+| `CoherenceBudget.lean` | natural-number budget positivity only; compiled 20 October 2026; axioms [propext, Quot.sound]; no matrix/codimension or BGS formalization |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.
@@ -104,7 +104,7 @@ operator statement.
 
 The new main 57150ac formalization job was skipped after the prerequisite
 jobs failed without available code-step receipts; its rerun also skipped
-formalization. CoherenceBudget therefore remains without a confirmed
-compiler execution. This does not change the earlier actually compiled
+formalization. At that checkpoint CoherenceBudget remained without a confirmed
+compiler execution; the 20 October follow-up above now supplies one. This does not change the earlier actually compiled
 Std modules. See the [CI observation receipt](../evidence/executions/20261014/first-return/ci_observation.json).
 TRACE-083 adds no Lean operator formalization.
