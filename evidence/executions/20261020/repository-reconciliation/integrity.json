@@ -1,0 +1,72 @@
+{
+  "python_ast_count": 707,
+  "json_paths": 2293,
+  "json_historical_exceptions": [
+    {
+      "path": "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/compact_portability_check.json",
+      "bytes": 6414,
+      "sha256": "b8b8932a073a9809507353a247020d1edcaa741a3ffccc7e5eeac232f3661cbd",
+      "classification": "preserved progress-prefixed log with valid trailing JSON",
+      "json_start_offset": 35
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt1/checks.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "preserved empty failed-attempt output"
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/failed_attempts/attempt2/checks.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "preserved empty failed-attempt output"
+    }
+  ],
+  "maintained_yaml_count": 7,
+  "shell_checks": [
+    {
+      "name": "shell-0",
+      "command": [
+        "bash",
+        "-n",
+        "/workspace/scratch/1c87c9bb0442/BGS/computations/maintenance/build_lean_verified.sh"
+      ],
+      "returncode": 0,
+      "seconds": 0.0027132210000218038,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "shell-1",
+      "command": [
+        "bash",
+        "-n",
+        "/workspace/scratch/1c87c9bb0442/BGS/evidence/research_checkpoint_20261007/raw/bgs_block_coercivity_review/reproduce.sh"
+      ],
+      "returncode": 0,
+      "seconds": 0.001788075999911598,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "shell-2",
+      "command": [
+        "bash",
+        "-n",
+        "/workspace/scratch/1c87c9bb0442/BGS/evidence/research_checkpoint_20261007/raw/bgs_coercivity_addenda_review/reproduce.sh"
+      ],
+      "returncode": 0,
+      "seconds": 0.0015413119999720948,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "protected_proof_notes": 325,
+  "protected_other_sources": [
+    "record/claims.json",
+    "record/claim_ledger.md",
+    "literature/external_dependencies.json"
+  ],
+  "protected_changed": [],
+  "active_lean_source_files": 25,
+  "lean_admission_lines_files": [],
+  "lean_compiled": false,
+  "errors": []
+}

@@ -52,6 +52,7 @@ formal progress.
 | `PellFourierKernel.lean` | finite/exact Fourier-kernel identities used by the Pell/Floquet branch |
 | `TorusLevelSets.lean` | finite torus level-set cardinalities, orbit counts and freeness |
 | `TorusScaleLaw.lean` | finite branch-scale identities |
+| `CoherenceBudget.lean` | natural-number budget positivity only; source present, no confirmed compilation; no matrix/codimension or BGS formalization |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

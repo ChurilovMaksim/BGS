@@ -148,7 +148,8 @@ Use Python with the exact package versions in `requirements.txt` (CI targets
 Python 3.13), CMake >= 3.20, a C++20 compiler, and Boost development headers.
 The workspace runner rejects missing, unknown, or mismatched pinned Python
 package versions before running checks. Selected C++ checks also require
-identifiable CMake/compiler/Boost versions. The Boost probe preprocesses `boost/version.hpp` with the selected compiler;
+identifiable CMake/compiler/Boost versions. The Boost probe preprocesses
+`boost/version.hpp` with the selected compiler;
 use `--boost-include` for an explicit include directory. Unreadable or
 inconsistent version macros are rejected.
 Python-only focused runs do not require CMake, C++, or Boost; direct
