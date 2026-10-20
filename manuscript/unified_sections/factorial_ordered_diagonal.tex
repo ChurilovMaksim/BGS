@@ -6,8 +6,20 @@ Cutting at every interval endpoint leaves only open strings; zero strings
 are exact identity deltas and all repeated ports remain.
 For a unitary with $N\max_{a,b}|U_{ab}|^2\le C$, this sector trace is bounded
 by $C_{h,C}(1+\log N)^{2h}$ independently of all cycle lengths.
-The proof cancels the common scalar inside the centered Neumann series,
-then uses exact Haar second moments and a fixed cutoff. It uses no
+The proof runs as follows (canonical source:
+\texttt{mathematics/factorial\_ordered\_diagonal.md}, G1--G5).
+The centered Gram operator $H_c$ obeys the same exact Haar moment bound
+as in the collective hierarchy, $\|H_c\|\le1/(N+1)$, so the centered
+Neumann series for $(I-H_c)^{-1}$ converges absolutely in operator norm.
+Writing the sector trace through this series, each summand is a difference
+$F_Q(U)-\mathbb E_VF_Q(V)$ over independent Haar products $Q$; the common
+scalar $F_J(U)=N^{\mathrm{cycles}(\sigma\pi^{-1})-M}$ is independent of
+$U$ and cancels inside each summand. Exact Haar second moments give
+$\mathbb E\|Q_j-J\|^2$ decay $(N+1)^{-j}$ up to the dimension factor, so a
+fixed cutoff $L=4h+4$ makes the tail $O_h(N^{-3/2})$; the finitely many
+initial terms are controlled by maximum-entry Haar moments
+$(\mathbb E Y_N^p)^{1/p}\le4\log N+2(p!)^{1/p}$, $Y_N=N\max_{a,b}|V_{ab}|^2$,
+which produce the displayed $(1+\log N)^{2h}$ bound. It uses no
 position-chain singular gap.
 
 The exact partition--M\"obius formula, including every zero-power stratum,

@@ -26,6 +26,24 @@ Radius & Real dimension & Equations & P & S & D & F \\
 
 The radius-eight coefficient table has SHA-256 \path{7462bc1a522a57741028efd6642710fa50aa271b27f21bfc6a683f578aee53f4}. The plain-text proof has SHA-256 \path{ed26c33904551e11a5185d55702d781b4f2555d7a14153ceaf6e8a0b5f71d94a}. The delivered manifest provides all source and result hashes. Hash agreement identifies a proof object; it does not by itself prove that object sound.
 
+The certificate objects are in the repository. The plain-text proof itself
+(the 5,704 P/S/D/F deductions, with rule counts 3,293/1,077/1,229/105) is
+\path{evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.proof}
+(git blob \path{17a70f2b42166c0e8a339050d38f3b1883483720}; its SHA-256 is
+the plain-text proof hash above). The accompanying certificate record,
+stating radius $8$, real dimension $288$, $144$ complex variables and
+$1{,}475$ orbit equations with the coefficient-table hash above, is
+\path{evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json}
+(git blob \path{dcbe0a7d1a208c6596d37fd4178d20f9cbd07a52}). The replay
+receipt
+\path{evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_certificate_replay.json}
+(git blob \path{3621e53121a776596d936829b7a6b75bd97975d2}) records PASS
+with the same rule counts and both hashes. The generator and the replay
+checker are \path{computations/verification/resonance_nondegeneracy_certificate.py}
+(git blob \path{6503d86b52b713bfb042031a7e5a97e6f62e8cc8}) and
+\path{computations/verification/check_resonance_certificate.py}
+(git blob \path{67b715a3888baa2da7d288a5e3d577ebc3d501c1}).
+
 \subsection{A human-readable arbitrary-phase example and a quantitative margin}\label{nondegeneracy:a-human-readable-arbitrary-phase-example-and-a-quantitative-margin}
 
 For \(R=1\), in the order \((0,1),(1,-1),(1,0),(1,1)\), three of the exact chosen orbit coefficients are \[

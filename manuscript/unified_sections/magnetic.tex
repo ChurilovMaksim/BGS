@@ -22,7 +22,7 @@ For each odd multiplicative character \(\chi\) trivial on \(H\), extend \(f_\chi
  M_{\chi,\psi}=\frac{e_p(-q/2)}{p-1}
    \sum_{x\ne0,1}\overline{\chi(x)}\psi(x-1)e_p(qx),
  \qquad [A_q]=M+M^*. \tag{MQ.2}
-\] This is precisely the centered full-complex matrix in the maintained \texttt{spectral\_diagnostics.py}, not a surrogate ensemble. Compression of \(RW_qR=W_q^*\) to one parity sector also gives \(M=M^*\); it does not make \(M\) entrywise real.
+\] This is precisely the centered full-complex matrix in the maintained \texttt{spectral\_diagnostics.py} (function \texttt{hermitian\_matrix} in \path{computations/analysis/spectral_diagnostics.py}), not a surrogate ensemble. Compression of \(RW_qR=W_q^*\) to one parity sector also gives \(M=M^*\); it does not make \(M\) entrywise real.
 
 \subsection{An explicit antiunitary and an isospectral real gauge}\label{magnetic:an-explicit-antiunitary-and-an-isospectral-real-gauge}
 
@@ -107,7 +107,7 @@ For words ending with \(g=1\), put \(t_1=1\) and \(t_j=h_1\cdots h_{j-1}\) for \
 
 \subsection{Pairings, overcounting, and crossing cancellation}\label{magnetic:pairings-overcounting-and-crossing-cancellation}
 
-Let \(m=2r\). Every balanced tuple admits a matching of the \(2r\) positions, with equal labels and opposite signs on matched positions. Write \[
+Let \(m=2r\) and assume \(2r<K\) throughout this subsection; this is the hypothesis under which the grid zero bound at (MQ.17) is applied, and it is also the hypothesis of Theorem 4. Every balanced tuple admits a matching of the \(2r\) positions, with equal labels and opposite signs on matched positions. Write \[
  P_r=(2r-1)!!,\qquad C_r=\frac1{r+1}\binom{2r}{r}.
 \] These are the numbers of all and of noncrossing matchings. Order pairs by their first endpoints, so pair 1 contains position 1. Assign labels \(x_1=1,x_2,\ldots,x_r\in H\) and orientations \(\sigma_i\in\{-1,1\}\). With distinct labels the matching is unique. Overcounting is possible only when two labels coincide. A union bound bounds the number of bad matching assignments by \[
  P_r2^r\binom r2 K^{r-2}, \tag{MQ.15}
@@ -116,11 +116,11 @@ Let \(m=2r\). Every balanced tuple admits a matching of the \(2r\) positions, wi
 Summing the four interactions between two matched pairs gives the exact Laurent polynomial \[
  F_{\pi,\sigma}(x)=\sum_{\substack{i<j\\\text{pairs }i,j\text{ cross}}}
  \sigma_i\sigma_j(x_j/x_i-x_i/x_j). \tag{MQ.16}
-\] Disjoint or nested pairs give zero; interlaced pairs give the indicated term. Noncrossing matchings have \(F=0\). Any crossing matching has nonconstant \(F\): each crossing contributes two unique directed-ratio monomials with opposite unit coefficients. After \(x_1=1\), the monomials involving pair 1 become \(x_j,x_j^{-1}\) and remain distinct from every other term. Thus they cannot cancel in odd characteristic.
+\] Disjoint or nested pairs give zero; interlaced pairs give the indicated term. Noncrossing matchings have \(F=0\). Any crossing matching has nonconstant \(F\). Indeed, a crossing of the unordered pair \(\{i,j\}\) contributes the two monomials \(x_j/x_i\) and \(x_i/x_j\), with coefficients \(\sigma_i\sigma_j\) and \(-\sigma_i\sigma_j\); their exponent vectors \(\pm(e_j-e_i)\) determine the unordered pair \(\{i,j\}\) from their support and the orientation from the sign pattern, so monomials contributed by distinct crossings are distinct. This persists after the normalization \(x_1=1\): a crossing \(\{1,j\}\) contributes \(x_j^{\pm1}\), whose exponent vectors \(\pm e_j\) are supported on one coordinate, whereas a crossing \(\{i,j\}\) with \(i,j\ge2\) contributes vectors supported on two coordinates, and different pairs give different supports. Hence every monomial of \(F_{\pi,\sigma}\) occurs exactly once, with coefficient \(\pm1\), nonzero in odd characteristic; no cancellation is possible, and \(F\) is nonconstant as soon as one crossing occurs.
 
 For a crossing let \(d=r-1\) and \[
  S_F(q)=K^{-d}\sum_{x\in H^d}e_p(qF(x)).
-\] Multiplication of \(F(x)-F(y)\) by all \(2d\) variables clears denominators and gives a nonzero polynomial of total degree at most \(2d+1=2r-1\). The grid zero bound therefore gives at most \((2r-1)K^{2d-1}\) equal-value pairs. For completeness, that bound follows by induction on the number of variables: separate the leading coefficient in the last variable, use the univariate root bound off its zero set, and induct on that coefficient on the remaining fibres. Additive orthogonality now yields \[
+\] Multiplication of \(F(x)-F(y)\) by all \(2d\) variables clears denominators and gives a nonzero polynomial of total degree at most \(2d+1=2r-1\). Since \(2r-1<K\), the grid zero bound therefore gives at most \((2r-1)K^{2d-1}\) equal-value pairs. For completeness, that bound follows by induction on the number of variables: separate the leading coefficient in the last variable, use the univariate root bound off its zero set, and induct on that coefficient on the remaining fibres. Additive orthogonality now yields \[
  \mathbb E_{q\ne0}|S_F(q)|^2
  =\frac{pK^{-2d}\#\{(x,y):F(x)=F(y)\}-1}{p-1}
  \leq\frac{p(2r-1)}{(p-1)K}. \tag{MQ.17}
