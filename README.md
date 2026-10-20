@@ -4,7 +4,7 @@
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (19 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (20 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The repository reconciliation of 20 October 2026 promoted no scientific result. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
@@ -155,8 +155,12 @@ These are self-contained project proofs with independent internal
 reconstruction. External priority is not established. The
 [submission review](literature/phase_channel_jet_sources_20261008.md) maps the
 attached article to maintained results and explicitly pending candidates.
-In particular, BGS-TRACE-055's polylogarithmic deep-source hierarchy remains
-**verification-pending**.
+> **Status distinction — BGS-TRACE-055 is not a proved result.** In
+> particular, BGS-TRACE-055's polylogarithmic deep-source hierarchy remains
+> **verification-pending**, unlike the reconstructed TRACE-053/054/056
+> above. Its registered source is a research checkpoint record
+> (`record/research_checkpoint_20261008.md`), not a maintained proof in
+> `mathematics/`, and it must not be cited as a project proof.
 
 ## Read, reproduce, and cite
 
