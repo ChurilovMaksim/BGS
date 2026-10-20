@@ -380,7 +380,9 @@ identifiers and hashes are retained; copyrighted article texts are not
 redistributed. Historical theorem-check dates above are preserved.
 
 The registry previously attached the wrong title to Corvaja–Zannier DOI
-10.4171/JEMS/409 and to Fouvry–Kowalski–Michel arXiv:1210.0851v5. The
+10.4171/JEMS/409 (a prose mention of the same article recorded in the
+8 September 2026 source check above, not a separate bibliographic
+entry) and to Fouvry–Kowalski–Michel arXiv:1210.0851v5. The
 identifiers and mathematical locators were correct and are retained. FKM's
 v5 is dated 17 August **2013**; the stable key `EXT-FKM-2014` is an opaque
 legacy identifier, not a publication-year claim. Its Lemma 3.5 is on PDF
