@@ -1,5 +1,11 @@
 # Scientific changelog
 
+## 2026-10-20 — repository reconciliation
+
+Current navigation and complete dependency views are generated from the authorities.
+Reconciled bibliographic coverage and explicit epochs; repaired optimized entry guards.
+[Review and actual verification scope](record/repository_reconciliation_20261020.md).
+
 ## 2026-10-19
 
 - Integrated eleven missing research packets and the reviewed two-channel

@@ -1,5 +1,7 @@
 # Reproducible environment
 
+[The 20 October audit](../record/repository_reconciliation_20261020.md) records the actual toolchain separately from the intended CI target. Current navigation is checked with render_research_views.py --check.
+
 The repository separates source pinning from evidence that an environment
 actually executed.
 

@@ -314,6 +314,10 @@ flowchart TD
 
 The first box is exactly the current model-specific gap.
 
+The all-order implication [TRACE-086](../mathematics/all_order_process_closure_20261015.md) removes a separate
+uniform-integrability premise under its stated factorial-correlation hypotheses.
+Those hypotheses still require model-specific estimates for the frozen map.
+
 ---
 
 

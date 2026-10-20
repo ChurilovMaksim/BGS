@@ -1,5 +1,13 @@
 # Registered bibliography audit: 6 October 2026
 
+## Current selection
+
+[The explicit pointer](../../literature/metadata_audit.json) selects the
+[20 October snapshot](registry_metadata_20261020.json) and adjacent digest.
+Earlier snapshots and the review below retain their original scope.
+[The impact record](../../record/bibliographic_impact_20261020.json) identifies
+the five carried-forward source reviews; no fresh acquisition is implied.
+
 ## Scope and findings
 
 Current coverage is 46/46 registered references in [the reviewed Haar-impact cache](registry_metadata_20261012_haar.json), checked by the maintained bibliographic audit. The [explicit impact review](../../record/bibliographic_impact_haar_20261012.json) adds only TRACE-076 as a transitive user of the scalar Tropp input through TRACE-060. Every primary-source observation and accepted source field is preserved from [the Schur cache](registry_metadata_20261011_cavity.json), whose bytes remain unchanged. Historical initial coverage was 34/34, followed by a 35/35 constructive extension. Initial pass covered 28; six returns/Pell sources were added after an independent corpus review. The registry includes role-qualified attribution and internally reproved inputs as well as load-bearing external theorems. Metadata agreement is not theorem applicability.

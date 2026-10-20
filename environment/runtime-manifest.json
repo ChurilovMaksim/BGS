@@ -1,6 +1,6 @@
 {
   "schema": "bgs-runtime-manifest-v1",
-  "updated": "2026-09-22",
+  "updated": "2026-10-20",
   "python": {
     "ci": "3.13",
     "requirements": "requirements.txt",
@@ -25,7 +25,9 @@
     "scientific_registry": "python computations/verification/scientific_registry_audit.py",
     "workspace": "python computations/maintenance/verify_workspace.py (requires a clean Git worktree by default; records whole-tracked-tree and toolchain fingerprints)",
     "claim_registry": "python computations/maintenance/render_claim_registry.py --check",
-    "errata": "python computations/maintenance/render_errata.py --check"
+    "errata": "python computations/maintenance/render_errata.py --check",
+    "research_views": "python computations/maintenance/render_research_views.py --check",
+    "bibliographic_metadata": "python computations/verification/bibliographic_metadata_audit.py --self-test"
   },
   "caveat": "A manifest describes the target environment. Actual execution status must be recorded separately."
 }

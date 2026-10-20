@@ -1,5 +1,7 @@
 # Evidence and execution scope
 
+[The 20 October reconciliation](../record/repository_reconciliation_20261020.md) separates full baseline integrity, executed checks and unavailable suites. Historical negative evidence remains unchanged.
+
 This directory retains promoted finite certificates, diagnostics, preserved
 regression inputs and actual execution/build receipts. Promotion means that
 an object is useful to the research record; it does not make it a theorem.

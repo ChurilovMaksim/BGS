@@ -27,6 +27,7 @@ The canonical theorem sources live at stable paths in this directory.
 | What survives noise or insertion averaging? | [Unmasked hierarchy](right_frame_unmasked_pinch_hierarchy.md), [signed stability](convex_pinch_weak_noise_and_deconvolution.md), [noise removal](microscopic_noise_removal.md) | Masks, source extraction and deterministic transfer retain explicit obligations |
 | What are the reconstructed analytic inequalities? | [Max-entry phase channel](max_entry_phase_channel.md), [sharp inner jets](sharp_inner_jet.md), [real-flow transport](phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
 | Which full-depth clock conclusions are unconditional? | [Exact Haar feedback and entropy-stable clocks](haar_feedback_clock_law_20261012.md) | Independent initial laws with relative entropy O(log N) relative to Haar; deterministic and microscopic-law boundaries explicit |
+| Which feedback flatness is unconditional? | [Max-entry feedback flatness](unconditional_feedback_flatness_20261013.md) | TRACE-080 under its named phase-channel and matrix-concentration inputs; deterministic local spectral universality remains open |
 | What is proved in the other regimes? | [Arithmetic/return/resonance topics](topics/README.md) | Each family retains its own hypotheses and scales |
 
 ## Essential distinctions
@@ -56,7 +57,7 @@ view; edit its Markdown authority and run the appropriate synchronizer.
 sections. Finite certificates, numerical diagnostics and formal kernels
 certify their stated propositions only.
 
-[The current checkpoint](../record/research_checkpoint_20261008.md) and
+[The 8 October checkpoint](../record/research_checkpoint_20261008.md) and
 [the corpus review](../record/corpus_revision_20261006.md) state actual review
 coverage. Historical branch arguments remain traceable through the
 [record index](../record/history/2026/INDEX.md); an inventory is not a complete

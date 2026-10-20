@@ -8,6 +8,11 @@ on:
       - 'papers/**'
       - 'record/claims.json'
       - 'record/generated_sources.json'
+      - 'record/mathematics_topics.json'
+      - 'literature/metadata_audit.json'
+      - 'evidence/source_metadata/registry_metadata_20261020.*'
+      - 'computations/maintenance/render_research_views.py'
+      - 'computations/verification/bibliographic_metadata_audit.py'
       - 'literature/external_dependencies.json'
       - 'computations/verification/scientific_registry_audit.py'
       - 'computations/maintenance/sync_return_sections.py'
@@ -23,6 +28,11 @@ on:
       - 'papers/**'
       - 'record/claims.json'
       - 'record/generated_sources.json'
+      - 'record/mathematics_topics.json'
+      - 'literature/metadata_audit.json'
+      - 'evidence/source_metadata/registry_metadata_20261020.*'
+      - 'computations/maintenance/render_research_views.py'
+      - 'computations/verification/bibliographic_metadata_audit.py'
       - 'literature/external_dependencies.json'
       - 'computations/verification/scientific_registry_audit.py'
       - 'computations/maintenance/sync_return_sections.py'
@@ -46,8 +56,10 @@ jobs:
       - name: Validate scientific metadata
         run: |
           python computations/verification/scientific_registry_audit.py
+          python computations/verification/bibliographic_metadata_audit.py --self-test
           python computations/maintenance/render_claim_registry.py --check
           python computations/maintenance/render_errata.py --check
+          python computations/maintenance/render_research_views.py --check
       - name: Install TeX
         run: |
           sudo apt-get update

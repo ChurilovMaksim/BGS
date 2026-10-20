@@ -1,5 +1,7 @@
 # 2026 research-history index
 
+Recent integrations: [19 October phase research](../../chat_integration_20261019.md), [16 October collision law](../../wick_poisson_continuation_20261016.md), [20 October reconciliation](../../repository_reconciliation_20261020.md).
+
 This index is navigational; status authority remains
 `../../claim_ledger.md`.
 

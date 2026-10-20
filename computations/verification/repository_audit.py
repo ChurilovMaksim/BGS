@@ -353,6 +353,7 @@ def check_active_markdown_links() -> None:
     broken: list[str] = []
     dynamic = sorted((ROOT / "mathematics" / "topics").rglob("README.md"))
     dynamic += sorted((ROOT / "papers").rglob("README.md"))
+    dynamic += sorted((ROOT / "docs").glob("*.md"))
     dynamic += [
         ROOT / "SOURCE_OF_TRUTH.md",
         ROOT / "CONTRIBUTING.md",

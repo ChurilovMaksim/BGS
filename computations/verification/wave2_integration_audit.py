@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def check_external_epoch(root, epoch):
-    """Preserve the sealed 39-row leaf while admitting seven reviewed sources."""
+    """Preserve the sealed 39-row leaf while admitting explicitly reviewed later sources."""
     extension=epoch.get('external_dependency_extension',{})
     snapshot=safe_path(root,extension.get('historical_registry',''))
     require(snapshot.is_file() and
@@ -23,7 +23,7 @@ def check_external_epoch(root, epoch):
     rows=current['dependencies']; active={row['id']:row for row in rows}
     old={row['id']:row for row in previous['dependencies']}
     allowed={'EXT-OO-1997','EXT-MATSUMOTO-2007','EXT-VV-2017','EXT-JM-2015',
-             'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989'}
+             'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989','EXT-PITTEL-2016','EXT-KPSS-2002','EXT-BF-2023','EXT-CS-2006','EXT-STANLEY-1981'}
     declared=extension.get('added_ids',[])
     require(len(declared)==len(allowed) and set(declared)==allowed,
             'external extension requires explicit epoch review')

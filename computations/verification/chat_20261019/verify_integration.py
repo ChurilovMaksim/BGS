@@ -4,6 +4,9 @@
 This is an integrity and scope check, not a proof checker. The pinned remote
 tree authenticates paths absent from the explicitly partial local overlay.
 """
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 import ast
 from collections import Counter

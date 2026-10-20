@@ -20,6 +20,9 @@ resolve priority and source applicability, verify the actual submission
 artifact, and set the verification commit. The [review protocol](../REVIEWING.md)
 governs that release step. No publication status is implied by the table.
 
-## Checked 11 October research
+## Current integration and verification
 
-The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+[The research record](../record/README.md) indexes the 11–19 October continuations.
+[The repository audit](../record/repository_reconciliation_20261020.md) records current
+source/build checks separately from historical receipts. Integration does not
+imply submission, independent refereeing or BGS closure.

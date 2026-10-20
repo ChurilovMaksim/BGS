@@ -194,6 +194,9 @@ def audit_python_pins() -> None:
         fail(".python-version and runtime-manifest Python version disagree")
 
 def audit_generated_and_environment() -> None:
+    pointer=load(ROOT / "literature" / "metadata_audit.json")
+    for key in ("cache","digest","review"):
+        require_path(pointer[key])
     data = load(GENERATED)
     for rule in data.get("rules", []):
         require_path(rule["producer"])

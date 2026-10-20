@@ -28,7 +28,7 @@ class ExternalEpochPreservation(unittest.TestCase):
 
     def test_current_epoch_preserves_39_contracts(self):
         epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
-        self.assertEqual(check_external_epoch(ROOT,epoch),(39,7))
+        self.assertEqual(check_external_epoch(ROOT,epoch),(39,12))
 
     def test_modified_old_locator_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -1,5 +1,7 @@
 # Lean 4 formalization
 
+There are 24 active source modules. The last confirmed aggregate receipt below covers 23; CoherenceBudget has no confirmed compiler execution. Source presence is not a fresh Lean build.
+
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer. A Lean theorem certifies the proposition in its source;
 the informal analytic corpus is substantially larger.

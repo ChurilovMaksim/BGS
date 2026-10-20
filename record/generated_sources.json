@@ -1,6 +1,6 @@
 {
   "schema": "bgs-generated-sources-v1",
-  "updated": "2026-10-06",
+  "updated": "2026-10-20",
   "rules": [
     {
       "generated": [
@@ -68,6 +68,20 @@
       "mode": "build artifact; never source authority",
       "authoritative_sources": [
         "manuscript/BGS_unified.tex"
+      ]
+    },
+    {
+      "generated": [
+        "docs/corpus_atlas.md",
+        "record/scientific_dependencies.json",
+        "record/scientific_dependency_graph.md"
+      ],
+      "producer": "computations/maintenance/render_research_views.py",
+      "mode": "Deterministic current navigation; --check fails on drift",
+      "authoritative_sources": [
+        "record/claims.json",
+        "record/mathematics_topics.json",
+        "mathematics/"
       ]
     }
   ],

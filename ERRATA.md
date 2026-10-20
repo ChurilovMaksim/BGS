@@ -37,6 +37,7 @@ mechanisms and historical context remain authoritative in
 | `ERR-029` | Sampled Toeplitz contraction without grid-size condition | require M>=N | Discrete Fourier compression proof corrected |
 | `ERR-030` | Mesoscopic initial arc endpoint and separate all-order UI premise | right endpoint included; every-order UI derived | Corrected checker retained; weaker premises still need their own UI |
 | `ERR-031` | Original failed transmission run has stale input provenance | historical failed run not reproducible as issued; successful v2 remains valid | No mathematical conclusion relies on the failed original; preserved manifest is marked stale, not recertified |
+| `ERR-032` | Integration gates lagged already adopted research | Reconciled explicit ID/source epochs and bibliographic impact; restored optimized-Python entry rejection in two dated checks | No theorem state or proof changes; original receipts remain historical. |
 
 New scientific corrections are recorded in `record/retractions.md` first,
 then normalized into `record/errata.json` and regenerated here.

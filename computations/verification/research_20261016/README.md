@@ -69,3 +69,5 @@ Its maintained contract is `wick_poisson_contract.json`; the executed version-2
 manifest records the actual runner, input hashes, integer arithmetic and caps.
 Use the new `verify_wick_integration.py` for the later scientific source state.
 The previous packet remains immutable provenance for its own revision.
+
+This is a dated snapshot check: do not refresh historical hashes to admit later editorial revisions. Current maintenance uses the registry, repository and navigation gates. Optimized Python is rejected before verification imports/output.

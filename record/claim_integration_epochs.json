@@ -1,8 +1,8 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-14",
-  "purpose": "Explicit reviewed state/source lineage across historical epochs and the scoped 11-14 October continuations; historical reviews do not cover later IDs or stronger statements.",
+  "reviewed_on": "2026-10-20",
+  "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
       "id": "BGS-TRACE-053",
@@ -189,6 +189,156 @@
       "state": "proved",
       "source": "mathematics/coherent_first_return_pulse_20261014.md",
       "disposition": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion."
+    },
+    {
+      "id": "BGS-CUE-002",
+      "state": "proved",
+      "source": "mathematics/full_pair_cue_covariance_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value."
+    },
+    {
+      "id": "BGS-FM-032",
+      "state": "proved",
+      "source": "mathematics/quantum_cyclic_cohomology_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit."
+    },
+    {
+      "id": "BGS-FM-033",
+      "state": "conditional",
+      "source": "mathematics/scaled_weyl_overlap_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound."
+    },
+    {
+      "id": "BGS-TRACE-084",
+      "state": "proved",
+      "source": "mathematics/resonant_mesoscopic_criterion_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law."
+    },
+    {
+      "id": "BGS-TRACE-085",
+      "state": "proved",
+      "source": "mathematics/root_lifting_sector_boundary_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator."
+    },
+    {
+      "id": "BGS-TRACE-086",
+      "state": "proved",
+      "source": "mathematics/all_order_process_closure_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required."
+    },
+    {
+      "id": "BGS-TRACE-087",
+      "state": "proved",
+      "source": "mathematics/parameter_deaveraging_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it."
+    },
+    {
+      "id": "BGS-TRACE-088",
+      "state": "proved",
+      "source": "mathematics/equal_edge_occupation_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector."
+    },
+    {
+      "id": "BGS-TRACE-089",
+      "state": "proved",
+      "source": "mathematics/collision_crossover_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input."
+    },
+    {
+      "id": "BGS-TRACE-090",
+      "state": "proved",
+      "source": "mathematics/bounded_radial_ratios_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N."
+    },
+    {
+      "id": "BGS-TRACE-091",
+      "state": "proved",
+      "source": "mathematics/hardy_spectral_remainder_20261015.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
+    },
+    {
+      "id": "BGS-TRACE-092",
+      "state": "proved",
+      "source": "mathematics/abel_clock_rigidity_20261016.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Every unitary spectrum, N>=1 including multiplicities; stationary intensity-one processes with finite displayed q-energy. Local bounded-Lipschitz Wasserstein bound C sqrt(Abel excess), with exponent optimal. No estimate of physical Abel excess, CUE convergence or all-order signed hierarchy."
+    },
+    {
+      "id": "BGS-TRACE-093",
+      "state": "proved",
+      "source": "mathematics/gaussian_equal_edge_20261016.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exactly flat intensities only. B/G->1 for every m=o(N); for m/N->alpha>0 the log(B)/N rate equals (1+alpha)log(1+alpha)-alpha, E_W C_edge->2alpha^2 and triple edges vanish. The later BGS-TRACE-094 closes the exact flat limiting B/G and collision distribution; no non-flat physical or signed BGS extension. Classical Gaussian formula and sinh crossover credited to 2002 work."
+    },
+    {
+      "id": "BGS-TRACE-094",
+      "state": "proved",
+      "source": "mathematics/wick_collision_poisson_20261016.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exact positive flat Wick measure, each fixed order and m/N in a positive compact range. C_edge converges to Poisson(2alpha^2), B/G to exp(-alpha^2), collision locations to uniform Poisson measure; fixed distinct vertex occupations converge to independent geometric mean-alpha variables. Radial iid high-power trace corollary requires every even radial moment <=j!. No non-flat transfer, signed physical cancellation, BGS, growing-order or priority claim."
+    },
+    {
+      "id": "BGS-TRACE-095",
+      "state": "conditional",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Under the pinned feedback trajectory/moment inputs and reversal hypothesis, u tends to infinity with u/N tending to zero; no substitution u=2 and no fixed frozen spectrum law."
+    },
+    {
+      "id": "BGS-TRACE-096",
+      "state": "proved",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved."
+    },
+    {
+      "id": "BGS-TRACE-097",
+      "state": "conditional",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Conditional on the stated fixed-level TV compactness TC; evaluates the specified normalized positive current, not Haar identification or all signed traces."
+    },
+    {
+      "id": "BGS-TRACE-098",
+      "state": "proved",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded."
+    },
+    {
+      "id": "BGS-TRACE-099",
+      "state": "proved",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption."
+    },
+    {
+      "id": "BGS-TRACE-100",
+      "state": "proved",
+      "source": "mathematics/phase_ensemble_continuation_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder."
+    },
+    {
+      "id": "BGS-TRACE-101",
+      "state": "proved",
+      "source": "mathematics/phase_neutral_primitives_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects."
+    },
+    {
+      "id": "BGS-TRACE-102",
+      "state": "proved",
+      "source": "mathematics/phase_second_defect_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS."
+    },
+    {
+      "id": "BGS-TRACE-103",
+      "state": "proved",
+      "source": "mathematics/phase_quartic_cluster_sum_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential."
+    },
+    {
+      "id": "BGS-TRACE-104",
+      "state": "proved",
+      "source": "mathematics/phase_cayley_cauchy_transfer_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied."
+    },
+    {
+      "id": "BGS-TRACE-105",
+      "state": "proved",
+      "source": "mathematics/cauchy_positive_source_boundary_20261019.md",
+      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim."
     }
   ],
   "invariants": [
@@ -197,7 +347,7 @@
     "New entries are not automatically classified as theorems and do not imply a BGS local law."
   ],
   "external_dependency_extension": {
-    "reviewed_on": "2026-10-11",
+    "reviewed_on": "2026-10-20",
     "historical_registry": "evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json",
     "added_ids": [
       "EXT-OO-1997",
@@ -206,8 +356,19 @@
       "EXT-JM-2015",
       "EXT-HSW-1999",
       "EXT-TROPP-2011",
-      "EXT-AGG-1989"
+      "EXT-AGG-1989",
+      "EXT-PITTEL-2016",
+      "EXT-KPSS-2002",
+      "EXT-BF-2023",
+      "EXT-CS-2006",
+      "EXT-STANLEY-1981"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical; seven primary-source dependencies are reviewed separately in literature/circular_phase_sources_20261011.md."
+    "scope": "All 39 historical external contracts remain field-identical; twelve separately reviewed later inputs are admitted explicitly. Five observations are carried forward from 16/19 October, without fresh primary-source acquisition.",
+    "source_reviews": [
+      "literature/abel_gaussian_sources_20261016.md",
+      "literature/chat_integration_sources_20261016.md",
+      "literature/phase_ensemble_sources_20261019.md",
+      "literature/wick_poisson_sources_20261016.md"
+    ]
   }
 }

@@ -1,395 +1,175 @@
 # Scientific dependency graph
 
-The machine-readable authority for this graph is
-`record/scientific_dependencies.json`; claim metadata lives in
-`record/claims.json`.
+Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
+The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.
 
-```mermaid
-graph TD
-  T20 --> T21[BGS-TRACE-021 disjoint pair residual]
-  F21 --> T21
-  F18 --> T21
-  T1 --> T21
-  F21 --> T20[BGS-TRACE-020 ordered-diagonal factorial sector and scoped companions]
-  T2 --> T20
-  F1 --> F26[BGS-FM-026 literal-time multiplicity bounds]
-  F1 --> F25[BGS-FM-025 pure-five kick simplicity; bounded U companion]
-  F8 --> F25
-  F1 --> T19[BGS-TRACE-019 selected full-weight family]
-  T17 --> T19
-  T18 --> T19
-  F1 --> T18[BGS-TRACE-018 phase-only locality and Frostman averages]
-  F12 --> T18
-  F1 --> F24[BGS-FM-024 actual pair commutant for odd N except7]
-  F1 --> T17[BGS-TRACE-017 fixed-order complete WKB reduction]
-  T1 --> T17
-  T2 --> T17
-  F21 --> T15[BGS-TRACE-015 once-counted three-block cancellation]
-  F21 --> T16[BGS-TRACE-016 once-counted four-block cancellation]
-  FK2[BGS-FORMAL-002 bounded four-cut predicate only] --> T16
-  F1 --> F23[BGS-FM-023 bounded-power arithmetic translation exclusion]
-  F16 --> F23
-  F18 --> F23
-  F1 --> F21[BGS-FM-021 position-chain mixing and cyclic path ramp]
-  F1 --> F22[BGS-FM-022 reverse-cyclic path suppression]
-  T14[BGS-TRACE-014 all-copy clock channel obstruction]
-  C1[BGS-CAYLEY-001 pair-key reduction] --> C2[BGS-CAYLEY-002 additive energy]
-  C2 --> C3[BGS-CAYLEY-003 direct energy]
-  C2 --> C4[BGS-CAYLEY-004 uniform curve]
-  C2 --> C5[BGS-CAYLEY-005 centered quadratic target OPEN]
-  C3 --> C5
-  C4 --> C5
+**159 registered nodes; 236 direct prerequisite edges.**
 
-  T1[BGS-TRACE-001 partition Möbius] --> T2[BGS-TRACE-002 Fourier bridge]
-  T2 --> T3[BGS-TRACE-003 Heisenberg sufficiency]
-  T3 --> T4[BGS-TRACE-004 Schwartz extension]
-  T6[BGS-TRACE-006 clustered Abel and time-window boundary]
-  T7[BGS-TRACE-007 universal clock Abel floor]
-  T8[BGS-TRACE-008 two-clock Gram falsifier]
-  T3 --> T9[BGS-TRACE-009 prime-resonant sector criterion]
-  T1 --> T10[BGS-TRACE-010 absolute obstruction and signed controls]
-  T2 --> T10
-  T3 --> T10
-  T1 --> T11[BGS-TRACE-011 resonant density and critical tails]
-  T9 --> T11
-  T10 --> T11
-  T1 --> T12[BGS-TRACE-012 folded square and crowding]
-  T9 --> T12
-  T11 --> T12
-  F1 --> T12
-  F1 --> T9
-  F10 --> T9
-  CUE1[BGS-CUE-001 Haar singular-energy reference]
-  FLOW1[BGS-FLOW-001 finite coboundary phase bound]
-  FLOW2[BGS-FLOW-002 second-order radial obstruction]
-  FLOW3[BGS-FLOW-003 quadratic noise and transfer boundary]
-  FLOW3 --> FLOW4[BGS-FLOW-004 short-time coupling]
-  FLOW3 --> FLOW5[BGS-FLOW-005 reversible correction]
-  FLOW4 --> FLOW5
-  FLOW3 --> FLOW6[BGS-FLOW-006 trace limits]
-  FLOW5 --> FLOW6
-  FLOW4 --> FLOW7[BGS-FLOW-007 clock local limit]
-  FLOW5 --> FLOW7
-  FLOW3 --> FLOW8[BGS-FLOW-008 fourth-order drift]
-  FLOW3 --> FLOW9[BGS-FLOW-009 Mobius spectral limit]
-  FLOW4 --> FLOW9
-  FLOW7 --> FLOW9
-  FLOW8 --> FLOW9
-  FLOW3 --> FLOW10[BGS-FLOW-010 simultaneous random-kick limit]
-  FLOW4 --> FLOW10
-  FLOW7 --> FLOW10
-  FLOW8 --> FLOW10
-  FLOW9 --> FLOW10
-  FLOW3 --> FLOW11[BGS-FLOW-011 polynomial random-kick limit]
-  FLOW7 --> FLOW11
-  FLOW9 --> FLOW11
-  FLOW10 --> FLOW11
-  FLOW9 --> FLOW12[BGS-FLOW-012 actual-start comparison]
-  FLOW10 --> FLOW12
-  FLOW11 --> FLOW12
-  F13 --> FLOW12
-  FLOW12 --> FLOW13[BGS-FLOW-013 prescribed-time obstruction]
-  F7 --> F17[BGS-FM-017 logarithmic regularity and local saddles]
-  F13 --> F17
-  FLOW9 --> F17
-  FLOW12 --> F17
-  FLOW13 --> F17
-  F17 --> FLOW14[BGS-FLOW-014 actual-start circular relaxation]
-  FLOW12 --> FLOW14
-  T1 --> FLOW15[BGS-FLOW-015 exact noise defect and transfer boundaries]
-  FLOW7 --> FLOW15
-  FLOW14 --> FLOW15
-  F13 --> FLOW15
-  F1 --> F16[BGS-FM-016 overlap rigidity]
-  FLOW3 --> F16
-  T13[BGS-TRACE-013 auxiliary expansion word obstruction]
-  F1 --> F13[BGS-FM-013 bounded fixed-time packet traces]
-  F1[BGS-FM-001 symmetry theorem] --> T5[BGS-TRACE-005 model estimate OPEN]
-  F1 --> F6[BGS-FM-006 nonlinear bracket pressure]
-  F1 --> F18[BGS-FM-018 Weyl coercivity and regularized gap]
-  F6 --> F18
-  F18 --> F19[BGS-FM-019 uniform collective diffusion and refined mass]
-  F1 --> F7[BGS-FM-007 seven-cut transfer]
-  F5[BGS-FM-005 exact kick-rank boundary] --> F7
-  T1 --> F7
-  F5 --> F8[BGS-FM-008 simple spectrum away from seven]
-  F1 --> F9[BGS-FM-009 common antiunitary obstruction]
-  F1 --> F10[BGS-FM-010 arithmetic traces]
-  F1 --> F12[BGS-FM-012 periodic-point annihilator]
-  F1 --> F14[BGS-FM-014 scalar finite type]
-  F1 --> F15[BGS-FM-015 classical action remainder]
-  F14 --> F15
-  FU1[BGS-FUP-001 ideal digit parity classification]
+An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
+“None registered” does not mean unconditional or self-contained.
+External locators and mappings are in the [external registry](../literature/external_dependencies.json).
 
-  F8 --> F10
-  F8 --> F11[BGS-FM-011 effective gap floor]
-  T3 --> T5
+BGS-BGS-001 and BGS-TRACE-005 remain OPEN. Auxiliary ensembles and
+abstract-family obstructions retain their original models and proof boundaries.
 
-  F3[BGS-FM-003 moment controls] --> F4[BGS-FM-004 three-orientation barrier]
-  T2 --> L1[BGS-LOOP-001 mixed loop hierarchy]
-  F7 -->|short-leg deletion only| L1
-
-  R4[BGS-RES-004 finite-orbit rigidity]
-  R5[BGS-RES-005 full-lag linear gap]
-  R6[BGS-RES-006 exact pair-resolvent bridge]
-  F7 --> R7[BGS-RES-007 smooth resolvent transfer]
-  R6 --> R7
-  R1[BGS-RES-001 Fourier-line coercivity] --> R3[BGS-RES-003 analytic all-members OPEN]
-  R2[BGS-RES-002 local-jet obstruction] --> R3
-
-  F1 --> B[BGS-BGS-001 fixed-strength BGS OPEN]
-  F2[BGS-FM-002 Pell crossover] --> B
-  F3 --> B
-  F4 --> B
-  L1 --> B
-  T4 --> B
-  T5 --> B
-
-  I[BGS-INFO-001 vanishing-noise tomography OPEN]
-```
-
-The new Haar-CUE and finite coboundary nodes are auxiliary controls,
-with no asserted implication to the fixed-map target.
-The graph is intentionally sparse. An edge means “maintained scientific
-prerequisite in the registered programme architecture”, not “every lemma
-cited by the downstream proof”.
-
-The exact nodes `BGS-RES-006` and `BGS-TRACE-007` are finite-spectrum results; `BGS-RES-007` transfers the scalar resolvent from the original to the seven-cut **full** propagator, and `BGS-TRACE-008` refutes sufficiency of the Gram $4/3$ limit for abstract spectra. None supplies a model-specific Heisenberg-scale joint-trace estimate. The terminal open claims currently include
-`BGS-CAYLEY-005`,
-`BGS-TRACE-005`, `BGS-RES-003`, `BGS-INFO-001`, and the final
-`BGS-BGS-001`. Closing the arithmetic Cayley target alone would not prove
-the fixed-map BGS claim.
-
-The scalar/classical-action nodes close specified classical obligations.
-The ideal digit FUP node uses EXT-COHEN-2025 and has no model-to-CUE edge.
-The actual quantum FIO, open compression and renewal estimates remain open.
-
-TRACE-009 proves the sector criterion and spectral comb. Actual block
-trace-mass cancellation is open; there is no asserted closure edge to TRACE-005.
-
-TRACE-010 excludes the simultaneous unaveraged all-order absolute target.
-Its CUE variance and formal phase control have no closure edge to TRACE-005;
-the latter explicitly retains signed weighted cancellation.
-
-TRACE-011 and TRACE-012 give conditional resonant-sector deletion and
-realizable spectral boundary controls. Actual E and shifted four-point
-energy, root allocation and nonresonant cancellation remain open;
-neither node has an asserted closure edge to TRACE-005.
-
-FLOW-012 retains the actual bounded-trace start and its exact centered
-Dyson reference. FLOW-013 excludes prescribed-time relaxation from the
-listed abstract inputs. FM-017 derives logarithmic initial regularity
-and local stationary points from FM-007. FLOW-014 closes the gap-independent
-circular kernel and full Laplace law at t=8g, and transfers Sine_2 to the
-original noisy chain. Deterministic noise removal remains open. These nodes have no asserted
-closure edge to TRACE-005 or BGS-BGS-001.
-
-FLOW-015 proves an exact weak-local defect criterion and four scoped method
-boundaries. Its prerequisites preserve the prior clock, actual noisy law,
-partition bridge and bounded actual traces. The actual signed defect is open;
-there is no closure edge from FLOW-015 to TRACE-005 or BGS-BGS-001.
-
-The later all-order branch has the following registered direct edges.
-They supplement the schematic diagram; the JSON remains the complete DAG.
-
-| New node | Scientific prerequisites | Exact conclusion |
-|---|---|---|
-| BGS-FLOW-016 | FLOW-004, FLOW-009, FLOW-014 | Packing moment transfer and projected-to-Dyson all fixed orders at t²logN→0. |
-| BGS-FLOW-017 | FLOW-016, FLOW-010, FLOW-011, FLOW-012, FLOW-014, TRACE-001, FM-013 | Actual-start original-chain all fixed factorial limits and L2 signed CUE sums at one superpolynomial step schedule. |
-
-The spatial ergodicity leaf EXT-SOSH-2000 is pinned in the external registry.
-C16--C17 identify the exact remaining deterministic defect; its vanishing
-is open. Neither new node has a closure edge to deterministic TRACE-005 or
-BGS-BGS-001. This is not an all-order polynomial-schedule theorem.
-
-The critical-noise branch adds these exact registered dependencies.
-
-| New node | Scientific prerequisites | Remaining actual boundary |
-|---|---|---|
-| BGS-FLOW-018 | FLOW-007, FLOW-015, FLOW-016, FLOW-017, TRACE-007 | Exact clock selection rule and clock matching are not established for U_N. |
-| BGS-FLOW-019 | FLOW-015, FM-013, FLOW-017 | Every fixed projection is estimated; growing-degree complementary evaluation remains open. |
-| BGS-FLOW-020 | FLOW-019, FLOW-015, FM-013, FM-007 | Actual logarithmic projection is estimated; a fixed pair test is missed by every sublinear projection and has unstable Haar-L2 heat inversion. Actual signed value remains open. |
-| BGS-FLOW-021 | FLOW-020 | Exact determinant pair compensation and superpolynomial actual-start smoothed band estimate. Actual signed noise removal and all deterministic bands/orders remain open. |
-
-EXT-KT-2009 credits the prior lattice kernel; EXT-DE-2001 is used only at
-2Q<=N. Neither node has a deterministic closure edge to TRACE-005 or
-BGS-BGS-001. The small-Haar-norm complement obstruction is for a local
-test on an abstract clock, not a counterexample to the maintained map.
-
-FM-018 uses FM-001 and FM-006 with the checked EXT-PP-1990 classical
-mixing leaf. Its common-noise two-copy invariant space is exactly
-identity/swap at finite N,u>0; the original two-pair microscopic rate and full
-nonlinear functional remain open. There is no closure edge from FM-018
-to deterministic TRACE-005 or BGS-BGS-001.
-
-FM-019 records FM-018 conventions/Gaussian averaging and one-step actual
-Egorov as its prerequisite. Its uniform diffusion gap is self-contained;
-no new external leaf is imported. The explicitly refined law has
-Heisenberg-dominating two-copy mass, but no closure edge to deterministic
-TRACE-005 or BGS-BGS-001. The original m=1 rate, nonlinear functional
-and higher-copy quantitative estimates remain open.
-
-TRACE-016 additionally uses the reviewed universal compression/lifting proof in `mathematics/four_cut_rank_two_classification.md`. FORMAL-002 certifies only its bounded predicate, not that reduction or the analytic theorem.
-
-FM-007 feeds only the new normalized short-leg deletion sub-result of LOOP-001.
-The abstract testing reduction and external characterization do not depend on it.
-
-FM-024 proof route: actual matrix formula → reduction at 5 with unit gauges → exact two-row system → Casoratian/dictionary/norm and complete Rabin factors → minimal tails and actual N=49 residue → characteristic-zero rank lift. The separate algebraic-entry U corollary uses FM-024 plus EXT-POPESCU-2023. No spectral-simplicity or TRACE-005 consequence is asserted.
-
-FORMAL-003 certifies only the finite executable predicates used as supporting evidence for FM-024. It is a separate node without a claimed abstract/formal implication to the complete commutant theorem.
-
-TRACE-017 supporting (not prerequisite) route: exact Gaussian reciprocity plus the actual complex-strip/local-box inputs → finite-band global rotated-box representation and summed tail. Signed box evaluation and unrestricted-band TRACE-005 comparison remain open.
-
-FM-024 first-seven extension: four actual boundary blocks → endpoint-free 63-by-48 system → three degree<=936 minors in each residue class → exact interpolation and odd-root exclusion → scalar leading coefficient and tail elimination → characteristic-zero lift. The FM-008 → FM-024 edge records only the combined 35∤N corollary via simple A and nonzero M entries; it is not used by the new seven-divisible proof. Odd multiples of 35 remain open.
-
-Ramified first-seven supporting route: actual valuation gauge → rank-seven endpoint block → integral partial-trace commutator consequence → normalized two-harmonic trace and exact gcd → nine partitions/small Fourier minors → augmented-rank lift. No full reduced Fourier invertibility or additional external theorem is assumed. Combined remaining family: odd multiples of 245, with N=7 separately exceptional.
-
-FM-024 now combines all odd-dimensional pair-commutant families except the genuine N=7 exception. Higher ramification is closed by the separately reviewed normalized-lattice/q-Lucas proof, not by extrapolating finite bases. TRACE-018 uses the actual HJ phase and prior FM-012 grid; the paired-character identity is a supporting representation lemma, not full quantum-weight cancellation.
-
-## Reviewed phase checkpoint dependency boundary
-
-FM-027 depends on scoped FM-021 amplitude/zero-charge inputs and actual
-parametrix/nonlinear-phase A2--A5 only. It has no FM-018, Egorov or classical
-mixing edge. TRACE-021 now adds FM-027 and removes the unnecessary old
-whole-file FM-018 prerequisite while retaining separate historical
-all-translation provenance. TRACE-022 uses FM-021 only for its inherited
-actual boundary-density consequence; its core Schur identity is universal.
-TRACE-023 has no actual-model prerequisite identifying a limit. FM-028 and
-FM-029 really use inherited FM-018 ordinary-Weyl/Egorov/model inputs at their
-precise scopes. FM-030 uses FM-021 only for its eventual actual constants,
-plus checked EXT-BHATIA-2002. None closes TRACE-005/BGS or connects a
-changed-family obstruction to a false claim about the literal operator.
-
-
-## Reviewed Wave2 dependency scopes
-
-TRACE-024 uses FM-027 exact setup/parametrix and FM-021 actual flatness for the new fixed-lag leaf; FM-028 C4 and TRACE-023 Abel (A) are only annealed-leaf inputs. The prior C1/C6 Gram note is history, not a new fixed-lag prerequisite. FM-031 uses the completed TRACE-023 source and mandatory EXT-ZIRN-2021 completion. TRACE-025 preserves its stated actual coarse-data inputs only to construct changed families; it has no actual-model counterexample implication. TRACE-026 finite identities are universal; FM-021/FM-022 enter only the conditional controlled-sector Abel application. The phase literature audit adds no new dependency leaf or universality node.
-
-TRACE-027 finite algebra and signed Ward normalization inherit accepted phase Ward v2; actual upper-half slow-window use is FM-021/FM-022. Actual degree-two exception removal separately uses literal branch curvature and alias-safe transpose-product control, not coarse P/Q inputs alone. No edge to a proved Ward(13), microscopic law or TRACE-005 is added.
-
-
-## Wave3 complete unmasked continuation
-
-TRACE-028 uses the separately accepted actual right-frame/transpose extension of TRACE-024, FM-021 flatness, FM-028 C4 compactness and TRACE-023 Abel(A). The new S3 tail is compactness plus S2 flatness, with no rate. TRACE-029 finite resummation is conditional in general; TRACE-028 discharges the actual RIGHT input. FM-028 C4/TRACE-023 control its annealed companion; scoped whole-centered FM-027/FM-021 gives the unsigned actual logarithmic obstruction. No edge identifies masks, signed T16, microscopic Ward(13), balanced law or TRACE005.
-
-## Phase-memory and sharp-jet continuation, 8 October
-
-TRACE-053 is a self-contained abstract phase-channel theorem. TRACE-056 uses
-it to control eigenphase transport along a bounded real flow. TRACE-054 is
-self-contained finite rational-inner matrix analysis and has no actual-map
-or TRACE-005 prerequisite or conclusion. TRACE-055 is verification-pending;
-its TRACE-053 edge records only the reconstructed channel input. No edge
-from these nodes closes the scalar cavity law, deterministic transfer or BGS.
-
-| Input | Output | Scope |
-|---|---|---|
-| TRACE-053 | TRACE-056 | Uniform averaged pinching along the real flow |
-| TRACE-053 | TRACE-055 (pending) | One accepted channel sub-input; the complete hierarchy remains pending; separately accepted covariance and conditional delay/gap inputs are tracked below |
-| Self-contained finite factorization and cascade | TRACE-054 | Sharp general matrix inner jet; no stochastic input |
-
-## Checked 11 October extensions
-
-The exact machine-readable edges are in scientific_dependencies.json.
-TRACE-057 and TRACE-053/056 support physical L2 transport (059).
-TRACE-053/056/058 support maximal phase paths and fixed normal products (071).
-TRACE-071's common-origin calculus and FM-018's fixed-symbol input support the
-actual-map maximal observable-flow corollary (072). The sharp Jack coefficient
-bound (067) supports compatible circular phase laws (068), then critical CSE
-traces (069) and whole form-factor curves (070). No edge from these theorems
-closes BGS-BGS-001 or TRACE-005. Conditional joint delays (060) do not establish
-TRACE-055's full hierarchy or its flatness hypothesis.
-
-## Schur continuation dependency scope, 11 October 2026
-
-TRACE-060 now has a separately reviewed all-fixed killed upper-moment and
-equality extension at every fixed order, with the explicit full-depth reference measure. Its external concentration input is scalar
-Tropp Theorem 1.1, and all-time flatness remains a premise.
-
-The universal classical censoring and stopped quantum gap proof of TRACE-073
-is self-contained. The machine edges FM-021/022 -> TRACE-073 supply only the
-actual-map initial intensity/reversal gaps. The [reversal extension](reversal_channel_continuation_20261011.md)
-uses the independently reconstructed general complex-contraction theorem. It is not a proof of all-time entry flatness,
-the scalar microscopic cavity law. The separate [all-fixed-order clock proof](clock_universality_continuation_20261011.md)
-uses TRACE-060, not these initial-gap edges, and still assumes entry flatness. No new edge closes TRACE-005
-or BGS-BGS-001. [Proof and review](cavity_continuation_20261011.md).
-
-## Two-step obstruction and restoring drift, 12 October
-
-TRACE-074 is self-contained and has no incoming scientific prerequisite.
-It does not prove or contradict the maintained trajectory's flatness event.
-The edge TRACE-074 -> TRACE-075 supplies only the positive higher-step
-comparison and the constructed-witness mean corollary. TRACE-075's exact
-phase product, complete path-swap bound and general one-step drift inequality
-are self-contained. No edge closes TRACE-060's flatness premise, TRACE-055,
-TRACE-005 or BGS-BGS-001. Finite controls are distinct from analytic proof
-and probability conclusions.
-
-## Haar feedback and entropy-stable clocks, 12 October
-
-TRACE-076 has a self-contained finite Haar feedback factorization,
-inverse-Jacobi spectrum and Haar trajectory flatness probability bound.
-The edge TRACE-060 -> TRACE-076 supplies only the unconditional
-every-fixed-order clock and empirical weak-law corollaries.
-The old conditional theorem remains conditional for arbitrary deterministic
-initial sequences. TRACE-076 discharges that premise for Haar starts and
-transfers the clock laws to independent initial distributions with relative
-entropy O(log N), using a fixed K after limsup. It does not establish one
-prescribed-K high-probability flatness event throughout that entropy class.
-No edge to TRACE-073's actual-map initial gaps, TRACE-055, TRACE-005 or
-BGS-BGS-001 is added. The prescribed-origin gap example is a limitation of
-the entropy class, not an origin-averaged or deterministic BGS counterexample.
-
-## 16 October research-record additions
-
-The following scoped nodes extend the JSON DAG. Their premises do not assert the physical BGS estimate.
-
-| Claim | Direct registered prerequisites |
-|---|---|
-| BGS-FM-032 | BGS-FM-001, BGS-TRACE-009 |
-| BGS-TRACE-084 | BGS-TRACE-009 |
-| BGS-TRACE-085 | BGS-TRACE-001, BGS-TRACE-002 |
-| BGS-TRACE-086 | BGS-TRACE-001, BGS-TRACE-002, BGS-TRACE-004 |
-| BGS-FM-033 | BGS-FM-014, BGS-FM-023 |
-| BGS-CUE-002 | BGS-TRACE-002 |
-| BGS-TRACE-087 | BGS-TRACE-086 |
-| BGS-TRACE-088 | BGS-FM-021 |
-| BGS-TRACE-089 | BGS-TRACE-088 |
-| BGS-TRACE-090 | Finite unitary spectral algebra |
-| BGS-TRACE-091 | BGS-TRACE-007, BGS-TRACE-090 |
-
-## Abel/Gaussian continuation after the import
-
-| Claim | Mathematical inputs and scope |
-|---|---|
-| BGS-TRACE-092 | Self-contained Fourier minorant, stationary gap measure and coupling; the prior clock minimum is rederived. |
-| BGS-TRACE-093 | Classical finite Ginibre kernel and benchmark, self-contained Fock/hook/sphere argument; exactly flat positive sector. |
-
-These two nodes have no inherited physical prerequisites. The machine-readable
-DAG adds no edge from them to the still-open BGS terminal claims. Earlier
-TRACE-089 retains its original proof and range; TRACE-093 supplies the stronger
-flat comparison without its Harer--Zagier dependency.
-
-## Complete flat collision law
-
-TRACE-093 -> TRACE-094 supplies the exact Fock/Schur/swap inputs. Classical
-fixed-degree Haar integration is recorded as EXT-CS-2006. TRACE-094 closes the
-flat collision law and limiting ratio; it adds no edge asserting an implication
-to the unchanged physical BGS terminal targets.
-
-## 19 October phase-ensemble additions
-
-The following registered nodes do not add a proved edge to either terminal BGS obligation.
-
-| Claim | Direct registered prerequisites |
-|---|---|
-| BGS-TRACE-095 | BGS-TRACE-073, BGS-TRACE-077, BGS-TRACE-080 |
-| BGS-TRACE-096 | Self-contained scoped proof; see exact assumptions in source |
-| BGS-TRACE-097 | Self-contained scoped proof; see exact assumptions in source |
-| BGS-TRACE-098 | Self-contained scoped proof; see exact assumptions in source |
-| BGS-TRACE-099 | BGS-TRACE-098 |
-| BGS-TRACE-100 | Self-contained scoped proof; see exact assumptions in source |
-| BGS-TRACE-101 | BGS-TRACE-100 |
-| BGS-TRACE-102 | BGS-TRACE-101 |
-| BGS-TRACE-103 | BGS-TRACE-101, BGS-TRACE-102 |
-| BGS-TRACE-104 | Self-contained scoped proof; see exact assumptions in source |
-| BGS-TRACE-105 | Self-contained scoped proof; see exact assumptions in source |
+| Claim and source | State | Direct registered prerequisites | Registered external inputs | Direct consumers |
+|---|---|---|---|---:|
+| [BGS-BGS-001](../mathematics/fixed_map_resolvent_frontier.md) | open | `BGS-FM-001`, `BGS-FM-002`, `BGS-FM-003`, `BGS-FM-004`, `BGS-LOOP-001`, `BGS-TRACE-004`, `BGS-TRACE-005` | `EXT-BH-2026` | 0 |
+| [BGS-CAYLEY-001](../mathematics/fourth_moment_reduction.md) | proved | None registered | None registered | 1 |
+| [BGS-CAYLEY-002](../mathematics/cayley_additive_energy.md) | proved | `BGS-CAYLEY-001` | None registered | 3 |
+| [BGS-CAYLEY-003](../mathematics/cayley_direct_energy.md) | proved | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
+| [BGS-CAYLEY-004](../mathematics/cayley_curve_uniform.md) | proved | `BGS-CAYLEY-002` | `EXT-CZ-2013` | 1 |
+| [BGS-CAYLEY-005](../mathematics/open_questions.md) | open | `BGS-CAYLEY-002`, `BGS-CAYLEY-003`, `BGS-CAYLEY-004` | None registered | 0 |
+| [BGS-CUE-001](../mathematics/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |
+| [BGS-CUE-002](../mathematics/full_pair_cue_covariance_20261015.md) | proved | `BGS-TRACE-002` | None registered | 0 |
+| [BGS-FLOW-001](../mathematics/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-002](../mathematics/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-003](../mathematics/quadratic_coboundary_noise.md) | proved | None registered | None registered | 8 |
+| [BGS-FLOW-004](../mathematics/quadratic_noise_coupling.md) | proved | `BGS-FLOW-003` | None registered | 5 |
+| [BGS-FLOW-005](../mathematics/quadratic_noise_reversibility.md) | proved | `BGS-FLOW-003`, `BGS-FLOW-004` | None registered | 2 |
+| [BGS-FLOW-006](../mathematics/quadratic_noise_trace_fluctuations.md) | proved | `BGS-FLOW-003`, `BGS-FLOW-005` | None registered | 0 |
+| [BGS-FLOW-007](../mathematics/quadratic_noise_clock_limit.md) | proved | `BGS-FLOW-004`, `BGS-FLOW-005` | `EXT-FORRESTER-1996` | 5 |
+| [BGS-FLOW-008](../mathematics/coboundary_fourth_order_drift.md) | proved | `BGS-FLOW-003` | None registered | 2 |
+| [BGS-FLOW-009](../mathematics/coboundary_mobius_diffusion.md) | proved | `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-007`, `BGS-FLOW-008` | None registered | 5 |
+| [BGS-FLOW-010](../mathematics/coboundary_joint_limit.md) | proved | `BGS-FLOW-003`, `BGS-FLOW-004`, `BGS-FLOW-007`, `BGS-FLOW-008`, `BGS-FLOW-009` | None registered | 3 |
+| [BGS-FLOW-011](../mathematics/coboundary_polynomial_limit.md) | proved | `BGS-FLOW-003`, `BGS-FLOW-007`, `BGS-FLOW-009`, `BGS-FLOW-010` | None registered | 2 |
+| [BGS-FLOW-012](../mathematics/coboundary_general_start.md) | proved | `BGS-FLOW-009`, `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FM-013` | None registered | 4 |
+| [BGS-FLOW-013](../mathematics/dyson_relaxation_obstruction.md) | proved | `BGS-FLOW-012` | `EXT-POPESCU-2023` | 1 |
+| [BGS-FLOW-014](../mathematics/circular_dyson_actual_start.md) | proved | `BGS-FLOW-012`, `BGS-FM-017` | `EXT-KLZF-2022` | 3 |
+| [BGS-FLOW-015](../mathematics/microscopic_noise_removal.md) | proved | `BGS-FLOW-007`, `BGS-FLOW-014`, `BGS-FM-013`, `BGS-TRACE-001` | `EXT-EHL-2018`, `EXT-LEMOINE-2025` | 3 |
+| [BGS-FLOW-016](../mathematics/local_moment_transport.md) | proved | `BGS-FLOW-004`, `BGS-FLOW-009`, `BGS-FLOW-014` | `EXT-KLZF-2022` | 2 |
+| [BGS-FLOW-017](../mathematics/coboundary_all_order_limit.md) | proved | `BGS-FLOW-010`, `BGS-FLOW-011`, `BGS-FLOW-012`, `BGS-FLOW-014`, `BGS-FLOW-016`, `BGS-FM-013`, `BGS-TRACE-001` | `EXT-SOSH-2000` | 2 |
+| [BGS-FLOW-018](../mathematics/clock_structure_and_noise_scale.md) | proved | `BGS-FLOW-007`, `BGS-FLOW-015`, `BGS-FLOW-016`, `BGS-FLOW-017`, `BGS-TRACE-007` | `EXT-FORRESTER-1996`, `EXT-KT-2009` | 0 |
+| [BGS-FLOW-019](../mathematics/fixed_degree_heat_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-017`, `BGS-FM-013` | `EXT-DE-2001` | 1 |
+| [BGS-FLOW-020](../mathematics/growing_degree_trace_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-019`, `BGS-FM-007`, `BGS-FM-013` | `EXT-DE-2001`, `EXT-GHANMI-2017` | 1 |
+| [BGS-FLOW-021](../mathematics/heisenberg_pair_heat_formula.md) | proved | `BGS-FLOW-020` | `EXT-DE-2001` | 0 |
+| [BGS-FM-001](../mathematics/fixed_model_symmetry_theorem.md) | proved | None registered | None registered | 24 |
+| [BGS-FM-002](../mathematics/fixed_model_pell_crossover.md) | proved | None registered | None registered | 1 |
+| [BGS-FM-003](../mathematics/fixed_map_moment_control_and_transfer.md) | proved | None registered | None registered | 2 |
+| [BGS-FM-004](../mathematics/three_orientation_resolvent_barrier.md) | conditional | `BGS-FM-003` | None registered | 1 |
+| [BGS-FM-005](../mathematics/frozen_kick_rank_boundary.md) | proved | None registered | `EXT-EV-2015` | 2 |
+| [BGS-FM-006](../mathematics/nonlinear_bracket_pressure.md) | proved | `BGS-FM-001` | `EXT-PESIN-1977`, `EXT-PP-1990`, `EXT-RUELLE-1978` | 1 |
+| [BGS-FM-007](../mathematics/frozen_seven_cut_reduction.md) | proved | `BGS-FM-001`, `BGS-FM-005`, `BGS-TRACE-001` | None registered | 4 |
+| [BGS-FM-008](../mathematics/frozen_algebraic_spectral_simplicity.md) | proved | `BGS-FM-005` | `EXT-POPESCU-2023` | 4 |
+| [BGS-FM-009](../mathematics/frozen_common_antireversor_certificate.md) | proved | `BGS-FM-001` | `EXT-POPESCU-2023` | 0 |
+| [BGS-FM-010](../mathematics/frozen_arithmetic_trace_rigidity.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 1 |
+| [BGS-FM-011](../mathematics/frozen_effective_gap_floor.md) | proved | `BGS-FM-008` | `EXT-ROY-2016` | 0 |
+| [BGS-FM-012](../mathematics/frozen_periodic_point_annihilator.md) | proved | `BGS-FM-001` | None registered | 1 |
+| [BGS-FM-013](../mathematics/fixed_time_wavepacket_trace_bound.md) | proved | `BGS-FM-001` | None registered | 6 |
+| [BGS-FM-014](../mathematics/frozen_phase_finite_type.md) | proved | `BGS-FM-001` | None registered | 2 |
+| [BGS-FM-015](../mathematics/frozen_commutator_action.md) | proved | `BGS-FM-001`, `BGS-FM-014` | None registered | 0 |
+| [BGS-FM-016](../mathematics/egorov_overlap_rigidity.md) | proved | `BGS-FLOW-003`, `BGS-FM-001` | None registered | 1 |
+| [BGS-FM-017](../mathematics/frozen_mesoscopic_regularity.md) | proved | `BGS-FLOW-009`, `BGS-FLOW-012`, `BGS-FLOW-013`, `BGS-FM-007`, `BGS-FM-013` | None registered | 1 |
+| [BGS-FM-018](../mathematics/frozen_operator_transfer_coercivity.md) | proved | `BGS-FM-001`, `BGS-FM-006` | `EXT-PP-1990` | 5 |
+| [BGS-FM-019](../mathematics/collective_diffusion_gap.md) | proved | `BGS-FM-018` | None registered | 1 |
+| [BGS-FM-020](../mathematics/original_channel_gap.md) | proved | `BGS-FM-019` | None registered | 0 |
+| [BGS-FM-021](../mathematics/position_chain_mixing.md) | proved | `BGS-FM-001` | None registered | 17 |
+| [BGS-FM-022](../mathematics/reversed_path_decay.md) | proved | `BGS-FM-001` | None registered | 4 |
+| [BGS-FM-023](../mathematics/arithmetic_translation_exclusion.md) | proved | `BGS-FM-001`, `BGS-FM-016`, `BGS-FM-018` | None registered | 1 |
+| [BGS-FM-024](../mathematics/actual_seven_primary_commutant.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
+| [BGS-FM-025](../mathematics/uniform_five_cluster_simplicity.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
+| [BGS-FM-026](../mathematics/literal_time_multiplicity_bounds.md) | proved | `BGS-FM-001` | `EXT-POPESCU-2023` | 0 |
+| [BGS-FM-027](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-021` | None registered | 4 |
+| [BGS-FM-028](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-018` | None registered | 4 |
+| [BGS-FM-029](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-018` | `EXT-ROY-2016` | 1 |
+| [BGS-FM-030](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-021` | `EXT-BHATIA-2002` | 0 |
+| [BGS-FM-031](../mathematics/ordinary_compact_stratum_centering.md) | proved | `BGS-TRACE-023` | `EXT-ZIRN-2021` | 0 |
+| [BGS-FM-032](../mathematics/quantum_cyclic_cohomology_20261015.md) | proved | `BGS-FM-001`, `BGS-TRACE-009` | None registered | 0 |
+| [BGS-FM-033](../mathematics/scaled_weyl_overlap_20261015.md) | conditional | `BGS-FM-014`, `BGS-FM-023` | None registered | 0 |
+| [BGS-FORMAL-001](../formalization/README.md) | proved | None registered | None registered | 0 |
+| [BGS-FORMAL-002](../mathematics/four_cut_rank_two_classification.md) | proved | None registered | None registered | 1 |
+| [BGS-FORMAL-003](../formalization/seven_primary_certificate.md) | proved | None registered | None registered | 0 |
+| [BGS-FUP-001](../mathematics/offdiagonal_digit_fup.md) | proved | None registered | `EXT-COHEN-2025` | 0 |
+| [BGS-INFO-001](../mathematics/open_questions.md) | open | None registered | None registered | 0 |
+| [BGS-LOOP-001](../mathematics/fixed_map_resolvent_frontier.md) | conditional | `BGS-FM-007`, `BGS-TRACE-002` | `EXT-BH-2026` | 1 |
+| [BGS-RES-001](../mathematics/fourier_line_resonance_coercivity.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-002](../mathematics/local_jet_resonance_obstruction.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-003](../mathematics/open_questions.md) | open | `BGS-RES-001`, `BGS-RES-002` | None registered | 0 |
+| [BGS-RES-004](../mathematics/finite_orbit_resonance_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-005](../mathematics/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-006](../mathematics/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-007](../mathematics/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
+| [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | None registered | 0 |
+| [BGS-RET-002](../mathematics/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-001](../mathematics/trace_to_local_statistics_bridge.md) | proved | None registered | None registered | 11 |
+| [BGS-TRACE-002](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-001` | None registered | 8 |
+| [BGS-TRACE-003](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-002` | None registered | 4 |
+| [BGS-TRACE-004](../mathematics/bandlimited_correlation_extension.md) | proved | `BGS-TRACE-003` | None registered | 2 |
+| [BGS-TRACE-005](../mathematics/open_questions.md) | open | `BGS-FM-001`, `BGS-TRACE-003` | None registered | 1 |
+| [BGS-TRACE-006](../mathematics/clustered_abel_window_boundary.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-007](../mathematics/fixed_map_resolvent_frontier.md) | proved | None registered | `EXT-CK-2006` | 2 |
+| [BGS-TRACE-008](../mathematics/two_clock_gram_falsifier.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-009](../mathematics/prime_resonant_sector.md) | proved | `BGS-FM-001`, `BGS-FM-010`, `BGS-TRACE-003` | `EXT-RAINS-2003` | 4 |
+| [BGS-TRACE-010](../mathematics/signed_heisenberg_comparison.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002`, `BGS-TRACE-003` | `EXT-DE-2001` | 1 |
+| [BGS-TRACE-011](../mathematics/resonant_cubic_density_control.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-009`, `BGS-TRACE-010` | `EXT-DE-2001` | 1 |
+| [BGS-TRACE-012](../mathematics/folded_quadratic_resonance_control.md) | proved | `BGS-FM-001`, `BGS-TRACE-001`, `BGS-TRACE-009`, `BGS-TRACE-011` | None registered | 0 |
+| [BGS-TRACE-013](../mathematics/arithmetic_word_expansion_obstruction.md) | proved | None registered | `EXT-BG-2008`, `EXT-DIRICHLET-1837`, `EXT-GAE-2007`, `EXT-POPESCU-2023` | 0 |
+| [BGS-TRACE-014](../mathematics/isospectral_clock_moment_control.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-015](../mathematics/three_block_unmarking.md) | proved | `BGS-FM-021` | None registered | 0 |
+| [BGS-TRACE-016](../mathematics/four_block_unmarking.md) | proved | `BGS-FM-021`, `BGS-FORMAL-002` | None registered | 0 |
+| [BGS-TRACE-017](../mathematics/factorial_wkb_reduction.md) | proved | `BGS-FM-001`, `BGS-TRACE-001`, `BGS-TRACE-002` | None registered | 1 |
+| [BGS-TRACE-018](../mathematics/winding_defect_locality.md) | proved | `BGS-FM-001`, `BGS-FM-012` | None registered | 1 |
+| [BGS-TRACE-019](../mathematics/selected_weighted_coefficient.md) | proved | `BGS-FM-001`, `BGS-TRACE-017`, `BGS-TRACE-018` | `EXT-MANE-1981`, `EXT-PP-1990`, `EXT-RUELLE-1978` | 0 |
+| [BGS-TRACE-020](../mathematics/factorial_ordered_diagonal.md) | proved | `BGS-FM-021`, `BGS-TRACE-002` | None registered | 1 |
+| [BGS-TRACE-021](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-021`, `BGS-FM-027`, `BGS-TRACE-001`, `BGS-TRACE-020` | None registered | 1 |
+| [BGS-TRACE-022](../mathematics/phase_trace_checkpoint.md) | proved | `BGS-FM-021` | None registered | 0 |
+| [BGS-TRACE-023](../mathematics/phase_trace_checkpoint.md) | proved | None registered | `EXT-ZIRN-2021` | 6 |
+| [BGS-TRACE-024](../mathematics/actual_one_pinch_disappearance.md) | proved | `BGS-FM-021`, `BGS-FM-027`, `BGS-FM-028`, `BGS-TRACE-023` | None registered | 1 |
+| [BGS-TRACE-025](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) | proved | `BGS-FM-027`, `BGS-FM-028`, `BGS-FM-029`, `BGS-TRACE-021`, `BGS-TRACE-023` | None registered | 0 |
+| [BGS-TRACE-026](../mathematics/hook_tree_phase_current_reduction.md) | proved | `BGS-FM-021`, `BGS-FM-022`, `BGS-TRACE-023` | None registered | 0 |
+| [BGS-TRACE-027](../mathematics/weighted_phase_coherence_covariance.md) | proved | `BGS-FM-021`, `BGS-FM-022` | None registered | 0 |
+| [BGS-TRACE-028](../mathematics/right_frame_unmasked_pinch_hierarchy.md) | proved | `BGS-FM-021`, `BGS-FM-028`, `BGS-TRACE-023`, `BGS-TRACE-024` | None registered | 1 |
+| [BGS-TRACE-029](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) | proved | `BGS-FM-021`, `BGS-FM-027`, `BGS-FM-028`, `BGS-TRACE-023`, `BGS-TRACE-028` | None registered | 0 |
+| [BGS-TRACE-053](../mathematics/max_entry_phase_channel.md) | proved | None registered | None registered | 4 |
+| [BGS-TRACE-054](../mathematics/sharp_inner_jet.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-055](../record/research_checkpoint_20261008.md) | verification-pending | `BGS-TRACE-053` | None registered | 0 |
+| [BGS-TRACE-056](../mathematics/phase_channel_real_flow.md) | proved | `BGS-TRACE-053` | None registered | 2 |
+| [BGS-TRACE-057](../mathematics/source_covariance_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-058](../mathematics/integrable_phase_absorption_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-059](../mathematics/physical_source_transport_20261011.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-057` | None registered | 0 |
+| [BGS-TRACE-060](../mathematics/delay_bootstrap_20261011.md) | conditional | None registered | `EXT-TROPP-2011` | 2 |
+| [BGS-TRACE-061](../mathematics/fresh_phase_average_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-062](../mathematics/flat_completion_20261011.md) | proved | `BGS-TRACE-061` | None registered | 0 |
+| [BGS-TRACE-063](../mathematics/nonlinear_coercivity_20261011.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-064](../mathematics/torus_contraction_20261011.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-065](../mathematics/coherence_form_factor_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-066](../mathematics/previous_rank_results_20261011.md) | proved | `BGS-TRACE-065` | `EXT-AGG-1989` | 0 |
+| [BGS-TRACE-067](../mathematics/jack_coefficient_theorem_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-068](../mathematics/phase_contraction_20261011.md) | proved | `BGS-TRACE-067` | `EXT-JM-2015`, `EXT-MATSUMOTO-2007`, `EXT-OO-1997`, `EXT-VV-2017` | 2 |
+| [BGS-TRACE-069](../mathematics/exact_cumulants_20261011.md) | proved | `BGS-TRACE-068` | `EXT-MATSUMOTO-2007` | 1 |
+| [BGS-TRACE-070](../mathematics/form_factor_curve_20261011.md) | proved | `BGS-TRACE-068`, `BGS-TRACE-069` | `EXT-HSW-1999` | 0 |
+| [BGS-TRACE-071](../mathematics/laplace_path_transport_20261011.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-058` | None registered | 1 |
+| [BGS-TRACE-072](../mathematics/deterministic_path_transport_20261011.md) | proved | `BGS-FM-018`, `BGS-TRACE-071` | None registered | 0 |
+| [BGS-TRACE-073](../mathematics/schur_censoring_gap_20261011.md) | conditional | `BGS-FM-021`, `BGS-FM-022` | None registered | 3 |
+| [BGS-TRACE-074](../mathematics/unitary_two_step_obstruction_20261012.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-075](../mathematics/two_step_restoring_drift_20261012.md) | proved | `BGS-TRACE-074` | None registered | 1 |
+| [BGS-TRACE-076](../mathematics/haar_feedback_clock_law_20261012.md) | proved | `BGS-TRACE-060` | None registered | 0 |
+| [BGS-TRACE-077](../mathematics/green_compression_gap_20261013.md) | proved | `BGS-FM-021`, `BGS-TRACE-073`, `BGS-TRACE-074` | None registered | 3 |
+| [BGS-TRACE-078](../mathematics/two_step_increment_variance_20261013.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-079](../mathematics/two_step_stopped_concentration_20261013.md) | proved | `BGS-FM-021`, `BGS-TRACE-075`, `BGS-TRACE-077`, `BGS-TRACE-078` | None registered | 1 |
+| [BGS-TRACE-080](../mathematics/unconditional_feedback_flatness_20261013.md) | proved | `BGS-FM-021`, `BGS-FM-022`, `BGS-TRACE-060`, `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-079` | None registered | 1 |
+| [BGS-TRACE-081](../mathematics/flat_spectrum_obstruction_20261014.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-082](../mathematics/coherence_memory_plateau_20261014.md) | proved | `BGS-TRACE-081` | None registered | 1 |
+| [BGS-TRACE-083](../mathematics/coherent_first_return_pulse_20261014.md) | proved | `BGS-TRACE-081`, `BGS-TRACE-082` | None registered | 0 |
+| [BGS-TRACE-084](../mathematics/resonant_mesoscopic_criterion_20261015.md) | proved | `BGS-TRACE-009` | None registered | 0 |
+| [BGS-TRACE-085](../mathematics/root_lifting_sector_boundary_20261015.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002` | `EXT-DE-2001` | 0 |
+| [BGS-TRACE-086](../mathematics/all_order_process_closure_20261015.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002`, `BGS-TRACE-004` | None registered | 1 |
+| [BGS-TRACE-087](../mathematics/parameter_deaveraging_20261015.md) | proved | `BGS-TRACE-086` | `EXT-DE-2001` | 0 |
+| [BGS-TRACE-088](../mathematics/equal_edge_occupation_20261015.md) | proved | `BGS-FM-021` | None registered | 1 |
+| [BGS-TRACE-089](../mathematics/collision_crossover_20261015.md) | proved | `BGS-TRACE-088` | `EXT-PITTEL-2016` | 0 |
+| [BGS-TRACE-090](../mathematics/bounded_radial_ratios_20261015.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-091](../mathematics/hardy_spectral_remainder_20261015.md) | proved | `BGS-TRACE-007`, `BGS-TRACE-090` | None registered | 0 |
+| [BGS-TRACE-092](../mathematics/abel_clock_rigidity_20261016.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-093](../mathematics/gaussian_equal_edge_20261016.md) | proved | None registered | `EXT-BF-2023`, `EXT-KPSS-2002` | 1 |
+| [BGS-TRACE-094](../mathematics/wick_collision_poisson_20261016.md) | proved | `BGS-TRACE-093` | `EXT-CS-2006` | 0 |
+| [BGS-TRACE-095](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-080` | None registered | 0 |
+| [BGS-TRACE-096](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-097](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | None registered | None registered | 0 |
+| [BGS-TRACE-098](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-099](../mathematics/phase_ensemble_continuation_20261019.md) | proved | `BGS-TRACE-098` | None registered | 0 |
+| [BGS-TRACE-100](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-101](../mathematics/phase_neutral_primitives_20261019.md) | proved | `BGS-TRACE-100` | None registered | 2 |
+| [BGS-TRACE-102](../mathematics/phase_second_defect_20261019.md) | proved | `BGS-TRACE-101` | None registered | 1 |
+| [BGS-TRACE-103](../mathematics/phase_quartic_cluster_sum_20261019.md) | proved | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
+| [BGS-TRACE-104](../mathematics/phase_cayley_cauchy_transfer_20261019.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | proved | None registered | None registered | 0 |

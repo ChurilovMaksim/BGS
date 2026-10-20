@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Current TRACE-094 pins/registry/link checks; no theorem truth or full build."""
 from __future__ import annotations
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 import hashlib
 import importlib.util

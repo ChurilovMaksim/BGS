@@ -179,3 +179,8 @@ longer has its original source revision at its recorded path. Preserve the
 manifest and mark it stale; do not claim reproduction of that failed revision.
 The separate successful v2 record validates against its preserved inputs.
 [Exact disposition and downstream boundary](chat_integration_20261019.md).
+
+## 20 October maintenance correction
+
+ERR-032 repairs integration-gate drift and optimized-entry protection.
+No mathematical statement is retracted or strengthened.

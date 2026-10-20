@@ -1,5 +1,14 @@
 # Reproduce the current consolidated research state
 
+## Current consistency checks
+
+Run the scientific-registry, repository and bibliographic metadata audits first.
+Also run render_claim_registry.py --check, render_errata.py --check and
+render_research_views.py --check from computations/maintenance/.
+[The current audit](record/repository_reconciliation_20261020.md) records
+actual execution scope. Dated integration checkers pin their original source
+and manuscript hashes; they are not perpetual gates for later revisions.
+
 The canonical editable publication entry point is `manuscript/BGS_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
 The 4 October actual-start comparison, cluster obstruction, logarithmic
@@ -139,9 +148,9 @@ Use Python with the exact package versions in `requirements.txt` (CI targets
 Python 3.13), CMake >= 3.20, a C++20 compiler, and Boost development headers.
 The workspace runner rejects missing, unknown, or mismatched pinned Python
 package versions before running checks. Selected C++ checks also require
-identifiable CMake/compiler/Boost versions. The Boost header probe currently
-uses `/usr/include/boost/version.hpp`; a nonstandard Boost installation must
-be supported explicitly rather than reported as a verified unknown version.
+identifiable CMake/compiler/Boost versions. The Boost probe preprocesses `boost/version.hpp` with the selected compiler;
+use `--boost-include` for an explicit include directory. Unreadable or
+inconsistent version macros are rejected.
 Python-only focused runs do not require CMake, C++, or Boost; direct
 standard-library scripts may still run without the pinned scientific packages,
 but the workspace runner requires the complete pinned Python environment.
@@ -363,7 +372,7 @@ Validate its manifest with the same directory's validate_manifest.py and --root 
 The Wolfram sources are computations/wolfram/circular_phase_20261011.wl and
 computations/wolfram/walsh_clock_20261011.wl. The circular source's prior
 remote exact Boolean receipt is preserved; local full-workspace verification
-does not execute Wolfram. Lean 4.33.1 builds 23 active finite kernels; the new
+does not execute Wolfram. The 11 October Lean receipt built 23 finite kernels; those
 kernels do not formalize the analytic path or universality proofs. The Mathlib
 Jack arithmetic remains an uncompiled draft. The local execution packet
 documents an IO.appPath adapter, which changes application-location lookup
@@ -371,7 +380,7 @@ only and does not alter Lean's kernel.
 
 ## Reviewed Schur continuation
 
-The current status is [the cavity continuation](record/cavity_continuation_20261011.md).
+The 11 October disposition is [the cavity continuation](record/cavity_continuation_20261011.md).
 The prior integration and its receipts retain their earlier source scope.
 The new finite controls are reproduced by:
 

@@ -1,5 +1,14 @@
 # Literature and external theorem dependencies
 
+## Current metadata coverage
+
+The [explicit audit pointer](metadata_audit.json) selects a 51-record snapshot.
+[The impact reconciliation](../record/bibliographic_impact_20261020.json)
+preserves the previous 46 observations and carries forward five documented
+16/19 October source reviews. No new primary-source acquisition or theorem
+applicability/priority certification is claimed. Earlier dated screens below
+retain their original coverage.
+
 This directory records exact external inputs, related prior results and
 limits of source/priority checks. A matching title or abstract is a lead;
 it is not the theorem needed by a proof.
@@ -91,4 +100,4 @@ motivating numerical evidence, not a theorem for the present family.
 
 The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
 
-[Primary circular-phase and stopping sources](circular_phase_sources_20261011.md) pin seven additional references. The current offline metadata cache is registry_metadata_20261011.json; the 6 October cache remains immutable.
+[Primary circular-phase and stopping sources](circular_phase_sources_20261011.md) pin seven additional references. The 11 October cache remains historical; metadata_audit.json selects the current reviewed cache.

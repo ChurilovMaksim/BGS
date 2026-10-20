@@ -44,7 +44,7 @@ excess limits remain unproved. Resonance deletion is sufficient only.
 - **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](mathematics/hardy_spectral_remainder_20261015.md); proved within its stated scope.
 
 
-**Current scientific status, 16 October 2026:** the unchanged fixed-strength
+**Current scientific status, 19 October 2026:** the unchanged fixed-strength
 microscopic BGS claim and the every-fixed-order TRACE-005 hierarchy are open.
 This page summarizes established conclusions and exact missing implications.
 The [claim ledger](record/claim_ledger.md) is the status authority; a dated
@@ -128,7 +128,7 @@ static unitary shortcut: flat entries and vanishing intensity singular
 norm do not bound the two-step kernel by O(1/n). Its three-step positive
 bound does not replace the exact entry bracket.
 [The outcome](record/unitary_two_step_continuation_20261012.md) separates
-this obstruction from the open dynamic flatness problem.
+this obstruction from the dynamic question subsequently treated by TRACE-080 under its stated startup hypotheses.
 [TRACE-075](mathematics/two_step_restoring_drift_20261012.md) controls the
 complete coherent term by a three-step path-swap pairing and proves a
 restoring one-step mean for the constructed peaks. TRACE-078/079/080 now

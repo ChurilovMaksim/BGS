@@ -64,19 +64,31 @@ def self_test(registry, audit):
     print(f'bibliographic-metadata-audit: {count + 2} mutation tests passed')
 
 
+def load_audit(root):
+    pointer=json.loads((root/'literature/metadata_audit.json').read_text())
+    if pointer.get('schema')!='bgs-metadata-audit-pointer-v1':
+        raise ValueError('Unknown metadata-audit pointer schema')
+    paths=[(root/pointer[k]).resolve() for k in ('cache','digest')]
+    if any(not p.is_relative_to(root.resolve()) for p in paths):
+        raise ValueError('Metadata-audit pointer escapes repository')
+    path,digest_path=paths
+    expected=digest_path.read_text().split()[0]
+    if hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+        raise ValueError('Cached metadata digest mismatch')
+    return json.loads(path.read_text())
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument('--self-test', action='store_true')
     args = parser.parse_args()
-    path = args.root / 'evidence/source_metadata/registry_metadata_20261013_feedback.json'
-    digest_path = path.with_suffix('.sha256')
-    expected = digest_path.read_text().split()[0]
-    if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
-        print('bibliographic-metadata-audit: FAIL: cached metadata digest mismatch', file=sys.stderr)
+    try:
+        audit=load_audit(args.root)
+    except (OSError,ValueError,KeyError,IndexError) as exc:
+        print('bibliographic-metadata-audit: FAIL: '+str(exc),file=sys.stderr)
         return 1
-    registry = json.loads((args.root / 'literature/external_dependencies.json').read_text())
-    audit = json.loads(path.read_text())
+    registry=json.loads((args.root/'literature/external_dependencies.json').read_text())
     errors = validate(registry, audit)
     if errors:
         print('\n'.join(errors), file=sys.stderr)

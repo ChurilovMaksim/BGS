@@ -1,5 +1,7 @@
 # Execution evidence
 
+[Current research record](../../record/README.md) · [20 October verification](20261020/repository-reconciliation/README.md). Historical packets below retain their original paths.
+
 The [collective exact run](20261006/collective-diffusion-exact-v2/manifest.json)
 and [floating diagnostics](20261006/collective-diffusion-spectrum/manifest.json)
 have separate contracts, actual limits and source pins. The

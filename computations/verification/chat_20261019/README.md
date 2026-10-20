@@ -22,3 +22,5 @@ The verifier does not execute invalid historical code.
 integration check, accepted and rejected manuscript builds and selected-page
 visual review. This is not a fresh execution of every historical experiment,
 a full-workspace regression, an independent proof audit or a BGS certificate.
+
+This is a dated snapshot check: do not refresh historical hashes to admit later editorial revisions. Current maintenance uses the registry, repository and navigation gates. Optimized Python is rejected before verification imports/output.

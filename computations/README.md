@@ -1,5 +1,7 @@
 # Reproducible computations
 
+[Current navigation](../docs/corpus_atlas.md) and [repository audit](../record/repository_reconciliation_20261020.md) distinguish dated snapshot checks from current gates. Run render_research_views.py --check with the registry and synchronization checks.
+
 The maintained programs check exact finite identities, enumerate bounded
 cases, run numerical controls and build publication/formalization artifacts.
 Every output must state its arithmetic and coverage. Passing a computation
