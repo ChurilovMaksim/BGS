@@ -145,7 +145,11 @@ $O(K^{-2})$. A matching with c crossings contributes
 $1+c(S_K-1)+O(K^{-2})$, $S_K=K^{-1}\sum_dz_d$. The total crossing count is
 $A_r=\binom{2r}{4}(2r-5)!!$: choose four interlaced endpoints and match the
 rest. Four repeated positions cause one excess matching; their six balanced
-sign assignments contribute $3A_r/(2K)+O(K^{-2})$. Since
+sign assignments contribute $-3A_r/(2K)+O(K^{-2})$ to the moment: the
+matching-indexed sum counts each such word with one excess matching, so
+the excess is subtracted. The crossings contribute
+$A_r(S_K-1)=-(\gamma-3/2)A_r/K+O(K^{-2})$, and the two corrections add
+to $-\gamma A_r/K$. Since
 $S_K=1-(\gamma-3/2)/K+O((KN)^{-1})$, it follows that
 \begin{equation}\label{eq:edgeworth-mom}
  \tau_-(X_K^{2r})=(2r-1)!!-
@@ -165,14 +169,35 @@ For every fixed real polynomial f and standard Gaussian Z,
 This is a fixed-polynomial expansion, not a distribution-function Edgeworth
 theorem. Constants are not controlled as the polynomial degree grows.
 
-For completeness, the stronger crossing-graph expansion is
-$\mathbb E Z_G=S_K^{|E(G)|}+O_G(K^{-3}+N^{-1})$. Three independent forest
-edges give $O(K^{-3})$. A triangle is the only three-edge exception; its
-three differences sum to zero modulo K, while large defects concentrate
-near the half-period. Writing $\ell=(K-1)/2-|d|$, a triangle forces
-$\sum\ell\geq(K-3)/2$, so the product is $O(\lambda^{-K/2})=O(N^{-1})$.
-Every larger edge subset contains a three-edge forest or is that triangle;
-remaining factors are bounded by two. This proves the stated refinement.
+For completeness, here is the stronger crossing-graph expansion, with the
+notation it needs. For a fixed simple graph $G$ on the pair labels, let
+the labels $t_v$ be independent and uniform in $\mathbf Z/K\mathbf Z$,
+orient each edge, choose signs $\sigma_e\in\{-1,1\}$, and put
+$Z_G=\prod_{e=(u,v)}z_{t_v-t_u}^{\sigma_e}$, where $z_d$ are the crossing
+phases above; $\mathbb E$ is the average over the labels. Then
+\[
+ \mathbb E Z_G=S_K^{|E(G)|}+O_G(K^{-3}+N^{-1}).
+\]
+Indeed, expand $\prod_e(1+(z_e^{\sigma_e}-1))$. Every subset of at most
+two edges is a forest, so its edge differences are independent and
+uniform, and its expectation is exactly $(S_K-1)$ per edge, resp.\
+$(S_K-1)^2$ per pair; this matches the binomial expansion of
+$S_K^{|E(G)|}$ through second order, the remaining binomial terms being
+$O_G(K^{-3})$ since $S_K-1=O(K^{-1})$. A subset of at least three edges
+either contains a three-edge forest, whose expected absolute defect
+product is at most $(9/K)^3$ by $\sum_d|z_d-1|<9$, or is a triangle. For
+a triangle the bound is on the defect product, not on the unit-modulus
+phases themselves: the three differences sum to zero modulo $K$, their
+signed representatives therefore sum to $0$ or $\pm K$ (for $\pm K$ all
+three have the same sign, since each is at most $(K-1)/2$ in absolute
+value), in both cases
+$\sum_i|\delta_i|\le K$, i.e.\ $\sum\ell\geq(K-3)/2$ for
+$\ell(d)=(K-1)/2-|\delta|$; the phase-rate bound
+$|z_d-1|\le A\lambda^{-\ell(d)}/(1-\lambda^{-K})$ with
+$A=4\pi/(\sqrt2(1+\sqrt2))$ then gives a defect product
+$O(\lambda^{-K/2})=O(N^{-1})$, uniformly in the labels, and if one
+difference is zero the product is zero. All remaining defect factors are
+bounded by two. This proves the stated refinement.
 
 At order eight, the minimal relation is
 $(3,-4)+(3,4)-6(1,0)=0$. Among its 56 orders the seven half-symplectic phases

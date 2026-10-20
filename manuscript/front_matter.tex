@@ -119,7 +119,7 @@ nearest-neighbour law. A two-scale measure of one eigenvalue is not a
 two-eigenvalue correlation. These distinctions are used throughout.
 
 In the finite-field sections, p is an odd prime, H is a multiplicative
-subgroup and K is its order. In the Pell sections, N is the Hilbert-space
+subgroup of odd prime order K. In the Pell sections, N is the Hilbert-space
 parameter and can be composite, while K is an arithmetic return time with
 $N\asymp(3+2\sqrt2)^{K/2}$. No unexplained identification of p and N is made.
 The notation D denotes the dimension of the active parity sector except
@@ -134,10 +134,12 @@ $T=\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)$, the
 classical pullback matrix is $S=T^{\mathsf T}$. Define
 \[
  W_N(a,b)\psi(x)=e_N(a(x-b/2))\psi(x-b),\qquad
- Q_N(a,b)=(-1)^{ab}W_N(a,b),\qquad\hbar_N=(2\pi N)^{-1}.
+ Q_N(a,b)=(-1)^{ab}W_N(a,b),\qquad\hbar_N=(2\pi N)^{-1},
 \]
+where $e_N(t)=e^{2\pi i t/N}$.
 The half in W is modular; a,b in Q are integer Fourier frequencies before
-reduction. Thus $Q_N(v)Q_N(w)=e^{\pi i\omega(v,w)/N}Q_N(v+w)$.
+reduction. Thus, with $\omega((a,b),(a',b'))=ab'-ba'$,
+$Q_N(v)Q_N(w)=e^{\pi i\omega(v,w)/N}Q_N(v+w)$.
 For general hyperbolic matrices an explicitly stated invariant characteristic
 $Q_N^*(a,b)=(-1)^{ab+a+b}W_N(a,b)$ is used instead.
 These characteristics are not silently interchanged.
@@ -171,8 +173,10 @@ No implication from analytic nonzero bracket to positive variance is inserted.
 The finite-field reductions form a parallel chain: exact pair keys, Cayley
 energy, fixed-degree row polynomials, scalar supports, and conditional
 arithmetic estimates. They are not a substitute for spectral trace estimates.
-The subresultant, cyclotomic-unit and subgroup-curve inputs cited in those
-sections retain their named external hypotheses. Their historical derivations
+The subresultant, cyclotomic-unit and subgroup-curve inputs used in those
+sections retain their named external hypotheses. Their sources are recorded
+in the bibliography; entries that are not cited at a point of use are
+collected there under ``Further reading''. Their historical derivations
 are preserved in this consolidated record; the present audit has not supplied
 new proofs of all external results. Exact-source checks and unretrieved leaves
 are listed separately in the source ledger, so no blanket referee verdict is
@@ -189,8 +193,11 @@ claim for that algebra is made. All new conclusions below are derived directly
 rather than assigned to a source merely from its title or abstract.
 
 \subsection{A precise universality obligation}
-For a D-dimensional spectrum $e^{2\pi ix_a}$, the global-density-unfolded
-factorial pair statistic is
+For a D-dimensional spectrum $e^{2\pi ix_a}$, let $U_D$ be a
+$D\times D$ unitary matrix with eigenvalues $e^{2\pi ix_a}$, and let
+$\phi\in\mathcal S(\mathbf R)$ with Fourier transform
+$\widehat\phi(\xi)=\int_{\mathbf R}\phi(x)e^{-2\pi i x\xi}\,dx$.
+The global-density-unfolded factorial pair statistic is
 \[
  R_D(\phi)=D^{-1}\sum_{a\ne b}\sum_{m\in\mathbb Z}
                    \phi(D(x_a-x_b+m)).
