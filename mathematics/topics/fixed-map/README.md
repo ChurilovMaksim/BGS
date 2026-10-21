@@ -179,3 +179,8 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 
 - [BGS-FM-032: quantum_cyclic_cohomology_20261015](../../quantum_cyclic_cohomology_20261015.md) — proved within the source boundary.
 - [BGS-FM-033: scaled_weyl_overlap_20261015](../../scaled_weyl_overlap_20261015.md) — conditional within the source boundary.
+
+## Physical kick and its limits
+
+- [Uniform trace decay and scalar-distance limits](../../physical_kick_trace_decay.md).
+- [All-order polynomial approximation and Pell aliases](../../physical_trace_polynomial_approximation.md).

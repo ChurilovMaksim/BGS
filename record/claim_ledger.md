@@ -1,5 +1,19 @@
 # Claim ledger
 
+## Physical-kick review, 21 October 2026
+
+**BGS-TRACE-106:** [Uniform physical-kick decay](../mathematics/physical_kick_trace_decay.md)
+strengthens the imported exponent 1/25 to 1/9 on the same explicit small-time
+interval; bounded-time decay and maximal scalar-distance limits concern the
+single kick. **BGS-TRACE-107:** [All-order polynomial error control](../mathematics/physical_trace_polynomial_approximation.md)
+extends the pair replacement bound to every fixed factorial order and records
+the exact Pell two-copy alias threshold. Both are analytic author proofs with
+self-review; finite checks certify only their stated finite inputs.
+
+[Exact source review and coverage](spectral_master_audit_20261021.md) explicitly
+leave most historical blocks unreviewed. BGS-TRACE-005 and BGS-BGS-001 remain
+OPEN; no original signed Heisenberg sum has been evaluated by these results.
+
 ## Signed circular-phase continuation, 19 October 2026
 
 **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** All following proofs are author

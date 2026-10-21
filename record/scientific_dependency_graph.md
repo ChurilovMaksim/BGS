@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.
 
-**159 registered nodes; 236 direct prerequisite edges.**
+**191 registered nodes; 238 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -17,9 +17,14 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-BGS-001](../mathematics/fixed_map_resolvent_frontier.md) | open | `BGS-FM-001`, `BGS-FM-002`, `BGS-FM-003`, `BGS-FM-004`, `BGS-LOOP-001`, `BGS-TRACE-004`, `BGS-TRACE-005` | `EXT-BH-2026` | 0 |
 | [BGS-CAYLEY-001](../mathematics/fourth_moment_reduction.md) | proved | None registered | None registered | 1 |
 | [BGS-CAYLEY-002](../mathematics/cayley_additive_energy.md) | proved | `BGS-CAYLEY-001` | None registered | 3 |
-| [BGS-CAYLEY-003](../mathematics/cayley_direct_energy.md) | proved | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
+| [BGS-CAYLEY-003](../mathematics/cayley_direct_energy.md) | verification-pending | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
 | [BGS-CAYLEY-004](../mathematics/cayley_curve_uniform.md) | proved | `BGS-CAYLEY-002` | `EXT-CZ-2013` | 1 |
 | [BGS-CAYLEY-005](../mathematics/open_questions.md) | open | `BGS-CAYLEY-002`, `BGS-CAYLEY-003`, `BGS-CAYLEY-004` | None registered | 0 |
+| [BGS-CAYLEY-006](../mathematics/cayley_trace_gaussian_limit.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-007](../mathematics/cayley_product_row_real_trace_ideal.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-008](../mathematics/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-009](../mathematics/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-010](../manuscript/general_spectra.tex) | proved | None registered | None registered | 0 |
 | [BGS-CUE-001](../mathematics/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |
 | [BGS-CUE-002](../mathematics/full_pair_cue_covariance_20261015.md) | proved | `BGS-TRACE-002` | None registered | 0 |
 | [BGS-FLOW-001](../mathematics/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
@@ -43,6 +48,10 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FLOW-019](../mathematics/fixed_degree_heat_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-017`, `BGS-FM-013` | `EXT-DE-2001` | 1 |
 | [BGS-FLOW-020](../mathematics/growing_degree_trace_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-019`, `BGS-FM-007`, `BGS-FM-013` | `EXT-DE-2001`, `EXT-GHANMI-2017` | 1 |
 | [BGS-FLOW-021](../mathematics/heisenberg_pair_heat_formula.md) | proved | `BGS-FLOW-020` | `EXT-DE-2001` | 0 |
+| [BGS-FLOW-022](../mathematics/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-023](../mathematics/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-024](../mathematics/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-025](../mathematics/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
 | [BGS-FM-001](../mathematics/fixed_model_symmetry_theorem.md) | proved | None registered | None registered | 24 |
 | [BGS-FM-002](../mathematics/fixed_model_pell_crossover.md) | proved | None registered | None registered | 1 |
 | [BGS-FM-003](../mathematics/fixed_map_moment_control_and_transfer.md) | proved | None registered | None registered | 2 |
@@ -76,6 +85,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FM-031](../mathematics/ordinary_compact_stratum_centering.md) | proved | `BGS-TRACE-023` | `EXT-ZIRN-2021` | 0 |
 | [BGS-FM-032](../mathematics/quantum_cyclic_cohomology_20261015.md) | proved | `BGS-FM-001`, `BGS-TRACE-009` | None registered | 0 |
 | [BGS-FM-033](../mathematics/scaled_weyl_overlap_20261015.md) | conditional | `BGS-FM-014`, `BGS-FM-023` | None registered | 0 |
+| [BGS-FM-034](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-035](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-036](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-001](../formalization/README.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-002](../mathematics/four_cut_rank_two_classification.md) | proved | None registered | None registered | 1 |
 | [BGS-FORMAL-003](../formalization/seven_primary_certificate.md) | proved | None registered | None registered | 0 |
@@ -89,8 +101,26 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-005](../mathematics/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-006](../mathematics/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 1 |
 | [BGS-RES-007](../mathematics/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
-| [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | None registered | 0 |
+| [BGS-RES-008](../mathematics/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-009](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-010](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-011](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-012](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-013](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-014](../mathematics/resonance_riesz_regularization.md) | conditional | None registered | None registered | 1 |
+| [BGS-RES-015](../mathematics/two_window_resonance_crossover.md) | proved | `BGS-RES-014` | None registered | 0 |
+| [BGS-RES-016](../mathematics/multiradius_polynomial_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-017](../mathematics/balanced_phase_controllability.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-018](../mathematics/entire_temporal_gauge.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-019](../mathematics/resonance_wiener_stability.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-020](../mathematics/generic_wiener_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-021](../manuscript/unified_sections/analytic_resonance_rigidity.tex) | proved | None registered | None registered | 0 |
+| [BGS-RES-022](../mathematics/resonance_nondegeneracy_and_hessian.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-RES-023](../mathematics/resonance_nondegeneracy_and_hessian.md) | proved | `BGS-RES-022` | None registered | 0 |
+| [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | `EXT-DEMNI-2016` | 0 |
 | [BGS-RET-002](../mathematics/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
+| [BGS-RET-003](../mathematics/noncommuting_return_words.md) | conditional | None registered | None registered | 0 |
+| [BGS-RET-004](../mathematics/noncommuting_return_words.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-001](../mathematics/trace_to_local_statistics_bridge.md) | proved | None registered | None registered | 11 |
 | [BGS-TRACE-002](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-001` | None registered | 8 |
 | [BGS-TRACE-003](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-002` | None registered | 4 |
@@ -163,13 +193,15 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-093](../mathematics/gaussian_equal_edge_20261016.md) | proved | None registered | `EXT-BF-2023`, `EXT-KPSS-2002` | 1 |
 | [BGS-TRACE-094](../mathematics/wick_collision_poisson_20261016.md) | proved | `BGS-TRACE-093` | `EXT-CS-2006` | 0 |
 | [BGS-TRACE-095](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-080` | None registered | 0 |
-| [BGS-TRACE-096](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-096](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 0 |
 | [BGS-TRACE-097](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | None registered | None registered | 0 |
-| [BGS-TRACE-098](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-099](../mathematics/phase_ensemble_continuation_20261019.md) | proved | `BGS-TRACE-098` | None registered | 0 |
-| [BGS-TRACE-100](../mathematics/phase_ensemble_continuation_20261019.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-101](../mathematics/phase_neutral_primitives_20261019.md) | proved | `BGS-TRACE-100` | None registered | 2 |
-| [BGS-TRACE-102](../mathematics/phase_second_defect_20261019.md) | proved | `BGS-TRACE-101` | None registered | 1 |
-| [BGS-TRACE-103](../mathematics/phase_quartic_cluster_sum_20261019.md) | proved | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
-| [BGS-TRACE-104](../mathematics/phase_cayley_cauchy_transfer_20261019.md) | proved | None registered | None registered | 0 |
-| [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-098](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-TRACE-099](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | `BGS-TRACE-098` | None registered | 0 |
+| [BGS-TRACE-100](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-TRACE-101](../mathematics/phase_neutral_primitives_20261019.md) | verification-pending | `BGS-TRACE-100` | None registered | 2 |
+| [BGS-TRACE-102](../mathematics/phase_second_defect_20261019.md) | verification-pending | `BGS-TRACE-101` | None registered | 1 |
+| [BGS-TRACE-103](../mathematics/phase_quartic_cluster_sum_20261019.md) | verification-pending | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
+| [BGS-TRACE-104](../mathematics/phase_cayley_cauchy_transfer_20261019.md) | verification-pending | None registered | None registered | 0 |
+| [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | verification-pending | None registered | None registered | 0 |
+| [BGS-TRACE-106](../mathematics/physical_kick_trace_decay.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-107](../mathematics/physical_trace_polynomial_approximation.md) | proved | None registered | None registered | 0 |

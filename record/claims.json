@@ -4852,6 +4852,46 @@
         "manuscript/unified_sections/nondegeneracy_part4.tex"
       ],
       "boundary": "Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it."
+    },
+    {
+      "id": "BGS-TRACE-106",
+      "title": "Uniform physical-kick trace decay, positive-square exponent 1/9 and scalar-distance limit",
+      "state": "proved",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW + FINITE CHECKS AT STATED SCOPE",
+      "source": "mathematics/physical_kick_trace_decay.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-master-audit/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/physical_kick_trace_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/physical_kick_20261021.tex"
+      ],
+      "boundary": "All odd N, 0<|t|<=10^-20, N|t|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and self-review, not external refereeing or Lean."
+    },
+    {
+      "id": "BGS-TRACE-107",
+      "title": "Physical polynomial approximation at every fixed factorial order and exact Pell alias threshold",
+      "state": "proved",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW + FINITE CHECKS AT STATED SCOPE",
+      "source": "mathematics/physical_trace_polynomial_approximation.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-master-audit/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/physical_kick_trace_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/physical_kick_20261021.tex"
+      ],
+      "boundary": "Norm error epsilon gives O(N^k epsilon) trace-polynomial error at each fixed order and bandwidth. Negative indices use adjoint powers of the nonunitary approximant. Full signed sum remains unestimated. Shortest scalar two-copy Pell alias has length x; no spectral counterexample or priority claim."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

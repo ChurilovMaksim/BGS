@@ -1,5 +1,14 @@
 # Theorem families and their limits
 
+## Physical-kick bounds, 21 October 2026
+
+[Uniform trace decay and scalar-distance limits](physical_kick_trace_decay.md)
+(TRACE-106) and [all-order polynomial approximation with Pell alias limits](physical_trace_polynomial_approximation.md)
+(TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
+strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
+remains open. [Review scope](../record/spectral_master_audit_20261021.md).
+
+
 This file is a narrative index of theorem families and their limits,
 grouped by family and date; it is not a complete per-claim index.
 For the complete per-claim index use the generated

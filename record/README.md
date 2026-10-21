@@ -1,5 +1,9 @@
 # Scientific status and research record
 
+## External spectral snapshot, 21 October 2026
+
+[Bounded proof audit, strengthened results and remaining review queue](spectral_master_audit_20261021.md).
+
 This directory records theorem status, dependency structure, corrections and
 actual review coverage. It is the provenance layer of the scientific corpus;
 current status must be read before using a historical route.

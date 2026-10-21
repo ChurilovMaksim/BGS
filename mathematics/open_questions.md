@@ -1,5 +1,9 @@
 # Open mathematical obligations
 
+The [21 October physical-kick results](physical_kick_trace_decay.md) do not close
+the original signed Heisenberg hierarchy. [All-order polynomial replacement](physical_trace_polynomial_approximation.md) controls its approximation error,
+while the complete remaining signed polynomial sum is still unestimated.
+
 ## Current open obligations (20 October 2026)
 
 The five claims with `state: open` in

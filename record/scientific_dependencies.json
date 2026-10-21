@@ -1,6 +1,6 @@
 {
   "schema": "bgs-scientific-dependencies-v1",
-  "updated": "2026-10-19",
+  "updated": "2026-10-21",
   "nodes": [
     "BGS-BGS-001",
     "BGS-CAYLEY-001",
@@ -8,6 +8,11 @@
     "BGS-CAYLEY-003",
     "BGS-CAYLEY-004",
     "BGS-CAYLEY-005",
+    "BGS-CAYLEY-006",
+    "BGS-CAYLEY-007",
+    "BGS-CAYLEY-008",
+    "BGS-CAYLEY-009",
+    "BGS-CAYLEY-010",
     "BGS-CUE-001",
     "BGS-CUE-002",
     "BGS-FLOW-001",
@@ -31,6 +36,10 @@
     "BGS-FLOW-019",
     "BGS-FLOW-020",
     "BGS-FLOW-021",
+    "BGS-FLOW-022",
+    "BGS-FLOW-023",
+    "BGS-FLOW-024",
+    "BGS-FLOW-025",
     "BGS-FM-001",
     "BGS-FM-002",
     "BGS-FM-003",
@@ -64,6 +73,9 @@
     "BGS-FM-031",
     "BGS-FM-032",
     "BGS-FM-033",
+    "BGS-FM-034",
+    "BGS-FM-035",
+    "BGS-FM-036",
     "BGS-FORMAL-001",
     "BGS-FORMAL-002",
     "BGS-FORMAL-003",
@@ -77,8 +89,26 @@
     "BGS-RES-005",
     "BGS-RES-006",
     "BGS-RES-007",
+    "BGS-RES-008",
+    "BGS-RES-009",
+    "BGS-RES-010",
+    "BGS-RES-011",
+    "BGS-RES-012",
+    "BGS-RES-013",
+    "BGS-RES-014",
+    "BGS-RES-015",
+    "BGS-RES-016",
+    "BGS-RES-017",
+    "BGS-RES-018",
+    "BGS-RES-019",
+    "BGS-RES-020",
+    "BGS-RES-021",
+    "BGS-RES-022",
+    "BGS-RES-023",
     "BGS-RET-001",
     "BGS-RET-002",
+    "BGS-RET-003",
+    "BGS-RET-004",
     "BGS-TRACE-001",
     "BGS-TRACE-002",
     "BGS-TRACE-003",
@@ -160,7 +190,9 @@
     "BGS-TRACE-102",
     "BGS-TRACE-103",
     "BGS-TRACE-104",
-    "BGS-TRACE-105"
+    "BGS-TRACE-105",
+    "BGS-TRACE-106",
+    "BGS-TRACE-107"
   ],
   "edges": [
     {
@@ -901,6 +933,16 @@
     {
       "from": "BGS-RES-006",
       "to": "BGS-RES-007",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-RES-014",
+      "to": "BGS-RES-015",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-RES-022",
+      "to": "BGS-RES-023",
       "type": "scientific-prerequisite"
     },
     {

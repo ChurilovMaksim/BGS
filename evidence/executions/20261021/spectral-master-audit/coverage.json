@@ -1,0 +1,2387 @@
+[
+  {
+    "id": "r12-source-round12-main-report-md",
+    "line": 130,
+    "expected_sha256": "71ac46dfd35adde2d4fa59169988615d05d62d6e3f3512d163c06ed01de4b2b8",
+    "hash_verified": true,
+    "bytes": 21493,
+    "sha256": "71ac46dfd35adde2d4fa59169988615d05d62d6e3f3512d163c06ed01de4b2b8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-signed-trace-explicit-kick-exponent-md",
+    "line": 639,
+    "expected_sha256": "91399c420e0094634dce6803f915af44ee5de68ce966ddd1b509f9568fb64c7f",
+    "hash_verified": true,
+    "bytes": 13015,
+    "sha256": "91399c420e0094634dce6803f915af44ee5de68ce966ddd1b509f9568fb64c7f",
+    "review_status": "accepted complete mathematical proof; quantitatively strengthened"
+  },
+  {
+    "id": "r12-source-r12-countersequence-kick-recurrence-md",
+    "line": 1092,
+    "expected_sha256": "7bb8b677cdee6f7a0a94f1d20833aec3069200056de5d6c587c365bbb89e8e1e",
+    "hash_verified": true,
+    "bytes": 38365,
+    "sha256": "7bb8b677cdee6f7a0a94f1d20833aec3069200056de5d6c587c365bbb89e8e1e",
+    "review_status": "accepted mathematical proof sections 1-7; scope boundaries checked"
+  },
+  {
+    "id": "r12-source-r12-full-product-nonperturbative-attempt-md",
+    "line": 1695,
+    "expected_sha256": "d1418d95d9a5482251a66241e99e555f48519b437a7a2ed3a29a00eaa91d4225",
+    "hash_verified": true,
+    "bytes": 21313,
+    "sha256": "d1418d95d9a5482251a66241e99e555f48519b437a7a2ed3a29a00eaa91d4225",
+    "review_status": "accepted mathematical sections 2-7; original signed sum remains open"
+  },
+  {
+    "id": "r12-source-root-round12-proof-audit-md",
+    "line": 2408,
+    "expected_sha256": "9c0b33bff66e60e9b445cdb8276939c8010089efcc39a494b5497cecb07bb453",
+    "hash_verified": true,
+    "bytes": 26781,
+    "sha256": "9c0b33bff66e60e9b445cdb8276939c8010089efcc39a494b5497cecb07bb453",
+    "review_status": "partial comparison only; not a new independent review"
+  },
+  {
+    "id": "r12-source-r12-countersequence-audit-explicit-exponent-md",
+    "line": 2923,
+    "expected_sha256": "5af75959efe344e669721279bdd3453e12d850859b110de0f8f66f8c86d479f8",
+    "hash_verified": true,
+    "bytes": 7243,
+    "sha256": "5af75959efe344e669721279bdd3453e12d850859b110de0f8f66f8c86d479f8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-signed-trace-kick-audit-md",
+    "line": 3067,
+    "expected_sha256": "febe87b367a5078bf87469c2096eac1ed1561d0ced90197dea29f2bb9b7c2458",
+    "hash_verified": true,
+    "bytes": 10328,
+    "sha256": "febe87b367a5078bf87469c2096eac1ed1561d0ced90197dea29f2bb9b7c2458",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-full-product-audit-kick-recurrence-md",
+    "line": 3348,
+    "expected_sha256": "3adbcfce53afb2f80a5de60dc88c1db51b087a21394c850ba6350aa4e5900ac5",
+    "hash_verified": true,
+    "bytes": 6614,
+    "sha256": "3adbcfce53afb2f80a5de60dc88c1db51b087a21394c850ba6350aa4e5900ac5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-countersequence-audit-full-product-md",
+    "line": 3541,
+    "expected_sha256": "76a7b9d45ef7757a0daae785d140dc93dca50fa8e2ceff014e3381ecb96fba04",
+    "hash_verified": true,
+    "bytes": 10047,
+    "sha256": "76a7b9d45ef7757a0daae785d140dc93dca50fa8e2ceff014e3381ecb96fba04",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-countersequence-audit-main-report-md",
+    "line": 3719,
+    "expected_sha256": "f9c5afe9819684641779110f0d9118bd9195b10d7943f4c3af4ddae3ff2cee9f",
+    "hash_verified": true,
+    "bytes": 9994,
+    "sha256": "f9c5afe9819684641779110f0d9118bd9195b10d7943f4c3af4ddae3ff2cee9f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-signed-trace-attempt-md",
+    "line": 3870,
+    "expected_sha256": "eff7e763dddaf4ad45de401edd43d4edb07a51d033549fe57566283becfbc534",
+    "hash_verified": true,
+    "bytes": 11023,
+    "sha256": "eff7e763dddaf4ad45de401edd43d4edb07a51d033549fe57566283becfbc534",
+    "review_status": "general clock lemma and Gram argument accepted; original-family input not certified"
+  },
+  {
+    "id": "r12-source-root-round12-literature-scope-md",
+    "line": 4154,
+    "expected_sha256": "4292f8ca2d649f63fa9eac683f1b7bb1c5e0d70c4b07c0a3e37ccef74a69412c",
+    "hash_verified": true,
+    "bytes": 1630,
+    "sha256": "4292f8ca2d649f63fa9eac683f1b7bb1c5e0d70c4b07c0a3e37ccef74a69412c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-round12-continuation-ledger-md",
+    "line": 4191,
+    "expected_sha256": "8b0ac292a355e6bf529e2f1f108ae55b72ebb6d3c01ed965dffdbe1c05200b88",
+    "hash_verified": true,
+    "bytes": 7291,
+    "sha256": "8b0ac292a355e6bf529e2f1f108ae55b72ebb6d3c01ed965dffdbe1c05200b88",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-round12-target-checkpoint-md",
+    "line": 4307,
+    "expected_sha256": "b39996f6cc4c86aebbf03b5a0775bf08b1ad250821b1b0bedd6c0c68767a0ec9",
+    "hash_verified": true,
+    "bytes": 3467,
+    "sha256": "b39996f6cc4c86aebbf03b5a0775bf08b1ad250821b1b0bedd6c0c68767a0ec9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-root-critical-circle-wolfram-output-md",
+    "line": 4363,
+    "expected_sha256": "2807ed2abafe29862492c0d22ca6d4b806bdd6fadacdf9ca2c0fed32ca795502",
+    "hash_verified": true,
+    "bytes": 1033,
+    "sha256": "2807ed2abafe29862492c0d22ca6d4b806bdd6fadacdf9ca2c0fed32ca795502",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-countersequence-exact-check-json",
+    "line": 4401,
+    "expected_sha256": "5951bddcd7b82b61ba509ca6cba116fe3a977e55b78be1386acbbd89e0cbc6cc",
+    "hash_verified": true,
+    "bytes": 4267,
+    "sha256": "5951bddcd7b82b61ba509ca6cba116fe3a977e55b78be1386acbbd89e0cbc6cc",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-countersequence-exact-check-py",
+    "line": 4737,
+    "expected_sha256": "1b55b94e3ccad1b4494516dc1db012402f82216eca19739222b4517b6bd20268",
+    "hash_verified": true,
+    "bytes": 3355,
+    "sha256": "1b55b94e3ccad1b4494516dc1db012402f82216eca19739222b4517b6bd20268",
+    "review_status": "source inspected and replayed unchanged"
+  },
+  {
+    "id": "r12-source-r12-full-product-exact-checks-json",
+    "line": 4853,
+    "expected_sha256": "4e2527953a0097a408c265f650570a34f22819e4e8ded20b842775dd9a3cdce3",
+    "hash_verified": true,
+    "bytes": 11975,
+    "sha256": "4e2527953a0097a408c265f650570a34f22819e4e8ded20b842775dd9a3cdce3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-r12-full-product-exact-checks-py",
+    "line": 5494,
+    "expected_sha256": "f0bcd6ebdb291aaff2c51835e0dd50f9271ff2d3a9f20ce8c5e042ffb78f6194",
+    "hash_verified": true,
+    "bytes": 4470,
+    "sha256": "f0bcd6ebdb291aaff2c51835e0dd50f9271ff2d3a9f20ce8c5e042ffb78f6194",
+    "review_status": "source inspected; finite CRT checks independently repeated; original not replayed"
+  },
+  {
+    "id": "r12-source-root-critical-circle-wolfram-wl",
+    "line": 5648,
+    "expected_sha256": "00a0cc3b1d87b5dbe905ccd36b3ff21a6dcec9d9ccfda68eb2bf27e4dad32421",
+    "hash_verified": true,
+    "bytes": 414,
+    "sha256": "00a0cc3b1d87b5dbe905ccd36b3ff21a6dcec9d9ccfda68eb2bf27e4dad32421",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-round11-main-report-md",
+    "line": 5811,
+    "expected_sha256": "3cbf76d285ba54082ee5b04af0adbb1470e23d6f48cffa97d478bb9980c921e5",
+    "hash_verified": true,
+    "bytes": 18037,
+    "sha256": "3cbf76d285ba54082ee5b04af0adbb1470e23d6f48cffa97d478bb9980c921e5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-arithmetic-pell-magnus-md",
+    "line": 6186,
+    "expected_sha256": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+    "hash_verified": true,
+    "bytes": 42736,
+    "sha256": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+    "review_status": "partial reading only; no full theorem promotion"
+  },
+  {
+    "id": "r11-source-root-parametric-eigenphase-dynamics-md",
+    "line": 7150,
+    "expected_sha256": "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb",
+    "hash_verified": true,
+    "bytes": 24325,
+    "sha256": "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-audit-md",
+    "line": 7701,
+    "expected_sha256": "f600be6e7a6f2158ce5e50ef41ccdccca96f0da5ca3c5b4ece8b9b727038422e",
+    "hash_verified": true,
+    "bytes": 24613,
+    "sha256": "f600be6e7a6f2158ce5e50ef41ccdccca96f0da5ca3c5b4ece8b9b727038422e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-resolvent-audit-arithmetic-md",
+    "line": 8441,
+    "expected_sha256": "4ebd0aa513796814f75dca8f279f03bb5719a003978c28ba9f39ad00fb74d40f",
+    "hash_verified": true,
+    "bytes": 37309,
+    "sha256": "4ebd0aa513796814f75dca8f279f03bb5719a003978c28ba9f39ad00fb74d40f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-arithmetic-main-report-audit-md",
+    "line": 9247,
+    "expected_sha256": "88d2ae09942dc5595a8b352b7bc582642d52d9bad0be24517eadc4eb4d1e92da",
+    "hash_verified": true,
+    "bytes": 21437,
+    "sha256": "88d2ae09942dc5595a8b352b7bc582642d52d9bad0be24517eadc4eb4d1e92da",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-round11-proof-audit-md",
+    "line": 9703,
+    "expected_sha256": "845f57bd97aba6ad5b770f1a09ad89476981cab58c0f70959bbe96d67ea2ac89",
+    "hash_verified": true,
+    "bytes": 12819,
+    "sha256": "845f57bd97aba6ad5b770f1a09ad89476981cab58c0f70959bbe96d67ea2ac89",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-resolvent-ward-diagonal-route-md",
+    "line": 9922,
+    "expected_sha256": "6868e41398755931045c322ccc18cd3400631d85596aadeaf1c743f34d4efb4f",
+    "hash_verified": true,
+    "bytes": 17203,
+    "sha256": "6868e41398755931045c322ccc18cd3400631d85596aadeaf1c743f34d4efb4f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-checkpoint-md",
+    "line": 10499,
+    "expected_sha256": "04d220ec857e51de1aa141504a71d69dee3e84b8329fb72d01f864aa97225770",
+    "hash_verified": true,
+    "bytes": 12467,
+    "sha256": "04d220ec857e51de1aa141504a71d69dee3e84b8329fb72d01f864aa97225770",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-round11-literature-scope-md",
+    "line": 10847,
+    "expected_sha256": "36f77c52ef991ba569e948d8fd79deb7073f949bb1999979c052a60a60e45180",
+    "hash_verified": true,
+    "bytes": 4754,
+    "sha256": "36f77c52ef991ba569e948d8fd79deb7073f949bb1999979c052a60a60e45180",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-round11-continuation-ledger-md",
+    "line": 10939,
+    "expected_sha256": "0cd26b5f82001d1cd90060974bf3a74b25bf9e2fc4c9eb83e993a3a00412bd6c",
+    "hash_verified": true,
+    "bytes": 5526,
+    "sha256": "0cd26b5f82001d1cd90060974bf3a74b25bf9e2fc4c9eb83e993a3a00412bd6c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-round11-checkpoint-md",
+    "line": 11044,
+    "expected_sha256": "4f922dc551504e791794840c919776b78914afbfd101580385a62c0a7c0dc79b",
+    "hash_verified": true,
+    "bytes": 3328,
+    "sha256": "4f922dc551504e791794840c919776b78914afbfd101580385a62c0a7c0dc79b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-arithmetic-pell-certificate-json",
+    "line": 11110,
+    "expected_sha256": "c770609d11cacc6476e7e704666593bdc47f8670e56c764a7c30b4fb87f29c31",
+    "hash_verified": true,
+    "bytes": 58212,
+    "sha256": "c770609d11cacc6476e7e704666593bdc47f8670e56c764a7c30b4fb87f29c31",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-arithmetic-pell-certificate-py",
+    "line": 14742,
+    "expected_sha256": "b9bdb904a09ca18400bc90053974609d9aa96acbc46f9f8230f63b92f46fd1cb",
+    "hash_verified": true,
+    "bytes": 8897,
+    "sha256": "b9bdb904a09ca18400bc90053974609d9aa96acbc46f9f8230f63b92f46fd1cb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-checks-json",
+    "line": 14993,
+    "expected_sha256": "fecda8453e22b32abe78df680f1ac1dc7e0827a4bf82d0791b9ca78fae0f317f",
+    "hash_verified": true,
+    "bytes": 2164,
+    "sha256": "fecda8453e22b32abe78df680f1ac1dc7e0827a4bf82d0791b9ca78fae0f317f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-checks-py",
+    "line": 15118,
+    "expected_sha256": "0e3e67a7439681c699a5421bb5df68449d5a8f750e5da2e8423de083e58a4bf3",
+    "hash_verified": true,
+    "bytes": 5677,
+    "sha256": "0e3e67a7439681c699a5421bb5df68449d5a8f750e5da2e8423de083e58a4bf3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-manifest-json",
+    "line": 15300,
+    "expected_sha256": "ef774a16afc5e5fa6cb59842a2a4f4f3534f2e87aa64eb150c98adfd32838cf0",
+    "hash_verified": true,
+    "bytes": 3001,
+    "sha256": "ef774a16afc5e5fa6cb59842a2a4f4f3534f2e87aa64eb150c98adfd32838cf0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-wolfram-wl",
+    "line": 15388,
+    "expected_sha256": "16642f1f3b14caac317df4ee7544e5f2fb9d529feb7997d88c1ed930c4dde8f9",
+    "hash_verified": true,
+    "bytes": 725,
+    "sha256": "16642f1f3b14caac317df4ee7544e5f2fb9d529feb7997d88c1ed930c4dde8f9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-coherent-parametric-wolfram-record-json",
+    "line": 15407,
+    "expected_sha256": "851784289ecfba7b421abf6e0fe8f094a9f582fcef177b62bb18951ac1ba41d4",
+    "hash_verified": true,
+    "bytes": 3025,
+    "sha256": "851784289ecfba7b421abf6e0fe8f094a9f582fcef177b62bb18951ac1ba41d4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-resolvent-arithmetic-checks-json",
+    "line": 15451,
+    "expected_sha256": "b86a8280f664b6b0c37d6195ecd5df28d6a2571da00bb44ccc245949da820776",
+    "hash_verified": true,
+    "bytes": 3155,
+    "sha256": "b86a8280f664b6b0c37d6195ecd5df28d6a2571da00bb44ccc245949da820776",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-resolvent-arithmetic-checks-py",
+    "line": 15598,
+    "expected_sha256": "0c0164efdc64d8c4e01252ddc2f04da7b9a9ff5872f2a53378c69a41b65c09f1",
+    "hash_verified": true,
+    "bytes": 6764,
+    "sha256": "0c0164efdc64d8c4e01252ddc2f04da7b9a9ff5872f2a53378c69a41b65c09f1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-r11-resolvent-exact-checks-wl",
+    "line": 15801,
+    "expected_sha256": "19704c156ba4c4e9252748e731045484196bbd90e8a4f27e253e13ac4480a487",
+    "hash_verified": true,
+    "bytes": 855,
+    "sha256": "19704c156ba4c4e9252748e731045484196bbd90e8a4f27e253e13ac4480a487",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-parametric-exact-check-py",
+    "line": 15822,
+    "expected_sha256": "d0b55e0c876eafdbb5e8cdf27fb624ce85b20e2feb1db7308876daa2fbb047fb",
+    "hash_verified": true,
+    "bytes": 5170,
+    "sha256": "d0b55e0c876eafdbb5e8cdf27fb624ce85b20e2feb1db7308876daa2fbb047fb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-parametric-exact-results-json",
+    "line": 16018,
+    "expected_sha256": "59596b62d273a936255fbf623a05f2635d13a48ab848bbd16c3c4221ed8f7210",
+    "hash_verified": true,
+    "bytes": 3336,
+    "sha256": "59596b62d273a936255fbf623a05f2635d13a48ab848bbd16c3c4221ed8f7210",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-parametric-wolfram-wl",
+    "line": 16254,
+    "expected_sha256": "9eb4796ab8297a4d7aa0208e3c2b64bf52be7d59ebce0f0a40695d655cdb5571",
+    "hash_verified": true,
+    "bytes": 313,
+    "sha256": "9eb4796ab8297a4d7aa0208e3c2b64bf52be7d59ebce0f0a40695d655cdb5571",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-root-parametric-wolfram-result-json",
+    "line": 16281,
+    "expected_sha256": "4d6b05be14b0b139b8186adc0f114e4a4a4d9af5728ad2c87b049c1550106884",
+    "hash_verified": true,
+    "bytes": 174,
+    "sha256": "4d6b05be14b0b139b8186adc0f114e4a4a4d9af5728ad2c87b049c1550106884",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-round10-main-report",
+    "line": 16452,
+    "expected_sha256": "5210f899d7cd30241ed4fa98de6d8ba95ec7e01c495a32f24040a84f692d7685",
+    "hash_verified": true,
+    "bytes": 29008,
+    "sha256": "5210f899d7cd30241ed4fa98de6d8ba95ec7e01c495a32f24040a84f692d7685",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-weyl-orderwise-repulsion-stability",
+    "line": 17060,
+    "expected_sha256": "63ddeba5e72b200bf3dd16bed795423d4ed7e070a0b0e3f55fa30b93d3bc53d2",
+    "hash_verified": true,
+    "bytes": 15042,
+    "sha256": "63ddeba5e72b200bf3dd16bed795423d4ed7e070a0b0e3f55fa30b93d3bc53d2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-weyl-downward-moment-heredity",
+    "line": 17574,
+    "expected_sha256": "ba5e5fb7b2d812c8b9a9f28f2f555412399d0e749d941af2723137be206c65dd",
+    "hash_verified": true,
+    "bytes": 17890,
+    "sha256": "ba5e5fb7b2d812c8b9a9f28f2f555412399d0e749d941af2723137be206c65dd",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-mixed-shrinking-isospectral-noise",
+    "line": 18216,
+    "expected_sha256": "5c9265843ce9ad7037ca35b0b601bfed4cca9bd87a44d15405a30f68d22683fb",
+    "hash_verified": true,
+    "bytes": 18706,
+    "sha256": "5c9265843ce9ad7037ca35b0b601bfed4cca9bd87a44d15405a30f68d22683fb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-mixed-isospectral-twirl-obstruction",
+    "line": 18840,
+    "expected_sha256": "673a8fbbe93cb26db469b7c7dd13b5960352e3ec2cdbf9e248aa4d7f2be1d9b9",
+    "hash_verified": true,
+    "bytes": 13419,
+    "sha256": "673a8fbbe93cb26db469b7c7dd13b5960352e3ec2cdbf9e248aa4d7f2be1d9b9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-arithmetic-stationary-rational-test",
+    "line": 19257,
+    "expected_sha256": "7dc028a0d85f388c1b68873ffc6cfc7c7b6e5f0435399ae039ad565e4e86f4f0",
+    "hash_verified": true,
+    "bytes": 13492,
+    "sha256": "7dc028a0d85f388c1b68873ffc6cfc7c7b6e5f0435399ae039ad565e4e86f4f0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-root-round10-proof-audit",
+    "line": 19525,
+    "expected_sha256": "b4344242965f7687125b46705971ef6e41a95402db055cb5488a6666b6be5c0b",
+    "hash_verified": true,
+    "bytes": 8249,
+    "sha256": "b4344242965f7687125b46705971ef6e41a95402db055cb5488a6666b6be5c0b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-arithmetic-audit-orderwise-repulsion",
+    "line": 19733,
+    "expected_sha256": "9865af8e544636611c09a8490f3b37380d36c085fb3380f9260d6bc226462fca",
+    "hash_verified": true,
+    "bytes": 12570,
+    "sha256": "9865af8e544636611c09a8490f3b37380d36c085fb3380f9260d6bc226462fca",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-arithmetic-audit-downward-heredity",
+    "line": 19971,
+    "expected_sha256": "40ce3feb3303f1cd1b42328d87fa4c936581746867e49c68edc0d6387f7ecf73",
+    "hash_verified": true,
+    "bytes": 13834,
+    "sha256": "40ce3feb3303f1cd1b42328d87fa4c936581746867e49c68edc0d6387f7ecf73",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-mixed-main-report-audit",
+    "line": 20237,
+    "expected_sha256": "8452d190c146207db564847fbc0e3cb029056ffda0f27469f1297804966f3bd4",
+    "hash_verified": true,
+    "bytes": 13420,
+    "sha256": "8452d190c146207db564847fbc0e3cb029056ffda0f27469f1297804966f3bd4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-root-operator-route-scope",
+    "line": 20317,
+    "expected_sha256": "579b1f4721dfaef4e6da1d914d90cab934b2fc625ebe37ef93b87839b57722a2",
+    "hash_verified": true,
+    "bytes": 9703,
+    "sha256": "579b1f4721dfaef4e6da1d914d90cab934b2fc625ebe37ef93b87839b57722a2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-mixed-operator-scope-independent-audit",
+    "line": 20558,
+    "expected_sha256": "a11849cdda56873e59d9391f9efd5d133047bd6047014382ee5f0144ec875a04",
+    "hash_verified": true,
+    "bytes": 6757,
+    "sha256": "a11849cdda56873e59d9391f9efd5d133047bd6047014382ee5f0144ec875a04",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-round10-continuation-ledger",
+    "line": 20710,
+    "expected_sha256": "746415783a5b3f745799f64e1ffa8eed695ba6131d6bd3c4513da94fc85547a0",
+    "hash_verified": true,
+    "bytes": 5897,
+    "sha256": "746415783a5b3f745799f64e1ffa8eed695ba6131d6bd3c4513da94fc85547a0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-weyl-route-ledger",
+    "line": 20814,
+    "expected_sha256": "c3c8d7b3bd9d3fdfe2a3390f8cc793ed6ad48b57ff84bbd98ea4cbb904586a2d",
+    "hash_verified": true,
+    "bytes": 12650,
+    "sha256": "c3c8d7b3bd9d3fdfe2a3390f8cc793ed6ad48b57ff84bbd98ea4cbb904586a2d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-round10-target-checkpoint",
+    "line": 21151,
+    "expected_sha256": "a35e09d5678b1f718f7deaa1c726afa5c692886010eb41f748e8f9f1624378f0",
+    "hash_verified": true,
+    "bytes": 2888,
+    "sha256": "a35e09d5678b1f718f7deaa1c726afa5c692886010eb41f748e8f9f1624378f0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-arithmetic-exact-checks",
+    "line": 21227,
+    "expected_sha256": "dedc3277cf7b4d36cbf638d5cddcb99755537eb36d8a283263171954763448da",
+    "hash_verified": true,
+    "bytes": 9348,
+    "sha256": "dedc3277cf7b4d36cbf638d5cddcb99755537eb36d8a283263171954763448da",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-r10-arithmetic-exact-checks",
+    "line": 21464,
+    "expected_sha256": "a03f657fa9dd1956e7836a5ac09e686cbcd101780ea57d1fb5ce4f7bcf084dfb",
+    "hash_verified": true,
+    "bytes": 6234,
+    "sha256": "a03f657fa9dd1956e7836a5ac09e686cbcd101780ea57d1fb5ce4f7bcf084dfb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-round9-main-report",
+    "line": 21893,
+    "expected_sha256": "abd50d2f334eba5d57142e2f80eb133ed01c83a160f4e79485a07ff7ed4ff93a",
+    "hash_verified": true,
+    "bytes": 46937,
+    "sha256": "abd50d2f334eba5d57142e2f80eb133ed01c83a160f4e79485a07ff7ed4ff93a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-root-diagonal-cocycle-normalization",
+    "line": 22857,
+    "expected_sha256": "afeaa52cea23836c5b4fa58d1040daa6df792d0b9adea83f8eb1de8690211921",
+    "hash_verified": true,
+    "bytes": 27150,
+    "sha256": "afeaa52cea23836c5b4fa58d1040daa6df792d0b9adea83f8eb1de8690211921",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-continuous-symbol-stability",
+    "line": 23632,
+    "expected_sha256": "0145256f03ad92f70a5852ecb11280dc3b1bccfa54b74af8b70e459b2e6577df",
+    "hash_verified": true,
+    "bytes": 22907,
+    "sha256": "0145256f03ad92f70a5852ecb11280dc3b1bccfa54b74af8b70e459b2e6577df",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-arithmetic-galois-obstruction",
+    "line": 24394,
+    "expected_sha256": "19fc46287b04ee3dd88cfc16826b2e07e19f397b23d6e85a148844e12929ca27",
+    "hash_verified": true,
+    "bytes": 18885,
+    "sha256": "19fc46287b04ee3dd88cfc16826b2e07e19f397b23d6e85a148844e12929ca27",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-determinant-exact-cue-detdet-counterexample",
+    "line": 24942,
+    "expected_sha256": "4fd909b04e8ccc1a000930e46e6efe23b520e8d41400d8f923e3aa7911623b7f",
+    "hash_verified": true,
+    "bytes": 13496,
+    "sha256": "4fd909b04e8ccc1a000930e46e6efe23b520e8d41400d8f923e3aa7911623b7f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-determinant-nonzero-minors-addendum",
+    "line": 25324,
+    "expected_sha256": "69233cc4b5d5772bafbf7d95aceb792f7e4a2f5f579500120984c4bf1693cc79",
+    "hash_verified": true,
+    "bytes": 6648,
+    "sha256": "69233cc4b5d5772bafbf7d95aceb792f7e4a2f5f579500120984c4bf1693cc79",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-determinant-braun-haake-and-contraction-audit",
+    "line": 25515,
+    "expected_sha256": "979cdac97772c3a10d6b186c13f066677d8d4bcf2f0bc05f4a300609f5af67f9",
+    "hash_verified": true,
+    "bytes": 10295,
+    "sha256": "979cdac97772c3a10d6b186c13f066677d8d4bcf2f0bc05f4a300609f5af67f9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-root-round9-proof-audit",
+    "line": 25774,
+    "expected_sha256": "47ee7c3ddafa612e1980b531f05372899f7f71fae92d102395bf7d01df38f34c",
+    "hash_verified": true,
+    "bytes": 19199,
+    "sha256": "47ee7c3ddafa612e1980b531f05372899f7f71fae92d102395bf7d01df38f34c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-analytic-normalization-independent-audit",
+    "line": 26047,
+    "expected_sha256": "0fc9a15bcccab691e2912e64c4d018aba8c822494d00ad848d468fbb5933cd51",
+    "hash_verified": true,
+    "bytes": 12828,
+    "sha256": "0fc9a15bcccab691e2912e64c4d018aba8c822494d00ad848d468fbb5933cd51",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-arithmetic-audit-continuous-selection",
+    "line": 26411,
+    "expected_sha256": "e2ffa265abd856e9c8dc827e66438b74e9fbef299a3d8c5c4bbb841477dd5908",
+    "hash_verified": true,
+    "bytes": 22728,
+    "sha256": "e2ffa265abd856e9c8dc827e66438b74e9fbef299a3d8c5c4bbb841477dd5908",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-determinant-audit-galois",
+    "line": 27066,
+    "expected_sha256": "e32125fba85ef0f9a47d46a60ec4c05b58160e2ad2a1003c190c0a1946ff5ab0",
+    "hash_verified": true,
+    "bytes": 17732,
+    "sha256": "e32125fba85ef0f9a47d46a60ec4c05b58160e2ad2a1003c190c0a1946ff5ab0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-deleted-clock-independent-audit",
+    "line": 27456,
+    "expected_sha256": "26d8fb35fcb86d0a6fe3cc2c0e3be7a7b5a518e22bb669994954ef26779c6cfe",
+    "hash_verified": true,
+    "bytes": 3759,
+    "sha256": "26d8fb35fcb86d0a6fe3cc2c0e3be7a7b5a518e22bb669994954ef26779c6cfe",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-main-report-audit",
+    "line": 27565,
+    "expected_sha256": "7d639afbc75b949b391c0df46fe570f966e134b25f337d49871ae8882bf5d613",
+    "hash_verified": true,
+    "bytes": 7306,
+    "sha256": "7d639afbc75b949b391c0df46fe570f966e134b25f337d49871ae8882bf5d613",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-determinant-main-report-audit",
+    "line": 27741,
+    "expected_sha256": "c63fe295fa11fb7d9f61a046c1a06600042d65121e721a509a2774e0f5eaec71",
+    "hash_verified": true,
+    "bytes": 12889,
+    "sha256": "c63fe295fa11fb7d9f61a046c1a06600042d65121e721a509a2774e0f5eaec71",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-round9-continuation-ledger",
+    "line": 28012,
+    "expected_sha256": "e3709d1866dd9c9afc88e3cfdcb74efc421cd8f75cd9a01bd56f5d92b92b0bce",
+    "hash_verified": true,
+    "bytes": 10732,
+    "sha256": "e3709d1866dd9c9afc88e3cfdcb74efc421cd8f75cd9a01bd56f5d92b92b0bce",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-route-ledger",
+    "line": 28180,
+    "expected_sha256": "ad07baa0fae652ea65f15e41dc931840a7d6046ebf30abac9a62d819e80b41e2",
+    "hash_verified": true,
+    "bytes": 8212,
+    "sha256": "ad07baa0fae652ea65f15e41dc931840a7d6046ebf30abac9a62d819e80b41e2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-round9-research-checkpoint",
+    "line": 28381,
+    "expected_sha256": "0ba3aa1de031f09e786db731b78592e646e6482d768d7adc547b00198b4246f0",
+    "hash_verified": true,
+    "bytes": 3034,
+    "sha256": "0ba3aa1de031f09e786db731b78592e646e6482d768d7adc547b00198b4246f0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-arithmetic-galois-check",
+    "line": 28437,
+    "expected_sha256": "dc6ef9115edcd13ce217a0b8c1c8457bc270df6ff839f1ec3ae3ea0ebab5a4b0",
+    "hash_verified": true,
+    "bytes": 2115,
+    "sha256": "dc6ef9115edcd13ce217a0b8c1c8457bc270df6ff839f1ec3ae3ea0ebab5a4b0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-arithmetic-galois-check",
+    "line": 28512,
+    "expected_sha256": "3a0e2612c2a0644355a125a26e449751268565a06437726a24713372968d96fd",
+    "hash_verified": true,
+    "bytes": 3841,
+    "sha256": "3a0e2612c2a0644355a125a26e449751268565a06437726a24713372968d96fd",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-r9-sector-positive-quantization-check",
+    "line": 28638,
+    "expected_sha256": "d06b8618653895feb88c8ce5698c9b24d5c7dc624827e403aa0eb2f77cd6adb3",
+    "hash_verified": true,
+    "bytes": 2255,
+    "sha256": "d06b8618653895feb88c8ce5698c9b24d5c7dc624827e403aa0eb2f77cd6adb3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-round8-main-report",
+    "line": 28886,
+    "expected_sha256": "c555d33289c8fdfda70cf53e69a41e8c843998bc50c6232acb212c3dcca3e0d9",
+    "hash_verified": true,
+    "bytes": 50302,
+    "sha256": "c555d33289c8fdfda70cf53e69a41e8c843998bc50c6232acb212c3dcca3e0d9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-original-uniform-clifford-symmetry-gap",
+    "line": 29850,
+    "expected_sha256": "0e4e58867f3f8745f9e3b1724fe8b269fc34cafd4dbea015e3a031495bf9d375",
+    "hash_verified": true,
+    "bytes": 17526,
+    "sha256": "0e4e58867f3f8745f9e3b1724fe8b269fc34cafd4dbea015e3a031495bf9d375",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-original-uniform-antiunitary-clifford-gap",
+    "line": 30376,
+    "expected_sha256": "96a22f2e1ef7b79af6fcbd3768f00adb4dac2bbadfef53545bac2199cf96d3e9",
+    "hash_verified": true,
+    "bytes": 25168,
+    "sha256": "96a22f2e1ef7b79af6fcbd3768f00adb4dac2bbadfef53545bac2199cf96d3e9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-full-weight-relative-path-cancellation",
+    "line": 31101,
+    "expected_sha256": "038d6c03710c38829fba3d96367d271f5c33cdeacf94889d32cc3d7a22070109",
+    "hash_verified": true,
+    "bytes": 16102,
+    "sha256": "038d6c03710c38829fba3d96367d271f5c33cdeacf94889d32cc3d7a22070109",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-all-odd-endpoint-fiber-identity",
+    "line": 31657,
+    "expected_sha256": "ec36b997ef3a38dd464d468833f78a3934b45bdc57dbc36f54987aa42a649b70",
+    "hash_verified": true,
+    "bytes": 10071,
+    "sha256": "ec36b997ef3a38dd464d468833f78a3934b45bdc57dbc36f54987aa42a649b70",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-original-uniform-weyl-self-overlap",
+    "line": 32018,
+    "expected_sha256": "7ad8afb5fa2f9098111166b70398aad2fc95bf10de508f47ae661ec25080755d",
+    "hash_verified": true,
+    "bytes": 18095,
+    "sha256": "7ad8afb5fa2f9098111166b70398aad2fc95bf10de508f47ae661ec25080755d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-original-uniform-metaplectic-symmetry-gap",
+    "line": 32584,
+    "expected_sha256": "bd607591e7d31980d828762bf4ab01fd7e84b418a8c81cb48bc8e896f86bdc78",
+    "hash_verified": true,
+    "bytes": 18275,
+    "sha256": "bd607591e7d31980d828762bf4ab01fd7e84b418a8c81cb48bc8e896f86bdc78",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-uniform-shrinking-windows",
+    "line": 33104,
+    "expected_sha256": "c7329595d2f77c5f14fe0e68dd28204740c7faf1d3527981f2a4a05929cc4d26",
+    "hash_verified": true,
+    "bytes": 23629,
+    "sha256": "c7329595d2f77c5f14fe0e68dd28204740c7faf1d3527981f2a4a05929cc4d26",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-approximate-eigenoperator-addendum",
+    "line": 33784,
+    "expected_sha256": "8560a8f6ab447e18513f50a55618da9311c45cbfcd5d906c11782e08d786235e",
+    "hash_verified": true,
+    "bytes": 3864,
+    "sha256": "8560a8f6ab447e18513f50a55618da9311c45cbfcd5d906c11782e08d786235e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-sublinear-polynomial-obstruction",
+    "line": 33912,
+    "expected_sha256": "32a014694531ea01284a146334c223a22686de457970bb39e4a5fa39c109c618",
+    "hash_verified": true,
+    "bytes": 17416,
+    "sha256": "32a014694531ea01284a146334c223a22686de457970bb39e4a5fa39c109c618",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-quantitative-band-escape",
+    "line": 34517,
+    "expected_sha256": "9982f37ec0faa8e6628dcb8d80b18fdb1005f2c2af119727526634a5c941f54a",
+    "hash_verified": true,
+    "bytes": 13003,
+    "sha256": "9982f37ec0faa8e6628dcb8d80b18fdb1005f2c2af119727526634a5c941f54a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-explicit-linear-degree-corollary",
+    "line": 34993,
+    "expected_sha256": "227bf6ab1905006f57f54b30372419acb7f5db08c1a4b22f022f56f1d6097e52",
+    "hash_verified": true,
+    "bytes": 5967,
+    "sha256": "227bf6ab1905006f57f54b30372419acb7f5db08c1a4b22f022f56f1d6097e52",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-three-time-resonance-and-exact-recursion",
+    "line": 35217,
+    "expected_sha256": "8f6a660d4bb776c769aa7e96e7a4607609c7a44c06addb494764189e3ef1fbf2",
+    "hash_verified": true,
+    "bytes": 13650,
+    "sha256": "8f6a660d4bb776c769aa7e96e7a4607609c7a44c06addb494764189e3ef1fbf2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-sharp-microscopic-perturbation-threshold",
+    "line": 35696,
+    "expected_sha256": "ea39b0166a5308caa8c68d83ca4d744d2f404b0a9d5fe0eb2b98df5d5dc47ab0",
+    "hash_verified": true,
+    "bytes": 17603,
+    "sha256": "ea39b0166a5308caa8c68d83ca4d744d2f404b0a9d5fe0eb2b98df5d5dc47ab0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-sharp-stability-clock-addendum",
+    "line": 36189,
+    "expected_sha256": "f77baf9f94d8ed92c3b83abe88e042e16db31864b80a070ac69db5082da67e08",
+    "hash_verified": true,
+    "bytes": 5501,
+    "sha256": "f77baf9f94d8ed92c3b83abe88e042e16db31864b80a070ac69db5082da67e08",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-round8-proof-audit",
+    "line": 36361,
+    "expected_sha256": "be26dfd6c5d40ae9cfcfc98f00c0282c6e0ead458d259f4edf0e62c81e246237",
+    "hash_verified": true,
+    "bytes": 23597,
+    "sha256": "be26dfd6c5d40ae9cfcfc98f00c0282c6e0ead458d259f4edf0e62c81e246237",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-uniform-clifford-gap",
+    "line": 36691,
+    "expected_sha256": "64c08f2b11e395954ec52abb556ee6c6d74f92e5e8d3b6dd7a48aa9979ac18cd",
+    "hash_verified": true,
+    "bytes": 13849,
+    "sha256": "64c08f2b11e395954ec52abb556ee6c6d74f92e5e8d3b6dd7a48aa9979ac18cd",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-uniform-antiunitary-clifford-gap",
+    "line": 37066,
+    "expected_sha256": "0b077e2b9ac15b877fbe373977991531adbbe82747ff040cd849b9a329767c33",
+    "hash_verified": true,
+    "bytes": 14293,
+    "sha256": "0b077e2b9ac15b877fbe373977991531adbbe82747ff040cd849b9a329767c33",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-full-weight-cancellation",
+    "line": 37447,
+    "expected_sha256": "f1d755d9f7a91988b03562ee471db1d5ebb12389eda03a1763335698ba29830d",
+    "hash_verified": true,
+    "bytes": 11327,
+    "sha256": "f1d755d9f7a91988b03562ee471db1d5ebb12389eda03a1763335698ba29830d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-all-odd-endpoint-fibers",
+    "line": 37785,
+    "expected_sha256": "8a69e39f2f4d672a4c76d5ec7067656b0e5cc6b094b13c8f8a313076c4a3cb0d",
+    "hash_verified": true,
+    "bytes": 8015,
+    "sha256": "8a69e39f2f4d672a4c76d5ec7067656b0e5cc6b094b13c8f8a313076c4a3cb0d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-audit-uniform-self-overlap",
+    "line": 38033,
+    "expected_sha256": "33111324edb6f838823e7159d9994d6874fa5debc0b3093666ca88972eb03d37",
+    "hash_verified": true,
+    "bytes": 7985,
+    "sha256": "33111324edb6f838823e7159d9994d6874fa5debc0b3093666ca88972eb03d37",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-uniform-metaplectic-gap",
+    "line": 38288,
+    "expected_sha256": "9b10fa20685716aeaf308e3a892df58fbf949c68bc24372fe367ae663a18595b",
+    "hash_verified": true,
+    "bytes": 10454,
+    "sha256": "9b10fa20685716aeaf308e3a892df58fbf949c68bc24372fe367ae663a18595b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-weyl-audit-uniform-shrinking-windows",
+    "line": 38579,
+    "expected_sha256": "6e8c0d62252c7027c892b8d13239d80e31c9c28c844f9477a08c68fb6da54a02",
+    "hash_verified": true,
+    "bytes": 9856,
+    "sha256": "6e8c0d62252c7027c892b8d13239d80e31c9c28c844f9477a08c68fb6da54a02",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-weyl-polynomial-obstruction",
+    "line": 38826,
+    "expected_sha256": "4d7a730152f3c051b250d1f512877baedf87a22337eefe6ecb794444a27215e3",
+    "hash_verified": true,
+    "bytes": 9276,
+    "sha256": "4d7a730152f3c051b250d1f512877baedf87a22337eefe6ecb794444a27215e3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-audit-quantitative-band-escape",
+    "line": 39050,
+    "expected_sha256": "b175849933c31737ef41e9b01ce9cbafcd963835e9f3baffd016b0c0b39798fb",
+    "hash_verified": true,
+    "bytes": 10146,
+    "sha256": "b175849933c31737ef41e9b01ce9cbafcd963835e9f3baffd016b0c0b39798fb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-three-time-resonance",
+    "line": 39242,
+    "expected_sha256": "792f99160dfbc47714a86da08cb8ac2a480ae7d3a50180afd1359ae8923341e2",
+    "hash_verified": true,
+    "bytes": 9748,
+    "sha256": "792f99160dfbc47714a86da08cb8ac2a480ae7d3a50180afd1359ae8923341e2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-audit-sharp-perturbation-threshold",
+    "line": 39497,
+    "expected_sha256": "5b7268f1e4f3dacad67a67a1a54bd3b8817bb284122a1077619cb0a2685fa9c4",
+    "hash_verified": true,
+    "bytes": 11973,
+    "sha256": "5b7268f1e4f3dacad67a67a1a54bd3b8817bb284122a1077619cb0a2685fa9c4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-original-obstruction-audit",
+    "line": 39793,
+    "expected_sha256": "d14ac3f6ab63c08d5b89937a4caaddde84343d279a83cbcf96e7aa5d4aced854",
+    "hash_verified": true,
+    "bytes": 8271,
+    "sha256": "d14ac3f6ab63c08d5b89937a4caaddde84343d279a83cbcf96e7aa5d4aced854",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-literature-applicability-round8",
+    "line": 40010,
+    "expected_sha256": "b7505e748e537ce83ae11ab44f68dbd2a9e296ec41ce44ca671df6ea523129c2",
+    "hash_verified": true,
+    "bytes": 5820,
+    "sha256": "b7505e748e537ce83ae11ab44f68dbd2a9e296ec41ce44ca671df6ea523129c2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-round8-continuation-ledger",
+    "line": 40101,
+    "expected_sha256": "84469e7eb461cd3c18929424cf3bcdce8e1e6b525d8d077bf61a01adc7d652e7",
+    "hash_verified": true,
+    "bytes": 17507,
+    "sha256": "84469e7eb461cd3c18929424cf3bcdce8e1e6b525d8d077bf61a01adc7d652e7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-round8-research-checkpoint",
+    "line": 40328,
+    "expected_sha256": "b9b3fcae857efef9a832f356d78ad3875a940cd6adf49a0b331c495bd2fa4c8b",
+    "hash_verified": true,
+    "bytes": 3405,
+    "sha256": "b9b3fcae857efef9a832f356d78ad3875a940cd6adf49a0b331c495bd2fa4c8b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-full-kick-sign-check",
+    "line": 40393,
+    "expected_sha256": "82b53039ff731bd758f7d7b61c56e8ca5d4c5367f2840f1ae3caff4eba3f94ea",
+    "hash_verified": true,
+    "bytes": 3830,
+    "sha256": "82b53039ff731bd758f7d7b61c56e8ca5d4c5367f2840f1ae3caff4eba3f94ea",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-r8-return-three-time-exact-check",
+    "line": 40515,
+    "expected_sha256": "03959edadee28fb26adfffce2385b963f1918cc1b6a4ec61a85a4fc65f0f58a0",
+    "hash_verified": true,
+    "bytes": 3844,
+    "sha256": "03959edadee28fb26adfffce2385b963f1918cc1b6a4ec61a85a4fc65f0f58a0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-affine-reversal-coefficients-check",
+    "line": 40678,
+    "expected_sha256": "4a7328909be95183455f1163edaaeb23b5fa022c7872350bb870f53ffaaeb19f",
+    "hash_verified": true,
+    "bytes": 837,
+    "sha256": "4a7328909be95183455f1163edaaeb23b5fa022c7872350bb870f53ffaaeb19f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-affine-reversal-coefficients-check-result",
+    "line": 40714,
+    "expected_sha256": "82b3f2207d3251731d7c16e45d55a2d082d6dee5f7fd2d41aea159c5e8576521",
+    "hash_verified": true,
+    "bytes": 621,
+    "sha256": "82b3f2207d3251731d7c16e45d55a2d082d6dee5f7fd2d41aea159c5e8576521",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-exact-coefficients-check",
+    "line": 40745,
+    "expected_sha256": "44629232ceb2a9aca52500e299e55cf64bc7cb5e71bfe1b925af5832dbee417d",
+    "hash_verified": true,
+    "bytes": 798,
+    "sha256": "44629232ceb2a9aca52500e299e55cf64bc7cb5e71bfe1b925af5832dbee417d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-root-exact-coefficients-check-result",
+    "line": 40780,
+    "expected_sha256": "65ecc98b51befd3a17c36a90f75841b0ea0c9b92f454e771f5678ce8825a0c7e",
+    "hash_verified": true,
+    "bytes": 313,
+    "sha256": "65ecc98b51befd3a17c36a90f75841b0ea0c9b92f454e771f5678ce8825a0c7e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-round7-main-report",
+    "line": 40963,
+    "expected_sha256": "e1d724e8f996ff1245e4b9dbcfcb9436001b3a9f23e53d0af91d2952eb226223",
+    "hash_verified": true,
+    "bytes": 60244,
+    "sha256": "e1d724e8f996ff1245e4b9dbcfcb9436001b3a9f23e53d0af91d2952eb226223",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-uniform-stationary-dephasing",
+    "line": 42081,
+    "expected_sha256": "c2bf50a33a642b984afa7bfa83fdc0d28b8019c79d4f47121ab52adee5e53075",
+    "hash_verified": true,
+    "bytes": 25615,
+    "sha256": "c2bf50a33a642b984afa7bfa83fdc0d28b8019c79d4f47121ab52adee5e53075",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-all-fixed-powers-phase-separation",
+    "line": 42801,
+    "expected_sha256": "46982efaa581d322d4e82d5f5782ccf69f979a5a59adfb863dd40ef292205527",
+    "hash_verified": true,
+    "bytes": 28637,
+    "sha256": "46982efaa581d322d4e82d5f5782ccf69f979a5a59adfb863dd40ef292205527",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-quantitative-sheet-separation",
+    "line": 43576,
+    "expected_sha256": "3ae2af7e36c90fc2c1214315a1513936a09b6aa10fc150295ddfd4e8062cadbf",
+    "hash_verified": true,
+    "bytes": 7449,
+    "sha256": "3ae2af7e36c90fc2c1214315a1513936a09b6aa10fc150295ddfd4e8062cadbf",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-original-intensity-at-prescribed-phase",
+    "line": 43798,
+    "expected_sha256": "deea7755070222fdfca37d5c8f2721dc82b62afa34d56b18df614756308b5c63",
+    "hash_verified": true,
+    "bytes": 16359,
+    "sha256": "deea7755070222fdfca37d5c8f2721dc82b62afa34d56b18df614756308b5c63",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-original-full-cyclicity-laurent-unit",
+    "line": 44260,
+    "expected_sha256": "214c77697b087b6457a76272b0665072b7b6d7f1f72e5eca857876f2f3f9cf17",
+    "hash_verified": true,
+    "bytes": 12671,
+    "sha256": "214c77697b087b6457a76272b0665072b7b6d7f1f72e5eca857876f2f3f9cf17",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-original-two-endpoint-layers",
+    "line": 44611,
+    "expected_sha256": "905b6a795eb90fa5462cf2a3542804696ee6804ce0ef3387df78e609b1fd97e5",
+    "hash_verified": true,
+    "bytes": 21627,
+    "sha256": "905b6a795eb90fa5462cf2a3542804696ee6804ce0ef3387df78e609b1fd97e5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-original-every-power-minors",
+    "line": 45225,
+    "expected_sha256": "9d3503703b5a5b0df580bb1a2a42e58a0617c7de94c3b340ac26d9ec93d54a48",
+    "hash_verified": true,
+    "bytes": 10724,
+    "sha256": "9d3503703b5a5b0df580bb1a2a42e58a0617c7de94c3b340ac26d9ec93d54a48",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-original-all-odd-component-minors",
+    "line": 45549,
+    "expected_sha256": "edf0e6b09942cf9b6c0877dd533be3f866b6273a4483358a4c5d1f9768dbb39b",
+    "hash_verified": true,
+    "bytes": 9564,
+    "sha256": "edf0e6b09942cf9b6c0877dd533be3f866b6273a4483358a4c5d1f9768dbb39b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-schur-discriminant-identity",
+    "line": 45809,
+    "expected_sha256": "fc36418d779397802e481ad4383ee40460e19d27916f5b21b5da0f9ced9b9a33",
+    "hash_verified": true,
+    "bytes": 7412,
+    "sha256": "fc36418d779397802e481ad4383ee40460e19d27916f5b21b5da0f9ced9b9a33",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-flat-clock",
+    "line": 46047,
+    "expected_sha256": "8f8e4cdbcd5c6576eb6bb9ce976d7a29ae4e77a310271576719ee8e39ad9d0bd",
+    "hash_verified": true,
+    "bytes": 11890,
+    "sha256": "8f8e4cdbcd5c6576eb6bb9ce976d7a29ae4e77a310271576719ee8e39ad9d0bd",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-generic-microperturbation",
+    "line": 46455,
+    "expected_sha256": "1127ad366de39f1c9293bb54fa4fe9ca88183e3baf44d355262f031d73b6cb34",
+    "hash_verified": true,
+    "bytes": 25528,
+    "sha256": "1127ad366de39f1c9293bb54fa4fe9ca88183e3baf44d355262f031d73b6cb34",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-stationary-projection-countermodel",
+    "line": 46963,
+    "expected_sha256": "fd3e82d27c0bb78adff8093e7255a32a3d23d71c95e57b6e3132482cf5b9884d",
+    "hash_verified": true,
+    "bytes": 5773,
+    "sha256": "fd3e82d27c0bb78adff8093e7255a32a3d23d71c95e57b6e3132482cf5b9884d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-round7-proof-audit",
+    "line": 47161,
+    "expected_sha256": "96777152186fbce85f2a4eb6a7bf62eb93123005b9cef937fc31c0c890583938",
+    "hash_verified": true,
+    "bytes": 16781,
+    "sha256": "96777152186fbce85f2a4eb6a7bf62eb93123005b9cef937fc31c0c890583938",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-stationary-dephasing",
+    "line": 47408,
+    "expected_sha256": "e250e40e254ac47fecb0fa8252e4f87123781dfa2bd75ad961d8918035fa51f5",
+    "hash_verified": true,
+    "bytes": 22259,
+    "sha256": "e250e40e254ac47fecb0fa8252e4f87123781dfa2bd75ad961d8918035fa51f5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-all-fixed-powers",
+    "line": 47778,
+    "expected_sha256": "642e0735bec132681648a07b772a4c48c78231599d4415fc4da3c3af1edb6d5d",
+    "hash_verified": true,
+    "bytes": 28112,
+    "sha256": "642e0735bec132681648a07b772a4c48c78231599d4415fc4da3c3af1edb6d5d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-full-cyclicity",
+    "line": 48284,
+    "expected_sha256": "53c7574eee6fd640c7d82492146ed0b0b520e824150f673ec234b7b5b27946ee",
+    "hash_verified": true,
+    "bytes": 13253,
+    "sha256": "53c7574eee6fd640c7d82492146ed0b0b520e824150f673ec234b7b5b27946ee",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-original-intensity-jacobian-audit",
+    "line": 48464,
+    "expected_sha256": "bfc2e7f0a36d0354bd7c859a364f4a21f9796fe5ba6f63659fcf2773f29a620c",
+    "hash_verified": true,
+    "bytes": 12414,
+    "sha256": "bfc2e7f0a36d0354bd7c859a364f4a21f9796fe5ba6f63659fcf2773f29a620c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-original-every-power-minors-audit",
+    "line": 48897,
+    "expected_sha256": "e8fb0c39dea826c97e2358eead00d46657f9ad8d6151e936277e139a6df3ecea",
+    "hash_verified": true,
+    "bytes": 3765,
+    "sha256": "e8fb0c39dea826c97e2358eead00d46657f9ad8d6151e936277e139a6df3ecea",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-countermodel",
+    "line": 48999,
+    "expected_sha256": "6ebea61daab7c46fafa67d1212ecaee110cc08c348b933d1eda7ff5a5acd761a",
+    "hash_verified": true,
+    "bytes": 28839,
+    "sha256": "6ebea61daab7c46fafa67d1212ecaee110cc08c348b933d1eda7ff5a5acd761a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-physical-fixed-powers49",
+    "line": 49565,
+    "expected_sha256": "faf5712f14b5dd4a569627c3271ed58b87667d1955df12a140c302c3dac145eb",
+    "hash_verified": true,
+    "bytes": 34606,
+    "sha256": "faf5712f14b5dd4a569627c3271ed58b87667d1955df12a140c302c3dac145eb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-literature-applicability",
+    "line": 50409,
+    "expected_sha256": "06661a2ea69a4b4973a72e8f8ea328e76397d3c1a00ef48f1c85506a7a9963a4",
+    "hash_verified": true,
+    "bytes": 10658,
+    "sha256": "06661a2ea69a4b4973a72e8f8ea328e76397d3c1a00ef48f1c85506a7a9963a4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-round7-continuation-ledger",
+    "line": 50543,
+    "expected_sha256": "9aa08a06199b712601acc83c3fcef75b364f3ecc6f39bb1eee9c6a25c7043d21",
+    "hash_verified": true,
+    "bytes": 11802,
+    "sha256": "9aa08a06199b712601acc83c3fcef75b364f3ecc6f39bb1eee9c6a25c7043d21",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-round7-research-checkpoint",
+    "line": 50707,
+    "expected_sha256": "bc03dd1dfee5af46dd3b6510206a69d8b5fa47bc12f80ef35a6b591acf26cd8b",
+    "hash_verified": true,
+    "bytes": 3854,
+    "sha256": "bc03dd1dfee5af46dd3b6510206a69d8b5fa47bc12f80ef35a6b591acf26cd8b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-return-singer-research-checkpoint",
+    "line": 50769,
+    "expected_sha256": "4cb1e3c83c2384f66b94689460767bdaa31832be60f2036c2b2b44fd16711ae1",
+    "hash_verified": true,
+    "bytes": 7849,
+    "sha256": "4cb1e3c83c2384f66b94689460767bdaa31832be60f2036c2b2b44fd16711ae1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-all-fixed-powers-checks",
+    "line": 50943,
+    "expected_sha256": "6e0289187425ddcb295566a1b98df37b6389ef5c18c4333b23c559d0084a8816",
+    "hash_verified": true,
+    "bytes": 2547,
+    "sha256": "6e0289187425ddcb295566a1b98df37b6389ef5c18c4333b23c559d0084a8816",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-countermodel-checks",
+    "line": 51006,
+    "expected_sha256": "7eb286ea14bd946ac4518d45a43cb7cc7dd5621b0dde171812e64868ba815b8a",
+    "hash_verified": true,
+    "bytes": 1956,
+    "sha256": "7eb286ea14bd946ac4518d45a43cb7cc7dd5621b0dde171812e64868ba815b8a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-physical-fixed-powers49-checks",
+    "line": 51062,
+    "expected_sha256": "35f5d75daad5dfc0b328ebf915045941fa94ec259783bd339a9a7e9b8a76d374",
+    "hash_verified": true,
+    "bytes": 2964,
+    "sha256": "35f5d75daad5dfc0b328ebf915045941fa94ec259783bd339a9a7e9b8a76d374",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-stationary-dephasing-checks",
+    "line": 51147,
+    "expected_sha256": "58a6f5044838de401ab1e02bc37a6948214eb45e63c88b9153e9433a8c7ec1c8",
+    "hash_verified": true,
+    "bytes": 1767,
+    "sha256": "58a6f5044838de401ab1e02bc37a6948214eb45e63c88b9153e9433a8c7ec1c8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-all-fixed-powers-checks",
+    "line": 51195,
+    "expected_sha256": "e03e90c4ff8291279eee4671fd89cba9103399fef3bf4b56e4aea0f69a03f0d9",
+    "hash_verified": true,
+    "bytes": 11841,
+    "sha256": "e03e90c4ff8291279eee4671fd89cba9103399fef3bf4b56e4aea0f69a03f0d9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-countermodel-checks",
+    "line": 51500,
+    "expected_sha256": "f0cd9841244806cd11ac9b8f7e62371b36245a3a25220e41c3a3dea46ddc24af",
+    "hash_verified": true,
+    "bytes": 8862,
+    "sha256": "f0cd9841244806cd11ac9b8f7e62371b36245a3a25220e41c3a3dea46ddc24af",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-physical-fixed-powers49-checks",
+    "line": 51748,
+    "expected_sha256": "76155ec26d0675f8d9b773d60d991a7fb580aac09fd602f34b577f28442721b1",
+    "hash_verified": true,
+    "bytes": 14683,
+    "sha256": "76155ec26d0675f8d9b773d60d991a7fb580aac09fd602f34b577f28442721b1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-r7-audit-stationary-dephasing-checks",
+    "line": 52116,
+    "expected_sha256": "1fa3708987334148dd8070a968b514d9aa6fdd4940d6b7fc275e4d4a71888098",
+    "hash_verified": true,
+    "bytes": 9529,
+    "sha256": "1fa3708987334148dd8070a968b514d9aa6fdd4940d6b7fc275e4d4a71888098",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-exact-checks",
+    "line": 52397,
+    "expected_sha256": "95bbf4f1fda813e32a32fdd4d3d00619205a8cb05b111f2561fd345be062682e",
+    "hash_verified": true,
+    "bytes": 11849,
+    "sha256": "95bbf4f1fda813e32a32fdd4d3d00619205a8cb05b111f2561fd345be062682e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-exact-checks-manifest",
+    "line": 52677,
+    "expected_sha256": "639bcce748301c283d8b2116bc75b07fa9e61b4f4565c37ae01b20bd02c12ee7",
+    "hash_verified": true,
+    "bytes": 3756,
+    "sha256": "639bcce748301c283d8b2116bc75b07fa9e61b4f4565c37ae01b20bd02c12ee7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-exact-checks-result",
+    "line": 52807,
+    "expected_sha256": "14b149e51d9e822189c440aa7119ad0588ccd8933ea06bdcfab94899fa48612b",
+    "hash_verified": true,
+    "bytes": 1181,
+    "sha256": "14b149e51d9e822189c440aa7119ad0588ccd8933ea06bdcfab94899fa48612b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-symbolic-checks",
+    "line": 52871,
+    "expected_sha256": "9336cf6dd639881cb46ea153bbeaa3a208cde3080e697378f559b229faf702f1",
+    "hash_verified": true,
+    "bytes": 873,
+    "sha256": "9336cf6dd639881cb46ea153bbeaa3a208cde3080e697378f559b229faf702f1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-root-unipotent-symbolic-checks-record",
+    "line": 52908,
+    "expected_sha256": "40e5cdbff392c91df579a1fd01467a67d3ed1f20fe79765905c168479ff4a7b4",
+    "hash_verified": true,
+    "bytes": 2075,
+    "sha256": "40e5cdbff392c91df579a1fd01467a67d3ed1f20fe79765905c168479ff4a7b4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-round6-main-report",
+    "line": 53070,
+    "expected_sha256": "473b7b5b700a8ff17801eb9ca422c5949be15d0551c252e0b4035997db54b2bf",
+    "hash_verified": true,
+    "bytes": 67043,
+    "sha256": "473b7b5b700a8ff17801eb9ca422c5949be15d0551c252e0b4035997db54b2bf",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-original-gap2-combined",
+    "line": 54248,
+    "expected_sha256": "f764a95fddaccebfe5a84c231279e0c6036b9495cea9c0d752aa7e6fe1cf9ed2",
+    "hash_verified": true,
+    "bytes": 5835,
+    "sha256": "f764a95fddaccebfe5a84c231279e0c6036b9495cea9c0d752aa7e6fe1cf9ed2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-fixed-powers-49",
+    "line": 54428,
+    "expected_sha256": "3f51c6d7de5b559c28271c72ae62c2f2d331f9c606b24a84cdab80751339d019",
+    "hash_verified": true,
+    "bytes": 17180,
+    "sha256": "3f51c6d7de5b559c28271c72ae62c2f2d331f9c606b24a84cdab80751339d019",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-twostep-physical-mixing",
+    "line": 54876,
+    "expected_sha256": "7d502a881f133743cd3d28afd6ac373351fd4a12f23e8292c59895358f1e747b",
+    "hash_verified": true,
+    "bytes": 25950,
+    "sha256": "7d502a881f133743cd3d28afd6ac373351fd4a12f23e8292c59895358f1e747b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-twostep-gauss",
+    "line": 55565,
+    "expected_sha256": "18c580433804f46443d565aed27517bdd5e809017b115c8fb4bc081a215a53da",
+    "hash_verified": true,
+    "bytes": 11979,
+    "sha256": "18c580433804f46443d565aed27517bdd5e809017b115c8fb4bc081a215a53da",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-minami-band-tail",
+    "line": 55886,
+    "expected_sha256": "99a6c1b0b6c63a132be7ff1a43c7dbed1cd8321c181ee416f9c61f6601da2032",
+    "hash_verified": true,
+    "bytes": 14967,
+    "sha256": "99a6c1b0b6c63a132be7ff1a43c7dbed1cd8321c181ee416f9c61f6601da2032",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-rational-inner-kac",
+    "line": 56352,
+    "expected_sha256": "4bf2d0ef9ea39227cb0af38569df5432722799b32f322811a969a2ac85323e6a",
+    "hash_verified": true,
+    "bytes": 17672,
+    "sha256": "4bf2d0ef9ea39227cb0af38569df5432722799b32f322811a969a2ac85323e6a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-all-orders-weighted-occupation-bound",
+    "line": 56743,
+    "expected_sha256": "843da22fde6f586adbbdec0fe51b17875456477ed0f78dcb4f5b0115e87f919d",
+    "hash_verified": true,
+    "bytes": 6492,
+    "sha256": "843da22fde6f586adbbdec0fe51b17875456477ed0f78dcb4f5b0115e87f919d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-isolated-cross-occupation",
+    "line": 56939,
+    "expected_sha256": "20585b313f25044ae8cab78bdd70edeb3922356788d912666d3f690e5676e68f",
+    "hash_verified": true,
+    "bytes": 20449,
+    "sha256": "20585b313f25044ae8cab78bdd70edeb3922356788d912666d3f690e5676e68f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-phasechaos-isolated-all-orders",
+    "line": 57462,
+    "expected_sha256": "88bc04559c4961bb0441984b1f9df5fc1d0ab2f99349d603e171a67bac7bebbe",
+    "hash_verified": true,
+    "bytes": 22401,
+    "sha256": "88bc04559c4961bb0441984b1f9df5fc1d0ab2f99349d603e171a67bac7bebbe",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-bounded-runs-raw49",
+    "line": 58135,
+    "expected_sha256": "631663c9639c286510125df4806b833d4cfb8344a7a9d0fc36d6c647e83bc9e8",
+    "hash_verified": true,
+    "bytes": 14573,
+    "sha256": "631663c9639c286510125df4806b833d4cfb8344a7a9d0fc36d6c647e83bc9e8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-renewal-long-return-obstruction",
+    "line": 58596,
+    "expected_sha256": "95ea7e37c46b840854853c934eebecbd51ac1cb305d0200a283e68b9f7c3d0b2",
+    "hash_verified": true,
+    "bytes": 21455,
+    "sha256": "95ea7e37c46b840854853c934eebecbd51ac1cb305d0200a283e68b9f7c3d0b2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-principal-minors-generic-phase-returns",
+    "line": 59177,
+    "expected_sha256": "2f5d4896e461fe33cf6f8ed25c71d994a4d2842206f48f5fba7bf75189f9d0f8",
+    "hash_verified": true,
+    "bytes": 17504,
+    "sha256": "2f5d4896e461fe33cf6f8ed25c71d994a4d2842206f48f5fba7bf75189f9d0f8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-principal-minors-jacobian",
+    "line": 59640,
+    "expected_sha256": "73ebb8fb57c706a6eedf2ca1c40dd65c1ceb35890d49e7027cd987d3b5dd01ec",
+    "hash_verified": true,
+    "bytes": 7237,
+    "sha256": "73ebb8fb57c706a6eedf2ca1c40dd65c1ceb35890d49e7027cd987d3b5dd01ec",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-higher-block-involution",
+    "line": 59872,
+    "expected_sha256": "4a59d67a8196ae73555f6bea28b70c5566c76f0c4d24a160eb87e809a28b79ab",
+    "hash_verified": true,
+    "bytes": 20103,
+    "sha256": "4a59d67a8196ae73555f6bea28b70c5566c76f0c4d24a160eb87e809a28b79ab",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-literature-applicability",
+    "line": 60453,
+    "expected_sha256": "c063192b411737eb0823a99913e898d4ca2e551fca647163408425a09c1699a3",
+    "hash_verified": true,
+    "bytes": 5328,
+    "sha256": "c063192b411737eb0823a99913e898d4ca2e551fca647163408425a09c1699a3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-round6-continuation-ledger",
+    "line": 60581,
+    "expected_sha256": "aea47f2b1dd88b85d4168a87063293d22d479787222b845765caa19754ab90c7",
+    "hash_verified": true,
+    "bytes": 14102,
+    "sha256": "aea47f2b1dd88b85d4168a87063293d22d479787222b845765caa19754ab90c7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-higher-block-exact-checks-result",
+    "line": 60757,
+    "expected_sha256": "fc458745e3ae4cf9224c313d4d83bf021216fa3d09cb419d3564f5332dbc3e71",
+    "hash_verified": true,
+    "bytes": 2480,
+    "sha256": "fc458745e3ae4cf9224c313d4d83bf021216fa3d09cb419d3564f5332dbc3e71",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-phasechaos-audit-weighted-occupation",
+    "line": 60915,
+    "expected_sha256": "624b63471ed09768bf88c353b26fb8f9d049dac1b0b6765cac0e0b0825729c1e",
+    "hash_verified": true,
+    "bytes": 4332,
+    "sha256": "624b63471ed09768bf88c353b26fb8f9d049dac1b0b6765cac0e0b0825729c1e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-phasechaos-exact-checks-result",
+    "line": 61037,
+    "expected_sha256": "791d8b6fe0e1b7c02597ce64a1d5613e5e947b79433bcdbedc88ae328108e82c",
+    "hash_verified": true,
+    "bytes": 6176,
+    "sha256": "791d8b6fe0e1b7c02597ce64a1d5613e5e947b79433bcdbedc88ae328108e82c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-renewal-exact-checks-result",
+    "line": 61309,
+    "expected_sha256": "10f7187346a1995e392de72fd48f213cc17481194d6bb324140aed1dfa77ae33",
+    "hash_verified": true,
+    "bytes": 11136,
+    "sha256": "10f7187346a1995e392de72fd48f213cc17481194d6bb324140aed1dfa77ae33",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-bounded-runs-raw49",
+    "line": 61891,
+    "expected_sha256": "251ad2ac4e4bcc96a6b79b30cd3a1c56f222f4390f5aaca2d94522fba55db7a1",
+    "hash_verified": true,
+    "bytes": 11149,
+    "sha256": "251ad2ac4e4bcc96a6b79b30cd3a1c56f222f4390f5aaca2d94522fba55db7a1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-complementary-pair-remainder",
+    "line": 62173,
+    "expected_sha256": "8036002a27161239c15cdf22ae0393a5b9316fcbab8b6b3ffef6c6235c0e7b09",
+    "hash_verified": true,
+    "bytes": 4361,
+    "sha256": "8036002a27161239c15cdf22ae0393a5b9316fcbab8b6b3ffef6c6235c0e7b09",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-fixed-powers-49",
+    "line": 62318,
+    "expected_sha256": "0953ee6eb3c665fe667fabcb094651eb7284f6250ebfa2c6d535bd98f7da9b61",
+    "hash_verified": true,
+    "bytes": 19109,
+    "sha256": "0953ee6eb3c665fe667fabcb094651eb7284f6250ebfa2c6d535bd98f7da9b61",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-generic-phase-returns",
+    "line": 62769,
+    "expected_sha256": "618bda8ed21be5e1fc2db73a401db5133d4659eab4b6c33b4313fb57e8ccfdca",
+    "hash_verified": true,
+    "bytes": 17463,
+    "sha256": "618bda8ed21be5e1fc2db73a401db5133d4659eab4b6c33b4313fb57e8ccfdca",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-original-isolated",
+    "line": 63078,
+    "expected_sha256": "9b0af6c7c2b04ce183ac7f107de50e928d79aa2bc542631db7278e7aa97d9616",
+    "hash_verified": true,
+    "bytes": 10714,
+    "sha256": "9b0af6c7c2b04ce183ac7f107de50e928d79aa2bc542631db7278e7aa97d9616",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-audit-twostep-physical",
+    "line": 63270,
+    "expected_sha256": "39b42b5d3706d72de7dfcf7f626334413b156bad8343fba306d5cf929727f9df",
+    "hash_verified": true,
+    "bytes": 22191,
+    "sha256": "39b42b5d3706d72de7dfcf7f626334413b156bad8343fba306d5cf929727f9df",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-twostep-gauss-verification",
+    "line": 63685,
+    "expected_sha256": "524441a142da1a66c52f50e0269a54c7d6b7104364d1cd31190d4028af99e096",
+    "hash_verified": true,
+    "bytes": 3349,
+    "sha256": "524441a142da1a66c52f50e0269a54c7d6b7104364d1cd31190d4028af99e096",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-audit-combined-gap2",
+    "line": 63747,
+    "expected_sha256": "619b5ccb97f5d713eafb123555df9d4f768e391a78ac6c0946eaa6d0ab53cacd",
+    "hash_verified": true,
+    "bytes": 9949,
+    "sha256": "619b5ccb97f5d713eafb123555df9d4f768e391a78ac6c0946eaa6d0ab53cacd",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-audit-renewal-geometry",
+    "line": 64041,
+    "expected_sha256": "ce222733017771f6d2ae0da2ad3725df48613aa9e3ca757ed83ee84c735086d8",
+    "hash_verified": true,
+    "bytes": 9749,
+    "sha256": "ce222733017771f6d2ae0da2ad3725df48613aa9e3ca757ed83ee84c735086d8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-audit-occupation-minami",
+    "line": 64306,
+    "expected_sha256": "b838ab9ccf7bddd7a779a9a864b236cb0b37030c3b7f3ade667e44ab1a9740e0",
+    "hash_verified": true,
+    "bytes": 5483,
+    "sha256": "b838ab9ccf7bddd7a779a9a864b236cb0b37030c3b7f3ade667e44ab1a9740e0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-audit-phase-concentration",
+    "line": 64445,
+    "expected_sha256": "be8b3f2d4cd1bc62ea6ab8385f5087c945d0ae861c3ea2181af0d41962994aec",
+    "hash_verified": true,
+    "bytes": 5988,
+    "sha256": "be8b3f2d4cd1bc62ea6ab8385f5087c945d0ae861c3ea2181af0d41962994aec",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-root-audit-rational-inner-and-dense-involution",
+    "line": 64593,
+    "expected_sha256": "424e57074b1fe33005be0b9efc9820a6cf4ef103e151c60900e9ba71250e1ca4",
+    "hash_verified": true,
+    "bytes": 8164,
+    "sha256": "424e57074b1fe33005be0b9efc9820a6cf4ef103e151c60900e9ba71250e1ca4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-higher-block-exact-checks",
+    "line": 64790,
+    "expected_sha256": "42f28a08f21b77b372c955eca9c772c4af749cb71c6456c6e44a9330d9d0d3a4",
+    "hash_verified": true,
+    "bytes": 14792,
+    "sha256": "42f28a08f21b77b372c955eca9c772c4af749cb71c6456c6e44a9330d9d0d3a4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-phasechaos-exact-checks",
+    "line": 65191,
+    "expected_sha256": "8bf4679a43f0acb8a9795939db5a1f4af6dd42ecffe597eb87f4d8763a9b6f34",
+    "hash_verified": true,
+    "bytes": 11342,
+    "sha256": "8bf4679a43f0acb8a9795939db5a1f4af6dd42ecffe597eb87f4d8763a9b6f34",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-dense-renewal-exact-checks",
+    "line": 65509,
+    "expected_sha256": "ab9ad146177ec37e2e25fc1d90cfe2fa22d2d3b5c951b4011ac6d179dab6d4bf",
+    "hash_verified": true,
+    "bytes": 15639,
+    "sha256": "ab9ad146177ec37e2e25fc1d90cfe2fa22d2d3b5c951b4011ac6d179dab6d4bf",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-twostep-gauss-check",
+    "line": 65983,
+    "expected_sha256": "9a3c060fe0baacb9a262d6ef751e40e2830bd5b35b8a725c894d5ee4806b0f4b",
+    "hash_verified": true,
+    "bytes": 2192,
+    "sha256": "9a3c060fe0baacb9a262d6ef751e40e2830bd5b35b8a725c894d5ee4806b0f4b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-twostep-gauss-check",
+    "line": 66099,
+    "expected_sha256": "0ba133e7ecf23385756a63c3a916fef03da07db92f659c306d403b8e09edcc03",
+    "hash_verified": true,
+    "bytes": 7857,
+    "sha256": "0ba133e7ecf23385756a63c3a916fef03da07db92f659c306d403b8e09edcc03",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-occupation-twostep-gauss-check",
+    "line": 66342,
+    "expected_sha256": "9c3d6a8b0713d615c09fc0acc9a24e50b94ca62ad5fcafa2c07406cf7c921d3d",
+    "hash_verified": true,
+    "bytes": 3650,
+    "sha256": "9c3d6a8b0713d615c09fc0acc9a24e50b94ca62ad5fcafa2c07406cf7c921d3d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-fixed-powers-49-checks",
+    "line": 66436,
+    "expected_sha256": "7bc426cd2a9c63f38758761accb5271b7def5ceb914167782b0dddf02c0be7f7",
+    "hash_verified": true,
+    "bytes": 4111,
+    "sha256": "7bc426cd2a9c63f38758761accb5271b7def5ceb914167782b0dddf02c0be7f7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-isolated-exact-checks",
+    "line": 66567,
+    "expected_sha256": "40d58f38f961bf0bdaf8605070ff504c737c3da4a71433c8fd772366ee98f49f",
+    "hash_verified": true,
+    "bytes": 11566,
+    "sha256": "40d58f38f961bf0bdaf8605070ff504c737c3da4a71433c8fd772366ee98f49f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-r6-original-twostep-exact-checks",
+    "line": 66937,
+    "expected_sha256": "9274ae69e39e18af6bca91990298eb58a9dc67b3d0cf5e6183acfbb4eecb57d4",
+    "hash_verified": true,
+    "bytes": 9670,
+    "sha256": "9274ae69e39e18af6bca91990298eb58a9dc67b3d0cf5e6183acfbb4eecb57d4",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "current-exposition",
+    "line": 67352,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 65542,
+    "sha256": "62fcf2e179e9329c11f3a989862d55c118efb3b048c59caf33080290b4f3431e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "last-addendum",
+    "line": 68672,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 16025,
+    "sha256": "9a3f91bba6e8927c4cfd0ff1f522ac3ba1c3510da60d2b3876368df9fd6698ec",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-01",
+    "line": 69103,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 13684,
+    "sha256": "dad2f994866bef9579213b24b6d364daae6f7b5397c7c52534b27d31a19df9fb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-02",
+    "line": 69386,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 16117,
+    "sha256": "ade233600309a6139e993da1e1a94af80f7758e7d09c235c9e6a8e2c53dfc1f2",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-03",
+    "line": 69759,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12038,
+    "sha256": "dd5e6ba1ad39dd4db6c0734842174caf274f1808001e9aeb046c53d59b083607",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-04",
+    "line": 70104,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 6124,
+    "sha256": "75b0e479c55c5e68bb2caa4e989d46c386bd5b3ce850c326fe630897251c965c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-05",
+    "line": 70288,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 22635,
+    "sha256": "b6ece0ed334310649a863f598ed02f1e18c4f65156f8ce92bd562e052a935eca",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-06",
+    "line": 70736,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 14144,
+    "sha256": "265053d50e4bd7c492e5a780c6740ce3eaacfa36eaa9c62bc8e864013cbbe1df",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-07",
+    "line": 71113,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12784,
+    "sha256": "97eca5f0f58c1db2eff1654a89c116c505355bbcedb0b5f32f66186b9e6eb039",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-08",
+    "line": 71391,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 4549,
+    "sha256": "43b30b3e101dcddf11dbd103e4db4fc36c0c69227f04e458ad1871fcfbb987e6",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-09",
+    "line": 71512,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 4036,
+    "sha256": "2659e805b28e43962f299759f259f1e110ad1443494b7ff6638a02235fbf24b5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-10",
+    "line": 71647,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 9152,
+    "sha256": "45248030621aeb325cc97399e650ad14356dca7b9e5893610ff1e136956f823e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-11",
+    "line": 71869,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 10811,
+    "sha256": "3b4c555e4e967a34b034772c23097645ea1d473f166360b17946b8aa7c986c03",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-12",
+    "line": 72159,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12950,
+    "sha256": "e881d32eecaabfac02fcfaab62a82e69f84c372b3413ee539c304336c333f9a5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-13",
+    "line": 72475,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 9959,
+    "sha256": "71ecacf5fd841ce275b4ea8aca4c1b335c93331f35b17a9c57fda585566e2b02",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-14",
+    "line": 72842,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 18913,
+    "sha256": "517253ef22c8710341d87619d8d3d47b4ccbbea14c5334b96e4042abb7d8598b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-15",
+    "line": 73506,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 16428,
+    "sha256": "0eb3a56c9c8730dfa77a9d479b66010dcb7a0b96b8e2905cf95b18f57f7f74ae",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-16",
+    "line": 74012,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 13081,
+    "sha256": "2272eab3f7d9a41d46e67bf8ea9adb8ab2e58a4432c3c4bb0e6f93a22c81102d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-17",
+    "line": 74353,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 10446,
+    "sha256": "72ce5b7e2b076dcb3fc43233d8b65b6e7ea091c26a66c7003cdf0e29bfd0c806",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-18",
+    "line": 74532,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 5442,
+    "sha256": "bd4865a4cbc3a80bf2e39c6bd5a243c2762cdadf1374153858e962488579e5e0",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-19",
+    "line": 74728,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12372,
+    "sha256": "a39bb0d3bba5d7d209153fefcc96247143c2b00c3cdd595598d812d7c32c3407",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-20",
+    "line": 75151,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 4767,
+    "sha256": "e1ec57524bb765aceeabf96ee41d299d0951bad76a1c906d665defde34c0658c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-21",
+    "line": 75280,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 9993,
+    "sha256": "063eabcf99e4da895f1359aca92facd3aaf6e38f98b5321b5e6ff884af0b21f7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-22",
+    "line": 75421,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 9807,
+    "sha256": "08789982ce9e17833a7faa192e5727c534a798bf0acb454895fa29776f373aa8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-23",
+    "line": 75807,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 4432,
+    "sha256": "9e8a578a4889ab91b0d32c528e9f09bdd3ec0983a4b0d1177d4ef48c7b3d7cb8",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-24",
+    "line": 75959,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 21011,
+    "sha256": "d40cef819f2fd16aaab2e9ffa306031704893dde23ecc578e66db47ded4aadce",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-25",
+    "line": 76543,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12115,
+    "sha256": "21a46d1afaedf24b8a63026bf9602f06bfcab3b190a4d56229398645ba9f2083",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-26",
+    "line": 76860,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 12748,
+    "sha256": "2a06a4987f5c26c1190666a4e9584905b647545aa4a51fc503cc96deb62465eb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-27",
+    "line": 77188,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 11661,
+    "sha256": "cd92c82e2b953bddc2b00d5d77b08e6524090ce7812941fa3da1d1a194cb4349",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-28",
+    "line": 77539,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 20672,
+    "sha256": "61c249f907b7e6710cb27d8d06aba003a87f19b2dac33ba302098f80502e4da9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-29",
+    "line": 78190,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 23600,
+    "sha256": "17e3d746da8fe2c3d8fe33512fa16e07245317776562d5c888d20d36ea4b1ec9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-30",
+    "line": 78900,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 24136,
+    "sha256": "cf5ae55c6627cd9e406c8f2475284f493095c7557f8fbfbfdafacbecfc4a8b43",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-31",
+    "line": 79593,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 6146,
+    "sha256": "1e05ea8a8281b410e7d0a18d8dd0c72333af1dd07ccd1afe8bcebe53f06f05b1",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-32",
+    "line": 79803,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 13195,
+    "sha256": "d08bfacda4a1bf9bd6e7ed956d249292f4a2e63c5bc1e73312b99132dd528357",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-33",
+    "line": 80219,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 6037,
+    "sha256": "a855055ebcd5602f04756a0be7a8b215d5c8e270c559500d223f1779616cf56c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-34",
+    "line": 80355,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 6191,
+    "sha256": "230e4b777ae4369e0c420152dcb441d10467aba9aa3d83167715ba5f9768abfb",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-35",
+    "line": 80519,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 15433,
+    "sha256": "57e28c2c79f0317fbd2ecd920bc9afdd136fe971f64d5ef0633d384611e0de1f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-36",
+    "line": 80942,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 13722,
+    "sha256": "cd6648696d09a2889f8679eb489320bf993d44d51a3add4b254a31a0b4645a89",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-37",
+    "line": 81381,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 9518,
+    "sha256": "97182fe3bffb9d220d98c49e22c6dc3d6ca1b292a1199924e110209e3f96f0bc",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-38",
+    "line": 81728,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 1978,
+    "sha256": "00f6518e99e23913a1eca6f8e233059ce8d1baafa3b00a8919bccbb0fc62e422",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-39",
+    "line": 81792,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 2928,
+    "sha256": "ce9080774eb70708cf6a055e29209815ed5e580868bc9b00b49121b7babd729f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-40",
+    "line": 81888,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 1962,
+    "sha256": "a5ed4cd6fab4e958296d01c31cd459cee438f1e0121be63459522dd08e951eaf",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-41",
+    "line": 81964,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 5968,
+    "sha256": "f9c825d6ec85190f73f9f29f364b31269698575472e9d55ce4d544fb55a6b18b",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-42",
+    "line": 82149,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 4834,
+    "sha256": "f08cfd296954dba2072dc43da446c56de2e124ac2f1024013d43bec6ae0f7cb9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-43",
+    "line": 82354,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 3543,
+    "sha256": "f172ed4284296b4ef4e77bdfce0183a717c1e8b80588123cb6c2ff6023b49352",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-44",
+    "line": 82489,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 3100,
+    "sha256": "b47d7812cfa76eb9a2cdf8cbd949c1e0b9b96067cbb4934b9c9e18bcb64ab72a",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-45",
+    "line": 82617,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 2963,
+    "sha256": "2568673061828fcf9244f7dcf7a8313677de5f9b32af1a329ee2a66a050d13e9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-46",
+    "line": 82712,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 3496,
+    "sha256": "2b64af654ed69663565f72737c69d3c3fbbb8605fa9a3b37aae8be9cf46caa36",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-47",
+    "line": 82828,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 8272,
+    "sha256": "4021cf4f386e3a1956ee7d2d16e9ca53e59e9fc63651bce7873f4b6c4f895a85",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-48",
+    "line": 83095,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 2419,
+    "sha256": "86ba075639e4f4ca715d814122b51618c729c36f1c73361f28885393af08d733",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-49",
+    "line": 83181,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 10188,
+    "sha256": "d0451863c975cce449a3fb4749ea60266797a5e8be256a1d18885a368347eac7",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-50",
+    "line": 83481,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 7414,
+    "sha256": "386d7310cfdec9f6248662c37e0f27a4d348ac2b1f21c945c671fb977cbbf8df",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-51",
+    "line": 83723,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 1844,
+    "sha256": "a312d227986549604ed48a09023ee4cf0b07ab0576e0f680b59dfa12ae0ad470",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-52",
+    "line": 83801,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 1886,
+    "sha256": "c915fff0f2491df173fae5a37650f8a6a4da33c7b0c59a0059ffca9929c06351",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "round5-source-53",
+    "line": 83885,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 617,
+    "sha256": "49b2eb7cbb39a225e2c760606374729176248efdea9895f128b7b32a6bf61758",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "historical-book-1",
+    "line": 83929,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 3737743,
+    "sha256": "9a0db3a1b9f4be92ad8489bcff38ddc9b367083ff964956c9dd3de1cd3bcda3c",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "historical-book-2",
+    "line": 223876,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 644651,
+    "sha256": "40fe2eff7caa1ad73a4df97623988ecb70b973f86535cf9a4cca39d245bbd98e",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "builder-source",
+    "line": 238938,
+    "expected_sha256": null,
+    "hash_verified": false,
+    "bytes": 21377,
+    "sha256": "0d5784187830817b9329ebaaa0b701efc8c51f7a9e0946c007e704125ad3e36d",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r6-source-build-spectral-research-master-round6",
+    "line": 239593,
+    "expected_sha256": "cf38361a50afa79c1f2cc9a5b3a77543f0a30f90f9ae31d8362995ce663ca2f3",
+    "hash_verified": true,
+    "bytes": 13041,
+    "sha256": "cf38361a50afa79c1f2cc9a5b3a77543f0a30f90f9ae31d8362995ce663ca2f3",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r7-source-build-spectral-research-master-round7",
+    "line": 240113,
+    "expected_sha256": "8051e78cbc0b08b497bb005aa561a7b7dac982f01638418e14ae06fb9532d0a9",
+    "hash_verified": true,
+    "bytes": 15624,
+    "sha256": "8051e78cbc0b08b497bb005aa561a7b7dac982f01638418e14ae06fb9532d0a9",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r8-source-build-spectral-research-master-round8",
+    "line": 240657,
+    "expected_sha256": "d3be6a9e3d98acba774f5931bb025f202a19150de4fbdfbf9ddf9780b11f47c5",
+    "hash_verified": true,
+    "bytes": 16571,
+    "sha256": "d3be6a9e3d98acba774f5931bb025f202a19150de4fbdfbf9ddf9780b11f47c5",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r9-source-build-spectral-research-master-round9",
+    "line": 241100,
+    "expected_sha256": "4e29bd699240f131d35904fc769dd9b5f0834c1e9a5a2f89f016f6710ed76dfc",
+    "hash_verified": true,
+    "bytes": 16419,
+    "sha256": "4e29bd699240f131d35904fc769dd9b5f0834c1e9a5a2f89f016f6710ed76dfc",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r10-source-build-spectral-research-master-round10",
+    "line": 241538,
+    "expected_sha256": "20dccb154f2f1aa1ba301e63c9a3708f5544197f1aa73e762acdee7cba895eac",
+    "hash_verified": true,
+    "bytes": 16770,
+    "sha256": "20dccb154f2f1aa1ba301e63c9a3708f5544197f1aa73e762acdee7cba895eac",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r11-source-build-spectral-research-master-round11-py",
+    "line": 242052,
+    "expected_sha256": "48ea6ec55ee8d623baacb915089b3e31eb60c9fb9d9f778681eba6f8280eb68f",
+    "hash_verified": true,
+    "bytes": 14618,
+    "sha256": "48ea6ec55ee8d623baacb915089b3e31eb60c9fb9d9f778681eba6f8280eb68f",
+    "review_status": "not mathematically reviewed in this pass"
+  },
+  {
+    "id": "r12-source-build-spectral-research-master-round12-py",
+    "line": 242518,
+    "expected_sha256": "3b3b38fca7d798f13f36e4dbddfb70785d8a147834d319858760044893007bc7",
+    "hash_verified": true,
+    "bytes": 15710,
+    "sha256": "3b3b38fca7d798f13f36e4dbddfb70785d8a147834d319858760044893007bc7",
+    "review_status": "not mathematically reviewed in this pass"
+  }
+]

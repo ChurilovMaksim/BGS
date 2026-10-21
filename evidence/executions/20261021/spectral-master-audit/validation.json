@@ -1,0 +1,24 @@
+{
+  "finite_checker_exit_code": 0,
+  "optimized_python_output_reproduced": true,
+  "registry_render_check": "passed",
+  "research_navigation_check": "passed",
+  "finite_orbit_sync_check": "passed",
+  "manuscript": {
+    "pass_exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "pdf_bytes": 2366080,
+    "pdf_sha256": "a787dad33ffa32afe0a4612a42c4e80c8e4e99a4e3b5910da9068577b77d6bb6",
+    "pages": "320",
+    "new_section_render_exit_code": 0,
+    "new_section_overfull_boxes": 0,
+    "visual_review": "new section pages 315 and 316 rendered and visually checked",
+    "scope": "three contiguous pdflatex passes; final pdfinfo and pdftoppm succeeded; old manuscript overfull boxes outside new section remain",
+    "earlier_build_attempts": "An interrupted prior build left a truncated auxiliary file; fresh output directory and contiguous passes used for final validation."
+  },
+  "whole_repository_runtime_regression": "not repeated",
+  "whole_external_master_proof_review": "incomplete; see coverage.json"
+}

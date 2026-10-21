@@ -1,5 +1,14 @@
 # Mathematical proofs
 
+## Physical-kick bounds, 21 October 2026
+
+[Uniform trace decay and scalar-distance limits](physical_kick_trace_decay.md)
+(TRACE-106) and [all-order polynomial approximation with Pell alias limits](physical_trace_polynomial_approximation.md)
+(TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
+strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
+remains open. [Review scope](../record/spectral_master_audit_20261021.md).
+
+
 ## Circular-phase research, 19 October
 
 [Current theorem account](phase_ensemble_continuation_20261019.md) adopts the

@@ -1,0 +1,91 @@
+{
+  "schema": "bgs-spectral-master-review-v1",
+  "recorded_at_utc": "2026-10-21T15:09:45.199539+00:00",
+  "repository_base": "2f2a2ee937e66e5f11846f43a060273b4b08e106",
+  "master_sha256": "10b90c7d12668cd7327bcc08bda292f4c7d6cf82218ee95d5d4f7603fac86cef",
+  "master_bytes": 7941879,
+  "master_lines": 242811,
+  "included_blocks": 265,
+  "recognized_declared_hashes": 207,
+  "recognized_hashes_verified": 207,
+  "whole_manuscript_review_complete": false,
+  "review_provenance": "direct reconstruction and self-review; no new independent agent",
+  "new_results": [
+    "single-kick exponent strengthened from 1/25 to 1/9",
+    "polynomial norm-error transfer to every fixed factorial order"
+  ],
+  "asymptotic_theorem_computationally_verified": false,
+  "executions": [
+    {
+      "command": "python3 coefficient_check_original.py",
+      "scope": "unchanged imported rational coefficient script",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -O computations/verification/physical_kick_trace_checks.py",
+      "scope": "finite rational/modular/Pell checks and one binary64 clock example",
+      "exit_code": 0
+    }
+  ],
+  "artifacts": {
+    "coefficient_replay.json": {
+      "bytes": 4267,
+      "sha256": "5951bddcd7b82b61ba509ca6cba116fe3a977e55b78be1386acbbd89e0cbc6cc"
+    },
+    "coverage.json": {
+      "bytes": 92987,
+      "sha256": "d49232460e55825c3e8d2d555ffa7d01831c81075976096f274eb8a4da0c7b93"
+    },
+    "finite_checks.json": {
+      "bytes": 1229,
+      "sha256": "1f6d743c6264432bcbd9f471d8bdc1c84b813e70e4cd6d07f6708570df9821d1"
+    },
+    "sources/coefficient_check_original.py": {
+      "bytes": 3355,
+      "sha256": "1b55b94e3ccad1b4494516dc1db012402f82216eca19739222b4517b6bd20268"
+    },
+    "sources/coordinate_moments_original.md": {
+      "bytes": 11023,
+      "sha256": "eff7e763dddaf4ad45de401edd43d4edb07a51d033549fe57566283becfbc534"
+    },
+    "sources/explicit_exponent_original.md": {
+      "bytes": 13015,
+      "sha256": "91399c420e0094634dce6803f915af44ee5de68ce966ddd1b509f9568fb64c7f"
+    },
+    "sources/full_product_original.md": {
+      "bytes": 21313,
+      "sha256": "d1418d95d9a5482251a66241e99e555f48519b437a7a2ed3a29a00eaa91d4225"
+    },
+    "sources/physical_kick_original.md": {
+      "bytes": 38365,
+      "sha256": "7bb8b677cdee6f7a0a94f1d20833aec3069200056de5d6c587c365bbb89e8e1e"
+    },
+    "README.md": {
+      "bytes": 2182,
+      "sha256": "30a09b3edadfa666649a1b4eb9e948fc0956f89e61ee202ddde5c6ad9ff92302"
+    },
+    "manuscript_build.log": {
+      "bytes": 19838,
+      "sha256": "f48e974f18db60b84664edd813aef1ceb7fb737807123dfa7dbf8a265f83b2d5"
+    },
+    "validation.json": {
+      "bytes": 1011,
+      "sha256": "b3b4d2d0fa754a19a9af56c0703797f91bdf557846a5d6d7b2b120ad25fcb8b2"
+    }
+  },
+  "manuscript": {
+    "pass_exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "pdf_bytes": 2366080,
+    "pdf_sha256": "a787dad33ffa32afe0a4612a42c4e80c8e4e99a4e3b5910da9068577b77d6bb6",
+    "pages": "320",
+    "new_section_render_exit_code": 0,
+    "new_section_overfull_boxes": 0,
+    "visual_review": "new section pages 315 and 316 rendered and visually checked",
+    "scope": "three contiguous pdflatex passes; final pdfinfo and pdftoppm succeeded; old manuscript overfull boxes outside new section remain",
+    "earlier_build_attempts": "An interrupted prior build left a truncated auxiliary file; fresh output directory and contiguous passes used for final validation."
+  }
+}
