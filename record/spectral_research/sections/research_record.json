@@ -1,0 +1,6310 @@
+{
+  "topic": "research_record",
+  "units": [
+    {
+      "original_path": "research_round14_2026_10_21/round14_main_report.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/round14_main_report.md",
+      "source_sha256": "bb918b2eee610a62e22c7c5778f34ba3afe14880cd3183328e8d8820a98f021b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 14: строгие результаты для исходных матриц и неустранённая сумма при временах порядка N"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус задачи"
+        },
+        {
+          "line": 47,
+          "level": 2,
+          "heading": "1. Одна полностью определённая первая недоказанная оценка"
+        },
+        {
+          "line": 49,
+          "level": 3,
+          "heading": "1.1. Фиксированный допустимый тест"
+        },
+        {
+          "line": 82,
+          "level": 3,
+          "heading": "1.2. Проверка точной парной формулы"
+        },
+        {
+          "line": 126,
+          "level": 2,
+          "heading": "2. Спектральное расстояние до невозмущённой семьи"
+        },
+        {
+          "line": 128,
+          "level": 3,
+          "heading": "2.1. Утверждение"
+        },
+        {
+          "line": 170,
+          "level": 3,
+          "heading": "2.2. Точная арифметическая часть"
+        },
+        {
+          "line": 207,
+          "level": 3,
+          "heading": "2.3. Использованная физическая оценка следов и её происхождение"
+        },
+        {
+          "line": 271,
+          "level": 3,
+          "heading": "2.4. Лемма о расстоянии от скалярного корня"
+        },
+        {
+          "line": 317,
+          "level": 3,
+          "heading": "2.5. Верхняя граница без скрытой теоремы о дискретных спектрах"
+        },
+        {
+          "line": 354,
+          "level": 2,
+          "heading": "3. Координатный возврат: первый ненулевой коэффициент"
+        },
+        {
+          "line": 356,
+          "level": 3,
+          "heading": "3.1. Теорема для исходного U_N"
+        },
+        {
+          "line": 376,
+          "level": 3,
+          "heading": "3.2. Модульная половина и четыре ветви"
+        },
+        {
+          "line": 453,
+          "level": 3,
+          "heading": "3.3. Почему все перекрёстные ветви исчезают в диагональной сумме"
+        },
+        {
+          "line": 498,
+          "level": 3,
+          "heading": "3.4. Ручное вычисление коэффициента"
+        },
+        {
+          "line": 580,
+          "level": 3,
+          "heading": "3.5. Реальная ошибка независимого фазового усреднения"
+        },
+        {
+          "line": 610,
+          "level": 2,
+          "heading": "4. Вставленный след и неустранимая проекция генератора"
+        },
+        {
+          "line": 612,
+          "level": 3,
+          "heading": "4.1. Явная асимптотика с собственным доказанным остатком"
+        },
+        {
+          "line": 664,
+          "level": 3,
+          "heading": "4.2. Коммутант и оптимальное расстояние до кограниц"
+        },
+        {
+          "line": 706,
+          "level": 3,
+          "heading": "4.3. Двухкопийный генератор без предположения о разностях фаз"
+        },
+        {
+          "line": 743,
+          "level": 2,
+          "heading": "5. Что дала попытка на полной сумме"
+        },
+        {
+          "line": 745,
+          "level": 3,
+          "heading": "5.1. Требуется отрицательная поправка к полному линейному вкладу"
+        },
+        {
+          "line": 812,
+          "level": 3,
+          "heading": "5.2. Ошибку одношагового приближения можно сделать o(1) во всей сумме"
+        },
+        {
+          "line": 857,
+          "level": 3,
+          "heading": "5.3. Точная производная полной суммы и её нерешённая корреляция"
+        },
+        {
+          "line": 909,
+          "level": 3,
+          "heading": "5.4. Полное фазовое суммирование до попытки сравнения ансамблей"
+        },
+        {
+          "line": 943,
+          "level": 3,
+          "heading": "5.5. Выполненное полное суммирование в начальной точке параметрической кривой"
+        },
+        {
+          "line": 1156,
+          "level": 3,
+          "heading": "5.6. Проверка конкретного арифметического резонанса при фиксированном tau"
+        },
+        {
+          "line": 1199,
+          "level": 2,
+          "heading": "6. Проверка замыкания H_diag к Sine_2"
+        },
+        {
+          "line": 1314,
+          "level": 2,
+          "heading": "7. Внешние результаты и границы их использования"
+        },
+        {
+          "line": 1329,
+          "level": 2,
+          "heading": "8. Что именно ещё не доказано"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/root/root_round14_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/root/root_round14_proof_audit.md",
+      "source_sha256": "a55912f9b990ef2b26a78666a121439b019c8fbd5e20fce18f2e6449d096659b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Корневая проверка прохода 14"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Итоговый математический статус"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "2. Прежняя физическая оценка: заново прочитана сама цепь"
+        },
+        {
+          "line": 43,
+          "level": 3,
+          "heading": "2.1. Точный физический оператор, а не условный квантовый аналог"
+        },
+        {
+          "line": 66,
+          "level": 3,
+          "heading": "2.2. Переход от точных ядер к давлению"
+        },
+        {
+          "line": 90,
+          "level": 3,
+          "heading": "2.3. Применимость опубликованного классического входа"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "heading": "3. Спектральное расстояние: новые элементы проверены полностью"
+        },
+        {
+          "line": 139,
+          "level": 2,
+          "heading": "4. Координатный возврат и четвёртый коэффициент"
+        },
+        {
+          "line": 146,
+          "level": 3,
+          "heading": "4.1. Переход к исходной матрице"
+        },
+        {
+          "line": 165,
+          "level": 3,
+          "heading": "4.2. Дискретная осцилляция, включая опасные алиасы"
+        },
+        {
+          "line": 180,
+          "level": 3,
+          "heading": "4.3. Коэффициент проверен без доверия машине"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "5. Вставленный след и коммутант"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "6. Повторная проверка старого полного циклического класса"
+        },
+        {
+          "line": 288,
+          "level": 2,
+          "heading": "7. Точная конечная вычислительная проверка"
+        },
+        {
+          "line": 321,
+          "level": 2,
+          "heading": "8. Исправления после проверки и прозрачность версий"
+        },
+        {
+          "line": 346,
+          "level": 2,
+          "heading": "9. Первая остающаяся обязанность"
+        },
+        {
+          "line": 360,
+          "level": 2,
+          "heading": "10. Последний арифметический тест: самостоятельная корневая проверка"
+        },
+        {
+          "line": 424,
+          "level": 2,
+          "heading": "11. Полный градиент и Hessian в нулевой точке толчка"
+        },
+        {
+          "line": 522,
+          "level": 2,
+          "heading": "12. Полное чтение независимого аудита основного отчёта"
+        },
+        {
+          "line": 551,
+          "level": 2,
+          "heading": "13. Перегиб, аналитическое окно и последний независимый Hessian-аудит"
+        },
+        {
+          "line": 622,
+          "level": 2,
+          "heading": "14. Окончательная сверка новых дополнений"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/structural/r14_main_report_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/structural/r14_main_report_audit.md",
+      "source_sha256": "301c041c7e2662e88986fbbbfd50dd4e8d2f6ea028882285cd612b7e970a3ce9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимый аудит сводного отчёта прохода 14"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Объект, фактический объём и итог проверки"
+        },
+        {
+          "line": 56,
+          "level": 2,
+          "heading": "1. Точные входные версии"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "2. Фиксированный тест и парная нормировка"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "3. Проверка координатного возврата и квартета"
+        },
+        {
+          "line": 123,
+          "level": 3,
+          "heading": "3.1. Нормировка, сетка, алиасы и достаточность ошибки"
+        },
+        {
+          "line": 169,
+          "level": 3,
+          "heading": "3.2. Проверка первого ненулевого коэффициента"
+        },
+        {
+          "line": 242,
+          "level": 2,
+          "heading": "4. Полная взвешенная сумма: проверены значение цели и действительные границы"
+        },
+        {
+          "line": 244,
+          "level": 3,
+          "heading": "4.1. Циклические классы и обязательный знак"
+        },
+        {
+          "line": 289,
+          "level": 3,
+          "heading": "4.2. Ошибка амплитуды после полного суммирования"
+        },
+        {
+          "line": 316,
+          "level": 3,
+          "heading": "4.3. Параметрическая производная и тройные следы"
+        },
+        {
+          "line": 356,
+          "level": 3,
+          "heading": "4.4. Полная фазовая ошибка"
+        },
+        {
+          "line": 371,
+          "level": 2,
+          "heading": "5. Полная независимая проверка конечных тождеств для замыкания"
+        },
+        {
+          "line": 373,
+          "level": 3,
+          "heading": "5.1. Fourier-коэффициенты и включение–исключение"
+        },
+        {
+          "line": 401,
+          "level": 3,
+          "heading": "5.2. CUE: самостоятельное получение плотности Haar"
+        },
+        {
+          "line": 465,
+          "level": 3,
+          "heading": "5.3. Детерминантное тождество и знак Fourier-индекса"
+        },
+        {
+          "line": 507,
+          "level": 3,
+          "heading": "5.4. Бонферрони без скрытого детерминированного момента"
+        },
+        {
+          "line": 540,
+          "level": 2,
+          "heading": "6. Сглаживание, CUE-предел и слабая сходимость"
+        },
+        {
+          "line": 542,
+          "level": 3,
+          "heading": "6.1. Допустимые сглаживания и точная \\(L^1\\)-ошибка"
+        },
+        {
+          "line": 599,
+          "level": 3,
+          "heading": "6.2. CUE-локальное ядро и доминирование Fredholm-ряда"
+        },
+        {
+          "line": 656,
+          "level": 3,
+          "heading": "6.3. Последний топологический переход без моментной гипотезы"
+        },
+        {
+          "line": 742,
+          "level": 2,
+          "heading": "7. Сверка остальных утверждений и сохранение ограничений задачи"
+        },
+        {
+          "line": 794,
+          "level": 2,
+          "heading": "8. Закрытые замечания и окончательная оговорка"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/root/root_literature_scope.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/root/root_literature_scope.md",
+      "source_sha256": "90adcca0c946ab80caaeaae0352844632f5a2e9e84e130af71f55ccdc98e7d1b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проверенные внешние источники: точный объём использования в проходе 14"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Bowen–Ruelle: используемая опубликованная теорема"
+        },
+        {
+          "line": 25,
+          "level": 3,
+          "heading": "Проверка гипотез в нашей задаче"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "2. Gnutzmann–Altland: проверенный шаг фазового усреднения"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "heading": "3. Moy: новая работа, но другая модель и другой диапазон"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "heading": "4. Поисковые результаты, не принятые в качестве теорем"
+        },
+        {
+          "line": 128,
+          "level": 2,
+          "heading": "5. Линдеман–Вейерштрасс для проверки рационального толчка"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/round14_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/round14_continuation_ledger.md",
+      "source_sha256": "997f8e3b31b7c8d33346443d8a182e1398c0e10f3495dbc7425092595345e231",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Состояние после прохода 14"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Неизменная цель"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "heading": "2. Первая строго сформулированная недоказанная оценка"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "3. Дополнительные результаты, прошедшие проверку"
+        },
+        {
+          "line": 55,
+          "level": 3,
+          "heading": "3.1. Исходное спектральное расстояние"
+        },
+        {
+          "line": 74,
+          "level": 3,
+          "heading": "3.2. Координатный возврат"
+        },
+        {
+          "line": 96,
+          "level": 3,
+          "heading": "3.3. Вставка и двухкопийное кограничное препятствие"
+        },
+        {
+          "line": 114,
+          "level": 2,
+          "heading": "4. Выполненные попытки продолжения, без выдуманного завершения"
+        },
+        {
+          "line": 116,
+          "level": 3,
+          "heading": "4.1. Когерентные координатные траектории"
+        },
+        {
+          "line": 138,
+          "level": 3,
+          "heading": "4.2. Проекция на коммутант"
+        },
+        {
+          "line": 181,
+          "level": 3,
+          "heading": "4.3. Совместная арифметика tau и размеров Пелля"
+        },
+        {
+          "line": 195,
+          "level": 2,
+          "heading": "5. Что не следует снова объявлять новым"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "6. Проверка внешних результатов и вычислительной части"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_editorial_delta_and_main_comparison.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/signed_sum/r14_editorial_delta_and_main_comparison.md",
+      "source_sha256": "78512185f4b4c5c1cd09b3b9b59f623429c18bf8c7686b3cef840649e3790ded",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проверка редакционной дельты и сверка главного отчёта"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Редакционная версия coordinate-return доказательства"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "2. Сверка §§4 и 5.3 root main с замороженным raw"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_main_full_sum_section_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/signed_sum/r14_main_full_sum_section_audit.md",
+      "source_sha256": "2e6c49a1f98da095fe7460b66bdd4e3e2f75b90f9ac5857431f5d3a2e02e6abb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Точечная сверка новой §5.5 главного отчёта"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Точно прочитанные версии"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "2. Результат сверки"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Единственное уточнение формулировки"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "4. Проверка исправленной редакционной версии"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/round13_main_report.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/round13_main_report.md",
+      "source_sha256": "eaad00d107fcec37cb53a105eefe99a9d05fd288afa3dbf39065633142e4bdfe",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 13: действительные результаты и незакрытая спектральная оценка"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "0. Статус задачи"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "1. Первая конкретная недоказанная оценка"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "2. Точный символ и защищённое множество"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "3. Точные совпадения действий"
+        },
+        {
+          "line": 230,
+          "level": 2,
+          "heading": "4. Асимптотика \\(\\operatorname{Tr}U_N\\) для исходной семьи"
+        },
+        {
+          "line": 259,
+          "level": 3,
+          "heading": "Доказательство"
+        },
+        {
+          "line": 340,
+          "level": 3,
+          "heading": "Строгое следствие и его масштаб"
+        },
+        {
+          "line": 366,
+          "level": 2,
+          "heading": "5. Удаление полных защищённых следовых слагаемых при всех временах"
+        },
+        {
+          "line": 401,
+          "level": 3,
+          "heading": "Доказательство и равномерность по времени"
+        },
+        {
+          "line": 491,
+          "level": 2,
+          "heading": "6. Почему одних норм Weyl-коэффициентов недостаточно"
+        },
+        {
+          "line": 552,
+          "level": 2,
+          "heading": "7. Проверка применимости внешних результатов"
+        },
+        {
+          "line": 578,
+          "level": 2,
+          "heading": "8. Итог проверки и точная граница результатов"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/root/root_round13_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/root/root_round13_proof_audit.md",
+      "source_sha256": "25fb40bcd14f02e66d1945d9398ecd5719faa3eb0a7c5f9655a45c1043f61983",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Корневая проверка результатов прохода 13"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Исходная обязанность"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "2. Проверенные новые источники"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "3. Проверка нормировок, фаз и одношагового результата"
+        },
+        {
+          "line": 90,
+          "level": 2,
+          "heading": "4. Проверка полных слагаемых при всех временах"
+        },
+        {
+          "line": 154,
+          "level": 3,
+          "heading": "Прозрачная история двух исправлений"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "5. Проверка вспомогательного контртеста"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "6. Область вердикта"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/counterexample/r13_audit_l2_resummation_test.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/counterexample/r13_audit_l2_resummation_test.md",
+      "source_sha256": "4573710cbda410fdf27a33e17d7fd730375246089ee03f4e07f36f34e702cd8c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: coefficient-square-sum countertest"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Claim and verdict"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "heading": "1. Native coefficient calculation: passed"
+        },
+        {
+          "line": 81,
+          "level": 2,
+          "heading": "2. Exact covariance and the fixed-power trace: passed"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Auxiliary defect asymptotic: passed"
+        },
+        {
+          "line": 159,
+          "level": 2,
+          "heading": "4. Dependency boundary and remaining original gap"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/orbit_correlations/r13_audit_main_report.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/orbit_correlations/r13_audit_main_report.md",
+      "source_sha256": "122e885d3522a41c0ea0c0fb1e00fa04c11c44bc01cb9c3f97970e880fa49eae",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Критический аудит актуального отчёта Round 13"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Объект, фиксация версии и область проверки"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "2. Точная парная формула и эталон \\(\\min(m,N)\\)"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "3. Защищённые точки и точные фазы"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "heading": "4. Одношаговый след: знак и строгая нижняя граница"
+        },
+        {
+          "line": 96,
+          "level": 2,
+          "heading": "5. Удаление полных точных секторов на всех временах"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "6. Дополнительный тест и граница результата"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/root/root_literature_scope.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/root/root_literature_scope.md",
+      "source_sha256": "65ee61a5132abe655688e88d9d279cc55e8cf6d7e2d580f4b9d47d1dc86c38ee",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Уточнения проверки литературы в проходе 13"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "Degli Esposti–Winn"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "Faure"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "Kumar–Prosen–Roy"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "Граница поиска"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/orbit_correlations/literature_scope.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/orbit_correlations/literature_scope.md",
+      "source_sha256": "3118ecb7b9c959566107ac907148c925caedb9769d1b91f70d1bc3a9e906457d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 13: source applicability for the orbit-correlation route"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "Primary sources actually opened"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "Search scope and finite conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/round13_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/round13_continuation_ledger.md",
+      "source_sha256": "9a9cd008909c056ba6c5ec2bc3e97d0c36f7e88c5ce7039dfb300963bdf05462",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Состояние после прохода 13"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Неизменная цель"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "Реально добавлено"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "Что не удалось"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "Условие содержательного продолжения"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "Проверки и происхождение"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/root/source_version_corrections.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/root/source_version_corrections.md",
+      "source_sha256": "a169cff9ba4ca3cd5c9d607e2fc896fe4faa42a572203d7d1dfd28d3f86eede1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Версии проверенных текстов и исправления набора"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "Орбитальный источник"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "Корневое полное секторное доказательство"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "Аудит актуального изложения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/round12_main_report.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/round12_main_report.md",
+      "source_sha256": "71ac46dfd35adde2d4fa59169988615d05d62d6e3f3512d163c06ed01de4b2b8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Точная детерминированная семья: результат двенадцатого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Основная задача остаётся нерешённой"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "1. Один точный фиксированный недоказанный тест"
+        },
+        {
+          "line": 99,
+          "level": 2,
+          "heading": "2. Равномерная теорема для самого физического толчка"
+        },
+        {
+          "line": 148,
+          "level": 3,
+          "heading": "2.1. Точный символ и неединичность потока"
+        },
+        {
+          "line": 178,
+          "level": 3,
+          "heading": "2.2. От классического смещения к квантовому следу"
+        },
+        {
+          "line": 234,
+          "level": 3,
+          "heading": "2.3. Явный показатель для исходного значения \\(\\tau\\)"
+        },
+        {
+          "line": 312,
+          "level": 2,
+          "heading": "3. Полный хвост экспоненты при \\(s=N\\tau\\) оценён"
+        },
+        {
+          "line": 380,
+          "level": 2,
+          "heading": "4. Почему двухкопийный Pell-предел не завершает этот шаг"
+        },
+        {
+          "line": 433,
+          "level": 2,
+          "heading": "5. Проверенные обходные пути"
+        },
+        {
+          "line": 467,
+          "level": 2,
+          "heading": "6. Что остаётся необходимым для завершения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/root_round12_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/root_round12_proof_audit.md",
+      "source_sha256": "9c0b33bff66e60e9b445cdb8276939c8010089efcc39a494b5497cecb07bb453",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимая проверка результатов двенадцатого прохода"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Проверенный источник и статус"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "2. Модульная половина и критическая окружность"
+        },
+        {
+          "line": 81,
+          "level": 2,
+          "heading": "3. Знак потока и отсутствие периодической тождественности"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "4. Равномерность по времени: существенный аналитический шаг"
+        },
+        {
+          "line": 155,
+          "level": 2,
+          "heading": "5. Квантовые ошибки и Hilbert–Schmidt-норма"
+        },
+        {
+          "line": 202,
+          "level": 2,
+          "heading": "6. Срезка, цикличность и итоговый показатель"
+        },
+        {
+          "line": 252,
+          "level": 2,
+          "heading": "7. Следствия и граница применимости"
+        },
+        {
+          "line": 287,
+          "level": 2,
+          "heading": "8. Проверка вспомогательного clock-completion"
+        },
+        {
+          "line": 314,
+          "level": 2,
+          "heading": "9. Проверка полного экспоненциального хвоста и CRT-совпадений"
+        },
+        {
+          "line": 322,
+          "level": 3,
+          "heading": "9.1. Экспонента при настоящем параметре"
+        },
+        {
+          "line": 352,
+          "level": 3,
+          "heading": "9.2. Первое двухкопийное совпадение"
+        },
+        {
+          "line": 385,
+          "level": 3,
+          "heading": "9.3. Масса Bessel-коэффициентов и полная ошибка пары"
+        },
+        {
+          "line": 426,
+          "level": 2,
+          "heading": "10. Независимая проверка явного показателя \\(1/25\\)"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/r12_countersequence_audit_explicit_exponent.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/r12_countersequence_audit_explicit_exponent.md",
+      "source_sha256": "5af75959efe344e669721279bdd3453e12d850859b110de0f8f66f8c86d479f8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимый аудит явного показателя 1/25 для исходного толчка"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "1. Производные действительного символа"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Относительная оценка потока"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "3. Подуровень и показатель"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/r12_signed_trace_kick_audit.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/r12_signed_trace_kick_audit.md",
+      "source_sha256": "febe87b367a5078bf87469c2096eac1ed1561d0ced90197dea29f2bb9b7c2458",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: the uniform physical-kick trace theorem"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "0. Frozen object and verdict"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "1. Symbol, sign, and the exact shear"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "heading": "2. Uniform Egorov retains exactly the factor needed at zero time"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "3. The finite-jet argument is spatial and is uniform in the parameter"
+        },
+        {
+          "line": 164,
+          "level": 2,
+          "heading": "4. Cyclicity and the cutoff losses"
+        },
+        {
+          "line": 224,
+          "level": 2,
+          "heading": "5. Spectral consequences and the scope boundary"
+        },
+        {
+          "line": 250,
+          "level": 2,
+          "heading": "6. Computation and read scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/r12_countersequence_audit_main_report.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/r12_countersequence_audit_main_report.md",
+      "source_sha256": "f9c5afe9819684641779110f0d9118bd9195b10d7943f4c3af4ddae3ff2cee9f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Финальный независимый аудит сводного отчёта Round 12"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Проверенная версия и результат"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. Первый парный дефект"
+        },
+        {
+          "line": 47,
+          "level": 2,
+          "heading": "2. Нормировки потока и явный показатель"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Полная ошибка после суммирования времён"
+        },
+        {
+          "line": 99,
+          "level": 2,
+          "heading": "4. Исходная семья и проверки методов"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "5. Фактические исходные файлы"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/root_round12_literature_scope.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/root_round12_literature_scope.md",
+      "source_sha256": "4292f8ca2d649f63fa9eac683f1b7bb1c5e0d70c4b07c0a3e37ccef74a69412c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проверка применимости нового первичного источника"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/round12_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/round12_continuation_ledger.md",
+      "source_sha256": "8b0ac292a355e6bf529e2f1f108ae55b72ebb6d3c01ed965dffdbe1c05200b88",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Состояние исследования после двенадцатого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Цель и статус"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "Точный первый неоценённый исходный функционал"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "Доказанное и его происхождение"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "Ближайшие полные источники"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "Что нельзя считать устранением оставшегося пробела"
+        },
+        {
+          "line": 88,
+          "level": 2,
+          "heading": "Сохранённая база"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/round12_target_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/round12_target_checkpoint.md",
+      "source_sha256": "b39996f6cc4c86aebbf03b5a0775bf08b1ad250821b1b0bedd6c0c68767a0ec9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 12 — исходная цель и запуск следующего исследования"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "Исходный локальный результат и его ограничение"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "Текущие независимые направления"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round12_2026_10_21/root_critical_circle_wolfram_output.md",
+      "target": "record/spectral_research/sources/research_round12_2026_10_21/root_critical_circle_wolfram_output.md",
+      "source_sha256": "2807ed2abafe29862492c0d22ca6d4b806bdd6fadacdf9ca2c0fed32ca795502",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Исходный ответ на точную символическую проверку"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/round11_main_report.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/round11_main_report.md",
+      "source_sha256": "3cbf76d285ba54082ee5b04af0adbb1470e23d6f48cffa97d478bb9980c921e5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Актуальный результат одиннадцатого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Основная задача остаётся открытой в этом исследовании"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. Проверенный результат о полной сумме коммутаторов"
+        },
+        {
+          "line": 99,
+          "level": 3,
+          "heading": "Механизм доказательства"
+        },
+        {
+          "line": 162,
+          "level": 2,
+          "heading": "3. Почему теорема (2.3) не решает исходную статистику"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "4. Дисперсия начального расщепления и её точное окно"
+        },
+        {
+          "line": 264,
+          "level": 2,
+          "heading": "5. Проверка параметрического «отталкивания»"
+        },
+        {
+          "line": 315,
+          "level": 2,
+          "heading": "6. Остальные проверенные направления"
+        },
+        {
+          "line": 345,
+          "level": 2,
+          "heading": "7. Проверка и продолжение документа"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/r11_arithmetic_main_report_audit.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/r11_arithmetic_main_report_audit.md",
+      "source_sha256": "88d2ae09942dc5595a8b352b7bc582642d52d9bad0be24517eadc4eb4d1e92da",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимая проверка основного отчёта Round 11"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Объект, область чтения и заключение"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "2. Фиксированный тест и точная формула для \\(k=2\\)"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Основная арифметическая теорема: область и нормировка"
+        },
+        {
+          "line": 200,
+          "level": 2,
+          "heading": "4. Параметр и временной масштаб не смешаны"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "5. Дисперсия и Taylor-остаток"
+        },
+        {
+          "line": 279,
+          "level": 2,
+          "heading": "6. Независимая проверка локальной оценки \\(Q=98\\)"
+        },
+        {
+          "line": 334,
+          "level": 2,
+          "heading": "7. Остальные отображённые формулы основного отчёта"
+        },
+        {
+          "line": 408,
+          "level": 2,
+          "heading": "8. Отсутствие неподтверждённого спектрального вывода"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/root_round11_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/root_round11_proof_audit.md",
+      "source_sha256": "845f57bd97aba6ad5b770f1a09ad89476981cab58c0f70959bbe96d67ea2ac89",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Сводная проверка результатов одиннадцатого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Заключение и его область"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "2. Точные проверенные версии"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "3. Ключевая арифметическая проверка"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "4. Локальные результаты и граница параметра"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "5. Что вычислено и что не вычислено"
+        },
+        {
+          "line": 189,
+          "level": 2,
+          "heading": "6. Оставшийся статистический шаг"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/r11_coherent_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/r11_coherent_checkpoint.md",
+      "source_sha256": "04d220ec857e51de1aa141504a71d69dee3e84b8329fb72d01f864aa97225770",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 11: coherent Weyl resummation and the attempted Schur extension"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Outcome and exact scope"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "2. What the full Weyl resummation already does"
+        },
+        {
+          "line": 117,
+          "level": 2,
+          "heading": "3. Attempted change of route: exact elimination of disagreement runs"
+        },
+        {
+          "line": 178,
+          "level": 3,
+          "heading": "3.1. The contraction discriminator and its outcome"
+        },
+        {
+          "line": 236,
+          "level": 3,
+          "heading": "3.2. The previously established stronger inputs do not repair this step"
+        },
+        {
+          "line": 250,
+          "level": 2,
+          "heading": "4. A second candidate that was already resolved in the history"
+        },
+        {
+          "line": 282,
+          "level": 2,
+          "heading": "5. First gap after the checks"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "6. Raw inputs and verification scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/root_round11_literature_scope.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/root_round11_literature_scope.md",
+      "source_sha256": "36f77c52ef991ba569e948d8fd79deb7073f949bb1999979c052a60a60e45180",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 11 — область проверки литературы"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Параметрическая динамика собственных углов"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "2. Многорезольвентные оценки"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "3. Свежий поиск по точной оставшейся задаче"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/round11_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/round11_continuation_ledger.md",
+      "source_sha256": "0cd26b5f82001d1cd90060974bf3a74b25bf9e2fc4c9eb83e993a3a00412bd6c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Продолжение после одиннадцатого прохода"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Состояние исходной задачи"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "Что получено в текущем проходе"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "heading": "Точное место остановки нового подхода"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "Уже проверенные способы, которые не следует повторять"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "Целостность"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/round11_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/round11_checkpoint.md",
+      "source_sha256": "4f922dc551504e791794840c919776b78914afbfd101580385a62c0a7c0dc79b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 11 — рабочая фиксация"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "Текущая открытая оценка"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "heading": "Разделение проверок этого прохода"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/round10_main_report.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/round10_main_report.md",
+      "source_sha256": "5210f899d7cd30241ed4fa98de6d8ba95ec7e01c495a32f24040a84f692d7685",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Десятый проход: доказанные результаты и незакрытая исходная оценка"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус основной задачи"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "1. Семья и кванторы сохранены точно"
+        },
+        {
+          "line": 92,
+          "level": 2,
+          "heading": "2. Новый переход: интегрируемость следует из самого \\(H_k\\)"
+        },
+        {
+          "line": 94,
+          "level": 3,
+          "heading": "2.1. Конечномерная оценка, используемая в доказательстве"
+        },
+        {
+          "line": 135,
+          "level": 3,
+          "heading": "2.2. Положительный тест малого окна"
+        },
+        {
+          "line": 176,
+          "level": 3,
+          "heading": "2.3. Почему этого достаточно для момента того же порядка"
+        },
+        {
+          "line": 205,
+          "level": 2,
+          "heading": "3. Устойчивость каждого порядка отдельно"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "4. Полный порядок \\(k\\) определяет все меньшие порядки"
+        },
+        {
+          "line": 339,
+          "level": 2,
+          "heading": "5. Точная потеря парного члена при операторном усреднении"
+        },
+        {
+          "line": 388,
+          "level": 2,
+          "heading": "6. Исчезающий шум: точный пример с полным сохранением спектра"
+        },
+        {
+          "line": 503,
+          "level": 2,
+          "heading": "7. Арифметический и геометрический поиск"
+        },
+        {
+          "line": 532,
+          "level": 2,
+          "heading": "8. Точная первая недоказанная оценка"
+        },
+        {
+          "line": 573,
+          "level": 2,
+          "heading": "9. Проверка и продолжение документа"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/root_round10_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/root_round10_proof_audit.md",
+      "source_sha256": "b4344242965f7687125b46705971ef6e41a95402db055cb5488a6666b6be5c0b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Coordinator audit of the new Round 10 results"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Same-order repulsion and matching"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "2. Recovery of lower orders"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "3. Exact conjugacy average and the critical scale"
+        },
+        {
+          "line": 110,
+          "level": 2,
+          "heading": "4. Shrinking isospectral Weyl noise"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "5. Rational inactive-kick calculation"
+        },
+        {
+          "line": 183,
+          "level": 2,
+          "heading": "6. Original-family status"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/r10_mixed_main_report_audit.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/r10_mixed_main_report_audit.md",
+      "source_sha256": "8452d190c146207db564847fbc0e3cb029056ffda0f27469f1297804966f3bd4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимая проверка связного отчёта десятого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Объект и заключение"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "heading": "1. Проверка перехода от одного полного порядка к интегрируемости"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "2. Проверка восстановления меньших порядков"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "3. Операторные примеры и границы их применения"
+        },
+        {
+          "line": 47,
+          "level": 2,
+          "heading": "4. Первая недоказанная оценка"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "Контрольные хэши прочитанных доказательств"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/root_operator_route_scope.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/root_operator_route_scope.md",
+      "source_sha256": "579b1f4721dfaef4e6da1d914d90cab934b2fc625ebe37ef93b87839b57722a2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Operator comparison after phase normalization: the attempted bridge and its remaining gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Status"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "heading": "1. The quantity that an operator argument must actually control"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "2. What the preceding normalization does and does not estimate"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "heading": "3. The prequantum comparison checked in the primary text"
+        },
+        {
+          "line": 153,
+          "level": 2,
+          "heading": "4. Smooth metaplectic comparison does not fill that gap"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "5. A recent semiclassical route and its scale"
+        },
+        {
+          "line": 211,
+          "level": 2,
+          "heading": "6. Precise remaining original estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/r10_mixed_operator_scope_independent_audit.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/r10_mixed_operator_scope_independent_audit.md",
+      "source_sha256": "a11849cdda56873e59d9391f9efd5d133047bd6047014382ee5f0144ec875a04",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the normalized-operator route"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Audited artifact and verdict"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. Finite-dimensional scales"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "2. Primary-source assertions independently checked"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "3. Explicit boundaries retained"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "4. Frozen branch results and self-check"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/round10_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/round10_continuation_ledger.md",
+      "source_sha256": "746415783a5b3f745799f64e1ffa8eed695ba6131d6bd3c4513da94fc85547a0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Продолжение исследования после десятого прохода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Точный статус"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "Что уже доказано и не нуждается в повторной редукции"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "Остановившиеся направления"
+        },
+        {
+          "line": 78,
+          "level": 2,
+          "heading": "Целостность продолжения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/round10_target_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/round10_target_checkpoint.md",
+      "source_sha256": "a35e09d5678b1f718f7deaa1c726afa5c692886010eb41f748e8f9f1624378f0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 10 target and route checkpoint"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "Executed portfolio, initial mathematical discriminators"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/round9_main_report.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/round9_main_report.md",
+      "source_sha256": "abd50d2f334eba5d57142e2f80eb133ed01c83a160f4e79485a07ff7ed4ff93a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Девятый проход: непрерывная поправка, точная аналитическая реализация и граница полного решения"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус основной задачи"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "1. Исходная семья и необходимая проверка соглашения"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "2. Новая теорема об устойчивости для непрерывного символа"
+        },
+        {
+          "line": 155,
+          "level": 3,
+          "heading": "2.1 Почему диагональный выбор порогов законен"
+        },
+        {
+          "line": 205,
+          "level": 3,
+          "heading": "2.2 Где используется квантовая эргодичность"
+        },
+        {
+          "line": 247,
+          "level": 3,
+          "heading": "2.3 Движение собственных фаз и все моменты"
+        },
+        {
+          "line": 317,
+          "level": 3,
+          "heading": "2.4 Проверка положительного квантования"
+        },
+        {
+          "line": 341,
+          "level": 2,
+          "heading": "3. Точная аналитическая реализация нового конца"
+        },
+        {
+          "line": 433,
+          "level": 2,
+          "heading": "4. Нормализация первой квантовой фазы"
+        },
+        {
+          "line": 510,
+          "level": 2,
+          "heading": "5. Почему это ещё не доказывает нужное сокращение"
+        },
+        {
+          "line": 554,
+          "level": 2,
+          "heading": "6. Новый точный тест детерминантного подхода"
+        },
+        {
+          "line": 663,
+          "level": 2,
+          "heading": "7. Новый арифметический результат для исходного генератора"
+        },
+        {
+          "line": 789,
+          "level": 2,
+          "heading": "8. Что дала проверка опубликованного подхода"
+        },
+        {
+          "line": 849,
+          "level": 2,
+          "heading": "9. Что проверено независимо"
+        },
+        {
+          "line": 879,
+          "level": 2,
+          "heading": "10. Точная первая недоказанная оценка"
+        },
+        {
+          "line": 934,
+          "level": 2,
+          "heading": "11. Действующий вывод прохода"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/root_round9_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/root_round9_proof_audit.md",
+      "source_sha256": "47ee7c3ddafa612e1980b531f05372899f7f71fae92d102395bf7d01df38f34c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Сводная проверка девятого прохода"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Проверенные основные версии"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "2. Реальность новой унитарной конструкции"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "3. Скалярная нормализация и порядок пределов"
+        },
+        {
+          "line": 106,
+          "level": 2,
+          "heading": "4. Спектральная часть: точная область принятия"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "5. Детерминантный пример и его усиление"
+        },
+        {
+          "line": 185,
+          "level": 2,
+          "heading": "6. Galois-теорема и ограничения размерности"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "7. Первичные источники и действующий итог"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "8. Финальная проверка связного изложения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_arithmetic_audit_continuous_selection.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_arithmetic_audit_continuous_selection.md",
+      "source_sha256": "e2ffa265abd856e9c8dc827e66438b74e9fbef299a3d8c5c4bbb841477dd5908",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: continuous-symbol stability and the common diagonal choice"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict and exact scope"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "1. Frozen files and raw inputs"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "2. Fixed-symbol estimates and classical ergodicity"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "3. The diagonal approximation retains every odd dimension"
+        },
+        {
+          "line": 219,
+          "level": 2,
+          "heading": "4. Uniform QE does not transport a varying symbol"
+        },
+        {
+          "line": 273,
+          "level": 2,
+          "heading": "5. Eigenangle motion through degeneracies"
+        },
+        {
+          "line": 320,
+          "level": 2,
+          "heading": "6. The local-law comparison is unconditional"
+        },
+        {
+          "line": 371,
+          "level": 2,
+          "heading": "7. Higher moments enter only under one full H_diag hypothesis"
+        },
+        {
+          "line": 455,
+          "level": 2,
+          "heading": "8. Canonical positive quantization: signs, bounds, and norm comparison"
+        },
+        {
+          "line": 541,
+          "level": 2,
+          "heading": "9. Compatibility with the root note's analytic thresholds"
+        },
+        {
+          "line": 611,
+          "level": 2,
+          "heading": "10. What remains unproved"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/round9_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/round9_continuation_ledger.md",
+      "source_sha256": "e3709d1866dd9c9afc88e3cfdcb74efc421cd8f75cd9a01bd56f5d92b92b0bce",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Продолжаемый реестр после девятого прохода"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Неизменная задача"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "2. Новое ядро результата"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "3. Три логически различные степени переноса"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "4. Точная первая неполученная оценка"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "5. Где новая нормализация останавливается"
+        },
+        {
+          "line": 99,
+          "level": 2,
+          "heading": "6. Закрытые в этом проходе ложные сокращения пути"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "7. Что нельзя снова выдавать за новое"
+        },
+        {
+          "line": 144,
+          "level": 2,
+          "heading": "8. Целостность продолжения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/round9_research_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/round9_research_checkpoint.md",
+      "source_sha256": "0ba3aa1de031f09e786db731b78592e646e6482d768d7adc547b00198b4246f0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 9 — active research checkpoint"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Status"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "Portfolio and changes of direction"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "First unresolved original estimate"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "Deliverable policy"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/round8_main_report.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/round8_main_report.md",
+      "source_sha256": "c555d33289c8fdfda70cf53e69a41e8c843998bc50c6232acb212c3dcca3e0d9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 8. Точные сокращения, все Clifford-симметрии и граница спектрального вывода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Статус полной задачи"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "heading": "2. Точные соглашения, без изменения семейства"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "heading": "3. Равномерное исключение всего Clifford-нормализатора"
+        },
+        {
+          "line": 111,
+          "level": 3,
+          "heading": "3.1. Унитарные симметрии с точностью до фазы"
+        },
+        {
+          "line": 148,
+          "level": 3,
+          "heading": "3.2. Как контролируются растущие модульные матрицы"
+        },
+        {
+          "line": 232,
+          "level": 3,
+          "heading": "3.3. Все антиунитарные Clifford-обращения времени"
+        },
+        {
+          "line": 312,
+          "level": 2,
+          "heading": "4. Полное взвешенное сокращение Weyl-путей"
+        },
+        {
+          "line": 314,
+          "level": 3,
+          "heading": "4.1. Индивидуальное сокращение замкнутого относительного пути"
+        },
+        {
+          "line": 367,
+          "level": 3,
+          "heading": "4.2. Терминальный множитель: все составные модули и все времена"
+        },
+        {
+          "line": 449,
+          "level": 3,
+          "heading": "4.3. Что эта полная сумма оставляет нерешённым"
+        },
+        {
+          "line": 478,
+          "level": 2,
+          "heading": "5. Точная величина наибольшего Weyl-самоперекрытия"
+        },
+        {
+          "line": 530,
+          "level": 2,
+          "heading": "6. Явная знаковая трёхвременная корреляция генератора"
+        },
+        {
+          "line": 572,
+          "level": 2,
+          "heading": "7. Сжимающиеся окна двойного оператора"
+        },
+        {
+          "line": 648,
+          "level": 2,
+          "heading": "8. Количественная невозможность короткой полиномиальной аппроксимации"
+        },
+        {
+          "line": 720,
+          "level": 2,
+          "heading": "9. Почему доказанные структурные теоремы ещё не дают локальную статистику"
+        },
+        {
+          "line": 788,
+          "level": 2,
+          "heading": "10. Проверенная часть \\(H_{\\mathrm{diag}}\\Rightarrow\\mathrm{Sine}_2\\)"
+        },
+        {
+          "line": 876,
+          "level": 2,
+          "heading": "11. Проверки и внешняя литература"
+        },
+        {
+          "line": 897,
+          "level": 2,
+          "heading": "12. Точная первая недоказанная оценка"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/root_round8_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/root_round8_proof_audit.md",
+      "source_sha256": "be26dfd6c5d40ae9cfcfc98f00c0282c6e0ead458d259f4edf0e62c81e246237",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 8: сводный протокол проверки доказательств"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Вердикт и предел вердикта"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "2. Соответствие полных доказательств и независимых аудитов"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "3. Критические проверки соглашений и областей действия"
+        },
+        {
+          "line": 44,
+          "level": 3,
+          "heading": "3.1. Точный символ и порядок отображений"
+        },
+        {
+          "line": 66,
+          "level": 3,
+          "heading": "3.2. Почему равномерность не ограничена фиксированными симметриями"
+        },
+        {
+          "line": 83,
+          "level": 3,
+          "heading": "3.3. Самостоятельное исключение аффинного обращения времени"
+        },
+        {
+          "line": 98,
+          "level": 3,
+          "heading": "3.4. Все арифметические прообразы сохранены"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "4. Действительно выполненные вычислительные проверки"
+        },
+        {
+          "line": 121,
+          "level": 3,
+          "heading": "4.1. Точные рациональные тройки"
+        },
+        {
+          "line": 136,
+          "level": 3,
+          "heading": "4.2. Полные веса на отдельной рациональной унитарной матрице"
+        },
+        {
+          "line": 163,
+          "level": 3,
+          "heading": "4.3. Точные вычисления Wolfram"
+        },
+        {
+          "line": 197,
+          "level": 2,
+          "heading": "5. Root-проверка следствия для приближённых собственных операторов"
+        },
+        {
+          "line": 227,
+          "level": 2,
+          "heading": "6. Повторная проверка актуального связного изложения"
+        },
+        {
+          "line": 274,
+          "level": 2,
+          "heading": "7. Какие старые входы действительно использованы"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "8. Внешние результаты и дальнейшая граница"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_weyl_audit_uniform_self_overlap.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_weyl_audit_uniform_self_overlap.md",
+      "source_sha256": "33111324edb6f838823e7159d9994d6874fa5debc0b3093666ca88972eb03d37",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: the largest original Weyl self-overlap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen target and verdict"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "heading": "2. Normalizations and modular signs"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "heading": "3. The maximum over all modular labels"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "4. Symbol and flow constants"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "5. Jacobian, inverse density, and coordinate shift"
+        },
+        {
+          "line": 196,
+          "level": 2,
+          "heading": "6. Surviving modes and error conversion"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "7. Scope conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_original_obstruction_audit.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_original_obstruction_audit.md",
+      "source_sha256": "d14ac3f6ab63c08d5b89937a4caaddde84343d279a83cbcf96e7aa5d4aced854",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 8: original-family symmetry and powers-of-seven audit"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. What previous symmetry results already cover"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. A published perturbation-surviving symmetry mechanism does not apply"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "3. Exact renormalization changes both the family and dimension parity"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "heading": "4. The actual linear cat has a long exact recurrence at \\(N=7^r\\)"
+        },
+        {
+          "line": 158,
+          "level": 2,
+          "heading": "5. The first missing step in transferring that recurrence to \\(U_N\\)"
+        },
+        {
+          "line": 194,
+          "level": 2,
+          "heading": "6. Honest endpoint of this branch"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/root_literature_applicability_round8.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/root_literature_applicability_round8.md",
+      "source_sha256": "b7505e748e537ce83ae11ab44f68dbd2a9e296ec41ce44ca671df6ea523129c2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проверка внешних результатов: проход 8"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Единственный внешний вход новой теоремы об окнах"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "2. Симметрии возмущённых cat maps: условия действительно не выполнены"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "3. Проверена работа о новых спектральных сокращениях"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "4. Статус собственных результатов"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/round8_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/round8_continuation_ledger.md",
+      "source_sha256": "84469e7eb461cd3c18929424cf3bcdce8e1e6b525d8d077bf61a01adc7d652e7",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 8: реестр доказанных входов и точного незакрытого перехода"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Неизменная цель"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "2. Что именно доказано в этом проходе"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "3. Пробел теперь сформулирован после полной суммы амплитуд"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "4. Один полностью фиксированный непроверенный тест"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "5. Проверенные препятствия для уже испытанных способов закрытия"
+        },
+        {
+          "line": 122,
+          "level": 3,
+          "heading": "5.1. Малость \\(\\tau\\) не позволяет усечь экспоненту на бесконечной башне"
+        },
+        {
+          "line": 133,
+          "level": 3,
+          "heading": "5.2. Нормовое сжатие резольвенты имеет другие спектральные веса"
+        },
+        {
+          "line": 146,
+          "level": 3,
+          "heading": "5.3. Исключение симметрий не определяет микроскопические фазы"
+        },
+        {
+          "line": 166,
+          "level": 3,
+          "heading": "5.4. Учитываемые опубликованные теоремы не закрывают (4.1)"
+        },
+        {
+          "line": 178,
+          "level": 2,
+          "heading": "6. Условие следующего содержательного продвижения"
+        },
+        {
+          "line": 197,
+          "level": 2,
+          "heading": "7. Сохранение исследовательской истории"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/round8_research_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/round8_research_checkpoint.md",
+      "source_sha256": "b9b3fcae857efef9a832f356d78ad3875a940cd6adf49a0b331c495bd2fa4c8b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 8: исходная цель и рабочие ветви"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "Целевой незакрытый функционал"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "Ветви"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "Условия принятия результата"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/round7_main_report.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/round7_main_report.md",
+      "source_sha256": "e1d724e8f996ff1245e4b9dbcfcb9436001b3a9f23e53d0af91d2952eb226223",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 7. Новые теоремы для исходной семьи и точная граница решения"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Статус и неизменная цель"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "2. Конкретная матрица и две точные структуры"
+        },
+        {
+          "line": 106,
+          "level": 2,
+          "heading": "3. Все фиксированные физические степени"
+        },
+        {
+          "line": 153,
+          "level": 3,
+          "heading": "3.1. Почему устранено прежнее ограничение на число итераций"
+        },
+        {
+          "line": 220,
+          "level": 3,
+          "heading": "3.2. Что дополнительно получено количественно"
+        },
+        {
+          "line": 239,
+          "level": 2,
+          "heading": "4. Нормовая теорема о стационарном усреднении"
+        },
+        {
+          "line": 287,
+          "level": 3,
+          "heading": "4.1. Положительное доминирование и два частотных диапазона"
+        },
+        {
+          "line": 343,
+          "level": 3,
+          "heading": "4.2. Проверка классической эргодичности"
+        },
+        {
+          "line": 372,
+          "level": 3,
+          "heading": "4.3. Следствие для сжатого двойного оператора"
+        },
+        {
+          "line": 398,
+          "level": 2,
+          "heading": "5. Обратимость интенсивностей в исходной точке"
+        },
+        {
+          "line": 485,
+          "level": 2,
+          "heading": "6. Полная цикличность: два времени и кольцо Лорана"
+        },
+        {
+          "line": 599,
+          "level": 2,
+          "heading": "7. Все миноры всех ненулевых степеней"
+        },
+        {
+          "line": 673,
+          "level": 3,
+          "heading": "7.1. Утверждение, охватывающее кратные семи"
+        },
+        {
+          "line": 698,
+          "level": 2,
+          "heading": "8. Точные знаковые первые возвращения"
+        },
+        {
+          "line": 762,
+          "level": 3,
+          "heading": "8.1. Определитель дополнения и точное диагональное наблюдение"
+        },
+        {
+          "line": 812,
+          "level": 2,
+          "heading": "9. Строгая проверка недостаточности найденных входов"
+        },
+        {
+          "line": 911,
+          "level": 2,
+          "heading": "10. Точная первая недоказанная оценка для исходной семьи"
+        },
+        {
+          "line": 1003,
+          "level": 2,
+          "heading": "11. Проверенное замыкание: что произойдёт после доказательства всей иерархии"
+        },
+        {
+          "line": 1078,
+          "level": 2,
+          "heading": "12. Воспроизводимость и границы проверки"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_round7_proof_audit.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/root_round7_proof_audit.md",
+      "source_sha256": "96777152186fbce85f2a4eb6a7bf62eb93123005b9cef937fc31c0c890583938",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 7: сводная проверка исходных доказательств"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Предмет и способ проверки"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "2. Зафиксированные доказательства"
+        },
+        {
+          "line": 40,
+          "level": 3,
+          "heading": "2.1. Все фиксированные физические степени"
+        },
+        {
+          "line": 56,
+          "level": 3,
+          "heading": "2.2. Стационарное сжатие"
+        },
+        {
+          "line": 75,
+          "level": 3,
+          "heading": "2.3. Якобиан интенсивностей"
+        },
+        {
+          "line": 91,
+          "level": 3,
+          "heading": "2.4. Полная цикличность"
+        },
+        {
+          "line": 108,
+          "level": 3,
+          "heading": "2.5. Все миноры степеней и однокомпонентные миноры"
+        },
+        {
+          "line": 131,
+          "level": 3,
+          "heading": "2.6. Определитель Шура"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "3. Проверенная вспомогательная последовательность"
+        },
+        {
+          "line": 178,
+          "level": 2,
+          "heading": "4. Вычисления, исправления и происхождение результатов"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "heading": "5. Окончательная граница принятого результата"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_all_fixed_powers.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_all_fixed_powers.md",
+      "source_sha256": "642e0735bec132681648a07b772a4c48c78231599d4415fc4da3c3af1edb6d5d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: all fixed physical powers of the original family"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Verdict and exact audited statement"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "2. Original symbol, covariance, and signs"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "heading": "3. Positive Jacobians at every quantum stage"
+        },
+        {
+          "line": 162,
+          "level": 2,
+          "heading": "4. Initial images and the full nonlinear deck law"
+        },
+        {
+          "line": 213,
+          "level": 2,
+          "heading": "5. No translation intertwiner: all hypotheses verified"
+        },
+        {
+          "line": 277,
+          "level": 2,
+          "heading": "6. Why endpoint separability is impossible"
+        },
+        {
+          "line": 308,
+          "level": 2,
+          "heading": "7. The unrestricted sampled fourth-moment lemma"
+        },
+        {
+          "line": 340,
+          "level": 2,
+          "heading": "8. Finite-grid WKB and the exact powers of N"
+        },
+        {
+          "line": 393,
+          "level": 2,
+          "heading": "9. The limiting kernel, its marginals, and return normalization"
+        },
+        {
+          "line": 456,
+          "level": 2,
+          "heading": "10. Stress checks, limitations, and source provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_physical_fixed_powers49.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_physical_fixed_powers49.md",
+      "source_sha256": "faf5712f14b5dd4a569627c3271ed58b87667d1955df12a140c302c3dac145eb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the physical fixed-power theorem through 49"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Normalized claim and primary verdict"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "1. Independence, evidence, and dependency graph"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "2. Reconstruction of the original covariance"
+        },
+        {
+          "line": 211,
+          "level": 2,
+          "heading": "3. Exact initial image kernel, including noninvertible \\(b_R\\pmod N\\)"
+        },
+        {
+          "line": 285,
+          "level": 2,
+          "heading": "4. Quantitative bounds and the fixed range"
+        },
+        {
+          "line": 370,
+          "level": 2,
+          "heading": "5. The full characteristic construction and its errors"
+        },
+        {
+          "line": 471,
+          "level": 2,
+          "heading": "6. Exact nonlinear sheet law and separation of every pair"
+        },
+        {
+          "line": 575,
+          "level": 2,
+          "heading": "7. Wrapped finite shifts and the actual matrix error"
+        },
+        {
+          "line": 657,
+          "level": 2,
+          "heading": "8. Independent reconstruction of the sampled \\(S_4\\) lemma"
+        },
+        {
+          "line": 736,
+          "level": 2,
+          "heading": "9. Assembly of the physical probability bound"
+        },
+        {
+          "line": 763,
+          "level": 2,
+          "heading": "10. Adversarial checks of the scope"
+        },
+        {
+          "line": 783,
+          "level": 2,
+          "heading": "11. Independent computation and provenance"
+        },
+        {
+          "line": 822,
+          "level": 2,
+          "heading": "12. Remaining gap and strongest safe statement"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_literature_applicability.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/root_literature_applicability.md",
+      "source_sha256": "06661a2ea69a4b4973a72e8f8ea328e76397d3c1a00ef48f1c85506a7a9963a4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проверка опубликованных теорем и границ переноса"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Линдеман — Вейерштрасс: точное применённое утверждение"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "heading": "2. Эргодичность: точная классическая предпосылка"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "3. Почему результаты о случайных фазах не закрывают задачу"
+        },
+        {
+          "line": 94,
+          "level": 2,
+          "heading": "4. Соседние исследования, просмотренные для поиска идей"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "heading": "5. Итог проверки предпосылок"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/round7_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/round7_continuation_ledger.md",
+      "source_sha256": "9aa08a06199b712601acc83c3fcef75b364f3ecc6f39bb1eee9c6a25c7043d21",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 7: итоговая карта доказательств и незакрытых переходов"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Зафиксированная задача"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "2. Какие прежние ограничения сняты"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "3. Связи доказательств"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "4. Семь цепочек: что осталось недоказанным"
+        },
+        {
+          "line": 94,
+          "level": 2,
+          "heading": "5. Почему универсальность не выведена из новых входов"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "heading": "6. Следующая проверяемая цель"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/round7_research_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/round7_research_checkpoint.md",
+      "source_sha256": "bc03dd1dfee5af46dd3b6510206a69d8b5fa47bc12f80ef35a6b591acf26cd8b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Проход 7: рабочая карта исследования"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "Зафиксированная база"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "Независимые направления"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "Первая исходная недоказанная оценка"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_all_fixed_powers_checks.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_all_fixed_powers_checks.md",
+      "source_sha256": "6e0289187425ddcb295566a1b98df37b6389ef5c18c4333b23c559d0084a8816",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact checks for the independent all-fixed-power audit"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "Scope"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "Source provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_physical_fixed_powers49_checks.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_physical_fixed_powers49_checks.md",
+      "source_sha256": "35f5d75daad5dfc0b328ebf915045941fa94ec259783bd339a9a7e9b8a76d374",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent exact checks: physical powers through 49"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "Check counts"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "Exact constants"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "Source revisions"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "heading": "Reproduction"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/round6_main_report.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/round6_main_report.md",
+      "source_sha256": "473b7b5b700a8ff17801eb9ca422c5949be15d0551c252e0b4035997db54b2bf",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Текущий результат: точные ветви, полные классы замен и барьер длинных возвращений"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус исходной задачи"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "1. Семья и неизменённые кванторы"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "2. Точный нелинейный закон для ветвей"
+        },
+        {
+          "line": 85,
+          "level": 3,
+          "heading": "2.1. Почему сначала нужно исправить символ"
+        },
+        {
+          "line": 129,
+          "level": 3,
+          "heading": "2.2. Начальный Gauss-кернел без исключения составных размеров"
+        },
+        {
+          "line": 165,
+          "level": 3,
+          "heading": "2.3. Одна нелинейная функция определяет все ветви"
+        },
+        {
+          "line": 201,
+          "level": 3,
+          "heading": "2.4. Частота, которую не может уничтожить другой толчок"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "3. Явная физическая оценка для первых 49 степеней"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "4. Сокращение класса с линейным числом настоящих замен"
+        },
+        {
+          "line": 396,
+          "level": 3,
+          "heading": "4.1. Выделение разных посещений"
+        },
+        {
+          "line": 463,
+          "level": 3,
+          "heading": "4.2. Усиление: любые последовательные участки замен длины до 48"
+        },
+        {
+          "line": 551,
+          "level": 2,
+          "heading": "5. Полный сектор одинаковых посещений теперь ограничен на нужном масштабе"
+        },
+        {
+          "line": 572,
+          "level": 3,
+          "heading": "5.1. Самодостаточное доказательство механизма"
+        },
+        {
+          "line": 624,
+          "level": 3,
+          "heading": "5.2. Все факториальные порядки фазово-постоянной части"
+        },
+        {
+          "line": 652,
+          "level": 2,
+          "heading": "6. Точные нормировки и первые моменты через рациональные внутренние функции"
+        },
+        {
+          "line": 725,
+          "level": 2,
+          "heading": "7. Что удалось и что не удалось сократить детерминантной инволюцией"
+        },
+        {
+          "line": 762,
+          "level": 2,
+          "heading": "8. Геометрия длинных несовпадающих участков"
+        },
+        {
+          "line": 780,
+          "level": 3,
+          "heading": "8.1. Норма не уменьшается до времени порядка \\(N\\)"
+        },
+        {
+          "line": 801,
+          "level": 3,
+          "heading": "8.2. Полная энергия возвращений и её длинный хвост"
+        },
+        {
+          "line": 867,
+          "level": 3,
+          "heading": "8.1. Дополнение: точная ненулевость миноров и отсутствие тёмного сектора почти всюду по фазам"
+        },
+        {
+          "line": 959,
+          "level": 2,
+          "heading": "9. Первая конкретная недоказанная оценка"
+        },
+        {
+          "line": 1014,
+          "level": 3,
+          "heading": "9.1. Та же открытая оценка после удаления всего класса коротких участков"
+        },
+        {
+          "line": 1068,
+          "level": 2,
+          "heading": "10. Проверенное замыкание \\(H_{\\mathrm{diag}}\\Rightarrow\\mathrm{Sine}_2\\)"
+        },
+        {
+          "line": 1124,
+          "level": 2,
+          "heading": "11. Что проверено и как продолжать этот документ"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/root_literature_applicability.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/root_literature_applicability.md",
+      "source_sha256": "c063192b411737eb0823a99913e898d4ca2e551fca647163408425a09c1699a3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Published inputs and the boundary of the literature comparison"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Two exact published inputs used"
+        },
+        {
+          "line": 10,
+          "level": 3,
+          "heading": "1.1. Matrix bounded differences"
+        },
+        {
+          "line": 34,
+          "level": 3,
+          "heading": "1.2. Algebraic exponential independence"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "2. Why the quantum-graph result does not supply the missing estimate"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "3. Other recent constructions inspected"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "4. Remaining exact obligation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/round6_continuation_ledger.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/round6_continuation_ledger.md",
+      "source_sha256": "aea47f2b1dd88b85d4168a87063293d22d479787222b845765caa19754ab90c7",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Состояние исследования и правила следующего продолжения"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Неизменённая цель"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "2. Что теперь можно использовать без новой гипотезы"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "heading": "3. Какие переходы остаются открытыми"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "4. Пути, для которых уже найдены точные препятствия"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "5. Проверки и исправления текста"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "6. Целостность продолжаемого документа"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_original_audit_renewal_geometry.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/r6_original_audit_renewal_geometry.md",
+      "source_sha256": "ce222733017771f6d2ae0da2ad3725df48613aa9e3ca757ed83ee84c735086d8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of exact renewal geometry and long-return energy"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "heading": "1. Renewal orientation, centering, and norm bound"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. Complete energy and exact tails"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "heading": "3. Weighted identity and the exact singular-value obstruction"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "4. Finite short-return budgets and the physical cutoff 49"
+        },
+        {
+          "line": 168,
+          "level": 2,
+          "heading": "5. Phase fourth moment"
+        },
+        {
+          "line": 189,
+          "level": 2,
+          "heading": "6. Prime example and its scope"
+        },
+        {
+          "line": 218,
+          "level": 2,
+          "heading": "7. Literal bounded-run resummation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/root_audit_phase_concentration.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/root_audit_phase_concentration.md",
+      "source_sha256": "be8b3f2d4cd1bc62ea6ab8385f5087c945d0ae861c3ea2181af0d41962994aec",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Second-reader audit: concentration and all-order isolated occupations"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. The small operator difference is uniform"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "2. Exact class extraction and spectral-radius bounds"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "3. Removing the dimension factor in the good event"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "heading": "4. Fixed parameter and the rare-phase obstruction"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/round5_main_report.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/round5_main_report.md",
+      "source_sha256": "8a4629d270c1b70e2478ce98cc2ed66b8e4a6c836cc27c35fbaf1555587420c2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Текущий результат: точные сокращения растущего порядка и незакрытая спектральная сумма"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "0. Статус и правила чтения"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "1. Семья, кванторы и конечные тождества"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "2. Доказанные свойства физического ядра"
+        },
+        {
+          "line": 172,
+          "level": 3,
+          "heading": "2.1. Правильный символ и четыре ветви"
+        },
+        {
+          "line": 246,
+          "level": 3,
+          "heading": "2.2. Почему обращённые ветви сокращаются"
+        },
+        {
+          "line": 291,
+          "level": 2,
+          "heading": "3. Точное разбиение пар траекторий по всем временам"
+        },
+        {
+          "line": 367,
+          "level": 2,
+          "heading": "4. Настоящие знакопеременные сокращения длинных участков"
+        },
+        {
+          "line": 369,
+          "level": 3,
+          "heading": "4.1. Конечная формула с сохранением всех фаз"
+        },
+        {
+          "line": 440,
+          "level": 3,
+          "heading": "4.2. Почему это становится суммой по различным парам"
+        },
+        {
+          "line": 498,
+          "level": 3,
+          "heading": "4.3. Число участков порядка квадратного корня"
+        },
+        {
+          "line": 537,
+          "level": 3,
+          "heading": "4.4. Какие большие части сокращаются"
+        },
+        {
+          "line": 603,
+          "level": 2,
+          "heading": "5. Экспоненциальная когерентная часть"
+        },
+        {
+          "line": 625,
+          "level": 3,
+          "heading": "5.1. Статистика посещений доказана для замкнутых путей"
+        },
+        {
+          "line": 668,
+          "level": 3,
+          "heading": "5.2. Дерево последних выходов"
+        },
+        {
+          "line": 729,
+          "level": 2,
+          "heading": "6. Покрытие траекторий и оставшийся плотный класс"
+        },
+        {
+          "line": 766,
+          "level": 3,
+          "heading": "6.1. Положительная масса исходных слов"
+        },
+        {
+          "line": 801,
+          "level": 3,
+          "heading": "6.2. Сколько партнёров меняют мало таблиц"
+        },
+        {
+          "line": 882,
+          "level": 3,
+          "heading": "6.3. Следствие для всех длинных участков"
+        },
+        {
+          "line": 909,
+          "level": 2,
+          "heading": "7. Почему одних доказанных норм недостаточно"
+        },
+        {
+          "line": 962,
+          "level": 2,
+          "heading": "8. Дополнительные результаты об исходной семье"
+        },
+        {
+          "line": 964,
+          "level": 3,
+          "heading": "8.1. Поточечная плоскость не выполняется"
+        },
+        {
+          "line": 981,
+          "level": 3,
+          "heading": "8.2. Диагональные калибровки не восстанавливают обращение"
+        },
+        {
+          "line": 1007,
+          "level": 3,
+          "heading": "8.3. Ненулевые миноры в собственном базисе блоков Якоби"
+        },
+        {
+          "line": 1099,
+          "level": 2,
+          "heading": "9. Первая точная недоказанная оценка"
+        },
+        {
+          "line": 1155,
+          "level": 2,
+          "heading": "10. Замыкание при доказанном H_diag"
+        },
+        {
+          "line": 1234,
+          "level": 2,
+          "heading": "11. Литература, проверки и воспроизводимость"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/round5_post_audit_addendum.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/round5_post_audit_addendum.md",
+      "source_sha256": "3c2c02e81a3bb4c8d91c2fe0824581f95f07f39b26d587c6925ff45e56d5b8f5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Дополнение в конце прохода: полная компенсация внутри одинаковых посещений"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "Д.1. Суммирование всех направленных рёбер при фиксированных посещениях"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "Д.2. Экспоненциальная компенсация уже внутри этих секторов"
+        },
+        {
+          "line": 159,
+          "level": 2,
+          "heading": "Д.3. Между разными посещениями остаются исходные фазы"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "Д.4. Более широкий результат для помеченных наблюдаемых"
+        },
+        {
+          "line": 325,
+          "level": 2,
+          "heading": "Д.5. Что именно остаётся после дополнения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/arithmetic_audit_collision_moment_phase_cancellation.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/arithmetic_audit_collision_moment_phase_cancellation.md",
+      "source_sha256": "447a1d559969c424551eef1e1234725c2c5fabe5851f85dff9bfe3f12f512fcd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of collision-moment phase cancellation"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "Verdict"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "1. Source and hypothesis matching"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "2. Exact rank of a single repeated substring"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "3. Clean endpoint contractions survive the imposed event"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "4. The affected-arc forest and its exact powers of \\(N\\)"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "5. Collision count, roots, and orders"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "6. Exact verification of exponent (12)"
+        },
+        {
+          "line": 227,
+          "level": 2,
+          "heading": "7. The indicator obstruction and the scope boundary"
+        },
+        {
+          "line": 245,
+          "level": 2,
+          "heading": "8. Independent finite checks"
+        },
+        {
+          "line": 263,
+          "level": 2,
+          "heading": "Final assessment"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_exponential_coherent_edge_classes.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_exponential_coherent_edge_classes.md",
+      "source_sha256": "effadaa4e2b66189a077f65cc6a50019781024d020c0ffd46d2197511b21dbbf",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exponential coherent edge classes"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen target and verdict"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "2. Resolvent bounds, determinant identity, and coefficient extraction"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Counting good vertices without hidden correlations"
+        },
+        {
+          "line": 174,
+          "level": 2,
+          "heading": "4. The last-exit tree and completion of the greedy tour"
+        },
+        {
+          "line": 205,
+          "level": 2,
+          "heading": "5. Injectivity after erasing the artificial edge labels"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "6. Jensen, scale, and exclusions"
+        },
+        {
+          "line": 285,
+          "level": 2,
+          "heading": "7. Scope of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_four_branch_physical_kernel.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_four_branch_physical_kernel.md",
+      "source_sha256": "f2ae8cb525af0d957cfd59656bf4dce020404be80604d390c6800ca185b8e381",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact four-branch physical kernel"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen target and scope"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "2. Exact symbol and all odd moduli"
+        },
+        {
+          "line": 94,
+          "level": 2,
+          "heading": "3. Exact Gauss splitting and gluing"
+        },
+        {
+          "line": 171,
+          "level": 2,
+          "heading": "4. Analytic characteristic construction and constants"
+        },
+        {
+          "line": 262,
+          "level": 2,
+          "heading": "5. Residual, boundary use, and norm normalization"
+        },
+        {
+          "line": 341,
+          "level": 2,
+          "heading": "6. Scope boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_growing_order_signed_cancellation.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_growing_order_signed_cancellation.md",
+      "source_sha256": "bfcf47681e92fea287307294ee36c6ad6a511b6f5612c0a2edfe1083ddb1fc97",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: signed cancellation with a growing number of arcs"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "Verdict and a notation clarification"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "1. The exact class and its symmetry"
+        },
+        {
+          "line": 113,
+          "level": 2,
+          "heading": "2. All endpoint factors are mixing errors"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "3. Root factors and combinatorial budgets"
+        },
+        {
+          "line": 237,
+          "level": 2,
+          "heading": "4. Uniqueness across all allowed cut numbers"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "5. Exceptional words and reversed pairs"
+        },
+        {
+          "line": 405,
+          "level": 2,
+          "heading": "6. Square-root-order constants"
+        },
+        {
+          "line": 487,
+          "level": 2,
+          "heading": "7. Positive parts and cutoff-dependent errors"
+        },
+        {
+          "line": 602,
+          "level": 2,
+          "heading": "8. Exact scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_original_pointwise_interference.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_original_pointwise_interference.md",
+      "source_sha256": "cfc9f714eb19b28fedae80d1137d473bc6be59616e0b7829b83634e6760a48d3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: persistent physical-kernel interference"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen source and verdict"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "2. The four exact actions and the unique frequency"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "3. Modular coefficients on the exact progression"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "4. Cesaro coefficient and lower density"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "5. Scope boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_round5_main_report.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_round5_main_report.md",
+      "source_sha256": "eb1cb385cdcfca1e378de8420ea23656ee9560bf2d12f806539c65cf98910d2d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Final validation of the Round 5 main report"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "Scope and verdict"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "Verified corrections"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "Byte and delimiter checks"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "Qualifications for the cumulative document"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_round5_post_audit_addendum.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_round5_post_audit_addendum.md",
+      "source_sha256": "93fbb42a78f4b04f2f350879e68ddd62ed40f37cd541bfbf77b8d61026037702",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent validation of the post-audit Russian addendum"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Exact reviewed version"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "1. Occupation identities and relative error"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "heading": "2. Independent check of the collision estimates"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Uniform range and the indicator obstruction"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "heading": "4. Remaining target and document checks"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_sampled_oscillatory_matrix.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_sampled_oscillatory_matrix.md",
+      "source_sha256": "984a61a6ced92576ac08cded3c86718f646d72376827271e6707dff39b18ab90",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: sampled oscillatory matrices and reverse paths"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen source and verdict"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "2. Sampled-matrix normalization and fourth Schatten power"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "3. Alias control and the analytic zero alias"
+        },
+        {
+          "line": 157,
+          "level": 2,
+          "heading": "4. Exact phase coefficients and the fixed tiny parameter"
+        },
+        {
+          "line": 258,
+          "level": 2,
+          "heading": "5. Transfer to the actual matrices and all-odd uniformity"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_unmarked_three_arc_signed_cancellation.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_unmarked_three_arc_signed_cancellation.md",
+      "source_sha256": "43d297e1cdb1f2f12f120e0a274b6343472a7ebda9e83dd56aefbfc2b5e1984a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: unmarked signed cancellation of three long arcs"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "Verdict and quantitative notation correction"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "1. Inputs and their scope"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "2. Exact arc parametrization and all multiplicities"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "3. The signed endpoint cancellation and its error"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "heading": "4. The coalesced term and the exact edge-count criterion"
+        },
+        {
+          "line": 294,
+          "level": 2,
+          "heading": "5. Unique marking on regular pairs"
+        },
+        {
+          "line": 349,
+          "level": 2,
+          "heading": "6. Absolute removal of irregular pairs"
+        },
+        {
+          "line": 427,
+          "level": 2,
+          "heading": "7. Absolute removal of reversed rotation pairs"
+        },
+        {
+          "line": 507,
+          "level": 2,
+          "heading": "8. Transfer to the unmarked class and precise conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/dual_audit_exponential_coherent_edge_classes.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/dual_audit_exponential_coherent_edge_classes.md",
+      "source_sha256": "598579babb15dfa66582c5d8f66d6b287dea556312aa52e606eda555df0a04d0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exponentially large coherent directed-edge classes"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "1. The hypotheses and their elementary consequences"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Exact visit generating function and its uniform approximation"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "heading": "3. The weighted mean of good vertices"
+        },
+        {
+          "line": 184,
+          "level": 2,
+          "heading": "4. Directed last exits and the stack algorithm"
+        },
+        {
+          "line": 215,
+          "level": 2,
+          "heading": "5. Injectivity as unlabelled vertex words and Jensen's inequality"
+        },
+        {
+          "line": 245,
+          "level": 2,
+          "heading": "6. Signed complement, rotations and scope"
+        },
+        {
+          "line": 282,
+          "level": 2,
+          "heading": "7. Independent finite combinatorial check"
+        }
+      ]
+    },
+    {
+      "original_path": "Spectral_proofs_2026-10-21.md",
+      "target": "record/spectral_research/history/Spectral_proofs_2026-10-21_front_matter.md",
+      "source_sha256": "e17ab35d376efb02a2ec7db1e0265fe09c5ddcc6a03c7f2723a624bf3fd4f3e3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Полные доказательства и проверенные границы результата"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "Основной отчёт"
+        },
+        {
+          "line": 9,
+          "level": 1,
+          "heading": "Спектральная статистика заданных матриц: продолжение исследования"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "heading": "1. Равномерный численный зазор для арифметических блоков"
+        },
+        {
+          "line": 51,
+          "level": 3,
+          "heading": "1.1. Точный символ и две его нормы"
+        },
+        {
+          "line": 108,
+          "level": 3,
+          "heading": "1.2. Равномерная операторная лемма"
+        },
+        {
+          "line": 183,
+          "level": 3,
+          "heading": "1.3. Усиление масштаба и завершение доказательства"
+        },
+        {
+          "line": 223,
+          "level": 2,
+          "heading": "2. Полная оценка вклада неизменного арифметического маршрута"
+        },
+        {
+          "line": 271,
+          "level": 2,
+          "heading": "3. Экспоненциально большой класс смешанных путей"
+        },
+        {
+          "line": 338,
+          "level": 3,
+          "heading": "3.1. Произвольный фиксированный порядок и все полиномиально растущие делители"
+        },
+        {
+          "line": 381,
+          "level": 2,
+          "heading": "4. Первая недоказанная оценка"
+        },
+        {
+          "line": 417,
+          "level": 3,
+          "heading": "4.1. Выполненная попытка оценить весь оставшийся класс"
+        },
+        {
+          "line": 472,
+          "level": 3,
+          "heading": "4.2. Более сильная комплексная интерполяция тоже проверена"
+        },
+        {
+          "line": 509,
+          "level": 2,
+          "heading": "5. Исключение обращения времени с произвольными координатными фазами"
+        },
+        {
+          "line": 535,
+          "level": 3,
+          "heading": "5.1. Ранг при алгебраическом параметре"
+        },
+        {
+          "line": 548,
+          "level": 3,
+          "heading": "5.2. Как устраняются неизвестные фазы"
+        },
+        {
+          "line": 568,
+          "level": 3,
+          "heading": "5.3. Противоречие уже в первой производной"
+        },
+        {
+          "line": 594,
+          "level": 3,
+          "heading": "5.4. Унитарные симметрии и сопряжение симметричным толчком"
+        },
+        {
+          "line": 609,
+          "level": 3,
+          "heading": "5.5. Все Weyl-нормализующие обращения при рациональном расщеплении"
+        },
+        {
+          "line": 675,
+          "level": 2,
+          "heading": "6. Другие результаты этого продолжения и их точный статус"
+        }
+      ]
+    },
+    {
+      "original_path": "Spectral_research_round4_2026-10-21.md",
+      "target": "record/spectral_research/history/Spectral_research_round4_2026-10-21_front_matter.md",
+      "source_sha256": "ee692e8f4c4571158c6796df51f9f725f02ae8ee94ec309731288ba89b27c62c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Детерминированная спектральная задача: оценки по всем временам и незакрытый предел"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Статус результата"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "1. Точная семья и объект, который необходимо вычислить"
+        },
+        {
+          "line": 90,
+          "level": 2,
+          "heading": "2. Оценка всех элементов: формулировка"
+        },
+        {
+          "line": 116,
+          "level": 3,
+          "heading": "2.1. Почему модульную половину нельзя заменить вещественной"
+        },
+        {
+          "line": 150,
+          "level": 3,
+          "heading": "2.2. Точное исчисление и построение фазы"
+        },
+        {
+          "line": 225,
+          "level": 3,
+          "heading": "2.3. Производные порядков от 2 до 17"
+        },
+        {
+          "line": 279,
+          "level": 3,
+          "heading": "2.4. Все модульные дополнительные члены"
+        },
+        {
+          "line": 330,
+          "level": 3,
+          "heading": "2.5. Отрыв от единицы для оставшихся низких меток"
+        },
+        {
+          "line": 359,
+          "level": 2,
+          "heading": "3. Произвольные маршруты: суммирование по всем большим временам"
+        },
+        {
+          "line": 429,
+          "level": 2,
+          "heading": "4. Линейный маршрут: включая все ранние времена"
+        },
+        {
+          "line": 537,
+          "level": 3,
+          "heading": "4.1. Точное место результата в исходном функционале"
+        },
+        {
+          "line": 558,
+          "level": 3,
+          "heading": "4.2. Дополнительный фазовый результат: отсутствие точного возврата"
+        },
+        {
+          "line": 636,
+          "level": 2,
+          "heading": "5. Почему этих оценок недостаточно: доказанный вспомогательный пример"
+        },
+        {
+          "line": 720,
+          "level": 3,
+          "heading": "5.1. Спектральное нарушение в этой вспомогательной семье"
+        },
+        {
+          "line": 743,
+          "level": 2,
+          "heading": "6. Проверка конечных тождеств и достаточности критерия"
+        },
+        {
+          "line": 747,
+          "level": 3,
+          "heading": "6.1. Фурье и включение–исключение"
+        },
+        {
+          "line": 773,
+          "level": 3,
+          "heading": "6.2. CUE-эталон"
+        },
+        {
+          "line": 802,
+          "level": 3,
+          "heading": "6.3. Бонферрони и аппроксимация"
+        },
+        {
+          "line": 849,
+          "level": 3,
+          "heading": "6.4. Локальный предел CUE"
+        },
+        {
+          "line": 877,
+          "level": 2,
+          "heading": "7. Точная первая недоказанная оценка"
+        },
+        {
+          "line": 930,
+          "level": 2,
+          "heading": "8. Карта доказательств и область проверки"
+        },
+        {
+          "line": 953,
+          "level": 1,
+          "heading": "Приложения: зафиксированные доказательства и проверки"
+        },
+        {
+          "line": 959,
+          "level": 2,
+          "heading": "Реестр источников"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_fixed_order_gap_and_final_sparse_snapshot.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_fixed_order_gap_and_final_sparse_snapshot.md",
+      "source_sha256": "baa6321547e3ab0aa40d210ee9e55554718f37497de1bac3f1c20abab4892b5d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of fixed-order arithmetic escape"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Snapshot, verdict, and the final sparse-history binding"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "heading": "1. Uniform quantum-to-classical symbol convergence"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "heading": "2. A fixed nonzero coefficient survives every derivative order"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "3. The general finite-word estimate"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "4. Endpoint descent and ordinary phase quantization"
+        },
+        {
+          "line": 236,
+          "level": 2,
+          "heading": "5. Positive defect and compression, uniformly in all parameters"
+        },
+        {
+          "line": 290,
+          "level": 2,
+          "heading": "6. Quantifiers and surviving conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_phase_logtime_dispersion.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_phase_logtime_dispersion.md",
+      "source_sha256": "f806c3b85c026b11535f7dae1513171ddbba4df52a3c76075883dd0a8b8d92e2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of logarithmic-time dispersion and translated kicks"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and exact scope"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "1. Convention and the exact finite operator"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. Global complex graph transform, including intercepts"
+        },
+        {
+          "line": 126,
+          "level": 2,
+          "heading": "3. Exact sampling and the Schrödinger residual"
+        },
+        {
+          "line": 181,
+          "level": 2,
+          "heading": "4. Exact quadratic decomposition and Poisson normalization"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "heading": "5. Uniform stationary phase, including exterior critical points"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "heading": "6. Iteration and the translated extension"
+        },
+        {
+          "line": 323,
+          "level": 2,
+          "heading": "7. Surviving consequences and limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_quartic_commutator_word.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_quartic_commutator_word.md",
+      "source_sha256": "ac9afae71b2c9ad15bc00b4a2b98da25473131bcff15072432c605060b4118c6",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact quartic commutator estimate at N=d^4"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Outcome"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "1. Exact symbol, Weyl conventions, and generators"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "2. A uniformly convergent exact Fourier Heisenberg series"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "3. Uniform mixed scaled commutators"
+        },
+        {
+          "line": 271,
+          "level": 2,
+          "heading": "4. A finite-word lemma with an operator-norm remainder"
+        },
+        {
+          "line": 347,
+          "level": 2,
+          "heading": "5. Applying the word lemma at the critical scale"
+        },
+        {
+          "line": 390,
+          "level": 2,
+          "heading": "6. Exact norm descent: an explicit Zak decomposition"
+        },
+        {
+          "line": 447,
+          "level": 2,
+          "heading": "7. Scalar phases and the odd lattice"
+        },
+        {
+          "line": 470,
+          "level": 2,
+          "heading": "8. Optional stronger symbol form"
+        },
+        {
+          "line": 524,
+          "level": 2,
+          "heading": "9. Consequence for the canonical oldspace"
+        },
+        {
+          "line": 594,
+          "level": 2,
+          "heading": "10. Audit boundary and provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_quartic_extension_addendum.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_quartic_extension_addendum.md",
+      "source_sha256": "e5d0e52f4deefeb70b9c52e2e19e47b357e62e72e649cf4141aa8f985003ec57",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Audit addendum: all divisors, all characters, and the signed pair removal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and frozen files"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "1. Divisor range and a uniform threshold"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "2. Exact same-direction constant"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "heading": "3. Every oldspace character"
+        },
+        {
+          "line": 141,
+          "level": 2,
+          "heading": "4. Exact metaplectic action and the itinerary contraction"
+        },
+        {
+          "line": 175,
+          "level": 2,
+          "heading": "5. Fixed characters at every composite modulus"
+        },
+        {
+          "line": 206,
+          "level": 2,
+          "heading": "6. Entire bounded-weight signed pair removal"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "7. Safe conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_russian_synthesis_update.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_russian_synthesis_update.md",
+      "source_sha256": "6539d4f0709bd83081dbafda2e77be0f746a689d9802ca0f38f111dca5b56268",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Дополнение к проверке русской сводки: раздел 4.1 и уточнение размерностей"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. Открытые и замкнутые истории"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Точный след канала с проекцией на характеры"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "3. Полная оценка Фейера"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "Заключение"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_schrodinger_rankone_compatibility.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_schrodinger_rankone_compatibility.md",
+      "source_sha256": "76acb4983385655f4629a17dbefa5212f293e2c58c4ecd3fd5a520a41b5ca193",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: the actual Schrödinger exponential and the rank-one cocycle"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Claim and verdict"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "heading": "Exact source revisions"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "1. Reconstruction from the finite definition"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "heading": "2. The exact amplitude equation is the equation of the actual exponential"
+        },
+        {
+          "line": 145,
+          "level": 2,
+          "heading": "3. Independent algebra of the rank-one splitting"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "4. Why unitarity itself supplies no counterexample to this construction"
+        },
+        {
+          "line": 228,
+          "level": 2,
+          "heading": "Obligation matrix and surviving claims"
+        },
+        {
+          "line": 245,
+          "level": 2,
+          "heading": "Provenance and checks"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_trace_foundation_independent.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_trace_foundation_independent.md",
+      "source_sha256": "8cc14d6dbcae730a9a0b0a139f23fc285ce2a6a9772a1f58109f50c2b12614ac",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent adversarial audit of the exact trace foundation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Normalized claim and verdict"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "Exact revision and evidence boundary"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "Claim card"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "Dependency graph and obligation matrix"
+        },
+        {
+          "line": 96,
+          "level": 2,
+          "heading": "1. The actual quantum operator and the exact one-step amplitude"
+        },
+        {
+          "line": 168,
+          "level": 2,
+          "heading": "2. Finite torus to full flat sectors"
+        },
+        {
+          "line": 244,
+          "level": 2,
+          "heading": "3. Abel path integrals and exact critical-point indexing"
+        },
+        {
+          "line": 284,
+          "level": 2,
+          "heading": "4. Bounded contour and one uniform operator neighborhood"
+        },
+        {
+          "line": 361,
+          "level": 2,
+          "heading": "5. Exact graph split and summed residual"
+        },
+        {
+          "line": 435,
+          "level": 2,
+          "heading": "6. Repetition of the action and the odd-lattice sign"
+        },
+        {
+          "line": 471,
+          "level": 2,
+          "heading": "7. Uniform modulus to second order in \\(h\\)"
+        },
+        {
+          "line": 559,
+          "level": 2,
+          "heading": "Boundary calculations and command record"
+        },
+        {
+          "line": 576,
+          "level": 2,
+          "heading": "Exact remaining boundary and safe surviving claims"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_audit_summary_split_addendum.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/phase_audit_summary_split_addendum.md",
+      "source_sha256": "8449308fa7cc455cf209a424eb93b77b20e09158d080b7d8392698efe2cc367a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Targeted audit addendum: final split-symmetry passages in the summary"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "1. The definition at the end of Section 5.4"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "2. Conditions and coordinate convention in Section 5.5"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "3. Transmission of the proof"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "4. Scope and final disposition"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_prequantum_dolgopyat_scope.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/phase_prequantum_dolgopyat_scope.md",
+      "source_sha256": "91215713938e76debb628149d578fca00e3f22a872d98e8e02a42628876640cb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Prequantum and Dolgopyat estimates: actual weights and the shrinking spectral window"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. The actual geometric setting"
+        },
+        {
+          "line": 92,
+          "level": 2,
+          "heading": "2. The sign of the potential is essential"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "3. What the prequantum band theorem actually estimates"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "heading": "4. Exact amplitude corrections at linear times"
+        },
+        {
+          "line": 178,
+          "level": 2,
+          "heading": "5. A concrete high-frequency Dolgopyat comparison"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "6. The executed Planck-hole test"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "7. Precedent for the exact-integration obstruction"
+        },
+        {
+          "line": 259,
+          "level": 2,
+          "heading": "8. Precise outcome"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/audit_quantitative.md",
+      "target": "record/spectral_research/sources/research_continuation_2026_10_20/audit_quantitative.md",
+      "source_sha256": "91f854140a2fd1e28db50fead59afd9e1cbf70d6bef631895bdedbd85bed0455",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the effective transcendence bound"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. Verdict"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "2. Authentication of the published estimate"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "3. The algebraic field and simultaneous eigenvalue height"
+        },
+        {
+          "line": 176,
+          "level": 2,
+          "heading": "4. Projector heights and the possible denominator gap"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "5. Why the Gram determinant avoids a simplicity hypothesis"
+        },
+        {
+          "line": 309,
+          "level": 2,
+          "heading": "6. Support, degree, and heights after all frequency collisions"
+        },
+        {
+          "line": 395,
+          "level": 2,
+          "heading": "7. The gap bound and the direct gap-product limitation"
+        },
+        {
+          "line": 491,
+          "level": 2,
+          "heading": "8. Independent check of the rank-one counterexample"
+        },
+        {
+          "line": 569,
+          "level": 2,
+          "heading": "9. Disposition"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/overview_ru.md",
+      "target": "record/spectral_research/sources/research_continuation_2026_10_20/overview_ru.md",
+      "source_sha256": "07cf27986c196b4f90f8d3266a3e15cbbd2a16bdc7d856078c3ee9f42357fa8d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Спектральная статистика заданной детерминированной семьи"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Состояние основной задачи"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "0. Точная цель и обозначения"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "1. Что доказано для конкретного \\(U_N\\)"
+        },
+        {
+          "line": 65,
+          "level": 3,
+          "heading": "1.1. Исправленный символ, точная нормировка и все времена"
+        },
+        {
+          "line": 128,
+          "level": 3,
+          "heading": "1.2. Точный динамический определитель"
+        },
+        {
+          "line": 153,
+          "level": 3,
+          "heading": "1.3. Модуль амплитуд и полный вклад одной орбиты"
+        },
+        {
+          "line": 202,
+          "level": 3,
+          "heading": "1.4. Два точных арифметических исключения"
+        },
+        {
+          "line": 229,
+          "level": 3,
+          "heading": "1.5. Все нечётные размерности: точные симметрии и CRT"
+        },
+        {
+          "line": 279,
+          "level": 3,
+          "heading": "1.6. Явная количественная граница без предположения простоты"
+        },
+        {
+          "line": 315,
+          "level": 3,
+          "heading": "1.7. Точная классификация простоты голой матрицы и бесконечные классы для U"
+        },
+        {
+          "line": 374,
+          "level": 2,
+          "heading": "2. Точная первая недоказанная оценка"
+        },
+        {
+          "line": 426,
+          "level": 2,
+          "heading": "3. Проверенные препятствия для предложенных методов"
+        },
+        {
+          "line": 428,
+          "level": 3,
+          "heading": "Самоинверсность, все времена и диагональная сумма"
+        },
+        {
+          "line": 448,
+          "level": 3,
+          "heading": "Сжатие присоединённой динамики"
+        },
+        {
+          "line": 470,
+          "level": 3,
+          "heading": "Простой гамильтониан и общий коммутант не дают простоты продукта"
+        },
+        {
+          "line": 497,
+          "level": 2,
+          "heading": "4. Проверка замыкания к Sine_2"
+        },
+        {
+          "line": 513,
+          "level": 2,
+          "heading": "5. Как читать полный пакет"
+        },
+        {
+          "line": 553,
+          "level": 2,
+          "heading": "Основные внешние источники"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_all_odd_eigenline_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_all_odd_eigenline_audit.md",
+      "source_sha256": "8b2143715121d41735b9d2c2baa586623effce0c524dcb8cdade7b4ece542fb5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exclusion of algebraic eigenlines for all odd N except 7"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen inputs and verdict"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "2. The seven paths and their integral recurrence"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Why the new mixed minor avoids the earlier Fourier obstruction"
+        },
+        {
+          "line": 144,
+          "level": 2,
+          "heading": "4. Independent verification of the three finite certificates"
+        },
+        {
+          "line": 203,
+          "level": 2,
+          "heading": "5. The projective transcendence argument"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "6. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_all_time_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_all_time_audit.md",
+      "source_sha256": "dbc1070d04c238213138b5eb433776d3ce0dfb6e9c07fca7eb90ebd9b42c7c25",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent adversarial audit of the all-time trace input"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and exact scope"
+        },
+        {
+          "line": 18,
+          "level": 3,
+          "heading": "Frozen inputs"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "heading": "1. The quantization convention cannot be skipped"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "2. Why the amplitude construction is exact and uniform in real h"
+        },
+        {
+          "line": 119,
+          "level": 3,
+          "heading": "An explicit check of the amplitude deck law"
+        },
+        {
+          "line": 129,
+          "level": 2,
+          "heading": "3. The exact full-sector integral survives the Abel limit"
+        },
+        {
+          "line": 152,
+          "level": 2,
+          "heading": "4. The bounded contour has enough decay"
+        },
+        {
+          "line": 176,
+          "level": 2,
+          "heading": "5. The trace-class reduction is dimension independent"
+        },
+        {
+          "line": 202,
+          "level": 2,
+          "heading": "6. Exact graph splitting and the numerical all-time remainder"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "7. Uniform finite jets: why the modulus estimate is valid"
+        },
+        {
+          "line": 277,
+          "level": 2,
+          "heading": "8. A real limitation for any next argument"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_effective_horizon_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_effective_horizon_audit.md",
+      "source_sha256": "996abb617d3ea49f9e566b00b662c74ee4cf0ffc8fbc334a1c27ff12a39eec0a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the explicit sector horizon"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Frozen input and verdict"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "2. Torus defect, including the lift issue"
+        },
+        {
+          "line": 92,
+          "level": 2,
+          "heading": "3. Global complex strip and the propagated observables"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "4. Published one-dimensional theorem and the two-dimensional estimate"
+        },
+        {
+          "line": 203,
+          "level": 2,
+          "heading": "5. The varying cutoff: why the Egorov objection does not apply"
+        },
+        {
+          "line": 250,
+          "level": 2,
+          "heading": "6. Horizon, uniformity, and spectral-window consequence"
+        },
+        {
+          "line": 285,
+          "level": 2,
+          "heading": "7. A limited but rigorous obstruction to improving only the analytic step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_fermionic_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_fermionic_audit.md",
+      "source_sha256": "77cc1c98db6ea50e46d1a0792a856f1abc3f742fa9aa1081aec5fd0987469948",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the new pseudo-orbit cancellation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Frozen claim and verdict"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "1. The odd-lattice character is compatible with repetition"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "2. The exterior estimate genuinely beats the binomial bound"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. The positive diagonal and its analytic radius"
+        },
+        {
+          "line": 196,
+          "level": 2,
+          "heading": "4. The value and stability of C_F"
+        },
+        {
+          "line": 242,
+          "level": 2,
+          "heading": "5. What the signed cancellation proves"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "6. Reciprocal coefficients and the correctly exposed remaining gap"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "heading": "Remaining original assertion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_final_operator_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_final_operator_audit.md",
+      "source_sha256": "91a78f95638a706116d8ebbef651eb9e84102a3c164ed5d07b9709f79ab30fd8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent final audit: endpoint laws, quantum feedback, shells, and exact sectors"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen inputs"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "2. Endpoint laws and the sine compression: fresh challenge passed"
+        },
+        {
+          "line": 29,
+          "level": 3,
+          "heading": "2.1. The equilibrium measure is area"
+        },
+        {
+          "line": 48,
+          "level": 3,
+          "heading": "2.2. Actual differentiability is proved separately"
+        },
+        {
+          "line": 60,
+          "level": 3,
+          "heading": "2.3. Exact cylinder indexing and normalization"
+        },
+        {
+          "line": 89,
+          "level": 2,
+          "heading": "3. Exact quantum feedback: all norm factors checked"
+        },
+        {
+          "line": 138,
+          "level": 2,
+          "heading": "4. Continuum shell theorem: coefficient and tails checked"
+        },
+        {
+          "line": 168,
+          "level": 2,
+          "heading": "5. Principal selected family to the exact double sum"
+        },
+        {
+          "line": 202,
+          "level": 2,
+          "heading": "6. Consolidated report and remaining estimate"
+        },
+        {
+          "line": 215,
+          "level": 2,
+          "heading": "7. Primary-source check on a possible future open-map input"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_homoclinic_transfer_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_homoclinic_transfer_audit.md",
+      "source_sha256": "dded43ab4fda8e112ebefb9f2bbf55fb356cbc5ade56986428357020897e529f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact homoclinic weights and doubled transfer"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Input and verdict"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "2. Exact Landau gauge"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "3. Uniform trace-norm regularity of the centered kernel"
+        },
+        {
+          "line": 110,
+          "level": 2,
+          "heading": "4. Fractional regularity without a false smooth graph claim"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "5. Symbolic matching and multiplicities"
+        },
+        {
+          "line": 177,
+          "level": 2,
+          "heading": "6. Doubled operator and Abel normalization"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_logarithmic_horizon_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_logarithmic_horizon_audit.md",
+      "source_sha256": "342899a923a09e459865611299dbf9a2162473e439f39646d167a914fcb28341",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the fixed-divisor logarithmic horizon"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Frozen inputs and conclusion"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "2. Analytic curves, global graphs, and area charts"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Conjugacy and exclusion of translated germs"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "4. Finite contact and its stability"
+        },
+        {
+          "line": 143,
+          "level": 2,
+          "heading": "5. The inverse graph transform on one disk"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "6. Why the finite-curve count is valid"
+        },
+        {
+          "line": 215,
+          "level": 2,
+          "heading": "7. Imported quantum estimate and exponents"
+        },
+        {
+          "line": 247,
+          "level": 2,
+          "heading": "8. Precise scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_nonlattice_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_nonlattice_audit.md",
+      "source_sha256": "419838b92148a29f21a32c450dff633089f437462011593efcb0f8391f772847",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact fixed multipliers and their multiplicative independence"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "Frozen inputs"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "1. Direct recomputation of the fixed-point data"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "2. The transcendental field substitution is legitimate"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "3. Private simple zeros give the required four square classes"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "4. The multiquadratic lemma needs no hidden algebraic closure claim"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "5. Multiplicative and affine nonlattice conclusions"
+        },
+        {
+          "line": 180,
+          "level": 2,
+          "heading": "6. Exact boundary of the audited result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_uniform_contact_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_uniform_contact_audit.md",
+      "source_sha256": "27c1f823be45f3e4fd6bc862bd20d9575a9a01e6deeff10d36eb601a9222eb75",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of uniform contact at infinitesimal translations"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Input and verdict"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "2. A direct graph transform in the weighted holomorphic norm"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "3. Justification of Banach differentiability"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "4. Global leaves and the finite-translation test"
+        },
+        {
+          "line": 130,
+          "level": 2,
+          "heading": "5. The infinitesimal test: analyticity of the needed derivative"
+        },
+        {
+          "line": 158,
+          "level": 2,
+          "heading": "6. Compactification and uniform contact"
+        },
+        {
+          "line": 202,
+          "level": 2,
+          "heading": "7. Relative backward error and its quantifiers"
+        },
+        {
+          "line": 240,
+          "level": 2,
+          "heading": "8. Boundary of the verified result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_seven_chain_discriminant_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/arithmetic_seven_chain_discriminant_checkpoint.md",
+      "source_sha256": "eee2b4caa27349a81e5cf3113d53ff1f88164e44b748c2eb99754f6e07fc6a8f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Seven-chain minors: proved block statement and the unresolved confluent term"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. A block theorem valid in every dimension divisible by 7"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "heading": "2. The exact first mixed obstruction when 49 divides N"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "3. The exact unproved step in this route"
+        },
+        {
+          "line": 202,
+          "level": 2,
+          "heading": "4. A short trace corollary in the already solved dimensions"
+        },
+        {
+          "line": 243,
+          "level": 2,
+          "heading": "5. Frozen inputs"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_consolidated_report_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_consolidated_report_audit.md",
+      "source_sha256": "19a23492cd0c34fa4db2832ee9320a1866692a5656042327b42ee3255727057c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the consolidated spectral report"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Versions and scope"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "heading": "2. Exact pair test and the modular symbol"
+        },
+        {
+          "line": 89,
+          "level": 2,
+          "heading": "3. What is exact in the orbit formula"
+        },
+        {
+          "line": 138,
+          "level": 2,
+          "heading": "4. The signed three-cell profile"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "5. The new exact-sector bridge"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "6. Six connections and between-class cancellation"
+        },
+        {
+          "line": 273,
+          "level": 2,
+          "heading": "7. Exact quantum returns and their constants"
+        },
+        {
+          "line": 313,
+          "level": 2,
+          "heading": "8. Mesoscopic feedback and finite shell theorem"
+        },
+        {
+          "line": 365,
+          "level": 2,
+          "heading": "9. Arithmetic range"
+        },
+        {
+          "line": 396,
+          "level": 2,
+          "heading": "10. The complete error budget in the remaining pair identity"
+        },
+        {
+          "line": 445,
+          "level": 2,
+          "heading": "11. Closure and external statements"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_finite_detector_shell_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_finite_detector_shell_audit.md",
+      "source_sha256": "c2ec38925db10f7c178d8e3d5e93acd757dddcaff29b53760d638a04eca5c849",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact finite detector shell coherence"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Input and verdict"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "1. Exact matrix and finite denominator"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. Uniform adjacent-interval lemma"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "3. Counting every rounded shell"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "heading": "4. Purity, coefficients, and determinants"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "5. Scope of the audit"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_mixed_ward_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_mixed_ward_audit.md",
+      "source_sha256": "48d5eb8c02321dba100ae6224c01944e1771d42fac7d9cf66ead104ef331029d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the mixed quantum return identities"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. The mixed finite telescope"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "2. The weighted identity"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "heading": "3. Insertions and the \\(k=0\\) endpoint"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "4. The positive open Abel lower bound"
+        },
+        {
+          "line": 130,
+          "level": 2,
+          "heading": "5. The determinant and coefficient ordering"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_root_trace_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_root_trace_audit.md",
+      "source_sha256": "449aa3d72f26a6b3b195395f5ef714ecebcd3a42071718b569f8d7658c0712eb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Audit of the quantitative trace lemma, followed by a denominator test"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status and frozen inputs"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "Part I. Independent audit"
+        },
+        {
+          "line": 21,
+          "level": 3,
+          "heading": "1. Quantization and aliases"
+        },
+        {
+          "line": 58,
+          "level": 3,
+          "heading": "2. Analytic sublevel exponent"
+        },
+        {
+          "line": 81,
+          "level": 3,
+          "heading": "3. There is no hidden uniform Egorov assumption"
+        },
+        {
+          "line": 134,
+          "level": 3,
+          "heading": "4. The companion fixed-time hypotheses"
+        },
+        {
+          "line": 156,
+          "level": 3,
+          "heading": "5. All characters and the normalization"
+        },
+        {
+          "line": 186,
+          "level": 2,
+          "heading": "Part II. A fixed analytic conjugacy tests the missing denominator step"
+        },
+        {
+          "line": 188,
+          "level": 3,
+          "heading": "6. One explicit family, with no auxiliary averaging"
+        },
+        {
+          "line": 226,
+          "level": 3,
+          "heading": "7. Direct Egorov check for this fixed analytic model"
+        },
+        {
+          "line": 271,
+          "level": 3,
+          "heading": "8. All fixed odd arithmetic sectors mix in this model"
+        },
+        {
+          "line": 321,
+          "level": 3,
+          "heading": "9. The exponential trace bounds and hyperbolic orbit formula also survive"
+        },
+        {
+          "line": 412,
+          "level": 3,
+          "heading": "10. An explicit infinite odd-dimensional short-period sequence"
+        },
+        {
+          "line": 455,
+          "level": 3,
+          "heading": "11. The sector law does not give the pair statistic or a bounded local limit"
+        },
+        {
+          "line": 500,
+          "level": 3,
+          "heading": "12. Direct failure of the missing reciprocal norm bound"
+        },
+        {
+          "line": 557,
+          "level": 3,
+          "heading": "13. A precise property of the original map that this model does not share"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_homoclinic_doubled_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/root_homoclinic_doubled_audit.md",
+      "source_sha256": "7a69112ae859e4469ca1ca87225c41b7d80175c97f2fee3d7d64db1c656c25a6",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the exact coherent pairs and doubled transfer"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Exact phase and the odd-dimensional convention"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "2. Uniform regularity of the actual scalar"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "3. The concrete symbolic pair"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "4. Cell matching, amplitudes, and sizes"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "5. Doubled transfer and all tail factors"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "heading": "6. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_signed_profile_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/root_signed_profile_audit.md",
+      "source_sha256": "be18850a3d06be8e7b26c3aa1a1b979638923537acbe67bfd8dbf49a2223df41",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Root audit of the complete signed three-cell profile"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "Verdict"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "Independent checks"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "Exact scope of the endpoint kernel"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_one_step_pinching_hs.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_one_step_pinching_hs.md",
+      "source_sha256": "7c59bc69854347e4615db94691d7d15bd86e0e776ce4bc639c07878bc611acce",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: one-step HS pinching and all-time history removal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict, frozen inputs, and scope"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "heading": "1. Exact Weyl product and the two alias identities"
+        },
+        {
+          "line": 37,
+          "level": 3,
+          "heading": "1.1. The sup-norm to normalized-HS bound"
+        },
+        {
+          "line": 64,
+          "level": 3,
+          "heading": "1.2. The exact trace pairing"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "2. The certified center phase"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "3. Transport and the order-`h` cancellation"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "4. Exact matrix comparison in normalized HS norm"
+        },
+        {
+          "line": 172,
+          "level": 2,
+          "heading": "5. Uniform translation echo and removal of all nonzero aliases"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "6. Independent check of the raw analytic oscillation lemma"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "7. HS pinching for every square divisor"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "8. The mixed HS/operator estimate and the constant 24"
+        },
+        {
+          "line": 288,
+          "level": 2,
+          "heading": "9. The broad subpolynomial range"
+        },
+        {
+          "line": 309,
+          "level": 2,
+          "heading": "10. Exact scope of the conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_root_uniform_analytic_oscillation.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_root_uniform_analytic_oscillation.md",
+      "source_sha256": "beafab75dc06644b22aa2395f6fd05dcc3628ab20d895ccb8e560b093819a9ff",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: uniform oscillation of translated analytic phase differences"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "Verdict and scope"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "1. Uniform nonconstancy after compactifying zero translation"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "heading": "2. Directional reduction and C1 localization"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "heading": "3. Independent reconstruction of the sublevel and oscillatory bounds"
+        },
+        {
+          "line": 175,
+          "level": 2,
+          "heading": "4. The grid average is genuinely independent of its denominator"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "5. The exact additional identity needed in the application"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_center_phase_c17.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_center_phase_c17.md",
+      "source_sha256": "f9389738b8ff10a520d3c8a9c2d1ad4467e7990273433de4d7e517ccfdd87ad0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the explicit C17 center-phase bound"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "Verdict"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "1. The inverse midpoint map really exists on the wider strip"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "2. Complex Hamilton--Jacobi difference and action normalization"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "3. Cauchy radii, all mixed derivatives, and the rational comparison"
+        },
+        {
+          "line": 133,
+          "level": 2,
+          "heading": "4. Boundary of what has been established"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_explicit_symbol_finite_type16.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_explicit_symbol_finite_type16.md",
+      "source_sha256": "1da0fbd15dec74a90a742804f69165f478673ce07aaf7eb38760de7f60cb7ffb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Explicit finite type 16 for every translated center-phase difference"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Exact claim and dependencies"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "2. Two exact differential coefficient extractors"
+        },
+        {
+          "line": 122,
+          "level": 2,
+          "heading": "3. The coefficient-norm budget is 27, not 54"
+        },
+        {
+          "line": 166,
+          "level": 2,
+          "heading": "4. Uniform nondegeneracy and its `C^17` stability"
+        },
+        {
+          "line": 222,
+          "level": 2,
+          "heading": "5. Certified `C^17` closeness for the exact center action"
+        },
+        {
+          "line": 259,
+          "level": 2,
+          "heading": "6. Explicit oscillatory and pinching exponents"
+        },
+        {
+          "line": 289,
+          "level": 2,
+          "heading": "7. Status for independent checking"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_explicit_finite_type16.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_explicit_finite_type16.md",
+      "source_sha256": "34ecf87576cb73990458a656200d9b6e41016f0082796beacea247106c4ed90e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the explicit finite-type-16 supplement"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "Verdict"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "1. Exact support reconstruction"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Extraction identities and positive derivative orders"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "heading": "3. Polynomial coefficient budgets, independently checked exactly"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "4. Translation, finite jets and perturbation"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "5. C17 bound for the exact center phase"
+        },
+        {
+          "line": 191,
+          "level": 2,
+          "heading": "6. Oscillatory exponent and what the application does not replace"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_audit_root_all_entry.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/counter_audit_root_all_entry.md",
+      "source_sha256": "0061de6da1f97e4bbe57f3b2373b83e3df58eb37abcc9416240a48f1caefeeae",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Frozen comparison audit: all entries and arbitrary Weyl routes"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. All-entry bounds and strict loss"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "2. All-time estimates, including the second HS gain"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "3. Scope and verdict"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_all_entry_arbitrary_routes.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_all_entry_arbitrary_routes.md",
+      "source_sha256": "e0f6e0785d8a052ab20464a5efaaec7a41f608010c9e4398dbe1c7fd143ecc6e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: all-entry estimates and arbitrary Weyl permutation routes"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Frozen target and verdict"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "2. Input identity and derivative margin"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. The finite-type step genuinely survives every added linear phase"
+        },
+        {
+          "line": 138,
+          "level": 2,
+          "heading": "4. Exact multiplication and the alias signs"
+        },
+        {
+          "line": 177,
+          "level": 2,
+          "heading": "5. The two alias regimes and the row estimate"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "heading": "6. Fixed-label limit and exclusion of modulus one"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "heading": "7. Arbitrary permutations and the all-time constants"
+        },
+        {
+          "line": 326,
+          "level": 2,
+          "heading": "8. Pair statistic, normalization, and limits of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_sparse_cat_schatten_trace_sharpening.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_sparse_cat_schatten_trace_sharpening.md",
+      "source_sha256": "bdc1401fb3476afde3739a71de71e1196faaa5ffda0b1a51e9c656301b9f42ee",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: the uniform absolute trace bound for sparse cat histories"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen source and verdict"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "2. The trace Holder proof is valid for noncommuting factors"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "3. Ideal inequality and charging the designated factors"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "4. Exact constant in the unnormalized Schatten bound"
+        },
+        {
+          "line": 137,
+          "level": 2,
+          "heading": "5. The number of designated factors and the remaining runs"
+        },
+        {
+          "line": 177,
+          "level": 2,
+          "heading": "6. The exact early-time bound over arbitrary composite moduli"
+        },
+        {
+          "line": 222,
+          "level": 2,
+          "heading": "7. Total bound, two-HS check, and exact scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_arbitrary_routes_schatten_tail.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_arbitrary_routes_schatten_tail.md",
+      "source_sha256": "e0a083f9b6a4654444a97f8fa74b386c70422067f62a5075c0cf41cd60ff63d4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: arbitrary Weyl routes and the Schatten-35 tail"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Source identity and verdict"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "1. Exact hypotheses used from the upstream theorem"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "2. The unnormalized Schatten estimate"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "3. Trace Hölder and the number of charged factors"
+        },
+        {
+          "line": 155,
+          "level": 2,
+          "heading": "4. Binomial estimate and complete time sum"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "5. Scope and first unresolved step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_no_exact_scalar_powers.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_no_exact_scalar_powers.md",
+      "source_sha256": "ef22c0fc94e21398246e4dca3ed54f6cffabf63c053b073793bc394bb3c623d8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: no exact scalar powers of the prescribed family"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen object and verdict"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "2. Original modular convention and covariance"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "3. Fourier imbalance and arbitrary aliases"
+        },
+        {
+          "line": 126,
+          "level": 2,
+          "heading": "4. External theorem and the algebraic hypotheses"
+        },
+        {
+          "line": 177,
+          "level": 2,
+          "heading": "5. Derivative and orbit count"
+        },
+        {
+          "line": 200,
+          "level": 2,
+          "heading": "6. Genuine exception at dimension seven"
+        },
+        {
+          "line": 218,
+          "level": 2,
+          "heading": "7. Scope of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_dual_singular_gap_graph_comparison.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_dual_singular_gap_graph_comparison.md",
+      "source_sha256": "139cfda2b82de6cb401ef50950f5a1465b04a081c2de253375151986b6823db9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: singular gap from the exact elementary Weyl graph"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen scope and verdict"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "2. The common-row argument for \\(P^tP\\)"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "3. Exact path congestion, including \\(N=3\\)"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "4. Singular contraction and normalization"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "5. The actual low-column upper bound"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "6. Fejer comparison time and scope"
+        },
+        {
+          "line": 228,
+          "level": 2,
+          "heading": "7. First unproved step beyond this theorem"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_dual_weyl_primitivity_quantitative.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_dual_weyl_primitivity_quantitative.md",
+      "source_sha256": "fee116da2d8d0611ac624b3815212803c223774edcf4a5ec1997efc058e95dac",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact dual Weyl primitivity and its effective rate"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict and frozen scope"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "1. The exact dual convention and covariance"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "heading": "2. Algebraic evaluation preserves every nonidentically-zero entry"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "3. Fourier coefficients and the small-modulus aliases"
+        },
+        {
+          "line": 133,
+          "level": 2,
+          "heading": "4. Composite connectivity and a uniform primitivity exponent"
+        },
+        {
+          "line": 186,
+          "level": 2,
+          "heading": "5. The uniform anchor bound is valid even for large `tau N`"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "heading": "6. Field degree and logarithmic height: all factors checked"
+        },
+        {
+          "line": 265,
+          "level": 2,
+          "heading": "7. Check of the published quantitative input and the stochastic bound"
+        },
+        {
+          "line": 309,
+          "level": 2,
+          "heading": "8. Coherent evolution and the remaining obstruction"
+        },
+        {
+          "line": 323,
+          "level": 2,
+          "heading": "9. Provenance of the verdict"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_shrinking_gap_signed_removal.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_shrinking_gap_signed_removal.md",
+      "source_sha256": "cb90be5f0058eb2c2188c36b9ed53602060e1af2068f3745c64da86199b8b7d2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: all-time signed removal with a shrinking gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict and exact scope"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. Exact character decomposition and the meaning of the gap"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "2. Pure histories: arithmetic count and the full sum"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "3. Sum of all words with the allowed number of changes"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "4. Why the short-time constants are uniform in the shrinking gap"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "5. All-time summation with the reciprocal gap retained"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "heading": "6. The actual shrinking gap and divisor range"
+        },
+        {
+          "line": 298,
+          "level": 2,
+          "heading": "7. The late tail and the obstruction to a wider all-time claim"
+        },
+        {
+          "line": 329,
+          "level": 2,
+          "heading": "8. Boundary of the positive result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_uniform_word_foundation.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_uniform_word_foundation.md",
+      "source_sha256": "3b9f422c7ba02c7b01da409eac17f2e1e06f4da30c4cceb0ba4f9867d21cb961",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the uniform commutator word and its finite torus descent"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict, claim card, and frozen inputs"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "1. Dependency graph and obligation matrix"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "2. Reconstruction of the exact symbol and Weyl product"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "3. Domain control and the convergent Heisenberg series"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "4. The numerical bracket budget"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "5. Independent finite prefix remainder calculation"
+        },
+        {
+          "line": 305,
+          "level": 2,
+          "heading": "6. Exact Zak descent, including signs and normalization"
+        },
+        {
+          "line": 352,
+          "level": 2,
+          "heading": "7. Numerical gap and the all-character conclusion"
+        },
+        {
+          "line": 421,
+          "level": 2,
+          "heading": "8. Arbitrary fixed order: no hidden exponential loss"
+        },
+        {
+          "line": 479,
+          "level": 2,
+          "heading": "9. Audit of the bounded exponential versus the quantized phase"
+        },
+        {
+          "line": 512,
+          "level": 2,
+          "heading": "10. Positive defect, smooth compression, and final fixed-order gap"
+        },
+        {
+          "line": 557,
+          "level": 2,
+          "heading": "11. Scope, remaining gap, and provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/root_audit_dual_singular_gap.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/root_audit_dual_singular_gap.md",
+      "source_sha256": "7d08a0b146b5e802c282ef86a98de6b180878a24952f4de3cd0d8dd66b80c49a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent root audit: singular gap of the exact dephased adjoint"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "Verdict and scope"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "1. Nonzero edges and the algebraic quantitative input"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "2. The comparison graph, including N=3"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "3. Lower and upper singular-gap bounds"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "4. Finite Fejer comparison"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "checks": [
+    "Original and aliased Hermitian coefficient symmetry.",
+    "Exact N7 scalar exception.",
+    "Unique two basis coefficients and absence of both negatives of the first.",
+    "Every possible pair of nonzero support images is examined; determinant selects unitary or antiunitary type.",
+    "Both Hamiltonian signs are checked for each candidate.",
+    "Exact count of 48 dimensions and 5600 candidate linear maps."
+  ],
+  "claim_id": "weyl-normalizer-rigidity-original-U",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/verify_affine_symmetry.py"
+  ],
+  "declared_results": [
+    "research_continuation_2026_10_20/affine_symmetry_exact_result.json"
+  ],
+  "environment": {
+    "hardware": "x86_64; available logical CPUs: 9",
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ]
+  },
+  "input_artifacts": [
+    {
+      "path": "research_continuation_2026_10_20/verify_affine_symmetry.py",
+      "sha256": "ded7875ca635745da21bbaef9d523cc24c2d57a3985965f84b82caee1a51626e",
+      "sha256_after": "ded7875ca635745da21bbaef9d523cc24c2d57a3985965f84b82caee1a51626e"
+    },
+    {
+      "path": "research_continuation_2026_10_20/affine_reversal_and_crt_obstructions.md",
+      "sha256": "856f7e0d7373e1b3c260b20477969a12e3e78886836b11fd4eac9ddd9cc7642c",
+      "sha256_after": "856f7e0d7373e1b3c260b20477969a12e3e78886836b11fd4eac9ddd9cc7642c"
+    },
+    {
+      "path": "research_continuation_2026_10_20/odd_trace_and_algebraic_rigidity.md",
+      "sha256": "42832bfc27bbf307b154c781f7299912e7c3094e0a0c3ff2e3ade9f0e580764b",
+      "sha256_after": "42832bfc27bbf307b154c781f7299912e7c3094e0a0c3ff2e3ade9f0e580764b"
+    }
+  ],
+  "mathematics": {
+    "assertion_tested": "Coefficient uniqueness and complete signed Weyl-index symmetry classification with trivial character for odd 3 <= N <= 99, N != 7.",
+    "bounds": {
+      "candidate_linear_maps": 5600,
+      "dimensions": 48,
+      "excluded_N": [
+        7
+      ],
+      "maximum_N": 99,
+      "minimum_N": 3,
+      "step": 2
+    },
+    "coefficient_domain": "Exact Gaussian integers representing coefficients multiplied by 4000.",
+    "conventions": "W_N(k,l)=T_N(l,k), plus shift, centered Hamiltonian; all residue pairs are reduced modulo odd N.",
+    "inputs": [
+      "The exact finite Fourier polynomial specified in the base proof and embedded in the script."
+    ],
+    "non_claims": [
+      "No numerical inference of a universal theorem.",
+      "No claim about arbitrary non-Clifford antiunitaries.",
+      "No spectral-statistics or Hdiag conclusion."
+    ]
+  },
+  "outputs": [
+    {
+      "kind": "result",
+      "path": "research_continuation_2026_10_20/affine_symmetry_exact_result.json",
+      "sha256": "d94623d7f2712673ff90676f54393532c6eca0b9c7ce44dc637732aabe7cc374"
+    }
+  ],
+  "randomness": {
+    "generator": "",
+    "seed": null,
+    "used": false
+  },
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true,
+    "note": "Mathematical ancestry is pinned by the input artifact hashes."
+  },
+  "residual_risks": [
+    "The universal conclusion uses the written uniform proof, not extrapolation of this finite range.",
+    "No independent end-to-end code review is claimed; the coordinator independently recomputed the decisive small coefficient tables."
+  ],
+  "result": "Implementation and finite assertion verified in the stated range; the only match is the positive unitary identity action in each dimension.",
+  "run": {
+    "exit_status": 0,
+    "resource_limits": {
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null,
+      "memory_bytes": null
+    },
+    "runtime_seconds": 0.03881311499981166,
+    "started_at": "2026-10-20T15:58:47.807130+00:00",
+    "status": "completed"
+  },
+  "schema_version": 2
+}

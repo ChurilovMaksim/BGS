@@ -1,0 +1,65 @@
+{
+  "status": "exact bookkeeping passed; no original H_diag claim",
+  "report_sha256": "610c0e62b64834687b91db54a1cb5e584a2ad16035e0290c54506ffa6608de7e",
+  "pell_samples": [
+    {
+      "r": 3,
+      "N_r": 35,
+      "v7_N_r": 1
+    },
+    {
+      "r": 5,
+      "N_r": 1189,
+      "v7_N_r": 0
+    },
+    {
+      "r": 7,
+      "N_r": 40391,
+      "v7_N_r": 0
+    },
+    {
+      "r": 9,
+      "N_r": 1372105,
+      "v7_N_r": 1
+    }
+  ],
+  "seven_tower": [
+    {
+      "s": 0,
+      "r": 3,
+      "v7_N_r": 1,
+      "N_bit_length": 6
+    },
+    {
+      "s": 1,
+      "r": 21,
+      "v7_N_r": 2,
+      "N_bit_length": 51
+    },
+    {
+      "s": 2,
+      "r": 147,
+      "v7_N_r": 3,
+      "N_bit_length": 372
+    },
+    {
+      "s": 3,
+      "r": 1029,
+      "v7_N_r": 4,
+      "N_bit_length": 2615
+    },
+    {
+      "s": 4,
+      "r": 7203,
+      "v7_N_r": 5,
+      "N_bit_length": 18316
+    }
+  ],
+  "fejer_normalization_checked_for_H": [
+    2,
+    199
+  ],
+  "proof_lower_liminf_logN_times_d": "pi*log(3+2*sqrt(2))/4",
+  "physical_parameter_changed": false,
+  "tiny_kick_eigendecompositions_used": false
+}

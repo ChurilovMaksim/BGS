@@ -1,5 +1,16 @@
 # Theorem families and their limits
 
+## Final spectral research edition, 21 October 2026
+
+[Thematic results and individual proofs](spectral_research/README.md) integrate
+all fourteen rounds. [TRACE-108](coordinate_return_quartic_20261021.md) is the
+quartic one-step intensity theorem; [TRACE-111](pell_weighted_curvature_20261021.md)
+sums the initial gradient/Hessian and proves an early inflection.
+[TRACE-109](inserted_trace_coboundary_20261021.md) and
+[TRACE-110](spectral_orbit_distance_20261021.md) distinguish exact comparison
+lemmas from conditional older trace inputs. The fixed-coupling signed
+Heisenberg hierarchy remains open. [Review](../record/spectral_final_integration_20261021.md).
+
 ## Physical-kick bounds, 21 October 2026
 
 [Uniform trace decay and scalar-distance limits](physical_kick_trace_decay.md)

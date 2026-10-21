@@ -1,5 +1,12 @@
 # Mathematical proofs
 
+## Complete spectral research edition
+
+[Fourteen-round thematic edition](spectral_research/README.md): individual
+proofs, countertests, failed routes, reference code and exact source catalog.
+The newly maintained statements are TRACE-108--111; two asymptotic applications
+retain explicit input qualifications. [Actual review scope](../record/spectral_final_integration_20261021.md).
+
 ## Physical-kick bounds, 21 October 2026
 
 [Uniform trace decay and scalar-distance limits](physical_kick_trace_decay.md)

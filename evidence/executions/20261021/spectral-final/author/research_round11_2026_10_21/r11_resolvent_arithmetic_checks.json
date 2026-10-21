@@ -1,0 +1,129 @@
+{
+  "status": "PASS: exact selected checks; universal proof is in the audit",
+  "source_sha256": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+  "checker_sha256": "0c0164efdc64d8c4e01252ddc2f04da7b9a9ff5872f2a53378c69a41b65c09f1",
+  "phase_cases": 5956,
+  "constants": {
+    "L0": "13203/32000",
+    "C0": "66033/160000",
+    "C1": "-7/2000000",
+    "variance": "1650797/4000000",
+    "fourth_lower": "4355603361/25600000000"
+  },
+  "rational_threshold_margins": {
+    "quadratic": "44268124984148/3",
+    "quadratic_derivative": "372385/12",
+    "isotropic_linear": "12399604/19",
+    "same_type": "390624437499999/31250000",
+    "r11_two_mode": "58166687/430575"
+  },
+  "finite_pell_checks": [
+    {
+      "r": 11,
+      "N": 46611179,
+      "two_mode_collision_count": 4
+    },
+    {
+      "r": 13,
+      "N": 1583407981,
+      "two_mode_collision_count": 4
+    },
+    {
+      "r": 25,
+      "N": 2433376321462076761,
+      "two_mode_collision_count": 4,
+      "seeds": [
+        {
+          "eps": -1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": -1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        }
+      ],
+      "distinct_shifted_indices": 200
+    },
+    {
+      "r": 27,
+      "N": 82663163018885960315,
+      "two_mode_collision_count": 4,
+      "seeds": [
+        {
+          "eps": -1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": -1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        }
+      ],
+      "distinct_shifted_indices": 216
+    },
+    {
+      "r": 31,
+      "N": 95393218491883573553951,
+      "two_mode_collision_count": 4,
+      "seeds": [
+        {
+          "eps": -1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": -1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": -1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        },
+        {
+          "eps": 1,
+          "eta": 1,
+          "ordered_decompositions": 2,
+          "equal_time_decompositions": 0
+        }
+      ],
+      "distinct_shifted_indices": 248
+    }
+  ],
+  "scope": "No U_N eigenvalues or spectral statistics were computed."
+}

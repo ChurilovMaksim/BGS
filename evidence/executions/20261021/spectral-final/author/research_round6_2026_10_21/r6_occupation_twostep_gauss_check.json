@@ -1,0 +1,98 @@
+{
+  "scope": "High-precision finite identity checks; not a proof by computation and not a spectral-limit test.",
+  "precision": 90,
+  "threshold": "10^-65",
+  "all_passed": true,
+  "total_matrix_entries": 5419,
+  "total_DFT_coefficients": 1032,
+  "results": [
+    {
+      "N": 3,
+      "gcd_N_24": 3,
+      "matrix_entries": 9,
+      "DFT_coefficients": 72,
+      "passed": true,
+      "maximum_error": "0``87.45886182256687"
+    },
+    {
+      "N": 5,
+      "gcd_N_24": 1,
+      "matrix_entries": 25,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.6503883937848"
+    },
+    {
+      "N": 7,
+      "gcd_N_24": 1,
+      "matrix_entries": 49,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.6503883937848"
+    },
+    {
+      "N": 9,
+      "gcd_N_24": 3,
+      "matrix_entries": 81,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.45886182256687"
+    },
+    {
+      "N": 11,
+      "gcd_N_24": 1,
+      "matrix_entries": 121,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.65038839378478"
+    },
+    {
+      "N": 15,
+      "gcd_N_24": 3,
+      "matrix_entries": 225,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.45886182256687"
+    },
+    {
+      "N": 21,
+      "gcd_N_24": 3,
+      "matrix_entries": 441,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.45886182256687"
+    },
+    {
+      "N": 25,
+      "gcd_N_24": 1,
+      "matrix_entries": 625,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.65038839378478"
+    },
+    {
+      "N": 27,
+      "gcd_N_24": 3,
+      "matrix_entries": 729,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.40770930011949"
+    },
+    {
+      "N": 33,
+      "gcd_N_24": 3,
+      "matrix_entries": 1089,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.37454615014958"
+    },
+    {
+      "N": 45,
+      "gcd_N_24": 3,
+      "matrix_entries": 2025,
+      "DFT_coefficients": 96,
+      "passed": true,
+      "maximum_error": "0``87.16106882752258"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+> Source status: Imported author proof or research attempt; consult the review matrix before using it as a theorem.
+> Original source: `research_round7_2026_10_21/r7_original_full_cyclicity_laurent_unit.md`. Embedded SHA256: `214c77697b087b6457a76272b0665072b7b6d7f1f72e5eca857876f2f3f9cf17`.
+> [Thematic guide](../../topics/algebra.md).
+
+# Full coordinate cyclicity from two real-time limits and a Laurent unit
+
+Research continuation, 21 October 2026. The matrices and parameter are
+exactly those in the question. This note strengthens the coordinate
+rank bounds obtained earlier in this round to **full support at every
+physical coordinate**, for every odd dimension not divisible by seven.
+It does not establish a quantitative overlap bound or a spectral
+correlation limit.
+
+## 1. Statement and frozen inputs
+
+**Theorem.** Let $N\ge3$ be odd and $7\nmid N$. For every
+nonzero algebraic complex $z$, every physical coordinate vector is
+both cyclic and observable for
+$$
+U_N(z)=e^{izNA_N}M_N.
+\tag{1.1}
+$$
+For every nonzero real algebraic $z$, every eigenvector of
+$U_N(z)$ has all $N$ coordinates nonzero. In particular, this
+holds for the original $z=\tau=10^{-80}$.
+
+The two exact input sources are:
+
+| Source | SHA-256 |
+|---|---|
+| `research_round2_2026_10_20/arithmetic_padic_jacobi_simplicity.md` | `f311596933d383976547ac5b2cd633b91107074da0fcab58db989eedcc4568df` |
+| `research_round7_2026_10_21/r7_original_two_endpoint_layers.md` | `905b6a795eb90fa5462cf2a3542804696ee6804ce0ef3387df78e609b1fd97e5` |
+
+The first source proves that $A_N$ has distinct real algebraic
+eigenvalues and that every square minor of $M_N$ in an
+orthonormal $A_N$-eigenbasis is nonzero. The second proves the
+following bordered-minor statement, including the ramified case
+$5\mid N$. These sources are included in the cumulative proof;
+their assertions are not being inferred merely from their titles.
+
+Order physical coordinates as
+$x_j=(N+1)/2+j\pmod N$, $0\le j<N$, and set
+$d(j)=\min(j,N-1-j)$. If $Q$ is an orthonormal
+$A_N$-eigenbasis, $B=Q^*M_NQ$, and $c_j=e_{x_j}^*Q$,
+then for every pair of eigenvector index sets $|E|=k$,
+$|F|=k-1$,
+$$
+\det\begin{pmatrix}B_{F,E}\\(c_j)_E\end{pmatrix}\ne0
+\qquad\text{whenever }k\ge d(j)+1.
+\tag{1.2}
+$$
+In particular the eigenvalues can be put in **either** increasing or
+decreasing order in (1.2).
+
+The arithmetic content of (1.2) is the following. In the real Jacobi
+gauge $D_{jj}=\omega^j$, $\omega=(-3+4i)/5$, its
+bordered Cauchy--Binet expansion has a unique extreme coordinate
+pair. The corresponding Jacobi minor uses exactly the first or last
+$k$ path coordinates. The Fourier minor omits one column from
+$k$ consecutive columns. Its excess valuation is
+$v_5({k-1\brack j'}_q)\le1/4$. Every competing term at gauge
+distance $g\ge1$ therefore has relative valuation at least
+$g/2-1/4>0$. The source proves this Gaussian-binomial bound by
+the floor-function formula for root-of-unity valuations, without
+assuming $5\nmid N$.
+
+## 2. Visible eigenvalue branches in the two real-time limits
+
+Write the eigenvalues of $A=A_N$ as
+$a_1>\cdots>a_N$, and temporarily put
+$$
+V(s)=e^{sA}M_N,\qquad s\in\mathbb C.
+\tag{2.1}
+$$
+For positive real $s\to+\infty$, the nonzero principal
+minors $b_k=\det B_{[1:k],[1:k]}$, $b_0=1$, give
+$$
+\lambda_k(s)=e^{sa_k}\bigl(b_k/b_{k-1}+o(1)\bigr),
+\qquad 1\le k\le N.
+\tag{2.2}
+$$
+All these roots are simple for sufficiently large $s$. The
+corresponding right eigenvector in the $A$-basis, normalized in
+coordinate $k$, tends to
+$$
+r_k^{(0)}=(-B_{I,I}^{-1}B_{I,k},1,0,\ldots,0),
+\qquad I=\{1,\ldots,k-1\}.
+\tag{2.3}
+$$
+Both facts, including normalization, are proved in the second input
+source: (2.2) follows from the two dominant characteristic-polynomial
+terms and Rouché's theorem, and (2.3) follows by solving the head
+and tail block equations.
+
+For completeness, (2.3) has coordinate restriction
+$$
+c_jr_k^{(0)}=
+\frac{1}{b_{k-1}}
+\det\begin{pmatrix}B_{I,[1:k]}\\(c_j)_{[1:k]}\end{pmatrix}.
+\tag{2.4}
+$$
+By (1.2), every branch with $k\ge d(j)+1$ has a nonzero
+$x_j$-coordinate for all sufficiently large positive $s$.
+Consequently any exactly invisible eigenvectors of $V(s)$ in
+that limit belong only to the scales
+$$
+\{a_1,\ldots,a_{d(j)}\}.
+\tag{2.5}
+$$
+
+Now write $s=-t$, with $t\to+\infty$, and apply exactly
+the same argument to $-A$. Its decreasing eigenvalue order
+is $-a_N>\cdots>-a_1$. The overlap matrix is the same
+matrix $B$ with its eigenvector indices reversed, so its
+principal minors remain nonzero. Statement (1.2) holds for every
+set of eigenvectors and hence remains valid in this order. Thus
+the possible invisible scales for large negative $s$ belong
+only to
+$$
+\{a_{N-d(j)+1},\ldots,a_N\}.
+\tag{2.6}
+$$
+The crucial point is that (2.5) and (2.6) are strictly separated
+sets of eigenvalues of the **same** matrix $A$, since
+$d(j)\le(N-1)/2$.
+
+## 3. The coefficient ring and its units
+
+Let $\Gamma$ be the additive subgroup of the real algebraic
+numbers generated by $a_1,\ldots,a_N$. It is a finitely
+generated torsion-free abelian group, so choose a $\mathbb Z$-basis
+$\gamma_1,\ldots,\gamma_r$. Consider
+$$
+\mathcal R=\overline{\mathbb Q}[\Gamma]
+\simeq\overline{\mathbb Q}[t_1^{\pm1},\ldots,t_r^{\pm1}],
+\qquad t_\nu=e^{s\gamma_\nu}.
+\tag{3.1}
+$$
+It is realized faithfully as the ring of finite sums
+$\sum_\beta c_\beta e^{s\beta}$, with
+$c_\beta\in\overline{\mathbb Q}$, $\beta\in\Gamma$.
+Indeed distinct real exponentials are linearly independent as
+functions: differentiating a putative finite relation at $s=0$
+gives an invertible distinct-node Vandermonde system.
+
+This Laurent polynomial ring is a unique factorization domain and
+is integrally closed. The required standard algebra can also be
+seen directly. Gauss's content lemma proves inductively that a
+polynomial ring over a field is a unique factorization domain;
+inverting its variables preserves factorization after those
+variables become units. A fraction $p/q$ in lowest terms in
+a unique factorization domain that satisfies a monic polynomial
+equation cannot have an irreducible divisor of $q$: multiplying
+the equation by the requisite power of $q$ forces that divisor
+to divide $p$. Thus the Laurent ring is integrally closed.
+
+Its units are exactly
+$$
+c e^{s\beta},\qquad c\in\overline{\mathbb Q}^{\times},
+\quad\beta\in\Gamma.
+\tag{3.2}
+$$
+For an elementary verification, suppose two finite Laurent sums
+multiply to 1. Choose a real linear weight on their exponent
+lattices that distinguishes all exponent vectors in their finite
+supports. The unique terms with largest and smallest weight
+cannot cancel in the product. Hence the weight-width of the
+product is the sum of the two nonnegative widths. A constant
+product has width zero, so both supports have one element. This
+proves (3.2).
+
+The algebraic spectral decomposition of $A$ shows that
+$V(s)\in\operatorname{GL}_N(\mathcal R)$. In particular
+$$
+\det V(s)=\det M_N\,e^{s\operatorname{Tr}A}
+\in\mathcal R^{\times}.
+\tag{3.3}
+$$
+No rational independence of the individual $a_i$'s is assumed.
+All additive relations are already accounted for by $\Gamma$.
+
+## 4. An invisible invariant factor would have incompatible exponents
+
+Fix a physical coordinate $x_j$, and form the observable matrix
+$$
+\mathcal O_j(s)=
+\begin{pmatrix}
+e_{x_j}^*\\ e_{x_j}^*V(s)\\ \vdots\\ e_{x_j}^*V(s)^{N-1}
+\end{pmatrix}\in M_N(\mathcal R).
+\tag{4.1}
+$$
+Suppose for contradiction that its determinant is identically
+zero. Let $\mathcal K=\operatorname{Frac}\mathcal R$, and
+let
+$$
+\mathcal W=\ker_{\mathcal K}\mathcal O_j,
+\qquad q=\dim_{\mathcal K}\mathcal W>0.
+\tag{4.2}
+$$
+The Cayley--Hamilton equation implies
+$V\mathcal W\subset\mathcal W$: the output vanishes
+at powers $1,\ldots,N$, with the last power reduced to
+the first $N$ powers by that equation. Since $V$ is
+invertible, its restriction to $\mathcal W$ is invertible.
+
+Extend a basis of $\mathcal W$ to a basis of
+$\mathcal K^N$. The characteristic polynomial of its
+restriction is a monic factor
+$$
+F(s,X)=\det(XI-V|_{\mathcal W})\in\mathcal K[X],
+\quad\deg_XF=q,
+\tag{4.3}
+$$
+of $\det(XI-V(s))$. Its monic complementary factor will
+be denoted $G$.
+
+In fact $F,G\in\mathcal R[X]$. To justify this without
+assuming a choice of algebraic eigenvalue branches, split the
+characteristic polynomial in an algebraic closure of
+$\mathcal K$. Every root is integral over $\mathcal R$,
+because the polynomial is monic. The coefficients of either
+monic factor are elementary symmetric functions of subsets of
+these roots, so they are integral over $\mathcal R$. They
+also lie in $\mathcal K$; integral closure from Section 3
+therefore places them in $\mathcal R$.
+
+Taking the constant terms and using (3.3),
+$$
+F(s,0)G(s,0)=(-1)^N\det V(s)\in\mathcal R^\times.
+$$
+Both factors are in $\mathcal R$, so each is a unit. Thus
+for a fixed $c\ne0$ and $\beta\in\Gamma$,
+$$
+\boxed{F(s,0)=c e^{s\beta}.}
+\tag{4.4}
+$$
+
+The invariant subspace (4.2) specializes correctly at both ends
+of the real line. Indeed a basis matrix and its completion have
+entries in $\mathcal K$, hence quotients of finite real-frequency
+exponential polynomials. Every nonzero such polynomial is nonzero
+for all sufficiently large positive and negative real $s$:
+its extreme real exponential term dominates the others at the
+respective end. The finitely many denominators and the completion's
+determinant therefore do not vanish in either tail. There the
+specialized basis gives a $q$-dimensional invariant subspace
+annihilated by the output coordinate.
+
+For sufficiently large positive real $s$, $V(s)$ has
+simple spectrum by (2.2). Its invariant subspace is a direct sum
+of $q$ eigenlines. Each is invisible at $x_j$, and (2.5)
+therefore confines them to the first $d=d(j)$ scales. In
+particular $q\le d$. Along a sequence $s\to+\infty$,
+choose a fixed subset $I_+\subset\{1,\ldots,d\}$ of size
+$q$ whose eigenvalues are the roots of $F$; such a
+subsequence exists because there are finitely many subsets.
+The product of those roots, (2.2) and (4.4) give
+$$
+\beta=\sum_{i\in I_+}a_i.
+\tag{4.5}
+$$
+For example this follows immediately by taking
+$s^{-1}\log|F(s,0)|$; all leading constants in (2.2)
+are nonzero.
+
+At the negative end the same reasoning and (2.6) give a subset
+$I_-\subset\{N-d+1,\ldots,N\}$, also of size $q$,
+with
+$$
+\beta=\sum_{i\in I_-}a_i.
+\tag{4.6}
+$$
+If $d=0$, the earlier conclusion $0<q\le d$ is already
+impossible. Otherwise $2d\le N-1$ and strict ordering imply
+$$
+\sum_{i\in I_+}a_i
+\ge q a_d
+>q a_{N-d+1}
+\ge\sum_{i\in I_-}a_i.
+\tag{4.7}
+$$
+This contradicts (4.5)--(4.6). We have proved
+$$
+\det\mathcal O_j(s)\not\equiv0
+\quad\text{for every physical coordinate }x_j.
+\tag{4.8}
+$$
+
+## 5. Specialization to the original algebraic parameter
+
+By (4.1) and Section 3, the determinant in (4.8) is a finite
+exponential polynomial with algebraic coefficients and distinct
+real algebraic frequencies after equal frequencies are collected.
+It is not the zero polynomial. At $s=iNz$, with $z\ne0$
+algebraic, its exponents are distinct algebraic numbers.
+Lindemann--Weierstrass gives
+$$
+\det\mathcal O_j(iNz)\ne0.
+\tag{5.1}
+$$
+The exact qualitative theorem is Theorem 3.2 of S. A. Popescu,
+*A Simple and Self-contained Proof for the Lindemann--Weierstrass
+Theorem*, DOI `10.1007/978-3-031-51959-8_16`, author PDF
+<https://arxiv.org/pdf/2306.14352>, page 14. Its statement, checked
+in this round, is the linear independence over the algebraic
+numbers of the exponentials of distinct algebraic numbers. All
+its hypotheses have just been checked for (5.1).
+
+Finally
+$$
+U_N(z)^*=U_N(\overline z)^{-1}.
+$$
+Taking adjoints of the full-rank observable matrix at
+$\overline z$, multiplying by $U_N(z)^{N-1}$, and
+reversing the columns gives the cyclic matrix at $z$.
+Thus each coordinate is also cyclic. If a nonzero eigenvector
+of $U_N(z)$ vanished at that coordinate, every row of its
+observable matrix would annihilate the eigenvector, contradicting
+(5.1). This proves the theorem, and in particular full support
+at the prescribed original real parameter.
+
+## 6. Exact scope
+
+This proof uses both real-time ends only to show that a finite
+exponential polynomial is nonzero. The final specialization is
+the original fixed $\tau=10^{-80}$. No parameter averaging,
+perturbation of $\tau$, or subsequence of the allowed
+dimensions is substituted into its conclusion.
+
+The dimension hypothesis $7\nmid N$ remains: the existing
+all-minor and bordered-minor inputs use one connected Jacobi path.
+No assertion about the seven-path case is made here.
+
+The result is qualitative full support. It gives no positive
+lower bound uniform in $N$ for the eigenvector coordinates,
+no independence of distinct eigenvalue ratios, and no required
+signed cancellation at times of order $N$. Consequently
+$H_{\rm diag}$ and the main local-statistics problem remain
+unproved.

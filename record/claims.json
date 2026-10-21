@@ -4892,6 +4892,80 @@
         "manuscript/unified_sections/physical_kick_20261021.tex"
       ],
       "boundary": "Norm error epsilon gives O(N^k epsilon) trace-polynomial error at each fixed order and bandwidth. Negative indices use adjoint powers of the nonunitary approximant. Full signed sum remains unestimated. Shortest scalar two-copy Pell alias has length x; no spectral counterexample or priority claim."
+    },
+    {
+      "id": "BGS-TRACE-108",
+      "title": "Quartic diagonal coordinate return with explicit fixed-coupling remainder",
+      "state": "proved",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/coordinate_return_quartic_20261021.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-final/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_final_20261021.tex"
+      ],
+      "boundary": "One step only; analytic author proof and self-review, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing."
+    },
+    {
+      "id": "BGS-TRACE-109",
+      "title": "Inserted trace, quantum commutant projection and two-copy coboundary obstruction",
+      "state": "conditional",
+      "ledger_status": "EXACT LEMMAS + CONDITIONAL ANALYTIC APPLICATION",
+      "source": "mathematics/inserted_trace_coboundary_20261021.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-final/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_final_20261021.tex"
+      ],
+      "boundary": "Projection identities exact for arbitrary multiplicities; asymptotic constants conditional on older exact plane-amplitude and odd-sector trace construction, not fully independently closed here."
+    },
+    {
+      "id": "BGS-TRACE-110",
+      "title": "Spectral orbit distance and exact scalar-root comparison lemmas",
+      "state": "conditional",
+      "ledger_status": "EXACT LEMMAS + CONDITIONAL ANALYTIC APPLICATION",
+      "source": "mathematics/spectral_orbit_distance_20261021.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-final/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_final_20261021.tex"
+      ],
+      "boundary": "Application requires uniform original-family all-time trace bound (T), C a^m with a<sqrt(lambda), whose older analytic dependency closure is not independently certified in this integration; no microscopic spacing law."
+    },
+    {
+      "id": "BGS-TRACE-111",
+      "title": "Full weighted Pell gradient, negative initial Hessian and forced early inflection",
+      "state": "proved",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW",
+      "source": "mathematics/pell_weighted_curvature_20261021.md",
+      "dependencies": [],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261021/spectral-final/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/weighted_trace_hessian_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_final_20261021.tex"
+      ],
+      "boundary": "Original parameter curve at t=0 and shrinking times on odd Pell dimensions; all weighted times and cross terms included. S_N(tau), H_diag and BGS remain open."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."

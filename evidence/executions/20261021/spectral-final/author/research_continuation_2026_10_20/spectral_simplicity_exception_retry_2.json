@@ -1,0 +1,1894 @@
+{
+  "method": "Exact first-order projector compression over a splitting finite field",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dimensions": [
+    {
+      "N": 49,
+      "cat_order": 21,
+      "field_prime": 47041,
+      "primitive_root": 29,
+      "zeta_N": 27015,
+      "i": 15941,
+      "sqrt_N": 7,
+      "M_power_scalar": 1,
+      "normalizing_gamma": 1,
+      "xi_order_r": 44609,
+      "sectors": [
+        {
+          "k": 0,
+          "dimension": 5,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            14112,
+            41549,
+            36741,
+            35265,
+            36834
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 1,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            6474,
+            21952
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 2,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            32440,
+            35128
+          ],
+          "gcd_with_derivative": [
+            1,
+            16220
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 3,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            34459,
+            26576
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 4,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            4249,
+            16876
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 5,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            33593,
+            33558
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 6,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            35437,
+            28889
+          ],
+          "gcd_with_derivative": [
+            1,
+            41239
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 7,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            18817,
+            10361,
+            42952,
+            39078
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 8,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            36865,
+            3726
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 9,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            32440,
+            35128
+          ],
+          "gcd_with_derivative": [
+            1,
+            16220
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 10,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            34459,
+            7046
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 11,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            46889,
+            44262
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 12,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            33593,
+            41732
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 13,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            35437,
+            28889
+          ],
+          "gcd_with_derivative": [
+            1,
+            41239
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 14,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            18817,
+            8610,
+            9498,
+            35519
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 15,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            7108,
+            16354
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 16,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            32440,
+            35128
+          ],
+          "gcd_with_derivative": [
+            1,
+            16220
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 17,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            34459,
+            24512
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 18,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            3374,
+            12765
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 19,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            33593,
+            21886
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 20,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            35437,
+            28889
+          ],
+          "gcd_with_derivative": [
+            1,
+            41239
+          ],
+          "squarefree": false
+        }
+      ],
+      "first_order_simple_certificate": false
+    },
+    {
+      "N": 147,
+      "cat_order": 84,
+      "field_prime": 197569,
+      "primitive_root": 13,
+      "zeta_N": 77895,
+      "i": 194426,
+      "sqrt_N": 181785,
+      "M_power_scalar": 1,
+      "normalizing_gamma": 1,
+      "xi_order_r": 167311,
+      "sectors": [
+        {
+          "k": 0,
+          "dimension": 5,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            71435,
+            8209,
+            86268,
+            31494,
+            168892
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 1,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            136836,
+            152355
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 2,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            75239,
+            98693
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 4,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            79368,
+            122939
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 5,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            65798,
+            61219
+          ],
+          "gcd_with_derivative": [
+            1,
+            32899
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 6,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            961,
+            69528
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 8,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            100578,
+            679
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 9,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            49141,
+            101558
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 10,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            187617,
+            148102
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 12,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            33047,
+            159700
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 13,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            5985,
+            127524
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 14,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            4572,
+            50147,
+            83520,
+            63774
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 16,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            73189,
+            13863
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 17,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            168538,
+            155242
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 18,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            90194,
+            5142
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 20,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            24615,
+            92540
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 21,
+          "dimension": 5,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            7,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            7,
+            10
+          ],
+          "characteristic_polynomial": [
+            1,
+            128420,
+            104261,
+            197261,
+            138516,
+            32072
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 22,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            157724,
+            62244
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 24,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            16604,
+            146913
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 25,
+          "dimension": 2,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            130134,
+            170634
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 26,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            98724,
+            103368
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 28,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            54699,
+            25400,
+            103455,
+            107815
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 29,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            136836,
+            152355
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 30,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            75239,
+            167213
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 32,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            81741,
+            135580
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 33,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            65798,
+            61219
+          ],
+          "gcd_with_derivative": [
+            1,
+            32899
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 34,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            140750,
+            146755
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 36,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            100578,
+            679
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 37,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            49141,
+            87654
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 38,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            181303,
+            191376
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 40,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            33047,
+            29122
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 41,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            146199,
+            179067
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 42,
+          "dimension": 5,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            195283,
+            193883,
+            151363,
+            78762,
+            136385
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 44,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            73189,
+            143057
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 45,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            122946,
+            149209
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 46,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            185636,
+            70714
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 48,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            63021,
+            27928
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 49,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "characteristic_polynomial": [
+            1,
+            138298,
+            123711,
+            142388,
+            127530
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 50,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            157724,
+            62244
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 52,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            61231,
+            122983
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 53,
+          "dimension": 2,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            130134,
+            21689
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 54,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            98724,
+            14396
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 56,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            54699,
+            174068,
+            128901,
+            28701
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 57,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            136836,
+            152355
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 58,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            75239,
+            96972
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 60,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            174810,
+            148779
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 61,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            65798,
+            61219
+          ],
+          "gcd_with_derivative": [
+            1,
+            32899
+          ],
+          "squarefree": false
+        },
+        {
+          "k": 62,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            143597,
+            186290
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 64,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            100578,
+            679
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 65,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            49141,
+            82181
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 66,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            58019,
+            121024
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 68,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            33047,
+            51103
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 69,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            32558,
+            94564
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 70,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "characteristic_polynomial": [
+            1,
+            4572,
+            93366,
+            97654,
+            68415
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 72,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "characteristic_polynomial": [
+            1,
+            73189,
+            155130
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 73,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            146290,
+            96349
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 74,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "characteristic_polynomial": [
+            1,
+            183263,
+            166417
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 76,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            35021,
+            69245
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 77,
+          "dimension": 4,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "characteristic_polynomial": [
+            1,
+            138298,
+            101113,
+            86507,
+            94862
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 78,
+          "dimension": 2,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "characteristic_polynomial": [
+            1,
+            157724,
+            62244
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 80,
+          "dimension": 2,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            45297,
+            103320
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 81,
+          "dimension": 2,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "characteristic_polynomial": [
+            1,
+            130134,
+            50903
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        },
+        {
+          "k": 82,
+          "dimension": 2,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "characteristic_polynomial": [
+            1,
+            98724,
+            81387
+          ],
+          "gcd_with_derivative": [
+            1
+          ],
+          "squarefree": true
+        }
+      ],
+      "first_order_simple_certificate": false
+    }
+  ]
+}

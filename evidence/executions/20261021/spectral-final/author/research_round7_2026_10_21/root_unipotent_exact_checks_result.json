@@ -1,0 +1,46 @@
+{
+  "status": "all finite assertions passed",
+  "primes": [
+    5,
+    7,
+    11
+  ],
+  "checks": {
+    "all_endpoint_reverse_edge_phases": 163316,
+    "all_kernel_gauss_norms": 1604,
+    "all_linear_terms_square_completion": 1604,
+    "cycle_permutation": 20,
+    "exact_centered_gauss_norm": 20,
+    "exact_trace_norm": 49,
+    "full_cocycle": 17667,
+    "hessian_determinant": 20,
+    "hessian_inverse": 20,
+    "mixed_endpoint_coefficient": 20,
+    "prime_and_denominators": 3,
+    "reverse_edge_nondegeneracy": 20,
+    "reverse_edge_orthogonality": 1604,
+    "spectrum_dimension": 3,
+    "spectrum_multiplicity_range": 3,
+    "trace_from_spectrum_vs_monomial_operator": 49,
+    "weighted_cycle_phase_product": 20
+  },
+  "total_assertions": 186042,
+  "per_prime": [
+    {
+      "p": 5,
+      "dimension": 25,
+      "assertions_after_prime_setup": 3477
+    },
+    {
+      "p": 7,
+      "dimension": 49,
+      "assertions_after_prime_setup": 17763
+    },
+    {
+      "p": 11,
+      "dimension": 121,
+      "assertions_after_prime_setup": 164799
+    }
+  ],
+  "non_claim": "No computation of the original fixed-kick spectrum; no finite test is used as a proof of an asymptotic."
+}

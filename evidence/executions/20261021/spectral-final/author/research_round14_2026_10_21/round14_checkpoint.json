@@ -1,0 +1,27 @@
+{
+  "round": 14,
+  "parent_master_sha256": "ef38464d8e2b6ad3e917547e3437dcd53ed7c28dd39c4818faa29e5eb7cf6d43",
+  "parent_bytes": 8162410,
+  "parent_lines": 248045,
+  "parent_library_version": 9,
+  "library_file_id": "libfile_2e5b00ea4b6081918323cb0ccdf2f23b",
+  "master_path": "/workspace/scratch/e111873eea6c/Spectral_research_master.md",
+  "frozen_parent": "/workspace/scratch/e111873eea6c/research_history_frozen/master_before_round14.md",
+  "status": "Research, full-sum attempts, source proof audits and final report completed; H_diag and the fixed original b* pair test remain unproved and undisproved",
+  "goal": "all odd N, tau=10^-80 fixed, every fixed k and admissible b",
+  "new_original_results": [
+    "spectral conjugacy distance Theta(1/log N) on the explicit odd Pell sequence",
+    "coordinate return quartic coefficient with analytic remainder and one-step phase-average gap",
+    "inserted trace and full commutant/two-copy coboundary lower bounds"
+  ],
+  "first_unproved": "N^-2 sum_{1<=m<2N} |bhat_*(m/N)|^2 (|Tr[(exp(i*10^-80*N*A_N) M_N)^m]|^2-min(m,N)) -> 0 for all odd N",
+  "no_original_countersequence": true,
+  "all_original_quantifiers_preserved": true,
+  "additional_full_sum_results_at_parameter_zero": [
+    "Superpolynomial cancellation of the complete weighted gradient and triple-trace double sum on Pell dimensions",
+    "Exact weighted Hessian with all cross-clock terms bounded and negative original-generator block variance",
+    "Forced change to positive curvature by O((log N)^3/N^2); fixed-tau statistic still unknown",
+    "Entire parameter extension with an explicit obstruction to uniform bounded analytic control on fixed-radius disks"
+  ],
+  "final_report_sha256": "bb918b2eee610a62e22c7c5778f34ba3afe14880cd3183328e8d8820a98f021b"
+}

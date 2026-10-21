@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-21",
+  "branch": "round14/structural",
+  "mathematical_inputs": [
+    {
+      "path": "Spectral_research_master.md",
+      "bytes": 8162410,
+      "sha256": "ef38464d8e2b6ad3e917547e3437dcd53ed7c28dd39c4818faa29e5eb7cf6d43",
+      "read_scope": "Base record; target SHA checked, not reread in full in this branch."
+    },
+    {
+      "path": "research_continuation_2026_10_20/exact_amplitude.md",
+      "bytes": 17663,
+      "sha256": "69cd85816766b26358fb13058b3b26f9c243886cf863e5f8f9a6c6570e1a542e",
+      "read_scope": "Sections 1-4 read; phase construction and constants in Sections 1-2 used; complex-time extension proved in new main note."
+    },
+    {
+      "path": "research_round7_2026_10_21/r7_return_all_fixed_powers_phase_separation.md",
+      "bytes": 28637,
+      "sha256": "46982efaa581d322d4e82d5f5782ccf69f979a5a59adfb863dd40ef292205527",
+      "read_scope": "Sections 1-4, 8 and Appendices A-B read with proof-scope portions; R=1 kernel and residual reconstructed in new main note."
+    },
+    {
+      "path": "research_round13_2026_10_21/orbit_correlations/protected_actions_and_one_step_trace.md",
+      "bytes": 17511,
+      "sha256": "6bbde35d4fb3873976d6182b3fb6d9cc969349a3a6ce78e7b9dc48cf480c9fe6",
+      "read_scope": "Sections 1-6 read directly; Theorem 5.1 and equation (6.1) used for Corollary B only; its older sector/exact-amplitude dependencies not fully reaudited here."
+    },
+    {
+      "path": "research_round5_2026_10_21/root_physical_cycle_classes.md",
+      "bytes": 9516,
+      "sha256": "de9d6a510aa9c6e36f30a1d42d7c5e3760e71e594cbf0335a4c1a1653ac7708d",
+      "read_scope": "Sections 1-3 read in full and Section 4 partly; exact rotational all-time sum recognized as already proved, then applied and rederived in continued attempt."
+    },
+    {
+      "path": "research_round3_2026_10_21/subprincipal_stability_theorem.md",
+      "bytes": 23662,
+      "sha256": "63597dea1e627925280e79644ccc54ed68b9327c9ab757f6eea9ad69962e2381",
+      "read_scope": "Sections 1-4 and start of Section 5 read; used for historical comparison, not as an unproved black-box input to the new estimate."
+    },
+    {
+      "path": "research_round13_2026_10_21/round13_main_report.md",
+      "bytes": 29302,
+      "sha256": "eaad00d107fcec37cb53a105eefe99a9d05fd288afa3dbf39065633142e4bdfe",
+      "read_scope": "Section 1 fixed test and precise first target read."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+      "bytes": 24173,
+      "sha256": "4bc02ec2a3565f34c33a830db584cf761e62e5b69c23c7a727ab124046ca583a"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "bytes": 7891,
+      "sha256": "4128be1d1670f64159f2b94d9303777408580c32d550f40c7862dd6d01be0ea1"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/check_quartic_coefficient.py",
+      "bytes": 1675,
+      "sha256": "804e4d177a06a45be756c9e97514c86b2980f5a3a3829b609e3ddfb0cd2f17e6"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/quartic_coefficient_check.json",
+      "bytes": 891,
+      "sha256": "f54e32d957e0d776cd2ceb29ac9fcb570fd81c7f7adbaa991f510b3511f0d3f5"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/r14_heisenberg_sum_attempt.md",
+      "bytes": 12758,
+      "sha256": "16b767447bf11c7da1d33819a9614f9884daaf699e702fe798b200e198372a99"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/main_cr_editorial_patch.json",
+      "bytes": 1149,
+      "sha256": "5714c62309c0ac01d763600cb6f7dccae0f369540eb6644d506fd980a6605e29"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "S. Gnutzmann and A. Altland",
+      "title": "Spectral correlations of individual quantum graphs",
+      "publication": "Physical Review E 72, 056215 (2005)",
+      "doi": "10.1103/PhysRevE.72.056215",
+      "url": "https://www.physik.fu-berlin.de/en/einrichtungen/ag/ag-von-oppen/papers/pre_72_056215.pdf",
+      "web_ref": "turn499view0",
+      "read_scope": "Definition of rational independence; Section II D, equation (20); Section III B, equations (38)-(47). Not an audit of all 14 pages. No theorem asserting original-family universality is imported.",
+      "local_source_copy": false
+    },
+    {
+      "authors": "S. Gnutzmann and A. Altland",
+      "title": "Universal spectral statistics in quantum graphs",
+      "source_version": "arXiv:nlin/0402029v2, 27 September 2004",
+      "published_version": "Physical Review Letters 93, 194101 (2004)",
+      "url": "https://arxiv.org/html/nlin/0402029v2",
+      "web_ref": "turn493view1 / turn499view1",
+      "read_scope": "HTML lines 18-68: setup, spectral average, graph-gap statement and phase-equivalence equation (2). HTML conversion date not treated as publication date.",
+      "local_source_copy": false
+    }
+  ],
+  "status": "Original H_diag unresolved. New statements are an all-odd-N fixed-time original coordinate return limit, exact quartic coefficient with analytic remainder, and a concrete failure of an exact/pointwise-o(1) independent-coordinate-phase bridge. The fully normalized weighted microscopic bridge remains unproved.",
+  "additional_search_scope": "A targeted search for a general unitary Minami/spectral-averaging result returned Anderson-model and special band-unitary literature; no such theorem was imported or claimed to apply, and no source theorem from this extra search is used.",
+  "editorial_correction": {
+    "date": "2026-10-21",
+    "file": "research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+    "change_type": "editorial only: one accidental carriage-return byte in a TeX rm command replaced by literal backslash-r",
+    "old_sha256": "7b6657c8e1ca2ee91391509c2c97b9054715681a0afa2cedff94f8dd4c4ecc3f",
+    "new_sha256": "4bc02ec2a3565f34c33a830db584cf761e62e5b69c23c7a727ab124046ca583a",
+    "old_bytes": 24172,
+    "new_bytes": 24173,
+    "patches": [
+      {
+        "offset_zero_based": 1290,
+        "line_one_based": 35,
+        "delete_hex": "0d",
+        "insert_hex": "5c72",
+        "old_context_hex": "5c746f5c696e6674792c5c204e5c207b0d6d206f64647d7d0a5c6c656674287c",
+        "new_context_hex": "5c746f5c696e6674792c5c204e5c207b5c726d206f64647d7d0a5c6c656674287c"
+      }
+    ],
+    "mathematical_changes": false,
+    "addendum_reference_update": {
+      "file": "research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "old_sha256": "bc72ceeb8f97dec047a8aacf0631368e0188fe51a49863952d2a9ca5d89f7cd3",
+      "new_sha256": "4128be1d1670f64159f2b94d9303777408580c32d550f40c7862dd6d01be0ea1",
+      "editorial_only": true
+    }
+  }
+}

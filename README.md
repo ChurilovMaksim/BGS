@@ -1,5 +1,13 @@
 # BGS — quantum chaos and spectral universality
 
+## Final spectral research edition, 21 October 2026
+
+The [organized fourteen-round research edition](mathematics/spectral_research/README.md)
+contains individual proofs, ten thematic reading paths, reference programs and
+execution evidence. [Review and adoption](record/spectral_final_integration_20261021.md)
+state exact proved and conditional scopes; the original microscopic hierarchy
+and BGS remain open. [Standalone remaining task](record/remaining_breakthrough_task_20261021.md).
+
 [Русский](README.ru.md) · [Research overview](RESEARCH.md) · [Corpus atlas](docs/corpus_atlas.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Complete manuscript](manuscript/README.md)
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.

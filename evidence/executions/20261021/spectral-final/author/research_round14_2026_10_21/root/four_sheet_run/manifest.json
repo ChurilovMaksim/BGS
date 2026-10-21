@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "claim_id": "R14_FINITE_FOUR_SHEET_ALGEBRA",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research_round14_2026_10_21/root/check_four_sheet_algebra.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "In Q[i][z,z^-1], the complete fourth Hamilton-Jacobi momentum coefficient from the three recursive formulas equals (i^3/96)D_4^3(u^4), and its mode two coefficient yields -25823/4800000000000 in units pi^4*tau^4. Also verify the Gauss identity for every odd N residue and every d residue modulo 8.",
+    "coefficient_domain": "Exact rational complex pairs Q[i]; exact Z[zeta_8] residues",
+    "conventions": "D_n(z^k)=i(k-3n/4)z^k with kappa set to 1; g_n has separately proved homogeneity kappa^(2n-2). u=(-3-4i)R/1000, R=(1+cos 7q)(1-cos q).",
+    "inputs": [
+      "The explicit nine Fourier coefficients of R",
+      "The fourth-order Hamilton-Jacobi recurrence",
+      "All 9^4 ordered Fourier label tuples",
+      "All four odd N residues and all eight d residues modulo 8"
+    ],
+    "bounds": {
+      "time_order": 4,
+      "R_max_frequency": 8,
+      "R_fourier_terms": 9,
+      "ordered_four_tuples": 6561,
+      "gauss_residue_cases": 32
+    },
+    "non_claims": [
+      "No spectral simulation",
+      "No long-time estimate",
+      "No proof or counterexample to H_diag",
+      "The analytic and asymptotic arguments are outside this finite computation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-21T15:03:30.872899+00:00",
+    "runtime_seconds": 0.121926,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 20000,
+    "resource_limits": {
+      "memory_bytes": 268435456,
+      "cpu_seconds": 20,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research_round14_2026_10_21/root/check_four_sheet_algebra.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research_round14_2026_10_21/root/check_four_sheet_algebra.py",
+      "sha256": "e6ce2c2e71cc6caf08ecb1afa5eb2aa9a0e60f5ecad618577d2168d09e148ccc",
+      "sha256_after": "e6ce2c2e71cc6caf08ecb1afa5eb2aa9a0e60f5ecad618577d2168d09e148ccc"
+    }
+  ],
+  "output_directory": "research_round14_2026_10_21/root/four_sheet_run",
+  "declared_results": [
+    "research_round14_2026_10_21/root/four_sheet_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "research_round14_2026_10_21/root/four_sheet_run/stdout.txt",
+      "sha256": "d1a0ff77f83231cee9014689899ed94995c4f472efd37b87a7e2ea05b814e4e0",
+      "kind": "log"
+    },
+    {
+      "path": "research_round14_2026_10_21/root/four_sheet_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research_round14_2026_10_21/root/four_sheet_run/result.json",
+      "sha256": "3a08d83dfb5810709c495b99ec276526c212aa969f39f1aacd0ded5f4a71998d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

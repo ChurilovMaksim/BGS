@@ -1,0 +1,227 @@
+{
+  "created_utc": "2026-10-20T16:31:57.261691+00:00",
+  "status": {
+    "H_diag": "unproved",
+    "H_diag_counterexample_for_original_family": "not established",
+    "Sine_2_limit_for_original_family": "unproved"
+  },
+  "original_family": {
+    "tau": "10^-80 exactly, fixed independently of N",
+    "dimensions": "all odd N >= 3; scopes of partial theorems explicitly identified",
+    "extra_averaging": false
+  },
+  "first_unproved_estimate": "For b_*=|F^-1 phi|^2/(2*(integral phi)^2), phi(x)=exp(-1/(1-x^2)) on |x|<1 and 0 otherwise: N^-2 sum_{1<=m<2N} |bhat_*(m/N)|^2 (|Tr U_N^m|^2-min(m,N)) -> 0 along all odd N.",
+  "appendices": [
+    {
+      "label": "A",
+      "title": "Точные нечётные гребёнки, сектора и арифметическая жёсткость",
+      "source": "odd_trace_and_algebraic_rigidity.md"
+    },
+    {
+      "label": "B",
+      "title": "Точная аналитическая амплитуда одного шага",
+      "source": "exact_amplitude.md"
+    },
+    {
+      "label": "C",
+      "title": "Гауссово разложение, формула для всех времён и модуль амплитуд",
+      "source": "gaussian_cocycle_and_modulus.md"
+    },
+    {
+      "label": "D",
+      "title": "Классический след и полный вклад одной орбиты",
+      "source": "classical_trace_and_pair_diagonal.md"
+    },
+    {
+      "label": "E",
+      "title": "Независимая проверка классического следа и парной статистики",
+      "source": "audit_classical.md"
+    },
+    {
+      "label": "F",
+      "title": "Точный динамический определитель",
+      "source": "exact_dynamical_determinant.md"
+    },
+    {
+      "label": "G",
+      "title": "Независимая проверка определителя и ограниченных наблюдаемых",
+      "source": "audit_determinant.md"
+    },
+    {
+      "label": "H",
+      "title": "Симметрии Вейля и отсутствие канонической CRT-факторизации",
+      "source": "affine_reversal_and_crt_obstructions.md"
+    },
+    {
+      "label": "I",
+      "title": "Независимая проверка симметрий и CRT",
+      "source": "audit_symmetry.md"
+    },
+    {
+      "label": "J",
+      "title": "Количественная трансцендентная оценка",
+      "source": "quantitative_transcendence_limits.md"
+    },
+    {
+      "label": "K",
+      "title": "Независимая проверка количественной оценки",
+      "source": "audit_quantitative.md"
+    },
+    {
+      "label": "L",
+      "title": "Полная классификация простоты M_N и доказанные классы для U_N",
+      "source": "exact_spectral_simplicity.md"
+    },
+    {
+      "label": "M",
+      "title": "Независимая проверка классификации простоты",
+      "source": "audit_simplicity.md"
+    },
+    {
+      "label": "N",
+      "title": "Конечные тождества и замыкание к Sine_2",
+      "source": "finite_identities_and_closure.md"
+    },
+    {
+      "label": "O",
+      "title": "Контрпримеры к общим методам, не к исходному семейству",
+      "source": "selfinverse_countermechanism.md"
+    }
+  ],
+  "finite_evidence": {
+    "symmetry": {
+      "dimensions": 48,
+      "range": "odd 3..99, except 7",
+      "candidate_maps": 5600,
+      "manifest": "affine_symmetry_computation_manifest.json",
+      "role": "exact finite checks; universal theorem proved separately"
+    },
+    "simplicity": {
+      "dimensions": 100,
+      "range": "odd 3..201",
+      "certified_count": 97,
+      "uncertified": [
+        7,
+        49,
+        147
+      ],
+      "manifest": "spectral_simplicity_computation_manifest.json",
+      "role": "exact finite-field certificates with characteristic-zero lifting; failed reductions do not prove degeneracy at 49 or 147"
+    }
+  },
+  "infinite_simplicity_classes": "U_N(z) simple at every algebraic z when N=p^a, ord_p(S)=p+1, and (a=1 or v_p((S^ord_p(S))_21)=1); includes every 3^a and 5^a.",
+  "scope_limits": [
+    "The complete simplicity classification concerns the bare M_N; it is only sufficient for simplicity of U_N.",
+    "No O(N) microscopic pair count has been obtained.",
+    "The explicit positive plateau constant is not a lower bound on the actual H_diag discrepancy.",
+    "Countermodels in Appendix O and the rank-one example concern other matrices, not the original U_N.",
+    "No Lean or other proof-assistant formalization is claimed."
+  ],
+  "review_version_checks": {
+    "author_hashes_match_audits": true,
+    "finite_simplicity_manifest_hashes_match": true
+  },
+  "files": {
+    "affine_reversal_and_crt_obstructions.md": {
+      "sha256": "856f7e0d7373e1b3c260b20477969a12e3e78886836b11fd4eac9ddd9cc7642c",
+      "bytes": 28463
+    },
+    "affine_symmetry_computation_manifest.json": {
+      "sha256": "bc53f66cede06c1b6440483945ddd5d4a4a7c9a11ee15bb5691f2e3027a4a832",
+      "bytes": 3992
+    },
+    "affine_symmetry_exact_result.json": {
+      "sha256": "d94623d7f2712673ff90676f54393532c6eca0b9c7ce44dc637732aabe7cc374",
+      "bytes": 27587
+    },
+    "audit_classical.md": {
+      "sha256": "fe317398241fdb95ed181cae11a4114c609e8a21eebcc472688879aaf6d8b44d",
+      "bytes": 19034
+    },
+    "audit_determinant.md": {
+      "sha256": "b2a95bd8ccbee9c6f2098544dfe062abdeb9335e2205af1eac63341062c8c931",
+      "bytes": 18174
+    },
+    "audit_quantitative.md": {
+      "sha256": "91f854140a2fd1e28db50fead59afd9e1cbf70d6bef631895bdedbd85bed0455",
+      "bytes": 19258
+    },
+    "audit_simplicity.md": {
+      "sha256": "c09cc06df2b1c6d74a008e166d00bcb0c644c2ce3256faa9b4c59c78d4ce506d",
+      "bytes": 16234
+    },
+    "audit_symmetry.md": {
+      "sha256": "9b47c3dbdf5a9a00b9e57a7723e80ddf280b4e8d932d495f1998010788658404",
+      "bytes": 26689
+    },
+    "classical_trace_and_pair_diagonal.md": {
+      "sha256": "355f2c6deb1549c32ab7b7313774b8c27b1310d019013838fc5e3679721af55c",
+      "bytes": 18164
+    },
+    "exact_amplitude.md": {
+      "sha256": "69cd85816766b26358fb13058b3b26f9c243886cf863e5f8f9a6c6570e1a542e",
+      "bytes": 17663
+    },
+    "exact_dynamical_determinant.md": {
+      "sha256": "e75d4e7477246e189ba56f0b6bbbda4d806ad1e8bb114e1f4b7d07613b8f0035",
+      "bytes": 9886
+    },
+    "exact_spectral_simplicity.md": {
+      "sha256": "4aef0bf28965da0c359c01dff6e3bd330dd0cafdeb79118a5e84bd359d1ac2eb",
+      "bytes": 24781
+    },
+    "finite_identities_and_closure.md": {
+      "sha256": "e1d85ef8ecff65a1fecffe200185d9e721dce14f9c356705cc04f5c97ffd6d35",
+      "bytes": 11878
+    },
+    "gaussian_cocycle_and_modulus.md": {
+      "sha256": "c1a863e613a327acb5fe43ff1093c4a8fe51b37ebd5dcee9fddf0ae0a91986f1",
+      "bytes": 28912
+    },
+    "odd_trace_and_algebraic_rigidity.md": {
+      "sha256": "42832bfc27bbf307b154c781f7299912e7c3094e0a0c3ff2e3ade9f0e580764b",
+      "bytes": 35177
+    },
+    "overview_ru.md": {
+      "sha256": "07cf27986c196b4f90f8d3266a3e15cbbd2a16bdc7d856078c3ee9f42357fa8d",
+      "bytes": 36117
+    },
+    "quantitative_transcendence_limits.md": {
+      "sha256": "35a8399e59a1ff390031cab2be39c654d08acf095326dcbc160dadca23f9eae4",
+      "bytes": 21497
+    },
+    "selfinverse_countermechanism.md": {
+      "sha256": "5eaa20f8d1c3621ac69c526db33ba41eed761cbbbd637a8ed77a12bcdedeaf42",
+      "bytes": 25312
+    },
+    "spectral_simplicity_certificates.json": {
+      "sha256": "9b35dbce426538d275574c484be5519d14f69399dbad3c14eaaeb5e44390024b",
+      "bytes": 1360234
+    },
+    "spectral_simplicity_computation_manifest.json": {
+      "sha256": "67bfd21cbc8243290fab07c5c6addfe7bd08872a33ba1a03e18eab3e93906cb8",
+      "bytes": 4264
+    },
+    "spectral_simplicity_exception_retry_1.json": {
+      "sha256": "7cdb9b1af3c6816f5b9e104e58a1d69764839101d476f3b7737a2469ce715960",
+      "bytes": 36111
+    },
+    "spectral_simplicity_exception_retry_2.json": {
+      "sha256": "d815ef158282692b1d394119e2016d8209b63480421adb1349aedfbe0930d7d7",
+      "bytes": 36165
+    },
+    "verify_affine_symmetry.py": {
+      "sha256": "ded7875ca635745da21bbaef9d523cc24c2d57a3985965f84b82caee1a51626e",
+      "bytes": 5558
+    },
+    "verify_spectral_simplicity.py": {
+      "sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf",
+      "bytes": 9818
+    }
+  },
+  "assembled_report": {
+    "name": "Spectral_continuation_2026-10-20.md",
+    "sha256": "b78feb07091461938f6600f449159853940155a2c005e236857c433e08b71d44",
+    "bytes": 360015
+  }
+}

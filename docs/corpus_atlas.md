@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**327 maintained proof notes; 10 topic views; 191 core claim IDs.**
+**331 maintained proof notes; 10 topic views; 195 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 9 |
+| conditional | 11 |
 | open | 5 |
-| proved | 165 |
+| proved | 167 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 129 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 133 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -69,6 +69,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact collective occupation hierarchy through Heisenberg degree](../mathematics/collective_occupation_hierarchy.md) | Consult proof and full ledger |
 | [Exact projector residual after the collective hierarchy](../mathematics/collective_projector_residual.md) | Consult proof and full ledger |
 | [BGS-TRACE-029: convex weak-noise stability and unsigned deconvolution barrier](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) | `BGS-TRACE-029` (proved) |
+| [Quartic coordinate return for the original fixed kick](../mathematics/coordinate_return_quartic_20261021.md) | `BGS-TRACE-108` (proved) |
 | [A low-trace obstruction to prescribed-time Dyson relaxation](../mathematics/dyson_relaxation_obstruction.md) | `BGS-FLOW-013` (proved) |
 | [Egorov overlap rigidity and separation from affine quantizations](../mathematics/egorov_overlap_rigidity.md) | `BGS-FM-016` (proved) |
 | [Uniform first-order splitting on the even-depth new sector](../mathematics/even_new_sector_first_jet.md) | Consult proof and full ledger |
@@ -111,6 +112,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [A genuine residual after disjoint Hamming and low-switch removal](../mathematics/hamming_low_switch_residual.md) | Consult proof and full ledger |
 | [Exact heat compensation of a Heisenberg pair test](../mathematics/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
 | [Corrected hook-cycle, tree and phase-current reduction](../mathematics/hook_tree_phase_current_reduction.md) | `BGS-TRACE-026` (proved) |
+| [Inserted trace and the exact obstruction to a quantum coboundary](../mathematics/inserted_trace_coboundary_20261021.md) | `BGS-TRACE-109` (conditional) |
 | [Intermediate-old-layer rotated returns: exact operator and obstruction](../mathematics/intermediate_return_operator.md) | Consult proof and full ledger |
 | [Fixed-word freeness of the literal kick and cat factors](../mathematics/literal_fixed_word_freeness.md) | Consult proof and full ledger |
 | [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/literal_growing_word_window.md) | Consult proof and full ledger |
@@ -133,6 +135,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
 | [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/original_channel_gap.md) | `BGS-FM-020` (proved) |
 | [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/paired_character_identity.md) | Consult proof and full ledger |
+| [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/pell_weighted_curvature_20261021.md) | `BGS-TRACE-111` (proved) |
 | [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/phase_map_frostman.md) | Consult proof and full ledger |
 | [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/physical_homoclinic_weights.md) | Consult proof and full ledger |
 | [Uniform trace decay of the physical kick](../mathematics/physical_kick_trace_decay.md) | `BGS-TRACE-106` (proved) |
@@ -163,6 +166,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Rounded and simple-spectrum endpoint barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) | `BGS-TRACE-025` (proved) |
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/scaled_weyl_overlap_20261015.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Distance to the unperturbed spectral orbit: exact lemmas and a conditional application](../mathematics/spectral_orbit_distance_20261021.md) | `BGS-TRACE-110` (conditional) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/stationary_cyclic_residual.md) | Consult proof and full ledger |
 | [Half-radius obstruction even with reverse-kernel decay](../mathematics/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
 | [Once-counted distinct-port three-block cancellation](../mathematics/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |

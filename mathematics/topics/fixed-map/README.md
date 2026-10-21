@@ -1,5 +1,10 @@
 # Fixed deterministic map
 
+The [final spectral edition](../../spectral_research/README.md) provides the
+complete thematic source corpus. New maintained notes: [coordinate return](../../coordinate_return_quartic_20261021.md),
+[inserted trace](../../inserted_trace_coboundary_20261021.md), [spectral distance](../../spectral_orbit_distance_20261021.md),
+and [weighted Pell curvature](../../pell_weighted_curvature_20261021.md).
+
 ## Reviewed 7 October phase checkpoint
 
 [Current claim card](../../phase_trace_checkpoint.md) and

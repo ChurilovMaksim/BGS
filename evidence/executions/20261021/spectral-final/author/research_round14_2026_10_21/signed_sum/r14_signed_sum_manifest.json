@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-21",
+  "agent": "/root/r14_signed_cancellation",
+  "base_master_sha256_reported_by_parent": "ef38464d8e2b6ad3e917547e3437dcd53ed7c28dd39c4818faa29e5eb7cf6d43",
+  "status": "original H2 and H_diag remain unproved and not refuted",
+  "inputs": [
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round12_2026_10_21/r12_full_product_nonperturbative_attempt.md",
+      "bytes": 21313,
+      "sha256": "d1418d95d9a5482251a66241e99e555f48519b437a7a2ed3a29a00eaa91d4225",
+      "read_scope": "read in full; prior full physical exponential attempt"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round13_2026_10_21/signed_sum/r13_exact_l2_resummation_test.md",
+      "bytes": 10111,
+      "sha256": "c92306e56c2559c052c0669cc6ee97a72049fb27bf4a91c0accef5dace7eb24f",
+      "read_scope": "read in full; prior l2-flatness obstruction"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round11_2026_10_21/root_parametric_eigenphase_dynamics.md",
+      "bytes": 24325,
+      "sha256": "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb",
+      "read_scope": "read in full; derivative/Pechukas overlap checked"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round11_2026_10_21/r11_coherent_parametric_audit.md",
+      "bytes": 24613,
+      "sha256": "f600be6e7a6f2158ce5e50ef41ccdccca96f0da5ca3c5b4ece8b9b727038422e",
+      "read_scope": "read in full; finite algebra and prior route scope only"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/exact_amplitude.md",
+      "bytes": 17663,
+      "sha256": "69cd85816766b26358fb13058b3b26f9c243886cf863e5f8f9a6c6570e1a542e",
+      "read_scope": "read in full; exact kernel, finite shifts, real-h uniform derivatives, leading amplitude"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/odd_trace_and_algebraic_rigidity.md",
+      "bytes": 35177,
+      "sha256": "42832bfc27bbf307b154c781f7299912e7c3094e0a0c3ff2e3ade9f0e580764b",
+      "read_scope": "sections 2-9 read in full and used; further sections through start of 13 read but not used as external theorem input"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round13_2026_10_21/orbit_correlations/protected_actions_and_one_step_trace.md",
+      "bytes": 17511,
+      "sha256": "6bbde35d4fb3873976d6182b3fb6d9cc969349a3a6ce78e7b9dc48cf480c9fe6",
+      "read_scope": "read in full; sections 1-6 used; all-time section7 not imported"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round13_2026_10_21/round13_main_report.md",
+      "bytes": 29302,
+      "sha256": "eaad00d107fcec37cb53a105eefe99a9d05fd288afa3dbf39065633142e4bdfe",
+      "read_scope": "read first150 lines, exact b* test; proof inputs taken from raw proofs"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/obstruction/r14_original_spectral_orbit_barrier.md",
+      "bytes": 24272,
+      "sha256": "610c0e62b64834687b91db54a1cb5e584a2ad16035e0290c54506ffa6608de7e",
+      "read_scope": "read in full; independently audited new sections3-6 and8; old pressure chain section2 not independently certified"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "bytes": 7500,
+      "sha256": "bc72ceeb8f97dec047a8aacf0631368e0188fe51a49863952d2a9ca5d89f7cd3",
+      "read_scope": "read in full; highest-mode recursion, hand Laurent coefficient, diagonal derivatives and analytic remainder independently audited"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+      "bytes": 24172,
+      "sha256": "7b6657c8e1ca2ee91391509c2c97b9054715681a0afa2cedff94f8dd4c4ecc3f",
+      "read_scope": "read in full; main TheoremA proof and needed phase construction checked; external quantum-graph source in section8 not opened or imported; one literal CR in TeX line35 noted to root, input unmodified"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round11_2026_10_21/r11_resolvent_ward_diagonal_route.md",
+      "bytes": 17203,
+      "sha256": "6868e41398755931045c322ccc18cd3400631d85596aadeaf1c743f34d4efb4f",
+      "read_scope": "sections0-1 and section4 Poisson-kernel passage read for overlap; text searched throughout; no new certification of whole resolvent chain"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/structural/main_cr_editorial_patch.json",
+      "bytes": 1149,
+      "sha256": "5714c62309c0ac01d763600cb6f7dccae0f369540eb6644d506fd980a6605e29",
+      "read_scope": "read in full; exact old-byte reconstruction independently verified for main and addendum"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+      "bytes": 24173,
+      "sha256": "4bc02ec2a3565f34c33a830db584cf761e62e5b69c23c7a727ab124046ca583a",
+      "read_scope": "editorial revision; replacing bytes at offset1290 back reconstructs previous fully audited SHA exactly; no mathematical change"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "bytes": 7891,
+      "sha256": "4128be1d1670f64159f2b94d9303777408580c32d550f40c7862dd6d01be0ea1",
+      "read_scope": "editorial revision; reversing header SHA update and provenance paragraph reconstructs previous fully audited SHA exactly"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/round14_main_report.md",
+      "bytes": 66357,
+      "sha256": "90d9197131eeacaf731b6a4eda251393f102dc3ff62d00951bab19b4b561a8e1",
+      "read_scope": "sections4.1-4.3 and5.3 read in full and compared with own frozen inserted proof; prior portions read as context but no whole-report audit claimed"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/round14_main_report.md",
+      "bytes": 66578,
+      "sha256": "3fd178e7acdd45b1b49ae83c059c9a8413d09fea0df55294cdc60edc902a1f41",
+      "read_scope": "new section5.5 read in full and compared with own full-sum raw; section5.3 positive index correction checked; old pressure input not independently recertified"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/round14_main_report.md",
+      "bytes": 66654,
+      "sha256": "42b1922c84bf8445a46d3f8485c6c438733fcdbd12244909723c29653115a92f",
+      "read_scope": "section5.5 pairing clarification read; reverse exact textual delta reconstructed preceding main SHA byte-for-byte; no further mathematical changes"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_inserted_trace_and_two_copy_coboundary.md",
+      "bytes": 42863,
+      "sha256": "a4f9f49283b06d0d03c7b9980d795c2b082bf0d761a81e1d10037f7278424896"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_independent_audit_spectral_orbit_barrier.md",
+      "bytes": 17858,
+      "sha256": "9f979ce79e67f6cd335a40ddd922e02348c8c775c3cf2718721e00a304c2ff19"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_independent_audit_quartic_return.md",
+      "bytes": 16900,
+      "sha256": "8535119d5cc30fd449d945a88a350d28de1795faeb64a18d46ae5c6ffbb285a4"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_full_weighted_gradient_and_hessian_attempt.md",
+      "bytes": 42739,
+      "sha256": "733a9f9c202d2091986ae5f85a1f98cbf4ce32755835edfb195b59386e2873c0"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_editorial_delta_and_main_comparison.md",
+      "bytes": 8340,
+      "sha256": "78512185f4b4c5c1cd09b3b9b59f623429c18bf8c7686b3cef840649e3790ded"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_main_full_sum_section_audit.md",
+      "bytes": 7747,
+      "sha256": "2e6c49a1f98da095fe7460b66bdd4e3e2f75b90f9ac5857431f5d3a2e02e6abb"
+    }
+  ],
+  "external_theorems_used_in_new_proof": [],
+  "pressure_chain_independently_recertified": false,
+  "source_mutations": "none outside assigned signed_sum scope",
+  "inserted_trace_editorial_revision": "Previously clarified row vectorization. This revision changes only prose in sections4 and5: the proved lower bound has N^-1 scale; a corresponding upper bound has not been established. No formula changed. Exact diff in r14_inserted_trace_editorial_diff.patch.",
+  "artifact_validation": "All own frozen MD, patch and JSON files checked for unexpected ASCII control characters; proof coefficients independently derived by finite matrix algebra; optional N12 Hessian sanity check not used as premise.",
+  "editorial_diff": {
+    "path": "/workspace/scratch/e111873eea6c/research_round14_2026_10_21/signed_sum/r14_inserted_trace_editorial_diff.patch",
+    "bytes": 2266,
+    "sha256": "e6ce4dfd0b05fcf8483a97f3b3c7b86549d18a77b19a861763dbd0b25c69dda5",
+    "base_sha256": "066f851dabbcfdb88b0ab640b0e0e0b2242943ae20e59922ed03a3285b60ea52"
+  },
+  "quartic_audit_validation": "manual derivation; full highest-mode recurrence and alternative factored Laurent extraction checked; no machine output used as premise",
+  "previous_manifest_sha256": "e687eaeab96f178e25da52181acf0c0d35d45a83cb07afc3c82176df8e8d8820",
+  "new_full_sum_result_scope": "Exact whole-weighted gradient and Hessian at t=0 along original Pell scalar-return endpoint; not the prescribed tau. G and double triple-trace sum are superpolynomially small, S(0) grows as N/d, S_second(0) has negative lower-magnitude N^5/d^2. Explicit all-t return-defect transfer bound fails to yield original H2.",
+  "new_full_sum_proof_dependencies": "Finite Weyl algebra, matrix differentiation, elementary Fourier/Poisson summation proved in the note. No imported pressure input used in new theorems. Optional physical rho limit section8.2 marked as separate old dependency.",
+  "main_comparison": "Sections4 and5.3 substantive clean at original main SHA b6323a290bf57a6b768bc27c0f388eda4609c8d409325b8ac2d3792b38921e84. New section5.5 substantive clean at SHA3fd178e7acdd45b1b49ae83c059c9a8413d09fea0df55294cdc60edc902a1f41; explicit positive indices and pairing clarification both closed at SHA42b1922c84bf8445a46d3f8485c6c438733fcdbd12244909723c29653115a92f, exact delta verified.",
+  "editorial_delta_verified": "Corrected main and addendum reconstruct original audited bytes exactly upon reversing declared edits; precise record in r14_editorial_delta_and_main_comparison.md.",
+  "independent_full_sum_audit_status": "Parent root and structural agent reported full reading and independent verification of sections2-9 of full-sum raw SHA733a9f9c202d2091986ae5f85a1f98cbf4ce32755835edfb195b59386e2873c0; no blocking errors. Their audit files are owned by their branches, not rewritten here."
+}

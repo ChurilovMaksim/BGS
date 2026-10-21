@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-20",
+  "method": "Exact first-order spectral-projector compression over a splitting finite field; squarefree reduction certificates lift to characteristic zero",
+  "unconditional_infinite_classes": [
+    "N=3^k, k>=1",
+    "N=5^k, k>=1"
+  ],
+  "bare_cat_classification": "For odd N>1: simple iff N=p^a, ord_p(S)=p+1, and (a=1 or v_p((S^ord_p(S))_21)=1)",
+  "finite_scope": {
+    "minimum_N": 3,
+    "maximum_N": 201,
+    "tested_odd_dimensions": 100,
+    "successful_dimensions": [
+      3,
+      5,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81,
+      83,
+      85,
+      87,
+      89,
+      91,
+      93,
+      95,
+      97,
+      99,
+      101,
+      103,
+      105,
+      107,
+      109,
+      111,
+      113,
+      115,
+      117,
+      119,
+      121,
+      123,
+      125,
+      127,
+      129,
+      131,
+      133,
+      135,
+      137,
+      139,
+      141,
+      143,
+      145,
+      149,
+      151,
+      153,
+      155,
+      157,
+      159,
+      161,
+      163,
+      165,
+      167,
+      169,
+      171,
+      173,
+      175,
+      177,
+      179,
+      181,
+      183,
+      185,
+      187,
+      189,
+      191,
+      193,
+      195,
+      197,
+      199,
+      201
+    ],
+    "uncertified_dimensions": [
+      7,
+      49,
+      147
+    ]
+  },
+  "exception_retries": [
+    {
+      "file": "spectral_simplicity_exception_retry_1.json",
+      "results": [
+        {
+          "N": 49,
+          "prime": 24697,
+          "successful": false,
+          "failed_sector_count": 6
+        },
+        {
+          "N": 147,
+          "prime": 108193,
+          "successful": false,
+          "failed_sector_count": 3
+        }
+      ]
+    },
+    {
+      "file": "spectral_simplicity_exception_retry_2.json",
+      "results": [
+        {
+          "N": 49,
+          "prime": 47041,
+          "successful": false,
+          "failed_sector_count": 6
+        },
+        {
+          "N": 147,
+          "prime": 197569,
+          "successful": false,
+          "failed_sector_count": 3
+        }
+      ]
+    }
+  ],
+  "commands": [
+    "python research_continuation_2026_10_20/verify_spectral_simplicity.py --maximum 201",
+    "python research_continuation_2026_10_20/verify_spectral_simplicity.py --dimensions 49 147 --field-multiplier-minimum 20 --output research_continuation_2026_10_20/spectral_simplicity_exception_retry_1.json",
+    "python research_continuation_2026_10_20/verify_spectral_simplicity.py --dimensions 49 147 --field-multiplier-minimum 40 --output research_continuation_2026_10_20/spectral_simplicity_exception_retry_2.json"
+  ],
+  "arithmetic": "Integer modular arithmetic. NumPy int64 products guarded by N*(ell-1)^2 < 2^63-1. No matrix exponential or floating-point spectral computation.",
+  "limitations": [
+    "No universal simplicity theorem for all odd N other than 7 is claimed.",
+    "Failed reductions at 49 and 147 do not prove characteristic-zero first-order degeneracy or an identically zero discriminant.",
+    "No eigenphase spacing bound or statistics limit follows."
+  ],
+  "files": {
+    "exact_spectral_simplicity.md": {
+      "sha256": "4aef0bf28965da0c359c01dff6e3bd330dd0cafdeb79118a5e84bd359d1ac2eb",
+      "bytes": 24781
+    },
+    "verify_spectral_simplicity.py": {
+      "sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf",
+      "bytes": 9818
+    },
+    "spectral_simplicity_certificates.json": {
+      "sha256": "9b35dbce426538d275574c484be5519d14f69399dbad3c14eaaeb5e44390024b",
+      "bytes": 1360234
+    },
+    "spectral_simplicity_exception_retry_1.json": {
+      "sha256": "7cdb9b1af3c6816f5b9e104e58a1d69764839101d476f3b7737a2469ce715960",
+      "bytes": 36111
+    },
+    "spectral_simplicity_exception_retry_2.json": {
+      "sha256": "d815ef158282692b1d394119e2016d8209b63480421adb1349aedfbe0930d7d7",
+      "bytes": 36165
+    }
+  },
+  "bare_composite_bound": "For odd N with at least two distinct prime divisors: q(M_N)<=ord_N(S)<=8N/9"
+}

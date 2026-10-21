@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.
 
-**191 registered nodes; 238 direct prerequisite edges.**
+**195 registered nodes; 238 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -205,3 +205,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | verification-pending | None registered | None registered | 0 |
 | [BGS-TRACE-106](../mathematics/physical_kick_trace_decay.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-107](../mathematics/physical_trace_polynomial_approximation.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-108](../mathematics/coordinate_return_quartic_20261021.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-109](../mathematics/inserted_trace_coboundary_20261021.md) | conditional | None registered | None registered | 0 |
+| [BGS-TRACE-110](../mathematics/spectral_orbit_distance_20261021.md) | conditional | None registered | None registered | 0 |
+| [BGS-TRACE-111](../mathematics/pell_weighted_curvature_20261021.md) | proved | None registered | None registered | 0 |

@@ -1,5 +1,18 @@
 # BGS consolidated research manuscript
 
+## Final spectral edition, 21 October 2026
+
+The new [spectral section](unified_sections/spectral_final_20261021.tex)
+summarizes TRACE-108--111 with exact proved/conditional boundaries.
+The current three-pass build has **322 pages**, no unresolved references,
+and no overflow in the new section. Three new-section pages were inspected.
+Two inherited long-path overflows remain in older sections and are recorded
+in the [build receipt](../evidence/executions/20261021/spectral-final/manuscript_build.json).
+The [thematic proof edition](../mathematics/spectral_research/README.md)
+and [integration review](../record/spectral_final_integration_20261021.md)
+control mathematical status. Earlier dated build claims below refer to their
+original source revisions.
+
 [BGS_unified.tex](BGS_unified.tex) is the single maintained publication root
 on `main`. It presents the research corpus; the scientific-status authority
 is [the claim ledger](../record/claim_ledger.md), followed by canonical

@@ -1,0 +1,57 @@
+{
+  "status": "PASS exact coefficient identity and rational gap constant",
+  "scope": "No H_diag estimate and no microscopic countersequence",
+  "coefficient_count": 32,
+  "zero_sum_triples": 414,
+  "cubic_area_coefficients": {
+    "-8": [
+      "3/800000",
+      "0"
+    ],
+    "-7": [
+      "-81/800000",
+      "0"
+    ],
+    "-6": [
+      "3/800000",
+      "0"
+    ],
+    "-1": [
+      "9/800000",
+      "0"
+    ],
+    "0": [
+      "-273/20000",
+      "0"
+    ],
+    "1": [
+      "9/800000",
+      "0"
+    ],
+    "6": [
+      "3/800000",
+      "0"
+    ],
+    "7": [
+      "-81/800000",
+      "0"
+    ],
+    "8": [
+      "3/800000",
+      "0"
+    ]
+  },
+  "uniform_gap_numerator_lower_bound": "3159/25",
+  "input_sha256": {
+    "Spectral_research_master.md": "b1dc28374e62fb77c59d7da04f638916e43e0ac5809c68ea02c501fb92436a20",
+    "research_round8_2026_10_21/r8_original_obstruction_audit.md": "d14ac3f6ab63c08d5b89937a4caaddde84343d279a83cbcf96e7aa5d4aced854",
+    "research_round2_2026_10_20/arithmetic_banded_time_reversal.md": "39d017750473ee6779fc52656613b06dee5cd5591e4dbd288c64c10904cae6dd",
+    "research_round2_2026_10_20/arithmetic_padic_jacobi_simplicity.md": "f311596933d383976547ac5b2cd633b91107074da0fcab58db989eedcc4568df",
+    "research_round2_2026_10_20/arithmetic_seven_chain_discriminant_checkpoint.md": "eee2b4caa27349a81e5cf3113d53ff1f88164e44b748c2eb99754f6e07fc6a8f",
+    "research_continuation_2026_10_20/affine_reversal_and_crt_obstructions.md": "856f7e0d7373e1b3c260b20477969a12e3e78886836b11fd4eac9ddd9cc7642c",
+    "research_continuation_2026_10_20/quantitative_transcendence_limits.md": "35a8399e59a1ff390031cab2be39c654d08acf095326dcbc160dadca23f9eae4",
+    "research_round3_2026_10_21/arithmetic_flat_packet_obstruction_test.md": "58bcfa0d7db85583d23f16c8ab1e5327926e11221b102cb7c6d0128037abb1cc",
+    "research_round3_2026_10_21/arithmetic_comb_rescaled_gap.md": "898528107bfc2691c0f17fe6d8a096592c46de537b045c6bbc41949d0f3bfd2f",
+    "research_round4_2026_10_21/counter_subpolynomial_comb_quantitative.md": "3b59bd021e393489cd709073e683a2dec137333e0e657849b0636a9f85f90def"
+  }
+}

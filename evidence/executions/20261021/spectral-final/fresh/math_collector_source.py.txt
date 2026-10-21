@@ -1,0 +1,29 @@
+from pathlib import Path
+import json,re
+P=Path(__file__).resolve().parent
+segments=[];unmatched=[]
+files=list((P/'repo/mathematics/spectral_research').rglob('*.md'))+list((P/'repo/record/spectral_research').rglob('*.md'))
+files += [P/'repo'/x for x in ['mathematics/coordinate_return_quartic_20261021.md',
+    'mathematics/inserted_trace_coboundary_20261021.md','mathematics/spectral_orbit_distance_20261021.md',
+    'mathematics/pell_weighted_curvature_20261021.md','record/remaining_breakthrough_task_20261021.md',
+    'record/spectral_final_integration_20261021.md','literature/spectral_final_source_scope_20261021.md']]
+for p in files:
+    s=p.read_text();out=[];fence=None
+    for line in s.splitlines(keepends=True):
+        m=re.match(r'^\s*(`{3,}|~{3,})',line)
+        if fence:
+            out.append('\n' if line.endswith('\n') else '')
+            if m and m[1][0]==fence[0] and len(m[1])>=len(fence):fence=None
+        elif m:fence=m[1];out.append('\n')
+        else:out.append(re.sub(r'(`+)(.*?)\1',lambda m:' '*len(m[0]),line))
+    s=''.join(out);i=0
+    while i<len(s):
+        if s[i]!=' $'[1] or (i and s[i-1]=='\\'):i+=1;continue
+        d='$$' if s.startswith('$$',i) else '$';j=s.find(d,i+len(d))
+        while j>=0 and s[j-1]=='\\':j=s.find(d,j+len(d))
+        if j<0:
+            unmatched.append({'file':str(p.relative_to(P/'repo')),'line':s[:i].count('\n')+1,'tail':s[i:i+100]});break
+        segments.append({'file':str(p.relative_to(P/'repo')),'line':s[:i].count('\n')+1,'display':len(d)==2,'latex':s[i+len(d):j]});i=j+len(d)
+(P/'math-render/segments.json').write_text(json.dumps(segments,ensure_ascii=False))
+(P/'math-render/unmatched.json').write_text(json.dumps(unmatched,ensure_ascii=False,indent=2))
+print(json.dumps({'files':len(files),'segments':len(segments),'unmatched':len(unmatched)}))

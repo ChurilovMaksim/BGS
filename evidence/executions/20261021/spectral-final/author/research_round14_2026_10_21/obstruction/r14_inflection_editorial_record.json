@@ -1,0 +1,21 @@
+{
+  "source": "research_round14_2026_10_21/obstruction/r14_pell_curvature_inflection_and_analytic_window.md",
+  "previous_sha256": "f04cc25cfa5bbc5faf0193f24c5582eaa3406c0ae6d9dd88376d7bace9908530",
+  "updated_sha256": "4ff49e87ee6a4351d06efc4f6ec7da1bbdf39a32c7a45a276b9001dc72635773",
+  "previous_bytes": 22614,
+  "updated_bytes": 22620,
+  "exact_replacements": [
+    {
+      "old": "* Временная монотонность первой производной на всём",
+      "new": "* Неположительность первой производной \\(S_N'(t)\\) на всём"
+    },
+    {
+      "old": "\\left(\\left|\\operatorname{Tr}\\big[(e^{i\\tau NA_N}M_N)^m\\big]\\right|^2",
+      "new": "\\left(\\left|\\operatorname{Tr}\\left[(e^{i\\tau NA_N}M_N)^m\\right]\\right|^2"
+    }
+  ],
+  "only_two_replacements_verified": true,
+  "patch": "research_round14_2026_10_21/obstruction/r14_inflection_editorial_diff.patch",
+  "patch_sha256": "9d9c538d678c2cafb96b7908e98f07b3e2b5e119d99e2a3348415bddc57f8050",
+  "status": "frozen_after_requested_editorial_corrections"
+}

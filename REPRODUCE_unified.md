@@ -1,5 +1,16 @@
 # Reproduce the current consolidated research state
 
+## Final spectral source edition, 21 October 2026
+
+Reconstruct/check every preserved source projection with
+`python3 computations/maintenance/rebuild_spectral_corpus.py --check`.
+Reproduce the bounded historical checks with
+`python3 computations/verification/replay_spectral_corpus.py --output-dir /tmp/bgs-spectral-replay-results`
+(numpy and mpmath required). The independent finite Hessian comparison is
+`python3 -O computations/verification/weighted_trace_hessian_checks.py`.
+[Exact contexts, exclusions and original/fresh receipts](evidence/executions/20261021/spectral-final/README.md)
+and [scientific review](record/spectral_final_integration_20261021.md).
+
 ## Current consistency checks
 
 Run the scientific-registry, repository and bibliographic metadata audits first.

@@ -1,0 +1,1153 @@
+{
+  "topic": "symmetry",
+  "units": [
+    {
+      "original_path": "research_round8_2026_10_21/r8_original_uniform_clifford_symmetry_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_original_uniform_clifford_symmetry_gap.md",
+      "source_sha256": "0e4e58867f3f8745f9e3b1724fe8b269fc34cafd4dbea015e3a031495bf9d375",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 8: a uniform gap from every nontrivial Clifford commuting symmetry"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Status and exact scope"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "1. Statement and the normalizer's exact finite form"
+        },
+        {
+          "line": 81,
+          "level": 2,
+          "heading": "2. The two previously proved quantum inputs"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "3. The unbounded-symplectic case is controlled directly in the quantum system"
+        },
+        {
+          "line": 127,
+          "level": 3,
+          "heading": "3.1. A fixed cat image of a basic Weyl operator changes little under the kick"
+        },
+        {
+          "line": 159,
+          "level": 3,
+          "heading": "3.2. Comparing the two products"
+        },
+        {
+          "line": 227,
+          "level": 2,
+          "heading": "4. The remaining symplectic matrices form a finite integral set"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "5. Fixed matrices, varying characters, and the exact affine classical action"
+        },
+        {
+          "line": 310,
+          "level": 2,
+          "heading": "6. No nonscalar fixed affine action commutes with the original classical map"
+        },
+        {
+          "line": 328,
+          "level": 3,
+          "heading": "6.1. Hyperbolic linear part"
+        },
+        {
+          "line": 351,
+          "level": 3,
+          "heading": "6.2. The linear part \\(-I\\), with every possible translation"
+        },
+        {
+          "line": 413,
+          "level": 2,
+          "heading": "7. Fixed limiting canonical commutators have vanishing normalized trace"
+        },
+        {
+          "line": 481,
+          "level": 2,
+          "heading": "8. Completion and precise limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_original_uniform_antiunitary_clifford_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_original_uniform_antiunitary_clifford_gap.md",
+      "source_sha256": "96a22f2e1ef7b79af6fcbd3768f00adb4dac2bbadfef53545bac2199cf96d3e9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 8: a uniform gap from every antiunitary Clifford reverser"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Status and scope"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. Statement and exact antiunitary reduction"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "2. The exact ordinary-half calculus and the one imported quantum estimate"
+        },
+        {
+          "line": 99,
+          "level": 3,
+          "heading": "2.1. Correct symbol, product, and cat action"
+        },
+        {
+          "line": 155,
+          "level": 3,
+          "heading": "2.2. Fixed-symbol Egorov, including the transpose"
+        },
+        {
+          "line": 207,
+          "level": 3,
+          "heading": "2.3. Uniform quantum output-label tail"
+        },
+        {
+          "line": 236,
+          "level": 2,
+          "heading": "3. Escaping modular matrices: a direct quantum gap"
+        },
+        {
+          "line": 316,
+          "level": 2,
+          "heading": "4. Bounded modular matrices and arbitrary character limits"
+        },
+        {
+          "line": 383,
+          "level": 2,
+          "heading": "5. Independent exact exclusion of every affine classical reverser"
+        },
+        {
+          "line": 394,
+          "level": 3,
+          "heading": "5.1. Elementary flow bounds and exactly four fixed points"
+        },
+        {
+          "line": 451,
+          "level": 3,
+          "heading": "5.2. Four exact derivative matrices leave only two linear candidates"
+        },
+        {
+          "line": 515,
+          "level": 3,
+          "heading": "5.3. Both remaining candidates fail at the original nonzero time"
+        },
+        {
+          "line": 558,
+          "level": 2,
+          "heading": "6. Vanishing trace for every fixed limiting affine branch"
+        },
+        {
+          "line": 625,
+          "level": 2,
+          "heading": "7. Completion, parameter boundaries, and spectral limitation"
+        },
+        {
+          "line": 660,
+          "level": 2,
+          "heading": "8. Verification of the older \\(C^1\\) proof and its map convention"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_original_uniform_metaplectic_symmetry_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_original_uniform_metaplectic_symmetry_gap.md",
+      "source_sha256": "bd607591e7d31980d828762bf4ab01fd7e84b418a8c81cb48bc8e896f86bdc78",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 8: a uniform gap from metaplectic commuting symmetries"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Status"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "1. Exact statement"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "2. Reduction to the kick and an elementary unitary inequality"
+        },
+        {
+          "line": 142,
+          "level": 2,
+          "heading": "3. A uniform estimate whenever a symplectic column escapes"
+        },
+        {
+          "line": 144,
+          "level": 3,
+          "heading": "3.1. The exact kick moves a basic Weyl observable by at most \\(144\\tau\\)"
+        },
+        {
+          "line": 172,
+          "level": 3,
+          "heading": "3.2. The previously proved tail applies at every modulus"
+        },
+        {
+          "line": 223,
+          "level": 2,
+          "heading": "4. Bounded columns reduce to finitely many integral centralizers"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "heading": "5. Fixed metaplectic covariance includes a half-period translation"
+        },
+        {
+          "line": 316,
+          "level": 2,
+          "heading": "6. No nonidentity fixed integral centralizer commutes with the kick flow"
+        },
+        {
+          "line": 325,
+          "level": 3,
+          "heading": "6.1. Hyperbolic affine maps"
+        },
+        {
+          "line": 361,
+          "level": 3,
+          "heading": "6.2. The remaining case \\(L=-I\\)"
+        },
+        {
+          "line": 383,
+          "level": 2,
+          "heading": "7. A self-contained fixed-time trace-vanishing lemma"
+        },
+        {
+          "line": 462,
+          "level": 2,
+          "heading": "8. Completion of the uniform gap"
+        },
+        {
+          "line": 491,
+          "level": 2,
+          "heading": "9. What this closes, and what remains open"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_uniform_clifford_gap.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_uniform_clifford_gap.md",
+      "source_sha256": "64c08f2b11e395954ec52abb556ee6c6d74f92e5e8d3b6dd7a48aa9979ac18cd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: the full Clifford-normalizer gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Audited version and verdict"
+        },
+        {
+          "line": 45,
+          "level": 2,
+          "heading": "1. The normalizer classification is complete"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "2. The quantum comparison uses the correct output label"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Bounded output columns give a finite integral set"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "4. Exact affine covariance, varying translations, and echo order"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "5. Noncentralizers and hyperbolic affine centralizers"
+        },
+        {
+          "line": 223,
+          "level": 2,
+          "heading": "6. Exact zero mean and all shifted reflections"
+        },
+        {
+          "line": 283,
+          "level": 2,
+          "heading": "7. Trace localization and uniformity over characters"
+        },
+        {
+          "line": 317,
+          "level": 2,
+          "heading": "8. Completion, stability check, and exact limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_uniform_antiunitary_clifford_gap.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_uniform_antiunitary_clifford_gap.md",
+      "source_sha256": "0b077e2b9ac15b877fbe373977991531adbbe82747ff040cd849b9a329767c33",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: uniform antiunitary Clifford reversal gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Source and conclusion"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "heading": "1. Antiunitary reduction and the exact trace being estimated"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "heading": "2. Symbol, exact ordinary-half signs, and fixed Egorov"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "3. Transpose reverses the product in the required way"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "4. The escaping-matrix estimate has the stated smaller constant"
+        },
+        {
+          "line": 160,
+          "level": 2,
+          "heading": "5. Bounded matrices, affine limits, and the quantum commutator map"
+        },
+        {
+          "line": 199,
+          "level": 2,
+          "heading": "6. Independent audit of the new affine nonreversibility lemma"
+        },
+        {
+          "line": 201,
+          "level": 3,
+          "heading": "6.1. Flow bounds and the exact fixed set"
+        },
+        {
+          "line": 234,
+          "level": 3,
+          "heading": "6.2. Exact Hessians and simultaneous derivative equations"
+        },
+        {
+          "line": 280,
+          "level": 3,
+          "heading": "6.3. Both candidates fail at the actual nonzero time"
+        },
+        {
+          "line": 309,
+          "level": 2,
+          "heading": "7. Trace localization, compactness, and final uniformity"
+        },
+        {
+          "line": 346,
+          "level": 2,
+          "heading": "8. Stability and spectral limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_diagonal_reversal_hs_corollary.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_diagonal_reversal_hs_corollary.md",
+      "source_sha256": "ddfefc8e1e72d6ff599e41c023cd3e5a1d212f2ce6248f5b86d02d743d5d2c54",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact Hilbert--Schmidt identity for diagonal gauge reversal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Inputs and statement"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Direct proof and transpose convention"
+        },
+        {
+          "line": 93,
+          "level": 2,
+          "heading": "3. Quantitative and structural scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_quantitative_gauge_reversal_obstruction.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_quantitative_gauge_reversal_obstruction.md",
+      "source_sha256": "7cb30d1ef2cba42132c5aff08d06fd931be1175c87fd2bdc26a8b4de3a8c2c29",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Fixed-phase obstruction to approximate gauge reversal of the original unitary"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Question and result"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "heading": "2. The apparent magnetic flux is cut in the exact finite matrix"
+        },
+        {
+          "line": 103,
+          "level": 2,
+          "heading": "3. Exact ordinary-half representation and a trace discriminator"
+        },
+        {
+          "line": 167,
+          "level": 2,
+          "heading": "4. Uniform finite Taylor remainder"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "5. The first nonzero coefficient"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "6. Positive imaginary part and the gauge distance"
+        },
+        {
+          "line": 371,
+          "level": 2,
+          "heading": "7. Meaning of the fixed phase and boundaries of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/root_audit_quantitative_gauge_reversal.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/root_audit_quantitative_gauge_reversal.md",
+      "source_sha256": "adeb7344ee728cccfb90b169582e8d4afac89d5e92f2e2cff367057a2b5c87f2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent reconstruction of the quantitative gauge-reversal obstruction"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "Verdict and exact scope"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "1. Convention and cut-chain checks"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "2. Exact commutators and the remainder"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "3. The fourth coefficient"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "4. Gauge invariance of the discriminator"
+        },
+        {
+          "line": 139,
+          "level": 2,
+          "heading": "5. What the proof leaves open"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_monomial_reversal_closure.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_monomial_reversal_closure.md",
+      "source_sha256": "38462ab5c59f850c507b578b9b63092c452e427b48cdf3812a863434bb3a72f9",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Arbitrary-phase monomial symmetries of the exact kicked family"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Statement and scope"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "2. Exact matrix facts and two useful support lines"
+        },
+        {
+          "line": 153,
+          "level": 2,
+          "heading": "3. The only external theorem and its exact use"
+        },
+        {
+          "line": 202,
+          "level": 3,
+          "heading": "3.1. The projective scalar must be one"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "4. Eliminating the unknown phases by rank"
+        },
+        {
+          "line": 263,
+          "level": 3,
+          "heading": "4.1. Classification of the kernel at zero"
+        },
+        {
+          "line": 310,
+          "level": 3,
+          "heading": "4.2. A local analytic solution, without unitarity"
+        },
+        {
+          "line": 340,
+          "level": 2,
+          "heading": "5. Proof of the antiunitary exclusion"
+        },
+        {
+          "line": 388,
+          "level": 3,
+          "heading": "5.1. Composite involutions other than \\(\\pm1\\)"
+        },
+        {
+          "line": 405,
+          "level": 3,
+          "heading": "5.2. The involution \\(a=1\\)"
+        },
+        {
+          "line": 414,
+          "level": 3,
+          "heading": "5.3. The involution \\(a=-1\\)"
+        },
+        {
+          "line": 459,
+          "level": 2,
+          "heading": "6. Proof of the unitary commutant assertion"
+        },
+        {
+          "line": 499,
+          "level": 2,
+          "heading": "7. Consequences for the exact original family and their limits"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_rational_split_affine_reversal.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_rational_split_affine_reversal.md",
+      "source_sha256": "a92061a005e3b219b7564b0714ef469b3fb066da0274e73ebdd1faf411d9d36c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Weyl-normalizing antiunitary reversal under rational kick splitting"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Result"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "2. Exact normalizer and analytic facts"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "3. A necessary Hamiltonian symmetry"
+        },
+        {
+          "line": 172,
+          "level": 2,
+          "heading": "4. Exact Fourier support, without modular aliases"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "5. Complete coefficient collision table"
+        },
+        {
+          "line": 313,
+          "level": 2,
+          "heading": "6. Determinant obstruction and conclusion"
+        },
+        {
+          "line": 359,
+          "level": 2,
+          "heading": "7. Exact scope for the original kicked matrix"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_audit_rational_split_affine_reversal.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/phase_audit_rational_split_affine_reversal.md",
+      "source_sha256": "8cb78834cfb92c2717a5aa782deaba956d30832a2019b014c07fd71405bfee8b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: rationally split Weyl-normalizing reversal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Verdict and frozen inputs"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "2. Normalizers and the passage from one algebraic parameter to an identity"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "3. The derivative preserves the correct Hamiltonian"
+        },
+        {
+          "line": 78,
+          "level": 2,
+          "heading": "4. Fourier coefficients and modular aliases"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "5. Root-of-unity factors and every collision exception"
+        },
+        {
+          "line": 142,
+          "level": 2,
+          "heading": "6. Exceptional parameters, endpoints, and composite determinants"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "7. Scope of the verdict"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/affine_reversal_and_crt_obstructions.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/affine_reversal_and_crt_obstructions.md",
+      "source_sha256": "856f7e0d7373e1b3c260b20477969a12e3e78886836b11fd4eac9ddd9cc7642c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact obstructions to geometric reversal and CRT factorization"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Results and scope"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "2. Exact objects"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "3. Two identifiable Fourier coefficients"
+        },
+        {
+          "line": 118,
+          "level": 3,
+          "heading": "3.1. Uniform proof for \\(N\\geq11\\)"
+        },
+        {
+          "line": 164,
+          "level": 3,
+          "heading": "3.2. The three remaining dimensions"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "4. Complete rigidity inside the extended Clifford group"
+        },
+        {
+          "line": 233,
+          "level": 2,
+          "heading": "5. Transfer to the actual kicked matrix at the algebraic parameter"
+        },
+        {
+          "line": 237,
+          "level": 3,
+          "heading": "5.1. Algebraic representatives"
+        },
+        {
+          "line": 247,
+          "level": 3,
+          "heading": "5.2. Eliminate the unknown projective scalar before using transcendence"
+        },
+        {
+          "line": 285,
+          "level": 3,
+          "heading": "5.3. Differentiate the projective identity"
+        },
+        {
+          "line": 323,
+          "level": 2,
+          "heading": "6. Why the real Jacobi gauge does not reverse the split dynamics"
+        },
+        {
+          "line": 327,
+          "level": 3,
+          "heading": "6.1. Classify all monomial antiunitary reversers of the bare cat"
+        },
+        {
+          "line": 370,
+          "level": 3,
+          "heading": "6.2. None of these preserves the Hamiltonian outside \\(N=7\\)"
+        },
+        {
+          "line": 394,
+          "level": 3,
+          "heading": "6.3. The classical affine common-factor check"
+        },
+        {
+          "line": 436,
+          "level": 2,
+          "heading": "7. CRT does not factor the perturbed matrix"
+        },
+        {
+          "line": 506,
+          "level": 2,
+          "heading": "8. The seven Jacobi blocks are mixed by the cat step"
+        },
+        {
+          "line": 530,
+          "level": 2,
+          "heading": "9. Verification, provenance, and branch disposition"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/audit_symmetry.md",
+      "target": "record/spectral_research/sources/research_continuation_2026_10_20/audit_symmetry.md",
+      "source_sha256": "9b47c3dbdf5a9a00b9e57a7723e80ddf280b4e8d932d495f1998010788658404",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: Weyl symmetries and exact CRT nonfactorization"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "1. Verdict and scope"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "2. Derivation of the Weyl signs"
+        },
+        {
+          "line": 191,
+          "level": 2,
+          "heading": "3. Independent coefficient reconstruction and all odd dimensions"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "4. The character is eliminated without a hidden phase assumption"
+        },
+        {
+          "line": 358,
+          "level": 2,
+          "heading": "5. From a symmetry at the actual parameter to an identity in \\(z\\)"
+        },
+        {
+          "line": 360,
+          "level": 3,
+          "heading": "5.1. Why the candidate normalizer may be chosen algebraic"
+        },
+        {
+          "line": 389,
+          "level": 3,
+          "heading": "5.2. Exponential-polynomial evaluation and projective minors"
+        },
+        {
+          "line": 493,
+          "level": 3,
+          "heading": "5.3. The derivative signs and the original product"
+        },
+        {
+          "line": 538,
+          "level": 2,
+          "heading": "6. Canonical CRT: exact phases and a single nonzero minor"
+        },
+        {
+          "line": 663,
+          "level": 2,
+          "heading": "7. The auxiliary reversal and block claims"
+        },
+        {
+          "line": 665,
+          "level": 3,
+          "heading": "7.1. Arbitrary diagonal phases in a common monomial reversal"
+        },
+        {
+          "line": 715,
+          "level": 3,
+          "heading": "7.2. Classical affine common-factor statement"
+        },
+        {
+          "line": 759,
+          "level": 3,
+          "heading": "7.3. Seven coordinate paths"
+        },
+        {
+          "line": 786,
+          "level": 2,
+          "heading": "8. Verification record and remaining quantitative barrier"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_algebraic_reversal_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_algebraic_reversal_audit.md",
+      "source_sha256": "c4068f322442a34ecf336c2adda435edb7dfdc1998f82a538aaed62a047d6d1c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: common reversal and algebraic return lines"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Inputs and verdicts"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. Weyl convention and no-alias range"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Direct computation of the asymmetric cubic trace"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "3. Arbitrary common antiunitaries and the norm bound"
+        },
+        {
+          "line": 146,
+          "level": 2,
+          "heading": "4. Independent check of the odd moment"
+        },
+        {
+          "line": 195,
+          "level": 2,
+          "heading": "5. Projective evaluation at an algebraic parameter"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "heading": "6. The stronger all-time algebraic-line nonrecurrence"
+        },
+        {
+          "line": 288,
+          "level": 2,
+          "heading": "7. Exact scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_banded_time_reversal.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_banded_time_reversal.md",
+      "source_sha256": "39d017750473ee6779fc52656613b06dee5cd5591e4dbd288c64c10904cae6dd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact exclusion of arbitrary common time reversal"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Main results"
+        },
+        {
+          "line": 90,
+          "level": 2,
+          "heading": "2. Exact Weyl signs and the no-alias range"
+        },
+        {
+          "line": 175,
+          "level": 2,
+          "heading": "3. Computing the asymmetric cubic invariant"
+        },
+        {
+          "line": 263,
+          "level": 2,
+          "heading": "4. Why every common antiunitary is excluded"
+        },
+        {
+          "line": 289,
+          "level": 2,
+          "heading": "5. The exact odd moment"
+        },
+        {
+          "line": 347,
+          "level": 2,
+          "heading": "6. Transferring a fixed algebraic product reverser"
+        },
+        {
+          "line": 431,
+          "level": 2,
+          "heading": "7. Two additional algebraic symmetry exclusions"
+        },
+        {
+          "line": 463,
+          "level": 2,
+          "heading": "8. Exact certificate and boundaries of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_classical_symmetry_rigidity.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_classical_symmetry_rigidity.md",
+      "source_sha256": "434e15402b8122051aff0c45e684b53ce07e3ef518642e2b1f7b574b643cd8a3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Complete C1 symmetry rigidity of the actual classical map"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "heading": "2. Analytic input and its exact remainder"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "3. The four fixed points determine the allowable lattice actions"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "4. Every topological symmetry of S is affine: direct proof"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "5. The integer-matrix calculation leaves only two orbit actions"
+        },
+        {
+          "line": 311,
+          "level": 2,
+          "heading": "6. A period-two orbit excludes the R_0 reversing action"
+        },
+        {
+          "line": 363,
+          "level": 2,
+          "heading": "7. A period-three orbit excludes both -R_0 and -I"
+        },
+        {
+          "line": 436,
+          "level": 2,
+          "heading": "8. Completion of the group classification"
+        },
+        {
+          "line": 453,
+          "level": 2,
+          "heading": "9. Provenance, proof status, and quantum boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_adjoint_reflection_obstruction.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/counter_adjoint_reflection_obstruction.md",
+      "source_sha256": "7b800ee5f2b088a4e4449816ff4680e0079a6b48c5c7f3a2458ddda2741f266e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Adjoint-flat involutions: an obstruction to closure from norms alone"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. The one external theorem and verification of its hypotheses"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "3. A balanced involution has exactly zero mean adjoint coefficient"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "4. Lipschitz constant and simultaneous concentration"
+        },
+        {
+          "line": 155,
+          "level": 2,
+          "heading": "5. Deterministic selection and the exact revival"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "6. An explicit failure of the auxiliary pair comparison"
+        },
+        {
+          "line": 224,
+          "level": 2,
+          "heading": "7. Exact logical scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_audit_adjoint_reflection_obstruction.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/dual_audit_adjoint_reflection_obstruction.md",
+      "source_sha256": "dbabea71891ba19df2ff263f65ff8c80b2cb41285e6735ac5d5bb7bc44d33d0e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the adjoint-flat reflection obstruction"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen target and verdict"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "heading": "2. Primary-source check of the concentration theorem"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "3. Exact Haar twirl and its mean zero"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "4. Lipschitz normalization and all constants"
+        },
+        {
+          "line": 122,
+          "level": 2,
+          "heading": "5. Deterministic selection and exact conjugation structure"
+        },
+        {
+          "line": 165,
+          "level": 2,
+          "heading": "6. Pair-moment divergence, with multiplicities and normalization"
+        },
+        {
+          "line": 203,
+          "level": 2,
+          "heading": "7. Empty vague limit is a separate bounded-observable conclusion"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "8. Scope of the obstruction"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_adjoint_reflection_obstruction.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_adjoint_reflection_obstruction.md",
+      "source_sha256": "e1fed89859b6e2b79b1ad66c5bd596147c100d2d15b16eadc57125e032a95d03",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: flat adjoint involutions as a norm-only obstruction"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Source identity and verdict"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "1. The published concentration theorem"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. Exact centering on the traceless space"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "3. Lipschitz normalization and the simultaneous bound"
+        },
+        {
+          "line": 146,
+          "level": 2,
+          "heading": "4. Deterministic choice and selected branches"
+        },
+        {
+          "line": 181,
+          "level": 2,
+          "heading": "5. Exact revival and failure of the auxiliary pair statistic"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "6. Logical boundary"
+        }
+      ]
+    }
+  ]
+}

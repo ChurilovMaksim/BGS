@@ -1,0 +1,252 @@
+{
+  "assertion_tested": "Complete Laurent g4 recurrence equals its closed differential expression; exact Fourier coefficient and four-sheet Gauss residue identity",
+  "domain": "Q[i] Laurent coefficients; Z[zeta_8] residues",
+  "R2_coefficients": {
+    "-16": {
+      "real": "1/16",
+      "imaginary": "0"
+    },
+    "-15": {
+      "real": "-1/4",
+      "imaginary": "0"
+    },
+    "-14": {
+      "real": "3/8",
+      "imaginary": "0"
+    },
+    "-13": {
+      "real": "-1/4",
+      "imaginary": "0"
+    },
+    "-12": {
+      "real": "1/16",
+      "imaginary": "0"
+    },
+    "-9": {
+      "real": "1/4",
+      "imaginary": "0"
+    },
+    "-8": {
+      "real": "-1",
+      "imaginary": "0"
+    },
+    "-7": {
+      "real": "3/2",
+      "imaginary": "0"
+    },
+    "-6": {
+      "real": "-1",
+      "imaginary": "0"
+    },
+    "-5": {
+      "real": "1/4",
+      "imaginary": "0"
+    },
+    "-2": {
+      "real": "3/8",
+      "imaginary": "0"
+    },
+    "-1": {
+      "real": "-3/2",
+      "imaginary": "0"
+    },
+    "0": {
+      "real": "9/4",
+      "imaginary": "0"
+    },
+    "1": {
+      "real": "-3/2",
+      "imaginary": "0"
+    },
+    "2": {
+      "real": "3/8",
+      "imaginary": "0"
+    },
+    "5": {
+      "real": "1/4",
+      "imaginary": "0"
+    },
+    "6": {
+      "real": "-1",
+      "imaginary": "0"
+    },
+    "7": {
+      "real": "3/2",
+      "imaginary": "0"
+    },
+    "8": {
+      "real": "-1",
+      "imaginary": "0"
+    },
+    "9": {
+      "real": "1/4",
+      "imaginary": "0"
+    },
+    "12": {
+      "real": "1/16",
+      "imaginary": "0"
+    },
+    "13": {
+      "real": "-1/4",
+      "imaginary": "0"
+    },
+    "14": {
+      "real": "3/8",
+      "imaginary": "0"
+    },
+    "15": {
+      "real": "-1/4",
+      "imaginary": "0"
+    },
+    "16": {
+      "real": "1/16",
+      "imaginary": "0"
+    }
+  },
+  "g4_nonzero_coefficients": 62,
+  "g4_recurrence_equals_closed_polynomial": true,
+  "four_tuples_visited": 6561,
+  "four_tuples_contributing_to_mode_2": 190,
+  "R4_mode_2": "245/32",
+  "g4_mode_2_over_kappa6": {
+    "real": "-25823/614400000000000",
+    "imaginary": "-343/12800000000000"
+  },
+  "diagonal_return_coefficient_over_pi4_tau4": "-25823/4800000000000",
+  "gauss_cases_checked": [
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 0
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 1
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 2
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 3
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 4
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 5
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 6
+    },
+    {
+      "N_mod_8": 1,
+      "d_mod_8": 7
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 0
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 1
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 2
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 3
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 4
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 5
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 6
+    },
+    {
+      "N_mod_8": 3,
+      "d_mod_8": 7
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 0
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 1
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 2
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 3
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 4
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 5
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 6
+    },
+    {
+      "N_mod_8": 5,
+      "d_mod_8": 7
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 0
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 1
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 2
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 3
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 4
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 5
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 6
+    },
+    {
+      "N_mod_8": 7,
+      "d_mod_8": 7
+    }
+  ],
+  "randomness": false,
+  "non_claims": [
+    "No finite-N spectral data were computed.",
+    "This computation does not prove H_diag, Sine_2 convergence, or their failure.",
+    "Analytic remainders and the discrete-to-limit passage require the written proof."
+  ]
+}

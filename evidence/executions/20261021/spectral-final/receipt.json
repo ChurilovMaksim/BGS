@@ -1,0 +1,145 @@
+{
+  "schema": "bgs-spectral-final-integration-v1",
+  "date": "2026-10-21",
+  "baseline_commit": "2dccc8fc4e562cff0742e5ef2bdb589148bb6b1c",
+  "baseline_tree": "6287fdf4e8aac443a1ae92afdda555a4a0973ae4",
+  "source_sha256": "b035e30034b20c60a8ced1d28a072767c1ea7afc5deaeea545aa20730e1948cb",
+  "source_bytes": 8849820,
+  "source_units": 535,
+  "historical_declared_hash_matches": 529,
+  "historical_declared_hash_differences": 6,
+  "source_archive_reconstruction": "PASS",
+  "reading_projection_roundtrip": "PASS",
+  "bounded_research_checks": {
+    "passed": 56,
+    "total": 56,
+    "context": "exact historical snapshots and documented pre-editorial input where required; original assertions enabled"
+  },
+  "independent_hessian_cases": 3,
+  "math_parse": {
+    "engine": "KaTeX",
+    "version": "0.19.0",
+    "strict_parse": true,
+    "files": 423,
+    "segments": 42608,
+    "parse_errors": [],
+    "unmatched_delimiters": [],
+    "non_claim": "Source parse coverage; not browser verification of every page or semantic proof certification"
+  },
+  "local_source_link_check": {
+    "result": "PASS",
+    "source_units": 535,
+    "markdown_files_checked": 423,
+    "local_link_targets_checked": 1257,
+    "reference_and_new_python_syntax_files": 72,
+    "evidence_json_files": 64,
+    "known_tree_used": true,
+    "failures": []
+  },
+  "maintenance_checks": [
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/rebuild_spectral_corpus.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_spectral_research.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_claim_registry.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_research_views.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_finite_orbit_section.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "computations/verification/check_spectral_edition.py",
+        "--known-tree",
+        "/workspace/scratch/1c87c9bb0442/spectral_final_20261021/base_tree.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "computations/verification/physical_kick_trace_checks.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "manuscript": {
+    "pages": 322,
+    "pdf_sha256": "bef0ef569400ba5850dd0396daf1358eb7c075b287091563ca189ce6579d95e7",
+    "pdf_bytes": 2374670,
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0
+      },
+      {
+        "pass": 2,
+        "returncode": 0
+      },
+      {
+        "pass": 3,
+        "returncode": 0
+      }
+    ],
+    "new_section_start": 316,
+    "inspected_image_pages": [
+      316,
+      317,
+      318
+    ],
+    "overfull_hboxes": 2,
+    "new_section_overfull_hboxes": 0,
+    "unresolved_references": false
+  },
+  "core_claim_count": 195,
+  "new_claim_states": {
+    "BGS-TRACE-108": "proved",
+    "BGS-TRACE-109": "conditional",
+    "BGS-TRACE-110": "conditional",
+    "BGS-TRACE-111": "proved"
+  },
+  "semantic_review_scope": "Specific adopted claims and exact countertests stated in record/spectral_final_integration_20261021.md; not full independent certification of all source proofs.",
+  "not_run": [
+    "Wolfram kernel",
+    "new Lean build",
+    "new C++ build",
+    "browser render of all 403 Markdown sources"
+  ],
+  "open": [
+    "BGS-TRACE-005",
+    "BGS-BGS-001"
+  ],
+  "publication": "Prepared from authenticated baseline; branch lease and remote blob integrity checked at publication."
+}

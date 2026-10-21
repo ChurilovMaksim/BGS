@@ -1,0 +1,107 @@
+{
+  "status": "exact_finite_algebra_and_orbit_checks_only",
+  "no_original_fixed_kick_spectrum_computed": true,
+  "coefficient_count": 32,
+  "root_coefficient_list_agrees": true,
+  "root_results_sha256": "59596b62d273a936255fbf623a05f2635d13a48ab848bbd16c3c4221ed8f7210",
+  "Q_values": [
+    -1,
+    1,
+    2,
+    8,
+    50,
+    71,
+    72,
+    97,
+    98,
+    127,
+    128,
+    162
+  ],
+  "max_Q_distance_to_98": 99,
+  "Q98_coefficients": [
+    {
+      "k": -7,
+      "l": 0,
+      "re": "9/20",
+      "im": "0"
+    },
+    {
+      "k": 7,
+      "l": 0,
+      "re": "9/20",
+      "im": "0"
+    }
+  ],
+  "trace_A2_div_N": "66033/160000",
+  "neighbor_overlap_div_N": "-7/2000000",
+  "trace_D2_div_N": "1650839/2000000",
+  "alias_exclusion_radius": 37,
+  "overlap_pairs": [
+    [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ]
+  ],
+  "small_dimension_trace_A": {
+    "3": "-3/20",
+    "5": "0",
+    "7": "63/10",
+    "9": "0",
+    "11": "0"
+  },
+  "finite_modular_return_checks": [
+    {
+      "N": 101,
+      "order_S_mod_N": 102,
+      "orbit_length_of_7_0": 102,
+      "negative_label_in_same_orbit": true,
+      "trace_B2_div_N": "21040713/250000",
+      "isolated_orbit_lower_bound": "4131/50",
+      "uniform_lower_bound": "4131/100"
+    },
+    {
+      "N": 105,
+      "order_S_mod_N": 12,
+      "orbit_length_of_7_0": 12,
+      "negative_label_in_same_orbit": false,
+      "trace_B2_div_N": "9935157/2000000",
+      "isolated_orbit_lower_bound": "243/50",
+      "uniform_lower_bound": "243/50"
+    },
+    {
+      "N": 121,
+      "order_S_mod_N": 132,
+      "orbit_length_of_7_0": 132,
+      "negative_label_in_same_orbit": true,
+      "trace_B2_div_N": "13614579/125000",
+      "isolated_orbit_lower_bound": "2673/25",
+      "uniform_lower_bound": "2673/50"
+    },
+    {
+      "N": 143,
+      "order_S_mod_N": 84,
+      "orbit_length_of_7_0": 84,
+      "negative_label_in_same_orbit": false,
+      "trace_B2_div_N": "34669887/1000000",
+      "isolated_orbit_lower_bound": "1701/50",
+      "uniform_lower_bound": "1701/50"
+    }
+  ]
+}

@@ -1,0 +1,3410 @@
+{
+  "method": "finite-field second-order Schur complement and discriminant-jet lifting",
+  "dimensions": [
+    {
+      "N": 49,
+      "p": 3529,
+      "primitive_root": 17,
+      "cat_order": 21,
+      "zeta_N": 2479,
+      "i": 808,
+      "sqrt_N": 7,
+      "gamma": 1,
+      "xi": 3482,
+      "input_code_sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf",
+      "sectors": [
+        {
+          "k": 0,
+          "dimension": 5,
+          "lambda": 1,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              3177,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2293,
+              1502,
+              0,
+              0
+            ],
+            [
+              0,
+              728,
+              177,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2443,
+              2943
+            ],
+            [
+              0,
+              0,
+              0,
+              209,
+              27
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2470,
+            2134,
+            3374,
+            819,
+            1208
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 3107
+        },
+        {
+          "k": 1,
+          "dimension": 2,
+          "lambda": 3482,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              2064,
+              0
+            ],
+            [
+              0,
+              2163
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2831,
+            247
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2743
+        },
+        {
+          "k": 2,
+          "dimension": 2,
+          "lambda": 2209,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              2035,
+              0
+            ],
+            [
+              0,
+              2035
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2988,
+            1708
+          ],
+          "first_gcd": [
+            1,
+            1494
+          ],
+          "first_scalar": 2035,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              278,
+              2718
+            ],
+            [
+              1797,
+              405
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            2846,
+            3081
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 2453
+        },
+        {
+          "k": 3,
+          "dimension": 2,
+          "lambda": 2047,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              760,
+              977
+            ],
+            [
+              3135,
+              3283
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3015,
+            354
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1634
+        },
+        {
+          "k": 4,
+          "dimension": 2,
+          "lambda": 2603,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              3332,
+              0
+            ],
+            [
+              0,
+              3486
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            240,
+            1413
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2542
+        },
+        {
+          "k": 5,
+          "dimension": 2,
+          "lambda": 1174,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              1895,
+              389
+            ],
+            [
+              2600,
+              984
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            650,
+            2791
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1972
+        },
+        {
+          "k": 6,
+          "dimension": 2,
+          "lambda": 1286,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              2186,
+              0
+            ],
+            [
+              0,
+              2186
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2686,
+            330
+          ],
+          "first_gcd": [
+            1,
+            1343
+          ],
+          "first_scalar": 2186,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              2072,
+              480
+            ],
+            [
+              163,
+              115
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            1342,
+            1235
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 3292
+        },
+        {
+          "k": 7,
+          "dimension": 4,
+          "lambda": 3080,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              3161,
+              1762,
+              0,
+              0
+            ],
+            [
+              614,
+              2838,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2316,
+              3155
+            ],
+            [
+              0,
+              0,
+              1370,
+              154
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2118,
+            1904,
+            2558,
+            1387
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 899
+        },
+        {
+          "k": 8,
+          "dimension": 2,
+          "lambda": 3458,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              819,
+              0
+            ],
+            [
+              0,
+              2742
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3497,
+            1254
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 3066
+        },
+        {
+          "k": 9,
+          "dimension": 2,
+          "lambda": 3337,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              2035,
+              0
+            ],
+            [
+              0,
+              2035
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2988,
+            1708
+          ],
+          "first_gcd": [
+            1,
+            1494
+          ],
+          "first_scalar": 2035,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              348,
+              2783
+            ],
+            [
+              3043,
+              309
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            2872,
+            2593
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 1326
+        },
+        {
+          "k": 10,
+          "dimension": 2,
+          "lambda": 1966,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              3292,
+              596
+            ],
+            [
+              3356,
+              751
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3015,
+            2759
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2601
+        },
+        {
+          "k": 11,
+          "dimension": 2,
+          "lambda": 2881,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              601,
+              0
+            ],
+            [
+              0,
+              3321
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3136,
+            2036
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1616
+        },
+        {
+          "k": 12,
+          "dimension": 2,
+          "lambda": 2224,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              2138,
+              1272
+            ],
+            [
+              2211,
+              741
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            650,
+            3487
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2717
+        },
+        {
+          "k": 13,
+          "dimension": 2,
+          "lambda": 1342,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              2186,
+              0
+            ],
+            [
+              0,
+              2186
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2686,
+            330
+          ],
+          "first_gcd": [
+            1,
+            1343
+          ],
+          "first_scalar": 2186,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              3020,
+              3046
+            ],
+            [
+              1453,
+              1915
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            2123,
+            2326
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 1879
+        },
+        {
+          "k": 14,
+          "dimension": 4,
+          "lambda": 448,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              2564,
+              1451,
+              0,
+              0
+            ],
+            [
+              2096,
+              3435,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              103,
+              2334
+            ],
+            [
+              0,
+              0,
+              576,
+              2367
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2118,
+            2911,
+            3213,
+            3304
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1716
+        },
+        {
+          "k": 15,
+          "dimension": 2,
+          "lambda": 118,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              3478,
+              0
+            ],
+            [
+              0,
+              1456
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2124,
+            3382
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1902
+        },
+        {
+          "k": 16,
+          "dimension": 2,
+          "lambda": 1512,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              2035,
+              0
+            ],
+            [
+              0,
+              2035
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2988,
+            1708
+          ],
+          "first_gcd": [
+            1,
+            1494
+          ],
+          "first_scalar": 2035,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              84,
+              3344
+            ],
+            [
+              415,
+              1523
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            1922,
+            25
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 2650
+        },
+        {
+          "k": 17,
+          "dimension": 2,
+          "lambda": 3045,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              905,
+              3447
+            ],
+            [
+              404,
+              3138
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3015,
+            412
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1402
+        },
+        {
+          "k": 18,
+          "dimension": 2,
+          "lambda": 1574,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              1774,
+              0
+            ],
+            [
+              0,
+              2429
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2855,
+            137
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2016
+        },
+        {
+          "k": 19,
+          "dimension": 2,
+          "lambda": 131,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              148,
+              2244
+            ],
+            [
+              3424,
+              2731
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            650,
+            1059
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1842
+        },
+        {
+          "k": 20,
+          "dimension": 2,
+          "lambda": 901,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              2186,
+              0
+            ],
+            [
+              0,
+              2186
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            2686,
+            330
+          ],
+          "first_gcd": [
+            1,
+            1343
+          ],
+          "first_scalar": 2186,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              297,
+              2166
+            ],
+            [
+              2389,
+              676
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            2556,
+            2088
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 3192
+        }
+      ],
+      "certificate": true,
+      "discriminant_valuation": 92,
+      "discriminant_leading_coefficient": 1657,
+      "valuation_scope": "valuation over F_p only; certifies a nonzero characteristic-zero coefficient",
+      "factorials_invertible_for_required_jet": true,
+      "arithmetic": "exact F_p, int64 overflow bound checked before products"
+    },
+    {
+      "N": 147,
+      "p": 37633,
+      "primitive_root": 5,
+      "cat_order": 84,
+      "zeta_N": 14721,
+      "i": 15905,
+      "sqrt_N": 36275,
+      "gamma": 1,
+      "xi": 32441,
+      "input_code_sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf",
+      "sectors": [
+        {
+          "k": 0,
+          "dimension": 5,
+          "lambda": 1,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              8424,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19256,
+              19457,
+              27800,
+              34364
+            ],
+            [
+              0,
+              21713,
+              15569,
+              36430,
+              3381
+            ],
+            [
+              0,
+              24667,
+              787,
+              6344,
+              32854
+            ],
+            [
+              0,
+              1130,
+              13600,
+              4473,
+              28481
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            34825,
+            19912,
+            20056,
+            27169,
+            12775
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 3702
+        },
+        {
+          "k": 1,
+          "dimension": 2,
+          "lambda": 32441,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "first_matrix": [
+            [
+              26470,
+              7671
+            ],
+            [
+              13810,
+              4557
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            6606,
+            10410
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 18582
+        },
+        {
+          "k": 2,
+          "dimension": 2,
+          "lambda": 11636,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              24888,
+              7963
+            ],
+            [
+              16372,
+              32954
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            17424,
+            13659
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 30995
+        },
+        {
+          "k": 4,
+          "dimension": 2,
+          "lambda": 30595,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              21228,
+              4209
+            ],
+            [
+              9424,
+              25401
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            28637,
+            6370
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 29219
+        },
+        {
+          "k": 5,
+          "dimension": 2,
+          "lambda": 37286,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              870,
+              0
+            ],
+            [
+              0,
+              870
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35893,
+            4240
+          ],
+          "first_gcd": [
+            1,
+            36763
+          ],
+          "first_scalar": 870,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              35403,
+              4141
+            ],
+            [
+              3205,
+              6949
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            32914,
+            21070
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 18844
+        },
+        {
+          "k": 6,
+          "dimension": 2,
+          "lambda": 32873,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              391,
+              0
+            ],
+            [
+              0,
+              19216
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            18026,
+            24489
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 28297
+        },
+        {
+          "k": 8,
+          "dimension": 2,
+          "lambda": 8416,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              5077,
+              224
+            ],
+            [
+              32151,
+              34838
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35351,
+            21138
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 4884
+        },
+        {
+          "k": 9,
+          "dimension": 2,
+          "lambda": 33674,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "first_matrix": [
+            [
+              3277,
+              30999
+            ],
+            [
+              25120,
+              10218
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            24138,
+            35805
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 16250
+        },
+        {
+          "k": 10,
+          "dimension": 2,
+          "lambda": 7510,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              20788,
+              22434
+            ],
+            [
+              22847,
+              9957
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            6888,
+            16478
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 36318
+        },
+        {
+          "k": 12,
+          "dimension": 2,
+          "lambda": 2534,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              8689,
+              27807
+            ],
+            [
+              29656,
+              8689
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            20255,
+            14460
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 7485
+        },
+        {
+          "k": 13,
+          "dimension": 2,
+          "lambda": 15022,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              5113,
+              0
+            ],
+            [
+              0,
+              34920
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35233,
+            15008
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 17385
+        },
+        {
+          "k": 14,
+          "dimension": 4,
+          "lambda": 18985,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              27146,
+              18578,
+              12726,
+              14874
+            ],
+            [
+              14295,
+              33993,
+              1740,
+              30377
+            ],
+            [
+              16532,
+              156,
+              22118,
+              12136
+            ],
+            [
+              26038,
+              32247,
+              23064,
+              1388
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            28254,
+            7616,
+            19833,
+            20109
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 19380
+        },
+        {
+          "k": 16,
+          "dimension": 2,
+          "lambda": 3750,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              2505,
+              29416
+            ],
+            [
+              36887,
+              1424
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33704,
+            33915
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 22383
+        },
+        {
+          "k": 17,
+          "dimension": 2,
+          "lambda": 23894,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              16719,
+              0
+            ],
+            [
+              0,
+              31164
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            27383,
+            2031
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 20673
+        },
+        {
+          "k": 18,
+          "dimension": 2,
+          "lambda": 18353,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              24129,
+              29790
+            ],
+            [
+              15923,
+              20390
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            30747,
+            31896
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 22364
+        },
+        {
+          "k": 20,
+          "dimension": 2,
+          "lambda": 25866,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              22718,
+              0
+            ],
+            [
+              0,
+              29654
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            22894,
+            11239
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 13122
+        },
+        {
+          "k": 21,
+          "dimension": 5,
+          "lambda": 15905,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            7,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            7,
+            10
+          ],
+          "first_matrix": [
+            [
+              1306,
+              23270,
+              0,
+              0,
+              0
+            ],
+            [
+              5057,
+              15629,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              21695,
+              0,
+              16401
+            ],
+            [
+              0,
+              0,
+              0,
+              24461,
+              0
+            ],
+            [
+              0,
+              0,
+              23121,
+              0,
+              32873
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            16935,
+            30068,
+            10681,
+            11904,
+            32097
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 14085
+        },
+        {
+          "k": 22,
+          "dimension": 2,
+          "lambda": 25675,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              37140,
+              17981
+            ],
+            [
+              8277,
+              4817
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33309,
+            5876
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 7504
+        },
+        {
+          "k": 24,
+          "dimension": 2,
+          "lambda": 23546,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              35294,
+              12426
+            ],
+            [
+              22150,
+              32340
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            7632,
+            10932
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 23078
+        },
+        {
+          "k": 25,
+          "dimension": 2,
+          "lambda": 18785,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "first_matrix": [
+            [
+              37047,
+              31340
+            ],
+            [
+              32830,
+              1223
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            36996,
+            30002
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 22330
+        },
+        {
+          "k": 26,
+          "dimension": 2,
+          "lambda": 13016,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              28074,
+              13651
+            ],
+            [
+              33701,
+              28074
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            19118,
+            12631
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 30970
+        },
+        {
+          "k": 28,
+          "dimension": 4,
+          "lambda": 18984,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              27348,
+              23636,
+              15013,
+              10127
+            ],
+            [
+              12450,
+              7477,
+              1029,
+              28410
+            ],
+            [
+              20667,
+              36827,
+              14381,
+              21832
+            ],
+            [
+              32382,
+              13707,
+              34502,
+              20444
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            5616,
+            3791,
+            32666,
+            19279
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 19160
+        },
+        {
+          "k": 29,
+          "dimension": 2,
+          "lambda": 33532,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "first_matrix": [
+            [
+              1241,
+              11191
+            ],
+            [
+              10290,
+              29786
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            6606,
+            10410
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 18582
+        },
+        {
+          "k": 30,
+          "dimension": 2,
+          "lambda": 29747,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              25557,
+              4713
+            ],
+            [
+              4675,
+              32285
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            17424,
+            23883
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 27732
+        },
+        {
+          "k": 32,
+          "dimension": 2,
+          "lambda": 25391,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              35550,
+              13236
+            ],
+            [
+              34386,
+              15673
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            24043,
+            18991
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 22271
+        },
+        {
+          "k": 33,
+          "dimension": 2,
+          "lambda": 35960,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              870,
+              0
+            ],
+            [
+              0,
+              870
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35893,
+            4240
+          ],
+          "first_gcd": [
+            1,
+            36763
+          ],
+          "first_scalar": 870,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              16302,
+              29680
+            ],
+            [
+              3005,
+              10434
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            10897,
+            33351
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 29622
+        },
+        {
+          "k": 34,
+          "dimension": 2,
+          "lambda": 30626,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              24885,
+              0
+            ],
+            [
+              0,
+              37624
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            12757,
+            1833
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 8625
+        },
+        {
+          "k": 36,
+          "dimension": 2,
+          "lambda": 17259,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              33711,
+              23167
+            ],
+            [
+              12797,
+              6204
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35351,
+            21138
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 4884
+        },
+        {
+          "k": 37,
+          "dimension": 2,
+          "lambda": 33078,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "first_matrix": [
+            [
+              36594,
+              32355
+            ],
+            [
+              6697,
+              14534
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            24138,
+            37019
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 11394
+        },
+        {
+          "k": 38,
+          "dimension": 2,
+          "lambda": 16036,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              9297,
+              7684
+            ],
+            [
+              36936,
+              29401
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            36568,
+            24480
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 20214
+        },
+        {
+          "k": 40,
+          "dimension": 2,
+          "lambda": 10482,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              8689,
+              2720
+            ],
+            [
+              6857,
+              8689
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            20255,
+            21851
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 15554
+        },
+        {
+          "k": 41,
+          "dimension": 2,
+          "lambda": 32407,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              5170,
+              0
+            ],
+            [
+              0,
+              1689
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            30774,
+            1274
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 37168
+        },
+        {
+          "k": 42,
+          "dimension": 5,
+          "lambda": 37632,
+          "basis_columns": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              4748,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              20589,
+              4516,
+              29648,
+              3269
+            ],
+            [
+              0,
+              723,
+              2917,
+              27643,
+              34252
+            ],
+            [
+              0,
+              5694,
+              37061,
+              36646,
+              10681
+            ],
+            [
+              0,
+              36503,
+              24033,
+              4589,
+              24493
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            23506,
+            13407,
+            26493,
+            5481,
+            35432
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 16557
+        },
+        {
+          "k": 44,
+          "dimension": 2,
+          "lambda": 25997,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              29003,
+              36413
+            ],
+            [
+              19740,
+              12559
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33704,
+            34183
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 21311
+        },
+        {
+          "k": 45,
+          "dimension": 2,
+          "lambda": 13147,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              31658,
+              0
+            ],
+            [
+              0,
+              17543
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            26065,
+            26113
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 4123
+        },
+        {
+          "k": 46,
+          "dimension": 2,
+          "lambda": 7038,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              35227,
+              3812
+            ],
+            [
+              29190,
+              30406
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            9633,
+            10217
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 26109
+        },
+        {
+          "k": 48,
+          "dimension": 2,
+          "lambda": 4760,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              62,
+              0
+            ],
+            [
+              0,
+              35600
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            1971,
+            24486
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 23597
+        },
+        {
+          "k": 49,
+          "dimension": 4,
+          "lambda": 10961,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "first_matrix": [
+            [
+              18504,
+              37279,
+              0,
+              0
+            ],
+            [
+              32282,
+              36064,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1926,
+              31973
+            ],
+            [
+              0,
+              0,
+              10373,
+              15009
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3763,
+            9318,
+            8862,
+            19781
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 21341
+        },
+        {
+          "k": 50,
+          "dimension": 2,
+          "lambda": 29217,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              36743,
+              21724
+            ],
+            [
+              5482,
+              5214
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33309,
+            5876
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 7504
+        },
+        {
+          "k": 52,
+          "dimension": 2,
+          "lambda": 30123,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              2778,
+              15199
+            ],
+            [
+              14786,
+              24091
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            10764,
+            25186
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 3844
+        },
+        {
+          "k": 53,
+          "dimension": 2,
+          "lambda": 4132,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "first_matrix": [
+            [
+              12814,
+              4468
+            ],
+            [
+              31328,
+              25456
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            36996,
+            11596
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 20688
+        },
+        {
+          "k": 54,
+          "dimension": 2,
+          "lambda": 35099,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              28074,
+              9826
+            ],
+            [
+              7977,
+              28074
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            19118,
+            9094
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 7485
+        },
+        {
+          "k": 56,
+          "dimension": 4,
+          "lambda": 18648,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              22062,
+              30709,
+              2753,
+              22759
+            ],
+            [
+              28111,
+              12763,
+              4617,
+              7256
+            ],
+            [
+              3834,
+              30576,
+              11900,
+              12550
+            ],
+            [
+              11595,
+              5386,
+              1044,
+              22925
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            5616,
+            15513,
+            19167,
+            11742
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 33222
+        },
+        {
+          "k": 57,
+          "dimension": 2,
+          "lambda": 9293,
+          "basis_columns": [
+            2,
+            5
+          ],
+          "basis_rows": [
+            2,
+            5
+          ],
+          "first_matrix": [
+            [
+              15615,
+              27999
+            ],
+            [
+              31115,
+              15412
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            6606,
+            10410
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 18582
+        },
+        {
+          "k": 58,
+          "dimension": 2,
+          "lambda": 33883,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              30820,
+              25144
+            ],
+            [
+              13621,
+              27022
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            17424,
+            11259
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 2962
+        },
+        {
+          "k": 60,
+          "dimension": 2,
+          "lambda": 19280,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              31458,
+              15655
+            ],
+            [
+              35424,
+              36285
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            7523,
+            4175
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 16430
+        },
+        {
+          "k": 61,
+          "dimension": 2,
+          "lambda": 2020,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              870,
+              0
+            ],
+            [
+              0,
+              870
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35893,
+            4240
+          ],
+          "first_gcd": [
+            1,
+            36763
+          ],
+          "first_scalar": 870,
+          "first_is_scalar": true,
+          "order": 2,
+          "second_matrix": [
+            [
+              7385,
+              6968
+            ],
+            [
+              5550,
+              17227
+            ]
+          ],
+          "second_characteristic": [
+            1,
+            13021,
+            36179
+          ],
+          "second_gcd": [
+            1
+          ],
+          "certified": true,
+          "splitting_polynomial_discriminant": 15592
+        },
+        {
+          "k": 62,
+          "dimension": 2,
+          "lambda": 11767,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              19975,
+              0
+            ],
+            [
+              0,
+              26044
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            29247,
+            27941
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 27687
+        },
+        {
+          "k": 64,
+          "dimension": 2,
+          "lambda": 11958,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              7623,
+              33252
+            ],
+            [
+              29356,
+              32292
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            35351,
+            21138
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 4884
+        },
+        {
+          "k": 65,
+          "dimension": 2,
+          "lambda": 8514,
+          "basis_columns": [
+            1,
+            7
+          ],
+          "basis_rows": [
+            1,
+            7
+          ],
+          "first_matrix": [
+            [
+              32571,
+              20226
+            ],
+            [
+              29026,
+              18557
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            24138,
+            28991
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 5873
+        },
+        {
+          "k": 66,
+          "dimension": 2,
+          "lambda": 14087,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              21485,
+              25207
+            ],
+            [
+              15483,
+              12212
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3936,
+            9406
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 24942
+        },
+        {
+          "k": 68,
+          "dimension": 2,
+          "lambda": 24617,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              8689,
+              23982
+            ],
+            [
+              3932,
+              8689
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            20255,
+            17997
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 30970
+        },
+        {
+          "k": 69,
+          "dimension": 2,
+          "lambda": 27837,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              24763,
+              0
+            ],
+            [
+              0,
+              36070
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            14433,
+            19788
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 8948
+        },
+        {
+          "k": 70,
+          "dimension": 4,
+          "lambda": 18649,
+          "basis_columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_rows": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "first_matrix": [
+            [
+              16421,
+              37066,
+              7174,
+              27506
+            ],
+            [
+              12601,
+              7085,
+              13519,
+              9223
+            ],
+            [
+              21034,
+              4220,
+              6771,
+              7497
+            ],
+            [
+              5251,
+              23926,
+              18920,
+              16735
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            28254,
+            36992,
+            35494,
+            34049
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 20012
+        },
+        {
+          "k": 72,
+          "dimension": 2,
+          "lambda": 7886,
+          "basis_columns": [
+            0,
+            1
+          ],
+          "basis_rows": [
+            0,
+            1
+          ],
+          "first_matrix": [
+            [
+              28093,
+              17267
+            ],
+            [
+              14796,
+              13469
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33704,
+            30340
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 36683
+        },
+        {
+          "k": 73,
+          "dimension": 2,
+          "lambda": 592,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              8991,
+              0
+            ],
+            [
+              0,
+              8661
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            19981,
+            8374
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 33634
+        },
+        {
+          "k": 74,
+          "dimension": 2,
+          "lambda": 12242,
+          "basis_columns": [
+            0,
+            3
+          ],
+          "basis_rows": [
+            0,
+            3
+          ],
+          "first_matrix": [
+            [
+              15294,
+              22187
+            ],
+            [
+              21639,
+              8112
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            14227,
+            6248
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 29896
+        },
+        {
+          "k": 76,
+          "dimension": 2,
+          "lambda": 7007,
+          "basis_columns": [
+            1,
+            2
+          ],
+          "basis_rows": [
+            1,
+            2
+          ],
+          "first_matrix": [
+            [
+              9822,
+              0
+            ],
+            [
+              0,
+              4981
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            22830,
+            482
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 27555
+        },
+        {
+          "k": 77,
+          "dimension": 4,
+          "lambda": 10767,
+          "basis_columns": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "basis_rows": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "first_matrix": [
+            [
+              15810,
+              35562,
+              0,
+              0
+            ],
+            [
+              35379,
+              1125,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6958,
+              28609
+            ],
+            [
+              0,
+              0,
+              2422,
+              9977
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            3763,
+            31133,
+            14998,
+            29896
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 10335
+        },
+        {
+          "k": 78,
+          "dimension": 2,
+          "lambda": 20374,
+          "basis_columns": [
+            0,
+            2
+          ],
+          "basis_rows": [
+            0,
+            2
+          ],
+          "first_matrix": [
+            [
+              33433,
+              15014
+            ],
+            [
+              24836,
+              8524
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            33309,
+            5876
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 7504
+        },
+        {
+          "k": 80,
+          "dimension": 2,
+          "lambda": 21597,
+          "basis_columns": [
+            2,
+            4
+          ],
+          "basis_rows": [
+            2,
+            4
+          ],
+          "first_matrix": [
+            [
+              3522,
+              29949
+            ],
+            [
+              697,
+              22796
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            11315,
+            28185
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 1918
+        },
+        {
+          "k": 81,
+          "dimension": 2,
+          "lambda": 14716,
+          "basis_columns": [
+            4,
+            7
+          ],
+          "basis_rows": [
+            4,
+            7
+          ],
+          "first_matrix": [
+            [
+              15695,
+              10001
+            ],
+            [
+              8937,
+              22575
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            36996,
+            37001
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 31967
+        },
+        {
+          "k": 82,
+          "dimension": 2,
+          "lambda": 27151,
+          "basis_columns": [
+            1,
+            4
+          ],
+          "basis_rows": [
+            1,
+            4
+          ],
+          "first_matrix": [
+            [
+              28074,
+              34913
+            ],
+            [
+              30776,
+              28074
+            ]
+          ],
+          "first_characteristic": [
+            1,
+            19118,
+            16485
+          ],
+          "first_gcd": [
+            1
+          ],
+          "order": 1,
+          "certified": true,
+          "splitting_polynomial_discriminant": 15554
+        }
+      ],
+      "certificate": true,
+      "discriminant_valuation": 246,
+      "discriminant_leading_coefficient": 32647,
+      "valuation_scope": "valuation over F_p only; certifies a nonzero characteristic-zero coefficient",
+      "factorials_invertible_for_required_jet": true,
+      "arithmetic": "exact F_p, int64 overflow bound checked before products"
+    }
+  ]
+}

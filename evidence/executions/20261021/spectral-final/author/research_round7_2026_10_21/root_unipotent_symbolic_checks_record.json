@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "claim_id": "r7-symbolic-finite-field-construction-checks",
+  "source_path": "research_round7_2026_10_21/root_unipotent_symbolic_checks.wl",
+  "submitted_source": "(* Exact symbolic cross-checks over Q(t,s,k,l), not finite-N experiments.\n   Stateless Wolfram Language evaluator; no external packages. *)\nClear[t, s, k, l, z, pp];\na[tt_, kk_, ll_] := tt ll^2/2 + tt^2 kk ll/2 + tt^3 kk^2/6;\nh = {{t^3/3, t^2/2}, {t^2/2, t}};\ny = {{1, t}, {0, 1}};\ng = Together[Inverse[h]];\nc = Together[g.y];\nskew = Together[c - Transpose[c]];\ncocycle = Expand[a[t, k, l] + a[s, k, l + t k] - a[t + s, k, l]];\ndiagAction = Factor[-{t z, 0}.g.{t z, 0}/2];\nreturnJ = Factor[1 - 1/(1/(1-z))];\nreturnOrthogonal = Factor[1 - 1/(1/(1-z^pp))];\n<|\"kernel_version\" -> $Version, \"cocycle\" -> cocycle,\n  \"hessian_determinant\" -> Factor[Det[h]], \"inverse\" -> g,\n  \"mixed_coefficient\" -> c, \"alternating_determinant\" -> Factor[Det[skew]],\n  \"diagonal_action\" -> diagAction,\n  \"return_on_constants\" -> returnJ,\n  \"return_on_orthogonal_complement\" -> returnOrthogonal|>\n",
+  "started_at": "2026-10-21 09:33:48 UTC",
+  "finished_at": "2026-10-21 09:33:56 UTC",
+  "method": "The submitted source is the complete unchanged text read from the saved .wl file in the preceding tool call.",
+  "purpose": "Symbolic verification of the cocycle, Hessian, alternating mixed term, diagonal phase, and exact base return function. This is not a numerical or asymptotic verification of the original family.",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"kernel_version\" -> \"15.0.1 for Linux x86 (64-bit) (July 2, 2026)\", \"cocycle\" -> 0, \"hessian_determinant\" -> t^4/12, \"inverse\" -> {{12/t^3, -6/t^2}, {-6/t^2, 4/t}}, \"mixed_coefficient\" -> {{12/t^3, 6/t^2}, {-6/t^2, -2/t}}, \"alternating_determinant\" -> 144/t^4, \"diagonal_action\" -> (-6*z^2)/t, \"return_on_constants\" -> z, \"return_on_orthogonal_complement\" -> z^pp|>"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  }
+}

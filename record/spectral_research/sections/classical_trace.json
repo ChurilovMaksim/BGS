@@ -1,0 +1,2102 @@
+{
+  "topic": "classical_trace",
+  "units": [
+    {
+      "original_path": "research_round14_2026_10_21/obstruction/r14_original_spectral_orbit_barrier.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/obstruction/r14_original_spectral_orbit_barrier.md",
+      "source_sha256": "610c0e62b64834687b91db54a1cb5e584a2ad16035e0290c54506ffa6608de7e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 14: spectral distance from the bare cat after arbitrary conjugation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Scope, status, and exact ancestry"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "2. The old physical trace estimate and its raw dependency audit"
+        },
+        {
+          "line": 102,
+          "level": 3,
+          "heading": "2.1. Exact finite-to-plane identification"
+        },
+        {
+          "line": 132,
+          "level": 3,
+          "heading": "2.2. Exact amplitude and a single all-time threshold"
+        },
+        {
+          "line": 185,
+          "level": 3,
+          "heading": "2.3. Uniform modulus and the classical pressure gap"
+        },
+        {
+          "line": 280,
+          "level": 2,
+          "heading": "3. Elementary Pell identities and the actual short-time suppression"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "4. A quantitative geometric lemma for arbitrary conjugation"
+        },
+        {
+          "line": 340,
+          "level": 3,
+          "heading": "Lemma 4.1"
+        },
+        {
+          "line": 415,
+          "level": 3,
+          "heading": "Lemma 4.2: a positive fraction cannot follow the bare clock"
+        },
+        {
+          "line": 445,
+          "level": 2,
+          "heading": "5. A self-contained upper bound after arbitrary conjugation"
+        },
+        {
+          "line": 451,
+          "level": 3,
+          "heading": "5.1. Elementary short-moment bounds for the bare cat"
+        },
+        {
+          "line": 486,
+          "level": 3,
+          "heading": "5.2. An elementary discrepancy estimate using squared Fejér kernels"
+        },
+        {
+          "line": 560,
+          "level": 3,
+          "heading": "5.3. Applying discrepancy and matching sorted phases"
+        },
+        {
+          "line": 600,
+          "level": 2,
+          "heading": "6. Arbitrarily deep divisibility by seven"
+        },
+        {
+          "line": 632,
+          "level": 2,
+          "heading": "7. What was tested in the seven-path and hidden-symmetry route"
+        },
+        {
+          "line": 669,
+          "level": 2,
+          "heading": "8. A weaker all-odd corollary of the preceding pass"
+        },
+        {
+          "line": 694,
+          "level": 2,
+          "heading": "9. Exact unresolved original spectral estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+      "source_sha256": "4bc02ec2a3565f34c33a830db584cf761e62e5b69c23c7a727ab124046ca583a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An original-family test of the independent-coordinate-phase bridge"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Status, scope, and exact result"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "1. Correct ordinary symbol and uniform analytic phase"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "heading": "2. Exact four-sheet Gauss normalization"
+        },
+        {
+          "line": 166,
+          "level": 2,
+          "heading": "3. Finite-shift comparison with the exact original matrix"
+        },
+        {
+          "line": 228,
+          "level": 2,
+          "heading": "4. Exact cancellation of the first three equal-sheet coefficients"
+        },
+        {
+          "line": 297,
+          "level": 2,
+          "heading": "5. All discrete aliases on the diagonal"
+        },
+        {
+          "line": 376,
+          "level": 2,
+          "heading": "6. Exact comparison of the two averages"
+        },
+        {
+          "line": 389,
+          "level": 2,
+          "heading": "7. Use of the audited original one-step trace"
+        },
+        {
+          "line": 435,
+          "level": 2,
+          "heading": "8. Actual application attempt and the first remaining estimate"
+        },
+        {
+          "line": 469,
+          "level": 2,
+          "heading": "9. Provenance and read scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+      "source_sha256": "4128be1d1670f64159f2b94d9303777408580c32d550f40c7862dd6d01be0ea1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact first nonzero coefficient of the one-step coordinate return"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. Statement with an explicit analytic remainder"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "2. Highest momentum mode and a differential identity"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "3. The finite Fourier coefficient by hand"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "4. Diagonal differentiation and the real return coefficient"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "5. Fifth-order remainder and strict sign"
+        },
+        {
+          "line": 197,
+          "level": 2,
+          "heading": "6. What this adds to the original target"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_inserted_trace_and_two_copy_coboundary.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/signed_sum/r14_inserted_trace_and_two_copy_coboundary.md",
+      "source_sha256": "a4f9f49283b06d0d03c7b9980d795c2b082bf0d761a81e1d10037f7278424896",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Физическая вставка генератора и предел квантового кограничного подхода"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус и точный объём результата"
+        },
+        {
+          "line": 26,
+          "level": 3,
+          "heading": "0.1. Первая исходная недоказанная оценка"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "1. Точные исходные соглашения и старые результаты, которые используются"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "2. Новая вставленная формула при исходном ненулевом толчке"
+        },
+        {
+          "line": 332,
+          "level": 2,
+          "heading": "3. Количественная ненулевая компонента при физическом \\(\\tau\\)"
+        },
+        {
+          "line": 363,
+          "level": 2,
+          "heading": "4. Строгое препятствие полной квантовой когранице"
+        },
+        {
+          "line": 436,
+          "level": 2,
+          "heading": "5. Та же проверка для точного двухкопийного генератора"
+        },
+        {
+          "line": 516,
+          "level": 2,
+          "heading": "6. Выполненный заход на полную взвешенную сумму"
+        },
+        {
+          "line": 619,
+          "level": 2,
+          "heading": "7. Дополнительный тест знака в физической точке"
+        },
+        {
+          "line": 674,
+          "level": 3,
+          "heading": "Приложение к §7: два элементарных факта"
+        },
+        {
+          "line": 708,
+          "level": 2,
+          "heading": "8. Что именно не оправдано после выполненного расчёта"
+        },
+        {
+          "line": 737,
+          "level": 2,
+          "heading": "9. Источники, SHA-256 и фактический объём чтения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_independent_audit_spectral_orbit_barrier.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/signed_sum/r14_independent_audit_spectral_orbit_barrier.md",
+      "source_sha256": "9f979ce79e67f6cd335a40ddd922e02348c8c775c3cf2718721e00a304c2ff19",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимый аудит геометрического спектрального барьера прохода 14"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Проверяемая версия и предел аудита"
+        },
+        {
+          "line": 47,
+          "level": 2,
+          "heading": "1. Pell-нормировки и супрессия использованного следа"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "2. Угловая оценка после произвольного сопряжения"
+        },
+        {
+          "line": 152,
+          "level": 2,
+          "heading": "3. Конечная доля около clock: знак и резкость"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "4. Самостоятельная проверка оценки Фейера"
+        },
+        {
+          "line": 261,
+          "level": 2,
+          "heading": "5. Bare-cat moments и отсортированное matching"
+        },
+        {
+          "line": 319,
+          "level": 2,
+          "heading": "6. Проверка глубокой 7-адической последовательности"
+        },
+        {
+          "line": 353,
+          "level": 2,
+          "heading": "7. Объём заключения"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/obstruction/r14_independent_coordinate_phase_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/obstruction/r14_independent_coordinate_phase_audit.md",
+      "source_sha256": "04389d7783357bb74d6d7db1cd4904238309b63c6a54b1e5affbd9358c7f37fd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the original coordinate-phase bridge test"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Exact input and verdict"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "2. Four-sheet Gauss normalization: exact arithmetic"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "3. Grid wraps and the propagation of the deck identities"
+        },
+        {
+          "line": 137,
+          "level": 2,
+          "heading": "4. Subprincipal sign and the Duhamel norm"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "5. Equal-sheet cancellation and the fourth-order remainder"
+        },
+        {
+          "line": 270,
+          "level": 2,
+          "heading": "6. Unequal sheets and every discrete alias"
+        },
+        {
+          "line": 335,
+          "level": 2,
+          "heading": "7. The original trace input and Corollary B"
+        },
+        {
+          "line": 376,
+          "level": 2,
+          "heading": "8. Scope of what survives this audit"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_independent_audit_quartic_return.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/signed_sum/r14_independent_audit_quartic_return.md",
+      "source_sha256": "8535119d5cc30fd449d945a88a350d28de1795faeb64a18d46ae5c6ffbb285a4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимая ручная проверка четвёртого коэффициента координатного возврата"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Версия и заключение"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "1. Высшая импульсная частота и точная дифференциальная формула"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "2. Независимое короткое вычисление нужного Laurent-коэффициента"
+        },
+        {
+          "line": 186,
+          "level": 2,
+          "heading": "3. Четыре листа, смешанная производная и физический параметр"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "4. Настоящий аналитический остаток и знак"
+        },
+        {
+          "line": 273,
+          "level": 2,
+          "heading": "5. Проверка зависимости от исходного конечного оператора"
+        },
+        {
+          "line": 327,
+          "level": 2,
+          "heading": "6. Граница результата"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/obstruction/r14_independent_inserted_trace_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/obstruction/r14_independent_inserted_trace_audit.md",
+      "source_sha256": "2abd38cb5ddcf268788c1e324c23f9518021aa1d9c700e7cf6363ecc16324ad7",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the inserted trace and two-copy coboundary calculation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Input and result"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "2. The inserted amplitude is actually proved"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "3. Why coincident difference phases do not invalidate (5.3)"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "4. Superoperator dimension and normalization"
+        },
+        {
+          "line": 151,
+          "level": 2,
+          "heading": "5. The complete derivative and the triple trace indices"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "6. Original spectral status"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/orbit_correlations/protected_actions_and_one_step_trace.md",
+      "target": "mathematics/spectral_research/proofs/research_round13_2026_10_21/orbit_correlations/protected_actions_and_one_step_trace.md",
+      "source_sha256": "6bbde35d4fb3873976d6182b3fb6d9cc969349a3a6ce78e7b9dc48cf480c9fe6",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Protected action coincidences and the actual one-step quantum trace"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Status and provenance"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "heading": "1. Exact conventions"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Exactly sixteen protected points"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Exact action phases with the odd-dimensional deck factor"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "4. The global one-dimensional stationary-phase step"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "5. Complete asymptotic formula for the original one-step trace"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "6. Strict fixed-time lower bound and its limited scope"
+        },
+        {
+          "line": 333,
+          "level": 2,
+          "heading": "7. Removing the complete protected principal-orbit family"
+        },
+        {
+          "line": 382,
+          "level": 2,
+          "heading": "8. Exact unresolved original obligation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/root/exact_protected_sector_removal.md",
+      "target": "mathematics/spectral_research/proofs/research_round13_2026_10_21/root/exact_protected_sector_removal.md",
+      "source_sha256": "e32c63f1004dda27250f6481128f13f132c76a81612012c7514adf7c46912af3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact removal of the whole protected trace terms"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Claim and scope"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "1. Inputs actually checked"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "heading": "2. Exact identification of the trace terms"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "heading": "3. Whole integral as a trace-class product"
+        },
+        {
+          "line": 182,
+          "level": 2,
+          "heading": "4. Uniform norm bounds and the geometric estimate"
+        },
+        {
+          "line": 246,
+          "level": 2,
+          "heading": "5. Original pair functional, with every cross term retained"
+        },
+        {
+          "line": 269,
+          "level": 2,
+          "heading": "6. Relation to the preceding result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round13_2026_10_21/signed_sum/r13_independent_audit_protected_orbits.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/signed_sum/r13_independent_audit_protected_orbits.md",
+      "source_sha256": "87f055e1805f700088f6439e40b6d022269834f7df658e697b5a51a31df4e8d5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: protected actions and one-step trace"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Normalized claim and verdict"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "2. Exact input revisions and actual read scopes"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "3. Obligation matrix"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "4. Independent geometry and rational action calculation"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "5. Independent fixed-point phase normalization"
+        },
+        {
+          "line": 146,
+          "level": 2,
+          "heading": "6. Global stationary phase with the Abel interpretation"
+        },
+        {
+          "line": 191,
+          "level": 2,
+          "heading": "7. Hessians, coefficients and lower bound"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "8. All-time foundation and the principal-family subtraction"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "9. Independently checked stronger full-sector extension proposed by root"
+        },
+        {
+          "line": 342,
+          "level": 2,
+          "heading": "10. Limits of the verdict"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/root_diagonal_cocycle_normalization.md",
+      "target": "mathematics/spectral_research/proofs/research_round9_2026_10_21/root_diagonal_cocycle_normalization.md",
+      "source_sha256": "afeaa52cea23836c5b4fa58d1040daa6df792d0b9adea83f8eb1de8690211921",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An actual analytic quantization with a uniformly normalized first cocycle phase"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Result and scope"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "1. Normalization and previously proved inputs actually used"
+        },
+        {
+          "line": 165,
+          "level": 2,
+          "heading": "2. Exact analytic realization for a fixed real trigonometric polynomial"
+        },
+        {
+          "line": 257,
+          "level": 3,
+          "heading": "2.1 Spatial periodicity and reality"
+        },
+        {
+          "line": 276,
+          "level": 3,
+          "heading": "2.2 Actual finite \\(h\\)-jets"
+        },
+        {
+          "line": 342,
+          "level": 2,
+          "heading": "3. Exact all-time sector construction remains valid"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "4. Graph response and the scalar transformation law"
+        },
+        {
+          "line": 498,
+          "level": 2,
+          "heading": "5. Choosing one sequence for all odd dimensions"
+        },
+        {
+          "line": 575,
+          "level": 2,
+          "heading": "6. Why this varying modification preserves the local laws"
+        },
+        {
+          "line": 680,
+          "level": 2,
+          "heading": "7. What is new relative to the earlier source"
+        },
+        {
+          "line": 701,
+          "level": 2,
+          "heading": "8. The global estimate still missing"
+        },
+        {
+          "line": 745,
+          "level": 2,
+          "heading": "9. Exact source provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_original_twostep_physical_mixing.md",
+      "target": "mathematics/spectral_research/proofs/research_round6_2026_10_21/r6_original_twostep_physical_mixing.md",
+      "source_sha256": "7d502a881f133743cd3d28afd6ac373351fd4a12f23e8292c59895358f1e747b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Two-step physical probability mixing for the exact original family"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "heading": "1. Exact symbols and the two evolution stages"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "2. Uniform elementary derivative bounds"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "3. The exact 24-image initial kernel"
+        },
+        {
+          "line": 138,
+          "level": 3,
+          "heading": "3.1. Periodicity and covariance"
+        },
+        {
+          "line": 170,
+          "level": 3,
+          "heading": "3.2. The scalar has modulus one, including \\(3\\mid N\\)"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "4. The two Hamilton--Jacobi evolutions"
+        },
+        {
+          "line": 270,
+          "level": 2,
+          "heading": "5. Explicit phase and amplitude estimates"
+        },
+        {
+          "line": 316,
+          "level": 2,
+          "heading": "6. Exact deck identities and the finite-shift error"
+        },
+        {
+          "line": 371,
+          "level": 3,
+          "heading": "6.1. Direct residual"
+        },
+        {
+          "line": 434,
+          "level": 2,
+          "heading": "7. A nonzero mixed coefficient for every pair of distinct sheets"
+        },
+        {
+          "line": 515,
+          "level": 2,
+          "heading": "8. Operator cancellation and the proof of (0.1)"
+        },
+        {
+          "line": 566,
+          "level": 2,
+          "heading": "9. Removal of the whole signed class of isolated substitutions"
+        },
+        {
+          "line": 671,
+          "level": 2,
+          "heading": "10. Verification boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/dual_physical_four_branch_kernel.md",
+      "target": "mathematics/spectral_research/proofs/research_round5_2026_10_21/dual_physical_four_branch_kernel.md",
+      "source_sha256": "0b8e8a685c619ba95fab9f9eac65f5328ee81123780ae94515e17f4e8e70235c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact four-branch physical kernel with a uniform WKB remainder"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. The statement for the original matrices"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "2. Exact finite-shift formula and elementary bounds"
+        },
+        {
+          "line": 130,
+          "level": 2,
+          "heading": "3. Exact initial Gauss decomposition"
+        },
+        {
+          "line": 155,
+          "level": 2,
+          "heading": "4. Construction of the phase and amplitude"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "5. Periodic gluing of the branches"
+        },
+        {
+          "line": 303,
+          "level": 2,
+          "heading": "6. Direct finite-shift residual and the norm error"
+        },
+        {
+          "line": 360,
+          "level": 2,
+          "heading": "7. Consequences for entry bounds and physical pair kernels"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/audit_classical.md",
+      "target": "record/spectral_research/sources/research_continuation_2026_10_20/audit_classical.md",
+      "source_sha256": "fe317398241fdb95ed181cae11a4114c609e8a21eebcc472688879aaf6d8b44d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the classical trace and pair diagonal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and the one scope correction"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Quantitative classical estimates"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "2. All-period fixed-point count"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "3. The weighted classical operator"
+        },
+        {
+          "line": 152,
+          "level": 2,
+          "heading": "4. Why the finite-compression trace identification is valid"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "heading": "5. The same-orbit contribution and summation at m of order N"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "6. Exact adjoint and multi-copy attempt"
+        },
+        {
+          "line": 278,
+          "level": 2,
+          "heading": "7. A finite-dimensional obstruction to norm contraction"
+        },
+        {
+          "line": 326,
+          "level": 2,
+          "heading": "8. A genuine rank/trace inequality, and the gap it leaves"
+        },
+        {
+          "line": 360,
+          "level": 2,
+          "heading": "9. A concrete quantitative barrier at microscopic phase separations"
+        },
+        {
+          "line": 434,
+          "level": 2,
+          "heading": "10. What was and was not gained by this attempt"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/classical_trace_and_pair_diagonal.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/classical_trace_and_pair_diagonal.md",
+      "source_sha256": "355f2c6deb1549c32ab7b7313774b8c27b1310d019013838fc5e3679721af55c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Классическая сумма и полный вклад совпадающих орбит"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Обозначения и количественная близость"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. Число неподвижных точек"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "heading": "3. Следовая сумма классической динамики"
+        },
+        {
+          "line": 225,
+          "level": 2,
+          "heading": "4. Вклад совпадающих геометрических орбит"
+        },
+        {
+          "line": 296,
+          "level": 2,
+          "heading": "5. Что действительно остаётся в парной задаче"
+        },
+        {
+          "line": 352,
+          "level": 2,
+          "heading": "6. Один полностью явный фиксированный тест"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/exact_amplitude.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/exact_amplitude.md",
+      "source_sha256": "69cd85816766b26358fb13058b3b26f9c243886cf863e5f8f9a6c6570e1a542e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit and proof of the exact analytic amplitude"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and scope"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Symbol, normalization, and midpoint convention"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "2. The phase and the reserved strips"
+        },
+        {
+          "line": 143,
+          "level": 2,
+          "heading": "3. Exact amplitude equation and removal of the h denominators"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "4. Uniform exponent estimates, including the cubic term"
+        },
+        {
+          "line": 285,
+          "level": 2,
+          "heading": "5. The operator estimates, including two h derivatives"
+        },
+        {
+          "line": 340,
+          "level": 2,
+          "heading": "6. Convergent Dyson series and genuine real-h smoothness"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "7. Exact identification with the plane propagator"
+        },
+        {
+          "line": 450,
+          "level": 2,
+          "heading": "8. The h = 0 amplitude"
+        },
+        {
+          "line": 476,
+          "level": 2,
+          "heading": "9. Reality and parity in h"
+        },
+        {
+          "line": 501,
+          "level": 2,
+          "heading": "10. What the bounds provide for a rescaled kernel expansion"
+        },
+        {
+          "line": 535,
+          "level": 2,
+          "heading": "11. Explicit audit cautions"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/gaussian_cocycle_and_modulus.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/gaussian_cocycle_and_modulus.md",
+      "source_sha256": "c1a863e613a327acb5fe43ff1093c4a8fe51b37ebd5dcee9fddf0ae0a91986f1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Gaussian contour reduction, dominated cocycle, and modulus estimate"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Scope and status"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "1. A globally defined centered edge kernel"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "2. A bounded contour with global coercivity"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "3. The deformation of the full Fresnel integral"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "4. Trace-class kernels and the Gaussian limit"
+        },
+        {
+          "line": 270,
+          "level": 3,
+          "heading": "4.1 A concrete trace-norm criterion"
+        },
+        {
+          "line": 297,
+          "level": 3,
+          "heading": "4.2 Uniform convergence to a variable Gaussian"
+        },
+        {
+          "line": 314,
+          "level": 3,
+          "heading": "4.3 Uniform numerical neighborhood of the fixed Gaussian"
+        },
+        {
+          "line": 379,
+          "level": 3,
+          "heading": "4.4 Product traces"
+        },
+        {
+          "line": 394,
+          "level": 2,
+          "heading": "5. A global, boundary-independent rank-one splitting"
+        },
+        {
+          "line": 559,
+          "level": 2,
+          "heading": "6. The summed error is small for every iterate"
+        },
+        {
+          "line": 596,
+          "level": 2,
+          "heading": "7. The correct small-s regularity statement"
+        },
+        {
+          "line": 622,
+          "level": 2,
+          "heading": "8. Reflection parity and the pointwise first-order modulus"
+        },
+        {
+          "line": 694,
+          "level": 2,
+          "heading": "9. The exact zeroth-order cycle normalization"
+        },
+        {
+          "line": 795,
+          "level": 2,
+          "heading": "10. Independent check by differentiating repeated residual traces"
+        },
+        {
+          "line": 865,
+          "level": 2,
+          "heading": "11. Audit conclusions and dependency boundaries"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/odd_trace_and_algebraic_rigidity.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/odd_trace_and_algebraic_rigidity.md",
+      "source_sha256": "42832bfc27bbf307b154c781f7299912e7c3094e0a0c3ff2e3ade9f0e580764b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact odd-dimensional trace identities and algebraic rigidity"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Scope and status"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "2. Exact definitions and conventions"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "heading": "3. The integer representation and the comb quotient"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "4. Exact metaplectic scalar on the comb quotient"
+        },
+        {
+          "line": 234,
+          "level": 2,
+          "heading": "5. Correct plane symbol and exact descent of the kick"
+        },
+        {
+          "line": 275,
+          "level": 2,
+          "heading": "6. Exact coherent frame"
+        },
+        {
+          "line": 312,
+          "level": 2,
+          "heading": "7. Absolute convergence of the sector decomposition"
+        },
+        {
+          "line": 316,
+          "level": 3,
+          "heading": "7.1. Summable translated-metaplectic words"
+        },
+        {
+          "line": 336,
+          "level": 3,
+          "heading": "7.2. Gaussian bounds uniform in the translation"
+        },
+        {
+          "line": 380,
+          "level": 3,
+          "heading": "7.3. Grouping by lattice cosets"
+        },
+        {
+          "line": 413,
+          "level": 2,
+          "heading": "8. What is meant by a Fresnel sector trace"
+        },
+        {
+          "line": 497,
+          "level": 2,
+          "heading": "9. Deck transformations and cyclic action phases"
+        },
+        {
+          "line": 533,
+          "level": 3,
+          "heading": "9.1. Independence of the lifted starting point"
+        },
+        {
+          "line": 556,
+          "level": 3,
+          "heading": "9.2. Cyclic shift of the starting point"
+        },
+        {
+          "line": 571,
+          "level": 2,
+          "heading": "10. Exact finite Egorov and the Fourier mass bound"
+        },
+        {
+          "line": 617,
+          "level": 2,
+          "heading": "11. Lindemann–Weierstrass evaluation lemma"
+        },
+        {
+          "line": 652,
+          "level": 2,
+          "heading": "12. No exact scalar returns outside \\(N=7\\)"
+        },
+        {
+          "line": 694,
+          "level": 3,
+          "heading": "The exceptional dimension is real"
+        },
+        {
+          "line": 707,
+          "level": 2,
+          "heading": "13. Every power trace is nonzero"
+        },
+        {
+          "line": 738,
+          "level": 2,
+          "heading": "14. What the argument does and does not say about simple spectrum"
+        },
+        {
+          "line": 776,
+          "level": 2,
+          "heading": "15. Dependency and audit record"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_deck_action_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_deck_action_audit.md",
+      "source_sha256": "9b9dca3ae8e238a2a4e0b0106d9d5adb3e37f50138e725901cca694d678da902",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of actual deck-action sensitivity"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. The cyclic inverse and all period lengths"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "2. Uniform action derivatives and real deck periodicity"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "3. Exact mixed curvature and its sign"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "4. Signed differencing and the precise limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_pressure_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_pressure_audit.md",
+      "source_sha256": "3b05733fee9eaee5a4f4a4b508ccc52b8bd6d714be2cb2fca4c9b191cd51feb2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: strict pressure gap and actual quantum traces"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Frozen inputs and verdict"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "2. The two Green operators give an actual conjugacy"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "3. Published inputs were read directly"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "4. Suspension, volume, and metric conventions"
+        },
+        {
+          "line": 185,
+          "level": 2,
+          "heading": "5. Why the midpoint inequality is strictly improved"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "heading": "6. Periodic sums and the all-time quantum threshold"
+        },
+        {
+          "line": 282,
+          "level": 2,
+          "heading": "7. Pell exponents and their precise scope"
+        },
+        {
+          "line": 323,
+          "level": 2,
+          "heading": "8. Positive frame identity and the complete infinite tail"
+        },
+        {
+          "line": 374,
+          "level": 2,
+          "heading": "9. What remains unproved"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_pressure_potential_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_pressure_potential_audit.md",
+      "source_sha256": "b0f2bed058af3a88a56122a3d73d64263296666b58f293ca846a023a58282e19",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the analytic parameter potential"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "heading": "1. Holder Green bound"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "heading": "2. Complex flow and composition in the fixed space"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Pulled-back unstable cocycle"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "heading": "4. Exact first variation and potential remainder"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "5. Independent exact check of the proposed variance input"
+        },
+        {
+          "line": 168,
+          "level": 2,
+          "heading": "6. Convention and scope for the next step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_quantitative_pressure_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_quantitative_pressure_audit.md",
+      "source_sha256": "4a0276a9ccd8874779c0b886b3abd8b723d746327d881fe40088b3f0fec01e7e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the quantitative pressure gap"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Scope, immutable inputs, and verdict"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "1. Independent verification of the published coding input"
+        },
+        {
+          "line": 96,
+          "level": 2,
+          "heading": "2. The one-sided cohomology, including the finite endpoint"
+        },
+        {
+          "line": 160,
+          "level": 2,
+          "heading": "3. The spectral gap is quantitatively proved"
+        },
+        {
+          "line": 200,
+          "level": 2,
+          "heading": "4. The analytic radius and Cauchy remainder"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "5. Independent derivative and numerical coefficient check"
+        },
+        {
+          "line": 336,
+          "level": 2,
+          "heading": "6. The inverse map convention and the quantum implication"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_twisted_pressure_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_twisted_pressure_audit.md",
+      "source_sha256": "d0779d626fe958e466e476830bc3911048f8fe2b8f4e712d2069958ccbd13cea",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of all Weyl-twisted trace bounds"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Frozen input and verdict"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "2. Pointwise Gaussian identity, including the endpoint gauge"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "3. Exact rational twist and its signs"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "4. Convergence, critical points, and the nonperiodic endpoint"
+        },
+        {
+          "line": 208,
+          "level": 2,
+          "heading": "5. The finite cyclic difference argument"
+        },
+        {
+          "line": 236,
+          "level": 2,
+          "heading": "6. Uniformity and the actual consequences"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_pressure_analytic_potential.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_pressure_analytic_potential.md",
+      "source_sha256": "44da5eefab7cce7d7eb222fa54f027eec8a1a545b8ca0c4fd3fcf1fc7520637f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An explicit analytic parameter disk for the pulled-back unstable potential"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Scope and input"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "2. Fixed Holder spaces and the Green operator"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "heading": "3. A common complex spatial tube and parameter disk"
+        },
+        {
+          "line": 176,
+          "level": 2,
+          "heading": "4. Analytic structural conjugacy in C^alpha"
+        },
+        {
+          "line": 247,
+          "level": 2,
+          "heading": "5. An analytic unstable section over the fixed base"
+        },
+        {
+          "line": 315,
+          "level": 2,
+          "heading": "6. Geometric meaning and the exact first variation"
+        },
+        {
+          "line": 358,
+          "level": 2,
+          "heading": "7. A usable Taylor remainder and remaining task"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_deck_action_differencing.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_deck_action_differencing.md",
+      "source_sha256": "8202c59cbe0b9eb69a022ac1997dccaf00b1ae99fc611cf95308a926f7b2b140",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "The actual deck action: uniform sensitivity, persistent curvature, and a local differencing barrier"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "1. Frozen inputs"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "2. The continuous deck action and its cyclic Jacobi inverse"
+        },
+        {
+          "line": 139,
+          "level": 3,
+          "heading": "2.1 Displacement derivatives of the critical path"
+        },
+        {
+          "line": 189,
+          "level": 3,
+          "heading": "2.2 Uniform action sensitivity"
+        },
+        {
+          "line": 239,
+          "level": 2,
+          "heading": "3. An explicit nonzero curvature for every period"
+        },
+        {
+          "line": 342,
+          "level": 2,
+          "heading": "4. What additive deck differencing would have to control"
+        },
+        {
+          "line": 414,
+          "level": 3,
+          "heading": "4.1 The limitation of a local decorrelation estimate"
+        },
+        {
+          "line": 461,
+          "level": 2,
+          "heading": "5. The first still unproved signed quantity"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_pressure_transfer.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_pressure_transfer.md",
+      "source_sha256": "90ebc84c3c9fb7c049a1a9d11e0d5dcb72c4fc89b362da3f848521a7bca79756",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A strict classical pressure gap and actual quantum suppression of cat returns"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Frozen mathematical inputs"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "2. An explicit topological conjugacy, with a checked smallness bound"
+        },
+        {
+          "line": 216,
+          "level": 3,
+          "heading": "2.1 The properties transported through (2.5)"
+        },
+        {
+          "line": 266,
+          "level": 2,
+          "heading": "3. Exact published inputs and their hypotheses"
+        },
+        {
+          "line": 291,
+          "level": 2,
+          "heading": "4. The constant-roof suspension and the pressure identity"
+        },
+        {
+          "line": 402,
+          "level": 2,
+          "heading": "5. Strict midpoint gap from the actual fixed point"
+        },
+        {
+          "line": 404,
+          "level": 3,
+          "heading": "Theorem 5.1"
+        },
+        {
+          "line": 467,
+          "level": 2,
+          "heading": "6. From pressure to the complete periodic amplitude sum"
+        },
+        {
+          "line": 503,
+          "level": 2,
+          "heading": "7. The actual all-time quantum improvement"
+        },
+        {
+          "line": 505,
+          "level": 3,
+          "heading": "Theorem 7.1"
+        },
+        {
+          "line": 559,
+          "level": 2,
+          "heading": "8. Quantitative destruction of the bare Pell return"
+        },
+        {
+          "line": 628,
+          "level": 2,
+          "heading": "9. The full exponential trace sum: a strict constant improvement"
+        },
+        {
+          "line": 662,
+          "level": 2,
+          "heading": "10. The first remaining estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_quantitative_pressure.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_quantitative_pressure.md",
+      "source_sha256": "d9efc87ad9c2977b1ae3ca78da26e5f974ce119a22585bcd87e2c76cab5a74b2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A quantitative pressure gap at the exact parameter"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status and inputs"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "heading": "1. A concrete twelve-edge coding of the fixed cat map"
+        },
+        {
+          "line": 57,
+          "level": 3,
+          "heading": "1.1. Geometry and the exact incidence matrix"
+        },
+        {
+          "line": 115,
+          "level": 3,
+          "heading": "1.2. Coding diameter and finite fibers"
+        },
+        {
+          "line": 162,
+          "level": 3,
+          "heading": "1.3. The Parry measure pushes forward to area"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "2. A bounded, parameter-independent one-sided cohomology"
+        },
+        {
+          "line": 299,
+          "level": 2,
+          "heading": "3. An elementary quantitative spectral gap at zero potential"
+        },
+        {
+          "line": 375,
+          "level": 2,
+          "heading": "4. A numerical holomorphic pressure disk"
+        },
+        {
+          "line": 475,
+          "level": 2,
+          "heading": "5. Identifying this eigenvalue with torus pressure"
+        },
+        {
+          "line": 553,
+          "level": 2,
+          "heading": "6. Pressure derivatives and the quadratic coefficient"
+        },
+        {
+          "line": 653,
+          "level": 2,
+          "heading": "7. A short exact Fourier lower bound for the coefficient"
+        },
+        {
+          "line": 725,
+          "level": 2,
+          "heading": "8. Equality with the original inverse-map pressure gap"
+        },
+        {
+          "line": 759,
+          "level": 2,
+          "heading": "9. What this does and does not resolve"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_twisted_pressure.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_twisted_pressure.md",
+      "source_sha256": "ef5257ebfdd1e8e88ca8c1a0596c9a667ec4ff2954593a9eaf3fa0331ce8d362",
+      "sections": [
+        {
+          "line": 2,
+          "level": 1,
+          "heading": "Uniform Weyl-twisted quantum traces from the actual pressure gap"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "1. Frozen inputs and conventions"
+        },
+        {
+          "line": 165,
+          "level": 2,
+          "heading": "2. The Gaussian scalar on every orbit segment"
+        },
+        {
+          "line": 185,
+          "level": 3,
+          "heading": "2.1 The unstable slope and its Riccati equation"
+        },
+        {
+          "line": 236,
+          "level": 3,
+          "heading": "2.2 Exact normalized Gaussian section"
+        },
+        {
+          "line": 287,
+          "level": 3,
+          "heading": "2.3 The bounded endpoint factor and the open-product modulus"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "3. An exact finite trace identity with a rational translation"
+        },
+        {
+          "line": 394,
+          "level": 3,
+          "heading": "3.1 Coherent unfolding and its convergence"
+        },
+        {
+          "line": 447,
+          "level": 3,
+          "heading": "3.2 The boundary action and its unique critical point"
+        },
+        {
+          "line": 521,
+          "level": 3,
+          "heading": "3.3 The exact open-orbit product and its summed residual"
+        },
+        {
+          "line": 586,
+          "level": 2,
+          "heading": "4. Uniform separation of all translated return sets"
+        },
+        {
+          "line": 662,
+          "level": 2,
+          "heading": "5. The actual uniform twisted trace bound"
+        },
+        {
+          "line": 664,
+          "level": 3,
+          "heading": "Theorem 5.1"
+        },
+        {
+          "line": 709,
+          "level": 2,
+          "heading": "6. Quantitative consequences for the exact quantum family"
+        },
+        {
+          "line": 711,
+          "level": 3,
+          "heading": "6.1 Separation from every Weyl operator at the Pell times"
+        },
+        {
+          "line": 769,
+          "level": 3,
+          "heading": "6.2 Weyl coefficient spreading"
+        },
+        {
+          "line": 827,
+          "level": 2,
+          "heading": "7. The precise remaining limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_exact_pressure_variance.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_exact_pressure_variance.md",
+      "source_sha256": "124d807b0e7cb180b4296bdb5309d805e8920b55aabf52c0ac1188f77c43db4b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact first-variation variance for the specified perturbation"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "1. The symbol and the first variation"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "2. Complete classification of the frequency intersections"
+        },
+        {
+          "line": 165,
+          "level": 2,
+          "heading": "3. Exact variance"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "4. The proved pressure expansion and its logical boundary"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "5. Computational certificate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_fixed_multiplier_nonlattice.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_fixed_multiplier_nonlattice.md",
+      "source_sha256": "256352cb8b82452d7346345ab0345fd46b795e04935ecf9389940ac920c25e62",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact multiplicative independence of the four fixed-point multipliers"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Exact input and theorem"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "heading": "2. Verification of the trace input"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Why the transcendental evaluation does not collapse a field relation"
+        },
+        {
+          "line": 122,
+          "level": 2,
+          "heading": "4. The four square classes are independent"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "5. Elementary proof of the multiquadratic field lemma used here"
+        },
+        {
+          "line": 183,
+          "level": 2,
+          "heading": "6. Proof of multiplicative independence"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "7. Excluding an affine lattice, not merely a common integer period"
+        },
+        {
+          "line": 243,
+          "level": 2,
+          "heading": "8. What this distinguishes, and what it does not estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_fixed_point_multipliers.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_fixed_point_multipliers.md",
+      "source_sha256": "42e52ff202f56182f1ac8314fcca9d668d207c59217738a06eb2f162e9d6824a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact marked fixed-point multipliers of the specified classical map"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Purpose and scope"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "1. Two exact equilibrium lines of the kick"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "heading": "2. Exact Hessians"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "heading": "3. The derivative of the full map is exact to all orders in tau"
+        },
+        {
+          "line": 159,
+          "level": 2,
+          "heading": "4. Consequences that actually follow"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "Symbolic check record"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_uniform_translation_contact.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_uniform_translation_contact.md",
+      "source_sha256": "257afa4511da2fae8bd9260cc33a654bf045115f80aa0861bb8eae6a4f92347e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform finite contact, including infinitesimal translations"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "1. Actual map and previously proved inputs"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "2. C1 dependence of stable graphs in a fixed holomorphic space"
+        },
+        {
+          "line": 143,
+          "level": 2,
+          "heading": "3. Neither a foliation symmetry nor a single coincident germ"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "4. Infinitesimal coincidences also do not occur"
+        },
+        {
+          "line": 201,
+          "level": 2,
+          "heading": "5. Uniform finite contact down to h=0"
+        },
+        {
+          "line": 244,
+          "level": 2,
+          "heading": "6. Relative sublevel bound"
+        },
+        {
+          "line": 278,
+          "level": 2,
+          "heading": "7. A relative backward-graph error"
+        },
+        {
+          "line": 316,
+          "level": 2,
+          "heading": "8. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/root_uniform_analytic_oscillation.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/root_uniform_analytic_oscillation.md",
+      "source_sha256": "5eaae7946e30df2507a870535ec46c2dbc2bce07cc96c8b85366772cab590d31",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform oscillation of translated analytic phase differences"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. A compact family including zero-translation directions"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "3. Reduction to finitely many directions and patches"
+        },
+        {
+          "line": 152,
+          "level": 2,
+          "heading": "4. The one-dimensional estimate, proved here"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "5. Uniform grid summation"
+        },
+        {
+          "line": 234,
+          "level": 2,
+          "heading": "6. Precise prospective consequence for the kick"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_center_phase_c17_bound.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/counter_center_phase_c17_bound.md",
+      "source_sha256": "992f35db1916f680083fe304caa3001bc71720e2a864f28ea3513f080b5340c5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Explicit C17 closeness of the exact center phase"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "Proof"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_all_entry_validation.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/counter_all_entry_validation.md",
+      "source_sha256": "5ebdc6987ebaf1d35d9902dfd03a569604a5aeb45c1d7b46bdf865fa0ce06acd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent derivation of uniform adjoint-entry bounds"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Statement and frozen inputs"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "1. The exact phase and its \\(C^{18}\\) margin"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "2. Finite type through order 17, using only derivatives of order at least two"
+        },
+        {
+          "line": 172,
+          "level": 2,
+          "heading": "3. Oscillation with an arbitrary linear phase"
+        },
+        {
+          "line": 201,
+          "level": 2,
+          "heading": "4. Exact coefficient representation, with all aliases retained"
+        },
+        {
+          "line": 269,
+          "level": 2,
+          "heading": "5. High input labels: the two alias regimes"
+        },
+        {
+          "line": 341,
+          "level": 2,
+          "heading": "6. Fixed labels: an exact finite-difference Egorov limit"
+        },
+        {
+          "line": 394,
+          "level": 2,
+          "heading": "7. The classical coefficient is strictly below one"
+        },
+        {
+          "line": 444,
+          "level": 2,
+          "heading": "8. A uniform gap, and every weighted permutation branch"
+        },
+        {
+          "line": 473,
+          "level": 2,
+          "heading": "9. What this establishes"
+        }
+      ]
+    }
+  ]
+}

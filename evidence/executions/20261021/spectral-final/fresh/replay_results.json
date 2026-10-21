@@ -1,0 +1,662 @@
+{
+  "resource_caps": {
+    "cpu_seconds": 35,
+    "wall_seconds": 40,
+    "memory_bytes": 2147483648,
+    "output_file_bytes": 20971520
+  },
+  "runs": [
+    {
+      "path": "research_round14_2026_10_21/obstruction/r14_coordinate_phase_audit_checks.py",
+      "exit_code": 1,
+      "seconds": 0.036,
+      "source_sha256": "74c1c8ce45a7c2dfe5ba2a4279d2ce64b5d2916df1c3c54d0abb4b1e9fb816bc",
+      "command": "python3 research_round14_2026_10_21/obstruction/r14_coordinate_phase_audit_checks.py",
+      "stdout": "research_round14_2026_10_21__obstruction__r14_coordinate_phase_audit_checks.py.stdout",
+      "stderr": "research_round14_2026_10_21__obstruction__r14_coordinate_phase_audit_checks.py.stderr"
+    },
+    {
+      "path": "research_round14_2026_10_21/obstruction/r14_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.119,
+      "source_sha256": "da394be648ff6d6ff03231ca174d706176219e2aefaf8808a1dbad8657f0a5ca",
+      "command": "python3 research_round14_2026_10_21/obstruction/r14_exact_checks.py",
+      "stdout": "research_round14_2026_10_21__obstruction__r14_exact_checks.py.stdout",
+      "stderr": "research_round14_2026_10_21__obstruction__r14_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round14_2026_10_21/obstruction/r14_final_arithmetic_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.068,
+      "source_sha256": "74e1c2fc7e50fddeb8a4bdf633c71e80145a24994eefa9dd2c696c7e1950f8ba",
+      "command": "python3 research_round14_2026_10_21/obstruction/r14_final_arithmetic_exact_checks.py",
+      "stdout": "research_round14_2026_10_21__obstruction__r14_final_arithmetic_exact_checks.py.stdout",
+      "stderr": "research_round14_2026_10_21__obstruction__r14_final_arithmetic_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round14_2026_10_21/obstruction/r14_inserted_audit_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.067,
+      "source_sha256": "555fa149ea52e30ba70c7f05540cdfeaff944ea5b47d0eb1c7aa92bc1b7c7257",
+      "command": "python3 research_round14_2026_10_21/obstruction/r14_inserted_audit_exact_checks.py",
+      "stdout": "research_round14_2026_10_21__obstruction__r14_inserted_audit_exact_checks.py.stdout",
+      "stderr": "research_round14_2026_10_21__obstruction__r14_inserted_audit_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round14_2026_10_21/root/check_four_sheet_algebra.py",
+      "exit_code": 0,
+      "seconds": 0.116,
+      "source_sha256": "e6ce2c2e71cc6caf08ecb1afa5eb2aa9a0e60f5ecad618577d2168d09e148ccc",
+      "command": "python3 research_round14_2026_10_21/root/check_four_sheet_algebra.py",
+      "stdout": "research_round14_2026_10_21__root__check_four_sheet_algebra.py.stdout",
+      "stderr": "research_round14_2026_10_21__root__check_four_sheet_algebra.py.stderr"
+    },
+    {
+      "path": "research_round14_2026_10_21/structural/check_quartic_coefficient.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "804e4d177a06a45be756c9e97514c86b2980f5a3a3829b609e3ddfb0cd2f17e6",
+      "command": "python3 research_round14_2026_10_21/structural/check_quartic_coefficient.py",
+      "stdout": "research_round14_2026_10_21__structural__check_quartic_coefficient.py.stdout",
+      "stderr": "research_round14_2026_10_21__structural__check_quartic_coefficient.py.stderr"
+    },
+    {
+      "path": "research_round13_2026_10_21/orbit_correlations/protected_actions_exact_check.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "9b991e8bf77d89b1dae9c8681f4c35a0ee196695d13cc81b90200a98031cc3ea",
+      "command": "python3 research_round13_2026_10_21/orbit_correlations/protected_actions_exact_check.py",
+      "stdout": "research_round13_2026_10_21__orbit_correlations__protected_actions_exact_check.py.stdout",
+      "stderr": "research_round13_2026_10_21__orbit_correlations__protected_actions_exact_check.py.stderr"
+    },
+    {
+      "path": "research_round13_2026_10_21/root/protected_cycles_exact_check.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "f0c011a229a5b12996fe97933dbe1332825f327cead80c312df89d1c9e862deb",
+      "command": "python3 research_round13_2026_10_21/root/protected_cycles_exact_check.py",
+      "stdout": "research_round13_2026_10_21__root__protected_cycles_exact_check.py.stdout",
+      "stderr": "research_round13_2026_10_21__root__protected_cycles_exact_check.py.stderr"
+    },
+    {
+      "path": "research_round12_2026_10_21/r12_countersequence_exact_check.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "1b55b94e3ccad1b4494516dc1db012402f82216eca19739222b4517b6bd20268",
+      "command": "python3 research_round12_2026_10_21/r12_countersequence_exact_check.py",
+      "stdout": "research_round12_2026_10_21__r12_countersequence_exact_check.py.stdout",
+      "stderr": "research_round12_2026_10_21__r12_countersequence_exact_check.py.stderr"
+    },
+    {
+      "path": "research_round12_2026_10_21/r12_full_product_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "f0bcd6ebdb291aaff2c51835e0dd50f9271ff2d3a9f20ce8c5e042ffb78f6194",
+      "command": "python3 research_round12_2026_10_21/r12_full_product_exact_checks.py",
+      "stdout": "research_round12_2026_10_21__r12_full_product_exact_checks.py.stdout",
+      "stderr": "research_round12_2026_10_21__r12_full_product_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_arithmetic_pell_certificate.py",
+      "exit_code": 1,
+      "seconds": 1.17,
+      "source_sha256": "b9bdb904a09ca18400bc90053974609d9aa96acbc46f9f8230f63b92f46fd1cb",
+      "command": "python3 research_round11_2026_10_21/r11_arithmetic_pell_certificate.py",
+      "stdout": "research_round11_2026_10_21__r11_arithmetic_pell_certificate.py.stdout",
+      "stderr": "research_round11_2026_10_21__r11_arithmetic_pell_certificate.py.stderr"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_checks.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "0e3e67a7439681c699a5421bb5df68449d5a8f750e5da2e8423de083e58a4bf3",
+      "command": "python3 research_round11_2026_10_21/r11_coherent_parametric_checks.py",
+      "stdout": "research_round11_2026_10_21__r11_coherent_parametric_checks.py.stdout",
+      "stderr": "research_round11_2026_10_21__r11_coherent_parametric_checks.py.stderr"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_resolvent_arithmetic_checks.py",
+      "exit_code": 0,
+      "seconds": 0.417,
+      "source_sha256": "0c0164efdc64d8c4e01252ddc2f04da7b9a9ff5872f2a53378c69a41b65c09f1",
+      "command": "python3 research_round11_2026_10_21/r11_resolvent_arithmetic_checks.py",
+      "stdout": "research_round11_2026_10_21__r11_resolvent_arithmetic_checks.py.stdout",
+      "stderr": "research_round11_2026_10_21__r11_resolvent_arithmetic_checks.py.stderr"
+    },
+    {
+      "path": "research_round11_2026_10_21/root_parametric_exact_check.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "d0b55e0c876eafdbb5e8cdf27fb624ce85b20e2feb1db7308876daa2fbb047fb",
+      "command": "python3 research_round11_2026_10_21/root_parametric_exact_check.py",
+      "stdout": "research_round11_2026_10_21__root_parametric_exact_check.py.stdout",
+      "stderr": "research_round11_2026_10_21__root_parametric_exact_check.py.stderr"
+    },
+    {
+      "path": "research_round10_2026_10_21/r10_arithmetic_exact_checks.py",
+      "exit_code": 1,
+      "seconds": 0.417,
+      "source_sha256": "dedc3277cf7b4d36cbf638d5cddcb99755537eb36d8a283263171954763448da",
+      "command": "python3 research_round10_2026_10_21/r10_arithmetic_exact_checks.py",
+      "stdout": "research_round10_2026_10_21__r10_arithmetic_exact_checks.py.stdout",
+      "stderr": "research_round10_2026_10_21__r10_arithmetic_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round9_2026_10_21/r9_arithmetic_galois_check.py",
+      "exit_code": 1,
+      "seconds": 0.066,
+      "source_sha256": "3a0e2612c2a0644355a125a26e449751268565a06437726a24713372968d96fd",
+      "command": "python3 research_round9_2026_10_21/r9_arithmetic_galois_check.py",
+      "stdout": "research_round9_2026_10_21__r9_arithmetic_galois_check.py.stdout",
+      "stderr": "research_round9_2026_10_21__r9_arithmetic_galois_check.py.stderr"
+    },
+    {
+      "path": "research_round9_2026_10_21/r9_sector_positive_quantization_check.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "d06b8618653895feb88c8ce5698c9b24d5c7dc624827e403aa0eb2f77cd6adb3",
+      "command": "python3 research_round9_2026_10_21/r9_sector_positive_quantization_check.py",
+      "stdout": "research_round9_2026_10_21__r9_sector_positive_quantization_check.py.stdout",
+      "stderr": "research_round9_2026_10_21__r9_sector_positive_quantization_check.py.stderr"
+    },
+    {
+      "path": "research_round8_2026_10_21/r8_return_full_kick_sign_check.py",
+      "exit_code": 0,
+      "seconds": 0.921,
+      "source_sha256": "82b53039ff731bd758f7d7b61c56e8ca5d4c5367f2840f1ae3caff4eba3f94ea",
+      "command": "python3 research_round8_2026_10_21/r8_return_full_kick_sign_check.py",
+      "stdout": "research_round8_2026_10_21__r8_return_full_kick_sign_check.py.stdout",
+      "stderr": "research_round8_2026_10_21__r8_return_full_kick_sign_check.py.stderr"
+    },
+    {
+      "path": "research_round8_2026_10_21/r8_return_three_time_exact_check.py",
+      "exit_code": 0,
+      "seconds": 0.116,
+      "source_sha256": "03959edadee28fb26adfffce2385b963f1918cc1b6a4ec61a85a4fc65f0f58a0",
+      "command": "python3 research_round8_2026_10_21/r8_return_three_time_exact_check.py",
+      "stdout": "research_round8_2026_10_21__r8_return_three_time_exact_check.py.stdout",
+      "stderr": "research_round8_2026_10_21__r8_return_three_time_exact_check.py.stderr"
+    },
+    {
+      "path": "research_round7_2026_10_21/r7_audit_all_fixed_powers_checks.py",
+      "exit_code": 0,
+      "seconds": 0.517,
+      "source_sha256": "e03e90c4ff8291279eee4671fd89cba9103399fef3bf4b56e4aea0f69a03f0d9",
+      "command": "python3 research_round7_2026_10_21/r7_audit_all_fixed_powers_checks.py",
+      "stdout": "research_round7_2026_10_21__r7_audit_all_fixed_powers_checks.py.stdout",
+      "stderr": "research_round7_2026_10_21__r7_audit_all_fixed_powers_checks.py.stderr"
+    },
+    {
+      "path": "research_round7_2026_10_21/r7_audit_countermodel_checks.py",
+      "exit_code": 0,
+      "seconds": 3.58,
+      "source_sha256": "f0cd9841244806cd11ac9b8f7e62371b36245a3a25220e41c3a3dea46ddc24af",
+      "command": "python3 research_round7_2026_10_21/r7_audit_countermodel_checks.py",
+      "stdout": "research_round7_2026_10_21__r7_audit_countermodel_checks.py.stdout",
+      "stderr": "research_round7_2026_10_21__r7_audit_countermodel_checks.py.stderr"
+    },
+    {
+      "path": "research_round7_2026_10_21/r7_audit_physical_fixed_powers49_checks.py",
+      "exit_code": 1,
+      "seconds": 0.618,
+      "source_sha256": "76155ec26d0675f8d9b773d60d991a7fb580aac09fd602f34b577f28442721b1",
+      "command": "python3 research_round7_2026_10_21/r7_audit_physical_fixed_powers49_checks.py",
+      "stdout": "research_round7_2026_10_21__r7_audit_physical_fixed_powers49_checks.py.stdout",
+      "stderr": "research_round7_2026_10_21__r7_audit_physical_fixed_powers49_checks.py.stderr"
+    },
+    {
+      "path": "research_round7_2026_10_21/r7_audit_stationary_dephasing_checks.py",
+      "exit_code": 0,
+      "seconds": 0.618,
+      "source_sha256": "1fa3708987334148dd8070a968b514d9aa6fdd4940d6b7fc275e4d4a71888098",
+      "command": "python3 research_round7_2026_10_21/r7_audit_stationary_dephasing_checks.py",
+      "stdout": "research_round7_2026_10_21__r7_audit_stationary_dephasing_checks.py.stdout",
+      "stderr": "research_round7_2026_10_21__r7_audit_stationary_dephasing_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_dense_higher_block_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 1.571,
+      "source_sha256": "42f28a08f21b77b372c955eca9c772c4af749cb71c6456c6e44a9330d9d0d3a4",
+      "command": "python3 research_round6_2026_10_21/r6_dense_higher_block_exact_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_dense_higher_block_exact_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_dense_higher_block_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_dense_phasechaos_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 2.424,
+      "source_sha256": "8bf4679a43f0acb8a9795939db5a1f4af6dd42ecffe597eb87f4d8763a9b6f34",
+      "command": "python3 research_round6_2026_10_21/r6_dense_phasechaos_exact_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_dense_phasechaos_exact_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_dense_phasechaos_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_dense_renewal_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.618,
+      "source_sha256": "ab9ad146177ec37e2e25fc1d90cfe2fa22d2d3b5c951b4011ac6d179dab6d4bf",
+      "command": "python3 research_round6_2026_10_21/r6_dense_renewal_exact_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_dense_renewal_exact_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_dense_renewal_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_occupation_twostep_gauss_check.py",
+      "exit_code": 0,
+      "seconds": 1.721,
+      "source_sha256": "0ba133e7ecf23385756a63c3a916fef03da07db92f659c306d403b8e09edcc03",
+      "command": "python3 research_round6_2026_10_21/r6_occupation_twostep_gauss_check.py",
+      "stdout": "research_round6_2026_10_21__r6_occupation_twostep_gauss_check.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_occupation_twostep_gauss_check.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_original_fixed_powers_49_checks.py",
+      "exit_code": 0,
+      "seconds": 0.267,
+      "source_sha256": "7bc426cd2a9c63f38758761accb5271b7def5ceb914167782b0dddf02c0be7f7",
+      "command": "python3 research_round6_2026_10_21/r6_original_fixed_powers_49_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_original_fixed_powers_49_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_original_fixed_powers_49_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_original_isolated_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 1.873,
+      "source_sha256": "40d58f38f961bf0bdaf8605070ff504c737c3da4a71433c8fd772366ee98f49f",
+      "command": "python3 research_round6_2026_10_21/r6_original_isolated_exact_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_original_isolated_exact_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_original_isolated_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round6_2026_10_21/r6_original_twostep_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.166,
+      "source_sha256": "9274ae69e39e18af6bca91990298eb58a9dc67b3d0cf5e6183acfbb4eecb57d4",
+      "command": "python3 research_round6_2026_10_21/r6_original_twostep_exact_checks.py",
+      "stdout": "research_round6_2026_10_21__r6_original_twostep_exact_checks.py.stdout",
+      "stderr": "research_round6_2026_10_21__r6_original_twostep_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/arithmetic_endpoint_global_content_probe.py",
+      "exit_code": 2,
+      "seconds": 0.116,
+      "source_sha256": "43fbb1c2ff7b9459e77445e662a0639b42206fd725735efb4c7fca37ee363d42",
+      "command": "python3 research_round5_2026_10_21/arithmetic_endpoint_global_content_probe.py",
+      "stdout": "research_round5_2026_10_21__arithmetic_endpoint_global_content_probe.py.stdout",
+      "stderr": "research_round5_2026_10_21__arithmetic_endpoint_global_content_probe.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/arithmetic_endpoint_minor_probe.py",
+      "exit_code": 0,
+      "seconds": 0.367,
+      "source_sha256": "5bd5458b1a21c1e768031113d19a062fc42f0a11ed5f4a3e115d2a5198d92613",
+      "command": "python3 research_round5_2026_10_21/arithmetic_endpoint_minor_probe.py",
+      "stdout": "research_round5_2026_10_21__arithmetic_endpoint_minor_probe.py.stdout",
+      "stderr": "research_round5_2026_10_21__arithmetic_endpoint_minor_probe.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/arithmetic_endpoint_mod5_certificate.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "df90a06eab14b1bb97b9416fa6d2f1e3cd0543170ed77f0dc17a03888bdbb700",
+      "command": "python3 research_round5_2026_10_21/arithmetic_endpoint_mod5_certificate.py",
+      "stdout": "research_round5_2026_10_21__arithmetic_endpoint_mod5_certificate.py.stdout",
+      "stderr": "research_round5_2026_10_21__arithmetic_endpoint_mod5_certificate.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/arithmetic_endpoint_mod5_probe.py",
+      "exit_code": 0,
+      "seconds": 0.316,
+      "source_sha256": "7fc687fcb589213d5375514ff811f40f07a45c70ca6d11d02373b91ac04b9521",
+      "command": "python3 research_round5_2026_10_21/arithmetic_endpoint_mod5_probe.py",
+      "stdout": "research_round5_2026_10_21__arithmetic_endpoint_mod5_probe.py.stdout",
+      "stderr": "research_round5_2026_10_21__arithmetic_endpoint_mod5_probe.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/audit_endpoint_mod5_certificate.py",
+      "exit_code": 0,
+      "seconds": 0.018,
+      "source_sha256": "b194a9ec337043d1db5910d815098eaa7728fd00de2d7f04df3d40b2dca1e471",
+      "command": "python3 research_round5_2026_10_21/audit_endpoint_mod5_certificate.py",
+      "stdout": "research_round5_2026_10_21__audit_endpoint_mod5_certificate.py.stdout",
+      "stderr": "research_round5_2026_10_21__audit_endpoint_mod5_certificate.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/audit_gauge_coefficient_check.py",
+      "exit_code": 0,
+      "seconds": 0.267,
+      "source_sha256": "256de1d4bf703c28873f1cb455cb6d95c55a3dccdc6ec99d5653f5dff15776ab",
+      "command": "python3 research_round5_2026_10_21/audit_gauge_coefficient_check.py",
+      "stdout": "research_round5_2026_10_21__audit_gauge_coefficient_check.py.stdout",
+      "stderr": "research_round5_2026_10_21__audit_gauge_coefficient_check.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_audit_exponential_edge_checks.py",
+      "exit_code": 0,
+      "seconds": 0.216,
+      "source_sha256": "951a42c00340c80260083d8a6e244bd90148629263e382c2e226d414fc0372af",
+      "command": "python3 research_round5_2026_10_21/dual_audit_exponential_edge_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_audit_exponential_edge_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_audit_exponential_edge_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_collision_moment_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.267,
+      "source_sha256": "958e95892d1191c45846ccdae66708fe79d7bb4887ead4dd9fcabc0e6bb780e1",
+      "command": "python3 research_round5_2026_10_21/dual_collision_moment_exact_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_collision_moment_exact_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_collision_moment_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_directed_encounter_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.266,
+      "source_sha256": "96702b6c0e25d4c4da0524449a5ee8781189e90825e7f9f5ec1da0623efba84b",
+      "command": "python3 research_round5_2026_10_21/dual_directed_encounter_exact_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_directed_encounter_exact_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_directed_encounter_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_four_branch_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "212d167395bb6ec2a4b7b9d996e9e2f9af1b8b9ebb3ebe67076a290c848679b3",
+      "command": "python3 research_round5_2026_10_21/dual_four_branch_exact_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_four_branch_exact_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_four_branch_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_growing_order_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 1.871,
+      "source_sha256": "63acd0e681cdcaaa4cf07b9540ed38a8cd7434c474da368aa949b2dddce32965",
+      "command": "python3 research_round5_2026_10_21/dual_growing_order_exact_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_growing_order_exact_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_growing_order_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/dual_three_arc_exact_checks.py",
+      "exit_code": 0,
+      "seconds": 0.667,
+      "source_sha256": "43827b41475583737106ab1ae6a3d6555c43b4b33f33e59e38a5a7365165b2c8",
+      "command": "python3 research_round5_2026_10_21/dual_three_arc_exact_checks.py",
+      "stdout": "research_round5_2026_10_21__dual_three_arc_exact_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__dual_three_arc_exact_checks.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/root_marked_three_cut_probe.py",
+      "exit_code": 0,
+      "seconds": 1.122,
+      "source_sha256": "05a5ae76e1217ec1fe4706082656fe2771af6fe1b561cbffc0c4c8c91421c928",
+      "command": "python3 research_round5_2026_10_21/root_marked_three_cut_probe.py",
+      "stdout": "research_round5_2026_10_21__root_marked_three_cut_probe.py.stdout",
+      "stderr": "research_round5_2026_10_21__root_marked_three_cut_probe.py.stderr"
+    },
+    {
+      "path": "research_round5_2026_10_21/root_reconnection_permutation_checks.py",
+      "exit_code": 0,
+      "seconds": 0.116,
+      "source_sha256": "c813c8346f428ce2d2955351ee695e32b6df03958064d3d1e820724d523f65fe",
+      "command": "python3 research_round5_2026_10_21/root_reconnection_permutation_checks.py",
+      "stdout": "research_round5_2026_10_21__root_reconnection_permutation_checks.py.stdout",
+      "stderr": "research_round5_2026_10_21__root_reconnection_permutation_checks.py.stderr"
+    },
+    {
+      "path": "research_round3_2026_10_21/arithmetic_comb_fourier_check.py",
+      "exit_code": 0,
+      "seconds": 0.033,
+      "source_sha256": "4b27d43ecb57c38765dafeb1aaeac7011e454e761cfa8210db229f06093576d1",
+      "command": "python3 research_round3_2026_10_21/arithmetic_comb_fourier_check.py",
+      "stdout": "research_round3_2026_10_21__arithmetic_comb_fourier_check.py.stdout",
+      "stderr": "research_round3_2026_10_21__arithmetic_comb_fourier_check.py.stderr"
+    },
+    {
+      "path": "research_round3_2026_10_21/arithmetic_split_symmetry_check.py",
+      "exit_code": 0,
+      "seconds": 0.035,
+      "source_sha256": "5fdf0566a529e904c706d2f60778f75231e5892e209046755968d74b15b10087",
+      "command": "python3 research_round3_2026_10_21/arithmetic_split_symmetry_check.py",
+      "stdout": "research_round3_2026_10_21__arithmetic_split_symmetry_check.py.stdout",
+      "stderr": "research_round3_2026_10_21__arithmetic_split_symmetry_check.py.stderr"
+    },
+    {
+      "path": "research_round3_2026_10_21/commutator_word_check.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "c38af76c0da18f2f16f84c3bda25b5aef42a0252150394405541f2b50d244e0c",
+      "command": "python3 research_round3_2026_10_21/commutator_word_check.py",
+      "stdout": "research_round3_2026_10_21__commutator_word_check.py.stdout",
+      "stderr": "research_round3_2026_10_21__commutator_word_check.py.stderr"
+    },
+    {
+      "path": "research_continuation_2026_10_20/verify_affine_symmetry.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "ded7875ca635745da21bbaef9d523cc24c2d57a3985965f84b82caee1a51626e",
+      "command": "python3 research_continuation_2026_10_20/verify_affine_symmetry.py",
+      "stdout": "research_continuation_2026_10_20__verify_affine_symmetry.py.stdout",
+      "stderr": "research_continuation_2026_10_20__verify_affine_symmetry.py.stderr"
+    },
+    {
+      "path": "research_continuation_2026_10_20/verify_spectral_simplicity.py",
+      "exit_code": 0,
+      "seconds": 0.317,
+      "source_sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf",
+      "command": "python3 research_continuation_2026_10_20/verify_spectral_simplicity.py",
+      "stdout": "research_continuation_2026_10_20__verify_spectral_simplicity.py.stdout",
+      "stderr": "research_continuation_2026_10_20__verify_spectral_simplicity.py.stderr"
+    },
+    {
+      "path": "research_round2_2026_10_20/arithmetic_banded_time_reversal.py",
+      "exit_code": 0,
+      "seconds": 0.067,
+      "source_sha256": "969a610fc679f19b78a25a2c7e8aea915f7a8b94f74d4c07065903aaa79894f7",
+      "command": "python3 research_round2_2026_10_20/arithmetic_banded_time_reversal.py",
+      "stdout": "research_round2_2026_10_20__arithmetic_banded_time_reversal.py.stdout",
+      "stderr": "research_round2_2026_10_20__arithmetic_banded_time_reversal.py.stderr"
+    },
+    {
+      "path": "research_round2_2026_10_20/arithmetic_second_order.py",
+      "exit_code": 0,
+      "seconds": 1.67,
+      "source_sha256": "6edf2858540c7ec0f107fd52384ab81057f3c7d5354c07a8ff4671ae614f2dd1",
+      "command": "python3 research_round2_2026_10_20/arithmetic_second_order.py",
+      "stdout": "research_round2_2026_10_20__arithmetic_second_order.py.stdout",
+      "stderr": "research_round2_2026_10_20__arithmetic_second_order.py.stderr"
+    },
+    {
+      "path": "research_round2_2026_10_20/arithmetic_seven_chain_mod5_probe.py",
+      "exit_code": 0,
+      "seconds": 1.872,
+      "source_sha256": "d0ee9caff9707778c84c8e55568ef3f3ce602d22da339942acd94e7bc18fd9eb",
+      "command": "python3 research_round2_2026_10_20/arithmetic_seven_chain_mod5_probe.py",
+      "stdout": "research_round2_2026_10_20__arithmetic_seven_chain_mod5_probe.py.stdout",
+      "stderr": "research_round2_2026_10_20__arithmetic_seven_chain_mod5_probe.py.stderr"
+    },
+    {
+      "path": "research_round2_2026_10_20/root_exact_pressure_variance.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "af9ca577779c30830b9a6da45ffdf880cc94024be882420460aa79726e06cfe5",
+      "command": "python3 research_round2_2026_10_20/root_exact_pressure_variance.py",
+      "stdout": "research_round2_2026_10_20__root_exact_pressure_variance.py.stdout",
+      "stderr": "research_round2_2026_10_20__root_exact_pressure_variance.py.stderr"
+    },
+    {
+      "path": "research_round2_2026_10_20/root_jacobi_small_certificates.py",
+      "exit_code": 0,
+      "seconds": 0.034,
+      "source_sha256": "4735755e1debe91ca6ab4ceaaf19d75d82ea75057d91fc3023f2ebfdaabc868b",
+      "command": "python3 research_round2_2026_10_20/root_jacobi_small_certificates.py",
+      "stdout": "research_round2_2026_10_20__root_jacobi_small_certificates.py.stdout",
+      "stderr": "research_round2_2026_10_20__root_jacobi_small_certificates.py.stderr"
+    },
+    {
+      "path": "research_round4_2026_10_21/dual_exact_coefficient_check.py",
+      "exit_code": 0,
+      "seconds": 0.217,
+      "source_sha256": "568c2cf3f5c20f181b06a1ac0e98fdd44da8a95a7c2734adf71633972e9ac908",
+      "command": "python3 research_round4_2026_10_21/dual_exact_coefficient_check.py",
+      "stdout": "research_round4_2026_10_21__dual_exact_coefficient_check.py.stdout",
+      "stderr": "research_round4_2026_10_21__dual_exact_coefficient_check.py.stderr"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "research_round7_2026_10_21/root_unipotent_exact_checks.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "json",
+        "os",
+        "pathlib",
+        "platform",
+        "resource",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "run": false,
+      "source_sha256": "95bbf4f1fda813e32a32fdd4d3d00619205a8cb05b111f2561fd345be062682e"
+    },
+    {
+      "path": "build_spectral_research_master.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "078dee4998bb591c45fd763a3d16279e218a051a5f02fb6c1f5eb08b8e0b4437"
+    },
+    {
+      "path": "build_spectral_research_master_round6.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "cf38361a50afa79c1f2cc9a5b3a77543f0a30f90f9ae31d8362995ce663ca2f3"
+    },
+    {
+      "path": "build_spectral_research_master_round7.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "8051e78cbc0b08b497bb005aa561a7b7dac982f01638418e14ae06fb9532d0a9"
+    },
+    {
+      "path": "build_spectral_research_master_round8.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "d3be6a9e3d98acba774f5931bb025f202a19150de4fbdfbf9ddf9780b11f47c5"
+    },
+    {
+      "path": "build_spectral_research_master_round9.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "4e29bd699240f131d35904fc769dd9b5f0834c1e9a5a2f89f016f6710ed76dfc"
+    },
+    {
+      "path": "build_spectral_research_master_round10.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "20dccb154f2f1aa1ba301e63c9a3708f5544197f1aa73e762acdee7cba895eac"
+    },
+    {
+      "path": "build_spectral_research_master_round11.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "48ea6ec55ee8d623baacb915089b3e31eb60c9fb9d9f778681eba6f8280eb68f"
+    },
+    {
+      "path": "build_spectral_research_master_round12.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "3b3b38fca7d798f13f36e4dbddfb70785d8a147834d319858760044893007bc7"
+    },
+    {
+      "path": "build_spectral_research_master_round13.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "07285803c9792ee6d9b8395823cc3521cc358f07e993f7c300f92f7f3b55c471"
+    },
+    {
+      "path": "build_spectral_research_master_round14.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "10fe188194ea85edfcc47addbe54a5f3585c964381824e68d5897fa387ddcfb5"
+    },
+    {
+      "path": "research_round4_2026_10_21/build_proof_book.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "run": false,
+      "source_sha256": "f8475851f4ecd099826bd9ca9dd69676bbb4f8bffb35c1ecc2e05391c02993a0"
+    }
+  ]
+}

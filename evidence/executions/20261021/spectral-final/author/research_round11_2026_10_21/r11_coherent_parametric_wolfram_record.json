@@ -1,0 +1,26 @@
+{
+  "status": "exact_symbolic_auxiliary_check_not_original_spectral_statistics",
+  "initial_code": "Clear[aa, pp, mm, dd, xx, zz, tt, poly, disc]; aa=DiagonalMatrix[{-1,0,1}]; pp=ConstantArray[1/3,{3,3}]; mm=IdentityMatrix[3]+(I-1)pp; dd=Simplify[ConjugateTranspose[mm].aa.mm-aa]; poly=zz^3-(2+I)xx zz^2/3+(1+2 I)xx zz/3-I; disc=Factor[Discriminant[poly,zz]]; <|\"UnitaryCheck\"->Simplify[ConjugateTranspose[mm].mm==IdentityMatrix[3]],\"Charge\"->dd,\"ChargeSquareTrace\"->Simplify[Tr[dd.dd]],\"CharacteristicCheck\"->FullSimplify[CharacteristicPolynomial[DiagonalMatrix[{Exp[-I tt],1,Exp[I tt]}].mm,zz]==(poly/.xx->1+2 Cos[tt])],\"Discriminant\"->disc,\"DiscriminantSeries\"->Series[disc/.xx->1+2 Cos[tt],{tt,0,4}],\"CompressedGeneratorCharacteristic\"->Factor[CharacteristicPolynomial[(IdentityMatrix[3]-pp).aa.(IdentityMatrix[3]-pp),zz]]|>",
+  "initial_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"UnitaryCheck\" -> True, \"Charge\" -> {{2/3, 1/3 - I/3, (-2*I)/3}, {1/3 + I/3, 0, -1/3 - I/3}, {(2*I)/3, -1/3 + I/3, -2/3}}, \"ChargeSquareTrace\" -> 8/3, \"CharacteristicCheck\" -> 3*I + zz*((-1 - 2*I) + (2 + I)*zz) + 2*zz*((-1 - 2*I) + (2 + I)*zz)*Cos[tt] == 3*zz^3, \"Discriminant\" -> -1/81*((-3 + xx)*(729 + 243*xx - 189*xx^2 + 25*xx^3)), \"DiscriminantSeries\" -> SeriesData[tt, 0, {16/3, 0, 20/9}, 2, 5, 1], \"CompressedGeneratorCharacteristic\" -> -1/3*(zz*(-1 + 3*zz^2))|>"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  },
+  "correction": "Use Det[z IdentityMatrix[3]-U] explicitly; CharacteristicPolynomial used the opposite sign convention for odd dimension. No initial characteristic equality was accepted.",
+  "corrected_code": "Clear[aa, pp, mm, dd, xx, zz, tt, poly, disc]; aa=DiagonalMatrix[{-1,0,1}]; pp=ConstantArray[1/3,{3,3}]; mm=IdentityMatrix[3]+(I-1)pp; dd=Simplify[ConjugateTranspose[mm].aa.mm-aa]; poly=zz^3-(2+I)xx zz^2/3+(1+2 I)xx zz/3-I; disc=Factor[Discriminant[poly,zz]]; <|\"UnitaryCheck\"->Simplify[ConjugateTranspose[mm].mm==IdentityMatrix[3]],\"Charge\"->dd,\"ChargeSquareTrace\"->Simplify[Tr[dd.dd]],\"CharacteristicResidual\"->FullSimplify[Det[zz IdentityMatrix[3]-DiagonalMatrix[{Exp[-I tt],1,Exp[I tt]}].mm]-(poly/.xx->1+2 Cos[tt])],\"Discriminant\"->disc,\"DiscriminantSeries\"->Series[disc/.xx->1+2 Cos[tt],{tt,0,4}],\"CompressedGeneratorCharacteristic\"->Factor[Det[zz IdentityMatrix[3]-(IdentityMatrix[3]-pp).aa.(IdentityMatrix[3]-pp)]]|>",
+  "corrected_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"UnitaryCheck\" -> True, \"Charge\" -> {{2/3, 1/3 - I/3, (-2*I)/3}, {1/3 + I/3, 0, -1/3 - I/3}, {(2*I)/3, -1/3 + I/3, -2/3}}, \"ChargeSquareTrace\" -> 8/3, \"CharacteristicResidual\" -> 0, \"Discriminant\" -> -1/81*((-3 + xx)*(729 + 243*xx - 189*xx^2 + 25*xx^3)), \"DiscriminantSeries\" -> SeriesData[tt, 0, {16/3, 0, 20/9}, 2, 5, 1], \"CompressedGeneratorCharacteristic\" -> (zz*(-1 + 3*zz^2))/3|>"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  }
+}

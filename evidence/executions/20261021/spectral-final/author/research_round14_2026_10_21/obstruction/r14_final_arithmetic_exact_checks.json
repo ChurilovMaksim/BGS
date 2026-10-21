@@ -1,0 +1,748 @@
+{
+  "status": "passed",
+  "scope": "Original Pell congruences and original hopping coefficient identities; no H2 bound.",
+  "joint_valuation_cases": 78,
+  "certificates": [
+    {
+      "s": 0,
+      "t": 0,
+      "r_bits": 2,
+      "v5_N": 1,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 0,
+      "t": 1,
+      "r_bits": 4,
+      "v5_N": 2,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 0,
+      "t": 2,
+      "r_bits": 7,
+      "v5_N": 3,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 0,
+      "t": 10,
+      "r_bits": 25,
+      "v5_N": 11,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 0,
+      "t": 79,
+      "r_bits": 186,
+      "v5_N": 80,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 0,
+      "t": 80,
+      "r_bits": 188,
+      "v5_N": 81,
+      "v7_N": 1,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 1,
+      "t": 0,
+      "r_bits": 5,
+      "v5_N": 1,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 1,
+      "t": 1,
+      "r_bits": 7,
+      "v5_N": 2,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 1,
+      "t": 2,
+      "r_bits": 10,
+      "v5_N": 3,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 1,
+      "t": 10,
+      "r_bits": 28,
+      "v5_N": 11,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 1,
+      "t": 79,
+      "r_bits": 188,
+      "v5_N": 80,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 1,
+      "t": 80,
+      "r_bits": 191,
+      "v5_N": 81,
+      "v7_N": 2,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 2,
+      "t": 0,
+      "r_bits": 8,
+      "v5_N": 1,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 2,
+      "t": 1,
+      "r_bits": 10,
+      "v5_N": 2,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 2,
+      "t": 2,
+      "r_bits": 12,
+      "v5_N": 3,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 2,
+      "t": 10,
+      "r_bits": 31,
+      "v5_N": 11,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 2,
+      "t": 79,
+      "r_bits": 191,
+      "v5_N": 80,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 2,
+      "t": 80,
+      "r_bits": 193,
+      "v5_N": 81,
+      "v7_N": 3,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 3,
+      "t": 0,
+      "r_bits": 11,
+      "v5_N": 1,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 3,
+      "t": 1,
+      "r_bits": 13,
+      "v5_N": 2,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 3,
+      "t": 2,
+      "r_bits": 15,
+      "v5_N": 3,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 3,
+      "t": 10,
+      "r_bits": 34,
+      "v5_N": 11,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 3,
+      "t": 79,
+      "r_bits": 194,
+      "v5_N": 80,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 3,
+      "t": 80,
+      "r_bits": 196,
+      "v5_N": 81,
+      "v7_N": 4,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 4,
+      "t": 0,
+      "r_bits": 13,
+      "v5_N": 1,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 4,
+      "t": 1,
+      "r_bits": 16,
+      "v5_N": 2,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 4,
+      "t": 2,
+      "r_bits": 18,
+      "v5_N": 3,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 4,
+      "t": 10,
+      "r_bits": 37,
+      "v5_N": 11,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 4,
+      "t": 79,
+      "r_bits": 197,
+      "v5_N": 80,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 4,
+      "t": 80,
+      "r_bits": 199,
+      "v5_N": 81,
+      "v7_N": 5,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 5,
+      "t": 0,
+      "r_bits": 16,
+      "v5_N": 1,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 5,
+      "t": 1,
+      "r_bits": 18,
+      "v5_N": 2,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 5,
+      "t": 2,
+      "r_bits": 21,
+      "v5_N": 3,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 5,
+      "t": 10,
+      "r_bits": 39,
+      "v5_N": 11,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 5,
+      "t": 79,
+      "r_bits": 200,
+      "v5_N": 80,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 5,
+      "t": 80,
+      "r_bits": 202,
+      "v5_N": 81,
+      "v7_N": 6,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 6,
+      "t": 0,
+      "r_bits": 19,
+      "v5_N": 1,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 6,
+      "t": 1,
+      "r_bits": 21,
+      "v5_N": 2,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 6,
+      "t": 2,
+      "r_bits": 24,
+      "v5_N": 3,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 6,
+      "t": 10,
+      "r_bits": 42,
+      "v5_N": 11,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 6,
+      "t": 79,
+      "r_bits": 202,
+      "v5_N": 80,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 6,
+      "t": 80,
+      "r_bits": 205,
+      "v5_N": 81,
+      "v7_N": 7,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 7,
+      "t": 0,
+      "r_bits": 22,
+      "v5_N": 1,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 7,
+      "t": 1,
+      "r_bits": 24,
+      "v5_N": 2,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 7,
+      "t": 2,
+      "r_bits": 26,
+      "v5_N": 3,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 7,
+      "t": 10,
+      "r_bits": 45,
+      "v5_N": 11,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 7,
+      "t": 79,
+      "r_bits": 205,
+      "v5_N": 80,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 7,
+      "t": 80,
+      "r_bits": 207,
+      "v5_N": 81,
+      "v7_N": 8,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 8,
+      "t": 0,
+      "r_bits": 25,
+      "v5_N": 1,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 8,
+      "t": 1,
+      "r_bits": 27,
+      "v5_N": 2,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 8,
+      "t": 2,
+      "r_bits": 29,
+      "v5_N": 3,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 8,
+      "t": 10,
+      "r_bits": 48,
+      "v5_N": 11,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 8,
+      "t": 79,
+      "r_bits": 208,
+      "v5_N": 80,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 8,
+      "t": 80,
+      "r_bits": 210,
+      "v5_N": 81,
+      "v7_N": 9,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 9,
+      "t": 0,
+      "r_bits": 27,
+      "v5_N": 1,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 9,
+      "t": 1,
+      "r_bits": 30,
+      "v5_N": 2,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 9,
+      "t": 2,
+      "r_bits": 32,
+      "v5_N": 3,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 9,
+      "t": 10,
+      "r_bits": 51,
+      "v5_N": 11,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 9,
+      "t": 79,
+      "r_bits": 211,
+      "v5_N": 80,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 9,
+      "t": 80,
+      "r_bits": 213,
+      "v5_N": 81,
+      "v7_N": 10,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 10,
+      "t": 0,
+      "r_bits": 30,
+      "v5_N": 1,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 10,
+      "t": 1,
+      "r_bits": 32,
+      "v5_N": 2,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 10,
+      "t": 2,
+      "r_bits": 35,
+      "v5_N": 3,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 10,
+      "t": 10,
+      "r_bits": 53,
+      "v5_N": 11,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 10,
+      "t": 79,
+      "r_bits": 214,
+      "v5_N": 80,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 10,
+      "t": 80,
+      "r_bits": 216,
+      "v5_N": 81,
+      "v7_N": 11,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 11,
+      "t": 0,
+      "r_bits": 33,
+      "v5_N": 1,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 11,
+      "t": 1,
+      "r_bits": 35,
+      "v5_N": 2,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 11,
+      "t": 2,
+      "r_bits": 38,
+      "v5_N": 3,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 11,
+      "t": 10,
+      "r_bits": 56,
+      "v5_N": 11,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 11,
+      "t": 79,
+      "r_bits": 216,
+      "v5_N": 80,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 11,
+      "t": 80,
+      "r_bits": 219,
+      "v5_N": 81,
+      "v7_N": 12,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 12,
+      "t": 0,
+      "r_bits": 36,
+      "v5_N": 1,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 79
+    },
+    {
+      "s": 12,
+      "t": 1,
+      "r_bits": 38,
+      "v5_N": 2,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 78
+    },
+    {
+      "s": 12,
+      "t": 2,
+      "r_bits": 40,
+      "v5_N": 3,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 77
+    },
+    {
+      "s": 12,
+      "t": 10,
+      "r_bits": 59,
+      "v5_N": 11,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 69
+    },
+    {
+      "s": 12,
+      "t": 79,
+      "r_bits": 219,
+      "v5_N": 80,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    },
+    {
+      "s": 12,
+      "t": 80,
+      "r_bits": 222,
+      "v5_N": 81,
+      "v7_N": 13,
+      "tauN_denominator_2_exponent": 80,
+      "tauN_denominator_5_exponent": 0
+    }
+  ],
+  "r_squared_Fourier_constant": "9/4",
+  "seven_primary_means": [
+    {
+      "a": 2,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "21/8"
+    },
+    {
+      "a": 3,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    },
+    {
+      "a": 4,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    },
+    {
+      "a": 5,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    },
+    {
+      "a": 6,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    },
+    {
+      "a": 7,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    },
+    {
+      "a": 8,
+      "grid_average_r_squared": "9/4",
+      "primitive_average_r_squared": "9/4"
+    }
+  ],
+  "block_commutator_identity_both_sides": "800"
+}

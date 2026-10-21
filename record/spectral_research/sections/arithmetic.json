@@ -1,0 +1,1871 @@
+{
+  "topic": "arithmetic",
+  "units": [
+    {
+      "original_path": "research_round13_2026_10_21/counterexample/r13_audit_full_sector_removal.md",
+      "target": "record/spectral_research/sources/research_round13_2026_10_21/counterexample/r13_audit_full_sector_removal.md",
+      "source_sha256": "00d11197cc07012920d6bee18ae0cb1a7db2c1c49b1937bc44af6245d7e560cc",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact protected-sector removal"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Normalized claim and verdict"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "2. Raw dependencies read and checked"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "heading": "3. Exact sector and amplitude obligations: passed"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "4. Contour and uniform trace-norm obligations: passed"
+        },
+        {
+          "line": 164,
+          "level": 3,
+          "heading": "Independent check of the reference Gaussian norms"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "5. All times and the absolutely convergent difference series: passed"
+        },
+        {
+          "line": 259,
+          "level": 2,
+          "heading": "6. Corrections and boundary of the verdict"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_sector_continuous_symbol_stability.md",
+      "target": "mathematics/spectral_research/proofs/research_round9_2026_10_21/r9_sector_continuous_symbol_stability.md",
+      "source_sha256": "0145256f03ad92f70a5852ecb11280dc3b1bccfa54b74af8b70e459b2e6577df",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Continuous-symbol microscopic stability by analytic diagonal approximation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Result and exact scope"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "heading": "1. Exact quantization and the inputs actually needed"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "2. A fixed-symbol norm estimate with an elementary proof"
+        },
+        {
+          "line": 118,
+          "level": 3,
+          "heading": "Lemma 2.1"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "3. The diagonal construction"
+        },
+        {
+          "line": 241,
+          "level": 3,
+          "heading": "Incorporating arbitrary additional fixed-stage requirements"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "heading": "4. Uniform QE for the varying continuous-symbol approximation"
+        },
+        {
+          "line": 344,
+          "level": 2,
+          "heading": "5. Eigenangle motion, including crossings"
+        },
+        {
+          "line": 391,
+          "level": 2,
+          "heading": "6. Transfer of weak local laws and all factorial moments"
+        },
+        {
+          "line": 506,
+          "level": 2,
+          "heading": "7. A canonical continuous-symbol endpoint and an actual norm error"
+        },
+        {
+          "line": 647,
+          "level": 2,
+          "heading": "8. What this does and does not remove in the scalar-cocycle route"
+        },
+        {
+          "line": 726,
+          "level": 2,
+          "heading": "9. Provenance and avoided duplicates"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_sector_analytic_normalization_independent_audit.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_sector_analytic_normalization_independent_audit.md",
+      "source_sha256": "0fc9a15bcccab691e2912e64c4d018aba8c822494d00ad848d468fbb5933cd51",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the actual analytic scalar normalization"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Artifact, accepted claims, and scope"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "heading": "1. Proof inputs actually inspected"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. Direct check of the weighted shift and exact kernel"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "3. The derivative issue and why the flattened-word proof resolves it"
+        },
+        {
+          "line": 180,
+          "level": 2,
+          "heading": "4. Deck covariance and the exact sector/Abel transplant"
+        },
+        {
+          "line": 256,
+          "level": 2,
+          "heading": "5. Scalar response and the uniform diagonal threshold"
+        },
+        {
+          "line": 316,
+          "level": 2,
+          "heading": "6. What the audit does not certify"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "7. Exact input hashes"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_sector_deleted_clock_independent_audit.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_sector_deleted_clock_independent_audit.md",
+      "source_sha256": "26d8fb35fcb86d0a6fe3cc2c0e3be7a7b5a518e22bb669994954ef26779c6cfe",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the deleted-clock determinant obstruction"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Audited artifact and outcome"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "Load-bearing checks"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "Consequence and limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_sector_main_report_audit.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_sector_main_report_audit.md",
+      "source_sha256": "7d639afbc75b949b391c0df46fe570f966e134b25f337d49871ae8882bf5d613",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent scope and quantifier audit of the Round 9 main report"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Reviewed draft"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "Verdict on the mathematical scope"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "Precision edits requested before freezing the report"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "Current deleted-clock version: exact provenance reconciliation"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "Final reviewed version: PASS"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_sector_route_ledger.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_sector_route_ledger.md",
+      "source_sha256": "ad07baa0fae652ea65f15e41dc931840a7d6046ebf30abac9a62d819e80b41e2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 9 sector/coherence route: completed work and exact remaining gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Starting point and unchanged target"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "1. Previously completed routes were identified before reuse"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "2. Actual new construction in this branch"
+        },
+        {
+          "line": 106,
+          "level": 2,
+          "heading": "3. Joint advance with the root analytic branch"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "4. Precise restrictions on what may be inferred"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "5. Artifacts produced by this branch"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "6. Additional actual input hashes"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/root_original_gap2_combined.md",
+      "target": "mathematics/spectral_research/proofs/research_round6_2026_10_21/root_original_gap2_combined.md",
+      "source_sha256": "f764a95fddaccebfe5a84c231279e0c6036b9495cea9c0d752aa7e6fe1cf9ed2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A complete unequal-occupation class with a linear number of substitutions"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Exact class"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "2. The estimate"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "3. Proof with disjoint subtraction"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "4. Relation to the first open pair test"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "5. Complete proof sources"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_original_fixed_powers_49.md",
+      "target": "mathematics/spectral_research/proofs/research_round6_2026_10_21/r6_original_fixed_powers_49.md",
+      "source_sha256": "3f51c6d7de5b559c28271c72ae62c2f2d331f9c606b24a84cdab80751339d019",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact sheet characters and physical mixing of the first 49 powers"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Statement and explicit constants"
+        },
+        {
+          "line": 90,
+          "level": 2,
+          "heading": "2. The sharper Fourier majorant"
+        },
+        {
+          "line": 160,
+          "level": 2,
+          "heading": "3. Exact images of \\(M_N^R\\) and the evolution order"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "4. Quantitative characteristic construction under (1.6)"
+        },
+        {
+          "line": 279,
+          "level": 2,
+          "heading": "5. Exact nonlinear sheet characters"
+        },
+        {
+          "line": 347,
+          "level": 2,
+          "heading": "6. Kernel error and the physical operator limit"
+        },
+        {
+          "line": 392,
+          "level": 2,
+          "heading": "7. Exact certification of the range through 49"
+        },
+        {
+          "line": 428,
+          "level": 2,
+          "heading": "8. Scope for long trajectory sums"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_original_audit_combined_gap2.md",
+      "target": "record/spectral_research/sources/research_round6_2026_10_21/r6_original_audit_combined_gap2.md",
+      "source_sha256": "619b5ccb97f5d713eafb123555df9d4f768e391a78ac6c0946eaa6d0ab53cacd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the complete isolated unequal-occupation sector"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "1. The two subtractions refer to the same rooted class"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Direct reconstruction of the raw-class bound"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Published concentration input and its hypotheses"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "4. Reconstruction of the equal-occupation estimate"
+        },
+        {
+          "line": 252,
+          "level": 2,
+          "heading": "5. Constants, uniformity, and precise scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/arithmetic_cubic_character_pq_obstruction.md",
+      "target": "mathematics/spectral_research/proofs/research_round5_2026_10_21/arithmetic_cubic_character_pq_obstruction.md",
+      "source_sha256": "0b67c9c8d2f698046af49d0527eaf81169cd76d84112ffeebd6bfdeb79ac1625",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Cubic-character circulants: strong P and Q estimates coexist with microscopic spectral clusters"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Main statement"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "2. Exact construction and infinitude of the dimensions"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Published character-sum input and checked specializations"
+        },
+        {
+          "line": 123,
+          "level": 3,
+          "heading": "Root-set check"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "heading": "4. Entries and the exact P/Q Fourier diagonalizations"
+        },
+        {
+          "line": 198,
+          "level": 2,
+          "heading": "5. Local weak limit and failure of the second factorial moment"
+        },
+        {
+          "line": 240,
+          "level": 2,
+          "heading": "6. Removing every exact return and every spectral multiplicity"
+        },
+        {
+          "line": 330,
+          "level": 2,
+          "heading": "7. What this obstruction establishes at Heisenberg times"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/root_audit_cubic_character_pq_obstruction.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/root_audit_cubic_character_pq_obstruction.md",
+      "source_sha256": "9cd22e7f5895b7ac705e396e2c193c9d733f27c7f897329584dbc293ec38087e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: cubic-character auxiliary obstruction"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. External theorem checked directly"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "2. Construction and Fourier calculations reconstructed"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "3. Probability and moment conclusions reconstructed"
+        },
+        {
+          "line": 90,
+          "level": 2,
+          "heading": "4. Simple-spectrum variant reconstructed"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "heading": "5. Logical consequence and its limit"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_comb_rescaled_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_comb_rescaled_gap.md",
+      "source_sha256": "898528107bfc2691c0f17fe6d8a096592c46de537b045c6bbc41949d0f3bfd2f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A dimension-uniform numerical escape gap by rescaling the auxiliary word"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Precise theorem"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "1. Frozen exact-operator input and its hypotheses"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "heading": "2. Two explicit bounds for the fourth derivative"
+        },
+        {
+          "line": 211,
+          "level": 2,
+          "heading": "3. Choice of the permitted auxiliary step and proof of the gap"
+        },
+        {
+          "line": 300,
+          "level": 3,
+          "heading": "3.1 Every input and output character pair"
+        },
+        {
+          "line": 328,
+          "level": 2,
+          "heading": "4. Full character itinerary and the complete signed pair error"
+        },
+        {
+          "line": 394,
+          "level": 2,
+          "heading": "5. Status and boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_comb_fourth_difference_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_comb_fourth_difference_gap.md",
+      "source_sha256": "0b7bd5a0c21b79f1dd45d6b6377e58cd9f9afcdb8ed017199c874ace8e2fcc66",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A fourth quantum difference gives uniform escape from square-root comb spaces"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Claim and scope"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "1. Quantization and the exact low-frequency symbol"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "2. Exact compression of a finite Fourier polynomial"
+        },
+        {
+          "line": 133,
+          "level": 2,
+          "heading": "3. A smooth quantum generator with uniform bounds"
+        },
+        {
+          "line": 265,
+          "level": 2,
+          "heading": "4. Exact finite-word norm estimate at `N delta^4=1`"
+        },
+        {
+          "line": 286,
+          "level": 3,
+          "heading": "4.1 Logarithmic-generator proof"
+        },
+        {
+          "line": 362,
+          "level": 3,
+          "heading": "4.2 Descent to the exact odd torus fiber"
+        },
+        {
+          "line": 435,
+          "level": 3,
+          "heading": "4.3 The uniform first-order term in the fixed kick"
+        },
+        {
+          "line": 468,
+          "level": 2,
+          "heading": "5. A norm gap from the exact finite Fourier identity"
+        },
+        {
+          "line": 522,
+          "level": 2,
+          "heading": "6. Extension to every canonical oldspace of rank at most `sqrt(N)`"
+        },
+        {
+          "line": 563,
+          "level": 3,
+          "heading": "6.1 All character combs and the complete arithmetic itinerary"
+        },
+        {
+          "line": 666,
+          "level": 3,
+          "heading": "6.2 Its contribution to the full pair sum tends to zero"
+        },
+        {
+          "line": 751,
+          "level": 2,
+          "heading": "7. Boundary of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_comb_fixed_order_gap.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_comb_fixed_order_gap.md",
+      "source_sha256": "e43296774f12851d7150e0d501afd1de76fd4feb11161e9f30692f1866cd1bf8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Fixed-order quantum differences exclude all polynomially growing character combs"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Theorem and quantifiers"
+        },
+        {
+          "line": 52,
+          "level": 2,
+          "heading": "1. Exact symbol and convergent quantum and classical series"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "2. The general finite-word remainder"
+        },
+        {
+          "line": 256,
+          "level": 2,
+          "heading": "3. Exact torus descent and the fixed smooth limiting phase"
+        },
+        {
+          "line": 344,
+          "level": 2,
+          "heading": "4. Positivity of the phase defect and its exact character compression"
+        },
+        {
+          "line": 411,
+          "level": 2,
+          "heading": "5. All input and output characters"
+        },
+        {
+          "line": 455,
+          "level": 2,
+          "heading": "6. Consequence for the all-time pair functional and boundary"
+        },
+        {
+          "line": 510,
+          "level": 2,
+          "heading": "7. Provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_sparse_character_histories.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/phase_sparse_character_histories.md",
+      "source_sha256": "8bc8ecddf8b5b684eeff3b31ab9e8f99a864a50413bcbe8b3edd1791f04200bd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A signed estimate for histories with a small positive density of arithmetic character changes"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Verified inputs and their status"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "heading": "2. Allowed and forbidden character transitions"
+        },
+        {
+          "line": 122,
+          "level": 2,
+          "heading": "3. The exact group average is only an identity inside the proof"
+        },
+        {
+          "line": 165,
+          "level": 2,
+          "heading": "4. Uniform dispersion for the translated products"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "5. Complete signed summation, with no cutoff"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "heading": "6. Application and exact boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_all_character_signed_trace_removal.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/phase_all_character_signed_trace_removal.md",
+      "source_sha256": "4ed112e52f896bc88e5950710cc038f9e1f3c26afe7dbbdb41e324bd74011564",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Signed removal of all histories following the arithmetic character permutation"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. The complete orthogonal character decomposition"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "2. The escape estimate is uniform in the character"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "3. The metaplectic factor permutes those spaces exactly"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "4. The finite trace-word partition identifies the entire removed sector"
+        },
+        {
+          "line": 209,
+          "level": 2,
+          "heading": "5. Counting the closed character histories"
+        },
+        {
+          "line": 267,
+          "level": 2,
+          "heading": "6. The full signed pair correction and an explicit rate"
+        },
+        {
+          "line": 349,
+          "level": 2,
+          "heading": "7. Meaning for the original pair functional"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/arithmetic_flat_packet_obstruction_test.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/arithmetic_flat_packet_obstruction_test.md",
+      "source_sha256": "58bcfa0d7db85583d23f16c8ab1e5327926e11221b102cb7c6d0128037abb1cc",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Growing flat packets: an executed obstruction test"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Candidate and outcome"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "2. All eight quadratic zeros and the packets"
+        },
+        {
+          "line": 83,
+          "level": 2,
+          "heading": "3. One-step survival and the quasimode lower bound"
+        },
+        {
+          "line": 133,
+          "level": 2,
+          "heading": "4. A growing cutting window with the same local law"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "heading": "5. Remaining arithmetic comb candidate and its exact unproved step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/audit_final_monomial_interpolation_summary.md",
+      "target": "record/spectral_research/sources/research_round3_2026_10_21/audit_final_monomial_interpolation_summary.md",
+      "source_sha256": "6eba5f5c9899f0a5519a99816e0c83c70871caf549e0de07af6b571668ba9879",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Final independent audit: arbitrary-phase monomial symmetries, interpolation, and Russian synthesis"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and exact scope"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "heading": "1. Exact family and threshold"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "2. Rank rigidity with arbitrary unknown phases"
+        },
+        {
+          "line": 83,
+          "level": 3,
+          "heading": "2.1 Projective factor"
+        },
+        {
+          "line": 101,
+          "level": 3,
+          "heading": "2.2 Homogeneous system"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "3. Complete classification at zero and the analytic lift"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "heading": "4. Independent differentiation and Fourier-support contradiction"
+        },
+        {
+          "line": 221,
+          "level": 2,
+          "heading": "5. Independent check of the unitary commutant corollary"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "6. Independent interpolation audit"
+        },
+        {
+          "line": 259,
+          "level": 3,
+          "heading": "6.1 Norm domain and exact sharpness"
+        },
+        {
+          "line": 294,
+          "level": 3,
+          "heading": "6.2 Hilbert-Schmidt and differentiated identities"
+        },
+        {
+          "line": 331,
+          "level": 3,
+          "heading": "6.3 Exact signed pair test"
+        },
+        {
+          "line": 366,
+          "level": 2,
+          "heading": "7. Exact verification of the Russian synthesis update"
+        },
+        {
+          "line": 393,
+          "level": 2,
+          "heading": "8. Final outcome"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_comb_signed_trace_removal.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/phase_comb_signed_trace_removal.md",
+      "source_sha256": "f0d3318d9dd84035078acd143e8fbde5d943329ff27d7610a3601c967ffd4c03",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A signed pair-trace contribution eliminated by uniform arithmetic-comb escape"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. The original-family compression and its exact word contribution"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "heading": "2. The entire pure-comb class and its cross-term are negligible"
+        },
+        {
+          "line": 141,
+          "level": 2,
+          "heading": "3. Direct application to the pair factorial functional"
+        },
+        {
+          "line": 182,
+          "level": 2,
+          "heading": "4. Combining the compression gap with logarithmic-time dispersion"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "5. What remains and why this does not establish universality"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_oldspace_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_oldspace_audit.md",
+      "source_sha256": "c130a9bc6221b8bca2f2103e14c519f5cda2b540d9b204c51621176b19df1e0e",
+      "sections": [
+        {
+          "line": 2,
+          "level": 1,
+          "heading": "Independent audit of canonical-old-space escape"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "Frozen input and verdict"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. Exact finite identities and the fixed-parameter minor"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "2. The uniform generator estimate includes the exceptional divisor 7"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "heading": "3. The Egorov convention and its error are correct"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "heading": "4. The normalized trace lemma needs only fixed-time Egorov"
+        },
+        {
+          "line": 138,
+          "level": 2,
+          "heading": "5. Exclusion of a translation relation at the exact small time"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "6. Group average, normalization, and almost-old eigenvectors"
+        },
+        {
+          "line": 185,
+          "level": 2,
+          "heading": "Scope retained"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_pair_sector_windows.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/adversarial_pair_sector_windows.md",
+      "source_sha256": "9c399a682a20067cc502c58893f61b13145d3b3e8782be0da5ab71dd0aca569f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Moving spectral windows: what actual sector covariance proves, and the remaining pair estimate"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. The next target, stated before the reductions"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Frozen input and its independent check"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "3. A joint weighted spectral measure"
+        },
+        {
+          "line": 185,
+          "level": 2,
+          "heading": "4. A finite Fejer inequality proves moving-window suppression"
+        },
+        {
+          "line": 256,
+          "level": 2,
+          "heading": "5. Basis-independent form, including moving centers"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "heading": "6. The exact rank bound supplied by the full character family"
+        },
+        {
+          "line": 335,
+          "level": 3,
+          "heading": "6.1 Why no entrywise lower bound follows from the projector algebra"
+        },
+        {
+          "line": 370,
+          "level": 2,
+          "heading": "7. An exact complete-frame identity locates the missing information"
+        },
+        {
+          "line": 429,
+          "level": 2,
+          "heading": "8. The close-pair scale really implies the weak power-trace target"
+        },
+        {
+          "line": 496,
+          "level": 2,
+          "heading": "9. Attempts to remove the actual-family gap"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_uniform_oldspace_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_uniform_oldspace_audit.md",
+      "source_sha256": "5c3beafa999499f7dbcfacd39b6ab13b5a4a82fc6a8da6441d32277c921f8d28",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: a logarithmic bound for all canonical oldspaces"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. Uniform geometry and the re-centering check"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "2. Quantum exponents with a growing divisor"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "3. Exact oldspace arithmetic"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "4. Collective projection and the tail"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "5. Eigenbases, individual oldspaces, and moving windows"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "6. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_exact_sector_three_cell_bridge_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/arithmetic_exact_sector_three_cell_bridge_audit.md",
+      "source_sha256": "b7cf3ce194cffd8dac98ac85af5b9dcf9dbfbf8aaadd4d2089b8876088b539a7",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact sectors and the three-cell contribution to the original double trace sum"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Scope and immutable inputs"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "1. The actual one-step operator and the analytic issue"
+        },
+        {
+          "line": 142,
+          "level": 2,
+          "heading": "2. Exact sector decomposition and the number of sectors"
+        },
+        {
+          "line": 238,
+          "level": 2,
+          "heading": "3. Uniform one-edge Gaussian reduction"
+        },
+        {
+          "line": 383,
+          "level": 2,
+          "heading": "4. The full primitive-sector weight and its relative error"
+        },
+        {
+          "line": 428,
+          "level": 2,
+          "heading": "5. Odd deck signs, cyclic points, and the factor `2m^2`"
+        },
+        {
+          "line": 492,
+          "level": 2,
+          "heading": "6. The selected family is a genuine, nonduplicated set of pairs"
+        },
+        {
+          "line": 574,
+          "level": 2,
+          "heading": "7. Independent bound for the selected absolute mass"
+        },
+        {
+          "line": 681,
+          "level": 2,
+          "heading": "8. The bridge to the original double sum"
+        },
+        {
+          "line": 746,
+          "level": 2,
+          "heading": "9. What this audit establishes, and the remaining limit"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_iterated_all_oldspaces.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_iterated_all_oldspaces.md",
+      "source_sha256": "853aeae71f699d0af37aa071202112603eb518a0e8614a65ca1f91246d2bd5b8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Collective arithmetic oldspaces along every odd dimension"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Scope and inputs"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "1. The exact lattice of oldspaces"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "2. Uniform validity for the divisors used below"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "3. Quantum ergodicity of the entire old projection"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "heading": "4. A sharper threshold for concentration in any individual oldspace"
+        },
+        {
+          "line": 265,
+          "level": 2,
+          "heading": "5. Limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_iterated_effective_horizon.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_iterated_effective_horizon.md",
+      "source_sha256": "9739e62cc9a4282d39b379c50835f05fd3d46d664663cf6032b3337857751768",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An explicit growing horizon for arithmetic-sector traces"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status and frozen inputs"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "1. The quantitative assertion"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "2. A uniform lower bound for a torus defect"
+        },
+        {
+          "line": 205,
+          "level": 2,
+          "heading": "3. A complex strip and an Egorov bound uniform in the iterate"
+        },
+        {
+          "line": 307,
+          "level": 2,
+          "heading": "4. An explicit sublevel estimate"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "5. Quantitative trace cutoff, with all iterate dependence exposed"
+        },
+        {
+          "line": 499,
+          "level": 2,
+          "heading": "6. Choosing a genuinely growing horizon"
+        },
+        {
+          "line": 542,
+          "level": 2,
+          "heading": "7. Effective commutant variance and moving spectral windows"
+        },
+        {
+          "line": 598,
+          "level": 2,
+          "heading": "8. The exact remaining obstruction"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_iterated_logarithmic_horizon.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_iterated_logarithmic_horizon.md",
+      "source_sha256": "37cae903cc22d77e04ba9848f00fdfd4f19920e9c3a22381de92e965588ce8c6",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A logarithmic sector horizon from finite contact of exact stable curves"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Scope and immutable inputs"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "1. Assertion and conventions"
+        },
+        {
+          "line": 103,
+          "level": 2,
+          "heading": "2. Uniform analytic stable curves and justified area charts"
+        },
+        {
+          "line": 105,
+          "level": 3,
+          "heading": "2.1 A fixed complex tube"
+        },
+        {
+          "line": 144,
+          "level": 3,
+          "heading": "2.2 Holomorphic local graphs"
+        },
+        {
+          "line": 190,
+          "level": 3,
+          "heading": "2.3 A C1 stable direction and transverse Jacobians"
+        },
+        {
+          "line": 253,
+          "level": 2,
+          "heading": "3. Topological conjugacy and density of complete stable curves"
+        },
+        {
+          "line": 303,
+          "level": 2,
+          "heading": "4. No translated stable-leaf germ can coincide"
+        },
+        {
+          "line": 357,
+          "level": 2,
+          "heading": "5. Uniform finite contact with every nearby target leaf"
+        },
+        {
+          "line": 416,
+          "level": 2,
+          "heading": "6. Exact inverse curves converge in one fixed analytic disk"
+        },
+        {
+          "line": 498,
+          "level": 2,
+          "heading": "7. From finite curves to a torus fixed-set neighborhood"
+        },
+        {
+          "line": 580,
+          "level": 2,
+          "heading": "8. One sublevel exponent for every iterate"
+        },
+        {
+          "line": 623,
+          "level": 2,
+          "heading": "9. Quantum trace decay throughout a logarithmic horizon"
+        },
+        {
+          "line": 688,
+          "level": 2,
+          "heading": "10. Full-commutant variance and moving spectral windows"
+        },
+        {
+          "line": 730,
+          "level": 2,
+          "heading": "11. Effectiveness and the remaining boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_iterated_sector_covariance.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_iterated_sector_covariance.md",
+      "source_sha256": "c8e02b81819350ab52e7bc3dd791ffbeb1ae1a2192a9a99f1168c4c56d7123e2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Every fixed iterate: arithmetic sector covariance and basis-independent quantum variance"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Results"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "2. Exact classical symbol and conventions"
+        },
+        {
+          "line": 182,
+          "level": 2,
+          "heading": "3. The discounted unstable-coordinate identity"
+        },
+        {
+          "line": 226,
+          "level": 2,
+          "heading": "4. Proof of the uniform error estimate"
+        },
+        {
+          "line": 304,
+          "level": 2,
+          "heading": "5. Two Fourier coefficients survive every iterate"
+        },
+        {
+          "line": 362,
+          "level": 2,
+          "heading": "6. Excluding every literal translation intertwiner"
+        },
+        {
+          "line": 393,
+          "level": 2,
+          "heading": "7. Covariance of every pair of arithmetic sectors"
+        },
+        {
+          "line": 445,
+          "level": 2,
+          "heading": "8. Projection onto the full spectral commutant"
+        },
+        {
+          "line": 518,
+          "level": 2,
+          "heading": "9. What has and has not been resolved"
+        },
+        {
+          "line": 539,
+          "level": 2,
+          "heading": "10. Frozen input and audit trail"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_iterated_uniform_all_old_logarithmic.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_iterated_uniform_all_old_logarithmic.md",
+      "source_sha256": "690910507ef2849d81aeb59350d145c84997cd692cbca784711509d6274480fd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform logarithmic sector estimates and all canonical oldspaces"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status and immutable inputs"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "1. Constants and conclusions"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "heading": "2. A uniform relative sublevel estimate"
+        },
+        {
+          "line": 207,
+          "level": 2,
+          "heading": "3. Quantum trace errors for growing denominators"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "4. Early lags, full commutants, and spectral windows"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "heading": "5. Exact oldspace lattice and a prime-product bound"
+        },
+        {
+          "line": 332,
+          "level": 2,
+          "heading": "6. The sum of all oldspaces"
+        },
+        {
+          "line": 398,
+          "level": 2,
+          "heading": "7. Any individual oldspace and windows for the full sum"
+        },
+        {
+          "line": 435,
+          "level": 2,
+          "heading": "8. Exact limitations"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_oldspace_escape.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_oldspace_escape.md",
+      "source_sha256": "596d44605310cc898fa75e23df4aa811189a1764fed21ce8b9f5d07ae734813a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Canonical old subspaces: exact escape and an actual fixed-tau asymptotic"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Statements"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "2. Exact kernel and the off-diagonal coefficient"
+        },
+        {
+          "line": 130,
+          "level": 2,
+          "heading": "3. Exact escape by an explicit minor"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "4. A uniform quantitative bound for the generator"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "5. Ordinary Weyl operators and a self-contained Egorov estimate"
+        },
+        {
+          "line": 347,
+          "level": 2,
+          "heading": "6. The normalized trace lemma"
+        },
+        {
+          "line": 397,
+          "level": 2,
+          "heading": "7. No translation relation survives at the prescribed time"
+        },
+        {
+          "line": 491,
+          "level": 2,
+          "heading": "8. Completing the overlap asymptotic"
+        },
+        {
+          "line": 538,
+          "level": 2,
+          "heading": "9. Scope and dependencies"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_second_order_proof.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_second_order_proof.md",
+      "source_sha256": "7d6a0a28d67ab43efa4e444c26ccd25d9d981925c9af80604f3bf608e17c7770",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact second-order splitting at N=49 and N=147"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Result and provenance"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "2. Algebraic exponential-polynomial transfer"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. The second coefficient"
+        },
+        {
+          "line": 128,
+          "level": 2,
+          "heading": "4. Finite-jet lifting: the precise scope of a good reduction"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "5. Exact certificate values"
+        },
+        {
+          "line": 229,
+          "level": 2,
+          "heading": "6. Consequences and limits"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_seven_chain_mod5_obstruction.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_seven_chain_mod5_obstruction.md",
+      "source_sha256": "5e19c3d9569a98f8583b10f6b044b876d5009b47d41c57f61d4554bfd77e2acc",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A verified failure of first-confluent dominance in the actual N=49 family"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Precise conclusion"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "2. A structural congruence of the seven paths"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "heading": "3. Minimal exact finite calculation at N=49"
+        },
+        {
+          "line": 132,
+          "level": 2,
+          "heading": "4. Lifting the cancelling pairs to actual algebraic eigenvalues"
+        },
+        {
+          "line": 170,
+          "level": 2,
+          "heading": "5. Evaluation of the first-confluent coefficient"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "heading": "6. Exact boundary of the result"
+        },
+        {
+          "line": 234,
+          "level": 2,
+          "heading": "7. Files and reproducibility"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_quantitative_trace_and_sectors.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_quantitative_trace_and_sectors.md",
+      "source_sha256": "0a174f5de9d070c31311f4fdfd4ebc58b15df0b6bfd86baf5d6f169a99b2ef6a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Quantitative trace decay and mixing of all fixed arithmetic sectors"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Status and target"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "1. Elementary torus quantization estimates"
+        },
+        {
+          "line": 88,
+          "level": 2,
+          "heading": "2. An elementary analytic sublevel estimate"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "3. Quantitative trace lemma"
+        },
+        {
+          "line": 205,
+          "level": 2,
+          "heading": "4. Application to all arithmetic sectors"
+        },
+        {
+          "line": 288,
+          "level": 2,
+          "heading": "5. What (15) does and does not say"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_growing_order_comb_quantitative.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_growing_order_comb_quantitative.md",
+      "source_sha256": "30a2039b988d49f12960ffb1d27fc72dedc6eefcb38d005d75ebee06c5de17cb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: growing-order exclusion of character combs"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict, scope, and frozen input"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "1. Exact statement being audited"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "2. Exact Weyl convention and the analytic input"
+        },
+        {
+          "line": 161,
+          "level": 3,
+          "heading": "2.1. The `h^2` symbol error is uniform before choosing the order"
+        },
+        {
+          "line": 198,
+          "level": 2,
+          "heading": "3. New order-uniform commutator budget"
+        },
+        {
+          "line": 229,
+          "level": 2,
+          "heading": "4. Finite-word counting and its exact bounded remainder"
+        },
+        {
+          "line": 300,
+          "level": 2,
+          "heading": "5. A quantitative lower bound for every phase integral"
+        },
+        {
+          "line": 363,
+          "level": 2,
+          "heading": "6. The large real phase does not introduce a double exponential"
+        },
+        {
+          "line": 421,
+          "level": 2,
+          "heading": "7. Exact endpoint descent and character compression"
+        },
+        {
+          "line": 493,
+          "level": 2,
+          "heading": "8. A single threshold controls every order"
+        },
+        {
+          "line": 545,
+          "level": 2,
+          "heading": "9. Subpolynomial range and robust quasimodes"
+        },
+        {
+          "line": 585,
+          "level": 2,
+          "heading": "10. Limits of the audited conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_growing_routing_families.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_growing_routing_families.md",
+      "source_sha256": "e89394ca90e1089f9b6c090d24738fd4084307985a89606f8f55aac22b42a120",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: grouped routing families, Parseval, and closure"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "heading": "1. Selected transitions and individual sparse sums"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Grouping and the square correction"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Growth condition and application"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "heading": "4. Parseval identity and exact number of potentially closed routes"
+        },
+        {
+          "line": 153,
+          "level": 2,
+          "heading": "5. Both stated limitations are verified"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "6. First remaining step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_audit_character_collision.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/counter_audit_character_collision.md",
+      "source_sha256": "a7178db036314745a95efe79c0d48ba64a77b05ec41259a3d5b1d715141202f4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the relative-character collision identity"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_growing_routing_families.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/counter_growing_routing_families.md",
+      "source_sha256": "4a78ed247faa8791b34f85b0ee69a6696ac8f9578b7e6d836bf9965f11e30555",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Growing routing families and the remaining coherence obstruction"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "0. Inputs and notation"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "1. A route may be assigned to each group of starting characters"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "2. Square-root dependence on the number of groups"
+        },
+        {
+          "line": 197,
+          "level": 2,
+          "heading": "3. A growing family for the exact original matrices"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "4. Exact Parseval and closure: the remaining loss for arbitrary routes"
+        },
+        {
+          "line": 356,
+          "level": 2,
+          "heading": "5. The square-root loss in the grouped estimate is norm-sharp"
+        },
+        {
+          "line": 381,
+          "level": 2,
+          "heading": "6. Flat relative components do not preclude an exact trace revival"
+        },
+        {
+          "line": 435,
+          "level": 2,
+          "heading": "7. Scope of the advance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/counter_relative_character_routes.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/counter_relative_character_routes.md",
+      "source_sha256": "1b27d09f2dc4a8e8d87ccdf31c7b3c7230065e0c5ee35492c7149880a75ecae3",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Relative-character projections and arbitrary prescribed routing"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Every relative-character component has the same HS bound"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "2. Prescribed routes may vary at every time"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "3. Complete signed estimate and scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/root_character_collision_and_routing_audit.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/root_character_collision_and_routing_audit.md",
+      "source_sha256": "05bc62f64f2e7b51106c04f1f6b458dd77aa11bbff7c8fda8bb64fb868bc6bb4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Relative-character collision mass and audit of prescribed routing"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Frozen analytic inputs and their scope"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "2. An exact probability distribution and its squared discrepancy"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "3. Consequences and their precise meaning"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "4. Independent finite-dimensional audit of relative routing"
+        }
+      ]
+    }
+  ]
+}

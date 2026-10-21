@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20",
+  "inputs": [
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/verify_spectral_simplicity.py",
+      "sha256": "add99347a674298335226dccb58b87c35a7343a33c97053bd2310f69c07bd6cf"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/spectral_simplicity_certificates.json",
+      "sha256": "9b35dbce426538d275574c484be5519d14f69399dbad3c14eaaeb5e44390024b"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_continuation_2026_10_20/exact_spectral_simplicity.md",
+      "sha256": "4aef0bf28965da0c359c01dff6e3bd330dd0cafdeb79118a5e84bd359d1ac2eb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round2_2026_10_20/arithmetic_second_order.py",
+      "sha256": "6edf2858540c7ec0f107fd52384ab81057f3c7d5354c07a8ff4671ae614f2dd1"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round2_2026_10_20/arithmetic_second_order_results.json",
+      "sha256": "8529e4c261397142d31a4ebd52868794378aa2e62b7555be59726b74bbb4d97d"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round2_2026_10_20/arithmetic_second_order_proof.md",
+      "sha256": "7d6a0a28d67ab43efa4e444c26ccd25d9d981925c9af80604f3bf608e17c7770"
+    },
+    {
+      "path": "/workspace/scratch/e111873eea6c/research_round2_2026_10_20/arithmetic_oldspace_escape.md",
+      "sha256": "596d44605310cc898fa75e23df4aa811189a1764fed21ce8b9f5d07ae734813a"
+    }
+  ],
+  "scope": [
+    "Second-order finite-field certificates prove actual U49 and U147 simple at every nonzero algebraic parameter.",
+    "For every odd N=d^2m with d>=3, actual U(z) oldspace has zero intersection with oldspace for every nonzero algebraic z.",
+    "Uniform generator escape is at least sqrt(3)/200.",
+    "For every fixed odd d>=3, actual fixed-tau normalized oldspace overlap tends to d^(-4) through all odd m.",
+    "H_diag and Sine_2 remain unproved; no uniform-in-d rate or all-dimensions simplicity theorem is claimed."
+  ],
+  "verification": [
+    "Original source and initial-certificate SHA-256 guards.",
+    "Exact finite-field matrix products with explicit int64 overflow guard.",
+    "Primitive generator checked and all spectral projectors sum exactly to identity.",
+    "Schur complement sign and finite-jet lifting independently checked by parent.",
+    "Oldspace exact, generator, full fixed-tau asymptotic and Bessel consequence independently checked by all_time_adversarial agent."
+  ]
+}

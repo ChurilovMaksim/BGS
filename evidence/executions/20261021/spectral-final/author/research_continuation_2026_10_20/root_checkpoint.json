@@ -1,0 +1,277 @@
+{
+  "updated_utc": "2026-10-20 15:34 UTC",
+  "status": "H_diag and Sine_2 not proved or disproved",
+  "notes": "Recovered from conversation after scratch reset. Modulus regularity corrected: finite Taylor in s through degree3 with uniform O(s4), not inferred C_s4 from C_h2.",
+  "results": {
+    "root_no_exact_revivals_proof": "Theorem: for every odd N>=3, N!=7, every integer m>=1, and every nonzero real algebraic z, V_N(z)^m is nonscalar, where V_N(z)=exp(i z N A_N)M_N. In particular this holds at the exact original tau=10^-80.\nProof: A_N and M_N have algebraic entries. For A_N use e^(i alpha0)=(-3+4i)/5, rational trigonometric Fourier coefficients, and roots of unity. Write A_N=sum_lambda lambda P_lambda, where the distinct real eigenvalues lambda are algebraic and each P_lambda=prod_{mu!=lambda}(A_N-mu I)/(lambda-mu) is algebraic. Therefore each entry of V_N(z)^m and of G_m(z)=V_N(z)^m-Tr(V_N(z)^m)I/N is a finite exponential polynomial sum c_beta exp(beta z), c_beta,beta algebraic. Collect coincident beta. Lindemann-Weierstrass says any such nonzero exponential polynomial cannot vanish at nonzero algebraic z. Hence G_m(z0)=0 at such z0 would imply G_m identically0.\nThen M_N^m is scalar and the derivative at0 forces Q_m=sum_{j=0}^{m-1} M_N^j A_N M_N^-j to be scalar. Direct quadratic phase calculation gives M_N T_N(a,b)M_N^-1=T_N(3a+4b,2a+3b). Since T_N(a,b) form an orthogonal basis and M_N^m is scalar, S^m=I moduloN.\nWrite A_N=1/2[T_N(0,7)+T_N(0,-7)]+R_N. Before any aliasing the Fourier l1 norm of R is at most3/10+4/100+4/100=19/50. This follows r=1+cos2piq-cos14piq-(cos16piq+cos12piq)/2. Aliasing cannot increase l1. If N!=7 the orbit O of(0,7)modN underS is nonzero, with length d|m. The real part of the sum of A's coefficients overO is at least1/2-19/50=3/25. Thus every coefficient ofQ_m indexed byO has real part >=3m/(25d)>0. Q_m is nonscalar, contradiction.\nAtN7 every ordinary modular midpoint belongs to the 7-grid, where r=0 and cos14piq=1. Consequently A_7=9I/10 and exact returns of M7 survive as scalar returns. No uniform distance from scalar is claimed; for each fixedN arbitrarily close recurrences remain compatible.\nExternal theorem: S. A. Popescu, A Simple and Self-contained Proof for the Lindemann-Weierstrass Theorem, published Birkhäuser 2024 chapter DOI10.1007/978-3-031-51959-8_16; author preprint arXiv2306.14352v2 Theorem3.2 explicitly states distinct algebraic alpha imply exp(alpha) linearly independent over algebraicnumbers. Hypotheses here are checked above.",
+    "root_nonzero_all_traces_proof": "For every odd N>=3 and m>=1, p_m(tau)=Tr[(exp(i tau N A_N)M_N)^m] is nonzero. Proof: exact Egorov permutes the orthogonal Weyl basis by S. Therefore |Tr M_N^m|^2=Tr(Ad(M_N^m))=#{v in (Z/NZ)^2:S^m v=v}>=1. The entire function p_m(z) is a finite sum of exp(beta z) with algebraic beta and algebraic coefficients; its value at0 is nonzero, so it is not identically zero. Lindemann-Weierstrass implies p_m(z) is nonzero at every nonzero algebraic z. In particular at the exact rational tau. This also excludes any nontrivial rotational invariance of the eigenvalue multiset: such invariance by omega!=1 forces p_1=omega p_1=0. No quantitative lower bound is claimed.",
+    "root_simplified_modulus_proof": "Let s=sqrt(h). From exact centered kernels K_{-s}(x)=R K_s(x) R, Rf(y)=f(-y), and uniqueness of normalized dominated graph sections, gamma_{-s}(x)=gamma_s(x). Uniform C_s^4 trace-norm regularity gives log gamma_h=log gamma_0+h a_1(x)+O(h^2), uniformly x. Each fixed periodic orbit p of length m is repeated r times. At h=0 the full sector leading Gaussian amplitude is W_{rm}^{1/2}=Lambda_m^{-r/2}/(1-Lambda_m^{-r}); rank-one factor is lambda^{-rm/2} Gamma_{m,0}^r and relative transverse residual O(eta^{rm}), eta<.175. Taking r-th roots proves lambda^{-m/2}Gamma_{m,0}=Lambda_m^{-1/2}. Fixed-dimensional stationary phase for each fixed rm, exact real Weyl symbol and B_0=2sqrt(F_Qq) imply Re d_h log(full sector amplitude)|0=0. The residual trace is even in s; its h derivative at0 is half its second s derivative, bounded C(rm)^2 eta^{rm-2} relatively, because every differentiated factor is uniformly traceclass/bounded and undifferentiated residual factors have norm<.174. Dividing the logarithmic derivative by r and letting r->infinity proves Re sum_{p}a_1=0. Uniform O(h^2) perpoint now yields |log(lambda^{-m}|Gamma_{m,h}|^2 Lambda_m)|<=C m h^2 for ALL m. No uniform-in-m stationary phase theorem is needed.",
+    "explicit_plateau_lower_bound": {
+      "test": "phi(x)=exp(-1/(1-x^2)) for |x|<1, otherwise0; I=integral phi; b*=|F^-1 phi|^2/(2I^2).",
+      "bound": "For u in [5/4,3/2], restrict convolution to x in [u/2-1/8,u/2+1/8]. Both x,u-x in [1/2,7/8]. Thus phi*phi(u)>=exp(-128/15)/4. Since I<=2/e, b*hat(u)>=exp(-98/15)/32. Hence eta*=integral_1^2 (u-1)|b*hat(u)|^2 du >= exp(-196/15)/16384 >0."
+    },
+    "root_exact_corner_rational_certificate": {
+      "moments": [
+        {
+          "j": 0,
+          "real_numerator": "3600",
+          "imag_numerator": "0",
+          "denominator": "4000"
+        },
+        {
+          "j": 1,
+          "real_numerator": "313696",
+          "imag_numerator": "0",
+          "denominator": "4000"
+        },
+        {
+          "j": 2,
+          "real_numerator": "30290624",
+          "imag_numerator": "0",
+          "denominator": "4000"
+        },
+        {
+          "j": 3,
+          "real_numerator": "2901185824",
+          "imag_numerator": "0",
+          "denominator": "4000"
+        }
+      ],
+      "positive_lower_bound_integer_part": "40940746",
+      "assertions_passed": true
+    },
+    "root_exact_symbol_integer_coefficients": [
+      [
+        "7,0",
+        [
+          "1800",
+          "0"
+        ]
+      ],
+      [
+        "-7,0",
+        [
+          "1800",
+          "0"
+        ]
+      ],
+      [
+        "0,0",
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        "1,0",
+        [
+          "200",
+          "-20"
+        ]
+      ],
+      [
+        "-1,0",
+        [
+          "200",
+          "20"
+        ]
+      ],
+      [
+        "0,1",
+        [
+          "-12",
+          "-16"
+        ]
+      ],
+      [
+        "0,-1",
+        [
+          "-12",
+          "16"
+        ]
+      ],
+      [
+        "2,0",
+        [
+          "0",
+          "-10"
+        ]
+      ],
+      [
+        "1,1",
+        [
+          "6",
+          "8"
+        ]
+      ],
+      [
+        "1,-1",
+        [
+          "6",
+          "-8"
+        ]
+      ],
+      [
+        "-2,0",
+        [
+          "0",
+          "10"
+        ]
+      ],
+      [
+        "-1,1",
+        [
+          "6",
+          "8"
+        ]
+      ],
+      [
+        "-1,-1",
+        [
+          "6",
+          "-8"
+        ]
+      ],
+      [
+        "8,0",
+        [
+          "-100",
+          "10"
+        ]
+      ],
+      [
+        "6,0",
+        [
+          "-100",
+          "-10"
+        ]
+      ],
+      [
+        "7,1",
+        [
+          "-6",
+          "-8"
+        ]
+      ],
+      [
+        "7,-1",
+        [
+          "-6",
+          "8"
+        ]
+      ],
+      [
+        "-6,0",
+        [
+          "-100",
+          "10"
+        ]
+      ],
+      [
+        "-8,0",
+        [
+          "-100",
+          "-10"
+        ]
+      ],
+      [
+        "-7,1",
+        [
+          "-6",
+          "-8"
+        ]
+      ],
+      [
+        "-7,-1",
+        [
+          "-6",
+          "8"
+        ]
+      ],
+      [
+        "5,0",
+        [
+          "0",
+          "-5"
+        ]
+      ],
+      [
+        "6,1",
+        [
+          "3",
+          "4"
+        ]
+      ],
+      [
+        "6,-1",
+        [
+          "3",
+          "-4"
+        ]
+      ],
+      [
+        "-5,0",
+        [
+          "0",
+          "5"
+        ]
+      ],
+      [
+        "-6,1",
+        [
+          "3",
+          "4"
+        ]
+      ],
+      [
+        "-6,-1",
+        [
+          "3",
+          "-4"
+        ]
+      ],
+      [
+        "9,0",
+        [
+          "0",
+          "5"
+        ]
+      ],
+      [
+        "8,1",
+        [
+          "3",
+          "4"
+        ]
+      ],
+      [
+        "8,-1",
+        [
+          "3",
+          "-4"
+        ]
+      ],
+      [
+        "-9,0",
+        [
+          "0",
+          "-5"
+        ]
+      ],
+      [
+        "-8,1",
+        [
+          "3",
+          "4"
+        ]
+      ],
+      [
+        "-8,-1",
+        [
+          "3",
+          "-4"
+        ]
+      ]
+    ]
+  }
+}

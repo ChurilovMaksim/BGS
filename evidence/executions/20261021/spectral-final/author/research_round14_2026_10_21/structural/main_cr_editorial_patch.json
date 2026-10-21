@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-21",
+  "file": "research_round14_2026_10_21/structural/r14_original_coordinate_phase_bridge_test.md",
+  "change_type": "editorial only: one accidental carriage-return byte in a TeX rm command replaced by literal backslash-r",
+  "old_sha256": "7b6657c8e1ca2ee91391509c2c97b9054715681a0afa2cedff94f8dd4c4ecc3f",
+  "new_sha256": "4bc02ec2a3565f34c33a830db584cf761e62e5b69c23c7a727ab124046ca583a",
+  "old_bytes": 24172,
+  "new_bytes": 24173,
+  "patches": [
+    {
+      "offset_zero_based": 1290,
+      "line_one_based": 35,
+      "delete_hex": "0d",
+      "insert_hex": "5c72",
+      "old_context_hex": "5c746f5c696e6674792c5c204e5c207b0d6d206f64647d7d0a5c6c656674287c",
+      "new_context_hex": "5c746f5c696e6674792c5c204e5c207b5c726d206f64647d7d0a5c6c656674287c"
+    }
+  ],
+  "mathematical_changes": false,
+  "addendum_reference_update": {
+    "file": "research_round14_2026_10_21/structural/r14_quartic_return_addendum.md",
+    "old_sha256": "bc72ceeb8f97dec047a8aacf0631368e0188fe51a49863952d2a9ca5d89f7cd3",
+    "new_sha256": "4128be1d1670f64159f2b94d9303777408580c32d550f40c7862dd6d01be0ea1",
+    "editorial_only": true
+  }
+}

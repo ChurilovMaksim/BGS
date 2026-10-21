@@ -1,0 +1,2628 @@
+{
+  "topic": "dephasing",
+  "units": [
+    {
+      "original_path": "research_round11_2026_10_21/r11_resolvent_audit_arithmetic.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/r11_resolvent_audit_arithmetic.md",
+      "source_sha256": "4ebd0aa513796814f75dca8f279f03bb5719a003978c28ba9f39ad00fb74d40f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимая рецензия арифметического результата Round 11"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Вердикт, входы и область утверждения"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "2. Проверка исходных фаз и Fourier-данных"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "heading": "3. Pell-параметры и полная классификация двух мод"
+        },
+        {
+          "line": 184,
+          "level": 3,
+          "heading": "3.1. Целочисленные пересечения без редукции по модулю"
+        },
+        {
+          "line": 211,
+          "level": 3,
+          "heading": "3.2. Исключение всех остальных модульных пересечений"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "4. Главная проверка: уникальность суммы двух орбитальных мод"
+        },
+        {
+          "line": 322,
+          "level": 3,
+          "heading": "4.1. Одинаковые CRT-типы невозможны"
+        },
+        {
+          "line": 352,
+          "level": 3,
+          "heading": "4.2. Смешанные типы и точный смысл деления на два"
+        },
+        {
+          "line": 407,
+          "level": 3,
+          "heading": "4.3. Неизотропный случай \\(Q(L)\\ne0\\)"
+        },
+        {
+          "line": 435,
+          "level": 3,
+          "heading": "4.4. Изотропный случай \\(Q(L)=0,\\ L\\ne0\\)"
+        },
+        {
+          "line": 460,
+          "level": 3,
+          "heading": "4.5. Завершение единственности"
+        },
+        {
+          "line": 478,
+          "level": 2,
+          "heading": "5. Полная сумма \\(C_{2,r}\\): отсутствие скрытого сокращения"
+        },
+        {
+          "line": 541,
+          "level": 2,
+          "heading": "6. Остальные проверенные утверждения"
+        },
+        {
+          "line": 543,
+          "level": 3,
+          "heading": "6.1. Коммутатор через половину периода и четвёртый момент"
+        },
+        {
+          "line": 587,
+          "level": 3,
+          "heading": "6.2. Фиксированные слова и перефазирование"
+        },
+        {
+          "line": 620,
+          "level": 3,
+          "heading": "6.3. Производные, Дюамель и физическое значение параметра"
+        },
+        {
+          "line": 700,
+          "level": 2,
+          "heading": "7. Что именно проверено вычислением"
+        },
+        {
+          "line": 741,
+          "level": 2,
+          "heading": "8. Точный оставшийся пробел исходной задачи"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/r11_resolvent_ward_diagonal_route.md",
+      "target": "mathematics/spectral_research/proofs/research_round11_2026_10_21/r11_resolvent_ward_diagonal_route.md",
+      "source_sha256": "6868e41398755931045c322ccc18cd3400631d85596aadeaf1c743f34d4efb4f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 11: exact test of a physical-diagonal resolvent bootstrap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Status and the attempted implication"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "1. The mixed source reaches the original pair sum exactly"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "heading": "2. The exact unitary Ward identity and the missing factor"
+        },
+        {
+          "line": 174,
+          "level": 2,
+          "heading": "3. Exact Haar-basis feedback: a critical coefficient"
+        },
+        {
+          "line": 282,
+          "level": 2,
+          "heading": "4. First-return Schur functions retain an uncontrolled denominator"
+        },
+        {
+          "line": 438,
+          "level": 2,
+          "heading": "5. Published multi-resolvent input checked for applicability"
+        },
+        {
+          "line": 462,
+          "level": 2,
+          "heading": "6. Exact original gap retained"
+        },
+        {
+          "line": 510,
+          "level": 2,
+          "heading": "7. Read scope and hashes"
+        },
+        {
+          "line": 536,
+          "level": 2,
+          "heading": "8. Exact finite checks and their scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/r10_arithmetic_stationary_rational_test.md",
+      "target": "mathematics/spectral_research/proofs/research_round10_2026_10_21/r10_arithmetic_stationary_rational_test.md",
+      "source_sha256": "7dc028a0d85f388c1b68873ffc6cfc7c7b6e5f0435399ae039ad565e4e86f4f0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 10: the arithmetic countersequence attempt and its surviving gap"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. An explicit remaining arithmetic test"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "2. Rational fixed points of the kick"
+        },
+        {
+          "line": 52,
+          "level": 3,
+          "heading": "2.1. At this time a fixed point of the flow is stationary"
+        },
+        {
+          "line": 89,
+          "level": 3,
+          "heading": "2.2. Rational stationary points"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "3. Maximal completely untouched rational cat set"
+        },
+        {
+          "line": 184,
+          "level": 2,
+          "heading": "4. Why this test has not produced the required countersequence"
+        },
+        {
+          "line": 199,
+          "level": 2,
+          "heading": "5. Previously resolved arithmetic routes checked before this attempt"
+        },
+        {
+          "line": 218,
+          "level": 2,
+          "heading": "6. Published arithmetic symmetry comparison, with its hypotheses checked"
+        },
+        {
+          "line": 224,
+          "level": 2,
+          "heading": "7. First still-unproved target estimate"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "8. Input provenance and verification record"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round10_2026_10_21/r10_weyl_route_ledger.md",
+      "target": "record/spectral_research/sources/research_round10_2026_10_21/r10_weyl_route_ledger.md",
+      "source_sha256": "c3c8d7b3bd9d3fdfe2a3390f8cc793ed6ad48b57ff84bbd98ea4cbb904586a2d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 10 Weyl branch: actual results, failed contractions, and remaining estimate"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Target retained exactly"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "heading": "2. The full signed Weyl resummation was read before trying to extend it"
+        },
+        {
+          "line": 78,
+          "level": 2,
+          "heading": "3. Positive full-time weighting: a genuine discriminator, not a solution"
+        },
+        {
+          "line": 166,
+          "level": 2,
+          "heading": "4. New theorem: fixed-order repulsion supplies fixed-order uniform integrability"
+        },
+        {
+          "line": 229,
+          "level": 2,
+          "heading": "5. New theorem: one complete order contains every lower order"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "heading": "6. Independent checking and exact outcome"
+        },
+        {
+          "line": 300,
+          "level": 2,
+          "heading": "7. Actual inputs and output hashes"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_weyl_full_weight_relative_path_cancellation.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_weyl_full_weight_relative_path_cancellation.md",
+      "source_sha256": "038d6c03710c38829fba3d96367d271f5c33cdeacf94889d32cc3d7a22070109",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Full-weight cancellation of closed relative paths and the remaining endpoint interference"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Scope of the calculation"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "2. Conventions and exact coefficient identities"
+        },
+        {
+          "line": 99,
+          "level": 2,
+          "heading": "3. Exact cancellation for each closed relative path"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "4. The exact terminal Gauss magnitude for every odd modulus"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "5. Complete off-endpoint factorization when \\(R-I\\) is invertible"
+        },
+        {
+          "line": 393,
+          "level": 2,
+          "heading": "6. What the remaining endpoint sums equal"
+        },
+        {
+          "line": 464,
+          "level": 2,
+          "heading": "7. Heisenberg times at which the terminal factor is nondegenerate"
+        },
+        {
+          "line": 522,
+          "level": 2,
+          "heading": "8. The unresolved original signed estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_weyl_all_odd_endpoint_fiber_identity.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_weyl_all_odd_endpoint_fiber_identity.md",
+      "source_sha256": "ec36b997ef3a38dd464d468833f78a3934b45bdc57dbc36f54987aa42a649b70",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An all-odd, all-time endpoint-fiber identity for the full Weyl path square"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. Notation"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "2. The terminal cross formula without a Gauss-sum assumption"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "3. The full signed background sum in every relative-path sector"
+        },
+        {
+          "line": 233,
+          "level": 2,
+          "heading": "4. The complete endpoint-fiber classification"
+        },
+        {
+          "line": 328,
+          "level": 2,
+          "heading": "5. Exact limit of this advance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_original_uniform_weyl_self_overlap.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_original_uniform_weyl_self_overlap.md",
+      "source_sha256": "7ad8afb5fa2f9098111166b70398aad2fc95bf10de508f47ae661ec25080755d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 8: the exact asymptotic largest Weyl self-overlap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Status and scope"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "2. Previously proved quantum estimates used here"
+        },
+        {
+          "line": 181,
+          "level": 2,
+          "heading": "3. Uniform maximum limit and the displacement map"
+        },
+        {
+          "line": 230,
+          "level": 2,
+          "heading": "4. A quantitative density expansion with an explicit remainder"
+        },
+        {
+          "line": 236,
+          "level": 3,
+          "heading": "4.1. Elementary symbol bounds"
+        },
+        {
+          "line": 275,
+          "level": 3,
+          "heading": "4.2. Flow and Jacobian bounds"
+        },
+        {
+          "line": 369,
+          "level": 3,
+          "heading": "4.3. Transfer through the four-sheeted linear cover"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "5. The six surviving Fourier modes and the unique maximizing pair"
+        },
+        {
+          "line": 496,
+          "level": 2,
+          "heading": "6. Operator consequence and exact limitation"
+        },
+        {
+          "line": 527,
+          "level": 2,
+          "heading": "7. Independent algebra checks of the leading coefficient"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_uniform_shrinking_windows.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_return_uniform_shrinking_windows.md",
+      "source_sha256": "c7329595d2f77c5f14fe0e68dd28204740c7faf1d3527981f2a4a05929cc4d26",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform shrinking windows and boundary resolvents for the original family"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. Exact inputs and notation"
+        },
+        {
+          "line": 116,
+          "level": 2,
+          "heading": "2. Main theorem"
+        },
+        {
+          "line": 178,
+          "level": 2,
+          "heading": "3. Product ergodicity and uniform modulated classical averages"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "heading": "4. Fejér domination for shrinking arcs"
+        },
+        {
+          "line": 345,
+          "level": 2,
+          "heading": "5. Low and high frequencies: proof of Theorem 1"
+        },
+        {
+          "line": 419,
+          "level": 2,
+          "heading": "6. Proof of Theorem 2 and the exact Schur consequence"
+        },
+        {
+          "line": 503,
+          "level": 2,
+          "heading": "7. Robustness under arbitrary vanishing operator perturbations"
+        },
+        {
+          "line": 542,
+          "level": 2,
+          "heading": "8. Direct adversarial test against the unipotent countermodel"
+        },
+        {
+          "line": 613,
+          "level": 2,
+          "heading": "9. Exact remaining obstruction for the original family"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_approximate_eigenoperator_addendum.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_return_approximate_eigenoperator_addendum.md",
+      "source_sha256": "8560a8f6ab447e18513f50a55618da9311c45cbfcd5d906c11782e08d786235e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Coordinate delocalization of every approximate adjoint eigenoperator"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "heading": "Statement"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "heading": "Proof"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_weyl_three_time_resonance_and_exact_recursion.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_weyl_three_time_resonance_and_exact_recursion.md",
+      "source_sha256": "8f6a660d4bb776c769aa7e96e7a4607609c7a44c06addb494764189e3ef1fbf2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact signed three-time resonance and the nontruncated Weyl recursion"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. What is proved, and what remains open"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "2. Exact transport and the required Fourier support"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "heading": "3. All four closed triples, with a proof of completeness"
+        },
+        {
+          "line": 229,
+          "level": 2,
+          "heading": "4. Areas, coefficients, and the exact signed answer"
+        },
+        {
+          "line": 292,
+          "level": 2,
+          "heading": "5. The exact kick can be retained without a Taylor truncation"
+        },
+        {
+          "line": 342,
+          "level": 2,
+          "heading": "6. A local Cayley--Hamilton move, with its full phase change"
+        },
+        {
+          "line": 401,
+          "level": 2,
+          "heading": "7. The finite recursion and its unresolved quantitative content"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_sharp_stability_clock_addendum.md",
+      "target": "mathematics/spectral_research/proofs/research_round8_2026_10_21/r8_return_sharp_stability_clock_addendum.md",
+      "source_sha256": "f77baf9f94d8ed92c3b83abe88e042e16db31864b80a070ac69db5082da67e08",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An explicit Laplace counterexample at every positive multiple of 1/N"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. The two explicit spectra"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "2. One fixed smooth Laplace test"
+        },
+        {
+          "line": 143,
+          "level": 2,
+          "heading": "3. What sharpness now means"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_full_weight_cancellation.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_full_weight_cancellation.md",
+      "source_sha256": "f1d755d9f7a91988b03562ee471db1d5ebb12389eda03a1763335698ba29830d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: full-weight relative-path cancellation"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Source, conclusion, and scope"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "heading": "1. Exact coefficient identities and both half-phase signs"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "2. The relative-area expansion and the first differing site"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "heading": "3. Terminal trace magnitude, including singular cases"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "4. The exact Cayley phase"
+        },
+        {
+          "line": 158,
+          "level": 2,
+          "heading": "5. The local adjoint coefficient and cancellation of the global phase"
+        },
+        {
+          "line": 213,
+          "level": 2,
+          "heading": "6. The endpoint-sector sum is a coherent diagonal propagator entry"
+        },
+        {
+          "line": 247,
+          "level": 2,
+          "heading": "7. Prime-power times and the separate \\(3^a\\) check"
+        },
+        {
+          "line": 280,
+          "level": 2,
+          "heading": "8. Independent finite sign check"
+        },
+        {
+          "line": 303,
+          "level": 2,
+          "heading": "9. The exact unresolved estimate remains unresolved"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_all_odd_endpoint_fibers.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_all_odd_endpoint_fibers.md",
+      "source_sha256": "8a69e39f2f4d672a4c76d5ec7067656b0e5cc6b094b13c8f8a313076c4a3cb0d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: all-odd, all-time endpoint fibers"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Source and verdict"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. The terminal cross identity and its signs"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "2. Full-weight factorization for each relative path"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "3. The complete fiber sum is a bijective change of variables"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "4. Equal-endpoint positivity and the Weyl projection"
+        },
+        {
+          "line": 193,
+          "level": 2,
+          "heading": "5. An additional bound, not needed for the source theorem"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "6. Direct finite check of an intermediate degeneracy"
+        },
+        {
+          "line": 225,
+          "level": 2,
+          "heading": "7. Status after the audit"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_uniform_metaplectic_gap.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_uniform_metaplectic_gap.md",
+      "source_sha256": "9b10fa20685716aeaf308e3a892df58fbf949c68bc24372fe367ae663a18595b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: uniform metaplectic-centralizer gap"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Audited version and conclusion"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "1. Exact algebra over every odd modulus"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "2. The scalar-subtracted inequality and its constant"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "3. The low-label kick estimate and the escaping-label split"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "4. Bounded modular matrices really reduce to a finite integer set"
+        },
+        {
+          "line": 146,
+          "level": 2,
+          "heading": "5. The modular-half parity correction and Egorov order"
+        },
+        {
+          "line": 183,
+          "level": 2,
+          "heading": "6. Nonidentity of every needed classical commutator"
+        },
+        {
+          "line": 228,
+          "level": 2,
+          "heading": "7. The trace-vanishing lemma requires no trace formula"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "heading": "8. Final quantifiers, distance conversion, and scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_weyl_audit_uniform_shrinking_windows.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_weyl_audit_uniform_shrinking_windows.md",
+      "source_sha256": "6e8c0d62252c7027c892b8d13239d80e31c9c28c844f9477a08c68fb6da54a02",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: uniform compressed shrinking windows"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Frozen object and verdict"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "2. Published theorem and the product-system hypothesis"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "heading": "3. Product ergodicity to uniform modulation"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "4. Fixed-time compactness and Fejér domination"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "5. Low/high decomposition and the order of limits"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "6. Complex resolvent and Schur complement"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "7. Perturbation robustness and adversarial test"
+        },
+        {
+          "line": 226,
+          "level": 2,
+          "heading": "8. Outcome"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_three_time_resonance.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_three_time_resonance.md",
+      "source_sha256": "792f99160dfbc47714a86da08cb8ac2a480ae7d3a50180afd1359ae8923341e2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: signed three-time resonance and exact Weyl recursion"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. Frozen source and independent exact check"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "heading": "2. Weyl convention and exact transport"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "3. Fourier support and completeness of the four triples"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "4. Signed areas and the commutator limit"
+        },
+        {
+          "line": 166,
+          "level": 2,
+          "heading": "5. Full kick expansion and interaction ordering"
+        },
+        {
+          "line": 182,
+          "level": 2,
+          "heading": "6. Cayley--Hamilton move and its complete local phase"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "7. Recursion and its precise limitation"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round8_2026_10_21/r8_return_audit_sharp_perturbation_threshold.md",
+      "target": "record/spectral_research/sources/research_round8_2026_10_21/r8_return_audit_sharp_perturbation_threshold.md",
+      "source_sha256": "5b7268f1e4f3dacad67a67a1a54bd3b8817bb284122a1077619cb0a2685fa9c4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the norm-threshold and spectral-rounding proof"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "heading": "1. Frozen proof and added clarification"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. Cayley differentiation and order: all factors checked"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "3. Eigenvalue collisions and global matching"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "4. Laplace stability and the unfolding factors"
+        },
+        {
+          "line": 139,
+          "level": 2,
+          "heading": "5. Rounding, lattice spacing, and the bounded witness"
+        },
+        {
+          "line": 183,
+          "level": 2,
+          "heading": "6. The admissible tests and the autocorrelation identity"
+        },
+        {
+          "line": 206,
+          "level": 2,
+          "heading": "7. Pair normalization and arbitrary multiplicities"
+        },
+        {
+          "line": 237,
+          "level": 2,
+          "heading": "8. CUE limit and fixed-test subsequence"
+        },
+        {
+          "line": 263,
+          "level": 2,
+          "heading": "9. Original-family scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_uniform_stationary_dephasing.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_return_uniform_stationary_dephasing.md",
+      "source_sha256": "c2bf50a33a642b984afa7bfa83fdc0d28b8019c79d4f47121ab52adee5e53075",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform contraction of stationary dephasing on coordinate diagonals"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Statements and the exact inputs"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "2. Classical ergodicity with the hypotheses checked"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "heading": "3. The discrete probability operators have compact limits"
+        },
+        {
+          "line": 335,
+          "level": 2,
+          "heading": "4. The Fejér domination and its low frequency consequence"
+        },
+        {
+          "line": 446,
+          "level": 2,
+          "heading": "5. Compactness controls every remaining frequency"
+        },
+        {
+          "line": 506,
+          "level": 2,
+          "heading": "6. Intensity matrices, exact time averages, and approximate stationary vectors"
+        },
+        {
+          "line": 574,
+          "level": 2,
+          "heading": "7. The signed first-return derivative and its divergence"
+        },
+        {
+          "line": 679,
+          "level": 2,
+          "heading": "8. What remains unproved"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_all_fixed_powers_phase_separation.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_return_all_fixed_powers_phase_separation.md",
+      "source_sha256": "46982efaa581d322d4e82d5f5782ccf69f979a5a59adfb863dd40ef292205527",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "All fixed physical powers: global twist, nonseparated sheet phases, and the full alias sum"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 74,
+          "level": 2,
+          "heading": "2. Exact symbol and the physical classical convention"
+        },
+        {
+          "line": 138,
+          "level": 2,
+          "heading": "3. Every intermediate sheet is a global graph"
+        },
+        {
+          "line": 222,
+          "level": 2,
+          "heading": "4. Exact initial sheets, actions, and their amplitudes"
+        },
+        {
+          "line": 321,
+          "level": 2,
+          "heading": "5. The iterated map has no nontrivial translation intertwiner"
+        },
+        {
+          "line": 407,
+          "level": 2,
+          "heading": "6. Separation of every pair of nonlinear sheet actions"
+        },
+        {
+          "line": 461,
+          "level": 2,
+          "heading": "7. A sampled oscillatory-matrix lemma with unrestricted aliases"
+        },
+        {
+          "line": 530,
+          "level": 2,
+          "heading": "8. The actual quantum kernel and the positive limiting kernel"
+        },
+        {
+          "line": 597,
+          "level": 2,
+          "heading": "9. Physical first-return mass after every fixed cutoff"
+        },
+        {
+          "line": 640,
+          "level": 2,
+          "heading": "10. What the theorem still does not provide"
+        },
+        {
+          "line": 666,
+          "level": 2,
+          "heading": "Appendix A. Direct proof of the image formula"
+        },
+        {
+          "line": 713,
+          "level": 2,
+          "heading": "Appendix B. The finite-shift parametrix error"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_quantitative_sheet_separation.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_return_quantitative_sheet_separation.md",
+      "source_sha256": "3ae2af7e36c90fc2c1214315a1513936a09b6aa10fc150295ddfd4e8062cadbf",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A quantitative lower bound for the mixed sheet derivative on the full endpoint cover"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "2. Small mixed derivative would make both first derivatives small"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "3. The near-translation relation for the physical iterate"
+        },
+        {
+          "line": 117,
+          "level": 2,
+          "heading": "4. Use a conjugate with a discounted expanding coordinate"
+        },
+        {
+          "line": 184,
+          "level": 2,
+          "heading": "5. Quantitative reach and the next unproved estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_original_two_endpoint_layers.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_original_two_endpoint_layers.md",
+      "source_sha256": "905b6a795eb90fa5462cf2a3542804696ee6804ce0ef3387df78e609b1fd97e5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Coordinate visibility for the original Jacobi family, and the remaining interior obstruction"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. What was already proved and what is added here"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "heading": "2. The exact path and the two valuation estimates being used"
+        },
+        {
+          "line": 189,
+          "level": 2,
+          "heading": "3. A bordered minor for the two additional coordinates"
+        },
+        {
+          "line": 217,
+          "level": 3,
+          "heading": "3.1. Indices contained in the first \\(k\\) coordinates"
+        },
+        {
+          "line": 259,
+          "level": 3,
+          "heading": "3.2. Indices contained in the final \\(k\\) coordinates"
+        },
+        {
+          "line": 287,
+          "level": 2,
+          "heading": "4. Every coordinate minor of a top Jacobi eigenspace is nonzero"
+        },
+        {
+          "line": 350,
+          "level": 2,
+          "heading": "5. Why a successfully proved bordered-minor statement transfers to the exact parameter"
+        },
+        {
+          "line": 490,
+          "level": 2,
+          "heading": "6. Boundary of the conclusion"
+        },
+        {
+          "line": 509,
+          "level": 2,
+          "heading": "7. Exact cost of deleting any one Fourier column"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_schur_discriminant_identity.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_return_schur_discriminant_identity.md",
+      "source_sha256": "fc36418d779397802e481ad4383ee40460e19d27916f5b21b5da0f9ced9b9a33",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "The complementary determinant equals a squared tomography determinant"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. An unconditional finite-dimensional identity"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "2. Proof, including all degenerate cases"
+        },
+        {
+          "line": 139,
+          "level": 2,
+          "heading": "3. Exact signed trace cycles at every time"
+        },
+        {
+          "line": 180,
+          "level": 2,
+          "heading": "4. Consequences and limits for the original family"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_generic_microperturbation.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_return_generic_microperturbation.md",
+      "source_sha256": "1127ad366de39f1c9293bb54fa4fe9ca88183e3baf44d355262f031d73b6cb34",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An obstruction with no dark sector, distinct nontrivial eigenvalue ratios, and almost flat short powers"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. The base construction and the exact properties needed below"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "2. A deterministic choice of a nearby algebraic eigenbasis"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "3. Microscopic spectral splitting and exact nondegeneracy"
+        },
+        {
+          "line": 136,
+          "level": 3,
+          "heading": "3.1 Simple eigenvalues and pairwise distinct ordered ratios"
+        },
+        {
+          "line": 158,
+          "level": 3,
+          "heading": "3.2 Every square minor is nonzero"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "4. The physical powers remain nearly flat through time \\(\\sqrt N-1\\)"
+        },
+        {
+          "line": 226,
+          "level": 2,
+          "heading": "5. Absence of dark states at the actual auxiliary matrix"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "6. Exact return probability and a first moment beyond \\(N^{12}\\)"
+        },
+        {
+          "line": 359,
+          "level": 2,
+          "heading": "7. The local process tends to the empty process"
+        },
+        {
+          "line": 385,
+          "level": 2,
+          "heading": "8. Every nonzero admissible pair test has a divergent defect"
+        },
+        {
+          "line": 425,
+          "level": 3,
+          "heading": "8.1 The exact leading coefficient also survives the perturbation"
+        },
+        {
+          "line": 471,
+          "level": 2,
+          "heading": "9. Exact scope of the obstruction"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_stationary_projection_countermodel.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/root_stationary_projection_countermodel.md",
+      "source_sha256": "fd3e82d27c0bb78adff8093e7255a32a3d23d71c95e57b6e3132482cf5b9884d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "The auxiliary countermodel also has a vanishing nonconstant stationary compression"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Exact statement"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "heading": "2. The exact compression before splitting"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "heading": "3. Stability under the prescribed eigenbasis perturbation"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "4. The signed derivative and its scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_stationary_dephasing.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_stationary_dephasing.md",
+      "source_sha256": "e250e40e254ac47fecb0fa8252e4f87123781dfa2bd75ad961d8918035fa51f5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: uniform stationary dephasing for the original family"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Verdict and scope"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. The classical hypotheses are genuinely verified"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "3. The centered Fourier embedding has no hidden alias error"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "4. Exact Fejér domination and low frequencies"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "heading": "5. High frequencies and the order of limits"
+        },
+        {
+          "line": 251,
+          "level": 2,
+          "heading": "6. Eigenbasis independence and approximate stationary vectors"
+        },
+        {
+          "line": 288,
+          "level": 2,
+          "heading": "7. The signed first-return conclusion is correctly conditional"
+        },
+        {
+          "line": 334,
+          "level": 2,
+          "heading": "8. Evidence, limitations, and provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_return_singer_research_checkpoint.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_return_singer_research_checkpoint.md",
+      "source_sha256": "4cb1e3c83c2384f66b94689460767bdaa31832be60f2036c2b2b44fd16711ae1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Research checkpoint: a possible sharper auxiliary clock obstruction"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Candidate target"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "2. A symplectic cycle over a field extension"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "3. Proposed simultaneous shear selection"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "heading": "4. Weyl implementation and the spectral clock"
+        },
+        {
+          "line": 110,
+          "level": 2,
+          "heading": "5. Intended stationary bound"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "heading": "6. Generic perturbation and candidate pair failure"
+        },
+        {
+          "line": 146,
+          "level": 2,
+          "heading": "7. Status and relation to the original problem"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_stationary_dephasing_checks.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_stationary_dephasing_checks.md",
+      "source_sha256": "58a6f5044838de401ab1e02bc37a6948214eb45e63c88b9153e9433a8c7ec1c8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact checks accompanying the stationary-dephasing audit"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "Provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/arithmetic_endpoint_fourier_valuation.md",
+      "target": "mathematics/spectral_research/proofs/research_round5_2026_10_21/arithmetic_endpoint_fourier_valuation.md",
+      "source_sha256": "457c14773d76cf29fb034d3a006ba5c5314e0a973193931431c3dd1b38356d2a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact valuations of the seven-chain endpoint Fourier minors"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Scope and result"
+        },
+        {
+          "line": 32,
+          "level": 3,
+          "heading": "Theorem 1"
+        },
+        {
+          "line": 62,
+          "level": 2,
+          "heading": "2. Reduction of the rows and roots of unity"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "heading": "3. An integral alternant quotient"
+        },
+        {
+          "line": 155,
+          "level": 2,
+          "heading": "4. The confluent matrix has a triangular decomposition"
+        },
+        {
+          "line": 215,
+          "level": 2,
+          "heading": "5. Exact valuation and an archimedean bound"
+        },
+        {
+          "line": 243,
+          "level": 2,
+          "heading": "6. Application to the original seven paths"
+        },
+        {
+          "line": 290,
+          "level": 2,
+          "heading": "7. First remaining leaf in the discriminant route"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/arithmetic_endpoint_good_place_obstruction.md",
+      "target": "mathematics/spectral_research/proofs/research_round5_2026_10_21/arithmetic_endpoint_good_place_obstruction.md",
+      "source_sha256": "8ceb2b4830ecf578ec81269d7e11db8486739461bd73cb7be663c06e971aa932",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A precise bad place, and the narrower good-place question"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. An exact four-by-four calculation at \\(N=63\\)"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "2. Exact norm and comparison with the new 7-adic formula"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "3. The narrower remaining arithmetic question"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_endpoint_fourier_valuation.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_endpoint_fourier_valuation.md",
+      "source_sha256": "315d5ec9660f2249549542fa9a2c5b12ff1d8851f233c1b08a963cf019cbba8d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: endpoint Fourier-minor valuations"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Target, verification scope, and verdict"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "2. Row reflection, valuation field, and residue multiplicities"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "heading": "3. The alternant quotient has no hidden denominators"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "heading": "4. Complete reconstruction of the block triangular step"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "heading": "5. Exact valuation and the original cat-matrix factor"
+        },
+        {
+          "line": 198,
+          "level": 2,
+          "heading": "6. Independent finite check of the stated 5-adic warning"
+        },
+        {
+          "line": 244,
+          "level": 2,
+          "heading": "7. First remaining implication and literature boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_logtime_dispersion_and_missing_modes.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/phase_logtime_dispersion_and_missing_modes.md",
+      "source_sha256": "40dd41555520f712b99f7467ed14fd41ff0369db4b44a9b78f21c7f5a8314b4b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Logarithmic-time dispersion and the quantum modes lost by position-diagonal transfer"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Statements"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "2. The ordinary finite-shift operator forced by modular half-integers"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "heading": "3. A global analytic graph class with a uniform budget"
+        },
+        {
+          "line": 157,
+          "level": 3,
+          "heading": "3.1. The linear graph transform doubles the available strip"
+        },
+        {
+          "line": 208,
+          "level": 3,
+          "heading": "3.2. The exact short kick preserves the original class"
+        },
+        {
+          "line": 268,
+          "level": 2,
+          "heading": "4. Localized sampled WKB vectors and the exact kick"
+        },
+        {
+          "line": 360,
+          "level": 2,
+          "heading": "5. Exact eight-character decomposition of \\(M_N\\)"
+        },
+        {
+          "line": 404,
+          "level": 2,
+          "heading": "6. One linear step: a finite leading family with an \\(O(h)\\) vector error"
+        },
+        {
+          "line": 509,
+          "level": 2,
+          "heading": "7. Exponential iteration budget and proof of (1)"
+        },
+        {
+          "line": 543,
+          "level": 2,
+          "heading": "8. The temporal frame and proof of (2)"
+        },
+        {
+          "line": 580,
+          "level": 2,
+          "heading": "9. The exact missing quantum modes and proof of (3)--(5)"
+        },
+        {
+          "line": 629,
+          "level": 2,
+          "heading": "10. Scope for the phase-transfer route"
+        },
+        {
+          "line": 661,
+          "level": 2,
+          "heading": "11. Primary-literature discriminator"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round3_2026_10_21/phase_planck_hole_time_scale_test.md",
+      "target": "mathematics/spectral_research/proofs/research_round3_2026_10_21/phase_planck_hole_time_scale_test.md",
+      "source_sha256": "a2a9841076214829102027a862cdb92c10dba93bef376dc06481bfc3082ceb4d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Planck-width diagonal removal: an exact dimension-and-time test"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Exact finite Weyl tight frames"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "2. A Planck-scale pair-diagonal effect with exact trace"
+        },
+        {
+          "line": 98,
+          "level": 2,
+          "heading": "3. Opening the exact doubled propagator"
+        },
+        {
+          "line": 185,
+          "level": 2,
+          "heading": "4. The exact scope of the Dolgopyat norm obstruction"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "5. Attempted conversion of leakage into the needed trace bound"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_endpoint_return_coherence.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/adversarial_endpoint_return_coherence.md",
+      "source_sha256": "e7df95406b8a95cbb62a3da80820db7dcb9634b186267676db657c1991fdb362",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Endpoint cyclicity audit and nonvanishing weighted return coherence"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Frozen inputs"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "2. The additional bordered minors really are nonzero"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "heading": "3. Large-time observability and the exact parameter"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "heading": "4. A mixed return correlation that cannot disappear"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_endpoint_sine_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_endpoint_sine_audit.md",
+      "source_sha256": "b5862f0991191234860f1d728517d2c6b326ac9b1f5701659f50f6366dc5b97d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: actual endpoint laws and sine compression"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Input and verdict"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "heading": "2. The transfer measure and its entropy"
+        },
+        {
+          "line": 99,
+          "level": 2,
+          "heading": "3. The exact published equilibrium input"
+        },
+        {
+          "line": 144,
+          "level": 2,
+          "heading": "4. The intervals are actual connected edge subarcs"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "5. The midpoint cylinder fixes the full normalization"
+        },
+        {
+          "line": 260,
+          "level": 2,
+          "heading": "6. Exact compression and the prefactor"
+        },
+        {
+          "line": 294,
+          "level": 2,
+          "heading": "7. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_endpoint_symbols_and_renewal.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/adversarial_endpoint_symbols_and_renewal.md",
+      "source_sha256": "561efce86a8aa2cab0c49fa05236e64f420ce26919ae0342dee2566e552ec32a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform endpoint symbols and exact marker renewal for the actual family"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Inputs"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "heading": "2. Endpoint derivatives do not grow with length or winding"
+        },
+        {
+          "line": 152,
+          "level": 2,
+          "heading": "3. Uniform quadratic reduction at the encounter scale"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "4. An exact noncommuting renewal identity"
+        },
+        {
+          "line": 239,
+          "level": 2,
+          "heading": "5. The rare-marker pole with a uniform error"
+        },
+        {
+          "line": 310,
+          "level": 2,
+          "heading": "6. Consistent endpoint laws and factorization"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_pair_schur_memory.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/adversarial_pair_schur_memory.md",
+      "source_sha256": "a9811e26f0aaa15a3f94c61760da7f83446621057b65299c9107d2de1eab2c01",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Direct pair attempt through the actual adjoint dynamics: a sharp norm barrier"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "1. Target and status"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "heading": "2. A proved bound on the actual commutant dimension"
+        },
+        {
+          "line": 94,
+          "level": 2,
+          "heading": "3. Removing all stationary modes before compression"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "4. An exact isometric subspace at every sufficiently short time"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "heading": "5. Where the attempted Schur argument breaks"
+        },
+        {
+          "line": 246,
+          "level": 2,
+          "heading": "6. The remaining observable is quadratic, not a maximal norm"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_quantum_return_mixed_ward.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/adversarial_quantum_return_mixed_ward.md",
+      "source_sha256": "53837a219e2a77acc8e2b08921c33ccf5a8eb89d8b6a15f333df360b5593b749",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Mixed quantum return identities and a nonvanishing open contribution"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. Main new conclusions"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "heading": "2. Reducing spaces and exact energy bookkeeping"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "3. Finite, infinite, and Abel mixed-time identities"
+        },
+        {
+          "line": 188,
+          "level": 2,
+          "heading": "4. Weighted mixed returns recover the open power traces"
+        },
+        {
+          "line": 243,
+          "level": 2,
+          "heading": "5. The first mixed insertion not fixed by the identity Ward relation"
+        },
+        {
+          "line": 317,
+          "level": 2,
+          "heading": "6. Positive open power-trace energy for the actual Fourier detector"
+        },
+        {
+          "line": 319,
+          "level": 3,
+          "heading": "6.1. A finite-dimensional Poisson inequality"
+        },
+        {
+          "line": 360,
+          "level": 3,
+          "heading": "6.2. A detector with uniformly bounded logarithmic determinant loss"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "7. Exact feedback coefficients and the remaining interference"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_weyl_windows_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_weyl_windows_audit.md",
+      "source_sha256": "ec844db9c890ee7b1cbb94392be4cd45a433bf729a13c320179ec184ab16a26a",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent check of the moving maximal Weyl return bounds"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_all_marker_domains_and_renewal_barrier.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_all_marker_domains_and_renewal_barrier.md",
+      "source_sha256": "dc8bef986cae11bc1917805a02746cd0861ee06f74da1d853bcc82e25ba7deba",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "All marker edges, exact renewal masses, and the missing Fourier coherences"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Result and inputs"
+        },
+        {
+          "line": 92,
+          "level": 2,
+          "heading": "2. Full-axis coordinates and arbitrary edge labels"
+        },
+        {
+          "line": 94,
+          "level": 3,
+          "heading": "2.1. Full intervals"
+        },
+        {
+          "line": 124,
+          "level": 3,
+          "heading": "2.2. Edge subintervals and their probabilities"
+        },
+        {
+          "line": 165,
+          "level": 3,
+          "heading": "2.3. The zero edge is exactly a homothetic inner interval"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "heading": "3. The scalar zero-run sum really does telescope"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "heading": "4. The all-edge kernel is a compressed Fourier projection"
+        },
+        {
+          "line": 277,
+          "level": 2,
+          "heading": "5. Nested projections: an exact obstruction to incoherent telescoping"
+        },
+        {
+          "line": 279,
+          "level": 3,
+          "heading": "5.1. Amplitude blocks do form an exact orthogonal partition"
+        },
+        {
+          "line": 317,
+          "level": 3,
+          "heading": "5.2. Their separate Gram operators omit nonzero cross blocks"
+        },
+        {
+          "line": 383,
+          "level": 3,
+          "heading": "5.3. What the obstruction does and does not say"
+        },
+        {
+          "line": 408,
+          "level": 2,
+          "heading": "6. The first uncontrolled original phase term"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_endpoint_laws_and_sine_compression.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_endpoint_laws_and_sine_compression.md",
+      "source_sha256": "8307e8bed074727caee3788adca79a44cab2fdf2627bbbfdcb2058a50863dfe1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact homoclinic endpoint laws and a sine-compression identity"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Result and scope"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "heading": "2. Inputs, including the geometric equilibrium theorem"
+        },
+        {
+          "line": 151,
+          "level": 2,
+          "heading": "3. The actual transfer measure pushes forward to area"
+        },
+        {
+          "line": 153,
+          "level": 3,
+          "heading": "3.1. The normalized backward kernel"
+        },
+        {
+          "line": 220,
+          "level": 3,
+          "heading": "3.2. No entropy is lost through the finite coding fibers"
+        },
+        {
+          "line": 281,
+          "level": 2,
+          "heading": "4. The endpoint coordinate intervals"
+        },
+        {
+          "line": 283,
+          "level": 3,
+          "heading": "4.1. One connected arc for each edge condition"
+        },
+        {
+          "line": 311,
+          "level": 3,
+          "heading": "4.2. Strictly monotone linearizing limits"
+        },
+        {
+          "line": 348,
+          "level": 2,
+          "heading": "5. A shrinking-cylinder calculation fixes both densities"
+        },
+        {
+          "line": 350,
+          "level": 3,
+          "heading": "5.1. Exact centered word and its transfer mass"
+        },
+        {
+          "line": 388,
+          "level": 3,
+          "heading": "5.2. The actual local product has the required area Jacobian"
+        },
+        {
+          "line": 456,
+          "level": 3,
+          "heading": "5.3. Comparison and passage to the full endpoint measures"
+        },
+        {
+          "line": 482,
+          "level": 2,
+          "heading": "6. Exact sine compression and cancellation of the density constants"
+        },
+        {
+          "line": 542,
+          "level": 2,
+          "heading": "7. The remaining spectral task"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_exact_marker_fixed_point_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/arithmetic_exact_marker_fixed_point_audit.md",
+      "source_sha256": "60399c2a4c8ca741e99cfaf00f5a29d15c10bfb362a51c4ff5088b84ff292e7b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: exact marker fixed point and detector center"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Symbol and fixed point"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "2. Hessian and exact flow derivative"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "3. Slopes, area factor, and the detector"
+        },
+        {
+          "line": 157,
+          "level": 2,
+          "heading": "4. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_endpoint_sine_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_endpoint_sine_audit.md",
+      "source_sha256": "0214633ec222c7d3a15fc32171b3517e1f24c0c17db77e780a1f1295ca18aa76",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: actual endpoint laws and sine compression"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Input and outcome"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "heading": "1. The exact transfer measure, not only periodic weights"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "2. Geometry of the endpoint intervals"
+        },
+        {
+          "line": 114,
+          "level": 2,
+          "heading": "3. Local product regularity and area"
+        },
+        {
+          "line": 142,
+          "level": 2,
+          "heading": "4. The same shrinking cylinder in two exact calculations"
+        },
+        {
+          "line": 176,
+          "level": 2,
+          "heading": "5. Sine-compression normalization"
+        },
+        {
+          "line": 204,
+          "level": 2,
+          "heading": "Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_quantum_marker_return.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_quantum_marker_return.md",
+      "source_sha256": "31c247eba33f35cdee9123dfbbaf9f711f1a2d47ed257b83e6136bda8793046e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact quantum marker returns and the surviving phase problem"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. What is proved"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "heading": "2. A concrete finite-dimensional detector"
+        },
+        {
+          "line": 130,
+          "level": 3,
+          "heading": "2.1. Uniform sine-compression approximation"
+        },
+        {
+          "line": 188,
+          "level": 3,
+          "heading": "2.2. A nonvanishing projection defect at the critical scale"
+        },
+        {
+          "line": 236,
+          "level": 2,
+          "heading": "3. Exact first-return energy identities"
+        },
+        {
+          "line": 326,
+          "level": 2,
+          "heading": "4. The Schur function and its exact spectral feedback"
+        },
+        {
+          "line": 426,
+          "level": 2,
+          "heading": "5. The open spectrum retains the Heisenberg scale"
+        },
+        {
+          "line": 506,
+          "level": 2,
+          "heading": "6. The common cell phases survive between different collections"
+        },
+        {
+          "line": 597,
+          "level": 2,
+          "heading": "7. What the first-return route has and has not connected"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_resolvent_frame.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_resolvent_frame.md",
+      "source_sha256": "61409d8899fe3966a752830e7c1f32069337a9b7ecd3cd4c2d6c8c05258bc9b0",
+      "sections": [
+        {
+          "line": 2,
+          "level": 1,
+          "heading": "Positive resolvent and finite Krylov frame bounds"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. Frozen inputs and scope"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. A contractive rational function inside the unit disk"
+        },
+        {
+          "line": 130,
+          "level": 3,
+          "heading": "2.1 Cofactor positivity and the exact numerator"
+        },
+        {
+          "line": 151,
+          "level": 2,
+          "heading": "3. A finite frame removes the determinant denominator completely"
+        },
+        {
+          "line": 169,
+          "level": 3,
+          "heading": "Theorem 3.1: exact positive frame inequality"
+        },
+        {
+          "line": 233,
+          "level": 2,
+          "heading": "4. What the actual all-time trace bound proves"
+        },
+        {
+          "line": 293,
+          "level": 2,
+          "heading": "5. Where the coefficient cancellation fails to enter"
+        },
+        {
+          "line": 336,
+          "level": 2,
+          "heading": "6. Quantitatively sharp limitation of the old coefficient data"
+        },
+        {
+          "line": 405,
+          "level": 2,
+          "heading": "7. Precise status of the next estimate"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_schur_memory_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/fermionic_schur_memory_audit.md",
+      "source_sha256": "b8486c5c2cd59d6a60aea99dfc6c17152e379976d2fa537c4af90691d376567f",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the compressed adjoint-memory argument"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Quantitative input and commutant dimension"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "heading": "2. Removing every stationary matrix"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "heading": "3. Exact Schur positivity"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "4. Pair observable and scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/fermionic_weyl_return_windows.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/fermionic_weyl_return_windows.md",
+      "source_sha256": "d9f9236b57eab1728ba4f1905b4f382af8dc53fa698d6a3fb92487f2c9c86643",
+      "sections": [
+        {
+          "line": 2,
+          "level": 1,
+          "heading": "A uniform time-window bound for all Weyl return energies"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "heading": "1. A finite frame with a Weyl index chosen at every time"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "heading": "2. Finite intervals and an infinite exponentially weighted sum"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "heading": "3. All repeats of the bare Pell time"
+        },
+        {
+          "line": 221,
+          "level": 2,
+          "heading": "4. What has not been proved"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_exact_marker_fixed_point.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_exact_marker_fixed_point.md",
+      "source_sha256": "d1a584f17360ed6067a402249b3835efdfee5c5b8efb2b49d3229c3b0e5e799d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Точный фиксированный пункт, линейная динамика и положение детектора"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Конвенция обычного символа"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "heading": "2. Вся прямая \\(q=1/2\\) неподвижна для толчка"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "heading": "3. Точный гессиан и мультипликатор"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "heading": "4. Совпадение геометрического центра и арифметических концов"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/root_all_entry_and_arbitrary_weyl_routes.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/root_all_entry_and_arbitrary_weyl_routes.md",
+      "source_sha256": "c6bd70cda16691533eb8c13aafa9055009f41a97c932c56eb901b4b4ef176ecd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "All-entry bounds and arbitrary prescribed Weyl permutation routes"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "heading": "2. Exact finite-quantization inputs and a derivative improvement"
+        },
+        {
+          "line": 162,
+          "level": 2,
+          "heading": "3. Uniform oscillation despite an arbitrary added linear phase"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "4. Exact pairing for arbitrary input and output labels"
+        },
+        {
+          "line": 293,
+          "level": 2,
+          "heading": "5. A two-case estimate proves the uniform column bound"
+        },
+        {
+          "line": 342,
+          "level": 2,
+          "heading": "6. Fixed labels have strict modulus loss"
+        },
+        {
+          "line": 430,
+          "level": 2,
+          "heading": "7. Uniform HS bounds for every selected permutation"
+        },
+        {
+          "line": 452,
+          "level": 2,
+          "heading": "8. The all-time coherent bound"
+        },
+        {
+          "line": 513,
+          "level": 2,
+          "heading": "9. Relation to the original pair statistic and the exact remaining gap"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_sparse_cat_schatten_trace_sharpening.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/dual_sparse_cat_schatten_trace_sharpening.md",
+      "source_sha256": "784f41271c57c3655215239153fafcd66dc9ecebdcab5eb462d6f25b451bc92d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Uniform trace-class removal of sparse cat histories"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. Statement and inputs"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "heading": "2. Finite-dimensional trace Holder inequality, with proof"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "3. A uniform, unnormalized Schatten-33 bound"
+        },
+        {
+          "line": 213,
+          "level": 2,
+          "heading": "4. Long words: trace-ideal bound and the fixed-density entropy sum"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "heading": "5. Early times: an exact finite lattice count"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "6. The two-HS strengthening, as a shorter intermediate proof"
+        },
+        {
+          "line": 372,
+          "level": 2,
+          "heading": "7. What this sharpens, and the unresolved step"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/root_arbitrary_routes_schatten_tail.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/root_arbitrary_routes_schatten_tail.md",
+      "source_sha256": "d05c0bc44decafe181e28b06a603b2309567ae8808bb8dd5dc7a81aa14457e3e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A uniform Schatten bound for arbitrary Weyl routes after a fixed initial interval"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Claim, including the finite initial interval"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "2. Proof of a uniform, unnormalized Schatten-35 bound"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "heading": "3. Trace Holder and the exact word sum"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_arbitrary_routes_schatten_tail.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/dual_arbitrary_routes_schatten_tail.md",
+      "source_sha256": "3fab0cb9a2940969201f727a30888913b00838f80ef21ff65362e86874893e84",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Arbitrary prescribed Weyl routes: uniform trace norm after a fixed time cutoff"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. Exact assumptions already proved for the prescribed family"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "heading": "2. A uniform Schatten-35 bound for every selected matrix"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "3. Trace norm Holder and the word estimate"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "4. Exact correction and the early-time convention"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/audit_dual_coherent_fejers.md",
+      "target": "record/spectral_research/sources/research_round4_2026_10_21/audit_dual_coherent_fejers.md",
+      "source_sha256": "2c7f66b1a47f0674d81f95016623c10bd51abbc6b519a4e47d331d09b556be42",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: coherent Weyl participation and finite Fejér averages"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict and frozen input"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. Dimensions and the commutant participation formula"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "heading": "2. Exact Fejér identity and the matrix-order lower bound"
+        },
+        {
+          "line": 76,
+          "level": 2,
+          "heading": "3. Trace floor and the same label for all times"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "4. The effective Markov estimate"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "5. Extracting a time in the claimed finite interval"
+        },
+        {
+          "line": 189,
+          "level": 2,
+          "heading": "6. Interference accumulation and its trace-norm consequence"
+        },
+        {
+          "line": 229,
+          "level": 2,
+          "heading": "7. Relation to the requested spectral statistic"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_coherent_participation_and_fejers.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/dual_coherent_participation_and_fejers.md",
+      "source_sha256": "8a0779ea28cd664bf207e50fa2c71f908479b2dd1f5bacde414a87e3352825d1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "A finite-time obstruction to replacing coherent Weyl probabilities by Markov powers"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. Exact objects and the result"
+        },
+        {
+          "line": 110,
+          "level": 2,
+          "heading": "2. The exact fixed-space participation identity"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "3. Exact Fejer decomposition and positivity"
+        },
+        {
+          "line": 233,
+          "level": 2,
+          "heading": "4. The trace floor and a fixed Weyl-label witness"
+        },
+        {
+          "line": 290,
+          "level": 2,
+          "heading": "5. Effective Markov comparison and the finite-time discrepancy"
+        },
+        {
+          "line": 354,
+          "level": 2,
+          "heading": "6. What this forces on the omitted interference terms"
+        },
+        {
+          "line": 406,
+          "level": 2,
+          "heading": "7. Precise relation to, and limitation for, the original spectral task"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round4_2026_10_21/dual_weyl_primitivity_and_quantitative_limits.md",
+      "target": "mathematics/spectral_research/proofs/research_round4_2026_10_21/dual_weyl_primitivity_and_quantitative_limits.md",
+      "source_sha256": "90cb06de5c56441dfdb17f6fa32a35484b00c7919bbddd899fb8954f950043c1",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact Weyl adjoint dynamics: primitivity, an explicit mixing bound, and its limit"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Status and exact result"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "heading": "2. Exact adjoint generator, with modular-half signs"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "3. Algebraic evaluation and the exact nonzero transition graph"
+        },
+        {
+          "line": 157,
+          "level": 3,
+          "heading": "3.1 Required Fourier coefficients, including every small alias"
+        },
+        {
+          "line": 202,
+          "level": 3,
+          "heading": "3.2 Edges that must survive at the frozen algebraic kick"
+        },
+        {
+          "line": 228,
+          "level": 2,
+          "heading": "4. Connectedness, aperiodicity, and a quadratic primitivity exponent"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "heading": "5. Uniform quantitative self-loop from a local exact series"
+        },
+        {
+          "line": 341,
+          "level": 2,
+          "heading": "6. Explicit degree and height bounds for every nonzero transition"
+        },
+        {
+          "line": 423,
+          "level": 2,
+          "heading": "7. An effective spectral-gap bound, and why it is too weak"
+        },
+        {
+          "line": 516,
+          "level": 2,
+          "heading": "8. The coherent obstruction is still present"
+        },
+        {
+          "line": 554,
+          "level": 2,
+          "heading": "9. Provenance and continuation condition"
+        }
+      ]
+    }
+  ]
+}

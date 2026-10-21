@@ -1,0 +1,21 @@
+{
+  "source_sha256": "7b6657c8e1ca2ee91391509c2c97b9054715681a0afa2cedff94f8dd4c4ecc3f",
+  "audit_sha256": "04389d7783357bb74d6d7db1cd4904238309b63c6a54b1e5affbd9358c7f37fd",
+  "gauss_exact_cyclotomic_cases": 32,
+  "deck_polynomial_identities": "passed",
+  "weyl_subprincipal_sign": "passed in rational polynomial ring with I^2=-1",
+  "unequal_sheet_unperturbed_phase": "passed",
+  "even_alias_first_coefficients_in_units_of_1_over_sqrt2": [
+    "-7/250",
+    "1/250"
+  ],
+  "protected_hessians_div_pi2": [
+    "-19606/125",
+    "-19594/125",
+    "24306/125",
+    "24894/125"
+  ],
+  "tau_smallness_and_200tau_margin": "passed by exact rational inequalities",
+  "full_Hdiag_proved": false,
+  "full_Hdiag_disproved": false
+}

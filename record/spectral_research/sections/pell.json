@@ -1,0 +1,601 @@
+{
+  "topic": "pell",
+  "units": [
+    {
+      "original_path": "research_round14_2026_10_21/signed_sum/r14_full_weighted_gradient_and_hessian_attempt.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/signed_sum/r14_full_weighted_gradient_and_hessian_attempt.md",
+      "source_sha256": "733a9f9c202d2091986ae5f85a1f98cbf4ce32755835edfb195b59386e2873c0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Полное взвешенное сокращение градиента, кривизна и предел применимости"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "heading": "1. Точный наблюдаемый и полученные результаты"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "2. Конечная алгебра исходной семьи, включая составные N"
+        },
+        {
+          "line": 133,
+          "level": 3,
+          "heading": "2.1. Равномерная норма конкретного генератора"
+        },
+        {
+          "line": 170,
+          "level": 3,
+          "heading": "2.2. Точная Egorov-формула и Pell-возврат"
+        },
+        {
+          "line": 225,
+          "level": 3,
+          "heading": "2.3. Граница всех нескалярных часовых следов"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "3. Точные Q/G-тождества"
+        },
+        {
+          "line": 344,
+          "level": 2,
+          "heading": "4. Суммирование всей первой производной при скалярном возврате"
+        },
+        {
+          "line": 454,
+          "level": 2,
+          "heading": "5. Значение наблюдаемого в той же точке"
+        },
+        {
+          "line": 491,
+          "level": 2,
+          "heading": "6. Полная вторая производная без ветвей собственных значений"
+        },
+        {
+          "line": 493,
+          "level": 3,
+          "heading": "6.1. Блочная конечномерная формула"
+        },
+        {
+          "line": 576,
+          "level": 3,
+          "heading": "6.2. Полное суммирование межчасовых членов"
+        },
+        {
+          "line": 630,
+          "level": 2,
+          "heading": "7. Ненулевая внутриблочная дисперсия для исходного A_N"
+        },
+        {
+          "line": 632,
+          "level": 3,
+          "heading": "7.1. Кратности часов и центры блоков"
+        },
+        {
+          "line": 663,
+          "level": 3,
+          "heading": "7.2. Нижняя граница самой проекции без орбитальной гипотезы"
+        },
+        {
+          "line": 706,
+          "level": 3,
+          "heading": "7.3. Сборка строгой отрицательной кривизны"
+        },
+        {
+          "line": 745,
+          "level": 2,
+          "heading": "8. Реальный тест переноса сокращения на физическую точку"
+        },
+        {
+          "line": 747,
+          "level": 3,
+          "heading": "8.1. Приблизительная периодичность с явным дефектом"
+        },
+        {
+          "line": 824,
+          "level": 3,
+          "heading": "8.2. Что именно эта оценка не даёт"
+        },
+        {
+          "line": 875,
+          "level": 3,
+          "heading": "8.3. Точный масштаб неприменимости локального Taylor-контроля"
+        },
+        {
+          "line": 913,
+          "level": 2,
+          "heading": "9. Точное ограничение на дифференциальное замыкание"
+        },
+        {
+          "line": 965,
+          "level": 2,
+          "heading": "10. Проверка перекрытия с проходом 11 и вычислительная проверка"
+        },
+        {
+          "line": 999,
+          "level": 2,
+          "heading": "11. Входы и точный прочитанный объём"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/obstruction/r14_pell_curvature_inflection_and_analytic_window.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/obstruction/r14_pell_curvature_inflection_and_analytic_window.md",
+      "source_sha256": "4ff49e87ee6a4351d06efc4f6ec7da1bbdf39a32c7a45a276b9001dc72635773",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Pell-кривизна полной суммы: обязательный перегиб и точная граница аналитического переноса"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Результат и его область"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "1. Точный наблюдаемый и прочитанный вход"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "2. Прямой контроль всех производных исходного наблюдаемого"
+        },
+        {
+          "line": 168,
+          "level": 2,
+          "heading": "3. Элементарная лемма о вынужденной положительной кривизне"
+        },
+        {
+          "line": 234,
+          "level": 2,
+          "heading": "4. Применение: перегиб полной исходной суммы до любого фиксированного tau"
+        },
+        {
+          "line": 298,
+          "level": 2,
+          "heading": "5. Точное осциллирующее замыкание и предел глобальной монотонности"
+        },
+        {
+          "line": 371,
+          "level": 2,
+          "heading": "6. Аналитичность: радиус сходимости бесконечен, равномерное окно мало"
+        },
+        {
+          "line": 458,
+          "level": 2,
+          "heading": "7. Точная остановка"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/obstruction/r14_final_arithmetic_tau_pell_attempt.md",
+      "target": "mathematics/spectral_research/proofs/research_round14_2026_10_21/obstruction/r14_final_arithmetic_tau_pell_attempt.md",
+      "source_sha256": "73071e0cfa64304a1a465a5fb7c5abb4b0c701501c9fd72e11d57c7176a5dfac",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Последняя арифметическая попытка: tau, Pell и нули hopping"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. Что уже было проверено и не повторяется как новый результат"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "heading": "2. Одновременные 5- и 7-валюации размеров Пелля"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "heading": "3. Точная глубина 7-адической малости ненулевых hoppings"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "4. Обычная комплексная величина этих же исходных коэффициентов"
+        },
+        {
+          "line": 226,
+          "level": 2,
+          "heading": "5. Рациональный параметр не объединяет различные уровни толчка"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "heading": "6. Где именно остановилась попытка"
+        },
+        {
+          "line": 324,
+          "level": 2,
+          "heading": "7. Прочитанные исходники и граница повторного использования"
+        },
+        {
+          "line": 350,
+          "level": 2,
+          "heading": "8. Сверка §2 сводного отчёта прохода 14"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/structural/r14_full_weighted_t0_hessian_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/structural/r14_full_weighted_t0_hessian_audit.md",
+      "source_sha256": "7a4c65615d03f29aa5e2d4a9fd1ef4085e6f4d760933bbc9899c281404b03fbe",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимый аудит полного взвешенного градиента и Hessian при t=0"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Объект, scope и вердикт"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "1. Фиксированный наблюдаемый и конечные производные"
+        },
+        {
+          "line": 115,
+          "level": 2,
+          "heading": "2. Фиксированные спектральные блоки и независимый Hessian"
+        },
+        {
+          "line": 224,
+          "level": 3,
+          "heading": "2.1. Сопоставление с формулой через q_a и beta_a в raw"
+        },
+        {
+          "line": 254,
+          "level": 2,
+          "heading": "3. Пуассоновское суммирование и равномерный остаток"
+        },
+        {
+          "line": 324,
+          "level": 3,
+          "heading": "3.1. Остаток межчасовых пар"
+        },
+        {
+          "line": 344,
+          "level": 3,
+          "heading": "3.2. Остаток внедиагональных блоков"
+        },
+        {
+          "line": 380,
+          "level": 2,
+          "heading": "4. Проверка конкретных арифметических и Fourier-входов"
+        },
+        {
+          "line": 385,
+          "level": 3,
+          "heading": "4.1. Норма A_N, Egorov и скалярный период"
+        },
+        {
+          "line": 414,
+          "level": 3,
+          "heading": "4.2. Следы, кратности и блочные центры"
+        },
+        {
+          "line": 444,
+          "level": 3,
+          "heading": "4.3. Проверка V_N и отрицательной константы"
+        },
+        {
+          "line": 490,
+          "level": 2,
+          "heading": "5. Значение S_N(0), градиент и двойная сумма"
+        },
+        {
+          "line": 529,
+          "level": 2,
+          "heading": "6. Независимая проверка попытки переноса на t=tau"
+        },
+        {
+          "line": 531,
+          "level": 3,
+          "heading": "6.1. Дефект скалярного возврата"
+        },
+        {
+          "line": 600,
+          "level": 3,
+          "heading": "6.2. Taylor-остаток действительно не контролирует фиксированное tau"
+        },
+        {
+          "line": 627,
+          "level": 2,
+          "heading": "7. Границы вывода и итог"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round14_2026_10_21/structural/r14_inflection_and_analytic_window_audit.md",
+      "target": "record/spectral_research/sources/research_round14_2026_10_21/structural/r14_inflection_and_analytic_window_audit.md",
+      "source_sha256": "fd27540e4ee01bffdebd9301e937658bfe9ef09f032d4ea761dd4d8d952abc59",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Независимый аудит вынужденного перегиба и аналитического окна"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Объект, scope и результат"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "heading": "2. Производные всех порядков"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "heading": "3. Независимая проверка леммы"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "4. Подстановка для исходной суммы"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "5. Аналитическое продолжение и границы его использования"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "heading": "6. Рекуррентность и закрытое редакционное замечание"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/r11_arithmetic_pell_magnus.md",
+      "target": "mathematics/spectral_research/proofs/research_round11_2026_10_21/r11_arithmetic_pell_magnus.md",
+      "source_sha256": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 11: точный Pell-период, некоммутативные моменты и второй коэффициент полного произведения"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус и граница результата"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "1. Обозначения и проверка Weyl-конвенции"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "2. Исходные коэффициенты и два точных числа"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "3. Pell-размерности и малые представители половин периода"
+        },
+        {
+          "line": 249,
+          "level": 2,
+          "heading": "4. Полная классификация двухмодовых столкновений"
+        },
+        {
+          "line": 324,
+          "level": 2,
+          "heading": "5. Точная дисперсия полного первого генератора"
+        },
+        {
+          "line": 374,
+          "level": 2,
+          "heading": "6. Ненулевой коммутатор и чередующийся четвёртый момент"
+        },
+        {
+          "line": 443,
+          "level": 2,
+          "heading": "7. Полный предел фиксированных слов этой пары"
+        },
+        {
+          "line": 504,
+          "level": 2,
+          "heading": "8. Новая проверка сокращений полной второй суммы"
+        },
+        {
+          "line": 671,
+          "level": 2,
+          "heading": "9. Несокращающийся коэффициент полной \\(\\Omega_{2,r}\\)"
+        },
+        {
+          "line": 742,
+          "level": 2,
+          "heading": "10. Что именно не переносится на исходный толчок"
+        },
+        {
+          "line": 890,
+          "level": 2,
+          "heading": "11. Исполненная проверка и прочитанные входы"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/root_parametric_eigenphase_dynamics.md",
+      "target": "mathematics/spectral_research/proofs/research_round11_2026_10_21/root_parametric_eigenphase_dynamics.md",
+      "source_sha256": "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Точная параметрическая динамика исходных матриц: доказательства и граница результата"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Статус и параметр"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "heading": "1. Точные константы исходного генератора"
+        },
+        {
+          "line": 95,
+          "level": 3,
+          "heading": "1.1. Вычисление квадратичной нормы"
+        },
+        {
+          "line": 135,
+          "level": 3,
+          "heading": "1.2. Вычисление соседнего перекрытия"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "2. Локальные уравнения собственных углов"
+        },
+        {
+          "line": 217,
+          "level": 2,
+          "heading": "3. Фиксированный заряд не определяет микроскопические связи"
+        },
+        {
+          "line": 280,
+          "level": 2,
+          "heading": "4. Следовые производные без предположения простоты"
+        },
+        {
+          "line": 340,
+          "level": 2,
+          "heading": "5. Явное окно Тейлора и физическая точка"
+        },
+        {
+          "line": 409,
+          "level": 2,
+          "heading": "6. Некоммутативный остаток нельзя устранить названием «дисперсия»"
+        },
+        {
+          "line": 439,
+          "level": 3,
+          "heading": "6.1. Что дополнительно установлено для полной суммы"
+        },
+        {
+          "line": 475,
+          "level": 2,
+          "heading": "7. Проверка опубликованного параметрического подхода"
+        },
+        {
+          "line": 496,
+          "level": 2,
+          "heading": "8. Что проверено вычислительно"
+        },
+        {
+          "line": 521,
+          "level": 2,
+          "heading": "9. Неустранённая исходная задача"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round11_2026_10_21/r11_coherent_parametric_audit.md",
+      "target": "record/spectral_research/sources/research_round11_2026_10_21/r11_coherent_parametric_audit.md",
+      "source_sha256": "f600be6e7a6f2158ce5e50ef41ccdccca96f0da5ca3c5b4ece8b9b727038422e",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the parametric route, with an all odd return-curvature bound"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "0. Verdict and scope"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "heading": "1. Covariance, coefficients, and exact constants"
+        },
+        {
+          "line": 139,
+          "level": 2,
+          "heading": "2. Local eigenphase equations: sign and normalization"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "3. Charge and the scope of “repulsion”"
+        },
+        {
+          "line": 259,
+          "level": 2,
+          "heading": "4. Exact discriminator: nonzero charge and irreducibility permit a collision"
+        },
+        {
+          "line": 338,
+          "level": 2,
+          "heading": "5. Trace derivatives and scalar-return curvature through collisions"
+        },
+        {
+          "line": 382,
+          "level": 2,
+          "heading": "6. Additional original-family theorem: every scalar return"
+        },
+        {
+          "line": 451,
+          "level": 2,
+          "heading": "7. Taylor control and its physical limitation"
+        },
+        {
+          "line": 493,
+          "level": 3,
+          "heading": "7.1. Independent check of the Pell input"
+        },
+        {
+          "line": 555,
+          "level": 2,
+          "heading": "8. Full product and commutator caveat"
+        },
+        {
+          "line": 583,
+          "level": 3,
+          "heading": "8.1. Audit of the added complete second-order bound"
+        },
+        {
+          "line": 642,
+          "level": 2,
+          "heading": "9. Published source scope"
+        },
+        {
+          "line": 654,
+          "level": 2,
+          "heading": "10. Executed checks and provenance"
+        },
+        {
+          "line": 688,
+          "level": 2,
+          "heading": "11. First unresolved original estimate"
+        },
+        {
+          "line": 713,
+          "level": 2,
+          "heading": "12. Input and check hashes"
+        }
+      ]
+    }
+  ]
+}

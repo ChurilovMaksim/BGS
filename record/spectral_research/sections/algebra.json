@@ -1,0 +1,1253 @@
+{
+  "topic": "algebra",
+  "units": [
+    {
+      "original_path": "research_round9_2026_10_21/r9_arithmetic_galois_obstruction.md",
+      "target": "mathematics/spectral_research/proofs/research_round9_2026_10_21/r9_arithmetic_galois_obstruction.md",
+      "source_sha256": "19fc46287b04ee3dd88cfc16826b2e07e19f397b23d6e85a148844e12929ca27",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Round 9: an exact test of cyclotomic transfer for the original family"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "heading": "1. Outcome and scope"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "heading": "2. Exact cubic moment of the Hamiltonian"
+        },
+        {
+          "line": 172,
+          "level": 2,
+          "heading": "3. Uniform quantitative separation"
+        },
+        {
+          "line": 242,
+          "level": 2,
+          "heading": "4. From a frozen algebraic parameter to an entire identity"
+        },
+        {
+          "line": 294,
+          "level": 2,
+          "heading": "5. The load-bearing principal-minor input and its Galois transfer"
+        },
+        {
+          "line": 361,
+          "level": 2,
+          "heading": "6. Proof of projective non-isospectrality"
+        },
+        {
+          "line": 431,
+          "level": 2,
+          "heading": "7. Other arithmetic mechanisms checked before this result"
+        },
+        {
+          "line": 468,
+          "level": 2,
+          "heading": "8. What the modified route still fails to establish"
+        },
+        {
+          "line": 510,
+          "level": 2,
+          "heading": "9. Reproducibility and input hashes"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_determinant_nonzero_minors_addendum.md",
+      "target": "mathematics/spectral_research/proofs/research_round9_2026_10_21/r9_determinant_nonzero_minors_addendum.md",
+      "source_sha256": "69233cc4b5d5772bafbf7d95aceb792f7e4a2f5f579500120984c4bf1693cc79",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "The determinant obstruction survives nonvanishing of every physical minor of every power"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "heading": "1. An explicit perturbation"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "heading": "2. Every physical minor of every nonzero power is nonzero"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "heading": "3. The complete determinant autocorrelation is still CUE up to an error smaller than every inverse power"
+        },
+        {
+          "line": 106,
+          "level": 2,
+          "heading": "4. The fixed pair defect and the clock limit persist"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "heading": "5. The inverse-determinant obstruction also persists"
+        },
+        {
+          "line": 161,
+          "level": 2,
+          "heading": "6. Logical boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round9_2026_10_21/r9_determinant_audit_galois.md",
+      "target": "record/spectral_research/sources/research_round9_2026_10_21/r9_determinant_audit_galois.md",
+      "source_sha256": "e32125fba85ef0f9a47d46a60ec4c05b58160e2ad2a1003c190c0a1946ff5ab0",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of the cyclotomic spectral-transfer obstruction"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Verdict and exact frozen targets"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "2. Independent exact verification of the cubic moment"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "3. The Galois automorphism and the positive square root"
+        },
+        {
+          "line": 159,
+          "level": 2,
+          "heading": "4. Spectral projectors and principal compression determinants"
+        },
+        {
+          "line": 199,
+          "level": 2,
+          "heading": "5. Audit of the actual old principal-minor proof"
+        },
+        {
+          "line": 209,
+          "level": 3,
+          "heading": "5.1 The exact path and the valuation bounds"
+        },
+        {
+          "line": 243,
+          "level": 3,
+          "heading": "5.2 Both endpoint eigenvector-minor estimates"
+        },
+        {
+          "line": 257,
+          "level": 3,
+          "heading": "5.3 The Fourier minors when \\(5\\mid N\\)"
+        },
+        {
+          "line": 278,
+          "level": 3,
+          "heading": "5.4 The strictly unique term"
+        },
+        {
+          "line": 299,
+          "level": 2,
+          "heading": "6. Continuation from one algebraic parameter and the projective scalar"
+        },
+        {
+          "line": 334,
+          "level": 2,
+          "heading": "7. Highest subset sums and the contradiction"
+        },
+        {
+          "line": 363,
+          "level": 2,
+          "heading": "8. Final scope of acceptance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_original_intensity_at_prescribed_phase.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/root_original_intensity_at_prescribed_phase.md",
+      "source_sha256": "deea7755070222fdfca37d5c8f2721dc82b62afa34d56b18df614756308b5c63",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Nonsingular eigenvector intensities at the prescribed original phase"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "heading": "1. Statements"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "heading": "2. Exact inputs and why they apply"
+        },
+        {
+          "line": 210,
+          "level": 2,
+          "heading": "3. The dominant coordinate monomial"
+        },
+        {
+          "line": 284,
+          "level": 2,
+          "heading": "4. Passing through large real time to a nonzero exponential polynomial"
+        },
+        {
+          "line": 346,
+          "level": 2,
+          "heading": "5. Identifying the Jacobian with the intensity matrix"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "6. What this proves about stationary observation"
+        },
+        {
+          "line": 426,
+          "level": 2,
+          "heading": "7. Precise remaining limitations"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_original_full_cyclicity_laurent_unit.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_original_full_cyclicity_laurent_unit.md",
+      "source_sha256": "214c77697b087b6457a76272b0665072b7b6d7f1f72e5eca857876f2f3f9cf17",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Full coordinate cyclicity from two real-time limits and a Laurent unit"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Statement and frozen inputs"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "2. Visible eigenvalue branches in the two real-time limits"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "heading": "3. The coefficient ring and its units"
+        },
+        {
+          "line": 178,
+          "level": 2,
+          "heading": "4. An invisible invariant factor would have incompatible exponents"
+        },
+        {
+          "line": 285,
+          "level": 2,
+          "heading": "5. Specialization to the original algebraic parameter"
+        },
+        {
+          "line": 318,
+          "level": 2,
+          "heading": "6. Exact scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_original_every_power_minors.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/root_original_every_power_minors.md",
+      "source_sha256": "9d3503703b5a5b0df580bb1a2a42e58a0617c7de94c3b340ac26d9ec93d54a48",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Every physical minor of every nonzero power at the exact algebraic parameter"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. The theorem"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "heading": "2. The exact Jacobi inputs"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "heading": "3. A one-sided Fourier--Jacobi matrix has every minor nonzero"
+        },
+        {
+          "line": 163,
+          "level": 2,
+          "heading": "4. All coordinate minors of the top eigenspace"
+        },
+        {
+          "line": 201,
+          "level": 2,
+          "heading": "5. The unique largest exponential in a power minor"
+        },
+        {
+          "line": 252,
+          "level": 2,
+          "heading": "6. Negative powers"
+        },
+        {
+          "line": 280,
+          "level": 2,
+          "heading": "7. Support uncertainty and its sharpness"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_original_all_odd_component_minors.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/r7_original_all_odd_component_minors.md",
+      "source_sha256": "edf0e6b09942cf9b6c0877dd533be3f866b6273a4483358a4c5d1f9768dbb39b",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Original minors with rows in one Jacobi component, in every odd dimension"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "heading": "2. Exact Jacobi input"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "heading": "3. Arbitrary physical columns and one eigenvector component"
+        },
+        {
+          "line": 162,
+          "level": 2,
+          "heading": "4. Top exterior vectors within a component"
+        },
+        {
+          "line": 189,
+          "level": 2,
+          "heading": "5. Large real time and exact specialization"
+        },
+        {
+          "line": 232,
+          "level": 2,
+          "heading": "6. Boundary"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/root_unipotent_flat_clock.md",
+      "target": "mathematics/spectral_research/proofs/research_round7_2026_10_21/root_unipotent_flat_clock.md",
+      "source_sha256": "8f8e4cdbcd5c6576eb6bb9ce976d7a29ae4e77a310271576719ee8e39ad9d0bd",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "An explicit obstruction to short-power mixing and reverse-edge criteria"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "1. Exact statement and purpose"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "heading": "2. The finite-field propagator"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "3. Every nontrivial power is a flat matrix"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "4. The reverse-edge norm is also small"
+        },
+        {
+          "line": 207,
+          "level": 2,
+          "heading": "5. Exact traces and multiplicities"
+        },
+        {
+          "line": 260,
+          "level": 2,
+          "heading": "6. A fixed factorial test diverges"
+        },
+        {
+          "line": 332,
+          "level": 2,
+          "heading": "7. The local law tends to the empty process"
+        },
+        {
+          "line": 359,
+          "level": 2,
+          "heading": "8. Why this leaves the original problem open"
+        },
+        {
+          "line": 382,
+          "level": 2,
+          "heading": "9. Source status and reproducibility"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_audit_full_cyclicity.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_audit_full_cyclicity.md",
+      "source_sha256": "53c7574eee6fd640c7d82492146ed0b0b520e824150f673ec234b7b5b27946ee",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: full coordinate cyclicity by a Laurent unit"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "Verdict and precise scope"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "heading": "1. Pinned sources"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "2. The arithmetic dependency really supplies the required bordered minors"
+        },
+        {
+          "line": 103,
+          "level": 2,
+          "heading": "3. Both real-time limits, including eigenvector normalization"
+        },
+        {
+          "line": 119,
+          "level": 2,
+          "heading": "4. Laurent normality, invariant factors, and specialization"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "5. Exact algebraic phase and the cyclicity conclusion"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_original_intensity_jacobian_audit.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_original_intensity_jacobian_audit.md",
+      "source_sha256": "bfc2e7f0a36d0354bd7c859a364f4a21f9796fe5ba6f63659fcf2773f29a620c",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: original intensity determinant and signed return sums"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "heading": "1. Frozen algebraic inputs"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "heading": "2. Right diagonal phases and the algebraic derivative matrix"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "heading": "3. Large real time and specialization to the fixed original parameter"
+        },
+        {
+          "line": 201,
+          "level": 2,
+          "heading": "4. The original eigenvector intensity matrix is invertible"
+        },
+        {
+          "line": 260,
+          "level": 2,
+          "heading": "5. Exactly what is removed from the doubled dark space"
+        },
+        {
+          "line": 296,
+          "level": 2,
+          "heading": "6. Two exact signed sums of the original first-return amplitudes"
+        },
+        {
+          "line": 397,
+          "level": 2,
+          "heading": "7. The first remaining gaps"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round7_2026_10_21/r7_original_every_power_minors_audit.md",
+      "target": "record/spectral_research/sources/research_round7_2026_10_21/r7_original_every_power_minors_audit.md",
+      "source_sha256": "e8fb0c39dea826c97e2358eead00d46657f9ad8d6151e936277e139a6df3ecea",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit of every-power physical minors"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "heading": "1. Fixed physical columns are the decisive distinction"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "heading": "2. Exterior evolution of a power"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "heading": "3. Inversion and support assertions"
+        },
+        {
+          "line": 76,
+          "level": 2,
+          "heading": "4. Scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_dense_principal_minors_generic_phase_returns.md",
+      "target": "mathematics/spectral_research/proofs/research_round6_2026_10_21/r6_dense_principal_minors_generic_phase_returns.md",
+      "source_sha256": "2f5d4896e461fe33cf6f8ed25c71d994a4d2842206f48f5fba7bf75189f9d0f8",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Nonzero original principal minors and generic auxiliary phases with no dark return sector"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "heading": "1. Arithmetic input, stated precisely"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "heading": "2. Every initial principal minor of the original matrix is nonzero"
+        },
+        {
+          "line": 132,
+          "level": 2,
+          "heading": "3. A nonzero coefficient Jacobian"
+        },
+        {
+          "line": 174,
+          "level": 2,
+          "heading": "4. Generic simplicity and full support of eigenvectors"
+        },
+        {
+          "line": 261,
+          "level": 2,
+          "heading": "5. Eigenangle Jacobian and distinct nonzero differences"
+        },
+        {
+          "line": 327,
+          "level": 2,
+          "heading": "6. No dark subspace and exact weighted return energy"
+        },
+        {
+          "line": 412,
+          "level": 2,
+          "heading": "7. Precise limitations"
+        },
+        {
+          "line": 430,
+          "level": 2,
+          "heading": "Proof dependencies"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round6_2026_10_21/r6_original_principal_minors_jacobian.md",
+      "target": "mathematics/spectral_research/proofs/research_round6_2026_10_21/r6_original_principal_minors_jacobian.md",
+      "source_sha256": "73ebb8fb57c706a6eedf2ca1c40dd65c1ceb35890d49e7027cd987d3b5dd01ec",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Nonzero prefix minors and the exact leading coefficient of the phase Jacobian"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "1. Algebraic nonvanishing transfer through an exponential"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "2. Prefix minors of the Gaussian matrix"
+        },
+        {
+          "line": 131,
+          "level": 2,
+          "heading": "3. Exact leading monomial of the coefficient Jacobian"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/arithmetic_mixed_jacobi_minors_good_places.md",
+      "target": "mathematics/spectral_research/proofs/research_round5_2026_10_21/arithmetic_mixed_jacobi_minors_good_places.md",
+      "source_sha256": "0eb94e2984dbdbc475b25897194404808255ba6b2da9703d2aef7f395db1bf55",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Mixed Jacobi overlap minors: a uniform good-place theorem"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "heading": "1. Statement"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "heading": "2. The finite-field Fourier input"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "heading": "3. A bounded-degree endpoint polynomial"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "heading": "4. Selecting a good place"
+        },
+        {
+          "line": 196,
+          "level": 2,
+          "heading": "5. Integral Jacobi recurrence at the same place"
+        },
+        {
+          "line": 272,
+          "level": 2,
+          "heading": "6. The full Cauchy--Binet sum"
+        },
+        {
+          "line": 322,
+          "level": 2,
+          "heading": "7. Uniform range and the precise limits"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round5_2026_10_21/audit_mixed_jacobi_minors_good_places.md",
+      "target": "record/spectral_research/sources/research_round5_2026_10_21/audit_mixed_jacobi_minors_good_places.md",
+      "source_sha256": "8f437fc323ccb897eb19888a191f99e0c6ece08d6f2c92fc24c51917be8d4c20",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: actual mixed Jacobi overlap minors"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "heading": "Verdict and one representative qualification"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "heading": "1. The characteristic-5 Fourier lemma"
+        },
+        {
+          "line": 76,
+          "level": 2,
+          "heading": "2. The endpoint polynomial and its nonzero constant term"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "heading": "3. Root counting and compatibility of the place"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "heading": "4. The original Jacobi blocks and integral endpoint ratios"
+        },
+        {
+          "line": 241,
+          "level": 2,
+          "heading": "5. The full determinant and strict valuation dominance"
+        },
+        {
+          "line": 287,
+          "level": 2,
+          "heading": "6. Range, edge cases, and exact unresolved implication"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/audit_simplicity.md",
+      "target": "record/spectral_research/sources/research_continuation_2026_10_20/audit_simplicity.md",
+      "source_sha256": "c09cc06df2b1c6d74a008e166d00bcb0c644c2ce3256faa9b4c59c78d4ce506d",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: spectral simplicity on powers of 3 and 5"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "heading": "Verdict"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "1. Exact Egorov and the trace-square identity"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "heading": "2. The two nonsplit prime calculations"
+        },
+        {
+          "line": 129,
+          "level": 2,
+          "heading": "3. Lift to every prime power"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "heading": "4. The complete period average is exactly \\(N\\)"
+        },
+        {
+          "line": 192,
+          "level": 2,
+          "heading": "5. Remove the projective scalar before Fourier inversion"
+        },
+        {
+          "line": 223,
+          "level": 2,
+          "heading": "6. Transfer to the original kicked family by its discriminant"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "heading": "7. Complete classification of the bare cat in odd dimensions"
+        },
+        {
+          "line": 259,
+          "level": 3,
+          "heading": "7.1. General prime-power period and its leading matrix"
+        },
+        {
+          "line": 295,
+          "level": 3,
+          "heading": "7.2. Necessity and sufficiency at a prime power"
+        },
+        {
+          "line": 319,
+          "level": 3,
+          "heading": "7.3. CRT twists preserve the local classification"
+        },
+        {
+          "line": 347,
+          "level": 3,
+          "heading": "7.4. Every dimension with two distinct prime factors is degenerate"
+        },
+        {
+          "line": 369,
+          "level": 3,
+          "heading": "7.5. Final independent check of the shorter composite bound"
+        },
+        {
+          "line": 373,
+          "level": 2,
+          "heading": "8. Audit limits"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/exact_spectral_simplicity.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/exact_spectral_simplicity.md",
+      "source_sha256": "4aef0bf28965da0c359c01dff6e3bd330dd0cafdeb79118a5e84bd359d1ac2eb",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact spectral simplicity: proved classes and the remaining obstruction"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Results and limits"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "heading": "2. Exact definitions and the algebraic transfer"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "heading": "3. Prime-power simplicity of the cat matrix"
+        },
+        {
+          "line": 97,
+          "level": 3,
+          "heading": "3.1 Exact trace-square identity and the scalar phase"
+        },
+        {
+          "line": 129,
+          "level": 3,
+          "heading": "3.2 A lifting lemma"
+        },
+        {
+          "line": 181,
+          "level": 3,
+          "heading": "3.3 The explicit primes 3 and 5"
+        },
+        {
+          "line": 205,
+          "level": 3,
+          "heading": "3.4 Complete classification for every odd N"
+        },
+        {
+          "line": 295,
+          "level": 2,
+          "heading": "4. The exact Jacobi statement for A_N"
+        },
+        {
+          "line": 303,
+          "level": 2,
+          "heading": "5. What a complex-time argument would still have to prove"
+        },
+        {
+          "line": 331,
+          "level": 2,
+          "heading": "6. A first-order criterion that can actually be certified"
+        },
+        {
+          "line": 353,
+          "level": 2,
+          "heading": "7. Exact finite certificates and their limits"
+        },
+        {
+          "line": 388,
+          "level": 2,
+          "heading": "8. A counterexample with simple A and scalar joint commutant"
+        },
+        {
+          "line": 447,
+          "level": 2,
+          "heading": "9. What remains open for the actual family"
+        },
+        {
+          "line": 453,
+          "level": 2,
+          "heading": "Reference"
+        }
+      ]
+    },
+    {
+      "original_path": "research_continuation_2026_10_20/quantitative_transcendence_limits.md",
+      "target": "mathematics/spectral_research/proofs/research_continuation_2026_10_20/quantitative_transcendence_limits.md",
+      "source_sha256": "35a8399e59a1ff390031cab2be39c654d08acf095326dcbc160dadca23f9eae4",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Quantitative limits of the transcendence argument at the fixed parameter"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "heading": "1. Result and scope"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "heading": "2. Exact family and the algebraic field"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "heading": "3. Heights of eigenvalues and projectors"
+        },
+        {
+          "line": 82,
+          "level": 3,
+          "heading": "3.1. Height conventions and elementary inequalities"
+        },
+        {
+          "line": 111,
+          "level": 3,
+          "heading": "3.2. The constant eigenvalue-height bound"
+        },
+        {
+          "line": 141,
+          "level": 3,
+          "heading": "3.3. Projectors and the coefficient family"
+        },
+        {
+          "line": 179,
+          "level": 2,
+          "heading": "4. A positive exponential polynomial without a simplicity hypothesis"
+        },
+        {
+          "line": 234,
+          "level": 2,
+          "heading": "5. Explicit degree, term-count, and height bounds for the Gram determinant"
+        },
+        {
+          "line": 242,
+          "level": 3,
+          "heading": "5.1. Exponent support"
+        },
+        {
+          "line": 270,
+          "level": 3,
+          "heading": "5.2. Exponent heights"
+        },
+        {
+          "line": 287,
+          "level": 3,
+          "heading": "5.3. Coefficient heights, including all rearrangements"
+        },
+        {
+          "line": 327,
+          "level": 2,
+          "heading": "6. The verified published estimate"
+        },
+        {
+          "line": 376,
+          "level": 2,
+          "heading": "7. An unconditional explicit gap bound"
+        },
+        {
+          "line": 409,
+          "level": 2,
+          "heading": "8. Why this particular bound cannot control pairs at scale \\(1/N\\)"
+        },
+        {
+          "line": 473,
+          "level": 2,
+          "heading": "9. An elementary finite-range comparison at the fixed parameter"
+        },
+        {
+          "line": 505,
+          "level": 2,
+          "heading": "10. Source audit, verification, and remaining scope"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/adversarial_padic_jacobi_audit.md",
+      "target": "record/spectral_research/sources/research_round2_2026_10_20/adversarial_padic_jacobi_audit.md",
+      "source_sha256": "ef2621947874f3bb4bbce1a3ef27d1f80b91a58d7fea1c5daa476668087f5194",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Independent audit: p-adic Jacobi minors and actual spectral nonresonance"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Inputs and verdict"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "heading": "2. Why the specified phase supplies strict dominance"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "heading": "3. Exact modular gauge and Jacobi eigenvector minors"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "4. The ramified Fourier-minor comparison"
+        },
+        {
+          "line": 201,
+          "level": 2,
+          "heading": "5. Unique least-valuation term for arbitrary overlap minors"
+        },
+        {
+          "line": 240,
+          "level": 2,
+          "heading": "6. Complex-time certification and Lindemann--Weierstrass"
+        },
+        {
+          "line": 293,
+          "level": 2,
+          "heading": "7. Independent check of the resultant extension"
+        },
+        {
+          "line": 319,
+          "level": 2,
+          "heading": "8. Exact boundary at multiples of seven"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_endpoint_cyclicity.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_endpoint_cyclicity.md",
+      "source_sha256": "387243de3e23f5df546c999ef2d650a640e6b7c4d4488ea775765e3ae5362868",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Exact endpoint cyclicity and complete visibility of a local detector"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. The result"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "heading": "2. Verified input and conventions"
+        },
+        {
+          "line": 130,
+          "level": 2,
+          "heading": "3. The additional bordered-minor theorem"
+        },
+        {
+          "line": 177,
+          "level": 3,
+          "heading": "3.1. The first endpoint"
+        },
+        {
+          "line": 211,
+          "level": 3,
+          "heading": "3.2. The last endpoint"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "heading": "4. Large-real-time eigenvectors"
+        },
+        {
+          "line": 339,
+          "level": 2,
+          "heading": "5. Return to the exact algebraic parameter"
+        },
+        {
+          "line": 398,
+          "level": 2,
+          "heading": "6. Consequence for exact soft quantum return"
+        },
+        {
+          "line": 481,
+          "level": 2,
+          "heading": "7. What the theorem does and does not settle"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_padic_jacobi_simplicity.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_padic_jacobi_simplicity.md",
+      "source_sha256": "f311596933d383976547ac5b2cd633b91107074da0fcab58db989eedcc4568df",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "P-adic dominance of every Jacobi--cat minor"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. Results"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "heading": "2. The valuation supplied by the specified hopping phase"
+        },
+        {
+          "line": 102,
+          "level": 2,
+          "heading": "3. Cutting and gauging the exact Jacobi matrix"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "heading": "4. A valuation estimate for every Jacobi eigenvector minor"
+        },
+        {
+          "line": 265,
+          "level": 2,
+          "heading": "5. Consecutive Fourier rows minimize the ramified valuation"
+        },
+        {
+          "line": 344,
+          "level": 2,
+          "heading": "6. A unique term dominates every overlap minor"
+        },
+        {
+          "line": 403,
+          "level": 2,
+          "heading": "7. From the minors to actual simple spectrum"
+        },
+        {
+          "line": 463,
+          "level": 2,
+          "heading": "8. The algebraic commutant"
+        },
+        {
+          "line": 495,
+          "level": 2,
+          "heading": "9. Scope and provenance"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/arithmetic_transcendental_eigenvalue_ratios.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/arithmetic_transcendental_eigenvalue_ratios.md",
+      "source_sha256": "334b97d4659d2f29ed22c7615252cdb88e7d2d4c99e1a896083cea993475e0a5",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "Transcendental ratios and simplicity of every power"
+        },
+        {
+          "line": 6,
+          "level": 2,
+          "heading": "1. Result"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "heading": "2. The algebraic resultant"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "heading": "3. Powers and eigenangles"
+        },
+        {
+          "line": 113,
+          "level": 2,
+          "heading": "4. Frozen input"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_all_odd_no_algebraic_eigenvectors.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_all_odd_no_algebraic_eigenvectors.md",
+      "source_sha256": "6634de7f0ccaf56270467f03401aadd66732ba704567e4b0b47ebdd6a74677e2",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "No projectively algebraic eigenvectors in every odd dimension except 7"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "heading": "1. The statement"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "heading": "2. Inputs, gauge, and valuation"
+        },
+        {
+          "line": 120,
+          "level": 2,
+          "heading": "3. Endpoint bounds within a path"
+        },
+        {
+          "line": 167,
+          "level": 2,
+          "heading": "4. A mixed minor for all N=7n, n>=9"
+        },
+        {
+          "line": 265,
+          "level": 2,
+          "heading": "5. The three remaining multiple-of-seven dimensions"
+        },
+        {
+          "line": 320,
+          "level": 2,
+          "heading": "6. Dimensions not divisible by seven"
+        },
+        {
+          "line": 328,
+          "level": 2,
+          "heading": "7. Projective Lindemann--Weierstrass completion"
+        },
+        {
+          "line": 363,
+          "level": 2,
+          "heading": "8. Boundary of the result"
+        }
+      ]
+    },
+    {
+      "original_path": "research_round2_2026_10_20/root_all_time_algebraic_nonrecurrence.md",
+      "target": "mathematics/spectral_research/proofs/research_round2_2026_10_20/root_all_time_algebraic_nonrecurrence.md",
+      "source_sha256": "d4bb6ae891984cff12b9fb437b3c4bda2edb58247a3d0d398b4efb477d70e3a7",
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "heading": "No positive power lies on an algebraic matrix line"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "heading": "Theorem"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "heading": "1. The algebraic evaluation principle"
+        },
+        {
+          "line": 61,
+          "level": 2,
+          "heading": "2. Exact Egorov and a dominant coefficient"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "heading": "3. An incomplete-orbit estimate for every time"
+        },
+        {
+          "line": 150,
+          "level": 2,
+          "heading": "4. Projective evaluation proves the theorem"
+        },
+        {
+          "line": 182,
+          "level": 2,
+          "heading": "5. Exception and exact limitations"
+        }
+      ]
+    }
+  ]
+}

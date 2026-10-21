@@ -1,5 +1,21 @@
 # Claim ledger
 
+## Final spectral research integration, 21 October 2026
+
+| Claim | Current status | Scope |
+|---|---|---|
+| BGS-TRACE-108 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Quartic coordinate return](../mathematics/coordinate_return_quartic_20261021.md), one step at fixed coupling with explicit remainder; no microscopic pair limit |
+| BGS-TRACE-109 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Inserted trace and coboundary projection](../mathematics/inserted_trace_coboundary_20261021.md); arbitrary multiplicities handled, numerical asymptotic bound retains the older amplitude/sector construction |
+| BGS-TRACE-110 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Spectral orbit distance](../mathematics/spectral_orbit_distance_20261021.md); uniform original-family trace input (T) not fully independently closed here |
+| BGS-TRACE-111 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Full weighted Pell gradient/Hessian and forced inflection](../mathematics/pell_weighted_curvature_20261021.md); initial point and shrinking times, not the fixed positive parameter |
+
+[Complete integration and review](spectral_final_integration_20261021.md)
+accounts for all 535 source units, six historical version qualifications,
+56 bounded research checks and distinct original/fresh evidence. Source
+preservation and internal author audits are not blanket mathematical
+certification. Previously integrated TRACE-106/107 and TRACE-086 remain at
+their stated scopes. **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.**
+
 ## Physical-kick review, 21 October 2026
 
 **BGS-TRACE-106:** [Uniform physical-kick decay](../mathematics/physical_kick_trace_decay.md)

@@ -1,5 +1,16 @@
 # Open mathematical obligations
 
+## Remaining fixed-family task after the final spectral edition
+
+The [self-contained task](../record/remaining_breakthrough_task_20261021.md)
+supplies all definitions and the complete all-order criterion without file
+access. Even its first fixed band-two pair defect remains unestimated.
+After rotational-path removal the signed remainder must produce a nonzero
+negative plateau correction. TRACE-108's one-step quartic term and TRACE-111's
+initial curvature/early inflection do not evaluate that remainder.
+TRACE-109/110 additionally retain explicit older trace input qualifications.
+[Review](../record/spectral_final_integration_20261021.md).
+
 The [21 October physical-kick results](physical_kick_trace_decay.md) do not close
 the original signed Heisenberg hierarchy. [All-order polynomial replacement](physical_trace_polynomial_approximation.md) controls its approximation error,
 while the complete remaining signed polynomial sum is still unestimated.

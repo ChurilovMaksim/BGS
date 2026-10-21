@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "claim_id": "r7-explicit-finite-field-countermodel-exact-checks",
+  "repository": {
+    "commit": "unavailable: workspace has no readable Git revision",
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research_round7_2026_10_21/root_unipotent_exact_checks.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "arithmetic",
+        "version": "standard-library integers"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39; machine=x86_64; observed CPU count=9"
+  },
+  "mathematics": {
+    "assertion_tested": "For p in {5,7,11}: all cocycle tuples, all nonzero times, every finite-field linear term and endpoint pair; exact Gauss norms, reverse-edge phases/orthogonality, and traces for 0<=n<=2p agree with the written formulas.",
+    "coefficient_domain": "F_p and Z[X]/(1+X+...+X^(p-1)), p prime",
+    "conventions": "Finite-field fractions are modular inverses; Fourier F has positive exponent; C=F* V F; d=p^2.",
+    "inputs": [
+      "research_round7_2026_10_21/root_unipotent_flat_clock.md",
+      "research_round7_2026_10_21/root_unipotent_exact_checks.py"
+    ],
+    "bounds": {
+      "primes": [
+        5,
+        7,
+        11
+      ],
+      "max_dimension": 121,
+      "times": "all 0<=t<p; trace powers 0<=n<=2p",
+      "tuple_coverage": "exhaustive in each explicitly stated finite domain"
+    },
+    "non_claims": [
+      "No computation of the original fixed-kick spectrum; no finite test is used as a proof of an asymptotic.",
+      "No claim of historical novelty"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-21T09:34:38.190492+00:00",
+    "runtime_seconds": 1.9511952980001297,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "research_round7_2026_10_21/root_unipotent_exact_checks_result.json",
+      "sha256": "14b149e51d9e822189c440aa7119ad0588ccd8933ea06bdcfab94899fa48612b",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "all_endpoint_reverse_edge_phases",
+    "all_kernel_gauss_norms",
+    "all_linear_terms_square_completion",
+    "cycle_permutation",
+    "exact_centered_gauss_norm",
+    "exact_trace_norm",
+    "full_cocycle",
+    "hessian_determinant",
+    "hessian_inverse",
+    "mixed_endpoint_coefficient",
+    "prime_and_denominators",
+    "reverse_edge_nondegeneracy",
+    "reverse_edge_orthogonality",
+    "spectrum_dimension",
+    "spectrum_multiplicity_range",
+    "trace_from_spectrum_vs_monomial_operator",
+    "weighted_cycle_phase_product"
+  ],
+  "result": "all finite assertions passed",
+  "residual_risks": [
+    "Finite verification is bounded to the listed primes.",
+    "The all-prime and asymptotic claims require the separate proof."
+  ],
+  "input_artifacts": [
+    {
+      "path": "research_round7_2026_10_21/root_unipotent_exact_checks.py",
+      "sha256": "95bbf4f1fda813e32a32fdd4d3d00619205a8cb05b111f2561fd345be062682e",
+      "sha256_after": "95bbf4f1fda813e32a32fdd4d3d00619205a8cb05b111f2561fd345be062682e"
+    },
+    {
+      "path": "research_round7_2026_10_21/root_unipotent_flat_clock.md",
+      "sha256": "8f8e4cdbcd5c6576eb6bb9ce976d7a29ae4e77a310271576719ee8e39ad9d0bd",
+      "sha256_after": "8f8e4cdbcd5c6576eb6bb9ce976d7a29ae4e77a310271576719ee8e39ad9d0bd"
+    }
+  ],
+  "declared_results": [
+    "research_round7_2026_10_21/root_unipotent_exact_checks_result.json"
+  ],
+  "observed_max_rss_platform_units": 11520
+}

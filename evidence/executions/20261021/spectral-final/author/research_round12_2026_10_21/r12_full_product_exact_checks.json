@@ -1,0 +1,623 @@
+{
+  "status": "all integer assertions passed",
+  "scope": {
+    "odd_pell_indices": [
+      3,
+      103
+    ],
+    "number_of_indices": 51,
+    "shortest_alias_complete_enumeration_indices": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "spectral_statistics_computed": false,
+    "Bessel_or_large_N_asymptotics_numerically_verified": false
+  },
+  "input_sha256": {
+    "research_round12_2026_10_21/round12_target_checkpoint.md": "b39996f6cc4c86aebbf03b5a0775bf08b1ad250821b1b0bedd6c0c68767a0ec9",
+    "research_round11_2026_10_21/r11_arithmetic_pell_magnus.md": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+    "research_round8_2026_10_21/r8_weyl_quantitative_band_escape.md": "9982f37ec0faa8e6628dcb8d80b18fdb1005f2c2af119727526634a5c941f54a",
+    "research_round8_2026_10_21/r8_weyl_explicit_linear_degree_corollary.md": "227bf6ab1905006f57f54b30372419acb7f5db08c1a4b22f022f56f1d6097e52",
+    "research_round3_2026_10_21/arithmetic_flat_packet_obstruction_test.md": "58bcfa0d7db85583d23f16c8ab1e5327926e11221b102cb7c6d0128037abb1cc",
+    "research_round2_2026_10_20/fermionic_quantitative_pressure.md": "d9efc87ad9c2977b1ae3ca78da26e5f974ce119a22585bcd87e2c76cab5a74b2"
+  },
+  "self_sha256": "f0bcd6ebdb291aaff2c51835e0dd50f9271ff2d3a9f20ce8c5e042ffb78f6194",
+  "checks": [
+    {
+      "r": 3,
+      "N_digits": 2,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ],
+      "all_nonzero_aliases_l1_at_most_x": [
+        [
+          -6,
+          -1
+        ],
+        [
+          -1,
+          -6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "x": 7,
+      "y": 5,
+      "N": 35
+    },
+    {
+      "r": 5,
+      "N_digits": 4,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ],
+      "all_nonzero_aliases_l1_at_most_x": [
+        [
+          -35,
+          -6
+        ],
+        [
+          -6,
+          -35
+        ],
+        [
+          6,
+          35
+        ],
+        [
+          35,
+          6
+        ]
+      ],
+      "x": 41,
+      "y": 29,
+      "N": 1189
+    },
+    {
+      "r": 7,
+      "N_digits": 5,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ],
+      "all_nonzero_aliases_l1_at_most_x": [
+        [
+          -204,
+          -35
+        ],
+        [
+          -35,
+          -204
+        ],
+        [
+          35,
+          204
+        ],
+        [
+          204,
+          35
+        ]
+      ],
+      "x": 239,
+      "y": 169,
+      "N": 40391
+    },
+    {
+      "r": 9,
+      "N_digits": 7,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ],
+      "all_nonzero_aliases_l1_at_most_x": [
+        [
+          -1189,
+          -204
+        ],
+        [
+          -204,
+          -1189
+        ],
+        [
+          204,
+          1189
+        ],
+        [
+          1189,
+          204
+        ]
+      ],
+      "x": 1393,
+      "y": 985,
+      "N": 1372105
+    },
+    {
+      "r": 11,
+      "N_digits": 8,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 13,
+      "N_digits": 10,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 15,
+      "N_digits": 11,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 17,
+      "N_digits": 13,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 19,
+      "N_digits": 14,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 21,
+      "N_digits": 16,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 23,
+      "N_digits": 17,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 25,
+      "N_digits": 19,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 27,
+      "N_digits": 20,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 29,
+      "N_digits": 22,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 31,
+      "N_digits": 23,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 33,
+      "N_digits": 25,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 35,
+      "N_digits": 27,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 37,
+      "N_digits": 28,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 39,
+      "N_digits": 30,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 41,
+      "N_digits": 31,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 43,
+      "N_digits": 33,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 45,
+      "N_digits": 34,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 47,
+      "N_digits": 36,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 49,
+      "N_digits": 37,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 51,
+      "N_digits": 39,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 53,
+      "N_digits": 40,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 55,
+      "N_digits": 42,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 57,
+      "N_digits": 43,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 59,
+      "N_digits": 45,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 61,
+      "N_digits": 46,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 63,
+      "N_digits": 48,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 65,
+      "N_digits": 50,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 67,
+      "N_digits": 51,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 69,
+      "N_digits": 53,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 71,
+      "N_digits": 54,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 73,
+      "N_digits": 56,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 75,
+      "N_digits": 57,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 77,
+      "N_digits": 59,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 79,
+      "N_digits": 60,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 81,
+      "N_digits": 62,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 83,
+      "N_digits": 63,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 85,
+      "N_digits": 65,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 87,
+      "N_digits": 66,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 89,
+      "N_digits": 68,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 91,
+      "N_digits": 69,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 93,
+      "N_digits": 71,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 95,
+      "N_digits": 72,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 97,
+      "N_digits": 74,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 99,
+      "N_digits": 76,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 101,
+      "N_digits": 77,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    },
+    {
+      "r": 103,
+      "N_digits": 79,
+      "pell_crt_word_identities": true,
+      "basis_determinant_N": true,
+      "parametrization_box": [
+        -8,
+        8
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "scope": "Exact residue cycles and finite counting/Gram identities only; no original spectral statistic computed",
+  "base_expected_sha256": "e338400f1f360b680ea74c739283b296c9c67eb4e598c2067b136f9f29773777",
+  "cycles_residue_coordinates": [
+    [
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    [
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    [
+      [
+        1,
+        4
+      ]
+    ]
+  ],
+  "partition_inequality_exact_cases": 154700,
+  "partition_inequality_nonvacuous_cases": 45013,
+  "gram_copy_identity_cases": [
+    {
+      "N": 3,
+      "k": 1,
+      "value": "7201/2310"
+    },
+    {
+      "N": 3,
+      "k": 2,
+      "value": "28576/10395"
+    },
+    {
+      "N": 3,
+      "k": 3,
+      "value": "5848/10395"
+    },
+    {
+      "N": 5,
+      "k": 1,
+      "value": "7201/2310"
+    },
+    {
+      "N": 5,
+      "k": 2,
+      "value": "28576/9625"
+    },
+    {
+      "N": 5,
+      "k": 3,
+      "value": "5848/6875"
+    },
+    {
+      "N": 5,
+      "k": 4,
+      "value": "0"
+    },
+    {
+      "N": 7,
+      "k": 1,
+      "value": "7201/2310"
+    },
+    {
+      "N": 7,
+      "k": 2,
+      "value": "57152/18865"
+    },
+    {
+      "N": 7,
+      "k": 3,
+      "value": "23392/26411"
+    },
+    {
+      "N": 7,
+      "k": 4,
+      "value": "0"
+    }
+  ],
+  "gram_copy_zero_determinant_checks": 6,
+  "map_count_bound_cases": 451,
+  "rational_convexity_cases": 9460,
+  "exclusion_polynomial_bound_cases": 16951,
+  "selected_label_exclusion_cases": [
+    {
+      "k": 2,
+      "j": 1,
+      "value": "1577/210"
+    },
+    {
+      "k": 3,
+      "j": 1,
+      "value": "1171/105"
+    },
+    {
+      "k": 3,
+      "j": 2,
+      "value": "631/45"
+    },
+    {
+      "k": 4,
+      "j": 1,
+      "value": "51/7"
+    },
+    {
+      "k": 4,
+      "j": 2,
+      "value": "1436/105"
+    },
+    {
+      "k": 4,
+      "j": 3,
+      "value": "1822/105"
+    },
+    {
+      "k": 5,
+      "j": 1,
+      "value": "0"
+    },
+    {
+      "k": 5,
+      "j": 2,
+      "value": "30/7"
+    },
+    {
+      "k": 5,
+      "j": 3,
+      "value": "58/7"
+    },
+    {
+      "k": 5,
+      "j": 4,
+      "value": "32/3"
+    }
+  ],
+  "script_sha256": "dedc3277cf7b4d36cbf638d5cddcb99755537eb36d8a283263171954763448da",
+  "inputs": {
+    "research_history_frozen/master_before_round10.md": {
+      "sha256": "e338400f1f360b680ea74c739283b296c9c67eb4e598c2067b136f9f29773777",
+      "read_scope": "base hash only; not reread as a whole"
+    },
+    "research_round10_2026_10_21/round10_target_checkpoint.md": {
+      "sha256": "a35e09d5678b1f718f7deaa1c726afa5c692886010eb41f748e8f9f1624378f0",
+      "read_scope": "full"
+    },
+    "research_round9_2026_10_21/round9_continuation_ledger.md": {
+      "sha256": "e3709d1866dd9c9afc88e3cfdcb74efc421cd8f75cd9a01bd56f5d92b92b0bce",
+      "read_scope": "full"
+    },
+    "research_round9_2026_10_21/r9_arithmetic_galois_obstruction.md": {
+      "sha256": "19fc46287b04ee3dd88cfc16826b2e07e19f397b23d6e85a148844e12929ca27",
+      "read_scope": "full"
+    },
+    "research_round2_2026_10_20/root_all_odd_no_algebraic_eigenvectors.md": {
+      "sha256": "6634de7f0ccaf56270467f03401aadd66732ba704567e4b0b47ebdd6a74677e2",
+      "read_scope": "full"
+    },
+    "research_round4_2026_10_21/counter_subpolynomial_comb_quantitative.md": {
+      "sha256": "3b59bd021e393489cd709073e683a2dec137333e0e657849b0636a9f85f90def",
+      "read_scope": "full"
+    },
+    "research_round2_2026_10_20/arithmetic_iterated_all_oldspaces.md": {
+      "sha256": "853aeae71f699d0af37aa071202112603eb518a0e8614a65ca1f91246d2bd5b8",
+      "read_scope": "full (272 lines)"
+    },
+    "research_round3_2026_10_21/arithmetic_comb_rescaled_gap.md": {
+      "sha256": "898528107bfc2691c0f17fe6d8a096592c46de537b045c6bbc41949d0f3bfd2f",
+      "read_scope": "lines 1-250 only"
+    },
+    "research_round3_2026_10_21/arithmetic_seven_chain_cut_stability.md": {
+      "sha256": "d6ddc0695d91441729852ea5fc89d6318a1297b22eb4837cd5d3e0c930c3d349",
+      "read_scope": "full, across sequential reads"
+    },
+    "research_round7_2026_10_21/r7_original_full_cyclicity_laurent_unit.md": {
+      "sha256": "214c77697b087b6457a76272b0665072b7b6d7f1f72e5eca857876f2f3f9cf17",
+      "read_scope": "lines 1-240 only"
+    },
+    "research_round8_2026_10_21/r8_original_uniform_antiunitary_clifford_gap.md": {
+      "sha256": "96a22f2e1ef7b79af6fcbd3768f00adb4dac2bbadfef53545bac2199cf96d3e9",
+      "read_scope": "lines 430-520 only"
+    },
+    "research_round4_2026_10_21/root_character_collision_and_routing_audit.md": {
+      "sha256": "05bc62f64f2e7b51106c04f1f6b458dd77aa11bbff7c8fda8bb64fb868bc6bb4",
+      "read_scope": "full"
+    },
+    "research_round4_2026_10_21/counter_growing_routing_families.md": {
+      "sha256": "4a78ed247faa8791b34f85b0ee69a6696ac8f9578b7e6d836bf9965f11e30555",
+      "read_scope": "lines 260-460 only, including full Sections 4-6 after definitions"
+    },
+    "research_round9_2026_10_21/r9_sector_continuous_symbol_stability.md": {
+      "sha256": "0145256f03ad92f70a5852ecb11280dc3b1bccfa54b74af8b70e459b2e6577df",
+      "read_scope": "lines 335-410 only; phase matching passage"
+    },
+    "research_round10_2026_10_21/r10_weyl_orderwise_repulsion_stability.md": {
+      "sha256": "63ddeba5e72b200bf3dd16bed795423d4ed7e070a0b0e3f55fa30b93d3bc53d2",
+      "read_scope": "full candidate for independent audit"
+    },
+    "research_round10_2026_10_21/r10_weyl_downward_moment_heredity.md": {
+      "sha256": "ba5e5fb7b2d812c8b9a9f28f2f555412399d0e749d941af2723137be206c65dd",
+      "read_scope": "full initial and intermediate mathematical text, then exact raw-byte reconstruction of both cosmetic repairs to final ba5e5fb7..."
+    }
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "scope": "Exhaustive exact rational enumeration of 16 protected points; no quantum asymptotic experiment",
+  "point_count": 16,
+  "fixed_points": 4,
+  "primitive_two_cycles": 6,
+  "all_starting_points_checked": true,
+  "cycles": [
+    {
+      "orbit": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "d": 1,
+      "B_mod_1": "0",
+      "C": "9/10"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "3/8"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "1/4"
+        ],
+        [
+          "0",
+          "3/4"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "1/4",
+      "C": "9/5"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "3/8"
+        ],
+        [
+          "1/2",
+          "1/8"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "d": 1,
+      "B_mod_1": "1/2",
+      "C": "9/10"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "5/8"
+        ],
+        [
+          "1/2",
+          "7/8"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    },
+    {
+      "orbit": [
+        [
+          "0",
+          "7/8"
+        ],
+        [
+          "1/2",
+          "5/8"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "orbit": [
+        [
+          "1/2",
+          "0"
+        ]
+      ],
+      "d": 1,
+      "B_mod_1": "3/4",
+      "C": "-11/10"
+    },
+    {
+      "orbit": [
+        [
+          "1/2",
+          "1/4"
+        ],
+        [
+          "1/2",
+          "3/4"
+        ]
+      ],
+      "d": 2,
+      "B_mod_1": "3/4",
+      "C": "-11/5"
+    },
+    {
+      "orbit": [
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "d": 1,
+      "B_mod_1": "3/4",
+      "C": "-11/10"
+    }
+  ],
+  "all_point_rows": [
+    {
+      "point": [
+        "0",
+        "0"
+      ],
+      "primitive_period": 1,
+      "lifted_path": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "winding": [
+        "0",
+        "0"
+      ],
+      "half_action": "0",
+      "odd_character_parity": 0,
+      "reduced_action": "0",
+      "B_mod_1": "0",
+      "C": "9/10"
+    },
+    {
+      "point": [
+        "0",
+        "1/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "1/8"
+        ],
+        [
+          "-1/2",
+          "3/8"
+        ],
+        [
+          "-3",
+          "17/8"
+        ]
+      ],
+      "winding": [
+        "-3",
+        "2"
+      ],
+      "half_action": "-3/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-51/16",
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "0",
+        "1/4"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "1/4"
+        ],
+        [
+          "-1",
+          "3/4"
+        ],
+        [
+          "-6",
+          "17/4"
+        ]
+      ],
+      "winding": [
+        "-6",
+        "4"
+      ],
+      "half_action": "-3/4",
+      "odd_character_parity": 0,
+      "reduced_action": "-51/4",
+      "B_mod_1": "1/4",
+      "C": "9/5"
+    },
+    {
+      "point": [
+        "0",
+        "3/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "3/8"
+        ],
+        [
+          "-3/2",
+          "9/8"
+        ],
+        [
+          "-9",
+          "51/8"
+        ]
+      ],
+      "winding": [
+        "-9",
+        "6"
+      ],
+      "half_action": "-27/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-459/16",
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "0",
+        "1/2"
+      ],
+      "primitive_period": 1,
+      "lifted_path": [
+        [
+          "0",
+          "1/2"
+        ],
+        [
+          "-2",
+          "3/2"
+        ]
+      ],
+      "winding": [
+        "-2",
+        "1"
+      ],
+      "half_action": "-1/2",
+      "odd_character_parity": 0,
+      "reduced_action": "-3/2",
+      "B_mod_1": "1/2",
+      "C": "9/10"
+    },
+    {
+      "point": [
+        "0",
+        "5/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "5/8"
+        ],
+        [
+          "-5/2",
+          "15/8"
+        ],
+        [
+          "-15",
+          "85/8"
+        ]
+      ],
+      "winding": [
+        "-15",
+        "10"
+      ],
+      "half_action": "-75/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-1275/16",
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "0",
+        "3/4"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "3/4"
+        ],
+        [
+          "-3",
+          "9/4"
+        ],
+        [
+          "-18",
+          "51/4"
+        ]
+      ],
+      "winding": [
+        "-18",
+        "12"
+      ],
+      "half_action": "-27/4",
+      "odd_character_parity": 0,
+      "reduced_action": "-459/4",
+      "B_mod_1": "1/4",
+      "C": "9/5"
+    },
+    {
+      "point": [
+        "0",
+        "7/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "0",
+          "7/8"
+        ],
+        [
+          "-7/2",
+          "21/8"
+        ],
+        [
+          "-21",
+          "119/8"
+        ]
+      ],
+      "winding": [
+        "-21",
+        "14"
+      ],
+      "half_action": "-147/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-2499/16",
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "0"
+      ],
+      "primitive_period": 1,
+      "lifted_path": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "3/2",
+          "-1"
+        ]
+      ],
+      "winding": [
+        "1",
+        "-1"
+      ],
+      "half_action": "1/4",
+      "odd_character_parity": 1,
+      "reduced_action": "-1/4",
+      "B_mod_1": "3/4",
+      "C": "-11/10"
+    },
+    {
+      "point": [
+        "1/2",
+        "1/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "1/8"
+        ],
+        [
+          "1",
+          "-5/8"
+        ],
+        [
+          "11/2",
+          "-31/8"
+        ]
+      ],
+      "winding": [
+        "5",
+        "-4"
+      ],
+      "half_action": "21/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-139/16",
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "1/4"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "1/4"
+        ],
+        [
+          "1/2",
+          "-1/4"
+        ],
+        [
+          "5/2",
+          "-7/4"
+        ]
+      ],
+      "winding": [
+        "2",
+        "-2"
+      ],
+      "half_action": "3/4",
+      "odd_character_parity": 0,
+      "reduced_action": "-5/4",
+      "B_mod_1": "3/4",
+      "C": "-11/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "3/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "3/8"
+        ],
+        [
+          "0",
+          "1/8"
+        ],
+        [
+          "-1/2",
+          "3/8"
+        ]
+      ],
+      "winding": [
+        "-1",
+        "0"
+      ],
+      "half_action": "-3/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-3/16",
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "1/2"
+      ],
+      "primitive_period": 1,
+      "lifted_path": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "-1/2",
+          "1/2"
+        ]
+      ],
+      "winding": [
+        "-1",
+        "0"
+      ],
+      "half_action": "-1/4",
+      "odd_character_parity": 0,
+      "reduced_action": "-1/4",
+      "B_mod_1": "3/4",
+      "C": "-11/10"
+    },
+    {
+      "point": [
+        "1/2",
+        "5/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "5/8"
+        ],
+        [
+          "-1",
+          "7/8"
+        ],
+        [
+          "-13/2",
+          "37/8"
+        ]
+      ],
+      "winding": [
+        "-7",
+        "4"
+      ],
+      "half_action": "-51/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-275/16",
+      "B_mod_1": "13/16",
+      "C": "-1/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "3/4"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "3/4"
+        ],
+        [
+          "-3/2",
+          "5/4"
+        ],
+        [
+          "-19/2",
+          "27/4"
+        ]
+      ],
+      "winding": [
+        "-10",
+        "6"
+      ],
+      "half_action": "-21/4",
+      "odd_character_parity": 0,
+      "reduced_action": "-141/4",
+      "B_mod_1": "3/4",
+      "C": "-11/5"
+    },
+    {
+      "point": [
+        "1/2",
+        "7/8"
+      ],
+      "primitive_period": 2,
+      "lifted_path": [
+        [
+          "1/2",
+          "7/8"
+        ],
+        [
+          "-2",
+          "13/8"
+        ],
+        [
+          "-25/2",
+          "71/8"
+        ]
+      ],
+      "winding": [
+        "-13",
+        "8"
+      ],
+      "half_action": "-123/16",
+      "odd_character_parity": 0,
+      "reduced_action": "-955/16",
+      "B_mod_1": "5/16",
+      "C": "-1/5"
+    }
+  ],
+  "one_step_liminf_coefficient_times_pi_tau": "12297/250"
+}

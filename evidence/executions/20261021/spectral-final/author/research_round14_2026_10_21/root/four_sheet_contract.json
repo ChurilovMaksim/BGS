@@ -1,0 +1,14 @@
+{
+  "claim_id": "R14_FINITE_FOUR_SHEET_ALGEBRA",
+  "mathematics": {
+    "assertion_tested": "In Q[i][z,z^-1], the complete fourth Hamilton-Jacobi momentum coefficient from the three recursive formulas equals (i^3/96)D_4^3(u^4), and its mode two coefficient yields -25823/4800000000000 in units pi^4*tau^4. Also verify the Gauss identity for every odd N residue and every d residue modulo 8.",
+    "coefficient_domain": "Exact rational complex pairs Q[i]; exact Z[zeta_8] residues",
+    "conventions": "D_n(z^k)=i(k-3n/4)z^k with kappa set to 1; g_n has separately proved homogeneity kappa^(2n-2). u=(-3-4i)R/1000, R=(1+cos 7q)(1-cos q).",
+    "inputs": ["The explicit nine Fourier coefficients of R", "The fourth-order Hamilton-Jacobi recurrence", "All 9^4 ordered Fourier label tuples", "All four odd N residues and all eight d residues modulo 8"],
+    "bounds": {"time_order": 4, "R_max_frequency": 8, "R_fourier_terms": 9, "ordered_four_tuples": 6561, "gauss_residue_cases": 32},
+    "non_claims": ["No spectral simulation", "No long-time estimate", "No proof or counterexample to H_diag", "The analytic and asymptotic arguments are outside this finite computation"]
+  },
+  "execution_artifacts": ["research_round14_2026_10_21/root/check_four_sheet_algebra.py"],
+  "software": [{"name": "Python", "version": "3.12.14"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

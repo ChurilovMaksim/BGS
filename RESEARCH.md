@@ -1,5 +1,15 @@
 # BGS research brief
 
+## Final spectral corpus, 21 October 2026
+
+The [thematic research edition](mathematics/spectral_research/README.md)
+preserves all 535 source units of the final supplied master. TRACE-108 gives
+the quartic one-step coordinate return; TRACE-111 gives the full weighted
+initial gradient/Hessian and forced early inflection. TRACE-109/110 retain
+explicit older analytic input qualifications. [Complete review](record/spectral_final_integration_20261021.md)
+and [independent remaining task](record/remaining_breakthrough_task_20261021.md).
+BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Physical-kick bounds, 21 October 2026
 
 [Uniform trace decay and scalar-distance limits](mathematics/physical_kick_trace_decay.md)

@@ -1,0 +1,1706 @@
+{
+  "N7_mean_scaled4000": [
+    3600,
+    0
+  ],
+  "arithmetic": "exact Gaussian integers; coefficient scale 4000",
+  "assertion_tested": "Coefficient uniqueness and complete signed Weyl-index symmetry classification with trivial character for odd 3 <= N <= 99, N != 7.",
+  "candidate_linear_maps": 5600,
+  "character_reduction": "Proved separately using Q(i) intersect mu_N = {1} for odd N.",
+  "dimension_count": 48,
+  "dimensions": [
+    {
+      "N": 3,
+      "candidate_linear_maps": 48,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        -200,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -6,
+        -8
+      ],
+      "pure_q_scaled4000": [
+        [
+          1,
+          [
+            1900,
+            -15
+          ]
+        ],
+        [
+          2,
+          [
+            1900,
+            15
+          ]
+        ]
+      ],
+      "q_basis_scaled4000": [
+        1900,
+        -15
+      ],
+      "support_size": 8
+    },
+    {
+      "N": 5,
+      "candidate_linear_maps": 80,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "pure_q_scaled4000": [
+        [
+          1,
+          [
+            100,
+            -35
+          ]
+        ],
+        [
+          2,
+          [
+            1700,
+            -20
+          ]
+        ],
+        [
+          3,
+          [
+            1700,
+            20
+          ]
+        ],
+        [
+          4,
+          [
+            100,
+            35
+          ]
+        ]
+      ],
+      "q_basis_scaled4000": [
+        100,
+        -35
+      ],
+      "support_size": 14
+    },
+    {
+      "N": 9,
+      "candidate_linear_maps": 104,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "pure_q_scaled4000": [
+        [
+          1,
+          [
+            100,
+            -30
+          ]
+        ],
+        [
+          2,
+          [
+            1800,
+            -10
+          ]
+        ],
+        [
+          3,
+          [
+            -100,
+            10
+          ]
+        ],
+        [
+          4,
+          [
+            0,
+            5
+          ]
+        ],
+        [
+          5,
+          [
+            0,
+            -5
+          ]
+        ],
+        [
+          6,
+          [
+            -100,
+            -10
+          ]
+        ],
+        [
+          7,
+          [
+            1800,
+            10
+          ]
+        ],
+        [
+          8,
+          [
+            100,
+            30
+          ]
+        ]
+      ],
+      "q_basis_scaled4000": [
+        100,
+        -30
+      ],
+      "support_size": 22
+    },
+    {
+      "N": 11,
+      "candidate_linear_maps": 128,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 28
+    },
+    {
+      "N": 13,
+      "candidate_linear_maps": 96,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 24
+    },
+    {
+      "N": 15,
+      "candidate_linear_maps": 96,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 24
+    },
+    {
+      "N": 17,
+      "candidate_linear_maps": 128,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 30
+    },
+    {
+      "N": 19,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 21,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 23,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 25,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 27,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 29,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 31,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 33,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 35,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 37,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 39,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 41,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 43,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 45,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 47,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 49,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 51,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 53,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 55,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 57,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 59,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 61,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 63,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 65,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 67,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 69,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 71,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 73,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 75,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 77,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 79,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 81,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 83,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 85,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 87,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 89,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 91,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 93,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 95,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 97,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    },
+    {
+      "N": 99,
+      "candidate_linear_maps": 120,
+      "matches": [
+        {
+          "antiunitary": false,
+          "columns": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sign": 1
+        }
+      ],
+      "mean_scaled4000": [
+        0,
+        0
+      ],
+      "p_basis_scaled4000": [
+        -12,
+        -16
+      ],
+      "q_basis_scaled4000": [
+        200,
+        -20
+      ],
+      "support_size": 32
+    }
+  ],
+  "non_claims": [
+    "No numerical inference of a universal theorem.",
+    "No claim about arbitrary non-Clifford antiunitaries.",
+    "No spectral-statistics or Hdiag conclusion."
+  ]
+}

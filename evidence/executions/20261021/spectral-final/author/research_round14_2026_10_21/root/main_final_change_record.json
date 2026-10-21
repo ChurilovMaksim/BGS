@@ -1,0 +1,14 @@
+{
+  "audited_previous_main_sha256": "b6323a290bf57a6b768bc27c0f388eda4609c8d409325b8ac2d3792b38921e84",
+  "final_main_sha256": "bb918b2eee610a62e22c7c5778f34ba3afe14880cd3183328e8d8820a98f021b",
+  "previous_bytes": 55728,
+  "final_bytes": 69846,
+  "changes": [
+    "Add section 5.5: full t=0 weighted gradient, Hessian, forced inflection, analytic-window limitation, and fixed-tau return-defect scope",
+    "Add section 5.6: final concrete arithmetic-resonance test",
+    "Make positive lower time indices explicit in section 5",
+    "State pairing before the pure imaginary cross-clock geometric coefficient"
+  ],
+  "inverse_removal_of_added_sections_and_reversal_of_positive_index_clarification_restores_exact_audited_main": true,
+  "no_changes_to_sections_1_through_4_or_6_through_8": true
+}

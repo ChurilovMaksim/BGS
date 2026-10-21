@@ -1,0 +1,70 @@
+{
+  "status": "finite_identity_audit_with_local_return_curvature_theorem_no_Hdiag_claim",
+  "master_unchanged_sha256": "fe0812b16e1e559d596e8e848dea5d21cea6cf81aec05f39da7d44fc4bb6d45a",
+  "original_root_target_sha256": "bd0e8abdf64df6f0bb1d8d59ff83613ed0418978bdd55b00215e906e0ad54b36",
+  "inputs": [
+    {
+      "path": "research_round11_2026_10_21/root_parametric_eigenphase_dynamics.md",
+      "sha256": "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb",
+      "read_scope": "Initial whole text and both complete later deltas read and audited; final delta only clarifies upper-bound ratio scope"
+    },
+    {
+      "path": "research_round11_2026_10_21/root_parametric_exact_check.py",
+      "sha256": "d0b55e0c876eafdbb5e8cdf27fb624ce85b20e2feb1db7308876daa2fbb047fb",
+      "read_scope": "Whole source read"
+    },
+    {
+      "path": "research_round11_2026_10_21/root_parametric_exact_results.json",
+      "sha256": "59596b62d273a936255fbf623a05f2635d13a48ab848bbd16c3c4221ed8f7210",
+      "read_scope": "Whole result read; coefficient list independently reconstructed"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_arithmetic_pell_magnus.md",
+      "sha256": "83fef65536de1e5528ad8e4d5eebf39a2b42d7da4217274a32c1e4e6dc7707d5",
+      "read_scope": "Sections 1-9 read in full; Section 10 partly read; claims used from Sections 1-5 and 8-9 audited"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_checks.py",
+      "sha256": "0e3e67a7439681c699a5421bb5df68449d5a8f750e5da2e8423de083e58a4bf3"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_checks.json",
+      "sha256": "fecda8453e22b32abe78df680f1ac1dc7e0827a4bf82d0791b9ca78fae0f317f"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_wolfram.wl",
+      "sha256": "16642f1f3b14caac317df4ee7544e5f2fb9d529feb7997d88c1ed930c4dde8f9"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_wolfram_record.json",
+      "sha256": "851784289ecfba7b421abf6e0fe8f094a9f582fcef177b62bb18951ac1ba41d4"
+    },
+    {
+      "path": "research_round11_2026_10_21/r11_coherent_parametric_audit.md",
+      "sha256": "f600be6e7a6f2158ce5e50ef41ccdccca96f0da5ca3c5b4ece8b9b727038422e"
+    }
+  ],
+  "primary_source": {
+    "url": "https://arxiv.org/pdf/nlin/0006022",
+    "version": "nlin/0006022v3",
+    "read_scope": "All five pages of the retrieved text"
+  },
+  "checks": {
+    "independent_coefficient_reconstruction": "pass",
+    "Q98_isolation": "pass",
+    "finite_orbit_examples": [
+      101,
+      105,
+      121,
+      143
+    ],
+    "wolfram_characteristic_residual": "exact zero after explicit determinant convention correction"
+  },
+  "audited_root_versions": [
+    "bd0e8abdf64df6f0bb1d8d59ff83613ed0418978bdd55b00215e906e0ad54b36",
+    "fb2fd778c9de7e2568a291ae766d17b5a04e225f374c7d62b2d2481fbde17656",
+    "1d9020c850984fcc884c81dfaeb243ea455792a03429436fdb93a9fc8f32dcdb"
+  ]
+}

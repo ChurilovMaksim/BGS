@@ -1,5 +1,15 @@
 # Scientific status and research record
 
+## Final spectral source edition
+
+[Integration, mathematical review and corrections](spectral_final_integration_20261021.md),
+[complete catalog](spectral_research/catalog.json),
+[per-proof review matrix](spectral_research/review_matrix.md),
+[section-level inventories](spectral_research/sections/README.md), and
+[standalone remaining task](remaining_breakthrough_task_20261021.md).
+The mathematical [reading edition](../mathematics/spectral_research/README.md)
+is organized by topic; the original source archive is a provenance backup.
+
 ## External spectral snapshot, 21 October 2026
 
 [Bounded proof audit, strengthened results and remaining review queue](spectral_master_audit_20261021.md).
