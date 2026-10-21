@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -352,6 +352,13 @@
       "disposition": "example claim registered as proved on the named exact finite certificate; stale 'unnamed certificate' wording removed from BGS-RET-003",
       "downstream": "record/claims.json and record/claim_registry.md gain BGS-RET-004 (PROVED) for the explicit example of manuscript/unified_sections/return_words.tex: tower disjointness rests on computations/cpp/return_word_certificate.cpp (named in the section, git blob ad80a3832555fac3a0afea2013a60a3de6522113; deposited PASS log) and on computations/verification/noncommuting_tower.py, whose exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced margin 37/528, 30 separations and the 1/288 area bound. BGS-RET-003 keeps its CONDITIONAL state; only its boundary tail is corrected, because the section does name the certificate.",
       "authority": "record/errata.json (scientific repair follow-up, 2026-10-20)"
+    },
+    {
+      "id": "ERR-051",
+      "title": "ND.10 margin report reconstructed from the deposited certificate; explicit constant verified; new claim BGS-RES-023",
+      "disposition": "margin-report gap (review finding F-15; text marker added in the 2026-10-20 scientific repair) closed by reconstruction: the quantitative compilation rule printed in the section was implemented in exact rational arithmetic over the deposited radius-eight certificate, producing a valid integer B with 712 binary digits, hence B <= 2^714 and the explicit constant of (ND.10) is recheckable from deposited materials; the 'certificate not in repository' marker is removed",
+      "downstream": "New deposits: computations/verification/resonance_nondegeneracy_margin.py (quantitative compiler; SHA-256 7837448984f0849da510e1eb3bc240d68953b525311d87c77be923221ca94e7c) and evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_margin.json (reconstructed margin report: the exact integer B, all 105 refutation-child bounds and all 144 final variable bounds). Two independent implementations of the compiler produced the identical integer B = 10903138006885609236303645681036445652092448503236660095433749448140870687126503932503067765649880683195400080147209105771921647025190251832351509507048924272543297838428942812751161026711828729692160000000000000000 (712 binary digits, 215 decimal digits); the maximal requirement is the final bound of variables 14 and 18, (L+1)/p with L = 9. The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the printed bound is confirmed a fortiori by the smaller valid reconstructed integer. manuscript/unified_sections/nondegeneracy_part4.tex and mathematics/resonance_nondegeneracy_and_hessian.md now name the reconstructed report in place of the gap marker. Registered as BGS-RES-023 (PROVED), fulfilling registry proposal F-20(a) for (ND.10); the F-20(b) downgrade to the compactness statement is not applied.",
+      "authority": "record/errata.json (ND.10 closure, 2026-10-21)"
     }
   ]
 }

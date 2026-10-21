@@ -259,8 +259,7 @@ digits, so the simple upper bound $B\leq2^{714}$ suffices. The preceding
 argument gives $\max_j|Q_j|>2^{-B}$ on $\max_i|z_i|=1$. Since
 $\|g\|_2^4\leq4n_R^2(\max_i|z_i|)^4$, (6) yields
 $\Gamma_T(g)\geq[\pi^2/(2n_R^2)]2^{-2B}\|g\|_2^4$; with $n_8=144$ this
-implies (10). The exact, much less conveniently printed integer and every
-intermediate rational bound are retained in the margin report.
+implies (10). The exact, much less conveniently printed integer and every intermediate rational bound are retained in the margin report. The original margin report was not deposited; it was reconstructed on 2026-10-21 from the deposited certificate by an exact-rational-arithmetic implementation of the compilation rule above (`computations/verification/resonance_nondegeneracy_margin.py`), and the reconstructed report is deposited at `evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_margin.json`. The reconstructed integer has 712 binary digits, confirming $B\leq2^{714}$ and hence (10) from deposited materials; two independent implementations of the compiler agree on the reconstructed integer.
 
 # 4. An invariant Hessian obstruction for every hyperbolic matrix
 

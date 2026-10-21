@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "status_authority": "record/claim_ledger.md",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -4828,6 +4828,30 @@
         "manuscript/unified_sections/return_words.tex"
       ],
       "boundary": "The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data."
+    },
+    {
+      "id": "BGS-RES-023",
+      "title": "Constructive margin for the radius-eight certificate (ND.10): explicit constant pi^2/41472 * 2^(-2^715)",
+      "state": "proved",
+      "ledger_status": "PROJECT PROOF + DEPOSITED CERTIFICATE + RECONSTRUCTED MARGIN COMPUTATION (TWO INDEPENDENT IMPLEMENTATIONS AGREE)",
+      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "dependencies": [
+        "BGS-RES-022"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json",
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_margin.json"
+      ],
+      "verifiers": [
+        "computations/verification/resonance_nondegeneracy_margin.py",
+        "computations/verification/check_resonance_certificate.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/nondegeneracy_part4.tex"
+      ],
+      "boundary": "Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."
