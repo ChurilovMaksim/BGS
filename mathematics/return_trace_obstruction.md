@@ -1,6 +1,6 @@
 # Short quantum returns, intensity loss, and local spectral limits
 
-**Status:** project proof with adversarial self-review. Finite computations are
+**Status:** project proof with adversarial checking by the author. Finite computations are
 separate evidence. The positivity mechanism has close published antecedents;
 priority is unverified. Cat-map applications depend on the existing return-law
 proofs, whose limited internal-review status is unchanged. BGS remains open.

@@ -3,7 +3,7 @@
 **Status.** Project proof with exact finite algebra checks and separately
 labelled floating physical diagnostics. Limited independent internal
 analytic checks cover Sections 1–5 and 8–10; they are not external referee
-acceptance. The coupling and joint-law extension are self-reviewed.
+acceptance. The coupling and joint-law extension have been checked by the author.
 Priority verification and Lean formalization are outstanding. Base revision:
 9ed93cd1bc5e3362c1dbf520f0f391478dfb6969.
 

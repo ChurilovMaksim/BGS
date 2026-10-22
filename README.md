@@ -10,6 +10,8 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
 
+*GPT 6 and Muse Spark 1.3 were used for repository work, verification, and code implementation.*
+
 ## What the conjecture asks
 
 Bohigas, Giannoni and Schmit's [1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) connected chaotic quantum spectra with universal random-matrix fluctuations. A rigorous theorem needs a specified quantum family, the correct symmetry sector, a justified unfolding, and a local correlation limit. Classical hyperbolicity alone does not automatically guarantee a particular symmetry class or a universal spectrum.

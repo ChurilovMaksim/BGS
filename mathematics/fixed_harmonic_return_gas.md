@@ -1,6 +1,6 @@
 # Fixed-harmonic returns from a convergent complex gas
 
-**Status.** Project proof, self-reviewed, with separately scoped exact finite
+**Status.** Project proof, checked by the author, with separately scoped exact finite
 checks and floating matrix experiments. Independent review and priority
 verification are outstanding. The starting repository revision is
 9ed93cd1bc5e3362c1dbf520f0f391478dfb6969; this note also uses the uncommitted

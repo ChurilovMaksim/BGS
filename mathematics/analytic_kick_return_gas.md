@@ -1,6 +1,6 @@
 # Analytic and smooth position kicks: resonances and return asymptotics
 
-**Status.** Project proof with self-review and finite exact controls;
+**Status.** Project proof, checked by the author, with finite exact controls;
 independent review and priority verification remain open.
 Base revision: 9ed93cd1bc5e3362c1dbf520f0f391478dfb6969.
 The arithmetic setup and complex-gas lemma are those of

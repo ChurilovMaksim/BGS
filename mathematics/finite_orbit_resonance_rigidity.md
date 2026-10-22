@@ -6,7 +6,7 @@ Date: 22 September 2026. Repository: `ChurilovMaksim/BGS`.
 
 Base revision: `39d4e01ae6a6b3eb472ab30266b708ca71a70a16` (`main`).
 
-**Status:** project proof with author-level adversarial self-review and separate
+**Status:** project proof with adversarial checking by the author and separate
 finite exact regressions. Not independently refereed, not Lean-certified,
 and no external priority or BGS solution is claimed. The finite-Fourier
 independence theorem and common real all-pass invariance are existing
