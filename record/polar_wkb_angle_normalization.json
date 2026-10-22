@@ -1,8 +1,0 @@
-{
-  "source": "mathematics/polar_wkb_quantization_stability.md",
-  "accepted_curated_sha256": "73442f0d0cb2cea9b102655440ad971ea672eb55d48800ecd8673f47221ddebb",
-  "clarified_sha256": "e1c13a72bd4c070b448ba3c1a94188485729c8f7459c4d6cf559a7cb57c305c7",
-  "before": "almost every s their velocities are (2pi N)^-1 times diagonal entries of\nB_N in an eigenbasis of U_s.",
-  "after": "almost every s, writing theta_j for radian eigenangles and b_j for the\ndiagonal entries of B_N in an eigenbasis of U_s, the conventions are\nexplicitly theta_j'=b_j/N, (theta_j/(2pi))'=b_j/(2pi N), and\nx_j'=b_j/(2pi) for unfolded coordinates x_j=N theta_j/(2pi).",
-  "scope": "Clarifies radian, normalized-circle and unfolded velocities. Displayed endpoint bound D and all theorem/rate statements are unchanged."
-}
