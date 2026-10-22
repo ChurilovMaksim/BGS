@@ -8,11 +8,20 @@ the informal analytic corpus is substantially larger.
 
 ## Build and current receipt
 
-From the repository root:
+From the repository root, on a fresh clone first fetch the prebuilt
+Mathlib artifacts for the pinned revision (otherwise Lake would compile
+Mathlib from source), then build:
 
 ```sh
-(cd formalization && lake build)
+(cd formalization && lake exe cache get && lake build)
 ```
+
+With the dependencies already present under `formalization/.lake/`, a
+plain `lake build` suffices. Mathlib is pinned at rev v4.33.1 in
+`lake-manifest.json`, matching the toolchain. On 22 October 2026 the
+unchanged library (24 modules plus the root, 27 Lake jobs) was rebuilt
+locally against the adopted Mathlib: `lake build` exit 0, no errors or
+warnings.
 
 The pinned release is **Lean 4.33.1**. The
 [11 October execution](../evidence/executions/20261011/chat-research/fresh/lean_execution.json)
@@ -28,8 +37,8 @@ formal progress.
 The standalone `FiniteOrbitAlgebra20260922.lean` (22 September 2026) is
 retained as a draft at `drafts/FiniteOrbitAlgebra20260922.lean`, outside
 the active graph. It is source only and has not been typechecked; it
-imports Mathlib, which this project does not vendor (`lake-manifest.json`
-records no packages).
+imports Mathlib, which the project now declares as a pinned dependency
+(rev v4.33.1). The draft remains outside the active graph and unbuilt.
 
 ## Active modules
 

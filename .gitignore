@@ -13,8 +13,7 @@ build/
 *.exe
 
 # Lean generated state
-formalization/.lake/build/
-formalization/.lake/packages/
+formalization/.lake/
 
 # LaTeX build products (generated PDFs stay outside manuscript/)
 manuscript/*.aux
