@@ -4,7 +4,7 @@
 
 **Exact scope:** The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S08` is preserved verbatim in [the imported record](../record/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s08). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S08` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s08). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
 
 
 Date: 2026-10-15.

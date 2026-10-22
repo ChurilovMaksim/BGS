@@ -301,7 +301,7 @@ Use the current source-of-truth hierarchy and corrected Weyl conventions. Histor
 
 ## Previous chronological catalogue
 
-The previous catalogue is retained byte-for-byte in [the dated snapshot](../record/history/2026/corpus_revision_20261006/mathematics__results.md.txt). Its dated open/closed statements must be read against the current ledger. No proof or execution evidence was deleted during this editorial separation.
+The previous catalogue is retained byte-for-byte in [the dated snapshot](../archive/history/2026/corpus_revision_20261006/mathematics__results.md.txt). Its dated open/closed statements must be read against the current ledger. No proof or execution evidence was deleted during this editorial separation.
 
 <!-- Stable fragment targets retained from the pre-revision reader entry. -->
 <a id="current-results-and-exact-scope"></a>
@@ -389,7 +389,7 @@ residual projector remains unestimated; this does not settle higher orders.
 The exact signed complement, plateau/torsion mechanism and higher factorial
 hierarchy remain open; no BGS conclusion follows.
 
-[Earlier detailed checkpoints](../record/history/2026/cohesive_frontier_20261006/prior_results_tail.txt)
+[Earlier detailed checkpoints](../archive/history/2026/cohesive_frontier_20261006/prior_results_tail.txt)
 retain component provenance; current statements are the linked theorem owners.
 
 

@@ -1,0 +1,42 @@
+{
+  "verdict": "proved as written",
+  "scope": "Only the three full actual cat eigenspaces of dimensions 3,2,2 for N=7*5^(2r), r>=2",
+  "target_sha256": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+  "source_paths": {
+    "uniform_oldform_second_jet.md": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/uniform_oldform_second_jet.md",
+    "oldform_second_jet_residue.py": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/oldform_second_jet_residue.py",
+    "oldform_second_jet_residue.json": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/oldform_second_jet_residue.json",
+    "even_depth_first_order_obstruction.md": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/even_depth_first_order_obstruction.md",
+    "uniform_cat_multiplicity_v2.md": "/workspace/shared/bgs_seven_adic_resume/cat_splitting/uniform_cat_multiplicity_v2.md",
+    "fixed_model_symmetry_theorem.md": "/workspace/shared/BGS/mathematics/fixed_model_symmetry_theorem.md",
+    "frozen_antireversor.py": "/workspace/shared/BGS/computations/verification/frozen_antireversor.py",
+    "field15625.py": "/workspace/shared/bgs_seven_adic_resume/field15625.py",
+    "reduced_chain_charpolys.py": "/workspace/shared/bgs_seven_adic_resume/spectral_extension/reduced_chain_charpolys.py",
+    "oldform_obstruction_REPORT.md": "/workspace/shared/bgs_oldform_obstruction_review/REPORT.md"
+  },
+  "source_hashes": {
+    "uniform_oldform_second_jet.md": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+    "oldform_second_jet_residue.py": "d1fbca99a5dd6bab0b2f62cce0470adf47cfa67c34a0cfdca5aaa8858f70758e",
+    "oldform_second_jet_residue.json": "43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459",
+    "even_depth_first_order_obstruction.md": "37482d57477777ac40bc6a6375bcbf53667f16070e1bcf7e33db04fb9737f654",
+    "uniform_cat_multiplicity_v2.md": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e",
+    "fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+    "field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "oldform_obstruction_REPORT.md": "f208aecb761c8bf7da960da994dc3dcbc08b8e88269aad040232b87573758224"
+  },
+  "files": {
+    "REPORT.md": "c3a98ad153737e4cdac381bf6318eff2d3c44e073a81a7387dbee785ab6a172c",
+    "canonical_status_observed.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_residue.py": "de2a18521234f35e4dc7613a577c03742dcd5d1e35bb3dba0bcbea4e305116c7",
+    "check_returns.py": "f18ba000df32e29e770f244acbf235be42869d71157d2f2e27d728ead50bd900",
+    "combined_run.log": "d43ccfe20cf6caadf2bf8386e99ab1b3e043f3a6f050496e9582a59fa0b3cc0b",
+    "computation_manifest.json": "f4f7d7ab3eaea3af49718e37fb114e3c8186aae77df8100431a8b6fb1e03f99b",
+    "residue_checks.json": "cd7c22234425ebaab0c8115c2426813975c55bdab3ba181ce8ee11e942260d65",
+    "residue_run.log": "a528a0d2baba293aadfaee7d4b7991ac967e7092c1cc5d13ec1ee244447da816",
+    "return_checks.json": "6f25d6e08bf3b2565263a698397dec4d345f211d829a26f5f6550e9a20acaad2",
+    "returns_run.log": "3f6c687c0d28dddc380b3b09481dfb3598e8cc6a2616feded23701d97ba78847",
+    "validate_manifest.py": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+  }
+}

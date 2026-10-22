@@ -60,7 +60,7 @@ and SHA-256 values. Dated reviews and checkpoint metadata retain their
 historical contents. The 4 October 2026 integrity repair synchronizes the
 mixed-loop proof's already corrected text with this inventory; it does not
 rewrite the historical checkpoint hashes. The
-[integrity review](../../record/history/2026/ci_integrity_20261004.md) records
+[integrity review](../../archive/history/2026/ci_integrity_20261004.md) records
 the failure and fresh replay. References to `build/topic/` mean
 the original working layout;
 the replay runner reconstructs that layout. Earlier statements such as

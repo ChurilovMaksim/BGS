@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "claim_id": "BGS-AUDIT-UNIFORM-OLDFORM-SECOND-JET",
+  "repository": {
+    "commit": "a4d59bf91b1aeff88719e3b1eaa0ba3b8dafe8d8",
+    "dirty": true,
+    "note": "Read-only canonical sources; independent review outside canonical repository; concurrent unrelated edits present."
+  },
+  "command": "python3 check_residue.py && python3 check_returns.py",
+  "environment": {
+    "software": [
+      "Python 3.12.14 standard library"
+    ],
+    "hardware": "x86_64"
+  },
+  "mathematics": {
+    "assertion_tested": "Independent fixed seven-dimensional residue, all three squarefree compressions, and exact full-support rotated return/weighted-sum controls at r=2,3. Uniform inference audited separately in REPORT.md.",
+    "coefficient_domain": "Gaussian rationals and integers; direct F5[W]/Phi7 polynomial arithmetic; exact integer cyclotomic quotient identities",
+    "conventions": "Raw modular Weyl, shift/position order (a,b), i reducing to 2, actual coefficients scaled by 4000, Weyl cocycle plus omega/2.",
+    "inputs": [
+      "inputs/even_depth_first_order_obstruction.md",
+      "inputs/field15625.py",
+      "inputs/fixed_model_symmetry_theorem.md",
+      "inputs/frozen_antireversor.py",
+      "inputs/oldform_obstruction_REPORT.md",
+      "inputs/oldform_second_jet_residue.json",
+      "inputs/oldform_second_jet_residue.py",
+      "inputs/reduced_chain_charpolys.py",
+      "inputs/second_jet_candidate_manifest.json",
+      "inputs/uniform_cat_multiplicity_v2.md",
+      "inputs/uniform_oldform_second_jet.md",
+      "check_residue.py",
+      "check_returns.py"
+    ],
+    "bounds": {
+      "residue_dimension": 7,
+      "compression_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "surviving_pairs": 17,
+      "return_depths": [
+        2,
+        3
+      ],
+      "actual_modes": 32,
+      "ordered_pairs_each_depth": 1024,
+      "all_times_R": [
+        750,
+        18750
+      ],
+      "norm_torus_moduli": [
+        5,
+        25
+      ],
+      "resolvent_R": [
+        3,
+        6,
+        30,
+        150,
+        750,
+        18750
+      ],
+      "per_process_timeout_seconds": 60
+    },
+    "non_claims": [
+      "Finite controls do not themselves imply uniformity in r.",
+      "No other cat eigenspace groups, full U simplicity, fixed-coupling theorem, literal full commutant or BGS conclusion.",
+      "Accepted multiplicity and first-order obstruction dependencies were inspected, not rerun as new results."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T22:24:30.959541+00:00",
+    "runtime_seconds": 0.4289424419403076,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "residue_checks.json",
+      "sha256": "cd7c22234425ebaab0c8115c2426813975c55bdab3ba181ce8ee11e942260d65"
+    },
+    {
+      "path": "return_checks.json",
+      "sha256": "6f25d6e08bf3b2565263a698397dec4d345f211d829a26f5f6550e9a20acaad2"
+    },
+    {
+      "path": "combined_run.log",
+      "sha256": "d43ccfe20cf6caadf2bf8386e99ab1b3e043f3a6f050496e9582a59fa0b3cc0b"
+    }
+  ],
+  "checks": [
+    "Pinned candidate five-source manifest verified.",
+    "All independent coefficient valuations verified.",
+    "Every K entry, pair coefficient, compression and characteristic coefficient matches under independently found field isomorphism.",
+    "All derivative gcds are 1.",
+    "All actual return classes, phase progressions and exact cyclotomic weighted sums pass at r=2,3.",
+    "Nonprimitive edge r=2 normalized valuation is 9/5.",
+    "Input hashes unchanged across run; live sources match frozen copies at closeout."
+  ],
+  "result": "Implementation and finite assertion independently verified in the stated finite scope; uniform three-block theorem proved in accompanying audit.",
+  "residual_risks": [
+    "Native Python integer arithmetic and interpreter trusted; no formal proof assistant certification.",
+    "Original candidate transitive imports were absent from its own manifest; this review binds them and imports none.",
+    "No clean-tree or whole-repository immutability assertion."
+  ],
+  "input_hashes_before": {
+    "inputs/even_depth_first_order_obstruction.md": "37482d57477777ac40bc6a6375bcbf53667f16070e1bcf7e33db04fb9737f654",
+    "inputs/field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+    "inputs/oldform_obstruction_REPORT.md": "f208aecb761c8bf7da960da994dc3dcbc08b8e88269aad040232b87573758224",
+    "inputs/oldform_second_jet_residue.json": "43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459",
+    "inputs/oldform_second_jet_residue.py": "d1fbca99a5dd6bab0b2f62cce0470adf47cfa67c34a0cfdca5aaa8858f70758e",
+    "inputs/reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "inputs/second_jet_candidate_manifest.json": "c393f42cfc767e77456a16598f492a9bf47ea713f8af3def0df2c3257ae93001",
+    "inputs/uniform_cat_multiplicity_v2.md": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e",
+    "inputs/uniform_oldform_second_jet.md": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+    "check_residue.py": "de2a18521234f35e4dc7613a577c03742dcd5d1e35bb3dba0bcbea4e305116c7",
+    "check_returns.py": "f18ba000df32e29e770f244acbf235be42869d71157d2f2e27d728ead50bd900"
+  },
+  "input_hashes_after": {
+    "inputs/even_depth_first_order_obstruction.md": "37482d57477777ac40bc6a6375bcbf53667f16070e1bcf7e33db04fb9737f654",
+    "inputs/field15625.py": "9903ffef328c2728dcd993693a4d43a2418728cab4a65f2d691d951d4a53ac80",
+    "inputs/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "inputs/frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f",
+    "inputs/oldform_obstruction_REPORT.md": "f208aecb761c8bf7da960da994dc3dcbc08b8e88269aad040232b87573758224",
+    "inputs/oldform_second_jet_residue.json": "43055ec1d40b7d18a373adda8ed4e3bb114819054e467009d5c1773a25372459",
+    "inputs/oldform_second_jet_residue.py": "d1fbca99a5dd6bab0b2f62cce0470adf47cfa67c34a0cfdca5aaa8858f70758e",
+    "inputs/reduced_chain_charpolys.py": "5359a60dbe85b6f2ab883462c92c4250377b932b96cfcef91a5ec76999362809",
+    "inputs/second_jet_candidate_manifest.json": "c393f42cfc767e77456a16598f492a9bf47ea713f8af3def0df2c3257ae93001",
+    "inputs/uniform_cat_multiplicity_v2.md": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e",
+    "inputs/uniform_oldform_second_jet.md": "c504620ef3111c7cf40af636eb7d00a1b4103463986c3ff3f7d8e3f01fee0e3a",
+    "check_residue.py": "de2a18521234f35e4dc7613a577c03742dcd5d1e35bb3dba0bcbea4e305116c7",
+    "check_returns.py": "f18ba000df32e29e770f244acbf235be42869d71157d2f2e27d728ead50bd900"
+  }
+}

@@ -101,7 +101,7 @@ def main():
     need(not(tex['errors'] or tex['unresolved_labels'] or tex['duplicate_labels']),
          'Active TeX source/reference check failed')
     (PACKET/'manuscript_checks.json').write_text(json.dumps(tex,indent=2)+'\n')
-    archive=ROOT/'record/history/2026/chat_20261015'
+    archive=ROOT/'archive/history/2026/chat_20261015'
     provenance=json.loads((archive/'provenance.json').read_text())
     need(sha(archive/'BGS_complete_research_2026-10-15.md')==provenance['source_document_sha256'],
          'Imported historical source bytes changed')

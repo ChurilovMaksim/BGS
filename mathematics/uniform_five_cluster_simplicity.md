@@ -6,7 +6,7 @@ Status: exact project proof with independent internal v2 audit. Scope is simplic
 
 ## 1. Analytic translated model and fixed residue species
 
-Use the real-Jacobi gauge and normalized matrix T=(200A_real-180I)/eta from the independently reviewed bounded input retained at ../record/history/2026/spectral_extension_20261006/cluster_source.md. Put Q=q^7, pi=Q-1, and v_pi(pi)=1. Then v_pi(5)=4*5^(e-1). Write
+Use the real-Jacobi gauge and normalized matrix T=(200A_real-180I)/eta from the independently reviewed bounded input retained at ../archive/history/2026/spectral_extension_20261006/cluster_source.md. Put Q=q^7, pi=Q-1, and v_pi(pi)=1. Then v_pi(5)=4*5^(e-1). Write
 
     d_s=5^(s+1)-1  (s>=0).
 

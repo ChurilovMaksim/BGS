@@ -11,7 +11,7 @@ credited to Kristjansen--Plefka--Semenoff--Staudacher (2002).
 
 **Exact scope:** m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S13` is preserved verbatim in [the imported record](../record/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s13). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S13` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s13). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
 
 
 Date: 15 October 2026.

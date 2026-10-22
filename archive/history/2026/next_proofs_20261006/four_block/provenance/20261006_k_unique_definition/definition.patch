@@ -1,0 +1,20 @@
+--- /workspace/shared/bgs_four_block_promotion/provenance/20261006_k_unique_definition/four_block_unmarking.before.md	2026-10-06 19:08:47.202006325 +0200
++++ /workspace/shared/bgs_four_block_promotion/mathematics/four_block_unmarking.md	2026-10-06 19:08:47.202125461 +0200
+@@ -50,7 +50,7 @@
+ 
+ ## 3. Equality budgets, primitivity and rank-one exclusion
+ 
+-A cyclic word x is K-unique when its m cyclic length-K substrings have different starting positions. If two distinct starts have equal K-substrings, their K equality edges form a graph of maximum degree2, with no loops or repeated unordered edges when K<=m/4. Its paths and simple cycles impose equality rank at least K/2. Reveal the four open chains sequentially: at most four forced visits can occur at chain starts; each remaining forced transition costs q. Together with q^4 connectors, the fixed-length exceptional weight is at most N^4 q^(K/2) for K>=8. Fewer than m² substring-start pairs, O(m³) length quadruples, m² roots and the N^-2 band normalization give O_w(N^10 q^(K/2)). This is an absolute bound only on the exceptional set, not the complete spectral sum.
++A cyclic word x is K-unique when its m cyclic length-K vertex substrings are pairwise distinct; equivalently, equal K-words imply equal starting positions. If two distinct starts have equal K-substrings, their K equality edges form a graph of maximum degree2, with no loops or repeated unordered edges when K<=m/4. Its paths and simple cycles impose equality rank at least K/2. Reveal the four open chains sequentially: at most four forced visits can occur at chain starts; each remaining forced transition costs q. Together with q^4 connectors, the fixed-length exceptional weight is at most N^4 q^(K/2) for K>=8. Fewer than m² substring-start pairs, O(m³) length quadruples, m² roots and the N^-2 band normalization give O_w(N^10 q^(K/2)). This is an absolute bound only on the exceptional set, not the complete spectral sum.
+ 
+ K-unique x is primitive. Every four-block output y is also primitive for m>8K: at least m-4(K-1)>m/2 output K-substrings remain inside shared blocks and are pairwise distinct. A nonzero period would inject these positions into their smaller complement, impossible.
+ 
+@@ -60,7 +60,7 @@
+ 
+ ## 4. Symbolic competing-cut localization: definitions
+ 
+-Let x be a cyclic word of length m, K-unique in the sense that all cyclic K-substrings have distinct starting positions. Two reduced r-block representations of the same cyclic output y give bijections f,g from SOURCE positions to OUTPUT positions. Choose their actual cyclic alignment so y_(f(i))=x_i=y_(g(i)). Each bijection is a translation modulo m on every one of its source blocks, and has a nonzero translation jump at each genuine source cut. Initial vertex values at the r cuts of EACH representation are pairwise distinct. The two block-order patterns may differ.
++Let x be a cyclic word of length m, K-unique in the sense that its m cyclic length-K vertex substrings are pairwise distinct; equal K-words therefore imply equal starts. Two reduced r-block representations of the same cyclic output y give bijections f,g from SOURCE positions to OUTPUT positions. Choose their actual cyclic alignment so y_(f(i))=x_i=y_(g(i)). Each bijection is a translation modulo m on every one of its source blocks, and has a nonzero translation jump at each genuine source cut. Initial vertex values at the r cuts of EACH representation are pairwise distinct. The two block-order patterns may differ.
+ 
+ A common source refinement has at most2r intervals, obtained from the union of the two source cut sets. Put R=(r+1)K and assume m>2rR. Arguments concern discrete intervals of vertex positions, not real endpoints.
+ 

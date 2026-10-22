@@ -8,7 +8,7 @@ have separate contracts, actual limits and source pins. The
 [integration receipt](20261006-collective-diffusion-integration.json)
 records local validation/manuscript inspection separately from analytic
 proof and remote publication. Original BGS is not certified.
-The [v1 correction record](../../record/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
+The [v1 correction record](../../archive/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
 explains why only the corrected v2 replay supplies Fraction-only evidence.
 
 [20261006-operator-transfer-integration.json](20261006-operator-transfer-integration.json)

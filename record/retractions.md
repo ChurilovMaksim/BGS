@@ -170,7 +170,7 @@ Neither result proves deterministic noise removal or BGS.
    determine neither its full norm nor the required positive CUE excess.
 
 Historical source bytes and original claimed execution scopes remain preserved
-in `record/history/2026/chat_20261015/`; current dispositions take precedence.
+in `archive/history/2026/chat_20261015/`; current dispositions take precedence.
 
 ## ERR-031: stale failed-run input, 19 October 2026
 

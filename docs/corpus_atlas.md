@@ -17,7 +17,7 @@ explains status changes; the registry controls registered status and covers fewe
 | Reproduce a result | [Reproduction guide](../REPRODUCE_unified.md), [computation guide](../computations/README.md) |
 | Understand source and execution boundaries | [Literature](../literature/README.md), [evidence](../evidence/README.md), [formalization](../formalization/README.md) |
 | Read or extract a publication | [Single manuscript](../manuscript/README.md), [focused candidate scopes](../papers/README.md) |
-| Trace a correction or previous route | [Research record](../record/README.md), [errata](../ERRATA.md), [historical index](../record/history/2026/INDEX.md) |
+| Trace a correction or previous route | [Research record](../record/README.md), [errata](../ERRATA.md), [historical index](../archive/history/2026/INDEX.md) |
 
 ![Distinct layers of scientific authority and evidence](../assets/figures/scientific_evidence_layers.svg)
 

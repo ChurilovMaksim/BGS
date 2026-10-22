@@ -4,7 +4,7 @@
 
 **Exact scope:** Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S02` is preserved verbatim in [the imported record](../record/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s02). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S02` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s02). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
 
 
 **Research note (14 October 2026). Status:** elementary finite-dimensional theorem, proof and independent exact Fourier/matrix checks. No microscopic random-matrix universality is established. External priority and full mathematical refereeing remain open. The original note predates the integration recorded below.

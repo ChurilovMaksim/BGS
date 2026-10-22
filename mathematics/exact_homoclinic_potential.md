@@ -105,7 +105,7 @@ obeys
  |A_v|>=tau/1000>0 at tau=10^-80.                                  (H8)
 
 The factor 3 bounds 2*(1+2/(beta-1)), beta=5.8. The isolated-support fact is
-the exact one checked in ../record/history/2026/homoclinic_20261006/first_response_support_original.md; the quantitative
+the exact one checked in ../archive/history/2026/homoclinic_20261006/first_response_support_original.md; the quantitative
 remainder H7 is what upgrades that first-response discriminator to fixed tau.
 
 ## 4. Exact Fourier factorization and the additive-gauge obstruction

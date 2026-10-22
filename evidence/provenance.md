@@ -8,7 +8,7 @@ blocks only. The [review](../record/collective_diffusion_review_20261006.md)
 distinguishes these runs from the analytic uniform proof. The
 [integration record](executions/20261006-collective-diffusion-integration.json)
 records actual local checks and manuscript build, not a BGS certificate.
-The [initial domain mismatch](../record/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
+The [initial domain mismatch](../archive/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
 is preserved explicitly; the initial run is superseded rather than relabelled.
 
 The 4 October [polynomial coboundary packet](executions/20261004/polynomial-coboundary/manifest.json)

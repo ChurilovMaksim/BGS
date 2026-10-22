@@ -277,7 +277,7 @@ def audit_governance_surface() -> None:
         "LICENSE_POLICY.md", ".zenodo.json", ".github/CODEOWNERS",
         ".github/pull_request_template.md", ".github/main-branch-policy.json",
         "record/branch_protection_policy.md", "record/scientific_dependency_graph.md",
-        "record/history/2026/INDEX.md", "evidence/executions/README.md",
+        "archive/history/2026/INDEX.md", "evidence/executions/README.md",
         "environment/README.md", "papers/README.md", "mathematics/topics/README.md",
         "record/claim_registry.md", "computations/maintenance/render_claim_registry.py",
         "record/errata.json", "computations/maintenance/render_errata.py",

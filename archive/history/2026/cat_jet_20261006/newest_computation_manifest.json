@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "claim_id": "even-new-sector-first-order-compression-audit",
+  "repository": {
+    "commit": "801de3ab760cab4349e68b9843dcd67955314e62",
+    "dirty": true,
+    "note": "Canonical repository read-only; execution scripts are in isolated audit workspace."
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/shared/bgs_even_new_sector_review/run_audit.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "All 48 actual-symbol residue matrices have squarefree characteristic polynomials; exact packet and raw-phase dictionary holds in the stated bounded controls.",
+    "coefficient_domain": "Python exact integers and rationals; finite fields F5[w]/Phi7 and pinned author field for explicit coefficient conversion; no floating arithmetic.",
+    "conventions": "Raw modular half and eighth; S=[[3,4],[2,3]]; Gaussian i maps to 2; actual modes retained individually.",
+    "inputs": [
+      "replay.py",
+      "check_packets.py",
+      "run_audit.py",
+      "inputs/V2_BINDING.md",
+      "inputs/even_new_sector_first_jet.md",
+      "inputs/fixed_model_symmetry_theorem.md",
+      "inputs/new_layer_coherent_residue.json",
+      "inputs/new_layer_coherent_residue.py",
+      "inputs/new_sector_candidate_manifest.json",
+      "inputs/oldform_REPORT.md",
+      "inputs/oldform_tower_compression.md",
+      "inputs/uniform_cat_multiplicity_v2.md"
+    ],
+    "bounds": {
+      "finite_matrices": 48,
+      "ell": [
+        1,
+        2,
+        3
+      ],
+      "h": [
+        5,
+        25,
+        125
+      ],
+      "all_primitive_circles": true,
+      "all_upper_modes": 9,
+      "finite_scope_detail": "packet_results.json records exact full-versus-representative scopes.",
+      "wall_timeout_seconds_per_process": 60
+    },
+    "non_claims": [
+      "Bounded checks alone do not prove the uniform reduction.",
+      "No old-sector, literal-U, full-U commutant, or BGS conclusion."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T22:57:39.016225+00:00",
+    "runtime_seconds": 1.987788525999349,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 30,
+      "max_cores": 1,
+      "max_threads": null
+    },
+    "resource_notes": "Per-process RLIMIT_AS and RLIMIT_CPU; one-CPU affinity; standard-library checker spawns no threads.",
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "input_artifacts": [
+    {
+      "path": "replay.py",
+      "sha256": "438a4349f40b8d91a6a1c158d134ca32379ab70a413418623587d95c955e08c5",
+      "sha256_after": "438a4349f40b8d91a6a1c158d134ca32379ab70a413418623587d95c955e08c5"
+    },
+    {
+      "path": "check_packets.py",
+      "sha256": "c385efdca786da7e9e6c29a704c3d870eeac377bcbf76773eba395b6d26e6990",
+      "sha256_after": "c385efdca786da7e9e6c29a704c3d870eeac377bcbf76773eba395b6d26e6990"
+    },
+    {
+      "path": "run_audit.py",
+      "sha256": "6c4f339b9e07b2cc77369525393322355e664f1929790135cf7ca9b080784263",
+      "sha256_after": "6c4f339b9e07b2cc77369525393322355e664f1929790135cf7ca9b080784263"
+    },
+    {
+      "path": "inputs/V2_BINDING.md",
+      "sha256": "dbe6d39858060fa0540dc551cb2ecf227bf476821ddff306dcb673a86f6ec2be",
+      "sha256_after": "dbe6d39858060fa0540dc551cb2ecf227bf476821ddff306dcb673a86f6ec2be"
+    },
+    {
+      "path": "inputs/even_new_sector_first_jet.md",
+      "sha256": "7e043149e73445cdd0f413f8ce9460b4c1de9690355c83d992e88ad3fbb2ad39",
+      "sha256_after": "7e043149e73445cdd0f413f8ce9460b4c1de9690355c83d992e88ad3fbb2ad39"
+    },
+    {
+      "path": "inputs/fixed_model_symmetry_theorem.md",
+      "sha256": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+      "sha256_after": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2"
+    },
+    {
+      "path": "inputs/new_layer_coherent_residue.json",
+      "sha256": "bd72b81e2d602c035fe6ba55ad2c9a1e1bff307d81993a6ff0bff9fe853fcb74",
+      "sha256_after": "bd72b81e2d602c035fe6ba55ad2c9a1e1bff307d81993a6ff0bff9fe853fcb74"
+    },
+    {
+      "path": "inputs/new_layer_coherent_residue.py",
+      "sha256": "09273f1624ec92e1e35f53be37b3b24e6e2f487350b259ccf6cb92ae6a534d4b",
+      "sha256_after": "09273f1624ec92e1e35f53be37b3b24e6e2f487350b259ccf6cb92ae6a534d4b"
+    },
+    {
+      "path": "inputs/new_sector_candidate_manifest.json",
+      "sha256": "85c1e35376cabc031521329a5bb146372dd39568be3d9be343683e60888f3113",
+      "sha256_after": "85c1e35376cabc031521329a5bb146372dd39568be3d9be343683e60888f3113"
+    },
+    {
+      "path": "inputs/oldform_REPORT.md",
+      "sha256": "f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5",
+      "sha256_after": "f3d142204ed6d10015e70595633c714acaf097fa1b0e6f19fdf6a51d4e663be5"
+    },
+    {
+      "path": "inputs/oldform_tower_compression.md",
+      "sha256": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae",
+      "sha256_after": "d359482763667a6707ed9a060a3874e951f95336561a4ac645df453022b085ae"
+    },
+    {
+      "path": "inputs/uniform_cat_multiplicity_v2.md",
+      "sha256": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e",
+      "sha256_after": "b6e219832f094136f0ca80201ae61f80a9d2435bebc59dd2f18163e3444c8e1e"
+    }
+  ],
+  "execution_artifacts": [
+    "replay.py",
+    "check_packets.py",
+    "run_audit.py",
+    "inputs/V2_BINDING.md",
+    "inputs/even_new_sector_first_jet.md",
+    "inputs/fixed_model_symmetry_theorem.md",
+    "inputs/new_layer_coherent_residue.json",
+    "inputs/new_layer_coherent_residue.py",
+    "inputs/new_sector_candidate_manifest.json",
+    "inputs/oldform_REPORT.md",
+    "inputs/oldform_tower_compression.md",
+    "inputs/uniform_cat_multiplicity_v2.md"
+  ],
+  "declared_results": [
+    "finite_results.json",
+    "packet_results.json"
+  ],
+  "outputs": [
+    {
+      "path": "finite_results.json",
+      "sha256": "dfdf529b3f0f7c9af32d6151f3b4f5723035efd07f5a3e7d353cb0aafb474140",
+      "kind": "result"
+    },
+    {
+      "path": "packet_results.json",
+      "sha256": "b28c1e083f5dba92a9342b6c2a0c965b26e486a520168e2074357d92bd425c3b",
+      "kind": "result"
+    },
+    {
+      "path": "run_log.json",
+      "sha256": "0187def370b635ce434c42c3bf03d046c85a1fe99aa8dd4e3fadefd59fc16848",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "Independent field representation and exhaustive nonzero-generator enumeration",
+    "Actual 32-mode Fourier assembly",
+    "Projector-column seven-factor eigenbasis",
+    "Subset-expansion polynomial determinants, derivative gcds and exact author coefficient match",
+    "Exact raw coherent phases, packet recurrences, intersections and residue weights"
+  ],
+  "result": "Passed all declared exact controls. See separate REPORT.md for uniform proof audit.",
+  "residual_risks": [
+    "No formal proof assistant certification.",
+    "Accepted cat multiplicity and oldform inputs are inherited reviewed theorems.",
+    "Python interpreter and hardware are part of the finite computation trust base."
+  ]
+}

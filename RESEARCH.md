@@ -304,7 +304,7 @@ actual execution and applicability scopes. The dated receipts distinguish
 those executions from later source changes and external journal refereeing.
 
 [Reproduction](REPRODUCE_unified.md) · [Review policy](REVIEWING.md) ·
-[Publication scopes](papers/README.md) · [Historical index](record/history/2026/INDEX.md)
+[Publication scopes](papers/README.md) · [Historical index](archive/history/2026/INDEX.md)
 
 <!-- Stable fragment targets retained for earlier linked research views. -->
 <a id="research-brief-arithmetic-return-laws-and-the-bgs-frontier"></a>

@@ -20,7 +20,7 @@ An analytic reference curve is labelled **reference**, never simulation. A schem
 
 ## Editorial change protocol
 
-Keep stable proof paths and claim IDs. Prefer link-based topic maps to mass moves or duplicated statements. Update both top-level languages when status, scope or displayed formulas change. Resolve old corrections via the [errata](../ERRATA.md) and [history index](../record/history/2026/INDEX.md) instead of overwriting original records. New claims or new citation dependencies follow [CONTRIBUTING.md](../CONTRIBUTING.md). Distinguish project-proof status from external independent refereeing.
+Keep stable proof paths and claim IDs. Prefer link-based topic maps to mass moves or duplicated statements. Update both top-level languages when status, scope or displayed formulas change. Resolve old corrections via the [errata](../ERRATA.md) and [history index](../archive/history/2026/INDEX.md) instead of overwriting original records. New claims or new citation dependencies follow [CONTRIBUTING.md](../CONTRIBUTING.md). Distinguish project-proof status from external independent refereeing.
 
 ## Integration epochs and scientific CI
 

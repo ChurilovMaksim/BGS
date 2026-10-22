@@ -1,0 +1,30 @@
+{
+  "claim_id": "BGS-FM-008",
+  "primary_verdict": "proved as written",
+  "target_sha256": "d003b2abcb72d8f4922105a25892c43c8fdcd12f19a6d67ba8b51b2a3a9e2af2",
+  "report_sha256": "547d900d9fd7f99ba2a696f9aa4ca1e6ee483929988b4d5b58a6008e4b492b38",
+  "status_promotion_performed": false,
+  "canonical_edits": false,
+  "limits": "Odd N>=3, 7 not dividing N; all stated real nonzero algebraic times; no quantitative gap or BGS conclusion.",
+  "minor_exposition_corrections": [
+    "Missing m-th power in inverse-power display, line 186",
+    "Only maximal fixed-r subset sum must be unique; lower subset sums may coincide, line 155"
+  ],
+  "inherited_pair_commutant_leaf": "Simple A and all eigenbasis entries nonzero for 7 not dividing N; rederived here; independent of LW.",
+  "external_leaf": {
+    "identifier": "arXiv:2306.14352v2",
+    "author": "Sever Angel Popescu",
+    "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
+    "version_date": "2023-09-17",
+    "checked_on": "2026-10-06",
+    "source_url": "https://arxiv.org/pdf/2306.14352v2",
+    "pdf_sha256": "0c158636ef68a2ac4586f0fff09b7429780f815d513799f1e794e9c554bae0f1",
+    "text_sha256": "dc4fe0d0f4a34aed228ead916464ff7f36de835ad8c5cf598d77d17308ef4d4c",
+    "locator": "Theorem 3.2, printed page 14; proof pages 15-16",
+    "extraction": "pdftotext -layout; printed page 14 separately rendered and visually checked",
+    "retention_basis": "Public primary arXiv source downloaded solely for the authorized independent audit; no canonical repository cache or external upload.",
+    "scope": "Source identity, exact theorem hypothesis, and project application checked. Full classical LW proof not independently re-proved."
+  },
+  "exact_computation_result_sha256": "52a85146190986c98d195555ee5dd6bb0dd8de32851020ee40b79007df5b4fe4",
+  "independent_code_sha256": "f496095fefd0900ebcf5ea2a40b15afc8567652285d56687b421c178a7ebd33e"
+}

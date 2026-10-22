@@ -77,7 +77,7 @@ def main():
                 badlinks.append((rel,target));continue
             if not exists(destrel):badlinks.append((rel,target))
     need(not badlinks,'Broken new-source links: '+str(badlinks))
-    archive=ROOT/'record/history/2026/chat_20261015'
+    archive=ROOT/'archive/history/2026/chat_20261015'
     provenance=json.loads((archive/'provenance.json').read_text())
     need(hashlib.sha256((archive/'BGS_complete_research_2026-10-15.md').read_bytes()).hexdigest()
          ==provenance['source_document_sha256'],'Historical source bytes changed')

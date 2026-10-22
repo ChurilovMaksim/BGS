@@ -1,0 +1,59 @@
+{
+  "schema": "bgs-spectral-pivot-finite-evidence-v1",
+  "created_utc": "2026-10-06T21:01:16.050823+00:00",
+  "repository_base": "41a2788ef21e787e983e88a8b58470d104013740",
+  "canonical_worktree_clean_at_precheck": true,
+  "canonical_files_modified": false,
+  "scope": {
+    "certified_N": [
+      21,
+      35,
+      49,
+      63
+    ],
+    "exact_exception_N": [
+      7
+    ],
+    "uniform_N_claim": false,
+    "independent_audit": "pending"
+  },
+  "arithmetic": "512-bit dyadic outward-rounded intervals; exact rational pi bounds; root widths at most 2^-384; all accept/reject decisions integer-only",
+  "software": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "commands": [
+    "python certify.py --N 21 35 49 63 --precision 512 --root-bits 384 --out certificates",
+    "python n7_exact.py > n7_exact.json",
+    "OPENBLAS_NUM_THREADS=1 python controls.py > controls.json",
+    "OPENBLAS_NUM_THREADS=1 python screen.py > screen.jsonl"
+  ],
+  "resource_bounds": {
+    "dimensions": "21,35,49,63; N7 separately",
+    "new_installations": false,
+    "worker_threads": 1,
+    "certifier_runtime_seconds_sum": 20.97280740737915
+  },
+  "source_hashes": {
+    "mathematics/frozen_kick_rank_boundary.md": "fcbc96473a964bd5272dab7676a2da5dcffd4f3afe1e8df5768b8e2356770e17",
+    "mathematics/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "mathematics/frozen_algebraic_spectral_simplicity.md": "d003b2abcb72d8f4922105a25892c43c8fdcd12f19a6d67ba8b51b2a3a9e2af2",
+    "supplement/fixed_map/secular-route/exact_structure_checks.py": "62d09ef2b941803ce9f7621e9563c9b7286a040036f067b8881dc2997d97161d"
+  },
+  "artifact_hashes": {
+    "certify.py": "b62ff3aafe2cdaf7baf852a7cb86453f918abc848f7c3012c2629bc58a24125d",
+    "n7_exact.py": "15f274ad1ac38dc2abb841c51da2109d273bad7009914fe30d29327a61f36059",
+    "controls.py": "e78bb8ca26890f28aff08b43d265c10813a81e317bb40fcbfef6895f209aa8d2",
+    "screen.py": "422bfefaf2850a39b75e76567f0af5927f700afac174aaaab637a64b262a7c1f",
+    "PROOF_CONTRACT.md": "9a20545833e38b914922cdb545697fc3b1999e47dcb4adddb15ef03eacc6b5cd",
+    "certify.log": "3c8fc75427b53de1ca21716857a9c451cc3b3f813f03f1a862d934ec980bafa6",
+    "controls.json": "a7303a37380212f40f3383dd8331b431f7ef776a23bf92a495c73b7da0549312",
+    "n7_exact.json": "faba0fb07daf60a36a14efe0e0ae815f22c19e8793569b5c6eb0d586de66bb16",
+    "screen.jsonl": "0533b1adefcf5af2693bbf367cfd783b87f6bb4bdce38e27592e671716a40c23",
+    "certificates/N21.json": "54c9f7485e02bab9cc3cd47c10fda3d5d342fef2961b3655d0627a2af2619fb6",
+    "certificates/N35.json": "cb5147c72884a5925d0cd5ce17a10b7b9c823ac02b79c3a54d4cca798bc385e8",
+    "certificates/N49.json": "70429dc9582687d8f9d63462c38015cf698a80b2b8535ceb8d96379931dfcf6e",
+    "certificates/N63.json": "963a262cef29976a5411b371e771124c904cbc1ac9102cb778095634aab698f1"
+  },
+  "trust_boundary": "Finite exact-integer interval certificate proposed for audit. Own controls are not independent review. External LW and imaginary-time implication retain canonical review boundaries. No canonical integration."
+}

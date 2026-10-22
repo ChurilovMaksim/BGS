@@ -102,7 +102,7 @@ def main():
                 broken.append((rel,target));continue
             if not exists(destrel):broken.append((rel,target))
     need(not broken,'Broken changed-source links: '+str(broken))
-    archive=ROOT/'record/history/2026/chat_20261015'
+    archive=ROOT/'archive/history/2026/chat_20261015'
     provenance=json.loads((archive/'provenance.json').read_text())
     need(digest(archive/'BGS_complete_research_2026-10-15.md')==provenance['source_document_sha256'],
          'Historical recovered source bytes changed')

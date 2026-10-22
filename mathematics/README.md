@@ -88,5 +88,5 @@ certify their stated propositions only.
 [The 8 October checkpoint](../record/research_checkpoint_20261008.md) and
 [the corpus review](../record/corpus_revision_20261006.md) state actual review
 coverage. Historical branch arguments remain traceable through the
-[record index](../record/history/2026/INDEX.md); an inventory is not a complete
+[record index](../archive/history/2026/INDEX.md); an inventory is not a complete
 proof certification.

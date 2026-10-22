@@ -11,7 +11,7 @@ credited to Kristjansen--Plefka--Semenoff--Staudacher (2002).
 
 **Exact scope:** Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S12` is preserved verbatim in [the imported record](../record/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s12). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S12` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s12). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
 
 
 Date: 15 October 2026.

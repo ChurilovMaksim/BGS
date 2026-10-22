@@ -81,7 +81,7 @@ def run():
     record = {'arithmetic': 'Exact integers/Fraction for decisions; Decimal exponents display only', 'checks': checks, 'finite_cycles': cycles, 'decimal_display_only': displays, 'scope': 'Finite constant/Green controls only; not the nonlinear theorem.'}
     return record
 
-TARGET = Path(__file__).resolve().parents[3] / 'record/history/2026/paired_phase_20261006/transversality_full_original.md'
+TARGET = Path(__file__).resolve().parents[3] / 'archive/history/2026/paired_phase_20261006/transversality_full_original.md'
 
 def main():
     result = run()
