@@ -71,7 +71,7 @@ jobs:
   formalization:
     needs: [scientific-registry, repository-structure]
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v5
       - name: Install Lean and compile all active finite formal certificates
@@ -80,6 +80,7 @@ jobs:
           sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
           export PATH="$HOME/.elan/bin:$PATH"
           cd formalization
+          lake exe cache get
           lake build
 
   manuscript:
