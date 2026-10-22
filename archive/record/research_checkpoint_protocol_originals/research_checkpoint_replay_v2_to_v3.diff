@@ -1,0 +1,210 @@
+--- protocol_v2.py
++++ durable_protocol_v3.py
+@@ -136,7 +136,7 @@
+ '''
+ 
+ 
+-def execute_task(work, task, env, mode):
++def execute_task(work, task, env, mode, captured=None):
+     generated = None
+     if task.get('generated_result'):
+         generated = work / task['generated_result']
+@@ -147,6 +147,9 @@
+                             cwd=work / 'evidence/research_checkpoint_20261007/raw',
+                             env=env, capture_output=True, timeout=task['timeout_seconds'],
+                             preexec_fn=child_limits)
++    if captured is not None:
++        captured.update(stdout=result.stdout, stderr=result.stderr, returncode=result.returncode,
++                        command=[sys.executable, *mode, '-c', 'authenticated explicit-assertion bootstrap', str(work / task['source']), *task['arguments']])
+     require(result.returncode == 0, task['name'] + ' failed: ' + result.stderr.decode(errors='replace')[-2000:])
+     require(len(result.stdout) < 2**20, 'result output cap exceeded')
+     if generated is not None:
+@@ -171,59 +174,146 @@
+     resource.setrlimit(resource.RLIMIT_CPU, (180, 180))
+ 
+ 
+-def run(root=ROOT):
+-    cached = source_bytes(root)
+-    contract = strict_json(cached[CONTRACT])
+-    expected = {t['name']: final_json(cached[t['expected']]) for t in contract['tasks']}
+-    cpp = contract['cpp']
+-    cpp_expected = final_json(cached[cpp['expected']])
+-    env = dict(os.environ)
+-    env.update(OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1',
+-               NUMEXPR_NUM_THREADS='1', PYTHONDONTWRITEBYTECODE='1')
+-    mode = ['-O'] if sys.flags.optimize else []
+-    with tempfile.TemporaryDirectory(prefix='bgs-reviewed-checkpoint-') as tmp:
+-        work = Path(tmp)
+-        for rel, data in cached.items():
+-            f = work / rel
+-            f.parent.mkdir(parents=True, exist_ok=True)
+-            f.write_bytes(data)
+-        generated_outputs = {t['generated_result'] for t in contract['tasks'] if t.get('generated_result')}
+-        for task in contract['tasks']:
++def output_directory(root, output):
++    if output is None:
++        return None
++    output = Path(output).absolute()
++    require(not any(p.is_symlink() for p in (output, *output.parents)), 'symlink output ancestor')
++    output = output.resolve()
++    inside = output.is_relative_to(root.resolve())
++    excluded_build = inside and output.relative_to(root.resolve()).parts[0] == 'build'
++    require((not inside or excluded_build) and not root.resolve().is_relative_to(output),
++            'durable output must be separate from maintained sources or under excluded build/')
++    output.mkdir(parents=True, exist_ok=True)
++    require(output.is_dir() and not any(output.iterdir()), 'durable output directory must be empty')
++    return output
++
++
++def save_artifact(output, name, data):
++    if output is None:
++        return None
++    path = output / name
++    path.write_bytes(data)
++    return {'path':name, 'bytes':len(data), 'sha256':hashlib.sha256(data).hexdigest()}
++
++
++def run(root=ROOT, output=None):
++    output = output_directory(root, output)
++    receipt = {'schema':'bgs-checkpoint-durable-replay-v1', 'status':'running', 'tasks':[], 'artifacts':[],
++               'python':sys.version, 'optimization':sys.flags.optimize,
++               'scope':'Bounded finite controls only; complete mathematical identification remains open.'}
++    def retain(name, data):
++        record = save_artifact(output, name, data)
++        if record is not None:
++            receipt['artifacts'].append(record)
++    def publish():
++        if output is not None:
++            (output / 'replay_manifest.json').write_text(json.dumps(receipt, indent=2) + '\n')
++    publish()
++    try:
++        cached = source_bytes(root)
++        retain('source_bindings.original.json', (root / BINDINGS).read_bytes())
++        retain('replay_contract.original.json', cached[CONTRACT])
++        receipt['source_hashes'] = {rel:hashlib.sha256(data).hexdigest() for rel, data in cached.items()}
++        contract = strict_json(cached[CONTRACT])
++        expected = {t['name']: final_json(cached[t['expected']]) for t in contract['tasks']}
++        cpp = contract['cpp']
++        cpp_expected = final_json(cached[cpp['expected']])
++        env = dict(os.environ)
++        env.update(OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1',
++                   NUMEXPR_NUM_THREADS='1', PYTHONDONTWRITEBYTECODE='1')
++        mode = ['-O'] if sys.flags.optimize else []
++        with tempfile.TemporaryDirectory(prefix='bgs-reviewed-checkpoint-') as tmp:
++            work = Path(tmp)
++            for rel, data in cached.items():
++                f = work / rel
++                f.parent.mkdir(parents=True, exist_ok=True)
++                f.write_bytes(data)
++            generated_outputs = {t['generated_result'] for t in contract['tasks'] if t.get('generated_result')}
++            for task in contract['tasks']:
++                authenticate_copied_inputs(work, cached, generated_outputs)
++                capture = {}
++                retain(task['name'] + '.expected.raw', cached[task['expected']])
++                try:
++                    observed_bytes = execute_task(work, task, env, mode, capture)
++                except Exception as error:
++                    for key in ('stdout', 'stderr'):
++                        if key in capture:
++                            retain(task['name'] + '.' + key, capture[key])
++                    receipt.update(status='failed', failure=task['name'] + ': ' + str(error))
++                    publish()
++                    raise
++                retain(task['name'] + '.stdout', capture['stdout'])
++                retain(task['name'] + '.stderr', capture['stderr'])
++                retain(task['name'] + '.actual.raw', observed_bytes)
++                authenticate_copied_inputs(work, cached, generated_outputs)
++                observed = final_json(observed_bytes)
++                compare(expected[task['name']], observed, task['provenance_root_fields'])
++                receipt['tasks'].append({'name':task['name'], 'status':'passed', 'command':capture['command'],
++                    'exit_status':capture['returncode'], 'source_sha256':hashlib.sha256(cached[task['source']]).hexdigest(),
++                    'expected_raw_sha256':hashlib.sha256(cached[task['expected']]).hexdigest(),
++                    'actual_raw_sha256':hashlib.sha256(observed_bytes).hexdigest(),
++                    'declared_provenance_fields':task['provenance_root_fields'],
++                    'expected_provenance':{k:expected[task['name']][k] for k in task['provenance_root_fields']},
++                    'observed_provenance':{k:observed[k] for k in task['provenance_root_fields']}})
++                publish()
+             authenticate_copied_inputs(work, cached, generated_outputs)
+-            observed_bytes = execute_task(work, task, env, mode)
++            exe = work / 'check_growing'
++            compiled = subprocess.run(['g++', '-std=c++17', '-O2', '-Wall', '-Wextra', '-pedantic',
++                                       str(work / cpp['source']), '-o', str(exe)], env=env,
++                                      capture_output=True, timeout=60)
++            retain('growing_period.compile.stdout', compiled.stdout)
++            retain('growing_period.compile.stderr', compiled.stderr)
++            require(compiled.returncode == 0, 'growing-period exact control compilation failed')
++            retain('growing_period.expected.raw', cached[cpp['expected']])
++            cpp_run = subprocess.run([str(exe)], env=env, capture_output=True, timeout=cpp['timeout_seconds'])
++            retain('growing_period.stdout', cpp_run.stdout)
++            retain('growing_period.stderr', cpp_run.stderr)
++            require(cpp_run.returncode == 0, 'growing-period exact controls failed')
++            observed = final_json(cpp_run.stdout)
++            negative = subprocess.run([str(exe), '--inject-bad-carry'], env=env,
++                                      capture_output=True, timeout=20)
++            retain('growing_period.negative.stdout', negative.stdout)
++            retain('growing_period.negative.stderr', negative.stderr)
++            require(negative.returncode == 2 and b'literal cyclic carry identity' in negative.stderr,
++                    'injected carry defect did not fail')
++            observed['negative_control'] = {'fault':'omit low-digit carry into high digit',
++                                           'returncode':negative.returncode,
++                                           'diagnostic':negative.stderr.decode().strip()}
++            observed['compiler_command'] = ['g++', '-std=c++17', '-O2', '-Wall', '-Wextra', '-pedantic',
++                                            str(work / cpp['source']), '-o', str(exe)]
+             authenticate_copied_inputs(work, cached, generated_outputs)
+-            compare(expected[task['name']], final_json(observed_bytes), task['provenance_root_fields'])
+-        authenticate_copied_inputs(work, cached, generated_outputs)
+-        exe = work / 'check_growing'
+-        compiled = subprocess.run(['g++', '-std=c++17', '-O2', '-Wall', '-Wextra', '-pedantic',
+-                                   str(work / cpp['source']), '-o', str(exe)], env=env,
+-                                  capture_output=True, timeout=60)
+-        require(compiled.returncode == 0, 'growing-period exact control compilation failed')
+-        output = subprocess.run([str(exe)], env=env, capture_output=True, timeout=cpp['timeout_seconds'])
+-        require(output.returncode == 0, 'growing-period exact controls failed')
+-        observed = final_json(output.stdout)
+-        negative = subprocess.run([str(exe), '--inject-bad-carry'], env=env,
+-                                  capture_output=True, timeout=20)
+-        require(negative.returncode == 2 and b'literal cyclic carry identity' in negative.stderr,
+-                'injected carry defect did not fail')
+-        observed['negative_control'] = {'fault':'omit low-digit carry into high digit',
+-                                       'returncode':negative.returncode,
+-                                       'diagnostic':negative.stderr.decode().strip()}
+-        observed['compiler_command'] = ['g++', '-std=c++17', '-O2', '-Wall', '-Wextra', '-pedantic',
+-                                        str(work / cpp['source']), '-o', str(exe)]
+-        authenticate_copied_inputs(work, cached, generated_outputs)
+-        compare(cpp_expected, observed, cpp['provenance_root_fields'])
+-    require(source_bytes(root) == cached, 'sources changed during execution')
++            actual = (json.dumps(observed, indent=2) + '\n').encode()
++            retain('growing_period.actual.raw', actual)
++            compare(cpp_expected, observed, cpp['provenance_root_fields'])
++            receipt['tasks'].append({'name':'growing_period', 'status':'passed',
++                'source_sha256':hashlib.sha256(cached[cpp['source']]).hexdigest(),
++                'fresh_executable_sha256':hashlib.sha256(exe.read_bytes()).hexdigest(),
++                'expected_raw_sha256':hashlib.sha256(cached[cpp['expected']]).hexdigest(),
++                'actual_raw_sha256':hashlib.sha256(actual).hexdigest(),
++                'expected_provenance':{k:cpp_expected[k] for k in cpp['provenance_root_fields']},
++                'observed_provenance':{k:observed[k] for k in cpp['provenance_root_fields']},
++                'negative_exit_status':negative.returncode})
++        require(source_bytes(root) == cached, 'sources changed during execution')
++        receipt.update(status='passed', original_sources_unchanged=True, copied_inputs_authenticated_after_each_child=True,
++                       expected_bytes_cached_before_execution=True, scientific_equality=True)
++        publish()
++        return receipt
++    except Exception as error:
++        receipt.update(status='failed', failure=str(error))
++        publish()
++        raise
+ 
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--check-sources', action='store_true')
++    parser.add_argument('--output-dir', type=Path, help='Fresh empty external or excluded build/ directory for durable raw expected/actual/log/provenance artifacts.')
+     args = parser.parse_args()
+     if args.check_sources:
+         source_bytes(ROOT)
+     else:
+-        run()
++        run(output=args.output_dir)
+ 
+ 
+ if __name__ == '__main__':

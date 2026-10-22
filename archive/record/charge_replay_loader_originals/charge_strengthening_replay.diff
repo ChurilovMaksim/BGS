@@ -1,0 +1,50 @@
+--- original_charge_replay.py
++++ maintained_charge_replay.py
+@@ -8,7 +8,7 @@
+ import argparse
+ import hashlib
+ import importlib.metadata
+-import importlib.util
++import types
+ import json
+ import math
+ import os
+@@ -38,10 +38,17 @@
+     return hashlib.sha256(path.read_bytes()).hexdigest()
+ 
+ 
+-def comparator():
+-    spec = importlib.util.spec_from_file_location('bgs_charge_comparison', MODULES / 'comparison.py')
+-    module = importlib.util.module_from_spec(spec)
+-    spec.loader.exec_module(module)
++def comparator(expected_sha256=None):
++    path = MODULES / 'comparison.py'
++    raw = path.read_bytes()
++    if expected_sha256 is None:
++        expected_sha256 = sources()['computations/verification/charge_strengthening/comparison.py']
++    require(hashlib.sha256(raw).hexdigest() == expected_sha256,
++            'Authenticated comparator bytes changed')
++    module = types.ModuleType('bgs_charge_comparison')
++    module.__file__ = str(path)
++    # Execute authenticated source bytes, never timestamp/hash .pyc caches.
++    exec(compile(raw, str(path), 'exec'), module.__dict__)
+     return module
+ 
+ 
+@@ -109,7 +116,7 @@
+     require(not any(work.iterdir()), 'Output directory must be empty; stale results are rejected')
+     before = sources()
+     source_map_hash = sha(SOURCE_MAP)
+-    comp = comparator()
++    comp = comparator(before['computations/verification/charge_strengthening/comparison.py'])
+     env = os.environ.copy()
+     env.update(PYTHONDONTWRITEBYTECODE='1', OPENBLAS_NUM_THREADS='1',
+                OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
+@@ -143,6 +150,7 @@
+         (work / (family + '.stderr')).write_bytes(proc.stderr)
+         require(len(proc.stdout) <= OUTPUT_BYTES and len(proc.stderr) <= OUTPUT_BYTES,
+                 'Captured log exceeds declared output cap')
++        require(sources() == before, 'Source set changed during child execution')
+         require(proc.returncode == 0, family + ' exact control failed: ' + proc.stderr.decode(errors='replace')[-2000:])
+         require(not proc.stderr, family + ' emitted unexpected stderr')
+         if family == 'author':
