@@ -2,7 +2,7 @@
 
 19 October 2026. Author proofs and self-review, with preserved exact computations where stated. This file adopts the explicitly linked proof revisions below. It does not independently recertify the earlier corpus, establish priority, or prove the fixed-strength BGS claim.
 
-The [integration record](../record/chat_integration_20261019.md) distinguishes maintained conclusions, conditional inputs, finite observations and unsuccessful routes. The [complete source inventory](../record/chat_integration_20261019_inventory.json) binds every imported file by SHA-256. Execution-era statements that the repository was unchanged describe those historical runs, before this integration.
+The [integration record](../archive/record/chat_integration_20261019.md) distinguishes maintained conclusions, conditional inputs, finite observations and unsuccessful routes. The [complete source inventory](../archive/record/chat_integration_20261019_inventory.json) binds every imported file by SHA-256. Execution-era statements that the repository was unchanged describe those historical runs, before this integration.
 
 ## Models and the unchanged target
 
@@ -48,7 +48,7 @@ $$
 
 The resulting probability kernel is weakly continuous and injective. Consequently the transmission laws converge to Uniform$[0,1]$ if and only if the corresponding $Y$ laws converge to Beta$(1,2)$. This is not a proof of either convergence for the required deterministic startup.
 
-Adopted full proof, endpoint conventions and prior scalar-delay attribution: [spectral averaging](../evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md). Only the successful v2 finite run has valid preserved input provenance. The original failed run has the explicit [ERR-031 disposition](../record/chat_integration_20261019.md).
+Adopted full proof, endpoint conventions and prior scalar-delay attribution: [spectral averaging](../evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md). Only the successful v2 finite run has valid preserved input provenance. The original failed run has the explicit [ERR-031 disposition](../archive/record/chat_integration_20261019.md).
 
 ## BGS-TRACE-097: conditional positive Heisenberg path current
 

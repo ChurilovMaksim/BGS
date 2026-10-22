@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-066. **State:** PROVED.
 **Boundary:** Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling.
-**Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
+**Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/previous_rank_results.md).
 
 

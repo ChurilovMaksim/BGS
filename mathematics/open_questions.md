@@ -65,7 +65,7 @@ argument. [Current checkpoint](../record/wick_poisson_continuation_20261016.md).
 
 ## Research-record integration, 16 October 2026
 
-[Exact review and 90-entry inventory](../record/chat_integration_20261016.md).
+[Exact review and 90-entry inventory](../archive/record/chat_integration_20261016.md).
 The all-order process implication no longer requires an independent UI premise.
 The actual signed hierarchy, physical parameter moment and positive Hardy
 excess limits remain unproved. Resonance deletion is sufficient only.
@@ -167,7 +167,7 @@ qualifications follow below.
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
 | Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
-| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; TRACE-080 closes the maintained startup's probability and corresponding clocks at log^(4+kappa); physical microscopic cavity identification remains open |
+| Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../archive/record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; TRACE-080 closes the maintained startup's probability and corresponding clocks at log^(4+kappa); physical microscopic cavity identification remains open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
 The [claim ledger](../record/claim_ledger.md) determines status.

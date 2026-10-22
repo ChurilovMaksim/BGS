@@ -45,7 +45,7 @@ def reconstruct_tree(objects):
 
 
 def main(output):
-    inventory=load(ROOT/'record/chat_integration_20261019_inventory.json')
+    inventory=load(ROOT/'archive/record/chat_integration_20261019_inventory.json')
     assert inventory['file_count']==len(inventory['files'])
     syntax=0;json_files=0
     for entry in inventory['files']:
@@ -129,7 +129,7 @@ def main(output):
     assert all(exists(p) for p in registered)
     newmath=[p for p in current if p.endswith('_20261019.md')]
     broken=[]
-    for name in newmath+['README.md','README.ru.md','record/chat_integration_20261019.md']:
+    for name in newmath+['README.md','README.ru.md','archive/record/chat_integration_20261019.md']:
         p=ROOT/name
         for target in re.findall(r'\[[^\]]*\]\(([^)\s]+)\)',p.read_text()):
             if '://' in target or target.startswith('#'):continue

@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-060. **State:** CONDITIONAL.
 **Boundary:** This preceding proof gives the conditional joint barriers and killed second/third upper bounds at its displayed cutoffs. The [reviewed all-fixed-moment extension](all_moment_delay_bootstrap_20261011.md) improves the cutoff to ceil(log(2N)^(1+kappa)), bounds all fixed killed moments, and proves uniform second/third equality laws. The [fourth-delay continuation](fourth_delay_law_20261011.md) proves the diagonal-square and fourth trace laws. The later [all-fixed-order equality proof](conditional_clock_universality_20261011.md) closes that induction and identifies the full-depth clock measure. The probability of all-time flatness, growing-order/edge bounds, unrestricted exceptional-event moments and BGS remain open.
-**Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
+**Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/delay_bootstrap.md).
 
 

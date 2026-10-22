@@ -99,6 +99,6 @@ motivating numerical evidence, not a theorem for the present family.
 
 ## Checked 11 October research
 
-The [integration disposition](../record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
+The [integration disposition](../archive/record/chat_integration_20261011.md) indexes maximal microscopic paths, source transport, finite-field collision calculus and frozen circular phase laws. The global deterministic BGS and TRACE-005 claims remain open. Original receipts and fresh executions have separate scope.
 
 [Primary circular-phase and stopping sources](circular_phase_sources_20261011.md) pin seven additional references. The 11 October cache remains historical; metadata_audit.json selects the current reviewed cache.

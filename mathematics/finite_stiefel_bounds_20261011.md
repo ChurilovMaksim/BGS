@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-061. **State:** PROVED.
 **Boundary:** Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample.
-**Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
+**Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/phase_frame_2026_10_09/finite_stiefel_bounds.md).
 
 

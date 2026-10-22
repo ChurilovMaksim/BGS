@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-058. **State:** PROVED.
 **Boundary:** Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification.
-**Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
+**Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/integrable_phase_absorption.md).
 
 

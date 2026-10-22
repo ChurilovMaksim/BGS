@@ -1,6 +1,6 @@
 # Reviewed Schur continuation, 11 October 2026
 
-The preceding integration is preserved in [its own checkpoint](chat_integration_20261011.md).
+The preceding integration is preserved in [its own checkpoint](../archive/record/chat_integration_20261011.md).
 This continuation strengthens TRACE-060 and adds TRACE-073. It does **not**
 resolve TRACE-005 or deterministic BGS. The new results identify what can be
 proved from all-time entry flatness; they do not establish that premise.

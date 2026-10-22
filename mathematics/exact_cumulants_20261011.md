@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-069. **State:** PROVED.
 **Boundary:** Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate.
-**Integration and review:** [11 October disposition](../record/chat_integration_20261011.md).
+**Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
 **Original input:** [dated source](../evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/exact_cumulants.md).
 
 

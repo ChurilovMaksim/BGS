@@ -1,52 +1,52 @@
 # 2026 research-history index
 
-Recent integrations: [19 October phase research](../../chat_integration_20261019.md), [16 October collision law](../../wick_poisson_continuation_20261016.md), [20 October reconciliation](../../repository_reconciliation_20261020.md).
+Recent integrations: [19 October phase research](../../record/chat_integration_20261019.md), [16 October collision law](../../../record/wick_poisson_continuation_20261016.md), [20 October reconciliation](../../../record/repository_reconciliation_20261020.md).
 
 This index is navigational; status authority remains
-`../../claim_ledger.md`.
+`../../../record/claim_ledger.md`.
 
 ## Fixed map and recovery
-- [23 September integration and execution scope](../../integration_20260923.md)
-- [frozen-kick rank self-review](../../frozen_rank_review_20260923.md)
-- [22 September integration and verification](../../integration_20260922.md)
-- [fixed-map attachment audit](../../fixed_map_attachment_audit_20260916.md)
-- [fixed-map publication review](../../fixed_map_publication_20260920.md)
-- [recovery audit](../../recovery_audit_20260920.md)
-- [final research handoff](../../final_research_handoff_20260921.md)
+- [23 September integration and execution scope](../../../record/integration_20260923.md)
+- [frozen-kick rank self-review](../../../record/frozen_rank_review_20260923.md)
+- [22 September integration and verification](../../../record/integration_20260922.md)
+- [fixed-map attachment audit](../../../record/fixed_map_attachment_audit_20260916.md)
+- [fixed-map publication review](../../../record/fixed_map_publication_20260920.md)
+- [recovery audit](../../../record/recovery_audit_20260920.md)
+- [final research handoff](../../../record/final_research_handoff_20260921.md)
 
 ## Resonance and inference boundaries
-- [full-lag classical gap: separate internal derivation review](../../frozen_full_lag_review_20260923.md)
-- [finite-orbit independent internal review](../../finite_orbit_secondary_review_20260922.md)
-- [clustered Abel/time-window analysis](../../abel_window_research_20260922.md)
+- [full-lag classical gap: separate internal derivation review](../../../record/frozen_full_lag_review_20260923.md)
+- [finite-orbit independent internal review](../../../record/finite_orbit_secondary_review_20260922.md)
+- [clustered Abel/time-window analysis](../../../record/abel_window_research_20260922.md)
 
 ## Return laws and locality
-- [Pell harmonic transition review](../../pell_harmonic_transition_review_20260909.md)
-- [Pell harmonic returns review](../../pell_harmonic_returns_review_20260910.md)
-- [return obstruction review](../../return_obstruction_review_20260912.md)
-- [return local-limits review](../../return_local_limits_review_20260913.md)
-- [fixed-strength locality audit](../../fixed_strength_locality_audit.md)
+- [Pell harmonic transition review](../../../record/pell_harmonic_transition_review_20260909.md)
+- [Pell harmonic returns review](../../../record/pell_harmonic_returns_review_20260910.md)
+- [return obstruction review](../../../record/return_obstruction_review_20260912.md)
+- [return local-limits review](../../../record/return_local_limits_review_20260913.md)
+- [fixed-strength locality audit](../../../record/fixed_strength_locality_audit.md)
 
 ## Publication and integrity
-- [6 October constructive integration and execution scope](../../constructive_batch_integration_20261006.md)
+- [6 October constructive integration and execution scope](../../../record/constructive_batch_integration_20261006.md)
 - [4 October numerical trace-input completion and successful Wolfram replay](completion_review_20261004.md)
 - [4 October inherited-inventory repair and full supplement replay](ci_integrity_20261004.md)
 - [23 September repository-wide editorial and verification pass](repository_hygiene_20260923.md)
-- [final consolidation audit](../../final_consolidation_audit_20260906.md)
-- [publication review](../../publication_review_20260912.md)
-- [session science synchronization](../../session_science_sync_20260907.md)
-- [session integrity audit](../../session_integrity_audit_20260907.md)
-- [publication transport note](../../session_publication_transport_20260907.md)
+- [final consolidation audit](../../../record/final_consolidation_audit_20260906.md)
+- [publication review](../../../record/publication_review_20260912.md)
+- [session science synchronization](../../../record/session_science_sync_20260907.md)
+- [session integrity audit](../../../record/session_integrity_audit_20260907.md)
+- [publication transport note](../../../record/session_publication_transport_20260907.md)
 
 ## Corrections and referee passes
 - [6 October collective checker arithmetic correction and immutable initial source](collective_diffusion_arithmetic_correction_20261006.md)
-- [referee audit 2026-09-05](../../referee_audit_20260905.md)
-- [referee audit 2026-09-08](../../referee_audit_20260908.md)
-- [rigidity review](../../rigidity_review_20260905.md)
-- [retractions](../../retractions.md)
+- [referee audit 2026-09-05](../../../record/referee_audit_20260905.md)
+- [referee audit 2026-09-08](../../../record/referee_audit_20260908.md)
+- [rigidity review](../../../record/rigidity_review_20260905.md)
+- [retractions](../../../record/retractions.md)
 
 Additional dated records remain searchable in `record/` and Git history.
 
-- [4 October expansion and packet research audit](../../expansion_wavepacket_review_20261004.md)
+- [4 October expansion and packet research audit](../../../record/expansion_wavepacket_review_20261004.md)
 
 - [Next bounded proofs: immutable preparation provenance](next_proofs_20261006/README.md).
 
@@ -67,27 +67,27 @@ Additional dated records remain searchable in `record/` and Git history.
 - [Higher-ramified v1/v2 history](ramified_higher_20261006/accepted_v2.md): corrected gauge naming, independent two-gauge bases and uniform lattice proof.
 - [Paired-phase original sources](paired_phase_20261006/paired_character_original.md): exact quotient/locality and separately scoped Frostman review; P10 normalization correction retained.
 
-- [Paired phase and higher-seven integration](../../paired_higher_integration_20261006.md): exact component scopes and review boundaries.
+- [Paired phase and higher-seven integration](../../../record/paired_higher_integration_20261006.md): exact component scopes and review boundaries.
 - [Exceptional-seven original review](exceptional_seven_20261006/REPORT.md): only the characteristic-zero N7 consequence is promoted; other spectral pivots remain outside this batch.
 
 - [Paired-phase/higher-seven final validation](../../../evidence/executions/20261006/paired-higher-validation/README.md): post-run receipts for the 2,038-file snapshot; 183/183 workspace, 28/28 supplement, 55/55 maintenance in both modes, 268-page manuscript.
 
-- [Cohesive spectral and weighted-family integration](../../cohesive_integration_20261006.md): scoped theorem owners, source corrections and execution boundary.
+- [Cohesive spectral and weighted-family integration](../../../record/cohesive_integration_20261006.md): scoped theorem owners, source corrections and execution boundary.
 
 - [Cohesive spectral/selected-family final validation](../../../evidence/executions/20261006/cohesive-validation/README.md): post-run receipts for the 2,205-file snapshot; 186/186 workspace, 28/28 supplement, 58/58 maintenance in both modes, 270-page manuscript.
 
-- [Collective/cat/audit integration](../../collective_cat_integration_20261006.md): scoped TRACE-020/FM-026 and fresh FM-008 review, with source-bound corrections.
+- [Collective/cat/audit integration](../../../record/collective_cat_integration_20261006.md): scoped TRACE-020/FM-026 and fresh FM-008 review, with source-bound corrections.
 
 - [Collective/cat/audit final validation](../../../evidence/executions/20261006/collective-cat-validation/README.md): post-run receipts for the 2,430-file snapshot; 190/190 workspace, 28/28 supplement, 61/61 maintenance in both modes, 271-page manuscript.
 
-- [Factorial/intermediate-layer integration](../../factorial_intermediate_integration_20261007.md): scoped extensions of TRACE-020 and FM-026; original failed runs and fixture corrections preserved.
+- [Factorial/intermediate-layer integration](../../../record/factorial_intermediate_integration_20261007.md): scoped extensions of TRACE-020 and FM-026; original failed runs and fixture corrections preserved.
 
 - [Factorial/intermediate-layer final validation](../../../evidence/executions/20261007/factorial-intermediate-validation/README.md): post-run receipts for the 2,588-file snapshot; 192/192 workspace, 28/28 supplement, 65/65 maintenance in both modes, 271-page manuscript.
 
-- [Disjoint pair residual and odd arithmetic integration](../../residual_batch_integration_20261007.md): TRACE-021 and scoped FM-026 odd counts, with independent reviews and exact preserved provenance.
+- [Disjoint pair residual and odd arithmetic integration](../../../record/residual_batch_integration_20261007.md): TRACE-021 and scoped FM-026 odd counts, with independent reviews and exact preserved provenance.
 
 - [Disjoint pair residual and odd arithmetic validation](../../../evidence/executions/20261007/residual-batch-validation/README.md): 205/205 original scientific checks, 28/28 supplement, fresh 70/70 maintenance in both modes, 273-page manuscript; separately reviewed TeX and routing-source deltas precede this post-run receipt append.
 
-- [Checked phase/signed research checkpoint, 7 October](../../checked_research_checkpoint_20261007.md): accepted exact sources, remaining TRACE-005 gap and five next research prompts; publication held pending aggregate gates.
+- [Checked phase/signed research checkpoint, 7 October](../../../record/checked_research_checkpoint_20261007.md): accepted exact sources, remaining TRACE-005 gap and five next research prompts; publication held pending aggregate gates.
 
-- [Final checked checkpoint acceptance, 7 October 2026](../../checked_checkpoint_acceptance_20261007.md): exact local source gates and explicit post-run evidence delta; hosted CI remains separate.
+- [Final checked checkpoint acceptance, 7 October 2026](../../../record/checked_checkpoint_acceptance_20261007.md): exact local source gates and explicit post-run evidence delta; hosted CI remains separate.

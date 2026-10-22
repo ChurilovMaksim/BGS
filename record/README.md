@@ -56,15 +56,15 @@ not override this living surface.
 | Record | Exact role |
 |---|---|
 | [20 October whole-repository reconciliation](repository_reconciliation_20261020.md) | Current navigation, complete baseline integrity and explicit execution scope |
-| [19 October phase research](chat_integration_20261019.md) | Eleven source packets, cluster sums and Cauchy boundary; preserved negative evidence |
+| [19 October phase research](../archive/record/chat_integration_20261019.md) | Eleven source packets, cluster sums and Cauchy boundary; preserved negative evidence |
 | [16 October flat collision law](wick_poisson_continuation_20261016.md) | Auxiliary collision/occupation theorem; physical transfer remains open |
-| [16 October research import](chat_integration_20261016.md) | Process, resonance and signed-source results with exact boundaries |
+| [16 October research import](../archive/record/chat_integration_20261016.md) | Process, resonance and signed-source results with exact boundaries |
 | [14 October coherence](spectral_coherence_continuation_20261014.md) | Abstract obstruction, not a fixed-model BGS counterexample |
 | [13 October feedback](feedback_flatness_continuation_20261013.md) | Named-input full-depth intensity and clock consequences |
 | [12 October Haar feedback](haar_feedback_continuation_20261012.md) | Exact scattering/delay joint law and unconditional entropy-stable clocks; deterministic and prescribed-origin boundaries |
 | [12 October restoring drift](two_step_drift_continuation_20261012.md) | Exact one-step mean mechanism beyond the static obstruction |
 | [12 October unitary obstruction](unitary_two_step_continuation_20261012.md) | Genuine-unitary counterexample to an extra two-step singular factor |
-| [11 October integrated research](chat_integration_20261011.md) | Preserved 199 inputs, maximal local paths, circular phase laws and exact claim boundaries |
+| [11 October integrated research](../archive/record/chat_integration_20261011.md) | Preserved 199 inputs, maximal local paths, circular phase laws and exact claim boundaries |
 | [11 October cavity continuation](cavity_continuation_20261011.md) | Independently reviewed conditional fixed-moment bootstrap and stochastic-complement gap mechanism |
 | [8 October checkpoint](research_checkpoint_20261008.md) | Reconstructed phase-channel, sharp matrix-jet and real-flow proofs; pending deep-source inputs |
 | [7 October checkpoint](checked_research_checkpoint_20261007.md) | Accepted phase/Schur/source and low-switch scopes; explicit deferred candidates |

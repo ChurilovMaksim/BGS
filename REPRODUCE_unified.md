@@ -358,7 +358,7 @@ These are exact finite algebra controls, not asymptotic mixed-loop proofs.
 
 ## 11 October checked continuation
 
-The canonical mathematical status is in record/chat_integration_20261011.md.
+The canonical mathematical status is in archive/record/chat_integration_20261011.md.
 The curated exact controls use the pinned Python environment and a C++ compiler:
 
 ```bash

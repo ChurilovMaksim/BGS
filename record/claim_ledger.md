@@ -67,7 +67,7 @@ scope. No independent review, compiled Lean certificate or priority is asserted.
 | BGS-TRACE-104 | Author proof with classical averaging | Local iid-phase/Cauchy comparison for a Hermitian involution; universality remains a separate hypothesis. |
 | BGS-TRACE-105 | Author proof, classical mechanism | Exact positive Cauchy source law and genuine matrix-law counterexample; no BGS counterexample or novelty claim. |
 
-[Complete import and correction map](chat_integration_20261019.md) records the
+[Complete import and correction map](../archive/record/chat_integration_20261019.md) records the
 other adopted auxiliary results and preserves conditional G/TC/R assumptions.
 ERR-031 marks the stale original failed transmission run. The current invalid
 first prefix implementation and failed missing-dependency checker are retained
@@ -119,7 +119,7 @@ from an internal proof or the finite execution receipts.
 **Scope:** author self-review and fresh finite replay. The source inventory has
 90 entries; this is not a fresh independent certification of all 90 statements.
 The untouched historical text cannot override the dispositions below.
-[Review and correction map](chat_integration_20261016.md).
+[Review and correction map](../archive/record/chat_integration_20261016.md).
 
 | Stable ID | Status | Canonical source | Exact boundary |
 |---|---|---|---|
@@ -341,7 +341,7 @@ Priority and a solution of global BGS are not claimed.
 | BGS-TRACE-071 | PROVED | [Maximal phase point-process paths and all fixed normal-source products](../mathematics/laplace_path_transport_20261011.md) | Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion. |
 | BGS-TRACE-072 | PROVED | [Deterministic maximal microscopic observable flow](../mathematics/deterministic_path_transport_20261011.md) | Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open. |
 
-The [integration disposition](chat_integration_20261011.md) records every
+The [integration disposition](../archive/record/chat_integration_20261011.md) records every
 research branch, prior overlap, corrected guesses and unclosed candidates.
 TRACE-055 remains verification-pending after its covariance, physical-source
 and conditional barrier components were reconstructed. TRACE-080 now supplies

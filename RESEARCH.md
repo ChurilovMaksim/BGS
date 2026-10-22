@@ -39,7 +39,7 @@ defect-two sum are complete at the stated scope. The joint local-defect-at-most-
 sum has a quartic limit for tau<1/9 and uniform finite-size control; it retains
 a nonzero -3 tau^3 term. The exact positive Cauchy projection laws do not identify
 a matrix law, as shown by an explicit signed-source counterexample.
-[Integration, evidence audit and next obligations](record/chat_integration_20261019.md).
+[Integration, evidence audit and next obligations](archive/record/chat_integration_20261019.md).
 BGS-TRACE-005 and BGS-BGS-001 remain OPEN. Conditional G/TC/R premises remain explicit.
 
 ## Checked continuation, 16 October 2026
@@ -57,7 +57,7 @@ The [earlier checkpoint](record/research_continuation_20261016.md) retains its o
 
 ## Research-record integration, 16 October 2026
 
-[Exact review and 90-entry inventory](record/chat_integration_20261016.md).
+[Exact review and 90-entry inventory](archive/record/chat_integration_20261016.md).
 The all-order process implication no longer requires an independent UI premise.
 The actual signed hierarchy, physical parameter moment and positive Hardy
 excess limits remain unproved. Resonance deletion is sufficient only.
@@ -171,7 +171,7 @@ supply its fluctuation, stopped concentration and global trajectory companions.
 phase-ensemble local point-process path and every fixed normal-source product.
 [TRACE-072](mathematics/deterministic_path_transport_20261011.md) gives the deterministic
 maximal time-average bound and the actual-map growing interval. The initial
-local law remains unidentified. [The complete disposition](record/chat_integration_20261011.md)
+local law remains unidentified. [The complete disposition](archive/record/chat_integration_20261011.md)
 also indexes reconstructed physical-source covariance, conditional joint delays,
 clock obstructions, signed finite-field collisions and frozen circular laws.
 

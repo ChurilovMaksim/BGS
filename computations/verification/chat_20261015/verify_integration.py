@@ -45,7 +45,7 @@ def main():
     auditor.audit_graph(claims)
     auditor.audit_errata()
     auditor.audit_topics()
-    manifest=json.loads((ROOT/'record/chat_integration_20261016.json').read_text())
+    manifest=json.loads((ROOT/'archive/record/chat_integration_20261016.json').read_text())
     inv=json.loads((ROOT/manifest['historical_inventory']).read_text())
     need(len(inv)==90 and len({r['id'] for r in inv})==90,'Incomplete source inventory')
     receipt=json.loads((ROOT/'evidence/executions/20261016/chat-integration/receipt.json').read_text())
@@ -65,7 +65,7 @@ def main():
          'Physical BGS target changed unexpectedly')
     added=[r['canonical_path'] for r in manifest['imported_sources']]
     added+=['mathematics/deleted_clock_hardy_boundary_20261015.md',
-            'record/chat_integration_20261016.md','literature/chat_integration_sources_20261016.md']
+            'archive/record/chat_integration_20261016.md','archive/literature/chat_integration_sources_20261016.md']
     badlinks=[]
     for rel in added:
         src=ROOT/rel
