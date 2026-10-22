@@ -8,7 +8,7 @@ import sympy as s
 from actual_commutant_common import verify_data, require
 
 ROOT = Path(__file__).resolve().parents[2]
-EXPECTED_LEAN = '431e5d111238a962ec2bb994f21d4cb1ac17df250379651aa4e8fcd065604cb4'
+EXPECTED_LEAN = '6f2be83b437cd9962a0c44b7c1316ad9b13ba402cc2a9b4737da22ee64341acc'
 
 def check(source, data):
     verify_data(data)

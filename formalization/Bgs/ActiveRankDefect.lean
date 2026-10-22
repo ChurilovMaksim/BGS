@@ -2,6 +2,7 @@ import Std
 
 /- Compiled with Lean 4.33.1 on 11 October 2026. Finite arithmetic kernel only; no analytic, representation-theoretic, rank-classification or BGS formalization. -/
 
+namespace Bgs.ActiveRankDefect
 theorem activeDefectCost
     (h g R r : Nat)
     (hg : g ≤ h)
@@ -19,3 +20,4 @@ theorem rankFourGivesSecondOrder
 
 #print axioms activeDefectCost
 #print axioms rankFourGivesSecondOrder
+end Bgs.ActiveRankDefect

@@ -2,6 +2,7 @@ import Std
 
 /- Compiled with Lean 4.33.1 on 11 October 2026. Finite arithmetic kernel only; no analytic, representation-theoretic, rank-classification or BGS formalization. -/
 
+namespace Bgs.PhaseFrameWitness
 def det3 (a b c d e f g h i : Int) : Int :=
   a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g)
 
@@ -29,3 +30,4 @@ theorem phaseWitness_determinant : det4 phaseWitness = 1 := by
 #eval det4 phaseWitness
 
 #print axioms phaseWitness_determinant
+end Bgs.PhaseFrameWitness

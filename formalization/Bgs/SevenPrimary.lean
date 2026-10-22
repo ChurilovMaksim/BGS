@@ -1,7 +1,7 @@
 import Std
 /- Finite executable GF(5) certificate, coefficient arrays in ascending order.
    No abstract polynomial/Rabin-correctness theorem or commutant theorem is claimed. -/
-namespace SevenPrimary
+namespace Bgs.SevenPrimary
 abbrev Poly := Array Nat
 
 def trim (a : Poly) : Poly := Id.run do
@@ -243,4 +243,4 @@ theorem order49 : order49Check = true := by native_decide
 
 #print axioms order49
 
-end SevenPrimary
+end Bgs.SevenPrimary

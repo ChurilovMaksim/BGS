@@ -2,6 +2,7 @@ import Std
 
 /- Compiled with Lean 4.33.1 on 11 October 2026. Finite arithmetic kernel only; no analytic, representation-theoretic, rank-classification or BGS formalization. -/
 
+namespace Bgs.TorusDimensionBound
 theorem zero_weight_dimension_bound
     (h r mzero mroot dim : Nat)
     (hinj : mzero ≤ r * mroot)
@@ -15,3 +16,4 @@ theorem zero_weight_dimension_bound
     _ ≤ dim := hweights
 
 #print axioms zero_weight_dimension_bound
+end Bgs.TorusDimensionBound
