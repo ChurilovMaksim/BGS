@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "tested_snapshot_files": 2588,
+  "unchanged_tested_files": 2586,
+  "append_only_changes": [
+    {
+      "path": "record/factorial_intermediate_integration_20261007.md",
+      "before_sha256": "7160852c02e4be386e583eca3b39b7b923e7398b5296274f62f39add7afae73e",
+      "after_sha256": "ae01ef003ae794f558c39eb9055ed5a813d0b00bf869e50225d6fa9813304450",
+      "exact_suffix": "\n## Post-run execution evidence\n\nThe [compact validation receipts](../evidence/executions/20261007/factorial-intermediate-validation/README.md)\nwere appended after the frozen 2,588-file execution snapshot. Workspace 192/192,\nsupplement 28/28 and maintenance 65/65 normally and under optimization passed.\nThe unchanged-source manuscript passed at 271 pages, with scoped visual review\nof pages 263,264,267,268. No new Lean build is claimed; 22 prebuilt corpus C++ binaries\nwere hash-bound to their unchanged sources for 23 executions. No frozen-gate failure\nor scientific source repair occurred. The earlier pre-freeze integration-driver\nfailure and correction are disclosed in the receipt package. This receipt package and these record\nsuffixes were not themselves part of the executed snapshot; the exact append\nboundary is recorded in factorial_intermediate_postrun_evidence_delta.json.\n"
+    },
+    {
+      "path": "record/history/2026/INDEX.md",
+      "before_sha256": "6dcc1b38eb92240222e5de91f8428bc27bab108bf48f55637159fcbc8038c303",
+      "after_sha256": "588085b5ebcffc6f1da14db269f17cac2c966e5af51e6c31c1bcea93a443fb5d",
+      "exact_suffix": "\n- [Factorial/intermediate-layer final validation](../../../evidence/executions/20261007/factorial-intermediate-validation/README.md): post-run receipts for the 2,588-file snapshot; 192/192 workspace, 28/28 supplement, 65/65 maintenance in both modes, 271-page manuscript.\n"
+    }
+  ],
+  "new_evidence_files": {
+    "evidence/executions/20261007/factorial-intermediate-validation/README.md": "61e868bdf6b90bc844bd6159262a47a71887c5722c0a84252bd8569eaf96f9c1",
+    "evidence/executions/20261007/factorial-intermediate-validation/SHA256SUMS": "57985657be69094e7d29c446557fe222d39eec0d6a50e3b96445cee09a4a310a",
+    "evidence/executions/20261007/factorial-intermediate-validation/archive-manifest.json": "4903d1b319f995ea3233139d12a7b5a818a4c918a9e607943dab5659ab98bce0",
+    "evidence/executions/20261007/factorial-intermediate-validation/cpp-reuse-binding.json": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "evidence/executions/20261007/factorial-intermediate-validation/execution-log-hashes.json": "78e60d8934f8035bef40ded8816399ec9ce689f0fe2341e68159bdff4cf7efde",
+    "evidence/executions/20261007/factorial-intermediate-validation/lean-unchanged-binding.json": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "evidence/executions/20261007/factorial-intermediate-validation/maintenance-normal.log": "a9cca1cdc9afe578ac64553acf77cfa4f50a1da8902400c95ea38f9820c2b635",
+    "evidence/executions/20261007/factorial-intermediate-validation/maintenance-optimized.log": "d21e9e488c24eaa994ce671a43d1ff68ef4d50af39ee1e4276a22e28ee46a923",
+    "evidence/executions/20261007/factorial-intermediate-validation/manuscript-visual.json": "f4cc1d06995532bf944e9944424dbc61acb1810453bc413b797363a9f942a009",
+    "evidence/executions/20261007/factorial-intermediate-validation/manuscript.json": "e68aa38d1d137bf99bf693f5baae3295940a787211a272b1ddff445221463b46",
+    "evidence/executions/20261007/factorial-intermediate-validation/new-checks/factorial_diagonal_extension.log": "17a6d13a2778847233b5a2054d40fc24a78b7949c0e4434b9f046ce7824fb5a1",
+    "evidence/executions/20261007/factorial-intermediate-validation/new-checks/intermediate_old_layers_certificates.log": "1d9a435ce2ce7b36c5a7de056d460999086b672aec5be94b220101bedcb68b1a",
+    "evidence/executions/20261007/factorial-intermediate-validation/path-roles.json": "dd497d12825689b9058ee152e665846832221404ed3b57103f879cd7896293e1",
+    "evidence/executions/20261007/factorial-intermediate-validation/pre-freeze-guards.json": "8f56a5e68b7cae57923481ef2aac85104077a4093bf2d3bdd84a6b80f3575957",
+    "evidence/executions/20261007/factorial-intermediate-validation/pre-freeze-integration-failure.json": "7e5fef55fec2856327d003e6745b32fec792bdf7ebf5362fafc7562a0bf2e15c",
+    "evidence/executions/20261007/factorial-intermediate-validation/raw-public-hashes.json": "857bbd08ac7fec1dc31e2bafb3a7608f36bb620ca9255ee3ae5bec4981ebf285",
+    "evidence/executions/20261007/factorial-intermediate-validation/receipt.json": "891aee4cc0e471eb2c547b9b62a4b32ee3ccf1be1224d4a694098f1fd52329dc",
+    "evidence/executions/20261007/factorial-intermediate-validation/supplement.json": "c71266bdbc15fe2f9cbd6d4c50f7116f7475f25cfcf0504fae2b33e44764afe7",
+    "evidence/executions/20261007/factorial-intermediate-validation/targeted-replay.json": "6b0b85acf31870a49beaaac57545dcbe504ffd8ed0bad5134472852699815c1c",
+    "evidence/executions/20261007/factorial-intermediate-validation/whitespace-check.json": "c12ef4843029d6e28dadbc82e532d56941222804ad4b599ca1b8bbce717d3513",
+    "evidence/executions/20261007/factorial-intermediate-validation/workspace.json": "29797b344336fc5cf22069dffdfafd5363812e475c225cc6b6ffdcb8539321b7"
+  },
+  "scope": "Exact post-run evidence append; this delta record is itself an additional post-snapshot reporting file, not a tested scientific source."
+}

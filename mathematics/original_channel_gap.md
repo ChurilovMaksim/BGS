@@ -1,7 +1,7 @@
 # Original ordered two-pair channel: logarithmic-loss gap
 
 **Claim ID:** `BGS-FM-020`. **Base:** `fa007c498fe116a814a90aa3215cfd65b1f2a154`.
-Dependencies: mathematics/collective_diffusion_gap.md, D5–D8 and D17–D19. This proof does not use D2 or alter the noise law. Status: project analytic proof with independent internal audit. See [review](../record/original_channel_gap_review_20261006.md) and [programme](../record/original_channel_gap_program_20261006.md).
+Dependencies: mathematics/collective_diffusion_gap.md, D5–D8 and D17–D19. This proof does not use D2 or alter the noise law. Status: project analytic proof with independent internal audit. See [review](../record/original_channel_gap_review_20261006.md) and [programme](../archive/record/original_channel_gap_program_20261006.md).
 
 ## Statement
 For every odd N>=3, write ell_N=1+log N and lambda_N=(1024 ell_N)^(-2). For every u>=0 and every unitary U, the original m=1 channel satisfies

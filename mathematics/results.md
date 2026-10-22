@@ -60,8 +60,8 @@ The Gaussian benchmark and its sinh crossover are prior results. The subsequent
 Heisenberg collision law and exact ratio B/G->exp(-alpha^2). It also gives
 geometric vertex occupations and a bounded radial-entry comparison. The
 physical non-flat extension and original signed BGS hierarchy remain open.
-[Current proof outcome and next obligations](../record/wick_poisson_continuation_20261016.md).
-The [earlier checkpoint](../record/research_continuation_20261016.md) retains its original scope.
+[Current proof outcome and next obligations](../archive/record/wick_poisson_continuation_20261016.md).
+The [earlier checkpoint](../archive/record/research_continuation_20261016.md) retains its original scope.
 
 ## Research-record integration, 16 October 2026
 
@@ -109,7 +109,7 @@ $$
 
 Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
 matrix space. A general early norm contraction cannot replace the missing
-source-specific signed cancellation. [Exact outcome](../record/spectral_coherence_continuation_20261014.md).
+source-specific signed cancellation. [Exact outcome](../archive/record/spectral_coherence_continuation_20261014.md).
 
 [TRACE-080](unconditional_feedback_flatness_20261013.md) now
 proves unconditional entry flatness from any deterministic unitary startup
@@ -125,7 +125,7 @@ and BGS remain open.
 
 [TRACE-079](two_step_stopped_concentration_20261013.md) supplies
 the all-pair stopped concentration input, including the diagonal and full
-first crossings. [Exact outcome](../record/feedback_flatness_continuation_20261013.md).
+first crossings. [Exact outcome](../archive/record/feedback_flatness_continuation_20261013.md).
 
 [TRACE-078](two_step_increment_variance_20261013.md) adds
 an exact raw second-moment bound for the complete two-step feedback
@@ -140,7 +140,7 @@ norm on the entry-stopped prefix, with quantitative failure probability.
 This proves the deep-range three-step forcing estimate on reached states.
 The stopped theorem alone supplies no entry-survival probability;
 TRACE-080 closes it under its smaller startup-gap hypothesis.
-[Exact outcome](../record/green_compression_continuation_20261013.md).
+[Exact outcome](../archive/record/green_compression_continuation_20261013.md).
 
 [TRACE-076](haar_feedback_clock_law_20261012.md) supplies the exact Haar
 feedback scattering/delay joint law, inverse-Jacobi spectrum, finite
@@ -167,7 +167,7 @@ peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration and joint
 on their explicit startup/cutoff regime; a deterministic microscopic
 identification is still not obtained.
 
-The [reviewed Schur continuation](../record/cavity_continuation_20261011.md)
+The [reviewed Schur continuation](../archive/record/cavity_continuation_20261011.md)
 strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
 killed clock upper bounds and [uniform equality laws at every fixed order](conditional_clock_universality_20261011.md)
 at the log^(1+kappa) cutoff. The [full-depth clock measure](full_depth_clock_measure_20261011.md)
@@ -211,7 +211,7 @@ remain open. [Exact scopes](phase_trace_checkpoint.md) distinguish
 accepted proofs, source corrections, changed-family obstructions and deferred
 candidates. Main publication follows aggregate checks and fresh review.
 
-This is the current reading index, not a second status authority. [The claim ledger](../record/claim_ledger.md) controls scientific status; [exact proof topics](topics/README.md) retain every canonical source path. The [corpus revision](../record/corpus_revision_20261006.md) distinguishes inventory, internal proof review, source checks and finite execution.
+This is the current reading index, not a second status authority. [The claim ledger](../record/claim_ledger.md) controls scientific status; [exact proof topics](topics/README.md) retain every canonical source path. The [corpus revision](../archive/record/corpus_revision_20261006.md) distinguishes inventory, internal proof review, source checks and finite execution.
 
 **Deterministic BGS and TRACE-005 remain open.** The scoped corpus revision passed remote acceptance; research proceeds with its named conditional boundaries preserved.
 

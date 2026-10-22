@@ -13,7 +13,7 @@ is impossible: pair absolute comparison forces higher absolute errors to
 diverge. This note proves that obstruction, calibrates a signed cubic test,
 and tests an explicit phase mechanism without treating an unrealized trace
 table as a quantum system. Earlier signed cubic work is credited in the
-[research review](../record/signed_heisenberg_review_20260930.md).
+[research review](../archive/record/signed_heisenberg_review_20260930.md).
 
 ## 1. Quantitative cubic obstruction
 

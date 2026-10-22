@@ -77,24 +77,17 @@ higher-copy estimates, signed noise removal and deterministic BGS retain
 separate open boundaries. Earlier wording about the original rate is
 superseded at precisely this scope.
 
-## Maintained sources and their publication views
+## Maintained and generated sources
 
-Some chapters of the consolidated manuscript are publication views of
-maintained sources kept elsewhere in the repository: the authoritative text
-is the source, and each view is kept in step with its source by the
-synchronizer script named for it below. The remaining sections are maintained
-directly as TeX.
-
-| Publication view | Maintained source and synchronizer |
+| Source | Editing rule |
 |---|---|
-| Six `unified_sections/return_*.tex` chapters | Edit the maintained Markdown proofs; refresh the view with `computations/maintenance/sync_return_sections.py` |
+| Six `unified_sections/return_*.tex` chapters | Edit the maintained Markdown proofs; regenerate with `computations/maintenance/sync_return_sections.py` |
 | Fixed-map frontier | Edit `mathematics/fixed_map_resolvent_frontier.md`; use `computations/maintenance/sync_fixed_map_section.py` |
 | Finite-orbit resonance chapter | Edit its registered Markdown authority; use `computations/maintenance/sync_finite_orbit_section.py` |
 | Other included TeX sections | Maintain directly, respecting their registered mathematical sources and status |
 
-Each synchronizer accepts `--check` to detect drift between a source and its
-view. The complete contracts are recorded in
-[generated_sources.json](../record/generated_sources.json).
+Each synchronizer accepts `--check` to detect drift. The complete contracts
+are in [generated_sources.json](../record/generated_sources.json).
 Sequential `*_partN.tex` files are non-overlapping source segments, included
 in order to preserve recovered text bytes. They are not competing manuscripts.
 Return-law equation tags use the `Ret.` prefix.
@@ -184,6 +177,6 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 ## Current integration and verification
 
 [The research record](../record/README.md) indexes the 11–19 October continuations.
-[The repository audit](../record/repository_reconciliation_20261020.md) records current
+[The repository audit](../archive/record/repository_reconciliation_20261020.md) records current
 source/build checks separately from historical receipts. Integration does not
 imply submission, independent refereeing or BGS closure.

@@ -27,7 +27,7 @@ and [scientific review](record/spectral_final_integration_20261021.md).
 Run the scientific-registry, repository and bibliographic metadata audits first.
 Also run render_claim_registry.py --check, render_errata.py --check and
 render_research_views.py --check from computations/maintenance/.
-[The current audit](record/repository_reconciliation_20261020.md) records
+[The current audit](archive/record/repository_reconciliation_20261020.md) records
 actual execution scope. Dated integration checkers pin their original source
 and manuscript hashes; they are not perpetual gates for later revisions.
 
@@ -339,7 +339,7 @@ Exploratory echo and redesigned-symbol monodromy simulations, and Wolfram
 scripts, retain their dated evidence and are not counted as fresh runs.
 The new Lean kernel is included in the pinned `lake build`; its current
 execution status must be read separately from earlier 16-module reports.
-See [the publication review](record/fixed_map_publication_20260920.md).
+See [the publication review](archive/record/fixed_map_publication_20260920.md).
 
 ## Scoped loop-reduction controls
 
@@ -403,7 +403,7 @@ only and does not alter Lean's kernel.
 
 ## Reviewed Schur continuation
 
-The 11 October disposition is [the cavity continuation](record/cavity_continuation_20261011.md).
+The 11 October disposition is [the cavity continuation](archive/record/cavity_continuation_20261011.md).
 The prior integration and its receipts retain their earlier source scope.
 The new finite controls are reproduced by:
 

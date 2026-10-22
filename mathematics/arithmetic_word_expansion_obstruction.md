@@ -6,7 +6,7 @@
 uses Bourgain--Gamburd; frame potentials and Clifford designs are prior mathematics.
 No world-first priority, independent referee acceptance or BGS solution is asserted.
 All standard and projective phases, and full-space versus sector channels, are
-kept explicit. See [the audit](../record/expansion_wavepacket_review_20261004.md)
+kept explicit. See [the audit](../archive/record/expansion_wavepacket_review_20261004.md)
 and [source mappings](../literature/expansion_wavepacket_sources_20261004.md).
 
 ## 1. Three fixed maps

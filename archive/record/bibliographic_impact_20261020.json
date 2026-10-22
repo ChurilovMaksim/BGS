@@ -1,0 +1,423 @@
+{
+  "date": "2026-10-20",
+  "prior_cache": "evidence/source_metadata/registry_metadata_20261013_feedback.json",
+  "prior_cache_sha256": "419e7b49a41dfe94f7bd7bd9616290866ab680ef04811f55b02b8d0f6f6e684c",
+  "current_cache": "evidence/source_metadata/registry_metadata_20261020.json",
+  "new_ids": [
+    "EXT-PITTEL-2016",
+    "EXT-KPSS-2002",
+    "EXT-BF-2023",
+    "EXT-CS-2006",
+    "EXT-STANLEY-1981"
+  ],
+  "impact_changes": [
+    {
+      "id": "EXT-CK-2006",
+      "before": [
+        [
+          "BGS-TRACE-007"
+        ],
+        [
+          "BGS-FLOW-018"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-TRACE-007"
+        ],
+        [
+          "BGS-FLOW-018",
+          "BGS-TRACE-091"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-EV-2015",
+      "before": [
+        [
+          "BGS-FM-005"
+        ],
+        [
+          "BGS-BGS-001",
+          "BGS-FLOW-014",
+          "BGS-FLOW-015",
+          "BGS-FLOW-016",
+          "BGS-FLOW-017",
+          "BGS-FLOW-018",
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-FM-007",
+          "BGS-FM-008",
+          "BGS-FM-010",
+          "BGS-FM-011",
+          "BGS-FM-017",
+          "BGS-FM-024",
+          "BGS-FM-025",
+          "BGS-LOOP-001",
+          "BGS-RES-007",
+          "BGS-TRACE-009",
+          "BGS-TRACE-011",
+          "BGS-TRACE-012"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FM-005"
+        ],
+        [
+          "BGS-BGS-001",
+          "BGS-FLOW-014",
+          "BGS-FLOW-015",
+          "BGS-FLOW-016",
+          "BGS-FLOW-017",
+          "BGS-FLOW-018",
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-FM-007",
+          "BGS-FM-008",
+          "BGS-FM-010",
+          "BGS-FM-011",
+          "BGS-FM-017",
+          "BGS-FM-024",
+          "BGS-FM-025",
+          "BGS-FM-032",
+          "BGS-LOOP-001",
+          "BGS-RES-007",
+          "BGS-TRACE-009",
+          "BGS-TRACE-011",
+          "BGS-TRACE-012",
+          "BGS-TRACE-084"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-PESIN-1977",
+      "before": [
+        [
+          "BGS-FM-006"
+        ],
+        [
+          "BGS-FM-018",
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FM-006"
+        ],
+        [
+          "BGS-FM-018",
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-FM-033",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "before": [
+        [
+          "BGS-FM-006",
+          "BGS-TRACE-019"
+        ],
+        [
+          "BGS-FM-018",
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FM-006",
+          "BGS-TRACE-019"
+        ],
+        [
+          "BGS-FM-018",
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-FM-033",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-PP-1990",
+      "before": [
+        [
+          "BGS-FM-006",
+          "BGS-FM-018",
+          "BGS-TRACE-019"
+        ],
+        [
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FM-006",
+          "BGS-FM-018",
+          "BGS-TRACE-019"
+        ],
+        [
+          "BGS-FM-019",
+          "BGS-FM-020",
+          "BGS-FM-023",
+          "BGS-FM-028",
+          "BGS-FM-029",
+          "BGS-FM-033",
+          "BGS-TRACE-024",
+          "BGS-TRACE-025",
+          "BGS-TRACE-028",
+          "BGS-TRACE-029",
+          "BGS-TRACE-072"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-POPESCU-2023",
+      "before": [
+        [
+          "BGS-FLOW-013",
+          "BGS-FM-008",
+          "BGS-FM-009",
+          "BGS-FM-010",
+          "BGS-FM-024",
+          "BGS-FM-025",
+          "BGS-FM-026",
+          "BGS-TRACE-013"
+        ],
+        [
+          "BGS-FLOW-014",
+          "BGS-FLOW-015",
+          "BGS-FLOW-016",
+          "BGS-FLOW-017",
+          "BGS-FLOW-018",
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-FM-011",
+          "BGS-FM-017",
+          "BGS-TRACE-009",
+          "BGS-TRACE-011",
+          "BGS-TRACE-012"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FLOW-013",
+          "BGS-FM-008",
+          "BGS-FM-009",
+          "BGS-FM-010",
+          "BGS-FM-024",
+          "BGS-FM-025",
+          "BGS-FM-026",
+          "BGS-TRACE-013"
+        ],
+        [
+          "BGS-FLOW-014",
+          "BGS-FLOW-015",
+          "BGS-FLOW-016",
+          "BGS-FLOW-017",
+          "BGS-FLOW-018",
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-FM-011",
+          "BGS-FM-017",
+          "BGS-FM-032",
+          "BGS-TRACE-009",
+          "BGS-TRACE-011",
+          "BGS-TRACE-012",
+          "BGS-TRACE-084"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-RAINS-2003",
+      "before": [
+        [
+          "BGS-TRACE-009"
+        ],
+        [
+          "BGS-TRACE-011",
+          "BGS-TRACE-012"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-TRACE-009"
+        ],
+        [
+          "BGS-FM-032",
+          "BGS-TRACE-011",
+          "BGS-TRACE-012",
+          "BGS-TRACE-084"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-DE-2001",
+      "before": [
+        [
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-TRACE-010",
+          "BGS-TRACE-011"
+        ],
+        [
+          "BGS-TRACE-012"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-FLOW-019",
+          "BGS-FLOW-020",
+          "BGS-FLOW-021",
+          "BGS-TRACE-010",
+          "BGS-TRACE-011",
+          "BGS-TRACE-085",
+          "BGS-TRACE-087"
+        ],
+        [
+          "BGS-TRACE-012"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-TROPP-2011",
+      "before": [
+        [
+          "BGS-TRACE-060"
+        ],
+        [
+          "BGS-TRACE-076",
+          "BGS-TRACE-080"
+        ]
+      ],
+      "after": [
+        [
+          "BGS-TRACE-060"
+        ],
+        [
+          "BGS-TRACE-076",
+          "BGS-TRACE-080",
+          "BGS-TRACE-095"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-PITTEL-2016",
+      "before": [
+        [],
+        []
+      ],
+      "after": [
+        [
+          "BGS-TRACE-089"
+        ],
+        []
+      ]
+    },
+    {
+      "id": "EXT-KPSS-2002",
+      "before": [
+        [],
+        []
+      ],
+      "after": [
+        [
+          "BGS-TRACE-093"
+        ],
+        [
+          "BGS-TRACE-094"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-BF-2023",
+      "before": [
+        [],
+        []
+      ],
+      "after": [
+        [
+          "BGS-TRACE-093"
+        ],
+        [
+          "BGS-TRACE-094"
+        ]
+      ]
+    },
+    {
+      "id": "EXT-CS-2006",
+      "before": [
+        [],
+        []
+      ],
+      "after": [
+        [
+          "BGS-TRACE-094"
+        ],
+        []
+      ]
+    },
+    {
+      "id": "EXT-STANLEY-1981",
+      "before": [
+        [],
+        []
+      ],
+      "after": [
+        [
+          "BGS-TRACE-103"
+        ],
+        []
+      ]
+    }
+  ],
+  "scope": "Administrative reconciliation of earlier source reviews; inherited fields/observations and all theorem contracts remain unchanged."
+}

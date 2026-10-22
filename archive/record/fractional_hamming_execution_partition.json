@@ -1,0 +1,35 @@
+{
+  "scope": "Exact union of unchanged independent scientific cases; split only execution granularity. Historical six-run and one-core receipts unchanged.",
+  "default_entry": "Author plus108 synthesis cases",
+  "independent_entries": [
+    "full_end_2_1",
+    "full_end_2_2",
+    "full_end_2_3",
+    "full_end_3_2",
+    "top_gram",
+    "torus",
+    "network",
+    "offcharge_bound"
+  ],
+  "full_end_partition": [
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "source_before_sha256": "1199a41dd9d199fe1a42de154debc78f0b1f88502176f1dc80aca95bbc355ebc",
+  "source_after_sha256": "3c2df5e4ee8fd955b27c23fca5bfe3c7bb6719d82a09ea7caeaaac274b610d52",
+  "affinity_pinning": "Removed in maintained replay; OS schedules independent single-process checks. CPU/memory/wall caps and single-library-thread settings remain."
+}

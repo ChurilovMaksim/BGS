@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "tested_snapshot_files": 2430,
+  "unchanged_tested_files": 2428,
+  "append_only_changes": [
+    {
+      "path": "record/collective_cat_integration_20261006.md",
+      "before_sha256": "63f694fa22daf7086a0e98eb3f69db6612444e0ff03ef5617d79568162a2dc06",
+      "after_sha256": "b33bb4d282d4ad5a40511c0cbc0e52815ba9a0c4879a4e3ab2f1b5cda10419ed",
+      "exact_suffix": "\n## Post-run execution evidence\n\nThe [compact validation receipts](../evidence/executions/20261006/collective-cat-validation/README.md)\nwere appended after the frozen 2,430-file execution snapshot. Workspace 190/190,\nsupplement 28/28 and maintenance 61/61 normally and under optimization passed.\nThe unchanged-source manuscript passed at 271 pages, with scoped visual review\nof pages 263,264,267,268,271. No new Lean build is claimed; 22 prebuilt corpus C++ binaries\nwere hash-bound to their unchanged sources for 23 executions. No gate failure\nor scientific source repair occurred. This receipt package and these record\nsuffixes were not themselves part of the executed snapshot; the exact append\nboundary is recorded in collective_cat_postrun_evidence_delta.json.\n"
+    },
+    {
+      "path": "record/history/2026/INDEX.md",
+      "before_sha256": "e8428124ec53fd513f6f94bcea170da7c1224b5e62af154604e6a78074a80f58",
+      "after_sha256": "6e434260c60a76f65afc505365371c14fad358d70e206e41d7dfd3b4b1b9adec",
+      "exact_suffix": "\n- [Collective/cat/audit final validation](../../../evidence/executions/20261006/collective-cat-validation/README.md): post-run receipts for the 2,430-file snapshot; 190/190 workspace, 28/28 supplement, 61/61 maintenance in both modes, 271-page manuscript.\n"
+    }
+  ],
+  "new_evidence_files": {
+    "evidence/executions/20261006/collective-cat-validation/README.md": "e05d271d24ced40c1490656ce02556e5a0c98edbca524793fc05a076744044a1",
+    "evidence/executions/20261006/collective-cat-validation/SHA256SUMS": "678c9f359b0d01573fb94407ee8398c1e67aba0a5092a43072779b9f6a7684f6",
+    "evidence/executions/20261006/collective-cat-validation/archive-manifest.json": "ea560bd42e019c992659e5eea87b2222a9a7730441933f4bea0f94733271c497",
+    "evidence/executions/20261006/collective-cat-validation/cpp-reuse-binding.json": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "evidence/executions/20261006/collective-cat-validation/execution-log-hashes.json": "22b23ab558ffb21e9ba5adbb1b639627f966b7c790675948a3fb2ebe776a6788",
+    "evidence/executions/20261006/collective-cat-validation/lean-unchanged-binding.json": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "evidence/executions/20261006/collective-cat-validation/maintenance-normal.log": "459bda8c05076b14c09b16c1ef913bd28f6cc0a999ca1c60a866d7b88c910951",
+    "evidence/executions/20261006/collective-cat-validation/maintenance-optimized.log": "e0839b4968cbb060d9856e7808f1631d3e2f928176cc37e6ccc3198cac0f8d85",
+    "evidence/executions/20261006/collective-cat-validation/manuscript-visual.json": "b59d881f9b61477889c067bf41eaf42d9aa00053a93efc98ba03e02f3ab1b0ac",
+    "evidence/executions/20261006/collective-cat-validation/manuscript.json": "4439992b3e475ef8726526a52d7be3e4e2d3d5e91d100b6395bb2d8c4a996f1a",
+    "evidence/executions/20261006/collective-cat-validation/new-checks/cat_jet_certificates.log": "c33eef60ebd54aa7a7bb4221258a307131a4b874d9aea068494b043862670a7d",
+    "evidence/executions/20261006/collective-cat-validation/new-checks/collective_hierarchy.log": "22d346d328eb58f0e35724bb53f75318ce5aa6f4ead498f70d1c0c9757afffff",
+    "evidence/executions/20261006/collective-cat-validation/new-checks/fm008_independent.log": "52a85146190986c98d195555ee5dd6bb0dd8de32851020ee40b79007df5b4fe4",
+    "evidence/executions/20261006/collective-cat-validation/new-checks/ordered_diagonal_companion.log": "dca675a94f1469e9c580a961019c5854212b2d483b12c38e1e8eb879d17f0342",
+    "evidence/executions/20261006/collective-cat-validation/path-roles.json": "dd497d12825689b9058ee152e665846832221404ed3b57103f879cd7896293e1",
+    "evidence/executions/20261006/collective-cat-validation/pre-freeze-guards.json": "0832acb0fb685cdb80cadca21820eae8335798a1862395be4e37141a6a3f0bb0",
+    "evidence/executions/20261006/collective-cat-validation/raw-public-hashes.json": "b93b40b1604a2d8bfce85fb47f79387b23ad9d2274497a1473a183f86c72d928",
+    "evidence/executions/20261006/collective-cat-validation/receipt.json": "4e4eabebb18b1face702bf495a6b722c66d44697cb120fd71382d728ead2cb66",
+    "evidence/executions/20261006/collective-cat-validation/supplement.json": "d5262052781cec7df16af4aed255281e28451d73f5a4fff666fc14ce57d3c06c",
+    "evidence/executions/20261006/collective-cat-validation/targeted-replay.json": "2d51b1ba4450bb790e7bfe79c8fc4e7318d18e674e60768f74964c4497645bb9",
+    "evidence/executions/20261006/collective-cat-validation/whitespace-check.json": "089cb7897b74f8ec92be813e19b7572407b90123e19d7cbc5e474c2f2a50012a",
+    "evidence/executions/20261006/collective-cat-validation/workspace.json": "35d0a70cde7073f410676a461bb96f94b94b8e9172cc51fcf1b2579ec3b2b292"
+  },
+  "scope": "Exact post-run evidence append; this delta record is itself an additional post-snapshot reporting file, not a tested scientific source."
+}

@@ -5,7 +5,7 @@ the smooth-symbol and polar comparison. The spectral-transport mechanism is
 credited to the earlier project theorem. Supporting proof for `BGS-TRACE-017`;
 no new stable claim ID. Fixed coupling and odd dimensions are unchanged.
 No BGS conclusion, external priority or analytic formalization is asserted.
-The [curated review](../record/polar_wkb_review.md) separates audit scopes;
+The [curated review](../archive/record/polar_wkb_review.md) separates audit scopes;
 the [provenance](../evidence/polar_wkb_provenance.json) identifies the source
 revision, reviewed artifacts and actual hash comparisons.
 

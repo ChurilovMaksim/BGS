@@ -1,0 +1,131 @@
+{
+  "schema": "bgs-phase-checkpoint-bibliographic-impact-v1",
+  "before_sha256": "e4bd557bb4c0bd951487ef15bd335423c2b514b0be21a8a5116cd7ae53afa999",
+  "after_sha256": "37bd4734371e336cc6dc1be5305470943c52c22f172c1e3c4792edaceac1945e",
+  "changes": [
+    {
+      "id": "EXT-PESIN-1977",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [
+        "BGS-FM-006"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-TRACE-021"
+      ],
+      "new_direct": [
+        "BGS-FM-006"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ]
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-TRACE-021"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ]
+    },
+    {
+      "id": "EXT-PP-1990",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-TRACE-021"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ]
+    },
+    {
+      "id": "EXT-ROY-2016",
+      "change": "Add separately reviewed triple-log quantitative separation source/application; preserve original accepted fields and effective-gap review."
+    },
+    {
+      "id": "EXT-ROY-2016",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [
+        "BGS-FM-011"
+      ],
+      "old_transitive": [],
+      "new_direct": [
+        "BGS-FM-011",
+        "BGS-FM-029"
+      ],
+      "new_transitive": []
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "change": "Added exact-source application record from separately accepted imported source/proof reviews; no local primary PDF download claimed."
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [],
+      "old_transitive": [],
+      "new_direct": [
+        "BGS-TRACE-023"
+      ],
+      "new_transitive": []
+    },
+    {
+      "id": "EXT-BHATIA-2002",
+      "change": "Added exact-source application record from separately accepted imported source/proof reviews; no local primary PDF download claimed."
+    },
+    {
+      "id": "EXT-BHATIA-2002",
+      "change": "Graph impact extension only; original source statement/application is not re-audited",
+      "old_direct": [],
+      "old_transitive": [],
+      "new_direct": [
+        "BGS-FM-030"
+      ],
+      "new_transitive": []
+    }
+  ]
+}

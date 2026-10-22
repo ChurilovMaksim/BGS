@@ -158,4 +158,4 @@ Then $R=M_NJ$ would be the forbidden common reversor.
 
 The polynomial identities, excluded orders, and conclusion's exact
 scope are independently recorded in
-[`record/frozen_antireversor_review_20260924.md`](../record/frozen_antireversor_review_20260924.md).
+[`record/frozen_antireversor_review_20260924.md`](../archive/record/frozen_antireversor_review_20260924.md).

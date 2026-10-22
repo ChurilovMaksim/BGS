@@ -86,7 +86,7 @@ sections. Finite certificates, numerical diagnostics and formal kernels
 certify their stated propositions only.
 
 [The 8 October checkpoint](../record/research_checkpoint_20261008.md) and
-[the corpus review](../record/corpus_revision_20261006.md) state actual review
+[the corpus review](../archive/record/corpus_revision_20261006.md) state actual review
 coverage. Historical branch arguments remain traceable through the
 [record index](../archive/history/2026/INDEX.md); an inventory is not a complete
 proof certification.

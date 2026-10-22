@@ -314,5 +314,5 @@ at $|m|\asymp N$. The mixed-sign cancellations required by
 replays exact rational geometry, the constants in (2)/(6), and finite
 combinatorial identities used in (7)/(8)/(13). The finite direct raw-Weyl
 matrix check and full submission audit are documented in
-[`record/frozen_seven_cut_review_20260924.md`](../record/frozen_seven_cut_review_20260924.md).
+[`record/frozen_seven_cut_review_20260924.md`](../archive/record/frozen_seven_cut_review_20260924.md).
 Neither computation proves (9), the all-$N$ statement, or a CUE limit.

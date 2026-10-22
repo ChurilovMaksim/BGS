@@ -1,0 +1,97 @@
+{
+  "scope": "Explicit external/cache/graph-impact change; all prior source observations retained. Kelmer is attribution only, no load-bearing edge.",
+  "impact": [
+    {
+      "id": "EXT-POPESCU-2023",
+      "old_direct": [
+        "BGS-FLOW-013",
+        "BGS-FM-008",
+        "BGS-FM-009",
+        "BGS-FM-010",
+        "BGS-FM-024",
+        "BGS-FM-025",
+        "BGS-TRACE-013"
+      ],
+      "old_transitive": [
+        "BGS-FLOW-014",
+        "BGS-FLOW-015",
+        "BGS-FLOW-016",
+        "BGS-FLOW-017",
+        "BGS-FLOW-018",
+        "BGS-FLOW-019",
+        "BGS-FLOW-020",
+        "BGS-FLOW-021",
+        "BGS-FM-011",
+        "BGS-FM-017",
+        "BGS-TRACE-009",
+        "BGS-TRACE-011",
+        "BGS-TRACE-012"
+      ],
+      "new_direct": [
+        "BGS-FLOW-013",
+        "BGS-FM-008",
+        "BGS-FM-009",
+        "BGS-FM-010",
+        "BGS-FM-024",
+        "BGS-FM-025",
+        "BGS-FM-026",
+        "BGS-TRACE-013"
+      ],
+      "new_transitive": [
+        "BGS-FLOW-014",
+        "BGS-FLOW-015",
+        "BGS-FLOW-016",
+        "BGS-FLOW-017",
+        "BGS-FLOW-018",
+        "BGS-FLOW-019",
+        "BGS-FLOW-020",
+        "BGS-FLOW-021",
+        "BGS-FM-011",
+        "BGS-FM-017",
+        "BGS-TRACE-009",
+        "BGS-TRACE-011",
+        "BGS-TRACE-012"
+      ]
+    },
+    {
+      "id": "EXT-KELMER-2008",
+      "old_direct": [],
+      "old_transitive": [],
+      "new_direct": [],
+      "new_transitive": []
+    }
+  ],
+  "new_record": {
+    "id": "EXT-KELMER-2008",
+    "authors": [
+      "Dubi Kelmer"
+    ],
+    "title": "On matrix elements for the quantized cat map modulo prime powers",
+    "identifier": "arXiv:0802.3237v2; https://arxiv.org/pdf/0802.3237v2",
+    "pinned_version": "arXiv v2 header18September2008; body first-page datelineNovember8,2018 retained as an observed discrepancy",
+    "locator": "Lemma3.2, printedp10; inert case Section3.2",
+    "dependency_role": "prior-attribution-only",
+    "mapping": "Prior inert-torus multiplicity-free mechanism. Actual cyclic-generator/CRT distributions and jet reductions are independently proved in the project. The cited diagonal matrix-element result does not supply off-diagonal cubic-related character compressions. No new external theorem is imported into FM026.",
+    "project_sources": [
+      "literature/cat_multiplicity_prior_source.md",
+      "mathematics/uniform_cat_multiplicity.md",
+      "mathematics/even_new_sector_first_jet.md"
+    ],
+    "checked_on": "2026-10-06",
+    "metadata_audit": "evidence/source_metadata/registry_metadata_20261006.json#EXT-KELMER-2008"
+  },
+  "fresh_LW_check": {
+    "identifier": "arXiv:2306.14352v2",
+    "author": "Sever Angel Popescu",
+    "title": "A simple and self-contained proof for the Lindemann-Weierstrass theorem",
+    "version_date": "2023-09-17",
+    "checked_on": "2026-10-06",
+    "source_url": "https://arxiv.org/pdf/2306.14352v2",
+    "pdf_sha256": "0c158636ef68a2ac4586f0fff09b7429780f815d513799f1e794e9c554bae0f1",
+    "text_sha256": "dc4fe0d0f4a34aed228ead916464ff7f36de835ad8c5cf598d77d17308ef4d4c",
+    "locator": "Theorem 3.2, printed page 14; proof pages 15-16",
+    "extraction": "pdftotext -layout; printed page 14 separately rendered and visually checked",
+    "retention_basis": "Public primary arXiv source downloaded solely for the authorized independent audit; no canonical repository cache or external upload.",
+    "scope": "Source identity, exact theorem hypothesis, and project application checked. Full classical LW proof not independently re-proved."
+  }
+}

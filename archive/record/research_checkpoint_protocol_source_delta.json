@@ -1,0 +1,51 @@
+{
+  "schema": "bgs-checkpoint-protocol-source-delta-v1",
+  "scope": "Explicit integration-port review repair; reviewed mathematical proof/raw check/expected bytes remain unchanged. Initial wrapper failed adversarial protocol audit; corrected wrapper is not silently relabelled as the initial source.",
+  "changes": [
+    {
+      "current_source": "computations/verification/research_checkpoint_replay.py",
+      "initial_source": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v1.py",
+      "initial_sha256": "4dd35155a64f926b3807ab2559de4403aad6b677e67f1aab0f89f568999e8688",
+      "current_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "diff": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v1.py.diff"
+    },
+    {
+      "current_source": "computations/maintenance/tests/test_research_checkpoint_portability.py",
+      "initial_source": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v1.py",
+      "initial_sha256": "624a64d265014649d95b0ff88bd1a7f32e2dfa0cbd4c512d9f31b846429f29b5",
+      "current_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "diff": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v1.py.diff"
+    }
+  ],
+  "control_report": "evidence/research_checkpoint_protocol_20261007/receipt.json",
+  "durable_output_extension": {
+    "original": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2.py",
+    "original_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+    "current": "computations/verification/research_checkpoint_replay.py",
+    "current_sha256": "8ad2070b7bb12456238ade81867720a499afdda74acdb6332ea36ecf59e6dce8",
+    "diff": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2_to_v3.diff",
+    "scope": "Adds explicit fresh external or excluded build/ durable raw/provenance output; default remains silent, every scientific source/expected byte is unchanged."
+  },
+  "historical_v2_supersession": [
+    {
+      "historical_current_source": "computations/verification/research_checkpoint_replay.py",
+      "historical_current_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "preserved_v2_source": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2.py",
+      "disposition": "Original row records accepted protocol-v2 bytes; v3 below explicitly supersedes these maintained paths."
+    },
+    {
+      "historical_current_source": "computations/maintenance/tests/test_research_checkpoint_portability.py",
+      "historical_current_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "preserved_v2_source": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2.py",
+      "disposition": "Original row records accepted protocol-v2 bytes; v3 below explicitly supersedes these maintained paths."
+    }
+  ],
+  "durable_test_extension": {
+    "original": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2.py",
+    "original_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+    "current": "computations/maintenance/tests/test_research_checkpoint_portability.py",
+    "current_sha256": "7768bae3cba5cfbb52cf2cfdbab3a01989c89071bef625c24fe1c8496527300d",
+    "diff": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2_to_v3.diff",
+    "scope": "Durable output location, raw retention and failure receipt controls added; prior v2 tests preserved."
+  }
+}

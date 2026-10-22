@@ -62,7 +62,7 @@ The actual TRACE-005 estimate is open. Pair control alone does not imply every h
 
 ## Review coverage
 
-See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+See [the ongoing corpus revision](../../../archive/record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
 
 ## Complete source membership
 
@@ -162,7 +162,7 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [All fixed killed clock moments and uniform second/third equality laws](../../all_moment_delay_bootstrap_20261011.md) — Conditional all-time-flatness theorem at log^(1+kappa).
 - [Stochastic-complement singular spectrum and quantum gap](../../schur_censoring_gap_20261011.md) — Classical and arbitrary-complex-contraction singular bounds; conditional intensity/reversal gap propagation at log^(3+kappa).
 
-The [review record](../../../record/cavity_continuation_20261011.md) preserves
+The [review record](../../../archive/record/cavity_continuation_20261011.md) preserves
 exact input lineage. Equality laws at every fixed order are accepted
 under all-time entry flatness. TRACE-076 discharges this premise for
 Haar starts and extends the clock laws to its independent entropy class.

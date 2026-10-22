@@ -20,7 +20,7 @@ The sparse centered K^(2+o(1)) energy target remains open. Arithmetic averaging 
 
 ## Review coverage
 
-See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+See [the ongoing corpus revision](../../../archive/record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
 
 ## Complete source membership
 

@@ -489,4 +489,4 @@ a bounded positive four-trace energy, not the full fourth-order CUE law.
 No argument from the frozen ordered block presently estimates (19).
 
 Verification: [finite audit](../computations/verification/resonant_density_audit.py),
-[review](../record/resonant_density_review_20261001.md).
+[review](../archive/record/resonant_density_review_20261001.md).

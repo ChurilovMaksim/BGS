@@ -85,7 +85,7 @@ Collision locations have a uniform Poisson limit; fixed distinct vertex
 occupations have independent geometric mean-alpha limits. The iid radial
 corollary requires all even moments <=j!.
 
-[Review and current route checkpoint](wick_poisson_continuation_20261016.md)
+[Review and current route checkpoint](../archive/record/wick_poisson_continuation_20261016.md)
 distinguish the independently reconstructed core, author-derived corollaries
 and exact finite evidence. The earlier open-law sentences for TRACE-093 are
 superseded ONLY for this flat auxiliary measure. The non-flat physical profile,
@@ -109,7 +109,7 @@ limiting ratio are subsequently evaluated by TRACE-094 for this same flat measur
 are prior 2002 results. The physical non-flat profile and full signed trace
 are separate unresolved steps.
 
-[Research checkpoint](research_continuation_20261016.md) records the route tree,
+[Research checkpoint](../archive/record/research_continuation_20261016.md) records the route tree,
 proof reviews, finite checks and exact next obligations. Neither result closes
 BGS-TRACE-005 or BGS-BGS-001. No award-level or world-priority assessment follows
 from an internal proof or the finite execution receipts.
@@ -373,7 +373,7 @@ remain OPEN.** Earlier dated checkpoints retain their historical scope.
 - **FLOW-017:** all fixed factorial orders and one-chain L2 averages on a different, superpolynomial schedule; this supersedes a blanket statement that every unbounded-correlation transfer remains open.
 - **FM-020:** the original m=1 two-copy microscopic-rate obligation is closed by the reviewed project proof. FM-018/019 historical statements that this rate is open describe their earlier checkpoints.
 - **Higher-copy rates, nonlinear quenched determinants and deterministic noise removal remain OPEN.**
-- The scoped corpus revision and its known standalone-verifier repair passed remote acceptance at `0ffb20cc152d0ddd2620887e46d21d1120b95fd8`. Research has resumed; [review coverage](corpus_revision_20261006.md) records its limits.
+- The scoped corpus revision and its known standalone-verifier repair passed remote acceptance at `0ffb20cc152d0ddd2620887e46d21d1120b95fd8`. Research has resumed; [review coverage](../archive/record/corpus_revision_20261006.md) records its limits.
 - **TRACE-014:** all-copy induced-HS channel proximity can coexist with an exact clock spectrum in the same ensemble. This is a negative control on unqualified universality criteria, not a counterexample to the frozen map.
 
 Exact statements: [FLOW-014](../mathematics/circular_dyson_actual_start.md), [FLOW-017](../mathematics/coboundary_all_order_limit.md), [FM-020](../mathematics/original_channel_gap.md), and [the obligation board](../mathematics/open_questions.md). The [registered dependency view](claim_registry.md) does not replace canonical proofs.
@@ -1261,9 +1261,9 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 | Claim | Status | Scope and unresolved boundary |
 |---|---|---|
 | BGS-TRACE-060, strengthened | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [All fixed killed upper moments and joint first-delay concentration](../mathematics/all_moment_delay_bootstrap_20261011.md) at ceil(log(2N)^(1+kappa)); uniform equality laws at every fixed order and the full-depth reference measure after two substantive word repairs. Probability of all-time flatness, growing-order/edge laws, the physical microscopic reference and unrestricted exceptional-event moments remain open. |
-| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021/022 supply only the actual-map initial intensity/reversal gaps. The [separate reversal reconstruction](reversal_channel_continuation_20261011.md) also proves singular-spectrum contraction for arbitrary complex contractions. Quantum realization contraction and flatness probability are not inferred from the mean. |
+| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021/022 supply only the actual-map initial intensity/reversal gaps. The [separate reversal reconstruction](../archive/record/reversal_channel_continuation_20261011.md) also proves singular-spectrum contraction for arbitrary complex contractions. Quantum realization contraction and flatness probability are not inferred from the mean. |
 
-[The review and exact input lineage](cavity_continuation_20261011.md) separate
+[The review and exact input lineage](../archive/record/cavity_continuation_20261011.md) separate
 analytic arguments from finite Python/C++/Wolfram controls. No new analytic
 Lean formalization or world-priority claim is made. TRACE-055's complete
 hierarchy, TRACE-005 and BGS remain open.

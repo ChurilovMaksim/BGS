@@ -1,0 +1,132 @@
+{
+  "schema": "bgs-wave3-bibliographic-impact-v1",
+  "before_sha256": "c526c0f219a74f6343da19419741ce7f89dc99ea387fa51bb5417ac7b752e259",
+  "after_sha256": "386b1f5b909c3d1bd583289b38a5a6cfae34f69263463f38df945c163badab49",
+  "new_external_leaf": false,
+  "changes": [
+    {
+      "id": "EXT-PESIN-1977",
+      "old_direct": [
+        "BGS-FM-006"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ],
+      "new_direct": [
+        "BGS-FM-006"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
+      ],
+      "scope": "Conservative graph reachability only; accepted source/application fields unchanged."
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
+      ],
+      "scope": "Conservative graph reachability only; accepted source/application fields unchanged."
+    },
+    {
+      "id": "EXT-PP-1990",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
+      ],
+      "scope": "Conservative graph reachability only; accepted source/application fields unchanged."
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "old_direct": [
+        "BGS-FM-031",
+        "BGS-TRACE-023"
+      ],
+      "old_transitive": [
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-026"
+      ],
+      "new_direct": [
+        "BGS-FM-031",
+        "BGS-TRACE-023"
+      ],
+      "new_transitive": [
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-026",
+        "BGS-TRACE-028",
+        "BGS-TRACE-029"
+      ],
+      "scope": "Conservative graph reachability only; accepted source/application fields unchanged."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schema": "bgs-wave2-bibliographic-impact-v1",
+  "before_sha256": "37bd4734371e336cc6dc1be5305470943c52c22f172c1e3c4792edaceac1945e",
+  "after_sha256": "c526c0f219a74f6343da19419741ce7f89dc99ea387fa51bb5417ac7b752e259",
+  "changes": [
+    {
+      "id": "EXT-PESIN-1977",
+      "change": "Graph impact extension only; exact source/application fields unchanged and not re-audited.",
+      "old_direct": [
+        "BGS-FM-006"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ],
+      "new_direct": [
+        "BGS-FM-006"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ]
+    },
+    {
+      "id": "EXT-RUELLE-1978",
+      "change": "Graph impact extension only; exact source/application fields unchanged and not re-audited.",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-018",
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ]
+    },
+    {
+      "id": "EXT-PP-1990",
+      "change": "Graph impact extension only; exact source/application fields unchanged and not re-audited.",
+      "old_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "old_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029"
+      ],
+      "new_direct": [
+        "BGS-FM-006",
+        "BGS-FM-018",
+        "BGS-TRACE-019"
+      ],
+      "new_transitive": [
+        "BGS-FM-019",
+        "BGS-FM-020",
+        "BGS-FM-023",
+        "BGS-FM-028",
+        "BGS-FM-029",
+        "BGS-TRACE-024",
+        "BGS-TRACE-025"
+      ]
+    },
+    {
+      "id": "EXT-ROY-2016",
+      "change": "Graph impact extension only; exact source/application fields unchanged and not re-audited.",
+      "old_direct": [
+        "BGS-FM-011",
+        "BGS-FM-029"
+      ],
+      "old_transitive": [],
+      "new_direct": [
+        "BGS-FM-011",
+        "BGS-FM-029"
+      ],
+      "new_transitive": [
+        "BGS-TRACE-025"
+      ]
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "change": "Graph impact extension only; exact source/application fields unchanged and not re-audited.",
+      "old_direct": [
+        "BGS-TRACE-023"
+      ],
+      "old_transitive": [],
+      "new_direct": [
+        "BGS-FM-031",
+        "BGS-TRACE-023"
+      ],
+      "new_transitive": [
+        "BGS-TRACE-024",
+        "BGS-TRACE-025",
+        "BGS-TRACE-026"
+      ]
+    }
+  ],
+  "no_new_external_leaf": true,
+  "EXT_BH_2026_scope": "unchanged conditional mixed-loop leaf",
+  "source_audit": "literature/wave2_phase_orbit_source_qualification_20261007.md"
+}

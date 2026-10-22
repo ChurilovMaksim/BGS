@@ -454,5 +454,5 @@ pair observable whose Dyson derivative at a clock is of order $N$.
 No finite computation here establishes a large-$N$ limit. No Lean
 compilation or external referee audit is claimed. The exact proof and
 finite computational scope are recorded in the
-[research checkpoint](../record/quadratic_noise_program_20260928.md).
+[research checkpoint](../archive/record/quadratic_noise_program_20260928.md).
 BGS-TRACE-005 and BGS-BGS-001 remain open.

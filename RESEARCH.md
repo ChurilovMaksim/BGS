@@ -52,8 +52,8 @@ The Gaussian benchmark and its sinh crossover are prior results. The subsequent
 Heisenberg collision law and exact ratio B/G->exp(-alpha^2). It also gives
 geometric vertex occupations and a bounded radial-entry comparison. The
 physical non-flat extension and original signed BGS hierarchy remain open.
-[Current proof outcome and next obligations](record/wick_poisson_continuation_20261016.md).
-The [earlier checkpoint](record/research_continuation_20261016.md) retains its original scope.
+[Current proof outcome and next obligations](archive/record/wick_poisson_continuation_20261016.md).
+The [earlier checkpoint](archive/record/research_continuation_20261016.md) retains its original scope.
 
 ## Research-record integration, 16 October 2026
 
@@ -110,7 +110,7 @@ $$
 
 Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
 matrix space. A general early norm contraction cannot replace the missing
-source-specific signed cancellation. [Exact outcome](record/spectral_coherence_continuation_20261014.md).
+source-specific signed cancellation. [Exact outcome](archive/record/spectral_coherence_continuation_20261014.md).
 
 ## Full-depth clocks and microscopic paths
 
@@ -128,7 +128,7 @@ and BGS remain open.
 
 [TRACE-079](mathematics/two_step_stopped_concentration_20261013.md) supplies
 the all-pair stopped concentration input, including the diagonal and full
-first crossings. [Exact outcome](record/feedback_flatness_continuation_20261013.md).
+first crossings. [Exact outcome](archive/record/feedback_flatness_continuation_20261013.md).
 
 [TRACE-078](mathematics/two_step_increment_variance_20261013.md) adds
 an exact raw second-moment bound for the complete two-step feedback
@@ -143,7 +143,7 @@ norm on the entry-stopped prefix, with quantitative failure probability.
 This proves the deep-range three-step forcing estimate on reached states.
 The stopped theorem alone supplies no entry-survival probability;
 TRACE-080 closes it under its smaller startup-gap hypothesis.
-[Exact outcome](record/green_compression_continuation_20261013.md).
+[Exact outcome](archive/record/green_compression_continuation_20261013.md).
 
 [TRACE-076](mathematics/haar_feedback_clock_law_20261012.md) gives an exact
 finite Haar scattering/delay factorization and inverse-Jacobi spectrum.
@@ -151,7 +151,7 @@ Its Haar trajectory bound closes the all-time probability premise for
 that initial ensemble. Every fixed full-depth clock law and the empirical
 weak law extend unconditionally to independent initial distributions
 with relative entropy O(log N) relative to Haar. The
-[outcome](record/haar_feedback_continuation_20261012.md) distinguishes
+[outcome](archive/record/haar_feedback_continuation_20261012.md) distinguishes
 this extension from the unresolved deterministic initial family and from
 prescribed-origin microscopic universality.
 
@@ -159,7 +159,7 @@ prescribed-origin microscopic universality.
 static unitary shortcut: flat entries and vanishing intensity singular
 norm do not bound the two-step kernel by O(1/n). Its three-step positive
 bound does not replace the exact entry bracket.
-[The outcome](record/unitary_two_step_continuation_20261012.md) separates
+[The outcome](archive/record/unitary_two_step_continuation_20261012.md) separates
 this obstruction from the dynamic question subsequently treated by TRACE-080 under its stated startup hypotheses.
 [TRACE-075](mathematics/two_step_restoring_drift_20261012.md) controls the
 complete coherent term by a three-step path-swap pairing and proves a
@@ -226,12 +226,12 @@ TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 
 The full five-primary simplicity and deep all-order cavity hierarchy are not
 promoted from a summary. TRACE-057/059 now reconstruct source covariance and
-physical L2 continuation. The [reviewed cavity continuation](record/cavity_continuation_20261011.md)
+physical L2 continuation. The [reviewed cavity continuation](archive/record/cavity_continuation_20261011.md)
 strengthens TRACE-060 to all fixed killed upper moments and
-[uniform equality laws at every fixed order](record/clock_universality_continuation_20261011.md)
+[uniform equality laws at every fixed order](archive/record/clock_universality_continuation_20261011.md)
 at the log^(1+kappa) cutoff. The full-depth reference measure includes
 an atom explained by an exact pathwise rank bound. TRACE-073 supplies conditional
-position-chain and [reversal-gap propagation](record/reversal_channel_continuation_20261011.md) at log^(3+kappa). Both require all-time entry
+position-chain and [reversal-gap propagation](archive/record/reversal_channel_continuation_20261011.md) at log^(3+kappa). Both require all-time entry
 flatness. The all-fixed-order clock induction is now accepted after
 two substantive word repairs; its uncorrected input remains preserved.
 TRACE-055 remains verification-pending for the full physical hierarchy.
@@ -299,7 +299,7 @@ separate execution receipt.
 
 The [7 October integration](record/checked_research_checkpoint_20261007.md),
 [Wave2 review](record/wave2_checked_integration_20261007.md), and
-[Wave3 review](record/wave3_checked_integration_20261007.md) retain their own
+[Wave3 review](archive/record/wave3_checked_integration_20261007.md) retain their own
 actual execution and applicability scopes. The dated receipts distinguish
 those executions from later source changes and external journal refereeing.
 

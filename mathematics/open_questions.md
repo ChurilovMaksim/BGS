@@ -60,7 +60,7 @@ conclusions beyond the earlier first moment and C++ samples. Still open are
 transfer to the actual non-flat profile, the full physical signed polynomial
 remainder and every-order hierarchy TRACE-005. The radial iid corollary does
 not cover fourth moment greater than two without an additional exponential-UI
-argument. [Current checkpoint](../record/wick_poisson_continuation_20261016.md).
+argument. [Current checkpoint](../archive/record/wick_poisson_continuation_20261016.md).
 
 
 ## Research-record integration, 16 October 2026
@@ -123,7 +123,7 @@ relative entropy O(log N) relative to Haar. TRACE-080 now supplies the probabili
 the maintained initial family on its stated larger cutoff. Smaller cutoffs,
 growing-order and edge laws remain unproved. A bounded-entropy gap example rules out a
 prescribed-origin microscopic implication from these clock laws alone.
-[Exact new boundaries](../record/haar_feedback_continuation_20261012.md).
+[Exact new boundaries](../archive/record/haar_feedback_continuation_20261012.md).
 
 The [unitary two-step obstruction](unitary_two_step_obstruction_20261012.md)
 rules out deriving the required two-step kernel from unitarity, logarithmic
@@ -188,7 +188,7 @@ obligations are no longer open.
 
 The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
 verification-pending. The 11 October results reconstruct source covariance,
-physical-source L2 continuation. The [cavity continuation](../record/cavity_continuation_20261011.md)
+physical-source L2 continuation. The [cavity continuation](../archive/record/cavity_continuation_20261011.md)
 adds conditional all-fixed killed upper bounds and gap propagation. The
 [repaired fixed-order induction](conditional_clock_universality_20261011.md)
 identifies every fixed clock power and its full-depth measure. TRACE-080
@@ -383,7 +383,7 @@ build is already established. Stable IDs are assigned in
 
 ## Frontier board
 
-The [27 September upload audit](../record/cue_upload_review_20260927.md)
+The [27 September upload audit](../archive/record/cue_upload_review_20260927.md)
 does not close any quantum frontier below. The retained classical
 periodic-point average (BGS-FM-012) has no oscillatory weight. Pair-only
 TG-mean estimates, even if proved, still require a separate higher-order

@@ -20,7 +20,7 @@ The all-members analytic nonlinear resonance question remains open; finite certi
 
 ## Review coverage
 
-See [the ongoing corpus revision](../../../record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
+See [the ongoing corpus revision](../../../archive/record/corpus_revision_20261006.md). Topic membership or a verifier pass is not certification of every theorem in this list. Exact proof paths are unchanged.
 
 ## Complete source membership
 

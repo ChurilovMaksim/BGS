@@ -55,26 +55,26 @@ not override this living surface.
 
 | Record | Exact role |
 |---|---|
-| [20 October whole-repository reconciliation](repository_reconciliation_20261020.md) | Current navigation, complete baseline integrity and explicit execution scope |
+| [20 October whole-repository reconciliation](../archive/record/repository_reconciliation_20261020.md) | Current navigation, complete baseline integrity and explicit execution scope |
 | [19 October phase research](../archive/record/chat_integration_20261019.md) | Eleven source packets, cluster sums and Cauchy boundary; preserved negative evidence |
-| [16 October flat collision law](wick_poisson_continuation_20261016.md) | Auxiliary collision/occupation theorem; physical transfer remains open |
+| [16 October flat collision law](../archive/record/wick_poisson_continuation_20261016.md) | Auxiliary collision/occupation theorem; physical transfer remains open |
 | [16 October research import](../archive/record/chat_integration_20261016.md) | Process, resonance and signed-source results with exact boundaries |
-| [14 October coherence](spectral_coherence_continuation_20261014.md) | Abstract obstruction, not a fixed-model BGS counterexample |
-| [13 October feedback](feedback_flatness_continuation_20261013.md) | Named-input full-depth intensity and clock consequences |
-| [12 October Haar feedback](haar_feedback_continuation_20261012.md) | Exact scattering/delay joint law and unconditional entropy-stable clocks; deterministic and prescribed-origin boundaries |
-| [12 October restoring drift](two_step_drift_continuation_20261012.md) | Exact one-step mean mechanism beyond the static obstruction |
-| [12 October unitary obstruction](unitary_two_step_continuation_20261012.md) | Genuine-unitary counterexample to an extra two-step singular factor |
+| [14 October coherence](../archive/record/spectral_coherence_continuation_20261014.md) | Abstract obstruction, not a fixed-model BGS counterexample |
+| [13 October feedback](../archive/record/feedback_flatness_continuation_20261013.md) | Named-input full-depth intensity and clock consequences |
+| [12 October Haar feedback](../archive/record/haar_feedback_continuation_20261012.md) | Exact scattering/delay joint law and unconditional entropy-stable clocks; deterministic and prescribed-origin boundaries |
+| [12 October restoring drift](../archive/record/two_step_drift_continuation_20261012.md) | Exact one-step mean mechanism beyond the static obstruction |
+| [12 October unitary obstruction](../archive/record/unitary_two_step_continuation_20261012.md) | Genuine-unitary counterexample to an extra two-step singular factor |
 | [11 October integrated research](../archive/record/chat_integration_20261011.md) | Preserved 199 inputs, maximal local paths, circular phase laws and exact claim boundaries |
-| [11 October cavity continuation](cavity_continuation_20261011.md) | Independently reviewed conditional fixed-moment bootstrap and stochastic-complement gap mechanism |
+| [11 October cavity continuation](../archive/record/cavity_continuation_20261011.md) | Independently reviewed conditional fixed-moment bootstrap and stochastic-complement gap mechanism |
 | [8 October checkpoint](research_checkpoint_20261008.md) | Reconstructed phase-channel, sharp matrix-jet and real-flow proofs; pending deep-source inputs |
 | [7 October checkpoint](checked_research_checkpoint_20261007.md) | Accepted phase/Schur/source and low-switch scopes; explicit deferred candidates |
 | [Wave2 integration](wave2_checked_integration_20261007.md) | Qualified ordinary-source, finite compact and conditional current results |
-| [Wave3 integration](wave3_checked_integration_20261007.md) | Complete unmasked insertion hierarchy and signed-stability/unsigned-obstruction boundary |
+| [Wave3 integration](../archive/record/wave3_checked_integration_20261007.md) | Complete unmasked insertion hierarchy and signed-stability/unsigned-obstruction boundary |
 | [Original-channel review](original_channel_gap_review_20261006.md) | FM-020 closes the original two-copy rate; higher-copy/nonlinear/deterministic questions remain |
 | [Collective-diffusion review](collective_diffusion_review_20261006.md) | FM-019 analytic scope and corrected finite controls |
 | [Operator-transfer review](frozen_operator_transfer_review_20261006.md) | FM-018 coercivity/common-noise scope and bounded exact controls |
 | [All-order noisy review](all_order_review_20261005.md) | FLOW-017's schedule and all-fixed-order law; deterministic transfer remains open |
-| [Corpus revision](corpus_revision_20261006.md) | Repository reconciliation and actual audit coverage, not complete proof certification |
+| [Corpus revision](../archive/record/corpus_revision_20261006.md) | Repository reconciliation and actual audit coverage, not complete proof certification |
 
 Specialized earlier reviews remain indexed by their theorem source and the
 [historical index](history/2026/INDEX.md). The original files, commands and
@@ -99,8 +99,8 @@ and [cavity continuation](../evidence/executions/20261011/cavity-continuation/RE
 provide those boundaries. Earlier executions remain preserved. A successful build cannot promote an unproved
 asymptotic implication, and internal reconstruction is not external refereeing.
 
-[Separate reversal-channel continuation](reversal_channel_continuation_20261011.md) extends TRACE-073 without adding a BGS closure claim.
+[Separate reversal-channel continuation](../archive/record/reversal_channel_continuation_20261011.md) extends TRACE-073 without adding a BGS closure claim.
 
 ## Toolchain follow-up, 20 October 2026
 
-[Compilation receipt and scope](toolchain_followup_20261020.md); [standalone open mathematical task](remaining_breakthrough_task_20261020.md).
+[Compilation receipt and scope](../archive/record/toolchain_followup_20261020.md); [standalone open mathematical task](../archive/record/remaining_breakthrough_task_20261020.md).

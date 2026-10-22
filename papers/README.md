@@ -23,6 +23,6 @@ governs that release step. No publication status is implied by the table.
 ## Current integration and verification
 
 [The research record](../record/README.md) indexes the 11–19 October continuations.
-[The repository audit](../record/repository_reconciliation_20261020.md) records current
+[The repository audit](../archive/record/repository_reconciliation_20261020.md) records current
 source/build checks separately from historical receipts. Integration does not
 imply submission, independent refereeing or BGS closure.

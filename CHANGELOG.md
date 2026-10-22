@@ -24,7 +24,7 @@ order $1/\log N$, including a Pell lower order. Microscopic BGS remains open.
 
 Current navigation and complete dependency views are generated from the authorities.
 Reconciled bibliographic coverage and explicit epochs; repaired optimized entry guards.
-[Review and actual verification scope](record/repository_reconciliation_20261020.md).
+[Review and actual verification scope](archive/record/repository_reconciliation_20261020.md).
 
 ## 2026-10-19
 

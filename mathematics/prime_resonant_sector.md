@@ -5,7 +5,7 @@ author self-review and separately labelled finite regression. The actual
 frozen-map cancellation hypothesis in Section 3 remains **OPEN**.
 The order-divisibility input, ordered iteration and scalar-return exclusion
 are prior corpus results; their reconstruction here is not a priority claim.
-The [submission audit](../record/prime_resonant_review_20260930.md)
+The [submission audit](../archive/record/prime_resonant_review_20260930.md)
 records the rejected stronger assertions.
 
 ## 1. Orientation and exact block algebra

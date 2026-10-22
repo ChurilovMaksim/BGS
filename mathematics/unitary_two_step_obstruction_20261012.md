@@ -276,7 +276,7 @@ This proves (4). Applied to (1), it gives
  \tag{26}
 \]
 
-The [entry-flatness route](../record/entry_flatness_route_20261011.md)
+The [entry-flatness route](../archive/record/entry_flatness_route_20261011.md)
 has the exact bracket for one uniformly chosen Schur elimination with a
 fresh uniform feedback phase. Define \(\Delta S_{ij}=0\) when the selected
 label is \(e\in\{i,j\}\), and

@@ -1,0 +1,27 @@
+{
+  "original_executed_path": "computations/verification/fractional_hamming_replay.py",
+  "original_executed_sha256": "26d1b9b08d6c7b7fbac378f4045660c07aeff48e55f38e8ef5f7c183e1a07426",
+  "immutable_executed_copy": "evidence/fractional_hamming_20261007/replay/executed_sources/fractional_hamming_replay.py",
+  "original_execution_manifest": "evidence/fractional_hamming_20261007/raw/promotion_run/execution_manifest.json",
+  "original_execution_manifest_sha256": "25c0b3253aed4518397e63815867713d9e65523b6832dfa0ce534c7507407f92",
+  "curated_execution_manifest": "evidence/fractional_hamming_20261007/replay/execution_manifest.json",
+  "public_current_mode_verifier": "computations/verification/fractional_hamming_replay.py",
+  "public_current_mode_verifier_sha256": "39d5c5382424388619c7696b67204299c998f1f37aa7c5165b217f6f591593db",
+  "public_full_harness_helper": "computations/verification/fractional_hamming/full_replay.py",
+  "public_full_harness_helper_sha256": "b09e70c76648c319ff065cbd3bb67cdbd85d13f3220846e1a2795de648fdbbea",
+  "full_helper_edits": [
+    "Root discovery adjusted for one deeper path",
+    "Output directory must be explicitly supplied",
+    "Input family enumeration remains exactly three adapters",
+    "Docstring identifies provenance-generation purpose"
+  ],
+  "wrapper_contract": [
+    "No arguments required; silent success",
+    "Runs only current optimization mode, with -O iff sys.flags.optimize is nonzero",
+    "All three outputs go to external /tmp TemporaryDirectory and are deleted on return",
+    "All scientific fields compare against frozen originals; only two runtime fields omitted",
+    "Source hashes checked before/after; pinned adapter and original source hashes checked at entry",
+    "350-second total subprocess budget; each child capped at340 wall seconds,320 CPU seconds,3GiB and one CPU core"
+  ],
+  "previous_original_receipt_location": "evidence/fractional_hamming_20261007/replay/execution_manifest.original.json"
+}

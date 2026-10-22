@@ -170,7 +170,7 @@ prove BGS. Finite energy identities and feedback controls have separate
 execution scope; they are not the asymptotic proof.
 
 The preceding review input and the exact internal review scope are retained
-in the [cavity continuation](../record/cavity_continuation_20261011.md).
+in the [cavity continuation](../archive/record/cavity_continuation_20261011.md).
 The all-fixed-moment delay improvement has cutoff ell^(1+kappa); this gap
 estimate has cutoff ell^(3+kappa). They are not the same scale.
 
@@ -245,6 +245,6 @@ joins intensity and reversal gap control on the same all-time flatness event.
 This is not a complete symmetry classification or a proof of the scalar
 cavity law. It does not establish the probability of A_m or deterministic BGS.
 
-The [separate reversal review](../record/reversal_channel_continuation_20261011.md)
+The [separate reversal review](../archive/record/reversal_channel_continuation_20261011.md)
 records its analytic reconstruction and finite symbolic execution. No world
 priority or analytic Lean formalization is asserted.

@@ -119,7 +119,7 @@ is not equivalent to the weighted pair target. The summary's claimed
 reduction of full BGS to one square-root bound is rejected. Candidate
 norm collisions at 29 and 97 do not create scalar exceptions: the
 selected sums are 903/1000 and 9/10. See the
-[reconstruction](prime_resonant_review_20260930.md) and TRACE-009.
+[reconstruction](../archive/record/prime_resonant_review_20260930.md) and TRACE-009.
 These outside claims were never accepted repository theorems.
 
 ## Absolute sufficiency and the unaveraged all-order target (30 September 2026)

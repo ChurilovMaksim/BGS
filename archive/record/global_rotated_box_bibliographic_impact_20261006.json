@@ -1,0 +1,21 @@
+{
+  "source": "EXT-KM-2017-BOX",
+  "prior_cache_sha256": "070ecdd44356af05072556c147bb88ba431c851e4c71471479d4654f029ab5ce",
+  "updated_cache_sha256": "5d8394e97f5fb407f9721254f8955445360366314ae11936a83057b3428a6d61",
+  "before": {
+    "mapping": "Euclidean metric and generalized dimension infinity give inverse-Hessian variance; Hess V>=lambda I on a convex box gives constant lambda^-1 by smooth convex exhaustion. No Neumann condition on tested f. Real tilted curvature and raw moments are established separately in the local proof.",
+    "project_sources": [
+      "mathematics/rotated_local_first_loop.md",
+      "literature/convex_box_poincare_check.md"
+    ]
+  },
+  "after": {
+    "mapping": "Euclidean metric and generalized dimension infinity give inverse-Hessian variance; Hess V>=lambda I on a convex box gives constant lambda^-1 by smooth convex exhaustion. No Neumann condition on tested f. Real tilted curvature and raw moments are established separately in the local proof. The separate finite-band contour theorem reuses this local-box inequality after its own explicit radius-sqrt(2) curvature checks; the inequality is not a global-contour theorem or a premise of the elementary TRACE-017 perturbation reduction.",
+    "project_sources": [
+      "mathematics/rotated_local_first_loop.md",
+      "literature/convex_box_poincare_check.md",
+      "mathematics/global_rotated_box_trace.md"
+    ]
+  },
+  "scope": "Existing local-box inequality and source observations retained. Fresh contour review supplies its own larger-radius curvature checks. No registered graph edge added because the contour proof is a supporting result, not a prerequisite of TRACE-017."
+}

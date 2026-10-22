@@ -3,7 +3,7 @@
 **Claim ID: BGS-FLOW-011.** Project derivation, 4 October 2026.
 Base: `a25c0d2573b5232a676cfccf1dc79da8e4cd2956`.
 The arguments and their review boundary are recorded in
-[`record/polynomial_coboundary_review_20261004.md`](../record/polynomial_coboundary_review_20261004.md).
+[`record/polynomial_coboundary_review_20261004.md`](../archive/record/polynomial_coboundary_review_20261004.md).
 No external priority, deterministic BGS theorem, or analytic Lean certificate
 is asserted.
 

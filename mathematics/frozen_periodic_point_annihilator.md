@@ -132,5 +132,5 @@ checks the exact factorizations and membership tests with unbounded Python
 integers, brute-enumerates the small fixed-point sets, and assembles the
 symbol coefficients with rational real and imaginary parts. Its finite
 range is recorded in the output; the all-time assertion is proved above.
-The [upload review](../record/cue_upload_review_20260927.md) records the
+The [upload review](../archive/record/cue_upload_review_20260927.md) records the
 rejected claims, provenance, and separately scoped numerical checks.

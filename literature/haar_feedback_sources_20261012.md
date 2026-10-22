@@ -30,7 +30,7 @@ projections or general entropy event bounds are newly discovered.
 No external theorem from these two papers is a load-bearing leaf of the
 finite factorization proof. Therefore the external registry retains its
 46 entries. The inherited TRACE-060 concentration leaf keeps its existing
-Tropp locator. Its [explicit impact review](../record/bibliographic_impact_haar_20261012.json)
+Tropp locator. Its [explicit impact review](../archive/record/bibliographic_impact_haar_20261012.json)
 adds TRACE-076 as a transitive user for the clock corollaries only; all
 source observations and earlier cache bytes remain unchanged.
 No claim is made that these sources transfer a Haar

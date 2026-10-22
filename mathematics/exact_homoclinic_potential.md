@@ -153,9 +153,9 @@ aliases and the exponentially large displacement range remain required.
 
 ## Review and replay boundary
 
-The scoped independent audit is [record/homoclinic_review.md](../record/homoclinic_review.md).
+The scoped independent audit is [record/homoclinic_review.md](../archive/record/homoclinic_review.md).
 Exact finite controls support the analytic arguments and do not replace their
 all-time conclusions. Original proof, review and source hashes are retained
-in [the promotion mapping](../record/homoclinic_promotion_mapping.json).
+in [the promotion mapping](../archive/record/homoclinic_promotion_mapping.json).
 The derivative measure is distinct from the inverse-fibre pushforward; no
 multiplicative-gauge obstruction, pointwise decay or BGS claim is made.

@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "scientific_snapshot_manifest_sha256": "c6df374f3d8086744ed188d4e187e8cca9e87ee2977e46b0cf0d9b359a21e19e",
+  "approved_preappend_manifest_sha256": "870f78c8a60660c6af68ee442ef87544e611cdd0c37d95a06c8aca280499365e",
+  "scientific_snapshot_files": 2971,
+  "approved_preappend_files": 2972,
+  "post_scientific_source_deltas": {
+    "original_scientific_files": 2971,
+    "unchanged_original_files": 2969,
+    "changed_sources": [
+      {
+        "path": "computations/verification/fractional_hamming/check_routing.py",
+        "before_sha256": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+        "after_sha256": "437d86c66535ad5e7cc9776eb669ae11298854f377eeebd5c921cd4c92c80b8a"
+      },
+      {
+        "path": "manuscript/unified_sections/hamming_low_switch_residual.tex",
+        "before_sha256": "848b59557bb1d765bfbf3d3e3e7dac71fd516427cdd61d5ce96b2d21e9afb127",
+        "after_sha256": "f051e75af89862c5256e7d55cf6794c786cba059ac61edcb1cf635b18315263b"
+      }
+    ],
+    "added_verification_sources": {
+      "computations/maintenance/tests/test_fractional_routing.py": "f287000ef5d7cfb9ae0c534fa7b03d8877f296531d9e557ff6a1515e3faf7ea5"
+    },
+    "formatting_delta": "manuscript-format-delta.json",
+    "verification_delta": "routing-source-delta.json",
+    "scope": "These source changes are distinct from future evidence-only receipt/index appends. Scientific205 checks used original archive; final TeX has fresh manuscript gate, routing helper/regression fresh normal/-O validation."
+  },
+  "evidence_only_suffixes": [
+    {
+      "path": "record/history/2026/INDEX.md",
+      "before_sha256": "5fc9bf10197166b9d0765df9d2798a36ecd2707688120f35b29ba61fb7fb9c33",
+      "after_sha256": "24e9fafad8886d2131fd553cc3db3b9e1efb0be185984f8156a9c7343a05f846",
+      "exact_suffix": "\n- [Disjoint pair residual and odd arithmetic validation](../../../evidence/executions/20261007/residual-batch-validation/README.md): 205/205 original scientific checks, 28/28 supplement, fresh 70/70 maintenance in both modes, 273-page manuscript; separately reviewed TeX and routing-source deltas precede this post-run receipt append.\n"
+    },
+    {
+      "path": "record/residual_batch_integration_20261007.md",
+      "before_sha256": "17cfbb02147de6bc75b07ec037a2cdfefc9fada72e034ca186c8eb15d8f53028",
+      "after_sha256": "adffbd66dd7d59e705bbfea518c7812b0b36d11f65c467273d29e45ce15fb2c5",
+      "exact_suffix": "\n## Post-run validation boundary\n\nThe [compact final receipts](../evidence/executions/20261007/residual-batch-validation/README.md)\nrecord 205/205 scientific checks on the original 2,971-file archive and\n28/28 supplement checks. The final maintenance suites passed 70/70 normally\nand under optimization. The corrected manuscript passed at 273 pages, with\nscoped visual review of pages 264,265,268,269,270. No new Lean build or corpus\nC++ build is claimed; prior source/build hashes were bound explicitly.\n\nTwo existing-source changes occurred after the scientific run: one TeX\ndisplay-break repair and one routing-test helper correction. The latter also\nadds a discovered maintenance regression. Their exact hashes, fresh checks\nand independently reviewed dependency closures are distinct from this\nevidence-only append. The remaining 2,969 original files matched before\nthese record/index suffixes. The interrupted maintenance logs, failed initial\nTeX receipts and classified earlier hosted CI failure remain preserved.\nThe exact final boundary is in residual_batch_postrun_evidence_delta.json.\nThis receipt package and these suffixes were not part of the executed snapshot.\n"
+    }
+  ],
+  "new_evidence_files": {
+    "evidence/executions/20261007/residual-batch-validation/README.md": "820c46ce36e039295235c48075657e436256959507797d87ac694ce61d09bf62",
+    "evidence/executions/20261007/residual-batch-validation/SHA256SUMS": "ab25bb6eabe4dcfc8c5460297895743b513eab3f1c592b9d695c9996e3250d40",
+    "evidence/executions/20261007/residual-batch-validation/corrected-archive-metadata.json": "27a9e45ab2ecef34ee91f2331cc0d2a54e7319b0b7b3a93e8b9a45a9bd4f3d1a",
+    "evidence/executions/20261007/residual-batch-validation/cpp-reuse-binding.json": "2d05f872bbc18a03fa550e1081789d94b8bd4a9d7d3f5b25d469e51180bf7ef0",
+    "evidence/executions/20261007/residual-batch-validation/cross-runtime-comparison.json": "651479089eb25f0e40e5ac99ec417ce907d834c402f50077138b506e44931d7f",
+    "evidence/executions/20261007/residual-batch-validation/execution-log-hashes.json": "33ce28ae9a4654b0b28570147dec51da47866bdc5b6c51891815f122a6281c86",
+    "evidence/executions/20261007/residual-batch-validation/failed-manuscript-first.json": "1ee74f83a2dbb9f53f5b7fadeb1c4b83f76c8413648b2493693f5a9a49558542",
+    "evidence/executions/20261007/residual-batch-validation/failed-manuscript-second.json": "29bea0186359e58b50e67268c7e020983874b9fee30b6c1926a2d8730b84d720",
+    "evidence/executions/20261007/residual-batch-validation/final-source-archive-metadata.json": "a051c0a63b7a6b3bc101d97ef5b272621b11171213b828522fedf7849e4163e1",
+    "evidence/executions/20261007/residual-batch-validation/fractional-resource-profile.json": "c9f3d587a559ef009d58b068c2e8dcd50fd694fb991172245ba704ae78b931d1",
+    "evidence/executions/20261007/residual-batch-validation/interrupted-maintenance-normal.log": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "evidence/executions/20261007/residual-batch-validation/interrupted-maintenance-optimized.log": "8238ec8f2b16a7b51b1cf9b18a709dae60249101c12e711a8c78978171a09063",
+    "evidence/executions/20261007/residual-batch-validation/interrupted-maintenance.json": "b92441265f781318d3184804d22be4be1cf573b8b2784dd3adf41b83224586f3",
+    "evidence/executions/20261007/residual-batch-validation/lean-unchanged-binding.json": "629c374b7d2f83d1065a19e6824b47ec9882c32b35758bb3f771e053b123ac7a",
+    "evidence/executions/20261007/residual-batch-validation/maintenance-normal.log": "4f4e53ab156be5ffed237319adb8154e25e8a5979341c8256210e9348d52d4d4",
+    "evidence/executions/20261007/residual-batch-validation/maintenance-optimized.log": "afd6ae4029cfab933dfbfba9895ebd98e97df01060c14d4338800de7272044dc",
+    "evidence/executions/20261007/residual-batch-validation/manuscript-format-delta.json": "bdbabca8e4183bcb8e054580b7d4c715001447110244a8b08b51a0bfe8b25265",
+    "evidence/executions/20261007/residual-batch-validation/manuscript-visual.json": "938e5290421d4ff5204568e66d4e105b671285f02cb6ccd11e9420ef60a7fa45",
+    "evidence/executions/20261007/residual-batch-validation/manuscript.json": "aede826c94319c3753ffed327270f0b3e352ffa43b3b1a650210b370650104c7",
+    "evidence/executions/20261007/residual-batch-validation/new-checks/central_residual_extension.log": "0da7d6af5c612d3b06ed87380e9790ea3d469d9b99c6e5432cf0333c3057a8be",
+    "evidence/executions/20261007/residual-batch-validation/new-checks/half_radius_obstructions.log": "5d52245edae278138b13b0b24d1ad5798813a476e23e61fe3ff0e4f02f59af87",
+    "evidence/executions/20261007/residual-batch-validation/new-checks/intermediate_old_layers_certificates.log": "d411c4ae994d7eb8894cb00c7a250683ce3e71c494ead2adfd35c14f79104810",
+    "evidence/executions/20261007/residual-batch-validation/new-checks/odd_newest_certificates.log": "79d1ae72a9bcaba4f63e0493585597a385d615c5d209247bceea0b4616e4f228",
+    "evidence/executions/20261007/residual-batch-validation/new-checks/residual125_certificates.log": "194aa9881eb3f4f852a0385e8c01b8002303040c980b8b3eb8c717d5ffe00788",
+    "evidence/executions/20261007/residual-batch-validation/path-roles.json": "6df3ee2ae8a6df6c4eaa434d93a39aa2c04f7f2fa8635e44fa78a5f2552642a5",
+    "evidence/executions/20261007/residual-batch-validation/post-format-guards.json": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "evidence/executions/20261007/residual-batch-validation/post-routing-guards.json": "5aa1d52c695cd616ab4dd1cfa57778bc518fa3b997c741ba96cb9adb84d89e36",
+    "evidence/executions/20261007/residual-batch-validation/post-scientific-source-deltas.json": "d426f5019b7747405102ac099e1c49020a8606cefc15433a763d0115ecdb1e4d",
+    "evidence/executions/20261007/residual-batch-validation/pre-freeze-failures.json": "bcc9926e28d349b264d8a3384691bcded5f3050278be7b554f4cc5707efc60d4",
+    "evidence/executions/20261007/residual-batch-validation/raw-public-hashes.json": "16db8e9eaaef1baf9e3622a7708b5c61e90a0eb78a6ba66c6ccf2d8ea8593c01",
+    "evidence/executions/20261007/residual-batch-validation/receipt.json": "89143fedd39eb0bb421c6d21861a33088164c7e4659df5239890eb0e1998023d",
+    "evidence/executions/20261007/residual-batch-validation/routing-before.txt": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+    "evidence/executions/20261007/residual-batch-validation/routing-failure-original.json": "733d37d03455e0c6e724c88dbaa965d35084ec5703bcdbb8a5773a497168449a",
+    "evidence/executions/20261007/residual-batch-validation/routing-normal.json": "9cfc263ebd2db41e6e489fc18c68cbe38803d7ffa79b053823414705d4d7a7c7",
+    "evidence/executions/20261007/residual-batch-validation/routing-optimized.json": "e71fac6f3eaea5bcfb728fd2f97c2ec11ea66521f2de83813ea425e6cedafa47",
+    "evidence/executions/20261007/residual-batch-validation/routing-source-delta.json": "16b25a3f727e1287e6aacd66e373d035c9e414c62badcc4a7c11905d7e694c50",
+    "evidence/executions/20261007/residual-batch-validation/scientific-archive-manifest.json": "c6df374f3d8086744ed188d4e187e8cca9e87ee2977e46b0cf0d9b359a21e19e",
+    "evidence/executions/20261007/residual-batch-validation/supplement.json": "c1c607f2c1016b02fd395a18914044c06e247227d73051aa1bad4ede29ce375f",
+    "evidence/executions/20261007/residual-batch-validation/targeted-replay.json": "f4192a7f46bd20071f7b758a940a3ae1bf2fd862f6e850e10662a2b350b1ffc0",
+    "evidence/executions/20261007/residual-batch-validation/whitespace-check.json": "2a00d4e06446720b5200ca74fdf9bc9545b5ba2693d4ebd0b533aacbf5a973a7",
+    "evidence/executions/20261007/residual-batch-validation/workspace.json": "c189d4eceaa8290884219068c81f5d3a9116a02eb976677116a37fe5915090ca"
+  },
+  "unchanged_preappend_files": 2970,
+  "scope": "Exact evidence-only append AFTER separately disclosed TeX/routing source deltas and new verification regression. This delta report itself is an additional post-run reporting file, excluded from its own new-file map and bound by the final manifest."
+}

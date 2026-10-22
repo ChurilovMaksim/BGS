@@ -41,7 +41,7 @@ study further, not proof authority for TRACE-011.
 oriented block and pair mass criterion. [TRACE-010](../mathematics/signed_heisenberg_comparison.md)
 supplies the exact signed cubic target, reference variance and older
 cardinality-dependent budget. The finite homometric example in
-[the CUE upload review](../record/cue_upload_review_20260927.md) already
+[the CUE upload review](../archive/record/cue_upload_review_20260927.md) already
 refutes pair-only determination of higher statistics. The new result is
 the density-conditioned resonant deletion and critical-tail construction,
 not the general fact that pairs need not determine triples.

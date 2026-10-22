@@ -130,7 +130,7 @@ model-specific mixed-loop hypothesis.
 
 The algebraic proof is independent of numerical sampling. Finite floating
 diagnostics and the exact formulas used are recorded in
-[the dated attempt](../record/abel_window_research_20260922.md). That record
+[the dated attempt](../archive/record/abel_window_research_20260922.md). That record
 also distinguishes the prior close-pair theorem and the previously proved
 \(D\delta_N\)-scale window theorem. These elementary inequalities are
 included for their precise inference boundary, without an external novelty

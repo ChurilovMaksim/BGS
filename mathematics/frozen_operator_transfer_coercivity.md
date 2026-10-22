@@ -9,7 +9,7 @@ analytic formalization is asserted.
 
 Review and execution scopes are recorded in the
 [audit](../record/frozen_operator_transfer_review_20261006.md) and
-[programme](../record/frozen_operator_transfer_program_20261006.md).
+[programme](../archive/record/frozen_operator_transfer_program_20261006.md).
 
 ## 1. Objects and conclusions
 

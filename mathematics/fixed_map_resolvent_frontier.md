@@ -535,7 +535,7 @@ $$
 Thus the physical ordinary symbol averages exactly $-1/10,-1/20,0$
 over the linear-cat fixed-point sets at times $1,2,\ge3$. This unweighted
 identity does not estimate an oscillatory Birkhoff sum or quantum trace.
-The [submission audit](../record/cue_upload_review_20260927.md) rejects
+The [submission audit](../archive/record/cue_upload_review_20260927.md) rejects
 the proposed upgrade from pair-only TG-mean estimates to all-order CUE.
 It also corrects the submitted ordinary-symbol translation, bispectrum
 Fourier sign, distinct-index convention and Abel cutoff accuracy.
@@ -650,7 +650,7 @@ Gaussian overlap bound now gives limsup values below 4 and 9 for the first
 two traces, closing K=20 for sufficiently large odd N.
 No effective threshold, uniform Heisenberg estimate or all-N initial trace
 convergence follows. These results leave `BGS-TRACE-005` and `BGS-BGS-001`
-open. The [current audit](../record/expansion_wavepacket_review_20261004.md)
+open. The [current audit](../archive/record/expansion_wavepacket_review_20261004.md)
 records the strengthened input and its proof boundary.
 
 ## From finite coboundary kicks to a spectral diffusion
@@ -691,7 +691,7 @@ first fixes dimension; the following extension supplies an explicit joint
 regime. No convergence of the original matrix paths is asserted. The initial clock remains
 a counterexample to generic noise removal. This auxiliary theorem does not
 establish the deterministic map's Heisenberg joint-trace estimate. The
-[continuation audit](../record/coboundary_mobius_review_20260929.md) records
+[continuation audit](../archive/record/coboundary_mobius_review_20260929.md) records
 the proof obligations, exact algebra and finite projection checks.
 
 ## A dimension-quantitative joint regime for the random chain
@@ -720,7 +720,7 @@ Its bound also gives a slower polynomial regime at $t=L_N/N$,
 $L_N\to\infty$, $L_N=o(\log N)$, $\varepsilon=N^{-a}$, $a>20$;
 the earlier denial of any polynomial regime is corrected by ERR-026.
 No deterministic noise removal follows. The
-[author audit](../record/coboundary_joint_review_20260930.md) separates
+[author audit](../archive/record/coboundary_joint_review_20260930.md) separates
 the analytic proof from exact algebra and finite Frechet-gradient checks.
 
 ## Polynomial original-coboundary steps with the previous local rate
@@ -774,7 +774,7 @@ This completes the stated estimate.
 Taking $t=N^{-2/3}$ and $\varepsilon=N^{-26/3}$ gives exactly
 $2N^{34}$ steps and error $O_f(N^{-1/3})$. Nonnegative $C_c^1$ tests
 have the weak limit by approximation. The
-[review](../record/polynomial_coboundary_review_20261004.md) records the
+[review](../archive/record/polynomial_coboundary_review_20261004.md) records the
 independent internal check of the new estimates and finite controls.
 For a fixed bounded interval $I$, the local counting generating function
 converges to $\det(I-(1-z)K_I)$ for $0\le z\le1$; the hole probability
@@ -882,7 +882,7 @@ below handles them. Even the whole
 logarithmic trace window cannot abstractly select $t=N^{-2/3}$:
 the FLOW-013 family at that time satisfies it and still has an empty limit.
 
-The [review](../record/general_start_review_20261004.md) states the
+The [review](../archive/record/general_start_review_20261004.md) states the
 independent internal proof-checking boundary. Deterministic noise removal
 and the original signed Heisenberg hierarchy remain open.
 
@@ -1321,7 +1321,7 @@ one unperturbed pair vector has a negative clock limit while the other
 grows as $L\int w>0$. Both smoothed vectors vanish at this schedule.
 Thus the full signed noise defects remain distinguishable even when
 all the specified short-trace data match. The proof and
-[programme](../record/heisenberg_pair_program_20261005.md) preserve this
+[programme](../archive/record/heisenberg_pair_program_20261005.md) preserve this
 input limitation without presenting a chaotic counterexample.
 
 For the original $U_N$, the determinant formula makes the full signed
@@ -1918,7 +1918,7 @@ $m\asymp N$, $H$ grows as $|\tau|N^2$; a fixed-degree certificate
 does not decay. Fixed orbit moments alone do not justify the required
 growing word expansion. Nonperturbative E/G estimates, nonresonant
 signed cancellation and the complete TRACE-005/BGS-BGS-001 goals
-remain open. The [review](../record/folded_quadratic_review_20261001.md)
+remain open. The [review](../archive/record/folded_quadratic_review_20261001.md)
 separates proof, finite controls and prior work.
 
 ## Fixed-time bounded traces and quantizer overlap
@@ -2033,7 +2033,7 @@ arithmetic conjugacy. Earlier project nonlinear arithmetic examples
 are credited. This is a different map, not an obstruction established
 for the frozen operator.
 
-The [current research audit](../record/expansion_wavepacket_review_20261004.md)
+The [current research audit](../archive/record/expansion_wavepacket_review_20261004.md)
 records exact rational/modular controls, finite character and channel tests,
 odd coherent frames, checked source leaves and prior-scope comparison.
 The actual frozen block mass, shifted microscopic energy and nonresonant

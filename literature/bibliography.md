@@ -329,7 +329,7 @@ that paper purity of a middle extension is defined on its lisse locus.
 The explicit singular-stalk wording in the recovered proof makes that
 convention transparent. These are source-dependent clarifications, not
 new monodromy or quasi-orthogonality theorems. See
-[recovery audit](../record/recovery_audit_20260920.md).
+[recovery audit](../archive/record/recovery_audit_20260920.md).
 
 ## Quadratic-noise continuation sources (29 September 2026)
 
@@ -374,7 +374,7 @@ prior non-self-averaging warning. No source gives actual-map cancellation.
 ## Registered-dependency metadata audit, 6 October 2026
 
 All 28 registered load-bearing references were covered by a fresh metadata
-pass. The [cached observations and exact dependency impact sets](../archive/evidence/source_metadata/registry_metadata_20261006.json)
+pass. The [cached observations and exact dependency impact sets](../evidence/source_metadata/registry_metadata_20261006.json)
 separate identity, version/date, locator and application coverage. Source
 identifiers and hashes are retained; copyrighted article texts are not
 redistributed. Historical theorem-check dates above are preserved.
