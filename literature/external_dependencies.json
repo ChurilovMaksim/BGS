@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -1001,6 +1001,25 @@
         "literature/phase_ensemble_sources_20261019.md"
       ],
       "source_url": "https://math.mit.edu/~rstan/pubs/pubfiles/47.pdf"
+    },
+    {
+      "id": "EXT-BR-1975",
+      "authors": [
+        "Rufus Bowen",
+        "David Ruelle"
+      ],
+      "title": "The Ergodic Theory of Axiom A Flows",
+      "identifier": "DOI:10.1007/BF01389848",
+      "pinned_version": "Inventiones mathematicae 29 (1975), 181-202; author-hosted published PDF, SHA256 bf2a5f2f655fc52f7b4c3c381b176f520af41c274c6ec53e2afe8da91d52efa9",
+      "locator": "Theorem 3.3 p.187; Lemmas 4.1-4.2 p.189; Proposition 4.4(b) p.190; Remark 5.2 p.192",
+      "checked_on": "2026-10-21",
+      "mapping": "Apply through the actual smooth constant-roof suspension: basic hyperbolic attractor with nonvanishing flow, transitive and dense periodic orbits. Equilibrium/Gibbs and geometric-volume facts imply the project strict pressure gap using the explicit fixed multiplier; no mixing-flow assumption. Quantum trace construction remains a separately proved project input.",
+      "project_sources": [
+        "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+        "literature/bowen_ruelle_trace_closure_20261021.md",
+        "record/trace_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/executions/20261022/trace-closure/source_check.json"
     }
   ]
 }

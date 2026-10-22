@@ -8,8 +8,10 @@ access. Even its first fixed band-two pair defect remains unestimated.
 After rotational-path removal the signed remainder must produce a nonzero
 negative plateau correction. TRACE-108's one-step quartic term and TRACE-111's
 initial curvature/early inflection do not evaluate that remainder.
-TRACE-109/110 additionally retain explicit older trace input qualifications.
-[Review](../record/spectral_final_integration_20261021.md).
+The TRACE-109/110 input qualifications are closed by the
+[22 October review](../record/trace_closure_20261022.md). TRACE-112/113 control
+short logarithmic windows or global spectral distance, not this signed
+Heisenberg-scale remainder.
 
 The [21 October physical-kick results](physical_kick_trace_decay.md) do not close
 the original signed Heisenberg hierarchy. [All-order polynomial replacement](physical_trace_polynomial_approximation.md) controls its approximation error,

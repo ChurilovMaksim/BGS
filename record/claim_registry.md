@@ -1,9 +1,9 @@
 # Stable claim registry
 
 This file is generated from `record/claims.json`. It is a navigation
-surface, not an independent status authority; `claim_ledger.md` wins.
+surface of the current registry authority; see `../SOURCE_OF_TRUTH.md`.
 
-Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID.
+Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md.
 
 | Claim ID | State | Title | Authoritative source | Boundary / closure |
 |---|---|---|---|---|
@@ -199,9 +199,11 @@ Core load-bearing claims, theorem bridges, and open programme obligations. The c
 | `BGS-TRACE-106` | **PROVED** | Uniform physical-kick trace decay, positive-square exponent 1/9 and scalar-distance limit | [source](../mathematics/physical_kick_trace_decay.md) | All odd N, 0<\|t\|<=10^-20, N\|t\|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and self-review, not external refereeing or Lean. |
 | `BGS-TRACE-107` | **PROVED** | Physical polynomial approximation at every fixed factorial order and exact Pell alias threshold | [source](../mathematics/physical_trace_polynomial_approximation.md) | Norm error epsilon gives O(N^k epsilon) trace-polynomial error at each fixed order and bandwidth. Negative indices use adjoint powers of the nonunitary approximant. Full signed sum remains unestimated. Shortest scalar two-copy Pell alias has length x; no spectral counterexample or priority claim. |
 | `BGS-TRACE-108` | **PROVED** | Quartic diagonal coordinate return with explicit fixed-coupling remainder | [source](../mathematics/coordinate_return_quartic_20261021.md) | One step only; analytic author proof and self-review, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing. |
-| `BGS-TRACE-109` | **CONDITIONAL** | Inserted trace, quantum commutant projection and two-copy coboundary obstruction | [source](../mathematics/inserted_trace_coboundary_20261021.md) | Projection identities exact for arbitrary multiplicities; asymptotic constants conditional on older exact plane-amplitude and odd-sector trace construction, not fully independently closed here. |
-| `BGS-TRACE-110` | **CONDITIONAL** | Spectral orbit distance and exact scalar-root comparison lemmas | [source](../mathematics/spectral_orbit_distance_20261021.md) | Application requires uniform original-family all-time trace bound (T), C a^m with a<sqrt(lambda), whose older analytic dependency closure is not independently certified in this integration; no microscopic spacing law. |
+| `BGS-TRACE-109` | **PROVED** | Inserted trace, quantum commutant projection and two-copy coboundary obstruction | [source](../mathematics/inserted_trace_coboundary_20261021.md) | Original one-step inserted trace with O(N^-1) remainder now proved by a finite-grid corrected-amplitude parametrix; projection and two-copy constants follow for arbitrary multiplicities. No microscopic pair limit, external refereeing or formalization. |
+| `BGS-TRACE-110` | **PROVED** | Spectral orbit distance and exact scalar-root comparison lemmas | [source](../mathematics/spectral_orbit_distance_20261021.md) | All-odd-N O(1/log N) upper global spectral distance and matching Pell lower constant pi log(lambda)/4. Input (T) is now proved by TRACE-113; an independent pressure-free upper proof is TRACE-112. No microscopic spacing law. |
 | `BGS-TRACE-111` | **PROVED** | Full weighted Pell gradient, negative initial Hessian and forced early inflection | [source](../mathematics/pell_weighted_curvature_20261021.md) | Original parameter curve at t=0 and shrinking times on odd Pell dimensions; all weighted times and cross terms included. S_N(tau), H_diag and BGS remain open. |
+| `BGS-TRACE-112` | **PROVED** | Uniform classical displacement density and independent logarithmic global spectral comparison | [source](../mathematics/displacement_density_trace_bound_20261021.md) | Density discrepancy <= epsilon_R m theta^(m-1) <= 8e-53 for every positive classical iterate of the actual fixed map. Quantum normalized trace <= C exp(Km) N^(-1/5), useful on a short logarithmic window; global spectral matching O(1/log N), not a microscopic law. |
+| `BGS-TRACE-113` | **PROVED** | Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap | [source](../mathematics/fixed_kick_uniform_trace_bound_20261021.md) | Fixed tau=10^-80, one N0 for every m>=1 and every sufficiently large odd N: \|Tr U_N^m\|<=C a^m with 1<a<sqrt(lambda). Constants/pressure gap not numerically evaluated; bound is uninformative at m proportional to N; no signed hierarchy or BGS conclusion. |
 
 External theorem dependencies are pinned in
 `../literature/external_dependencies.json`; the maintained programme DAG is

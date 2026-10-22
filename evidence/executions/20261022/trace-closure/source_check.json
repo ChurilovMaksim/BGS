@@ -1,0 +1,26 @@
+{
+  "source": "Bowen and Ruelle, Inventiones mathematicae 29 (1975), 181-202",
+  "url": "https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B42%5D.pdf",
+  "doi": "10.1007/BF01389848",
+  "checked_on": "2026-10-21",
+  "bytes": 960459,
+  "sha256": "bf2a5f2f655fc52f7b4c3c381b176f520af41c274c6ec53e2afe8da91d52efa9",
+  "locators": {
+    "Theorem 3.3": "printed p187 / PDF index 6",
+    "Lemmas 4.1-4.2": "printed p189 / PDF index 8",
+    "Proposition 4.4(b)": "printed p190 / PDF index 9",
+    "Remark 5.2": "printed p192 / PDF index 11"
+  },
+  "inspection": "PDF text and actual rendered theorem pages inspected; web screenshot placeholders were not treated as inspection",
+  "hypotheses": {
+    "flow": "smooth nonvanishing constant-roof suspension of actual analytic near-cat map",
+    "basic_set": "whole mapping torus, transitive, hyperbolic, locally maximal, dense periodic orbits",
+    "attractor": "whole compact mapping torus",
+    "volume": "invariant smooth area times roof length",
+    "potentials": "zero and negative unstable geometric potential; Holder by cited geometric result",
+    "entropy_and_integrals": "constant-roof correspondence with map measures",
+    "mixing_required": false
+  },
+  "project_boundary": "Classical equilibrium/volume facts only; quantum identities and strict pressure gap proved in project sources",
+  "copyrighted_pdf_tracked": false
+}

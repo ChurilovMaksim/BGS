@@ -1,5 +1,17 @@
 # Scientific status and research record
 
+## Trace results and dependency closure, 22 October 2026
+
+The [review](trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+finite-grid corrected-amplitude proof. TRACE-110 now has proved global
+$O(1/\log N)$ spectral matching and a matching Pell lower order.
+[TRACE-112](../mathematics/displacement_density_trace_bound_20261021.md) supplies an
+independent logarithmic-time upper-bound route;
+[TRACE-113](../mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
+uniform power-trace input with one threshold for all iterates.
+All statements have analytic project proofs with self-review, not external
+refereeing. Microscopic signed cancellation and BGS remain open.
+
 ## Final spectral source edition
 
 [Integration, mathematical review and corrections](spectral_final_integration_20261021.md),
@@ -22,8 +34,8 @@ current status must be read before using a historical route.
 
 | File | Role |
 |---|---|
-| [claim_ledger.md](claim_ledger.md) | Repository-wide scientific status and scope authority |
-| [claims.json](claims.json), [claim_registry.md](claim_registry.md) | Stable core IDs/cross-links and their generated human-readable view; narrower than the full theorem corpus |
+| [claim_ledger.md](claim_ledger.md) | Dated narrative of scientific status changes and scope |
+| [claims.json](claims.json), [claim_registry.md](claim_registry.md) | Current registered status authority and its generated human-readable view; narrower than the full theorem corpus |
 | [scientific_dependencies.json](scientific_dependencies.json), [dependency graph](scientific_dependency_graph.md) | Maintained theorem/programme dependencies |
 | [retractions.md](retractions.md), [errata.json](errata.json) | False/superseded statements, failure mechanisms and normalized corrections |
 | [repository_conventions.md](repository_conventions.md) | Scientific governance and source hierarchy |

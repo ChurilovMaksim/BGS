@@ -1,0 +1,53 @@
+{
+  "result": "PASS",
+  "date": "2026-10-22",
+  "checks": [
+    {
+      "command": "python3 computations/maintenance/render_claim_registry.py --check",
+      "exit_code": 0,
+      "output": "claim-registry-render: OK\n"
+    },
+    {
+      "command": "python3 computations/maintenance/render_research_views.py --check",
+      "exit_code": 0,
+      "output": "Research navigation views synchronized\n"
+    },
+    {
+      "command": "python3 computations/maintenance/render_spectral_research.py --check",
+      "exit_code": 0,
+      "output": "PASS: spectral thematic views and review matrix\n"
+    },
+    {
+      "command": "python3 computations/maintenance/rebuild_spectral_corpus.py --check",
+      "exit_code": 0,
+      "output": "{\"source_sha256\": \"b035e30034b20c60a8ced1d28a072767c1ea7afc5deaeea545aa20730e1948cb\", \"bytes\": 8849820, \"source_units\": 535, \"mode\": \"check\", \"historical_declared_hash_differences\": 6, \"result\": \"PASS\"}\n"
+    },
+    {
+      "command": "python3 computations/maintenance/sync_finite_orbit_section.py --check",
+      "exit_code": 0,
+      "output": "finite-orbit manuscript section matches canonical Markdown\n"
+    },
+    {
+      "command": "python3 computations/verification/check_spectral_edition.py --known-tree /workspace/scratch/1c87c9bb0442/trace_closure_20261021/known_tree.json",
+      "exit_code": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"source_units\": 535,\n  \"markdown_files_checked\": 429,\n  \"local_link_targets_checked\": 1278,\n  \"reference_and_new_python_syntax_files\": 73,\n  \"evidence_json_files\": 71,\n  \"known_tree_used\": true,\n  \"registered_claims\": 197,\n  \"registry_graph_and_path_inventory_checked\": true,\n  \"unavailable_baseline_proofs_read\": false,\n  \"failures\": []\n}\n"
+    },
+    {
+      "command": "python3 computations/verification/bibliographic_metadata_audit.py --self-test",
+      "exit_code": 0,
+      "output": "bibliographic-metadata-audit: 470 mutation tests passed\nbibliographic-metadata-audit: OK: 52 cached identities match; application coverage={'unverified_application': 12, 'verified_application': 3, 'verified_conditional_translation': 1, 'partial_theorem_review': 4, 'unverified_exact_theorem': 2, 'verified_qualitative_translation': 1, 'verified_algebraic_time_application': 1, 'verified_repaired_effective_gap_application': 1, 'verified_reference_translation': 1, 'verified_degree_hypothesis_only': 1, 'verified_finite_kernel_translation': 1, 'verified_spatial_ergodicity_application': 1, 'verified_source_application_scoped': 3, 'verified_attribution_or_law_identification': 4, 'verified_application_scoped_local_box': 1, 'verified_imported_coherent_projector_and_boundary_application': 1, 'verified_imported_generalized_emi_body_application': 1, 'scoped-reviewed-input-or-prior-formula': 7, 'scoped-review-carried-forward': 5, 'primary-source-hypotheses-checked': 1}\nNON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.\n"
+    }
+  ],
+  "scope": "Executed against a partial local overlay; --known-tree supplies authenticated baseline paths, not their contents. Not a full-workspace scientific-registry or repository audit.",
+  "additional_changed_file_scan": {
+    "result": "PASS",
+    "changed_markdown_files": 31,
+    "local_link_targets_checked": 1926,
+    "registered_claims": 197,
+    "registry_DAG_checked": true,
+    "changed_JSON_files": 13,
+    "changed_Python_syntax_files": 4,
+    "failures": [],
+    "known_tree_is_path_inventory_only": true
+  }
+}

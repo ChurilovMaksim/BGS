@@ -48,14 +48,18 @@ def main():
         if not p.exists() or p.read_bytes()!=expected:failures.append(['source projection',e['target']])
         files.append(p)
     maintained=['coordinate_return_quartic_20261021.md','inserted_trace_coboundary_20261021.md',
-                'spectral_orbit_distance_20261021.md','pell_weighted_curvature_20261021.md']
+                'spectral_orbit_distance_20261021.md','pell_weighted_curvature_20261021.md',
+                'finite_grid_one_step_trace_20261021.md','displacement_density_trace_bound_20261021.md',
+                'fixed_kick_uniform_trace_bound_20261021.md']
     markdown=[p for p in files if p.suffix=='.md']
     markdown+=list((ROOT/'mathematics/spectral_research/topics').glob('*.md'))
     markdown+=[ROOT/'mathematics/spectral_research/README.md',ROOT/'record/spectral_research/review_matrix.md']
     markdown += [ROOT/'mathematics'/s for s in maintained]
-    markdown += [ROOT/'record'/s for s in ['spectral_final_integration_20261021.md','remaining_breakthrough_task_20261021.md']]
+    markdown += [ROOT/'record'/s for s in ['spectral_final_integration_20261021.md','remaining_breakthrough_task_20261021.md','trace_closure_20261022.md']]
     markdown += [ROOT/'evidence/executions/20261021/spectral-final/README.md',
                  ROOT/'computations/reference/spectral_research/README.md']
+    markdown += [ROOT/'literature/bowen_ruelle_trace_closure_20261021.md',
+                 ROOT/'evidence/executions/20261022/trace-closure/README.md']
     for p in markdown:
         rel=p.relative_to(ROOT).as_posix();s=plain_markdown(p.read_text())
         for m in re.finditer(r'\[[^\]\n]+\]\(([^\s)]+)\)',s):
@@ -66,24 +70,54 @@ def main():
                 failures.append(['link target',rel,t])
     for p in list((ROOT/'computations/reference/spectral_research').rglob('*.py'))+[
         ROOT/'computations/maintenance'/s for s in ['rebuild_spectral_corpus.py','render_spectral_research.py']]+[
-        ROOT/'computations/verification'/s for s in ['replay_spectral_corpus.py','weighted_trace_hessian_checks.py','check_spectral_edition.py']]:
+        ROOT/'computations/verification'/s for s in ['replay_spectral_corpus.py','weighted_trace_hessian_checks.py','check_spectral_edition.py','trace_closure_checks.py']]:
         try:ast.parse(p.read_text(),filename=str(p));py+=1
         except SyntaxError as exc:failures.append(['Python syntax',str(p),str(exc)])
-    for p in (ROOT/'evidence/executions/20261021/spectral-final').rglob('*'):
+    for evidence_root in ['evidence/executions/20261021/spectral-final',
+                          'evidence/executions/20261022/trace-closure']:
+      for p in (ROOT/evidence_root).rglob('*'):
         if not p.is_file() or not (p.suffix=='.json' or p.name.endswith('.json.gz')):continue
         try:json.loads(gzip.decompress(p.read_bytes()) if p.name.endswith('.gz') else p.read_bytes());js+=1
         except (ValueError,OSError) as exc:failures.append(['JSON syntax',str(p),str(exc)])
     rows=json.loads((ROOT/'record/claims.json').read_text())['claims'];by={r['id']:r for r in rows}
-    expected_states={'108':'proved','109':'conditional','110':'conditional','111':'proved'}
+    expected_states={'108':'proved','109':'proved','110':'proved','111':'proved','112':'proved','113':'proved'}
     for n,state in expected_states.items():
         r=by['BGS-TRACE-'+n]
         if r['state']!=state or not (ROOT/r['source']).exists():failures.append(['core claim',n])
     for cid in ['BGS-BGS-001','BGS-TRACE-005']:
         if by[cid]['state']!='open':failures.append(['open frontier changed',cid])
+    # Check registered graph/path closure against actual files or the explicit
+    # authenticated inventory. This does not read unavailable baseline proofs.
+    if len(by)!=len(rows):failures.append(['duplicate claim ID'])
+    ext=json.loads((ROOT/'literature/external_dependencies.json').read_text())['dependencies']
+    extids={e['id'] for e in ext}
+    def available(path):
+        return path in known or any(x.startswith(path.rstrip('/')+'/') for x in known)
+    for row in rows:
+        for dep in row.get('dependencies',[]):
+            if dep not in by:failures.append(['missing claim dependency',row['id'],dep])
+        for dep in row.get('external_dependencies',[]):
+            if dep not in extids:failures.append(['missing external dependency',row['id'],dep])
+        for field in ['source','evidence','verifiers','formalization','manuscript','proof_dependencies']:
+            vals=row.get(field,[]);vals=[vals] if isinstance(vals,str) else vals
+            for path in vals:
+                if not available(path):failures.append(['registered path',row['id'],path])
+    visiting=set();done=set()
+    def visit(cid):
+        if cid in visiting:
+            failures.append(['dependency cycle',cid]);return
+        if cid in done:return
+        visiting.add(cid)
+        for dep in by[cid].get('dependencies',[]):
+            if dep in by:visit(dep)
+        visiting.remove(cid);done.add(cid)
+    for cid in by:visit(cid)
     result={'result':'PASS' if not failures else 'FAIL','source_units':len(c['entries']),
             'markdown_files_checked':len(markdown),'local_link_targets_checked':links,
             'reference_and_new_python_syntax_files':py,'evidence_json_files':js,
-            'known_tree_used':bool(args.known_tree),'failures':failures}
+            'known_tree_used':bool(args.known_tree),'registered_claims':len(rows),
+            'registry_graph_and_path_inventory_checked':True,'unavailable_baseline_proofs_read':False,
+            'failures':failures}
     print(json.dumps(result,indent=2))
     if failures:raise SystemExit(1)
 

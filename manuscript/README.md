@@ -1,5 +1,18 @@
 # BGS consolidated research manuscript
 
+## Trace closure edition, 22 October 2026
+
+The [new section](unified_sections/spectral_trace_closure_20261022.tex)
+closes TRACE-109/110 and presents TRACE-112/113. The current three-pass
+build has **324 pages**, no unresolved references or citations, and no
+horizontal overflow. The new section's three pages were visually inspected;
+two inherited long-path overflows were corrected by typesetting alone.
+[Build receipt](../evidence/executions/20261022/trace-closure/manuscript_build.json)
+and [scientific review](../record/trace_closure_20261022.md).
+Earlier build counts and warnings below refer to their dated revisions.
+The microscopic signed hierarchy and BGS remain open.
+
+
 ## Final spectral edition, 21 October 2026
 
 The new [spectral section](unified_sections/spectral_final_20261021.tex)
@@ -14,8 +27,9 @@ control mathematical status. Earlier dated build claims below refer to their
 original source revisions.
 
 [BGS_unified.tex](BGS_unified.tex) is the single maintained publication root
-on `main`. It presents the research corpus; the scientific-status authority
-is [the claim ledger](../record/claim_ledger.md), followed by canonical
+on `main`. It presents the research corpus; current registered status is
+in [claims.json](../record/claims.json), with the dated narrative in
+[the claim ledger](../record/claim_ledger.md), followed by canonical
 mathematical sources under [mathematics/](../mathematics/README.md).
 
 **Current continuation, 19 October 2026:** the new

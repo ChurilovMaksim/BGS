@@ -1,5 +1,16 @@
 # Reproduce the current consolidated research state
 
+## Trace closure checks, 22 October 2026
+
+Run `python3 -O computations/verification/trace_closure_checks.py` for the
+new exact rational and exponent checks. Then run the three renderers in
+`computations/maintenance/` with `--check`,
+`sync_finite_orbit_section.py --check`, and
+`check_spectral_edition.py` in `computations/verification/`.
+The [new receipt](evidence/executions/20261022/trace-closure/README.md)
+distinguishes finite checks, analytic self-review, primary-source inspection
+and the new manuscript build. No old evidence is replaced.
+
 ## Final spectral source edition, 21 October 2026
 
 Reconstruct/check every preserved source projection with
@@ -20,7 +31,7 @@ render_research_views.py --check from computations/maintenance/.
 actual execution scope. Dated integration checkers pin their original source
 and manuscript hashes; they are not perpetual gates for later revisions.
 
-The canonical editable publication entry point is `manuscript/BGS_unified.tex`. The authoritative scientific-status ledger is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
+The canonical editable publication entry point is `manuscript/BGS_unified.tex`. Current registered status is in `record/claims.json` and its generated view; the dated narrative is `record/claim_ledger.md`; the consolidation audit is `record/final_consolidation_audit_20260906.md`.
 
 The 4 October actual-start comparison, cluster obstruction, logarithmic
 phase bounds and circular relaxation are reviewed in `record/general_start_review_20261004.md`.

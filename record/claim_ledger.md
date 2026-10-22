@@ -1,8 +1,24 @@
 # Claim ledger
 
-## Final spectral research integration, 21 October 2026
+## Trace dependency closure, 22 October 2026
 
-| Claim | Current status | Scope |
+| Claim | Current status | Exact scope |
+|---|---|---|
+| BGS-TRACE-109 | ANALYTIC PROOF + SELF-REVIEW | [Inserted trace](../mathematics/inserted_trace_coboundary_20261021.md); the new [finite-grid proof](../mathematics/finite_grid_one_step_trace_20261021.md) supplies the $O(N^{-1})$ remainder without an all-time sector input |
+| BGS-TRACE-110 | ANALYTIC PROOF + SELF-REVIEW | [Global spectral distance](../mathematics/spectral_orbit_distance_20261021.md); all-odd-$N$ upper bound $O(1/\log N)$ and matching Pell lower order, using TRACE-112/113 |
+| BGS-TRACE-112 | ANALYTIC PROOF + SELF-REVIEW | [Displacement density and short logarithmic trace window](../mathematics/displacement_density_trace_bound_20261021.md); independent pressure-free upper spectral comparison |
+| BGS-TRACE-113 | ANALYTIC PROOF + SELF-REVIEW | [Uniform power-trace bound](../mathematics/fixed_kick_uniform_trace_bound_20261021.md); one $N_0$ for all $m\ge1$, $|\operatorname{Tr}U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$; published pressure input separately checked |
+
+[Proof/dependency review](trace_closure_20261022.md) and
+[bounded execution evidence](../evidence/executions/20261022/trace-closure/README.md).
+These results close the two qualifications recorded below on 21 October.
+No external refereeing or formal proof is asserted. The bound $Ca^m$ becomes
+uninformative at times proportional to $N$; the full signed pair plateau and
+all higher factorial tests remain open. **BGS-TRACE-005 and BGS-BGS-001: OPEN.**
+
+## Historical integration verdict, 21 October 2026 (TRACE-109/110 superseded above)
+
+| Claim | Status at that checkpoint | Scope |
 |---|---|---|
 | BGS-TRACE-108 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Quartic coordinate return](../mathematics/coordinate_return_quartic_20261021.md), one step at fixed coupling with explicit remainder; no microscopic pair limit |
 | BGS-TRACE-109 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Inserted trace and coboundary projection](../mathematics/inserted_trace_coboundary_20261021.md); arbitrary multiplicities handled, numerical asymptotic bound retains the older amplitude/sector construction |

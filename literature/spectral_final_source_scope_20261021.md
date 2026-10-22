@@ -1,5 +1,9 @@
 # External source scope in the final spectral edition
 
+**Later scoped update:** the TRACE-109/110 qualifications below were closed in the
+[22 October review](../record/trace_closure_20261022.md). This dated note preserves
+the earlier review scope.
+
 Checked 21 October 2026. This source check is distinct from the historical
 author audits preserved in the imported corpus.
 

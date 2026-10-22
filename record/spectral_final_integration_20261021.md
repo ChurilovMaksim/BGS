@@ -1,5 +1,8 @@
 # Final spectral research corpus: integration and mathematical review
 
+**Later scoped update:** the TRACE-109/110 qualifications below were closed in the
+[22 October review](trace_closure_20261022.md). This dated record preserves the earlier verdict.
+
 Date: 21 October 2026. Review provenance: direct reconstruction and author
 self-review in this session. No independent external referee or new Lean
 formalization. **The original fixed-coupling pair defect, all-order hierarchy

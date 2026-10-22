@@ -1,0 +1,46 @@
+{
+  "schema": "bgs-trace-closure-execution-v1",
+  "date": "2026-10-22",
+  "base_commit": "2271f00b17b2480f8f833fe55754a55c1b8c8bde",
+  "base_tree": "e9b9cd628f96704e1e731806995eb414409908eb",
+  "scientific_result": "Analytic subsidiary proofs with adversarial self-review; TRACE-109/110 inputs closed, TRACE-112/113 added. BGS not solved.",
+  "proof_status_is_not_inferred_from_finite_checks": true,
+  "source_hashes_sha256": {
+    "mathematics/finite_grid_one_step_trace_20261021.md": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252",
+    "mathematics/displacement_density_trace_bound_20261021.md": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22",
+    "mathematics/fixed_kick_uniform_trace_bound_20261021.md": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362",
+    "mathematics/inserted_trace_coboundary_20261021.md": "5029d17faf7a7c7e8ca46fbcb7cb56f8f72ec6abea6ef0ab040491764b1c33a2",
+    "mathematics/spectral_orbit_distance_20261021.md": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f",
+    "computations/verification/trace_closure_checks.py": "12f32aa587f90ff8f2ce2e951fc4e6ba90b4d8d62d4cabd4e1cf317ed60b5405",
+    "computations/verification/check_spectral_edition.py": "e68196a96daa5dd2ffb3ab4cfb7a4d4be4af760f4df0620ff0c883a65d2262fb",
+    "literature/bowen_ruelle_trace_closure_20261021.md": "74009069e53e8b32cfc26b36ff7446ebbb09a829ecf0ef88cd943cf86061bbe9",
+    "literature/external_dependencies.json": "7236eb82472cea2cb5122b375a4f065f67d698fdcf985c2476dcd07245910a98",
+    "literature/metadata_audit.json": "115d97f4921052e9f65a3a444f515005a657507ac42d7f080fd2b02208eb575e",
+    "evidence/source_metadata/registry_metadata_20261022.json": "8f6a8e347a250bb63aa9fd0f94d35ddaa2128d1cac3d183f63cbf02523b5abb0",
+    "record/claims.json": "82044c615362f0c70c280171c993458f4b01916af34181d4795080ced3f43384",
+    "record/trace_closure_20261022.md": "354ea4fe3e23a1450c456f28298eda4850ca82ffb6cd5f12496b3fc44687631c",
+    "manuscript/unified_sections/spectral_trace_closure_20261022.tex": "06c4e8b3b46cd241f573c4f101d663ecf47f288a2576515bb5c3fc610c24e977"
+  },
+  "finite_check": "python3 -O computations/verification/trace_closure_checks.py",
+  "new_exact_Gauss_entries": 2737,
+  "odd_dimensions": 49,
+  "new_Hessian_cases": 49,
+  "manuscript_pages": 324,
+  "bibliographic_sources": 52,
+  "bibliographic_mutation_checks": 470,
+  "external_review": "Bowen--Ruelle published primary source, exact locators and actual suspension hypotheses; previous 51 source observations carried forward",
+  "review_limits": [
+    "No external referee or fresh agent certification",
+    "No Lean compilation, Wolfram or C++ execution in this pass",
+    "No finite spectrum or proxy coupling used for asymptotics",
+    "All-time exponential bound is uninformative at times proportional to N",
+    "Known remote tree supplies unavailable baseline paths; local overlay is not a full checkout"
+  ],
+  "central_open_claims": [
+    "BGS-BGS-001",
+    "BGS-TRACE-005"
+  ],
+  "old_source_archive_preserved_sha256": "b035e30034b20c60a8ced1d28a072767c1ea7afc5deaeea545aa20730e1948cb",
+  "math_segments_parsed": 828,
+  "no_horizontal_overflows": true
+}

@@ -1,11 +1,23 @@
 # Mathematical proofs
 
+## Trace results and dependency closure, 22 October 2026
+
+The [review](../record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+finite-grid corrected-amplitude proof. TRACE-110 now has proved global
+$O(1/\log N)$ spectral matching and a matching Pell lower order.
+[TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
+independent logarithmic-time upper-bound route;
+[TRACE-113](fixed_kick_uniform_trace_bound_20261021.md) proves the
+uniform power-trace input with one threshold for all iterates.
+All statements have analytic project proofs with self-review, not external
+refereeing. Microscopic signed cancellation and BGS remain open.
+
 ## Complete spectral research edition
 
 [Fourteen-round thematic edition](spectral_research/README.md): individual
 proofs, countertests, failed routes, reference code and exact source catalog.
-The newly maintained statements are TRACE-108--111; two asymptotic applications
-retain explicit input qualifications. [Actual review scope](../record/spectral_final_integration_20261021.md).
+The first maintained statements were TRACE-108--111. The 22 October
+continuation closes the TRACE-109/110 inputs and adds TRACE-112/113. [Actual review scope](../record/spectral_final_integration_20261021.md).
 
 ## Physical-kick bounds, 21 October 2026
 

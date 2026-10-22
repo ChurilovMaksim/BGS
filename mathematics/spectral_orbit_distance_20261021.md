@@ -1,8 +1,9 @@
-# Distance to the unperturbed spectral orbit: exact lemmas and a conditional application
+# Distance to the unperturbed spectral orbit: proved global bounds
 
-**Claim:** BGS-TRACE-110. **Status:** conditional application, with exact
-finite-dimensional comparison lemmas. The missing review closure is stated
-explicitly; this note does not certify all earlier long-time trace arguments.
+**Claim:** BGS-TRACE-110. **Status:** analytic proof with self-review.
+The continuation, self-reviewed on 22 October, closes input (T) in [TRACE-113](fixed_kick_uniform_trace_bound_20261021.md).
+An independent [TRACE-112 proof](displacement_density_trace_bound_20261021.md)
+also gives the upper bound without pressure or the all-time quantum formula.
 
 ## Distances and the required trace input
 
@@ -12,20 +13,20 @@ $$
 d_N=\inf_{W\in U(N),\ |z|=1}\|U_N-zWM_NW^*\|_{\rm op}.
 $$
 
-The proposed application requires the following quantitative input:
+The following quantitative input is now proved in TRACE-113:
 
 $$
-\exists C,N_0,a\in(1,\sqrt\lambda)\quad
+\exists C<\infty,\ N_0<\infty,\ a\in(1,\sqrt\lambda)\quad
 \forall N\ge N_0\text{ odd}\quad\forall m\ge1:
 \quad |\operatorname{Tr}U_N^m|\le Ca^m,
 \qquad\lambda=3+2\sqrt2.                          \tag{T}
 $$
 
-The author derives (T) from earlier exact amplitude, odd-sector trace,
-Gaussian cocycle and strict pressure estimates. Those complete original
-sources are now preserved, but their all-time dependency closure has not
-been independently re-established in this integration. In particular,
-single-kick decay TRACE-106 does not imply (T).
+The complete exact-amplitude, odd-sector and Gaussian arguments have now
+been reconstructed, and the classical external input checked in its primary
+source. For this application uniform continuity of the Gaussian scalar
+at h=0 suffices; the older quantitative O(h^2) expansion is unnecessary.
+Single-kick decay TRACE-106 alone does not imply (T).
 
 ## Exact scalar-root comparison
 
@@ -62,10 +63,10 @@ Indeed the corresponding phases of $U^m$ have real part at least
 $\cos b$ after rotation; all remaining real parts are at least $-1$.
 Their average has real part at most $A$. This proves (2).
 
-## Conditional Pell lower bound and global upper bound
+## Pell lower bound and global upper bound
 
 Let $N_r=(\lambda^r-\lambda^{-r})/(4\sqrt2)$, with odd $r\ge3$.
-Exact covariance gives $M_{N_r}^{2r}$ scalar. Under (T),
+Exact covariance gives $M_{N_r}^{2r}$ scalar. By (T),
 $|\operatorname{Tr}U_{N_r}^{2r}|/N_r\to0$, since $a^2<\lambda$.
 Taking $m=2r$ in (1) yields
 
@@ -76,7 +77,7 @@ $$
 
 For the upper bound, the exact bare trace identity gives
 $|\operatorname{Tr}M_N^m|^2=\#\ker(S^m-I)\le\lambda^m$.
-Under (T), both empirical spectral measures have exponentially bounded
+By (T), both empirical spectral measures have exponentially bounded
 short Fourier moments divided by $N$. A squared Fejér approximation to
 interval indicators, truncated at a sufficiently small constant times
 $\log N$, bounds both discrepancies by $O(1/\log N)$. Sorting the
@@ -89,8 +90,8 @@ $$
 The full interval approximation and sorted matching argument, including
 the cyclic endpoint, are in the
 [source proof](spectral_research/proofs/research_round14_2026_10_21/obstruction/r14_original_spectral_orbit_barrier.md).
-Equations (3)--(4) therefore give $\Theta(1/\log N_r)$ conditionally on
-(T). The exact tower $r=3\cdot7^s$ has $v_7(N_r)=s+1$.
+Equations (3)--(4) therefore give $\Theta(1/\log N_r)$ for the original
+fixed family. The independent TRACE-112 argument supplies (4) as well. The exact tower $r=3\cdot7^s$ has $v_7(N_r)=s+1$.
 
 ## Why this does not contradict the single-kick theorem
 

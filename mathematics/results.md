@@ -1,5 +1,17 @@
 # Theorem families and their limits
 
+## Trace results and dependency closure, 22 October 2026
+
+The [review](../record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+finite-grid corrected-amplitude proof. TRACE-110 now has proved global
+$O(1/\log N)$ spectral matching and a matching Pell lower order.
+[TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
+independent logarithmic-time upper-bound route;
+[TRACE-113](fixed_kick_uniform_trace_bound_20261021.md) proves the
+uniform power-trace input with one threshold for all iterates.
+All statements have analytic project proofs with self-review, not external
+refereeing. Microscopic signed cancellation and BGS remain open.
+
 ## Final spectral research edition, 21 October 2026
 
 [Thematic results and individual proofs](spectral_research/README.md) integrate
@@ -7,8 +19,8 @@ all fourteen rounds. [TRACE-108](coordinate_return_quartic_20261021.md) is the
 quartic one-step intensity theorem; [TRACE-111](pell_weighted_curvature_20261021.md)
 sums the initial gradient/Hessian and proves an early inflection.
 [TRACE-109](inserted_trace_coboundary_20261021.md) and
-[TRACE-110](spectral_orbit_distance_20261021.md) distinguish exact comparison
-lemmas from conditional older trace inputs. The fixed-coupling signed
+[TRACE-110](spectral_orbit_distance_20261021.md) now include proved global asymptotic applications; their
+21 October input qualifications were closed on 22 October. The fixed-coupling signed
 Heisenberg hierarchy remains open. [Review](../record/spectral_final_integration_20261021.md).
 
 ## Physical-kick bounds, 21 October 2026

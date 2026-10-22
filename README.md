@@ -1,5 +1,17 @@
 # BGS — quantum chaos and spectral universality
 
+## Trace results and dependency closure, 22 October 2026
+
+The [review](record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+finite-grid corrected-amplitude proof. TRACE-110 now has proved global
+$O(1/\log N)$ spectral matching and a matching Pell lower order.
+[TRACE-112](mathematics/displacement_density_trace_bound_20261021.md) supplies an
+independent logarithmic-time upper-bound route;
+[TRACE-113](mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
+uniform power-trace input with one threshold for all iterates.
+All statements have analytic project proofs with self-review, not external
+refereeing. Microscopic signed cancellation and BGS remain open.
+
 ## Final spectral research edition, 21 October 2026
 
 The [organized fourteen-round research edition](mathematics/spectral_research/README.md)
@@ -12,7 +24,7 @@ and BGS remain open. [Standalone remaining task](record/remaining_breakthrough_t
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (20 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The repository reconciliation of 20 October 2026 promoted no scientific result. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (22 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The repository reconciliation of 20 October 2026 promoted no scientific result. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 

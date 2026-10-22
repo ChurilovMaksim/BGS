@@ -26,7 +26,7 @@ Hamilton--Jacobi phase control the remainder at fixed coupling. Cross-sheet
 discrete aliases are included. This one-step result does not evaluate the
 Heisenberg-scale sum; its individual contribution there is divided by $N^2$.
 
-\subsection{Exact projections and qualified trace applications}
+\subsection{Exact projections and subsequent trace closure}
 For any unitary $U$ and Hermitian $A$, put
 $Q=\sum_\lambda P_\lambda AP_\lambda$, with full spectral projectors.
 Orthogonal projection on matrix Hilbert space gives
@@ -39,19 +39,15 @@ On two copies the projected generator is $\operatorname{ad}_Q$ and
 \|\operatorname{ad}_Q\|_{\mathrm{HS}}^2
 =2N\|Q\|_{\mathrm{HS}}^2-2(\operatorname{Tr}Q)^2.
 \]
-The inserted-trace asymptotic used for the numerical constant in TRACE-109
-retains the older exact plane-amplitude and odd-sector construction as a
-qualified input. No derivative of an uncontrolled trace remainder is used.
-
-Likewise, TRACE-110 proves exact distance lemmas but retains the uniform
-original-family trace bound $|\operatorname{Tr}U_N^m|\le Ca^m$,
-$a<\sqrt{3+2\sqrt2}$, as an explicitly conditional analytic input.
-Under that input the distance
-$\inf_{W,z}\|U_N-zWM_NW^*\|_{\mathrm{op}}$ is $O(1/\log N)$ and
-has a matching Pell lower bound with limiting constant
-$\pi\log(3+2\sqrt2)/4$. This is a spectral distance allowing arbitrary
-conjugation. It is distinct from the preceding single-kick distance without
-that conjugation, and does not determine microscopic spacings.
+The 21 October integration retained two analytic input qualifications:
+the original inserted-trace asymptotic for TRACE-109 and the uniform
+power-trace bound for TRACE-110. Both are closed in
+Section~\ref{sec:trace-closure-20261022}. The first now has a finite-grid
+proof with $O(N^{-1})$ error; no uncontrolled remainder is differentiated.
+The second has one dimension threshold for all positive iterates.
+Consequently the global spectral distance allowing arbitrary conjugation
+is $O(1/\log N)$, with matching lower order on Pell dimensions.
+This does not determine microscopic spacings.
 
 \subsection{The full weighted sum at the initial parameter}
 Let $\phi(\xi)=e^{-1/(1-\xi^2)}\mathbf1_{|\xi|<1}$,

@@ -5,6 +5,14 @@ complete thematic source corpus. New maintained notes: [coordinate return](../..
 [inserted trace](../../inserted_trace_coboundary_20261021.md), [spectral distance](../../spectral_orbit_distance_20261021.md),
 and [weighted Pell curvature](../../pell_weighted_curvature_20261021.md).
 
+The [22 October dependency review](../../../record/trace_closure_20261022.md)
+closes the inserted-trace and global spectral-distance inputs. The
+[finite-grid correction](../../finite_grid_one_step_trace_20261021.md),
+[classical displacement density](../../displacement_density_trace_bound_20261021.md)
+and [uniform power-trace theorem](../../fixed_kick_uniform_trace_bound_20261021.md)
+have separate proofs. Their logarithmic/global conclusions leave the
+microscopic signed plateau and higher factorial defects open.
+
 ## Reviewed 7 October phase checkpoint
 
 [Current claim card](../../phase_trace_checkpoint.md) and

@@ -14,8 +14,8 @@ Active source, documentation, manuscript, workflow, package/project identifiers,
 
 When two surfaces disagree, use the following order:
 
-1. `record/claim_ledger.md` — current claim status and evidentiary boundary;
-2. `record/claims.json` — stable machine-readable IDs/cross-links for core load-bearing claims and programme obligations; the complete status surface remains the ledger;
+1. `record/claims.json` — current registered status, stable IDs and links; its generated human-readable view is `record/claim_registry.md`;
+2. `record/claim_ledger.md` — dated narrative of status changes and evidentiary scope, consistent with the registry;
 3. maintained proof sources in `mathematics/`;
 4. explicit load-bearing external sources in `literature/`;
 5. formal statements in `formalization/`, within their stated trust boundary;

@@ -1,7 +1,7 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-21",
-  "status_authority": "record/claim_ledger.md",
+  "updated": "2026-10-22",
+  "status_authority": "record/claims.json",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
     "immutable_after_publication": true,
@@ -4914,38 +4914,45 @@
     {
       "id": "BGS-TRACE-109",
       "title": "Inserted trace, quantum commutant projection and two-copy coboundary obstruction",
-      "state": "conditional",
-      "ledger_status": "EXACT LEMMAS + CONDITIONAL ANALYTIC APPLICATION",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW; DEPENDENCY CLOSURE CHECKED 2026-10-22",
       "source": "mathematics/inserted_trace_coboundary_20261021.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261021/spectral-final/receipt.json"
+        "evidence/executions/20261022/trace-closure/receipt.json"
       ],
-      "verifiers": [],
+      "verifiers": [
+        "computations/verification/trace_closure_checks.py"
+      ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_final_20261021.tex"
+        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
       ],
-      "boundary": "Projection identities exact for arbitrary multiplicities; asymptotic constants conditional on older exact plane-amplitude and odd-sector trace construction, not fully independently closed here."
+      "boundary": "Original one-step inserted trace with O(N^-1) remainder now proved by a finite-grid corrected-amplitude parametrix; projection and two-copy constants follow for arbitrary multiplicities. No microscopic pair limit, external refereeing or formalization."
     },
     {
       "id": "BGS-TRACE-110",
       "title": "Spectral orbit distance and exact scalar-root comparison lemmas",
-      "state": "conditional",
-      "ledger_status": "EXACT LEMMAS + CONDITIONAL ANALYTIC APPLICATION",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW; DEPENDENCY CLOSURE CHECKED 2026-10-22",
       "source": "mathematics/spectral_orbit_distance_20261021.md",
-      "dependencies": [],
+      "dependencies": [
+        "BGS-TRACE-112",
+        "BGS-TRACE-113"
+      ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261021/spectral-final/receipt.json"
+        "evidence/executions/20261022/trace-closure/receipt.json"
       ],
-      "verifiers": [],
+      "verifiers": [
+        "computations/verification/trace_closure_checks.py"
+      ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_final_20261021.tex"
+        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
       ],
-      "boundary": "Application requires uniform original-family all-time trace bound (T), C a^m with a<sqrt(lambda), whose older analytic dependency closure is not independently certified in this integration; no microscopic spacing law."
+      "boundary": "All-odd-N O(1/log N) upper global spectral distance and matching Pell lower constant pi log(lambda)/4. Input (T) is now proved by TRACE-113; an independent pressure-free upper proof is TRACE-112. No microscopic spacing law."
     },
     {
       "id": "BGS-TRACE-111",
@@ -4966,7 +4973,51 @@
         "manuscript/unified_sections/spectral_final_20261021.tex"
       ],
       "boundary": "Original parameter curve at t=0 and shrinking times on odd Pell dimensions; all weighted times and cross terms included. S_N(tau), H_diag and BGS remain open."
+    },
+    {
+      "id": "BGS-TRACE-112",
+      "title": "Uniform classical displacement density and independent logarithmic global spectral comparison",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
+      "source": "mathematics/displacement_density_trace_bound_20261021.md",
+      "dependencies": [
+        "BGS-TRACE-106"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261022/trace-closure/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/trace_closure_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+      ],
+      "boundary": "Density discrepancy <= epsilon_R m theta^(m-1) <= 8e-53 for every positive classical iterate of the actual fixed map. Quantum normalized trace <= C exp(Km) N^(-1/5), useful on a short logarithmic window; global spectral matching O(1/log N), not a microscopic law."
+    },
+    {
+      "id": "BGS-TRACE-113",
+      "title": "Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
+      "source": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+      "dependencies": [],
+      "external_dependencies": [
+        "EXT-BR-1975"
+      ],
+      "evidence": [
+        "evidence/executions/20261022/trace-closure/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/trace_closure_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+      ],
+      "boundary": "Fixed tau=10^-80, one N0 for every m>=1 and every sufficiently large odd N: |Tr U_N^m|<=C a^m with 1<a<sqrt(lambda). Constants/pressure gap not numerically evaluated; bound is uninformative at m proportional to N; no signed hierarchy or BGS conclusion."
     }
   ],
-  "registry_scope": "Core load-bearing claims, theorem bridges, and open programme obligations. The claim ledger remains the complete status authority and may contain additional scoped results not assigned a stable core ID."
+  "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
 }

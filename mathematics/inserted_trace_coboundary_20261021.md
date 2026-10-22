@@ -1,9 +1,10 @@
 # Inserted trace and the exact obstruction to a quantum coboundary
 
-**Claim:** BGS-TRACE-109. **Status:** exact finite-dimensional projection
-identities proved below; numerical asymptotic constants conditional on the
-specified finite-time trace construction. The dependency closure of that
-older construction has not been independently certified in this integration.
+**Claim:** BGS-TRACE-109. **Status:** analytic proof with self-review.
+The continuation, self-reviewed on 22 October, closes the previously conditional one-step input
+by an independent [finite-grid proof](finite_grid_one_step_trace_20261021.md).
+It retains one transport correction and controls the complete trace error by
+$O(N^{-1})$, without the all-time sector or pressure construction.
 
 ## Protected points and inserted trace
 
@@ -59,9 +60,10 @@ c_*:=1.1\mathsf B-.9|\mathsf A|
 \ge1.1+\frac{135273}{20}v>1.1.                    \tag{3}
 $$
 
-The current conditional status applies to (1)--(3), including the associated
-one-step common-phase versus coordinate-phase gap. Exact source preservation
-and finite monodromy checks do not discharge the older analytic input.
+Equations (1)--(3), including the one-step common-phase versus coordinate-phase
+gap, are now proved directly by the finite-grid argument. The older sector
+derivation remains a separately preserved proof route. Finite checks alone
+are not the reason for this status change.
 
 ## Exact projection identity, with arbitrary multiplicities
 
@@ -86,7 +88,7 @@ $$
 The last inequality is Hilbert--Schmidt Cauchy--Schwarz and $\|U\|_{\rm HS}=\sqrt N$.
 For the present model $\operatorname{Tr}A_N=0$ for $N>18$; subtracting
 any scalar cannot reduce the trace-free projection norm in (4).
-Under (2),
+Using (2),
 
 $$
 \liminf N\inf_B
@@ -111,7 +113,7 @@ $$
 $$
 
 Indeed in a $Q$ eigenbasis the superoperator eigenvalues are $q_a-q_b$;
-summing their squares proves (6). Thus (3) conditionally gives
+summing their squares proves (6). Thus (3) gives
 
 $$
 \liminf\inf_{\mathcal B}

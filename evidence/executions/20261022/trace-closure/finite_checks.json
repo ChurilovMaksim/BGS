@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "arithmetic": "exact rational and complex-rational Fourier algebra",
+  "stationary_classes": [
+    {
+      "q": "0",
+      "sheet": 0,
+      "alias": 0,
+      "p_mod1": "0",
+      "phase_mod1": "0",
+      "a": "9/10",
+      "a_qq_over_pi2": "-19606/125"
+    },
+    {
+      "q": "0",
+      "sheet": 2,
+      "alias": -1,
+      "p_mod1": "1/2",
+      "phase_mod1": "1/2",
+      "a": "9/10",
+      "a_qq_over_pi2": "-19594/125"
+    },
+    {
+      "q": "1/2",
+      "sheet": 1,
+      "alias": -1,
+      "p_mod1": "0",
+      "phase_mod1": "3/4",
+      "a": "-11/10",
+      "a_qq_over_pi2": "24306/125"
+    },
+    {
+      "q": "1/2",
+      "sheet": 3,
+      "alias": -2,
+      "p_mod1": "1/2",
+      "phase_mod1": "3/4",
+      "a": "-11/10",
+      "a_qq_over_pi2": "24894/125"
+    }
+  ],
+  "canonical_Hessian_cases": 49,
+  "odd_dimensions": 49,
+  "exact_Gauss_matrix_entries": 2737,
+  "matrix_error": "HS O(N^-3/2), trace O(N^-1)",
+  "displacement_uniform_coarse_bound": "8e-53 (analytic trace-norm input is not certified by this check)",
+  "asymptotic_theorem_established_by_finite_checks": false
+}

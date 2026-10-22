@@ -1,12 +1,24 @@
 # BGS research brief
 
+## Trace results and dependency closure, 22 October 2026
+
+The [review](record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+finite-grid corrected-amplitude proof. TRACE-110 now has proved global
+$O(1/\log N)$ spectral matching and a matching Pell lower order.
+[TRACE-112](mathematics/displacement_density_trace_bound_20261021.md) supplies an
+independent logarithmic-time upper-bound route;
+[TRACE-113](mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
+uniform power-trace input with one threshold for all iterates.
+All statements have analytic project proofs with self-review, not external
+refereeing. Microscopic signed cancellation and BGS remain open.
+
 ## Final spectral corpus, 21 October 2026
 
 The [thematic research edition](mathematics/spectral_research/README.md)
 preserves all 535 source units of the final supplied master. TRACE-108 gives
 the quartic one-step coordinate return; TRACE-111 gives the full weighted
-initial gradient/Hessian and forced early inflection. TRACE-109/110 retain
-explicit older analytic input qualifications. [Complete review](record/spectral_final_integration_20261021.md)
+initial gradient/Hessian and forced early inflection. The qualifications for TRACE-109/110 were closed on 22 October,
+as documented above. [Complete review](record/spectral_final_integration_20261021.md)
 and [independent remaining task](record/remaining_breakthrough_task_20261021.md).
 BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 

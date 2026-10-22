@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.
 
-**195 registered nodes; 238 direct prerequisite edges.**
+**197 registered nodes; 241 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -203,9 +203,11 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-103](../mathematics/phase_quartic_cluster_sum_20261019.md) | verification-pending | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
 | [BGS-TRACE-104](../mathematics/phase_cayley_cauchy_transfer_20261019.md) | verification-pending | None registered | None registered | 0 |
 | [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | verification-pending | None registered | None registered | 0 |
-| [BGS-TRACE-106](../mathematics/physical_kick_trace_decay.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-106](../mathematics/physical_kick_trace_decay.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-107](../mathematics/physical_trace_polynomial_approximation.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-108](../mathematics/coordinate_return_quartic_20261021.md) | proved | None registered | None registered | 0 |
-| [BGS-TRACE-109](../mathematics/inserted_trace_coboundary_20261021.md) | conditional | None registered | None registered | 0 |
-| [BGS-TRACE-110](../mathematics/spectral_orbit_distance_20261021.md) | conditional | None registered | None registered | 0 |
+| [BGS-TRACE-109](../mathematics/inserted_trace_coboundary_20261021.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-110](../mathematics/spectral_orbit_distance_20261021.md) | proved | `BGS-TRACE-112`, `BGS-TRACE-113` | None registered | 0 |
 | [BGS-TRACE-111](../mathematics/pell_weighted_curvature_20261021.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-112](../mathematics/displacement_density_trace_bound_20261021.md) | proved | `BGS-TRACE-106` | None registered | 1 |
+| [BGS-TRACE-113](../mathematics/fixed_kick_uniform_trace_bound_20261021.md) | proved | None registered | `EXT-BR-1975` | 1 |

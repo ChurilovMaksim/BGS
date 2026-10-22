@@ -20,7 +20,7 @@ def render() -> str:
         "# Stable claim registry",
         "",
         "This file is generated from `record/claims.json`. It is a navigation",
-        "surface, not an independent status authority; `claim_ledger.md` wins.",
+        "surface of the current registry authority; see `../SOURCE_OF_TRUTH.md`.",
         "",
         data["registry_scope"],
         "",
