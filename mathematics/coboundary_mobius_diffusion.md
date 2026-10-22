@@ -164,7 +164,7 @@ $\varepsilon^2D_J\widetilde f$ vanishes identically. FLOW-008 gives
 
 $$
 \mathbb E[\widetilde f(U_{n+1})-\widetilde f(U_n)\mid U_n]
-=h\{\overline Lf(\Pi U_n)+O_{N,f}(|m_1(U_n)|)}
+=h\{\overline Lf(\Pi U_n)+O_{N,f}(|m_1(U_n)|)\}
  +O_{N,f}(\varepsilon^6). \tag{8}
 $$
 

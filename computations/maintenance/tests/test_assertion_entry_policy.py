@@ -35,6 +35,19 @@ def run(script, mode, directory, *, imported=False, args=()):
 
 
 class AssertionEntryPolicyTests(unittest.TestCase):
+    def test_preserved_spectral_inputs_are_not_maintained_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            historical = root/'computations/reference/spectral_research'
+            historical.mkdir(parents=True)
+            (historical/'source.py').write_text('assert False\n')
+            # Other reference code retains the usual guard requirement.
+            maintained = root/'computations/reference/other'
+            maintained.mkdir()
+            (maintained/'helper.py').write_text('assert False\n')
+            self.assertEqual(policy.violations(root),
+                             ['computations/reference/other/helper.py'])
+
     def test_static_coverage_and_guard_removal_mutations(self):
         self.assertEqual(policy.violations(ROOT), [])
         for path, tree in policy.protected_entries(ROOT):

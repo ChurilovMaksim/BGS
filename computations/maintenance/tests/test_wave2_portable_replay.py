@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'computations/verification'))
@@ -90,13 +91,29 @@ class PortableSchurNorms(unittest.TestCase):
             self.compare()
 
     def test_source_bytes_and_comparison_scope(self):
-        self.assertGreater(len(v1.source_bytes()),50)
+        self.assertGreater(len(v2.sealed_source_bytes()),50)
+        with v2.sealed_input_scope():
+            self.assertIs(v1.source_bytes,v2.sealed_source_bytes)
+        self.assertIs(v1.source_bytes,v2.ORIGINAL_SOURCE_BYTES)
         with v2.portable_comparison_scope():
             self.assertIs(v1.compare_numeric_diagnostics,v2.portable_numeric_compare)
             with self.assertRaisesRegex(RuntimeError,'already overridden'):
                 with v2.portable_comparison_scope():
                     pass
         self.assertIs(v1.compare_numeric_diagnostics,v2.ORIGINAL_NUMERIC_COMPARE)
+
+    def test_historical_resolution_cannot_redirect_or_refresh_a_seal(self):
+        bindings=json.loads((ROOT/v1.BINDINGS).read_text())
+        changed=copy.deepcopy(bindings)
+        changed['historical_resolutions']['AGENTS.md']='AGENTS.md'
+        with patch.object(v1,'strict_json',return_value=changed):
+            with self.assertRaisesRegex(RuntimeError,'unreviewed historical input resolution'):
+                v2.sealed_source_bytes()
+        changed=copy.deepcopy(bindings)
+        changed['files']['AGENTS.md']='0'*64
+        with patch.object(v1,'strict_json',return_value=changed):
+            with self.assertRaisesRegex(RuntimeError,'changed source: AGENTS.md'):
+                v2.sealed_source_bytes()
 
     def test_exact_symplectic_fourier_row_orthogonality_counts(self):
         # No floating point or Schur decomposition: the reverse-kernel

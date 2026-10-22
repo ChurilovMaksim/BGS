@@ -1,5 +1,7 @@
 # Entire temporal gauges and a regularity obstruction
 
+**Stable claim IDs:** BGS-RES-018.
+
 Status: self-contained project proof. All-pass filters and functional calculus are prior concepts; priority for their application to the complete resonance hierarchy is not established. The preserved data below are zero-frequency cohomological classes, not all dynamical-frequency cross spectra.
 
 ## 1. A classified group of smooth unitary filters

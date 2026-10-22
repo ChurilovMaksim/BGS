@@ -1,0 +1,793 @@
+{
+  "source_files_sha256": {
+    "computations/maintenance/assertion_policy.py": "c95f481b2d14d5ce3194c57b93e7ab3fe323390031c372a39ba73c84f1743400",
+    "computations/maintenance/render_research_views.py": "58c2e6717ed4954eec6d16ab470e889345fd5bf98fc9fb5f7e808b09eeda441f",
+    "computations/maintenance/tests/test_assertion_entry_policy.py": "0de3fa22cee82371090c21ab82778fabfa2b515b07f1719832c6dddf6adef990",
+    "computations/maintenance/tests/test_external_epoch_preservation.py": "4dfca6a8fcc3540e98cf5b5066c226890d7b17d189a98c45bc1c1971d4827041",
+    "computations/maintenance/tests/test_registry_nodes.py": "81507011677dab376323b3f8291879a048c4e34b136b43582ebf36b229065d71",
+    "computations/maintenance/tests/test_wave2_portable_replay.py": "3e463f99338a4a16be4638b0379015bfd737c093acedc0cb9c78b130e918c164",
+    "computations/maintenance/tests/test_wave2_replay_protocol.py": "0ed11efb73878a132041c209c38035b7df3424f3e481a483495b097f5f139bc1",
+    "computations/verification/resonance_nondegeneracy_margin.py": "29d0409773bffa71d9891d621512af0c535e022eef63543ea762dbb38cfe6684",
+    "computations/verification/scientific_registry_audit.py": "9566eb27834bf5601b0180d34913ef6fdfa5f6fe1c5d414a48c89f0206e74469",
+    "computations/verification/wave2_integration_audit.py": "971deb9adf0443b65c582c6a1a9cd3a11f9b1873220124cc7f0d6a828d2a1236",
+    "computations/verification/wave2_portable_replay.py": "e6c14f8552211aaa3dbdf941f49529f63de07443403c8ac6b4511979e1cfe979",
+    "literature/external_dependencies.json": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200",
+    "manuscript/BGS_unified.tex": "658842e9d7396704ef45f5a261622de4ea681d38b82f3c466b7a8d105a1379c0",
+    "manuscript/audit_and_frontier.tex": "0b94e178fd5335464e6be316542ae72d5aaf7785f959387e25ff0648f7ba7950",
+    "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+    "manuscript/final_delivery_note.tex": "66382ac361f36d64c11b9903fb730652a9034b735e0704e0d3dfc1e558a13f03",
+    "manuscript/finite_orbit_note.tex": "52a7a709e13bfc16f22c14931f1eeb99910b909abe8e7a83660a9cd8728e7879",
+    "manuscript/front_matter.tex": "4c615f7bd4f6c70f823661f56d6fa007dec92fae74a33dc318edd3271d86690f",
+    "manuscript/general_spectra.tex": "78068816331088ffe207018925b5ae253ba76a58044248987a3711a65b092e60",
+    "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+    "manuscript/unified_bibliography.tex": "e3b2c42d98fa036254ceb6485af1113008d4e1c04d440790291696ff8860d60f",
+    "manuscript/unified_sections/abel_gaussian_20261016.tex": "1f5cc5bd58126fcbfcc7642deb79232c65d4c48047a29e9f4185efb6fdaa7585",
+    "manuscript/unified_sections/actual_path_theorems.tex": "c2284c393fb181c95eb705bf4da648f9e9cae7dfde0f69009b291a578498d224",
+    "manuscript/unified_sections/actual_seven_primary_commutant.tex": "460d03f87b024e11ed9634b0846a3a107afb34e694a8116da160dd4d51a53592",
+    "manuscript/unified_sections/analytic.tex": "190e50eddfd60cd57b2e56d6a98d71468c164d389d596b3036b72a1ff37cefd8",
+    "manuscript/unified_sections/analytic_resonance_rigidity.tex": "86e31676045b996ce333bc8f556c29e1276c0dbde5f59bc493d5676879a3bac4",
+    "manuscript/unified_sections/arithmetic_core_part1.tex": "3d1fe9142dee0f33a61be559b245795d60ec2c123313a21dbf0c57c883fdf858",
+    "manuscript/unified_sections/arithmetic_core_part2.tex": "d9df1e1b148c7d41de812682dbdce43ac61df6dd5079e3b6d6e6dd834839033a",
+    "manuscript/unified_sections/arithmetic_core_part3.tex": "3b4da4207e6038408da221425551826e5d669288da0668fec0c5d222a7561f07",
+    "manuscript/unified_sections/arithmetic_core_part4.tex": "85cee640ac5afb6ee14cb7fffd798f176ae06d16c99b24ccf8ddd502a66f2ef2",
+    "manuscript/unified_sections/arithmetic_core_part5.tex": "943e1cb8c59380620f44ebb2b338d880f96b4aaab324f7a9ef3454afdc3bf285",
+    "manuscript/unified_sections/arithmetic_translation_exclusion.tex": "a1d6dabc20e262b3494750d31f890a635b62afb446c5efbc85bd6ff479f1d6b6",
+    "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+    "manuscript/unified_sections/cayley_curve_uniform.tex": "55fd7c2c0233a7b76c01fbbc6577de515d4a22c834cf76406713ac93d1721d20",
+    "manuscript/unified_sections/cayley_scaling.tex": "23ab9391a703ecf697a2e9fb384d78b4dcd01fd6eeabf8b6d101a6f66f9f3d5d",
+    "manuscript/unified_sections/cayley_trace_gaussian.tex": "ca666a49581b22b8265505fc09e954c7a56c6ba3dbb7cf95e18d7bf5b64e3030",
+    "manuscript/unified_sections/chat_integration_20261016.tex": "c696b41e69bfa612893d34d71961a6215a82047caa332374743d12da01b92b93",
+    "manuscript/unified_sections/chat_research_20261011.tex": "033c4b7b318d26e91998fd7d137b2afd0b0a8825c6dc9c68c75328df82c8f207",
+    "manuscript/unified_sections/checked_phase_trace_checkpoint.tex": "1b368e8185b2018ead66f1da3f4d8b7cd2f7fbbb160bac5ac75e78bef911415c",
+    "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex": "ec865211c799464e60b817f18552395c973bb86fe700247f152cef60156a6f32",
+    "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+    "manuscript/unified_sections/coboundary_part1.tex": "d01af06b66f52996892f2d0412935c16b71a5d4c6e37d8b1073bd05b51ffd38b",
+    "manuscript/unified_sections/coboundary_part2.tex": "d1deb75e39da787bd2b5098ef3bd4f8de5b7d44afc6c83070d88f5b810779544",
+    "manuscript/unified_sections/coboundary_part3.tex": "482114f31ae8a46eafcf31ae006f8292598b7acb44b56b671a51dbd6ed4cb923",
+    "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+    "manuscript/unified_sections/collective_occupation_hierarchy.tex": "56a4987acd7b892da32526ec2226500a6ebf5017ceeb58cb1cbfcc2e16c1c7c2",
+    "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+    "manuscript/unified_sections/exact_homoclinic_potential.tex": "6ed224c026621ecad2cd3296f90763a5309d1fc2e660b7aa6804fc4bb37685db",
+    "manuscript/unified_sections/factorial_ordered_diagonal.tex": "c6558de74584d98940b82e5296400f58ef417f5c991ed46b82c608069ad45991",
+    "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+    "manuscript/unified_sections/finite_orbit_resonance.tex": "d964499ffb3cd53962b307afe6537367f8da001f40f0ffa0523c6a5449950226",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "ede6008d71344cfcf1b12793207d8ed81e1dec6ff02dbfa2b05870564ad3ad04",
+    "manuscript/unified_sections/floquet_part1.tex": "45a041fb919d9ad3e13de2c39fb2b09871003fa6c14a49dbff8a980fb820ceb1",
+    "manuscript/unified_sections/floquet_part2.tex": "0f58e78312bfb14c5d58a009366c83d8e04c9d82908b0568509857f2cfcf5587",
+    "manuscript/unified_sections/floquet_part3.tex": "cbd4c2d393c0908e6b835408310d169e54c8c3a5ae713fb1da797e96f2664820",
+    "manuscript/unified_sections/floquet_part4.tex": "f2b7859935c17bc8da0032d322b67895195f8a9146b2ae7320ecdbc41c2d88ec",
+    "manuscript/unified_sections/four_block_unmarking.tex": "1d606609b2ffbcfdfb9cba50944b90b89a043d65bb0ae3bba244c4d82f2f08f9",
+    "manuscript/unified_sections/four_cut_rank_two_kernel.tex": "9b2c1b88e929e56c818530c6f1980297504896c51820804131af658bdecb291c",
+    "manuscript/unified_sections/four_mode.tex": "aba02e34d17d0df6ff5da571c8592699a860375c4681ef666dfe3726dd307ea3",
+    "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+    "manuscript/unified_sections/global_rotated_box_trace.tex": "ee7f959cec15cd7b6c9a2b982178429d862e08aefdf06676c0f150a7a16af3b2",
+    "manuscript/unified_sections/hamming_low_switch_residual.tex": "5ad7fde78dceb8b5743923f4a9db10dc8e8d922c9db148b05152e417de78517f",
+    "manuscript/unified_sections/heisenberg_wkb_reductions.tex": "1b18997878628bd6e2d6af19be607603d9a44859bff86812c4def8493ece4338",
+    "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+    "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+    "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+    "manuscript/unified_sections/intermediate_old_layers.tex": "41d76ec9341ecfea5c1c1b7cbacb1537a434facff49838e9f8543a572f84a006",
+    "manuscript/unified_sections/isospectral_clock_control.tex": "823bb9c1e62d200cb0f233bc7d4e37864173e26306d9546a6d54e8a92f3e9ddb",
+    "manuscript/unified_sections/literal_time_multiplicity_bounds.tex": "cc921d9cff1d7f9da46f6af06c66564e6f0d507e68b1af7dc4ad17b644222f65",
+    "manuscript/unified_sections/locality_part1.tex": "4fa3f9c327af9617397c5fa98776d7a07daa42fa2d2e54d17677505edef01c0d",
+    "manuscript/unified_sections/locality_part2.tex": "dcae47f13d6cf3c93f464eb9e150505ff088cc771138c180a21f819ea6cd2d3f",
+    "manuscript/unified_sections/locality_part3.tex": "3980aca87bff9a2635f88795b225fdaf9ca465cb4526da589a632786285f4b72",
+    "manuscript/unified_sections/locality_part4.tex": "12eb40ee83198d7d2f801de174082f246b63e6bb0fe9768aba610f8a8a868cb6",
+    "manuscript/unified_sections/locality_part5.tex": "69850dc9c78d44801142533626ddf9e859f36c09c5f556b2e7f829558519af13",
+    "manuscript/unified_sections/locality_part6.tex": "ac6cb02cdaa9275fb18b2257f2bfc1918562a51f9d6b93a159cd7deb32539d47",
+    "manuscript/unified_sections/locality_part7.tex": "95d6927d7593ccb8f8a0b3188ba89a5354d45515567b1eddd35053fa182b67b0",
+    "manuscript/unified_sections/magnetic.tex": "f823b078e9c85108645e9876184719ca14b5d19234fc7620ef586106d1133fcb",
+    "manuscript/unified_sections/mixed.tex": "8069ab82eaa31ae49bfb1b3fc7dcf05fc3c31831cf7973a443f9290f9c73c454",
+    "manuscript/unified_sections/nondegeneracy_part1.tex": "0acf4ad454b8aa4d05ad67ea2a27c8fe3646978da0a40e5d566bd3c00e5b300e",
+    "manuscript/unified_sections/nondegeneracy_part2.tex": "e2bb4609697e4c3c6e23fc8a77461dbc68da93e62fba75f5849736f682852593",
+    "manuscript/unified_sections/nondegeneracy_part3.tex": "a8ad1d11a722fab9e5ce5c52dc02c92ccf8e5ebbb4b07dd00b427d8d881d4f41",
+    "manuscript/unified_sections/nondegeneracy_part4.tex": "335c01b9eb00eccb41fe0b07b8a07d21e0be34dde0c28032b8fa8595143b7419",
+    "manuscript/unified_sections/nondegeneracy_part5.tex": "dfd4fb68bb61e37deae065b0d6e0334dad313135633c716a803334fe0dc6df9f",
+    "manuscript/unified_sections/nondegeneracy_part6.tex": "1b2b5bc55141a07ed5d2d0ae44f521073adf2ec7df92a6b4891dabedbe1427a4",
+    "manuscript/unified_sections/nondegeneracy_part7.tex": "93bb3717182d10ef7dc39fbfc44c67d9b05d1b56e2fe1ece275f4e789e5f3c63",
+    "manuscript/unified_sections/nondegeneracy_part8.tex": "bd790f707de9fadb2404d1dccbcc7cd3000ec46d3648b06e3469474362506cbe",
+    "manuscript/unified_sections/ordered_diagonal_companion.tex": "4604b033b752b6cb1f0961710fe91782da5dc6519a3e7e7022b940958bef7307",
+    "manuscript/unified_sections/paired_phase_reductions.tex": "0a8d8bbdd7f13c9ab51fcc03b61546da0cefb1aed3c3b52c227281e00e543d24",
+    "manuscript/unified_sections/pell_blocks.tex": "548a34f48c333be1bed4e14736bef132640e1c50d0c3591d596a91df2ba1c757",
+    "manuscript/unified_sections/pell_harmonic_returns.tex": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec",
+    "manuscript/unified_sections/pell_harmonic_transition.tex": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab",
+    "manuscript/unified_sections/phase_channel_jet_20261008.tex": "d12a9c918f8823880b38a1b3988a3198654ef6f2c4560202afa4a4ac51e1ef2c",
+    "manuscript/unified_sections/phase_cluster_continuation_20261019.tex": "98b6035405e8e6bb2cf3e011f765ce197bca40a984e4b3bb437e9381c14442cb",
+    "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+    "manuscript/unified_sections/physical_kick_20261021.tex": "063461495e9ebb27d3682306cf0e3eba95f19860ea449eca3c5c639b69584cdd",
+    "manuscript/unified_sections/polynomial_multisphere.tex": "c4b1ba17f26de8061285759a99928a2885c013cb8daf02ae5cb023b51e9db6ce",
+    "manuscript/unified_sections/ramified_higher_extension.tex": "3ae4581a503b7c3a0d3a0502fe63dcce1add40d4bda6cb8b7def838d38c248ff",
+    "manuscript/unified_sections/research_20260921.tex": "24a9dbe3d84ee8de02a595ef988947108d69b7b6cf932efd6dd88c66e544ac43",
+    "manuscript/unified_sections/return_gas.tex": "d5dc5bf32fe9ba63b8d4e3fc9bfa86c39e21735f0920da3216982728e2c82722",
+    "manuscript/unified_sections/return_general.tex": "6a055d7af031591ef0e47ea261f27eeee1b102025efaa7153622781e091571d3",
+    "manuscript/unified_sections/return_obstruction.tex": "a0b837a2a9d40f7740c7ef61a587a350720f1cdd71bb46e709775298db7dedba",
+    "manuscript/unified_sections/return_periodic.tex": "bc36c206f2ef066a54c19bfeeee2de878d1982cd9097130c35a787ab07322ea6",
+    "manuscript/unified_sections/return_phase.tex": "ed0af9bd53003a3d0d734ccaef0a3d559f4830f366db658bb369b186b9dcfa70",
+    "manuscript/unified_sections/return_position.tex": "d0b26f8eea23444fb62f2b955f402d208c71afe9b9ed7877e96b48a4acf09a01",
+    "manuscript/unified_sections/return_words.tex": "9e31df96df5fcc9a6dc2fe3bf899fdeadc113b97a4cda05f70dbef77e798289c",
+    "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+    "manuscript/unified_sections/row_frontier.tex": "962432741f78dc87733e310982dc30bfda21d18a6973118263baaa83854fd43f",
+    "manuscript/unified_sections/selected_weighted_coefficient.tex": "7889ad2218049ecdd1300f9a459bf2ea521051046a3132711b89a4e74b1a027a",
+    "manuscript/unified_sections/sharp.tex": "06f53aaa9e3cdf7a37392563f8f4e7e0d9b3d6e292d5b152635c8b6ef48910af",
+    "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+    "manuscript/unified_sections/smooth.tex": "91254920ba583cd2a99301cf53848ba6a95337cae8f6f39ddd5f58ab73ed08a9",
+    "manuscript/unified_sections/smooth_residual.tex": "5ac2d80d4489ad708594feed8dbbc3657158069c3e4f8435e7b851ce36555b5d",
+    "manuscript/unified_sections/spectral_extensions.tex": "c795a7e0b4e01049d1e378cc1256e5e515b8334ff9ced5e99279d52408e9395a",
+    "manuscript/unified_sections/spectral_final_20261021.tex": "6a9eb0296898c1ef608333afe5ea1dd511ab42f16db46fd430b22807da5a6b3a",
+    "manuscript/unified_sections/spectral_modules.tex": "b8c6591fbc7fcd89ad7cebb9225f57944d76b5931678ec53f087148df2234bf0",
+    "manuscript/unified_sections/spectral_resolution.tex": "3df9506206908d99b87dcbba0eefddded8c340ba42910cd865c01893ed7f0439",
+    "manuscript/unified_sections/spectral_trace_closure_20261022.tex": "06c4e8b3b46cd241f573c4f101d663ecf47f288a2576515bb5c3fc610c24e977",
+    "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+    "manuscript/unified_sections/three_block_unmarking.tex": "99e6870995ffc80aaaad29252f4bdd357f24c55ab07fd35a7b83765b2f8f278e",
+    "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+    "manuscript/unified_sections/wiener_riesz.tex": "5a3b388fd0f784a59f6460b6110eb1c0c6031a94ee65ae9dc88d59ee98521790",
+    "manuscript/weighted_and_edgeworth.tex": "cee4c9e57d90979ccec68e8a2994b808d013c4bec4762c47b3f320cd9f27217d",
+    "mathematics/analytic_kick_return_gas.md": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5",
+    "mathematics/cayley_product_row_real_trace_ideal.md": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82",
+    "mathematics/cayley_trace_gaussian_limit.md": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3",
+    "mathematics/coboundary_mobius_diffusion.md": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a",
+    "mathematics/displacement_density_trace_bound_20261021.md": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22",
+    "mathematics/finite_grid_one_step_trace_20261021.md": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252",
+    "mathematics/fixed_harmonic_return_gas.md": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6",
+    "mathematics/fixed_kick_uniform_trace_bound_20261021.md": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362",
+    "mathematics/heisenberg_pair_heat_formula.md": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9",
+    "mathematics/spectral_orbit_distance_20261021.md": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f",
+    "record/claim_integration_epochs.json": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc",
+    "record/claims.json": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a",
+    "record/errata.json": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+  },
+  "contract_sha256": null,
+  "schema_version": 1,
+  "manuscript_sha256": "658842e9d7396704ef45f5a261622de4ea681d38b82f3c466b7a8d105a1379c0",
+  "coverage": [
+    {
+      "pass_id": "self-correctness",
+      "lanes": [
+        "correctness"
+      ],
+      "scope": "Correctness of latest trace closure and the five arithmetic theorem-to-proof mappings; return-source mathematical details restored from existing TeX.",
+      "unit_ids": [],
+      "context": [
+        {
+          "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+          "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+        },
+        {
+          "path": "mathematics/displacement_density_trace_bound_20261021.md",
+          "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+        },
+        {
+          "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+          "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+        },
+        {
+          "path": "mathematics/spectral_orbit_distance_20261021.md",
+          "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+        },
+        {
+          "path": "mathematics/cayley_trace_gaussian_limit.md",
+          "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+        },
+        {
+          "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+          "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+        },
+        {
+          "path": "mathematics/fixed_harmonic_return_gas.md",
+          "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+        },
+        {
+          "path": "mathematics/analytic_kick_return_gas.md",
+          "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+        },
+        {
+          "path": "mathematics/coboundary_mobius_diffusion.md",
+          "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+        },
+        {
+          "path": "mathematics/heisenberg_pair_heat_formula.md",
+          "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+        },
+        {
+          "path": "record/claims.json",
+          "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+        },
+        {
+          "path": "literature/external_dependencies.json",
+          "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+        },
+        {
+          "path": "record/errata.json",
+          "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+        },
+        {
+          "path": "record/claim_integration_epochs.json",
+          "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+        }
+      ],
+      "executor": "coordinator",
+      "method": "self-review",
+      "status": "partial",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      },
+      "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+    },
+    {
+      "pass_id": "self-adversarial",
+      "lanes": [
+        "adversarial"
+      ],
+      "scope": "Deck aliases, repeated eigenvalues, unbounded anisotropic weights, uniform-in-iterate threshold, pressure gap, degree drop and prime endpoint error; software mutations.",
+      "unit_ids": [],
+      "context": [
+        {
+          "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+          "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+        },
+        {
+          "path": "mathematics/displacement_density_trace_bound_20261021.md",
+          "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+        },
+        {
+          "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+          "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+        },
+        {
+          "path": "mathematics/spectral_orbit_distance_20261021.md",
+          "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+        },
+        {
+          "path": "mathematics/cayley_trace_gaussian_limit.md",
+          "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+        },
+        {
+          "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+          "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+        },
+        {
+          "path": "mathematics/fixed_harmonic_return_gas.md",
+          "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+        },
+        {
+          "path": "mathematics/analytic_kick_return_gas.md",
+          "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+        },
+        {
+          "path": "mathematics/coboundary_mobius_diffusion.md",
+          "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+        },
+        {
+          "path": "mathematics/heisenberg_pair_heat_formula.md",
+          "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+        },
+        {
+          "path": "record/claims.json",
+          "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+        },
+        {
+          "path": "literature/external_dependencies.json",
+          "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+        },
+        {
+          "path": "record/errata.json",
+          "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+        },
+        {
+          "path": "record/claim_integration_epochs.json",
+          "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+        }
+      ],
+      "executor": "coordinator",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      },
+      "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+    },
+    {
+      "pass_id": "self-exposition",
+      "lanes": [
+        "exposition"
+      ],
+      "scope": "Current English/Russian navigation, authority hierarchy, generated views, exact review scope, current manuscript front matter.",
+      "unit_ids": [],
+      "context": [
+        {
+          "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+          "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+        },
+        {
+          "path": "mathematics/displacement_density_trace_bound_20261021.md",
+          "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+        },
+        {
+          "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+          "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+        },
+        {
+          "path": "mathematics/spectral_orbit_distance_20261021.md",
+          "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+        },
+        {
+          "path": "mathematics/cayley_trace_gaussian_limit.md",
+          "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+        },
+        {
+          "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+          "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+        },
+        {
+          "path": "mathematics/fixed_harmonic_return_gas.md",
+          "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+        },
+        {
+          "path": "mathematics/analytic_kick_return_gas.md",
+          "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+        },
+        {
+          "path": "mathematics/coboundary_mobius_diffusion.md",
+          "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+        },
+        {
+          "path": "mathematics/heisenberg_pair_heat_formula.md",
+          "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+        },
+        {
+          "path": "record/claims.json",
+          "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+        },
+        {
+          "path": "literature/external_dependencies.json",
+          "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+        },
+        {
+          "path": "record/errata.json",
+          "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+        },
+        {
+          "path": "record/claim_integration_epochs.json",
+          "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+        }
+      ],
+      "executor": "coordinator",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      },
+      "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+    },
+    {
+      "pass_id": "self-notation",
+      "lanes": [
+        "notation"
+      ],
+      "scope": "Literal fixed coupling, time/normalization boundaries, Gaussian density formula, two Markdown display defects; local KaTeX parsing and manuscript sample pages.",
+      "unit_ids": [],
+      "context": [
+        {
+          "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+          "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+        },
+        {
+          "path": "mathematics/displacement_density_trace_bound_20261021.md",
+          "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+        },
+        {
+          "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+          "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+        },
+        {
+          "path": "mathematics/spectral_orbit_distance_20261021.md",
+          "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+        },
+        {
+          "path": "mathematics/cayley_trace_gaussian_limit.md",
+          "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+        },
+        {
+          "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+          "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+        },
+        {
+          "path": "mathematics/fixed_harmonic_return_gas.md",
+          "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+        },
+        {
+          "path": "mathematics/analytic_kick_return_gas.md",
+          "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+        },
+        {
+          "path": "mathematics/coboundary_mobius_diffusion.md",
+          "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+        },
+        {
+          "path": "mathematics/heisenberg_pair_heat_formula.md",
+          "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+        },
+        {
+          "path": "record/claims.json",
+          "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+        },
+        {
+          "path": "literature/external_dependencies.json",
+          "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+        },
+        {
+          "path": "record/errata.json",
+          "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+        },
+        {
+          "path": "record/claim_integration_epochs.json",
+          "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+        }
+      ],
+      "executor": "coordinator",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      },
+      "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+    },
+    {
+      "pass_id": "self-claims",
+      "lanes": [
+        "claims"
+      ],
+      "scope": "All 197 registry states and metadata paths; selected proof hypotheses and dependencies. Historical unregistered proof corpus is not freshly certified.",
+      "unit_ids": [],
+      "context": [
+        {
+          "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+          "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+        },
+        {
+          "path": "mathematics/displacement_density_trace_bound_20261021.md",
+          "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+        },
+        {
+          "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+          "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+        },
+        {
+          "path": "mathematics/spectral_orbit_distance_20261021.md",
+          "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+        },
+        {
+          "path": "mathematics/cayley_trace_gaussian_limit.md",
+          "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+        },
+        {
+          "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+          "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+        },
+        {
+          "path": "mathematics/fixed_harmonic_return_gas.md",
+          "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+        },
+        {
+          "path": "mathematics/analytic_kick_return_gas.md",
+          "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+        },
+        {
+          "path": "mathematics/coboundary_mobius_diffusion.md",
+          "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+        },
+        {
+          "path": "mathematics/heisenberg_pair_heat_formula.md",
+          "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+        },
+        {
+          "path": "record/claims.json",
+          "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+        },
+        {
+          "path": "literature/external_dependencies.json",
+          "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+        },
+        {
+          "path": "record/errata.json",
+          "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+        },
+        {
+          "path": "record/claim_integration_epochs.json",
+          "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+        }
+      ],
+      "executor": "coordinator",
+      "method": "self-review",
+      "status": "partial",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      },
+      "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+    }
+  ],
+  "issues": [
+    {
+      "id": "R1",
+      "reviewer": "self-claims",
+      "title": "Load-bearing classical inputs were present in the proofs but absent from the typed registry",
+      "lane": "claims",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "gap",
+      "location": {
+        "path_or_scope": "record/claims.json, CAYLEY-006/007 at baseline",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "\"external_dependencies\": []",
+      "analysis": "Load-bearing classical inputs were present in the proofs but absent from the typed registry.",
+      "suggested_fix": "Five exact locators and hypothesis translations registered; source observations retain acquisition limits.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R2",
+      "reviewer": "self-correctness",
+      "title": "The checked BV restatement has exact prime-count endpoints",
+      "lane": "correctness",
+      "severity": "minor",
+      "confidence": "high",
+      "evidence_status": "gap",
+      "location": {
+        "path_or_scope": "mathematics/cayley_trace_gaussian_limit.md, equation (21) at baseline",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "\\operatorname{Li}(X)-\\operatorname{Li}(X/2)",
+      "analysis": "The checked BV restatement has exact prime-count endpoints. Replacing them at the same logarithmic error would require an extra quantitative PNT input.",
+      "suggested_fix": "Retain pi(X)-pi(X/2) in Markdown and TeX; qualitative PNT suffices for the subsequent asymptotic.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R3",
+      "reviewer": "self-claims",
+      "title": "Historical prose NOT EXTERNALLY REFEREED falsely implied a missing external theorem",
+      "lane": "claims",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "computations/verification/scientific_registry_audit.py, audit_claims at baseline",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "if \"EXTERNAL\" in row[\"ledger_status\"]",
+      "analysis": "Historical prose NOT EXTERNALLY REFEREED falsely implied a missing external theorem.",
+      "suggested_fix": "Use structured distinct IDs, resolve them in the external registry; regression includes the actual wording and unknown-ID rejection.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R4",
+      "reviewer": "self-claims",
+      "title": "Thirty registered source IDs were unanchored; nineteen authority values were explanatory strings rather than valid paths",
+      "lane": "claims",
+      "severity": "minor",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "20 authoritative sources; record/errata.json ERR-033–051",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "record/claims.json (registry repair, 2026-10-20)",
+      "analysis": "Thirty registered source IDs were unanchored; nineteen authority values were explanatory strings rather than valid paths.",
+      "suggested_fix": "Add metadata anchors and preserve old explanatory strings as authority_note while normalizing the authority paths.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R5",
+      "reviewer": "self-exposition",
+      "title": "Current summaries disagreed in date, source authority and reference count; ERRATA was stale",
+      "lane": "exposition",
+      "severity": "minor",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "README.ru.md at baseline",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "Научный статус (20 октября 2026 года)",
+      "analysis": "Current summaries disagreed in date, source authority and reference count; ERRATA was stale.",
+      "suggested_fix": "Synchronize current views and regenerate owned outputs; leave dated evidence intact.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R6",
+      "reviewer": "self-correctness",
+      "title": "Existing proof detail was present only in generated TeX; running the generator directly would remove it",
+      "lane": "correctness",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "gap",
+      "location": {
+        "path_or_scope": "return_gas.tex and return_position.tex versus their Markdown sources",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "Here is the 32-class argument.",
+      "analysis": "Existing proof detail was present only in generated TeX; running the generator directly would remove it.",
+      "suggested_fix": "Restore the existing 32-class and Green-kernel arguments to canonical Markdown, then regenerate; no theorem strengthening.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R7",
+      "reviewer": "self-adversarial",
+      "title": "Preserved imported source code was classified as maintained entry points; later claim IDs, state corrections and sources were absent from the epoch",
+      "lane": "adversarial",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "assertion_policy.py inventory and claim_integration_epochs.json",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "computations/reference/spectral_research",
+      "analysis": "Preserved imported source code was classified as maintained entry points; later claim IDs, state corrections and sources were absent from the epoch.",
+      "suggested_fix": "Exclude only this immutable corpus, still hash-check it; declare 38 existing IDs, nine prior state corrections and ten exact historical-row amendments. Unknown changes remain rejected.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R8",
+      "reviewer": "self-adversarial",
+      "title": "The assertion-bearing margin compiler had no early optimized-Python guard",
+      "lane": "adversarial",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "gap",
+      "location": {
+        "path_or_scope": "resonance_nondegeneracy_margin.py at baseline",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "assert w >= 1",
+      "analysis": "The assertion-bearing margin compiler had no early optimized-Python guard.",
+      "suggested_fix": "Add the guard before imports; exact normal-mode compilation reproduces the deposited 712-bit B. Optimized-entry tests cover rejection.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R9",
+      "reviewer": "self-claims",
+      "title": "Three evolved governance paths were treated as immutable input bytes; the current manuscript mapping also had a stale digest",
+      "lane": "claims",
+      "severity": "major",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "wave2 portable replay, sealed source closure and manuscript mapping",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "changed source: AGENTS.md",
+      "analysis": "Three evolved governance paths were treated as immutable input bytes; the current manuscript mapping also had a stale digest.",
+      "suggested_fix": "Resolve only the three exact byte-identical archived copies in the portable successor, preserving all seals and the v1 source. Review current manuscript scope explicitly and retain its previous digest; earlier TeX bytes were not located.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    },
+    {
+      "id": "R10",
+      "reviewer": "self-notation",
+      "title": "One visible brace was unclosed; a second display used two tags, rejected by hard KaTeX parsing",
+      "lane": "notation",
+      "severity": "minor",
+      "confidence": "high",
+      "evidence_status": "presentation",
+      "location": {
+        "path_or_scope": "coboundary_mobius_diffusion.md (8); heisenberg_pair_heat_formula.md (H22)/(H23)",
+        "unit_id": null,
+        "revision": "baseline 7fb99b4 and current reviewed edit set"
+      },
+      "quote": "h\\{\\overline Lf(\\Pi U_n)+O_{N,f}(|m_1(U_n)|)}",
+      "analysis": "One visible brace was unclosed; a second display used two tags, rejected by hard KaTeX parsing.",
+      "suggested_fix": "Close the brace and split the two numbered displays. Preserve expressions and labels; local renderer passes, live GitHub DOM is unverified.",
+      "provenance": {
+        "executor": "coordinator",
+        "method": "self-review",
+        "checked_artifacts": [
+          "manifest.json",
+          "../../../../evidence/executions/20261022/repository-recheck/"
+        ]
+      }
+    }
+  ],
+  "unreviewed": [
+    "Fresh independent proof review of all historical mathematics",
+    "Full workspace replay",
+    "Lean compilation",
+    "Authenticated live GitHub DOM"
+  ],
+  "failed_executions": "See immutable initial/intermediate logs and manifest.json in execution packet."
+}

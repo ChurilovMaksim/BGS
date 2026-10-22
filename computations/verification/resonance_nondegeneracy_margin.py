@@ -26,6 +26,9 @@ identical integer.
 """
 from __future__ import annotations
 
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 import argparse
 import hashlib
 import json

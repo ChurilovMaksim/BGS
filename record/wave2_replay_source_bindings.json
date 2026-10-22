@@ -72,5 +72,11 @@
     "record/wave2_scoped_input_bindings.json": "a76cec5e74703f260d4529b7eb46c071efc993fcec3fe6ce633b1bb4499bbfde",
     "supplement/fixed_map/weighted-secular/determinant_boundary.md": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c"
   },
-  "scope": "Authenticated bounded replay closure, not all repository files or universal proof coverage."
+  "scope": "Authenticated bounded replay closure, not all repository files or universal proof coverage.",
+  "historical_resolutions": {
+    "AGENTS.md": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/AGENTS.md",
+    "SOURCE_OF_TRUTH.md": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/SOURCE_OF_TRUTH.md",
+    "record/repository_conventions.md": "evidence/schur_reduction_20261007/raw/review/pinned/BGS/record/repository_conventions.md"
+  },
+  "resolution_scope": "Portable successor only: resolve three evolved governance documents to existing copies with their original sealed hashes. No expected hash or historical input is refreshed; the standalone historical v1 entry point remains unchanged."
 }

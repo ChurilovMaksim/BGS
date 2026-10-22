@@ -1,5 +1,7 @@
 # Sharp multiradius rigidity for vector polynomials
 
+**Stable claim IDs:** BGS-RES-016.
+
 Status: self-contained project proof. Priority has not been established by an exhaustive literature review. This general algebraic theorem is independent of the BGS conjecture and of any numerical experiment.
 
 ## 1. A bound independent of polynomial degree

@@ -1,5 +1,7 @@
 # Gaussian limits for Cayley sums and the full twisted-Jacobi trace
 
+**Stable claim IDs:** BGS-CAYLEY-006.
+
 **Status: EXACT + EXTERNAL-THEOREM.** The external arithmetic inputs are
 Chowla's cotangent independence and, for the density statement only, the
 classical Bombieri--Vinogradov theorem and PNT. The quantitative scalar
@@ -241,11 +243,15 @@ components and use the Gaussian exponential moments. This proves Theorem 1.
 In the family (3), Bombieri--Vinogradov at the endpoints $X,X/2$ gives
 $$
  |\mathcal D(X)|=
- (\operatorname{Li}(X)-\operatorname{Li}(X/2))
+ (\pi(X)-\pi(X/2))
  \sum_{\substack{Q/2<K\le Q\\K\text{ prime}}}\frac1{K-1}
  +O_A(X/(\log X)^A). \tag{21}
 $$
 For each fixed $A$, the modulus bound holds eventually since $Q=X^{o(1)}$.
+This is the classical BV restatement with main term $\pi(x)/\varphi(q)$;
+no quantitative replacement of $\pi$ by $\operatorname{Li}$ is needed.
+The exact source translation is recorded in
+[the dependency review](../literature/arithmetic_dependency_closure_20261022.md).
 PNT and partial summation, requiring only $Q\to\infty$, give
 $$
  \sum_{\substack{Q/2<K\le Q\\K\text{ prime}}}\frac1{K-1}

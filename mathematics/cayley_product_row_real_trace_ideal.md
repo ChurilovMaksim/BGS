@@ -1,5 +1,7 @@
 # Exact real-trace ideal for three product-row intersections
 
+**Stable claim IDs:** BGS-CAYLEY-007.
+
 **Status: EXACT for the trace reduction and prime-support equivalence; EXACT + EXTERNAL-THEOREM for the classical subresultant criterion; FINITE-REGRESSION for the Smith-normal-form anchors; OPEN for growing-`K` control of the resulting split support.**
 
 This note repairs and sharpens the order-three obstruction.  The dehomogenized projective row polynomials used in `cayley_product_row_subresultants.md` are a safe **one-way** obstruction, but their leading coefficients can vanish after reduction, so their coefficient ideals may contain projective degree-drop false positives.  The trace coordinate removes that defect completely.

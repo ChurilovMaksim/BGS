@@ -1,5 +1,9 @@
 # Scientific status and research record
 
+[Latest whole-repository recheck](audits/repository_recheck_20261022/report.md):
+authenticated full checkout, registry and authority repairs, five external
+dependency checks and explicit execution limits.
+
 ## Trace results and dependency closure, 22 October 2026
 
 The [review](trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a

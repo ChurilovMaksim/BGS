@@ -1,0 +1,54 @@
+{
+  "initial_host_observation": {
+    "python": {
+      "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "version": "Python 3.12.14"
+    },
+    "g++": {
+      "path": "/usr/bin/g++",
+      "version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+    },
+    "pdflatex": {
+      "path": "/usr/bin/pdflatex",
+      "version": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
+    },
+    "pandoc": {
+      "path": "/usr/bin/pandoc",
+      "version": "pandoc 3.1.3"
+    },
+    "cmake": {
+      "path": null
+    },
+    "lean": {
+      "path": null
+    },
+    "lake": {
+      "path": null
+    },
+    "numpy": {
+      "version": "2.3.5"
+    },
+    "mpmath": {
+      "installed": false
+    },
+    "sympy": {
+      "installed": false
+    },
+    "scipy": {
+      "version": "1.17.0"
+    }
+  },
+  "used_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "installed_pinned_packages": {
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.0",
+    "cmake": "4.4.4"
+  },
+  "dependency_installation": "Scratch-only pip target, requirements.txt unchanged. Absolute PYTHONPATH passed to final suite and children.",
+  "ci_python": "3.13 (not the local interpreter)",
+  "boost_development_files_available": false,
+  "lean_or_lake_available": false
+}

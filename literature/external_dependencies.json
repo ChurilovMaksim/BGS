@@ -1020,6 +1020,93 @@
         "record/trace_closure_20261022.md"
       ],
       "metadata_audit": "evidence/executions/20261022/trace-closure/source_check.json"
+    },
+    {
+      "id": "EXT-WANG-1982",
+      "authors": [
+        "Kai Wang"
+      ],
+      "title": "On a theorem of S. Chowla",
+      "identifier": "DOI:10.1016/0022-314X(82)90078-6",
+      "pinned_version": "Journal of Number Theory 15 (1982), 1-4",
+      "locator": "Theorem A, printed p.1",
+      "checked_on": "2026-10-22",
+      "mapping": "Prime-order rational independence of cot(pi*a/K), 1<=a<=(K-1)/2; identifies exactly the balanced characteristic-zero Cayley relations.",
+      "project_sources": [
+        "mathematics/cayley_trace_gaussian_limit.md",
+        "literature/arithmetic_dependency_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-WANG-1982"
+    },
+    {
+      "id": "EXT-FI-1980",
+      "authors": [
+        "Etienne Fouvry",
+        "Henryk Iwaniec"
+      ],
+      "title": "On a theorem of Bombieri-Vinogradov type",
+      "identifier": "Mathematika 27 (1980), 135-152; author-hosted published PDF",
+      "pinned_version": "Mathematika 27 (1980), 135-152",
+      "locator": "Section 1, equation (1), printed p.135",
+      "checked_on": "2026-10-22",
+      "mapping": "Only the classical Bombieri-Vinogradov restatement is used: fix epsilon=1/4 and restrict its average over moduli to the subpolynomial prime K range. Main term uses pi(x), not Li(x).",
+      "project_sources": [
+        "mathematics/cayley_trace_gaussian_limit.md",
+        "literature/arithmetic_dependency_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-FI-1980"
+    },
+    {
+      "id": "EXT-ZAGIER-1997",
+      "authors": [
+        "Don Zagier"
+      ],
+      "title": "Newman's Short Proof of the Prime Number Theorem",
+      "identifier": "DOI:10.2307/2975232",
+      "pinned_version": "American Mathematical Monthly 104 (1997), 705-708",
+      "locator": "Prime Number Theorem on p.705; deduction from (VI), p.707",
+      "checked_on": "2026-10-22",
+      "mapping": "Qualitative pi(x)~x/log(x), used only for dyadic prime counts and partial summation; no logarithmic-power remainder is imported.",
+      "project_sources": [
+        "mathematics/cayley_trace_gaussian_limit.md",
+        "literature/arithmetic_dependency_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-ZAGIER-1997"
+    },
+    {
+      "id": "EXT-BORDA-2020",
+      "authors": [
+        "Bence Borda"
+      ],
+      "title": "Berry-Esseen smoothing inequality for the Wasserstein metric on compact Lie groups",
+      "identifier": "arXiv:2005.04925v2",
+      "pinned_version": "arXiv v2, 23 June 2020, 24 pages",
+      "locator": "Theorem A, p.2 (classical real-line smoothing inequality)",
+      "checked_on": "2026-10-22",
+      "mapping": "Only the restated real-line Kolmogorov smoothing inequality; the target Gaussian CDF is Lipschitz. No compact-group theorem is applied.",
+      "project_sources": [
+        "mathematics/cayley_trace_gaussian_limit.md",
+        "literature/arithmetic_dependency_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-BORDA-2020"
+    },
+    {
+      "id": "EXT-BT-1971",
+      "authors": [
+        "W. S. Brown",
+        "J. F. Traub"
+      ],
+      "title": "On Euclid's Algorithm and the Theory of Subresultants",
+      "identifier": "DOI:10.1145/321662.321665",
+      "pinned_version": "Journal of the ACM 18 (1971), 505-514",
+      "locator": "Section 5, definitions pp.507-508 and Fundamental Theorem equations (26)-(29), p.511",
+      "checked_on": "2026-10-22",
+      "mapping": "Over the residue field, the first nonzero polynomial subresultant has degree equal to the gcd degree. Unit leading coefficients prevent degree drop; the first three vanish exactly when gcd degree is at least three.",
+      "project_sources": [
+        "mathematics/cayley_product_row_real_trace_ideal.md",
+        "literature/arithmetic_dependency_closure_20261022.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-BT-1971"
     }
   ]
 }

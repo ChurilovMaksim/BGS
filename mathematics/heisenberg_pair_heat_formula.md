@@ -303,11 +303,14 @@ $$
 p_j(A_N)=p_j(D_N)=e^{ij/N^4}-1\ne0
  \quad(1\le j\le Q_N),\\
 |p_j(A_N)|+|p_j(D_N)|\le4e^{\alpha j}\quad(j\ge1),
-                                                                    \tag{H22}\\
+                                                                    \tag{H22}
+\end{gathered}
+$$
+
+$$
 J_{N,w}(A_N)\longrightarrow-\int_a^b\xi w(\xi)d\xi,
 \qquad
 \frac{J_{N,w}(D_N)}L\longrightarrow\int_a^b w(\xi)d\xi>0.       \tag{H23}
-\end{gathered}
 $$
 
 Here $w$ is fixed, smooth, compactly supported in $(a,b)$ and nonzero

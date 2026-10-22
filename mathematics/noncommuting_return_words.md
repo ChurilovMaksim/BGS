@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-RET-003, BGS-RET-004.
 title: "Noncommuting return words and all-orders arithmetic quantum conjugacy"
 author: "BGS research programme"
 date: "6 September 2026"

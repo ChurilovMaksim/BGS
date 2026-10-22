@@ -1,5 +1,7 @@
 # Generic infinite-support resonance nondegeneracy in weighted Wiener and Sobolev spaces
 
+**Stable claim IDs:** BGS-RES-020.
+
 **Status: EXACT.** This is a topological consequence of the unrestricted finite-Fourier theorem plus the weighted-Wiener bracket estimate. It proves open-dense nondegeneracy for a natural infinite-support Banach class, every fixed analytic Wiener strip, every Sobolev space `H^s(T^2)` with `s>2`, and the smooth Frechet space. It does **not** prove that every analytic observable is nondegenerate.
 
 Fix a hyperbolic `A in SL(2,Z)`. For a Fourier series `f` define

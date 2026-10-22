@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-CAYLEY-009.
 title: "Magnetic quotients and a restricted global semicircle law"
 author: "BGS research programme"
 date: "5 September 2026"

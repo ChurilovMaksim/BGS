@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-FLOW-023, BGS-FLOW-024.
 title: "A second-order resonance scale for coboundary kicks of a fixed cat map"
 author: "BGS research programme"
 date: "5 September 2026"

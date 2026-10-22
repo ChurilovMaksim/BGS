@@ -1,5 +1,7 @@
 # Two-window resonance crossover
 
+**Stable claim IDs:** BGS-RES-015.
+
 Status: project theorem with a complete finite-difference proof. Priority, independent referee acceptance and analytic Lean formalization are not claimed. This is the smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.
 
 ## 1. The finite matrix and the result

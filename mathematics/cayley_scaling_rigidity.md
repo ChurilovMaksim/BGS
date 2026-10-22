@@ -1,5 +1,7 @@
 # Cayley collision-curve equivalence
 
+**Stable claim IDs:** BGS-CAYLEY-008.
+
 The complete maintained proof is in `manuscript/unified_sections/cayley_scaling.tex`.
 For characteristic different from two and distinct parameters rho,sigma outside
 {0,1,-1}, diagonal coordinate scalings and scalar multiples identify exactly

@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-20",
+  "reviewed_on": "2026-10-22",
   "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
@@ -282,9 +282,11 @@
     },
     {
       "id": "BGS-TRACE-096",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-097",
@@ -294,60 +296,342 @@
     },
     {
       "id": "BGS-TRACE-098",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-099",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-100",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_ensemble_continuation_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-101",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_neutral_primitives_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-102",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_second_defect_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-103",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_quartic_cluster_sum_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-104",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/phase_cayley_cauchy_transfer_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
     },
     {
       "id": "BGS-TRACE-105",
-      "state": "proved",
+      "state": "verification-pending",
       "source": "mathematics/cauchy_positive_source_boundary_20261019.md",
-      "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim."
+      "disposition": "Reconcile the existing ERR-033 verification-pending correction at main 7fb99b4. The author proof remains deposited; the listed integration verifier checks integrity/scope, not the asymptotic theorem. For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim.",
+      "prior_epoch_state": "proved",
+      "review": "record/errata.json#ERR-033"
+    },
+    {
+      "id": "BGS-CAYLEY-006",
+      "state": "proved",
+      "source": "mathematics/cayley_trace_gaussian_limit.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Pointwise regime: K through odd primes with K=o(log p), split designs p=1 (mod K). Density regime: Q->infinity and log Q=o(log X), convergence in probability over dyadic split designs, not every design. Scalar quantitative refinements use classical real-line smoothing. External inputs and exact locators are registered separately. Trace parameters are not powers of one matrix; no microscopic BGS theorem or priority verdict.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-CAYLEY-007",
+      "state": "proved",
+      "source": "mathematics/cayley_product_row_real_trace_ideal.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Equality of split rational-prime support only, not of integral valuations. Covers the fixed-degree product-row cofactors P_{K,r}, Q_{K,r} at split primes p=1 (mod K). Polynomial control of the largest supported split prime remains open. The shift-resultant transversality theorems of the same manuscript section are separate results, backed by mathematics/cayley_inverse_resultant_transversality.md and mathematics/cayley_product_row_subresultants.md.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-CAYLEY-008",
+      "state": "proved",
+      "source": "mathematics/cayley_scaling_rigidity.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Characteristic different from two; rho, sigma outside {0,1,-1} and rho != sigma. Classification of scaling classes only; the pointwise additive-energy exponent remains 8/3 and no BGS conclusion follows.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-CAYLEY-009",
+      "state": "proved",
+      "source": "mathematics/magnetic_quotient_semicircle.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Global empirical spectral measure of a compressed observable only; not microscopic BGS statistics of a quantum propagator. Prime subgroup orders K=o(log p); the source's Section 9 proves this regime is incompatible with the orders of any one fixed hyperbolic integral cat map. Priority not established.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-CAYLEY-010",
+      "state": "proved",
+      "source": "manuscript/general_spectra.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Finite exact spectra under the fixed-point-free hypothesis (eq:general-free) only. The section's final sentence asserting that the locality and return-word arguments later in the paper 'work verbatim' with the characteristic Q_N^* and any such A is NOT part of this claim: that transfer is asserted without proof in the section and was not found proved in the sources searched (mathematics/, record/, supplement/, papers/).",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FLOW-022",
+      "state": "proved",
+      "source": "mathematics/pell_floquet_normal_form.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FLOW-023",
+      "state": "proved",
+      "source": "mathematics/pell_coboundary_resonance.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FLOW-024",
+      "state": "proved",
+      "source": "mathematics/pell_coboundary_resonance.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FLOW-025",
+      "state": "proved",
+      "source": "mathematics/pell_floquet_normal_form.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FM-034",
+      "state": "proved",
+      "source": "mathematics/fixed_strength_locality.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed classical strength kappa_0 (classical Hamiltonian time kappa_0/(2pi)); generators g with supp g disjoint from supp Cg, including the explicit Gevrey-2 bump for the quantitative bound (LC.4), whose exponent is not claimed optimal. Deliberately nongeneric family smoothly conjugate to an arithmetic cat map; not positive BGS universality.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FM-035",
+      "state": "proved",
+      "source": "mathematics/fixed_strength_locality.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Same generator class and conventions as Theorem A of the locality section. The conjugacy to M is essential, not a symmetry that may be omitted when interpreting spectral statistics. Sign convention for the Hamiltonian flow Phi_g^t is the one stated in the theorem; return_words.tex uses the opposite flow convention under the same symbol (review finding, group 5).",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-FM-036",
+      "state": "proved",
+      "source": "mathematics/fixed_strength_locality.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-008",
+      "state": "proved",
+      "source": "mathematics/pell_sharp_orbit_coercivity.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Every hyperbolic A in SL(2,Z) (tr A>2 after replacing A by -A); finite single-orbit trigonometric polynomials of diameter at most L. The infimum (SH.S3) is over all finite support lengths; no finite sequence attains it and no infinite-frequency minimizer is asserted. The spectral-factorization step is the classical Fejer-Riesz theorem; priority and external referee acceptance are not claimed.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-009",
+      "state": "proved",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Constants D_m^*, L_m depend on the largest lag and the fixed symbol g. All-frequency spectral positivity and Riesz bounds uniform in the time window; classical covariance module, not quantum eigenphase correlations.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-010",
+      "state": "proved",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Constants depend on A, v, a_0, P, R but not on n. Lag-uniform coercivity holds if and only if P has no roots on |z|=lambda or |z|=lambda^{-1}. The general Toeplitz zero-order mechanism is prior theory (ledger note).",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-011",
+      "state": "proved",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Every finite real Fourier symbol, arbitrary phases and any number of frequency orbits; fixed R >= R_0(A,g). Uniform high-lag coercivity holds precisely when the common finite temporal divisor P_g has no root on the two hyperbolic circles.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-012",
+      "state": "proved",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Regular semisimple finite quantum cyclic module of odd order with arbitrary nonzero c; every integer n>=1, without a no-alias time restriction. Observable commutators, not eigenphase correlations; does not furnish joint traces of a perturbed quantum propagator.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-013",
+      "state": "proved",
+      "source": "manuscript/unified_sections/spectral_modules.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Even order requires the balanced phase c=a+ib with a^2=b^2>0 for the unchanged formulas. The span dimension is K(K-2)/2 for ab != 0 and exactly K(K-2)/8 for a nonzero purely real or purely imaginary c. Finite commutator-observable module, not spectral universality.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-014",
+      "state": "conditional",
+      "source": "mathematics/resonance_riesz_regularization.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-015",
+      "state": "proved",
+      "source": "mathematics/two_window_resonance_crossover.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-016",
+      "state": "proved",
+      "source": "mathematics/multiradius_polynomial_rigidity.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Self-contained algebraic statements, independent of the BGS conjecture; priority relative to polynomial sphere-map and filter-bank literature is not asserted. The flat-tail classification subsection of the manuscript section is covered via mathematics/two_radius_quadrature_rigidity.md (see fixlog).",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-017",
+      "state": "proved",
+      "source": "mathematics/balanced_phase_controllability.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Odd N>=3 (composite included) and det(v,w) a unit modulo N. Controllability allows varying controls; it is not a local-statistics theorem for one fixed kicked propagator, and no dimension-uniform synthesis-time bound is asserted. The Pell specialization applies to every odd N.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-018",
+      "state": "proved",
+      "source": "mathematics/entire_temporal_gauge.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. thm:infinite-orbit: nonzero observables with M_1(g)<infty supported on one signed orbit. All-pass classification: filters holomorphic on the punctured plane with real Laurent coefficients summable with every exponential weight. Preserved data are the complete zero-frequency hierarchy J(h_r) modulo actual smooth coboundaries, not all dynamical-frequency cross spectra; cubic moments can change.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-019",
+      "state": "proved",
+      "source": "mathematics/resonance_wiener_stability.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Explicit neighbourhood E<D of a nonconstant real trigonometric polynomial p, in the section's weighted-Wiener seminorms M_0, M_A (a first-moment topology, stronger than the l1 Wiener algebra; the index 0 refers to A^0). Uses the isolated finite-support witness u,v of lem:temporal-support from the temporal section. Does not prove positivity for every analytic or smooth observable.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-020",
+      "state": "proved",
+      "source": "mathematics/generic_wiener_resonance.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Weighted-Wiener Banach space X_A, every fixed analytic Wiener strip, every H^s(T^2) with s>2, and C^infty(T^2) with its Frechet topology, modulo constants. Does not prove that every nonconstant analytic observable is nondegenerate; that all-members question is BGS-RES-003 and remains open.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-021",
+      "state": "proved",
+      "source": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Analytic category only. A zero-variance analytic counterexample is not excluded: by Corollary cor:analytic-resonance-frontier it would have to solve the nontrivial analytic nonlinear cohomological equation (eq:analytic-nonlinear-cohomology), with {g,Cg} not identically zero. The all-members analytic nondegeneracy question remains open (BGS-RES-003).",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-022",
+      "state": "verification-pending",
+      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RET-003",
+      "state": "conditional",
+      "source": "mathematics/noncommuting_return_words.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is registered separately as BGS-RET-004: its tower disjointness rests on the exact integer certificate named in the section (computations/cpp/return_word_certificate.cpp, with its deposited PASS log) and on the independent Python verifier computations/verification/noncommuting_tower.py.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RET-004",
+      "state": "proved",
+      "source": "mathematics/noncommuting_return_words.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-RES-023",
+      "state": "proved",
+      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-106",
+      "state": "proved",
+      "source": "mathematics/physical_kick_trace_decay.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. All odd N, 0<|t|<=10^-20, N|t|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and self-review, not external refereeing or Lean.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-107",
+      "state": "proved",
+      "source": "mathematics/physical_trace_polynomial_approximation.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Norm error epsilon gives O(N^k epsilon) trace-polynomial error at each fixed order and bandwidth. Negative indices use adjoint powers of the nonunitary approximant. Full signed sum remains unestimated. Shortest scalar two-copy Pell alias has length x; no spectral counterexample or priority claim.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-108",
+      "state": "proved",
+      "source": "mathematics/coordinate_return_quartic_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. One step only; analytic author proof and self-review, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-109",
+      "state": "proved",
+      "source": "mathematics/inserted_trace_coboundary_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Original one-step inserted trace with O(N^-1) remainder now proved by a finite-grid corrected-amplitude parametrix; projection and two-copy constants follow for arbitrary multiplicities. No microscopic pair limit, external refereeing or formalization.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-110",
+      "state": "proved",
+      "source": "mathematics/spectral_orbit_distance_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. All-odd-N O(1/log N) upper global spectral distance and matching Pell lower constant pi log(lambda)/4. Input (T) is now proved by TRACE-113; an independent pressure-free upper proof is TRACE-112. No microscopic spacing law.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-111",
+      "state": "proved",
+      "source": "mathematics/pell_weighted_curvature_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Original parameter curve at t=0 and shrinking times on odd Pell dimensions; all weighted times and cross terms included. S_N(tau), H_diag and BGS remain open.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-112",
+      "state": "proved",
+      "source": "mathematics/displacement_density_trace_bound_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Density discrepancy <= epsilon_R m theta^(m-1) <= 8e-53 for every positive classical iterate of the actual fixed map. Quantum normalized trace <= C exp(Km) N^(-1/5), useful on a short logarithmic window; global spectral matching O(1/log N), not a microscopic law.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-TRACE-113",
+      "state": "proved",
+      "source": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed tau=10^-80, one N0 for every m>=1 and every sufficiently large odd N: |Tr U_N^m|<=C a^m with 1<a<sqrt(lambda). Constants/pressure gap not numerically evaluated; bound is uninformative at m proportional to N; no signed hierarchy or BGS conclusion.",
+      "review": "record/audits/repository_recheck_20261022/report.md"
     }
   ],
   "invariants": [
-    "Historical Wave2/3 claims and immutable evidence remain byte- and field-pinned by their original audits.",
+    "Historical Wave2/3 evidence remains byte-pinned. Current claims are checked against sealed historical rows plus exact, explicitly recorded amendments; historical input rows are never rewritten.",
     "Every newly added core ID must be explicitly reviewed, appended here with exact state and source, and matched to record/claims.json.",
     "New entries are not automatically classified as theorems and do not imply a BGS local law."
   ],
   "external_dependency_extension": {
-    "reviewed_on": "2026-10-20",
+    "reviewed_on": "2026-10-22",
     "historical_registry": "evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json",
     "added_ids": [
       "EXT-OO-1997",
@@ -361,14 +645,129 @@
       "EXT-KPSS-2002",
       "EXT-BF-2023",
       "EXT-CS-2006",
-      "EXT-STANLEY-1981"
+      "EXT-STANLEY-1981",
+      "EXT-BR-1975",
+      "EXT-WANG-1982",
+      "EXT-FI-1980",
+      "EXT-ZAGIER-1997",
+      "EXT-BORDA-2020",
+      "EXT-BT-1971"
     ],
-    "scope": "All 39 historical external contracts remain field-identical; twelve separately reviewed later inputs are admitted explicitly. Five observations are carried forward from 16/19 October, without fresh primary-source acquisition.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Eighteen explicitly reviewed later inputs are admitted; source review dates and limits remain in the selected snapshot.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
       "literature/phase_ensemble_sources_20261019.md",
-      "literature/wick_poisson_sources_20261016.md"
+      "literature/wick_poisson_sources_20261016.md",
+      "literature/bowen_ruelle_trace_closure_20261021.md",
+      "literature/arithmetic_dependency_closure_20261022.md"
     ]
-  }
+  },
+  "historical_claim_amendments": [
+    {
+      "id": "BGS-CAYLEY-001",
+      "historical_row_sha256": "04dff239fcba6148a7334ec5010980dd053ca1e392e3effd0c68021efdd257ae",
+      "fields": {
+        "ledger_status": "EXACT + FINITE-CERTIFICATE (PARTIAL AT LARGEST DESIGNS)",
+        "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-CAYLEY-003",
+      "historical_row_sha256": "be91ec6c297192b1657db6605457ef6dd96b498a254bd93f0f7eda8e87fd3349",
+      "fields": {
+        "state": "verification-pending",
+        "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND"
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-FM-005",
+      "historical_row_sha256": "8cc200752e05d2c2433021724f3e97f21f3b84bbbe35eb0f7f6803366d3b9174",
+      "fields": {
+        "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
+        "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT. Finite diagnostics are floating-point SVD at kick parameter t=0.4 on dimensions [3, 5, 7, 9, 15, 19, 21, 23, 35, 49, 63, 77]; they are not numerics at the frozen model value tau=10^-80 and do not by themselves establish exact rank."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-FM-008",
+      "historical_row_sha256": "0473cbcc7e825bf0d2184eb630a39f46a7b1d120d07bf83eedc4c69c1d885b63",
+      "fields": {
+        "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS (FINITE RANGES ONLY; 7|N MODEL BRANCH NOT EXERCISED)",
+        "boundary": "Odd N not divisible by 7 and nonzero real algebraic coupling only. Every eigenvalue ratio is transcendental but there is no quantitative gap, mixed trace estimate, or claim at 7-divisible dimensions. Independent finite-control coverage: estimates for odd N<502; balance checks only for (N, r) scopes (3, r<4), (5, r<6), (9, r<10), (15, r<16), (25, r<6), (75, r<4), (125, r<4); dimension-rank cases (3, 5, 9, 15, 25, 35, 45). The model cross-factorization branch of fm008_independent.py is guarded by if n % 7 and is silently skipped at N=49, the sole 7-divisible test dimension."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-FM-010",
+      "historical_row_sha256": "70cc5a35c136330ed7df0886326a94c50cf2df556cba93f56bc27301beabe03b",
+      "fields": {
+        "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+        "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-FORMAL-001",
+      "historical_row_sha256": "1d56743bbfbc16b565a8d3a77ae389a20c235e3dd4fe481bf7a562c0e7516206",
+      "fields": {
+        "evidence": [
+          "evidence/executions/20261020/toolchain-followup/receipt.json",
+          "evidence/executions/20261006/original-channel-gap/lean.log",
+          "evidence/executions/20261006/original-channel-gap/integration.json"
+        ],
+        "boundary": "Pinned Lean 4.33.1 build of all 24 active modules completed successfully (27 Lake jobs), including CoherenceBudget, per the toolchain follow-up receipt of 20 October 2026 recorded at source commit cfe74ab (partial build snapshot: 69 authenticated unchanged files; the Bgs sources are unchanged between cfe74ab and 78066c8). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-RES-006",
+      "historical_row_sha256": "4c7d2b2f169cbd2bb01894b6911d44f74ba8edfde88b979d66ef2bbfae1f32ed",
+      "fields": {
+        "ledger_status": "FINITE-N IDENTITY + PROJECT DERIVATION; COMPUTATIONAL CONTROL IS FLOAT64 FINITE-N REGRESSION, NOT EXACT",
+        "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-RET-001",
+      "historical_row_sha256": "9dbdb912ab367d8d6ad0fa7d3758c8074a40e93378491c1a370dd278053439b5",
+      "fields": {
+        "ledger_status": "EXACT + EXTERNAL-THEOREM",
+        "external_dependencies": [
+          "EXT-DEMNI-2016"
+        ],
+        "boundary": "Fixed multiplicity m and logarithmic return times mK at the vanishing kick epsilon=tau/sqrt(2K); harmonics are sampled; not Heisenberg-scale microscopic BGS. The free unitary Brownian endpoint identification uses Demni (EXT-DEMNI-2016). Computational controls: exact diagram/lattice checks plus complex128 matrix controls at K=3, 5 with the single value epsilon=0.23 only."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-TRACE-008",
+      "historical_row_sha256": "3ee17ef04b6e57243e285839fc4f97074b2b45210f19f466cd3368c31bb0dd2e",
+      "fields": {
+        "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)"
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    },
+    {
+      "id": "BGS-FORMAL-003",
+      "historical_row_sha256": "49ab9df069e6607685282e4456b2034737289e20ece072542555caa846bfdcfb",
+      "fields": {
+        "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent aggregate build at the current 24-module graph completed (27 Lake jobs; toolchain follow-up receipt of 20 October 2026)."
+      },
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "review": "record/errata.json"
+    }
+  ]
 }

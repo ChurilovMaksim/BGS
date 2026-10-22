@@ -4206,7 +4206,12 @@
       "ledger_status": "EXACT + EXTERNAL-THEOREM",
       "source": "mathematics/cayley_trace_gaussian_limit.md",
       "dependencies": [],
-      "external_dependencies": [],
+      "external_dependencies": [
+        "EXT-WANG-1982",
+        "EXT-FI-1980",
+        "EXT-ZAGIER-1997",
+        "EXT-BORDA-2020"
+      ],
       "evidence": [
         "evidence/certificates/cayley_higher_moments_20260909.json"
       ],
@@ -4217,7 +4222,7 @@
       "manuscript": [
         "manuscript/unified_sections/cayley_trace_gaussian.tex"
       ],
-      "boundary": "Sparse regime only: K through odd primes, K=o(log p), split designs p=1 (mod K). Classical external inputs named in the source: Chowla cotangent independence (both theorems), Bombieri-Vinogradov and the prime number theorem (density theorem only), and the Esseen smoothing inequality as restated in B. Borda, arXiv:2005.04925v2, Theorem A (quantitative Kolmogorov bounds in the same section). Not a microscopic BGS theorem; the trace parameters are not powers of one matrix; priority not established."
+      "boundary": "Pointwise regime: K through odd primes with K=o(log p), split designs p=1 (mod K). Density regime: Q->infinity and log Q=o(log X), convergence in probability over dyadic split designs, not every design. Scalar quantitative refinements use classical real-line smoothing. External inputs and exact locators are registered separately. Trace parameters are not powers of one matrix; no microscopic BGS theorem or priority verdict."
     },
     {
       "id": "BGS-CAYLEY-007",
@@ -4226,7 +4231,9 @@
       "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
       "source": "mathematics/cayley_product_row_real_trace_ideal.md",
       "dependencies": [],
-      "external_dependencies": [],
+      "external_dependencies": [
+        "EXT-BT-1971"
+      ],
       "evidence": [],
       "verifiers": [
         "computations/verification/cayley_trace_intercept_shift_resultant.py"

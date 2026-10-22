@@ -1,5 +1,7 @@
 # One-mode regularization of the full hyperbolic resonance lattice
 
+**Stable claim IDs:** BGS-RES-014.
+
 Status: project theorems with proofs. Independent referee acceptance, priority, and complete Lean formalization are not claimed. These are classical observable theorems, not microscopic BGS universality.
 
 ## 1. Two distinct Fourier variables

@@ -19,6 +19,7 @@ from pathlib import Path
 import wave2_checked_replay as historical
 
 ORIGINAL_NUMERIC_COMPARE = historical.compare_numeric_diagnostics
+ORIGINAL_SOURCE_BYTES = historical.source_bytes
 SPLIT_SAMPLES = ((5, 25), (11, 121))
 BASIS_FIELDS = ('reverse_norm', 'P_centered_norm')
 EXPECTED_TASKS = (
@@ -26,6 +27,36 @@ EXPECTED_TASKS = (
     'hook_bridge', 'hook_downstream', 'ward_covariance',
     'ward_permutations'
 )
+
+
+def sealed_source_bytes(root=historical.ROOT):
+    """Resolve evolved governance paths without changing any historical seal."""
+    bindings=historical.strict_json(historical.safe_path(root,historical.BINDINGS).read_bytes())
+    historical.require(bindings['schema']=='bgs-wave2-replay-source-bindings-v1',
+                       'unknown binding schema')
+    resolutions=bindings.get('historical_resolutions',{})
+    expected={rel:'evidence/schur_reduction_20261007/raw/review/pinned/BGS/'+rel
+              for rel in ('AGENTS.md','SOURCE_OF_TRUTH.md','record/repository_conventions.md')}
+    historical.require(resolutions==expected,'unreviewed historical input resolution')
+    cached={}
+    for rel,digest in bindings['files'].items():
+        data=historical.safe_path(root,resolutions.get(rel,rel)).read_bytes()
+        historical.require(historical.digest(data)==digest,'changed source: '+rel)
+        cached[rel]=data
+    historical.require(historical.CONTRACT in cached and historical.INPUTS in cached,
+                       'missing contract/input closure')
+    return cached
+
+
+@contextmanager
+def sealed_input_scope():
+    historical.require(historical.source_bytes is ORIGINAL_SOURCE_BYTES,
+                       'historical source loader already overridden')
+    historical.source_bytes=sealed_source_bytes
+    try:
+        yield
+    finally:
+        historical.source_bytes=ORIGINAL_SOURCE_BYTES
 
 
 def _split_invariant_bound(row, p, index):
@@ -142,8 +173,8 @@ def portable_comparison_scope():
 def run(root=historical.ROOT, output=None):
     # An untouched, SHA-sealed v1 implementation and original task sources
     # are mandatory. An edit to the archived comparator makes this fail.
-    historical.source_bytes(root)
-    with portable_comparison_scope():
+    sealed_source_bytes(root)
+    with portable_comparison_scope(), sealed_input_scope():
         result = historical.run(root=root, output=output)
 
     names = tuple(row['name'] for row in result['tasks'])
@@ -199,7 +230,7 @@ def main():
     parser.add_argument('--output-dir',type=Path)
     args=parser.parse_args()
     if args.check_sources:
-        historical.source_bytes()
+        sealed_source_bytes()
         print('Wave2 portable successor: original sealed source closure OK')
     else:
         result=run(output=args.output_dir)

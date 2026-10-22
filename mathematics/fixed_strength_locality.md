@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-FM-034, BGS-FM-035, BGS-FM-036.
 title: "Fixed-strength coboundary kicks: locality, long-time conjugacy, and microscopic clustering"
 author: "BGS research programme"
 date: "5 September 2026"

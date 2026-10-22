@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-RES-008.
 title: "The exact second-resonance minimum on one Fourier orbit"
 author: "BGS research programme"
 date: "5 September 2026"

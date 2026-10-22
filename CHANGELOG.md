@@ -1,5 +1,25 @@
 # Scientific changelog
 
+## 2026-10-22 — full repository recheck
+
+Restored and authenticated all 6,563 files of main at 7fb99b4 before editing.
+Repaired five missing external dependencies for CAYLEY-006/007, 30 missing
+source anchors and 19 malformed errata authority paths. Corrected a registry
+audit false positive and added regression checks. Aligned the arithmetic
+density main term with the checked source; synchronized generated views and
+current English/Russian navigation. No claim state was changed by this recheck.
+[Findings and actual checks](record/audits/repository_recheck_20261022/report.md).
+
+## 2026-10-21/22 — trace closure and complete spectral edition
+
+Integrated the 535-unit final spectral source edition and TRACE-106 through
+TRACE-113. Analytic project proofs close the earlier TRACE-109/110 input
+qualifications; TRACE-112 supplies an independent displacement-density route,
+and TRACE-113 supplies the uniform power-trace input. Global matching has
+order $1/\log N$, including a Pell lower order. Microscopic BGS remains open.
+[Trace closure review](record/trace_closure_20261022.md) and
+[source integration](record/spectral_final_integration_20261021.md).
+
 ## 2026-10-20 — repository reconciliation
 
 Current navigation and complete dependency views are generated from the authorities.

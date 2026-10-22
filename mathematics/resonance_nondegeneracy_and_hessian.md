@@ -1,4 +1,6 @@
 ---
+
+**Stable claim IDs:** BGS-RES-022, BGS-RES-023.
 title: "Certified multiorbit resonance and an invariant Hessian obstruction"
 author: "BGS research programme"
 date: "6 September 2026"

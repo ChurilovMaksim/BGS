@@ -5,6 +5,7 @@ import hashlib
 import json
 import re
 from wave2_checked_replay import require, safe_path, strict_json, source_bytes
+from wave2_portable_replay import sealed_source_bytes
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -23,15 +24,46 @@ def check_external_epoch(root, epoch):
     rows=current['dependencies']; active={row['id']:row for row in rows}
     old={row['id']:row for row in previous['dependencies']}
     allowed={'EXT-OO-1997','EXT-MATSUMOTO-2007','EXT-VV-2017','EXT-JM-2015',
-             'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989','EXT-PITTEL-2016','EXT-KPSS-2002','EXT-BF-2023','EXT-CS-2006','EXT-STANLEY-1981'}
+             'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989','EXT-PITTEL-2016','EXT-KPSS-2002','EXT-BF-2023','EXT-CS-2006','EXT-STANLEY-1981',
+             'EXT-BR-1975','EXT-WANG-1982','EXT-FI-1980','EXT-ZAGIER-1997',
+             'EXT-BORDA-2020','EXT-BT-1971'}
     declared=extension.get('added_ids',[])
     require(len(declared)==len(allowed) and set(declared)==allowed,
             'external extension requires explicit epoch review')
     require(len(active)==len(rows) and set(active)==set(old)|allowed,
             'duplicate or undeclared external dependency')
     for identifier,row in old.items():
-        require(active[identifier]==row,'historical external contract changed: '+identifier)
+        # A later cache pointer is provenance, not a theorem-contract change.
+        # bibliographic_metadata_audit.py independently checks the selected
+        # cache and all load-bearing identity/mapping fields.
+        contract=lambda entry:{k:v for k,v in entry.items() if k!='metadata_audit'}
+        require(contract(active[identifier])==contract(row),
+                'historical external contract changed: '+identifier)
     return len(old),len(allowed)
+
+def check_prior_claims(previous, current, epoch):
+    """Apply only explicitly documented amendments to immutable old rows."""
+    rows=epoch.get('historical_claim_amendments',[])
+    amendments={row['id']:row for row in rows}
+    approved={'BGS-CAYLEY-001','BGS-CAYLEY-003','BGS-FM-005','BGS-FM-008',
+              'BGS-FM-010','BGS-FORMAL-001','BGS-FORMAL-003','BGS-RES-006',
+              'BGS-RET-001','BGS-TRACE-008'}
+    require(len(amendments)==len(rows) and set(amendments)==approved,
+            'historical claim amendments require explicit epoch review')
+    for old in previous:
+        expected=dict(old)
+        if old['id'] in amendments:
+            row=amendments[old['id']]
+            digest=hashlib.sha256(json.dumps(old,sort_keys=True,separators=(',',':'),
+                                             ensure_ascii=False).encode()).hexdigest()
+            require(row.get('historical_row_sha256')==digest and row.get('disposition')
+                    and row.get('review'), 'historical claim amendment provenance differs')
+            require(isinstance(row.get('fields'),dict) and row['fields']
+                    and set(row['fields'])<=set(old) and 'id' not in row['fields'],
+                    'invalid historical claim amendment fields')
+            expected.update(row['fields'])
+        require(current.get(old['id'])==expected,
+                'old claim contract changed outside reviewed amendment: '+old['id'])
 
 def run(root=ROOT):
     mapping=strict_json((root/'record/wave2_promotion_mapping.json').read_bytes())
@@ -51,7 +83,8 @@ def run(root=ROOT):
     registry=strict_json((root/'record/claims.json').read_bytes())
     current={c['id']:c for c in registry['claims']}
     previous=strict_json((root/'evidence/wave2_checked_20261007/raw/provenance/base_navigation/record/claims.json').read_bytes())
-    for c in previous['claims']:require(current.get(c['id'])==c,'old claim contract changed: '+c['id'])
+    epoch=strict_json((root/'record/claim_integration_epochs.json').read_bytes())
+    check_prior_claims(previous['claims'],current,epoch)
     ids={'BGS-TRACE-024','BGS-FM-031','BGS-TRACE-025','BGS-TRACE-026','BGS-TRACE-027'}
     later=set()
     continuation=root/'record/wave3_promotion_mapping.json'
@@ -91,9 +124,9 @@ def run(root=ROOT):
     require('e_j(A)=0 for j>N' in words['BGS-TRACE-026'] and '-exp(-2s)/(4s^2)' in words['BGS-TRACE-026'],'hook extension/plateau sign lost')
     require('ceil(T_N/2)<=m<=T_N' in words['BGS-TRACE-027'] and 'full-prefix' in words['BGS-TRACE-027'] and '403' in words['BGS-TRACE-027'],'Ward window/export scope lost')
     # Source pins are historical inputs, not silently refreshed current statuses.
-    scoped=strict_json((root/'record/wave2_scoped_input_bindings.json').read_bytes());require(len(scoped['files'])==50,'targeted closure changed')
-    for rel,row in scoped['files'].items():require(sha(safe_path(root,row['source']))==row['sha256'],'reviewed pin changed: '+rel)
-    inputs=source_bytes(root)
+    inputs=sealed_source_bytes(root)
+    scoped=strict_json(inputs['record/wave2_scoped_input_bindings.json']);require(len(scoped['files'])==50,'targeted closure changed')
+    for rel,row in scoped['files'].items():require(hashlib.sha256(inputs[row['source']]).hexdigest()==row['sha256'],'reviewed pin changed: '+rel)
     contract=strict_json(inputs['record/wave2_replay_contract.json']);require(len(contract['tasks'])==8 and len({t['domain'] for t in contract['tasks']})==6,'replay domain closure differs')
     links=0
     for rel in [c['source'] for c in mapping['cards']]+['record/wave2_checked_integration_20261007.md']:
@@ -109,6 +142,6 @@ def run(root=ROOT):
     for cid in ids:require(cid.removeprefix('BGS-') in text,'missing manuscript scope '+cid)
     require('upper-half' in text and 'negative plateau' in text and 'remain open' in text,'manuscript scope exclusions lost')
     check_external_epoch(root,epoch)
-    return {'status':'passed','immutable_copies':len(immutable),'prepared_copies':85,'ward_sealed_files':7,'reviewed_input_pins':50,'scoped_cards':6,'new_theorem_ids':5,'unchanged_prior_claims':len(previous['claims']),'wrapper_links':links,'replay_tasks':8,'bounded_domains':6,'private_XML_extracts':0,'unavailable_Ward_archive_replayed':False,'scope':'Mapping, bytes, status and links; not proof audit or aggregate suite.'}
+    return {'status':'passed','immutable_copies':len(immutable),'prepared_copies':85,'ward_sealed_files':7,'reviewed_input_pins':50,'scoped_cards':6,'new_theorem_ids':5,'historical_prior_claims':len(previous['claims']),'unchanged_prior_claims':len(previous['claims'])-len(epoch['historical_claim_amendments']),'explicitly_amended_prior_claims':len(epoch['historical_claim_amendments']),'wrapper_links':links,'replay_tasks':8,'bounded_domains':6,'private_XML_extracts':0,'unavailable_Ward_archive_replayed':False,'scope':'Mapping, bytes, status and links; not proof audit or aggregate suite.'}
 
 if __name__=='__main__':print(json.dumps(run(),indent=2))

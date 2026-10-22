@@ -3,6 +3,8 @@
 
 Guards must precede imports and side effects, after docstrings/future imports.
 Historical record/ and evidence/ are outside this maintained-code inventory.
+The hash-preserved spectral source corpus is also a historical input, checked
+by rebuild_spectral_corpus.py, not a maintained verification entry point.
 Explicit-check-only modules remain usable under optimized Python.
 """
 from __future__ import annotations
@@ -33,7 +35,9 @@ def inventory(root: Path) -> list[tuple[Path, ast.Module]]:
     return [(p.relative_to(root), ast.parse(p.read_text(encoding='utf-8')))
             for directory in ('computations', 'supplement')
             for p in sorted((root / directory).rglob('*.py'))
-            if not {'__pycache__', 'tests'}.intersection(p.relative_to(root).parts)]
+            if not {'__pycache__', 'tests'}.intersection(p.relative_to(root).parts)
+            and p.relative_to(root).parts[:3] !=
+                ('computations', 'reference', 'spectral_research')]
 
 
 def protected_entries(root: Path) -> list[tuple[Path, ast.Module]]:

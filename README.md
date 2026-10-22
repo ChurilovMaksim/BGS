@@ -1,30 +1,10 @@
 # BGS — quantum chaos and spectral universality
 
-## Trace results and dependency closure, 22 October 2026
-
-The [review](record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
-finite-grid corrected-amplitude proof. TRACE-110 now has proved global
-$O(1/\log N)$ spectral matching and a matching Pell lower order.
-[TRACE-112](mathematics/displacement_density_trace_bound_20261021.md) supplies an
-independent logarithmic-time upper-bound route;
-[TRACE-113](mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
-uniform power-trace input with one threshold for all iterates.
-All statements have analytic project proofs with self-review, not external
-refereeing. Microscopic signed cancellation and BGS remain open.
-
-## Final spectral research edition, 21 October 2026
-
-The [organized fourteen-round research edition](mathematics/spectral_research/README.md)
-contains individual proofs, ten thematic reading paths, reference programs and
-execution evidence. [Review and adoption](record/spectral_final_integration_20261021.md)
-state exact proved and conditional scopes; the original microscopic hierarchy
-and BGS remain open. [Standalone remaining task](record/remaining_breakthrough_task_20261021.md).
-
 [Русский](README.ru.md) · [Research overview](RESEARCH.md) · [Corpus atlas](docs/corpus_atlas.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Complete manuscript](manuscript/README.md)
 
 The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
 
-**Scientific status (22 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The repository reconciliation of 20 October 2026 promoted no scientific result. [Scientific status](record/claim_ledger.md) · [Open proof obligations](mathematics/open_questions.md).
+**Scientific status (22 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The [22 October repository review](record/audits/repository_recheck_20261022/report.md) records its exact verification scope. [Registered status](record/claims.json) · [Open proof obligations](mathematics/open_questions.md).
 
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
@@ -104,22 +84,37 @@ The cyclic linear term has normalized shape $x=m/N$, whereas the CUE reference i
 
 ## Recent results and their boundaries
 
+The latest fixed-map results have project proofs with explicit time and scale limits:
+
+| Result | Established scope | Boundary |
+|---|---|---|
+| [Inserted trace, TRACE-109](mathematics/finite_grid_one_step_trace_20261021.md) | Finite-grid corrected amplitude; inserted trace error $O(N^{-1})$ | Selected insertion, not the full signed hierarchy |
+| [Spectral distance, TRACE-110](mathematics/spectral_orbit_distance_20261021.md) | Global $O(1/\log N)$ matching; matching lower order along Pell dimensions | Macroscopic matching does not imply microscopic statistics |
+| [Displacement density, TRACE-112](mathematics/displacement_density_trace_bound_20261021.md) | Uniform classical density control and an independent logarithmic-time trace route | No Heisenberg-time cancellation |
+| [Uniform power trace, TRACE-113](mathematics/fixed_kick_uniform_trace_bound_20261021.md) | $|\mathrm{Tr}\,U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$, with one size threshold for all $m$ | The bound is uninformative at $m\asymp N$ |
+
+The [fourteen-round research edition](mathematics/spectral_research/README.md)
+preserves 535 supplied source units with thematic reading paths and a
+[standalone remaining task](record/remaining_breakthrough_task_20261021.md).
+
 The auxiliary phase ensemble uses a Fourier seed of dimension $N=p^{2d}$,
 odd prime $p$, and independent uniform phases. Its scaled trace time
 $t=m/N$ is separate from the fixed kick strength in the deterministic model.
 
 | Theorem family | Established scope | Remaining implication |
 |---|---|---|
-| [Signed phase cluster sums](mathematics/phase_ensemble_continuation_20261019.md) | Total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
-| [Positive Cauchy projections](mathematics/cauchy_positive_source_boundary_20261019.md) | Exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
+| [Signed phase cluster sums](mathematics/phase_ensemble_continuation_20261019.md) | Author proofs, registered verification pending: total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
+| [Positive Cauchy projections](mathematics/cauchy_positive_source_boundary_20261019.md) | Author proofs, registered verification pending: exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
 | [Abel clock rigidity](mathematics/abel_clock_rigidity_20261016.md), [flat collision law](mathematics/wick_collision_poisson_20261016.md) | Sharp square-root stability and auxiliary Wick ratio $B/G\to e^{-\alpha^2}$ | Physical non-flat signed comparison |
 | [All-order process implication](mathematics/all_order_process_closure_20261015.md) | Complete signed hierarchy implies local Sine2 and local moment control | The physical hierarchy remains open |
 | [Full-depth feedback](mathematics/unconditional_feedback_flatness_20261013.md) | Entry/intensity bounds and fixed-order clocks under named startup inputs and cutoff | Initial microscopic law and signed transfer |
 
-These are project proofs and internal reviews at their stated scopes.
+The rows distinguish proved project results from deposited author proofs whose
+registered verification is pending. Consult the [complete registry](record/claim_registry.md)
+for each state and its exact boundary.
 The Gaussian benchmark is classical; external priority is not established.
 [Detailed research brief](RESEARCH.md) · [Review history](record/README.md) ·
-[Repository reconciliation](record/repository_reconciliation_20261020.md).
+[Repository reconciliation](record/audits/repository_recheck_20261022/report.md).
 
 ## Three reconstructed analytic results
 
@@ -184,7 +179,7 @@ attached article to maintained results and explicitly pending candidates.
 
 ## Read, reproduce, and cite
 
-For an accessible beginning, read the [mathematical background](docs/reader_guide.en.md). Then use the [theorem index](mathematics/results.md) or [topic map](mathematics/topics/README.md) to reach canonical proofs. The [claim ledger](record/claim_ledger.md) is authoritative for status, and [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) defines how to resolve conflicting surfaces.
+For an accessible beginning, read the [mathematical background](docs/reader_guide.en.md). Then use the [theorem index](mathematics/results.md) or [topic map](mathematics/topics/README.md) to reach canonical proofs. The [claim registry](record/claims.json) controls registered status; the [dated ledger](record/claim_ledger.md) explains changes, and [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) defines how to resolve conflicting surfaces.
 
 The [consolidated research manuscript](manuscript/README.md) is a **living, full-length scientific account**, intentionally retained while the research continues; it is neither a completed proof of BGS nor a replacement for proof sources. [Focused paper scopes](papers/README.md) are separate, potential publication units rather than asserted submissions.
 

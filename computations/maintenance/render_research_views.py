@@ -51,7 +51,7 @@ def projections(root):
            'note':'Generated from record/claims.json; registered programme prerequisites, not every lemma or proof of a downstream claim.'}
     view=['# Scientific dependency graph','',
           'Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.',
-          'The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.','',
+          'The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.','',
           f"**{len(rows)} registered nodes; {len(edges)} direct prerequisite edges.**",'',
           'An edge records a scoped programme prerequisite; it does not discharge a hypothesis.',
           '“None registered” does not mean unconditional or self-contained.',

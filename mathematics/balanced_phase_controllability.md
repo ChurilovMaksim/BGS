@@ -1,5 +1,7 @@
 # Balanced-phase regularization: a classical and quantum theorem
 
+**Stable claim IDs:** BGS-RES-017.
+
 Status: self-contained project derivation. The Lie-algebra mechanism is related to standard quantum-control criteria; priority for this explicit specialization is not claimed. Controllability permits varying controls and is not a theorem about eigenphase statistics of one fixed kicked propagator.
 
 ## 1. An explicit pair generating su(N)

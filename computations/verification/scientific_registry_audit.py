@@ -63,8 +63,15 @@ def audit_claims() -> tuple[dict[str, dict], set[str]]:
             fail(f"{cid}: invalid state {row.get('state')!r}")
         if not row.get("ledger_status"):
             fail(f"{cid}: missing ledger_status")
-        if "EXTERNAL" in row["ledger_status"] and not row.get("external_dependencies"):
-            fail(f"{cid}: external-theorem status lacks external_dependencies")
+        # ledger_status is historical prose, not a machine-readable theorem
+        # classification (SOURCE_OF_TRUTH.md). In particular, "NOT EXTERNALLY
+        # REFEREED" says nothing about the proof's external dependencies.
+        external = row.get("external_dependencies", [])
+        if (not isinstance(external, list)
+                or any(not isinstance(eid, str) or not EXTERNAL_RE.fullmatch(eid)
+                       for eid in external)
+                or len(set(external)) != len(external)):
+            fail(f"{cid}: external_dependencies must be a list of distinct external IDs")
         source = row.get("source")
         if not isinstance(source, str):
             fail(f"{cid}: missing source")

@@ -184,3 +184,34 @@ The separate successful v2 record validates against its preserved inputs.
 
 ERR-032 repairs integration-gate drift and optimized-entry protection.
 No mathematical statement is retracted or strengthened.
+
+
+## 22 October 2026: metadata and dependency corrections (ERR-052–055)
+
+The [full recheck](audits/repository_recheck_20261022/report.md) records missing
+external inputs for CAYLEY-006/007, a false provenance-string inference in the
+registry audit, missing source anchors, malformed errata paths and stale
+current summaries. The density formula retains exact prime-count endpoints
+to avoid an unnecessary quantitative PNT input. No claim state is changed;
+no theorem is retracted by this correction. Earlier evidence is unchanged.
+
+ERR-056: the first return-section synchronization check found proof details
+present only in generated TeX: the 32-class estimate and the Green-kernel
+derivation. They were restored to the authoritative Markdown before
+regeneration; no mathematical text was discarded to obtain a passing check.
+
+ERR-057: the full maintenance suite exposed a historical-input inventory
+misclassification and an out-of-date integration epoch. The immutable spectral
+source corpus is checked for byte preservation, not rewritten to satisfy a
+maintained-entry guard. Newer registry rows and prior corrections are now
+explicit epoch entries; mutation tests still reject undeclared changes.
+
+ERR-058: the margin compiler now fails before imports under optimized Python.
+Portable Wave2 uses three existing immutable governance copies with their
+original seals; the v1 source and original input-binding hashes remain
+unchanged. The current manuscript mapping was self-reviewed and refreshed
+explicitly, retaining its previous digest and the missing-old-bytes limit.
+
+ERR-059: two Markdown display defects were repaired at their canonical
+sources: the visible brace in Möbius equation (8), and separate displays
+for pair-heat equations (H22)/(H23). Their mathematical content is unchanged.

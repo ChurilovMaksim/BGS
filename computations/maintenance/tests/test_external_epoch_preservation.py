@@ -8,7 +8,7 @@ import unittest
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'computations/verification'))
-from wave2_integration_audit import check_external_epoch
+from wave2_integration_audit import check_external_epoch, check_prior_claims
 
 
 class ExternalEpochPreservation(unittest.TestCase):
@@ -28,7 +28,22 @@ class ExternalEpochPreservation(unittest.TestCase):
 
     def test_current_epoch_preserves_39_contracts(self):
         epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
-        self.assertEqual(check_external_epoch(ROOT,epoch),(39,12))
+        self.assertEqual(check_external_epoch(ROOT,epoch),(39,18))
+
+    def test_historical_claim_amendments_are_exact_and_explicit(self):
+        epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
+        historical=ROOT/'evidence/wave2_checked_20261007/raw/provenance/base_navigation/record/claims.json'
+        previous=json.loads(historical.read_text())['claims']
+        current={c['id']:c for c in json.loads((ROOT/'record/claims.json').read_text())['claims']}
+        check_prior_claims(previous,current,epoch)
+        mutated=copy.deepcopy(current)
+        mutated['BGS-CAYLEY-001']['boundary']+=' unreviewed change'
+        with self.assertRaisesRegex(RuntimeError,'outside reviewed amendment'):
+            check_prior_claims(previous,mutated,epoch)
+        mutated=copy.deepcopy(epoch)
+        mutated['historical_claim_amendments'][0]['historical_row_sha256']='0'*64
+        with self.assertRaisesRegex(RuntimeError,'provenance differs'):
+            check_prior_claims(previous,current,mutated)
 
     def test_modified_old_locator_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:

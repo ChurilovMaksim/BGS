@@ -1,7 +1,7 @@
 # Scientific dependency graph
 
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
-The [ledger](claim_ledger.md) controls scientific status; the JSON view has the same complete adjacency.
+The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
 **197 registered nodes; 241 direct prerequisite edges.**
 
@@ -20,8 +20,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-CAYLEY-003](../mathematics/cayley_direct_energy.md) | verification-pending | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
 | [BGS-CAYLEY-004](../mathematics/cayley_curve_uniform.md) | proved | `BGS-CAYLEY-002` | `EXT-CZ-2013` | 1 |
 | [BGS-CAYLEY-005](../mathematics/open_questions.md) | open | `BGS-CAYLEY-002`, `BGS-CAYLEY-003`, `BGS-CAYLEY-004` | None registered | 0 |
-| [BGS-CAYLEY-006](../mathematics/cayley_trace_gaussian_limit.md) | proved | None registered | None registered | 0 |
-| [BGS-CAYLEY-007](../mathematics/cayley_product_row_real_trace_ideal.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-006](../mathematics/cayley_trace_gaussian_limit.md) | proved | None registered | `EXT-BORDA-2020`, `EXT-FI-1980`, `EXT-WANG-1982`, `EXT-ZAGIER-1997` | 0 |
+| [BGS-CAYLEY-007](../mathematics/cayley_product_row_real_trace_ideal.md) | proved | None registered | `EXT-BT-1971` | 0 |
 | [BGS-CAYLEY-008](../mathematics/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-009](../mathematics/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-010](../manuscript/general_spectra.tex) | proved | None registered | None registered | 0 |

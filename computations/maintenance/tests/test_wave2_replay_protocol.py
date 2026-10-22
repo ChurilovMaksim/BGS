@@ -90,7 +90,8 @@ class ScienceProtocol(unittest.TestCase):
         a={'scientific':2,'checker':'b'*64,'proof':'f'*64};b={'scientific':2,'checker':'f'*64,'proof':'b'*64}
         with self.assertRaisesRegex(RuntimeError,'named extra-source provenance differs'):w.compare(a,b,t,self.context)
     def test_sources_current(self):
-        self.assertGreater(len(w.source_bytes()),50)
+        import wave2_portable_replay
+        self.assertGreater(len(wave2_portable_replay.sealed_source_bytes()),50)
 
 class DurableProtocol(unittest.TestCase):
     def fixture(self,root):

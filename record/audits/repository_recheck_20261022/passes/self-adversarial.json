@@ -1,0 +1,78 @@
+{
+  "pass_id": "self-adversarial",
+  "lanes": [
+    "adversarial"
+  ],
+  "scope": "Deck aliases, repeated eigenvalues, unbounded anisotropic weights, uniform-in-iterate threshold, pressure gap, degree drop and prime endpoint error; software mutations.",
+  "unit_ids": [],
+  "context": [
+    {
+      "path": "mathematics/finite_grid_one_step_trace_20261021.md",
+      "sha256": "68b0cf61eb5805c9b61792b91ad4a94385d4a0befb714e1191a43d597c6be252"
+    },
+    {
+      "path": "mathematics/displacement_density_trace_bound_20261021.md",
+      "sha256": "e310d98ce22abde91afd1e31907976004d2c7a9989b646697387432e62e4ff22"
+    },
+    {
+      "path": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+      "sha256": "bcaf8b80f009670cff50460660fd7826263cb1f461a966c132345aed9d402362"
+    },
+    {
+      "path": "mathematics/spectral_orbit_distance_20261021.md",
+      "sha256": "5de3fe36260d24d56408bf82caa0eeaf0d28edadbc4eef6736ffdc2896b3b67f"
+    },
+    {
+      "path": "mathematics/cayley_trace_gaussian_limit.md",
+      "sha256": "20aa5c611e360cc8e58902ecef9f59eb512fdc78e55533ca7bcb617d53f6fac3"
+    },
+    {
+      "path": "mathematics/cayley_product_row_real_trace_ideal.md",
+      "sha256": "34c061092d0b2a8146d4ca377a237e782c16c75456b845936cd8b3689c343e82"
+    },
+    {
+      "path": "mathematics/fixed_harmonic_return_gas.md",
+      "sha256": "8b0909e6660908a3210bd105d558d50cbda3eae1c5de90dbad2bec181bfab6c6"
+    },
+    {
+      "path": "mathematics/analytic_kick_return_gas.md",
+      "sha256": "55bd6b947e7d61b35087dcd832edc8661cd7d5f830ebcdd9e0583dfd69e9eef5"
+    },
+    {
+      "path": "mathematics/coboundary_mobius_diffusion.md",
+      "sha256": "bfd569fe30bbe00f5c5a11ae6578f377285e0694a99d50524210dc409301094a"
+    },
+    {
+      "path": "mathematics/heisenberg_pair_heat_formula.md",
+      "sha256": "f51a26d8e16d4c814d6933ef00a8b424da8b3a2e3e31be893d3b86d1789a42b9"
+    },
+    {
+      "path": "record/claims.json",
+      "sha256": "f1255ea338c8faf223ac3095292d2c895b669ed796b47be9ffa0a9f24c335f4a"
+    },
+    {
+      "path": "literature/external_dependencies.json",
+      "sha256": "2d5411cdda77cf3eaf5947b56c996b4b2d113267621ebc3f34bd92aef66eb200"
+    },
+    {
+      "path": "record/errata.json",
+      "sha256": "dc0d3a77399156a88430e3adeb737d838e9c4bdf096ea70ff47a73ad520022dd"
+    },
+    {
+      "path": "record/claim_integration_epochs.json",
+      "sha256": "016ab53bf893b44121903bad95c44c6413b96494ccfdccbd3155207bb49298fc"
+    }
+  ],
+  "executor": "coordinator",
+  "method": "self-review",
+  "status": "complete",
+  "model_assignment": {
+    "assignment_source": null,
+    "requested_model": null,
+    "requested_reasoning": null,
+    "actual_model": null,
+    "actual_reasoning": null,
+    "fallback_reason": null
+  },
+  "notes": "Actual host model/reasoning settings are not exposed. Complete denotes this pass scope only, not all mathematical assertions in the repository."
+}

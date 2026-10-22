@@ -2,12 +2,13 @@
 
 ## Current metadata coverage
 
-The [explicit audit pointer](metadata_audit.json) selects a 51-record snapshot.
-[The impact reconciliation](../record/bibliographic_impact_20261020.json)
-preserves the previous 46 observations and carries forward five documented
-16/19 October source reviews. No new primary-source acquisition or theorem
-applicability/priority certification is claimed. Earlier dated screens below
-retain their original coverage.
+The [explicit audit pointer](metadata_audit.json) selects a **57-record**
+snapshot. The [22 October arithmetic review](arithmetic_dependency_closure_20261022.md)
+adds five checked source-to-proof mappings for CAYLEY-006/007 to the previous
+52 observations, including the [Bowen–Ruelle check](bowen_ruelle_trace_closure_20261021.md).
+Earlier observations retain their dates and scope. Metadata agreement does
+not certify every application or establish priority. Earlier dated screens
+below retain their original coverage.
 
 This directory records exact external inputs, related prior results and
 limits of source/priority checks. A matching title or abstract is a lead;

@@ -1,5 +1,7 @@
 # Weighted-Wiener stability of finite-Fourier resonance nondegeneracy
 
+**Stable claim IDs:** BGS-RES-019.
+
 **Status: EXACT + FINITE-REGRESSION.** This is a project theorem derived from the unrestricted finite-Fourier isolated-mode theorem. It extends nondegeneracy to an explicit infinite-support neighbourhood of every nonconstant real trigonometric polynomial. It does **not** prove positivity for every analytic or smooth observable, and no external priority claim is made.
 
 Let `A in SL(2,Z)` be hyperbolic, put `C_A f=f o A^T`, and define
