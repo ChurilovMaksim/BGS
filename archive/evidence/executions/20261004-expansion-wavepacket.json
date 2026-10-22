@@ -1,0 +1,172 @@
+{
+  "schema": "bgs-targeted-execution-v1",
+  "date": "2026-10-04",
+  "status": "PASS targeted checks",
+  "local_base": "c203bc1a9621fc5cd3679d9ee8cb34cf2686a673",
+  "remote_base": "34d682096f03bd4b7bd033d99755a02d921eb79a",
+  "scope": "Targeted new-result and affected-surface checks; no complete historical suite or Lean build",
+  "wolfram": "Two current service calls returned MCP -32603 Internal error; replay source saved, no successful new Wolfram run claimed.",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "computations/verification/expansion_wavepacket_audit.py",
+        "--output",
+        "evidence/20261004/expansion_wavepacket_checks.json"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS\", \"prime_orders\": 19, \"group_products\": 14400, \"two_copy_orbits\": 11, \"finite_channels\": 2, \"odd_frames\": 3}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/verification/scientific_registry_audit.py"
+      ],
+      "exit_code": 0,
+      "output": "scientific-registry-audit: OK (59 claims, 22 external dependencies)\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/verification/repository_audit.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS check_canonical_identity\nPASS check_required\nPASS check_retired_julia\nPASS check_archive_contract\nPASS check_manuscript_surface\nPASS check_workflows\nPASS check_maintenance_surface\nPASS check_cpp_coverage\nPASS check_lean_coverage\nPASS check_bilingual_readmes\nPASS check_active_markdown_links\nPASS repository_audit\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_claim_registry.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "claim-registry-render: OK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_errata.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "errata-render: OK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_fixed_map_section.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "PASS fixed-map source synchronization\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_finite_orbit_section.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "finite-orbit manuscript section matches canonical Markdown\n"
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_return_sections.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "PASS return-law source synchronization\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-W",
+        "error::SyntaxWarning",
+        "-m",
+        "py_compile",
+        "computations/verification/expansion_wavepacket_audit.py",
+        "computations/maintenance/verify_workspace.py"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "manuscript_build": {
+    "directory": "/workspace/scratch/4100c8bb280d/bgs_discovery_20261004/unified-paper",
+    "command": [
+      "python3",
+      "computations/maintenance/build_unified_manuscript.py",
+      "--output-dir",
+      "/workspace/scratch/4100c8bb280d/bgs_discovery_20261004/unified-paper"
+    ],
+    "passes": 3,
+    "page_count": 244,
+    "pdf_sha256": "9afdded1176c68f160a4cf5ad41d92eb52a0e9faea469a74083df3299cf306b2",
+    "manifest_sha256": "74e910d9793d87dc692fcedca744984169a441d87e1f3b9596f2570708c70152",
+    "exit_code": 0
+  },
+  "precursor_sha256": "78ad96053e5fe4adf8f4a137f38b5f4d63dcb46c35cef801efcf89058db1fbc9",
+  "scientific_boundary": "FM-013 project proof of O_j(1) fixed traces; FM-016 fixed-map quantizer separation; TRACE-013 different-map auxiliary-gap obstruction. No fixed-strength Heisenberg mass, full BGS, independent referee, full suite, new Lean build or successful new Wolfram run.",
+  "source_sha256": {
+    "mathematics/fixed_time_wavepacket_trace_bound.md": "f832a28d8c0a5e4eba42a3844d27e5d8b24e6b4d6ca0241334d3f1f96d065022",
+    "mathematics/egorov_overlap_rigidity.md": "b0e735aa6f7352b6dc8a8ebf72b7ed2172b535ffbf328d9dbdfc3c25de4832fb",
+    "mathematics/arithmetic_word_expansion_obstruction.md": "b07049ab04925ab973372b92f93b2bc24826bac57056aec82d8e57e11fd8bf25",
+    "mathematics/fixed_map_resolvent_frontier.md": "5e975780fb403d7afd0b43b366fde4af26dbb33cc67e9b652bf0644cc7b719a7",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "c4e25311f8c9966df3baa7d10bd8f57e9ed35c83192f5a9403ef123db2cbcae4",
+    "computations/verification/expansion_wavepacket_audit.py": "eff261b52d452c5f2d7ee38bb43ae0f1d93cec5071c83bdcee115fbd2263a07e",
+    "computations/verification/expansion_wavepacket_checks.wl": "3b23add2023f4660c24807c04fd9e1eed23064c34bf84be3d885c36580e3be3e",
+    "literature/expansion_wavepacket_sources_20261004.md": "a7987b6ba756e11235d0128b23acae4f6a370d12b3ad93daad0cba04d2b6025a",
+    "record/expansion_wavepacket_review_20261004.md": "0104837d71f2e68d36d1411f142b4784b531945cef593339a6f4cd5e0e587c92",
+    "record/claims.json": "88bb31de8683ac2740dc524755ec58655723bdcc88f417aac6b977f23757827f",
+    "record/claim_ledger.md": "3414b473a5696c89579d3d75d71259987aebdb32ab1a4db34a69e8ebd1b84c98",
+    "literature/external_dependencies.json": "10e064a8fe26a332447aecd844e70af1087ebed7371224a71c178e4dbf5c979f"
+  },
+  "finite_checks_sha256": "ce69774c8b3cbdeda62bc80e495d22b38a06bafdf188a4c1a8797c20e34a9346",
+  "changed_file_sha256": {
+    "CHANGELOG.md": "4affbb831812e43fee25935d3ef41a605373cf0641a939e733bb36fa2964c44d",
+    "README.md": "54915b49e6d9034b0765a53ee855d03df2ac6d310a76e948fe9c9f8a422fed12",
+    "README.ru.md": "40b3126b4d639cdc30a9564e52b1a4471e86fddcbec08e1bab7500697addbfca",
+    "RESEARCH.md": "256015003dfc0324ffdeefb7680409bfc0d642ade8b98cbc5faaf432c088677f",
+    "computations/README.md": "5fb7734ec73c4c5ba54f562db7763541be08b38d440461f5d790df70fdd63db9",
+    "computations/maintenance/verify_workspace.py": "844b90a3841fdda187fa70b54ec9af99dc9d29a77148b17bdc6a05811096e008",
+    "computations/verification/expansion_wavepacket_audit.py": "eff261b52d452c5f2d7ee38bb43ae0f1d93cec5071c83bdcee115fbd2263a07e",
+    "computations/verification/expansion_wavepacket_checks.wl": "3b23add2023f4660c24807c04fd9e1eed23064c34bf84be3d885c36580e3be3e",
+    "evidence/20261004/expansion_wavepacket_checks.json": "ce69774c8b3cbdeda62bc80e495d22b38a06bafdf188a4c1a8797c20e34a9346",
+    "evidence/20261004/expansion_wavepacket_wolfram.json": "e27bed49daa46d61332b5b5dc9c60317ef339b786cbbf4a4b7f7061bf94cf936",
+    "literature/README.md": "92b6d20b1a7bec9272104e741d023126f4d280376c6c324b9678758e8efc1797",
+    "literature/expansion_wavepacket_sources_20261004.md": "a7987b6ba756e11235d0128b23acae4f6a370d12b3ad93daad0cba04d2b6025a",
+    "literature/external_dependencies.json": "10e064a8fe26a332447aecd844e70af1087ebed7371224a71c178e4dbf5c979f",
+    "manuscript/BGS_unified.tex": "b8508b25c66835699406e9b7cb2d579b73f2c15206b771727c01fc72b698e45e",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "c4e25311f8c9966df3baa7d10bd8f57e9ed35c83192f5a9403ef123db2cbcae4",
+    "mathematics/README.md": "e9c8fed28bac9da8f195b6cefc3a6a9460bccd2e24450120c71e5f11726d872e",
+    "mathematics/arithmetic_word_expansion_obstruction.md": "b07049ab04925ab973372b92f93b2bc24826bac57056aec82d8e57e11fd8bf25",
+    "mathematics/egorov_overlap_rigidity.md": "b0e735aa6f7352b6dc8a8ebf72b7ed2172b535ffbf328d9dbdfc3c25de4832fb",
+    "mathematics/fixed_map_resolvent_frontier.md": "5e975780fb403d7afd0b43b366fde4af26dbb33cc67e9b652bf0644cc7b719a7",
+    "mathematics/fixed_time_wavepacket_trace_bound.md": "f832a28d8c0a5e4eba42a3844d27e5d8b24e6b4d6ca0241334d3f1f96d065022",
+    "mathematics/open_questions.md": "c03c4daeae5cb8258eb93965f6e2ca02822c84c774be23a1202c16308895053f",
+    "mathematics/quadratic_coboundary_noise.md": "d503edcd19c0a1a9446856b9d256dfa45d5da81c153cde275e60b174541b97a4",
+    "mathematics/quadratic_noise_fixed_time_input.md": "0e283a7ffb552f5ffe5e4c715e7ea9260f6b67ba132d7079131d4b1c93985414",
+    "mathematics/results.md": "6a88eb9cc1187e687669933af41490a63305b50c83488e4c8cf9750371f440c5",
+    "mathematics/topics/fixed-map/README.md": "0dcf1f64ca7d79f79facab866cf5005d7a2b2f6b764b941431c90d78afe69140",
+    "mathematics/topics/spectral-obstructions/README.md": "418bed07bc1b68950bb486fed55202eb5dea031910620de09feb2fcc9af9fe28",
+    "mathematics/topics/trace-bridge/README.md": "dcdbeef62aedf03f4c510db3c0a5d0ca03a51c8deab65a805eb50a466b2317d1",
+    "record/claim_ledger.md": "3414b473a5696c89579d3d75d71259987aebdb32ab1a4db34a69e8ebd1b84c98",
+    "record/claim_registry.md": "a9e534240b82e1a2c2212bb2ec65d875cfe470aff6415f267d031b1fa91f13d9",
+    "record/claims.json": "88bb31de8683ac2740dc524755ec58655723bdcc88f417aac6b977f23757827f",
+    "record/expansion_wavepacket_review_20261004.md": "0104837d71f2e68d36d1411f142b4784b531945cef593339a6f4cd5e0e587c92",
+    "record/history/2026/INDEX.md": "dcfad9735e378b06b8bdfe60add1286f5ba18d74fd12d8fc512f02828f869d54",
+    "record/mathematics_topics.json": "dcc7c2fc42ef07be521c547ef2bbe042c984bd27174a7b791126c5208fbe8ebf",
+    "record/scientific_dependencies.json": "a10366b37f26f0a25eeefcd7f17bb21cc14ca1bdbb962ef6c8b660745f288f66",
+    "record/scientific_dependency_graph.md": "4fe12be8a6e87967d1edb0c2879414ba5051a1682324c595b516e8e7f08e3623"
+  }
+}

@@ -1015,10 +1015,10 @@
         "evidence/20260929/quadratic_noise_dynamics.json",
         "evidence/20260929/quadratic_noise_manifest.json",
         "evidence/20261004/expansion_wavepacket_checks.json",
-        "evidence/executions/20261004-expansion-wavepacket.json",
+        "archive/evidence/executions/20261004-expansion-wavepacket.json",
         "evidence/20261004/expansion_wavepacket_completion_checks.json",
         "evidence/20261004/expansion_wavepacket_wolfram_completion.json",
-        "evidence/executions/20261004-completion.json"
+        "archive/evidence/executions/20261004-completion.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py",
@@ -1123,7 +1123,7 @@
         "evidence/executions/20261004/polynomial-coboundary/manifest.json",
         "evidence/executions/20261004/polynomial-coboundary/checks.json",
         "evidence/20261004/polynomial_coboundary_wolfram.json",
-        "evidence/executions/20261004-polynomial-integration.json"
+        "archive/evidence/executions/20261004-polynomial-integration.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_polynomial_limit.py",
@@ -1277,7 +1277,7 @@
       "evidence": [
         "evidence/20261001/resonant_density_checks.json",
         "evidence/20261001/resonant_density_wolfram.json",
-        "evidence/executions/20261001-resonant-density.json"
+        "archive/evidence/executions/20261001-resonant-density.json"
       ],
       "verifiers": [
         "computations/verification/resonant_density_audit.py",
@@ -1305,11 +1305,11 @@
       "evidence": [
         "evidence/20261001/folded_quadratic_checks.json",
         "evidence/20261001/folded_quadratic_wolfram.json",
-        "evidence/executions/20261001-folded-quadratic.json",
+        "archive/evidence/executions/20261001-folded-quadratic.json",
         "evidence/20261004/folded_quadratic_manifest.json",
         "evidence/20261004/folded_quadratic_checks_corrected.json",
         "evidence/20261004/folded_quadratic_manifest_corrected.json",
-        "evidence/executions/20261004-folded-quadratic-format-correction.json"
+        "archive/evidence/executions/20261004-folded-quadratic-format-correction.json"
       ],
       "verifiers": [
         "computations/verification/folded_quadratic_audit.py",
@@ -1335,7 +1335,7 @@
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
       "evidence": [
         "evidence/20261004/expansion_wavepacket_checks.json",
-        "evidence/executions/20261004-expansion-wavepacket.json"
+        "archive/evidence/executions/20261004-expansion-wavepacket.json"
       ],
       "verifiers": [
         "computations/verification/expansion_wavepacket_audit.py"
@@ -1361,7 +1361,7 @@
       "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
       "evidence": [
         "evidence/20261004/expansion_wavepacket_checks.json",
-        "evidence/executions/20261004-expansion-wavepacket.json"
+        "archive/evidence/executions/20261004-expansion-wavepacket.json"
       ],
       "verifiers": [
         "computations/verification/expansion_wavepacket_audit.py"
@@ -1671,7 +1671,7 @@
         "evidence/executions/20261005/pair-heat/checks.json",
         "evidence/20261005/heisenberg_pair_heat_wolfram.json",
         "record/heisenberg_pair_review_20261005.md",
-        "evidence/executions/20261005-pair-heat-integration.json"
+        "archive/evidence/executions/20261005-pair-heat-integration.json"
       ],
       "verifiers": [
         "computations/verification/heisenberg_pair_heat_formula.py"
@@ -1729,7 +1729,7 @@
         "evidence/20261006/collective_diffusion_spectrum_contract.json",
         "evidence/executions/20261006/collective-diffusion-spectrum/manifest.json",
         "evidence/executions/20261006/collective-diffusion-spectrum/values.json",
-        "evidence/executions/20261006-collective-diffusion-integration.json"
+        "archive/evidence/executions/20261006-collective-diffusion-integration.json"
       ],
       "verifiers": [
         "computations/verification/collective_diffusion_gap.py"

@@ -1,0 +1,298 @@
+{
+  "schema": "bgs-degree-growth-integration-v1",
+  "date": "2026-10-05",
+  "base_commit": "9555cd19dbf7cac335320dc231f2a7b7bb71954f",
+  "claims": [
+    "BGS-FLOW-020"
+  ],
+  "proof_sha256": {
+    "mathematics/growing_degree_trace_projection.md": "8d1f24b798e44eb0cd8c2841dc624c56b584b0e39c27d83fc5bc331071c88a24"
+  },
+  "independent_internal_review": {
+    "path": "record/growing_degree_review_20261005.md",
+    "sha256": "92051f797dcc564fbd3e0434c46d8c29f9214903e9c573593efcc5f2f269b063",
+    "reviewers": 1,
+    "analytic_passes": 3,
+    "boundary": "Three passes by one fresh read-only reviewer. New mathematical implications reconstructed, inherited inputs retain earlier grades. Reviewer did not run the new checker, inspect all bibliographic metadata or certify world priority; no external refereeing or analytic Lean."
+  },
+  "bounded_manifest": {
+    "path": "evidence/executions/20261005/degree-growth/manifest.json",
+    "sha256": "8f1795c8b603bc9425375099724a34ffc8c17086f17b6f6fed6995de5ae7b7b5",
+    "exit_status": 0,
+    "input_unchanged": true,
+    "input_count": 11,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "wall_timeout_seconds": 55.0,
+    "runtime_seconds": 1.023948,
+    "validator": "valid evidence record; mathematical interpretation requires review",
+    "result_path": "evidence/executions/20261005/degree-growth/checks.json",
+    "result_sha256": "4efcae9c8ee573442eeb33ffb3bf6270ef587d5589a6fd6a010991a1b7e4e9e1",
+    "arithmetic": "Fraction exact rational real/imaginary pairs; no floating diagnostics",
+    "case_families": {
+      "exact_wick_gram_entries": 9787,
+      "exact_raw_vs_orthogonal_evaluation_cases": 15,
+      "exact_clock_partition_cases": 6,
+      "exact_actual_trace_design_lower_cases": 18,
+      "exact_mehler_coefficient_cases": 156,
+      "integer_packet_composition_cases": 255,
+      "exact_laguerre_interval_endpoint_cases": 3,
+      "exact_sublinear_blind_gram_entries": 612,
+      "exact_stable_band_covariance_cases": 225,
+      "exact_permutation_cut_join_cases": 66,
+      "exact_top_degree_generator_images": 77,
+      "exact_top_degree_casimir_gram_entries": 1445,
+      "full_tensor_casimir_matrices": 4,
+      "top_degree_interval_matrices": 14
+    },
+    "floating_point_diagnostics": 0,
+    "non_claims": [
+      "No analytic packet uniformity or asymptotic certificate",
+      "No original-map trajectory/large-N spectrum simulated",
+      "No analytic Lean, actual complementary estimate or BGS"
+    ]
+  },
+  "focused": {
+    "path": "build/degree-growth/focused.json",
+    "sha256": "5e994a0342f6b7515a6a56df670ce5909f1ee2cf5485ef28120f43c826776545",
+    "source_tree_unchanged": true,
+    "source_tree_sha256": "b93e9af79fc4b9f26657ab8cab2236d2833162a955b79a3c6e94ac74d93e428a",
+    "passed": 4,
+    "total": 4,
+    "selection": [
+      "growing_degree_trace_projection",
+      "clock_structure_and_heat_projection",
+      "microscopic_noise_removal",
+      "expansion_wavepacket_audit"
+    ],
+    "toolchain": {
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "packages": {
+        "numpy": "2.3.5",
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": "3.10.8",
+        "scipy": "1.17.0"
+      },
+      "git": "git version 2.51.1",
+      "cmake": null,
+      "cxx": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "boost_lib_version": null,
+      "requirements_sha256": "921ce31d490adf67593d00a6e92df271c9ebedd5bc26a3bf5aa6697dc8ff4ba0",
+      "cmake_lists_sha256": "9e55928bcc45365e1d536345860ebee4d2446febcd68862072326423eb1c17e0",
+      "verify_workspace_sha256": "652678dff127ab98c6d1745bf03f605c025c0cefef00469e62df7451d0a0023d"
+    },
+    "dependency_overlay": "/workspace/scratch/4100c8bb280d/bgs_completion_20261004/replay-dependencies",
+    "checks": [
+      {
+        "name": "clock_structure_and_heat_projection",
+        "source": "computations/verification/clock_structure_and_heat_projection.py",
+        "sha256": "9df506c8b3595a19776098fce4e533177c95374839083f15e92a349df20d298f",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/clock_structure_and_heat_projection.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/degree-growth/focused-logs/clock_structure_and_heat_projection.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.717,
+        "log_sha256": "63f6adc7392334775a2ed17e848badd5a89a7d0458b6ed17fbbf0a9d2a1581fa"
+      },
+      {
+        "name": "expansion_wavepacket_audit",
+        "source": "computations/verification/expansion_wavepacket_audit.py",
+        "sha256": "bc3faf4cfb9cafe1e4c39f9ca1a701ba9c5fe550ad4d201b667e00f8641aa9d7",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/expansion_wavepacket_audit.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/degree-growth/focused-logs/expansion_wavepacket_audit.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.519,
+        "log_sha256": "fb465dee9d22f452e0ddb146a87400fa5869a78b57596280d7e9273ff4eead3b"
+      },
+      {
+        "name": "growing_degree_trace_projection",
+        "source": "computations/verification/growing_degree_trace_projection.py",
+        "sha256": "438f4ab64df47cbb2dd01990a9d743906e7b2e1eea8613e9036d5a5be0a2559d",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/growing_degree_trace_projection.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/degree-growth/focused-logs/growing_degree_trace_projection.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.969,
+        "log_sha256": "4efcae9c8ee573442eeb33ffb3bf6270ef587d5589a6fd6a010991a1b7e4e9e1"
+      },
+      {
+        "name": "microscopic_noise_removal",
+        "source": "computations/verification/microscopic_noise_removal.py",
+        "sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/microscopic_noise_removal.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/degree-growth/focused-logs/microscopic_noise_removal.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.821,
+        "log_sha256": "56aaf834e52b88afcd778cb7a6852307b7beb283b404f5758e8d76624077db2b"
+      }
+    ],
+    "boundary": "Focused local executable replay; staged sources unchanged during run. Later integration metadata does not retroactively alter that snapshot. Lean, C++ and complete verifier coverage are separate."
+  },
+  "manuscript": {
+    "manifest_path": "build/degree-growth/manuscript/build_manifest.json",
+    "manifest_sha256": "1cd1bba2961253eca2ac7fa8531cb5a80ab6d8248e62f0a3899f58e1f3534d4d",
+    "pdf_path": "build/degree-growth/manuscript/BGS_unified.pdf",
+    "pdf_sha256": "3b8424bbaad7a970059827814c9822de060acd07435e08e4d848d2310df530eb",
+    "page_count": 252,
+    "passes": 3,
+    "sources_unchanged": true,
+    "forbidden_warnings": [],
+    "visually_inspected_pages": [
+      240,
+      241
+    ],
+    "page_images": {
+      "240": {
+        "path": "build/degree-growth/manuscript/review-240.png",
+        "sha256": "3fbc62e782ab7bed47568e2434db9f30f093c27a7b9170fcf73277ca1051f6bb"
+      },
+      "241": {
+        "path": "build/degree-growth/manuscript/review-241.png",
+        "sha256": "61a813507d03d7cbcaa4c2bf1ee5fa50bf95e11de5a7b6957261933a33cace8c"
+      }
+    },
+    "boundary": "Typesetting and visual checks; not mathematical certification."
+  },
+  "static_checks": {
+    "path": "build/degree-growth/static-checks.json",
+    "sha256": "878a5b5243638d4e7f4b9a30ae2d818c4fa353e55a72c338f5c383673b4f0467",
+    "status": "PASS",
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "computations/verification/scientific_registry_audit.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.051,
+        "stdout": "scientific-registry-audit: OK (70 claims, 28 external dependencies)\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/verification/repository_audit.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.162,
+        "stdout": "PASS check_canonical_identity\nPASS check_required\nPASS check_retired_julia\nPASS check_archive_contract\nPASS check_manuscript_surface\nPASS check_workflows\nPASS check_maintenance_surface\nPASS check_cpp_coverage\nPASS check_lean_coverage\nPASS check_bilingual_readmes\nPASS check_active_markdown_links\nPASS repository_audit\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/render_claim_registry.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.038,
+        "stdout": "claim-registry-render: OK\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/render_errata.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.037,
+        "stdout": "errata-render: OK\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_finite_orbit_section.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.116,
+        "stdout": "finite-orbit manuscript section matches canonical Markdown\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_return_sections.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 1.021,
+        "stdout": "PASS return-law source synchronization\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "computations/maintenance/sync_fixed_map_section.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.384,
+        "stdout": "PASS fixed-map source synchronization\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "-Werror::SyntaxWarning",
+          "-m",
+          "compileall",
+          "-q",
+          "computations"
+        ],
+        "exit_code": 0,
+        "seconds": 0.04,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.011,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "claims": 70,
+    "external_dependencies": 28
+  },
+  "scientific_status": {
+    "BGS-FLOW-020": "proved within its written hypotheses",
+    "actual_signed_heisenberg_pair_and_all_orders": "OPEN",
+    "BGS-TRACE-005": "OPEN",
+    "BGS-BGS-001": "OPEN"
+  },
+  "publication": "Exact publication commit and its subsequent CI observation are recorded separately; no self-referential publication SHA in this tracked object."
+}

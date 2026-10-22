@@ -1,0 +1,184 @@
+{
+  "schema": "bgs-all-order-integration-v1",
+  "base_commit": "be2e7a9c236df20a0e026a714c8c97327bde973a",
+  "date": "2026-10-05",
+  "claims": [
+    "BGS-FLOW-016",
+    "BGS-FLOW-017"
+  ],
+  "proof_sha256": {
+    "mathematics/local_moment_transport.md": "dcbf7ecdf146186188c03e4076d6aec8fe8bcf71397016a32c70049e9801757a",
+    "mathematics/coboundary_all_order_limit.md": "ac59bc85917aa5414cf1d3b6498a08af9bd65464213042e6d8379e4a86b3176f"
+  },
+  "independent_internal_review": {
+    "path": "record/all_order_review_20261005.md",
+    "sha256": "15888286aad265d1e25b0accedf97da33a0b243be2fa729e93f033d5a78eee40",
+    "reviewers": 1,
+    "boundary": "New implications checked; inherited inputs retain their evidence levels. Not external refereeing, priority or analytic Lean certification."
+  },
+  "bounded_manifest": {
+    "path": "evidence/executions/20261005/all-order/manifest.json",
+    "sha256": "8335b12b32f4c8289e06625d4abbe389dfee26c12020e2308297f8d6d23affcc",
+    "exit_status": 0,
+    "input_unchanged": true,
+    "validator": "valid evidence record; mathematical interpretation requires review"
+  },
+  "focused": {
+    "path": "build/all-order/focused.json",
+    "sha256": "2ae299f868a4fda8a404639eddf5a5f45b1d8e30b39d29eff502aa674baa5cc5",
+    "source_tree_unchanged": true,
+    "passed": 8,
+    "total": 8,
+    "checks": [
+      {
+        "name": "circular_dyson_relaxation",
+        "source": "computations/verification/circular_dyson_relaxation.py",
+        "sha256": "78a1f03f4c763cfaeb577951866104b620896f3c3913ccb8b865f3ac471abab9",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/circular_dyson_relaxation.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/circular_dyson_relaxation.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.566,
+        "log_sha256": "a9415c766e211f2357c2ee1a3b310aef868f0084cdcd7de0cd799f23d0ed72fb"
+      },
+      {
+        "name": "coboundary_general_start",
+        "source": "computations/verification/coboundary_general_start.py",
+        "sha256": "8cc0d85907388d8c5f35a8e2fd2783b3ccc98fa6c39c33c9050c41bcaa99a4a7",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/coboundary_general_start.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/coboundary_general_start.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.967,
+        "log_sha256": "ef99f826e6950ae47841975d8aa29526dd609bca7ce49cb3b481c0755c0eed50"
+      },
+      {
+        "name": "coboundary_joint_limit",
+        "source": "computations/verification/coboundary_joint_limit.py",
+        "sha256": "682cac6863baee3c68bffb50fe4c03086bd3fd434eb9406065dd68f478aec355",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/coboundary_joint_limit.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/coboundary_joint_limit.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.315,
+        "log_sha256": "754d0315a816b623e232a406607d33b7748b672bc9c37fb11d8e1e962b7993d5"
+      },
+      {
+        "name": "coboundary_mobius_diffusion",
+        "source": "computations/verification/coboundary_mobius_diffusion.py",
+        "sha256": "369a25d7cf7a5fa1a73cfa81e4e9bb96e746fba963c1005444e9f24d3f0801a6",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/coboundary_mobius_diffusion.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/coboundary_mobius_diffusion.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.767,
+        "log_sha256": "fd79bb27c774ae455479fb586bc74df1f6abbf1e3bbf494ab9dfc7dcd322b0be"
+      },
+      {
+        "name": "coboundary_polynomial_limit",
+        "source": "computations/verification/coboundary_polynomial_limit.py",
+        "sha256": "2f32cf50259ec7f4b8469df39fb128664fb992538353862f357ce1894ca23ff7",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/coboundary_polynomial_limit.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/coboundary_polynomial_limit.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.168,
+        "log_sha256": "1a7847fe9d9cac893415b6407094c109d8ba4c16230a8a87afbecee638aa1b53"
+      },
+      {
+        "name": "local_moment_transport",
+        "source": "computations/verification/local_moment_transport.py",
+        "sha256": "6ede9eec4d85dfe2fbc96952805fea44361287acecfff81a2cf91a4d7e6e203d",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/local_moment_transport.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/local_moment_transport.json"
+        ],
+        "exit_code": 0,
+        "seconds": 14.753,
+        "log_sha256": "986cece9098424b87e406c62176041eebbbc15535eb8594595f61578f2b275df"
+      },
+      {
+        "name": "microscopic_noise_removal",
+        "source": "computations/verification/microscopic_noise_removal.py",
+        "sha256": "fe7aad5ceadcaece8fe9fa2e9cc24b456b26b30615dfd788376542a0703b4158",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/microscopic_noise_removal.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/microscopic_noise_removal.json"
+        ],
+        "exit_code": 0,
+        "seconds": 1.318,
+        "log_sha256": "7e5ffe172a394e6df7b1fd741557d2e8f6164af9c8949c957f94103a1ae99053"
+      },
+      {
+        "name": "quadratic_noise_dynamics",
+        "source": "computations/verification/quadratic_noise_dynamics.py",
+        "sha256": "7dcb306694e52976ea4b67c4104a10f8848d934dac0ab75383745b4ec9ff96a7",
+        "source_unchanged": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/scratch/00a8504af897/BGS/computations/verification/quadratic_noise_dynamics.py",
+          "--output",
+          "/workspace/scratch/00a8504af897/BGS/build/all-order/focused-logs/quadratic_noise_dynamics.json"
+        ],
+        "exit_code": 0,
+        "seconds": 0.365,
+        "log_sha256": "76b8bf7c12b6fb3d55f29c094bf8bd8a6b20836c93725d3322f03f81dd9f8650"
+      }
+    ],
+    "scope": "Eight selected maintained Python verifiers, dirty staged source snapshot, two workers; no local complete C++/Lean run. Subsequent changes only complete provenance/navigation and remove final EOF whitespace."
+  },
+  "static_checks": [
+    "scientific registry: 67 claims, 26 external dependencies",
+    "repository audit including active Markdown links",
+    "claim-registry render --check",
+    "fixed-map manuscript synchronization --check",
+    "compileall -W error::SyntaxWarning",
+    "git diff --cached --check"
+  ],
+  "manuscript": {
+    "path": "build/all-order/manuscript/BGS_unified.pdf",
+    "build_manifest_sha256": "e008303ccbf39be6eab0970bb0195c52a0d188d8cc06678557dc752cda773b31",
+    "page_count": 250,
+    "pdf_sha256": "214b387fe5f5fb73054c17b06bc39af6381495afbbaca7a780755de07a35e27e",
+    "passes": 3,
+    "forbidden_warnings": [],
+    "sources_unchanged": true,
+    "visually_inspected_pages": [
+      238,
+      239
+    ],
+    "page_image_sha256": {
+      "238": "11cfa6c3c242261d0f8d667c9a2758be819ed289a633f94a044a11d129bc4907",
+      "239": "bf27e57cea998b0b1c4dde344adcb3bde40b76ab429f6c42e130b90fdc4587a7"
+    },
+    "scope": "Complete consolidated source, not only extracted new sections. Visual check covers the two new pages."
+  },
+  "publication": "Fast-forward main authorized; exact-commit CI recorded after publication in ignored build/all-order/ci-results.json, avoiding a self-referential tracked commit record.",
+  "scientific_boundary": "Original noisy chain all fixed orders and conditional origin L2 proven under reference/time/step hypotheses; exact deterministic defect vanishing, all-order polynomial schedule, growing-order uniformity and full BGS remain open."
+}

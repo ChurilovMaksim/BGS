@@ -1,0 +1,689 @@
+{
+  "checkpoint": "20261006-operator-transfer",
+  "claim_id": "BGS-FM-018",
+  "recorded_at_utc": "2026-10-06T06:16:47.742861+00:00",
+  "opening_main": "89645900bdbaace5d4956f306f6dccc464163e35",
+  "verification_checkout": {
+    "commit": "89645900bdbaace5d4956f306f6dccc464163e35",
+    "dirty": true,
+    "integration_uncommitted_at_verification": true
+  },
+  "analytic_review": {
+    "type": "Three passes by one fresh read-only internal reviewer; no external referee or formal certificate",
+    "accepted_math_body_sha256": "7de52d7a140fc8f6c74ba56fdd755cc06d55f2917605039c185669f30ba420e4",
+    "promoted_source_sha256": "ea668cded8831626a15462285ff915cc9e29139dac5a326d104e6e850742ff4c",
+    "mathematical_body_byte_identity_after_heading": true,
+    "review": "record/frozen_operator_transfer_review_20261006.md",
+    "scope": "New O1--O29 implications and classical mixing leaf; whole FM-001 and FM-006 Ruelle/Pesin dependency closure inherited; priority unverified"
+  },
+  "bounded_exact_run": {
+    "manifest": "evidence/executions/20261006/operator-transfer/manifest.json",
+    "manifest_sha256": "c08859826bb67bb030b977a80039071db61a4b0212e9252bddd454762fd31686",
+    "result": "evidence/executions/20261006/operator-transfer/checks.json",
+    "result_sha256": "045130065d7c074ddac11a059784cd61bff13bb51bdec89e88e198a40b8dc44f",
+    "status": "completed",
+    "runtime_seconds": 0.718811,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 20,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "arithmetic": "Exact integer phases, cyclotomic polynomials over Z and Fraction/Q(i); pure standard library; no sampling",
+    "assertion": "All implemented finite assertions in the contract passed; no analytic asymptotic certificate"
+  },
+  "wolfram": {
+    "response": "evidence/20261006/frozen_operator_transfer_wolfram.json",
+    "response_sha256": "11485ad749ec58c262602a1179d7a3be1a8e66f4ccf51722499053f805f415c4",
+    "source_sha256": "755d5d86475eea846dc61bee1a341e8a4c7513ef5ca03f9531fef46510cdf920",
+    "displayed_checks": 6,
+    "all_displayed_checks_true": true,
+    "diagnostics_preserved": true,
+    "kernel_version_and_effective_cap_returned": false,
+    "scope": "Supplementary six symbolic identities; no gap or BGS certificate"
+  },
+  "initial_static_results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "scientific-registry",
+        "command": "python3 computations/verification/scientific_registry_audit.py",
+        "result": {
+          "chunk_id": "3d2a0a",
+          "wall_time_seconds": 2.1976e-05,
+          "exit_code": 0,
+          "original_token_count": 17,
+          "output": "scientific-registry-audit: OK (72 claims, 28 external dependencies)\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "repository-structure",
+        "command": "python3 computations/verification/repository_audit.py",
+        "result": {
+          "chunk_id": "569ea3",
+          "wall_time_seconds": 0.036331686,
+          "exit_code": 1,
+          "original_token_count": 99,
+          "output": "FAIL repository_audit: broken active Markdown link(s): evidence/README.md -> executions/20261006-operator-transfer-integration.json\nPASS check_canonical_identity\nPASS check_required\nPASS check_retired_julia\nPASS check_archive_contract\nPASS check_manuscript_surface\nPASS check_workflows\nPASS check_maintenance_surface\nPASS check_cpp_coverage\nPASS check_lean_coverage\nPASS check_bilingual_readmes\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "generated-views",
+        "command": "python3 - <<'PY'\nimport subprocess\nfor a in ['computations/maintenance/render_claim_registry.py','computations/maintenance/render_errata.py','computations/maintenance/sync_return_sections.py','computations/maintenance/sync_finite_orbit_section.py','computations/maintenance/sync_fixed_map_section.py']:\n subprocess.run(['python3',a,'--check'],check=True)\nPY",
+        "result": {
+          "chunk_id": "8c5f3f",
+          "wall_time_seconds": 1.001672659,
+          "session_id": 95606,
+          "original_token_count": 11,
+          "output": "claim-registry-render: OK\nerrata-render: OK\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "strict-compilation",
+        "command": "python3 -W error::SyntaxWarning -m compileall -q computations",
+        "result": {
+          "chunk_id": "7c0791",
+          "wall_time_seconds": 1.9005e-05,
+          "exit_code": 0,
+          "original_token_count": 0,
+          "output": ""
+        }
+      }
+    }
+  ],
+  "resolved_integration_issues": [
+    "Initial repository audit found the not-yet-created integration receipt link; final audit is recorded separately after creating the receipt.",
+    "Two first-pass manuscript attempts returned 1. The second explicitly reported undefined mathscr; the first logs were truncated without an explicit TeX error line. Added installed mathrsfs package to the canonical preamble and updated revision date. The complete final build then passed unchanged-input and warning gates.",
+    "The staged diff check found an extra blank EOF line in the new contract/response JSON files; normalized those JSON whitespace endings and updated their integration hashes. The execution inputs and mathematical content did not change."
+  ],
+  "manuscript": {
+    "command": [
+      "python3",
+      "computations/maintenance/build_unified_manuscript.py",
+      "--output-dir",
+      "build/operator-transfer/manuscript-final"
+    ],
+    "completed_build": {
+      "status": "PASS",
+      "started_utc": "2026-10-06T06:15:17.027833+00:00",
+      "scope": "Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.",
+      "engine": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+      "source_sha256": {
+        "manuscript/BGS_unified.tex": "2925de1c4b74cad31e94b4e537aff7d28ca7ad5c3348d7e466af096c0cdc7801",
+        "manuscript/audit_and_frontier.tex": "0b94e178fd5335464e6be316542ae72d5aaf7785f959387e25ff0648f7ba7950",
+        "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+        "manuscript/final_delivery_note.tex": "66382ac361f36d64c11b9903fb730652a9034b735e0704e0d3dfc1e558a13f03",
+        "manuscript/front_matter.tex": "e5b744fd7f1d6e47aed81fc1f129221c930538e1bbc1cef5a4c3f0b5fd53690d",
+        "manuscript/general_spectra.tex": "43f339d0afc0a7951f82bfeb9d3f86339ad6611673707ee5b9f1d484ce02896d",
+        "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+        "manuscript/unified_bibliography.tex": "9358825bed3936191767d3c4d31169c3d82e58bb29caf8581949acba04568add",
+        "manuscript/unified_sections/analytic.tex": "c00a28c93b98baf15334a17db93fb30ff180ab8dea77bba0ddde6b49d49bb973",
+        "manuscript/unified_sections/analytic_resonance_rigidity.tex": "0ee2c259a2fafc68492d907cb7cf0b05af86b0a43b577d7c2f32fa9be5913614",
+        "manuscript/unified_sections/arithmetic_core_part1.tex": "61672319f6f5789b14533ad8737c39e7f4125f147ef58041129a04c273b81589",
+        "manuscript/unified_sections/arithmetic_core_part2.tex": "2d0c03ee9fac2d1e68812086ce5947592fa0cb6e41f98ce10c2ba448125bf8e8",
+        "manuscript/unified_sections/arithmetic_core_part3.tex": "c6fde3e758d76b5d9beb3eb568a0af305a3c15d026a9774c1539396595f9ea31",
+        "manuscript/unified_sections/arithmetic_core_part4.tex": "d226d26e0455ece2623daecb99c7fb321294e9eb3f1ed67ab15ed1bdd4d347af",
+        "manuscript/unified_sections/arithmetic_core_part5.tex": "6732629a3c035e2f421e4abf1ed55580f728248d289e45b1f0069abb58850660",
+        "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+        "manuscript/unified_sections/cayley_curve_uniform.tex": "a6a6ac5f97696347fc268a259cdfe7f773d2abb029b8e3bc796dfb3450f6772c",
+        "manuscript/unified_sections/cayley_scaling.tex": "d02e489a6eb68d1e6931c3c8bd2aba64a7b6539eea6a91ed3f059b158677b4f6",
+        "manuscript/unified_sections/cayley_trace_gaussian.tex": "5dfd87a9637059e248fffc665385905b1ac6096a4a68b3549ab45753ab91bcc4",
+        "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+        "manuscript/unified_sections/coboundary_part1.tex": "6ebcafb50bb2180ba62d21f389a8515bafdac0fac3f646cccdc2a2d18e9e5b20",
+        "manuscript/unified_sections/coboundary_part2.tex": "ca860c57d593d86abec7403c190dc48ae757131c18851d883469cb6f96078d9e",
+        "manuscript/unified_sections/coboundary_part3.tex": "650041a3d7117cd0f99a9a9ca00b269abb84111c44bbc34043618a9752300500",
+        "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+        "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+        "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+        "manuscript/unified_sections/finite_orbit_resonance.tex": "d964499ffb3cd53962b307afe6537367f8da001f40f0ffa0523c6a5449950226",
+        "manuscript/unified_sections/fixed_map_frontier.tex": "b42fbf3ff06d5867d6b503b8e5a7767402360e957a4887f505b44ad924b5e19f",
+        "manuscript/unified_sections/floquet_part1.tex": "45a041fb919d9ad3e13de2c39fb2b09871003fa6c14a49dbff8a980fb820ceb1",
+        "manuscript/unified_sections/floquet_part2.tex": "0f58e78312bfb14c5d58a009366c83d8e04c9d82908b0568509857f2cfcf5587",
+        "manuscript/unified_sections/floquet_part3.tex": "cbd4c2d393c0908e6b835408310d169e54c8c3a5ae713fb1da797e96f2664820",
+        "manuscript/unified_sections/floquet_part4.tex": "f2b7859935c17bc8da0032d322b67895195f8a9146b2ae7320ecdbc41c2d88ec",
+        "manuscript/unified_sections/four_mode.tex": "aba02e34d17d0df6ff5da571c8592699a860375c4681ef666dfe3726dd307ea3",
+        "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+        "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+        "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+        "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+        "manuscript/unified_sections/locality_part1.tex": "4fa3f9c327af9617397c5fa98776d7a07daa42fa2d2e54d17677505edef01c0d",
+        "manuscript/unified_sections/locality_part2.tex": "dcae47f13d6cf3c93f464eb9e150505ff088cc771138c180a21f819ea6cd2d3f",
+        "manuscript/unified_sections/locality_part3.tex": "3980aca87bff9a2635f88795b225fdaf9ca465cb4526da589a632786285f4b72",
+        "manuscript/unified_sections/locality_part4.tex": "12eb40ee83198d7d2f801de174082f246b63e6bb0fe9768aba610f8a8a868cb6",
+        "manuscript/unified_sections/locality_part5.tex": "69850dc9c78d44801142533626ddf9e859f36c09c5f556b2e7f829558519af13",
+        "manuscript/unified_sections/locality_part6.tex": "ac6cb02cdaa9275fb18b2257f2bfc1918562a51f9d6b93a159cd7deb32539d47",
+        "manuscript/unified_sections/locality_part7.tex": "95d6927d7593ccb8f8a0b3188ba89a5354d45515567b1eddd35053fa182b67b0",
+        "manuscript/unified_sections/magnetic.tex": "aab23d2df4cef52331c63c494d57f2db23cd997bf948f1dc4d2491f1067cf400",
+        "manuscript/unified_sections/mixed.tex": "8069ab82eaa31ae49bfb1b3fc7dcf05fc3c31831cf7973a443f9290f9c73c454",
+        "manuscript/unified_sections/nondegeneracy_part1.tex": "0acf4ad454b8aa4d05ad67ea2a27c8fe3646978da0a40e5d566bd3c00e5b300e",
+        "manuscript/unified_sections/nondegeneracy_part2.tex": "e2bb4609697e4c3c6e23fc8a77461dbc68da93e62fba75f5849736f682852593",
+        "manuscript/unified_sections/nondegeneracy_part3.tex": "e1d607498c2129cacaf4f143f9c871184ee5dc8e5c514d2d409592ff77caf343",
+        "manuscript/unified_sections/nondegeneracy_part4.tex": "cbf2e3119617e9e203580b63909dc76e5085c43c32d6675559dfe253ff8d35c5",
+        "manuscript/unified_sections/nondegeneracy_part5.tex": "dfd4fb68bb61e37deae065b0d6e0334dad313135633c716a803334fe0dc6df9f",
+        "manuscript/unified_sections/nondegeneracy_part6.tex": "1b2b5bc55141a07ed5d2d0ae44f521073adf2ec7df92a6b4891dabedbe1427a4",
+        "manuscript/unified_sections/nondegeneracy_part7.tex": "93bb3717182d10ef7dc39fbfc44c67d9b05d1b56e2fe1ece275f4e789e5f3c63",
+        "manuscript/unified_sections/nondegeneracy_part8.tex": "f535063a31b074d91a0cdb163f6086c42e439798e166e9e72b7616a1a3c86be7",
+        "manuscript/unified_sections/pell_blocks.tex": "7c62ea0a0f412487a4797352d281e375082f182dffdeaa7e3f338f59d2811449",
+        "manuscript/unified_sections/pell_harmonic_returns.tex": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec",
+        "manuscript/unified_sections/pell_harmonic_transition.tex": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab",
+        "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+        "manuscript/unified_sections/polynomial_multisphere.tex": "b0a73db94e5af9fee8ce4478f2b1679509d267990ae8b5648898b1430a333d7e",
+        "manuscript/unified_sections/research_20260921.tex": "caf8c4341d7f383efd66d84ddb60939b62f6a1951501218e37deea5c3a6625c0",
+        "manuscript/unified_sections/return_gas.tex": "85396690960a33abb30bd8a0bb7e6642fe9ca40781607a2bd3dd07c190881876",
+        "manuscript/unified_sections/return_general.tex": "6a055d7af031591ef0e47ea261f27eeee1b102025efaa7153622781e091571d3",
+        "manuscript/unified_sections/return_obstruction.tex": "a0b837a2a9d40f7740c7ef61a587a350720f1cdd71bb46e709775298db7dedba",
+        "manuscript/unified_sections/return_periodic.tex": "bc36c206f2ef066a54c19bfeeee2de878d1982cd9097130c35a787ab07322ea6",
+        "manuscript/unified_sections/return_phase.tex": "ed0af9bd53003a3d0d734ccaef0a3d559f4830f366db658bb369b186b9dcfa70",
+        "manuscript/unified_sections/return_position.tex": "b30ee8787ea941f0cebea568cbe20929f2fc0acb81b6587d6f0f3bf50807b2c3",
+        "manuscript/unified_sections/return_words.tex": "ba2d35409b20dad1e26880952210512b15ad0ccc96a9e6f2245837f145e36be8",
+        "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+        "manuscript/unified_sections/row_frontier.tex": "52cf66b3ea3681d5ca0198a46c2a854a94a16fc08f4372c398f4c02a73036c92",
+        "manuscript/unified_sections/sharp.tex": "06f53aaa9e3cdf7a37392563f8f4e7e0d9b3d6e292d5b152635c8b6ef48910af",
+        "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+        "manuscript/unified_sections/smooth.tex": "91254920ba583cd2a99301cf53848ba6a95337cae8f6f39ddd5f58ab73ed08a9",
+        "manuscript/unified_sections/smooth_residual.tex": "5ac2d80d4489ad708594feed8dbbc3657158069c3e4f8435e7b851ce36555b5d",
+        "manuscript/unified_sections/spectral_modules.tex": "1ee12569246197585c21795b8b47c10b0c2e2e7e9547a43d305e51804e5b393a",
+        "manuscript/unified_sections/spectral_resolution.tex": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+        "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+        "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+        "manuscript/unified_sections/wiener_riesz.tex": "fdf370992aa6c8092d2cb3a3622fe7ccaa571ea3b2e110831fdedb9d358ebcf6",
+        "manuscript/weighted_and_edgeworth.tex": "97df939f30e5cafd8d03b97275a262b616d54f21fd529d07239c3e145cf847ad"
+      },
+      "passes": [
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/00a8504af897/BGS/build/operator-transfer/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-1.log",
+          "sha256": "b1158f5a667651e4231b9b919d26f7dcf4466e2f54b08168d806910d835f9e23"
+        },
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/00a8504af897/BGS/build/operator-transfer/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-2.log",
+          "sha256": "76d1def4a96f64472b896aaa00418fc1ce8932f5d386e81bd78ef85d26a6f2c9"
+        },
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/00a8504af897/BGS/build/operator-transfer/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-3.log",
+          "sha256": "c027d53f523946f6750a4aa15c94fa9322bdb0a6a21239353fdae3230ffb468b"
+        }
+      ],
+      "sources_unchanged": true,
+      "forbidden_warnings": [],
+      "runtime_seconds": 5.740267440000025,
+      "page_count": 254,
+      "pdf_sha256": "8df71f2332ce8e960414c4f81f6e6c87fe4e2a89b93bda97eae6209a64941702",
+      "pdf_bytes": 1895837,
+      "latex_log_sha256": "9f720dea9dbb8d70e4dadb732bf8d02296e10dab5a64a6fbaba71169026d55f8"
+    },
+    "failed_attempts": [
+      {
+        "status": "FAIL",
+        "started_utc": "2026-10-06T06:13:15.687183+00:00",
+        "scope": "Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.",
+        "engine": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+        "source_sha256": {
+          "manuscript/BGS_unified.tex": "b8508b25c66835699406e9b7cb2d579b73f2c15206b771727c01fc72b698e45e",
+          "manuscript/audit_and_frontier.tex": "0b94e178fd5335464e6be316542ae72d5aaf7785f959387e25ff0648f7ba7950",
+          "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+          "manuscript/final_delivery_note.tex": "66382ac361f36d64c11b9903fb730652a9034b735e0704e0d3dfc1e558a13f03",
+          "manuscript/front_matter.tex": "e5b744fd7f1d6e47aed81fc1f129221c930538e1bbc1cef5a4c3f0b5fd53690d",
+          "manuscript/general_spectra.tex": "43f339d0afc0a7951f82bfeb9d3f86339ad6611673707ee5b9f1d484ce02896d",
+          "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+          "manuscript/unified_bibliography.tex": "9358825bed3936191767d3c4d31169c3d82e58bb29caf8581949acba04568add",
+          "manuscript/unified_sections/analytic.tex": "c00a28c93b98baf15334a17db93fb30ff180ab8dea77bba0ddde6b49d49bb973",
+          "manuscript/unified_sections/analytic_resonance_rigidity.tex": "0ee2c259a2fafc68492d907cb7cf0b05af86b0a43b577d7c2f32fa9be5913614",
+          "manuscript/unified_sections/arithmetic_core_part1.tex": "61672319f6f5789b14533ad8737c39e7f4125f147ef58041129a04c273b81589",
+          "manuscript/unified_sections/arithmetic_core_part2.tex": "2d0c03ee9fac2d1e68812086ce5947592fa0cb6e41f98ce10c2ba448125bf8e8",
+          "manuscript/unified_sections/arithmetic_core_part3.tex": "c6fde3e758d76b5d9beb3eb568a0af305a3c15d026a9774c1539396595f9ea31",
+          "manuscript/unified_sections/arithmetic_core_part4.tex": "d226d26e0455ece2623daecb99c7fb321294e9eb3f1ed67ab15ed1bdd4d347af",
+          "manuscript/unified_sections/arithmetic_core_part5.tex": "6732629a3c035e2f421e4abf1ed55580f728248d289e45b1f0069abb58850660",
+          "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+          "manuscript/unified_sections/cayley_curve_uniform.tex": "a6a6ac5f97696347fc268a259cdfe7f773d2abb029b8e3bc796dfb3450f6772c",
+          "manuscript/unified_sections/cayley_scaling.tex": "d02e489a6eb68d1e6931c3c8bd2aba64a7b6539eea6a91ed3f059b158677b4f6",
+          "manuscript/unified_sections/cayley_trace_gaussian.tex": "5dfd87a9637059e248fffc665385905b1ac6096a4a68b3549ab45753ab91bcc4",
+          "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+          "manuscript/unified_sections/coboundary_part1.tex": "6ebcafb50bb2180ba62d21f389a8515bafdac0fac3f646cccdc2a2d18e9e5b20",
+          "manuscript/unified_sections/coboundary_part2.tex": "ca860c57d593d86abec7403c190dc48ae757131c18851d883469cb6f96078d9e",
+          "manuscript/unified_sections/coboundary_part3.tex": "650041a3d7117cd0f99a9a9ca00b269abb84111c44bbc34043618a9752300500",
+          "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+          "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+          "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+          "manuscript/unified_sections/finite_orbit_resonance.tex": "d964499ffb3cd53962b307afe6537367f8da001f40f0ffa0523c6a5449950226",
+          "manuscript/unified_sections/fixed_map_frontier.tex": "b42fbf3ff06d5867d6b503b8e5a7767402360e957a4887f505b44ad924b5e19f",
+          "manuscript/unified_sections/floquet_part1.tex": "45a041fb919d9ad3e13de2c39fb2b09871003fa6c14a49dbff8a980fb820ceb1",
+          "manuscript/unified_sections/floquet_part2.tex": "0f58e78312bfb14c5d58a009366c83d8e04c9d82908b0568509857f2cfcf5587",
+          "manuscript/unified_sections/floquet_part3.tex": "cbd4c2d393c0908e6b835408310d169e54c8c3a5ae713fb1da797e96f2664820",
+          "manuscript/unified_sections/floquet_part4.tex": "f2b7859935c17bc8da0032d322b67895195f8a9146b2ae7320ecdbc41c2d88ec",
+          "manuscript/unified_sections/four_mode.tex": "aba02e34d17d0df6ff5da571c8592699a860375c4681ef666dfe3726dd307ea3",
+          "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+          "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+          "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+          "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+          "manuscript/unified_sections/locality_part1.tex": "4fa3f9c327af9617397c5fa98776d7a07daa42fa2d2e54d17677505edef01c0d",
+          "manuscript/unified_sections/locality_part2.tex": "dcae47f13d6cf3c93f464eb9e150505ff088cc771138c180a21f819ea6cd2d3f",
+          "manuscript/unified_sections/locality_part3.tex": "3980aca87bff9a2635f88795b225fdaf9ca465cb4526da589a632786285f4b72",
+          "manuscript/unified_sections/locality_part4.tex": "12eb40ee83198d7d2f801de174082f246b63e6bb0fe9768aba610f8a8a868cb6",
+          "manuscript/unified_sections/locality_part5.tex": "69850dc9c78d44801142533626ddf9e859f36c09c5f556b2e7f829558519af13",
+          "manuscript/unified_sections/locality_part6.tex": "ac6cb02cdaa9275fb18b2257f2bfc1918562a51f9d6b93a159cd7deb32539d47",
+          "manuscript/unified_sections/locality_part7.tex": "95d6927d7593ccb8f8a0b3188ba89a5354d45515567b1eddd35053fa182b67b0",
+          "manuscript/unified_sections/magnetic.tex": "aab23d2df4cef52331c63c494d57f2db23cd997bf948f1dc4d2491f1067cf400",
+          "manuscript/unified_sections/mixed.tex": "8069ab82eaa31ae49bfb1b3fc7dcf05fc3c31831cf7973a443f9290f9c73c454",
+          "manuscript/unified_sections/nondegeneracy_part1.tex": "0acf4ad454b8aa4d05ad67ea2a27c8fe3646978da0a40e5d566bd3c00e5b300e",
+          "manuscript/unified_sections/nondegeneracy_part2.tex": "e2bb4609697e4c3c6e23fc8a77461dbc68da93e62fba75f5849736f682852593",
+          "manuscript/unified_sections/nondegeneracy_part3.tex": "e1d607498c2129cacaf4f143f9c871184ee5dc8e5c514d2d409592ff77caf343",
+          "manuscript/unified_sections/nondegeneracy_part4.tex": "cbf2e3119617e9e203580b63909dc76e5085c43c32d6675559dfe253ff8d35c5",
+          "manuscript/unified_sections/nondegeneracy_part5.tex": "dfd4fb68bb61e37deae065b0d6e0334dad313135633c716a803334fe0dc6df9f",
+          "manuscript/unified_sections/nondegeneracy_part6.tex": "1b2b5bc55141a07ed5d2d0ae44f521073adf2ec7df92a6b4891dabedbe1427a4",
+          "manuscript/unified_sections/nondegeneracy_part7.tex": "93bb3717182d10ef7dc39fbfc44c67d9b05d1b56e2fe1ece275f4e789e5f3c63",
+          "manuscript/unified_sections/nondegeneracy_part8.tex": "f535063a31b074d91a0cdb163f6086c42e439798e166e9e72b7616a1a3c86be7",
+          "manuscript/unified_sections/pell_blocks.tex": "7c62ea0a0f412487a4797352d281e375082f182dffdeaa7e3f338f59d2811449",
+          "manuscript/unified_sections/pell_harmonic_returns.tex": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec",
+          "manuscript/unified_sections/pell_harmonic_transition.tex": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab",
+          "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+          "manuscript/unified_sections/polynomial_multisphere.tex": "b0a73db94e5af9fee8ce4478f2b1679509d267990ae8b5648898b1430a333d7e",
+          "manuscript/unified_sections/research_20260921.tex": "caf8c4341d7f383efd66d84ddb60939b62f6a1951501218e37deea5c3a6625c0",
+          "manuscript/unified_sections/return_gas.tex": "85396690960a33abb30bd8a0bb7e6642fe9ca40781607a2bd3dd07c190881876",
+          "manuscript/unified_sections/return_general.tex": "6a055d7af031591ef0e47ea261f27eeee1b102025efaa7153622781e091571d3",
+          "manuscript/unified_sections/return_obstruction.tex": "a0b837a2a9d40f7740c7ef61a587a350720f1cdd71bb46e709775298db7dedba",
+          "manuscript/unified_sections/return_periodic.tex": "bc36c206f2ef066a54c19bfeeee2de878d1982cd9097130c35a787ab07322ea6",
+          "manuscript/unified_sections/return_phase.tex": "ed0af9bd53003a3d0d734ccaef0a3d559f4830f366db658bb369b186b9dcfa70",
+          "manuscript/unified_sections/return_position.tex": "b30ee8787ea941f0cebea568cbe20929f2fc0acb81b6587d6f0f3bf50807b2c3",
+          "manuscript/unified_sections/return_words.tex": "ba2d35409b20dad1e26880952210512b15ad0ccc96a9e6f2245837f145e36be8",
+          "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+          "manuscript/unified_sections/row_frontier.tex": "52cf66b3ea3681d5ca0198a46c2a854a94a16fc08f4372c398f4c02a73036c92",
+          "manuscript/unified_sections/sharp.tex": "06f53aaa9e3cdf7a37392563f8f4e7e0d9b3d6e292d5b152635c8b6ef48910af",
+          "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+          "manuscript/unified_sections/smooth.tex": "91254920ba583cd2a99301cf53848ba6a95337cae8f6f39ddd5f58ab73ed08a9",
+          "manuscript/unified_sections/smooth_residual.tex": "5ac2d80d4489ad708594feed8dbbc3657158069c3e4f8435e7b851ce36555b5d",
+          "manuscript/unified_sections/spectral_modules.tex": "1ee12569246197585c21795b8b47c10b0c2e2e7e9547a43d305e51804e5b393a",
+          "manuscript/unified_sections/spectral_resolution.tex": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+          "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+          "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+          "manuscript/unified_sections/wiener_riesz.tex": "fdf370992aa6c8092d2cb3a3622fe7ccaa571ea3b2e110831fdedb9d358ebcf6",
+          "manuscript/weighted_and_edgeworth.tex": "97df939f30e5cafd8d03b97275a262b616d54f21fd529d07239c3e145cf847ad"
+        },
+        "passes": [
+          {
+            "command": [
+              "/usr/bin/pdflatex",
+              "-interaction=nonstopmode",
+              "-halt-on-error",
+              "-output-directory=/workspace/scratch/00a8504af897/BGS/build/operator-transfer/manuscript",
+              "BGS_unified.tex"
+            ],
+            "returncode": 1,
+            "log": "pass-1.log",
+            "sha256": "e429e11bccbdc276195a9632434ef949868bcd3d0517f37693139591b4086e00"
+          }
+        ]
+      },
+      {
+        "status": "FAIL",
+        "started_utc": "2026-10-06T06:14:30.213858+00:00",
+        "scope": "Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.",
+        "engine": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+        "source_sha256": {
+          "manuscript/BGS_unified.tex": "b8508b25c66835699406e9b7cb2d579b73f2c15206b771727c01fc72b698e45e",
+          "manuscript/audit_and_frontier.tex": "0b94e178fd5335464e6be316542ae72d5aaf7785f959387e25ff0648f7ba7950",
+          "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+          "manuscript/final_delivery_note.tex": "66382ac361f36d64c11b9903fb730652a9034b735e0704e0d3dfc1e558a13f03",
+          "manuscript/front_matter.tex": "e5b744fd7f1d6e47aed81fc1f129221c930538e1bbc1cef5a4c3f0b5fd53690d",
+          "manuscript/general_spectra.tex": "43f339d0afc0a7951f82bfeb9d3f86339ad6611673707ee5b9f1d484ce02896d",
+          "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+          "manuscript/unified_bibliography.tex": "9358825bed3936191767d3c4d31169c3d82e58bb29caf8581949acba04568add",
+          "manuscript/unified_sections/analytic.tex": "c00a28c93b98baf15334a17db93fb30ff180ab8dea77bba0ddde6b49d49bb973",
+          "manuscript/unified_sections/analytic_resonance_rigidity.tex": "0ee2c259a2fafc68492d907cb7cf0b05af86b0a43b577d7c2f32fa9be5913614",
+          "manuscript/unified_sections/arithmetic_core_part1.tex": "61672319f6f5789b14533ad8737c39e7f4125f147ef58041129a04c273b81589",
+          "manuscript/unified_sections/arithmetic_core_part2.tex": "2d0c03ee9fac2d1e68812086ce5947592fa0cb6e41f98ce10c2ba448125bf8e8",
+          "manuscript/unified_sections/arithmetic_core_part3.tex": "c6fde3e758d76b5d9beb3eb568a0af305a3c15d026a9774c1539396595f9ea31",
+          "manuscript/unified_sections/arithmetic_core_part4.tex": "d226d26e0455ece2623daecb99c7fb321294e9eb3f1ed67ab15ed1bdd4d347af",
+          "manuscript/unified_sections/arithmetic_core_part5.tex": "6732629a3c035e2f421e4abf1ed55580f728248d289e45b1f0069abb58850660",
+          "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+          "manuscript/unified_sections/cayley_curve_uniform.tex": "a6a6ac5f97696347fc268a259cdfe7f773d2abb029b8e3bc796dfb3450f6772c",
+          "manuscript/unified_sections/cayley_scaling.tex": "d02e489a6eb68d1e6931c3c8bd2aba64a7b6539eea6a91ed3f059b158677b4f6",
+          "manuscript/unified_sections/cayley_trace_gaussian.tex": "5dfd87a9637059e248fffc665385905b1ac6096a4a68b3549ab45753ab91bcc4",
+          "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+          "manuscript/unified_sections/coboundary_part1.tex": "6ebcafb50bb2180ba62d21f389a8515bafdac0fac3f646cccdc2a2d18e9e5b20",
+          "manuscript/unified_sections/coboundary_part2.tex": "ca860c57d593d86abec7403c190dc48ae757131c18851d883469cb6f96078d9e",
+          "manuscript/unified_sections/coboundary_part3.tex": "650041a3d7117cd0f99a9a9ca00b269abb84111c44bbc34043618a9752300500",
+          "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+          "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+          "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+          "manuscript/unified_sections/finite_orbit_resonance.tex": "d964499ffb3cd53962b307afe6537367f8da001f40f0ffa0523c6a5449950226",
+          "manuscript/unified_sections/fixed_map_frontier.tex": "b42fbf3ff06d5867d6b503b8e5a7767402360e957a4887f505b44ad924b5e19f",
+          "manuscript/unified_sections/floquet_part1.tex": "45a041fb919d9ad3e13de2c39fb2b09871003fa6c14a49dbff8a980fb820ceb1",
+          "manuscript/unified_sections/floquet_part2.tex": "0f58e78312bfb14c5d58a009366c83d8e04c9d82908b0568509857f2cfcf5587",
+          "manuscript/unified_sections/floquet_part3.tex": "cbd4c2d393c0908e6b835408310d169e54c8c3a5ae713fb1da797e96f2664820",
+          "manuscript/unified_sections/floquet_part4.tex": "f2b7859935c17bc8da0032d322b67895195f8a9146b2ae7320ecdbc41c2d88ec",
+          "manuscript/unified_sections/four_mode.tex": "aba02e34d17d0df6ff5da571c8592699a860375c4681ef666dfe3726dd307ea3",
+          "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+          "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+          "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+          "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+          "manuscript/unified_sections/locality_part1.tex": "4fa3f9c327af9617397c5fa98776d7a07daa42fa2d2e54d17677505edef01c0d",
+          "manuscript/unified_sections/locality_part2.tex": "dcae47f13d6cf3c93f464eb9e150505ff088cc771138c180a21f819ea6cd2d3f",
+          "manuscript/unified_sections/locality_part3.tex": "3980aca87bff9a2635f88795b225fdaf9ca465cb4526da589a632786285f4b72",
+          "manuscript/unified_sections/locality_part4.tex": "12eb40ee83198d7d2f801de174082f246b63e6bb0fe9768aba610f8a8a868cb6",
+          "manuscript/unified_sections/locality_part5.tex": "69850dc9c78d44801142533626ddf9e859f36c09c5f556b2e7f829558519af13",
+          "manuscript/unified_sections/locality_part6.tex": "ac6cb02cdaa9275fb18b2257f2bfc1918562a51f9d6b93a159cd7deb32539d47",
+          "manuscript/unified_sections/locality_part7.tex": "95d6927d7593ccb8f8a0b3188ba89a5354d45515567b1eddd35053fa182b67b0",
+          "manuscript/unified_sections/magnetic.tex": "aab23d2df4cef52331c63c494d57f2db23cd997bf948f1dc4d2491f1067cf400",
+          "manuscript/unified_sections/mixed.tex": "8069ab82eaa31ae49bfb1b3fc7dcf05fc3c31831cf7973a443f9290f9c73c454",
+          "manuscript/unified_sections/nondegeneracy_part1.tex": "0acf4ad454b8aa4d05ad67ea2a27c8fe3646978da0a40e5d566bd3c00e5b300e",
+          "manuscript/unified_sections/nondegeneracy_part2.tex": "e2bb4609697e4c3c6e23fc8a77461dbc68da93e62fba75f5849736f682852593",
+          "manuscript/unified_sections/nondegeneracy_part3.tex": "e1d607498c2129cacaf4f143f9c871184ee5dc8e5c514d2d409592ff77caf343",
+          "manuscript/unified_sections/nondegeneracy_part4.tex": "cbf2e3119617e9e203580b63909dc76e5085c43c32d6675559dfe253ff8d35c5",
+          "manuscript/unified_sections/nondegeneracy_part5.tex": "dfd4fb68bb61e37deae065b0d6e0334dad313135633c716a803334fe0dc6df9f",
+          "manuscript/unified_sections/nondegeneracy_part6.tex": "1b2b5bc55141a07ed5d2d0ae44f521073adf2ec7df92a6b4891dabedbe1427a4",
+          "manuscript/unified_sections/nondegeneracy_part7.tex": "93bb3717182d10ef7dc39fbfc44c67d9b05d1b56e2fe1ece275f4e789e5f3c63",
+          "manuscript/unified_sections/nondegeneracy_part8.tex": "f535063a31b074d91a0cdb163f6086c42e439798e166e9e72b7616a1a3c86be7",
+          "manuscript/unified_sections/pell_blocks.tex": "7c62ea0a0f412487a4797352d281e375082f182dffdeaa7e3f338f59d2811449",
+          "manuscript/unified_sections/pell_harmonic_returns.tex": "81df990208dd078721873c1333b10ab3de34949458c69319d6cf1bd9ab11eaec",
+          "manuscript/unified_sections/pell_harmonic_transition.tex": "df82ce787e9f2dee33a0540c42724a98eb7a9946a443082c2f0ce972c5a7bbab",
+          "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+          "manuscript/unified_sections/polynomial_multisphere.tex": "b0a73db94e5af9fee8ce4478f2b1679509d267990ae8b5648898b1430a333d7e",
+          "manuscript/unified_sections/research_20260921.tex": "caf8c4341d7f383efd66d84ddb60939b62f6a1951501218e37deea5c3a6625c0",
+          "manuscript/unified_sections/return_gas.tex": "85396690960a33abb30bd8a0bb7e6642fe9ca40781607a2bd3dd07c190881876",
+          "manuscript/unified_sections/return_general.tex": "6a055d7af031591ef0e47ea261f27eeee1b102025efaa7153622781e091571d3",
+          "manuscript/unified_sections/return_obstruction.tex": "a0b837a2a9d40f7740c7ef61a587a350720f1cdd71bb46e709775298db7dedba",
+          "manuscript/unified_sections/return_periodic.tex": "bc36c206f2ef066a54c19bfeeee2de878d1982cd9097130c35a787ab07322ea6",
+          "manuscript/unified_sections/return_phase.tex": "ed0af9bd53003a3d0d734ccaef0a3d559f4830f366db658bb369b186b9dcfa70",
+          "manuscript/unified_sections/return_position.tex": "b30ee8787ea941f0cebea568cbe20929f2fc0acb81b6587d6f0f3bf50807b2c3",
+          "manuscript/unified_sections/return_words.tex": "ba2d35409b20dad1e26880952210512b15ad0ccc96a9e6f2245837f145e36be8",
+          "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+          "manuscript/unified_sections/row_frontier.tex": "52cf66b3ea3681d5ca0198a46c2a854a94a16fc08f4372c398f4c02a73036c92",
+          "manuscript/unified_sections/sharp.tex": "06f53aaa9e3cdf7a37392563f8f4e7e0d9b3d6e292d5b152635c8b6ef48910af",
+          "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+          "manuscript/unified_sections/smooth.tex": "91254920ba583cd2a99301cf53848ba6a95337cae8f6f39ddd5f58ab73ed08a9",
+          "manuscript/unified_sections/smooth_residual.tex": "5ac2d80d4489ad708594feed8dbbc3657158069c3e4f8435e7b851ce36555b5d",
+          "manuscript/unified_sections/spectral_modules.tex": "1ee12569246197585c21795b8b47c10b0c2e2e7e9547a43d305e51804e5b393a",
+          "manuscript/unified_sections/spectral_resolution.tex": "d30394334b7e950c753e87c747b723da925d64de3b5efdebbb7670169e86c3f4",
+          "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+          "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+          "manuscript/unified_sections/wiener_riesz.tex": "fdf370992aa6c8092d2cb3a3622fe7ccaa571ea3b2e110831fdedb9d358ebcf6",
+          "manuscript/weighted_and_edgeworth.tex": "97df939f30e5cafd8d03b97275a262b616d54f21fd529d07239c3e145cf847ad"
+        },
+        "passes": [
+          {
+            "command": [
+              "/usr/bin/pdflatex",
+              "-interaction=nonstopmode",
+              "-halt-on-error",
+              "-output-directory=/workspace/scratch/00a8504af897/BGS/build/operator-transfer/manuscript-retry",
+              "BGS_unified.tex"
+            ],
+            "returncode": 1,
+            "log": "pass-1.log",
+            "sha256": "07e93856fe6b2529c14c1a21693445981c6a4fd5f8771c4f95607566346f6ee8"
+          }
+        ]
+      }
+    ],
+    "pdf_path": "build/operator-transfer/manuscript-final/BGS_unified.pdf",
+    "page_image_review": {
+      "pages": [
+        242,
+        243,
+        244
+      ],
+      "images_sha256": {
+        "242": "070eec397fdcea98a8a89f342936bef991f4284747c5ba529785b933f2aa208b",
+        "243": "4982f2064147568f449a23f940a6b771a0164b0cda6b74bae650e9e4b19f4912",
+        "244": "a37178a31431328169c1766d207fb6484363d0ef2599d342e264aed949d529a0"
+      },
+      "observations": "The new theorem summary, singular-gap equation, ordered common-noise formula, finite invariant classification and adjacent open noise-removal boundary are readable; no clipping or visual equation loss in the inspected pages.",
+      "scope": "Three selected pages only, not a visual or mathematical audit of all 254 pages",
+      "commands": [
+        [
+          "pdftoppm",
+          "-f",
+          "242",
+          "-l",
+          "244",
+          "-scale-to",
+          "1500",
+          "-png",
+          "-singlefile",
+          "build/operator-transfer/manuscript-final/BGS_unified.pdf",
+          "build/operator-transfer/manuscript-final/review-242"
+        ],
+        [
+          "pdftoppm",
+          "-f",
+          "243",
+          "-l",
+          "243",
+          "-scale-to",
+          "1500",
+          "-png",
+          "-singlefile",
+          "build/operator-transfer/manuscript-final/BGS_unified.pdf",
+          "build/operator-transfer/manuscript-final/review-243"
+        ],
+        [
+          "pdftoppm",
+          "-f",
+          "244",
+          "-l",
+          "244",
+          "-scale-to",
+          "1500",
+          "-png",
+          "-singlefile",
+          "build/operator-transfer/manuscript-final/BGS_unified.pdf",
+          "build/operator-transfer/manuscript-final/review-244"
+        ]
+      ],
+      "renderer_diagnostics": [
+        "For the first command: Warning: Single file will write only the first of the 3 pages. Only page 242 was produced by that command; pages 243 and 244 were rendered separately."
+      ]
+    }
+  },
+  "maintained_source_sha256": {
+    "CHANGELOG.md": "8751f023c2e8e001f588ea50d259cec7f8d335196cdcdd9bbcc76a2ba05fa636",
+    "README.md": "608c59776c81addcc1178ad74956b2cc24a8a1c20579c6cd46dd5005df3d8f0e",
+    "README.ru.md": "b8ea09ff88dc1c3530d65c1c7023300ef902038bc92583cfe14504d755db5c95",
+    "RESEARCH.md": "1e9469429d2b060f9ed92e61b1cd9e2eb13ff6dfdafe6bf2e83fd06239b3505a",
+    "ROADMAP.md": "2e00438c9a0b8a3c1f94c9034e8640af0576151025f8b5e77c49d48d23c3ddb0",
+    "computations/README.md": "c4be6e83cd9eb100b4cac70ee90dc23ccc2e13ca8204222985db59d9a19dba74",
+    "computations/maintenance/verify_workspace.py": "3526807ebd5fb38f119f237f00e4e7245a6d8422a2e3e826441b003aa2ebf28b",
+    "evidence/README.md": "0e9a7891b78b2ace973ff96f62898c0ba400b25a75ef5b1cec8f9624a3713ca9",
+    "evidence/executions/README.md": "b955cba6e6cb66c623cad5ac9989f1507ed57f28add5873e75ff183ed2be1bf8",
+    "evidence/index.json": "c97f41c90764cfc5bd6506abd7d68a6d4d24760141afb1f9152446a7d48b8995",
+    "literature/README.md": "80501195cbaa971a8e513765e2594fa1293462d90704444771fbd8277cd3e926",
+    "literature/external_dependencies.json": "09da04f8dd1913218eaa9f63ea1669e0966dce508abbe08cb5de6834887d7aec",
+    "manuscript/BGS_unified.tex": "2925de1c4b74cad31e94b4e537aff7d28ca7ad5c3348d7e466af096c0cdc7801",
+    "manuscript/README.md": "62ffbdecc6f540d19b23a640951e0890eceb81280e9940407ac98060959249a4",
+    "manuscript/unified_sections/fixed_map_frontier.tex": "b42fbf3ff06d5867d6b503b8e5a7767402360e957a4887f505b44ad924b5e19f",
+    "mathematics/README.md": "fd9a26a8360a502c05507eb117207e21e10810d3beb50b4ce4eadc895e8dd615",
+    "mathematics/fixed_map_resolvent_frontier.md": "9380ca6b88a6cc587d109f5fdfb27684df8dc529c4e96f579233e0f78243f46b",
+    "mathematics/open_questions.md": "b355382f9b7dbc3bd1b0fa62dd90e829e606c66810797b5ee7506fd4ead37eb1",
+    "mathematics/results.md": "c6917341ae454126e963ceed984f3fa83609bea14715e1d690d2e0cb28e0f9b3",
+    "mathematics/topics/fixed-map/README.md": "7314c4a1d3015885a382ad5a49c4640038fa4556aff2abeb2bc9aefdd8a4f649",
+    "papers/fixed-map-bgs-frontier/OUTLINE.md": "65bfac64603e97329336e944a89e9b8a06f3b9266d4aeabec28d589ff8dde51d",
+    "papers/fixed-map-bgs-frontier/README.md": "87c4101a88196977e4513ee7a24b3081cef5316de5c0bcacd428873abf3d29c9",
+    "papers/fixed-map-bgs-frontier/paper.json": "1bc973f1c20e8f7a7e802ce48a6aca5acd41e2ec7205c1107309f18e0b0ec04e",
+    "record/README.md": "ee549dfbcdf5ac8db79e4a9a07c7667cdf804f71b91202585650448f08aa2412",
+    "record/claim_ledger.md": "80198856fbc473c05f20e93ddb212ed209305974de82a8feb7c16f8b3f934fb4",
+    "record/claim_registry.md": "a792029a3742ddc3ccde7fc204e3012ba810137fb73ed4bea4decb8f324dd051",
+    "record/claims.json": "39218348be1f7b5b47c1932331c2fa53379e73056445799afa28f6defa6ad12a",
+    "record/mathematics_topics.json": "5657db07076145682a80d117725829262a7b86820768a8acec395b30ca17730c",
+    "record/scientific_dependencies.json": "2f7df9b05f66829c35799c966c9b6e63645d439d0ee459107fc375e619ee82ec",
+    "record/scientific_dependency_graph.md": "82ac371cb8a11709d5cb1e1d1b0b68007fa70dadc8396d77f4669d5bf0a6bb2e",
+    "computations/verification/frozen_operator_transfer_checks.wl": "755d5d86475eea846dc61bee1a341e8a4c7513ef5ca03f9531fef46510cdf920",
+    "computations/verification/frozen_operator_transfer_coercivity.py": "b5550851b52e9785e707cb418b4c51cffd9c464336d10ed09d5ad6a530c783bd",
+    "evidence/20261006/frozen_operator_transfer_contract.json": "d550dd25b42460b5d146bd8212c73c3c4ad4808688ea029ac698fa665e0421e6",
+    "evidence/20261006/frozen_operator_transfer_wolfram.json": "11485ad749ec58c262602a1179d7a3be1a8e66f4ccf51722499053f805f415c4",
+    "evidence/executions/20261006/operator-transfer/checks.json": "045130065d7c074ddac11a059784cd61bff13bb51bdec89e88e198a40b8dc44f",
+    "evidence/executions/20261006/operator-transfer/manifest.json": "c08859826bb67bb030b977a80039071db61a4b0212e9252bddd454762fd31686",
+    "literature/frozen_operator_transfer_sources_20261006.md": "4877589990a69b8c9caafd59a00548fea4451e35c45adb69da236dcab5292523",
+    "mathematics/frozen_operator_transfer_coercivity.md": "ea668cded8831626a15462285ff915cc9e29139dac5a326d104e6e850742ff4c",
+    "record/frozen_operator_transfer_program_20261006.md": "cb19e95ff540880c8a0a6e87f7420529c1337f8d451d666306f235884fe35929",
+    "record/frozen_operator_transfer_review_20261006.md": "fadf042bdd1320e29e5721d70f9e2c64d949e8b1b8a1f5556e14b02017b67bc1"
+  },
+  "final_local_checks": [
+    {
+      "command": [
+        "python3",
+        "computations/verification/scientific_registry_audit.py"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.03997059100038314,
+      "stdout": "scientific-registry-audit: OK (72 claims, 28 external dependencies)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/verification/repository_audit.py"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.13870597799996176,
+      "stdout": "PASS check_canonical_identity\nPASS check_required\nPASS check_retired_julia\nPASS check_archive_contract\nPASS check_manuscript_surface\nPASS check_workflows\nPASS check_maintenance_surface\nPASS check_cpp_coverage\nPASS check_lean_coverage\nPASS check_bilingual_readmes\nPASS check_active_markdown_links\nPASS repository_audit\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_claim_registry.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.03435962300000028,
+      "stdout": "claim-registry-render: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/render_errata.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.02691830799994932,
+      "stdout": "errata-render: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_return_sections.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.9518389679997199,
+      "stdout": "PASS return-law source synchronization\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_finite_orbit_section.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.08875525699977516,
+      "stdout": "finite-orbit manuscript section matches canonical Markdown\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "computations/maintenance/sync_fixed_map_section.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.3614615699998467,
+      "stdout": "PASS fixed-map source synchronization\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-W",
+        "error::SyntaxWarning",
+        "-m",
+        "compileall",
+        "-q",
+        "computations"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.0407338179998078,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/root/.codex/plugins/cache/openai-curated-remote/mathbox/3.2.0/skills/computation-audit/scripts/validate_manifest.py",
+        "evidence/executions/20261006/operator-transfer/manifest.json",
+        "--root",
+        "/workspace/scratch/00a8504af897/BGS"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.030488690999845858,
+      "stdout": "valid evidence record; mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.01367427300010604,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 0.00946201899978405,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "publication_and_ci_scope": "This receipt predates publication. Remote full computation, Lean and manuscript CI are separate commit-specific software checks and are not asserted here.",
+  "non_claims": [
+    "No original deterministic Heisenberg signed cancellation or full BGS proof",
+    "No uniform reduced two-copy rate or full nonlinear-functional estimate",
+    "No analytic Lean module, stochastic simulation, world priority or external referee report",
+    "No local full-workspace numerical/C++/Lean rerun; remote workflows retain those checks"
+  ],
+  "local_integration_status": "completed"
+}
