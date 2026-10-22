@@ -47,7 +47,9 @@ def check_prior_claims(previous, current, epoch):
     amendments={row['id']:row for row in rows}
     approved={'BGS-CAYLEY-001','BGS-CAYLEY-003','BGS-FM-005','BGS-FM-008',
               'BGS-FM-010','BGS-FORMAL-001','BGS-FORMAL-003','BGS-RES-006',
-              'BGS-RET-001','BGS-TRACE-008'}
+              'BGS-RET-001','BGS-TRACE-008','BGS-FLOW-011','BGS-FLOW-021',
+              'BGS-FM-013','BGS-FM-016','BGS-FM-019','BGS-TRACE-011',
+              'BGS-TRACE-012','BGS-TRACE-013'}
     require(len(amendments)==len(rows) and set(amendments)==approved,
             'historical claim amendments require explicit epoch review')
     for old in previous:
