@@ -1,8 +1,0 @@
-{
-  "schema": "bgs-checkpoint-ci-artifact-routing-v1",
-  "source_sha256": {
-    "computations/maintenance/verify_workspace.py": "b42301292d6c11cc7aa846b405645ad8b05b70e4c98e602b0c5f864261f0a3a3",
-    "computations/maintenance/tests/test_replay_artifact_routing.py": "5c8bc5e75e65fc2caa5a3e6a90353f479fe3e3792271921d3935ab8f7d0486d2"
-  },
-  "scope": "CI passes durable-output flags to four existing replay entries under fresh logs/certificates-* child paths. Other verifier commands are unchanged; existing CI upload retains these directories."
-}
