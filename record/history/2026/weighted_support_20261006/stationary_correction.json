@@ -1,5 +1,0 @@
-{
-  "original_sha256": "7c54200d10568200c3f77e42f796c099c7f939c1f6421137aec7c985cf24047e",
-  "v2_sha256": "02d2f4286834db069b329c784d90e439f2ea28ef49934b5e70b26a5d84d9d6fe",
-  "delta": "--- stationary_cyclic_remainder.md\n+++ stationary_cyclic_remainder_v2.md\n@@ -84,8 +84,8 @@\n \n Transfer to U is only the accepted AGGREGATE norm/trace estimate; R is a\n stationary-label sum for V, not an intrinsic spectral component of U.\n-The N-torsion sectors and nearly all noncyclic stationary pairs remain inside\n-this signed residual. No estimate making its right side vanish is proved.\n+The unremoved portions of the N-torsion sectors and nearly all noncyclic\n+stationary pairs remain inside this signed residual. No estimate making its right side vanish is proved.\n \n For bands above m/N=1, the CUE pair benchmark is min(m,N), not m. The cyclic\n ramp R4 persists, so the remaining signed pairs must also supply the negative\n"
-}
