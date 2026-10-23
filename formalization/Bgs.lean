@@ -27,3 +27,5 @@ import Bgs.PhaseFrameWitness
 import Bgs.TorusDimensionBound
 import Bgs.ActiveRankDefect
 import Bgs.CoherenceBudget
+
+import Bgs.TraceStatement
