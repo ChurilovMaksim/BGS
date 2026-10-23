@@ -1,0 +1,33 @@
+1. Weyl multiplication sign (paper uses +; definition requires -):
+  p= 3: paper + error 3.00000000; corrected - error 8.31e-16
+  p= 5: paper + error 2.62865556; corrected - error 1.67e-16
+  p= 7: paper + error 2.29589694; corrected - error 1.28e-15
+  p=11: paper + error 1.86880236; corrected - error 9.94e-16
+2. Metaplectic trace and period phase:
+  p= 3, d= 4: trace=-0.00000+1.00000i, paper=+0.00000+1.00000i; phase=+1.00000+0.00000i, paper=+1.00000+0.00000i
+  p= 5, d= 6: trace=-1.00000-0.00000i, paper=+1.00000+0.00000i; phase=+1.00000+0.00000i, paper=+1.00000+0.00000i
+  p= 7, d= 3: trace=+0.00000-1.00000i, paper=+0.00000+1.00000i; phase=-0.00000+1.00000i, paper=-0.00000-1.00000i
+  p=11, d=12: trace=-0.00000+1.00000i, paper=+0.00000+1.00000i; phase=+1.00000+0.00000i, paper=+1.00000+0.00000i
+  p=13, d=14: trace=-1.00000+0.00000i, paper=+1.00000+0.00000i; phase=+1.00000-0.00000i, paper=+1.00000+0.00000i
+3. Finite symplectic area quadratic form:
+  p=3: ranks verified for m=2,...,8
+  p=5: ranks verified for m=2,...,8
+  p=7: ranks verified for m=2,...,8
+  Exact normalized full Gauss sum: p^{-(m-1)} if m odd, p^{-(m-2)} if m even.
+3b. Direct finite-field Gaussian area sums, normalized:
+  p=3, m=2: direct=1.0000000000, formula=1.0000000000
+  p=3, m=3: direct=0.1111111111, formula=0.1111111111
+  p=3, m=4: direct=0.1111111111, formula=0.1111111111
+  p=3, m=5: direct=0.0123456790, formula=0.0123456790
+  p=5, m=3: direct=0.0400000000, formula=0.0400000000
+  p=5, m=4: direct=0.0400000000, formula=0.0400000000
+4. Every unitary is unitarily similar to its transpose:
+  residual 8.95e-15
+5. Fourier matrix has flat entries yet exact coherent return:
+  p=5: max matrix element=0.447214, ||F^4-I||=2.39e-15, trace F^4=5.000000-0.000000j
+  p=11: max matrix element=0.301511, ||F^4-I||=1.16e-14, trace F^4=11.000000-0.000000j
+6. Exact pre-asymptotic resonant-window obstruction:
+  for any odd prime p <= 10^39, pick m multiple of d_p with p <= m <= 2p
+  ||U_p^m - scalar I|| <= 0.031600
+  therefore E_p([1,2]) >= 0.93779856
+All finite algebra checks passed; failed paper claims have explicit counterexamples.
