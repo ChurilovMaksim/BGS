@@ -1,8 +1,0 @@
-{
-  "schema": "bgs-haar-typesetting-failure-v1",
-  "observed": "Build returned failure at the warning/source-hash gate after three successful TeX passes. The sole forbidden warning is one 45.48883pt overfull hbox in the new HF.1 joint-law display. All 103 source hashes were unchanged during that build.",
-  "correction": "Split the long joint-law display across aligned rows. No mathematical change. Accepted rebuilt artifact has a separate manifest.",
-  "input": "inputs/manuscript_before_linebreak_fix.tex",
-  "input_sha256": "5f53b59a26dfeea933c6b239de37d1b6746c496a7263d04e2ca33153c4dce576",
-  "raw_logs": "evidence/executions/20261012/haar-feedback/typesetting-failure-v1"
-}
