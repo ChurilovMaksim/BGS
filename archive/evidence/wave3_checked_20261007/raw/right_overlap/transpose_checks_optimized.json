@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "python_optimization": 1,
+  "arithmetic": "exact Gaussian rational and SymPy polynomial",
+  "check_count": 72,
+  "transpose_check_count": 18,
+  "checks": [
+    {
+      "name": "unitary complex fixture N=3",
+      "category": "fixture"
+    },
+    {
+      "name": "nonsymmetric fixture N=3",
+      "category": "fixture"
+    },
+    {
+      "name": "J HS-unitary N=3",
+      "category": "transpose"
+    },
+    {
+      "name": "J involution N=3",
+      "category": "transpose"
+    },
+    {
+      "name": "J complex-linear N=3",
+      "category": "transpose"
+    },
+    {
+      "name": "J frame slice-flip N=3",
+      "category": "transpose"
+    },
+    {
+      "name": "J right-left intertwiner N=3",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=3 r=0",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=3 r=1",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=3 r=2",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=3 r=3",
+      "category": "transpose"
+    },
+    {
+      "name": "fixed-B right frame traces N=3 r=0",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=3 r=0",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=3 r=1",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=3 r=1",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=3 r=2",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=3 r=2",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=3 r=3",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=3 r=3",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=0 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=0 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=0 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=1 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=1 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=1 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=2 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=2 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=3 j=2 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "unitary complex fixture N=5",
+      "category": "fixture"
+    },
+    {
+      "name": "nonsymmetric fixture N=5",
+      "category": "fixture"
+    },
+    {
+      "name": "J HS-unitary N=5",
+      "category": "transpose"
+    },
+    {
+      "name": "J involution N=5",
+      "category": "transpose"
+    },
+    {
+      "name": "J complex-linear N=5",
+      "category": "transpose"
+    },
+    {
+      "name": "J frame slice-flip N=5",
+      "category": "transpose"
+    },
+    {
+      "name": "J right-left intertwiner N=5",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=5 r=0",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=5 r=1",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=5 r=2",
+      "category": "transpose"
+    },
+    {
+      "name": "right overlap transpose identity N=5 r=3",
+      "category": "transpose"
+    },
+    {
+      "name": "fixed-B right frame traces N=5 r=0",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=5 r=0",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=5 r=1",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=5 r=1",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=5 r=2",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=5 r=2",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right frame traces N=5 r=3",
+      "category": "prefix"
+    },
+    {
+      "name": "fixed-B right orbit N=5 r=3",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=0 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=0 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=0 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=1 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=1 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=1 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=2 k=0",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=2 k=1",
+      "category": "prefix"
+    },
+    {
+      "name": "right fixed-block Gram N=5 j=2 k=2",
+      "category": "prefix"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=1",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=2",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=3",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=4",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=5",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=6",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=7",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=8",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=9",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=10",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=11",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=12",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=13",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=14",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=15",
+      "category": "cat"
+    },
+    {
+      "name": "all cat Hessian blocks unchanged after transpose r=16",
+      "category": "cat"
+    }
+  ],
+  "elapsed_seconds": 8.859942057999433,
+  "script_sha256": "ccb43714478a9183410692da53154805992a4dd06322159ecac4183f28f6f358",
+  "scope": "N=3,5 nonsymmetric complex rational unitaries; transpose algebra, fixed-B frame and L=3 Gram; cat full Hessians r=1..16. No candidate packet tests and no analytic-limit certificate."
+}

@@ -4,8 +4,8 @@
     {
       "name": "right_frame",
       "domain": "right_frame",
-      "source": "evidence/wave3_checked_20261007/raw/right_overlap/check_transpose.py",
-      "expected": "evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks.json",
+      "source": "archive/evidence/wave3_checked_20261007/raw/right_overlap/check_transpose.py",
+      "expected": "archive/evidence/wave3_checked_20261007/raw/right_overlap/transpose_checks.json",
       "generated_result": "transpose_checks.json",
       "provenance_fields": {
         "python_optimization": "optimization",
@@ -21,8 +21,8 @@
     {
       "name": "separated_S2",
       "domain": "separated_and_Schatten",
-      "source": "evidence/wave3_checked_20261007/raw/right_overlap/check_separated_independent.py",
-      "expected": "evidence/wave3_checked_20261007/raw/right_overlap/separated_checks.json",
+      "source": "archive/evidence/wave3_checked_20261007/raw/right_overlap/check_separated_independent.py",
+      "expected": "archive/evidence/wave3_checked_20261007/raw/right_overlap/separated_checks.json",
       "generated_result": "separated_checks.json",
       "provenance_fields": {
         "python_optimization": "optimization",
@@ -38,8 +38,8 @@
     {
       "name": "convex_exact",
       "domain": "convex_resummation",
-      "source": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls.py",
-      "expected": "evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls_result.json",
+      "source": "archive/evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls.py",
+      "expected": "archive/evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/exact_controls_result.json",
       "generated_result": "exact_controls_result.json",
       "provenance_fields": {},
       "count_field": "checks_passed",
@@ -50,8 +50,8 @@
     {
       "name": "convex_independent_float",
       "domain": "convex_resummation",
-      "source": "evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls.py",
-      "expected": "evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls_result.json",
+      "source": "archive/evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls.py",
+      "expected": "archive/evidence/wave3_checked_20261007/raw/convex_review/independent_bounded_controls_result.json",
       "generated_result": "independent_bounded_controls_result.json",
       "provenance_fields": {},
       "count_field": "checks_passed",

@@ -12,11 +12,11 @@ def run(root=ROOT):
     require(sha(root/m['v1_claims_artifact'])==m['v1_claims_sha256'],'v1 registry bytes changed')
     for row in m['immutable_copies']:
         p=safe_path(root,row['path']);require(sha(p)==row['sha256'] and p.stat().st_size==row['bytes'],'Wave3 immutable copy changed: '+row['path'])
-    rr=root/'evidence/wave3_checked_20261007/raw/right_overlap';receipt=strict_json((rr/'review_receipt.json').read_bytes());require(sha(rr/'review_receipt.json')==m['right_receipt_sha256'],'right receipt identity')
+    rr=root/'archive/evidence/wave3_checked_20261007/raw/right_overlap';receipt=strict_json((rr/'review_receipt.json').read_bytes());require(sha(rr/'review_receipt.json')==m['right_receipt_sha256'],'right receipt identity')
     require(receipt['candidate_222_controls_reproduced'] is False and receipt['authorized_markdown_exports_read_and_hash_verified'] is True,'archive/export distinction lost')
     require(receipt['Schatten_tail'].startswith('passed') and receipt['full_unmasked_binomial_correction'].startswith('passed'),'accepted full hierarchy scope lost')
     for rel,r in receipt['files'].items():require(sha(safe_path(rr,rel))==r['sha256'],'right final receipt closure '+rel)
-    cv=root/'evidence/wave3_checked_20261007/raw/convex_review';cm=strict_json((cv/'review_manifest.json').read_bytes())
+    cv=root/'archive/evidence/wave3_checked_20261007/raw/convex_review';cm=strict_json((cv/'review_manifest.json').read_bytes())
     for rel,digest in cm['files'].items():require(sha(safe_path(cv,rel))==digest,'convex final receipt closure '+rel)
     proof={'right':rr/'authorized_exports/right_overlap_and_unmasked_insertions.md','core':cv/'author_snapshot/conditional_convex_pinch_resummation.md','annealed':cv/'author_snapshot/annealed_compact_pinch_stability.md'}
     for name,p in proof.items():require(sha(p)==m['accepted_proof_hashes'][name],'accepted proof changed '+name)
@@ -55,7 +55,7 @@ def run(root=ROOT):
         require(phrase in right_text,'right scope lost: '+phrase)
     for phrase in ['bounded u_N','UNWEIGHTED','1-z^m','DOES NOT refute T16','N^(b A0-1)/(A0 log N)']:
         require(phrase in convex_text,'convex scope lost: '+phrase)
-    require(not list((root/'evidence/wave3_checked_20261007').rglob('*.xml')),'primary extracts copied')
+    require(not list((root/'archive/evidence/wave3_checked_20261007').rglob('*.xml')),'primary extracts copied')
     mm=strict_json((root/'record/wave3_manuscript_mapping.json').read_bytes());require(sha(root/mm['section'])==mm['section_sha256'],'Wave3 section mapping changed')
     for rel,digest in mm['wrappers'].items():require(sha(root/rel)==digest,'Wave3 wrapper mapping changed')
     require('\\input{unified_sections/checked_unmasked_pinch_checkpoint.tex}' in (root/mm['entrypoint']).read_text(),'manuscript continuation unlinked')
