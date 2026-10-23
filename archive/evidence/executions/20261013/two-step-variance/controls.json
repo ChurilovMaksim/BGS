@@ -1,0 +1,108 @@
+{
+  "exact_expansions": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "phase": "1",
+      "sum_increment_squares": "377/5832"
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "phase": "-1",
+      "sum_increment_squares": "377/5832"
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "phase": "I",
+      "sum_increment_squares": "49/5000"
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "phase": "-I",
+      "sum_increment_squares": "49/5000"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "phase": "1",
+      "sum_increment_squares": "377/5832"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "phase": "-1",
+      "sum_increment_squares": "377/5832"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "phase": "I",
+      "sum_increment_squares": "49/5000"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "phase": "-I",
+      "sum_increment_squares": "49/5000"
+    }
+  ],
+  "floating_diagnostics": {
+    "n": 64,
+    "delta": 0.02199625707905578,
+    "cases": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "sum_to_bound_ratios": [
+          0.00017185999467895922,
+          0.00010007035967517331,
+          0.00010748588877269722
+        ]
+      },
+      {
+        "pair": [
+          3,
+          17
+        ],
+        "sum_to_bound_ratios": [
+          0.00013550961611717312,
+          0.00021324460333412717,
+          0.00012699511288768677
+        ]
+      },
+      {
+        "pair": [
+          12,
+          45
+        ],
+        "sum_to_bound_ratios": [
+          0.00010375514513166874,
+          0.00013309818600848369,
+          0.0001112637771301811
+        ]
+      }
+    ]
+  },
+  "non_claim": "Finite controls; no concentration theorem or BGS proof."
+}
