@@ -1,0 +1,1020 @@
+{
+  "arithmetic": "exact integers",
+  "pair_families": [
+    [
+      2,
+      1,
+      4
+    ],
+    [
+      2,
+      2,
+      16
+    ],
+    [
+      2,
+      3,
+      64
+    ],
+    [
+      2,
+      4,
+      256
+    ],
+    [
+      3,
+      1,
+      9
+    ],
+    [
+      3,
+      2,
+      81
+    ],
+    [
+      3,
+      3,
+      729
+    ],
+    [
+      3,
+      4,
+      6561
+    ]
+  ],
+  "all_radii": true,
+  "mask_cases": [
+    {
+      "N": 2,
+      "m": 1,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 2,
+      "disjoint_union": 2
+    },
+    {
+      "N": 2,
+      "m": 1,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 2,
+      "disjoint_union": 2
+    },
+    {
+      "N": 2,
+      "m": 1,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 2,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 2
+    },
+    {
+      "N": 2,
+      "m": 1,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 2,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 2
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 8,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 8,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 8,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 10,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 10
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 10,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 10
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 10,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 10
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 8
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 32,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 32,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 24,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 24,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 24,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 24,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 32
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 8,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 44,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 44,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 44,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 44,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 44
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 128,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 128,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 128,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 64,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 64
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 64,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 64
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 64,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 64,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 64,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 128
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 112,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 112
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 112,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 112
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 112,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 112,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 112,
+      "nonzero_checksum_low_switch_high_hamming": 64,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 176,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 176,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 176,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 176,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 176,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 176
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 186,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 186
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 186,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 186
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 186,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 186
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 186,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 186
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 186,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 186
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 6,
+      "disjoint_union": 6
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 6,
+      "disjoint_union": 6
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 6,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 6
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 6,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 6
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 18,
+      "disjoint_union": 18
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 18,
+      "disjoint_union": 18
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 54,
+      "disjoint_union": 54
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 18,
+      "disjoint_union": 54
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 18,
+      "disjoint_union": 54
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 36,
+      "nonzero_checksum_low_switch_high_hamming": 18,
+      "disjoint_union": 54
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 66,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 66
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 66,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 66
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 66,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 66
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 0
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 486,
+      "disjoint_union": 486
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 0,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 486,
+      "disjoint_union": 486
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 162,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 162
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 162,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 162
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 162,
+      "nonzero_checksum_low_switch_high_hamming": 324,
+      "disjoint_union": 486
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 1,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 162,
+      "nonzero_checksum_low_switch_high_hamming": 324,
+      "disjoint_union": 486
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 432,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 432
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 432,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 432
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 432,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 594
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 2,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 432,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 594
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 636,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 636
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 636,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 636
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 636,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 636
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "hamming_radius": 3,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 636,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 636
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 162
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 162
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 2106,
+      "disjoint_union": 2106
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 3402,
+      "disjoint_union": 3402
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 0,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 0,
+      "nonzero_checksum_low_switch_high_hamming": 4374,
+      "disjoint_union": 4374
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 648,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 810
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 648,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 810
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 648,
+      "nonzero_checksum_low_switch_high_hamming": 1458,
+      "disjoint_union": 2106
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 648,
+      "nonzero_checksum_low_switch_high_hamming": 2754,
+      "disjoint_union": 3402
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 1,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 648,
+      "nonzero_checksum_low_switch_high_hamming": 3726,
+      "disjoint_union": 4374
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 2268,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 2430
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 2268,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 2430
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 2268,
+      "nonzero_checksum_low_switch_high_hamming": 810,
+      "disjoint_union": 3078
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 2268,
+      "nonzero_checksum_low_switch_high_hamming": 2106,
+      "disjoint_union": 4374
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 2,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 2268,
+      "nonzero_checksum_low_switch_high_hamming": 2754,
+      "disjoint_union": 5022
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 4716,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 4878
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 4716,
+      "nonzero_checksum_low_switch_high_hamming": 162,
+      "disjoint_union": 4878
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 4716,
+      "nonzero_checksum_low_switch_high_hamming": 810,
+      "disjoint_union": 5526
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 4716,
+      "nonzero_checksum_low_switch_high_hamming": 810,
+      "disjoint_union": 5526
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 3,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 4716,
+      "nonzero_checksum_low_switch_high_hamming": 810,
+      "disjoint_union": 5526
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 0,
+      "offcharge_low_hamming": 5922,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 5922
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 1,
+      "offcharge_low_hamming": 5922,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 5922
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 2,
+      "offcharge_low_hamming": 5922,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 5922
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 3,
+      "offcharge_low_hamming": 5922,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 5922
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "hamming_radius": 4,
+      "switch_radius": 4,
+      "offcharge_low_hamming": 5922,
+      "nonzero_checksum_low_switch_high_hamming": 0,
+      "disjoint_union": 5922
+    }
+  ]
+}

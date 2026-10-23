@@ -1,0 +1,16 @@
+{
+  "python313_local_version": "3.13.5",
+  "sympy": "1.14.0",
+  "difference_keys": [
+    "python"
+  ],
+  "field_diffs": {
+    "python": {
+      "expected": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "actual": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]"
+    }
+  },
+  "actual_sha256": "7e51f340dc739fde15d6e5b7f51c1a25023b96f6de9b3a3da9dabf3153654acf",
+  "science_exact_equal": true,
+  "scope": "Local fresh output on Python 3.13.5 with CI-relevant pinned SymPy 1.14.0. Hosted Python 3.13.15 producer JSON was not retained; no hosted scientific diff claimed."
+}

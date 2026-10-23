@@ -1,0 +1,296 @@
+{
+  "arithmetic": "exact rational matrices, integer Laurent coefficient arithmetic; no Haar or torus quadrature",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "sympy": "1.14.0",
+  "cases": [
+    {
+      "N": 2,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "positional_count": 16,
+      "all_position_tuples": 256,
+      "balanced_dimension": 21,
+      "raw_dimension": 51,
+      "balanced_trace": "81664917745287233/1346274334462890625",
+      "unbalanced_trace": "-367830202357873087/1346274334462890625"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [],
+        []
+      ],
+      "balanced_trace": "-34844405355232/4053211077702843",
+      "unbalanced_trace": "-34844405355232/4053211077702843"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "balanced_trace": "-19892744304400/1351070359234281",
+      "unbalanced_trace": "-4052850600832/150118928803809"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "balanced_trace": "-617745547264/1351070359234281",
+      "unbalanced_trace": "-4361442934784/1351070359234281"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "balanced_trace": "-19892744304400/1351070359234281",
+      "unbalanced_trace": "-4052850600832/150118928803809"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [
+          1,
+          3
+        ],
+        []
+      ],
+      "balanced_trace": "-2287811958784/450356786411427",
+      "unbalanced_trace": "-89620889600/50039642934603"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "r": 2,
+      "stages": 2,
+      "sets": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "balanced_trace": "0",
+      "unbalanced_trace": "-580117610336/50039642934603"
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "r": 2,
+      "stages": 1,
+      "full_offcharge_rank": 112,
+      "offcharge_trace": "364032/390625",
+      "support_checks": [
+        {
+          "support": [],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            1
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            2
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            1
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            2
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            1,
+            2
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            1,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            2,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            1,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            2,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            1,
+            2,
+            3
+          ],
+          "trace": "0"
+        },
+        {
+          "support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "trace": "364032/390625"
+        }
+      ]
+    }
+  ],
+  "physical_range_split": [
+    {
+      "N": 2,
+      "m": 3,
+      "r": 0,
+      "haar_frame_columns": 6,
+      "haar_rank": 5,
+      "raw_rank": 8,
+      "balanced_raw_rank": 8,
+      "centered_raw_rank": 7,
+      "centered_balanced_rank": 7,
+      "offcharge_rank": 0
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "r": 1,
+      "haar_frame_columns": 6,
+      "haar_rank": 5,
+      "raw_rank": 32,
+      "balanced_raw_rank": 8,
+      "centered_raw_rank": 31,
+      "centered_balanced_rank": 7,
+      "offcharge_rank": 24
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "r": 2,
+      "haar_frame_columns": 6,
+      "haar_rank": 5,
+      "raw_rank": 56,
+      "balanced_raw_rank": 20,
+      "centered_raw_rank": 51,
+      "centered_balanced_rank": 15,
+      "offcharge_rank": 36
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "r": 3,
+      "haar_frame_columns": 6,
+      "haar_rank": 5,
+      "raw_rank": 64,
+      "balanced_raw_rank": 20,
+      "centered_raw_rank": 59,
+      "centered_balanced_rank": 15,
+      "offcharge_rank": 44
+    }
+  ],
+  "entropy_certificates": {
+    "one_sixth": "6 eta = log(3125/2916)>0",
+    "forty_nine_percent": "50 log 2 <63 log 10; h(49/100)<log 2"
+  },
+  "nonclaims": [
+    "No asymptotic limit is inferred from bounded controls.",
+    "No new audit of inherited actual-map parametrix or Haar tail.",
+    "The full balanced/high-Hamming residual is not controlled."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "status": "PASS_ALL_FINAL_CANDIDATE_GATES",
+  "verified_at_utc": "2026-10-07T05:47:39.118010+00:00",
+  "base_commit": "129c676b8e6457e7e5f1bd6f786b3939cbd84653",
+  "manifest_sha256": "06c5611a1f9a68b00c0a96b2515f5251261b6614b9698147150485fc7035d55f",
+  "source_files": 3998,
+  "source_unchanged": true,
+  "modified_programs": [
+    "computations/maintenance/tests/test_replay_artifact_routing.py",
+    "computations/maintenance/verify_workspace.py",
+    "computations/verification/fractional_hamming/check_routing.py",
+    "computations/verification/fractional_hamming/full_replay.py",
+    "computations/verification/fractional_hamming_full_end_2_1.py",
+    "computations/verification/fractional_hamming_full_end_2_2.py",
+    "computations/verification/fractional_hamming_full_end_2_3.py",
+    "computations/verification/fractional_hamming_full_end_3_2.py",
+    "computations/verification/fractional_hamming_network.py",
+    "computations/verification/fractional_hamming_offcharge_bound.py",
+    "computations/verification/fractional_hamming_replay.py",
+    "computations/verification/fractional_hamming_top_gram.py",
+    "computations/verification/fractional_hamming_torus.py"
+  ],
+  "added_paths": [
+    "computations/maintenance/tests/test_fractional_provenance.py",
+    "computations/verification/fractional_hamming/comparison.py",
+    "record/fractional_hamming_provenance_repair_20261007.json",
+    "record/fractional_hamming_provenance_repair_20261007.md",
+    "record/fractional_hamming_provenance_repair_originals/computations__maintenance__tests__test_replay_artifact_routing.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__maintenance__verify_workspace.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming__check_routing.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming__full_replay.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_full_end_2_1.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_full_end_2_2.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_full_end_2_3.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_full_end_3_2.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_network.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_offcharge_bound.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_replay.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_top_gram.py.original",
+    "record/fractional_hamming_provenance_repair_originals/computations__verification__fractional_hamming_torus.py.original"
+  ],
+  "mathematics_ports_expected_tex_formalization_unchanged": true,
+  "scientific": {
+    "python": "3.13.5",
+    "passed": 208,
+    "total": 208,
+    "all_log_hashes_verified": true
+  },
+  "fresh_cpp_builds": 22,
+  "maintenance": {
+    "312_normal": {
+      "tests": 163,
+      "log_sha256": "3d02599215f261d97eb53a395538161f9984448b0d5a21e87e6a4235318e3724"
+    },
+    "312_optimized": {
+      "tests": 163,
+      "log_sha256": "9a8d67b657627bdeb29f49a5e083ab5e8c79da171eb387673f2d893240d09485"
+    },
+    "313_normal": {
+      "tests": 163,
+      "log_sha256": "b533130766db1b85ad587d34bdb335dcd586dfbf79fa6bf7b751195f418a53cb"
+    },
+    "313_optimized": {
+      "tests": 163,
+      "log_sha256": "25e57cde39180ee0fd109221060f2e4fe7b1778c716d4eef079b48006216a144"
+    }
+  },
+  "archival_replays": [
+    {
+      "python": "312",
+      "runs": 6,
+      "manifest_sha256": "d1b0712eaef000b9f26a36f0f207a5d424f692a377e5e5cd1671056fe0a16699",
+      "comparison_sha256": "f382b0f4e2e894f02d8b7dd0c21957fb0aeb6a9dc54813360e7c65eb2b0fd419",
+      "scientific_normal_optimized_equal": true
+    },
+    {
+      "python": "313",
+      "runs": 6,
+      "manifest_sha256": "34e7c86e8bb925a5ba7210bb18164272cc4539dde26978a5898762454a59cb83",
+      "comparison_sha256": "cadd3359644dcb93a3a71c7a0cb787e813cc83d192fe13a1ea7525600c1c2f47",
+      "scientific_normal_optimized_equal": true
+    }
+  ],
+  "supplement": {
+    "passed": 28,
+    "total": 28,
+    "all_log_hashes_verified": true
+  },
+  "all_nine_durable_receipts": [
+    {
+      "name": "fractional_hamming_replay",
+      "receipt_sha256": "42f12a121608683a70eb364a0ff08855a1595383b7f9eeb5270ef3850d51e6e4",
+      "artifacts": 16
+    },
+    {
+      "name": "fractional_hamming_full_end_2_1",
+      "receipt_sha256": "31a8ee4555ae57c16be8b71cf57c3113e1a5e9ca5b400f4a7d6c60960b8b66c0",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_2_2",
+      "receipt_sha256": "3383e8d26869699f0844aca3ec592a107253c0d9c37714eab714d8b4f5bcde7d",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_2_3",
+      "receipt_sha256": "f00ae986e0798a6dafa9146cafb333cec7111454b46c5e2462c76d90a27e4d81",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_full_end_3_2",
+      "receipt_sha256": "3e7e78d8b7b33b2692b8c79d2776e3e603efa00ff47d1fe16691fb8494aafb04",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_network",
+      "receipt_sha256": "9d3a2612ee3053bb54446db57da77d3f85cfb53c3dbb478b80481429f55e42aa",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_offcharge_bound",
+      "receipt_sha256": "7e2bba2c4363fc66ffee702b272fe09f98b5f86cb250d7b595fa1b3ba8895ac2",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_top_gram",
+      "receipt_sha256": "47388efa2bdde00f02e12e2ff602b1ddf4f84e7991b40f3bcf4665960426df16",
+      "artifacts": 8
+    },
+    {
+      "name": "fractional_hamming_torus",
+      "receipt_sha256": "6cce83b5f392084d76fc556fec008c1902418d6137f6a8ea6c9b9460764493b9",
+      "artifacts": 8
+    }
+  ],
+  "independent_review_seal_sha256": "565c3a834f16ad3b704088641ffaa0f44b10936c8c70d63cb84d9073a6fc0702",
+  "new_remote_ci": "NOT_RUN_FOR_REPAIR_COMMIT",
+  "scope": "Full local acceptance of exact frozen v2 repair source. Prior hosted 129c676 remains failed at 207/208; no historical expectation/receipt or new mathematical theorem is relabelled."
+}

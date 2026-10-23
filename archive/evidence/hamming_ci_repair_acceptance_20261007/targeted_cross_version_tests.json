@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_fractional*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1407624590065097,
+      "log": "targeted_312_normal_test_fractionalall.py.log",
+      "log_sha256": "fc251370c7cff7675710899f480434233956177c101bda0ef2783c87d0cf5fd4"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_replay_artifact_routing.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.09311968200199772,
+      "log": "targeted_312_normal_test_replay_artifact_routing.py.log",
+      "log_sha256": "fa56fe5fd76d2a9f0f70789ac005fddf7f3bb81fc15f47f178412047c549070f"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_fractional*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 1.294895020997501,
+      "log": "targeted_312_optimized_test_fractionalall.py.log",
+      "log_sha256": "48c0c4aae3728ae89ea35b8c55796803d01a3e42c20020bd02e95d6dc96c1c76"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_replay_artifact_routing.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3464261280023493,
+      "log": "targeted_312_optimized_test_replay_artifact_routing.py.log",
+      "log_sha256": "fa56fe5fd76d2a9f0f70789ac005fddf7f3bb81fc15f47f178412047c549070f"
+    },
+    {
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_fractional*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1147629319893895,
+      "log": "targeted_313_normal_test_fractionalall.py.log",
+      "log_sha256": "d426690ab71b04734d843c0a0355bc25bbab686c77432f4ddce461fdc5442efa"
+    },
+    {
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_replay_artifact_routing.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.060986584998317994,
+      "log": "targeted_313_normal_test_replay_artifact_routing.py.log",
+      "log_sha256": "fa56fe5fd76d2a9f0f70789ac005fddf7f3bb81fc15f47f178412047c549070f"
+    },
+    {
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_fractional*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3375544079899555,
+      "log": "targeted_313_optimized_test_fractionalall.py.log",
+      "log_sha256": "99e63390c5c4e74224ea78f636018892ddefabf8608ea5951933be237e0d0f52"
+    },
+    {
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "computations/maintenance/tests",
+        "-p",
+        "test_replay_artifact_routing.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3110465119971195,
+      "log": "targeted_313_optimized_test_replay_artifact_routing.py.log",
+      "log_sha256": "075fda625e6d171c5395b72383a23d5cdd8d85b21a41c934b58dd518ed1913ea"
+    }
+  ],
+  "scope": "Typed schema, exact scientific corruption, durable failure receipts, all nine wrapper routes, normal/optimized Python 3.12 and pinned-requirements Python 3.13."
+}
