@@ -4,7 +4,7 @@
 portable locators for exact reviewed proof copies. Preparation headings and
 historical source citations in the copies are preserved byte-for-byte; those
 headings do not override the current claim ledger. The copy map is
-[explicit](../record/research_checkpoint_proof_mapping.json). This checkpoint
+[explicit](../archive/record/research_checkpoint_proof_mapping.json). This checkpoint
 is an isolated integration prepared for root-owned main publication after
 aggregate validation. Neither source copying
 nor a passing replay is a complete mathematical review.

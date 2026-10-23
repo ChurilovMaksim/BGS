@@ -1,0 +1,23 @@
+{
+  "ports": [
+    {
+      "port": "computations/verification/charge_strengthening/author_checks.py",
+      "raw_source": "evidence/charge_strengthening_20261007/raw/author/check_exact.py",
+      "sha256": "ba7530e3cc11135658821b301635bdc74da276bf9a0fd5886a89db918e9475b5",
+      "transformation": "None; byte-identical source, author entry-point filename relocated only."
+    },
+    {
+      "port": "computations/verification/charge_strengthening/independent_checks.py",
+      "raw_source": "evidence/charge_strengthening_20261007/raw/review/independent_checks.py",
+      "sha256": "e5cf9aa348089df2597415bfd813116c4aab91a3c44be890efc796441704104f",
+      "transformation": "None; byte-identical source, author entry-point filename relocated only."
+    },
+    {
+      "port": "computations/verification/charge_strengthening/switch_checks.py",
+      "raw_source": "evidence/charge_strengthening_20261007/raw/review/switch_checks.py",
+      "sha256": "60573499a93b0bd1e9abca8ff23e71ae37498241f4567e7ab7af94d21e27330f",
+      "transformation": "None; byte-identical source, author entry-point filename relocated only."
+    }
+  ],
+  "schema": "bgs-charge-port-mapping-v1"
+}

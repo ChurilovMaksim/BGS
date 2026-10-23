@@ -13,7 +13,7 @@ This outside-canonical overlay curates four independently accepted project proof
 
 ## Sources and honest chronology
 
-[The raw map](charge_strengthening_raw_mapping.json) enumerates 101 byte-preserved historical files, including all original proofs, author controls, independent reviews, frozen inputs, execution manifests and logs. Generated caches were not copied. [The editorial map](charge_strengthening_editorial_mapping.json) identifies every changed proof header/navigation phrase and the reviewer's precise damping-condition refinement; no substantive proof argument was changed.
+[The raw map](../archive/record/charge_strengthening_raw_mapping.json) enumerates 101 byte-preserved historical files, including all original proofs, author controls, independent reviews, frozen inputs, execution manifests and logs. Generated caches were not copied. [The editorial map](../archive/record/charge_strengthening_editorial_mapping.json) identifies every changed proof header/navigation phrase and the reviewer's precise damping-condition refinement; no substantive proof argument was changed.
 
 The core reviewer froze an earlier author source_manifest.json (a74f7f6895dc1d970a10472212f444b003c3edd4736c697ca934fc35113a4b8d). The final source_manifest.json (4706f70e38ed5c09e7620e2695f48f3740d4e57b12c2b806002fa56a298fcc97) retains all 18 old input entries unchanged and appends only the accepted rounding source. Both original JSON files remain intact. The final independent addenda review covers that rounding input. The actual four reviewed theorem bytes match the acceptance manifest. Current canonical registry bytes have evolved concurrently; this is recorded as live-source provenance, not silently substituted for frozen authority snapshots.
 
@@ -36,8 +36,8 @@ Both are read-only in the repository, silent on success, preserve the invoking o
 
 The three scientific output JSON schemas have no runtime/environment fields. Thus the explicit runtime-path whitelist is empty, every scientific field is compared exactly, and provenance is retained separately. Python and installed-library versions are recorded and never used as mathematical equality. Original JSON is not rewritten. Scientific changes, missing/unexpected structure, duplicate keys and source corruption fail closed, with bounded exact mismatch paths.
 
-[The computation contract](charge_strengthening_computation_contract.json) specifies exact arithmetic, finite coverage, exclusions and caps. Finite passes support only those bounded identities. No finite tau approximation, asymptotic proof, practical startup or endpoint theorem is claimed.
+[The computation contract](../archive/record/charge_strengthening_computation_contract.json) specifies exact arithmetic, finite coverage, exclusions and caps. Finite passes support only those bounded identities. No finite tau approximation, asymptotic proof, practical startup or endpoint theorem is claimed.
 
 ## Integration responsibilities
 
-The sole integrator must first complete its separately locked batch, then verify the sealed import map, import this overlay's explicitly mapped files, review the claim proposal, reconcile current registries, regenerate dependent navigation/manuscript surfaces and run repository-level checks. This package does not pre-assign or consume a new registry ID. Existing accepted historical packages must not be rewritten. See [the integration proposal](charge_strengthening_integration_proposal.md).
+The sole integrator must first complete its separately locked batch, then verify the sealed import map, import this overlay's explicitly mapped files, review the claim proposal, reconcile current registries, regenerate dependent navigation/manuscript surfaces and run repository-level checks. This package does not pre-assign or consume a new registry ID. Existing accepted historical packages must not be rewritten. See [the integration proposal](../archive/record/charge_strengthening_integration_proposal.md).

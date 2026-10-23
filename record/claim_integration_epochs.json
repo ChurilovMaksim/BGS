@@ -1249,37 +1249,37 @@
           "record/intermediate_old_layers_promotion.md",
           "archive/record/intermediate_old_layers_promotion_mapping.json",
           "archive/evidence/intermediate_old_layers_20261007/promotion_receipt.json",
-          "record/residual125_uniform_review.md",
+          "archive/record/residual125_uniform_review.md",
           "record/residual125_promotion_map.json",
           "archive/record/odd_newest_sector_review.md",
           "archive/record/odd_sector_count_combination_review.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md; archive/MANIFEST-Map.md"
     },
     {
       "id": "BGS-TRACE-021",
       "historical_row_sha256": "5729fed2cd25fe3732feb66484228224cd0ea0b7d0ed7338aaa0231f1c30f7bf",
       "fields": {
         "evidence": [
-          "record/balanced_hamming_review.md",
-          "record/coordinate_translation_review.md",
-          "record/all_coordinate_translation_review.md",
-          "record/low_switch_offcharge_review.md",
+          "archive/record/balanced_hamming_review.md",
+          "archive/record/coordinate_translation_review.md",
+          "archive/record/all_coordinate_translation_review.md",
+          "archive/record/low_switch_offcharge_review.md",
           "record/central_residual_promotion_map.json",
           "archive/record/fractional_hamming_review.md",
           "archive/record/fractional_hamming_raw_mapping.json",
           "record/fractional_hamming_adapter_mapping.json",
           "archive/evidence/fractional_hamming_20261007/replay/comparison.json",
-          "record/half_radius_obstruction_review.md",
+          "archive/record/half_radius_obstruction_review.md",
           "record/half_radius_promotion_map.json",
           "record/charge_strengthening_dependency_contract.json",
           "record/charge_strengthening_promotion.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md; archive/MANIFEST-Map.md"
     },
     {
       "id": "BGS-TRACE-022",
