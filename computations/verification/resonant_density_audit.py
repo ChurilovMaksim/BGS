@@ -55,7 +55,7 @@ def interpolation():
 
 
 def cue_background_controls():
-    path = ROOT/'supplement/fixed_map/report-audit-20260919/verify.py'
+    path = ROOT/'supplement/fixed_map/report-audit/verify.py'
     spec = importlib.util.spec_from_file_location('bgs_density_cue',path)
     old = importlib.util.module_from_spec(spec);spec.loader.exec_module(old)
     cumulant_cases = 0
@@ -312,7 +312,7 @@ def main():
     args = parser.parse_args()
     sources = ['mathematics/resonant_cubic_density_control.md',
                'computations/verification/resonant_density_audit.py',
-               'supplement/fixed_map/report-audit-20260919/verify.py']
+               'supplement/fixed_map/report-audit/verify.py']
     data = {'schema':'bgs-resonant-density-audit-v1','status':'PASS',
             'arithmetic':['integer/Fraction','SymPy exact rational algebra','complex128 FFT'],
             'runtime':{'python':platform.python_version(),'numpy':np.__version__,'sympy':sp.__version__},

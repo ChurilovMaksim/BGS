@@ -15,7 +15,7 @@ finite evidence recovered from the previously unpublished research of
 | Coherent return | [Derivation](coherent-return/research_checkpoint.md) | Exact memory identities; positive classical mixing does not erase quantum memory |
 | Fixed coupling | [Barrier](design-return/fixed_coupling_barrier.md), [sparse orbit theorem](design-return/sparse_orbit_theorem.md) | Finite and arithmetic bounds with explicit regimes |
 | Block memory | [Theorem](block-memory/block_memory_theorem.md), [Abel bound](block-memory/abel_memory_bound.md) | Closed dynamics and reset dynamics differ even with a mixing reset chain |
-| Uploaded report audit | [Audit](report-audit-20260919/audit.md), [CUE reference](report-audit-20260919/cue_reference.md) | Corrected cubic reference, variance calculation and scope of redesigned-symbol experiments |
+| Uploaded report audit | [Audit](report-audit/audit.md), [CUE reference](report-audit/cue_reference.md) | Corrected cubic reference, variance calculation and scope of redesigned-symbol experiments |
 | Secular sums | [Attempt](secular-route/attempt.md), [weighted sums](weighted-secular/attempt.md) | Actual principal minors checked; asymptotic cancellation unresolved |
 | Determinant ratios | [Boundary and reduction](weighted-secular/determinant_boundary.md) | Covariance alone is insufficient; exact Abel/ratio target |
 | Mixed loops | [Full criterion](resolvent-flow/loop_bridge.md), [low-order bounds](resolvent-flow/low_order_bounds.md) | Conditional all-order correlation criterion and exact finite identities |
@@ -27,7 +27,7 @@ symmetry exclusion, full-symbol Pell crossover, moment/transfer controls,
 the three-orientation barrier, Fourier-line coercivity, and the local-jet
 negative control.
 
-The remaining `echo-research`, `fixed-map-audit`, and `time-insertion`
+The remaining `echo-research`, `classical-conventions`, and `time-insertion`
 folders retain preliminary diagnostics and their limitations. They are not
 additional asymptotic theorems.
 

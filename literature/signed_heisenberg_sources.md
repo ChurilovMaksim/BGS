@@ -36,8 +36,8 @@ in TRACE-010. No novelty inference follows from the limited search.
 
 The exact finite CUE factorial cycle formula is maintained in
 [heisenberg_trace_support.md](../mathematics/heisenberg_trace_support.md).
-The 19 September [CUE counterterm](../supplement/fixed_map/report-audit-20260919/cue_reference.md)
-and [high-band cubic variance](../supplement/fixed_map/report-audit-20260919/cubic_variance.md)
+The 19 September [CUE counterterm](../supplement/fixed_map/report-audit/cue_reference.md)
+and [high-band cubic variance](../supplement/fixed_map/report-audit/cubic_variance.md)
 already establish nonzero raw cubic targets above the CUE ramp and an
 $O(N^{-1})$ variance for specified factorized weights in that band.
 TRACE-010's low-band complex-weight formula is a separate calibration,

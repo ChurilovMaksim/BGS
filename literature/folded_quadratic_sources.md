@@ -11,7 +11,7 @@ directly; no external theorem is substituted for an actual-map estimate.
   smoothing, multiplier kernels, exact factorial budget, critical clusters.
 - [TRACE-009](../mathematics/prime_resonant_sector.md): ordered block,
   prime orders, resonant pair mass and Rains reference law.
-- [Earlier folded control](../supplement/fixed_map/report-audit-20260919/folded_spectrum_control.md):
+- [Earlier folded control](../supplement/fixed_map/report-audit/folded_spectrum_control.md):
   local regularity/short traces do not force resonant pair decay; it is
   not a bound for the projected squared density.
 - [Fixed-strength locality](../mathematics/fixed_strength_locality.md)

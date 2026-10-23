@@ -262,11 +262,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    old = module('supplement/fixed_map/report-audit-20260919/verify.py', 'bgs_cue_reference')
+    old = module('supplement/fixed_map/report-audit/verify.py', 'bgs_cue_reference')
     support = module('computations/verification/heisenberg_note_audit.py', 'bgs_cycle_reference')
     sources = ['mathematics/signed_heisenberg_comparison.md',
                'computations/verification/signed_heisenberg_audit.py',
-               'supplement/fixed_map/report-audit-20260919/verify.py',
+               'supplement/fixed_map/report-audit/verify.py',
                'computations/verification/heisenberg_note_audit.py']
     data = {'schema':'bgs-signed-heisenberg-audit-v1', 'status':'PASS',
             'arithmetic':['integer/Fraction CUE algebra','exact SymPy radical determinant','complex128'],

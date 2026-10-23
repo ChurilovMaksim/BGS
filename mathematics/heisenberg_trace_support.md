@@ -20,7 +20,7 @@ $$
 1_{\{\sum_{a\in C}m_a=0\}}(N-R_C)_+.                       \tag{1}
 $$
 This is a finite consequence of the standard CUE determinant density
-already used in [the maintained reference](../supplement/fixed_map/report-audit-20260919/cue_reference.md),
+already used in [the maintained reference](../supplement/fixed_map/report-audit/cue_reference.md),
 not a universality theorem for $U_N$.
 
 Expand that density as $\sum_\sigma\operatorname{sgn}\sigma

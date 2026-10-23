@@ -176,7 +176,7 @@ def cycle_benchmark(n,modes):
 
 
 def cue_checks():
-    path=ROOT/'supplement/fixed_map/report-audit-20260919/verify.py'
+    path=ROOT/'supplement/fixed_map/report-audit/verify.py'
     spec=importlib.util.spec_from_file_location('cue_prior_verifier',path)
     reference=importlib.util.module_from_spec(spec);spec.loader.exec_module(reference)
     def factorial_mobius(n,m):
@@ -291,7 +291,7 @@ def main():
     sources=['computations/verification/heisenberg_note_audit.py','mathematics/frozen_phase_finite_type.md',
              'mathematics/offdiagonal_digit_fup.md','mathematics/heisenberg_trace_support.md',
              'mathematics/frozen_commutator_action.md',
-             'supplement/fixed_map/report-audit-20260919/verify.py']
+             'supplement/fixed_map/report-audit/verify.py']
     data['source_sha256']={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sources}
     if args.output:
         args.output.parent.mkdir(parents=True,exist_ok=True)

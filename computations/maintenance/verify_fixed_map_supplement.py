@@ -33,10 +33,10 @@ CHECKS = [
     ('design-return/frozen_sharp_return.py', []),
     ('design-return/sparse_orbit_checks.py', []),
     ('block-memory/verify.py', []),
-    ('report-audit-20260919/verify.py', []),
-    ('report-audit-20260919/cubic_variance.py', []),
-    ('report-audit-20260919/independent_variance_review.py', []),
-    ('report-audit-20260919/folded_spectrum_control.py', []),
+    ('report-audit/verify.py', []),
+    ('report-audit/cubic_variance.py', []),
+    ('report-audit/independent_variance_review.py', []),
+    ('report-audit/folded_spectrum_control.py', []),
     ('secular-route/exact_structure_checks.py', []),
     ('weighted-secular/determinant_control.py', []),
     ('weighted-secular/weighted_probe.py', ['--dimensions', '15', '19', '23']),
@@ -44,8 +44,8 @@ CHECKS = [
     ('weighted-secular/jacobi_audit.py', []),
     ('resolvent-flow/checks.py', []),
     ('resolvent-flow/low_order.py', []),
-    ('fixed-map-audit/classical.py', []),
-    ('fixed-map-audit/conventions.py', []),
+    ('classical-conventions/classical.py', []),
+    ('classical-conventions/conventions.py', []),
 ]
 
 

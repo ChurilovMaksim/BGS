@@ -128,7 +128,7 @@ hypotheses. Correct unfolding and symmetry reduction remain required.
 On the positive cubic cone $m,n>0,m+n<N$, (4) identifies the first mixed
 obligation. For $m,n<N<m+n$, the CUE raw cubic counterterm is $m+n-N$;
 it cannot be replaced by zero. The prior
-[high-band cubic calculation](../supplement/fixed_map/report-audit-20260919/cubic_variance.md)
+[high-band cubic calculation](../supplement/fixed_map/report-audit/cubic_variance.md)
 already treats that different region. Equation (6) is not an estimate
 for the maintained map.
 

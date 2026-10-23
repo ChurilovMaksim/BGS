@@ -9,7 +9,7 @@ inputs identified in Section 7 remain open. Final author audit:
 
 This refines [TRACE-011](resonant_cubic_density_control.md), rather than
 replacing its critical-tail counterexample. The prior
-[folded-spectrum control](../supplement/fixed_map/report-audit-20260919/folded_spectrum_control.md)
+[folded-spectrum control](../supplement/fixed_map/report-audit/folded_spectrum_control.md)
 already shows that bounded local counts and short traces do not imply
 small resonant pair mass. The new object here is the arithmetic projection
 of the **square** of the microscopic density. It retains information about
