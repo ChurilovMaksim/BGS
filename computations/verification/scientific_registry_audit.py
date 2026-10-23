@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CLAIMS = ROOT / "record" / "claims.json"
+LEDGER = ROOT / "record" / "claim_ledger.md"
 DEPS = ROOT / "record" / "scientific_dependencies.json"
 EXTERNAL = ROOT / "literature" / "external_dependencies.json"
 GENERATED = ROOT / "record" / "generated_sources.json"
@@ -23,6 +24,7 @@ TOPICS = ROOT / "record" / "mathematics_topics.json"
 
 ERRATA_RE = re.compile(r"^ERR-[0-9]{3}$")
 CLAIM_RE = re.compile(r"^BGS-[A-Z]+-[0-9]{3}$")
+LEDGER_ID_RE = re.compile(r"(?<![A-Z0-9-])BGS-[A-Z]+-[0-9]{3}(?![0-9])")
 EXTERNAL_RE = re.compile(r"^EXT-[A-Z0-9]+-[A-Z0-9-]+$")
 ALLOWED_STATES = {"proved", "conditional", "open", "verification-pending"}
 
@@ -92,6 +94,29 @@ def audit_claims() -> tuple[dict[str, dict], set[str]]:
     if by_id.get("BGS-BGS-001", {}).get("state") != "open":
         fail("BGS-BGS-001 must remain OPEN unless the claim ledger is deliberately revised")
     return by_id, set(by_id)
+
+def audit_ledger_consistency(claim_ids: set[str]) -> None:
+    # The ledger coverage rule is documented in record/claims.json
+    # ("registry_scope") and in SOURCE_OF_TRUTH.md: the registry controls
+    # registered statuses, and the ledger is a dated narrative that
+    # explains dated changes and must be consistent with the registry.
+    # The ledger may describe additional scoped results *without* a
+    # stable core ID, and a claim or status absent from the ledger is
+    # not thereby absent from the registry: coverage is deliberately
+    # not 1:1, so no completeness direction is checked here. The
+    # checkable direction is ledger -> registry: every stable claim ID
+    # the ledger uses must resolve to a registered claim. An
+    # unregistered ID in the ledger is a ledger/registry divergence.
+    if not LEDGER.is_file():
+        fail("missing required file: record/claim_ledger.md")
+    text = LEDGER.read_text(encoding="utf-8", errors="replace")
+    mentioned = set(LEDGER_ID_RE.findall(text))
+    unknown = sorted(mentioned - claim_ids)
+    if unknown:
+        fail(
+            "claim ledger references unregistered claim id(s): "
+            + ", ".join(unknown)
+        )
 
 def audit_external(claims: dict[str, dict]) -> set[str]:
     data = load(EXTERNAL)
@@ -290,6 +315,7 @@ def audit_governance_surface() -> None:
 
 def main() -> int:
     claims, claim_ids = audit_claims()
+    audit_ledger_consistency(claim_ids)
     external_ids = audit_external(claims)
     audit_graph(claims)
     audit_papers(claims, claim_ids, external_ids)

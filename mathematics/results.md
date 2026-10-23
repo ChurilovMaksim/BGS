@@ -409,3 +409,275 @@ retain component provenance; current statements are the linked theorem owners.
 
 
 [Deleted-clock Hardy boundary](deleted_clock_hardy_boundary_20261015.md): an exact positive excess of order 1/N can vanish despite bounded fixed traces.
+
+<!-- BEGIN GENERATED: registered family tables (render_status.py). Do not edit this section by hand. -->
+
+## Registered theorem families (generated)
+
+This closing section is generated from `../record/claims.json`
+by `../computations/maintenance/render_status.py`; the analytical
+text above it is hand-written and preserved. Registered status is
+controlled by claims.json; the complete per-claim surface, with
+boundaries and closure conditions, is the generated
+[claim registry](../record/claim_registry.md).
+
+**197 registered claims: 171 proved, 12 verification-pending, 9 conditional, 5 open.**
+
+### BGS family (1 claim)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-BGS-001` | **OPEN** | Fixed-strength microscopic BGS universality for the maintained frozen map |
+
+### CAYLEY family (10 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-CAYLEY-001` | **PROVED** | Pair-key and fourth-moment reduction |
+| `BGS-CAYLEY-002` | **PROVED** | Cayley additive-energy reduction |
+| `BGS-CAYLEY-003` | **VERIFICATION-PENDING** | Direct K^(8/3) Cayley energy bound in the explicit subgroup-size range |
+| `BGS-CAYLEY-004` | **PROVED** | Uniform subgroup-curve Cayley energy bound |
+| `BGS-CAYLEY-005` | **OPEN** | Sharp centered pointwise Cayley energy target |
+| `BGS-CAYLEY-006` | **PROVED** | Pointwise sparse and density Gaussian limits of the full Cayley-Jacobi trace |
+| `BGS-CAYLEY-007` | **PROVED** | Three-scalar exact split support for fixed-degree Cayley row intersections |
+| `BGS-CAYLEY-008` | **PROVED** | Scaling rigidity of the Cayley collision family |
+| `BGS-CAYLEY-009` | **PROVED** | Quantitative magnetic-quotient moment bound and global semicircle law |
+| `BGS-CAYLEY-010` | **PROVED** | Uniform parity sector for exact finite spectra of arbitrary hyperbolic matrices |
+
+### CUE family (2 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-CUE-001` | **PROVED** | Stable singular pair energy in Haar CUE and weak-local obstruction |
+| `BGS-CUE-002` | **PROVED** | All-positive-frequency CUE trace-square covariance and exact coupling derivative |
+
+### FLOW family (25 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-FLOW-001` | **PROVED** | Uniform finite coboundary eigenphase-flow bound and sharpness sequence |
+| `BGS-FLOW-002` | **PROVED** | Coboundary kicks have sine curvature but no infinitesimal Dyson diffusion |
+| `BGS-FLOW-003` | **PROVED** | Quadratic coboundary covariance, ellipticity, corrected Dyson generator and transfer boundaries |
+| `BGS-FLOW-004` | **PROVED** | Quantitative raw-noise/Dyson coupling and phase-averaged local transfer |
+| `BGS-FLOW-005` | **PROVED** | Haar-reversible drift, gradient identity and short-time path total variation |
+| `BGS-FLOW-006` | **PROVED** | Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction |
+| `BGS-FLOW-007` | **PROVED** | Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal |
+| `BGS-FLOW-008` | **PROVED** | Exact fourth-order drift of Gaussian coboundary steps |
+| `BGS-FLOW-009` | **PROVED** | Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks |
+| `BGS-FLOW-010` | **PROVED** | Dimension-quantitative simultaneous clock-to-Sine limit for uncentered Gaussian coboundary kicks |
+| `BGS-FLOW-011` | **PROVED** | Polynomial-step original Gaussian coboundary joint limit with dimension-uniform derivatives |
+| `BGS-FLOW-012` | **PROVED** | Polynomial original-coboundary comparison preserving bounded-trace initial data |
+| `BGS-FLOW-013` | **PROVED** | Prescribed-time empty Dyson limits from globally uniform bounded-trace simple spectra |
+| `BGS-FLOW-014` | **PROVED** | Gap-independent circular Dyson relaxation and original-chain Sine_2 from the actual frozen start |
+| `BGS-FLOW-015` | **PROVED** | Exact microscopic noise defect, flat heat jets and scoped stationarity, inversion and entropy boundaries |
+| `BGS-FLOW-016` | **PROVED** | Local moment transport and all-order projected diffusion comparison at t^2 log N -> 0 |
+| `BGS-FLOW-017` | **PROVED** | All fixed factorial orders and one-chain L2 signed CUE comparison for the actual-start original coboundary chain |
+| `BGS-FLOW-018` | **PROVED** | Exact clock covariance, sharp signed pair relaxation and all-order critical noise law |
+| `BGS-FLOW-019` | **PROVED** | Actual fixed-degree neutral projections: vanishing heat defects and projected compact CUE rate |
+| `BGS-FLOW-020` | **PROVED** | Growing neutral degree, actual logarithmic projection rate and fixed local pair heat-inverse obstruction |
+| `BGS-FLOW-021` | **PROVED** | Exact stable Heisenberg pair heat compensation and actual-start superpolynomial smoothed form factor |
+| `BGS-FLOW-022` | **PROVED** | Critical resonance law for the kicked Pell propagator |
+| `BGS-FLOW-023` | **PROVED** | Second-order critical law for coboundary kicks of a fixed cat map |
+| `BGS-FLOW-024` | **PROVED** | Negative microscopic consequences at the second-order coboundary scale |
+| `BGS-FLOW-025` | **PROVED** | Obstruction and necessary kick scale for the kicked Pell family |
+
+### FM family (36 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-FM-001` | **PROVED** | Frozen-model classical symmetry theorem |
+| `BGS-FM-002` | **PROVED** | Odd-Pell full-symbol Gaussian crossover |
+| `BGS-FM-003` | **PROVED** | Fixed-map moment controls, falsifier, and perturbation transfer |
+| `BGS-FM-004` | **CONDITIONAL** | Three-orientation mixed-resolvent lower barrier |
+| `BGS-FM-005` | **PROVED** | Actual frozen-kick Jacobi decomposition and exact low-rank obstruction |
+| `BGS-FM-006` | **PROVED** | Nonlinear bracket pressure growth and frozen-map linear-normalization boundary |
+| `BGS-FM-007` | **PROVED** | Exact seven-cut frozen-generator reduction and microscopic trace-norm stability |
+| `BGS-FM-008` | **PROVED** | Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity |
+| `BGS-FM-009` | **PROVED** | Exact commutator-cube obstruction to common antiunitary reversal |
+| `BGS-FM-010` | **PROVED** | Nonvanishing of every fixed-model power trace and classification of scalar returns |
+| `BGS-FM-011` | **PROVED** | Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling |
+| `BGS-FM-012` | **PROVED** | Exact all-time periodic-point grids and physical-symbol averages for the fixed linear cat |
+| `BGS-FM-013` | **PROVED** | Bounded fixed-time traces for the unchanged odd-dimensional frozen map |
+| `BGS-FM-014` | **PROVED** | Uniform finite type and scalar cancellation for translated physical-symbol differences |
+| `BGS-FM-015` | **PROVED** | Explicit classical commutator generating action at the maintained fixed coupling |
+| `BGS-FM-016` | **PROVED** | Egorov overlap rigidity and actual fixed-power separation from affine quantizations |
+| `BGS-FM-017` | **PROVED** | Logarithmic initial Poisson regularity, local heat-phase saddles and unweighted vertical tails |
+| `BGS-FM-018` | **PROVED** | Actual Weyl-frequency coercivity, regularized singular gap and exact common-noise two-copy invariant space |
+| `BGS-FM-019` | **PROVED** | Uniform two-copy collective diffusion gap and refined common-noise Heisenberg mass |
+| `BGS-FM-020` | **PROVED** | Original ordered two-pair Heisenberg-dominating singular mass |
+| `BGS-FM-021` | **PROVED** | Fixed-map position-chain singular mixing, cyclic ramp and marked three-link cancellation |
+| `BGS-FM-022` | **PROVED** | Fixed-map reversed-coordinate-path norm decay and reverse-cyclic suppression |
+| `BGS-FM-023` | **PROVED** | Quantitative exclusion of bounded-power arithmetic translation algebras |
+| `BGS-FM-024` | **PROVED** | Actual scalar joint commutant in every odd dimension except seven |
+| `BGS-FM-025` | **PROVED** | Uniform actual kick simplicity on the pure five-primary seven family |
+| `BGS-FM-026` | **PROVED** | Literal-time multiplicity and simple-eigenvalue counts on N=7*5^e |
+| `BGS-FM-027` | **PROVED** | Uniform actual one-step cyclic-charge gap |
+| `BGS-FM-028` | **PROVED** | Actual q1 theta0 charge-pinching radial shell and resolvent |
+| `BGS-FM-029` | **PROVED** | Literal kick/cat moment laws, triple-log word window and strong-freeness obstruction |
+| `BGS-FM-030` | **PROVED** | Global scalar and block body coercivity with real absorption |
+| `BGS-FM-031` | **PROVED** | Ordinary compact-stratum centering and effective fixed-N source cutoff |
+| `BGS-FM-032` | **PROVED** | Prime cyclic cohomology and parity-resolved susceptibility |
+| `BGS-FM-033` | **CONDITIONAL** | All-label-scale one-step Weyl overlap and prime-orbit corollaries |
+| `BGS-FM-034` | **PROVED** | Fixed-strength all-orders comparison for the single-exponential coboundary kick |
+| `BGS-FM-035` | **PROVED** | Classical interpretation of the fixed-strength quantized map |
+| `BGS-FM-036` | **PROVED** | Microscopic stability along Pell moduli: K clusters and spacing collapse |
+
+### FORMAL family (3 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-FORMAL-001` | **PROVED** | Active Lean algebraic/finite kernel graph |
+| `BGS-FORMAL-002` | **PROVED** | Bounded rank-two four-cut executable certificate |
+| `BGS-FORMAL-003` | **PROVED** | Compiled seven-primary finite GF(5) array certificate |
+
+### FUP family (1 claim)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-FUP-001` | **PROVED** | Parity classification of Fourier FUP for ideal off-diagonal digit alphabets |
+
+### INFO family (1 claim)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-INFO-001` | **OPEN** | Full vanishing-noise tomography transition |
+
+### LOOP family (1 claim)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-LOOP-001` | **CONDITIONAL** | Full mixed loop hierarchy implies target compact anchored correlations |
+
+### RES family (23 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-RES-001` | **PROVED** | Sharp Fourier-line resonance coercivity |
+| `BGS-RES-002` | **PROVED** | Local-jet resonance obstruction |
+| `BGS-RES-003` | **OPEN** | All-members analytic resonance nondegeneracy |
+| `BGS-RES-004` | **PROVED** | Smooth finite-orbit Poisson-bracket lag independence |
+| `BGS-RES-005` | **PROVED** | Full-lag uniform classical Riesz gap for the frozen physical symbol under linear transport |
+| `BGS-RES-006` | **PROVED** | Exact adjoint-resolvent representation and pair-Abel equivalence |
+| `BGS-RES-007` | **PROVED** | Smooth scalar-resolvent transfer between the original and seven-cut full propagators |
+| `BGS-RES-008` | **PROVED** | Sharp resonance minimum on a hyperbolic Fourier orbit |
+| `BGS-RES-009` | **PROVED** | Uniform spectral positivity and temporal Riesz bounds for the spectral module |
+| `BGS-RES-010` | **PROVED** | Root-circle classification of high-lag coercivity |
+| `BGS-RES-011` | **PROVED** | Complete finite-symbol high-lag criterion |
+| `BGS-RES-012` | **PROVED** | Cyclic module and variance at every time in the finite quantum module |
+| `BGS-RES-013` | **PROVED** | Balanced-phase completion and even-order phase-rank transition |
+| `BGS-RES-014` | **CONDITIONAL** | Full Riesz criterion for the two-variable resonance lattice |
+| `BGS-RES-015` | **PROVED** | Two-window phase crossover: rectangular Gram lower edge |
+| `BGS-RES-016` | **PROVED** | Sharp multiradius and concentric-sphere polynomial rigidity |
+| `BGS-RES-017` | **PROVED** | Balanced phase and quantum controllability for odd N |
+| `BGS-RES-018` | **PROVED** | Infinite-orbit independence and entire temporal all-pass gauges |
+| `BGS-RES-019` | **PROVED** | Explicit weighted-Wiener stability of the isolated resonance mode |
+| `BGS-RES-020` | **PROVED** | Generic weighted-Wiener nondegeneracy |
+| `BGS-RES-021` | **PROVED** | Analytic rigidity of zero resonance mechanisms |
+| `BGS-RES-022` | **VERIFICATION-PENDING** | Radius-eight resonance nondegeneracy (ND.3) |
+| `BGS-RES-023` | **PROVED** | Constructive margin for the radius-eight certificate (ND.10): explicit constant pi^2/41472 * 2^(-2^715) |
+
+### RET family (4 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-RET-001` | **PROVED** | Harmonic return law for the actual kicked Pell propagator |
+| `BGS-RET-002` | **PROVED** | Harmonic-scale global transition in the fixed Pell cat map |
+| `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
+| `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
+
+### TRACE family (90 claims)
+
+| Claim | State | Title |
+|---|---|---|
+| `BGS-TRACE-001` | **PROVED** | Partition-Mobius formula for distinct-index spectral sums |
+| `BGS-TRACE-002` | **PROVED** | Exact Fourier trace representation of microscopic factorial statistics |
+| `BGS-TRACE-003` | **PROVED** | Weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations |
+| `BGS-TRACE-004` | **PROVED** | Every-compact-bandwidth comparison extends to Schwartz correlation tests |
+| `BGS-TRACE-005` | **OPEN** | Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate |
+| `BGS-TRACE-006` | **PROVED** | Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier |
+| `BGS-TRACE-007` | **PROVED** | Universal sharp Abel lower bound attained by the clock spectrum |
+| `BGS-TRACE-008` | **PROVED** | Two-clock falsifier for sufficiency of the CUE Gram second moment |
+| `BGS-TRACE-009` | **PROVED** | Prime-resonant sector mass criterion, exact spectral comb and coherent-mode obstruction |
+| `BGS-TRACE-010` | **PROVED** | Universal deterministic absolute-norm obstruction against CUE and signed cancellation controls |
+| `BGS-TRACE-011` | **PROVED** | Resonant cubic deletion by local density and a pair-compatible critical cluster obstruction |
+| `BGS-TRACE-012` | **PROVED** | Folded-square signed resonant cubic control, explicit root allocation and factorial block-crowding obstruction |
+| `BGS-TRACE-013` | **PROVED** | Arithmetic coherent words despite uniform auxiliary quantum expansion and exact spectral exclusions |
+| `BGS-TRACE-014` | **PROVED** | All-order Haar moment-channel proximity with a rigid isospectral clock spectrum |
+| `BGS-TRACE-015` | **PROVED** | Once-counted distinct-port three-block signed Heisenberg cancellation |
+| `BGS-TRACE-016` | **PROVED** | Once-counted reduced distinct-port four-block signed cancellation |
+| `BGS-TRACE-017` | **PROVED** | Actual fixed-order WKB instantiation of the complete factorial trace reduction |
+| `BGS-TRACE-018` | **PROVED** | Actual winding-defect localization and phase-only Frostman averages |
+| `BGS-TRACE-019` | **PROVED** | Full-weight selected homoclinic coefficient and cyclic-family bound |
+| `BGS-TRACE-020` | **PROVED** | Ordered-diagonal factorial sector and scoped collective trace reductions |
+| `BGS-TRACE-021` | **PROVED** | Disjoint Hamming and low-switch pair residual reduction |
+| `BGS-TRACE-022` | **PROVED** | Exact full balanced-pair Schur energy and three-radius equivalence |
+| `BGS-TRACE-023` | **PROVED** | Completed compact pair source and uniform complex microscopic source bounds |
+| `BGS-TRACE-024` | **PROVED** | Actual unmasked occupation-subtracted q1 one-pinch disappearance |
+| `BGS-TRACE-025` | **PROVED** | Changed-family rounded and simple-spectrum signed endpoint barriers |
+| `BGS-TRACE-026` | **PROVED** | Corrected hook-cycle cancellation, Eulerian trees and phase-current reduction |
+| `BGS-TRACE-027` | **PROVED** | Weighted phase coherence, classical covariance and upper-half slow-window signed Ward law |
+| `BGS-TRACE-028` | **PROVED** | Actual right frame, separated compositions and complete unmasked convex pinch hierarchy |
+| `BGS-TRACE-029` | **PROVED** | Complete convex weak-noise stability and actual unsigned logarithmic deconvolution obstruction |
+| `BGS-TRACE-053` | **PROVED** | Max-entry phase memory and averaged eigenbasis pinching |
+| `BGS-TRACE-054` | **PROVED** | Optimal right-weighted second jets of rational matrix inner functions |
+| `BGS-TRACE-055` | **VERIFICATION-PENDING** | Submitted actual polylogarithmic deep-source hierarchy |
+| `BGS-TRACE-056` | **PROVED** | Direct normally absorbed scalar-source transport along a real unitary flow |
+| `BGS-TRACE-057` | **PROVED** | Arbitrary-source phase covariance |
+| `BGS-TRACE-058` | **PROVED** | Integrable all-order phase absorption |
+| `BGS-TRACE-059` | **PROVED** | Anisotropic physical-source transport |
+| `BGS-TRACE-060` | **CONDITIONAL** | All fixed conditional clock powers, full-depth measure and exact rank atom |
+| `BGS-TRACE-061` | **PROVED** | Finite frame identities, Stiefel threshold and clock-basis obstruction |
+| `BGS-TRACE-062` | **PROVED** | Flat completion with arbitrary clock law |
+| `BGS-TRACE-063` | **PROVED** | Global noncommuting ordinary-body coercivity |
+| `BGS-TRACE-064` | **PROVED** | Sharp maximal-torus contraction for compact simple groups |
+| `BGS-TRACE-065` | **PROVED** | Signed finite-field cycle and collision calculus |
+| `BGS-TRACE-066` | **PROVED** | Birthday rank law and thinned collision limit |
+| `BGS-TRACE-067` | **PROVED** | Sharp balanced Laurent Jack coefficient bound |
+| `BGS-TRACE-068` | **PROVED** | Frozen circular phase laws in the three symmetry classes |
+| `BGS-TRACE-069` | **PROVED** | All-order critical CSE trace limit |
+| `BGS-TRACE-070` | **PROVED** | Complete CUE and CSE form-factor curves |
+| `BGS-TRACE-071` | **PROVED** | Maximal phase point-process paths and all fixed normal-source products |
+| `BGS-TRACE-072` | **PROVED** | Deterministic maximal microscopic observable flow |
+| `BGS-TRACE-073` | **CONDITIONAL** | Singular-spectrum censoring and stopped intensity/reversal gap propagation |
+| `BGS-TRACE-074` | **PROVED** | Unistochastic two-step obstruction and the correct higher-step singular bound |
+| `BGS-TRACE-075` | **PROVED** | Fresh-phase two-step restoring drift from a complete three-step path-swap bound |
+| `BGS-TRACE-076` | **PROVED** | Exact Haar feedback delay law and unconditional entropy-stable full-depth clocks |
+| `BGS-TRACE-077` | **PROVED** | Green compression and shrinking intensity gaps on the entry-stopped prefix |
+| `BGS-TRACE-078` | **PROVED** | Uniform-port second moment of the complete two-step feedback increment |
+| `BGS-TRACE-079` | **PROVED** | Simultaneous all-pair stopped two-step concentration |
+| `BGS-TRACE-080` | **PROVED** | Unconditional deterministic-start feedback flatness and fixed-order clock laws |
+| `BGS-TRACE-081` | **PROVED** | Perfect intensity mixing, small reversal and simple spectrum do not identify microscopic statistics |
+| `BGS-TRACE-082` | **PROVED** | Exact coherence return memory and universal singular-norm plateau before dimension time |
+| `BGS-TRACE-083` | **PROVED** | Observed first-return pulses and cyclic coherence survive perfect intensity mixing |
+| `BGS-TRACE-084` | **PROVED** | Mesoscopic block number-variance criterion and collective trace-energy boundary |
+| `BGS-TRACE-085` | **PROVED** | Exact root lifting and failure of necessity for resonance-sector deletion |
+| `BGS-TRACE-086` | **PROVED** | All-order signed diagonal hierarchy implies local Sine2 and local moment UI |
+| `BGS-TRACE-087` | **PROVED** | Exact parameter bandwidth and quantitative de-averaging to a fixed coupling |
+| `BGS-TRACE-088` | **PROVED** | Rooted BEST count, extensive equal-edge mass and unitary compensation |
+| `BGS-TRACE-089` | **PROVED** | Factorially weighted square-root-time equal-edge collision crossover |
+| `BGS-TRACE-090` | **PROVED** | Contractive full-spectrum radial ratios and mixed-moment weak-process criterion |
+| `BGS-TRACE-091` | **PROVED** | Sharp clock minimum and exact radial and Abel Hardy remainders |
+| `BGS-TRACE-092` | **PROVED** | Exact positive Abel decomposition and optimal square-root clock rigidity |
+| `BGS-TRACE-093` | **PROVED** | Flat equal-edge Gaussian comparison, exact Heisenberg exponential rate and Wick collision mean |
+| `BGS-TRACE-094` | **PROVED** | Heisenberg Wick collision Poisson law, exact flat ratio and geometric vertex occupations |
+| `BGS-TRACE-095` | **CONDITIONAL** | Dimension-uniform deep feedback Gaussian limit |
+| `BGS-TRACE-096` | **VERIFICATION-PENDING** | Exact transmission spectral averaging and bounded eigenvector ratio criterion |
+| `BGS-TRACE-097` | **CONDITIONAL** | Conditional full positive Heisenberg path-current limit |
+| `BGS-TRACE-098` | **VERIFICATION-PENDING** | Complete fixed-trace law and secular hierarchy for the symplectic phase ensemble |
+| `BGS-TRACE-099` | **VERIFICATION-PENDING** | Polynomial trace windows in the auxiliary bilinear phase ensembles |
+| `BGS-TRACE-100` | **VERIFICATION-PENDING** | Exact signed phase expansion and first two stable coefficient cancellations |
+| `BGS-TRACE-101` | **VERIFICATION-PENDING** | Neutral peeling and finite primitive schemes at every fixed defect |
+| `BGS-TRACE-102` | **VERIFICATION-PENDING** | Complete second-defect sector and full four-port open zero |
+| `BGS-TRACE-103` | **VERIFICATION-PENDING** | All local-defect-one-or-two clusters: quartic exponential resummation |
+| `BGS-TRACE-104` | **VERIFICATION-PENDING** | Local Cayley comparison with diagonal Cauchy disorder for an involution |
+| `BGS-TRACE-105` | **VERIFICATION-PENDING** | Positive Cauchy projection self-duality with maximal matrix-law separation |
+| `BGS-TRACE-106` | **PROVED** | Uniform physical-kick trace decay, positive-square exponent 1/9 and scalar-distance limit |
+| `BGS-TRACE-107` | **PROVED** | Physical polynomial approximation at every fixed factorial order and exact Pell alias threshold |
+| `BGS-TRACE-108` | **PROVED** | Quartic diagonal coordinate return with explicit fixed-coupling remainder |
+| `BGS-TRACE-109` | **PROVED** | Inserted trace, quantum commutant projection and two-copy coboundary obstruction |
+| `BGS-TRACE-110` | **PROVED** | Spectral orbit distance and exact scalar-root comparison lemmas |
+| `BGS-TRACE-111` | **PROVED** | Full weighted Pell gradient, negative initial Hessian and forced early inflection |
+| `BGS-TRACE-112` | **PROVED** | Uniform classical displacement density and independent logarithmic global spectral comparison |
+| `BGS-TRACE-113` | **PROVED** | Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap |
+
+<!-- END GENERATED: registered family tables (render_status.py) -->

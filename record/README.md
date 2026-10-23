@@ -51,6 +51,25 @@ current status must be read before using a historical route.
 Older route records report outcomes under their stated assumptions; they do
 not override this living surface.
 
+## Live machine bindings of the sealed replay complex
+
+The other files at this level are live machine contracts, bindings and
+promotion maps of the sealed wave-2 / wave-3 / research-checkpoint / Schur
+replay complex. They are not a working layer of finished waves: the
+maintained checked-replay scripts, the wave integration audits and the
+test suite consume them at these paths, and they move only with a
+re-basing of that sealed complex.
+
+| Files | Role |
+|---|---|
+| [wave2_replay_source_bindings.json](wave2_replay_source_bindings.json), [wave2_scoped_input_bindings.json](wave2_scoped_input_bindings.json), [wave2_replay_contract.json](wave2_replay_contract.json), [wave2_promotion_mapping.json](wave2_promotion_mapping.json), [wave2_manuscript_mapping.json](wave2_manuscript_mapping.json) | Wave-2 sealed source bindings, replay contract and promotion/manuscript maps |
+| [wave3_replay_source_bindings.json](wave3_replay_source_bindings.json), [wave3_replay_contract.json](wave3_replay_contract.json), [wave3_promotion_mapping.json](wave3_promotion_mapping.json), [wave3_manuscript_mapping.json](wave3_manuscript_mapping.json) | Wave-3 sealed source bindings, replay contract and promotion/manuscript maps |
+| [research_checkpoint_replay_contract.json](research_checkpoint_replay_contract.json), [research_checkpoint_source_bindings.json](research_checkpoint_source_bindings.json), [wave2_checked_integration_20261007.md](wave2_checked_integration_20261007.md) | Research-checkpoint replay contract, source bindings and integration record |
+| [schur_reduction_source_bindings.json](schur_reduction_source_bindings.json), [schur_replay_freshness_repair_map.json](schur_replay_freshness_repair_map.json) | Schur reduction bindings and the replay freshness repair map |
+| [charge_strengthening_replay_sources.json](charge_strengthening_replay_sources.json) | Charge-strengthening replay source map |
+| [central_residual_promotion_map.json](central_residual_promotion_map.json), [fractional_hamming_adapter_mapping.json](fractional_hamming_adapter_mapping.json), [half_radius_promotion_map.json](half_radius_promotion_map.json), [residual125_promotion_map.json](residual125_promotion_map.json) | Maintained promotion and adapter maps |
+| [claim_integration_epochs.json](claim_integration_epochs.json) | Claim-integration epoch record and amendment channel |
+
 ## Reviewed continuations
 
 | Record | Exact role |
