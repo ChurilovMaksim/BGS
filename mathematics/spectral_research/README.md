@@ -59,6 +59,6 @@ two repeated-argument tuple groupings; mathematical source bytes are preserved.
 The [integration review](../../record/spectral_final_integration_20261021.md)
 and [fresh execution packet](../../evidence/executions/20261021/spectral-final/README.md)
 state actual review, code replay, version exceptions and build coverage.
-The earlier [20 October toolchain packet](../../evidence/executions/20261020/toolchain-followup/README.md)
+The earlier [20 October toolchain packet](../../archive/evidence/executions/20261020/toolchain-followup/README.md)
 and [single-kick packet](../../evidence/executions/20261021/spectral-master-audit/README.md)
 remain separate dated evidence for results obtained outside the attachment.

@@ -734,14 +734,14 @@
       "historical_row_sha256": "1d56743bbfbc16b565a8d3a77ae389a20c235e3dd4fe481bf7a562c0e7516206",
       "fields": {
         "evidence": [
-          "evidence/executions/20261020/toolchain-followup/receipt.json",
+          "archive/evidence/executions/20261020/toolchain-followup/receipt.json",
           "evidence/executions/20261006/original-channel-gap/lean.log",
           "evidence/executions/20261006/original-channel-gap/integration.json"
         ],
         "boundary": "Pinned Lean 4.33.1 build of all 24 active modules completed successfully (27 Lake jobs), including CoherenceBudget, per the toolchain follow-up receipt of 20 October 2026 recorded at source commit cfe74ab (partial build snapshot: 69 authenticated unchanged files; the Bgs sources are unchanged between cfe74ab and 78066c8). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
-      "review": "record/errata.json"
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "record/errata.json; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-RES-006",
@@ -812,14 +812,14 @@
       "historical_row_sha256": "d00485077bd70d73a988a58068c960f6367d2041d2b5725a59596aff8df608eb",
       "fields": {
         "evidence": [
-          "evidence/executions/20261004/polynomial-coboundary/manifest.json",
-          "evidence/executions/20261004/polynomial-coboundary/checks.json",
+          "archive/evidence/executions/20261004/polynomial-coboundary/manifest.json",
+          "archive/evidence/executions/20261004/polynomial-coboundary/checks.json",
           "archive/evidence/20261004/polynomial_coboundary_wolfram.json",
           "archive/evidence/executions/20261004-polynomial-integration.json"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-TRACE-011",
@@ -880,15 +880,15 @@
       "historical_row_sha256": "cc71245d7a2c1cf7043e99083e1dd625c16ae10105cff1005a305d91c7c0deba",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/pair-heat/manifest.json",
-          "evidence/executions/20261005/pair-heat/checks.json",
+          "archive/evidence/executions/20261005/pair-heat/manifest.json",
+          "archive/evidence/executions/20261005/pair-heat/checks.json",
           "archive/evidence/20261005/heisenberg_pair_heat_wolfram.json",
           "archive/record/heisenberg_pair_review_20261005.md",
           "archive/evidence/executions/20261005-pair-heat-integration.json"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-F2.md; archive/MANIFEST-Aplain.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-F2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FM-019",
@@ -927,65 +927,65 @@
       "historical_row_sha256": "6a4010f2432bcf67a55b9396e3be632e0d749b562b32692a833b00c69c96bfb0",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/all-order/manifest.json",
-          "evidence/executions/20261005/all-order/checks.json",
+          "archive/evidence/executions/20261005/all-order/manifest.json",
+          "archive/evidence/executions/20261005/all-order/checks.json",
           "archive/record/all_order_review_20261005.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FLOW-017",
       "historical_row_sha256": "aac6525eaca05e8e5e7d4d3c441d3dda6aedc44f33d99e89144b9486af6d8f59",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/all-order/manifest.json",
-          "evidence/executions/20261005/all-order/checks.json",
+          "archive/evidence/executions/20261005/all-order/manifest.json",
+          "archive/evidence/executions/20261005/all-order/checks.json",
           "archive/record/all_order_review_20261005.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FLOW-018",
       "historical_row_sha256": "43172f7ddcff13b2bb3b68c90ab97266a99841d387c1b21de62c403d22524b92",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/critical-noise/manifest.json",
-          "evidence/executions/20261005/critical-noise/checks.json",
+          "archive/evidence/executions/20261005/critical-noise/manifest.json",
+          "archive/evidence/executions/20261005/critical-noise/checks.json",
           "archive/record/critical_noise_review_20261005.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FLOW-019",
       "historical_row_sha256": "536a6cc55a9ff13008cff2c8ce74ae8acbe205d7cf53978c9f96c88d1ac72f44",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/critical-noise/manifest.json",
-          "evidence/executions/20261005/critical-noise/checks.json",
+          "archive/evidence/executions/20261005/critical-noise/manifest.json",
+          "archive/evidence/executions/20261005/critical-noise/checks.json",
           "archive/record/critical_noise_review_20261005.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FLOW-020",
       "historical_row_sha256": "7616030113738a7399f35812aa6c2ff7bbc9bae24d50d3d2291a1346ac06ea38",
       "fields": {
         "evidence": [
-          "evidence/executions/20261005/degree-growth/manifest.json",
-          "evidence/executions/20261005/degree-growth/checks.json",
+          "archive/evidence/executions/20261005/degree-growth/manifest.json",
+          "archive/evidence/executions/20261005/degree-growth/checks.json",
           "archive/record/growing_degree_review_20261005.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Brest.md"
     },
     {
       "id": "BGS-FM-018",
@@ -1533,6 +1533,66 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
       "review": "archive/MANIFEST-Adata.md"
+    },
+    {
+      "id": "BGS-FLOW-012",
+      "historical_row_sha256": "75d5452b660e142c1aed0bc2ec4ec0fff50afc7415cb345c2d2f1df748c19a1d",
+      "fields": {
+        "evidence": [
+          "archive/evidence/executions/20261004/general-start/manifest.json",
+          "archive/evidence/executions/20261004/general-start/checks.json"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-Brest.md"
+    },
+    {
+      "id": "BGS-FLOW-013",
+      "historical_row_sha256": "6a78f9ab9b43f2455767a16946ba1ec22b196597552e9929a25b778d0ec00b47",
+      "fields": {
+        "evidence": [
+          "archive/evidence/executions/20261004/general-start/manifest.json",
+          "archive/evidence/executions/20261004/general-start/checks.json"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-Brest.md"
+    },
+    {
+      "id": "BGS-FLOW-014",
+      "historical_row_sha256": "2eefa0421aaa34c01e8504a53f57575afa79c8d957c823800d9aa3174fa5a385",
+      "fields": {
+        "evidence": [
+          "archive/evidence/executions/20261004/circular-dyson/manifest.json",
+          "archive/evidence/executions/20261004/circular-dyson/checks.json"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-Brest.md"
+    },
+    {
+      "id": "BGS-FLOW-015",
+      "historical_row_sha256": "9f2be221a3f5719c942087a7d993f0ef3bc3501581e38419c68170b8c603c7d7",
+      "fields": {
+        "evidence": [
+          "archive/evidence/executions/20261005/noise-removal/manifest.json",
+          "archive/evidence/executions/20261005/noise-removal/checks.json"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-Brest.md"
+    },
+    {
+      "id": "BGS-FM-017",
+      "historical_row_sha256": "1c7b19a96dd1c479a2d8c67f2b8f2561c94041a6cff593cca7d1dc5da559c6f5",
+      "fields": {
+        "evidence": [
+          "archive/evidence/executions/20261004/general-start/manifest.json",
+          "archive/evidence/executions/20261004/general-start/checks.json"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-Brest.md"
     }
   ]
 }

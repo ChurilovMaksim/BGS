@@ -2,7 +2,7 @@
 
 **Stable claim:** BGS-TRACE-081. **State:** PROJECT PROOF + INDEPENDENT
 INTERNAL RECONSTRUCTION, 14 October 2026. Sections 1--7 are self-contained.
-The [review packet](../evidence/executions/20261014/spectrum-coherence/README.md)
+The [review packet](../archive/evidence/executions/20261014/spectrum-coherence/README.md)
 binds the frozen input, reconstructed proof and exact finite controls.
 This is an abstract-family obstruction, not a BGS counterexample for a
 fixed smooth chaotic quantization. No mathematical priority is asserted.
@@ -351,7 +351,7 @@ O1--O5, and neither is alleged to be contradicted.
 
 The [maintained exact verifier](../computations/verification/spectrum_coherence_controls.py)
 checks finite core, Gauss, tensor and discriminant identities. Separate
-[archived JavaScript and independent Python controls](../evidence/executions/20261014/spectrum-coherence/README.md)
+[archived JavaScript and independent Python controls](../archive/evidence/executions/20261014/spectrum-coherence/README.md)
 retain their actual execution scope. None of these finite checks proves
 the all-invertible phase lemma or any asymptotic statement. The mathematical
 proof in Sections 1--7 supplies those claims. No analytic Lean certification

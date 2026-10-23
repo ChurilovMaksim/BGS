@@ -6,7 +6,7 @@
 `b126cfb18f445b82358fc156632873082ac22503`. The original candidate was
 incomplete as written. Sections 3.2 and 3.4 repair two leading-order word
 errors without weakening its quantified conclusion. The
-[review packet](../evidence/executions/20261011/clock-universality/README.md)
+[review packet](../archive/evidence/executions/20261011/clock-universality/README.md)
 preserves that input and the review scope. This is neither external peer
 review nor a Lean formalization, a priority claim or a solution of BGS.
 

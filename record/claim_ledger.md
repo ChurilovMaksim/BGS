@@ -157,7 +157,7 @@ first-return coefficients and are not conjugated covariance moments.
 The example excludes source-uniform norm shortcuts; it estimates
 neither the actual physical cavity source nor TRACE-005.
 
-[Independent proof and actual execution scope](../evidence/executions/20261014/first-return/README.md).
+[Independent proof and actual execution scope](../archive/evidence/executions/20261014/first-return/README.md).
 The new claim is analytically proved in the project; no full operator
 Lean certification is asserted. Main 57150ac's CI did not provide
 code-step receipts and skipped the new formalization job. Its earlier
@@ -189,7 +189,7 @@ in the frozen draft was corrected: dephased and unmeasured operators need
 not agree, but can agree for special unitaries. Lean source covers only the
 arithmetic positivity budget. Compilation of the new CoherenceBudget module
 is currently unconfirmed; the new main 57150ac formalization job was skipped.
-[Independent reconstruction and actual finite scope](../evidence/executions/20261014/spectrum-coherence/README.md).
+[Independent reconstruction and actual finite scope](../archive/evidence/executions/20261014/spectrum-coherence/README.md).
 
 This is the current scientific-status authority. A project proof is not an external referee certificate. The [core registry](claims.json) deliberately covers fewer statements than the full corpus; the theorem-family tables below retain the broader claims.
 
@@ -212,7 +212,7 @@ uniform reversal-norm convergence when its separate initial norm tends to
 zero; FM-021/FM-022 supply named eventual actual-map inputs only.
 No effective startup, smaller general cutoff, growing-order or edge law,
 physical microscopic reference, TRACE-005 or BGS is proved.
-[Review and actual finite scope](../evidence/executions/20261013/global-feedback-flatness/README.md).
+[Review and actual finite scope](../archive/evidence/executions/20261013/global-feedback-flatness/README.md).
 
 **BGS-TRACE-079 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
 [All-pair stopped concentration](../mathematics/two_step_stopped_concentration_20261013.md)
@@ -222,7 +222,7 @@ and shrinking-Green corollary give 9/u on reached deep-range states. That
 stopped theorem alone makes no early-survival estimate; the separate
 TRACE-080 argument supplies the unconditional global trajectory result
 under stronger startup hypotheses.
-[Review and exact controls](../evidence/executions/20261013/stopped-concentration/README.md).
+[Review and exact controls](../archive/evidence/executions/20261013/stopped-concentration/README.md).
 
 ## Two-step fluctuation control, 13 October 2026
 
@@ -239,7 +239,7 @@ estimate. Together with TRACE-075 and TRACE-077 it supplies complementary
 one-step fluctuation, mean and deep-range forcing inputs. These one-step inputs are completed by the separate TRACE-079/080
 concentration and trajectory results on their stated cutoff. TRACE-005
 and BGS remain open.
-[Independent review and finite scope](../evidence/executions/20261013/two-step-variance/README.md).
+[Independent review and finite scope](../archive/evidence/executions/20261013/two-step-variance/README.md).
 
 ## Shrinking stopped gaps, 13 October 2026
 
@@ -259,7 +259,7 @@ TRACE-077 alone does not estimate the probability of reaching that range;
 TRACE-079/080 supply the separate concentration and probability results
 for their stated initial class and cutoff. TRACE-005 and BGS remain open. Actual-map startup uses only named FM-021
 initial inputs. No new formal certificate or priority claim is asserted.
-[Review and finite scope](../evidence/executions/20261013/green-compression/README.md).
+[Review and finite scope](../archive/evidence/executions/20261013/green-compression/README.md).
 
 ## An unconditional clock class, 12 October 2026
 
@@ -282,7 +282,7 @@ prescribed-origin Sine₂ implication, without an origin-averaged claim.
 The maintained deterministic initial matrix is outside this entropy class;
 TRACE-080 now supplies its feedback probability on the larger stated
 cutoff. Physical microscopic TRACE-055, signed TRACE-005 and BGS remain open. Prior Cauchy/Haar projection/beta objects are credited.
-[Exact review and execution scope](../evidence/executions/20261012/haar-feedback/README.md).
+[Exact review and execution scope](../archive/evidence/executions/20261012/haar-feedback/README.md).
 
 ## Unitary two-step obstruction, 12 October 2026
 
@@ -299,7 +299,7 @@ and witness corollary. TRACE-078/079/080 now provide the separate fluctuation, c
 trajectory companions at their explicit scopes. Microscopic identification
 and BGS remain unproved.
 The original averaging sentence was corrected before promotion.
-[Review and exact finite scope](../evidence/executions/20261012/two-step-drift/README.md).
+[Review and exact finite scope](../archive/evidence/executions/20261012/two-step-drift/README.md).
 
 **BGS-TRACE-074 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
 [Two rank-one unitary corrections](../mathematics/unitary_two_step_obstruction_20261012.md)
@@ -313,7 +313,7 @@ at the third step and has a one-step Schur variance
 not asserted to occur along the maintained trajectory. This is neither
 a BGS counterexample nor a flatness-probability theorem. Priority and
 analytic Lean certification are not claimed.
-[Exact review and execution scope](../evidence/executions/20261012/unitary-two-step/README.md).
+[Exact review and execution scope](../archive/evidence/executions/20261012/unitary-two-step/README.md).
 
 ## Checked research integration, 11 October 2026
 
@@ -358,7 +358,7 @@ at log^(4+kappa). The scalar microscopic law remains unresolved.
 | BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](../archive/record/research_checkpoint_20261008.md): the complete submitted hierarchy remains pending; covariance and physical L2 transport are reconstructed, while delay and gap results retain all-time-flatness hypotheses |
 | BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
 
-[Proof review and bounded executions](../evidence/executions/20261008/phase-channel-jet/README.md)
+[Proof review and bounded executions](../archive/evidence/executions/20261008/phase-channel-jet/README.md)
 are separate evidence tiers. The 4/3 matrix theorem improves the submitted
 13/3 inequality; no world-priority verdict is made. TRACE-053 operator norm
 cannot be promoted to a microscopic superoperator-trace law. TRACE-055 is a

@@ -9,7 +9,7 @@ Dependencies: TRACE-073 C3--C6 only (fresh-phase noise and Schatten
 smoothness); TRACE-074 for the higher-step singular comparison. FM-021
 is used only for the actual-map initial conditions, not for the abstract
 unitary theorem. No reversal conclusion from TRACE-073 is inherited.
-[Independent reconstruction and finite execution](../evidence/executions/20261013/green-compression/README.md).
+[Independent reconstruction and finite execution](../archive/evidence/executions/20261013/green-compression/README.md).
 
 ## 1. Exact classical identity
 

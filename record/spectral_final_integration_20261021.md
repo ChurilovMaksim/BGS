@@ -131,7 +131,7 @@ the all-order polynomial estimate, their complete proofs, verifier, claim
 IDs and manuscript section. They are linked from the new research hub rather
 than duplicated as new discoveries. The earlier closure without separate UI,
 the 16--19 October phase/Abel/Gaussian/Wick work, and the
-[20 October toolchain record](../evidence/executions/20261020/toolchain-followup/README.md)
+[20 October toolchain record](../archive/evidence/executions/20261020/toolchain-followup/README.md)
 remain in their dated sections. This edition preserves those baseline blobs.
 
 The previous handoff task relied on repository pointers for its closure audit.

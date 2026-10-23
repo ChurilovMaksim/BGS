@@ -426,7 +426,7 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261020/toolchain-followup/receipt.json",
+        "archive/evidence/executions/20261020/toolchain-followup/receipt.json",
         "evidence/executions/20261006/original-channel-gap/lean.log",
         "evidence/executions/20261006/original-channel-gap/integration.json"
       ],
@@ -1120,8 +1120,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261004/polynomial-coboundary/manifest.json",
-        "evidence/executions/20261004/polynomial-coboundary/checks.json",
+        "archive/evidence/executions/20261004/polynomial-coboundary/manifest.json",
+        "archive/evidence/executions/20261004/polynomial-coboundary/checks.json",
         "archive/evidence/20261004/polynomial_coboundary_wolfram.json",
         "archive/evidence/executions/20261004-polynomial-integration.json"
       ],
@@ -1385,8 +1385,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261004/general-start/manifest.json",
-        "evidence/executions/20261004/general-start/checks.json"
+        "archive/evidence/executions/20261004/general-start/manifest.json",
+        "archive/evidence/executions/20261004/general-start/checks.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_general_start.py"
@@ -1410,8 +1410,8 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/executions/20261004/general-start/manifest.json",
-        "evidence/executions/20261004/general-start/checks.json"
+        "archive/evidence/executions/20261004/general-start/manifest.json",
+        "archive/evidence/executions/20261004/general-start/checks.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_general_start.py"
@@ -1437,8 +1437,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261004/general-start/manifest.json",
-        "evidence/executions/20261004/general-start/checks.json"
+        "archive/evidence/executions/20261004/general-start/manifest.json",
+        "archive/evidence/executions/20261004/general-start/checks.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_general_start.py"
@@ -1463,8 +1463,8 @@
         "EXT-KLZF-2022"
       ],
       "evidence": [
-        "evidence/executions/20261004/circular-dyson/manifest.json",
-        "evidence/executions/20261004/circular-dyson/checks.json"
+        "archive/evidence/executions/20261004/circular-dyson/manifest.json",
+        "archive/evidence/executions/20261004/circular-dyson/checks.json"
       ],
       "verifiers": [
         "computations/verification/circular_dyson_relaxation.py"
@@ -1492,8 +1492,8 @@
         "EXT-EHL-2018"
       ],
       "evidence": [
-        "evidence/executions/20261005/noise-removal/manifest.json",
-        "evidence/executions/20261005/noise-removal/checks.json"
+        "archive/evidence/executions/20261005/noise-removal/manifest.json",
+        "archive/evidence/executions/20261005/noise-removal/checks.json"
       ],
       "verifiers": [
         "computations/verification/microscopic_noise_removal.py"
@@ -1520,8 +1520,8 @@
       ],
       "boundary": "Period-N counting fields with multiplicities and all fixed reference unit-window moments: bounded pth displacement cost controls count moments 1<s<p+1; vanishing costs transfer fixed factorial orders k<p+1. All fixed costs give all orders; a collapsed clock refutes k>p+1 from one cost, no critical-endpoint claim. Fixed high Schatten moments give projected-to-Dyson costs O_r((t+t^2 log N)^r)+O_r(N^-2r-4), with reference hypotheses and bounded initial traces. Includes actual logarithmic time and repeated starts by fixed-N majorants; no maximum displacement, deterministic noise removal, growing order, full BGS or priority certificate.",
       "evidence": [
-        "evidence/executions/20261005/all-order/manifest.json",
-        "evidence/executions/20261005/all-order/checks.json",
+        "archive/evidence/executions/20261005/all-order/manifest.json",
+        "archive/evidence/executions/20261005/all-order/checks.json",
         "archive/record/all_order_review_20261005.md"
       ],
       "verifiers": [
@@ -1552,8 +1552,8 @@
       ],
       "boundary": "Original uncentered normalized-GUE chain, exact initial A_N, bounded p1,p2, 1/N<=t->0, t^2 log N->0, reference FLOW-014 from Pi A_N, and N^b epsilon->0 for every fixed b. All fixed compact-continuous/Schwartz factorial orders and bounded-window moments; conditional uniform-origin statistics and complete signed Fourier/CUE counterterm sums converge in L2. Actual t=8g, epsilon=N^-loglogN, floor(2t N^(4loglogN)) steps. C16-C17 exactly reduce deterministic signed target to signed chain-defect vanishing; that actual estimate is OPEN. No all-order polynomial schedule, growing-order uniformity, effective threshold, full-sequence almost sure, deterministic BGS, external refereeing, analytic Lean or priority certificate.",
       "evidence": [
-        "evidence/executions/20261005/all-order/manifest.json",
-        "evidence/executions/20261005/all-order/checks.json",
+        "archive/evidence/executions/20261005/all-order/manifest.json",
+        "archive/evidence/executions/20261005/all-order/checks.json",
         "archive/record/all_order_review_20261005.md"
       ],
       "verifiers": [
@@ -1583,8 +1583,8 @@
       ],
       "boundary": "Odd-N Brownian clock start. Exact Fourier second moment, equal positive/negative mesh masses, uniform signed pair CUE bound 8/(Nt)^2 for Nt>=1; sharp joint leading measure delta_1+delta_-1-2delta_0 when Nt->infty,t->0. All fixed critical factorial/moment limits, synchronous ordered-lift matching robustness and small-noise clock preservation iff Nt->0. Original uncentered-chain annealed critical corollary retains 1/N<=t->0,t^2 log N->0 and one superpolynomial step sequence; no critical quenched or sub-1/N chain theorem. Exact noisy-clock Abel sign and coefficient, no time monotonicity. No actual frozen-map clock matching, actual signed-defect estimate, full BGS or priority certificate.",
       "evidence": [
-        "evidence/executions/20261005/critical-noise/manifest.json",
-        "evidence/executions/20261005/critical-noise/checks.json",
+        "archive/evidence/executions/20261005/critical-noise/manifest.json",
+        "archive/evidence/executions/20261005/critical-noise/checks.json",
         "archive/record/critical_noise_review_20261005.md"
       ],
       "verifiers": [
@@ -1611,8 +1611,8 @@
       ],
       "boundary": "Every fixed neutral positive/negative weighted trace degree Q, N>=max(3,2Q), bounded starting p_1,...,p_Q. Haar projection commutes with heat and has defect <=C_Q,K t for smooth Haar-L2-bounded tests. Finite CUE covariance gives variance <=C_F/N for compact factorial/Laplace origin averages; their actual-map fixed-Q projections agree with CUE at O_Q,F(N^-1/2), uniformly at all heat times. Schwartz variants qualitative only. A particular positive local Laplace complement has Haar norm O(N^-1/2) but nonzero clock evaluation, hence point amplification >=c sqrt(N); not a heat inverse bound. FLOW-020 separately controls a logarithmic degree; actual unprojected complementary point evaluation remains OPEN. No deterministic BGS, external referee, analytic Lean or world-priority certificate.",
       "evidence": [
-        "evidence/executions/20261005/critical-noise/manifest.json",
-        "evidence/executions/20261005/critical-noise/checks.json",
+        "archive/evidence/executions/20261005/critical-noise/manifest.json",
+        "archive/evidence/executions/20261005/critical-noise/checks.json",
         "archive/record/critical_noise_review_20261005.md"
       ],
       "verifiers": [
@@ -1641,8 +1641,8 @@
       ],
       "boundary": "Exact neutral Wick basis and evaluation kernel, stable 2Q<=N. G8 newly derives |p_j(U_N)|<=C exp(alpha |j|) for the unchanged odd-N family by fixed-order packet uniformity; no effective constants. Actual Q=floor(gamma log N) compact local projections have O(N^-1/4) CUE error uniformly at all heat times; no quantitative Schwartz rate. A separate uniform trace K through Q gives a log-squared range, not established for the actual map. Universal evaluation cost >=exp(c sqrt(Q)) and exact blindness of every sublinear projection to one fixed Schwartz pair test. Top-degree decay interval q+-q(q-1)/N, with attained endpoints, yields inverse cost >=exp[a(1-b)Nt] for that particular local test in Haar L2 only. Actual J_N,w(U_N), complete complementary evaluation, Heisenberg signed cancellation and deterministic BGS remain OPEN. No external referee, analytic Lean or world-priority certificate.",
       "evidence": [
-        "evidence/executions/20261005/degree-growth/manifest.json",
-        "evidence/executions/20261005/degree-growth/checks.json",
+        "archive/evidence/executions/20261005/degree-growth/manifest.json",
+        "archive/evidence/executions/20261005/degree-growth/checks.json",
         "archive/record/growing_degree_review_20261005.md"
       ],
       "verifiers": [
@@ -1667,8 +1667,8 @@
       ],
       "boundary": "For every unitary A and 2m<=N, exact heat evolution of |p_m|^2-m through determinant-ratio hook coefficients with every Wick contraction. Exact Haar-L2 norm/autocorrelation and triangular local-band spectral measure, not point evaluation. Short traces |p_j(A)|<=Nd through J give an explicit stable-band point heat bound under the stated Delta<=a(1-b)t/16 hypothesis. Actual U_N satisfies it eventually at t_N=max(32,8/a) log J_N/J_N with J_N=floor[log N/(2(alpha+1))], yielding superpolynomial accuracy of smoothed form-factor means at each m in aN<=m<=bN<N/2. No concentration, growing bandwidth, effective startup, original-chain schedule at this new time, or unperturbed cancellation is inferred. Simple globally uniform spectra with identical first Q_N=o(N) traces and common exponential bounds have separated original pair values and signed defects. Actual J_N,w(U_N), all other bands/orders, TRACE-005 and deterministic BGS remain OPEN. No world priority, external referee or analytic Lean certificate.",
       "evidence": [
-        "evidence/executions/20261005/pair-heat/manifest.json",
-        "evidence/executions/20261005/pair-heat/checks.json",
+        "archive/evidence/executions/20261005/pair-heat/manifest.json",
+        "archive/evidence/executions/20261005/pair-heat/checks.json",
         "archive/evidence/20261005/heisenberg_pair_heat_wolfram.json",
         "archive/record/heisenberg_pair_review_20261005.md",
         "archive/evidence/executions/20261005-pair-heat-integration.json"
@@ -2813,8 +2813,8 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261008/phase-channel-jet/channel_review.md",
-        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+        "archive/evidence/executions/20261008/phase-channel-jet/channel_review.md",
+        "archive/evidence/executions/20261008/phase-channel-jet/run_manifest.json"
       ],
       "verifiers": [
         "computations/verification/phase_channel_jet.py",
@@ -2839,9 +2839,9 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261008/phase-channel-jet/matrix_review.md",
-        "evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
-        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+        "archive/evidence/executions/20261008/phase-channel-jet/matrix_review.md",
+        "archive/evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
+        "archive/evidence/executions/20261008/phase-channel-jet/run_manifest.json"
       ],
       "verifiers": [
         "computations/verification/phase_channel_jet.py",
@@ -2889,8 +2889,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
-        "evidence/executions/20261008/phase-channel-jet/run_manifest.json"
+        "archive/evidence/executions/20261008/phase-channel-jet/flow_scalar_review.md",
+        "archive/evidence/executions/20261008/phase-channel-jet/run_manifest.json"
       ],
       "verifiers": [
         "computations/verification/phase_channel_jet.py"
@@ -2984,9 +2984,9 @@
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md",
-        "evidence/executions/20261011/cavity-continuation/README.md",
-        "evidence/executions/20261011/fourth-delay/README.md",
-        "evidence/executions/20261011/clock-universality/README.md"
+        "archive/evidence/executions/20261011/cavity-continuation/README.md",
+        "archive/evidence/executions/20261011/fourth-delay/README.md",
+        "archive/evidence/executions/20261011/clock-universality/README.md"
       ],
       "verifiers": [
         "computations/verification/schur_censoring_and_clock.py",
@@ -3326,8 +3326,8 @@
         "mathematics/delay_bootstrap_20261011.md"
       ],
       "evidence": [
-        "evidence/executions/20261011/cavity-continuation/README.md",
-        "evidence/executions/20261011/reversal-gap/README.md"
+        "archive/evidence/executions/20261011/cavity-continuation/README.md",
+        "archive/evidence/executions/20261011/reversal-gap/README.md"
       ],
       "verifiers": [
         "computations/verification/schur_censoring_and_clock.py",
@@ -3350,7 +3350,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261012/unitary-two-step/README.md"
+        "archive/evidence/executions/20261012/unitary-two-step/README.md"
       ],
       "verifiers": [
         "computations/verification/unitary_two_step_obstruction.py"
@@ -3375,7 +3375,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261012/two-step-drift/README.md"
+        "archive/evidence/executions/20261012/two-step-drift/README.md"
       ],
       "verifiers": [
         "computations/verification/two_step_restoring_drift.py"
@@ -3403,7 +3403,7 @@
         "mathematics/full_depth_clock_measure_20261011.md"
       ],
       "evidence": [
-        "evidence/executions/20261012/haar-feedback/README.md"
+        "archive/evidence/executions/20261012/haar-feedback/README.md"
       ],
       "verifiers": [
         "computations/verification/haar_feedback_law.py"
@@ -3431,7 +3431,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261013/green-compression/README.md"
+        "archive/evidence/executions/20261013/green-compression/README.md"
       ],
       "verifiers": [
         "computations/verification/green_compression.py"
@@ -3455,7 +3455,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261013/two-step-variance/README.md"
+        "archive/evidence/executions/20261013/two-step-variance/README.md"
       ],
       "verifiers": [
         "computations/verification/two_step_increment_variance.py"
@@ -3479,7 +3479,7 @@
       ],
       "dependency_scope": "TRACE-075/078 exact one-step algebra extended explicitly to diagonal pairs; TRACE-077 only for the stopped deep-range three-step input; FM-021 only for actual-map initial conditions. Scalar Bernstein inequality is proved internally.",
       "evidence": [
-        "evidence/executions/20261013/stopped-concentration/README.md"
+        "archive/evidence/executions/20261013/stopped-concentration/README.md"
       ],
       "verifiers": [
         "computations/verification/stopped_two_step_concentration.py"
@@ -3513,7 +3513,7 @@
         "mathematics/full_depth_clock_measure_20261011.md"
       ],
       "evidence": [
-        "evidence/executions/20261013/global-feedback-flatness/README.md"
+        "archive/evidence/executions/20261013/global-feedback-flatness/README.md"
       ],
       "verifiers": [
         "computations/verification/feedback_row_energy.py"
@@ -3540,7 +3540,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261014/spectrum-coherence/README.md"
+        "archive/evidence/executions/20261014/spectrum-coherence/README.md"
       ],
       "verifiers": [
         "computations/verification/spectrum_coherence_controls.py",
@@ -3566,7 +3566,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261014/spectrum-coherence/README.md"
+        "archive/evidence/executions/20261014/spectrum-coherence/README.md"
       ],
       "verifiers": [
         "computations/verification/spectrum_coherence_controls.py",
@@ -3595,7 +3595,7 @@
       "external_dependencies": [],
       "proof_dependencies": [],
       "evidence": [
-        "evidence/executions/20261014/first-return/README.md"
+        "archive/evidence/executions/20261014/first-return/README.md"
       ],
       "verifiers": [],
       "formalization": [],

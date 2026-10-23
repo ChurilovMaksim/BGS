@@ -6,7 +6,7 @@ bound. Application as an actual random-Schur limit is CONDITIONAL on the
 entry-flatness premise of [the all-fixed-order theorem](conditional_clock_universality_20261011.md).
 **Review:** independent internal reconstruction, 11 October 2026, base
 `b126cfb18f445b82358fc156632873082ac22503`.
-The [review packet](../evidence/executions/20261011/clock-universality/README.md)
+The [review packet](../archive/evidence/executions/20261011/clock-universality/README.md)
 preserves the exact input. Endpoint moments and the free-Jacobi family are
 prior objects; no world-priority or actual matrix-freeness claim is made.
 

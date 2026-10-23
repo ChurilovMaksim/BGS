@@ -310,7 +310,7 @@ conclusions or import a spectral-gap theorem. The Haar unistochastic
 ensemble is prior work; [the source comparison](../literature/unitary_two_step_sources_20261012.md)
 does not establish priority for this obstruction.
 
-The [execution packet](../evidence/executions/20261012/unitary-two-step/README.md)
+The [execution packet](../archive/evidence/executions/20261012/unitary-two-step/README.md)
 separates the reviewed original argument, the maintained transcription,
 exact rational finite construction checks, and floating diagnostics.
 There is no analytic Lean formalization or external referee certification.

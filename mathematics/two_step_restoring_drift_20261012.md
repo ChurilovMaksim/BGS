@@ -231,7 +231,7 @@ or that no new peaks are created elsewhere.
 
 ## 6. Review, computation and the remaining implication
 
-The [review packet](../evidence/executions/20261012/two-step-drift/README.md)
+The [review packet](../archive/evidence/executions/20261012/two-step-drift/README.md)
 preserves the original candidate and the correction to its averaging
 sentence. The core proof uses only the finite feedback formula, circle
 Fourier moments, bistochasticity, weighted Cauchy--Schwarz and AM--GM.

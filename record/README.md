@@ -95,7 +95,7 @@ A proof review, a finite arithmetic run, a floating diagnostic, a formal build
 and hosted CI are different events. Each receipt states what actually ran.
 The [evidence guide](../evidence/README.md) and
 [11 October packets](../archive/evidence/executions/20261011/chat-research/README.md)
-and [cavity continuation](../evidence/executions/20261011/cavity-continuation/README.md)
+and [cavity continuation](../archive/evidence/executions/20261011/cavity-continuation/README.md)
 provide those boundaries. Earlier executions remain preserved. A successful build cannot promote an unproved
 asymptotic implication, and internal reconstruction is not external refereeing.
 

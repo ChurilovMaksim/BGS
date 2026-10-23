@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-076.
 **State:** PROVED; independent internal reconstruction of the original
 candidate, with maintained-transfer review recorded in the
-[review packet](../evidence/executions/20261012/haar-feedback/README.md).
+[review packet](../archive/evidence/executions/20261012/haar-feedback/README.md).
 Sections 1–3 are self-contained. The unconditional clock corollaries use
 the reviewed [conditional all-fixed-order theorem](conditional_clock_universality_20261011.md)
 and [reference measure](full_depth_clock_measure_20261011.md).

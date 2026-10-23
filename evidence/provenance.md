@@ -11,9 +11,9 @@ records actual local checks and manuscript build, not a BGS certificate.
 The [initial domain mismatch](../archive/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
 is preserved explicitly; the initial run is superseded rather than relabelled.
 
-The 4 October [polynomial coboundary packet](executions/20261004/polynomial-coboundary/manifest.json)
+The 4 October [polynomial coboundary packet](../archive/evidence/executions/20261004/polynomial-coboundary/manifest.json)
 pins final source, run limits, seed and 40 finite matrix-direction controls.
-Its [checks](executions/20261004/polynomial-coboundary/checks.json) distinguish
+Its [checks](../archive/evidence/executions/20261004/polynomial-coboundary/checks.json) distinguish
 complex128 diagnostics from exact rational/partition arithmetic.
 [Wolfram output](20261004/polynomial_coboundary_wolfram.json) checks exponents
 and a scalar sixth derivative only. The

@@ -27,14 +27,14 @@ identify a superseded object rather than rewriting its original output.
 
 | Packet | Actual coverage |
 |---|---|
-| [Haar feedback, 12 October](executions/20261012/haar-feedback/README.md) | Independent analytic reconstruction and transfer review, five exact colligations, symbolic Jacobians, twelve moment integrals, actual Wolfram identities and separate CI provenance |
-| [Two-step drift, 12 October](executions/20261012/two-step-drift/README.md) | Independent one-step theorem reconstruction, exact phase residues and rational unitary controls |
-| [Unitary obstruction, 12 October](executions/20261012/unitary-two-step/README.md) | Independent genuine-unitary construction review, exact and descriptive finite controls at their declared scopes |
-| [Phase channel and matrix jets, 8 October](executions/20261008/phase-channel-jet/README.md) | Independent internal proof reconstructions; Python finite quadrature; exact C++ counts; Wolfram identities; 20-module Lean build; 280-page TeX build and selected-page inspection |
+| [Haar feedback, 12 October](../archive/evidence/executions/20261012/haar-feedback/README.md) | Independent analytic reconstruction and transfer review, five exact colligations, symbolic Jacobians, twelve moment integrals, actual Wolfram identities and separate CI provenance |
+| [Two-step drift, 12 October](../archive/evidence/executions/20261012/two-step-drift/README.md) | Independent one-step theorem reconstruction, exact phase residues and rational unitary controls |
+| [Unitary obstruction, 12 October](../archive/evidence/executions/20261012/unitary-two-step/README.md) | Independent genuine-unitary construction review, exact and descriptive finite controls at their declared scopes |
+| [Phase channel and matrix jets, 8 October](../archive/evidence/executions/20261008/phase-channel-jet/README.md) | Independent internal proof reconstructions; Python finite quadrature; exact C++ counts; Wolfram identities; 20-module Lean build; 280-page TeX build and selected-page inspection |
 | [Original channel gap](executions/20261006/original-channel-gap/integration.json) | Source-bound FM-020 finite controls and formalization/integration receipt |
 | [Collective exact controls](executions/20261006/collective-diffusion-exact-v2/manifest.json) | Corrected modular/rational controls; the [separate spectrum run](executions/20261006/collective-diffusion-spectrum/manifest.json) is float64 descriptive evidence |
 | [Operator transfer](executions/20261006/operator-transfer/manifest.json) | Exact modular, cyclotomic and rational controls; symbolic Wolfram response is separately retained |
-| [Noise removal](executions/20261005/noise-removal/manifest.json) | Independent exact generator/character controls and separately labelled binary64 quadrature |
+| [Noise removal](../archive/evidence/executions/20261005/noise-removal/manifest.json) | Independent exact generator/character controls and separately labelled binary64 quadrature |
 
 Other packets are discoverable through [index.json](index.json),
 [provenance.md](provenance.md), their theorem source and the

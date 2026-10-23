@@ -333,7 +333,7 @@ not a new audit of FM-022 or a complete symmetry/microscopic classification.
 
 ## 12. Verification and priority boundary
 
-[Independent reconstruction and actual finite scope](../evidence/executions/20261013/global-feedback-flatness/README.md) preserve the raw candidate and separate
+[Independent reconstruction and actual finite scope](../archive/evidence/executions/20261013/global-feedback-flatness/README.md) preserve the raw candidate and separate
 clock-hypothesis check. The maintained Green paragraph spells out the
 sharper estimate supplied by the old 1/11 threshold; all constants and
 theorem hypotheses are unchanged. Row/column phase identities, complete

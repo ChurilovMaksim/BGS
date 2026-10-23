@@ -10,7 +10,7 @@ established; the endpoint numbers are known in the random-matrix delay model.
 
 Use the exact process of [the first bootstrap](delay_bootstrap_20261011.md)
 and the killed hierarchy of [the all-fixed-moment proof](all_moment_delay_bootstrap_20261011.md).
-The [review packet](../evidence/executions/20261011/fourth-delay/README.md)
+The [review packet](../archive/evidence/executions/20261011/fourth-delay/README.md)
 fixes the input, reconstruction and finite-control scope.
 
 ## Claim and scope

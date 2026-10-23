@@ -225,7 +225,7 @@ claim or external referee/formal certification is made.
 
 ## Review and exact verification scope
 
-[Independent reconstruction and finite controls](../evidence/executions/20261013/stopped-concentration/README.md) preserve the frozen raw candidate. The maintained
+[Independent reconstruction and finite controls](../archive/evidence/executions/20261013/stopped-concentration/README.md) preserve the frozen raw candidate. The maintained
 version clarifies that Gamma_b contains both startup barriers; this was
 already required by the stated finite theorem. Exact root controls check
 three unitary-pair phase integrals, including two diagonals, and deterministic

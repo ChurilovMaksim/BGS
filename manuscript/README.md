@@ -42,9 +42,9 @@ explicit conditional inputs. The frozen-model signed hierarchy and BGS remain op
 
 The accepted three-pass build has **311 pages**, with no horizontal overflow
 or unresolved references/citations and unchanged TeX input hashes.
-[Build receipt](../evidence/executions/20261019/repository-integration/manuscript_build_accepted.json)
+[Build receipt](../archive/evidence/executions/20261019/repository-integration/manuscript_build_accepted.json)
 and the rejected first-build logs are retained.
-[Remote workflow disposition](../evidence/executions/20261019/repository-integration/publication_c49e351.json)
+[Remote workflow disposition](../archive/evidence/executions/20261019/repository-integration/publication_c49e351.json)
 records startup failures without executed code steps; remote build success is not asserted. The rejected build exposed an
 inherited unbreakable source path; only its typesetting was corrected. Earlier page counts and visual checks refer to their original source
 revisions; they do not certify this later section. The 12 October manuscript

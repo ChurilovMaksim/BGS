@@ -116,7 +116,7 @@ and from any finite arithmetic Lean kernel. No operator-norm, complex
 linear-algebra, discriminant, asymptotic or BGS statement is asserted
 to follow from compiling a numerical dimension budget.
 
-[Independent audit and maintained-transfer check](../evidence/executions/20261014/spectrum-coherence/README.md)
+[Independent audit and maintained-transfer check](../archive/evidence/executions/20261014/spectrum-coherence/README.md)
 separate the original prose correction from the proof of M1--M3.
 The [Python verifier](../computations/verification/spectrum_coherence_controls.py)
 checks exact finite block identities and an N=2 endpoint with nonzero

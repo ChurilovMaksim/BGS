@@ -275,20 +275,20 @@ not established.
 The [11 October execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md)
 records the complete 217-check workspace snapshot, 236 maintenance tests,
 23 active Lean modules / 26 Lake jobs and its 284-page manuscript build.
-The [subsequent cavity packet](evidence/executions/20261011/cavity-continuation/README.md)
+The [subsequent cavity packet](archive/evidence/executions/20261011/cavity-continuation/README.md)
 records the new controls and manuscript continuation at their own scope.
-The [reversal extension](evidence/executions/20261011/reversal-gap/README.md)
+The [reversal extension](archive/evidence/executions/20261011/reversal-gap/README.md)
 records the current analytic review and manuscript build, and the completed
 219-check/25-target CI of its preceding commit. New source acceptance is
 checked on its own final commit; historical receipts retain their original scope.
-The [12 October packet](evidence/executions/20261012/two-step-drift/README.md)
+The [12 October packet](archive/evidence/executions/20261012/two-step-drift/README.md)
 records the new exact controls and 291-page manuscript. Its preceding
 clock commit passed all seven scientific CI jobs, 220 workspace checks,
 236 maintenance tests, 25 C++ builds and the 26-job Lake build, plus the
 independent manuscript workflow. These preceding receipts are explicitly
 not final-source acceptance for TRACE-074/075.
 
-The [Haar packet](evidence/executions/20261012/haar-feedback/README.md)
+The [Haar packet](archive/evidence/executions/20261012/haar-feedback/README.md)
 adds independent proof reconstruction, exact noncommuting and Jacobian
 controls, twelve one-port moment integrals and an actual Wolfram result.
 It preserves the failed preceding source CI: 236 maintenance tests and

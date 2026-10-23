@@ -249,7 +249,7 @@ application is not established.
 
 [TRACE-081](flat_spectrum_obstruction_20261014.md) supplies the family;
 [TRACE-082](coherence_memory_plateau_20261014.md) supplies the return-block
-notation. The [independent reconstruction and exact finite packet](../evidence/executions/20261014/first-return/README.md)
+notation. The [independent reconstruction and exact finite packet](../archive/evidence/executions/20261014/first-return/README.md)
 bind the frozen R1--R5 text, independent controls and root executions.
 The full mathematical proof is separate from every finite replay.
 No new Lean operator theorem is asserted.

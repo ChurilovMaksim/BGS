@@ -10,7 +10,7 @@ Classification as recorded in the repository reconciliation of
 ([record/repository_reconciliation_20261020.md](../record/repository_reconciliation_20261020.md),
 "Three malformed-as-JSON historical output files are explicitly
 classified and preserved byte-for-byte") and its integrity record
-([integrity.json](executions/20261020/repository-reconciliation/integrity.json)).
+([integrity.json](../archive/evidence/executions/20261020/repository-reconciliation/integrity.json)).
 
 | Path | Bytes | SHA-256 | Classification |
 |---|---:|---|---|

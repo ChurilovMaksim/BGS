@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-078. **State:** PROJECT PROOF + INDEPENDENT
 INTERNAL RECONSTRUCTION, 13 October 2026. The proof below is self-contained;
 TRACE-075 gives its companion drift with the same frozen-label convention.
-[Review and finite scope](../evidence/executions/20261013/two-step-variance/README.md).
+[Review and finite scope](../archive/evidence/executions/20261013/two-step-variance/README.md).
 Let S be unitary of size u>=3, P=|S|², K=P², delta=max P<=1/4.
 Fix distinct i,j. Choose e uniformly among all u labels and a fresh phase
 w. Freeze K'ij=Kij when e=i or j; otherwise use exact Schur feedback.

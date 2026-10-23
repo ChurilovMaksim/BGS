@@ -37,7 +37,7 @@ representations are retained when they materially improve verification.
 | [phase_channel_jet.wl](wolfram/phase_channel_jet.wl) | Poisson differential and count-polynomial identities |
 | [microscopic_pair_reference.py](analysis/microscopic_pair_reference.py) | Analytic Sine2/Poisson reference figure for the README; no sampled map spectra |
 
-The [8 October packet](../evidence/executions/20261008/phase-channel-jet/README.md)
+The [8 October packet](../archive/evidence/executions/20261008/phase-channel-jet/README.md)
 records commands, source hashes, tolerances and actual execution. Replay to a
 fresh output location:
 

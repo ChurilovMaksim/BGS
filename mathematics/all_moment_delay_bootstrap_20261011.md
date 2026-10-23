@@ -14,7 +14,7 @@ The later [all-fixed-order equality theorem](conditional_clock_universality_2026
 closes that induction under the same premise and identifies the full-depth measure.
 
 The original candidate and its exact review input are preserved in the dated
-[cavity packet](../evidence/executions/20261011/cavity-continuation/README.md).
+[cavity packet](../archive/evidence/executions/20261011/cavity-continuation/README.md).
 Use the process and first-delay formulas of
 [the preceding bootstrap](delay_bootstrap_20261011.md). Constants and the
 threshold N0 may depend on fixed K, kappa, p, zeta and concentration exponents.

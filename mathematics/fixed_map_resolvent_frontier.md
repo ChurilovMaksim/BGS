@@ -1074,7 +1074,7 @@ equivalent to $\mathfrak D^{\rm chain}_{N,\psi}\to0$, or to
 $\mathbb E|F_{N,\psi}(U_{n_N})-F_{N,\psi}(U_N)|^2\to0$.
 Its actual vanishing remains open. Independent internal review checked the
 new implications; inherited inputs keep their stated evidence levels.
-The [finite packet](../evidence/executions/20261005/all-order/manifest.json)
+The [finite packet](../archive/evidence/executions/20261005/all-order/manifest.json)
 and [source review](../literature/all_order_sources_20261005.md) do not
 establish deterministic noise removal, world priority, external refereeing,
 an all-order polynomial schedule, or full BGS.
@@ -1249,7 +1249,7 @@ not actual point evaluation. The specific signed vector
 $J_{N,w}(U_N)$ remains unestimated, as do the full higher-order
 counterterms. The [review](../archive/record/growing_degree_review_20261005.md)
 checks the new analytic implications; the
-[finite packet](../evidence/executions/20261005/degree-growth/manifest.json)
+[finite packet](../archive/evidence/executions/20261005/degree-growth/manifest.json)
 does not certify their all-degree limits, priority or BGS.
 The complete deterministic target remains OPEN.
 
