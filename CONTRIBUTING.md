@@ -63,4 +63,4 @@ to make old evidence look current. Add a new record that supersedes or
 interprets the old one.
 
 See `REVIEWING.md`, `SOURCE_OF_TRUTH.md`, and
-`record/repository_conventions.md`.
+`docs/repository_conventions.md`.

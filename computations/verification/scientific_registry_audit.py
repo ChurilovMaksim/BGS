@@ -301,7 +301,7 @@ def audit_governance_surface() -> None:
         "RESEARCH.md", "RELEASES.md", "CHANGELOG.md", "ERRATA.md",
         "LICENSE_POLICY.md", ".zenodo.json", ".github/CODEOWNERS",
         ".github/pull_request_template.md", ".github/main-branch-policy.json",
-        "record/branch_protection_policy.md", "record/scientific_dependency_graph.md",
+        "docs/branch_protection_policy.md", "record/scientific_dependency_graph.md",
         "archive/history/2026/INDEX.md", "evidence/executions/README.md",
         "environment/README.md", "papers/README.md", "mathematics/topics/README.md",
         "record/claim_registry.md", "computations/maintenance/render_claim_registry.py",

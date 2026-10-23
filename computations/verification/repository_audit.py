@@ -48,7 +48,7 @@ REQUIRED = [
     ROOT / "REPRODUCE_unified.md",
     ROOT / "computations" / "README.md",
     ROOT / "record" / "claim_ledger.md",
-    ROOT / "record" / "repository_conventions.md",
+    ROOT / "docs" / "repository_conventions.md",
     ROOT / "record" / "claims.json",
     ROOT / "record" / "claim_registry.md",
     ROOT / "record" / "errata.json",

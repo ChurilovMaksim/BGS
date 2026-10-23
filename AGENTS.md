@@ -4,7 +4,7 @@ This is a mathematical research repository, not a claim of a solved BGS conjectu
 
 ## Authorities and conventions
 
-Read `SOURCE_OF_TRUTH.md`, `record/repository_conventions.md`,
+Read `SOURCE_OF_TRUTH.md`, `docs/repository_conventions.md`,
 `RESEARCH.md`, `record/claim_ledger.md`, `record/claims.json`,
 `mathematics/results.md`, and `mathematics/open_questions.md` before opening a route. Search the existing
 proofs and research records before calling an argument new. The machine-readable registry and SOURCE_OF_TRUTH.md control current status;

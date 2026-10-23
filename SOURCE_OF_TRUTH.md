@@ -1,7 +1,7 @@
 # Source of truth
 
 This file is the short operational map. Detailed policy is in
-`record/repository_conventions.md`.
+`docs/repository_conventions.md`.
 
 When surfaces disagree, resolve them in this order:
 
