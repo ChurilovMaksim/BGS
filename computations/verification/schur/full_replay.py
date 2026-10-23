@@ -278,11 +278,15 @@ def run_replay(output, modes, controls, root=ROOT):
                         'n.test=ast.Constant(value=True); ast.fix_missing_locations(t); '
                         'g={"__name__":"negative_control"}; exec(compile(t,"negative_control","exec"),g); g["run_checks"]()')
                     with private_workspace('negative') as workspace:
-                        result = execute_bound(prefix + ['-c', negative], workspace, family, 20)
+                        result = execute_bound(prefix + ['-c', negative], workspace, family,
+                                               entry['wall_seconds'])
                     tests.append({'family': family, 'mode': mode,
                                   'check': 'active explicit mathematical failure', **result})
                     require(not result['changed_inputs'], 'input bytes changed after negative control: '
                             + ', '.join(result['changed_inputs']))
+                    require(result['status'] != 'timed_out',
+                            'negative control timed out: ' + family
+                            + ' (wall budget ' + str(entry['wall_seconds']) + 's)')
                     require(result['exit_status'] != 0 and
                             ('AssertionError' in result['stderr'] or 'RuntimeError' in result['stderr']),
                             'mathematical failure branch vanished: ' + family)
