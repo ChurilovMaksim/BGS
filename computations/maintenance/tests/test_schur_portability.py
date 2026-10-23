@@ -95,7 +95,7 @@ class SchurPortability(unittest.TestCase):
             'computations/verification/schur/comparison.py',
             'mathematics/balanced_pair_schur_reduction.md',
             R.FAMILIES['author']['expected'], R.FAMILIES['independent']['expected'],
-            'evidence/schur_reduction_20261007/raw/review/review.md']
+            'archive/evidence/schur_reduction_20261007/raw/review/review.md']
         with tempfile.TemporaryDirectory(prefix='bgs-schur-corruption-') as directory:
             clone = Path(directory) / 'overlay'
             shutil.copytree(ROOT, clone, ignore=shutil.ignore_patterns('__pycache__', 'portable'))
@@ -126,7 +126,7 @@ class SchurPortability(unittest.TestCase):
             clone = Path(directory) / 'overlay'
             shutil.copytree(ROOT, clone, ignore=shutil.ignore_patterns('__pycache__', 'portable', 'qa'))
             module = load(clone / 'computations/verification/schur/full_replay.py', 'collision_replay')
-            output = clone / 'evidence/schur_reduction_20261007/raw/author'
+            output = clone / 'archive/evidence/schur_reduction_20261007/raw/author'
             before = (output / 'execution_manifest.json').read_bytes()
             with self.assertRaisesRegex(RuntimeError, 'overwrite authenticated source'):
                 module.run_replay(output, ['normal'], False, root=clone)

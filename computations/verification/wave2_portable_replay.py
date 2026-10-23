@@ -35,7 +35,7 @@ def sealed_source_bytes(root=historical.ROOT):
     historical.require(bindings['schema']=='bgs-wave2-replay-source-bindings-v1',
                        'unknown binding schema')
     resolutions=bindings.get('historical_resolutions',{})
-    expected={rel:'evidence/schur_reduction_20261007/raw/review/pinned/BGS/'+rel
+    expected={rel:'archive/evidence/schur_reduction_20261007/raw/review/pinned/BGS/'+rel
               for rel in ('AGENTS.md','SOURCE_OF_TRUTH.md','record/repository_conventions.md')}
     historical.require(resolutions==expected,'unreviewed historical input resolution')
     cached={}

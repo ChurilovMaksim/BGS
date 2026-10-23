@@ -13,7 +13,7 @@ accepted by the fresh-context internal review, SHA-256
 `f7d59a7a3c821afce10ed2a594a9a1769d7618393fa4ba35ae8f16368a610c90`.
 The original theorem and full review, including their source, execution,
 delivery, failed-attempt and closing-source records, remain byte-for-byte in
-`evidence/schur_reduction_20261007/raw/` (generated caches excluded).
+`archive/evidence/schur_reduction_20261007/raw/` (generated caches excluded).
 
 Proved: for every finite unitary U and independent left coordinate phases,
 the full balanced pair Abel transform equals the sum of positive scalar
@@ -110,7 +110,7 @@ Recorded scientific outputs agree across normal and -O execution on:
 
 No claim of Python 3.13.9 testing is made. Full exact-library and executable
 provenance, expected/observed values, commands, bounds and timings are retained
-in `evidence/schur_reduction_20261007/portable/`.
+in `archive/evidence/schur_reduction_20261007/portable/`.
 
 The adversarial suite checks root and nested-key injection, changed scientific
 values/types/structure, malformed runtime/environment metadata, duplicate

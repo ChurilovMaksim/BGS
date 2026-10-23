@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_schur_reduction_review/check_independent.py", line 202, in <module>
+    assert simp(expr-S.exp(-l*s)*(2*S.cosh(l*h)-2))==0;tick('three_radius_exponential_generator')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

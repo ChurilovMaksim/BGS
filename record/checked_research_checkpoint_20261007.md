@@ -76,7 +76,7 @@ graph universality or ordinary-body inequalities is asserted.
   reviews are retained beneath `evidence/charge_strengthening_20261007/raw/`.
 - Schur overlay: `30b317c6ae800149ceae554ac2301933761b446116621d71fe01c77d6b09e699`;
   declared mathematics/computations/evidence/record payload only. Review and
-  frozen source closure are retained beneath `evidence/schur_reduction_20261007/`.
+  frozen source closure are retained beneath `archive/evidence/schur_reduction_20261007/`.
 - Corrected-integral checkpoint: `b95f0e5568e8d7f4f40cc535546f4ea37ae688acd7743ef012ecd7be91a6c294`.
 - Signed-boundary checkpoint: `75a5f72303a796f15c49fa6b75e54738231cf363392340e23e0a37079cfdbbee`.
 - Balanced delay/Ward v2 review seal:

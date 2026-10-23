@@ -24,13 +24,13 @@ import time
 
 ROOT = Path(__file__).resolve().parents[3]
 BINDING_PATH = 'record/schur_reduction_source_bindings.json'
-BINDING_SHA256 = '334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14'
+BINDING_SHA256 = '553d1427d6eb2bbd41ef81136d476f69182caa7d4791185ec2f65c114fb903d7'
 FAMILIES = {
     'author': {'script': 'computations/verification/schur/author_checks.py',
-               'expected': 'evidence/schur_reduction_20261007/raw/author/verified_checks.json',
+               'expected': 'archive/evidence/schur_reduction_20261007/raw/author/verified_checks.json',
                'cpu_seconds': 60, 'wall_seconds': 70},
     'independent': {'script': 'computations/verification/schur/independent_checks.py',
-                    'expected': 'evidence/schur_reduction_20261007/raw/review/checks.json',
+                    'expected': 'archive/evidence/schur_reduction_20261007/raw/review/checks.json',
                     'cpu_seconds': 160, 'wall_seconds': 180},
 }
 MEMORY_BYTES = 2 * 1024 ** 3

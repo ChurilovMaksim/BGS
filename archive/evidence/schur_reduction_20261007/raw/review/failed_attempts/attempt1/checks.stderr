@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/shared/bgs_schur_reduction_review/check_independent.py", line 79, in <module>
+    U=V.extract(order,order);Ps=[newton_traces(U,k,N,M) for k in range(N+1)];total=[K.domain.zero]*(M+1)
+                                                                                    ^^^^^^^^
+AttributeError: 'GaussianRationalField' object has no attribute 'domain'

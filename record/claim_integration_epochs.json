@@ -1287,11 +1287,11 @@
       "fields": {
         "evidence": [
           "archive/record/schur_reduction_integration_proposal.json",
-          "evidence/schur_reduction_20261007/raw/review/review.md"
+          "archive/evidence/schur_reduction_20261007/raw/review/review.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence from evidence/ to archive/evidence/ (package Schur, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Acomplex-schur.md"
     },
     {
       "id": "BGS-FLOW-003",

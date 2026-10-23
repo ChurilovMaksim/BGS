@@ -1,0 +1,7 @@
+{
+  "scope": "Preparation harness correction only, not a mathematical failure",
+  "failure": "First portable manifest validation rejected absolute output paths and missing required max_cores metadata.",
+  "repair": "Manifest paths now use explicit artifact_root-relative paths; max_cores records actual inherited allowed CPU count, without overriding affinity. Additional guard rejects output collisions with authenticated inputs.",
+  "scientific_outputs_changed": false,
+  "historical_author_review_records_changed": false
+}
