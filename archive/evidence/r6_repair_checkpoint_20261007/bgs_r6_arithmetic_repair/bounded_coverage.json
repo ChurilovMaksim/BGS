@@ -1,0 +1,43 @@
+{
+  "tests_run": 18,
+  "errors": 0,
+  "failures": 0,
+  "expected_exception_probes": 533,
+  "expected_exception_probes_by_test": {
+    "integer_contract_coverage.MagneticIntegerContracts.test_dlog_validation_preserves_entry_types": 14,
+    "integer_contract_coverage.MagneticIntegerContracts.test_invalid_H_and_indices": 79,
+    "integer_contract_coverage.MagneticIntegerContracts.test_invalid_prime_types_and_domains": 126,
+    "integer_contract_coverage.MagneticIntegerContracts.test_invalid_scalar_types": 100,
+    "integer_contract_coverage.MagneticIntegerContracts.test_vectorized_prime_cap_before_allocation": 4,
+    "integer_contract_coverage.MagneticIntegerContracts.test_zero_residues_and_nonpositive_orders": 26,
+    "integer_contract_coverage.ReusedJacobiValidators.test_existing_public_integer_contracts": 40,
+    "integer_contract_coverage.ReusedJacobiValidators.test_mixed_boolean_inputs_rejected_before_numpy_coercion": 2,
+    "integer_contract_coverage.TwistedIntegerContracts.test_all_public_scalar_types": 110,
+    "integer_contract_coverage.TwistedIntegerContracts.test_invalid_design_domains": 22,
+    "integer_contract_coverage.TwistedIntegerContracts.test_odd_parity_requires_a_boolean": 10
+  },
+  "dense_histogram_cases": 117,
+  "modular_root_oracle_comparisons": 1144,
+  "root_oracle_primes": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    31,
+    199
+  ],
+  "bad_integer_types": [
+    "bool True",
+    "bool False",
+    "np.bool_(True)",
+    "float 1.0",
+    "float 1.5",
+    "np.float64(1.9)",
+    "string 1",
+    "None",
+    "complex 1+0j",
+    "Fraction(1,1)"
+  ]
+}
