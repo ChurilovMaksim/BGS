@@ -1,7 +1,0 @@
-{
-  "run": "source_three_run/manifest.json",
-  "run_status": "completed",
-  "mathematical_verdict": "invalid implementation; results must not be used",
-  "reason": "One loop retained four port iterations while arrays and starts had three entries, producing out-of-bounds access and zero admitted path covers. Detected by checking the q=3 trivial path cover and zero rank-test population.",
-  "correction": "Separate v2 source, wrapper, contract and fresh run; v1 files and hashes retained."
-}
