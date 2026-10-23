@@ -1,0 +1,905 @@
+{
+  "arithmetic": "exact integers, Fraction rationals, locally implemented cyclotomic remainder; no floating complex values",
+  "binary_patterns": [
+    {
+      "m": 2,
+      "patterns_tested": 3,
+      "no_pp_survivors": [
+        "01",
+        "10"
+      ]
+    },
+    {
+      "m": 3,
+      "patterns_tested": 4,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 4,
+      "patterns_tested": 11,
+      "no_pp_survivors": [
+        "0101",
+        "1010"
+      ]
+    },
+    {
+      "m": 5,
+      "patterns_tested": 16,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 6,
+      "patterns_tested": 42,
+      "no_pp_survivors": [
+        "010101",
+        "101010"
+      ]
+    },
+    {
+      "m": 7,
+      "patterns_tested": 64,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 8,
+      "patterns_tested": 163,
+      "no_pp_survivors": [
+        "01010101",
+        "10101010"
+      ]
+    },
+    {
+      "m": 9,
+      "patterns_tested": 256,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 10,
+      "patterns_tested": 638,
+      "no_pp_survivors": [
+        "0101010101",
+        "1010101010"
+      ]
+    },
+    {
+      "m": 11,
+      "patterns_tested": 1024,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 12,
+      "patterns_tested": 2510,
+      "no_pp_survivors": [
+        "010101010101",
+        "101010101010"
+      ]
+    },
+    {
+      "m": 13,
+      "patterns_tested": 4096,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 14,
+      "patterns_tested": 9908,
+      "no_pp_survivors": [
+        "01010101010101",
+        "10101010101010"
+      ]
+    },
+    {
+      "m": 15,
+      "patterns_tested": 16384,
+      "no_pp_survivors": []
+    },
+    {
+      "m": 16,
+      "patterns_tested": 39203,
+      "no_pp_survivors": [
+        "0101010101010101",
+        "1010101010101010"
+      ]
+    }
+  ],
+  "support_grading": {
+    "N": 2,
+    "m": 4,
+    "physical_double_indices": 65536,
+    "support_masks": 16,
+    "rows": [
+      {
+        "support": "0000",
+        "raw": "1",
+        "balanced": "1",
+        "offcharge": "0"
+      },
+      {
+        "support": "0001",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0010",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0011",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0100",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0101",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0110",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "0111",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1000",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1001",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1010",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1011",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1100",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1101",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1110",
+        "raw": "0",
+        "balanced": "0",
+        "offcharge": "0"
+      },
+      {
+        "support": "1111",
+        "raw": "2",
+        "balanced": "1",
+        "offcharge": "1"
+      }
+    ]
+  },
+  "physical_word_traces": [
+    {
+      "kind": "fourier",
+      "N": 2,
+      "m": 4,
+      "r": 2,
+      "examined_hamming_ball_pairs": 176,
+      "full_pair_universe": 256,
+      "raw_full_trace": "3",
+      "balanced_full_trace": "2",
+      "offcharge_full_trace": "1",
+      "raw_phase_counts": [
+        112,
+        64
+      ],
+      "balanced_phase_counts": [
+        48,
+        16
+      ]
+    },
+    {
+      "kind": "fourier",
+      "N": 2,
+      "m": 8,
+      "r": 4,
+      "examined_hamming_ball_pairs": 41728,
+      "full_pair_universe": 65536,
+      "raw_full_trace": "3",
+      "balanced_full_trace": "7/4",
+      "offcharge_full_trace": "5/4",
+      "raw_phase_counts": [
+        21248,
+        20480
+      ],
+      "balanced_phase_counts": [
+        5504,
+        5056
+      ]
+    },
+    {
+      "kind": "fourier",
+      "N": 3,
+      "m": 4,
+      "r": 2,
+      "examined_hamming_ball_pairs": 2673,
+      "full_pair_universe": 6561,
+      "raw_full_trace": "5",
+      "balanced_full_trace": "7/3",
+      "offcharge_full_trace": "8/3",
+      "raw_phase_counts": [
+        1161,
+        756,
+        756
+      ],
+      "balanced_phase_counts": [
+        261,
+        72,
+        72
+      ]
+    },
+    {
+      "kind": "fourier",
+      "N": 4,
+      "m": 4,
+      "r": 2,
+      "examined_hamming_ball_pairs": 17152,
+      "full_pair_universe": 65536,
+      "raw_full_trace": "7",
+      "balanced_full_trace": "5/2",
+      "offcharge_full_trace": "9/2",
+      "raw_phase_counts": [
+        6400,
+        3072,
+        4608,
+        3072
+      ],
+      "balanced_phase_counts": [
+        896,
+        128,
+        256,
+        128
+      ]
+    },
+    {
+      "kind": "fourier",
+      "N": 5,
+      "m": 4,
+      "r": 2,
+      "examined_hamming_ball_pairs": 70625,
+      "full_pair_universe": 390625,
+      "raw_full_trace": "9",
+      "balanced_full_trace": "13/5",
+      "offcharge_full_trace": "32/5",
+      "raw_phase_counts": [
+        18625,
+        13000,
+        13000,
+        13000,
+        13000
+      ],
+      "balanced_phase_counts": [
+        2025,
+        400,
+        400,
+        400,
+        400
+      ]
+    },
+    {
+      "kind": "symplectic",
+      "N": 9,
+      "m": 4,
+      "r": 2,
+      "examined_hamming_ball_pairs": 2735937,
+      "full_pair_universe": 43046721,
+      "raw_full_trace": "17",
+      "balanced_full_trace": "1",
+      "offcharge_full_trace": "16",
+      "raw_phase_counts": [
+        986337,
+        874800,
+        874800
+      ],
+      "balanced_phase_counts": [
+        18225,
+        11664,
+        11664
+      ]
+    }
+  ],
+  "phase_moments": {
+    "fourier_reflected": [
+      {
+        "N": 2,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/2"
+      },
+      {
+        "N": 2,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "3/8"
+      },
+      {
+        "N": 2,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "5/16"
+      },
+      {
+        "N": 3,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/3"
+      },
+      {
+        "N": 3,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "5/27"
+      },
+      {
+        "N": 3,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "31/243"
+      },
+      {
+        "N": 3,
+        "k": 2,
+        "q": 2,
+        "E_abs_c_pow_q": "1/3"
+      },
+      {
+        "N": 3,
+        "k": 2,
+        "q": 4,
+        "E_abs_c_pow_q": "5/27"
+      },
+      {
+        "N": 3,
+        "k": 2,
+        "q": 6,
+        "E_abs_c_pow_q": "31/243"
+      },
+      {
+        "N": 4,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/4"
+      },
+      {
+        "N": 4,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "7/64"
+      },
+      {
+        "N": 4,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "1/16"
+      },
+      {
+        "N": 4,
+        "k": 2,
+        "q": 2,
+        "E_abs_c_pow_q": "1/4"
+      },
+      {
+        "N": 4,
+        "k": 2,
+        "q": 4,
+        "E_abs_c_pow_q": "9/64"
+      },
+      {
+        "N": 4,
+        "k": 2,
+        "q": 6,
+        "E_abs_c_pow_q": "25/256"
+      },
+      {
+        "N": 4,
+        "k": 3,
+        "q": 2,
+        "E_abs_c_pow_q": "1/4"
+      },
+      {
+        "N": 4,
+        "k": 3,
+        "q": 4,
+        "E_abs_c_pow_q": "7/64"
+      },
+      {
+        "N": 4,
+        "k": 3,
+        "q": 6,
+        "E_abs_c_pow_q": "1/16"
+      },
+      {
+        "N": 5,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/5"
+      },
+      {
+        "N": 5,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "9/125"
+      },
+      {
+        "N": 5,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "109/3125"
+      },
+      {
+        "N": 5,
+        "k": 2,
+        "q": 2,
+        "E_abs_c_pow_q": "1/5"
+      },
+      {
+        "N": 5,
+        "k": 2,
+        "q": 4,
+        "E_abs_c_pow_q": "9/125"
+      },
+      {
+        "N": 5,
+        "k": 2,
+        "q": 6,
+        "E_abs_c_pow_q": "109/3125"
+      },
+      {
+        "N": 5,
+        "k": 3,
+        "q": 2,
+        "E_abs_c_pow_q": "1/5"
+      },
+      {
+        "N": 5,
+        "k": 3,
+        "q": 4,
+        "E_abs_c_pow_q": "9/125"
+      },
+      {
+        "N": 5,
+        "k": 3,
+        "q": 6,
+        "E_abs_c_pow_q": "109/3125"
+      },
+      {
+        "N": 5,
+        "k": 4,
+        "q": 2,
+        "E_abs_c_pow_q": "1/5"
+      },
+      {
+        "N": 5,
+        "k": 4,
+        "q": 4,
+        "E_abs_c_pow_q": "9/125"
+      },
+      {
+        "N": 5,
+        "k": 4,
+        "q": 6,
+        "E_abs_c_pow_q": "109/3125"
+      },
+      {
+        "N": 6,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/6"
+      },
+      {
+        "N": 6,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "11/216"
+      },
+      {
+        "N": 6,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "83/3888"
+      },
+      {
+        "N": 6,
+        "k": 2,
+        "q": 2,
+        "E_abs_c_pow_q": "1/6"
+      },
+      {
+        "N": 6,
+        "k": 2,
+        "q": 4,
+        "E_abs_c_pow_q": "11/216"
+      },
+      {
+        "N": 6,
+        "k": 2,
+        "q": 6,
+        "E_abs_c_pow_q": "89/3888"
+      },
+      {
+        "N": 6,
+        "k": 3,
+        "q": 2,
+        "E_abs_c_pow_q": "1/6"
+      },
+      {
+        "N": 6,
+        "k": 3,
+        "q": 4,
+        "E_abs_c_pow_q": "5/72"
+      },
+      {
+        "N": 6,
+        "k": 3,
+        "q": 6,
+        "E_abs_c_pow_q": "155/3888"
+      },
+      {
+        "N": 6,
+        "k": 4,
+        "q": 2,
+        "E_abs_c_pow_q": "1/6"
+      },
+      {
+        "N": 6,
+        "k": 4,
+        "q": 4,
+        "E_abs_c_pow_q": "11/216"
+      },
+      {
+        "N": 6,
+        "k": 4,
+        "q": 6,
+        "E_abs_c_pow_q": "89/3888"
+      },
+      {
+        "N": 6,
+        "k": 5,
+        "q": 2,
+        "E_abs_c_pow_q": "1/6"
+      },
+      {
+        "N": 6,
+        "k": 5,
+        "q": 4,
+        "E_abs_c_pow_q": "11/216"
+      },
+      {
+        "N": 6,
+        "k": 5,
+        "q": 6,
+        "E_abs_c_pow_q": "83/3888"
+      },
+      {
+        "N": 7,
+        "k": 1,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 1,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 1,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      },
+      {
+        "N": 7,
+        "k": 2,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 2,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 2,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      },
+      {
+        "N": 7,
+        "k": 3,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 3,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 3,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      },
+      {
+        "N": 7,
+        "k": 4,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 4,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 4,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      },
+      {
+        "N": 7,
+        "k": 5,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 5,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 5,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      },
+      {
+        "N": 7,
+        "k": 6,
+        "q": 2,
+        "E_abs_c_pow_q": "1/7"
+      },
+      {
+        "N": 7,
+        "k": 6,
+        "q": 4,
+        "E_abs_c_pow_q": "13/343"
+      },
+      {
+        "N": 7,
+        "k": 6,
+        "q": 6,
+        "E_abs_c_pow_q": "235/16807"
+      }
+    ],
+    "symplectic_unreflected": [
+      {
+        "n": 3,
+        "N": 9,
+        "k": [
+          1,
+          0
+        ],
+        "order": 3,
+        "q": 2,
+        "E_a_pow_q": "0",
+        "multisets_checked": 45
+      },
+      {
+        "n": 3,
+        "N": 9,
+        "k": [
+          1,
+          0
+        ],
+        "order": 3,
+        "q": 3,
+        "E_a_pow_q": "2/81",
+        "multisets_checked": 165
+      },
+      {
+        "n": 3,
+        "N": 9,
+        "k": [
+          1,
+          0
+        ],
+        "order": 3,
+        "q": 4,
+        "E_a_pow_q": "0",
+        "multisets_checked": 495
+      },
+      {
+        "n": 3,
+        "N": 9,
+        "k": [
+          1,
+          0
+        ],
+        "order": 3,
+        "q": 6,
+        "E_a_pow_q": "10/2187",
+        "multisets_checked": 3003
+      },
+      {
+        "n": 5,
+        "N": 25,
+        "k": [
+          1,
+          0
+        ],
+        "order": 5,
+        "q": 2,
+        "E_a_pow_q": "0",
+        "multisets_checked": 325
+      },
+      {
+        "n": 5,
+        "N": 25,
+        "k": [
+          1,
+          0
+        ],
+        "order": 5,
+        "q": 3,
+        "E_a_pow_q": "0",
+        "multisets_checked": 2925
+      },
+      {
+        "n": 9,
+        "N": 81,
+        "k": [
+          3,
+          0
+        ],
+        "order": 3,
+        "q": 2,
+        "E_a_pow_q": "0",
+        "multisets_checked": 3321
+      },
+      {
+        "n": 9,
+        "N": 81,
+        "k": [
+          3,
+          0
+        ],
+        "order": 3,
+        "q": 3,
+        "E_a_pow_q": "2/6561",
+        "multisets_checked": 91881
+      },
+      {
+        "n": 9,
+        "N": 81,
+        "k": [
+          1,
+          0
+        ],
+        "order": 9,
+        "q": 2,
+        "E_a_pow_q": "0",
+        "multisets_checked": 3321
+      },
+      {
+        "n": 9,
+        "N": 81,
+        "k": [
+          1,
+          0
+        ],
+        "order": 9,
+        "q": 3,
+        "E_a_pow_q": "0",
+        "multisets_checked": 91881
+      }
+    ]
+  },
+  "symplectic_characters": {
+    "odd_moduli": [
+      {
+        "n": 3,
+        "N": 9,
+        "character_difference_checks": 18,
+        "phase_antisymmetry_pairs": 81,
+        "bilinear_triple_checks": 729,
+        "absolute_second_survivors_all_k": 72,
+        "ordinary_second_survivors_all_k": 0,
+        "frequency_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "n": 5,
+        "N": 25,
+        "character_difference_checks": 50,
+        "phase_antisymmetry_pairs": 625,
+        "bilinear_triple_checks": 0,
+        "absolute_second_survivors_all_k": 600,
+        "ordinary_second_survivors_all_k": 0,
+        "frequency_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "n": 9,
+        "N": 81,
+        "character_difference_checks": 162,
+        "phase_antisymmetry_pairs": 6561,
+        "bilinear_triple_checks": 0,
+        "absolute_second_survivors_all_k": 6480,
+        "ordinary_second_survivors_all_k": 0,
+        "frequency_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "n": 15,
+        "N": 225,
+        "character_difference_checks": 450,
+        "phase_antisymmetry_pairs": 50625,
+        "bilinear_triple_checks": 0,
+        "absolute_second_survivors_all_k": null,
+        "ordinary_second_survivors_all_k": null,
+        "frequency_multipliers": [
+          1,
+          2
+        ]
+      }
+    ],
+    "even_n2_doubled_character_nonzero_for_nonzero_difference": true
+  },
+  "elapsed_seconds": 31.06246610200469,
+  "nonclaims": [
+    "Finite controls do not establish universal identities independently of the mathematical proof.",
+    "No actual frozen quantizer or BGS counterexample.",
+    "No verification of the separate fixed-fraction theorem or inherited actual parametrix."
+  ]
+}

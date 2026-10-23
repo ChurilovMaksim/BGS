@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "kind": "hamming",
+      "normal_and_optimized_exact_output_agreement": true,
+      "excluded_field": "runtime_seconds",
+      "silent_import": true,
+      "script_sha256": "5a676401a5f822fd2d4b23be539182559acfefe01c341933c37e1393671ee9f0"
+    },
+    {
+      "kind": "translation",
+      "normal_and_optimized_exact_output_agreement": true,
+      "excluded_field": null,
+      "silent_import": true,
+      "script_sha256": "5e310b02d39ad3dc87555a335107ef13f7f7c869a20bd681ea50a3075bec1037"
+    }
+  ],
+  "translation_injected_failure_rejected": true,
+  "scope": "Exact bounded mathematical outputs match frozen independent originals; no analytic asymptotics established by execution."
+}

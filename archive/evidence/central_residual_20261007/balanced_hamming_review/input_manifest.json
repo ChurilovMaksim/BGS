@@ -1,0 +1,87 @@
+{
+  "observed_at": "2026-10-07T00:23:49.161468+00:00",
+  "repository_head": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+  "repository_status": " M README.md\n M RESEARCH.md\n M evidence/source_metadata/registry_metadata_20261006.json\n M evidence/source_metadata/registry_metadata_20261006.sha256\n M literature/external_dependencies.json\n M manuscript/BGS_unified.tex\n M manuscript/unified_sections/literal_time_multiplicity_bounds.tex\n M mathematics/literal_time_multiplicity_bounds.md\n M mathematics/open_questions.md\n M mathematics/results.md\n M mathematics/topics/fixed-map/README.md\n M mathematics/topics/trace-bridge/README.md\n M record/claim_ledger.md\n M record/claim_registry.md\n M record/claims.json\n M record/history/2026/INDEX.md\n M record/mathematics_topics.json\n M record/scientific_dependencies.json\n M record/scientific_dependency_graph.md\n?? computations/maintenance/tests/test_factorial_diagonal_portability.py\n?? computations/verification/factorial_diagonal/\n?? computations/verification/factorial_diagonal_extension.py\n?? computations/verification/intermediate_old_layers/\n?? computations/verification/intermediate_old_layers_certificates.py\n?? evidence/factorial_diagonal_20261007/\n?? evidence/intermediate_old_layers_20261007/\n?? manuscript/unified_sections/factorial_ordered_diagonal.tex\n?? manuscript/unified_sections/intermediate_old_layers.tex\n?? mathematics/factorial_ordered_diagonal.md\n?? mathematics/first_old_layer_classification.md\n?? mathematics/intermediate_return_operator.md\n?? mathematics/mixed_ordered_diagonal.md\n?? mathematics/residual25_affine_dictionary.md\n?? record/factorial_diagonal_promotion_mapping.json\n?? record/factorial_diagonal_review.md\n?? record/factorial_intermediate_bibliographic_impact.json\n?? record/factorial_intermediate_integration_20261007.md\n?? record/factorial_intermediate_integration_delta.json\n?? record/first_old_layer_review.md\n?? record/history/2026/factorial_diagonal_20261007/\n?? record/intermediate_old_layers_promotion.md\n?? record/intermediate_old_layers_promotion_mapping.json\n?? record/intermediate_return_review.md\n?? record/mixed_ordered_diagonal_review.md\n?? record/residual25_affine_review.md\n",
+  "files": [
+    {
+      "source": "CANONICAL_ROOT/AGENTS.md",
+      "snapshot": "inputs/AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "source": "CANONICAL_ROOT/SOURCE_OF_TRUTH.md",
+      "snapshot": "inputs/SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "source": "CANONICAL_ROOT/REVIEWING.md",
+      "snapshot": "inputs/REVIEWING.md",
+      "sha256": "4f3d465abecb821e061f84231ede578a62fffcebff10e26742f825650f78a6ee"
+    },
+    {
+      "source": "CANONICAL_ROOT/record/repository_conventions.md",
+      "snapshot": "inputs/record/repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "source": "CANONICAL_ROOT/RESEARCH.md",
+      "snapshot": "inputs/RESEARCH.md",
+      "sha256": "2a30d020626c1908fd265a6dbf9efffdf8ff9057a9c9dfa048275eb695a9127e"
+    },
+    {
+      "source": "CANONICAL_ROOT/record/claim_ledger.md",
+      "snapshot": "inputs/record/claim_ledger.md",
+      "sha256": "abce89be8e792385eb156d5ce46713d7df3454dd377d3f66f5994cc3e882977a"
+    },
+    {
+      "source": "CANONICAL_ROOT/record/claims.json",
+      "snapshot": "inputs/record/claims.json",
+      "sha256": "3e95f0e1a5630252d6d4605d5096b2c187d89d753d99c25406573da66ee9be10"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/results.md",
+      "snapshot": "inputs/mathematics/results.md",
+      "sha256": "544c36604703360dc8ddce830b6bc5aad2f0881a7de2b118c3bf83139fe028ef"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/open_questions.md",
+      "snapshot": "inputs/mathematics/open_questions.md",
+      "sha256": "0051434fb55422586339bb4fc2e5b73ffc5ac7d2c9b2bc790961b50946e79892"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/ordered_diagonal_cyclic_trace.md",
+      "snapshot": "inputs/mathematics/ordered_diagonal_cyclic_trace.md",
+      "sha256": "54d6e6873b620a34523b96767e8229721800486a687016a48af08c06f2e16faf"
+    },
+    {
+      "source": "CANONICAL_ROOT/record/ordered_diagonal_review.md",
+      "snapshot": "inputs/record/ordered_diagonal_review.md",
+      "sha256": "f8d4fcc59204d8232b1c279ea67aa5bed5ecbf3d5cb9f6e8674f165ac81fd9aa"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/position_chain_mixing.md",
+      "snapshot": "inputs/mathematics/position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/collective_occupation_hierarchy.md",
+      "snapshot": "inputs/mathematics/collective_occupation_hierarchy.md",
+      "sha256": "e1a7590ac0f572e3effd68ce0d783ced38f33e2c0c8bbc5939a2d40914fc373f"
+    },
+    {
+      "source": "CANONICAL_ROOT/mathematics/fixed_map_path_model.md",
+      "snapshot": "inputs/mathematics/fixed_map_path_model.md",
+      "sha256": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08"
+    },
+    {
+      "source": "CANONICAL_ROOT/record/marked_path_independent_review_20261006.md",
+      "snapshot": "inputs/record/marked_path_independent_review_20261006.md",
+      "sha256": "050bf2c61043377eafa2052db661ab6f9ed185046076a67f943dec9c122a2a52"
+    },
+    {
+      "source": "RESEARCH_ROOT/bgs_balanced_complement_attack/candidate_v1.md",
+      "snapshot": "inputs/candidate_v1.md",
+      "sha256": "2ce67b8d33b574e5b245affd49f6592a9636b6075e4c288af8e718cc27c9404f"
+    }
+  ]
+}

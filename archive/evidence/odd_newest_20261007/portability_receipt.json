@@ -1,0 +1,618 @@
+{
+  "status": "PASS",
+  "started_at_utc": "2026-10-07T00:47:25.600647+00:00",
+  "runtime_seconds": 20.554669016004482,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "resource_caps": {
+    "wall_seconds_per_process": 180,
+    "cpu_seconds_per_process": 180,
+    "address_space_bytes_per_process": 2147483648,
+    "cpu_affinity_count": 1,
+    "conventional_library_threads": 1,
+    "captured_output_bytes_checked_after_process": 1048576
+  },
+  "scope": "Exact bounded replay; the uniform argument and inherited rank-transfer theorem are separate proofs.",
+  "imports": {
+    "all_five_public_modules": "silent and file-free in normal and optimized modes"
+  },
+  "lossless_source_envelopes_verified_before_replay": 32,
+  "source_and_portable_inputs_unchanged_during_replay": true,
+  "actual_run_receipt": "evidence/odd_newest_20261007/runs/replay_receipt_envelope.json",
+  "actual_run_receipt_sha256": "95a2b919c8738cfced0e35d5e7a9a59892f5a2e1b8df8d1c9cd9f531d393b1c8",
+  "executions": [
+    {
+      "control": "check_gauss_packets",
+      "mode": "frozen-original",
+      "exit_status": 0,
+      "runtime_seconds": 5.671405182998569,
+      "output_sha256": "3576428aad4187f31c26e0984e593ba554e1bad4225fa2a9c4fccbfe57376451",
+      "script_sha256": "8cc148ea5e817f91fc5ab51e79d453fb6f9d94e9d55d77c3b61e596a192ddcbc"
+    },
+    {
+      "control": "check_gauss_packets",
+      "mode": "normal",
+      "exit_status": 0,
+      "runtime_seconds": 5.177298782000435,
+      "output_sha256": "b5a03a4e3226e433a24273fcee16b116cef78e5b0301fa83199f7fd8287c337b",
+      "script_sha256": "b0307708d883ada52954ef6ae74008c09918fee2865859cd3c030fe637eec68d"
+    },
+    {
+      "control": "check_gauss_packets",
+      "mode": "optimized",
+      "exit_status": 0,
+      "runtime_seconds": 5.535644459996547,
+      "output_sha256": "2404c5a44213f560e9a913b1cd77f3846eb9b87694e40d34187003682da6beb7",
+      "script_sha256": "b0307708d883ada52954ef6ae74008c09918fee2865859cd3c030fe637eec68d"
+    },
+    {
+      "control": "check_intersections",
+      "mode": "frozen-original",
+      "exit_status": 0,
+      "runtime_seconds": 0.41336644900002284,
+      "output_sha256": "5b3352705c1ef1db08eb150bd378877102f20c101c24f074aa4a56632fa285e8",
+      "script_sha256": "bec37e2b02ee6efd29558c399fa30abd3ac1049b95ed44f6bb8a00c9ca1a4fc8"
+    },
+    {
+      "control": "check_intersections",
+      "mode": "normal",
+      "exit_status": 0,
+      "runtime_seconds": 0.3643472580006346,
+      "output_sha256": "30afc7ad6552e02366b3a16fb3a869a64893290ee4c5b204b38c368cd79d6e3e",
+      "script_sha256": "2ba78d31e4b3d07db400d9ee80d2c73a9b4d09f4c8d7943a6d507565ed6ed0cb"
+    },
+    {
+      "control": "check_intersections",
+      "mode": "optimized",
+      "exit_status": 0,
+      "runtime_seconds": 0.544171424000524,
+      "output_sha256": "52f32df7080db2a95f5b056f14f90929097f408b7a003bee17f360ddaf3b356b",
+      "script_sha256": "2ba78d31e4b3d07db400d9ee80d2c73a9b4d09f4c8d7943a6d507565ed6ed0cb"
+    },
+    {
+      "control": "check_finite_matrices",
+      "mode": "frozen-original",
+      "exit_status": 0,
+      "runtime_seconds": 0.6326315929982229,
+      "output_sha256": "e002100de24ecce2571a0be532f0f46c1b031ed282611a8bda0f588b83be6886",
+      "script_sha256": "613e1a85567fb26f5de13e38c310c1cf7c8e6b282de43f3e367fb7260c64e178"
+    },
+    {
+      "control": "check_finite_matrices",
+      "mode": "normal",
+      "exit_status": 0,
+      "runtime_seconds": 0.6202926529949764,
+      "output_sha256": "fbde306cdafb930ef7c03c311eed62dd72f7aa5e74e0086fd2c28c228f0fd43a",
+      "script_sha256": "c433b43523767a67eddf4c8b40c240cca0c07a2fbdb6cab71442aafff844d77e"
+    },
+    {
+      "control": "check_finite_matrices",
+      "mode": "optimized",
+      "exit_status": 0,
+      "runtime_seconds": 0.8065160379992449,
+      "output_sha256": "772625f9e3f21638d3724adce6741560fc5ba17b1800cf88f0b81b2f0c00a555",
+      "script_sha256": "c433b43523767a67eddf4c8b40c240cca0c07a2fbdb6cab71442aafff844d77e"
+    }
+  ],
+  "comparisons": [
+    {
+      "control": "check_gauss_packets",
+      "original_and_normal_and_optimized_agree": true,
+      "excluded_fields": [
+        "elapsed_seconds"
+      ],
+      "scientific_output": {
+        "status": "passed",
+        "arithmetic": "exact rational cyclotomic Q(eta_5), modular integers; no floating-point decisions",
+        "gauss_overlap_counts": {
+          "coordinate_nonparallel": 500,
+          "coordinate_parallel": 250,
+          "plane_nonparallel": 500,
+          "plane_parallel": 250
+        },
+        "total_gauss_overlaps": 1500,
+        "raw_covariance_entries": 391250,
+        "packet_carry_entries": 393750,
+        "raw_oldform_intertwining_entries": 16250,
+        "holonomy_valuation_depths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "packet_records": [
+          {
+            "l": 1,
+            "h": 5,
+            "circles": 4,
+            "L": 6,
+            "new_dimension": 120
+          },
+          {
+            "l": 2,
+            "h": 25,
+            "circles": 20,
+            "L": 30,
+            "new_dimension": 3000
+          },
+          {
+            "l": 3,
+            "h": 125,
+            "circles": 100,
+            "L": 150,
+            "new_dimension": 75000
+          }
+        ]
+      }
+    },
+    {
+      "control": "check_intersections",
+      "original_and_normal_and_optimized_agree": true,
+      "excluded_fields": [
+        "elapsed_seconds"
+      ],
+      "scientific_output": {
+        "status": "passed",
+        "records": [
+          {
+            "l": 1,
+            "h": 5,
+            "root_cases": 36,
+            "direct_orbit_cases": 36,
+            "two_root": 18,
+            "no_root": 9,
+            "singular": 9,
+            "singular_points": 9
+          },
+          {
+            "l": 2,
+            "h": 25,
+            "root_cases": 180,
+            "direct_orbit_cases": 180,
+            "two_root": 90,
+            "no_root": 45,
+            "singular": 45,
+            "singular_points": 45
+          },
+          {
+            "l": 3,
+            "h": 125,
+            "root_cases": 900,
+            "direct_orbit_cases": 900,
+            "two_root": 450,
+            "no_root": 225,
+            "singular": 225,
+            "singular_points": 225
+          },
+          {
+            "l": 4,
+            "h": 625,
+            "root_cases": 4500,
+            "direct_orbit_cases": 0,
+            "two_root": 2250,
+            "no_root": 1125,
+            "singular": 1125,
+            "singular_points": 1125
+          }
+        ]
+      }
+    },
+    {
+      "control": "check_finite_matrices",
+      "original_and_normal_and_optimized_agree": true,
+      "excluded_fields": [
+        "elapsed_seconds"
+      ],
+      "scientific_output": {
+        "status": "all 24 matrices squarefree",
+        "field": "F5[z]/(z^6+z^5+z^4+z^3+z^2+z+1), base-5 coefficient encoding",
+        "generator": 7,
+        "seventh_root": 5,
+        "sixth_root": 1314,
+        "seven_dimensions": [
+          3,
+          2,
+          2
+        ],
+        "actual_modes_checked": 32,
+        "unit_upper_modes": 9,
+        "author_polynomial_matches": 24,
+        "author_field_root_image": 691,
+        "author_tame_multiplier": 5,
+        "characteristic_algorithm": "division-free permutation-subset DP, independently checked by Cayley-Hamilton",
+        "records": [
+          {
+            "norm_mod5": 1,
+            "tame_index": 0,
+            "characteristic_ascending": [
+              9454,
+              2251,
+              13354,
+              10204,
+              4653,
+              8550,
+              6300,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 1,
+            "tame_index": 1,
+            "characteristic_ascending": [
+              9451,
+              1504,
+              12600,
+              5403,
+              3900,
+              6153,
+              10204,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 1,
+            "tame_index": 2,
+            "characteristic_ascending": [
+              752,
+              6152,
+              1502,
+              11703,
+              9301,
+              8551,
+              3904,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 1,
+            "tame_index": 3,
+            "characteristic_ascending": [
+              6301,
+              2251,
+              6151,
+              10204,
+              14852,
+              8550,
+              9450,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 1,
+            "tame_index": 4,
+            "characteristic_ascending": [
+              6304,
+              1504,
+              3150,
+              5403,
+              15600,
+              6153,
+              9301,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 1,
+            "tame_index": 5,
+            "characteristic_ascending": [
+              3003,
+              6152,
+              2253,
+              11703,
+              10204,
+              8551,
+              15601,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 0,
+            "characteristic_ascending": [
+              3000,
+              12604,
+              9302,
+              14102,
+              9304,
+              13354,
+              9450,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 1,
+            "characteristic_ascending": [
+              10200,
+              2253,
+              15603,
+              12601,
+              11701,
+              7053,
+              11702,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 2,
+            "characteristic_ascending": [
+              2250,
+              14850,
+              5401,
+              9300,
+              15601,
+              7803,
+              3150,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 3,
+            "characteristic_ascending": [
+              12600,
+              10202,
+              12450,
+              6150,
+              7053,
+              6304,
+              3150,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 4,
+            "characteristic_ascending": [
+              10203,
+              12451,
+              3,
+              6303,
+              10953,
+              12601,
+              3150,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 2,
+            "tame_index": 5,
+            "characteristic_ascending": [
+              14854,
+              4,
+              10954,
+              9304,
+              5401,
+              6154,
+              4653,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 0,
+            "characteristic_ascending": [
+              4650,
+              754,
+              7052,
+              11702,
+              7052,
+              1,
+              12600,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 1,
+            "characteristic_ascending": [
+              8551,
+              2254,
+              15603,
+              12603,
+              1503,
+              1,
+              7803,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 2,
+            "characteristic_ascending": [
+              6304,
+              2254,
+              8553,
+              4650,
+              14851,
+              1,
+              14852,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 3,
+            "characteristic_ascending": [
+              4650,
+              754,
+              7052,
+              11702,
+              7052,
+              1,
+              12600,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 4,
+            "characteristic_ascending": [
+              8551,
+              2254,
+              15603,
+              12603,
+              1503,
+              1,
+              7803,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 3,
+            "tame_index": 5,
+            "characteristic_ascending": [
+              6304,
+              2254,
+              8553,
+              4650,
+              14851,
+              1,
+              14852,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 0,
+            "characteristic_ascending": [
+              14100,
+              3904,
+              15600,
+              13352,
+              12454,
+              6303,
+              0,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 1,
+            "characteristic_ascending": [
+              5403,
+              0,
+              6300,
+              5400,
+              3152,
+              15601,
+              9301,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 2,
+            "characteristic_ascending": [
+              7804,
+              7052,
+              3150,
+              2253,
+              15603,
+              12450,
+              14103,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 3,
+            "characteristic_ascending": [
+              5404,
+              14853,
+              7803,
+              14103,
+              0,
+              2,
+              6300,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 4,
+            "characteristic_ascending": [
+              2254,
+              14103,
+              13354,
+              8552,
+              3154,
+              3004,
+              5402,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          },
+          {
+            "norm_mod5": 4,
+            "tame_index": 5,
+            "characteristic_ascending": [
+              4653,
+              14851,
+              751,
+              7802,
+              13352,
+              3902,
+              3904,
+              1
+            ],
+            "gcd_degree": 0,
+            "cayley_hamilton": true
+          }
+        ]
+      }
+    }
+  ],
+  "command_template": "python3 -B computations/verification/odd_newest/run_checks.py --output-dir /absolute/fresh/scratch/path",
+  "exclusions": "Only elapsed_seconds is omitted from scientific equality; no assertion, count, field value, coefficient or polynomial is omitted."
+}

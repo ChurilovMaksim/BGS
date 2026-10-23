@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "normal_optimized_complete_scientific_results_equal": true,
+  "checks": [
+    {
+      "control": "hamming",
+      "exact_output_match": true
+    },
+    {
+      "control": "translation",
+      "exact_output_match": true
+    },
+    {
+      "control": "all_translation",
+      "exact_output_match": true
+    }
+  ],
+  "source_binding": "All mapped public proof/review/checker files checked before replay.",
+  "excluded_scientific_comparison_fields": {
+    "hamming": [
+      "runtime_seconds"
+    ],
+    "translation": [],
+    "all_translation": []
+  },
+  "extra_controls": {
+    "silent_import": true,
+    "optimized_injected_failure_rejected": true,
+    "script_sha256": "866f69e29e595178ad2d5256d46b2bb82fbda06cf59ed7ee6deb049f6621d36a"
+  },
+  "normal_stdout_sha256": "2f4c97ea079697e3cc09c3d5c8651397ae84b8442380175e93c7601d1d424126",
+  "optimized_stdout_sha256": "2f4c97ea079697e3cc09c3d5c8651397ae84b8442380175e93c7601d1d424126",
+  "scope": "Bounded exact controls only; no finite control proves actual-map mixing, Koopman norm convergence or large-N cancellation."
+}

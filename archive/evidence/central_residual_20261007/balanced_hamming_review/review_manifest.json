@@ -1,0 +1,69 @@
+{
+  "reviewed_at": "2026-10-07T00:31:30.908862+00:00",
+  "claim_id": "BGS-BALANCED-HAMMING-INDEPENDENT-AUDIT",
+  "primary_verdict": "proved as written",
+  "target_sha256": "2ce67b8d33b574e5b245affd49f6592a9636b6075e4c288af8e718cc27c9404f",
+  "addendum_sha256": "966c31db09a3f50134d52ab63bba37b0d6d4e57a7fef521de5ab6d0deb111ae5",
+  "review_type": "fresh-context independent internal proof audit, with independent exact Lie-kernel controls and separate author replay",
+  "canonical_writes": false,
+  "publication": false,
+  "artifacts": [
+    {
+      "path": "review.md",
+      "sha256": "5b5fefbc8b92a0e389d71892d6601de404b8facfafb8798999b136afae565964"
+    },
+    {
+      "path": "target_contract.json",
+      "sha256": "5c014f5c2852ab8c4149b1b92b7103ed8369e472a00ffecd465f40ff7b444f86"
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "192f792fbd2f6f6aa6a6847a82f1ba02187f7cb74d2978cdcbf06bcc1a236e13"
+    },
+    {
+      "path": "author_artifact_pin.json",
+      "sha256": "5d1285a2e5bf5a246b2b58903dda6da40abdfe0d59c32b58422a2b1a3a39c01d"
+    },
+    {
+      "path": "final_source_check.json",
+      "sha256": "0ffbee14fc1103a9e427296e774e7f601f906760579eb15794bde09baeb05da6"
+    },
+    {
+      "path": "execution_manifest.json",
+      "sha256": "17a819e6055fa4d1da8ab964e94327c30bf46298c519f3b9747a2045d7718dda"
+    },
+    {
+      "path": "initial_timeout_record.json",
+      "sha256": "1265447d2f18728ec5dd03ecdd48dc7350fdc73f7ae4b2826fcd9dc689c6251b"
+    },
+    {
+      "path": "independent_controls.py",
+      "sha256": "3b5e0072d189b9218149d371f84033bd9cd16a5a37ee04be5921da9a793ee8f8"
+    },
+    {
+      "path": "run_review.py",
+      "sha256": "7467da9db313a64036d4daf70cece156be217949d27121273ad5c2ce55103b2e"
+    },
+    {
+      "path": "validate_manifest.py",
+      "sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f"
+    },
+    {
+      "path": "results/independent_results_v2.json",
+      "sha256": "4ac2ca275142cb345fa62062a751e4efa6e539b9ff5295e36ecda843e76c618d"
+    },
+    {
+      "path": "results/completed_run.log",
+      "sha256": "17932eaa9fa51ee886e4559876c69fe803118fd018205ffedfe0a2c076bd2759"
+    },
+    {
+      "path": "results/author_replay/results.json",
+      "sha256": "8edb7b2c800ee97aae612c9e4d8a2f329bd74d2939829aab4aea8722dd54e560"
+    },
+    {
+      "path": "results/author_replay/network_results.json",
+      "sha256": "498a8fb82b939fc9051119018656467a6b80c2160f46f652da91a6ec9c0434c9"
+    }
+  ],
+  "scope": "Sparse balanced Hamming hierarchy and addendum only; actual gap/Haar tail inherited; complete complement and BGS remain open."
+}
