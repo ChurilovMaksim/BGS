@@ -1,0 +1,377 @@
+{
+  "schema": "bgs-wave2-replay-contract-v1",
+  "base_commit": "129c676b8e6457e7e5f1bd6f786b3939cbd84653",
+  "tasks": [
+    {
+      "name": "echo",
+      "domain": "echo",
+      "source": "evidence/wave2_checked_20261007/raw/echo_generator/check_exact_controls.py",
+      "expected": "evidence/wave2_checked_20261007/raw/echo_generator/exact_results.json",
+      "generated_result": "exact_results.json",
+      "extra_sources": [],
+      "provenance_fields": {
+        "source_snapshot_manifest": "historical_digest",
+        "source_pins": "historical_pins"
+      },
+      "historical_snapshot_adapter": true,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "optimized_generated_result": "exact_results_optimized.json",
+      "work_source": "check_exact_controls.py"
+    },
+    {
+      "name": "centering",
+      "domain": "centering",
+      "source": "evidence/wave2_checked_20261007/raw/centering/checks/verify_centering.py",
+      "expected": "evidence/wave2_checked_20261007/raw/centering/checks/results.json",
+      "generated_result": "results.json",
+      "extra_sources": [],
+      "provenance_fields": {
+        "python": "version",
+        "sympy": "version"
+      },
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "checks/verify_centering.py"
+    },
+    {
+      "name": "rounding",
+      "domain": "rounding",
+      "source": "evidence/wave2_checked_20261007/raw/rounding_review/check_companions.py",
+      "expected": "evidence/wave2_checked_20261007/raw/rounding_review/controls.json",
+      "generated_result": "controls.json",
+      "extra_sources": [],
+      "provenance_fields": {
+        "source_manifest_sha256": "scoped_manifest_digest",
+        "source_pins": "historical_pins",
+        "software": "software"
+      },
+      "historical_snapshot_adapter": true,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "check_companions.py",
+      "numeric_diagnostics": {
+        "/floating_norm_controls/0/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/0/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/0/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/0/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/1/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/1/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/1/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/1/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/2/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/2/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/2/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_norm_controls/2/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/0/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/0/reverse_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/0/P_centered_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/0/root_reconstruction_error": {
+          "comparison": "finite_nonnegative_exclusive_upper_bound",
+          "exclusive_upper_bound": 2e-12
+        },
+        "/floating_split_controls/1/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/1/reverse_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/1/P_centered_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/floating_split_controls/1/root_reconstruction_error": {
+          "comparison": "finite_nonnegative_exclusive_upper_bound",
+          "exclusive_upper_bound": 2e-12
+        },
+        "/smooth_band_control/C_w": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/smooth_band_control/sum_w_r_over_L": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/smooth_band_control/finite_return_sums/0/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/smooth_band_control/finite_return_sums/1/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/smooth_band_control/finite_return_sums/2/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        }
+      }
+    },
+    {
+      "name": "actual_one_pinch",
+      "domain": "actual_one_pinch",
+      "source": "evidence/wave2_checked_20261007/raw/actual_one_pinch/packet/check_overlap.py",
+      "expected": "evidence/wave2_checked_20261007/raw/actual_one_pinch/packet/checks.json",
+      "generated_result": "checks.json",
+      "extra_sources": [],
+      "provenance_fields": {
+        "elapsed_seconds": "seconds",
+        "python_optimization": "optimization",
+        "script_sha256": "source_digest"
+      },
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "optimized_generated_result": "checks_optimized.json",
+      "work_source": "check_overlap.py"
+    },
+    {
+      "name": "hook_bridge",
+      "domain": "hook_v2",
+      "source": "evidence/wave2_checked_20261007/raw/hook_review/check_zero_extension_bridge.py",
+      "expected": "evidence/wave2_checked_20261007/raw/hook_review/zero_extension_bridge_results.json",
+      "generated_result": "zero_extension_bridge_results.json",
+      "extra_sources": [
+        "evidence/wave2_checked_20261007/raw/hook_review/check_grouping_review_copy.py",
+        "evidence/wave2_checked_20261007/raw/hook_review/hook_tree_current_identity_v2.md"
+      ],
+      "provenance_fields": {
+        "elapsed_seconds": "seconds",
+        "script_sha256": "source_digest",
+        "shared_checker_sha256": "extra_digest",
+        "corrected_proof_sha256": "extra_digest"
+      },
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "check_zero_extension_bridge.py"
+    },
+    {
+      "name": "hook_downstream",
+      "domain": "hook_v2",
+      "source": "evidence/wave2_checked_20261007/raw/hook_review/check_grouping_review_copy.py",
+      "expected": "evidence/wave2_checked_20261007/raw/hook_review/v2_downstream_normal.json",
+      "generated_result": "check_results.json",
+      "extra_sources": [],
+      "provenance_fields": {
+        "elapsed_seconds": "seconds",
+        "python": "version",
+        "script_sha256": "source_digest",
+        "source_manifest_sha256": "historical_digest"
+      },
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "check_grouping_review_copy.py"
+    },
+    {
+      "name": "ward_covariance",
+      "domain": "ward_covariance",
+      "source": "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_covariance_check.py",
+      "expected": "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_results.json",
+      "generated_result": null,
+      "extra_sources": [],
+      "provenance_fields": {},
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "independent_covariance_check.py",
+      "numeric_diagnostics": {
+        "/checks/1/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/1/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/2/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/2/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/3/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/3/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/4/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/4/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/5/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/5/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/7/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/7/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/8/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/8/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/9/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/9/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/10/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/10/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        },
+        "/checks/11/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0
+        },
+        "/checks/11/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "name": "ward_permutations",
+      "domain": "ward_covariance",
+      "source": "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_permutation_check.py",
+      "expected": "evidence/wave2_checked_20261007/raw/ward_covariance/checks/permutation_results.json",
+      "generated_result": null,
+      "extra_sources": [],
+      "provenance_fields": {},
+      "historical_snapshot_adapter": false,
+      "timeout_seconds": 180,
+      "arithmetic_scope": "Exact declared finite controls, with floating diagnostics only where explicitly disclosed by original checker.",
+      "work_source": "independent_permutation_check.py"
+    }
+  ],
+  "historical_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+  "provenance_policy": "Declared provenance is validated separately and removed before strict scientific equality. No timing, software, flags, paths or hash equality is a mathematical comparison.",
+  "adapter_policy": "Original source bytes are immutable. Runtime adapter redirects only the literal ROOT/SOURCE historical snapshot assignment and rounding EXPECTED snapshot hash to the authenticated 50-input scoped snapshot, and turns historical assert nodes into explicit raises for normal/optimized parity. Shared grouping import receives the same assert conversion. No mathematical expression is changed.",
+  "nonclaims": [
+    "No aggregate suite or formal compilation",
+    "No asymptotic theorem from finite controls",
+    "No unavailable Ward archive receipt replay",
+    "No full-prefix/Heisenberg Ward convergence",
+    "No masked T16, balanced law, TRACE-005 or BGS conclusion"
+  ],
+  "numeric_diagnostic_policy": "Only explicitly listed computed diagnostics use their declared finite, bounded/reference comparison. All raw fields/values and policies are retained; fixed input floats, exact counts and every unlisted scientific field stay exact. Original checker assertions/slacks are unchanged."
+}

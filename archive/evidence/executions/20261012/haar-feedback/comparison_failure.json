@@ -1,0 +1,16 @@
+{
+  "observed_exit_status": 1,
+  "source": "inputs/verifier_before_comparison_fix.py",
+  "source_sha256": "f3951111e3e2dff29f7ec3b40c579fbd69c497e8a19ce92dd6e4bedab728c332",
+  "command": [
+    "timeout",
+    "90s",
+    "python3",
+    "research_session/haar_feedback_law.py",
+    "--output",
+    "research_session/haar_feedback_checks_v1.json"
+  ],
+  "error": "AssertionError in jacobian_controls at hermitian_jacobian == (r.det() * conjugate(r.det()))**2",
+  "disposition": "Structural SymPy equality compared integer 676 to an unexpanded equal expression. Replaced with exact algebraic difference reduced by cancel. No theorem or expected constant changed. Original source preserved; no stdout/stderr disk log or resource manifest was captured for this exploratory run.",
+  "scope": "Exploratory finite verifier failure only."
+}

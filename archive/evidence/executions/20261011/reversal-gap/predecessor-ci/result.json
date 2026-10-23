@@ -1,0 +1,80 @@
+{
+  "schema": "bgs-source-bound-remote-ci-v1",
+  "checked_on": "2026-10-11",
+  "commit": "0db2e1ad42c3c53b56fc5aecbed791c8faa9b732",
+  "scientific_run": 38146372111,
+  "scientific_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111",
+  "scientific_jobs": [
+    {
+      "id": 114490482724,
+      "name": "scientific-registry",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490482724"
+    },
+    {
+      "id": 114490482922,
+      "name": "Wave2 portable (HASWELL)",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490482922"
+    },
+    {
+      "id": 114490482946,
+      "name": "repository-structure",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490482946"
+    },
+    {
+      "id": 114490482965,
+      "name": "Wave2 portable (ZEN3)",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490482965"
+    },
+    {
+      "id": 114490526061,
+      "name": "computation",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490526061"
+    },
+    {
+      "id": 114490526071,
+      "name": "formalization",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490526071"
+    },
+    {
+      "id": 114490526077,
+      "name": "manuscript",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372111/job/114490526077"
+    }
+  ],
+  "independent_manuscript_run": 38146372116,
+  "independent_manuscript_jobs": [
+    {
+      "id": 114490482815,
+      "name": "manuscript",
+      "conclusion": "success",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38146372116/job/114490482815"
+    }
+  ],
+  "workspace_checks": {
+    "passed": 219,
+    "total": 219,
+    "evidence": "computation.log",
+    "counting": "219 timestamped named exit-code lines, all zero; completed computation job."
+  },
+  "maintenance_tests": {
+    "passed": 236,
+    "total": 236,
+    "evidence": "computation.log"
+  },
+  "cpp_targets": 25,
+  "active_lean_modules": 23,
+  "lake_build_jobs": 26,
+  "scope": "Exact preceding commit only. CI checks software, source governance, finite Lean kernels and manuscript builds. It does not certify unformalized analytic proofs or BGS.",
+  "retained_sha256": {
+    "computation.log": "84fedad51afdc536f476dbd9626f77c4d2e5d4ab939e91d76104e38ca87ecbdf",
+    "formalization.log": "75f222ab4651987fabef9440f797c80ada613e0aa2622d917201024cb17b4b14",
+    "jobs.json": "6e4b3757d34bc78cc88225647d9d96d36355d8449302f6635c23595425b78bfc"
+  }
+}

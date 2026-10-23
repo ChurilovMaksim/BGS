@@ -1,0 +1,208 @@
+{
+  "status": "zero-character bridge regression passed",
+  "cases": 16,
+  "rows": [
+    {
+      "family": "N1",
+      "N": 1,
+      "m": 2,
+      "zero_exterior_degrees": [
+        2
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "1"
+    },
+    {
+      "family": "N1",
+      "N": 1,
+      "m": 3,
+      "zero_exterior_degrees": [
+        2,
+        3
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "1"
+    },
+    {
+      "family": "N1",
+      "N": 1,
+      "m": 4,
+      "zero_exterior_degrees": [
+        2,
+        3,
+        4
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "1"
+    },
+    {
+      "family": "N1",
+      "N": 1,
+      "m": 5,
+      "zero_exterior_degrees": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "1"
+    },
+    {
+      "family": "N1",
+      "N": 1,
+      "m": 6,
+      "zero_exterior_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "1"
+    },
+    {
+      "family": "identity3",
+      "N": 3,
+      "m": 4,
+      "zero_exterior_degrees": [
+        4
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "3"
+    },
+    {
+      "family": "identity3",
+      "N": 3,
+      "m": 5,
+      "zero_exterior_degrees": [
+        4,
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "3"
+    },
+    {
+      "family": "rotation2",
+      "N": 2,
+      "m": 3,
+      "zero_exterior_degrees": [
+        3
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "8586/3125"
+    },
+    {
+      "family": "rotation2",
+      "N": 2,
+      "m": 4,
+      "zero_exterior_degrees": [
+        3,
+        4
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "136154/78125"
+    },
+    {
+      "family": "rotation2",
+      "N": 2,
+      "m": 5,
+      "zero_exterior_degrees": [
+        3,
+        4,
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "15094098/9765625"
+    },
+    {
+      "family": "rotation2",
+      "N": 2,
+      "m": 6,
+      "zero_exterior_degrees": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "594340834/244140625"
+    },
+    {
+      "family": "complex3",
+      "N": 3,
+      "m": 4,
+      "zero_exterior_degrees": [
+        4
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "397007829183481541452213/130752289679872356640625"
+    },
+    {
+      "family": "complex3",
+      "N": 3,
+      "m": 5,
+      "zero_exterior_degrees": [
+        4,
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "9383053215342099491023726462849/2714080846608224452541025390625"
+    },
+    {
+      "family": "complex3",
+      "N": 3,
+      "m": 6,
+      "zero_exterior_degrees": [
+        4,
+        5,
+        6
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "8095509803742089330123065502212334981/3313960565729807262163905527587890625"
+    },
+    {
+      "family": "hadamard4_real",
+      "N": 4,
+      "m": 5,
+      "zero_exterior_degrees": [
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "169/64"
+    },
+    {
+      "family": "hadamard4_i",
+      "N": 4,
+      "m": 5,
+      "zero_exterior_degrees": [
+        5
+      ],
+      "truncated_equals_extended_equals_trace": true,
+      "signed_covariance": "219/64"
+    }
+  ],
+  "zero_exterior_character_checks": 36,
+  "N1_m2_witness": {
+    "truncated_cycle_weights": [
+      2,
+      0
+    ],
+    "extended_cycle_weights": [
+      0,
+      2
+    ]
+  },
+  "arithmetic": "exact Q(i), fractions.Fraction; shared checked G arithmetic and fixtures",
+  "construction": "explicit permutation cycle-index exterior polynomials; direct rooted-word power sums; power-sum complete recursion",
+  "elapsed_seconds": 0.3208647830006157,
+  "script_sha256": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863",
+  "shared_checker_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+  "corrected_proof_sha256": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59",
+  "nonclaims": [
+    "No finite-check extrapolation",
+    "No new asymptotic estimate",
+    "No BGS operator evaluation"
+  ]
+}

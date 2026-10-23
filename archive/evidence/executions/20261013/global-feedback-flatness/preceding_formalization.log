@@ -1,0 +1,287 @@
+﻿2026-10-13T09:20:28.2417371Z Current runner version: '2.337.0'
+2026-10-13T09:20:28.2495823Z ##[group]Runner Image Provisioner
+2026-10-13T09:20:28.2497166Z Hosted Compute Agent
+2026-10-13T09:20:28.2498393Z Version: 20261002.596
+2026-10-13T09:20:28.2499821Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-13T09:20:28.2501182Z Build Date: 2026-10-02T22:28:27Z
+2026-10-13T09:20:28.2502472Z Worker ID: {c6ccd571-4565-4b4e-a56c-c2ecea88bc9d}
+2026-10-13T09:20:28.2503739Z Region: northcentralus
+2026-10-13T09:20:28.2504778Z Cloud: Azure
+2026-10-13T09:20:28.2505639Z ##[endgroup]
+2026-10-13T09:20:28.2507838Z ##[group]Operating System
+2026-10-13T09:20:28.2522742Z Ubuntu
+2026-10-13T09:20:28.2523759Z 24.04.5
+2026-10-13T09:20:28.2524736Z LTS
+2026-10-13T09:20:28.2525604Z ##[endgroup]
+2026-10-13T09:20:28.2526473Z ##[group]Runner Image
+2026-10-13T09:20:28.2527583Z Image: ubuntu-24.04
+2026-10-13T09:20:28.2528481Z Version: 20261004.327.1
+2026-10-13T09:20:28.2531081Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-13T09:20:28.2533777Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-13T09:20:28.2535575Z ##[endgroup]
+2026-10-13T09:20:28.2537304Z ##[group]GITHUB_TOKEN Permissions
+2026-10-13T09:20:28.2550620Z Contents: read
+2026-10-13T09:20:28.2552237Z Metadata: read
+2026-10-13T09:20:28.2553244Z ##[endgroup]
+2026-10-13T09:20:28.2556956Z Secret source: Actions
+2026-10-13T09:20:28.2558663Z Cache mode: write
+2026-10-13T09:20:28.2560388Z Prepare workflow directory
+2026-10-13T09:20:28.3322267Z Prepare all required actions
+2026-10-13T09:20:28.3393509Z Getting action download info
+2026-10-13T09:20:28.5651886Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-13T09:20:28.7558815Z Complete job name: formalization
+2026-10-13T09:20:28.8458072Z ##[group]Run actions/checkout@v7
+2026-10-13T09:20:28.8458976Z with:
+2026-10-13T09:20:28.8459675Z   repository: ChurilovMaksim/BGS
+2026-10-13T09:20:28.8463795Z   token: ***
+2026-10-13T09:20:28.8464241Z   ssh-strict: true
+2026-10-13T09:20:28.8464687Z   ssh-user: git
+2026-10-13T09:20:28.8465145Z   persist-credentials: true
+2026-10-13T09:20:28.8465643Z   clean: true
+2026-10-13T09:20:28.8466099Z   sparse-checkout-cone-mode: true
+2026-10-13T09:20:28.8466628Z   fetch-depth: 1
+2026-10-13T09:20:28.8467067Z   fetch-tags: false
+2026-10-13T09:20:28.8467519Z   show-progress: true
+2026-10-13T09:20:28.8468000Z   lfs: false
+2026-10-13T09:20:28.8468422Z   submodules: false
+2026-10-13T09:20:28.8468885Z   set-safe-directory: true
+2026-10-13T09:20:28.8469804Z   allow-unsafe-pr-checkout: false
+2026-10-13T09:20:28.8470688Z ##[endgroup]
+2026-10-13T09:20:28.9636120Z Syncing repository: ChurilovMaksim/BGS
+2026-10-13T09:20:28.9640060Z ##[group]Getting Git version info
+2026-10-13T09:20:28.9643933Z Working directory is '/home/runner/work/BGS/BGS'
+2026-10-13T09:20:28.9647403Z [command]/usr/bin/git version
+2026-10-13T09:20:28.9830664Z git version 2.55.0
+2026-10-13T09:20:28.9835889Z ##[endgroup]
+2026-10-13T09:20:28.9857458Z Temporarily overriding HOME='/home/runner/work/_temp/9e1146bc-3026-403d-bc5c-2133aebaab05' before making global git config changes
+2026-10-13T09:20:28.9871954Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-13T09:20:28.9874174Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/BGS/BGS
+2026-10-13T09:20:28.9940852Z Deleting the contents of '/home/runner/work/BGS/BGS'
+2026-10-13T09:20:28.9974107Z ##[group]Determining repository object format
+2026-10-13T09:20:28.9976686Z ##[endgroup]
+2026-10-13T09:20:28.9979107Z ##[group]Initializing the repository
+2026-10-13T09:20:28.9981385Z [command]/usr/bin/git init /home/runner/work/BGS/BGS
+2026-10-13T09:20:29.0140477Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-13T09:20:29.0161801Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-13T09:20:29.0171297Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-13T09:20:29.0173011Z hint: call:
+2026-10-13T09:20:29.0173862Z hint:
+2026-10-13T09:20:29.0174991Z hint: 	git config --global init.defaultBranch <name>
+2026-10-13T09:20:29.0175668Z hint:
+2026-10-13T09:20:29.0176634Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-13T09:20:29.0178306Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-13T09:20:29.0185903Z hint:
+2026-10-13T09:20:29.0186665Z hint: 	git branch -m <name>
+2026-10-13T09:20:29.0187436Z hint:
+2026-10-13T09:20:29.0188446Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-13T09:20:29.0190245Z Initialized empty Git repository in /home/runner/work/BGS/BGS/.git/
+2026-10-13T09:20:29.0192904Z [command]/usr/bin/git remote add origin https://github.com/ChurilovMaksim/BGS
+2026-10-13T09:20:29.0320305Z ##[endgroup]
+2026-10-13T09:20:29.0323206Z ##[group]Disabling automatic garbage collection
+2026-10-13T09:20:29.0325617Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-13T09:20:29.0333537Z ##[endgroup]
+2026-10-13T09:20:29.0334895Z ##[group]Setting up auth
+2026-10-13T09:20:29.0335914Z Removing SSH command configuration
+2026-10-13T09:20:29.0337333Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T09:20:29.0379367Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T09:20:29.1011836Z Removing HTTP extra header
+2026-10-13T09:20:29.1014104Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T09:20:29.1021208Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T09:20:29.1209717Z Removing includeIf entries pointing to credentials config files
+2026-10-13T09:20:29.1214565Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T09:20:29.1253578Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T09:20:29.1511327Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-13T09:20:29.1692110Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/BGS/BGS/.git.path /home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:20:29.1698936Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/BGS/BGS/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:20:29.1705498Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:20:29.1735119Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:20:29.1771487Z ##[endgroup]
+2026-10-13T09:20:29.1773464Z ##[group]Fetching the repository
+2026-10-13T09:20:29.1778742Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53d60cbb4b51d64b3ff82d396ab74e21f704f3a9:refs/remotes/origin/main
+2026-10-13T09:20:30.0841099Z From https://github.com/ChurilovMaksim/BGS
+2026-10-13T09:20:30.0874892Z  * [new ref]         53d60cbb4b51d64b3ff82d396ab74e21f704f3a9 -> origin/main
+2026-10-13T09:20:30.0879656Z [command]/usr/bin/git branch --list --remote origin/main
+2026-10-13T09:20:30.1813786Z   origin/main
+2026-10-13T09:20:30.1829181Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-10-13T09:20:30.1832451Z 53d60cbb4b51d64b3ff82d396ab74e21f704f3a9
+2026-10-13T09:20:30.1836764Z ##[endgroup]
+2026-10-13T09:20:30.1838937Z ##[group]Determining the checkout info
+2026-10-13T09:20:30.1841239Z ##[endgroup]
+2026-10-13T09:20:30.1842661Z [command]/usr/bin/git sparse-checkout disable
+2026-10-13T09:20:30.1846842Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-13T09:20:30.1851800Z ##[group]Checking out the ref
+2026-10-13T09:20:30.1853902Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-13T09:20:30.5614408Z Switched to a new branch 'main'
+2026-10-13T09:20:30.5630977Z branch 'main' set up to track 'origin/main'.
+2026-10-13T09:20:30.5653277Z ##[endgroup]
+2026-10-13T09:20:30.5701112Z [command]/usr/bin/git log -1 --format=%H
+2026-10-13T09:20:30.5735224Z 53d60cbb4b51d64b3ff82d396ab74e21f704f3a9
+2026-10-13T09:20:30.5994133Z ##[group]Run curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+2026-10-13T09:20:30.5996779Z [36;1mcurl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"[0m
+2026-10-13T09:20:30.5998361Z [36;1msh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none[0m
+2026-10-13T09:20:30.5999371Z [36;1mexport PATH="$HOME/.elan/bin:$PATH"[0m
+2026-10-13T09:20:30.6000025Z [36;1mcd formalization[0m
+2026-10-13T09:20:30.6000557Z [36;1mlake build[0m
+2026-10-13T09:20:30.6262221Z shell: /usr/bin/bash -e {0}
+2026-10-13T09:20:30.6262960Z ##[endgroup]
+2026-10-13T09:20:30.6852073Z info: downloading installer
+2026-10-13T09:20:31.6822756Z info: downloading https://releases.lean-lang.org/lean4/v4.33.1/lean-4.33.1-linux.tar.zst
+2026-10-13T09:20:36.1171067Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1
+2026-10-13T09:20:48.3881711Z ℹ [2/26] Built Bgs.AnalyticOrbitKernels (913ms)
+2026-10-13T09:20:48.3900647Z info: Bgs/AnalyticOrbitKernels.lean:43:0: 'Bgs.AnalyticOrbitKernels.growthBySteps' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:48.3940712Z info: Bgs/AnalyticOrbitKernels.lean:44:0: 'Bgs.AnalyticOrbitKernels.positiveCancellation' does not depend on any axioms
+2026-10-13T09:20:48.3948677Z info: Bgs/AnalyticOrbitKernels.lean:45:0: 'Bgs.AnalyticOrbitKernels.negativeNoncancellation' does not depend on any axioms
+2026-10-13T09:20:48.3990989Z info: Bgs/AnalyticOrbitKernels.lean:46:0: 'Bgs.AnalyticOrbitKernels.signedActionsDiffer' does not depend on any axioms
+2026-10-13T09:20:49.6901168Z ✔ [3/26] Built Bgs.CueLoopKernels (1.4s)
+2026-10-13T09:20:51.7904492Z ℹ [4/26] Built Bgs.CayleyEnergy (4.4s)
+2026-10-13T09:20:51.7940424Z info: Bgs/CayleyEnergy.lean:138:0: 'Bgs.CayleyEnergy.k11_generic_energy' depends on axioms: [k11_generic_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.7973174Z info: Bgs/CayleyEnergy.lean:139:0: 'Bgs.CayleyEnergy.k11_exceptional_energy' depends on axioms: [k11_exceptional_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8000578Z info: Bgs/CayleyEnergy.lean:140:0: 'Bgs.CayleyEnergy.k13_generic_energy' depends on axioms: [k13_generic_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8026029Z info: Bgs/CayleyEnergy.lean:141:0: 'Bgs.CayleyEnergy.k13_exceptional_energy' depends on axioms: [k13_exceptional_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8066683Z info: Bgs/CayleyEnergy.lean:142:0: 'Bgs.CayleyEnergy.k23_energy' depends on axioms: [k23_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8090394Z info: Bgs/CayleyEnergy.lean:143:0: 'Bgs.CayleyEnergy.k23_has_excess' depends on axioms: [k23_has_excess._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8941011Z ℹ [5/26] Built Bgs.FibonacciRatioSmall (2.1s)
+2026-10-13T09:20:51.8964676Z info: Bgs/FibonacciRatioSmall.lean:104:0: 'Bgs.FibonacciRatioSmall.bounded_energy' depends on axioms: [bounded_energy._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8981024Z info: Bgs/FibonacciRatioSmall.lean:105:0: 'Bgs.FibonacciRatioSmall.bounded_high_collisions_are_local' depends on axioms: [bounded_high_collisions_are_local._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8983936Z info: Bgs/FibonacciRatioSmall.lean:106:0: 'Bgs.FibonacciRatioSmall.difference_one_multiplicity' depends on axioms: [difference_one_multiplicity._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8986305Z info: Bgs/FibonacciRatioSmall.lean:107:0: 'Bgs.FibonacciRatioSmall.difference_two_multiplicity' depends on axioms: [difference_two_multiplicity._native.native_decide.ax_1_1]
+2026-10-13T09:20:51.8988592Z info: Bgs/FibonacciRatioSmall.lean:108:0: 'Bgs.FibonacciRatioSmall.difference_four_multiplicity' depends on axioms: [difference_four_multiplicity._native.native_decide.ax_1_1]
+2026-10-13T09:20:52.2950989Z ℹ [6/26] Built Bgs.HistoricalMobiusDegenerateFiber (463ms)
+2026-10-13T09:20:52.2971421Z info: Bgs/HistoricalMobiusDegenerateFiber.lean:47:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_53' depends on axioms: [d0_constant_53._native.native_decide.ax_1_1]
+2026-10-13T09:20:52.3020589Z info: Bgs/HistoricalMobiusDegenerateFiber.lean:48:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_53' depends on axioms: [d0_cardinality_53._native.native_decide.ax_1_1]
+2026-10-13T09:20:52.3046255Z info: Bgs/HistoricalMobiusDegenerateFiber.lean:49:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_199' depends on axioms: [d0_constant_199._native.native_decide.ax_1_1]
+2026-10-13T09:20:52.3087974Z info: Bgs/HistoricalMobiusDegenerateFiber.lean:50:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_199' depends on axioms: [d0_cardinality_199._native.native_decide.ax_1_1]
+2026-10-13T09:20:52.6960931Z ℹ [7/26] Built Bgs.GeneralHyperbolicParity (842ms)
+2026-10-13T09:20:52.6962702Z info: Bgs/GeneralHyperbolicParity.lean:72:0: 'Bgs.GeneralHyperbolicParity.invariant_refinement' does not depend on any axioms
+2026-10-13T09:20:52.7010525Z info: Bgs/GeneralHyperbolicParity.lean:73:0: 'Bgs.GeneralHyperbolicParity.refinement_polarization' does not depend on any axioms
+2026-10-13T09:20:52.7042604Z info: Bgs/GeneralHyperbolicParity.lean:74:0: 'Bgs.GeneralHyperbolicParity.nontrivial_central_parity' does not depend on any axioms
+2026-10-13T09:20:52.7044426Z info: Bgs/GeneralHyperbolicParity.lean:75:0: 'Bgs.GeneralHyperbolicParity.negative_trace_period' does not depend on any axioms
+2026-10-13T09:20:52.7103299Z info: Bgs/GeneralHyperbolicParity.lean:76:0: 'Bgs.GeneralHyperbolicParity.mixed_period' does not depend on any axioms
+2026-10-13T09:20:53.1951406Z ℹ [8/26] Built Bgs.LocalityKernels (840ms)
+2026-10-13T09:20:53.1994402Z info: Bgs/LocalityKernels.lean:38:0: 'Bgs.LocalityKernels.image_band' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:53.2029849Z info: Bgs/LocalityKernels.lean:39:0: 'Bgs.LocalityKernels.excludes_support_strip' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:53.2052209Z info: Bgs/LocalityKernels.lean:40:0: 'Bgs.LocalityKernels.cauchy_disk_constant' does not depend on any axioms
+2026-10-13T09:20:53.2080126Z info: Bgs/LocalityKernels.lean:41:0: 'Bgs.LocalityKernels.exponent_budget' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:53.2110174Z info: Bgs/LocalityKernels.lean:42:0: 'Bgs.LocalityKernels.gap_partition' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:53.7993598Z ✔ [9/26] Built Bgs.MagneticTraceSmall (1.1s)
+2026-10-13T09:20:54.3016215Z ℹ [10/26] Built Bgs.PairKeySecondMoment (544ms)
+2026-10-13T09:20:54.3100499Z info: Bgs/PairKeySecondMoment.lean:78:0: 'Bgs.PairKeySecondMoment.constraint_count' depends on axioms: [constraint_count._native.native_decide.ax_1_1]
+2026-10-13T09:20:54.3120557Z info: Bgs/PairKeySecondMoment.lean:79:0: 'Bgs.PairKeySecondMoment.parameterization_bijection' depends on axioms: [parameterization_bijection._native.native_decide.ax_1_1]
+2026-10-13T09:20:54.3160213Z info: Bgs/PairKeySecondMoment.lean:80:0: 'Bgs.PairKeySecondMoment.design_sizes' depends on axioms: [design_sizes._native.native_decide.ax_1_1]
+2026-10-13T09:20:54.3200239Z info: Bgs/PairKeySecondMoment.lean:81:0: 'Bgs.PairKeySecondMoment.generator_exact_order' depends on axioms: [generator_exact_order._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0098601Z ℹ [11/26] Built Bgs.PellCoboundary (1.6s)
+2026-10-13T09:20:56.0121304Z info: Bgs/PellCoboundary.lean:53:0: 'Bgs.PellCoboundary.structuralIdentity' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:56.0156121Z info: Bgs/PellCoboundary.lean:54:0: 'Bgs.PellCoboundary.firstSpeciesPeriod' depends on axioms: [firstSpeciesPeriod._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0174605Z info: Bgs/PellCoboundary.lean:55:0: 'Bgs.PellCoboundary.secondSpeciesPeriod' depends on axioms: [secondSpeciesPeriod._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0200082Z info: Bgs/PellCoboundary.lean:56:0: 'Bgs.PellCoboundary.pairCount' depends on axioms: [pairCount._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0220603Z info: Bgs/PellCoboundary.lean:57:0: 'Bgs.PellCoboundary.distinctCount' depends on axioms: [distinctCount._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0222287Z info: Bgs/PellCoboundary.lean:58:0: 'Bgs.PellCoboundary.noZero' depends on axioms: [noZero._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0230634Z info: Bgs/PellCoboundary.lean:59:0: 'Bgs.PellCoboundary.multiplicityAtMostTwo' depends on axioms: [multiplicityAtMostTwo._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.0250263Z info: Bgs/PellCoboundary.lean:60:0: 'Bgs.PellCoboundary.doubleKeyCount' depends on axioms: [doubleKeyCount._native.native_decide.ax_1_1]
+2026-10-13T09:20:56.7105587Z ✔ [12/26] Built Bgs.PellCohomology (737ms)
+2026-10-13T09:20:57.4113983Z ✔ [13/26] Built Bgs.PellEchoWeights (737ms)
+2026-10-13T09:20:58.2170592Z ℹ [14/26] Built Bgs.PellFourierKernel (804ms)
+2026-10-13T09:20:58.2210087Z info: Bgs/PellFourierKernel.lean:47:0: 'Bgs.PellFourierKernel.telescope' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:58.2211667Z info: Bgs/PellFourierKernel.lean:48:0: 'Bgs.PellFourierKernel.zeroEndpoint' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:58.2249940Z info: Bgs/PellFourierKernel.lean:49:0: 'Bgs.PellFourierKernel.reconstruct' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:20:58.2270121Z info: Bgs/PellFourierKernel.lean:50:0: 'Bgs.PellFourierKernel.periodTwoCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T09:21:11.8325387Z ℹ [15/26] Built Bgs.PairKeyFourthMoment (18s)
+2026-10-13T09:21:11.8370671Z info: Bgs/PairKeyFourthMoment.lean:78:0: 'Bgs.PairKeyFourthMoment.diagonal_multiplicity' depends on axioms: [diagonal_multiplicity._native.native_decide.ax_1_1]
+2026-10-13T09:21:11.8373079Z info: Bgs/PairKeyFourthMoment.lean:79:0: 'Bgs.PairKeyFourthMoment.off_diagonal_keys_injective' depends on axioms: [off_diagonal_keys_injective._native.native_decide.ax_1_1]
+2026-10-13T09:21:11.8390607Z info: Bgs/PairKeyFourthMoment.lean:80:0: 'Bgs.PairKeyFourthMoment.coupled_constraint_count' depends on axioms: [coupled_constraint_count._native.native_decide.ax_1_1]
+2026-10-13T09:21:12.4321343Z ℹ [16/26] Built Bgs.TorusScaleLaw (592ms)
+2026-10-13T09:21:12.4360429Z info: Bgs/TorusScaleLaw.lean:38:0: 'Bgs.TorusScaleLaw.generator_exact_order_and_inverse' does not depend on any axioms
+2026-10-13T09:21:12.4361929Z info: Bgs/TorusScaleLaw.lean:39:0: 'Bgs.TorusScaleLaw.inverse_and_half_power' does not depend on any axioms
+2026-10-13T09:21:12.4363276Z info: Bgs/TorusScaleLaw.lean:40:0: 'Bgs.TorusScaleLaw.half_trace_and_discriminant' does not depend on any axioms
+2026-10-13T09:21:12.4364553Z info: Bgs/TorusScaleLaw.lean:41:0: 'Bgs.TorusScaleLaw.branch_scales' does not depend on any axioms
+2026-10-13T09:21:29.1570187Z ℹ [17/26] Built Bgs.TorusLevelSets (30s)
+2026-10-13T09:21:29.1571798Z info: Bgs/TorusLevelSets.lean:85:0: 'Bgs.TorusLevelSets.nonzero_level_cardinality' depends on axioms: [nonzero_level_cardinality._native.native_decide.ax_1_1]
+2026-10-13T09:21:29.1610422Z info: Bgs/TorusLevelSets.lean:86:0: 'Bgs.TorusLevelSets.zero_cone_cardinality' depends on axioms: [zero_cone_cardinality._native.native_decide.ax_1_1]
+2026-10-13T09:21:29.1646766Z info: Bgs/TorusLevelSets.lean:87:0: 'Bgs.TorusLevelSets.nonzero_level_orbit_count' depends on axioms: [nonzero_level_orbit_count._native.native_decide.ax_1_1]
+2026-10-13T09:21:29.1672126Z info: Bgs/TorusLevelSets.lean:88:0: 'Bgs.TorusLevelSets.global_count_identity' does not depend on any axioms
+2026-10-13T09:21:29.1726290Z info: Bgs/TorusLevelSets.lean:89:0: 'Bgs.TorusLevelSets.nonzero_level_action_free' depends on axioms: [nonzero_level_action_free._native.native_decide.ax_1_1]
+2026-10-13T09:23:18.7893586Z ℹ [18/26] Built Bgs.FourCutKernel (126s)
+2026-10-13T09:23:18.7900112Z info: Bgs/FourCutKernel.lean:105:0: 'Bgs.FourCutKernel.pairs_through_12' depends on axioms: [propext, pairs_through_12._native.native_decide.ax_1_1]
+2026-10-13T09:23:18.7920156Z info: Bgs/FourCutKernel.lean:106:0: 'Bgs.FourCutKernel.triples_through_10' depends on axioms: [propext, triples_through_10._native.native_decide.ax_1_1]
+2026-10-13T09:23:18.7940534Z info: Bgs/FourCutKernel.lean:107:0: theorem Bgs.FourCutKernel.pairs_through_12 : through 12 false = { configurations := 3858, matchCount := 560 } :=
+2026-10-13T09:23:18.7959719Z of_decide_eq_true pairs_through_12._native.native_decide.ax_1_1
+2026-10-13T09:23:18.7961070Z info: Bgs/FourCutKernel.lean:108:0: theorem Bgs.FourCutKernel.triples_through_10 : through 10 true = { configurations := 650 } :=
+2026-10-13T09:23:18.7979661Z of_decide_eq_true triples_through_10._native.native_decide.ax_1_1
+2026-10-13T09:23:18.7999895Z info: Bgs/FourCutKernel.lean:113:0: 'Bgs.FourCutKernel.pair_m4_excluded' depends on axioms: [propext]
+2026-10-13T09:23:18.8019878Z info: Bgs/FourCutKernel.lean:114:0: 'Bgs.FourCutKernel.triple_m4_excluded' depends on axioms: [propext]
+2026-10-13T09:23:19.5300532Z ℹ [19/26] Built Bgs.PhaseChannelJetKernels (723ms)
+2026-10-13T09:23:19.5340205Z info: Bgs/PhaseChannelJetKernels.lean:38:0: 'Bgs.PhaseChannelJetKernels.jet_coefficient_elimination' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:19.5701357Z info: Bgs/PhaseChannelJetKernels.lean:39:0: 'Bgs.PhaseChannelJetKernels.poisson_localization' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:19.5740772Z info: Bgs/PhaseChannelJetKernels.lean:40:0: 'Bgs.PhaseChannelJetKernels.cascade_increment' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:19.5742978Z info: Bgs/PhaseChannelJetKernels.lean:41:0: 'Bgs.PhaseChannelJetKernels.fourier_degree_two_trace_defect' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:20.1201208Z ℹ [20/26] Built Bgs.PhaseFrameWitness (563ms)
+2026-10-13T09:23:20.1229528Z info: Bgs/PhaseFrameWitness.lean:29:0: 1
+2026-10-13T09:23:20.1470770Z info: Bgs/PhaseFrameWitness.lean:31:0: 'phaseWitness_determinant' depends on axioms: [propext]
+2026-10-13T09:23:20.6281386Z ℹ [21/26] Built Bgs.TorusDimensionBound (513ms)
+2026-10-13T09:23:20.6310069Z info: Bgs/TorusDimensionBound.lean:17:0: 'zero_weight_dimension_bound' depends on axioms: [propext]
+2026-10-13T09:23:21.2003752Z ℹ [22/26] Built Bgs.ActiveRankDefect (590ms)
+2026-10-13T09:23:21.2020145Z info: Bgs/ActiveRankDefect.lean:20:0: 'activeDefectCost' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:21.2040155Z info: Bgs/ActiveRankDefect.lean:21:0: 'rankFourGivesSecondOrder' depends on axioms: [propext, Quot.sound]
+2026-10-13T09:23:22.4973702Z ℹ [23/26] Built Bgs.CayleyCurveEnergy (1.3s)
+2026-10-13T09:23:22.4975367Z info: Bgs/CayleyCurveEnergy.lean:115:0: 'Bgs.CayleyCurveEnergy.toric_curve_counts_match' depends on axioms: [toric_curve_counts_match._native.native_decide.ax_1_1]
+2026-10-13T09:23:22.4977376Z info: Bgs/CayleyCurveEnergy.lean:116:0: 'Bgs.CayleyCurveEnergy.diagonal_curve_counts' depends on axioms: [diagonal_curve_counts._native.native_decide.ax_1_1]
+2026-10-13T09:23:22.4979549Z info: Bgs/CayleyCurveEnergy.lean:117:0: 'Bgs.CayleyCurveEnergy.enlarged_curve_total' depends on axioms: [enlarged_curve_total._native.native_decide.ax_1_1]
+2026-10-13T09:23:22.4981544Z info: Bgs/CayleyCurveEnergy.lean:118:0: 'Bgs.CayleyCurveEnergy.max_offdiagonal_curve_count' depends on axioms: [max_offdiagonal_curve_count._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8783804Z ℹ [24/26] Built Bgs.SevenPrimary (212s)
+2026-10-13T09:25:01.8786167Z info: Bgs/SevenPrimary.lean:111:0: 'SevenPrimary.product_0' depends on axioms: [propext, Quot.sound, product_0._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8788369Z info: Bgs/SevenPrimary.lean:113:0: 'SevenPrimary.rabin_0' depends on axioms: [propext, Quot.sound, rabin_0._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8790922Z info: Bgs/SevenPrimary.lean:115:0: 'SevenPrimary.degrees_0' depends on axioms: [propext, degrees_0._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8792847Z info: Bgs/SevenPrimary.lean:131:0: 'SevenPrimary.product_1' depends on axioms: [propext, Quot.sound, product_1._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8794760Z info: Bgs/SevenPrimary.lean:133:0: 'SevenPrimary.rabin_1' depends on axioms: [propext, Quot.sound, rabin_1._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8796847Z info: Bgs/SevenPrimary.lean:135:0: 'SevenPrimary.degrees_1' depends on axioms: [propext, degrees_1._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8798748Z info: Bgs/SevenPrimary.lean:148:0: 'SevenPrimary.product_2' depends on axioms: [propext, Quot.sound, product_2._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8800935Z info: Bgs/SevenPrimary.lean:150:0: 'SevenPrimary.rabin_2' depends on axioms: [propext, Quot.sound, rabin_2._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8802769Z info: Bgs/SevenPrimary.lean:152:0: 'SevenPrimary.degrees_2' depends on axioms: [propext, degrees_2._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8804651Z info: Bgs/SevenPrimary.lean:168:0: 'SevenPrimary.product_3' depends on axioms: [propext, Quot.sound, product_3._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8806582Z info: Bgs/SevenPrimary.lean:170:0: 'SevenPrimary.rabin_3' depends on axioms: [propext, Quot.sound, rabin_3._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8808421Z info: Bgs/SevenPrimary.lean:172:0: 'SevenPrimary.degrees_3' depends on axioms: [propext, degrees_3._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8810539Z info: Bgs/SevenPrimary.lean:185:0: 'SevenPrimary.product_4' depends on axioms: [propext, Quot.sound, product_4._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8812511Z info: Bgs/SevenPrimary.lean:187:0: 'SevenPrimary.rabin_4' depends on axioms: [propext, Quot.sound, rabin_4._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8814370Z info: Bgs/SevenPrimary.lean:189:0: 'SevenPrimary.degrees_4' depends on axioms: [propext, degrees_4._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8816241Z info: Bgs/SevenPrimary.lean:213:0: 'SevenPrimary.product_5' depends on axioms: [propext, Quot.sound, product_5._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8818132Z info: Bgs/SevenPrimary.lean:215:0: 'SevenPrimary.rabin_5' depends on axioms: [propext, Quot.sound, rabin_5._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8820383Z info: Bgs/SevenPrimary.lean:217:0: 'SevenPrimary.degrees_5' depends on axioms: [propext, degrees_5._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8822303Z info: Bgs/SevenPrimary.lean:234:0: 'SevenPrimary.product_6' depends on axioms: [propext, Quot.sound, product_6._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8824243Z info: Bgs/SevenPrimary.lean:236:0: 'SevenPrimary.rabin_6' depends on axioms: [propext, Quot.sound, rabin_6._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8826119Z info: Bgs/SevenPrimary.lean:238:0: 'SevenPrimary.degrees_6' depends on axioms: [propext, degrees_6._native.native_decide.ax_1_1]
+2026-10-13T09:25:01.8827848Z info: Bgs/SevenPrimary.lean:244:0: 'SevenPrimary.order49' depends on axioms: [order49._native.native_decide.ax_1_1]
+2026-10-13T09:25:02.3792520Z ✔ [25/26] Built Bgs (478ms)
+2026-10-13T09:25:02.3820070Z Build completed successfully (26 jobs).
+2026-10-13T09:25:02.3975999Z Post job cleanup.
+2026-10-13T09:25:02.4986790Z [command]/usr/bin/git version
+2026-10-13T09:25:02.5049724Z git version 2.55.0
+2026-10-13T09:25:02.5105314Z Temporarily overriding HOME='/home/runner/work/_temp/0f5577a8-de30-406b-bfc4-88d2bf8bf70d' before making global git config changes
+2026-10-13T09:25:02.5107270Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-13T09:25:02.5112990Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/BGS/BGS
+2026-10-13T09:25:02.5207552Z Removing SSH command configuration
+2026-10-13T09:25:02.5208528Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T09:25:02.5262646Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T09:25:02.5607975Z Removing HTTP extra header
+2026-10-13T09:25:02.5609592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T09:25:02.5675288Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T09:25:02.6233433Z Removing includeIf entries pointing to credentials config files
+2026-10-13T09:25:02.6249992Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T09:25:02.6290484Z includeif.gitdir:/home/runner/work/BGS/BGS/.git.path
+2026-10-13T09:25:02.6310082Z includeif.gitdir:/home/runner/work/BGS/BGS/.git/worktrees/*.path
+2026-10-13T09:25:02.6338103Z includeif.gitdir:/github/workspace/.git.path
+2026-10-13T09:25:02.6340004Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-13T09:25:02.6383852Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/BGS/BGS/.git.path
+2026-10-13T09:25:02.6400331Z /home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:25:02.6456739Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/BGS/BGS/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-e0ce335b\-1aa3\-4724\-857d\-e3ea886602d3\.config
+2026-10-13T09:25:02.6492896Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/BGS/BGS/.git/worktrees/*.path
+2026-10-13T09:25:02.6549938Z /home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:25:02.6591000Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/BGS/BGS/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-e0ce335b\-1aa3\-4724\-857d\-e3ea886602d3\.config
+2026-10-13T09:25:02.6668300Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-13T09:25:02.6725668Z /github/runner_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:25:02.6770932Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-e0ce335b\-1aa3\-4724\-857d\-e3ea886602d3\.config
+2026-10-13T09:25:02.6880217Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-13T09:25:02.6919858Z /github/runner_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config
+2026-10-13T09:25:02.6970539Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-e0ce335b\-1aa3\-4724\-857d\-e3ea886602d3\.config
+2026-10-13T09:25:02.7070097Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T09:25:02.7418607Z Removing credentials config '/home/runner/work/_temp/git-credentials-e0ce335b-1aa3-4724-857d-e3ea886602d3.config'
+2026-10-13T09:25:02.7575794Z Cleaning up orphan processes

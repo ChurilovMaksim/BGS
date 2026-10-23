@@ -1,0 +1,24 @@
+{
+  "schema": "bgs-internal-proof-review-v1",
+  "reviewed_on": "2026-10-11",
+  "reviewer": "Separate read-only internal reconstruction agent fixed_moment_delay_review",
+  "input": "evidence/executions/20261011/reversal-gap/inputs/reversal_review_input.md",
+  "sha256": "fb77ad79121e77f0c723ebd1bbde5fa5ede3db0a6e2ca7ddb6dc4680c28f67b3",
+  "verdict": "Proved in the stated conditional scope; no substantive mathematical gap found.",
+  "scope": [
+    "Ordered singular-value contraction for arbitrary complex contractions",
+    "Correct reversal transpose/conjugation and exact phase mean",
+    "Centered coherent noise constant 8 delta",
+    "Stopped Schatten potential and complete simultaneous crossings",
+    "Literal FM-022 initial-matrix definition and statement checked; inherited proof not reaudited"
+  ],
+  "editorial_clarification": "Explicitly prove the complement is a contraction at s=1 before varying the threshold.",
+  "non_claims": [
+    "All-time flatness probability",
+    "Complete symmetry classification",
+    "Scalar microscopic law",
+    "BGS",
+    "World priority",
+    "Analytic Lean formalization"
+  ]
+}

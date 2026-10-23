@@ -1,0 +1,10 @@
+{
+  "status": "historical failed preliminary experiment",
+  "exit_code": 124,
+  "wall_timeout_seconds": 80,
+  "source": "inputs/initial_timed_out_verifier.py",
+  "stdout": "inputs/initial_timed_out_stdout.txt",
+  "source_sha256": "a64d956ac42301b17f50038813a326054685613f3cb5d0915ab83b57c1eca0e8",
+  "supersession": "The expensive full complex rational fixtures were replaced by four rational orthogonal fixtures plus one complex rank-one primitive; coverage changed explicitly. The accepted bounded run uses the maintained verifier and a separate manifest.",
+  "non_claim": "The timeout is not a mathematical counterexample or a successful verification."
+}

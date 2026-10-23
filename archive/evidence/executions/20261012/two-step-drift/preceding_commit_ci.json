@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-12",
+  "scope": "Preceding clock commit only; not acceptance of the later unitary/drift source changes.",
+  "commit": "853bca79423cb1462926592609c911154ca486bd",
+  "tree": "b62b4b99b05c6fe40918acb2d8c04c8d650731b9",
+  "scientific_workflow": {
+    "id": 38233210941,
+    "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38233210941",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 114757457888,
+        "name": "scientific-registry",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757457962,
+        "name": "Wave2 portable (ZEN3)",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757458137,
+        "name": "Wave2 portable (HASWELL)",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757458218,
+        "name": "repository-structure",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757551237,
+        "name": "formalization",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757551327,
+        "name": "computation",
+        "conclusion": "success"
+      },
+      {
+        "id": 114757551428,
+        "name": "manuscript",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "independent_manuscript": {
+    "id": 38233211098,
+    "url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38233211098",
+    "conclusion": "success"
+  },
+  "actual_log_scope": {
+    "workspace_checks": 220,
+    "maintenance_tests": 236,
+    "cpp_targets": 25,
+    "active_lean_modules": 23,
+    "lake_jobs": 26
+  },
+  "logs": {
+    "computation": "preceding-ci/computation.log",
+    "formalization": "preceding-ci/formalization.log"
+  },
+  "non_claims": [
+    "CI does not prove analytic mathematics or BGS.",
+    "No Lean formalization of the conditional clock induction or the new unitary/drift proofs."
+  ],
+  "log_sha256": {
+    "computation": "fb4f03180e8c040712139b68bd24abde2ec3964f431f96578510c22a5361c733",
+    "formalization": "7a6e2ed0fb825b35fbbbd444ae9634361d54ac6e449ba96dae94302a1925e182"
+  }
+}

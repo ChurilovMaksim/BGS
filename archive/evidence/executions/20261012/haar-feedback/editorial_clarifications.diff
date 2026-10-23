@@ -1,0 +1,23 @@
+--- maintained_proof_before_editorial_clarifications.md
++++ haar_feedback_clock_law_20261012.md
+@@ -248,7 +248,8 @@
+ argument is as follows. The measures \(\mu_x\), \(0\le x\le1\), have
+ a common compact support and continuous moments \(f_r(x)\). For every
+ positive tolerance there exist finite \(L\) and a moment tolerance such
+-that closeness of moments \(1,\ldots,L\) to \(f_r(x)\) forces weak-metric
++that, for probability measures on \([0,\infty)\), closeness of moments
++\(1,\ldots,L\) to \(f_r(x)\) forces weak-metric
+ closeness, uniformly in \(x\). Otherwise choose counterexamples with
+ \(L\to\infty\) and moment tolerance tending to zero, and take a subsequence
+ \(x\to x_0\). First moments give tightness. A bounded next higher moment
+@@ -311,8 +312,8 @@
+ \]
+ This ensemble has every clock conclusion above. At initial size \(u=N\),
+ however, its rescaled point process has a forbidden interval of length
+-\(c\). A nonnegative continuous test function supported inside that
+-interval has identically zero integral against these processes. An
++\(c\). A nonzero nonnegative continuous test function compactly supported inside
++that interval has identically zero integral against these processes. An
+ intensity-one Sine₂ process has a positive expected integral, hence a
+ positive probability of a nonzero one. Weak point-process convergence
+ to Sine₂ at that prescribed origin is impossible.

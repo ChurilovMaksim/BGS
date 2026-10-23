@@ -1,0 +1,128 @@
+{
+  "arithmetic": "Exact Gaussian rational coefficients; floating operator norms only",
+  "checks": [
+    {
+      "N": 3,
+      "m": 1,
+      "exact_paths": 3,
+      "occupation_classes": 3,
+      "norm_error": 0.0,
+      "theorem_bound": 0.0
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "exact_paths": 9,
+      "occupation_classes": 6,
+      "norm_error": 0.31640625,
+      "theorem_bound": 3.800711768802619
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "exact_paths": 27,
+      "occupation_classes": 10,
+      "norm_error": 0.31904819615923924,
+      "theorem_bound": 38.957128699514726
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "exact_paths": 81,
+      "occupation_classes": 15,
+      "norm_error": 0.47459735935479713,
+      "theorem_bound": 489.9323714963605
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "exact_paths": 243,
+      "occupation_classes": 21,
+      "norm_error": 0.6883157681967654,
+      "theorem_bound": 7065.039810903379
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "exact_paths": 729,
+      "occupation_classes": 28,
+      "norm_error": 1.0139330032934513,
+      "theorem_bound": 114243.12670567085
+    },
+    {
+      "N": 4,
+      "m": 1,
+      "exact_paths": 4,
+      "occupation_classes": 4,
+      "norm_error": 0.0,
+      "theorem_bound": 0.0
+    },
+    {
+      "N": 4,
+      "m": 2,
+      "exact_paths": 16,
+      "occupation_classes": 10,
+      "norm_error": 0.5126221070690802,
+      "theorem_bound": 4.694093344070586
+    },
+    {
+      "N": 4,
+      "m": 3,
+      "exact_paths": 64,
+      "occupation_classes": 20,
+      "norm_error": 0.713021319632496,
+      "theorem_bound": 75.56474515565046
+    },
+    {
+      "N": 4,
+      "m": 4,
+      "exact_paths": 256,
+      "occupation_classes": 35,
+      "norm_error": 0.738462948056406,
+      "theorem_bound": 1471.0895066755736
+    },
+    {
+      "N": 4,
+      "m": 5,
+      "exact_paths": 1024,
+      "occupation_classes": 56,
+      "norm_error": 0.7048995272107823,
+      "theorem_bound": 32624.951388101123
+    },
+    {
+      "N": 4,
+      "m": 6,
+      "exact_paths": 4096,
+      "occupation_classes": 84,
+      "norm_error": 0.7047409950035816,
+      "theorem_bound": 808901.6207472732
+    }
+  ],
+  "raw_Ward_hessian_cotangent_checks": [
+    {
+      "m": 1,
+      "exact_equal": true
+    },
+    {
+      "m": 2,
+      "exact_equal": true
+    },
+    {
+      "m": 3,
+      "exact_equal": true
+    },
+    {
+      "m": 4,
+      "exact_equal": true
+    },
+    {
+      "m": 5,
+      "exact_equal": true
+    },
+    {
+      "m": 6,
+      "exact_equal": true
+    }
+  ],
+  "status": "pass"
+}

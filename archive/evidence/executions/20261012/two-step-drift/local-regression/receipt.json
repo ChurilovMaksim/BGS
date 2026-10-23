@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-12",
+  "base_commit": "853bca79423cb1462926592609c911154ca486bd",
+  "dirty": true,
+  "scope": "Focused verifier execution and seven assertion-entry policy tests; not a successful fresh full-workspace suite.",
+  "source_tree_unchanged_during_focus": true,
+  "checks": [
+    {
+      "name": "clock_reference_measure",
+      "source": "computations/verification/clock_reference_measure.py",
+      "sha256": "d2d22a999abb9e1e2700b3dc0499c6093a2b35e8a46b6e83c516ba7949d78796",
+      "source_unchanged": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/clock_reference_measure.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 1.793,
+      "declared_wall_timeout_seconds": 360,
+      "log_sha256": "c1996aaeb86c4b560afb1c473c3c5ed5af63ffd8c2fe4124aa608667bcfffdb8"
+    },
+    {
+      "name": "two_step_restoring_drift",
+      "source": "computations/verification/two_step_restoring_drift.py",
+      "sha256": "30c763f571b2761ebd5504dac5fa4184acaad0a13a0acfe64c0ef0c2cfe7b22f",
+      "source_unchanged": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/two_step_restoring_drift.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.941,
+      "declared_wall_timeout_seconds": 360,
+      "log_sha256": "62a7143adb43d03ed218a4b4b534b15dd57568a6c7bd9a2299644745efa2a40a"
+    },
+    {
+      "name": "unitary_two_step_obstruction",
+      "source": "computations/verification/unitary_two_step_obstruction.py",
+      "sha256": "35887e814b2e4f087dc1d8e34a5c923de6e9d00a28f3bf65af29f15969dce3d4",
+      "source_unchanged": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/06745ba532e4/BGS/computations/verification/unitary_two_step_obstruction.py"
+      ],
+      "exit_code": 0,
+      "execution_status": "passed",
+      "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+      "seconds": 0.543,
+      "declared_wall_timeout_seconds": 360,
+      "log_sha256": "e0aa4e1a97e72d3fa2c82063ce1459d32d16111bdb3af36546fc564d9d5b9d10"
+    }
+  ],
+  "selection": [
+    "unitary_two_step_obstruction",
+    "two_step_restoring_drift",
+    "clock_reference_measure"
+  ],
+  "cpp_build_provenance_scope": "The maintained runner preflight probed the existing 25-target Release build; this focused selection executed no C++ verifier.",
+  "entry_policy": {
+    "log": "entry-policy.log",
+    "tests": 7,
+    "runtime_seconds": 31.041,
+    "status": "PASS"
+  },
+  "original_inputs": {
+    "checked": 199,
+    "all_hashes_unchanged": true
+  },
+  "maintained_proof_hashes": "Both independent final review hash records matched the current proof files."
+}
