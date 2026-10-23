@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "head_sha": "8356101640b3c98325ef77991a370a10d7014ff8",
+  "run_id": 38564033893,
+  "status": "completed",
+  "conclusion": "success",
+  "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/38564033893",
+  "observed_on": "2026-10-14",
+  "jobs": [
+    {
+      "id": 115852055572,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852055649,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852055684,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852055829,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852148252,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852148255,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 115852148347,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "computation_scope": {
+    "successful_python_cpp_checks": 227,
+    "cpp_checks": 25,
+    "maintenance_tests": 236,
+    "actual_log_job_id": 115852148255
+  },
+  "boundary": "This is the preceding TRACE-079/080 main head, not the later TRACE-081/082 source tree or new Lean arithmetic kernel."
+}

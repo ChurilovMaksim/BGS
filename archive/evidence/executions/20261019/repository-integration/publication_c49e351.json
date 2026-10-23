@@ -1,0 +1,142 @@
+{
+  "source_commit": "c49e351f3838d388829f1a7cd46a474b8820fc5f",
+  "source_tree": "e19da7d2e49988a26a69a57724498dab33f631de",
+  "parent": "5c1d1553d1ef59a3f62cc46e4f70b7b08640af32",
+  "changed_files": 707,
+  "new_files": 685,
+  "modified_files": 22,
+  "removed_files": 0,
+  "imported_source_files": 654,
+  "source_packets": 11,
+  "registered_claims": 159,
+  "remote_main_and_tree_verified": true,
+  "local_verification": "check_run/manifest.json",
+  "local_manuscript": "manuscript_build_accepted.json",
+  "manuscript_pages": 311,
+  "selected_pdf_pages_reviewed": [
+    305,
+    306,
+    307
+  ],
+  "remote_workflows": [
+    {
+      "id": 39266499099,
+      "name": "Scientific verification",
+      "head_sha": "c49e351f3838d388829f1a7cd46a474b8820fc5f",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099"
+    },
+    {
+      "id": 39266499160,
+      "name": "Independent manuscript build",
+      "head_sha": "c49e351f3838d388829f1a7cd46a474b8820fc5f",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499160"
+    }
+  ],
+  "jobs": [
+    {
+      "run_id": 39266499099,
+      "id": 118107328074,
+      "name": "Wave2 portable (HASWELL)",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107328074",
+      "started_at": "2026-10-19T14:10:04Z",
+      "completed_at": "2026-10-19T14:10:08Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107328676,
+      "name": "scientific-registry",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107328676",
+      "started_at": "2026-10-19T14:10:04Z",
+      "completed_at": "2026-10-19T14:10:07Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107328686,
+      "name": "Wave2 portable (ZEN3)",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107328686",
+      "started_at": "2026-10-19T14:10:04Z",
+      "completed_at": "2026-10-19T14:10:07Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107329014,
+      "name": "repository-structure",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107329014",
+      "started_at": "2026-10-19T14:10:04Z",
+      "completed_at": "2026-10-19T14:10:07Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107360966,
+      "name": "computation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107360966",
+      "started_at": "2026-10-19T14:10:08Z",
+      "completed_at": "2026-10-19T14:10:08Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107361249,
+      "name": "formalization",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107361249",
+      "started_at": "2026-10-19T14:10:08Z",
+      "completed_at": "2026-10-19T14:10:08Z"
+    },
+    {
+      "run_id": 39266499099,
+      "id": 118107361480,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "skipped",
+      "runner_id": null,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499099/job/118107361480",
+      "started_at": "2026-10-19T14:10:08Z",
+      "completed_at": "2026-10-19T14:10:08Z"
+    },
+    {
+      "run_id": 39266499160,
+      "id": 118107328313,
+      "name": "manuscript",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner_id": 0,
+      "steps": [],
+      "html_url": "https://github.com/ChurilovMaksim/BGS/actions/runs/39266499160/job/118107328313",
+      "started_at": "2026-10-19T14:10:04Z",
+      "completed_at": "2026-10-19T14:10:07Z"
+    }
+  ],
+  "remote_interpretation": "Five startup jobs report failure with runner_id=0 and no steps; three dependent jobs are skipped. No remote code test or manuscript build executed. These are not passing or failing code-test receipts. Underlying startup reason was not available through the connector.",
+  "check_annotation_read_limit": "The connector rejected check-runs annotations URLs as unsupported endpoints; no missing error reason is invented.",
+  "full_goal_status": "OPEN",
+  "review": "Author self-review; no independent certificate or Lean compilation",
+  "scope": "Publication of the exact reviewed source tree, not a solution of BGS or full-workspace regression."
+}

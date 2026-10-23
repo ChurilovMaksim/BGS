@@ -1,0 +1,236 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-CHAT-INTEGRATION-INTEGRITY-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/chat_20261019/verify_integration.py",
+    "--output",
+    "evidence/executions/20261019/repository-integration/check_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Imported-file byte integrity and syntax, explicit manifest dispositions, authenticated base Git object catalogue, registry/DAG and topic consistency, scoped maintained links and manuscript source closure",
+    "coefficient_domain": "Exact bytes, SHA-256 and Git SHA-1 object identifiers; no numerical theorem test",
+    "conventions": "A partial local overlay with an authenticated pinned remote path catalogue is disclosed; known stale and invalid records remain negative evidence",
+    "inputs": [
+      "654-file source inventory",
+      "64 preserved run records",
+      "159-claim current registry",
+      "pinned main 5c1d1553d1ef59a3f62cc46e4f70b7b08640af32"
+    ],
+    "bounds": {
+      "source_packets": 11,
+      "imported_files": 654,
+      "recorded_runs": 64,
+      "base_remote_objects": 5189,
+      "canonical_claims": 159
+    },
+    "non_claims": [
+      "No independent mathematical certification or full BGS proof",
+      "No fresh replay of every historical computation",
+      "No full-checkout regression or Lean build",
+      "A completed program with invalid implementation is not successful mathematical evidence"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T13:54:38.340826+00:00",
+    "runtime_seconds": 0.622998,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 45.0,
+    "max_output_bytes": 16000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 40,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/chat_20261019/verify_integration.py",
+    "computations/verification/chat_20261019/integration_contract.json",
+    "computations/verification/scientific_registry_audit.py",
+    "computations/maintenance/audit_manuscript_references.py",
+    "record/chat_integration_20261019_inventory.json",
+    "record/claims.json",
+    "record/scientific_dependencies.json",
+    "record/mathematics_topics.json",
+    "literature/external_dependencies.json",
+    "evidence/executions/20261019/repository-integration/base_objects.json",
+    "evidence/executions/20261019/repository-integration/manuscript_build_accepted.json",
+    "manuscript/BGS_unified.tex",
+    "manuscript/unified_sections/phase_cluster_continuation_20261019.tex",
+    "mathematics/cauchy_positive_source_boundary_20261019.md",
+    "mathematics/phase_cayley_cauchy_transfer_20261019.md",
+    "mathematics/phase_ensemble_continuation_20261019.md",
+    "mathematics/phase_extremal_graphs_20261019.md",
+    "mathematics/phase_neutral_primitives_20261019.md",
+    "mathematics/phase_quartic_cluster_sum_20261019.md",
+    "mathematics/phase_second_defect_20261019.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/chat_20261019/verify_integration.py",
+      "sha256": "78878e985f6072b74c493716f8695e7cc07f6e25e5754964774adc536631e6bb",
+      "sha256_after": "78878e985f6072b74c493716f8695e7cc07f6e25e5754964774adc536631e6bb"
+    },
+    {
+      "path": "computations/verification/chat_20261019/integration_contract.json",
+      "sha256": "ed2f04c9524542e078cbbb0840db2f4f3b919c14a30582c769a443986e5e546a",
+      "sha256_after": "ed2f04c9524542e078cbbb0840db2f4f3b919c14a30582c769a443986e5e546a"
+    },
+    {
+      "path": "computations/verification/scientific_registry_audit.py",
+      "sha256": "27c9a394c2f9dfa1d2b10ac974110755cd97f842a92b63d6817f29f47b34a9e9",
+      "sha256_after": "27c9a394c2f9dfa1d2b10ac974110755cd97f842a92b63d6817f29f47b34a9e9"
+    },
+    {
+      "path": "computations/maintenance/audit_manuscript_references.py",
+      "sha256": "7c07bfb18df3fb698a7f8b00b7e2c64b41b848a67a8a8dc6420d46d4ede06aeb",
+      "sha256_after": "7c07bfb18df3fb698a7f8b00b7e2c64b41b848a67a8a8dc6420d46d4ede06aeb"
+    },
+    {
+      "path": "record/chat_integration_20261019_inventory.json",
+      "sha256": "ba57862ddf3c9392524c7d84b2afb48b81fc54449ddbfcfc1704a8dcd4994bff",
+      "sha256_after": "ba57862ddf3c9392524c7d84b2afb48b81fc54449ddbfcfc1704a8dcd4994bff"
+    },
+    {
+      "path": "record/claims.json",
+      "sha256": "51d71e170999e2ec6d0e1f5d35c7fa9a66bba798fdc12a9f23e7608843af49ea",
+      "sha256_after": "51d71e170999e2ec6d0e1f5d35c7fa9a66bba798fdc12a9f23e7608843af49ea"
+    },
+    {
+      "path": "record/scientific_dependencies.json",
+      "sha256": "32d48fdd923a4e6eec85466101f9283facbe74540c1114e5670243ccd1a0f8b6",
+      "sha256_after": "32d48fdd923a4e6eec85466101f9283facbe74540c1114e5670243ccd1a0f8b6"
+    },
+    {
+      "path": "record/mathematics_topics.json",
+      "sha256": "0003e3803afb64e8d46a661795012330a59e358112d1d2844a937c9ffc583f1a",
+      "sha256_after": "0003e3803afb64e8d46a661795012330a59e358112d1d2844a937c9ffc583f1a"
+    },
+    {
+      "path": "literature/external_dependencies.json",
+      "sha256": "1f1779eb4f952eb58e5a14a3d4e232d69a628f56f57997c2d86a8a1515519280",
+      "sha256_after": "1f1779eb4f952eb58e5a14a3d4e232d69a628f56f57997c2d86a8a1515519280"
+    },
+    {
+      "path": "evidence/executions/20261019/repository-integration/base_objects.json",
+      "sha256": "4148c1fe920f59160abea11f3b7dc5d80e3c234d1f5166b191ce167665edaba3",
+      "sha256_after": "4148c1fe920f59160abea11f3b7dc5d80e3c234d1f5166b191ce167665edaba3"
+    },
+    {
+      "path": "evidence/executions/20261019/repository-integration/manuscript_build_accepted.json",
+      "sha256": "2c9aaab2c845ab3ce14d83595338ab6df530c63412609bbadd25584895920218",
+      "sha256_after": "2c9aaab2c845ab3ce14d83595338ab6df530c63412609bbadd25584895920218"
+    },
+    {
+      "path": "manuscript/BGS_unified.tex",
+      "sha256": "6e98c419fd62721d336bf97a6cba80dee2a526330b000d056dbb256558a6d7ca",
+      "sha256_after": "6e98c419fd62721d336bf97a6cba80dee2a526330b000d056dbb256558a6d7ca"
+    },
+    {
+      "path": "manuscript/unified_sections/phase_cluster_continuation_20261019.tex",
+      "sha256": "33b8fe1f8b0e90db7a76a0007ed96b0eb6a087fc39ed7ae2655dd5d87bc0e7a9",
+      "sha256_after": "33b8fe1f8b0e90db7a76a0007ed96b0eb6a087fc39ed7ae2655dd5d87bc0e7a9"
+    },
+    {
+      "path": "mathematics/cauchy_positive_source_boundary_20261019.md",
+      "sha256": "22cb98795d25a34314f2fb76797c88cef28b0b058786065886067881ba687101",
+      "sha256_after": "22cb98795d25a34314f2fb76797c88cef28b0b058786065886067881ba687101"
+    },
+    {
+      "path": "mathematics/phase_cayley_cauchy_transfer_20261019.md",
+      "sha256": "c4105a3c91d06079891aaf3ebbd1fa6739df4d1ff7aed93e2d74b64a662546e9",
+      "sha256_after": "c4105a3c91d06079891aaf3ebbd1fa6739df4d1ff7aed93e2d74b64a662546e9"
+    },
+    {
+      "path": "mathematics/phase_ensemble_continuation_20261019.md",
+      "sha256": "cb5b99c0f0ee2f01811c35a97a45389e19fa0fb34243cf42634c18d4c0490177",
+      "sha256_after": "cb5b99c0f0ee2f01811c35a97a45389e19fa0fb34243cf42634c18d4c0490177"
+    },
+    {
+      "path": "mathematics/phase_extremal_graphs_20261019.md",
+      "sha256": "545b0394b30c1bd56d953ab02e06f5568c4b0b74abbfd6dc6d96b08ed16477c5",
+      "sha256_after": "545b0394b30c1bd56d953ab02e06f5568c4b0b74abbfd6dc6d96b08ed16477c5"
+    },
+    {
+      "path": "mathematics/phase_neutral_primitives_20261019.md",
+      "sha256": "ba4dff7634ccf2bfb0a58dec0ff409e23513a1b9aac99e19f92109eb05c0f867",
+      "sha256_after": "ba4dff7634ccf2bfb0a58dec0ff409e23513a1b9aac99e19f92109eb05c0f867"
+    },
+    {
+      "path": "mathematics/phase_quartic_cluster_sum_20261019.md",
+      "sha256": "426b9790f2a611267f98b00036dad14c483f5b578a6ea71a11042be36356fff1",
+      "sha256_after": "426b9790f2a611267f98b00036dad14c483f5b578a6ea71a11042be36356fff1"
+    },
+    {
+      "path": "mathematics/phase_second_defect_20261019.md",
+      "sha256": "6def709e5779093639e971f333648984666e6633fb21e9e23b5bc2706e767e4d",
+      "sha256_after": "6def709e5779093639e971f333648984666e6633fb21e9e23b5bc2706e767e4d"
+    }
+  ],
+  "output_directory": "evidence/executions/20261019/repository-integration/check_run",
+  "declared_results": [
+    "evidence/executions/20261019/repository-integration/check_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261019/repository-integration/check_run/stdout.txt",
+      "sha256": "6303e2186b26ba4d243dd9ed4150cdb429a4ebbfed4aceb96854378b33d5c77a",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261019/repository-integration/check_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261019/repository-integration/check_run/result.json",
+      "sha256": "4b20878594937e424c5975c36adfaac646dab0ec0e19b8da69704566f92683bf",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

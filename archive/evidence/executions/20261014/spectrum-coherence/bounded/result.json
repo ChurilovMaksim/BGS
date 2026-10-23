@@ -1,0 +1,322 @@
+{
+  "arithmetic": "integers, rational and Gaussian-rational exact algebra",
+  "discriminants": [
+    {
+      "discriminant": "1",
+      "matrix": "[[1]]"
+    },
+    {
+      "discriminant": "(z0 - z1)**2",
+      "matrix": "[[1, 1], [0, 1]]"
+    },
+    {
+      "discriminant": "4*z0*z1",
+      "matrix": "[[0, 1], [1, 0]]"
+    },
+    {
+      "discriminant": "-27*z0**2*z1**2*z2**2",
+      "matrix": "[[0, 1, 0], [0, 0, 1], [1, 0, 0]]"
+    }
+  ],
+  "endpoint_witness": "N=2: E nonzero, E^2=0, LC=0, LEC=I-J, return at time 3",
+  "gauss": [
+    {
+      "all_linear_offsets": 3,
+      "nonzero_quadratic_coefficients": 2,
+      "prime": 3
+    },
+    {
+      "all_linear_offsets": 5,
+      "nonzero_quadratic_coefficients": 4,
+      "prime": 5
+    },
+    {
+      "all_linear_offsets": 7,
+      "nonzero_quadratic_coefficients": 6,
+      "prime": 7
+    },
+    {
+      "all_linear_offsets": 11,
+      "nonzero_quadratic_coefficients": 10,
+      "prime": 11
+    },
+    {
+      "all_linear_offsets": 13,
+      "nonzero_quadratic_coefficients": 12,
+      "prime": 13
+    },
+    {
+      "all_linear_offsets": 17,
+      "nonzero_quadratic_coefficients": 16,
+      "prime": 17
+    },
+    {
+      "all_linear_offsets": 19,
+      "nonzero_quadratic_coefficients": 18,
+      "prime": 19
+    },
+    {
+      "all_linear_offsets": 23,
+      "nonzero_quadratic_coefficients": 22,
+      "prime": 23
+    },
+    {
+      "all_linear_offsets": 29,
+      "nonzero_quadratic_coefficients": 28,
+      "prime": 29
+    },
+    {
+      "all_linear_offsets": 31,
+      "nonzero_quadratic_coefficients": 30,
+      "prime": 31
+    }
+  ],
+  "memory": [
+    {
+      "dimension": 4,
+      "exact_return_recurrences": 8,
+      "plateau_and_dimension": [
+        {
+          "lower_bound": 12,
+          "observability_nullity": 12,
+          "r": 0
+        },
+        {
+          "lower_bound": 9,
+          "observability_nullity": 9,
+          "r": 1
+        },
+        {
+          "lower_bound": 6,
+          "observability_nullity": 9,
+          "r": 2
+        },
+        {
+          "lower_bound": 3,
+          "observability_nullity": 9,
+          "r": 3
+        }
+      ],
+      "resolvent_parameter": "1/5"
+    },
+    {
+      "dimension": 2,
+      "exact_return_recurrences": 8,
+      "plateau_and_dimension": [
+        {
+          "lower_bound": 2,
+          "observability_nullity": 2,
+          "r": 0
+        },
+        {
+          "lower_bound": 1,
+          "observability_nullity": 1,
+          "r": 1
+        }
+      ],
+      "resolvent_parameter": "1/5"
+    }
+  ],
+  "python": "3.12.14",
+  "scope": "finite core, finite Gauss/discriminant controls, exact memory identities and endpoint witness; not generic/asymptotic/BGS proof",
+  "source_sha256": {
+    "mathematics/coherence_memory_plateau_20261014.md": "5c311f6f09714abfe3da9e4e50befa33a5acda3449f19bdb30e331183bb561bc",
+    "mathematics/flat_spectrum_obstruction_20261014.md": "d78e0a8b27e77c3853caab03e05357a0f878e27ed7fe1d8c57d066008ee94c91"
+  },
+  "status": "pass",
+  "sympy": "1.14.0",
+  "tensor": [
+    {
+      "dimension": 4,
+      "k": 1,
+      "multiplicities": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "dimension": 16,
+      "k": 2,
+      "multiplicities": [
+        4,
+        2,
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "dimension": 64,
+      "k": 3,
+      "multiplicities": [
+        12,
+        9,
+        12,
+        10,
+        12,
+        9
+      ]
+    },
+    {
+      "dimension": 256,
+      "k": 4,
+      "multiplicities": [
+        46,
+        40,
+        45,
+        40,
+        45,
+        40
+      ]
+    },
+    {
+      "dimension": 1024,
+      "k": 5,
+      "multiplicities": [
+        176,
+        165,
+        176,
+        166,
+        176,
+        165
+      ]
+    },
+    {
+      "dimension": 4096,
+      "k": 6,
+      "multiplicities": [
+        694,
+        672,
+        693,
+        672,
+        693,
+        672
+      ]
+    },
+    {
+      "dimension": 16384,
+      "k": 7,
+      "multiplicities": [
+        2752,
+        2709,
+        2752,
+        2710,
+        2752,
+        2709
+      ]
+    },
+    {
+      "dimension": 65536,
+      "k": 8,
+      "multiplicities": [
+        10966,
+        10880,
+        10965,
+        10880,
+        10965,
+        10880
+      ]
+    },
+    {
+      "dimension": 262144,
+      "k": 9,
+      "multiplicities": [
+        43776,
+        43605,
+        43776,
+        43606,
+        43776,
+        43605
+      ]
+    },
+    {
+      "dimension": 1048576,
+      "k": 10,
+      "multiplicities": [
+        174934,
+        174592,
+        174933,
+        174592,
+        174933,
+        174592
+      ]
+    },
+    {
+      "dimension": 4194304,
+      "k": 11,
+      "multiplicities": [
+        699392,
+        698709,
+        699392,
+        698710,
+        699392,
+        698709
+      ]
+    },
+    {
+      "dimension": 16777216,
+      "k": 12,
+      "multiplicities": [
+        2796886,
+        2795520,
+        2796885,
+        2795520,
+        2796885,
+        2795520
+      ]
+    },
+    {
+      "dimension": 67108864,
+      "k": 13,
+      "multiplicities": [
+        11186176,
+        11183445,
+        11186176,
+        11183446,
+        11186176,
+        11183445
+      ]
+    },
+    {
+      "dimension": 268435456,
+      "k": 14,
+      "multiplicities": [
+        44741974,
+        44736512,
+        44741973,
+        44736512,
+        44741973,
+        44736512
+      ]
+    },
+    {
+      "dimension": 1073741824,
+      "k": 15,
+      "multiplicities": [
+        178962432,
+        178951509,
+        178962432,
+        178951510,
+        178962432,
+        178951509
+      ]
+    },
+    {
+      "dimension": 4294967296,
+      "k": 16,
+      "multiplicities": [
+        715838806,
+        715816960,
+        715838805,
+        715816960,
+        715838805,
+        715816960
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20",
+  "completed_utc": "2026-10-20T10:21:47.125171+00:00",
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "base_commit": "7ada29670c0cefe0a27f10b27ccfd594afca68da",
+  "checked_source_commit": "0db5021c18a35f5b46b9b816c803628831200170",
+  "checked_source_tree": "e3dd0256ade4d3a5c2a59afb2a7f6d32f4811195",
+  "checks": {
+    "selected_python": 198,
+    "maintenance_tests": 239,
+    "consistency_gates": 13,
+    "cpp_compiled_not_executed": 14,
+    "manuscript_pages": 311
+  },
+  "source_tree_unchanged_during_replay": true,
+  "non_claim": "Finite execution and scoped maintenance; no complete proof audit, new Lean/Boost/Wolfram build or BGS solution.",
+  "files_sha256": {
+    "README.md": "0ce1acd528d38d6e81286a176e8e9d8ebaa3324267a55426ab159bbf9dc38a67",
+    "archive_members.json": "a5270ca297203e595cd050afb50700c68d6c0900c4f3903298e2bfa03119768a",
+    "baseline_integrity.json": "2c1282c3782083dbe9a0b01bf6447ac9379bfd2267f1730ff309e0ab242bab52",
+    "checked_source_delta.json": "ad5ddb8729e2dd883eb600089c3d507b8ec053bad0c3843b4c8c46b6daef3a74",
+    "consistency_gates.json": "6e76b55455031ae82e889eab348756536f154e662dfd0ff23d1f4e91f74ad81b",
+    "cpp_compile.json": "15a1ce8df5798a96daadf84135d38d5004a97f5e009af7bad300fbfcd7a3d63b",
+    "execution_archive.tar.gz": "3e8bc23f8a8c25d8f0806a9b2111c1c1bd0f77b61f16434b7b81c4abce70cc9c",
+    "final_consistency.json": "131f1d840997cc3b4b9dfdee67d0c3f24d6b1eef35cc7b6dac0253008a6c9e75",
+    "final_gate_logs.json": "c21b9f5a75f888d1f7f244598a17ddedb96894663c573d185645d5d5f9435a7a",
+    "integrity.json": "01be851491cba0b9665fcfa5a92f5d1933af83f46b56368f0500f8b9a7ad14c6",
+    "interrupted_proposal_manifest.json": "3e9bbf7dc5652b25dae84d57583e2eaaceb2cd31c7f0686d5a51690dfaacf285",
+    "manuscript_build.json": "ae4b6bf4f9e13aef8f3efc72a6c571e1c044904895d80476ea3b9bb17f599cb2",
+    "manuscript_references.json": "c4dd77d7a6351608096747d23ddf89881f70d4e9e0d727f664429f5b855606f5",
+    "pdf_qa.json": "b467cde8b3bedf40717cc0e241b5e4356ec222debae1396381fc0c8686655049",
+    "pdfinfo.txt": "b47e0db3c39a11c29a00f378361ace8f8ee68f549215ba8f4d8b5c3f6913dcab",
+    "selected_checks.json": "144b167899131e8fb2bb607beb8c96cc16de6548655c42b66f915d2b51fce8b2",
+    "semantic_preservation.json": "043a75d335360d8193d6ad7d025b47ab357eaa4aadb0fa96a6589cfdce3c82a5",
+    "source_manifest.json": "7c04b874a966be6b51dfe2f1863053bcbb01c6217ab3f32fa55743cdb5348473",
+    "tests.log": "5cbdaa770c1c59d288ee8cf066f3642e026bc68a924de7e2dd0e30f9c97d5a4f",
+    "workspace.json.gz": "0b1e74820fb1811afdf38de2b333015ffbd554ddc1937b0931ba51623a8a6902",
+    "workspace_command.json": "056acf6de0d6c0aa09c3be1893af6e9083250e29ccc1f13b5c9719edd0f71f7d"
+  },
+  "workspace_storage": {
+    "path": "workspace.json.gz",
+    "encoding": "gzip",
+    "raw_bytes": 1053192,
+    "raw_sha256": "26029b1d10718012b271c6ac20075634d4f5bc7b79d8c9d2d6c0589e3b74f74d",
+    "compressed_bytes": 291636,
+    "compressed_sha256": "0b1e74820fb1811afdf38de2b333015ffbd554ddc1937b0931ba51623a8a6902",
+    "roundtrip_verified": true
+  }
+}
