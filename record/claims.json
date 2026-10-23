@@ -4783,17 +4783,19 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json",
-        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.proof"
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.proof",
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_certificate_replay.json"
       ],
       "verifiers": [
-        "computations/verification/resonance_nondegeneracy_certificate.py"
+        "computations/verification/check_resonance_certificate.py"
       ],
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/nondegeneracy_part2.tex",
         "manuscript/unified_sections/nondegeneracy_part3.tex"
       ],
-      "boundary": "Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables."
+      "boundary": "Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables.",
+      "residual": "Residual (recorded 2026-10-23): the independent C++ reconstruction and proof replay named in the closure condition and in §2.2–§2.3 of the source text were never deposited and have never been run in any deposited record. The deposited replay receipt (listed under evidence) records independent_cpp_coefficients NOT_RUN and independent_cpp_proof_replay null, with 4 of the 6 required negative controls exercised (the four Python ones; the two C++ instruction-stream controls have never been presented to any program), and the C++ constructor/replayer source is not in the repository. The closure condition remains open on this point."
     },
     {
       "id": "BGS-RET-003",
