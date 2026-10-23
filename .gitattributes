@@ -9,11 +9,11 @@ archive/evidence/executions/20261011/chat-research/original/** whitespace=-blank
 # Keep the successful transferred controls' exact input hashes. These narrow
 # exceptions permit their terminal blank line, not other whitespace errors.
 computations/cpp/circular_phase_ssyt_verifier.cpp whitespace=-blank-at-eof
-computations/verification/chat_20261011/audit_tools/run_experiment.py whitespace=-blank-at-eof
-computations/verification/chat_20261011/audit_tools/validate_manifest.py whitespace=-blank-at-eof
-computations/verification/chat_20261011/scripts/exact_checks.py whitespace=-blank-at-eof
-computations/verification/chat_20261011/scripts/pfaffian_controls.py whitespace=-blank-at-eof
-computations/verification/chat_20261011/scripts/run_controls.py whitespace=-blank-at-eof
+computations/verification/circular_phase_controls/audit_tools/run_experiment.py whitespace=-blank-at-eof
+computations/verification/circular_phase_controls/audit_tools/validate_manifest.py whitespace=-blank-at-eof
+computations/verification/circular_phase_controls/scripts/exact_checks.py whitespace=-blank-at-eof
+computations/verification/circular_phase_controls/scripts/pfaffian_controls.py whitespace=-blank-at-eof
+computations/verification/circular_phase_controls/scripts/run_controls.py whitespace=-blank-at-eof
 computations/wolfram/circular_phase_20261011.wl whitespace=-blank-at-eof
 formalization/drafts/JackArithmeticCore.lean whitespace=-blank-at-eof
 # Preserve these actual CI and TeX failure logs as execution evidence.

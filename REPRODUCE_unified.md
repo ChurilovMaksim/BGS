@@ -362,7 +362,7 @@ The canonical mathematical status is in archive/record/chat_integration_20261011
 The curated exact controls use the pinned Python environment and a C++ compiler:
 
 ```bash
-python3 computations/verification/chat_research_20261011.py
+python3 computations/verification/circular_phase_controls.py
 python3 computations/verification/bibliographic_metadata_audit.py --self-test
 python3 computations/verification/scientific_registry_audit.py
 python3 computations/maintenance/audit_manuscript_references.py
@@ -372,22 +372,22 @@ For a fresh version-2 bounded manifest, run from the repository root with a
 new output directory and all inputs listed in the integration contract:
 
 ```bash
-python3 computations/verification/chat_20261011/audit_tools/run_experiment.py \
-  --root . --contract computations/verification/chat_20261011/integration_contract.json \
-  --input computations/verification/chat_research_20261011.py \
+python3 computations/verification/circular_phase_controls/audit_tools/run_experiment.py \
+  --root . --contract computations/verification/circular_phase_controls/integration_contract.json \
+  --input computations/verification/circular_phase_controls.py \
   --input computations/cpp/circular_phase_ssyt_verifier.cpp \
-  --input computations/verification/chat_20261011/scripts/exact_checks.py \
-  --input computations/verification/chat_20261011/scripts/pfaffian_controls.py \
-  --input computations/verification/chat_20261011/scripts/cumulant_formula_controls.py \
-  --input computations/verification/chat_20261011/scripts/run_controls.py \
-  --input computations/verification/chat_20261011/audit_tools/run_experiment.py \
-  --input computations/verification/chat_20261011/audit_tools/validate_manifest.py \
-  --input computations/verification/chat_20261011/integration_contract.json \
+  --input computations/verification/circular_phase_controls/scripts/exact_checks.py \
+  --input computations/verification/circular_phase_controls/scripts/pfaffian_controls.py \
+  --input computations/verification/circular_phase_controls/scripts/cumulant_formula_controls.py \
+  --input computations/verification/circular_phase_controls/scripts/run_controls.py \
+  --input computations/verification/circular_phase_controls/audit_tools/run_experiment.py \
+  --input computations/verification/circular_phase_controls/audit_tools/validate_manifest.py \
+  --input computations/verification/circular_phase_controls/integration_contract.json \
   --output build/chat-research-reproduction \
   --result build/chat-research-reproduction/summary.json \
   --timeout 60 --max-output-bytes 1048576 --max-memory-bytes 1073741824 \
   --max-cpu-seconds 50 --max-cores 1 --max-threads 1 \
-  -- python3 computations/verification/chat_research_20261011.py \
+  -- python3 computations/verification/circular_phase_controls.py \
   --output build/chat-research-reproduction
 ```
 
@@ -417,11 +417,11 @@ For a fresh bounded receipt, use a new output directory and all four declared
 inputs:
 
 ```sh
-python3 computations/verification/chat_20261011/audit_tools/run_experiment.py \
+python3 computations/verification/circular_phase_controls/audit_tools/run_experiment.py \
   --root . --contract computations/verification/schur_censoring_contract.json \
   --input computations/verification/schur_censoring_and_clock.py \
-  --input computations/verification/chat_20261011/audit_tools/run_experiment.py \
-  --input computations/verification/chat_20261011/audit_tools/validate_manifest.py \
+  --input computations/verification/circular_phase_controls/audit_tools/run_experiment.py \
+  --input computations/verification/circular_phase_controls/audit_tools/validate_manifest.py \
   --input computations/verification/schur_censoring_contract.json \
   --output build/cavity-reproduction \
   --result build/cavity-reproduction/results.json \
@@ -429,7 +429,7 @@ python3 computations/verification/chat_20261011/audit_tools/run_experiment.py \
   --max-output-bytes 1048576 --max-cores 1 --max-threads 1 \
   -- python3 computations/verification/schur_censoring_and_clock.py \
   --output build/cavity-reproduction/results.json
-python3 computations/verification/chat_20261011/audit_tools/validate_manifest.py \
+python3 computations/verification/circular_phase_controls/audit_tools/validate_manifest.py \
   build/cavity-reproduction/manifest.json --root .
 ```
 

@@ -1,0 +1,62 @@
+{
+  "claim_id": "BGS-TRACE-067-070-071-bounded-controls-20261011",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "C++",
+      "version": "g++ 13.3.0"
+    }
+  ],
+  "execution_artifacts": [
+    "computations/verification/circular_phase_controls.py",
+    "computations/cpp/circular_phase_ssyt_verifier.cpp",
+    "computations/verification/circular_phase_controls/scripts/cumulant_formula_controls.py",
+    "computations/verification/circular_phase_controls/scripts/exact_checks.py",
+    "computations/verification/circular_phase_controls/scripts/pfaffian_controls.py",
+    "computations/verification/circular_phase_controls/scripts/run_controls.py",
+    "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+    "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
+    "computations/verification/circular_phase_controls/integration_contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Bounded exact Jack, circular variance, Pfaffian density, CSE cumulant, alternating-clock and Walsh-clock identities.",
+    "coefficient_domain": "Arbitrary Python integers and rational Fractions; independent C++ integer SSYT.",
+    "conventions": "N distinct CSE pairs, half trace; phase-compatible circular ensembles; changed-clock diagnostic separate from literal map.",
+    "inputs": [
+      "computations/verification/circular_phase_controls.py",
+      "computations/cpp/circular_phase_ssyt_verifier.cpp",
+      "computations/verification/circular_phase_controls/scripts/cumulant_formula_controls.py",
+      "computations/verification/circular_phase_controls/scripts/exact_checks.py",
+      "computations/verification/circular_phase_controls/scripts/pfaffian_controls.py",
+      "computations/verification/circular_phase_controls/scripts/run_controls.py",
+      "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+      "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
+      "computations/verification/circular_phase_controls/integration_contract.json"
+    ],
+    "bounds": {
+      "Jack_N": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "CSE_N": "2..32 for exact cumulants; sparse shift cases through 128",
+      "balanced_orders": "r<=3 in direct finite controls",
+      "alternating_clock_N": "even 2..40",
+      "Walsh_clock_N": "2^d, d=1..7 (N=2..128)"
+    },
+    "non_claims": [
+      "Finite controls do not certify analytic proofs or unbounded asymptotic claims.",
+      "No deterministic BGS limit is inferred.",
+      "Lean and Wolfram are separate executions."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "exhaustive exact finite enumeration",
+    "seed": null
+  }
+}

@@ -16,8 +16,8 @@
   ],
   "execution_artifacts": [
     "computations/verification/schur_censoring_and_clock.py",
-    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+    "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
     "computations/verification/schur_censoring_contract.json"
   ],
   "mathematics": {
@@ -26,8 +26,8 @@
     "conventions": "Unnormalized Schatten norms; incoming T and outgoing Q=STS*; full cyclic words.",
     "inputs": [
       "computations/verification/schur_censoring_and_clock.py",
-      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-      "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+      "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
       "computations/verification/schur_censoring_contract.json"
     ],
     "bounds": {

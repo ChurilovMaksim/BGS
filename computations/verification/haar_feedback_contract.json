@@ -13,8 +13,8 @@
   "execution_artifacts": [
     "computations/verification/haar_feedback_law.py",
     "computations/verification/haar_feedback_contract.json",
-    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-    "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+    "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+    "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py"
   ],
   "mathematics": {
     "assertion_tested": "Exact noncommuting Cayley graph and feedback derivative identities at five Gaussian-rational colligations; independent real Jacobians and scalar determinant factorization; twelve one-port Haar diagonal moments from circle residues followed by exact radial integration.",
@@ -23,8 +23,8 @@
     "inputs": [
       "computations/verification/haar_feedback_law.py",
       "computations/verification/haar_feedback_contract.json",
-      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-      "computations/verification/chat_20261011/audit_tools/validate_manifest.py"
+      "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+      "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py"
     ],
     "bounds": {
       "colligation_dimensions_u_q": [

@@ -16,8 +16,8 @@
   ],
   "execution_artifacts": [
     "computations/verification/clock_reference_measure.py",
-    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+    "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
     "computations/verification/clock_reference_contract.json"
   ],
   "mathematics": {
@@ -26,8 +26,8 @@
     "conventions": "H=uT/N; x=u/N; reference measure normalized to probability, including its atom at x.",
     "inputs": [
       "computations/verification/clock_reference_measure.py",
-      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
-      "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
+      "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
       "computations/verification/clock_reference_contract.json"
     ],
     "bounds": {
