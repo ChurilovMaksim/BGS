@@ -1,3 +1,0 @@
-coefficients = Table[Factorial[k] SeriesCoefficient[Log[Sum[z^j/Factorial[j]^2, {j, 0, 8}]], {z, 0, k}], {k, 1, 8}];
-bellValues = Table[Sum[If[k == 0, If[m == 0, 1, 0], BellY[m, k, coefficients]], {k, 0, m}], {m, 1, 8}];
-ExportString[<|"kernel_version" -> $Version, "block_coefficients" -> (ToString[#, InputForm]& /@ coefficients), "bell_values" -> (ToString[#, InputForm]& /@ bellValues), "all_passed" -> And @@ Table[bellValues[[m]] == 1/Factorial[m], {m, 1, 8}]|>, "RawJSON"]

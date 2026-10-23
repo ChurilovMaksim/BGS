@@ -1,9 +1,0 @@
-{
-  "compile": "g++ -std=c++20 -O2 exact_controls.cpp -o /tmp/bgs_flat_exact_controls",
-  "execute": "/tmp/bgs_flat_exact_controls",
-  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
-  "input_sha256": "c12423f3344428fd6a6252ca038cb0480ed12dfaaa447d8700935f2f544a950d",
-  "output_sha256": "89c1c50a2b2191fa45f097689200e520e62078602b82f72b92bc5f3cc1260eba",
-  "arithmetic": "Gaussian rational, 128-bit checked overflow",
-  "scope": "3 Julia witnesses, 16 trace-power witnesses, 2 noncommuting Mobius witnesses"
-}
