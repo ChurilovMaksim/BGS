@@ -613,10 +613,10 @@ identities and sphere moments are established mathematics.
 
 ## Review and reproduction
 
-The [coordinator proof audit and independent tensor-check scope](../record/reviews/gaussian_hessian_20261016.md)
+The [coordinator proof audit and independent tensor-check scope](../archive/record/reviews/gaussian_hessian_20261016.md)
 separate the written proof from finite fixtures. The initial factorial route,
 including the exact Ewens/one-circuit sampling identity, is preserved as a
-[superseded range checkpoint](../record/reviews/equal_edge_factorial_20261016.md).
+[superseded range checkpoint](../archive/record/reviews/equal_edge_factorial_20261016.md).
 [Executed checks](../evidence/executions/20261016/abel-gaussian/README.md) pin the
 word, polynomial, generic tensor and sampling programs. The [source audit](../literature/abel_gaussian_sources_20261016.md)
 credits the prior Gaussian benchmark and records the normalization trap.

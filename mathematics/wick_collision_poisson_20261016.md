@@ -322,7 +322,7 @@ or analytic Lean certification is asserted. The exact finite checks compare
 different representations and audit indices; they are not the proof of any
 asymptotic statement.
 
-[Internal review](../record/reviews/wick_poisson_20261016.md),
+[Internal review](../archive/record/reviews/wick_poisson_20261016.md),
 [execution provenance](../evidence/executions/20261016/wick-poisson/README.md),
 and [classical-source/priority boundary](../literature/wick_poisson_sources_20261016.md).
 

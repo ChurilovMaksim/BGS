@@ -420,7 +420,7 @@ from the positive CUE excess required by the maintained BGS target.
 
 ## 6. Review, sources and finite checks
 
-The [independent internal reconstruction](../record/reviews/abel_rigidity_20261016.md)
+The [independent internal reconstruction](../archive/record/reviews/abel_rigidity_20261016.md)
 checks the transform, labelled diagonal, N=1, count hypotheses and coupling.
 The elementary proof is self-contained; the CUE reference uses the standard
 kernel and trace second moment already used in `BGS-CUE-002`.
