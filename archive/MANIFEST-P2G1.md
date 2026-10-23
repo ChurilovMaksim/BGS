@@ -1,0 +1,69 @@
+# MANIFEST-P2G1 — фаза 2, пакет P2-G1: промоушн домов верификаторов `computations/verification/chat_20261015/` → `imported_finite_controls/` и `computations/verification/research_20261016/` → `abel_gaussian_wick/`
+
+**Источник:** живой main после пакета P2-REV (коммит `940af28`): claims.json blob `191d770b3046aa16c5826a0f3fec3bccf5304e9d` сверен с живым main коннектором при сборке настоящего пакета.
+**Состав: 34 файла, 2 каталога** — переименование на той же глубине (`computations/verification/<имя>/`), поэтому вся `parents[3]`-геометрия и все внутридомовые относительные пути сохраняются дословно. 32 файла перенесены байт-в-байт; 2 файла README домов отредактированы только в строках командных путей (см. ниже). Имена выбраны по содержанию: `imported_finite_controls` — импортированные конечные контроли октябрьской исследовательской записи (15 replay-задач; claims BGS-CUE-002, BGS-FM-032, BGS-FM-033, BGS-TRACE-084…091); `abel_gaussian_wick` — линии Abel/Gaussian (TRACE-092, TRACE-093) и Wick–Poisson (TRACE-094).
+
+## Переезжающие файлы
+
+| Старый путь | Новый путь | SHA-256 содержимого | Байты |
+|---|---|---|---|
+| `computations/verification/chat_20261015/README.md` | `computations/verification/imported_finite_controls/README.md` | `939ec1694345514d02a88f01aac5fc6a047dcd3528e69bfa5fe035eb108e732e` | 1971 |
+| `computations/verification/chat_20261015/algebra/BGS_quantum_coboundary_verify.py` | `computations/verification/imported_finite_controls/algebra/BGS_quantum_coboundary_verify.py` | `59a669a031afc173d9e3bdda15aea533c1ed0a82b226f1fbc607c97e9ec3d2f5` | 4308 |
+| `computations/verification/chat_20261015/algebra/BGS_resonant_mesoscopic_verify.py` | `computations/verification/imported_finite_controls/algebra/BGS_resonant_mesoscopic_verify.py` | `591bab741e3a06a9b3eb1c6f1634d97df91b0777e8f58d5e5afecb11a97cf60c` | 3390 |
+| `computations/verification/chat_20261015/algebra/verify_bgs_agent_20261014.py` | `computations/verification/imported_finite_controls/algebra/verify_bgs_agent_20261014.py` | `b5b219bc99782442a3ff2ff059d9e012453f768772df924281ee603100e72fb0` | 6899 |
+| `computations/verification/chat_20261015/algebra/verify_root_lift.py` | `computations/verification/imported_finite_controls/algebra/verify_root_lift.py` | `b945b3cef1d8d7457e583df2b4fa478d223226d54a6583b9c5bb07cd0ec80490` | 4223 |
+| `computations/verification/chat_20261015/audit/filter_checks.py` | `computations/verification/imported_finite_controls/audit/filter_checks.py` | `8fae8e841af6b5fb281d0777e54347b393f5129a18f5048a47bd2df1acfb3f8e` | 1968 |
+| `computations/verification/chat_20261015/audit/independent_audit.py` | `computations/verification/imported_finite_controls/audit/independent_audit.py` | `61e5869968b7843e6d060bb5fd426a5971b03317ffd56c5fed65a896faa93f33` | 7190 |
+| `computations/verification/chat_20261015/bounded_secular/verify_bounded_secular.py` | `computations/verification/imported_finite_controls/bounded_secular/verify_bounded_secular.py` | `b4637410451dfc2c6828818fb9894aaf5e7bee8b0d2846827aa01957a9ba565f` | 13942 |
+| `computations/verification/chat_20261015/closure/verify_closure.py` | `computations/verification/imported_finite_controls/closure/verify_closure.py` | `cf781904e544e9f9005f91c1319b2570f9f67e7ea3d59c8bebd93353ee5ad0d5` | 8628 |
+| `computations/verification/chat_20261015/collision/verify_collision_crossover.py` | `computations/verification/imported_finite_controls/collision/verify_collision_crossover.py` | `f37848bcc9e41753493c3088d4b09c502ebdd93ac7944f367d263156d8904716` | 11613 |
+| `computations/verification/chat_20261015/cue_covariance/cue_covariance_check.py` | `computations/verification/imported_finite_controls/cue_covariance/cue_covariance_check.py` | `228054c175b7cb4bf658008e98df4e11e1a5d4de3c517003654a722e31f4e2bc` | 1937 |
+| `computations/verification/chat_20261015/cue_covariance/pair_probe.py` | `computations/verification/imported_finite_controls/cue_covariance/pair_probe.py` | `679161df78155c074917b87ec9227a17808f5f9f4f2f35ce65a6b3a9d4965e4e` | 9435 |
+| `computations/verification/chat_20261015/deaveraging/verify_deaveraging.py` | `computations/verification/imported_finite_controls/deaveraging/verify_deaveraging.py` | `d2c4185bf458467383a3f7f19271ac9796cd6617d3bc11f058cfac8ceea06b2d` | 14652 |
+| `computations/verification/chat_20261015/edge_occupation/verify_edge_occupation.py` | `computations/verification/imported_finite_controls/edge_occupation/verify_edge_occupation.py` | `bfaaf8e103c11bdebf92fc7a2dfa13158ca680f87f32eb588a627703380e27e1` | 10626 |
+| `computations/verification/chat_20261015/hardy/verify_hardy.py` | `computations/verification/imported_finite_controls/hardy/verify_hardy.py` | `26cea6394e3fa053966a51e62335ffac8af9d7927d4179b254d6d359a0431737` | 11941 |
+| `computations/verification/chat_20261015/run_checks.py` | `computations/verification/imported_finite_controls/run_checks.py` | `612483fde41dfae6fd20a902b0c9bef3d0728617c58c09a560b9b808954d2fd2` | 3883 |
+| `computations/verification/chat_20261015/scaled_overlap/verify_scaled_overlap.py` | `computations/verification/imported_finite_controls/scaled_overlap/verify_scaled_overlap.py` | `9eda3f11f2cf657f0582192e066880d1fdbcb7c9b857647ae2bec00a21649463` | 11517 |
+| `computations/verification/chat_20261015/tasks.json` | `computations/verification/imported_finite_controls/tasks.json` | `1bca166b434f8402ce93d05dc7d86628f1f565e3a959cc204f4850ead0e21dd8` | 1976 |
+| `computations/verification/chat_20261015/verify_final_attempt.py` | `computations/verification/imported_finite_controls/verify_final_attempt.py` | `5e7f333dc0bbef5cb428c82f4ae8bdb51dd5c88e7618b08909a86d1ddc8ac9ca` | 3388 |
+| `computations/verification/chat_20261015/verify_integration.py` | `computations/verification/imported_finite_controls/verify_integration.py` | `bdd4af024a122fedeadb77506cbc72ca3d5f3581463fba9198ca44350bb72138` | 6058 |
+| `computations/verification/research_20261016/README.md` | `computations/verification/abel_gaussian_wick/README.md` | `3706874df473ec1b541ec31970aaf781506f967d21eb2bdeec3c7e9b87fc95da` | 4633 |
+| `computations/verification/research_20261016/abel_identity.wl` | `computations/verification/abel_gaussian_wick/abel_identity.wl` | `a08794efb864436e076b2ef59fcdd43a6eaa986e14732f838ecb68e9f0ddcc1b` | 834 |
+| `computations/verification/research_20261016/derive_collision_mean.py` | `computations/verification/abel_gaussian_wick/derive_collision_mean.py` | `c9e9e8c042c1cf7d936e728c0fe765bd419e5c09949cf7b55f28f32159aa99c2` | 1600 |
+| `computations/verification/research_20261016/run_checks.py` | `computations/verification/abel_gaussian_wick/run_checks.py` | `568e4c75c280c8c56cf054edf7938b54570bc563b418f40d34aadb1d55918a2e` | 4030 |
+| `computations/verification/research_20261016/sample_conditioned_ewens.cpp` | `computations/verification/abel_gaussian_wick/sample_conditioned_ewens.cpp` | `bb0fe4f8fc03ac9be2665e271c03de5a5f0d3d2de116469dd02d7988409aa07a` | 2593 |
+| `computations/verification/research_20261016/verify_abel.py` | `computations/verification/abel_gaussian_wick/verify_abel.py` | `181d7e2a96a02915f1f710565b948907caaa603261e398b85d65f666be9a61e6` | 4744 |
+| `computations/verification/research_20261016/verify_gaussian_factorial.py` | `computations/verification/abel_gaussian_wick/verify_gaussian_factorial.py` | `7b81608579c0a44df428b3c463fbdaa027ea19f145ad205b49ee64571289b4a6` | 7378 |
+| `computations/verification/research_20261016/verify_gaussian_hessian.py` | `computations/verification/abel_gaussian_wick/verify_gaussian_hessian.py` | `87bd76d1bc2932b158b7e1c81bb38f328b1be4edd93cbe52df9f5389310cd64e` | 11932 |
+| `computations/verification/research_20261016/verify_generic_tensors.py` | `computations/verification/abel_gaussian_wick/verify_generic_tensors.py` | `35df4ab0035d0bd640c27fd6b07e7be9343e83d6962d7e7c254941a73ea03099` | 4844 |
+| `computations/verification/research_20261016/verify_integration.py` | `computations/verification/abel_gaussian_wick/verify_integration.py` | `d14c063904b800977402e7548d3f12548253501f61814bf8e3bc6c6f62207134` | 6110 |
+| `computations/verification/research_20261016/verify_rigidity.py` | `computations/verification/abel_gaussian_wick/verify_rigidity.py` | `00fb4a90fffba791c3c5dfe0a86f7af8130a16d1aafd0acf39c2b46d96efc87c` | 4484 |
+| `computations/verification/research_20261016/verify_wick_integration.py` | `computations/verification/abel_gaussian_wick/verify_wick_integration.py` | `68344116005c25a01bfba53e07ddd841584467edafbd82dcd453e9f254433489` | 5689 |
+| `computations/verification/research_20261016/verify_wick_poisson.py` | `computations/verification/abel_gaussian_wick/verify_wick_poisson.py` | `87f2727f3478b15b90e9d033d268f43c29723e3ebd5e10abc26262e6098c37ff` | 13563 |
+| `computations/verification/research_20261016/wick_poisson_contract.json` | `computations/verification/abel_gaussian_wick/wick_poisson_contract.json` | `02ee1198bf3e48e6865b677dd0bee95e4a2ccb3a81f8f56ec1effff9d55881b6` | 1693 |
+
+## Отредактированные при переезде файлы (не байт-копии)
+
+- `computations/verification/imported_finite_controls/README.md` — 2 строк(и) командных путей: префикс старого дома заменён на новый; остальной текст байт-идентичен. git blob: `04a88ecda8e694574ffc0270600c14327512d847` → `1e3807856d69171d829c099d1f826ed8ac8ac8e7`.
+- `computations/verification/abel_gaussian_wick/README.md` — 4 строк(и) командных путей: префикс старого дома заменён на новый; остальной текст байт-идентичен. git blob: `62d08ef69320996208f2093679638f1fbecee918` → `674dbbe602eab7b8fba5a63d12f5092fdcc4b00b`.
+
+## Миграции тем же коммитом
+
+- `record/claims.json` — **17 путевых значений**, все в поле `verifiers[]` у 14 claims: 11 путей / 11 claims в `imported_finite_controls` (BGS-CUE-002, BGS-FM-032, BGS-FM-033, BGS-TRACE-084…091) и 6 путей / 3 claims в `abel_gaussian_wick` (BGS-TRACE-092 — 2, BGS-TRACE-093 — 3, BGS-TRACE-094 — 1). Рекурсивный структурный дифф проверен: меняются только эти 17 листьев; статусы и остальные поля не меняются.
+- **Эпохальная регистрация не требуется (измерено, не предположено).** Ни один из 14 claims не входит в запечатанный снимок wave2 (96 строк): все 14 — follow-on эпохи `after_wave3` в `record/claim_integration_epochs.json`. Гейт follow-on пинит только `state` и `source`; поле `verifiers[]` эпохальным механизмом не пинится. Строк `historical_claim_amendments` не добавляется, множество `approved` не расширяется (остаётся 67), результат `wave2 run()` байт-идентичен базе (29 unchanged / 67 amended).
+- Живая проза — **4 ссылки/упоминания**: `mathematics/abel_clock_rigidity_20261016.md` (ссылка на `verify_abel.py`), `mathematics/gaussian_equal_edge_20261016.md` (ссылка на `sample_conditioned_ewens.cpp`), `literature/abel_gaussian_sources_20261016.md` (ссылка на `abel_identity.wl`), `mathematics/deleted_clock_hardy_boundary_20261015.md` (прозовое упоминание пути `verify_final_attempt.py` в коде).
+
+## Решение по константе пути записи wick-верификатора (явное, по дизайну §4)
+
+`abel_gaussian_wick/verify_wick_integration.py` (байт-копия, не редактируется) пишет `manuscript_checks.json` по константе `PACKET = ROOT/'evidence/executions/20261016/wick-poisson'` (корень-относительный путь через `parents[3]`). **Решение: путь записи сохраняется без изменений.** Обоснование: (1) константа не содержит имени дома и переименованием механически не затрагивается; (2) пакет evidence — депонированная запись верификации эпохи 20261016 с диспозицией HOLD, и `manuscript_checks.json` является его поддерживаемым выходом; перенос выхода в дом верификатора молча изменил бы семантику верификатора и оставил бы депонированный файл устаревшим на вид актуальным; (3) на живом дереве обе интеграционные проверки research-дома уже останавливаются на замороженных пинах манифестов пакетов (первый падающий пин — корневой `README.md`, вне домов), и их оперативный маршрут — era-деревья аттестации эпох, где старые имена восстанавливаются из коммитов эпохи и константа разрешается идентично.
+
+## Сознательно НЕ мигрированные носители (разрешаются настоящим манифестом)
+
+- **Замороженные манифесты пакетов эпохи 20261016 (HOLD, дизайн §11.3):** `evidence/executions/20261016/abel-gaussian/{source_manifest.json, cpp_metadata.json}` и `evidence/executions/20261016/wick-poisson/{source_manifest.json, exact/manifest.json, remote_publish.json, README.md}` пинят и называют файлы домов по старым путям (abel: 11 пинов в дом, из них сегодня OK 9 / STALE 2; wick: 6 пинов, сегодня OK 3 / STALE 3, плюс 2 входных артефакта exact-манифеста, сегодня OK 2). Манифесты не перепинниваются и не редактируются; маршрут верификации пакетов — era-базисная аттестация (`record/audits/era_baseline_attestation_20261023/`).
+- **`wick_poisson_contract.json` внутри нового дома** перенесён байт-в-байт: его `execution_artifacts` называют два скрипта по старому пути как провенанс ревизии контракта; на живом дереве контракт никем программно не разрешается (потребители `execution_artifacts` обслуживают контракты `chat_20261011`), а сам файл запинен wick-манифестом (сегодня OK) — правка разрушила бы пин. Старые пути внутри разрешаются настоящим манифестом.
+- **Константы архивных путей внутри верификаторов** (`archive/history/2026/chat_20261015` в трёх интеграционных файлах) именуют архив фазы 1, а не дом, и переименованием не затрагиваются; файлы по этой причине остаются байт-копиями.
+- **Аттестация эпох и архивные снимки** (`record/audits/era_baseline_attestation_20261023/*`, `archive/evidence/**`, `archive/record/chat_claim_inventory_20261016.json`, `archive/record/chat_integration_20261016.md`) содержат старые пути как датированный провенанс; не редактируются.
+
+## Удаления (следующим шагом, браузером)
+
+Исходные каталоги целиком: `computations/verification/chat_20261015/` (20 файлов) и `computations/verification/research_20261016/` (14 файлов) — по одному коммиту на каталог после пуша копий и правок, с поимённой 404-сверкой representative путей.

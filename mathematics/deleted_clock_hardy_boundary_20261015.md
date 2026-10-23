@@ -29,7 +29,7 @@ Fourier band inside (0,1), the complete signed pair defect tends to
 -integral t w(t) dt, rather than zero.
 
 The independent geometric-series check is
-`computations/verification/chat_20261015/verify_final_attempt.py`: 116 exact
+`computations/verification/imported_finite_controls/verify_final_attempt.py`: 116 exact
 rational cases plus explicitly labelled high-precision asymptotic checks.
 The source is the imported record, Sections 82-84. Its finite output proves
 no assertion about U_N=exp(i*10^-80*N*A_N)M_N.

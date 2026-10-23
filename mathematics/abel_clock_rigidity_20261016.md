@@ -426,7 +426,7 @@ The elementary proof is self-contained; the CUE reference uses the standard
 kernel and trace second moment already used in `BGS-CUE-002`.
 [Source and priority audit](../literature/abel_gaussian_sources_20261016.md).
 
-The [finite verifier](../computations/verification/research_20261016/verify_abel.py)
+The [finite verifier](../computations/verification/abel_gaussian_wick/verify_abel.py)
 checks the Fourier convolution and two independent finite energy evaluations
 on clocks, repeated phases, perturbed clocks and rational spectra. Actual
 commands, precision, source hashes and output are in the

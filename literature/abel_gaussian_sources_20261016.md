@@ -34,7 +34,7 @@ it is not evidence of a Fields- or Poincare-level contribution.
 
 Wolfram evaluated the three displayed symbolic residuals as zero and returned
 the small-s expansion of the CUE low-mode integral. The exact executed
-[Wolfram source](../computations/verification/research_20261016/abel_identity.wl)
+[Wolfram source](../computations/verification/abel_gaussian_wick/abel_identity.wl)
 and [returned output](../evidence/executions/20261016/abel-gaussian/wolfram_result.json)
 are supplementary checks. The generic theorems are established by the written
 arguments, not by the computer-algebra output or a source citation.

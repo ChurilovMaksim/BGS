@@ -444,7 +444,7 @@ Endpoint-sharing collections of distinct repeated edges, including
 oppositely directed pairs, must be controlled in any factorial-moment
 argument; they cannot be discarded from their iid-word probability alone.
 
-The exact C++ sampler in [the C++ sampler](../computations/verification/research_20261016/sample_conditioned_ewens.cpp) suggests the
+The exact C++ sampler in [the C++ sampler](../computations/verification/abel_gaussian_wick/sample_conditioned_ewens.cpp) suggests the
 Poisson mean 2alpha^2 and ratio exp(-alpha^2), but its outputs are only
 finite exploratory observations and provide no proof of that claim.
 

@@ -3620,7 +3620,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/algebra/BGS_quantum_coboundary_verify.py"
+        "computations/verification/imported_finite_controls/algebra/BGS_quantum_coboundary_verify.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3642,7 +3642,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/algebra/BGS_resonant_mesoscopic_verify.py"
+        "computations/verification/imported_finite_controls/algebra/BGS_resonant_mesoscopic_verify.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3667,7 +3667,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/algebra/verify_root_lift.py"
+        "computations/verification/imported_finite_controls/algebra/verify_root_lift.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3691,7 +3691,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/closure/verify_closure.py"
+        "computations/verification/imported_finite_controls/closure/verify_closure.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3714,7 +3714,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/scaled_overlap/verify_scaled_overlap.py"
+        "computations/verification/imported_finite_controls/scaled_overlap/verify_scaled_overlap.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3736,7 +3736,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/cue_covariance/cue_covariance_check.py"
+        "computations/verification/imported_finite_controls/cue_covariance/cue_covariance_check.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3760,7 +3760,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/deaveraging/verify_deaveraging.py"
+        "computations/verification/imported_finite_controls/deaveraging/verify_deaveraging.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3782,7 +3782,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/edge_occupation/verify_edge_occupation.py"
+        "computations/verification/imported_finite_controls/edge_occupation/verify_edge_occupation.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3806,7 +3806,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/collision/verify_collision_crossover.py"
+        "computations/verification/imported_finite_controls/collision/verify_collision_crossover.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3826,7 +3826,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/bounded_secular/verify_bounded_secular.py"
+        "computations/verification/imported_finite_controls/bounded_secular/verify_bounded_secular.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3849,7 +3849,7 @@
         "archive/evidence/executions/20261016/chat-integration/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/chat_20261015/hardy/verify_hardy.py"
+        "computations/verification/imported_finite_controls/hardy/verify_hardy.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3869,8 +3869,8 @@
         "evidence/executions/20261016/abel-gaussian/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/research_20261016/verify_abel.py",
-        "computations/verification/research_20261016/verify_rigidity.py"
+        "computations/verification/abel_gaussian_wick/verify_abel.py",
+        "computations/verification/abel_gaussian_wick/verify_rigidity.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3896,9 +3896,9 @@
         "evidence/executions/20261016/abel-gaussian/receipt.json"
       ],
       "verifiers": [
-        "computations/verification/research_20261016/verify_gaussian_factorial.py",
-        "computations/verification/research_20261016/verify_gaussian_hessian.py",
-        "computations/verification/research_20261016/verify_generic_tensors.py"
+        "computations/verification/abel_gaussian_wick/verify_gaussian_factorial.py",
+        "computations/verification/abel_gaussian_wick/verify_gaussian_hessian.py",
+        "computations/verification/abel_gaussian_wick/verify_generic_tensors.py"
       ],
       "formalization": [],
       "manuscript": [
@@ -3925,7 +3925,7 @@
         "evidence/executions/20261016/wick-poisson/exact/manifest.json"
       ],
       "verifiers": [
-        "computations/verification/research_20261016/verify_wick_poisson.py"
+        "computations/verification/abel_gaussian_wick/verify_wick_poisson.py"
       ],
       "formalization": [],
       "manuscript": [
