@@ -1,0 +1,380 @@
+{
+  "status": "passed",
+  "source_hash_comparisons": 74,
+  "checks": [
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/candidate_v1.md",
+      "sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "sha256": "b683574f8fa9bf88c2fab2f66d3a95d228af6ea49b89fa7920f8a8220ef25a7c"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/checks.py",
+      "sha256": "d8e6aaa9bf3f4bd47af06a65dbafb1fd4f5718c8ac2d12613fdddca790db7ee1"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/run_checks.py",
+      "sha256": "d768088a8991b6ec00df091ea6701173aba5569ebd380585116940059698f524"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/checks.log",
+      "sha256": "e0430cbfb95b60b9dd062d5bb8f357ea8cf8e3d9e93d4e4e58c747f2750ba683"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/results.json",
+      "sha256": "d4253718c3adc00b268dbc319d6d9ab96c6310c4a8f6dc32418fa070cd47a16a"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/independent_controls.py",
+      "sha256": "77ca299f86ff5439cc6671da76e96a94a292ae90580ec73f982a818a6ec4f5b7"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/run_review.py",
+      "sha256": "c97701d6ab90e15fc2755a28aa5d350cc6758e9c8718b0ce4a47eda381e70d34"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/candidate_v1.md",
+      "sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "sha256": "926c50fa286ab936667b52aacdc36512d4f689d64d9c53214d0f10d57e7e752c"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified_run.log",
+      "sha256": "95ae95e218893d74e0e2394e93627f7137018f79283a5f8c28ae59678b4ba5c5"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/full_end.json",
+      "sha256": "d675ae739d27dcf9e9a9f0c902bca3de90b5fe7f3686e7a6000000922bc5347d"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/top_gram.json",
+      "sha256": "2d1d031f05542f3be300709069436dc3d83b5188e3f8c8c5253bb10b2450b382"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/torus.json",
+      "sha256": "e2d6cd1c15dcea2f112a198e400e53c86917b8bf99c35648d73f35b339233d97"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/network.json",
+      "sha256": "83b1e6e20ef737a118306181a9d320f2c84ef52a34c2c3540e7b36c105c4469e"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/offcharge_bound.json",
+      "sha256": "ef86a73557aa268d21eb44bcbf22a9f1011e93858a01736023e91340fa1abf18"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/all_results.json",
+      "sha256": "ad855640cff7af4c32444f6e8a65a0d847c3f782b49db4160e14cd6a6475cff3"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/check_synthesis.py",
+      "sha256": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_input_manifest.json",
+      "sha256": "33c5fe0db5806c04b018db4ac263929fae805564a423a3487dd6ebd05850c9ad"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/synthesis/review.md",
+      "sha256": "eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/synthesis/low_switch_proof.md",
+      "sha256": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_results.json",
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_checks.log",
+      "sha256": "e194c23265568ee82167759cd57b1963ba7938e335355c36711036e78d577372"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/review.md",
+      "sha256": "c1436234c24fa95f9a7f4c66e2866b64a276a4973224eb11b1be59937bcde725"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_addendum.md",
+      "sha256": "69ac748eb3d6dcfdccfa144845d75384533e0024e3b3c709518f1fb317ea4f7a"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "sha256": "926c50fa286ab936667b52aacdc36512d4f689d64d9c53214d0f10d57e7e752c"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/final_source_check.json",
+      "sha256": "b949e6a03df297d3e30c796989a45f2508791e41c70d63b4606e54a83846174f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/execution_manifest.json",
+      "sha256": "38dc8e412f53b4ce025a28e1aa2f7fefb4bff2d59d8ecadcf7fca323b56fcfa6"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_input_manifest.json",
+      "sha256": "33c5fe0db5806c04b018db4ac263929fae805564a423a3487dd6ebd05850c9ad"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_execution_manifest.json",
+      "sha256": "cee5e29f69a5dc4045f68ae2ce8d428e0079f14931c35bbad30194ab36a95bf0"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/independent_controls.py",
+      "sha256": "77ca299f86ff5439cc6671da76e96a94a292ae90580ec73f982a818a6ec4f5b7"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/run_review.py",
+      "sha256": "c97701d6ab90e15fc2755a28aa5d350cc6758e9c8718b0ce4a47eda381e70d34"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/check_synthesis.py",
+      "sha256": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_results.json",
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/synthesis_checks.log",
+      "sha256": "e194c23265568ee82167759cd57b1963ba7938e335355c36711036e78d577372"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/oracle_comparison.json",
+      "sha256": "87c08117b7158501411d27d7fe52eb91c74a1375d4bbec8d8c0c51fefbe5bdc2"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified_run.log",
+      "sha256": "95ae95e218893d74e0e2394e93627f7137018f79283a5f8c28ae59678b4ba5c5"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/all_results.json",
+      "sha256": "ad855640cff7af4c32444f6e8a65a0d847c3f782b49db4160e14cd6a6475cff3"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/full_end.json",
+      "sha256": "d675ae739d27dcf9e9a9f0c902bca3de90b5fe7f3686e7a6000000922bc5347d"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/network.json",
+      "sha256": "83b1e6e20ef737a118306181a9d320f2c84ef52a34c2c3540e7b36c105c4469e"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/offcharge_bound.json",
+      "sha256": "ef86a73557aa268d21eb44bcbf22a9f1011e93858a01736023e91340fa1abf18"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/top_gram.json",
+      "sha256": "2d1d031f05542f3be300709069436dc3d83b5188e3f8c8c5253bb10b2450b382"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/review_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/results/verified/torus.json",
+      "sha256": "e2d6cd1c15dcea2f112a198e400e53c86917b8bf99c35648d73f35b339233d97"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/00_AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/01_SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/02_repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/03_RESEARCH.md",
+      "sha256": "c7590bcbdd37f2feba7f57c741b8842efe1a9778a1a6a8e3803b5d7164ea5f87"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/04_claim_ledger.md",
+      "sha256": "2d679f811abc85794b5f57b1ced4654389e0c7e1e78ff62ec2ecc447d5c97e05"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/05_claims.json",
+      "sha256": "2906c039df14308432b9f90ba12039e45fab4f16e1c9e2d1e76b5d9f6718b8b7"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/06_results.md",
+      "sha256": "f8fffa48fe4ab85251f13e6ae3752c37016432c84d37aafd7e0ee56488b01d3f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/07_open_questions.md",
+      "sha256": "ac98fa4ebea4b38c1611f6704cd9a543c4f8159b11abc37cf2fe9bcf24b025ab"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/08_position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/09_ordered_diagonal_cyclic_trace.md",
+      "sha256": "54d6e6873b620a34523b96767e8229721800486a687016a48af08c06f2e16faf"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/10_candidate_v1.md",
+      "sha256": "2ce67b8d33b574e5b245affd49f6592a9636b6075e4c288af8e718cc27c9404f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/11_growth_addendum.md",
+      "sha256": "966c31db09a3f50134d52ab63bba37b0d6d4e57a7fef521de5ab6d0deb111ae5"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/author/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/author/inputs/12_review.md",
+      "sha256": "5b5fefbc8b92a0e389d71892d6601de404b8facfafb8798999b136afae565964"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/00_AGENTS.md",
+      "sha256": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/01_SOURCE_OF_TRUTH.md",
+      "sha256": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/02_repository_conventions.md",
+      "sha256": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/03_RESEARCH.md",
+      "sha256": "c7590bcbdd37f2feba7f57c741b8842efe1a9778a1a6a8e3803b5d7164ea5f87"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/04_claim_ledger.md",
+      "sha256": "2d679f811abc85794b5f57b1ced4654389e0c7e1e78ff62ec2ecc447d5c97e05"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/05_claims.json",
+      "sha256": "2906c039df14308432b9f90ba12039e45fab4f16e1c9e2d1e76b5d9f6718b8b7"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/06_results.md",
+      "sha256": "f8fffa48fe4ab85251f13e6ae3752c37016432c84d37aafd7e0ee56488b01d3f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/07_open_questions.md",
+      "sha256": "ac98fa4ebea4b38c1611f6704cd9a543c4f8159b11abc37cf2fe9bcf24b025ab"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/08_position_chain_mixing.md",
+      "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/09_ordered_diagonal_cyclic_trace.md",
+      "sha256": "54d6e6873b620a34523b96767e8229721800486a687016a48af08c06f2e16faf"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/10_candidate_v1.md",
+      "sha256": "2ce67b8d33b574e5b245affd49f6592a9636b6075e4c288af8e718cc27c9404f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/11_growth_addendum.md",
+      "sha256": "966c31db09a3f50134d52ab63bba37b0d6d4e57a7fef521de5ab6d0deb111ae5"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/12_review.md",
+      "sha256": "5b5fefbc8b92a0e389d71892d6601de404b8facfafb8798999b136afae565964"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/candidate_v1.md",
+      "sha256": "8feb1a9a402c679299fe060c3903f6d783a6e9939ad175bbf6a79dc0f9dde041"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/collective_occupation_hierarchy.md",
+      "sha256": "e1a7590ac0f572e3effd68ce0d783ced38f33e2c0c8bbc5939a2d40914fc373f"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/author_input_manifest.json",
+      "sha256": "b683574f8fa9bf88c2fab2f66d3a95d228af6ea49b89fa7920f8a8220ef25a7c"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/synthesis/review.md",
+      "sha256": "eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81"
+    },
+    {
+      "manifest": "evidence/fractional_hamming_20261007/raw/review/synthesis_input_manifest.json",
+      "path": "evidence/fractional_hamming_20261007/raw/review/inputs/synthesis/low_switch_proof.md",
+      "sha256": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95"
+    }
+  ],
+  "notes": [
+    "Original failed and initial runs remain historical; no completion status was changed.",
+    "No boundary evidence, pending candidate or external source was added."
+  ]
+}

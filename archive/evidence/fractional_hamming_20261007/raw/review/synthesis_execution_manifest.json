@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-DISJOINT-HAMMING-LOW-SWITCH-SYNTHESIS",
+  "repository": {
+    "commit": "157277eeca8d8318976ea26bdbb1d3b1aa0d438a",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "check_synthesis.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "Literal checksum, Hamming support, cycle invariance and disjoint off-charge mask identities.",
+    "coefficient_domain": "exact integers",
+    "conventions": "c=y-x modulo N; rooted cyclic words; all ordered pairs.",
+    "inputs": [
+      "check_synthesis.py",
+      "synthesis_input_manifest.json",
+      "inputs/synthesis/review.md",
+      "inputs/synthesis/low_switch_proof.md"
+    ],
+    "bounds": {
+      "N": [
+        2,
+        3
+      ],
+      "m": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "r_off": "0 through m",
+      "switch_radius": "0 through m",
+      "radius_pairs": 108
+    },
+    "non_claims": [
+      "No analytic or asymptotic verification.",
+      "No projector inclusion inference for signed traces."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-07T00:52:47.156351+00:00",
+    "runtime_seconds": 0.24208409600396408,
+    "exit_status": 0,
+    "resource_limits": {
+      "memory_bytes": 268435456,
+      "cpu_seconds": 20,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "wall_timeout_seconds": 30,
+    "status": "completed"
+  },
+  "outputs": [
+    {
+      "path": "synthesis_results.json",
+      "sha256": "912a1394488000a295f92c0f51e8f9af5040e5a8ce0570ead064e672d5f2e591",
+      "kind": "result"
+    },
+    {
+      "path": "synthesis_checks.log",
+      "sha256": "e194c23265568ee82167759cd57b1963ba7938e335355c36711036e78d577372",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "108 exact mask cases passed"
+  ],
+  "result": "implementation and finite assertion verified in the stated range",
+  "residual_risks": [
+    "Finite mask checks do not certify inherited analytic inputs."
+  ],
+  "input_artifacts": [
+    {
+      "path": "check_synthesis.py",
+      "sha256": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275",
+      "sha256_after": "0ad14e46418deac948a1e8fc6ca779cff16bc4f1d9f73191200dbe86a8663275"
+    },
+    {
+      "path": "synthesis_input_manifest.json",
+      "sha256": "33c5fe0db5806c04b018db4ac263929fae805564a423a3487dd6ebd05850c9ad",
+      "sha256_after": "33c5fe0db5806c04b018db4ac263929fae805564a423a3487dd6ebd05850c9ad"
+    },
+    {
+      "path": "inputs/synthesis/review.md",
+      "sha256": "eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81",
+      "sha256_after": "eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81"
+    },
+    {
+      "path": "inputs/synthesis/low_switch_proof.md",
+      "sha256": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95",
+      "sha256_after": "f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95"
+    }
+  ],
+  "execution_artifacts": [
+    "check_synthesis.py",
+    "synthesis_input_manifest.json",
+    "inputs/synthesis/review.md",
+    "inputs/synthesis/low_switch_proof.md"
+  ],
+  "declared_results": [
+    "synthesis_results.json"
+  ]
+}

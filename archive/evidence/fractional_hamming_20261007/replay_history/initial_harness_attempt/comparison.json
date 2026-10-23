@@ -1,0 +1,366 @@
+{
+  "status": "failed",
+  "failure": "AssertionError('Mathematical failure control disappeared: synthesis')",
+  "runs": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "0298cb533576c844244b7c80a0e250e7c6b9b419acc0863c88627a7b393a0831",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py",
+        "--output",
+        "/workspace/shared/bgs_fractional_hamming_promotion/evidence/fractional_hamming_20261007/replay/author_normal.json"
+      ],
+      "runtime_seconds": 0.8299509449934703,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "0298cb533576c844244b7c80a0e250e7c6b9b419acc0863c88627a7b393a0831",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py",
+        "--output",
+        "/workspace/shared/bgs_fractional_hamming_promotion/evidence/fractional_hamming_20261007/replay/author_optimized.json"
+      ],
+      "runtime_seconds": 5.4782994569977745,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "787f2510dafbab299d998a64b0462b1d1b609e83dfcff942a0ae8763196a35fe",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py",
+        "--output",
+        "/workspace/shared/bgs_fractional_hamming_promotion/evidence/fractional_hamming_20261007/replay/independent_normal.json"
+      ],
+      "runtime_seconds": 182.7690428529968,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "scientific_output_matches_frozen": true,
+      "scientific_sha256": "787f2510dafbab299d998a64b0462b1d1b609e83dfcff942a0ae8763196a35fe",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py",
+        "--output",
+        "/workspace/shared/bgs_fractional_hamming_promotion/evidence/fractional_hamming_20261007/replay/independent_optimized.json"
+      ],
+      "runtime_seconds": 149.76834830800362,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "portability_controls": [
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.22883159299817635,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py"
+      ],
+      "runtime_seconds": 0.22232994100340875,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "normal",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.direct_trace([(0,)], [])"
+      ],
+      "runtime_seconds": 0.22418292600195855,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py\", line 64, in direct_trace\n    raise AssertionError('Exact check failed at original line 46')\nAssertionError: Exact check failed at original line 46\n"
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 1.5233933409981546,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py"
+      ],
+      "runtime_seconds": 2.7008207629987737,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "author",
+      "mode": "optimized",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.direct_trace([(0,)], [])"
+      ],
+      "runtime_seconds": 3.8616935509999166,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/author_checks.py\", line 64, in direct_trace\n    raise AssertionError('Exact check failed at original line 46')\nAssertionError: Exact check failed at original line 46\n"
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.7609788969930378,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py"
+      ],
+      "runtime_seconds": 0.694366057003208,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "normal",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.zero(m.s.ones(1,1))"
+      ],
+      "runtime_seconds": 0.5730548900028225,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py\", line 24, in zero\n    raise AssertionError('Exact check failed at original line 20')\nAssertionError: Exact check failed at original line 20\n"
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 1.7280688259997987,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py"
+      ],
+      "runtime_seconds": 1.8178721200019936,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "independent",
+      "mode": "optimized",
+      "check": "actual explicit mathematical failure remains active",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.zero(m.s.ones(1,1))"
+      ],
+      "runtime_seconds": 1.532547019996855,
+      "exit_status": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/independent_checks.py\", line 24, in zero\n    raise AssertionError('Exact check failed at original line 20')\nAssertionError: Exact check failed at original line 20\n"
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "check": "silent import",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import importlib.util, pathlib; p=pathlib.Path('/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/synthesis_checks.py'); s=importlib.util.spec_from_file_location(\"adapter\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m)"
+      ],
+      "runtime_seconds": 0.02472448899789015,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "family": "synthesis",
+      "mode": "normal",
+      "check": "silent no-argument main",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_fractional_hamming_promotion/computations/verification/fractional_hamming/synthesis_checks.py"
+      ],
+      "runtime_seconds": 0.025693591000162996,
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "input_bytes_unchanged": true,
+  "normal_optimized_scientific_bytes_identical": false,
+  "omitted_fields": {
+    "author": [
+      "elapsed_seconds"
+    ],
+    "independent": [
+      "runtime_seconds"
+    ],
+    "synthesis": []
+  },
+  "bounds": {
+    "author_position_tuples_N2_m5_r2": 256,
+    "author_N3_m5_r2_selected_tuples": 6,
+    "full_End_N_m": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "top_Gram_N_m_r": [
+      2,
+      4,
+      2
+    ],
+    "torus_N_m": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "network_stages": [
+      1,
+      2,
+      3
+    ],
+    "offcharge_N2_m": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "synthesis_N": [
+      2,
+      3
+    ],
+    "synthesis_m": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "synthesis_radius_pairs": 108
+  },
+  "non_claims": [
+    "Bounded replay is not a universal proof.",
+    "Inherited actual-map analysis and Haar tail are not re-audited.",
+    "No bound on the final residual, plateau, factorial hierarchy or BGS."
+  ]
+}

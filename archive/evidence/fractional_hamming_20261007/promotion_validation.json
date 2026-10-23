@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "raw_files_lossless": 73,
+  "frozen_original_v2_manifests_valid": 3,
+  "portable_replay_v2_manifest_valid": true,
+  "all_six_scientific_runs_match_frozen": true,
+  "normal_optimized_byte_identical": true,
+  "portability_controls": 18,
+  "synthesis_radius_pairs": 108,
+  "original_histories_retained": [
+    "raw/review/initial_controls.py and raw/review/results/*.json",
+    "raw/review/failed_domain_conversion/",
+    "replay_history/initial_harness_attempt/"
+  ],
+  "recovery_note": "Staging-only synthesis negative-control selector fixed; entire six-run suite rerun from scratch without changes to mathematical adapters or frozen sources.",
+  "scope": "Finite reproduction and evidence integrity only; not a new mathematical or analytic audit."
+}
