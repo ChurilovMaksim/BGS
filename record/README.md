@@ -77,13 +77,13 @@ not override this living surface.
 | [Corpus revision](../archive/record/corpus_revision_20261006.md) | Repository reconciliation and actual audit coverage, not complete proof certification |
 
 Specialized earlier reviews remain indexed by their theorem source and the
-[historical index](history/2026/INDEX.md). The original files, commands and
+[historical index](../archive/history/2026/INDEX.md). The original files, commands and
 hashes are preserved so that a later correction cannot erase the earlier
 scientific state.
 
 ## Historical record
 
-[history/2026/INDEX.md](history/2026/INDEX.md) is the maintained historical
+[history/2026/INDEX.md](../archive/history/2026/INDEX.md) is the maintained historical
 entry point. Indexed snapshots and evidence retain their original bytes.
 The dated ledger addendum is historical; it does not compete with
 `claim_ledger.md`. Obsolete root summaries remain recoverable from Git

@@ -4,9 +4,9 @@ The 6 October [collective exact packet](executions/20261006/collective-diffusion
 uses cyclotomic and rational arithmetic under a source-pinned contract.
 The [separate diagnostic packet](executions/20261006/collective-diffusion-spectrum/manifest.json)
 uses float64 and an explicit deterministic start; larger N cover selected
-blocks only. The [review](../record/collective_diffusion_review_20261006.md)
+blocks only. The [review](../archive/record/collective_diffusion_review_20261006.md)
 distinguishes these runs from the analytic uniform proof. The
-[integration record](executions/20261006-collective-diffusion-integration.json)
+[integration record](../archive/evidence/executions/20261006-collective-diffusion-integration.json)
 records actual local checks and manuscript build, not a BGS certificate.
 The [initial domain mismatch](../archive/history/2026/collective_diffusion_arithmetic_correction_20261006.md)
 is preserved explicitly; the initial run is superseded rather than relabelled.
@@ -15,11 +15,11 @@ The 4 October [polynomial coboundary packet](../archive/evidence/executions/2026
 pins final source, run limits, seed and 40 finite matrix-direction controls.
 Its [checks](../archive/evidence/executions/20261004/polynomial-coboundary/checks.json) distinguish
 complex128 diagnostics from exact rational/partition arithmetic.
-[Wolfram output](20261004/polynomial_coboundary_wolfram.json) checks exponents
+[Wolfram output](../archive/evidence/20261004/polynomial_coboundary_wolfram.json) checks exponents
 and a scalar sixth derivative only. The
-[review](../record/polynomial_coboundary_review_20261004.md) states the
+[review](../archive/record/polynomial_coboundary_review_20261004.md) states the
 analytic proof and independent internal review boundary; the
-[integration record](executions/20261004-polynomial-integration.json)
+[integration record](../archive/evidence/executions/20261004-polynomial-integration.json)
 records focused regression and publication checks.
 
 Every promoted evidence object is interpreted only at the scope stated in its JSON and associated review. This index is path-complete for the current `evidence/certificates/` directory as audited on 2026-09-07. Historical producer names remain available in Git but do not override maintained sources.
