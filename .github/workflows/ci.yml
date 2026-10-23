@@ -126,9 +126,15 @@ jobs:
           python-version: '3.13'
       - name: Install pinned scientific libraries
         run: python -m pip install -r requirements.txt
+      # The Wave2 seal is asserted through the portable authenticator: it
+      # verifies the identical 70-file closure against the identical sealed
+      # digests, resolving the three governance files that editorially
+      # evolved after the seal to their archived sealed copies via the
+      # bindings' reviewed historical_resolutions. Standalone v1
+      # --check-sources reports the first of them (AGENTS.md) by design.
       - name: Assert intact historical seals and adversarial v2 rules
         run: |
-          python computations/verification/wave2_checked_replay.py --check-sources
+          python computations/verification/wave2_portable_replay.py --check-sources
           python computations/verification/wave3_checked_replay.py --check-sources
           python -m unittest discover -s computations/maintenance/tests -p test_wave2_portable_replay.py -v
       - name: Execute all eight original authenticated Wave2 tasks with portable criteria
