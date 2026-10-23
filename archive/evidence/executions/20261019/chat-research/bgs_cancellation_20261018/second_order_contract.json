@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-SIGNED-SECOND-COEFFICIENT-20261018",
+  "mathematics":{
+    "assertion_tested":"Exact coefficients of N^(-1), N^(-2) in actual circular-phase trace variance; truncated collision expansion, discarding original rank above four only by the codimension rank-drop inequality",
+    "coefficient_domain":"Exact signed 64-bit integers and Python Fraction over F_3,F_5,F_13",
+    "conventions":"Coefficient of variance/m at order two is n4 - pair_rank2/2 + 2 triple_rank0/3 + disjoint_pair_rank0/4; cyclic orbit coverage is checked against (m-1)!",
+    "inputs":["second_order.cpp","verify_second_order.py","signed_run_v2/result.json"],
+    "bounds":{"enumeration":"p=3,5,13 m=3..10, additionally p=13 m=11","overlap":"All available overlapping full-polynomial results"},
+    "non_claims":["No all-orders or growing-m cancellation from a finite coefficient table","No asymptotic BGS inference"]
+  },
+  "execution_artifacts":["second_order.cpp","verify_second_order.py","signed_run_v2/result.json","second_order_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

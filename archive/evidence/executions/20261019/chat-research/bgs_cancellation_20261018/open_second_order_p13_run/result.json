@@ -1,0 +1,287 @@
+{
+  "status": "passed",
+  "p": 13,
+  "minimal_core_histograms": [
+    {
+      "p": 13,
+      "q": 3,
+      "coverage": 2,
+      "cycle_orbits": 2,
+      "histogram12": [
+        8,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "p": 13,
+      "q": 4,
+      "coverage": 6,
+      "cycle_orbits": 3,
+      "histogram12": [
+        17,
+        44,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "p": 13,
+      "q": 5,
+      "coverage": 24,
+      "cycle_orbits": 8,
+      "histogram12": [
+        -159,
+        -65,
+        -40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 6,
+      "coverage": 120,
+      "cycle_orbits": 24,
+      "histogram12": [
+        -141,
+        -72,
+        -174,
+        -16,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 7,
+      "coverage": 720,
+      "cycle_orbits": 108,
+      "histogram12": [
+        -147,
+        168,
+        0,
+        -140,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 8,
+      "coverage": 5040,
+      "cycle_orbits": 640,
+      "histogram12": [
+        114,
+        288,
+        120,
+        0,
+        -36,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 9,
+      "coverage": 40320,
+      "cycle_orbits": 4492,
+      "histogram12": [
+        54,
+        54,
+        270,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 10,
+      "coverage": 362880,
+      "cycle_orbits": 36336,
+      "histogram12": [
+        300,
+        0,
+        150,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 11,
+      "coverage": 3628800,
+      "cycle_orbits": 329900,
+      "histogram12": [
+        0,
+        66,
+        0,
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "p": 13,
+      "q": 12,
+      "coverage": 39916800,
+      "cycle_orbits": 3326788,
+      "histogram12": [
+        84,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "stable_polynomial_coefficients": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "finite_overlap_controls": [
+    {
+      "m": 3,
+      "coefficient": "4"
+    },
+    {
+      "m": 4,
+      "coefficient": "34"
+    },
+    {
+      "m": 5,
+      "coefficient": "-35"
+    },
+    {
+      "m": 6,
+      "coefficient": "-108"
+    },
+    {
+      "m": 7,
+      "coefficient": "-147"
+    },
+    {
+      "m": 8,
+      "coefficient": "56"
+    },
+    {
+      "m": 9,
+      "coefficient": "0"
+    },
+    {
+      "m": 10,
+      "coefficient": "200"
+    },
+    {
+      "m": 11,
+      "coefficient": "0"
+    },
+    {
+      "m": 12,
+      "coefficient": "84"
+    }
+  ],
+  "stable_evaluations": [
+    {
+      "m": 17,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 18,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 19,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 20,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 21,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 22,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 23,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 24,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 25,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 26,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 27,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 28,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 29,
+      "normalized_coefficient": "0"
+    },
+    {
+      "m": 30,
+      "normalized_coefficient": "0"
+    }
+  ],
+  "scope": "All-m interpretation is conditional on the separate rank-four open-core bound proof; no all-order or Heisenberg inference"
+}

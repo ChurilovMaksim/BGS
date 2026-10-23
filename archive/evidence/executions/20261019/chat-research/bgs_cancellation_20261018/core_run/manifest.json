@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-SIGNED-FIRST-CORRECTION-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_rank_two_cores.py",
+    "core_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Rank-two full-support cycle cores, their common edges and pair-collapse multiplicities; comparison of core embeddings with direct cycle enumeration; the signed coefficient of N^(-1) in the circular-phase trace variance",
+    "coefficient_domain": "Exact integers, rational numbers and F_3,F_5,F_7,F_11,F_13",
+    "conventions": "sigma is the standard directed m-cycle; K=P_sigma-P_sigma^T-P_tau+P_tau^T; d(K) counts pairs whose identification annihilates K",
+    "inputs": [
+      "verify_rank_two_cores.py"
+    ],
+    "bounds": {
+      "cores": "All directed q-cycles tau, 3<=q<=8, all five fields, retain full-support rank-two K",
+      "direct_embedding_controls": "All m-cycles for 3<=m<=8 in all five fields, plus m=9 in fields 3,13 and m=10 in field 3",
+      "embedding_prediction": "m=3..100 from the finite core table",
+      "field_coverage_argument": "A 4x4 Pfaffian has absolute integer value <=12, so rank-two classification at p>=13 has no new modular zeros"
+    },
+    "non_claims": [
+      "No full BGS or two-channel solution",
+      "Finite verification is not an all-order cancellation proof",
+      "No assumption that the first correction vanishes; the result records the actual table"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T11:59:00.572898+00:00",
+    "runtime_seconds": 4.028954,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 16000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_rank_two_cores.py",
+    "core_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_rank_two_cores.py",
+      "sha256": "8cf7148a21c4ad60a90abb095fe27f84eb1fbb7cf32e74b4e5cfcf259a9cb9a6",
+      "sha256_after": "8cf7148a21c4ad60a90abb095fe27f84eb1fbb7cf32e74b4e5cfcf259a9cb9a6"
+    },
+    {
+      "path": "core_contract.json",
+      "sha256": "bf13422efbcfab79ccc9f85e4c9b5055bae513ebff9593be99023e6909d1fe53",
+      "sha256_after": "bf13422efbcfab79ccc9f85e4c9b5055bae513ebff9593be99023e6909d1fe53"
+    }
+  ],
+  "output_directory": "core_run",
+  "declared_results": [
+    "core_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "core_run/stdout.txt",
+      "sha256": "e5a0eef5455154ebfe48e34382a0aea2bf190760e5f64bfda3d40bdff8969f66",
+      "kind": "log"
+    },
+    {
+      "path": "core_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "core_run/result.json",
+      "sha256": "0ae9374046cde1a51128fff2690951790db44fd5d2bd71a1e323590f04d0adca",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

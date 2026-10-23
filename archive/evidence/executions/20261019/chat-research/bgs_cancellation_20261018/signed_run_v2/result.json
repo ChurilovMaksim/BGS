@@ -1,0 +1,667 @@
+{
+  "status": "passed",
+  "a_n": [
+    "1",
+    "-1/2",
+    "2/3",
+    "-11/8",
+    "19/5",
+    "-473/36",
+    "1145/21",
+    "-101369/384"
+  ],
+  "kappa_n": [
+    1,
+    -1,
+    4,
+    -33,
+    456,
+    -9460,
+    274800,
+    -10643745
+  ],
+  "partition_weight_checks": 67,
+  "polynomials": [
+    {
+      "p": 3,
+      "m": 1,
+      "partitions": 1,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 1,
+      "scaled_coefficients": [
+        "1",
+        "0"
+      ],
+      "coefficients": [
+        "1"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 2,
+      "partitions": 2,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 2,
+      "scaled_coefficients": [
+        "4",
+        "-2",
+        "0"
+      ],
+      "coefficients": [
+        "2",
+        "-1"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 3,
+      "partitions": 5,
+      "cycle_orbits": 2,
+      "cycle_coverage": 2,
+      "scale": 6,
+      "scaled_coefficients": [
+        "18",
+        "-36",
+        "24",
+        "0"
+      ],
+      "coefficients": [
+        "3",
+        "-6",
+        "4"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 4,
+      "partitions": 15,
+      "cycle_orbits": 3,
+      "cycle_coverage": 6,
+      "scale": 24,
+      "scaled_coefficients": [
+        "96",
+        "-96",
+        "816",
+        "-792",
+        "0"
+      ],
+      "coefficients": [
+        "4",
+        "-4",
+        "34",
+        "-33"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 5,
+      "partitions": 52,
+      "cycle_orbits": 8,
+      "cycle_coverage": 24,
+      "scale": 120,
+      "scaled_coefficients": [
+        "600",
+        "3000",
+        "-7200",
+        "-51000",
+        "54720",
+        "0"
+      ],
+      "coefficients": [
+        "5",
+        "25",
+        "-60",
+        "-425",
+        "456"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 6,
+      "partitions": 203,
+      "cycle_orbits": 24,
+      "cycle_coverage": 120,
+      "scale": 720,
+      "scaled_coefficients": [
+        "4320",
+        "8640",
+        "-267840",
+        "1069200",
+        "5997600",
+        "-6811200",
+        "0"
+      ],
+      "coefficients": [
+        "6",
+        "12",
+        "-372",
+        "1485",
+        "8330",
+        "-9460"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 7,
+      "partitions": 877,
+      "cycle_orbits": 108,
+      "cycle_coverage": 720,
+      "scale": 5040,
+      "scaled_coefficients": [
+        "35280",
+        "0",
+        "-1234800",
+        "42406560",
+        "-263506320",
+        "-1162687680",
+        "1384992000",
+        "0"
+      ],
+      "coefficients": [
+        "7",
+        "0",
+        "-245",
+        "8414",
+        "-52283",
+        "-230692",
+        "274800"
+      ]
+    },
+    {
+      "p": 3,
+      "m": 8,
+      "partitions": 4140,
+      "cycle_orbits": 640,
+      "cycle_coverage": 5040,
+      "scale": 40320,
+      "scaled_coefficients": [
+        "322560",
+        "322560",
+        "30643200",
+        "-644152320",
+        "-10280471040",
+        "96394959360",
+        "343654214400",
+        "-429155798400",
+        "0"
+      ],
+      "coefficients": [
+        "8",
+        "8",
+        "760",
+        "-15976",
+        "-254972",
+        "2390748",
+        "8523170",
+        "-10643745"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 1,
+      "partitions": 1,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 1,
+      "scaled_coefficients": [
+        "1",
+        "0"
+      ],
+      "coefficients": [
+        "1"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 2,
+      "partitions": 2,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 2,
+      "scaled_coefficients": [
+        "4",
+        "-2",
+        "0"
+      ],
+      "coefficients": [
+        "2",
+        "-1"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 3,
+      "partitions": 5,
+      "cycle_orbits": 2,
+      "cycle_coverage": 2,
+      "scale": 6,
+      "scaled_coefficients": [
+        "18",
+        "-36",
+        "24",
+        "0"
+      ],
+      "coefficients": [
+        "3",
+        "-6",
+        "4"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 4,
+      "partitions": 15,
+      "cycle_orbits": 3,
+      "cycle_coverage": 6,
+      "scale": 24,
+      "scaled_coefficients": [
+        "96",
+        "-96",
+        "816",
+        "-792",
+        "0"
+      ],
+      "coefficients": [
+        "4",
+        "-4",
+        "34",
+        "-33"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 5,
+      "partitions": 52,
+      "cycle_orbits": 8,
+      "cycle_coverage": 24,
+      "scale": 120,
+      "scaled_coefficients": [
+        "600",
+        "0",
+        "-4200",
+        "-51000",
+        "54720",
+        "0"
+      ],
+      "coefficients": [
+        "5",
+        "0",
+        "-35",
+        "-425",
+        "456"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 6,
+      "partitions": 203,
+      "cycle_orbits": 24,
+      "cycle_coverage": 120,
+      "scale": 720,
+      "scaled_coefficients": [
+        "4320",
+        "0",
+        "-77760",
+        "922320",
+        "5963040",
+        "-6811200",
+        "0"
+      ],
+      "coefficients": [
+        "6",
+        "0",
+        "-108",
+        "1281",
+        "8282",
+        "-9460"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 7,
+      "partitions": 877,
+      "cycle_orbits": 108,
+      "cycle_coverage": 720,
+      "scale": 5040,
+      "scaled_coefficients": [
+        "35280",
+        "0",
+        "-246960",
+        "5362560",
+        "-243255600",
+        "-1146882240",
+        "1384992000",
+        "0"
+      ],
+      "coefficients": [
+        "7",
+        "0",
+        "-49",
+        "1064",
+        "-48265",
+        "-227556",
+        "274800"
+      ]
+    },
+    {
+      "p": 5,
+      "m": 8,
+      "partitions": 4140,
+      "cycle_orbits": 640,
+      "cycle_coverage": 5040,
+      "scale": 40320,
+      "scaled_coefficients": [
+        "322560",
+        "322560",
+        "2257920",
+        "-195148800",
+        "905909760",
+        "92823575040",
+        "335618599680",
+        "-429155798400",
+        "0"
+      ],
+      "coefficients": [
+        "8",
+        "8",
+        "56",
+        "-4840",
+        "22468",
+        "2302172",
+        "8323874",
+        "-10643745"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 1,
+      "partitions": 1,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 1,
+      "scaled_coefficients": [
+        "1",
+        "0"
+      ],
+      "coefficients": [
+        "1"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 2,
+      "partitions": 2,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 2,
+      "scaled_coefficients": [
+        "4",
+        "-2",
+        "0"
+      ],
+      "coefficients": [
+        "2",
+        "-1"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 3,
+      "partitions": 5,
+      "cycle_orbits": 2,
+      "cycle_coverage": 2,
+      "scale": 6,
+      "scaled_coefficients": [
+        "18",
+        "-36",
+        "24",
+        "0"
+      ],
+      "coefficients": [
+        "3",
+        "-6",
+        "4"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 4,
+      "partitions": 15,
+      "cycle_orbits": 3,
+      "cycle_coverage": 6,
+      "scale": 24,
+      "scaled_coefficients": [
+        "96",
+        "-96",
+        "816",
+        "-792",
+        "0"
+      ],
+      "coefficients": [
+        "4",
+        "-4",
+        "34",
+        "-33"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 5,
+      "partitions": 52,
+      "cycle_orbits": 8,
+      "cycle_coverage": 24,
+      "scale": 120,
+      "scaled_coefficients": [
+        "600",
+        "0",
+        "-4200",
+        "-51000",
+        "54720",
+        "0"
+      ],
+      "coefficients": [
+        "5",
+        "0",
+        "-35",
+        "-425",
+        "456"
+      ]
+    },
+    {
+      "p": 7,
+      "m": 6,
+      "partitions": 203,
+      "cycle_orbits": 24,
+      "cycle_coverage": 120,
+      "scale": 720,
+      "scaled_coefficients": [
+        "4320",
+        "0",
+        "-77760",
+        "922320",
+        "5963040",
+        "-6811200",
+        "0"
+      ],
+      "coefficients": [
+        "6",
+        "0",
+        "-108",
+        "1281",
+        "8282",
+        "-9460"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 1,
+      "partitions": 1,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 1,
+      "scaled_coefficients": [
+        "1",
+        "0"
+      ],
+      "coefficients": [
+        "1"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 2,
+      "partitions": 2,
+      "cycle_orbits": 1,
+      "cycle_coverage": 1,
+      "scale": 2,
+      "scaled_coefficients": [
+        "4",
+        "-2",
+        "0"
+      ],
+      "coefficients": [
+        "2",
+        "-1"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 3,
+      "partitions": 5,
+      "cycle_orbits": 2,
+      "cycle_coverage": 2,
+      "scale": 6,
+      "scaled_coefficients": [
+        "18",
+        "-36",
+        "24",
+        "0"
+      ],
+      "coefficients": [
+        "3",
+        "-6",
+        "4"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 4,
+      "partitions": 15,
+      "cycle_orbits": 3,
+      "cycle_coverage": 6,
+      "scale": 24,
+      "scaled_coefficients": [
+        "96",
+        "-96",
+        "816",
+        "-792",
+        "0"
+      ],
+      "coefficients": [
+        "4",
+        "-4",
+        "34",
+        "-33"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 5,
+      "partitions": 52,
+      "cycle_orbits": 8,
+      "cycle_coverage": 24,
+      "scale": 120,
+      "scaled_coefficients": [
+        "600",
+        "0",
+        "-4200",
+        "-51000",
+        "54720",
+        "0"
+      ],
+      "coefficients": [
+        "5",
+        "0",
+        "-35",
+        "-425",
+        "456"
+      ]
+    },
+    {
+      "p": 13,
+      "m": 6,
+      "partitions": 203,
+      "cycle_orbits": 24,
+      "cycle_coverage": 120,
+      "scale": 720,
+      "scaled_coefficients": [
+        "4320",
+        "0",
+        "-77760",
+        "922320",
+        "5963040",
+        "-6811200",
+        "0"
+      ],
+      "coefficients": [
+        "6",
+        "0",
+        "-108",
+        "1281",
+        "8282",
+        "-9460"
+      ]
+    }
+  ],
+  "physical_checks": [
+    {
+      "N": 9,
+      "m": 1,
+      "exact_variance": "1"
+    },
+    {
+      "N": 9,
+      "m": 2,
+      "exact_variance": "17/9"
+    },
+    {
+      "N": 9,
+      "m": 3,
+      "exact_variance": "193/81"
+    },
+    {
+      "N": 9,
+      "m": 4,
+      "exact_variance": "955/243"
+    },
+    {
+      "N": 9,
+      "m": 5,
+      "exact_variance": "14267/2187"
+    },
+    {
+      "N": 25,
+      "m": 1,
+      "exact_variance": "1"
+    },
+    {
+      "N": 25,
+      "m": 2,
+      "exact_variance": "49/25"
+    },
+    {
+      "N": 25,
+      "m": 3,
+      "exact_variance": "1729/625"
+    },
+    {
+      "N": 25,
+      "m": 4,
+      "exact_variance": "60817/15625"
+    }
+  ],
+  "negative_control": "Gaussian-only trace-three variance disagrees with circular phases",
+  "scope": "Finite exact verification of the signed formula, not a Heisenberg-scale theorem"
+}

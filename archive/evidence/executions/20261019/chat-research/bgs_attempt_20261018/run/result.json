@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "scope": "Exact finite checks only; asymptotic theorem is proved separately in secular_hierarchy_ru.md",
+  "rank_polynomials": [
+    {
+      "p": 3,
+      "k": 0,
+      "coefficients_in_N_inverse": {
+        "0": "1"
+      }
+    },
+    {
+      "p": 3,
+      "k": 1,
+      "coefficients_in_N_inverse": {
+        "0": "1"
+      }
+    },
+    {
+      "p": 3,
+      "k": 2,
+      "coefficients_in_N_inverse": {}
+    },
+    {
+      "p": 3,
+      "k": 3,
+      "coefficients_in_N_inverse": {
+        "0": "1",
+        "1": "-1"
+      }
+    },
+    {
+      "p": 3,
+      "k": 4,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-3/4"
+      }
+    },
+    {
+      "p": 3,
+      "k": 5,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-3/4"
+      }
+    },
+    {
+      "p": 3,
+      "k": 6,
+      "coefficients_in_N_inverse": {
+        "0": "1",
+        "1": "-1"
+      }
+    },
+    {
+      "p": 3,
+      "k": 7,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-7/2",
+        "2": "-133/4",
+        "3": "36"
+      }
+    },
+    {
+      "p": 5,
+      "k": 0,
+      "coefficients_in_N_inverse": {
+        "0": "1"
+      }
+    },
+    {
+      "p": 5,
+      "k": 1,
+      "coefficients_in_N_inverse": {
+        "0": "1"
+      }
+    },
+    {
+      "p": 5,
+      "k": 2,
+      "coefficients_in_N_inverse": {}
+    },
+    {
+      "p": 5,
+      "k": 3,
+      "coefficients_in_N_inverse": {
+        "0": "1",
+        "1": "-1"
+      }
+    },
+    {
+      "p": 5,
+      "k": 4,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-3/4"
+      }
+    },
+    {
+      "p": 5,
+      "k": 5,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-7/4",
+        "2": "1"
+      }
+    },
+    {
+      "p": 5,
+      "k": 6,
+      "coefficients_in_N_inverse": {
+        "0": "1",
+        "1": "-7/3",
+        "2": "4/3"
+      }
+    },
+    {
+      "p": 5,
+      "k": 7,
+      "coefficients_in_N_inverse": {
+        "0": "3/4",
+        "1": "-23/6",
+        "2": "-143/12",
+        "3": "15"
+      }
+    }
+  ],
+  "rank_calls": 169008,
+  "signature_checks": [
+    {
+      "k": 0,
+      "value": "1",
+      "permutations": 1
+    },
+    {
+      "k": 1,
+      "value": "1",
+      "permutations": 1
+    },
+    {
+      "k": 2,
+      "value": "0",
+      "permutations": 2
+    },
+    {
+      "k": 3,
+      "value": "1",
+      "permutations": 6
+    },
+    {
+      "k": 4,
+      "value": "3/4",
+      "permutations": 24
+    },
+    {
+      "k": 5,
+      "value": "3/4",
+      "permutations": 120
+    },
+    {
+      "k": 6,
+      "value": "1",
+      "permutations": 720
+    },
+    {
+      "k": 7,
+      "value": "3/4",
+      "permutations": 5040
+    },
+    {
+      "k": 8,
+      "value": "37/32",
+      "permutations": 40320
+    }
+  ],
+  "series_through_40": [
+    "1",
+    "1",
+    "0",
+    "1",
+    "3/4",
+    "3/4",
+    "1",
+    "3/4",
+    "37/32",
+    "79/96",
+    "73/60",
+    "153/160",
+    "157/128",
+    "2131/1920",
+    "1367/1120",
+    "16901/13440",
+    "37517/30720",
+    "297499/215040",
+    "50027/40320",
+    "955601/645120",
+    "5517121/4300800",
+    "20013443/12902400",
+    "9549451/7096320",
+    "25189977/15769600",
+    "147027463/103219200",
+    "615539087/378470400",
+    "2790962617/1845043200",
+    "218541562961/132843110400",
+    "458978028119/286123622400",
+    "686044863923/413289676800",
+    "1124661458749/664215552000",
+    "3463781858623/2066448384000",
+    "70452671410903/39675808972800",
+    "1010331184228889/595137134592000",
+    "64947508861787/35129622528000",
+    "499108184948419/289066608230400",
+    "13648310974540537/7141645615104000",
+    "214174455381648137/121407975456768000",
+    "17963594959550143/9153775927296000",
+    "7952231085989783/4393812445102080",
+    "9730280990020991503/4856319018270720000"
+  ],
+  "physical_checks": [
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 0,
+      "value": "1",
+      "subsets": 1,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 1,
+      "value": "1",
+      "subsets": 9,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 2,
+      "value": "0",
+      "subsets": 36,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 3,
+      "value": "8/9",
+      "subsets": 84,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 4,
+      "value": "2/3",
+      "subsets": 126,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 3,
+      "d": 1,
+      "N": 9,
+      "k": 5,
+      "value": "2/3",
+      "subsets": 126,
+      "unitarity_coordinates": 81
+    },
+    {
+      "p": 5,
+      "d": 1,
+      "N": 25,
+      "k": 0,
+      "value": "1",
+      "subsets": 1,
+      "unitarity_coordinates": 625
+    },
+    {
+      "p": 5,
+      "d": 1,
+      "N": 25,
+      "k": 1,
+      "value": "1",
+      "subsets": 25,
+      "unitarity_coordinates": 625
+    },
+    {
+      "p": 5,
+      "d": 1,
+      "N": 25,
+      "k": 2,
+      "value": "0",
+      "subsets": 300,
+      "unitarity_coordinates": 625
+    },
+    {
+      "p": 5,
+      "d": 1,
+      "N": 25,
+      "k": 3,
+      "value": "24/25",
+      "subsets": 2300,
+      "unitarity_coordinates": 625
+    },
+    {
+      "p": 3,
+      "d": 2,
+      "N": 81,
+      "k": 3,
+      "value": "80/81",
+      "subsets": 85320,
+      "unitarity_coordinates": 6561
+    }
+  ],
+  "negative_control": "all-zero ranks would give c_N,3=0 and is rejected by the physical c_9,3=8/9",
+  "software": {
+    "python": "3.12.14"
+  }
+}

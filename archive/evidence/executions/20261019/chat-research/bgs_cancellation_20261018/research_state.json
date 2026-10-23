@@ -1,0 +1,29 @@
+{
+  "date":"2026-10-18",
+  "goal":"Full BGS conjecture; current auxiliary route is the actual symplectic Fourier circular-phase ensemble",
+  "repository_policy":"Read only. No edits, commits, pushes or GitHub synchronization in this pass.",
+  "independent_review":false,
+  "claims":[
+    {"id":"signed-rank-formula","status":"author_proved","file":"signed_trace_formula_ru.md","scope":"Exact mixed trace moments, all lengths, odd p and N=p^(2d)"},
+    {"id":"minimal-core-8h","status":"author_proved","file":"finite_core_expansion_ru.md","scope":"Core size at most 8h for the N^(-h) coefficient of the single-trace variance"},
+    {"id":"first-cancellation","status":"author_proved","file":"rank_two_cancellation_ru.md","scope":"All odd p, every fixed m>=9"},
+    {"id":"second-cancellation","status":"author_proved_with_finite_computation","file":"second_order_cancellation_ru.md","scope":"All odd p, every fixed m>=17; exhaustive open-core computation and large-prime transfer"},
+    {"id":"exact-absolute-barrier","status":"author_proved","file":"exact_absolute_barrier_ru.md","scope":"Termwise absolute coefficient bounds become exponential at m=c sqrt(N), c>e sqrt(2)"},
+    {"id":"all-order-stable-cancellation","status":"open","scope":"b_h(m;p)=0 for m>8h, arbitrary h"},
+    {"id":"heisenberg-form-factor","status":"open","scope":"Uniform actual-phase form factor at fixed m/N, including plateau"},
+    {"id":"full-bgs","status":"open"}
+  ],
+  "next_obligations":[
+    "Seek a summation that retains cancellations across all orders, rather than a complete absolute bound.",
+    "Do not infer growing-time universality from the fixed-order core identities.",
+    "Use the exact physical phase weights; the Gaussian comparison and the absolute exact polynomial both have proved square-root-time barriers.",
+    "For higher-order core experiments, prove coverage before enumerating; the general core bound is 8h.",
+    "Independent verification of the rank-four support lemma and finite enumeration remains desirable."
+  ],
+  "do_not_repeat_as_breakthrough":[
+    "Positive Gaussian ramp bounds already stop before Heisenberg time.",
+    "Fixed-time dual-unitary thermodynamic theorems do not automatically apply to the two-site growing-dimension model.",
+    "Finite-N Heisenberg overshoot is not an asymptotic counterexample.",
+    "The current cancellation does not enlarge the previous m=o(N^(1/5)) window."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "p": 3,
+      "m": 11,
+      "coverage": 3628800,
+      "cycle_orbits": 329900,
+      "n2": 55,
+      "n4": 2145,
+      "pair_zero": 110,
+      "pair_two": 9922,
+      "triple_zero": 1914,
+      "double_pair_zero": 6160,
+      "first12": 0,
+      "second12": 0,
+      "variance_first_coefficient": "0",
+      "variance_second_coefficient": "0"
+    },
+    {
+      "p": 13,
+      "m": 12,
+      "coverage": 39916800,
+      "cycle_orbits": 3326788,
+      "n2": 66,
+      "n4": 2993,
+      "pair_zero": 132,
+      "pair_two": 13908,
+      "triple_zero": 2568,
+      "double_pair_zero": 9024,
+      "first12": 0,
+      "second12": 84,
+      "variance_first_coefficient": "0",
+      "variance_second_coefficient": "84"
+    }
+  ],
+  "scope": "Two new finite coefficients only, not a stable-range theorem"
+}

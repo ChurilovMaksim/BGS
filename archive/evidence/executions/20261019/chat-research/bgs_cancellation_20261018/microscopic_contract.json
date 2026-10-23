@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-ACTUAL-PHASE-MICROSCOPIC-TEST-20261018",
+  "mathematics":{
+    "assertion_tested":"Finite-sample form factors at m/N fixed for actual symplectic Fourier times iid circular phases; construction controls and an excluded symmetric seed plus Haar baseline",
+    "coefficient_domain":"Complex128 numerical eigensolvers and float64 empirical means/standard errors",
+    "conventions":"S_xy=N^(-1/2) omega^Omega(x,y); statistic |sum_j lambda_j^m|^2/N; a standard error describes sampling variation, not a universal bound",
+    "inputs":["sample_actual_form_factor.py"],
+    "bounds":{"actual":"N=25 (1200 samples), N=81 (800), N=121 (400)","controls":"Symmetric bilinear N=25 (800) violates B gap; Haar U(25) (400)","powers":"1,2 and rounded 0.125N,0.25N,0.5N,0.75N,N,1.5N,2N,4N","tolerance":"Unitary Frobenius error <1e-10; max eigenvalue modulus error <1e-10; symplectic t2=t1^2 error <1e-7"},
+    "non_claims":["No limit proved or refuted by finite sampling", "No two-channel or frozen-map inference", "Symmetric control is explicitly outside original admissibility"]
+  },
+  "execution_artifacts":["sample_actual_form_factor.py","microscopic_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"NumPy","version":"2.3.5"},{"name":"SciPy","version":"1.17.0"}],
+  "randomness":{"used":true,"generator":"NumPy PCG64","seed":202610181650}
+}

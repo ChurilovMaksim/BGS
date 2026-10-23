@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-EXACT-CIRCULAR-SIGNED-RANK-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_signed_rank.py",
+    "signed_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact signed set-partition/finite-field-rank polynomials for E|Tr(DS)^m|^2, checked against direct physical phase polynomials and the independently computed first correction",
+    "coefficient_domain": "Integer arithmetic with signed 128-bit accumulators in C++, exact Fraction arithmetic and cyclotomic integers in Python",
+    "conventions": "a_n=n! [t^n]log(sum_j t^j/(j!)^2); partition weight product a_size; exponent m-number_of_blocks+rank(compressed K)/2; cyclic conjugacy reduces tau with its exact orbit size",
+    "inputs": [
+      "signed_rank.cpp",
+      "verify_signed_rank.py",
+      "core_run/result.json"
+    ],
+    "bounds": {
+      "rank_polynomials": "p=3,5 with m=1..8; p=7,13 with m=1..6; all set partitions and every cycle via exact cyclic orbits",
+      "physical_checks": "N=9 m=1..5; N=25 m=1..4",
+      "formal_partition_weights": "All equality-partition types of length 0..8, with every refining partition summed; permutation symmetry covers all occupation partitions",
+      "negative_controls": "Dropping all nonsingleton partition weights must disagree with physical trace-three variance"
+    },
+    "non_claims": [
+      "Finite polynomials do not establish the Heisenberg limit",
+      "No all-order cancellation assumed",
+      "No microscopic universality inferred from low degrees"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T12:09:20.658371+00:00",
+    "runtime_seconds": 0.066375,
+    "exit_status": 1,
+    "status": "failed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 16000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [
+      "signed_run/result.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "signed_rank.cpp",
+    "verify_signed_rank.py",
+    "core_run/result.json",
+    "signed_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "signed_rank.cpp",
+      "sha256": "567a668e1dca8d49b3005e47e1340e227296f9a5e3b959381f8ef3501c72599f",
+      "sha256_after": "567a668e1dca8d49b3005e47e1340e227296f9a5e3b959381f8ef3501c72599f"
+    },
+    {
+      "path": "verify_signed_rank.py",
+      "sha256": "fc2615269094997ec750775111781e39c41906fe02f0e792bd12540b9eb92acd",
+      "sha256_after": "fc2615269094997ec750775111781e39c41906fe02f0e792bd12540b9eb92acd"
+    },
+    {
+      "path": "core_run/result.json",
+      "sha256": "0ae9374046cde1a51128fff2690951790db44fd5d2bd71a1e323590f04d0adca",
+      "sha256_after": "0ae9374046cde1a51128fff2690951790db44fd5d2bd71a1e323590f04d0adca"
+    },
+    {
+      "path": "signed_contract.json",
+      "sha256": "71f9ed5937282f6f1a8ea414ff9c38d054d0aaf061a4feeb52f8e43081f4c4e7",
+      "sha256_after": "71f9ed5937282f6f1a8ea414ff9c38d054d0aaf061a4feeb52f8e43081f4c4e7"
+    }
+  ],
+  "output_directory": "signed_run",
+  "declared_results": [
+    "signed_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "signed_run/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "signed_run/stderr.txt",
+      "sha256": "7ae80775f06645e16bc077ff25940fa8638f058d1bac251b96734f20e3b770f7",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget.",
+    "Declared results were not produced: signed_run/result.json",
+    "A nonzero exit under an address-space cap does not by itself show whether the cap was reached."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-SECOND-IDENTITY-ARITHMETIC-CROSSCHECK-20261018",
+  "mathematics":{
+    "assertion_tested":"Hand-transcribed open-core table equals the computed table; b2(m)/m is degree at most three and has four distinct exact rational zeros in each of nine fields",
+    "coefficient_domain":"Python integers and Fraction",
+    "conventions":"Uses binomial evaluations, not the polynomial-multiplication implementation used by the main driver",
+    "inputs":["verify_polynomial_identity.py","universal_open_second_run/result.json"],
+    "bounds":{"fields":"3,5,7,11,13,17,19,23,29","zeros":"m=17,18,19,20 with a proved polynomial-degree bound"},
+    "non_claims":["Does not independently verify enumeration or the structural support theorem"]
+  },
+  "execution_artifacts":["verify_polynomial_identity.py","universal_open_second_run/result.json","identity_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

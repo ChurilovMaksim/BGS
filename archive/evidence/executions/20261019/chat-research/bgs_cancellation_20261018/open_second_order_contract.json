@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-SIGNED-OPEN-SECOND-CORES-P13-20261018",
+  "mathematics":{
+    "assertion_tested":"Exact signed order-two coefficient grouped by minimal cores and common-edge count; exact rational stable embedding polynomial",
+    "coefficient_domain":"Exact signed 64-bit integers, Python Fraction and F_13",
+    "conventions":"Minimal core is union of nonzero K rows and non-singleton partition vertices; collision weights multiplied by 12 are 12,-6,8,3; cyclic orbit counts checked exactly",
+    "inputs":["open_second_order.cpp","verify_open_second_order.py","second_order_run/result.json","second_order_extended_run/result.json"],
+    "bounds":{"enumeration":"Every q-cycle, q=3..12 over F_13","stable_interpretation":"m>=17 only if the separate open rank-four core support bound q<=12 and maximal closed core bound 16 are proved"},
+    "non_claims":["No field other than 13 is covered by this run","No all-orders or Heisenberg-scale theorem"]
+  },
+  "execution_artifacts":["open_second_order.cpp","verify_open_second_order.py","second_order_run/result.json","second_order_extended_run/result.json","open_second_order_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

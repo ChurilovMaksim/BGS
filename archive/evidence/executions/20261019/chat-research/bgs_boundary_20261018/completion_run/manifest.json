@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-RANK-COMPLETION-PFAFFIAN-COUNT-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_rank_completion.py",
+    "completion_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact reconstruction of finite-field signatures from nonsingular principal minors, perfect-matching encodings of alternating signatures, injectivity of encodings, and the strengthened geometric bounds",
+    "coefficient_domain": "Exact finite fields and rational numbers",
+    "conventions": "Skew rank 2g counts bounded by (L^5+L^4)^g; generic symmetric rank r counts bounded by binom(2L,r)L^(2r)",
+    "inputs": [
+      "verify_rank_completion.py",
+      "verify_polynomial_window.py",
+      "verify_generic_window.py",
+      "run/result.json"
+    ],
+    "bounds": {
+      "skew": "p=3,5; all 9 long-cycle classes and every tau already recorded in run/result.json, total L<=8",
+      "generic": "p=3,5; b=2 generic seed; all sigma types and all tau at 1<=L<=4",
+      "geometric": "All exact Gaussian and collision polynomials in run/result.json at N=p^(2d), 1<=d<=12 with (L^5+L^4)/N<1"
+    },
+    "non_claims": [
+      "Finite encoding checks do not prove the universal enumeration bound",
+      "No microscopic BGS or transmission statement",
+      "No optimal exponent claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T11:39:02.128271+00:00",
+    "runtime_seconds": 4.379344,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_rank_completion.py",
+    "verify_polynomial_window.py",
+    "verify_generic_window.py",
+    "run/result.json",
+    "completion_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_rank_completion.py",
+      "sha256": "4ebb75557da430d5cefebb2630668723fd4b96ff5a568c65756e18b5c7e8f4ad",
+      "sha256_after": "4ebb75557da430d5cefebb2630668723fd4b96ff5a568c65756e18b5c7e8f4ad"
+    },
+    {
+      "path": "verify_polynomial_window.py",
+      "sha256": "db708a67bd6edc267e885323954531b483e249e16d00349ffdb3f5af1fcb3e1f",
+      "sha256_after": "db708a67bd6edc267e885323954531b483e249e16d00349ffdb3f5af1fcb3e1f"
+    },
+    {
+      "path": "verify_generic_window.py",
+      "sha256": "9ae6ee190cdbbf2ba06677c2301a9487e78ccfa33a209d33c3795bf8b7953275",
+      "sha256_after": "9ae6ee190cdbbf2ba06677c2301a9487e78ccfa33a209d33c3795bf8b7953275"
+    },
+    {
+      "path": "run/result.json",
+      "sha256": "d799f1dabc3545f63736e377279cecefb461e348dfbb6eadba219efef02c0f1a",
+      "sha256_after": "d799f1dabc3545f63736e377279cecefb461e348dfbb6eadba219efef02c0f1a"
+    },
+    {
+      "path": "completion_contract.json",
+      "sha256": "c7f28b394021b2ffe3ad00fc7fb4c27a7cc997cafe0db621ed3d70db51d9875c",
+      "sha256_after": "c7f28b394021b2ffe3ad00fc7fb4c27a7cc997cafe0db621ed3d70db51d9875c"
+    }
+  ],
+  "output_directory": "completion_run",
+  "declared_results": [
+    "completion_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "completion_run/stdout.txt",
+      "sha256": "50a77833ca52d3afa6eff33144a54ee17481384b2391b8a980023f9111884f51",
+      "kind": "log"
+    },
+    {
+      "path": "completion_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "completion_run/result.json",
+      "sha256": "b7cc15f3da5e9490f438ed819895d9aaa3aac106262ad329751ca8a64da541f6",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

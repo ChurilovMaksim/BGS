@@ -1,0 +1,19 @@
+{
+  "claim_id":"BGS-EXACT-CIRCULAR-SIGNED-RANK-20261018",
+  "mathematics":{
+    "assertion_tested":"Exact signed set-partition/finite-field-rank polynomials for E|Tr(DS)^m|^2, checked against direct physical phase polynomials and the independently computed first correction",
+    "coefficient_domain":"Integer arithmetic with signed 128-bit accumulators in C++, exact Fraction arithmetic and cyclotomic integers in Python",
+    "conventions":"a_n=n! [t^n]log(sum_j t^j/(j!)^2); partition weight product a_size; exponent m-number_of_blocks+rank(compressed K)/2; cyclic conjugacy reduces tau with its exact orbit size",
+    "inputs":["signed_rank.cpp","verify_signed_rank.py","core_run/result.json"],
+    "bounds":{
+      "rank_polynomials":"p=3,5 with m=1..8; p=7,13 with m=1..6; all set partitions and every cycle via exact cyclic orbits",
+      "physical_checks":"N=9 m=1..5; N=25 m=1..4",
+      "formal_partition_weights":"All equality-partition types of length 0..8, with every refining partition summed; permutation symmetry covers all occupation partitions",
+      "negative_controls":"Dropping all nonsingleton partition weights must disagree with physical trace-three variance"
+    },
+    "non_claims":["Finite polynomials do not establish the Heisenberg limit", "No all-order cancellation assumed", "No microscopic universality inferred from low degrees"]
+  },
+  "execution_artifacts":["signed_rank.cpp","verify_signed_rank.py","core_run/result.json","signed_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

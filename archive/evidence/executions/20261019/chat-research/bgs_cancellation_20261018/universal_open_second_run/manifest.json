@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-UNIVERSAL-SIGNED-OPEN-SECOND-CORES-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_universal_open_second.py",
+    "universal_open_second_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact open minimal-core histograms and stable order-two coefficient polynomials in nine odd characteristics",
+    "coefficient_domain": "Exact signed 64-bit integers, Python Fraction and finite fields F_p",
+    "conventions": "Only cores with common oriented edges. Original ranks above four discarded; active-proper cores with more than eight active or four inactive vertices cannot contribute. Two integer 6x6 Pfaffian witnesses safely prefilter fields. A Gaussian-elimination rank above four is reported as six.",
+    "inputs": [
+      "universal_open_second.cpp",
+      "verify_universal_open_second.py",
+      "verify_open_second_order.py",
+      "open_second_order_p13_run/result.json"
+    ],
+    "bounds": {
+      "cycles": "Every q-cycle q=3..12; exact cyclic orbit coverage",
+      "fields": "3,5,7,11,13,17,19,23,29",
+      "controls": "Every open histogram in F_13 matches the unfiltered earlier engine; sigma contribution checked in every field",
+      "large_prime_transfer": "Requires separate proof that all open contributions stabilize for p>=29, using Pfaffian bound 24"
+    },
+    "non_claims": [
+      "No all-orders, Heisenberg scale or BGS conclusion"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-18T12:46:46.732240+00:00",
+    "runtime_seconds": 41.036621,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 20000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 140,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "universal_open_second.cpp",
+    "verify_universal_open_second.py",
+    "verify_open_second_order.py",
+    "open_second_order_p13_run/result.json",
+    "universal_open_second_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "universal_open_second.cpp",
+      "sha256": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8",
+      "sha256_after": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8"
+    },
+    {
+      "path": "verify_universal_open_second.py",
+      "sha256": "137533d222fa3d4238aa5060e064cce560895d1f730589a897a82d3b2e6c4fa7",
+      "sha256_after": "137533d222fa3d4238aa5060e064cce560895d1f730589a897a82d3b2e6c4fa7"
+    },
+    {
+      "path": "verify_open_second_order.py",
+      "sha256": "a9c282fcd4c7abd92bd40e469ec0348d61d02857ba909c413dc32dee55d61fad",
+      "sha256_after": "a9c282fcd4c7abd92bd40e469ec0348d61d02857ba909c413dc32dee55d61fad"
+    },
+    {
+      "path": "open_second_order_p13_run/result.json",
+      "sha256": "60d63050b61dc3450ec8fe2026d1946311c29a61f45ef6d8b4a69950b7354dec",
+      "sha256_after": "60d63050b61dc3450ec8fe2026d1946311c29a61f45ef6d8b4a69950b7354dec"
+    },
+    {
+      "path": "universal_open_second_contract.json",
+      "sha256": "7bbab9fac9558107ab64f0f8f8c492f986e7cfc397f146ea4e007f576c5794a8",
+      "sha256_after": "7bbab9fac9558107ab64f0f8f8c492f986e7cfc397f146ea4e007f576c5794a8"
+    }
+  ],
+  "output_directory": "universal_open_second_run",
+  "declared_results": [
+    "universal_open_second_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "universal_open_second_run/stdout.txt",
+      "sha256": "f65ca128d8235debab00dab62a74b04fc510d90c5219bf5a6fbee95e381c324b",
+      "kind": "log"
+    },
+    {
+      "path": "universal_open_second_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "universal_open_second_run/result.json",
+      "sha256": "18132298e5856cb65b586039db81167b1e83789ac1d57c19a38bd09ec497d2c9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

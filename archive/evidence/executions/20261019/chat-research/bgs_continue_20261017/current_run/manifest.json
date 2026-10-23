@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-CONTINUE-20261017-CURRENT",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_tensor_current.py",
+    "current_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Complete infinite Taylor coefficient sums match independently computed contour-current integrals, plus polynomial controls",
+    "coefficient_domain": "Exact integers and rational numbers; SymPy for current; descriptive floating logs in star only",
+    "conventions": "Rooted directed cyclic words including loops; D counts distinct edges of multiplicity at least 2; D_phi=-i partial_phi",
+    "inputs": [
+      "verify_tensor_current.py"
+    ],
+    "bounds": {
+      "rational_K": "1..6",
+      "sources": [
+        1,
+        2
+      ],
+      "polynomial_K": "1..100",
+      "inner_parameter": "a=1/3",
+      "arithmetic": "rational functions and exact residues"
+    },
+    "non_claims": [
+      "Finite computations do not prove an asymptotic theorem",
+      "No proof of BGS or Haar two-port limit",
+      "No compiled formalization"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T13:23:03.588573+00:00",
+    "runtime_seconds": 6.541362,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_tensor_current.py",
+    "current_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_tensor_current.py",
+      "sha256": "8a9a42050d9f6373759c7c69eefc8d58fab6985b47af4d908a4cd7b337530045",
+      "sha256_after": "8a9a42050d9f6373759c7c69eefc8d58fab6985b47af4d908a4cd7b337530045"
+    },
+    {
+      "path": "current_contract.json",
+      "sha256": "0eaa8fe6c100ed23854f57900b95daee65f06cbec5b91b7c5d526838578d8239",
+      "sha256_after": "0eaa8fe6c100ed23854f57900b95daee65f06cbec5b91b7c5d526838578d8239"
+    }
+  ],
+  "output_directory": "current_run",
+  "declared_results": [
+    "current_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "current_run/stdout.txt",
+      "sha256": "b252d929e34cabd84d67c53d7ca1ff7a1334bd06de1f67e6fc87e89089fa5bd4",
+      "kind": "log"
+    },
+    {
+      "path": "current_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "current_run/result.json",
+      "sha256": "07fc825baecb16fc13bcda88bfcb69e33857c738c76672df8b3ad03791448dd1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

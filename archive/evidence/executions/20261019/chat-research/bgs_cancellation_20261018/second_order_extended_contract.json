@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-SIGNED-SECOND-COEFFICIENT-EXTENDED-20261018",
+  "mathematics":{
+    "assertion_tested":"Additional exact first two circular-phase trace variance coefficients",
+    "coefficient_domain":"Exact signed 64-bit integers and Python Fraction over F_3,F_13",
+    "conventions":"Same collision formula and cyclic orbit enumeration as second_order_contract.json; independently fresh run",
+    "inputs":["second_order.cpp","verify_second_order_extended.py"],
+    "bounds":{"enumeration":"All cycles for (p,m)=(3,11),(13,12)"},
+    "non_claims":["No general second-order cancellation theorem"]
+  },
+  "execution_artifacts":["second_order.cpp","verify_second_order_extended.py","second_order_extended_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

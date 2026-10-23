@@ -1,0 +1,274 @@
+{
+  "status": "passed",
+  "rank_zero_counts": [
+    {
+      "L": 0,
+      "partition_pairs": 1,
+      "permutations": 1
+    },
+    {
+      "L": 1,
+      "partition_pairs": 1,
+      "permutations": 1
+    },
+    {
+      "L": 2,
+      "partition_pairs": 4,
+      "permutations": 2
+    },
+    {
+      "L": 3,
+      "partition_pairs": 9,
+      "permutations": 6
+    },
+    {
+      "L": 4,
+      "partition_pairs": 25,
+      "permutations": 24
+    },
+    {
+      "L": 5,
+      "partition_pairs": 49,
+      "permutations": 120
+    },
+    {
+      "L": 6,
+      "partition_pairs": 121,
+      "permutations": 720
+    },
+    {
+      "L": 7,
+      "partition_pairs": 225,
+      "permutations": 5040
+    },
+    {
+      "L": 8,
+      "partition_pairs": 484,
+      "permutations": 40320
+    }
+  ],
+  "physical_controls": [
+    {
+      "N": 9,
+      "retarded": [
+        1
+      ],
+      "advanced": [
+        1
+      ],
+      "exact_moment": "1",
+      "limit": 1,
+      "proven_error_bound": "1/9"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        2
+      ],
+      "advanced": [
+        2
+      ],
+      "exact_moment": "17/9",
+      "limit": 2,
+      "proven_error_bound": "4/9"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        1,
+        1
+      ],
+      "advanced": [
+        2
+      ],
+      "exact_moment": "17/9",
+      "limit": 2,
+      "proven_error_bound": "4/9"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        3
+      ],
+      "advanced": [
+        3
+      ],
+      "exact_moment": "193/81",
+      "limit": 3,
+      "proven_error_bound": "8/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        1,
+        1,
+        1
+      ],
+      "advanced": [
+        3
+      ],
+      "exact_moment": "-23/81",
+      "limit": 0,
+      "proven_error_bound": "8/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        4
+      ],
+      "advanced": [
+        4
+      ],
+      "exact_moment": "955/243",
+      "limit": 4,
+      "proven_error_bound": "56/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        1,
+        3
+      ],
+      "advanced": [
+        4
+      ],
+      "exact_moment": "91/243",
+      "limit": 0,
+      "proven_error_bound": "56/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        2,
+        2
+      ],
+      "advanced": [
+        4
+      ],
+      "exact_moment": "91/243",
+      "limit": 0,
+      "proven_error_bound": "56/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        2,
+        2
+      ],
+      "advanced": [
+        2,
+        2
+      ],
+      "exact_moment": "4123/243",
+      "limit": 24,
+      "proven_error_bound": "56/3"
+    },
+    {
+      "N": 9,
+      "retarded": [
+        1,
+        3
+      ],
+      "advanced": [
+        1,
+        3
+      ],
+      "exact_moment": "667/243",
+      "limit": 3,
+      "proven_error_bound": "56/3"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        1
+      ],
+      "advanced": [
+        1
+      ],
+      "exact_moment": "1",
+      "limit": 1,
+      "proven_error_bound": "1/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        2
+      ],
+      "advanced": [
+        2
+      ],
+      "exact_moment": "49/25",
+      "limit": 2,
+      "proven_error_bound": "4/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        1,
+        1
+      ],
+      "advanced": [
+        2
+      ],
+      "exact_moment": "49/25",
+      "limit": 2,
+      "proven_error_bound": "4/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        3
+      ],
+      "advanced": [
+        3
+      ],
+      "exact_moment": "1729/625",
+      "limit": 3,
+      "proven_error_bound": "24/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        1,
+        1,
+        1
+      ],
+      "advanced": [
+        3
+      ],
+      "exact_moment": "-71/625",
+      "limit": 0,
+      "proven_error_bound": "24/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        2,
+        2
+      ],
+      "advanced": [
+        2,
+        2
+      ],
+      "exact_moment": "332017/15625",
+      "limit": 24,
+      "proven_error_bound": "168/25"
+    },
+    {
+      "N": 25,
+      "retarded": [
+        1,
+        3
+      ],
+      "advanced": [
+        1,
+        3
+      ],
+      "exact_moment": "44017/15625",
+      "limit": 3,
+      "proven_error_bound": "168/25"
+    }
+  ],
+  "negative_control": "Independent centered Gaussian trace two would predict zero, but exact E[t1^2 conjugate(t2)]=17/9 at N=9",
+  "scope": "Finite verification only; universal proof is separate"
+}
