@@ -133,8 +133,8 @@ The accepted separate synthesis has SHA-256
 Its frozen low-switch proof and review have SHA-256
 f8780f4c15d677d9ded64ff29884780526ef86ca5c4b9ed58e770b14b231ad95 and
 eb50ca67558a40bdfc15bad02a5639bae90cd67de1ec8a2df27b6ed5b124db81.
-See the [curated review](../record/fractional_hamming_review.md) and
-[raw mapping](../record/fractional_hamming_raw_mapping.json) for the precise
+See the [curated review](../archive/record/fractional_hamming_review.md) and
+[raw mapping](../archive/record/fractional_hamming_raw_mapping.json) for the precise
 source closure and retained history.
 
 The exact integer synthesis check covers N=2,3; m=1,...,4; every

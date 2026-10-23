@@ -45,7 +45,7 @@ commutant. Since A_7=(9/10)I, this is also the pair commutant and,
 for every real t, the commutant of U_7(t)=exp(9it/10)M_7.
 No choice of Gauss-sum sign and no reduction-mod-prime lifting is used.
 
-The [scoped independent review](../record/exceptional_seven_review.md)
+The [scoped independent review](../archive/record/exceptional_seven_review.md)
 and its frozen originals establish this separate characteristic-zero
 consequence. The [exact replay](../computations/verification/exceptional_seven_commutant.py)
 checks 49 cube entries, the trace-square identity and all 512 candidate

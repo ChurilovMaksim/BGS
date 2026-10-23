@@ -1,0 +1,247 @@
+{
+  "scope": "Accepted collective hierarchy v2, exact Q residual, and separately accepted supporting quadratic/slow-source results only. No cat/jet result yet.",
+  "originals": [
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy.md",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_original.md",
+      "original_sha256": "8c68dacb6a9480c0805d8caf0d7b0af427be7bc7f767eaf1ab9c746e3aa7a8e0",
+      "public_sha256": "8c68dacb6a9480c0805d8caf0d7b0af427be7bc7f767eaf1ab9c746e3aa7a8e0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy_v2.md",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_v2.md",
+      "original_sha256": "cb09192dac743bd78fd21b76f6bd9d32c79050e4f616c7a04644e3f8c4c9c037",
+      "public_sha256": "cb09192dac743bd78fd21b76f6bd9d32c79050e4f616c7a04644e3f8c4c9c037",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy_v2.diff",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_v2.diff.raw.json",
+      "original_sha256": "22ba1cc0553fdf4bc8a6e072c3ed56b509c5583c253f51f1e6767fa090ee9167",
+      "public_sha256": "4d90a2a8cc83d54c24de21067f0d55f5cde435e8120be205cf1f3653c323a2bc",
+      "transformation": "Lossless base64 envelope preserves original whitespace bytes; decode payload to recover source."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy_v2_delta.json",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_delta.json",
+      "original_sha256": "614fab8413828b5ada966c9bc1ece6a5b1803ab2adccd1ab11ae0eb65b8a749c",
+      "public_sha256": "614fab8413828b5ada966c9bc1ece6a5b1803ab2adccd1ab11ae0eb65b8a749c",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy_final_manifest.json",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_final_manifest.json",
+      "original_sha256": "10a6296ebc84616383bae453a9dc1bc1aec92791b978571ea65a123a89ff534f",
+      "public_sha256": "10a6296ebc84616383bae453a9dc1bc1aec92791b978571ea65a123a89ff534f",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_hierarchy_sources.json",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_sources.json",
+      "original_sha256": "2cd490915b803ab67789904cafce6545bfb17dbaaee19ee258b9aef453fdb3d0",
+      "public_sha256": "2cd490915b803ab67789904cafce6545bfb17dbaaee19ee258b9aef453fdb3d0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_route/collective_residual_interface.md",
+      "public_path": "record/history/2026/collective_20261006/residual_original.md",
+      "original_sha256": "c4b47fd176673c56824e924218a21158343652020c70fdcf500f3803d02dc139",
+      "public_sha256": "c4b47fd176673c56824e924218a21158343652020c70fdcf500f3803d02dc139",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/review.md",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_review_original.md",
+      "original_sha256": "3801a9aaa707704337ee63d2b45ec384150736e27d533d61152075805d800636",
+      "public_sha256": "3801a9aaa707704337ee63d2b45ec384150736e27d533d61152075805d800636",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/v2_confirmation.md",
+      "public_path": "record/history/2026/collective_20261006/v2_confirmation.md",
+      "original_sha256": "79a9379b8f91807d4ba8c34984dc1d10e1bc109ad2e0ba1111556bdb1f43306d",
+      "public_sha256": "79a9379b8f91807d4ba8c34984dc1d10e1bc109ad2e0ba1111556bdb1f43306d",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/v2_confirmation.json",
+      "public_path": "record/history/2026/collective_20261006/v2_confirmation.json",
+      "original_sha256": "1b9e00bf8123a12b5f740571469581607b104695e88439fe1f00a2b6d07fdc4b",
+      "public_sha256": "1b9e00bf8123a12b5f740571469581607b104695e88439fe1f00a2b6d07fdc4b",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/input_manifest.json",
+      "public_path": "record/history/2026/collective_20261006/hierarchy_input_manifest.json",
+      "original_sha256": "697a6cb78536b7702257ae64f8eaa7ea4edf3296fe6e31863fb8198d3e4bd576",
+      "public_sha256": "697a6cb78536b7702257ae64f8eaa7ea4edf3296fe6e31863fb8198d3e4bd576",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/ordered_space_check.py",
+      "public_path": "record/history/2026/collective_20261006/ordered_original.py",
+      "original_sha256": "e33ea85215ad9169977d2f7a888c79da6ff2ab44e23f288b4b99d825780e312e",
+      "public_sha256": "e33ea85215ad9169977d2f7a888c79da6ff2ab44e23f288b4b99d825780e312e",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/actual_trace_check.py",
+      "public_path": "record/history/2026/collective_20261006/trace_original.py",
+      "original_sha256": "b1e9e0101a64224db7fa48bec713877a5f540dbc5a86cf32a39bf990cf505ee5",
+      "public_sha256": "b1e9e0101a64224db7fa48bec713877a5f540dbc5a86cf32a39bf990cf505ee5",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/frozen/bgs_weighted_plateau_independent/hierarchy/kostka_resolvent.py",
+      "public_path": "record/history/2026/collective_20261006/kostka_original.py",
+      "original_sha256": "d86becdaae5be02b3774c0168451d7f5a6bcc52b5453bf862e659df2d708d2d9",
+      "public_sha256": "d86becdaae5be02b3774c0168451d7f5a6bcc52b5453bf862e659df2d708d2d9",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/contract.json",
+      "public_path": "record/history/2026/collective_20261006/exact_contract.json",
+      "original_sha256": "6bc01542d5a0584c109a9bb5aad0c4397226690ac96027cb0ac98bc44726e184",
+      "public_sha256": "6bc01542d5a0584c109a9bb5aad0c4397226690ac96027cb0ac98bc44726e184",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/provenance_run/manifest.json",
+      "public_path": "record/history/2026/collective_20261006/exact_execution_manifest.json",
+      "original_sha256": "13e30b061e1adfbf8ded6295917b3fbf66d40e803853d307e094b8f60b7617d4",
+      "public_sha256": "13e30b061e1adfbf8ded6295917b3fbf66d40e803853d307e094b8f60b7617d4",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_independent/quadratic_sector/report.md",
+      "public_path": "record/history/2026/collective_20261006/quadratic_original.md",
+      "original_sha256": "ff310670a6ccc467ca2f910b68279ae1e5f099559a5c1ecef5009a4d62cc20f7",
+      "public_sha256": "ff310670a6ccc467ca2f910b68279ae1e5f099559a5c1ecef5009a4d62cc20f7",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_independent/quadratic_sector/cycle_interface.md",
+      "public_path": "record/history/2026/collective_20261006/quadratic_cycle_original.md",
+      "original_sha256": "dcd43142cc2bd284b699d591fcdfd36a6b5d9bfa5069b5036ec3f54fe50d3666",
+      "public_sha256": "dcd43142cc2bd284b699d591fcdfd36a6b5d9bfa5069b5036ec3f54fe50d3666",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_quadratic_sector_review/review.md",
+      "public_path": "record/history/2026/collective_20261006/quadratic_review_original.md",
+      "original_sha256": "3d2a04175b5be09ca21744e98763050c7910c4721a43d375872d3ab570566038",
+      "public_sha256": "3d2a04175b5be09ca21744e98763050c7910c4721a43d375872d3ab570566038",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_quadratic_sector_review/manifest.json",
+      "public_path": "record/history/2026/collective_20261006/quadratic_manifest.json",
+      "original_sha256": "dee48cf909d834270c0fa650f8d4c9cf4814cac96538b28182f5868536cd7cd0",
+      "public_sha256": "dee48cf909d834270c0fa650f8d4c9cf4814cac96538b28182f5868536cd7cd0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_quadratic_sector_review/independent_check.py",
+      "public_path": "record/history/2026/collective_20261006/quadratic_checks_original.py",
+      "original_sha256": "0cf405c8b8a90d4dc8c819569c4fa7e8cfc7efb8bd0a0302985f34443c18db89",
+      "public_sha256": "0cf405c8b8a90d4dc8c819569c4fa7e8cfc7efb8bd0a0302985f34443c18db89",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_independent/nonlinear_source/report.md",
+      "public_path": "record/history/2026/collective_20261006/slow_source_original.md",
+      "original_sha256": "4fa3415ce156c563f4d63a180914acdf7c22b8ffb7e3935ad34506258c2b1083",
+      "public_sha256": "4fa3415ce156c563f4d63a180914acdf7c22b8ffb7e3935ad34506258c2b1083",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_weighted_plateau_independent/nonlinear_source/signed_pairing.md",
+      "public_path": "record/history/2026/collective_20261006/signed_source_original.md",
+      "original_sha256": "093cabf412c6e5eff4a3584b954d130be1cd16900ae41324834caad4185ebc37",
+      "public_sha256": "093cabf412c6e5eff4a3584b954d130be1cd16900ae41324834caad4185ebc37",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_slow_source_review/audit.md",
+      "public_path": "record/history/2026/collective_20261006/slow_source_review_original.md",
+      "original_sha256": "52872b29a351b4f636ecc799a446e0d4e8cbbac26bf2aa7966d9b613ba50dcdb",
+      "public_sha256": "52872b29a351b4f636ecc799a446e0d4e8cbbac26bf2aa7966d9b613ba50dcdb",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_slow_source_review/manifest.json",
+      "public_path": "record/history/2026/collective_20261006/slow_source_manifest.json",
+      "original_sha256": "b03682933dd130c0b82dac17ca7812677989de3b9713928bd5bd7694e5f36519",
+      "public_sha256": "b03682933dd130c0b82dac17ca7812677989de3b9713928bd5bd7694e5f36519",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_slow_source_review/independent_checks.py",
+      "public_path": "record/history/2026/collective_20261006/slow_checks_original.py",
+      "original_sha256": "696ab8e3d17fabf8d5012aa2cafe6f62b6ef140cb7be91b048573ba90aba8301",
+      "public_sha256": "696ab8e3d17fabf8d5012aa2cafe6f62b6ef140cb7be91b048573ba90aba8301",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/ordered_space_results.json",
+      "public_path": "evidence/collective_20261006/original_results/ordered.json",
+      "original_sha256": "98f62e75fae7838652951d9722ec064da755a1407d9f6b964fd3357794422534",
+      "public_sha256": "98f62e75fae7838652951d9722ec064da755a1407d9f6b964fd3357794422534",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/actual_trace_results.json",
+      "public_path": "evidence/collective_20261006/original_results/trace.json",
+      "original_sha256": "16d042a27ff8cc88ba756bd380f2254b0a4feecd22bf4e599e28e82f997a8fd0",
+      "public_sha256": "16d042a27ff8cc88ba756bd380f2254b0a4feecd22bf4e599e28e82f997a8fd0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_collective_hierarchy_independent_review/checks/kostka_replay.json",
+      "public_path": "evidence/collective_20261006/original_results/kostka.json",
+      "original_sha256": "09cf23b9e231f3f29c99f247af9850e4ba05cc0ddb539a561440b073b370beff",
+      "public_sha256": "09cf23b9e231f3f29c99f247af9850e4ba05cc0ddb539a561440b073b370beff",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_quadratic_sector_review/independent_checks.json",
+      "public_path": "evidence/collective_20261006/original_results/quadratic_diagnostic.json",
+      "original_sha256": "0b88fc10d8cb26126179fc2e23888dcb8e9fe2c69e97efde7167e3db673b59a0",
+      "public_sha256": "0b88fc10d8cb26126179fc2e23888dcb8e9fe2c69e97efde7167e3db673b59a0",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "original_role": "bgs_slow_source_review/independent_checks.json",
+      "public_path": "evidence/collective_20261006/original_results/slow_diagnostic.json",
+      "original_sha256": "2af64700ee342d6fdfdfcf52c84c0988b51383571bb74206b36821fdaada019e",
+      "public_sha256": "2af64700ee342d6fdfdfcf52c84c0988b51383571bb74206b36821fdaada019e",
+      "transformation": "Byte-identical copy."
+    }
+  ],
+  "portable_transformations": [
+    "Original assertions replaced by explicit RuntimeError; mathematical arithmetic retained.",
+    "Proper run/main; silent imports; no source output paths.",
+    "Dynamic sibling imports use source compilation without writing pyc.",
+    "Original files with Git whitespace exceptions preserved losslessly in base64 envelopes, not rewritten."
+  ],
+  "review_boundary": "FM-021 analytic inputs inherited; exact finite evidence versus floating diagnostics distinguished; no full-balanced or BGS conclusion.",
+  "curated_final_hashes": {
+    "record/collective_hierarchy_review.md": "160ee6f52a504552c65edf82e4dfdf52b6ae35d56f9ddd81710fe3d195146ce9",
+    "record/quadratic_slow_source_review.md": "4cb5aadab5978045527db515467bec65da9bedf3da4cd494d6e8aec8395c4653",
+    "record/quadratic_occupation_review.md": "77c1685ce06d216ae4ccf7fe4fc518164f1977a1d9f6b7c99fd15906cb8a6228",
+    "mathematics/quadratic_occupation_sector.md": "096487e95c96fc9c0fd0f3097d5b2aeae38d77c859b02a25136863c73a12a5c7",
+    "mathematics/quadratic_cycle_interface.md": "7d5e9553ebae52016a2f5a2b410aaf36208a2ad4a6df6ded042528031ed3b0c0",
+    "mathematics/quadratic_slow_source.md": "f667b049ba6bd866655495392eb503203cc9aa212cf9b6a1b9e1b01981f15d27",
+    "mathematics/quadratic_slow_source_signed.md": "2735ed766f93155b6dfb39401bfbbe64ab0c76012a2c502e5141571cef60803a",
+    "mathematics/collective_occupation_hierarchy.md": "e1a7590ac0f572e3effd68ce0d783ced38f33e2c0c8bbc5939a2d40914fc373f",
+    "mathematics/collective_projector_residual.md": "45c0b3d7186d0df97003d95bcc2902c6e844722502b85d62e2964a4193fd5ef3",
+    "computations/verification/collective_hierarchy.py": "e2600a38b3f295bd0ef68e790f5c78bb8df60042f86090aace031fe9767ee397",
+    "computations/verification/collective/slow_diagnostic.py": "eaf2481d5a84c79fbdc75b6b54f8067fb14e130e9975578d4099e4375c03399d",
+    "computations/verification/collective/trace.py": "e9c7b17b22860a8465f804b01d13d13ca8885dd47d73b536fc3392eee09cd661",
+    "computations/verification/collective/quadratic_diagnostic.py": "49112a016a4b825d7fe4aa468c83c199cf3c32dc2a381bc5c1e2d444635579cb",
+    "computations/verification/collective/ordered.py": "bf8c476664f425a72d0e29ba0203fb6143d00190b7c6712acb183106a2499d77",
+    "computations/verification/collective/kostka.py": "0e00795977782e593a54c63fcc01d5c549e05b0e0be31f7c71a66f77afe1a26e",
+    "manuscript/unified_sections/collective_occupation_hierarchy.tex": "393689f69bfdcb52d00223dace2793afbf43fabf9ee65d85ac6d2e9b77907fc8"
+  }
+}

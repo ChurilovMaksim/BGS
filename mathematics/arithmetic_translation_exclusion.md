@@ -2,7 +2,7 @@
 
 **Proposed claim ID: BGS-FM-023.** Date: 6 October 2026.
 
-**Status:** project analytic proof with independent internal review of the accepted quantitative derivation, portable exact coefficient/filter controls, and an editorial consolidation. No external referee certification, priority claim or analytic formalization. The independent review and source hashes are recorded in [the review](../record/arithmetic_translation_review_20261006.md).
+**Status:** project analytic proof with independent internal review of the accepted quantitative derivation, portable exact coefficient/filter controls, and an editorial consolidation. No external referee certification, priority claim or analytic formalization. The independent review and source hashes are recorded in [the review](../archive/record/arithmetic_translation_review_20261006.md).
 
 The fixed-divisor assertion is a corollary of the stronger quantitative estimate, not a separately maintained theorem. It does not establish microscopic CUE comparison or a scalar full commutant.
 
@@ -284,7 +284,7 @@ This includes the full d²-dimensional loss; it does not mistake pointwise matri
 
 The portable standard-library verifier [arithmetic_translation_exclusion.py](../computations/verification/arithmetic_translation_exclusion.py) independently assembles the physical Laurent symbol over rational Gaussian coefficients. It checks all 32 coefficients, centering/reality and primitive values, the exact Fourier moment, both filters on the complete 45-point rectangular support, their coefficient norms and selected multipliers, all translated-remainder orders, and the exponent algebra. It runs without NumPy or SymPy; checks remain active under Python optimization. Its deliberate fault-injection mode must fail. The bounded execution receipt is in [the evidence directory](../evidence/executions/20261006/divisor-exclusion/receipt.json).
 
-These exact finite controls do not certify the analytic sublevel theorem or quantum limit. The independent internal review reconstructed those analytic steps at the accepted source hash; [the curated review](../record/arithmetic_translation_review_20261006.md) records the scope and the editorial consolidation mapping. The earlier fixed-divisor review and the accepted quantitative source retain their original hashes in the provenance record.
+These exact finite controls do not certify the analytic sublevel theorem or quantum limit. The independent internal review reconstructed those analytic steps at the accepted source hash; [the curated review](../archive/record/arithmetic_translation_review_20261006.md) records the scope and the editorial consolidation mapping. The earlier fixed-divisor review and the accepted quantitative source retain their original hashes in the provenance record.
 
 The constant C_τ depends on the literal fixed coupling, analytic flow bounds and finite-type constants; it is independent of N,d and grid labels. No usable numerical startup, uniformity as τ→0, exponent optimality or control for unrestricted d_N is claimed. For any fixed δ<1/262 the rate is N^(−(1−262δ)/129); the endpoint δ=1/262 yields only a bounded estimate by this proof. The displayed δ=1/524 is a convenient strict interior example, not a critical threshold.
 

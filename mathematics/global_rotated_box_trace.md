@@ -11,7 +11,7 @@ The maintained model is the unchanged odd-dimensional quantization at tau=10^-80
 This note curates the two separately frozen contour/tail proofs and the
 explicit estimates reconstructed by the independent review. Exact source
 hash mappings, editorial changes and execution scope are in
-[the review record](../record/global_rotated_box_review_scope.md).
+[the review record](../archive/record/global_rotated_box_review_scope.md).
 Generic norm-to-factorial trace telescoping is prior project work in
 [Heisenberg trace support](heisenberg_trace_support.md), section 3; the
 specific WKB instantiation is in [the factorial reduction](factorial_wkb_reduction.md).

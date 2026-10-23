@@ -1247,7 +1247,7 @@ A left inverse recovering this particular local test therefore has
 Haar-$L^2$ norm at least $e^{a(1-b)Nt}$. This is a norm obstruction,
 not actual point evaluation. The specific signed vector
 $J_{N,w}(U_N)$ remains unestimated, as do the full higher-order
-counterterms. The [review](../record/growing_degree_review_20261005.md)
+counterterms. The [review](../archive/record/growing_degree_review_20261005.md)
 checks the new analytic implications; the
 [finite packet](../evidence/executions/20261005/degree-growth/manifest.json)
 does not certify their all-degree limits, priority or BGS.
@@ -1413,7 +1413,7 @@ Independent-copy tensorization would erase these common-ensemble moments.
 
 The [source review](../literature/frozen_operator_transfer_sources_20261006.md)
 credits prior noisy-relaxation methods and checks the exact classical
-mixing leaf. The [internal audit](../record/frozen_operator_transfer_review_20261006.md)
+mixing leaf. The [internal audit](../archive/record/frozen_operator_transfer_review_20261006.md)
 reconstructed O1--O29 relative to the inherited Anosov/Gibbs inputs.
 Exact finite controls do not prove the analytic asymptotics or priority.
 The microscopic reduced rate for the original two-kick law was open at this
@@ -1511,7 +1511,7 @@ from exact one-copy averaging and inherited one-step Egorov. It is
 normalized-HS mean square on fixed smooth observables, without a
 long-product Egorov or microscopic operator-norm statement.
 
-The [internal review](../record/collective_diffusion_review_20261006.md)
+The [internal review](../archive/record/collective_diffusion_review_20261006.md)
 reconstructed D1--D25; the [source check](../literature/collective_diffusion_sources_20261006.md)
 credits prior moment-semigroup/design and shear-mixing methods without
 importing an external gap theorem. Exact finite controls and float64
@@ -1535,7 +1535,7 @@ The quantity $(1-e^{-2u\lambda_N})/50$ is a lower bound for the unit-circle sing
 
 In every total-label block, the number of positive eigenvalues of either pair generator below $\lambda$ is at most $4N\sqrt\lambda(1+\log N)$. The shifted integral/half-integral lattice count treats nonzero axes separately. The explicit eigenbases $\delta_a\otimes\mathrm{Fourier}_j$ and $\mathrm{Fourier}_i\otimes\delta_b$ have every overlap of modulus $1/N$. Their low-positive ranks and the existing exact kernel angle therefore give a low-spectral projection angle below $4/5$ on Q. The two-contraction loss estimate yields the stated ordered-product bound without a Trotter approximation.
 
-The [independent internal review](../record/original_channel_gap_review_20261006.md) reconstructs all parity sectors, projection reduction and loss constants. Exact rational counting checks and float64 spectral diagnostics have distinct scopes. Neither the summed-generator gap nor the refined noise law is used. The bound holds for every U and supplies no model-specific signed spectral estimate. Higher-copy quantitative control, the nonlinear quenched functional, original noise removal and deterministic BGS remain open.
+The [independent internal review](../archive/record/original_channel_gap_review_20261006.md) reconstructs all parity sectors, projection reduction and loss constants. Exact rational counting checks and float64 spectral diagnostics have distinct scopes. Neither the summed-generator gap nor the refined noise law is used. The bound holds for every U and supplies no model-specific signed spectral estimate. Higher-copy quantitative control, the nonlinear quenched functional, original noise removal and deterministic BGS remain open.
 
 ## The exact deterministic noise-removal obligation
 

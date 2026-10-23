@@ -215,4 +215,4 @@ singular gap; this audit does not re-prove those analytic inputs. The finite
 Haar-tail estimate retains m<=bN; the N=2 unbounded-degree failure control
 rules out an infinite-degree interpretation. The authoritative remaining
 space is the [exact projector residual](collective_projector_residual.md),
-which includes cycle-fixed vectors. See [the independent review](../record/collective_hierarchy_review.md).
+which includes cycle-fixed vectors. See [the independent review](../archive/record/collective_hierarchy_review.md).

@@ -152,7 +152,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-029](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) | proved | `BGS-FM-021`, `BGS-FM-027`, `BGS-FM-028`, `BGS-TRACE-023`, `BGS-TRACE-028` | None registered | 0 |
 | [BGS-TRACE-053](../mathematics/max_entry_phase_channel.md) | proved | None registered | None registered | 4 |
 | [BGS-TRACE-054](../mathematics/sharp_inner_jet.md) | proved | None registered | None registered | 0 |
-| [BGS-TRACE-055](../record/research_checkpoint_20261008.md) | verification-pending | `BGS-TRACE-053` | None registered | 0 |
+| [BGS-TRACE-055](../archive/record/research_checkpoint_20261008.md) | verification-pending | `BGS-TRACE-053` | None registered | 0 |
 | [BGS-TRACE-056](../mathematics/phase_channel_real_flow.md) | proved | `BGS-TRACE-053` | None registered | 2 |
 | [BGS-TRACE-057](../mathematics/source_covariance_20261011.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-058](../mathematics/integrable_phase_absorption_20261011.md) | proved | None registered | None registered | 1 |

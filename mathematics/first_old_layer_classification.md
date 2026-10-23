@@ -1,6 +1,6 @@
 # Exact classification of even first-old-layer two-mode blocks
 
-Claim family: BGS-FM-026. Source-bound [independent review](../record/first_old_layer_review.md).
+Claim family: BGS-FM-026. Source-bound [independent review](../archive/record/first_old_layer_review.md).
 The frozen original SHA256 is `3711869ecb05efda76066216ce29b84263ec12edca9c379e2ede9d16c5f21b41`;
 its exact bytes, original status and execution records remain in the
 [provenance map](../evidence/intermediate_old_layers_20261007/input_map.json).

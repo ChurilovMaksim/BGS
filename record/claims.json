@@ -323,7 +323,7 @@
       "evidence": [
         "evidence/20260924/frozen_total_minors.json",
         "record/fm008_fresh_independent_review.md",
-        "record/fm008_fresh_audit_mapping.json",
+        "archive/record/fm008_fresh_audit_mapping.json",
         "evidence/fm008_fresh_audit_20261006/promotion_receipt.json"
       ],
       "verifiers": [
@@ -379,7 +379,7 @@
       "evidence": [
         "evidence/20260924/frozen_arithmetic_traces.json",
         "record/trace_variance_review.md",
-        "record/spectral_extension_promotion_mapping.json",
+        "archive/record/spectral_extension_promotion_mapping.json",
         "evidence/spectral_extension_20261006/promotion_receipt.json"
       ],
       "verifiers": [
@@ -468,7 +468,7 @@
       "evidence": [
         "supplement/fixed_map/README.md",
         "supplement/fixed_map/resolvent-flow/loop_test_reductions.md",
-        "record/loop_test_reductions_review_20261006.md",
+        "archive/record/loop_test_reductions_review_20261006.md",
         "evidence/loop_reductions_20261006/provenance.json"
       ],
       "verifiers": [
@@ -1522,7 +1522,7 @@
       "evidence": [
         "evidence/executions/20261005/all-order/manifest.json",
         "evidence/executions/20261005/all-order/checks.json",
-        "record/all_order_review_20261005.md"
+        "archive/record/all_order_review_20261005.md"
       ],
       "verifiers": [
         "computations/verification/local_moment_transport.py"
@@ -1554,7 +1554,7 @@
       "evidence": [
         "evidence/executions/20261005/all-order/manifest.json",
         "evidence/executions/20261005/all-order/checks.json",
-        "record/all_order_review_20261005.md"
+        "archive/record/all_order_review_20261005.md"
       ],
       "verifiers": [
         "computations/verification/local_moment_transport.py"
@@ -1585,7 +1585,7 @@
       "evidence": [
         "evidence/executions/20261005/critical-noise/manifest.json",
         "evidence/executions/20261005/critical-noise/checks.json",
-        "record/critical_noise_review_20261005.md"
+        "archive/record/critical_noise_review_20261005.md"
       ],
       "verifiers": [
         "computations/verification/clock_structure_and_heat_projection.py"
@@ -1613,7 +1613,7 @@
       "evidence": [
         "evidence/executions/20261005/critical-noise/manifest.json",
         "evidence/executions/20261005/critical-noise/checks.json",
-        "record/critical_noise_review_20261005.md"
+        "archive/record/critical_noise_review_20261005.md"
       ],
       "verifiers": [
         "computations/verification/clock_structure_and_heat_projection.py"
@@ -1643,7 +1643,7 @@
       "evidence": [
         "evidence/executions/20261005/degree-growth/manifest.json",
         "evidence/executions/20261005/degree-growth/checks.json",
-        "record/growing_degree_review_20261005.md"
+        "archive/record/growing_degree_review_20261005.md"
       ],
       "verifiers": [
         "computations/verification/growing_degree_trace_projection.py"
@@ -1670,7 +1670,7 @@
         "evidence/executions/20261005/pair-heat/manifest.json",
         "evidence/executions/20261005/pair-heat/checks.json",
         "evidence/20261005/heisenberg_pair_heat_wolfram.json",
-        "record/heisenberg_pair_review_20261005.md",
+        "archive/record/heisenberg_pair_review_20261005.md",
         "archive/evidence/executions/20261005-pair-heat-integration.json"
       ],
       "verifiers": [
@@ -1695,7 +1695,7 @@
         "EXT-PP-1990"
       ],
       "evidence": [
-        "record/frozen_operator_transfer_review_20261006.md",
+        "archive/record/frozen_operator_transfer_review_20261006.md",
         "evidence/20261006/frozen_operator_transfer_contract.json",
         "evidence/executions/20261006/operator-transfer/manifest.json",
         "evidence/executions/20261006/operator-transfer/checks.json",
@@ -1722,7 +1722,7 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/collective_diffusion_review_20261006.md",
+        "archive/record/collective_diffusion_review_20261006.md",
         "evidence/20261006/collective_diffusion_contract_v2.json",
         "evidence/executions/20261006/collective-diffusion-exact-v2/manifest.json",
         "evidence/executions/20261006/collective-diffusion-exact-v2/checks.json",
@@ -1751,7 +1751,7 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/original_channel_gap_review_20261006.md",
+        "archive/record/original_channel_gap_review_20261006.md",
         "evidence/20261006/original_channel_gap_contract.json",
         "evidence/executions/20261006/original-channel-gap/checks.json",
         "evidence/executions/20261006/original-channel-gap/manifest.json"
@@ -1778,7 +1778,7 @@
         "evidence/executions/20261006/clock-control/exact_checks.json",
         "evidence/executions/20261006/clock-control/exact_checks_optimized.json",
         "evidence/executions/20261006/clock-control/mutation_checks.json",
-        "record/clock_control_review_20261006.md"
+        "archive/record/clock_control_review_20261006.md"
       ],
       "verifiers": [
         "computations/verification/isospectral_clock_control.py"
@@ -1796,8 +1796,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/path_theorems_review_20261006.md",
-        "record/marked_path_independent_review_20261006.md",
+        "archive/record/path_theorems_review_20261006.md",
+        "archive/record/marked_path_independent_review_20261006.md",
         "evidence/executions/20261006/path-theorems/receipt.json"
       ],
       "verifiers": [
@@ -1824,8 +1824,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/path_theorems_review_20261006.md",
-        "record/marked_path_independent_review_20261006.md",
+        "archive/record/path_theorems_review_20261006.md",
+        "archive/record/marked_path_independent_review_20261006.md",
         "evidence/executions/20261006/path-theorems/receipt.json"
       ],
       "verifiers": [
@@ -1855,9 +1855,9 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/three_block_independent_review_20261006.md",
+        "archive/record/three_block_independent_review_20261006.md",
         "evidence/executions/20261006/three-block/receipt.json",
-        "record/next_proofs_consolidation_review_20261006.md",
+        "archive/record/next_proofs_consolidation_review_20261006.md",
         "evidence/executions/20261006/next-proof-integration/receipt.json"
       ],
       "verifiers": [
@@ -1882,9 +1882,9 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/arithmetic_translation_review_20261006.md",
+        "archive/record/arithmetic_translation_review_20261006.md",
         "evidence/executions/20261006/divisor-exclusion/receipt.json",
-        "record/next_proofs_consolidation_review_20261006.md",
+        "archive/record/next_proofs_consolidation_review_20261006.md",
         "evidence/executions/20261006/next-proof-integration/receipt.json"
       ],
       "verifiers": [
@@ -1908,12 +1908,12 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "record/four_block_independent_review_20261006.md",
-        "record/four_cut_rank_two_review_20261006.md",
-        "record/four_cut_lean_review_20261006.md",
+        "archive/record/four_block_independent_review_20261006.md",
+        "archive/record/four_cut_rank_two_review_20261006.md",
+        "archive/record/four_cut_lean_review_20261006.md",
         "evidence/executions/20261006/four-block/receipt.json",
         "evidence/executions/20261006/four-cut-kernel/",
-        "record/next_proofs_consolidation_review_20261006.md",
+        "archive/record/next_proofs_consolidation_review_20261006.md",
         "evidence/executions/20261006/next-proof-integration/receipt.json"
       ],
       "verifiers": [
@@ -1937,8 +1937,8 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "record/four_cut_rank_two_review_20261006.md",
-        "record/four_cut_lean_review_20261006.md",
+        "archive/record/four_cut_rank_two_review_20261006.md",
+        "archive/record/four_cut_lean_review_20261006.md",
         "evidence/executions/20261006/four-cut-kernel/lean_manifest.json",
         "evidence/executions/20261006/next-proof-integration/receipt.json"
       ],
@@ -1973,14 +1973,14 @@
         "mathematics/heisenberg_trace_support.md"
       ],
       "evidence": [
-        "record/heisenberg_wkb_review_scope.md",
-        "record/heisenberg_wkb_review_provenance.json",
+        "archive/record/heisenberg_wkb_review_scope.md",
+        "archive/record/heisenberg_wkb_review_provenance.json",
         "evidence/executions/20261006/heisenberg-wkb/receipt.json",
-        "record/heisenberg_wkb_integration_delta.json",
+        "archive/record/heisenberg_wkb_integration_delta.json",
         "evidence/executions/20261006/heisenberg-wkb-integration/receipt.json",
-        "record/heisenberg_wkb_prior_attribution.json",
-        "record/global_rotated_box_review_scope.md",
-        "record/global_rotated_box_integration_delta.json"
+        "archive/record/heisenberg_wkb_prior_attribution.json",
+        "archive/record/global_rotated_box_review_scope.md",
+        "archive/record/global_rotated_box_integration_delta.json"
       ],
       "verifiers": [
         "computations/verification/heisenberg_wkb/check_independent.py",
@@ -2019,20 +2019,20 @@
       "evidence": [
         "evidence/actual_commutant_20261006/actual_family_review.md",
         "evidence/actual_commutant_20261006/promotion_receipt.json",
-        "record/actual_commutant_integration_map.json",
-        "record/actual_commutant_consolidation_review.md",
+        "archive/record/actual_commutant_integration_map.json",
+        "archive/record/actual_commutant_consolidation_review.md",
         "evidence/executions/20261006/actual-commutant-integration/receipt.json",
-        "record/first_seven_independent_review.md",
-        "record/first_seven_promotion_mapping.json",
+        "archive/record/first_seven_independent_review.md",
+        "archive/record/first_seven_promotion_mapping.json",
         "evidence/first_seven_20261006/promotion_receipt.json",
-        "record/ramified_first_seven_review.md",
-        "record/ramified_first_seven_promotion_mapping.json",
+        "archive/record/ramified_first_seven_review.md",
+        "archive/record/ramified_first_seven_promotion_mapping.json",
         "evidence/ramified_first_seven_20261006/promotion_receipt.json",
-        "record/ramified_higher_review.md",
-        "record/ramified_higher_promotion_mapping.json",
+        "archive/record/ramified_higher_review.md",
+        "archive/record/ramified_higher_promotion_mapping.json",
         "evidence/ramified_higher_20261006/promotion_receipt.json",
-        "record/exceptional_seven_review.md",
-        "record/exceptional_seven_mapping.json",
+        "archive/record/exceptional_seven_review.md",
+        "archive/record/exceptional_seven_mapping.json",
         "record/fm008_fresh_independent_review.md"
       ],
       "verifiers": [
@@ -2067,7 +2067,7 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "record/seven_primary_semantic_review.md",
+        "archive/record/seven_primary_semantic_review.md",
         "evidence/formalization/seven_primary_20261006/build_receipt.json",
         "evidence/formalization/seven_primary_20261006/independent_controls_receipt.json",
         "evidence/formalization/seven_primary_20261006/aggregate-build.json"
@@ -2100,9 +2100,9 @@
         "mathematics/phase_map_frostman.md"
       ],
       "evidence": [
-        "record/paired_phase_review.md",
-        "record/phase_frostman_review.md",
-        "record/paired_phase_promotion_mapping.json",
+        "archive/record/paired_phase_review.md",
+        "archive/record/phase_frostman_review.md",
+        "archive/record/paired_phase_promotion_mapping.json",
         "evidence/paired_phase_20261006/promotion_receipt.json"
       ],
       "verifiers": [
@@ -2131,10 +2131,10 @@
         "mathematics/finite_seven_spectral_pivots.md"
       ],
       "evidence": [
-        "record/uniform_five_cluster_review.md",
-        "record/five_cluster_input_review.md",
+        "archive/record/uniform_five_cluster_review.md",
+        "archive/record/five_cluster_input_review.md",
         "record/finite_seven_pivots_review.md",
-        "record/spectral_extension_promotion_mapping.json",
+        "archive/record/spectral_extension_promotion_mapping.json",
         "evidence/spectral_extension_20261006/promotion_receipt.json"
       ],
       "verifiers": [
@@ -2171,13 +2171,13 @@
         "mathematics/stationary_cyclic_residual.md"
       ],
       "evidence": [
-        "record/selected_weighted_interface_review.md",
-        "record/physical_homoclinic_weights_review.md",
-        "record/quantum_homoclinic_first_loop_review.md",
+        "archive/record/selected_weighted_interface_review.md",
+        "archive/record/physical_homoclinic_weights_review.md",
+        "archive/record/quantum_homoclinic_first_loop_review.md",
         "record/weighted_periodic_review.md",
-        "record/weighted_support_promotion_mapping.json",
+        "archive/record/weighted_support_promotion_mapping.json",
         "evidence/weighted_support_20261006/promotion_receipt.json",
-        "record/stationary_cyclic_residual_review.md"
+        "archive/record/stationary_cyclic_residual_review.md"
       ],
       "verifiers": [
         "computations/verification/weighted_periodic_support.py",
@@ -2213,17 +2213,17 @@
         "mathematics/ordered_diagonal_cyclic_trace.md"
       ],
       "evidence": [
-        "record/collective_hierarchy_review.md",
-        "record/quadratic_occupation_review.md",
-        "record/quadratic_slow_source_review.md",
-        "record/collective_promotion_mapping.json",
+        "archive/record/collective_hierarchy_review.md",
+        "archive/record/quadratic_occupation_review.md",
+        "archive/record/quadratic_slow_source_review.md",
+        "archive/record/collective_promotion_mapping.json",
         "evidence/collective_20261006/promotion_receipt.json",
-        "record/ordered_diagonal_review.md",
-        "record/ordered_diagonal_mapping.json",
+        "archive/record/ordered_diagonal_review.md",
+        "archive/record/ordered_diagonal_mapping.json",
         "evidence/ordered_diagonal_20261006/promotion_receipt.json",
-        "record/factorial_diagonal_review.md",
-        "record/mixed_ordered_diagonal_review.md",
-        "record/factorial_diagonal_promotion_mapping.json",
+        "archive/record/factorial_diagonal_review.md",
+        "archive/record/mixed_ordered_diagonal_review.md",
+        "archive/record/factorial_diagonal_promotion_mapping.json",
         "evidence/factorial_diagonal_20261007/promotion_receipt.json"
       ],
       "verifiers": [
@@ -2270,25 +2270,25 @@
       ],
       "evidence": [
         "record/cat_jet_rank_review.md",
-        "record/cat_jet_multiplicity_review.md",
-        "record/cat_jet_tower_review.md",
-        "record/cat_jet_even_review.md",
-        "record/cat_jet_odd_review.md",
-        "record/cat_jet_newest_review.md",
-        "record/cat_jet_finite_review.md",
-        "record/cat_jet_promotion_mapping.json",
+        "archive/record/cat_jet_multiplicity_review.md",
+        "archive/record/cat_jet_tower_review.md",
+        "archive/record/cat_jet_even_review.md",
+        "archive/record/cat_jet_odd_review.md",
+        "archive/record/cat_jet_newest_review.md",
+        "archive/record/cat_jet_finite_review.md",
+        "archive/record/cat_jet_promotion_mapping.json",
         "evidence/cat_jet_20261006/promotion_receipt.json",
-        "record/cat_jet_even_obstruction_review.md",
-        "record/first_old_layer_review.md",
-        "record/intermediate_return_review.md",
-        "record/residual25_affine_review.md",
+        "archive/record/cat_jet_even_obstruction_review.md",
+        "archive/record/first_old_layer_review.md",
+        "archive/record/intermediate_return_review.md",
+        "archive/record/residual25_affine_review.md",
         "record/intermediate_old_layers_promotion.md",
-        "record/intermediate_old_layers_promotion_mapping.json",
+        "archive/record/intermediate_old_layers_promotion_mapping.json",
         "evidence/intermediate_old_layers_20261007/promotion_receipt.json",
         "record/residual125_uniform_review.md",
         "record/residual125_promotion_map.json",
-        "record/odd_newest_sector_review.md",
-        "record/odd_sector_count_combination_review.md"
+        "archive/record/odd_newest_sector_review.md",
+        "archive/record/odd_sector_count_combination_review.md"
       ],
       "verifiers": [
         "computations/verification/cat_jet_certificates.py",
@@ -2336,8 +2336,8 @@
         "record/all_coordinate_translation_review.md",
         "record/low_switch_offcharge_review.md",
         "record/central_residual_promotion_map.json",
-        "record/fractional_hamming_review.md",
-        "record/fractional_hamming_raw_mapping.json",
+        "archive/record/fractional_hamming_review.md",
+        "archive/record/fractional_hamming_raw_mapping.json",
         "record/fractional_hamming_adapter_mapping.json",
         "evidence/fractional_hamming_20261007/replay/comparison.json",
         "record/half_radius_obstruction_review.md",
@@ -2411,7 +2411,7 @@
         "mathematics/balanced_pair_schur_reduction.md"
       ],
       "evidence": [
-        "record/schur_reduction_integration_proposal.json",
+        "archive/record/schur_reduction_integration_proposal.json",
         "evidence/schur_reduction_20261007/raw/review/review.md"
       ],
       "verifiers": [
@@ -2862,7 +2862,7 @@
       "title": "Submitted actual polylogarithmic deep-source hierarchy",
       "state": "verification-pending",
       "ledger_status": "VERIFICATION-PENDING COMPLETE HIERARCHY; ACCEPTED SUB-INPUTS TRACKED SEPARATELY",
-      "source": "record/research_checkpoint_20261008.md",
+      "source": "archive/record/research_checkpoint_20261008.md",
       "dependencies": [
         "BGS-TRACE-053"
       ],

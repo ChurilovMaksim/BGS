@@ -1,6 +1,6 @@
 # Residual-25 affine-return discriminator
 
-Claim family: BGS-FM-026. Source-bound [independent review](../record/residual25_affine_review.md).
+Claim family: BGS-FM-026. Source-bound [independent review](../archive/record/residual25_affine_review.md).
 The frozen original SHA256 is `afc110371271dcb24a52c5059184ee5ebdd9db8b5a127bb10f13d414819bf421`;
 its exact bytes, original status and execution records remain in the
 [provenance map](../evidence/intermediate_old_layers_20261007/input_map.json).

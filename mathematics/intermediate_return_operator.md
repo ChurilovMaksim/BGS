@@ -1,6 +1,6 @@
 # Intermediate-old-layer rotated returns: exact operator and obstruction
 
-Claim family: BGS-FM-026. Source-bound [independent review](../record/intermediate_return_review.md).
+Claim family: BGS-FM-026. Source-bound [independent review](../archive/record/intermediate_return_review.md).
 The frozen original SHA256 is `3f42c4f41f448c221e4dc92495a11caa3b2cd661168f8cd888abd35971ed1932`;
 its exact bytes, original status and execution records remain in the
 [provenance map](../evidence/intermediate_old_layers_20261007/input_map.json).

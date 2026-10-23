@@ -1,0 +1,41 @@
+{
+  "scope": "Prepared outside canonical only, while previous batch publishes. No integration authorization assumed.",
+  "reviewed_candidate_hashes_verified": 6,
+  "reviewed_review_hashes_verified": 6,
+  "canonical_dependency_hashes_at_preparation": {
+    "mathematics/fixed_model_symmetry_theorem.md": "32b2302c2567eebb75ff2231345e3336495ba8719517be6b5ce8734b416920c2",
+    "mathematics/frozen_seven_cut_reduction.md": "af615f74c88d475267207b2404d6b0674e6aa7f5b9cc32346bf412d2de3feb39",
+    "mathematics/frozen_algebraic_spectral_simplicity.md": "d003b2abcb72d8f4922105a25892c43c8fdcd12f19a6d67ba8b51b2a3a9e2af2",
+    "computations/verification/frozen_antireversor.py": "2bd246b21def724ef07c849cb507d4a18e904039307322164d095f40c5424e0f"
+  },
+  "files": [
+    {
+      "original_name": "ramified_first_seven_trace.md",
+      "original_sha256": "b9aab9a0edbf91ef2e6ab477e52f24ec3a5ff0b9cf661bcb98e613cfb8ab3d17",
+      "destination": "mathematics/ramified_first_seven_commutant.md",
+      "destination_sha256": "df0ab1f825121c2ed6be8be43f79acf438b63de80790e10df733ca74bd95c950"
+    },
+    {
+      "original_name": "ramified_chain_trace_audit.md",
+      "original_sha256": "49cafb3edc73adf5afef7f9e158157d568e94a3a874dc3c0019bc68b07ab9ffa",
+      "destination": "record/ramified_first_seven_review.md",
+      "destination_sha256": "923addeba071896f3651b82d881668533a16a7ad9e68b4cee0d7382241b4b06f"
+    },
+    {
+      "original_name": "independent_check.py",
+      "original_sha256": "7583c166c12f095c9643e4ba3806c61c6f85b671f576b77b8e249b0d1f372774",
+      "destination": "computations/verification/ramified_first_seven_trace.py",
+      "destination_sha256": "ac3f067c1fa168bc981932e39a203b58729fca459237ac930fa23366a6028cc6",
+      "first_preparation_sha256": "89c22afa04662a00ab1abe23cebe7c0e796779f41d8607e6a3ef8726327b636d"
+    },
+    {
+      "original_name": "ramified_trace_certificate.json",
+      "original_sha256": "e902fdcbf042d53b5df4d8be1f9f44bc5e4866a333e85af5f60cbedfa4419f93",
+      "destination": "computations/verification/ramified_first_seven/certificate.json",
+      "destination_sha256": "e902fdcbf042d53b5df4d8be1f9f44bc5e4866a333e85af5f60cbedfa4419f93"
+    }
+  ],
+  "transformations": "Proof/review status, spacing and portable locators only. Independent algorithm moved under run; inert field constants/helpers remain global; runtime input reduced to sole actually used certificate, six original lineage hashes separately verified. Output via stdout or explicit non-source fresh file. Explicit checks unchanged. No numerical bound or theorem formula changed.",
+  "target_base_after_publication": "22f9997342780bb08998ed7c2a209fc20af10b33",
+  "metadata_clarification": "Inherited review-base label made explicit; no portable claim to observing canonical HEAD."
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "bgs-schur-integration-proposal-v1",
+  "status": "outside-canonical; no registry edits",
+  "claim_id": "Assign unused stable ID at integration; none reserved here",
+  "title": "Exact full balanced-pair Schur-energy and three-radius reduction",
+  "proof": "mathematics/balanced_pair_schur_reduction.md",
+  "review": "evidence/schur_reduction_20261007/raw/review/review.md",
+  "verification": "computations/verification/balanced_pair_schur.py",
+  "proposed_status": "EXACT PROJECT REDUCTION + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS",
+  "proved": [
+    "Full finite-N positive Schur-energy identity for arbitrary unitary matrices",
+    "Equivalence between actual radial Abel limit and expected three-radius criterion",
+    "One-step conditional second and fourth moments; explicit nonclosure",
+    "Boundary Poisson marginal with degenerate point mass",
+    "Precisely scoped cycle, coherence and principal-minor controls"
+  ],
+  "open": [
+    "Actual radial limit",
+    "Deterministic nonzero-charge comparison",
+    "Higher factorial hierarchy",
+    "TRACE-005",
+    "BGS-BGS-001"
+  ],
+  "dependencies": [
+    {
+      "source": "Elementary internal finite-N algebra and phase integration",
+      "scope": "Exact identities and derivative-free equivalence; no model-specific analytic prerequisite"
+    },
+    {
+      "source": "supplement/fixed_map/weighted-secular/determinant_boundary.md",
+      "scope": "Prior positive compact/Abel bridge; reverse direction retains near-zero majorant and Fejer tail"
+    },
+    {
+      "source": "BGS-FM-021",
+      "scope": "Only inherited entrywise flatness for actual boundary-density uniformity; no recertification"
+    }
+  ],
+  "context_not_new_dependency": [
+    {
+      "source": "BGS-FM-022",
+      "reason": "Reverse-kernel bound is not used to prove microscopic radial closure or elimination propagation"
+    },
+    {
+      "source": "BGS-TRACE-021",
+      "reason": "Hamming/low-switch residual is distinct and remains unestimated; no new mask equivalence"
+    }
+  ],
+  "standard_tools_credit": [
+    "Schur complements",
+    "Martingale orthogonality",
+    "Scalar phase integration",
+    "Poisson kernel and harmonic measure",
+    "Cyclic-permutation control"
+  ],
+  "new_external_theorem_dependencies": [],
+  "integration_surfaces_proposed": [
+    "record/claim_ledger.md",
+    "record/claims.json",
+    "record/claim_registry.md",
+    "record/scientific_dependencies.json",
+    "record/scientific_dependency_graph.md",
+    "mathematics/results.md",
+    "mathematics/open_questions.md",
+    "record/mathematics_topics.json",
+    "mathematics/topics/trace-bridge/README.md",
+    "manuscript/BGS_unified.tex"
+  ],
+  "never_infer": [
+    "Pathwise three-radius positivity before expectation",
+    "Compact-to-Abel from bands separated from zero alone",
+    "Boundary Fourier moments control microscopic radial derivatives",
+    "Initial FM-021/FM-022 bounds propagate through elimination",
+    "Finite clock/minor controls are actual-family asymptotic counterexamples",
+    "Pair reduction closes higher factorial orders or BGS"
+  ],
+  "canonical_edits": false,
+  "commit": false,
+  "publication": false,
+  "formalization": false
+}

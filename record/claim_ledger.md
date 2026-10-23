@@ -355,7 +355,7 @@ at log^(4+kappa). The scalar microscopic law remains unresolved.
 |---|---|---|
 | BGS-TRACE-053 | PROJECT PROOF + independent internal reconstruction | [Max-entry phase memory](../mathematics/max_entry_phase_channel.md): complete collision corrections, degree-two norm, explicit averaged-pinching rate; no microscopic spectral law |
 | BGS-TRACE-054 | STRENGTHENED PROJECT PROOF + independent internal reconstruction | [Sharp matrix inner jets](../mathematics/sharp_inner_jet.md): optimal leading 4/3 for general noncommuting rational inner F=zG; localization penalty retained |
-| BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](research_checkpoint_20261008.md): the complete submitted hierarchy remains pending; covariance and physical L2 transport are reconstructed, while delay and gap results retain all-time-flatness hypotheses |
+| BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](../archive/record/research_checkpoint_20261008.md): the complete submitted hierarchy remains pending; covariance and physical L2 transport are reconstructed, while delay and gap results retain all-time-flatness hypotheses |
 | BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
 
 [Proof review and bounded executions](../evidence/executions/20261008/phase-channel-jet/README.md)
@@ -401,7 +401,7 @@ with the original denominator. The unnormalized tensor partial trace gives an
 exact long-long signed target. Actual anchors, that target, and the full mixed
 hierarchy remain unproved; TRACE-005 and BGS-BGS-001 remain OPEN. The named
 external characterization is inherited, not reproved. See the
-[scoped review](loop_test_reductions_review_20261006.md).
+[scoped review](../archive/record/loop_test_reductions_review_20261006.md).
 
 ## Status vocabulary
 
@@ -1094,7 +1094,7 @@ Earlier acceptance narratives are preserved with their original scientific scope
 
 ## Fixed-order complete WKB reduction (6 October 2026)
 
-**BGS-TRACE-017: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; analytic chain unformalized.** For each fixed k and compact smooth Fourier weight, choose fixed J>=k. The complete partition transform of either named WKB trace table differs from the actual unitary transform by O(N^(k-J-1/2)). [The proof](../mathematics/factorial_wkb_reduction.md) distinguishes Laurent and adjoint tables. Exact finite-power reciprocity, formal connected coefficients and the actual conditioned rotated-box first-loop theorem are supporting, separately scoped results. No growing-order claim is made. The separate [global rotated-box theorem](../mathematics/global_rotated_box_trace.md) now supplies a finite-band contour representation and summed tail, conservatively through m<=2N; signed box evaluation and unrestricted bands remain open. The full signed comparison is equivalent and remains OPEN, as do TRACE-005 and BGS-BGS-001. See [review scope](../record/heisenberg_wkb_review_scope.md).
+**BGS-TRACE-017: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; analytic chain unformalized.** For each fixed k and compact smooth Fourier weight, choose fixed J>=k. The complete partition transform of either named WKB trace table differs from the actual unitary transform by O(N^(k-J-1/2)). [The proof](../mathematics/factorial_wkb_reduction.md) distinguishes Laurent and adjoint tables. Exact finite-power reciprocity, formal connected coefficients and the actual conditioned rotated-box first-loop theorem are supporting, separately scoped results. No growing-order claim is made. The separate [global rotated-box theorem](../mathematics/global_rotated_box_trace.md) now supplies a finite-band contour representation and summed tail, conservatively through m<=2N; signed box evaluation and unrestricted bands remain open. The full signed comparison is equivalent and remains OPEN, as do TRACE-005 and BGS-BGS-001. See [review scope](../archive/record/heisenberg_wkb_review_scope.md).
 
 ## Actual higher-seven-primary common commutant (6 October 2026)
 
@@ -1104,7 +1104,7 @@ Earlier acceptance narratives are preserved with their original scientific scope
 
 **BGS-FORMAL-003: COMPILED LEAN NATIVE-EVALUATION CERTIFICATE + INDEPENDENT SEMANTIC REVIEW.** The unchanged isolated source compiled and proves 22 executable GF(5) array predicates: seven product identities, all-factor Rabin computational conditions on 46 factor occurrences, seven degree exclusions and the finite order-49 predicate. An independent semantic audit and 1,896 fresh compiled controls passed. This does not formalize generic polynomial correctness, Rabin's theorem, the finite-field bridges or FM-024's actual commutant proof. The aggregate import rebuild remains a distinct gate. See [exact scope](../formalization/seven_primary_certificate.md).
 
-The independent FM-024 consolidation audit accepted the expanded proof and the algebraic-entry literal-U corollary at overlay SHA-256 `812c3610ef28290c3e5c6e1b702807ab8b01d93eae1c48e87cfe79efccf9c86e`. The integration map records subsequent locator/spacing changes only. [Consolidation review](../record/actual_commutant_consolidation_review.md). No spectral-simplicity conclusion was added.
+The independent FM-024 consolidation audit accepted the expanded proof and the algebraic-entry literal-U corollary at overlay SHA-256 `812c3610ef28290c3e5c6e1b702807ab8b01d93eae1c48e87cfe79efccf9c86e`. The integration map records subsequent locator/spacing changes only. [Consolidation review](../archive/record/actual_commutant_consolidation_review.md). No spectral-simplicity conclusion was added.
 
 Prior ownership clarification for TRACE-017: heisenberg_trace_support.md Section 3 already proves the general nonunitary integer-power and full partition perturbation estimate without a microscopic correlation assumption. TRACE-017 supplies the actual arbitrary-fixed-order WKB construction/instantiation and explicit adjoint-table convention, rather than inventing that perturbation lemma. See record/heisenberg_wkb_prior_attribution.json for source-bound hashes.
 

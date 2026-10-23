@@ -95,7 +95,7 @@ addresses that correction. Higher factorial orders remain separate.
 
 ## Scoped review and original correction
 
-See [the detailed audit and v2 confirmation](../record/stationary_cyclic_residual_review.md).
+See [the detailed audit and v2 confirmation](../archive/record/stationary_cyclic_residual_review.md).
 The original unrestricted torsion sentence was rejected; only its unremoved
 portions remain after cyclic removal. Original and corrected bytes remain
 source-bound historical evidence. FM-021 owns the prior position-path ramp;

@@ -153,4 +153,4 @@ The v1 proof remained incomplete. Only the v2 two-index coefficientwise
 cyclic-arc invariant and corrected broad/local analytic domains have the
 accepted uniform verdict. The finite replay certifies the inherited residue
 and jet input; it does not replace the all-depth analytic induction.
-See [the scoped review](../record/uniform_five_cluster_review.md).
+See [the scoped review](../archive/record/uniform_five_cluster_review.md).

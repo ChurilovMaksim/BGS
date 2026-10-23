@@ -190,7 +190,7 @@ clock obstructions, signed finite-field collisions and frozen circular laws.
 
 ## Reviewed phase-memory and sharp-jet continuation, 8 October 2026
 
-[The research checkpoint](../record/research_checkpoint_20261008.md) reconstructs
+[The research checkpoint](../archive/record/research_checkpoint_20261008.md) reconstructs
 TRACE-053's max-entry channel and explicit averaged-pinching rate, proves
 TRACE-054's optimal 4/3 matrix inner jet bound with localization correction,
 and proves TRACE-056's direct real-flow absorbed scalar L1 comparison.

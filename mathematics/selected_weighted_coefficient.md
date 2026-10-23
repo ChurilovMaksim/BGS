@@ -188,8 +188,8 @@ above from the separately audited inputs.
 Supporting maintained sources are physical_homoclinic_weights.md,
 quantum_homoclinic_first_loop.md, weighted_periodic_equidistribution.md and
 exact_homoclinic_potential.md. The scoped interface review is
-[record/selected_weighted_interface_review.md](../record/selected_weighted_interface_review.md).
+[record/selected_weighted_interface_review.md](../archive/record/selected_weighted_interface_review.md).
 The original source paths and every exact reviewed hash remain in the
-[promotion map](../record/weighted_support_promotion_mapping.json).
+[promotion map](../archive/record/weighted_support_promotion_mapping.json).
 The compact portable check is computations/verification/weighted_periodic_support.py;
 its combined mode retains all 18,816 finite rational interface controls.

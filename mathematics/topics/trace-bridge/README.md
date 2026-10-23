@@ -136,7 +136,7 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [Sharp matrix inner jet](../../sharp_inner_jet.md) (TRACE-054): optimal universal 4/3 and exact smooth-localization correction.
 - [Direct real-flow scalar transport](../../phase_channel_real_flow.md) (TRACE-056): normal scalar absorption and L1 comparison, including each fixed derivative.
 
-[The submitted deep-source hierarchy disposition](../../../record/research_checkpoint_20261008.md) leaves TRACE-055 verification-pending. Channel operator norm does not identify the scalar cavity law or TRACE-005.
+[The submitted deep-source hierarchy disposition](../../../archive/record/research_checkpoint_20261008.md) leaves TRACE-055 verification-pending. Channel operator norm does not identify the scalar cavity law or TRACE-005.
 
 ## Checked 11 October continuations
 

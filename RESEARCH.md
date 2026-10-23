@@ -220,7 +220,7 @@ They retain their own regimes and are not automatic BGS inputs.
 The [source-disposition review](literature/phase_channel_jet_sources_20261008.md)
 identifies the attached 293-page PDF by hash, maps its final sections to the
 maintained corpus and separates proved overlap from unreconstructed inputs.
-The [8 October checkpoint](record/research_checkpoint_20261008.md) supplies
+The [8 October checkpoint](archive/record/research_checkpoint_20261008.md) supplies
 full proofs for TRACE-053/054/056 and an explicit disposition of TRACE-055.
 TRACE-053 also covers the article's fixed-flatness TRACE-047 as a corollary.
 

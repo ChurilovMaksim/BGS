@@ -73,5 +73,5 @@ and cycle cancellations. The ordered exponential bound does not imply the
 collective O(1) bound. O6 is exponential in N uniformly for m>=aN, not
 exponential in m at fixed N. The remaining balanced and off-charge Q_ord
 trace is unestimated. This companion inherits only FM-021 singular mixing,
-not its separate flatness estimate. [The independent review](../record/ordered_diagonal_review.md)
+not its separate flatness estimate. [The independent review](../archive/record/ordered_diagonal_review.md)
 retains the failed first resource cap separately from successful bounded checks.

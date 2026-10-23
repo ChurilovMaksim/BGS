@@ -8,7 +8,7 @@ The statements below concern a specified auxiliary noise ensemble. The
 unregularized fixed map, its signed Heisenberg traces and full BGS remain
 the original target. Priority and an analytic formalization are not claimed.
 
-The [review](../record/collective_diffusion_review_20261006.md) and
+The [review](../archive/record/collective_diffusion_review_20261006.md) and
 [programme](../archive/record/collective_diffusion_program_20261006.md) state the
 acceptance and execution scope. General noise moment-semigroup and design
 methods are prior; see the [source check](../literature/collective_diffusion_sources_20261006.md).
