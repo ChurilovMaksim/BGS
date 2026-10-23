@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-070. **State:** PROVED.
 **Boundary:** Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/form_factor_curve.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/form_factor_curve.md).
 
 
 Fix T<∞. For τ>0 use a positive trace order

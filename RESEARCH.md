@@ -272,7 +272,7 @@ is not a complete proof review; inherited analytic chains retain their
 recorded review boundaries. Priority for the reconstructed inequalities is
 not established.
 
-The [11 October execution packet](evidence/executions/20261011/chat-research/fresh/README.md)
+The [11 October execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md)
 records the complete 217-check workspace snapshot, 236 maintenance tests,
 23 active Lean modules / 26 Lake jobs and its 284-page manuscript build.
 The [subsequent cavity packet](evidence/executions/20261011/cavity-continuation/README.md)

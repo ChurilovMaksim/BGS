@@ -1,6 +1,6 @@
 # Совместная сумма всех кластеров дефекта не выше двух
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-103**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md), SHA-256 `c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-103**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md), SHA-256 `c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское компьютерно поддержанное доказательство и самопроверка; независимой рецензии и установленного приоритета нет. Полная BGS и перенос к замороженному пропагатору не утверждаются.
@@ -45,7 +45,7 @@ g_4(1,x)=-q_4(x),\quad q_4=6+\tfrac{25}{2}x+\tfrac{19}{2}x^2+2x^3.
 \tag{3}
 $$
 
-Полнота четырёхпортового подсчёта доказана в [extremal_graphs_ru.md](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), полный второй дефект — в [second_defect_complete_ru.md](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md). Трёхпортовые данные унаследованы из прошлого пакета и полностью воспроизведены новым графовым движком.
+Полнота четырёхпортового подсчёта доказана в [extremal_graphs_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), полный второй дефект — в [second_defect_complete_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md). Трёхпортовые данные унаследованы из прошлого пакета и полностью воспроизведены новым графовым движком.
 
 ## 2. Точная конечная сумма по пяти индексам
 

@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-068. **State:** PROVED.
 **Boundary:** Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/phase_contraction.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/phase_contraction.md).
 
 
 ## Models

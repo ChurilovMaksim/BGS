@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-064. **State:** PROVED.
 **Boundary:** Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/torus_universality_2026_10_10/torus_contraction.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/torus_universality_2026_10_10/torus_contraction.md).
 
 
 10 октября 2026 года. Каноническая интеграция в BGS от 11 октября 2026 года.

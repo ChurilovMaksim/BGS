@@ -4,7 +4,7 @@
 
 **Exact scope:** Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S04` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s04). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S04` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s04). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../archive/evidence/executions/20261016/chat-integration/receipt.json).
 
 
 Research note, 14 October 2026. This is an independent in-chat derivation, **not** a claimed proof of BGS, and **not** a priority or peer-review claim. No repository mutations were made.

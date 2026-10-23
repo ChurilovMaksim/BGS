@@ -48,7 +48,7 @@ def main():
     manifest=json.loads((ROOT/'archive/record/chat_integration_20261016.json').read_text())
     inv=json.loads((ROOT/manifest['historical_inventory']).read_text())
     need(len(inv)==90 and len({r['id'] for r in inv})==90,'Incomplete source inventory')
-    receipt=json.loads((ROOT/'evidence/executions/20261016/chat-integration/receipt.json').read_text())
+    receipt=json.loads((ROOT/'archive/evidence/executions/20261016/chat-integration/receipt.json').read_text())
     tasks=json.loads((Path(__file__).parent/'tasks.json').read_text())
     taskmap={t['name']:t for t in tasks}
     need(set(taskmap)=={t['name'] for t in receipt['tasks']},'Replay task coverage differs')
@@ -59,7 +59,7 @@ def main():
              'Stale replay source: '+task['name'])
         need(task['status']=='PASS' and task['returncode']==0,'Incomplete replay: '+task['name'])
         for name,digest in task['outputs_sha256'].items():
-            out=ROOT/'evidence/executions/20261016/chat-integration'/task['name']/name
+            out=ROOT/'archive/evidence/executions/20261016/chat-integration'/task['name']/name
             need(hashlib.sha256(out.read_bytes()).hexdigest()==digest,'Changed replay output: '+name)
     need(claims['BGS-BGS-001']['state']=='open' and claims['BGS-TRACE-005']['state']=='open',
          'Physical BGS target changed unexpectedly')

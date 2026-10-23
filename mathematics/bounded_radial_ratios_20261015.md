@@ -4,7 +4,7 @@
 
 **Exact scope:** Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N.
 
-Canonical status is [the claim ledger](../record/claim_ledger.md); source `S14` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s14). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../evidence/executions/20261016/chat-integration/receipt.json).
+Canonical status is [the claim ledger](../record/claim_ledger.md); source `S14` is preserved verbatim in [the imported record](../archive/history/2026/chat_20261015/BGS_complete_research_2026-10-15.md#s14). Original execution counts are historical; fresh execution is recorded in [the integration receipt](../archive/evidence/executions/20261016/chat-integration/receipt.json).
 
 
 Date: 15 October 2026.

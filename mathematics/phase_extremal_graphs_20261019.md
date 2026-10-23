@@ -1,11 +1,11 @@
 # Полная классификация графов четырёхпортового связного кластера
 
-**Maintained scope, 19 October 2026.** Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), SHA-256 `cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), SHA-256 `cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство и вычислительная самопроверка. Независимой рецензии и установленного приоритета нет. Объект — точное фазовое семейство $U=DS$, $S_{xy}=N^{-1/2}e^{2\pi i\Omega(x,y)/p}$, $N=p^{2d}$, с независимыми круговыми фазами, а не исходный замороженный пропагатор.
 
-Используются определения и доказанные ранговые границы из [../bgs_ward_20261019/dependencies/neutral_peeling_ru.md](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md) и `incidence_resummation_ru.md`. Порядок связного кластера $j=c+s$, его число портов $e$, дефект $\delta=2j-e$. Здесь рассматривается насыщенный случай $e=j+1$, $j\le3$.
+Используются определения и доказанные ранговые границы из [../bgs_ward_20261019/dependencies/neutral_peeling_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md) и `incidence_resummation_ru.md`. Порядок связного кластера $j=c+s$, его число портов $e$, дефект $\delta=2j-e$. Здесь рассматривается насыщенный случай $e=j+1$, $j\le3$.
 
 ## 1. Насыщение исключает большинство графов
 
@@ -124,7 +124,7 @@ $$
 
 Аналогично $q_A\le11$ при $g=2$, и $q_A\le6$ при $g=1$. С учётом пассивных вершин и двух компонент из раздела 1 **весь связный четырёхпортовый кластер имеет $q\le16$**.
 
-[graph_catalogue.py](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/graph_catalogue.py) реализует ровно перечисленные семейства. Получено 2 ориентированных класса ранга 1, 8 ранга 2 и 59 ранга 3. Эти числа — вычисленный каталог, а полнота следует из предыдущих разделов. При равенстве $t_2=s_2$ проверена замкнутость каталога относительно $B\mapsto-B^{\mathsf T}$.
+[graph_catalogue.py](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/graph_catalogue.py) реализует ровно перечисленные семейства. Получено 2 ориентированных класса ранга 1, 8 ранга 2 и 59 ранга 3. Эти числа — вычисленный каталог, а полнота следует из предыдущих разделов. При равенстве $t_2=s_2$ проверена замкнутость каталога относительно $B\mapsto-B^{\mathsf T}$.
 
 ## 4. Все столкновения при максимальном падении ранга
 

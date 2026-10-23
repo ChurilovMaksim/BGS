@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-065. **State:** PROVED.
 **Boundary:** Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/rank_defect_2026_10_10/rank_defect_theorem.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/rank_defect_2026_10_10/rank_defect_theorem.md).
 
 
 Версия от 10 октября 2026 года. Доказательства проверены независимым агентом;

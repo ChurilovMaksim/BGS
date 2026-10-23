@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-057. **State:** PROVED.
 **Boundary:** The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/source_covariance.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/source_covariance.md).
 
 
 8 October 2026. Self-contained reconstruction of the assertion in the supplied manuscript, Theorem 87.10 / TRACE-044. This is not a novelty claim.

@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-072. **State:** PROVED.
 **Boundary:** Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/deterministic_path_transport.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/deterministic_path_transport.md).
 
 
 11 October 2026. Project proof and independent internal reconstruction.

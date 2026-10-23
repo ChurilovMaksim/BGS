@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-063. **State:** PROVED.
 **Boundary:** Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/flat_completion_2026_10_09/nonlinear_coercivity.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/flat_completion_2026_10_09/nonlinear_coercivity.md).
 
 
 9 октября 2026 года. Положительный аналитический результат; ниже точно

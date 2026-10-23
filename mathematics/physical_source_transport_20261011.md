@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-059. **State:** PROVED.
 **Boundary:** Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/physical_source_transport.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/physical_source_transport.md).
 
 
 8 October 2026. Derived in this session, using the already proved real-flow theorem TRACE-056 and the self-contained covariance proof in source_covariance_20261011.md.  The statement is a scalar comparison, not an evaluation of the scalar reference law. External priority is not established.

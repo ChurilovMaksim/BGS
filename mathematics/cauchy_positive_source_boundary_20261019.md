@@ -1,6 +1,6 @@
 # Точный закон всех положительных резольвентных источников и предел такого усреднения
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-105**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md), SHA-256 `0b34f167c45622541909995338b61326ab675c343133d2b8255a89ac691fdb1f`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-105**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md), SHA-256 `0b34f167c45622541909995338b61326ab675c343133d2b8255a89ac691fdb1f`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство и отдельная самопроверка. Механизм — классическое гармоническое усреднение Коши; мировая новизна не утверждается. Полная BGS и смешанные микроскопические корреляции не доказаны.
@@ -150,7 +150,7 @@ $$
 
 ## Дополнение: точная самодуальность положительных проекций
 
-[Полный исходный текст и доказательство](../evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_projection_self_duality_ru.md), SHA-256 `153e8131c7c6c27770c1af928aee0713c5886192e815ce32df5fff823bdc3fac`.
+[Полный исходный текст и доказательство](../archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_projection_self_duality_ru.md), SHA-256 `153e8131c7c6c27770c1af928aee0713c5886192e815ce32df5fff823bdc3fac`.
 
 19 октября 2026. Дополнение к `cauchy_positive_source_boundary_ru.md`. Авторское доказательство и самопроверка; общий механизм усреднения Коши классический, приоритет не установлен.
 

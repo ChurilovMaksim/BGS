@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-061. **State:** PROVED.
 **Boundary:** Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/phase_frame_2026_10_09/clock_basis_obstruction.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/phase_frame_2026_10_09/clock_basis_obstruction.md).
 
 
 9 октября 2026 года. Алгебраический результат и явная последовательность примеров. Это не контрпример BGS: ниже не доказаны ни гипотезы классического хаоса для исходных матриц, ни нарушение статистики ансамбля независимых фаз.

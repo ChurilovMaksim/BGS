@@ -33,7 +33,7 @@ $$
 
 The complete principal block uses the source's additional reversal hypothesis. For the stated smooth bounded tests of disjoint entries, the error is of order $(u_N/N)^{1/4}+u_N^{-1/8}$. The stopping estimates count the current retained dimension rather than taking a union over all initial labels. This does not permit setting $u=2$.
 
-Adopted proof and pinned hypotheses: [dimension-uniform feedback](../evidence/executions/20261019/chat-research/bgs_focus_20261017/dimension_uniform_feedback.md), with [the original covariance proof](../evidence/executions/20261019/chat-research/bgs_focus_20261016/deep_feedback_gaussian.md). The conditional review is [explicit](../evidence/executions/20261019/chat-research/bgs_focus_20261017/self_review.md). This integration preserves that conditional status.
+Adopted proof and pinned hypotheses: [dimension-uniform feedback](../archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/dimension_uniform_feedback.md), with [the original covariance proof](../archive/evidence/executions/20261019/chat-research/bgs_focus_20261016/deep_feedback_gaussian.md). The conditional review is [explicit](../archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/self_review.md). This integration preserves that conditional status.
 
 ## BGS-TRACE-096: transmission and bounded eigenvector ratios
 
@@ -48,13 +48,13 @@ $$
 
 The resulting probability kernel is weakly continuous and injective. Consequently the transmission laws converge to Uniform$[0,1]$ if and only if the corresponding $Y$ laws converge to Beta$(1,2)$. This is not a proof of either convergence for the required deterministic startup.
 
-Adopted full proof, endpoint conventions and prior scalar-delay attribution: [spectral averaging](../evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md). Only the successful v2 finite run has valid preserved input provenance. The original failed run has the explicit [ERR-031 disposition](../archive/record/chat_integration_20261019.md).
+Adopted full proof, endpoint conventions and prior scalar-delay attribution: [spectral averaging](../archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md). Only the successful v2 finite run has valid preserved input provenance. The original failed run has the explicit [ERR-031 disposition](../archive/record/chat_integration_20261019.md).
 
 ## BGS-TRACE-097: conditional positive Heisenberg path current
 
 **Conditional on the stated fixed-level TV compactness TC.** The complete normalized positive path-clock current is controlled at arbitrary cutoffs $K_N\to\infty$. The adopted proof covers the noncommuting fixed-colligation tensor kernel and its infinite positive tail; it does not evaluate the finite-channel transmission law or the complete signed trace sum.
 
-Exact hypotheses, normalization and conclusion: [uniform current theorem](../evidence/executions/20261019/chat-research/bgs_continue_20261017/uniform_heisenberg_path_current.md) and [tensor kernel](../evidence/executions/20261019/chat-research/bgs_continue_20261017/tensor_path_current_limit.md). TV compactness itself retains the full $G$ or rank condition $R$ specified in [its proof](../evidence/executions/20261019/chat-research/bgs_review_20261017/fixed_channel_total_variation_compactness.md). None of these assumptions is silently discharged by a mesoscopic Gaussian block law.
+Exact hypotheses, normalization and conclusion: [uniform current theorem](../archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/uniform_heisenberg_path_current.md) and [tensor kernel](../archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/tensor_path_current_limit.md). TV compactness itself retains the full $G$ or rank condition $R$ specified in [its proof](../archive/evidence/executions/20261019/chat-research/bgs_review_20261017/fixed_channel_total_variation_compactness.md). None of these assumptions is silently discharged by a mesoscopic Gaussian block law.
 
 ## BGS-TRACE-098: fixed traces and secular coefficients
 
@@ -75,13 +75,13 @@ $$
 
 Unequal total lengths give zero exactly. The zero-rank permutation classes distinguish fixed points and transpositions from oriented cycles of length at least three. The same adopted source evaluates the secular hierarchy and states its whole-disk boundary.
 
-Full proof, exact formulas and limitations: [secular and trace hierarchy](../evidence/executions/20261019/chat-research/bgs_attempt_20261018/secular_hierarchy_ru.md). The [bilinear seed classification](../evidence/executions/20261019/chat-research/bgs_attempt_20261018/bilinear_seed_classification_ru.md) is also preserved, with its complex Gauss factors retained. These results neither identify local spacings nor contradict a possible local Sine2 law.
+Full proof, exact formulas and limitations: [secular and trace hierarchy](../archive/evidence/executions/20261019/chat-research/bgs_attempt_20261018/secular_hierarchy_ru.md). The [bilinear seed classification](../archive/evidence/executions/20261019/chat-research/bgs_attempt_20261018/bilinear_seed_classification_ru.md) is also preserved, with its complex Gauss factors retained. These results neither identify local spacings nor contradict a possible local Sine2 law.
 
 ## BGS-TRACE-099: polynomial trace windows
 
 For the specified symplectic seeds, the signed mixed-moment comparison reaches trace powers $o(N^{1/5})$. For the generic fixed bilinear seeds of dimension $b$, the proved sufficient range is $o(N^{1/(6b)})$. Complex quadratic Gauss phases are retained in the latter case. The associated disk laws concern fixed compact subsets of $|z|<1$; they do not reach $z=e^{-s/N}$.
 
-Adopted proofs: [symplectic window](../evidence/executions/20261019/chat-research/bgs_boundary_20261018/polynomial_trace_window_ru.md) and [generic bilinear window](../evidence/executions/20261019/chat-research/bgs_boundary_20261018/generic_bilinear_window_ru.md). Their [positive Gaussian comparison obstruction](../evidence/executions/20261019/chat-research/bgs_boundary_20261018/gaussian_comparison_boundary_ru.md) explicitly prevents extending that positive bound to Heisenberg powers by the same argument.
+Adopted proofs: [symplectic window](../archive/evidence/executions/20261019/chat-research/bgs_boundary_20261018/polynomial_trace_window_ru.md) and [generic bilinear window](../archive/evidence/executions/20261019/chat-research/bgs_boundary_20261018/generic_bilinear_window_ru.md). Their [positive Gaussian comparison obstruction](../archive/evidence/executions/20261019/chat-research/bgs_boundary_20261018/gaussian_comparison_boundary_ru.md) explicitly prevents extending that positive bound to Heisenberg powers by the same argument.
 
 ## BGS-TRACE-100: exact signed expansion and low stable cancellations
 
@@ -107,7 +107,7 @@ $$
 
 for every odd prime; the source gives the explicit factorial remainder. This remains a fixed-power conclusion.
 
-Adopted proof chain: [exact formula](../evidence/executions/20261019/chat-research/bgs_cancellation_20261018/signed_trace_formula_ru.md), [rank-two cancellation](../evidence/executions/20261019/chat-research/bgs_cancellation_20261018/rank_two_cancellation_ru.md), [finite cores](../evidence/executions/20261019/chat-research/bgs_cancellation_20261018/finite_core_expansion_ru.md), [rank-four enumeration and prime transfer](../evidence/executions/20261019/chat-research/bgs_cancellation_20261018/second_order_cancellation_ru.md). [Taking every coefficient absolutely](../evidence/executions/20261019/chat-research/bgs_cancellation_20261018/exact_absolute_barrier_ru.md) has a proved square-root-time obstruction.
+Adopted proof chain: [exact formula](../archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/signed_trace_formula_ru.md), [rank-two cancellation](../archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/rank_two_cancellation_ru.md), [finite cores](../archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/finite_core_expansion_ru.md), [rank-four enumeration and prime transfer](../archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/second_order_cancellation_ru.md). [Taking every coefficient absolutely](../archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/exact_absolute_barrier_ru.md) has a proved square-root-time obstruction.
 
 ## BGS-TRACE-101 to BGS-TRACE-103: finite schemes and their joint sum
 
@@ -155,11 +155,11 @@ The [positive-source theorem](cauchy_positive_source_boundary_20261019.md) prove
 
 The complete imported corpus also preserves:
 
-- [Classical absorption for every remaining set](../evidence/executions/20261019/chat-research/bgs_review_20261017/classical_compression_all_sizes.md), a classical estimate with no equality to a quantum phase average.
-- [Positive Bernstein approximation of the full transmission law](../evidence/executions/20261019/chat-research/bgs_review_20261017/positive_bernstein_path_law.md), with the separate conditional beta-smoothing statement and uncomputed limiting masses.
-- [Clock and moment-window reconstruction](../evidence/executions/20261019/chat-research/bgs_review_20261017/positive_clock_and_moment_window.md), credited to the supplied attachment where already present.
-- [Rare-circuit Heisenberg obstruction](../evidence/executions/20261019/chat-research/bgs_continue_20261017/rare_star_heisenberg.md) and [high-power comparison obstruction](../evidence/executions/20261019/chat-research/bgs_focus_20261017/high_power_moment_barrier.md), whose iid matrices need not be unitary.
-- [Failed closure mechanisms](../evidence/executions/20261019/chat-research/bgs_attempt_20261018/closure_audit_ru.md): commuting phase generators do not produce unitary invariance, and all-order strong-absorption asymptotics alone do not identify the zero-absorption law.
+- [Classical absorption for every remaining set](../archive/evidence/executions/20261019/chat-research/bgs_review_20261017/classical_compression_all_sizes.md), a classical estimate with no equality to a quantum phase average.
+- [Positive Bernstein approximation of the full transmission law](../archive/evidence/executions/20261019/chat-research/bgs_review_20261017/positive_bernstein_path_law.md), with the separate conditional beta-smoothing statement and uncomputed limiting masses.
+- [Clock and moment-window reconstruction](../archive/evidence/executions/20261019/chat-research/bgs_review_20261017/positive_clock_and_moment_window.md), credited to the supplied attachment where already present.
+- [Rare-circuit Heisenberg obstruction](../archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/rare_star_heisenberg.md) and [high-power comparison obstruction](../archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/high_power_moment_barrier.md), whose iid matrices need not be unitary.
+- [Failed closure mechanisms](../archive/evidence/executions/20261019/chat-research/bgs_attempt_20261018/closure_audit_ru.md): commuting phase generators do not produce unitary invariance, and all-order strong-absorption asymptotics alone do not identify the zero-absorption law.
 
 ## Exact remaining obligations
 

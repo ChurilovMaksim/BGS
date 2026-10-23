@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-067. **State:** PROVED.
 **Boundary:** All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/jack_coefficient_theorem.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/jack_phase_2026_10_11/jack_coefficient_theorem.md).
 
 
 ## Statement and convention

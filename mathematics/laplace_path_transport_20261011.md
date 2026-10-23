@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-071. **State:** PROVED.
 **Boundary:** Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/laplace_path_transport.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/laplace_path_transport.md).
 
 
 11 October 2026. Self-contained project derivation extending TRACE-053/056.

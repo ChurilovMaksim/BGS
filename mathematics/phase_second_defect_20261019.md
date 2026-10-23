@@ -1,11 +1,11 @@
 # Полный второй дефект и открытое четырёхпортовое ядро
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-102**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md), SHA-256 `6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-102**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md), SHA-256 `6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское компьютерно поддержанное доказательство, самопроверка; независимой рецензии нет. Применяется к специальной симплектической Фурье-карте с независимыми круговыми фазами. Все $p$ нечётные простые, $N=p^{2d}$.
 
-Структурная полнота нового вычисления доказана в [extremal_graphs_ru.md](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md). Оно устраняет недостающий связный примитив $(j,\delta)=(3,2)$ предыдущего пакета.
+Структурная полнота нового вычисления доказана в [extremal_graphs_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md). Оно устраняет недостающий связный примитив $(j,\delta)=(3,2)$ предыдущего пакета.
 
 ## 1. Связный примитив
 
@@ -30,7 +30,7 @@ $$
 
 ## 2. Сокращение происходит во всех открытых каналах
 
-Более сильное утверждение: каждый из 24 полиномов открытых каналов $A_\pi(z)$, $\pi\in S_4$, делится на $1-z$. Сам полином зависит только от циклового типа $\pi$. Полная точная таблица всех коэффициентов находится в [kernel_run/result.json](../evidence/executions/20261019/chat-research/bgs_frontier_20261019/kernel_run/result.json); центральность проверяется как равенство конечных рациональных полиномов, а не только производных.
+Более сильное утверждение: каждый из 24 полиномов открытых каналов $A_\pi(z)$, $\pi\in S_4$, делится на $1-z$. Сам полином зависит только от циклового типа $\pi$. Полная точная таблица всех коэффициентов находится в [kernel_run/result.json](../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/kernel_run/result.json); центральность проверяется как равенство конечных рациональных полиномов, а не только производных.
 
 | Цикловой тип | Размер класса | $A_\pi'(1)$ для одной перестановки |
 |---|---:|---:|

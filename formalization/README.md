@@ -15,7 +15,7 @@ From the repository root:
 ```
 
 The pinned release is **Lean 4.33.1**. The
-[11 October execution](../evidence/executions/20261011/chat-research/fresh/lean_execution.json)
+[11 October execution](../archive/evidence/executions/20261011/chat-research/fresh/lean_execution.json)
 and its preserved Lake logs record **23 active modules / 26 Lake jobs**.
 The hosted formalization job on main 4c2afe5 also completed the same aggregate
 build without the local application-path adapter. Earlier 16-, 17-, 19- and

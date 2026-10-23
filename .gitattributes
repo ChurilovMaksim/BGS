@@ -2,10 +2,10 @@
 # Maintained sources retain the normal whitespace checks.
 evidence/reference/heisenberg-note-20260930/submitted_note.md whitespace=-blank-at-eol
 # Preserve actual TeX execution logs, including their engine-produced spaces.
-evidence/executions/20261011/chat-research/fresh/manuscript-*.log whitespace=-blank-at-eol,-blank-at-eof
-evidence/executions/20261011/chat-research/fresh/manuscript-final/*.log whitespace=-blank-at-eol,-blank-at-eof
+archive/evidence/executions/20261011/chat-research/fresh/manuscript-*.log whitespace=-blank-at-eol,-blank-at-eof
+archive/evidence/executions/20261011/chat-research/fresh/manuscript-final/*.log whitespace=-blank-at-eol,-blank-at-eof
 # Original records are immutable, including terminal blank lines.
-evidence/executions/20261011/chat-research/original/** whitespace=-blank-at-eol,-blank-at-eof
+archive/evidence/executions/20261011/chat-research/original/** whitespace=-blank-at-eol,-blank-at-eof
 # Keep the successful transferred controls' exact input hashes. These narrow
 # exceptions permit their terminal blank line, not other whitespace errors.
 computations/cpp/circular_phase_ssyt_verifier.cpp whitespace=-blank-at-eof

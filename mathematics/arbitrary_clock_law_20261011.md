@@ -3,7 +3,7 @@
 **Stable claim:** BGS-TRACE-062. **State:** PROVED.
 **Boundary:** Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization.
 **Integration and review:** [11 October disposition](../archive/record/chat_integration_20261011.md).
-**Original input:** [dated source](../evidence/executions/20261011/chat-research/original/flat_completion_2026_10_09/arbitrary_clock_law.md).
+**Original input:** [dated source](../archive/evidence/executions/20261011/chat-research/original/flat_completion_2026_10_09/arbitrary_clock_law.md).
 
 
 9 октября 2026 года. Усиление точечного препятствия: компактный носитель и

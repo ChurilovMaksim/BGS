@@ -174,7 +174,7 @@ The [claim ledger](../record/claim_ledger.md) determines status.
 The [full manuscript](../manuscript/README.md) is a developing research
 account, while older dated observations below remain accessible for
 scientific provenance. The current Lean scope is **23 active modules /
-26 Lake jobs** at the [11 October execution](../evidence/executions/20261011/chat-research/fresh/lean_execution.json);
+26 Lake jobs** at the [11 October execution](../archive/evidence/executions/20261011/chat-research/fresh/lean_execution.json);
 older receipts retain the smaller scope of their original builds.
 No analytic BGS conclusion is formalized.
 

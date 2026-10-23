@@ -1,9 +1,9 @@
 # Конечное множество примитивов при любом фиксированном дефекте
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-101**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md), SHA-256 `9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-101**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md), SHA-256 `9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
-19 октября 2026. Авторское доказательство, самопроверка; независимой рецензии и установленного приоритета нет. Обозначения точного фазового разложения — в [incidence_resummation_ru.md](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/incidence_resummation_ru.md) и `dependencies/signed_trace_formula_ru.md`.
+19 октября 2026. Авторское доказательство, самопроверка; независимой рецензии и установленного приоритета нет. Обозначения точного фазового разложения — в [incidence_resummation_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/incidence_resummation_ru.md) и `dependencies/signed_trace_formula_ru.md`.
 
 Для минимального ядра порядка $h=c+s$ с $e$ общими ориентированными рёбрами определим дефект
 
@@ -93,7 +93,7 @@ $$
 
 ## 4. Все кластеры нулевого дефекта
 
-При $\delta_i=0$ формула (6) требует $j=1$. Если кластер пассивный, это ровно пара с весом $-1/2$. Если активный, (1) требует $g=1,u=t=0$, а равенство в (4) — четыре вершины степени 2. Как доказано в [incidence_resummation_ru.md](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/incidence_resummation_ru.md), остаются только $K_{2,2}$ и $K_{2,4}$.
+При $\delta_i=0$ формула (6) требует $j=1$. Если кластер пассивный, это ровно пара с весом $-1/2$. Если активный, (1) требует $g=1,u=t=0$, а равенство в (4) — четыре вершины степени 2. Как доказано в [incidence_resummation_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/incidence_resummation_ru.md), остаются только $K_{2,2}$ и $K_{2,4}$.
 
 Для $K_{2,2}$ три допустимых активных разбиения имеют одинаковый порядок и веса $1,-1/2,-1/2$. Они сокращаются при фиксированном втором цикле. Для $K_{2,4}$ два допустимых разбиения имеют веса $1,-1/2$, в сумме $+1/2$. Единственная допустимая пара — два центра; второй цикл получается их транспозицией.
 
@@ -119,7 +119,7 @@ $$
 
 Это утверждение действует над каждым нечётным полем, с исходными точными весами столкновений. Для фиксированного $\delta$ имеется лишь конечное множество примитивов. Один связный кластер дополнительно удовлетворяет более сильной границе $j\le\delta+1$.
 
-При $\delta=1$ остаются лишь примитивы первого или второго порядка. Это даёт более короткое обоснование полноты двух базовых полиномов в [first_defect_resummation_ru.md](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/first_defect_resummation_ru.md) и не требует отдельного разбора полуцелых вкладов компонент.
+При $\delta=1$ остаются лишь примитивы первого или второго порядка. Это даёт более короткое обоснование полноты двух базовых полиномов в [first_defect_resummation_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/first_defect_resummation_ru.md) и не требует отдельного разбора полуцелых вкладов компонент.
 
 ## 6. Точное восстановление любого фиксированного дефекта
 
@@ -168,7 +168,7 @@ $$
 
 При $e_0=0$ внутренняя сумма равна 1 и описывает закрытый примитив без добавлений. Все диапазоны $j$ те же, что в (9). Равенство коэффициентное, с конечными полиномами от $y$; аналитическая сходимость всего формального ряда по $m$ не используется.
 
-Лемма о корнях из [companion_resummation_ru.md](../evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/companion_resummation_ru.md) контролирует общий знаменатель $Q_y$ для всех $y\ge0$. Однако при произвольном дефекте числители $P_{j,\delta}$ ещё неизвестны, и оставшиеся множители $(1-z)^{-k}$ нельзя просто отбросить. Для $\delta=1$ нуль $P_{2,1}(1)=0$ устраняет именно такой множитель и позволяет доказать предел на всём интервале $0<\tau<1$.
+Лемма о корнях из [companion_resummation_ru.md](../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/companion_resummation_ru.md) контролирует общий знаменатель $Q_y$ для всех $y\ge0$. Однако при произвольном дефекте числители $P_{j,\delta}$ ещё неизвестны, и оставшиеся множители $(1-z)^{-k}$ нельзя просто отбросить. Для $\delta=1$ нуль $P_{2,1}(1)=0$ устраняет именно такой множитель и позволяет доказать предел на всём интервале $0<\tau<1$.
 
 ## 8. Чего теорема не доказывает
 
