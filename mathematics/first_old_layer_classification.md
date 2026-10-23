@@ -3,7 +3,7 @@
 Claim family: BGS-FM-026. Source-bound [independent review](../archive/record/first_old_layer_review.md).
 The frozen original SHA256 is `3711869ecb05efda76066216ce29b84263ec12edca9c379e2ede9d16c5f21b41`;
 its exact bytes, original status and execution records remain in the
-[provenance map](../evidence/intermediate_old_layers_20261007/input_map.json).
+[provenance map](../archive/evidence/intermediate_old_layers_20261007/input_map.json).
 Inherited [oldform](oldform_tower_compression.md),
 [newest-sector](even_new_sector_first_jet.md), and
 [rank-transfer](algebraic_time_rank_transfer.md) proofs retain their own scopes.

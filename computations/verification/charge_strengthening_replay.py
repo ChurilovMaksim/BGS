@@ -21,7 +21,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[2]
 MODULES = ROOT / 'computations/verification/charge_strengthening'
-RAW = ROOT / 'evidence/charge_strengthening_20261007/raw'
+RAW = ROOT / 'archive/evidence/charge_strengthening_20261007/raw'
 SOURCE_MAP = ROOT / 'record/charge_strengthening_replay_sources.json'
 MEMORY_BYTES = 512 * 1024 ** 2
 CPU_SECONDS = 60

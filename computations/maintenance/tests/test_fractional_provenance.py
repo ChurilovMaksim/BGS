@@ -10,7 +10,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[3]
 PORTS = ROOT / 'computations/verification/fractional_hamming'
-RAW = ROOT / 'evidence/fractional_hamming_20261007/raw'
+RAW = ROOT / 'archive/evidence/fractional_hamming_20261007/raw'
 
 
 def source_module(name, path):

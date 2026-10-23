@@ -135,7 +135,7 @@ class ExecutionTests(unittest.TestCase):
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes((ROOT / path).read_bytes())
             for relative in ['computations/verification/charge_strengthening/author_checks.py',
-                             'evidence/charge_strengthening_20261007/raw/author/exact_results.json',
+                             'archive/evidence/charge_strengthening_20261007/raw/author/exact_results.json',
                              'mathematics/onestep_charge_gap.md']:
                 target = copied / relative
                 original = target.read_bytes()

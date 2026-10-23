@@ -31,7 +31,7 @@ def main():
             if result.returncode:
                 raise RuntimeError(result.stderr)
             actual = json.loads((Path(scratch) / (kind + '_rebuild.json')).read_text())
-        expected = json.loads((root / 'evidence/residual125_20261007' / (kind + '_expected.json')).read_text())
+        expected = json.loads((root / 'archive/evidence/residual125_20261007' / (kind + '_expected.json')).read_text())
         for value in (actual, expected):
             if not isinstance(value.get('python'), str) or not value['python']:
                 raise RuntimeError('Missing or invalid Python environment metadata')

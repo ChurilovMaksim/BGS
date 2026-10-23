@@ -18,7 +18,7 @@ def main():
     reports = []
     for kind in ("hamming", "translation", "all_translation", "low_switch"):
         script = Path(__file__).resolve().parent / "central_residual" / (kind + ".py")
-        expected = json.loads((root / "evidence/central_residual_20261007" / (kind + "_expected.json")).read_text())
+        expected = json.loads((root / "archive/evidence/central_residual_20261007" / (kind + "_expected.json")).read_text())
         with tempfile.TemporaryDirectory() as scratch:
             output = Path(scratch) / "output.json"
             env = dict(os.environ, OPENBLAS_NUM_THREADS="1", OMP_NUM_THREADS="1", MKL_NUM_THREADS="1")

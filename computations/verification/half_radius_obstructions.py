@@ -29,7 +29,7 @@ def main():
         if result.returncode:
             raise RuntimeError(result.stderr)
         actual = json.loads(output.read_text())
-    expected = json.loads((root / 'evidence/half_radius_20261007/run_final/results.json').read_text())
+    expected = json.loads((root / 'archive/evidence/half_radius_20261007/run_final/results.json').read_text())
     actual.pop('elapsed_seconds')
     expected.pop('elapsed_seconds')
     if actual != expected:

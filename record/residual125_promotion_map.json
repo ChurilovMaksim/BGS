@@ -16,35 +16,35 @@
   {
     "original_role": "review_manifest.json",
     "original_sha256": "421550655307c0361f35b50c73daf029dceac1874a8e5a076fe88d4a7ff0df7d",
-    "public_path": "evidence/residual125_20261007/review_manifest.json",
+    "public_path": "archive/evidence/residual125_20261007/review_manifest.json",
     "public_sha256": "421550655307c0361f35b50c73daf029dceac1874a8e5a076fe88d4a7ff0df7d",
     "edits": "Private-path role normalization and whitespace; original retained losslessly."
   },
   {
     "original_role": "computation_manifest.json",
     "original_sha256": "00604ad4b44e1da228327945b557c9015b5e4c428785cce88fa625da7eb70943",
-    "public_path": "evidence/residual125_20261007/computation_manifest.json",
+    "public_path": "archive/evidence/residual125_20261007/computation_manifest.json",
     "public_sha256": "00604ad4b44e1da228327945b557c9015b5e4c428785cce88fa625da7eb70943",
     "edits": "Private-path role normalization and whitespace; original retained losslessly."
   },
   {
     "original_role": "source_manifest.json",
     "original_sha256": "6614810584254911b269ba90df15481b9d0c96ef818f6cdbce3dd3c6a2cbdaea",
-    "public_path": "evidence/residual125_20261007/source_manifest.json",
+    "public_path": "archive/evidence/residual125_20261007/source_manifest.json",
     "public_sha256": "54dba9eb3034054c092e2457d6c0ff6d382e65261d1ff4c7a39b0ae46f4486f8",
     "edits": "Private-path role normalization and whitespace; original retained losslessly."
   },
   {
     "original_role": "raw_rebuild.json",
     "original_sha256": "3361c027d0660d355570e5fcfa2b546601bd8a6c78b3fc5fb0ad8d7398fc4600",
-    "public_path": "evidence/residual125_20261007/raw_expected.json",
+    "public_path": "archive/evidence/residual125_20261007/raw_expected.json",
     "public_sha256": "3361c027d0660d355570e5fcfa2b546601bd8a6c78b3fc5fb0ad8d7398fc4600",
     "edits": "Private-path role normalization and whitespace; original retained losslessly."
   },
   {
     "original_role": "residue_rebuild.json",
     "original_sha256": "8b492729c39a02b4f20b2904f80f69a77294e272f1b2c2bf525e7f7b6f21b64d",
-    "public_path": "evidence/residual125_20261007/residue_expected.json",
+    "public_path": "archive/evidence/residual125_20261007/residue_expected.json",
     "public_sha256": "8b492729c39a02b4f20b2904f80f69a77294e272f1b2c2bf525e7f7b6f21b64d",
     "edits": "Private-path role normalization and whitespace; original retained losslessly."
   },
@@ -59,7 +59,7 @@
     "original_role": "rebuild_residue.py",
     "original_sha256": "222414919f8bb6d6e8bf6f724addda075d64eaef2581d97e700d73b500aae1d6",
     "public_path": "computations/verification/residual125/residue.py",
-    "public_sha256": "f7d5b1ac0259ce67ce9594f5f291e8daf127894744621131682e00035cf8f829",
+    "public_sha256": "d5a6cf4e3bc5673cb369ab3bc68e84de19090591fe8eb475b30b98034ee0884d",
     "edits": "Assertions become explicit exceptions; required scratch output directory; repository-relative frozen certificate; silent main wrapper. Exact results compared excluding runtime and self-source hash only."
   }
 ]

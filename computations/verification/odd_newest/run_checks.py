@@ -64,7 +64,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     code = Path(__file__).resolve().parent
     root = code.parents[2]
-    evidence = root / 'evidence/odd_newest_20261007'
+    evidence = root / 'archive/evidence/odd_newest_20261007'
     output = args.output_dir.resolve()
     if output == root or root in output.parents:
         raise RuntimeError('Output must be outside the overlay or repository')

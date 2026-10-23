@@ -23,7 +23,7 @@ def run(mode, root, overlay=None):
         if overlay is not None and (overlay/rel).is_file():
             return overlay/rel
         return root/rel
-    prefix = Path('evidence/spectral_extension_20261006')
+    prefix = Path('archive/evidence/spectral_extension_20261006')
     hashes = json.loads(resolve(prefix/'input_hashes.json').read_text())
     for rel, expected in hashes.items():
         if hashlib.sha256(resolve(Path(rel)).read_bytes()).hexdigest() != expected:

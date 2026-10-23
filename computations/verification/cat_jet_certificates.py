@@ -21,7 +21,7 @@ import tempfile
 
 
 def run(root):
-    config=json.loads((root/'evidence/cat_jet_20261006/input_map.json').read_text())
+    config=json.loads((root/'archive/evidence/cat_jet_20261006/input_map.json').read_text())
     outputs={}
     with tempfile.TemporaryDirectory(prefix='bgs-cat-jet-') as directory:
         scratch=Path(directory)

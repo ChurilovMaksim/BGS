@@ -13,7 +13,7 @@ def main():
     from functools import lru_cache
     START = time.monotonic()
     BASE = Path(sys.argv[1])
-    FROZEN = Path(__file__).resolve().parents[3] / 'evidence/residual125_20261007'
+    FROZEN = Path(__file__).resolve().parents[3] / 'archive/evidence/residual125_20261007'
     MOD = (1, 0, 1, 3, 1, 0, 1)
     D = [tuple((n // 5 ** k % 5 for k in range(6))) for n in range(15625)]
 

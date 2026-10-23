@@ -10,7 +10,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[3]
 WRAPPER = ROOT / 'computations/verification/intermediate_old_layers_certificates.py'
-EVIDENCE = Path('evidence/intermediate_old_layers_20261007')
+EVIDENCE = Path('archive/evidence/intermediate_old_layers_20261007')
 EXPECTED = {'exact_checks': 7, 'gcd_degree': 0, 'result': 'PASS'}
 
 

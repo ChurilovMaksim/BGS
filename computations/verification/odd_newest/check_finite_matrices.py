@@ -285,7 +285,7 @@ def main(argv=None):
     tame_multiplier = next((j for j in range(6) if powf(xi, j) == author_xi))
     if not tame_multiplier in [1, 5]:
         raise AssertionError('Verification failed: tame_multiplier in [1, 5]')
-    author_path = Path(__file__).resolve().parents[3] / 'evidence/odd_newest_20261007/author_expected.json'
+    author_path = Path(__file__).resolve().parents[3] / 'archive/evidence/odd_newest_20261007/author_expected.json'
     author = json.loads(author_path.read_text())['records']
     our = {(r['norm_mod5'], r['tame_index']): r for r in records}
     for r in author:

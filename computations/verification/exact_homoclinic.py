@@ -106,7 +106,7 @@ def run(root, overlay=None):
     check('Holder geometric split below 500',2*lhi/(llo-beta)+2*beta/(beta-1)<500,'Conservative rational interval bound')
     check('resolvent bound 301',300/(1-4200*eta)<=301,'Exact rational check')
     check('u Holder constant below 10^9',301*32*500*4<10**9,'Before integration in matching parameter s')
-    binding_path = Path("evidence/homoclinic_20261006/source_binding.json")
+    binding_path = Path("archive/evidence/homoclinic_20261006/source_binding.json")
     def resolve(rel):
         if overlay is not None and (overlay/rel).is_file():
             return overlay/rel

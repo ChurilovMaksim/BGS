@@ -5,7 +5,7 @@ records all four accepted even counts and retains the inherited multiplicity
 and odd count. The three new proofs have independent internal ACCEPT reviews;
 none of the finite replays alone certifies a uniform implication.
 
-The [input map](../evidence/intermediate_old_layers_20261007/input_map.json)
+The [input map](../archive/evidence/intermediate_old_layers_20261007/input_map.json)
 records original paths, decoded SHA256 identities and lossless base64 blobs.
 Prior cat-packet bytes are referred to through their existing blobs rather
 than duplicated. Frozen originals retain candidate statuses, absolute
