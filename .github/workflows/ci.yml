@@ -19,6 +19,7 @@ jobs:
         run: |
           python computations/verification/scientific_registry_audit.py
           python computations/verification/bibliographic_metadata_audit.py --self-test
+          python computations/maintenance/render_bibliography.py --check
           python computations/maintenance/render_claim_registry.py --check
           python computations/maintenance/render_errata.py --check
           python computations/maintenance/render_research_views.py --check
