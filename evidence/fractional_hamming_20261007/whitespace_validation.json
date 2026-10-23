@@ -1,9 +1,0 @@
-{
-  "status": "passed",
-  "checker_source_role": "$WHITESPACE_CHECKER",
-  "checker_sha256": "c09b05af48aa95f0e21ad74d4dd4c20c5ffca7705e2929f22b515ef7207a4676",
-  "checked_preseal_files": 115,
-  "self_test_controls": 7,
-  "coverage": "Every created file before the seal; the report and final seal are additionally checked by the same checker immediately after creation, including EOF whitespace.",
-  "skipped_binary_files": []
-}
