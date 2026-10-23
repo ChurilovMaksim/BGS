@@ -15,6 +15,17 @@ import re
 
 ROOT = Path(__file__).resolve().parents[3]
 
+# Recorded relocations of link targets out of byte-frozen archive documents.
+# The note archive/record/chat_integration_20261016.md is frozen archive
+# material (package C) and is not edited; its receipt link target moved to
+# the archive in package B-chat (see archive/MANIFEST-Bchat.md). Any other
+# missing target, and a missing recorded target, remains a hard failure.
+RELOCATED_SOURCE_LINKS = {
+    ('archive/record/chat_integration_20261016.md',
+     '../../evidence/executions/20261016/chat-integration/receipt.json'):
+        'archive/evidence/executions/20261016/chat-integration/receipt.json',
+}
+
 def need(ok, message):
     if not ok:
         raise RuntimeError(message)
@@ -75,7 +86,10 @@ def main():
             try:destrel=dest.relative_to(ROOT.resolve()).as_posix()
             except ValueError:
                 badlinks.append((rel,target));continue
-            if not exists(destrel):badlinks.append((rel,target))
+            if not exists(destrel):
+                relocated=RELOCATED_SOURCE_LINKS.get((rel,target))
+                if relocated is None or not exists(relocated):
+                    badlinks.append((rel,target))
     need(not badlinks,'Broken new-source links: '+str(badlinks))
     archive=ROOT/'archive/history/2026/chat_20261015'
     provenance=json.loads((archive/'provenance.json').read_text())
