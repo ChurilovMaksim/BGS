@@ -290,12 +290,20 @@ def main() -> None:
         cmd += replay_artifact_args(p.stem, certificate_directory)
         if p.stem=='wave2_checked_replay':
             # The archived v1 wrapper is SHA-sealed by BOTH Wave2 and Wave3.
-            # Recheck its original source closure; the portable v2 entry
-            # below independently executes ALL eight old tasks with the same
+            # Recheck its original source closure through the portable v2
+            # authenticator: v1's own loader hashes the three governance
+            # files (AGENTS.md, SOURCE_OF_TRUTH.md and
+            # record/repository_conventions.md) at their live paths, where
+            # they editorially evolved after the seal, while the portable
+            # loader verifies the identical 70-file closure against the
+            # identical sealed digests, resolving exactly those three to
+            # their archived sealed copies via the bindings' reviewed
+            # historical_resolutions. The portable v2 entry below
+            # independently executes ALL eight old tasks with the same
             # authenticated adapter and a four-field basis-invariant policy.
             # v1's historical exact-reference replay remains runnable
             # manually, but cannot be a cross-CPU scientific release gate.
-            cmd=[sys.executable,str(p),'--check-sources']
+            cmd=[sys.executable,str(p.with_name('wave2_portable_replay.py')),'--check-sources']
         if p.stem=='pell_floquet_regression':
             cmd+=['--cpp',str(args.build/'pell_pair_orthogonality')]
         elif p.stem in {'actual_algebra_check', 'actual_factor_check', 'actual_field_check', 'actual_casoratian_check'}:

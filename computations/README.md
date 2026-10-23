@@ -127,8 +127,18 @@ A v2 receipt separately records the actual values, original v1 policy,
 new mathematical bound, and whether v1's exact reference equality happened
 to hold. It must not label a failed v1 equality as a v1 pass.
 
-The complete workspace runs v1's `--check-sources` authenticator and v2's
-full replay as **two separate named checks**. The historical v1 full replay remains executable but its
+The complete workspace and CI run v2's `--check-sources` authenticator and
+v2's full replay as **two separate named checks**. The portable
+authenticator verifies the identical 70-file source closure against the
+identical sealed digests, resolving the three governance documents that
+editorially evolved after the seal — `AGENTS.md`, `SOURCE_OF_TRUTH.md` and
+`record/repository_conventions.md` — to their archived sealed copies under
+`archive/evidence/schur_reduction_20261007/raw/review/pinned/BGS/` via the
+bindings' reviewed `historical_resolutions`. On any tree after those
+2026-10-20/22 governance edits, standalone v1 `--check-sources` reports
+`changed source: AGENTS.md` (then `SOURCE_OF_TRUTH.md`, then
+`repository_conventions.md`) by design: v1 remains the frozen provenance
+instrument and the portable authenticator is the live gate. The historical v1 full replay remains executable but its
 exact-reference behavior is machine-dependent. To run either version from
 the repository root, supply a separate fresh output directory:
 
