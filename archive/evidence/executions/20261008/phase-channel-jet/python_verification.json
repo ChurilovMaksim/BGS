@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "seed": 20261008,
+  "numpy": "2.3.5",
+  "arithmetic": "float64/complex128",
+  "atol": 2e-09,
+  "rtol": 3e-09,
+  "channel": {
+    "channel_order_cases": 18,
+    "dimensions": [
+      3,
+      4
+    ],
+    "orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_degree_two_identity_error": 1.6694398218060568e-16,
+    "quadrature": "n+1 roots per coordinate; exact characters, complex128 evaluation"
+  },
+  "cascade": {
+    "cases": 1800,
+    "dimensions": [
+      1,
+      6
+    ],
+    "projection_ranks": "1..m",
+    "max_relative_cubic_identity_error": 1.2882293276272803e-13,
+    "minimum_Cauchy_gap": 0.22727199006199394
+  },
+  "jets": {
+    "cases": 48,
+    "dimensions": [
+      1,
+      2,
+      3
+    ],
+    "factor_counts": [
+      0,
+      1,
+      3,
+      6
+    ],
+    "circle_points": 8192,
+    "largest_computed_ratio": 1.2824897171423493,
+    "max_relative_norm_identity_error": 5.709105719044017e-14,
+    "scalar_sharpness_sandwich": [
+      {
+        "r": 0.5,
+        "lower_ratio": 0.4385964912280702,
+        "upper_ratio": 0.4912280701754386
+      },
+      {
+        "r": 0.9,
+        "lower_ratio": 1.0790487796844637,
+        "upper_ratio": 1.129738809657126
+      },
+      {
+        "r": 0.99,
+        "lower_ratio": 1.306759506722581,
+        "upper_ratio": 1.3132599786386197
+      },
+      {
+        "r": 0.999,
+        "lower_ratio": 1.3306675595507007,
+        "upper_ratio": 1.3313325599979198
+      }
+    ],
+    "scope": "finite quadrature and orientation checks; no theorem or optimality certificate"
+  },
+  "scalar_flow": {
+    "cases": 32,
+    "dimensions": [
+      3,
+      4
+    ],
+    "common_phase_points": 16384,
+    "max_derivative_integral_error": 7.105427357601002e-15,
+    "minimum_transport_margin": 0.0004015167609511055,
+    "scope": "finite common-phase kernel control; no averaged-pinching rate or stochastic-flow limit certified"
+  }
+}

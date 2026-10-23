@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "date": "2026-10-08",
+  "base_main": "2104966cd72f5681a6c10b3a10a6d4ae00705ac1",
+  "scope": "Three subsidiary informal project proofs, independent internal reconstruction, finite numerical/exact controls, aggregate Lean coefficient/finite module build, TeX build. Not BGS, priority certification or complete remote acceptance suite.",
+  "attachment": {
+    "name": "BGS_verified_manuscript_2026-10-07(1).pdf",
+    "pages": 293,
+    "sha256": "0f7af7c3867f6e3a179a4d2458bac18ff3dc441a6968b7e553dea40a68957090"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "cpp": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "lean": "Lean 4.33.1; official release digest checked; exact proc-self compatibility shim only",
+    "lean_archive_sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235"
+  },
+  "source_sha256": {
+    "mathematics/max_entry_phase_channel.md": "07cf2f681d05eb62f54366f2553853edb7ae9ab92485fca9ae4c1e54225e6f13",
+    "mathematics/sharp_inner_jet.md": "d51aeb603bfc472956dd8c6cd2f530bbdfbadc47114c8b91cf83a45672a3da49",
+    "mathematics/phase_channel_real_flow.md": "bf2475d42770b4924828e2a9dc5b00212d890b44d5af101b2f2ad029bd6253ad",
+    "computations/verification/phase_channel_jet.py": "c2cbfa7467d3fdf45738d69d036af7c3702e8a3a91519a4e43b8be67f044d2cf",
+    "computations/cpp/phase_occupation_jet_verifier.cpp": "1647a3af4b21a500d8aff1b8eef5c4c3e835fbb3080a3b9ee06fbc79829b17f5",
+    "computations/wolfram/phase_channel_jet.wl": "b6fd9444094adf5541358f86d5cd11f48451d0030957b0656a8860504325aff3",
+    "computations/maintenance/lean_proc_self_compat.c": "c45e316aa318424a76f3c7c3e49ae4d479d8c1b51b511d00ef9c4313cd9bf441",
+    "computations/maintenance/build_unified_manuscript.py": "31c70147a1ab5059d469530ffa8b48395fda3e2c32bd8f52169375e419b74054",
+    "manuscript/BGS_unified.tex": "ea4a9b8374366731da02b4dd0fd74b252cd1a69672bfe636e16a1a57b39b1b4a",
+    "manuscript/front_matter.tex": "80fa6adb5db4c50abdd1e21d4b181d76104c4f5ce362692104eed64edcfdb857",
+    "manuscript/unified_sections/phase_channel_jet_20261008.tex": "cfde6aa11f85ef4d0f2d319d0faf7cc77f14cc1e64098884f8599ec3955252e9",
+    "CMakeLists.txt": "2c24cedad8ce98fcd98a78adcd12ed0febd2dcd0689e8ebc607a28430cc94bce",
+    "record/claims.json": "91512a62ff23a6fd812e7ad73c60c62cefb8969e65ce2cf4063d7d4a1b9c79de",
+    "record/scientific_dependencies.json": "d27087ea1d05490602d4899bf972262ea5ef11fa2463143ff66b5cf5c3cb78d9",
+    "record/mathematics_topics.json": "3005f9751d808695823abf0d1ce911b0fec78ba207aa6ec8f5880ea1d917fee8",
+    "formalization/Bgs/AnalyticOrbitKernels.lean": "2d4b292a7b9c0835229a88c61555bf20a092250cb94233086cbadaf97ce3a047",
+    "formalization/Bgs/CayleyCurveEnergy.lean": "17dc42731c8f21c36ffc0ad0a3d5fc377791984a68106a730e1a37d69281d46d",
+    "formalization/Bgs/CayleyEnergy.lean": "671eedaa80a988e9e45c0b35581e21c3a2601885fe80ce4320d1a959cb1964f8",
+    "formalization/Bgs/CueLoopKernels.lean": "1cabb630b5e2f30b915db1cc6716afedf05b08fc2697b074af80c8abda9f3986",
+    "formalization/Bgs/FibonacciRatioSmall.lean": "8323d25465cccf8d3bf3e0058db414676c8679f4408ab2ea1fbde7f644854995",
+    "formalization/Bgs/FourCutKernel.lean": "242c4ca40e839fbb2f298f70d1b7b3233607f2ef7c1d759f9cb8303eb8cf8429",
+    "formalization/Bgs/GeneralHyperbolicParity.lean": "fcc2bf9026063b473717a26e0e3e1c677aea9a8173110fb9eba412c603a3a0f0",
+    "formalization/Bgs/HistoricalMobiusDegenerateFiber.lean": "21a2a0446b99a7c21153341334d2b23eff61a4140b5fc6acb53eab298b6a973b",
+    "formalization/Bgs/LocalityKernels.lean": "294118d057b36b84da28230bbde31851cef9b89a8bf5ba2a6966a0d4f62665be",
+    "formalization/Bgs/MagneticTraceSmall.lean": "eec1a5a7d508d901719cb6157fd1ca2f9ff8f216a0634cae1b8ec6178df5245b",
+    "formalization/Bgs/PairKeyFourthMoment.lean": "016e71c8ef8162c91d6623a92150f6968d649d95fd7f09c1586d91b481914df3",
+    "formalization/Bgs/PairKeySecondMoment.lean": "e998ce56fefa5aff7f10e435e0dafa2ca3ba1565a3d790ce2c9f285e008a4cfe",
+    "formalization/Bgs/PellCoboundary.lean": "2e41c078e1186c1ba2094c06d69c1c4960697c2616c4698c99511bd833d1690e",
+    "formalization/Bgs/PellCohomology.lean": "f1d31e87ef6a62a4883ef8770348c5b519b04f4aa841d80be1bd6ef1d0ea1082",
+    "formalization/Bgs/PellEchoWeights.lean": "6c62bf3af29431b73d42e74ecd5fd002412066ad63d18a6d655157fed7b61e0f",
+    "formalization/Bgs/PellFourierKernel.lean": "235628888ca32dfd8873ebcb42986f7e180b139dda1efafcf03edca52610fbd8",
+    "formalization/Bgs/PhaseChannelJetKernels.lean": "0a37fc0dde7ef25b6592b9d45e79be09a205ce7d54254911611f589f20c100d5",
+    "formalization/Bgs/SevenPrimary.lean": "431e5d111238a962ec2bb994f21d4cb1ac17df250379651aa4e8fcd065604cb4",
+    "formalization/Bgs/TorusLevelSets.lean": "3e842439ea6a954b3ec8a074ce67fdd366404c53b23ee1bc3bf07861812beacb",
+    "formalization/Bgs/TorusScaleLaw.lean": "b15d352ede01c1dd726a481e202aa87d81ef9384216f693508cbbc84e20e6a4c",
+    "formalization/Bgs.lean": "ee8a46ccf140b55d4405cb1660b20a0b13695b99124387908cf636a6cd1a5681",
+    "formalization/lakefile.toml": "d8f97d99830ccabdf50f6bae4f9a788c465475dacbea50f986adede65ea38a02",
+    "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "formalization/lake-manifest.json": "ff6508b4e9c8704eddee798b9cbc99bc9bf0763195c920cef43bddeb0ca708e3"
+  },
+  "checks": {
+    "python": {
+      "status": "PASS",
+      "seed": 20261008,
+      "numpy": "2.3.5",
+      "arithmetic": "float64/complex128",
+      "atol": 2e-09,
+      "rtol": 3e-09,
+      "channel": {
+        "channel_order_cases": 18,
+        "dimensions": [
+          3,
+          4
+        ],
+        "orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "max_degree_two_identity_error": 1.6694398218060568e-16,
+        "quadrature": "n+1 roots per coordinate; exact characters, complex128 evaluation"
+      },
+      "cascade": {
+        "cases": 1800,
+        "dimensions": [
+          1,
+          6
+        ],
+        "projection_ranks": "1..m",
+        "max_relative_cubic_identity_error": 1.2882293276272803e-13,
+        "minimum_Cauchy_gap": 0.22727199006199394
+      },
+      "jets": {
+        "cases": 48,
+        "dimensions": [
+          1,
+          2,
+          3
+        ],
+        "factor_counts": [
+          0,
+          1,
+          3,
+          6
+        ],
+        "circle_points": 8192,
+        "largest_computed_ratio": 1.2824897171423493,
+        "max_relative_norm_identity_error": 5.709105719044017e-14,
+        "scalar_sharpness_sandwich": [
+          {
+            "r": 0.5,
+            "lower_ratio": 0.4385964912280702,
+            "upper_ratio": 0.4912280701754386
+          },
+          {
+            "r": 0.9,
+            "lower_ratio": 1.0790487796844637,
+            "upper_ratio": 1.129738809657126
+          },
+          {
+            "r": 0.99,
+            "lower_ratio": 1.306759506722581,
+            "upper_ratio": 1.3132599786386197
+          },
+          {
+            "r": 0.999,
+            "lower_ratio": 1.3306675595507007,
+            "upper_ratio": 1.3313325599979198
+          }
+        ],
+        "scope": "finite quadrature and orientation checks; no theorem or optimality certificate"
+      },
+      "scalar_flow": {
+        "cases": 32,
+        "dimensions": [
+          3,
+          4
+        ],
+        "common_phase_points": 16384,
+        "max_derivative_integral_error": 7.105427357601002e-15,
+        "minimum_transport_margin": 0.0004015167609511055,
+        "scope": "finite common-phase kernel control; no averaged-pinching rate or stochastic-flow limit certified"
+      }
+    },
+    "cpp": {
+      "status": "PASS",
+      "dimensions": [
+        3,
+        40
+      ],
+      "orders": [
+        2,
+        3
+      ],
+      "cases": 76,
+      "enumerated_words": 694526,
+      "arithmetic": "uint64; maximum sums below 384000"
+    },
+    "wolfram": {
+      "status": "PASS",
+      "output": "{0,0,0}; final Null from Print",
+      "receipt": "wolfram_receipt.json"
+    },
+    "lean": {
+      "status": "PASS",
+      "active_modules": 20,
+      "jobs": 23,
+      "log": "lean.log",
+      "new_module_axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "new_module_native_decide": false,
+      "scope": "Coefficient implications only; earlier finite modules retain printed native axioms."
+    },
+    "manuscript": {
+      "status": "PASS",
+      "page_count": 280,
+      "build": "manuscript_build.json",
+      "visual": "visual_review.json"
+    },
+    "metadata": {
+      "scope": "Selected graph, topic, rendered-registry, new-claim and link checks on a pinned partial overlay.",
+      "receipt": "metadata_validation.json"
+    }
+  },
+  "commands": [
+    "python computations/verification/phase_channel_jet.py --output evidence/executions/20261008/phase-channel-jet/python_verification.json",
+    "c++ -std=c++20 -O2 -Wall -Wextra -Werror computations/cpp/phase_occupation_jet_verifier.cpp -o /tmp/bgs-phase-occupation",
+    "/tmp/bgs-phase-occupation",
+    "LD_PRELOAD=/tmp/bgs-lean/compat.so /tmp/bgs-lean/lean-4.33.1-linux/bin/lake build (cwd=formalization)",
+    "python computations/maintenance/build_unified_manuscript.py --output-dir /tmp/bgs-manuscript-20261008",
+    "python computations/maintenance/render_claim_registry.py --check",
+    "python computations/maintenance/sync_finite_orbit_section.py --check"
+  ],
+  "unexecuted": [
+    "full historical verifier suite",
+    "full CMake aggregate",
+    "full remote acceptance suite",
+    "full historical proof/page review"
+  ],
+  "open": [
+    "BGS-BGS-001",
+    "BGS-TRACE-005"
+  ],
+  "verification_pending": [
+    "BGS-TRACE-055"
+  ]
+}

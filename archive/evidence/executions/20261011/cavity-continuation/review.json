@@ -1,0 +1,39 @@
+{
+  "schema": "bgs-internal-proof-review-v1",
+  "reviewed_on": "2026-10-11",
+  "reviewer": "Separate read-only internal reconstruction agent fixed_moment_delay_review",
+  "review_kind": "independent analytic reconstruction within the assistant session; not external peer review or formal verification",
+  "reviews": [
+    {
+      "input": "evidence/executions/20261011/cavity-continuation/inputs/all_moment_delay_bootstrap_candidate.md",
+      "sha256": "2b0f8c651ed6e15d803e6af3b0a32c9f712bcb1a28653a74b2ef56afb2be8019",
+      "verdict": "proved as written in the displayed conditional scope; editorial clarifications incorporated",
+      "scope": "All fixed killed moments and joint delay barriers at ceil(log(2N)^(1+kappa)), conditional on all-time flatness."
+    },
+    {
+      "input": "evidence/executions/20261011/cavity-continuation/inputs/schur_censoring_gap_review_input.md",
+      "sha256": "73cc587de1bfaf5d724fcbbe93c3a236da721fe0e05623f4f20d448177082ea7",
+      "verdict": "proved as written in the displayed conditional scope; editorial clarifications incorporated",
+      "scope": "Ordered classical centered singular-value contraction; exact coherent noise; stopped even-p Schatten quantum gap theorem, conditional on all-time flatness."
+    },
+    {
+      "input": "evidence/executions/20261011/cavity-continuation/inputs/second_third_delay_review_input.md",
+      "sha256": "34602f2fca944cc45f4e7d91c081ff30dba837f5b2391e59bfe1f6357362b2cd",
+      "verdict": "proved as written in the displayed conditional scope; editorial clarifications incorporated",
+      "scope": "Uniform second/third intersection-probability equality laws and killed-expectation conclusion under separately proved high-probability flatness."
+    }
+  ],
+  "maintained_sources": [
+    "mathematics/all_moment_delay_bootstrap_20261011.md",
+    "mathematics/schur_censoring_gap_20261011.md"
+  ],
+  "record": "record/cavity_continuation_20261011.md",
+  "non_claims": [
+    "flatness probability",
+    "fourth/all-order equality hierarchy",
+    "unrestricted exceptional-event moments",
+    "scalar microscopic law",
+    "BGS",
+    "worldwide priority"
+  ]
+}

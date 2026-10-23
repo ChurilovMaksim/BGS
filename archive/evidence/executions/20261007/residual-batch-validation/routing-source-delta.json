@@ -1,0 +1,10 @@
+{
+  "scope": "Verification-source correction and newly discovered maintenance regression; not a formatting-only or receipt-only delta. No mathematical adapter or expected output changed.",
+  "path": "computations/verification/fractional_hamming/check_routing.py",
+  "before_sha256": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+  "after_sha256": "437d86c66535ad5e7cc9776eb669ae11298854f377eeebd5c921cd4c92c80b8a",
+  "new_regression": "computations/maintenance/tests/test_fractional_routing.py",
+  "new_regression_sha256": "f287000ef5d7cfb9ae0c534fa7b03d8877f296531d9e557ff6a1515e3faf7ea5",
+  "preserved_failure_log_sha256": "2351c6c569dd31689464afe394507346f3b45ecc036b1da6ea3874fd03aa6b21",
+  "coverage": "Default author/synthesis plus all eight split independent entries; corrupted output rejected in each of nine entry paths."
+}

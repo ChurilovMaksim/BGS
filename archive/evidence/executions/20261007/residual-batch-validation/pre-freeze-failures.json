@@ -1,0 +1,61 @@
+[
+  {
+    "original_role": "pre_freeze_failures/fractional_timeout.json",
+    "original_sha256": "85843c63e98bcc0eeecd09e522a7f3441eed5151be54de657951802515ea5110",
+    "record": {
+      "status": "PREFREEZE_RESOURCE_TIMEOUT",
+      "source_sha256": "39d5c5382424388619c7696b67204299c998f1f37aa7c5165b217f6f591593db",
+      "source_preserved": "fractional_pre_split.py",
+      "cause": "Both maintained wrappers forced their concurrent children to the same minimum affinity core; complete independent three-family sequence reached its declared wall budget. No failed mathematical comparison.",
+      "logs": {
+        "fractional-normal.log": "935d69efde527d1156fb3f9341cbd6d2986824f510beb767d694f4e46796fc8f",
+        "fractional-optimized.log": "c6357687aca5f36a67191244e4fa0fd5c59abe289a0affecaa0544a14be8abfb"
+      },
+      "repair": "Remove forced shared-core affinity in maintained path and split independent exact families into separately bounded entries. Historical successful scientific runs and one-core receipts retained."
+    }
+  },
+  {
+    "original_role": "pre_freeze_failures/missing_claim_anchor.json",
+    "original_sha256": "7d0e60b10009b2050b72fa038993f2c13c21728b88122a85f5d8559312541ea6",
+    "record": {
+      "status": "FAIL",
+      "checks": [
+        {
+          "command": [
+            "python",
+            "computations/verification/scientific_registry_audit.py"
+          ],
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "scientific-registry-audit: BGS-TRACE-021: stable claim id is not anchored in source mathematics/hamming_low_switch_residual.md\n"
+        }
+      ]
+    }
+  },
+  {
+    "original_role": "pre_freeze_failures/test_path.json",
+    "original_sha256": "5b908af55fd8b39be39334adac709a10fa50a477be900d40f13cca18ddcf4039",
+    "record": {
+      "status": "FAILED_BEFORE_WRITE",
+      "action": "Create and invoke portability tests under maintenance/tests",
+      "error": "Actual maintained directory is computations/maintenance/tests; attempted path did not exist and unittest reported ModuleNotFoundError: maintenance.",
+      "correction": "Use computations/maintenance/tests and unittest discovery.",
+      "scientific_source_changed": false,
+      "additional_help_probe": {
+        "attempt": "build_manuscript.py --help",
+        "error": "No such file; discovery showed correct maintained name build_unified_manuscript.py. Correct help probe succeeded.",
+        "gate_execution_started": false
+      }
+    }
+  },
+  {
+    "original_role": "pre_freeze_failures/time_binary_probe.json",
+    "original_sha256": "a98863a82c341a2734bfd0a0d7434d78ec54212970b1ceac01ba8e8fe3fb93bd",
+    "record": {
+      "status": "FAILED_BEFORE_EXECUTION",
+      "action": "External split-control profiling attempted /usr/bin/time",
+      "error": "Executable unavailable",
+      "correction": "Use existing Bash time builtin for exact process CPU and wall observations; no software installed, no scientific job launched by failed attempt."
+    }
+  }
+]

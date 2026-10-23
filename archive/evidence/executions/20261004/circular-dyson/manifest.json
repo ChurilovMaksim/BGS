@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FLOW-014",
+  "repository": {
+    "commit": "4982f8fc3d6303cc2cf7840e608f07d41ba2783e",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "computations/verification/circular_dyson_relaxation.py",
+    "--output",
+    "evidence/executions/20261004/circular-dyson/checks.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite sine interpolation, shifted backward heat, source-time normalization, periodic rectangle orientation and full crossing residue for the circular Dyson kernel; exact balanced general-start comparison exponents",
+    "coefficient_domain": "exact Fraction for the fundamental Casimir; complex128 quadrature diagnostics",
+    "conventions": "Odd N; full normalized Brownian mean exp(-t/2); source heat coefficient t/(2*N); bilinear Fourier pairing; Haar measure dtheta/(2*pi)",
+    "inputs": [
+      "computations/verification/circular_dyson_relaxation.py",
+      "mathematics/circular_dyson_actual_start.md"
+    ],
+    "bounds": {
+      "dimensions": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "spectra": [
+        "clock",
+        "warped by 0.17*sin(alpha)"
+      ],
+      "time": 0.4,
+      "horizontal_height": 0.2,
+      "real_u": [
+        0.31,
+        1.11
+      ],
+      "imag_u": [
+        0,
+        0.05,
+        0.15,
+        0.3,
+        0.6,
+        -0.05,
+        -0.15,
+        -0.3,
+        -0.6
+      ],
+      "residue_cases": 144,
+      "rectangle_nodes": 4096,
+      "Hermite_nodes": 96,
+      "shifted_heat_cases": 32,
+      "backward_real_shifts": [
+        0,
+        0.17
+      ],
+      "balanced_time_exponents": [
+        "0",
+        "2/3",
+        "1"
+      ],
+      "wrapped_heat_windings": "-8 through 8, compared with an independently truncated Fourier sum",
+      "tolerance": 5e-11
+    },
+    "non_claims": [
+      "Finite quadrature does not certify asymptotic or all-N estimates",
+      "No two-dimensional saddle quadrature or numerical Fredholm certificate",
+      "No Brownian endpoint sampling or enormous-step simulation",
+      "No deterministic BGS, priority or analytic Lean certificate"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-04T18:36:49.159454+00:00",
+    "runtime_seconds": 0.518081,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 2147483648,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/circular_dyson_relaxation.py",
+    "mathematics/circular_dyson_actual_start.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/circular_dyson_relaxation.py",
+      "sha256": "78a1f03f4c763cfaeb577951866104b620896f3c3913ccb8b865f3ac471abab9",
+      "sha256_after": "78a1f03f4c763cfaeb577951866104b620896f3c3913ccb8b865f3ac471abab9"
+    },
+    {
+      "path": "mathematics/circular_dyson_actual_start.md",
+      "sha256": "148d2daf09c8d77f4580a0f6d17b304ed76dcdcb3f7475c7cf81442568d959f3",
+      "sha256_after": "148d2daf09c8d77f4580a0f6d17b304ed76dcdcb3f7475c7cf81442568d959f3"
+    }
+  ],
+  "output_directory": "evidence/executions/20261004/circular-dyson",
+  "declared_results": [
+    "evidence/executions/20261004/circular-dyson/checks.json"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261004/circular-dyson/stdout.txt",
+      "sha256": "a9415c766e211f2357c2ee1a3b310aef868f0084cdcd7de0cd799f23d0ed72fb",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261004/circular-dyson/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261004/circular-dyson/checks.json",
+      "sha256": "c4cc8841cedbf4d409dc016bca536ab4f34c0debd8cd8586f3980f77814ce81d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

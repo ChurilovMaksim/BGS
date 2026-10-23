@@ -1,0 +1,19 @@
+{
+  "schema": "bgs-wolfram-execution-v1",
+  "base_commit": "4c2afe539ff6b84be907899b38c8e80f94f547e8",
+  "source": "computations/wolfram/schur_censoring_20261011.wl",
+  "tool": "mcp__codex_apps__wolfram_wolframlanguageevaluator",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"version\" -> \"15.0.1 for Linux x86 (64-bit) (July 2, 2026)\", \"energyIdentity\" -> True, \"nonnegativeLiftCorrection\" -> True, \"exactMeanFlat\" -> True, \"exactPermutationFeedback\" -> True, \"nonClaims\" -> {\"Asymptotic theorem\", \"All-time flatness probability\", \"BGS proof\"}|>"
+      }
+    ],
+    "isError": false
+  },
+  "scope": "Four exact symbolic controls. Variables z and s2 represent real coordinates and a real squared threshold. This does not prove min-max comparison, stopped gap estimates or BGS.",
+  "source_query_relation": "The submitted code equals the source after removing its one terminal LF.",
+  "source_sha256": "7a185dfce73ecd15228ea10cc91b373e35ef75d7e17728ba962ebbf1a957a0da",
+  "submitted_code_sha256": "68da1f18c921dfe78bf6e76bb888932413c987aaf5fc68b89c25d2455f7b0ec4"
+}

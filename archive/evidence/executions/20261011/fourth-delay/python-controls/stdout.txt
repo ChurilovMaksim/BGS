@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact SymPy rationals and Python Fraction; separately float64",
+  "exact_censoring_cases": 140,
+  "exact_lift_energy_identities": 700,
+  "exact_noncommuting_clock_examples": 9,
+  "exact_clock_words": 19548,
+  "clock_orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "exact_feedback_power_controls": {
+    "arithmetic": "exact Gaussian rationals via SymPy; phase integrals by residues",
+    "dimensions": [
+      2,
+      3,
+      4
+    ],
+    "fixture_seeds": [
+      0,
+      1
+    ],
+    "cases": 18,
+    "nonzero_deleted_diagonal_cases": 18,
+    "mixed_clock_entries": 100,
+    "diagonal_square_identities": 40,
+    "fourth_trace_identities": 18
+  },
+  "diagnostics": {
+    "floating_unitaries": 24,
+    "floating_phase_points": 768,
+    "maximum_quadrature_mean_error": 3.1086244689504383e-15,
+    "exact_walsh_mean_gap_falsifier": true
+  },
+  "non_claims": [
+    "asymptotic proof by finite computation",
+    "flatness probability",
+    "equality clock laws",
+    "BGS universality",
+    "worldwide priority"
+  ]
+}

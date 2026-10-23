@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "control": "hamming",
+      "exact_output_match": true
+    },
+    {
+      "control": "translation",
+      "exact_output_match": true
+    },
+    {
+      "control": "all_translation",
+      "exact_output_match": true
+    },
+    {
+      "control": "low_switch",
+      "exact_output_match": true
+    }
+  ],
+  "scope": "Finite exact controls only; analytic bounds and distinct residual representations retain their separately reviewed hypotheses."
+}

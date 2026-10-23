@@ -1,0 +1,29 @@
+{
+  "schema": "bgs-maintenance-result-v1",
+  "initial": {
+    "tests": 236,
+    "failures": 1,
+    "failure": "New verifier optimization guard did not precede imports; finite algorithm unchanged.",
+    "stderr_sha256": "48fec6086a503ad77140cc432e38f8eb53e30ff9c226f80ffd161fffa68aaa1d"
+  },
+  "final": {
+    "tests": 236,
+    "failures": 0,
+    "result": "OK",
+    "stderr_sha256": "c3eaaa30362b3377988a0e7ad057a059eb938c6798c316f4b643e323310b80f3"
+  },
+  "changed_source": {
+    "path": "computations/verification/schur_censoring_and_clock.py",
+    "sha256": "5dce3887631cbb4ffb12a67a203f794c2a0ae36d1cbdf2ae56795e1c5d5c78b3"
+  },
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "computations/maintenance/tests"
+  ],
+  "pythonpath": "/workspace/scratch/06745ba532e4/research_session/runtime_deps",
+  "scope": "Actual local maintenance runs. Logs preserve the corrected failure; no mathematical theorem certification."
+}

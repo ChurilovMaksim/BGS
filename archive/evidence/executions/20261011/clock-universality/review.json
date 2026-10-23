@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-11",
+  "base_commit": "b126cfb18f445b82358fc156632873082ac22503",
+  "reviewer": "/root/fixed_moment_delay_review",
+  "kind": "independent internal mathematical reconstruction, not external peer review",
+  "input": "inputs/conditional_clock_review_input.md",
+  "input_sha256": "c30e1f4dd75e98091343cf864737aacde75b2c502f2abfb82f08618372c8eee9",
+  "verdict": "conditional on the named all-time entry-flat event, after the two stated proof repairs",
+  "original_proof_verdict": "incomplete as written: two finite-word assertions are false",
+  "repairs": [
+    {
+      "failed_assertion": "Excluding a retained endpoint from every open-word coordinate average costs only a small flatness or lower-entry error.",
+      "repair": "For a diagonal even alternating word with no boundary insertion, the omitted endpoint contributes a leading negative product. The alternating two-boundary word supplies the compensating product after lower diagonal moments are replaced by their references. The remaining merged-gap and one-boundary counts give k/q. This is compensation in the ideal drift polynomial, not a pathwise identity."
+    },
+    {
+      "failed_assertion": "Every interior-insertion word has a small retained-to-eliminated lower-power endpoint.",
+      "repair": "Both-boundary interior words can lack that endpoint. Treat their full raw second moments separately, using averaged squared products of two scattering entries and the bounded top-order diagonal cap; this yields C_k delta_u/u. Other interior words use the lower-entry envelope."
+    }
+  ],
+  "reconstructed_obligations": [
+    "exact positive-gap open-word expansion for all fixed orders",
+    "explicit lower-matrix forcing polynomial and leading endpoint compensation",
+    "sole top-diagonal transport; exact zero mixed top transport from E q^2=0",
+    "nonzero deleted diagonal phase averages and remainders",
+    "deterministic pre-exit variance and jump bounds including the separate two-boundary branch",
+    "absolute-row stability for complex transport and predictable scalar Freedman bounds",
+    "fixed-p local envelope closure, live-pair dyadic union and complete crossing states",
+    "reference freezing and O(u^-2) residuals",
+    "formal characteristic equation and endpoint Cauchy density"
+  ],
+  "dependency_boundary": "Uses the separately maintained all-fixed killed trace moment input; does not independently reconstruct that upstream proof in full.",
+  "non_claims": [
+    "No proof that the entry-flat event has probability tending to one",
+    "No conditional probability given the future good event is used",
+    "No order growing with N, spectral edge, or local clock universality",
+    "No new Lean formalization, actual matrix freeness, eigenphase CUE or global BGS",
+    "No claim of world priority for the known Schroeder endpoint moments"
+  ]
+}

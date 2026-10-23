@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "base_commit": "d37c92e563d10d25bb1d6ab85bedffc1f160f773",
+  "scientific_snapshot": {
+    "files": 2971,
+    "manifest_sha256": "c6df374f3d8086744ed188d4e187e8cca9e87ee2977e46b0cf0d9b359a21e19e",
+    "workspace_passed": 205,
+    "workspace_total": 205,
+    "source_tree_unchanged": true
+  },
+  "verification_source_delta": {
+    "scope": "Verification-source correction and newly discovered maintenance regression; not a formatting-only or receipt-only delta. No mathematical adapter or expected output changed.",
+    "path": "computations/verification/fractional_hamming/check_routing.py",
+    "before_sha256": "641584017128473999d53b145186b5af7f06695f3857e5c8111bb4f63d155f31",
+    "after_sha256": "437d86c66535ad5e7cc9776eb669ae11298854f377eeebd5c921cd4c92c80b8a",
+    "new_regression": "computations/maintenance/tests/test_fractional_routing.py",
+    "new_regression_sha256": "f287000ef5d7cfb9ae0c534fa7b03d8877f296531d9e557ff6a1515e3faf7ea5",
+    "preserved_failure_log_sha256": "2351c6c569dd31689464afe394507346f3b45ecc036b1da6ea3874fd03aa6b21",
+    "coverage": "Default author/synthesis plus all eight split independent entries; corrupted output rejected in each of nine entry paths."
+  },
+  "final_source_archive_sha256": "870f78c8a60660c6af68ee442ef87544e611cdd0c37d95a06c8aca280499365e",
+  "final_pre_evidence_source_files": 2972,
+  "unchanged_original_files_after_both_deltas": 2969,
+  "formatting_source_delta": {
+    "path": "manuscript/unified_sections/hamming_low_switch_residual.tex",
+    "before_sha256": "848b59557bb1d765bfbf3d3e3e7dac71fd516427cdd61d5ce96b2d21e9afb127",
+    "after_sha256": "f051e75af89862c5256e7d55cf6794c786cba059ac61edcb1cf635b18315263b",
+    "unchanged_other_source_files": 2970,
+    "corrected_archive_sha256": "e6fb5ea9f8ed62e3f8afa3c7be9c5cb01ad04d7dc77d980e09888fc70b504483",
+    "scope": "One formatting-only TeX display break. It is a source delta, not a receipt-only addition. Scientific checks ran the original archive; corrected TeX is bound by the fresh manuscript gate and exact dependency-closure comparison."
+  },
+  "supplement": "28/28 maintained entries passed on original archive; all supplement source bytes unchanged in corrected archive.",
+  "maintenance": {
+    "normal": 70,
+    "optimized": 70
+  },
+  "manuscript": {
+    "pages": 273,
+    "pdf_sha256": "ef39bd2aa2e42be14c39c086e87de3bfb7716775744326db132aa220afa89fc9",
+    "visual_scope": "Physical pages264,265,268,269,270; whole-document machine warning/reference/source gate passed."
+  },
+  "lean": "No new build; exact unchanged inputs/log bound to prior19-module22-job build.",
+  "cpp": "22 existing corpus binaries source/hash-bound and reused for23 executions; inherited first-seven verifier compiles its own helper programs.",
+  "preserved_failures": "Two initial TeX receipts report the same overfull paragraph. Earlier fractional affinity timeouts, staging/path failures and d37 CI191/192 environment-comparison failure are retained separately; no failed run is relabeled successful.",
+  "cross_runtime": "Current comparator accepts retained actual Python3.13.5 outputs; not fresh hosted CI3.13.15 success.",
+  "postrun_boundary": "This evidence package and later record/index suffixes are outside the scientific execution snapshot. Final delta must distinguish the TeX source change, routing-helper correction/new maintenance regression, and evidence-only additions. Routing dependency closure was independently approved; no mathematical adapter or expected value changed.",
+  "no_publication": true
+}

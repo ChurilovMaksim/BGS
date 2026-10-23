@@ -1,0 +1,526 @@
+{
+  "claim_ids": [
+    "BGS-FLOW-016",
+    "BGS-FLOW-017"
+  ],
+  "software": {
+    "Python": "3.12.14",
+    "NumPy": "2.3.5"
+  },
+  "seed": 20261005,
+  "packing": {
+    "exact_integral_cases": 234,
+    "active_packing_segments": 96
+  },
+  "sharpness": [
+    {
+      "p": 2,
+      "order": 4,
+      "K": 9,
+      "N": 6561,
+      "cost": "68/2187",
+      "factorial_mean": "112/243"
+    },
+    {
+      "p": 2,
+      "order": 4,
+      "K": 17,
+      "N": 83521,
+      "cost": "88/4913",
+      "factorial_mean": "3360/4913"
+    },
+    {
+      "p": 2,
+      "order": 4,
+      "K": 33,
+      "N": 1185921,
+      "cost": "1040/107811",
+      "factorial_mean": "9920/11979"
+    },
+    {
+      "p": 2,
+      "order": 5,
+      "K": 9,
+      "N": 59049,
+      "cost": "68/19683",
+      "factorial_mean": "560/2187"
+    },
+    {
+      "p": 2,
+      "order": 5,
+      "K": 17,
+      "N": 1419857,
+      "cost": "88/83521",
+      "factorial_mean": "43680/83521"
+    },
+    {
+      "p": 2,
+      "order": 5,
+      "K": 33,
+      "N": 39135393,
+      "cost": "1040/3557763",
+      "factorial_mean": "287680/395307"
+    },
+    {
+      "p": 4,
+      "order": 6,
+      "K": 9,
+      "N": 531441,
+      "cost": "2924/177147",
+      "factorial_mean": "2240/19683"
+    },
+    {
+      "p": 4,
+      "order": 6,
+      "K": 17,
+      "N": 24137569,
+      "cost": "14344/1419857",
+      "factorial_mean": "524160/1419857"
+    },
+    {
+      "p": 4,
+      "order": 6,
+      "K": 33,
+      "N": 1291467969,
+      "cost": "658736/117406179",
+      "factorial_mean": "8055040/13045131"
+    },
+    {
+      "p": 4,
+      "order": 7,
+      "K": 9,
+      "N": 4782969,
+      "cost": "2924/1594323",
+      "factorial_mean": "2240/59049"
+    },
+    {
+      "p": 4,
+      "order": 7,
+      "K": 17,
+      "N": 410338673,
+      "cost": "14344/24137569",
+      "factorial_mean": "5765760/24137569"
+    },
+    {
+      "p": 4,
+      "order": 7,
+      "K": 33,
+      "N": 42618442977,
+      "cost": "658736/3874403907",
+      "factorial_mean": "8055040/15944049"
+    }
+  ],
+  "characters": {
+    "dimensions": [
+      4,
+      5,
+      6
+    ],
+    "exact_radial_character_cases": 15
+  },
+  "radial_drift": {
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "arithmetic": "Fraction"
+  },
+  "unitary": {
+    "sampled_matching_cases": 54,
+    "endpoint_cases": 9,
+    "tolerance": 2e-10,
+    "records": [
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.06576219533974574
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.004354399236283188
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 0.00028733068965815494
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.0655286366627112
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.00437382922091263
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 0.0002924408344981622
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.03284296662441125
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 0.001514095493678987
+      },
+      {
+        "N": 3,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 7.667165599476156e-05
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.40528480473478273
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.16425578001388333
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 0.06657037510141835
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.4116540964874612
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.17011793286813542
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 0.07035162018630386
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.7979783919557053
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 0.745952680797548
+      },
+      {
+        "N": 3,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 0.7420424581054161
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.02312968242214493
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.0005092417818297646
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 1.144517137113789e-05
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.02324304073455578
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.0008711397244907011
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 3.397170448501412e-05
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.027741553081606633
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 0.0020398182597974102
+      },
+      {
+        "N": 5,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 0.00014088531513818908
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.4052847862641299
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.1642557626028322
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 0.06657036349128206
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.4099670956230379
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.16850094676977462
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 0.06925390958437223
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.6845959617423605
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 0.5326717199790035
+      },
+      {
+        "N": 5,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 0.4191158438086963
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.06173389811204368
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.003989082519914092
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 0.0002440308624427885
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.05631820596555685
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.0031855946944407236
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 0.0001751811631911589
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.004979819449655131
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 2.5346768347195703e-05
+      },
+      {
+        "N": 9,
+        "repeated": false,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 1.2860290628491846e-07
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 2,
+        "ratio": 0.40528479761602787
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 4,
+        "ratio": 0.16425577673884512
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.001,
+        "p": 6,
+        "ratio": 0.0665703745172354
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 2,
+        "ratio": 0.4110008563731545
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 4,
+        "ratio": 0.16980889706594443
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 0.3,
+        "p": 6,
+        "ratio": 0.07029286144748684
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 2,
+        "ratio": 0.7038757388058695
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 4,
+        "ratio": 0.5754244414109071
+      },
+      {
+        "N": 9,
+        "repeated": true,
+        "scale": 2.0,
+        "p": 6,
+        "ratio": 0.495217592489587
+      }
+    ]
+  },
+  "source_sha256": "6ede9eec4d85dfe2fbc96952805fea44361287acecfff81a2cf91a4d7e6e203d",
+  "non_claims": [
+    "No universal transport, diffusion or chain theorem is certified by finite checks",
+    "No original enormous-step chain simulation",
+    "No deterministic noise removal or full BGS",
+    "No global novelty, external referee or analytic Lean certification"
+  ]
+}
