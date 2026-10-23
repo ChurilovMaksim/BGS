@@ -4777,17 +4777,20 @@
       "id": "BGS-RES-022",
       "title": "Radius-eight resonance nondegeneracy (ND.3)",
       "state": "verification-pending",
-      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF; INDEPENDENT REPLAY PENDING",
+      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF; INDEPENDENT PYTHON AND C++ REPLAYS DEPOSITED 2026-10-23; STATUS REVIEW PENDING",
       "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json",
         "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.proof",
-        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_certificate_replay.json"
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_certificate_replay.json",
+        "evidence/executions/20261023/resonance-cpp-replay/resonance_certificate_replay_cpp.json"
       ],
       "verifiers": [
-        "computations/verification/check_resonance_certificate.py"
+        "computations/verification/check_resonance_certificate.py",
+        "computations/verification/resonance_nondegeneracy_certificate.py",
+        "computations/cpp/resonance_complex_replay.cpp"
       ],
       "formalization": [],
       "manuscript": [
@@ -4795,7 +4798,7 @@
         "manuscript/unified_sections/nondegeneracy_part3.tex"
       ],
       "boundary": "Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables.",
-      "residual": "Residual (recorded 2026-10-23): the independent C++ reconstruction and proof replay named in the closure condition and in §2.2–§2.3 of the source text were never deposited and have never been run in any deposited record. The deposited replay receipt (listed under evidence) records independent_cpp_coefficients NOT_RUN and independent_cpp_proof_replay null, with 4 of the 6 required negative controls exercised (the four Python ones; the two C++ instruction-stream controls have never been presented to any program), and the C++ constructor/replayer source is not in the repository. The closure condition remains open on this point."
+      "residual": "Residual closure (recorded 2026-10-23): the independent C++ reconstruction and proof replay named in the closure condition and in §2.2–§2.3 of the source text had never been deposited or run in any earlier record (the 2026-10-06 receipt records independent_cpp_coefficients NOT_RUN and independent_cpp_proof_replay null, with 4 of the 6 required negative controls exercised). On 2026-10-23 an independent C++ implementation was deposited (computations/cpp/resonance_complex_replay.cpp; Q(√2) eigenbasis window canonicalization per §2.2 in place of the Python descent, exact cpp_int arithmetic) and run through the maintained checker: independent_cpp_coefficients PASS (all 1,475 equations agree exactly), independent_cpp_proof_replay PASS with identical rule counters (P 3293, S 1077, D 1229, F 105; all 144 complex variables eliminated), and all 6 negative controls rejected (receipt: evidence/executions/20261023/resonance-cpp-replay/resonance_certificate_replay_cpp.json). The closure condition is thereby met as a description of the deposited record; the claim remains verification-pending, promotion being a separate status decision."
     },
     {
       "id": "BGS-RET-003",
