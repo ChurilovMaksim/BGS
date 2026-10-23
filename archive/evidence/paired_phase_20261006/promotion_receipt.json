@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "canonical_writes": false,
+  "target_base": "41a2788ef21e787e983e88a8b58470d104013740",
+  "paired_locality_review_sha256": "d8731cdb52ef4cd511d9e1dac404388016f1a4c55845857de08926ecefe84a25",
+  "frostman_review_sha256": "0bf017d7b127f70e9afbdd5e0a953f86131b9df087ec0fcd9a27d43bc61f6926",
+  "normal_optimized_mathematical_outputs_identical": true,
+  "exact_coverage": {
+    "listed_classes": 307984,
+    "polarization_pairs": 1366560,
+    "Gauss_norms": 16,
+    "locality_signed_cases": 24,
+    "Frostman_cycles": 24,
+    "symbolic_P1_P2_and_iN_factor": true
+  },
+  "portability": "2 unittest tests pass normally and under -O; every helper has main, silent imports, explicit checks; source output rejected.",
+  "scope": "One proposed TRACE-018 checkpoint. Paired identity supporting; original Frostman Sections1-3 only, with reviewer112 constant. No pointwise Fourier decay, later sections, full quantum weights, complete signed hierarchy or BGS."
+}

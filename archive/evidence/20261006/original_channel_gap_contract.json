@@ -1,0 +1,22 @@
+{
+  "claim_id": "BGS-FM-020",
+  "base_commit": "fa007c498fe116a814a90aa3215cfd65b1f2a154",
+  "randomness": {
+    "used": false
+  },
+  "arithmetic": "float64 trigonometric spectra and counts; Fraction rational combinatorics separately",
+  "coverage": {
+    "spectral_multisets": "every centered k and odd N=3..65",
+    "positive_low_counts": "every centered k, odd N=3..65 plus N=97,129,193,257, thresholds 1e-4,1e-3,1e-2,0.1,1",
+    "rational_grid_counts": "both parity grids, odd N=3..65, six rational product thresholds; six axis thresholds"
+  },
+  "non_claims": [
+    "No finite evidence establishes a universal theorem, actual-gap asymptotic, higher-copy rate, noise removal or deterministic BGS.",
+    "No interval-certified eigenvalues or analytic Lean certificate."
+  ],
+  "source_sha256": {
+    "mathematics/original_channel_gap.md": "c6f4a42a22402fd8f94d1e842e28d70c42597233e10f80e6778513b2d655c526",
+    "mathematics/collective_diffusion_gap.md": "601a0acb28d07d940b5f3479954dcc560191f2c96a2bfbd22d4bbf0f56e2afbf",
+    "computations/verification/original_channel_gap.py": "af6f9fc189777ac50414690650c70b865badb97a9d82c0eeefb16c8db24f7af3"
+  }
+}

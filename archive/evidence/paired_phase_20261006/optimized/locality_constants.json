@@ -1,0 +1,151 @@
+{
+  "arithmetic": "exact rational matrices; no floating point",
+  "rows": [
+    {
+      "m": 1,
+      "sign": -1,
+      "weighted_G": "2500/2501",
+      "weighted_difference_over_eta": "10000/2501"
+    },
+    {
+      "m": 1,
+      "sign": 1,
+      "weighted_G": "2500/2499",
+      "weighted_difference_over_eta": "10000/2499"
+    },
+    {
+      "m": 2,
+      "sign": -1,
+      "weighted_G": "12499/10004",
+      "weighted_difference_over_eta": "15000/2501"
+    },
+    {
+      "m": 2,
+      "sign": 1,
+      "weighted_G": "4167/3332",
+      "weighted_difference_over_eta": "5000/833"
+    },
+    {
+      "m": 3,
+      "sign": -1,
+      "weighted_G": "56247500/43770001",
+      "weighted_difference_over_eta": "1975090000/306390007"
+    },
+    {
+      "m": 3,
+      "sign": 1,
+      "weighted_G": "56252500/43730001",
+      "weighted_difference_over_eta": "282130000/43730001"
+    },
+    {
+      "m": 4,
+      "sign": -1,
+      "weighted_G": "206245001/150080008",
+      "weighted_difference_over_eta": "143762500/18760001"
+    },
+    {
+      "m": 4,
+      "sign": 1,
+      "weighted_G": "68751667/49973336",
+      "weighted_difference_over_eta": "47912500/6246667"
+    },
+    {
+      "m": 5,
+      "sign": -1,
+      "weighted_G": "890662502500/641018807501",
+      "weighted_difference_over_eta": "5099859770000/641018807501"
+    },
+    {
+      "m": 5,
+      "sign": 1,
+      "weighted_G": "890587502500/640231307499",
+      "weighted_difference_over_eta": "209030750570000/26249483607459"
+    },
+    {
+      "m": 6,
+      "sign": -1,
+      "weighted_G": "3109668782497/2189025290012",
+      "weighted_difference_over_eta": "32800395351000/3830794257521"
+    },
+    {
+      "m": 6,
+      "sign": 1,
+      "weighted_G": "148051489643/104094061428",
+      "weighted_difference_over_eta": "223041533000/26023515357"
+    },
+    {
+      "m": 7,
+      "sign": -1,
+      "weighted_G": "13322578318737500/9343220450115001",
+      "weighted_difference_over_eta": "19419553109528410000/2233029687577485239"
+    },
+    {
+      "m": 7,
+      "sign": 1,
+      "weighted_G": "13318047068762500/9328657949885001",
+      "weighted_difference_over_eta": "19408885234521590000/2229549250022515239"
+    },
+    {
+      "m": 8,
+      "sign": -1,
+      "weighted_G": "45831251287410005/31902507600720016",
+      "weighted_difference_over_eta": "17877117890636250/1993906725045001"
+    },
+    {
+      "m": 8,
+      "sign": 1,
+      "weighted_G": "15269792095863335/10615835866426672",
+      "weighted_difference_over_eta": "5955023671871250/663489741651667"
+    },
+    {
+      "m": 9,
+      "sign": -1,
+      "weighted_G": "168993212440487500/117483891370804739",
+      "weighted_difference_over_eta": "1476572688644141950000/163655060679531001427"
+    },
+    {
+      "m": 9,
+      "sign": 1,
+      "weighted_G": "195738445718975012500/135906564463737692499",
+      "weighted_difference_over_eta": "244275909625884217150000/27045406328283800807301"
+    },
+    {
+      "m": 10,
+      "sign": -1,
+      "weighted_G": "670479613405862647489/464930953900851450020",
+      "weighted_difference_over_eta": "6158827022136433017000/674149883156234602529"
+    },
+    {
+      "m": 10,
+      "sign": 1,
+      "weighted_G": "20301520008534474167/14059867919671256060",
+      "weighted_difference_over_eta": "7644453485766099809000/835859147824456172767"
+    },
+    {
+      "m": 11,
+      "sign": -1,
+      "weighted_G": "2862936097116219231207500/1984381358087449281540001",
+      "weighted_difference_over_eta": "147557256564090907566592210000/16111192246312000716823268119"
+    },
+    {
+      "m": 11,
+      "sign": 1,
+      "weighted_G": "2860208948665031731292500/1979975889021949280960001",
+      "weighted_difference_over_eta": "147390589851251042316357790000/16075424242969206212114248119"
+    },
+    {
+      "m": 12,
+      "sign": -1,
+      "weighted_G": "752616123331048397559617/521204844503966873273848",
+      "weighted_difference_over_eta": "12593464186291283034896500/1368162716822913042343851"
+    },
+    {
+      "m": 12,
+      "sign": 1,
+      "weighted_G": "155128916072313558241667/107293658366247132499048",
+      "weighted_difference_over_eta": "4078355626838447134880500/442586340760769421558573"
+    }
+  ],
+  "literal_tau": "1/100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "boundary": "Finite checks support resolvent bookkeeping, not the nonlinear infinite-chain proof or Fourier decay."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "bgs-loop-reductions-finite-v1",
+  "arithmetic": "exact rational complex / SymPy",
+  "checks": 6,
+  "all_passed": true,
+  "fixtures": {
+    "diagonal_n": 3,
+    "nondiagonal_n": 2,
+    "q": "1/4",
+    "K": 2
+  },
+  "boundary": "Finite algebra only; actual long-long residual and all-order hierarchy remain open."
+}

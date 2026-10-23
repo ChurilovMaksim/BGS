@@ -1,0 +1,143 @@
+{
+  "arithmetic": "exact SymPy rational/integer",
+  "scope": "m=1..12; repeated endpoint aliases retained; Weyl grades <=8 with phase grades <=3",
+  "nonclaims": "Does not test the actual analytic amplitudes numerically or prove an asymptotic theorem, bounded classical mass, equidistribution, or the full signed sum.",
+  "weyl_parity_checks": 386,
+  "wick_variation_cases": [
+    {
+      "m": 1,
+      "wick_variation_checks": 8,
+      "Kprime_entry_l1": "15000/47027",
+      "Gprime_entry_l1": "15000/47027"
+    },
+    {
+      "m": 2,
+      "wick_variation_checks": 24,
+      "Kprime_entry_l1": "26681/94054",
+      "Gprime_entry_l1": "26681/94054"
+    },
+    {
+      "m": 3,
+      "wick_variation_checks": 48,
+      "Kprime_entry_l1": "88405/329189",
+      "Gprime_entry_l1": "88405/329189"
+    },
+    {
+      "m": 4,
+      "wick_variation_checks": 80,
+      "Kprime_entry_l1": "884179/3385944",
+      "Gprime_entry_l1": "884179/3385944"
+    },
+    {
+      "m": 5,
+      "wick_variation_checks": 120,
+      "Kprime_entry_l1": "14862161/57843210",
+      "Gprime_entry_l1": "14862161/57843210"
+    },
+    {
+      "m": 6,
+      "wick_variation_checks": 168,
+      "Kprime_entry_l1": "143491/564324",
+      "Gprime_entry_l1": "143491/564324"
+    },
+    {
+      "m": 7,
+      "wick_variation_checks": 224,
+      "Kprime_entry_l1": "595784963/2360285130",
+      "Gprime_entry_l1": "595784963/2360285130"
+    },
+    {
+      "m": 8,
+      "wick_variation_checks": 288,
+      "Kprime_entry_l1": "674391079/2686182240",
+      "Gprime_entry_l1": "674391079/2686182240"
+    },
+    {
+      "m": 9,
+      "wick_variation_checks": 360,
+      "Kprime_entry_l1": "20636341861/82540849860",
+      "Gprime_entry_l1": "20636341861/82540849860"
+    },
+    {
+      "m": 10,
+      "wick_variation_checks": 440,
+      "Kprime_entry_l1": "35111625991/140906059560",
+      "Gprime_entry_l1": "35111625991/140906059560"
+    },
+    {
+      "m": 11,
+      "wick_variation_checks": 528,
+      "Kprime_entry_l1": "14140849573/56902336260",
+      "Gprime_entry_l1": "14140849573/56902336260"
+    },
+    {
+      "m": 12,
+      "wick_variation_checks": 624,
+      "Kprime_entry_l1": "2239968715087/9033867889200",
+      "Gprime_entry_l1": "2239968715087/9033867889200"
+    }
+  ],
+  "unit_winding_labels": [
+    {
+      "m": 1,
+      "delta_q": "1",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 2,
+      "delta_q": "3/4",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 3,
+      "delta_q": "5/7",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 4,
+      "delta_q": "17/24",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 5,
+      "delta_q": "29/41",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 6,
+      "delta_q": "99/140",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 7,
+      "delta_q": "169/239",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 8,
+      "delta_q": "577/816",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 9,
+      "delta_q": "985/1393",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 10,
+      "delta_q": "3363/4756",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 11,
+      "delta_q": "5741/8119",
+      "delta_p": "-1/2"
+    },
+    {
+      "m": 12,
+      "delta_q": "19601/27720",
+      "delta_p": "-1/2"
+    }
+  ],
+  "total_wick_checks": 2912
+}

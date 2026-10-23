@@ -1,0 +1,64 @@
+{
+  "mode": "grades",
+  "arithmetic": "F5[x]/Phi49; exact int64 polynomial operations",
+  "result": {
+    "recurrence": [
+      {
+        "L": 1,
+        "branch_grades": 1
+      },
+      {
+        "L": 2,
+        "branch_grades": 6
+      },
+      {
+        "L": 3,
+        "branch_grades": 22
+      },
+      {
+        "L": 7,
+        "branch_grades": 428
+      },
+      {
+        "L": 35,
+        "branch_grades": 202182
+      }
+    ],
+    "valuations": [
+      {
+        "m": 7,
+        "e": 1,
+        "superadditive_pairs": 630,
+        "correction_triples": 35105
+      },
+      {
+        "m": 7,
+        "e": 2,
+        "superadditive_pairs": 15400,
+        "correction_triples": 4450775
+      },
+      {
+        "m": 7,
+        "e": 3,
+        "superadditive_pairs": 383250,
+        "correction_triples": 0
+      },
+      {
+        "m": 21,
+        "e": 1,
+        "superadditive_pairs": 5565,
+        "correction_triples": 959140
+      },
+      {
+        "m": 21,
+        "e": 2,
+        "superadditive_pairs": 138075,
+        "correction_triples": 0
+      }
+    ]
+  },
+  "seconds": 13.29042935371399,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "4cfa5f5e8312478fbcaca5b9738d5aea6be9cacee8656150e19fb2281fa4a00b"
+}

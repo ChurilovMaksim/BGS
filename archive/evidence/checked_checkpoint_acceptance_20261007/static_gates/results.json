@@ -1,0 +1,94 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-W",
+      "error::SyntaxWarning",
+      "-m",
+      "compileall",
+      "-q",
+      "computations"
+    ],
+    "exit_code": 0,
+    "stdout": "0.stdout",
+    "stderr": "0.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/verification/scientific_registry_audit.py"
+    ],
+    "exit_code": 0,
+    "stdout": "1.stdout",
+    "stderr": "1.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/verification/repository_audit.py"
+    ],
+    "exit_code": 0,
+    "stdout": "2.stdout",
+    "stderr": "2.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/verification/bibliographic_metadata_audit.py",
+      "--self-test"
+    ],
+    "exit_code": 0,
+    "stdout": "3.stdout",
+    "stderr": "3.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/maintenance/render_claim_registry.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "4.stdout",
+    "stderr": "4.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/maintenance/render_errata.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "5.stdout",
+    "stderr": "5.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/maintenance/sync_return_sections.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "6.stdout",
+    "stderr": "6.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/maintenance/sync_finite_orbit_section.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "7.stdout",
+    "stderr": "7.stderr"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "computations/maintenance/sync_fixed_map_section.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "8.stdout",
+    "stderr": "8.stderr"
+  }
+]

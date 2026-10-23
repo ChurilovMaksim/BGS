@@ -1,0 +1,33 @@
+{
+  "schema": "bgs-resonant-density-wolfram-v1",
+  "date": "2026-10-01",
+  "scope": "Actually evaluated exact interpolation, cluster scales, stable Gaussian shifted-cubic variance; no spectral or BGS theorem by computation.",
+  "source": "computations/verification/resonant_density_checks.wl",
+  "evaluations": [
+    {
+      "scope": "Initial interpolation and scaling expressions",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Out[1]= {0, (-2 + s)^(-1), 1, q^(-1), q, {{10/3, 1/4, 3/4}, {7/2, 1/3, 2/3}, {4, 1/2, 1/2}}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "scope": "Full saved source; evaluator returned final expression",
+      "code": "(* TRACE-011: actually evaluated 1 October 2026; exact algebra only. *)\nClear[s, theta, q, d];\ntheta = 2 (s - 3)/(s - 2);\n{FullSimplify[(1 - 2/s) - (theta/2 + (1 - theta)/s)],\n FullSimplify[(3 - theta)/s],\n FullSimplify[(d q)^3/((d q^3) d^2)],\n FullSimplify[(d q)^2/((d q^3) d)],\n FullSimplify[d q^4/(d q^3)],\n Table[{r, (r-3)/(r-2), 1/(r-2)}, {r, {10/3, 7/2, 4}}]}\n\n(* Independent stable Gaussian algebra; the Python check uses the CUE density. *)\nClear[gm, terms];\ngm[m_] := Module[{p, n, values},\n p = Select[m, # > 0 &]; n = -Select[m, # < 0 &];\n If[Max[Total[p], Total[n]] > 4, Return[$Failed]];\n If[Sort[p] =!= Sort[n], Return[0]];\n values = DeleteDuplicates[p];\n Times @@ ((#^Count[p, #] Factorial[Count[p, #]]) & /@ values)];\nterms = {{{1, 1, -2}, 1}, {{1, -2}, 2}, {{-2}, 1}, {{1, 1}, 1}, {{1}, 2}};\n{Sum[(l-1)! StirlingS2[4,l], {l,1,4}], BellB[3], BellB[6],\n Sum[terms[[i,2]] terms[[j,2]] gm[Join[terms[[i,1]], -terms[[j,1]]]],\n {i,Length[terms]}, {j,Length[terms]}]}\n",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Out[1]= {26, 5, 203, 20}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

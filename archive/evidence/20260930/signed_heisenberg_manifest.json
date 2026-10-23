@@ -1,0 +1,33 @@
+{
+  "schema": "bgs-signed-heisenberg-manifest-v1",
+  "date": "2026-09-30",
+  "recorded_utc": "2026-09-30T18:39:55.701722+00:00",
+  "status": "PASS focused finite controls",
+  "initial_local_commit": "e016a868cbd7e11212ba22c509ed9d96af8a3880",
+  "initial_remote_commit": "d87e99df6e2b9a2a64f02dd14252c8c51850c5c6",
+  "initial_common_tree": "48b66ea4f07409cd95f1c0aa839047c3dd4077cf",
+  "source_sha256": {
+    "mathematics/signed_heisenberg_comparison.md": "e6931d597b43e744b46e7695dd3718da89b52d242a056372fe5996b1c8c68e43",
+    "record/signed_heisenberg_review_20260930.md": "97e54f998bbe6b6033d400cf1e7f08c1ef5bdfac4c3c2a9c2c90afcee03537fe",
+    "literature/signed_heisenberg_sources.md": "c651a196e4b088fa8d3c4f02968a56306b31ecf0b848c82a08f142d7f809efe7",
+    "computations/verification/signed_heisenberg_audit.py": "4734cca7713e3e8ebccc3e11c58b1e38b349796245a46902e6541e2f05988854",
+    "computations/verification/signed_heisenberg_checks.wl": "60daef4703365f334d0e149ac67dc63913bf3b97e01eaf368a7754ea7470c0fb",
+    "supplement/fixed_map/report-audit-20260919/verify.py": "23c5b8ca2807b4da86a20ec5849505eea3a564b56c23efd06738e23c4bcba322",
+    "computations/verification/heisenberg_note_audit.py": "f558321389eaec4e6216068f11862c683e530d684f31c94a4cd864b890f12410",
+    "evidence/20260930/signed_heisenberg_wolfram.json": "0e571846e78311cd5a3595e5efafbabfbf108c6584fa3e8cf267b0643d68cafb",
+    "evidence/20260930/signed_heisenberg_checks.json": "852582cd381f89bbbf13d2d0fd357be62f0747b1187921a14c7820f69b3c3b5d",
+    "evidence/executions/20260930-signed-heisenberg.json": "9c6bd2b772dfadde4713865b1a8fa3d93f2b93d5306bbd622c05714b2d072a6a"
+  },
+  "command": "PYTHONPYCACHEPREFIX=/tmp/bgs-absolute-pycache PYTHONPATH=/workspace/scratch/4100c8bb280d/audit_cue/deps OPENBLAS_NUM_THREADS=1 python3 computations/verification/signed_heisenberg_audit.py --output build/signed-heisenberg-audit/final-checks.json",
+  "scope": "Exact finite CUE and algebra controls, finite complex128 bounds, and actually evaluated Wolfram algebra. Sparse indices at N=2^56 have <=63 moments per tuple; no large quantum matrix was constructed.",
+  "execution_record": "evidence/executions/20260930-signed-heisenberg.json",
+  "non_claims": [
+    "frozen-map signed estimate",
+    "asymptotic proof by computation",
+    "unitary realization of formal trace table",
+    "BGS solution",
+    "external referee",
+    "priority",
+    "new Lean compilation"
+  ]
+}

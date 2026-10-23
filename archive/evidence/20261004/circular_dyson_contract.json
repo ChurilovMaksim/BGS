@@ -1,0 +1,46 @@
+{
+  "claim_id": "BGS-FLOW-014",
+  "mathematics": {
+    "assertion_tested": "Finite sine interpolation, shifted backward heat, source-time normalization, periodic rectangle orientation and full crossing residue for the circular Dyson kernel; exact balanced general-start comparison exponents",
+    "coefficient_domain": "exact Fraction for the fundamental Casimir; complex128 quadrature diagnostics",
+    "conventions": "Odd N; full normalized Brownian mean exp(-t/2); source heat coefficient t/(2*N); bilinear Fourier pairing; Haar measure dtheta/(2*pi)",
+    "inputs": [
+      "computations/verification/circular_dyson_relaxation.py",
+      "mathematics/circular_dyson_actual_start.md"
+    ],
+    "bounds": {
+      "dimensions": [3, 5, 7, 9],
+      "spectra": ["clock", "warped by 0.17*sin(alpha)"],
+      "time": 0.4,
+      "horizontal_height": 0.2,
+      "real_u": [0.31, 1.11],
+      "imag_u": [0, 0.05, 0.15, 0.3, 0.6, -0.05, -0.15, -0.3, -0.6],
+      "residue_cases": 144,
+      "rectangle_nodes": 4096,
+      "Hermite_nodes": 96,
+      "shifted_heat_cases": 32,
+      "backward_real_shifts": [0, 0.17],
+      "balanced_time_exponents": ["0", "2/3", "1"],
+      "wrapped_heat_windings": "-8 through 8, compared with an independently truncated Fourier sum",
+      "tolerance": 0.00000000005
+    },
+    "non_claims": [
+      "Finite quadrature does not certify asymptotic or all-N estimates",
+      "No two-dimensional saddle quadrature or numerical Fredholm certificate",
+      "No Brownian endpoint sampling or enormous-step simulation",
+      "No deterministic BGS, priority or analytic Lean certificate"
+    ]
+  },
+  "execution_artifacts": [
+    "computations/verification/circular_dyson_relaxation.py",
+    "mathematics/circular_dyson_actual_start.md"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.12.14"},
+    {"name": "NumPy", "version": "2.3.5"},
+    {"name": "SciPy", "version": "1.17.0"}
+  ],
+  "randomness": {
+    "used": false
+  }
+}

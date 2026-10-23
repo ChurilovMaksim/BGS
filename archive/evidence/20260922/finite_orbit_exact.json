@@ -1,0 +1,1539 @@
+{
+  "status": "passed finite assertions, not a machine proof of analytic theorem",
+  "base_revision": "39d4e01ae6a6b3eb472ab30266b708ca71a70a16",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "script_sha256": "089ff5bfff883ba7e146b0b2f89b4e1fef63fbcd27934ab94a9525ee392395d9",
+  "separation": [
+    {
+      "A": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 1846,
+      "invariant_hits": 4706,
+      "orbit_hits": 2996,
+      "exceptional_gaps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exceptional_patterns": 1268,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          4,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          3,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          3,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          1,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          2,
+          0,
+          1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4134,
+      "invariant_hits": 8604,
+      "orbit_hits": 4799,
+      "exceptional_gaps": [
+        1,
+        2
+      ],
+      "exceptional_patterns": 911,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          8,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          4,
+          4,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          7,
+          7,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          8,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          8,
+          8,
+          2,
+          -1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4150,
+      "invariant_hits": 9866,
+      "orbit_hits": 5721,
+      "exceptional_gaps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exceptional_patterns": 1833,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          5,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          2,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          4,
+          4,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          1,
+          8,
+          8,
+          4,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          1,
+          6,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          2,
+          7,
+          2,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          3,
+          8,
+          1,
+          1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4130,
+      "invariant_hits": 8023,
+      "orbit_hits": 5102,
+      "exceptional_gaps": [
+        1,
+        2,
+        3
+      ],
+      "exceptional_patterns": 1214,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          6,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          4,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          4,
+          4,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          5,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          6,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          8,
+          8,
+          1,
+          1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 1846,
+      "invariant_hits": 4706,
+      "orbit_hits": 2996,
+      "exceptional_gaps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exceptional_patterns": 1268,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          2,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          1,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          3,
+          3,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          4,
+          4,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          4,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          -3,
+          -2
+        ],
+        [
+          -4,
+          -3
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4134,
+      "invariant_hits": 8604,
+      "orbit_hits": 4799,
+      "exceptional_gaps": [
+        1,
+        2
+      ],
+      "exceptional_patterns": 911,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          2,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          8,
+          8,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          3,
+          8,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          4,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          7,
+          7,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          8,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4150,
+      "invariant_hits": 9866,
+      "orbit_hits": 5721,
+      "exceptional_gaps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exceptional_patterns": 1833,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          5,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          3,
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          4,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          2,
+          1,
+          8,
+          8,
+          4,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          8,
+          5,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          6,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          2,
+          7,
+          2,
+          -1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    },
+    {
+      "A": [
+        [
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "radius": 2,
+      "seeds": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "target_gaps": [
+        1,
+        24
+      ],
+      "channel_types": "all ordered families, both signs",
+      "cross_gaps": "all m>=0 by certified recurrence stopping",
+      "max_m": 26,
+      "cross_patterns": 4130,
+      "invariant_hits": 8023,
+      "orbit_hits": 5102,
+      "exceptional_gaps": [
+        1,
+        2,
+        3
+      ],
+      "exceptional_patterns": 1214,
+      "exception_examples": [
+        [
+          0,
+          0,
+          1,
+          -1,
+          1,
+          6,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          5,
+          7,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          6,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          3,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          4,
+          2,
+          -1
+        ]
+      ],
+      "nonclaim": "No computed cutoff is asserted uniformly in A or seed families."
+    }
+  ],
+  "channels": [
+    {
+      "A": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260922,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 192,
+      "nonzero_comparisons": 128,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260923,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 288,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "seed": 20260924,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 288,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260925,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 284,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260926,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 192,
+      "nonzero_comparisons": 128,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          -3,
+          -2
+        ],
+        [
+          -4,
+          -3
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260927,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 284,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "seed": 20260928,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 288,
+      "arithmetic": "Gaussian integers"
+    },
+    {
+      "A": [
+        [
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "seeds": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "seed": 20260929,
+      "temporal_support": [
+        -4,
+        4
+      ],
+      "lags": [
+        1,
+        2,
+        4
+      ],
+      "tested_gaps": [
+        6,
+        13
+      ],
+      "channel_types": "all ordered families, both signs",
+      "exact_comparisons": 432,
+      "nonzero_comparisons": 282,
+      "arithmetic": "Gaussian integers"
+    }
+  ],
+  "controls": {
+    "real_root_degeneracy_integer_cases": 6859,
+    "all_pass_negative_control": "P(z)=exp(z-z^-1), PP*=1; growth O(r), not O(log^2 r)",
+    "polynomial_negative_control": "g constant gives every bracket zero; excluded by contract"
+  },
+  "duration_seconds": 1.017112257000008
+}

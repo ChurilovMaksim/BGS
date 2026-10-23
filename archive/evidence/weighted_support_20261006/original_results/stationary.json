@@ -1,0 +1,71 @@
+{
+  "arithmetic": "exact integers and Fractions",
+  "scope": "Exhaustive labels and cyclic pairs for m=1..6; all corresponding H displacement directions; literal torsion counterexample.",
+  "rows": [
+    {
+      "m": 1,
+      "fixed_points": 4,
+      "cyclic_ordered_pairs": 4,
+      "proper_period_points": 0,
+      "homoclinic_ordered_pairs": 4,
+      "intersection": 0
+    },
+    {
+      "m": 2,
+      "fixed_points": 32,
+      "cyclic_ordered_pairs": 60,
+      "proper_period_points": 4,
+      "homoclinic_ordered_pairs": 128,
+      "intersection": 0
+    },
+    {
+      "m": 3,
+      "fixed_points": 196,
+      "cyclic_ordered_pairs": 580,
+      "proper_period_points": 4,
+      "homoclinic_ordered_pairs": 1176,
+      "intersection": 0
+    },
+    {
+      "m": 4,
+      "fixed_points": 1152,
+      "cyclic_ordered_pairs": 4540,
+      "proper_period_points": 32,
+      "homoclinic_ordered_pairs": 9216,
+      "intersection": 0
+    },
+    {
+      "m": 5,
+      "fixed_points": 6724,
+      "cyclic_ordered_pairs": 33604,
+      "proper_period_points": 4,
+      "homoclinic_ordered_pairs": 67240,
+      "intersection": 0
+    },
+    {
+      "m": 6,
+      "fixed_points": 39200,
+      "cyclic_ordered_pairs": 234492,
+      "proper_period_points": 224,
+      "homoclinic_ordered_pairs": 470400,
+      "intersection": 0
+    }
+  ],
+  "torsion_counterexample": {
+    "m": 3,
+    "N": 7,
+    "z": [
+      "1/7",
+      "0"
+    ],
+    "z_prime": [
+      "3/7",
+      "2/7"
+    ],
+    "d": [
+      "2/7",
+      "2/7"
+    ]
+  },
+  "nonclaims": "No finite algebra sample proves the analytic ramp or asymptotic residual bound."
+}

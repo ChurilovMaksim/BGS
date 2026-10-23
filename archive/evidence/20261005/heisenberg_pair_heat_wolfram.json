@@ -1,0 +1,41 @@
+{
+  "schema": "bgs-wolfram-pair-heat-v1",
+  "claim_id": "BGS-FLOW-021",
+  "base_commit": "1e25c415239c283652c9155d03b0924b8aa61674",
+  "source": "computations/verification/heisenberg_pair_heat_checks.wl",
+  "observed_utc": "2026-10-05T17:11:07.756Z",
+  "tool": "mcp__codex_apps__wolfram_wolframlanguageevaluator",
+  "time_constraint_requested_seconds": 40,
+  "kernel_version": "not returned by tool",
+  "effective_resource_limits": "not returned by tool",
+  "randomness_used": false,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"ContourUncontractedExponent\" -> True, \"ContourContractedExponent\" -> True, \"ContractionDegrees1to4\" -> {True, True, True, True}, \"RationalWickFactor\" -> True, \"LinearCutJoinDegrees1to12\" -> {True, True, True, True, True, True, True, True, True, True, True, True}|>"
+      }
+    ],
+    "isError": false
+  },
+  "scope": {
+    "wick_contraction_degrees": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "linear_cut_join_degrees": [
+      1,
+      12
+    ],
+    "rational_wick_factor": true,
+    "symbolic_contour_exponents": 2
+  },
+  "non_claims": [
+    "No universal analytic proof certificate",
+    "No deterministic BGS estimate",
+    "No large-N original operator simulation"
+  ],
+  "source_sha256": "0a5482d6133bd66d045d2138cb6c89a3a7e116df71f503c15a334bbd407f7798"
+}

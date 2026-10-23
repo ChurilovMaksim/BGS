@@ -1,0 +1,218 @@
+{
+  "arithmetic": "Exact integers/Fraction for decisions; Decimal exponents display only",
+  "checks": [
+    {
+      "name": "frozen original target hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rational enclosure for sqrt(2)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "beta below lambda below seven",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "eta inequalities",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "infinite beta Green norm below 300",
+      "passed": true,
+      "detail": "232568542494923840000000000000/804040507106674478719195161"
+    },
+    {
+      "name": "nonlinear Hessian beta norm below 14 eta",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "resolvent at most 301",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "resolvent difference constant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G E constant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "nonzero period sum constant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "defect beta locality constant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Holder split constant below 500",
+      "passed": true,
+      "detail": "23451106268591353/56854249492380"
+    },
+    {
+      "name": "Holder final constant below 2e7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "positive mass and negative off-diagonals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one-neighbour propagation factor at least 1/7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "inverse Holder prefactor identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite beta-weighted Green controls",
+      "passed": true,
+      "detail": "Exact Q arithmetic, m=1..24 including repeated neighbours."
+    }
+  ],
+  "finite_cycles": [
+    {
+      "m": 1,
+      "weighted_norm": "1",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 2,
+      "weighted_norm": "11/5",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 3,
+      "weighted_norm": "83/35",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 4,
+      "weighted_norm": "89/25",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 5,
+      "weighted_norm": "3857/1025",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 6,
+      "weighted_norm": "21661/4375",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 7,
+      "weighted_norm": "154003/29875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 8,
+      "weighted_norm": "3961/625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 9,
+      "weighted_norm": "5694337/870625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 10,
+      "weighted_norm": "28675151/3715625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 11,
+      "weighted_norm": "200929523/25371875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 12,
+      "weighted_norm": "23436637/2578125",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 13,
+      "weighted_norm": "6870062417/739390625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 14,
+      "weighted_norm": "32997558241/3155546875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 15,
+      "weighted_norm": "229630153843/21547421875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 16,
+      "weighted_norm": "2663387833/225390625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 17,
+      "weighted_norm": "7545147117697/627937890625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 18,
+      "weighted_norm": "35293902886931/2679892578125",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 19,
+      "weighted_norm": "244625487506963/18299451171875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 20,
+      "weighted_norm": "188950133159229/13016298828125",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 21,
+      "weighted_norm": "7846478954108177/533285087890625",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 22,
+      "weighted_norm": "36088134175565221/2275936474609375",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 23,
+      "weighted_norm": "249472678633980883/15541066357421875",
+      "unweighted_row_sum": "1"
+    },
+    {
+      "m": 24,
+      "weighted_norm": "266135803194751/15482177734375",
+      "unweighted_row_sum": "1"
+    }
+  ],
+  "decimal_display_only": {
+    "alpha_beta": "0.997226342745732867885855736506538946138688447924862159940743",
+    "gamma": "0.905872850755648753792853454062728619897533138346255599459083",
+    "p_star": "1.10390768325359738383489816976753149293472966959110859878930"
+  },
+  "scope": "Finite constant/Green controls only; not the nonlinear theorem."
+}

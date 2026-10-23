@@ -1,0 +1,229 @@
+{
+  "schema": "bgs-release-repair-bindings-v1",
+  "checked_at_utc": "2026-10-07T03:56:03.184177+00:00",
+  "checks": [
+    {
+      "path": "record/charge_replay_loader_originals/charge_strengthening_replay.py",
+      "role": "declared_charge_loader_repair",
+      "expected_sha256": "94d9fe2a73f63f1c518fc3c263c6daf0597770c7b85eda5fbc7817a4ff467b7a",
+      "actual_sha256": "94d9fe2a73f63f1c518fc3c263c6daf0597770c7b85eda5fbc7817a4ff467b7a",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/charge_strengthening_replay.py",
+      "role": "declared_charge_loader_repair",
+      "expected_sha256": "a229e3f2d016161fc4154dd76683d74f124119f6a7b67461a35ea7d5576c7784",
+      "actual_sha256": "a229e3f2d016161fc4154dd76683d74f124119f6a7b67461a35ea7d5576c7784",
+      "passed": true
+    },
+    {
+      "path": "record/charge_replay_loader_originals/charge_strengthening_replay_sources.json",
+      "role": "declared_charge_loader_repair",
+      "expected_sha256": "df918d16883b301e6fda93812d1a3f517c4c21100c32cb2e6e656479900ce27e",
+      "actual_sha256": "df918d16883b301e6fda93812d1a3f517c4c21100c32cb2e6e656479900ce27e",
+      "passed": true
+    },
+    {
+      "path": "record/charge_strengthening_replay_sources.json",
+      "role": "declared_charge_loader_repair",
+      "expected_sha256": "b037b9d56a742047f6c62b67336753d437565e9fad1c0fa0d267153590290384",
+      "actual_sha256": "b037b9d56a742047f6c62b67336753d437565e9fad1c0fa0d267153590290384",
+      "passed": true
+    },
+    {
+      "path": "record/schur_reduction_source_bindings.json",
+      "role": "schur_historical_binding",
+      "expected_sha256": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14",
+      "actual_sha256": "334f0ec42d59b37668ea2e4fe2cb93fdb0525927ff7b725e0652fe0b5ce2ea14",
+      "passed": true
+    },
+    {
+      "path": "record/schur_replay_freshness_originals/full_replay.py",
+      "role": "schur_preserved_wrapper",
+      "expected_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "actual_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/schur/full_replay.py",
+      "role": "schur_current_wrapper",
+      "expected_sha256": "ad8ad5a9d406ffae60618ceed1c20ccd03a518aae92b627542d02d4882876e8c",
+      "actual_sha256": "ad8ad5a9d406ffae60618ceed1c20ccd03a518aae92b627542d02d4882876e8c",
+      "passed": true
+    },
+    {
+      "path": "record/schur_replay_freshness_originals/balanced_pair_schur.py",
+      "role": "schur_preserved_wrapper",
+      "expected_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "actual_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/balanced_pair_schur.py",
+      "role": "schur_current_wrapper",
+      "expected_sha256": "4e6ee9f7663f10a7c149f65d21360ea3a7d1d0a9328194c45d8cb4b0fec36c32",
+      "actual_sha256": "4e6ee9f7663f10a7c149f65d21360ea3a7d1d0a9328194c45d8cb4b0fec36c32",
+      "passed": true
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/author/verified_checks.json",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "actual_sha256": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
+      "passed": true
+    },
+    {
+      "path": "evidence/schur_reduction_20261007/raw/review/checks.json",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+      "actual_sha256": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
+      "passed": true
+    },
+    {
+      "path": "mathematics/balanced_pair_schur_reduction.md",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+      "actual_sha256": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/schur/author_checks.py",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980",
+      "actual_sha256": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/schur/independent_checks.py",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff",
+      "actual_sha256": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/schur/comparison.py",
+      "role": "schur_unchanged_science",
+      "expected_sha256": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95",
+      "actual_sha256": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95",
+      "passed": true
+    },
+    {
+      "path": "record/charge_replay_loader_originals/charge_strengthening_replay.py",
+      "role": "historical_import_original_preserved",
+      "expected_sha256": "94d9fe2a73f63f1c518fc3c263c6daf0597770c7b85eda5fbc7817a4ff467b7a",
+      "actual_sha256": "94d9fe2a73f63f1c518fc3c263c6daf0597770c7b85eda5fbc7817a4ff467b7a",
+      "passed": true
+    },
+    {
+      "path": "record/charge_replay_loader_originals/charge_strengthening_replay_sources.json",
+      "role": "historical_import_original_preserved",
+      "expected_sha256": "df918d16883b301e6fda93812d1a3f517c4c21100c32cb2e6e656479900ce27e",
+      "actual_sha256": "df918d16883b301e6fda93812d1a3f517c4c21100c32cb2e6e656479900ce27e",
+      "passed": true
+    },
+    {
+      "path": "record/schur_replay_freshness_originals/balanced_pair_schur.py",
+      "role": "historical_import_original_preserved",
+      "expected_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "actual_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
+      "passed": true
+    },
+    {
+      "path": "record/schur_replay_freshness_originals/full_replay.py",
+      "role": "historical_import_original_preserved",
+      "expected_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "actual_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v1.py",
+      "role": "protocol_preserved_v1",
+      "expected_sha256": "4dd35155a64f926b3807ab2559de4403aad6b677e67f1aab0f89f568999e8688",
+      "actual_sha256": "4dd35155a64f926b3807ab2559de4403aad6b677e67f1aab0f89f568999e8688",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2.py",
+      "role": "protocol_preserved_v2",
+      "expected_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "actual_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "passed": true
+    },
+    {
+      "role": "v2_explicit_supersession",
+      "path": "computations/verification/research_checkpoint_replay.py",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v1.py",
+      "role": "protocol_preserved_v1",
+      "expected_sha256": "624a64d265014649d95b0ff88bd1a7f32e2dfa0cbd4c512d9f31b846429f29b5",
+      "actual_sha256": "624a64d265014649d95b0ff88bd1a7f32e2dfa0cbd4c512d9f31b846429f29b5",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2.py",
+      "role": "protocol_preserved_v2",
+      "expected_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "actual_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "passed": true
+    },
+    {
+      "role": "v2_explicit_supersession",
+      "path": "computations/maintenance/tests/test_research_checkpoint_portability.py",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2.py",
+      "role": "durable_output_extension_original",
+      "expected_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "actual_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+      "passed": true
+    },
+    {
+      "path": "computations/verification/research_checkpoint_replay.py",
+      "role": "durable_output_extension_current",
+      "expected_sha256": "8ad2070b7bb12456238ade81867720a499afdda74acdb6332ea36ecf59e6dce8",
+      "actual_sha256": "8ad2070b7bb12456238ade81867720a499afdda74acdb6332ea36ecf59e6dce8",
+      "passed": true
+    },
+    {
+      "role": "durable_output_extension_declared_diff",
+      "path": "record/research_checkpoint_protocol_originals/research_checkpoint_replay_v2_to_v3.diff",
+      "passed": true
+    },
+    {
+      "path": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2.py",
+      "role": "durable_test_extension_original",
+      "expected_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "actual_sha256": "1560b401c461558fbe8849d4d795054d7a93815499a598ed95893091167efc43",
+      "passed": true
+    },
+    {
+      "path": "computations/maintenance/tests/test_research_checkpoint_portability.py",
+      "role": "durable_test_extension_current",
+      "expected_sha256": "7768bae3cba5cfbb52cf2cfdbab3a01989c89071bef625c24fe1c8496527300d",
+      "actual_sha256": "7768bae3cba5cfbb52cf2cfdbab3a01989c89071bef625c24fe1c8496527300d",
+      "passed": true
+    },
+    {
+      "role": "durable_test_extension_declared_diff",
+      "path": "record/research_checkpoint_protocol_originals/test_research_checkpoint_portability_v2_to_v3.diff",
+      "passed": true
+    },
+    {
+      "path": "record/schur_replay_freshness_repair_map.json",
+      "role": "schur_final_receipt_map_binding",
+      "expected_sha256": "9b6d29ad80c8fae151d2774880eca56b7eddbf723ce5c3968f4aadffd2fb6c6b",
+      "actual_sha256": "9b6d29ad80c8fae151d2774880eca56b7eddbf723ce5c3968f4aadffd2fb6c6b",
+      "passed": true
+    },
+    {
+      "role": "schur_terminal_receipt",
+      "path": "record/schur_replay_freshness_repair_receipt.json",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "status": "passed"
+}

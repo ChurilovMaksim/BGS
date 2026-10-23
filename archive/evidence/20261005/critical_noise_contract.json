@@ -1,0 +1,163 @@
+{
+  "claim_id": "BGS-FLOW-018",
+  "related_claim_ids": [
+    "BGS-FLOW-019"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact finite Fourier selection, compensated mesh masses, clock generator jets, direct radial polynomial controls, Abel summand signs, stable Gram/generator matrices; generic rational cross-block Taylor surrogates; numerical critical kernels and variance/rate diagnostics",
+    "coefficient_domain": "Fraction exact rationals for algebraic controls; complex128/binary64 numerical diagnostics without interval certification",
+    "conventions": "Odd N clock, full normalized unitary Brownian generator D2, unfolded period N and unit intensity, p_0=N, Fourier exp(-2 pi i x xi), total variation without factor 1/2; stable Haar Gram requires 2Q<=N",
+    "inputs": [
+      "mathematics/clock_structure_and_noise_scale.md",
+      "mathematics/fixed_degree_heat_projection.md",
+      "mathematics/quadratic_noise_clock_limit.md",
+      "mathematics/microscopic_noise_removal.md",
+      "mathematics/local_moment_transport.md",
+      "mathematics/coboundary_all_order_limit.md",
+      "mathematics/fixed_time_wavepacket_trace_bound.md",
+      "literature/critical_noise_sources_20261005.md",
+      "computations/verification/clock_structure_and_heat_projection.py",
+      "computations/verification/microscopic_noise_removal.py",
+      "computations/verification/quadratic_noise_clock.py",
+      "mathematics/coboundary_mobius_diffusion.md",
+      "mathematics/quadratic_noise_coupling.md",
+      "mathematics/coboundary_joint_limit.md",
+      "mathematics/coboundary_polynomial_limit.md",
+      "mathematics/coboundary_general_start.md",
+      "literature/signed_heisenberg_sources.md"
+    ],
+    "bounds": {
+      "angular_N": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "angular_m": "1..2N+1",
+      "rational_z": [
+        "1/4",
+        "2/3",
+        "9/10"
+      ],
+      "angular_cases": 168,
+      "mass_N": [
+        3,
+        5,
+        7
+      ],
+      "mass_q": "1..4",
+      "mass_cases": 36,
+      "Abel_w": [
+        "1/2",
+        "4/5"
+      ],
+      "Abel_sign_cases": 72,
+      "jet_N": [
+        3,
+        5,
+        7
+      ],
+      "jet_m": "1..N+2",
+      "jet_order": "0..4",
+      "jet_cases": 105,
+      "direct_radial_N": 3,
+      "direct_radial_m": "1..5",
+      "direct_radial_order": "0..3",
+      "direct_radial_cases": 20,
+      "Gram_Q": "0..4",
+      "Gram_N": "distinct max(3,2Q), max(3,2Q+1), 2Q+3",
+      "Gram_cases": 12,
+      "max_Gram_dimension": 40,
+      "cross_block_surrogate_size": "2..6",
+      "cross_block_split": "1..size-1",
+      "cross_block_rational_patterns": 2,
+      "cross_block_surrogate_cases": 30,
+      "kernel_N": [
+        31,
+        63,
+        127
+      ],
+      "kernel_tau": [
+        0.5,
+        2.0,
+        8.0
+      ],
+      "kernel_phase": [
+        0.17,
+        0.43
+      ],
+      "kernel_alias_rmax": 12,
+      "kernel_cases": 18,
+      "band_N": [
+        31,
+        101,
+        301
+      ],
+      "band_tau": [
+        0.5,
+        2.0,
+        8.0
+      ],
+      "band_quadrature": 96,
+      "band_cases": 9,
+      "sharp_N": [
+        1001,
+        2001,
+        4001,
+        8001
+      ],
+      "sharp_tau": [
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "sharp_cases": 4,
+      "numerical_tolerances": {
+        "kernel_roundoff_margin": 2e-12,
+        "band_error": "2e-4/N",
+        "sharp_final_error": 1e-05
+      }
+    },
+    "non_claims": [
+      "No proof of all-N asymptotics or all-Q estimates by finite checks",
+      "Generic Taylor matrices are algebraic surrogates, not CUE samples",
+      "No stochastic trajectory, huge original-chain simulation or analytic Lean",
+      "No actual-map complementary/noise-defect estimate, full BGS or world novelty certification"
+    ]
+  },
+  "execution_artifacts": [
+    "mathematics/clock_structure_and_noise_scale.md",
+    "mathematics/fixed_degree_heat_projection.md",
+    "mathematics/quadratic_noise_clock_limit.md",
+    "mathematics/microscopic_noise_removal.md",
+    "mathematics/local_moment_transport.md",
+    "mathematics/coboundary_all_order_limit.md",
+    "mathematics/fixed_time_wavepacket_trace_bound.md",
+    "literature/critical_noise_sources_20261005.md",
+    "computations/verification/clock_structure_and_heat_projection.py",
+    "computations/verification/microscopic_noise_removal.py",
+    "computations/verification/quadratic_noise_clock.py",
+    "mathematics/coboundary_mobius_diffusion.md",
+    "mathematics/quadratic_noise_coupling.md",
+    "mathematics/coboundary_joint_limit.md",
+    "mathematics/coboundary_polynomial_limit.md",
+    "mathematics/coboundary_general_start.md",
+    "literature/signed_heisenberg_sources.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

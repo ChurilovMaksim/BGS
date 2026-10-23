@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational complex coefficients",
+  "modes": 32,
+  "weighted_coefficient_sum": "51451/1000",
+  "derivative_budget_checks": {
+    "vector_field": true,
+    "first_derivative": true,
+    "second_derivative": true
+  },
+  "scope": "Finite literal-symbol assembly only; no asymptotic theorem verified by computation."
+}

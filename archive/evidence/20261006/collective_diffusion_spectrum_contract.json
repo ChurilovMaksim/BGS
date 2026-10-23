@@ -1,0 +1,61 @@
+{
+  "claim_id": "BGS-FM-019",
+  "mathematics": {
+    "assertion_tested": "Floating descriptive eigenvalues of exact total-Weyl blocks of the scaled collective generator; two zero modes removed only in the zero block",
+    "coefficient_domain": "IEEE float64; trigonometric coefficients and numerical eigensolvers",
+    "conventions": "Odd N; raw modular Weyl T_v; total label k; generator N^2(Q_q+Q_p)/2; two invariant directions I and swap in k=0",
+    "inputs": [
+      "computations/experiments/collective_diffusion_spectrum.py",
+      "mathematics/collective_diffusion_gap.md",
+      "requirements.txt"
+    ],
+    "bounds": {
+      "all_blocks_N": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "selected_N": [
+        17,
+        21,
+        33,
+        65
+      ],
+      "selected_blocks": "(0,0),(1,0),(1,1),(2,0),(2,2),(floor(N/2),floor(N/2))",
+      "sparse_eigensolver": "tol=1e-9, maxiter=10000",
+      "sparse_start": "Deterministic v0_i=sin(i+1)+cos(sqrt(2)*(i+1)), not library default"
+    },
+    "non_claims": [
+      "No interval arithmetic, asymptotic lower bound, actual-map spectrum or BGS limit",
+      "The proposed block formula must separately be verified against coordinate commutators",
+      "Selected larger-N blocks do not cover the full spectrum"
+    ]
+  },
+  "execution_artifacts": [
+    "computations/experiments/collective_diffusion_spectrum.py",
+    "mathematics/collective_diffusion_gap.md",
+    "requirements.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.17.0"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}
