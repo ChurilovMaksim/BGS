@@ -285,10 +285,19 @@ def audit_topics() -> None:
         for rel in paths:
             require_path(rel)
             registered.add(rel)
+    mathdir = ROOT / "mathematics"
+    # Phase-2 topical reorganization: maintained proof notes also live in
+    # topical home directories below mathematics/; the reading views
+    # (topics/) and the spectral edition subtree are not proof notes.
     maintained = {
         str(path.relative_to(ROOT))
-        for path in (ROOT / "mathematics").glob("*.md")
-        if path.name not in {"README.md", "results.md", "results_20260907_addendum.md", "open_questions.md"}
+        for path in mathdir.rglob("*.md")
+        if "topics" not in path.relative_to(mathdir).parts[:-1]
+        and "spectral_research" not in path.relative_to(mathdir).parts[:-1]
+        and not (
+            path.parent == mathdir
+            and path.name in {"README.md", "results.md", "results_20260907_addendum.md", "open_questions.md"}
+        )
     }
     if registered != maintained:
         missing = sorted(maintained - registered)

@@ -642,7 +642,7 @@ The generic infinite-support part is now closed substantially beyond analytic st
 
 Two further analytic mechanisms are also closed:
 
-1. `analytic_bracket_rigidity.md` proves
+1. `foundations/analytic_bracket_rigidity.md` proves
 
 ```text
 {g,C_A g}=0 identically and g real analytic  =>  g constant.

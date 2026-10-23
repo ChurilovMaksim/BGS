@@ -487,6 +487,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Analytic rigidity of pointwise Poisson-bracket cancellation](../mathematics/analytic_bracket_rigidity.md) | Consult proof and full ledger |
-| [Earlier foundations retained after the reconstruction audit](../mathematics/earlier_foundations.md) | Consult proof and full ledger |
-| [Signed-trace extension: every hyperbolic integer toral automorphism](../mathematics/hyperbolic_signed_trace_extension.md) | Consult proof and full ledger |
+| [Analytic rigidity of pointwise Poisson-bracket cancellation](../mathematics/foundations/analytic_bracket_rigidity.md) | Consult proof and full ledger |
+| [Earlier foundations retained after the reconstruction audit](../mathematics/foundations/earlier_foundations.md) | Consult proof and full ledger |
+| [Signed-trace extension: every hyperbolic integer toral automorphism](../mathematics/foundations/hyperbolic_signed_trace_extension.md) | Consult proof and full ledger |

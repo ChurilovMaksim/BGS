@@ -222,7 +222,7 @@ Hence if a nonconstant real-analytic `g` nevertheless has `Gamma_A(g)=0`, its br
 u analytic.                                                        (C)
 ```
 
-This sharply reduces but does not close the all-members analytic question. See `analytic_bracket_rigidity.md`, `analytic_coboundary_regularization.md`, and `../manuscript/unified_sections/analytic_resonance_rigidity.tex`.
+This sharply reduces but does not close the all-members analytic question. See `foundations/analytic_bracket_rigidity.md`, `analytic_coboundary_regularization.md`, and `../manuscript/unified_sections/analytic_resonance_rigidity.tex`.
 
 ## 10. Current principal open frontiers
 

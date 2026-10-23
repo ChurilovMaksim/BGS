@@ -23,7 +23,16 @@ def projections(root):
     for cid in by:visit(cid)
     topics=json.loads((root/'record/mathematics_topics.json').read_text())['topics']
     registered={p for ps in topics.values() for p in ps}
-    maintained={p.relative_to(root).as_posix() for p in (root/'mathematics').glob('*.md') if p.name not in {'README.md','results.md','results_20260907_addendum.md','open_questions.md'}}
+    mathdir=root/'mathematics'
+    # Maintained proof notes live at the mathematics root and, since the
+    # phase-2 topical reorganization, in topical home directories below it;
+    # the reading views (topics/) and the spectral edition subtree are not
+    # proof notes. The equality below is the maintained-count control: a
+    # note missing from the topic map, or a map path missing on disk, fails.
+    maintained={p.relative_to(root).as_posix() for p in mathdir.rglob('*.md')
+                if 'topics' not in p.relative_to(mathdir).parts[:-1]
+                and 'spectral_research' not in p.relative_to(mathdir).parts[:-1]
+                and not (p.parent==mathdir and p.name in {'README.md','results.md','results_20260907_addendum.md','open_questions.md'})}
     if registered!=maintained:raise ValueError('Topic map does not cover maintained proofs')
     sources=defaultdict(list);consumers=Counter()
     for row in rows:

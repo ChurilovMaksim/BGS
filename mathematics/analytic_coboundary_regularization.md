@@ -176,7 +176,7 @@ all oriented frequency-orbit sums of `h_g` vanish. The theorem therefore produce
 {g,C_A g}/(4*pi)=u-C_A u.                               (15)
 ```
 
-Combined with `analytic_bracket_rigidity.md`, every hypothetical nonconstant real-analytic zero-variance observable must satisfy (15) with a **nonzero** analytic left side. The pointwise-zero Gevrey mechanism is impossible in the analytic category.
+Combined with `foundations/analytic_bracket_rigidity.md`, every hypothetical nonconstant real-analytic zero-variance observable must satisfy (15) with a **nonzero** analytic left side. The pointwise-zero Gevrey mechanism is impossible in the analytic category.
 
 In ordinary `l1` frequency coordinates, (2) converts any bound
 

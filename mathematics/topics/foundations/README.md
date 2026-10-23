@@ -22,6 +22,6 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 
 ## Complete source membership
 
-- [analytic_bracket_rigidity](../../analytic_bracket_rigidity.md)
-- [earlier_foundations](../../earlier_foundations.md)
-- [hyperbolic_signed_trace_extension](../../hyperbolic_signed_trace_extension.md)
+- [analytic_bracket_rigidity](../../foundations/analytic_bracket_rigidity.md)
+- [earlier_foundations](../../foundations/earlier_foundations.md)
+- [hyperbolic_signed_trace_extension](../../foundations/hyperbolic_signed_trace_extension.md)

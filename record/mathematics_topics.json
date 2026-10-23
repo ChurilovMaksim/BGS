@@ -1,7 +1,7 @@
 {
   "schema": "bgs-mathematics-topics-v1",
-  "updated": "2026-10-22",
-  "policy": "Stable proof-file paths are preserved; topic directories are canonical navigational views rather than duplicate proof sources.",
+  "updated": "2026-10-23",
+  "policy": "Canonical paths of the proof notes are recorded here. Phase 2 moves each note into exactly one topical home directory under mathematics/ (wave by wave; the wave manifests record every old-to-new path map); membership lists are navigational, may cite one note under several topics, and always at its single canonical path. The mathematics/topics/ directories are reading views, not duplicate proof sources.",
   "topics": {
     "fixed-map": [
       "mathematics/balanced_phase_controllability.md",
@@ -401,9 +401,9 @@
       "mathematics/two_radius_quadrature_rigidity.md"
     ],
     "foundations": [
-      "mathematics/analytic_bracket_rigidity.md",
-      "mathematics/earlier_foundations.md",
-      "mathematics/hyperbolic_signed_trace_extension.md"
+      "mathematics/foundations/analytic_bracket_rigidity.md",
+      "mathematics/foundations/earlier_foundations.md",
+      "mathematics/foundations/hyperbolic_signed_trace_extension.md"
     ]
   }
 }
