@@ -1,0 +1,186 @@
+{
+  "cross_runtime_scientific_hashes": {
+    "author": "d6a02c4b1a205040e182964126b19402e53bc518aad92b60a79ade1123006d98",
+    "core": "40d656ae40b746e0c7022d6bc76bfbbc5f77863bbd91810ba8c171463a1f454a",
+    "switch": "02ba608e521ccb7eee3da2c3abde6c83e2323f74d7eb290db9c1ed047250c03e"
+  },
+  "jobs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/verification/charge_strengthening_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_charge_strengthening_validation_final/python312_normal"
+      ],
+      "exit_status": 0,
+      "manifest_sha256": "fbbe59bc211180ae607af3899eef5b3a1c31f9f143bec90cd7fa5b07f59919d6",
+      "name": "python312_normal",
+      "observed_environment": {
+        "arithmetic": "Python exact integers and fractions; no third-party imports",
+        "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "installed_but_unused_libraries": {
+          "numpy": "2.3.5",
+          "sympy": "1.14.0"
+        },
+        "optimization": 0,
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+        "python": "3.12.14",
+        "python_full": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "runtime_seconds": 4.307198964997951,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/maintenance/tests/test_charge_strengthening_portability.py"
+      ],
+      "exit_status": 0,
+      "name": "python312_normal_tests",
+      "runtime_seconds": 10.794863522001833,
+      "stderr_archive": "evidence/charge_strengthening_20261007/validation/python312_normal_tests.stderr.json",
+      "stderr_archive_sha256": "e7026a10ac386a941bc4deb8a709af01519442d6eac9b8846d26bdc06a02a240",
+      "stderr_sha256": "52159c87740d56ffe4634e88f9d33de86ca48e3f85fa2243ea840abab5a193ca",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/verification/charge_strengthening_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_charge_strengthening_validation_final/python312_optimized"
+      ],
+      "exit_status": 0,
+      "manifest_sha256": "9c9d84d7eb77f23426e2bab077d716e597fe1aae98d9daa63da45d0b76dc830c",
+      "name": "python312_optimized",
+      "observed_environment": {
+        "arithmetic": "Python exact integers and fractions; no third-party imports",
+        "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "installed_but_unused_libraries": {
+          "numpy": "2.3.5",
+          "sympy": "1.14.0"
+        },
+        "optimization": 1,
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+        "python": "3.12.14",
+        "python_full": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "runtime_seconds": 3.0376983500027563,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/maintenance/tests/test_charge_strengthening_portability.py"
+      ],
+      "exit_status": 0,
+      "name": "python312_optimized_tests",
+      "runtime_seconds": 5.689035116003652,
+      "stderr_archive": "evidence/charge_strengthening_20261007/validation/python312_optimized_tests.stderr.json",
+      "stderr_archive_sha256": "431f095e9b9d307f927263ce6b66efcd73bb17182ee27091af092c7b9e644d77",
+      "stderr_sha256": "f7b20377038220761626e59e0269dcb4df0cda512b3c7191d41124ee1ce17f5b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/verification/charge_strengthening_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_charge_strengthening_validation_final/python313_normal"
+      ],
+      "exit_status": 0,
+      "manifest_sha256": "d2cfbea296ed902507730f1e788d0419c0747e5301bd3375c127ffd67ff27100",
+      "name": "python313_normal",
+      "observed_environment": {
+        "arithmetic": "Python exact integers and fractions; no third-party imports",
+        "executable": "/usr/bin/python3.13",
+        "installed_but_unused_libraries": {
+          "numpy": "2.2.4",
+          "sympy": "1.13.3"
+        },
+        "optimization": 0,
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+        "python": "3.13.5",
+        "python_full": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]"
+      },
+      "runtime_seconds": 2.245512614004838,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/maintenance/tests/test_charge_strengthening_portability.py"
+      ],
+      "exit_status": 0,
+      "name": "python313_normal_tests",
+      "runtime_seconds": 4.723810289004177,
+      "stderr_archive": "evidence/charge_strengthening_20261007/validation/python313_normal_tests.stderr.json",
+      "stderr_archive_sha256": "88c66628ae12308659b3ba111ccd506d9f778c8a7f1f7953058a47a161cc691d",
+      "stderr_sha256": "56d7051002cb19393f873f2b2e9e658a8ce70ed93a2efc7622b323e6dcd6811d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/verification/charge_strengthening_replay.py",
+        "--output-dir",
+        "/workspace/shared/bgs_charge_strengthening_validation_final/python313_optimized"
+      ],
+      "exit_status": 0,
+      "manifest_sha256": "fa75ea32b0bc56fa2330941843bb76043d53c6edc3601a71d195ee40c7601db0",
+      "name": "python313_optimized",
+      "observed_environment": {
+        "arithmetic": "Python exact integers and fractions; no third-party imports",
+        "executable": "/usr/bin/python3.13",
+        "installed_but_unused_libraries": {
+          "numpy": "2.2.4",
+          "sympy": "1.13.3"
+        },
+        "optimization": 1,
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+        "python": "3.13.5",
+        "python_full": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]"
+      },
+      "runtime_seconds": 2.802838454997982,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "/usr/bin/python3.13",
+        "-B",
+        "-O",
+        "/workspace/shared/bgs_charge_strengthening_promotion/computations/maintenance/tests/test_charge_strengthening_portability.py"
+      ],
+      "exit_status": 0,
+      "name": "python313_optimized_tests",
+      "runtime_seconds": 5.130173628000193,
+      "stderr_archive": "evidence/charge_strengthening_20261007/validation/python313_optimized_tests.stderr.json",
+      "stderr_archive_sha256": "376aa3a2dea656083256764fde369d61079be9f2800fc066486d8a7659c4272c",
+      "stderr_sha256": "ade679b61336fd0987053fbd515b08cde3aa6f7d5c6b2bf3c13a250768ea13e4",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "notes": [
+    "Scientific result payloads match byte-for-byte across 3.12.14 and 3.13.5, normal and -O.",
+    "Expected and observed provenance remain present in each replay manifest; environment differences are not compared as science.",
+    "Each test suite includes silent imports, failure injection, source/proof/expected-output corruption rejection, successful explicit-map relocation, stale-output rejection, missing/extra/type/source mismatches, bounded mismatch paths, nonfinite runtime and duplicate-key rejection, immutable cached expected bytes.",
+    "New unittest stderr logs are stored in lossless base64 JSON envelopes, retaining original byte hashes; this preserves exact execution provenance while avoiding blank-line-at-EOF whitespace errors."
+  ],
+  "replay_source_map_sha256": "df918d16883b301e6fda93812d1a3f517c4c21100c32cb2e6e656479900ce27e",
+  "schema": "bgs-charge-promotion-validation-v1",
+  "status": "passed"
+}
