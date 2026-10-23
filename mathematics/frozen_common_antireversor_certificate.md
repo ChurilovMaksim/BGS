@@ -141,7 +141,7 @@ $$
 
 Thus (4) proves (1) for all specified $N$; $n=7$ is the explicit
 exception. The certificate and complete polynomial coefficient tables
-are in [`evidence/20260924/antireversor`](../evidence/20260924/antireversor).
+are in [`evidence/20260924/antireversor`](../archive/evidence/20260924/antireversor).
 Finite screening alone would not cover all odd $N$ without the proved
 totient bounds and the equivalence of a cyclotomic factor with
 root-of-unity vanishing.

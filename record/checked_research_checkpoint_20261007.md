@@ -124,7 +124,7 @@ semantic port so that optimized mode does not remove their tests; original
 raw sources are not modified. This execution port and its adversarial controls
 are implementation verification, not an analytic proof certificate.
 
-[The protocol receipt](../evidence/research_checkpoint_protocol_20261007/receipt.json)
+[The protocol receipt](../archive/evidence/research_checkpoint_protocol_20261007/receipt.json)
 records the exact protocol-v2 cross-runtime results. The durable protocol-v3
 extension adds fresh external/excluded-build raw output and failure-retention
 receipts, with 17 maintenance methods passing in four runtime/mode

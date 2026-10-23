@@ -13,7 +13,7 @@ Promoted sources:
 
 The exact recovery/integration disposition is recorded in
 [the final handoff audit](../../../record/final_research_handoff_20260921.md), and the fresh replay summary is
-[evidence/recovery_20260921/replay_summary.json](../../../evidence/recovery_20260921/replay_summary.json).
+[evidence/recovery_20260921/replay_summary.json](../../../archive/evidence/recovery_20260921/replay_summary.json).
 
 The original conversation archive had SHA-256
 032e965cd39a12d2a19f5520fad84fdb305043ef2717e8e8adeac79a34e02c01

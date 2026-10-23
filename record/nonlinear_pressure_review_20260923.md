@@ -57,7 +57,7 @@ The source list and exact locators are indexed in
 Run `python3 computations/verification/nonlinear_pressure_variance.py --output
 build/nonlinear_pressure_variance.json` from the repository root. Compare the
 output byte for byte with
-[`evidence/20260923/nonlinear_pressure_variance.json`](../evidence/20260923/nonlinear_pressure_variance.json).
+[`evidence/20260923/nonlinear_pressure_variance.json`](../archive/evidence/20260923/nonlinear_pressure_variance.json).
 The checker certifies finite exact Fourier arithmetic and its algebraic
 all-future-lags support argument; it does not compute topological pressure,
 verify the analytic proof mechanically, or establish quantum statistics.

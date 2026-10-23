@@ -19,4 +19,4 @@ Stable mapping and exact contracts: [promotion mapping](wave2_promotion_mapping.
 
 The [manuscript mapping](wave2_manuscript_mapping.json) pins the qualified checkpoint exposition to the maintained wrapper bytes; it records synchronization, not a full manuscript build.
 
-The prior checkpoint replay retains its exact original checkpoint input through a [narrow historical-input alias](wave2_inherited_replay_compatibility.json). Its old source hash and original adapter/binding bytes are archived; new navigation additions do not refresh that scientific pin. The prior replay mathematical comparison is unchanged.
+The prior checkpoint replay retains its exact original checkpoint input through a [narrow historical-input alias](../archive/record/wave2_inherited_replay_compatibility.json). Its old source hash and original adapter/binding bytes are archived; new navigation additions do not refresh that scientific pin. The prior replay mathematical comparison is unchanged.

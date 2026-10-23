@@ -132,7 +132,7 @@ source modes and wider verification procedure.
 Focused [publication scopes](../papers/README.md) refer to canonical sources
 without duplicating proof authority. Old standalone articles are recoverable
 from Git history. The retained `finite_orbit_note.tex` is an immutable
-execution input named by the [22 September manifest](../evidence/20260922/run_manifest.json),
+execution input named by the [22 September manifest](../archive/evidence/20260922/run_manifest.json),
 not a second maintained publication root.
 
 

@@ -156,7 +156,7 @@ retained, not re-certified by this source pass.
 
 ## 6. Bounded computation and numerical correction
 
-The [contract](../evidence/20261005/noise_removal_contract.json),
+The [contract](../archive/evidence/20261005/noise_removal_contract.json),
 [manifest](../evidence/executions/20261005/noise-removal/manifest.json)
 and [results](../evidence/executions/20261005/noise-removal/checks.json)
 pin four actual inputs, no randomness, Python 3.12.14 and NumPy 2.3.5.

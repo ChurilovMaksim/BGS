@@ -247,7 +247,7 @@
         "EXT-EV-2015"
       ],
       "evidence": [
-        "evidence/20260923/frozen_kick_rank.json"
+        "archive/evidence/20260923/frozen_kick_rank.json"
       ],
       "verifiers": [
         "computations/verification/frozen_kick_rank.py"
@@ -273,7 +273,7 @@
         "EXT-PP-1990"
       ],
       "evidence": [
-        "evidence/20260923/nonlinear_pressure_variance.json"
+        "archive/evidence/20260923/nonlinear_pressure_variance.json"
       ],
       "verifiers": [
         "computations/verification/nonlinear_pressure_variance.py"
@@ -297,7 +297,7 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260924/frozen_seven_cut.json"
+        "archive/evidence/20260924/frozen_seven_cut.json"
       ],
       "verifiers": [
         "computations/verification/frozen_seven_cut.py"
@@ -321,10 +321,10 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/20260924/frozen_total_minors.json",
+        "archive/evidence/20260924/frozen_total_minors.json",
         "record/fm008_fresh_independent_review.md",
         "archive/record/fm008_fresh_audit_mapping.json",
-        "evidence/fm008_fresh_audit_20261006/promotion_receipt.json"
+        "archive/evidence/fm008_fresh_audit_20261006/promotion_receipt.json"
       ],
       "verifiers": [
         "computations/verification/frozen_total_minors.py",
@@ -350,9 +350,9 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/20260924/antireversor/certificate_result.json",
-        "evidence/20260924/antireversor/certificate_polynomial.csv",
-        "evidence/20260924/antireversor/certificate_polynomial_7.csv"
+        "archive/evidence/20260924/antireversor/certificate_result.json",
+        "archive/evidence/20260924/antireversor/certificate_polynomial.csv",
+        "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv"
       ],
       "verifiers": [
         "computations/verification/frozen_antireversor.py"
@@ -377,7 +377,7 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/20260924/frozen_arithmetic_traces.json",
+        "archive/evidence/20260924/frozen_arithmetic_traces.json",
         "record/trace_variance_review.md",
         "archive/record/spectral_extension_promotion_mapping.json",
         "evidence/spectral_extension_20261006/promotion_receipt.json"
@@ -469,7 +469,7 @@
         "supplement/fixed_map/README.md",
         "supplement/fixed_map/resolvent-flow/loop_test_reductions.md",
         "archive/record/loop_test_reductions_review_20261006.md",
-        "evidence/loop_reductions_20261006/provenance.json"
+        "archive/evidence/loop_reductions_20261006/provenance.json"
       ],
       "verifiers": [
         "computations/verification/loop_test_reductions.py",
@@ -546,8 +546,8 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260922/finite_orbit_exact.json",
-        "evidence/20260922/finite_orbit_cpp.json"
+        "archive/evidence/20260922/finite_orbit_exact.json",
+        "archive/evidence/20260922/finite_orbit_cpp.json"
       ],
       "verifiers": [
         "computations/verification/finite_orbit_resonance.py",
@@ -568,7 +568,7 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260923/frozen_full_lag_gap.json"
+        "archive/evidence/20260923/frozen_full_lag_gap.json"
       ],
       "verifiers": [
         "computations/verification/frozen_full_lag_gap.py"
@@ -869,8 +869,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260927/cue_upload_audit.json",
-        "evidence/20260927/cue_upload_manifest.json"
+        "archive/evidence/20260927/cue_upload_audit.json",
+        "archive/evidence/20260927/cue_upload_manifest.json"
       ],
       "verifiers": [
         "computations/verification/cue_upload_audit.py"
@@ -890,8 +890,8 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260928/quadratic_coboundary_noise.json",
-        "evidence/20260928/quadratic_noise_manifest.json"
+        "archive/evidence/20260928/quadratic_coboundary_noise.json",
+        "archive/evidence/20260928/quadratic_noise_manifest.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_coboundary_noise.py"
@@ -913,8 +913,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json"
+        "archive/evidence/20260929/quadratic_noise_dynamics.json",
+        "archive/evidence/20260929/quadratic_noise_manifest.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py"
@@ -937,8 +937,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json"
+        "archive/evidence/20260929/quadratic_noise_dynamics.json",
+        "archive/evidence/20260929/quadratic_noise_manifest.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py"
@@ -961,8 +961,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json"
+        "archive/evidence/20260929/quadratic_noise_dynamics.json",
+        "archive/evidence/20260929/quadratic_noise_manifest.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py"
@@ -987,9 +987,9 @@
         "EXT-FORRESTER-1996"
       ],
       "evidence": [
-        "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json",
-        "evidence/20260929/quadratic_noise_clock.json"
+        "archive/evidence/20260929/quadratic_noise_dynamics.json",
+        "archive/evidence/20260929/quadratic_noise_manifest.json",
+        "archive/evidence/20260929/quadratic_noise_clock.json"
       ],
       "verifiers": [
         "computations/verification/quadratic_noise_dynamics.py",
@@ -1012,12 +1012,12 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/quadratic_noise_dynamics.json",
-        "evidence/20260929/quadratic_noise_manifest.json",
-        "evidence/20261004/expansion_wavepacket_checks.json",
+        "archive/evidence/20260929/quadratic_noise_dynamics.json",
+        "archive/evidence/20260929/quadratic_noise_manifest.json",
+        "archive/evidence/20261004/expansion_wavepacket_checks.json",
         "archive/evidence/executions/20261004-expansion-wavepacket.json",
-        "evidence/20261004/expansion_wavepacket_completion_checks.json",
-        "evidence/20261004/expansion_wavepacket_wolfram_completion.json",
+        "archive/evidence/20261004/expansion_wavepacket_completion_checks.json",
+        "archive/evidence/20261004/expansion_wavepacket_wolfram_completion.json",
         "archive/evidence/executions/20261004-completion.json"
       ],
       "verifiers": [
@@ -1042,8 +1042,8 @@
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/coboundary_mobius_diffusion.json",
-        "evidence/20260929/coboundary_mobius_manifest.json"
+        "archive/evidence/20260929/coboundary_mobius_diffusion.json",
+        "archive/evidence/20260929/coboundary_mobius_manifest.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_mobius_diffusion.py"
@@ -1068,8 +1068,8 @@
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260929/coboundary_mobius_diffusion.json",
-        "evidence/20260929/coboundary_mobius_manifest.json"
+        "archive/evidence/20260929/coboundary_mobius_diffusion.json",
+        "archive/evidence/20260929/coboundary_mobius_manifest.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_mobius_diffusion.py"
@@ -1095,8 +1095,8 @@
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260930/coboundary_joint_limit.json",
-        "evidence/20260930/coboundary_joint_manifest.json"
+        "archive/evidence/20260930/coboundary_joint_limit.json",
+        "archive/evidence/20260930/coboundary_joint_manifest.json"
       ],
       "verifiers": [
         "computations/verification/coboundary_joint_limit.py"
@@ -1122,7 +1122,7 @@
       "evidence": [
         "evidence/executions/20261004/polynomial-coboundary/manifest.json",
         "evidence/executions/20261004/polynomial-coboundary/checks.json",
-        "evidence/20261004/polynomial_coboundary_wolfram.json",
+        "archive/evidence/20261004/polynomial_coboundary_wolfram.json",
         "archive/evidence/executions/20261004-polynomial-integration.json"
       ],
       "verifiers": [
@@ -1146,8 +1146,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260930/heisenberg_note_checks.json",
-        "evidence/20260930/heisenberg_note_manifest.json"
+        "archive/evidence/20260930/heisenberg_note_checks.json",
+        "archive/evidence/20260930/heisenberg_note_manifest.json"
       ],
       "verifiers": [
         "computations/verification/heisenberg_note_audit.py"
@@ -1170,8 +1170,8 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20260930/heisenberg_note_checks.json",
-        "evidence/20260930/heisenberg_note_manifest.json"
+        "archive/evidence/20260930/heisenberg_note_checks.json",
+        "archive/evidence/20260930/heisenberg_note_manifest.json"
       ],
       "verifiers": [
         "computations/verification/heisenberg_note_audit.py"
@@ -1193,8 +1193,8 @@
         "EXT-COHEN-2025"
       ],
       "evidence": [
-        "evidence/20260930/heisenberg_note_checks.json",
-        "evidence/20260930/heisenberg_note_manifest.json"
+        "archive/evidence/20260930/heisenberg_note_checks.json",
+        "archive/evidence/20260930/heisenberg_note_manifest.json"
       ],
       "verifiers": [
         "computations/verification/heisenberg_note_audit.py"
@@ -1220,8 +1220,8 @@
         "EXT-RAINS-2003"
       ],
       "evidence": [
-        "evidence/20260930/prime_resonant_checks.json",
-        "evidence/20260930/prime_resonant_manifest.json"
+        "archive/evidence/20260930/prime_resonant_checks.json",
+        "archive/evidence/20260930/prime_resonant_manifest.json"
       ],
       "verifiers": [
         "computations/verification/prime_resonant_audit.py"
@@ -1247,9 +1247,9 @@
         "EXT-DE-2001"
       ],
       "evidence": [
-        "evidence/20260930/signed_heisenberg_checks.json",
-        "evidence/20260930/signed_heisenberg_manifest.json",
-        "evidence/20260930/signed_heisenberg_wolfram.json"
+        "archive/evidence/20260930/signed_heisenberg_checks.json",
+        "archive/evidence/20260930/signed_heisenberg_manifest.json",
+        "archive/evidence/20260930/signed_heisenberg_wolfram.json"
       ],
       "verifiers": [
         "computations/verification/signed_heisenberg_audit.py"
@@ -1275,8 +1275,8 @@
         "EXT-DE-2001"
       ],
       "evidence": [
-        "evidence/20261001/resonant_density_checks.json",
-        "evidence/20261001/resonant_density_wolfram.json",
+        "archive/evidence/20261001/resonant_density_checks.json",
+        "archive/evidence/20261001/resonant_density_wolfram.json",
         "archive/evidence/executions/20261001-resonant-density.json"
       ],
       "verifiers": [
@@ -1303,12 +1303,12 @@
       ],
       "external_dependencies": [],
       "evidence": [
-        "evidence/20261001/folded_quadratic_checks.json",
-        "evidence/20261001/folded_quadratic_wolfram.json",
+        "archive/evidence/20261001/folded_quadratic_checks.json",
+        "archive/evidence/20261001/folded_quadratic_wolfram.json",
         "archive/evidence/executions/20261001-folded-quadratic.json",
-        "evidence/20261004/folded_quadratic_manifest.json",
-        "evidence/20261004/folded_quadratic_checks_corrected.json",
-        "evidence/20261004/folded_quadratic_manifest_corrected.json",
+        "archive/evidence/20261004/folded_quadratic_manifest.json",
+        "archive/evidence/20261004/folded_quadratic_checks_corrected.json",
+        "archive/evidence/20261004/folded_quadratic_manifest_corrected.json",
         "archive/evidence/executions/20261004-folded-quadratic-format-correction.json"
       ],
       "verifiers": [
@@ -1334,7 +1334,7 @@
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
       "evidence": [
-        "evidence/20261004/expansion_wavepacket_checks.json",
+        "archive/evidence/20261004/expansion_wavepacket_checks.json",
         "archive/evidence/executions/20261004-expansion-wavepacket.json"
       ],
       "verifiers": [
@@ -1360,7 +1360,7 @@
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
       "evidence": [
-        "evidence/20261004/expansion_wavepacket_checks.json",
+        "archive/evidence/20261004/expansion_wavepacket_checks.json",
         "archive/evidence/executions/20261004-expansion-wavepacket.json"
       ],
       "verifiers": [
@@ -1669,7 +1669,7 @@
       "evidence": [
         "evidence/executions/20261005/pair-heat/manifest.json",
         "evidence/executions/20261005/pair-heat/checks.json",
-        "evidence/20261005/heisenberg_pair_heat_wolfram.json",
+        "archive/evidence/20261005/heisenberg_pair_heat_wolfram.json",
         "archive/record/heisenberg_pair_review_20261005.md",
         "archive/evidence/executions/20261005-pair-heat-integration.json"
       ],
@@ -1696,10 +1696,10 @@
       ],
       "evidence": [
         "archive/record/frozen_operator_transfer_review_20261006.md",
-        "evidence/20261006/frozen_operator_transfer_contract.json",
+        "archive/evidence/20261006/frozen_operator_transfer_contract.json",
         "evidence/executions/20261006/operator-transfer/manifest.json",
         "evidence/executions/20261006/operator-transfer/checks.json",
-        "evidence/20261006/frozen_operator_transfer_wolfram.json"
+        "archive/evidence/20261006/frozen_operator_transfer_wolfram.json"
       ],
       "verifiers": [
         "computations/verification/frozen_operator_transfer_coercivity.py",
@@ -1723,10 +1723,10 @@
       "external_dependencies": [],
       "evidence": [
         "archive/record/collective_diffusion_review_20261006.md",
-        "evidence/20261006/collective_diffusion_contract_v2.json",
+        "archive/evidence/20261006/collective_diffusion_contract_v2.json",
         "evidence/executions/20261006/collective-diffusion-exact-v2/manifest.json",
         "evidence/executions/20261006/collective-diffusion-exact-v2/checks.json",
-        "evidence/20261006/collective_diffusion_spectrum_contract.json",
+        "archive/evidence/20261006/collective_diffusion_spectrum_contract.json",
         "evidence/executions/20261006/collective-diffusion-spectrum/manifest.json",
         "evidence/executions/20261006/collective-diffusion-spectrum/values.json",
         "archive/evidence/executions/20261006-collective-diffusion-integration.json"
@@ -1752,7 +1752,7 @@
       "external_dependencies": [],
       "evidence": [
         "archive/record/original_channel_gap_review_20261006.md",
-        "evidence/20261006/original_channel_gap_contract.json",
+        "archive/evidence/20261006/original_channel_gap_contract.json",
         "evidence/executions/20261006/original-channel-gap/checks.json",
         "evidence/executions/20261006/original-channel-gap/manifest.json"
       ],
@@ -2017,20 +2017,20 @@
         "EXT-POPESCU-2023"
       ],
       "evidence": [
-        "evidence/actual_commutant_20261006/actual_family_review.md",
-        "evidence/actual_commutant_20261006/promotion_receipt.json",
+        "archive/evidence/actual_commutant_20261006/actual_family_review.md",
+        "archive/evidence/actual_commutant_20261006/promotion_receipt.json",
         "archive/record/actual_commutant_integration_map.json",
         "archive/record/actual_commutant_consolidation_review.md",
         "evidence/executions/20261006/actual-commutant-integration/receipt.json",
         "archive/record/first_seven_independent_review.md",
         "archive/record/first_seven_promotion_mapping.json",
-        "evidence/first_seven_20261006/promotion_receipt.json",
+        "archive/evidence/first_seven_20261006/promotion_receipt.json",
         "archive/record/ramified_first_seven_review.md",
         "archive/record/ramified_first_seven_promotion_mapping.json",
-        "evidence/ramified_first_seven_20261006/promotion_receipt.json",
+        "archive/evidence/ramified_first_seven_20261006/promotion_receipt.json",
         "archive/record/ramified_higher_review.md",
         "archive/record/ramified_higher_promotion_mapping.json",
-        "evidence/ramified_higher_20261006/promotion_receipt.json",
+        "archive/evidence/ramified_higher_20261006/promotion_receipt.json",
         "archive/record/exceptional_seven_review.md",
         "archive/record/exceptional_seven_mapping.json",
         "record/fm008_fresh_independent_review.md"
@@ -2103,7 +2103,7 @@
         "archive/record/paired_phase_review.md",
         "archive/record/phase_frostman_review.md",
         "archive/record/paired_phase_promotion_mapping.json",
-        "evidence/paired_phase_20261006/promotion_receipt.json"
+        "archive/evidence/paired_phase_20261006/promotion_receipt.json"
       ],
       "verifiers": [
         "computations/verification/paired_phase_reductions.py"
@@ -2176,7 +2176,7 @@
         "archive/record/quantum_homoclinic_first_loop_review.md",
         "record/weighted_periodic_review.md",
         "archive/record/weighted_support_promotion_mapping.json",
-        "evidence/weighted_support_20261006/promotion_receipt.json",
+        "archive/evidence/weighted_support_20261006/promotion_receipt.json",
         "archive/record/stationary_cyclic_residual_review.md"
       ],
       "verifiers": [
@@ -2217,14 +2217,14 @@
         "archive/record/quadratic_occupation_review.md",
         "archive/record/quadratic_slow_source_review.md",
         "archive/record/collective_promotion_mapping.json",
-        "evidence/collective_20261006/promotion_receipt.json",
+        "archive/evidence/collective_20261006/promotion_receipt.json",
         "archive/record/ordered_diagonal_review.md",
         "archive/record/ordered_diagonal_mapping.json",
-        "evidence/ordered_diagonal_20261006/promotion_receipt.json",
+        "archive/evidence/ordered_diagonal_20261006/promotion_receipt.json",
         "archive/record/factorial_diagonal_review.md",
         "archive/record/mixed_ordered_diagonal_review.md",
         "archive/record/factorial_diagonal_promotion_mapping.json",
-        "evidence/factorial_diagonal_20261007/promotion_receipt.json"
+        "archive/evidence/factorial_diagonal_20261007/promotion_receipt.json"
       ],
       "verifiers": [
         "computations/verification/collective_hierarchy.py",

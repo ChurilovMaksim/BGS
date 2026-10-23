@@ -48,7 +48,7 @@ their claimed executions are not a verification record of this audit.
    The maintained **integer-only** checker
    [`frozen_arithmetic_traces.py`](../computations/verification/frozen_arithmetic_traces.py)
    reproduces 1248 fixed-point cases and the rational orbit margin;
-   [its saved output](../evidence/20260924/frozen_arithmetic_traces.json)
+   [its saved output](../archive/evidence/20260924/frozen_arithmetic_traces.json)
    does not evaluate the kicked \(U_N\) or prove an asymptotic law.
 3. [Popescu, Theorem 3.2](https://arxiv.org/pdf/2306.14352),
    is already pinned in `EXT-POPESCU-2023`; it is used only

@@ -55,7 +55,12 @@ def check_prior_claims(previous, current, epoch):
               'BGS-TRACE-014','BGS-FM-021','BGS-FM-022','BGS-TRACE-015',
               'BGS-FM-023','BGS-TRACE-016','BGS-FORMAL-002','BGS-TRACE-017',
               'BGS-FM-024','BGS-TRACE-018','BGS-FM-025','BGS-TRACE-019',
-              'BGS-TRACE-020','BGS-FM-026','BGS-TRACE-021','BGS-TRACE-022'}
+              'BGS-TRACE-020','BGS-FM-026','BGS-TRACE-021','BGS-TRACE-022',
+              'BGS-FLOW-003','BGS-FLOW-004','BGS-FLOW-005','BGS-FLOW-006',
+              'BGS-FLOW-007','BGS-FLOW-008','BGS-FLOW-009','BGS-FLOW-010',
+              'BGS-FM-006','BGS-FM-007','BGS-FM-009','BGS-FM-012',
+              'BGS-FM-014','BGS-FM-015','BGS-FUP-001','BGS-RES-004',
+              'BGS-RES-005','BGS-TRACE-009','BGS-TRACE-010'}
     require(len(amendments)==len(rows) and set(amendments)==approved,
             'historical claim amendments require explicit epoch review')
     for old in previous:

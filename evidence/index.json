@@ -18,8 +18,8 @@
       "future_prefix": "evidence/executions/",
       "legacy_paths": [
         "evidence/fixed_map_publication/",
-        "evidence/recovery_20260920/",
-        "evidence/recovery_20260921/"
+        "archive/evidence/recovery_20260920/",
+        "archive/evidence/recovery_20260921/"
       ],
       "meaning": "Dated workspace/run/build provenance. Historical paths are not moved because they are themselves recorded provenance.",
       "current_paths": [
@@ -43,18 +43,18 @@
       ]
     },
     "dated-research-packets": {
-      "canonical_prefix": "evidence/20260923/",
+      "canonical_prefix": "archive/evidence/20260923/",
       "historical_paths": [
-        "evidence/20260922/",
-        "evidence/20260924/",
-        "evidence/20260927/",
-        "evidence/20260928/",
-        "evidence/20260929/",
-        "evidence/20260930/",
-        "evidence/20261001/",
-        "evidence/20261004/",
-        "evidence/20261005/",
-        "evidence/20261006/"
+        "archive/evidence/20260922/",
+        "archive/evidence/20260924/",
+        "archive/evidence/20260927/",
+        "archive/evidence/20260928/",
+        "archive/evidence/20260929/",
+        "archive/evidence/20260930/",
+        "archive/evidence/20261001/",
+        "archive/evidence/20261004/",
+        "archive/evidence/20261005/",
+        "archive/evidence/20261006/"
       ],
       "meaning": "Dated packets may mix exact finite checks, floating diagnostics, and execution records. Each object's own scope and accompanying review control its interpretation; the directory name is not an evidence grade."
     }

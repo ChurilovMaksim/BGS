@@ -14,7 +14,7 @@ No claim of world-first discovery or a solved BGS conjecture is supported.
 The exact submitted bytes are retained as an **inactive reference input** in
 [submitted_note.md](../evidence/reference/heisenberg-note-20260930/submitted_note.md).
 Its name and SHA-256 are pinned in the
-[manifest](../evidence/20260930/heisenberg_note_manifest.json).
+[manifest](../archive/evidence/20260930/heisenberg_note_manifest.json).
 The corrected maintained sources supersede it wherever they disagree.
 
 ## 1. Results retained and completed
@@ -112,7 +112,7 @@ The maintained checker is
 `computations/verification/heisenberg_note_audit.py --output PATH`.
 Use the pinned project requirements; this workspace additionally uses the
 SymPy installation and cache override recorded in the execution manifest.
-The promoted [finite report](../evidence/20260930/heisenberg_note_checks.json)
+The promoted [finite report](../archive/evidence/20260930/heisenberg_note_checks.json)
 contains exact coefficients, annihilator arithmetic, analytic-bound
 arithmetic, 3900 cycle/cumulant comparisons, 16 independent density checks,
 252 rational line-membership checks, 12 exhaustive discrete support-line
