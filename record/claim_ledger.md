@@ -962,135 +962,135 @@ Earlier acceptance narratives are preserved with their original scientific scope
 
 ## 6 October 2026 — original ordered two-pair microscopic mass
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--original-ordered-two-pair-microscopic-mass).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--original-ordered-two-pair-microscopic-mass).
 
 ## 6 October 2026 — uniform collective diffusion and refined shared-noise mass
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--uniform-collective-diffusion-and-refined-shared-noise-mass).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--uniform-collective-diffusion-and-refined-shared-noise-mass).
 
 ## 6 October 2026 — actual Weyl coercivity, regularized gap and common-noise invariants
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--actual-weyl-coercivity-regularized-gap-and-common-noise-invariants).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#6-october-2026--actual-weyl-coercivity-regularized-gap-and-common-noise-invariants).
 
 ## 5 October 2026 — exact Heisenberg pair compensation and actual smoothed form factor
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--exact-heisenberg-pair-compensation-and-actual-smoothed-form-factor).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--exact-heisenberg-pair-compensation-and-actual-smoothed-form-factor).
 
 ## 5 October 2026 — growing degree and a particular microscopic inverse obstruction
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--growing-degree-and-a-particular-microscopic-inverse-obstruction).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--growing-degree-and-a-particular-microscopic-inverse-obstruction).
 
 ## 5 October 2026 — critical-noise compensation and actual fixed-degree projections
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--critical-noise-compensation-and-actual-fixed-degree-projections).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--critical-noise-compensation-and-actual-fixed-degree-projections).
 
 ## 5 October 2026 — all-order original-chain law and exact remaining transfer
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--all-order-original-chain-law-and-exact-remaining-transfer).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--all-order-original-chain-law-and-exact-remaining-transfer).
 
 ## 5 October 2026 — exact noise-removal defect and four transfer boundaries
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--exact-noise-removal-defect-and-four-transfer-boundaries).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#5-october-2026--exact-noise-removal-defect-and-four-transfer-boundaries).
 
 ## 4 October 2026 — actual-start comparison and circular relaxation
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--actual-start-comparison-and-circular-relaxation).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--actual-start-comparison-and-circular-relaxation).
 
 ## 4 October 2026 — polynomial original-coboundary clock limit
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--polynomial-original-coboundary-clock-limit).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--polynomial-original-coboundary-clock-limit).
 
 ## 4 October 2026 — bounded fixed traces and auxiliary-expansion obstruction
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--bounded-fixed-traces-and-auxiliary-expansion-obstruction).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#4-october-2026--bounded-fixed-traces-and-auxiliary-expansion-obstruction).
 
 ## 1 October 2026 — projected-square refinement and block crowding
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#1-october-2026--projected-square-refinement-and-block-crowding).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#1-october-2026--projected-square-refinement-and-block-crowding).
 
 ## 1 October 2026 — resonant cubic density control and critical tails
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#1-october-2026--resonant-cubic-density-control-and-critical-tails).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#1-october-2026--resonant-cubic-density-control-and-critical-tails).
 
 ## 30 September 2026 — universal absolute obstruction and signed cubic continuation
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--universal-absolute-obstruction-and-signed-cubic-continuation).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--universal-absolute-obstruction-and-signed-cubic-continuation).
 
 ## 30 September 2026 — independent prime-resonant summary audit
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--independent-prime-resonant-summary-audit).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--independent-prime-resonant-summary-audit).
 
 ## 30 September 2026 — audit and completion of the Heisenberg note
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--audit-and-completion-of-the-heisenberg-note).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--audit-and-completion-of-the-heisenberg-note).
 
 ## 30 September 2026 — simultaneous coboundary clock limit
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--simultaneous-coboundary-clock-limit).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#30-september-2026--simultaneous-coboundary-clock-limit).
 
 ## 29 September 2026 — continued research: the actual coboundary chain
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#29-september-2026--continued-research-the-actual-coboundary-chain).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#29-september-2026--continued-research-the-actual-coboundary-chain).
 
 ## 29 September 2026 — quadratic-noise dynamics and audited integration
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#29-september-2026--quadratic-noise-dynamics-and-audited-integration).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#29-september-2026--quadratic-noise-dynamics-and-audited-integration).
 
 ## 28 September 2026 — quadratic coboundary noise
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#28-september-2026--quadratic-coboundary-noise).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#28-september-2026--quadratic-coboundary-noise).
 
 ## 27 September 2026 — audit of the independent CUE upload
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#27-september-2026--audit-of-the-independent-cue-upload).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#27-september-2026--audit-of-the-independent-cue-upload).
 
 ## 25 September 2026 — CUE singular energy and coboundary flow
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--cue-singular-energy-and-coboundary-flow).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--cue-singular-energy-and-coboundary-flow).
 
 ## 25 September 2026 — smooth full-propagator transfer and a Gram falsifier
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--smooth-full-propagator-transfer-and-a-gram-falsifier).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--smooth-full-propagator-transfer-and-a-gram-falsifier).
 
 ## 25 September 2026 — exact pair-resolvent bridge and universal Abel floor
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--exact-pair-resolvent-bridge-and-universal-abel-floor).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#25-september-2026--exact-pair-resolvent-bridge-and-universal-abel-floor).
 
 ## 24 September 2026 — audited two further fixed-map continuations
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#24-september-2026--audited-two-further-fixed-map-continuations).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#24-september-2026--audited-two-further-fixed-map-continuations).
 
 ## 24 September 2026 — audited 87-page outside-agent submission
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#24-september-2026--audited-87-page-outside-agent-submission).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#24-september-2026--audited-87-page-outside-agent-submission).
 
 ## 23 September 2026 — nonlinear classical pressure boundary
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#23-september-2026--nonlinear-classical-pressure-boundary).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#23-september-2026--nonlinear-classical-pressure-boundary).
 
 ## 23 September 2026 — full-lag frozen-symbol gap and exact kick rank
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#23-september-2026--full-lag-frozen-symbol-gap-and-exact-kick-rank).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#23-september-2026--full-lag-frozen-symbol-gap-and-exact-kick-rank).
 
 ## 22 September 2026 — clustered Abel and time-window inference
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#22-september-2026--clustered-abel-and-time-window-inference).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#22-september-2026--clustered-abel-and-time-window-inference).
 
 ## 22 September 2026 — smooth finite-orbit extension
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#22-september-2026--smooth-finite-orbit-extension).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#22-september-2026--smooth-finite-orbit-extension).
 
 ## 21 September 2026 — recovered fixed-map continuation
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#21-september-2026--recovered-fixed-map-continuation).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#21-september-2026--recovered-fixed-map-continuation).
 
 ## Fixed-map update, 20 September 2026
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#fixed-map-update-20-september-2026).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#fixed-map-update-20-september-2026).
 
 ## Recovered amendments, 20 September 2026
 
-[Historical acceptance record](history/2026/corpus_revision_20261006/acceptance_history.md#recovered-amendments-20-september-2026).
+[Historical acceptance record](../archive/history/2026/corpus_revision_20261006/acceptance_history.md#recovered-amendments-20-september-2026).
 
 ## Fixed-order complete WKB reduction (6 October 2026)
 
@@ -1157,7 +1157,7 @@ the verified entropy formula; the original Pesin locator remains unverified.
 
 The full signed complement, plateau mechanism, remaining torsion, higher
 orders, TRACE-005 and BGS remain open. No new Lean theorem is claimed.
-[Prior component-status history](history/2026/cohesive_frontier_20261006/prior_ledger_tail.md)
+[Prior component-status history](../archive/history/2026/cohesive_frontier_20261006/prior_ledger_tail.md)
 preserves the superseded arithmetic checkpoints and their references.
 
 ## Current collective hierarchy and literal-time spectral bounds
