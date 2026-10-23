@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-DIRECT-ORDER-FOUR-DEFECT-TWO-CHECK-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_direct_p42.py",
+    "direct_p42_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Direct cycle/partition definition of primitive h=4,e=6 cores with two order-two defect-one clusters, compared to the six-port gluing prediction P42 at q<=9",
+    "coefficient_domain": "Integer collision weights scaled by 720, F_3,F_5,F_13, fractions.Fraction",
+    "conventions": "Enumerate every q-cycle tau, every set partition of codimension <=4 by restricted-growth strings; require minimal support and exactly two clusters each j=2,e_i=3; no port gluing assumed in this enumeration",
+    "inputs": [
+      "direct_p42.cpp",
+      "dependencies/full_rank.cpp",
+      "dependencies/gluing_reference.json",
+      "run_direct_p42.py"
+    ],
+    "bounds": {
+      "q": "6..9",
+      "cycles": 46200,
+      "fields": [
+        3,
+        5,
+        13
+      ],
+      "partition_codimension_max": 4
+    },
+    "non_claims": [
+      "Does not enumerate all predicted cores up to q=22",
+      "Reuses elementary modular-rank code, not independent review",
+      "Does not compute connected order-three primitives or the full defect-two sector"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T07:28:14.945476+00:00",
+    "runtime_seconds": 1.321619,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 15000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 140,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "direct_p42.cpp",
+    "dependencies/full_rank.cpp",
+    "dependencies/gluing_reference.json",
+    "run_direct_p42.py",
+    "direct_p42_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "direct_p42.cpp",
+      "sha256": "4551892561a428f8a708a456e4b60e8afce7c91c26915b8709ddd45d1fc2f7d8",
+      "sha256_after": "4551892561a428f8a708a456e4b60e8afce7c91c26915b8709ddd45d1fc2f7d8"
+    },
+    {
+      "path": "dependencies/full_rank.cpp",
+      "sha256": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6",
+      "sha256_after": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6"
+    },
+    {
+      "path": "dependencies/gluing_reference.json",
+      "sha256": "5b1134762ee93a0b6859054ef6fced04186458429384344bdbd6408d33478f82",
+      "sha256_after": "5b1134762ee93a0b6859054ef6fced04186458429384344bdbd6408d33478f82"
+    },
+    {
+      "path": "run_direct_p42.py",
+      "sha256": "707e3560ef486e69002c166394092e0f86834dd8eef8c2082db53b967d487f7b",
+      "sha256_after": "707e3560ef486e69002c166394092e0f86834dd8eef8c2082db53b967d487f7b"
+    },
+    {
+      "path": "direct_p42_contract.json",
+      "sha256": "f9a36cb07d0118691866cd95d471c81b76f8b240c3872fcdf63b6674564ee81e",
+      "sha256_after": "f9a36cb07d0118691866cd95d471c81b76f8b240c3872fcdf63b6674564ee81e"
+    }
+  ],
+  "output_directory": "direct_p42_run",
+  "declared_results": [
+    "direct_p42_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "direct_p42_run/stdout.txt",
+      "sha256": "2872871abf838c2b0c91db42bc80a032091adf0713bc9b848c11a70cf0bb9fd4",
+      "kind": "log"
+    },
+    {
+      "path": "direct_p42_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "direct_p42_run/result.json",
+      "sha256": "ae5629451273ec090ecad8c3c55aec8433ec7e2df423424eac3fb2587056be96",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

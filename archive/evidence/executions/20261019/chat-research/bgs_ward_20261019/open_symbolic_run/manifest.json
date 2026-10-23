@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ALL-PRIME-THREE-PORT-WARD-POLYNOMIAL-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_open_symbolic.py",
+    "open_symbolic_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Complete all four open boundary classes over the nine primes needed for characteristic transfer; separate connected-cluster primitive counts into 1,a2,a3,a2^2 to identify an actual local cumulant cancellation",
+    "coefficient_domain": "Exact integers, nine odd prime fields, rational polynomial coefficients",
+    "conventions": "Same open path-cover definition as open_port_contract.json; connected means the union of K-support edges and partition identifications is connected; symbolic counts record coefficient of each collision type before substituting weights",
+    "inputs": [
+      "open_port_symbolic.cpp",
+      "dependencies/neutral_test.hpp",
+      "dependencies/prior_open_second.cpp",
+      "dependencies/primitive_defect.cpp",
+      "dependencies/full_port_reference.json",
+      "run_open_symbolic.py"
+    ],
+    "bounds": {
+      "q": "3..12",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ],
+      "collision_types": [
+        "discrete",
+        "one pair",
+        "one triple",
+        "two pairs"
+      ]
+    },
+    "non_claims": [
+      "General Ward identity at higher primitive order is not asserted",
+      "Symbolic cumulant polynomials are derived from exact counts, not a formal proof of a surgery",
+      "Characteristic transfer and all-q support require the accompanying proofs"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T07:22:03.965056+00:00",
+    "runtime_seconds": 3.979153,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 240.0,
+    "max_output_bytes": 24000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 230,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "open_port_symbolic.cpp",
+    "dependencies/neutral_test.hpp",
+    "dependencies/prior_open_second.cpp",
+    "dependencies/primitive_defect.cpp",
+    "dependencies/full_port_reference.json",
+    "run_open_symbolic.py",
+    "open_symbolic_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "open_port_symbolic.cpp",
+      "sha256": "ea85be81f21fccf77ef8cef2578d441494d391cc938eb33b83fe2b26339d5ef3",
+      "sha256_after": "ea85be81f21fccf77ef8cef2578d441494d391cc938eb33b83fe2b26339d5ef3"
+    },
+    {
+      "path": "dependencies/neutral_test.hpp",
+      "sha256": "609e69e946544b369ab3e9f29bba04abf63c6e0a2d8d9466a07779fe877c3940",
+      "sha256_after": "609e69e946544b369ab3e9f29bba04abf63c6e0a2d8d9466a07779fe877c3940"
+    },
+    {
+      "path": "dependencies/prior_open_second.cpp",
+      "sha256": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8",
+      "sha256_after": "98fdbd275635fa358e249e623c4707913bc7aae926d603aad1d056d79cf817c8"
+    },
+    {
+      "path": "dependencies/primitive_defect.cpp",
+      "sha256": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9",
+      "sha256_after": "a4bd6ccd09ee4e6da305ee2a8c71785b34c5899f5351aea2e6f4cdf17ae1f0f9"
+    },
+    {
+      "path": "dependencies/full_port_reference.json",
+      "sha256": "6d803b11e8e3e8e06da44347041b28daccd322697ecd28614adb5e8044b581a2",
+      "sha256_after": "6d803b11e8e3e8e06da44347041b28daccd322697ecd28614adb5e8044b581a2"
+    },
+    {
+      "path": "run_open_symbolic.py",
+      "sha256": "2a9c4972ea3deacc8618d1b69285ab1693a720a94a87862b77ab32a06ca70737",
+      "sha256_after": "2a9c4972ea3deacc8618d1b69285ab1693a720a94a87862b77ab32a06ca70737"
+    },
+    {
+      "path": "open_symbolic_contract.json",
+      "sha256": "225ca42ce14fbff616ca748ee339c4f2d09293eb8ad0fbc5848ec2c083d22327",
+      "sha256_after": "225ca42ce14fbff616ca748ee339c4f2d09293eb8ad0fbc5848ec2c083d22327"
+    }
+  ],
+  "output_directory": "open_symbolic_run",
+  "declared_results": [
+    "open_symbolic_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "open_symbolic_run/stdout.txt",
+      "sha256": "bd70ccb19785d462df692040903b9533c81e2baac255b07ac49cfcce47a23ab4",
+      "kind": "log"
+    },
+    {
+      "path": "open_symbolic_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "open_symbolic_run/result.json",
+      "sha256": "90caa326c1be2fde4d6191127267230173c6b0c98a8a0143f2eb6dfa70e4a9e5",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

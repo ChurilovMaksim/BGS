@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-DIRECT-DISCONNECTED-P32-CHECK-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_direct_p32_disconnected.py",
+    "direct_p32_disconnected_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Direct q=7,8 comparison of order-three, defect-two primitives with two clusters of (j,e)=(1,1),(2,3), discriminating the factor 3 in P32_disconnected=3 P11 P21",
+    "coefficient_domain": "Integer collision weights scaled by 720, F_3,F_5,F_13, fractions.Fraction",
+    "conventions": "All cycles and all RGS partitions of codimension <=3, minimal support, exactly two clusters with the stated orders and boundary counts; weights scaled by 720",
+    "inputs": [
+      "direct_p32_disconnected.cpp",
+      "dependencies/full_rank.cpp",
+      "dependencies/branches_reference.json",
+      "run_direct_p32_disconnected.py"
+    ],
+    "bounds": {
+      "q": "7..8",
+      "cycles": 5760,
+      "fields": [
+        3,
+        5,
+        13
+      ],
+      "partition_codimension_max": 3
+    },
+    "non_claims": [
+      "Directly checks only the first two nonzero coefficients",
+      "The remaining connected order-three kernel is excluded explicitly",
+      "Not an independent review or a BGS theorem"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T07:41:37.825638+00:00",
+    "runtime_seconds": 1.019861,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 15000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 110,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "direct_p32_disconnected.cpp",
+    "dependencies/full_rank.cpp",
+    "dependencies/branches_reference.json",
+    "run_direct_p32_disconnected.py",
+    "direct_p32_disconnected_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "direct_p32_disconnected.cpp",
+      "sha256": "60eeae64d36890ba2b3f02d5754254a9c5f671242aaa6a23903c4714a83a2a78",
+      "sha256_after": "60eeae64d36890ba2b3f02d5754254a9c5f671242aaa6a23903c4714a83a2a78"
+    },
+    {
+      "path": "dependencies/full_rank.cpp",
+      "sha256": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6",
+      "sha256_after": "2cd0a96b29c148c1ab0cfdd66ce3ea627932ea0789429e1a59d03434c88072a6"
+    },
+    {
+      "path": "dependencies/branches_reference.json",
+      "sha256": "4b049a9f8fbb04205274662f1815a6038d43df7d5fa5728324bee6658bdc0f1c",
+      "sha256_after": "4b049a9f8fbb04205274662f1815a6038d43df7d5fa5728324bee6658bdc0f1c"
+    },
+    {
+      "path": "run_direct_p32_disconnected.py",
+      "sha256": "724ae2a3dc9161d4edd4d8497a2196f4610265eee86a7ddf2d1e476b604f64d8",
+      "sha256_after": "724ae2a3dc9161d4edd4d8497a2196f4610265eee86a7ddf2d1e476b604f64d8"
+    },
+    {
+      "path": "direct_p32_disconnected_contract.json",
+      "sha256": "a9c4779e31661464117185d6edd570aa42f74424e31d33029b4b4aac1f2c58c0",
+      "sha256_after": "a9c4779e31661464117185d6edd570aa42f74424e31d33029b4b4aac1f2c58c0"
+    }
+  ],
+  "output_directory": "direct_p32_disconnected_run",
+  "declared_results": [
+    "direct_p32_disconnected_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "direct_p32_disconnected_run/stdout.txt",
+      "sha256": "c7cbaf3cba81830c34603ac469e75041f954e94807380de65c0d20c153ff33ce",
+      "kind": "log"
+    },
+    {
+      "path": "direct_p32_disconnected_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "direct_p32_disconnected_run/result.json",
+      "sha256": "a651cf081eefd904dfc2a691af60a5d7abc998b58a0396aa21b23361beddf53c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

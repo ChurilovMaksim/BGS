@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "claim_id": "REVIEW-BETA-SMOOTHED-PATH-LAW-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_beta_smoothing.py",
+    "smoothing_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python-stdlib-only",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Uniform-law binomial weights, exact grid Wasserstein error, beta-binomial displacement bound and exact preservation of the uniform density; analytic singular-TV negative controls.",
+    "coefficient_domain": "Q, exact Fraction arithmetic and integer polynomial coefficients.",
+    "conventions": "Conditional B~Binomial(K,t), Y|B~Beta(B+1,K-B+1); TV is half the L1 norm on densities.",
+    "inputs": [
+      "Every K=1..100; exact Bernstein partition of unity and beta moments."
+    ],
+    "bounds": {
+      "K": [
+        1,
+        100
+      ]
+    },
+    "non_claims": [
+      "No uniform TV rate without an explicit modulus for the compact density family.",
+      "The two TV=1 controls are proved by mutual singularity, not approximated numerically."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T12:40:22.256163+00:00",
+    "runtime_seconds": 0.167266,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_beta_smoothing.py",
+    "smoothing_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_beta_smoothing.py",
+      "sha256": "099dcf12244ad4217d67a10e2086595a76f1a66088e5844ff32e32d98c4fad66",
+      "sha256_after": "099dcf12244ad4217d67a10e2086595a76f1a66088e5844ff32e32d98c4fad66"
+    },
+    {
+      "path": "smoothing_contract.json",
+      "sha256": "73376cbdca1eee5a3ef6ecca61de133b534b6b4e4f4bad5e86bf9d9e3d4f142e",
+      "sha256_after": "73376cbdca1eee5a3ef6ecca61de133b534b6b4e4f4bad5e86bf9d9e3d4f142e"
+    }
+  ],
+  "output_directory": "smoothing_run",
+  "declared_results": [
+    "smoothing_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "smoothing_run/stdout.txt",
+      "sha256": "1e4699f072babbe7f0356e779a31cab498933be9e9fe1fc9a12fa07e48e45587",
+      "kind": "log"
+    },
+    {
+      "path": "smoothing_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "smoothing_run/result.json",
+      "sha256": "fce9a00c66428a20e3739461aee16f4d104b96df96635fd6f34a2b7ea1c86b5a",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

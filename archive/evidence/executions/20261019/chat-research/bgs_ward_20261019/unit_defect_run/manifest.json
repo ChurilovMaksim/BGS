@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ALL-DEFECT-ONE-CLUSTERS-TRIPLE-RESUMMATION-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "unit_defect_check.py",
+    "unit_defect_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Direct mixed-port gluing jets, triple all-order limiting series through h=80 versus certified exponential-cubic integral, and exact finite-N sums over all allowed one-port, three-port and neutral cluster counts",
+    "coefficient_domain": "Integers and exact rational arithmetic; certified rational exponential and root intervals; floats only display",
+    "conventions": "Includes the empty-primitive neutral sector; local positive connected clusters all have defect one; r one-port, b three-port, n neutral decorations; h=r+2b+n",
+    "inputs": [
+      "unit_defect_check.py",
+      "maximal_check.py",
+      "dependencies/full_port_reference.json"
+    ],
+    "bounds": {
+      "mixed_port_counts": [
+        4,
+        5,
+        9
+      ],
+      "limiting_h_max": 80,
+      "tau": [
+        "1/20",
+        "1/10"
+      ],
+      "finite_N_cases": [
+        [
+          16,
+          169
+        ],
+        [
+          62,
+          625
+        ],
+        [
+          96,
+          961
+        ]
+      ],
+      "root_bisections": 64,
+      "exponential_taylor_order": 32,
+      "integral_subdivisions": 1024
+    },
+    "non_claims": [
+      "Connected clusters of defect at least two are omitted and are not known to be negligible",
+      "This formula contains previous neutral, maximal-primitive and disconnected P32 families and must not be added to them again",
+      "No full form factor, deterministic transfer, or BGS claim"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T08:03:44.006647+00:00",
+    "runtime_seconds": 5.686839,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 240.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 235,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "unit_defect_check.py",
+    "maximal_check.py",
+    "dependencies/full_port_reference.json",
+    "unit_defect_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "unit_defect_check.py",
+      "sha256": "4c9c819f1ed86abe0d31c18a5ca46d7b50e5245fd424f922fc06b9a7671a48af",
+      "sha256_after": "4c9c819f1ed86abe0d31c18a5ca46d7b50e5245fd424f922fc06b9a7671a48af"
+    },
+    {
+      "path": "maximal_check.py",
+      "sha256": "8f449a92e1037a6a2b9305dca981ee730fcd536abb333c3fac83917549230483",
+      "sha256_after": "8f449a92e1037a6a2b9305dca981ee730fcd536abb333c3fac83917549230483"
+    },
+    {
+      "path": "dependencies/full_port_reference.json",
+      "sha256": "6d803b11e8e3e8e06da44347041b28daccd322697ecd28614adb5e8044b581a2",
+      "sha256_after": "6d803b11e8e3e8e06da44347041b28daccd322697ecd28614adb5e8044b581a2"
+    },
+    {
+      "path": "unit_defect_contract.json",
+      "sha256": "778f7067c0feedf15f419405657ed6faf490eac3fa53ca11005cc0fc0658c712",
+      "sha256_after": "778f7067c0feedf15f419405657ed6faf490eac3fa53ca11005cc0fc0658c712"
+    }
+  ],
+  "output_directory": "unit_defect_run",
+  "declared_results": [
+    "unit_defect_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "unit_defect_run/stdout.txt",
+      "sha256": "4cc92509009c024d7d8c0d481210482b444ff0cdde4508b4be412219a6797b78",
+      "kind": "log"
+    },
+    {
+      "path": "unit_defect_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "unit_defect_run/result.json",
+      "sha256": "ff16f92c49c346d86815c7bbec3fa8d412317742e5e0c12a9064345184b9a340",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

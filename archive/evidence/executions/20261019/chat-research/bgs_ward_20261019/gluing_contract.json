@@ -1,0 +1,13 @@
+{
+ "claim_id":"BGS-DEFECT-TWO-TWO-CLUSTER-GLUING-20261019",
+ "mathematics":{
+  "assertion_tested":"Enumerate the exact six-port gluing matrix for two cyclically ordered three-port clusters, form the predicted P_{4,2}, and verify its double zero and coefficient 1061/8 after division by (1-z)^2",
+  "coefficient_domain":"Integers and fractions.Fraction",
+  "conventions":"P=sum W(q)z^q/q; individual transposition kernel is one third of the aggregated transposition polynomial; two indistinguishable clusters give factor 1/2",
+  "inputs":["gluing_check.py","dependencies/full_port_reference.json"],
+  "bounds":{"ports":6,"candidate_cycles":120,"cyclic_shuffles":30,"boundary_permutations_per_cluster":6,"pure_passive_normalization_q":6},
+  "non_claims":["The factorization of all physical primitives requires the accompanying structural proof","The connected order-three primitive at defect two is not computed","No full defect sum or BGS conclusion"]
+ },
+ "execution_artifacts":["gluing_check.py","dependencies/full_port_reference.json","gluing_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],"randomness":{"used":false}
+}

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "cases": [
+    {
+      "N": 4,
+      "covariance_entries_verified": 15,
+      "degree_one_cross_covariances": 5,
+      "imaginary_Q_variance_exact": "1/30"
+    },
+    {
+      "N": 5,
+      "covariance_entries_verified": 15,
+      "degree_one_cross_covariances": 5,
+      "imaginary_Q_variance_exact": "1/42"
+    },
+    {
+      "N": 7,
+      "covariance_entries_verified": 15,
+      "degree_one_cross_covariances": 5,
+      "imaginary_Q_variance_exact": "1/72"
+    },
+    {
+      "N": 10,
+      "covariance_entries_verified": 15,
+      "degree_one_cross_covariances": 5,
+      "imaginary_Q_variance_exact": "1/132"
+    }
+  ],
+  "method": "Exact inversion of permutation Gram matrices through tensor degree four, followed by vertex-label union-find sums.",
+  "non_claims": [
+    "The reverse-transfer coefficients DR14--DR16 are separate formulas and are not established by this covariance check.",
+    "No control of a growing harmonic remainder."
+  ]
+}

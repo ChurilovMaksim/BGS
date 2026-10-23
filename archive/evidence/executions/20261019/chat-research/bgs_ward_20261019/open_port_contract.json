@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-FULL-THREE-PORT-PRIMITIVE-KERNEL-20261019",
+ "mathematics":{
+  "assertion_tested":"Compute all relative permutations of the h=2,e=3 open primitive kernel, permitting a cycle cover tau but excluding internal tau cycles after cutting common edges; test whether the previously unobserved inverse 3-cycle and transposition channels vanish at z=1",
+  "coefficient_domain":"Exact integers, F_3,F_5,F_13, fractions.Fraction",
+  "conventions":"Common-edge sets enumerated modulo cyclic sigma rotation with set-orbit weights; tau bijections extend each three-edge set and have exactly three common edges; after cutting, exactly three paths must cover all vertices; transpositions aggregated as one cyclic-label orbit",
+  "inputs":["open_port_kernel.cpp","dependencies/neutral_test.hpp","dependencies/prior_open_second.cpp","dependencies/primitive_defect.cpp","dependencies/closed_port_reference.json","run_open_port_kernel.py"],
+  "bounds":{"q":"3..12","fields":[3,5,13],"partition_codimension_max":2,"candidate_coverage_per_q":"q!/6 before rejecting additional common edges or internal cycles"},
+  "non_claims":["The rank-four support argument must be checked for cycle covers before asserting all-q completeness","Reuses rank and neutral routines, not an independent implementation","Open cycle covers are a diagnostic extension, not an added term in the original physical sum","No higher-defect or BGS conclusion"]
+ },
+ "execution_artifacts":["open_port_kernel.cpp","dependencies/neutral_test.hpp","dependencies/prior_open_second.cpp","dependencies/primitive_defect.cpp","dependencies/closed_port_reference.json","run_open_port_kernel.py","open_port_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"},{"name":"g++","version":"13.3.0"}],
+ "randomness":{"used":false}
+}

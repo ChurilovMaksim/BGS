@@ -1,0 +1,42 @@
+{
+  "status": "passed_direct_cycle_partition_check",
+  "rows": [
+    {
+      "q": 7,
+      "p": 3,
+      "cycles": 720,
+      "weight720": 1680
+    },
+    {
+      "q": 7,
+      "p": 5,
+      "cycles": 720,
+      "weight720": 1680
+    },
+    {
+      "q": 7,
+      "p": 13,
+      "cycles": 720,
+      "weight720": 1680
+    },
+    {
+      "q": 8,
+      "p": 3,
+      "cycles": 5040,
+      "weight720": 1920
+    },
+    {
+      "q": 8,
+      "p": 5,
+      "cycles": 5040,
+      "weight720": 1920
+    },
+    {
+      "q": 8,
+      "p": 13,
+      "cycles": 5040,
+      "weight720": 1920
+    }
+  ],
+  "scope": "Direct finite prefix for disconnected j=3 at q=7,8, not a substitute for the structural gluing proof."
+}

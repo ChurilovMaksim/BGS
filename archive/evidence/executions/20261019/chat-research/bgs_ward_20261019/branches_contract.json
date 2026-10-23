@@ -1,0 +1,13 @@
+{
+ "claim_id":"BGS-COMPUTED-DEFECT-TWO-BRANCHES-20261019",
+ "mathematics":{
+  "assertion_tested":"Extract P22 from the exact second-order table, derive disconnected P32=3 P11 P21, use P42 from gluing, and check direct finite-order sums against exact Gaussian rational representations and finite Heisenberg values",
+  "coefficient_domain":"Integer polynomials and fractions.Fraction, floating limit displays only",
+  "conventions":"Each family is selected by its primitive order and cluster structure; P32 is only its disconnected part; delta=2 throughout; density of X is exp(-x^2)/sqrt(pi)",
+  "inputs":["branches_verification.py","gluing_check.py","dependencies/gluing_reference.json","dependencies/full_port_reference.json","dependencies/h2_core_table.json","dependencies/first_defect_verification.py"],
+  "bounds":{"exact_comparisons":"m=6..36, formal N=7,19,101, all three families","finite_N":[49,169,625],"ratios":["1/2","9/10"],"m_max":562},
+  "non_claims":["The connected order-three primitive is not computed","Finite comparisons do not prove analytic limits","Does not sum unbounded defect or establish BGS"]
+ },
+ "execution_artifacts":["branches_verification.py","gluing_check.py","dependencies/gluing_reference.json","dependencies/full_port_reference.json","dependencies/h2_core_table.json","dependencies/first_defect_verification.py","branches_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],"randomness":{"used":false}
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "claim_id": "REVIEW-HAAR-COVARIANCES-20261017",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "verify_haar_covariances.py",
+    "covariance_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python-stdlib-only",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "The full real degree-two Haar covariance table DR27, its cross covariances with A and the imaginary-Q variance at four exact dimensions.",
+    "coefficient_domain": "Q, exact Fraction arithmetic.",
+    "conventions": "Haar U(N), all diagram vertex labels summed without distinctness constraints; Weingarten values obtained by independent permutation Gram inversion rather than the attachment's character table.",
+    "inputs": [
+      "Dimensions 4,5,7,10; permutation systems of tensor degree at most four."
+    ],
+    "bounds": {
+      "N": [
+        4,
+        5,
+        7,
+        10
+      ],
+      "tensor_degree_max": 4,
+      "real_covariance_table_entries": 60
+    },
+    "non_claims": [
+      "Finite-dimensional controls do not certify a rational identity at every N.",
+      "Reverse-transfer formulas and a growing harmonic tail are separate obligations."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T12:28:24.404141+00:00",
+    "runtime_seconds": 0.166703,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "verify_haar_covariances.py",
+    "covariance_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "verify_haar_covariances.py",
+      "sha256": "759a0c500bfd8d5a28ca8a4597edc9b6beb139c5b5f53001e92e98ebfa7b7077",
+      "sha256_after": "759a0c500bfd8d5a28ca8a4597edc9b6beb139c5b5f53001e92e98ebfa7b7077"
+    },
+    {
+      "path": "covariance_contract.json",
+      "sha256": "f8fc22d7aef3feef784e98cd7d806ba290afefd7e863e50ababed465dec739de",
+      "sha256_after": "f8fc22d7aef3feef784e98cd7d806ba290afefd7e863e50ababed465dec739de"
+    }
+  ],
+  "output_directory": "covariance_run",
+  "declared_results": [
+    "covariance_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "covariance_run/stdout.txt",
+      "sha256": "72a9da97720f81dd54b1170538ef255faa9a16e3e5b6cd34756c1d6a5d54e964",
+      "kind": "log"
+    },
+    {
+      "path": "covariance_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "covariance_run/result.json",
+      "sha256": "7e74d454375d97c77a6f18a89eec73ee98404fcc33e7b6b17e5229a431901757",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
