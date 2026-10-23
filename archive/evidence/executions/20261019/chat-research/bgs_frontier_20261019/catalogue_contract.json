@@ -1,0 +1,14 @@
+{
+ "claim_id":"BGS-EXTREMAL-BIPARTITE-RANK-THREE-CATALOGUE-20261019",
+ "mathematics":{
+  "assertion_tested":"Enumerate the full-root-span and one-dimensional quotient matrix families for connected balanced bipartite 0,+1,-1 matrices of rank g<=3, degrees 2 or 4, and n2=2g+2; quotient by row and column relabeling with exact automorphism weights",
+  "coefficient_domain":"Exact integers and modular ranks over 3 and 31",
+  "conventions":"Rows with degree two define an intrinsic graph of column roots. Retain orientations with t>=s; give a factor 1/2 when t=s. No sign switching is used as an isomorphism",
+  "inputs":["graph_catalogue.py"],
+  "bounds":{"g":[1,2,3],"q_active_max_by_proposed_lemma":{"1":6,"2":11,"3":16},"degrees":[2,4],"checks":["modular ranks","negative transpose closure at t=s","deterministic relabeling invariance"]},
+  "non_claims":["Execution alone does not prove completeness of the classification","This catalogue does not itself establish cancellation of any open kernel or BGS"]
+ },
+ "execution_artifacts":["graph_catalogue.py","catalogue_contract.json"],
+ "software":[{"name":"Python standard library","version":"3.12.14"}],
+ "randomness":{"used":false}
+}

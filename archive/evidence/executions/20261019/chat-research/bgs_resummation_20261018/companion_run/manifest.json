@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-FIXED-COMPANION-SCHUR-CERTIFICATE-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "companion_certificate.py",
+    "companion_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact Schur recursion certifies that every root of lambda^5-lambda^4+y(lambda^3+lambda^2+lambda+1) has modulus <1+y for every real y>0; Gaussian log representation reproduces finite maximal-sector coefficients; rational representation reproduces first-defect coefficients",
+    "coefficient_domain": "Integer polynomial certificates and fractions.Fraction; no floating point in proof checks",
+    "conventions": "Polynomial coefficients stored in ascending y order; Schur-recursion polynomials are descending in the disk variable; Gaussian density exp(-x^2)/sqrt(pi), moments (2h)!/(4^h h!)",
+    "inputs": [
+      "companion_certificate.py",
+      "maxedge_verification_v2.py",
+      "first_defect_verification.py"
+    ],
+    "bounds": {
+      "Schur_degree": 5,
+      "coefficient_identities": "m=1..50, formal N=7,19,101",
+      "certificate": "all coefficients of every Schur boundary inequality, exact integers"
+    },
+    "non_claims": [
+      "Numerical root search is not used as proof",
+      "The analytic all-tau limit requires the separate integral and tail argument",
+      "Only two defect sectors are reconstructed",
+      "No full BGS conclusion"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T05:24:41.094584+00:00",
+    "runtime_seconds": 0.818709,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 160.0,
+    "max_output_bytes": 15000,
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 150,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "companion_certificate.py",
+    "companion_contract.json",
+    "first_defect_verification.py",
+    "maxedge_verification_v2.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "companion_certificate.py",
+      "sha256": "7f8ebea1b007247b20d02e81dbed5fafd20c4b7b60d1a70d63c5058feb644ec4",
+      "sha256_after": "7f8ebea1b007247b20d02e81dbed5fafd20c4b7b60d1a70d63c5058feb644ec4"
+    },
+    {
+      "path": "companion_contract.json",
+      "sha256": "005cc9a3092819075fbaeb81587bee1c7c75038adf16fcd4987108c8116cfc7d",
+      "sha256_after": "005cc9a3092819075fbaeb81587bee1c7c75038adf16fcd4987108c8116cfc7d"
+    },
+    {
+      "path": "first_defect_verification.py",
+      "sha256": "9d31f6e441b6a9d40129650694fa459b0d421cb1808f1d3d67312bd1c9bec1d5",
+      "sha256_after": "9d31f6e441b6a9d40129650694fa459b0d421cb1808f1d3d67312bd1c9bec1d5"
+    },
+    {
+      "path": "maxedge_verification_v2.py",
+      "sha256": "70925fae4a22e8eac6735bb67445c1c9dc6bdf643a18977620e5bfe0953b2262",
+      "sha256_after": "70925fae4a22e8eac6735bb67445c1c9dc6bdf643a18977620e5bfe0953b2262"
+    }
+  ],
+  "output_directory": "companion_run",
+  "declared_results": [
+    "companion_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "companion_run/stdout.txt",
+      "sha256": "652f22fa3fabac13ecb661a1532f0e64a7a07487e1c38e8db535524234aca2e2",
+      "kind": "log"
+    },
+    {
+      "path": "companion_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "companion_run/result.json",
+      "sha256": "19184bda2820d806c2c6303f9ac382f7c390a81bddadf990f617e087718132d1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-ACTUAL-SCATTERING-BASIS-20261018",
+  "mathematics":{
+    "assertion_tested":"Paired two-channel transmission moments under fixed port-basis rotations, actual iid circular phases and symplectic Fourier seeds",
+    "coefficient_domain":"Complex128 linear solves, float64 bounded empirical statistics",
+    "conventions":"F=S_AA+S_AE(I-Z S_EE)^(-1)Z S_EA; F'=W F W*, A first two coordinates; independent full-circle phases on E",
+    "inputs":["scattering_basis_test.py"],
+    "bounds":{"actual":"N=9 (4000),25 (3000),81 (2400),625 (160),729 (160) samples","controls":"Excluded symmetric DFT N=81 (1200), Haar U(2) (4000)","tolerances":"Seed unitarity Frobenius <1e-9, scattering error <1e-7, linear residual <1e-10"},
+    "non_claims":["Passing status refers to construction checks, not CUE convergence","No asymptotic counterexample from finite sample deviations","Symmetric DFT has B norm one and is excluded"]
+  },
+  "execution_artifacts":["scattering_basis_test.py","scattering_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"NumPy","version":"2.3.5"},{"name":"SciPy","version":"1.17.0"}],
+  "randomness":{"used":true,"generator":"NumPy PCG64","seed":202610181811}
+}

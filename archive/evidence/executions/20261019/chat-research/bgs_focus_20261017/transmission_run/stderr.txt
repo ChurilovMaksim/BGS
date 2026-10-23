@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/1c87c9bb0442/bgs_focus_20261017/verify_transmission_bridge.py", line 178, in <module>
+    main()
+  File "/workspace/scratch/1c87c9bb0442/bgs_focus_20261017/verify_transmission_bridge.py", line 166, in main
+    "sympy":s.__version__, "kernels":kernel_checks(),
+                                     ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/bgs_focus_20261017/verify_transmission_bridge.py", line 54, in kernel_checks
+    direct = rat_residue(y**k/w, w, (1-st)/rr)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/bgs_focus_20261017/verify_transmission_bridge.py", line 28, in rat_residue
+    pn, pd = s.Poly(n, w).shift(p), s.Poly(d, w).shift(p)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/deps/sympy/polys/polytools.py", line 3109, in shift
+    return f.per(f.rep.shift(a))
+                 ^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/deps/sympy/polys/polyclasses.py", line 902, in shift
+    return f._shift(f.dom.convert(a))
+                    ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/deps/sympy/polys/domains/domain.py", line 456, in convert
+    return self.from_sympy(element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1c87c9bb0442/deps/sympy/polys/domains/integerring.py", line 76, in from_sympy
+    raise CoercionFailed("expected an integer, got %s" % a)
+sympy.polys.polyerrors.CoercionFailed: expected an integer, got 1/2

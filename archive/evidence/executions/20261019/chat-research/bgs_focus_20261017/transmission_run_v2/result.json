@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "kernels": {
+    "exact_checks": 50,
+    "kernel_and_eigenvector_powers": [
+      1,
+      8
+    ],
+    "uniform_mixture_powers": [
+      1,
+      16
+    ],
+    "independent_closed_eigenvector_model": "2x2 real rotation, uniform row phases"
+  },
+  "closures": {
+    "matrix_sizes": [
+      2,
+      3,
+      4
+    ],
+    "source_closures": 9,
+    "scalar_delay_derivatives": 9,
+    "ordered_pair_schur_closures": 20,
+    "coefficient_domain": "Q(i), exact symbolic rational arithmetic"
+  },
+  "sampling": {
+    "weight_vectors": 3,
+    "exact_without_replacement_checks": 9
+  },
+  "non_claims": [
+    "No asymptotic eigenvector-intensity theorem.",
+    "Not a complete proof certificate of spectral averaging.",
+    "No physical or phase-ensemble BGS conclusion."
+  ]
+}

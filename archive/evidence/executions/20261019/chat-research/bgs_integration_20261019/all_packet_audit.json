@@ -1,0 +1,592 @@
+{
+  "base_main": "5c1d1553d1ef59a3f62cc46e4f70b7b08640af32",
+  "all_valid": false,
+  "counts": {
+    "completed": 58,
+    "failed": 5,
+    "timeout": 1
+  },
+  "runs": [
+    {
+      "packet": "bgs_focus_20261016",
+      "manifest": "feedback_exact_run/manifest.json",
+      "sha256": "5b7cb1ab6c81a8769e48af99f139132267689a24daf4bec5572f428a52780344",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_focus_20261016",
+      "manifest": "feedback_extension_run/manifest.json",
+      "sha256": "f59f12e936570a6e5a49a50fda6854654a49d130f3ff4ff7ba70e8c8ff33321d",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_focus_20261016",
+      "manifest": "two_channel_run/manifest.json",
+      "sha256": "3b8ef3033ee2e89ae68f1b0c1942ae08b79353b78a771943d0881559a50152bb",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_focus_20261017",
+      "manifest": "dimension_uniform_run/manifest.json",
+      "sha256": "d041a106202c24f180524e8677071be6ebdd063bdfb806e720720be238330970",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_focus_20261017",
+      "manifest": "high_power_run/manifest.json",
+      "sha256": "d3cd41a84b180527c8093809a86046b4137135ce2f0c011f6c553b8426355eed",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_focus_20261017",
+      "manifest": "transmission_run/manifest.json",
+      "sha256": "2da94856ecb103961a7f5edc04f729097e5fa604d295f005d61ce8f913783450",
+      "status": "failed",
+      "valid": false,
+      "errors": [
+        "input changed since the run: verify_transmission_bridge.py"
+      ],
+      "scientific_disposition": "Historical failed run with stale source provenance: original input revision is not preserved at its recorded path. Not reproducible as issued and not proof evidence. Successful transmission_run_v2 has valid provenance."
+    },
+    {
+      "packet": "bgs_focus_20261017",
+      "manifest": "transmission_run_v2/manifest.json",
+      "sha256": "69a2c94d36e7b446a2051e1eb6af15ad2f81f95b77cc89e755c5c3abf1870bc6",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "appendix_run/manifest.json",
+      "sha256": "4c5c72cd60f3963fd2fc457ba42fe384361247b9d4c5fc7704b8106202678dda",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "bernstein_run/manifest.json",
+      "sha256": "ec42b95da28af2d7881d1a6c73cac3b5753ef05f994958778635d02d3fc54b7b",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "classical_run/manifest.json",
+      "sha256": "81906283c8239bb4fa6cd162e053fdbd7b6170f643fb260c952bbf6329fd0360",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "covariance_run/manifest.json",
+      "sha256": "e81d7037f0713d4cdd78edc294a6c8823088cf8e70c9ba29f3b685462fd2ba90",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "harmonic_run/manifest.json",
+      "sha256": "fd358cd6892aafec0fd65ece1acc50772ccd8e6d05e64b9bd6c08cf8c5714f98",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "jacobian_run/manifest.json",
+      "sha256": "47d6de433515c15ab62b94a076b037bb5a224ad9dedf498a31d0d2acc318babd",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_review_20261017",
+      "manifest": "smoothing_run/manifest.json",
+      "sha256": "b997ce285b43f872ff3b39084d678bf7f3724ab9018d25f71d5ea6dc411a314a",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_continue_20261017",
+      "manifest": "current_run/manifest.json",
+      "sha256": "10b1cebad0f17ac2133577a7d4835a70b8e1f863b4b9318f09f14e4e6093c621",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_continue_20261017",
+      "manifest": "star_run/manifest.json",
+      "sha256": "260c5f43aa72d3c2d92165201c9b54e9a38b02c4280db4f251e40c862caa9b8d",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_attempt_20261018",
+      "manifest": "run/manifest.json",
+      "sha256": "090a0a2f715ca47cc05dca9fd47148047632049b26008f620274297ac23d864b",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_attempt_20261018",
+      "manifest": "seed_run/manifest.json",
+      "sha256": "a2dfa3dd27df0ec0f8b888a2987ca69cdc6ae7c16ee2aa5ed8b88e53bab4910e",
+      "status": "failed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_attempt_20261018",
+      "manifest": "seed_run_v2/manifest.json",
+      "sha256": "0fa9c8ed195ba88022dc1714ce05897ce70fedcf95871ecffa277da86f4fa4cc",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_attempt_20261018",
+      "manifest": "trace_run/manifest.json",
+      "sha256": "5a12207991d73fd7617af18af4ab87463fbd525dea970a7150f4ef62b5ac7050",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_boundary_20261018",
+      "manifest": "completion_run/manifest.json",
+      "sha256": "d7b49cb222e282c94c7d952fa286cfbf0f45457d7d57072160c38de3ee42f62f",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_boundary_20261018",
+      "manifest": "generic_run/manifest.json",
+      "sha256": "05a00c308af257168d6e0d375255238ea08b3b479e03b4d08170787e0198b5d3",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_boundary_20261018",
+      "manifest": "run/manifest.json",
+      "sha256": "5b273a478681012cfe57a59410b773fa4dc4ad164b08b6f3c315ccfe340dc802",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "core_run/manifest.json",
+      "sha256": "0dce7a933b7d39ba67403670ac0dc00383f783d5f63355fc437dbb7b517ffb50",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "identity_run/manifest.json",
+      "sha256": "b240f6edb3e35036ed43982c42eec5efbbd957fabb28923bbdcfe4345f528246",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "microscopic_run/manifest.json",
+      "sha256": "6442d89a7aca1eab0e025264ec44bc719bd62cb2c7a24ca451527fc73cad78b9",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "open_second_order_p13_run/manifest.json",
+      "sha256": "5740452864182f696cdfe2b1c65a74189fa95d14ba321e7e8e19be1310c0cc55",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "second_order_extended_run/manifest.json",
+      "sha256": "c87d095315dd1b5246950d7eae0afbfda4df63fe59fe97b42331b6153c635073",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "second_order_run/manifest.json",
+      "sha256": "431307a17a6881b5f1b5bfbc2befc49d749506dee8fcc86a9c609b3adbbde943",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "signed_run/manifest.json",
+      "sha256": "21df9e1b5ccd6114de60b91fc79ac307006d2197b8acb32a4790a17b45324080",
+      "status": "failed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "signed_run_v2/manifest.json",
+      "sha256": "fa1a37a1a73e7eb75db4e108f4af1491283836c3dc7bfef4b7eb15bbda754bc0",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_cancellation_20261018",
+      "manifest": "universal_open_second_run/manifest.json",
+      "sha256": "b7b029d49a3672fa19506d026052e500b1e14dd2d5c6115867bdea09109916a7",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "cluster_run/manifest.json",
+      "sha256": "f246641ec3a39484d67ef9753b4088e8c79dc1a54f2f042fa98bcf9cdf0796b2",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "companion_heisenberg_run/manifest.json",
+      "sha256": "00ee7ce456e7ff110237dddc688a2ed06746d634b2a83668e2639f73f3a92272",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "companion_run/manifest.json",
+      "sha256": "fc41847013f692efbe562f3fe076b6efab2591a68d892a1b43f38e9c16bee38d",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "first_defect_run/manifest.json",
+      "sha256": "2646683da8eabcc61c8382a4726e4c936c0caac50f693154d280b383026adad6",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "incidence_run/manifest.json",
+      "sha256": "0b33c28fee0d2cd2e5204114b6e94bbc0a583be87f613f680d7bcb1d40fbfc26",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "maxedge_run/manifest.json",
+      "sha256": "fb058d5c09b8ca3a395b2e75f877a75e34ce293f97152e39f5a59d68d82e1c3e",
+      "status": "failed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "maxedge_run_v2/manifest.json",
+      "sha256": "79196b8de4f24a892464feb640ef1afc410df0b871fb23489a2a9be7d624d12d",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "pivot_run/manifest.json",
+      "sha256": "c793ad4f706e32e9c7138cd82908b0ebb627d0daeda02b550800d74a414e66c1",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "primitive_run/manifest.json",
+      "sha256": "7a4a1ad17cfafc39e339f9d768ee702494bb6a266ccb15c5d668b0cd7f50df8c",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "scattering_run/manifest.json",
+      "sha256": "424fb9918c8d9be77197bf3cadc952d8d637cb85a488e620a05b56396ffeb55a",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_resummation_20261018",
+      "manifest": "third_order_run/manifest.json",
+      "sha256": "40008c9a69b6cc48b9abb56457ca91b12e7a3671b1a4d27c8579b670889146e7",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "branches_run/manifest.json",
+      "sha256": "4c6d3a712a119f16f265c84d578fd00cdf65feacb261560e7c217c3813129414",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "cayley_run/manifest.json",
+      "sha256": "02c19154db2caab838acf4a2c412844486bf8f014b661557e72fa82147b54522",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "direct_p32_disconnected_run/manifest.json",
+      "sha256": "72f15ced826b251b3cd1482a3592a6f27925c93615f261f4ee8ca63f325b9fc7",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "direct_p42_q10_run/manifest.json",
+      "sha256": "6180432db4daa87d81433e843159c1b5003f72d6c07fe5102a7979c087aaabc0",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "direct_p42_run/manifest.json",
+      "sha256": "b5a54949bb567c719c888e227ee38e04f79c83c01120a0dfec0b905dede16a2c",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "gluing_run/manifest.json",
+      "sha256": "4ce53e3238c610d9e543723ef5f85334c1718119370252ecb2d6396a5390829c",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "maximal_run/manifest.json",
+      "sha256": "1fb1d0b681db84a3077a034b81ab2a21bf5b74b0a734d9b55698e89395c3cf43",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "open_port_run/manifest.json",
+      "sha256": "9f5134f9f7662fe527117e31d4f8f35dbe5170ca56ad523906e8e8065c280a3f",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "open_symbolic_run/manifest.json",
+      "sha256": "1df8b72c526fa3842568e2aa55c7e799e9a1f52d574f2d5cee9efe402d027bd2",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "port_run/manifest.json",
+      "sha256": "67fb3c6dc7ff3634cf56afdcc02b30199a470c188e030f3fc54f9afe9aef0b54",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_ward_20261019",
+      "manifest": "unit_defect_run/manifest.json",
+      "sha256": "0581076b2f4915bf3fbc067ca854b6fa4b0b6b24a774526e30ce7bc4231a2b71",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "catalogue_run/manifest.json",
+      "sha256": "9220fbf394b88a0b2374a9116a45ed2c5a4499a9e7be2e934c26a861849d723f",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "direct_four_run/manifest.json",
+      "sha256": "5c883309fc817de211a5bcc9ffe34d686f128ec16806c7d28dc93612040d05b4",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "kernel_run/manifest.json",
+      "sha256": "37e8e185a4846209050b4e6c4e10021ad39b8a45db1d12549ba2373eb45ca3bc",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "quartic_run/manifest.json",
+      "sha256": "ee58f54c4042763a1c890fc8ce3a7b716a3cacd96e1a6d9c59c02a8b21eb7e56",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "two_port_run/manifest.json",
+      "sha256": "64761b33f513acd4c1d7285038278c2899b8cf195fe73fb5768c04b52aea9ccd",
+      "status": "timeout",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_frontier_20261019",
+      "manifest": "two_port_v2_run/manifest.json",
+      "sha256": "bba2e0240c8d3ccd8cbba70ce92783ce9d3596836d16d4f1dc8055359f077fb3",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_integration_20261019",
+      "manifest": "cauchy_source_run/manifest.json",
+      "sha256": "11dde6da9a5f95520ccc3f8a93c4c9bcdb882cdf84f8ee6c2092320c3c509686",
+      "status": "failed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_integration_20261019",
+      "manifest": "cauchy_source_v2_run/manifest.json",
+      "sha256": "8f6281f3361b47b2663131ebb59b8942be76ae8adeac2be9d06745166f588575",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    },
+    {
+      "packet": "bgs_integration_20261019",
+      "manifest": "source_three_run/manifest.json",
+      "sha256": "2eef9c46c0740dfbc7dba7c1f2606b941ba448731346dbccc3a324632d114cf4",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "invalid implementation; not evidence"
+    },
+    {
+      "packet": "bgs_integration_20261019",
+      "manifest": "source_three_v2_run/manifest.json",
+      "sha256": "9dfdb84fb8980c5d01c1e16752d5153d6a55c2054424a08b93580be9bab45592",
+      "status": "completed",
+      "valid": true,
+      "errors": [],
+      "scientific_disposition": "execution only; interpret scope in associated review"
+    }
+  ],
+  "non_claim": "Valid hashes and execution records do not establish a theorem; one completed new prefix run has a known implementation error.",
+  "valid_records": 63,
+  "stale_historical_failed_records": 1
+}

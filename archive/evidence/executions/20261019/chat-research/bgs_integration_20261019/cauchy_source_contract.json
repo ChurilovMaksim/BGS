@@ -1,0 +1,14 @@
+{
+  "claim_id": "BGS-CAUCHY-POSITIVE-SOURCE-BOUNDARY-20261019",
+  "mathematics": {
+    "assertion_tested": "Exact two-dimensional inverse and signed-source algebra, torus identity, density antiderivative identities and four positive-source parameter cases; bounded deterministic quadrature diagnostic",
+    "coefficient_domain": "SymPy exact rational/algebraic expressions; NumPy float64 quadrature explicitly diagnostic",
+    "conventions": "H=S-diag(t1,t2), S=sigma_x, independent standard Cauchy variables; Q=Tr(A H^-1); no undefined raw Cauchy moments are evaluated",
+    "inputs": ["cauchy_source_checks.py"],
+    "bounds": {"dimension":2,"positive_sources":4,"quadrature_grids":[256,512],"quadrature_absolute_tolerance":0.005},
+    "non_claims": ["Quadrature does not prove the contour theorem or any asymptotic law","The two-dimensional surrogate is not a BGS counterexample","No independent review or novelty assertion"]
+  },
+  "execution_artifacts": ["cauchy_source_checks.py","cauchy_source_contract.json"],
+  "software": [{"name":"Python","version":"3.12.14"},{"name":"SymPy","version":"1.14.0"},{"name":"NumPy","version":"2.3.5"}],
+  "randomness": {"used":false}
+}

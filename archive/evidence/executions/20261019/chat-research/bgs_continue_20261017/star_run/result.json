@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "arithmetic": "exact integers and fractions; floats only rate illustration",
+  "python": "3.12.14",
+  "finite_enumeration": [
+    {
+      "N": 2,
+      "m": 1,
+      "words": 2,
+      "tables": 2,
+      "h": "2"
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "words": 4,
+      "tables": 3,
+      "h": "8"
+    },
+    {
+      "N": 2,
+      "m": 3,
+      "words": 8,
+      "tables": 4,
+      "h": "30"
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "words": 16,
+      "tables": 6,
+      "h": "144"
+    },
+    {
+      "N": 2,
+      "m": 5,
+      "words": 32,
+      "tables": 8,
+      "h": "840"
+    },
+    {
+      "N": 2,
+      "m": 6,
+      "words": 64,
+      "tables": 11,
+      "h": "5760"
+    },
+    {
+      "N": 2,
+      "m": 7,
+      "words": 128,
+      "tables": 14,
+      "h": "45360"
+    },
+    {
+      "N": 2,
+      "m": 8,
+      "words": 256,
+      "tables": 18,
+      "h": "403200"
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "words": 3,
+      "tables": 3,
+      "h": "3"
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "words": 9,
+      "tables": 6,
+      "h": "18"
+    },
+    {
+      "N": 3,
+      "m": 3,
+      "words": 27,
+      "tables": 11,
+      "h": "90"
+    },
+    {
+      "N": 3,
+      "m": 4,
+      "words": 81,
+      "tables": 24,
+      "h": "504"
+    },
+    {
+      "N": 3,
+      "m": 5,
+      "words": 243,
+      "tables": 48,
+      "h": "3360"
+    },
+    {
+      "N": 3,
+      "m": 6,
+      "words": 729,
+      "tables": 95,
+      "h": "25920"
+    },
+    {
+      "N": 3,
+      "m": 7,
+      "words": 2187,
+      "tables": 174,
+      "h": "226800"
+    },
+    {
+      "N": 3,
+      "m": 8,
+      "words": 6561,
+      "tables": 306,
+      "h": "2217600",
+      "star_tables": 3,
+      "words_per_star": 12,
+      "unnormalized_star_mass": "6912",
+      "multiplicity": 2
+    },
+    {
+      "N": 4,
+      "m": 1,
+      "words": 4,
+      "tables": 4,
+      "h": "4"
+    },
+    {
+      "N": 4,
+      "m": 2,
+      "words": 16,
+      "tables": 10,
+      "h": "32"
+    },
+    {
+      "N": 4,
+      "m": 3,
+      "words": 64,
+      "tables": 24,
+      "h": "204"
+    },
+    {
+      "N": 4,
+      "m": 4,
+      "words": 256,
+      "tables": 70,
+      "h": "1344"
+    },
+    {
+      "N": 4,
+      "m": 5,
+      "words": 1024,
+      "tables": 196,
+      "h": "10080"
+    },
+    {
+      "N": 4,
+      "m": 6,
+      "words": 4096,
+      "tables": 538,
+      "h": "86400"
+    },
+    {
+      "N": 4,
+      "m": 7,
+      "words": 16384,
+      "tables": 1376,
+      "h": "831600"
+    },
+    {
+      "N": 4,
+      "m": 8,
+      "words": 65536,
+      "tables": 3317,
+      "h": "8870400",
+      "star_tables": 12,
+      "words_per_star": 12,
+      "unnormalized_star_mass": "27648",
+      "multiplicity": 2
+    },
+    {
+      "N": 3,
+      "m": 12,
+      "words": 531441,
+      "tables": 1901,
+      "h": "50295168000",
+      "star_tables": 3,
+      "words_per_star": 40,
+      "unnormalized_star_mass": "6220800",
+      "multiplicity": 3
+    }
+  ],
+  "total_words_enumerated": 629171,
+  "excluded_k1_negative_control": "passed: naive hub count is twice the table count",
+  "radial_moments_32": [
+    "1",
+    "1",
+    "32",
+    "1024"
+  ],
+  "radial_moments_4matched": [
+    "1",
+    "1",
+    "2",
+    "66044/255",
+    "4294965256/65025"
+  ],
+  "exact_sign_tests": {
+    "kappa32_alpha3": true,
+    "fourth_matched_alpha5": true
+  },
+  "finite_ratio_bounds": [
+    {
+      "N": 12,
+      "m": 36,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.9179436435671988
+    },
+    {
+      "N": 12,
+      "m": 60,
+      "s": 3,
+      "log_ratio_lower_per_N": 1.1267858460736921
+    },
+    {
+      "N": 24,
+      "m": 72,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.6982665766658981
+    },
+    {
+      "N": 24,
+      "m": 120,
+      "s": 3,
+      "log_ratio_lower_per_N": 0.885294158827269
+    },
+    {
+      "N": 60,
+      "m": 180,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.53761593797775
+    },
+    {
+      "N": 60,
+      "m": 300,
+      "s": 3,
+      "log_ratio_lower_per_N": 0.7110282657016531
+    },
+    {
+      "N": 120,
+      "m": 360,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.4736803254048984
+    },
+    {
+      "N": 120,
+      "m": 600,
+      "s": 3,
+      "log_ratio_lower_per_N": 0.6424645947386257
+    },
+    {
+      "N": 300,
+      "m": 900,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.42951282842020416
+    },
+    {
+      "N": 300,
+      "m": 1500,
+      "s": 3,
+      "log_ratio_lower_per_N": 0.595498586504118
+    },
+    {
+      "N": 600,
+      "m": 1800,
+      "s": 2,
+      "log_ratio_lower_per_N": 0.41270693174198336
+    },
+    {
+      "N": 600,
+      "m": 3000,
+      "s": 3,
+      "log_ratio_lower_per_N": 0.577756232064036
+    }
+  ],
+  "non_claims": [
+    "No exhaustive asymptotic check",
+    "No unitary/BGS counterexample",
+    "No full tilted-Wick free-energy formula"
+  ]
+}

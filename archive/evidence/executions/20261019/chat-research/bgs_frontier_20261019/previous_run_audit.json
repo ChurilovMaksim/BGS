@@ -1,0 +1,71 @@
+{
+  "all_passed": true,
+  "runs": [
+    {
+      "manifest": "branches_run/manifest.json",
+      "sha256": "4c6d3a712a119f16f265c84d578fd00cdf65feacb261560e7c217c3813129414",
+      "runtime_seconds": 4.932038,
+      "validated": true
+    },
+    {
+      "manifest": "cayley_run/manifest.json",
+      "sha256": "02c19154db2caab838acf4a2c412844486bf8f014b661557e72fa82147b54522",
+      "runtime_seconds": 1.170175,
+      "validated": true
+    },
+    {
+      "manifest": "direct_p32_disconnected_run/manifest.json",
+      "sha256": "72f15ced826b251b3cd1482a3592a6f27925c93615f261f4ee8ca63f325b9fc7",
+      "runtime_seconds": 1.019861,
+      "validated": true
+    },
+    {
+      "manifest": "direct_p42_q10_run/manifest.json",
+      "sha256": "6180432db4daa87d81433e843159c1b5003f72d6c07fe5102a7979c087aaabc0",
+      "runtime_seconds": 1.771686,
+      "validated": true
+    },
+    {
+      "manifest": "direct_p42_run/manifest.json",
+      "sha256": "b5a54949bb567c719c888e227ee38e04f79c83c01120a0dfec0b905dede16a2c",
+      "runtime_seconds": 1.321619,
+      "validated": true
+    },
+    {
+      "manifest": "gluing_run/manifest.json",
+      "sha256": "4ce53e3238c610d9e543723ef5f85334c1718119370252ecb2d6396a5390829c",
+      "runtime_seconds": 0.066124,
+      "validated": true
+    },
+    {
+      "manifest": "maximal_run/manifest.json",
+      "sha256": "1fb1d0b681db84a3077a034b81ab2a21bf5b74b0a734d9b55698e89395c3cf43",
+      "runtime_seconds": 2.324316,
+      "validated": true
+    },
+    {
+      "manifest": "open_port_run/manifest.json",
+      "sha256": "9f5134f9f7662fe527117e31d4f8f35dbe5170ca56ad523906e8e8065c280a3f",
+      "runtime_seconds": 2.372356,
+      "validated": true
+    },
+    {
+      "manifest": "open_symbolic_run/manifest.json",
+      "sha256": "1df8b72c526fa3842568e2aa55c7e799e9a1f52d574f2d5cee9efe402d027bd2",
+      "runtime_seconds": 3.979153,
+      "validated": true
+    },
+    {
+      "manifest": "port_run/manifest.json",
+      "sha256": "67fb3c6dc7ff3634cf56afdcc02b30199a470c188e030f3fc54f9afe9aef0b54",
+      "runtime_seconds": 32.78202,
+      "validated": true
+    },
+    {
+      "manifest": "unit_defect_run/manifest.json",
+      "sha256": "0581076b2f4915bf3fbc067ca854b6fa4b0b6b24a774526e30ce7bc4231a2b71",
+      "runtime_seconds": 5.686839,
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-SOURCE-THREE-PREFIX-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "run_source_three.py",
+    "source_three_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exhaustive connected (j,delta,e)=(3,3,3) common-edge path covers and codimension <=3 partitions for q=3..9; distinguish potential prime dependence and noncentral open kernels",
+    "coefficient_domain": "Exact integers and prime fields 3,5,31",
+    "conventions": "Standard sigma cycle, tau open path cover, original cumulant weights scaled by 24, average over three cyclic choices of port root; no inference at q>9",
+    "inputs": [
+      "source_three_prefix.cpp",
+      "run_source_three.py"
+    ],
+    "bounds": {
+      "q_min": 3,
+      "q_max": 9,
+      "primes": [
+        3,
+        5,
+        31
+      ],
+      "collision_codimension_max": 3,
+      "ports": 3
+    },
+    "non_claims": [
+      "Does not compute the full source or its value at z=1",
+      "No all-prime or q>9 claim",
+      "No BGS theorem or CUE coefficient fitting"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T13:28:57.256630+00:00",
+    "runtime_seconds": 1.932476,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 24000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 140,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "source_three_prefix.cpp",
+    "run_source_three.py",
+    "source_three_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "source_three_prefix.cpp",
+      "sha256": "19af772f9f9ff28094f2e9a01932087780aee02ab5c7fdf11446e41ead07734d",
+      "sha256_after": "19af772f9f9ff28094f2e9a01932087780aee02ab5c7fdf11446e41ead07734d"
+    },
+    {
+      "path": "run_source_three.py",
+      "sha256": "965250e33440430ddeb73eb51d18360ec989d07d9e156be1325921e4e60496cd",
+      "sha256_after": "965250e33440430ddeb73eb51d18360ec989d07d9e156be1325921e4e60496cd"
+    },
+    {
+      "path": "source_three_contract.json",
+      "sha256": "5dbf3a8cc1c7b8767d8dbdc93964f69118df78071dad23826547f8aa268d8ada",
+      "sha256_after": "5dbf3a8cc1c7b8767d8dbdc93964f69118df78071dad23826547f8aa268d8ada"
+    }
+  ],
+  "output_directory": "source_three_run",
+  "declared_results": [
+    "source_three_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "source_three_run/stdout.txt",
+      "sha256": "a7e92e6c6cb8a522da4cea4304893be7734aef068dc1ef49840ad9f078b3f060",
+      "kind": "log"
+    },
+    {
+      "path": "source_three_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "source_three_run/result.json",
+      "sha256": "7b4a47601118fc4dee70ad173bb7f5725571778b5fe2fb5bf88c7755e4db21e5",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

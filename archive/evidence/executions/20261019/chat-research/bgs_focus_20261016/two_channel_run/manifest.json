@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "claim_id": "EXPLORATORY-TWO-CHANNEL-TRANSMISSION-20261016",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "two_channel_probe.py",
+    "two_channel_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "numpy",
+        "version": "2.3.5"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exploratory discrimination of the OPEN fixed-two-channel transmission law; numerical preservation of unitarity; report moments and uniform-law KS statistic without proving a limit.",
+    "coefficient_domain": "IEEE-754 binary64 and complex128; no exact arithmetic claim.",
+    "conventions": "Retain two uniform terminal labels; independent uniform fresh phase at each eliminated port; S'=S_AA+w/(1-w S_ee) S_Ae S_eA; T=|S2_12|^2.",
+    "inputs": [
+      "Symmetric Fourier negative control",
+      "Fourier with a seeded frozen row permutation",
+      "Existing symplectic involution H at odd q=7,11,15"
+    ],
+    "bounds": {
+      "N": [
+        49,
+        121,
+        225
+      ],
+      "repeats_each": 150,
+      "families": 3,
+      "total_trajectories": 1350,
+      "max_terminal_unitarity_error": 2e-09
+    },
+    "non_claims": [
+      "The proposed asymptotic two-channel law remains unproved.",
+      "No hypothesis effectiveness at finite N is asserted.",
+      "No deterministic physical BGS conclusion."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy PCG64",
+    "seed": 2026101602
+  },
+  "run": {
+    "started_at": "2026-10-16T17:04:20.057965+00:00",
+    "runtime_seconds": 8.849536,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 55.0,
+    "max_output_bytes": 12000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "two_channel_probe.py",
+    "two_channel_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "two_channel_probe.py",
+      "sha256": "029276cdce7e657f41bfe3a571cc17ee32f139e1ccb4154a1c5ef3466e52a4fe",
+      "sha256_after": "029276cdce7e657f41bfe3a571cc17ee32f139e1ccb4154a1c5ef3466e52a4fe"
+    },
+    {
+      "path": "two_channel_contract.json",
+      "sha256": "2cf78ea2b26c7c7e42875b80501410156348535c875273bfd7934e9acf679800",
+      "sha256_after": "2cf78ea2b26c7c7e42875b80501410156348535c875273bfd7934e9acf679800"
+    }
+  ],
+  "output_directory": "two_channel_run",
+  "declared_results": [
+    "two_channel_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "two_channel_run/stdout.txt",
+      "sha256": "1fe6f5aacaad27097c81ba0d986b39ca09f1def7e5a76272877fd63d004cfe8e",
+      "kind": "log"
+    },
+    {
+      "path": "two_channel_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "two_channel_run/result.json",
+      "sha256": "80037aed930fa9a70ca94350119be7de20fdb5867707c830d3f5cd6f5b69f1bb",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

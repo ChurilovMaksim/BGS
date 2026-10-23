@@ -1,0 +1,75 @@
+{
+  "checkpoint_id": "BGS-CONTINUE-20261017-TENSOR-CURRENT-STAR",
+  "date": "2026-10-17",
+  "base": {
+    "artifact": "inputs/base_research_checkpoint.json",
+    "sha256": "6f6716b1ca12592a3a42f7967476e8fd8b4a65fe1b22f04470c704a2f88e6347",
+    "claim_ids": [
+      "REVIEW-FIXED-CHANNEL-TV-COMPACTNESS-20261017",
+      "REVIEW-POSITIVE-BERNSTEIN-PATH-LAW-20261017"
+    ]
+  },
+  "requested_goal": "Full BGS; live concrete obligation is the original two-channel phase model.",
+  "goal_state": "open",
+  "two_port_mean_limit": "open",
+  "claims": [
+    {
+      "id": "CONTINUE-TENSOR-CURRENT-FIXED-20261017",
+      "state": "working_proof_self_reviewed",
+      "source": "tensor_path_current_limit.md",
+      "input": "Finite unitary Schur transfer; no G.",
+      "boundary": "Fixed colligation K->infinity; optional higher moments have explicit inputs."
+    },
+    {
+      "id": "CONTINUE-UNIFORM-FULL-CLOCK-20261017",
+      "state": "conditional_working_proof_self_reviewed",
+      "source": "uniform_heisenberg_path_current.md",
+      "input": "Fixed-level TV compactness TC; prior R/G is a sufficient working input.",
+      "boundary": "Any K_N->infinity; all positive averaged clock coordinates; no Haar identification."
+    },
+    {
+      "id": "CONTINUE-RARE-STAR-20261017",
+      "state": "working_proof_self_reviewed",
+      "source": "rare_star_heisenberg.md",
+      "input": "Classical all-m Ginibre moment formula; exact circular entry expansion.",
+      "boundary": "Auxiliary Wick probability and iid nonunitary matrices only."
+    }
+  ],
+  "routes": [
+    {
+      "mechanism": "One-step finite-channel recursion / Haar terminator",
+      "state": "open_at_identification",
+      "outcome": "Existing phase-sensitive cubic and cavity correlations are not eliminated by G.",
+      "untried_next": "A new bound retaining coherent conditional directions, not a classical replacement."
+    },
+    {
+      "mechanism": "Positive tensor occupations and coherent sampling",
+      "state": "partial_theorem_checkpoint",
+      "outcome": "Fixed-mark uniform transfer and full averaged clock transfer proved under TC.",
+      "remaining": "Identify endpoint marginal of (T_N,J_N); finite histogram e_N remains unestimated."
+    },
+    {
+      "mechanism": "Unrestricted exponential transfer from Wick Poisson collisions",
+      "state": "refuted_at_stated_scope",
+      "outcome": "Explicit star sector produces divergent exponential moments above its threshold.",
+      "not_ruled_out": "A restricted small-tilt regime or tail-controlled entry class.",
+      "resumption": "Prove an upper tail/rate with the exact star lower bound retained."
+    },
+    {
+      "mechanism": "Critical radial transform of the positive full path clock",
+      "state": "open_at_evaluation",
+      "outcome": "Exact interior formula (19) and conditional limit (20) established.",
+      "remaining": "Evaluate the deterministic model at rho=exp(-lambda/[2K_N(N-2)]).",
+      "next_check": "Match the actual physical-source product and its initial law before using prior source comparisons."
+    }
+  ],
+  "next_obligation": "Prove e_N->0 for the positive finite Bernstein weights, or directly identify T_N from the exact cavity law.",
+  "files": "README.md",
+  "repo_integrity": "repo_integrity.json",
+  "not_performed": [
+    "Repository edits/commit/push",
+    "New subagents",
+    "Lean compilation",
+    "External referee or global priority verification"
+  ]
+}

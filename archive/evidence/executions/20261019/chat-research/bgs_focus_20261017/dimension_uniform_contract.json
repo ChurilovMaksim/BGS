@@ -1,0 +1,14 @@
+{
+  "claim_id":"WORKING-DIMENSION-UNIFORM-FEEDBACK-20261017",
+  "software":[{"name":"python-stdlib-only","version":"3.12.14"}],
+  "execution_artifacts":["verify_dimension_uniform.py","exact_unitaries.py","dimension_uniform_contract.json"],
+  "mathematics":{
+    "assertion_tested":"Finite adapted noncommuting martingale trace moments and maximal inequalities; protected-mark prefix law at first exit; exact endpoint normalization and scaled drift algebra for rational unitary feedback.",
+    "coefficient_domain":"Z, Q and Q(i), exact Fraction arithmetic.",
+    "conventions":"Unnormalized Schatten moments; even powers; predictably shrinking coordinate support; full first crossing retained; frozen scalar endpoint increments set to zero before port averaging.",
+    "inputs":["Sixteen adapted symmetric-matrix martingale paths, support 4,3,2,1, even powers 4..12.","Exact binomial induction comparisons p=4,6,..64.","All marked deletion prefixes N=3..7 and terminal depth 2..N, with nontrivial path-dependent first-exit predicates.","Walsh Hadamard U(16), all 16 deletion ports and four rational circle phases, row and diagonal/offdiagonal pair normalization."],
+    "bounds":{"matrix_martingale_paths":16,"moment_powers":[4,6,8,10,12],"prefix_N":[3,7],"feedback_N":16,"feedback_phases":4,"arithmetic":"exact; no numerical asymptotic inference"},
+    "non_claims":["No proof certificate of dimension-uniform asymptotics.","Prescribed phases are not Haar quadrature and do not reverify the prior one-step continuous phase integrals.","No fixed-u, eigenvector-intensity or BGS theorem."]
+  },
+  "randomness":{"used":false,"generator":"","seed":null}
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ALL-INDIVIDUAL-DEFECT-ONE-TWO-CLUSTERS-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "quartic_checks.py",
+    "quartic_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Verify full centrality and field independence of the four-port polynomials, exact character jets and L1 norms, direct mixed 7/8/6-port gluing, exact five-index limiting coefficients through h=48 versus certified exponential-quartic integrals, and the integer binomial bound used for the O(1/N) error",
+    "coefficient_domain": "Exact integers and fractions.Fraction; outward rational interval bounds, floats for display only",
+    "conventions": "Includes all neutral clusters and all positive connected clusters of individual defect 1 or 2 in arbitrary numbers; total defect is unbounded; correction is to V_m/m; closed clusters of individual defect 2 vanish exactly for m>8",
+    "inputs": [
+      "quartic_checks.py",
+      "kernel_run/result.json",
+      "two_port_v2_run/result.json",
+      "dependencies/three_port_reference.json"
+    ],
+    "bounds": {
+      "h_max": 48,
+      "tau": [
+        "1/20",
+        "2/25"
+      ],
+      "mixed_port_sizes": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "root_bisections": 64,
+      "exponential_taylor_order": 32,
+      "interval_cells": 1024,
+      "majorant_endpoint": "1/9",
+      "binomial_h_max": 30,
+      "binomial_m": "9..64"
+    },
+    "non_claims": [
+      "Numerical comparisons do not replace the exact gluing and uniform majorant proof",
+      "Individual defects >=3 are not known negligible",
+      "No full BGS or frozen-propagator transfer is claimed"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T13:03:48.261844+00:00",
+    "runtime_seconds": 10.866056,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 240.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 235,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quartic_checks.py",
+    "kernel_run/result.json",
+    "two_port_v2_run/result.json",
+    "dependencies/three_port_reference.json",
+    "quartic_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quartic_checks.py",
+      "sha256": "7d87efb22084b77e6b2db9cd9243e5516a0dbe9dfc7ed04527a6b169fefc976d",
+      "sha256_after": "7d87efb22084b77e6b2db9cd9243e5516a0dbe9dfc7ed04527a6b169fefc976d"
+    },
+    {
+      "path": "kernel_run/result.json",
+      "sha256": "7e1925668801c1459423c03a290fa408716cdc9dd3cdd893081da9e12f3fcdbf",
+      "sha256_after": "7e1925668801c1459423c03a290fa408716cdc9dd3cdd893081da9e12f3fcdbf"
+    },
+    {
+      "path": "two_port_v2_run/result.json",
+      "sha256": "96d7f4692032168f8b211c36aec39c9ed66abc07b9d55235e6f1ad0b2325fdce",
+      "sha256_after": "96d7f4692032168f8b211c36aec39c9ed66abc07b9d55235e6f1ad0b2325fdce"
+    },
+    {
+      "path": "dependencies/three_port_reference.json",
+      "sha256": "90caa326c1be2fde4d6191127267230173c6b0c98a8a0143f2eb6dfa70e4a9e5",
+      "sha256_after": "90caa326c1be2fde4d6191127267230173c6b0c98a8a0143f2eb6dfa70e4a9e5"
+    },
+    {
+      "path": "quartic_contract.json",
+      "sha256": "ecdfe7d57bee25a257f79dc9ce85b347ef50f48deab5415e9a356ceec2665478",
+      "sha256_after": "ecdfe7d57bee25a257f79dc9ce85b347ef50f48deab5415e9a356ceec2665478"
+    }
+  ],
+  "output_directory": "quartic_run",
+  "declared_results": [
+    "quartic_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "quartic_run/stdout.txt",
+      "sha256": "22743792b226cecfcdb905c18b62df45c24fc4a8e44b81bb4f5709d23c3d8473",
+      "kind": "log"
+    },
+    {
+      "path": "quartic_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "quartic_run/result.json",
+      "sha256": "7a67a0b6ad1a040029202a53e776b25a75ae4e83d812ad4b42aff336ec2103b0",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

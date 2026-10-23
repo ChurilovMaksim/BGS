@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-ACTUAL-SCATTERING-BASIS-20261018",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "scattering_basis_test.py",
+    "scattering_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Paired two-channel transmission moments under fixed port-basis rotations, actual iid circular phases and symplectic Fourier seeds",
+    "coefficient_domain": "Complex128 linear solves, float64 bounded empirical statistics",
+    "conventions": "F=S_AA+S_AE(I-Z S_EE)^(-1)Z S_EA; F'=W F W*, A first two coordinates; independent full-circle phases on E",
+    "inputs": [
+      "scattering_basis_test.py"
+    ],
+    "bounds": {
+      "actual": "N=9 (4000),25 (3000),81 (2400),625 (160),729 (160) samples",
+      "controls": "Excluded symmetric DFT N=81 (1200), Haar U(2) (4000)",
+      "tolerances": "Seed unitarity Frobenius <1e-9, scattering error <1e-7, linear residual <1e-10"
+    },
+    "non_claims": [
+      "Passing status refers to construction checks, not CUE convergence",
+      "No asymptotic counterexample from finite sample deviations",
+      "Symmetric DFT has B norm one and is excluded"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610181811
+  },
+  "run": {
+    "started_at": "2026-10-18T13:24:49.202616+00:00",
+    "runtime_seconds": 12.654241,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 18000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 140,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scattering_basis_test.py",
+    "scattering_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scattering_basis_test.py",
+      "sha256": "72f8ef200f993cc5dde84128f38f232b6953ffc28ff54a824768d9d5d2ddb015",
+      "sha256_after": "72f8ef200f993cc5dde84128f38f232b6953ffc28ff54a824768d9d5d2ddb015"
+    },
+    {
+      "path": "scattering_contract.json",
+      "sha256": "1c432bf61034d221c6738b31017a9b26b48b5a504d46feb24280b3d9647ea63f",
+      "sha256_after": "1c432bf61034d221c6738b31017a9b26b48b5a504d46feb24280b3d9647ea63f"
+    }
+  ],
+  "output_directory": "scattering_run",
+  "declared_results": [
+    "scattering_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "scattering_run/stdout.txt",
+      "sha256": "cd15e6c21108dbe1a8255e1244e135d449afa319c6692230a1d32007a3261ee5",
+      "kind": "log"
+    },
+    {
+      "path": "scattering_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "scattering_run/result.json",
+      "sha256": "89f26a5519f5310c0e287841c3d64378fba18adb63c9f841ff7940c75e08f370",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

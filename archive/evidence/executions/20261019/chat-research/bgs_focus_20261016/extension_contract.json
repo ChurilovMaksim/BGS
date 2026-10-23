@@ -1,0 +1,14 @@
+{
+  "claim_id": "WORKING-FULL-BLOCK-FEEDBACK-20261016",
+  "software": [{"name": "python-stdlib-only", "version": "3.12.14"}],
+  "execution_artifacts": ["feedback_extension_check.py", "feedback_covariance_check.py", "extension_contract.json"],
+  "mathematics": {
+    "assertion_tested": "Reversal feedback expansion, uncentered Green compression, ordered inverse identity, all three-label covariance Frobenius identities; leading directed-cycle matching factor in fixed-power trace moment law.",
+    "coefficient_domain": "Q(i) exact Fractions; integers for cycle enumeration.",
+    "conventions": "B_ij=S_ij conjugate(S_ji), M=(I-B)^(-1)-I without a Perron centering. Trace cycles are directed and rooted.",
+    "inputs": ["Prescribed rational unitaries of sizes 2..5 from feedback_covariance_check.py", "Three rational phases, all ports", "All integer partition pairs of K=1..6, all K! advanced labelings"],
+    "bounds": {"unitary_sizes": [2, 3, 4, 5], "phases": 3, "K": [1, 6], "inverse_domain": "only where exact inverses exist; exclusions are reported"},
+    "non_claims": ["No asymptotic theorem certification.", "No upstream trajectory-proof certification.", "No fixed-operator BGS or growing-power comparison."]
+  },
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

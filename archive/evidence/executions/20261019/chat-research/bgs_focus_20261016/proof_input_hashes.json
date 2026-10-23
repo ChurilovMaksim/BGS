@@ -1,0 +1,24 @@
+{
+  "upstream_internal_inputs": {
+    "mathematics/green_compression_gap_20261013.md": "fb134739b13587648ac8e820e170717343b589b4f085c6ceb74f599a39663748",
+    "mathematics/unconditional_feedback_flatness_20261013.md": "4fa287dad66d7d9006af7b6736086249cbe29a39df3bdafe802a19c9e86d0fd0",
+    "mathematics/schur_censoring_gap_20261011.md": "1e544af51d0707ccd820ca636fc035b838831ad9fa537da573e42f7366cec02f",
+    "mathematics/symplectic_half_radius_obstruction.md": "c32217ae5c912f955d528dfe23eb3a23b2d7fdf564fe3b097496b85224804ed9"
+  },
+  "working_artifacts": {
+    "deep_feedback_gaussian.md": "0e6fb9439878e0eb2e78c30e93c583ccec0aa67440a266fb3da5cd2ad6c18eac",
+    "self_review.md": "5dd266ed971f2e9a528e5620527410385b2bd5843b45c65d3392fb38d494f3f4",
+    "README.md": "6c68326ed5acfa7c5435ef2b0e0357e78b14ca80025db6f1fc599292050bb128",
+    "feedback_covariance_check.py": "a13a5a2dc9ab5af80ec3807832a8a533da7359b660d0a66e5ec5b193425109a1",
+    "feedback_extension_check.py": "8d6f6943059e99322653eed57709edb61dd6a78d40c1abfb78343036bb51ad6f",
+    "two_channel_probe.py": "029276cdce7e657f41bfe3a571cc17ee32f139e1ccb4154a1c5ef3466e52a4fe",
+    "feedback_contract.json": "1a5fb750d68966173c12880050d7d07dfbaada04580ece38c40a0b57f9ba5641",
+    "extension_contract.json": "32d0e4d74abd1888132f3b42a14d24fda4fda1669ac0f5f33c3b2216217bbc54",
+    "two_channel_contract.json": "2cf78ea2b26c7c7e42875b80501410156348535c875273bfd7934e9acf679800"
+  },
+  "external_input": {
+    "url": "https://tropp.caltech.edu/papers/Tro11-Freedmans-Inequality.pdf",
+    "locator": "Theorem 1.2 and Corollary 1.3, printed page 264; 2011"
+  },
+  "review": "author self-review only; named upstream analytic inputs not wholly re-audited"
+}

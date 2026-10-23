@@ -1,0 +1,115 @@
+{
+  "status": "passed_central_kernel_mixed_gluing_and_certified_quartic_checks",
+  "kernel_L1_constants": {
+    "C2": "121/12",
+    "C3": "53/9",
+    "C4": "1349/16"
+  },
+  "character_jets": {
+    "three_port": [
+      "-2",
+      "-3/2",
+      "-1/2"
+    ],
+    "four_port": [
+      "-6",
+      "-25/2",
+      "-19/2",
+      "-2"
+    ]
+  },
+  "majorant": {
+    "rho": "1/9",
+    "fixed_point_disk": "1/6",
+    "contraction": "4349/5184",
+    "bound": 11
+  },
+  "mixed_port_gluing": [
+    {
+      "ports": [
+        3,
+        4
+      ],
+      "cyclic_shuffles": 60,
+      "local_choices": 144,
+      "direct_value": "6051/2",
+      "character_integral_value": "6051/2"
+    },
+    {
+      "ports": [
+        4,
+        4
+      ],
+      "cyclic_shuffles": 140,
+      "local_choices": 576,
+      "direct_value": "253187/12",
+      "character_integral_value": "253187/12"
+    },
+    {
+      "ports": [
+        2,
+        4
+      ],
+      "cyclic_shuffles": 20,
+      "local_choices": 48,
+      "direct_value": "-6205/12",
+      "character_integral_value": "-6205/12"
+    }
+  ],
+  "coefficients_through_h12": {
+    "1": "0",
+    "2": "0",
+    "3": "-3",
+    "4": "20893/864",
+    "5": "-164887/2160",
+    "6": "6604391/51840",
+    "7": "-59792669/181440",
+    "8": "41236565771/17418240",
+    "9": "-12073327177/1088640",
+    "10": "48278419809737/1567641600",
+    "11": "-325827483152107/4311014400",
+    "12": "286820067877368691/827714764800"
+  },
+  "certified_limits": [
+    {
+      "tau": "1/20",
+      "order_cutoff": 48,
+      "series_exact": "-37011297144827324697142984248665574963474464834783249564506938577252884612638498547632419749595462504339554285543238691315628989057/150505782864930476030857953993354397538793370358504660134837797775837998612480000000000000000000000000000000000000000000000000000000000",
+      "series_display": -0.0002459127911253925,
+      "tail_bound_exact": "629905858672458293489008047491314888858131415779/5629499534213120000000000000000000000000000000000000000000000000",
+      "tail_bound_display": 1.118937580231109e-16,
+      "certified_integral_interval_exact": [
+        "-4667241818736785/18446744073709551616",
+        "-8810694325126503/36893488147419103232"
+      ],
+      "certified_integral_interval_display": [
+        -0.00025301168596948096,
+        -0.0002388143482101965
+      ]
+    },
+    {
+      "tau": "2/25",
+      "order_cutoff": 48,
+      "series_exact": "-422649506081542702209797775921064908723682365362363164550862111924595364572646118804796550928916625854286544643410184404071/551469954099789355353811014969353550946925361956825023146709424323730353023620409658178687095642089843750000000000000000000000",
+      "series_display": -0.0007664053189832779,
+      "tail_bound_exact": "354605473799471935843108034898298443095546162635208571431682048/315544362088404722164691426113114491869282574043609201908111572265625",
+      "tail_bound_display": 1.1237896042652906e-06,
+      "certified_integral_interval_exact": [
+        "-57887307518958997/73786976294838206464",
+        "-55214229454843293/73786976294838206464"
+      ],
+      "certified_integral_interval_display": [
+        -0.0007845193071423978,
+        -0.0007482923440881779
+      ]
+    }
+  ],
+  "integer_coefficient_bound_checks": 107184,
+  "certification": {
+    "root_bisections": 64,
+    "exponential_order": 32,
+    "interval_cells": 1024,
+    "rounding": "outward to 2^-56"
+  },
+  "scope": "All neutral clusters and all open positive clusters of individual defect one or two, in arbitrary numbers; for m>8 closed residual clusters are absent. Higher individual defects, full mixed hierarchy and frozen transfer remain open."
+}

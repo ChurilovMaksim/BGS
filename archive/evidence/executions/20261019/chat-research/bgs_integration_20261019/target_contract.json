@@ -1,0 +1,31 @@
+{
+  "base_main": "5c1d1553d1ef59a3f62cc46e4f70b7b08640af32",
+  "base_tree": "d09e93300da2a191a749862a6cd84d684da353b6",
+  "base_checkpoint_sha256": "48e50fd70b1f5ea39021dee323ca2513fe28189da8b5be83fcfad6a8267531b9",
+  "goal": "Full BGS, without changing the frozen family or replacing mixed correlations by same-sign marginals",
+  "authorized_repository_policy": "User explicitly authorized integration of all missing results of this chat and verification on main, 2026-10-19",
+  "routes": [
+    {
+      "id": "audit_low_defect",
+      "target": "Reconstruct support completeness, exact weights, gluing and uniform five-index limit",
+      "outcome": "Current author proofs reviewed; no global higher-defect cancellation supplied"
+    },
+    {
+      "id": "cauchy_positive_sources",
+      "target": "Determine whether exact Cauchy disorder averaging controls arbitrary positive projected real resolvents and whether these determine a matrix law",
+      "discriminator": "Prove bounded holomorphic substitution and test an actual 2x2 involution against a diagonal Cauchy surrogate",
+      "success": "Exact law plus explicit validity or counterexample to the proposed closure"
+    },
+    {
+      "id": "source3",
+      "target": "Connected (j,delta,e)=(3,3,3)",
+      "disposition": "open",
+      "obstruction": "Finite support bound alone does not supply an exhaustive tractable generator; no value assigned by CUE fitting"
+    }
+  ],
+  "non_claims": [
+    "No solved BGS or priority guarantee",
+    "Historical records not rewritten",
+    "No independent referee certification"
+  ]
+}

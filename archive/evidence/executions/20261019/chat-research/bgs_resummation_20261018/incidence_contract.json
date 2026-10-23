@@ -1,0 +1,14 @@
+{
+  "claim_id":"BGS-INCIDENCE-SATURATION-CHECK-20261018",
+  "mathematics":{
+    "assertion_tested":"Incidence factorization, rank lower bound, common active edge bound and complete equality classification for all cycle differences of sizes 3 through 10 over F_3,F_5,F_13",
+    "coefficient_domain":"Exact integers for input matrices and factorization; exact prime-field row reduction",
+    "conventions":"K=A_sigma-A_tau, K1=0; graph contains nonzero off-diagonal entries; remove passive vertices before counting common active edges",
+    "inputs":["incidence_check.cpp","pivot_search.cpp","run_incidence_check.py"],
+    "bounds":{"all_cycles":409112,"fields":[3,5,13],"checks":"Saturated graphs must be disjoint K_2,2 or K_2,4; K_2,4 centre conjugation removes precisely that component; rank-lowering pairs must number 2 and 1 respectively"},
+    "non_claims":["Finite execution is a check on the separate general proof, not its replacement","No full form factor bound follows"]
+  },
+  "execution_artifacts":["incidence_check.cpp","pivot_search.cpp","run_incidence_check.py","incidence_contract.json"],
+  "software":[{"name":"Python","version":"3.12.14"},{"name":"C++","version":"g++ recorded by wrapper"}],
+  "randomness":{"used":false}
+}

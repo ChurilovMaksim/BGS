@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-10-19T05:33:25.622862+00:00",
+  "base_checkpoint": {
+    "archive": "BGS_signed_cancellations_20261018.zip",
+    "sha256": "d5b0c6235688704e7be9d9de96dbb8cffc52f69f4eeb17496c8a97d2897415bc"
+  },
+  "full_goal": "BGS universality for the original fixed chaotic family, and all stated correlation obligations without changing their hypotheses",
+  "full_goal_status": "open",
+  "new_results": [
+    {
+      "id": "BGS-INCIDENCE-20261018",
+      "status": "author_proof_self_review",
+      "claim": "Every minimal core has e<=2h over every odd prime field"
+    },
+    {
+      "id": "BGS-FIXED-DEFECT-PRIMITIVES-20261019",
+      "status": "author_proof_self_review",
+      "claim": "After exact neutral cancellations/peeling, primitive order <=2 delta and size <=16 delta; exact reconstruction for each fixed delta"
+    },
+    {
+      "id": "BGS-TWO-SECTOR-HEISENBERG-20261019",
+      "status": "author_proof_with_finite_integer_certificate_self_review",
+      "claim": "The delta=0,1 sectors are exactly resummed and have the stated limits uniformly on compact subintervals 0<tau<1"
+    },
+    {
+      "id": "BGS-FULL-STABLE-COEFFICIENT-DEGREE-20261019",
+      "status": "author_corollary",
+      "claim": "For h>=2, m>8h, the full stable b_h polynomial has degree <=2h-2; it is not proved to vanish for h>=3"
+    }
+  ],
+  "proof_revisions": {
+    "incidence_resummation_ru.md": "04bfe445a41b1fce6bcbee491eb703bd7965442d3a8f22d1589a6a48a9c29b8e",
+    "neutral_peeling_ru.md": "9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12",
+    "first_defect_resummation_ru.md": "84515e66abd5f1a564a3758025cab591c9adc1da8319f84b4766bc75670e53e1",
+    "companion_resummation_ru.md": "8af157d5dffd1cd9c4aacb1a6f6f682974191f508710747e4f3a9dc9c40e5ef1",
+    "self_review_ru.md": "7c1558133e1895930044af791f8dfe521c8429cc89d225320e4a951838a48bdc"
+  },
+  "remaining": [
+    "Establish primitive cancellation identities at z=1 or another mechanism controlling all powers at m~N",
+    "Control the sum over unbounded defect, not merely each fixed defect",
+    "Prove full trace correlation laws, then the transfer/noise-removal obligations for the unchanged deterministic family"
+  ],
+  "route_correction": "A fixed external-pair rotation probe cannot refute the target with a uniform random pair; other pairs have not been tested by that conjugation identity",
+  "repository": {
+    "policy": "read_only",
+    "files": 716,
+    "unchanged": true,
+    "commits": false,
+    "pushes": false,
+    "integration": false
+  },
+  "review": {
+    "independent": false,
+    "lean_compilation": false,
+    "world_priority_established": false
+  },
+  "evidence_counts": {
+    "valid_manifests": 11,
+    "completed": 10,
+    "retained_failed": 1
+  }
+}

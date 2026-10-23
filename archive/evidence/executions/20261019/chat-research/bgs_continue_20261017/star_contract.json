@@ -1,0 +1,44 @@
+{
+  "claim_id": "BGS-CONTINUE-20261017-STAR",
+  "mathematics": {
+    "assertion_tested": "Exhaustive rooted-word Gaussian normalization and exact star-table counts; bounded radial moments and exact positive-exponent signs",
+    "coefficient_domain": "Exact integers and rational numbers; SymPy for current; descriptive floating logs in star only",
+    "conventions": "Rooted directed cyclic words including loops; D counts distinct edges of multiplicity at least 2; D_phi=-i partial_phi",
+    "inputs": [
+      "verify_star_sector.py"
+    ],
+    "bounds": {
+      "N_m": "N=2,3,4; m=1..8; N=3,m=12",
+      "stars": "(N,k,s)=(3,2,2),(4,2,2),(3,2,3)",
+      "radial": "R in {0,32} and {254/255,256}",
+      "rate_illustration_N": [
+        12,
+        24,
+        60,
+        120,
+        300,
+        600
+      ]
+    },
+    "non_claims": [
+      "Finite computations do not prove an asymptotic theorem",
+      "No proof of BGS or Haar two-port limit",
+      "No compiled formalization"
+    ]
+  },
+  "execution_artifacts": [
+    "verify_star_sector.py",
+    "star_contract.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.12.14"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

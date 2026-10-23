@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-COMPANION-FINITE-HEISENBERG-20261019",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "companion_heisenberg.py",
+    "companion_heisenberg_run/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python standard library",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite sums for the two sectors at m/N near 1/2 and 9/10, beyond the old absolute-series radius; compare with separately proved limiting formulas",
+    "coefficient_domain": "Integer polynomials and fractions.Fraction; floating display and elementary limit comparison only",
+    "conventions": "N in {49,169,625}, m=floor(N*tau), tau in {1/2,9/10}; these are two exact diagram sectors, not samples of the full form factor",
+    "inputs": [
+      "companion_heisenberg.py",
+      "companion_certificate.py",
+      "first_defect_verification.py"
+    ],
+    "bounds": {
+      "N": [
+        49,
+        169,
+        625
+      ],
+      "ratios": [
+        "1/2",
+        "9/10"
+      ],
+      "m_max": 562
+    },
+    "non_claims": [
+      "Finite convergence comparison is not an asymptotic proof",
+      "No truncation of a divergent infinite h series is used",
+      "The sum over other defects is not computed"
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-19T05:26:58.039774+00:00",
+    "runtime_seconds": 1.229169,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 160.0,
+    "max_output_bytes": 20000,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 150,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "companion_heisenberg.py",
+    "companion_certificate.py",
+    "first_defect_verification.py",
+    "companion_heisenberg_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "companion_heisenberg.py",
+      "sha256": "01b7293b002823a91f1f758d2c8c388a83eaca47a48c0eec468ceda26ed032fc",
+      "sha256_after": "01b7293b002823a91f1f758d2c8c388a83eaca47a48c0eec468ceda26ed032fc"
+    },
+    {
+      "path": "companion_certificate.py",
+      "sha256": "7f8ebea1b007247b20d02e81dbed5fafd20c4b7b60d1a70d63c5058feb644ec4",
+      "sha256_after": "7f8ebea1b007247b20d02e81dbed5fafd20c4b7b60d1a70d63c5058feb644ec4"
+    },
+    {
+      "path": "first_defect_verification.py",
+      "sha256": "9d31f6e441b6a9d40129650694fa459b0d421cb1808f1d3d67312bd1c9bec1d5",
+      "sha256_after": "9d31f6e441b6a9d40129650694fa459b0d421cb1808f1d3d67312bd1c9bec1d5"
+    },
+    {
+      "path": "companion_heisenberg_contract.json",
+      "sha256": "96d5c6c4923d135a9fae374a67a013ccf7069bdb42cf845c6147ffc69350d0ca",
+      "sha256_after": "96d5c6c4923d135a9fae374a67a013ccf7069bdb42cf845c6147ffc69350d0ca"
+    }
+  ],
+  "output_directory": "companion_heisenberg_run",
+  "declared_results": [
+    "companion_heisenberg_run/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "companion_heisenberg_run/stdout.txt",
+      "sha256": "ed972b8333d3ff93f822aaada4b43f858f0302d4cd699d75f91821334805f401",
+      "kind": "log"
+    },
+    {
+      "path": "companion_heisenberg_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "companion_heisenberg_run/result.json",
+      "sha256": "40b8c9169847daa9b3a6fe29bfb07f1c65c3117924847cdf317211c88b15a739",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
