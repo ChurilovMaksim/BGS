@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "claim_id": "mub_clock_check_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "mub_clock_check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "Complete MUB fourth frame identity, flat-clock covariance formula, rotated-design mixture, and direct graph-reflection Schur realization.",
+    "coefficient_domain": "complex128",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "mub_clock_check.py",
+        "sha256": "fcaeab0d816a70a525d352e563c7cbf913333ba7454b0b3dd65c55bc5a05d3f5"
+      },
+      {
+        "path": "frame_probe.py",
+        "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+      }
+    ],
+    "bounds": {
+      "m": [
+        3,
+        5,
+        7
+      ],
+      "r": "2m",
+      "a": 0.4,
+      "absolute_residual_threshold": 2e-08
+    },
+    "non_claims": [
+      "Pointwise static obstruction, not phase-ensemble or BGS counterexample.",
+      "Graph reflection does not supply classical mixing hypotheses.",
+      "Floating computation is not a formal proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-09T08:57:08.684416+00:00",
+    "runtime_seconds": 0.8735459569998056,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "mub_clock_check_results.json",
+      "sha256": "8f5cbb33ffd19d29671599d051f04132f2f9ec3e298c6cd2f88c4ccb44c6be8c"
+    },
+    {
+      "path": "mub_clock_check_execution.log",
+      "sha256": "8f5cbb33ffd19d29671599d051f04132f2f9ec3e298c6cd2f88c4ccb44c6be8c"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs.",
+    "Floating tolerance and finite random sampling."
+  ]
+}

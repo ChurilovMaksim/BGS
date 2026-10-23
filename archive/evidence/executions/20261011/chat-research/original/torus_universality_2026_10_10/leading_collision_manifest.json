@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "claim_id": "leading_collision_finite_controls",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "leading_collision_check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "x86_64",
+    "outer_wall_timeout_seconds": 45
+  },
+  "mathematics": {
+    "assertion_tested": "Leading 1/N coefficient from rank-two cycles and rank-zero pair restrictions, matching full partition calculations where available.",
+    "coefficient_domain": "Rational Eisenstein coordinates and exact F_3 ranks",
+    "conventions": "Coefficients in M_n, not M_n/n; cyclic-origin multiplicity n/2; oriented representations n.",
+    "inputs": [
+      {
+        "path": "leading_collision_check.py",
+        "sha256": "2ef3c1ff97098a2fdcbad1b26671f56e3e04697ae04a1ee55debd18abc454290"
+      },
+      {
+        "path": "occupation_lift_check.py",
+        "sha256": "3762a8b6f782adf70b5507e4e5edd53f8661e0509e15266e3ac5b16d8fdbf71f"
+      },
+      {
+        "path": "partition_form_factor.py",
+        "sha256": "74b9a0eddef257d4bd4a5358001eda8a2a1e5fe3a492062797672dffcf1e842c"
+      }
+    ],
+    "bounds": {
+      "n": [
+        3,
+        20
+      ],
+      "cases": 36,
+      "p": 3
+    },
+    "non_claims": [
+      "No uniform high-time bound or proof of the reported nonsymmetric pattern."
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-10T05:23:59.135794+00:00",
+    "runtime_seconds": 1.3043046820002928,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "leading_collision_results.json",
+      "sha256": "c9d7b842042247930fa521a682d7cdeaba45298806bc51484cb89e1b8d22aea0"
+    }
+  ],
+  "checks": [
+    "input hashes unchanged",
+    "all imaginary coefficients vanish",
+    "all full-polynomial comparisons match",
+    "symmetric coefficients match proved formula"
+  ],
+  "result": "All finite checks passed; nonsymmetric pattern reported as an observation.",
+  "residual_risks": [
+    "Relies on rank-two classification outside the finite verification.",
+    "No uniform high-time bound.",
+    "External wall cap only."
+  ]
+}

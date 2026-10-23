@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "claim_id": "partition_wolfram_exact_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": "Wolfram.wolframlanguageevaluator: partition_coefficients.wl",
+  "environment": {
+    "software": [
+      {
+        "name": "Wolfram Language",
+        "version": "15.0.1 for Linux x86 (64-bit) (July 2, 2026)"
+      }
+    ],
+    "hardware": "Remote Wolfram kernel; hardware details not exposed",
+    "submitted_code_file": "partition_coefficients.wl",
+    "recorded_time_constraint_seconds": 30
+  },
+  "mathematics": {
+    "assertion_tested": "First eight rational block coefficients and Bell exponential-formula normalization",
+    "coefficient_domain": "Exact Wolfram symbolic/rational arithmetic",
+    "conventions": "No numerical sampling; full submitted code saved unchanged.",
+    "inputs": [
+      {
+        "path": "partition_coefficients.wl",
+        "sha256": "bb1f5cd2c2de5e5a994575a1cf12318bdb1a97f8a1a1499f3d8df16edfaaf86d"
+      }
+    ],
+    "bounds": {
+      "finite_controls": true
+    },
+    "non_claims": [
+      "Not a proof of general asymptotic statements or BGS."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-10T05:08:36.647Z",
+    "runtime_seconds": 6.081,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "partition_wolfram_results.json",
+      "sha256": "be0479883d0929a9fa5756da518c8a0e6f403bdb27cf2fe0b8924c0544cfa037"
+    }
+  ],
+  "checks": [
+    "all exact Boolean flags true",
+    "saved source matches submitted code",
+    "raw kernel result retained"
+  ],
+  "result": "All finite exact checks passed.",
+  "residual_risks": [
+    "Remote evaluator, not a local CPU/memory certificate.",
+    "The separate context lookup for partition coefficients returned an internal error; evaluation itself succeeded."
+  ]
+}

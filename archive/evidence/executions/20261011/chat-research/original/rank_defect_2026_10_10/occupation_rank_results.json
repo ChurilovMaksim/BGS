@@ -1,0 +1,237 @@
+{
+  "all_passed": true,
+  "exact_cases": [
+    {
+      "N": 2,
+      "n": 3,
+      "words": 8,
+      "stabilizer_permutations_checked": 24,
+      "mean_active_fraction": "0",
+      "mean_fixed_triple_fraction": "5/12",
+      "mean_fixed_fraction": "7/12",
+      "inactive_without_fixed_triple_fraction": "7/12"
+    },
+    {
+      "N": 2,
+      "n": 4,
+      "words": 16,
+      "stabilizer_permutations_checked": 120,
+      "mean_active_fraction": "13/24",
+      "mean_fixed_triple_fraction": "35/192",
+      "mean_fixed_fraction": "15/32",
+      "inactive_without_fixed_triple_fraction": "53/192"
+    },
+    {
+      "N": 2,
+      "n": 5,
+      "words": 32,
+      "stabilizer_permutations_checked": 720,
+      "mean_active_fraction": "37/48",
+      "mean_fixed_triple_fraction": "91/960",
+      "mean_fixed_fraction": "31/80",
+      "inactive_without_fixed_triple_fraction": "43/320"
+    },
+    {
+      "N": 2,
+      "n": 6,
+      "words": 64,
+      "stabilizer_permutations_checked": 5040,
+      "mean_active_fraction": "2467/2880",
+      "mean_fixed_triple_fraction": "7/128",
+      "mean_fixed_fraction": "21/64",
+      "inactive_without_fixed_triple_fraction": "511/5760"
+    },
+    {
+      "N": 3,
+      "n": 3,
+      "words": 27,
+      "stabilizer_permutations_checked": 60,
+      "mean_active_fraction": "0",
+      "mean_fixed_triple_fraction": "31/54",
+      "mean_fixed_fraction": "19/27",
+      "inactive_without_fixed_triple_fraction": "23/54"
+    },
+    {
+      "N": 3,
+      "n": 4,
+      "words": 81,
+      "stabilizer_permutations_checked": 360,
+      "mean_active_fraction": "4/9",
+      "mean_fixed_triple_fraction": "71/216",
+      "mean_fixed_fraction": "65/108",
+      "inactive_without_fixed_triple_fraction": "49/216"
+    },
+    {
+      "N": 3,
+      "n": 5,
+      "words": 243,
+      "stabilizer_permutations_checked": 2520,
+      "mean_active_fraction": "37/54",
+      "mean_fixed_triple_fraction": "109/540",
+      "mean_fixed_fraction": "211/405",
+      "inactive_without_fixed_triple_fraction": "61/540"
+    },
+    {
+      "N": 3,
+      "n": 6,
+      "words": 729,
+      "stabilizer_permutations_checked": 20160,
+      "mean_active_fraction": "8614/10935",
+      "mean_fixed_triple_fraction": "3809/29160",
+      "mean_fixed_fraction": "665/1458",
+      "inactive_without_fixed_triple_fraction": "7141/87480"
+    },
+    {
+      "N": 4,
+      "n": 3,
+      "words": 64,
+      "stabilizer_permutations_checked": 120,
+      "mean_active_fraction": "0",
+      "mean_fixed_triple_fraction": "2/3",
+      "mean_fixed_fraction": "37/48",
+      "inactive_without_fixed_triple_fraction": "1/3"
+    },
+    {
+      "N": 4,
+      "n": 4,
+      "words": 256,
+      "stabilizer_permutations_checked": 840,
+      "mean_active_fraction": "71/192",
+      "mean_fixed_triple_fraction": "679/1536",
+      "mean_fixed_fraction": "175/256",
+      "inactive_without_fixed_triple_fraction": "289/1536"
+    },
+    {
+      "N": 4,
+      "n": 5,
+      "words": 1024,
+      "stabilizer_permutations_checked": 6720,
+      "mean_active_fraction": "463/768",
+      "mean_fixed_triple_fraction": "4651/15360",
+      "mean_fixed_fraction": "781/1280",
+      "inactive_without_fixed_triple_fraction": "483/5120"
+    },
+    {
+      "N": 4,
+      "n": 6,
+      "words": 4096,
+      "stabilizer_permutations_checked": 60480,
+      "mean_active_fraction": "2741/3840",
+      "mean_fixed_triple_fraction": "13109/61440",
+      "mean_fixed_fraction": "3367/6144",
+      "inactive_without_fixed_triple_fraction": "895/12288"
+    }
+  ],
+  "seed": 20261010,
+  "large_N_illustrations": [
+    {
+      "N": 256,
+      "n": 128,
+      "tau": 0.5,
+      "samples": 40,
+      "mean_active_fraction": 0.503515625,
+      "sample_standard_deviation": 0.09796146215174134,
+      "proved_limit_active_fraction": 0.5126705261760252,
+      "mean_inactive_without_fixed_triple": 0.0005859375,
+      "analytic_upper_bound_exception_mean": 0.0351715087890625,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 1024,
+      "n": 512,
+      "tau": 0.5,
+      "samples": 40,
+      "mean_active_fraction": 0.495166015625,
+      "sample_standard_deviation": 0.043921072597133626,
+      "proved_limit_active_fraction": 0.5126705261760252,
+      "mean_inactive_without_fixed_triple": 0.0001953125,
+      "analytic_upper_bound_exception_mean": 0.008790016174316406,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 4096,
+      "n": 2048,
+      "tau": 0.5,
+      "samples": 40,
+      "mean_active_fraction": 0.508935546875,
+      "sample_standard_deviation": 0.02115900825880774,
+      "proved_limit_active_fraction": 0.5126705261760252,
+      "mean_inactive_without_fixed_triple": 8.544921875e-05,
+      "analytic_upper_bound_exception_mean": 0.0021973252296447754,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 256,
+      "n": 256,
+      "tau": 1.0,
+      "samples": 40,
+      "mean_active_fraction": 0.74951171875,
+      "sample_standard_deviation": 0.05488879149211927,
+      "proved_limit_active_fraction": 0.7474195421723528,
+      "mean_inactive_without_fixed_triple": 0.00048828125,
+      "analytic_upper_bound_exception_mean": 0.035186767578125,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 1024,
+      "n": 1024,
+      "tau": 1.0,
+      "samples": 40,
+      "mean_active_fraction": 0.755517578125,
+      "sample_standard_deviation": 0.025464242005451675,
+      "proved_limit_active_fraction": 0.7474195421723528,
+      "mean_inactive_without_fixed_triple": 0.0001708984375,
+      "analytic_upper_bound_exception_mean": 0.008790969848632812,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 4096,
+      "n": 4096,
+      "tau": 1.0,
+      "samples": 40,
+      "mean_active_fraction": 0.748101806640625,
+      "sample_standard_deviation": 0.013184229879799902,
+      "proved_limit_active_fraction": 0.7474195421723528,
+      "mean_inactive_without_fixed_triple": 4.2724609375e-05,
+      "analytic_upper_bound_exception_mean": 0.0021973848342895508,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 256,
+      "n": 512,
+      "tau": 2.0,
+      "samples": 40,
+      "mean_active_fraction": 0.920556640625,
+      "sample_standard_deviation": 0.018430455075026938,
+      "proved_limit_active_fraction": 0.9191922106525378,
+      "mean_inactive_without_fixed_triple": 0.0001953125,
+      "analytic_upper_bound_exception_mean": 0.03521728515625,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 1024,
+      "n": 2048,
+      "tau": 2.0,
+      "samples": 40,
+      "mean_active_fraction": 0.920849609375,
+      "sample_standard_deviation": 0.008728199164176952,
+      "proved_limit_active_fraction": 0.9191922106525378,
+      "mean_inactive_without_fixed_triple": 4.8828125e-05,
+      "analytic_upper_bound_exception_mean": 0.008792877197265625,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    },
+    {
+      "N": 4096,
+      "n": 8192,
+      "tau": 2.0,
+      "samples": 40,
+      "mean_active_fraction": 0.919415283203125,
+      "sample_standard_deviation": 0.005191351029440795,
+      "proved_limit_active_fraction": 0.9191922106525378,
+      "mean_inactive_without_fixed_triple": 1.8310546875e-05,
+      "analytic_upper_bound_exception_mean": 0.0021975040435791016,
+      "status": "Seeded illustration only; not an error certificate or proof."
+    }
+  ],
+  "scope": "Finite identities checked exactly. The limit and diagonal-rank conclusion rely on the proof in occupation_rank_law.md."
+}

@@ -1,0 +1,964 @@
+{
+  "scope": "Exact finite coefficients; d divisible by 4; no extrapolation in n",
+  "cases": [
+    {
+      "n": 3,
+      "p": 3,
+      "cycles": 1,
+      "collision_restrictions": 4,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        72,
+        0,
+        -108,
+        0,
+        48
+      ],
+      "by_h_numerators": [
+        [
+          72,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -108,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          48
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "p": 5,
+      "cycles": 1,
+      "collision_restrictions": 4,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        72,
+        0,
+        -108,
+        0,
+        48
+      ],
+      "by_h_numerators": [
+        [
+          72,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -108,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          48
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "p": 7,
+      "cycles": 1,
+      "collision_restrictions": 4,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        72,
+        0,
+        -108,
+        0,
+        48
+      ],
+      "by_h_numerators": [
+        [
+          72,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -108,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          48
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "p": 3,
+      "cycles": 3,
+      "collision_restrictions": 39,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        96,
+        0,
+        -288,
+        0,
+        504
+      ],
+      "by_h_numerators": [
+        [
+          96,
+          0,
+          192,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -480,
+          0,
+          -384
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          888
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "p": 5,
+      "cycles": 3,
+      "collision_restrictions": 39,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        96,
+        0,
+        -288,
+        0,
+        504
+      ],
+      "by_h_numerators": [
+        [
+          96,
+          0,
+          192,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -480,
+          0,
+          -384
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          888
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "p": 7,
+      "cycles": 3,
+      "collision_restrictions": 39,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        96,
+        0,
+        -288,
+        0,
+        504
+      ],
+      "by_h_numerators": [
+        [
+          96,
+          0,
+          192,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -480,
+          0,
+          -384
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          888
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "p": 3,
+      "cycles": 12,
+      "collision_restrictions": 420,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        120,
+        0,
+        -600,
+        0,
+        2220
+      ],
+      "by_h_numerators": [
+        [
+          120,
+          0,
+          600,
+          0,
+          720
+        ],
+        [
+          0,
+          0,
+          -1200,
+          0,
+          -4800
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6300
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "p": 5,
+      "cycles": 12,
+      "collision_restrictions": 420,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        120,
+        0,
+        -600,
+        120,
+        2100
+      ],
+      "by_h_numerators": [
+        [
+          120,
+          0,
+          600,
+          120,
+          600
+        ],
+        [
+          0,
+          0,
+          -1200,
+          0,
+          -4800
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6300
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "p": 7,
+      "cycles": 12,
+      "collision_restrictions": 420,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        120,
+        0,
+        -600,
+        0,
+        2220
+      ],
+      "by_h_numerators": [
+        [
+          120,
+          0,
+          600,
+          0,
+          720
+        ],
+        [
+          0,
+          0,
+          -1200,
+          0,
+          -4800
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6300
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "p": 3,
+      "cycles": 60,
+      "collision_restrictions": 3840,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        144,
+        0,
+        -864,
+        0,
+        4680
+      ],
+      "by_h_numerators": [
+        [
+          144,
+          0,
+          1728,
+          0,
+          5040
+        ],
+        [
+          0,
+          0,
+          -2592,
+          0,
+          -27648
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          27288
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          4,
+          35
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "p": 5,
+      "cycles": 60,
+      "collision_restrictions": 3840,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        144,
+        0,
+        -864,
+        0,
+        4680
+      ],
+      "by_h_numerators": [
+        [
+          144,
+          0,
+          1728,
+          0,
+          5040
+        ],
+        [
+          0,
+          0,
+          -2592,
+          0,
+          -27648
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          27288
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          4,
+          35
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "p": 7,
+      "cycles": 60,
+      "collision_restrictions": 3840,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        144,
+        0,
+        -864,
+        0,
+        4680
+      ],
+      "by_h_numerators": [
+        [
+          144,
+          0,
+          1728,
+          0,
+          5040
+        ],
+        [
+          0,
+          0,
+          -2592,
+          0,
+          -27648
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          27288
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          4,
+          35
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "p": 3,
+      "cycles": 360,
+      "collision_restrictions": 28336,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        168,
+        0,
+        -1176,
+        0,
+        8232
+      ],
+      "by_h_numerators": [
+        [
+          168,
+          0,
+          3528,
+          0,
+          25872
+        ],
+        [
+          0,
+          0,
+          -4704,
+          0,
+          -102312
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          84672
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          4,
+          154
+        ],
+        [
+          5,
+          42
+        ],
+        [
+          6,
+          142
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "p": 5,
+      "cycles": 360,
+      "collision_restrictions": 28336,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        168,
+        0,
+        -1176,
+        0,
+        8232
+      ],
+      "by_h_numerators": [
+        [
+          168,
+          0,
+          3528,
+          0,
+          25872
+        ],
+        [
+          0,
+          0,
+          -4704,
+          0,
+          -102312
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          84672
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          4,
+          154
+        ],
+        [
+          5,
+          42
+        ],
+        [
+          6,
+          142
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "p": 7,
+      "cycles": 360,
+      "collision_restrictions": 28336,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        168,
+        0,
+        -1176,
+        0,
+        8232
+      ],
+      "by_h_numerators": [
+        [
+          168,
+          0,
+          3528,
+          0,
+          25872
+        ],
+        [
+          0,
+          0,
+          -4704,
+          0,
+          -102312
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          84672
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          4,
+          154
+        ],
+        [
+          5,
+          44
+        ],
+        [
+          6,
+          140
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "p": 3,
+      "cycles": 2520,
+      "collision_restrictions": 131712,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        192,
+        0,
+        -1536,
+        0,
+        12096
+      ],
+      "by_h_numerators": [
+        [
+          192,
+          0,
+          6144,
+          0,
+          79680
+        ],
+        [
+          0,
+          0,
+          -7680,
+          0,
+          -274944
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          207360
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          4,
+          415
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          6,
+          1464
+        ],
+        [
+          7,
+          528
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "p": 5,
+      "cycles": 2520,
+      "collision_restrictions": 131712,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        192,
+        0,
+        -1536,
+        0,
+        12096
+      ],
+      "by_h_numerators": [
+        [
+          192,
+          0,
+          6144,
+          0,
+          79680
+        ],
+        [
+          0,
+          0,
+          -7680,
+          0,
+          -274944
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          207360
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          4,
+          415
+        ],
+        [
+          5,
+          96
+        ],
+        [
+          6,
+          1416
+        ],
+        [
+          7,
+          560
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "p": 7,
+      "cycles": 2520,
+      "collision_restrictions": 131712,
+      "coefficient_denominator": 12,
+      "coefficient_numerators": [
+        192,
+        0,
+        -1536,
+        0,
+        12096
+      ],
+      "by_h_numerators": [
+        [
+          192,
+          0,
+          6144,
+          0,
+          79680
+        ],
+        [
+          0,
+          0,
+          -7680,
+          0,
+          -274944
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          207360
+        ]
+      ],
+      "rank_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          4,
+          415
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          6,
+          1432
+        ],
+        [
+          7,
+          560
+        ]
+      ]
+    }
+  ],
+  "all_passed": false
+}

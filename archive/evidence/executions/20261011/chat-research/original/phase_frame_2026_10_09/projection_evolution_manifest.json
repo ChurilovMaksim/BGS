@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "claim_id": "projection_evolution_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "projection_evolution.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "12 nested paths: exact rank-one projection deletion compared to direct QR/Gram projection and direct Schur complements at selected depths.",
+    "coefficient_domain": "complex128",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "projection_evolution.py",
+        "sha256": "8e782d2a7a6a520c3f4f9fdc1f46cb1985d069dcdc3c5b9a0e5e02b8595ddd33"
+      },
+      {
+        "path": "frame_probe.py",
+        "sha256": "f87d3189b053782e69c8915b9d30cca980f61f573222c12f197df1d06ba44391"
+      }
+    ],
+    "bounds": {
+      "N": 101,
+      "paths": 12,
+      "u_min": 3,
+      "check_depths": [
+        101,
+        50,
+        24,
+        12,
+        6,
+        3
+      ],
+      "absolute_residual_threshold": 5e-08
+    },
+    "non_claims": [
+      "No uniform stochastic contraction estimate.",
+      "No inverse-clock limiting theorem.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610091
+  },
+  "run": {
+    "started_at": "2026-10-09T08:17:37.161612+00:00",
+    "runtime_seconds": 0.7119074199999886,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "projection_evolution_results.json",
+      "sha256": "5736fd48b5c8cc712b012f518d348ef8f934c17510ea82465fb13d3ae90245b1"
+    },
+    {
+      "path": "projection_evolution_execution.log",
+      "sha256": "5d8db6eb72e0269ad65bcb0b3b1c79ab9efebdb694383672a71b2685cf955168"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs.",
+    "Floating tolerance and finite random sampling."
+  ]
+}

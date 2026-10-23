@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "claim_id": "exact_partition_form_factor_controls",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "partition_form_factor.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "x86_64",
+    "outer_wall_timeout_seconds": 45
+  },
+  "mathematics": {
+    "assertion_tested": "Exact partition-weight collision resummation; rational polynomials for finite-field Fourier scattering; comparison with direct words at L=1 and known third moment.",
+    "coefficient_domain": "Exact modular ranks and rational Eisenstein coordinates",
+    "conventions": "Block EGF log(sum z^m/(m!)^2); p=3; identity-coordinate count divisible by 4; polynomial variable L^(-1/2).",
+    "inputs": [
+      {
+        "path": "partition_form_factor.py",
+        "sha256": "74b9a0eddef257d4bd4a5358001eda8a2a1e5fe3a492062797672dffcf1e842c"
+      },
+      {
+        "path": "occupation_lift_check.py",
+        "sha256": "3762a8b6f782adf70b5507e4e5edd53f8661e0509e15266e3ac5b16d8fdbf71f"
+      }
+    ],
+    "bounds": {
+      "n": [
+        3,
+        6
+      ],
+      "cases": 8,
+      "diagrams": 51416
+    },
+    "non_claims": [
+      "Finite polynomials do not imply a bound uniform in n."
+    ]
+  },
+  "randomness": {
+    "used": false
+  },
+  "run": {
+    "started_at": "2026-10-10T05:23:58.025131+00:00",
+    "runtime_seconds": 1.079301982999823,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "partition_form_factor_results.json",
+      "sha256": "8cd7d7267b7c2218211f061bc469a893632d43ed60332d5fe4492d4a85b5606d"
+    }
+  ],
+  "checks": [
+    "input hashes unchanged",
+    "all nonreal coefficients cancel",
+    "constant term equals n(1+Tr Q^n)",
+    "third moment polynomial matches independent formula",
+    "all available direct occupation values match"
+  ],
+  "result": "All eight polynomials computed exactly; finite checks passed.",
+  "residual_risks": [
+    "No bounds uniform in n obtained from these polynomials.",
+    "Identity block length restricted modulo four for polynomial convention.",
+    "No formal or BGS proof.",
+    "External wall cap, no aggregate CPU/memory certificate."
+  ]
+}

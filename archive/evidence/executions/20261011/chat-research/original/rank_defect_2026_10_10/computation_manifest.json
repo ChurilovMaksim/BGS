@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "claim_id": "finite-rank-and-occupation-checks-2026-10-10",
+  "repository": {
+    "path": ".",
+    "commit": "unavailable: standalone research outside BGS",
+    "dirty": false,
+    "scope": "No Git repository was inspected or modified."
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "run_checks.py"
+  ],
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+      }
+    ]
+  },
+  "mathematics": {
+    "assertion_tested": "Finite cycle ranks, exact coefficients, active-defect identities, word-orbit counts, inactive resummation, and occupation rank controls.",
+    "coefficient_domain": "Exact integers, Fraction rationals, finite fields; Decimal saddle and seeded floating-point illustrations separately labelled.",
+    "conventions": "x=N^(-1/2) for polynomials; original R distinct from restricted rank; C++ d=0 mod 4, Python all d mod 4; word-orbit multiplicities are counted once.",
+    "inputs": [
+      "run_checks.py",
+      "next_order.cpp",
+      "independent_checks.py",
+      "orbit_checks.py",
+      "resummation_checks.py",
+      "occupation_rank_checks.py",
+      "symbolic_checks.wl",
+      "wolfram_results.json"
+    ],
+    "bounds": {
+      "cpp_n": [
+        3,
+        10
+      ],
+      "primes": [
+        3,
+        5,
+        7
+      ],
+      "full_python_n": [
+        3,
+        6
+      ],
+      "truncated_python_p3_n": [
+        7,
+        8,
+        9
+      ],
+      "resummation_n": [
+        0,
+        8
+      ],
+      "occupation_exact_N": [
+        2,
+        3,
+        4
+      ],
+      "occupation_exact_n": [
+        3,
+        6
+      ],
+      "illustration_N": [
+        256,
+        1024,
+        4096
+      ],
+      "illustration_samples": 40
+    },
+    "non_claims": [
+      "Finite computations do not prove the general mathematical theorems.",
+      "Numerical illustrations are not error certificates.",
+      "No formal verification in Lean, local BGS proof, or priority claim."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random (MT19937)",
+    "seed": 20261010,
+    "scope": "Large-N occupation illustrations only."
+  },
+  "input_artifacts": [
+    {
+      "path": "run_checks.py",
+      "sha256": "b9f66f6008e49ebff5c9023ac724a124f3e5c97a71ceba827b5c8d786de3e106",
+      "sha256_after": "b9f66f6008e49ebff5c9023ac724a124f3e5c97a71ceba827b5c8d786de3e106"
+    },
+    {
+      "path": "next_order.cpp",
+      "sha256": "c61abf156eabfa9877b76ac0f552669dbc6c292e33a8b92b417f73a706fbd087",
+      "sha256_after": "c61abf156eabfa9877b76ac0f552669dbc6c292e33a8b92b417f73a706fbd087"
+    },
+    {
+      "path": "independent_checks.py",
+      "sha256": "6cd9acbb349365bf690edf41b59f3e1d9eaf097c1bd4f9ee62b7b275c8d81fef",
+      "sha256_after": "6cd9acbb349365bf690edf41b59f3e1d9eaf097c1bd4f9ee62b7b275c8d81fef"
+    },
+    {
+      "path": "orbit_checks.py",
+      "sha256": "d935fd7810350a51d7f34eb5417ea35c03f8ef453b1e45cf5745c09f6a781393",
+      "sha256_after": "d935fd7810350a51d7f34eb5417ea35c03f8ef453b1e45cf5745c09f6a781393"
+    },
+    {
+      "path": "resummation_checks.py",
+      "sha256": "19ed20f4911119cc820f6feaf38d8acd02af044a584a194bfbb2a65180bc467e",
+      "sha256_after": "19ed20f4911119cc820f6feaf38d8acd02af044a584a194bfbb2a65180bc467e"
+    },
+    {
+      "path": "occupation_rank_checks.py",
+      "sha256": "7647bc6bd699abe515089c495051a1dead85d661770777766e6ded3a2b55e5eb",
+      "sha256_after": "7647bc6bd699abe515089c495051a1dead85d661770777766e6ded3a2b55e5eb"
+    },
+    {
+      "path": "symbolic_checks.wl",
+      "sha256": "1d5d551fb9c596778faba8078df6cde14e9d1b7ea2bbefee311e11090c1a3077",
+      "sha256_after": "1d5d551fb9c596778faba8078df6cde14e9d1b7ea2bbefee311e11090c1a3077"
+    },
+    {
+      "path": "wolfram_results.json",
+      "sha256": "1838c9c9001a838f05c98fa47783bd7fe7d15e2c81b42bf28cd45a5a2ad4dce9",
+      "sha256_after": "1838c9c9001a838f05c98fa47783bd7fe7d15e2c81b42bf28cd45a5a2ad4dce9"
+    }
+  ],
+  "execution_artifacts": [
+    "run_checks.py",
+    "next_order.cpp",
+    "independent_checks.py",
+    "orbit_checks.py",
+    "resummation_checks.py",
+    "occupation_rank_checks.py",
+    "symbolic_checks.wl",
+    "wolfram_results.json"
+  ],
+  "declared_results": [
+    "next_order_results.json",
+    "independent_results.json",
+    "orbit_results.json",
+    "resummation_results.json",
+    "occupation_rank_results.json"
+  ],
+  "run": {
+    "started_at": "2026-10-10T06:34:44.670639+00:00",
+    "runtime_seconds": 28.277896429000066,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 120,
+      "max_cores": 1,
+      "max_threads": 1,
+      "wall_seconds": 180,
+      "per_command_wall_seconds": 60,
+      "max_output_bytes": 3000000
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "outputs": [
+    {
+      "path": "run_log.json",
+      "sha256": "f3b70d4bbdff99b872c1be7c5040d364a66c574da32d078e21307d513c4c0d8d",
+      "kind": "log"
+    },
+    {
+      "path": "next_order_results.json",
+      "sha256": "3013391bc21fb090d9789d3fce7da3ab3d02f4481754ff8e07752a91dc46ca3f",
+      "kind": "result"
+    },
+    {
+      "path": "independent_results.json",
+      "sha256": "3855d19f5c965f81049859256c4611dfb97f42779a0de60c8d35341aec59ca24",
+      "kind": "result"
+    },
+    {
+      "path": "orbit_results.json",
+      "sha256": "79ba18d7a870a1d63431d32ad8664536f8f5363ba7fea459df40e8dba1284b5e",
+      "kind": "result"
+    },
+    {
+      "path": "resummation_results.json",
+      "sha256": "f2aa5a82c271cf9294bcf73dd905432c29c004a22e089a57d099b757d9eca384",
+      "kind": "result"
+    },
+    {
+      "path": "occupation_rank_results.json",
+      "sha256": "9d67c4c15f8334869449dc44a74ffa8019a6768316a52ae8decbbbaff2c14fce",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Each regenerated result has all_passed=true.",
+    "Independent congruence and row-elimination methods agree.",
+    "All execution-input hashes unchanged.",
+    "Stored remote Wolfram code matches its receipt; remote evaluation not repeated."
+  ],
+  "result": "All declared finite checks passed.",
+  "residual_risks": [
+    "Original proofs require human review, not merely these finite checks.",
+    "The source ActiveDefect.lean is an uncompiled arithmetic draft.",
+    "Resource limits apply as documented in run_log.json, not as a process-tree guarantee."
+  ]
+}

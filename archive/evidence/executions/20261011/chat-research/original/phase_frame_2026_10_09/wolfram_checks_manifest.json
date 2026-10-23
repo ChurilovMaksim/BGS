@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "claim_id": "wolfram_exact_finite_controls",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "WolframLanguageEvaluator",
+    "code=wolfram_all_checks.wl",
+    "timeConstraint=50"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Wolfram Language remote kernel",
+        "version": "not reported by this evaluation"
+      }
+    ],
+    "hardware": "Remote kernel; not reported"
+  },
+  "mathematics": {
+    "assertion_tested": "Four graph-reflection witnesses and six exact rational coefficient identities",
+    "coefficient_domain": "Exact Gaussian rationals and symbolic rational functions",
+    "conventions": "Right logarithmic phase derivative; real Hermitian coordinates",
+    "inputs": [
+      {
+        "path": "wolfram_all_checks.wl",
+        "sha256": "f4c148b75a637abdec4e03d68d992cf559140845d372cf6b7c7d3a3fcc77aae5"
+      },
+      {
+        "path": "jacobian_frame_exact.wl",
+        "sha256": "253c590184334fac579f4434fec75f1640b6e36e6207c8425ef0780327f66d55"
+      },
+      {
+        "path": "finite_stiefel_algebra.wl",
+        "sha256": "5824238d928accfdfd25fec9d01d8c96559a110bbfc263a3b67cb591953c8157"
+      }
+    ],
+    "bounds": {
+      "m": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "symbolic_identities": 6
+    },
+    "non_claims": [
+      "Finite symbolic checks do not prove the analytic null-set argument.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-09T09:01:54.991Z",
+    "runtime_seconds": 6.005,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "wolfram_checks_results.json",
+      "sha256": "99cea3af131c575e657a3876819f6a8a2c9914ccc46857158b76430ecf281475"
+    },
+    {
+      "path": "wolfram_checks_execution.log",
+      "sha256": "a096fbef69635c2d4a918cadd65bf03459ec91dd722a5f50c1498734b56fd15f"
+    }
+  ],
+  "checks": [
+    "Actual returned checks true and determinants one",
+    "Actual returned symbolic residuals zero"
+  ],
+  "result": "All executed exact checks passed.",
+  "residual_risks": [
+    "Standalone version 1 record; no Git revision.",
+    "Remote evaluator does not report hardware or kernel version."
+  ]
+}
